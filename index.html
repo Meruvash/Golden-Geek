@@ -8,6 +8,11 @@
 <meta property="og:title" content="Consulta Golden Geek 2015–2025">
 <meta property="og:description" content="Pesquise e filtre os três primeiros colocados de cada categoria do Golden Geek, de 2015 a 2025.">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://meruvash.github.io/Golden-Geek/">
+<meta property="og:image" content="https://d8j0ntlcm91z4.cloudfront.net/user_3FrwcvamXiMgBXlk30xVjONWQnK/hf_20261024_204947_300bdb30-277f-4c90-a644-2858b9b91e46.png">
+<meta property="og:image:width" content="1344">
+<meta property="og:image:height" content="752">
+<meta name="twitter:card" content="summary_large_image">
 <style>
 :root{--bg:#f6f4ef;--card:#fff;--ink:#1d1b18;--muted:#6b665d;--line:#e4dfd4;--gold:#9a6f00;--gold-bg:#fff4d1;--gold-line:#e6c25a;--accent:#2f5d50;--chip:#e6efeb}
 @media (prefers-color-scheme:dark){:root{--bg:#141311;--card:#1d1c19;--ink:#ece8df;--muted:#a39d91;--line:#33302a;--gold:#e8bd55;--gold-bg:#2c2513;--gold-line:#6b5420;--accent:#7cc0a9;--chip:#22302b}}
@@ -15,8 +20,12 @@
 html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
 .wrap{max-width:960px;margin:0 auto;padding:22px 16px 40px}
-header h1{font-size:1.5rem;line-height:1.2;margin:0 0 6px}
-header p{margin:0;color:var(--muted);font-size:.92rem}
+.hero{position:relative;display:flex;flex-direction:column;justify-content:flex-end;min-height:240px;padding:24px;border-radius:16px;overflow:hidden;color:#fff;background:#13201b url("https://d8j0ntlcm91z4.cloudfront.net/user_3FrwcvamXiMgBXlk30xVjONWQnK/hf_20261024_204947_300bdb30-277f-4c90-a644-2858b9b91e46_min.webp") center/cover no-repeat}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,12,10,.9) 0%,rgba(8,12,10,.6) 45%,rgba(8,12,10,.08) 100%)}
+.hero>*{position:relative;max-width:46ch}
+.hero .eyebrow{font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#e8bd55;margin:0 0 6px}
+.hero h1{font-size:2rem;line-height:1.15;margin:0 0 8px;text-shadow:0 2px 12px rgba(0,0,0,.5)}
+.hero p{margin:0;color:rgba(255,255,255,.86);font-size:.95rem}
 .panel{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;margin:16px 0}
 .search{width:100%;font:inherit;font-size:16px;padding:11px 12px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink)}
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:10px}
@@ -54,6 +63,9 @@ tr.grp .gy{color:var(--accent);font-weight:800;margin-right:6px}
 tr.grp .gc{font-weight:700}
 tr.grp .ge{display:block;font-size:.8rem;font-weight:500;color:var(--muted);margin-top:2px}
 @media (max-width:600px){
+ .hero{min-height:220px;padding:18px}
+ .hero::before{background:linear-gradient(0deg,rgba(8,12,10,.92) 0%,rgba(8,12,10,.55) 55%,rgba(8,12,10,.1) 100%)}
+ .hero h1{font-size:1.6rem}
  .grid{grid-template-columns:1fr 1fr}
  .grid label:last-child{grid-column:span 2}
  table,thead,tbody,tr,td,th{display:block}
@@ -74,7 +86,8 @@ tr.grp .ge{display:block;font-size:.8rem;font-weight:500;color:var(--muted);marg
 </head>
 <body>
 <div class="wrap">
- <header>
+ <header class="hero">
+  <p class="eyebrow">★ Golden Geek Awards</p>
   <h1>Consulta Golden Geek 2015–2025</h1>
   <p>Os três primeiros colocados de cada categoria do Golden Geek, prêmio votado pela comunidade do BoardGameGeek.</p>
  </header>
