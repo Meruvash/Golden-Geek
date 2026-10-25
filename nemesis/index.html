@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Resenha Nemesis: Original, Lockdown e Retaliation</title>
+<meta name="description" content="Elite Boardgamers compara Nemesis, Nemesis: Lockdown e Nemesis: Retaliation: o que muda, o que funciona, pontos de atenção e para quem é cada um.">
+<meta property="og:title" content="Qual Nemesis é o seu? Resenha Elite Boardgamers">
+<meta property="og:description" content="Nave, base marciana ou operação militar: comparamos Nemesis, Lockdown e Retaliation.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://meruvash.github.io/Golden-Geek/nemesis/">
+<meta property="og:image" content="https://meruvash.github.io/Golden-Geek/nemesis/capa.jpg">
+<meta property="og:image:width" content="800">
+<meta property="og:image:height" content="800">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0a0c11;--card:#121620;--card2:#171c28;--line:#252c3b;--ink:#e9ecf2;--muted:#9ba4b4;--gold:#f2c14e;--good:#4ade80;--bad:#f2555a;--n:#a9c1ff;--l:#ff5c50;--r:#5fd4f0}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:860px;margin:0 auto;padding:0 16px 48px}
+a{color:var(--r)}
+h1,h2,h3,.disp{font-family:Oswald,Impact,"Arial Narrow",sans-serif;letter-spacing:.01em}
+h2{font-size:1.7rem;line-height:1.2;margin:48px 0 14px;text-transform:uppercase}
+h2 .k{color:var(--gold)}
+p{margin:0 0 14px}
+.muted{color:var(--muted)}
+.small{font-size:.86rem}
+
+/* Topo */
+.top{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 0;font-size:.85rem;color:var(--muted)}
+.top a{color:var(--muted);text-decoration:none}
+.top a:hover{color:var(--ink)}
+.hero{padding:28px 0 8px}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
+.hero h1{font-size:clamp(2rem,6vw,3.2rem);line-height:1.05;margin:0 0 14px;text-transform:uppercase}
+.hero h1 span{color:var(--l)}
+.lede{font-size:1.1rem;color:#cdd3de;max-width:62ch}
+.games{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 0}
+.tag{display:inline-flex;align-items:baseline;gap:6px;border:1px solid var(--line);background:var(--card);border-radius:999px;padding:5px 12px;font-size:.84rem}
+.tag b{font-weight:700}
+.tag.n b{color:var(--n)} .tag.l b{color:var(--l)} .tag.r b{color:var(--r)}
+.meta{margin-top:14px;font-size:.82rem;color:var(--muted)}
+
+figure{margin:28px 0 0}
+figure a{display:block;border-radius:14px;overflow:hidden;border:1px solid var(--line)}
+figure img{display:block;width:100%;height:auto}
+figcaption{font-size:.82rem;color:var(--muted);margin-top:8px;text-align:center}
+
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:24px 0 0}
+.fact{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px}
+.fact .v{font-family:Oswald,sans-serif;font-size:1.3rem;line-height:1.2}
+.fact .t{font-size:.78rem;color:var(--muted)}
+
+/* Tabela */
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--card)}
+table{width:100%;min-width:560px;border-collapse:collapse;font-size:.92rem}
+th,td{padding:11px 12px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+tbody tr:last-child th,tbody tr:last-child td{border-bottom:0}
+thead th{font-family:Oswald,sans-serif;font-size:1rem;text-transform:uppercase;letter-spacing:.03em;background:var(--card2)}
+thead th.n{color:var(--n)} thead th.l{color:var(--l)} thead th.r{color:var(--r)}
+tbody th{font-weight:600;color:var(--muted);font-size:.84rem;white-space:nowrap}
+td .score{font-family:Oswald,sans-serif;font-size:1.15rem;color:var(--gold)}
+td.na{color:var(--muted);font-style:italic}
+.note{font-size:.84rem;color:var(--muted);margin-top:10px}
+
+/* Cards por jogo */
+.trio{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.gcard{background:var(--card);border:1px solid var(--line);border-top:3px solid var(--c);border-radius:14px;padding:16px}
+.gcard.n{--c:var(--n)} .gcard.l{--c:var(--l)} .gcard.r{--c:var(--r)}
+.gcard .name{font-family:Oswald,sans-serif;text-transform:uppercase;color:var(--c);font-size:1.05rem;letter-spacing:.04em}
+.gcard h3{font-size:1.25rem;line-height:1.2;margin:2px 0 10px}
+.gcard p{font-size:.93rem;color:#cdd3de;margin:0}
+
+/* Prós e contras */
+.list{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.list li{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--c);border-radius:12px;padding:14px 16px}
+.list.good li{--c:var(--good)} .list.bad li{--c:var(--bad)}
+.list strong{display:block;font-size:1.02rem;margin-bottom:4px}
+.list p{margin:0;font-size:.93rem;color:#cdd3de}
+.sev{display:inline-block;font-size:.74rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--bad);border:1px solid rgba(242,85,90,.45);background:rgba(242,85,90,.1);border-radius:999px;padding:2px 9px;margin-bottom:6px}
+h2.good{color:var(--good)} h2.bad{color:var(--bad)}
+
+/* Veredito */
+.verdict{margin-top:48px;border:1px solid rgba(242,193,78,.45);background:linear-gradient(180deg,rgba(242,193,78,.1),rgba(242,193,78,.02));border-radius:16px;padding:22px}
+.verdict h2{margin:0 0 6px;color:var(--gold)}
+.badge{display:inline-block;font-weight:700;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase;background:var(--gold);color:#1b1503;border-radius:6px;padding:3px 10px;margin-bottom:14px}
+.picks{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:16px 0}
+.pick{background:rgba(0,0,0,.25);border:1px solid var(--line);border-radius:12px;padding:12px;text-align:center}
+.pick .disp{font-size:1.3rem;text-transform:uppercase;color:var(--c)}
+.pick.n{--c:var(--n)} .pick.l{--c:var(--l)} .pick.r{--c:var(--r)}
+.pick span{display:block;font-size:.82rem;color:var(--muted)}
+.tagline{font-family:Oswald,sans-serif;text-transform:uppercase;font-size:1.15rem;line-height:1.35;color:var(--gold);margin:18px 0 0;text-align:center}
+
+.sources{font-size:.88rem;color:var(--muted);padding-left:18px}
+.sources li{margin-bottom:6px}
+footer{margin-top:40px;padding-top:18px;border-top:1px solid var(--line);font-size:.84rem;color:var(--muted);display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
+footer a{color:var(--muted)}
+
+@media (max-width:700px){
+ .trio,.picks{grid-template-columns:1fr}
+ .facts{grid-template-columns:1fr 1fr}
+ h2{font-size:1.45rem;margin-top:40px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+ <nav class="top">
+  <span class="disp" style="color:var(--gold);letter-spacing:.08em">♛ ELITE BOARDGAMERS</span>
+  <a href="../">Consulta Golden Geek →</a>
+ </nav>
+
+ <header class="hero">
+  <div class="eyebrow">Elite Boardgamers apresenta</div>
+  <h1>Três formas de sobreviver ao pesadelo <span>Nemesis</span></h1>
+  <p class="lede">A série mantém objetivos secretos, cooperação desconfiada e criaturas letais. O que muda é o papel dos jogadores: tripulantes acuados, sobreviventes numa base marciana ou fuzileiros armados entrando no ninho.</p>
+  <div class="games">
+   <span class="tag n"><b>Nemesis</b> 2018</span>
+   <span class="tag l"><b>Lockdown</b> 2022</span>
+   <span class="tag r"><b>Retaliation</b> 2025</span>
+   <span class="tag">Awaken Realms</span>
+  </div>
+  <p class="meta">Resenha · Consulta às fontes em 25/10/2026</p>
+ </header>
+
+ <figure>
+  <a href="infografico.webp" target="_blank" rel="noopener"><img src="infografico.webp" width="1254" height="1254" alt="Infográfico Elite Boardgamers: Qual Nemesis é o seu? Compara Nemesis (nave infestada, suspense), Lockdown (base secreta em Marte, energia e escuridão) e Retaliation (instalação militar, mais armas e combate). Veredito: Nemesis para suspense clássico, Lockdown para mais sistemas, Retaliation para mais ação."></a>
+  <figcaption>Toque na imagem para ver em tamanho cheio.</figcaption>
+ </figure>
+
+ <div class="facts">
+  <div class="fact"><div class="v">1–5</div><div class="t">jogadores</div></div>
+  <div class="fact"><div class="v">Semicoop.</div><div class="t">objetivos secretos</div></div>
+  <div class="fact"><div class="v">Terror sci-fi</div><div class="t">tema</div></div>
+  <div class="fact"><div class="v">Adam Kwapiński</div><div class="t">autor dos três</div></div>
+ </div>
+
+ <h2>Em <span class="k">resumo</span></h2>
+ <p>Os três são jogos independentes de terror sci-fi semicooperativo para 1 a 5 pessoas, criados por Adam Kwapiński. Cada participante recebe um objetivo particular; ele pode coincidir com o do grupo ou entrar em conflito. Assim, ajudar alguém pode ser essencial para escapar ou um risco para o próprio plano.</p>
+ <p>A Awaken Realms anuncia 90 a 180 minutos para Nemesis e Lockdown, e 90 a 120 para Retaliation. Esses tempos não contam a história toda: uma crítica de Lockdown relata partidas de quatro jogadores acima de cinco horas, enquanto a análise de Retaliation encontrou sessões de cerca de três horas.</p>
+
+ <h2>Ficha <span class="k">comparativa</span></h2>
+ <div class="tablewrap">
+  <table>
+   <thead><tr><th></th><th class="n">Nemesis</th><th class="l">Lockdown</th><th class="r">Retaliation</th></tr></thead>
+   <tbody>
+    <tr><th>Ano</th><td>2018</td><td>2022</td><td>2025</td></tr>
+    <tr><th>Cenário</th><td>Nave infestada</td><td>Base de pesquisa em Marte</td><td>Instalação alienígena</td></tr>
+    <tr><th>Papel dos jogadores</th><td>Tripulação tentando sobreviver</td><td>Sobreviventes tentando escapar da base</td><td>Fuzileiros invadindo o ninho</td></tr>
+    <tr><th>Jogadores</th><td>1–5</td><td>1–5</td><td>1–5</td></tr>
+    <tr><th>Duração anunciada</th><td>90–180 min</td><td>90–180 min</td><td>90–120 min</td></tr>
+    <tr><th>Nota Ludopedia</th><td><span class="score">8,9</span><br><span class="small muted">942 avaliações</span></td><td><span class="score">8,6</span><br><span class="small muted">77 avaliações</span></td><td><span class="score">9,0</span><br><span class="small muted">41 avaliações</span></td></tr>
+    <tr><th>Peso na Ludopedia</th><td>Médio-pesado, 3,9/5</td><td>Médio-pesado, 4,1/5</td><td class="na">Não confirmado nas fontes consultadas</td></tr>
+    <tr><th>Melhor com</th><td>4 jogadores<br><span class="small muted">enquete da Ludopedia</span></td><td>4 jogadores<br><span class="small muted">enquete da Ludopedia</span></td><td class="na">Não confirmado nas fontes consultadas</td></tr>
+   </tbody>
+  </table>
+ </div>
+ <p class="note">Notas e votos da Ludopedia consultados em 25/10/2026. A nota alta de Retaliation vem de uma amostra menor, então vale lê-la com cautela. Não consegui confirmar os números atuais do BGG para os três na consulta; por isso, não os reproduzo. A página brasileira de Retaliation informa que não há edição nacional.</p>
+
+ <h2>Como funciona <span class="k">a série</span></h2>
+ <p>Em cada jogo, os participantes usam cartas para realizar ações, exploram áreas desconhecidas, procuram itens e tentam cumprir objetivos próprios enquanto enfrentam ameaças controladas pelo jogo. A cooperação é real, mas instável: os objetivos podem incentivar decisões egoístas, e nem sempre é claro se um colega está ajudando o grupo ou preparando a própria saída.</p>
+ <p>O principal motor dramático é a combinação de informação incompleta, perigo crescente e consequências difíceis de reverter. Um ruído pode atrair criaturas; uma porta fechada pode separar o grupo; uma ferida ou contaminação pode alterar o que parecia ser um plano seguro. A série rende melhor quando a mesa aprecia essa narrativa emergente, inclusive quando ela termina em derrota.</p>
+
+ <h2>O que muda de <span class="k">um jogo para outro</span></h2>
+ <div class="trio">
+  <article class="gcard n">
+   <div class="name">Nemesis</div>
+   <h3>O suspense da fuga</h3>
+   <p>A nave e seus corredores favorecem exploração cautelosa. Os jogadores começam vulneráveis e, em geral, têm motivos para evitar confrontos diretos. A tensão nasce da dúvida: avançar para cumprir o objetivo, ajudar alguém em perigo ou recuar antes de atrair mais criaturas? A Ludopedia registra a duração comunitária acima de quatro horas entre os poucos votos disponíveis, sinal de que a sessão pode se estender além do tempo anunciado.</p>
+  </article>
+  <article class="gcard l">
+   <div class="name">Lockdown</div>
+   <h3>A pressão do ambiente</h3>
+   <p>A base marciana adiciona três andares, elevador, energia e iluminação. A distribuição de energia afeta luzes, computadores e deslocamento; os Night Stalkers ficam mais perigosos no escuro. Isso torna o cenário mais ativo e diferencia as partidas, mas cobra uma curva de aprendizado maior. A crítica da Tabletop Gaming elogia os novos desafios e a força temática, porém aponta regras densas e sessões longas.</p>
+  </article>
+  <article class="gcard r">
+   <div class="name">Retaliation</div>
+   <h3>Entrar atirando também tem custo</h3>
+   <p>Aqui, os jogadores são fuzileiros equipados, e o jogo incentiva o combate mais do que os anteriores. A ação de disparo em rajada permite atingir criaturas em corredores; o mapa se forma com cartas de exploração, o que muda a configuração da instalação entre partidas. A munição, o oxigênio e os ferimentos graves seguem como recursos e ameaças. A crítica da GamesRadar+ destaca a variedade do mapa e o combate tático, mas também descreve a experiência como punitiva e por vezes injusta.</p>
+  </article>
+ </div>
+
+ <h2 class="good">👍 O que funciona muito bem</h2>
+ <ul class="list good">
+  <li><strong>A história aparece das decisões da mesa.</strong><p>Objetivos secretos e ameaças imprevisíveis fazem uma simples travessia virar suspeita, resgate ou traição. Funciona para grupos que gostam de contar “o que aconteceu naquela partida” depois que a sessão acaba.</p></li>
+  <li><strong>Cada versão tem uma identidade clara.</strong><p>O original foca na tripulação acuada; Lockdown transforma energia e escuridão em pressão constante; Retaliation oferece combate mais ativo e exploração modular. Não são apenas três caixas com o mesmo cenário.</p></li>
+  <li><strong>A tensão vem de escolhas concretas.</strong><p>Gastar uma carta agora pode deixar menos opções depois; atirar pode resolver uma ameaça e consumir munição escassa; separar-se acelera um objetivo, mas aumenta a vulnerabilidade.</p></li>
+  <li><strong>Retaliation amplia a variedade do tabuleiro.</strong><p>As cartas de exploração alteram a disposição de corredores e salas, e a análise da GamesRadar+ considera essa modularidade um ganho de rejogabilidade.</p></li>
+ </ul>
+
+ <h2 class="bad">👎 Pontos de atenção</h2>
+ <ul class="list bad">
+  <li><span class="sev">Moderada a grave, conforme o grupo</span><strong>A sorte pode se sobrepor ao planejamento.</strong><p>Eventos, encontros e combates podem desmontar uma estratégia bem montada. A GamesRadar+ observa que Retaliation é deliberadamente punitivo; o original também é descrito como muito dependente de cartas e dados por análises de jogadores. Para quem espera controle tático constante, a imprevisibilidade pode parecer injusta.</p></li>
+  <li><span class="sev">Grave para quem é eliminado cedo</span><strong>A eliminação de personagem pode deixar alguém esperando.</strong><p>A pessoa pode sair da partida enquanto o restante continua por bastante tempo. Isso é especialmente ruim para grupos que não gostam de assistir sem participar. A crítica de Lockdown também aponta a eliminação como problema recorrente.</p></li>
+  <li><span class="sev">Moderada; mais forte em Lockdown</span><strong>Ensinar e consultar regras exige dedicação.</strong><p>São jogos longos, com exceções e procedimentos. Em Lockdown, a crítica consultada destaca o peso das regras e partidas muito extensas. Uma pessoa preparada para ensinar ajuda bastante; estrear sem organização pode travar o ritmo.</p></li>
+  <li><span class="sev">Moderada a grave</span><strong>A duração real pode consumir a noite.</strong><p>O tempo anunciado não garante uma sessão curta: há relatos e avaliações indicando partidas bem mais longas, particularmente com grupos novos ou cheios. Combine a expectativa de duração antes de abrir a caixa.</p></li>
+  <li><strong>Retaliation troca parte da vulnerabilidade por poder de fogo.</strong><p>Isso cria decisões de combate interessantes, mas pode afastar quem prefere o terror de evitar a criatura e improvisar com poucos recursos. A própria análise da GamesRadar+ recomenda o jogo especialmente a fãs de horror com mais ação.</p></li>
+ </ul>
+
+ <h2>Para quem é <span class="k">cada um?</span></h2>
+ <div class="trio">
+  <article class="gcard n">
+   <div class="name">Escolha Nemesis</div>
+   <p>Se quer a porta de entrada mais direta para o suspense da série: tripulação, nave, objetivos secretos e a sensação de que qualquer plano pode desandar.</p>
+  </article>
+  <article class="gcard l">
+   <div class="name">Escolha Lockdown</div>
+   <p>Se já gosta do formato e quer mais sistemas ambientais, com energia e escuridão moldando o mapa. Aceite uma explicação mais exigente e partidas potencialmente demoradas.</p>
+  </article>
+  <article class="gcard r">
+   <div class="name">Escolha Retaliation</div>
+   <p>Se prefere ficção de fuzileiros, combate mais frequente e cenários modulares. É o mais indicado para quem quer enfrentar o perigo de frente, sem esperar que isso torne a sobrevivência fácil.</p>
+  </article>
+ </div>
+
+ <section class="verdict">
+  <h2>♛ Veredito Elite Boardgamers</h2>
+  <span class="badge">Recomendados para um público específico</span>
+  <p>A série se destaca quando o grupo valoriza tensão, narrativa imprevisível e objetivos que nem sempre alinham os interesses. O original é a recomendação mais segura para conhecer a proposta. Lockdown é a escolha para quem quer aprofundar o suspense com mais sistemas. Retaliation atende melhor quem prefere ação e combate, preservando a chance de fracasso.</p>
+  <div class="picks">
+   <div class="pick n"><div class="disp">Nemesis</div><span>para suspense clássico</span></div>
+   <div class="pick l"><div class="disp">Lockdown</div><span>para mais sistemas</span></div>
+   <div class="pick r"><div class="disp">Retaliation</div><span>para mais ação</span></div>
+  </div>
+  <p>Nenhum dos três é uma boa compra para quem busca partidas curtas, regras leves, equilíbrio competitivo ou garantia de que todos jogarão até o fim. Entre eles, a decisão principal é o tipo de medo que sua mesa quer sentir: fugir, resistir na escuridão ou invadir o ninho.</p>
+  <p class="tagline">Recomendado para fãs de terror sci-fi, objetivos secretos e histórias imprevisíveis.</p>
+ </section>
+
+ <h2>Fontes</h2>
+ <ul class="sources">
+  <li>Awaken Realms: Nemesis e Nemesis: Lockdown — descrição e duração anunciada.</li>
+  <li>BoardGameGeek: Nemesis, Lockdown e Retaliation — identificação das edições.</li>
+  <li>Ludopedia: Nemesis, Lockdown e Retaliation — dados comunitários e informações de edição brasileira.</li>
+  <li>Tabletop Gaming: crítica de Lockdown — avaliação de regras e duração.</li>
+  <li>GamesRadar+: crítica de Retaliation — combate, modularidade, duração e limites.</li>
+  <li>Consulta às páginas: 25/10/2026.</li>
+ </ul>
+
+ <footer>
+  <span>Resenha · Elite Boardgamers</span>
+  <a href="../">← Voltar para a Consulta Golden Geek</a>
+ </footer>
+</div>
+</body>
+</html>
