@@ -82,6 +82,11 @@
    "jogo": "Lost Ruins of Arnak",
    "url": "https://meruvash.github.io/Golden-Geek/arnak/",
    "data": "2026-10-26"
+  },
+  {
+   "jogo": "Flip 7",
+   "url": "https://meruvash.github.io/Golden-Geek/flip-7/",
+   "data": "2026-10-26"
   }
  ],
  "jogos": [
@@ -789,7 +794,7 @@
      "fonte": "https://meruvash.github.io/Golden-Geek/"
     }
    ],
-   "status": "em_producao",
+   "status": "publicado",
    "prioridade": 12,
    "premios_distintos": 3
   },
