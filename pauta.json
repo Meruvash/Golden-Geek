@@ -67,6 +67,21 @@
    "jogo": "Sky Team",
    "url": "https://meruvash.github.io/Golden-Geek/sky-team/",
    "data": "2026-10-26"
+  },
+  {
+   "jogo": "The Mind",
+   "url": "https://meruvash.github.io/Golden-Geek/the-mind/",
+   "data": "2026-10-26"
+  },
+  {
+   "jogo": "Pandemic Legacy: Season 1",
+   "url": "https://meruvash.github.io/Golden-Geek/pandemic-legacy/",
+   "data": "2026-10-26"
+  },
+  {
+   "jogo": "Lost Ruins of Arnak",
+   "url": "https://meruvash.github.io/Golden-Geek/arnak/",
+   "data": "2026-10-26"
   }
  ],
  "jogos": [
@@ -621,7 +636,7 @@
      "fonte": "https://en.wikipedia.org/wiki/Spiel_des_Jahres"
     }
    ],
-   "status": "em_producao",
+   "status": "publicado",
    "prioridade": 9,
    "premios_distintos": 3
   },
@@ -680,7 +695,7 @@
      "fonte": "https://meruvash.github.io/Golden-Geek/"
     }
    ],
-   "status": "em_producao",
+   "status": "publicado",
    "prioridade": 10,
    "premios_distintos": 3
   },
@@ -731,7 +746,7 @@
      "fonte": "https://meruvash.github.io/Golden-Geek/"
     }
    ],
-   "status": "em_producao",
+   "status": "publicado",
    "prioridade": 11,
    "premios_distintos": 3
   },
