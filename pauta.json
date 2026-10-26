@@ -1,0 +1,5059 @@
+{
+ "atualizado_em": "2026-10-26",
+ "regras": {
+  "premios": [
+   "Golden Geek",
+   "Spiel des Jahres",
+   "Kennerspiel des Jahres",
+   "Kinderspiel des Jahres",
+   "As d'Or",
+   "Deutscher Spiele Preis",
+   "Prêmio Ludopedia"
+  ],
+  "entram": "vencedores e indicados que ficaram entre os 3 melhores da categoria",
+  "excluidos": "categorias Aplicativo e Print & Play do Golden Geek (não são jogos de caixa)",
+  "ordem": "vencedores antes de indicados; jogos-base antes de expansões; mais premiações primeiro; prêmio mais recente primeiro",
+  "ritmo": "4 resenhas por dia"
+ },
+ "pendente": "incluir Spiel des Jahres, Kennerspiel, Kinderspiel, As d'Or, Deutscher Spiele Preis e Prêmio Ludopedia (exige leitura das páginas oficiais)",
+ "publicadas": [
+  {
+   "jogo": "Nemesis",
+   "serie": [
+    "Nemesis",
+    "Nemesis: Lockdown",
+    "Nemesis: Retaliation"
+   ],
+   "url": "https://meruvash.github.io/Golden-Geek/nemesis/",
+   "data": "2026-10-25"
+  }
+ ],
+ "jogos": [
+  {
+   "jogo": "Wingspan",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2019,
+     "categoria": "Jogo do Ano",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2019,
+     "categoria": "Arte",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2019,
+     "categoria": "Cartas",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2019,
+     "categoria": "Família",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2019,
+     "categoria": "Inovação",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2019,
+     "categoria": "Solo",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2019,
+     "categoria": "Estratégia",
+     "colocacao": 1
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 1
+  },
+  {
+   "jogo": "Sleeping Gods",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2021,
+     "categoria": "Arte",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2021,
+     "categoria": "Temático",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2021,
+     "categoria": "Jogo do Ano médio",
+     "colocacao": 2
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2021,
+     "categoria": "Cooperativo",
+     "colocacao": 2
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2021,
+     "categoria": "Inovação",
+     "colocacao": 2
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2021,
+     "categoria": "Solo",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 2
+  },
+  {
+   "jogo": "Gloomhaven",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2017,
+     "categoria": "Jogo do Ano",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2017,
+     "categoria": "Cooperativo",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2017,
+     "categoria": "Inovação",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2017,
+     "categoria": "Solo",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2017,
+     "categoria": "Estratégia",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2017,
+     "categoria": "Temático",
+     "colocacao": 1
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 3
+  },
+  {
+   "jogo": "Scythe",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2016,
+     "categoria": "Jogo do Ano",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2016,
+     "categoria": "Arte",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2016,
+     "categoria": "Solo",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2016,
+     "categoria": "Estratégia",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2016,
+     "categoria": "Temático",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2016,
+     "categoria": "Inovação",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 4
+  },
+  {
+   "jogo": "The Lord of the Rings: Fate of the Fellowship",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2025,
+     "categoria": "Jogo do Ano médio",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2025,
+     "categoria": "Cooperativo",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2025,
+     "categoria": "Temático",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2025,
+     "categoria": "Solo",
+     "colocacao": 2
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2025,
+     "categoria": "Arte",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 5
+  },
+  {
+   "jogo": "Vantage",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2025,
+     "categoria": "Inovação",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2025,
+     "categoria": "Solo",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2025,
+     "categoria": "Cooperativo",
+     "colocacao": 2
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2025,
+     "categoria": "Temático",
+     "colocacao": 2
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2025,
+     "categoria": "Jogo do Ano médio",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 6
+  },
+  {
+   "jogo": "Root",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2018,
+     "categoria": "Jogo do Ano",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2018,
+     "categoria": "Arte",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2018,
+     "categoria": "Inovação",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2018,
+     "categoria": "Temático",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2018,
+     "categoria": "Estratégia",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 7
+  },
+  {
+   "jogo": "Arcs",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2024,
+     "categoria": "Inovação",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2024,
+     "categoria": "Wargame",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2024,
+     "categoria": "Jogo do Ano pesado",
+     "colocacao": 2
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2024,
+     "categoria": "Arte",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 8
+  },
+  {
+   "jogo": "Sky Team",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2023,
+     "categoria": "2 jogadores",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2023,
+     "categoria": "Cooperativo",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2023,
+     "categoria": "Inovação",
+     "colocacao": 2
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2023,
+     "categoria": "Temático",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 9
+  },
+  {
+   "jogo": "Oath: Chronicles of Empire and Exile",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2021,
+     "categoria": "Inovação",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2021,
+     "categoria": "Jogo do Ano pesado",
+     "colocacao": 2
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2021,
+     "categoria": "Temático",
+     "colocacao": 2
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2021,
+     "categoria": "Arte",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 10
+  },
+  {
+   "jogo": "Gloomhaven: Jaws of the Lion",
+   "serie": "Gloomhaven",
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2020,
+     "categoria": "Jogo do Ano pesado",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2020,
+     "categoria": "Cooperativo",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2020,
+     "categoria": "Temático",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2020,
+     "categoria": "Solo",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 11
+  },
+  {
+   "jogo": "The Mind",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2018,
+     "categoria": "Cartas",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2018,
+     "categoria": "Cooperativo",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2018,
+     "categoria": "Festa",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2018,
+     "categoria": "Família",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 12
+  },
+  {
+   "jogo": "Azul",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2017,
+     "categoria": "Família",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2017,
+     "categoria": "Jogo do Ano",
+     "colocacao": 2
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2017,
+     "categoria": "Arte",
+     "colocacao": 2
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2017,
+     "categoria": "Estratégia",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 13
+  },
+  {
+   "jogo": "Arkham Horror: The Card Game",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2016,
+     "categoria": "Cartas",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2016,
+     "categoria": "2 jogadores",
+     "colocacao": 2
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2016,
+     "categoria": "Cooperativo",
+     "colocacao": 3
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2016,
+     "categoria": "Solo",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 14
+  },
+  {
+   "jogo": "7 Wonders Duel",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2015,
+     "categoria": "2 jogadores",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2015,
+     "categoria": "Cartas",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2015,
+     "categoria": "Estratégia",
+     "colocacao": 2
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2015,
+     "categoria": "Jogo do Ano",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 15
+  },
+  {
+   "jogo": "Pandemic Legacy: Season 1",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2015,
+     "categoria": "Jogo do Ano",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2015,
+     "categoria": "Inovação",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2015,
+     "categoria": "Estratégia",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2015,
+     "categoria": "Temático",
+     "colocacao": 1
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 16
+  },
+  {
+   "jogo": "Galactic Cruise",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2025,
+     "categoria": "Jogo do Ano pesado",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2025,
+     "categoria": "Arte",
+     "colocacao": 2
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2025,
+     "categoria": "Temático",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 17
+  },
+  {
+   "jogo": "Hot Streak",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2025,
+     "categoria": "Jogo do Ano leve",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2025,
+     "categoria": "Festa",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2025,
+     "categoria": "Inovação",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 18
+  },
+  {
+   "jogo": "Toy Battle",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2025,
+     "categoria": "2 jogadores",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2025,
+     "categoria": "Wargame",
+     "colocacao": 2
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2025,
+     "categoria": "Jogo do Ano leve",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 19
+  },
+  {
+   "jogo": "SETI: Search for Extraterrestrial Intelligence",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2024,
+     "categoria": "Jogo do Ano pesado",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2024,
+     "categoria": "Temático",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2024,
+     "categoria": "Inovação",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 20
+  },
+  {
+   "jogo": "The Lord of the Rings: Duel for Middle-earth",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2024,
+     "categoria": "2 jogadores",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2024,
+     "categoria": "Jogo do Ano médio",
+     "colocacao": 2
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2024,
+     "categoria": "Temático",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 21
+  },
+  {
+   "jogo": "Earth",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2023,
+     "categoria": "Jogo do Ano médio",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2023,
+     "categoria": "Arte",
+     "colocacao": 2
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2023,
+     "categoria": "Solo",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 22
+  },
+  {
+   "jogo": "Hegemony: Lead Your Class to Victory",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2023,
+     "categoria": "Jogo do Ano pesado",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2023,
+     "categoria": "Inovação",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2023,
+     "categoria": "Temático",
+     "colocacao": 1
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 23
+  },
+  {
+   "jogo": "Heat: Pedal to the Metal",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2022,
+     "categoria": "Jogo do Ano médio",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2022,
+     "categoria": "Temático",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2022,
+     "categoria": "Inovação",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 24
+  },
+  {
+   "jogo": "Dune: Imperium",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2020,
+     "categoria": "Cartas",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2020,
+     "categoria": "Jogo do Ano médio",
+     "colocacao": 2
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2020,
+     "categoria": "Temático",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 25
+  },
+  {
+   "jogo": "Lost Ruins of Arnak",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2020,
+     "categoria": "Jogo do Ano médio",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2020,
+     "categoria": "Arte",
+     "colocacao": 2
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2020,
+     "categoria": "Solo",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 26
+  },
+  {
+   "jogo": "On Mars",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2020,
+     "categoria": "Arte",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2020,
+     "categoria": "Jogo do Ano pesado",
+     "colocacao": 2
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2020,
+     "categoria": "Temático",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 27
+  },
+  {
+   "jogo": "The Crew: The Quest for Planet Nine",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2019,
+     "categoria": "Cooperativo",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2019,
+     "categoria": "Cartas",
+     "colocacao": 2
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2019,
+     "categoria": "Inovação",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 28
+  },
+  {
+   "jogo": "Brass: Birmingham",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2018,
+     "categoria": "Estratégia",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2018,
+     "categoria": "Jogo do Ano",
+     "colocacao": 2
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2018,
+     "categoria": "Arte",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 29
+  },
+  {
+   "jogo": "KeyForge: Call of the Archons",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2018,
+     "categoria": "2 jogadores",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2018,
+     "categoria": "Cartas",
+     "colocacao": 2
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2018,
+     "categoria": "Inovação",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 30
+  },
+  {
+   "jogo": "Star Wars: Rebellion",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2016,
+     "categoria": "2 jogadores",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2016,
+     "categoria": "Temático",
+     "colocacao": 2
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2016,
+     "categoria": "Jogo do Ano",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 31
+  },
+  {
+   "jogo": "Codenames",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2015,
+     "categoria": "Família",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2015,
+     "categoria": "Festa",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2015,
+     "categoria": "Jogo do Ano",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 32
+  },
+  {
+   "jogo": "Mysterium",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2015,
+     "categoria": "Arte",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2015,
+     "categoria": "Família",
+     "colocacao": 2
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2015,
+     "categoria": "Festa",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 33
+  },
+  {
+   "jogo": "Flip 7",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2024,
+     "categoria": "Festa",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2024,
+     "categoria": "Jogo do Ano leve",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 34
+  },
+  {
+   "jogo": "Harmonies",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2024,
+     "categoria": "Jogo do Ano médio",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2024,
+     "categoria": "Arte",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 35
+  },
+  {
+   "jogo": "Slay the Spire: The Board Game",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2024,
+     "categoria": "Solo",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2024,
+     "categoria": "Cooperativo",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 36
+  },
+  {
+   "jogo": "So Clover!",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2023,
+     "categoria": "Festa",
+     "colocacao": 3
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2021,
+     "categoria": "Festa",
+     "colocacao": 1
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 37
+  },
+  {
+   "jogo": "The Castles of Burgundy: Special Edition",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2023,
+     "categoria": "Arte",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2023,
+     "categoria": "Jogo do Ano médio",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 38
+  },
+  {
+   "jogo": "Undaunted: Battle of Britain",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2023,
+     "categoria": "Wargame",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2023,
+     "categoria": "2 jogadores",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 39
+  },
+  {
+   "jogo": "Cat in the Box: Deluxe Edition",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2022,
+     "categoria": "Jogo do Ano leve",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2022,
+     "categoria": "Inovação",
+     "colocacao": 1
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 40
+  },
+  {
+   "jogo": "Flamecraft",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2022,
+     "categoria": "Arte",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2022,
+     "categoria": "Jogo do Ano médio",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 41
+  },
+  {
+   "jogo": "Splendor Duel",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2022,
+     "categoria": "2 jogadores",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2022,
+     "categoria": "Jogo do Ano leve",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 42
+  },
+  {
+   "jogo": "Turing Machine",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2022,
+     "categoria": "Solo",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2022,
+     "categoria": "Inovação",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 43
+  },
+  {
+   "jogo": "Undaunted: Stalingrad",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2022,
+     "categoria": "Wargame",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2022,
+     "categoria": "2 jogadores",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 44
+  },
+  {
+   "jogo": "Ark Nova",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2021,
+     "categoria": "Jogo do Ano pesado",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2021,
+     "categoria": "Solo",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 45
+  },
+  {
+   "jogo": "Final Girl",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2021,
+     "categoria": "Solo",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2021,
+     "categoria": "Temático",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 46
+  },
+  {
+   "jogo": "The Crew: Mission Deep Sea",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2021,
+     "categoria": "Jogo do Ano médio",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2021,
+     "categoria": "Cooperativo",
+     "colocacao": 1
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 47
+  },
+  {
+   "jogo": "Forgotten Waters",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2020,
+     "categoria": "Jogo com zoom",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2020,
+     "categoria": "Cooperativo",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 48
+  },
+  {
+   "jogo": "Imperial Struggle",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2020,
+     "categoria": "Wargame",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2020,
+     "categoria": "2 jogadores",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 49
+  },
+  {
+   "jogo": "MicroMacro: Crime City",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2020,
+     "categoria": "Jogo do Ano leve",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2020,
+     "categoria": "Inovação",
+     "colocacao": 1
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 50
+  },
+  {
+   "jogo": "Undaunted: North Africa",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2020,
+     "categoria": "2 jogadores",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2020,
+     "categoria": "Wargame",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 51
+  },
+  {
+   "jogo": "Undaunted: Normandy",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2019,
+     "categoria": "Wargame",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2019,
+     "categoria": "2 jogadores",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 52
+  },
+  {
+   "jogo": "Wavelength",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2019,
+     "categoria": "Festa",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2019,
+     "categoria": "Inovação",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 53
+  },
+  {
+   "jogo": "Century: Spice Road",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2017,
+     "categoria": "Cartas",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2017,
+     "categoria": "Família",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 54
+  },
+  {
+   "jogo": "Captain Sonar",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2016,
+     "categoria": "Inovação",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2016,
+     "categoria": "Festa",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 55
+  },
+  {
+   "jogo": "Codenames: Pictures",
+   "serie": "Codenames",
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2016,
+     "categoria": "Família",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2016,
+     "categoria": "Festa",
+     "colocacao": 1
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 56
+  },
+  {
+   "jogo": "Mechs vs. Minions",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2016,
+     "categoria": "Cooperativo",
+     "colocacao": 1
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2016,
+     "categoria": "Arte",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 57
+  },
+  {
+   "jogo": "Star Wars: The Battle of Hoth",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2025,
+     "categoria": "Wargame",
+     "colocacao": 1
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 58
+  },
+  {
+   "jogo": "The Old King’s Crown",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2025,
+     "categoria": "Arte",
+     "colocacao": 1
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 59
+  },
+  {
+   "jogo": "Castle Combo",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2024,
+     "categoria": "Jogo do Ano leve",
+     "colocacao": 1
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 60
+  },
+  {
+   "jogo": "The Fellowship of the Ring: Trick-Taking Game",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2024,
+     "categoria": "Cooperativo",
+     "colocacao": 1
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 61
+  },
+  {
+   "jogo": "Unconscious Mind",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2024,
+     "categoria": "Arte",
+     "colocacao": 1
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 62
+  },
+  {
+   "jogo": "Legacy of Yu",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2023,
+     "categoria": "Solo",
+     "colocacao": 1
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 63
+  },
+  {
+   "jogo": "That’s Not a Hat",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2023,
+     "categoria": "Festa",
+     "colocacao": 1
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 64
+  },
+  {
+   "jogo": "Thunder Road: Vendetta",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2023,
+     "categoria": "Jogo do Ano leve",
+     "colocacao": 1
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 65
+  },
+  {
+   "jogo": "Carnegie",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2022,
+     "categoria": "Jogo do Ano pesado",
+     "colocacao": 1
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 66
+  },
+  {
+   "jogo": "Ready Set Bet",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2022,
+     "categoria": "Festa",
+     "colocacao": 1
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 67
+  },
+  {
+   "jogo": "Return to Dark Tower",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2022,
+     "categoria": "Cooperativo",
+     "colocacao": 1
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 68
+  },
+  {
+   "jogo": "Cascadia",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2021,
+     "categoria": "Jogo do Ano leve",
+     "colocacao": 1
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 69
+  },
+  {
+   "jogo": "Radlands",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2021,
+     "categoria": "2 jogadores",
+     "colocacao": 1
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 70
+  },
+  {
+   "jogo": "Undaunted: Reinforcements",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2021,
+     "categoria": "Wargame",
+     "colocacao": 1
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 71
+  },
+  {
+   "jogo": "Under Falling Skies",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2020,
+     "categoria": "Solo",
+     "colocacao": 1
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 72
+  },
+  {
+   "jogo": "Dune",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2019,
+     "categoria": "Temático",
+     "colocacao": 1
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 73
+  },
+  {
+   "jogo": "Watergate",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2019,
+     "categoria": "2 jogadores",
+     "colocacao": 1
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 74
+  },
+  {
+   "jogo": "Hannibal & Hamilcar",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2018,
+     "categoria": "Wargame",
+     "colocacao": 1
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 75
+  },
+  {
+   "jogo": "That’s Pretty Clever",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2018,
+     "categoria": "Solo",
+     "colocacao": 1
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 76
+  },
+  {
+   "jogo": "The Quacks of Quedlinburg",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2018,
+     "categoria": "Família",
+     "colocacao": 1
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 77
+  },
+  {
+   "jogo": "878: Vikings – Invasions of England",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2017,
+     "categoria": "Wargame",
+     "colocacao": 1
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 78
+  },
+  {
+   "jogo": "Codenames Duet",
+   "serie": "Codenames",
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2017,
+     "categoria": "2 jogadores",
+     "colocacao": 1
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 79
+  },
+  {
+   "jogo": "Photosynthesis",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2017,
+     "categoria": "Arte",
+     "colocacao": 1
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 80
+  },
+  {
+   "jogo": "Werewords",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2017,
+     "categoria": "Festa",
+     "colocacao": 1
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 81
+  },
+  {
+   "jogo": "Falling Sky: The Gallic Revolt Against Caesar",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2016,
+     "categoria": "Wargame",
+     "colocacao": 1
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 82
+  },
+  {
+   "jogo": "Churchill",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2015,
+     "categoria": "Wargame",
+     "colocacao": 1
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 83
+  },
+  {
+   "jogo": "Tiny Epic Galaxies",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2015,
+     "categoria": "Solo",
+     "colocacao": 1
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 84
+  },
+  {
+   "jogo": "SETI: Space Agencies",
+   "serie": null,
+   "tipo": "expansão",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2025,
+     "categoria": "Expansão",
+     "colocacao": 1
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 85
+  },
+  {
+   "jogo": "Arcs: The Blighted Reach Expansion",
+   "serie": "Arcs",
+   "tipo": "expansão",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2024,
+     "categoria": "Expansão",
+     "colocacao": 1
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 86
+  },
+  {
+   "jogo": "Ark Nova: Marine Worlds",
+   "serie": "Ark Nova",
+   "tipo": "expansão",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2023,
+     "categoria": "Expansão",
+     "colocacao": 1
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 87
+  },
+  {
+   "jogo": "Dune: Imperium – Rise of Ix",
+   "serie": "Dune: Imperium",
+   "tipo": "expansão",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2022,
+     "categoria": "Expansão",
+     "colocacao": 1
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 88
+  },
+  {
+   "jogo": "Lost Ruins of Arnak: Expedition Leaders",
+   "serie": "Lost Ruins of Arnak",
+   "tipo": "expansão",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2021,
+     "categoria": "Expansão",
+     "colocacao": 1
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 89
+  },
+  {
+   "jogo": "Wingspan: Oceania Expansion",
+   "serie": "Wingspan",
+   "tipo": "expansão",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2020,
+     "categoria": "Expansão",
+     "colocacao": 1
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 90
+  },
+  {
+   "jogo": "Wingspan: European Expansion",
+   "serie": "Wingspan",
+   "tipo": "expansão",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2019,
+     "categoria": "Expansão",
+     "colocacao": 1
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 91
+  },
+  {
+   "jogo": "Scythe: The Rise of Fenris",
+   "serie": "Scythe",
+   "tipo": "expansão",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2018,
+     "categoria": "Expansão",
+     "colocacao": 1
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 92
+  },
+  {
+   "jogo": "Scythe: The Wind Gambit",
+   "serie": "Scythe",
+   "tipo": "expansão",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2017,
+     "categoria": "Expansão",
+     "colocacao": 1
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 93
+  },
+  {
+   "jogo": "7 Wonders Duel: Pantheon",
+   "serie": "7 Wonders Duel",
+   "tipo": "expansão",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2016,
+     "categoria": "Expansão",
+     "colocacao": 1
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 94
+  },
+  {
+   "jogo": "Ticket to Ride Map Collection: Volume 5 – United Kingdom & Pennsylvania",
+   "serie": null,
+   "tipo": "expansão",
+   "vencedor": true,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2015,
+     "categoria": "Expansão",
+     "colocacao": 1
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 95
+  },
+  {
+   "jogo": "The 7th Continent",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2017,
+     "categoria": "Cooperativo",
+     "colocacao": 2
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2017,
+     "categoria": "Inovação",
+     "colocacao": 2
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2017,
+     "categoria": "Solo",
+     "colocacao": 2
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2017,
+     "categoria": "Temático",
+     "colocacao": 2
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2017,
+     "categoria": "Jogo do Ano",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 96
+  },
+  {
+   "jogo": "Earthborne Rangers",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2023,
+     "categoria": "Cooperativo",
+     "colocacao": 2
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2023,
+     "categoria": "Solo",
+     "colocacao": 2
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2023,
+     "categoria": "Inovação",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 97
+  },
+  {
+   "jogo": "Wonderland’s War",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2022,
+     "categoria": "Jogo do Ano médio",
+     "colocacao": 2
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2022,
+     "categoria": "Temático",
+     "colocacao": 2
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2022,
+     "categoria": "Arte",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 98
+  },
+  {
+   "jogo": "Canvas",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2021,
+     "categoria": "Jogo do Ano leve",
+     "colocacao": 2
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2021,
+     "categoria": "Arte",
+     "colocacao": 2
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2021,
+     "categoria": "Inovação",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 99
+  },
+  {
+   "jogo": "Marvel Champions: The Card Game",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2019,
+     "categoria": "Cooperativo",
+     "colocacao": 2
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2019,
+     "categoria": "Solo",
+     "colocacao": 2
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2019,
+     "categoria": "Cartas",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 100
+  },
+  {
+   "jogo": "Chronicles of Crime",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2018,
+     "categoria": "Cooperativo",
+     "colocacao": 2
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2018,
+     "categoria": "Inovação",
+     "colocacao": 2
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2018,
+     "categoria": "Solo",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 101
+  },
+  {
+   "jogo": "Terraforming Mars",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2016,
+     "categoria": "Jogo do Ano",
+     "colocacao": 2
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2016,
+     "categoria": "Solo",
+     "colocacao": 2
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2016,
+     "categoria": "Estratégia",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 102
+  },
+  {
+   "jogo": "T.I.M.E Stories",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2015,
+     "categoria": "Arte",
+     "colocacao": 2
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2015,
+     "categoria": "Temático",
+     "colocacao": 2
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2015,
+     "categoria": "Inovação",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 103
+  },
+  {
+   "jogo": "Magical Athlete",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2025,
+     "categoria": "Jogo do Ano leve",
+     "colocacao": 2
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2025,
+     "categoria": "Festa",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 104
+  },
+  {
+   "jogo": "Moon Colony Bloodbath",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2025,
+     "categoria": "Jogo do Ano médio",
+     "colocacao": 2
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2025,
+     "categoria": "Inovação",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 105
+  },
+  {
+   "jogo": "Star Trek: Captain’s Chair",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2025,
+     "categoria": "2 jogadores",
+     "colocacao": 3
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2025,
+     "categoria": "Solo",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 106
+  },
+  {
+   "jogo": "A Gest of Robin Hood",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2024,
+     "categoria": "Wargame",
+     "colocacao": 2
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2024,
+     "categoria": "2 jogadores",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 107
+  },
+  {
+   "jogo": "Dune: Imperium – Uprising",
+   "serie": "Dune: Imperium",
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2023,
+     "categoria": "Jogo do Ano pesado",
+     "colocacao": 2
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2023,
+     "categoria": "Temático",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 108
+  },
+  {
+   "jogo": "John Company: Second Edition",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2022,
+     "categoria": "Jogo do Ano pesado",
+     "colocacao": 3
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2022,
+     "categoria": "Temático",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 109
+  },
+  {
+   "jogo": "Long Shot: The Dice Game",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2022,
+     "categoria": "Festa",
+     "colocacao": 2
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2022,
+     "categoria": "Jogo do Ano leve",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 110
+  },
+  {
+   "jogo": "Resist!",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2022,
+     "categoria": "Solo",
+     "colocacao": 2
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2022,
+     "categoria": "Wargame",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 111
+  },
+  {
+   "jogo": "Wingspan Asia",
+   "serie": "Wingspan",
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2022,
+     "categoria": "2 jogadores",
+     "colocacao": 2
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2022,
+     "categoria": "Expansão",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 112
+  },
+  {
+   "jogo": "Calico",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2020,
+     "categoria": "Jogo do Ano médio",
+     "colocacao": 3
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2020,
+     "categoria": "Arte",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 113
+  },
+  {
+   "jogo": "The Search for Planet X",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2020,
+     "categoria": "Inovação",
+     "colocacao": 2
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2020,
+     "categoria": "Jogo com zoom",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 114
+  },
+  {
+   "jogo": "Blitzkrieg!: World War Two in 20 Minutes",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2019,
+     "categoria": "2 jogadores",
+     "colocacao": 3
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2019,
+     "categoria": "Wargame",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 115
+  },
+  {
+   "jogo": "Paladins of the West Kingdom",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2019,
+     "categoria": "Jogo do Ano",
+     "colocacao": 2
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2019,
+     "categoria": "Estratégia",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 116
+  },
+  {
+   "jogo": "Tapestry",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2019,
+     "categoria": "Jogo do Ano",
+     "colocacao": 3
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2019,
+     "categoria": "Arte",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 117
+  },
+  {
+   "jogo": "The Lord of the Rings: Journeys in Middle-earth",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2019,
+     "categoria": "Cooperativo",
+     "colocacao": 3
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2019,
+     "categoria": "Temático",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 118
+  },
+  {
+   "jogo": "Welcome To…",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2018,
+     "categoria": "Família",
+     "colocacao": 2
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2018,
+     "categoria": "Solo",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 119
+  },
+  {
+   "jogo": "Sagrada",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2017,
+     "categoria": "Família",
+     "colocacao": 2
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2017,
+     "categoria": "Arte",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 120
+  },
+  {
+   "jogo": "Mansions of Madness: Second Edition",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2016,
+     "categoria": "Cooperativo",
+     "colocacao": 2
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2016,
+     "categoria": "Temático",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 121
+  },
+  {
+   "jogo": "Baseball Highlights: 2045",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2015,
+     "categoria": "2 jogadores",
+     "colocacao": 3
+    },
+    {
+     "premio": "Golden Geek",
+     "ano": 2015,
+     "categoria": "Solo",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 122
+  },
+  {
+   "jogo": "Cross Bronx Expressway",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2025,
+     "categoria": "Wargame",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 123
+  },
+  {
+   "jogo": "Eternal Decks",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2025,
+     "categoria": "Cooperativo",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 124
+  },
+  {
+   "jogo": "Luthier",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2025,
+     "categoria": "Jogo do Ano pesado",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 125
+  },
+  {
+   "jogo": "Speakeasy",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2025,
+     "categoria": "Jogo do Ano pesado",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 126
+  },
+  {
+   "jogo": "Tag Team",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2025,
+     "categoria": "2 jogadores",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 127
+  },
+  {
+   "jogo": "Take Time",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2025,
+     "categoria": "Festa",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 128
+  },
+  {
+   "jogo": "Bomb Busters",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2024,
+     "categoria": "Cooperativo",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 129
+  },
+  {
+   "jogo": "Captain Flip",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2024,
+     "categoria": "Jogo do Ano leve",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 130
+  },
+  {
+   "jogo": "Civolution",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2024,
+     "categoria": "Jogo do Ano pesado",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 131
+  },
+  {
+   "jogo": "Dune: War for Arrakis",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2024,
+     "categoria": "Wargame",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 132
+  },
+  {
+   "jogo": "Endeavor: Deep Sea",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2024,
+     "categoria": "Jogo do Ano médio",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 133
+  },
+  {
+   "jogo": "Fromage",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2024,
+     "categoria": "Inovação",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 134
+  },
+  {
+   "jogo": "Gloomhaven: Buttons & Bugs",
+   "serie": "Gloomhaven",
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2024,
+     "categoria": "Solo",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 135
+  },
+  {
+   "jogo": "Imperium: Horizons",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2024,
+     "categoria": "Solo",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 136
+  },
+  {
+   "jogo": "Kelp: Shark vs Octopus",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2024,
+     "categoria": "2 jogadores",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 137
+  },
+  {
+   "jogo": "Let’s Go! To Japan",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2024,
+     "categoria": "Temático",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 138
+  },
+  {
+   "jogo": "The Gang",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2024,
+     "categoria": "Festa",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 139
+  },
+  {
+   "jogo": "Things in Rings",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2024,
+     "categoria": "Festa",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 140
+  },
+  {
+   "jogo": "Darwin’s Journey",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2023,
+     "categoria": "Jogo do Ano pesado",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 141
+  },
+  {
+   "jogo": "Dixit: Disney Edition",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2023,
+     "categoria": "Festa",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 142
+  },
+  {
+   "jogo": "Faraway",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2023,
+     "categoria": "Jogo do Ano leve",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 143
+  },
+  {
+   "jogo": "Halls of Hegra",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2023,
+     "categoria": "Wargame",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 144
+  },
+  {
+   "jogo": "Knarr",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2023,
+     "categoria": "Jogo do Ano leve",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 145
+  },
+  {
+   "jogo": "Sleeping Gods: Distant Skies",
+   "serie": "Sleeping Gods",
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2023,
+     "categoria": "Cooperativo",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 146
+  },
+  {
+   "jogo": "Star Wars: The Deckbuilding Game",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2023,
+     "categoria": "2 jogadores",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 147
+  },
+  {
+   "jogo": "The British Way",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2023,
+     "categoria": "Wargame",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 148
+  },
+  {
+   "jogo": "The White Castle",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2023,
+     "categoria": "Jogo do Ano médio",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 149
+  },
+  {
+   "jogo": "Voidfall",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2023,
+     "categoria": "Arte",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 150
+  },
+  {
+   "jogo": "Blood on the Clocktower",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2022,
+     "categoria": "Festa",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 151
+  },
+  {
+   "jogo": "Endless Winter: Paleoamericans",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2022,
+     "categoria": "Jogo do Ano pesado",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 152
+  },
+  {
+   "jogo": "Everdell: The Complete Collection",
+   "serie": "Everdell",
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2022,
+     "categoria": "Arte",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 153
+  },
+  {
+   "jogo": "ISS Vanguard",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2022,
+     "categoria": "Cooperativo",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 154
+  },
+  {
+   "jogo": "Nemo’s War: The Ultimate Edition",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2022,
+     "categoria": "Solo",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 155
+  },
+  {
+   "jogo": "Oathsworn: Into the Deepwood",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2022,
+     "categoria": "Cooperativo",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 156
+  },
+  {
+   "jogo": "Votes for Women",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2022,
+     "categoria": "Wargame",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 157
+  },
+  {
+   "jogo": "7 Wonders: Architects",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2021,
+     "categoria": "Jogo do Ano leve",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 158
+  },
+  {
+   "jogo": "Atlantic Chase",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2021,
+     "categoria": "Wargame",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 159
+  },
+  {
+   "jogo": "Don’t Get Got!: Shut Up & Sit Down Special Edition",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2021,
+     "categoria": "Festa",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 160
+  },
+  {
+   "jogo": "Imperium: Classics",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2021,
+     "categoria": "Jogo do Ano pesado",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 161
+  },
+  {
+   "jogo": "MicroMacro: Crime City – Full House",
+   "serie": "MicroMacro: Crime City",
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2021,
+     "categoria": "Cooperativo",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 162
+  },
+  {
+   "jogo": "Red Flag Over Paris",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2021,
+     "categoria": "Wargame",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 163
+  },
+  {
+   "jogo": "Stella: Dixit Universe",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2021,
+     "categoria": "Festa",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 164
+  },
+  {
+   "jogo": "Summoner Wars (Second Edition)",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2021,
+     "categoria": "2 jogadores",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 165
+  },
+  {
+   "jogo": "Terraforming Mars: Ares Expedition",
+   "serie": "Terraforming Mars",
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2021,
+     "categoria": "Jogo do Ano médio",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 166
+  },
+  {
+   "jogo": "That Time You Killed Me",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2021,
+     "categoria": "2 jogadores",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 167
+  },
+  {
+   "jogo": "Beyond the Sun",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2020,
+     "categoria": "Inovação",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 168
+  },
+  {
+   "jogo": "Fort",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2020,
+     "categoria": "Cartas",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 169
+  },
+  {
+   "jogo": "My City",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2020,
+     "categoria": "Jogo com zoom",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 170
+  },
+  {
+   "jogo": "Oceans",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2020,
+     "categoria": "Cartas",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 171
+  },
+  {
+   "jogo": "Pandemic Legacy: Season 0",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2020,
+     "categoria": "Cooperativo",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 172
+  },
+  {
+   "jogo": "Project L",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2020,
+     "categoria": "Jogo do Ano leve",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 173
+  },
+  {
+   "jogo": "Santa Monica",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2020,
+     "categoria": "Jogo do Ano leve",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 174
+  },
+  {
+   "jogo": "Unmatched: Cobble & Fog",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2020,
+     "categoria": "2 jogadores",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 175
+  },
+  {
+   "jogo": "Versailles 1919",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2020,
+     "categoria": "Wargame",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 176
+  },
+  {
+   "jogo": "Viscounts of the West Kingdom",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2020,
+     "categoria": "Jogo do Ano pesado",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 177
+  },
+  {
+   "jogo": "Azul: Summer Pavilion",
+   "serie": "Azul",
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2019,
+     "categoria": "Família",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 178
+  },
+  {
+   "jogo": "Letter Jam",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2019,
+     "categoria": "Festa",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 179
+  },
+  {
+   "jogo": "Maracaibo",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2019,
+     "categoria": "Estratégia",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 180
+  },
+  {
+   "jogo": "Men at Work",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2019,
+     "categoria": "Festa",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 181
+  },
+  {
+   "jogo": "PARKS",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2019,
+     "categoria": "Arte",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 182
+  },
+  {
+   "jogo": "Star Wars: Outer Rim",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2019,
+     "categoria": "Temático",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 183
+  },
+  {
+   "jogo": "Tiny Towns",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2019,
+     "categoria": "Família",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 184
+  },
+  {
+   "jogo": "Twice as Clever",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2019,
+     "categoria": "Solo",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 185
+  },
+  {
+   "jogo": "UBOOT: The Board Game",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2019,
+     "categoria": "Wargame",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 186
+  },
+  {
+   "jogo": "1066: Tears to Many Mothers",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2018,
+     "categoria": "Wargame",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 187
+  },
+  {
+   "jogo": "Architects of the West Kingdom",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2018,
+     "categoria": "Jogo do Ano",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 188
+  },
+  {
+   "jogo": "Cataclysm: A Second World War",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2018,
+     "categoria": "Wargame",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 189
+  },
+  {
+   "jogo": "Decrypto",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2018,
+     "categoria": "Festa",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 190
+  },
+  {
+   "jogo": "Detective: A Modern Crime Board Game",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2018,
+     "categoria": "Cooperativo",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 191
+  },
+  {
+   "jogo": "Duelosaur Island",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2018,
+     "categoria": "2 jogadores",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 192
+  },
+  {
+   "jogo": "Everdell",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2018,
+     "categoria": "Arte",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 193
+  },
+  {
+   "jogo": "Just One",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2018,
+     "categoria": "Festa",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 194
+  },
+  {
+   "jogo": "Rising Sun",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2018,
+     "categoria": "Temático",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 195
+  },
+  {
+   "jogo": "Teotihuacan: City of Gods",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2018,
+     "categoria": "Estratégia",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 196
+  },
+  {
+   "jogo": "Thunderstone Quest",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2018,
+     "categoria": "Cartas",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 197
+  },
+  {
+   "jogo": "War Chest",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2018,
+     "categoria": "2 jogadores",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 198
+  },
+  {
+   "jogo": "Western Legends",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2018,
+     "categoria": "Temático",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 199
+  },
+  {
+   "jogo": "Caverna: Cave vs. Cave",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2017,
+     "categoria": "2 jogadores",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 200
+  },
+  {
+   "jogo": "Clank! In! Space!",
+   "serie": "Clank!",
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2017,
+     "categoria": "Cartas",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 201
+  },
+  {
+   "jogo": "Clans of Caledonia",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2017,
+     "categoria": "Estratégia",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 202
+  },
+  {
+   "jogo": "Ethnos",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2017,
+     "categoria": "Cartas",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 203
+  },
+  {
+   "jogo": "Magic Maze",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2017,
+     "categoria": "Inovação",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 204
+  },
+  {
+   "jogo": "Nemo’s War (Second Edition)",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2017,
+     "categoria": "Solo",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 205
+  },
+  {
+   "jogo": "Pandemic Legacy: Season 2",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2017,
+     "categoria": "Cooperativo",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 206
+  },
+  {
+   "jogo": "Pendragon: The Fall of Roman Britain",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2017,
+     "categoria": "Wargame",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 207
+  },
+  {
+   "jogo": "Spyfall 2",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2017,
+     "categoria": "Festa",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 208
+  },
+  {
+   "jogo": "The Fox in the Forest",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2017,
+     "categoria": "2 jogadores",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 209
+  },
+  {
+   "jogo": "This War of Mine",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2017,
+     "categoria": "Temático",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 210
+  },
+  {
+   "jogo": "Time of Crisis",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2017,
+     "categoria": "Wargame",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 211
+  },
+  {
+   "jogo": "Tortuga 1667",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2017,
+     "categoria": "Festa",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 212
+  },
+  {
+   "jogo": "Clank!",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2016,
+     "categoria": "Cartas",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 213
+  },
+  {
+   "jogo": "Comanchería: The Rise and Fall of the Comanche Empire",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2016,
+     "categoria": "Wargame",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 214
+  },
+  {
+   "jogo": "Great Western Trail",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2016,
+     "categoria": "Estratégia",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 215
+  },
+  {
+   "jogo": "Hero Realms",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2016,
+     "categoria": "2 jogadores",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 216
+  },
+  {
+   "jogo": "Imhotep",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2016,
+     "categoria": "Família",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 217
+  },
+  {
+   "jogo": "Inis",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2016,
+     "categoria": "Arte",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 218
+  },
+  {
+   "jogo": "Liberty or Death: The American Insurrection",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2016,
+     "categoria": "Wargame",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 219
+  },
+  {
+   "jogo": "Quadropolis",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2016,
+     "categoria": "Família",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 220
+  },
+  {
+   "jogo": "Secret Hitler",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2016,
+     "categoria": "Festa",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 221
+  },
+  {
+   "jogo": "Sushi Go Party!",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2016,
+     "categoria": "Cartas",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 222
+  },
+  {
+   "jogo": "Vast: The Crystal Caverns",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2016,
+     "categoria": "Inovação",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 223
+  },
+  {
+   "jogo": "504",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2015,
+     "categoria": "Inovação",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 224
+  },
+  {
+   "jogo": "Above and Below",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2015,
+     "categoria": "Arte",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 225
+  },
+  {
+   "jogo": "Arboretum",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2015,
+     "categoria": "Cartas",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 226
+  },
+  {
+   "jogo": "Between Two Cities",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2015,
+     "categoria": "Família",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 227
+  },
+  {
+   "jogo": "Blood Rage",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2015,
+     "categoria": "Temático",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 228
+  },
+  {
+   "jogo": "Flick ’em Up!",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2015,
+     "categoria": "Festa",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 229
+  },
+  {
+   "jogo": "Hostage Negotiator",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2015,
+     "categoria": "Solo",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 230
+  },
+  {
+   "jogo": "The Grizzled",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2015,
+     "categoria": "Cartas",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 231
+  },
+  {
+   "jogo": "The U.S. Civil War",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2015,
+     "categoria": "Wargame",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 232
+  },
+  {
+   "jogo": "The Voyages of Marco Polo",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2015,
+     "categoria": "Estratégia",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 233
+  },
+  {
+   "jogo": "Tides of Time",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2015,
+     "categoria": "2 jogadores",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 234
+  },
+  {
+   "jogo": "Triumph & Tragedy",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2015,
+     "categoria": "Wargame",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 235
+  },
+  {
+   "jogo": "Dune: Imperium – Bloodlines",
+   "serie": "Dune: Imperium",
+   "tipo": "expansão",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2025,
+     "categoria": "Expansão",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 236
+  },
+  {
+   "jogo": "Lost Ruins of Arnak: Twisted Paths",
+   "serie": "Lost Ruins of Arnak",
+   "tipo": "expansão",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2025,
+     "categoria": "Expansão",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 237
+  },
+  {
+   "jogo": "Forest Shuffle: Alpine",
+   "serie": null,
+   "tipo": "expansão",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2024,
+     "categoria": "Expansão",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 238
+  },
+  {
+   "jogo": "Heat: Heavy Rain",
+   "serie": null,
+   "tipo": "expansão",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2024,
+     "categoria": "Expansão",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 239
+  },
+  {
+   "jogo": "Cascadia: Landmarks",
+   "serie": "Cascadia",
+   "tipo": "expansão",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2023,
+     "categoria": "Expansão",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 240
+  },
+  {
+   "jogo": "Lost Ruins of Arnak: The Missing Expedition",
+   "serie": "Lost Ruins of Arnak",
+   "tipo": "expansão",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2023,
+     "categoria": "Expansão",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 241
+  },
+  {
+   "jogo": "Dune: Imperium – Immortality",
+   "serie": "Dune: Imperium",
+   "tipo": "expansão",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2022,
+     "categoria": "Expansão",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 242
+  },
+  {
+   "jogo": "Concordia: Solitaria",
+   "serie": null,
+   "tipo": "expansão",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2021,
+     "categoria": "Expansão",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 243
+  },
+  {
+   "jogo": "PARKS: Nightfall",
+   "serie": "PARKS",
+   "tipo": "expansão",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2021,
+     "categoria": "Expansão",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 244
+  },
+  {
+   "jogo": "Root: The Underworld Expansion",
+   "serie": "Root",
+   "tipo": "expansão",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2020,
+     "categoria": "Expansão",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 245
+  },
+  {
+   "jogo": "Spirit Island: Jagged Earth",
+   "serie": null,
+   "tipo": "expansão",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2020,
+     "categoria": "Expansão",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 246
+  },
+  {
+   "jogo": "Terraforming Mars: Turmoil",
+   "serie": "Terraforming Mars",
+   "tipo": "expansão",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2019,
+     "categoria": "Expansão",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 247
+  },
+  {
+   "jogo": "The Quacks of Quedlinburg: The Herb Witches",
+   "serie": "The Quacks of Quedlinburg",
+   "tipo": "expansão",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2019,
+     "categoria": "Expansão",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 248
+  },
+  {
+   "jogo": "Root: The Riverfolk Expansion",
+   "serie": "Root",
+   "tipo": "expansão",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2018,
+     "categoria": "Expansão",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 249
+  },
+  {
+   "jogo": "Terraforming Mars: Prelude",
+   "serie": "Terraforming Mars",
+   "tipo": "expansão",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2018,
+     "categoria": "Expansão",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 250
+  },
+  {
+   "jogo": "Terraforming Mars: Hellas & Elysium",
+   "serie": "Terraforming Mars",
+   "tipo": "expansão",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2017,
+     "categoria": "Expansão",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 251
+  },
+  {
+   "jogo": "Terraforming Mars: Venus Next",
+   "serie": "Terraforming Mars",
+   "tipo": "expansão",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2017,
+     "categoria": "Expansão",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 252
+  },
+  {
+   "jogo": "Dead of Winter: The Long Night",
+   "serie": null,
+   "tipo": "expansão",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2016,
+     "categoria": "Expansão",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 253
+  },
+  {
+   "jogo": "T.I.M.E Stories: A Prophecy of Dragons",
+   "serie": "T.I.M.E Stories",
+   "tipo": "expansão",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2016,
+     "categoria": "Expansão",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 254
+  },
+  {
+   "jogo": "Five Tribes: The Artisans of Naqala",
+   "serie": null,
+   "tipo": "expansão",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2015,
+     "categoria": "Expansão",
+     "colocacao": 3
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 255
+  },
+  {
+   "jogo": "Roll for the Galaxy: Ambition",
+   "serie": null,
+   "tipo": "expansão",
+   "vencedor": false,
+   "premiacoes": [
+    {
+     "premio": "Golden Geek",
+     "ano": 2015,
+     "categoria": "Expansão",
+     "colocacao": 2
+    }
+   ],
+   "status": "na_fila",
+   "prioridade": 256
+  }
+ ]
+}
