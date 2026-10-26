@@ -47,6 +47,26 @@
    "jogo": "Terraforming Mars",
    "url": "https://meruvash.github.io/Golden-Geek/terraforming-mars/",
    "data": "2026-10-26"
+  },
+  {
+   "jogo": "Codenames",
+   "url": "https://meruvash.github.io/Golden-Geek/codenames/",
+   "data": "2026-10-26"
+  },
+  {
+   "jogo": "MicroMacro: Crime City",
+   "url": "https://meruvash.github.io/Golden-Geek/micromacro/",
+   "data": "2026-10-26"
+  },
+  {
+   "jogo": "Wingspan",
+   "url": "https://meruvash.github.io/Golden-Geek/wingspan/",
+   "data": "2026-10-26"
+  },
+  {
+   "jogo": "Sky Team",
+   "url": "https://meruvash.github.io/Golden-Geek/sky-team/",
+   "data": "2026-10-26"
   }
  ],
  "jogos": [
@@ -349,7 +369,7 @@
      "fonte": "https://meruvash.github.io/Golden-Geek/"
     }
    ],
-   "status": "em_producao",
+   "status": "publicado",
    "prioridade": 5,
    "premios_distintos": 4
   },
@@ -400,7 +420,7 @@
      "fonte": "https://meruvash.github.io/Golden-Geek/"
     }
    ],
-   "status": "em_producao",
+   "status": "publicado",
    "prioridade": 6,
    "premios_distintos": 4
   },
@@ -483,7 +503,7 @@
      "fonte": "https://en.wikipedia.org/wiki/Spiel_des_Jahres"
     }
    ],
-   "status": "em_producao",
+   "status": "publicado",
    "prioridade": 7,
    "premios_distintos": 3
   },
@@ -542,7 +562,7 @@
      "fonte": "https://meruvash.github.io/Golden-Geek/"
     }
    ],
-   "status": "em_producao",
+   "status": "publicado",
    "prioridade": 8,
    "premios_distintos": 3
   },
