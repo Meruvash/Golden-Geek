@@ -7,7 +7,7 @@ description: Produz a próxima resenha da Elite Boardgamers a partir da pauta de
 
 Só fazemos resenha de jogos premiados. **Quem escolhe o jogo é a pauta, não o usuário.**
 
-- Argumento vazio ou "próxima": pegue o jogo `na_fila` com menor `prioridade` em `pauta.json`.
+- Argumento vazio ou "próxima": pegue os **4** jogos `na_fila` de menor `prioridade` em `pauta.json` (uma série conta como um item).
 - Argumento com nome de jogo: só aceite se ele estiver em `pauta.json`; senão, avise que não está na pauta.
 - Argumento "pauta": rode apenas a etapa 0.
 
@@ -80,9 +80,11 @@ Game boxes are stylized illustrations; no real publisher logos.
 
 Leia todo o texto visível e compare palavra por palavra com o roteiro: letras, acentos, números, palavras a mais. Se houver erro, edite a imagem pedindo para corrigir **somente** os trechos errados. Depois de 2 tentativas sem sucesso, gere a arte **sem texto** e componha os textos por cima em HTML e depois em imagem (Playwright), usando as mesmas fontes da página.
 
-## Etapa 6: aprovação
+## Etapa 6: aprovação em lote
 
-Pare e mostre ao usuário: a pesquisa resumida (ficha + fontes), as imagens geradas e o roteiro. Só publique depois de "aprovado". Se o usuário pedir ajuste, refaça a etapa correspondente.
+O ritmo é **4 resenhas por dia, aprovadas em lote**. Cada execução prepara os 4 próximos itens da pauta (etapas 1 a 5) e marca-os como `em_producao`. Depois para e apresenta **uma mensagem única**, numerada de 1 a 4, com: jogo e prêmios, nota e ficha resumidas, veredito, link das imagens e roteiro.
+
+O usuário responde em uma linha, por exemplo "aprova 1, 2 e 4; refaz a 3: <ajuste>". Publique os aprovados (etapa 7) num único commit. Refaça só o que foi pedido e reapresente. Nada é publicado sem aprovação.
 
 ## Etapa 7: publicação
 
