@@ -19,11 +19,10 @@ Se o jogo tiver `serie` ou outros itens da mesma série na fila (versões, sequ�
 - `tools/build_review.py conteudo/<slug>.json`: gera `<slug>/index.html` a partir do JSON. Não edite o HTML à mão.
 - `tools/prompt_infografico.py conteudo/<slug>.json`: monta o prompt do infográfico a partir do `roteiro`.
 - Ferramentas: busca na web funciona; Wikipedia abre via `curl`; Ludopedia e BoardGameGeek bloqueiam acesso automatizado (não contornar), então os números deles vêm da busca e são sinalizados na ficha.
-- Higgsfield: o modelo do Nemesis já foi enviado como `media_id` `ecdff0d7-7623-4536-b4f4-a98d81b058c6`; reutilize. Gere 2 variações por jogo e escolha a com texto correto.
+- `modelos/referencia-*.jpg`: **modelo visual** dos infográficos (referência obrigatória na geração).
 
 - `pauta.json`: fila de jogos, regras e resenhas publicadas.
 - `nemesis/index.html`: **modelo de página**. Copie a estrutura e o CSS; troque as cores de cada jogo (`--n`, `--l`, `--r`) pela paleta do tema.
-- `nemesis/infografico.webp`: **modelo visual** do infográfico (referência obrigatória na geração).
 - `resenhas/index.html`: lista de resenhas. Acrescente um card novo **no topo** da grade.
 - Cada resenha mora em `<slug>/` com `index.html`, `infografico.webp` (até ~450 KB) e `capa.jpg` (800×800, até 250 KB, usada no og:image).
 
@@ -50,37 +49,27 @@ Mesma estrutura de `nemesis/`: chamada "Elite Boardgamers apresenta", título, a
 
 ## Etapa 3: roteiro do infográfico
 
-Limites de caracteres (com espaços). Texto curto é o que evita erro na imagem:
+O infográfico é **quadrado (1:1)**, no estilo das imagens de `modelos/referencia-*.jpg`. O roteiro fica em `roteiro` dentro de `conteudo/<slug>.json` (veja `conteudo/azul.json`):
 
-| Bloco | Limite |
+| Campo | Conteúdo |
 |---|---|
-| Título (pergunta ou chamada) | 28 |
-| Subtítulo | 50 |
-| Selo de prêmio (ex.: "GOLDEN GEEK 2019 · JOGO DO ANO") | 34 |
-| Colunas (1–3): nome do jogo | 20 |
-| … cada uma com 3 tópicos | 45 cada |
-| Barra de info: 4 chips | 18 cada |
-| O que funciona: 4 linhas, rótulo + frase | 14 + 110 |
-| Pontos de atenção: 4 linhas, rótulo + frase | 14 + 110 |
-| Veredito: até 3 itens, nome + complemento | 14 + 22 |
+| `tema`, `cena`, `mesa` | descrição visual em inglês: paleta e ambientação, arte do topo, caixa e componentes |
+| `titulo` / `chamada` | nome do jogo / frase de até ~55 caracteres |
+| `lateral` | 8 linhas curtas (jogadores, duração, complexidade, solo, dados, designer, editora, ano) |
+| `numeros` | 3 caixas `[rótulo, valor]`, só números com fonte |
+| `passos` | 5 passos `[título, frase de até ~38 caracteres]` |
+| `fortes` / `atencao` | 4 frases curtas cada |
+| `ficha` | 5 linhas |
+| `premios` | 3 medalhas |
+| `veredito` | frase em caixa alta, até ~50 caracteres |
 
-Para um jogo sem versões, use as colunas para três ângulos (ex.: "COMO JOGA", "DESTAQUE", "CUIDADO").
+Texto curto é o que evita erro na imagem.
 
-## Etapa 4: gerar o infográfico (Higgsfield, GPT Image 2.5)
+## Etapa 4: gerar o infográfico (OpenAI)
 
-1. Envie `nemesis/infografico.webp` com `media_upload` → `media_confirm` (uma vez por sessão) e use o `media_id` como `image_references`.
-2. `generate_image` com `model: gpt_image_2_5`, `aspect_ratio: 1:1`, `quality: high`, `count: 2` (≈1,5 crédito por imagem).
-3. Prompt (instruções em inglês, textos da arte em português):
+`python3 tools/gerar_infografico_openai.py conteudo/<slug>.json` (precisa de `OPENAI_API_KEY`). O script monta o prompt com `tools/prompt_infografico.py`, envia as referências de `modelos/` para `/v1/images/edits` (`gpt-image-2`, 2048×2048, qualidade alta) e salva `<slug>/variacao-1.png`. Leva ~2 minutos por imagem; dá para rodar os 4 jogos em paralelo. Use `--dry-run` para ver o prompt.
 
-```
-Use the reference image ONLY as a layout and style template: same dark, glowing neon-panel infographic style, "ELITE BOARDGAMERS" crown logo top-left, bold condensed headline at top, columns with a stylized game box + icon bullets, a 4-chip info bar, a green "pros" panel on the left and a red "cons" panel on the right, and a gold "VEREDITO" bar at the bottom.
-Replace the theme, colors and artwork to match <JOGO>: <descrição visual do tema>.
-Add a gold award seal near the headline.
-Square 1:1 Instagram infographic, high legibility on a phone.
-Render EXACTLY this Portuguese text, spelled exactly as written with correct accents, and no other text:
-<roteiro da etapa 3, bloco a bloco, cada texto entre aspas>
-Game boxes are stylized illustrations; no real publisher logos.
-```
+Sem créditos na OpenAI, use o Higgsfield (`generate_image`, `gpt_image_2_5`, `aspect_ratio: 1:1`) com o mesmo prompt e as mesmas referências.
 
 ## Etapa 5: revisão do texto da imagem
 
@@ -94,10 +83,9 @@ O usuário responde em uma linha, por exemplo "aprova 1, 2 e 4; refaz a 3: <ajus
 
 ## Etapa 7: publicação
 
-1. Baixe a imagem aprovada e salve `<slug>/infografico.webp` e `<slug>/capa.jpg` (Pillow).
-2. Crie `<slug>/index.html` a partir do modelo, com og:url, og:image e links de volta.
-3. Acrescente o card em `resenhas/index.html`.
-4. Em `pauta.json`, mude o status do(s) jogo(s) para `publicado` e acrescente o item em `publicadas`.
-5. Teste no Playwright em 390 px e 1200 px: sem erros de JS e sem rolagem horizontal.
-6. Commit em `main` e push.
-7. Entregue a legenda do Instagram: gancho de até 125 caracteres na 1ª linha, 3–4 linhas de resumo com o veredito e o prêmio, uma pergunta para comentários, "Resenha completa no link da bio" e 8–12 hashtags em PT e EN.
+1. Salve a imagem aprovada como `<slug>/infografico.webp` (1600 px, até ~450 KB) e `<slug>/capa.jpg` (800×800) com Pillow, e apague `variacao-*.png`.
+2. `python3 tools/build_review.py conteudo/<slug>.json` gera `<slug>/index.html`.
+3. `python3 tools/publicar.py conteudo/<slug>.json` acrescenta o card no topo de `resenhas/index.html` e marca o jogo como `publicado` em `pauta.json`.
+4. Teste no Playwright em 390 px e 1200 px: sem erros de JS e sem rolagem horizontal.
+5. Commit em `main` e push.
+6. Entregue a legenda do Instagram: gancho de até 125 caracteres na 1ª linha, 3–4 linhas de resumo com o veredito e o prêmio, uma pergunta para comentários, "Resenha completa no link da bio" e 8–12 hashtags em PT e EN.

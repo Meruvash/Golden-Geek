@@ -1,0 +1,318 @@
+{
+ "slug": "azul",
+ "jogo": "Azul",
+ "cor": "#3fa7e0",
+ "og_titulo": "Azul vale a pena? Resenha Elite Boardgamers",
+ "descricao": "Resenha de Azul, vencedor do Spiel des Jahres 2018: como funciona, pontos fortes, pontos de atenção e para quem é.",
+ "titulo_html": "Azulejos, drafting e um pouco de maldade: <span>Azul</span>",
+ "lede": "Vencedor do Spiel des Jahres, do As d'Or e do Deutscher Spiele Preis em 2018, Azul é um jogo abstrato de pegar e encaixar azulejos que se aprende em minutos e esconde uma disputa bem mais afiada do que a caixa colorida sugere.",
+ "tags": [
+  "2–4 jogadores",
+  "30–45 min",
+  "8+",
+  "Abstrato",
+  "Drafting"
+ ],
+ "alt": "Infográfico Elite Boardgamers sobre o jogo Azul",
+ "premiacoes": [
+  {
+   "premio": "As d'Or",
+   "ano": 2018,
+   "categoria": "Jeu de l’Année",
+   "colocacao": 1,
+   "resultado": "vencedor",
+   "fonte": "https://fr.wikipedia.org/wiki/As_d%27Or",
+   "rotulo": "Vencedor"
+  },
+  {
+   "premio": "Deutscher Spiele Preis",
+   "ano": 2018,
+   "categoria": "Deutscher Spiele Preis",
+   "colocacao": 1,
+   "resultado": "vencedor",
+   "fonte": "https://de.wikipedia.org/wiki/Deutscher_Spiele_Preis",
+   "rotulo": "Vencedor"
+  },
+  {
+   "premio": "Spiel des Jahres",
+   "ano": 2018,
+   "categoria": "Spiel des Jahres",
+   "colocacao": 1,
+   "resultado": "vencedor",
+   "fonte": "https://en.wikipedia.org/wiki/Spiel_des_Jahres",
+   "rotulo": "Vencedor"
+  },
+  {
+   "premio": "Golden Geek",
+   "ano": 2017,
+   "categoria": "Família",
+   "colocacao": 1,
+   "resultado": "vencedor",
+   "fonte": "https://meruvash.github.io/Golden-Geek/",
+   "rotulo": "Vencedor"
+  },
+  {
+   "premio": "Golden Geek",
+   "ano": 2017,
+   "categoria": "Jogo do Ano",
+   "colocacao": 2,
+   "resultado": "top 3",
+   "fonte": "https://meruvash.github.io/Golden-Geek/",
+   "rotulo": "2º lugar"
+  },
+  {
+   "premio": "Golden Geek",
+   "ano": 2017,
+   "categoria": "Arte",
+   "colocacao": 2,
+   "resultado": "top 3",
+   "fonte": "https://meruvash.github.io/Golden-Geek/",
+   "rotulo": "2º lugar"
+  },
+  {
+   "premio": "Golden Geek",
+   "ano": 2017,
+   "categoria": "Estratégia",
+   "colocacao": 3,
+   "resultado": "top 3",
+   "fonte": "https://meruvash.github.io/Golden-Geek/",
+   "rotulo": "3º lugar"
+  }
+ ],
+ "ficha": [
+  [
+   "Ano",
+   "2017"
+  ],
+  [
+   "Designer",
+   "Michael Kiesling"
+  ],
+  [
+   "Editora original",
+   "Plan B Games"
+  ],
+  [
+   "Editora no Brasil",
+   "Galápagos"
+  ],
+  [
+   "Jogadores",
+   "2 a 4"
+  ],
+  [
+   "Duração anunciada",
+   "30 a 45 minutos"
+  ],
+  [
+   "Idade",
+   "8+"
+  ],
+  [
+   "Nota BGG",
+   "7,7 / 10 (cerca de 111 mil avaliações)"
+  ],
+  [
+   "Peso BGG",
+   "1,76 a 1,8 / 5, conforme a fonte"
+  ],
+  [
+   "Nota Ludopedia",
+   "8,7 / 10"
+  ],
+  [
+   "Modo solo oficial",
+   "Não"
+  ],
+  [
+   "Componentes",
+   "100 azulejos, 4 tabuleiros de jogador, expositores de fábrica"
+  ]
+ ],
+ "nota_ficha": "Números do BoardGameGeek e da Ludopedia obtidos por busca, porque os dois sites bloqueiam acesso automatizado. O ranking geral do BGG variou entre as fontes (#73 a #99) e foi omitido.",
+ "como_funciona": [
+  "No centro da mesa ficam expositores (fábricas) com quatro azulejos cada. Na sua vez, você pega todos os azulejos de uma única cor de um expositor e empurra o resto para o centro; ou pega todos de uma cor do centro.",
+  "Os azulejos vão para as linhas de preparação do seu tabuleiro, que têm de 1 a 5 espaços. Ao fim da rodada, cada linha completa manda um azulejo para a parede, e ele pontua conforme as peças vizinhas.",
+  "O que não cabe nas linhas cai no chão e tira pontos. O jogo acaba quando alguém completa uma fileira horizontal da parede; bônus por fileiras, colunas e cores completas decidem o vencedor."
+ ],
+ "funciona": [
+  [
+   "Aprende-se em minutos",
+   "Todas as resenhas consultadas destacam a regra curta: a ação é sempre pegar azulejos de uma cor, o que torna o jogo ótimo para apresentar a quem não joga."
+  ],
+  [
+   "Componentes que dão vontade de jogar",
+   "Os azulejos de resina e o visual inspirado nos azulejos portugueses são o elogio mais repetido entre as críticas (Board Game Quest, Wargamer, BoardGame Journey)."
+  ],
+  [
+   "Decisões tensas em pouco tempo",
+   "Partidas de 30 a 45 minutos com escolhas que pesam: um mau draft nas rodadas finais pode custar muitos pontos, como observa a Board Game Quest."
+  ],
+  [
+   "Interação na medida certa",
+   "Dá para atrapalhar o adversário deixando sobras para ele. A There Will Be Games trata isso como o tempero do jogo."
+  ]
+ ],
+ "atencao": [
+  [
+   "Moderada",
+   "Tema apenas decorativo",
+   "A crítica mais comum: a história do palácio português não aparece na jogabilidade e o tema fica nos componentes (Board Game Quest, BoardGame Journey)."
+  ],
+  [
+   "Moderada",
+   "Pode ser maldoso",
+   "Forçar o adversário a pegar sobras é parte da estratégia. A Wargamer avisa que essa maldade pode incomodar quem não espera por ela."
+  ],
+  [
+   "Leve",
+   "Sem modo solo oficial",
+   "Azul é para 2 a 4 jogadores; não há regra solo na caixa."
+  ],
+  [
+   "Leve",
+   "Pouca variação",
+   "Não há cartas, objetivos ou setup variável no jogo-base: todas as partidas partem da mesma estrutura. É uma observação nossa a partir das regras, não de uma crítica específica."
+  ]
+ ],
+ "para_quem": [
+  "Quer um jogo bonito para levar a pessoas que não jogam",
+  "Joga muito em casal",
+  "Gosta de jogos abstratos curtos e tensos"
+ ],
+ "nao_e_para": [
+  "Busca imersão temática",
+  "Não gosta de atrapalhar nem ser atrapalhado",
+  "Quer jogar sozinho"
+ ],
+ "selo": "Recomendado",
+ "veredito": "Azul merece os prêmios que ganhou: regra curtíssima, peças lindas e uma disputa que fica tensa rapidamente. O tema é só decoração e o jogo pode ser maldoso, mas como porta de entrada para jogos modernos é difícil achar algo melhor.",
+ "tagline": "Um dos melhores jogos de entrada já criados.",
+ "consulta": "26/10/2026",
+ "fontes": [
+  [
+   "BoardGameGeek – Azul",
+   "https://boardgamegeek.com/geeksearch.php?action=search&objecttype=boardgame&q=azul",
+   "nota, nº de avaliações, ano"
+  ],
+  [
+   "Bitewing Games – Which Azul is Best?",
+   "https://bitewinggames.com/which-azul-is-best/",
+   "peso BGG"
+  ],
+  [
+   "Ludopedia – Azul",
+   "https://ludopedia.com.br/jogo/azul?v=avaliacoes",
+   "nota Ludopedia"
+  ],
+  [
+   "Board Game Quest – Azul Review",
+   "https://www.boardgamequest.com/azul-review/",
+   "tema, penalidades, componentes"
+  ],
+  [
+   "Wargamer – Azul review",
+   "https://www.wargamer.com/azul/review",
+   "interação maldosa, componentes"
+  ],
+  [
+   "There Will Be Games – Azul Review",
+   "https://therewillbe.games/articles-boardgame-reviews/5813-azul-review",
+   "hate drafting"
+  ],
+  [
+   "BoardGame Journey – Azul Review",
+   "https://boardgamejourney.com/azul-board-game-review/",
+   "tema"
+  ],
+  [
+   "Galápagos – Azul",
+   "https://loja.galapagosjogos.com.br/jogo-de-tabuleiro-azul/produto/AZU001",
+   "edição nacional"
+  ],
+  [
+   "Wikipedia – Azul (board game)",
+   "https://en.wikipedia.org/wiki/Azul_(board_game)",
+   "designer, editora, prêmios (conferência)"
+  ]
+ ],
+ "roteiro": {
+  "tema": "Portuguese azulejo ceramic tiles, Moorish/Portuguese royal palace, blue, turquoise, amber, red and white tile patterns, warm golden light",
+  "cena": "a Portuguese king admiring a tiled palace wall",
+  "mesa": "a box titled \"AZUL\" with colorful square tiles, round factory displays holding 4 tiles each, and player boards with a 5x5 tile wall",
+  "titulo": "AZUL",
+  "chamada": "DECORE O PALÁCIO REAL COM OS AZULEJOS MAIS BONITOS.",
+  "lateral": [
+   "2–4 jogadores",
+   "30–45 minutos",
+   "complexidade 1,8 / 5",
+   "modo solo: não",
+   "sem dados",
+   "designer Michael Kiesling",
+   "editora no Brasil Galápagos",
+   "ano 2017"
+  ],
+  "numeros": [
+   [
+    "NOTA BGG",
+    "7,7/10"
+   ],
+   [
+    "NOTA LUDOPEDIA",
+    "8,7/10"
+   ],
+   [
+    "COMPLEXIDADE",
+    "1,8/5"
+   ]
+  ],
+  "passos": [
+   [
+    "PEGUE AZULEJOS",
+    "Todos de uma cor de um expositor."
+   ],
+   [
+    "MONTE AS LINHAS",
+    "Encha as linhas de preparação."
+   ],
+   [
+    "DECORE A PAREDE",
+    "Linhas completas vão para a parede."
+   ],
+   [
+    "CUIDADO COM SOBRAS",
+    "Azulejos que sobram tiram pontos."
+   ],
+   [
+    "FECHE UMA FILEIRA",
+    "O jogo acaba e bônus decidem."
+   ]
+  ],
+  "fortes": [
+   "Regras ensinadas em minutos.",
+   "Peças lindas e agradáveis ao toque.",
+   "Ótimo com 2 jogadores.",
+   "Partidas rápidas e tensas."
+  ],
+  "atencao": [
+   "Tema apenas decorativo.",
+   "Pode ser maldoso: forçar sobras.",
+   "Sem modo solo oficial.",
+   "Pouca variação entre partidas."
+  ],
+  "ficha": [
+   "Designer: Michael Kiesling",
+   "Editora no Brasil: Galápagos",
+   "Ano: 2017",
+   "Idade: 8+",
+   "Componentes: 100 azulejos, 4 tabuleiros"
+  ],
+  "premios": [
+   "SPIEL DES JAHRES 2018",
+   "AS D'OR 2018",
+   "GOLDEN GEEK 2017 · FAMÍLIA"
+  ],
+  "veredito": "UM DOS MELHORES JOGOS DE ENTRADA JÁ CRIADOS."
+ },
+ "kicker": "Resenha · Abstrato"
+}

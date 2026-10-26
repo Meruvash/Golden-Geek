@@ -1,4 +1,7 @@
-"""Monta o prompt do infográfico (GPT Image 2.5) a partir do roteiro em conteudo/<slug>.json."""
+"""Monta o prompt do infográfico quadrado a partir do roteiro em conteudo/<slug>.json.
+
+Uso: python3 tools/prompt_infografico.py conteudo/<slug>.json [...]
+"""
 import json
 import sys
 
@@ -6,32 +9,27 @@ import sys
 def prompt(c):
     r = c["roteiro"]
     q = lambda s: f'"{s}"'
-    cols = "\n".join(
-        f"Column {i} title: {q(n)} — bullets: " + ", ".join(q(b) for b in bs)
-        for i, (n, bs) in enumerate(r["colunas"], 1)
-    )
-    pros = "\n".join(f"  {q(k)}: {q(t)}" for k, t in r["funciona"])
-    cons = "\n".join(f"  {q(k)}: {q(t)}" for k, t in r["atencao"])
-    ver = "  ·  ".join(f"{q(k)} / {q(t)}" for k, t in r["veredito"])
-    return f"""Use the reference image ONLY as a layout and style template: same dark, glowing neon-panel infographic style, "ELITE BOARDGAMERS" gold crown logo top-left, bold condensed headline at top, three columns each with a stylized illustration and icon bullets, a 4-chip info bar, a green "pros" panel on the left and a red "cons" panel on the right with small thumbnail art per row, and a gold "VEREDITO" bar at the bottom with a crown.
-Replace the theme, colors and artwork to match the board game {c["jogo"]}: {r["tema"]}. Do not reuse any alien, Nemesis or sci-fi horror imagery.
-Add a gold award seal near the headline.
-Square 1:1 Instagram infographic, high legibility on a phone, crisp sharp text.
+    lista = lambda xs: " · ".join(q(x) for x in xs)
+    passos = "\n".join(f"Step {i} {q(t)} — {q(d)}" for i, (t, d) in enumerate(r["passos"], 1))
+    numeros = " · ".join(f"{q(k)} {q(v)}" for k, v in r["numeros"])
+    return f"""Use the reference images ONLY as the style and layout template for an "ELITE BOARDGAMERS" board game review infographic: same dark navy background, glowing neon-bordered panels, gold "ELITE BOARDGAMERS" crown logo top-left, huge bold 3D title at the top, a left sidebar of icon + text info rows, stat boxes, a stylized game box with components on the table, a numbered 5-step "COMO FUNCIONA?" row with colored cards (blue, green, orange, purple, red), a green "PONTOS FORTES" panel with check marks, a red "PONTOS DE ATENÇÃO" panel with X marks, a blue "FICHA TÉCNICA" panel, a "PRÊMIOS" panel with gold laurel medals, and a gold "VEREDITO ELITE BOARDGAMERS" bar with a crown at the bottom.
+IMPORTANT: the output is a SQUARE 1:1 Instagram post, not a tall poster. Compress the same structure into a square: title band on top, box+components and stats in the middle, 5-step row, then the three panels, then awards + verdict at the bottom. Keep text large and legible on a phone.
+
+Theme for this game, {c["jogo"]}: {r["tema"]}. Top artwork: {r["cena"]}. Box art and table: stylized illustration of {r["mesa"]}. Do not reuse imagery from the reference games. Stylized illustrations only; no real publisher logos.
 
 Render EXACTLY this Portuguese text, spelled exactly as written with correct accents, and no other text:
 Logo: "ELITE BOARDGAMERS"
-Headline: {q(r["titulo"])}
-Subheadline: {q(r["subtitulo"])}
-Award seal: {q(r["selo"])}
-{cols}
-Info bar chips: {", ".join(q(x) for x in r["chips"])}
-Green panel title: "O QUE FUNCIONA MUITO BEM?" — rows (label: text):
-{pros}
-Red panel title: "PONTOS DE ATENÇÃO" — rows (label: text):
-{cons}
-Bottom bar: "VEREDITO:" then {ver}
-
-Game art is a stylized illustration; no real publisher logos, no real box art."""
+Title: {q(r["titulo"])}
+Tagline banner: {q(r["chamada"])}
+Sidebar rows: {lista(r["lateral"])}
+Stat boxes: {numeros}
+"COMO FUNCIONA?"
+{passos}
+Green panel "PONTOS FORTES": {lista(r["fortes"])}
+Red panel "PONTOS DE ATENÇÃO": {lista(r["atencao"])}
+Blue panel "FICHA TÉCNICA": {lista(r["ficha"])}
+Awards panel "PRÊMIOS": three gold medals: {lista(r["premios"])}
+Verdict bar: "VEREDITO ELITE BOARDGAMERS" — {q(r["veredito"])}"""
 
 
 if __name__ == "__main__":

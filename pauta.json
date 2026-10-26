@@ -27,6 +27,11 @@
    ],
    "url": "https://meruvash.github.io/Golden-Geek/nemesis/",
    "data": "2026-10-25"
+  },
+  {
+   "jogo": "Azul",
+   "url": "https://meruvash.github.io/Golden-Geek/azul/",
+   "data": "2026-10-26"
   }
  ],
  "jogos": [
@@ -93,7 +98,7 @@
      "fonte": "https://meruvash.github.io/Golden-Geek/"
     }
    ],
-   "status": "na_fila",
+   "status": "publicado",
    "prioridade": 1,
    "premios_distintos": 4
   },
