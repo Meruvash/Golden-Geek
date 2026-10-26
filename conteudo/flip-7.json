@@ -101,13 +101,17 @@
   [
    "Expansão",
    "Flip 7: With a Vengeance (2026)"
+  ],
+  [
+   "Baralho",
+   "94 cartas, números de 0 a 12"
   ]
  ],
  "nota_ficha": "Números do BoardGameGeek obtidos por busca. Não encontramos edição brasileira à venda.",
  "como_funciona": [
   "Na sua vez, você decide: virar mais uma carta do baralho ou parar e guardar os pontos da rodada.",
-  "As cartas de número somam pontos, mas se você virar um número que já tem na sua frente, estoura e perde tudo daquela rodada. Cartas especiais mudam a jogada, como bônus e cartas de ação.",
-  "Quem junta sete números diferentes encerra a rodada na hora e ganha um bônus. As rodadas se repetem até alguém chegar à pontuação final."
+  "As cartas de número, de 0 a 12, somam pontos, mas se você virar um número que já tem na sua frente, estoura e perde tudo daquela rodada. O baralho tem 94 cartas: uma carta 1, duas cartas 2 e assim por diante até doze cartas 12, além de cartas especiais.",
+  "Quem junta sete números diferentes encerra a rodada na hora e ganha 15 pontos de bônus. O jogo acaba quando alguém chega a 200 pontos; vence quem tiver mais."
  ],
  "funciona": [
   [
@@ -193,6 +197,16 @@
    "Board Game Review UK – Flip 7",
    "https://boardgamereview.co.uk/game-reviews/flip-7-card-game-review/",
    "tensão, caixa"
+  ],
+  [
+   "Board Game Arena – Flip 7",
+   "https://en.boardgamearena.com/gamepanel?game=flipseven",
+   "200 pontos, regra de estouro"
+  ],
+  [
+   "Asmodee UK – Como jogar Flip 7",
+   "https://www.asmodee.co.uk/blogs/news/how-to-play-flip-7",
+   "bônus de 15, baralho"
   ]
  ],
  "roteiro": {
