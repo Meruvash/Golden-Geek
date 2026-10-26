@@ -1,0 +1,301 @@
+{
+ "slug": "azul",
+ "jogo": "Azul",
+ "cor": "#3b9be0",
+ "titulo_html": "Azul: o mosaico que conquistou <span>três júris</span>",
+ "og_titulo": "Azul: vale a fama? Resenha Elite Boardgamers",
+ "descricao": "Azul venceu Spiel des Jahres, As d'Or e Deutscher Spiele Preis em 2018. O que funciona, pontos de atenção e para quem é.",
+ "lede": "Bonito, rápido e fácil de ensinar, Azul ganhou o Spiel des Jahres, o As d'Or e o Deutscher Spiele Preis no mesmo ano. Por trás das peças bonitas há uma disputa direta por azulejos, em que atrapalhar o adversário vale tanto quanto completar o próprio mosaico.",
+ "tags": [
+  "2017",
+  "Michael Kiesling",
+  "Plan B Games",
+  "2–4 jogadores",
+  "30–45 min"
+ ],
+ "consulta": "26/10/2026",
+ "alt": "Infográfico Elite Boardgamers sobre Azul: prêmios, como joga, o que funciona, pontos de atenção e veredito.",
+ "premiacoes": [
+  {
+   "ano": 2018,
+   "premio": "Spiel des Jahres",
+   "categoria": "Jogo do Ano",
+   "resultado": "vencedor",
+   "rotulo": "Vencedor"
+  },
+  {
+   "ano": 2018,
+   "premio": "As d'Or",
+   "categoria": "Jeu de l'Année",
+   "resultado": "vencedor",
+   "rotulo": "Vencedor"
+  },
+  {
+   "ano": 2018,
+   "premio": "Deutscher Spiele Preis",
+   "categoria": "Classificação geral",
+   "resultado": "vencedor",
+   "rotulo": "1º lugar"
+  },
+  {
+   "ano": 2017,
+   "premio": "Golden Geek",
+   "categoria": "Família",
+   "resultado": "vencedor",
+   "rotulo": "1º lugar"
+  },
+  {
+   "ano": 2017,
+   "premio": "Golden Geek",
+   "categoria": "Jogo do Ano",
+   "resultado": "top",
+   "rotulo": "2º lugar"
+  },
+  {
+   "ano": 2017,
+   "premio": "Golden Geek",
+   "categoria": "Arte",
+   "resultado": "top",
+   "rotulo": "2º lugar"
+  },
+  {
+   "ano": 2017,
+   "premio": "Golden Geek",
+   "categoria": "Estratégia",
+   "resultado": "top",
+   "rotulo": "3º lugar"
+  }
+ ],
+ "ficha": [
+  [
+   "Ano",
+   "2017"
+  ],
+  [
+   "Autor",
+   "Michael Kiesling"
+  ],
+  [
+   "Editora original",
+   "Plan B Games"
+  ],
+  [
+   "Jogadores",
+   "2–4"
+  ],
+  [
+   "Duração anunciada",
+   "30–45 min"
+  ],
+  [
+   "Nota Ludopedia",
+   "8,6 (5.260 avaliações)"
+  ],
+  [
+   "Complexidade Ludopedia",
+   "1,9 de 5 (leve)"
+  ],
+  [
+   "Melhor com",
+   "Não confirmado nas fontes consultadas"
+  ],
+  [
+   "Edição nacional",
+   "Não confirmado nas fontes consultadas"
+  ]
+ ],
+ "nota_ficha": "Notas e complexidade da Ludopedia obtidas por busca na web em 26/10/2026; o acesso direto ao site e ao BoardGameGeek foi bloqueado por proteção anti-robô, então confira os números atuais nas páginas. O que não foi encontrado aparece como não confirmado.",
+ "como_funciona": [
+  "Na sua vez, você pega todos os azulejos de uma mesma cor de um dos mostruários (ou do centro da mesa) e os coloca numa das linhas de preparação do seu tabuleiro. O que sobra no mostruário vai para o centro, onde outro jogador pode aproveitar.",
+  "No fim da rodada, cada linha completa leva um azulejo para o mosaico, pontuando pelos vizinhos já colocados. Azulejos que você pegou e não conseguiu encaixar caem no chão e viram pontos negativos. A partida termina quando alguém completa uma linha horizontal do mosaico."
+ ],
+ "funciona": [
+  [
+   "Regras em minutos, decisões de verdade.",
+   "As regras de compra e colocação são simples, mas criam competição constante pelos azulejos, como destaca a análise da Zatu. Dá para ensinar em poucos minutos."
+  ],
+  [
+   "Interação sem confronto aberto.",
+   "Olhar o tabuleiro dos outros para descobrir que cor eles precisam e negar essa cor é parte central do jogo, segundo a resenha do blog de jogos da Miami University."
+  ],
+  [
+   "Peças que dão vontade de tocar.",
+   "Os azulejos são pesados e bonitos; resenhas destacam o visual e a sensação das peças como parte da experiência."
+  ],
+  [
+   "Compacto e rápido.",
+   "Uma partida cabe em menos de uma hora, o que facilita jogar mais de uma vez na mesma noite."
+  ]
+ ],
+ "atencao": [
+  [
+   "Moderada",
+   "O tema é só decoração.",
+   "Para algumas críticas, Azul é basicamente um abstrato com peças bonitas. Quem busca história ou imersão não vai encontrar aqui."
+  ],
+  [
+   "Moderada",
+   "Pode ser punitivo com quem é bloqueado.",
+   "Como negar azulejos é estratégia legítima, um jogador pode ficar preso pagando penalidades. Grupos que não gostam de atrapalhar uns aos outros podem se incomodar."
+  ],
+  [
+   "Leve",
+   "As primeiras partidas parecem simples demais.",
+   "Resenhas relatam que leva algumas partidas para perceber a profundidade; a primeira impressão pode ser de jogo raso."
+  ],
+  [
+   "Leve",
+   "No máximo 4 jogadores.",
+   "Não serve para grupos maiores, e a contagem de pontos no tabuleiro pode ser trabalhosa no começo."
+  ]
+ ],
+ "para_quem": [
+  "Quer um jogo rápido de ensinar para família e amigos que não jogam muito",
+  "Gosta de quebra-cabeças abstratos com interação direta",
+  "Procura um jogo bonito para abrir a noite ou levar para viagem"
+ ],
+ "nao_e_para": [
+  "Quer tema forte e narrativa",
+  "O grupo tem 5 pessoas ou mais",
+  "Alguém na mesa detesta ser atrapalhado"
+ ],
+ "selo": "Recomendado",
+ "veredito": "Azul é um dos raros jogos que agrada júris e comunidade ao mesmo tempo: venceu os três prêmios de crítica que acompanhamos e liderou a categoria Família do Golden Geek. É fácil de ensinar, rápido e tem mais disputa do que parece. Só não espere tema: a graça está nas escolhas, não na história.",
+ "tagline": "Um clássico moderno para quem gosta de decidir rápido e pensar fundo.",
+ "serie": "A série também tem Azul: Summer Pavilion, top 3 na categoria Família do Golden Geek 2019. Ele está na pauta e terá resenha própria.",
+ "fontes": [
+  [
+   "Wikipedia: Azul",
+   "https://en.wikipedia.org/wiki/Azul_(board_game)",
+   "autor, editora, jogadores e duração"
+  ],
+  [
+   "Ludopedia: Azul",
+   "https://ludopedia.com.br/jogo/azul",
+   "nota, avaliações e complexidade (via busca)"
+  ],
+  [
+   "Zatu: Azul Review",
+   "https://zatu.com/azul-review/",
+   "análise das regras e da competição por azulejos"
+  ],
+  [
+   "Miami University Tabletop: Game Review Azul",
+   "https://sites.miamioh.edu/tabletop/2020/05/game-review-azul/",
+   "interação e bloqueio"
+  ],
+  [
+   "Opinionated Gamers: Dale Yu, Second Review of Azul",
+   "https://opinionatedgamers.com/2017/12/01/dale-yu-second-review-of-azul/",
+   "recepção crítica"
+  ],
+  [
+   "Wikipedia: Spiel des Jahres",
+   "https://en.wikipedia.org/wiki/Spiel_des_Jahres",
+   "vencedores e indicados do Spiel des Jahres e do Kennerspiel"
+  ],
+  [
+   "Wikipedia: Deutscher Spiele Preis",
+   "https://de.wikipedia.org/wiki/Deutscher_Spiele_Preis",
+   "colocações do Deutscher Spiele Preis"
+  ],
+  [
+   "Wikipedia: As d'Or",
+   "https://fr.wikipedia.org/wiki/As_d%27Or",
+   "vencedores e finalistas do As d'Or"
+  ],
+  [
+   "Consulta Golden Geek (Elite Boardgamers)",
+   "https://meruvash.github.io/Golden-Geek/",
+   "colocações no Golden Geek"
+  ]
+ ],
+ "roteiro": {
+  "titulo": "AZUL VALE A FAMA?",
+  "subtitulo": "O MOSAICO QUE VENCEU TRÊS JÚRIS",
+  "selo": "SPIEL DES JAHRES 2018",
+  "colunas": [
+   [
+    "COMO JOGA",
+    [
+     "Pegue todos os azulejos de uma cor",
+     "Complete linhas e monte o mosaico",
+     "Sobras viram pontos negativos"
+    ]
+   ],
+   [
+    "DESTAQUES",
+    [
+     "Regras em poucos minutos",
+     "Disputa direta pelas peças",
+     "Peças bonitas e pesadas"
+    ]
+   ],
+   [
+    "CUIDADO",
+    [
+     "Tema é só decoração",
+     "Bloqueios podem irritar",
+     "No máximo 4 jogadores"
+    ]
+   ]
+  ],
+  "chips": [
+   "2–4 JOGADORES",
+   "30–45 MIN",
+   "ABSTRATO",
+   "PLAN B GAMES"
+  ],
+  "funciona": [
+   [
+    "REGRAS",
+    "Ensina em minutos, mas cada escolha pesa: pegar uma cor muda o que sobra para todos."
+   ],
+   [
+    "INTERAÇÃO",
+    "Negar ao rival a cor que ele precisa é estratégia, sem confronto aberto."
+   ],
+   [
+    "VISUAL",
+    "Azulejos bonitos e pesados que dão vontade de tocar."
+   ],
+   [
+    "RITMO",
+    "Partidas curtas: dá para jogar duas na mesma noite."
+   ]
+  ],
+  "atencao": [
+   [
+    "TEMA",
+    "Quase um abstrato: quem quer história não vai achar aqui."
+   ],
+   [
+    "BLOQUEIO",
+    "Quem é travado pode passar a rodada pagando penalidade."
+   ],
+   [
+    "PRIMEIRAS",
+    "As primeiras partidas parecem simples demais."
+   ],
+   [
+    "LIMITE",
+    "No máximo 4 jogadores na mesa."
+   ]
+  ],
+  "veredito": [
+   [
+    "FAMÍLIA",
+    "porta de entrada"
+   ],
+   [
+    "GRUPOS",
+    "partida rápida"
+   ],
+   [
+    "ESTRATEGISTAS",
+    "disputa direta"
+   ]
+  ],
+  "tema": "Portuguese azulejo tiles, blue and white ceramic patterns, warm amber light, elegant mosaic table"
+ }
+}
