@@ -1,0 +1,294 @@
+{
+ "slug": "codenames",
+ "jogo": "Codenames",
+ "cor": "#e04848",
+ "kicker": "Resenha · Jogo de festa",
+ "og_titulo": "Codenames vale a pena? Resenha Elite Boardgamers",
+ "descricao": "Resenha de Codenames (Código Secreto), vencedor do Spiel des Jahres 2016: como funciona, pontos fortes, pontos de atenção e para quem é.",
+ "titulo_html": "Uma palavra, um número e muita discussão: <span>Codenames</span>",
+ "lede": "Codenames, lançado no Brasil como Código Secreto, é um jogo de associação de palavras em equipes que virou referência entre os jogos de festa. Venceu o Spiel des Jahres em 2016 e os Golden Geek de Família e de Festa em 2015.",
+ "tags": [
+  "2–8 jogadores",
+  "15 min",
+  "Festa",
+  "Equipes",
+  "Palavras"
+ ],
+ "alt": "Infográfico Elite Boardgamers sobre o jogo Codenames",
+ "premiacoes": [
+  {
+   "premio": "As d'Or",
+   "ano": 2017,
+   "categoria": "Jeu de l’Année",
+   "colocacao": null,
+   "resultado": "finalista",
+   "fonte": "https://fr.wikipedia.org/wiki/As_d%27Or",
+   "rotulo": "Finalista"
+  },
+  {
+   "premio": "Deutscher Spiele Preis",
+   "ano": 2016,
+   "categoria": "Deutscher Spiele Preis",
+   "colocacao": 2,
+   "resultado": "top 3",
+   "fonte": "https://de.wikipedia.org/wiki/Deutscher_Spiele_Preis",
+   "rotulo": "2º lugar"
+  },
+  {
+   "premio": "Spiel des Jahres",
+   "ano": 2016,
+   "categoria": "Spiel des Jahres",
+   "colocacao": 1,
+   "resultado": "vencedor",
+   "fonte": "https://en.wikipedia.org/wiki/Spiel_des_Jahres",
+   "rotulo": "Vencedor"
+  },
+  {
+   "premio": "Golden Geek",
+   "ano": 2015,
+   "categoria": "Família",
+   "colocacao": 1,
+   "resultado": "vencedor",
+   "fonte": "https://meruvash.github.io/Golden-Geek/",
+   "rotulo": "Vencedor"
+  },
+  {
+   "premio": "Golden Geek",
+   "ano": 2015,
+   "categoria": "Festa",
+   "colocacao": 1,
+   "resultado": "vencedor",
+   "fonte": "https://meruvash.github.io/Golden-Geek/",
+   "rotulo": "Vencedor"
+  },
+  {
+   "premio": "Golden Geek",
+   "ano": 2015,
+   "categoria": "Jogo do Ano",
+   "colocacao": 2,
+   "resultado": "top 3",
+   "fonte": "https://meruvash.github.io/Golden-Geek/",
+   "rotulo": "2º lugar"
+  }
+ ],
+ "ficha": [
+  [
+   "Ano",
+   "2015"
+  ],
+  [
+   "Designer",
+   "Vlaada Chvátil"
+  ],
+  [
+   "Editora original",
+   "Czech Games Edition"
+  ],
+  [
+   "Editora no Brasil",
+   "Devir (Código Secreto)"
+  ],
+  [
+   "Jogadores",
+   "2 a 8 segundo o BGG; 4 ou mais segundo a Wikipedia (6 recomendado)"
+  ],
+  [
+   "Duração anunciada",
+   "15 minutos (15 a 30 segundo a Wikipedia)"
+  ],
+  [
+   "Idade",
+   "10+"
+  ],
+  [
+   "Nota BGG",
+   "7,5 / 10 (cerca de 106 mil avaliações)"
+  ],
+  [
+   "Peso BGG",
+   "1,25 / 5"
+  ],
+  [
+   "Nota Ludopedia",
+   "não confirmado nas fontes consultadas"
+  ],
+  [
+   "Modo solo oficial",
+   "Não"
+  ],
+  [
+   "Grade",
+   "25 cartas de palavras em 5×5, com uma carta-chave secreta"
+  ]
+ ],
+ "nota_ficha": "Números do BoardGameGeek obtidos por busca, porque o site bloqueia acesso automatizado.",
+ "como_funciona": [
+  "Duas equipes, vermelha e azul. Na mesa ficam 25 cartas com palavras em uma grade 5×5. Cada equipe tem um chefe de espionagem, que vê a carta-chave secreta: ela mostra quais palavras são agentes de cada equipe, quais são civis e qual é o assassino.",
+  "Na sua vez, o chefe dá uma pista de uma única palavra e um número, dizendo quantas palavras da grade se ligam à pista. A equipe discute e aponta palavras uma a uma: acertar permite continuar; errar passa a vez ou entrega um agente ao adversário.",
+  "Vence a equipe que encontrar primeiro todos os seus agentes. Quem apontar o assassino perde na hora."
+ ],
+ "funciona": [
+  [
+   "Regra que se explica em minutos",
+   "Uma pista, um número, uma grade: é por isso que o jogo funciona com quem nunca jogou nada moderno."
+  ],
+  [
+   "Funciona com grupos grandes",
+   "A Wikipedia registra de 4 a 8 jogadores ou mais, com 6 recomendado; as equipes crescem sem mudar a regra."
+  ],
+  [
+   "Discussões que viram diversão",
+   "Debater o que o chefe quis dizer é o coração do jogo, e cada grade nova cria associações diferentes."
+  ],
+  [
+   "Partidas curtas",
+   "Cerca de 15 minutos por partida, o que faz o grupo pedir revanche."
+  ]
+ ],
+ "atencao": [
+  [
+   "Moderada",
+   "Espera enquanto o chefe pensa",
+   "Várias resenhas apontam o tempo parado enquanto o chefe monta a pista; a Unboxed sugere usar a ampulheta para limitar a espera."
+  ],
+  [
+   "Moderada",
+   "Depende do chefe de espionagem",
+   "A Roll to Review nota que, se o chefe trava, a partida inteira perde o ritmo."
+  ],
+  [
+   "Leve",
+   "Precisa de grupo",
+   "Não há modo solo oficial, e a experiência melhora com mais gente."
+  ],
+  [
+   "Leve",
+   "Pouca profundidade estratégica",
+   "É um jogo de festa: a graça está na conversa, não em planejamento de longo prazo."
+  ]
+ ],
+ "para_quem": [
+  "Reúne amigos e família com frequência",
+  "Quer um jogo de festa que todos entendem rápido",
+  "Gosta de jogos de palavras"
+ ],
+ "nao_e_para": [
+  "Joga quase sempre a 2",
+  "Não gosta de pressão para dar pistas",
+  "Busca estratégia profunda"
+ ],
+ "selo": "Recomendado",
+ "veredito": "Codenames transforma uma ideia simples em discussões memoráveis e virou referência em jogos de festa. A espera enquanto o chefe pensa e a dependência do grupo pesam, mas para encontros é um dos melhores jogos já feitos.",
+ "tagline": "Um dos melhores jogos de festa já criados.",
+ "consulta": "26/10/2026",
+ "fontes": [
+  [
+   "BoardGameGeek – Codenames",
+   "https://boardgamegeek.com/boardgame/178900/codenames",
+   "nota, avaliações, peso, jogadores, duração"
+  ],
+  [
+   "BoardGameGeek – Código Secreto (2ª edição em português)",
+   "https://boardgamegeek.com/boardgameversion/331224/portuguese-second-edition",
+   "edição Devir"
+  ],
+  [
+   "Wikipedia – Codenames",
+   "https://en.wikipedia.org/wiki/Codenames_(board_game)",
+   "designer, editora, regras, nº recomendado"
+  ],
+  [
+   "Unboxed – Codenames",
+   "https://www.unboxedtheboardgameblog.com/post/2017/08/09/game-night-reviews-codenames",
+   "tempo de espera"
+  ],
+  [
+   "Roll to Review – Codenames",
+   "https://rolltoreview.com/?p=22188",
+   "papel do chefe de espionagem"
+  ],
+  [
+   "Wargamer – Codenames review",
+   "https://www.wargamer.com/codenames/review",
+   "crítica geral"
+  ]
+ ],
+ "roteiro": {
+  "tema": "spy thriller, secret agents in sunglasses and suits, red team versus blue team, dark city at night, dramatic red and blue lighting",
+  "cena": "a female spy lit in red and a male spy lit in blue facing each other",
+  "mesa": "a box titled \"CODENAMES\" with two spy silhouettes, a 5x5 grid of beige word cards, a key card stand with a red/blue grid, red and blue agent cards and one black assassin card",
+  "titulo": "CODENAMES",
+  "chamada": "DUAS EQUIPES. 25 PALAVRAS. UMA ÚNICA PISTA.",
+  "lateral": [
+   "2–8 jogadores",
+   "15 minutos",
+   "complexidade 1,25 / 5",
+   "modo solo: não",
+   "sem dados",
+   "designer Vlaada Chvátil",
+   "editora no Brasil Devir",
+   "ano 2015"
+  ],
+  "numeros": [
+   [
+    "NOTA BGG",
+    "7,5/10"
+   ],
+   [
+    "COMPLEXIDADE",
+    "1,25/5"
+   ],
+   [
+    "DURAÇÃO",
+    "15 min"
+   ]
+  ],
+  "passos": [
+   [
+    "MONTE A GRADE",
+    "25 palavras em 5×5."
+   ],
+   [
+    "VEJA A CARTA-CHAVE",
+    "Só os chefes sabem quem é quem."
+   ],
+   [
+    "DÊ UMA PISTA",
+    "Uma palavra e um número."
+   ],
+   [
+    "ACHE SEUS AGENTES",
+    "A equipe discute e aponta."
+   ],
+   [
+    "EVITE O ASSASSINO",
+    "Quem achar o assassino perde."
+   ]
+  ],
+  "fortes": [
+   "Regras explicadas em minutos.",
+   "Ótimo para grupos grandes.",
+   "Discussões muito divertidas.",
+   "Partidas curtas."
+  ],
+  "atencao": [
+   "Espera enquanto o chefe pensa.",
+   "Depende do chefe de espionagem.",
+   "Sem modo solo oficial.",
+   "Pouca profundidade estratégica."
+  ],
+  "ficha": [
+   "Designer: Vlaada Chvátil",
+   "Editora original: Czech Games Edition",
+   "Editora no Brasil: Devir",
+   "Ano: 2015",
+   "Idade: 10+"
+  ],
+  "premios": [
+   "SPIEL DES JAHRES 2016",
+   "GOLDEN GEEK 2015 · FESTA",
+   "GOLDEN GEEK 2015 · FAMÍLIA"
+  ],
+  "veredito": "UM DOS MELHORES JOGOS DE FESTA JÁ CRIADOS."
+ }
+}
