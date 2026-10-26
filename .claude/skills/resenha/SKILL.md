@@ -65,11 +65,20 @@ O infográfico é **quadrado (1:1)**, no estilo das imagens de `modelos/referenc
 
 Texto curto é o que evita erro na imagem.
 
-## Etapa 4: gerar o infográfico (OpenAI)
+## Etapa 4: gerar o infográfico (OpenAI Batch API)
 
-`python3 tools/gerar_infografico_openai.py conteudo/<slug>.json` (precisa de `OPENAI_API_KEY`). O script monta o prompt com `tools/prompt_infografico.py`, envia as referências de `modelos/` para `/v1/images/edits` (`gpt-image-2`, 2048×2048, qualidade alta) e salva `<slug>/variacao-1.png`. Leva ~2 minutos por imagem; dá para rodar os 4 jogos em paralelo. Use `--dry-run` para ver o prompt.
+Padrão: **Batch API** (50% mais barata, entrega em até 24 h), com `gpt-image-2.5-flare`, 2048×2048, qualidade alta e as referências de `modelos/` pelas URLs do GitHub Pages.
 
-Sem créditos na OpenAI, use o Higgsfield (`generate_image`, `gpt_image_2_5`, `aspect_ratio: 1:1`) com o mesmo prompt e as mesmas referências.
+- `python3 tools/lote_openai.py enviar conteudo/<a>.json conteudo/<b>.json ...` cria o lote e grava `lotes/pendente.json` (faça commit e push dele).
+- `python3 tools/lote_openai.py buscar` verifica o lote; se concluído, salva `<slug>/variacao-1.png` e apaga `lotes/pendente.json`.
+
+Refações pontuais e urgentes: `python3 tools/gerar_infografico_openai.py conteudo/<slug>.json` (síncrono, preço cheio). Use `--dry-run` para ver o prompt.
+
+## Rotina diária (9h, sessão agendada)
+
+1. `buscar` o lote do dia anterior. Se concluído, faça a etapa 5 nas imagens e apresente a mensagem de aprovação (etapa 6) com as imagens.
+2. Prepare os 4 próximos `na_fila` (etapas 1 a 3), marque como `em_producao`, faça commit dos `conteudo/*.json` e `enviar` o lote novo. Commit e push de `lotes/pendente.json`.
+3. Nada é publicado sem aprovação: quando o usuário aprovar, siga a etapa 7.
 
 ## Etapa 5: revisão do texto da imagem
 
