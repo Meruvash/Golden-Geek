@@ -15,6 +15,12 @@ Se o jogo tiver `serie` ou outros itens da mesma série na fila (versões, sequ�
 
 ## Arquivos
 
+- `conteudo/<slug>.json`: todo o conteúdo de uma resenha (ficha, prós, contras, fontes e o `roteiro` do infográfico).
+- `tools/build_review.py conteudo/<slug>.json`: gera `<slug>/index.html` a partir do JSON. Não edite o HTML à mão.
+- `tools/prompt_infografico.py conteudo/<slug>.json`: monta o prompt do infográfico a partir do `roteiro`.
+- Ferramentas: busca na web funciona; Wikipedia abre via `curl`; Ludopedia e BoardGameGeek bloqueiam acesso automatizado (não contornar), então os números deles vêm da busca e são sinalizados na ficha.
+- Higgsfield: o modelo do Nemesis já foi enviado como `media_id` `ecdff0d7-7623-4536-b4f4-a98d81b058c6`; reutilize. Gere 2 variações por jogo e escolha a com texto correto.
+
 - `pauta.json`: fila de jogos, regras e resenhas publicadas.
 - `nemesis/index.html`: **modelo de página**. Copie a estrutura e o CSS; troque as cores de cada jogo (`--n`, `--l`, `--r`) pela paleta do tema.
 - `nemesis/infografico.webp`: **modelo visual** do infográfico (referência obrigatória na geração).
