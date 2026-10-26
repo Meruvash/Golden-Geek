@@ -33,58 +33,22 @@ Prêmios que contam (de `pauta.json > regras`): Golden Geek, Spiel des Jahres, K
 
 Para cada prêmio novo: colete de página oficial (Wikipedia só para conferir), registre `{premio, ano, categoria, colocacao, fonte}` e una com o jogo existente pelo nome oficial do BGG. Recalcule `prioridade`: vencedores antes de indicados; jogos-base antes de expansões; mais premiações primeiro; prêmio mais recente primeiro. Nunca inclua um jogo sem fonte do prêmio.
 
-## Etapa 1: pesquisa
+## Padrão de qualidade (Prompt Mestre 3.0 e Sistema de Infográfico v2 da Elite Boardgamers)
 
-Fontes, em ordem: página da editora; BoardGameGeek; Ludopedia (nota, nº de avaliações, peso, enquete de nº ideal, edição nacional); duas críticas especializadas (SU&SD, Dicebreaker, GamesRadar+, Tabletop Gaming, Ars Technica…); opiniões recorrentes de jogadores.
+Os dois PDFs do usuário são a norma. Resumo operacional:
 
-Regras inegociáveis:
-- Todo número tem fonte e data da consulta. O que não for encontrado fica **"não confirmado nas fontes consultadas"**. Nunca estime.
-- Separe FATO de OPINIÃO e atribua cada opinião à crítica que a fez.
-- Guarde o link de cada fonte (a seção Fontes da página tem links).
+**Prioridade em conflito:** política de evidência > pedido do usuário > configuração > resto.
 
-Saída da pesquisa: FICHA (ano, autor, editora, jogadores, duração anunciada e relatada, nota Ludopedia com nº de votos, peso, melhor com, edição nacional, **premiações da pauta**); COMO FUNCIONA; DIFERENCIAIS entre versões; ELOGIOS com fonte; CRÍTICAS com fonte e gravidade (leve/moderada/grave); PARA QUEM É / NÃO É; FONTES.
+**Pesquisa (8 a 20 buscas ou leituras):** BGG (nota, votos, ranking, peso, enquete de jogadores, idade), Ludopedia (nota, avaliações, edição nacional), editora e manual, ao menos duas críticas independentes **lidas na íntegra** (baixe a página com `curl` e leia; só atribua opinião a quem você leu), fóruns. Pare quando cada campo da ficha tiver fonte ou "não confirmado" e houver três fortes e três fracos.
 
-## Etapa 2: texto da resenha
+**Política de evidência:** cada afirmação é fato verificado (com fonte), consenso ("jogadores relatam com frequência"), opinião isolada ("uma minoria aponta") ou leitura editorial ("Nossa leitura:"). Dado ausente: "Não confirmado nas fontes consultadas." Divergência: mostre as duas. Número de comunidade sempre com data. Base e expansão nunca misturadas. Sem nota própria da marca. Preço só com fonte e data.
 
-Mesma estrutura de `nemesis/`: chamada "Elite Boardgamers apresenta", título, abertura, ficha comparativa, Como funciona, O que muda (se houver versões), O que funciona muito bem (3–5), Pontos de atenção (3–5, com gravidade), Para quem é, Veredito com selo (Recomendado / Recomendado para público específico / Não recomendado) e tagline em caixa alta, Fontes. **Inclua um bloco com as premiações** (prêmio, ano, categoria, colocação). Tom direto e honesto; nada além do que está na pesquisa.
+**Texto (`conteudo/<slug>.md`, 1.500 a 2.500 palavras, sem travessão):** 1 linha de identificação "Resenha: [nome] ([ano], [editora]) | Marca: Elite Boardgamers | Consulta em [data]"; 2 "Elite Boardgamers apresenta" + título + linha fina; 3 abertura; 4 ficha técnica (tabela); 5 recepção BGG x Ludopedia; 6 como funciona com exemplo de turno e "o coração do jogo"; 7 pontos fortes (3 a 5); 8 pontos fracos (3 a 5, com gravidade Leve/Moderada/Grave e frequência recorrente/isolada); 9 experiência de mesa; 10 modo solo; 11 comparação (tabela) + "Escolha X se"; 12 para quem é / não é; 13 veredito (Altamente recomendado | Recomendado | Recomendado para um público específico | Experiência de nicho | Não recomendado para o perfil analisado) terminando em "RECOMENDADO PARA FÃS DE [perfil]"; 14 fontes com links. Use `azul.md` como modelo. Gere a página com `python3 tools/build_review_md.py conteudo/<slug>.md`.
 
-## Etapa 3: roteiro do infográfico
-
-Limites de caracteres (com espaços). Texto curto é o que evita erro na imagem:
-
-| Bloco | Limite |
-|---|---|
-| Título (pergunta ou chamada) | 28 |
-| Subtítulo | 50 |
-| Selo de prêmio (ex.: "GOLDEN GEEK 2019 · JOGO DO ANO") | 34 |
-| Colunas (1–3): nome do jogo | 20 |
-| … cada uma com 3 tópicos | 45 cada |
-| Barra de info: 4 chips | 18 cada |
-| O que funciona: 4 linhas, rótulo + frase | 14 + 110 |
-| Pontos de atenção: 4 linhas, rótulo + frase | 14 + 110 |
-| Veredito: até 3 itens, nome + complemento | 14 + 22 |
-
-Para um jogo sem versões, use as colunas para três ângulos (ex.: "COMO JOGA", "DESTAQUE", "CUIDADO").
-
-## Etapa 4: gerar o infográfico (Higgsfield, GPT Image 2.5)
-
-1. Envie `nemesis/infografico.webp` com `media_upload` → `media_confirm` (uma vez por sessão) e use o `media_id` como `image_references`.
-2. `generate_image` com `model: gpt_image_2_5`, `aspect_ratio: 1:1`, `quality: high`, `count: 2` (≈1,5 crédito por imagem).
-3. Prompt (instruções em inglês, textos da arte em português):
-
-```
-Use the reference image ONLY as a layout and style template: same dark, glowing neon-panel infographic style, "ELITE BOARDGAMERS" crown logo top-left, bold condensed headline at top, columns with a stylized game box + icon bullets, a 4-chip info bar, a green "pros" panel on the left and a red "cons" panel on the right, and a gold "VEREDITO" bar at the bottom.
-Replace the theme, colors and artwork to match <JOGO>: <descrição visual do tema>.
-Add a gold award seal near the headline.
-Square 1:1 Instagram infographic, high legibility on a phone.
-Render EXACTLY this Portuguese text, spelled exactly as written with correct accents, and no other text:
-<roteiro da etapa 3, bloco a bloco, cada texto entre aspas>
-Game boxes are stylized illustrations; no real publisher logos.
-```
-
-## Etapa 5: revisão do texto da imagem
-
-Leia todo o texto visível e compare palavra por palavra com o roteiro: letras, acentos, números, palavras a mais. Se houver erro, edite a imagem pedindo para corrigir **somente** os trechos errados. Depois de 2 tentativas sem sucesso, gere a arte **sem texto** e componha os textos por cima em HTML e depois em imagem (Playwright), usando as mesmas fontes da página.
+**Infográfico (`conteudo/<slug>.arte.json`, vertical 2:3, 1024x1536, teto ~380 palavras):** faixas A (selo, título, chamada) a G (veredito, compra, fontes), textos literais [A1] a [G4]. Use `azul.arte.json` como modelo.
+- Caminho principal: `python3 tools/prompt_mestre.py conteudo/<slug>.arte.json` gera o prompt; Higgsfield `gpt_image_2_5`, `aspect_ratio 2:3`, `quality high`, imagem 1 = logo (`media_id ce4a7982-af2d-4535-b3e6-88f322ee737b`), imagem 2 = referência Nemesis (`ecdff0d7-7623-4536-b4f4-a98d81b058c6`).
+- Revisão: confira cada item [A1] a [G4]. Até 3 erros: correção cirúrgica um por vez. Mais de 3: refazer com 15% menos texto. Mesmo erro após 2 correções: Plano B.
+- **Plano B (diagramação híbrida):** `python3 tools/infografico_html.py conteudo/<slug>.arte.json <saida.png>` monta a arte em HTML com texto 100% fiel e falha se algum painel transbordar. Fundo e ilustração central podem vir de imagens geradas **sem texto** (campos `fundo` e `ilustracao` no JSON).
 
 ## Etapa 6: aprovação em lote
 

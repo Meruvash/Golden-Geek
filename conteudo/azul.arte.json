@@ -1,0 +1,147 @@
+{
+ "jogo": "Azul",
+ "clima": "Palácio português do século XVI com paredes de azulejos azuis e brancos, luz quente de fim de tarde entrando por janelas em arco, mesa de madeira escura com azulejos coloridos espalhados. Paleta azul cobalto, branco, âmbar e dourado.",
+ "centro": "ilustração temática de um mosaico de azulejos sendo montado sobre a mesa, sem caixa e sem logotipo de editora",
+ "A": {
+  "titulo": "AZUL",
+  "chamada": "O mosaico bonito que esconde uma disputa sem piedade por cada azulejo"
+ },
+ "B": {
+  "frase": "Cada azulejo que você pega muda a mesa inteira",
+  "chaves": [
+   "Drafting",
+   "Abstrato",
+   "Família"
+  ]
+ },
+ "C1": [
+  "Jogadores: 2 a 4",
+  "Duração: 30 a 45 min",
+  "Complexidade: 1,9 de 5 (Ludopedia)",
+  "Modo solo: não tem",
+  "Idade: 8+ (caixa original)",
+  "Ano: 2017",
+  "Editoras: Plan B Games e Galápagos",
+  "Idioma: independente"
+ ],
+ "C2": [
+  "Ludopedia 8,6 · 5.260 votos",
+  "BGG cerca de #73 geral (agregador)",
+  "Melhor com 2 (enquete BGG)",
+  "Consulta em 26/10/2026"
+ ],
+ "D": [
+  [
+   "Compre",
+   "Pegue todos os azulejos de uma cor de um mostruário"
+  ],
+  [
+   "Prepare",
+   "Encaixe em uma linha; o que sobra cai no chão"
+  ],
+  [
+   "Decore",
+   "Linhas completas levam uma peça ao mosaico"
+  ],
+  [
+   "Pontue",
+   "Cada peça vale mais encostada em outras"
+  ],
+  [
+   "Termine",
+   "Acaba quando alguém completa uma linha do mosaico"
+  ]
+ ],
+ "E": [
+  [
+   "Ensina em minutos",
+   "Três minutos de explicação e decisões tensas desde o primeiro turno"
+  ],
+  [
+   "Disputa silenciosa",
+   "Cada compra decide o que sobra para os rivais"
+  ],
+  [
+   "Peças marcantes",
+   "Azulejos densos e bonitos que chamam gente para a mesa"
+  ],
+  [
+   "Final aberto",
+   "Bônus de fim de jogo podem virar o placar"
+  ]
+ ],
+ "R": [
+  [
+   "Tema decorativo",
+   "O tema não pesa em nenhuma decisão da partida"
+  ],
+  [
+   "Pode ser cruel",
+   "Quem fica para trás pode encher o chão de penalidades"
+  ],
+  [
+   "Placar pouco prático",
+   "O marcador no tabuleiro dificulta acompanhar os pontos"
+  ],
+  [
+   "Sem modo solo",
+   "A caixa só funciona de 2 a 4 jogadores"
+  ]
+ ],
+ "F": [
+  "Design: Michael Kiesling",
+  "Arte: Philippe Guérin e Chris Quilliams",
+  "Mecânicas: drafting, coleção, colocação de peças",
+  "Componentes: 100 azulejos em 5 padrões"
+ ],
+ "modulos": [
+  [
+   "PRÊMIOS",
+   "Spiel des Jahres 2018 · As d'Or 2018 · Deutscher Spiele Preis 2018 · Golden Geek Família 2017"
+  ],
+  [
+   "FAMÍLIA AZUL",
+   "Expansão Mosaico de Cristal e jogos irmãos Vitrais de Sintra, Summer Pavilion e Queen's Garden"
+  ]
+ ],
+ "G": {
+  "classificacao": "ALTAMENTE RECOMENDADO",
+  "texto": "Rápido de ensinar, bonito e exigente. A compra de azulejos decide tudo. O tema não pesa e a disputa pode irritar quem esperava algo relaxante.",
+  "compra": "Compra: sem pesquisa de preço nesta edição",
+  "fontes": "Fontes: Wargamer, Opinionated Gamers, Zatu, Ludopedia, BGG (agregador) · Consulta em 26/10/2026"
+ },
+ "dificeis": [
+  "Kiesling",
+  "Quilliams",
+  "Guérin",
+  "Galápagos"
+ ],
+ "cor": "#3b9be0",
+ "mosaico": [
+  "#1f5fbf",
+  "#e9e4d6",
+  "#d63b2f",
+  "#f2b632",
+  "#14181f",
+  "#d63b2f",
+  "#f2b632",
+  "#14181f",
+  "#1f5fbf",
+  "#e9e4d6",
+  "#14181f",
+  "#1f5fbf",
+  "#e9e4d6",
+  "#d63b2f",
+  "#f2b632",
+  "#e9e4d6",
+  "#d63b2f",
+  "#f2b632",
+  "#14181f",
+  "#1f5fbf",
+  "#f2b632",
+  "#14181f",
+  "#1f5fbf",
+  "#e9e4d6",
+  "#d63b2f"
+ ]
+}
