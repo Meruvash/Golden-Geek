@@ -32,6 +32,21 @@
    "jogo": "Azul",
    "url": "https://meruvash.github.io/Golden-Geek/azul/",
    "data": "2026-10-26"
+  },
+  {
+   "jogo": "Dune: Imperium",
+   "url": "https://meruvash.github.io/Golden-Geek/dune-imperium/",
+   "data": "2026-10-26"
+  },
+  {
+   "jogo": "The Crew: The Quest for Planet Nine",
+   "url": "https://meruvash.github.io/Golden-Geek/the-crew/",
+   "data": "2026-10-26"
+  },
+  {
+   "jogo": "Terraforming Mars",
+   "url": "https://meruvash.github.io/Golden-Geek/terraforming-mars/",
+   "data": "2026-10-26"
   }
  ],
  "jogos": [
@@ -157,7 +172,7 @@
      "fonte": "https://meruvash.github.io/Golden-Geek/"
     }
    ],
-   "status": "na_fila",
+   "status": "publicado",
    "prioridade": 2,
    "premios_distintos": 4
   },
@@ -216,7 +231,7 @@
      "fonte": "https://meruvash.github.io/Golden-Geek/"
     }
    ],
-   "status": "na_fila",
+   "status": "publicado",
    "prioridade": 3,
    "premios_distintos": 4
   },
@@ -275,7 +290,7 @@
      "fonte": "https://meruvash.github.io/Golden-Geek/"
     }
    ],
-   "status": "na_fila",
+   "status": "publicado",
    "prioridade": 4,
    "premios_distintos": 4
   },
