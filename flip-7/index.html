@@ -42,6 +42,11 @@ a{color:var(--link);text-underline-offset:.18em}
 .jogo .in{max-width:1120px;margin:0 auto;padding:20px 16px 0;display:grid;gap:20px}
 .capa a{display:block;border-radius:8px;overflow:hidden;box-shadow:0 8px 28px rgba(0,0,0,.6)}
 .capa figcaption{font-size:.82rem;color:var(--muted);margin-top:6px}
+.foto-capa img{border-radius:8px;box-shadow:0 8px 28px rgba(0,0,0,.6)}
+.foto{margin:0 0 16px}.foto img{width:100%;border-radius:8px}.foto figcaption{font-size:.78rem;color:var(--muted);margin-top:6px}
+.claro .foto figcaption{color:#5a6270}
+.foto.caixa{float:right;width:112px;margin:4px 0 8px 14px}.foto.caixa figcaption{font-size:.7rem;line-height:1.3}.foto.caixa img{background:#fff}.preco-card::after{content:"";display:block;clear:both}
+.info-meio .capa{max-width:520px}.info-meio .sub{color:var(--muted)}
 .topo{display:grid;grid-template-columns:1fr auto;gap:4px 16px;align-items:start}
 h1{font-size:clamp(2rem,7vw,3.1rem);line-height:1.05;font-weight:800;letter-spacing:-.02em}
 .linha{grid-column:1;color:var(--muted);font-size:.95rem}
@@ -221,23 +226,7 @@ footer a{color:var(--bar-ink)}
 </div></header>
 
 <section class="jogo"><div class="in">
- <figure class="capa">
-  <a href="infografico.webp" target="_blank" rel="noopener"><img src="infografico.webp" width="1600" height="1600" alt="Infográfico Elite Boardgamers sobre o jogo Flip 7" fetchpriority="high"></a>
-  <figcaption>Toque para ver o infográfico em tamanho cheio.</figcaption>
-  <div class="post"><button type="button" class="post-btn" id="b-salvar"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="9" cy="9" r="1.8"/><path d="M21 15.5l-5-5L5 21"/></svg>Salvar na galeria</button><button type="button" class="post-btn" id="b-legenda" aria-expanded="false" aria-controls="legenda"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h8"/></svg>Legenda</button></div>
-  <p class="post-st" id="salvar-st" role="status"></p>
-  <div class="legenda" id="legenda" hidden><p class="leg-st" role="status"></p><div class="leg-txt" id="leg-txt" tabindex="0" aria-label="Legenda para o Instagram">Vira mais uma? Sete números diferentes… ou estoura tudo. 🎰
-
-O arriscar a sorte mais simples possível: aprende-se em segundos e cada carta gera gritos na mesa.
-Vencedor do Golden Geek de Festa 2024 e indicado ao Spiel des Jahres 2025.
-É muita sorte e pouca decisão, mas para abrir a noite com grupo grande funciona demais.
-Veredito: RECOMENDADO PARA PÚBLICO ESPECÍFICO.
-
-Você para no 6 ou arrisca o sétimo?
-Resenha completa no link da bio.
-
-#Flip7 #JogosDeCartas #JogoDeFesta #JogosDeTabuleiro #BoardGames #PartyGame #PushYourLuck #GoldenGeek #EliteBoardgamers #CardGames</div><div class="leg-acoes"><button type="button" class="post-btn" id="b-copiar"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h8"/></svg>Copiar de novo</button><button type="button" class="post-btn" id="b-compartilhar" hidden><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="M8.2 10.8l7.6-4.4M8.2 13.2l7.6 4.4"/></svg>Compartilhar legenda</button></div><p class="leg-dica">Não colou? Toque em “Compartilhar legenda” e escolha “Copiar”, ou segure o dedo no texto acima.</p></div>
- </figure>
+ <figure class="capa foto-capa"><img src="fotos/mesa-1.webp" width="1600" height="1600" alt="Flip 7: mesa montada vista de cima" fetchpriority="high"><figcaption>Imagem: The Op Games</figcaption></figure>
  <div>
   <div class="topo">
    <h1>Flip 7</h1>
@@ -253,7 +242,7 @@ Resenha completa no link da bio.
 </section>
 <nav class="abas" aria-label="Seções da resenha"><ul>
 <li class="li-volta"><a class="volta" href="../resenhas/"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>Resenhas</a></li>
-<li><a href="#resumo">Resumo</a></li><li><a href="#como-funciona">Como funciona</a></li><li><a href="#como-e-jogar">Como é jogar</a></li><li><a href="#pros-contras">Prós e contras</a></li><li><a href="#para-quem">Para quem é</a></li><li><a href="#edicao">Preço</a></li><li><a href="#veredito">Veredito</a></li><li><a href="#mais-resenhas">Mais resenhas</a></li><li><a href="#ficha">Ficha</a></li>
+<li><a href="#resumo">Resumo</a></li><li><a href="#como-funciona">Como funciona</a></li><li><a href="#como-e-jogar">Como é jogar</a></li><li><a href="#pros-contras">Prós e contras</a></li><li><a href="#infografico">Infográfico</a></li><li><a href="#para-quem">Para quem é</a></li><li><a href="#edicao">Preço</a></li><li><a href="#veredito">Veredito</a></li><li><a href="#mais-resenhas">Mais resenhas</a></li><li><a href="#ficha">Ficha</a></li>
 </ul></nav>
 
 <main id="conteudo" class="v2" style="--acc:#e0c23f">
@@ -276,6 +265,7 @@ Resenha completa no link da bio.
   </section>
   <section class="bloco faixa" id="como-e-jogar"><h2>Como é jogar</h2>
    <blockquote class="cit"><p>“Exatamente o tipo de jogo de entrada que deveria ser recomendado a quem está começando no hobby.”</p><cite>Board Game Review UK (tradução livre)</cite></blockquote>
+   <figure class="foto"><img src="fotos/componentes-1.webp" width="1600" height="1067" alt="Flip 7: cartas e componentes" loading="lazy"><figcaption>Imagem: The Op Games</figcaption></figure>
    <div class="leitura"><p>Você já tem o 12, o 10 e o 8 na sua frente, somando 30 pontos. A mesa inteira olha: vira mais uma? Existem doze cartas 12 no baralho, e qualquer uma delas estoura tudo. Você vira, sai um 3, e o grupo grita. Vira de novo, sai um 10, e agora é a vez dos outros comemorarem. A Board Game Review UK conta que o filho adolescente do resenhista quase sempre estoura perseguindo o bônus das sete cartas.</p></div>
    <details class="mais"><summary>Continuar lendo</summary><div class="leitura"><p>Para a mesma resenha, não há muito no jogo, mas a simplificação não o impede de entregar diversão de arriscar a sorte de sobra. As rodadas são tão rápidas que ninguém fica muito tempo fora, e a partida termina antes de cansar. Com cerca de oito pessoas, segundo a resenha, fica ainda melhor.</p></div></details>
   </section>
@@ -283,6 +273,23 @@ Resenha completa no link da bio.
    <div><h2>O que funciona muito bem</h2><ul><li class="pcc ok"><svg class="ic ok" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.5l4.5 4.5L19.5 6.5"/></svg><details><summary><h3>Aprende-se em segundos</h3><span class="lm">Por quê?</span></summary><p>A Zatu destaca que o jogo leva segundos para aprender e serve para praticamente qualquer pessoa, e a Board Game Review UK costuma explicar as regras durante a primeira rodada. Não há manual a consultar depois disso.</p></details></li><li class="pcc ok"><svg class="ic ok" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.5l4.5 4.5L19.5 6.5"/></svg><details><summary><h3>Tensão a cada carta</h3><span class="lm">Por quê?</span></summary><p>A Board Game Review UK diz que a sorte é justamente o grande atrativo: com um número alto na mesa, cada carta virada pode ser a que estoura tudo. A mesa inteira acompanha cada decisão, inclusive quem já parou.</p></details></li><li class="pcc ok"><svg class="ic ok" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.5l4.5 4.5L19.5 6.5"/></svg><details><summary><h3>Especiais que mexem com a mesa</h3><span class="lm">Por quê?</span></summary><p>Freeze, Flip Three e Second Chance criam viradas: congelar o líder da rodada ou obrigar alguém a virar três cartas de uma vez dá um pouco de interação a um jogo que seria só de sorte individual.</p></details></li><li class="pcc ok"><svg class="ic ok" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.5l4.5 4.5L19.5 6.5"/></svg><details><summary><h3>Viciante</h3><span class="lm">Por quê?</span></summary><p>A segunda opinião da Zatu chama o jogo de super viciante, o arriscar a sorte mais simples possível. Como as rodadas duram segundos, a vontade de jogar mais uma aparece logo, e o grupo raramente para na primeira partida.</p></details></li><li class="pcc ok"><svg class="ic ok" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.5l4.5 4.5L19.5 6.5"/></svg><details><summary><h3>Muita gente na mesa</h3><span class="lm">Por quê?</span></summary><p>A caixa aceita muitos jogadores, e a Board Game Review UK prefere cerca de oito, evitando passar de doze. É uma das poucas opções premiadas para festas grandes e famílias inteiras.</p></details></li><li class="pcc ok"><svg class="ic ok" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.5l4.5 4.5L19.5 6.5"/></svg><details><summary><h3>Barato e portátil</h3><span class="lm">Por quê?</span></summary><p>Na edição da Grok, o jogo custa entre R$ 98 e R$ 130 nas lojas consultadas, e o baralho cabe em qualquer bolsa. É ótimo para levar a viagens, encontros e reuniões de família.</p></details></li></ul></div>
    <div><h2>Pontos de atenção</h2><ul><li class="pcc no"><svg class="ic no" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg><details><summary><h3>Muita sorte <span class="sev moderada">Moderada</span></h3><span class="lm">Por quê?</span></summary><p>A Hexagamers lista a dependência de sorte como ponto negativo, e contar cartas ajuda pouco. A Board Game Review UK concorda que o fator sorte é pesado, então quem gosta de controle vai se frustrar.</p></details></li><li class="pcc no"><svg class="ic no" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg><details><summary><h3>Poucas decisões <span class="sev moderada">Moderada</span></h3><span class="lm">Por quê?</span></summary><p>A Hexagamers diz que há poucas decisões significativas e que o jogo não sustenta uma noite inteira. Funciona como abertura ou intervalo, não como o jogo principal do encontro com amigos.</p></details></li><li class="pcc no"><svg class="ic no" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg><details><summary><h3>Nada de novo <span class="sev leve">Leve</span></h3><span class="lm">Por quê?</span></summary><p>A Zatu lembra que arriscar a sorte não é novidade e rejeita o rótulo de melhor jogo de cartas de todos os tempos. A Board Game Review UK pensa igual sobre esse exagero de marketing.</p></details></li><li class="pcc no"><svg class="ic no" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg><details><summary><h3>Caixa grande e sem bloco <span class="sev leve">Leve</span></h3><span class="lm">Por quê?</span></summary><p>A Board Game Review UK critica a caixa, maior do que o conteúdo precisa, e a falta de um bloco de pontuação. Vale separar papel e caneta antes de começar a partida.</p></details></li><li class="pcc no"><svg class="ic no" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg><details><summary><h3>Limite de jogadores exagerado <span class="sev leve">Leve</span></h3><span class="lm">Por quê?</span></summary><p>A caixa fala em até 99 jogadores, o que a Board Game Review UK chama de absurdo. Na prática, a resenha evita passar de doze, e acima disso a espera entre as viradas cresce demais.</p></details></li></ul></div>
   </section>
+  <section class="bloco info-meio" id="infografico"><h2>Infográfico para o Instagram</h2><p class="sub">A resenha inteira em uma imagem: salve na galeria ou copie a legenda pronta.</p><figure class="capa" id="info">
+  <a href="infografico.webp" target="_blank" rel="noopener"><img src="infografico.webp" width="1600" height="1600" alt="Infográfico Elite Boardgamers sobre o jogo Flip 7" loading="lazy"></a>
+  <figcaption>Toque para ver o infográfico em tamanho cheio.</figcaption>
+  <div class="post"><button type="button" class="post-btn" id="b-salvar"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="9" cy="9" r="1.8"/><path d="M21 15.5l-5-5L5 21"/></svg>Salvar na galeria</button><button type="button" class="post-btn" id="b-legenda" aria-expanded="false" aria-controls="legenda"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h8"/></svg>Legenda</button></div>
+  <p class="post-st" id="salvar-st" role="status"></p>
+  <div class="legenda" id="legenda" hidden><p class="leg-st" role="status"></p><div class="leg-txt" id="leg-txt" tabindex="0" aria-label="Legenda para o Instagram">Vira mais uma? Sete números diferentes… ou estoura tudo. 🎰
+
+O arriscar a sorte mais simples possível: aprende-se em segundos e cada carta gera gritos na mesa.
+Vencedor do Golden Geek de Festa 2024 e indicado ao Spiel des Jahres 2025.
+É muita sorte e pouca decisão, mas para abrir a noite com grupo grande funciona demais.
+Veredito: RECOMENDADO PARA PÚBLICO ESPECÍFICO.
+
+Você para no 6 ou arrisca o sétimo?
+Resenha completa no link da bio.
+
+#Flip7 #JogosDeCartas #JogoDeFesta #JogosDeTabuleiro #BoardGames #PartyGame #PushYourLuck #GoldenGeek #EliteBoardgamers #CardGames</div><div class="leg-acoes"><button type="button" class="post-btn" id="b-copiar"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h8"/></svg>Copiar de novo</button><button type="button" class="post-btn" id="b-compartilhar" hidden><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="M8.2 10.8l7.6-4.4M8.2 13.2l7.6 4.4"/></svg>Compartilhar legenda</button></div><p class="leg-dica">Não colou? Toque em “Compartilhar legenda” e escolha “Copiar”, ou segure o dedo no texto acima.</p></div>
+ </figure></section>
   <section class="bloco claro" id="para-quem"><h2>Para quem é</h2>
    <h3 class="h3s">Perfil do jogo</h3><ul class="barras"><li><span>Diversão em grupo</span><span class="bar" role="img" aria-label="5 de 5"><i style="width:100%"></i></span><b>5</b></li><li><span>Facilidade de ensinar</span><span class="bar" role="img" aria-label="5 de 5"><i style="width:100%"></i></span><b>5</b></li><li><span>Partida curta</span><span class="bar" role="img" aria-label="5 de 5"><i style="width:100%"></i></span><b>5</b></li><li><span>Tensão a cada carta</span><span class="bar" role="img" aria-label="5 de 5"><i style="width:100%"></i></span><b>5</b></li><li><span>Profundidade estratégica</span><span class="bar" role="img" aria-label="1 de 5"><i style="width:20%"></i></span><b>1</b></li><li><span>Controle sobre a sorte</span><span class="bar" role="img" aria-label="1 de 5"><i style="width:20%"></i></span><b>1</b></li></ul>
    <h3 class="h3s">Com quantos jogar</h3><ul class="tiles"><li><span class="tn">3 a 5 jogadores</span><span class="pontos" role="img" aria-label="Bom"><i class="on"></i><i class="on"></i><i class=""></i></span><b class="nv">Bom</b><p>Funciona bem e rápido, com bastante tensão em cada virada de carta.</p></li><li><span class="tn">6 a 8 jogadores</span><span class="pontos" role="img" aria-label="Ótimo"><i class="on"></i><i class="on"></i><i class="on"></i></span><b class="nv">Ótimo</b><p>O formato preferido da Board Game Review UK: mesa animada e rodadas ainda curtas.</p></li><li><span class="tn">9 a 12 jogadores</span><span class="pontos" role="img" aria-label="Bom"><i class="on"></i><i class="on"></i><i class=""></i></span><b class="nv">Bom</b><p>Funciona para festas, mas a resenha evita passar de doze por causa da espera.</p></li></ul><ul class="tiles-txt"><li><b>3 a 5 jogadores:</b> Funciona bem e rápido, com bastante tensão em cada virada de carta.</li><li><b>6 a 8 jogadores:</b> O formato preferido da Board Game Review UK: mesa animada e rodadas ainda curtas.</li><li><b>9 a 12 jogadores:</b> Funciona para festas, mas a resenha evita passar de doze por causa da espera.</li></ul>
@@ -295,7 +302,7 @@ Resenha completa no link da bio.
   <section class="bloco claro duo" id="edicao">
    <div class="preco-card"><h2>Edição nacional e preço</h2>
     <p class="faixa-preco">R$ 98 a R$ 130</p><p class="preco-meta">Lojas consultadas em 27/10/2026 · loja oficial R$ 119,90</p>
-    <p>A Grok Games lançou Flip 7 em português em novembro de 2025. Em 27/10/2026, a loja oficial da editora vendia o jogo por R$ 119,90, ou R$ 113,90 no Pix, e outras lojas variavam entre R$ 98 (no Pix) e R$ 130. A caixa nacional indica 14 anos ou mais.</p></div>
+    <figure class="foto caixa"><img src="fotos/capa-1.webp" width="1600" height="1600" alt="Flip 7: caixa do jogo" loading="lazy"><figcaption>Imagem: The Op Games</figcaption></figure><p>A Grok Games lançou Flip 7 em português em novembro de 2025. Em 27/10/2026, a loja oficial da editora vendia o jogo por R$ 119,90, ou R$ 113,90 no Pix, e outras lojas variavam entre R$ 98 (no Pix) e R$ 130. A caixa nacional indica 14 anos ou mais.</p></div>
    <details class="mais dobra" open><summary><h2>Expansões e versões</h2></summary><p>A expansão Flip 7: With a Vengeance foi lançada em 2026, ainda sem edição em português nas fontes consultadas. O jogo também está no Board Game Arena, onde dá para aprender as regras e jogar online de graça.</p></details>
   </section>
   <section class="bloco claro" id="compare"><h2>Se você gosta de Flip 7…</h2><ul class="cards"><li><a class="cc" href="../codenames/"><img src="../codenames/capa.jpg" width="800" height="800" alt="" loading="lazy"><span><b>Codenames</b><span>Outro jogo de festa premiado e fácil de ensinar, mas em equipes e com palavras, para quem quer mais conversa e menos sorte.</span><span class="vr">Ler a resenha →</span></span></a></li><li><a class="cc" href="../the-mind/"><img src="../the-mind/capa.jpg" width="800" height="800" alt="" loading="lazy"><span><b>The Mind</b><span>Também é rápido e de cartas numeradas, só que cooperativo e em silêncio, trocando a sorte pela sintonia do grupo.</span><span class="vr">Ler a resenha →</span></span></a></li><li><a class="cc" href="../azul/"><img src="../azul/capa.jpg" width="800" height="800" alt="" loading="lazy"><span><b>Azul</b><span>Para quando o grupo quiser algo curto, mas com mais decisões: pegar azulejos e montar uma parede em meia hora.</span><span class="vr">Ler a resenha →</span></span></a></li></ul></section>
@@ -353,7 +360,7 @@ Resenha completa no link da bio.
   }
 })();
 (() => {
-  const img = document.querySelector(".capa img"), st = document.getElementById("salvar-st"), nome = "flip-7-elite-boardgamers.jpg";
+  const img = document.querySelector("#info img"), st = document.getElementById("salvar-st"), nome = "flip-7-elite-boardgamers.jpg";
   let arquivo = null;
   // Prepara o JPEG antes do toque: o compartilhamento precisa acontecer logo no clique.
   const preparar = () => {

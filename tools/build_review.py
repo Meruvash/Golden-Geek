@@ -101,8 +101,30 @@ def mais_resenhas(c, n=6):
     )
 
 
-def layout_v2(c, premios_bloco, ficha_html, fontes):
+FOTO_DESC = {"mesa": "mesa montada vista de cima", "componentes": "cartas e componentes", "capa": "caixa do jogo", "jogabilidade": "partida em andamento"}
+
+
+def fotos_do_jogo(slug):
+    """Fotos oficiais aprovadas em <slug>/fotos/fontes.json, sem as que mostram pessoas, por tipo."""
+    p = ROOT / slug / "fotos" / "fontes.json"
+    if not p.exists():
+        return {}
+    fotos = {}
+    for f in json.loads(p.read_text(encoding="utf-8"))["fotos"]:
+        if f.get("aprovada") and not f.get("pessoas"):
+            fotos.setdefault(f["tipo"], f)
+    return fotos
+
+
+def foto_html(c, f, classe="foto", lazy=True):
+    return (f'<figure class="{classe}"><img src="{e(f["arquivo"])}" width="{f["largura"]}" height="{f["altura"]}" '
+            f'alt="{e(c["jogo"])}: {FOTO_DESC.get(f["tipo"], f["tipo"])}"{" loading=\"lazy\"" if lazy else " fetchpriority=\"high\""}>'
+            f'<figcaption>{e(f["credito"])}</figcaption></figure>')
+
+
+def layout_v2(c, premios_bloco, ficha_html, fontes, fotos=None, info_meio=""):
     """Página do padrão editorial v2: resumo no topo, formatos visuais por seção e 'Ler mais' para o que é longo."""
+    fotos = fotos or {}
     r = c.get("roteiro", {})
     pf = lambda t: f'<li>{icone("ok", "ic ok")}<span>{e(t)}</span></li>'
     pn = lambda t: f'<li>{icone("nao", "ic no")}<span>{e(t)}</span></li>'
@@ -140,6 +162,7 @@ def layout_v2(c, premios_bloco, ficha_html, fontes):
     cit = c.get("citacao")
     jogar = f"""<section class="bloco faixa" id="como-e-jogar"><h2>Como é jogar</h2>
    {f'<blockquote class="cit"><p>“{e(cit["texto"])}”</p><cite>{e(cit["fonte"])}</cite></blockquote>' if cit else ""}
+   {foto_html(c, fotos["componentes"]) if "componentes" in fotos else ""}
    <div class="leitura"><p>{e(c["experiencia"][0])}</p></div>
    {f'<details class="mais"><summary>Continuar lendo</summary><div class="leitura">{"".join(f"<p>{e(x)}</p>" for x in c["experiencia"][1:])}</div></details>' if len(c["experiencia"]) > 1 else ""}
   </section>"""
@@ -176,7 +199,7 @@ def layout_v2(c, premios_bloco, ficha_html, fontes):
     edicao = f"""<section class="bloco claro duo" id="edicao">
    <div class="preco-card"><h2>Edição nacional e preço</h2>
     {f'<p class="faixa-preco">{e(preco["faixa"])}</p><p class="preco-meta">Lojas consultadas em {e(preco["data"])}{" · " + e(preco["obs"]) if preco.get("obs") else ""}</p>' if preco else ""}
-    <p>{e(c.get("edicao_nacional", ""))}</p></div>
+    {foto_html(c, fotos["capa"], "foto caixa") if "capa" in fotos else ""}<p>{e(c.get("edicao_nacional", ""))}</p></div>
    <details class="mais dobra" open><summary><h2>Expansões e versões</h2></summary><p>{e(c.get("versoes", ""))}</p></details>
   </section>"""
     cards = "".join(
@@ -197,7 +220,7 @@ def layout_v2(c, premios_bloco, ficha_html, fontes):
     abas = "".join(
         f'<li><a href="#{i}">{t}</a></li>'
         for i, t in (("resumo", "Resumo"), ("como-funciona", "Como funciona"), ("como-e-jogar", "Como é jogar"), ("pros-contras", "Prós e contras"),
-                     ("para-quem", "Para quem é"), ("edicao", "Preço"), ("veredito", "Veredito"), ("mais-resenhas", "Mais resenhas"), ("ficha", "Ficha"))
+                     *((("infografico", "Infográfico"),) if info_meio else ()), ("para-quem", "Para quem é"), ("edicao", "Preço"), ("veredito", "Veredito"), ("mais-resenhas", "Mais resenhas"), ("ficha", "Ficha"))
     )
     premios_bloco = re.sub(r'<h2>Prêmios</h2><p class="resumo">(.*?)</p>', r'<details class="mais dobra" open><summary><h2>Prêmios</h2> <span class="resumo">\1</span></summary>', premios_bloco).replace("</ul></section>", "</ul></details></section>")
     main = f"""<main id="conteudo" class="v2" style="--acc:{e(c.get("cor", "#e3b23c"))}">
@@ -206,6 +229,7 @@ def layout_v2(c, premios_bloco, ficha_html, fontes):
   {como}
   {jogar}
   {pc}
+  {info_meio}
   {quem}
   {edicao}
   {compara}
@@ -350,8 +374,25 @@ def build(c):
   <section class="bloco claro" id="ficha"><h2>Ficha técnica</h2><dl>{ficha_html}</dl><p class="note">{e(c["nota_ficha"])}</p></section>
  </aside>
 </main>"""
+    info_fig = f"""<figure class="capa" id="info">
+  <a href="infografico.webp" target="_blank" rel="noopener"><img src="infografico.webp" width="{larg}" height="{alt}" alt="{e(c["alt"])}"{{carga}}></a>
+  <figcaption>Toque para ver o infográfico em tamanho cheio.</figcaption>
+  <div class="post"><button type="button" class="post-btn" id="b-salvar">{icone("salvar")}Salvar na galeria</button>{legenda_btn}</div>
+  <p class="post-st" id="salvar-st" role="status"></p>
+  {legenda_box}
+ </figure>"""
+    # Com foto oficial, ela vira a capa da página e o infográfico desce para o meio da resenha.
+    fotos = fotos_do_jogo(slug) if c.get("experiencia") else {}
+    principal = next((fotos.pop(t) for t in ("mesa", "componentes", "jogabilidade", "capa") if t in fotos), None)
+    if principal:
+        topo_fig = foto_html(c, principal, "capa foto-capa", lazy=False)
+        info_meio = (f'<section class="bloco info-meio" id="infografico"><h2>Infográfico para o Instagram</h2>'
+                     f'<p class="sub">A resenha inteira em uma imagem: salve na galeria ou copie a legenda pronta.</p>'
+                     f'{info_fig.replace("{carga}", " loading=\"lazy\"")}</section>')
+    else:
+        topo_fig, info_meio = info_fig.replace("{carga}", ' fetchpriority="high"'), ""
     if c.get("experiencia"):
-        abas_html, main_html = layout_v2(c, premios_bloco, ficha_html, fontes)
+        abas_html, main_html = layout_v2(c, premios_bloco, ficha_html, fontes, fotos, info_meio)
     else:
         abas_html, main_html = abas_antigas, main_antigo
     return f"""<!doctype html>
@@ -398,6 +439,11 @@ a{{color:var(--link);text-underline-offset:.18em}}
 .jogo .in{{max-width:1120px;margin:0 auto;padding:20px 16px 0;display:grid;gap:20px}}
 .capa a{{display:block;border-radius:8px;overflow:hidden;box-shadow:0 8px 28px rgba(0,0,0,.6)}}
 .capa figcaption{{font-size:.82rem;color:var(--muted);margin-top:6px}}
+.foto-capa img{{border-radius:8px;box-shadow:0 8px 28px rgba(0,0,0,.6)}}
+.foto{{margin:0 0 16px}}.foto img{{width:100%;border-radius:8px}}.foto figcaption{{font-size:.78rem;color:var(--muted);margin-top:6px}}
+.claro .foto figcaption{{color:#5a6270}}
+.foto.caixa{{float:right;width:112px;margin:4px 0 8px 14px}}.foto.caixa figcaption{{font-size:.7rem;line-height:1.3}}.foto.caixa img{{background:#fff}}.preco-card::after{{content:"";display:block;clear:both}}
+.info-meio .capa{{max-width:520px}}.info-meio .sub{{color:var(--muted)}}
 .topo{{display:grid;grid-template-columns:1fr auto;gap:4px 16px;align-items:start}}
 h1{{font-size:clamp(2rem,7vw,3.1rem);line-height:1.05;font-weight:800;letter-spacing:-.02em}}
 .linha{{grid-column:1;color:var(--muted);font-size:.95rem}}
@@ -577,13 +623,7 @@ footer a{{color:var(--bar-ink)}}
 </div></header>
 
 <section class="jogo"><div class="in">
- <figure class="capa">
-  <a href="infografico.webp" target="_blank" rel="noopener"><img src="infografico.webp" width="{larg}" height="{alt}" alt="{e(c["alt"])}" fetchpriority="high"></a>
-  <figcaption>Toque para ver o infográfico em tamanho cheio.</figcaption>
-  <div class="post"><button type="button" class="post-btn" id="b-salvar">{icone("salvar")}Salvar na galeria</button>{legenda_btn}</div>
-  <p class="post-st" id="salvar-st" role="status"></p>
-  {legenda_box}
- </figure>
+ {topo_fig}
  <div>
   <div class="topo">
    <h1>{e(c["jogo"])}</h1>
@@ -640,7 +680,7 @@ footer a{{color:var(--bar-ink)}}
   }}
 }})();
 (() => {{
-  const img = document.querySelector(".capa img"), st = document.getElementById("salvar-st"), nome = "{slug}-elite-boardgamers.jpg";
+  const img = document.querySelector("#info img"), st = document.getElementById("salvar-st"), nome = "{slug}-elite-boardgamers.jpg";
   let arquivo = null;
   // Prepara o JPEG antes do toque: o compartilhamento precisa acontecer logo no clique.
   const preparar = () => {{
