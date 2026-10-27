@@ -6,7 +6,7 @@
  "og_titulo": "Sky Team vale a pena? Resenha Elite Boardgamers",
  "descricao": "Resenha de Sky Team, vencedor do Spiel des Jahres 2024: como funciona, pontos fortes, pontos de atenção e para quem é.",
  "titulo_html": "Piloto, copiloto e nenhuma palavra: <span>Sky Team</span>",
- "lede": "Sky Team é um jogo cooperativo para exatamente duas pessoas: piloto e copiloto precisam pousar um avião alocando dados em silêncio. Venceu o Spiel des Jahres em 2024 e os Golden Geek de jogo para 2 e de cooperativo em 2023.",
+ "lede": "Sky Team é um jogo cooperativo para exatamente duas pessoas: piloto e copiloto precisam pousar um avião colocando dados num painel, sem poder conversar depois de rolar. Venceu o Spiel des Jahres 2024 e os Golden Geek de jogo para dois e de cooperativo em 2023. É curto, tenso e original, com edição em português da Galápagos, ideal para casais e duplas fixas.",
  "tags": [
   "2 jogadores",
   "15–20 min",
@@ -123,62 +123,77 @@
  ],
  "nota_ficha": "Números do BoardGameGeek obtidos por busca. A idade indicada varia entre as fontes.",
  "como_funciona": [
-  "Um jogador é o piloto e o outro, o copiloto. No início de cada rodada, cada um rola seus dados escondido do parceiro. Antes de rolar, os dois podem conversar; depois, ninguém fala mais.",
-  "Alternando a vez, cada um coloca um dado no painel de controle: eixo para manter o avião nivelado, motores para ajustar a velocidade, rádio para tirar outros aviões do caminho, trem de pouso, flaps e freios.",
-  "O objetivo é chegar à pista com tudo pronto: avião nivelado, velocidade certa, trem e flaps abaixados e pista livre. Os 21 cenários trazem vento, combustível e gelo na pista."
+  "Um jogador é o piloto e o outro, o copiloto, sentados lado a lado diante de um painel de controle de papelão. Cada um tem quatro dados da sua cor. A partida representa a aproximação de um aeroporto, rodada a rodada, até o pouso.",
+  "No início de cada rodada, os dois podem conversar sobre a estratégia, mas sem citar números. Depois cada um rola seus dados escondido do parceiro, e a partir daí ninguém fala mais: a comunicação passa a ser feita só pelos dados colocados no painel.",
+  "Alternando a vez, cada um coloca um dado num espaço do painel. O eixo exige um dado de cada piloto para manter o avião nivelado; os motores definem a velocidade; o rádio tira outros aviões do caminho; trem de pouso, flaps e freios precisam ser ativados antes do fim.",
+  "Cada espaço tem regras: alguns só aceitam dados de um piloto, outros pedem números específicos ou uma ordem certa. Se os dois dados dos motores não forem colocados até o fim da rodada, ou se o avião inclinar demais, ele cai.",
+  "Para vencer, é preciso chegar à pista com o avião nivelado, a velocidade baixa, trem e flaps abaixados, freios prontos e nenhum avião no caminho. Os aeroportos e os módulos de vento, gelo e combustível deixam cada voo mais difícil."
  ],
  "funciona": [
   [
    "Comunicação sem palavras",
-   "Cada dado colocado é uma mensagem ao parceiro; a Frontline Gaming destaca esse foco em coordenação não verbal."
+   "Cada dado colocado é uma mensagem ao parceiro, e a dupla aprende a se entender sem falar. A Frontline Gaming destaca esse foco em coordenação não verbal, que dá ao jogo uma sensação diferente de qualquer outro cooperativo."
   ],
   [
    "Tensão em 15 minutos",
-   "Partidas curtas e decisivas, com o pouso podendo dar errado até a última rodada."
+   "Partidas curtas e decisivas, com o pouso podendo dar errado até a última rodada. A Wargamer confirma os cerca de 15 minutos por voo, o que faz a dupla querer tentar de novo logo depois de cair."
   ],
   [
-   "Muitos desafios",
-   "São 11 aeroportos e 21 cenários, de Montreal a Tóquio, com dificuldade crescente."
+   "Desafio que cresce aos poucos",
+   "São 11 aeroportos e 21 cenários, de Montreal a Tóquio, com quatro níveis de dificuldade. Módulos de vento, gelo, vazamento de combustível e até um estagiário inexperiente mudam cada voo, segundo a Wargamer."
   ],
   [
-   "Componentes bonitos",
-   "A Wargamer elogia os componentes, chamando-os de impressionantes."
+   "Regra que entra em minutos",
+   "A Wargamer considera o jogo fácil de aprender, apesar das muitas formas de falhar. A regra entra em minutos, e as variantes só aparecem depois do primeiro pouso bem-sucedido, no ritmo da dupla."
+  ],
+  [
+   "Painel em relevo que vira cabine",
+   "O painel em relevo, que simula a cabine de um avião, e os dados nas cores de cada piloto chamam atenção na mesa. A Wargamer elogia os componentes e os chama de impressionantes."
   ]
  ],
  "atencao": [
   [
    "Moderada",
    "Muita sorte nos dados",
-   "A Wargamer lista a dependência de sorte entre os contras; a Frontline Gaming lembra que um dado ruim pode estragar um bom plano."
+   "A Wargamer considera o jogo fortemente dependente da sorte, o que pode frustrar fãs de estratégia pesada, e a Frontline Gaming lembra que um dado ruim pode estragar um plano bem combinado."
   ],
   [
    "Moderada",
    "Só para 2 jogadores",
-   "Não joga com mais gente nem sozinho."
+   "Sky Team não joga com mais gente nem sozinho: são exatamente duas pessoas. Para grupos de três ou mais, ele fica na estante, então vale a pena principalmente para quem joga sempre em dupla."
+  ],
+  [
+   "Leve",
+   "Pode cansar em sequência",
+   "A Wargamer nota que a ideia central pode ficar repetitiva depois de muitos voos seguidos. Os módulos e aeroportos ajudam, mas o jogo funciona melhor em poucas partidas por sessão."
   ],
   [
    "Leve",
    "Diferença de experiência",
-   "A Frontline Gaming alerta que um jogador experiente pode dominar a dupla, diminuindo a cooperação."
+   "A Frontline Gaming alerta que um jogador experiente pode dominar a dupla, decidindo tudo e diminuindo a cooperação. Vale combinar antes que cada um assume as próprias decisões, mesmo errando."
   ],
   [
    "Leve",
-   "Preparação trabalhosa",
-   "A Wargamer considera a montagem de cada cenário um pouco trabalhosa."
+   "Montagem trabalhosa",
+   "A Wargamer considera a montagem do painel em relevo, com fita adesiva e dobras, um pouco trabalhosa, e cada cenário pede alguns ajustes antes de começar. Depois da primeira vez, fica mais rápido."
   ]
  ],
  "para_quem": [
   "Joga sempre em dupla",
   "Gosta de cooperativos curtos e tensos",
-  "Quer um jogo diferente para casal"
+  "Quer um jogo diferente para casal",
+  "Gosta de comunicação sem palavras",
+  "Quer partidas de 15 minutos"
  ],
  "nao_e_para": [
   "Joga em grupos de 3 ou mais",
   "Não gosta de sorte nos dados",
-  "Quer jogar sozinho"
+  "Quer jogar sozinho",
+  "Prefere estratégia pesada",
+  "Detesta montar componentes"
  ],
  "selo": "Recomendado para público específico",
- "veredito": "Sky Team é um dos melhores cooperativos para duas pessoas: curto, tenso e com uma ideia muito original de comunicação sem palavras. A sorte nos dados pesa e o jogo é só para dupla, mas para quem joga a dois é uma compra certa.",
+ "veredito": "Sky Team é um dos melhores cooperativos para duas pessoas: curto, tenso e com uma ideia muito original de comunicação sem palavras, em que cada dado no painel é um recado ao parceiro. Fácil de aprender e cheio de aeroportos e módulos, ele cresce no ritmo da dupla. A sorte nos dados pesa, a ideia pode cansar em muitas partidas seguidas e o jogo é só para duas pessoas. Para casais e duplas fixas, por cerca de R$ 250, é compra certa.",
  "tagline": "Pouso perfeito, sem dizer uma palavra.",
  "consulta": "26/10/2026",
  "fontes": [
@@ -211,6 +226,16 @@
    "Tabletop Gaming – Sky Team",
    "https://www.tabletopgaming.co.uk/reviews/sky-team-board-game-review/",
    "crítica geral"
+  ],
+  [
+   "Galápagos – Sky Team",
+   "https://loja.galapagosjogos.com.br/sky-team/produto/SKT001",
+   "edição nacional, preço oficial"
+  ],
+  [
+   "Meca dos Jogos – Sky Team",
+   "https://www.mecadosjogos.com.br/sky-team-p528",
+   "preço de referência"
   ]
  ],
  "roteiro": {
@@ -291,5 +316,99 @@
   ],
   "veredito": "UM DOS MELHORES COOPERATIVOS PARA DOIS."
  },
- "legenda": "Piloto e copiloto precisam pousar um avião… sem dizer uma palavra. ✈️\n\nCooperativo para 2: cada dado colocado no painel é um recado silencioso ao parceiro.\nVencedor do Spiel des Jahres 2024 e dos Golden Geek de Cooperativo e 2 jogadores.\nA sorte nos dados pesa e é só para dupla, mas para quem joga a dois é compra certa.\nVeredito: RECOMENDADO PARA PÚBLICO ESPECÍFICO.\n\nVocê é mais piloto ou copiloto?\nResenha completa no link da bio.\n\n#SkyTeam #JogosDeTabuleiro #JogoParaDois #Cooperativo #BoardGames #SpielDesJahres #Galapagos #TwoPlayerGames #EliteBoardgamers #BoardGameNight"
+ "legenda": "Piloto e copiloto precisam pousar um avião… sem dizer uma palavra. ✈️\n\nCooperativo para 2: cada dado colocado no painel é um recado silencioso ao parceiro.\nVencedor do Spiel des Jahres 2024 e dos Golden Geek de Cooperativo e 2 jogadores.\nA sorte nos dados pesa e é só para dupla, mas para quem joga a dois é compra certa.\nVeredito: RECOMENDADO PARA PÚBLICO ESPECÍFICO.\n\nVocê é mais piloto ou copiloto?\nResenha completa no link da bio.\n\n#SkyTeam #JogosDeTabuleiro #JogoParaDois #Cooperativo #BoardGames #SpielDesJahres #Galapagos #TwoPlayerGames #EliteBoardgamers #BoardGameNight",
+ "passos": [
+  [
+   "PLANEJE EM VOZ ALTA",
+   "Antes de rolar, a dupla pode combinar a estratégia, mas sem citar números. Depois, ninguém fala mais."
+  ],
+  [
+   "ROLE ESCONDIDO",
+   "Cada piloto rola seus quatro dados atrás de uma proteção, sem mostrar o resultado ao parceiro."
+  ],
+  [
+   "OCUPE O PAINEL",
+   "Alternando a vez, coloque um dado no eixo, nos motores, no rádio, nos flaps, no trem de pouso ou nos freios."
+  ],
+  [
+   "MANTENHA O EQUILÍBRIO",
+   "O eixo precisa de um dado de cada piloto; se o avião inclinar demais, ele cai na hora."
+  ],
+  [
+   "POUSE COM TUDO PRONTO",
+   "Chegue à pista nivelado, devagar, com trem e flaps abaixados, freios prontos e o caminho livre."
+  ]
+ ],
+ "como_resumo": "Dois pilotos, dados escondidos e silêncio: cada dado no painel é um recado ao parceiro.",
+ "perfil": [
+  [
+   "Cooperação",
+   5
+  ],
+  [
+   "Tensão",
+   5
+  ],
+  [
+   "Partida curta",
+   5
+  ],
+  [
+   "Facilidade de ensinar",
+   4
+  ],
+  [
+   "Sorte nos dados",
+   4
+  ],
+  [
+   "Jogo para grupos",
+   0
+  ]
+ ],
+ "experiencia": [
+  "Antes de rolar, o piloto avisa: vou cuidar dos motores, você segura o eixo. Os dados caem e o silêncio começa. O copiloto tirou dois 6, ótimos para os flaps, mas o eixo pede um dado parecido com o do piloto para não inclinar o avião. Ele coloca um 3 no eixo e torce para o parceiro entender; quando o piloto responde com outro 3, a dupla respira aliviada.",
+  "A Wargamer chama Sky Team de um jogo para dois realmente único e destaca que a complexidade cresce aos poucos, com variantes acrescentadas depois do primeiro pouso bem-sucedido. Cada voo dura cerca de 15 minutos, então a revanche é imediata, embora a mesma resenha note que a ideia central pode cansar depois de muitos voos seguidos."
+ ],
+ "citacao": {
+  "texto": "Um jogo de tabuleiro para dois realmente único.",
+  "fonte": "Wargamer (tradução livre)"
+ },
+ "jogadores": [
+  [
+   "2 jogadores",
+   "O único formato possível, e o jogo foi feito para ele: piloto e copiloto dividindo o painel.",
+   3
+  ],
+  [
+   "Casais e duplas fixas",
+   "Funciona ainda melhor quando a dupla já se conhece e aprende a ler os dados do parceiro.",
+   3
+  ]
+ ],
+ "primeira_partida": "Comece pelo aeroporto de Montreal, o primeiro do livreto, e jogue a rodada inicial com os dados abertos para entender cada espaço do painel. O que mais confunde é o eixo e a regra de que os dois dados dos motores precisam ser colocados em toda rodada. Dica prática: combine antes quem cuida de quê e só depois tente o voo em silêncio completo.",
+ "edicao_nacional": "A Galápagos publica Sky Team em português. Em 27/10/2026, a loja oficial da editora listava o jogo por R$ 249,99, e outras lojas vendiam entre R$ 217 (no Pix) e R$ 250, com estoque na maioria delas. Na Amazon, havia exemplares usados por cerca de R$ 183.",
+ "preco_ref": {
+  "faixa": "R$ 217 a R$ 250",
+  "data": "27/10/2026",
+  "obs": "preço oficial R$ 249,99"
+ },
+ "versoes": "A própria caixa traz 11 aeroportos, 21 cenários em quatro níveis de dificuldade e seis módulos que mudam o voo, como vento, gelo, vazamento de combustível e estagiário inexperiente, então há conteúdo para muitas partidas sem expansão.",
+ "comparacoes": [
+  [
+   "The Crew",
+   "the-crew",
+   "Outro cooperativo de comunicação limitada, com cartas e vazas no lugar dos dados, que funciona melhor com três ou quatro pessoas."
+  ],
+  [
+   "The Mind",
+   "the-mind",
+   "Para casais que gostam da sintonia silenciosa de Sky Team: só uma regra e cartas de 1 a 100 jogadas em ordem, sem combinar nada."
+  ],
+  [
+   "Azul",
+   "azul",
+   "Se a dupla quer um jogo competitivo do mesmo tamanho, Azul é tenso a dois, bonito e se aprende em minutos."
+  ]
+ ]
 }

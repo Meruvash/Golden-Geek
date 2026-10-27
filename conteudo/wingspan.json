@@ -6,7 +6,7 @@
  "og_titulo": "Wingspan vale a pena? Resenha Elite Boardgamers",
  "descricao": "Resenha de Wingspan, vencedor do Kennerspiel des Jahres 2019: como funciona, pontos fortes, pontos de atenção e para quem é.",
  "titulo_html": "Aves, ovos e um motor que voa: <span>Wingspan</span>",
- "lede": "Wingspan é um jogo de cartas e construção de motor sobre atrair aves para a sua reserva natural. Em 2019 venceu o Kennerspiel des Jahres, o Deutscher Spiele Preis e sete categorias do Golden Geek, incluindo Jogo do Ano.",
+ "lede": "Wingspan é um jogo de cartas e construção de motor sobre atrair aves para a sua reserva natural, com 170 aves ilustradas à mão. Em 2019 venceu o Kennerspiel des Jahres, o Deutscher Spiele Preis e sete categorias do Golden Geek, incluindo Jogo do Ano. É bonito, acolhedor e fácil de aprender, com modo solo oficial e edição em português da Grok Games.",
  "tags": [
   "1–5 jogadores",
   "40–70 min",
@@ -150,62 +150,81 @@
  ],
  "nota_ficha": "Números do BoardGameGeek obtidos por busca. A editora brasileira vem de anúncios em lojas, não da página da editora.",
  "como_funciona": [
-  "Cada jogador tem um tabuleiro com três habitats: floresta, campo e áreas úmidas. Na sua vez, você faz uma de quatro ações: jogar uma ave, pegar alimento no comedouro de dados, botar ovos ou comprar cartas de aves.",
-  "Cada ave custa alimento e ocupa um habitat. As ações de pegar comida, botar ovos e comprar cartas ficam mais fortes conforme o habitat correspondente enche, e muitas aves têm poderes que disparam juntos: esse é o motor do jogo.",
-  "São quatro rodadas, cada uma com menos ações e um objetivo próprio. Vence quem somar mais pontos de aves, ovos, objetivos e bônus."
+  "Cada jogador tem um tabuleiro de reserva com três habitats, floresta, campo e áreas úmidas, cada um com cinco espaços para aves. No centro da mesa ficam o comedouro, uma torre de dados de alimento, e uma fileira de três cartas de aves à disposição.",
+  "Na sua vez, você coloca um dos seus cubos de ação numa de quatro opções: jogar uma ave da mão, pagando o custo em alimento; pegar alimento no comedouro; botar ovos nas aves; ou comprar cartas de aves. As três últimas acontecem na linha de um habitat do seu tabuleiro.",
+  "Esse é o motor do jogo: quanto mais aves num habitat, mais forte fica a ação dele. Além disso, muitas aves têm poderes marrons que disparam sempre que você usa aquele habitat, então uma única ação pode render alimento, ovos e cartas em sequência.",
+  "Cada ave vale pontos, tem um tipo de ninho e uma capacidade de ovos, e traz dados reais da espécie, como envergadura e habitat. Cartas de bônus secretas dão pontos extras por objetivos próprios, como aves de certa envergadura ou de certo tipo.",
+  "São quatro rodadas, cada uma com menos cubos de ação e um objetivo de rodada disputado por todos. Vence quem somar mais pontos de aves, ovos, alimento guardado nas cartas, aves empilhadas, bônus e objetivos."
  ],
  "funciona": [
   [
    "Produção caprichada",
-   "As 170 cartas ilustradas à mão e o comedouro de dados são o elogio mais repetido; a Wargamer chama a produção de incrível."
+   "As 170 cartas ilustradas à mão, os ovos coloridos e a torre de dados que serve de comedouro são o elogio mais repetido. Para a Wargamer, é onde o jogo mais se destaca, e o visual convida quem não joga a sentar à mesa."
   ],
   [
    "Motor satisfatório e acessível",
-   "Ver as aves dispararem em sequência é muito satisfatório, e a regra é mais leve que a de outros jogos de motor."
+   "Ver as aves dispararem em sequência é muito satisfatório, e a regra é mais leve que a de outros jogos de motor. A Wargamer o chama de fácil de aprender e difícil de dominar, uma boa ponte para jogos mais estratégicos."
   ],
   [
    "Modo solo oficial",
-   "O Automa permite jogar sozinho contra um rival automatizado."
+   "O Automa, criado pela equipe da Stonemaier, permite jogar sozinho contra um rival automatizado que disputa os objetivos de rodada. O jogo levou o Golden Geek de melhor solo em 2019."
   ],
   [
    "Tema que encanta",
-   "Cada carta traz dados reais da ave; o jogo atrai até quem não costuma jogar."
+   "Cada carta traz dados reais da ave, como envergadura, habitat e um texto sobre a espécie. O tema atrai até quem não costuma jogar e faz cada partida virar uma pequena aula de ornitologia, comentada em voz alta."
+  ],
+  [
+   "Muita variedade",
+   "Com 170 aves, cartas de bônus e objetivos de rodada sorteados, nenhuma reserva sai igual. A Wargamer destaca a variedade de sobra, e as expansões acrescentam aves de outros continentes."
+  ],
+  [
+   "Recordista de prêmios",
+   "Wingspan venceu o Kennerspiel des Jahres, o Deutscher Spiele Preis e sete categorias do Golden Geek em 2019, incluindo Jogo do Ano, Arte, Solo e Estratégia, uma das maiores coleções de prêmios de um único jogo."
   ]
  ],
  "atencao": [
   [
    "Moderada",
    "Pouca interação",
-   "A Wargamer e a Tabletop Together notam que a interação se resume a pegar o alimento ou a carta que o outro queria."
+   "A Wargamer e a Tabletop Together notam que a interação se resume a pegar o alimento ou a carta que o outro queria. Quem gosta de disputa direta vai sentir que cada um joga no próprio tabuleiro."
   ],
   [
    "Moderada",
-   "Sorte na compra de cartas",
-   "A PC Gamer aponta a sorte nos dados de alimento e na compra de aves como a principal crítica de quem não gosta do jogo."
+   "Mão inicial pode decidir a partida",
+   "A Wargamer aponta que a sorte tem papel considerável: uma mão inicial fraca ou compras ruins podem afundar até um jogador experiente. A PC Gamer também cita a sorte nos dados e nas aves como a principal crítica."
+  ],
+  [
+   "Leve",
+   "Arrasta com muitos jogadores",
+   "Segundo a Wargamer, o jogo funciona melhor com poucos jogadores, para manter o ritmo. Com cinco, a espera entre os turnos cresce, já que a interação baixa deixa pouco a fazer fora da sua vez."
   ],
   [
    "Leve",
    "Ações repetitivas",
-   "Erik Twice argumenta que as aves se reduzem a poucos efeitos e que o tema acrescenta pouca profundidade."
+   "Erik Twice argumenta que as aves se reduzem a poucos efeitos e que o tema acrescenta pouca profundidade. Depois de muitas partidas, as jogadas podem parecer parecidas, apesar das ilustrações diferentes."
   ],
   [
    "Leve",
-   "Pouca inovação mecânica",
-   "A Tabletop Together diz que o jogo junta ideias conhecidas, ainda que de forma muito fluida."
+   "Produção acima da jogabilidade",
+   "Para a Wargamer, a apresentação é mais forte que a jogabilidade, que seria apenas muito boa por baixo de tanto capricho. A Tabletop Together diz algo parecido: o jogo junta ideias conhecidas, ainda que de forma muito fluida."
   ]
  ],
  "para_quem": [
   "Quer um jogo bonito de peso médio-leve",
   "Joga sozinho ou em casal",
-  "Gosta de natureza e de construir combos"
+  "Gosta de natureza e de construir combos",
+  "Gosta de jogos tranquilos e acolhedores",
+  "Quer uma ponte para jogos mais estratégicos"
  ],
  "nao_e_para": [
   "Busca disputa direta",
   "Não gosta de sorte nas cartas",
-  "Quer mecânicas inéditas"
+  "Quer mecânicas inéditas",
+  "Joga quase sempre com cinco pessoas",
+  "Prefere jogos rápidos de festa"
  ],
  "selo": "Recomendado",
- "veredito": "Wingspan é um dos jogos mais bonitos e acolhedores já lançados, com um motor de cartas satisfatório e modo solo oficial. A interação é baixa e a sorte nas cartas pesa, mas é uma ótima ponte entre jogos leves e jogos mais estratégicos.",
+ "veredito": "Wingspan é um dos jogos mais bonitos e acolhedores já lançados: as aves ilustradas atraem quem não joga, a regra é fácil e o motor de cartas fica cada vez mais satisfatório ao longo das quatro rodadas. O modo solo é premiado e a variedade é grande. A interação é baixa, a sorte nas cartas pesa e o jogo arrasta com muitos jogadores, o que faz parte da crítica achar a produção melhor que a jogabilidade. Ainda assim, é uma ótima ponte entre jogos leves e jogos mais estratégicos.",
  "tagline": "Um motor de cartas que voa alto.",
  "consulta": "26/10/2026",
  "fontes": [
@@ -328,5 +347,104 @@
   ],
   "veredito": "UM DOS JOGOS MAIS BONITOS E ACOLHEDORES."
  },
- "legenda": "O jogo de pássaros que conquistou o Kennerspiel e 7 Golden Geek no mesmo ano. 🐦\n\n170 aves ilustradas, um motor de cartas satisfatório e modo solo oficial.\nVencedor do Kennerspiel e do Deutscher Spiele Preis 2019 e Golden Geek de Jogo do Ano.\nA interação é baixa e a sorte nas cartas pesa, mas é lindo e acolhedor.\nVeredito: RECOMENDADO.\n\nQual é a sua ave favorita do Wingspan?\nResenha completa no link da bio.\n\n#Wingspan #JogosDeTabuleiro #BoardGames #Kennerspiel #EngineBuilding #JogoSolo #Stonemaier #Boardgamer #EliteBoardgamers #TabletopGames"
+ "legenda": "O jogo de pássaros que conquistou o Kennerspiel e 7 Golden Geek no mesmo ano. 🐦\n\n170 aves ilustradas, um motor de cartas satisfatório e modo solo oficial.\nVencedor do Kennerspiel e do Deutscher Spiele Preis 2019 e Golden Geek de Jogo do Ano.\nA interação é baixa e a sorte nas cartas pesa, mas é lindo e acolhedor.\nVeredito: RECOMENDADO.\n\nQual é a sua ave favorita do Wingspan?\nResenha completa no link da bio.\n\n#Wingspan #JogosDeTabuleiro #BoardGames #Kennerspiel #EngineBuilding #JogoSolo #Stonemaier #Boardgamer #EliteBoardgamers #TabletopGames",
+ "passos": [
+  [
+   "ESCOLHA UMA AÇÃO",
+   "Jogue uma ave, pegue alimento no comedouro, bote ovos ou compre cartas usando um dos seus cubos de ação."
+  ],
+  [
+   "PAGUE COM ALIMENTO",
+   "Cada ave custa alimentos como sementes, peixe ou frutas e ocupa um espaço no habitat certo."
+  ],
+  [
+   "FORTALEÇA O HABITAT",
+   "Quanto mais aves num habitat, mais alimento, ovos ou cartas a ação daquele habitat rende."
+  ],
+  [
+   "DISPARE OS PODERES",
+   "As aves do habitat ativam seus poderes em sequência, criando combinações mais fortes a cada ação."
+  ],
+  [
+   "QUATRO RODADAS",
+   "Cada rodada tem menos ações e um objetivo próprio. Pontos de aves, ovos e bônus decidem o vencedor."
+  ]
+ ],
+ "como_resumo": "Atraia aves para a sua reserva e faça cada habitat render mais a cada rodada.",
+ "perfil": [
+  [
+   "Componentes e arte",
+   5
+  ],
+  [
+   "Facilidade de ensinar",
+   4
+  ],
+  [
+   "Modo solo",
+   4
+  ],
+  [
+   "Motor de cartas",
+   4
+  ],
+  [
+   "Partida curta",
+   3
+  ],
+  [
+   "Interação entre jogadores",
+   1
+  ]
+ ],
+ "experiencia": [
+  "As primeiras rodadas são lentas: você gasta uma ação inteira para pegar dois alimentos e jogar uma única ave. Na terceira rodada, a mesma ação na floresta pode render três alimentos e ainda disparar duas aves que trazem mais comida, e a sensação é de ver o motor finalmente girar. A Wargamer descreve bem: no fim do jogo, os poderes das aves se encadeiam para gerar recursos e pontos.",
+  "Como cada rodada tem menos ações que a anterior, a última exige escolher bem cada cubo. A interação é baixa, basicamente pegar a ave ou o alimento que o outro queria, então a mesa fica tranquila, cada um cuidando da sua reserva e comentando as aves que aparecem. A partida dura de 40 a 70 minutos."
+ ],
+ "citacao": {
+  "texto": "Um jogo lindo que também joga muito bem, com variedade de sobra e um motor satisfatório.",
+  "fonte": "Wargamer (tradução livre)"
+ },
+ "jogadores": [
+  [
+   "Sozinho",
+   "O Automa disputa os objetivos de rodada, e o jogo venceu o Golden Geek de melhor solo em 2019.",
+   3
+  ],
+  [
+   "2 ou 3 jogadores",
+   "O formato ideal para a Wargamer, com ritmo ágil e pouca espera entre os turnos.",
+   3
+  ],
+  [
+   "4 ou 5 jogadores",
+   "Funciona, mas a espera cresce e a partida pode arrastar, já que a interação é baixa.",
+   1
+  ]
+ ],
+ "primeira_partida": "Separe uma hora e meia para a primeira partida e use o guia rápido da caixa, que explica uma rodada passo a passo. O ponto que mais confunde é o motor: mostre que cada ave nova deixa a ação daquele habitat mais forte e que os poderes marrons disparam da direita para a esquerda. Dica prática: na estreia, jogue com as cartas de bônus abertas para todos verem.",
+ "edicao_nacional": "A Grok Games publica Wingspan em português, assim como as expansões Europa e Oceania. Em 27/10/2026, a edição base aparecia por cerca de R$ 486 no Pix no Magazine Luiza, e as expansões entre R$ 280 e R$ 380, conforme o vendedor.",
+ "preco_ref": {
+  "faixa": "cerca de R$ 486",
+  "data": "27/10/2026",
+  "obs": "Magazine Luiza, no Pix"
+ },
+ "versoes": "As expansões Europa, Oceania e Ásia acrescentam aves e mecânicas, e a Ásia permite até sete jogadores ou um modo para duas pessoas. Há ainda a edição digital oficial, para computadores e consoles, e o jogo independente Wyrmspan, da mesma editora, com dragões no lugar das aves.",
+ "comparacoes": [
+  [
+   "Terraforming Mars",
+   "terraforming-mars",
+   "Para quem quer um motor de cartas mais pesado e longo, com mais combinações e um planeta inteiro para transformar."
+  ],
+  [
+   "Ark Nova",
+   "ark-nova",
+   "Também é sobre animais e motor de cartas, mas bem mais pesado, com um zoológico para montar e partidas de duas a três horas."
+  ],
+  [
+   "Azul",
+   "azul",
+   "Para um público ainda mais amplo: tão bonito quanto, mais curto, com regras de um minuto e mais disputa entre os jogadores."
+  ]
+ ]
 }
