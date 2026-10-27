@@ -11,7 +11,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from checar_roteiro import checar_texto  # noqa: E402
-SITE = "https://meruvash.github.io/Golden-Geek"
+SITE = "https://eliteboardgamers.com.br"
 
 
 def main():

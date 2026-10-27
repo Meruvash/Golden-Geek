@@ -40,7 +40,7 @@ ROOT = Path(__file__).resolve().parents[2]
 AQUI = Path(__file__).resolve().parent
 RECEITAS = AQUI / "editoras.json"
 CACHE = ROOT / ".cache" / "imagens"
-UA = "GoldenGeekBot/1.0 (+https://meruvash.github.io/Golden-Geek/)"
+UA = "GoldenGeekBot/1.0 (+https://eliteboardgamers.com.br/)"
 TOKEN_UA = "goldengeekbot"
 DELAY_MIN = 3.0
 CACHE_DIAS = 7
@@ -721,7 +721,7 @@ def aprovar(slug, escolhas, forcar=False, nota=None):
 def email_pedido(editora, jogo):
     return (f"Assunto: Pedido de kit de imprensa – {jogo}\n\n"
             f"Olá, equipe {editora},\n\n"
-            f"Escrevo pelo Golden Geek (https://meruvash.github.io/Golden-Geek/), um site brasileiro de resenhas de "
+            f"Escrevo pelo Golden Geek (https://eliteboardgamers.com.br/), um site brasileiro de resenhas de "
             f"jogos de tabuleiro premiados. Estamos preparando a resenha de {jogo} e gostaríamos de usar imagens "
             f"oficiais (capa, jogo montado na mesa e componentes), sempre com crédito à editora e link para o site de "
             f"vocês.\n\nVocês têm um kit de imprensa ou podem nos autorizar a usar as imagens do site?\n\nObrigado!\n")

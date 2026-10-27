@@ -19,7 +19,7 @@ from checar_roteiro import checar, checar_texto  # noqa: E402
 from prompt_infografico import TAMANHO, prompt  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
-SITE = "https://meruvash.github.io/Golden-Geek"
+SITE = "https://eliteboardgamers.com.br"
 API = "https://api.openai.com/v1"
 PENDENTE = ROOT / "lotes" / "pendente.json"
 MODELO = os.environ.get("MODELO_IMAGEM", "gpt-image-2.5-flare")

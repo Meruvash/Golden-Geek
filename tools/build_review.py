@@ -16,7 +16,7 @@ from PIL import Image
 ROOT = Path(__file__).resolve().parent.parent
 INSTAGRAM = "https://www.instagram.com/eliteboardgamers/"
 WHATSAPP = "https://chat.whatsapp.com/IgQQkJdSkzHBaEq3UwFeAo"
-SITE = "https://meruvash.github.io/Golden-Geek"
+SITE = "https://eliteboardgamers.com.br"
 e = html.escape
 
 ICONES = {
