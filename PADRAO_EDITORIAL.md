@@ -6,8 +6,9 @@ Vale para todo infográfico novo. O modelo é `modelos/referencia-1.jpg` (Códig
 
 ## Formato
 
-- Retrato **4:5** (1600×2000), o maior formato que o feed do Instagram mostra inteiro.
-- Texto pequeno, mas legível no celular: mesma hierarquia do modelo.
+- **Quadrado 1:1** (2048×2048), o formato que funciona no nosso fluxo do Instagram. (O 4:5 foi testado com o Gloomhaven e descartado.)
+- Texto pequeno, mas legível no celular: mesma hierarquia do modelo, comprimida no quadrado.
+- No primeiro teste em quadrado com 12 linhas de ficha, 8 barras e veredito de 55 palavras, a faixa de baixo saiu espremida e com texto embaralhado; por isso a ficha e o veredito têm limites menores. No segundo teste a IA deixou de fora as barras de "compatibilidade com seu perfil", então esse bloco saiu do quadrado.
 
 ## Blocos do `roteiro` (em `conteudo/<slug>.json`)
 
@@ -22,12 +23,11 @@ Vale para todo infográfico novo. O modelo é `modelos/referencia-1.jpg` (Códig
 | `passos` | 5 passos `[título, texto]`: título de 2 a 4 palavras; texto de 15 a 30 palavras explicando a regra de verdade. |
 | `fortes` | 6 a 7 itens de 4 a 10 palavras, específicos do jogo. |
 | `atencao` | 6 a 7 itens de 4 a 10 palavras, específicos do jogo. |
-| `ficha` | 10 a 12 linhas `Campo: valor`, incluindo componentes. |
+| `ficha` | 8 a 10 linhas `Campo: valor`, incluindo componentes. |
 | `premios` | 1 a 3 medalhas, das premiações confirmadas em `premiacoes`. |
-| `perfil` | 8 barras `[critério, nota 0–5]`: a compatibilidade com o perfil de quem joga. |
 | `extra` | `{titulo, texto}`: um bloco útil e verificável (experimente online, versão para iniciantes, expansões, preço de referência com data). Texto de 20 a 45 palavras. |
 | `veredito` | Frase de 5 a 12 palavras. |
-| `veredito_texto` | 40 a 65 palavras: o que entrega, o que pesa e um conselho claro de compra. |
+| `veredito_texto` | 25 a 40 palavras: o que entrega, o que pesa e um conselho claro de compra. |
 
 ## Regras de conteúdo
 

@@ -1,6 +1,6 @@
 ---
 name: resenha
-description: Produz a próxima resenha da Elite Boardgamers a partir da pauta de jogos premiados (pauta.json) — pesquisa com fontes, texto do site, infográfico retrato 4:5 para Instagram no padrão editorial (PADRAO_EDITORIAL.md), legenda e publicação no GitHub Pages. Use quando pedirem "/resenha", "próxima resenha", "resenha de <jogo>" ou "atualizar pauta".
+description: Produz a próxima resenha da Elite Boardgamers a partir da pauta de jogos premiados (pauta.json) — pesquisa com fontes, texto do site, infográfico quadrado para Instagram no padrão editorial (PADRAO_EDITORIAL.md), legenda e publicação no GitHub Pages. Use quando pedirem "/resenha", "próxima resenha", "resenha de <jogo>" ou "atualizar pauta".
 ---
 
 # Resenha Elite Boardgamers
@@ -48,15 +48,15 @@ Mesma estrutura de `nemesis/`: chamada "Elite Boardgamers apresenta", título, a
 
 ## Etapa 3: roteiro do infográfico
 
-O infográfico é **retrato 4:5 (1600×2000)** e segue o **`PADRAO_EDITORIAL.md`** (leia antes de escrever). O modelo de densidade é `modelos/referencia-1.jpg` (Código Secreto) e o exemplo de roteiro completo é `conteudo/gloomhaven.json`.
+O infográfico é **quadrado 1:1 (2048×2048)** e segue o **`PADRAO_EDITORIAL.md`** (leia antes de escrever). O modelo de densidade é `modelos/referencia-1.jpg` (Código Secreto) e o exemplo de roteiro completo é `conteudo/gloomhaven.json`.
 
-Resumo dos mínimos: chamada de 12–22 palavras, destaque de 15–28, lateral de 10 linhas, 4 caixas de número com contexto, 5 passos de 15–30 palavras que ensinam a rodada, 6–7 pontos fortes e 6–7 de atenção específicos do jogo, ficha de 10–12 linhas, 8 barras de perfil, um bloco extra verificável e veredito com parágrafo de 40–65 palavras. A pesquisa da etapa 1 precisa trazer dados suficientes para isso (componentes, edição nacional, idade, idioma, versão digital etc.), sempre com fonte.
+Resumo dos mínimos: chamada de 12–22 palavras, destaque de 15–28, lateral de 10 linhas, 4 caixas de número com contexto, 5 passos de 15–30 palavras que ensinam a rodada, 6–7 pontos fortes e 6–7 de atenção específicos do jogo, ficha de 8–10 linhas, um bloco extra verificável e veredito com parágrafo de 25–40 palavras. A pesquisa da etapa 1 precisa trazer dados suficientes para isso (componentes, edição nacional, idade, idioma, versão digital etc.), sempre com fonte.
 
 Antes de gerar: `python3 tools/checar_roteiro.py conteudo/<slug>.json` precisa passar. Os geradores rodam a mesma checagem e se recusam a gerar se o roteiro estiver fora do padrão.
 
 ## Etapa 4: gerar o infográfico (OpenAI Batch API)
 
-Padrão: **Batch API** (50% mais barata, entrega em até 24 h), com `gpt-image-2.5-flare`, 1600×2000 (4:5), qualidade alta e as referências de `modelos/` pelas URLs do GitHub Pages.
+Padrão: **Batch API** (50% mais barata, entrega em até 24 h), com `gpt-image-2.5-flare`, 2048×2048 (1:1), qualidade alta e as referências de `modelos/` pelas URLs do GitHub Pages.
 
 - `python3 tools/lote_openai.py enviar conteudo/<a>.json conteudo/<b>.json ...` cria o lote e grava `lotes/pendente.json` (faça commit e push dele).
 - `python3 tools/lote_openai.py buscar` verifica o lote; se concluído, salva `<slug>/variacao-1.png` e apaga `lotes/pendente.json`.

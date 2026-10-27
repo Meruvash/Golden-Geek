@@ -55,9 +55,10 @@ def checar(c):
             faixa(f"{bloco} {i}", x, 4, 10)
             if x.lower().strip(" .") in GENERICOS:
                 erros.append(f"{bloco} {i}: genérico demais ({x!r}); diga o quê e por quê")
-    qtd("ficha", r.get("ficha"), 10, 12)
+    qtd("ficha", r.get("ficha"), 8, 10)
     qtd("premios", r.get("premios"), 1, 3)
-    for i, p in enumerate(qtd("perfil", r.get("perfil"), 8, 8), 1):
+    # perfil saiu do quadrado (não coube junto com o veredito); se existir, precisa ser válido
+    for i, p in enumerate(r.get("perfil") or [], 1):
         if len(p) != 2 or not isinstance(p[1], int) or not 0 <= p[1] <= 5:
             erros.append(f"perfil {i}: precisa de [critério, nota inteira 0 a 5]")
     extra = r.get("extra") or {}
@@ -65,7 +66,7 @@ def checar(c):
         erros.append("extra: sem título")
     faixa("extra (texto)", extra.get("texto"), 20, 45)
     faixa("veredito", r.get("veredito"), 5, 12)
-    faixa("veredito_texto", r.get("veredito_texto"), 40, 65)
+    faixa("veredito_texto", r.get("veredito_texto"), 25, 40)
     return erros
 
 
