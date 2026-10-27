@@ -15,7 +15,7 @@ Se o jogo tiver `serie` ou outros itens da mesma série na fila (versões, sequ�
 
 ## Arquivos
 
-- `conteudo/<slug>.json`: todo o conteúdo de uma resenha (ficha, prós, contras, fontes e o `roteiro` do infográfico).
+- `conteudo/<slug>.json`: todo o conteúdo de uma resenha (ficha, prós, contras, fontes, o `roteiro` do infográfico e a `legenda` do Instagram). A página mostra os botões "Salvar na galeria" e "Legenda" (copia o campo `legenda`); sem esse campo o botão Legenda some.
 - `tools/build_review.py conteudo/<slug>.json`: gera `<slug>/index.html` a partir do JSON. Não edite o HTML à mão.
 - `tools/prompt_infografico.py conteudo/<slug>.json`: monta o prompt do infográfico a partir do `roteiro`.
 - Ferramentas: busca na web funciona; Wikipedia abre via `curl`; Ludopedia e BoardGameGeek bloqueiam acesso automatizado (não contornar), então os números deles vêm da busca e são sinalizados na ficha.
@@ -96,4 +96,4 @@ O usuário responde em uma linha, por exemplo "aprova 1, 2 e 4; refaz a 3: <ajus
 3. `python3 tools/publicar.py conteudo/<slug>.json` marca o jogo como `publicado` em `pauta.json` e regera `resenhas/index.html` inteira (`tools/build_lista.py`). Depois, `node tools/capa_resenhas.js` refaz `resenhas/capa.jpg` (prévia do WhatsApp da página de resenhas) com o mosaico das capas.
 4. Teste no Playwright em 390 px e 1200 px: sem erros de JS e sem rolagem horizontal.
 5. Commit em `main` e push.
-6. Entregue a legenda do Instagram: gancho de até 125 caracteres na 1ª linha, 3–4 linhas de resumo com o veredito e o prêmio, uma pergunta para comentários, "Resenha completa no link da bio" e 8–12 hashtags em PT e EN.
+6. Grave a legenda do Instagram no campo `legenda` de `conteudo/<slug>.json` antes do passo 2 (é o texto que o botão "Legenda" copia) e entregue-a também na resposta: gancho de até 125 caracteres na 1ª linha, 3–4 linhas de resumo com o veredito e o prêmio, uma pergunta para comentários, "Resenha completa no link da bio" e 8–12 hashtags em PT e EN.

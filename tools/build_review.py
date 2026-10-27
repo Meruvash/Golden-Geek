@@ -24,6 +24,8 @@ ICONES = {
     "insta": '<rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6" fill="currentColor"/>',
     "zap": '<path d="M4 20l1.3-4A8 8 0 1 1 8.4 19l-4.4 1Z"/><path d="M9.2 8.6c.3-.5.8-.5 1-.1l.7 1.5c.1.3 0 .6-.2.8l-.4.4c.5 1.1 1.4 2 2.5 2.5l.4-.4c.2-.2.5-.3.8-.2l1.5.7c.4.2.4.7-.1 1-.7.5-1.6.6-2.4.3a7 7 0 0 1-4.2-4.2c-.3-.8-.2-1.7.4-2.3Z"/>',
     "nao": '<path d="M6 6l12 12M18 6L6 18"/>',
+    "salvar": '<rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="9" cy="9" r="1.8"/><path d="M21 15.5l-5-5L5 21"/>',
+    "copiar": '<rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h8"/>',
 }
 
 
@@ -107,6 +109,14 @@ def build(c):
     )
     serie = f'<p class="note">{e(c["serie"])}</p>' if c.get("serie") else ""
     linha = " · ".join(x for x in (ano, autor) if x)
+    leg = c.get("legenda", "")
+    legenda_btn = f'<button type="button" class="post-btn" id="b-legenda" aria-expanded="false" aria-controls="legenda">{icone("copiar")}Legenda</button>' if leg else ""
+    legenda_box = (
+        f'<div class="legenda" id="legenda" hidden><p class="leg-st" role="status"></p>'
+        f'<textarea readonly rows="9" aria-label="Legenda para o Instagram">{e(leg)}</textarea>'
+        f'<button type="button" class="post-btn" id="b-copiar">{icone("copiar")}Copiar de novo</button></div>'
+        if leg else ""
+    )
     return f"""<!doctype html>
 <html lang="pt-BR">
 <head>
@@ -221,6 +231,14 @@ footer{{background:var(--bar);color:var(--bar-ink);font-size:.88rem;border-top:1
 .comunidade p{{max-width:62ch;color:#c9cfd8}}.comunidade .acoes{{display:flex;flex-wrap:wrap;gap:12px;align-items:center}}
 .ig-btn{{display:flex;align-items:center;gap:8px;margin-top:16px;padding:14px 18px;border-radius:10px;border:1px solid #3a3f48;color:var(--ink);text-decoration:none;font-weight:700}}
 .ig-btn:hover{{border-color:var(--gold);color:var(--gold)}}
+.post{{display:flex;gap:10px;margin-top:12px}}
+.post-btn{{flex:1 1 auto;white-space:nowrap;display:flex;align-items:center;justify-content:center;gap:7px;min-height:46px;padding:10px 12px;border-radius:10px;border:1px solid #3a3f48;background:var(--panel2);color:var(--ink);font:inherit;font-weight:700;cursor:pointer;touch-action:manipulation;transition:border-color .2s ease,transform .15s ease}}
+.post-btn:hover{{border-color:var(--gold)}}.post-btn:active{{transform:scale(.97)}}
+.post-st:empty,.leg-st:empty{{display:none}}.post-st,.leg-st{{font-size:.88rem;color:var(--ok-ink);margin-top:8px}}
+.legenda{{margin-top:12px;padding:12px;border-radius:10px;background:#f4f5f7;color:#14171c}}
+.legenda .leg-st{{color:#1b7a45;font-weight:700;margin:0 0 8px}}
+.legenda textarea{{width:100%;border:1px solid #dde1e7;border-radius:8px;padding:10px;font:.92rem/1.5 "Public Sans",system-ui,sans-serif;color:#14171c;background:#fff;resize:vertical}}
+.legenda .post-btn{{margin-top:8px;width:100%;background:#14171c;color:#fff;border-color:#14171c}}
 footer .in{{max-width:1120px;margin:0 auto;padding:18px 16px;display:flex;flex-wrap:wrap;gap:10px 20px}}
 footer a{{color:var(--bar-ink)}}
 @media (min-width:860px){{
@@ -247,6 +265,9 @@ footer a{{color:var(--bar-ink)}}
  <figure class="capa">
   <a href="infografico.webp" target="_blank" rel="noopener"><img src="infografico.webp" width="1600" height="1600" alt="{e(c["alt"])}" fetchpriority="high"></a>
   <figcaption>Toque para ver o infográfico em tamanho cheio.</figcaption>
+  <div class="post"><button type="button" class="post-btn" id="b-salvar">{icone("salvar")}Salvar na galeria</button>{legenda_btn}</div>
+  <p class="post-st" id="salvar-st" role="status"></p>
+  {legenda_box}
  </figure>
  <div>
   <div class="topo">
@@ -298,6 +319,45 @@ footer a{{color:var(--bar-ink)}}
  <a href="{INSTAGRAM}" target="_blank" rel="noopener">Instagram @eliteboardgamers</a>
  <a href="{WHATSAPP}" target="_blank" rel="noopener">Grupo do WhatsApp</a>
 </div></footer>
+<script>
+(() => {{
+  const img = document.querySelector(".capa img"), st = document.getElementById("salvar-st"), nome = "{slug}-elite-boardgamers.jpg";
+  let arquivo = null;
+  // Prepara o JPEG antes do toque: o compartilhamento precisa acontecer logo no clique.
+  const preparar = () => {{
+    if (arquivo || !img.naturalWidth) return;
+    const cv = document.createElement("canvas");
+    cv.width = img.naturalWidth; cv.height = img.naturalHeight;
+    cv.getContext("2d").drawImage(img, 0, 0);
+    cv.toBlob(b => {{ if (b) arquivo = new File([b], nome, {{ type: "image/jpeg" }}); }}, "image/jpeg", 0.92);
+  }};
+  img.complete ? preparar() : img.addEventListener("load", preparar);
+  document.getElementById("b-salvar").addEventListener("click", async () => {{
+    preparar();
+    if (!arquivo) {{ st.textContent = "A imagem ainda está carregando. Tente de novo em um instante."; return; }}
+    if (navigator.canShare && navigator.canShare({{ files: [arquivo] }})) {{
+      try {{ await navigator.share({{ files: [arquivo] }}); st.textContent = "No menu, escolha “Salvar imagem” para mandar para a galeria."; }}
+      catch (e) {{ if (e.name !== "AbortError") st.textContent = "Não deu para abrir o menu. Toque e segure na imagem e escolha “Salvar imagem”."; }}
+    }} else {{
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(arquivo); a.download = nome; a.click();
+      setTimeout(() => URL.revokeObjectURL(a.href), 4000);
+      st.textContent = "Imagem salva.";
+    }}
+  }});
+  const caixa = document.getElementById("legenda");
+  if (!caixa) return;
+  const texto = caixa.querySelector("textarea"), lst = caixa.querySelector(".leg-st"), btn = document.getElementById("b-legenda");
+  const copiar = async () => {{
+    let ok = false;
+    try {{ await navigator.clipboard.writeText(texto.value); ok = true; }}
+    catch {{ texto.select(); ok = document.execCommand("copy"); }}
+    lst.textContent = ok ? "Legenda copiada! É só colar no Instagram." : "Selecione o texto abaixo e copie.";
+  }};
+  btn.addEventListener("click", () => {{ caixa.hidden = false; btn.setAttribute("aria-expanded", "true"); copiar(); }});
+  document.getElementById("b-copiar").addEventListener("click", copiar);
+}})();
+</script>
 </body>
 </html>
 """
