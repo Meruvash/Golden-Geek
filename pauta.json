@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-26",
+ "atualizado_em": "2026-10-27",
  "regras": {
   "premios": [
    "Golden Geek",
@@ -87,6 +87,26 @@
    "jogo": "Flip 7",
    "url": "https://meruvash.github.io/Golden-Geek/flip-7/",
    "data": "2026-10-26"
+  },
+  {
+   "jogo": "Ark Nova",
+   "url": "https://meruvash.github.io/Golden-Geek/ark-nova/",
+   "data": "2026-10-27"
+  },
+  {
+   "jogo": "Bomb Busters",
+   "url": "https://meruvash.github.io/Golden-Geek/bomb-busters/",
+   "data": "2026-10-27"
+  },
+  {
+   "jogo": "Endeavor: Deep Sea",
+   "url": "https://meruvash.github.io/Golden-Geek/endeavor-deep-sea/",
+   "data": "2026-10-27"
+  },
+  {
+   "jogo": "Faraway",
+   "url": "https://meruvash.github.io/Golden-Geek/faraway/",
+   "data": "2026-10-27"
   }
  ],
  "jogos": [
@@ -837,7 +857,7 @@
      "fonte": "https://meruvash.github.io/Golden-Geek/"
     }
    ],
-   "status": "em_producao",
+   "status": "publicado",
    "prioridade": 13,
    "premios_distintos": 3
   },
@@ -872,7 +892,7 @@
      "fonte": "https://meruvash.github.io/Golden-Geek/"
     }
    ],
-   "status": "em_producao",
+   "status": "publicado",
    "prioridade": 14,
    "premios_distintos": 3
   },
@@ -907,7 +927,7 @@
      "fonte": "https://meruvash.github.io/Golden-Geek/"
     }
    ],
-   "status": "em_producao",
+   "status": "publicado",
    "prioridade": 15,
    "premios_distintos": 3
   },
@@ -942,7 +962,7 @@
      "fonte": "https://meruvash.github.io/Golden-Geek/"
     }
    ],
-   "status": "em_producao",
+   "status": "publicado",
    "prioridade": 16,
    "premios_distintos": 3
   },
