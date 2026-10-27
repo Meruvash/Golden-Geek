@@ -77,7 +77,7 @@ Regras de texto:
 Quando a resenha tem fotos aprovadas em `<slug>/fotos/fontes.json` (skill `imagens`) e o jogo foi liberado com `"usar_na_pagina": true` nesse arquivo (depois da revisão das fotos), `build_review.py` monta a página assim (modelo aprovado com Terraforming Mars):
 
 - **Topo:** uma foto oficial do jogo no lugar do infográfico. Vale a foto marcada com `"principal": true`; sem marca, a ordem é mesa, componentes, jogabilidade, caixa.
-- **Como é jogar:** a próxima foto disponível (componentes, jogabilidade ou mesa), logo depois da citação.
+- **Como é jogar:** a foto marcada com `"jogar": true`; sem marca, a próxima disponível (componentes, jogabilidade ou mesa), logo depois da citação.
 - **Edição nacional e preço:** a caixa (`capa`), pequena, ao lado do texto.
 - **Infográfico:** desce para o meio, na seção "Infográfico para o Instagram" depois de Prós e contras, com os botões Salvar na galeria e Legenda.
 - Toda foto leva o crédito da editora embaixo ("Imagem: …").

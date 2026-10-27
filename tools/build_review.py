@@ -126,7 +126,8 @@ def fotos_do_jogo(slug):
     fotos = {}
     for f in d["fotos"]:
         if f.get("aprovada") and not f.get("pessoas"):
-            fotos.setdefault(f["tipo"], f)
+            # "jogar": true reserva a foto para Como é jogar, mesmo que já haja outra do mesmo tipo.
+            fotos.setdefault("jogar" if f.get("jogar") else f["tipo"], f)
     return fotos
 
 
@@ -194,7 +195,7 @@ def layout_v2(c, premios_bloco, ficha_html, fontes, fotos=None, info_meio=""):
     cit = c.get("citacao")
     jogar = f"""<section class="bloco faixa" id="como-e-jogar"><h2>Como é jogar</h2>
    {f'<blockquote class="cit"><p>“{e(cit["texto"])}”</p><cite>{e(cit["fonte"])}</cite></blockquote>' if cit else ""}
-   {next((foto_html(c, fotos[t]) for t in ("componentes", "jogabilidade", "mesa") if t in fotos), "")}
+   {next((foto_html(c, fotos[t]) for t in ("jogar", "componentes", "jogabilidade", "mesa") if t in fotos), "")}
    <div class="leitura"><p>{e(c["experiencia"][0])}</p></div>
    {f'<details class="mais"><summary>Continuar lendo</summary><div class="leitura">{"".join(f"<p>{e(x)}</p>" for x in c["experiencia"][1:])}</div></details>' if len(c["experiencia"]) > 1 else ""}
   </section>"""
