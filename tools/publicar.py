@@ -9,6 +9,8 @@ from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from checar_roteiro import checar_texto  # noqa: E402
 SITE = "https://meruvash.github.io/Golden-Geek"
 
 
@@ -16,6 +18,10 @@ def main():
     pauta = json.loads((ROOT / "pauta.json").read_text(encoding="utf-8"))
     for arg in sys.argv[1:]:
         c = json.loads(Path(arg).read_text(encoding="utf-8"))
+        erros = checar_texto(c)
+        if erros:
+            print(*erros, sep="\n - ")
+            sys.exit(f"{c['slug']}: texto do site fora do PADRAO_EDITORIAL.md; nada foi publicado.")
         for f in ("index.html", "infografico.webp", "capa.jpg"):
             if not (ROOT / c["slug"] / f).exists():
                 sys.exit(f"Falta {c['slug']}/{f}")

@@ -111,6 +111,40 @@ def build(c):
         f'<li><a href="{e(u)}" target="_blank" rel="noopener">{e(n)}</a> <span>{e(uso)}</span></li>' for n, u, uso in c["fontes"]
     )
     serie = f'<p class="note">{e(c["serie"])}</p>' if c.get("serie") else ""
+    # Seções do padrão editorial v2; resenhas antigas sem esses campos continuam iguais.
+    experiencia = (
+        '<section class="bloco claro" id="como-e-jogar"><h2>Como é jogar</h2><div class="leitura">'
+        + "".join(f"<p>{e(x)}</p>" for x in c["experiencia"]) + "</div></section>"
+        if c.get("experiencia") else ""
+    )
+    jogadores = "".join(f"<li><b>{e(n)}</b> {e(x)}</li>" for n, x in c.get("jogadores", []))
+    partida_bloco = (
+        '<section class="bloco claro duo" id="jogadores">'
+        + (f'<div><h2>Com quantos jogar</h2><ul class="lista">{jogadores}</ul></div>' if jogadores else "")
+        + (f'<div><h2>Primeira partida</h2><p>{e(c["primeira_partida"])}</p></div>' if c.get("primeira_partida") else "")
+        + "</section>"
+        if jogadores or c.get("primeira_partida") else ""
+    )
+    edicao_bloco = (
+        '<section class="bloco claro duo" id="edicao">'
+        + (f'<div><h2>Edição nacional e preço</h2><p>{e(c["edicao_nacional"])}</p></div>' if c.get("edicao_nacional") else "")
+        + (f'<div><h2>Expansões e versões</h2><p>{e(c["versoes"])}</p></div>' if c.get("versoes") else "")
+        + "</section>"
+        if c.get("edicao_nacional") or c.get("versoes") else ""
+    )
+    comparacoes = "".join(
+        f'<li><h3>{f"<a href=\"../{s}/\">{e(j)}</a>" if s else e(j)}</h3><p>{e(x)}</p></li>'
+        for j, s, x in c.get("comparacoes", [])
+    )
+    comparacoes_bloco = (
+        f'<section class="bloco claro" id="compare"><h2>Se você gosta de {e(c["jogo"])}…</h2><ul class="compara">{comparacoes}</ul></section>'
+        if comparacoes else ""
+    )
+    abas_extra = "".join(
+        f'<li><a href="#{i}">{t}</a></li>'
+        for i, t, ok in (("como-e-jogar", "Como é jogar", experiencia), ("edicao", "Edição e preço", edicao_bloco))
+        if ok
+    )
     linha = " · ".join(x for x in (ano, autor) if x)
     info = ROOT / slug / "infografico.webp"
     larg, alt = Image.open(info).size if info.exists() else (1600, 1600)
@@ -200,7 +234,9 @@ h2{{font-size:1.3rem;font-weight:800;letter-spacing:-.01em;margin-bottom:12px}}
 .ic.ok{{color:var(--ok-ink);margin-top:2px}}.ic.no{{color:var(--no-ink);margin-top:2px}}
 .sev{{font-size:.72rem;font-weight:700;border-radius:4px;padding:1px 6px;vertical-align:2px;margin-left:4px;background:var(--panel2);color:var(--muted)}}
 .sev.moderada{{background:#2a1f0c;color:var(--warn-ink)}}.sev.grave{{background:#2b1117;color:var(--no-ink)}}
-.quem{{display:grid;gap:20px}}.quem li{{margin:6px 0;padding-left:16px;position:relative}}.quem li::before{{content:"";position:absolute;left:0;top:.65em;width:7px;height:7px;border-radius:50%;background:var(--ok)}}
+.quem,.duo{{display:grid;gap:20px}}
+.lista li{{margin:8px 0}}.lista b{{display:block}}
+.compara li{{padding:12px 0;border-top:1px solid #dde1e7}}.compara li:first-child{{border-top:0;padding-top:0}}.compara h3{{font-size:1rem;font-weight:700}}.quem li{{margin:6px 0;padding-left:16px;position:relative}}.quem li::before{{content:"";position:absolute;left:0;top:.65em;width:7px;height:7px;border-radius:50%;background:var(--ok)}}
 .quem .nao li::before{{background:var(--no)}}
 .fecho{{background:var(--panel2);color:var(--bar-ink);border:1px solid var(--gold)}}
 .fecho .selo{{margin-bottom:10px;display:inline-block}}.fecho p{{max-width:70ch}}
@@ -253,7 +289,7 @@ footer a{{color:var(--bar-ink)}}
 @media (min-width:860px){{
  .jogo .in{{grid-template-columns:minmax(0,420px) 1fr;gap:32px;padding-top:28px;padding-bottom:4px}}
  main{{grid-template-columns:minmax(0,1fr) 340px;align-items:start}}
- .pc,.quem{{grid-template-columns:1fr 1fr}}
+ .pc,.quem,.duo{{grid-template-columns:1fr 1fr}}
  .regua{{grid-template-columns:repeat(auto-fit,minmax(120px,1fr))}}
  aside{{position:sticky;top:64px}}
 }}
@@ -291,21 +327,25 @@ footer a{{color:var(--bar-ink)}}
  </div>
 </div>
 <nav class="abas" aria-label="Seções da resenha"><ul>
- <li><a href="#como-funciona">Como funciona</a></li><li><a href="#pros-contras">Prós e contras</a></li><li><a href="#para-quem">Para quem é</a></li><li><a href="#veredito">Veredito</a></li><li><a href="#ficha">Ficha</a></li>{'<li><a href="#premios">Prêmios</a></li>' if c["premiacoes"] else ""}<li><a href="#fontes">Fontes</a></li>
+ <li><a href="#como-funciona">Como funciona</a></li>{abas_extra}<li><a href="#pros-contras">Prós e contras</a></li><li><a href="#para-quem">Para quem é</a></li><li><a href="#veredito">Veredito</a></li><li><a href="#ficha">Ficha</a></li>{'<li><a href="#premios">Prêmios</a></li>' if c["premiacoes"] else ""}<li><a href="#fontes">Fontes</a></li>
 </ul></nav>
 </section>
 
 <main id="conteudo">
  <div class="col">
   <section class="bloco claro" id="como-funciona"><h2>Como funciona</h2><div class="leitura">{como}{serie}</div></section>
+  {experiencia}
   <section class="bloco claro pc" id="pros-contras">
    <div><h2>O que funciona muito bem</h2><ul>{funciona}</ul></div>
    <div><h2>Pontos de atenção</h2><ul>{atencao}</ul></div>
   </section>
+  {partida_bloco}
   <section class="bloco claro quem" id="para-quem">
    <div><h2>É para você se…</h2><ul>{sim}</ul></div>
    <div class="nao"><h2>Pense duas vezes se…</h2><ul>{nao}</ul></div>
   </section>
+  {edicao_bloco}
+  {comparacoes_bloco}
   <section class="bloco fecho" id="veredito">
    <h2>Veredito Elite Boardgamers</h2>
    <span class="selo {selo_class(c["selo"])}">{e(c["selo"])}</span>

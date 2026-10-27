@@ -37,3 +37,31 @@ Vale para todo infográfico novo. O modelo é `modelos/referencia-1.jpg` (Códig
 4. **Consistência.** Lateral, números e ficha batem com a `ficha` da página.
 5. **Bandeira do Brasil** só na linha "editora no Brasil", e só se houver edição nacional confirmada.
 6. **Revisão da imagem** (etapa 5 da skill): conferir bloco por bloco contra o roteiro. Duas falhas no mesmo bloco → gerar a arte sem texto e compor o texto por cima em HTML (Playwright).
+
+# Padrão editorial do texto do site (v2)
+
+A página é a resenha completa: precisa ensinar o jogo, mostrar como é jogar, pesar o que é bom e o que pesa com o porquê, e terminar com um conselho de compra claro. Ela nunca pode ter menos informação que o infográfico. `tools/checar_roteiro.py` confere estas regras também, e `tools/lote_openai.py enviar` e `tools/publicar.py` se recusam a seguir se o texto não passar.
+
+| Campo (em `conteudo/<slug>.json`) | Seção da página | Regra |
+|---|---|---|
+| `lede` | abertura | 50 a 90 palavras: o que é, o prêmio principal, para quem é e uma pista do veredito. |
+| `como_funciona` | Como funciona | 4 a 6 parágrafos, 200 a 350 palavras no total: objetivo, o turno, a mecânica central, a progressão e como acaba e pontua. Termos do jogo explicados na primeira vez. |
+| `experiencia` | Como é jogar | 2 a 3 parágrafos, 120 a 220 palavras: ritmo, decisões típicas e um exemplo concreto de jogada. |
+| `funciona` | O que funciona muito bem | 5 a 7 itens `[título, texto]`, texto de 30 a 70 palavras com o porquê; opinião sempre atribuída ("Para a Board Game Quest, …"). |
+| `atencao` | Pontos de atenção | 5 a 7 itens `[gravidade, título, texto]`, mesma regra. |
+| `jogadores` | Com quantos jogar | 2 a 5 itens `[número de jogadores, texto]`, 10 a 45 palavras cada. |
+| `primeira_partida` | Primeira partida | 50 a 120 palavras: tempo de explicação, o que confunde e uma dica prática. |
+| `edicao_nacional` | Edição nacional e preço | 40 a 100 palavras: editora, idioma, preço de referência com data e disponibilidade (ou a falta de edição nacional). |
+| `versoes` | Expansões e versões | 30 a 100 palavras: expansões, versão digital, versões de entrada. |
+| `comparacoes` | Se você gosta de… | 2 a 3 itens `[jogo, slug ou null, texto]`, 20 a 50 palavras; o slug liga para a nossa resenha. |
+| `para_quem` / `nao_e_para` | É para você se… | 4 a 5 itens cada. |
+| `veredito` | Veredito | 80 a 140 palavras: o que entrega, o que pesa, para quem é e se vale o preço. |
+| `fontes` | Fontes | pelo menos 6, com link. |
+
+Regras de texto:
+
+1. **Nada inventado**, como no infográfico. Regra do jogo é fato; elogio e crítica são opinião e sempre têm dono.
+2. **Escreva para quem nunca jogou.** Frases diretas, sem jargão solto ("construção de baralho", não "deck-building" sem explicar).
+3. **Atribuição natural.** "Para a Tabletop Gaming, …" e não "A IGN, citada pela Wikipedia, elogia…".
+4. **Exemplo concreto** em Como é jogar e em pelo menos dois pontos fortes ou de atenção.
+5. **Sem frase genérica** ("muito divertido", "arte marcante", "tema fino") sem dizer o quê e por quê.

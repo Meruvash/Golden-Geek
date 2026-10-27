@@ -1,4 +1,4 @@
-"""Confere o roteiro do infográfico contra o PADRAO_EDITORIAL.md (v2).
+"""Confere o roteiro do infográfico e o texto do site contra o PADRAO_EDITORIAL.md (v2).
 
 Uso: python3 tools/checar_roteiro.py conteudo/<slug>.json [...]
 Sai com erro (código 1) e lista o que falta se algum roteiro não passar.
@@ -70,11 +70,50 @@ def checar(c):
     return erros
 
 
+def checar_texto(c):
+    """Texto do site (padrão editorial v2, segunda parte do PADRAO_EDITORIAL.md)."""
+    erros = []
+    total = lambda xs: sum(palavras(x) for x in xs or [])
+
+    def faixa(nome, n, mn, mx, un="palavras"):
+        if not mn <= n <= mx:
+            erros.append(f"texto · {nome}: {n} {un} (padrão: {mn} a {mx})")
+
+    faixa("lede", palavras(c.get("lede", "")), 50, 90)
+    faixa("como_funciona (parágrafos)", len(c.get("como_funciona") or []), 4, 6, "parágrafos")
+    faixa("como_funciona", total(c.get("como_funciona")), 200, 350)
+    faixa("experiencia (parágrafos)", len(c.get("experiencia") or []), 2, 3, "parágrafos")
+    faixa("experiencia", total(c.get("experiencia")), 120, 220)
+    for bloco, pos in (("funciona", 1), ("atencao", 2)):
+        itens = c.get(bloco) or []
+        faixa(bloco, len(itens), 5, 7, "itens")
+        for i, it in enumerate(itens, 1):
+            faixa(f"{bloco} {i}", palavras(it[pos]), 30, 70)
+            if it[pos - 1].lower().strip(" .") in GENERICOS:
+                erros.append(f"texto · {bloco} {i}: título genérico ({it[pos - 1]!r})")
+    jog = c.get("jogadores") or []
+    faixa("jogadores", len(jog), 2, 5, "itens")
+    for i, (_, x) in enumerate(jog, 1):
+        faixa(f"jogadores {i}", palavras(x), 10, 45)
+    faixa("primeira_partida", palavras(c.get("primeira_partida", "")), 50, 120)
+    faixa("edicao_nacional", palavras(c.get("edicao_nacional", "")), 40, 100)
+    faixa("versoes", palavras(c.get("versoes", "")), 30, 100)
+    comp = c.get("comparacoes") or []
+    faixa("comparacoes", len(comp), 2, 3, "itens")
+    for i, it in enumerate(comp, 1):
+        faixa(f"comparacoes {i}", palavras(it[2]), 20, 50)
+    faixa("para_quem", len(c.get("para_quem") or []), 4, 5, "itens")
+    faixa("nao_e_para", len(c.get("nao_e_para") or []), 4, 5, "itens")
+    faixa("veredito", palavras(c.get("veredito", "")), 80, 140)
+    faixa("fontes", len(c.get("fontes") or []), 6, 99, "fontes")
+    return erros
+
+
 def main(arquivos):
     falhou = False
     for a in arquivos:
         c = json.loads(Path(a).read_text(encoding="utf-8"))
-        erros = checar(c)
+        erros = checar(c) + checar_texto(c)
         if erros:
             falhou = True
             print(f"✗ {c['slug']}: fora do padrão editorial")

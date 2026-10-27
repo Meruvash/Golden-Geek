@@ -15,7 +15,7 @@ from pathlib import Path
 import requests
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from checar_roteiro import checar  # noqa: E402
+from checar_roteiro import checar, checar_texto  # noqa: E402
 from prompt_infografico import TAMANHO, prompt  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -35,7 +35,7 @@ def cabecalho():
 def enviar(arquivos):
     if PENDENTE.exists():
         sys.exit(f"Já existe um lote pendente em {PENDENTE.relative_to(ROOT)}; rode 'buscar' antes.")
-    reprovados = {a: checar(json.loads(Path(a).read_text(encoding="utf-8"))) for a in arquivos}
+    reprovados = {a: (lambda c: checar(c) + checar_texto(c))(json.loads(Path(a).read_text(encoding="utf-8"))) for a in arquivos}
     reprovados = {a: e for a, e in reprovados.items() if e}
     if reprovados:
         for a, erros in reprovados.items():

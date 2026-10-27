@@ -44,7 +44,9 @@ Saída da pesquisa: FICHA (ano, autor, editora, jogadores, duração anunciada e
 
 ## Etapa 2: texto da resenha
 
-Mesma estrutura de `nemesis/`: chamada "Elite Boardgamers apresenta", título, abertura, ficha comparativa, Como funciona, O que muda (se houver versões), O que funciona muito bem (3–5), Pontos de atenção (3–5, com gravidade), Para quem é, Veredito com selo (Recomendado / Recomendado para público específico / Não recomendado) e tagline em caixa alta, Fontes. **Inclua um bloco com as premiações** (prêmio, ano, categoria, colocação). Tom direto e honesto; nada além do que está na pesquisa.
+O texto do site segue a segunda parte do **`PADRAO_EDITORIAL.md`** (exemplo completo: `conteudo/gloomhaven.json`). Seções: abertura (`lede`), Como funciona (4–6 parágrafos), Como é jogar (`experiencia`), O que funciona muito bem e Pontos de atenção (5–7 itens de 30–70 palavras, com gravidade), Com quantos jogar (`jogadores`), Primeira partida, Edição nacional e preço, Expansões e versões (`versoes`), Se você gosta de… (`comparacoes`, ligando para as nossas resenhas), Para quem é / não é (4–5 cada), Veredito com selo (Recomendado / Recomendado para público específico / Não recomendado) e tagline, Prêmios, Ficha e Fontes (pelo menos 6). Tom direto e honesto, escrito para quem nunca jogou; opinião sempre com dono; nada além do que está na pesquisa.
+
+`python3 tools/checar_roteiro.py` confere o texto junto com o roteiro; `lote_openai.py enviar` e `publicar.py` se recusam a seguir se ele não passar.
 
 ## Etapa 3: roteiro do infográfico
 
