@@ -1,0 +1,41 @@
+{
+ "slug": "bomb-busters",
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 1024,
+   "altura": 1024,
+   "editora": "Cocktail Games",
+   "credito": "Imagem: Cocktail Games",
+   "pagina": "https://www.cocktailgames.com/jeu/bomb-busters/",
+   "imagem": "https://www.cocktailgames.com/wp-content/uploads/2023/10/Bombbusters_3D_gauche.jpg",
+   "baixada_em": "2026-10-27",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/mesa-1.webp",
+   "tipo": "mesa",
+   "largura": 808,
+   "altura": 1024,
+   "editora": "Cocktail Games",
+   "credito": "Imagem: Cocktail Games",
+   "pagina": "https://www.cocktailgames.com/jeu/bomb-busters/",
+   "imagem": "https://www.cocktailgames.com/wp-content/uploads/2023/10/dos_de_boite_partie_en_cours.jpg",
+   "baixada_em": "2026-10-27",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 1024,
+   "altura": 1024,
+   "editora": "Cocktail Games",
+   "credito": "Imagem: Cocktail Games",
+   "pagina": "https://www.cocktailgames.com/jeu/bomb-busters/",
+   "imagem": "https://www.cocktailgames.com/wp-content/uploads/2023/10/Bombbusters_cartes_equipements-2.jpg",
+   "baixada_em": "2026-10-27",
+   "aprovada": true
+  }
+ ]
+}

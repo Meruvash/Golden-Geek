@@ -603,6 +603,10 @@ def relatorio(rels, cli):
                 linhas += ["", "```", email_pedido(e["editora"], r["jogo"]), "```"]
         linhas += [f"- ⚠️ {a}" for a in r["avisos"]] + [""]
     f = ROOT / "lotes" / f"imagens-{date.today().isoformat()}.md"
+    n = 2
+    while f.exists():  # um lote não apaga o relatório de outro do mesmo dia
+        f = ROOT / "lotes" / f"imagens-{date.today().isoformat()}-{n}.md"
+        n += 1
     f.write_text("\n".join(linhas), encoding="utf-8")
     return f
 

@@ -1,0 +1,41 @@
+{
+ "slug": "ark-nova",
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 800,
+   "altura": 800,
+   "editora": "Grok Games",
+   "credito": "Imagem: Grok Games",
+   "pagina": "https://loja.grokgames.com.br/ark-nova",
+   "imagem": "https://cdn.awsli.com.br/800x800/2899/2899778/produto/396869959/caixa-ark-nova-6n8antjex6.png",
+   "baixada_em": "2026-10-27",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/mesa-1.webp",
+   "tipo": "mesa",
+   "largura": 1440,
+   "altura": 804,
+   "editora": "Feuerland Spiele",
+   "credito": "Imagem: Feuerland Spiele",
+   "pagina": "https://www.feuerland-spiele.de/spielwelten/arche-nova/",
+   "imagem": "https://www.feuerland-spiele.de/fileadmin/_processed_/2/b/csm_1000131013.2_8155b465dd.png",
+   "baixada_em": "2026-10-27",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/mesa-2.webp",
+   "tipo": "mesa",
+   "largura": 1440,
+   "altura": 804,
+   "editora": "Feuerland Spiele",
+   "credito": "Imagem: Feuerland Spiele",
+   "pagina": "https://www.feuerland-spiele.de/spielwelten/arche-nova/",
+   "imagem": "https://www.feuerland-spiele.de/fileadmin/_processed_/c/4/csm_1000131013.1_747b6456d0.png",
+   "baixada_em": "2026-10-27",
+   "aprovada": true
+  }
+ ]
+}
