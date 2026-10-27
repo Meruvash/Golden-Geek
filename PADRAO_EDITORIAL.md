@@ -82,4 +82,5 @@ Quando a resenha tem fotos aprovadas em `<slug>/fotos/fontes.json` (skill `image
 - **Infográfico:** desce para o meio, na seção "Infográfico para o Instagram" depois de Prós e contras, com os botões Salvar na galeria e Legenda.
 - Toda foto leva o crédito da editora embaixo ("Imagem: …").
 - **Sem pessoas:** foto em que aparecem pessoas ou mãos leva `"pessoas": true` no `fontes.json` e não entra na página.
-- A miniatura da lista de resenhas e do link compartilhado (`capa.jpg`) continua sendo o recorte do infográfico.
+- **Miniatura:** a `capa.jpg` (cartão na lista de resenhas e prévia do link no WhatsApp) é refeita a partir da foto do topo, recortada no centro em 800×800, sempre que a página é gerada. O `og:image` leva `?v=` com a versão da imagem, para o WhatsApp buscar a nova.
+- Só a caixa não basta: sem foto de mesa, componentes ou jogabilidade, a página continua com o infográfico no topo e a miniatura do infográfico.

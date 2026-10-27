@@ -2,7 +2,9 @@
 
 Uso: python3 tools/build_review.py conteudo/<slug>.json
 Saída: <slug>/index.html (o infografico.webp e a capa.jpg ficam na mesma pasta).
+Com fotos oficiais aprovadas, a capa.jpg é refeita a partir da foto do topo.
 """
+import hashlib
 import html
 import json
 import re
@@ -114,6 +116,24 @@ def fotos_do_jogo(slug):
         if f.get("aprovada") and not f.get("pessoas"):
             fotos.setdefault(f["tipo"], f)
     return fotos
+
+
+def foto_principal(fotos):
+    """Tira de `fotos` a foto do topo: a marcada com "principal": true, senão mesa, componentes, jogabilidade, caixa."""
+    escolhida = next((t for t, f in fotos.items() if f.get("principal")), None)
+    return next((fotos.pop(t) for t in (escolhida, "mesa", "componentes", "jogabilidade", "capa") if t in fotos), None)
+
+
+def capa_da_foto(slug, f):
+    """capa.jpg (lista de resenhas e prévia do WhatsApp) passa a ser a foto do topo, recortada no centro em 800×800."""
+    im = Image.open(ROOT / slug / f["arquivo"]).convert("RGB")
+    w, h = im.size
+    lado = min(w, h)
+    im = im.crop(((w - lado) // 2, (h - lado) // 2, (w + lado) // 2, (h + lado) // 2)).resize((800, 800), Image.LANCZOS)
+    for q in range(85, 55, -5):
+        im.save(ROOT / slug / "capa.jpg", quality=q, optimize=True, progressive=True)
+        if (ROOT / slug / "capa.jpg").stat().st_size <= 250_000:
+            break
 
 
 def foto_html(c, f, classe="foto", lazy=True):
@@ -383,9 +403,13 @@ def build(c):
  </figure>"""
     # Com foto oficial, ela vira a capa da página e o infográfico desce para o meio da resenha.
     fotos = fotos_do_jogo(slug) if c.get("experiencia") else {}
-    # "principal": true no fontes.json escolhe a foto do topo; sem ele vale a ordem mesa, componentes, jogabilidade, caixa.
-    escolhida = next((t for t, f in fotos.items() if f.get("principal")), None)
-    principal = next((fotos.pop(t) for t in (escolhida, "mesa", "componentes", "jogabilidade", "capa") if t in fotos), None)
+    # Só a caixa não basta para o topo: sem foto de mesa, componentes ou jogabilidade, fica o infográfico.
+    principal = foto_principal(fotos) if set(fotos) - {"capa"} else None
+    if principal:
+        capa_da_foto(slug, principal)
+    # O ?v= muda quando a capa muda, para o WhatsApp buscar a imagem nova em vez da guardada.
+    capa = ROOT / slug / "capa.jpg"
+    versao_capa = f"?v={hashlib.md5(capa.read_bytes()).hexdigest()[:8]}" if capa.exists() else ""
     if principal:
         topo_fig = foto_html(c, principal, "capa foto-capa", lazy=False)
         info_meio = (f'<section class="bloco info-meio" id="infografico"><h2>Infográfico para o Instagram</h2>'
@@ -411,7 +435,7 @@ def build(c):
 <meta property="og:description" content="{e(c["descricao"])}">
 <meta property="og:type" content="article">
 <meta property="og:url" content="{SITE}/{slug}/">
-<meta property="og:image" content="{SITE}/{slug}/capa.jpg">
+<meta property="og:image" content="{SITE}/{slug}/capa.jpg{versao_capa}">
 <meta property="og:image:width" content="800">
 <meta property="og:image:height" content="800">
 <meta name="theme-color" content="#000000">

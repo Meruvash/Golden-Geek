@@ -86,7 +86,7 @@ O usuário responde em uma linha, por exemplo "aprova 1, 2 e 4; refaz a 3: <ajus
 ## Etapa 7: publicação
 
 1. `python3 tools/salvar_imagem.py <slug>` salva `<slug>/infografico.webp` (1600 px de largura, até ~800 KB) e `<slug>/capa.jpg` (800×800, recorte do topo) e apaga `variacao-*.png`.
-2. `python3 tools/build_review.py conteudo/<slug>.json` gera `<slug>/index.html`.
+2. `python3 tools/build_review.py conteudo/<slug>.json` gera `<slug>/index.html`. Se o jogo tem fotos oficiais aprovadas, refaz também a `<slug>/capa.jpg` a partir da foto do topo (ver "Fotos oficiais na página" em `PADRAO_EDITORIAL.md`); por isso rode sempre depois do `salvar_imagem.py`.
 3. `python3 tools/publicar.py conteudo/<slug>.json` marca o jogo como `publicado` em `pauta.json` e regera `resenhas/index.html` inteira (`tools/build_lista.py`) e todas as páginas de resenha, para o bloco "Continue lendo" incluir a nova. Depois, `node tools/capa_resenhas.js` refaz `resenhas/capa.jpg` (prévia do WhatsApp da página de resenhas) com o mosaico das capas.
 4. Teste no Playwright em 390 px e 1200 px: sem erros de JS e sem rolagem horizontal.
 5. Commit em `main` e push.
