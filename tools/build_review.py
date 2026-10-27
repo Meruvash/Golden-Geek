@@ -113,13 +113,13 @@ def build(c):
 <meta property="og:image" content="{SITE}/{slug}/capa.jpg">
 <meta property="og:image:width" content="800">
 <meta property="og:image:height" content="800">
-<meta name="theme-color" content="#1e2a3a">
+<meta name="theme-color" content="#000000">
 <link rel="icon" href="../favicon.svg" type="image/svg+xml">
 <link rel="preload" href="../fontes/public-sans.woff2" as="font" type="font/woff2" crossorigin>
 <style>
 @font-face{{font-family:"Public Sans";src:url(../fontes/public-sans.woff2) format("woff2");font-weight:400 800;font-style:normal;font-display:swap}}
 @font-face{{font-family:"Public Sans";src:url(../fontes/public-sans-italic.woff2) format("woff2");font-weight:400;font-style:italic;font-display:swap}}
-:root{{--bar:#1e2a3a;--bar-ink:#e8edf3;--gold:#e3b23c;--ground:#f3f5f8;--panel:#fff;--ink:#17202b;--muted:#556173;--line:#dbe1e8;--link:#1f5fae;--ok:#1b7a45;--no:#b3263e;--warn:#9a5b00;--n9:#1d7d48;--n7:#2366a8;--n6:#6b4ea3;--n5:#b23a48}}
+:root{{color-scheme:dark;--bar:#000;--bar-ink:#e9ecf1;--gold:#e3b23c;--ground:#000;--panel:#0f1115;--panel2:#171a20;--ink:#eceff3;--muted:#a1a9b5;--line:#262a32;--link:#8cb8ff;--ok:#1f9a57;--ok-ink:#5fd18f;--no:#c43a52;--no-ink:#ff8094;--warn:#b06a00;--warn-ink:#ffb547;--n9:#1d7d48;--n7:#2366a8;--n6:#6b4ea3;--n5:#b23a48}}
 *{{box-sizing:border-box}}
 html{{-webkit-text-size-adjust:100%;scroll-padding-top:64px}}
 body{{margin:0;background:var(--ground);color:var(--ink);font:16px/1.6 "Public Sans",system-ui,sans-serif}}
@@ -127,18 +127,18 @@ h1,h2,h3,p,ul,dl,dd,figure{{margin:0}}
 ul{{padding:0;list-style:none}}
 img{{display:block;max-width:100%;height:auto}}
 a{{color:var(--link);text-underline-offset:.18em}}
-::selection{{background:#cfe0f5}}
+::selection{{background:#e3b23c;color:#000}}
 :focus-visible{{outline:3px solid var(--gold);outline-offset:2px;border-radius:3px}}
-.skip{{position:absolute;left:-999px}}.skip:focus{{left:12px;top:8px;z-index:9;background:#fff;padding:6px 10px}}
-.bar{{background:var(--bar);color:var(--bar-ink)}}
+.skip{{position:absolute;left:-999px}}.skip:focus{{left:12px;top:8px;z-index:9;background:var(--gold);color:#000;padding:6px 10px}}
+.bar{{background:var(--bar);color:var(--bar-ink);border-bottom:1px solid var(--line)}}
 .bar .in{{max-width:1120px;margin:0 auto;padding:8px 16px;display:flex;align-items:center;gap:12px}}
 .bar a{{color:var(--bar-ink);text-decoration:none;font-weight:600;font-size:.95rem}}
 .marca{{display:flex;align-items:center;gap:10px}}.marca img{{width:84px;height:auto;border-radius:6px}}
-.bar .todas{{margin-left:auto;border:1px solid #4a5a70;border-radius:6px;padding:6px 12px}}
-.bar .todas:hover{{background:#2b3a4f}}
+.bar .todas{{margin-left:auto;border:1px solid #3a3f48;border-radius:6px;padding:6px 12px}}
+.bar .todas:hover{{background:#1a1d22;border-color:var(--gold)}}
 .jogo{{background:var(--panel);border-bottom:1px solid var(--line)}}
 .jogo .in{{max-width:1120px;margin:0 auto;padding:20px 16px 0;display:grid;gap:20px}}
-.capa a{{display:block;border-radius:8px;overflow:hidden;box-shadow:0 6px 18px rgba(23,32,43,.18)}}
+.capa a{{display:block;border-radius:8px;overflow:hidden;box-shadow:0 8px 28px rgba(0,0,0,.6)}}
 .capa figcaption{{font-size:.82rem;color:var(--muted);margin-top:6px}}
 .topo{{display:grid;grid-template-columns:1fr auto;gap:4px 16px;align-items:start}}
 h1{{font-size:clamp(2rem,7vw,3.1rem);line-height:1.05;font-weight:800;letter-spacing:-.02em}}
@@ -147,11 +147,11 @@ h1{{font-size:clamp(2rem,7vw,3.1rem);line-height:1.05;font-weight:800;letter-spa
 .nota{{width:64px;height:72px;display:grid;place-items:center;clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%);color:#fff;font-weight:800;font-size:1.45rem;font-variant-numeric:tabular-nums}}
 .n9{{background:var(--n9)}}.n7{{background:var(--n7)}}.n6{{background:var(--n6)}}.n5{{background:var(--n5)}}
 .nota-k{{font-size:.72rem;color:var(--muted);margin-top:2px}}
-.veredito{{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin-top:14px;padding:12px 14px;border-radius:8px;background:var(--ground)}}
+.veredito{{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin-top:14px;padding:12px 14px;border-radius:8px;background:var(--panel2)}}
 .selo{{font-weight:800;font-size:.9rem;border-radius:999px;padding:3px 12px;color:#fff;background:var(--ok)}}
 .selo.publico{{background:var(--warn)}}.selo.nao{{background:var(--no)}}
 .veredito p{{font-weight:600}}
-.lede{{margin-top:14px;color:#2c3746;max-width:66ch}}
+.lede{{margin-top:14px;color:#c9cfd8;max-width:66ch}}
 .regua{{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;margin-top:16px;border:1px solid var(--line);border-radius:8px;background:var(--line);overflow:hidden}}
 .regua li{{display:grid;grid-template-columns:auto 1fr;column-gap:8px;padding:10px 12px;align-items:center;background:var(--panel)}}
 .ic{{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}}
@@ -168,13 +168,13 @@ h2{{font-size:1.3rem;font-weight:800;letter-spacing:-.01em;margin-bottom:12px}}
 .pc{{display:grid;gap:20px}}
 .pc li{{display:grid;grid-template-columns:auto 1fr;gap:10px;padding:14px 0;border-top:1px solid var(--line)}}
 .pc li:first-child{{border-top:0;padding-top:0}}
-.pc h3{{font-size:1rem;font-weight:700}}.pc p{{color:#3a4555;font-size:.95rem}}
-.ic.ok{{color:var(--ok);margin-top:2px}}.ic.no{{color:var(--no);margin-top:2px}}
-.sev{{font-size:.72rem;font-weight:700;border-radius:4px;padding:1px 6px;vertical-align:2px;margin-left:4px;background:#eef1f5;color:var(--muted)}}
-.sev.moderada{{background:#fdf1dc;color:var(--warn)}}.sev.grave{{background:#fbe4e8;color:var(--no)}}
+.pc h3{{font-size:1rem;font-weight:700}}.pc p{{color:#c3c9d2;font-size:.95rem}}
+.ic.ok{{color:var(--ok-ink);margin-top:2px}}.ic.no{{color:var(--no-ink);margin-top:2px}}
+.sev{{font-size:.72rem;font-weight:700;border-radius:4px;padding:1px 6px;vertical-align:2px;margin-left:4px;background:var(--panel2);color:var(--muted)}}
+.sev.moderada{{background:#2a1f0c;color:var(--warn-ink)}}.sev.grave{{background:#2b1117;color:var(--no-ink)}}
 .quem{{display:grid;gap:20px}}.quem li{{margin:6px 0;padding-left:16px;position:relative}}.quem li::before{{content:"";position:absolute;left:0;top:.65em;width:7px;height:7px;border-radius:50%;background:var(--ok)}}
 .quem .nao li::before{{background:var(--no)}}
-.fecho{{background:var(--bar);color:var(--bar-ink);border:0}}
+.fecho{{background:var(--panel2);color:var(--bar-ink);border:1px solid #3a3220;box-shadow:inset 0 3px 0 var(--gold)}}
 .fecho .selo{{margin-bottom:10px;display:inline-block}}.fecho p{{max-width:70ch}}
 .tagline{{font-size:1.25rem;font-weight:800;margin-top:12px;color:#fff}}
 .col,aside{{display:grid;gap:20px;align-content:start}}
@@ -188,7 +188,7 @@ dl div:first-child{{border-top:0}}dt{{color:var(--muted)}}dd.na{{color:var(--mut
 .pr-t b{{display:block;font-size:.93rem}}.pr-t span{{font-size:.82rem;color:var(--muted)}}
 .resumo{{font-size:.88rem;color:var(--muted);margin:-6px 0 8px}}
 .fontes li{{margin:6px 0;font-size:.93rem}}.fontes span{{color:var(--muted);font-size:.85rem}}
-footer{{background:var(--bar);color:var(--bar-ink);font-size:.88rem}}
+footer{{background:var(--bar);color:var(--bar-ink);font-size:.88rem;border-top:1px solid var(--line)}}
 footer .in{{max-width:1120px;margin:0 auto;padding:18px 16px;display:flex;flex-wrap:wrap;gap:10px 20px}}
 footer a{{color:var(--bar-ink)}}
 @media (min-width:860px){{
