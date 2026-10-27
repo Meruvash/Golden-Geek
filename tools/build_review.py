@@ -162,7 +162,7 @@ def layout_v2(c, premios_bloco, ficha_html, fontes, fotos=None, info_meio=""):
     cit = c.get("citacao")
     jogar = f"""<section class="bloco faixa" id="como-e-jogar"><h2>Como é jogar</h2>
    {f'<blockquote class="cit"><p>“{e(cit["texto"])}”</p><cite>{e(cit["fonte"])}</cite></blockquote>' if cit else ""}
-   {foto_html(c, fotos["componentes"]) if "componentes" in fotos else ""}
+   {next((foto_html(c, fotos[t]) for t in ("componentes", "jogabilidade", "mesa") if t in fotos), "")}
    <div class="leitura"><p>{e(c["experiencia"][0])}</p></div>
    {f'<details class="mais"><summary>Continuar lendo</summary><div class="leitura">{"".join(f"<p>{e(x)}</p>" for x in c["experiencia"][1:])}</div></details>' if len(c["experiencia"]) > 1 else ""}
   </section>"""
@@ -383,7 +383,9 @@ def build(c):
  </figure>"""
     # Com foto oficial, ela vira a capa da página e o infográfico desce para o meio da resenha.
     fotos = fotos_do_jogo(slug) if c.get("experiencia") else {}
-    principal = next((fotos.pop(t) for t in ("mesa", "componentes", "jogabilidade", "capa") if t in fotos), None)
+    # "principal": true no fontes.json escolhe a foto do topo; sem ele vale a ordem mesa, componentes, jogabilidade, caixa.
+    escolhida = next((t for t, f in fotos.items() if f.get("principal")), None)
+    principal = next((fotos.pop(t) for t in (escolhida, "mesa", "componentes", "jogabilidade", "capa") if t in fotos), None)
     if principal:
         topo_fig = foto_html(c, principal, "capa foto-capa", lazy=False)
         info_meio = (f'<section class="bloco info-meio" id="infografico"><h2>Infográfico para o Instagram</h2>'
