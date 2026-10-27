@@ -6,7 +6,7 @@
  "og_titulo": "Ark Nova vale a pena? Resenha Elite Boardgamers",
  "descricao": "Resenha de Ark Nova, vencedor do Deutscher Spiele Preis 2022 e do As d'Or Expert 2023: como funciona, pontos fortes, pontos de atenção e para quem é.",
  "titulo_html": "Construa o zoológico mais moderno do mundo: <span>Ark Nova</span>",
- "lede": "Ark Nova é um jogo pesado de construção de motor em que cada jogador monta um zoológico moderno, com recintos, animais e projetos de conservação. Venceu o Deutscher Spiele Preis em 2022, o As d'Or Expert em 2023 e o Golden Geek de Jogo do Ano pesado em 2021.",
+ "lede": "Ark Nova é um jogo pesado de construção de motor em que cada jogador monta um zoológico moderno, com recintos, animais e projetos de conservação, usando 212 cartas diferentes. Venceu o Deutscher Spiele Preis 2022, o As d'Or Expert 2023 e o Golden Geek de Jogo do Ano pesado em 2021. Tem edição em português da Grok Games e é um dos eurogames pesados mais elogiados da década.",
  "tags": [
   "1–4 jogadores",
   "90–150 min",
@@ -68,7 +68,7 @@
   ],
   [
    "Editora no Brasil",
-   "não confirmado nas fontes consultadas"
+   "Grok Games"
   ],
   [
    "Jogadores",
@@ -105,62 +105,86 @@
  ],
  "nota_ficha": "Números do BoardGameGeek obtidos por busca; o ranking geral varia entre as fontes e foi omitido.",
  "como_funciona": [
-  "Cada jogador tem cinco cartas de ação em fila: construir, animais, cartas, associação e patrocinadores. A força de cada ação depende da posição da carta; depois de usada, ela volta para o início e as outras avançam.",
-  "Com essas ações você constrói recintos no seu tabuleiro, coloca animais que exigem certos recintos e condições, compra cartas e apoia projetos de conservação pelo mundo.",
-  "Há duas trilhas: atratividade e conservação, que correm em sentidos opostos. Quando elas se cruzam para algum jogador, o fim da partida é disparado."
+  "Cada jogador tem um tabuleiro de zoológico e cinco cartas de ação em fila: construir, animais, cartas, associação e patrocinadores. A força de cada ação depende da posição da carta na fila: quanto mais à direita, mais forte. Depois de usada, ela volta para o início e as outras avançam.",
+  "Com a ação de construir, você ergue recintos de tamanhos variados e prédios especiais no seu tabuleiro. Com a de animais, coloca nos recintos os animais das cartas, que exigem tamanho de recinto, dinheiro e às vezes outras condições, como ícones de continente ou de ciência já presentes no zoológico.",
+  "A ação de cartas compra cartas novas do baralho ou da vitrine; a de associação manda trabalhadores para ganhar reputação, fazer parcerias com zoológicos e universidades ou apoiar projetos de conservação; a de patrocinadores joga cartas que trazem renda e efeitos permanentes.",
+  "Cada carta de ação pode ser melhorada uma vez, ganhando um efeito mais forte. E cada animal, patrocinador ou prédio pode criar combinações, como um ornitólogo que rende dinheiro sempre que um pássaro chega ao zoológico.",
+  "Há duas trilhas que correm em sentidos opostos: atratividade, que traz visitantes e renda, e conservação, alimentada pelos projetos. Quando os marcadores de um jogador se cruzam, o fim é disparado, e vence quem tiver a maior distância entre eles."
  ],
  "funciona": [
   [
    "Sistema de ações elegante",
-   "As cinco cartas de ação que ganham e perdem força conforme a posição são o centro do jogo, descrito pela Wikipedia como seu mecanismo principal."
+   "As cinco cartas de ação que ganham força conforme a posição são o centro do jogo, descrito pela Wikipedia como seu mecanismo principal. Esperar uma ação ficar forte ou usá-la fraca agora é uma decisão a cada turno."
   ],
   [
    "Zoológico que cresce",
-   "Montar recintos, animais e projetos de conservação dá a sensação de construir algo que é seu."
+   "Montar recintos, animais, patrocinadores e projetos de conservação dá a sensação de construir algo que é seu, e o tabuleiro termina cheio de histórias. A Tabletop Gaming considera o jogo obrigatório e diz que ele faz jus à fama."
   ],
   [
-   "Muito bem avaliado",
-   "Nota 8,5 no BGG; uma das fontes o coloca em 2º lugar geral do site."
+   "Combinações satisfatórias",
+   "As 212 cartas criam muitas combinações, como o ornitólogo que rende dinheiro sempre que um pássaro chega ao zoológico, exemplo da Tabletop Gaming. Descobrir uma sequência que dispara vários efeitos é o ponto alto de cada partida."
+  ],
+  [
+   "Ótimo a dois",
+   "A Let's Play Games considera o jogo melhor a dois, com partidas mais apertadas e disputa mais afiada pelas cartas e projetos. A três, o mercado de cartas gira rápido e também funciona bem."
   ],
   [
    "Solo bem aceito",
-   "Numa enquete do BGG com 1.530 votos, 80% aprovaram o modo solo."
+   "Numa enquete do BGG com 1.530 votos, 80% aprovaram o modo solo, que desafia o jogador a cruzar as trilhas num número limite de rodadas. O jogo também ficou em 3º no Golden Geek de solo em 2021."
+  ],
+  [
+   "Muito bem avaliado",
+   "Tem nota 8,5 no BGG, e uma das fontes o coloca em 2º lugar geral do site. A Let's Play Games diz que o jogo merece a reputação, e os prêmios na Alemanha e na França confirmam."
   ]
  ],
  "atencao": [
   [
    "Moderada",
    "Pouco acessível",
-   "A Wikipedia resume que as críticas se concentram na acessibilidade do jogo para iniciantes."
+   "A Wikipedia resume que as críticas se concentram na acessibilidade para iniciantes, e a Let's Play Games lembra que a iconografia é densa: nas primeiras partidas, todos consultam o cartão de referência o tempo todo."
   ],
   [
    "Moderada",
    "Partidas longas",
-   "A caixa diz 90 a 150 minutos, e resenhas relatam até 3 horas com 4 jogadores."
+   "A caixa diz 90 a 150 minutos, mas a Let's Play Games relata quase cinco horas na primeira partida com quatro jogadores novos, e trata o tempo da caixa como meta para grupos experientes."
   ],
   [
    "Moderada",
    "Pouca interação direta",
-   "Uma resenha no BGG chama o jogo de cabeça baixa, cada um no seu zoológico."
+   "Uma resenha no BGG chama o jogo de cabeça baixa, cada um no seu zoológico. A disputa existe nas cartas da vitrine e nos projetos de conservação, que a Let's Play Games diz frustrarem quando um rival chega antes."
+  ],
+  [
+   "Leve",
+   "Cartas que não chegam",
+   "Com 212 cartas no baralho, a Tabletop Gaming aponta que você pode esperar por cartas que nunca chegam, e muitos animais exigem condições que o zoológico ainda não tem. Isso frustra novatos no começo."
+  ],
+  [
+   "Leve",
+   "Componentes desiguais",
+   "A Tabletop Gaming critica os tabuleiros finos, os dois marcadores de trilha quase idênticos e a disposição confusa dos ícones nas cartas, além das fotos de animais, que considera infantis para um jogo de 14 anos ou mais."
   ],
   [
    "Leve",
    "Solo é contra o relógio",
-   "A mesma resenha descreve o modo solo como um cronômetro sofisticado, sem rival de verdade."
+   "Uma resenha no BGG descreve o modo solo como um cronômetro sofisticado, sem rival de verdade: você corre contra um limite de rodadas. Quem prefere um adversário automatizado pode sentir falta."
   ]
  ],
  "para_quem": [
   "Gosta de jogos pesados de motor de cartas",
   "Joga sozinho ou em dupla com frequência",
-  "Tem tempo para partidas longas"
+  "Tem tempo para partidas longas",
+  "Gosta de planejar combinações a longo prazo",
+  "Tem alguém experiente para ensinar"
  ],
  "nao_e_para": [
   "Está começando nos jogos modernos",
   "Quer muita interação entre jogadores",
-  "Prefere partidas curtas"
+  "Prefere partidas curtas",
+  "Não tem paciência para ícones e cartão de referência",
+  "Joga quase sempre com quatro pessoas"
  ],
  "selo": "Recomendado para público específico",
- "veredito": "Ark Nova é um dos jogos pesados mais completos da última década, com um sistema de ações elegante e um zoológico que cresce de forma muito satisfatória. É longo, pouco acessível e de baixa interação, mas para quem gosta do gênero é obrigatório.",
+ "veredito": "Ark Nova é um dos jogos pesados mais completos da última década: o giro das cinco cartas de ação é elegante, as 212 cartas criam combinações satisfatórias e o zoológico cresce de um jeito muito recompensador. Funciona muito bem a dois e tem um solo aprovado pelos jogadores. Em troca, pede muitas horas, uma curva de aprendizado alta, paciência com a iconografia e aceita pouca interação. Para quem gosta do gênero, por cerca de R$ 450 a R$ 500 na edição da Grok, é obrigatório.",
  "tagline": "Um zoológico inteiro, uma carta de cada vez.",
  "consulta": "26/10/2026",
  "fontes": [
@@ -193,6 +217,21 @@
    "Let's Play Games – Ark Nova",
    "https://letsplaygames.uk/ark-nova-review/",
    "duração relatada"
+  ],
+  [
+   "Meca dos Jogos – Ark Nova",
+   "https://www.mecadosjogos.com.br/ark-nova-p548",
+   "edição nacional, preço"
+  ],
+  [
+   "Mercado Livre – Ark Nova (Grok)",
+   "https://www.mercadolivre.com.br/ark-nova-jogo-de-tabuleiroboard-game-grok/p/MLB23073841",
+   "preço de referência"
+  ],
+  [
+   "Steam – Ark Nova",
+   "https://store.steampowered.com/app/2438990/Ark_Nova/",
+   "versão digital"
   ]
  ],
  "roteiro": {
@@ -273,5 +312,109 @@
   ],
   "veredito": "UM DOS JOGOS PESADOS MAIS COMPLETOS DA DÉCADA."
  },
- "legenda": "Um zoológico inteiro, uma carta de cada vez. 🦁\n\nArk Nova venceu o Golden Geek de Jogo do Ano pesado (2021), o Deutscher Spiele Preis (2022) e o As d'Or Expert (2023).\nTem um sistema de ações elegante e um zoológico que cresce de um jeito muito satisfatório.\nÉ longo e tem pouca interação, mas para quem curte jogo pesado é obrigatório.\n\nVocê encara uma partida de 3 horas?\n\nResenha completa no link da bio.\n\n#ArkNova #JogosDeTabuleiro #BoardGames #Boardgamer #JogoPesado #HeavyGames #GoldenGeek #Tabuleiro #BoardGameReview #EliteBoardgamers"
+ "legenda": "Um zoológico inteiro, uma carta de cada vez. 🦁\n\nArk Nova venceu o Golden Geek de Jogo do Ano pesado (2021), o Deutscher Spiele Preis (2022) e o As d'Or Expert (2023).\nTem um sistema de ações elegante e um zoológico que cresce de um jeito muito satisfatório.\nÉ longo e tem pouca interação, mas para quem curte jogo pesado é obrigatório.\n\nVocê encara uma partida de 3 horas?\n\nResenha completa no link da bio.\n\n#ArkNova #JogosDeTabuleiro #BoardGames #Boardgamer #JogoPesado #HeavyGames #GoldenGeek #Tabuleiro #BoardGameReview #EliteBoardgamers",
+ "passos": [
+  [
+   "ESCOLHA UMA CARTA",
+   "Na sua vez, use uma das cinco cartas de ação: construir, animais, cartas, associação ou patrocinadores."
+  ],
+  [
+   "FORÇA PELA POSIÇÃO",
+   "Quanto mais à direita estiver a carta, mais forte a ação. Usada, ela volta para o começo da fila."
+  ],
+  [
+   "MONTE O ZOOLÓGICO",
+   "Construa recintos e coloque animais que exigem espaço, dinheiro e às vezes ícones já presentes no zoo."
+  ],
+  [
+   "APOIE A CONSERVAÇÃO",
+   "Mande trabalhadores à associação para ganhar parcerias e apoiar projetos de conservação pelo mundo inteiro."
+  ],
+  [
+   "CRUZE AS TRILHAS",
+   "Atratividade e conservação correm em sentidos opostos; quando se cruzam, o fim da partida é disparado."
+  ]
+ ],
+ "como_resumo": "Gire as cinco cartas de ação para montar o zoológico mais atrativo e mais engajado na conservação.",
+ "perfil": [
+  [
+   "Estratégia e motor de cartas",
+   5
+  ],
+  [
+   "Variedade",
+   5
+  ],
+  [
+   "Modo solo",
+   4
+  ],
+  [
+   "Facilidade de ensinar",
+   1
+  ],
+  [
+   "Interação entre jogadores",
+   2
+  ],
+  [
+   "Partida curta",
+   1
+  ]
+ ],
+ "experiencia": [
+  "A Let's Play Games dá um exemplo: a sua carta de construir ficou vários turnos na ponta direita da fila e agora é a ação mais forte que você tem. Você a usa para erguer um recinto grande, onde no próximo turno vai caber o elefante da sua mão. A carta volta para a esquerda, fraca, e as outras avançam: o turno seguinte já precisa ser planejado com outra ação.",
+  "O começo é de preparação, pagando para montar recintos e esperando o dinheiro; no meio, as combinações aparecem, como o ornitólogo que rende dinheiro a cada pássaro, citado pela Tabletop Gaming. A Let's Play Games o chama de um dos melhores eurogames pesados dos últimos dez anos, mas avisa que a primeira partida a quatro passou de quatro horas."
+ ],
+ "citacao": {
+  "texto": "Um dos melhores eurogames pesados feitos nos últimos dez anos.",
+  "fonte": "Let's Play Games (tradução livre)"
+ },
+ "jogadores": [
+  [
+   "Sozinho",
+   "Corrida contra um limite de rodadas; 80% de aprovação numa enquete do BGG com 1.530 votos.",
+   2
+  ],
+  [
+   "2 jogadores",
+   "O número ideal para a Let's Play Games: partidas mais apertadas e disputa afiada por cartas.",
+   3
+  ],
+  [
+   "3 jogadores",
+   "Funciona bem, com o mercado de cartas girando rápido entre os turnos.",
+   2
+  ],
+  [
+   "4 jogadores",
+   "Ainda bom, mas a partida se estende e a disputa por projetos de conservação fica mais acirrada.",
+   1
+  ]
+ ],
+ "primeira_partida": "Reserve uma tarde: a Let's Play Games levou quase cinco horas na primeira partida a quatro. Use o lado padrão dos tabuleiros de zoológico, porque o alternativo acrescenta restrições de planejamento, e deixe o cartão de referência de ícones à mão. Dica prática: explique primeiro o giro das cartas de ação com um exemplo e só depois os detalhes de cada ação; ter alguém experiente ensinando ajuda muito.",
+ "edicao_nacional": "A Grok Games publica Ark Nova em português. Em 27/10/2026, as lojas consultadas vendiam o jogo entre R$ 450 (no Pix) e R$ 500, com estoque baixo ou esgotado em algumas delas; no Mercado Livre havia oferta por cerca de R$ 480.",
+ "preco_ref": {
+  "faixa": "R$ 450 a R$ 500",
+  "data": "27/10/2026",
+  "obs": "edição da Grok; estoque irregular"
+ },
+ "versoes": "A expansão Marine Worlds acrescenta animais marinhos, aquários e novos projetos de conservação. Há também uma versão digital oficial de Ark Nova na Steam, para quem quer aprender as regras com o computador fazendo as contas.",
+ "comparacoes": [
+  [
+   "Terraforming Mars",
+   "terraforming-mars",
+   "Outro motor de cartas premiado, um pouco mais leve segundo a Let's Play Games, com Marte no lugar do zoológico e muitas combinações."
+  ],
+  [
+   "Wingspan",
+   "wingspan",
+   "Também é sobre animais e motor de cartas, mas bem mais leve, curto e acessível, com aves e partidas de cerca de uma hora."
+  ],
+  [
+   "Gloomhaven",
+   "gloomhaven",
+   "Para quem gosta de jogos pesados e longos, mas quer cooperar: combate tático em campanha, com outra espécie de quebra-cabeça."
+  ]
+ ]
 }

@@ -6,7 +6,7 @@
  "og_titulo": "Endeavor: Deep Sea vale a pena? Resenha Elite Boardgamers",
  "descricao": "Resenha de Endeavor: Deep Sea, vencedor do Kennerspiel des Jahres 2025: como funciona, pontos fortes, pontos de atenção e para quem é.",
  "titulo_html": "Pesquisa e conservação no fundo do mar: <span>Endeavor: Deep Sea</span>",
- "lede": "Endeavor: Deep Sea coloca os jogadores à frente de institutos de oceanografia que exploram e protegem o fundo do mar. Venceu o Kennerspiel des Jahres em 2025, ficou em 2º no Deutscher Spiele Preis 2025 e em 3º no Golden Geek de Jogo do Ano médio 2024.",
+ "lede": "Endeavor: Deep Sea, lançado no Brasil pela Ludofun como Endeavor: Mar Profundo, coloca os jogadores à frente de institutos de oceanografia que exploram, estudam e protegem o fundo do mar. Venceu o Kennerspiel des Jahres 2025, ficou em 2º no Deutscher Spiele Preis 2025 e em 3º no Golden Geek de Jogo do Ano médio 2024. Funciona como competitivo, cooperativo ou solo.",
  "tags": [
   "1–4 jogadores",
   "60–120 min",
@@ -58,7 +58,7 @@
   ],
   [
    "Editora no Brasil",
-   "Edição em português (Endeavor: Mar Profundo) listada no BGG para 2025, ainda não lançada; editora não confirmado nas fontes consultadas"
+   "Ludofun (Endeavor: Mar Profundo)"
   ],
   [
    "Jogadores",
@@ -95,62 +95,77 @@
  ],
  "nota_ficha": "Nota e peso do BGG obtidos por busca e pela Wikipedia.",
  "como_funciona": [
-  "Cada jogador lidera um instituto de oceanógrafos. Ao longo de seis rodadas, você usa seus especialistas em vida marinha para viajar, fazer sonar, mergulhar, conservar ou publicar pesquisas.",
-  "O mapa do oceano é montado com peças reveladas aos poucos; explorar abre novas áreas e espécies. Publicar no diário científico dá bônus, inclusive passivos para quem não participou.",
-  "O jogo pode ser competitivo, cooperativo ou solo, sempre com uma das 10 missões escolhida no início."
+  "Cada jogador lidera um instituto de oceanografia, com um tabuleiro próprio de trilhas que medem a força das suas ações. A partida tem seis rodadas, e em cada uma você recruta especialistas em vida marinha e recebe fichas de ação de acordo com a posição nas trilhas.",
+  "As ações são viajar pelo oceano, usar o sonar para revelar áreas, mergulhar para estudar espécies, conservar habitats e publicar pesquisas. Cada ação custa fichas, e a ordem importa, porque os bônus conquistados valem na hora.",
+  "O mapa do oceano é montado com peças reveladas aos poucos, então explorar abre novas áreas, espécies e oportunidades a cada partida. Estudar e proteger as espécies dá pontos e faz as trilhas do seu instituto avançarem.",
+  "Publicar no diário científico dá bônus imediatos e também bônus passivos para outros jogadores, o que cria uma interação indireta: às vezes vale publicar algo que ajuda um rival se ajudar você ainda mais. Essa troca de favores aparece em quase toda rodada.",
+  "O jogo pode ser competitivo, cooperativo ou solo, sempre com uma das 10 missões escolhida no início. No cooperativo, o grupo ganha objetivos extras e cartas de revés; no solo, joga com as regras cooperativas e uma rodada a mais."
  ],
  "funciona": [
   [
-   "Quase perfeito para parte da crítica",
-   "Andrea Champagne, da Board Game Quest, deu nota máxima e disse que o jogo era digno do Kennerspiel."
+   "Nota máxima de parte da crítica",
+   "Andrea Champagne, da Board Game Quest, deu cinco estrelas, disse que o jogo acerta em todos os níveis e que era digno do Kennerspiel. A resenha elogia os ícones claros, a arte e a jogabilidade fluida e interligada."
   ],
   [
    "Mapa variável",
-   "Justin Bell, da Meeple Mountain, elogiou a variação do mapa a cada partida."
+   "O oceano é montado com peças reveladas aos poucos, e Justin Bell, da Meeple Mountain, elogiou a variação do mapa a cada partida. Explorar sempre traz uma surpresa, e o caminho de uma partida não se repete na seguinte."
   ],
   [
    "Três modos de jogo",
-   "Competitivo, cooperativo ou solo, com 10 missões, segundo a Wikipedia."
+   "Competitivo, cooperativo ou solo, com 10 missões, segundo a Wikipedia, e as mesmas regras básicas em todos, como destaca a Board Game Quest. Um único jogo serve a grupos que gostam de disputar e a grupos que preferem cooperar."
+  ],
+  [
+   "Regras ligadas ao tema",
+   "As regras fazem sentido com o tema, então os jogadores costumam adivinhar o próximo passo, segundo a Board Game Quest. Usar o sonar para revelar áreas antes de mergulhar é o tipo de lógica que ajuda a lembrar das regras."
   ],
   [
    "Tema de conservação",
-   "Explorar e proteger o fundo do mar dá um tema diferente do habitual nos jogos médios."
+   "Explorar e proteger o fundo do mar dá um tema diferente do habitual nos jogos médios, que costumam falar de comércio ou conquista. Aqui, os pontos vêm de estudar e preservar espécies, não de dominar territórios."
   ]
  ],
  "atencao": [
   [
    "Moderada",
    "Começo lento",
-   "Resenhas no BGG relatam que as primeiras rodadas não empolgam."
+   "Resenhas no BGG relatam que as primeiras rodadas não empolgam, porque o instituto ainda tem poucas ações fortes. O jogo cresce a partir do meio, mas quem espera ação desde o primeiro turno pode se desanimar."
   ],
   [
    "Moderada",
    "Divide a crítica",
-   "Justin Bell, da Meeple Mountain, deu 3,5 de 5 e disse ter dificuldade de ver o que outros apreciam no design."
+   "Justin Bell, da Meeple Mountain, deu 3,5 de 5 e disse ter dificuldade de ver o que outros apreciam no design. Enquanto a Board Game Quest deu nota máxima, parte da crítica ficou menos empolgada com o vencedor do Kennerspiel."
+  ],
+  [
+   "Leve",
+   "Não é jogo de entrada",
+   "A Board Game Quest avisa que não é um jogo de entrada, apesar das regras ligadas ao tema. Com peso 2,9 de 5 no BGG, pede alguma experiência com jogos médios para render na primeira partida."
+  ],
+  [
+   "Leve",
+   "Objetivos lendários quase impossíveis",
+   "A própria Board Game Quest, mesmo com nota máxima, critica as condições de vitória lendárias, que parecem impossíveis de cumprir. Para grupos que gostam de desafio extremo no cooperativo, isso pode frustrar."
   ],
   [
    "Leve",
    "Falta resumo de regras",
-   "A Gaming Trend, citada pela Wikipedia, sentiu falta de cartas de referência para os símbolos."
-  ],
-  [
-   "Leve",
-   "Tabuleiros empenam",
-   "A mesma resenha relata tabuleiros de jogador empenando com o tempo."
+   "A Gaming Trend sentiu falta de cartas de referência para os símbolos e relatou tabuleiros de jogador empenando com o tempo. Vale guardar o jogo bem e ter o manual por perto nas primeiras partidas."
   ]
  ],
  "para_quem": [
   "Gosta de jogos médios de exploração",
   "Quer um jogo que funcione competitivo, cooperativo ou solo",
-  "Curte temas de natureza e ciência"
+  "Curte temas de natureza e ciência",
+  "Joga às vezes sozinho e às vezes em grupo",
+  "Gosta de mapas que mudam a cada partida"
  ],
  "nao_e_para": [
   "Quer empolgação desde a primeira rodada",
   "Busca muito confronto direto",
-  "Precisa de edição nacional já à venda"
+  "Está começando nos jogos modernos",
+  "Quer pagar pouco num jogo médio",
+  "Prefere regras sem iconografia"
  ],
  "selo": "Recomendado",
- "veredito": "Endeavor: Deep Sea é um jogo médio versátil e bem acabado, com mapa variável e três modos de jogo num tema de conservação marinha. O começo é lento e parte da crítica não se empolgou, mas o Kennerspiel foi merecido.",
+ "veredito": "Endeavor: Deep Sea é um jogo médio versátil e bem acabado: o mapa revelado aos poucos muda cada partida, as regras fazem sentido com o tema e um único jogo funciona como competitivo, cooperativo ou solo. A Board Game Quest deu nota máxima e o Kennerspiel confirmou. O começo é lento, parte da crítica não se empolgou e não é um jogo de entrada. Com edição da Ludofun entre R$ 450 e R$ 650, vale para quem gosta de exploração e de jogos médios com tema de natureza.",
  "tagline": "Explore, pesquise e proteja o fundo do mar.",
  "consulta": "26/10/2026",
  "fontes": [
@@ -183,6 +198,21 @@
    "BoardGameGeek – edição em português",
    "https://boardgamegeek.com/boardgameversion/793986",
    "edição nacional"
+  ],
+  [
+   "Ludopedia – Endeavor: Mar Profundo",
+   "https://ludopedia.com.br/jogo/endeavor-deep-sea?v=creditos",
+   "edição nacional"
+  ],
+  [
+   "Ludostation – Endeavor: Mar Profundo",
+   "https://ludostation.com.br/produtos/endeavor-mar-profundo/",
+   "preço de referência"
+  ],
+  [
+   "Cangaia Jogos – Endeavor: Mar Profundo",
+   "https://www.cangaiajogos.com.br/endeavor-mar-profundo",
+   "preço de referência"
   ]
  ],
  "roteiro": {
@@ -263,5 +293,104 @@
   ],
   "veredito": "UM JOGO MÉDIO VERSÁTIL E BEM ACABADO."
  },
- "legenda": "Explore, pesquise e proteja o fundo do mar. 🐋\n\nEndeavor: Deep Sea venceu o Kennerspiel des Jahres 2025.\nÉ um jogo médio versátil e bem acabado, com mapa que muda a cada partida e três modos de jogo.\nO começo é lento, mas o prêmio foi merecido.\n\nVocê prefere jogar competitivo ou cooperativo?\n\nResenha completa no link da bio.\n\n#EndeavorDeepSea #Kennerspiel #JogosDeTabuleiro #BoardGames #Boardgamer #FundoDoMar #OceanGames #Tabuleiro #BoardGameReview #EliteBoardgamers"
+ "legenda": "Explore, pesquise e proteja o fundo do mar. 🐋\n\nEndeavor: Deep Sea venceu o Kennerspiel des Jahres 2025.\nÉ um jogo médio versátil e bem acabado, com mapa que muda a cada partida e três modos de jogo.\nO começo é lento, mas o prêmio foi merecido.\n\nVocê prefere jogar competitivo ou cooperativo?\n\nResenha completa no link da bio.\n\n#EndeavorDeepSea #Kennerspiel #JogosDeTabuleiro #BoardGames #Boardgamer #FundoDoMar #OceanGames #Tabuleiro #BoardGameReview #EliteBoardgamers",
+ "passos": [
+  [
+   "RECRUTE ESPECIALISTAS",
+   "No início de cada rodada, contrate especialistas em vida marinha e receba fichas de ação conforme suas trilhas."
+  ],
+  [
+   "ESCOLHA AS AÇÕES",
+   "Viaje, use o sonar, mergulhe, conserve ou publique. Cada ação custa fichas, e a ordem importa."
+  ],
+  [
+   "EXPLORE O OCEANO",
+   "O mapa é revelado aos poucos: o sonar e as viagens abrem novas áreas e espécies a cada partida."
+  ],
+  [
+   "ESTUDE E PROTEJA",
+   "Mergulhos e conservação rendem pontos e fazem as trilhas do seu instituto ficarem mais fortes."
+  ],
+  [
+   "CUMPRA A MISSÃO",
+   "Após seis rodadas, ou sete no solo, os pontos e a missão escolhida no início definem o resultado."
+  ]
+ ],
+ "como_resumo": "Lidere um instituto de oceanografia: explore, estude e proteja o fundo do mar em seis rodadas.",
+ "perfil": [
+  [
+   "Estratégia",
+   4
+  ],
+  [
+   "Versatilidade de modos",
+   5
+  ],
+  [
+   "Modo solo",
+   4
+  ],
+  [
+   "Tema",
+   4
+  ],
+  [
+   "Facilidade de ensinar",
+   3
+  ],
+  [
+   "Interação entre jogadores",
+   2
+  ]
+ ],
+ "experiencia": [
+  "A Board Game Quest descreve uma rodada típica: você recruta especialistas, recebe as fichas de ação e decide a ordem. Usar o sonar antes de viajar pode revelar a área que você quer explorar; mergulhar antes de publicar pode render o bônus que paga a próxima ação. Cada pequena vantagem vale na hora, então a sequência de ações vira um quebra-cabeça a cada rodada.",
+  "As primeiras rodadas são mais lentas, como relatam resenhas no BGG, porque o instituto ainda tem poucas ações fortes. No fim, as trilhas sobem e cada turno rende muito. A Board Game Quest deu nota máxima e diz que o jogo acerta em todos os níveis; a Meeple Mountain foi mais fria, com 3,5 de 5."
+ ],
+ "citacao": {
+  "texto": "Jogo excelente. Acerta em todos os níveis.",
+  "fonte": "Board Game Quest (tradução livre)"
+ },
+ "jogadores": [
+  [
+   "Sozinho",
+   "Usa as regras cooperativas com uma rodada a mais, e a Board Game Quest elogia as mesmas regras em todos os modos.",
+   3
+  ],
+  [
+   "2 ou 3 jogadores",
+   "Disputa equilibrada pelo mapa, com bom ritmo e menos espera entre os turnos.",
+   3
+  ],
+  [
+   "4 jogadores",
+   "Funciona, com mais competição pelas áreas do oceano e uma partida mais longa.",
+   2
+  ]
+ ],
+ "primeira_partida": "Separe cerca de duas horas e comece com uma das missões mais simples, no modo competitivo ou cooperativo. Explique o recrutamento e as fichas de ação com uma rodada de exemplo. O que mais confunde é a ordem das ações e os bônus imediatos: mostre que um bônus pode pagar a ação seguinte. Dica prática: deixe as condições lendárias para quando o grupo já conhecer o jogo.",
+ "edicao_nacional": "A Ludofun publica o jogo como Endeavor: Mar Profundo, em português. Em 27/10/2026, as lojas consultadas mostravam preços entre R$ 450 (no Pix) e R$ 650, com o jogo esgotado em algumas delas. Na Ludopedia, havia um exemplar usado em inglês por cerca de R$ 510.",
+ "preco_ref": {
+  "faixa": "R$ 450 a R$ 650",
+  "data": "27/10/2026",
+  "obs": "edição da Ludofun; estoque irregular"
+ },
+ "versoes": "A edição deluxe, lançada lá fora, leva o jogo a até cinco jogadores e traz componentes melhorados. A caixa base já tem 10 missões e três modos de jogo, competitivo, cooperativo e solo, o que dá bastante variedade sem expansão.",
+ "comparacoes": [
+  [
+   "Ark Nova",
+   "ark-nova",
+   "Também é sobre conservação de animais, mas bem mais pesado e longo, com um zoológico para montar e 212 cartas."
+  ],
+  [
+   "Wingspan",
+   "wingspan",
+   "Para quem gostou do tema de natureza e quer algo mais leve e bonito, com aves e um motor de cartas em cerca de uma hora."
+  ],
+  [
+   "Lost Ruins of Arnak",
+   "arnak",
+   "Outro jogo médio de exploração de um mapa desconhecido, com construção de baralho, guardiões a vencer e um templo perdido."
+  ]
+ ]
 }

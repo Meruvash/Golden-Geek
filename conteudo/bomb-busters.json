@@ -6,7 +6,7 @@
  "og_titulo": "Bomb Busters vale a pena? Resenha Elite Boardgamers",
  "descricao": "Resenha de Bomb Busters, vencedor do Spiel des Jahres 2025: como funciona, pontos fortes, pontos de atenção e para quem é.",
  "titulo_html": "Corte o fio certo antes que exploda: <span>Bomb Busters</span>",
- "lede": "Bomb Busters é um cooperativo de dedução em que a equipe precisa desarmar bombas cortando os fios certos, sem ver os fios dos colegas. Venceu o Spiel des Jahres em 2025, ficou em 3º no Deutscher Spiele Preis 2025 e em 3º no Golden Geek de Cooperativo 2024.",
+ "lede": "Bomb Busters é um cooperativo de dedução em que a equipe precisa desarmar bombas cortando os fios certos, sem ver os fios dos colegas. Venceu o Spiel des Jahres 2025, ficou em 3º no Deutscher Spiele Preis 2025 e em 3º no Golden Geek de Cooperativo 2024. Saiu no Brasil pela Galápagos em fevereiro de 2026, com 66 missões que ensinam o jogo aos poucos.",
  "tags": [
   "2–5 jogadores",
   "30 min",
@@ -59,7 +59,7 @@
   ],
   [
    "Editora no Brasil",
-   "Edição em português lançada em 2026 segundo o BGG; editora não confirmado nas fontes consultadas"
+   "Galápagos/Asmodee (fevereiro de 2026)"
   ],
   [
    "Jogadores",
@@ -96,62 +96,77 @@
  ],
  "nota_ficha": "Números do BoardGameGeek obtidos por busca em fontes secundárias; o ranking geral foi omitido.",
  "como_funciona": [
-  "Cada jogador recebe fios numerados e os coloca em ordem crescente à sua frente, virados para si: ninguém vê os fios dos outros.",
-  "Na sua vez, o mais comum é o corte duplo: você aponta um fio de outro jogador e diz o número que acha que ele tem, igual a um fio seu. Acertou, os dois fios são cortados; errou, o detonador avança e a equipe ganha uma informação.",
-  "A equipe vence quando corta todos os fios antes de o detonador chegar ao fim. São 66 missões que adicionam fios vermelhos, amarelos e regras novas aos poucos."
+  "Cada jogador recebe fios numerados de 1 a 12 e os coloca em ordem crescente num suporte à sua frente, virados para si: ninguém vê os fios dos outros. Cada número aparece em quatro fios espalhados pela mesa.",
+  "Na sua vez, a ação mais comum é o corte duplo: você aponta um fio de outro jogador e diz o número que acha que ele tem, igual a um fio da sua mão. Se acertar, os dois fios são revelados e cortados.",
+  "Se errar, o detonador avança uma casa e o dono do fio revela o número verdadeiro, o que dá informação nova para a equipe. Quando o detonador chega ao fim, a bomba explode e a missão falha e a equipe tenta de novo.",
+  "Também é possível fazer um corte solo, quando você tem todas as cópias restantes de um número, e cada jogador conta com um equipamento de uso único com uma habilidade especial. A comunicação é limitada: ninguém pode dizer quais fios tem.",
+  "A equipe vence quando todos os fios estiverem cortados antes de o detonador chegar ao fim. As 66 missões acrescentam fios vermelhos, que explodem a bomba se cortados, fios amarelos e regras novas, sempre explicadas na própria carta da missão."
  ],
  "funciona": [
   [
    "Dedução em equipe",
-   "Cada erro ainda revela informação para os outros, o que faz a mesa raciocinar junta, como descreve a Zatu."
+   "Cada corte revela informação: um acerto elimina números, um erro mostra o fio verdadeiro. A Zatu destaca como o jogo faz a mesa raciocinar junta, cruzando os números iniciais, as perguntas e os fios já revelados."
   ],
   [
    "Missões que ensinam aos poucos",
-   "A Zatu destaca que o sistema de cartas de missão nunca confunde, apresentando as regras gradualmente."
+   "Cada carta de missão traz uma história curta, a lista de preparação e a explicação de qualquer regra nova. A Zatu elogia esse sistema, que nunca confunde e apresenta as regras gradualmente ao longo das 66 missões."
   ],
   [
    "Muita rejogabilidade",
-   "São 66 missões e quase cinquenta fios, elogio comum às resenhas consultadas."
+   "São 66 missões e quase cinquenta fios, com fios vermelhos e amarelos entrando aos poucos. Mesmo repetindo uma missão, a distribuição dos fios muda, então a dedução nunca é igual."
   ],
   [
    "Leve e divertido",
-   "A Bell of Lost Souls descreve o jogo como leve e divertido para qualquer pessoa."
+   "A Bell of Lost Souls descreve o jogo como leve e divertido para qualquer pessoa, e a Zatu diz que não consegue recomendá-lo o suficiente para grupos que gostam de cooperação e dedução."
+  ],
+  [
+   "Tensão a cada corte",
+   "O detonador avança a cada erro e os fios vermelhos podem acabar com a missão num único corte, então cada decisão pesa. Desarmar a bomba no último fio é das vitórias mais comemoradas entre os cooperativos recentes."
   ]
  ],
  "atencao": [
   [
-   "Leve",
-   "Preparação trabalhosa",
-   "A Zatu observa que separar e distribuir os fios a cada missão toma algum tempo."
-  ],
-  [
    "Moderada",
    "Melhor com 4",
-   "A indicação de melhor número é 4 jogadores; com 2 a experiência muda."
+   "A indicação de melhor número é 4 jogadores, segundo as listagens consultadas; com 2 ou 5, a experiência muda. O jogo pede no mínimo duas pessoas e não tem modo solo."
+  ],
+  [
+   "Leve",
+   "Preparação trabalhosa",
+   "A Zatu observa que separar os fios e distribuir a quantidade certa de vermelhos e amarelos toma a maior parte do tempo de preparação. Como cada missão pede uma montagem diferente, a arrumação se repete toda partida."
+  ],
+  [
+   "Leve",
+   "Às vezes é preciso chutar",
+   "Nem sempre há dedução possível: a Zatu reconhece que, em alguns momentos, a equipe é obrigada a chutar. Um erro ainda revela informação, mas pode custar a missão nos níveis mais difíceis."
+  ],
+  [
+   "Leve",
+   "Não converte quem não gosta de dedução",
+   "A Zatu avisa que o jogo provavelmente não vai conquistar quem não gosta de dedução. É um quebra-cabeça de números do começo ao fim, sem tema que segure quem procura outra coisa."
   ],
   [
    "Leve",
    "Sem modo solo",
-   "O jogo depende de informação escondida entre jogadores."
-  ],
-  [
-   "Leve",
-   "Edição nacional recente",
-   "A edição em português só aparece no BGG em 2026; a editora não foi confirmada."
+   "O jogo depende de informação escondida entre jogadores, então não há como jogar sozinho nem simular os colegas com regras automáticas. Para quem joga muito a sós, não é uma opção."
   ]
  ],
  "para_quem": [
   "Gosta de cooperativos curtos",
   "Tem um grupo de 3 a 5 pessoas",
-  "Curte dedução e lógica"
+  "Curte dedução e lógica",
+  "Quer uma campanha de missões curtas",
+  "Gosta de comemorar vitórias em grupo"
  ],
  "nao_e_para": [
   "Quer jogar sozinho",
   "Não gosta de preparar componentes a cada partida",
-  "Prefere competição"
+  "Prefere competição",
+  "Não gosta de deduzir e calcular",
+  "Joga sempre a dois"
  ],
  "selo": "Recomendado",
- "veredito": "Bomb Busters transforma dedução em trabalho de equipe com uma tensão deliciosa a cada corte. As 66 missões ensinam aos poucos e dão muita rejogabilidade. A preparação dos fios é chata, mas é um dos cooperativos mais divertidos dos últimos anos.",
+ "veredito": "Bomb Busters transforma dedução em trabalho de equipe com uma tensão deliciosa a cada corte: acertar derruba dois fios, errar ainda revela informação, e o detonador lembra que cada decisão pesa. As 66 missões ensinam aos poucos e garantem muita rejogabilidade, como destaca a Zatu. A preparação dos fios é chata, às vezes é preciso chutar e quem não gosta de dedução não vai se convencer. Por cerca de R$ 300, na edição da Galápagos, é um dos cooperativos mais divertidos dos últimos anos.",
  "tagline": "Corte o fio certo. Juntos.",
  "consulta": "26/10/2026",
  "fontes": [
@@ -184,6 +199,21 @@
    "Bell of Lost Souls – Bomb Busters",
    "https://www.belloflostsouls.net/2026/01/be-extra-careful-which-wires-you-snip-with-bomb-busters.html",
    "tom do jogo"
+  ],
+  [
+   "Bravo Jogos – Bomb Busters",
+   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-bomb-busters-p",
+   "edição nacional, lançamento, preço"
+  ],
+  [
+   "Cangaia Jogos – Bomb Busters",
+   "https://www.cangaiajogos.com.br/bomb-busters",
+   "preço de referência"
+  ],
+  [
+   "Salta da Caixa – Caça Bombas",
+   "https://saltadacaixa.pt/products/bomb-busters-4250231739545",
+   "edição portuguesa"
   ]
  ],
  "roteiro": {
@@ -264,5 +294,109 @@
   ],
   "veredito": "UM DOS COOPERATIVOS MAIS DIVERTIDOS DOS ÚLTIMOS ANOS."
  },
- "legenda": "Corte o fio certo. Juntos. 💣\n\nBomb Busters venceu o Spiel des Jahres 2025.\nTransforma dedução em trabalho de equipe, com uma tensão deliciosa a cada corte.\nAs 66 missões ensinam o jogo aos poucos e rendem muitas partidas. A preparação dos fios é chata, mas vale.\n\nQuem do seu grupo cortaria o fio errado?\n\nResenha completa no link da bio.\n\n#BombBusters #SpielDesJahres #JogosCooperativos #CoopGames #JogosDeTabuleiro #BoardGames #Boardgamer #JogoEmFamilia #BoardGameReview #EliteBoardgamers"
+ "legenda": "Corte o fio certo. Juntos. 💣\n\nBomb Busters venceu o Spiel des Jahres 2025.\nTransforma dedução em trabalho de equipe, com uma tensão deliciosa a cada corte.\nAs 66 missões ensinam o jogo aos poucos e rendem muitas partidas. A preparação dos fios é chata, mas vale.\n\nQuem do seu grupo cortaria o fio errado?\n\nResenha completa no link da bio.\n\n#BombBusters #SpielDesJahres #JogosCooperativos #CoopGames #JogosDeTabuleiro #BoardGames #Boardgamer #JogoEmFamilia #BoardGameReview #EliteBoardgamers",
+ "passos": [
+  [
+   "ORGANIZE OS FIOS",
+   "Cada um coloca seus fios numerados em ordem crescente no suporte, virados para si, sem mostrar a ninguém."
+  ],
+  [
+   "FAÇA UM CORTE",
+   "Aponte um fio de outro jogador e diga o número que acha que ele tem, igual a um fio seu."
+  ],
+  [
+   "ACERTOU, CORTE",
+   "Os dois fios iguais são revelados e cortados, e a equipe ganha mais pistas sobre o que resta."
+  ],
+  [
+   "ERROU, APRENDA",
+   "O detonador avança e o fio errado é revelado, dando informação nova para a equipe toda."
+  ],
+  [
+   "DESARME A BOMBA",
+   "Corte todos os fios antes que o detonador chegue ao fim. Fios vermelhos explodem a bomba na hora."
+  ]
+ ],
+ "como_resumo": "Deduza os fios escondidos dos colegas e corte todos antes que o detonador chegue ao fim.",
+ "perfil": [
+  [
+   "Cooperação",
+   5
+  ],
+  [
+   "Dedução e lógica",
+   5
+  ],
+  [
+   "Partida curta",
+   5
+  ],
+  [
+   "Facilidade de ensinar",
+   4
+  ],
+  [
+   "Rejogabilidade",
+   4
+  ],
+  [
+   "Modo solo",
+   0
+  ]
+ ],
+ "experiencia": [
+  "Você tem dois fios 7 no seu suporte e sabe, por um corte anterior, que o jogador à sua esquerda tem um número entre 6 e 9 na terceira posição. Você aponta para ele e diz: sete. Se acertar, os dois 7 caem e a mesa respira; se errar, o detonador avança, mas o fio revelado mostra um 8, e agora todos sabem um pouco mais sobre a mão dele.",
+  "A Zatu descreve Bomb Busters como uma ótima experiência cooperativa, que incentiva trabalho em equipe, planejamento e dedução. As primeiras sessões são lentas, enquanto o grupo aprende onde cortar, e às vezes, sem dedução possível, é preciso chutar. Depois disso, a mesa não quer parar de jogar a próxima missão, que dura cerca de meia hora."
+ ],
+ "citacao": {
+  "texto": "Uma ótima experiência cooperativa que incentiva trabalho em equipe, planejamento e dedução.",
+  "fonte": "Zatu (tradução livre)"
+ },
+ "jogadores": [
+  [
+   "2 jogadores",
+   "Funciona, mas a experiência muda; não é o formato mais indicado pelas fontes.",
+   1
+  ],
+  [
+   "3 jogadores",
+   "Boa dedução em equipe, com cada um responsável por uma parte dos fios.",
+   2
+  ],
+  [
+   "4 jogadores",
+   "O número indicado como ideal nas listagens consultadas, com a dedução mais equilibrada.",
+   3
+  ],
+  [
+   "5 jogadores",
+   "Funciona, com mais fontes de informação e mais discussão a cada corte.",
+   2
+  ]
+ ],
+ "primeira_partida": "Comece pela missão 1 e siga a ordem: as primeiras missões são um tutorial e acrescentam regras aos poucos, explicadas na própria carta. Explique o corte duplo com um exemplo e lembre que ninguém pode dizer quais fios tem. A Zatu avisa que as primeiras sessões são lentas. Dica prática: separe os fios por cor e número antes de chamar o grupo.",
+ "edicao_nacional": "A Galápagos lançou Bomb Busters em português em fevereiro de 2026. Em 27/10/2026, as lojas consultadas vendiam o jogo entre R$ 279 (no Pix) e R$ 330, com estoque na maioria delas. Em Portugal, a Devir publica o jogo como Caça Bombas.",
+ "preco_ref": {
+  "faixa": "R$ 279 a R$ 330",
+  "data": "27/10/2026",
+  "obs": "edição da Galápagos"
+ },
+ "versoes": "A caixa já traz 66 missões, com fios vermelhos e amarelos e regras que entram aos poucos, então há conteúdo para muitas sessões. Em Portugal, o jogo saiu pela Devir como Caça Bombas; não encontramos expansões em português nas fontes consultadas.",
+ "comparacoes": [
+  [
+   "The Crew",
+   "the-crew",
+   "Outro cooperativo de cartas com informação escondida e campanha de missões, com vazas no lugar dos fios e ainda mais silêncio."
+  ],
+  [
+   "Codenames",
+   "codenames",
+   "Também é dedução em grupo e discussão, mas competitivo e com palavras, para quem quer rir mais e calcular menos."
+  ],
+  [
+   "The Mind",
+   "the-mind",
+   "Para grupos que gostam de cooperar com cartas numeradas, mas querem algo ainda mais simples, sem deduzir, só sentindo o tempo."
+  ]
+ ]
 }
