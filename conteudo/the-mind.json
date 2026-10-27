@@ -6,7 +6,7 @@
  "og_titulo": "The Mind vale a pena? Resenha Elite Boardgamers",
  "descricao": "Resenha de The Mind, vencedor do As d'Or 2019: como funciona, pontos fortes, pontos de atenção e para quem é.",
  "titulo_html": "Cartas de 1 a 100 e nenhuma palavra: <span>The Mind</span>",
- "lede": "The Mind é um jogo cooperativo em que o grupo precisa baixar cartas em ordem crescente sem conversar. Venceu o As d'Or em 2019, os Golden Geek de Cartas, Cooperativo e Festa em 2018 e foi indicado ao Spiel des Jahres.",
+ "lede": "The Mind é um jogo cooperativo em que o grupo precisa baixar cartas de 1 a 100 em ordem crescente sem conversar, só sentindo o tempo dos outros. Venceu o As d'Or 2019 e os Golden Geek de Cartas, Cooperativo e Festa em 2018, além de ter sido indicado ao Spiel des Jahres. Tem edição da Galápagos, custa pouco e divide opiniões como poucos jogos.",
  "tags": [
   "2–4 jogadores",
   "20 min",
@@ -123,62 +123,77 @@
  ],
  "nota_ficha": "Nota e peso do BGG obtidos por busca em fontes secundárias, com variação entre elas.",
  "como_funciona": [
-  "O baralho tem cartas de 1 a 100. No nível 1, cada jogador recebe uma carta; no nível 2, duas; e assim por diante.",
-  "O grupo precisa baixar todas as cartas na mesa em ordem crescente, sem falar, sem fazer sinais e sem turnos: cada um joga quando sente que é a sua hora. Se alguém baixa uma carta e outra pessoa tinha uma menor, o grupo perde uma vida.",
-  "Estrelas ninja permitem, com voto silencioso de todos, descartar a menor carta de cada mão. Vence quem passar por todos os níveis: 12 com 2 jogadores, 10 com 3 e 8 com 4."
+  "O baralho tem cartas numeradas de 1 a 100. A partida é dividida em níveis: no nível 1, cada jogador recebe uma carta; no nível 2, duas; no nível 3, três; e assim por diante, cada vez mais difícil.",
+  "O grupo precisa baixar todas as cartas na mesa, numa pilha única, em ordem crescente. Não há turnos: cada um joga quando sente que chegou a hora da sua carta. E não pode haver nenhuma comunicação, nem palavras, nem sinais, nem olhares combinados entre os jogadores.",
+  "Se alguém baixa uma carta e outra pessoa tinha uma menor na mão, o grupo perde uma vida, descarta as cartas menores e segue o nível. O grupo começa com um número de vidas igual ao número de jogadores.",
+  "Estrelas ninja ajudam nos momentos difíceis: se todos concordarem, levantando a mão em silêncio, cada um descarta a carta mais baixa da mão, revelando informação ao grupo. Alguns níveis dão vidas ou estrelas extras como recompensa.",
+  "O grupo vence ao completar todos os níveis: 12 com 2 jogadores, 10 com 3 e 8 com 4. Se as vidas acabarem antes, a partida termina, e dá para recomeçar na hora, já que cada tentativa leva poucos minutos."
  ],
  "funciona": [
   [
    "Explica-se em um minuto",
-   "Cartas em ordem crescente, sem falar: é a regra inteira, e funciona com qualquer pessoa."
+   "Cartas em ordem crescente, sem falar: é a regra inteira, e funciona com qualquer pessoa. Não há símbolos, turnos ou contas, então o jogo entra na mesa em qualquer encontro, até com quem nunca jogou nada além de baralho."
   ],
   [
    "Sensação única",
-   "Quando o grupo entra em sintonia e acerta uma sequência longa no silêncio, a mesa explode; é o que fez o jogo ganhar três Golden Geek."
+   "Quando o grupo entra em sintonia e acerta uma sequência longa no silêncio, a mesa explode. A Dicebreaker chama o jogo de uma das experiências mais divertidas e únicas dos últimos anos, e foi essa sensação que rendeu três Golden Geek."
+  ],
+  [
+   "Simplicidade engenhosa",
+   "Para a Ars Technica, é um dos jogos mais engenhosamente simples que já viu, com jogabilidade tensa e comunicação limitada. Toda a tensão nasce do silêncio e de uma pilha de cartas numeradas."
   ],
   [
    "Rápido e barato",
-   "Partidas de cerca de 20 minutos numa caixa pequena de cartas."
+   "Partidas de cerca de 20 minutos numa caixa pequena de cartas, vendida entre R$ 57 e R$ 80 na edição da Galápagos. Cabe no bolso e vai para qualquer viagem ou encontro."
   ],
   [
    "Cooperativo de verdade",
-   "Ninguém ganha sozinho e ninguém consegue mandar no jogo dos outros."
+   "Ninguém ganha sozinho e ninguém consegue mandar no jogo dos outros, já que é proibido falar. Isso evita o problema comum dos cooperativos, em que o jogador mais experiente decide tudo pela mesa."
   ]
  ],
  "atencao": [
   [
    "Moderada",
    "Divide opiniões",
-   "Uma das resenhas consultadas resume que alguns grupos acham a ideia fascinante e outros se cansam depois da primeira derrota."
+   "A Tabletop Gaming o chamou de jogo mais polêmico do ano, que divide as pessoas, e a Meeple Like Us fez uma crítica claramente negativa. Uma das resenhas consultadas resume: alguns grupos acham fascinante, outros se cansam depois da primeira derrota."
+  ],
+  [
+   "Moderada",
+   "A mágica passa",
+   "A Roll to Review elogia a novidade da primeira partida, mas diz que a mágica diminui quando o grupo entende o truque de contar o tempo mentalmente. Depois disso, o jogo vira mais execução do que descoberta."
   ],
   [
    "Moderada",
    "Pouca estratégia",
-   "Não há decisões no sentido tradicional: a habilidade é sentir o ritmo do grupo."
+   "Não há decisões no sentido tradicional: a habilidade é sentir o ritmo do grupo e esperar o momento certo. Quem gosta de planejar e calcular jogadas não vai encontrar isso aqui."
   ],
   [
    "Leve",
    "Depende do grupo",
-   "Exige que todos respeitem o silêncio; uma pessoa que dá dicas estraga a experiência."
+   "Exige que todos respeitem o silêncio; uma pessoa que dá dicas, suspira ou faz caretas estraga a experiência de todos. Grupos barulhentos ou competitivos demais costumam não se adaptar à proposta."
   ],
   [
    "Leve",
    "Sem modo solo",
-   "É um jogo de sintonia entre pessoas, então não há como jogar sozinho."
+   "É um jogo de sintonia entre pessoas, então não há como jogar sozinho. A caixa pede de dois a quatro jogadores, e com dois a jornada é a mais longa, com doze níveis."
   ]
  ],
  "para_quem": [
   "Quer algo curto e diferente para abrir a noite",
   "Joga com pessoas que não costumam jogar",
-  "Gosta de cooperativos"
+  "Gosta de cooperativos",
+  "Gosta de experiências diferentes",
+  "Quer um jogo barato e portátil"
  ],
  "nao_e_para": [
   "Quer decisões estratégicas",
   "Se frustra com derrotas rápidas",
-  "Joga em grupos barulhentos"
+  "Joga em grupos barulhentos",
+  "Quer um jogo para várias horas",
+  "Joga sozinho"
  ],
  "selo": "Recomendado para público específico",
- "veredito": "The Mind é mais uma experiência do que um jogo tradicional: uma regra só e uma sensação de sintonia que nenhum outro jogo entrega. Para alguns grupos é mágico, para outros cansa rápido; vale testar antes de comprar.",
+ "veredito": "The Mind é mais uma experiência do que um jogo tradicional: uma regra só, cartas de 1 a 100 e uma sensação de sintonia que nenhum outro jogo entrega quando o grupo acerta uma sequência longa em silêncio. É barato, rápido e funciona com qualquer pessoa. Mas divide opiniões como poucos: há pouca estratégia, a mágica diminui quando o grupo entende o truque e grupos barulhentos não se adaptam. Por menos de R$ 80, vale testar com o seu grupo antes de decidir se é mágico ou cansativo.",
  "tagline": "Silêncio, sintonia e cartas de 1 a 100.",
  "consulta": "26/10/2026",
  "fontes": [
@@ -211,6 +226,26 @@
    "Chris Wray – The Mind review (BGG)",
    "https://boardgamegeek.com/thread/1949857/the-mind-game-review-by-chris-wray",
    "crítica geral"
+  ],
+  [
+   "Tabletop Gaming – The Mind review",
+   "https://tabletopgaming.co.uk/reviews/the-mind-review",
+   "jogo que divide opiniões"
+  ],
+  [
+   "Roll to Review – The Mind",
+   "https://rolltoreview.com/the-mind-card-game-review/",
+   "a mágica passa"
+  ],
+  [
+   "Meeple Like Us – The Mind",
+   "https://www.meeplelikeus.co.uk/the-mind-2018/",
+   "crítica negativa"
+  ],
+  [
+   "Place Games – The Mind",
+   "https://www.placegames.com.br/the-mind",
+   "preço de referência"
   ]
  ],
  "roteiro": {
@@ -291,5 +326,104 @@
   ],
   "veredito": "UMA EXPERIÊNCIA QUE NENHUM OUTRO JOGO ENTREGA."
  },
- "legenda": "Cartas de 1 a 100, em ordem… sem dizer uma única palavra. 🤫\n\nUma regra só e uma sensação de sintonia que nenhum outro jogo entrega.\nVencedor do As d'Or 2019 e de três Golden Geek em 2018.\nDivide opiniões: para alguns grupos é mágico, para outros cansa rápido.\nVeredito: RECOMENDADO PARA PÚBLICO ESPECÍFICO.\n\nSeu grupo tem sintonia para passar do nível 8?\nResenha completa no link da bio.\n\n#TheMind #JogosDeCartas #Cooperativo #JogosDeTabuleiro #BoardGames #Galapagos #CardGames #GoldenGeek #EliteBoardgamers #BoardGameNight"
+ "legenda": "Cartas de 1 a 100, em ordem… sem dizer uma única palavra. 🤫\n\nUma regra só e uma sensação de sintonia que nenhum outro jogo entrega.\nVencedor do As d'Or 2019 e de três Golden Geek em 2018.\nDivide opiniões: para alguns grupos é mágico, para outros cansa rápido.\nVeredito: RECOMENDADO PARA PÚBLICO ESPECÍFICO.\n\nSeu grupo tem sintonia para passar do nível 8?\nResenha completa no link da bio.\n\n#TheMind #JogosDeCartas #Cooperativo #JogosDeTabuleiro #BoardGames #Galapagos #CardGames #GoldenGeek #EliteBoardgamers #BoardGameNight",
+ "passos": [
+  [
+   "RECEBA AS CARTAS",
+   "No nível 1, cada um recebe uma carta de 1 a 100; a cada nível, todos recebem uma carta a mais."
+  ],
+  [
+   "FIQUE EM SILÊNCIO",
+   "Ninguém pode falar, fazer sinais ou combinar nada. Cada um só sente o ritmo dos outros jogadores."
+  ],
+  [
+   "BAIXE EM ORDEM",
+   "Sem turnos, cada um baixa sua carta quando acha que é a hora, formando uma pilha em ordem crescente."
+  ],
+  [
+   "PERCA UMA VIDA",
+   "Se alguém tinha uma carta menor que a última baixada, o grupo perde uma vida e o nível continua."
+  ],
+  [
+   "USE AS ESTRELAS",
+   "Com acordo silencioso de todos, uma estrela ninja faz cada um descartar a menor carta da mão."
+  ]
+ ],
+ "como_resumo": "Cartas de 1 a 100 em ordem crescente, sem falar: só a sintonia do grupo guia a mesa.",
+ "perfil": [
+  [
+   "Facilidade de ensinar",
+   5
+  ],
+  [
+   "Partida curta",
+   5
+  ],
+  [
+   "Cooperação",
+   5
+  ],
+  [
+   "Sensação de sintonia",
+   5
+  ],
+  [
+   "Profundidade estratégica",
+   1
+  ],
+  [
+   "Modo solo",
+   0
+  ]
+ ],
+ "experiencia": [
+  "No nível 3, você tem o 41, o 58 e o 90 na mão. O silêncio pesa: alguém baixa o 12, outro o 19 depois de uma pausa longa. Você espera, conta mentalmente, sente que o 41 está perto e solta a carta. Ninguém reclama. Mais tarde, segurando o 90, você aguarda até ser o último, e quando a pilha fecha sem erro a mesa inteira comemora.",
+  "Essa sensação de sintonia é o que fez o jogo ganhar três Golden Geek, mas não acontece com todo grupo. Uma das resenhas consultadas resume: alguns acham a ideia fascinante e querem jogar de novo na hora; outros se cansam depois da primeira derrota e não veem graça em esperar em silêncio. Cada tentativa leva poucos minutos."
+ ],
+ "citacao": {
+  "texto": "Uma das experiências de jogo de tabuleiro mais divertidas e únicas dos últimos anos.",
+  "fonte": "Dicebreaker, via Wikipedia (tradução livre)"
+ },
+ "jogadores": [
+  [
+   "2 jogadores",
+   "Doze níveis para vencer e uma sintonia mais fácil de construir entre duas pessoas.",
+   2
+  ],
+  [
+   "3 jogadores",
+   "Dez níveis, com mais imprevisibilidade a cada carta baixada na mesa.",
+   2
+  ],
+  [
+   "4 jogadores",
+   "Oito níveis e a experiência mais intensa; uma das fontes considera esse o melhor número.",
+   3
+  ]
+ ],
+ "primeira_partida": "Explique em um minuto e comece no nível 1 sem pressa: a primeira rodada serve para o grupo perceber que esperar também é jogar. O que mais confunde é a estrela ninja: lembre que ela só é usada se todos levantarem a mão juntos. Dica prática: antes de cada nível, todos colocam a mão na mesa para se concentrar, como sugere a regra, e só então começam.",
+ "edicao_nacional": "A Galápagos publica The Mind em português, sem mudanças no conteúdo. Em 27/10/2026, as lojas consultadas vendiam o jogo entre R$ 57 e R$ 80, com algumas ofertas mais caras em marketplaces, perto de R$ 130. É um dos premiados mais baratos da nossa pauta.",
+ "preco_ref": {
+  "faixa": "R$ 57 a R$ 80",
+  "data": "27/10/2026",
+  "obs": "edição da Galápagos"
+ },
+ "versoes": "The Mind Extreme, do mesmo autor, acrescenta duas pilhas, uma em ordem crescente e outra decrescente, e cartas jogadas viradas para baixo, deixando o desafio mais difícil. Não a encontramos em português nas lojas consultadas.",
+ "comparacoes": [
+  [
+   "The Crew",
+   "the-crew",
+   "Outro cooperativo de cartas com comunicação limitada, mas com mais decisões: vazas, tarefas e uma campanha de 50 missões curtas."
+  ],
+  [
+   "Sky Team",
+   "sky-team",
+   "Para duplas que gostam da sintonia silenciosa: cada dado colocado no painel do avião é um recado ao parceiro, em voos de 15 minutos."
+  ],
+  [
+   "Flip 7",
+   "flip-7",
+   "Também é rápido e com cartas numeradas, mas competitivo e de arriscar a sorte, com muito barulho e gritaria à mesa."
+  ]
+ ]
 }
