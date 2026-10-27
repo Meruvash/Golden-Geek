@@ -47,3 +47,5 @@ Prefira foto sem texto por cima. Se faltar algum tipo, deixe sem; não force uma
 `python3 tools/imagens/robo.py aprovar <slug> capa=1 mesa=11 jogabilidade=13,8 componentes=15`
 
 Salva `<slug>/fotos/<tipo>-N.webp` (até 1600 px, ≤ 400 KB) e atualiza `fontes.json`. Um tipo já aprovado não é trocado sem `--forcar`. Faça commit de `<slug>/fotos/` (nunca de `.cache/`).
+
+Depois de aprovar, marque no `fontes.json` `"pessoas": true` nas fotos em que aparecem pessoas ou mãos (elas não vão para a página) e, se a melhor foto para o topo não for a mesa, `"principal": true` nela. O uso das fotos na página está em `PADRAO_EDITORIAL.md` (Fotos oficiais na página).

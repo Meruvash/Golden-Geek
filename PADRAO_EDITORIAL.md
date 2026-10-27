@@ -71,3 +71,15 @@ Regras de texto:
 3. **Atribuição natural.** "Para a Tabletop Gaming, …" e não "A IGN, citada pela Wikipedia, elogia…".
 4. **Exemplo concreto** em Como é jogar e em pelo menos dois pontos fortes ou de atenção.
 5. **Sem frase genérica** ("muito divertido", "arte marcante", "tema fino") sem dizer o quê e por quê.
+
+## Fotos oficiais na página
+
+Quando a resenha tem fotos aprovadas em `<slug>/fotos/fontes.json` (skill `imagens`), `build_review.py` monta a página assim (modelo aprovado com Terraforming Mars):
+
+- **Topo:** uma foto oficial do jogo no lugar do infográfico. Vale a foto marcada com `"principal": true`; sem marca, a ordem é mesa, componentes, jogabilidade, caixa.
+- **Como é jogar:** a próxima foto disponível (componentes, jogabilidade ou mesa), logo depois da citação.
+- **Edição nacional e preço:** a caixa (`capa`), pequena, ao lado do texto.
+- **Infográfico:** desce para o meio, na seção "Infográfico para o Instagram" depois de Prós e contras, com os botões Salvar na galeria e Legenda.
+- Toda foto leva o crédito da editora embaixo ("Imagem: …").
+- **Sem pessoas:** foto em que aparecem pessoas ou mãos leva `"pessoas": true` no `fontes.json` e não entra na página.
+- A miniatura da lista de resenhas e do link compartilhado (`capa.jpg`) continua sendo o recorte do infográfico.
