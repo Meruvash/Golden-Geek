@@ -107,12 +107,15 @@ FOTO_DESC = {"mesa": "mesa montada vista de cima", "componentes": "cartas e comp
 
 
 def fotos_do_jogo(slug):
-    """Fotos oficiais aprovadas em <slug>/fotos/fontes.json, sem as que mostram pessoas, por tipo."""
+    """Fotos oficiais aprovadas em <slug>/fotos/fontes.json, sem as que mostram pessoas, por tipo.
+
+    Só valem quando o fontes.json tem "usar_na_pagina": true, para nenhuma página mudar antes da revisão das fotos."""
     p = ROOT / slug / "fotos" / "fontes.json"
-    if not p.exists():
+    d = json.loads(p.read_text(encoding="utf-8")) if p.exists() else {}
+    if not d.get("usar_na_pagina"):
         return {}
     fotos = {}
-    for f in json.loads(p.read_text(encoding="utf-8"))["fotos"]:
+    for f in d["fotos"]:
         if f.get("aprovada") and not f.get("pessoas"):
             fotos.setdefault(f["tipo"], f)
     return fotos

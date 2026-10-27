@@ -48,4 +48,4 @@ Prefira foto sem texto por cima. Se faltar algum tipo, deixe sem; não force uma
 
 Salva `<slug>/fotos/<tipo>-N.webp` (até 1600 px, ≤ 400 KB) e atualiza `fontes.json`. Um tipo já aprovado não é trocado sem `--forcar`. Faça commit de `<slug>/fotos/` (nunca de `.cache/`).
 
-Depois de aprovar, marque no `fontes.json` `"pessoas": true` nas fotos em que aparecem pessoas ou mãos (elas não vão para a página) e, se a melhor foto para o topo não for a mesa, `"principal": true` nela. O uso das fotos na página está em `PADRAO_EDITORIAL.md` (Fotos oficiais na página).
+Depois de aprovar, marque no `fontes.json` `"pessoas": true` nas fotos em que aparecem pessoas ou mãos (elas não vão para a página) e, se a melhor foto para o topo não for a mesa, `"principal": true` nela. Por último, depois que a revisão aprovar o conjunto, ponha `"usar_na_pagina": true` no `fontes.json`; sem isso a página continua com o infográfico no topo. O uso das fotos na página está em `PADRAO_EDITORIAL.md` (Fotos oficiais na página).
