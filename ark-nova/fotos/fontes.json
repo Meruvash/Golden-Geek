@@ -1,5 +1,6 @@
 {
  "slug": "ark-nova",
+ "usar_na_pagina": true,
  "fotos": [
   {
    "arquivo": "fotos/capa-1.webp",
@@ -23,7 +24,8 @@
    "pagina": "https://www.feuerland-spiele.de/spielwelten/arche-nova/",
    "imagem": "https://www.feuerland-spiele.de/fileadmin/_processed_/2/b/csm_1000131013.2_8155b465dd.png",
    "baixada_em": "2026-10-27",
-   "aprovada": true
+   "aprovada": true,
+   "principal": true
   },
   {
    "arquivo": "fotos/mesa-2.webp",
@@ -35,7 +37,8 @@
    "pagina": "https://www.feuerland-spiele.de/spielwelten/arche-nova/",
    "imagem": "https://www.feuerland-spiele.de/fileadmin/_processed_/c/4/csm_1000131013.1_747b6456d0.png",
    "baixada_em": "2026-10-27",
-   "aprovada": true
+   "aprovada": true,
+   "jogar": true
   }
  ]
 }

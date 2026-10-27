@@ -125,7 +125,7 @@ def fotos_do_jogo(slug):
         return {}
     fotos = {}
     for f in d["fotos"]:
-        if f.get("aprovada") and not f.get("pessoas"):
+        if f.get("aprovada") and not f.get("pessoas") and not f.get("fora"):
             # "jogar": true reserva a foto para Como é jogar, mesmo que já haja outra do mesmo tipo.
             fotos.setdefault("jogar" if f.get("jogar") else f["tipo"], f)
     return fotos

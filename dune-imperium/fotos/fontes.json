@@ -1,5 +1,6 @@
 {
  "slug": "dune-imperium",
+ "usar_na_pagina": true,
  "fotos": [
   {
    "arquivo": "fotos/componentes-1.webp",
@@ -11,7 +12,8 @@
    "pagina": "https://direwolfdigital.com/dune-imperium/",
    "imagem": "https://d19y2ttatozxjp.cloudfront.net/assets/dune/DuneImperium_ComponentsRender.webp",
    "baixada_em": "2026-10-27",
-   "aprovada": true
+   "aprovada": true,
+   "principal": true
   }
  ]
 }
