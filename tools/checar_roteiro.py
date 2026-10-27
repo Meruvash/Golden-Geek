@@ -93,8 +93,18 @@ def checar_texto(c):
                 erros.append(f"texto · {bloco} {i}: título genérico ({it[pos - 1]!r})")
     jog = c.get("jogadores") or []
     faixa("jogadores", len(jog), 2, 5, "itens")
-    for i, (_, x) in enumerate(jog, 1):
-        faixa(f"jogadores {i}", palavras(x), 10, 45)
+    for i, it in enumerate(jog, 1):
+        faixa(f"jogadores {i}", palavras(it[1]), 10, 45)
+        if len(it) != 3 or it[2] not in (1, 2, 3):
+            erros.append(f"texto · jogadores {i}: falta o nível (3 ótimo, 2 bom, 1 fraco)")
+    cit = c.get("citacao") or {}
+    if not (cit.get("texto") and cit.get("fonte")):
+        erros.append("texto · citacao: precisa de {texto, fonte}")
+    pr = c.get("preco_ref") or {}
+    if not (pr.get("faixa") and pr.get("data")):
+        erros.append("texto · preco_ref: precisa de {faixa, data}")
+    if len((c.get("roteiro") or {}).get("perfil") or []) != 6:
+        erros.append("texto · roteiro.perfil: 6 barras [critério, nota 0 a 5] (aparecem no site)")
     faixa("primeira_partida", palavras(c.get("primeira_partida", "")), 50, 120)
     faixa("edicao_nacional", palavras(c.get("edicao_nacional", "")), 40, 100)
     faixa("versoes", palavras(c.get("versoes", "")), 30, 100)

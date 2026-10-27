@@ -49,14 +49,18 @@ A página é a resenha completa: precisa ensinar o jogo, mostrar como é jogar, 
 | `experiencia` | Como é jogar | 2 a 3 parágrafos, 120 a 220 palavras: ritmo, decisões típicas e um exemplo concreto de jogada. |
 | `funciona` | O que funciona muito bem | 5 a 7 itens `[título, texto]`, texto de 30 a 70 palavras com o porquê; opinião sempre atribuída ("Para a Board Game Quest, …"). |
 | `atencao` | Pontos de atenção | 5 a 7 itens `[gravidade, título, texto]`, mesma regra. |
-| `jogadores` | Com quantos jogar | 2 a 5 itens `[número de jogadores, texto]`, 10 a 45 palavras cada. |
+| `jogadores` | Com quantos jogar | 2 a 5 itens `[número de jogadores, texto, nível]`, 10 a 45 palavras; nível 3 = ótimo, 2 = bom, 1 = fraco (vira os pontinhos da página). |
 | `primeira_partida` | Primeira partida | 50 a 120 palavras: tempo de explicação, o que confunde e uma dica prática. |
 | `edicao_nacional` | Edição nacional e preço | 40 a 100 palavras: editora, idioma, preço de referência com data e disponibilidade (ou a falta de edição nacional). |
 | `versoes` | Expansões e versões | 30 a 100 palavras: expansões, versão digital, versões de entrada. |
 | `comparacoes` | Se você gosta de… | 2 a 3 itens `[jogo, slug ou null, texto]`, 20 a 50 palavras; o slug liga para a nossa resenha. |
 | `para_quem` / `nao_e_para` | É para você se… | 4 a 5 itens cada. |
 | `veredito` | Veredito | 80 a 140 palavras: o que entrega, o que pesa, para quem é e se vale o preço. |
+| `citacao` | destaque em Como é jogar | `{texto, fonte}`: uma frase curta de crítica especializada que resume a experiência ("tradução livre" quando traduzida). |
+| `preco_ref` | resumo e cartão de preço | `{faixa, data, obs}`: faixa de preço das lojas consultadas, data da consulta e observação (estoque, importado, sem edição nacional). |
 | `fontes` | Fontes | pelo menos 6, com link. |
+
+Layout (gerado por `build_review.py` quando a resenha tem `experiencia`): resumo de 30 segundos no topo, passos numerados (vêm do `roteiro.passos`), faixa escura com a citação, prós e contras em cartões que abrem com um toque, barras de perfil (`roteiro.perfil`), blocos de número de jogadores, dica de primeira partida, cartão de preço, comparações com capa, e no celular ficha, prêmios, versões e fontes começam fechados.
 
 Regras de texto:
 

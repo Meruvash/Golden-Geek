@@ -28,6 +28,9 @@ ICONES = {
     "nao": '<path d="M6 6l12 12M18 6L6 18"/>',
     "salvar": '<rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="9" cy="9" r="1.8"/><path d="M21 15.5l-5-5L5 21"/>',
     "copiar": '<rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h8"/>',
+    "dica": '<path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3Z"/>',
+    "preco": '<path d="M3 12V4h8l10 10-8 8L3 12Z"/><circle cx="7.5" cy="8.5" r="1.5"/>',
+    "topo": '<path d="M12 19V5M5 12l7-7 7 7"/>',
     "compartilhar": '<circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="M8.2 10.8l7.6-4.4M8.2 13.2l7.6 4.4"/>',
 }
 
@@ -60,6 +63,135 @@ def faixa_nota(n):
 def selo_class(selo):
     s = selo.lower()
     return "nao" if s.startswith("não") else ("publico" if "específico" in s else "sim")
+
+
+NIVEIS = {3: "Ótimo", 2: "Bom", 1: "Fraco"}
+
+
+def primeira_frase(t):
+    m = re.match(r"(.+?[.!?])(\s|$)", t)
+    return (m.group(1), t[m.end():].strip()) if m else (t, "")
+
+
+def layout_v2(c, premios_bloco, ficha_html, fontes):
+    """Página do padrão editorial v2: resumo no topo, formatos visuais por seção e 'Ler mais' para o que é longo."""
+    r = c.get("roteiro", {})
+    pf = lambda t: f'<li>{icone("ok", "ic ok")}<span>{e(t)}</span></li>'
+    pn = lambda t: f'<li>{icone("nao", "ic no")}<span>{e(t)}</span></li>'
+    peso = numero(campo(c["ficha"], "peso bgg"))
+    preco = c.get("preco_ref") or {}
+    medidor = (
+        f'<div class="medidor"><span class="m-k">Peso BGG</span><span class="m-bar" role="img" aria-label="Peso {peso:.1f} de 5">'
+        f'<i style="width:{peso / 5 * 100:.0f}%"></i></span><b>{f"{peso:.1f}".replace(".", ",")}/5</b></div>' if peso else ""
+    )
+    vit = [a for a in c["premiacoes"] if a["resultado"] == "vencedor"]
+    premio_txt = (
+        f'<p class="r30-premio"><span class="med" aria-hidden="true"></span><span><b>{len(vit)} vitória{"s" if len(vit) != 1 else ""} em prêmios</b>, '
+        f'incluindo {e(vit[0]["premio"])} {vit[0]["ano"]} · {e(vit[0]["categoria"])}</span></p>' if vit else ""
+    )
+    resumo = f"""<section class="bloco r30" id="resumo">
+   <p class="kick">Resumo em 30 segundos</p>
+   <div class="r30-top"><span class="selo {selo_class(c["selo"])}">{e(c["selo"])}</span><p>{e(c["tagline"])}</p></div>
+   <div class="r30-grid">
+    <div><h3>Destaques</h3><ul class="mini">{"".join(pf(t) for t, _ in c["funciona"][:3])}</ul></div>
+    <div><h3>Atenção</h3><ul class="mini">{"".join(pn(t) for _, t, _ in c["atencao"][:3])}</ul></div>
+   </div>
+   <div class="r30-pe">{medidor}{f'<div class="r30-preco">{icone("preco")}<span><b>{e(preco["faixa"])}</b> em {e(preco["data"])}</span></div>' if preco else ""}</div>
+   {premio_txt}
+   <p class="r30-quem"><b>Para quem:</b> {e("; ".join(x[0].lower() + x[1:] for x in c["para_quem"][:2]))}.</p>
+  </section>"""
+    passos = "".join(
+        f'<li><span class="n">{i}</span><div><h3>{e(t.capitalize())}</h3><p>{e(x)}</p></div></li>'
+        for i, (t, x) in enumerate(r.get("passos", []), 1)
+    )
+    como = f"""<section class="bloco claro" id="como-funciona"><h2>Como funciona</h2>
+   {f'<p class="sub">{e(r["como_resumo"])}</p>' if r.get("como_resumo") else ""}
+   <ol class="passos">{passos}</ol>
+   <details class="mais"><summary>Ler as regras completas</summary><div class="leitura">{"".join(f"<p>{e(x)}</p>" for x in c["como_funciona"])}</div></details>
+  </section>"""
+    cit = c.get("citacao")
+    jogar = f"""<section class="bloco faixa" id="como-e-jogar"><h2>Como é jogar</h2>
+   {f'<blockquote class="cit"><p>“{e(cit["texto"])}”</p><cite>{e(cit["fonte"])}</cite></blockquote>' if cit else ""}
+   <div class="leitura"><p>{e(c["experiencia"][0])}</p></div>
+   {f'<details class="mais"><summary>Continuar lendo</summary><div class="leitura">{"".join(f"<p>{e(x)}</p>" for x in c["experiencia"][1:])}</div></details>' if len(c["experiencia"]) > 1 else ""}
+  </section>"""
+
+    def cartao(classe, ic, titulo, texto, sev=""):
+        # Acordeão: o título já diz o ponto; o porquê abre com um toque.
+        return (f'<li class="pcc {classe}">{icone(ic, "ic " + classe)}<details><summary><h3>{e(titulo)}{sev}</h3><span class="lm">Por quê?</span></summary>'
+                f"<p>{e(texto)}</p></details></li>")
+    pros = "".join(cartao("ok", "ok", t, x) for t, x in c["funciona"])
+    contras = "".join(cartao("no", "nao", t, x, f' <span class="sev {sev_class(sv)}">{e(sv)}</span>') for sv, t, x in c["atencao"])
+    pc = f"""<section class="bloco claro pc2" id="pros-contras">
+   <div><h2>O que funciona muito bem</h2><ul>{pros}</ul></div>
+   <div><h2>Pontos de atenção</h2><ul>{contras}</ul></div>
+  </section>"""
+    barras = "".join(
+        f'<li><span>{e(k)}</span><span class="bar" role="img" aria-label="{n} de 5"><i style="width:{n * 20}%"></i></span><b>{n}</b></li>'
+        for k, n in r.get("perfil", [])
+    )
+    tiles = "".join(
+        f'<li><span class="tn">{e(nj)}</span><span class="pontos" role="img" aria-label="{NIVEIS[nv]}">'
+        + "".join(f'<i class="{"on" if k < nv else ""}"></i>' for k in range(3))
+        + f'</span><b class="nv">{NIVEIS[nv]}</b><p>{e(x)}</p></li>'
+        for nj, x, nv in c.get("jogadores", [])
+    )
+    quem = f"""<section class="bloco claro" id="para-quem"><h2>Para quem é</h2>
+   {f'<h3 class="h3s">Perfil do jogo</h3><ul class="barras">{barras}</ul>' if barras else ""}
+   {f'<h3 class="h3s">Com quantos jogar</h3><ul class="tiles">{tiles}</ul><ul class="tiles-txt">{"".join(f"<li><b>{e(nj)}:</b> {e(x)}</li>" for nj, x, _ in c.get("jogadores", []))}</ul>' if tiles else ""}
+   <div class="quem quem2">
+    <div><h3 class="h3s">É para você se…</h3><ul>{"".join(f"<li>{e(x)}</li>" for x in c["para_quem"])}</ul></div>
+    <div class="nao"><h3 class="h3s">Pense duas vezes se…</h3><ul>{"".join(f"<li>{e(x)}</li>" for x in c["nao_e_para"])}</ul></div>
+   </div>
+   {f'<details class="dica"><summary>{icone("dica")}<b>Dica para a primeira partida</b></summary><p>{e(c["primeira_partida"])}</p></details>' if c.get("primeira_partida") else ""}
+  </section>"""
+    edicao = f"""<section class="bloco claro duo" id="edicao">
+   <div class="preco-card"><h2>Edição nacional e preço</h2>
+    {f'<p class="faixa-preco">{e(preco["faixa"])}</p><p class="preco-meta">Lojas consultadas em {e(preco["data"])}{" · " + e(preco["obs"]) if preco.get("obs") else ""}</p>' if preco else ""}
+    <p>{e(c.get("edicao_nacional", ""))}</p></div>
+   <details class="mais dobra" open><summary><h2>Expansões e versões</h2></summary><p>{e(c.get("versoes", ""))}</p></details>
+  </section>"""
+    cards = "".join(
+        f'<li><a class="cc" href="../{sl}/"><img src="../{sl}/capa.jpg" width="800" height="800" alt="" loading="lazy"><span><b>{e(j)}</b><span>{e(x)}</span><span class="vr">Ler a resenha →</span></span></a></li>'
+        if sl else f'<li><div class="cc"><span class="cc-ph" aria-hidden="true">{e(j[0])}</span><span><b>{e(j)}</b><span>{e(x)}</span></span></div></li>'
+        for j, sl, x in c.get("comparacoes", [])
+    )
+    compara = f'<section class="bloco claro" id="compare"><h2>Se você gosta de {e(c["jogo"])}…</h2><ul class="cards">{cards}</ul></section>' if cards else ""
+    veredito = f"""<section class="bloco fecho" id="veredito">
+   <h2>Veredito Elite Boardgamers</h2>
+   <span class="selo {selo_class(c["selo"])}">{e(c["selo"])}</span>
+   <p>{e(c["veredito"])}</p>
+   <p class="tagline">{e(c["tagline"])}</p>
+  </section>"""
+    comunidade = f"""<section class="bloco comunidade"><h2>Gostou da resenha?</h2><p>A Elite Boardgamers publica resenhas de jogos premiados todos os dias. Entre no grupo para conversar sobre jogos e siga no Instagram.</p><div class="acoes"><a class="zap" href="{WHATSAPP}" target="_blank" rel="noopener">{icone("zap", "ic zi")}<span><b>Entrar no grupo do WhatsApp</b></span></a><a class="ig-btn" href="{INSTAGRAM}" target="_blank" rel="noopener">{icone("insta")}<span>Seguir @eliteboardgamers</span></a></div></section>"""
+    fontes_bloco = f'<section class="bloco claro fontes" id="fontes"><details class="mais"><summary><h2>Fontes ({len(c["fontes"])})</h2></summary><ul>{fontes}</ul><p class="note">Consulta às fontes em {e(c["consulta"])}.</p></details></section>'
+    abas = "".join(
+        f'<li><a href="#{i}">{t}</a></li>'
+        for i, t in (("resumo", "Resumo"), ("como-funciona", "Como funciona"), ("como-e-jogar", "Como é jogar"), ("pros-contras", "Prós e contras"),
+                     ("para-quem", "Para quem é"), ("edicao", "Preço"), ("veredito", "Veredito"), ("ficha", "Ficha"))
+    )
+    premios_bloco = re.sub(r'<h2>Prêmios</h2><p class="resumo">(.*?)</p>', r'<details class="mais dobra" open><summary><h2>Prêmios</h2> <span class="resumo">\1</span></summary>', premios_bloco).replace("</ul></section>", "</ul></details></section>")
+    main = f"""<main id="conteudo" class="v2" style="--acc:{e(c.get("cor", "#e3b23c"))}">
+ <div class="col">
+  {resumo}
+  {como}
+  {jogar}
+  {pc}
+  {quem}
+  {edicao}
+  {compara}
+  {veredito}
+  {comunidade}
+  {fontes_bloco}
+ </div>
+ <aside>
+  {premios_bloco}
+  <section class="bloco claro" id="ficha"><details class="mais dobra" open><summary><h2>Ficha técnica</h2></summary><dl>{ficha_html}</dl><p class="note">{e(c["nota_ficha"])}</p></details></section>
+ </aside>
+</main>
+<div class="progresso" aria-hidden="true"><i></i></div>
+<a class="topo" href="#" aria-label="Voltar ao topo">{icone("topo")}</a>"""
+    return abas, main
 
 
 def build(c):
@@ -117,7 +249,7 @@ def build(c):
         + "".join(f"<p>{e(x)}</p>" for x in c["experiencia"]) + "</div></section>"
         if c.get("experiencia") else ""
     )
-    jogadores = "".join(f"<li><b>{e(n)}</b> {e(x)}</li>" for n, x in c.get("jogadores", []))
+    jogadores = "".join(f"<li><b>{e(n)}</b> {e(x)}</li>" for n, x, *_ in c.get("jogadores", []))
     partida_bloco = (
         '<section class="bloco claro duo" id="jogadores">'
         + (f'<div><h2>Com quantos jogar</h2><ul class="lista">{jogadores}</ul></div>' if jogadores else "")
@@ -158,6 +290,40 @@ def build(c):
         f'<p class="leg-dica">Não colou? Toque em “Compartilhar legenda” e escolha “Copiar”, ou segure o dedo no texto acima.</p></div>'
         if leg else ""
     )
+    abas_antigas = f""" <li><a href="#como-funciona">Como funciona</a></li>{abas_extra}<li><a href="#pros-contras">Prós e contras</a></li><li><a href="#para-quem">Para quem é</a></li><li><a href="#veredito">Veredito</a></li><li><a href="#ficha">Ficha</a></li>{'<li><a href="#premios">Prêmios</a></li>' if c["premiacoes"] else ""}<li><a href="#fontes">Fontes</a></li>"""
+    main_antigo = f"""<main id="conteudo">
+ <div class="col">
+  <section class="bloco claro" id="como-funciona"><h2>Como funciona</h2><div class="leitura">{como}{serie}</div></section>
+  {experiencia}
+  <section class="bloco claro pc" id="pros-contras">
+   <div><h2>O que funciona muito bem</h2><ul>{funciona}</ul></div>
+   <div><h2>Pontos de atenção</h2><ul>{atencao}</ul></div>
+  </section>
+  {partida_bloco}
+  <section class="bloco claro quem" id="para-quem">
+   <div><h2>É para você se…</h2><ul>{sim}</ul></div>
+   <div class="nao"><h2>Pense duas vezes se…</h2><ul>{nao}</ul></div>
+  </section>
+  {edicao_bloco}
+  {comparacoes_bloco}
+  <section class="bloco fecho" id="veredito">
+   <h2>Veredito Elite Boardgamers</h2>
+   <span class="selo {selo_class(c["selo"])}">{e(c["selo"])}</span>
+   <p>{e(c["veredito"])}</p>
+   <p class="tagline">{e(c["tagline"])}</p>
+  </section>
+  <section class="bloco comunidade"><h2>Gostou da resenha?</h2><p>A Elite Boardgamers publica resenhas de jogos premiados todos os dias. Entre no grupo para conversar sobre jogos e siga no Instagram.</p><div class="acoes"><a class="zap" href="{WHATSAPP}" target="_blank" rel="noopener">{icone("zap", "ic zi")}<span><b>Entrar no grupo do WhatsApp</b></span></a><a class="ig-btn" href="{INSTAGRAM}" target="_blank" rel="noopener">{icone("insta")}<span>Seguir @eliteboardgamers</span></a></div></section>
+  <section class="bloco claro fontes" id="fontes"><h2>Fontes</h2><ul>{fontes}</ul><p class="note">Consulta às fontes em {e(c["consulta"])}.</p></section>
+ </div>
+ <aside>
+  {premios_bloco}
+  <section class="bloco claro" id="ficha"><h2>Ficha técnica</h2><dl>{ficha_html}</dl><p class="note">{e(c["nota_ficha"])}</p></section>
+ </aside>
+</main>"""
+    if c.get("experiencia"):
+        abas_html, main_html = layout_v2(c, premios_bloco, ficha_html, fontes)
+    else:
+        abas_html, main_html = abas_antigas, main_antigo
     return f"""<!doctype html>
 <html lang="pt-BR">
 <head>
@@ -284,6 +450,68 @@ footer{{background:var(--bar);color:var(--bar-ink);font-size:.88rem;border-top:1
 .leg-acoes{{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}}
 .legenda .post-btn{{background:#14171c;color:#fff;border-color:#14171c}}
 .leg-dica{{font-size:.8rem;color:#5a6270;margin-top:8px}}
+/* layout v2 */
+.v2>.col,.v2 .bloco{{min-width:0}}
+.v2 .kick{{font-size:.75rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--gold)}}
+.r30{{background:#101318;border:1px solid #3a3f48;border-left:4px solid var(--acc);display:grid;gap:14px}}
+.r30-top{{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px}}.r30-top p{{font-weight:700;font-size:1.05rem}}
+.r30-grid{{display:grid;gap:14px}}.r30 h3{{font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:6px}}
+.mini li{{display:flex;gap:8px;align-items:flex-start;margin:5px 0;font-weight:600;font-size:.95rem}}.mini .ic{{width:18px;height:18px;flex:none;margin-top:3px}}
+.r30-pe{{display:flex;flex-wrap:wrap;gap:10px 22px;align-items:center}}
+.medidor{{display:flex;align-items:center;gap:8px}}.m-k{{font-size:.8rem;color:var(--muted)}}
+.m-bar,.bar{{display:block;height:8px;border-radius:99px;background:#2a2f38;overflow:hidden}}.m-bar{{width:110px}}
+.m-bar i,.bar i{{display:block;height:100%;border-radius:inherit;background:var(--acc)}}
+.r30-preco{{display:flex;align-items:center;gap:8px;font-size:.92rem}}.r30-preco .ic{{color:var(--gold)}}
+.r30-quem{{font-size:.92rem;color:#c9cfd8}}
+.r30-premio{{display:flex;gap:8px;align-items:flex-start;font-size:.92rem;color:#c9cfd8}}.r30-premio b{{color:#fff}}
+.med{{flex:none;width:16px;height:16px;margin-top:3px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#f7d77a,var(--gold) 60%,#b9871d)}}
+.sub{{color:#3a414c;font-weight:600;margin:-4px 0 14px}}
+.passos{{list-style:none;padding:0;margin:0;display:grid;gap:0;counter-reset:p}}
+.passos li{{display:grid;grid-template-columns:40px 1fr;gap:12px;position:relative;padding-bottom:16px}}
+.passos li:not(:last-child)::before{{content:"";position:absolute;left:19px;top:40px;bottom:0;width:2px;background:#dde1e7}}
+.passos .n{{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:var(--acc);color:#fff;font-weight:800;font-size:1.1rem}}
+.passos h3{{font-size:1rem;font-weight:800;margin-top:8px}}.passos p{{font-size:.95rem}}
+details.mais{{margin-top:6px;border-top:1px solid #dde1e7;padding-top:10px}}
+details.mais summary{{cursor:pointer;font-weight:700;color:#1f5fae;list-style:none}}details.mais summary::-webkit-details-marker{{display:none}}
+details.mais summary::after{{content:" ▾"}}details.mais[open] summary::after{{content:" ▴"}}details.mais[open] .leitura{{margin-top:10px}}
+.fontes details.mais{{border:0;margin:0;padding:0}}.fontes summary h2{{display:inline;margin:0}}
+.faixa{{background:#0b0d10;border:1px solid #262a32;border-left:4px solid var(--acc)}}.faixa .leitura p{{color:#c9cfd8}}
+.cit{{margin:0 0 16px;padding:0}}.cit p{{font-size:clamp(1.4rem,4.5vw,1.9rem);line-height:1.2;font-weight:800;color:#fff;letter-spacing:-.01em}}
+.cit cite{{display:block;margin-top:6px;font-style:normal;font-size:.85rem;color:var(--gold)}}
+.pc2{{display:grid;gap:20px}}.pc2 ul{{display:grid;gap:10px}}
+.pcc{{display:grid;grid-template-columns:auto 1fr;gap:10px;padding:12px;border-radius:8px;background:#fff;border-left:4px solid #1b7a45;box-shadow:0 1px 2px rgba(0,0,0,.06)}}
+.pcc.no{{border-left-color:#b3263e}}.pcc h3{{font-size:1rem;font-weight:700}}.pcc p{{font-size:.93rem;color:#3a414c;margin-top:2px}}
+.pcc summary{{cursor:pointer;list-style:none}}.pcc summary::-webkit-details-marker{{display:none}}
+.pcc summary{{display:grid;grid-template-columns:1fr auto;align-items:start;gap:10px}}
+.pcc .lm{{font-size:.82rem;font-weight:700;color:#1f5fae;white-space:nowrap;margin-top:2px}}.pcc .lm::after{{content:" ▾"}}.pcc details[open] .lm::after{{content:" ▴"}}.pcc details p{{margin-top:6px}}
+.h3s{{font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;color:#5a6270;margin:18px 0 10px}}#para-quem h2+.h3s{{margin-top:0}}
+.barras li{{display:grid;grid-template-columns:minmax(120px,40%) 1fr 22px;gap:10px;align-items:center;margin:7px 0;font-size:.93rem}}
+.barras .bar{{background:#e3e6eb}}.barras b{{text-align:right;font-variant-numeric:tabular-nums}}
+.tiles{{display:grid;gap:10px}}.tiles li{{background:#fff;border:1px solid #dde1e7;border-radius:8px;padding:12px}}
+.tn{{font-weight:800;font-size:1.05rem}}.pontos{{display:inline-flex;gap:4px;margin-left:8px;vertical-align:1px}}
+.pontos i{{width:10px;height:10px;border-radius:50%;background:#dde1e7}}.pontos i.on{{background:var(--acc)}}
+.nv{{margin-left:6px;font-size:.82rem;color:#5a6270}}.tiles p{{font-size:.9rem;color:#3a414c;margin-top:4px}}
+.quem2{{margin-top:4px}}
+.dica{{margin-top:18px;padding:12px 14px;border-radius:8px;background:#fff8e6;border-left:4px solid var(--gold)}}
+.dica summary{{display:flex;align-items:center;gap:10px;cursor:pointer;list-style:none}}.dica summary::-webkit-details-marker{{display:none}}
+.dica summary::after{{content:"▾";margin-left:auto;color:#8a5200}}.dica[open] summary::after{{content:"▴"}}
+.dica .ic{{color:#8a5200;flex:none}}.dica p{{font-size:.93rem;color:#3a414c;margin-top:8px}}
+details.dobra{{border:0;margin:0;padding:0}}details.dobra summary{{color:inherit}}details.dobra summary::after{{color:#5a6270}}.dobra summary h2{{display:inline;margin:0}}.dobra summary .resumo{{display:block;margin:4px 0 0}}.dobra[open] summary{{margin-bottom:12px}}
+.preco-card .faixa-preco{{font-size:1.6rem;font-weight:800;letter-spacing:-.01em;color:#14171c;font-variant-numeric:tabular-nums}}
+.preco-meta{{font-size:.82rem;color:#5a6270;margin:0 0 8px}}
+.cards{{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:6px;margin:0 -4px}}.cards li{{flex:0 0 84%;scroll-snap-align:start;padding:0 4px}}.cards .cc{{height:100%}}.cc{{display:grid;grid-template-columns:72px 1fr;gap:12px;align-items:start;text-decoration:none;color:inherit;padding:10px;border-radius:8px;background:#fff;border:1px solid #dde1e7}}
+a.cc:hover{{border-color:var(--acc)}}.cc img,.cc-ph{{width:72px;height:72px;border-radius:6px;object-fit:cover}}
+.cc-ph{{display:grid;place-items:center;background:#14171c;color:var(--gold);font-weight:800;font-size:1.6rem}}
+.cc b{{display:block}}.cc span span{{display:block;font-size:.9rem;color:#3a414c}}.cc .vr{{color:#1f5fae;font-weight:700;margin-top:4px}}
+.v2 .fecho{{border-color:var(--acc);box-shadow:inset 4px 0 0 var(--acc)}}
+.progresso{{position:fixed;top:0;left:0;right:0;height:3px;z-index:20;pointer-events:none}}.progresso i{{display:block;height:100%;width:0;background:var(--gold)}}
+.topo{{position:fixed;right:14px;bottom:14px;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:#14171c;color:#fff;border:1px solid #3a3f48;opacity:0;pointer-events:none;transition:opacity .2s ease;z-index:20}}
+.topo.on{{opacity:1;pointer-events:auto}}
+.tiles{{grid-template-columns:repeat(3,1fr)}}.tiles li{{padding:10px 8px;text-align:center}}.tiles .pontos{{display:flex;justify-content:center;margin:6px 0 2px}}.tiles .nv{{display:block;margin:0}}.tiles p{{display:none}}
+.tiles-txt{{margin-top:10px}}.tiles-txt li{{font-size:.9rem;color:#3a414c;margin:6px 0}}
+@media (min-width:860px){{.r30-grid,.pc2{{grid-template-columns:1fr 1fr}}.cards{{display:grid;overflow:visible}}.cards li{{padding:0}}}}
+@media (max-width:859px){{.v2 #premios{{order:0}}}}
+@media (prefers-reduced-motion:reduce){{.topo{{transition:none}}}}
 footer .in{{max-width:1120px;margin:0 auto;padding:18px 16px;display:flex;flex-wrap:wrap;gap:10px 20px}}
 footer a{{color:var(--bar-ink)}}
 @media (min-width:860px){{
@@ -327,39 +555,11 @@ footer a{{color:var(--bar-ink)}}
  </div>
 </div>
 <nav class="abas" aria-label="Seções da resenha"><ul>
- <li><a href="#como-funciona">Como funciona</a></li>{abas_extra}<li><a href="#pros-contras">Prós e contras</a></li><li><a href="#para-quem">Para quem é</a></li><li><a href="#veredito">Veredito</a></li><li><a href="#ficha">Ficha</a></li>{'<li><a href="#premios">Prêmios</a></li>' if c["premiacoes"] else ""}<li><a href="#fontes">Fontes</a></li>
+{abas_html}
 </ul></nav>
 </section>
 
-<main id="conteudo">
- <div class="col">
-  <section class="bloco claro" id="como-funciona"><h2>Como funciona</h2><div class="leitura">{como}{serie}</div></section>
-  {experiencia}
-  <section class="bloco claro pc" id="pros-contras">
-   <div><h2>O que funciona muito bem</h2><ul>{funciona}</ul></div>
-   <div><h2>Pontos de atenção</h2><ul>{atencao}</ul></div>
-  </section>
-  {partida_bloco}
-  <section class="bloco claro quem" id="para-quem">
-   <div><h2>É para você se…</h2><ul>{sim}</ul></div>
-   <div class="nao"><h2>Pense duas vezes se…</h2><ul>{nao}</ul></div>
-  </section>
-  {edicao_bloco}
-  {comparacoes_bloco}
-  <section class="bloco fecho" id="veredito">
-   <h2>Veredito Elite Boardgamers</h2>
-   <span class="selo {selo_class(c["selo"])}">{e(c["selo"])}</span>
-   <p>{e(c["veredito"])}</p>
-   <p class="tagline">{e(c["tagline"])}</p>
-  </section>
-  <section class="bloco comunidade"><h2>Gostou da resenha?</h2><p>A Elite Boardgamers publica resenhas de jogos premiados todos os dias. Entre no grupo para conversar sobre jogos e siga no Instagram.</p><div class="acoes"><a class="zap" href="{WHATSAPP}" target="_blank" rel="noopener">{icone("zap", "ic zi")}<span><b>Entrar no grupo do WhatsApp</b></span></a><a class="ig-btn" href="{INSTAGRAM}" target="_blank" rel="noopener">{icone("insta")}<span>Seguir @eliteboardgamers</span></a></div></section>
-  <section class="bloco claro fontes" id="fontes"><h2>Fontes</h2><ul>{fontes}</ul><p class="note">Consulta às fontes em {e(c["consulta"])}.</p></section>
- </div>
- <aside>
-  {premios_bloco}
-  <section class="bloco claro" id="ficha"><h2>Ficha técnica</h2><dl>{ficha_html}</dl><p class="note">{e(c["nota_ficha"])}</p></section>
- </aside>
-</main>
+{main_html}
 
 <footer><div class="in">
  <span>Elite Boardgamers</span>
@@ -369,6 +569,19 @@ footer a{{color:var(--bar-ink)}}
  <a href="{WHATSAPP}" target="_blank" rel="noopener">Grupo do WhatsApp</a>
 </div></footer>
 <script>
+(() => {{
+  // No celular, ficha, prêmios e versões começam fechados; no computador ficam abertos.
+  if (innerWidth < 860) document.querySelectorAll("details.dobra").forEach(d => d.removeAttribute("open"));
+  const barra = document.querySelector(".progresso i"), topo = document.querySelector(".topo");
+  if (barra) {{
+    const atualiza = () => {{
+      const h = document.documentElement.scrollHeight - innerHeight;
+      barra.style.width = (h > 0 ? scrollY / h * 100 : 0) + "%";
+      topo.classList.toggle("on", scrollY > innerHeight * 1.5);
+    }};
+    addEventListener("scroll", atualiza, {{ passive: true }}); atualiza();
+  }}
+}})();
 (() => {{
   const img = document.querySelector(".capa img"), st = document.getElementById("salvar-st"), nome = "{slug}-elite-boardgamers.jpg";
   let arquivo = null;

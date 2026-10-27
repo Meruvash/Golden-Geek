@@ -450,15 +450,18 @@
  "jogadores": [
   [
    "Sozinho",
-   "Funciona muito bem: o jogador controla dois ou mais heróis, e o jogo levou o Golden Geek de melhor solo em 2017."
+   "Funciona muito bem: o jogador controla dois ou mais heróis, e o jogo levou o Golden Geek de melhor solo em 2017.",
+   3
   ],
   [
    "2 jogadores",
-   "Cada pessoa controla um herói; os cenários colocam menos monstros, e a partida fica mais curta e fácil de coordenar."
+   "Cada pessoa controla um herói; os cenários colocam menos monstros, e a partida fica mais curta e fácil de coordenar.",
+   2
   ],
   [
    "3 ou 4 jogadores",
-   "O formato mais completo: mais combinações de classes e mais conversa sobre planos, com mais espera entre um turno e outro."
+   "O formato mais completo: mais combinações de classes e mais conversa sobre planos, com mais espera entre um turno e outro.",
+   3
   ]
  ],
  "primeira_partida": "Separe uma sessão inteira para a primeira partida: entre ler as regras, montar o primeiro cenário e jogar, o tempo passa fácil da duração anunciada. Os pontos que mais confundem são a iniciativa, o movimento dos monstros e a hora de descansar. Dica prática: comece pelo cenário 1 com as classes iniciais e, enquanto o grupo aprende, jogue com as mãos abertas na mesa. Quem quer uma entrada mais gradual pode começar por Presas do Leão.",
@@ -480,5 +483,14 @@
    "arnak",
    "Para quem gosta de exploração e de fazer o baralho do personagem render, mas quer partidas de uma noite, sem campanha e com bem menos preparação."
   ]
- ]
+ ],
+ "citacao": {
+  "texto": "Um RPG numa caixa.",
+  "fonte": "Tabletop Gaming (tradução livre)"
+ },
+ "preco_ref": {
+  "faixa": "R$ 1.128 a R$ 1.350",
+  "data": "27/10/2026",
+  "obs": "várias lojas sem estoque"
+ }
 }
