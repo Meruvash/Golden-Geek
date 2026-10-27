@@ -123,7 +123,7 @@ def build(c):
 <style>
 @font-face{{font-family:"Public Sans";src:url(../fontes/public-sans.woff2) format("woff2");font-weight:400 800;font-style:normal;font-display:swap}}
 @font-face{{font-family:"Public Sans";src:url(../fontes/public-sans-italic.woff2) format("woff2");font-weight:400;font-style:italic;font-display:swap}}
-:root{{color-scheme:dark;--bar:#000;--bar-ink:#e9ecf1;--gold:#e3b23c;--ground:#000;--panel:#0f1115;--panel2:#171a20;--ink:#eceff3;--muted:#a1a9b5;--line:#262a32;--link:#8cb8ff;--ok:#1f9a57;--ok-ink:#5fd18f;--no:#c43a52;--no-ink:#ff8094;--warn:#b06a00;--warn-ink:#ffb547;--n9:#1d7d48;--n7:#2366a8;--n6:#6b4ea3;--n5:#b23a48}}
+:root{{color-scheme:dark;--bar:#000;--bar-ink:#e9ecf1;--gold:#e3b23c;--ground:#000;--panel:#0f1115;--panel2:#171a20;--ink:#eceff3;--muted:#a1a9b5;--line:#262a32;--link:#8cb8ff;--ok:#157a43;--ok-ink:#5fd18f;--no:#c43a52;--no-ink:#ff8094;--warn:#b06a00;--warn-ink:#ffb547;--n9:#1d7d48;--n7:#2366a8;--n6:#6b4ea3;--n5:#b23a48}}
 *{{box-sizing:border-box}}
 html{{-webkit-text-size-adjust:100%;scroll-padding-top:64px}}
 body{{margin:0;background:var(--ground);color:var(--ink);font:16px/1.6 "Public Sans",system-ui,sans-serif}}
@@ -178,7 +178,7 @@ h2{{font-size:1.3rem;font-weight:800;letter-spacing:-.01em;margin-bottom:12px}}
 .sev.moderada{{background:#2a1f0c;color:var(--warn-ink)}}.sev.grave{{background:#2b1117;color:var(--no-ink)}}
 .quem{{display:grid;gap:20px}}.quem li{{margin:6px 0;padding-left:16px;position:relative}}.quem li::before{{content:"";position:absolute;left:0;top:.65em;width:7px;height:7px;border-radius:50%;background:var(--ok)}}
 .quem .nao li::before{{background:var(--no)}}
-.fecho{{background:var(--panel2);color:var(--bar-ink);border:1px solid #3a3220;box-shadow:inset 0 3px 0 var(--gold)}}
+.fecho{{background:var(--panel2);color:var(--bar-ink);border:1px solid var(--gold)}}
 .fecho .selo{{margin-bottom:10px;display:inline-block}}.fecho p{{max-width:70ch}}
 .tagline{{font-size:1.25rem;font-weight:800;margin-top:12px;color:#fff}}
 .col,aside{{display:grid;gap:20px;align-content:start}}
@@ -192,14 +192,24 @@ dl div:first-child{{border-top:0}}dt{{color:var(--muted)}}dd.na{{color:var(--mut
 .pr-t b{{display:block;font-size:.93rem}}.pr-t span{{font-size:.82rem;color:var(--muted)}}
 .resumo{{font-size:.88rem;color:var(--muted);margin:-6px 0 8px}}
 .fontes li{{margin:6px 0;font-size:.93rem}}.fontes span{{color:var(--muted);font-size:.85rem}}
+/* blocos de leitura claros sobre a moldura preta */
+.bloco.claro{{background:#f4f5f7;color:#14171c;border-color:#f4f5f7}}
+.claro p,.claro .pc p{{color:#3a414c}}
+.claro dt,.claro .resumo,.claro .note,.claro .pr-t span,.claro.fontes span{{color:#5a6270}}
+.claro dl div,.claro .pr,.claro li{{border-color:#dde1e7}}
+.claro a{{color:#1f5fae}}
+.claro .ic.ok{{color:#1b7a45}}.claro .ic.no{{color:#b3263e}}
+.claro .sev{{background:#e6e9ee;color:#5a6270}}.claro .sev.moderada{{background:#fdf1dc;color:#8a5200}}.claro .sev.grave{{background:#fbe4e8;color:#a3223a}}
+.claro .pr-m{{border-color:#8a929e;color:#5a6270}}
+.claro.quem li::before,.claro .quem li::before{{background:#1b7a45}}.claro .nao li::before{{background:#b3263e}}
 footer{{background:var(--bar);color:var(--bar-ink);font-size:.88rem;border-top:1px solid var(--line)}}
 .bar .ig,.bar .zap-mini{{display:flex;align-items:center;gap:6px;padding:6px 10px;border-radius:6px}}
 .bar .ig{{margin-left:auto}}.bar .ig:hover{{color:var(--gold)}}
-.bar .zap-mini{{background:#1f9a57;color:#fff}}.bar .zap-mini:hover{{background:#23b065}}
+.bar .zap-mini{{background:#157a43;color:#fff}}.bar .zap-mini:hover{{background:#11683a}}
 .bar .todas{{margin-left:0}}
 @media (max-width:700px){{.bar .ig span,.bar .zap-mini span{{display:none}}.bar .todas{{padding:6px 10px}}}}
-.zap{{display:flex;align-items:center;gap:12px;margin-top:16px;padding:14px 18px;border-radius:10px;background:#1f9a57;color:#fff;text-decoration:none;transition:background-color .2s ease,transform .2s ease}}
-.zap:hover{{background:#23b065}}.zap:active{{transform:scale(.98)}}
+.zap{{display:flex;align-items:center;gap:12px;margin-top:16px;padding:14px 18px;border-radius:10px;background:#157a43;color:#fff;text-decoration:none;transition:background-color .2s ease,transform .2s ease}}
+.zap:hover{{background:#11683a}}.zap:active{{transform:scale(.98)}}
 .zap .zi{{width:30px;height:30px;flex:none}}.zap b{{display:block;font-size:1.05rem}}.zap small{{display:block;font-size:.85rem;opacity:.9}}
 .comunidade p{{max-width:62ch;color:#c9cfd8}}.comunidade .acoes{{display:flex;flex-wrap:wrap;gap:12px;align-items:center}}
 .ig-btn{{display:flex;align-items:center;gap:8px;margin-top:16px;padding:14px 18px;border-radius:10px;border:1px solid #3a3f48;color:var(--ink);text-decoration:none;font-weight:700}}
@@ -250,12 +260,12 @@ footer a{{color:var(--bar-ink)}}
 
 <main id="conteudo">
  <div class="col">
-  <section class="bloco" id="como-funciona"><h2>Como funciona</h2><div class="leitura">{como}{serie}</div></section>
-  <section class="bloco pc" id="pros-contras">
+  <section class="bloco claro" id="como-funciona"><h2>Como funciona</h2><div class="leitura">{como}{serie}</div></section>
+  <section class="bloco claro pc" id="pros-contras">
    <div><h2>O que funciona muito bem</h2><ul>{funciona}</ul></div>
    <div><h2>Pontos de atenção</h2><ul>{atencao}</ul></div>
   </section>
-  <section class="bloco quem" id="para-quem">
+  <section class="bloco claro quem" id="para-quem">
    <div><h2>É para você se…</h2><ul>{sim}</ul></div>
    <div class="nao"><h2>Pense duas vezes se…</h2><ul>{nao}</ul></div>
   </section>
@@ -266,11 +276,11 @@ footer a{{color:var(--bar-ink)}}
    <p class="tagline">{e(c["tagline"])}</p>
   </section>
   <section class="bloco comunidade"><h2>Gostou da resenha?</h2><p>A Elite Boardgamers publica resenhas de jogos premiados todos os dias. Entre no grupo para conversar sobre jogos e siga no Instagram.</p><div class="acoes"><a class="zap" href="{WHATSAPP}" target="_blank" rel="noopener">{icone("zap", "ic zi")}<span><b>Entrar no grupo do WhatsApp</b></span></a><a class="ig-btn" href="{INSTAGRAM}" target="_blank" rel="noopener">{icone("insta")}<span>Seguir @eliteboardgamers</span></a></div></section>
-  <section class="bloco fontes" id="fontes"><h2>Fontes</h2><ul>{fontes}</ul><p class="note">Consulta às fontes em {e(c["consulta"])}.</p></section>
+  <section class="bloco claro fontes" id="fontes"><h2>Fontes</h2><ul>{fontes}</ul><p class="note">Consulta às fontes em {e(c["consulta"])}.</p></section>
  </div>
  <aside>
-  <section class="bloco" id="premios"><h2>Prêmios</h2><p class="resumo">{vitorias} vitória{"s" if vitorias != 1 else ""} em {len(c["premiacoes"])} premiações da pauta</p><ul>{premios}</ul></section>
-  <section class="bloco" id="ficha"><h2>Ficha técnica</h2><dl>{ficha_html}</dl><p class="note">{e(c["nota_ficha"])}</p></section>
+  <section class="bloco claro" id="premios"><h2>Prêmios</h2><p class="resumo">{vitorias} vitória{"s" if vitorias != 1 else ""} em {len(c["premiacoes"])} premiações da pauta</p><ul>{premios}</ul></section>
+  <section class="bloco claro" id="ficha"><h2>Ficha técnica</h2><dl>{ficha_html}</dl><p class="note">{e(c["nota_ficha"])}</p></section>
  </aside>
 </main>
 

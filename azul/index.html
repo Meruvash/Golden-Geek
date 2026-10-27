@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Resenha Azul | Elite Boardgamers</title>
+<title>Azul: resenha | Elite Boardgamers</title>
 <meta name="description" content="Resenha de Azul, vencedor do Spiel des Jahres 2018: como funciona, pontos fortes, pontos de atenção e para quem é.">
 <meta property="og:title" content="Azul vale a pena? Resenha Elite Boardgamers">
 <meta property="og:description" content="Resenha de Azul, vencedor do Spiel des Jahres 2018: como funciona, pontos fortes, pontos de atenção e para quem é.">
@@ -12,139 +12,179 @@
 <meta property="og:image" content="https://meruvash.github.io/Golden-Geek/azul/capa.jpg">
 <meta property="og:image:width" content="800">
 <meta property="og:image:height" content="800">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<meta name="theme-color" content="#000000">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../fontes/public-sans.woff2" as="font" type="font/woff2" crossorigin>
 <style>
-:root{--bg:#0a0c11;--card:#121620;--card2:#171c28;--line:#252c3b;--ink:#e9ecf2;--muted:#9ba4b4;--gold:#f2c14e;--good:#4ade80;--bad:#f2555a;--a:#3fa7e0}
+@font-face{font-family:"Public Sans";src:url(../fontes/public-sans.woff2) format("woff2");font-weight:400 800;font-style:normal;font-display:swap}
+@font-face{font-family:"Public Sans";src:url(../fontes/public-sans-italic.woff2) format("woff2");font-weight:400;font-style:italic;font-display:swap}
+:root{color-scheme:dark;--bar:#000;--bar-ink:#e9ecf1;--gold:#e3b23c;--ground:#000;--panel:#0f1115;--panel2:#171a20;--ink:#eceff3;--muted:#a1a9b5;--line:#262a32;--link:#8cb8ff;--ok:#157a43;--ok-ink:#5fd18f;--no:#c43a52;--no-ink:#ff8094;--warn:#b06a00;--warn-ink:#ffb547;--n9:#1d7d48;--n7:#2366a8;--n6:#6b4ea3;--n5:#b23a48}
 *{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
-.wrap{max-width:860px;margin:0 auto;padding:0 16px 48px}
-a{color:var(--a)}
-h1,h2,h3,.disp{font-family:Oswald,Impact,"Arial Narrow",sans-serif;letter-spacing:.01em}
-h2{font-size:1.7rem;line-height:1.2;margin:48px 0 14px;text-transform:uppercase}
-h2 .k{color:var(--gold)}
-p{margin:0 0 14px}
-.top{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 0;font-size:.85rem;color:var(--muted)}
-.top a{color:var(--muted);text-decoration:none}
-.top a:hover{color:var(--ink)}
-.hero{padding:28px 0 8px}
-.eyebrow{font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
-.hero h1{font-size:clamp(2rem,6vw,3.1rem);line-height:1.05;margin:0 0 14px;text-transform:uppercase}
-.hero h1 span{color:var(--a)}
-.lede{font-size:1.1rem;color:#cdd3de;max-width:62ch}
-.tags{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 0}
-.tag{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:5px 12px;font-size:.84rem}
-.meta{margin-top:14px;font-size:.82rem;color:var(--muted)}
-figure{margin:28px 0 0}
-figure a{display:block;border-radius:14px;overflow:hidden;border:1px solid var(--line)}
-figure img{display:block;width:100%;height:auto}
-figcaption{font-size:.82rem;color:var(--muted);margin-top:8px;text-align:center}
-.awards{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
-.aw{display:grid;grid-template-columns:auto 1fr;column-gap:12px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px}
-.aw.win{border-color:rgba(242,193,78,.55);background:linear-gradient(180deg,rgba(242,193,78,.1),rgba(242,193,78,.02))}
-.aw-y{grid-row:span 3;font-family:Oswald,sans-serif;font-size:1.4rem;color:var(--muted);line-height:1.1}
-.aw.win .aw-y{color:var(--gold)}
-.aw-p{font-weight:700}
-.aw-c{font-size:.86rem;color:#cdd3de}
-.aw-r{font-size:.76rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
-.aw.win .aw-r{color:var(--gold)}
-.tablewrap{border:1px solid var(--line);border-radius:14px;background:var(--card);overflow:hidden}
-table{width:100%;border-collapse:collapse;font-size:.94rem}
-th,td{padding:11px 14px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
-tr:last-child th,tr:last-child td{border-bottom:0}
-th{width:38%;font-weight:600;color:var(--muted);font-size:.86rem}
-td.na{color:var(--muted);font-style:italic}
-.note{font-size:.84rem;color:var(--muted);margin-top:10px}
-.list{list-style:none;margin:0;padding:0;display:grid;gap:10px}
-.list li{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--c);border-radius:12px;padding:14px 16px}
-.list.good li{--c:var(--good)} .list.bad li{--c:var(--bad)}
-.list strong{display:block;font-size:1.02rem;margin-bottom:4px}
-.list p{margin:0;font-size:.93rem;color:#cdd3de}
-.sev{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;border-radius:999px;padding:2px 9px;margin-bottom:6px;border:1px solid}
-.sev.grave{color:#ff7a7e;border-color:rgba(242,85,90,.5);background:rgba(242,85,90,.12)}
-.sev.moderada{color:#f7b267;border-color:rgba(247,178,103,.5);background:rgba(247,178,103,.1)}
-.sev.leve{color:#a5b4c8;border-color:rgba(165,180,200,.4);background:rgba(165,180,200,.08)}
-h2.good{color:var(--good)} h2.bad{color:var(--bad)}
-.duo{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.box{background:var(--card);border:1px solid var(--line);border-top:3px solid var(--c);border-radius:14px;padding:16px}
-.box.yes{--c:var(--good)} .box.no{--c:var(--bad)}
-.box h3{margin:0 0 8px;font-size:1.1rem;text-transform:uppercase;color:var(--c)}
-.box ul{margin:0;padding-left:18px;color:#cdd3de;font-size:.94rem}
-.box li{margin-bottom:6px}
-.verdict{margin-top:48px;border:1px solid rgba(242,193,78,.45);background:linear-gradient(180deg,rgba(242,193,78,.1),rgba(242,193,78,.02));border-radius:16px;padding:22px}
-.verdict h2{margin:0 0 6px;color:var(--gold)}
-.badge{display:inline-block;font-weight:700;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase;background:var(--gold);color:#1b1503;border-radius:6px;padding:3px 10px;margin-bottom:14px}
-.tagline{font-family:Oswald,sans-serif;text-transform:uppercase;font-size:1.15rem;line-height:1.35;color:var(--gold);margin:18px 0 0;text-align:center}
-.sources{font-size:.88rem;color:var(--muted);padding-left:18px}
-.sources li{margin-bottom:6px}
-.sources a{color:#cdd3de}
-footer{margin-top:40px;padding-top:18px;border-top:1px solid var(--line);font-size:.84rem;color:var(--muted);display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
-footer a{color:var(--muted)}
-@media (max-width:700px){
- .awards,.duo{grid-template-columns:1fr}
- h2{font-size:1.45rem;margin-top:40px}
+html{-webkit-text-size-adjust:100%;scroll-padding-top:64px}
+body{margin:0;background:var(--ground);color:var(--ink);font:16px/1.6 "Public Sans",system-ui,sans-serif}
+h1,h2,h3,p,ul,dl,dd,figure{margin:0}
+ul{padding:0;list-style:none}
+img{display:block;max-width:100%;height:auto}
+a{color:var(--link);text-underline-offset:.18em}
+::selection{background:#e3b23c;color:#000}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px;border-radius:3px}
+.skip{position:absolute;left:-999px}.skip:focus{left:12px;top:8px;z-index:9;background:var(--gold);color:#000;padding:6px 10px}
+.bar{background:var(--bar);color:var(--bar-ink);border-bottom:1px solid var(--line)}
+.bar .in{max-width:1120px;margin:0 auto;padding:8px 16px;display:flex;align-items:center;gap:12px}
+.bar a{color:var(--bar-ink);text-decoration:none;font-weight:600;font-size:.95rem}
+.marca{display:flex;align-items:center;gap:10px}.marca img{width:84px;height:auto;border-radius:6px}
+.bar .todas{margin-left:auto;border:1px solid #3a3f48;border-radius:6px;padding:6px 12px}
+.bar .todas:hover{background:#1a1d22;border-color:var(--gold)}
+.jogo{background:var(--panel);border-bottom:1px solid var(--line)}
+.jogo .in{max-width:1120px;margin:0 auto;padding:20px 16px 0;display:grid;gap:20px}
+.capa a{display:block;border-radius:8px;overflow:hidden;box-shadow:0 8px 28px rgba(0,0,0,.6)}
+.capa figcaption{font-size:.82rem;color:var(--muted);margin-top:6px}
+.topo{display:grid;grid-template-columns:1fr auto;gap:4px 16px;align-items:start}
+h1{font-size:clamp(2rem,7vw,3.1rem);line-height:1.05;font-weight:800;letter-spacing:-.02em}
+.linha{grid-column:1;color:var(--muted);font-size:.95rem}
+.nota-box{grid-column:2;grid-row:1/span 2;display:grid;justify-items:center}
+.nota{width:64px;height:72px;display:grid;place-items:center;clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%);color:#fff;font-weight:800;font-size:1.45rem;font-variant-numeric:tabular-nums}
+.n9{background:var(--n9)}.n7{background:var(--n7)}.n6{background:var(--n6)}.n5{background:var(--n5)}
+.nota-k{font-size:.72rem;color:var(--muted);margin-top:2px}
+.veredito{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin-top:14px;padding:12px 14px;border-radius:8px;background:var(--panel2)}
+.selo{font-weight:800;font-size:.9rem;border-radius:999px;padding:3px 12px;color:#fff;background:var(--ok)}
+.selo.publico{background:var(--warn)}.selo.nao{background:var(--no)}
+.veredito p{font-weight:600}
+.lede{margin-top:14px;color:#c9cfd8;max-width:66ch}
+.regua{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;margin-top:16px;border:1px solid var(--line);border-radius:8px;background:var(--line);overflow:hidden}
+.regua li{display:grid;grid-template-columns:auto 1fr;column-gap:8px;padding:10px 12px;align-items:center;background:var(--panel)}
+.ic{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}
+.regua .ic{grid-row:span 2;color:var(--muted)}
+.r-v{font-weight:700;font-variant-numeric:tabular-nums;line-height:1.25}.r-k{font-size:.78rem;color:var(--muted)}
+.abas{position:sticky;top:0;z-index:5;background:var(--panel);border-bottom:1px solid var(--line)}
+.abas ul{max-width:1120px;margin:0 auto;padding:0 8px;display:flex;overflow-x:auto;scrollbar-width:none}
+.abas a{display:block;padding:12px 10px;white-space:nowrap;color:var(--ink);text-decoration:none;font-weight:600;font-size:.92rem;border-bottom:3px solid transparent}
+.abas a:hover{border-bottom-color:var(--gold)}
+main{max-width:1120px;margin:0 auto;padding:20px 16px 48px;display:grid;gap:20px}
+.bloco{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:20px}
+h2{font-size:1.3rem;font-weight:800;letter-spacing:-.01em;margin-bottom:12px}
+.bloco p+p{margin-top:10px}.leitura{max-width:70ch}
+.pc{display:grid;gap:20px}
+.pc li{display:grid;grid-template-columns:auto 1fr;gap:10px;padding:14px 0;border-top:1px solid var(--line)}
+.pc li:first-child{border-top:0;padding-top:0}
+.pc h3{font-size:1rem;font-weight:700}.pc p{color:#c3c9d2;font-size:.95rem}
+.ic.ok{color:var(--ok-ink);margin-top:2px}.ic.no{color:var(--no-ink);margin-top:2px}
+.sev{font-size:.72rem;font-weight:700;border-radius:4px;padding:1px 6px;vertical-align:2px;margin-left:4px;background:var(--panel2);color:var(--muted)}
+.sev.moderada{background:#2a1f0c;color:var(--warn-ink)}.sev.grave{background:#2b1117;color:var(--no-ink)}
+.quem{display:grid;gap:20px}.quem li{margin:6px 0;padding-left:16px;position:relative}.quem li::before{content:"";position:absolute;left:0;top:.65em;width:7px;height:7px;border-radius:50%;background:var(--ok)}
+.quem .nao li::before{background:var(--no)}
+.fecho{background:var(--panel2);color:var(--bar-ink);border:1px solid var(--gold)}
+.fecho .selo{margin-bottom:10px;display:inline-block}.fecho p{max-width:70ch}
+.tagline{font-size:1.25rem;font-weight:800;margin-top:12px;color:#fff}
+.col,aside{display:grid;gap:20px;align-content:start}
+dl div{display:grid;grid-template-columns:42% 1fr;gap:10px;padding:10px 0;border-top:1px solid var(--line);font-size:.93rem}
+dl div:first-child{border-top:0}dt{color:var(--muted)}dd.na{color:var(--muted);font-style:italic}
+.note{font-size:.82rem;color:var(--muted);margin-top:10px}
+.pr{display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:center;padding:11px 0;border-top:1px solid var(--line)}
+.pr:first-child{border-top:0}
+.pr-m{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;border:2px solid var(--muted);color:var(--muted);font-size:.78rem;font-weight:800}
+.pr.win .pr-m{border:0;background:radial-gradient(circle at 35% 30%,#f7d77a,var(--gold) 60%,#b9871d)}
+.pr-t b{display:block;font-size:.93rem}.pr-t span{font-size:.82rem;color:var(--muted)}
+.resumo{font-size:.88rem;color:var(--muted);margin:-6px 0 8px}
+.fontes li{margin:6px 0;font-size:.93rem}.fontes span{color:var(--muted);font-size:.85rem}
+/* blocos de leitura claros sobre a moldura preta */
+.bloco.claro{background:#f4f5f7;color:#14171c;border-color:#f4f5f7}
+.claro p,.claro .pc p{color:#3a414c}
+.claro dt,.claro .resumo,.claro .note,.claro .pr-t span,.claro.fontes span{color:#5a6270}
+.claro dl div,.claro .pr,.claro li{border-color:#dde1e7}
+.claro a{color:#1f5fae}
+.claro .ic.ok{color:#1b7a45}.claro .ic.no{color:#b3263e}
+.claro .sev{background:#e6e9ee;color:#5a6270}.claro .sev.moderada{background:#fdf1dc;color:#8a5200}.claro .sev.grave{background:#fbe4e8;color:#a3223a}
+.claro .pr-m{border-color:#8a929e;color:#5a6270}
+.claro.quem li::before,.claro .quem li::before{background:#1b7a45}.claro .nao li::before{background:#b3263e}
+footer{background:var(--bar);color:var(--bar-ink);font-size:.88rem;border-top:1px solid var(--line)}
+.bar .ig,.bar .zap-mini{display:flex;align-items:center;gap:6px;padding:6px 10px;border-radius:6px}
+.bar .ig{margin-left:auto}.bar .ig:hover{color:var(--gold)}
+.bar .zap-mini{background:#157a43;color:#fff}.bar .zap-mini:hover{background:#11683a}
+.bar .todas{margin-left:0}
+@media (max-width:700px){.bar .ig span,.bar .zap-mini span{display:none}.bar .todas{padding:6px 10px}}
+.zap{display:flex;align-items:center;gap:12px;margin-top:16px;padding:14px 18px;border-radius:10px;background:#157a43;color:#fff;text-decoration:none;transition:background-color .2s ease,transform .2s ease}
+.zap:hover{background:#11683a}.zap:active{transform:scale(.98)}
+.zap .zi{width:30px;height:30px;flex:none}.zap b{display:block;font-size:1.05rem}.zap small{display:block;font-size:.85rem;opacity:.9}
+.comunidade p{max-width:62ch;color:#c9cfd8}.comunidade .acoes{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.ig-btn{display:flex;align-items:center;gap:8px;margin-top:16px;padding:14px 18px;border-radius:10px;border:1px solid #3a3f48;color:var(--ink);text-decoration:none;font-weight:700}
+.ig-btn:hover{border-color:var(--gold);color:var(--gold)}
+footer .in{max-width:1120px;margin:0 auto;padding:18px 16px;display:flex;flex-wrap:wrap;gap:10px 20px}
+footer a{color:var(--bar-ink)}
+@media (min-width:860px){
+ .jogo .in{grid-template-columns:minmax(0,420px) 1fr;gap:32px;padding-top:28px;padding-bottom:4px}
+ main{grid-template-columns:minmax(0,1fr) 340px;align-items:start}
+ .pc,.quem{grid-template-columns:1fr 1fr}
+ .regua{grid-template-columns:repeat(auto-fit,minmax(120px,1fr))}
+ aside{position:sticky;top:64px}
 }
+@media (max-width:859px){aside{display:contents}#premios{order:-1}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 </head>
 <body>
-<div class="wrap">
- <nav class="top">
-  <span class="disp" style="color:var(--gold);letter-spacing:.08em">♛ ELITE BOARDGAMERS</span>
-  <a href="../resenhas/">Todas as resenhas →</a>
- </nav>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<header class="bar"><div class="in">
+ <a class="marca" href="../resenhas/"><img src="../marca/elite-boardgamers.webp" width="318" height="254" alt="Elite Boardgamers"></a>
+ <a class="ig" href="https://www.instagram.com/eliteboardgamers/" target="_blank" rel="noopener" aria-label="Instagram @eliteboardgamers"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6" fill="currentColor"/></svg><span>@eliteboardgamers</span></a>
+ <a class="zap-mini" href="https://chat.whatsapp.com/IgQQkJdSkzHBaEq3UwFeAo" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8.4 19l-4.4 1Z"/><path d="M9.2 8.6c.3-.5.8-.5 1-.1l.7 1.5c.1.3 0 .6-.2.8l-.4.4c.5 1.1 1.4 2 2.5 2.5l.4-.4c.2-.2.5-.3.8-.2l1.5.7c.4.2.4.7-.1 1-.7.5-1.6.6-2.4.3a7 7 0 0 1-4.2-4.2c-.3-.8-.2-1.7.4-2.3Z"/></svg><span>Grupo do WhatsApp</span></a>
+ <a class="todas" href="../resenhas/">Todas as resenhas</a>
+</div></header>
 
- <header class="hero">
-  <div class="eyebrow">Elite Boardgamers apresenta</div>
-  <h1>Azulejos, drafting e um pouco de maldade: <span>Azul</span></h1>
-  <p class="lede">Vencedor do Spiel des Jahres, do As d&#x27;Or e do Deutscher Spiele Preis em 2018, Azul é um jogo abstrato de pegar e encaixar azulejos que se aprende em minutos e esconde uma disputa bem mais afiada do que a caixa colorida sugere.</p>
-  <div class="tags"><span class="tag">2–4 jogadores</span><span class="tag">30–45 min</span><span class="tag">8+</span><span class="tag">Abstrato</span><span class="tag">Drafting</span></div>
-  <p class="meta">Resenha · Consulta às fontes em 26/10/2026</p>
- </header>
-
- <figure>
-  <a href="infografico.webp" target="_blank" rel="noopener"><img src="infografico.webp" width="1024" height="1024" alt="Infográfico Elite Boardgamers sobre o jogo Azul"></a>
-  <figcaption>Toque na imagem para ver em tamanho cheio.</figcaption>
+<section class="jogo"><div class="in">
+ <figure class="capa">
+  <a href="infografico.webp" target="_blank" rel="noopener"><img src="infografico.webp" width="1600" height="1600" alt="Infográfico Elite Boardgamers sobre o jogo Azul" fetchpriority="high"></a>
+  <figcaption>Toque para ver o infográfico em tamanho cheio.</figcaption>
  </figure>
-
- <h2>Premia<span class="k">ções</span></h2>
- <ul class="awards"><li class="aw win"><span class="aw-y">2018</span><span class="aw-p">As d&#x27;Or</span><span class="aw-c">Jeu de l’Année</span><span class="aw-r">Vencedor</span></li><li class="aw win"><span class="aw-y">2018</span><span class="aw-p">Deutscher Spiele Preis</span><span class="aw-c">Deutscher Spiele Preis</span><span class="aw-r">Vencedor</span></li><li class="aw win"><span class="aw-y">2018</span><span class="aw-p">Spiel des Jahres</span><span class="aw-c">Spiel des Jahres</span><span class="aw-r">Vencedor</span></li><li class="aw win"><span class="aw-y">2017</span><span class="aw-p">Golden Geek</span><span class="aw-c">Família</span><span class="aw-r">Vencedor</span></li><li class="aw"><span class="aw-y">2017</span><span class="aw-p">Golden Geek</span><span class="aw-c">Jogo do Ano</span><span class="aw-r">2º lugar</span></li><li class="aw"><span class="aw-y">2017</span><span class="aw-p">Golden Geek</span><span class="aw-c">Arte</span><span class="aw-r">2º lugar</span></li><li class="aw"><span class="aw-y">2017</span><span class="aw-p">Golden Geek</span><span class="aw-c">Estratégia</span><span class="aw-r">3º lugar</span></li></ul>
-
- <h2>Ficha <span class="k">técnica</span></h2>
- <div class="tablewrap"><table><tbody><tr><th>Ano</th><td>2017</td></tr><tr><th>Designer</th><td>Michael Kiesling</td></tr><tr><th>Editora original</th><td>Plan B Games</td></tr><tr><th>Editora no Brasil</th><td>Galápagos</td></tr><tr><th>Jogadores</th><td>2 a 4</td></tr><tr><th>Duração anunciada</th><td>30 a 45 minutos</td></tr><tr><th>Idade</th><td>8+</td></tr><tr><th>Nota BGG</th><td>7,7 / 10 (cerca de 111 mil avaliações)</td></tr><tr><th>Peso BGG</th><td>1,76 a 1,8 / 5, conforme a fonte</td></tr><tr><th>Nota Ludopedia</th><td>8,7 / 10</td></tr><tr><th>Modo solo oficial</th><td>Não</td></tr><tr><th>Componentes</th><td>100 azulejos, 4 tabuleiros de jogador, expositores de fábrica</td></tr></tbody></table></div>
- <p class="note">Números do BoardGameGeek e da Ludopedia obtidos por busca, porque os dois sites bloqueiam acesso automatizado. O ranking geral do BGG variou entre as fontes (#73 a #99) e foi omitido.</p>
-
- <h2>Como <span class="k">funciona</span></h2>
- <p>No centro da mesa ficam expositores (fábricas) com quatro azulejos cada. Na sua vez, você pega todos os azulejos de uma única cor de um expositor e empurra o resto para o centro; ou pega todos de uma cor do centro.</p><p>Os azulejos vão para as linhas de preparação do seu tabuleiro, que têm de 1 a 5 espaços. Ao fim da rodada, cada linha completa manda um azulejo para a parede, e ele pontua conforme as peças vizinhas.</p><p>O que não cabe nas linhas cai no chão e tira pontos. O jogo acaba quando alguém completa uma fileira horizontal da parede; bônus por fileiras, colunas e cores completas decidem o vencedor.</p>
- 
-
- <h2 class="good">👍 O que funciona muito bem</h2>
- <ul class="list good"><li><strong>Aprende-se em minutos</strong><p>Todas as resenhas consultadas destacam a regra curta: a ação é sempre pegar azulejos de uma cor, o que torna o jogo ótimo para apresentar a quem não joga.</p></li><li><strong>Componentes que dão vontade de jogar</strong><p>Os azulejos de resina e o visual inspirado nos azulejos portugueses são o elogio mais repetido entre as críticas (Board Game Quest, Wargamer, BoardGame Journey).</p></li><li><strong>Decisões tensas em pouco tempo</strong><p>Partidas de 30 a 45 minutos com escolhas que pesam: um mau draft nas rodadas finais pode custar muitos pontos, como observa a Board Game Quest.</p></li><li><strong>Interação na medida certa</strong><p>Dá para atrapalhar o adversário deixando sobras para ele. A There Will Be Games trata isso como o tempero do jogo.</p></li></ul>
-
- <h2 class="bad">👎 Pontos de atenção</h2>
- <ul class="list bad"><li><span class="sev moderada">Moderada</span><strong>Tema apenas decorativo</strong><p>A crítica mais comum: a história do palácio português não aparece na jogabilidade e o tema fica nos componentes (Board Game Quest, BoardGame Journey).</p></li><li><span class="sev moderada">Moderada</span><strong>Pode ser maldoso</strong><p>Forçar o adversário a pegar sobras é parte da estratégia. A Wargamer avisa que essa maldade pode incomodar quem não espera por ela.</p></li><li><span class="sev leve">Leve</span><strong>Sem modo solo oficial</strong><p>Azul é para 2 a 4 jogadores; não há regra solo na caixa.</p></li><li><span class="sev leve">Leve</span><strong>Pouca variação</strong><p>Não há cartas, objetivos ou setup variável no jogo-base: todas as partidas partem da mesma estrutura. É uma observação nossa a partir das regras, não de uma crítica específica.</p></li></ul>
-
- <h2>Para quem <span class="k">é?</span></h2>
- <div class="duo">
-  <div class="box yes"><h3>É para você se…</h3><ul><li>Quer um jogo bonito para levar a pessoas que não jogam</li><li>Joga muito em casal</li><li>Gosta de jogos abstratos curtos e tensos</li></ul></div>
-  <div class="box no"><h3>Pense duas vezes se…</h3><ul><li>Busca imersão temática</li><li>Não gosta de atrapalhar nem ser atrapalhado</li><li>Quer jogar sozinho</li></ul></div>
+ <div>
+  <div class="topo">
+   <h1>Azul</h1>
+   <div class="nota-box"><div class="nota n7" role="img" aria-label="Nota BGG 7.7 de 10"><span>7,7</span></div><p class="nota-k">Nota BGG</p></div>
+   <p class="linha">2017 · Michael Kiesling</p>
+  </div>
+  <div class="veredito"><span class="selo sim">Recomendado</span><p>Um dos melhores jogos de entrada já criados.</p></div>
+  <ul class="regua"><li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 11a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm8 1a3 3 0 1 0 0-6M2 20c0-3.3 2.7-6 6-6s6 2.7 6 6M15.5 14.2c3 .4 5.5 2.8 5.5 5.8"/></svg><span class="r-v">2–4</span><span class="r-k">Jogadores</span></li><li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg><span class="r-v">30–45 min</span><span class="r-k">Duração</span></li><li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21a9 9 0 1 1 0-18 9 9 0 0 1 0 18Z"/><path d="M9 10h.01M15 10h.01M8.5 14.5c1.9 2 5.1 2 7 0"/></svg><span class="r-v">8+</span><span class="r-k">Idade</span></li><li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9h12l2 11H4L6 9Z"/><path d="M9 9a3 3 0 1 1 6 0"/></svg><span class="r-v">1,8 / 5</span><span class="r-k">Peso BGG</span></li></ul>
+  <a class="zap" href="https://chat.whatsapp.com/IgQQkJdSkzHBaEq3UwFeAo" target="_blank" rel="noopener"><svg class="ic zi" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8.4 19l-4.4 1Z"/><path d="M9.2 8.6c.3-.5.8-.5 1-.1l.7 1.5c.1.3 0 .6-.2.8l-.4.4c.5 1.1 1.4 2 2.5 2.5l.4-.4c.2-.2.5-.3.8-.2l1.5.7c.4.2.4.7-.1 1-.7.5-1.6.6-2.4.3a7 7 0 0 1-4.2-4.2c-.3-.8-.2-1.7.4-2.3Z"/></svg><span><b>Entre no grupo do WhatsApp</b><small>Converse sobre Azul e receba as próximas resenhas</small></span></a>
+  <p class="lede">Vencedor do Spiel des Jahres, do As d&#x27;Or e do Deutscher Spiele Preis em 2018, Azul é um jogo abstrato de pegar e encaixar azulejos que se aprende em minutos e esconde uma disputa bem mais afiada do que a caixa colorida sugere.</p>
  </div>
-
- <section class="verdict">
-  <h2>♛ Veredito Elite Boardgamers</h2>
-  <span class="badge">Recomendado</span>
-  <p>Azul merece os prêmios que ganhou: regra curtíssima, peças lindas e uma disputa que fica tensa rapidamente. O tema é só decoração e o jogo pode ser maldoso, mas como porta de entrada para jogos modernos é difícil achar algo melhor.</p>
-  <p class="tagline">Um dos melhores jogos de entrada já criados.</p>
- </section>
-
- <h2>Fontes</h2>
- <ul class="sources"><li><a href="https://boardgamegeek.com/geeksearch.php?action=search&amp;objecttype=boardgame&amp;q=azul" target="_blank" rel="noopener">BoardGameGeek – Azul</a> — nota, nº de avaliações, ano</li><li><a href="https://bitewinggames.com/which-azul-is-best/" target="_blank" rel="noopener">Bitewing Games – Which Azul is Best?</a> — peso BGG</li><li><a href="https://ludopedia.com.br/jogo/azul?v=avaliacoes" target="_blank" rel="noopener">Ludopedia – Azul</a> — nota Ludopedia</li><li><a href="https://www.boardgamequest.com/azul-review/" target="_blank" rel="noopener">Board Game Quest – Azul Review</a> — tema, penalidades, componentes</li><li><a href="https://www.wargamer.com/azul/review" target="_blank" rel="noopener">Wargamer – Azul review</a> — interação maldosa, componentes</li><li><a href="https://therewillbe.games/articles-boardgame-reviews/5813-azul-review" target="_blank" rel="noopener">There Will Be Games – Azul Review</a> — hate drafting</li><li><a href="https://boardgamejourney.com/azul-board-game-review/" target="_blank" rel="noopener">BoardGame Journey – Azul Review</a> — tema</li><li><a href="https://loja.galapagosjogos.com.br/jogo-de-tabuleiro-azul/produto/AZU001" target="_blank" rel="noopener">Galápagos – Azul</a> — edição nacional</li><li><a href="https://en.wikipedia.org/wiki/Azul_(board_game)" target="_blank" rel="noopener">Wikipedia – Azul (board game)</a> — designer, editora, prêmios (conferência)</li><li>Consulta às páginas: 26/10/2026.</li></ul>
-
- <footer>
-  <span>Resenha · Elite Boardgamers</span>
-  <span><a href="../resenhas/">Todas as resenhas</a> · <a href="../">Consulta Golden Geek</a></span>
- </footer>
 </div>
+<nav class="abas" aria-label="Seções da resenha"><ul>
+ <li><a href="#como-funciona">Como funciona</a></li><li><a href="#pros-contras">Prós e contras</a></li><li><a href="#para-quem">Para quem é</a></li><li><a href="#veredito">Veredito</a></li><li><a href="#ficha">Ficha</a></li><li><a href="#premios">Prêmios</a></li><li><a href="#fontes">Fontes</a></li>
+</ul></nav>
+</section>
+
+<main id="conteudo">
+ <div class="col">
+  <section class="bloco claro" id="como-funciona"><h2>Como funciona</h2><div class="leitura"><p>No centro da mesa ficam expositores (fábricas) com quatro azulejos cada. Na sua vez, você pega todos os azulejos de uma única cor de um expositor e empurra o resto para o centro; ou pega todos de uma cor do centro.</p><p>Os azulejos vão para as linhas de preparação do seu tabuleiro, que têm de 1 a 5 espaços. Ao fim da rodada, cada linha completa manda um azulejo para a parede, e ele pontua conforme as peças vizinhas.</p><p>O que não cabe nas linhas cai no chão e tira pontos. O jogo acaba quando alguém completa uma fileira horizontal da parede; bônus por fileiras, colunas e cores completas decidem o vencedor.</p></div></section>
+  <section class="bloco claro pc" id="pros-contras">
+   <div><h2>O que funciona muito bem</h2><ul><li><svg class="ic ok" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.5l4.5 4.5L19.5 6.5"/></svg><div><h3>Aprende-se em minutos</h3><p>Todas as resenhas consultadas destacam a regra curta: a ação é sempre pegar azulejos de uma cor, o que torna o jogo ótimo para apresentar a quem não joga.</p></div></li><li><svg class="ic ok" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.5l4.5 4.5L19.5 6.5"/></svg><div><h3>Componentes que dão vontade de jogar</h3><p>Os azulejos de resina e o visual inspirado nos azulejos portugueses são o elogio mais repetido entre as críticas (Board Game Quest, Wargamer, BoardGame Journey).</p></div></li><li><svg class="ic ok" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.5l4.5 4.5L19.5 6.5"/></svg><div><h3>Decisões tensas em pouco tempo</h3><p>Partidas de 30 a 45 minutos com escolhas que pesam: um mau draft nas rodadas finais pode custar muitos pontos, como observa a Board Game Quest.</p></div></li><li><svg class="ic ok" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.5l4.5 4.5L19.5 6.5"/></svg><div><h3>Interação na medida certa</h3><p>Dá para atrapalhar o adversário deixando sobras para ele. A There Will Be Games trata isso como o tempero do jogo.</p></div></li></ul></div>
+   <div><h2>Pontos de atenção</h2><ul><li><svg class="ic no" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg><div><h3>Tema apenas decorativo <span class="sev moderada">Moderada</span></h3><p>A crítica mais comum: a história do palácio português não aparece na jogabilidade e o tema fica nos componentes (Board Game Quest, BoardGame Journey).</p></div></li><li><svg class="ic no" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg><div><h3>Pode ser maldoso <span class="sev moderada">Moderada</span></h3><p>Forçar o adversário a pegar sobras é parte da estratégia. A Wargamer avisa que essa maldade pode incomodar quem não espera por ela.</p></div></li><li><svg class="ic no" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg><div><h3>Sem modo solo oficial <span class="sev leve">Leve</span></h3><p>Azul é para 2 a 4 jogadores; não há regra solo na caixa.</p></div></li><li><svg class="ic no" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg><div><h3>Pouca variação <span class="sev leve">Leve</span></h3><p>Não há cartas, objetivos ou setup variável no jogo-base: todas as partidas partem da mesma estrutura. É uma observação nossa a partir das regras, não de uma crítica específica.</p></div></li></ul></div>
+  </section>
+  <section class="bloco claro quem" id="para-quem">
+   <div><h2>É para você se…</h2><ul><li>Quer um jogo bonito para levar a pessoas que não jogam</li><li>Joga muito em casal</li><li>Gosta de jogos abstratos curtos e tensos</li></ul></div>
+   <div class="nao"><h2>Pense duas vezes se…</h2><ul><li>Busca imersão temática</li><li>Não gosta de atrapalhar nem ser atrapalhado</li><li>Quer jogar sozinho</li></ul></div>
+  </section>
+  <section class="bloco fecho" id="veredito">
+   <h2>Veredito Elite Boardgamers</h2>
+   <span class="selo sim">Recomendado</span>
+   <p>Azul merece os prêmios que ganhou: regra curtíssima, peças lindas e uma disputa que fica tensa rapidamente. O tema é só decoração e o jogo pode ser maldoso, mas como porta de entrada para jogos modernos é difícil achar algo melhor.</p>
+   <p class="tagline">Um dos melhores jogos de entrada já criados.</p>
+  </section>
+  <section class="bloco comunidade"><h2>Gostou da resenha?</h2><p>A Elite Boardgamers publica resenhas de jogos premiados todos os dias. Entre no grupo para conversar sobre jogos e siga no Instagram.</p><div class="acoes"><a class="zap" href="https://chat.whatsapp.com/IgQQkJdSkzHBaEq3UwFeAo" target="_blank" rel="noopener"><svg class="ic zi" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8.4 19l-4.4 1Z"/><path d="M9.2 8.6c.3-.5.8-.5 1-.1l.7 1.5c.1.3 0 .6-.2.8l-.4.4c.5 1.1 1.4 2 2.5 2.5l.4-.4c.2-.2.5-.3.8-.2l1.5.7c.4.2.4.7-.1 1-.7.5-1.6.6-2.4.3a7 7 0 0 1-4.2-4.2c-.3-.8-.2-1.7.4-2.3Z"/></svg><span><b>Entrar no grupo do WhatsApp</b></span></a><a class="ig-btn" href="https://www.instagram.com/eliteboardgamers/" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6" fill="currentColor"/></svg><span>Seguir @eliteboardgamers</span></a></div></section>
+  <section class="bloco claro fontes" id="fontes"><h2>Fontes</h2><ul><li><a href="https://boardgamegeek.com/geeksearch.php?action=search&amp;objecttype=boardgame&amp;q=azul" target="_blank" rel="noopener">BoardGameGeek – Azul</a> <span>nota, nº de avaliações, ano</span></li><li><a href="https://bitewinggames.com/which-azul-is-best/" target="_blank" rel="noopener">Bitewing Games – Which Azul is Best?</a> <span>peso BGG</span></li><li><a href="https://ludopedia.com.br/jogo/azul?v=avaliacoes" target="_blank" rel="noopener">Ludopedia – Azul</a> <span>nota Ludopedia</span></li><li><a href="https://www.boardgamequest.com/azul-review/" target="_blank" rel="noopener">Board Game Quest – Azul Review</a> <span>tema, penalidades, componentes</span></li><li><a href="https://www.wargamer.com/azul/review" target="_blank" rel="noopener">Wargamer – Azul review</a> <span>interação maldosa, componentes</span></li><li><a href="https://therewillbe.games/articles-boardgame-reviews/5813-azul-review" target="_blank" rel="noopener">There Will Be Games – Azul Review</a> <span>hate drafting</span></li><li><a href="https://boardgamejourney.com/azul-board-game-review/" target="_blank" rel="noopener">BoardGame Journey – Azul Review</a> <span>tema</span></li><li><a href="https://loja.galapagosjogos.com.br/jogo-de-tabuleiro-azul/produto/AZU001" target="_blank" rel="noopener">Galápagos – Azul</a> <span>edição nacional</span></li><li><a href="https://en.wikipedia.org/wiki/Azul_(board_game)" target="_blank" rel="noopener">Wikipedia – Azul (board game)</a> <span>designer, editora, prêmios (conferência)</span></li></ul><p class="note">Consulta às fontes em 26/10/2026.</p></section>
+ </div>
+ <aside>
+  <section class="bloco claro" id="premios"><h2>Prêmios</h2><p class="resumo">4 vitórias em 7 premiações da pauta</p><ul><li class="pr win"><span class="pr-m" aria-hidden="true"></span><span class="pr-t"><b>As d&#x27;Or 2018</b><span>Jeu de l’Année · Vencedor</span></span></li><li class="pr win"><span class="pr-m" aria-hidden="true"></span><span class="pr-t"><b>Deutscher Spiele Preis 2018</b><span>Deutscher Spiele Preis · Vencedor</span></span></li><li class="pr win"><span class="pr-m" aria-hidden="true"></span><span class="pr-t"><b>Spiel des Jahres 2018</b><span>Spiel des Jahres · Vencedor</span></span></li><li class="pr win"><span class="pr-m" aria-hidden="true"></span><span class="pr-t"><b>Golden Geek 2017</b><span>Família · Vencedor</span></span></li><li class="pr"><span class="pr-m" aria-hidden="true">2º</span><span class="pr-t"><b>Golden Geek 2017</b><span>Jogo do Ano · 2º lugar</span></span></li><li class="pr"><span class="pr-m" aria-hidden="true">2º</span><span class="pr-t"><b>Golden Geek 2017</b><span>Arte · 2º lugar</span></span></li><li class="pr"><span class="pr-m" aria-hidden="true">3º</span><span class="pr-t"><b>Golden Geek 2017</b><span>Estratégia · 3º lugar</span></span></li></ul></section>
+  <section class="bloco claro" id="ficha"><h2>Ficha técnica</h2><dl><div><dt>Ano</dt><dd>2017</dd></div><div><dt>Designer</dt><dd>Michael Kiesling</dd></div><div><dt>Editora original</dt><dd>Plan B Games</dd></div><div><dt>Editora no Brasil</dt><dd>Galápagos</dd></div><div><dt>Jogadores</dt><dd>2 a 4</dd></div><div><dt>Duração anunciada</dt><dd>30 a 45 minutos</dd></div><div><dt>Idade</dt><dd>8+</dd></div><div><dt>Nota BGG</dt><dd>7,7 / 10 (cerca de 111 mil avaliações)</dd></div><div><dt>Peso BGG</dt><dd>1,76 a 1,8 / 5, conforme a fonte</dd></div><div><dt>Nota Ludopedia</dt><dd>8,7 / 10</dd></div><div><dt>Modo solo oficial</dt><dd>Não</dd></div><div><dt>Componentes</dt><dd>100 azulejos, 4 tabuleiros de jogador, expositores de fábrica</dd></div></dl><p class="note">Números do BoardGameGeek e da Ludopedia obtidos por busca, porque os dois sites bloqueiam acesso automatizado. O ranking geral do BGG variou entre as fontes (#73 a #99) e foi omitido.</p></section>
+ </aside>
+</main>
+
+<footer><div class="in">
+ <span>Elite Boardgamers</span>
+ <a href="../resenhas/">Todas as resenhas</a>
+ <a href="../">Consulta Golden Geek</a>
+ <a href="https://www.instagram.com/eliteboardgamers/" target="_blank" rel="noopener">Instagram @eliteboardgamers</a>
+ <a href="https://chat.whatsapp.com/IgQQkJdSkzHBaEq3UwFeAo" target="_blank" rel="noopener">Grupo do WhatsApp</a>
+</div></footer>
 </body>
 </html>
