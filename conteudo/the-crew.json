@@ -5,7 +5,7 @@
  "og_titulo": "The Crew vale a pena? Resenha Elite Boardgamers",
  "descricao": "Resenha de The Crew, vencedor do Kennerspiel des Jahres 2020: como funciona, pontos fortes, pontos de atenção e para quem é.",
  "titulo_html": "Vazas em silêncio rumo ao nono planeta: <span>The Crew</span>",
- "lede": "The Crew transformou o velho jogo de vazas em uma campanha cooperativa de 50 missões, jogada quase em silêncio. Venceu o Kennerspiel des Jahres e o Deutscher Spiele Preis em 2020 e o As d'Or Expert em 2021.",
+ "lede": "The Crew, lançado no Brasil pela Devir como A Tripulação: Em Busca do Nono Planeta, transformou o velho jogo de vazas numa campanha cooperativa de 50 missões, jogada quase em silêncio. Venceu o Kennerspiel e o Deutscher Spiele Preis em 2020 e o As d'Or Expert em 2021. É curto, barato e viciante, e funciona melhor com três ou quatro pessoas.",
  "tags": [
   "3–5 jogadores",
   "20 min",
@@ -85,7 +85,7 @@
   ],
   [
    "Editora no Brasil",
-   "não confirmado nas fontes consultadas (título nacional: A Tripulação: Em Busca do Nono Planeta)"
+   "Devir (A Tripulação: Em Busca do Nono Planeta, 2021)"
   ],
   [
    "Jogadores",
@@ -122,62 +122,77 @@
  ],
  "nota_ficha": "Nota e peso do BGG obtidos por busca em fontes secundárias. Melhor número de jogadores: 4, segundo uma das fontes.",
  "como_funciona": [
-  "É um jogo de vazas: cada um joga uma carta, e a maior carta do naipe puxado (ou o maior foguete, que é o trunfo) leva a vaza.",
-  "Antes de cada missão, a equipe distribui cartas de tarefa: cada jogador precisa ganhar vazas com cartas específicas. Ninguém pode falar sobre a própria mão.",
-  "A única comunicação é mostrar uma carta por missão, indicando se é a maior, a menor ou a única daquele naipe. São 50 missões de dificuldade crescente, jogadas como campanha."
+  "The Crew é um jogo de vazas, como o copas: cada jogador joga uma carta, todos precisam seguir o naipe puxado se puderem, e a maior carta daquele naipe leva a vaza. Os foguetes funcionam como trunfo e vencem qualquer outro naipe, do 1 ao 4.",
+  "A diferença é que todos jogam juntos. Antes de cada missão, a equipe distribui cartas de tarefa: cada tarefa diz que um jogador específico precisa ganhar uma vaza com uma carta específica, como o 5 rosa. Se alguém ganhar a carta errada, a missão falha.",
+  "Ninguém pode falar sobre a própria mão. A única comunicação permitida é mostrar uma carta por missão e indicar, com uma ficha, se ela é a maior, a menor ou a única daquele naipe na sua mão.",
+  "São 50 missões em sequência, contadas como um diário de bordo da viagem ao nono planeta. As primeiras pedem uma tarefa só; as seguintes acrescentam mais tarefas, ordens obrigatórias, limites de comunicação e outras regras especiais.",
+  "Errar faz parte: a equipe repete a missão até conseguir, e o livreto tem espaço para anotar quantas tentativas cada uma levou. Uma missão costuma durar poucos minutos, então a campanha avança bem em sessões curtas, de uma pausa no fim de semana."
  ],
  "funciona": [
   [
    "Vazas que viraram cooperação",
-   "Em vez de vencer vazas, a equipe precisa vencer as vazas certas na hora certa. A Meeples Magazine chama de um dos melhores jogos de vazas que já jogou."
+   "Em vez de ganhar o máximo de vazas, a equipe precisa ganhar as vazas certas, com as pessoas certas, na hora certa. A Meeples Magazine o chama de um dos melhores jogos de vazas que já jogou, e a Board Game Quest deu nota máxima."
   ],
   [
    "Campanha curta e viciante",
-   "As 50 missões sobem a dificuldade aos poucos e criam a vontade de jogar só mais uma, elogio comum às resenhas consultadas."
+   "As 50 missões sobem a dificuldade aos poucos, acrescentando tarefas, ordens e limites de comunicação. Isso cria a vontade de jogar só mais uma, elogio comum às resenhas consultadas, e dá ao grupo uma sensação de progresso."
   ],
   [
-   "Partidas de 20 minutos",
-   "Cada missão é rápida, então errar e tentar de novo não cansa."
+   "Missões de poucos minutos",
+   "Cada missão é rápida, então errar e tentar de novo não cansa. Dá para jogar várias missões numa pausa e retomar a campanha outro dia, com o livreto marcando onde o grupo parou."
+  ],
+  [
+   "Silêncio que vira jogo",
+   "A restrição de comunicação transforma cada carta jogada num recado. A Board Game Review UK nota que comunicar é essencial e mais difícil do que parece, e é justamente aí que nasce a sensação de sintonia quando a missão dá certo."
   ],
   [
    "Caixa pequena e barata",
-   "Só cartas e fichas: fácil de levar para qualquer mesa."
+   "Só cartas e fichas: cabe no bolso e vai para qualquer mesa. A edição da Devir aparece na Ludopedia entre R$ 136 e R$ 172, um dos menores preços entre os jogos premiados da nossa pauta."
   ]
  ],
  "atencao": [
   [
    "Moderada",
    "Comunicação muito limitada",
-   "O jogo exige silêncio; a Board Game Review UK nota que comunicar é essencial e mais difícil do que parece. Grupos falantes podem se frustrar."
+   "O jogo exige silêncio sobre as cartas, e a Board Game Review UK nota que comunicar é essencial e mais difícil do que parece. Grupos falantes, que gostam de comentar cada jogada, podem se frustrar com as restrições."
   ],
   [
    "Moderada",
    "Fraco com 2 jogadores",
-   "A variante para 2 existe, mas a Board Game Quest a considerou menos interessante; o ideal é de 3 a 4."
+   "A variante para dois usa um terceiro jogador fictício e funciona, mas a Board Game Quest a considerou menos interessante. O ponto ideal, segundo a mesma resenha, é de três a quatro jogadores."
+  ],
+  [
+   "Leve",
+   "Difícil com cinco",
+   "Com cinco, cada um recebe menos cartas e as missões finais ficam bem mais difíceis, segundo a Board Game Quest. Funciona, mas o grupo precisa de paciência para repetir missões."
   ],
   [
    "Leve",
    "Tema quase inexistente",
-   "A história espacial aparece no livreto, mas a jogabilidade é puro jogo de vazas."
+   "A história espacial aparece no livreto e nos nomes das missões, mas a jogabilidade é puro jogo de vazas. Quem espera explorar o espaço vai encontrar cartas numeradas e foguetes."
   ],
   [
    "Leve",
    "Sem modo solo",
-   "Por ser um jogo de informação oculta entre jogadores, não há como jogar sozinho."
+   "Por ser um jogo de informação escondida entre jogadores, não há como jogar sozinho. A caixa pede pelo menos dois jogadores, e o ideal, segundo a crítica, é ter três ou quatro."
   ]
  ],
  "para_quem": [
   "Gosta de jogos de cartas e de cooperação",
   "Tem um grupo fixo de 3 ou 4 pessoas",
-  "Quer algo curto para abrir ou fechar a noite"
+  "Quer algo curto para abrir ou fechar a noite",
+  "Gosta de cooperar sem conversar",
+  "Quer um jogo barato e portátil"
  ],
  "nao_e_para": [
   "Joga quase sempre a 2",
   "Gosta de conversar durante a partida",
-  "Busca imersão temática"
+  "Busca imersão temática",
+  "Quer um jogo competitivo",
+  "Não tem paciência para repetir missões"
  ],
  "selo": "Recomendado",
- "veredito": "The Crew pega um formato de séculos e dá a ele um propósito novo: cooperar sem falar. É curto, barato e viciante. Perde força a 2 e exige um grupo disposto a ficar em silêncio, mas é um dos jogos de cartas mais inteligentes da última década.",
+ "veredito": "The Crew pega um formato de séculos, o jogo de vazas, e dá a ele um propósito novo: cooperar sem falar. As 50 missões sobem a dificuldade no ritmo certo, cada partida dura minutos e o silêncio transforma cada carta num recado, o que explica o Kennerspiel e a nota máxima da Board Game Quest. Perde força a dois, fica difícil com cinco e exige um grupo disposto a ficar quieto. Por menos de R$ 180, com edição da Devir, é um dos jogos de cartas mais inteligentes da última década.",
  "tagline": "Silêncio na nave: a vaza certa na hora certa.",
  "consulta": "26/10/2026",
  "fontes": [
@@ -215,6 +230,21 @@
    "Analog Games – The Crew",
    "https://www.analog.games//gameItem/show/419cd83f965b012001965b4af9831b1d",
    "título nacional"
+  ],
+  [
+   "Ludopedia – A Tripulação",
+   "https://ludopedia.com.br/jogo/the-crew-the-quest-for-planet-nine",
+   "edição nacional"
+  ],
+  [
+   "Ludopedia – anúncio de A Tripulação",
+   "https://ludopedia.com.br/produto/243990/a-tripulacao",
+   "preço de referência"
+  ],
+  [
+   "Ludopedia – A Tripulação: Missão no Fundo do Mar",
+   "https://ludopedia.com.br/jogo/the-crew-mission-deep-sea",
+   "sequência em português"
   ]
  ],
  "roteiro": {
@@ -296,5 +326,104 @@
   "veredito": "UM DOS JOGOS DE CARTAS MAIS INTELIGENTES DA DÉCADA."
  },
  "kicker": "Resenha · Cooperativo de cartas",
- "legenda": "Um jogo de vazas cooperativo jogado em silêncio — e ganhou o Kennerspiel. 🚀\n\n50 missões curtas rumo ao nono planeta, com comunicação limitadíssima.\nVencedor do Kennerspiel e do Deutscher Spiele Preis 2020 e do As d'Or Expert 2021.\nPerde força a 2 e exige um grupo disposto a ficar quieto, mas é viciante.\nVeredito: RECOMENDADO.\n\nSeu grupo aguentaria uma partida inteira sem falar?\nResenha completa no link da bio.\n\n#TheCrew #ATripulacao #JogosDeCartas #JogosDeTabuleiro #BoardGames #Kennerspiel #Cooperativo #TabletopGames #EliteBoardgamers #CardGames"
+ "legenda": "Um jogo de vazas cooperativo jogado em silêncio — e ganhou o Kennerspiel. 🚀\n\n50 missões curtas rumo ao nono planeta, com comunicação limitadíssima.\nVencedor do Kennerspiel e do Deutscher Spiele Preis 2020 e do As d'Or Expert 2021.\nPerde força a 2 e exige um grupo disposto a ficar quieto, mas é viciante.\nVeredito: RECOMENDADO.\n\nSeu grupo aguentaria uma partida inteira sem falar?\nResenha completa no link da bio.\n\n#TheCrew #ATripulacao #JogosDeCartas #JogosDeTabuleiro #BoardGames #Kennerspiel #Cooperativo #TabletopGames #EliteBoardgamers #CardGames",
+ "passos": [
+  [
+   "RECEBA AS TAREFAS",
+   "Cada missão distribui cartas de tarefa: um jogador precisa ganhar uma vaza com uma carta específica."
+  ],
+  [
+   "JOGUE AS VAZAS",
+   "Siga o naipe puxado se puder; a maior carta do naipe leva a vaza e começa a próxima."
+  ],
+  [
+   "USE OS FOGUETES",
+   "Os foguetes são o trunfo e vencem qualquer naipe. Saber quando gastá-los decide muitas missões."
+  ],
+  [
+   "SINALIZE UMA VEZ",
+   "Sem falar da mão, cada um pode mostrar uma carta por missão dizendo se é a maior, a menor ou a única."
+  ],
+  [
+   "AVANCE NA CAMPANHA",
+   "São 50 missões com dificuldade crescente; se falhar, a equipe tenta de novo até conseguir."
+  ]
+ ],
+ "como_resumo": "Um jogo de vazas cooperativo: ganhe as cartas certas na hora certa, sem poder conversar.",
+ "perfil": [
+  [
+   "Cooperação",
+   5
+  ],
+  [
+   "Facilidade de ensinar",
+   4
+  ],
+  [
+   "Partida curta",
+   5
+  ],
+  [
+   "Rejogabilidade",
+   4
+  ],
+  [
+   "Conversa à mesa",
+   1
+  ],
+  [
+   "Tema",
+   1
+  ]
+ ],
+ "experiencia": [
+  "Imagine a missão em que você precisa ganhar o 9 verde, e o 9 está na mão de outra pessoa. Você não pode dizer nada, só mostrar uma carta: o 3 verde, com a ficha indicando que é o seu menor verde. Agora a equipe sabe que você tem verdes mais altos e pode soltar o 9 numa vaza que você vai ganhar. Quando dá certo, a mesa comemora como se tivesse pousado uma nave.",
+  "As missões são curtas e a dificuldade sobe aos poucos, o que cria a vontade de jogar só mais uma. Para a Board Game Quest, que deu nota máxima, o ponto ideal fica entre três e quatro jogadores; com cinco, as missões finais ficam bem mais difíceis."
+ ],
+ "citacao": {
+  "texto": "Sim, este jogo é sólido e muito divertido.",
+  "fonte": "Board Game Quest (tradução livre)"
+ },
+ "jogadores": [
+  [
+   "2 jogadores",
+   "A variante com jogador fictício funciona, mas a Board Game Quest a achou menos interessante.",
+   1
+  ],
+  [
+   "3 ou 4 jogadores",
+   "O ponto ideal segundo a Board Game Quest: missões equilibradas e boa comunicação.",
+   3
+  ],
+  [
+   "5 jogadores",
+   "Funciona, mas as missões finais ficam bem mais difíceis com menos cartas por pessoa.",
+   2
+  ]
+ ],
+ "primeira_partida": "Comece pela missão 1 e siga a ordem do livreto: as primeiras missões ensinam as regras aos poucos. Antes de jogar, faça uma vaza de exemplo explicando a obrigação de seguir o naipe e o papel dos foguetes. O que mais confunde é a comunicação: mostre como a ficha indica maior, menor ou única, e combine que ninguém fala sobre a própria mão.",
+ "edicao_nacional": "A Devir lançou o jogo no Brasil como A Tripulação: Em Busca do Nono Planeta em 2021, com as 50 missões traduzidas. Em 27/10/2026, a Ludopedia mostrava o jogo entre R$ 136 e R$ 172. A sequência A Tripulação: Missão no Fundo do Mar também saiu em português pela Devir.",
+ "preco_ref": {
+  "faixa": "R$ 136 a R$ 172",
+  "data": "27/10/2026",
+  "obs": "valores da Ludopedia"
+ },
+ "versoes": "A sequência independente The Crew: Mission Deep Sea, lançada no Brasil como A Tripulação: Missão no Fundo do Mar, troca as tarefas por missões mais variadas e pode ser jogada sem o primeiro. Três missões extras do jogo original foram publicadas na revista alemã spielbox em 2020.",
+ "comparacoes": [
+  [
+   "The Mind",
+   "the-mind",
+   "Outro cooperativo de cartas em silêncio, ainda mais radical: só uma regra e números de 1 a 100 jogados em ordem crescente."
+  ],
+  [
+   "Codenames",
+   "codenames",
+   "Também é um jogo de comunicação limitada, mas competitivo e em equipes, com uma pista de uma palavra no lugar das cartas."
+  ],
+  [
+   "Sky Team",
+   "sky-team",
+   "Para dupla que gosta de cooperar em silêncio: cada dado colocado no painel do avião é um recado ao parceiro."
+  ]
+ ]
 }

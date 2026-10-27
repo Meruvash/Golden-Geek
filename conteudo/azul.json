@@ -5,7 +5,7 @@
  "og_titulo": "Azul vale a pena? Resenha Elite Boardgamers",
  "descricao": "Resenha de Azul, vencedor do Spiel des Jahres 2018: como funciona, pontos fortes, pontos de atenção e para quem é.",
  "titulo_html": "Azulejos, drafting e um pouco de maldade: <span>Azul</span>",
- "lede": "Vencedor do Spiel des Jahres, do As d'Or e do Deutscher Spiele Preis em 2018, Azul é um jogo abstrato de pegar e encaixar azulejos que se aprende em minutos e esconde uma disputa bem mais afiada do que a caixa colorida sugere.",
+ "lede": "Azul é um jogo abstrato de pegar e encaixar azulejos inspirado na decoração de um palácio real português. Venceu o Spiel des Jahres, o As d'Or e o Deutscher Spiele Preis em 2018, aprende-se em minutos e esconde uma disputa bem mais afiada do que a caixa colorida sugere. É uma das melhores portas de entrada para quem nunca jogou nada além dos clássicos, com edição em português da Galápagos.",
  "tags": [
   "2–4 jogadores",
   "30–45 min",
@@ -131,62 +131,86 @@
  ],
  "nota_ficha": "Números do BoardGameGeek e da Ludopedia obtidos por busca, porque os dois sites bloqueiam acesso automatizado. O ranking geral do BGG variou entre as fontes (#73 a #99) e foi omitido.",
  "como_funciona": [
-  "No centro da mesa ficam expositores (fábricas) com quatro azulejos cada. Na sua vez, você pega todos os azulejos de uma única cor de um expositor e empurra o resto para o centro; ou pega todos de uma cor do centro.",
-  "Os azulejos vão para as linhas de preparação do seu tabuleiro, que têm de 1 a 5 espaços. Ao fim da rodada, cada linha completa manda um azulejo para a parede, e ele pontua conforme as peças vizinhas.",
-  "O que não cabe nas linhas cai no chão e tira pontos. O jogo acaba quando alguém completa uma fileira horizontal da parede; bônus por fileiras, colunas e cores completas decidem o vencedor."
+  "Cada jogador tem um tabuleiro com duas partes: à esquerda, cinco linhas de preparação, de 1 a 5 espaços; à direita, a parede, uma grade de 5 por 5 em que cada cor tem um lugar certo em cada fileira. No centro da mesa ficam os expositores, chamados de fábricas, com quatro azulejos sorteados cada.",
+  "Na sua vez, você escolhe uma fábrica e pega todos os azulejos de uma única cor; o resto vai para o centro da mesa. Também pode pegar todos os azulejos de uma cor que estejam no centro, e o primeiro a fazer isso recebe a ficha de primeiro jogador, que vale um ponto negativo.",
+  "Os azulejos pegos vão para uma linha de preparação, sempre de uma única cor por linha. O que não cabe cai na linha do chão, na parte de baixo do tabuleiro, e tira pontos no fim da rodada, cada vez mais à medida que ela enche.",
+  "Quando os azulejos da mesa acabam, a rodada termina. Cada linha de preparação completa manda um azulejo para a parede, na mesma fileira, e o resto é descartado. O azulejo vale um ponto, mais um por peça ligada a ele na horizontal e na vertical.",
+  "O jogo acaba quando alguém completa uma fileira horizontal da parede. Aí entram os bônus: 2 pontos por fileira completa, 7 por coluna completa e 10 por cor com os cinco azulejos na parede. Vence quem tiver mais pontos."
  ],
  "funciona": [
   [
    "Aprende-se em minutos",
-   "Todas as resenhas consultadas destacam a regra curta: a ação é sempre pegar azulejos de uma cor, o que torna o jogo ótimo para apresentar a quem não joga."
+   "A ação é sempre a mesma: pegar todos os azulejos de uma cor. Por isso Azul é ótimo para apresentar a quem não joga, e todas as resenhas consultadas destacam a regra curta. Só a pontuação da parede pede uma rodada de exemplo."
   ],
   [
    "Componentes que dão vontade de jogar",
-   "Os azulejos de resina e o visual inspirado nos azulejos portugueses são o elogio mais repetido entre as críticas (Board Game Quest, Wargamer, BoardGame Journey)."
+   "Os azulejos de resina, grossos e pesados, com estampas inspiradas nos azulejos portugueses, são o elogio mais repetido pela crítica, da Board Game Quest à Wargamer. O jogo chama atenção na mesa antes mesmo da primeira jogada."
   ],
   [
    "Decisões tensas em pouco tempo",
-   "Partidas de 30 a 45 minutos com escolhas que pesam: um mau draft nas rodadas finais pode custar muitos pontos, como observa a Board Game Quest."
+   "As partidas duram de 30 a 45 minutos, mas cada escolha pesa: um azulejo mal pego na reta final pode encher a linha do chão e custar muitos pontos, como observa a Board Game Quest. A tensão cresce a cada rodada."
   ],
   [
    "Interação na medida certa",
-   "Dá para atrapalhar o adversário deixando sobras para ele. A There Will Be Games trata isso como o tempero do jogo."
+   "Dá para atrapalhar o adversário deixando sobras que ele será obrigado a pegar, ou levando a cor de que ele precisa. A There Will Be Games trata essa disputa como o tempero do jogo, e a dois ela fica ainda mais evidente."
+  ],
+  [
+   "Ótimo a dois",
+   "A dois, a partida fica mais tensa e estratégica, porque cada um precisa ser proativo para bloquear o outro, segundo a Board Game Quest. O jogo funciona de 2 a 4 sem regras diferentes, só com menos fábricas na mesa."
+  ],
+  [
+   "Consagrado por júris diferentes",
+   "Azul venceu o Spiel des Jahres, o As d'Or e o Deutscher Spiele Preis em 2018, além do Golden Geek de jogo para família em 2017, um reconhecimento raro de júris com perfis bem diferentes entre si."
   ]
  ],
  "atencao": [
   [
    "Moderada",
    "Tema apenas decorativo",
-   "A crítica mais comum: a história do palácio português não aparece na jogabilidade e o tema fica nos componentes (Board Game Quest, BoardGame Journey)."
+   "A crítica mais comum, feita pela Board Game Quest e pela BoardGame Journey: a história do palácio português não aparece na jogabilidade. O tema fica nos componentes, e o jogo é, na prática, um abstrato de cores e padrões."
   ],
   [
    "Moderada",
    "Pode ser maldoso",
-   "Forçar o adversário a pegar sobras é parte da estratégia. A Wargamer avisa que essa maldade pode incomodar quem não espera por ela."
+   "Forçar o adversário a pegar sobras que vão para o chão é parte da estratégia. A Wargamer avisa que essa maldade pode incomodar quem não espera por ela, principalmente em grupos com jogadores casuais."
   ],
   [
    "Leve",
-   "Sem modo solo oficial",
-   "Azul é para 2 a 4 jogadores; não há regra solo na caixa."
+   "Pontuação difícil de explicar",
+   "A Board Game Quest aponta que as regras de preencher as linhas e pontuar a parede são difíceis de explicar no começo, sem um jogo parecido para comparar. Uma rodada de exemplo resolve a maior parte das dúvidas."
+  ],
+  [
+   "Leve",
+   "Distância entre novatos e veteranos",
+   "Em grupos com experiências diferentes, a diferença de pontos pode ser enorme: a Board Game Quest relata uma partida que terminou 75 a 29. Quem joga muito aprende a forçar sobras e a planejar a parede."
+  ],
+  [
+   "Leve",
+   "Sem modo solo",
+   "Azul é para 2 a 4 jogadores, e não há regra solo na caixa do jogo base. Quem joga muito sozinho precisa procurar outras opções entre os quebra-cabeças de peças."
   ],
   [
    "Leve",
    "Pouca variação",
-   "Não há cartas, objetivos ou setup variável no jogo-base: todas as partidas partem da mesma estrutura. É uma observação nossa a partir das regras, não de uma crítica específica."
+   "No jogo base não há cartas, objetivos ou preparação variável: toda partida parte da mesma estrutura. É uma observação nossa a partir das regras; a variação fica com o lado cinza do tabuleiro, de parede livre, e com os outros jogos da série."
   ]
  ],
  "para_quem": [
   "Quer um jogo bonito para levar a pessoas que não jogam",
   "Joga muito em casal",
-  "Gosta de jogos abstratos curtos e tensos"
+  "Gosta de jogos abstratos curtos e tensos",
+  "Gosta de partidas que pedem revanche",
+  "Valoriza componentes caprichados"
  ],
  "nao_e_para": [
   "Busca imersão temática",
   "Não gosta de atrapalhar nem ser atrapalhado",
-  "Quer jogar sozinho"
+  "Quer jogar sozinho",
+  "Quer variedade de cartas e objetivos",
+  "Prefere jogos cooperativos"
  ],
  "selo": "Recomendado",
- "veredito": "Azul merece os prêmios que ganhou: regra curtíssima, peças lindas e uma disputa que fica tensa rapidamente. O tema é só decoração e o jogo pode ser maldoso, mas como porta de entrada para jogos modernos é difícil achar algo melhor.",
+ "veredito": "Azul merece os prêmios que ganhou: a regra cabe em um minuto, os azulejos dão vontade de jogar e a disputa fica tensa a cada rodada, principalmente a dois. O tema é só decoração, a pontuação da parede pede uma rodada de exemplo e a maldade de deixar sobras para o outro pode incomodar quem não espera por ela. Por cerca de R$ 230 a R$ 340, é uma das melhores portas de entrada para jogos modernos e um jogo que continua bom depois de muitas partidas.",
  "tagline": "Um dos melhores jogos de entrada já criados.",
  "consulta": "26/10/2026",
  "fontes": [
@@ -234,6 +258,16 @@
    "Wikipedia – Azul (board game)",
    "https://en.wikipedia.org/wiki/Azul_(board_game)",
    "designer, editora, prêmios (conferência)"
+  ],
+  [
+   "Zoom – Jogo Azul Galápagos",
+   "https://www.zoom.com.br/jogos-de-tabuleiro-board-games/jogo-azul-galapagos",
+   "preço de referência"
+  ],
+  [
+   "Buscapé – Jogo Azul Galápagos",
+   "https://www.buscape.com.br/jogos-de-tabuleiro-board-games/jogo-azul-galapagos",
+   "preço de referência"
   ]
  ],
  "roteiro": {
@@ -315,5 +349,104 @@
   "veredito": "UM DOS MELHORES JOGOS DE ENTRADA JÁ CRIADOS."
  },
  "kicker": "Resenha · Abstrato",
- "legenda": "O jogo de azulejos que ganhou o Spiel des Jahres — e esconde uma maldade deliciosa. 🟦🟧\n\nRegras em minutos, peças lindas e partidas de 30 a 45 minutos.\nVencedor do Spiel des Jahres, As d'Or e Deutscher Spiele Preis 2018.\nO tema é só decoração e dá para ser bem maldoso com as sobras, mas como porta de entrada é difícil achar melhor.\nVeredito: RECOMENDADO.\n\nVocê prefere jogar Azul a 2 ou com a mesa cheia?\nResenha completa no link da bio.\n\n#Azul #JogosDeTabuleiro #BoardGames #SpielDesJahres #Boardgamer #JogoDeTabuleiro #TabletopGames #Galapagos #EliteBoardgamers #BoardGameNight"
+ "legenda": "O jogo de azulejos que ganhou o Spiel des Jahres — e esconde uma maldade deliciosa. 🟦🟧\n\nRegras em minutos, peças lindas e partidas de 30 a 45 minutos.\nVencedor do Spiel des Jahres, As d'Or e Deutscher Spiele Preis 2018.\nO tema é só decoração e dá para ser bem maldoso com as sobras, mas como porta de entrada é difícil achar melhor.\nVeredito: RECOMENDADO.\n\nVocê prefere jogar Azul a 2 ou com a mesa cheia?\nResenha completa no link da bio.\n\n#Azul #JogosDeTabuleiro #BoardGames #SpielDesJahres #Boardgamer #JogoDeTabuleiro #TabletopGames #Galapagos #EliteBoardgamers #BoardGameNight",
+ "passos": [
+  [
+   "PEGUE AZULEJOS",
+   "Escolha uma fábrica e pegue todos os azulejos de uma única cor; o que sobra vai para o centro da mesa."
+  ],
+  [
+   "PREPARE AS LINHAS",
+   "Coloque os azulejos numa linha de preparação de uma só cor. As linhas têm de 1 a 5 espaços."
+  ],
+  [
+   "CUIDADO COM O CHÃO",
+   "Azulejos que não cabem caem na linha do chão e tiram pontos no fim da rodada, cada vez mais."
+  ],
+  [
+   "DECORE A PAREDE",
+   "Ao fim da rodada, cada linha completa manda um azulejo para a parede, que pontua pelas peças vizinhas."
+  ],
+  [
+   "FECHE UMA FILEIRA",
+   "O jogo acaba quando alguém completa uma fileira; bônus por fileiras, colunas e cores decidem o vencedor."
+  ]
+ ],
+ "como_resumo": "Pegue azulejos de uma cor, encha as linhas e decore a parede sem desperdiçar peças.",
+ "perfil": [
+  [
+   "Facilidade de ensinar",
+   4
+  ],
+  [
+   "Partida curta",
+   5
+  ],
+  [
+   "Componentes",
+   5
+  ],
+  [
+   "Interação entre jogadores",
+   3
+  ],
+  [
+   "Tema",
+   1
+  ],
+  [
+   "Modo solo",
+   0
+  ]
+ ],
+ "experiencia": [
+  "Cada rodada começa tranquila e termina apertada. No início há muitas opções nas fábricas; quatro ou cinco turnos depois, sobram poucas cores no centro, e alguém vai ser obrigado a pegar seis azulejos vermelhos que não cabem em lugar nenhum. A Board Game Quest descreve bem a tensão: empurrar as sobras para o centro pode preparar uma boa jogada mais tarde, mas também entrega essas peças ao adversário.",
+  "A dois, o jogo fica mais agressivo, porque vale a pena olhar o tabuleiro do outro e bloquear a cor de que ele precisa. A quatro, a mesa muda tanto entre um turno e outro que cada um tende a cuidar do próprio tabuleiro. Em qualquer número, a partida dura de 30 a 45 minutos e termina com vontade de jogar mais uma."
+ ],
+ "citacao": {
+  "texto": "Um quebra-cabeça abstrato que eu ainda tenho vontade de resolver depois de muitas partidas.",
+  "fonte": "Board Game Quest (tradução livre)"
+ },
+ "jogadores": [
+  [
+   "2 jogadores",
+   "Mais tenso e estratégico, segundo a Board Game Quest: vale bloquear a cor de que o outro precisa.",
+   3
+  ],
+  [
+   "3 jogadores",
+   "Bom equilíbrio entre controle e caos, com sete fábricas na mesa e boas chances de planejar a parede.",
+   2
+  ],
+  [
+   "4 jogadores",
+   "A mesa muda muito entre os turnos, então cada um tende a cuidar do próprio tabuleiro.",
+   2
+  ]
+ ],
+ "primeira_partida": "Explique a pegada de azulejos em um minuto e gaste o resto mostrando a pontuação da parede com um exemplo: um azulejo sozinho vale 1 ponto, ligado a outros vale mais. A Board Game Quest lembra que essa é a parte mais difícil de explicar. Dica prática: na primeira partida, ignore os bônus de coluna e cor e observe quanto a linha do chão pode custar; na segunda, todos já entendem o jogo.",
+ "edicao_nacional": "A Galápagos publica Azul em português, com o mesmo conteúdo da caixa original. Em 27/10/2026, comparadores de preço mostravam o jogo entre R$ 229 e R$ 344, dependendo da loja e do pagamento no Pix. A expansão Mosaico de Cristal também saiu em português, a partir de cerca de R$ 200.",
+ "preco_ref": {
+  "faixa": "R$ 229 a R$ 344",
+  "data": "27/10/2026",
+  "obs": "variação grande entre lojas"
+ },
+ "versoes": "A série cresceu com jogos independentes, como Azul: Stained Glass of Sintra, Azul: Summer Pavilion e Azul: Queen's Garden, cada um com regras próprias. Há também a expansão Mosaico de Cristal, com tabuleiros de dupla camada, e a versão de bolso Azul Mini, ambas encontradas em português.",
+ "comparacoes": [
+  [
+   "Sky Team",
+   "sky-team",
+   "Para casais que gostam de Azul: um cooperativo só para dois, com dados e decisões silenciosas, em partidas de 15 minutos e muita tensão."
+  ],
+  [
+   "Faraway",
+   "faraway",
+   "Outro jogo curto de padrões e escolhas apertadas, com cartas no lugar dos azulejos e uma pontuação de trás para frente que surpreende."
+  ],
+  [
+   "Wingspan",
+   "wingspan",
+   "Para quem quer subir um degrau: também é bonito e acessível, mas com um motor de cartas que cresce a cada rodada e partidas mais longas."
+  ]
+ ]
 }

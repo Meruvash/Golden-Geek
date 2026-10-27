@@ -5,7 +5,7 @@
  "og_titulo": "Terraforming Mars vale a pena? Resenha Elite Boardgamers",
  "descricao": "Resenha de Terraforming Mars, vencedor do Deutscher Spiele Preis 2017: como funciona, pontos fortes, pontos de atenção e para quem é.",
  "titulo_html": "Corporações, cartas e um planeta inteiro: <span>Terraforming Mars</span>",
- "lede": "Em Terraforming Mars, corporações competem para tornar Marte habitável: subir a temperatura, o oxigênio e criar oceanos. Venceu o Deutscher Spiele Preis em 2017 e o As d'Or Expert em 2018, e foi finalista do Kennerspiel des Jahres.",
+ "lede": "Em Terraforming Mars, corporações competem para tornar Marte habitável: subir a temperatura, aumentar o oxigênio e criar oceanos, com mais de 200 cartas de projeto. Venceu o Deutscher Spiele Preis 2017 e o As d'Or Expert 2018 e foi finalista do Kennerspiel. É um dos motores de cartas mais satisfatórios já feitos, com edição em português da MeepleBR, mas pede partidas longas.",
  "tags": [
   "1–5 jogadores",
   "120 min",
@@ -122,62 +122,77 @@
  ],
  "nota_ficha": "Nota e peso do BGG obtidos por busca. O ranking geral variou entre as fontes (top 5 a #9) e foi omitido.",
  "como_funciona": [
-  "Cada jogador comanda uma corporação. A cada geração, você compra cartas de projeto e paga para jogá-las com megacréditos e recursos, que você produz no seu tabuleiro.",
-  "Os projetos aumentam a sua produção, criam cidades, florestas e oceanos no mapa de Marte e sobem os parâmetros globais: temperatura, oxigênio e oceanos. Cada passo nos parâmetros sobe a sua classificação de terraformação, que gera renda e pontos.",
-  "O jogo acaba quando os três parâmetros chegam ao máximo. Vence quem tiver mais pontos somando terraformação, mapa, cartas, marcos e premiações."
+  "Cada jogador comanda uma corporação, com habilidade e recursos iniciais próprios, e tem um tabuleiro de produção que registra megacréditos, aço, titânio, plantas, energia e calor. A cada geração, que equivale a uma rodada, todos recebem a renda de acordo com a produção.",
+  "No começo da geração, cada um compra quatro cartas de projeto e paga 3 megacréditos por carta que quiser guardar. Depois, na sua vez, você faz uma ou duas ações: jogar uma carta pagando o custo, usar projetos padrão do tabuleiro, converter plantas em florestas ou calor em temperatura.",
+  "Os projetos aumentam a produção, colocam cidades, florestas e oceanos no mapa de Marte e sobem os três parâmetros globais: temperatura, oxigênio e oceanos. Cada passo num parâmetro aumenta a sua classificação de terraformação, que gera renda toda geração e vale pontos no fim.",
+  "Algumas cartas criam combinações: um projeto que dá desconto em cartas de ciência, outro que ganha recursos sempre que alguém coloca uma cidade. Construir esse motor de geração em geração é o centro do jogo, e as cartas descrevem ciência real de terraformação.",
+  "O jogo acaba no fim da geração em que os três parâmetros chegam ao máximo. Vence quem tiver mais pontos, somando classificação de terraformação, florestas e cidades no mapa, pontos das cartas e os marcos e premiações conquistados."
  ],
  "funciona": [
   [
    "Motor de cartas muito satisfatório",
-   "Ver a sua corporação crescer geração a geração é o grande prazer do jogo, destacado nas resenhas consultadas."
+   "Ver a sua corporação crescer geração a geração é o grande prazer do jogo. Um projeto que parecia caro no começo vira, três gerações depois, a peça que paga todo o resto, e esse momento é o mais lembrado nas resenhas consultadas."
   ],
   [
    "Enorme variedade",
-   "Com mais de 200 cartas de projeto, nenhuma partida se repete; e as expansões ampliam ainda mais (Prelude tem nota 8,85 no BGG)."
+   "Com mais de 200 cartas de projeto e várias corporações, nenhuma partida se repete. As expansões ampliam ainda mais as possibilidades, e Prelude, que acelera o começo, tem nota 8,85 no BGG, segundo a The Dice Drop."
   ],
   [
    "Modo solo oficial",
-   "A caixa traz um desafio solo: terraformar Marte antes de um número limite de gerações."
+   "A caixa traz um desafio solo: terraformar Marte antes de um número limite de gerações. A Board Game Quest sugere o solo como forma de aprender o jogo antes de jogar com outras pessoas."
   ],
   [
    "Tema bem presente",
-   "As cartas de projeto descrevem ciência real de terraformação, e o mapa se transforma ao longo da partida."
+   "As cartas de projeto descrevem ciência real de terraformação, de micróbios a espelhos solares, e o mapa de Marte se enche de cidades, florestas e oceanos ao longo da partida. A Board Game Quest destaca como o tema está integrado às regras."
+  ],
+  [
+   "Variantes que reduzem a sorte",
+   "A regra traz uma variante de seleção de cartas, em que cada um escolhe uma e passa o resto, e a Board Game Quest recomenda variantes para diminuir a sorte na compra. Com elas, o jogo fica mais estratégico e menos dependente das cartas que caem."
   ]
  ],
  "atencao": [
   [
    "Moderada",
    "Componentes simples",
-   "Várias resenhas criticam a arte desigual, as cartas finas e os tabuleiros de jogador de papelão fino; a Board's Eye View relata tinta lascando nos cubos."
+   "Várias resenhas criticam a arte desigual das cartas, que mistura ilustrações e fotos, as cartas finas e os tabuleiros de jogador de papelão fino. A Board's Eye View relata tinta lascando nos cubos de recursos."
   ],
   [
    "Moderada",
    "Partida longa",
-   "A caixa diz 120 minutos, mas a Board's Eye View recomenda reservar pelo menos 3 horas."
+   "A caixa diz 120 minutos, a Board Game Quest fala em cerca de duas horas, e a Board's Eye View recomenda reservar pelo menos três. Com cinco jogadores, a mesma Board Game Quest descreve uma sessão longa e desigual."
+  ],
+  [
+   "Moderada",
+   "Primeira partida difícil",
+   "As regras são simples, mas o baralho enorme torna as primeiras decisões avassaladoras, segundo a Board Game Quest, que sugere tratar a estreia como aprendizado e avisar os novatos disso antes de começar."
   ],
   [
    "Leve",
    "Sorte na compra de cartas",
-   "Como o motor depende das cartas compradas, combinações boas aparecem para uns e não para outros."
+   "Como o motor depende das cartas compradas, combinações boas aparecem para uns e não para outros. A Board Game Quest recomenda variantes de seleção para diminuir a sorte e dar mais controle aos jogadores experientes."
   ],
   [
    "Leve",
    "Pouca interação direta",
-   "Cada um constrói o próprio motor; a disputa fica no mapa e nos marcos."
+   "Cada um constrói o próprio motor; a disputa fica nos marcos, nas premiações e nos espaços do mapa. A Board Game Quest aponta a pouca interação como um dos pontos que podem frustrar quem é novo no jogo."
   ]
  ],
  "para_quem": [
   "Gosta de construir motores e ver a estratégia crescer",
   "Joga sozinho com frequência",
-  "Quer um jogo pesado com muita variedade"
+  "Quer um jogo pesado com muita variedade",
+  "Tem tempo para partidas de duas a três horas",
+  "Gosta de ficção científica"
  ],
  "nao_e_para": [
   "Valoriza componentes de luxo",
   "Não tem 2 a 3 horas para uma partida",
-  "Busca muita interação entre jogadores"
+  "Busca muita interação entre jogadores",
+  "Quer ensinar o jogo e jogar em seguida",
+  "Detesta sorte na compra de cartas"
  ],
  "selo": "Recomendado",
- "veredito": "Terraforming Mars é um dos motores de cartas mais satisfatórios já feitos, com variedade enorme e tema que aparece de verdade. Os componentes simples e a duração longa pesam, mas para quem gosta do gênero é um clássico obrigatório.",
+ "veredito": "Terraforming Mars é um dos motores de cartas mais satisfatórios já feitos: cada geração rende um pouco mais, as combinações aparecem ao longo da partida e o tema de terraformação está nas cartas e no mapa. A variedade é enorme e o modo solo é um bom treino. Os componentes são simples, a partida passa fácil de duas horas, a interação é indireta e a sorte na compra pesa, o que as variantes ajudam a atenuar. Para quem gosta do gênero e tem tempo, é um clássico obrigatório.",
  "tagline": "Um planeta inteiro para construir, uma carta de cada vez.",
  "consulta": "26/10/2026",
  "fontes": [
@@ -215,6 +230,11 @@
    "Analog Games – Terraforming Mars",
    "https://analog.games/gameItem/show/419cd83f9752fc5101975531f01403e5/mars-teraformace?lang=IT",
    "edição MeepleBR"
+  ],
+  [
+   "Escorrega o Preço – Terraforming Mars (MeepleBR)",
+   "https://escorregaopreco.com.br/ofertas/shopee/5850329",
+   "preço de referência"
   ]
  ],
  "roteiro": {
@@ -296,5 +316,109 @@
   "veredito": "UM CLÁSSICO OBRIGATÓRIO PARA QUEM AMA MOTORES."
  },
  "kicker": "Resenha · Construção de motor",
- "legenda": "Um planeta inteiro para construir, uma carta de cada vez. 🔴🌱\n\nCorporações sobem temperatura, oxigênio e oceanos de Marte num dos melhores motores de cartas já feitos.\nVencedor do Deutscher Spiele Preis 2017 e do As d'Or Expert 2018.\nOs componentes são simples e a partida é longa, mas com solo oficial e mais de 200 projetos é um clássico.\nVeredito: RECOMENDADO.\n\nQual corporação é a sua favorita?\nResenha completa no link da bio.\n\n#TerraformingMars #JogosDeTabuleiro #BoardGames #Boardgamer #EngineBuilding #JogoSolo #TabletopGames #MeepleBR #EliteBoardgamers #BoardGameNight"
+ "legenda": "Um planeta inteiro para construir, uma carta de cada vez. 🔴🌱\n\nCorporações sobem temperatura, oxigênio e oceanos de Marte num dos melhores motores de cartas já feitos.\nVencedor do Deutscher Spiele Preis 2017 e do As d'Or Expert 2018.\nOs componentes são simples e a partida é longa, mas com solo oficial e mais de 200 projetos é um clássico.\nVeredito: RECOMENDADO.\n\nQual corporação é a sua favorita?\nResenha completa no link da bio.\n\n#TerraformingMars #JogosDeTabuleiro #BoardGames #Boardgamer #EngineBuilding #JogoSolo #TabletopGames #MeepleBR #EliteBoardgamers #BoardGameNight",
+ "passos": [
+  [
+   "COMPRE PROJETOS",
+   "No começo de cada geração, cada um vê quatro cartas e paga 3 megacréditos por carta que quiser guardar."
+  ],
+  [
+   "RECEBA A PRODUÇÃO",
+   "Megacréditos, aço, titânio, plantas, energia e calor chegam conforme a produção marcada no seu tabuleiro."
+  ],
+  [
+   "JOGUE CARTAS",
+   "Pague os projetos para aumentar a produção, colocar cidades, florestas e oceanos e criar combinações."
+  ],
+  [
+   "TERRAFORME MARTE",
+   "Suba temperatura, oxigênio e oceanos. Cada passo aumenta a sua classificação de terraformação, que gera renda e pontos."
+  ],
+  [
+   "MARTE PRONTO",
+   "Quando os três parâmetros chegam ao máximo, o jogo acaba e vence quem somar mais pontos."
+  ]
+ ],
+ "como_resumo": "Monte o motor da sua corporação, carta a carta, enquanto todos terraformam Marte.",
+ "perfil": [
+  [
+   "Estratégia e motor de cartas",
+   5
+  ],
+  [
+   "Variedade",
+   5
+  ],
+  [
+   "Modo solo",
+   4
+  ],
+  [
+   "Interação entre jogadores",
+   2
+  ],
+  [
+   "Componentes",
+   2
+  ],
+  [
+   "Partida curta",
+   1
+  ]
+ ],
+ "experiencia": [
+  "As primeiras gerações são de construção: você compra cartas, aumenta a produção e quase não marca pontos. Lá pela metade da partida, o motor começa a girar, e uma geração rende o suficiente para jogar três ou quatro projetos de uma vez. A decisão que mais pesa, segundo a Board Game Quest, é escolher quais cartas guardar, sabendo que cada uma custa dinheiro e que só a experiência ensina quais compensam depois.",
+  "A interação é indireta: corrida por marcos, disputa por espaços no mapa e algumas cartas que tiram recursos dos outros. A Board Game Quest resume: não é para todo mundo, mas as fraquezas podem ser atenuadas, por exemplo com a variante de seleção de cartas que reduz a sorte. Uma partida a três leva cerca de duas horas."
+ ],
+ "citacao": {
+  "texto": "Não é para todo mundo, mas as fraquezas podem ser atenuadas.",
+  "fonte": "Board Game Quest (tradução livre)"
+ },
+ "jogadores": [
+  [
+   "Sozinho",
+   "Desafio oficial de terraformar Marte num número limite de gerações; bom para aprender o jogo.",
+   2
+  ],
+  [
+   "2 jogadores",
+   "Funciona bem, com menos disputa por marcos e por espaços no mapa.",
+   2
+  ],
+  [
+   "3 jogadores",
+   "O número ideal para a Board Game Quest, com cerca de duas horas de partida.",
+   3
+  ],
+  [
+   "4 ou 5 jogadores",
+   "Mais disputa, mas a Board Game Quest descreve a partida a cinco como longa e desigual.",
+   1
+  ]
+ ],
+ "primeira_partida": "Separe pelo menos três horas e use as corporações para iniciantes indicadas na regra, que simplificam a abertura. A Board Game Quest sugere tratar a primeira partida como aprendizado e avisar isso aos novatos. Dica prática: explique a ordem de uma geração com uma rodada aberta e mostre que guardar cartas demais deixa a corporação sem dinheiro.",
+ "edicao_nacional": "A MeepleBR publica Terraforming Mars em português, com expansões e acessórios como os tabuleiros de jogador de dupla camada. Os anúncios encontrados em 27/10/2026 eram antigos, com preços entre R$ 399 e R$ 525, então vale conferir o valor atual nas lojas antes de comprar.",
+ "preco_ref": {
+  "faixa": "R$ 399 a R$ 525",
+  "data": "27/10/2026",
+  "obs": "anúncios antigos; confira o valor atual"
+ },
+ "versoes": "Há várias expansões: Prelude, que acelera o começo, Venus Next, Colonies, Turmoil e Hellas & Elysium, com mapas novos. Existe também Terraforming Mars: Ares Expedition, um jogo de cartas mais rápido da mesma série, e uma versão digital oficial.",
+ "comparacoes": [
+  [
+   "Ark Nova",
+   "ark-nova",
+   "Outro motor de cartas pesado e premiado, com um zoológico no lugar de Marte e um sistema de ações mais elegante, mas ainda mais longo."
+  ],
+  [
+   "Wingspan",
+   "wingspan",
+   "Para quem gostou de montar um motor mas quer algo mais leve e bonito, com aves e partidas de cerca de uma hora."
+  ],
+  [
+   "Dune: Imperium",
+   "dune-imperium",
+   "Se faltou interação, Dune: Imperium troca o motor solitário por disputa direta por espaços no tabuleiro e conflitos a cada rodada."
+  ]
+ ]
 }

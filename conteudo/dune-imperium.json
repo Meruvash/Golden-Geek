@@ -5,7 +5,7 @@
  "og_titulo": "Dune: Imperium vale a pena? Resenha Elite Boardgamers",
  "descricao": "Resenha de Dune: Imperium, vencedor do As d'Or Expert 2022: como funciona, pontos fortes, pontos de atenção e para quem é.",
  "titulo_html": "Deck-building e espiões em Arrakis: <span>Dune: Imperium</span>",
- "lede": "Dune: Imperium mistura construção de baralho com alocação de trabalhadores numa disputa por influência e combate em Arrakis. Venceu o As d'Or Expert em 2022, foi finalista do Kennerspiel des Jahres e levou o Golden Geek de jogo de cartas em 2020.",
+ "lede": "Dune: Imperium, publicado no Brasil pela Galápagos como Duna: Imperium, mistura construção de baralho com alocação de trabalhadores numa disputa por especiaria, influência e combate em Arrakis. Venceu o As d'Or Expert 2022 e o Golden Geek de jogo de cartas em 2020, e foi finalista do Kennerspiel. É um dos jogos médios mais completos dos últimos anos, com modo solo e muita disputa direta.",
  "tags": [
   "1–4 jogadores",
   "60–120 min",
@@ -122,62 +122,81 @@
  ],
  "nota_ficha": "O ranking geral do BGG variou muito entre as fontes (#6 a #32) e foi omitido. Nota e peso do BGG obtidos por busca.",
  "como_funciona": [
-  "Cada jogador lidera uma casa nobre com um baralho inicial. Na sua vez, você joga uma carta para mandar um agente a um espaço do tabuleiro (ganhar especiaria, água, influência com as facções ou tropas), seguindo os símbolos da carta.",
-  "Quando não quer ou não pode mais mandar agentes, você revela as cartas restantes para comprar cartas novas para o baralho e somar força de combate.",
-  "Cada rodada termina com um conflito: quem tem mais força no campo leva a recompensa. Vence quem chegar a 10 pontos de vitória primeiro, ou quem tiver mais pontos ao fim das rodadas."
+  "Cada jogador lidera uma casa nobre do universo de Duna, com um líder que tem habilidade própria e um baralho inicial igual para todos. O objetivo é chegar a 10 pontos de vitória, ganhos com influência nas quatro facções, vitórias em conflitos e cartas especiais.",
+  "Na sua vez, você joga uma carta da mão para mandar um agente a um espaço do tabuleiro. Os símbolos da carta dizem quais espaços ela libera: ganhar especiaria, água, moedas ou tropas, subir influência com uma facção ou comprar mais cartas. Espaços ocupados ficam bloqueados para os outros.",
+  "Quando não quer ou não pode mais mandar agentes, você faz o turno de revelação: mostra as cartas restantes, usa a persuasão delas para comprar cartas novas do mercado e soma a força de combate das tropas que mandou ao conflito.",
+  "Cada rodada tem uma carta de conflito com recompensas para o primeiro, o segundo e às vezes o terceiro colocado. Quem tem mais força no campo de batalha leva o melhor prêmio, e as tropas enviadas voltam para a reserva.",
+  "Cartas de intriga, compradas ao longo da partida, trazem surpresas no combate e bônus no fim do jogo. A partida acaba quando alguém chega a 10 pontos ou depois da última rodada, e vence quem tiver mais pontos."
  ],
  "funciona": [
   [
    "Duas mecânicas que se completam",
-   "A construção de baralho decide onde você pode ir no tabuleiro; a crítica da Dicebreaker, citada na Wikipedia, chama as mecânicas de familiares, mas elogia a combinação."
+   "A construção de baralho decide onde você pode ir no tabuleiro, e o tabuleiro decide quais cartas você consegue comprar. A Dicebreaker chama as mecânicas de familiares, mas elogia a combinação, que dá peso a cada carta jogada."
   ],
   [
    "Tensão do combate",
-   "Como a força vem de várias fontes, ninguém sabe ao certo o que o rival trará para o conflito, ponto destacado pela Gideon's Gaming."
+   "Como a força vem de tropas, cartas e intrigas, ninguém sabe ao certo o que o rival trará para o conflito, ponto destacado pela Gideon's Gaming. Decidir quantas tropas arriscar numa rodada é sempre uma aposta."
   ],
   [
-   "Modo solo oficial",
-   "A caixa traz regras e cartas para jogar sozinho ou completar a mesa com rivais automatizados."
+   "Solo dos melhores",
+   "A caixa traz um adversário automatizado para jogar sozinho ou completar a mesa. A Gideon's Gaming o considera um dos mais limpos que já viu: rápido de operar, ocupa espaços, luta nos conflitos e continua imprevisível."
   ],
   [
-   "Muita disputa entre jogadores",
-   "Espaços bloqueados, alianças com facções e combate deixam a interação alta durante toda a partida."
+   "Bom em qualquer número",
+   "A Gideon's Gaming jogou com todas as contagens e achou que a experiência muda pouco de 1 a 4 jogadores. A dois funciona bem, e essa é uma das razões para o jogo continuar na estante dele."
+  ],
+  [
+   "Muita disputa",
+   "Espaços bloqueados, corridas por alianças com as facções e conflitos a cada rodada mantêm a interação alta durante toda a partida. Quase nenhum turno é jogado sem olhar o que os outros estão fazendo."
+  ],
+  [
+   "Fácil de ensinar",
+   "Para um jogo médio, Dune: Imperium é acessível e fácil de explicar, segundo a Gideon's Gaming. A estrutura de jogar carta, mandar agente e revelar a mão se repete a partida inteira, e a mesa pega o ritmo logo."
   ]
  ],
  "atencao": [
   [
    "Moderada",
-   "Sorte nas cartas de intriga",
-   "A Roll to Review e jogadores no Steam reclamam que as intrigas de fim de jogo podem decidir partidas equilibradas."
+   "Sorte nas intrigas",
+   "A Roll to Review e jogadores no Steam reclamam que as cartas de intriga de fim de jogo podem decidir partidas equilibradas. Depois de duas horas de disputa, perder por uma carta sorteada frustra parte dos jogadores."
   ],
   [
    "Moderada",
    "Combate abstrato",
-   "A Shelfside critica o combate abstrato e o pouco uso do tema de Duna em parte das decisões."
+   "A Shelfside critica o combate abstrato, que se resume a somar força, e o pouco uso do tema de Duna em parte das decisões. Quem espera viver a história do livro pode achar o jogo frio."
+  ],
+  [
+   "Leve",
+   "Baralho que não cresce",
+   "A principal queixa da Gideon's Gaming é a duração: o jogo acaba em dez rodadas ou nos 10 pontos, e às vezes o baralho não chega a se desenvolver antes do fim da partida."
+  ],
+  [
+   "Leve",
+   "Armadilha do Swordmaster",
+   "Iniciantes costumam correr para o Swordmaster, que dá o terceiro agente, sem perceber o custo dessa escolha, segundo a Gideon's Gaming. Vale avisar a mesa na primeira partida que esse não é o único caminho."
   ],
   [
    "Leve",
    "Competitivo e tenso",
-   "A Gideon's Gaming nota que a disputa intensa pode ser estressante para alguns grupos."
-  ],
-  [
-   "Leve",
-   "Partida longa para iniciantes",
-   "A caixa anuncia até 120 minutos; a primeira partida tende a ficar perto do limite."
+   "A Gideon's Gaming nota que a disputa intensa pela mesma recompensa pode ser estressante para alguns grupos. Quem prefere jogos mais pacíficos vai sentir o peso dos conflitos de toda rodada."
   ]
  ],
  "para_quem": [
-  "Gosta de deck-building e de jogos de disputa direta",
+  "Gosta de construção de baralho e de disputa direta",
   "Quer um jogo médio com modo solo oficial",
-  "Curte o universo de Duna"
+  "Curte o universo de Duna",
+  "Gosta de disputar espaços no tabuleiro",
+  "Joga com 2 a 4 pessoas ou sozinho"
  ],
  "nao_e_para": [
   "Não gosta de sorte decidindo o fim da partida",
   "Prefere jogos sem conflito",
-  "Procura algo leve para a família"
+  "Procura algo leve para a família",
+  "Quer partidas de até uma hora",
+  "Busca imersão total na história de Duna"
  ],
  "selo": "Recomendado",
- "veredito": "Dune: Imperium junta duas mecânicas conhecidas de um jeito que funciona muito bem e mantém a mesa disputando cada espaço. A sorte das intrigas e o combate abstrato incomodam parte da crítica, mas é um dos jogos médios mais completos dos últimos anos.",
+ "veredito": "Dune: Imperium junta construção de baralho e alocação de trabalhadores de um jeito que faz cada carta pesar duas vezes, no tabuleiro e na compra. A disputa por espaços e os conflitos a cada rodada mantêm a mesa tensa, o modo solo é dos melhores e o jogo funciona bem de 1 a 4. As intrigas de fim de jogo trazem sorte, o combate é abstrato e às vezes o baralho não chega a crescer. Mesmo assim, por cerca de R$ 400 a R$ 500, é um dos jogos médios mais completos dos últimos anos.",
  "tagline": "Deck-building com faca nos dentes.",
  "consulta": "26/10/2026",
  "fontes": [
@@ -215,6 +234,16 @@
    "Masmorra – Duna: Imperium",
    "https://www.masmorra.com.br/produtos/dun001",
    "edição nacional"
+  ],
+  [
+   "Asmodee Brasil – Duna: Imperium",
+   "https://www.asmodee.com.br/duna-imperium/produto/DUN001",
+   "edição nacional, preço oficial"
+  ],
+  [
+   "Diceon – Duna: Imperium",
+   "https://www.diceon.com.br/produtos/duna-imperium/",
+   "preço de referência"
   ]
  ],
  "roteiro": {
@@ -296,5 +325,104 @@
   "veredito": "UM DOS JOGOS MÉDIOS MAIS COMPLETOS DA DÉCADA."
  },
  "kicker": "Resenha · Deck-building",
- "legenda": "Deck-building com faca nos dentes: a especiaria precisa fluir. 🏜️\n\nConstrução de baralho + alocação de trabalhadores numa disputa direta por Arrakis.\nVencedor do As d'Or Expert 2022 e do Golden Geek de Cartas 2020.\nAs intrigas de fim de jogo trazem sorte e o combate é abstrato, mas é um dos jogos médios mais completos da década.\nVeredito: RECOMENDADO.\n\nQual casa você escolhe para dominar Arrakis?\nResenha completa no link da bio.\n\n#DuneImperium #DunaImperium #JogosDeTabuleiro #BoardGames #Deckbuilding #Boardgamer #TabletopGames #Dune #EliteBoardgamers #BoardGameNight"
+ "legenda": "Deck-building com faca nos dentes: a especiaria precisa fluir. 🏜️\n\nConstrução de baralho + alocação de trabalhadores numa disputa direta por Arrakis.\nVencedor do As d'Or Expert 2022 e do Golden Geek de Cartas 2020.\nAs intrigas de fim de jogo trazem sorte e o combate é abstrato, mas é um dos jogos médios mais completos da década.\nVeredito: RECOMENDADO.\n\nQual casa você escolhe para dominar Arrakis?\nResenha completa no link da bio.\n\n#DuneImperium #DunaImperium #JogosDeTabuleiro #BoardGames #Deckbuilding #Boardgamer #TabletopGames #Dune #EliteBoardgamers #BoardGameNight",
+ "passos": [
+  [
+   "JOGUE UMA CARTA",
+   "Cada carta mostra símbolos que dizem em quais espaços do tabuleiro o seu agente pode entrar nesta rodada."
+  ],
+  [
+   "ENVIE AGENTES",
+   "Ganhe especiaria, água, moedas e tropas, ou suba influência com as facções. Espaço ocupado fica bloqueado."
+  ],
+  [
+   "REVELE A MÃO",
+   "Mostre as cartas restantes para comprar cartas novas para o baralho e somar força ao conflito."
+  ],
+  [
+   "VENÇA O CONFLITO",
+   "Quem tem mais força leva a melhor recompensa da carta de conflito; as tropas voltam para a reserva."
+  ],
+  [
+   "CHEGUE A 10 PONTOS",
+   "Influência nas facções, conflitos e intrigas dão pontos. O primeiro a chegar a 10 encerra a partida."
+  ]
+ ],
+ "como_resumo": "Jogue cartas para mandar agentes, monte seu baralho e dispute cada conflito em Arrakis.",
+ "perfil": [
+  [
+   "Estratégia",
+   4
+  ],
+  [
+   "Interação entre jogadores",
+   5
+  ],
+  [
+   "Modo solo",
+   4
+  ],
+  [
+   "Facilidade de ensinar",
+   3
+  ],
+  [
+   "Tema de Duna",
+   4
+  ],
+  [
+   "Partida curta",
+   2
+  ]
+ ],
+ "experiencia": [
+  "Um turno típico, descrito pela Gideon's Gaming: com cinco cartas na mão, você joga duas para mandar agentes a um espaço de especiaria e a uma facção, e guarda uma terceira porque o bônus de revelação dela no fim da rodada vale mais do que os símbolos. Ao mesmo tempo, decide se economiza moedas para o Swordmaster, que dá um terceiro agente, ou se gasta em tropas para o conflito da rodada.",
+  "A tensão vem do combate: como a força chega de várias fontes, ninguém sabe ao certo o que o rival vai trazer ao conflito, e uma carta de intriga pode virar a disputa no último segundo. Para a Gideon's Gaming, é um dos jogos mais bem desenhados e coerentes que existem."
+ ],
+ "citacao": {
+  "texto": "Um dos jogos mais bem desenhados e coerentes que existem.",
+  "fonte": "Gideon's Gaming (tradução livre)"
+ },
+ "jogadores": [
+  [
+   "Sozinho",
+   "O adversário automatizado é rápido, ocupa espaços e luta nos conflitos; a Gideon's Gaming o elogia.",
+   3
+  ],
+  [
+   "2 jogadores",
+   "Funciona bem, segundo a Gideon's Gaming, com o adversário automatizado completando a mesa.",
+   3
+  ],
+  [
+   "3 ou 4 jogadores",
+   "O formato mais disputado: espaços bloqueados com mais frequência e conflitos mais apertados.",
+   3
+  ]
+ ],
+ "primeira_partida": "Reserve cerca de duas horas para a primeira partida; a caixa anuncia de 60 a 120 minutos. Explique o ciclo de jogar carta, mandar agente e revelar a mão e jogue uma rodada aberta. Avise a mesa sobre o Swordmaster, que iniciantes tendem a supervalorizar, e lembre que influência nas facções também dá pontos. A Gideon's Gaming considera o jogo fácil de ensinar.",
+ "edicao_nacional": "A Galápagos publica o jogo como Duna: Imperium, em português, com as expansões Ascensão de Ix e Imortalidade. O preço oficial na loja da Asmodee era R$ 499,99 em 27/10/2026, e lojas e marketplaces mostravam valores entre R$ 370 (no Pix) e R$ 500.",
+ "preco_ref": {
+  "faixa": "R$ 370 a R$ 500",
+  "data": "27/10/2026",
+  "obs": "preço oficial R$ 499,99"
+ },
+ "versoes": "As expansões Ascensão de Ix e Imortalidade, ambas em português, ampliam o tabuleiro, as cartas e as estratégias. A Dire Wolf também lançou Dune: Imperium – Uprising, um jogo independente da mesma família, e existe uma versão digital oficial do jogo.",
+ "comparacoes": [
+  [
+   "Lost Ruins of Arnak",
+   "arnak",
+   "Também mistura construção de baralho com alocação de trabalhadores, mas troca o combate pela exploração de uma ilha, num clima mais pacífico."
+  ],
+  [
+   "Terraforming Mars",
+   "terraforming-mars",
+   "Para quem gosta de ver o motor crescer: mais cartas e mais tempo de partida, com interação indireta no lugar dos conflitos."
+  ],
+  [
+   "Ark Nova",
+   "ark-nova",
+   "Se a parte favorita é planejar cada carta, Ark Nova vai mais fundo na otimização, com um zoológico para montar e quase nenhum confronto."
+  ]
+ ]
 }

@@ -190,7 +190,7 @@ def layout_v2(c, premios_bloco, ficha_html, fontes):
  </aside>
 </main>
 <div class="progresso" aria-hidden="true"><i></i></div>
-<a class="topo" href="#" aria-label="Voltar ao topo">{icone("topo")}</a>"""
+<a class="voltar-topo" href="#" aria-label="Voltar ao topo">{icone("topo")}</a>"""
     return abas, main
 
 
@@ -505,13 +505,13 @@ a.cc:hover{{border-color:var(--acc)}}.cc img,.cc-ph{{width:72px;height:72px;bord
 .cc b{{display:block}}.cc span span{{display:block;font-size:.9rem;color:#3a414c}}.cc .vr{{color:#1f5fae;font-weight:700;margin-top:4px}}
 .v2 .fecho{{border-color:var(--acc);box-shadow:inset 4px 0 0 var(--acc)}}
 .progresso{{position:fixed;top:0;left:0;right:0;height:3px;z-index:20;pointer-events:none}}.progresso i{{display:block;height:100%;width:0;background:var(--gold)}}
-.topo{{position:fixed;right:14px;bottom:14px;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:#14171c;color:#fff;border:1px solid #3a3f48;opacity:0;pointer-events:none;transition:opacity .2s ease;z-index:20}}
-.topo.on{{opacity:1;pointer-events:auto}}
+.voltar-topo{{position:fixed;right:14px;bottom:14px;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:#14171c;color:#fff;border:1px solid #3a3f48;opacity:0;pointer-events:none;transition:opacity .2s ease;z-index:20}}
+.voltar-topo.on{{opacity:1;pointer-events:auto}}
 .tiles{{grid-template-columns:repeat(3,1fr)}}.tiles li{{padding:10px 8px;text-align:center}}.tiles .pontos{{display:flex;justify-content:center;margin:6px 0 2px}}.tiles .nv{{display:block;margin:0}}.tiles p{{display:none}}
 .tiles-txt{{margin-top:10px}}.tiles-txt li{{font-size:.9rem;color:#3a414c;margin:6px 0}}
 @media (min-width:860px){{.r30-grid,.pc2{{grid-template-columns:1fr 1fr}}.cards{{display:grid;overflow:visible}}.cards li{{padding:0}}}}
 @media (max-width:859px){{.v2 #premios{{order:0}}}}
-@media (prefers-reduced-motion:reduce){{.topo{{transition:none}}}}
+@media (prefers-reduced-motion:reduce){{.voltar-topo{{transition:none}}}}
 footer .in{{max-width:1120px;margin:0 auto;padding:18px 16px;display:flex;flex-wrap:wrap;gap:10px 20px}}
 footer a{{color:var(--bar-ink)}}
 @media (min-width:860px){{
@@ -572,7 +572,7 @@ footer a{{color:var(--bar-ink)}}
 (() => {{
   // No celular, ficha, prêmios e versões começam fechados; no computador ficam abertos.
   if (innerWidth < 860) document.querySelectorAll("details.dobra").forEach(d => d.removeAttribute("open"));
-  const barra = document.querySelector(".progresso i"), topo = document.querySelector(".topo");
+  const barra = document.querySelector(".progresso i"), topo = document.querySelector(".voltar-topo");
   if (barra) {{
     const atualiza = () => {{
       const h = document.documentElement.scrollHeight - innerHeight;

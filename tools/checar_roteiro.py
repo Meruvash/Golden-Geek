@@ -129,7 +129,8 @@ def main(arquivos):
     falhou = False
     for a in arquivos:
         c = json.loads(Path(a).read_text(encoding="utf-8"))
-        erros = checar(c) + checar_texto(c)
+        # Resenha antiga (passos próprios do site): a imagem é anterior ao v2 e não é regerada, só o texto conta.
+        erros = (checar_texto(c) if c.get("passos") else checar(c) + checar_texto(c))
         if erros:
             falhou = True
             print(f"✗ {c['slug']}: fora do padrão editorial")
