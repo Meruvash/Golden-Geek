@@ -112,6 +112,11 @@
    "jogo": "Gloomhaven",
    "url": "https://meruvash.github.io/Golden-Geek/gloomhaven/",
    "data": "2026-10-27"
+  },
+  {
+   "jogo": "The Lord of the Rings: Fate of the Fellowship",
+   "url": "https://meruvash.github.io/Golden-Geek/fate-of-the-fellowship/",
+   "data": "2026-10-27"
   }
  ],
  "jogos": [
@@ -2221,7 +2226,7 @@
      "fonte": "https://meruvash.github.io/Golden-Geek/"
     }
    ],
-   "status": "em_producao",
+   "status": "publicado",
    "prioridade": 50,
    "premios_distintos": 1
   },

@@ -1,7 +1,8 @@
 """Publica resenhas aprovadas: status `publicado` em pauta.json e regera resenhas/index.html (build_lista.py).
 
 Uso: python3 tools/publicar.py conteudo/<slug>.json [...]
-Requer <slug>/index.html (build_review.py), <slug>/infografico.webp e <slug>/capa.jpg.
+Requer <slug>/index.html (build_review.py), <slug>/capa.jpg e <slug>/infografico.webp
+(o infográfico é dispensado quando a resenha tem fotos oficiais liberadas, "usar_na_pagina" no fotos/fontes.json).
 """
 import json
 import sys
@@ -22,7 +23,10 @@ def main():
         if erros:
             print(*erros, sep="\n - ")
             sys.exit(f"{c['slug']}: texto do site fora do PADRAO_EDITORIAL.md; nada foi publicado.")
-        for f in ("index.html", "infografico.webp", "capa.jpg"):
+        fontes_fotos = ROOT / c["slug"] / "fotos" / "fontes.json"
+        so_fotos = fontes_fotos.exists() and json.loads(fontes_fotos.read_text(encoding="utf-8")).get("usar_na_pagina")
+        # Resenha só com fotos oficiais liberadas dispensa o infográfico.
+        for f in ("index.html", "capa.jpg") + (() if so_fotos else ("infografico.webp",)):
             if not (ROOT / c["slug"] / f).exists():
                 sys.exit(f"Falta {c['slug']}/{f}")
         for j in pauta["jogos"]:
