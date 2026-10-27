@@ -41,3 +41,11 @@ if __name__ == "__main__":
     import build_lista
     (ROOT / "resenhas" / "index.html").write_text(build_lista.build(), encoding="utf-8")
     print("ok resenhas/index.html")
+    # Regera todas as resenhas publicadas: o bloco "Continue lendo" de cada uma passa a incluir a nova.
+    import build_review
+    pauta = json.loads((ROOT / "pauta.json").read_text(encoding="utf-8"))
+    for p in pauta["publicadas"]:
+        slug = p["url"].rstrip("/").split("/")[-1]
+        c = json.loads((ROOT / "conteudo" / f"{slug}.json").read_text(encoding="utf-8"))
+        (ROOT / slug / "index.html").write_text(build_review.build(c), encoding="utf-8")
+    print("ok", len(pauta["publicadas"]), "resenhas regeradas")

@@ -63,6 +63,10 @@ h1{font-size:clamp(2rem,7vw,3.1rem);line-height:1.05;font-weight:800;letter-spac
 .abas ul{max-width:1120px;margin:0 auto;padding:0 8px;display:flex;overflow-x:auto;scrollbar-width:none}
 .abas a{display:block;padding:12px 10px;white-space:nowrap;color:var(--ink);text-decoration:none;font-weight:600;font-size:.92rem;border-bottom:3px solid transparent}
 .abas a:hover{border-bottom-color:var(--gold)}
+.abas a.ativo{border-bottom-color:var(--gold);color:var(--gold)}
+.abas .li-volta{position:sticky;left:0;z-index:1;background:var(--panel)}
+.abas .volta{display:flex;align-items:center;gap:2px;color:var(--gold);padding-left:4px;padding-right:12px;margin-right:4px;border-right:1px solid var(--line)}
+.abas .volta .ic{width:18px;height:18px}
 main{max-width:1120px;margin:0 auto;padding:20px 16px 48px;display:grid;gap:20px}
 .bloco{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:20px}
 h2{font-size:1.3rem;font-weight:800;letter-spacing:-.01em;margin-bottom:12px}
@@ -177,6 +181,14 @@ details.dobra{border:0;margin:0;padding:0}details.dobra summary{color:inherit}de
 a.cc:hover{border-color:var(--acc)}.cc img,.cc-ph{width:72px;height:72px;border-radius:6px;object-fit:cover}
 .cc-ph{display:grid;place-items:center;background:#14171c;color:var(--gold);font-weight:800;font-size:1.6rem}
 .cc b{display:block}.cc span span{display:block;font-size:.9rem;color:#3a414c}.cc .vr{color:#1f5fae;font-weight:700;margin-top:4px}
+.mais-res ul{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.mais-res a{display:grid;gap:6px;text-decoration:none;color:#14171c}
+.mais-res img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:8px}
+.mais-res b{font-size:.95rem;line-height:1.25}.mais-res .selo{justify-self:start;font-size:.72rem;padding:2px 8px}
+.mais-res a:hover b{text-decoration:underline}
+.mais-res .ver-todas{color:#fff;display:block;margin-top:16px;padding:14px;border-radius:10px;background:#14171c;color:#fff;text-align:center;font-weight:800;text-decoration:none}
+.mais-res .ver-todas:hover{background:#000;color:#fff}
+@media (min-width:860px){.mais-res ul{grid-template-columns:repeat(3,1fr)}}
 .v2 .fecho{border-color:var(--acc);box-shadow:inset 4px 0 0 var(--acc)}
 .progresso{position:fixed;top:0;left:0;right:0;height:3px;z-index:20;pointer-events:none}.progresso i{display:block;height:100%;width:0;background:var(--gold)}
 .voltar-topo{position:fixed;right:14px;bottom:14px;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:#14171c;color:#fff;border:1px solid #3a3f48;opacity:0;pointer-events:none;transition:opacity .2s ease;z-index:20}
@@ -238,10 +250,11 @@ Resenha completa no link da bio.
   <p class="lede">Lost Ruins of Arnak, lançado no Brasil pela Devir como As Ruínas Perdidas de Arnak, mistura construção de baralho com alocação de trabalhadores numa expedição a uma ilha perdida, cheia de guardiões e com um templo escondido. Venceu o Deutscher Spiele Preis 2021 e o Golden Geek de Jogo do Ano médio em 2020, e foi indicado ao Kennerspiel. É um dos jogos médios mais agradáveis da sua geração.</p>
  </div>
 </div>
-<nav class="abas" aria-label="Seções da resenha"><ul>
-<li><a href="#resumo">Resumo</a></li><li><a href="#como-funciona">Como funciona</a></li><li><a href="#como-e-jogar">Como é jogar</a></li><li><a href="#pros-contras">Prós e contras</a></li><li><a href="#para-quem">Para quem é</a></li><li><a href="#edicao">Preço</a></li><li><a href="#veredito">Veredito</a></li><li><a href="#ficha">Ficha</a></li>
-</ul></nav>
 </section>
+<nav class="abas" aria-label="Seções da resenha"><ul>
+<li class="li-volta"><a class="volta" href="../resenhas/"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>Resenhas</a></li>
+<li><a href="#resumo">Resumo</a></li><li><a href="#como-funciona">Como funciona</a></li><li><a href="#como-e-jogar">Como é jogar</a></li><li><a href="#pros-contras">Prós e contras</a></li><li><a href="#para-quem">Para quem é</a></li><li><a href="#edicao">Preço</a></li><li><a href="#veredito">Veredito</a></li><li><a href="#mais-resenhas">Mais resenhas</a></li><li><a href="#ficha">Ficha</a></li>
+</ul></nav>
 
 <main id="conteudo" class="v2" style="--acc:#d9a03f">
  <div class="col">
@@ -292,6 +305,7 @@ Resenha completa no link da bio.
    <p>Lost Ruins of Arnak junta construção de baralho e alocação de trabalhadores de um jeito redondo: as cartas pagam as viagens, as viagens trazem cartas melhores e cada guardião revelado é um risco calculado. O tema de aventura funciona, o modo solo é forte e a Board Game Quest o considera um ótimo eurogame. Não inventa nada novo, a interação é baixa e as últimas rodadas se alongam. Com edição da Devir, é um dos jogos médios mais agradáveis da sua geração.</p>
    <p class="tagline">Uma expedição de cartas rumo ao templo perdido.</p>
   </section>
+  <section class="bloco claro mais-res" id="mais-resenhas"><h2>Continue lendo</h2><p class="sub">Outras resenhas de jogos premiados da Elite Boardgamers.</p><ul><li><a href="../faraway/"><img src="../faraway/capa.jpg" width="800" height="800" alt="" loading="lazy"><b>Faraway</b><span class="selo sim">Recomendado</span></a></li><li><a href="../endeavor-deep-sea/"><img src="../endeavor-deep-sea/capa.jpg" width="800" height="800" alt="" loading="lazy"><b>Endeavor: Deep Sea</b><span class="selo sim">Recomendado</span></a></li><li><a href="../bomb-busters/"><img src="../bomb-busters/capa.jpg" width="800" height="800" alt="" loading="lazy"><b>Bomb Busters</b><span class="selo sim">Recomendado</span></a></li><li><a href="../ark-nova/"><img src="../ark-nova/capa.jpg" width="800" height="800" alt="" loading="lazy"><b>Ark Nova</b><span class="selo publico">Público específico</span></a></li><li><a href="../flip-7/"><img src="../flip-7/capa.jpg" width="800" height="800" alt="" loading="lazy"><b>Flip 7</b><span class="selo publico">Público específico</span></a></li><li><a href="../pandemic-legacy/"><img src="../pandemic-legacy/capa.jpg" width="800" height="800" alt="" loading="lazy"><b>Pandemic Legacy: Season 1</b><span class="selo sim">Recomendado</span></a></li></ul><a class="ver-todas" href="../resenhas/">Ver todas as 18 resenhas</a></section>
   <section class="bloco comunidade"><h2>Gostou da resenha?</h2><p>A Elite Boardgamers publica resenhas de jogos premiados todos os dias. Entre no grupo para conversar sobre jogos e siga no Instagram.</p><div class="acoes"><a class="zap" href="https://chat.whatsapp.com/IgQQkJdSkzHBaEq3UwFeAo" target="_blank" rel="noopener"><svg class="ic zi" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8.4 19l-4.4 1Z"/><path d="M9.2 8.6c.3-.5.8-.5 1-.1l.7 1.5c.1.3 0 .6-.2.8l-.4.4c.5 1.1 1.4 2 2.5 2.5l.4-.4c.2-.2.5-.3.8-.2l1.5.7c.4.2.4.7-.1 1-.7.5-1.6.6-2.4.3a7 7 0 0 1-4.2-4.2c-.3-.8-.2-1.7.4-2.3Z"/></svg><span><b>Entrar no grupo do WhatsApp</b></span></a><a class="ig-btn" href="https://www.instagram.com/eliteboardgamers/" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6" fill="currentColor"/></svg><span>Seguir @eliteboardgamers</span></a></div></section>
   <section class="bloco claro fontes" id="fontes"><details class="mais"><summary><h2>Fontes (10)</h2></summary><ul><li><a href="https://en.wikipedia.org/wiki/Lost_Ruins_of_Arnak" target="_blank" rel="noopener">Wikipedia – Lost Ruins of Arnak</a> <span>designers, editora, jogadores, idade, solo</span></li><li><a href="https://board-games.fandom.com/wiki/Lost_Ruins_of_Arnak" target="_blank" rel="noopener">Board Games Wiki – Lost Ruins of Arnak</a> <span>nota BGG, peso</span></li><li><a href="https://tabletopbellhop.com/game-reviews/lost-ruins-of-arnak/" target="_blank" rel="noopener">Tabletop Bellhop – Arnak review</a> <span>duração, peso</span></li><li><a href="https://ubarose.com/articles-boardgame-reviews/8568-raiders-of-the-lost-arnak-lost-ruins-of-arnak-review" target="_blank" rel="noopener">There Will Be Games – Raiders of the Lost Arnak</a> <span>comparação com Tikal, originalidade</span></li><li><a href="https://www.meeplelikeus.co.uk/lost-ruins-of-arnak-2020/" target="_blank" rel="noopener">Meeple Like Us – Arnak review</a> <span>veredito</span></li><li><a href="https://boardgamequest.com/the-lost-ruins-of-arnak-review" target="_blank" rel="noopener">Board Game Quest – Arnak review</a> <span>solo, partida a 2</span></li><li><a href="https://www.meeplemountain.com/boardgame/lost-ruins-of-arnak/" target="_blank" rel="noopener">Meeple Mountain – Arnak</a> <span>expansões</span></li><li><a href="https://www.amazon.com.br/RU%C3%8DNAS-PERDIDAS-DE-ARNAK-Devir/dp/B095B9F657" target="_blank" rel="noopener">Amazon Brasil – Ruínas Perdidas de Arnak (Devir)</a> <span>edição nacional, preço</span></li><li><a href="https://www.omniverse.com.br/produto/as-ruinas-perdidas-de-arnak" target="_blank" rel="noopener">Omniverse – As Ruínas Perdidas de Arnak</a> <span>preço de referência</span></li><li><a href="https://ludopedia.com.br/produto/418250/as-ruinas-perdidas-de-arnak-caminhos-tortuosos" target="_blank" rel="noopener">Ludopedia – Caminhos Tortuosos</a> <span>expansão em português</span></li></ul><p class="note">Consulta às fontes em 26/10/2026.</p></details></section>
  </div>
@@ -312,6 +326,20 @@ Resenha completa no link da bio.
 </div></footer>
 <script>
 (() => {
+  // Menu de seções: marca a seção que está na tela e rola o menu até ela.
+  const links = [...document.querySelectorAll(".abas a[href^='#']")];
+  const alvo = new Map(links.map(a => [a.getAttribute("href").slice(1), a]));
+  if ("IntersectionObserver" in window && links.length) {
+    const obs = new IntersectionObserver(ents => {
+      ents.forEach(en => {
+        if (!en.isIntersecting) return;
+        links.forEach(l => l.classList.remove("ativo"));
+        const l = alvo.get(en.target.id);
+        if (l) { l.classList.add("ativo"); const ul = l.closest("ul"); ul.scrollTo({ left: l.parentElement.offsetLeft - ul.clientWidth / 2 + l.parentElement.clientWidth / 2 }); }
+      });
+    }, { rootMargin: "-45% 0px -50% 0px" });
+    alvo.forEach((_, id) => { const s = document.getElementById(id); if (s) obs.observe(s); });
+  }
   // No celular, ficha, prêmios e versões começam fechados; no computador ficam abertos.
   if (innerWidth < 860) document.querySelectorAll("details.dobra").forEach(d => d.removeAttribute("open"));
   const barra = document.querySelector(".progresso i"), topo = document.querySelector(".voltar-topo");

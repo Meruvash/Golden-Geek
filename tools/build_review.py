@@ -30,6 +30,7 @@ ICONES = {
     "copiar": '<rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h8"/>',
     "dica": '<path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3Z"/>',
     "preco": '<path d="M3 12V4h8l10 10-8 8L3 12Z"/><circle cx="7.5" cy="8.5" r="1.5"/>',
+    "voltar": '<path d="M15 18l-6-6 6-6"/>',
     "topo": '<path d="M12 19V5M5 12l7-7 7 7"/>',
     "compartilhar": '<circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="M8.2 10.8l7.6-4.4M8.2 13.2l7.6 4.4"/>',
 }
@@ -71,6 +72,33 @@ NIVEIS = {3: "Ótimo", 2: "Bom", 1: "Fraco"}
 def primeira_frase(t):
     m = re.match(r"(.+?[.!?])(\s|$)", t)
     return (m.group(1), t[m.end():].strip()) if m else (t, "")
+
+
+SELO_CURTO = {"sim": "Recomendado", "publico": "Público específico", "nao": "Não recomendado"}
+
+
+def mais_resenhas(c, n=6):
+    """Outras resenhas publicadas (mais recentes primeiro) para o leitor continuar no site."""
+    pauta = json.loads((ROOT / "pauta.json").read_text(encoding="utf-8"))
+    ja = {c["slug"]} | {s for _, s, _ in c.get("comparacoes", []) if s}
+    slugs = [p["url"].rstrip("/").split("/")[-1] for p in reversed(pauta["publicadas"])]
+    total = len(slugs)
+    cards = []
+    for s in slugs:
+        if s in ja or not (ROOT / "conteudo" / f"{s}.json").exists():
+            continue
+        o = json.loads((ROOT / "conteudo" / f"{s}.json").read_text(encoding="utf-8"))
+        cards.append(
+            f'<li><a href="../{s}/"><img src="../{s}/capa.jpg" width="800" height="800" alt="" loading="lazy">'
+            f'<b>{e(o["jogo"])}</b><span class="selo {selo_class(o["selo"])}">{e(SELO_CURTO.get(selo_class(o["selo"]), o["selo"]))}</span></a></li>'
+        )
+        if len(cards) == n:
+            break
+    return (
+        f'<section class="bloco claro mais-res" id="mais-resenhas"><h2>Continue lendo</h2>'
+        f'<p class="sub">Outras resenhas de jogos premiados da Elite Boardgamers.</p><ul>{"".join(cards)}</ul>'
+        f'<a class="ver-todas" href="../resenhas/">Ver todas as {total} resenhas</a></section>'
+    )
 
 
 def layout_v2(c, premios_bloco, ficha_html, fontes):
@@ -163,12 +191,13 @@ def layout_v2(c, premios_bloco, ficha_html, fontes):
    <p>{e(c["veredito"])}</p>
    <p class="tagline">{e(c["tagline"])}</p>
   </section>"""
+    mais = mais_resenhas(c)
     comunidade = f"""<section class="bloco comunidade"><h2>Gostou da resenha?</h2><p>A Elite Boardgamers publica resenhas de jogos premiados todos os dias. Entre no grupo para conversar sobre jogos e siga no Instagram.</p><div class="acoes"><a class="zap" href="{WHATSAPP}" target="_blank" rel="noopener">{icone("zap", "ic zi")}<span><b>Entrar no grupo do WhatsApp</b></span></a><a class="ig-btn" href="{INSTAGRAM}" target="_blank" rel="noopener">{icone("insta")}<span>Seguir @eliteboardgamers</span></a></div></section>"""
     fontes_bloco = f'<section class="bloco claro fontes" id="fontes"><details class="mais"><summary><h2>Fontes ({len(c["fontes"])})</h2></summary><ul>{fontes}</ul><p class="note">Consulta às fontes em {e(c["consulta"])}.</p></details></section>'
     abas = "".join(
         f'<li><a href="#{i}">{t}</a></li>'
         for i, t in (("resumo", "Resumo"), ("como-funciona", "Como funciona"), ("como-e-jogar", "Como é jogar"), ("pros-contras", "Prós e contras"),
-                     ("para-quem", "Para quem é"), ("edicao", "Preço"), ("veredito", "Veredito"), ("ficha", "Ficha"))
+                     ("para-quem", "Para quem é"), ("edicao", "Preço"), ("veredito", "Veredito"), ("mais-resenhas", "Mais resenhas"), ("ficha", "Ficha"))
     )
     premios_bloco = re.sub(r'<h2>Prêmios</h2><p class="resumo">(.*?)</p>', r'<details class="mais dobra" open><summary><h2>Prêmios</h2> <span class="resumo">\1</span></summary>', premios_bloco).replace("</ul></section>", "</ul></details></section>")
     main = f"""<main id="conteudo" class="v2" style="--acc:{e(c.get("cor", "#e3b23c"))}">
@@ -181,6 +210,7 @@ def layout_v2(c, premios_bloco, ficha_html, fontes):
   {edicao}
   {compara}
   {veredito}
+  {mais}
   {comunidade}
   {fontes_bloco}
  </div>
@@ -389,6 +419,10 @@ h1{{font-size:clamp(2rem,7vw,3.1rem);line-height:1.05;font-weight:800;letter-spa
 .abas ul{{max-width:1120px;margin:0 auto;padding:0 8px;display:flex;overflow-x:auto;scrollbar-width:none}}
 .abas a{{display:block;padding:12px 10px;white-space:nowrap;color:var(--ink);text-decoration:none;font-weight:600;font-size:.92rem;border-bottom:3px solid transparent}}
 .abas a:hover{{border-bottom-color:var(--gold)}}
+.abas a.ativo{{border-bottom-color:var(--gold);color:var(--gold)}}
+.abas .li-volta{{position:sticky;left:0;z-index:1;background:var(--panel)}}
+.abas .volta{{display:flex;align-items:center;gap:2px;color:var(--gold);padding-left:4px;padding-right:12px;margin-right:4px;border-right:1px solid var(--line)}}
+.abas .volta .ic{{width:18px;height:18px}}
 main{{max-width:1120px;margin:0 auto;padding:20px 16px 48px;display:grid;gap:20px}}
 .bloco{{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:20px}}
 h2{{font-size:1.3rem;font-weight:800;letter-spacing:-.01em;margin-bottom:12px}}
@@ -503,6 +537,14 @@ details.dobra{{border:0;margin:0;padding:0}}details.dobra summary{{color:inherit
 a.cc:hover{{border-color:var(--acc)}}.cc img,.cc-ph{{width:72px;height:72px;border-radius:6px;object-fit:cover}}
 .cc-ph{{display:grid;place-items:center;background:#14171c;color:var(--gold);font-weight:800;font-size:1.6rem}}
 .cc b{{display:block}}.cc span span{{display:block;font-size:.9rem;color:#3a414c}}.cc .vr{{color:#1f5fae;font-weight:700;margin-top:4px}}
+.mais-res ul{{display:grid;grid-template-columns:1fr 1fr;gap:12px}}
+.mais-res a{{display:grid;gap:6px;text-decoration:none;color:#14171c}}
+.mais-res img{{width:100%;aspect-ratio:1;object-fit:cover;border-radius:8px}}
+.mais-res b{{font-size:.95rem;line-height:1.25}}.mais-res .selo{{justify-self:start;font-size:.72rem;padding:2px 8px}}
+.mais-res a:hover b{{text-decoration:underline}}
+.mais-res .ver-todas{{color:#fff;display:block;margin-top:16px;padding:14px;border-radius:10px;background:#14171c;color:#fff;text-align:center;font-weight:800;text-decoration:none}}
+.mais-res .ver-todas:hover{{background:#000;color:#fff}}
+@media (min-width:860px){{.mais-res ul{{grid-template-columns:repeat(3,1fr)}}}}
 .v2 .fecho{{border-color:var(--acc);box-shadow:inset 4px 0 0 var(--acc)}}
 .progresso{{position:fixed;top:0;left:0;right:0;height:3px;z-index:20;pointer-events:none}}.progresso i{{display:block;height:100%;width:0;background:var(--gold)}}
 .voltar-topo{{position:fixed;right:14px;bottom:14px;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:#14171c;color:#fff;border:1px solid #3a3f48;opacity:0;pointer-events:none;transition:opacity .2s ease;z-index:20}}
@@ -554,10 +596,11 @@ footer a{{color:var(--bar-ink)}}
   <p class="lede">{e(c["lede"])}</p>
  </div>
 </div>
+</section>
 <nav class="abas" aria-label="Seções da resenha"><ul>
+<li class="li-volta"><a class="volta" href="../resenhas/">{icone("voltar")}Resenhas</a></li>
 {abas_html}
 </ul></nav>
-</section>
 
 {main_html}
 
@@ -570,6 +613,20 @@ footer a{{color:var(--bar-ink)}}
 </div></footer>
 <script>
 (() => {{
+  // Menu de seções: marca a seção que está na tela e rola o menu até ela.
+  const links = [...document.querySelectorAll(".abas a[href^='#']")];
+  const alvo = new Map(links.map(a => [a.getAttribute("href").slice(1), a]));
+  if ("IntersectionObserver" in window && links.length) {{
+    const obs = new IntersectionObserver(ents => {{
+      ents.forEach(en => {{
+        if (!en.isIntersecting) return;
+        links.forEach(l => l.classList.remove("ativo"));
+        const l = alvo.get(en.target.id);
+        if (l) {{ l.classList.add("ativo"); const ul = l.closest("ul"); ul.scrollTo({{ left: l.parentElement.offsetLeft - ul.clientWidth / 2 + l.parentElement.clientWidth / 2 }}); }}
+      }});
+    }}, {{ rootMargin: "-45% 0px -50% 0px" }});
+    alvo.forEach((_, id) => {{ const s = document.getElementById(id); if (s) obs.observe(s); }});
+  }}
   // No celular, ficha, prêmios e versões começam fechados; no computador ficam abertos.
   if (innerWidth < 860) document.querySelectorAll("details.dobra").forEach(d => d.removeAttribute("open"));
   const barra = document.querySelector(".progresso i"), topo = document.querySelector(".voltar-topo");
