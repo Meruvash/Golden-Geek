@@ -40,6 +40,8 @@ Regras inegociáveis:
 - Separe FATO de OPINIÃO e atribua cada opinião à crítica que a fez.
 - Guarde o link de cada fonte (a seção Fontes da página tem links).
 
+Imagens oficiais: depois de preencher a ficha (editora original e nacional), siga a skill `imagens` (`python3 tools/imagens/robo.py buscar <slug>`, revisão da folha de contato e `aprovar`). O resultado fica em `<slug>/fotos/` com crédito em `fontes.json`.
+
 Saída da pesquisa: FICHA (ano, autor, editora, jogadores, duração anunciada e relatada, nota Ludopedia com nº de votos, peso, melhor com, edição nacional, **premiações da pauta**); COMO FUNCIONA; DIFERENCIAIS entre versões; ELOGIOS com fonte; CRÍTICAS com fonte e gravidade (leve/moderada/grave); PARA QUEM É / NÃO É; FONTES.
 
 ## Etapa 2: texto da resenha
