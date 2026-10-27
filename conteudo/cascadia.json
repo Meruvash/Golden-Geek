@@ -58,7 +58,7 @@
   ],
   [
    "Editora no Brasil",
-   "não confirmado nas fontes consultadas"
+   "Grok Games (2022)"
   ],
   [
    "Jogadores",
@@ -70,7 +70,7 @@
   ],
   [
    "Idade",
-   "não confirmado nas fontes consultadas"
+   "14+ (edição nacional)"
   ],
   [
    "Nota BGG",
@@ -91,6 +91,10 @@
   [
    "Arte",
    "Beth Sobel"
+  ],
+  [
+   "Componentes",
+   "85 peças de habitat, 5 peças iniciais, 100 fichas de madeira de animais, 25 fichas de pinha, 21 cartas de pontuação"
   ]
  ],
  "nota_ficha": "Nota e peso do BGG obtidos por busca em fonte secundária.",
@@ -178,6 +182,21 @@
    "BGG – Board Game Breakdown",
    "https://boardgamegeek.com/thread/2900971/board-game-breakdown-cascadia-in-depth-review",
    "preparação"
+  ],
+  [
+   "Bravo Jogos – Cascadia (Grok)",
+   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/cascadia-p",
+   "edição nacional, idade, componentes, preço"
+  ],
+  [
+   "Cangaia Jogos – Cascadia",
+   "https://www.cangaiajogos.com.br/cascadia",
+   "preço de referência"
+  ],
+  [
+   "Steam – Cascadia",
+   "https://store.steampowered.com/app/2438970/Cascadia/?l=brazilian",
+   "versão digital, idiomas"
   ]
  ],
  "roteiro": {
@@ -185,77 +204,140 @@
   "cena": "a misty mountain valley with a river, a bear on the bank, a hawk overhead and a salmon leaping",
   "mesa": "a box titled \"CASCADIA\" with a mountain landscape, a growing patchwork of hexagonal habitat tiles with small round wooden animal tokens on them, four tile-and-token pairs in a row and small pinecone tokens",
   "titulo": "CASCADIA",
-  "chamada": "MONTE HABITATS E RECEBA A VIDA SELVAGEM.",
+  "chamada": "MONTE HABITATS DO NOROESTE AMERICANO E POVOE CADA UM COM URSOS, ALCES, SALMÕES, FALCÕES E RAPOSAS.",
+  "destaque": "O SPIEL DES JAHRES 2022 É UM QUEBRA-CABEÇA RELAXANTE DE 30 MINUTOS, COM REGRA CURTA E UM MODO SOLO PREMIADO.",
   "lateral": [
    "1–4 jogadores",
    "30–45 minutos",
-   "complexidade 1,8 / 5",
-   "modo solo: sim",
+   "complexidade 1,8–1,9 / 5 (leve)",
+   "modo solo: oficial",
    "sem dados",
    "designer Randy Flynn",
-   "editora original Flatout",
-   "ano 2021"
+   "editora original Flatout Games",
+   "editora no Brasil Grok Games",
+   "ano 2021",
+   "idioma português (BR)"
   ],
   "numeros": [
    [
     "NOTA BGG",
-    "7,9/10"
-   ],
-   [
-    "COMPLEXIDADE",
-    "1,8/5"
+    "7,9/10",
+    "via Board Game Oracle"
    ],
    [
     "ANIMAIS",
-    "5"
+    "5",
+    "cada um pontua de um jeito"
+   ],
+   [
+    "PEÇAS",
+    "85",
+    "hexágonos de habitat"
+   ],
+   [
+    "TURNOS",
+    "20",
+    "por jogador"
    ]
   ],
+  "como_resumo": "Escolha um par de peça e animal e monte o território que mais pontua.",
   "passos": [
    [
     "ESCOLHA UM PAR",
-    "Peça de habitat e um animal."
+    "Na sua vez, pegue uma das quatro combinações de peça de habitat com ficha de animal disponíveis no centro da mesa."
    ],
    [
-    "MONTE O TERRITÓRIO",
-    "Encaixe a peça nova."
+    "ENCAIXE O HABITAT",
+    "Coloque a peça hexagonal ao lado das que você já tem. Áreas contínuas de cada habitat pontuam no fim da partida."
    ],
    [
     "SOLTE O ANIMAL",
-    "Num habitat compatível."
+    "Ponha a ficha de animal numa peça que mostre aquele bicho. Cada peça recebe um único animal durante toda a partida."
    ],
    [
-    "FORME PADRÕES",
-    "Cada animal pontua de um jeito."
+    "SIGA OS OBJETIVOS",
+    "Cartas sorteadas no início dizem como cada animal pontua: ursos em pares, salmões em correntes, falcões isolados, e assim por diante."
    ],
    [
-    "20 TURNOS",
-    "Depois disso, conte os pontos."
+    "USE AS PINHAS",
+    "Fichas de pinha deixam escolher peça e animal separados ou trocar as fichas da mesa. A partida acaba após 20 turnos."
    ]
   ],
   "fortes": [
-   "Regra simples, decisões boas.",
-   "Muita rejogabilidade.",
-   "Modo solo premiado.",
-   "Montagem quase instantânea."
+   "Regra simples e envolvente, elogiada pela IGN.",
+   "Cartas de objetivo mudam como cada animal pontua.",
+   "Modo solo levou o International Gamers Award 2023.",
+   "Preparação quase inexistente, segundo resenha no BGG.",
+   "Partidas de 30 a 45 minutos na caixa.",
+   "Edição em português da Grok desde 2022.",
+   "Variante família deixa o jogo ainda mais simples."
   ],
   "atencao": [
-   "Pouca interação.",
-   "Espera com 4 jogadores.",
-   "Componentes simples.",
-   "Sem edição nacional confirmada."
+   "Pouca interação: cada um monta o próprio território.",
+   "Espera maior com quatro jogadores, aponta um crítico.",
+   "IGN considera os componentes simples demais.",
+   "Board Game Review UK critica o encarte fraco.",
+   "Quem busca disputa direta vai achar morno.",
+   "Versão digital da Steam não tem português."
   ],
   "ficha": [
    "Designer: Randy Flynn",
-   "Editora original: Flatout Games",
-   "Ano: 2021",
    "Arte: Beth Sobel",
-   "Solo: sim"
+   "Editora original: Flatout Games (com AEG)",
+   "Editora no Brasil: Grok Games",
+   "Ano: 2021",
+   "Jogadores: 1 a 4",
+   "Duração: 30–45 min",
+   "Idade: 14+ (edição nacional)",
+   "Peso BGG: 1,8–1,9 / 5",
+   "Idioma: português (BR)",
+   "Componentes: 85 peças de habitat, 100 fichas de madeira, 21 cartas de pontuação"
   ],
   "premios": [
    "SPIEL DES JAHRES 2022",
-   "GOLDEN GEEK 2021 · JOGO LEVE",
+   "GOLDEN GEEK 2021 · JOGO DO ANO LEVE",
    "2º DEUTSCHER SPIELE PREIS 2022"
   ],
-  "veredito": "UM QUEBRA-CABEÇA DE NATUREZA IMPECÁVEL."
- }
+  "perfil": [
+   [
+    "Facilidade de ensinar",
+    5
+   ],
+   [
+    "Preparação rápida",
+    5
+   ],
+   [
+    "Modo solo",
+    5
+   ],
+   [
+    "Partida curta",
+    5
+   ],
+   [
+    "Rejogabilidade",
+    4
+   ],
+   [
+    "Jogo em família",
+    5
+   ],
+   [
+    "Interação entre jogadores",
+    1
+   ],
+   [
+    "Profundidade estratégica",
+    2
+   ]
+  ],
+  "extra": {
+   "titulo": "PREÇO DE REFERÊNCIA",
+   "texto": "Edição nacional da Grok entre R$ 296 e R$ 330 em lojas brasileiras, consultadas em 27/10/2026. Também existe versão digital para PC na Steam desde 2025, mas sem português."
+  },
+  "veredito": "UM DOS MELHORES JOGOS LEVES DA SUA GERAÇÃO.",
+  "veredito_texto": "Cascadia é um quebra-cabeça relaxante e muito rejogável, com regra curta, preparação rápida e um modo solo premiado. Quase não há interação entre os jogadores, mas por cerca de R$ 300 é compra certa para família, casal ou quem joga sozinho e quer partidas de meia hora."
+ },
+ "legenda": "Monte habitats, solte ursos, salmões e falcões e pontue com padrões. 🐻🌲\n\nCascadia venceu o Spiel des Jahres 2022 e o Golden Geek de Jogo do Ano leve 2021.\nRegra curta, preparação quase instantânea e um modo solo premiado no International Gamers Award.\nQuase não há interação, mas como jogo leve para família e casal é dos melhores da sua geração.\nVeredito: RECOMENDADO.\n\nQual animal sempre bagunça o seu território?\nResenha completa no link da bio.\n\n#Cascadia #SpielDesJahres #JogosDeTabuleiro #BoardGames #Boardgamer #JogoEmFamilia #JogoSolo #Grok #EliteBoardgamers #TilePlacement"
 }

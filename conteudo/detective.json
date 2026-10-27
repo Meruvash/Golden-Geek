@@ -59,7 +59,7 @@
   ],
   [
    "Editora no Brasil",
-   "não confirmado nas fontes consultadas"
+   "não encontrada nas lojas e fontes consultadas"
   ],
   [
    "Jogadores",
@@ -92,6 +92,14 @@
   [
    "Casos",
    "5"
+  ],
+  [
+   "Componentes",
+   "175 cartas de pista, tabuleiro, 5 personagens, livro de casos, fichas de autoridade, estresse e habilidade"
+  ],
+  [
+   "Idioma",
+   "inglês (publicado em 10 idiomas, segundo a Portal Games)"
   ]
  ],
  "nota_ficha": "Não encontramos a nota e o peso atuais do BGG nas fontes consultadas.",
@@ -179,6 +187,11 @@
    "Co-op Board Games – Detective",
    "https://coopboardgames.com/cooperative-board-game-reviews/detective-a-modern-crime-board-game-review/",
    "crítica geral"
+  ],
+  [
+   "Portal Games – Detective: Season One",
+   "https://shopportalgames.com/products/detective-season-one",
+   "versão curta, idiomas, cópias vendidas"
   ]
  ],
  "roteiro": {
@@ -186,77 +199,139 @@
   "cena": "two detectives at a desk at night with a laptop, case files and an evidence board connected with red string",
   "mesa": "a box titled \"DETECTIVE\" with a city skyline, stacks of numbered case cards, a case file folder, a time track board, and a laptop showing a database",
   "titulo": "DETECTIVE",
-  "chamada": "SIGA AS PISTAS ANTES QUE O PRAZO ACABE.",
+  "chamada": "CINCO CASOS POLICIAIS LIGADOS, UM BANCO DE DADOS ONLINE E UM PRAZO QUE NÃO PERDOA NENHUMA PISTA ERRADA.",
+  "destaque": "VENCEDOR DO AS D'OR EXPERT 2019. A INVESTIGAÇÃO MAIS COMPLETA DO TABULEIRO, COM BUSCAS REAIS NA INTERNET E MUITA DISCUSSÃO.",
   "lateral": [
    "1–5 jogadores",
-   "120–180 minutos",
+   "120–180 min por caso",
    "idade 16+",
    "modo solo: sim",
    "sem dados",
-   "designer Ignacy Trzewiczek",
+   "designers Trzewiczek, Rymer e Łapot",
    "editora original Portal Games",
-   "ano 2018"
+   "edição nacional: não encontrada",
+   "ano 2018",
+   "idioma inglês"
   ],
   "numeros": [
    [
     "CRÍTICA",
-    "85/100"
+    "85/100",
+    "média de 20 resenhas"
    ],
    [
     "CASOS",
-    "5"
+    "5",
+    "uma campanha ligada"
    ],
    [
-    "JOGADORES",
-    "1–5"
+    "PISTAS",
+    "175",
+    "35 cartas por caso"
+   ],
+   [
+    "IDIOMAS",
+    "10",
+    "segundo a Portal Games"
    ]
   ],
+  "como_resumo": "Investigue em equipe, gaste horas do prazo com cada pista e responda às perguntas.",
   "passos": [
    [
-    "LEIA O CASO",
-    "O relatório abre a investigação."
+    "ABRA O CASO",
+    "Cada caso começa com um relatório e perguntas a responder. O grupo inteiro trabalha junto como uma equipe de investigadores."
    ],
    [
-    "ESCOLHA PISTAS",
-    "Cada uma custa horas."
+    "ESCOLHA AS PISTAS",
+    "Cada pista seguida é uma carta numerada e custa de 1 a 3 horas no relógio do jogo. Escolher o que investigar é a decisão central."
    ],
    [
-    "CONSULTE A BASE",
-    "Banco de dados online."
+    "CONSULTE A ANTARES",
+    "Cartas com o símbolo @ mandam ao banco de dados online, que simula arquivos da polícia, do FBI e de agências federais."
    ],
    [
-    "CRUZE AS PROVAS",
-    "Mapas, buscas e cartas."
+    "PESQUISE DE VERDADE",
+    "O jogo incentiva fontes reais, como buscas na internet e mapas, para cruzar nomes, lugares e datas do caso."
    ],
    [
-    "RESOLVA",
-    "Responda e veja a pontuação."
+    "FECHE O RELATÓRIO",
+    "Quando o prazo acaba, o grupo responde às perguntas do caso e recebe uma pontuação pelos acertos e pelas provas."
    ]
   ],
   "fortes": [
-   "Sensação de investigação real.",
-   "Banco de dados divertido.",
-   "Decisões sob pressão de tempo.",
-   "Muito bem avaliado."
+   "Banco de dados online dá clima de agência real.",
+   "Cada pista custa horas: decidir o que seguir pesa.",
+   "Buscas reais na internet entram na investigação.",
+   "Média de 85/100 em 20 resenhas especializadas.",
+   "Cinco casos ligados formam uma campanha.",
+   "Funciona sozinho ou com até cinco investigadores."
   ],
   "atencao": [
-   "Casos muito longos.",
-   "Texto às vezes prolixo.",
-   "Só cinco casos.",
-   "Exige internet."
+   "Board Game Quest relata casos de 3 a 4 horas.",
+   "Escrita prolixa em alguns trechos, diz a mesma resenha.",
+   "Resolvidos os cinco casos, não há por que rejogar.",
+   "Precisa de internet durante toda a partida.",
+   "Sem edição em português encontrada nas lojas.",
+   "Muito texto em inglês: exige leitura fluente."
   ],
   "ficha": [
-   "Designers: Trzewiczek, Rymer e Łapot",
+   "Designers: Ignacy Trzewiczek, Przemysław Rymer e Jakub Łapot",
    "Editora original: Portal Games",
+   "Edição nacional: não encontrada",
    "Ano: 2018",
+   "Jogadores: 1 a 5",
+   "Duração: 120–180 min por caso",
    "Idade: 16+",
-   "Casos: 5"
+   "Idioma: inglês",
+   "Casos: 5 (35 cartas de pista cada)",
+   "Componentes: 175 cartas de pista, tabuleiro, 5 personagens, livro de casos",
+   "Banco de dados: Antares, online"
   ],
   "premios": [
    "AS D'OR 2019 · EXPERT",
    "INDICADO KENNERSPIEL 2019",
    "3º GOLDEN GEEK 2018 · COOPERATIVO"
   ],
-  "veredito": "A INVESTIGAÇÃO MAIS COMPLETA DOS JOGOS."
- }
+  "perfil": [
+   [
+    "Investigação e dedução",
+    5
+   ],
+   [
+    "Narrativa",
+    5
+   ],
+   [
+    "Cooperação",
+    5
+   ],
+   [
+    "Modo solo",
+    4
+   ],
+   [
+    "Rejogabilidade",
+    0
+   ],
+   [
+    "Partida curta",
+    0
+   ],
+   [
+    "Facilidade de ensinar",
+    3
+   ],
+   [
+    "Jogo sem internet",
+    0
+   ]
+  ],
+  "extra": {
+   "titulo": "VERSÃO MAIS CURTA",
+   "texto": "Detective: Season One é uma caixa independente da Portal Games com três casos de cerca de 90 minutos cada, boa porta de entrada antes da campanha completa."
+  },
+  "veredito": "A INVESTIGAÇÃO MAIS COMPLETA DO TABULEIRO.",
+  "veredito_texto": "Detective é a experiência de investigação mais completa que um jogo de tabuleiro oferece, com banco de dados online, buscas reais e decisões sob pressão de tempo. Os casos são longos, não se repetem e o texto é todo em inglês, mas para quem ama histórias policiais e lê bem em inglês é marcante."
+ },
+ "legenda": "Cinco casos, um banco de dados online e um prazo que não perdoa pista errada. 🕵️\n\nDetective venceu o As d'Or Expert 2019 e foi indicado ao Kennerspiel 2019.\nO grupo investiga junto, gasta horas do prazo com cada pista e faz buscas reais na internet.\nOs casos são longos e em inglês, mas é a investigação mais completa do tabuleiro.\nVeredito: RECOMENDADO PARA PÚBLICO ESPECÍFICO.\n\nVocê seria o detetive que lê tudo ou o que chuta o culpado?\nResenha completa no link da bio.\n\n#Detective #PortalGames #JogosDeTabuleiro #BoardGames #Boardgamer #Investigacao #Cooperativo #AsDOr #EliteBoardgamers #MysteryGames"
 }

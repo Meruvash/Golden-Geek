@@ -58,7 +58,7 @@
   ],
   [
    "Editora no Brasil",
-   "não confirmado nas fontes consultadas"
+   "MeepleBR"
   ],
   [
    "Jogadores",
@@ -70,7 +70,7 @@
   ],
   [
    "Idade",
-   "não confirmado nas fontes consultadas"
+   "10+"
   ],
   [
    "Nota BGG",
@@ -91,6 +91,14 @@
   [
    "Componentes",
    "Trem de papelão montado em 3D"
+  ],
+  [
+   "Componentes",
+   "trem 3D (locomotiva e 6 vagões), 10 peças de cenário, 6 bandidos de madeira, xerife, 18 sacos de dinheiro, 6 joias, 2 maletas, 17 cartas de rodada"
+  ],
+  [
+   "Cópias vendidas",
+   "mais de 450 mil até novembro de 2016, segundo a editora"
   ]
  ],
  "nota_ficha": "Nota do BGG de fonte secundária; o peso diverge entre as fontes e foi omitido.",
@@ -178,6 +186,16 @@
    "Meeple Mountain – Colt Express Big Box",
    "https://www.meeplemountain.com/reviews/colt-express-big-box/",
    "Big Box"
+  ],
+  [
+   "MeepleBR – Colt Express",
+   "https://www.lojameeplebrjogos.com.br/colt-express",
+   "edição nacional, componentes"
+  ],
+  [
+   "Ludosfera – Colt Express (MeepleBR)",
+   "https://ludosfera.com.br/loja/board-games/colt-express/",
+   "edição nacional, preço, estoque"
   ]
  ],
  "roteiro": {
@@ -185,77 +203,139 @@
   "cena": "cartoon bandits fighting on the roof of a steam train racing through a desert canyon at sunset, a sheriff climbing aboard",
   "mesa": "a box titled \"COLT EXPRESS\" with bandits on a train, a 3D cardboard train with several wagons on the table, small wooden bandit meeples on the roof and inside, loot bags and action cards",
   "titulo": "COLT EXPRESS",
-  "chamada": "PLANEJE O ASSALTO E VEJA TUDO DAR ERRADO.",
+  "chamada": "BANDIDOS NUM TREM 3D, AÇÕES PROGRAMADAS EM SEGREDO E UM PLANO DE ASSALTO QUE QUASE NUNCA SAI COMO VOCÊ QUERIA.",
+  "destaque": "SPIEL DES JAHRES 2015. O FAROESTE MAIS CAÓTICO DA MESA: VOCÊ PLANEJA O ASSALTO PERFEITO E RI QUANDO TUDO DESMORONA.",
   "lateral": [
    "2–6 jogadores",
    "30–40 minutos",
-   "família",
+   "idade 10+",
    "modo solo: não",
    "sem dados",
    "designer Christophe Raimbault",
    "editora original Ludonaute",
-   "ano 2014"
+   "editora no Brasil MeepleBR",
+   "ano 2014",
+   "idioma português (BR)"
   ],
   "numeros": [
    [
-    "NOTA BGG",
-    "7,0/10"
+    "CÓPIAS",
+    "450 mil",
+    "vendidas até 2016"
    ],
    [
     "JOGADORES",
-    "2–6"
+    "2–6",
+    "até 9 na Big Box"
+   ],
+   [
+    "VAGÕES",
+    "6",
+    "mais a locomotiva"
    ],
    [
     "RODADAS",
-    "5"
+    "5",
+    "por partida"
    ]
   ],
+  "como_resumo": "Programe ações em segredo, revele a pilha e veja o caos acontecer.",
   "passos": [
    [
-    "JOGUE AÇÕES",
-    "Uma carta por vez na pilha."
+    "PROGRAME AÇÕES",
+    "Cada jogador põe cartas de ação numa pilha comum, uma de cada vez, algumas viradas para baixo, conforme a carta de rodada."
    ],
    [
     "REVELE A PILHA",
-    "Tudo acontece em ordem."
+    "Depois, a pilha é virada e executada na ordem. Como os outros jogaram no meio, o plano quase nunca sai como imaginado."
    ],
    [
-    "ANDE E ATIRE",
-    "Vagões, teto e socos."
+    "ANDE E SUBA",
+    "Mova seu bandido para o vagão vizinho ou suba no teto, onde dá para andar até três vagões numa única ação."
+   ],
+   [
+    "ATIRE E SOQUE",
+    "Tiros colocam cartas de bala inúteis no baralho do alvo; socos derrubam o saque e empurram o rival para outro vagão."
    ],
    [
     "PEGUE O SAQUE",
-    "Bolsas, joias e cofre."
-   ],
-   [
-    "MAIS RICO VENCE",
-    "Depois de cinco rodadas."
+    "Recolha bolsas, joias e a maleta, fuja do xerife e, após cinco rodadas, vence o bandido mais rico do trem."
    ]
   ],
   "fortes": [
-   "Caos divertido.",
-   "Trem 3D na mesa.",
-   "Rápido e leve.",
-   "Muita gente na mesa."
+   "Planos que desmoronam rendem risada garantida na mesa.",
+   "Trem 3D montado mostra quem está em cada vagão.",
+   "Regra curta e partida de 30 a 40 minutos.",
+   "Comporta até seis jogadores na caixa básica.",
+   "Mais de 450 mil cópias vendidas até 2016.",
+   "Edição nacional da MeepleBR, em português.",
+   "Disponível para jogar online no Board Game Arena."
   ],
   "atencao": [
-   "Pouco controle.",
-   "Montagem do trem.",
-   "Pouca profundidade.",
-   "Sem edição nacional confirmada."
+   "Pouco controle: frustra quem gosta de planejar.",
+   "O trem 3D precisa ser montado e ocupa espaço.",
+   "Jogadores experientes podem achar raso.",
+   "Sem modo solo oficial.",
+   "Edição nacional esgotada em várias lojas consultadas.",
+   "Tiros enchem a mão de balas inúteis e travam jogadas."
   ],
   "ficha": [
    "Designer: Christophe Raimbault",
+   "Arte: Ian Parovel e Jordi Valbuena",
    "Editora original: Ludonaute",
+   "Editora no Brasil: MeepleBR",
    "Ano: 2014",
-   "Jogadores: 2 a 6",
-   "Trem 3D de papelão"
+   "Jogadores: 2 a 6 (até 9 na Big Box)",
+   "Duração: 30–40 min",
+   "Idade: 10+",
+   "Idioma: português (BR)",
+   "Componentes: trem 3D com locomotiva e 6 vagões, 6 bandidos, 18 sacos de dinheiro, 6 joias, 2 maletas"
   ],
   "premios": [
    "SPIEL DES JAHRES 2015",
-   "AS D'OR 2015",
+   "AS D'OR 2015 · JEU DE L'ANNÉE",
    "3º DEUTSCHER SPIELE PREIS 2015"
   ],
-  "veredito": "UM CLÁSSICO CAÓTICO PARA A FAMÍLIA."
- }
+  "perfil": [
+   [
+    "Diversão em grupo",
+    5
+   ],
+   [
+    "Facilidade de ensinar",
+    5
+   ],
+   [
+    "Partida curta",
+    5
+   ],
+   [
+    "Interação entre jogadores",
+    5
+   ],
+   [
+    "Jogo em família",
+    5
+   ],
+   [
+    "Controle e planejamento",
+    1
+   ],
+   [
+    "Profundidade estratégica",
+    1
+   ],
+   [
+    "Modo solo",
+    0
+   ]
+  ],
+  "extra": {
+   "titulo": "EXPERIMENTE ONLINE",
+   "texto": "Colt Express está no Board Game Arena, onde dá para aprender e jogar de graça com amigos. A Big Box de 2022 junta o jogo base com duas expansões e leva até nove jogadores."
+  },
+  "veredito": "UM CLÁSSICO CAÓTICO PARA A FAMÍLIA.",
+  "veredito_texto": "Colt Express é um faroeste leve e caótico, com um trem de verdade sobre a mesa e planos que desmoronam de um jeito engraçado. Falta controle para quem gosta de planejar e a edição nacional anda esgotada, mas para família e grupos grandes continua um clássico que vale a pena ter."
+ },
+ "legenda": "Planeje o assalto perfeito… e veja tudo dar errado. 🚂🤠\n\nColt Express venceu o Spiel des Jahres e o As d'Or em 2015.\nCartas programadas em segredo, um trem 3D na mesa e bandidos trocando tiros e socos pelo saque.\nFalta controle para quem gosta de planejar, mas para família e grupos grandes continua um clássico.\nVeredito: RECOMENDADO.\n\nVocê seria o bandido que atira ou o que foge com a maleta?\nResenha completa no link da bio.\n\n#ColtExpress #SpielDesJahres #JogosDeTabuleiro #BoardGames #Boardgamer #JogoEmFamilia #Faroeste #MeepleBR #EliteBoardgamers #FamilyGames"
 }

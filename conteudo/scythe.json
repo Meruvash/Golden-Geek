@@ -1,0 +1,393 @@
+{
+ "slug": "scythe",
+ "jogo": "Scythe",
+ "cor": "#8c6b3f",
+ "kicker": "Resenha · Estratégia assimétrica",
+ "og_titulo": "Scythe vale a pena? Resenha Elite Boardgamers",
+ "descricao": "Resenha de Scythe, vencedor de cinco Golden Geek em 2016 incluindo Jogo do Ano e do As d'Or Expert 2017: como funciona, pontos fortes, pontos de atenção e para quem é.",
+ "titulo_html": "Mechs, camponeses e uma economia afiada: <span>Scythe</span>",
+ "lede": "Scythe é um jogo de estratégia assimétrico numa Europa alternativa dos anos 1920, em que cada facção expande território, produz recursos e constrói mechs. Venceu cinco Golden Geek em 2016, incluindo Jogo do Ano, e o As d'Or Expert 2017.",
+ "tags": [
+  "1–5 jogadores",
+  "90–115 min",
+  "Estratégia",
+  "Assimétrico",
+  "Solo"
+ ],
+ "alt": "Infográfico Elite Boardgamers sobre o jogo Scythe",
+ "premiacoes": [
+  {
+   "premio": "As d'Or",
+   "ano": 2017,
+   "categoria": "Jeu de l’Année Expert",
+   "colocacao": 1,
+   "resultado": "vencedor",
+   "fonte": "https://fr.wikipedia.org/wiki/As_d%27Or",
+   "rotulo": "Vencedor"
+  },
+  {
+   "premio": "Golden Geek",
+   "ano": 2016,
+   "categoria": "Jogo do Ano",
+   "colocacao": 1,
+   "resultado": "vencedor",
+   "fonte": "https://meruvash.github.io/Golden-Geek/",
+   "rotulo": "Vencedor"
+  },
+  {
+   "premio": "Golden Geek",
+   "ano": 2016,
+   "categoria": "Arte",
+   "colocacao": 1,
+   "resultado": "vencedor",
+   "fonte": "https://meruvash.github.io/Golden-Geek/",
+   "rotulo": "Vencedor"
+  },
+  {
+   "premio": "Golden Geek",
+   "ano": 2016,
+   "categoria": "Solo",
+   "colocacao": 1,
+   "resultado": "vencedor",
+   "fonte": "https://meruvash.github.io/Golden-Geek/",
+   "rotulo": "Vencedor"
+  },
+  {
+   "premio": "Golden Geek",
+   "ano": 2016,
+   "categoria": "Estratégia",
+   "colocacao": 1,
+   "resultado": "vencedor",
+   "fonte": "https://meruvash.github.io/Golden-Geek/",
+   "rotulo": "Vencedor"
+  },
+  {
+   "premio": "Golden Geek",
+   "ano": 2016,
+   "categoria": "Temático",
+   "colocacao": 1,
+   "resultado": "vencedor",
+   "fonte": "https://meruvash.github.io/Golden-Geek/",
+   "rotulo": "Vencedor"
+  },
+  {
+   "premio": "Golden Geek",
+   "ano": 2016,
+   "categoria": "Inovação",
+   "colocacao": 2,
+   "resultado": "top 3",
+   "fonte": "https://meruvash.github.io/Golden-Geek/",
+   "rotulo": "2º lugar"
+  }
+ ],
+ "ficha": [
+  [
+   "Ano",
+   "2016"
+  ],
+  [
+   "Designer",
+   "Jamey Stegmaier"
+  ],
+  [
+   "Arte",
+   "Jakub Różalski"
+  ],
+  [
+   "Editora original",
+   "Stonemaier Games"
+  ],
+  [
+   "Editora no Brasil",
+   "Ludofy"
+  ],
+  [
+   "Jogadores",
+   "1 a 5"
+  ],
+  [
+   "Duração anunciada",
+   "90 a 115 minutos (preparação de cerca de 10 minutos)"
+  ],
+  [
+   "Idade",
+   "14+"
+  ],
+  [
+   "Nota BGG",
+   "não confirmado nas fontes consultadas"
+  ],
+  [
+   "Peso",
+   "pesado, segundo a Stonemaier; médio-pesado, segundo a Punchboard"
+  ],
+  [
+   "Nota Ludopedia",
+   "não confirmado nas fontes consultadas"
+  ],
+  [
+   "Modo solo oficial",
+   "Sim (Automa, de Morten Monrad Pedersen)"
+  ],
+  [
+   "Componentes",
+   "20 mechs e 5 personagens de plástico, 48 trabalhadores de madeira, 80 recursos de madeira, 80 moedas de papelão, 42 cartas de combate, 28 cartas de encontro"
+  ],
+  [
+   "Cópias vendidas",
+   "mais de 382 mil até abril de 2021"
+  ]
+ ],
+ "nota_ficha": "A nota e o peso numérico do BGG não foram confirmados nas fontes consultadas.",
+ "como_funciona": [
+  "Cada jogador comanda uma facção com habilidades próprias e um tabuleiro de jogador que define as ações. Na sua vez, você escolhe uma das quatro seções do tabuleiro, diferente da escolhida no turno anterior.",
+  "Cada seção tem uma ação de cima (mover, produzir, negociar ou reforçar) e uma de baixo (melhorar, construir mechs, erguer estruturas ou recrutar). As ações de cima geram recursos que pagam as de baixo.",
+  "Cumprir objetivos, como colocar os quatro mechs ou vencer combates, dá estrelas. Quando alguém coloca a sexta estrela, o jogo acaba na hora; vence quem tiver mais moedas, multiplicadas pela popularidade."
+ ],
+ "funciona": [
+  [
+   "Assimetria equilibrada",
+   "A Board Game Quest e a Punchboard não encontraram facção dominante; a Punchboard chama o jogo de muito bem equilibrado."
+  ],
+  [
+   "Arte e produção",
+   "A Board Game Quest chama a arte de Jakub Różalski de belíssima e elogia as miniaturas e os tabuleiros de dupla camada."
+  ],
+  [
+   "Ótimo solo",
+   "O Automa incluso é, para a Board Game Quest, um ótimo oponente."
+  ],
+  [
+   "Ameaça vale mais que a luta",
+   "A Punchboard destaca que o risco de combate move o jogo mais do que o combate em si."
+  ],
+  [
+   "Muito jogo pela caixa",
+   "A Punchboard fala em muito conteúdo pelo preço e em partidas sempre diferentes."
+  ]
+ ],
+ "atencao": [
+  [
+   "Moderada",
+   "Não é jogo de guerra",
+   "A Punchboard alerta que a caixa sugere combate de mechs, mas é um eurogame de economia e território."
+  ],
+  [
+   "Moderada",
+   "Primeiras partidas lentas",
+   "A Punchboard descreve explicações demoradas; a Board Game Quest diz que novatos sofrem contra veteranos."
+  ],
+  [
+   "Leve",
+   "Encontros com sorte",
+   "A Board Game Quest acha as cartas de encontro fracas e diz que a sorte delas destoa do resto."
+  ],
+  [
+   "Leve",
+   "Fraco com dois",
+   "A Board Game Quest achou a partida a 2 solta e sem tensão."
+  ],
+  [
+   "Leve",
+   "Facções ausentes no mapa",
+   "O tabuleiro cita facções que só vêm na expansão, o que a Board Game Quest sentiu como incompleto."
+  ]
+ ],
+ "para_quem": [
+  "Gosta de eurogames de economia com interação",
+  "Joga com 3 a 5 pessoas ou sozinho",
+  "Valoriza arte e produção caprichadas"
+ ],
+ "nao_e_para": [
+  "Quer combate frequente de miniaturas",
+  "Joga quase sempre a dois",
+  "Tem um grupo que não gosta de partidas longas"
+ ],
+ "selo": "Recomendado",
+ "veredito": "Scythe junta economia de eurogame, assimetria bem equilibrada e uma das produções mais bonitas do tabuleiro, com um solo muito bom. O combate é raro, as primeiras partidas são lentas e a 2 perde tensão, mas para grupos de 3 a 5 que gostam de estratégia é um clássico moderno.",
+ "tagline": "Expanda, produza e intimide: a guerra quase nunca acontece.",
+ "consulta": "27/10/2026",
+ "fontes": [
+  [
+   "Stonemaier Games – Scythe",
+   "https://stonemaiergames.com/games/scythe/",
+   "página da editora, componentes, duração"
+  ],
+  [
+   "Wikipedia – Scythe",
+   "https://en.wikipedia.org/wiki/Scythe_(board_game)",
+   "regras, idade, vendas, versão digital, expansões"
+  ],
+  [
+   "Board Game Quest – Scythe",
+   "https://www.boardgamequest.com/scythe-review/",
+   "crítica"
+  ],
+  [
+   "Punchboard – Scythe",
+   "https://punchboard.co.uk/scythe-review",
+   "crítica"
+  ],
+  [
+   "analog.games – Scythe",
+   "https://analog.games/gameItem/show/419cd83f9701e6b4019704829d3908b5/scythe?lang=PT",
+   "editoras, incluindo a brasileira"
+  ],
+  [
+   "Ludopedia – Scythe",
+   "https://ludopedia.com.br/jogo/scythe",
+   "edição nacional"
+  ],
+  [
+   "Golden Geek 2015–2025 (consulta)",
+   "https://meruvash.github.io/Golden-Geek/",
+   "Golden Geek"
+  ],
+  [
+   "Wikipedia – As d'Or",
+   "https://fr.wikipedia.org/wiki/As_d%27Or",
+   "As d'Or"
+  ]
+ ],
+ "roteiro": {
+  "tema": "alternate-history 1920s Eastern European countryside, dieselpunk giant mechs walking among farm fields, peasants with harvests, misty golden-hour light, muted ochre, olive green and rust palette, painterly Jakub Rozalski style",
+  "cena": "a peasant woman with a rifle and her bear watching a towering dieselpunk mech stride across autumn wheat fields, a village and factory smoke in the distance",
+  "mesa": "a large box titled \"SCYTHE\" with painterly mech art, a big hex map board of Europa, five faction mats and double-layered player mats with wooden cubes in sockets, plastic mech and hero miniatures, wooden workers, resource tokens (wheat, metal, oil, wood), cardboard coins and combat cards",
+  "titulo": "SCYTHE",
+  "chamada": "CINCO FACÇÕES NUMA EUROPA ALTERNATIVA DOS ANOS 1920: EXPANDA TERRITÓRIO, PRODUZA RECURSOS E CONSTRUA MECHS GIGANTES.",
+  "destaque": "O GRANDE VENCEDOR DO GOLDEN GEEK 2016. PARECE JOGO DE GUERRA, MAS É UM EUROGAME DE ECONOMIA EM QUE A AMEAÇA VALE MAIS QUE A LUTA.",
+  "lateral": [
+   "1–5 jogadores",
+   "90–115 minutos",
+   "complexidade pesada (Stonemaier)",
+   "modo solo: oficial (Automa)",
+   "sem dados",
+   "designer Jamey Stegmaier",
+   "editora original Stonemaier Games",
+   "editora no Brasil Ludofy",
+   "ano 2016",
+   "idade 14+"
+  ],
+  "numeros": [
+   [
+    "CÓPIAS",
+    "382 mil",
+    "vendidas até 2021"
+   ],
+   [
+    "FACÇÕES",
+    "5",
+    "cada uma com poder próprio"
+   ],
+   [
+    "MECHS",
+    "20",
+    "4 por facção"
+   ],
+   [
+    "ESTRELAS",
+    "6",
+    "a sexta encerra o jogo"
+   ]
+  ],
+  "como_resumo": "Escolha uma seção do tabuleiro, faça a ação de cima e pague a de baixo.",
+  "passos": [
+   [
+    "ESCOLHA A SEÇÃO",
+    "Na sua vez, mova o peão para uma das quatro seções do seu tabuleiro, sempre diferente da escolhida no turno anterior."
+   ],
+   [
+    "AÇÃO DE CIMA",
+    "Mova unidades, produza recursos, negocie recursos ou popularidade, ou reforce o poder militar. É ela que alimenta o seu motor."
+   ],
+   [
+    "AÇÃO DE BAIXO",
+    "Pague recursos para melhorar o tabuleiro, construir mechs, erguer estruturas ou recrutar. Cada compra deixa o seu motor mais forte."
+   ],
+   [
+    "DISPUTE O MAPA",
+    "Ao entrar num território rival há combate: cada lado escolhe poder em segredo e soma cartas de combate. Encontros dão bônus pelo caminho."
+   ],
+   [
+    "GANHE ESTRELAS",
+    "Objetivos como colocar os quatro mechs dão estrelas. Na sexta estrela o jogo acaba; vence quem tiver mais moedas."
+   ]
+  ],
+  "fortes": [
+   "Cinco facções assimétricas e bem equilibradas, dizem as críticas.",
+   "Arte de Jakub Różalski, uma das mais bonitas do tabuleiro.",
+   "Miniaturas e tabuleiros de dupla camada caprichados.",
+   "Automa incluso é um ótimo oponente solo.",
+   "A ameaça de combate move o jogo inteiro.",
+   "Combinações de facção e tabuleiro mudam cada partida.",
+   "Sem eliminação: ninguém sai do jogo antes do fim."
+  ],
+  "atencao": [
+   "Caixa sugere guerra, mas o combate é raro.",
+   "Primeiras explicações são lentas, diz a Punchboard.",
+   "Novatos sofrem contra veteranos, aponta a Board Game Quest.",
+   "Cartas de encontro trazem sorte que destoa do resto.",
+   "A dois jogadores a partida fica solta e sem tensão.",
+   "Mapa cita facções que só vêm na expansão."
+  ],
+  "ficha": [
+   "Designer: Jamey Stegmaier",
+   "Arte: Jakub Różalski",
+   "Editora original: Stonemaier Games",
+   "Editora no Brasil: Ludofy",
+   "Ano: 2016",
+   "Jogadores: 1 a 5",
+   "Duração: 90–115 min",
+   "Idade: 14+",
+   "Solo: Automa, de Morten Monrad Pedersen",
+   "Componentes: 20 mechs, 5 heróis, 48 trabalhadores, 80 recursos",
+   "Cartas: 42 de combate, 28 de encontro, 23 de objetivo"
+  ],
+  "premios": [
+   "GOLDEN GEEK 2016 · JOGO DO ANO",
+   "AS D'OR 2017 · EXPERT",
+   "GOLDEN GEEK 2016 · ARTE, SOLO E ESTRATÉGIA"
+  ],
+  "perfil": [
+   [
+    "Estratégia e economia",
+    5
+   ],
+   [
+    "Arte e produção",
+    5
+   ],
+   [
+    "Modo solo",
+    5
+   ],
+   [
+    "Rejogabilidade",
+    4
+   ],
+   [
+    "Interação entre jogadores",
+    3
+   ],
+   [
+    "Combate frequente",
+    1
+   ],
+   [
+    "Facilidade de ensinar",
+    2
+   ],
+   [
+    "Partida a dois",
+    2
+   ]
+  ],
+  "extra": {
+   "titulo": "EXPERIMENTE NO DIGITAL",
+   "texto": "Scythe: Digital Edition saiu na Steam em 2018 e chegou ao celular em 2020. As expansões Invaders from Afar, The Wind Gambit e The Rise of Fenris ampliam a caixa base."
+  },
+  "veredito": "UM CLÁSSICO MODERNO DA ESTRATÉGIA.",
+  "veredito_texto": "Scythe junta economia de eurogame, cinco facções assimétricas bem equilibradas e uma das produções mais bonitas do tabuleiro, com um solo muito bom. O combate é raro, as primeiras partidas são lentas e a dois perde tensão, mas para grupos de três a cinco que gostam de estratégia é compra de coleção."
+ },
+ "legenda": "Mechs gigantes, camponeses e uma economia afiada numa Europa alternativa dos anos 1920. ⚙️🌾\n\nScythe venceu cinco Golden Geek em 2016, incluindo Jogo do Ano, e o As d'Or Expert 2017.\nParece jogo de guerra, mas é um eurogame em que a ameaça de combate vale mais que a luta.\nAs primeiras partidas são lentas e a dois perde tensão, mas para grupos de 3 a 5 é um clássico moderno.\nVeredito: RECOMENDADO.\n\nQual facção é a sua: Polania, Saxony, Crimea, Nordic ou Rusviet?\nResenha completa no link da bio.\n\n#Scythe #StonemaierGames #JogosDeTabuleiro #BoardGames #Boardgamer #Eurogame #JogoSolo #GoldenGeek #EliteBoardgamers #StrategyGames"
+}
