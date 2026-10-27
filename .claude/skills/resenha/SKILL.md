@@ -23,7 +23,7 @@ Se o jogo tiver `serie` ou outros itens da mesma série na fila (versões, sequ�
 
 - `pauta.json`: fila de jogos, regras e resenhas publicadas.
 - `resenhas/index.html`: lista de resenhas, gerada por `tools/build_lista.py` a partir de `pauta.json` (não editar à mão).
-- Cada resenha mora em `<slug>/` com `index.html`, `infografico.webp` (até ~450 KB) e `capa.jpg` (800×800, até 250 KB, usada no og:image).
+- Cada resenha mora em `<slug>/` com `index.html`, `infografico.webp` (até ~800 KB) e `capa.jpg` (800×800, até 250 KB, usada no og:image).
 
 ## Etapa 0: atualizar a pauta
 
@@ -81,7 +81,7 @@ O usuário responde em uma linha, por exemplo "aprova 1, 2 e 4; refaz a 3: <ajus
 
 ## Etapa 7: publicação
 
-1. `python3 tools/salvar_imagem.py <slug>` salva `<slug>/infografico.webp` (1600 px de largura, até ~450 KB) e `<slug>/capa.jpg` (800×800, recorte do topo) e apaga `variacao-*.png`.
+1. `python3 tools/salvar_imagem.py <slug>` salva `<slug>/infografico.webp` (1600 px de largura, até ~800 KB) e `<slug>/capa.jpg` (800×800, recorte do topo) e apaga `variacao-*.png`.
 2. `python3 tools/build_review.py conteudo/<slug>.json` gera `<slug>/index.html`.
 3. `python3 tools/publicar.py conteudo/<slug>.json` marca o jogo como `publicado` em `pauta.json` e regera `resenhas/index.html` inteira (`tools/build_lista.py`). Depois, `node tools/capa_resenhas.js` refaz `resenhas/capa.jpg` (prévia do WhatsApp da página de resenhas) com o mosaico das capas.
 4. Teste no Playwright em 390 px e 1200 px: sem erros de JS e sem rolagem horizontal.

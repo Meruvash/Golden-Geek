@@ -107,6 +107,11 @@
    "jogo": "Faraway",
    "url": "https://meruvash.github.io/Golden-Geek/faraway/",
    "data": "2026-10-27"
+  },
+  {
+   "jogo": "Gloomhaven",
+   "url": "https://meruvash.github.io/Golden-Geek/gloomhaven/",
+   "data": "2026-10-27"
   }
  ],
  "jogos": [
@@ -1134,7 +1139,7 @@
      "fonte": "https://meruvash.github.io/Golden-Geek/"
     }
    ],
-   "status": "em_producao",
+   "status": "publicado",
    "prioridade": 20,
    "premios_distintos": 2
   },
