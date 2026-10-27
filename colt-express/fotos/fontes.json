@@ -1,0 +1,53 @@
+{
+ "slug": "colt-express",
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 1535,
+   "altura": 1535,
+   "editora": "Ludonaute",
+   "credito": "Imagem: Ludonaute",
+   "pagina": "https://www.ludonaute.fr/produit/colt-express/",
+   "imagem": "https://www.ludonaute.fr/wp-content/uploads/2022/10/3DBOX_ColtExpress_2021.png",
+   "baixada_em": "2026-10-27",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/mesa-1.webp",
+   "tipo": "mesa",
+   "largura": 1600,
+   "altura": 1067,
+   "editora": "Ludonaute",
+   "credito": "Imagem: Ludonaute",
+   "pagina": "https://www.ludonaute.fr/produit/colt-express/",
+   "imagem": "https://www.data.ludonaute.fr/Colt_Express/PHOTOS/MANON/IMG_9652.jpg",
+   "baixada_em": "2026-10-27",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/jogabilidade-1.webp",
+   "tipo": "jogabilidade",
+   "largura": 1600,
+   "altura": 1066,
+   "editora": "Ludonaute",
+   "credito": "Imagem: Ludonaute",
+   "pagina": "https://www.ludonaute.fr/produit/colt-express/",
+   "imagem": "https://www.data.ludonaute.fr/Colt_Express/PHOTOS/MANON/IMG_9673.jpg",
+   "baixada_em": "2026-10-27",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/jogabilidade-2.webp",
+   "tipo": "jogabilidade",
+   "largura": 1600,
+   "altura": 1067,
+   "editora": "Ludonaute",
+   "credito": "Imagem: Ludonaute",
+   "pagina": "https://www.ludonaute.fr/produit/colt-express/",
+   "imagem": "https://www.data.ludonaute.fr/Colt_Express/PHOTOS/MANON/IMG_9670.jpg",
+   "baixada_em": "2026-10-27",
+   "aprovada": true
+  }
+ ]
+}

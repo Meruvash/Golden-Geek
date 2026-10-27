@@ -1,0 +1,65 @@
+{
+ "slug": "wingspan",
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 1600,
+   "altura": 1600,
+   "editora": "Grok Games",
+   "credito": "Imagem: Grok Games",
+   "pagina": "https://loja.grokgames.com.br/wingspan",
+   "imagem": "https://cdn.awsli.com.br/2500x2500/2899/2899778/produto/388156107/caixa-wingspan-6vtzoyzxn7.png",
+   "baixada_em": "2026-10-27",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/mesa-1.webp",
+   "tipo": "mesa",
+   "largura": 1600,
+   "altura": 1266,
+   "editora": "Stonemaier Games",
+   "credito": "Imagem: Stonemaier Games",
+   "pagina": "https://stonemaiergames.com/games/wingspan/",
+   "imagem": "https://stonemaiergames.com/wp-content/uploads/2025/04/Wingspan-Set-Up-Credit-Tim-Chuon.jpg",
+   "baixada_em": "2026-10-27",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/jogabilidade-1.webp",
+   "tipo": "jogabilidade",
+   "largura": 1600,
+   "altura": 1066,
+   "editora": "Stonemaier Games",
+   "credito": "Imagem: Stonemaier Games",
+   "pagina": "https://stonemaiergames.com/games/wingspan/",
+   "imagem": "https://stonemaiergames.com/wp-content/uploads/2023/03/A05I9632-Credit-Tim-Chuon.jpg",
+   "baixada_em": "2026-10-27",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/jogabilidade-2.webp",
+   "tipo": "jogabilidade",
+   "largura": 1600,
+   "altura": 1066,
+   "editora": "Stonemaier Games",
+   "credito": "Imagem: Stonemaier Games",
+   "pagina": "https://stonemaiergames.com/games/wingspan/",
+   "imagem": "https://stonemaiergames.com/wp-content/uploads/2025/04/Wingspan-Birds-Credit-Tim-Chuon.jpg",
+   "baixada_em": "2026-10-27",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 1600,
+   "altura": 1067,
+   "editora": "Stonemaier Games",
+   "credito": "Imagem: Stonemaier Games",
+   "pagina": "https://stonemaiergames.com/games/wingspan/",
+   "imagem": "https://stonemaiergames.com/wp-content/uploads/2018/11/IMG_0229.jpg",
+   "baixada_em": "2026-10-27",
+   "aprovada": true
+  }
+ ]
+}

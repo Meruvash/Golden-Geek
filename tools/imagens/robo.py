@@ -46,7 +46,9 @@ PISTAS = {
 }
 LIXO = r"logo|icon|sprite|flag|bandeira|payment|badge|avatar|banner|newsletter|placeholder|favicon|social|award|selo"
 EXPANSAO = {"expansion", "erweiterung", "expansao", "extension", "promo", "sleeve", "sleeves", "insert", "playmat",
-            "upgrade", "pack", "deluxe", "bundle", "kit", "acessorio", "accessories", "coin", "coins"}
+            "upgrade", "pack", "deluxe", "bundle", "kit", "acessorio", "accessories", "coin", "coins", "pin", "pins",
+            "poster", "shirt", "tshirt", "mug", "plush", "sticker", "organizer", "dice", "portraits", "portrety",
+            "calendar", "puzzle", "art", "book", "soundtrack", "neoprene", "storage"}
 
 
 class Bloqueado(Exception):
@@ -61,11 +63,11 @@ class Robots:
         self.regras = []
         self.delay = None
         self.sitemaps = []
-        if status in (401, 403) or status >= 500 or status == 0:
-            self.regras = [(False, "/")]  # inacessível ou bloqueado: não entra em nada
+        if status >= 500 or status == 0:
+            self.regras = [(False, "/")]  # servidor fora do ar ou rede caída: não entra em nada (RFC 9309, 2.3.1.4)
             return
         if status >= 400:
-            return  # sem robots.txt: tudo liberado
+            return  # robots.txt ausente (4xx, inclusive o 403 dos CDNs da S3): tudo liberado (RFC 9309, 2.3.1.3)
         grupos, atual, lendo_ua = [], None, False
         for linha in texto.splitlines():
             linha = linha.split("#", 1)[0].strip()
@@ -511,7 +513,8 @@ def buscar(cli, slug, url_fixa=None, so_editora=None):
             except Bloqueado as e:
                 info["status"] = f"bloqueado: {e}"
                 continue
-            paginas = [u for nota, u, _ in achadas if nota >= 0.5][:2]
+            topo = achadas[0][0] if achadas else 0
+            paginas = [u for nota, u, _ in achadas if nota >= 0.7 and nota >= topo - 0.1][:2]
             info["ranking"] = [(nota, u) for nota, u, _ in achadas]
         for pg in paginas:
             try:

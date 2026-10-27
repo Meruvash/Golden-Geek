@@ -8,7 +8,9 @@
   "plataforma": "html",
   "estrategia": "sitemap+html",
   "press_kit": "https://www.feuerland-spiele.de/fileadmin/catalog/FL_Katalog_Herbst_2026_web.pdf",
-  "paginas": {},
+  "paginas": {
+   "ark-nova": "https://www.feuerland-spiele.de/spielwelten/arche-nova/"
+  },
   "status": "ok",
   "obs": "",
   "robots": {
@@ -134,7 +136,7 @@
   "press_kit": null,
   "paginas": {},
   "status": "ok",
-  "obs": "",
+  "obs": "loja sklep.portalgames.pl não tem o jogo-base de Detective; só acessórios",
   "robots": {
    "status": 200,
    "crawl_delay": 1.0,
@@ -153,7 +155,9 @@
   "plataforma": "html",
   "estrategia": "sitemap+html",
   "press_kit": null,
-  "paginas": {},
+  "paginas": {
+   "dune-imperium": "https://direwolfdigital.com/dune-imperium/"
+  },
   "status": "ok",
   "obs": "",
   "robots": {
@@ -172,7 +176,9 @@
   "plataforma": "html",
   "estrategia": "sitemap+html",
   "press_kit": null,
-  "paginas": {},
+  "paginas": {
+   "endeavor-deep-sea": "https://www.burntislandgames.com/endeavordeepsea"
+  },
   "status": "ok",
   "obs": "",
   "robots": {
@@ -258,7 +264,7 @@
   "press_kit": null,
   "paginas": {},
   "status": "ok",
-  "obs": "página quase vazia sem JavaScript: pode precisar de Playwright",
+  "obs": "site montado só com JavaScript (a página do Nemesis vem vazia); precisa de Playwright",
   "robots": {
    "status": 200,
    "crawl_delay": null,
@@ -317,7 +323,9 @@
   "plataforma": "html",
   "estrategia": "sitemap+html",
   "press_kit": null,
-  "paginas": {},
+  "paginas": {
+   "sky-team": "https://scorpionmasque.com/en/sky-team"
+  },
   "status": "ok",
   "obs": "",
   "robots": {
@@ -520,7 +528,9 @@
   "plataforma": "woocommerce",
   "estrategia": "sitemap+html",
   "press_kit": null,
-  "paginas": {},
+  "paginas": {
+   "bomb-busters": "https://www.cocktailgames.com/jeu/bomb-busters/"
+  },
   "status": "ok",
   "obs": "",
   "robots": {
