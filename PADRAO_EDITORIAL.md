@@ -60,6 +60,8 @@ A página é a resenha completa: precisa ensinar o jogo, mostrar como é jogar, 
 | `preco_ref` | resumo e cartão de preço | `{faixa, data, obs}`: faixa de preço das lojas consultadas, data da consulta e observação (estoque, importado, sem edição nacional). |
 | `fontes` | Fontes | pelo menos 6, com link. |
 
+Resenhas antigas, cujo infográfico é anterior ao padrão v2, levam `passos`, `perfil` e `como_resumo` próprios no nível do site (mesmas regras do roteiro), sem mexer na imagem.
+
 Layout (gerado por `build_review.py` quando a resenha tem `experiencia`): resumo de 30 segundos no topo, passos numerados (vêm do `roteiro.passos`), faixa escura com a citação, prós e contras em cartões que abrem com um toque, barras de perfil (`roteiro.perfil`), blocos de número de jogadores, dica de primeira partida, cartão de preço, comparações com capa, e no celular ficha, prêmios, versões e fontes começam fechados.
 
 Regras de texto:

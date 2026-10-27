@@ -6,7 +6,7 @@
  "og_titulo": "Cascadia vale a pena? Resenha Elite Boardgamers",
  "descricao": "Resenha de Cascadia, vencedor do Spiel des Jahres 2022: como funciona, pontos fortes, pontos de atenção e para quem é.",
  "titulo_html": "Habitats, animais e um quebra-cabeça tranquilo: <span>Cascadia</span>",
- "lede": "Cascadia é um jogo de colocar peças em que você monta habitats e espalha animais do noroeste dos Estados Unidos para pontuar com padrões. Venceu o Spiel des Jahres em 2022, o Golden Geek de Jogo do Ano leve em 2021 e ficou em 2º no Deutscher Spiele Preis 2022.",
+ "lede": "Cascadia é um jogo de colocar peças em que cada jogador monta um território do noroeste dos Estados Unidos com habitats hexagonais e o povoa com ursos, alces, salmões, falcões e raposas. Venceu o Spiel des Jahres 2022 e o Golden Geek de Jogo do Ano leve 2021. Tem regra curta, partidas de 30 a 45 minutos e um modo solo premiado, e é das melhores portas de entrada para família e casal.",
  "tags": [
   "1–4 jogadores",
   "30–45 min",
@@ -99,62 +99,81 @@
  ],
  "nota_ficha": "Nota e peso do BGG obtidos por busca em fonte secundária.",
  "como_funciona": [
-  "Na sua vez, você escolhe uma das quatro combinações disponíveis de peça de habitat com ficha de animal e coloca as duas no seu território: a peça ao lado das que você já tem e o animal numa peça compatível.",
-  "Cada um dos cinco animais pontua de um jeito, definido por cartas de objetivo sorteadas no início: ursos em pares, salmões em correntes, falcões isolados e assim por diante. Áreas contínuas de cada habitat também pontuam.",
-  "Fichas de pinha dão flexibilidade para escolher peça e animal separados. O jogo acaba depois de 20 turnos por jogador."
+  "Cada jogador começa com uma peça inicial de três habitats. No centro da mesa ficam quatro pares, cada um com uma peça hexagonal de habitat e uma ficha de madeira de animal. Os habitats são cinco: montanha, floresta, campo, pântano e rio.",
+  "Na sua vez, você escolhe um dos quatro pares, encaixa a peça ao lado das que já tem e coloca o animal numa peça que mostre aquele bicho. Cada peça recebe um único animal, e as peças de habitat único dão uma ficha de pinha quando recebem o animal certo.",
+  "Cada animal pontua de um jeito, definido por cartas de objetivo sorteadas no início: ursos em pares, salmões em correntes, falcões isolados, e assim por diante. Como as cartas mudam de partida para partida, a mesma espécie pode pedir formatos bem diferentes.",
+  "As fichas de pinha dão flexibilidade: gastando uma, você escolhe peça e animal de pares diferentes ou descarta os animais da mesa para renovar a oferta. Quando os quatro animais disponíveis são iguais, eles são trocados automaticamente.",
+  "A partida acaba depois de 20 turnos por jogador. Pontuam os animais, de acordo com as cartas, a maior área contínua de cada habitat, com bônus para quem tiver a maior da mesa, e as pinhas que sobraram."
  ],
  "funciona": [
   [
    "Regra simples, decisões boas",
-   "A IGN, citada pela Wikipedia, elogia a simplicidade das regras e o envolvimento que ela gera."
+   "Escolher um par, encaixar a peça e soltar o animal: a regra cabe em poucos minutos, mas cada turno obriga a equilibrar habitat e animal. Para a IGN, a simplicidade das regras é justamente o que prende o jogador; a Meeple Mountain diz que há estratégia para todo mundo."
   ],
   [
    "Muita rejogabilidade",
-   "As cartas de objetivo sorteadas mudam como cada animal pontua, ponto destacado pela IGN e pela Polygon."
+   "As cartas de objetivo sorteadas mudam como cada animal pontua: numa partida, ursos valem em pares; em outra, em grupos. Isso faz o mesmo jogo pedir planos diferentes, ponto destacado pela IGN e pela Polygon, e mantém o interesse depois de muitas partidas."
   ],
   [
    "Modo solo premiado",
-   "O solo levou o International Gamers Award de melhor jogo solo em 2023."
+   "O modo solo usa as mesmas regras, com descarte automático de pares a cada turno e metas de pontuação para superar. Ele levou o International Gamers Award de melhor jogo solo em 2023 e é uma boa forma de jogar sozinho em meia hora."
   ],
   [
-   "Montagem quase instantânea",
-   "Uma resenha no BGG descreve a preparação como quase inexistente."
+   "Preparação quase instantânea",
+   "Basta separar as peças, encher o saco de fichas e sortear as cartas de objetivo. Uma resenha no BGG descreve a preparação como quase inexistente, o que faz Cascadia sair da estante com facilidade numa noite de semana."
+  ],
+  [
+   "Bom para várias idades",
+   "A Meeple Mountain conta que um menino de 7 anos aprendeu e venceu a primeira partida, e a caixa traz uma variante família e uma intermediária com objetivos mais simples. É o tipo de jogo que funciona para idades diferentes na mesma mesa."
+  ],
+  [
+   "Arte de Beth Sobel",
+   "As ilustrações de Beth Sobel dão vida a cada habitat, e a Meeple Mountain destaca a sensação de montar uma paisagem natural de verdade. No fim da partida, o território de cada jogador vira um pequeno mapa colorido sobre a mesa."
   ]
  ],
  "atencao": [
   [
    "Moderada",
    "Pouca interação",
-   "A crítica mais repetida, registrada na Wikipedia, é a falta de interação entre jogadores."
+   "A crítica mais repetida, registrada na Wikipedia, é a falta de interação: cada um monta o próprio território, e a única disputa é pegar o par que o vizinho queria. Quem gosta de atrapalhar os outros ou de conversas tensas vai achar a partida morna."
   ],
   [
    "Leve",
-   "Espera com 4 jogadores",
-   "Um crítico aponta tempo de espera maior com a mesa cheia."
+   "Espera com quatro jogadores",
+   "Com a mesa cheia, um crítico aponta mais tempo de espera entre os turnos, porque cada jogador estuda as quatro opções antes de escolher. Com dois ou três jogadores, o ritmo fica mais ágil."
   ],
   [
    "Leve",
    "Componentes simples",
-   "A IGN descreve os componentes como simples; a Board Game Review UK cita encarte fraco."
+   "A IGN descreve os componentes como simples, e a Board Game Review UK critica o encarte fraco. As peças cumprem a função, mas quem espera acabamento luxuoso, com organizadores e fichas especiais, pode se decepcionar."
   ],
   [
    "Leve",
-   "Edição nacional",
-   "Não encontramos edição brasileira nas fontes consultadas."
+   "Sorte nos pares",
+   "Os pares de peça e animal são sorteados, e às vezes a peça certa vem com o animal errado. A Meeple Mountain chama isso de problema menor, e as fichas de pinha ajudam, mas há partidas em que a sorte decide um objetivo."
+  ],
+  [
+   "Leve",
+   "Versão digital sem português",
+   "A versão para computador lançada na Steam em 2025 não tem textos em português, segundo a própria loja. A edição física da Grok está em português, então isso pesa só para quem quer jogar no computador."
   ]
  ],
  "para_quem": [
   "Quer um jogo tranquilo e bonito para família",
   "Joga sozinho ou em casal",
-  "Gosta de quebra-cabeças de padrões"
+  "Gosta de quebra-cabeças de padrões",
+  "Quer partidas de meia hora",
+  "Prefere jogos sem confronto direto"
  ],
  "nao_e_para": [
   "Busca disputa direta",
   "Quer tema forte",
-  "Prefere jogos longos e pesados"
+  "Prefere jogos longos e pesados",
+  "Procura componentes luxuosos",
+  "Joga quase sempre com quatro e não gosta de esperar"
  ],
  "selo": "Recomendado",
- "veredito": "Cascadia é um quebra-cabeça relaxante e muito rejogável, com regra curta e um ótimo modo solo. A interação é baixa, mas como jogo leve para família e casal é dos melhores da sua geração.",
+ "veredito": "Cascadia é um quebra-cabeça relaxante, bonito e muito rejogável: a regra cabe em poucos minutos, a preparação é quase instantânea e as cartas de objetivo mudam a estratégia a cada partida. O modo solo é premiado e a variante família abre espaço para crianças. Quase não há interação e a sorte nos pares às vezes atrapalha, então quem gosta de disputa direta vai achar morno. Para família, casal ou quem joga sozinho, por cerca de R$ 300, é compra certa e um dos melhores jogos leves da sua geração.",
  "tagline": "Um quebra-cabeça de natureza que cabe em 30 minutos.",
  "consulta": "27/10/2026",
  "fontes": [
@@ -330,5 +349,55 @@
   "veredito": "UM DOS MELHORES JOGOS LEVES DA SUA GERAÇÃO.",
   "veredito_texto": "Quebra-cabeça relaxante e muito rejogável, com regra curta e solo premiado. Quase não há interação, mas por cerca de R$ 300 é compra certa para família, casal ou quem joga sozinho."
  },
- "legenda": "Monte habitats, solte ursos, salmões e falcões e pontue com padrões. 🐻🌲\n\nCascadia venceu o Spiel des Jahres 2022 e o Golden Geek de Jogo do Ano leve 2021.\nRegra curta, preparação quase instantânea e um modo solo premiado no International Gamers Award.\nQuase não há interação, mas como jogo leve para família e casal é dos melhores da sua geração.\nVeredito: RECOMENDADO.\n\nQual animal sempre bagunça o seu território?\nResenha completa no link da bio.\n\n#Cascadia #SpielDesJahres #JogosDeTabuleiro #BoardGames #Boardgamer #JogoEmFamilia #JogoSolo #Grok #EliteBoardgamers #TilePlacement"
+ "legenda": "Monte habitats, solte ursos, salmões e falcões e pontue com padrões. 🐻🌲\n\nCascadia venceu o Spiel des Jahres 2022 e o Golden Geek de Jogo do Ano leve 2021.\nRegra curta, preparação quase instantânea e um modo solo premiado no International Gamers Award.\nQuase não há interação, mas como jogo leve para família e casal é dos melhores da sua geração.\nVeredito: RECOMENDADO.\n\nQual animal sempre bagunça o seu território?\nResenha completa no link da bio.\n\n#Cascadia #SpielDesJahres #JogosDeTabuleiro #BoardGames #Boardgamer #JogoEmFamilia #JogoSolo #Grok #EliteBoardgamers #TilePlacement",
+ "experiencia": [
+  "Cascadia tem um ritmo tranquilo: cada turno é uma escolha entre quatro opções visíveis, e quase sempre a melhor peça vem com o animal errado. Imagine que você precisa de um falcão isolado para completar o objetivo, mas o falcão disponível está preso a uma peça de rio que quebraria sua montanha. Pegar mesmo assim ou gastar uma pinha para separar os dois é o tipo de dilema que se repete a partida inteira.",
+  "A Meeple Mountain resume: é fácil de aprender e de jogar, e conta que uma criança de 7 anos pegou o jogo e venceu na primeira tentativa. A interação é quase toda indireta, como pegar o par que o vizinho queria, então a mesa fica concentrada e relaxada, mais perto de um quebra-cabeça compartilhado do que de uma disputa."
+ ],
+ "citacao": {
+  "texto": "Fácil de aprender e de jogar, com estratégia para todo mundo.",
+  "fonte": "Meeple Mountain (tradução livre)"
+ },
+ "jogadores": [
+  [
+   "Sozinho",
+   "Modo solo oficial, premiado no International Gamers Award 2023, com metas de pontuação para superar.",
+   3
+  ],
+  [
+   "2 ou 3 jogadores",
+   "Ritmo ágil e boa disputa pelos pares; o bônus de maior área considera o número de jogadores.",
+   3
+  ],
+  [
+   "4 jogadores",
+   "Funciona bem, mas um crítico aponta mais espera entre os turnos com a mesa cheia.",
+   2
+  ]
+ ],
+ "primeira_partida": "Dá para explicar Cascadia em poucos minutos, e a Meeple Mountain conta que uma criança de 7 anos venceu a primeira partida. Para a estreia, use a carta de variante família, que simplifica os objetivos, e lembre o grupo de que cada peça recebe um único animal. O ponto que mais confunde é a ficha de pinha: vale mostrar logo no começo como ela separa peça e animal.",
+ "edicao_nacional": "A Grok Games lançou Cascadia em português em agosto de 2022, com o conteúdo da caixa original: 85 peças de habitat, 100 fichas de madeira de animais e 21 cartas de pontuação. Em 27/10/2026, as lojas consultadas vendiam o jogo entre R$ 296 e R$ 330. A caixa nacional indica 14 anos ou mais, embora a regra seja leve.",
+ "preco_ref": {
+  "faixa": "R$ 296 a R$ 330",
+  "data": "27/10/2026",
+  "obs": "edição da Grok em português"
+ },
+ "versoes": "A versão digital oficial, desenvolvida pela Dire Wolf, chegou à Steam em fevereiro de 2025, mas sem textos em português. Nas lojas brasileiras consultadas, a edição da Grok aparece sozinha, sem expansões em português à venda.",
+ "comparacoes": [
+  [
+   "Wingspan",
+   "wingspan",
+   "Outro jogo de natureza bonito e relaxante, com cartas de aves e um motor que cresce a cada rodada. É um pouco mais longo e mais estratégico que Cascadia."
+  ],
+  [
+   "Azul",
+   "azul",
+   "Também é um quebra-cabeça de peças premiado com o Spiel des Jahres, mas com mais disputa: o que você deixa na mesa pode prejudicar o vizinho."
+  ],
+  [
+   "Faraway",
+   "faraway",
+   "Para quem gosta de jogo rápido e de padrões, Faraway entrega um dilema esperto em 15 minutos, com cartas em vez de peças."
+  ]
+ ]
 }

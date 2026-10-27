@@ -6,7 +6,7 @@
  "og_titulo": "Detective vale a pena? Resenha Elite Boardgamers",
  "descricao": "Resenha de Detective: A Modern Crime Board Game, vencedor do As d'Or Expert 2019: como funciona, pontos fortes, pontos de atenção e para quem é.",
  "titulo_html": "Pistas, banco de dados e o relógio correndo: <span>Detective</span>",
- "lede": "Detective coloca o grupo como investigadores de uma agência, seguindo pistas em cartas e num banco de dados online para resolver cinco casos. Venceu o As d'Or Expert em 2019, foi indicado ao Kennerspiel des Jahres 2019 e ficou em 3º no Golden Geek de Cooperativo 2018.",
+ "lede": "Detective é um jogo cooperativo de investigação policial em que o grupo resolve cinco casos ligados, seguindo pistas em cartas e consultando um banco de dados online que simula arquivos da polícia e do FBI. Venceu o As d'Or Expert 2019 e foi indicado ao Kennerspiel 2019. É a investigação mais completa do tabuleiro, mas pede casos de várias horas, internet e inglês fluente, já que não há edição nacional.",
  "tags": [
   "1–5 jogadores",
   "120–180 min",
@@ -104,62 +104,86 @@
  ],
  "nota_ficha": "Não encontramos a nota e o peso atuais do BGG nas fontes consultadas.",
  "como_funciona": [
-  "O grupo trabalha junto como investigadores. Cada caso começa com um relatório; as pistas levam a cartas numeradas que contam o que vocês descobrem.",
-  "Cada pista seguida custa tempo, normalmente de 1 a 3 horas no relógio do jogo, e o prazo do caso é limitado. Escolher o que investigar é a decisão central.",
-  "O jogo usa um banco de dados online próprio e incentiva consultar fontes reais, como buscas na internet e mapas. No fim, o grupo responde às perguntas do caso e recebe uma pontuação."
+  "Os jogadores formam uma equipe de investigadores da agência Antares, e cada um escolhe um personagem com uma habilidade especial. A caixa traz cinco casos que formam uma campanha, com 35 cartas de pista cada. Cada caso começa com um relatório que apresenta o crime e as perguntas a responder.",
+  "Investigar é escolher pistas. As cartas indicam lugares, pessoas e documentos a seguir, cada um com um número; ler uma carta custa de uma a três horas no relógio do jogo, e o caso tem um prazo em dias. O tempo é o recurso mais precioso, então seguir tudo é impossível.",
+  "Quando uma carta mostra o símbolo @, o grupo consulta o banco de dados Antares, um site que simula registros da polícia, do FBI, do exército e de agências federais. Basta digitar o nome ou o número indicado para encontrar fichas, depoimentos e relatórios que ligam as pistas.",
+  "O jogo também incentiva fontes reais, como buscas na internet e mapas, para conferir endereços, datas e pessoas. Fichas de autoridade, estresse e habilidade permitem ações especiais durante a investigação, mas cada uso tem um custo.",
+  "Quando o prazo acaba ou o grupo decide encerrar, vem o relatório final: vocês respondem às perguntas do caso e recebem uma pontuação pelos acertos e pela qualidade das provas. Os casos seguintes continuam a mesma história."
  ],
  "funciona": [
   [
-   "Sensação de investigação real",
-   "Usar banco de dados, mapas e buscas reais faz o grupo se sentir numa agência, o que a Board Game Quest elogia."
+   "Investigação de verdade",
+   "O banco de dados Antares, as buscas reais na internet e os mapas fazem o grupo trabalhar como uma agência de verdade, cruzando nomes e datas. A Board Game Quest destaca os momentos de descoberta, quando uma prova se encaixa e o caso muda de direção."
   ],
   [
-   "Banco de dados divertido",
-   "A mesma resenha chama o banco de dados online de muito divertido."
+   "Tempo como recurso",
+   "Cada pista custa horas do prazo, então a decisão central não é o que fazer, e sim o que deixar de lado. Isso cria debates de verdade à mesa, como escolher entre voltar ao suspeito principal ou seguir uma testemunha nova."
   ],
   [
-   "Decisões sob pressão de tempo",
-   "Cada pista custa horas do prazo, então escolher o que seguir pesa."
+   "Regras que não atrapalham",
+   "As regras são fáceis de aprender, segundo a Board Game Quest, e ficam em segundo plano: quase todo o tempo é gasto lendo, discutindo e investigando. Para a mesma resenha, é uma ótima investigação que mergulha o grupo no tema."
   ],
   [
-   "Bem avaliado pela crítica",
-   "Média de 85/100 em 20 resenhas especializadas, segundo o Board Game Verdict."
+   "Crítica muito favorável",
+   "O Board Game Verdict reúne 20 resenhas especializadas, com média de 85 em 100. A Board Game Quest deu 4,5 de 5 estrelas, e o jogo venceu o As d'Or Expert 2019, além de ser indicado ao Kennerspiel do mesmo ano."
+  ],
+  [
+   "Campanha ligada",
+   "Os cinco casos contam uma história contínua, com personagens e pistas que voltam de um caso para outro. Jogar com o mesmo grupo do começo ao fim aumenta a sensação de acompanhar uma investigação longa, como numa série policial."
+  ],
+  [
+   "Sozinho ou em equipe",
+   "Detective aceita de um a cinco jogadores, e personagens consultores completam a equipe quando há pouca gente, segundo a Board Game Quest. Sozinho, funciona como um romance policial interativo, no seu próprio ritmo."
   ]
  ],
  "atencao": [
   [
    "Moderada",
    "Casos muito longos",
-   "A Board Game Quest relata casos de 3 a 4 horas, longos demais para ela."
+   "Cada caso tem duração anunciada de duas a três horas, e a Board Game Quest relata sessões de três a quatro horas, longas demais para ela. É difícil terminar um caso numa noite de semana sem começar cedo."
   ],
   [
    "Moderada",
-   "Texto às vezes prolixo",
-   "A mesma resenha achou a escrita excessiva em alguns momentos."
+   "Tudo em inglês",
+   "Não há edição em português nas lojas e fontes consultadas, e o jogo depende de cartas, relatórios e banco de dados em inglês. Toda a mesa precisa ler bem em inglês, inclusive termos policiais e jurídicos."
   ],
   [
    "Leve",
-   "Só cinco casos",
-   "Depois de resolvidos, os casos não têm por que ser jogados de novo."
+   "Escrita prolixa",
+   "A Board Game Quest achou a escrita excessiva em alguns trechos, com textos longos que nem sempre trazem informação útil. Em casos de várias horas, isso cansa e faz o grupo pular trechos que podem conter pistas."
+  ],
+  [
+   "Leve",
+   "Sem rejogo",
+   "Resolvidos os cinco casos, não há por que jogar de novo, já que as respostas são sempre as mesmas. Dá para passar a caixa adiante, mas o conteúdo acaba junto com a campanha."
   ],
   [
    "Leve",
    "Exige internet",
-   "O banco de dados online é parte do jogo."
+   "O banco de dados Antares é online e parte essencial do jogo; sem conexão estável, a partida não anda. Vale deixar um notebook ou tablet na mesa para todos consultarem juntos."
+  ],
+  [
+   "Leve",
+   "Pouco resumo entre sessões",
+   "A Board Game Quest aponta que há pouca recapitulação dos casos anteriores, então o grupo precisa de boas anotações para lembrar nomes e pistas quando volta ao jogo semanas depois."
   ]
  ],
  "para_quem": [
-  "Gosta de séries policiais e investigação",
-  "Tem um grupo disposto a sessões longas",
-  "Quer um cooperativo com cara de experiência"
+  "Ama histórias policiais e mistério",
+  "Lê bem em inglês",
+  "Tem um grupo fixo para cinco sessões longas",
+  "Gosta de discutir hipóteses e fazer anotações",
+  "Joga sozinho e quer um romance interativo"
  ],
  "nao_e_para": [
-  "Quer partidas curtas",
-  "Não gosta de ler muito",
-  "Quer jogar várias vezes o mesmo conteúdo"
+  "Quer partidas de até uma hora",
+  "Não lê inglês com fluência",
+  "Prefere tabuleiro e peças em destaque",
+  "Quer rejogar o mesmo jogo muitas vezes",
+  "Joga sem internet à mesa"
  ],
  "selo": "Recomendado para público específico",
- "veredito": "Detective é a experiência de investigação mais completa que um jogo de tabuleiro oferece, com banco de dados online e decisões sob pressão de tempo. Os casos são longos e não se repetem, mas para quem ama histórias policiais é marcante.",
+ "veredito": "Detective é a experiência de investigação mais completa que um jogo de tabuleiro oferece: banco de dados online, buscas reais e um relógio que transforma cada pista numa escolha difícil. A crítica é muito favorável e a campanha de cinco casos prende o grupo como uma série policial. O custo é alto: casos de três horas ou mais, muita leitura, internet obrigatória e nenhuma edição em português. Para quem ama mistério e lê bem em inglês, vale a importação; para os outros, MicroMacro ou Season One são entradas melhores.",
  "tagline": "Siga as pistas antes que o prazo acabe.",
  "consulta": "27/10/2026",
  "fontes": [
@@ -192,6 +216,11 @@
    "Portal Games – Detective: Season One",
    "https://shopportalgames.com/products/detective-season-one",
    "versão curta, idiomas, cópias vendidas"
+  ],
+  [
+   "Amazon UK – Detective",
+   "https://www.amazon.co.uk/Portal-Games-POG1375-Detective-Multicoloured/dp/B079THKB17",
+   "edição em inglês"
   ]
  ],
  "roteiro": {
@@ -324,5 +353,55 @@
   "veredito": "A INVESTIGAÇÃO MAIS COMPLETA DO TABULEIRO.",
   "veredito_texto": "A investigação mais completa do tabuleiro, com banco de dados online e buscas reais. Casos longos, sem rejogo e todo em inglês: marcante para quem ama histórias policiais e lê bem em inglês."
  },
- "legenda": "Cinco casos, um banco de dados online e um prazo que não perdoa pista errada. 🕵️\n\nDetective venceu o As d'Or Expert 2019 e foi indicado ao Kennerspiel 2019.\nO grupo investiga junto, gasta horas do prazo com cada pista e faz buscas reais na internet.\nOs casos são longos e em inglês, mas é a investigação mais completa do tabuleiro.\nVeredito: RECOMENDADO PARA PÚBLICO ESPECÍFICO.\n\nVocê seria o detetive que lê tudo ou o que chuta o culpado?\nResenha completa no link da bio.\n\n#Detective #PortalGames #JogosDeTabuleiro #BoardGames #Boardgamer #Investigacao #Cooperativo #AsDOr #EliteBoardgamers #MysteryGames"
+ "legenda": "Cinco casos, um banco de dados online e um prazo que não perdoa pista errada. 🕵️\n\nDetective venceu o As d'Or Expert 2019 e foi indicado ao Kennerspiel 2019.\nO grupo investiga junto, gasta horas do prazo com cada pista e faz buscas reais na internet.\nOs casos são longos e em inglês, mas é a investigação mais completa do tabuleiro.\nVeredito: RECOMENDADO PARA PÚBLICO ESPECÍFICO.\n\nVocê seria o detetive que lê tudo ou o que chuta o culpado?\nResenha completa no link da bio.\n\n#Detective #PortalGames #JogosDeTabuleiro #BoardGames #Boardgamer #Investigacao #Cooperativo #AsDOr #EliteBoardgamers #MysteryGames",
+ "experiencia": [
+  "Uma sessão de Detective parece uma noite numa sala de investigação: alguém lê a carta em voz alta, outro anota nomes num papel e um terceiro abre o mapa no celular para ver se dois endereços ficam perto. A discussão gira em torno de qual pista vale as próximas duas horas do prazo, por exemplo, voltar a interrogar o vizinho ou pedir a perícia do carro.",
+  "A Board Game Quest descreve o jogo como uma investigação que mergulha o grupo no tema e nunca deixa as regras atrapalharem, mas alerta que ele pode fritar o cérebro, com muitas pistas, nomes e indícios para lembrar. Cada caso tem duração anunciada de duas a três horas, e o grupo que mantiver boas anotações entre as sessões sai na frente."
+ ],
+ "citacao": {
+  "texto": "Uma ótima investigação que mergulha você no tema e nunca deixa as regras atrapalharem.",
+  "fonte": "Board Game Quest (tradução livre)"
+ },
+ "jogadores": [
+  [
+   "Sozinho",
+   "Funciona como um romance policial interativo, com personagens consultores ajudando nas habilidades da equipe.",
+   2
+  ],
+  [
+   "2 ou 3 jogadores",
+   "Boa divisão de tarefas: um lê, outro anota, outro pesquisa, sem discussões arrastadas.",
+   3
+  ],
+  [
+   "4 ou 5 jogadores",
+   "Mais debate e mais ideias, mas também mais tempo para decidir cada pista.",
+   2
+  ]
+ ],
+ "primeira_partida": "Leia as regras antes e separe pelo menos três horas para o primeiro caso, com internet, um notebook ou tablet para o banco de dados e papel para anotações. O que mais confunde é administrar o relógio, então marque o horário depois de cada pista. Dica prática: nomeie um responsável pelas anotações e outro pelo banco de dados, e revise as anotações antes de responder ao relatório final.",
+ "edicao_nacional": "Não encontramos edição em português de Detective nas lojas e fontes consultadas em 27/10/2026; a Portal Games informa que o jogo saiu em 10 idiomas. A versão em inglês pode ser importada pela loja da Portal Games ou pela Amazon, com frete e impostos.",
+ "preco_ref": {
+  "faixa": "Sem edição nacional",
+  "data": "27/10/2026",
+  "obs": "importação da versão em inglês"
+ },
+ "versoes": "Detective: Season One é uma caixa independente e mais curta, com três casos de cerca de 90 minutos cada, boa porta de entrada para a série. A Portal Games também lançou outros casos da linha Detective, sem edição nacional encontrada nas fontes consultadas.",
+ "comparacoes": [
+  [
+   "MicroMacro: Crime City",
+   "micromacro",
+   "Investigação cooperativa muito mais leve e visual: procurar pistas num mapa gigante, sem texto e sem internet. Ótima para quem quer o clima policial em partidas curtas."
+  ],
+  [
+   "Codenames",
+   "codenames",
+   "Para grupos que gostam de dedução e discussão, mas querem algo rápido e em português, com partidas de 15 minutos e muita conversa."
+  ],
+  [
+   "Pandemic Legacy: Season 1",
+   "pandemic-legacy",
+   "Outra campanha cooperativa que conta uma história ao longo das sessões, com regras mais leves, muito menos leitura e tudo em português."
+  ]
+ ]
 }

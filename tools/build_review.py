@@ -96,16 +96,16 @@ def layout_v2(c, premios_bloco, ficha_html, fontes):
     <div><h3>Destaques</h3><ul class="mini">{"".join(pf(t) for t, _ in c["funciona"][:3])}</ul></div>
     <div><h3>Atenção</h3><ul class="mini">{"".join(pn(t) for _, t, _ in c["atencao"][:3])}</ul></div>
    </div>
-   <div class="r30-pe">{medidor}{f'<div class="r30-preco">{icone("preco")}<span><b>{e(preco["faixa"])}</b> em {e(preco["data"])}</span></div>' if preco else ""}</div>
+   <div class="r30-pe">{medidor}{f'<div class="r30-preco">{icone("preco")}<span><b>{e(preco["faixa"])}</b> · consulta em {e(preco["data"])}</span></div>' if preco else ""}</div>
    {premio_txt}
    <p class="r30-quem"><b>Para quem:</b> {e("; ".join(x[0].lower() + x[1:] for x in c["para_quem"][:2]))}.</p>
   </section>"""
     passos = "".join(
         f'<li><span class="n">{i}</span><div><h3>{e(t.capitalize())}</h3><p>{e(x)}</p></div></li>'
-        for i, (t, x) in enumerate(r.get("passos", []), 1)
+        for i, (t, x) in enumerate(c.get("passos") or r.get("passos", []), 1)
     )
     como = f"""<section class="bloco claro" id="como-funciona"><h2>Como funciona</h2>
-   {f'<p class="sub">{e(r["como_resumo"])}</p>' if r.get("como_resumo") else ""}
+   {f'<p class="sub">{e(c.get("como_resumo") or r["como_resumo"])}</p>' if c.get("como_resumo") or r.get("como_resumo") else ""}
    <ol class="passos">{passos}</ol>
    <details class="mais"><summary>Ler as regras completas</summary><div class="leitura">{"".join(f"<p>{e(x)}</p>" for x in c["como_funciona"])}</div></details>
   </section>"""
@@ -128,7 +128,7 @@ def layout_v2(c, premios_bloco, ficha_html, fontes):
   </section>"""
     barras = "".join(
         f'<li><span>{e(k)}</span><span class="bar" role="img" aria-label="{n} de 5"><i style="width:{n * 20}%"></i></span><b>{n}</b></li>'
-        for k, n in r.get("perfil", [])
+        for k, n in c.get("perfil") or r.get("perfil", [])
     )
     tiles = "".join(
         f'<li><span class="tn">{e(nj)}</span><span class="pontos" role="img" aria-label="{NIVEIS[nv]}">'

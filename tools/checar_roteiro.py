@@ -103,8 +103,14 @@ def checar_texto(c):
     pr = c.get("preco_ref") or {}
     if not (pr.get("faixa") and pr.get("data")):
         erros.append("texto · preco_ref: precisa de {faixa, data}")
-    if len((c.get("roteiro") or {}).get("perfil") or []) != 6:
-        erros.append("texto · roteiro.perfil: 6 barras [critério, nota 0 a 5] (aparecem no site)")
+    r = c.get("roteiro") or {}
+    if len(c.get("perfil") or r.get("perfil") or []) != 6:
+        erros.append("texto · perfil: 6 barras [critério, nota 0 a 5] (aparecem no site)")
+    passos = c.get("passos") or r.get("passos") or []
+    if len(passos) != 5 or any(not 15 <= palavras(x) <= 30 for _, x in passos):
+        erros.append("texto · passos: 5 passos de 15 a 30 palavras (roteiro.passos ou passos do site)")
+    if not (c.get("como_resumo") or r.get("como_resumo")):
+        erros.append("texto · como_resumo: uma linha que resume a partida")
     faixa("primeira_partida", palavras(c.get("primeira_partida", "")), 50, 120)
     faixa("edicao_nacional", palavras(c.get("edicao_nacional", "")), 40, 100)
     faixa("versoes", palavras(c.get("versoes", "")), 30, 100)

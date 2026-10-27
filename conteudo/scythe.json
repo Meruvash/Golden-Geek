@@ -6,7 +6,7 @@
  "og_titulo": "Scythe vale a pena? Resenha Elite Boardgamers",
  "descricao": "Resenha de Scythe, vencedor de cinco Golden Geek em 2016 incluindo Jogo do Ano e do As d'Or Expert 2017: como funciona, pontos fortes, pontos de atenção e para quem é.",
  "titulo_html": "Mechs, camponeses e uma economia afiada: <span>Scythe</span>",
- "lede": "Scythe é um jogo de estratégia assimétrico numa Europa alternativa dos anos 1920, em que cada facção expande território, produz recursos e constrói mechs. Venceu cinco Golden Geek em 2016, incluindo Jogo do Ano, e o As d'Or Expert 2017.",
+ "lede": "Scythe é um jogo de estratégia numa Europa alternativa dos anos 1920, em que cinco facções expandem território, produzem recursos e constroem mechs gigantes. Venceu cinco Golden Geek em 2016, incluindo Jogo do Ano, e o As d'Or Expert 2017, e vendeu mais de 382 mil cópias até 2021. Parece um jogo de guerra, mas é um eurogame de economia em que a ameaça de combate vale mais do que a luta, ideal para grupos de três a cinco.",
  "tags": [
   "1–5 jogadores",
   "90–115 min",
@@ -140,71 +140,86 @@
  ],
  "nota_ficha": "A nota e o peso numérico do BGG não foram confirmados nas fontes consultadas.",
  "como_funciona": [
-  "Cada jogador comanda uma facção com habilidades próprias e um tabuleiro de jogador que define as ações. Na sua vez, você escolhe uma das quatro seções do tabuleiro, diferente da escolhida no turno anterior.",
-  "Cada seção tem uma ação de cima (mover, produzir, negociar ou reforçar) e uma de baixo (melhorar, construir mechs, erguer estruturas ou recrutar). As ações de cima geram recursos que pagam as de baixo.",
-  "Cumprir objetivos, como colocar os quatro mechs ou vencer combates, dá estrelas. Quando alguém coloca a sexta estrela, o jogo acaba na hora; vence quem tiver mais moedas, multiplicadas pela popularidade."
+  "Cada jogador comanda uma facção, com um herói, um território inicial e uma habilidade própria, e recebe um tabuleiro de jogador sorteado que define o custo e o efeito das ações. A combinação de facção e tabuleiro muda a cada partida, e isso torna cada começo diferente.",
+  "O tabuleiro de jogador tem quatro seções. Na sua vez, você move um marcador para uma delas, sempre diferente da usada no turno anterior, e faz até duas ações: a de cima e a de baixo daquela seção. Não há rodadas nem fases, então os turnos são rápidos.",
+  "As ações de cima geram coisas: mover trabalhadores, mechs e o herói, produzir trigo, metal, óleo e madeira nos territórios ocupados, negociar recursos ou popularidade e reforçar o poder militar. As ações de baixo gastam esses recursos para melhorar o tabuleiro, construir mechs, erguer estruturas e recrutar aliados, que dão bônus permanentes.",
+  "Quando unidades de duas facções se encontram num território, há combate: cada lado escolhe em segredo quanto poder gastar e pode somar cartas de combate. Quem perde recua para a base, sem eliminação. Fichas de encontro espalhadas pelo mapa dão ao herói pequenas escolhas narrativas com recompensas.",
+  "Cumprir objetivos rende estrelas: colocar os quatro mechs, construir todas as estruturas, vencer combates, chegar ao máximo de poder ou de popularidade, entre outros. Quando alguém coloca a sexta estrela, o jogo acaba na hora. Vence quem tiver mais moedas, somando estrelas, territórios e recursos, com valores definidos pelo nível de popularidade."
  ],
  "funciona": [
   [
-   "Assimetria equilibrada",
-   "A Board Game Quest e a Punchboard não encontraram facção dominante; a Punchboard chama o jogo de muito bem equilibrado."
+   "Assimetria bem equilibrada",
+   "Cada facção tem herói, habilidade e território próprios, e o tabuleiro de jogador muda o custo das ações. Mesmo assim, a Board Game Quest e a Punchboard não encontraram combinação dominante; a Punchboard chama o jogo de muito bem equilibrado. Só algumas combinações são desaconselhadas pelo FAQ da editora."
   ],
   [
    "Arte e produção",
-   "A Board Game Quest chama a arte de Jakub Różalski de belíssima e elogia as miniaturas e os tabuleiros de dupla camada."
+   "As pinturas de Jakub Różalski, que misturam camponeses e mechs gigantes em paisagens do Leste Europeu, deram identidade ao jogo. A Board Game Quest chama a arte de belíssima e elogia as miniaturas e os tabuleiros de dupla camada, em que os cubos de madeira encaixam sem escorregar."
   ],
   [
-   "Ótimo solo",
-   "O Automa incluso é, para a Board Game Quest, um ótimo oponente."
+   "A ameaça vale mais que a luta",
+   "O combate é raro, mas está sempre no ar: um mech na fronteira obriga o vizinho a guardar poder e cartas. A Punchboard destaca que esse risco move o jogo mais do que as batalhas, o que cria tensão sem eliminar ninguém."
   ],
   [
-   "Ameaça vale mais que a luta",
-   "A Punchboard destaca que o risco de combate move o jogo mais do que o combate em si."
+   "Ótimo sozinho",
+   "A caixa traz o Automa, um oponente artificial criado por Morten Monrad Pedersen, com cartas que decidem os movimentos dele. A Board Game Quest o chama de ótimo oponente, embora seja preciso se acostumar com o jeito como ele salta pelo mapa."
   ],
   [
-   "Muito jogo pela caixa",
-   "A Punchboard fala em muito conteúdo pelo preço e em partidas sempre diferentes."
+   "Muito jogo na caixa",
+   "Cinco facções, cinco tabuleiros de jogador, cartas de objetivo e de encontro e várias formas de ganhar estrelas fazem cada partida seguir um caminho diferente. A Punchboard fala em muito conteúdo pelo preço, e as três expansões oficiais ampliam ainda mais as combinações."
+  ],
+  [
+   "Ninguém é eliminado",
+   "Unidades derrotadas voltam para a base e não são destruídas, segundo a própria Stonemaier. Quem fica para trás ainda pode crescer na economia e disputar a contagem final, o que mantém todos envolvidos até a sexta estrela."
   ]
  ],
  "atencao": [
   [
    "Moderada",
    "Não é jogo de guerra",
-   "A Punchboard alerta que a caixa sugere combate de mechs, mas é um eurogame de economia e território."
+   "A capa mostra mechs gigantes e o mapa lembra um jogo de conquista, mas a Punchboard alerta que é um eurogame de economia e território. Quem compra esperando batalhas constantes de miniaturas pode se frustrar, porque o combate é raro, sobretudo com poucos jogadores."
   ],
   [
    "Moderada",
    "Primeiras partidas lentas",
-   "A Punchboard descreve explicações demoradas; a Board Game Quest diz que novatos sofrem contra veteranos."
+   "A Punchboard descreve explicações demoradas e primeiras partidas truncadas, e recomenda conduzir o grupo na estreia. A Board Game Quest acrescenta que novatos sofrem contra veteranos, porque o quebra-cabeça de eficiência recompensa muito quem já conhece os caminhos."
   ],
   [
    "Leve",
    "Encontros com sorte",
-   "A Board Game Quest acha as cartas de encontro fracas e diz que a sorte delas destoa do resto."
+   "As cartas de encontro dão escolhas narrativas ao herói, mas a Board Game Quest as achou fracas com o tempo e diz que a sorte delas destoa de um jogo quase sem aleatoriedade. Para alguns grupos, viram só um bônus sorteado."
   ],
   [
    "Leve",
    "Fraco com dois",
-   "A Board Game Quest achou a partida a 2 solta e sem tensão."
+   "A Board Game Quest achou a partida a dois solta e sem tensão, porque sobra espaço no mapa e quase não há disputa de fronteira. O jogo cresce com três ou mais, quando cada território passa a ser vigiado."
   ],
   [
    "Leve",
    "Facções ausentes no mapa",
-   "O tabuleiro cita facções que só vêm na expansão, o que a Board Game Quest sentiu como incompleto."
+   "O tabuleiro tem espaços para facções que só chegam na expansão Invaders from Afar, o que a Board Game Quest sentiu como sinal de jogo incompleto. Não atrapalha as regras, mas lembra o tempo todo que existe conteúdo vendido à parte."
+  ],
+  [
+   "Leve",
+   "Contagem trabalhosa",
+   "Acompanhar as estrelas de cada jogador e as condições de fim exige atenção: a Punchboard lembra que controlar tantas categorias de objetivos é mais difícil do que parece, embora toda a informação fique aberta na mesa."
   ]
  ],
  "para_quem": [
   "Gosta de eurogames de economia com interação",
   "Joga com 3 a 5 pessoas ou sozinho",
-  "Valoriza arte e produção caprichadas"
+  "Valoriza arte e produção caprichadas",
+  "Gosta de planejar uma economia a longo prazo",
+  "Prefere tensão e ameaça a batalhas constantes"
  ],
  "nao_e_para": [
   "Quer combate frequente de miniaturas",
   "Joga quase sempre a dois",
-  "Tem um grupo que não gosta de partidas longas"
+  "Tem um grupo que não gosta de partidas longas",
+  "Prefere jogos de sorte e partidas rápidas",
+  "Não gosta de aprender muitas regras"
  ],
  "selo": "Recomendado",
- "veredito": "Scythe junta economia de eurogame, assimetria bem equilibrada e uma das produções mais bonitas do tabuleiro, com um solo muito bom. O combate é raro, as primeiras partidas são lentas e a 2 perde tensão, mas para grupos de 3 a 5 que gostam de estratégia é um clássico moderno.",
+ "veredito": "Scythe junta economia de eurogame, cinco facções assimétricas bem equilibradas e uma das produções mais bonitas do tabuleiro, com um modo solo que a crítica elogia. A guerra quase nunca acontece, e é justamente a ameaça dela que cria a tensão. Os pontos fracos são as primeiras partidas lentas, as cartas de encontro com sorte e a partida a dois, que perde força. Para grupos de três a cinco que gostam de estratégia, a edição nacional vale o investimento; para quem quer batalhas de miniaturas o tempo todo, há opções melhores.",
  "tagline": "Expanda, produza e intimide: a guerra quase nunca acontece.",
  "consulta": "27/10/2026",
  "fontes": [
@@ -247,6 +262,16 @@
    "Wikipedia – As d'Or",
    "https://fr.wikipedia.org/wiki/As_d%27Or",
    "As d'Or"
+  ],
+  [
+   "Ludopedia – anúncios de Scythe",
+   "https://ludopedia.com.br/jogo/scythe&v=anuncios",
+   "preços de novos e usados"
+  ],
+  [
+   "Homo Ludicus – Scythe",
+   "https://www.homoludicus.com.br/product-page/scythe",
+   "preço de referência"
   ]
  ],
  "roteiro": {
@@ -380,5 +405,55 @@
   "veredito": "UM CLÁSSICO MODERNO DA ESTRATÉGIA.",
   "veredito_texto": "Economia de eurogame, cinco facções bem equilibradas e produção belíssima, com ótimo solo. Combate raro, começo lento e pouca tensão a dois, mas para grupos de três a cinco é compra de coleção."
  },
- "legenda": "Mechs gigantes, camponeses e uma economia afiada numa Europa alternativa dos anos 1920. ⚙️🌾\n\nScythe venceu cinco Golden Geek em 2016, incluindo Jogo do Ano, e o As d'Or Expert 2017.\nParece jogo de guerra, mas é um eurogame em que a ameaça de combate vale mais que a luta.\nAs primeiras partidas são lentas e a dois perde tensão, mas para grupos de 3 a 5 é um clássico moderno.\nVeredito: RECOMENDADO.\n\nQual facção é a sua: Polania, Saxony, Crimea, Nordic ou Rusviet?\nResenha completa no link da bio.\n\n#Scythe #StonemaierGames #JogosDeTabuleiro #BoardGames #Boardgamer #Eurogame #JogoSolo #GoldenGeek #EliteBoardgamers #StrategyGames"
+ "legenda": "Mechs gigantes, camponeses e uma economia afiada numa Europa alternativa dos anos 1920. ⚙️🌾\n\nScythe venceu cinco Golden Geek em 2016, incluindo Jogo do Ano, e o As d'Or Expert 2017.\nParece jogo de guerra, mas é um eurogame em que a ameaça de combate vale mais que a luta.\nAs primeiras partidas são lentas e a dois perde tensão, mas para grupos de 3 a 5 é um clássico moderno.\nVeredito: RECOMENDADO.\n\nQual facção é a sua: Polania, Saxony, Crimea, Nordic ou Rusviet?\nResenha completa no link da bio.\n\n#Scythe #StonemaierGames #JogosDeTabuleiro #BoardGames #Boardgamer #Eurogame #JogoSolo #GoldenGeek #EliteBoardgamers #StrategyGames",
+ "experiencia": [
+  "Os primeiros turnos parecem um quebra-cabeça solitário: cada um organiza a própria economia, produz recursos e calcula quando cada ação de baixo vai render mais. Aos poucos os mechs saem para o mapa e o clima muda, porque cada facção passa a vigiar a fronteira da outra. A Saxony, por exemplo, pode posicionar dois mechs perto da Fábrica, no centro do mapa, só para obrigar o vizinho a gastar poder se quiser disputá-la.",
+  "A Punchboard resume bem: a ameaça de combate move o jogo mais do que a luta em si, e a Board Game Quest descreve cada partida como um enigma divertido de resolver. O fim costuma chegar de repente, quando alguém coloca a sexta estrela, e quem cuidou da popularidade sai na frente na contagem."
+ ],
+ "citacao": {
+  "texto": "A ameaça de combate move o jogo mais do que o combate em si.",
+  "fonte": "Punchboard (tradução livre)"
+ },
+ "jogadores": [
+  [
+   "Sozinho",
+   "O Automa simula um rival com cartas próprias e é elogiado pela Board Game Quest como ótimo oponente.",
+   3
+  ],
+  [
+   "2 jogadores",
+   "Funciona, mas a Board Game Quest achou a partida solta e com pouca tensão, porque sobra espaço no mapa.",
+   1
+  ],
+  [
+   "3 a 5 jogadores",
+   "O formato em que o jogo brilha: fronteiras disputadas, ameaça constante e mais interação entre as facções.",
+   3
+  ]
+ ],
+ "primeira_partida": "Reserve uma sessão longa para a estreia: a Stonemaier anuncia cerca de 10 minutos de preparação e 115 minutos de partida, e a primeira costuma ser mais lenta. Use as cartas de início rápido e evite as combinações de facção e tabuleiro que o FAQ desaconselha. A Punchboard recomenda que alguém que já conhece as regras conduza o grupo nas primeiras rodadas, mostrando com exemplos como as ações de cima pagam as de baixo.",
+ "edicao_nacional": "A Ludofy publicou Scythe em português no Brasil, segundo o catálogo da analog.games e as listagens da Ludopedia. Nas lojas e anúncios consultados em 27/10/2026, o jogo novo aparecia entre R$ 581 e R$ 649, com disponibilidade variável; há também cópias usadas a partir de R$ 487 no mercado da Ludopedia.",
+ "preco_ref": {
+  "faixa": "R$ 581 a R$ 649",
+  "data": "27/10/2026",
+  "obs": "usados a partir de R$ 487"
+ },
+ "versoes": "Três expansões ampliam a caixa base: Invaders from Afar, com duas facções novas; The Wind Gambit, com dirigíveis, vencedora do Golden Geek de expansão em 2017; e The Rise of Fenris, com campanha e modo cooperativo, vencedora em 2018. Há ainda Scythe: Digital Edition na Steam desde 2018 e no celular desde 2020, e a sequência independente Expeditions, de 2023.",
+ "comparacoes": [
+  [
+   "Terraforming Mars",
+   "terraforming-mars",
+   "Outro motor de economia premiado, com mais cartas e menos mapa. Troca a disputa de fronteira por uma corrida para terraformar Marte, com interação mais indireta."
+  ],
+  [
+   "Dune: Imperium",
+   "dune-imperium",
+   "Para quem gosta de disputa direta com economia por trás: mistura construção de baralho e alocação de trabalhadores numa briga por Arrakis, em partidas mais curtas."
+  ],
+  [
+   "Ark Nova",
+   "ark-nova",
+   "Se o que agrada é o quebra-cabeça de eficiência, Ark Nova vai mais fundo na otimização, com cartas e um zoológico para montar, mas quase sem confronto."
+  ]
+ ]
 }
