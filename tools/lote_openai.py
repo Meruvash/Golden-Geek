@@ -15,7 +15,8 @@ from pathlib import Path
 import requests
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from prompt_infografico import prompt  # noqa: E402
+from checar_roteiro import checar  # noqa: E402
+from prompt_infografico import TAMANHO, prompt  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 SITE = "https://meruvash.github.io/Golden-Geek"
@@ -34,12 +35,18 @@ def cabecalho():
 def enviar(arquivos):
     if PENDENTE.exists():
         sys.exit(f"Já existe um lote pendente em {PENDENTE.relative_to(ROOT)}; rode 'buscar' antes.")
+    reprovados = {a: checar(json.loads(Path(a).read_text(encoding="utf-8"))) for a in arquivos}
+    reprovados = {a: e for a, e in reprovados.items() if e}
+    if reprovados:
+        for a, erros in reprovados.items():
+            print(f"✗ {a}:", *erros, sep="\n   - ")
+        sys.exit("Lote não enviado: roteiro fora do PADRAO_EDITORIAL.md (rode tools/checar_roteiro.py).")
     refs = [{"image_url": f"{SITE}/modelos/{p.name}"} for p in sorted((ROOT / "modelos").glob("referencia-*.jpg"))]
     linhas, slugs = [], []
     for a in arquivos:
         c = json.loads(Path(a).read_text(encoding="utf-8"))
         slugs.append(c["slug"])
-        corpo = {"model": MODELO, "prompt": prompt(c), "images": refs, "size": "2048x2048", "quality": "high", "n": 1}
+        corpo = {"model": MODELO, "prompt": prompt(c), "images": refs, "size": TAMANHO, "quality": "high", "n": 1}
         linhas.append(json.dumps({"custom_id": c["slug"], "method": "POST", "url": "/v1/images/edits", "body": corpo}, ensure_ascii=False))
     h = cabecalho()
     f = requests.post(f"{API}/files", headers=h, data={"purpose": "batch"},

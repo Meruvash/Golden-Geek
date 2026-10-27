@@ -1,6 +1,6 @@
 ---
 name: resenha
-description: Produz a próxima resenha da Elite Boardgamers a partir da pauta de jogos premiados (pauta.json) — pesquisa com fontes, texto do site, infográfico quadrado para Instagram no estilo do modelo Nemesis, legenda e publicação no GitHub Pages. Use quando pedirem "/resenha", "próxima resenha", "resenha de <jogo>" ou "atualizar pauta".
+description: Produz a próxima resenha da Elite Boardgamers a partir da pauta de jogos premiados (pauta.json) — pesquisa com fontes, texto do site, infográfico retrato 4:5 para Instagram no padrão editorial (PADRAO_EDITORIAL.md), legenda e publicação no GitHub Pages. Use quando pedirem "/resenha", "próxima resenha", "resenha de <jogo>" ou "atualizar pauta".
 ---
 
 # Resenha Elite Boardgamers
@@ -48,32 +48,22 @@ Mesma estrutura de `nemesis/`: chamada "Elite Boardgamers apresenta", título, a
 
 ## Etapa 3: roteiro do infográfico
 
-O infográfico é **quadrado (1:1)**, no estilo das imagens de `modelos/referencia-*.jpg`. O roteiro fica em `roteiro` dentro de `conteudo/<slug>.json` (veja `conteudo/azul.json`):
+O infográfico é **retrato 4:5 (1600×2000)** e segue o **`PADRAO_EDITORIAL.md`** (leia antes de escrever). O modelo de densidade é `modelos/referencia-1.jpg` (Código Secreto) e o exemplo de roteiro completo é `conteudo/gloomhaven.json`.
 
-| Campo | Conteúdo |
-|---|---|
-| `tema`, `cena`, `mesa` | descrição visual em inglês: paleta e ambientação, arte do topo, caixa e componentes |
-| `titulo` / `chamada` | nome do jogo / frase de até ~55 caracteres |
-| `lateral` | 8 linhas curtas (jogadores, duração, complexidade, solo, dados, designer, editora, ano) |
-| `numeros` | 3 caixas `[rótulo, valor]`, só números com fonte |
-| `passos` | 5 passos `[título, frase de até ~38 caracteres]` |
-| `fortes` / `atencao` | 4 frases curtas cada |
-| `ficha` | 5 linhas |
-| `premios` | 3 medalhas |
-| `veredito` | frase em caixa alta, até ~50 caracteres |
+Resumo dos mínimos: chamada de 12–22 palavras, destaque de 15–28, lateral de 10 linhas, 4 caixas de número com contexto, 5 passos de 15–30 palavras que ensinam a rodada, 6–7 pontos fortes e 6–7 de atenção específicos do jogo, ficha de 10–12 linhas, 8 barras de perfil, um bloco extra verificável e veredito com parágrafo de 40–65 palavras. A pesquisa da etapa 1 precisa trazer dados suficientes para isso (componentes, edição nacional, idade, idioma, versão digital etc.), sempre com fonte.
 
-Texto curto é o que evita erro na imagem.
+Antes de gerar: `python3 tools/checar_roteiro.py conteudo/<slug>.json` precisa passar. Os geradores rodam a mesma checagem e se recusam a gerar se o roteiro estiver fora do padrão.
 
 ## Etapa 4: gerar o infográfico (OpenAI Batch API)
 
-Padrão: **Batch API** (50% mais barata, entrega em até 24 h), com `gpt-image-2.5-flare`, 2048×2048, qualidade alta e as referências de `modelos/` pelas URLs do GitHub Pages.
+Padrão: **Batch API** (50% mais barata, entrega em até 24 h), com `gpt-image-2.5-flare`, 1600×2000 (4:5), qualidade alta e as referências de `modelos/` pelas URLs do GitHub Pages.
 
 - `python3 tools/lote_openai.py enviar conteudo/<a>.json conteudo/<b>.json ...` cria o lote e grava `lotes/pendente.json` (faça commit e push dele).
 - `python3 tools/lote_openai.py buscar` verifica o lote; se concluído, salva `<slug>/variacao-1.png` e apaga `lotes/pendente.json`.
 
 Refações pontuais e urgentes: `python3 tools/gerar_infografico_openai.py conteudo/<slug>.json` (síncrono, preço cheio). Use `--dry-run` para ver o prompt.
 
-## Rotina diária (9h, sessão agendada)
+## Rotina diária (07:55 de Brasília, sessão agendada)
 
 1. `buscar` o lote do dia anterior. Se concluído, faça a etapa 5 nas imagens e apresente a mensagem de aprovação (etapa 6) com as imagens.
 2. Prepare os 4 próximos `na_fila` (etapas 1 a 3), marque como `em_producao`, faça commit dos `conteudo/*.json` e `enviar` o lote novo. Commit e push de `lotes/pendente.json`.
@@ -81,7 +71,7 @@ Refações pontuais e urgentes: `python3 tools/gerar_infografico_openai.py conte
 
 ## Etapa 5: revisão do texto da imagem
 
-Leia todo o texto visível e compare palavra por palavra com o roteiro: letras, acentos, números, palavras a mais. Se houver erro, edite a imagem pedindo para corrigir **somente** os trechos errados. Depois de 2 tentativas sem sucesso, gere a arte **sem texto** e componha os textos por cima em HTML e depois em imagem (Playwright), usando as mesmas fontes da página.
+Leia todo o texto visível, bloco por bloco (topo, lateral, números, passos, fortes, atenção, ficha, prêmios, extra, perfil, veredito), e compare palavra por palavra com o roteiro: letras, acentos, números, palavras a mais. Se houver erro, edite a imagem pedindo para corrigir **somente** os trechos errados. Depois de 2 tentativas sem sucesso, gere a arte **sem texto** e componha os textos por cima em HTML e depois em imagem (Playwright), usando as mesmas fontes da página.
 
 ## Etapa 6: aprovação em lote
 
@@ -91,7 +81,7 @@ O usuário responde em uma linha, por exemplo "aprova 1, 2 e 4; refaz a 3: <ajus
 
 ## Etapa 7: publicação
 
-1. Salve a imagem aprovada como `<slug>/infografico.webp` (1600 px, até ~450 KB) e `<slug>/capa.jpg` (800×800) com Pillow, e apague `variacao-*.png`.
+1. `python3 tools/salvar_imagem.py <slug>` salva `<slug>/infografico.webp` (1600 px de largura, até ~450 KB) e `<slug>/capa.jpg` (800×800, recorte do topo) e apaga `variacao-*.png`.
 2. `python3 tools/build_review.py conteudo/<slug>.json` gera `<slug>/index.html`.
 3. `python3 tools/publicar.py conteudo/<slug>.json` marca o jogo como `publicado` em `pauta.json` e regera `resenhas/index.html` inteira (`tools/build_lista.py`). Depois, `node tools/capa_resenhas.js` refaz `resenhas/capa.jpg` (prévia do WhatsApp da página de resenhas) com o mosaico das capas.
 4. Teste no Playwright em 390 px e 1200 px: sem erros de JS e sem rolagem horizontal.

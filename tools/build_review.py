@@ -9,6 +9,8 @@ import re
 import sys
 from pathlib import Path
 
+from PIL import Image
+
 ROOT = Path(__file__).resolve().parent.parent
 INSTAGRAM = "https://www.instagram.com/eliteboardgamers/"
 WHATSAPP = "https://chat.whatsapp.com/IgQQkJdSkzHBaEq3UwFeAo"
@@ -109,6 +111,8 @@ def build(c):
     )
     serie = f'<p class="note">{e(c["serie"])}</p>' if c.get("serie") else ""
     linha = " · ".join(x for x in (ano, autor) if x)
+    info = ROOT / slug / "infografico.webp"
+    larg, alt = Image.open(info).size if info.exists() else (1600, 1600)
     leg = c.get("legenda", "")
     legenda_btn = f'<button type="button" class="post-btn" id="b-legenda" aria-expanded="false" aria-controls="legenda">{icone("copiar")}Legenda</button>' if leg else ""
     legenda_box = (
@@ -263,7 +267,7 @@ footer a{{color:var(--bar-ink)}}
 
 <section class="jogo"><div class="in">
  <figure class="capa">
-  <a href="infografico.webp" target="_blank" rel="noopener"><img src="infografico.webp" width="1600" height="1600" alt="{e(c["alt"])}" fetchpriority="high"></a>
+  <a href="infografico.webp" target="_blank" rel="noopener"><img src="infografico.webp" width="{larg}" height="{alt}" alt="{e(c["alt"])}" fetchpriority="high"></a>
   <figcaption>Toque para ver o infográfico em tamanho cheio.</figcaption>
   <div class="post"><button type="button" class="post-btn" id="b-salvar">{icone("salvar")}Salvar na galeria</button>{legenda_btn}</div>
   <p class="post-st" id="salvar-st" role="status"></p>

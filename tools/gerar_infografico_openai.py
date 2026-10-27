@@ -14,7 +14,8 @@ from pathlib import Path
 import requests
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from prompt_infografico import prompt  # noqa: E402
+from checar_roteiro import checar  # noqa: E402
+from prompt_infografico import TAMANHO, prompt  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 URL = "https://api.openai.com/v1/images/edits"
@@ -25,12 +26,16 @@ def main():
     ap.add_argument("conteudo")
     ap.add_argument("--modelo", default="gpt-image-2")
     ap.add_argument("--n", type=int, default=1)
-    ap.add_argument("--tamanho", default="2048x2048")
+    ap.add_argument("--tamanho", default=TAMANHO)
     ap.add_argument("--qualidade", default="high", choices=["low", "medium", "high"])
     ap.add_argument("--dry-run", action="store_true", help="só mostra o prompt, sem chamar a API")
     a = ap.parse_args()
 
     c = json.load(open(a.conteudo, encoding="utf-8"))
+    erros = checar(c)
+    if erros:
+        print(*erros, sep="\n - ")
+        sys.exit("Roteiro fora do PADRAO_EDITORIAL.md; imagem não gerada.")
     texto = prompt(c)
     if a.dry_run:
         print(texto)

@@ -1,35 +1,49 @@
-"""Monta o prompt do infográfico quadrado a partir do roteiro em conteudo/<slug>.json.
+"""Monta o prompt do infográfico retrato 4:5 a partir do roteiro em conteudo/<slug>.json (padrão editorial v2).
 
 Uso: python3 tools/prompt_infografico.py conteudo/<slug>.json [...]
 """
 import json
 import sys
 
+TAMANHO = "1600x2000"
+
 
 def prompt(c):
     r = c["roteiro"]
     q = lambda s: f'"{s}"'
     lista = lambda xs: " · ".join(q(x) for x in xs)
-    passos = "\n".join(f"Step {i} {q(t)} — {q(d)}" for i, (t, d) in enumerate(r["passos"], 1))
-    numeros = " · ".join(f"{q(k)} {q(v)}" for k, v in r["numeros"])
-    return f"""Use the reference images ONLY as the style and layout template for an "ELITE BOARDGAMERS" board game review infographic: same dark navy background, glowing neon-bordered panels, gold "ELITE BOARDGAMERS" crown logo top-left, huge bold 3D title at the top, a left sidebar of icon + text info rows, stat boxes, a stylized game box with components on the table, a numbered 5-step "COMO FUNCIONA?" row with colored cards (blue, green, orange, purple, red), a green "PONTOS FORTES" panel with check marks, a red "PONTOS DE ATENÇÃO" panel with X marks, a blue "FICHA TÉCNICA" panel, a "PRÊMIOS" panel with gold laurel medals, and a gold "VEREDITO ELITE BOARDGAMERS" bar with a crown at the bottom.
-IMPORTANT: the output is a SQUARE 1:1 Instagram post, not a tall poster. Compress the same structure into a square: title band on top, box+components and stats in the middle, 5-step row, then the three panels, then awards + verdict at the bottom. Keep text large and legible on a phone.
+    passos = "\n".join(f"Step {i} title {q(t)} — text {q(d)}" for i, (t, d) in enumerate(r["passos"], 1))
+    numeros = "\n".join(f"Stat box {i}: label {q(k)}, big value {q(v)}, small line {q(x)}" for i, (k, v, x) in enumerate(r["numeros"], 1))
+    perfil = " · ".join(f'{q(k)} {n}/5' for k, n in r["perfil"])
+    return f"""Use the reference images as the style and layout template for an "ELITE BOARDGAMERS" board game review infographic. The FIRST reference (Código Secreto) is the main template: copy its density, hierarchy and panel structure. Same dark navy background, glowing neon-bordered panels, gold "ELITE BOARDGAMERS" crown logo top-left, huge bold 3D title, parchment note boxes.
+FORMAT: PORTRAIT 4:5 Instagram post (1600x2000). Fill the whole canvas with information, like the template: small but crisp, legible text, generous but tight panels, no empty decorative areas.
 
-Theme for this game, {c["jogo"]}: {r["tema"]}. Top artwork: {r["cena"]}. Box art and table: stylized illustration of {r["mesa"]}. Do not reuse imagery from the reference games. Render the game box and every component (cards, boards, tokens, dice, pieces) as a premium, high-detail product shot: crisp sharp edges, realistic materials and printing, soft studio lighting, accurate perspective and depth of field, like professional tabletop photography with polished illustration. No blurry, warped, melted or low-resolution components. Stylized illustrations only; no real publisher logos.
+LAYOUT, top to bottom:
+1. Top band: logo top-left; huge title; tagline banner under the title; a tilted parchment note box top-right with the highlight text; themed artwork behind.
+2. Middle band: left sidebar of 10 icon + text rows; a large stylized game box in the center-left; on the right, a row of 4 stat boxes (label, big value, small context line), and below them the game components laid out on a wooden table.
+3. "COMO FUNCIONA?" header with the summary line beside it, then a row of 5 numbered step cards (blue, green, orange, purple, red), each with a small illustration on top and the full step text below.
+4. Three panels side by side: green "PONTOS FORTES" with check marks, red "PONTOS DE ATENÇÃO" with X marks, blue "FICHA TÉCNICA" with small icons per line.
+5. Bottom band: "PRÊMIOS" panel with gold laurel medals; the extra panel; "COMPATIBILIDADE COM SEU PERFIL" panel with 8 horizontal gold bars and the score n/5 at the right of each bar; a gold "VEREDITO ELITE BOARDGAMERS" box with a crown and the verdict phrase; next to it a parchment box with the verdict paragraph.
+
+Theme for this game, {c["jogo"]}: {r["tema"]}. Top artwork: {r["cena"]}. Box art and table: stylized illustration of {r["mesa"]}. Do not reuse imagery from the reference games. Render the game box and every component (cards, boards, tokens, dice, miniatures) as a premium, high-detail product shot: crisp sharp edges, realistic materials and printing, soft studio lighting, accurate perspective. No blurry, warped, melted or low-resolution components. Stylized illustrations only; no real publisher logos. Use a Brazilian flag icon ONLY on the sidebar row that names the Brazilian publisher, if there is one; no other flags.
 
 Render EXACTLY this Portuguese text, spelled exactly as written with correct accents, and no other text:
 Logo: "ELITE BOARDGAMERS"
 Title: {q(r["titulo"])}
 Tagline banner: {q(r["chamada"])}
+Parchment note top-right: {q(r["destaque"])}
 Sidebar rows: {lista(r["lateral"])}
-Stat boxes: {numeros}
-"COMO FUNCIONA?"
+{numeros}
+"COMO FUNCIONA?" — summary line: {q(r["como_resumo"])}
 {passos}
 Green panel "PONTOS FORTES": {lista(r["fortes"])}
 Red panel "PONTOS DE ATENÇÃO": {lista(r["atencao"])}
 Blue panel "FICHA TÉCNICA": {lista(r["ficha"])}
-Awards panel "PRÊMIOS": three gold medals: {lista(r["premios"])}
-Verdict bar: "VEREDITO ELITE BOARDGAMERS" — {q(r["veredito"])}"""
+Panel "PRÊMIOS": gold medals: {lista(r["premios"])}
+Panel {q(r["extra"]["titulo"])}: {q(r["extra"]["texto"])}
+Panel "COMPATIBILIDADE COM SEU PERFIL": {perfil}
+Verdict box: "VEREDITO ELITE BOARDGAMERS" — {q(r["veredito"])}
+Verdict paragraph: {q(r["veredito_texto"])}"""
 
 
 if __name__ == "__main__":
