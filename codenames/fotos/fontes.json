@@ -1,5 +1,6 @@
 {
  "slug": "codenames",
+ "usar_na_pagina": true,
  "fotos": [
   {
    "arquivo": "fotos/capa-1.webp",
@@ -35,7 +36,8 @@
    "pagina": "https://www.czechgames.com/games/codenames-2015",
    "imagem": "https://cdn.prod.website-files.com/67d17a45b4e1484b40ea8869/67d17a45b4e1484b40ea8cba_Photos%2005.webp",
    "baixada_em": "2026-10-27",
-   "aprovada": true
+   "aprovada": true,
+   "principal": true
   },
   {
    "arquivo": "fotos/componentes-1.webp",
