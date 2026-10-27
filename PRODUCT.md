@@ -29,6 +29,7 @@ Leitura principalmente em celular, vinda do Instagram e de links compartilhados 
 - Logo: selo "ELITE BOARDGAMERS" com coroa dourada (e dado), presente nos infográficos. Obrigatório manter.
 - O infográfico do Instagram continua sendo a peça central de cada resenha.
 - Tom direto e honesto; nada além do que a pesquisa sustenta.
+- Formato visual: o padrão de páginas de review/jogo, executado com acabamento alto, tendo a página de jogo do BoardGameGeek como régua (escolha do usuário em 27/10/2026, depois de recusar três direções autorais).
 
 ## Evidence on Hand
 - 13 resenhas publicadas com infográficos e conteúdo estruturado em `conteudo/*.json`.
