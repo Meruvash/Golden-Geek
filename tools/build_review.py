@@ -10,6 +10,8 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+INSTAGRAM = "https://www.instagram.com/eliteboardgamers/"
+WHATSAPP = "https://chat.whatsapp.com/IgQQkJdSkzHBaEq3UwFeAo"
 SITE = "https://meruvash.github.io/Golden-Geek"
 e = html.escape
 
@@ -19,6 +21,8 @@ ICONES = {
     "idade": '<path d="M12 21a9 9 0 1 1 0-18 9 9 0 0 1 0 18Z"/><path d="M9 10h.01M15 10h.01M8.5 14.5c1.9 2 5.1 2 7 0"/>',
     "peso": '<path d="M6 9h12l2 11H4L6 9Z"/><path d="M9 9a3 3 0 1 1 6 0"/>',
     "ok": '<path d="M4.5 12.5l4.5 4.5L19.5 6.5"/>',
+    "insta": '<rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6" fill="currentColor"/>',
+    "zap": '<path d="M4 20l1.3-4A8 8 0 1 1 8.4 19l-4.4 1Z"/><path d="M9.2 8.6c.3-.5.8-.5 1-.1l.7 1.5c.1.3 0 .6-.2.8l-.4.4c.5 1.1 1.4 2 2.5 2.5l.4-.4c.2-.2.5-.3.8-.2l1.5.7c.4.2.4.7-.1 1-.7.5-1.6.6-2.4.3a7 7 0 0 1-4.2-4.2c-.3-.8-.2-1.7.4-2.3Z"/>',
     "nao": '<path d="M6 6l12 12M18 6L6 18"/>',
 }
 
@@ -189,6 +193,17 @@ dl div:first-child{{border-top:0}}dt{{color:var(--muted)}}dd.na{{color:var(--mut
 .resumo{{font-size:.88rem;color:var(--muted);margin:-6px 0 8px}}
 .fontes li{{margin:6px 0;font-size:.93rem}}.fontes span{{color:var(--muted);font-size:.85rem}}
 footer{{background:var(--bar);color:var(--bar-ink);font-size:.88rem;border-top:1px solid var(--line)}}
+.bar .ig,.bar .zap-mini{{display:flex;align-items:center;gap:6px;padding:6px 10px;border-radius:6px}}
+.bar .ig{{margin-left:auto}}.bar .ig:hover{{color:var(--gold)}}
+.bar .zap-mini{{background:#1f9a57;color:#fff}}.bar .zap-mini:hover{{background:#23b065}}
+.bar .todas{{margin-left:0}}
+@media (max-width:700px){{.bar .ig span,.bar .zap-mini span{{display:none}}.bar .todas{{padding:6px 10px}}}}
+.zap{{display:flex;align-items:center;gap:12px;margin-top:16px;padding:14px 18px;border-radius:10px;background:#1f9a57;color:#fff;text-decoration:none;transition:background-color .2s ease,transform .2s ease}}
+.zap:hover{{background:#23b065}}.zap:active{{transform:scale(.98)}}
+.zap .zi{{width:30px;height:30px;flex:none}}.zap b{{display:block;font-size:1.05rem}}.zap small{{display:block;font-size:.85rem;opacity:.9}}
+.comunidade p{{max-width:62ch;color:#c9cfd8}}.comunidade .acoes{{display:flex;flex-wrap:wrap;gap:12px;align-items:center}}
+.ig-btn{{display:flex;align-items:center;gap:8px;margin-top:16px;padding:14px 18px;border-radius:10px;border:1px solid #3a3f48;color:var(--ink);text-decoration:none;font-weight:700}}
+.ig-btn:hover{{border-color:var(--gold);color:var(--gold)}}
 footer .in{{max-width:1120px;margin:0 auto;padding:18px 16px;display:flex;flex-wrap:wrap;gap:10px 20px}}
 footer a{{color:var(--bar-ink)}}
 @media (min-width:860px){{
@@ -206,6 +221,8 @@ footer a{{color:var(--bar-ink)}}
 <a class="skip" href="#conteudo">Pular para o conteúdo</a>
 <header class="bar"><div class="in">
  <a class="marca" href="../resenhas/"><img src="../marca/elite-boardgamers.webp" width="318" height="254" alt="Elite Boardgamers"></a>
+ <a class="ig" href="{INSTAGRAM}" target="_blank" rel="noopener" aria-label="Instagram @eliteboardgamers">{icone("insta")}<span>@eliteboardgamers</span></a>
+ <a class="zap-mini" href="{WHATSAPP}" target="_blank" rel="noopener">{icone("zap")}<span>Grupo do WhatsApp</span></a>
  <a class="todas" href="../resenhas/">Todas as resenhas</a>
 </div></header>
 
@@ -222,6 +239,7 @@ footer a{{color:var(--bar-ink)}}
   </div>
   <div class="veredito"><span class="selo {selo_class(c["selo"])}">{e(c["selo"])}</span><p>{e(c["tagline"])}</p></div>
   <ul class="regua">{regua_html}</ul>
+  <a class="zap" href="{WHATSAPP}" target="_blank" rel="noopener">{icone("zap", "ic zi")}<span><b>Entre no grupo do WhatsApp</b><small>Converse sobre {e(c["jogo"])} e receba as próximas resenhas</small></span></a>
   <p class="lede">{e(c["lede"])}</p>
  </div>
 </div>
@@ -247,6 +265,7 @@ footer a{{color:var(--bar-ink)}}
    <p>{e(c["veredito"])}</p>
    <p class="tagline">{e(c["tagline"])}</p>
   </section>
+  <section class="bloco comunidade"><h2>Gostou da resenha?</h2><p>A Elite Boardgamers publica resenhas de jogos premiados todos os dias. Entre no grupo para conversar sobre jogos e siga no Instagram.</p><div class="acoes"><a class="zap" href="{WHATSAPP}" target="_blank" rel="noopener">{icone("zap", "ic zi")}<span><b>Entrar no grupo do WhatsApp</b></span></a><a class="ig-btn" href="{INSTAGRAM}" target="_blank" rel="noopener">{icone("insta")}<span>Seguir @eliteboardgamers</span></a></div></section>
   <section class="bloco fontes" id="fontes"><h2>Fontes</h2><ul>{fontes}</ul><p class="note">Consulta às fontes em {e(c["consulta"])}.</p></section>
  </div>
  <aside>
@@ -259,6 +278,8 @@ footer a{{color:var(--bar-ink)}}
  <span>Elite Boardgamers</span>
  <a href="../resenhas/">Todas as resenhas</a>
  <a href="../">Consulta Golden Geek</a>
+ <a href="{INSTAGRAM}" target="_blank" rel="noopener">Instagram @eliteboardgamers</a>
+ <a href="{WHATSAPP}" target="_blank" rel="noopener">Grupo do WhatsApp</a>
 </div></footer>
 </body>
 </html>
