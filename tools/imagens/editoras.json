@@ -71,7 +71,9 @@
   "plataforma": "shopify",
   "estrategia": "sitemap+shopify_json",
   "press_kit": null,
-  "paginas": {},
+  "paginas": {
+   "gloomhaven": "https://cephalofair.com/products/gloomhaven-board-game-2nd-edition"
+  },
   "status": "ok",
   "obs": "",
   "robots": {
@@ -261,16 +263,19 @@
   "site": "https://awakenrealms.com",
   "plataforma": "html",
   "estrategia": "sitemap+html",
-  "press_kit": null,
-  "paginas": {},
+  "press_kit": "https://awakenrealms.com/download",
+  "paginas": {
+   "nemesis": "https://awakenrealms.com/games/awaken-realms/nemesis"
+  },
   "status": "ok",
-  "obs": "site montado só com JavaScript (a página do Nemesis vem vazia); precisa de Playwright",
+  "obs": "site montado com JavaScript: o robô abre as páginas no navegador",
   "robots": {
    "status": 200,
    "crawl_delay": null,
    "sitemaps": [],
    "verificado_em": "2026-10-27"
-  }
+  },
+  "js": true
  },
  "zmangames.com": {
   "nome": "Z-Man Games",

@@ -27,6 +27,7 @@ A busca liga a ficha do jogo (`Editora original` e `Editora no Brasil` em `conte
 `python3 tools/imagens/robo.py buscar <slug>` acha a página do jogo pelo sitemap (edições especiais e expansões perdem pontos), extrai as imagens (no Shopify, pelo JSON do produto; nos outros, por og:image, JSON-LD, galerias e srcset, sempre pedindo a maior versão), descarta as pequenas (< 800 px) e as duplicadas e monta `.cache/imagens/<slug>/folha.jpg` (grade numerada) e `candidatas.json`.
 
 - Página certa fora do sitemap: `--url <página>`. Só uma editora: `--editora <dominio>`.
+- Site montado com JavaScript (página quase vazia sem ele): o `mapear` marca `"js": true` na receita e o robô passa a abrir as páginas num Chromium sem janela (`tools/imagens/navegador.js`, Playwright do Node). O navegador pergunta ao robô antes de cada pedido se o robots.txt permite, não baixa imagens, fontes nem CSS e usa o mesmo User-Agent; as imagens vêm depois pelo cliente com pausa.
 - Vários jogos: `python3 tools/imagens/robo.py lote [slug ...]` (sem argumentos, todos os jogos sem `fotos/fontes.json`) grava `lotes/imagens-<data>.md` com ✅/⚠️/⛔ por jogo e o e-mail de pedido para as editoras bloqueadas.
 
 ## Etapa 3: escolher (revisão visual)
@@ -46,6 +47,6 @@ Prefira foto sem texto por cima. Se faltar algum tipo, deixe sem; não force uma
 
 `python3 tools/imagens/robo.py aprovar <slug> capa=1 mesa=11 jogabilidade=13,8 componentes=15`
 
-Salva `<slug>/fotos/<tipo>-N.webp` (até 1600 px, ≤ 400 KB) e atualiza `fontes.json`. Um tipo já aprovado não é trocado sem `--forcar`. Faça commit de `<slug>/fotos/` (nunca de `.cache/`).
+Foto de outra edição ou versão do jogo: acrescente `--nota "foto da 2ª edição"`, que vai no crédito embaixo da foto (ex.: Gloomhaven). Salva `<slug>/fotos/<tipo>-N.webp` (até 1600 px, ≤ 400 KB) e atualiza `fontes.json`. Um tipo já aprovado não é trocado sem `--forcar`. Faça commit de `<slug>/fotos/` (nunca de `.cache/`).
 
 Depois de aprovar, marque no `fontes.json` `"pessoas": true` nas fotos em que aparecem pessoas ou mãos (elas não vão para a página) e, se a melhor foto para o topo não for a mesa, `"principal": true` nela. Por último, depois que a revisão aprovar o conjunto, ponha `"usar_na_pagina": true` no `fontes.json`; sem isso a página continua com o infográfico no topo. O uso das fotos na página está em `PADRAO_EDITORIAL.md` (Fotos oficiais na página).

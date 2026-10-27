@@ -4,18 +4,22 @@ Uso:
   python3 tools/imagens/robo.py mapear <dominio> [--nome "Editora"]   mapeia o site e grava a receita em editoras.json
   python3 tools/imagens/robo.py buscar <slug> [--url URL] [--editora DOMINIO]
                                        acha a página do jogo, baixa as candidatas e monta a folha de contato
-  python3 tools/imagens/robo.py aprovar <slug> capa=3 mesa=5,7 jogabilidade=2 componentes=9 [--forcar]
+  python3 tools/imagens/robo.py aprovar <slug> capa=3 mesa=5,7 jogabilidade=2 componentes=9 [--forcar] [--nota "2ª edição"]
                                        salva as escolhidas em <slug>/fotos/ e registra a origem em fontes.json
+                                       (--nota vai no crédito embaixo da foto, ex.: edição diferente da resenhada)
   python3 tools/imagens/robo.py lote [slug ...]   roda `buscar` nos jogos sem fotos e grava lotes/imagens-<data>.md
 
 Boa conduta: confere o robots.txt (RFC 9309, com * e $) de cada host antes de cada pedido, respeita o Crawl-delay
 (mínimo de 3 s), se identifica pelo User-Agent e para na hora em 401/403, sem tentar contornar o bloqueio.
 Páginas e imagens ficam em .cache/imagens/, fora do git, então rodar de novo não baixa nada duas vezes.
+Sites montados com JavaScript ("js": true na receita, marcado pelo `mapear`) abrem num Chromium sem janela
+(navegador.js), que pergunta ao robô antes de cada pedido se o robots.txt permite.
 """
 import hashlib
 import io
 import json
 import re
+import subprocess
 import sys
 import time
 import unicodedata
@@ -242,7 +246,8 @@ def mapear(cli, dominio, nome=None):
     elif "wp-content" in html or "wp-json" in html:
         rec["plataforma"] = "woocommerce" if "woocommerce" in html else "wordpress"
     if len(BeautifulSoup(html, "lxml").get_text(" ", strip=True)) < 300 and "<script" in html:
-        rec["obs"] = "página quase vazia sem JavaScript: pode precisar de Playwright"
+        rec.update(js=True, obs="site montado com JavaScript: o robô abre as páginas no navegador")
+        html = renderizar(cli, final)
     soup = BeautifulSoup(html, "lxml")
     for a in soup.find_all("a", href=True):
         txt = (a.get_text(" ", strip=True) + " " + a["href"]).lower()
@@ -341,6 +346,57 @@ def nomes_do_jogo(c):
     return list(dict.fromkeys(n.strip() for n in nomes if n.strip()))
 
 
+# ---------- sites montados com JavaScript ----------
+
+def renderizar(cli, url):
+    """Abre a página num Chromium sem janela e devolve o HTML já montado pelo JavaScript.
+
+    Mesmas regras do cliente: confere o robots.txt da página e de cada script ou chamada que o navegador fizer
+    (o que for proibido é cancelado), se identifica com o mesmo User-Agent e não baixa imagens, fontes nem CSS
+    (as imagens vêm depois pelo cliente educado, com pausa entre pedidos).
+    """
+    chave = hashlib.sha1(("js:" + url).encode()).hexdigest()
+    corpo_f = CACHE / "http" / f"{chave}.html"
+    if corpo_f.exists() and time.time() - corpo_f.stat().st_mtime < CACHE_DIAS * 86400:
+        return corpo_f.read_text(encoding="utf-8")
+    if not cli.pode(url):
+        raise Bloqueado(f"robots.txt proíbe {url}")
+    cli._esperar(cli._host(url), max(DELAY_MIN, cli._robots(url).delay or 0))
+    cli.pedidos += 1
+    proc = subprocess.Popen(["node", str(AQUI / "navegador.js"), url, UA], stdin=subprocess.PIPE,
+                            stdout=subprocess.PIPE, text=True, cwd=ROOT)
+    cancelados, fim = [], None
+    try:
+        for linha in proc.stdout:
+            msg = json.loads(linha)
+            if "id" in msg:  # o navegador pergunta se pode pedir esta URL
+                try:
+                    ok = cli.pode(msg["url"])
+                except Exception:
+                    ok = False
+                if not ok:
+                    cancelados.append(msg["url"])
+                proc.stdin.write(f"{msg['id']} {1 if ok else 0}\n")
+                proc.stdin.flush()
+            else:
+                fim = msg
+                break
+    finally:
+        proc.kill()
+    if not fim or fim["status"] == 0:
+        raise LookupError(f"navegador não abriu {url}: {(fim or {}).get('erro', 'sem resposta')}")
+    if fim["status"] in (401, 403):
+        raise Bloqueado(f"{fim['status']} em {url}")
+    if fim["status"] >= 400:
+        raise LookupError(f"{fim['status']} em {url}")
+    html = fim["html"]
+    if cancelados:
+        print(f"navegador: {len(cancelados)} pedidos cancelados pelo robots.txt", file=sys.stderr)
+    corpo_f.parent.mkdir(parents=True, exist_ok=True)
+    corpo_f.write_text(html, encoding="utf-8")
+    return html
+
+
 # ---------- extrair imagens de uma página ----------
 
 def original(url):
@@ -368,7 +424,7 @@ def imagens_da_pagina(cli, url, rec):
                 add(im["src"], im.get("alt") or "")
         except (Bloqueado, LookupError, ValueError, KeyError):
             pass
-    _, html = cli.get(url)
+    html = renderizar(cli, url) if rec.get("js") else cli.get(url)[1]
     soup = BeautifulSoup(html, "lxml")
     titulo = soup.title.get_text(strip=True) if soup.title else ""
     for m in soup.find_all("meta", attrs={"property": re.compile("og:image")}) + \
@@ -547,7 +603,7 @@ def buscar(cli, slug, url_fixa=None, so_editora=None):
     return rel
 
 
-def aprovar(slug, escolhas, forcar=False):
+def aprovar(slug, escolhas, forcar=False, nota=None):
     cands = {c["n"]: c for c in json.loads((CACHE / slug / "candidatas.json").read_text(encoding="utf-8"))}
     pasta = ROOT / slug / "fotos"
     pasta.mkdir(parents=True, exist_ok=True)
@@ -572,7 +628,7 @@ def aprovar(slug, escolhas, forcar=False):
                 if (pasta / nome).stat().st_size <= 400_000:
                     break
             reg["fotos"].append({"arquivo": f"fotos/{nome}", "tipo": tipo, "largura": im.width, "altura": im.height,
-                                 "editora": c["editora"], "credito": f"Imagem: {c['editora']}", "pagina": c["pagina"],
+                                 "editora": c["editora"], "credito": f"Imagem: {c['editora']}" + (f" · {nota}" if nota else ""), "pagina": c["pagina"],
                                  "imagem": c["url"], "baixada_em": date.today().isoformat(), "aprovada": True})
             print(f"{slug}/fotos/{nome}  {im.width}x{im.height}  {(pasta / nome).stat().st_size // 1024} KB")
     reg["fotos"].sort(key=lambda f: (TIPOS.index(f["tipo"]), f["arquivo"]))
@@ -617,7 +673,7 @@ def main():
         sys.exit(__doc__)
     cmd, resto = args[0], args[1:]
     opc = {}
-    for flag in ("--nome", "--url", "--editora"):
+    for flag in ("--nome", "--url", "--editora", "--nota"):
         if flag in resto:
             i = resto.index(flag)
             opc[flag] = resto[i + 1]
@@ -648,7 +704,7 @@ def main():
             if tipo not in TIPOS:
                 sys.exit(f"Tipo inválido: {tipo} (use {', '.join(TIPOS)})")
             escolhas[tipo] = [int(n) for n in nums.split(",")]
-        aprovar(resto[0], escolhas, forcar)
+        aprovar(resto[0], escolhas, forcar, opc.get("--nota"))
     elif cmd == "lote":
         slugs = resto or sorted(p.stem for p in (ROOT / "conteudo").glob("*.json")
                                 if not (ROOT / p.stem / "fotos" / "fontes.json").exists())

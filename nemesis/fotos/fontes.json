@@ -1,0 +1,55 @@
+{
+ "slug": "nemesis",
+ "fotos": [
+  {
+   "arquivo": "fotos/mesa-1.webp",
+   "tipo": "mesa",
+   "largura": 1600,
+   "altura": 1067,
+   "editora": "Awaken Realms",
+   "credito": "Imagem: Awaken Realms",
+   "pagina": "https://awakenrealms.com/games/awaken-realms/nemesis",
+   "imagem": "https://awakenrealms.com/assets/6-DpARXvPV.webp",
+   "baixada_em": "2026-10-27",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/jogabilidade-1.webp",
+   "tipo": "jogabilidade",
+   "largura": 1600,
+   "altura": 1067,
+   "editora": "Awaken Realms",
+   "credito": "Imagem: Awaken Realms",
+   "pagina": "https://awakenrealms.com/games/awaken-realms/nemesis",
+   "imagem": "https://awakenrealms.com/assets/2-BL0fH-Ag.webp",
+   "baixada_em": "2026-10-27",
+   "aprovada": true,
+   "pessoas": true
+  },
+  {
+   "arquivo": "fotos/jogabilidade-2.webp",
+   "tipo": "jogabilidade",
+   "largura": 1600,
+   "altura": 1067,
+   "editora": "Awaken Realms",
+   "credito": "Imagem: Awaken Realms",
+   "pagina": "https://awakenrealms.com/games/awaken-realms/nemesis",
+   "imagem": "https://awakenrealms.com/assets/4-CkW0_VZ_.webp",
+   "baixada_em": "2026-10-27",
+   "aprovada": true,
+   "pessoas": true
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 1600,
+   "altura": 1067,
+   "editora": "Awaken Realms",
+   "credito": "Imagem: Awaken Realms",
+   "pagina": "https://awakenrealms.com/games/awaken-realms/nemesis",
+   "imagem": "https://awakenrealms.com/assets/5-BLN3fW02.webp",
+   "baixada_em": "2026-10-27",
+   "aprovada": true
+  }
+ ]
+}
