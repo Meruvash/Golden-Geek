@@ -494,7 +494,8 @@ def baixar_candidatas(cli, candidatas, pasta):
         except Bloqueado as e:
             avisos.append(str(e))
             continue
-        except (LookupError, OSError):
+        except (LookupError, OSError) as e:
+            avisos.append(f"não baixou {c['url']}: {e}")
             continue
         w, h = im.size
         if min(w, h) < LADO_MIN or max(w, h) / min(w, h) > 3:
