@@ -1,0 +1,29 @@
+{
+ "slug": "the-crew",
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 1100,
+   "altura": 1447,
+   "editora": "Kosmos",
+   "credito": "Imagem: Kosmos",
+   "pagina": "https://www.kosmos.de/products/die-crew",
+   "imagem": "https://cdn.shopify.com/s/files/1/0934/5980/8589/files/4002051691868.png",
+   "baixada_em": "2026-10-27",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 1500,
+   "altura": 1500,
+   "editora": "Kosmos",
+   "credito": "Imagem: Kosmos",
+   "pagina": "https://www.kosmos.de/products/die-crew",
+   "imagem": "https://cdn.shopify.com/s/files/1/0934/5980/8589/files/4002051691868_2.jpg",
+   "baixada_em": "2026-10-27",
+   "aprovada": true
+  }
+ ]
+}

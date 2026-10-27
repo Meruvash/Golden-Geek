@@ -1,0 +1,29 @@
+{
+ "slug": "azul",
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 1080,
+   "altura": 1080,
+   "editora": "Plan B Games",
+   "credito": "Imagem: Plan B Games",
+   "pagina": "https://www.nextmove-games.com/azul/",
+   "imagem": "https://cdn.svc.asmodee.net/production-nextmove/uploads/2024/04/Box_azul_1080x1080-2.png",
+   "baixada_em": "2026-10-27",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 1080,
+   "altura": 1080,
+   "editora": "Plan B Games",
+   "credito": "Imagem: Plan B Games",
+   "pagina": "https://www.nextmove-games.com/azul/",
+   "imagem": "https://cdn.svc.asmodee.net/production-nextmove/uploads/2024/04/azul_factories.jpg",
+   "baixada_em": "2026-10-27",
+   "aprovada": true
+  }
+ ]
+}
