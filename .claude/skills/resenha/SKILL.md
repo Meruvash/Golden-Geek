@@ -22,8 +22,7 @@ Se o jogo tiver `serie` ou outros itens da mesma série na fila (versões, sequ�
 - `modelos/referencia-*.jpg`: **modelo visual** dos infográficos (referência obrigatória na geração).
 
 - `pauta.json`: fila de jogos, regras e resenhas publicadas.
-- `nemesis/index.html`: **modelo de página**. Copie a estrutura e o CSS; troque as cores de cada jogo (`--n`, `--l`, `--r`) pela paleta do tema.
-- `resenhas/index.html`: lista de resenhas. Acrescente um card novo **no topo** da grade.
+- `resenhas/index.html`: lista de resenhas, gerada por `tools/build_lista.py` a partir de `pauta.json` (não editar à mão).
 - Cada resenha mora em `<slug>/` com `index.html`, `infografico.webp` (até ~450 KB) e `capa.jpg` (800×800, até 250 KB, usada no og:image).
 
 ## Etapa 0: atualizar a pauta
@@ -94,7 +93,7 @@ O usuário responde em uma linha, por exemplo "aprova 1, 2 e 4; refaz a 3: <ajus
 
 1. Salve a imagem aprovada como `<slug>/infografico.webp` (1600 px, até ~450 KB) e `<slug>/capa.jpg` (800×800) com Pillow, e apague `variacao-*.png`.
 2. `python3 tools/build_review.py conteudo/<slug>.json` gera `<slug>/index.html`.
-3. `python3 tools/publicar.py conteudo/<slug>.json` acrescenta o card no topo de `resenhas/index.html` e marca o jogo como `publicado` em `pauta.json`. Depois, `node tools/capa_resenhas.js` refaz `resenhas/capa.jpg` (prévia do WhatsApp da página de resenhas) com o mosaico das capas.
+3. `python3 tools/publicar.py conteudo/<slug>.json` marca o jogo como `publicado` em `pauta.json` e regera `resenhas/index.html` inteira (`tools/build_lista.py`). Depois, `node tools/capa_resenhas.js` refaz `resenhas/capa.jpg` (prévia do WhatsApp da página de resenhas) com o mosaico das capas.
 4. Teste no Playwright em 390 px e 1200 px: sem erros de JS e sem rolagem horizontal.
 5. Commit em `main` e push.
 6. Entregue a legenda do Instagram: gancho de até 125 caracteres na 1ª linha, 3–4 linhas de resumo com o veredito e o prêmio, uma pergunta para comentários, "Resenha completa no link da bio" e 8–12 hashtags em PT e EN.

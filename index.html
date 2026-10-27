@@ -13,21 +13,30 @@
 <meta property="og:image:width" content="1344">
 <meta property="og:image:height" content="752">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#000000">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fontes/public-sans.woff2" as="font" type="font/woff2" crossorigin>
 <style>
-:root{--bg:#f6f4ef;--card:#fff;--ink:#1d1b18;--muted:#6b665d;--line:#e4dfd4;--gold:#9a6f00;--gold-bg:#fff4d1;--gold-line:#e6c25a;--accent:#2f5d50;--chip:#e6efeb}
-@media (prefers-color-scheme:dark){:root{--bg:#141311;--card:#1d1c19;--ink:#ece8df;--muted:#a39d91;--line:#33302a;--gold:#e8bd55;--gold-bg:#2c2513;--gold-line:#6b5420;--accent:#7cc0a9;--chip:#22302b}}
+:root{--bg:#eef0f3;--card:#f4f5f7;--ink:#14171c;--muted:#5a6270;--line:#dde1e7;--gold:#8a5f00;--gold-bg:#fff4d1;--gold-line:#e6c25a;--accent:#1f5fae;--chip:#e3ecf8;--frame-ink:#eceff3;--frame-muted:#a1a9b5;--frame-line:#262a32;--zap:#157a43}
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+@font-face{font-family:"Public Sans";src:url(fontes/public-sans.woff2) format("woff2");font-weight:400 800;font-display:swap}
+body{margin:0;background:#000;color:var(--frame-ink);font:15px/1.45 "Public Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+::selection{background:#e3b23c;color:#000}:focus-visible{outline:3px solid #e3b23c;outline-offset:2px;border-radius:3px}
+.ic{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}
+.topbar{border-bottom:1px solid var(--frame-line)}.topbar .in{max-width:960px;margin:0 auto;padding:8px 16px;display:flex;align-items:center;gap:12px}
+.topbar a{color:var(--frame-ink);text-decoration:none;font-weight:600;font-size:.95rem}.marca img{width:84px;height:auto;border-radius:6px;display:block}.topbar .in{align-items:center}
+.topbar .ig,.topbar .zap-mini{display:flex;align-items:center;gap:6px;padding:6px 10px;border-radius:6px}.topbar .ig{margin-left:auto}.topbar .ig:hover{color:#e3b23c}
+.topbar .zap-mini{background:var(--zap);color:#fff}.topbar .zap-mini:hover{background:#11683a}
+.topbar .res{border:1px solid #3a3f48;border-radius:6px;padding:6px 12px}.topbar .res:hover{border-color:#e3b23c}
+@media (max-width:700px){.topbar .ig span,.topbar .zap-mini span{display:none}}
+.intro h1{font-size:clamp(1.9rem,5vw,2.8rem);line-height:1.08;font-weight:800;letter-spacing:-.02em;margin:24px 0 10px}
+.intro p{margin:0;color:#c9cfd8;max-width:62ch}
+.zap{display:flex;align-items:center;gap:12px;margin:16px 0 4px;padding:14px 18px;border-radius:10px;background:var(--zap);color:#fff;text-decoration:none;max-width:520px}
+.zap:hover{background:#11683a}.zap .ic{width:30px;height:30px;flex:none}.zap b{display:block;font-size:1.05rem}.zap small{display:block;font-size:.85rem;opacity:.92}
+.count,.summary{color:var(--frame-muted)!important}footer{color:var(--frame-muted)!important}footer a{color:var(--frame-ink)}
+.panel,table,#out{color:var(--ink)}.empty{color:var(--muted)}.chip{color:var(--accent)}
 .wrap{max-width:960px;margin:0 auto;padding:22px 16px 40px}
-.hero{position:relative;display:flex;flex-direction:column;justify-content:flex-end;min-height:240px;padding:24px;border-radius:16px;overflow:hidden;color:#fff;background:#13201b url("https://d8j0ntlcm91z4.cloudfront.net/user_3FrwcvamXiMgBXlk30xVjONWQnK/hf_20261024_204947_300bdb30-277f-4c90-a644-2858b9b91e46_min.webp") center/cover no-repeat}
-.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,12,10,.9) 0%,rgba(8,12,10,.6) 45%,rgba(8,12,10,.08) 100%)}
-.hero>*{position:relative;max-width:46ch}
-.hero .eyebrow{font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#e8bd55;margin:0 0 6px}
-.hero h1{font-size:2rem;line-height:1.15;margin:0 0 8px;text-shadow:0 2px 12px rgba(0,0,0,.5)}
-.hero p{margin:0;color:rgba(255,255,255,.86);font-size:.95rem}
-.hero .navlink{position:absolute;top:14px;right:14px;display:inline-flex;align-items:center;gap:6px;padding:7px 14px;border-radius:999px;background:rgba(232,189,85,.95);color:#1b1503;font-size:.86rem;font-weight:700;text-decoration:none;box-shadow:0 2px 10px rgba(0,0,0,.35)}
-.hero .navlink:hover{background:#f2c14e}
 .panel{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;margin:16px 0}
 .search{width:100%;font:inherit;font-size:16px;padding:11px 12px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink)}
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:10px}
@@ -65,10 +74,7 @@ tr.grp .gy{color:var(--accent);font-weight:800;margin-right:6px}
 tr.grp .gc{font-weight:700}
 tr.grp .ge{display:block;font-size:.8rem;font-weight:500;color:var(--muted);margin-top:2px}
 @media (max-width:600px){
- .hero{min-height:220px;padding:62px 18px 18px}
- .hero::before{background:linear-gradient(0deg,rgba(8,12,10,.92) 0%,rgba(8,12,10,.55) 55%,rgba(8,12,10,.1) 100%)}
- .hero h1{font-size:1.6rem}
- .grid{grid-template-columns:1fr 1fr}
+    .grid{grid-template-columns:1fr 1fr}
  .grid label:last-child{grid-column:span 2}
  table,thead,tbody,tr,td,th{display:block}
  thead{display:none}
@@ -87,13 +93,18 @@ tr.grp .ge{display:block;font-size:.8rem;font-weight:500;color:var(--muted);marg
 </style>
 </head>
 <body>
+<header class="topbar"><div class="in">
+ <a class="marca" href="resenhas/"><img src="marca/elite-boardgamers.webp" width="318" height="254" alt="Elite Boardgamers"></a>
+ <a class="ig" href="https://www.instagram.com/eliteboardgamers/" target="_blank" rel="noopener" aria-label="Instagram @eliteboardgamers"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6" fill="currentColor"/></svg><span>@eliteboardgamers</span></a>
+ <a class="zap-mini" href="https://chat.whatsapp.com/IgQQkJdSkzHBaEq3UwFeAo" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8.4 19l-4.4 1Z"/><path d="M9.2 8.6c.3-.5.8-.5 1-.1l.7 1.5c.1.3 0 .6-.2.8l-.4.4c.5 1.1 1.4 2 2.5 2.5l.4-.4c.2-.2.5-.3.8-.2l1.5.7c.4.2.4.7-.1 1-.7.5-1.6.6-2.4.3a7 7 0 0 1-4.2-4.2c-.3-.8-.2-1.7.4-2.3Z"/></svg><span>Grupo do WhatsApp</span></a>
+ <a class="res" href="resenhas/">Resenhas</a>
+</div></header>
 <div class="wrap">
- <header class="hero">
-  <a class="navlink" href="resenhas/">Resenhas →</a>
-  <p class="eyebrow">★ Golden Geek Awards</p>
+ <section class="intro">
   <h1>Consulta Golden Geek 2015–2025</h1>
   <p>Os três primeiros colocados de cada categoria do Golden Geek, prêmio votado pela comunidade do BoardGameGeek.</p>
- </header>
+  <a class="zap" href="https://chat.whatsapp.com/IgQQkJdSkzHBaEq3UwFeAo" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8.4 19l-4.4 1Z"/><path d="M9.2 8.6c.3-.5.8-.5 1-.1l.7 1.5c.1.3 0 .6-.2.8l-.4.4c.5 1.1 1.4 2 2.5 2.5l.4-.4c.2-.2.5-.3.8-.2l1.5.7c.4.2.4.7-.1 1-.7.5-1.6.6-2.4.3a7 7 0 0 1-4.2-4.2c-.3-.8-.2-1.7.4-2.3Z"/></svg><span><b>Entre no grupo do WhatsApp</b><small>Converse sobre jogos premiados e receba as novas resenhas</small></span></a>
+ </section>
 
  <section class="panel" aria-label="Filtros">
   <input id="q" class="search" type="search" placeholder="Pesquisar jogo pelo nome" autocomplete="off">
@@ -127,6 +138,7 @@ tr.grp .ge{display:block;font-size:.8rem;font-weight:500;color:var(--muted);marg
  <footer>
   <p>Fonte: Golden Geek Awards, votação da comunidade do BoardGameGeek. A lista traz os três colocados publicados em cada categoria e não contém todos os indicados da etapa inicial.</p>
   <p>O selo "aparições" indica que o jogo aparece mais de uma vez na lista (em outras categorias ou anos). Toque nele para ver todas.</p>
+  <p><a href="https://www.instagram.com/eliteboardgamers/" target="_blank" rel="noopener">Instagram @eliteboardgamers</a> · <a href="https://chat.whatsapp.com/IgQQkJdSkzHBaEq3UwFeAo" target="_blank" rel="noopener">Grupo do WhatsApp</a> · <a href="resenhas/">Resenhas</a></p>
  </footer>
 </div>
 

@@ -86,6 +86,10 @@ def build(c):
         for a in c["premiacoes"]
     )
     vitorias = sum(1 for a in c["premiacoes"] if a["resultado"] == "vencedor")
+    premios_bloco = (
+        f'<section class="bloco claro" id="premios"><h2>Prêmios</h2><p class="resumo">{vitorias} vitória{"s" if vitorias != 1 else ""} em {len(c["premiacoes"])} premiações da pauta</p><ul>{premios}</ul></section>'
+        if c["premiacoes"] else ""
+    )
     ficha_html = "".join(
         f'<div><dt>{e(k)}</dt><dd{" class=na" if "não confirmad" in v.lower() else ""}>{e(v)}</dd></div>'
         for k, v in ficha
@@ -254,7 +258,7 @@ footer a{{color:var(--bar-ink)}}
  </div>
 </div>
 <nav class="abas" aria-label="Seções da resenha"><ul>
- <li><a href="#como-funciona">Como funciona</a></li><li><a href="#pros-contras">Prós e contras</a></li><li><a href="#para-quem">Para quem é</a></li><li><a href="#veredito">Veredito</a></li><li><a href="#ficha">Ficha</a></li><li><a href="#premios">Prêmios</a></li><li><a href="#fontes">Fontes</a></li>
+ <li><a href="#como-funciona">Como funciona</a></li><li><a href="#pros-contras">Prós e contras</a></li><li><a href="#para-quem">Para quem é</a></li><li><a href="#veredito">Veredito</a></li><li><a href="#ficha">Ficha</a></li>{'<li><a href="#premios">Prêmios</a></li>' if c["premiacoes"] else ""}<li><a href="#fontes">Fontes</a></li>
 </ul></nav>
 </section>
 
@@ -279,7 +283,7 @@ footer a{{color:var(--bar-ink)}}
   <section class="bloco claro fontes" id="fontes"><h2>Fontes</h2><ul>{fontes}</ul><p class="note">Consulta às fontes em {e(c["consulta"])}.</p></section>
  </div>
  <aside>
-  <section class="bloco claro" id="premios"><h2>Prêmios</h2><p class="resumo">{vitorias} vitória{"s" if vitorias != 1 else ""} em {len(c["premiacoes"])} premiações da pauta</p><ul>{premios}</ul></section>
+  {premios_bloco}
   <section class="bloco claro" id="ficha"><h2>Ficha técnica</h2><dl>{ficha_html}</dl><p class="note">{e(c["nota_ficha"])}</p></section>
  </aside>
 </main>
