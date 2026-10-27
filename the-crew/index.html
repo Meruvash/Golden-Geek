@@ -118,8 +118,10 @@ footer{background:var(--bar);color:var(--bar-ink);font-size:.88rem;border-top:1p
 .post-st:empty,.leg-st:empty{display:none}.post-st,.leg-st{font-size:.88rem;color:var(--ok-ink);margin-top:8px}
 .legenda{margin-top:12px;padding:12px;border-radius:10px;background:#f4f5f7;color:#14171c}
 .legenda .leg-st{color:#1b7a45;font-weight:700;margin:0 0 8px}
-.legenda textarea{width:100%;border:1px solid #dde1e7;border-radius:8px;padding:10px;font:.92rem/1.5 "Public Sans",system-ui,sans-serif;color:#14171c;background:#fff;resize:vertical}
-.legenda .post-btn{margin-top:8px;width:100%;background:#14171c;color:#fff;border-color:#14171c}
+.leg-txt{white-space:pre-wrap;max-height:15em;overflow:auto;border:1px solid #dde1e7;border-radius:8px;padding:10px;font-size:.92rem;line-height:1.5;color:#14171c;background:#fff;-webkit-user-select:all;user-select:all}
+.leg-acoes{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.legenda .post-btn{background:#14171c;color:#fff;border-color:#14171c}
+.leg-dica{font-size:.8rem;color:#5a6270;margin-top:8px}
 footer .in{max-width:1120px;margin:0 auto;padding:18px 16px;display:flex;flex-wrap:wrap;gap:10px 20px}
 footer a{color:var(--bar-ink)}
 @media (min-width:860px){
@@ -148,7 +150,7 @@ footer a{color:var(--bar-ink)}
   <figcaption>Toque para ver o infográfico em tamanho cheio.</figcaption>
   <div class="post"><button type="button" class="post-btn" id="b-salvar"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="9" cy="9" r="1.8"/><path d="M21 15.5l-5-5L5 21"/></svg>Salvar na galeria</button><button type="button" class="post-btn" id="b-legenda" aria-expanded="false" aria-controls="legenda"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h8"/></svg>Legenda</button></div>
   <p class="post-st" id="salvar-st" role="status"></p>
-  <div class="legenda" id="legenda" hidden><p class="leg-st" role="status"></p><textarea readonly rows="9" aria-label="Legenda para o Instagram">Um jogo de vazas cooperativo jogado em silêncio — e ganhou o Kennerspiel. 🚀
+  <div class="legenda" id="legenda" hidden><p class="leg-st" role="status"></p><div class="leg-txt" id="leg-txt" tabindex="0" aria-label="Legenda para o Instagram">Um jogo de vazas cooperativo jogado em silêncio — e ganhou o Kennerspiel. 🚀
 
 50 missões curtas rumo ao nono planeta, com comunicação limitadíssima.
 Vencedor do Kennerspiel e do Deutscher Spiele Preis 2020 e do As d&#x27;Or Expert 2021.
@@ -158,7 +160,7 @@ Veredito: RECOMENDADO.
 Seu grupo aguentaria uma partida inteira sem falar?
 Resenha completa no link da bio.
 
-#TheCrew #ATripulacao #JogosDeCartas #JogosDeTabuleiro #BoardGames #Kennerspiel #Cooperativo #TabletopGames #EliteBoardgamers #CardGames</textarea><button type="button" class="post-btn" id="b-copiar"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h8"/></svg>Copiar de novo</button></div>
+#TheCrew #ATripulacao #JogosDeCartas #JogosDeTabuleiro #BoardGames #Kennerspiel #Cooperativo #TabletopGames #EliteBoardgamers #CardGames</div><div class="leg-acoes"><button type="button" class="post-btn" id="b-copiar"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h8"/></svg>Copiar de novo</button><button type="button" class="post-btn" id="b-compartilhar" hidden><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="M8.2 10.8l7.6-4.4M8.2 13.2l7.6 4.4"/></svg>Compartilhar legenda</button></div><p class="leg-dica">Não colou? Toque em “Compartilhar legenda” e escolha “Copiar”, ou segure o dedo no texto acima.</p></div>
  </figure>
  <div>
   <div class="topo">
@@ -238,15 +240,24 @@ Resenha completa no link da bio.
   });
   const caixa = document.getElementById("legenda");
   if (!caixa) return;
-  const texto = caixa.querySelector("textarea"), lst = caixa.querySelector(".leg-st"), btn = document.getElementById("b-legenda");
+  const txt = document.getElementById("leg-txt"), lst = caixa.querySelector(".leg-st"), btn = document.getElementById("b-legenda");
+  const texto = txt.textContent;
+  // Seleciona o texto e copia na hora do toque (o Brave bloqueia a API assíncrona); a API moderna entra como reforço.
   const copiar = async () => {
+    const r = document.createRange(); r.selectNodeContents(txt);
+    const sel = getSelection(); sel.removeAllRanges(); sel.addRange(r);
     let ok = false;
-    try { await navigator.clipboard.writeText(texto.value); ok = true; }
-    catch { texto.select(); ok = document.execCommand("copy"); }
-    lst.textContent = ok ? "Legenda copiada! É só colar no Instagram." : "Selecione o texto abaixo e copie.";
+    try { ok = document.execCommand("copy"); } catch {}
+    try { await navigator.clipboard.writeText(texto); ok = true; } catch {}
+    lst.textContent = ok ? "Legenda copiada! É só colar no Instagram." : "Não deu para copiar automático: use “Compartilhar legenda” ou segure o dedo no texto.";
   };
   btn.addEventListener("click", () => { caixa.hidden = false; btn.setAttribute("aria-expanded", "true"); copiar(); });
   document.getElementById("b-copiar").addEventListener("click", copiar);
+  const comp = document.getElementById("b-compartilhar");
+  if (navigator.share) {
+    comp.hidden = false;
+    comp.addEventListener("click", () => navigator.share({ text: texto }).catch(() => {}));
+  }
 })();
 </script>
 </body>
