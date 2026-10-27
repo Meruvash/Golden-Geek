@@ -79,6 +79,15 @@ def primeira_frase(t):
 SELO_CURTO = {"sim": "Recomendado", "publico": "Público específico", "nao": "Não recomendado"}
 
 
+def versao(arq):
+    """?v= com o hash do arquivo: quando a imagem muda, o endereço muda e navegador e WhatsApp buscam a nova."""
+    return f"?v={hashlib.md5(arq.read_bytes()).hexdigest()[:8]}" if arq.exists() else ""
+
+
+def capa_src(slug):
+    return f"../{slug}/capa.jpg{versao(ROOT / slug / 'capa.jpg')}"
+
+
 def mais_resenhas(c, n=6):
     """Outras resenhas publicadas (mais recentes primeiro) para o leitor continuar no site."""
     pauta = json.loads((ROOT / "pauta.json").read_text(encoding="utf-8"))
@@ -91,7 +100,7 @@ def mais_resenhas(c, n=6):
             continue
         o = json.loads((ROOT / "conteudo" / f"{s}.json").read_text(encoding="utf-8"))
         cards.append(
-            f'<li><a href="../{s}/"><img src="../{s}/capa.jpg" width="800" height="800" alt="" loading="lazy">'
+            f'<li><a href="../{s}/"><img src="{capa_src(s)}" width="800" height="800" alt="" loading="lazy">'
             f'<b>{e(o["jogo"])}</b><span class="selo {selo_class(o["selo"])}">{e(SELO_CURTO.get(selo_class(o["selo"]), o["selo"]))}</span></a></li>'
         )
         if len(cards) == n:
@@ -226,7 +235,7 @@ def layout_v2(c, premios_bloco, ficha_html, fontes, fotos=None, info_meio=""):
    <details class="mais dobra" open><summary><h2>Expansões e versões</h2></summary><p>{e(c.get("versoes", ""))}</p></details>
   </section>"""
     cards = "".join(
-        f'<li><a class="cc" href="../{sl}/"><img src="../{sl}/capa.jpg" width="800" height="800" alt="" loading="lazy"><span><b>{e(j)}</b><span>{e(x)}</span><span class="vr">Ler a resenha →</span></span></a></li>'
+        f'<li><a class="cc" href="../{sl}/"><img src="{capa_src(sl)}" width="800" height="800" alt="" loading="lazy"><span><b>{e(j)}</b><span>{e(x)}</span><span class="vr">Ler a resenha →</span></span></a></li>'
         if sl else f'<li><div class="cc"><span class="cc-ph" aria-hidden="true">{e(j[0])}</span><span><b>{e(j)}</b><span>{e(x)}</span></span></div></li>'
         for j, sl, x in c.get("comparacoes", [])
     )
@@ -410,9 +419,7 @@ def build(c):
     principal = foto_principal(fotos) if set(fotos) - {"capa"} else None
     if principal:
         capa_da_foto(slug, principal)
-    # O ?v= muda quando a capa muda, para o WhatsApp buscar a imagem nova em vez da guardada.
-    capa = ROOT / slug / "capa.jpg"
-    versao_capa = f"?v={hashlib.md5(capa.read_bytes()).hexdigest()[:8]}" if capa.exists() else ""
+    versao_capa = versao(ROOT / slug / "capa.jpg")
     if principal:
         topo_fig = foto_html(c, principal, "capa foto-capa", lazy=False)
         info_meio = (f'<section class="bloco info-meio" id="infografico"><h2>Infográfico para o Instagram</h2>'

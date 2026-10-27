@@ -8,7 +8,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from build_review import INSTAGRAM, ROOT, SITE, WHATSAPP, campo, e, faixa_nota, icone, numero, selo_class  # noqa: E402
+from build_review import INSTAGRAM, ROOT, SITE, WHATSAPP, campo, capa_src, versao, e, faixa_nota, icone, numero, selo_class  # noqa: E402
 
 
 def card(c):
@@ -18,7 +18,7 @@ def card(c):
     nota_html = f'<span class="nota {faixa_nota(nota)}" aria-label="Nota BGG {nota:.1f}">{f"{nota:.1f}".replace(".", ",")}</span>' if nota else ""
     premio = f'<span class="vit">{vit} vitória{"s" if vit != 1 else ""} em prêmios</span>' if vit else ""
     return f"""  <li><a class="card" href="../{c["slug"]}/">
-   <span class="capa"><img src="../{c["slug"]}/capa.jpg" width="800" height="800" alt="{e(c["alt"])}" loading="lazy">{nota_html}</span>
+   <span class="capa"><img src="{capa_src(c["slug"])}" width="800" height="800" alt="{e(c["alt"])}" loading="lazy">{nota_html}</span>
    <span class="corpo">
     <span class="selo {selo_class(c["selo"])}">{e(c["selo"])}</span>
     <h2>{e(titulo)}</h2>
@@ -48,7 +48,7 @@ def build():
 <meta property="og:description" content="Resenhas de jogos de tabuleiro premiados, com fontes: o que funciona, pontos de atenção e para quem é cada jogo.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="{SITE}/resenhas/">
-<meta property="og:image" content="{SITE}/resenhas/capa.jpg">
+<meta property="og:image" content="{SITE}/resenhas/capa.jpg{versao(ROOT / "resenhas" / "capa.jpg")}">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
