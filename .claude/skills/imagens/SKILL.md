@@ -15,6 +15,18 @@ Ferramenta: `tools/imagens/robo.py`. Receitas por editora: `tools/imagens/editor
 - **Sempre com crédito.** Cada foto aprovada fica registrada em `<slug>/fotos/fontes.json` com editora, página e URL de origem.
 - Só imagens do jogo: nada de logos, banners, anúncios de outros jogos ou artes de propaganda com letreiro quando houver foto limpa.
 
+## Ordem das fontes
+
+1. **Editora original**: site e kit de imprensa.
+2. **Editoras licenciadas em outros países**: mesma arte e mesmas fotos, vindas da editora original (ex.: The Mind pela Pandasaurus nos EUA, Detective pela Pegasus na Alemanha). Mapeie a licenciada, fixe a página em `paginas` e aprove com `--nota "edição dos EUA"`. Ache as licenciadas na página do jogo no site do Spiel des Jahres (lista a editora alemã) ou pela busca na web.
+3. **Premiações**: o Spiel des Jahres publica as fotos das cerimônias em CC BY-SA 4.0 (crédito "Foto: Spiel des Jahres e.V. | CC BY-SA 4.0") e manda imagens em alta para a imprensa por presse@spiel-des-jahres.de.
+4. **Pedido direto** (e-mail ou mensagem no Instagram da editora), que o usuário envia: modelo no relatório do lote.
+5. **Licença livre** (Wikimedia Commons, Flickr CC): a mais segura, mas quase nunca tem jogos modernos. A API do Commons é proibida pelo robots.txt; ache as páginas de arquivo pela busca na web.
+
+Não use: galeria do BoardGameGeek (fotos de usuários, e o site bloqueia robôs), Ludopedia, lojas (Amazon etc.), Google Imagens, Pinterest, nem baixar ou raspar o Instagram (os termos da Meta proíbem). Post do Instagram só incorporado com o código oficial e com autorização de quem postou.
+
+Antes de confiar num domínio, confira o conteúdo: domínios de jogos mudam de dono (`flatoutgames.com` está à venda; `detectiveboardgame.com` virou um podcast polonês).
+
 ## Etapa 1: a editora tem receita?
 
 A busca liga a ficha do jogo (`Editora original` e `Editora no Brasil` em `conteudo/<slug>.json`) às receitas pelo `nome` e pelos `apelidos`. Se faltar a editora:

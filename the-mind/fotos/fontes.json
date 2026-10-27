@@ -1,0 +1,55 @@
+{
+ "slug": "the-mind",
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 1600,
+   "altura": 1600,
+   "editora": "Pandasaurus Games",
+   "credito": "Imagem: Pandasaurus Games · edição dos EUA",
+   "pagina": "https://pandasaurusgames.com/products/the-mind",
+   "imagem": "https://cdn.shopify.com/s/files/1/0064/9972/9490/files/TM_Front.jpg",
+   "baixada_em": "2026-10-27",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/jogabilidade-1.webp",
+   "tipo": "jogabilidade",
+   "largura": 1600,
+   "altura": 1600,
+   "editora": "Pandasaurus Games",
+   "credito": "Imagem: Pandasaurus Games · edição dos EUA",
+   "pagina": "https://pandasaurusgames.com/products/the-mind",
+   "imagem": "https://cdn.shopify.com/s/files/1/0064/9972/9490/products/mindphoto2.png",
+   "baixada_em": "2026-10-27",
+   "aprovada": true,
+   "pessoas": true
+  },
+  {
+   "arquivo": "fotos/jogabilidade-2.webp",
+   "tipo": "jogabilidade",
+   "largura": 1600,
+   "altura": 1600,
+   "editora": "Pandasaurus Games",
+   "credito": "Imagem: Pandasaurus Games · edição dos EUA",
+   "pagina": "https://pandasaurusgames.com/products/the-mind",
+   "imagem": "https://cdn.shopify.com/s/files/1/0064/9972/9490/products/mindphoto1.png",
+   "baixada_em": "2026-10-27",
+   "aprovada": true,
+   "pessoas": true
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 1600,
+   "altura": 1600,
+   "editora": "Pandasaurus Games",
+   "credito": "Imagem: Pandasaurus Games · edição dos EUA",
+   "pagina": "https://pandasaurusgames.com/products/the-mind",
+   "imagem": "https://cdn.shopify.com/s/files/1/0064/9972/9490/files/TM_Full.jpg",
+   "baixada_em": "2026-10-27",
+   "aprovada": true
+  }
+ ]
+}

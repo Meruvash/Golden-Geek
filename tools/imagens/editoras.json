@@ -136,7 +136,9 @@
   "plataforma": "html",
   "estrategia": "sitemap+html",
   "press_kit": null,
-  "paginas": {},
+  "paginas": {
+   "detective": "https://en.portalgames.pl/buy-detective/"
+  },
   "status": "ok",
   "obs": "loja sklep.portalgames.pl não tem o jogo-base de Detective; só acessórios",
   "robots": {
@@ -556,9 +558,11 @@
   "plataforma": "shopify",
   "estrategia": "sitemap+shopify_json",
   "press_kit": "https://pandasaurusgames.com/pages/press",
-  "paginas": {},
+  "paginas": {
+   "the-mind": "https://pandasaurusgames.com/products/the-mind"
+  },
   "status": "ok",
-  "obs": "",
+  "obs": "edita The Mind nos EUA (licença da NSV, que bloqueia robôs)",
   "robots": {
    "status": 200,
    "crawl_delay": null,
@@ -592,6 +596,27 @@
     "https://yourchartwellington.com/sitemap_index.xml",
     "https://magnusarchivesmysteries.com/sitemap_index.xml"
    ],
+   "verificado_em": "2026-10-27"
+  }
+ },
+ "pegasus.de": {
+  "nome": "Pegasus Spiele",
+  "apelidos": [
+   "Pegasus Spiele"
+  ],
+  "site": "https://pegasus.de",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://pegasus.de/Produkte/Downloads/",
+  "paginas": {
+   "detective": "https://pegasus.de/en/Detective-Ein-Krimi-Brettspiel-Portal-Games-Nominiert-Kennerspiel-des-Jahres-2019/57505G"
+  },
+  "status": "ok",
+  "obs": " edita Detective na Alemanha (licença da Portal)",
+  "robots": {
+   "status": 404,
+   "crawl_delay": null,
+   "sitemaps": [],
    "verificado_em": "2026-10-27"
   }
  }
