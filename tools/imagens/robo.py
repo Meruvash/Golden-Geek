@@ -7,6 +7,10 @@ Uso:
   python3 tools/imagens/robo.py aprovar <slug> capa=3 mesa=5,7 jogabilidade=2 componentes=9 [--forcar] [--nota "2ª edição"]
                                        salva as escolhidas em <slug>/fotos/ e registra a origem em fontes.json
                                        (--nota vai no crédito embaixo da foto, ex.: edição diferente da resenhada)
+  python3 tools/imagens/robo.py livres <slug> [...]   fotos de usuários com licença livre (categorias do Wikimedia
+                                       Commons em livres.json), com autor e licença no crédito; somam-se às candidatas
+  python3 tools/imagens/robo.py kit <slug> <zip ou link do zip> --nome "Editora"
+                                       imagens de um kit de imprensa (link público ou arquivo baixado pelo usuário)
   python3 tools/imagens/robo.py lote [slug ...]   roda `buscar` nos jogos sem fotos e grava lotes/imagens-<data>.md
 
 Boa conduta: confere o robots.txt (RFC 9309, com * e $) de cada host antes de cada pedido, respeita o Crawl-delay
@@ -23,6 +27,7 @@ import subprocess
 import sys
 import time
 import unicodedata
+import zipfile
 from datetime import date
 from pathlib import Path
 from urllib.parse import urljoin, urlsplit, urlunsplit
@@ -475,7 +480,7 @@ def baixar_candidatas(cli, candidatas, pasta):
     boas, hashes, avisos = [], [], []
     for c in candidatas[:MAX_CANDIDATAS]:
         try:
-            _, dados = cli.get(c["url"], binario=True)
+            dados = c.pop("_dados", None) or cli.get(c["url"], binario=True)[1]
             im = Image.open(io.BytesIO(dados))
             im.load()
         except Bloqueado as e:
@@ -524,6 +529,83 @@ def folha_de_contato(cands, destino):
         folha.paste(im, (x + (lado - im.width) // 2, y + 4 + (lado - 8 - im.height) // 2))
         d.text((x + 6, y + lado + 4), f"#{c['n']} {c['w']}x{c['h']} {c['palpite']}", fill="black", font=fonte)
     folha.save(destino, quality=82)
+
+
+# ---------- fotos de usuários com licença livre (Wikimedia Commons) ----------
+
+LIVRES = AQUI / "livres.json"
+LICENCAS_OK = r"^(CC0|CC BY(-SA)? [\d.]+|Public domain|PD)"
+
+
+def commons(cli, slug):
+    """Fotos de usuários das categorias do jogo no Commons (lista em livres.json), com autor e licença de cada uma."""
+    cats = json.loads(LIVRES.read_text(encoding="utf-8")).get(slug, []) if LIVRES.exists() else []
+    res, avisos = [], []
+    for cat in cats:
+        url = "https://commons.wikimedia.org/wiki/Category:" + cat.replace(" ", "_")
+        try:
+            _, html = cli.get(url)
+        except (Bloqueado, LookupError) as e:
+            avisos.append(str(e))
+            continue
+        soup = BeautifulSoup(html, "lxml")
+        arquivos = list(dict.fromkeys(urljoin(url, a["href"]) for a in soup.select("li.gallerybox a.mw-file-description")))
+        for pg in arquivos[:MAX_CANDIDATAS]:
+            try:
+                _, h = cli.get(pg)
+            except (Bloqueado, LookupError) as e:
+                avisos.append(str(e))
+                continue
+            fs = BeautifulSoup(h, "lxml")
+            link = fs.select_one(".fullMedia a.internal") or fs.select_one(".fullImageLink a")
+            lic = [x.get_text(strip=True) for x in fs.select(".licensetpl_short")]
+            lic = next((l for l in lic if re.match(LICENCAS_OK, l)), None)
+            aut = fs.select_one("#fileinfotpl_aut")
+            autor = aut.find_next_sibling("td").get_text(" ", strip=True) if aut and aut.find_next_sibling("td") else ""
+            autor = re.sub(r"\s+", " ", autor)[:80] or "autor no Wikimedia Commons"
+            if not link or not lic:
+                avisos.append(f"sem licença livre clara: {pg}")
+                continue
+            titulo = pg.rsplit("File:", 1)[-1]
+            res.append({"url": urljoin(pg, link["href"]), "alt": titulo, "pagina": pg, "editora": autor,
+                        "dominio": "commons.wikimedia.org", "licenca": lic,
+                        "credito": f"Foto: {autor} · {lic} · Wikimedia Commons"})
+    return res, avisos
+
+
+def kit(cli, origem, editora):
+    """Imagens de um kit de imprensa em ZIP: link público (respeitando o robots.txt) ou arquivo que o usuário baixou."""
+    local = Path(origem).expanduser()
+    dados = local.read_bytes() if local.exists() else cli.get(origem, binario=True)[1]
+    pagina = origem if not local.exists() else f"kit de imprensa ({local.name})"
+    z = zipfile.ZipFile(io.BytesIO(dados))
+    res = []
+    for nome in z.namelist():
+        base = nome.rsplit("/", 1)[-1]
+        if base.startswith(("._", ".")) or not re.search(r"\.(jpe?g|png|webp|tiff?)$", base, re.I):
+            continue  # pula lixo do macOS e o que não é imagem
+        res.append({"url": f"{pagina}#{base}", "alt": base, "pagina": pagina, "editora": editora,
+                    "credito": f"Imagem: {editora} (kit de imprensa)", "_dados": z.read(nome)})
+    return res
+
+
+def juntar_candidatas(slug, novas):
+    """Acrescenta candidatas às que já existem (numeração continua) e refaz a folha de contato."""
+    pasta = CACHE / slug
+    f = pasta / "candidatas.json"
+    velhas = json.loads(f.read_text(encoding="utf-8")) if f.exists() else []
+    urls = {c["url"] for c in velhas}
+    n = max((c["n"] for c in velhas), default=0)
+    for c in novas:
+        if c["url"] not in urls:
+            n += 1
+            c["n"] = n
+            velhas.append(c)
+    pasta.mkdir(parents=True, exist_ok=True)
+    f.write_text(json.dumps(velhas, ensure_ascii=False, indent=1), encoding="utf-8")
+    if velhas:
+        folha_de_contato(velhas, pasta / "folha.jpg")
+    return velhas
 
 
 # ---------- comandos ----------
@@ -628,7 +710,8 @@ def aprovar(slug, escolhas, forcar=False, nota=None):
                 if (pasta / nome).stat().st_size <= 400_000:
                     break
             reg["fotos"].append({"arquivo": f"fotos/{nome}", "tipo": tipo, "largura": im.width, "altura": im.height,
-                                 "editora": c["editora"], "credito": f"Imagem: {c['editora']}" + (f" · {nota}" if nota else ""), "pagina": c["pagina"],
+                                 "editora": c["editora"], "credito": (c.get("credito") or f"Imagem: {c['editora']}") + (f" · {nota}" if nota else ""),
+                                 **({"licenca": c["licenca"]} if c.get("licenca") else {}), "pagina": c["pagina"],
                                  "imagem": c["url"], "baixada_em": date.today().isoformat(), "aprovada": True})
             print(f"{slug}/fotos/{nome}  {im.width}x{im.height}  {(pasta / nome).stat().st_size // 1024} KB")
     reg["fotos"].sort(key=lambda f: (TIPOS.index(f["tipo"]), f["arquivo"]))
@@ -697,6 +780,22 @@ def main():
     elif cmd == "buscar":
         rel = buscar(cli, resto[0], opc.get("--url"), opc.get("--editora"))
         print(json.dumps(rel, ensure_ascii=False, indent=1))
+    elif cmd == "livres":
+        for slug in resto:
+            achadas, avisos = commons(cli, slug)
+            boas, av2 = baixar_candidatas(cli, achadas, CACHE / slug / "candidatas")
+            todas = juntar_candidatas(slug, boas)
+            print(f"{slug}: {len(boas)} fotos livres novas ({len(todas)} candidatas no total); folha em "
+                  f"{(CACHE / slug / 'folha.jpg').relative_to(ROOT)}")
+            for a in (avisos + av2)[:5]:
+                print("  ⚠️", a)
+    elif cmd == "kit":
+        if not opc.get("--nome"):
+            sys.exit('Informe a editora: kit <slug> <zip ou link> --nome "Editora"')
+        boas, avisos = baixar_candidatas(cli, kit(cli, resto[1], opc["--nome"]), CACHE / resto[0] / "candidatas")
+        todas = juntar_candidatas(resto[0], boas)
+        print(f"{resto[0]}: {len(boas)} imagens do kit ({len(todas)} candidatas no total); folha em "
+              f"{(CACHE / resto[0] / 'folha.jpg').relative_to(ROOT)}")
     elif cmd == "aprovar":
         escolhas = {}
         for a in resto[1:]:
