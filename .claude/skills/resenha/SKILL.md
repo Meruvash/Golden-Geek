@@ -65,3 +65,11 @@ O usuário responde em uma linha, por exemplo "aprova 1, 2 e 4; refaz a 3: <ajus
 5. Teste no Playwright em 390 px e 1200 px: sem erros de JS e sem rolagem horizontal.
 6. Commit em `main` e push.
 7. Entregue a legenda do Instagram: gancho de até 125 caracteres na 1ª linha, 3–4 linhas de resumo com o veredito e o prêmio, uma pergunta para comentários, "Resenha completa no link da bio" e 8–12 hashtags em PT e EN.
+
+## Infográfico: como gerar (vale sobre o que estiver acima)
+
+- **Formato: quadrado 1:1 para Instagram.** O visual segue as **imagens de referência do usuário** (infográficos 7 Wonders Duel, Código Secreto, Santa Monica, Splendor Duel, Too Many Bones): arte ilustrada rica, caixa oficial e componentes na mesa, coluna de ficha rápida com ícones à esquerda, caixas de nota, faixa "COMO FUNCIONA?" com 5 cartões ilustrados, painéis verde e vermelho, preços no Brasil, veredito dourado. A referência visual manda; o Sistema de Infográfico v2 é só guia geral.
+- **Gerador: API da OpenAI**, não o Higgsfield. `tools/gerar_infografico.sh <prompt.txt> <caixa.jpg> <ref1> <ref2> <prefixo>` (usa `OPENAI_API_KEY`). Modelo de prompt: `conteudo/azul.prompt-quadrado.txt`.
+- **Caixa oficial:** baixe a imagem da caixa (Wikipedia ou editora) e anexe como imagem 2, para a capa não ser inventada.
+- **Preços:** Buscapé (`curl` na página do produto), com loja, valor, forma de pagamento e data.
+- Revise o texto da imagem item por item antes de mostrar ao usuário.
