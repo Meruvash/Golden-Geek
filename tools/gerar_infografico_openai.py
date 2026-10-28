@@ -21,6 +21,14 @@ ROOT = Path(__file__).resolve().parent.parent
 URL = "https://api.openai.com/v1/images/edits"
 
 
+# Pedido do usuário em 28/10/2026: resenhas sem gerar imagem pela API da OpenAI (sem gastos).
+# Só gera com PERMITIR_IMAGEM_GPT=1 no ambiente, e isso só com um novo OK explícito do usuário.
+def travar_gasto():
+    if os.environ.get("PERMITIR_IMAGEM_GPT") != "1":
+        sys.exit("Geração de imagem pela API da OpenAI desligada (pedido do usuário em 28/10/2026). "
+                 "As resenhas saem só com as fotos oficiais; nada foi enviado nem cobrado.")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("conteudo")
@@ -38,6 +46,8 @@ def main():
         print(*erros, sep="\n - ")
         sys.exit("Roteiro fora do PADRAO_EDITORIAL.md; imagem não gerada.")
     texto = prompt(c)
+    if not a.dry_run:
+        travar_gasto()
     if not (a.dry_run or a.sem_fotos or fotos_liberadas(c["slug"])):
         sys.exit(f"{c['slug']}: {SEM_FOTOS}. Imagem não gerada.")
     if a.dry_run:

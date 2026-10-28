@@ -140,8 +140,9 @@ def main(arquivos):
     falhou = False
     for a in arquivos:
         c = json.loads(Path(a).read_text(encoding="utf-8"))
-        # Resenha antiga (passos próprios do site): a imagem é anterior ao v2 e não é regerada, só o texto conta.
-        erros = (checar_texto(c) if c.get("passos") else checar(c) + checar_texto(c))
+        # Só o texto conta quando não há infográfico a gerar: resenha antiga (passos próprios do site) ou resenha
+        # sem roteiro (desde 28/10/2026 não se gera mais imagem pela API; perfil, passos e como_resumo vão no JSON).
+        erros = (checar(c) + checar_texto(c) if c.get("roteiro") and not c.get("passos") else checar_texto(c))
         if erros:
             falhou = True
             print(f"✗ {c['slug']}: fora do padrão editorial")

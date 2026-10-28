@@ -1,9 +1,14 @@
 ---
 name: resenha
-description: Produz a próxima resenha da Elite Boardgamers a partir da pauta de jogos premiados (pauta.json) — pesquisa com fontes, texto do site, infográfico quadrado para Instagram no padrão editorial (PADRAO_EDITORIAL.md), legenda e publicação no GitHub Pages. Use quando pedirem "/resenha", "próxima resenha", "resenha de <jogo>" ou "atualizar pauta".
+description: Produz e publica sozinha a próxima resenha da Elite Boardgamers a partir da pauta de jogos premiados (pauta.json) — triagem de fotos oficiais, pesquisa com fontes, texto do site no padrão editorial (PADRAO_EDITORIAL.md), legenda e publicação no GitHub Pages, sem gerar imagem pela API e sem esperar aprovação. Use quando pedirem "/resenha", "próxima resenha", "resenha de <jogo>" ou "atualizar pauta".
 ---
 
 # Resenha Elite Boardgamers
+
+> **Regras desde 28/10/2026 (pedido do usuário):**
+> 1. **Nenhuma imagem gerada pela API da OpenAI** (nem lote, nem refação): zero gasto. A resenha sai com as fotos oficiais da editora no topo e em "Como é jogar". `lote_openai.py enviar` e `gerar_infografico_openai.py` estão travados no código (`PERMITIR_IMAGEM_GPT=1` só com novo OK explícito do usuário). As etapas 3 a 5 (roteiro, geração e revisão do infográfico) não rodam mais; infográficos já publicados continuam nas páginas.
+> 2. **Publicação automática**: a resenha que passa nas checagens (`checar_roteiro.py`, fotos liberadas, `publicar.py`) vai ao ar no mesmo dia, sem esperar aprovação. O usuário recebe só o resumo do que subiu.
+> 3. **Verificação às 22h** (skill `verificacao`): confere o que foi publicado no dia e corrige sozinha o que estiver errado.
 
 Só fazemos resenha de jogos premiados. **Quem escolhe o jogo é a pauta, não o usuário.**
 
@@ -19,7 +24,7 @@ Se o jogo tiver `serie` ou outros itens da mesma série na fila (versões, sequ�
 - `tools/build_review.py conteudo/<slug>.json`: gera `<slug>/index.html` a partir do JSON. Não edite o HTML à mão.
 - `tools/prompt_infografico.py conteudo/<slug>.json`: monta o prompt do infográfico a partir do `roteiro`.
 - Ferramentas: busca na web funciona; Wikipedia abre via `curl`; Ludopedia e BoardGameGeek bloqueiam acesso automatizado (não contornar), então os números deles vêm da busca e são sinalizados na ficha.
-- `modelos/referencia-*.jpg`: **modelo visual** dos infográficos (referência obrigatória na geração).
+- `modelos/referencia-*.jpg`: modelo visual dos infográficos antigos (geração desligada desde 28/10/2026).
 
 - `pauta.json`: fila de jogos, regras e resenhas publicadas.
 - `tools/fila_fotos.py`: triagem de fotos da pauta (`proximos`, `aprovado`, `sem-fotos`, `voltar`). Status `sem_fotos` = jogo fora da fila por falta de foto oficial boa para o topo, com data e editoras consultadas em `fotos`.
@@ -35,7 +40,7 @@ Para cada prêmio novo: colete de página oficial (Wikipedia só para conferir),
 
 ## Etapa 1: triagem de fotos (antes de pesquisar e escrever)
 
-**Formato atual da resenha: foto oficial do jogo no topo e infográfico no meio** (modelo: `fate-of-the-fellowship/`, Sina da Sociedade). Por isso a busca de fotos vem **antes** de qualquer pesquisa ou texto: só entra em produção o jogo que tem foto boa para o topo. Não gaste pesquisa, texto nem imagem com jogo que vai travar na publicação.
+**Formato atual da resenha: foto oficial do jogo no topo** (modelo: `fate-of-the-fellowship/`, Sina da Sociedade; desde 28/10/2026 sem infográfico novo). Por isso a busca de fotos vem **antes** de qualquer pesquisa ou texto: só entra em produção o jogo que tem foto boa para o topo. Não gaste pesquisa, texto nem imagem com jogo que vai travar na publicação.
 
 1. `python3 tools/fila_fotos.py proximos 8` lista os próximos da fila com slug e situação ("fotos ok", "fazer triagem"…).
 2. Para cada candidato sem fotos, descubra a editora original e a nacional (busca rápida na web) e crie a ficha mínima: `python3 tools/imagens/robo.py triagem <slug> --jogo "<nome da pauta>" --editora "<Editora original>" --nacional "<Editora no Brasil>"` (grava `triagem/<slug>.json`).
@@ -44,7 +49,7 @@ Para cada prêmio novo: colete de página oficial (Wikipedia só para conferir),
 5. **Passou:** `python3 tools/fila_fotos.py aprovado "<jogo>" <slug>` grava o slug na pauta, e o jogo segue para a etapa 1b.
 6. **Não passou em nenhuma fonte:** `python3 tools/fila_fotos.py sem-fotos "<jogo>" --obs "<editoras consultadas>"` tira o jogo da fila (mantém a prioridade) e **o próximo da fila entra no lugar**. Guarde o rascunho do pedido de kit de imprensa para a mensagem ao usuário. Quando chegarem fotos (kit de imprensa, `robo.py kit`), `fila_fotos.py voltar "<jogo>"` devolve o jogo ao mesmo lugar.
 
-Faça commit de `triagem/`, `<slug>/fotos/`, `tools/imagens/editoras.json` e `pauta.json` (nunca `.cache/`). As travas confirmam a regra: `lote_openai.py enviar`, `gerar_infografico_openai.py` e `publicar.py` recusam jogo sem fotos liberadas; `--sem-fotos` só com o OK do usuário.
+Faça commit de `triagem/`, `<slug>/fotos/`, `tools/imagens/editoras.json` e `pauta.json` (nunca `.cache/`). A trava confirma a regra: `publicar.py` recusa jogo sem fotos liberadas, e sem infográfico a foto é o topo da página. **Nunca use `--sem-fotos`**: jogo sem foto boa vira `sem_fotos` e o próximo da fila entra.
 
 ## Etapa 1b: pesquisa (só para quem passou na triagem)
 
@@ -55,56 +60,38 @@ Regras inegociáveis:
 - Separe FATO de OPINIÃO e atribua cada opinião à crítica que a fez.
 - Guarde o link de cada fonte (a seção Fontes da página tem links).
 
+A pesquisa precisa render também os campos do site que antes vinham do roteiro: `perfil` (6 barras), `passos` (5 passos de 15–30 palavras) e `como_resumo`, gravados direto no `conteudo/<slug>.json`.
+
 Saída da pesquisa: FICHA (ano, autor, editora, jogadores, duração anunciada e relatada, nota Ludopedia com nº de votos, peso, melhor com, edição nacional, **premiações da pauta**); COMO FUNCIONA; DIFERENCIAIS entre versões; ELOGIOS com fonte; CRÍTICAS com fonte e gravidade (leve/moderada/grave); PARA QUEM É / NÃO É; FONTES.
 
 ## Etapa 2: texto da resenha
 
 O texto do site segue a segunda parte do **`PADRAO_EDITORIAL.md`** (exemplo completo: `conteudo/gloomhaven.json`). Seções: abertura (`lede`), Como funciona (4–6 parágrafos), Como é jogar (`experiencia`), O que funciona muito bem e Pontos de atenção (5–7 itens de 30–70 palavras, com gravidade), Com quantos jogar (`jogadores`), Primeira partida, Edição nacional e preço, Expansões e versões (`versoes`), Se você gosta de… (`comparacoes`, ligando para as nossas resenhas), Para quem é / não é (4–5 cada), Veredito com selo (Recomendado / Recomendado para público específico / Não recomendado) e tagline, Prêmios, Ficha e Fontes (pelo menos 6). Tom direto e honesto, escrito para quem nunca jogou; opinião sempre com dono; nada além do que está na pesquisa.
 
-`python3 tools/checar_roteiro.py` confere o texto junto com o roteiro; `lote_openai.py enviar` e `publicar.py` se recusam a seguir se ele não passar.
+`python3 tools/checar_roteiro.py` confere o texto (e o roteiro, nas resenhas antigas que têm um); `publicar.py` se recusa a seguir se ele não passar.
 
-## Etapa 3: roteiro do infográfico
+## Etapas 3 a 6: desligadas (28/10/2026)
 
-O infográfico é **quadrado 1:1 (2048×2048)** e segue o **`PADRAO_EDITORIAL.md`** (leia antes de escrever). O modelo de densidade é `modelos/referencia-1.jpg` (Código Secreto) e o exemplo de roteiro completo é `conteudo/gloomhaven.json`.
-
-Resumo dos mínimos: chamada de 12–22 palavras, destaque de 15–28, lateral de 10 linhas, 4 caixas de número com contexto, 5 passos de 15–30 palavras que ensinam a rodada, 6–7 pontos fortes e 6–7 de atenção específicos do jogo, ficha de 8–10 linhas, um bloco extra verificável e veredito com parágrafo de 25–40 palavras. A pesquisa da etapa 1 precisa trazer dados suficientes para isso (componentes, edição nacional, idade, idioma, versão digital etc.), sempre com fonte.
-
-Antes de gerar: `python3 tools/checar_roteiro.py conteudo/<slug>.json` precisa passar. Os geradores rodam a mesma checagem e se recusam a gerar se o roteiro estiver fora do padrão.
-
-## Etapa 4: gerar o infográfico (OpenAI Batch API)
-
-Padrão: **Batch API** (50% mais barata, entrega em até 24 h), com `gpt-image-2.5-flare`, 2048×2048 (1:1), qualidade alta e as referências de `modelos/` pelas URLs do GitHub Pages.
-
-- `python3 tools/lote_openai.py enviar conteudo/<a>.json conteudo/<b>.json ...` cria o lote e grava `lotes/pendente.json` (faça commit e push dele).
-- `python3 tools/lote_openai.py buscar` verifica o lote; se concluído, salva `<slug>/variacao-1.png` e apaga `lotes/pendente.json`.
-
-Refações pontuais e urgentes: `python3 tools/gerar_infografico_openai.py conteudo/<slug>.json` (síncrono, preço cheio). Use `--dry-run` para ver o prompt.
+Roteiro do infográfico, geração pela OpenAI (lote ou síncrona), revisão do texto da imagem e aprovação em lote **não rodam mais**. Se existir `lotes/pendente.json` de antes da mudança (já pago), `lote_openai.py buscar` pode baixar as imagens: use o infográfico só se o texto dele bater com o `conteudo/<slug>.json` atual bloco por bloco; na dúvida, descarte (`rm <slug>/variacao-*.png`) e publique só com as fotos.
 
 ## Rotina das fotos (14:51 de Brasília, sessão agendada)
 
 Na véspera, a tarefa "Fotos oficiais das resenhas do dia seguinte (15h)" faz a triagem de fotos (etapa 1) dos próximos da fila, até deixar **4 jogos com "fotos ok"** prontos para a rotina das 8h; quem não tiver foto boa vira `sem_fotos` e o seguinte é testado. Ela não pesquisa nem escreve resenha, só faz commit de `triagem/`, `<slug>/fotos/`, `tools/imagens/editoras.json` e `pauta.json` e avisa o usuário dos jogos que saíram da fila, com o pedido de kit de imprensa pronto.
 
-## Rotina diária (07:55 de Brasília, sessão agendada)
+## Rotina diária (07:55 de Brasília, sessão agendada): 4 resenhas no ar, sem aprovação
 
-1. `buscar` o lote do dia anterior. Se concluído, faça a etapa 5 nas imagens e apresente a mensagem de aprovação (etapa 6) com as imagens. Jogo do lote que estiver `sem_fotos` não é apresentado: a imagem fica guardada em `<slug>/variacao-1.png` até as fotos chegarem.
-2. Prepare os 4 próximos `na_fila` com "fotos ok" em `fila_fotos.py proximos` (se faltar algum, faça a triagem da etapa 1 antes; quem não passar vira `sem_fotos`), siga as etapas 1b a 3, marque como `em_producao`, faça commit dos `conteudo/*.json` e `enviar` o lote novo. Commit e push de `lotes/pendente.json`.
-3. Nada é publicado sem aprovação: quando o usuário aprovar, siga a etapa 7.
+1. `git pull origin main`. Pegue os 4 próximos `na_fila` com "fotos ok" em `fila_fotos.py proximos` (faltando, faça a triagem da etapa 1; quem não passar vira `sem_fotos` e entra o seguinte).
+2. Para cada um: etapa 1b (pesquisa) e etapa 2 (texto), com `perfil`, `passos`, `como_resumo` e `legenda` no JSON. Não escreva `roteiro`: sem ele, `python3 tools/checar_roteiro.py conteudo/<slug>.json` confere só o texto do site, e precisa passar.
+3. Publique na hora (etapa 7) todos os que passaram, num único commit em `main` com push.
+4. Resumo curto ao usuário: jogos publicados com link, selo e prêmio, os que saíram da fila (`sem_fotos`) com o pedido de kit de imprensa pronto, e as legendas do Instagram. Não peça aprovação.
 
-## Etapa 5: revisão do texto da imagem
-
-Leia todo o texto visível, bloco por bloco (topo, lateral, números, passos, fortes, atenção, ficha, prêmios, extra, perfil, veredito), e compare palavra por palavra com o roteiro: letras, acentos, números, palavras a mais. Se houver erro, edite a imagem pedindo para corrigir **somente** os trechos errados. Depois de 2 tentativas sem sucesso, gere a arte **sem texto** e componha os textos por cima em HTML e depois em imagem (Playwright), usando as mesmas fontes da página.
-
-## Etapa 6: aprovação em lote
-
-O ritmo é **4 resenhas por dia, aprovadas em lote**. Cada execução prepara os 4 próximos itens da pauta (etapas 1 a 5) e marca-os como `em_producao`. Depois para e apresenta **uma mensagem única**, numerada de 1 a 4, com: jogo e prêmios, nota e ficha resumidas, veredito, link das imagens e roteiro.
-
-O usuário responde em uma linha, por exemplo "aprova 1, 2 e 4; refaz a 3: <ajuste>". Publique os aprovados (etapa 7) num único commit. Refaça só o que foi pedido e reapresente. Nada é publicado sem aprovação.
+Jogo que não fechar no dia (fonte faltando, checagem não passou) fica `em_producao` e é o primeiro do dia seguinte; nunca publique texto com número sem fonte para cumprir a cota.
 
 ## Etapa 7: publicação
 
-1. `python3 tools/salvar_imagem.py <slug>` salva `<slug>/infografico.webp` (1600 px de largura, até ~800 KB) e `<slug>/capa.jpg` (800×800, recorte do topo) e apaga `variacao-*.png`.
-2. `python3 tools/build_review.py conteudo/<slug>.json` gera `<slug>/index.html`. Se o jogo tem fotos oficiais aprovadas, refaz também a `<slug>/capa.jpg` a partir da foto do topo (ver "Fotos oficiais na página" em `PADRAO_EDITORIAL.md`); por isso rode sempre depois do `salvar_imagem.py`.
+1. Só se houver infográfico antigo aproveitável (`<slug>/variacao-1.png`): `python3 tools/salvar_imagem.py <slug>`. Sem ele, pule.
+2. `python3 tools/build_review.py conteudo/<slug>.json` gera `<slug>/index.html` com a foto oficial no topo e refaz a `<slug>/capa.jpg` a partir dela (ver "Fotos oficiais na página" em `PADRAO_EDITORIAL.md`).
 3. `python3 tools/publicar.py conteudo/<slug>.json` confere se há fotos oficiais liberadas (`usar_na_pagina`; ver etapa 1), marca o jogo como `publicado` em `pauta.json` e regera `resenhas/index.html` inteira (`tools/build_lista.py`) e todas as páginas de resenha, para o bloco "Continue lendo" incluir a nova, e a página inicial (bloco Últimas resenhas, via `tools/build_home.py`). Depois, `node tools/capa_resenhas.js` refaz `resenhas/capa.jpg` (prévia do WhatsApp da página de resenhas) com o mosaico das capas.
-4. Teste no Playwright em 390 px e 1200 px: sem erros de JS e sem rolagem horizontal.
-5. Commit em `main` e push.
+4. Teste no Playwright em 390 px e 1200 px: sem erros de JS, sem rolagem horizontal e com a foto no topo.
+5. Commit em `main` e push (sem esperar aprovação).
 6. Grave a legenda do Instagram no campo `legenda` de `conteudo/<slug>.json` antes do passo 2 (é o texto que o botão "Legenda" copia) e entregue-a também na resposta: gancho de até 125 caracteres na 1ª linha, 3–4 linhas de resumo com o veredito e o prêmio, uma pergunta para comentários, "Resenha completa no link da bio" e 8–12 hashtags em PT e EN.
