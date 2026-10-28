@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>Consulta Golden Geek 2015–2025</title>
+<meta name="description" content="Os três primeiros colocados de cada categoria do Golden Geek (BoardGameGeek), de 2015 a 2025.">
+<meta property="og:title" content="Consulta Golden Geek 2015–2025">
+<meta property="og:description" content="Pesquise e filtre os três primeiros colocados de cada categoria do Golden Geek, de 2015 a 2025.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://eliteboardgamers.com.br/consulta/">
+<meta property="og:image" content="https://d8j0ntlcm91z4.cloudfront.net/user_3FrwcvamXiMgBXlk30xVjONWQnK/hf_20261024_204947_300bdb30-277f-4c90-a644-2858b9b91e46.png">
+<meta property="og:image:width" content="1344">
+<meta property="og:image:height" content="752">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#000000">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../fontes/public-sans.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+:root{--bg:#eef0f3;--card:#f4f5f7;--ink:#14171c;--muted:#5a6270;--line:#dde1e7;--gold:#8a5f00;--gold-bg:#fff4d1;--gold-line:#e6c25a;--accent:#1f5fae;--chip:#e3ecf8;--frame-ink:#eceff3;--frame-muted:#a1a9b5;--frame-line:#262a32;--zap:#157a43}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+@font-face{font-family:"Public Sans";src:url(../fontes/public-sans.woff2) format("woff2");font-weight:400 800;font-display:swap}
+body{margin:0;background:#000;color:var(--frame-ink);font:15px/1.45 "Public Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+::selection{background:#e3b23c;color:#000}:focus-visible{outline:3px solid #e3b23c;outline-offset:2px;border-radius:3px}
+.ic{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}
+.topbar{border-bottom:1px solid var(--frame-line)}.topbar .in{max-width:960px;margin:0 auto;padding:8px 16px;display:flex;align-items:center;gap:12px}
+.topbar a{color:var(--frame-ink);text-decoration:none;font-weight:600;font-size:.95rem}.marca img{width:84px;height:auto;border-radius:6px;display:block}.topbar .in{align-items:center}
+.topbar .ig,.topbar .zap-mini{display:flex;align-items:center;gap:6px;padding:6px 10px;border-radius:6px}.topbar .ig{margin-left:auto}.topbar .ig:hover{color:#e3b23c}
+.topbar .zap-mini{background:var(--zap);color:#fff}.topbar .zap-mini:hover{background:#11683a}
+.topbar .res{border:1px solid #3a3f48;border-radius:6px;padding:6px 12px}.topbar .res:hover{border-color:#e3b23c}
+@media (max-width:700px){.topbar .ig span,.topbar .zap-mini span{display:none}}
+.intro h1{font-size:clamp(1.9rem,5vw,2.8rem);line-height:1.08;font-weight:800;letter-spacing:-.02em;margin:24px 0 10px}
+.intro p{margin:0;color:#c9cfd8;max-width:62ch}
+.zap{display:flex;align-items:center;gap:12px;margin:16px 0 4px;padding:14px 18px;border-radius:10px;background:var(--zap);color:#fff;text-decoration:none;max-width:520px}
+.zap:hover{background:#11683a}.zap .ic{width:30px;height:30px;flex:none}.zap b{display:block;font-size:1.05rem}.zap small{display:block;font-size:.85rem;opacity:.92}
+.count,.summary{color:var(--frame-muted)!important}footer{color:var(--frame-muted)!important}footer a{color:var(--frame-ink)}
+.panel,table,#out{color:var(--ink)}.empty{color:var(--muted)}.chip{color:var(--accent)}
+.wrap{max-width:960px;margin:0 auto;padding:22px 16px 40px}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;margin:16px 0}
+.search{width:100%;font:inherit;font-size:16px;padding:11px 12px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:10px}
+label.f{display:flex;flex-direction:column;font-size:.8rem;color:var(--muted);gap:4px}
+select{font:inherit;font-size:16px;padding:9px 8px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);width:100%}
+.wlabel{font-size:.8rem;color:var(--muted);margin:12px 0 4px}
+.seg{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--bg)}
+.seg button{font:inherit;font-size:.92rem;padding:9px 4px;border:0;border-left:1px solid var(--line);background:transparent;color:var(--ink);cursor:pointer}
+.seg button:first-child{border-left:0}
+.seg button.on{background:var(--accent);color:var(--card);font-weight:700}
+.toggles{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:12px;font-size:.92rem}
+.toggles label{display:flex;align-items:center;gap:7px;cursor:pointer}
+.toggles input{width:18px;height:18px;accent-color:var(--accent)}
+.bar{display:flex;flex-wrap:wrap;align-items:center;gap:8px;justify-content:space-between;margin:4px 0 10px}
+.count{color:var(--muted);font-size:.9rem}
+.btn{font:inherit;font-size:.85rem;border:1px solid var(--line);background:var(--card);color:var(--ink);padding:6px 10px;border-radius:8px;cursor:pointer}
+.chip{display:inline-flex;align-items:center;gap:4px;background:var(--chip);color:var(--accent);border-radius:999px;padding:4px 4px 4px 12px;font-size:.86rem;font-weight:600;margin-bottom:10px}
+.chip button{border:0;background:transparent;color:inherit;font-size:1.05rem;cursor:pointer;padding:0 8px;line-height:1}
+.summary{font-size:.88rem;color:var(--muted);margin:0 0 12px}
+table{width:100%;border-collapse:separate;border-spacing:0;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:.76rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);background:var(--bg)}
+tbody tr:last-child td{border-bottom:0}
+tr.first td{background:var(--gold-bg)}
+td.pos{font-weight:700;white-space:nowrap}
+tr.first td.pos{color:var(--gold)}
+tr.first td.pos::before{content:"★ "}
+td.g{font-weight:600}
+.multi{display:inline-block;margin-left:6px;border:1px solid var(--accent);color:var(--accent);background:transparent;border-radius:999px;padding:1px 9px;font:inherit;font-size:.74rem;font-weight:600;cursor:pointer;white-space:nowrap;vertical-align:1px}
+.empty{padding:28px;text-align:center;color:var(--muted);background:var(--card);border:1px solid var(--line);border-radius:12px}
+footer{margin-top:20px;font-size:.82rem;color:var(--muted)}
+tr.grp th{background:var(--chip);color:var(--ink);text-transform:none;letter-spacing:0;font-size:.98rem;padding:12px;border-top:2px solid var(--accent)}
+tbody:first-of-type tr.grp th{border-top:0}
+tr.grp .gy{color:var(--accent);font-weight:800;margin-right:6px}
+tr.grp .gc{font-weight:700}
+tr.grp .ge{display:block;font-size:.8rem;font-weight:500;color:var(--muted);margin-top:2px}
+@media (max-width:600px){
+    .grid{grid-template-columns:1fr 1fr}
+ .grid label:last-child{grid-column:span 2}
+ table,thead,tbody,tr,td,th{display:block}
+ thead{display:none}
+ table{border:0;background:transparent;border-radius:0}
+ tbody{background:var(--card);border:1px solid var(--line);border-radius:12px;margin-bottom:12px;overflow:hidden}
+ tr.grp th{border-top:0;border-bottom:1px solid var(--line);padding:10px 12px}
+ tbody tr.row{display:flex;align-items:center;gap:10px;padding:10px 12px;border-bottom:1px solid var(--line)}
+ tbody tr.row:last-child{border-bottom:0}
+ tbody tr.row td{border:0;padding:0}
+ tbody tr.first td{background:transparent}
+ tbody tr.first{background:var(--gold-bg)}
+ td.y,td.c{display:none}
+ td.pos{font-size:1.05rem;min-width:44px}
+ td.g{flex:1}
+}
+</style>
+</head>
+<body>
+<header class="topbar"><div class="in">
+ <a class="marca" href="../resenhas/"><img src="../marca/elite-boardgamers.webp" width="318" height="254" alt="Elite Boardgamers"></a>
+ <a class="ig" href="https://www.instagram.com/eliteboardgamers/" target="_blank" rel="noopener" aria-label="Instagram @eliteboardgamers"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6" fill="currentColor"/></svg><span>@eliteboardgamers</span></a>
+ <a class="zap-mini" href="https://chat.whatsapp.com/IgQQkJdSkzHBaEq3UwFeAo" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8.4 19l-4.4 1Z"/><path d="M9.2 8.6c.3-.5.8-.5 1-.1l.7 1.5c.1.3 0 .6-.2.8l-.4.4c.5 1.1 1.4 2 2.5 2.5l.4-.4c.2-.2.5-.3.8-.2l1.5.7c.4.2.4.7-.1 1-.7.5-1.6.6-2.4.3a7 7 0 0 1-4.2-4.2c-.3-.8-.2-1.7.4-2.3Z"/></svg><span>Grupo do WhatsApp</span></a>
+ <a class="res" href="../resenhas/">Resenhas</a>
+</div></header>
+<div class="wrap">
+ <section class="intro">
+  <h1>Consulta Golden Geek 2015–2025</h1>
+  <p>Os três primeiros colocados de cada categoria do Golden Geek, prêmio votado pela comunidade do BoardGameGeek.</p>
+  <a class="zap" href="https://chat.whatsapp.com/IgQQkJdSkzHBaEq3UwFeAo" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8.4 19l-4.4 1Z"/><path d="M9.2 8.6c.3-.5.8-.5 1-.1l.7 1.5c.1.3 0 .6-.2.8l-.4.4c.5 1.1 1.4 2 2.5 2.5l.4-.4c.2-.2.5-.3.8-.2l1.5.7c.4.2.4.7-.1 1-.7.5-1.6.6-2.4.3a7 7 0 0 1-4.2-4.2c-.3-.8-.2-1.7.4-2.3Z"/></svg><span><b>Entre no grupo do WhatsApp</b><small>Converse sobre jogos premiados e receba as novas resenhas</small></span></a>
+ </section>
+
+ <section class="panel" aria-label="Filtros">
+  <input id="q" class="search" type="search" placeholder="Pesquisar jogo pelo nome" autocomplete="off">
+  <div class="grid">
+   <label class="f">Ano<select id="fy"></select></label>
+   <label class="f">Colocação<select id="fp"></select></label>
+   <label class="f">Categoria<select id="fc"></select></label>
+  </div>
+  <div class="wlabel">Peso do jogo (Jogo do Ano, a partir de 2020)</div>
+  <div class="seg" id="wseg" role="group" aria-label="Peso do jogo">
+   <button type="button" data-w="" class="on">Todos</button>
+   <button type="button" data-w="leve">Leve</button>
+   <button type="button" data-w="médio">Médio</button>
+   <button type="button" data-w="pesado">Pesado</button>
+  </div>
+  <div class="toggles">
+   <label><input type="checkbox" id="tpp" checked> Incluir Print &amp; Play</label>
+   <label><input type="checkbox" id="tapp" checked> Incluir Aplicativo</label>
+  </div>
+ </section>
+
+ <div id="chipbox"></div>
+ <p id="summary" class="summary" hidden></p>
+ <div class="bar">
+  <span id="count" class="count"></span>
+  <button id="clear" class="btn" type="button">Limpar filtros</button>
+ </div>
+
+ <div id="out"></div>
+
+ <footer>
+  <p>Fonte: Golden Geek Awards, votação da comunidade do BoardGameGeek. A lista traz os três colocados publicados em cada categoria e não contém todos os indicados da etapa inicial.</p>
+  <p>O selo "aparições" indica que o jogo aparece mais de uma vez na lista (em outras categorias ou anos). Toque nele para ver todas.</p>
+  <p><a href="https://www.instagram.com/eliteboardgamers/" target="_blank" rel="noopener">Instagram @eliteboardgamers</a> · <a href="https://chat.whatsapp.com/IgQQkJdSkzHBaEq3UwFeAo" target="_blank" rel="noopener">Grupo do WhatsApp</a> · <a href="../resenhas/">Resenhas</a></p>
+ </footer>
+</div>
+
+<script>
+const RAW = `
+2015 | Jogo do Ano | Pandemic Legacy: Season 1; Codenames; 7 Wonders Duel
+2015 | 2 jogadores | 7 Wonders Duel; Tides of Time; Baseball Highlights: 2045
+2015 | Arte | Mysterium; T.I.M.E Stories; Above and Below
+2015 | Cartas | 7 Wonders Duel; The Grizzled; Arboretum
+2015 | Expansão | Ticket to Ride Map Collection: Volume 5 – United Kingdom & Pennsylvania; Roll for the Galaxy: Ambition; Five Tribes: The Artisans of Naqala
+2015 | Família | Codenames; Mysterium; Between Two Cities
+2015 | Inovação | Pandemic Legacy: Season 1; 504; T.I.M.E Stories
+2015 | Festa | Codenames; Mysterium; Flick ’em Up!
+2015 | Print & Play | Dune: The Dice Game; Deep Space D-6; Beyond Baker Street
+2015 | Solo | Tiny Epic Galaxies; Hostage Negotiator; Baseball Highlights: 2045
+2015 | Estratégia | Pandemic Legacy: Season 1; 7 Wonders Duel; The Voyages of Marco Polo
+2015 | Temático | Pandemic Legacy: Season 1; T.I.M.E Stories; Blood Rage
+2015 | Wargame | Churchill; Triumph & Tragedy; The U.S. Civil War
+2015 | Aplicativo | Splendor; Galaxy Trucker; Star Realms: Gambit
+2016 | Jogo do Ano | Scythe; Terraforming Mars; Star Wars: Rebellion
+2016 | 2 jogadores | Star Wars: Rebellion; Arkham Horror: The Card Game; Hero Realms
+2016 | Arte | Scythe; Mechs vs. Minions; Inis
+2016 | Cartas | Arkham Horror: The Card Game; Sushi Go Party!; Clank!
+2016 | Cooperativo | Mechs vs. Minions; Mansions of Madness: Second Edition; Arkham Horror: The Card Game
+2016 | Expansão | 7 Wonders Duel: Pantheon; T.I.M.E Stories: A Prophecy of Dragons; Dead of Winter: The Long Night
+2016 | Família | Codenames: Pictures; Imhotep; Quadropolis
+2016 | Inovação | Captain Sonar; Scythe; Vast: The Crystal Caverns
+2016 | Festa | Codenames: Pictures; Captain Sonar; Secret Hitler
+2016 | Print & Play | Star Trek: The Dice Game; Mini Rogue; 30 Rails
+2016 | Solo | Scythe; Terraforming Mars; Arkham Horror: The Card Game
+2016 | Estratégia | Scythe; Terraforming Mars; Great Western Trail
+2016 | Temático | Scythe; Star Wars: Rebellion; Mansions of Madness: Second Edition
+2016 | Wargame | Falling Sky: The Gallic Revolt Against Caesar; Liberty or Death: The American Insurrection; Comanchería: The Rise and Fall of the Comanche Empire
+2016 | Aplicativo | Twilight Struggle; Patchwork; Mansions of Madness
+2017 | Jogo do Ano | Gloomhaven; Azul; The 7th Continent
+2017 | 2 jogadores | Codenames Duet; Caverna: Cave vs. Cave; The Fox in the Forest
+2017 | Arte | Photosynthesis; Azul; Sagrada
+2017 | Cartas | Century: Spice Road; Clank! In! Space!; Ethnos
+2017 | Cooperativo | Gloomhaven; The 7th Continent; Pandemic Legacy: Season 2
+2017 | Expansão | Scythe: The Wind Gambit; Terraforming Mars: Hellas & Elysium; Terraforming Mars: Venus Next
+2017 | Família | Azul; Sagrada; Century: Spice Road
+2017 | Inovação | Gloomhaven; The 7th Continent; Magic Maze
+2017 | Festa | Werewords; Spyfall 2; Tortuga 1667
+2017 | Print & Play | My Little Scythe; A4 Quest; Doctor Who: Solitaire Story Game (Second Edition)
+2017 | Solo | Gloomhaven; The 7th Continent; Nemo’s War (Second Edition)
+2017 | Estratégia | Gloomhaven; Clans of Caledonia; Azul
+2017 | Temático | Gloomhaven; The 7th Continent; This War of Mine
+2017 | Wargame | 878: Vikings – Invasions of England; Time of Crisis; Pendragon: The Fall of Roman Britain
+2017 | Aplicativo | Through the Ages; Onirim; Race for the Galaxy
+2018 | Jogo do Ano | Root; Brass: Birmingham; Architects of the West Kingdom
+2018 | 2 jogadores | KeyForge: Call of the Archons; Duelosaur Island; War Chest
+2018 | Arte | Root; Everdell; Brass: Birmingham
+2018 | Cartas | The Mind; KeyForge: Call of the Archons; Thunderstone Quest
+2018 | Cooperativo | The Mind; Chronicles of Crime; Detective: A Modern Crime Board Game
+2018 | Expansão | Scythe: The Rise of Fenris; Terraforming Mars: Prelude; Root: The Riverfolk Expansion
+2018 | Família | The Quacks of Quedlinburg; Welcome To…; The Mind
+2018 | Inovação | Root; Chronicles of Crime; KeyForge: Call of the Archons
+2018 | Festa | The Mind; Decrypto; Just One
+2018 | Print & Play | Orchard: A 9 card solitaire game; The Coin Tribes’ Revolt; The Soo Line
+2018 | Solo | That’s Pretty Clever; Chronicles of Crime; Welcome To…
+2018 | Estratégia | Brass: Birmingham; Root; Teotihuacan: City of Gods
+2018 | Temático | Root; Rising Sun; Western Legends
+2018 | Wargame | Hannibal & Hamilcar; Cataclysm: A Second World War; 1066: Tears to Many Mothers
+2018 | Aplicativo | Ganz Schön Clever; Scythe: Digital Edition; Onitama
+2019 | Jogo do Ano | Wingspan; Paladins of the West Kingdom; Tapestry
+2019 | 2 jogadores | Watergate; Undaunted: Normandy; Blitzkrieg!: World War Two in 20 Minutes
+2019 | Arte | Wingspan; PARKS; Tapestry
+2019 | Cartas | Wingspan; The Crew: The Quest for Planet Nine; Marvel Champions: The Card Game
+2019 | Cooperativo | The Crew: The Quest for Planet Nine; Marvel Champions: The Card Game; The Lord of the Rings: Journeys in Middle-earth
+2019 | Expansão | Wingspan: European Expansion; The Quacks of Quedlinburg: The Herb Witches; Terraforming Mars: Turmoil
+2019 | Família | Wingspan; Azul: Summer Pavilion; Tiny Towns
+2019 | Inovação | Wingspan; The Crew: The Quest for Planet Nine; Wavelength
+2019 | Festa | Wavelength; Letter Jam; Men at Work
+2019 | Print & Play | TINYforming Mars; Under Falling Skies; Roll Estate
+2019 | Solo | Wingspan; Marvel Champions: The Card Game; Twice as Clever
+2019 | Estratégia | Wingspan; Maracaibo; Paladins of the West Kingdom
+2019 | Temático | Dune; Star Wars: Outer Rim; The Lord of the Rings: Journeys in Middle-earth
+2019 | Wargame | Undaunted: Normandy; UBOOT: The Board Game; Blitzkrieg!
+2019 | Aplicativo | Through the Ages – New Leaders & Wonders; Raiders of the North Sea; Twice as Clever
+2020 | Jogo do Ano leve | MicroMacro: Crime City; Project L; Santa Monica
+2020 | Jogo do Ano médio | Lost Ruins of Arnak; Dune: Imperium; Calico
+2020 | Jogo do Ano pesado | Gloomhaven: Jaws of the Lion; On Mars; Viscounts of the West Kingdom
+2020 | 2 jogadores | Undaunted: North Africa; Unmatched: Cobble & Fog; Imperial Struggle
+2020 | Arte | On Mars; Lost Ruins of Arnak; Calico
+2020 | Cartas | Dune: Imperium; Fort; Oceans
+2020 | Cooperativo | Gloomhaven: Jaws of the Lion; Pandemic Legacy: Season 0; Forgotten Waters
+2020 | Expansão | Wingspan: Oceania Expansion; Root: The Underworld Expansion; Spirit Island: Jagged Earth
+2020 | Inovação | MicroMacro: Crime City; The Search for Planet X; Beyond the Sun
+2020 | Print & Play | 7 Wonders Duel: Solo; Rolling Realms; Ticket to Ride: Stay at Home
+2020 | Solo | Under Falling Skies; Gloomhaven: Jaws of the Lion; Lost Ruins of Arnak
+2020 | Temático | Gloomhaven: Jaws of the Lion; On Mars; Dune: Imperium
+2020 | Wargame | Imperial Struggle; Undaunted: North Africa; Versailles 1919
+2020 | Jogo com zoom | Forgotten Waters; My City; The Search for Planet X
+2020 | Aplicativo | Root; Wingspan; Cartographers
+2021 | Jogo do Ano leve | Cascadia; Canvas; 7 Wonders: Architects
+2021 | Jogo do Ano médio | The Crew: Mission Deep Sea; Sleeping Gods; Terraforming Mars: Ares Expedition
+2021 | Jogo do Ano pesado | Ark Nova; Oath: Chronicles of Empire and Exile; Imperium: Classics
+2021 | 2 jogadores | Radlands; Summoner Wars (Second Edition); That Time You Killed Me
+2021 | Arte | Sleeping Gods; Canvas; Oath: Chronicles of Empire and Exile
+2021 | Cooperativo | The Crew: Mission Deep Sea; Sleeping Gods; MicroMacro: Crime City – Full House
+2021 | Expansão | Lost Ruins of Arnak: Expedition Leaders; PARKS: Nightfall; Concordia: Solitaria
+2021 | Inovação | Oath: Chronicles of Empire and Exile; Sleeping Gods; Canvas
+2021 | Festa | So Clover!; Stella: Dixit Universe; Don’t Get Got!: Shut Up & Sit Down Special Edition
+2021 | Print & Play | Gloomholdin’; RATS: High Tea at Sea; Grim(m) World: First Steps
+2021 | Solo | Final Girl; Sleeping Gods; Ark Nova
+2021 | Temático | Sleeping Gods; Oath: Chronicles of Empire and Exile; Final Girl
+2021 | Wargame | Undaunted: Reinforcements; Atlantic Chase; Red Flag Over Paris
+2021 | Aplicativo | Gloomhaven; Concordia: Digital Edition; Railroad Ink Challenge
+2022 | Jogo do Ano leve | Cat in the Box: Deluxe Edition; Splendor Duel; Long Shot: The Dice Game
+2022 | Jogo do Ano médio | Heat: Pedal to the Metal; Wonderland’s War; Flamecraft
+2022 | Jogo do Ano pesado | Carnegie; Endless Winter: Paleoamericans; John Company: Second Edition
+2022 | 2 jogadores | Splendor Duel; Wingspan Asia; Undaunted: Stalingrad
+2022 | Arte | Flamecraft; Everdell: The Complete Collection; Wonderland’s War
+2022 | Cooperativo | Return to Dark Tower; Oathsworn: Into the Deepwood; ISS Vanguard
+2022 | Festa | Ready Set Bet; Long Shot: The Dice Game; Blood on the Clocktower
+2022 | Expansão | Dune: Imperium – Rise of Ix; Wingspan Asia; Dune: Imperium – Immortality
+2022 | Inovação | Cat in the Box: Deluxe Edition; Turing Machine; Heat: Pedal to the Metal
+2022 | Print & Play | Aquamarine; Woodcraft: Roll and Write; A Wayfarer’s Tale
+2022 | Solo | Turing Machine; Resist!; Nemo’s War: The Ultimate Edition
+2022 | Temático | Heat: Pedal to the Metal; Wonderland’s War; John Company: Second Edition
+2022 | Wargame | Undaunted: Stalingrad; Resist!; Votes for Women
+2022 | Aplicativo | Everdell; Hero Realms; Roll Player
+2023 | Jogo do Ano leve | Thunder Road: Vendetta; Knarr; Faraway
+2023 | Jogo do Ano médio | Earth; The Castles of Burgundy: Special Edition; The White Castle
+2023 | Jogo do Ano pesado | Hegemony: Lead Your Class to Victory; Dune: Imperium – Uprising; Darwin’s Journey
+2023 | 2 jogadores | Sky Team; Star Wars: The Deckbuilding Game; Undaunted: Battle of Britain
+2023 | Arte | The Castles of Burgundy: Special Edition; Earth; Voidfall
+2023 | Cooperativo | Sky Team; Earthborne Rangers; Sleeping Gods: Distant Skies
+2023 | Expansão | Ark Nova: Marine Worlds; Lost Ruins of Arnak: The Missing Expedition; Cascadia: Landmarks
+2023 | Inovação | Hegemony: Lead Your Class to Victory; Sky Team; Earthborne Rangers
+2023 | Festa | That’s Not a Hat; Dixit: Disney Edition; So Clover!
+2023 | Print & Play | Waypoints; Fliptown; Naturopolis
+2023 | Solo | Legacy of Yu; Earthborne Rangers; Earth
+2023 | Temático | Hegemony: Lead Your Class to Victory; Sky Team; Dune: Imperium – Uprising
+2023 | Wargame | Undaunted: Battle of Britain; Halls of Hegra; The British Way
+2023 | Aplicativo | Unmatched: Digital Edition; Twilight Struggle: Red Sea; Fleet: The Dice Game
+2024 | Jogo do Ano leve | Castle Combo; Flip 7; Captain Flip
+2024 | Jogo do Ano médio | Harmonies; The Lord of the Rings: Duel for Middle-earth; Endeavor: Deep Sea
+2024 | Jogo do Ano pesado | SETI: Search for Extraterrestrial Intelligence; Arcs; Civolution
+2024 | 2 jogadores | The Lord of the Rings: Duel for Middle-earth; Kelp: Shark vs Octopus; A Gest of Robin Hood
+2024 | Arte | Unconscious Mind; Harmonies; Arcs
+2024 | Cooperativo | The Fellowship of the Ring: Trick-Taking Game; Slay the Spire: The Board Game; Bomb Busters
+2024 | Expansão | Arcs: The Blighted Reach Expansion; Heat: Heavy Rain; Forest Shuffle: Alpine
+2024 | Inovação | Arcs; Fromage; SETI
+2024 | Festa | Flip 7; The Gang; Things in Rings
+2024 | Print & Play | 52 Realms: Adventures; Rome: Fate of an Empire; Forage
+2024 | Solo | Slay the Spire: The Board Game; Gloomhaven: Buttons & Bugs; Imperium: Horizons
+2024 | Temático | SETI; Let’s Go! To Japan; The Lord of the Rings: Duel for Middle-earth
+2024 | Wargame | Arcs; A Gest of Robin Hood; Dune: War for Arrakis
+2024 | Aplicativo | Dune: Imperium; Codenames; Clank!
+2025 | Jogo do Ano leve | Hot Streak; Magical Athlete; Toy Battle
+2025 | Jogo do Ano médio | The Lord of the Rings: Fate of the Fellowship; Moon Colony Bloodbath; Vantage
+2025 | Jogo do Ano pesado | Galactic Cruise; Speakeasy; Luthier
+2025 | 2 jogadores | Toy Battle; Tag Team; Star Trek: Captain’s Chair
+2025 | Arte | The Old King’s Crown; Galactic Cruise; The Lord of the Rings: Fate of the Fellowship
+2025 | Cooperativo | The Lord of the Rings: Fate of the Fellowship; Vantage; Eternal Decks
+2025 | Expansão | SETI: Space Agencies; Lost Ruins of Arnak: Twisted Paths; Dune: Imperium – Bloodlines
+2025 | Inovação | Vantage; Moon Colony Bloodbath; Hot Streak
+2025 | Festa | Hot Streak; Magical Athlete; Take Time
+2025 | Print & Play | Dungeons of the Oak Dell; Rise of the Oak Dell; 52 Duels
+2025 | Solo | Vantage; The Lord of the Rings: Fate of the Fellowship; Star Trek: Captain’s Chair
+2025 | Temático | The Lord of the Rings: Fate of the Fellowship; Vantage; Galactic Cruise
+2025 | Wargame | Star Wars: The Battle of Hoth; Toy Battle; Cross Bronx Expressway
+2025 | Aplicativo | Ark Nova; Cascadia Digital; MicroMacro: Downtown Detective
+`;
+
+const PLACE = ["1º", "2º", "3º"];
+// Nome oficial de cada categoria no BoardGameGeek
+const OFFICIAL = {
+  "Jogo do Ano": "Game of the Year",
+  "Jogo do Ano leve": "Light Game of the Year",
+  "Jogo do Ano médio": "Medium Game of the Year",
+  "Jogo do Ano pesado": "Heavy Game of the Year",
+  "2 jogadores": "Best 2-Player Game",
+  "Arte": "Best Artwork & Presentation",
+  "Cartas": "Best Card Game",
+  "Cooperativo": "Best Cooperative Game",
+  "Expansão": "Best Expansion",
+  "Família": "Best Family Game",
+  "Inovação": "Most Innovative Game",
+  "Festa": "Best Party Game",
+  "Print & Play": "Best Print & Play Game",
+  "Solo": "Best Solo Game",
+  "Estratégia": "Best Strategy Game",
+  "Temático": "Best Thematic Game",
+  "Wargame": "Best Wargame",
+  "Jogo com zoom": "Best Zoomable Game",
+  "Aplicativo": "Best Board Game App"
+};
+const ROWS = [], YEARS = [], CATS = [];
+RAW.trim().split("\n").forEach(line => {
+  line = line.trim(); if (!line) return;
+  const [y, c, g] = line.split(" | ");
+  if (!YEARS.includes(y)) YEARS.push(y);
+  if (!CATS.includes(c)) CATS.push(c);
+  g.split("; ").forEach((n, i) => ROWS.push({ y, c, p: i + 1, n }));
+});
+
+const $ = id => document.getElementById(id);
+const norm = s => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[’‘`´]/g, "'").toLowerCase();
+const esc = s => s.replace(/[&<>"']/g, ch => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[ch]));
+
+const state = { q: "", y: "", c: "", p: "", w: "", pp: true, app: true, exact: null };
+
+function setWeight(w) {
+  state.w = w;
+  document.querySelectorAll("#wseg button").forEach(b => b.classList.toggle("on", b.dataset.w === w));
+  if (w) { state.c = ""; $("fc").value = ""; }
+}
+
+function catVisible(c) {
+  if (c === "Print & Play" && !state.pp) return false;
+  if (c === "Aplicativo" && !state.app) return false;
+  return true;
+}
+
+function fillSelects() {
+  $("fy").innerHTML = '<option value="">Todos</option>' + YEARS.map(y => `<option>${y}</option>`).join("");
+  $("fp").innerHTML = '<option value="">Todas</option>' + PLACE.map((p, i) => `<option value="${i + 1}">${p} colocado</option>`).join("");
+  fillCats();
+}
+function fillCats() {
+  const sorted = CATS.filter(catVisible).sort((a, b) => a.localeCompare(b, "pt-BR"));
+  if (state.c && !sorted.includes(state.c)) state.c = "";
+  $("fc").innerHTML = '<option value="">Todas</option>' + sorted.map(c => `<option${c === state.c ? " selected" : ""}>${esc(c)}</option>`).join("");
+}
+
+function occurrences() {
+  const m = new Map();
+  ROWS.forEach(r => { if (!catVisible(r.c)) return; if (!m.has(r.n)) m.set(r.n, []); m.get(r.n).push(r); });
+  return m;
+}
+
+function render() {
+  const occ = occurrences();
+  const q = norm(state.q.trim());
+  const list = ROWS.filter(r =>
+    catVisible(r.c) &&
+    (!state.exact || r.n === state.exact) &&
+    (!q || norm(r.n).includes(q)) &&
+    (!state.y || r.y === state.y) &&
+    (!state.c || r.c === state.c) &&
+    (!state.w || r.c === "Jogo do Ano " + state.w) &&
+    (!state.p || r.p === +state.p)
+  );
+
+  $("chipbox").innerHTML = state.exact
+    ? `<span class="chip">Jogo: ${esc(state.exact)}<button type="button" aria-label="Remover filtro de jogo" id="unexact">×</button></span>` : "";
+  if (state.exact) $("unexact").onclick = () => { state.exact = null; render(); };
+
+  const sum = $("summary");
+  if (state.exact) {
+    const all = occ.get(state.exact) || [];
+    const cats = [...new Set(all.map(r => r.c))];
+    sum.hidden = false;
+    sum.textContent = `Aparece ${all.length} ${all.length === 1 ? "vez" : "vezes"}, em ${cats.length} ${cats.length === 1 ? "categoria" : "categorias"}: ${cats.join(", ")}.`;
+  } else sum.hidden = true;
+
+  $("count").textContent = `${list.length} ${list.length === 1 ? "resultado" : "resultados"}`;
+
+  if (!list.length) { $("out").innerHTML = '<div class="empty">Nenhum jogo encontrado com esses filtros.</div>'; return; }
+
+  let body = "", key = null;
+  list.forEach(r => {
+    const k = r.y + "|" + r.c;
+    if (k !== key) {
+      if (key !== null) body += "</tbody>";
+      key = k;
+      const en = OFFICIAL[r.c] ? `<span class="ge">${esc(OFFICIAL[r.c])}</span>` : "";
+      body += `<tbody><tr class="grp"><th colspan="4"><span class="gy">${r.y}</span><span class="gc">${esc(r.c)}</span>${en}</th></tr>`;
+    }
+    const n = (occ.get(r.n) || []).length;
+    const badge = n > 1 && !state.exact
+      ? `<button type="button" class="multi" data-g="${esc(r.n)}" title="Ver todas as aparições">${n} aparições</button>` : "";
+    body += `<tr class="row${r.p === 1 ? " first" : ""}"><td class="y">${r.y}</td><td class="c">${esc(r.c)}</td><td class="pos">${PLACE[r.p - 1]}</td><td class="g">${esc(r.n)}${badge}</td></tr>`;
+  });
+  body += "</tbody>";
+  $("out").innerHTML = `<table><thead><tr><th>Ano</th><th>Categoria</th><th>Colocação</th><th>Jogo</th></tr></thead>${body}</table>`;
+}
+
+$("out").addEventListener("click", e => {
+  const b = e.target.closest(".multi"); if (!b) return;
+  state.exact = b.dataset.g; state.q = ""; state.y = ""; state.c = ""; state.p = "";
+  $("q").value = ""; $("fy").value = ""; $("fc").value = ""; $("fp").value = ""; setWeight("");
+  render(); window.scrollTo({ top: 0, behavior: "smooth" });
+});
+$("q").addEventListener("input", e => { state.q = e.target.value; render(); });
+$("fy").addEventListener("change", e => { state.y = e.target.value; render(); });
+$("fc").addEventListener("change", e => { state.c = e.target.value; if (state.c) setWeight(""); render(); });
+$("wseg").addEventListener("click", e => {
+  const b = e.target.closest("button"); if (!b) return;
+  setWeight(b.dataset.w); state.exact = null; render();
+});
+$("fp").addEventListener("change", e => { state.p = e.target.value; render(); });
+$("tpp").addEventListener("change", e => { state.pp = e.target.checked; fillCats(); render(); });
+$("tapp").addEventListener("change", e => { state.app = e.target.checked; fillCats(); render(); });
+$("clear").addEventListener("click", () => {
+  Object.assign(state, { q: "", y: "", c: "", p: "", exact: null });
+  $("q").value = ""; $("fy").value = ""; $("fp").value = ""; setWeight(""); fillCats(); render();
+});
+
+fillSelects();
+render();
+</script>
+</body>
+</html>
