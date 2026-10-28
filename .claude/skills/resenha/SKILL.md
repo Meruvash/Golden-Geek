@@ -75,6 +75,10 @@ Padrão: **Batch API** (50% mais barata, entrega em até 24 h), com `gpt-image-2
 
 Refações pontuais e urgentes: `python3 tools/gerar_infografico_openai.py conteudo/<slug>.json` (síncrono, preço cheio). Use `--dry-run` para ver o prompt.
 
+## Rotina das fotos (14:51 de Brasília, sessão agendada)
+
+Na véspera, a tarefa "Fotos oficiais das resenhas do dia seguinte (15h)" passa por todos os jogos de `lotes/pendente.json` e os `em_producao` e roda a etapa 1b em quem ainda não tem fotos liberadas. Ela só faz commit de `<slug>/fotos/` e `tools/imagens/editoras.json` e avisa o usuário sobre o jogo que ficou sem foto de topo, com o pedido de kit de imprensa pronto.
+
 ## Rotina diária (07:55 de Brasília, sessão agendada)
 
 1. `buscar` o lote do dia anterior. Se concluído, faça a etapa 5 nas imagens e apresente a mensagem de aprovação (etapa 6) com as imagens.
