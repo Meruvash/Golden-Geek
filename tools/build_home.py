@@ -7,9 +7,10 @@ Saída: index.html e noticias/<slug>/index.html. As regras das notas estão em P
 """
 import json
 import re
+import subprocess
 import sys
 import unicodedata
-from datetime import date, timedelta
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -35,13 +36,28 @@ def data_curta(iso):
     return f"{d.day:02d}/{d.month:02d}"
 
 
+def publicado_em(p):
+    """Hora em que a nota entrou no site: o commit que criou o arquivo ou, se ainda não foi commitado, agora."""
+    r = subprocess.run(["git", "log", "--diff-filter=A", "--format=%cI", "--", str(p.relative_to(ROOT))],
+                       cwd=ROOT, capture_output=True, text=True)
+    linhas = r.stdout.split()
+    return linhas[-1] if r.returncode == 0 and linhas else datetime.now(timezone.utc).isoformat(timespec="seconds")
+
+
 def notas():
-    ns = [json.loads(p.read_text(encoding="utf-8")) for p in sorted((ROOT / "conteudo" / "noticias").glob("*.json"))]
+    ns = []
+    for p in sorted((ROOT / "conteudo" / "noticias").glob("*.json")):
+        n = json.loads(p.read_text(encoding="utf-8"))
+        # a ordem das Últimas notícias depende da hora de publicação: nota sem ela ganha uma e o arquivo é salvo
+        if not n.get("publicado_em"):
+            n["publicado_em"] = publicado_em(p)
+            p.write_text(json.dumps(n, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+        ns.append(n)
     ruins = {n["slug"]: problemas(n) for n in ns if problemas(n)}
     if ruins:
         sys.exit("Notícias fora do padrão (rode tools/noticias/checar_noticia.py): " + ", ".join(ruins))
-    # mais recentes primeiro; no mesmo dia, as mais pontuadas no crivo
-    return sorted(ns, key=lambda n: (-date.fromisoformat(n["data"]).toordinal(), -n["crivo"]["pontos"]))
+    # mais recentes primeiro (dia e hora de publicação); empate, as mais pontuadas no crivo
+    return sorted(ns, key=lambda n: (n["data"], datetime.fromisoformat(n["publicado_em"]).timestamp(), n["crivo"]["pontos"]), reverse=True)
 
 
 def mes_chegando(hoje=None):
@@ -288,7 +304,12 @@ def build_home():
         return f"""<li><a href="noticias/{n['slug']}/"{'' if n.get("imagem") else ' class="sem-img"'}>{f'<img src="{img_nota(n, pre)}" width="76" height="76" alt="" loading="lazy">' if n.get("imagem") else f'<span class="sem">{icone("dica")}</span>'}
    <div><span class="cat {CAT_CLASSE.get(n['categoria'], 'mercado')}">{e(n['categoria'])}</span> <span class="meta">{data_curta(n['data'])} · {e(n['fontes'][0]['nome'].split(':')[0])}</span>
    <h3>{e(n['titulo'])}</h3><p><span class="selo {SELO_CLASSE[n['selo']]}">{e(n['selo'])}</span> <span class="resumo">{e(n['por_que_importa'])}</span></p></div></a></li>"""
-    itens = "".join(item(n, pre) for n in resto[:8])
+    ultimas = resto[:8]
+    # trava: nenhuma nota fora da lista pode ser mais nova que uma que está nela
+    if len(resto) > 8 and any(datetime.fromisoformat(f["publicado_em"]) > datetime.fromisoformat(u["publicado_em"])
+                              for f in resto[8:] for u in ultimas if f["data"] >= u["data"]):
+        sys.exit("Últimas notícias fora de ordem: há nota mais nova fora da lista")
+    itens = "".join(item(n, pre) for n in ultimas)
     arquivo = "".join(item(n, "../").replace('href="noticias/', 'href="../noticias/') for n in ns)
     corpo_arq = f"""{cabecalho("../", "Notícias")}
 <main id="conteudo" class="in"><div class="nota"><a class="volta" href="../">← Página inicial</a>

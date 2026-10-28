@@ -124,6 +124,7 @@ A notícia da Elite Boardgamers não repete o release: diz o que aconteceu, por 
 | `veredito` | Nossa opinião | 20 a 60 palavras: conselho claro (comprar, esperar, acompanhar) e o porquê. |
 | `fontes` | Fontes | pelo menos 2, com link e data da consulta. |
 | `crivo` | Por que esta notícia entrou | pontos e critérios do crivo (PLANO_NOTICIAS.md). |
+| `publicado_em` | (ordem das Últimas notícias) | Hora de publicação, ISO 8601. Preenchido por `tools/build_home.py` (commit que criou o arquivo ou a hora da geração); não se escreve à mão. A lista da página inicial segue esta hora, e a geração para se uma nota mais nova ficar fora dela. |
 | `verificacao_nacional` | (não aparece na página) | Obrigatório quando a nota diz que um jogo não tem edição nacional, e recomendado para todo jogo citado: `[{jogo, resultado, data, fontes, obs}]`, com `resultado` "edição nacional" ou "não encontrada" e pelo menos 2 fontes com link, uma brasileira. "Não encontrada" exige o link do ComparaJogos. Ver regra 6. |
 
 Regras de texto:

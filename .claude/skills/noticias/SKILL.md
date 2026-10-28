@@ -43,7 +43,7 @@ Em `conteudo/home.json`:
 
 ## 5. Publicar
 
-1. `python3 tools/build_home.py` (gera a página inicial, as páginas das notas e `noticias/`).
+1. `python3 tools/build_home.py` (gera a página inicial, as páginas das notas e `noticias/`) Ele grava `publicado_em` (hora de publicação) nas notas que ainda não têm, e as Últimas notícias seguem essa hora, não a pontuação: nota nova sempre entra no topo. Não edite `publicado_em` à mão; confira na página inicial que as notas novas aparecem nas Últimas notícias.
 2. Confira no celular (Playwright, 390 px): página inicial e uma nota nova, sem rolagem lateral.
 3. Commit e push direto na `main` com a mensagem `Notícias de <dd/mm/aaaa>: <títulos curtos>`. A manchete proposta entra como nota comum na lista; a manchete do topo continua a anterior.
 4. Termine com um resumo curto para o usuário: as notas publicadas (título e selo), a **manchete proposta com o lide e a opinião**, o que ficou de fora e por quê, e os avisos da coleta. Peça a aprovação da manchete.
