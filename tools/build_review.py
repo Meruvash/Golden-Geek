@@ -15,6 +15,7 @@ from PIL import Image
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import seo  # noqa: E402
+from imagens_resp import srcset  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 INSTAGRAM = "https://www.instagram.com/eliteboardgamers/"
@@ -159,7 +160,9 @@ def capa_da_foto(slug, f):
 
 
 def foto_html(c, f, classe="foto", lazy=True):
-    return (f'<figure class="{classe}"><img src="{e(f["arquivo"])}" width="{f["largura"]}" height="{f["altura"]}" '
+    # só a foto do topo (a imagem LCP) ganha variantes menores; as de baixo já carregam sob demanda
+    resp = "" if lazy else f' srcset="{srcset(ROOT / c["slug"] / f["arquivo"], "../")}" sizes="(min-width: 860px) 420px, calc(100vw - 32px)"'
+    return (f'<figure class="{classe}"><img src="{e(f["arquivo"])}"{resp} width="{f["largura"]}" height="{f["altura"]}" '
             f'alt="{e(c["jogo"])}: {FOTO_DESC.get(f["tipo"], f["tipo"])}"{" loading=\"lazy\"" if lazy else " fetchpriority=\"high\""}>'
             f'<figcaption>{e(f["credito"])}</figcaption></figure>')
 

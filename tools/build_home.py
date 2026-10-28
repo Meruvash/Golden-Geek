@@ -16,6 +16,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from PIL import Image  # noqa: E402
 import seo  # noqa: E402
+from imagens_resp import miniatura, srcset  # noqa: E402
 from build_sitemap import lastmod_registrado  # noqa: E402
 from build_review import INSTAGRAM, ROOT, SITE, WHATSAPP, e, icone, versao  # noqa: E402
 from noticias.checar_noticia import problemas  # noqa: E402
@@ -347,13 +348,13 @@ def build_home():
     with Image.open(ROOT / "noticias" / m["imagem"]["arquivo"]) as im:
         lw, lh = im.size
     manchete = f"""<article class="bloco manchete"><a href="noticias/{m['slug']}/">
-  <figure><img src="{img_nota(m, pre)}" width="{lw}" height="{lh}" alt="{e(m['titulo'])}" fetchpriority="high"></figure>
+  <figure><img src="{img_nota(m, pre)}" srcset="{srcset(ROOT / "noticias" / m["imagem"]["arquivo"], pre)}" sizes="(min-width: 640px) 340px, 100vw" width="{lw}" height="{lh}" alt="{e(m['titulo'])}" fetchpriority="high"></figure>
   <div class="txt"><span class="kick">Manchete · {e(m['categoria'])}</span><h1>{e(m['titulo'])}</h1><p>{e(m['lide'])}</p>
   <p class="opina"><span class="selo {SELO_CLASSE[m['selo']]}">{e(m['selo'])}</span> {e(m['veredito'])}</p>
   <span class="meta">{data_longa(m['data'])} · {e(m['fontes'][0]['nome'])}</span><span class="credito">{e(m['imagem']['credito'])}</span></div>
  </a></article>"""
     def item(n, pre):
-        return f"""<li><a href="noticias/{n['slug']}/"{'' if n.get("imagem") else ' class="sem-img"'}>{f'<img src="{img_nota(n, pre)}" width="76" height="76" alt="" loading="lazy">' if n.get("imagem") else f'<span class="sem">{icone("dica")}</span>'}
+        return f"""<li><a href="noticias/{n['slug']}/"{'' if n.get("imagem") else ' class="sem-img"'}>{f'<img src="{miniatura(ROOT / "noticias" / n["imagem"]["arquivo"], pre)}" width="76" height="76" alt="" loading="lazy">' if n.get("imagem") else f'<span class="sem">{icone("dica")}</span>'}
    <div><span class="cat {CAT_CLASSE.get(n['categoria'], 'mercado')}">{e(n['categoria'])}</span> <span class="meta">{data_curta(n['data'])} · {e(n['fontes'][0]['nome'].split(':')[0])}</span>
    <h3>{e(n['titulo'])}</h3><p><span class="selo {SELO_CLASSE[n['selo']]}">{e(n['selo'])}</span> <span class="resumo">{e(n['por_que_importa'])}</span></p></div></a></li>"""
     ultimas = resto[:8]
@@ -406,7 +407,7 @@ def build_home():
     res = ""
     for s in slugs:
         c = json.loads((ROOT / "conteudo" / f"{s}.json").read_text(encoding="utf-8"))
-        res += f'<li><a href="{s}/"><img src="{s}/capa.jpg{versao(ROOT / s / "capa.jpg")}" width="800" height="800" alt="" loading="lazy"><b>{e(c["jogo"])}</b></a></li>'
+        res += f'<li><a href="{s}/"><img src="{s}/capa.jpg{versao(ROOT / s / "capa.jpg")}" srcset="{srcset(ROOT / s / "capa.jpg", pre, (400,))}" sizes="(min-width: 640px) 160px, 45vw" width="800" height="800" alt="" loading="lazy"><b>{e(c["jogo"])}</b></a></li>'
     corpo = f"""{cabecalho(pre, "Notícias")}
 <main id="conteudo" class="in">
  <p class="edicao">Edição de {data_longa(max(n["data"] for n in ns))}</p>
@@ -441,7 +442,7 @@ def build_home():
 
 def build_nota(n):
     pre = "../../"
-    fig = (f'<figure><img src="{pre}noticias/{n["imagem"]["arquivo"]}" alt="{e(n["titulo"])}"><figcaption class="credito">{e(n["imagem"]["credito"])}</figcaption></figure>'
+    fig = (f'<figure><img src="{pre}noticias/{n["imagem"]["arquivo"]}" srcset="{srcset(ROOT / "noticias" / n["imagem"]["arquivo"], pre)}" sizes="(min-width: 760px) 720px, 100vw" alt="{e(n["titulo"])}"><figcaption class="credito">{e(n["imagem"]["credito"])}</figcaption></figure>'
            if n.get("imagem") else "")
     jogos = "".join(f'<a href="{pre}{j["resenha"]}/">Resenha: {e(j["nome"])}</a>' for j in n.get("jogos", []))
     fontes = "".join(f'<li><a href="{e(f["url"])}" target="_blank" rel="noopener">{e(f["nome"])}</a> <span>consulta em {e(f["data"])}</span></li>' for f in n["fontes"])

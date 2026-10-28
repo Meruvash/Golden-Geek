@@ -9,6 +9,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import seo  # noqa: E402
+from imagens_resp import srcset  # noqa: E402
 from build_review import INSTAGRAM, ROOT, SITE, WHATSAPP, campo, capa_src, versao, e, faixa_nota, icone, numero, selo_class  # noqa: E402
 
 
@@ -19,7 +20,7 @@ def card(c):
     nota_html = f'<span class="nota {faixa_nota(nota)}" aria-label="Nota BGG {nota:.1f}">{f"{nota:.1f}".replace(".", ",")}</span>' if nota else ""
     premio = f'<span class="vit">{vit} vitória{"s" if vit != 1 else ""} em prêmios</span>' if vit else ""
     return f"""  <li><a class="card" href="../{c["slug"]}/">
-   <span class="capa"><img src="{capa_src(c["slug"])}" width="800" height="800" alt="{e(c["alt"])}" loading="lazy">{nota_html}</span>
+   <span class="capa"><img src="{capa_src(c["slug"])}" srcset="{srcset(ROOT / c["slug"] / "capa.jpg", "../", (400,))}" sizes="(min-width: 700px) 360px, 50vw" width="800" height="800" alt="{e(c["alt"])}" loading="lazy">{nota_html}</span>
    <span class="corpo">
     <span class="selo {selo_class(c["selo"])}">{e(c["selo"])}</span>
     <h2>{e(titulo)}</h2>
