@@ -222,8 +222,6 @@ def layout_v2(c, premios_bloco, ficha_html, fontes, fotos=None, info_meio=""):
     )
     resumo = f"""<section class="bloco r30" id="resumo">
    <p class="kick">Resumo em 30 segundos</p>
-   <div class="r30-top">{selo_perfil(c)}<p>{e(c["tagline"])}</p></div>
-   <p class="nivel {selo_class(c["selo"])}">{e(nivel(c))}</p>
    <div class="r30-grid">
     <div><h3>Destaques</h3><ul class="mini">{"".join(pf(t) for t, _ in c["funciona"][:3])}</ul></div>
     <div><h3>Atenção</h3><ul class="mini">{"".join(pn(t) for _, t, _ in c["atencao"][:3])}</ul></div>
@@ -271,7 +269,7 @@ def layout_v2(c, premios_bloco, ficha_html, fontes, fotos=None, info_meio=""):
     )
     quem = f"""<section class="bloco claro" id="para-quem"><h2>Para quem é</h2>
    {f'<h3 class="h3s">Perfil do jogo</h3><ul class="barras">{barras}</ul>' if barras else ""}
-   {f'<h3 class="h3s">Com quantos jogar</h3><ul class="tiles">{tiles}</ul><ul class="tiles-txt">{"".join(f"<li><b>{e(nj)}:</b> {e(x)}</li>" for nj, x, _ in c.get("jogadores", []))}</ul>' if tiles else ""}
+   {f'<h3 class="h3s">Com quantos jogar</h3><ul class="tiles" aria-hidden="true">{tiles}</ul><ul class="tiles-txt">{"".join(f"<li><b>{e(nj)}<span class=sr> ({NIVEIS[nv]})</span>:</b> {e(x)}</li>" for nj, x, nv in c.get("jogadores", []))}</ul>' if tiles else ""}
    <div class="quem quem2">
     <div><h3 class="h3s">É para você se…</h3><ul>{"".join(f"<li>{e(x)}</li>" for x in c["para_quem"])}</ul></div>
     <div class="nao"><h3 class="h3s">Pense duas vezes se…</h3><ul>{"".join(f"<li>{e(x)}</li>" for x in c["nao_e_para"])}</ul></div>
@@ -539,6 +537,7 @@ img{{display:block;max-width:100%;height:auto}}
 a{{color:var(--link);text-underline-offset:.18em}}
 ::selection{{background:#e3b23c;color:#000}}
 :focus-visible{{outline:3px solid var(--gold);outline-offset:2px;border-radius:3px}}
+.sr{{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}}
 .skip{{position:absolute;left:-999px}}.skip:focus{{left:12px;top:8px;z-index:9;background:var(--gold);color:#000;padding:6px 10px}}
 .bar{{background:var(--bar);color:var(--bar-ink);border-bottom:1px solid var(--line)}}
 .bar .in{{max-width:1120px;margin:0 auto;padding:8px 16px;display:flex;align-items:center;gap:12px}}
@@ -656,7 +655,6 @@ footer{{background:var(--bar);color:var(--bar-ink);font-size:.88rem;border-top:1
 .v2>.col,.v2 .bloco{{min-width:0}}
 .v2 .kick{{font-size:.75rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--gold)}}
 .r30{{background:#101318;border:1px solid #3a3f48;border-left:4px solid var(--acc);display:grid;gap:14px}}
-.r30-top{{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px}}.r30-top p{{font-weight:700;font-size:1.05rem}}
 .r30-grid{{display:grid;gap:14px}}.r30 h3{{font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:6px}}
 .mini li{{display:flex;gap:8px;align-items:flex-start;margin:5px 0;font-weight:600;font-size:.95rem}}.mini .ic{{width:18px;height:18px;flex:none;margin-top:3px}}
 .r30-pe{{display:flex;flex-wrap:wrap;gap:10px 22px;align-items:center}}
