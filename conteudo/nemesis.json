@@ -135,7 +135,10 @@
   "Joga com quem não gosta de traição",
   "Quer edição nacional fácil de achar"
  ],
- "selo": "Recomendado para público específico",
+ "selo": "Recomendado com ressalva",
+ "melhor_para": "tema",
+ "ressalva": "preço acima de R$ 1.000",
+ "filtros_ajuste": {"estilos": ["Semicooperativo"]},
  "veredito": "A série Nemesis brilha quando o grupo valoriza tensão, narrativa imprevisível e objetivos que nem sempre alinham os interesses: cada partida vira uma história de traições e resgates. O original é a escolha mais segura para conhecer a proposta e o único em português; Lockdown aprofunda o suspense com energia e escuridão; Retaliation atende quem prefere ação, sem tirar a chance de fracasso. O preço é alto: regras pesadas, partidas que tomam a noite, eliminação e sorte que pode vencer o planejamento. Para quem ama terror à mesa, vale.",
  "tagline": "Fugir, resistir na escuridão ou invadir o ninho: escolha o seu medo.",
  "consulta": "25/10/2026",

@@ -86,7 +86,35 @@ def faixa_nota(n):
 
 def selo_class(selo):
     s = selo.lower()
-    return "nao" if s.startswith("não") else ("publico" if "específico" in s else "sim")
+    return "nao" if s.startswith("não") else ("publico" if "específico" in s or "ressalva" in s else "sim")
+
+
+# perfil "Melhor para": rótulo curto (cartões) e frase completa (topo da resenha)
+PERFIL_ROTULO = {"entrada": ("Primeiro jogo moderno", "Melhor para: primeiro jogo moderno"),
+                 "dupla": ("Jogar a dois", "Melhor para: jogar a dois"),
+                 "festa": ("Festa e grupos grandes", "Melhor para: festa e grupos grandes"),
+                 "cooperativo": ("Cooperativo", "Melhor para: quem gosta de cooperar"),
+                 "solo": ("Ótimo sozinho", "Melhor para: jogar sozinho"),
+                 "proximo": ("O próximo passo", "Melhor para: dar o próximo passo"),
+                 "estrategia": ("Estrategistas", "Melhor para: estrategistas"),
+                 "campanha": ("Campanha com grupo fixo", "Melhor para: campanha com grupo fixo"),
+                 "tema": ("Tema e história", "Melhor para: imersão e história")}
+
+
+def perfil_rotulo(c, longo=False):
+    """Rótulo do perfil "Melhor para"; resenhas sem perfil mostram o selo de recomendação."""
+    r = PERFIL_ROTULO.get(c.get("melhor_para"))
+    return r[1 if longo else 0] if r else c["selo"]
+
+
+def nivel(c):
+    """Nível de recomendação por extenso, com a ressalva quando houver."""
+    return f'{c["selo"]}: {c["ressalva"]}' if c.get("ressalva") else c["selo"]
+
+
+def selo_perfil(c, prefixo=True):
+    """Balão do perfil, com a cor do nível de recomendação."""
+    return f'<span class="selo {selo_class(c["selo"])}">{e(perfil_rotulo(c, longo=prefixo))}</span>'
 
 
 NIVEIS = {3: "Ótimo", 2: "Bom", 1: "Fraco"}
@@ -97,7 +125,6 @@ def primeira_frase(t):
     return (m.group(1), t[m.end():].strip()) if m else (t, "")
 
 
-SELO_CURTO = {"sim": "Recomendado", "publico": "Público específico", "nao": "Não recomendado"}
 
 
 def versao(arq):
@@ -122,7 +149,7 @@ def mais_resenhas(c, n=6):
         o = json.loads((ROOT / "conteudo" / f"{s}.json").read_text(encoding="utf-8"))
         cards.append(
             f'<li><a href="../{s}/"><img src="{capa_src(s)}" width="800" height="800" alt="" loading="lazy">'
-            f'<b>{e(o["jogo"])}</b><span class="selo {selo_class(o["selo"])}">{e(SELO_CURTO.get(selo_class(o["selo"]), o["selo"]))}</span></a></li>'
+            f'<b>{e(o["jogo"])}</b>{selo_perfil(o, prefixo=False)}</a></li>'
         )
         if len(cards) == n:
             break
@@ -212,7 +239,8 @@ def layout_v2(c, premios_bloco, ficha_html, fontes, fotos=None, info_meio=""):
     )
     resumo = f"""<section class="bloco r30" id="resumo">
    <p class="kick">Resumo em 30 segundos</p>
-   <div class="r30-top"><span class="selo {selo_class(c["selo"])}">{e(c["selo"])}</span><p>{e(c["tagline"])}</p></div>
+   <div class="r30-top">{selo_perfil(c)}<p>{e(c["tagline"])}</p></div>
+   <p class="nivel {selo_class(c["selo"])}">{e(nivel(c))}</p>
    <div class="r30-grid">
     <div><h3>Destaques</h3><ul class="mini">{"".join(pf(t) for t, _ in c["funciona"][:3])}</ul></div>
     <div><h3>Atenção</h3><ul class="mini">{"".join(pn(t) for _, t, _ in c["atencao"][:3])}</ul></div>
@@ -281,7 +309,7 @@ def layout_v2(c, premios_bloco, ficha_html, fontes, fotos=None, info_meio=""):
     compara = f'<section class="bloco claro" id="compare"><h2>Se você gosta de {e(c["jogo"])}…</h2><ul class="cards">{cards}</ul></section>' if cards else ""
     veredito = f"""<section class="bloco fecho" id="veredito">
    <h2>Veredito: {e(nome_br(c))} vale a pena?</h2>
-   <span class="selo {selo_class(c["selo"])}">{e(c["selo"])}</span>
+   <span class="selo {selo_class(c["selo"])}">{e(nivel(c))}</span>
    <p>{e(c["veredito"])}</p>
    <p class="tagline">{e(c["tagline"])}</p>
   </section>"""
@@ -433,7 +461,7 @@ def build(c):
   {comparacoes_bloco}
   <section class="bloco fecho" id="veredito">
    <h2>Veredito: {e(nome_br(c))} vale a pena?</h2>
-   <span class="selo {selo_class(c["selo"])}">{e(c["selo"])}</span>
+   <span class="selo {selo_class(c["selo"])}">{e(nivel(c))}</span>
    <p>{e(c["veredito"])}</p>
    <p class="tagline">{e(c["tagline"])}</p>
   </section>
@@ -559,6 +587,9 @@ h1{{font-size:clamp(2rem,7vw,3.1rem);line-height:1.05;font-weight:800;letter-spa
 .selo{{font-weight:800;font-size:.9rem;border-radius:999px;padding:3px 12px;color:#fff;background:var(--ok)}}
 .selo.publico{{background:var(--warn)}}.selo.nao{{background:var(--no)}}
 .veredito p{{font-weight:600}}
+.nivel{{flex-basis:100%;font-size:.86rem;font-weight:700;color:var(--ok-ink)}}.nivel.publico{{color:var(--warn-ink)}}.nivel.nao{{color:var(--no-ink)}}
+.nivel::before{{content:"✓ "}}.nivel.publico::before{{content:"! "}}.nivel.nao::before{{content:"✕ "}}
+.r30 .nivel{{color:#157a43;margin-top:6px}}.r30 .nivel.publico{{color:#8a5200}}.r30 .nivel.nao{{color:#a3223a}}
 .lede{{margin-top:14px;color:#c9cfd8;max-width:66ch}}
 .pub{{margin-top:10px;color:var(--muted);font-size:.85rem}}.pub a{{color:var(--link)}}
 .regua{{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;margin-top:16px;border:1px solid var(--line);border-radius:8px;background:var(--line);overflow:hidden}}
@@ -738,7 +769,7 @@ footer a{{color:var(--bar-ink)}}
    <div class="nota-box">{nota_html}</div>
    <p class="linha">{e(linha)}</p>
   </div>
-  <div class="veredito"><span class="selo {selo_class(c["selo"])}">{e(c["selo"])}</span><p>{e(c["tagline"])}</p></div>
+  <div class="veredito">{selo_perfil(c)}<p>{e(c["tagline"])}</p><p class="nivel {selo_class(c["selo"])}">{e(nivel(c))}</p></div>
   <ul class="regua">{regua_html}</ul>
   <a class="zap" href="{WHATSAPP}" target="_blank" rel="noopener">{icone("zap", "ic zi")}<span><b>Entre no grupo do WhatsApp</b><small>Converse sobre {e(c["jogo"])} e receba as próximas resenhas</small></span></a>
   <p class="lede">{e(c["lede"])}</p>

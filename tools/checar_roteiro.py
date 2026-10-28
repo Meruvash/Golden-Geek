@@ -79,6 +79,19 @@ def checar_texto(c):
         if not mn <= n <= mx:
             erros.append(f"texto · {nome}: {n} {un} (padrão: {mn} a {mx})")
 
+    # selo: nível de recomendação + perfil "Melhor para" (PADRAO_EDITORIAL.md)
+    from filtros_resenha import PERFIS
+    niveis = ("Recomendado", "Recomendado com ressalva", "Não recomendado")
+    if c.get("selo") not in niveis:
+        erros.append(f"texto · selo: {c.get('selo')!r}; use um de {', '.join(niveis)}")
+    if c.get("melhor_para") not in PERFIS:
+        erros.append(f"texto · melhor_para: {c.get('melhor_para')!r}; use um de {', '.join(PERFIS)}")
+    preco = re.search(r"R\$\s*([\d.]+)", (c.get("preco_ref") or {}).get("faixa", ""))
+    pede = any(str(a[0]).lower() == "grave" for a in c.get("atencao", [])) or (preco and int(preco.group(1).replace(".", "")) > 800)
+    if c.get("selo") == "Recomendado" and pede:
+        erros.append("texto · selo: há ponto de atenção grave ou preço acima de R$ 800; use \"Recomendado com ressalva\" e escreva a ressalva")
+    if (c.get("selo") == "Recomendado com ressalva") != bool(c.get("ressalva")):
+        erros.append("texto · ressalva: obrigatória com \"Recomendado com ressalva\" (2 a 6 palavras) e só com ele")
     tb = c.get("titulo_busca", "")
     if not tb:
         erros.append("texto · titulo_busca: falta o título da busca (ver PADRAO_EDITORIAL.md)")

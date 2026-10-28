@@ -44,6 +44,9 @@ A página é a resenha completa: precisa ensinar o jogo, mostrar como é jogar, 
 
 | Campo (em `conteudo/<slug>.json`) | Seção da página | Regra |
 |---|---|---|
+| `selo` | nível de recomendação | Um de: **Recomendado**; **Recomendado com ressalva** (obrigatório quando há ponto de atenção "Grave" ou preço mínimo acima de R$ 800); **Não recomendado**. |
+| `ressalva` | junto do nível | Só com "Recomendado com ressalva": o obstáculo em 2 a 6 palavras, tirado da resenha ("joga-se uma vez só", "preço acima de R$ 1.000", "textos em inglês"). |
+| `melhor_para` | balão do perfil | Um de: `entrada` (peso BGG abaixo de 2, regras em ~15 min), `dupla` (2 jogadores é a melhor contagem), `festa` (melhor com 5+, até ~30 min), `cooperativo`, `solo` (modo solo avaliado como ótimo), `proximo` (peso entre 2 e 3), `estrategia` (peso a partir de 3,2 ou partidas de 2 h), `campanha` (história em várias sessões), `tema` (narrativa e imersão no centro). Escolha o que melhor descreve quem deve comprar, sem repetir o perfil das últimas resenhas quando houver dúvida. |
 | `titulo_busca` | título no Google e na prévia | Até 62 caracteres, com o nome do jogo e a palavra "resenha", e um ângulo tirado da própria resenha (a frase de destaque, o prêmio principal, a comparação ou a série). Exemplos: "Cascadia: resenha do quebra-cabeça de natureza em 30 min", "Santuário ou Ark Nova? Resenha do vencedor do DSP 2026". "Vale a pena?" só quando for a dúvida real (jogo caro) e sem repetir a fórmula das últimas resenhas. O subtítulo do veredito já traz "Veredito: <jogo> vale a pena?". |
 | `lede` | abertura | 50 a 90 palavras: o que é, o prêmio principal, para quem é e uma pista do veredito. |
 | `como_funciona` | Como funciona | 4 a 6 parágrafos, 200 a 350 palavras no total: objetivo, o turno, a mecânica central, a progressão e como acaba e pontua. Termos do jogo explicados na primeira vez. |
