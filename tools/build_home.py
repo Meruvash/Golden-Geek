@@ -123,7 +123,7 @@ h1,h2,h3,p,ul,ol,figure{margin:0}ul,ol{padding:0;list-style:none}img{display:blo
 .agenda li{display:grid;grid-template-columns:104px 1fr;gap:10px;padding:9px 0;border-top:1px solid var(--paper-line);font-size:.9rem}
 .agenda li:first-child{border-top:0;padding-top:0}
 .agenda .q{font-weight:800;font-variant-numeric:tabular-nums}.agenda .q small{display:block;font-weight:600;font-size:.72rem;color:var(--paper-muted)}
-.agenda .d{color:var(--paper-muted);font-size:.82rem}
+.agenda .d{color:var(--paper-muted);font-size:.82rem}.agenda a{text-decoration:none}.agenda a:hover{text-decoration:underline}
 /* chegando ao Brasil */
 .capas{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:6px}
 .capas li{flex:0 0 132px;scroll-snap-align:start}
@@ -253,18 +253,23 @@ def build_home():
         f'<li><a href="{j["link"]}"><img src="{capa_jogo(pre, j["id_ludopedia"])}" width="44" height="44" alt="" loading="lazy"><div><b>{e(j["nome"])}</b><span>{e(j["motivo"])}</span></div></a></li>'
         for j in home["em_alta"]
     )
-    agenda = "".join(
-        f'<li><span class="q">{e(a["quando"])}{"<small>previsto</small>" if a["previsto"] else ""}</span><span><b>{e(a["titulo"])}</b><br><span class="d">{e(a["detalhe"])}</span></span></li>'
-        for a in home["agenda"]
-    )
+    def alvo(item):
+        # notícia nossa quando existe; senão o link de fora (ou âncora) do próprio item
+        return (f'noticias/{item["noticia"]}/', "") if item.get("noticia") else (item.get("link", ""), ' target="_blank" rel="noopener"' if item.get("link", "").startswith("http") else "")
+    agenda = ""
+    for a in home["agenda"]:
+        href, ext = alvo(a)
+        tit = f'<a href="{e(href)}"{ext}>{e(a["titulo"])}</a>' if href else e(a["titulo"])
+        agenda += f'<li><span class="q">{e(a["quando"])}{"<small>previsto</small>" if a["previsto"] else ""}</span><span><b>{tit}</b><br><span class="d">{e(a["detalhe"])}</span></span></li>'
+    por_jogo = {i: n["slug"] for n in ns for i in n.get("ids_ludopedia", [])}
     rotulo, jogos = lancamentos("2026-11")
     capas = "".join(
-        f'<li><a href="{e(j["url"])}" target="_blank" rel="noopener"><img src="{capa_jogo(pre, j["id_jogo"])}" width="132" height="140" alt="" loading="lazy">'
+        (f'<li><a href="noticias/{por_jogo[j["id_jogo"]]}/">' if j["id_jogo"] in por_jogo else f'<li><a href="{e(j["url"])}" target="_blank" rel="noopener">') + f'<img src="{capa_jogo(pre, j["id_jogo"])}" width="132" height="140" alt="" loading="lazy">'
         f'<span class="st {j["status"]["slug"]}">{e(j["status"]["label"])}</span><b>{e(j["nome"].strip())}</b><span>{e((j.get("editora") or {}).get("nome", ""))}</span></a></li>'
         for j in jogos
     )
     financ = "".join(
-        f'<li><span class="onde">{e(f["onde"])}</span><a href="{e(f["link"])}" target="_blank" rel="noopener">{e(f["nome"])}</a>'
+        f'<li><span class="onde">{e(f["onde"])}</span><a href="{e(alvo(f)[0])}"{alvo(f)[1]}>{e(f["nome"])}</a>'
         f'<span class="s">{e(f["editora"])} · {e(f["situacao"])}</span><span class="f">Fonte: {e(f["fonte"])}</span></li>'
         for f in home["financiamentos"]
     )
@@ -282,7 +287,7 @@ def build_home():
   <section class="bloco ultimas"><h2>Últimas notícias</h2><ul class="lista-n">{itens}</ul></section>
   <aside class="lado"><section class="bloco alta"><h2>Em alta</h2><ol class="hot">{alta}</ol></section>
   <section class="bloco agenda"><h2>Agenda</h2><ul>{agenda}</ul></section></aside>
-  <section class="bloco brasil"><h2>Chegando ao Brasil · {e(rotulo.lower())} <a href="https://ludopedia.com.br/lancamentos?mes=2026-11" target="_blank" rel="noopener">Calendário completo na Ludopedia</a></h2><ul class="capas">{capas}</ul></section>
+  <section class="bloco brasil" id="chegando"><h2>Chegando ao Brasil · {e(rotulo.lower())} <a href="https://ludopedia.com.br/lancamentos?mes=2026-11" target="_blank" rel="noopener">Calendário completo na Ludopedia</a></h2><ul class="capas">{capas}</ul></section>
   <section class="bloco financ"><h2>Financiamentos</h2><ul>{financ}</ul></section>
   <section class="bloco resenhas"><h2>Últimas resenhas <a href="resenhas/">Ver todas</a></h2><ul class="res">{res}</ul></section>
   <section class="bloco comunidade"><p>Notícias de tabuleiro com fonte e data, todos os dias. Entre no grupo para receber as novidades e conversar sobre jogos.</p>

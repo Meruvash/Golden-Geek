@@ -79,31 +79,36 @@
    "quando": "Novembro",
    "titulo": "11 jogos de tabuleiro previstos no Brasil",
    "detalhe": "Calendário da Ludopedia",
-   "previsto": false
+   "previsto": false,
+   "link": "#chegando"
   },
   {
    "quando": "26 a 28 fev 2027",
    "titulo": "Festival International des Jeux, Cannes",
    "detalhe": "Entrega do As d'Or",
-   "previsto": false
+   "previsto": false,
+   "noticia": "cannes-2027-as-dor"
   },
   {
    "quando": "Abril de 2027",
    "titulo": "Indicados ao Golden Geek",
    "detalhe": "Pela data dos anos anteriores",
-   "previsto": true
+   "previsto": true,
+   "noticia": "guia-dos-premios-2027"
   },
   {
    "quando": "Maio de 2027",
    "titulo": "Indicados ao Spiel des Jahres",
    "detalhe": "Pela data dos anos anteriores",
-   "previsto": true
+   "previsto": true,
+   "noticia": "guia-dos-premios-2027"
   },
   {
-   "quando": "Julho de 2027",
+   "quando": "9 a 11 jul 2027",
    "titulo": "Diversão Offline, São Paulo",
-   "detalhe": "A edição de 2026 foi de 10 a 12 de julho",
-   "previsto": true
+   "detalhe": "Datas indicadas no site do evento",
+   "previsto": true,
+   "noticia": "diversao-offline-2027"
   }
  ]
 }
