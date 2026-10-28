@@ -488,5 +488,7 @@ if __name__ == "__main__":
     for n in build_home():
         build_nota(n)
     print("ok index.html e", len(notas()), "notícias")
+    import build_consulta
+    print("ok consulta/index.html:", build_consulta.build())
     import build_sitemap
     print("ok sitemap.xml (%d URLs), sitemap-noticias.xml (%d), robots.txt" % build_sitemap.build()[:2])
