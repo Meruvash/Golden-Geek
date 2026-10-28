@@ -257,7 +257,7 @@ def cabecalho(pre, atual):
 
 def rodape(pre):
     return f"""<footer><div class="in">
- <span>Elite Boardgamers</span><a href="{pre or './'}">Notícias</a><a href="{pre}resenhas/">Resenhas</a><a href="{pre}consulta/">Consulta Golden Geek</a>
+ <span>Elite Boardgamers</span><a href="{pre or './'}">Notícias</a><a href="{pre}resenhas/">Resenhas</a><a href="{pre}consulta/">Consulta Golden Geek</a><a href="{pre}politica-editorial/">Política editorial</a>
  <a href="{INSTAGRAM}" target="_blank" rel="noopener">Instagram @eliteboardgamers</a><a href="{WHATSAPP}" target="_blank" rel="noopener">Grupo do WhatsApp</a>
 </div></footer>"""
 
@@ -290,6 +290,47 @@ def pagina(titulo, descricao, url, imagem, pre, corpo, tipo="website", head_extr
 </body>
 </html>
 """
+
+
+def build_politica():
+    """Página de política editorial: quem responde pelo site e como notícias e resenhas são feitas."""
+    pre = "../"
+    url = f"{SITE}/politica-editorial/"
+    corpo = f"""{cabecalho(pre, "")}
+<main id="conteudo" class="in"><div class="nota">
+ <article class="bloco">
+  <h1>Política editorial</h1>
+  <p class="lide">Como a Elite Boardgamers escolhe, escreve, confere e corrige o que publica.</p>
+ </article>
+ <section class="bloco"><h2>Quem responde pelo site</h2><div class="corpo">
+  <p><b>Anderson Pelicioni de Castro</b>, advogado, colecionador entusiasta e pesquisador de jogos de tabuleiro, é o responsável editorial da Elite Boardgamers. Ele lê e verifica pessoalmente tudo o que é publicado.</p>
+ </div></section>
+ <section class="bloco"><h2>Como o conteúdo é produzido</h2><div class="corpo">
+  <p>Notícias e resenhas são redigidas com apoio de ferramentas de inteligência artificial, sempre a partir das fontes citadas em cada página. Nenhum texto vai ao ar sem fontes, e todo número, prêmio, preço ou data precisa estar numa delas.</p>
+  <p>Todos os dias, à noite, o que foi publicado é conferido de novo contra as fontes. Dado que não se confirma sai do texto ou passa a constar como "não confirmado nas fontes consultadas".</p>
+ </div></section>
+ <section class="bloco"><h2>Como escolhemos as notícias</h2><div class="corpo">
+  <p>Toda notícia passa por um crivo editorial. Fica de fora o que não tem fonte primária (boato, vazamento ou "fontes dizem"), conteúdo pago ou release sem fato novo, notícia atrasada e assunto sem relação com tabuleiro moderno.</p>
+  <p>O que passa recebe pontos por relevância para quem joga no Brasil, como lançamento confirmado no país, prêmio importante ou confirmação por duas fontes independentes. Só entra com 5 pontos ou mais, e cada notícia mostra no fim por que entrou.</p>
+ </div></section>
+ <section class="bloco"><h2>Fato e opinião</h2><div class="corpo">
+  <p>Os fatos vêm com fonte e data de consulta. A nossa opinião aparece separada, nas seções "Por que importa" e "Nossa opinião". A opinião de outros veículos aparece sempre com o nome de quem a deu.</p>
+  <p>As resenhas reúnem a análise de veículos especializados e dados públicos, como os do BoardGameGeek e da Ludopedia. A nota exibida é a do BoardGameGeek, dada pelos jogadores de lá; não damos nota própria. Preços sempre aparecem com a data em que foram consultados.</p>
+ </div></section>
+ <section class="bloco"><h2>Imagens</h2><div class="corpo">
+  <p>Usamos fotos oficiais de divulgação das editoras, imagens de licença livre ou fotos nossas, sempre com crédito.</p>
+ </div></section>
+ <section class="bloco"><h2>Correções</h2><div class="corpo">
+  <p>Encontrou um erro? Mande uma mensagem no Instagram <a href="{INSTAGRAM}" target="_blank" rel="noopener">@eliteboardgamers</a> com o link da página e a fonte da informação correta. Erros confirmados são corrigidos na própria página.</p>
+ </div></section>
+</div></main>
+{rodape(pre)}"""
+    ld = seo.script({"@type": "WebPage", "@id": url, "url": url, "name": "Política editorial", "inLanguage": "pt-BR", "publisher": {"@id": seo.ORG_ID}},
+                    seo.trilha(("Início", f"{SITE}/"), ("Política editorial", url)))
+    out = ROOT / "politica-editorial" / "index.html"
+    out.parent.mkdir(exist_ok=True)
+    out.write_text(pagina("Política editorial | Elite Boardgamers", "Quem responde pela Elite Boardgamers e como notícias e resenhas são escolhidas, escritas, conferidas e corrigidas.",
+                          url, f"{SITE}/resenhas/capa.jpg", pre, corpo, jsonld=ld), encoding="utf-8")
 
 
 def img_nota(n, pre):
@@ -393,6 +434,7 @@ def build_home():
 </section></div></main>
 {rodape("/")}"""
     (ROOT / "404.html").write_text(pagina("Página não encontrada | Elite Boardgamers", "Página não encontrada.", "", f"{SITE}/resenhas/capa.jpg", "/", corpo_404), encoding="utf-8")
+    build_politica()
     (ROOT / "index.html").write_text(pagina(titulo, descr, f"{SITE}/", f"{SITE}/{img_nota(m, '')}", pre, corpo, jsonld=seo.script(seo.site())), encoding="utf-8")
     return ns
 

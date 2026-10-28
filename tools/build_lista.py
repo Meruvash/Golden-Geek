@@ -129,6 +129,7 @@ footer .in{{display:flex;flex-wrap:wrap;gap:10px 20px;padding-top:18px;padding-b
  <span>Elite Boardgamers</span>
  <a href="../">Notícias</a>
  <a href="../consulta/">Consulta Golden Geek 2015–2025</a>
+ <a href="../politica-editorial/">Política editorial</a>
  <a href="{INSTAGRAM}" target="_blank" rel="noopener">Instagram @eliteboardgamers</a>
  <a href="{WHATSAPP}" target="_blank" rel="noopener">Grupo do WhatsApp</a>
 </div></footer>

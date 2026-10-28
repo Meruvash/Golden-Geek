@@ -96,6 +96,10 @@ def fontes():
         c = json.loads(arq.read_text(encoding="utf-8"))
         inicial = max(filter(None, [pub.get("data"), data_git(arq)]))
         paginas.append(("resenha", f"{SITE}/{slug}/", ROOT / slug / "index.html", assinatura(c), inicial))
+    politica = ROOT / "politica-editorial" / "index.html"
+    if politica.exists():
+        texto = re.search(r"<main.*?</main>", politica.read_text(encoding="utf-8"), re.S).group(0)
+        paginas.append(("institucional", f"{SITE}/politica-editorial/", politica, assinatura(texto), data_git(politica) or agora().isoformat()))
     consulta = ROOT / "consulta" / "index.html"
     paginas.append(("consulta", f"{SITE}/consulta/", consulta, assinatura(lista_consulta(consulta.read_text(encoding="utf-8"))), data_lista_consulta(consulta)))
     return paginas

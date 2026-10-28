@@ -8,7 +8,7 @@ import json
 SITE = "https://eliteboardgamers.com.br"
 ORG_ID = f"{SITE}/#organizacao"
 SITE_ID = f"{SITE}/#site"
-REDACAO = {"@type": "Organization", "name": "Redação Elite Boardgamers", "url": f"{SITE}/"}
+REDACAO = {"@type": "Organization", "name": "Redação Elite Boardgamers", "url": f"{SITE}/politica-editorial/"}
 
 
 def organizacao():
