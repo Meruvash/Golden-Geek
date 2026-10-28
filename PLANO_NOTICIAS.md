@@ -57,6 +57,30 @@ Testadas em 28/10/2026 com o robô do site, que respeita o `robots.txt`.
 
 Fontes que não responderam do servidor na nuvem (Tábula Quadrada, Jogando Offline, blog da Galápagos, Mesa de Jogo) serão testadas de novo antes de entrar na lista.
 
+### Fontes nacionais (pesquisa de 28/10/2026)
+
+O Brasil não tem um portal jornalístico dedicado só a jogos de tabuleiro. As notícias nacionais nascem nas editoras e circulam na Ludopedia, em fóruns e em podcasts. Por isso a cobertura nacional se apoia em fontes primárias (as editoras) e na Ludopedia, com as outras como radar.
+
+| Fonte | O que traz | Como acompanhar | Situação |
+|---|---|---|---|
+| **Ludopedia: API oficial** | Calendário de lançamentos no Brasil, editoras, jogos | API com chave (`ludopedia.com.br/api`); a página proíbe robôs, mas a API é o caminho oficial | **pedir chave de acesso** (você, com a conta da Ludopedia) |
+| Ludopedia: LudoNews e "Rodada da semana nas editoras nacionais" | Resumo das novidades das editoras brasileiras | leitura manual | ativo (cobertura de Essen em 26–27/10) |
+| **Devir Brasil** | Lançamentos, campeonatos de Catan e Carcassonne | feed da categoria de tabuleiro, liberado | ativo (15/09) |
+| **Grok Games** | Lançamentos e pré-vendas | página liberada, sem feed: o robô compara a página dia a dia | liberado |
+| **Diversão Offline** | Maior evento de tabuleiro do país | página liberada, para a Agenda | liberado |
+| **Compara Jogos: "Estação de Notícias"** | Resumo quinzenal de notícias do hobby | fórum liberado para robôs | ativo |
+| **Covil dos Jogos** | Notícias e lançamentos | feed liberado | ativo (27/10) |
+| Galápagos, MeepleBR | Os maiores lançamentos nacionais | sites proíbem robôs: Instagram e newsletter, leitura manual | manual |
+| Conclave, PaperGames, Ludens Spirit, Calamity, Bucaneiros | Lançamentos e financiamentos nacionais | redes e newsletter; blog da PaperGames sem posts no feed | manual |
+| Catarse (categoria Jogos) | Financiamentos nacionais | API pública; não respondeu do servidor na nuvem, testar de novo | a testar |
+| Fabuloso Podcast, BoardCast Brasil | Notícias comentadas da semana | radar de pauta, nunca fonte única | manual |
+
+**Para fortalecer a cobertura nacional**
+1. **Chave da API da Ludopedia** (pedido seu): resolve o bloco "Chegando ao Brasil" com dados oficiais, sem raspagem.
+2. **Newsletter das editoras** num e-mail do projeto (Galápagos, MeepleBR, Grok, Conclave, Devir, PaperGames). Os anúncios chegam primeiro ali.
+3. **Lista de imprensa**: pedir às editoras para entrar na lista de divulgação da Elite Boardgamers (mesmo pedido do kit de fotos).
+4. **Comunidade**: no grupo do WhatsApp, um canal para leitores mandarem anúncios. O crivo exige a fonte primária antes de publicar.
+
 ## 4. Crivo editorial das notícias
 
 Segue a lógica do crivo das fotos: primeiro eliminatórios, depois pontuação. Fica escrito em `PADRAO_EDITORIAL.md` e é conferido por `tools/noticias/checar_noticia.py`, que se recusa a publicar uma nota fora do padrão.
@@ -132,9 +156,10 @@ O robô de notícias reaproveita o cliente do robô de imagens (`tools/imagens/r
 - **Feeds que param** (Dicebreaker parou em 2024): `coletar.py` avisa quando uma fonte passa 30 dias sem nada novo.
 - **Volume**: melhor 3 notas boas por dia do que 15 fracas. O crivo corta; a página inicial mostra o que passou.
 
-## 9. Decisões suas
+## 9. Decisões tomadas (28/10/2026)
 
-1. Quantas notas por dia, em média: 3, 5 ou 8?
-2. Aprovar toda nota antes de publicar ou só a manchete?
-3. A Consulta Golden Geek pode sair da página inicial e ir para `/consulta/`?
-4. Notícia de financiamento coletivo entra, ou só jogo que vai sair em loja?
+1. **5 notas por dia**, em média.
+2. **Aprovação só da manchete**; as outras 4 saem depois do crivo e do `checar_noticia.py`.
+3. **A Consulta Golden Geek vai para `/consulta/`**, com link no menu.
+4. **Financiamento coletivo entra**, com o mesmo crivo (fonte primária: a página da campanha).
+5. **Reforçar as fontes nacionais** (seção 3, "Fontes nacionais").
