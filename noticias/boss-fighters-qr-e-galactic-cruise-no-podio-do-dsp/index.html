@@ -115,6 +115,9 @@ h1,h2,h3,p,ul,ol,figure{margin:0}ul,ol{padding:0;list-style:none}img{display:blo
 .btn.zap{background:var(--zap);color:#fff}.btn.ig{border:1px solid #3a3f48}.btn.ig:hover{border-color:var(--gold);color:var(--gold)}
 footer{border-top:1px solid var(--line);font-size:.88rem}
 footer .in{display:flex;flex-wrap:wrap;gap:10px 20px;padding-top:18px;padding-bottom:18px}
+.selo{display:inline-block;font-size:.74rem;font-weight:800;border-radius:999px;padding:2px 10px;color:#fff;white-space:nowrap}
+.selo.compra{background:#157a43}.selo.acompanhar{background:#1f5fae}.selo.fas{background:#6b4ea3}.selo.ressalvas{background:#8a5200}.selo.info{background:#5a6270}
+.manchete .opina{font-size:.92rem;color:var(--paper-ink);border-left:3px solid var(--gold);padding-left:10px}
 /* página da notícia */
 .nota{max-width:760px;margin:0 auto;padding-top:20px;padding-bottom:48px;display:grid;gap:16px}
 .nota .bloco{padding:20px}
@@ -128,6 +131,20 @@ footer .in{display:flex;flex-wrap:wrap;gap:10px 20px;padding-top:18px;padding-bo
 .nota .jogos{display:flex;flex-wrap:wrap;gap:8px}.nota .jogos a{display:inline-block;padding:6px 10px;border-radius:6px;background:#e6e9ee;text-decoration:none;font-weight:700;font-size:.9rem}
 .nota .crivo{font-size:.85rem;color:var(--paper-muted)}.nota .crivo b{color:var(--paper-ink)}
 .volta{color:var(--gold);font-weight:700;text-decoration:none}
+.nota .abre{display:grid;gap:14px}
+.nota .importa{border-left:4px solid var(--gold)}.nota .importa p{font-size:1.02rem;color:var(--paper-ink)}.nota .assina{font-size:.78rem!important;color:var(--paper-muted)!important;margin-top:8px}
+.nums{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px}
+.nums li{background:#fff;border:1px solid var(--paper-line);border-radius:8px;padding:12px;display:grid;gap:2px}
+.nums b{font-size:1.35rem;line-height:1.15;font-weight:800;font-variant-numeric:tabular-nums}.nums span{font-size:.86rem;color:#3a414c}.nums small{font-size:.72rem;color:var(--paper-muted)}
+.nota .brasil-n{border-left:4px solid var(--brasil)}.nota .brasil-n p{color:#3a414c}
+.crit{display:grid;gap:12px}.crit p{color:#3a414c}
+.crit .cit q{display:block;font-size:1.15rem;font-weight:700;line-height:1.3;color:var(--paper-ink);quotes:"“" "”"}
+.crit cite{display:block;margin-top:4px;font-style:normal;font-size:.82rem;color:var(--paper-muted)}
+.nota .quem{display:grid;gap:16px}@media (min-width:640px){.nota .quem{grid-template-columns:1fr 1fr}}
+.quem li{position:relative;padding-left:16px;margin:6px 0;color:#3a414c}.quem li::before{content:"";position:absolute;left:0;top:.6em;width:7px;height:7px;border-radius:50%;background:#1b7a45}
+.quem .no li::before{background:#b3263e}
+.nota .veredito{background:var(--panel2);color:var(--ink);border:1px solid var(--gold)}.nota .veredito h2{color:var(--gold)}
+.nota .veredito p{font-size:1.08rem;font-weight:600;margin-top:10px;max-width:62ch}
 @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
 </style>
 </head>
@@ -141,13 +158,20 @@ footer .in{display:flex;flex-wrap:wrap;gap:10px 20px;padding-top:18px;padding-bo
 <main id="conteudo" class="in"><div class="nota">
  <a class="volta" href="../../">← Todas as notícias</a>
  <article class="bloco">
-  <span class="cat premios">Prêmios</span>
+  <span class="cat premios">Prêmios</span> <span class="selo acompanhar">Vale acompanhar</span>
   <h1>Boss Fighters QR, 2º no Deutscher Spiele Preis, já passa de 100 mil cópias</h1>
-  <p class="meta">28 de outubro de 2026</p>
+  <p class="meta">28 de outubro de 2026 · Redação Elite Boardgamers</p>
  </article>
- <div class="bloco" style="display:grid;gap:14px"><figure><img src="../../noticias/capas/82522.jpg" alt="Boss Fighters QR, 2º no Deutscher Spiele Preis, já passa de 100 mil cópias"><figcaption class="credito">Capa via Ludopedia</figcaption></figure><p class="lide">Boss Fighters QR, cooperativo em que um aplicativo controla os chefes, ficou em segundo lugar no Deutscher Spiele Preis 2026. Segundo a BoardGameWire, o jogo já vendeu mais de 100 mil cópias em 17 países.</p><div class="corpo"><p>Os autores, Michael Palm e Lukas Zach, venceram o Spiel des Jahres de 2023 com Dorfromantik: The Board Game. O jogo levou seis anos para ficar pronto, boa parte disso para garantir que a leitura dos códigos QR funcionasse bem.</p><p>A Pegasus Spiele encomendou para o lançamento, na Spiel Essen de 2025, a maior primeira tiragem da sua história e depois repetiu a dose para atender à procura.</p><p>Galactic Cruise, vencedor no Golden Geek de 2025, ficou em terceiro, e O Senhor dos Anéis: Sina da Sociedade, de Matt Leacock, em quarto.</p></div></div>
+ <div class="bloco abre"><figure><img src="../../noticias/capas/82522.jpg" alt="Boss Fighters QR, 2º no Deutscher Spiele Preis, já passa de 100 mil cópias"><figcaption class="credito">Capa via Ludopedia</figcaption></figure><p class="lide">Boss Fighters QR, cooperativo em que um aplicativo controla os chefes, ficou em segundo lugar no Deutscher Spiele Preis 2026. Segundo a BoardGameWire, o jogo já vendeu mais de 100 mil cópias em 17 países.</p></div>
+ <section class="bloco importa"><h2>Por que importa</h2><p>Um jogo que depende de aplicativo no pódio de um prêmio votado por jogadores mostra que a tecnologia na mesa deixou de ser rejeitada por princípio. Para quem está no Brasil, falta o principal: ainda não há edição nacional anunciada.</p><p class="assina">Análise Elite Boardgamers</p></section>
+ <section class="bloco"><h2>Em números</h2><ul class="nums"><li><b>100 mil+</b><span>cópias em 17 países</span><small>Johannes Blumenberg, via BoardGameWire</small></li><li><b>6 anos</b><span>de desenvolvimento</span><small>BoardGameWire</small></li><li><b>10</b><span>chefes na caixa</span><small>Gus&amp;Co</small></li><li><b>40–60 min</b><span>por partida, de 1 a 4 pessoas</span><small>Arquivo do DSP</small></li></ul></section>
+ <section class="bloco"><h2>Contexto</h2><div class="corpo"><p>No jogo, cada pessoa escaneia suas cartas com o celular, e o aplicativo controla o chefe, que reage na hora. Os autores, Michael Palm e Lukas Zach, venceram o Spiel des Jahres de 2023 com Dorfromantik: The Board Game.</p><p>A Pegasus Spiele encomendou para o lançamento, na Spiel Essen de 2025, a maior primeira tiragem da sua história e depois repetiu a dose. No Deutscher Spiele Preis 2026, Galactic Cruise ficou em terceiro e O Senhor dos Anéis: Sina da Sociedade, de Matt Leacock, em quarto.</p></div></section>
+ <section class="bloco brasil-n"><h2>No Brasil</h2><p>Não encontramos edição nacional nem anúncio de editora brasileira até 28/10/2026. O aplicativo já tem português do Brasil, segundo a App Store, mas as cartas e o manual das edições à venda estão em inglês ou alemão.</p></section>
+ <section class="bloco"><h2>O que diz a crítica</h2><ul class="crit"><li><p>Para a Board Game Quest, o aplicativo resolve toda a contabilidade, mas escanear as cartas fica cansativo com mais jogadores.</p></li><li><p>Para o Gus&amp;Co, o ponto fraco é a rejogabilidade: são só 10 chefes na caixa.</p></li></ul></section>
+ <section class="bloco quem"><div><h2>Interessa a você se…</h2><ul class="ok"><li>Joga com a família ou com quem não costuma jogar e gosta de cooperativos curtos</li><li>Não se incomoda em ter o celular no centro da mesa</li></ul></div><div><h2>Pense duas vezes se…</h2><ul class="no"><li>Quer o jogo em português, sem depender de importação</li></ul></div></section>
+ <section class="bloco veredito acompanhar"><h2>Nossa opinião</h2><span class="selo acompanhar">Vale acompanhar</span><p>Vale acompanhar: é um sucesso de vendas premiado, mas, sem edição nacional, comprar hoje significa importar e jogar com cartas em outra língua. Se uma editora brasileira anunciar, voltamos ao assunto.</p></section>
  <section class="bloco"><h2>Jogos citados</h2><div class="jogos"><a href="../../fate-of-the-fellowship/">Resenha: O Senhor dos Anéis: Sina da Sociedade</a></div></section>
- <section class="bloco fontes"><h2>Fontes</h2><ul><li><a href="https://boardgamewire.com/index.php/2026/10/27/two-games-two-deutscher-spiele-preis-wins-ark-nova-designer-mathias-wigge-takes-second-title-with-sanctuary/" target="_blank" rel="noopener">BoardGameWire</a> <span>consulta em 27/10/2026</span></li><li><a href="https://www.deutscherspielepreis.de/" target="_blank" rel="noopener">Arquivo do Deutscher Spiele Preis (projeto de fãs)</a> <span>consulta em 28/10/2026</span></li></ul></section>
+ <section class="bloco fontes"><h2>Fontes</h2><ul><li><a href="https://boardgamewire.com/index.php/2026/10/27/two-games-two-deutscher-spiele-preis-wins-ark-nova-designer-mathias-wigge-takes-second-title-with-sanctuary/" target="_blank" rel="noopener">BoardGameWire</a> <span>consulta em 27/10/2026</span></li><li><a href="https://www.deutscherspielepreis.de/" target="_blank" rel="noopener">Arquivo do Deutscher Spiele Preis (projeto de fãs)</a> <span>consulta em 28/10/2026</span></li><li><a href="https://www.boardgamequest.com/boss-fighters-qr-review/" target="_blank" rel="noopener">Board Game Quest: resenha de Boss Fighters QR</a> <span>consulta em 28/10/2026</span></li><li><a href="https://gusandco.net/2025/12/08/boss-fighters-qr-avis-test-jeu-hybride-scan-play/" target="_blank" rel="noopener">Gus&amp;Co: avaliação de Boss Fighters QR</a> <span>consulta em 28/10/2026</span></li><li><a href="https://apps.apple.com/us/app/boss-fighters-qr/id1607885054" target="_blank" rel="noopener">App Store: Boss Fighters QR</a> <span>consulta em 28/10/2026</span></li></ul></section>
  <section class="bloco crivo"><h2>Por que esta notícia entrou</h2><p><b>9 pontos no crivo editorial</b> (mínimo 5): Prêmio grande (4); Jogo com resenha nossa: Sina da Sociedade (3); Confirmada por duas fontes (2).</p></section>
 </div></main>
 <footer><div class="in">

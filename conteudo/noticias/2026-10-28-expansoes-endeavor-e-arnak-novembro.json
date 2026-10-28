@@ -5,14 +5,28 @@
  "titulo": "Expansões de Endeavor: Deep Sea e de Arnak estão previstas para novembro",
  "lide": "O calendário de lançamentos da Ludopedia traz duas expansões de jogos que já resenhamos para novembro: Endeavor: Deep Sea – Águas Desconhecidas, anunciada pela Ludofun, e As Ruínas Perdidas de Arnak: Caminhos Tortuosos, em pré-venda pela Devir Brasil.",
  "corpo": [
-  "Águas Desconhecidas é para 1 a 5 pessoas, com partidas de cerca de 90 minutos, a partir de 14 anos, segundo a ficha da Ludopedia. A expansão é dos mesmos autores do jogo base, Carl de Visser e Jarratt Gray.",
-  "Caminhos Tortuosos, de Mín e Elwen, saiu lá fora em 2025. É para 1 a 4 pessoas, com partidas de até 120 minutos.",
-  "As datas são previsões das editoras e podem mudar. Atualizamos a nota quando as expansões chegarem às lojas."
+  "Caminhos Tortuosos, de Mín e Elwen, é a última grande expansão de Arnak. Cada lado do novo mapa tem trilha de pesquisa e templo próprios: o Templo da Coruja puxa para exploração e ídolos, e o Templo da Aranha usa um recurso novo, as tábuas sombrias, que rendem bem mas tiram pontos de quem exagera.",
+  "Águas Desconhecidas, de Carl de Visser e Jarratt Gray, é a primeira expansão de Endeavor: Deep Sea, vencedor do Kennerspiel. Traz cenários com componentes novos, especialistas de nível 5 e cartas para os modos cooperativo e solo. A lista exata de peças ainda varia entre lojas."
  ],
  "fontes": [
   {
    "nome": "Ludopedia: lançamentos de novembro de 2026",
    "url": "https://ludopedia.com.br/lancamentos?mes=2026-11",
+   "data": "28/10/2026"
+  },
+  {
+   "nome": "GamingTrend: resenha de Caminhos Tortuosos",
+   "url": "https://gamingtrend.com/reviews/lost-ruins-of-arnak-twisted-paths-and-surprise-shipment-expansions-review/",
+   "data": "28/10/2026"
+  },
+  {
+   "nome": "Cardhaus: Twisted Paths",
+   "url": "https://www.cardhaus.com/lost-ruins-of-arnak-twisted-paths/",
+   "data": "28/10/2026"
+  },
+  {
+   "nome": "Zatu: prévia de Uncharted Waters",
+   "url": "https://zatu.com/blogs/previews/kickstarter-preview-endeavor-seep-sea-uncharted-waters",
    "data": "28/10/2026"
   },
   {
@@ -41,5 +55,40 @@
    "Lançamento previsto no Brasil (4)",
    "Jogos com resenha nossa (3)"
   ]
- }
+ },
+ "selo": "Para fãs do jogo base",
+ "por_que_importa": "Endeavor: Deep Sea e Arnak estão entre os jogos médios mais bem avaliados que resenhamos. As duas expansões trazem mapas e cenários novos sem trocar as regras do jogo base: é a chance de renovar jogos que muita gente já tem na estante.",
+ "numeros": [
+  [
+   "2",
+   "templos novos em Arnak, num mapa de dois lados",
+   "Cardhaus"
+  ],
+  [
+   "4",
+   "cenários novos em Endeavor: Deep Sea",
+   "Zatu"
+  ],
+  [
+   "nov/2026",
+   "previsão de chegada no Brasil",
+   "Ludopedia"
+  ]
+ ],
+ "no_brasil": "Águas Desconhecidas aparece como anunciada pela Ludofun e Caminhos Tortuosos como em pré-venda pela Devir Brasil, as duas previstas para novembro, segundo a Ludopedia. Não encontramos o preço de nenhuma delas até 28/10/2026. As duas exigem o jogo base.",
+ "critica": [
+  {
+   "fonte": "GamingTrend",
+   "texto": "Para a GamingTrend, Caminhos Tortuosos é uma ótima expansão para jogadores experientes e pede que eles esqueçam parte do que aprenderam no jogo base.",
+   "citacao": false
+  }
+ ],
+ "para_quem": [
+  "Já joga Arnak com frequência e conhece o mapa original de cor",
+  "Tem Endeavor: Deep Sea e quer mais cenários, inclusive para jogar sozinho ou em cooperação"
+ ],
+ "nao_e_para": [
+  "Ainda está aprendendo o jogo base: as duas pedem experiência"
+ ],
+ "veredito": "Caminhos Tortuosos chega bem avaliada e é para quem já esgotou o mapa de Arnak. Águas Desconhecidas ainda não tem resenhas completas: vale esperar as primeiras opiniões antes de reservar."
 }

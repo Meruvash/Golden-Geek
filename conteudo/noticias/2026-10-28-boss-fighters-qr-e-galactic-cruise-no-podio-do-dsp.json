@@ -5,9 +5,8 @@
  "titulo": "Boss Fighters QR, 2º no Deutscher Spiele Preis, já passa de 100 mil cópias",
  "lide": "Boss Fighters QR, cooperativo em que um aplicativo controla os chefes, ficou em segundo lugar no Deutscher Spiele Preis 2026. Segundo a BoardGameWire, o jogo já vendeu mais de 100 mil cópias em 17 países.",
  "corpo": [
-  "Os autores, Michael Palm e Lukas Zach, venceram o Spiel des Jahres de 2023 com Dorfromantik: The Board Game. O jogo levou seis anos para ficar pronto, boa parte disso para garantir que a leitura dos códigos QR funcionasse bem.",
-  "A Pegasus Spiele encomendou para o lançamento, na Spiel Essen de 2025, a maior primeira tiragem da sua história e depois repetiu a dose para atender à procura.",
-  "Galactic Cruise, vencedor no Golden Geek de 2025, ficou em terceiro, e O Senhor dos Anéis: Sina da Sociedade, de Matt Leacock, em quarto."
+  "No jogo, cada pessoa escaneia suas cartas com o celular, e o aplicativo controla o chefe, que reage na hora. Os autores, Michael Palm e Lukas Zach, venceram o Spiel des Jahres de 2023 com Dorfromantik: The Board Game.",
+  "A Pegasus Spiele encomendou para o lançamento, na Spiel Essen de 2025, a maior primeira tiragem da sua história e depois repetiu a dose. No Deutscher Spiele Preis 2026, Galactic Cruise ficou em terceiro e O Senhor dos Anéis: Sina da Sociedade, de Matt Leacock, em quarto."
  ],
  "fontes": [
   {
@@ -18,6 +17,21 @@
   {
    "nome": "Arquivo do Deutscher Spiele Preis (projeto de fãs)",
    "url": "https://www.deutscherspielepreis.de/",
+   "data": "28/10/2026"
+  },
+  {
+   "nome": "Board Game Quest: resenha de Boss Fighters QR",
+   "url": "https://www.boardgamequest.com/boss-fighters-qr-review/",
+   "data": "28/10/2026"
+  },
+  {
+   "nome": "Gus&Co: avaliação de Boss Fighters QR",
+   "url": "https://gusandco.net/2025/12/08/boss-fighters-qr-avis-test-jeu-hybride-scan-play/",
+   "data": "28/10/2026"
+  },
+  {
+   "nome": "App Store: Boss Fighters QR",
+   "url": "https://apps.apple.com/us/app/boss-fighters-qr/id1607885054",
    "data": "28/10/2026"
   }
  ],
@@ -38,5 +52,50 @@
    "Jogo com resenha nossa: Sina da Sociedade (3)",
    "Confirmada por duas fontes (2)"
   ]
- }
+ },
+ "selo": "Vale acompanhar",
+ "por_que_importa": "Um jogo que depende de aplicativo no pódio de um prêmio votado por jogadores mostra que a tecnologia na mesa deixou de ser rejeitada por princípio. Para quem está no Brasil, falta o principal: ainda não há edição nacional anunciada.",
+ "numeros": [
+  [
+   "100 mil+",
+   "cópias em 17 países",
+   "Johannes Blumenberg, via BoardGameWire"
+  ],
+  [
+   "6 anos",
+   "de desenvolvimento",
+   "BoardGameWire"
+  ],
+  [
+   "10",
+   "chefes na caixa",
+   "Gus&Co"
+  ],
+  [
+   "40–60 min",
+   "por partida, de 1 a 4 pessoas",
+   "Arquivo do DSP"
+  ]
+ ],
+ "no_brasil": "Não encontramos edição nacional nem anúncio de editora brasileira até 28/10/2026. O aplicativo já tem português do Brasil, segundo a App Store, mas as cartas e o manual das edições à venda estão em inglês ou alemão.",
+ "critica": [
+  {
+   "fonte": "Board Game Quest",
+   "texto": "Para a Board Game Quest, o aplicativo resolve toda a contabilidade, mas escanear as cartas fica cansativo com mais jogadores.",
+   "citacao": false
+  },
+  {
+   "fonte": "Gus&Co",
+   "texto": "Para o Gus&Co, o ponto fraco é a rejogabilidade: são só 10 chefes na caixa.",
+   "citacao": false
+  }
+ ],
+ "para_quem": [
+  "Joga com a família ou com quem não costuma jogar e gosta de cooperativos curtos",
+  "Não se incomoda em ter o celular no centro da mesa"
+ ],
+ "nao_e_para": [
+  "Quer o jogo em português, sem depender de importação"
+ ],
+ "veredito": "Vale acompanhar: é um sucesso de vendas premiado, mas, sem edição nacional, comprar hoje significa importar e jogar com cartas em outra língua. Se uma editora brasileira anunciar, voltamos ao assunto."
 }

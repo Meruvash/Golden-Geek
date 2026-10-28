@@ -12,8 +12,10 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from build_review import INSTAGRAM, ROOT, SITE, WHATSAPP, e, icone, versao  # noqa: E402
+from noticias.checar_noticia import problemas  # noqa: E402
 
 MESES = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"]
+SELO_CLASSE = {"Vale a compra": "compra", "Vale acompanhar": "acompanhar", "Para fãs do jogo base": "fas", "Com ressalvas": "ressalvas", "Informativo": "info"}
 CAT_CLASSE = {"Prêmios": "premios", "Chegando ao Brasil": "brasil", "Mercado": "mercado", "Financiamento": "financ", "Eventos": "eventos"}
 
 
@@ -29,6 +31,9 @@ def data_curta(iso):
 
 def notas():
     ns = [json.loads(p.read_text(encoding="utf-8")) for p in sorted((ROOT / "conteudo" / "noticias").glob("*.json"))]
+    ruins = {n["slug"]: problemas(n) for n in ns if problemas(n)}
+    if ruins:
+        sys.exit("Notícias fora do padrão (rode tools/noticias/checar_noticia.py): " + ", ".join(ruins))
     # manchete primeiro, depois mais recentes e mais pontuadas
     return sorted(ns, key=lambda n: (not n.get("manchete"), -date.fromisoformat(n["data"]).toordinal(), -n["crivo"]["pontos"]))
 
@@ -145,6 +150,9 @@ h1,h2,h3,p,ul,ol,figure{margin:0}ul,ol{padding:0;list-style:none}img{display:blo
 .btn.zap{background:var(--zap);color:#fff}.btn.ig{border:1px solid #3a3f48}.btn.ig:hover{border-color:var(--gold);color:var(--gold)}
 footer{border-top:1px solid var(--line);font-size:.88rem}
 footer .in{display:flex;flex-wrap:wrap;gap:10px 20px;padding-top:18px;padding-bottom:18px}
+.selo{display:inline-block;font-size:.74rem;font-weight:800;border-radius:999px;padding:2px 10px;color:#fff;white-space:nowrap}
+.selo.compra{background:#157a43}.selo.acompanhar{background:#1f5fae}.selo.fas{background:#6b4ea3}.selo.ressalvas{background:#8a5200}.selo.info{background:#5a6270}
+.manchete .opina{font-size:.92rem;color:var(--paper-ink);border-left:3px solid var(--gold);padding-left:10px}
 /* página da notícia */
 .nota{max-width:760px;margin:0 auto;padding-top:20px;padding-bottom:48px;display:grid;gap:16px}
 .nota .bloco{padding:20px}
@@ -158,6 +166,20 @@ footer .in{display:flex;flex-wrap:wrap;gap:10px 20px;padding-top:18px;padding-bo
 .nota .jogos{display:flex;flex-wrap:wrap;gap:8px}.nota .jogos a{display:inline-block;padding:6px 10px;border-radius:6px;background:#e6e9ee;text-decoration:none;font-weight:700;font-size:.9rem}
 .nota .crivo{font-size:.85rem;color:var(--paper-muted)}.nota .crivo b{color:var(--paper-ink)}
 .volta{color:var(--gold);font-weight:700;text-decoration:none}
+.nota .abre{display:grid;gap:14px}
+.nota .importa{border-left:4px solid var(--gold)}.nota .importa p{font-size:1.02rem;color:var(--paper-ink)}.nota .assina{font-size:.78rem!important;color:var(--paper-muted)!important;margin-top:8px}
+.nums{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px}
+.nums li{background:#fff;border:1px solid var(--paper-line);border-radius:8px;padding:12px;display:grid;gap:2px}
+.nums b{font-size:1.35rem;line-height:1.15;font-weight:800;font-variant-numeric:tabular-nums}.nums span{font-size:.86rem;color:#3a414c}.nums small{font-size:.72rem;color:var(--paper-muted)}
+.nota .brasil-n{border-left:4px solid var(--brasil)}.nota .brasil-n p{color:#3a414c}
+.crit{display:grid;gap:12px}.crit p{color:#3a414c}
+.crit .cit q{display:block;font-size:1.15rem;font-weight:700;line-height:1.3;color:var(--paper-ink);quotes:"“" "”"}
+.crit cite{display:block;margin-top:4px;font-style:normal;font-size:.82rem;color:var(--paper-muted)}
+.nota .quem{display:grid;gap:16px}@media (min-width:640px){.nota .quem{grid-template-columns:1fr 1fr}}
+.quem li{position:relative;padding-left:16px;margin:6px 0;color:#3a414c}.quem li::before{content:"";position:absolute;left:0;top:.6em;width:7px;height:7px;border-radius:50%%;background:#1b7a45}
+.quem .no li::before{background:#b3263e}
+.nota .veredito{background:var(--panel2);color:var(--ink);border:1px solid var(--gold)}.nota .veredito h2{color:var(--gold)}
+.nota .veredito p{font-size:1.08rem;font-weight:600;margin-top:10px;max-width:62ch}
 @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
 """
 
@@ -218,12 +240,13 @@ def build_home():
     manchete = f"""<article class="bloco manchete"><a href="noticias/{m['slug']}/">
   <figure><img src="{img_nota(m, pre)}" width="941" height="1000" alt="{e(m['titulo'])}" fetchpriority="high"></figure>
   <div class="txt"><span class="kick">Manchete · {e(m['categoria'])}</span><h1>{e(m['titulo'])}</h1><p>{e(m['lide'])}</p>
+  <p class="opina"><span class="selo {SELO_CLASSE[m['selo']]}">{e(m['selo'])}</span> {e(m['veredito'])}</p>
   <span class="meta">{data_longa(m['data'])} · {e(m['fontes'][0]['nome'])}</span><span class="credito">{e(m['imagem']['credito'])}</span></div>
  </a></article>"""
     itens = "".join(
         f"""<li><a href="noticias/{n['slug']}/">{f'<img src="{img_nota(n, pre)}" width="76" height="76" alt="" loading="lazy">' if n.get("imagem") else f'<span class="sem">{icone("dica")}</span>'}
    <div><span class="cat {CAT_CLASSE.get(n['categoria'], 'mercado')}">{e(n['categoria'])}</span> <span class="meta">{data_curta(n['data'])} · {e(n['fontes'][0]['nome'].split(':')[0])}</span>
-   <h3>{e(n['titulo'])}</h3><p>{e(n['lide'])}</p></div></a></li>"""
+   <h3>{e(n['titulo'])}</h3><p><span class="selo {SELO_CLASSE[n['selo']]}">{e(n['selo'])}</span> {e(n['por_que_importa'])}</p></div></a></li>"""
         for n in resto
     )
     alta = "".join(
@@ -279,15 +302,29 @@ def build_nota(n):
            if n.get("imagem") else "")
     jogos = "".join(f'<a href="{pre}{j["resenha"]}/">Resenha: {e(j["nome"])}</a>' for j in n.get("jogos", []))
     fontes = "".join(f'<li><a href="{e(f["url"])}" target="_blank" rel="noopener">{e(f["nome"])}</a> <span>consulta em {e(f["data"])}</span></li>' for f in n["fontes"])
+    numeros = "".join(f'<li><b>{e(v)}</b><span>{e(r)}</span><small>{e(f)}</small></li>' for v, r, f in n["numeros"])
+    critica = "".join(
+        (f'<li class="cit"><q>{e(c["texto"])}</q><cite>{e(c["fonte"])} (tradução livre)</cite></li>' if c.get("citacao")
+         else f'<li><p>{e(c["texto"])}</p></li>') for c in n["critica"])
+    sim = "".join(f"<li>{e(x)}</li>" for x in n["para_quem"])
+    nao = "".join(f"<li>{e(x)}</li>" for x in n.get("nao_e_para", []))
+    sc = SELO_CLASSE[n["selo"]]
     corpo = f"""{cabecalho(pre, "Notícias")}
 <main id="conteudo" class="in"><div class="nota">
  <a class="volta" href="{pre}">← Todas as notícias</a>
  <article class="bloco">
-  <span class="cat {CAT_CLASSE.get(n['categoria'], 'mercado')}">{e(n['categoria'])}</span>
+  <span class="cat {CAT_CLASSE.get(n['categoria'], 'mercado')}">{e(n['categoria'])}</span> <span class="selo {sc}">{e(n['selo'])}</span>
   <h1>{e(n['titulo'])}</h1>
-  <p class="meta">{data_longa(n['data'])}</p>
+  <p class="meta">{data_longa(n['data'])} · Redação Elite Boardgamers</p>
  </article>
- <div class="bloco" style="display:grid;gap:14px">{fig}<p class="lide">{e(n['lide'])}</p><div class="corpo">{"".join(f"<p>{e(p)}</p>" for p in n['corpo'])}</div></div>
+ <div class="bloco abre">{fig}<p class="lide">{e(n['lide'])}</p></div>
+ <section class="bloco importa"><h2>Por que importa</h2><p>{e(n['por_que_importa'])}</p><p class="assina">Análise Elite Boardgamers</p></section>
+ <section class="bloco"><h2>Em números</h2><ul class="nums">{numeros}</ul></section>
+ <section class="bloco"><h2>Contexto</h2><div class="corpo">{"".join(f"<p>{e(p)}</p>" for p in n['corpo'])}</div></section>
+ <section class="bloco brasil-n"><h2>No Brasil</h2><p>{e(n['no_brasil'])}</p></section>
+ <section class="bloco"><h2>O que diz a crítica</h2><ul class="crit">{critica}</ul></section>
+ <section class="bloco quem"><div><h2>Interessa a você se…</h2><ul class="ok">{sim}</ul></div>{f'<div><h2>Pense duas vezes se…</h2><ul class="no">{nao}</ul></div>' if nao else ""}</section>
+ <section class="bloco veredito {sc}"><h2>Nossa opinião</h2><span class="selo {sc}">{e(n['selo'])}</span><p>{e(n['veredito'])}</p></section>
  {f'<section class="bloco"><h2>Jogos citados</h2><div class="jogos">{jogos}</div></section>' if jogos else ""}
  <section class="bloco fontes"><h2>Fontes</h2><ul>{fontes}</ul></section>
  <section class="bloco crivo"><h2>Por que esta notícia entrou</h2><p><b>{n['crivo']['pontos']} pontos no crivo editorial</b> (mínimo 5): {e("; ".join(n['crivo']['criterios']))}.</p></section>

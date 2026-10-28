@@ -105,3 +105,30 @@ Foto de outra edição não reprova: entra com o aviso no crédito (`"Imagem: �
 **Como é jogar** — outra foto de mesa, jogabilidade ou componentes, com lado menor de pelo menos 600 px e proporção até 2,4. Prefere uma que também passaria no topo; foto de catálogo é aceita aqui.
 
 **Preço** — a caixa, com lado menor de pelo menos 400 px.
+
+# Padrão editorial das notícias (v1)
+
+A notícia da Elite Boardgamers não repete o release: diz o que aconteceu, por que importa para quem joga no Brasil, o que a crítica acha e o que a gente recomenda. Herda do padrão das resenhas a regra de ouro: **fato tem fonte, opinião tem dono**. Conferido por `tools/noticias/checar_noticia.py`; `tools/build_home.py` não publica nota que não passa.
+
+| Campo (em `conteudo/noticias/<data>-<assunto>.json`) | Seção da página | Regra |
+|---|---|---|
+| `titulo` | título | 8 a 16 palavras: o fato e quem, sem caça-clique. |
+| `selo` | selo da nota | Um de: **Vale a compra**, **Vale acompanhar**, **Para fãs do jogo base**, **Com ressalvas**, **Informativo**. |
+| `lide` | abertura | 35 a 70 palavras: o fato, quando, onde e a ligação com o Brasil. |
+| `por_que_importa` | Por que importa | 30 a 70 palavras de **análise nossa**, assinada pela Elite Boardgamers: o que a notícia muda para o leitor. |
+| `numeros` | Em números | 2 a 4 itens `[valor, rótulo, fonte]`. Só número com fonte; preço sempre com data. |
+| `corpo` | Contexto | 1 a 3 parágrafos, 40 a 200 palavras: o que o leitor precisa saber para entender. |
+| `no_brasil` | No Brasil | 25 a 80 palavras: editora nacional, preço com data, disponibilidade, ou a falta de edição nacional. |
+| `critica` | O que diz a crítica | 1 a 3 itens `{fonte, texto, citacao}`. `citacao: true` só para frase literal traduzida ("tradução livre"); senão é paráfrase atribuída ("Para a Board Game Quest, …"). |
+| `para_quem` / `nao_e_para` | Interessa a você se… / Pense duas vezes se… | 1 a 3 itens cada (`nao_e_para` pode ficar vazio em nota informativa). |
+| `veredito` | Nossa opinião | 20 a 60 palavras: conselho claro (comprar, esperar, acompanhar) e o porquê. |
+| `fontes` | Fontes | pelo menos 2, com link e data da consulta. |
+| `crivo` | Por que esta notícia entrou | pontos e critérios do crivo (PLANO_NOTICIAS.md). |
+
+Regras de texto:
+
+1. **Opinião ancorada.** O veredito se apoia nas nossas resenhas (quando o jogo tem) e na crítica citada; nunca em impressão solta.
+2. **Brasil primeiro.** Toda nota responde: dá para comprar aqui, por quanto e de quem? Se não dá, diz isso.
+3. **Sem citação inventada.** Frase entre aspas só se a frase original existe; o resto é paráfrase com dono.
+4. **Previsão é previsão.** Data de lançamento é "prevista" até o jogo chegar às lojas.
+5. **Crítica dividida aparece dividida.** Se as resenhas discordam, mostre os dois lados.

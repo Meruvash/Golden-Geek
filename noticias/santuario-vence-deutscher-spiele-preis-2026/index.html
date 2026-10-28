@@ -115,6 +115,9 @@ h1,h2,h3,p,ul,ol,figure{margin:0}ul,ol{padding:0;list-style:none}img{display:blo
 .btn.zap{background:var(--zap);color:#fff}.btn.ig{border:1px solid #3a3f48}.btn.ig:hover{border-color:var(--gold);color:var(--gold)}
 footer{border-top:1px solid var(--line);font-size:.88rem}
 footer .in{display:flex;flex-wrap:wrap;gap:10px 20px;padding-top:18px;padding-bottom:18px}
+.selo{display:inline-block;font-size:.74rem;font-weight:800;border-radius:999px;padding:2px 10px;color:#fff;white-space:nowrap}
+.selo.compra{background:#157a43}.selo.acompanhar{background:#1f5fae}.selo.fas{background:#6b4ea3}.selo.ressalvas{background:#8a5200}.selo.info{background:#5a6270}
+.manchete .opina{font-size:.92rem;color:var(--paper-ink);border-left:3px solid var(--gold);padding-left:10px}
 /* página da notícia */
 .nota{max-width:760px;margin:0 auto;padding-top:20px;padding-bottom:48px;display:grid;gap:16px}
 .nota .bloco{padding:20px}
@@ -128,6 +131,20 @@ footer .in{display:flex;flex-wrap:wrap;gap:10px 20px;padding-top:18px;padding-bo
 .nota .jogos{display:flex;flex-wrap:wrap;gap:8px}.nota .jogos a{display:inline-block;padding:6px 10px;border-radius:6px;background:#e6e9ee;text-decoration:none;font-weight:700;font-size:.9rem}
 .nota .crivo{font-size:.85rem;color:var(--paper-muted)}.nota .crivo b{color:var(--paper-ink)}
 .volta{color:var(--gold);font-weight:700;text-decoration:none}
+.nota .abre{display:grid;gap:14px}
+.nota .importa{border-left:4px solid var(--gold)}.nota .importa p{font-size:1.02rem;color:var(--paper-ink)}.nota .assina{font-size:.78rem!important;color:var(--paper-muted)!important;margin-top:8px}
+.nums{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px}
+.nums li{background:#fff;border:1px solid var(--paper-line);border-radius:8px;padding:12px;display:grid;gap:2px}
+.nums b{font-size:1.35rem;line-height:1.15;font-weight:800;font-variant-numeric:tabular-nums}.nums span{font-size:.86rem;color:#3a414c}.nums small{font-size:.72rem;color:var(--paper-muted)}
+.nota .brasil-n{border-left:4px solid var(--brasil)}.nota .brasil-n p{color:#3a414c}
+.crit{display:grid;gap:12px}.crit p{color:#3a414c}
+.crit .cit q{display:block;font-size:1.15rem;font-weight:700;line-height:1.3;color:var(--paper-ink);quotes:"“" "”"}
+.crit cite{display:block;margin-top:4px;font-style:normal;font-size:.82rem;color:var(--paper-muted)}
+.nota .quem{display:grid;gap:16px}@media (min-width:640px){.nota .quem{grid-template-columns:1fr 1fr}}
+.quem li{position:relative;padding-left:16px;margin:6px 0;color:#3a414c}.quem li::before{content:"";position:absolute;left:0;top:.6em;width:7px;height:7px;border-radius:50%;background:#1b7a45}
+.quem .no li::before{background:#b3263e}
+.nota .veredito{background:var(--panel2);color:var(--ink);border:1px solid var(--gold)}.nota .veredito h2{color:var(--gold)}
+.nota .veredito p{font-size:1.08rem;font-weight:600;margin-top:10px;max-width:62ch}
 @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
 </style>
 </head>
@@ -141,13 +158,20 @@ footer .in{display:flex;flex-wrap:wrap;gap:10px 20px;padding-top:18px;padding-bo
 <main id="conteudo" class="in"><div class="nota">
  <a class="volta" href="../../">← Todas as notícias</a>
  <article class="bloco">
-  <span class="cat premios">Prêmios</span>
+  <span class="cat premios">Prêmios</span> <span class="selo compra">Vale a compra</span>
   <h1>Santuário, do criador de Ark Nova, vence o Deutscher Spiele Preis 2026</h1>
-  <p class="meta">28 de outubro de 2026</p>
+  <p class="meta">28 de outubro de 2026 · Redação Elite Boardgamers</p>
  </article>
- <div class="bloco" style="display:grid;gap:14px"><figure><img src="../../noticias/capas/78727-g.jpg" alt="Santuário, do criador de Ark Nova, vence o Deutscher Spiele Preis 2026"><figcaption class="credito">Capa da edição nacional, via Ludopedia</figcaption></figure><p class="lide">Santuário (Sanctuary), de Mathias Wigge, venceu o Deutscher Spiele Preis 2026, o maior prêmio alemão decidido pelo voto do público. É a segunda vitória de Wigge em dois jogos: a primeira foi com Ark Nova, em 2022. Santuário já tem edição em português desde 2025, segundo a Ludopedia.</p><div class="corpo"><p>Boss Fighters QR, de Michael Palm e Lukas Zach, publicado pela Pegasus Spiele, ficou em segundo lugar. Galactic Cruise, que venceu o Golden Geek de 2025, completou o pódio.</p><p>Santuário leva o tema de zoológico e conservação de Ark Nova para um jogo mais curto e mais acessível, trocando boa parte das cartas por colocação de peças. Na Alemanha, onde saiu como Artengarten, o preço sugerido é de €49,90, contra €64,90 de Ark Nova. Segundo a BoardGameWire, o diretor da Feuerland, Stefan Rink, disse à emissora WDR que o jogo já vendeu 20 mil cópias no país.</p><p>Com a vitória, a Feuerland chega a quatro títulos no prêmio desde 2012: Terra Mystica (2013), Wingspan (2019), Ark Nova (2022) e agora Santuário. Antes do Deutscher Spiele Preis, Santuário tinha sido recomendado no Kennerspiel des Jahres 2026 e indicado ao Golden Geek de jogo médio do ano.</p></div></div>
+ <div class="bloco abre"><figure><img src="../../noticias/capas/78727-g.jpg" alt="Santuário, do criador de Ark Nova, vence o Deutscher Spiele Preis 2026"><figcaption class="credito">Capa da edição nacional, via Ludopedia</figcaption></figure><p class="lide">Santuário (Sanctuary), de Mathias Wigge, venceu o Deutscher Spiele Preis 2026, o maior prêmio alemão decidido pelo voto do público. É a segunda vitória de Wigge em dois jogos: a primeira foi com Ark Nova, em 2022. Santuário já tem edição em português desde 2025, segundo a Ludopedia.</p></div>
+ <section class="bloco importa"><h2>Por que importa</h2><p>O Deutscher Spiele Preis é votado por jogadores, não por um júri. Ver Santuário vencer mostra que a versão mais curta de Ark Nova convenceu quem joga. E ele já está nas lojas brasileiras, pela Grok, custando bem menos que Ark Nova: é o atalho mais bem avaliado para o mesmo tema.</p><p class="assina">Análise Elite Boardgamers</p></section>
+ <section class="bloco"><h2>Em números</h2><ul class="nums"><li><b>20 mil</b><span>cópias vendidas na Alemanha</span><small>Feuerland à WDR, via BoardGameWire</small></li><li><b>R$ 288 a R$ 399</b><span>preço no Brasil</span><small>lojas consultadas em 28/10/2026</small></li><li><b>20 min</b><span>por jogador, de 1 a 5 pessoas</span><small>GamesRadar+</small></li><li><b>4</b><span>vitórias da Feuerland no prêmio desde 2012</span><small>BoardGameWire</small></li></ul></section>
+ <section class="bloco"><h2>Contexto</h2><div class="corpo"><p>Santuário leva o tema de zoológico e conservação de Ark Nova para um jogo mais curto, trocando boa parte das cartas por colocação de peças. Boss Fighters QR ficou em segundo lugar e Galactic Cruise, em terceiro.</p><p>Com a vitória, a Feuerland chega a quatro títulos no prêmio desde 2012: Terra Mystica (2013), Wingspan (2019), Ark Nova (2022) e Santuário. Antes, o jogo tinha sido recomendado no Kennerspiel des Jahres 2026 e indicado ao Golden Geek de jogo médio do ano.</p></div></section>
+ <section class="bloco brasil-n"><h2>No Brasil</h2><p>Santuário saiu pela Grok Games. Em 28/10/2026, a loja da Grok vendia o jogo por R$ 399,00 (R$ 379,05 no Pix), e havia ofertas a partir de R$ 288,30 na Amazon. Ark Nova, da mesma editora, estava entre R$ 450 e R$ 500 na consulta da nossa resenha, em 27/10/2026.</p></section>
+ <section class="bloco"><h2>O que diz a crítica</h2><ul class="crit"><li class="cit"><q>Se você ama Wingspan ou Planet Zoo, preste atenção neste jogo obrigatório.</q><cite>GamesRadar+ (tradução livre)</cite></li><li><p>Para a Zatu, a interação entre jogadores é ainda menor que em Ark Nova, e a parte de prêmios de conservação ficou bem mais simples.</p></li><li><p>Para o board-game.co.uk, não é uma versão simplificada de Ark Nova, e sim um jogo diferente construído sobre ideias parecidas.</p></li></ul></section>
+ <section class="bloco quem"><div><h2>Interessa a você se…</h2><ul class="ok"><li>Gosta do tema de Ark Nova, mas acha a partida longa ou o jogo caro demais</li><li>Prefere montar o tabuleiro com peças a encadear combinações de cartas</li></ul></div><div><h2>Pense duas vezes se…</h2><ul class="no"><li>Já tem Ark Nova e gosta justamente da disputa entre jogadores: aqui ela é ainda menor</li></ul></div></section>
+ <section class="bloco veredito compra"><h2>Nossa opinião</h2><span class="selo compra">Vale a compra</span><p>Para quem ainda não tem Ark Nova, Santuário é hoje a entrada mais rápida e barata no tema, com aval do público alemão e da crítica. Quem já joga Ark Nova e quer mais interação não vai encontrar isso aqui.</p></section>
  <section class="bloco"><h2>Jogos citados</h2><div class="jogos"><a href="../../ark-nova/">Resenha: Ark Nova</a><a href="../../wingspan/">Resenha: Wingspan</a></div></section>
- <section class="bloco fontes"><h2>Fontes</h2><ul><li><a href="https://boardgamewire.com/index.php/2026/10/27/two-games-two-deutscher-spiele-preis-wins-ark-nova-designer-mathias-wigge-takes-second-title-with-sanctuary/" target="_blank" rel="noopener">BoardGameWire</a> <span>consulta em 27/10/2026</span></li><li><a href="https://www.deutscherspielepreis.de/" target="_blank" rel="noopener">Arquivo do Deutscher Spiele Preis (projeto de fãs)</a> <span>consulta em 28/10/2026</span></li><li><a href="https://ludopedia.com.br/jogo/sanctuary-i" target="_blank" rel="noopener">Ludopedia: Santuário</a> <span>consulta em 28/10/2026</span></li></ul></section>
+ <section class="bloco fontes"><h2>Fontes</h2><ul><li><a href="https://boardgamewire.com/index.php/2026/10/27/two-games-two-deutscher-spiele-preis-wins-ark-nova-designer-mathias-wigge-takes-second-title-with-sanctuary/" target="_blank" rel="noopener">BoardGameWire</a> <span>consulta em 27/10/2026</span></li><li><a href="https://www.deutscherspielepreis.de/" target="_blank" rel="noopener">Arquivo do Deutscher Spiele Preis (projeto de fãs)</a> <span>consulta em 28/10/2026</span></li><li><a href="https://www.gamesradar.com/games/board-games/sanctuary-review/" target="_blank" rel="noopener">GamesRadar+: resenha de Sanctuary</a> <span>consulta em 28/10/2026</span></li><li><a href="https://zatu.com/en-us/blogs/reviews/sanctuary-review" target="_blank" rel="noopener">Zatu: resenha de Sanctuary</a> <span>consulta em 28/10/2026</span></li><li><a href="https://www.board-game.co.uk/sanctuary-preview/" target="_blank" rel="noopener">board-game.co.uk: prévia de Sanctuary</a> <span>consulta em 28/10/2026</span></li><li><a href="https://loja.grokgames.com.br/jogos" target="_blank" rel="noopener">Loja Grok Games</a> <span>consulta em 28/10/2026</span></li><li><a href="https://ludopedia.com.br/jogo/sanctuary-i" target="_blank" rel="noopener">Ludopedia: Santuário</a> <span>consulta em 28/10/2026</span></li></ul></section>
  <section class="bloco crivo"><h2>Por que esta notícia entrou</h2><p><b>9 pontos no crivo editorial</b> (mínimo 5): Prêmio grande (4); Jogo com resenha nossa: Ark Nova e Wingspan (3); Confirmada por duas fontes (2).</p></section>
 </div></main>
 <footer><div class="in">

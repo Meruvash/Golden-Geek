@@ -6,9 +6,8 @@
  "titulo": "Santuário, do criador de Ark Nova, vence o Deutscher Spiele Preis 2026",
  "lide": "Santuário (Sanctuary), de Mathias Wigge, venceu o Deutscher Spiele Preis 2026, o maior prêmio alemão decidido pelo voto do público. É a segunda vitória de Wigge em dois jogos: a primeira foi com Ark Nova, em 2022. Santuário já tem edição em português desde 2025, segundo a Ludopedia.",
  "corpo": [
-  "Boss Fighters QR, de Michael Palm e Lukas Zach, publicado pela Pegasus Spiele, ficou em segundo lugar. Galactic Cruise, que venceu o Golden Geek de 2025, completou o pódio.",
-  "Santuário leva o tema de zoológico e conservação de Ark Nova para um jogo mais curto e mais acessível, trocando boa parte das cartas por colocação de peças. Na Alemanha, onde saiu como Artengarten, o preço sugerido é de €49,90, contra €64,90 de Ark Nova. Segundo a BoardGameWire, o diretor da Feuerland, Stefan Rink, disse à emissora WDR que o jogo já vendeu 20 mil cópias no país.",
-  "Com a vitória, a Feuerland chega a quatro títulos no prêmio desde 2012: Terra Mystica (2013), Wingspan (2019), Ark Nova (2022) e agora Santuário. Antes do Deutscher Spiele Preis, Santuário tinha sido recomendado no Kennerspiel des Jahres 2026 e indicado ao Golden Geek de jogo médio do ano."
+  "Santuário leva o tema de zoológico e conservação de Ark Nova para um jogo mais curto, trocando boa parte das cartas por colocação de peças. Boss Fighters QR ficou em segundo lugar e Galactic Cruise, em terceiro.",
+  "Com a vitória, a Feuerland chega a quatro títulos no prêmio desde 2012: Terra Mystica (2013), Wingspan (2019), Ark Nova (2022) e Santuário. Antes, o jogo tinha sido recomendado no Kennerspiel des Jahres 2026 e indicado ao Golden Geek de jogo médio do ano."
  ],
  "fontes": [
   {
@@ -19,6 +18,26 @@
   {
    "nome": "Arquivo do Deutscher Spiele Preis (projeto de fãs)",
    "url": "https://www.deutscherspielepreis.de/",
+   "data": "28/10/2026"
+  },
+  {
+   "nome": "GamesRadar+: resenha de Sanctuary",
+   "url": "https://www.gamesradar.com/games/board-games/sanctuary-review/",
+   "data": "28/10/2026"
+  },
+  {
+   "nome": "Zatu: resenha de Sanctuary",
+   "url": "https://zatu.com/en-us/blogs/reviews/sanctuary-review",
+   "data": "28/10/2026"
+  },
+  {
+   "nome": "board-game.co.uk: prévia de Sanctuary",
+   "url": "https://www.board-game.co.uk/sanctuary-preview/",
+   "data": "28/10/2026"
+  },
+  {
+   "nome": "Loja Grok Games",
+   "url": "https://loja.grokgames.com.br/jogos",
    "data": "28/10/2026"
   },
   {
@@ -48,5 +67,55 @@
    "Jogo com resenha nossa: Ark Nova e Wingspan (3)",
    "Confirmada por duas fontes (2)"
   ]
- }
+ },
+ "selo": "Vale a compra",
+ "por_que_importa": "O Deutscher Spiele Preis é votado por jogadores, não por um júri. Ver Santuário vencer mostra que a versão mais curta de Ark Nova convenceu quem joga. E ele já está nas lojas brasileiras, pela Grok, custando bem menos que Ark Nova: é o atalho mais bem avaliado para o mesmo tema.",
+ "numeros": [
+  [
+   "20 mil",
+   "cópias vendidas na Alemanha",
+   "Feuerland à WDR, via BoardGameWire"
+  ],
+  [
+   "R$ 288 a R$ 399",
+   "preço no Brasil",
+   "lojas consultadas em 28/10/2026"
+  ],
+  [
+   "20 min",
+   "por jogador, de 1 a 5 pessoas",
+   "GamesRadar+"
+  ],
+  [
+   "4",
+   "vitórias da Feuerland no prêmio desde 2012",
+   "BoardGameWire"
+  ]
+ ],
+ "no_brasil": "Santuário saiu pela Grok Games. Em 28/10/2026, a loja da Grok vendia o jogo por R$ 399,00 (R$ 379,05 no Pix), e havia ofertas a partir de R$ 288,30 na Amazon. Ark Nova, da mesma editora, estava entre R$ 450 e R$ 500 na consulta da nossa resenha, em 27/10/2026.",
+ "critica": [
+  {
+   "fonte": "GamesRadar+",
+   "texto": "Se você ama Wingspan ou Planet Zoo, preste atenção neste jogo obrigatório.",
+   "citacao": true
+  },
+  {
+   "fonte": "Zatu",
+   "texto": "Para a Zatu, a interação entre jogadores é ainda menor que em Ark Nova, e a parte de prêmios de conservação ficou bem mais simples.",
+   "citacao": false
+  },
+  {
+   "fonte": "board-game.co.uk",
+   "texto": "Para o board-game.co.uk, não é uma versão simplificada de Ark Nova, e sim um jogo diferente construído sobre ideias parecidas.",
+   "citacao": false
+  }
+ ],
+ "para_quem": [
+  "Gosta do tema de Ark Nova, mas acha a partida longa ou o jogo caro demais",
+  "Prefere montar o tabuleiro com peças a encadear combinações de cartas"
+ ],
+ "nao_e_para": [
+  "Já tem Ark Nova e gosta justamente da disputa entre jogadores: aqui ela é ainda menor"
+ ],
+ "veredito": "Para quem ainda não tem Ark Nova, Santuário é hoje a entrada mais rápida e barata no tema, com aval do público alemão e da crítica. Quem já joga Ark Nova e quer mais interação não vai encontrar isso aqui."
 }

@@ -3,11 +3,10 @@
  "data": "2026-10-28",
  "categoria": "Chegando ao Brasil",
  "titulo": "Duna: Imperium – Linhagens, Vantage e Harmonies: Pulsar chegam às lojas",
- "lide": "A Galápagos lançou em outubro três títulos ligados a jogos premiados, segundo o calendário da Ludopedia: Linhagens, expansão de Duna: Imperium; Vantage, de Jamey Stegmaier; e Pulsar, expansão de Harmonies, vencedor do Golden Geek.",
+ "lide": "A Galápagos lançou em outubro três títulos ligados a jogos premiados, segundo o calendário da Ludopedia: Linhagens, expansão de Duna: Imperium; Vantage, de Jamey Stegmaier; e Pulsar, expansão de Harmonies, vencedor do Golden Geek. Os três já estão nas lojas brasileiras.",
  "corpo": [
-  "Linhagens é uma expansão de Duna: Imperium, de Paul Dennen e outros três autores, para 1 a 4 pessoas.",
-  "Vantage é um jogo de exploração para 1 a 6 pessoas, de Jamey Stegmaier, o mesmo de Scythe. Lá fora, recebeu cinco indicações no Golden Geek de 2025.",
-  "Pulsar, de Maëva da Silva, é uma expansão de Harmonies, o jogo de Johan Benvenuto que venceu o Golden Geek."
+  "Linhagens é uma expansão de Duna: Imperium com novos líderes, intrigas e cartas. Funciona com o jogo original e com Uprising, mas a Gideon's Gaming considera que ela rende mais usada só com Uprising.",
+  "Vantage, de Jamey Stegmaier (Scythe), é um jogo de exploração para 1 a 6 pessoas, sem objetivo fixo, em que a história surge das escolhas. Pulsar é uma expansão pequena de Harmonies, vencedor do Golden Geek: acrescenta cartas de animal com padrões de três cores."
  ],
  "fontes": [
   {
@@ -16,13 +15,48 @@
    "data": "28/10/2026"
   },
   {
-   "nome": "BoardGameWire: indicações ao Golden Geek",
-   "url": "https://boardgamewire.com/?p=6478",
+   "nome": "GamesRadar+: resenha de Linhagens",
+   "url": "https://www.gamesradar.com/games/board-games/dune-imperium-bloodlines-review/",
    "data": "28/10/2026"
   },
   {
-   "nome": "Opinionated Gamers: vencedores do Golden Geek",
-   "url": "https://opinionatedgamers.com/2025/05/11/seti-harmonies-and-castle-combo-win-golden-geek-awards/",
+   "nome": "Gideon's Gaming: resenha de Linhagens",
+   "url": "https://gideonsgaming.com/dune-imperium-bloodlines-review/",
+   "data": "28/10/2026"
+  },
+  {
+   "nome": "Roll to Review: resenha de Vantage",
+   "url": "https://rolltoreview.com/vantage-board-game-review/",
+   "data": "28/10/2026"
+  },
+  {
+   "nome": "Tabletop Gamesblog: resenha de Vantage",
+   "url": "https://tabletopgamesblog.com/2026/07/18/vantage-saturday-review/",
+   "data": "28/10/2026"
+  },
+  {
+   "nome": "Board Game Quest: resenha de Vantage",
+   "url": "https://www.boardgamequest.com/vantage-review/",
+   "data": "28/10/2026"
+  },
+  {
+   "nome": "FroGames: Harmonies Pulse",
+   "url": "https://frogames.it/en/products/harmonies-pulse",
+   "data": "28/10/2026"
+  },
+  {
+   "nome": "Brechó Lúdico: Galápagos",
+   "url": "https://brecholudico.com.br/product-category/galapagos/",
+   "data": "28/10/2026"
+  },
+  {
+   "nome": "Asmodee Brasil: Duna: Imperium",
+   "url": "https://www.asmodee.com.br/duna-imperium/produto/DUN001",
+   "data": "28/10/2026"
+  },
+  {
+   "nome": "BoardGameWire: indicações ao Golden Geek",
+   "url": "https://boardgamewire.com/?p=6478",
    "data": "28/10/2026"
   }
  ],
@@ -42,5 +76,56 @@
    "Lançamento no Brasil (4)",
    "Jogo com resenha nossa: Dune: Imperium (3)"
   ]
- }
+ },
+ "selo": "Com ressalvas",
+ "por_que_importa": "Três títulos de peso chegando juntos mostram a aposta da Galápagos em jogos já testados lá fora. Mas cada um atende um público diferente, e Vantage é um dos jogos que mais dividem a crítica no ano. Vale saber o que cada um entrega antes de comprar.",
+ "numeros": [
+  [
+   "R$ 229,99",
+   "Linhagens, no Brechó Lúdico",
+   "anúncio consultado em 28/10/2026"
+  ],
+  [
+   "R$ 499,99",
+   "Duna: Imperium base, na loja oficial",
+   "Asmodee Brasil, 28/10/2026"
+  ],
+  [
+   "5",
+   "indicações de Vantage ao Golden Geek",
+   "BoardGameWire"
+  ],
+  [
+   "10",
+   "cartas de animal novas em Pulsar",
+   "FroGames"
+  ]
+ ],
+ "no_brasil": "Os três saíram pela Galápagos (Asmodee) em outubro, segundo a Ludopedia. Em 28/10/2026, Linhagens aparecia por R$ 229,99 no Brechó Lúdico; não encontramos preço de Vantage e de Pulsar até essa data. O Duna: Imperium base custa R$ 499,99 na loja oficial.",
+ "critica": [
+  {
+   "fonte": "GamesRadar+",
+   "texto": "Faça dela parte padrão das suas partidas.",
+   "citacao": true
+  },
+  {
+   "fonte": "Roll to Review",
+   "texto": "O melhor jogo de aventura narrativa que já joguei.",
+   "citacao": true
+  },
+  {
+   "fonte": "Tabletop Gamesblog",
+   "texto": "Para o Tabletop Gamesblog, Vantage não funcionou porque parece manter os jogadores separados de propósito.",
+   "citacao": false
+  }
+ ],
+ "para_quem": [
+  "Joga Duna: Imperium com frequência, de preferência com Uprising",
+  "Gosta de explorar e de histórias que surgem da partida (Vantage)",
+  "Joga Harmonies toda semana e quer mais desafio (Pulsar)"
+ ],
+ "nao_e_para": [
+  "Gosta de metas claras e de otimizar jogadas: a Board Game Quest avisa que Vantage não é para esse perfil"
+ ],
+ "veredito": "Linhagens é a compra mais segura dos três para quem já joga Duna. Vantage é aposta: se puder, experimente antes de comprar. Pulsar é pequena e só faz sentido para quem joga Harmonies com frequência."
 }

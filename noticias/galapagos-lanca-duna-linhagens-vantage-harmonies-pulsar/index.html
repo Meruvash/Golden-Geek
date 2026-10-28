@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Duna: Imperium – Linhagens, Vantage e Harmonies: Pulsar chegam às lojas | Elite Boardgamers</title>
-<meta name="description" content="A Galápagos lançou em outubro três títulos ligados a jogos premiados, segundo o calendário da Ludopedia: Linhagens, expansão de Duna: Imperium; Vantage, de Jamey Stegmaier; e Pulsar, expansão de Harmonies, vencedor do Golden Geek.">
+<meta name="description" content="A Galápagos lançou em outubro três títulos ligados a jogos premiados, segundo o calendário da Ludopedia: Linhagens, expansão de Duna: Imperium; Vantage, de Jamey Stegmaier; e Pulsar, expansão de Harmonies, vencedor do Golden Geek. Os três já estão nas lojas brasileiras.">
 <meta property="og:title" content="Duna: Imperium – Linhagens, Vantage e Harmonies: Pulsar chegam às lojas | Elite Boardgamers">
-<meta property="og:description" content="A Galápagos lançou em outubro três títulos ligados a jogos premiados, segundo o calendário da Ludopedia: Linhagens, expansão de Duna: Imperium; Vantage, de Jamey Stegmaier; e Pulsar, expansão de Harmonies, vencedor do Golden Geek.">
+<meta property="og:description" content="A Galápagos lançou em outubro três títulos ligados a jogos premiados, segundo o calendário da Ludopedia: Linhagens, expansão de Duna: Imperium; Vantage, de Jamey Stegmaier; e Pulsar, expansão de Harmonies, vencedor do Golden Geek. Os três já estão nas lojas brasileiras.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://eliteboardgamers.com.br/noticias/galapagos-lanca-duna-linhagens-vantage-harmonies-pulsar/">
 <meta property="og:image" content="https://eliteboardgamers.com.br/noticias/capas/69009.jpg">
@@ -115,6 +115,9 @@ h1,h2,h3,p,ul,ol,figure{margin:0}ul,ol{padding:0;list-style:none}img{display:blo
 .btn.zap{background:var(--zap);color:#fff}.btn.ig{border:1px solid #3a3f48}.btn.ig:hover{border-color:var(--gold);color:var(--gold)}
 footer{border-top:1px solid var(--line);font-size:.88rem}
 footer .in{display:flex;flex-wrap:wrap;gap:10px 20px;padding-top:18px;padding-bottom:18px}
+.selo{display:inline-block;font-size:.74rem;font-weight:800;border-radius:999px;padding:2px 10px;color:#fff;white-space:nowrap}
+.selo.compra{background:#157a43}.selo.acompanhar{background:#1f5fae}.selo.fas{background:#6b4ea3}.selo.ressalvas{background:#8a5200}.selo.info{background:#5a6270}
+.manchete .opina{font-size:.92rem;color:var(--paper-ink);border-left:3px solid var(--gold);padding-left:10px}
 /* página da notícia */
 .nota{max-width:760px;margin:0 auto;padding-top:20px;padding-bottom:48px;display:grid;gap:16px}
 .nota .bloco{padding:20px}
@@ -128,6 +131,20 @@ footer .in{display:flex;flex-wrap:wrap;gap:10px 20px;padding-top:18px;padding-bo
 .nota .jogos{display:flex;flex-wrap:wrap;gap:8px}.nota .jogos a{display:inline-block;padding:6px 10px;border-radius:6px;background:#e6e9ee;text-decoration:none;font-weight:700;font-size:.9rem}
 .nota .crivo{font-size:.85rem;color:var(--paper-muted)}.nota .crivo b{color:var(--paper-ink)}
 .volta{color:var(--gold);font-weight:700;text-decoration:none}
+.nota .abre{display:grid;gap:14px}
+.nota .importa{border-left:4px solid var(--gold)}.nota .importa p{font-size:1.02rem;color:var(--paper-ink)}.nota .assina{font-size:.78rem!important;color:var(--paper-muted)!important;margin-top:8px}
+.nums{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px}
+.nums li{background:#fff;border:1px solid var(--paper-line);border-radius:8px;padding:12px;display:grid;gap:2px}
+.nums b{font-size:1.35rem;line-height:1.15;font-weight:800;font-variant-numeric:tabular-nums}.nums span{font-size:.86rem;color:#3a414c}.nums small{font-size:.72rem;color:var(--paper-muted)}
+.nota .brasil-n{border-left:4px solid var(--brasil)}.nota .brasil-n p{color:#3a414c}
+.crit{display:grid;gap:12px}.crit p{color:#3a414c}
+.crit .cit q{display:block;font-size:1.15rem;font-weight:700;line-height:1.3;color:var(--paper-ink);quotes:"“" "”"}
+.crit cite{display:block;margin-top:4px;font-style:normal;font-size:.82rem;color:var(--paper-muted)}
+.nota .quem{display:grid;gap:16px}@media (min-width:640px){.nota .quem{grid-template-columns:1fr 1fr}}
+.quem li{position:relative;padding-left:16px;margin:6px 0;color:#3a414c}.quem li::before{content:"";position:absolute;left:0;top:.6em;width:7px;height:7px;border-radius:50%;background:#1b7a45}
+.quem .no li::before{background:#b3263e}
+.nota .veredito{background:var(--panel2);color:var(--ink);border:1px solid var(--gold)}.nota .veredito h2{color:var(--gold)}
+.nota .veredito p{font-size:1.08rem;font-weight:600;margin-top:10px;max-width:62ch}
 @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
 </style>
 </head>
@@ -141,13 +158,20 @@ footer .in{display:flex;flex-wrap:wrap;gap:10px 20px;padding-top:18px;padding-bo
 <main id="conteudo" class="in"><div class="nota">
  <a class="volta" href="../../">← Todas as notícias</a>
  <article class="bloco">
-  <span class="cat brasil">Chegando ao Brasil</span>
+  <span class="cat brasil">Chegando ao Brasil</span> <span class="selo ressalvas">Com ressalvas</span>
   <h1>Duna: Imperium – Linhagens, Vantage e Harmonies: Pulsar chegam às lojas</h1>
-  <p class="meta">28 de outubro de 2026</p>
+  <p class="meta">28 de outubro de 2026 · Redação Elite Boardgamers</p>
  </article>
- <div class="bloco" style="display:grid;gap:14px"><figure><img src="../../noticias/capas/69009.jpg" alt="Duna: Imperium – Linhagens, Vantage e Harmonies: Pulsar chegam às lojas"><figcaption class="credito">Capa via Ludopedia</figcaption></figure><p class="lide">A Galápagos lançou em outubro três títulos ligados a jogos premiados, segundo o calendário da Ludopedia: Linhagens, expansão de Duna: Imperium; Vantage, de Jamey Stegmaier; e Pulsar, expansão de Harmonies, vencedor do Golden Geek.</p><div class="corpo"><p>Linhagens é uma expansão de Duna: Imperium, de Paul Dennen e outros três autores, para 1 a 4 pessoas.</p><p>Vantage é um jogo de exploração para 1 a 6 pessoas, de Jamey Stegmaier, o mesmo de Scythe. Lá fora, recebeu cinco indicações no Golden Geek de 2025.</p><p>Pulsar, de Maëva da Silva, é uma expansão de Harmonies, o jogo de Johan Benvenuto que venceu o Golden Geek.</p></div></div>
+ <div class="bloco abre"><figure><img src="../../noticias/capas/69009.jpg" alt="Duna: Imperium – Linhagens, Vantage e Harmonies: Pulsar chegam às lojas"><figcaption class="credito">Capa via Ludopedia</figcaption></figure><p class="lide">A Galápagos lançou em outubro três títulos ligados a jogos premiados, segundo o calendário da Ludopedia: Linhagens, expansão de Duna: Imperium; Vantage, de Jamey Stegmaier; e Pulsar, expansão de Harmonies, vencedor do Golden Geek. Os três já estão nas lojas brasileiras.</p></div>
+ <section class="bloco importa"><h2>Por que importa</h2><p>Três títulos de peso chegando juntos mostram a aposta da Galápagos em jogos já testados lá fora. Mas cada um atende um público diferente, e Vantage é um dos jogos que mais dividem a crítica no ano. Vale saber o que cada um entrega antes de comprar.</p><p class="assina">Análise Elite Boardgamers</p></section>
+ <section class="bloco"><h2>Em números</h2><ul class="nums"><li><b>R$ 229,99</b><span>Linhagens, no Brechó Lúdico</span><small>anúncio consultado em 28/10/2026</small></li><li><b>R$ 499,99</b><span>Duna: Imperium base, na loja oficial</span><small>Asmodee Brasil, 28/10/2026</small></li><li><b>5</b><span>indicações de Vantage ao Golden Geek</span><small>BoardGameWire</small></li><li><b>10</b><span>cartas de animal novas em Pulsar</span><small>FroGames</small></li></ul></section>
+ <section class="bloco"><h2>Contexto</h2><div class="corpo"><p>Linhagens é uma expansão de Duna: Imperium com novos líderes, intrigas e cartas. Funciona com o jogo original e com Uprising, mas a Gideon&#x27;s Gaming considera que ela rende mais usada só com Uprising.</p><p>Vantage, de Jamey Stegmaier (Scythe), é um jogo de exploração para 1 a 6 pessoas, sem objetivo fixo, em que a história surge das escolhas. Pulsar é uma expansão pequena de Harmonies, vencedor do Golden Geek: acrescenta cartas de animal com padrões de três cores.</p></div></section>
+ <section class="bloco brasil-n"><h2>No Brasil</h2><p>Os três saíram pela Galápagos (Asmodee) em outubro, segundo a Ludopedia. Em 28/10/2026, Linhagens aparecia por R$ 229,99 no Brechó Lúdico; não encontramos preço de Vantage e de Pulsar até essa data. O Duna: Imperium base custa R$ 499,99 na loja oficial.</p></section>
+ <section class="bloco"><h2>O que diz a crítica</h2><ul class="crit"><li class="cit"><q>Faça dela parte padrão das suas partidas.</q><cite>GamesRadar+ (tradução livre)</cite></li><li class="cit"><q>O melhor jogo de aventura narrativa que já joguei.</q><cite>Roll to Review (tradução livre)</cite></li><li><p>Para o Tabletop Gamesblog, Vantage não funcionou porque parece manter os jogadores separados de propósito.</p></li></ul></section>
+ <section class="bloco quem"><div><h2>Interessa a você se…</h2><ul class="ok"><li>Joga Duna: Imperium com frequência, de preferência com Uprising</li><li>Gosta de explorar e de histórias que surgem da partida (Vantage)</li><li>Joga Harmonies toda semana e quer mais desafio (Pulsar)</li></ul></div><div><h2>Pense duas vezes se…</h2><ul class="no"><li>Gosta de metas claras e de otimizar jogadas: a Board Game Quest avisa que Vantage não é para esse perfil</li></ul></div></section>
+ <section class="bloco veredito ressalvas"><h2>Nossa opinião</h2><span class="selo ressalvas">Com ressalvas</span><p>Linhagens é a compra mais segura dos três para quem já joga Duna. Vantage é aposta: se puder, experimente antes de comprar. Pulsar é pequena e só faz sentido para quem joga Harmonies com frequência.</p></section>
  <section class="bloco"><h2>Jogos citados</h2><div class="jogos"><a href="../../dune-imperium/">Resenha: Dune: Imperium</a></div></section>
- <section class="bloco fontes"><h2>Fontes</h2><ul><li><a href="https://ludopedia.com.br/lancamentos?mes=2026-10" target="_blank" rel="noopener">Ludopedia: lançamentos de outubro de 2026</a> <span>consulta em 28/10/2026</span></li><li><a href="https://boardgamewire.com/?p=6478" target="_blank" rel="noopener">BoardGameWire: indicações ao Golden Geek</a> <span>consulta em 28/10/2026</span></li><li><a href="https://opinionatedgamers.com/2025/05/11/seti-harmonies-and-castle-combo-win-golden-geek-awards/" target="_blank" rel="noopener">Opinionated Gamers: vencedores do Golden Geek</a> <span>consulta em 28/10/2026</span></li></ul></section>
+ <section class="bloco fontes"><h2>Fontes</h2><ul><li><a href="https://ludopedia.com.br/lancamentos?mes=2026-10" target="_blank" rel="noopener">Ludopedia: lançamentos de outubro de 2026</a> <span>consulta em 28/10/2026</span></li><li><a href="https://www.gamesradar.com/games/board-games/dune-imperium-bloodlines-review/" target="_blank" rel="noopener">GamesRadar+: resenha de Linhagens</a> <span>consulta em 28/10/2026</span></li><li><a href="https://gideonsgaming.com/dune-imperium-bloodlines-review/" target="_blank" rel="noopener">Gideon&#x27;s Gaming: resenha de Linhagens</a> <span>consulta em 28/10/2026</span></li><li><a href="https://rolltoreview.com/vantage-board-game-review/" target="_blank" rel="noopener">Roll to Review: resenha de Vantage</a> <span>consulta em 28/10/2026</span></li><li><a href="https://tabletopgamesblog.com/2026/07/18/vantage-saturday-review/" target="_blank" rel="noopener">Tabletop Gamesblog: resenha de Vantage</a> <span>consulta em 28/10/2026</span></li><li><a href="https://www.boardgamequest.com/vantage-review/" target="_blank" rel="noopener">Board Game Quest: resenha de Vantage</a> <span>consulta em 28/10/2026</span></li><li><a href="https://frogames.it/en/products/harmonies-pulse" target="_blank" rel="noopener">FroGames: Harmonies Pulse</a> <span>consulta em 28/10/2026</span></li><li><a href="https://brecholudico.com.br/product-category/galapagos/" target="_blank" rel="noopener">Brechó Lúdico: Galápagos</a> <span>consulta em 28/10/2026</span></li><li><a href="https://www.asmodee.com.br/duna-imperium/produto/DUN001" target="_blank" rel="noopener">Asmodee Brasil: Duna: Imperium</a> <span>consulta em 28/10/2026</span></li><li><a href="https://boardgamewire.com/?p=6478" target="_blank" rel="noopener">BoardGameWire: indicações ao Golden Geek</a> <span>consulta em 28/10/2026</span></li></ul></section>
  <section class="bloco crivo"><h2>Por que esta notícia entrou</h2><p><b>7 pontos no crivo editorial</b> (mínimo 5): Lançamento no Brasil (4); Jogo com resenha nossa: Dune: Imperium (3).</p></section>
 </div></main>
 <footer><div class="in">
