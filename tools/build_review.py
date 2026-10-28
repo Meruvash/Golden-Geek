@@ -350,7 +350,7 @@ def layout_v2(c, premios_bloco, ficha_html, fontes, fotos=None, info_meio=""):
  </aside>
 </main>
 <div class="progresso" aria-hidden="true"><i></i></div>
-<a class="voltar-topo" href="#" aria-label="Voltar ao topo">{icone("topo")}</a>"""
+<a class="voltar-topo" href="#topo" aria-label="Voltar ao topo">{icone("topo")}</a>"""
     return abas, main
 
 
@@ -760,7 +760,7 @@ footer a{{color:var(--bar-ink)}}
 </head>
 <body>
 <a class="skip" href="#conteudo">Pular para o conteúdo</a>
-<header class="bar"><div class="in">
+<header class="bar" id="topo"><div class="in">
  <a class="marca" href="../"><img src="../marca/elite-boardgamers.webp" width="318" height="254" alt="Elite Boardgamers"></a>
  <a class="ig" href="{INSTAGRAM}" target="_blank" rel="noopener" aria-label="Instagram @eliteboardgamers">{icone("insta")}<span>@eliteboardgamers</span></a>
  <a class="zap-mini" href="{WHATSAPP}" target="_blank" rel="noopener">{icone("zap")}<span>Grupo do WhatsApp</span></a>
