@@ -674,7 +674,7 @@ footer{{background:var(--bar);color:var(--bar-ink);font-size:.88rem;border-top:1
 .passos h3{{font-size:1rem;font-weight:800;margin-top:8px}}.passos p{{font-size:.95rem}}
 details.mais{{margin-top:6px;border-top:1px solid #dde1e7;padding-top:10px}}
 details.mais summary{{cursor:pointer;font-weight:700;color:#1f5fae;list-style:none}}details.mais summary::-webkit-details-marker{{display:none}}
-details.mais summary::after{{content:" ▾"}}details.mais[open] summary::after{{content:" ▴"}}details.mais[open] .leitura{{margin-top:10px}}
+details.mais summary::after{{content:" ▾";content:" ▾" / ""}}details.mais[open] summary::after{{content:" ▴";content:" ▴" / ""}}details.mais[open] .leitura{{margin-top:10px}}
 .fontes details.mais{{border:0;margin:0;padding:0}}.fontes summary h2{{display:inline;margin:0}}
 .faixa{{background:#0b0d10;border:1px solid #262a32;border-left:4px solid var(--acc)}}.faixa .leitura p{{color:#c9cfd8}}
 .cit{{margin:0 0 16px;padding:0}}.cit p{{font-size:clamp(1.4rem,4.5vw,1.9rem);line-height:1.2;font-weight:800;color:#fff;letter-spacing:-.01em}}
@@ -684,7 +684,7 @@ details.mais summary::after{{content:" ▾"}}details.mais[open] summary::after{{
 .pcc.no{{border-left-color:#b3263e}}.pcc h3{{font-size:1rem;font-weight:700}}.pcc p{{font-size:.93rem;color:#3a414c;margin-top:2px}}
 .pcc summary{{cursor:pointer;list-style:none}}.pcc summary::-webkit-details-marker{{display:none}}
 .pcc summary{{display:grid;grid-template-columns:1fr auto;align-items:start;gap:10px}}
-.pcc .lm{{font-size:.82rem;font-weight:700;color:#1f5fae;white-space:nowrap;margin-top:2px}}.pcc .lm::after{{content:" ▾"}}.pcc details[open] .lm::after{{content:" ▴"}}.pcc details p{{margin-top:6px}}
+.pcc .lm{{font-size:.82rem;font-weight:700;color:#1f5fae;white-space:nowrap;margin-top:2px}}.pcc .lm::after{{content:" ▾";content:" ▾" / ""}}.pcc details[open] .lm::after{{content:" ▴";content:" ▴" / ""}}.pcc details p{{margin-top:6px}}
 .h3s{{font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;color:#5a6270;margin:18px 0 10px}}#para-quem h2+.h3s{{margin-top:0}}
 .barras li{{display:grid;grid-template-columns:minmax(120px,40%) 1fr 22px;gap:10px;align-items:center;margin:7px 0;font-size:.93rem}}
 .barras .bar{{background:#e3e6eb}}.barras b{{text-align:right;font-variant-numeric:tabular-nums}}
@@ -695,7 +695,7 @@ details.mais summary::after{{content:" ▾"}}details.mais[open] summary::after{{
 .quem2{{margin-top:4px}}
 .dica{{margin-top:18px;padding:12px 14px;border-radius:8px;background:#fff8e6;border-left:4px solid var(--gold)}}
 .dica summary{{display:flex;align-items:center;gap:10px;cursor:pointer;list-style:none}}.dica summary::-webkit-details-marker{{display:none}}
-.dica summary::after{{content:"▾";margin-left:auto;color:#8a5200}}.dica[open] summary::after{{content:"▴"}}
+.dica summary::after{{content:"▾";content:"▾" / "";margin-left:auto;color:#8a5200}}.dica[open] summary::after{{content:"▴";content:"▴" / ""}}
 .dica .ic{{color:#8a5200;flex:none}}.dica p{{font-size:.93rem;color:#3a414c;margin-top:8px}}
 details.dobra{{border:0;margin:0;padding:0}}details.dobra summary{{color:inherit}}details.dobra summary::after{{color:#5a6270}}.dobra summary h2{{display:inline;margin:0}}.dobra summary .resumo{{display:block;margin:4px 0 0}}.dobra[open] summary{{margin-bottom:12px}}
 .preco-card .faixa-preco{{font-size:1.6rem;font-weight:800;letter-spacing:-.01em;color:#14171c;font-variant-numeric:tabular-nums}}
