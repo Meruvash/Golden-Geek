@@ -3,6 +3,7 @@
 # Para voltar a publicar algum, basta tirá-lo desta lista.
 exclude:
   - seo
+  - docs
   - PADRAO_EDITORIAL.md
   - PAUTA_NOTICIAS.md
   - PLANO_FOTOS.md
