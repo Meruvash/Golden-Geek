@@ -6,7 +6,9 @@ conteudo/lancamentos/<AAAA-MM>.json (calendário da Ludopedia) e pauta.json (úl
 Saída: index.html e noticias/<slug>/index.html. As regras das notas estão em PLANO_NOTICIAS.md.
 """
 import json
+import re
 import sys
+import unicodedata
 from datetime import date, timedelta
 from pathlib import Path
 
@@ -17,6 +19,10 @@ from noticias.checar_noticia import problemas  # noqa: E402
 MESES = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"]
 SELO_CLASSE = {"Vale a compra": "compra", "Vale acompanhar": "acompanhar", "Para fãs do jogo base": "fas", "Com ressalvas": "ressalvas", "Informativo": "info"}
 CAT_CLASSE = {"Prêmios": "premios", "Chegando ao Brasil": "brasil", "Mercado": "mercado", "Financiamento": "financ", "Eventos": "mercado"}
+
+
+def norm(t):
+    return unicodedata.normalize("NFKD", t.lower()).encode("ascii", "ignore").decode()
 
 
 def data_longa(iso):
@@ -289,6 +295,13 @@ def build_home():
  <section class="bloco ultimas"><h2>Todas as notícias</h2><ul class="lista-n">{arquivo}</ul></section></div></main>
 {rodape("../")}"""
     (ROOT / "noticias" / "index.html").write_text(pagina("Notícias | Elite Boardgamers", "Todas as notícias de jogos de tabuleiro da Elite Boardgamers, com fonte, data e opinião.", f"{SITE}/noticias/", f"{SITE}/resenhas/capa.jpg", "../", corpo_arq), encoding="utf-8")
+    # cada item do Em alta tem de levar a uma nota que trate do jogo já no título
+    for j in home["em_alta"]:
+        slug = j["link"].strip("/").split("/")[-1]
+        alvo_n = next((n for n in ns if n["slug"] == slug), None)
+        base = norm(re.split(r" [–-] |:", j["nome"])[0])
+        if not alvo_n or base not in norm(alvo_n["titulo"]):
+            sys.exit(f"Em alta: '{j['nome']}' leva a {slug}, que não trata do jogo no título")
     alta = "".join(
         f'<li><a href="{j["link"]}"><img src="{capa_jogo(pre, j["id_ludopedia"])}" width="44" height="44" alt="" loading="lazy"><div><b>{e(j["nome"])}</b><span>{e(j["motivo"])}</span></div></a></li>'
         for j in home["em_alta"]
