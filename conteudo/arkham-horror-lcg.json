@@ -1,0 +1,510 @@
+{
+ "slug": "arkham-horror-lcg",
+ "jogo": "Arkham Horror: The Card Game",
+ "cor": "#4e8b6f",
+ "kicker": "Resenha · Campanha cooperativa de cartas",
+ "og_titulo": "Arkham Horror: The Card Game vale a pena? Resenha Elite Boardgamers",
+ "descricao": "Resenha de Arkham Horror: The Card Game, vencedor do Golden Geek de melhor jogo de cartas de 2016: como funciona, pontos fortes, pontos de atenção, custo das expansões e para quem é.",
+ "titulo_html": "Cultos, monstros e um saco de fichas que decide tudo: <span>Arkham Horror: Card Game</span>",
+ "lede": "Arkham Horror: The Card Game é um jogo cooperativo de cartas em que até quatro investigadores enfrentam cultos e criaturas dos mitos de Lovecraft na Nova Inglaterra dos anos 1920. Venceu o Golden Geek de melhor jogo de cartas de 2016 e foi finalista do As d'Or Expert 2018. Cada jogador monta o baralho do seu personagem e o leva por uma campanha de cenários ligados. É para quem quer história e tensão a cada sessão e aceita comprar expansões, um custo que pesa no veredito.",
+ "tags": [
+  "1–4 jogadores",
+  "60–120 min",
+  "Cooperativo",
+  "Campanha",
+  "Solo"
+ ],
+ "alt": "Infográfico Elite Boardgamers sobre o jogo Arkham Horror: The Card Game",
+ "premiacoes": [
+  {
+   "premio": "As d'Or",
+   "ano": 2018,
+   "categoria": "Jeu de l’Année Expert",
+   "colocacao": null,
+   "resultado": "finalista",
+   "fonte": "https://fr.wikipedia.org/wiki/As_d%27Or",
+   "rotulo": "Finalista"
+  },
+  {
+   "premio": "Golden Geek",
+   "ano": 2016,
+   "categoria": "Cartas",
+   "colocacao": 1,
+   "resultado": "vencedor",
+   "fonte": "https://eliteboardgamers.com.br/",
+   "rotulo": "Vencedor"
+  },
+  {
+   "premio": "Golden Geek",
+   "ano": 2016,
+   "categoria": "2 jogadores",
+   "colocacao": 2,
+   "resultado": "top 3",
+   "fonte": "https://eliteboardgamers.com.br/",
+   "rotulo": "2º lugar"
+  },
+  {
+   "premio": "Golden Geek",
+   "ano": 2016,
+   "categoria": "Cooperativo",
+   "colocacao": 3,
+   "resultado": "top 3",
+   "fonte": "https://eliteboardgamers.com.br/",
+   "rotulo": "3º lugar"
+  },
+  {
+   "premio": "Golden Geek",
+   "ano": 2016,
+   "categoria": "Solo",
+   "colocacao": 3,
+   "resultado": "top 3",
+   "fonte": "https://eliteboardgamers.com.br/",
+   "rotulo": "3º lugar"
+  }
+ ],
+ "ficha": [
+  [
+   "Ano",
+   "2016 (edição revisada em 2021)"
+  ],
+  [
+   "Designers",
+   "Nate French e MJ Newman"
+  ],
+  [
+   "Editora original",
+   "Fantasy Flight Games"
+  ],
+  [
+   "Editora no Brasil",
+   "Galápagos (edição revisada, em português)"
+  ],
+  [
+   "Jogadores",
+   "1 a 4 na edição revisada (a caixa original de 2016 era para 1 ou 2)"
+  ],
+  [
+   "Duração anunciada",
+   "60 a 120 minutos"
+  ],
+  [
+   "Duração relatada",
+   "cerca de 1 hora por jogador em cada cenário, segundo a SU&SD"
+  ],
+  [
+   "Idade",
+   "14+"
+  ],
+  [
+   "Nota BGG",
+   "8,6 / 10 (edição revisada, via Board Game Oracle)"
+  ],
+  [
+   "Peso BGG",
+   "3,8 / 5 (edição revisada, via Board Game Oracle)"
+  ],
+  [
+   "Nota Ludopedia",
+   "8,9 / 10, com 713 avaliações (edição revisada)"
+  ],
+  [
+   "Complexidade Ludopedia",
+   "3,6 / 5, médio-pesado (19 votos)"
+  ],
+  [
+   "Melhor com",
+   "não confirmado nas fontes consultadas (a SU&SD prefere 2 jogadores)"
+  ],
+  [
+   "Modo solo",
+   "Sim, com um investigador"
+  ],
+  [
+   "Componentes",
+   "5 investigadores, 2 cópias das 96 cartas de jogador e mais 13 cartas, cartas de cenário da campanha Night of the Zealot (3 cenários), saco do caos e fichas"
+  ],
+  [
+   "Versão digital oficial",
+   "não encontrada nas fontes consultadas"
+  ]
+ ],
+ "nota_ficha": "Nota, número de avaliações e complexidade da Ludopedia obtidos por busca, porque o site bloqueia acesso automatizado. Nota e peso do BGG vêm do Board Game Oracle e se referem à edição revisada.",
+ "como_funciona": [
+  "Cada jogador controla um investigador, como o agente federal Roland Banks ou a bibliotecária Daisy Walker, com um baralho próprio de cartas de jogador: armas, aliados, magias, truques e habilidades. A caixa revisada traz cinco investigadores, um de cada classe (guardiões, buscadores, ladinos, místicos e sobreviventes), e cada baralho inclui fraquezas, cartas ruins que representam os medos e problemas do personagem.",
+  "Não há tabuleiro: os lugares do cenário são cartas de local postas na mesa. Dois baralhos contam a história. O baralho de ato mostra o que os investigadores precisam fazer, quase sempre juntar pistas. O baralho de agenda representa o plano dos vilões e avança quando a mesa acumula marcadores de perdição, colocados um a cada rodada. Se a agenda chega ao fim antes do ato, o cenário termina mal.",
+  "Em cada rodada, cada investigador faz até três ações: mover-se, investigar o local, lutar ou fugir de um inimigo, jogar ou ativar cartas. Depois vêm a fase dos inimigos, que atacam quem está no mesmo local, a fase de manutenção e a fase dos Mitos, em que cada jogador compra uma carta do baralho de encontro: monstros, maldições e armadilhas.",
+  "A mecânica central é o teste de habilidade. Para investigar, por exemplo, você compara seu Intelecto com a dificuldade do local. Antes do teste, pode descartar cartas da mão para somar ícones de habilidade; depois tira uma ficha do saco do caos, que soma ou subtrai pontos e às vezes traz símbolos com efeitos ruins. É esse saquinho, e não um dado, que decide.",
+  "Os cenários formam uma campanha. A caixa traz Night of the Zealot, com três cenários. Entre eles, cada investigador ganha experiência para trocar cartas por versões melhores, e quem cai por dano ou horror sofre trauma permanente. As escolhas feitas num cenário mudam os seguintes, e o desfecho da campanha depende do que o grupo conseguiu."
+ ],
+ "funciona": [
+  [
+   "Tensão em cada ficha do saco",
+   "O saco do caos substitui os dados e mantém qualquer teste incerto: uma ficha pode somar, subtrair ou fazer você falhar na hora. Para a SU&SD, há uma empolgação constante em cada carta ou ficha comprada, porque sempre pode ser o momento em que tudo começa a dar errado, e mesmo assim o jogo não faz ninguém se sentir perseguido."
+  ],
+  [
+   "Seu baralho é o seu personagem",
+   "Cada investigador tem regras próprias de montagem de baralho, cartas exclusivas e fraquezas pessoais. Ao longo da campanha, a experiência ganha em cada cenário compra cartas melhores. A SU&SD destaca a relação que o grupo cria com esses baralhos que vai ajustando, algo próximo da evolução de personagem de um RPG."
+  ],
+  [
+   "Campanha que reage às escolhas",
+   "Decisões e fracassos de um cenário mudam os seguintes: quem sofre trauma começa o próximo cenário mais fraco, e uma escolha errada pode fechar um caminho da história. A SU&SD compara cada sessão com abrir a caixa lacrada de um jogo Legacy, porque a mesa nunca sabe o que vem a seguir."
+  ],
+  [
+   "Horror de Lovecraft com humor",
+   "A Polyhedron Collider diz que o sistema de horror e loucura acerta em cheio a sensação de pavor e desespero. A SU&SD acrescenta que as cartas, ao misturar o banal e o sobrenatural, criam cenas absurdas: numa das partidas do crítico, o auge da tensão foi um jornalista perseguindo um pássaro com um taco de beisebol."
+  ],
+  [
+   "Caixa revisada corrigiu o defeito antigo",
+   "A caixa original de 2016 servia a dois jogadores, e a Polyhedron Collider reclamava que comprar uma segunda cópia desperdiçava 110 de 240 cartas. A edição revisada de 2021 traz duas cópias das 96 cartas de jogador, mais 13 cartas de expansões, e aceita até quatro investigadores numa caixa só, segundo a Dice Tower."
+  ],
+  [
+   "Expansões sem cartas aleatórias",
+   "Como Living Card Game, as expansões têm conteúdo fixo: você sabe quais cartas vêm em cada caixa, sem pacotes sorteados como nos jogos colecionáveis. Desde Edge of the Earth, de 2021, cada ciclo sai em duas caixas, uma de investigadores e outra de campanha, e a Galápagos já lançou nove ciclos nesse formato em português."
+  ]
+ ],
+ "atencao": [
+  [
+   "Grave",
+   "Custo que cresce com as expansões",
+   "A caixa básica tem uma campanha de só três cenários. Para a Meeple Mountain, a caixa sozinha francamente não vale o dinheiro, e seguir o caminho de Arkham fica caro. Nas lojas consultadas em 28/10/2026, cada expansão de investigador em português custava cerca de R$ 300 e cada expansão de campanha, cerca de R$ 500, além do jogo base."
+  ],
+  [
+   "Moderada",
+   "Repetir a campanha perde a graça",
+   "A SU&SD reconhece que, apesar dos modos difícil e expert, a maior parte do apelo está na primeira vez que se joga cada cenário. A Meeple Mountain foi mais dura: achou as campanhas presas a trilhos e disse que, depois de seis ou sete sessões, não jogaria de novo."
+  ],
+  [
+   "Moderada",
+   "Lento e mais difícil com quatro",
+   "A SU&SD estima cerca de uma hora por jogador em cada cenário e diz que o jogo fica bem mais difícil com mais gente. O próprio crítico afirma que não gostaria de jogar com quatro, porque o ritmo ficaria lento demais para o seu gosto."
+  ],
+  [
+   "Leve",
+   "Uma ficha pode decidir o cenário",
+   "Dependendo do embaralhamento e das fichas tiradas, a SU&SD conta que um cenário pode ser tranquilo ou manter o grupo longe do objetivo a partida inteira, e às vezes tudo se resume a uma única ficha do saco. Quem detesta perder por azar vai se irritar."
+  ],
+  [
+   "Leve",
+   "Regras e baralhos exigem estudo",
+   "Há quatro fases por rodada, ações, testes, palavras-chave e um guia de referência à parte. A caixa indica 14 anos ou mais, a Ludopedia classifica a complexidade como médio-pesada (3,6 de 5), e ajustar os baralhos entre cenários pede tempo de estudo fora da mesa."
+  ],
+  [
+   "Leve",
+   "Novo conjunto básico só em inglês",
+   "Em 2026, a Fantasy Flight lançou um novo conjunto básico, que abre o Capítulo Dois do jogo e substitui a caixa revisada. Nas lojas brasileiras consultadas, ele aparece só em inglês, e não encontramos anúncio de edição em português; a Galápagos segue vendendo a revisada."
+  ]
+ ],
+ "para_quem": [
+  "Quer uma campanha cooperativa com história e escolhas",
+  "Joga sempre com o mesmo parceiro ou grupo pequeno",
+  "Gosta de montar e ajustar baralhos entre sessões",
+  "Curte horror de Lovecraft com pitadas de humor",
+  "Aceita investir em expansões ao longo do tempo"
+ ],
+ "nao_e_para": [
+  "Quer um jogo completo numa caixa só",
+  "Joga com grupos que mudam toda semana",
+  "Detesta perder por causa de uma ficha sorteada",
+  "Prefere partidas rápidas com regras curtas",
+  "Pretende jogar quase sempre com quatro pessoas"
+ ],
+ "selo": "Recomendado para público específico",
+ "veredito": "Arkham Horror: The Card Game é um cooperativo de campanha de primeira linha: o saco do caos deixa cada teste tenso, o baralho cresce junto com o personagem e as escolhas de um cenário pesam nos seguintes. A edição revisada da Galápagos corrigiu o maior defeito da caixa original e já aceita quatro investigadores. O problema é o fôlego: a caixa básica tem só três cenários, e a experiência completa pede expansões de cerca de R$ 300 e R$ 500 cada. Para uma dupla ou um grupo fixo disposto a seguir uma campanha, vale cada sessão. Para quem quer um jogo fechado por R$ 490, há opções que entregam mais numa caixa só.",
+ "tagline": "Seu baralho é o seu investigador, e o saco do caos decide o resto.",
+ "consulta": "28/10/2026",
+ "fontes": [
+  [
+   "Wikipedia – Arkham Horror: The Card Game",
+   "https://en.wikipedia.org/wiki/Arkham_Horror:_The_Card_Game",
+   "designers, data de lançamento, regras, formato das expansões e modelo LCG"
+  ],
+  [
+   "Fantasy Flight Games – Arkham Horror: The Card Game",
+   "https://www.fantasyflightgames.com/en/products/arkham-horror-the-card-game/products/arkham-horror-card-game-revised-core-set/",
+   "jogadores, duração e idade (página oficial, hoje do conjunto básico do Capítulo Dois)"
+  ],
+  [
+   "Dice Tower – Arkham Horror: The Card Game (Revised Edition)",
+   "https://dicetower.com/board-game/359609",
+   "conteúdo e mudanças da edição revisada, até 4 jogadores, saco do caos"
+  ],
+  [
+   "ArkhamDB – Revised Core Set",
+   "https://arkhamdb.com/set/rcore",
+   "os cinco investigadores da caixa revisada"
+  ],
+  [
+   "ArkhamDB – Core Set",
+   "https://arkhamdb.com/set/core",
+   "os três cenários da campanha Night of the Zealot"
+  ],
+  [
+   "Board Game Oracle – Revised Edition",
+   "https://www.boardgameoracle.com/en-GB/boardgame/price/CsAHD6NeDP/arkham-horror-the-card-game-revised-core-set",
+   "nota e peso do BGG da edição revisada"
+  ],
+  [
+   "Board Game Oracle – Arkham Horror: The Card Game (2016)",
+   "https://www.boardgameoracle.com/boardgame/price/g3kfgHSvG8/arkham-horror-the-card-game",
+   "1 a 2 jogadores na caixa original"
+  ],
+  [
+   "Ludopedia – Arkham Horror: The Card Game (Revised Edition)",
+   "https://ludopedia.com.br/jogo/arkham-horror-the-card-game-revised-edition",
+   "nota, número de avaliações e complexidade (via busca)"
+  ],
+  [
+   "Shut Up & Sit Down – Review: Arkham Horror – The Card Game",
+   "https://www.shutupandsitdown.com/videos/review-arkham-horror-the-card-game/",
+   "crítica (primeiro cenário funciona como tutorial)"
+  ],
+  [
+   "Shut Up & Sit Down – A Re-Review? Arkham Horror: The Card Game",
+   "https://www.shutupandsitdown.com/a-re-review-arkham-horror-the-card-game/",
+   "crítica, duração por jogador, dificuldade por número de jogadores, custo, citação"
+  ],
+  [
+   "Meeple Mountain – Arkham Horror: The Card Game (Revised Edition)",
+   "https://www.meeplemountain.com/reviews/arkham-horror-the-card-game-revised-edition/",
+   "crítica (valor da caixa básica, rejogabilidade)"
+  ],
+  [
+   "Polyhedron Collider – Arkham Horror: The Card Game Review",
+   "https://www.polyhedroncollider.com/2016/11/arkham-horror-card-game-review.html",
+   "crítica (atmosfera, cartas desperdiçadas na segunda caixa original)"
+  ],
+  [
+   "Meeple Mountain – Arkham Horror: The Card Game Core Set (2026)",
+   "https://www.meeplemountain.com/reviews/arkham-horror-the-card-game-core-set/",
+   "novo conjunto básico de 2026"
+  ],
+  [
+   "ICv2 – novo conjunto básico de Arkham Horror: The Card Game",
+   "https://icv2.com/print/article/62060",
+   "conteúdo do conjunto de 2026 e suporte a até 4 jogadores"
+  ],
+  [
+   "Playeasy – Arkham Horror: Card Game",
+   "https://www.playeasy.com.br/arkham-horror-card-game",
+   "edição da Galápagos, idade, preço e estoque"
+  ],
+  [
+   "Playeasy – catálogo Arkham Horror: Card Game",
+   "https://www.playeasy.com.br/editoras/asmodee/arkham-horror-card-game",
+   "expansões em português e seus preços"
+  ],
+  [
+   "Playeasy – Arkham Horror: The Card Game Core Set",
+   "https://www.playeasy.com.br/arkham-horror-the-card-game-core-set",
+   "conjunto de 2026 em inglês, substituição da caixa revisada, preço"
+  ],
+  [
+   "Paladins Games – Arkham Horror Card Game",
+   "https://paladinsgames.com.br/arkham-horror-card-game",
+   "preço e estoque da edição da Galápagos"
+  ],
+  [
+   "Bravo Jogos – Limiar da Terra (Expansão de Investigador)",
+   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/expansoes/expansao-de-investigador-arkham-horror-card-game-limiar-da-terra-p",
+   "preço de expansão em português"
+  ],
+  [
+   "Buscapé – Arkham Horror: Card Game (Edição Revisada)",
+   "https://www.buscape.com.br/jogos-de-tabuleiro-board-games/galapagos-arkham-horror-card-game-edicao-revisada-jogo-de-tabuleiro-para-gamers-1-4-jogadores-60-120-minutos-por-partida",
+   "nome da edição nacional, jogadores e duração"
+  ],
+  [
+   "Gematsu – Arkham Horror: Mother's Embrace",
+   "https://www.gematsu.com/2021/02/arkham-horror-mothers-embrace-launches-march-23",
+   "jogo digital derivado, que não é o card game"
+  ]
+ ],
+ "roteiro": {
+  "tema": "Lovecraftian cosmic horror in 1920s New England, the fictional town of Arkham, foggy gas-lit streets, occult cults and tentacled creatures, deep greens, sickly teal, black and aged parchment tones, pulp noir mood",
+  "cena": "a foggy 1920s Arkham street at night with gas lamps, a small group of investigators in period clothes holding a lantern, a revolver and an old tome, and a dark tentacled shape looming in the mist behind them",
+  "mesa": "a box titled \"ARKHAM HORROR: CARD GAME\" with Lovecraftian investigators on the cover, a row of location cards laid out like a map, an act deck and an agenda deck side by side, investigator cards with small decks of player cards in hand, a black cloth chaos bag with round chaos tokens spilling out, and small clue, damage and horror tokens",
+  "titulo": "ARKHAM HORROR: CARD GAME",
+  "chamada": "INVESTIGADORES DOS ANOS 1920 ENFRENTAM CULTOS E MONSTROS DE LOVECRAFT NUMA CAMPANHA COOPERATIVA EM QUE O BARALHO EVOLUI COM O PERSONAGEM.",
+  "destaque": "O MELHOR JOGO DE CARTAS DO GOLDEN GEEK 2016 TRANSFORMA CADA TESTE NUM SUSTO: UMA FICHA DO SACO DO CAOS PODE SALVAR OU ARRUINAR O CENÁRIO.",
+  "lateral": [
+   "1–4 jogadores",
+   "60–120 minutos",
+   "complexidade 3,6 / 5 (médio-pesado)",
+   "modo solo: sim, com 1 investigador",
+   "sem dados: saco do caos",
+   "designers Nate French e MJ Newman",
+   "editora original Fantasy Flight Games",
+   "editora no Brasil Galápagos",
+   "ano 2016 (revisada em 2021)",
+   "idioma português (BR)"
+  ],
+  "numeros": [
+   [
+    "NOTA LUDOPEDIA",
+    "8,9/10",
+    "713 avaliações"
+   ],
+   [
+    "NOTA BGG",
+    "8,6/10",
+    "edição revisada"
+   ],
+   [
+    "CENÁRIOS",
+    "3",
+    "campanha da caixa básica"
+   ],
+   [
+    "INVESTIGADORES",
+    "5",
+    "um de cada classe"
+   ]
+  ],
+  "como_resumo": "Investigue locais, junte pistas e cumpra o ato antes que a agenda dos vilões avance.",
+  "passos": [
+   [
+    "ESCOLHA O INVESTIGADOR",
+    "Cada jogador pega um investigador e o baralho dele, com armas, aliados, magias e fraquezas que representam seus medos e problemas pessoais."
+   ],
+   [
+    "FAÇA TRÊS AÇÕES",
+    "Na sua vez, faça até três ações: mover-se entre cartas de local, investigar, lutar, fugir de inimigos ou jogar cartas da mão."
+   ],
+   [
+    "TESTE COM O SACO",
+    "Compare sua habilidade com a dificuldade, descarte cartas para somar ícones e tire uma ficha do saco do caos, que altera o resultado."
+   ],
+   [
+    "CUMPRA O ATO",
+    "Junte as pistas pedidas pelo baralho de ato antes que os marcadores de perdição, um por rodada, façam a agenda dos vilões avançar."
+   ],
+   [
+    "SIGA A CAMPANHA",
+    "Inimigos atacam e cada jogador compra uma carta de encontro. Entre cenários, ganhe experiência para melhorar o baralho, mas cuidado com os traumas."
+   ]
+  ],
+  "fortes": [
+   "Saco do caos deixa todo teste incerto e tenso.",
+   "Baralho do investigador melhora com experiência na campanha.",
+   "Escolhas de um cenário mudam os seguintes.",
+   "SU&SD compara cada sessão a abrir um Legacy.",
+   "Caixa revisada aceita até quatro investigadores.",
+   "Expansões de conteúdo fixo, sem pacotes aleatórios.",
+   "Edição em português da Galápagos com nove ciclos."
+  ],
+  "atencao": [
+   "Caixa básica tem campanha de só três cenários.",
+   "Expansões custam cerca de R$ 300 e R$ 500.",
+   "SU&SD: maior apelo está na primeira jogada.",
+   "Cerca de uma hora por jogador em cada cenário.",
+   "Uma única ficha do saco pode decidir o cenário.",
+   "Ajustar baralhos exige estudo fora da mesa.",
+   "Conjunto básico de 2026 só saiu em inglês."
+  ],
+  "ficha": [
+   "Designers: Nate French e MJ Newman",
+   "Editora original: Fantasy Flight Games",
+   "Editora no Brasil: Galápagos (edição revisada)",
+   "Jogadores: 1 a 4",
+   "Duração: 60–120 min",
+   "Idade: 14+",
+   "Complexidade Ludopedia: 3,6 / 5",
+   "Peso BGG: 3,8 / 5",
+   "Idioma: português (BR)",
+   "Componentes: 5 investigadores, cartas de jogador e de cenário, saco do caos, fichas"
+  ],
+  "premios": [
+   "GOLDEN GEEK 2016 · JOGO DE CARTAS",
+   "FINALISTA AS D'OR 2018 · EXPERT",
+   "GOLDEN GEEK 2016 · TOP 3 EM 2 JOGADORES, COOPERATIVO E SOLO"
+  ],
+  "perfil": [
+   [
+    "Tensão e atmosfera",
+    5
+   ],
+   [
+    "Narrativa de campanha",
+    5
+   ],
+   [
+    "Personalização de baralho",
+    5
+   ],
+   [
+    "Facilidade de ensinar",
+    2
+   ],
+   [
+    "Custo acessível",
+    1
+   ],
+   [
+    "Partida com 4 jogadores",
+    2
+   ]
+  ],
+  "extra": {
+   "titulo": "PREÇO DE REFERÊNCIA",
+   "texto": "Edição revisada da Galápagos entre R$ 489,90 e R$ 499,90 em lojas brasileiras, consultadas em 28/10/2026. Expansões em português: cerca de R$ 300 (investigador) e R$ 500 (campanha)."
+  },
+  "veredito": "UMA CAMPANHA DE HORROR VICIANTE, PARA QUEM ACEITA O CUSTO.",
+  "veredito_texto": "Saco do caos, baralho que evolui e escolhas que pesam fazem cada cenário valer. A caixa básica é curta e as expansões custam caro: compre se tiver dupla ou grupo fixo para a campanha."
+ },
+ "legenda": "Um saco de fichas decide se o seu investigador sobrevive ao culto. 🕯️🐙\n\nArkham Horror: The Card Game venceu o Golden Geek de melhor jogo de cartas de 2016 e foi finalista do As d'Or Expert 2018.\nCada jogador leva o baralho do seu investigador por uma campanha cooperativa em que as escolhas e os traumas ficam.\nA caixa básica é curta e as expansões custam caro, mas para dupla ou grupo fixo é uma campanha viciante.\nVeredito: RECOMENDADO PARA PÚBLICO ESPECÍFICO.\n\nQual investigador você levaria para Arkham?\nResenha completa no link da bio.\n\n#ArkhamHorror #ArkhamHorrorLCG #JogosDeTabuleiro #BoardGames #Boardgamer #JogoCooperativo #Lovecraft #Galapagos #EliteBoardgamers #CardGame #GoldenGeek",
+ "experiencia": [
+  "Uma sessão de Arkham alterna planejamento e susto. Imagine que você precisa de duas pistas na biblioteca, a agenda está a um marcador de perdição de avançar e seu Intelecto empata com a dificuldade do local. Descartar o revólver da mão para garantir um ponto a mais ou guardar a arma para o carniçal que acabou de surgir? A SU&SD descreve exatamente esse dilema: cartas que você adora viram moeda para melhorar as chances, e mesmo assim nenhum teste é garantido, porque a ficha que sai do saco pode ser a de falha automática.",
+  "O ritmo depende do tamanho da mesa. A SU&SD calcula cerca de uma hora por jogador em cada cenário e diz que o jogo fica bem mais difícil com mais gente: a dois, cabem dois cenários numa noite longa; a três, um cenário ocupa a noite inteira. Entre uma sessão e outra, o grupo gasta experiência e ajusta os baralhos, e boa parte da graça está em ver os personagens mudarem ao longo da campanha."
+ ],
+ "citacao": {
+  "texto": "Na mesma medida bobo e atmosférico, tenso e brincalhão, esperto e tolo.",
+  "fonte": "Shut Up & Sit Down (tradução livre)"
+ },
+ "jogadores": [
+  [
+   "Sozinho",
+   "Joga-se com um investigador, que precisa cobrir sozinho pistas e combate. Ficou em 3º lugar no Golden Geek de melhor jogo solo de 2016.",
+   3
+  ],
+  [
+   "2 jogadores",
+   "Para a SU&SD, é o ritmo mais ágil: cabem dois cenários numa noite longa. Ficou em 2º lugar no Golden Geek de melhor jogo para dois de 2016.",
+   3
+  ],
+  [
+   "3 jogadores",
+   "Segundo a SU&SD, um cenário costuma ocupar a noite inteira, com mais turnos e decisões; a caixa revisada já tem cartas para isso.",
+   2
+  ],
+  [
+   "4 jogadores",
+   "Possível com a caixa revisada, mas o jogo fica mais difícil com mais investigadores, e a SU&SD considera o ritmo lento demais.",
+   1
+  ]
+ ],
+ "primeira_partida": "Reserve uma noite: a explicação leva tempo, e a SU&SD lembra que o primeiro cenário funciona como tutorial e é mais simples que os seguintes. Use os baralhos iniciais sugeridos nas regras em vez de montar baralhos do zero e leia o guia Aprenda a Jogar, reescrito na edição revisada. O que mais confunde é o teste de habilidade: mostre logo como descartar cartas da mão para somar ícones e como cada ficha do saco do caos altera o resultado.",
+ "edicao_nacional": "A Galápagos publica o jogo como Arkham Horror: Card Game, na edição revisada em português, para 1 a 4 jogadores e 14 anos ou mais. Em 28/10/2026, a Paladins Games vendia a caixa por R$ 489,90, e a Playeasy listava R$ 499,90, sem estoque. As expansões de investigador custavam cerca de R$ 300 e as de campanha, cerca de R$ 500. O novo conjunto básico de 2026 só apareceu em inglês, por R$ 598,80 na Playeasy.",
+ "preco_ref": {
+  "faixa": "R$ 489,90 a R$ 499,90",
+  "data": "28/10/2026",
+  "obs": "edição revisada da Galápagos; em estoque só na Paladins Games (a Playeasy lista sem estoque)"
+ },
+ "versoes": "Em português, a Galápagos já lançou as caixas de investigador e de campanha de O Legado Dunwich, O Caminho para Carcosa, A Era Esquecida, O Círculo Desfeito, Os Devoradores de Sonhos, Limiar da Terra, As Chaves Escarlates, O Banquete de Hemlock Vale e A Cidade Submersa, além de cenários avulsos como O Baile de Inverno. Em inglês, o conjunto básico de 2026 abre o Capítulo Dois. Não encontramos versão digital oficial; Arkham Horror: Mother's Embrace, para consoles e PC, é outro jogo.",
+ "comparacoes": [
+  [
+   "Gloomhaven",
+   "gloomhaven",
+   "Outra campanha cooperativa para 1 a 4 jogadores, também da Galápagos no Brasil, com personagens que evoluem entre cenários. Troca cartas e saco do caos por combate tático em mapas, e tudo vem numa caixa enorme, sem depender de expansões."
+  ],
+  [
+   "Pandemic Legacy",
+   "pandemic-legacy",
+   "Para quem gosta da sensação de história que avança e de escolhas que ficam, Pandemic Legacy entrega uma campanha fechada numa caixa só, com regras mais simples e mudanças permanentes no tabuleiro."
+  ],
+  [
+   "Nemesis",
+   "nemesis",
+   "Se o que atrai é o horror tenso, Nemesis leva o medo para uma nave invadida por alienígenas, com miniaturas e objetivos secretos. É uma partida avulsa, sem campanha, e a cooperação pode virar traição."
+  ]
+ ]
+}
