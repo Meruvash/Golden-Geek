@@ -221,7 +221,7 @@ def layout_v2(c, premios_bloco, ficha_html, fontes, fotos=None, info_meio=""):
         f'incluindo {e(vit[0]["premio"])} {vit[0]["ano"]} · {e(vit[0]["categoria"])}</span></p>' if vit else ""
     )
     resumo = f"""<section class="bloco r30" id="resumo">
-   <p class="kick">Resumo em 30 segundos</p>
+   <h2 class="kick">Resumo em 30 segundos</h2>
    <div class="r30-grid">
     <div><h3>Destaques</h3><ul class="mini">{"".join(pf(t) for t, _ in c["funciona"][:3])}</ul></div>
     <div><h3>Atenção</h3><ul class="mini">{"".join(pn(t) for _, t, _ in c["atencao"][:3])}</ul></div>
@@ -654,7 +654,7 @@ footer{{background:var(--bar);color:var(--bar-ink);font-size:.88rem;border-top:1
 .leg-dica{{font-size:.8rem;color:#5a6270;margin-top:8px}}
 /* layout v2 */
 .v2>.col,.v2 .bloco{{min-width:0}}
-.v2 .kick{{font-size:.75rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--gold)}}
+.v2 .kick{{margin:0;font-size:.75rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--gold)}}
 .r30{{background:#101318;border:1px solid #3a3f48;border-left:4px solid var(--acc);display:grid;gap:14px}}
 .r30-grid{{display:grid;gap:14px}}.r30 h3{{font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:6px}}
 .mini li{{display:flex;gap:8px;align-items:flex-start;margin:5px 0;font-weight:600;font-size:.95rem}}.mini .ic{{width:18px;height:18px;flex:none;margin-top:3px}}
