@@ -1,0 +1,110 @@
+{
+ "slug": "vantage-chega-ao-brasil",
+ "data": "2026-10-28",
+ "categoria": "Chegando ao Brasil",
+ "titulo": "Vantage, de Jamey Stegmaier, chega ao Brasil depois de dois Golden Geek",
+ "selo": "Com ressalvas",
+ "lide": "Vantage, jogo de exploração de Jamey Stegmaier, autor de Scythe e dono da Stonemaier, editora de Wingspan, chegou às lojas brasileiras em outubro pela Galápagos, segundo a Ludopedia. Lá fora, recebeu cinco indicações ao Golden Geek e venceu como jogo mais inovador e melhor jogo solo.",
+ "por_que_importa": "É o lançamento mais ambicioso do ano do autor de Scythe, que resenhamos. Mas é também um dos jogos que mais dividem a crítica: quem gosta de história que nasce das escolhas se encanta, e quem gosta de metas claras se frustra. Vale saber em qual grupo você está antes de comprar.",
+ "numeros": [
+  [
+   "2",
+   "Golden Geek: mais inovador e melhor solo",
+   "Opinionated Gamers"
+  ],
+  [
+   "5",
+   "indicações ao Golden Geek",
+   "BoardGameWire"
+  ],
+  [
+   "1–6",
+   "jogadores, em partidas de até 3 horas",
+   "Ludopedia"
+  ]
+ ],
+ "corpo": [
+  "Em Vantage, cada pessoa explora um planeta desconhecido com um personagem próprio, revelando locais e eventos num grande livro de cartas. Não há um objetivo fixo para todos: cada partida tem metas diferentes, e a história surge do que o grupo decide fazer.",
+  "Os jogadores ficam quase sempre em lugares diferentes do mapa, cada um vivendo a sua aventura, e só se ajudam em momentos pontuais."
+ ],
+ "no_brasil": "Vantage saiu pela Galápagos (Asmodee) em outubro de 2026, segundo o calendário da Ludopedia. Não encontramos o preço nas lojas consultadas até 28/10/2026; atualizamos a nota quando ele aparecer.",
+ "critica": [
+  {
+   "fonte": "Roll to Review",
+   "texto": "O melhor jogo de aventura narrativa que já joguei.",
+   "citacao": true
+  },
+  {
+   "fonte": "Tabletop Gamesblog",
+   "texto": "Para o Tabletop Gamesblog, Vantage não funcionou porque parece manter os jogadores separados de propósito.",
+   "citacao": false
+  },
+  {
+   "fonte": "Board Game Quest",
+   "texto": "Para a Board Game Quest, o jogo não escala bem com mais pessoas e não é para quem gosta de metas definidas e de otimizar jogadas.",
+   "citacao": false
+  }
+ ],
+ "para_quem": [
+  "Gosta de jogos em que a história nasce das escolhas, como livros-jogo",
+  "Joga muito sozinho: venceu o Golden Geek de melhor solo"
+ ],
+ "nao_e_para": [
+  "Gosta de metas claras e de otimizar cada turno",
+  "Quer muita interação entre os jogadores"
+ ],
+ "veredito": "Para quem joga sozinho ou a dois e gosta de explorar sem objetivo fixo, é um dos jogos mais originais do ano. Para grupos maiores ou para quem gosta de eurogames de otimização, experimente antes de comprar.",
+ "fontes": [
+  {
+   "nome": "Ludopedia: lançamentos de outubro de 2026",
+   "url": "https://ludopedia.com.br/lancamentos?mes=2026-10",
+   "data": "28/10/2026"
+  },
+  {
+   "nome": "Opinionated Gamers: vencedores do Golden Geek",
+   "url": "https://opinionatedgamers.com/2026/05/11/galactic-cruise-fate-of-the-fellowship-and-hot-streak-win-2025-golden-geek-awards/",
+   "data": "28/10/2026"
+  },
+  {
+   "nome": "BoardGameWire: indicados ao Golden Geek",
+   "url": "https://boardgamewire.com/?p=6478",
+   "data": "28/10/2026"
+  },
+  {
+   "nome": "Roll to Review: resenha de Vantage",
+   "url": "https://rolltoreview.com/vantage-board-game-review/",
+   "data": "28/10/2026"
+  },
+  {
+   "nome": "Tabletop Gamesblog: resenha de Vantage",
+   "url": "https://tabletopgamesblog.com/2026/07/18/vantage-saturday-review/",
+   "data": "28/10/2026"
+  },
+  {
+   "nome": "Board Game Quest: resenha de Vantage",
+   "url": "https://www.boardgamequest.com/vantage-review/",
+   "data": "28/10/2026"
+  }
+ ],
+ "imagem": {
+  "arquivo": "capas/66676.jpg",
+  "credito": "Capa via Ludopedia"
+ },
+ "jogos": [
+  {
+   "nome": "Scythe",
+   "resenha": "scythe"
+  }
+ ],
+ "ids_ludopedia": [
+  66676
+ ],
+ "crivo": {
+  "pontos": 11,
+  "criterios": [
+   "Lançamento no Brasil (4)",
+   "Prêmio grande: Golden Geek (4)",
+   "Autor de jogo com resenha nossa: Scythe (3)"
+  ]
+ }
+}

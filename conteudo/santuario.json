@@ -1,0 +1,428 @@
+{
+ "slug": "santuario",
+ "jogo": "Santuário",
+ "cor": "#3f8f7a",
+ "kicker": "Resenha · Colocação de peças e motor",
+ "og_titulo": "Santuário vale a pena? Resenha Elite Boardgamers",
+ "descricao": "Resenha de Santuário (Sanctuary), o jogo de Mathias Wigge derivado de Ark Nova que venceu o Deutscher Spiele Preis 2026: como funciona, pontos fortes, pontos de atenção e para quem é.",
+ "titulo_html": "Ark Nova em uma hora e pouco: <span>Santuário</span>",
+ "lede": "Santuário (Sanctuary, Artengarten na Alemanha) é o jogo de Mathias Wigge que leva o zoológico de Ark Nova para um quebra-cabeça de peças hexagonais, mais curto e mais fácil de ensinar. Venceu o Deutscher Spiele Preis 2026, votado pelo público. Tem edição em português da Grok Games. É uma ótima porta de entrada para o tema e para jogos médios, desde que você aceite pouca interação e alguma sorte na compra de peças.",
+ "tags": [
+  "1–5 jogadores",
+  "20 min por jogador",
+  "12+",
+  "Médio",
+  "Peças"
+ ],
+ "alt": "Infográfico Elite Boardgamers sobre o jogo Santuário",
+ "premiacoes": [
+  {
+   "premio": "Deutscher Spiele Preis",
+   "ano": 2026,
+   "categoria": "Deutscher Spiele Preis",
+   "colocacao": 1,
+   "resultado": "vencedor",
+   "fonte": "https://de.wikipedia.org/wiki/Deutscher_Spiele_Preis",
+   "rotulo": "Vencedor"
+  }
+ ],
+ "ficha": [
+  [
+   "Ano",
+   "2025"
+  ],
+  [
+   "Designer",
+   "Mathias Wigge"
+  ],
+  [
+   "Arte",
+   "Christof Tisch e Felix Wermke"
+  ],
+  [
+   "Editora original",
+   "Feuerland Spiele (Artengarten, na Alemanha); Capstone Games (Sanctuary, em inglês)"
+  ],
+  [
+   "Editora no Brasil",
+   "Grok Games"
+  ],
+  [
+   "Jogadores",
+   "1 a 5"
+  ],
+  [
+   "Duração anunciada",
+   "20 minutos por jogador (Feuerland); 40 a 100 minutos na caixa da Capstone"
+  ],
+  [
+   "Idade",
+   "12+"
+  ],
+  [
+   "Nota BGG",
+   "7,7 / 10 (via agregadores)"
+  ],
+  [
+   "Peso BGG",
+   "2,8 / 5 (via agregadores)"
+  ],
+  [
+   "Nota Ludopedia",
+   "não confirmado nas fontes consultadas"
+  ],
+  [
+   "Modo solo oficial",
+   "Sim, com marcadores de rodada e desafios para baixar no site da editora"
+  ],
+  [
+   "Componentes",
+   "135 peças de zoológico (animais, prédios e projetos), 10 metas de conservação, 4 peças de ação por jogador"
+  ],
+  [
+   "Cópias vendidas",
+   "20 mil na Alemanha, segundo a Feuerland (via BoardGameWire)"
+  ]
+ ],
+ "nota_ficha": "Nota e peso do BoardGameGeek obtidos por agregadores (Board Game Bliss, Board Game Oracle e boardmatch.app), porque o BGG bloqueia acesso automatizado.",
+ "como_funciona": [
+  "Cada jogador monta um zoológico moderno num tabuleiro de casas hexagonais. As 135 peças do jogo são de três tipos: animais (amarelos), prédios (azuis) e projetos (roxos). Quase todas trazem símbolos de habitat, continente ou classe de animal, que ativam efeitos e valem pontos no fim.",
+  "O turno tem dois passos obrigatórios. Primeiro, você pega uma das seis peças da vitrine, mas só até a posição indicada pela sua peça de ação de projetos. Depois, usa uma das suas quatro peças de ação: projetos, animais de rocha, de floresta e de água. Cada uma serve para comprar peças ou para jogar uma peça da mão.",
+  "A força da ação depende da posição: as quatro ficam em fila embaixo do tabuleiro e a da direita é a mais forte. Um animal de nível 4 só entra com uma ação de força 4 ou mais, e do habitat certo. A ação usada volta para a esquerda e as outras avançam, como em Ark Nova.",
+  "As peças entram sempre ao lado de outra ou da entrada, sem girar. Animais grandes pedem espaços livres em volta, feitos com peças viradas da mão, e um casal da mesma espécie lado a lado rende um marcador de conservação. Depois da ação, você pode jogar um prédio, apoiar uma das cinco metas de conservação e melhorar ações, que ganham força e podem jogar dois animais de uma vez.",
+  "O fim é disparado quando alguém apoia quatro metas, enche o tabuleiro ou acaba a pilha de peças; quem dispara ganha 10 pontos e os outros jogam mais uma vez. Pontuam as peças, as vizinhanças entre símbolos, as metas e os marcadores. Mais pontos vence."
+ ],
+ "experiencia": [
+  "A partida é um quebra-cabeça de espaço. Um exemplo das regras: você quer jogar o crocodilo-do-nilo, um animal de água de nível 4, então espera a ação de água chegar à força 4. Ele pede um espaço livre ao lado, e você vira uma peça da mão para criar esse espaço. Se já tiver no zoológico o especialista em répteis, ganha mais uma peça da vitrine na mesma jogada.",
+  "Os turnos são rápidos, porque cada um é pegar uma peça e fazer uma ação. A tensão vem de decidir onde cada peça vai, já que não dá para girar nem mover depois, e de quando apoiar uma meta: cedo garante o lugar, tarde rende mais pontos. Para a Board's Eye View, o jogo dura cerca de metade de Ark Nova e é praticamente paciência multijogador, com disputa só pela vitrine."
+ ],
+ "citacao": {
+  "texto": "Não substitui Ark Nova, mas é um jogo atraente que você provavelmente vai levar à mesa com mais frequência.",
+  "fonte": "Board's Eye View (tradução livre)"
+ },
+ "funciona": [
+  [
+   "Ark Nova destilado",
+   "Dale Yu, do Opinionated Gamers, diz que Santuário modifica e simplifica muitos mecanismos de Ark Nova de forma elegante e surpreendente. A fila de ações que ganha força com a espera continua, mas o turno virou só pegar uma peça e fazer uma ação, o que corta horas da partida."
+  ],
+  [
+   "Fácil de ensinar",
+   "Para Mark Jackson, do Opinionated Gamers, o jogo é mais fácil de ensinar e mais curto que Ark Nova e continua muito bom. A Board's Eye View destaca que as regras são enxutas; Dale Yu conta que seus grupos já estavam à vontade no meio da primeira partida."
+  ],
+  [
+   "Quebra-cabeça de vizinhança",
+   "Cada peça pontua pelos símbolos ao lado, e não dá para girar nem mover depois. Encaixar um prédio que exige duas peças de floresta vizinhas, ganhando ainda o bônus impresso na casa, é o tipo de jogada que a Board's Eye View chama de satisfatória."
+  ],
+  [
+   "Várias estratégias",
+   "Dale Yu viu caminhos diferentes funcionarem: encher o tabuleiro rápido para disparar o fim, montar combinações de símbolos ou correr atrás de projetos de continente. As cinco metas de conservação sorteadas entre dez mudam a prioridade a cada partida."
+  ],
+  [
+   "Mão de seis peças",
+   "A Zatu gostou do limite de seis peças na mão, contra três cartas em Ark Nova: dá para guardar uma peça boa esperando a ação certa. E as peças que sobram não se perdem, porque viram espaços livres que valem 1 ponto cada."
+  ],
+  [
+   "Preço menor que Ark Nova",
+   "Na Alemanha, o preço sugerido é de 49,90 euros, contra 64,90 de Ark Nova, segundo a BoardGameWire. No Brasil, em 28/10/2026, as ofertas iam de R$ 288 a R$ 399, abaixo dos R$ 450 a R$ 500 de Ark Nova na mesma editora."
+  ]
+ ],
+ "atencao": [
+  [
+   "Moderada",
+   "Pouca interação",
+   "A Board's Eye View descreve o jogo como paciência multijogador: a única disputa é pela vitrine de seis peças. A Zatu não achou nenhuma peça que mexa no zoológico dos outros, e as metas de conservação podem ser apoiadas por todos, sem corrida como em Ark Nova."
+  ],
+  [
+   "Moderada",
+   "Sorte na compra",
+   "Jonathan, do Opinionated Gamers, diz que é preciso aceitar a sorte do que sai. A Zatu sente falta de algo como as fichas X de Ark Nova para contornar uma vitrine ruim, e a Board's Eye View reclama de peças com exigência de posição que ficam presas na mão."
+  ],
+  [
+   "Leve",
+   "Ocupa a mesa",
+   "A Zatu achou as peças enormes, com quase 7,5 cm de diagonal, e chama o jogo de devorador de mesa. Com cinco jogadores, cada um com seu tabuleiro, a vitrine e as metas no centro, reserve uma mesa grande."
+  ],
+  [
+   "Leve",
+   "Pontuação trabalhosa",
+   "O blog Stidjen Plays Solo achou a contagem final confusa, com grupos de peças que se sobrepõem. A Zatu reclama do glossário separado do livro de regras na hora de consultar ícones. A Feuerland oferece um aplicativo web que conta os pontos a partir de uma foto do tabuleiro."
+  ],
+  [
+   "Leve",
+   "Fã de Ark Nova pode sentir falta",
+   "No Opinionated Gamers, Larry diz que Ark Nova é melhor e Nate Beeler resume Santuário como um terço da diversão em dois terços do tempo. Quem já tem Ark Nova e gosta da profundidade dele pode achar este repetitivo."
+  ],
+  [
+   "Leve",
+   "Longo com quatro ou cinco",
+   "A conta de 20 minutos por jogador leva a partidas de quase uma hora e quarenta com cinco pessoas. Larry, do Opinionated Gamers, ainda acha o jogo longo demais a quatro e prefere jogar a três."
+  ]
+ ],
+ "jogadores": [
+  [
+   "Sozinho",
+   "Você joga contra um limite de rodadas marcado por fichas; cada ficha que sobra vale 5 pontos. A editora oferece desafios extras para baixar.",
+   2
+  ],
+  [
+   "2 jogadores",
+   "Dale Yu diz que funciona bem; a Board's Eye View nota que a dois dá para prever o que vai sobrar na vitrine.",
+   3
+  ],
+  [
+   "3 jogadores",
+   "O número que Larry, do Opinionated Gamers, prefere: partida de uma hora, vitrine ainda previsível.",
+   3
+  ],
+  [
+   "4 a 5 jogadores",
+   "Funciona, mas a vitrine muda muito entre os seus turnos e a partida passa de uma hora e meia.",
+   2
+  ]
+ ],
+ "primeira_partida": "Separe uns 20 minutos para explicar e use o lado indicado pelas regras para a primeira partida. A editora sugere deixar na caixa o marcador de conservação 4×, para que o fim seja disparado já na terceira meta apoiada. O que confunde no começo é a força das ações e os espaços livres dos animais grandes: mostre um exemplo de cada antes de começar. A Feuerland também oferece um tutorial interativo no aplicativo Dized.",
+ "edicao_nacional": "A Grok Games, que também publica Ark Nova no Brasil, lançou Santuário em português. Em 28/10/2026, a loja da Grok vendia o jogo por R$ 399,00 (R$ 379,05 no Pix), e havia ofertas a partir de R$ 288,30 na Amazon. A Playeasy listava o jogo como indisponível naquele momento.",
+ "preco_ref": {
+  "faixa": "R$ 288 a R$ 399",
+  "data": "28/10/2026",
+  "obs": "edição da Grok Games"
+ },
+ "versoes": "Não encontramos expansão de Santuário até 28/10/2026. A Feuerland e a Capstone oferecem para baixar folhas de desafios solo (básico e avançado), com metas extras para quem joga sozinho, além de um aplicativo web gratuito de contagem de pontos, em alemão e inglês. Quem quiser a versão completa e pesada do mesmo tema tem Ark Nova, também pela Grok.",
+ "comparacoes": [
+  [
+   "Ark Nova",
+   "ark-nova",
+   "O jogo de origem: mesma fila de ações e mesmo tema, mas com cartas, dinheiro, trabalhadores e partidas de três horas. Mais profundo e mais disputado, bem mais difícil de ensinar."
+  ],
+  [
+   "Wingspan",
+   "wingspan",
+   "A Zatu compara o ritmo e o tanto de pensar aos de Wingspan. Também é motor de animais com pouca interação, mas com cartas em vez de peças no tabuleiro."
+  ],
+  [
+   "Cascadia",
+   "cascadia",
+   "Outro quebra-cabeça de peças hexagonais com animais e habitats, mais leve e mais curto. Bom passo anterior para quem quer chegar a Santuário."
+  ]
+ ],
+ "para_quem": [
+  "Quer o tema de Ark Nova sem três horas de partida",
+  "Gosta de quebra-cabeças de encaixe e vizinhança",
+  "Procura um jogo médio para noites de semana",
+  "Joga com duas ou três pessoas com frequência",
+  "Gosta de jogar sozinho batendo a própria pontuação"
+ ],
+ "nao_e_para": [
+  "Quer disputa direta e atrapalhar os outros",
+  "Já tem Ark Nova e quer mais profundidade",
+  "Não gosta de depender da peça que sai na vitrine",
+  "Joga sempre com cinco e tem pouco tempo",
+  "Tem mesa pequena"
+ ],
+ "selo": "Recomendado",
+ "veredito": "Santuário pega o melhor de Ark Nova, a fila de ações que fica mais forte com a espera, e o coloca num quebra-cabeça de peças que se ensina em minutos e se joga em pouco mais de uma hora. O público alemão gostou o bastante para lhe dar o Deutscher Spiele Preis 2026, e a crítica elogia as várias estratégias e a satisfação de encaixar o zoológico. Em troca, a interação é quase nula, a vitrine traz sorte e quem já ama Ark Nova pode achá-lo raso. Por R$ 288 a R$ 399 na edição da Grok, é a melhor porta de entrada para o tema.",
+ "tagline": "O zoológico de Ark Nova, peça por peça.",
+ "consulta": "28/10/2026",
+ "fontes": [
+  [
+   "Feuerland Spiele – Artengarten",
+   "https://www.feuerland-spiele.de/spiele/artengarten/",
+   "página da editora: jogadores, duração, idade, arte, preço sugerido, aplicativo de pontuação"
+  ],
+  [
+   "Feuerland Spiele – Regras de Artengarten (PDF)",
+   "https://www.feuerland-spiele.de/fileadmin/game/Artengarten/Artengarten_Rules_Print_DE_V2-1_web.pdf",
+   "regras, preparação, fim de jogo e pontuação"
+  ],
+  [
+   "Capstone Games – Desafios solo avançados (PDF)",
+   "https://capstone-games.com/cdn/shop/files/Sanctuary_Solo_Challenges_Advanced_1_1_EN.pdf",
+   "modo solo"
+  ],
+  [
+   "BoardGameWire – Deutscher Spiele Preis 2026",
+   "https://boardgamewire.com/index.php/2026/10/27/two-games-two-deutscher-spiele-preis-wins-ark-nova-designer-mathias-wigge-takes-second-title-with-sanctuary/",
+   "prêmio, vendas, preço na Alemanha"
+  ],
+  [
+   "Wikipedia – Deutscher Spiele Preis",
+   "https://de.wikipedia.org/wiki/Deutscher_Spiele_Preis",
+   "prêmio"
+  ],
+  [
+   "Opinionated Gamers – Dale Yu: Review of Sanctuary",
+   "https://opinionatedgamers.com/2026/07/15/dale-yu-review-of-sanctuary/",
+   "crítica e opiniões do grupo"
+  ],
+  [
+   "Zatu – Sanctuary Review",
+   "https://zatu.com/en-us/blogs/reviews/sanctuary-review",
+   "crítica"
+  ],
+  [
+   "Board's Eye View – Sanctuary",
+   "https://www.boardseyeview.net/post/sanctuary",
+   "crítica"
+  ],
+  [
+   "Stidjen Plays Solo – Sanctuary",
+   "https://stidjenplayssolo.wordpress.com/2026/01/08/sanctuary-a-solo-review/",
+   "crítica do modo solo"
+  ],
+  [
+   "Board Game Bliss – Sanctuary",
+   "https://www.boardgamebliss.com/collections/mathias-wigge/products/sanctuary",
+   "nota BGG"
+  ],
+  [
+   "Board Game Oracle – Sanctuary",
+   "https://www.boardgameoracle.com/en-CA/boardgame/price/3Ir4dY3w3I/sanctuary",
+   "peso BGG"
+  ],
+  [
+   "Loja Grok Games",
+   "https://loja.grokgames.com.br/jogos",
+   "edição nacional e preço"
+  ],
+  [
+   "Amazon.com.br – Grok Games",
+   "https://www.amazon.com.br/grok-games/s?k=grok+games",
+   "preço de referência"
+  ],
+  [
+   "Playeasy – Santuário",
+   "https://www.playeasy.com.br/santuario/",
+   "edição nacional, disponibilidade"
+  ]
+ ],
+ "roteiro": {
+  "tema": "modern scientific zoo and wildlife conservation, lush hexagonal habitats of rock, forest and water, crocodile, tiger, capybara and birds, fresh greens, teal water and warm sand tones",
+  "cena": "a modern zoo seen from above as a mosaic of hexagonal habitats, a Sumatran tiger on rocks, a Nile crocodile in a river and tropical birds in a tree house",
+  "mesa": "a box titled \"SANTUÁRIO\" with zoo animal art, a personal zoo board covered with large hexagonal tiles showing animals, buildings and projects, a row of six tiles in a market display, four action tiles under the board and a conservation goals board",
+  "titulo": "SANTUÁRIO",
+  "chamada": "O ZOOLÓGICO DE ARK NOVA VIRA UM QUEBRA-CABEÇA DE PEÇAS HEXAGONAIS: MAIS CURTO, MAIS FÁCIL DE ENSINAR E AINDA CHEIO DE COMBINAÇÕES.",
+  "destaque": "VENCEDOR DO DEUTSCHER SPIELE PREIS 2026. A MESMA FILA DE AÇÕES DE ARK NOVA, AGORA EM TURNOS RÁPIDOS DE PEGAR UMA PEÇA E JOGAR.",
+  "lateral": [
+   "1–5 jogadores",
+   "20 min por jogador",
+   "complexidade 2,8 / 5 (média)",
+   "modo solo: sim",
+   "sem dados",
+   "designer Mathias Wigge",
+   "editora original Feuerland Spiele",
+   "editora no Brasil Grok Games",
+   "ano 2025",
+   "idioma: português"
+  ],
+  "numeros": [
+   [
+    "PEÇAS",
+    "135",
+    "animais, prédios e projetos"
+   ],
+   [
+    "NOTA BGG",
+    "7,7",
+    "de 10, via agregadores"
+   ],
+   [
+    "COMPLEXIDADE",
+    "2,8",
+    "de 5, peso médio"
+   ],
+   [
+    "CÓPIAS",
+    "20 mil",
+    "vendidas na Alemanha"
+   ]
+  ],
+  "como_resumo": "Pegue uma peça da vitrine, use uma ação e encaixe o zoológico.",
+  "passos": [
+   [
+    "PEGUE UMA PEÇA",
+    "Escolha uma das seis peças da vitrine, até a posição que a sua peça de ação de projetos alcança naquele momento."
+   ],
+   [
+    "USE UMA AÇÃO",
+    "Use projetos ou uma das três ações de animais: rocha, floresta ou água. Cada ação compra peças ou joga uma peça da mão."
+   ],
+   [
+    "FORÇA PELA POSIÇÃO",
+    "A ação mais à direita é a mais forte. O animal precisa de força igual ou maior que o nível dele. A ação usada volta para a esquerda."
+   ],
+   [
+    "ENCAIXE NO ZOO",
+    "Peças entram ao lado de outra, sem girar. Animais grandes pedem espaços livres; um casal da mesma espécie lado a lado rende conservação."
+   ],
+   [
+    "APOIE AS METAS",
+    "Junte símbolos para apoiar metas de conservação e melhorar ações. Quatro metas, zoo cheio ou pilha vazia encerram a partida."
+   ]
+  ],
+  "fortes": [
+   "Fila de ações de Ark Nova em turnos rápidos.",
+   "Ensina em minutos, diz o Opinionated Gamers.",
+   "Encaixar vizinhanças de símbolos é muito satisfatório.",
+   "Várias estratégias: encher o zoo ou combinar símbolos.",
+   "Mão de seis peças dá margem para planejar.",
+   "Metas de conservação sorteadas mudam cada partida.",
+   "Custa menos que Ark Nova na mesma editora."
+  ],
+  "atencao": [
+   "Quase sem interação: só a vitrine é disputada.",
+   "Sorte na vitrine pode travar a estratégia.",
+   "Peças grandes ocupam muita mesa.",
+   "Contagem final de pontos é trabalhosa.",
+   "Fã de Ark Nova pode achar raso.",
+   "Com cinco jogadores passa de hora e meia."
+  ],
+  "ficha": [
+   "Designer: Mathias Wigge",
+   "Arte: Christof Tisch e Felix Wermke",
+   "Editora original: Feuerland Spiele (2025)",
+   "Editora no Brasil: Grok Games",
+   "Jogadores: 1 a 5",
+   "Duração: 20 min por jogador",
+   "Idade: 12+",
+   "Componentes: 135 peças, 10 metas de conservação",
+   "Ações: 4 peças de ação por jogador",
+   "Preço sugerido na Alemanha: 49,90 €"
+  ],
+  "premios": [
+   "DEUTSCHER SPIELE PREIS 2026 · VENCEDOR"
+  ],
+  "perfil": [
+   [
+    "Quebra-cabeça de encaixe",
+    5
+   ],
+   [
+    "Facilidade de ensinar",
+    4
+   ],
+   [
+    "Variedade entre partidas",
+    4
+   ],
+   [
+    "Modo solo",
+    3
+   ],
+   [
+    "Interação entre jogadores",
+    1
+   ],
+   [
+    "Partida curta",
+    3
+   ]
+  ],
+  "extra": {
+   "titulo": "APLICATIVO DE PONTOS E DESAFIOS SOLO",
+   "texto": "A Feuerland oferece de graça um aplicativo web que conta os pontos a partir de uma foto do tabuleiro, além de folhas de desafios solo para baixar, do básico ao avançado."
+  },
+  "veredito": "A MELHOR PORTA DE ENTRADA PARA O ZOOLÓGICO DE ARK NOVA.",
+  "veredito_texto": "Turnos rápidos, regras enxutas e um quebra-cabeça de vizinhança que agrada. Quase não há interação e a vitrine traz sorte, mas para dois ou três jogadores é ótima compra."
+ },
+ "legenda": "O zoológico de Ark Nova, peça por peça. 🐊🦜\n\nSantuário venceu o Deutscher Spiele Preis 2026, o prêmio alemão votado pelo público.\nMathias Wigge pegou a fila de ações de Ark Nova e fez um quebra-cabeça de peças hexagonais que se ensina em minutos.\nQuase não tem interação e a vitrine traz sorte, mas é a melhor porta de entrada para o tema. Recomendado.\n\nVocê prefere a versão completa (Ark Nova) ou a versão de uma hora?\n\nResenha completa no link da bio.\n\n#Santuario #Sanctuary #ArkNova #JogosDeTabuleiro #BoardGames #Boardgamer #DeutscherSpielePreis #GrokGames #BoardGameReview #Tabuleiro #EliteBoardgamers"
+}

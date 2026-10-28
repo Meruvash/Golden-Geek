@@ -1,0 +1,56 @@
+{
+ "slug": "santuario",
+ "usar_na_pagina": true,
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 1600,
+   "altura": 1600,
+   "editora": "Feuerland Spiele",
+   "credito": "Imagem: Feuerland Spiele · edição alemã (Artengarten)",
+   "pagina": "https://www.feuerland-spiele.de/spiele/artengarten/",
+   "imagem": "https://www.feuerland-spiele.de/fileadmin/game/Artengarten/Artengarten_BoxTop.jpg",
+   "baixada_em": "2026-10-28",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/mesa-1.webp",
+   "tipo": "mesa",
+   "largura": 1600,
+   "altura": 1067,
+   "editora": "Capstone Games",
+   "credito": "Imagem: Capstone Games · edição em inglês (Sanctuary)",
+   "pagina": "https://capstone-games.com/products/sanctuary",
+   "imagem": "https://cdn.shopify.com/s/files/1/0947/3907/1278/files/Capstone-Sanctuary-001.jpg",
+   "baixada_em": "2026-10-28",
+   "aprovada": true,
+   "principal": true
+  },
+  {
+   "arquivo": "fotos/mesa-2.webp",
+   "tipo": "mesa",
+   "largura": 1600,
+   "altura": 1067,
+   "editora": "Capstone Games",
+   "credito": "Imagem: Capstone Games · edição em inglês (Sanctuary)",
+   "pagina": "https://capstone-games.com/products/sanctuary",
+   "imagem": "https://cdn.shopify.com/s/files/1/0947/3907/1278/files/Capstone-Sanctuary-002.jpg",
+   "baixada_em": "2026-10-28",
+   "aprovada": true,
+   "jogar": true
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 1600,
+   "altura": 1067,
+   "editora": "Capstone Games",
+   "credito": "Imagem: Capstone Games · edição em inglês (Sanctuary)",
+   "pagina": "https://capstone-games.com/products/sanctuary",
+   "imagem": "https://cdn.shopify.com/s/files/1/0947/3907/1278/files/Capstone-Sanctuary-006.jpg",
+   "baixada_em": "2026-10-28",
+   "aprovada": true
+  }
+ ]
+}

@@ -37,7 +37,7 @@ Uma nota por arquivo em `conteudo/noticias/<AAAA-MM-DD>-<assunto>.json`, no **pa
 ## 4. Atualizar os blocos
 
 Em `conteudo/home.json`:
-- **Em alta**: 5 jogos que mais aparecem nas notas dos últimos 7 dias, cada um com o motivo e o link da nota.
+- **Em alta**: 5 jogos que mais aparecem nas notas dos últimos 7 dias, cada um com o motivo e o link de uma nota **que tenha o jogo no título** (a capa da nota é a dele). Jogo citado só de passagem não entra; se ele merece estar ali, ganha nota própria. `build_home.py` recusa item que leve a nota de outro jogo.
 - **Financiamentos**: tire o que encerrou, marque "aberto" ou "encerrado", ligue à nota (`noticia`).
 - **Agenda**: tire o que passou; datas não confirmadas ficam `"previsto": true`.
 

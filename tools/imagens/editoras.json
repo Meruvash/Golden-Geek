@@ -9,7 +9,8 @@
   "estrategia": "sitemap+html",
   "press_kit": "https://www.feuerland-spiele.de/fileadmin/catalog/FL_Katalog_Herbst_2026_web.pdf",
   "paginas": {
-   "ark-nova": "https://www.feuerland-spiele.de/spielwelten/arche-nova/"
+   "ark-nova": "https://www.feuerland-spiele.de/spielwelten/arche-nova/",
+   "santuario": "https://www.feuerland-spiele.de/spiele/artengarten/"
   },
   "status": "ok",
   "obs": "",
@@ -740,6 +741,27 @@
    "crawl_delay": null,
    "sitemaps": [
     "https://restorationgames.com/sitemap_index.xml"
+   ],
+   "verificado_em": "2026-10-28"
+  }
+ },
+ "capstone-games.com": {
+  "nome": "Capstone Games",
+  "apelidos": [
+   "Capstone Games"
+  ],
+  "site": "https://capstone-games.com",
+  "plataforma": "shopify",
+  "estrategia": "sitemap+shopify_json",
+  "press_kit": "https://capstone-games.com/pages/become-a-retailer",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://capstone-games.com/sitemap.xml"
    ],
    "verificado_em": "2026-10-28"
   }

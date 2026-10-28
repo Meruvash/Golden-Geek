@@ -125,6 +125,17 @@ def checar_texto(c):
     return erros
 
 
+def fotos_liberadas(slug):
+    """Formato atual: foto oficial no topo e infográfico no meio (modelo: fate-of-the-fellowship).
+    Vale quando <slug>/fotos/fontes.json tem "usar_na_pagina" (crivo.py --aplicar)."""
+    f = Path(__file__).resolve().parent.parent / slug / "fotos" / "fontes.json"
+    return f.exists() and bool(json.loads(f.read_text(encoding="utf-8")).get("usar_na_pagina"))
+
+
+SEM_FOTOS = ("sem fotos oficiais liberadas para a página: rode a skill imagens (todas as editoras, inclusive as "
+             "licenciadas de outros países) e crivo.py --aplicar; --sem-fotos só com o OK do usuário")
+
+
 def main(arquivos):
     falhou = False
     for a in arquivos:

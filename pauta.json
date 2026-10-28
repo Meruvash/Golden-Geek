@@ -137,6 +137,11 @@
    "jogo": "Scythe",
    "url": "https://eliteboardgamers.com.br/scythe/",
    "data": "2026-10-28"
+  },
+  {
+   "jogo": "Santuário",
+   "url": "https://eliteboardgamers.com.br/santuario/",
+   "data": "2026-10-28"
   }
  ],
  "jogos": [
@@ -3224,7 +3229,7 @@
    "premios_distintos": 1
   },
   {
-   "jogo": "Artengarten",
+   "jogo": "Santuário",
    "serie": null,
    "tipo": "jogo",
    "vencedor": true,
@@ -3238,7 +3243,7 @@
      "fonte": "https://de.wikipedia.org/wiki/Deutscher_Spiele_Preis"
     }
    ],
-   "status": "na_fila",
+   "status": "publicado",
    "premios_distintos": 1,
    "prioridade": 82
   },

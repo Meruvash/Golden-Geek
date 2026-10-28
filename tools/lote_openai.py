@@ -2,6 +2,7 @@
 
 Uso:
   python3 tools/lote_openai.py enviar conteudo/<slug>.json [...]   cria o lote e grava lotes/pendente.json
+                                                                   (recusa jogo sem fotos oficiais liberadas; --sem-fotos só com o OK do usuário)
   python3 tools/lote_openai.py buscar                              baixa o lote pendente para <slug>/variacao-1.png
 Precisa de OPENAI_API_KEY. As referências vêm de modelos/ já publicados no GitHub Pages.
 """
@@ -15,7 +16,7 @@ from pathlib import Path
 import requests
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from checar_roteiro import checar, checar_texto  # noqa: E402
+from checar_roteiro import SEM_FOTOS, checar, checar_texto, fotos_liberadas  # noqa: E402
 from prompt_infografico import TAMANHO, prompt  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -32,7 +33,11 @@ def cabecalho():
     return {"Authorization": f"Bearer {chave}"}
 
 
-def enviar(arquivos):
+def enviar(arquivos, sem_fotos=False):
+    if not sem_fotos:
+        faltam = [a for a in arquivos if not fotos_liberadas(json.loads(Path(a).read_text(encoding="utf-8"))["slug"])]
+        if faltam:
+            sys.exit(f"Lote não enviado: {', '.join(faltam)}: {SEM_FOTOS}.")
     if PENDENTE.exists():
         sys.exit(f"Já existe um lote pendente em {PENDENTE.relative_to(ROOT)}; rode 'buscar' antes.")
     reprovados = {a: (lambda c: checar(c) + checar_texto(c))(json.loads(Path(a).read_text(encoding="utf-8"))) for a in arquivos}
@@ -90,7 +95,7 @@ def buscar():
 
 if __name__ == "__main__":
     if len(sys.argv) >= 3 and sys.argv[1] == "enviar":
-        enviar(sys.argv[2:])
+        enviar([a for a in sys.argv[2:] if a != "--sem-fotos"], "--sem-fotos" in sys.argv)
     elif sys.argv[1:] == ["buscar"]:
         buscar()
     else:
