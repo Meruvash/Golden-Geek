@@ -11,6 +11,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import seo  # noqa: E402
 from filtros_resenha import PERFIS, derivar  # noqa: E402
 from imagens_resp import srcset  # noqa: E402
+from layout import cabecalho  # noqa: E402
 from build_review import INSTAGRAM, ROOT, SITE, WHATSAPP, campo, capa_src, versao, e, faixa_nota, icone, nome_br, numero, selo_class, selo_perfil  # noqa: E402
 
 
@@ -198,12 +199,7 @@ footer .in{{display:flex;flex-wrap:wrap;gap:10px 20px;padding-top:18px;padding-b
 </style>
 </head>
 <body>
-<header class="bar"><div class="in">
- <a class="marca" href="../"><img src="../marca/elite-boardgamers.webp" width="318" height="254" alt="Elite Boardgamers"></a>
- <a class="ig" href="{INSTAGRAM}" target="_blank" rel="noopener" aria-label="Instagram @eliteboardgamers">{icone("insta")}<span>@eliteboardgamers</span></a>
- <a class="zap-mini" href="{WHATSAPP}" target="_blank" rel="noopener">{icone("zap")}<span>Grupo do WhatsApp</span></a>
-</div></header>
-<nav class="nav" aria-label="Seções do site"><ul class="in"><li><a href="../">Notícias</a></li><li><a href="./" aria-current="page">Resenhas</a></li><li><a href="../lancamentos/">Lançamentos</a></li><li><a href="../consulta/">Consulta Golden Geek</a></li></ul></nav>
+{cabecalho("../", "Resenhas")}
 <main class="in">
  <section class="topo">
   <h1>Resenhas de jogos premiados</h1>

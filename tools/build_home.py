@@ -19,6 +19,7 @@ import seo  # noqa: E402
 from imagens_resp import miniatura, srcset  # noqa: E402
 from build_sitemap import lastmod_registrado  # noqa: E402
 from build_review import INSTAGRAM, ROOT, SITE, WHATSAPP, e, icone, versao  # noqa: E402
+from layout import cabecalho  # noqa: E402
 from noticias.checar_noticia import problemas  # noqa: E402
 
 MESES = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"]
@@ -249,17 +250,6 @@ footer .in{display:flex;flex-wrap:wrap;gap:10px 20px;padding-top:18px;padding-bo
 """
 
 
-def cabecalho(pre, atual):
-    itens = [("", "Notícias"), ("resenhas/", "Resenhas"), ("lancamentos/", "Lançamentos"), ("consulta/", "Consulta Golden Geek")]
-    nav = "".join(f'<li><a href="{pre}{h}"{" aria-current=\"page\"" if t == atual else ""}>{t}</a></li>' for h, t in itens)
-    return f"""<header class="bar"><div class="in">
- <a class="marca" href="{pre or './'}"><img src="{pre}marca/elite-boardgamers.webp" width="318" height="254" alt="Elite Boardgamers"></a>
- <a class="ig" href="{INSTAGRAM}" target="_blank" rel="noopener" aria-label="Instagram @eliteboardgamers">{icone("insta")}<span>@eliteboardgamers</span></a>
- <a class="zap-mini" href="{WHATSAPP}" target="_blank" rel="noopener">{icone("zap")}<span>Grupo do WhatsApp</span></a>
-</div></header>
-<nav class="nav" aria-label="Seções do site"><ul class="in">{nav}</ul></nav>"""
-
-
 def rodape(pre):
     return f"""<footer><div class="in">
  <span>Elite Boardgamers</span><a href="{pre or './'}">Notícias</a><a href="{pre}resenhas/">Resenhas</a><a href="{pre}lancamentos/">Lançamentos</a><a href="{pre}consulta/">Consulta Golden Geek</a><a href="{pre}politica-editorial/">Política editorial</a>
@@ -386,7 +376,7 @@ def build_home():
         prox = f'<a href="{p_pre}noticias/pagina/{num + 1}/" rel="next">Mais antigas →</a>' if num < len(paginas) else ""
         nav = f'<nav class="paginas" aria-label="Páginas de notícias">{ant}<span>Página {num} de {len(paginas)}</span>{prox}</nav>' if len(paginas) > 1 else ""
         sufixo = "" if num == 1 else f" (página {num})"
-        corpo_arq = f"""{cabecalho(p_pre, "Notícias")}
+        corpo_arq = f"""{cabecalho(p_pre, "Notícias", sub=num > 1)}
 <main id="conteudo" class="in"><div class="nota"><a class="volta" href="{p_pre}">← Página inicial</a>
  <section class="bloco ultimas"><h1 class="h-sec">Notícias de jogos de tabuleiro{sufixo}</h1><ul class="lista-n">{arquivo}</ul>{nav}</section></div></main>
 {rodape(p_pre)}"""
@@ -433,7 +423,7 @@ def build_home():
     for s in slugs:
         c = json.loads((ROOT / "conteudo" / f"{s}.json").read_text(encoding="utf-8"))
         res += f'<li><a href="{s}/"><img src="{s}/capa.jpg{versao(ROOT / s / "capa.jpg")}" srcset="{srcset(ROOT / s / "capa.jpg", pre, (400,))}" sizes="(min-width: 640px) 160px, 45vw" width="800" height="800" alt="" loading="lazy"><b>{e(c["jogo"])}</b></a></li>'
-    corpo = f"""{cabecalho(pre, "Notícias")}
+    corpo = f"""{cabecalho(pre)}
 <main id="conteudo" class="in">
  <p class="edicao">Edição de {data_longa(max(n["data"] for n in ns))}</p>
  <div class="grade">
@@ -494,7 +484,7 @@ def build_nota(n):
     nao = "".join(f"<li>{e(x)}</li>" for x in n.get("nao_e_para", []))
     sc = SELO_CLASSE[n["selo"]]
     leia = "".join(f'<li><a href="{pre}noticias/{o["slug"]}/">{e(o["titulo"])}</a></li>' for o in relacionadas(n))
-    corpo = f"""{cabecalho(pre, "Notícias")}
+    corpo = f"""{cabecalho(pre, "Notícias", sub=True)}
 <main id="conteudo" class="in"><div class="nota">
  <a class="volta" href="{pre}noticias/">← Todas as notícias</a>
  <article class="bloco">
@@ -539,6 +529,9 @@ if __name__ == "__main__":
     for pub in json.loads((ROOT / "pauta.json").read_text(encoding="utf-8"))["publicadas"]:
         slug = pub["url"].rstrip("/").split("/")[-1]
         (ROOT / slug / "index.html").write_text(build_review.build(json.loads((ROOT / "conteudo" / f"{slug}.json").read_text(encoding="utf-8"))), encoding="utf-8")
+    import build_lista
+    (ROOT / "resenhas" / "index.html").write_text(build_lista.build(), encoding="utf-8")
+    print("ok resenhas/index.html")
     import build_consulta
     print("ok consulta/index.html:", build_consulta.build())
     import build_calendario
