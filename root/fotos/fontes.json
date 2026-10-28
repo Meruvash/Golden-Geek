@@ -1,0 +1,71 @@
+{
+ "slug": "root",
+ "usar_na_pagina": true,
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 1080,
+   "altura": 1080,
+   "editora": "MeepleBR",
+   "credito": "Imagem: MeepleBR",
+   "pagina": "https://meeplebr.com/product/root/",
+   "imagem": "https://meeplebr.com/wp-content/uploads/2020/03/Root-Caixa-com-fundo.png",
+   "baixada_em": "2026-10-28",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/mesa-1.webp",
+   "tipo": "mesa",
+   "largura": 1080,
+   "altura": 1080,
+   "editora": "MeepleBR",
+   "credito": "Imagem: MeepleBR",
+   "pagina": "https://meeplebr.com/product/root/",
+   "imagem": "https://meeplebr.com/wp-content/uploads/2020/03/001_1-copiar.1_005.png",
+   "baixada_em": "2026-10-28",
+   "aprovada": true,
+   "principal": true
+  },
+  {
+   "arquivo": "fotos/mesa-2.webp",
+   "tipo": "mesa",
+   "largura": 1080,
+   "altura": 1080,
+   "editora": "MeepleBR",
+   "credito": "Imagem: MeepleBR",
+   "pagina": "https://meeplebr.com/product/root/",
+   "imagem": "https://meeplebr.com/wp-content/uploads/2020/03/001_1-copiar.1_001.png",
+   "baixada_em": "2026-10-28",
+   "aprovada": true,
+   "texto": true,
+   "fora": true
+  },
+  {
+   "arquivo": "fotos/jogabilidade-1.webp",
+   "tipo": "jogabilidade",
+   "largura": 1080,
+   "altura": 1080,
+   "editora": "MeepleBR",
+   "credito": "Imagem: MeepleBR",
+   "pagina": "https://meeplebr.com/product/root/",
+   "imagem": "https://meeplebr.com/wp-content/uploads/2020/03/001_1-copiar.1_014.png",
+   "baixada_em": "2026-10-28",
+   "aprovada": true,
+   "fora": true
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 1080,
+   "altura": 1080,
+   "editora": "MeepleBR",
+   "credito": "Imagem: MeepleBR",
+   "pagina": "https://meeplebr.com/product/root/",
+   "imagem": "https://meeplebr.com/wp-content/uploads/2020/03/001_1-copiar.1_008.png",
+   "baixada_em": "2026-10-28",
+   "aprovada": true,
+   "jogar": true
+  }
+ ]
+}

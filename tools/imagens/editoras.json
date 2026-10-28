@@ -619,5 +619,66 @@
    "sitemaps": [],
    "verificado_em": "2026-10-27"
   }
+ },
+ "fantasyflightgames.com": {
+  "nome": "Fantasy Flight Games",
+  "apelidos": [
+   "Fantasy Flight Games"
+  ],
+  "site": "https://www.fantasyflightgames.com",
+  "plataforma": "wordpress",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.fantasyflightgames.com/sitemap_index.xml"
+   ],
+   "verificado_em": "2026-10-28"
+  }
+ },
+ "rprod.com": {
+  "nome": "Repos Production",
+  "apelidos": [
+   "Repos Production"
+  ],
+  "site": "https://www.rprod.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [],
+   "verificado_em": "2026-10-28"
+  }
+ },
+ "kinsonkey.com": {
+  "nome": "Kinson Key Games",
+  "apelidos": [
+   "Kinson Key Games"
+  ],
+  "site": "https://www.kinsonkeygames.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.kinsonkeygames.com/sitemap.xml"
+   ],
+   "verificado_em": "2026-10-28"
+  }
  }
 }

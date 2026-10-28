@@ -1,5 +1,6 @@
 {
  "slug": "cascadia",
+ "usar_na_pagina": true,
  "fotos": [
   {
    "arquivo": "fotos/capa-1.webp",
@@ -23,7 +24,8 @@
    "pagina": "https://www.flatout.games/cascadia-signup",
    "imagem": "https://images.squarespace-cdn.com/content/v1/5ca7cef5147c5a0001b2bfe7/1594439076898-D8L90CY9SIWSMJBZCPA5/IMG_20200707_140628.jpg",
    "baixada_em": "2026-10-27",
-   "aprovada": true
+   "aprovada": true,
+   "principal": true
   },
   {
    "arquivo": "fotos/componentes-1.webp",
@@ -35,7 +37,8 @@
    "pagina": "https://www.flatout.games/cascadia-retailer",
    "imagem": "https://images.squarespace-cdn.com/content/v1/5ca7cef5147c5a0001b2bfe7/1599433036316-EZGNYFDOQRYOZWBUD29D/IMG_4270_SM_edited.jpg",
    "baixada_em": "2026-10-27",
-   "aprovada": true
+   "aprovada": true,
+   "jogar": true
   }
  ]
 }

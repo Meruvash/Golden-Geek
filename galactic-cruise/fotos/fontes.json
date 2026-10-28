@@ -1,0 +1,70 @@
+{
+ "slug": "galactic-cruise",
+ "usar_na_pagina": true,
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 1297,
+   "altura": 1600,
+   "editora": "Kinson Key Games",
+   "credito": "Imagem: Kinson Key Games",
+   "pagina": "https://www.kinsonkeygames.com/galactic-cruise-landing",
+   "imagem": "https://images.squarespace-cdn.com/content/v1/63be3bbedccfd7204863dacc/7fca24d2-0dbb-4c32-9bcc-f290a93a2d42/Galactic-Cruise-box-front.jpg",
+   "baixada_em": "2026-10-28",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/mesa-1.webp",
+   "tipo": "mesa",
+   "largura": 1600,
+   "altura": 1200,
+   "editora": "Kinson Key Games",
+   "credito": "Imagem: Kinson Key Games",
+   "pagina": "https://www.kinsonkeygames.com/galactic-cruise-landing",
+   "imagem": "https://images.squarespace-cdn.com/content/v1/63be3bbedccfd7204863dacc/e6cfcbd7-cb00-401d-8f3a-94a2c5a547c3/IMG_8497.jpg",
+   "baixada_em": "2026-10-28",
+   "aprovada": true,
+   "principal": true
+  },
+  {
+   "arquivo": "fotos/mesa-2.webp",
+   "tipo": "mesa",
+   "largura": 1600,
+   "altura": 1200,
+   "editora": "Kinson Key Games",
+   "credito": "Imagem: Kinson Key Games",
+   "pagina": "https://www.kinsonkeygames.com/galactic-cruise-landing",
+   "imagem": "https://images.squarespace-cdn.com/content/v1/63be3bbedccfd7204863dacc/756c53da-2afe-48b6-beee-3ccdcb9d2494/IMG_8526.jpg",
+   "baixada_em": "2026-10-28",
+   "aprovada": true,
+   "fora": true
+  },
+  {
+   "arquivo": "fotos/jogabilidade-1.webp",
+   "tipo": "jogabilidade",
+   "largura": 1600,
+   "altura": 1200,
+   "editora": "Kinson Key Games",
+   "credito": "Imagem: Kinson Key Games",
+   "pagina": "https://www.kinsonkeygames.com/galactic-cruise-landing",
+   "imagem": "https://images.squarespace-cdn.com/content/v1/63be3bbedccfd7204863dacc/0fd7d977-bb40-4d10-bc4f-0027fc3fe838/IMG_8507.jpg",
+   "baixada_em": "2026-10-28",
+   "aprovada": true,
+   "fora": true
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 1600,
+   "altura": 1404,
+   "editora": "Kinson Key Games",
+   "credito": "Imagem: Kinson Key Games",
+   "pagina": "https://www.kinsonkeygames.com/galactic-cruise-landing",
+   "imagem": "https://images.squarespace-cdn.com/content/v1/63be3bbedccfd7204863dacc/9782b3d5-0602-41d0-82e7-7bd403b240bb/Screenshot+2024-01-17+at+1.17.24+PM.png",
+   "baixada_em": "2026-10-28",
+   "aprovada": true,
+   "jogar": true
+  }
+ ]
+}

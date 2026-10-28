@@ -1,5 +1,6 @@
 {
  "slug": "scythe",
+ "usar_na_pagina": true,
  "fotos": [
   {
    "arquivo": "fotos/capa-1.webp",
@@ -23,7 +24,8 @@
    "pagina": "https://stonemaiergames.com/games/scythe/buy-scythe/",
    "imagem": "https://stonemaiergames.com/wp-content/uploads/2015/11/IMG_6252.jpg",
    "baixada_em": "2026-10-27",
-   "aprovada": true
+   "aprovada": true,
+   "principal": true
   }
  ]
 }
