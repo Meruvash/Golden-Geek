@@ -1,0 +1,99 @@
+{
+ "slug": "guia-dos-premios-2027",
+ "data": "2026-10-28",
+ "categoria": "Prêmios",
+ "titulo": "Guia dos prêmios de 2027: quando saem Golden Geek, Spiel des Jahres e Kennerspiel",
+ "selo": "Informativo",
+ "lide": "Os três prêmios que mais orientam a nossa pauta de resenhas seguem um calendário fixo: o Golden Geek, votado pelos usuários do BoardGameGeek, sai entre abril e maio; o Spiel des Jahres e o Kennerspiel, decididos por júri, têm indicados em maio e vencedores em julho.",
+ "por_que_importa": "Só resenhamos jogos premiados, então este calendário é também o da nossa pauta. Saber quando cada prêmio sai ajuda a decidir se compra agora ou espera: um jogo indicado em maio costuma ficar mais caro e mais difícil de achar depois da vitória.",
+ "numeros": [
+  [
+   "15",
+   "categorias do Golden Geek",
+   "BoardGameWire"
+  ],
+  [
+   "12/07/2026",
+   "cerimônia do Spiel des Jahres em Berlim",
+   "iCv2"
+  ],
+  [
+   "11/05/2026",
+   "anúncio dos vencedores do Golden Geek",
+   "Opinionated Gamers"
+  ]
+ ],
+ "corpo": [
+  "No Golden Geek do ciclo 2025, anunciado em maio de 2026, Galactic Cruise venceu como jogo pesado do ano, O Senhor dos Anéis: Sina da Sociedade levou jogo médio, cooperativo e temático, e Hot Streak ficou com jogo leve e de festa. Vantage foi o mais inovador e o melhor solo.",
+  "No Spiel des Jahres 2026, venceu Dito!, de Martin Ang; no Kennerspiel, Rebirth, de Reiner Knizia. Fora desse calendário, o Deutscher Spiele Preis, votado pelo público, sai na Spiel Essen, em outubro: em 2026 venceu Santuário."
+ ],
+ "no_brasil": "Vários premiados de 2026 já estão aqui: Sina da Sociedade (Galápagos) tem resenha nossa, Vantage chegou às lojas em outubro e Santuário saiu pela Grok. Não encontramos edição nacional anunciada de Dito!, Rebirth, Galactic Cruise ou Hot Streak até 28/10/2026.",
+ "critica": [
+  {
+   "fonte": "Júri do Spiel des Jahres, via Tagesspiegel/dpa",
+   "texto": "Sobre Dito!: o que conta não é saber as respostas, e sim entender o ponto de vista dos outros.",
+   "citacao": true
+  }
+ ],
+ "para_quem": [
+  "Usa os prêmios para decidir o que comprar",
+  "Quer saber quando sair cada lista de indicados"
+ ],
+ "nao_e_para": [],
+ "veredito": "Guarde as janelas: indicados do Golden Geek em abril, do Spiel des Jahres em maio, vencedores em maio e julho. As datas exatas de 2027 ainda não foram anunciadas; atualizamos esta página quando saírem.",
+ "fontes": [
+  {
+   "nome": "Opinionated Gamers: vencedores do Golden Geek",
+   "url": "https://opinionatedgamers.com/2026/05/11/galactic-cruise-fate-of-the-fellowship-and-hot-streak-win-2025-golden-geek-awards/",
+   "data": "28/10/2026"
+  },
+  {
+   "nome": "BoardGameWire: indicados ao Golden Geek",
+   "url": "https://boardgamewire.com/?p=6478",
+   "data": "28/10/2026"
+  },
+  {
+   "nome": "Spiel des Jahres: Dito! é o Spiel des Jahres 2026",
+   "url": "https://www.spiel-des-jahres.de/en/dito-is-spiel-des-jahres-2026/",
+   "data": "28/10/2026"
+  },
+  {
+   "nome": "Opinionated Gamers: indicados ao Spiel des Jahres 2026",
+   "url": "https://opinionatedgamers.com/2026/05/19/2026-sdj-nominations-announced/",
+   "data": "28/10/2026"
+  },
+  {
+   "nome": "iCv2: vencedor do Spiel des Jahres",
+   "url": "https://icv2.com/articles/news/view/62835/spiel-des-jahres-winner-announced",
+   "data": "28/10/2026"
+  },
+  {
+   "nome": "Tagesspiegel: Dito ist das Spiel des Jahres 2026",
+   "url": "https://www.tagesspiegel.de/gesellschaft/panorama/brettspiele-partyspiel-dito-ist-das-spiel-des-jahres-2026-15830830.html",
+   "data": "28/10/2026"
+  },
+  {
+   "nome": "BoardGameWire: Deutscher Spiele Preis 2026",
+   "url": "https://boardgamewire.com/index.php/2026/10/27/two-games-two-deutscher-spiele-preis-wins-ark-nova-designer-mathias-wigge-takes-second-title-with-sanctuary/",
+   "data": "27/10/2026"
+  }
+ ],
+ "imagem": {
+  "arquivo": "capas/53972.jpg",
+  "credito": "Capa de Galactic Cruise via Ludopedia"
+ },
+ "jogos": [
+  {
+   "nome": "O Senhor dos Anéis: Sina da Sociedade",
+   "resenha": "fate-of-the-fellowship"
+  }
+ ],
+ "crivo": {
+  "pontos": 9,
+  "criterios": [
+   "Prêmios grandes (4)",
+   "Jogo com resenha nossa: Sina da Sociedade (3)",
+   "Confirmada por duas fontes (2)"
+  ]
+ }
+}

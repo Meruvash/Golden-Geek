@@ -119,7 +119,7 @@ A notícia da Elite Boardgamers não repete o release: diz o que aconteceu, por 
 | `numeros` | Em números | 2 a 4 itens `[valor, rótulo, fonte]`. Só número com fonte; preço sempre com data. |
 | `corpo` | Contexto | 1 a 3 parágrafos, 40 a 200 palavras: o que o leitor precisa saber para entender. |
 | `no_brasil` | No Brasil | 25 a 80 palavras: editora nacional, preço com data, disponibilidade, ou a falta de edição nacional. |
-| `critica` | O que diz a crítica | 1 a 3 itens `{fonte, texto, citacao}`. `citacao: true` só para frase literal traduzida ("tradução livre"); senão é paráfrase atribuída ("Para a Board Game Quest, …"). |
+| `critica` | O que diz a crítica | 1 a 3 itens `{fonte, texto, citacao}`; vazio só em nota **Informativo** sem resenha publicada, e a página avisa isso. `citacao: true` só para frase literal traduzida ("tradução livre"); senão é paráfrase atribuída ("Para a Board Game Quest, …"). |
 | `para_quem` / `nao_e_para` | Interessa a você se… / Pense duas vezes se… | 1 a 3 itens cada (`nao_e_para` pode ficar vazio em nota informativa). |
 | `veredito` | Nossa opinião | 20 a 60 palavras: conselho claro (comprar, esperar, acompanhar) e o porquê. |
 | `fontes` | Fontes | pelo menos 2, com link e data da consulta. |

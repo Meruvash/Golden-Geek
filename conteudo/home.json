@@ -34,44 +34,44 @@
  ],
  "financiamentos": [
   {
-   "nome": "O Senhor dos Anéis: Inimigos da Terra-Média",
-   "editora": "D20 Culture",
-   "onde": "Brasil",
-   "situacao": "Em financiamento coletivo",
-   "link": "https://ludopedia.com.br/lancamentos?mes=2026-10",
-   "fonte": "Ludopedia, 28/10/2026"
-  },
-  {
-   "nome": "DANTE: Inferno",
-   "editora": "Across the Board",
-   "onde": "Brasil",
-   "situacao": "Em financiamento coletivo",
-   "link": "https://ludopedia.com.br/topico/99069/-topico-oficial-dante-inferno",
-   "fonte": "Ludopedia, 28/10/2026"
-  },
-  {
    "nome": "BattleForge: Berserker",
    "editora": "Calamity Games",
-   "onde": "Brasil",
-   "situacao": "Em financiamento coletivo",
-   "link": "https://ludopedia.com.br/lancamentos?mes=2026-10",
-   "fonte": "Ludopedia, 28/10/2026"
+   "onde": "Brasil · aberto",
+   "situacao": "Pré-venda no MeepleStarter até 15/11",
+   "fonte": "MeepleStarter, 28/10/2026",
+   "noticia": "financiamentos-abertos-battleforge-dia-da-caca"
   },
   {
    "nome": "Dia da Caça",
    "editora": "Ludovia Estúdio",
-   "onde": "Brasil",
-   "situacao": "Em financiamento coletivo",
-   "link": "https://ludopedia.com.br/lancamentos?mes=2026-10",
-   "fonte": "Ludopedia, 28/10/2026"
+   "onde": "Brasil · aberto",
+   "situacao": "62% da meta, termina em 06/11",
+   "fonte": "MeepleStarter, 28/10/2026",
+   "noticia": "financiamentos-abertos-battleforge-dia-da-caca"
   },
   {
    "nome": "The Lord of the Rings: The King's Gambit",
    "editora": "Restoration Games",
-   "onde": "Kickstarter",
-   "situacao": "US$ 2,33 milhões de mais de 7.300 apoiadores no último dia",
-   "link": "https://boardgamewire.com/index.php/2026/10/19/i-wouldnt-expect-this-to-become-the-norm-backers-overwhelmingly-choose-kings-gambit-most-expensive-tiers-power-crowdfund-past-2-3m/",
-   "fonte": "BoardGameWire, 19/10/2026"
+   "onde": "Kickstarter · encerrado",
+   "situacao": "US$ 2,58 milhões; edição de loja em 2027",
+   "fonte": "Kicktraq, 20/10/2026",
+   "noticia": "kings-gambit-fecha-com-2-5-milhoes"
+  },
+  {
+   "nome": "O Senhor dos Anéis: Inimigos da Terra-Média",
+   "editora": "D20 Culture",
+   "onde": "Brasil · encerrado",
+   "situacao": "Entrega prevista para fevereiro de 2027",
+   "fonte": "Catarse, 28/10/2026",
+   "noticia": "inimigos-da-terra-media-entrega-2027"
+  },
+  {
+   "nome": "DANTE: Inferno",
+   "editora": "Across the Board",
+   "onde": "Brasil · encerrado",
+   "situacao": "R$ 425 mil no Catarse; sem pré-venda aberta",
+   "fonte": "Catarse, 28/10/2026",
+   "noticia": "dante-inferno-across-the-board"
   }
  ],
  "agenda": [
@@ -79,31 +79,36 @@
    "quando": "Novembro",
    "titulo": "11 jogos de tabuleiro previstos no Brasil",
    "detalhe": "Calendário da Ludopedia",
-   "previsto": false
+   "previsto": false,
+   "link": "#chegando"
   },
   {
    "quando": "26 a 28 fev 2027",
    "titulo": "Festival International des Jeux, Cannes",
    "detalhe": "Entrega do As d'Or",
-   "previsto": false
+   "previsto": false,
+   "noticia": "cannes-2027-as-dor"
   },
   {
    "quando": "Abril de 2027",
    "titulo": "Indicados ao Golden Geek",
    "detalhe": "Pela data dos anos anteriores",
-   "previsto": true
+   "previsto": true,
+   "noticia": "guia-dos-premios-2027"
   },
   {
    "quando": "Maio de 2027",
    "titulo": "Indicados ao Spiel des Jahres",
    "detalhe": "Pela data dos anos anteriores",
-   "previsto": true
+   "previsto": true,
+   "noticia": "guia-dos-premios-2027"
   },
   {
-   "quando": "Julho de 2027",
+   "quando": "9 a 11 jul 2027",
    "titulo": "Diversão Offline, São Paulo",
-   "detalhe": "A edição de 2026 foi de 10 a 12 de julho",
-   "previsto": true
+   "detalhe": "Datas indicadas no site do evento",
+   "previsto": true,
+   "noticia": "diversao-offline-2027"
   }
  ]
 }

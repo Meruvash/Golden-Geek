@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Notícias | Elite Boardgamers</title>
+<meta name="description" content="Todas as notícias de jogos de tabuleiro da Elite Boardgamers, com fonte, data e opinião.">
+<meta property="og:title" content="Notícias | Elite Boardgamers">
+<meta property="og:description" content="Todas as notícias de jogos de tabuleiro da Elite Boardgamers, com fonte, data e opinião.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://eliteboardgamers.com.br/noticias/">
+<meta property="og:image" content="https://eliteboardgamers.com.br/resenhas/capa.jpg">
+<meta name="theme-color" content="#000000">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../fontes/public-sans.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:"Public Sans";src:url(../fontes/public-sans.woff2) format("woff2");font-weight:400 800;font-display:swap}
+/* Moldura preta da marca com cartões claros de leitura; régua de densidade do BoardGameGeek */
+:root{color-scheme:dark;--ground:#000;--bar:#000;--panel:#0f1115;--panel2:#171a20;--ink:#eceff3;--muted:#a1a9b5;--line:#262a32;
+--paper:#f4f5f7;--paper-ink:#14171c;--paper-muted:#5a6270;--paper-line:#dde1e7;--gold:#e3b23c;--link:#1f5fae;--zap:#157a43;
+--premios:#8a5f00;--premios-bg:#fff4d1;--brasil:#1b7a45;--brasil-bg:#e3f4ea;--mercado:#1f5fae;--mercado-bg:#e3ecf8;--financ:#6b4ea3;--financ-bg:#efe9f8}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--ground);color:var(--ink);font:16px/1.55 "Public Sans",system-ui,sans-serif;padding-left:env(safe-area-inset-left,0px);padding-right:env(safe-area-inset-right,0px)}
+h1,h2,h3,p,ul,ol,figure{margin:0}ul,ol{padding:0;list-style:none}img{display:block;max-width:100%;height:auto}a{color:inherit}
+::selection{background:var(--gold);color:#000}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px;border-radius:3px}
+.in{max-width:1180px;margin:0 auto;padding-left:16px;padding-right:16px}
+.ic{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.bar{border-bottom:1px solid var(--line);background:var(--bar)}
+.bar .in{display:flex;align-items:center;gap:12px;padding-top:8px;padding-bottom:8px}
+.marca img{width:84px;border-radius:6px}
+.bar a{text-decoration:none;font-weight:600;font-size:.95rem}
+.bar .ig{margin-left:auto;display:flex;align-items:center;gap:6px;padding:6px 10px;border-radius:6px}.bar .ig:hover{color:var(--gold)}
+.bar .zap-mini{display:flex;align-items:center;gap:6px;padding:6px 10px;border-radius:6px;background:var(--zap);color:#fff}
+.nav{border-bottom:1px solid var(--line);background:var(--panel)}
+.nav ul{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;padding-top:0;padding-bottom:0}
+.nav a{display:block;padding:11px 12px;white-space:nowrap;text-decoration:none;font-weight:700;font-size:.92rem;border-bottom:3px solid transparent}
+.nav a:hover{border-bottom-color:var(--gold)}.nav a[aria-current]{color:var(--gold);border-bottom-color:var(--gold)}
+@media (max-width:700px){.bar .ig span,.bar .zap-mini span{display:none}}
+.edicao{color:var(--muted);font-size:.85rem;padding-top:14px}
+.grade{display:grid;gap:18px;padding-top:10px;padding-bottom:40px}
+.lado{display:contents}
+.manchete{order:1}.ultimas{order:2}.brasil{order:3}.alta{order:4}.financ{order:5}.agenda{order:6}.resenhas{order:7}.comunidade{order:8}
+@media (min-width:900px){
+ .grade{grid-template-columns:minmax(0,1fr) 340px;grid-template-areas:"manchete lado" "ultimas lado" "brasil brasil" "financ resenhas" "comunidade comunidade";align-items:start}
+ .lado{display:grid;gap:18px;grid-area:lado;align-content:start}
+ .manchete{grid-area:manchete}.ultimas{grid-area:ultimas}.brasil{grid-area:brasil}.financ{grid-area:financ}.resenhas{grid-area:resenhas}.comunidade{grid-area:comunidade}
+}
+.bloco{background:var(--paper);color:var(--paper-ink);border-radius:10px;padding:16px;min-width:0}
+.bloco>h2{display:flex;align-items:baseline;justify-content:space-between;gap:10px;font-size:.8rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--paper-muted);margin-bottom:12px;padding-bottom:8px;border-bottom:2px solid var(--paper-ink)}
+.bloco>h2 a{font-size:.8rem;letter-spacing:0;text-transform:none;color:var(--link);font-weight:700;text-decoration:none}
+.bloco>h2 a:hover{text-decoration:underline}
+.cat{display:inline-block;font-size:.72rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;border-radius:4px;padding:2px 7px}
+.cat.premios{color:var(--premios);background:var(--premios-bg)}.cat.brasil{color:var(--brasil);background:var(--brasil-bg)}
+.cat.mercado{color:var(--mercado);background:var(--mercado-bg)}.cat.financ{color:var(--financ);background:var(--financ-bg)}
+.meta{font-size:.8rem;color:var(--paper-muted)}
+/* manchete */
+.manchete{padding:0;overflow:hidden;display:grid}
+.manchete a{text-decoration:none;display:grid}
+.manchete figure{background:#1c1f25}
+.manchete img{width:100%;aspect-ratio:16/10;object-fit:cover;object-position:center 30%}
+.manchete .txt{padding:16px;display:grid;gap:8px}
+.manchete .kick{font-size:.75rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--premios)}
+.manchete h1{font-size:clamp(1.5rem,4.2vw,2.2rem);line-height:1.12;font-weight:800;letter-spacing:-.015em;text-wrap:balance}
+.manchete a:hover h1{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:4px}
+.manchete p{color:#3a414c;max-width:62ch}
+.credito{font-size:.72rem;color:var(--paper-muted)}
+@media (min-width:640px){.manchete a{grid-template-columns:42% 1fr}.manchete img{aspect-ratio:auto;height:100%;min-height:300px}.manchete .txt{padding:20px 22px;align-content:center}}
+/* últimas */
+.lista-n li{border-top:1px solid var(--paper-line)}.lista-n li:first-child{border-top:0}
+.lista-n a{display:grid;grid-template-columns:76px 1fr;gap:12px;padding:12px 0;text-decoration:none}
+.lista-n li:first-child a{padding-top:0}
+.lista-n img,.lista-n .sem{width:76px;height:76px;border-radius:6px;object-fit:cover;background:#e6e9ee}
+.lista-n .sem{display:grid;place-items:center;color:var(--paper-muted)}
+.lista-n h3{font-size:1.02rem;line-height:1.25;font-weight:800;margin:3px 0 2px;text-wrap:balance}
+.lista-n a:hover h3{text-decoration:underline}
+.lista-n p{font-size:.88rem;color:#3a414c;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+/* em alta: régua do "The Hotness" do BGG */
+.hot li{counter-increment:h;border-top:1px solid var(--paper-line)}.hot li:first-child{border-top:0}
+.hot{counter-reset:h}
+.hot a{display:grid;grid-template-columns:22px 44px 1fr;gap:10px;align-items:center;padding:9px 0;text-decoration:none}
+.hot a::before{content:counter(h);font-weight:800;font-size:1.05rem;color:var(--paper-muted);text-align:right;font-variant-numeric:tabular-nums}
+.hot img{width:44px;height:44px;object-fit:cover;border-radius:4px}
+.hot b{display:block;font-size:.93rem;line-height:1.25}.hot span{display:block;font-size:.8rem;color:var(--paper-muted)}
+.hot a:hover b{text-decoration:underline}
+/* agenda */
+.agenda li{display:grid;grid-template-columns:104px 1fr;gap:10px;padding:9px 0;border-top:1px solid var(--paper-line);font-size:.9rem}
+.agenda li:first-child{border-top:0;padding-top:0}
+.agenda .q{font-weight:800;font-variant-numeric:tabular-nums}.agenda .q small{display:block;font-weight:600;font-size:.72rem;color:var(--paper-muted)}
+.agenda .d{color:var(--paper-muted);font-size:.82rem}.agenda a{text-decoration:none}.agenda a:hover{text-decoration:underline}
+/* chegando ao Brasil */
+.capas{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:6px}
+.capas li{flex:0 0 132px;scroll-snap-align:start}
+.capas a{display:grid;gap:6px;text-decoration:none}
+.capas img{width:132px;height:140px;object-fit:cover;border-radius:6px;background:#e6e9ee}
+.capas b{font-size:.86rem;line-height:1.2}.capas span{font-size:.75rem;color:var(--paper-muted)}
+.capas .st{justify-self:start;font-size:.68rem;font-weight:800;border-radius:4px;padding:1px 6px;color:var(--brasil);background:var(--brasil-bg)}
+.capas .st.lancado{color:#fff;background:var(--brasil)}
+.capas a:hover b{text-decoration:underline}
+/* financiamentos */
+.financ li{display:grid;gap:2px;padding:10px 0;border-top:1px solid var(--paper-line)}.financ li:first-child{border-top:0;padding-top:0}
+.financ a{font-weight:800;text-decoration:none}.financ a:hover{text-decoration:underline}
+.financ .onde{font-size:.72rem;font-weight:800;text-transform:uppercase;letter-spacing:.04em;color:var(--financ)}
+.financ .s{font-size:.86rem;color:#3a414c}.financ .f{font-size:.75rem;color:var(--paper-muted)}
+/* resenhas */
+.res{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.res a{display:grid;gap:6px;text-decoration:none}
+.res img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:6px}
+.res b{font-size:.9rem;line-height:1.2}.res a:hover b{text-decoration:underline}
+.comunidade{background:var(--panel2);color:var(--ink);border:1px solid var(--line);display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between}
+.comunidade p{max-width:60ch;color:#c9cfd8}
+.comunidade .acoes{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:flex;align-items:center;gap:8px;padding:12px 16px;border-radius:10px;text-decoration:none;font-weight:800}
+.btn.zap{background:var(--zap);color:#fff}.btn.ig{border:1px solid #3a3f48}.btn.ig:hover{border-color:var(--gold);color:var(--gold)}
+footer{border-top:1px solid var(--line);font-size:.88rem}
+footer .in{display:flex;flex-wrap:wrap;gap:10px 20px;padding-top:18px;padding-bottom:18px}
+.selo{display:inline-block;font-size:.74rem;font-weight:800;border-radius:999px;padding:2px 10px;color:#fff;white-space:nowrap}
+.selo.compra{background:#157a43}.selo.acompanhar{background:#1f5fae}.selo.fas{background:#6b4ea3}.selo.ressalvas{background:#8a5200}.selo.info{background:#5a6270}
+.manchete .opina{font-size:.92rem;color:var(--paper-ink);border-left:3px solid var(--gold);padding-left:10px}
+/* página da notícia */
+.nota{max-width:760px;margin:0 auto;padding-top:20px;padding-bottom:48px;display:grid;gap:16px}
+.nota .bloco{padding:20px}
+.nota h1{font-size:clamp(1.6rem,5vw,2.4rem);line-height:1.12;font-weight:800;letter-spacing:-.015em;text-wrap:balance;margin:8px 0}
+.nota .lide{font-size:1.08rem;font-weight:600;color:var(--paper-ink)}
+.nota .corpo{display:grid;gap:12px;color:#3a414c;max-width:66ch}
+.nota figure img{width:100%;max-height:420px;object-fit:contain;background:#e6e9ee;border-radius:8px}
+.nota figcaption{margin-top:6px}
+.nota h2{font-size:.8rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--paper-muted);margin-bottom:8px}
+.nota .fontes li{margin:6px 0;font-size:.92rem}.nota .fontes a{color:var(--link)}.nota .fontes span{color:var(--paper-muted);font-size:.82rem}
+.nota .jogos{display:flex;flex-wrap:wrap;gap:8px}.nota .jogos a{display:inline-block;padding:6px 10px;border-radius:6px;background:#e6e9ee;text-decoration:none;font-weight:700;font-size:.9rem}
+.nota .crivo{font-size:.85rem;color:var(--paper-muted)}.nota .crivo b{color:var(--paper-ink)}
+.volta{color:var(--gold);font-weight:700;text-decoration:none}
+.nota .abre{display:grid;gap:14px}
+.nota .importa{border-left:4px solid var(--gold)}.nota .importa p{font-size:1.02rem;color:var(--paper-ink)}.nota .assina{font-size:.78rem!important;color:var(--paper-muted)!important;margin-top:8px}
+.nums{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px}
+.nums li{background:#fff;border:1px solid var(--paper-line);border-radius:8px;padding:12px;display:grid;gap:2px}
+.nums b{font-size:1.35rem;line-height:1.15;font-weight:800;font-variant-numeric:tabular-nums}.nums span{font-size:.86rem;color:#3a414c}.nums small{font-size:.72rem;color:var(--paper-muted)}
+.nota .brasil-n{border-left:4px solid var(--brasil)}.nota .brasil-n p{color:#3a414c}
+.crit{display:grid;gap:12px}.crit p{color:#3a414c}
+.crit .cit q{display:block;font-size:1.15rem;font-weight:700;line-height:1.3;color:var(--paper-ink);quotes:"“" "”"}
+.crit cite{display:block;margin-top:4px;font-style:normal;font-size:.82rem;color:var(--paper-muted)}
+.nota .quem{display:grid;gap:16px}@media (min-width:640px){.nota .quem{grid-template-columns:1fr 1fr}}
+.quem li{position:relative;padding-left:16px;margin:6px 0;color:#3a414c}.quem li::before{content:"";position:absolute;left:0;top:.6em;width:7px;height:7px;border-radius:50%;background:#1b7a45}
+.quem .no li::before{background:#b3263e}
+.nota .veredito{background:var(--panel2);color:var(--ink);border:1px solid var(--gold)}.nota .veredito h2{color:var(--gold)}
+.nota .veredito p{font-size:1.08rem;font-weight:600;margin-top:10px;max-width:62ch}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="bar"><div class="in">
+ <a class="marca" href="../"><img src="../marca/elite-boardgamers.webp" width="318" height="254" alt="Elite Boardgamers"></a>
+ <a class="ig" href="https://www.instagram.com/eliteboardgamers/" target="_blank" rel="noopener" aria-label="Instagram @eliteboardgamers"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6" fill="currentColor"/></svg><span>@eliteboardgamers</span></a>
+ <a class="zap-mini" href="https://chat.whatsapp.com/IgQQkJdSkzHBaEq3UwFeAo" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8.4 19l-4.4 1Z"/><path d="M9.2 8.6c.3-.5.8-.5 1-.1l.7 1.5c.1.3 0 .6-.2.8l-.4.4c.5 1.1 1.4 2 2.5 2.5l.4-.4c.2-.2.5-.3.8-.2l1.5.7c.4.2.4.7-.1 1-.7.5-1.6.6-2.4.3a7 7 0 0 1-4.2-4.2c-.3-.8-.2-1.7.4-2.3Z"/></svg><span>Grupo do WhatsApp</span></a>
+</div></header>
+<nav class="nav" aria-label="Seções do site"><ul class="in"><li><a href="../" aria-current="page">Notícias</a></li><li><a href="../resenhas/">Resenhas</a></li><li><a href="../consulta/">Consulta Golden Geek</a></li></ul></nav>
+<main id="conteudo" class="in"><div class="nota"><a class="volta" href="../">← Página inicial</a>
+ <section class="bloco ultimas"><h2>Todas as notícias</h2><ul class="lista-n"><li><a href="../noticias/santuario-vence-deutscher-spiele-preis-2026/"><img src="../noticias/capas/78727-g.jpg" width="76" height="76" alt="" loading="lazy">
+   <div><span class="cat premios">Prêmios</span> <span class="meta">28/10 · BoardGameWire</span>
+   <h3>Santuário, do criador de Ark Nova, vence o Deutscher Spiele Preis 2026</h3><p><span class="selo compra">Vale a compra</span> O Deutscher Spiele Preis é votado por jogadores, não por um júri. Ver Santuário vencer mostra que a versão mais curta de Ark Nova convenceu quem joga. E ele já está nas lojas brasileiras, pela Grok, custando bem menos que Ark Nova: é o atalho mais bem avaliado para o mesmo tema.</p></div></a></li><li><a href="../noticias/boss-fighters-qr-e-galactic-cruise-no-podio-do-dsp/"><img src="../noticias/capas/82522.jpg" width="76" height="76" alt="" loading="lazy">
+   <div><span class="cat premios">Prêmios</span> <span class="meta">28/10 · BoardGameWire</span>
+   <h3>Boss Fighters QR, 2º no Deutscher Spiele Preis, já passa de 100 mil cópias</h3><p><span class="selo acompanhar">Vale acompanhar</span> Um jogo que depende de aplicativo no pódio de um prêmio votado por jogadores mostra que a tecnologia na mesa deixou de ser rejeitada por princípio. Para quem está no Brasil, falta o principal: ainda não há edição nacional anunciada.</p></div></a></li><li><a href="../noticias/guia-dos-premios-2027/"><img src="../noticias/capas/53972.jpg" width="76" height="76" alt="" loading="lazy">
+   <div><span class="cat premios">Prêmios</span> <span class="meta">28/10 · Opinionated Gamers</span>
+   <h3>Guia dos prêmios de 2027: quando saem Golden Geek, Spiel des Jahres e Kennerspiel</h3><p><span class="selo info">Informativo</span> Só resenhamos jogos premiados, então este calendário é também o da nossa pauta. Saber quando cada prêmio sai ajuda a decidir se compra agora ou espera: um jogo indicado em maio costuma ficar mais caro e mais difícil de achar depois da vitória.</p></div></a></li><li><a href="../noticias/expansoes-endeavor-e-arnak-novembro/"><img src="../noticias/capas/79643.jpg" width="76" height="76" alt="" loading="lazy">
+   <div><span class="cat brasil">Chegando ao Brasil</span> <span class="meta">28/10 · Ludopedia</span>
+   <h3>Expansões de Endeavor: Deep Sea e de Arnak estão previstas para novembro</h3><p><span class="selo fas">Para fãs do jogo base</span> Endeavor: Deep Sea e Arnak estão entre os jogos médios mais bem avaliados que resenhamos. As duas expansões trazem mapas e cenários novos sem trocar as regras do jogo base: é a chance de renovar jogos que muita gente já tem na estante.</p></div></a></li><li><a href="../noticias/galapagos-lanca-duna-linhagens-vantage-harmonies-pulsar/"><img src="../noticias/capas/69009.jpg" width="76" height="76" alt="" loading="lazy">
+   <div><span class="cat brasil">Chegando ao Brasil</span> <span class="meta">28/10 · Ludopedia</span>
+   <h3>Duna: Imperium – Linhagens, Vantage e Harmonies: Pulsar chegam às lojas</h3><p><span class="selo ressalvas">Com ressalvas</span> Três títulos de peso chegando juntos mostram a aposta da Galápagos em jogos já testados lá fora. Mas cada um atende um público diferente, e Vantage é um dos jogos que mais dividem a crítica no ano. Vale saber o que cada um entrega antes de comprar.</p></div></a></li><li><a href="../noticias/kings-gambit-fecha-com-2-5-milhoes/"><span class="sem"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3Z"/></svg></span>
+   <div><span class="cat financ">Financiamento</span> <span class="meta">28/10 · Kicktraq</span>
+   <h3>King&#x27;s Gambit fecha com US$ 2,58 milhões; edição de loja sai em 2027</h3><p><span class="selo acompanhar">Vale acompanhar</span> Os apoiadores preferiram em massa as versões mais caras, acima de US$ 379. Para o Brasil, o que conta é a edição de loja: com a Asmodee na distribuição, há caminho para uma versão nacional, mas nenhuma editora brasileira anunciou o jogo ainda.</p></div></a></li><li><a href="../noticias/lancamentos-editoras-menores-novembro/"><img src="../noticias/capas/80496.jpg" width="76" height="76" alt="" loading="lazy">
+   <div><span class="cat brasil">Chegando ao Brasil</span> <span class="meta">28/10 · Ludopedia</span>
+   <h3>Cidade Castor, Point Galaxy, Fadenfroh e mais: os lançamentos das editoras menores em novembro</h3><p><span class="selo info">Informativo</span> É onde costumam aparecer os jogos curtos e baratos do mês. O destaque é Fadenfroh, coassinado por Alexander Pfister, duas vezes vencedor do Kennerspiel. Nenhum dos cinco tem preço divulgado, e a crítica, quando existe, é morna.</p></div></a></li><li><a href="../noticias/cannes-2027-as-dor/"><span class="sem"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3Z"/></svg></span>
+   <div><span class="cat premios">Prêmios</span> <span class="meta">28/10 · Palais des Festivals</span>
+   <h3>Festival de Cannes 2027 acontece de 26 a 28 de fevereiro, com o As d&#x27;Or</h3><p><span class="selo info">Informativo</span> O As d&#x27;Or é decidido por júri e costuma antecipar sucessos que depois chegam ao Brasil: Civolution, vencedor na categoria Expert de 2026, já está em pré-venda pela Devir. Acompanhar os indicados em janeiro ajuda a saber o que vale esperar por aqui.</p></div></a></li><li><a href="../noticias/dante-inferno-across-the-board/"><img src="../noticias/capas/56209.jpg" width="76" height="76" alt="" loading="lazy">
+   <div><span class="cat financ">Financiamento</span> <span class="meta">28/10 · Catarse</span>
+   <h3>DANTE: Inferno, cooperativo dos criadores de Drunagor, levantou R$ 425 mil no Catarse</h3><p><span class="selo info">Informativo</span> Mostra a força dos estúdios brasileiros de jogos de miniaturas: um time daqui criando para o mundo e vendendo caro aqui dentro. Para quem não apoiou, não há pré-venda aberta, e a data de entrega já passou sem confirmação pública de que os jogos chegaram.</p></div></a></li><li><a href="../noticias/devir-gaudi-e-catan-jogo-de-cartas-novembro/"><img src="../noticias/capas/83431.jpg" width="76" height="76" alt="" loading="lazy">
+   <div><span class="cat brasil">Chegando ao Brasil</span> <span class="meta">28/10 · Ludopedia</span>
+   <h3>Devir traz Gaudí e a nova edição do Catan: O Jogo de Cartas em novembro</h3><p><span class="selo acompanhar">Vale acompanhar</span> São dois jogos para públicos opostos. Gaudí é um jogo de estratégia de até 100 minutos, ainda sem resenha completa; Catan: O Jogo de Cartas é rápido, barato lá fora e já bem avaliado. Para quem quer apresentar Catan a alguém em 20 minutos, é o lançamento mais interessante do mês.</p></div></a></li><li><a href="../noticias/financiamentos-abertos-battleforge-dia-da-caca/"><img src="../noticias/capas/79571.jpg" width="76" height="76" alt="" loading="lazy">
+   <div><span class="cat financ">Financiamento</span> <span class="meta">28/10 · MeepleStarter</span>
+   <h3>Financiamentos abertos no Brasil: BattleForge: Berserker e Dia da Caça no MeepleStarter</h3><p><span class="selo info">Informativo</span> São os únicos financiamentos nacionais que encontramos com apoio aberto agora. BattleForge já foi um sucesso e está na fase de pré-venda, com a meta batida; Dia da Caça ainda precisa de 38% da meta em nove dias, então o apoio decide se o jogo sai.</p></div></a></li><li><a href="../noticias/inimigos-da-terra-media-entrega-2027/"><img src="../noticias/capas/79611.jpg" width="76" height="76" alt="" loading="lazy">
+   <div><span class="cat financ">Financiamento</span> <span class="meta">28/10 · Catarse</span>
+   <h3>Inimigos da Terra-Média, jogo brasileiro de O Senhor dos Anéis, tem entrega prevista para 2027</h3><p><span class="selo ressalvas">Com ressalvas</span> É um dos maiores financiamentos de um jogo criado no Brasil, com licença de uma das marcas mais fortes do mundo. Mas quem não apoiou vai depender de pré-venda ou loja, e a crítica estrangeira que viu a campanha achou o preço alto para o que entrega.</p></div></a></li><li><a href="../noticias/mosaico-jogos-terraria-e-floe-novembro/"><img src="../noticias/capas/64618.jpg" width="76" height="76" alt="" loading="lazy">
+   <div><span class="cat brasil">Chegando ao Brasil</span> <span class="meta">28/10 · Ludopedia</span>
+   <h3>Mosaico Jogos anuncia Terraria: The Board Game e Floe para novembro</h3><p><span class="selo ressalvas">Com ressalvas</span> Terraria chega com a força de uma das maiores campanhas de 2024 e de uma marca que muita gente conhece do videogame, mas a crítica diz que ele agrada mais a fãs do jogo eletrônico do que a quem só joga tabuleiro. Floe ainda não tem resenha completa.</p></div></a></li><li><a href="../noticias/diversao-offline-2027/"><span class="sem"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3Z"/></svg></span>
+   <div><span class="cat mercado">Eventos</span> <span class="meta">28/10 · Diversão Offline</span>
+   <h3>Diversão Offline 2027 deve acontecer de 9 a 11 de julho, indica o site do evento</h3><p><span class="selo acompanhar">Vale acompanhar</span> É no DOFF que as editoras nacionais mostram e vendem os lançamentos do segundo semestre, muitas vezes com preço de feira. Saber a data com antecedência ajuda a planejar a viagem a São Paulo e a guardar o orçamento de jogos para julho.</p></div></a></li></ul></section></div></main>
+<footer><div class="in">
+ <span>Elite Boardgamers</span><a href="../">Notícias</a><a href="../resenhas/">Resenhas</a><a href="../consulta/">Consulta Golden Geek</a>
+ <a href="https://www.instagram.com/eliteboardgamers/" target="_blank" rel="noopener">Instagram @eliteboardgamers</a><a href="https://chat.whatsapp.com/IgQQkJdSkzHBaEq3UwFeAo" target="_blank" rel="noopener">Grupo do WhatsApp</a>
+</div></footer>
+</body>
+</html>
