@@ -765,5 +765,26 @@
    ],
    "verificado_em": "2026-10-28"
   }
+ },
+ "asmodee.co.uk": {
+  "nome": "Asmodee UK",
+  "apelidos": [
+   "Asmodee UK"
+  ],
+  "site": "https://www.asmodee.co.uk",
+  "plataforma": "shopify",
+  "estrategia": "sitemap+shopify_json",
+  "press_kit": "https://www.asmodee.co.uk/account/login?return_url=%2F&return_to=%2F",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.asmodee.co.uk/sitemap.xml"
+   ],
+   "verificado_em": "2026-10-28"
+  }
  }
 }
