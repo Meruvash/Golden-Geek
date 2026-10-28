@@ -7,7 +7,7 @@ Saída: index.html e noticias/<slug>/index.html. As regras das notas estão em P
 """
 import json
 import sys
-from datetime import date
+from datetime import date, timedelta
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -34,8 +34,19 @@ def notas():
     ruins = {n["slug"]: problemas(n) for n in ns if problemas(n)}
     if ruins:
         sys.exit("Notícias fora do padrão (rode tools/noticias/checar_noticia.py): " + ", ".join(ruins))
-    # manchete primeiro, depois mais recentes e mais pontuadas
-    return sorted(ns, key=lambda n: (not n.get("manchete"), -date.fromisoformat(n["data"]).toordinal(), -n["crivo"]["pontos"]))
+    # mais recentes primeiro; no mesmo dia, as mais pontuadas no crivo
+    return sorted(ns, key=lambda n: (-date.fromisoformat(n["data"]).toordinal(), -n["crivo"]["pontos"]))
+
+
+def mes_chegando(hoje=None):
+    """Mês do bloco Chegando ao Brasil: o atual até o dia 14, depois o próximo (se a coleta já salvou)."""
+    hoje = hoje or date.today()
+    prox = (hoje.replace(day=1) + timedelta(days=32)).replace(day=1).strftime("%Y-%m")
+    if hoje.day >= 15 and (ROOT / "conteudo" / "lancamentos" / f"{prox}.json").exists():
+        return prox
+    meses = sorted(p.stem for p in (ROOT / "conteudo" / "lancamentos").glob("*.json"))
+    atual = hoje.strftime("%Y-%m")
+    return atual if atual in meses else max(m for m in meses)
 
 
 def lancamentos(mes):
@@ -235,7 +246,8 @@ def build_home():
     ns = notas()
     home = json.loads((ROOT / "conteudo" / "home.json").read_text(encoding="utf-8"))
     pre = ""
-    m = next(n for n in ns if n.get("manchete"))
+    # manchete: a mais recente aprovada; a proposta da rotina diária espera "manchete_aprovada": true
+    m = max((n for n in ns if n.get("manchete") and n.get("manchete_aprovada", True)), key=lambda n: n["data"])
     resto = [n for n in ns if n is not m]
     manchete = f"""<article class="bloco manchete"><a href="noticias/{m['slug']}/">
   <figure><img src="{img_nota(m, pre)}" width="941" height="1000" alt="{e(m['titulo'])}" fetchpriority="high"></figure>
@@ -267,7 +279,8 @@ def build_home():
         tit = f'<a href="{e(href)}"{ext}>{e(a["titulo"])}</a>' if href else e(a["titulo"])
         agenda += f'<li><span class="q">{e(a["quando"])}{"<small>previsto</small>" if a["previsto"] else ""}</span><span><b>{tit}</b><br><span class="d">{e(a["detalhe"])}</span></span></li>'
     por_jogo = {i: n["slug"] for n in ns for i in n.get("ids_ludopedia", [])}
-    rotulo, jogos = lancamentos("2026-11")
+    mes = mes_chegando()
+    rotulo, jogos = lancamentos(mes)
     capas = "".join(
         (f'<li><a href="noticias/{por_jogo[j["id_jogo"]]}/">' if j["id_jogo"] in por_jogo else f'<li><a href="{e(j["url"])}" target="_blank" rel="noopener">') + f'<img src="{capa_jogo(pre, j["id_jogo"])}" width="132" height="140" alt="" loading="lazy">'
         f'<span class="st {j["status"]["slug"]}">{e(j["status"]["label"])}</span><b>{e(j["nome"].strip())}</b><span>{e((j.get("editora") or {}).get("nome", ""))}</span></a></li>'
@@ -286,13 +299,13 @@ def build_home():
         res += f'<li><a href="{s}/"><img src="{s}/capa.jpg{versao(ROOT / s / "capa.jpg")}" width="800" height="800" alt="" loading="lazy"><b>{e(c["jogo"])}</b></a></li>'
     corpo = f"""{cabecalho(pre, "Notícias")}
 <main id="conteudo" class="in">
- <p class="edicao">Edição de {data_longa(home["edicao"])}</p>
+ <p class="edicao">Edição de {data_longa(max(n["data"] for n in ns))}</p>
  <div class="grade">
   {manchete}
   <section class="bloco ultimas"><h2>Últimas notícias <a href="noticias/">Ver todas ({len(ns)})</a></h2><ul class="lista-n">{itens}</ul></section>
   <aside class="lado"><section class="bloco alta"><h2>Em alta</h2><ol class="hot">{alta}</ol></section>
   <section class="bloco agenda"><h2>Agenda</h2><ul>{agenda}</ul></section></aside>
-  <section class="bloco brasil" id="chegando"><h2>Chegando ao Brasil · {e(rotulo.lower())} <a href="https://ludopedia.com.br/lancamentos?mes=2026-11" target="_blank" rel="noopener">Calendário completo na Ludopedia</a></h2><ul class="capas">{capas}</ul></section>
+  <section class="bloco brasil" id="chegando"><h2>Chegando ao Brasil · {e(rotulo.lower())} <a href="https://ludopedia.com.br/lancamentos?mes={mes}" target="_blank" rel="noopener">Calendário completo na Ludopedia</a></h2><ul class="capas">{capas}</ul></section>
   <section class="bloco financ"><h2>Financiamentos</h2><ul>{financ}</ul></section>
   <section class="bloco resenhas"><h2>Últimas resenhas <a href="resenhas/">Ver todas</a></h2><ul class="res">{res}</ul></section>
   <section class="bloco comunidade"><p>Notícias de tabuleiro com fonte e data, todos os dias. Entre no grupo para receber as novidades e conversar sobre jogos.</p>
