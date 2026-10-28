@@ -111,7 +111,12 @@
    "data": "28/10/2026"
   }
  ],
- "imagem": null,
+ "imagem": {
+  "arquivo": "capas/devir-civolution-e-formigas-pre-venda.jpg",
+  "credito": "Imagem: Devir",
+  "origem": "https://devir.com.br/wp-content/uploads/2026/09/IMG_1995.jpg",
+  "pagina": "https://devir.com.br/civolution/"
+ },
  "jogos": [],
  "ids_ludopedia": [
   57677,
