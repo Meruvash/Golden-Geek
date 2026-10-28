@@ -75,6 +75,20 @@ O Brasil não tem um portal jornalístico dedicado só a jogos de tabuleiro. As 
 | Catarse (categoria Jogos) | Financiamentos nacionais | API pública; não respondeu do servidor na nuvem, testar de novo | a testar |
 | Fabuloso Podcast, BoardCast Brasil | Notícias comentadas da semana | radar de pauta, nunca fonte única | manual |
 
+**Segunda rodada de testes (28/10/2026)**
+
+| Fonte | O que traz | Situação |
+|---|---|---|
+| **Galápagos: Spoiler Board** (site dos eventos Spoiler Fest e Spoiler Night) | Os anúncios semestrais da maior editora do país | o site da Galápagos bloqueia robôs (403); endereço do Spoiler Board a confirmar. Entra na Agenda e como leitura obrigatória nas semanas de evento |
+| **Laranja Cast** | Notícias geek com cobertura de tabuleiro (cobriu o Spoiler Night 2025) | feed liberado, ativo (27/10); filtrar por tabuleiro |
+| **JWave** | Notícias geek, anunciou o Spoiler Night 2025 | feed liberado, ativo (28/10); filtrar por tabuleiro |
+| **Vivente Andante** | Notícias de board games e lançamentos | feed respondeu, ativo (28/10); confirmar regras do site |
+| Drops de Jogos (UAI) | Cobertura de Spoiler Fest e lançamentos nacionais | feed ativo, mas o site proíbe robôs: manual |
+| Poltrona Nerd | Seção de board games | feed ativo, mas o site proíbe robôs: manual |
+| X (Twitter) | Perfis das editoras e de jornalistas do setor | proíbe robôs; a API de leitura do X é paga. Fica fora da coleta automática |
+
+**Lançamentos de cada editora**: `editoras_br.json` guarda, para cada editora nacional, a página de lançamentos, o feed (quando houver), o Instagram e se o site libera robôs. O robô visita as liberadas (Devir, Grok) e avisa o que mudou; as outras ficam na leitura manual. A API da Ludopedia cobre todas de uma vez no calendário de lançamentos.
+
 **Para fortalecer a cobertura nacional**
 1. **Chave da API da Ludopedia** (pedido seu): resolve o bloco "Chegando ao Brasil" com dados oficiais, sem raspagem.
 2. **Newsletter das editoras** num e-mail do projeto (Galápagos, MeepleBR, Grok, Conclave, Devir, PaperGames). Os anúncios chegam primeiro ali.
