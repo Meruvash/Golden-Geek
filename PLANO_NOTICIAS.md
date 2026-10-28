@@ -89,6 +89,10 @@ O Brasil não tem um portal jornalístico dedicado só a jogos de tabuleiro. As 
 
 **Lançamentos de cada editora**: `editoras_br.json` guarda, para cada editora nacional, a página de lançamentos, o feed (quando houver), o Instagram e se o site libera robôs. O robô visita as liberadas (Devir, Grok) e avisa o que mudou; as outras ficam na leitura manual. A API da Ludopedia cobre todas de uma vez no calendário de lançamentos.
 
+**API da Ludopedia (LudoAPI, versão alfa)**: documentação em `ludopedia.com.br/api/documentacao.html`. Tem o endpoint `GET /lancamentos` (calendário de lançamentos no Brasil, por mês) e `GET /jogos`. Acesso: criar um aplicativo em `ludopedia.com.br/aplicativos`; o `access_token` gerado junto serve para o nosso uso, sem o fluxo OAuth. O token fica num segredo do ambiente (`LUDOPEDIA_TOKEN`), nunca no repositório. Dúvidas: api@ludopedia.com.br.
+
+**Bluesky**: API pública e gratuita (`public.api.bsky.app`), sem chave. Responde do servidor na nuvem. A lista de perfis a seguir (editoras, prêmios, jornalistas, criadores nacionais) fica em `bluesky.json` e é revisada antes de entrar na coleta.
+
 **Para fortalecer a cobertura nacional**
 1. **Chave da API da Ludopedia** (pedido seu): resolve o bloco "Chegando ao Brasil" com dados oficiais, sem raspagem.
 2. **Newsletter das editoras** num e-mail do projeto (Galápagos, MeepleBR, Grok, Conclave, Devir, PaperGames). Os anúncios chegam primeiro ali.
