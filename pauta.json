@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-27",
+ "atualizado_em": "2026-10-28",
  "regras": {
   "premios": [
    "Golden Geek",
@@ -117,6 +117,26 @@
    "jogo": "The Lord of the Rings: Fate of the Fellowship",
    "url": "https://eliteboardgamers.com.br/fate-of-the-fellowship/",
    "data": "2026-10-27"
+  },
+  {
+   "jogo": "Cascadia",
+   "url": "https://eliteboardgamers.com.br/cascadia/",
+   "data": "2026-10-28"
+  },
+  {
+   "jogo": "Detective: A Modern Crime Board Game",
+   "url": "https://eliteboardgamers.com.br/detective/",
+   "data": "2026-10-28"
+  },
+  {
+   "jogo": "Colt Express",
+   "url": "https://eliteboardgamers.com.br/colt-express/",
+   "data": "2026-10-28"
+  },
+  {
+   "jogo": "Scythe",
+   "url": "https://eliteboardgamers.com.br/scythe/",
+   "data": "2026-10-28"
   }
  ],
  "jogos": [
@@ -1007,7 +1027,7 @@
      "fonte": "https://eliteboardgamers.com.br/"
     }
    ],
-   "status": "em_producao",
+   "status": "publicado",
    "prioridade": 17,
    "premios_distintos": 3
   },
@@ -1042,7 +1062,7 @@
      "fonte": "https://eliteboardgamers.com.br/"
     }
    ],
-   "status": "em_producao",
+   "status": "publicado",
    "prioridade": 18,
    "premios_distintos": 3
   },
@@ -1077,7 +1097,7 @@
      "fonte": "https://en.wikipedia.org/wiki/Spiel_des_Jahres"
     }
    ],
-   "status": "em_producao",
+   "status": "publicado",
    "premios_distintos": 3,
    "prioridade": 19
   },
@@ -1211,7 +1231,7 @@
      "fonte": "https://eliteboardgamers.com.br/"
     }
    ],
-   "status": "em_producao",
+   "status": "publicado",
    "prioridade": 21,
    "premios_distintos": 2
   },
