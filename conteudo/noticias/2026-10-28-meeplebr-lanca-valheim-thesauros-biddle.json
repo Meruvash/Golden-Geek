@@ -62,7 +62,12 @@
    "data": "28/10/2026"
   }
  ],
- "imagem": null,
+ "imagem": {
+  "arquivo": "capas/meeplebr-lanca-valheim-thesauros-biddle.jpg",
+  "credito": "Imagem: MeepleBR",
+  "origem": "https://meeplebr.com/wp-content/uploads/2026/03/DSCF8906.jpg",
+  "pagina": "https://meeplebr.com/product/valheim-edicao-deluxe/"
+ },
  "jogos": [],
  "ids_ludopedia": [
   67176,

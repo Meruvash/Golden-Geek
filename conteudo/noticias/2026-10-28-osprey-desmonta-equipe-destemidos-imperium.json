@@ -57,7 +57,12 @@
    "data": "28/10/2026"
   }
  ],
- "imagem": null,
+ "imagem": {
+  "arquivo": "capas/osprey-desmonta-equipe-destemidos-imperium.jpg",
+  "credito": "Imagem: MeepleBR · Destemidos – Normandia, edição da MeepleBR",
+  "origem": "https://meeplebr.com/wp-content/uploads/2021/07/dn_1-copiar.1_009.png",
+  "pagina": "https://meeplebr.com/product/destemidos-normandia/"
+ },
  "jogos": [],
  "ids_ludopedia": [],
  "crivo": {
