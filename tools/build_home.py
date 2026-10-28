@@ -200,6 +200,7 @@ footer .in{display:flex;flex-wrap:wrap;gap:10px 20px;padding-top:18px;padding-bo
 .nota figcaption{margin-top:6px}
 .nota h2,.nota .h-sec{font-size:.8rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--paper-muted);margin-bottom:8px}
 .nota .h-sec{margin:0 0 8px;line-height:inherit;text-wrap:wrap}
+.leia li{padding:8px 0;border-top:1px solid var(--paper-line)}.leia li:first-child{border-top:0}.leia a{color:var(--link);font-weight:700;text-decoration:none}.leia a:hover{text-decoration:underline}
 .paginas{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:16px;font-weight:700}.paginas a{color:var(--link)}.paginas span{color:var(--paper-muted);font-size:.9rem}
 .nota .fontes li{margin:6px 0;font-size:.92rem}.nota .fontes a{color:var(--link)}.nota .fontes span{color:var(--paper-muted);font-size:.82rem}
 .nota .jogos{display:flex;flex-wrap:wrap;gap:8px}.nota .jogos a{display:inline-block;padding:6px 10px;border-radius:6px;background:#e6e9ee;text-decoration:none;font-weight:700;font-size:.9rem}
@@ -458,6 +459,21 @@ def build_home():
     return ns
 
 
+def relacionadas(n, limite=3):
+    """Notas para o "Leia também": primeiro as que citam o mesmo jogo, depois as da mesma categoria; mais recentes antes."""
+    jogos = {j.get("resenha") or j["nome"] for j in n.get("jogos", [])}
+    cands = []
+    for p in (ROOT / "conteudo" / "noticias").glob("*.json"):
+        o = json.loads(p.read_text(encoding="utf-8"))
+        if o["slug"] == n["slug"]:
+            continue
+        comum = len(jogos & {j.get("resenha") or j["nome"] for j in o.get("jogos", [])})
+        if comum or o["categoria"] == n["categoria"]:
+            cands.append((comum, o["data"], o.get("publicado_em", ""), o))
+    cands.sort(key=lambda x: x[:3], reverse=True)
+    return [o for *_, o in cands[:limite]]
+
+
 def build_nota(n):
     pre = "../../"
     fig = (f'<figure><img src="{pre}noticias/{n["imagem"]["arquivo"]}" srcset="{srcset(ROOT / "noticias" / n["imagem"]["arquivo"], pre)}" sizes="(min-width: 760px) 720px, 100vw" alt="{e(n["titulo"])}"><figcaption class="credito">{e(n["imagem"]["credito"])}</figcaption></figure>'
@@ -471,6 +487,7 @@ def build_nota(n):
     sim = "".join(f"<li>{e(x)}</li>" for x in n["para_quem"])
     nao = "".join(f"<li>{e(x)}</li>" for x in n.get("nao_e_para", []))
     sc = SELO_CLASSE[n["selo"]]
+    leia = "".join(f'<li><a href="{pre}noticias/{o["slug"]}/">{e(o["titulo"])}</a></li>' for o in relacionadas(n))
     corpo = f"""{cabecalho(pre, "Notícias")}
 <main id="conteudo" class="in"><div class="nota">
  <a class="volta" href="{pre}">← Todas as notícias</a>
@@ -488,6 +505,7 @@ def build_nota(n):
  <section class="bloco quem"><div><h2>Interessa a você se…</h2><ul class="ok">{sim}</ul></div>{f'<div><h2>Pense duas vezes se…</h2><ul class="no">{nao}</ul></div>' if nao else ""}</section>
  <section class="bloco veredito {sc}"><h2>Nossa opinião</h2><span class="selo {sc}">{e(n['selo'])}</span><p>{e(n['veredito'])}</p></section>
  {f'<section class="bloco"><h2>Jogos citados</h2><div class="jogos">{jogos}</div></section>' if jogos else ""}
+ {f'<section class="bloco leia"><h2>Leia também</h2><ul>{leia}</ul></section>' if leia else ""}
  <section class="bloco fontes"><h2>Fontes</h2><ul>{fontes}</ul></section>
  <section class="bloco crivo"><h2>Por que esta notícia entrou</h2><p><b>{n['crivo']['pontos']} pontos no crivo editorial</b> (mínimo 5): {e("; ".join(n['crivo']['criterios']))}.</p></section>
 </div></main>
@@ -501,7 +519,7 @@ def build_nota(n):
                     seo.trilha(("Início", f"{SITE}/"), ("Notícias", f"{SITE}/noticias/"), (n["titulo"], url)))
     # título da busca: titulo_seo (opcional, aprovado pela edição) ou o título; o sufixo da marca só cabe em título curto
     t_busca = n.get("titulo_seo") or n["titulo"]
-    t_busca = t_busca if len(t_busca) > 45 else f"{t_busca} | Elite Boardgamers"
+    t_busca = t_busca if len(t_busca) > 42 else f"{t_busca} | Elite Boardgamers"
     out.write_text(pagina(t_busca, n["lide"], url, img, pre, corpo, "article",
                           f'\n<meta property="article:published_time" content="{n["publicado_em"]}">', ld), encoding="utf-8")
 

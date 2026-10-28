@@ -37,6 +37,11 @@ Correções:
 - **Resenha com erro grave** (jogo errado, prêmio inventado, fotos de outro jogo) que não dê para corrigir com segurança: volte o jogo para `em_producao` em `pauta.json`, tire-o de `publicadas`, apague `<slug>/index.html` e rode `python3 tools/publicar.py` com as outras publicadas para regerar lista e página inicial; a rotina das 8h refaz.
 - Depois de corrigir: `python3 tools/build_home.py`, `python3 tools/build_review.py conteudo/<slug>.json` para cada resenha mexida, `python3 tools/verificar_site.py` de novo até passar, Playwright em 390 px nas páginas mexidas (sem rolagem lateral, sem erro de JS).
 
+## Manutenção mensal (dia 1 de cada mês)
+
+- Preços: atualize `preco_ref` (faixa e data da consulta) das 5 resenhas mais vistas (Search Console, se houver acesso; senão as 5 mais antigas), com as lojas citadas como fonte. Preço que não se confirma vira "sem preço confirmado em <data>".
+- Ficha: tente confirmar um item "não confirmado nas fontes consultadas" por resenha (começando por Faraway e Detective); só troque com fonte.
+
 ## 3. Publicar e avisar
 
 - Commit e push na `main`: `Verificação de <dd/mm/aaaa>: <o que foi corrigido>` (só se algo mudou; nunca `.cache/`). Inclua no commit `sitemap.xml`, `sitemap-noticias.xml`, `robots.txt`, `404.html`, `img/` e `conteudo/sitemap_estado.json`, que os scripts regeram sozinhos.

@@ -214,13 +214,13 @@ def layout_v2(c, premios_bloco, ficha_html, fontes, fotos=None, info_meio=""):
         f'<li><span class="n">{i}</span><div><h3>{e(t.capitalize())}</h3><p>{e(x)}</p></div></li>'
         for i, (t, x) in enumerate(c.get("passos") or r.get("passos", []), 1)
     )
-    como = f"""<section class="bloco claro" id="como-funciona"><h2>Como funciona</h2>
+    como = f"""<section class="bloco claro" id="como-funciona"><h2>Como funciona {e(c["jogo"])}</h2>
    {f'<p class="sub">{e(c.get("como_resumo") or r["como_resumo"])}</p>' if c.get("como_resumo") or r.get("como_resumo") else ""}
    <ol class="passos">{passos}</ol>
    <details class="mais"><summary>Ler as regras completas</summary><div class="leitura">{"".join(f"<p>{e(x)}</p>" for x in c["como_funciona"])}</div></details>
   </section>"""
     cit = c.get("citacao")
-    jogar = f"""<section class="bloco faixa" id="como-e-jogar"><h2>Como é jogar</h2>
+    jogar = f"""<section class="bloco faixa" id="como-e-jogar"><h2>Como é jogar {e(c["jogo"])}</h2>
    {f'<blockquote class="cit"><p>“{e(cit["texto"])}”</p><cite>{e(cit["fonte"])}</cite></blockquote>' if cit else ""}
    {next((foto_html(c, fotos[t]) for t in ("jogar", "componentes", "jogabilidade", "mesa") if t in fotos), "")}
    <div class="leitura"><p>{e(c["experiencia"][0])}</p></div>
@@ -359,7 +359,7 @@ def build(c):
     serie = f'<p class="note">{e(c["serie"])}</p>' if c.get("serie") else ""
     # Seções do padrão editorial v2; resenhas antigas sem esses campos continuam iguais.
     experiencia = (
-        '<section class="bloco claro" id="como-e-jogar"><h2>Como é jogar</h2><div class="leitura">'
+        f'<section class="bloco claro" id="como-e-jogar"><h2>Como é jogar {e(c["jogo"])}</h2><div class="leitura">'
         + "".join(f"<p>{e(x)}</p>" for x in c["experiencia"]) + "</div></section>"
         if c.get("experiencia") else ""
     )
@@ -407,7 +407,7 @@ def build(c):
     abas_antigas = f""" <li><a href="#como-funciona">Como funciona</a></li>{abas_extra}<li><a href="#pros-contras">Prós e contras</a></li><li><a href="#para-quem">Para quem é</a></li><li><a href="#veredito">Veredito</a></li><li><a href="#ficha">Ficha</a></li>{'<li><a href="#premios">Prêmios</a></li>' if c["premiacoes"] else ""}<li><a href="#fontes">Fontes</a></li>"""
     main_antigo = f"""<main id="conteudo">
  <div class="col">
-  <section class="bloco claro" id="como-funciona"><h2>Como funciona</h2><div class="leitura">{como}{serie}</div></section>
+  <section class="bloco claro" id="como-funciona"><h2>Como funciona {e(c["jogo"])}</h2><div class="leitura">{como}{serie}</div></section>
   {experiencia}
   <section class="bloco claro pc" id="pros-contras">
    <div><h2>O que funciona muito bem</h2><ul>{funciona}</ul></div>
