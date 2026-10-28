@@ -1,0 +1,509 @@
+{
+ "slug": "root",
+ "jogo": "Root",
+ "cor": "#d9772b",
+ "kicker": "Resenha · Guerra assimétrica",
+ "og_titulo": "Root vale a pena? Resenha Elite Boardgamers",
+ "descricao": "Resenha de Root, vencedor de quatro Golden Geek em 2018 incluindo Jogo do Ano e finalista do As d'Or Expert 2020: como funciona, pontos fortes, pontos de atenção e para quem é.",
+ "titulo_html": "Gatos, aves, rebeldes e um vagabundo em guerra: <span>Root</span>",
+ "lede": "Root é um jogo de guerra numa floresta em que quatro facções de animais disputam o território, cada uma com regras e formas de pontuar próprias: os gatos industriais da Marquise de Cat, as aves da Eyrie Dynasties, os rebeldes da Woodland Alliance e o solitário Vagabond. Venceu quatro Golden Geek em 2018, incluindo Jogo do Ano. A arte parece de livro infantil, mas o jogo é exigente: brilha com um grupo fixo de quatro e castiga quem chega sem conhecer as regras.",
+ "tags": [
+  "2–4 jogadores",
+  "60–90 min",
+  "Estratégia",
+  "Assimétrico",
+  "Guerra"
+ ],
+ "alt": "Infográfico Elite Boardgamers sobre o jogo Root",
+ "premiacoes": [
+  {
+   "premio": "As d'Or",
+   "ano": 2020,
+   "categoria": "Jeu de l’Année Expert",
+   "colocacao": null,
+   "resultado": "finalista",
+   "fonte": "https://fr.wikipedia.org/wiki/As_d%27Or",
+   "rotulo": "Finalista"
+  },
+  {
+   "premio": "Golden Geek",
+   "ano": 2018,
+   "categoria": "Jogo do Ano",
+   "colocacao": 1,
+   "resultado": "vencedor",
+   "fonte": "https://eliteboardgamers.com.br/",
+   "rotulo": "Vencedor"
+  },
+  {
+   "premio": "Golden Geek",
+   "ano": 2018,
+   "categoria": "Arte",
+   "colocacao": 1,
+   "resultado": "vencedor",
+   "fonte": "https://eliteboardgamers.com.br/",
+   "rotulo": "Vencedor"
+  },
+  {
+   "premio": "Golden Geek",
+   "ano": 2018,
+   "categoria": "Inovação",
+   "colocacao": 1,
+   "resultado": "vencedor",
+   "fonte": "https://eliteboardgamers.com.br/",
+   "rotulo": "Vencedor"
+  },
+  {
+   "premio": "Golden Geek",
+   "ano": 2018,
+   "categoria": "Temático",
+   "colocacao": 1,
+   "resultado": "vencedor",
+   "fonte": "https://eliteboardgamers.com.br/",
+   "rotulo": "Vencedor"
+  },
+  {
+   "premio": "Golden Geek",
+   "ano": 2018,
+   "categoria": "Estratégia",
+   "colocacao": 2,
+   "resultado": "top 3",
+   "fonte": "https://eliteboardgamers.com.br/",
+   "rotulo": "2º lugar"
+  }
+ ],
+ "ficha": [
+  [
+   "Ano",
+   "2018 (no Brasil, junho de 2019)"
+  ],
+  [
+   "Designer",
+   "Cole Wehrle"
+  ],
+  [
+   "Arte",
+   "Kyle Ferrin"
+  ],
+  [
+   "Editora original",
+   "Leder Games"
+  ],
+  [
+   "Editora no Brasil",
+   "MeepleBR"
+  ],
+  [
+   "Jogadores",
+   "2 a 4"
+  ],
+  [
+   "Melhor com",
+   "4, segundo a GamesRadar+ (enquete da Ludopedia e do BGG não confirmada)"
+  ],
+  [
+   "Duração anunciada",
+   "60 a 90 minutos"
+  ],
+  [
+   "Idade",
+   "14+ (Leder Games)"
+  ],
+  [
+   "Nota BGG",
+   "8,1/10, 34º no ranking (via Board Game Oracle)"
+  ],
+  [
+   "Peso BGG",
+   "3,8/5"
+  ],
+  [
+   "Nota Ludopedia",
+   "8,87, com 2.148 notas"
+  ],
+  [
+   "Peso Ludopedia",
+   "não confirmado nas fontes consultadas"
+  ],
+  [
+   "Modo solo",
+   "não na caixa base; só com a expansão Autômata"
+  ],
+  [
+   "Componentes",
+   "tabuleiro dupla face (outono e inverno), 4 tabuleiros de facção, 55 guerreiros de madeira e o peão do Vagabond, 2 dados de 12 faces, 54 cartas do baralho comum, 15 missões, 28 construções e 19 fichas de papelão"
+  ],
+  [
+   "Versão digital",
+   "Steam (2020) e iOS, sem português"
+  ]
+ ],
+ "nota_ficha": "Nota, peso e posição do BGG vêm da Board Game Oracle; a nota da Ludopedia vem da página do designer no site, consultada por busca. O peso na Ludopedia e as enquetes de número ideal de jogadores não foram confirmados. A idade varia entre as fontes: 14+ na Leder Games, 10+ na Wikipedia.",
+ "como_funciona": [
+  "O mapa é uma floresta de clareiras ligadas por trilhas. Cada clareira tem um naipe (raposa, coelho ou rato) e espaços para construções. Vence quem chegar primeiro a 30 pontos de vitória. Todos compram do mesmo baralho de 54 cartas, que funciona como moeda: as cartas são gastas pelo naipe, e muitas podem ser fabricadas como itens ou efeitos que dão pontos. As cartas de pássaro valem como coringa.",
+  "O turno tem três fases: uma de preparação, uma em que acontecem quase todas as ações e uma final, em que se compram cartas. Só que cada facção faz isso de um jeito, descrito no próprio tabuleiro de facção. A Marquise de Cat começa espalhada pelo mapa, faz três ações por turno e pontua erguendo serrarias, oficinas e recrutadores, pagos com a madeira que as serrarias produzem.",
+  "A Eyrie Dynasties programa o turno: a cada rodada acrescenta cartas ao Decreto, uma lista de ordens que manda recrutar, mover, lutar e construir ninhos em clareiras do naipe indicado. Se não conseguir cumprir uma ordem, entra em crise, perde pontos e recomeça o Decreto. A Woodland Alliance começa fora do mapa, espalha fichas de simpatia e, com apoio suficiente, faz revoltas que removem as peças inimigas de uma clareira. O Vagabond é uma peça só: explora ruínas, cumpre missões, troca itens e pode ajudar ou atacar os outros.",
+  "Para mover, é preciso dominar a clareira de origem ou a de destino; domina quem tem mais guerreiros e construções ali. A batalha usa dois dados de 12 faces: o atacante causa baixas iguais ao maior resultado e o defensor ao menor, limitadas ao número de guerreiros de cada lado. Remover uma construção ou ficha inimiga vale um ponto.",
+  "A partida acaba assim que alguém chega a 30 pontos. Há uma segunda saída: as quatro cartas de Dominância. Com pelo menos 10 pontos, você abre mão da pontuação e passa a vencer cumprindo um objetivo de mapa, como dominar três clareiras do naipe da carta no início do seu turno."
+ ],
+ "experiencia": [
+  "Nos primeiros turnos, cada pessoa parece jogar um jogo diferente na mesma mesa, e é isso mesmo. A Marquise tenta manter a madeira circulando entre serrarias e obras, a Eyrie empilha ordens no Decreto e a Woodland Alliance espera, juntando apoio. Um exemplo do tipo de decisão: se a Eyrie tem uma carta de raposa na ordem de batalha e perde os guerreiros das clareiras de raposa, não cumpre o Decreto, cai em crise e perde pontos. Já a Marquise que marcha para uma clareira simpática à Alliance precisa entregar uma carta daquele naipe, que vira combustível para a próxima revolta.",
+  "A conversa na mesa faz parte do jogo, porque cabe aos jogadores perceber quem está disparando e combinar quem vai freá-lo. Para a Ars Technica, identificar as fraquezas de cada facção e atacá-las é o caminho da vitória. A Gaming Trend vê aí o ponto fraco: para o crítico, vencer depende demais de quem notou a ameaça a tempo."
+ ],
+ "citacao": {
+  "texto": "'Fofo' e 'jogo de guerra' raramente andam juntos, mas em Root combinam como chocolate e pasta de amendoim.",
+  "fonte": "GamesRadar+ (tradução livre)"
+ },
+ "funciona": [
+  [
+   "Assimetria total que funciona",
+   "Cada facção tem regras, peças e forma de pontuar próprias, mas todas obedecem às mesmas regras de mover, dominar e lutar. Para a Ars Technica, essa combinação entrega uma profundidade impressionante, e o crítico diz que, passado o estranhamento das primeiras partidas, dá para reconhecer o equilíbrio notável que o jogo alcançou."
+  ],
+  [
+   "Combate que se lê no tabuleiro",
+   "Batalha é rolar dois dados de 12 faces e comparar. A GamesRadar+ destaca que basta olhar o mapa para saber quantos guerreiros podem cair e o que está em jogo, e que a sorte tem alcance limitado o bastante para a partida não depender de um único lance."
+  ],
+  [
+   "Eyrie e Alliance, dois quebra-cabeças",
+   "O Decreto da Eyrie Dynasties, que cresce a cada rodada até desmoronar, é para a Ars Technica uma das facções mais recompensadoras, capaz de turnos explosivos. A revolta da Woodland Alliance, que limpa todas as peças inimigas de uma clareira, é descrita pelo mesmo crítico como explosiva e muito gratificante."
+  ],
+  [
+   "Arte que engana bem",
+   "As ilustrações de Kyle Ferrin mostram gatos, passarinhos e coelhos de livro infantil, mas o tema é ocupação, insurgência e guerra. A GamesRadar+ compara a dupla fofura e jogo de guerra a chocolate com pasta de amendoim, e a Ars Technica avisa que os bichinhos escondem dentes de verdade."
+  ],
+  [
+   "Regras à mão na mesa",
+   "Cada tabuleiro de facção traz a sequência do turno e as ações impressas. A GamesRadar+ elogia esses tabuleiros, cheios de informação útil para consulta, e as peças de função clara. A caixa ainda tem um livreto para aprender, outro de consulta (A Lei de Root) e cartas de partida guiada."
+  ],
+  [
+   "Muita vida depois da caixa",
+   "Com quatro facções que jogam de formas tão diferentes, trocar de lugar na mesa é quase aprender outro jogo. O sucesso rendeu expansões com novas facções, mapas e facções automáticas, várias lançadas em português pela MeepleBR, além da versão digital e de um RPG ambientado na mesma floresta."
+  ]
+ ],
+ "atencao": [
+  [
+   "Moderada",
+   "Barreira de entrada alta",
+   "A GamesRadar+ avisa que a primeira partida quase sempre traz confusão e alguma frustração, e a Wirecutter chama Root de jogo intimidador para iniciantes. O problema não é o combate, que é simples, mas a quantidade de ações de cada facção: segundo a GamesRadar+, Alliance e Vagabond podem sobrecarregar quem está estreando."
+  ],
+  [
+   "Moderada",
+   "Novato desequilibra a mesa",
+   "Como as facções se controlam entre si, um jogador inexperiente atrapalha todo mundo. Para a GamesRadar+, alguém sem experiência num papel-chave, como a Marquise ou a Woodland Alliance, pode fazer a partida não só perder a graça, mas funcionar mal. Root rende mais num grupo que joga junto com frequência."
+  ],
+  [
+   "Moderada",
+   "Melhor com quatro",
+   "A GamesRadar+ lista ser melhor com quatro pessoas entre os motivos para pensar duas vezes e diz que o jogo fica mais instável com dois ou três. Para quem joga quase sempre em casal, a caixa base aproveita só parte do que oferece, já que o encanto está no choque entre as quatro facções."
+  ],
+  [
+   "Leve",
+   "Vitória pela política da mesa",
+   "A Gaming Trend argumenta que vencer depende de identificar quem ameaça ganhar e quem pode freá-lo, o que às vezes faz a vitória parecer imerecida. O crítico também descreve a experiência como oito ou oitenta e acha que, depois de dominado, o jogo fica repetitivo, embora ainda lhe dê nota 80."
+  ],
+  [
+   "Leve",
+   "Cartas densas",
+   "O baralho comum faz tudo ao mesmo tempo: é moeda, vale pelo naipe, pode ser fabricado e ainda traz emboscadas e Dominância. A GamesRadar+ conta que boa parte das dúvidas dos novatos gira em torno das cartas: quando importa o naipe, quando importa o custo e quando vale o texto."
+  ],
+  [
+   "Leve",
+   "Sem solo e digital sem português",
+   "A caixa base exige pelo menos dois jogadores; para jogar sozinho é preciso a expansão Autômata. A versão digital da Dire Wolf, na Steam e no iPhone e iPad, não tem português, segundo as próprias lojas. E, na consulta, o jogo base estava esgotado em várias lojas brasileiras."
+  ]
+ ],
+ "para_quem": [
+  "Tem um grupo fixo de quatro pessoas",
+  "Gosta de conflito direto e de negociar na mesa",
+  "Quer facções que jogam de formas realmente diferentes",
+  "Topa perder as primeiras partidas para aprender",
+  "Gosta de jogos de guerra, mas quer regras de combate simples"
+ ],
+ "nao_e_para": [
+  "Joga quase sempre a dois ou sozinho",
+  "Muda de grupo a cada partida",
+  "Não gosta de ver alguém atacar suas peças",
+  "Quer um jogo fácil de explicar em dez minutos",
+  "Procura um jogo para crianças por causa dos bichinhos"
+ ],
+ "selo": "Recomendado para público específico",
+ "veredito": "Root faz algo raro: quatro facções que jogam jogos diferentes, unidas por regras comuns de movimento e combate simples, embaladas na arte de Kyle Ferrin. A crítica elogia a profundidade e o equilíbrio, e a recompensa vem quando todos já conhecem as facções. O preço disso é alto: a primeira partida confunde, um novato num papel-chave desequilibra a mesa e o jogo perde força com menos de quatro. Para um grupo fixo que gosta de conflito e negociação, a edição da MeepleBR, entre R$ 429,90 e R$ 489,90 quando há estoque, vale o investimento; para quem joga a dois ou com gente diferente a cada vez, há opções melhores.",
+ "tagline": "Bichinhos fofos, guerra de verdade: cada facção joga outro jogo.",
+ "consulta": "28/10/2026",
+ "fontes": [
+  [
+   "Leder Games – Root",
+   "https://ledergames.com/products/root-a-game-of-woodland-might-and-right",
+   "página da editora, jogadores, duração, idade, componentes, facções"
+  ],
+  [
+   "Wikipedia – Root",
+   "https://en.wikipedia.org/wiki/Root_(board_game)",
+   "designer, arte, regras das facções, expansões, versão digital, prêmios"
+  ],
+  [
+   "Ars Technica – Root",
+   "https://arstechnica.com/gaming/2018/09/root-is-a-terrific-and-fully-asymmetric-woodland-wargame/",
+   "crítica"
+  ],
+  [
+   "GamesRadar+ – Root",
+   "https://www.gamesradar.com/root-board-game-review/",
+   "crítica e citação"
+  ],
+  [
+   "Gaming Trend – Root, cinco anos depois",
+   "https://gamingtrend.com/reviews/root-review-a-perspective-after-five-years-in-the-woods/",
+   "crítica"
+  ],
+  [
+   "Wirecutter – Best Strategy Board Games",
+   "https://www.nytimes.com/wirecutter/reviews/best-strategy-board-games/",
+   "crítica (jogo intimidador para iniciantes)"
+  ],
+  [
+   "Board Game Oracle – Root",
+   "https://www.boardgameoracle.com/boardgame/price/kpase6kheF/root",
+   "nota, peso e posição no BGG"
+  ],
+  [
+   "Ludopedia – Cole Wehrle",
+   "https://ludopedia.com.br/designer/6656/Cole%20Wehrle",
+   "nota e número de avaliações na Ludopedia"
+  ],
+  [
+   "Ludopedia – Root",
+   "https://ludopedia.com.br/jogo/root",
+   "edição nacional e data de lançamento no Brasil"
+  ],
+  [
+   "The Root Database – Law of Root (Vitória)",
+   "https://www.therootdatabase.com/law/victory/en/",
+   "30 pontos, cartas de Dominância"
+  ],
+  [
+   "The Root Database – Law of Root (Ações)",
+   "https://www.therootdatabase.com/law/key-actions/en/",
+   "movimento, batalha, fabricação"
+  ],
+  [
+   "Loja MeepleBR – Root",
+   "https://www.lojameeplebrjogos.com.br/root",
+   "componentes da edição nacional, disponibilidade"
+  ],
+  [
+   "Revenda MeepleBR – Root",
+   "https://www.revendameeplebr.com.br/root",
+   "preço sugerido"
+  ],
+  [
+   "Mercado Livre – Root (MeepleBR)",
+   "https://www.mercadolivre.com.br/root-board-game-meeplebr-pt-br/p/MLB19709898",
+   "preço de referência"
+  ],
+  [
+   "Brechó Lúdico – Root",
+   "https://brecholudico.com.br/produto/root/",
+   "preço de referência, disponibilidade"
+  ],
+  [
+   "Taverna Real – Root",
+   "https://www.tavernareal.com/tabuleiro/root",
+   "disponibilidade da edição nacional"
+  ],
+  [
+   "Steam – Root",
+   "https://store.steampowered.com/app/965580/Root/?l=brazilian",
+   "versão digital, idiomas"
+  ],
+  [
+   "App Store – Root Board Game",
+   "https://apps.apple.com/BR/app/id1439262206",
+   "versão para iPhone e iPad, preço, idiomas"
+  ],
+  [
+   "Golden Geek 2015–2025 (consulta)",
+   "https://eliteboardgamers.com.br/",
+   "Golden Geek"
+  ],
+  [
+   "Wikipedia – As d'Or",
+   "https://fr.wikipedia.org/wiki/As_d%27Or",
+   "As d'Or"
+  ]
+ ],
+ "roteiro": {
+  "tema": "storybook autumn woodland at war, cute anthropomorphic forest animals with swords and banners, warm orange, ochre, forest green and cream palette, flat hand-drawn Kyle Ferrin style illustration",
+  "cena": "an orange cat soldier of the Marquise de Cat standing beside a sawmill, a blue hawk of the Eyrie Dynasties perched on a roost, green-cloaked mice and rabbits of the Woodland Alliance hiding in the bushes and a lone raccoon Vagabond with a backpack walking through the autumn forest",
+  "mesa": "a large square box titled \"ROOT\" with storybook art of woodland animals, a double-sided forest map board with twelve round clearings linked by paths and a river, four faction boards, orange wooden cat warriors, blue wooden bird warriors, green wooden alliance warriors, a single grey raccoon Vagabond pawn, cardboard sawmills, workshops, roosts and sympathy tokens, item tokens, a shared deck of cards and two twelve-sided dice",
+  "titulo": "ROOT",
+  "chamada": "GATOS, AVES, REBELDES E UM VAGABUNDO DISPUTAM A FLORESTA, CADA UM COM REGRAS E OBJETIVOS COMPLETAMENTE DIFERENTES.",
+  "destaque": "JOGO DO ANO NO GOLDEN GEEK 2018. BICHINHOS FOFOS ESCONDEM UM JOGO DE GUERRA ASSIMÉTRICO E EXIGENTE, QUE RECOMPENSA GRUPOS FIXOS DE QUATRO.",
+  "lateral": [
+   "2–4 jogadores",
+   "60–90 minutos",
+   "complexidade 3,8 / 5 (pesado)",
+   "modo solo: só com a expansão Autômata",
+   "2 dados de 12 faces no combate",
+   "designer Cole Wehrle",
+   "editora original Leder Games",
+   "editora no Brasil MeepleBR",
+   "ano 2018",
+   "idade 14+"
+  ],
+  "numeros": [
+   [
+    "NOTA BGG",
+    "8,1/10",
+    "34º no ranking"
+   ],
+   [
+    "LUDOPEDIA",
+    "8,87",
+    "2.148 notas"
+   ],
+   [
+    "FACÇÕES",
+    "4",
+    "cada uma com regras próprias"
+   ],
+   [
+    "PONTOS",
+    "30",
+    "o primeiro a chegar vence"
+   ]
+  ],
+  "como_resumo": "Prepare o motor da sua facção, mova, lute nos dados e corra para 30 pontos.",
+  "passos": [
+   [
+    "PREPARE A FACÇÃO",
+    "No início do turno cada facção arma seu motor: a Marquise ganha madeira nas serrarias, a Eyrie acrescenta cartas ao Decreto de ordens."
+   ],
+   [
+    "AJA DO SEU JEITO",
+    "Depois vêm as ações: a Marquise faz três, a Alliance espalha simpatia e prepara revoltas, o Vagabond explora ruínas e cumpre missões."
+   ],
+   [
+    "MOVA E DOMINE",
+    "Para mover, domine a clareira de origem ou a de destino. Domina quem tem mais guerreiros e construções naquela clareira."
+   ],
+   [
+    "LUTE NOS DADOS",
+    "Role dois dados de 12 faces: o atacante causa baixas pelo maior resultado, o defensor pelo menor. Destruir construções e fichas rende pontos."
+   ],
+   [
+    "CHEGUE A 30",
+    "No fim do turno compre cartas. Pontos vêm de construções, itens fabricados e baixas; vence quem chega a 30 ou cumpre uma Dominância."
+   ]
+  ],
+  "fortes": [
+   "Quatro facções com regras e objetivos totalmente diferentes.",
+   "Combate simples: dois dados, sem tabelas nem cálculos.",
+   "Arte de Kyle Ferrin contrasta bichinhos e guerra séria.",
+   "Decreto da Eyrie rende turnos explosivos, diz a Ars.",
+   "Revolta da Woodland Alliance limpa uma clareira inteira.",
+   "Tabuleiros de facção trazem as regras à mão.",
+   "Mapa dupla face: floresta de outono e de inverno."
+  ],
+  "atencao": [
+   "Primeira partida confunde; GamesRadar+ diz difícil para novatos.",
+   "Novato numa facção-chave desequilibra a mesa inteira.",
+   "Melhor com quatro; mais instável com dois ou três.",
+   "Vencer depende de frear o líder na hora certa.",
+   "Cartas densas: naipe, custo e efeito confundem iniciantes.",
+   "Caixa base sem modo solo.",
+   "Digital sem português; estoque nacional anda escasso."
+  ],
+  "ficha": [
+   "Designer: Cole Wehrle",
+   "Arte: Kyle Ferrin",
+   "Editora original: Leder Games",
+   "Editora no Brasil: MeepleBR (2019)",
+   "Jogadores: 2 a 4",
+   "Duração: 60–90 min",
+   "Idade: 14+",
+   "Madeira: 55 guerreiros e o peão do Vagabond",
+   "Cartas: 54 do baralho comum e 15 missões",
+   "Tabuleiro dupla face, 4 tabuleiros de facção, 2 dados D12"
+  ],
+  "premios": [
+   "GOLDEN GEEK 2018 · JOGO DO ANO",
+   "GOLDEN GEEK 2018 · ARTE, INOVAÇÃO E TEMÁTICO",
+   "AS D'OR 2020 · FINALISTA EXPERT"
+  ],
+  "perfil": [
+   [
+    "Assimetria entre facções",
+    5
+   ],
+   [
+    "Interação e conflito",
+    5
+   ],
+   [
+    "Arte e produção",
+    5
+   ],
+   [
+    "Profundidade estratégica",
+    5
+   ],
+   [
+    "Facilidade de ensinar",
+    1
+   ],
+   [
+    "Partida a dois",
+    2
+   ]
+  ],
+  "extra": {
+   "titulo": "EXPERIMENTE NO DIGITAL",
+   "texto": "Root digital, da Dire Wolf, saiu na Steam em 2020 e está no iPhone e iPad por R$ 59,90, mas sem português. A expansão Autômata traz facções automáticas para jogar sozinho."
+  },
+  "veredito": "O JOGO DE GUERRA MAIS FOFO E MAIS CRUEL.",
+  "veredito_texto": "Quatro facções que jogam jogos diferentes, combate simples e arte encantadora. A estreia confunde e o jogo perde força com menos de quatro, mas para um grupo fixo é compra de coleção."
+ },
+ "legenda": "Gatos industriais, aves burocratas, rebeldes e um guaxinim aventureiro em guerra pela floresta. 🐈🦅🌲\n\nRoot venceu quatro Golden Geek em 2018, incluindo Jogo do Ano, e foi finalista do As d'Or Expert 2020.\nCada facção joga um jogo diferente na mesma mesa, com regras de combate simples e arte de livro infantil.\nA primeira partida confunde e o jogo pede um grupo fixo de quatro, mas nesse grupo é inesquecível.\nVeredito: RECOMENDADO PARA PÚBLICO ESPECÍFICO.\n\nQual facção é a sua: Marquise, Eyrie, Alliance ou Vagabond?\nResenha completa no link da bio.\n\n#Root #LederGames #MeepleBR #JogosDeTabuleiro #BoardGames #Boardgamer #GoldenGeek #JogoDeEstrategia #EliteBoardgamers #AsymmetricGames",
+ "jogadores": [
+  [
+   "2 jogadores",
+   "Funciona, mas a GamesRadar+ considera o jogo mais instável com dois ou três jogadores do que com a mesa completa.",
+   1
+  ],
+  [
+   "3 jogadores",
+   "Melhor que a dois, mas ainda abaixo da mesa cheia na avaliação da GamesRadar+; uma das quatro facções da caixa fica de fora.",
+   2
+  ],
+  [
+   "4 jogadores",
+   "O formato ideal para a GamesRadar+: as quatro facções da caixa na mesa, cada uma vigiando e freando as outras.",
+   3
+  ],
+  [
+   "Sozinho",
+   "A caixa base não tem modo solo; a expansão Autômata traz facções controladas por regras para jogar sozinho ou em cooperação.",
+   1
+  ]
+ ],
+ "primeira_partida": "Reserve uma noite inteira para a estreia: a Leder Games anuncia de 60 a 90 minutos de partida, sem contar a explicação, e a GamesRadar+ avisa que a primeira vez quase sempre traz confusão. Use o livreto de partida guiada e as cartas de passo a passo que vêm na caixa, deixe A Lei de Root só para consulta e dê a Marquise de Cat, que a Ars Technica considera a facção de regras mais diretas, para quem nunca jogou. Alliance e Vagabond ficam melhores nas mãos de quem já conhece o jogo.",
+ "edicao_nacional": "A MeepleBR lançou Root em português em junho de 2019, segundo a Ludopedia, com os livretos Aprendendo a Jogar e A Lei de Root. Na consulta de 28/10/2026, o jogo base estava indisponível na loja da própria MeepleBR, no Brechó Lúdico e na Taverna Real. O preço sugerido pela editora é R$ 429,90, mesmo valor do Brechó Lúdico; no Mercado Livre havia anúncio a R$ 489,90, marcado como último disponível.",
+ "preco_ref": {
+  "faixa": "R$ 429,90 a R$ 489,90",
+  "data": "28/10/2026",
+  "obs": "estoque escasso: esgotado na loja MeepleBR, no Brechó Lúdico e na Taverna Real"
+ },
+ "versoes": "Root ganhou quatro expansões grandes. A MeepleBR lançou em português Ribeirinhos e Submundo, cada uma com duas facções novas, a Autômata, com facções controladas por regras para jogar sozinho ou em cooperação, e pacotes menores como Caixa de Capangas e Pacote do Malandro. A versão digital da Dire Wolf saiu na Steam em 2020 e também está no iPhone e iPad, mas sem português.",
+ "comparacoes": [
+  [
+   "Scythe",
+   null,
+   "Outro premiado de facções assimétricas disputando um mapa, mas com economia de eurogame e combate raro. Em Scythe todos usam as mesmas ações; em Root a guerra é constante e cada facção segue regras próprias."
+  ],
+  [
+   "Dune: Imperium",
+   "dune-imperium",
+   "Para quem gosta de conflito direto com estratégia por trás: construção de baralho e alocação de trabalhadores numa briga por Arrakis, com regras iguais para todos, o que torna a primeira partida menos intimidadora."
+  ]
+ ]
+}
