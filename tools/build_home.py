@@ -16,7 +16,7 @@ from noticias.checar_noticia import problemas  # noqa: E402
 
 MESES = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"]
 SELO_CLASSE = {"Vale a compra": "compra", "Vale acompanhar": "acompanhar", "Para fãs do jogo base": "fas", "Com ressalvas": "ressalvas", "Informativo": "info"}
-CAT_CLASSE = {"Prêmios": "premios", "Chegando ao Brasil": "brasil", "Mercado": "mercado", "Financiamento": "financ", "Eventos": "eventos"}
+CAT_CLASSE = {"Prêmios": "premios", "Chegando ao Brasil": "brasil", "Mercado": "mercado", "Financiamento": "financ", "Eventos": "mercado"}
 
 
 def data_longa(iso):
@@ -243,12 +243,17 @@ def build_home():
   <p class="opina"><span class="selo {SELO_CLASSE[m['selo']]}">{e(m['selo'])}</span> {e(m['veredito'])}</p>
   <span class="meta">{data_longa(m['data'])} · {e(m['fontes'][0]['nome'])}</span><span class="credito">{e(m['imagem']['credito'])}</span></div>
  </a></article>"""
-    itens = "".join(
-        f"""<li><a href="noticias/{n['slug']}/">{f'<img src="{img_nota(n, pre)}" width="76" height="76" alt="" loading="lazy">' if n.get("imagem") else f'<span class="sem">{icone("dica")}</span>'}
+    def item(n, pre):
+        return f"""<li><a href="noticias/{n['slug']}/">{f'<img src="{img_nota(n, pre)}" width="76" height="76" alt="" loading="lazy">' if n.get("imagem") else f'<span class="sem">{icone("dica")}</span>'}
    <div><span class="cat {CAT_CLASSE.get(n['categoria'], 'mercado')}">{e(n['categoria'])}</span> <span class="meta">{data_curta(n['data'])} · {e(n['fontes'][0]['nome'].split(':')[0])}</span>
    <h3>{e(n['titulo'])}</h3><p><span class="selo {SELO_CLASSE[n['selo']]}">{e(n['selo'])}</span> {e(n['por_que_importa'])}</p></div></a></li>"""
-        for n in resto
-    )
+    itens = "".join(item(n, pre) for n in resto[:8])
+    arquivo = "".join(item(n, "../").replace('href="noticias/', 'href="../noticias/') for n in ns)
+    corpo_arq = f"""{cabecalho("../", "Notícias")}
+<main id="conteudo" class="in"><div class="nota"><a class="volta" href="../">← Página inicial</a>
+ <section class="bloco ultimas"><h2>Todas as notícias</h2><ul class="lista-n">{arquivo}</ul></section></div></main>
+{rodape("../")}"""
+    (ROOT / "noticias" / "index.html").write_text(pagina("Notícias | Elite Boardgamers", "Todas as notícias de jogos de tabuleiro da Elite Boardgamers, com fonte, data e opinião.", f"{SITE}/noticias/", f"{SITE}/resenhas/capa.jpg", "../", corpo_arq), encoding="utf-8")
     alta = "".join(
         f'<li><a href="{j["link"]}"><img src="{capa_jogo(pre, j["id_ludopedia"])}" width="44" height="44" alt="" loading="lazy"><div><b>{e(j["nome"])}</b><span>{e(j["motivo"])}</span></div></a></li>'
         for j in home["em_alta"]
@@ -284,7 +289,7 @@ def build_home():
  <p class="edicao">Edição de {data_longa(home["edicao"])}</p>
  <div class="grade">
   {manchete}
-  <section class="bloco ultimas"><h2>Últimas notícias</h2><ul class="lista-n">{itens}</ul></section>
+  <section class="bloco ultimas"><h2>Últimas notícias <a href="noticias/">Ver todas ({len(ns)})</a></h2><ul class="lista-n">{itens}</ul></section>
   <aside class="lado"><section class="bloco alta"><h2>Em alta</h2><ol class="hot">{alta}</ol></section>
   <section class="bloco agenda"><h2>Agenda</h2><ul>{agenda}</ul></section></aside>
   <section class="bloco brasil" id="chegando"><h2>Chegando ao Brasil · {e(rotulo.lower())} <a href="https://ludopedia.com.br/lancamentos?mes=2026-11" target="_blank" rel="noopener">Calendário completo na Ludopedia</a></h2><ul class="capas">{capas}</ul></section>
@@ -327,7 +332,7 @@ def build_nota(n):
  <section class="bloco"><h2>Em números</h2><ul class="nums">{numeros}</ul></section>
  <section class="bloco"><h2>Contexto</h2><div class="corpo">{"".join(f"<p>{e(p)}</p>" for p in n['corpo'])}</div></section>
  <section class="bloco brasil-n"><h2>No Brasil</h2><p>{e(n['no_brasil'])}</p></section>
- <section class="bloco"><h2>O que diz a crítica</h2><ul class="crit">{critica}</ul></section>
+ <section class="bloco"><h2>O que diz a crítica</h2>{f'<ul class="crit">{critica}</ul>' if critica else '<p class="corpo">Ainda não encontramos resenha publicada por veículo especializado.</p>'}</section>
  <section class="bloco quem"><div><h2>Interessa a você se…</h2><ul class="ok">{sim}</ul></div>{f'<div><h2>Pense duas vezes se…</h2><ul class="no">{nao}</ul></div>' if nao else ""}</section>
  <section class="bloco veredito {sc}"><h2>Nossa opinião</h2><span class="selo {sc}">{e(n['selo'])}</span><p>{e(n['veredito'])}</p></section>
  {f'<section class="bloco"><h2>Jogos citados</h2><div class="jogos">{jogos}</div></section>' if jogos else ""}

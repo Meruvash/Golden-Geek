@@ -34,44 +34,44 @@
  ],
  "financiamentos": [
   {
-   "nome": "O Senhor dos Anéis: Inimigos da Terra-Média",
-   "editora": "D20 Culture",
-   "onde": "Brasil",
-   "situacao": "Em financiamento coletivo",
-   "link": "https://ludopedia.com.br/lancamentos?mes=2026-10",
-   "fonte": "Ludopedia, 28/10/2026"
-  },
-  {
-   "nome": "DANTE: Inferno",
-   "editora": "Across the Board",
-   "onde": "Brasil",
-   "situacao": "Em financiamento coletivo",
-   "link": "https://ludopedia.com.br/topico/99069/-topico-oficial-dante-inferno",
-   "fonte": "Ludopedia, 28/10/2026"
-  },
-  {
    "nome": "BattleForge: Berserker",
    "editora": "Calamity Games",
-   "onde": "Brasil",
-   "situacao": "Em financiamento coletivo",
-   "link": "https://ludopedia.com.br/lancamentos?mes=2026-10",
-   "fonte": "Ludopedia, 28/10/2026"
+   "onde": "Brasil · aberto",
+   "situacao": "Pré-venda no MeepleStarter até 15/11",
+   "fonte": "MeepleStarter, 28/10/2026",
+   "noticia": "financiamentos-abertos-battleforge-dia-da-caca"
   },
   {
    "nome": "Dia da Caça",
    "editora": "Ludovia Estúdio",
-   "onde": "Brasil",
-   "situacao": "Em financiamento coletivo",
-   "link": "https://ludopedia.com.br/lancamentos?mes=2026-10",
-   "fonte": "Ludopedia, 28/10/2026"
+   "onde": "Brasil · aberto",
+   "situacao": "62% da meta, termina em 06/11",
+   "fonte": "MeepleStarter, 28/10/2026",
+   "noticia": "financiamentos-abertos-battleforge-dia-da-caca"
   },
   {
    "nome": "The Lord of the Rings: The King's Gambit",
    "editora": "Restoration Games",
-   "onde": "Kickstarter",
-   "situacao": "US$ 2,33 milhões de mais de 7.300 apoiadores no último dia",
-   "link": "https://boardgamewire.com/index.php/2026/10/19/i-wouldnt-expect-this-to-become-the-norm-backers-overwhelmingly-choose-kings-gambit-most-expensive-tiers-power-crowdfund-past-2-3m/",
-   "fonte": "BoardGameWire, 19/10/2026"
+   "onde": "Kickstarter · encerrado",
+   "situacao": "US$ 2,58 milhões; edição de loja em 2027",
+   "fonte": "Kicktraq, 20/10/2026",
+   "noticia": "kings-gambit-fecha-com-2-5-milhoes"
+  },
+  {
+   "nome": "O Senhor dos Anéis: Inimigos da Terra-Média",
+   "editora": "D20 Culture",
+   "onde": "Brasil · encerrado",
+   "situacao": "Entrega prevista para fevereiro de 2027",
+   "fonte": "Catarse, 28/10/2026",
+   "noticia": "inimigos-da-terra-media-entrega-2027"
+  },
+  {
+   "nome": "DANTE: Inferno",
+   "editora": "Across the Board",
+   "onde": "Brasil · encerrado",
+   "situacao": "R$ 425 mil no Catarse; sem pré-venda aberta",
+   "fonte": "Catarse, 28/10/2026",
+   "noticia": "dante-inferno-across-the-board"
   }
  ],
  "agenda": [

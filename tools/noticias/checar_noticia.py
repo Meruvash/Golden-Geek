@@ -32,8 +32,8 @@ def problemas(n):
     if not 2 <= len(nums) <= 4 or any(len(x) != 3 or not x[2] for x in nums):
         erros.append("números: 2 a 4 itens [valor, rótulo, fonte], todos com fonte")
     crit = n.get("critica", [])
-    if not 1 <= len(crit) <= 3 or any(not c.get("fonte") or not c.get("texto") for c in crit):
-        erros.append("crítica: 1 a 3 itens com fonte e texto")
+    if len(crit) > 3 or any(not c.get("fonte") or not c.get("texto") for c in crit) or (not crit and n.get("selo") != "Informativo"):
+        erros.append("crítica: 1 a 3 itens com fonte e texto (só nota Informativo pode sair sem crítica)")
     if not 1 <= len(n.get("para_quem", [])) <= 3 or len(n.get("nao_e_para", [])) > 3:
         erros.append("para_quem: 1 a 3 itens; nao_e_para: até 3")
     if len(n.get("fontes", [])) < 2 or any(not f.get("url") or not f.get("data") for f in n.get("fontes", [])):
