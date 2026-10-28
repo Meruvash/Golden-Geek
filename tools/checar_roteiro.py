@@ -79,6 +79,11 @@ def checar_texto(c):
         if not mn <= n <= mx:
             erros.append(f"texto · {nome}: {n} {un} (padrão: {mn} a {mx})")
 
+    tb = c.get("titulo_busca", "")
+    if not tb:
+        erros.append("texto · titulo_busca: falta o título da busca (ver PADRAO_EDITORIAL.md)")
+    elif len(tb) > 62 or "resenha" not in tb.lower() or c["jogo"].split(":")[0].lower() not in tb.lower() and c["og_titulo"].split(" vale a pena")[0].split(":")[0].lower() not in tb.lower():
+        erros.append(f"texto · titulo_busca: {len(tb)} caracteres; precisa de até 62, com o nome do jogo e a palavra resenha")
     faixa("lede", palavras(c.get("lede", "")), 50, 90)
     faixa("como_funciona (parágrafos)", len(c.get("como_funciona") or []), 4, 6, "parágrafos")
     faixa("como_funciona", total(c.get("como_funciona")), 200, 350)

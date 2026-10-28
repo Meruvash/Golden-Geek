@@ -43,6 +43,17 @@ ICONES = {
 }
 
 
+def nome_br(c):
+    """Nome do jogo como o leitor brasileiro conhece (o og_titulo usa o nome da edição nacional)."""
+    return c["og_titulo"].split(" vale a pena")[0].split(" Resenha")[0]
+
+
+def titulo_busca(c):
+    """Título do Google e da prévia: titulo_busca (ângulo próprio da resenha) ou, nas antigas, o og_titulo."""
+    t = c.get("titulo_busca") or c["og_titulo"].replace(" Resenha Elite Boardgamers", " Resenha")
+    return t if len(t) > 42 else f"{t} | Elite Boardgamers"
+
+
 def data_longa(iso):
     a, m, d = (int(x) for x in iso[:10].split("-"))
     return f"{d} de {MESES[m - 1]} de {a}"
@@ -269,7 +280,7 @@ def layout_v2(c, premios_bloco, ficha_html, fontes, fotos=None, info_meio=""):
     )
     compara = f'<section class="bloco claro" id="compare"><h2>Se você gosta de {e(c["jogo"])}…</h2><ul class="cards">{cards}</ul></section>' if cards else ""
     veredito = f"""<section class="bloco fecho" id="veredito">
-   <h2>Veredito Elite Boardgamers</h2>
+   <h2>Veredito: {e(nome_br(c))} vale a pena?</h2>
    <span class="selo {selo_class(c["selo"])}">{e(c["selo"])}</span>
    <p>{e(c["veredito"])}</p>
    <p class="tagline">{e(c["tagline"])}</p>
@@ -421,7 +432,7 @@ def build(c):
   {edicao_bloco}
   {comparacoes_bloco}
   <section class="bloco fecho" id="veredito">
-   <h2>Veredito Elite Boardgamers</h2>
+   <h2>Veredito: {e(nome_br(c))} vale a pena?</h2>
    <span class="selo {selo_class(c["selo"])}">{e(c["selo"])}</span>
    <p>{e(c["veredito"])}</p>
    <p class="tagline">{e(c["tagline"])}</p>
@@ -487,12 +498,12 @@ def build(c):
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
-<title>{e(c["og_titulo"].replace(" Resenha Elite Boardgamers", " Resenha | Elite Boardgamers"))}</title>
+<title>{e(titulo_busca(c))}</title>
 <meta name="description" content="{e(c["descricao"])}">
 <link rel="canonical" href="{SITE}/{slug}/">
 <meta property="og:site_name" content="Elite Boardgamers">
 <meta property="og:locale" content="pt_BR">
-<meta property="og:title" content="{e(c["og_titulo"])}">
+<meta property="og:title" content="{e(titulo_busca(c))}">
 <meta property="og:description" content="{e(c["descricao"])}">
 <meta property="og:type" content="article">
 <meta property="og:url" content="{SITE}/{slug}/">

@@ -10,13 +10,13 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import seo  # noqa: E402
 from imagens_resp import srcset  # noqa: E402
-from build_review import INSTAGRAM, ROOT, SITE, WHATSAPP, campo, capa_src, versao, e, faixa_nota, icone, numero, selo_class  # noqa: E402
+from build_review import INSTAGRAM, ROOT, SITE, WHATSAPP, campo, capa_src, versao, e, faixa_nota, icone, nome_br, numero, selo_class  # noqa: E402
 
 
 def card(c):
     nota = numero(campo(c["ficha"], "nota bgg"))
     vit = sum(1 for a in c["premiacoes"] if a["resultado"] == "vencedor")
-    titulo = c["og_titulo"].split(" Resenha")[0]
+    titulo = nome_br(c)
     nota_html = f'<span class="nota {faixa_nota(nota)}" aria-label="Nota BGG {nota:.1f}">{f"{nota:.1f}".replace(".", ",")}</span>' if nota else ""
     premio = f'<span class="vit">{vit} vitória{"s" if vit != 1 else ""} em prêmios</span>' if vit else ""
     return f"""  <li><a class="card" href="../{c["slug"]}/">

@@ -44,6 +44,7 @@ A página é a resenha completa: precisa ensinar o jogo, mostrar como é jogar, 
 
 | Campo (em `conteudo/<slug>.json`) | Seção da página | Regra |
 |---|---|---|
+| `titulo_busca` | título no Google e na prévia | Até 62 caracteres, com o nome do jogo e a palavra "resenha", e um ângulo tirado da própria resenha (a frase de destaque, o prêmio principal, a comparação ou a série). Exemplos: "Cascadia: resenha do quebra-cabeça de natureza em 30 min", "Santuário ou Ark Nova? Resenha do vencedor do DSP 2026". "Vale a pena?" só quando for a dúvida real (jogo caro) e sem repetir a fórmula das últimas resenhas. O subtítulo do veredito já traz "Veredito: <jogo> vale a pena?". |
 | `lede` | abertura | 50 a 90 palavras: o que é, o prêmio principal, para quem é e uma pista do veredito. |
 | `como_funciona` | Como funciona | 4 a 6 parágrafos, 200 a 350 palavras no total: objetivo, o turno, a mecânica central, a progressão e como acaba e pontua. Termos do jogo explicados na primeira vez. |
 | `experiencia` | Como é jogar | 2 a 3 parágrafos, 120 a 220 palavras: ritmo, decisões típicas e um exemplo concreto de jogada. |
