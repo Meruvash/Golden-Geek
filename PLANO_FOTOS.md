@@ -70,9 +70,54 @@ Guarde o print da resposta e registre no `fontes.json` da foto: `"credito": "Fot
 - **Sem pessoas no quadro** (a página não usa fotos com gente; mãos só se for o foco).
 - Mande para o robô processar: `robo.py kit <slug> fotos.zip --nome "Golden Geek"` e o crédito sai "Imagem: Golden Geek".
 
+## Escala: de onde os sites internacionais tiram as fotos
+
+Pesquisa de 28/10/2026: 15 resenhas de 8 sites, com as imagens analisadas pelo crédito na legenda, pelo nome do arquivo e pelo servidor de origem (os metadados de câmera vêm apagados pelos CDNs).
+
+| Site | Pista nas imagens | Fonte real |
+|---|---|---|
+| GamesRadar+ | "Image credit: Future/Matt Thrower" e "sample provided by the publisher" | cópia da editora + foto própria |
+| Gaming Trend | `IMG_5866.jpeg` (iPhone) e "provided by the publisher" | cópia + foto de celular |
+| Player Elimination | `pxl_2025…jpg` (Pixel) e `pic8662670.png` (padrão de nome do BGG) | foto de celular + 1 imagem do BGG |
+| Board Game Quest | `Sky-Team-Gameplay.jpg` e "review copies provided by the publisher" | cópia + foto própria |
+| Shut Up & Sit Down | `MVI_0202…Still001.jpg` | quadros dos próprios vídeos |
+| Tabletop Gaming | capa tratada no Photoshop + foto de componentes | material da editora |
+| Meeple Mountain | `m.media-amazon.com` | imagem de produto do programa de afiliados da Amazon |
+| Zatu | fotos de produto | é loja: fotografa o próprio estoque |
+
+**Conclusão: não existe um banco de imagens escondido.** Em 6 dos 8 sites, a fonte consistente é a mesma: a editora manda a cópia e o site fotografa. Material da editora, BGG e Amazon aparecem como complemento, quase sempre só para a caixa.
+
+### Fontes de catálogo: o que dá e o que não dá
+
+- **BGG (XML API):** desde 2025 exige registro do aplicativo; a licença gratuita é só para uso não comercial, com crédito "BoardGameGeek"; uso comercial (loja, por exemplo) pede licença paga. Os termos não falam das imagens, que pertencem a quem enviou. **Use para dados, não para fotos:** com o registro, nota, peso e número de avaliações viriam pela API oficial, em vez de busca na web.
+- **Amazon (Product Advertising API):** só para afiliados; a imagem não pode ser guardada (só o link, por até 24 h) e precisa apontar para a Amazon com o link de afiliado. Não combina com o nosso fluxo (webp próprio, `capa.jpg`, crivo). Fica de fora.
+
+### Arquitetura em camadas
+
+| Camada | Fonte | Entrega | Escala |
+|---|---|---|---|
+| 1 | **Fotos próprias de cópias de review** | mesa, partida, componentes, caixa nacional | é a fonte dos grandes sites; precisa do programa de cópias e de uma sessão de fotos fixa |
+| 2 | **Material oficial pelo robô** (editora, licenciadas, kits) | caixa e componentes; às vezes mesa | automática; já cobre 20 de 22 jogos com algo |
+| 3 | **Ludoteca parceira** (board game café ou loja com biblioteca) | mesa e componentes de jogos que não temos | uma tarde por mês, cerca de 20 jogos por sessão a 10–15 min cada |
+| 4 | **Comunidade** (grupo do WhatsApp, com termo) | fotos reais de partida | complementar; ótima para jogos raros |
+| 5 | **Licença livre** (Commons) | fotos de usuários | baixa cobertura; só jogos famosos |
+
+Como colocar a camada 1 e a 3 de pé:
+
+1. **Kit de mídia do Golden Geek** (1 página): o que é o site, número de resenhas publicadas, alcance do grupo e do Instagram, exemplo de resenha e de infográfico, contato. É o que as editoras pedem antes de mandar cópia (Stonemaier pergunta "qual o tamanho do seu público?").
+2. **Programa de cópias** com as editoras brasileiras: mandar o kit e pedir entrada na lista de imprensa (Galápagos/Asmodee Brasil, Devir, Grok, MeepleBR, Ludofy, Ludofun, Across the Board, PaperGames, Conclave). Oferecer pagar o frete. Cada cópia vira foto própria da edição nacional.
+3. **Ludoteca parceira:** propor a um board game café uma sessão mensal de fotos em troca de crédito e link na resenha ("jogo fotografado no acervo do …"). Levar a lista de jogos da pauta sem foto de mesa.
+4. **Padrão de estúdio:** o mesmo fundo, a mesma luz e as mesmas 4 fotos por jogo (guia acima), para o site ter cara de revista e o crivo aprovar de primeira.
+5. **Lista de falta:** antes de cada sessão, listar os jogos da pauta (na fila e publicados) que não têm foto de mesa aprovada; essa lista é a pauta da sessão de fotos.
+
+Meta de cobertura: toda resenha nova com pelo menos uma foto de mesa ou partida aprovada pelo crivo. Material oficial cobre caixa e componentes; mesa vem das camadas 1, 3 e 4.
+
 ## Próximos passos
 
 1. Rodar `livres` nos 7 jogos com fotos no Commons e escolher as melhores.
 2. Baixar o kit da Pandasaurus (The Mind) e rodar `kit`.
 3. Enviar pedidos de cópia de review às editoras brasileiras (Galápagos, Devir, Grok, MeepleBR, Ludofy, Ludofun, Across the Board) para os próximos jogos da pauta.
 4. Publicar a primeira chamada de fotos no grupo para MicroMacro, Sky Team e Detective, que não têm foto de mesa.
+5. Montar o kit de mídia do Golden Geek e mandar com os pedidos de cópia.
+6. Registrar o Golden Geek como aplicativo não comercial na XML API do BGG, para nota e peso oficiais (não para fotos).
+7. Escolher e propor a parceria a uma ludoteca ou board game café para a sessão mensal de fotos.
