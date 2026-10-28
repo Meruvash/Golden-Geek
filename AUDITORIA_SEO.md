@@ -3,7 +3,7 @@
 Data: 28/10/2026 · Escopo: repositório `meruvash/golden-geek` (branch `main`, commit `9d8d722`) e o site no ar `https://eliteboardgamers.com.br`.
 Status: **diagnóstico, sem nenhuma alteração no site.** Os itens marcados como *validação externa* dependem de acesso que eu não tenho (Search Console, Bing Webmaster, DNS, dados reais de usuários).
 
-> ⚠️ Este arquivo está na raiz do repositório. Se for commitado na `main`, o GitHub Pages **publica** o arquivo em `eliteboardgamers.com.br/AUDITORIA_SEO.md`, como já acontece com outros `.md` internos (achado P0-2). Por isso ele ainda não foi commitado.
+> Este arquivo fica no repositório, mas não é publicado no site (listado em `_config.yml`).
 
 ---
 
