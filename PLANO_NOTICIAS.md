@@ -139,7 +139,7 @@ Segue a lógica do crivo das fotos: primeiro eliminatórios, depois pontuação.
 | `tools/noticias/coletar.py` | Lê os feeds liberados, respeitando o `robots.txt` e as pausas pedidas, e junta candidatas | `.cache/noticias/candidatas.json` |
 | `tools/noticias/crivo.py` | Aplica eliminatórios e pontuação, deduplica e marca a manchete | Lista ordenada com o motivo de cada nota |
 | `tools/noticias/checar_noticia.py` | Confere regras de texto, fontes e datas antes de publicar | Aprova ou recusa, com o motivo |
-| `conteudo/noticias/<data>-<assunto>.json` | Uma nota por arquivo, como as resenhas | Fonte da página da notícia |
+| `conteudo/noticias/<data>-<assunto>.json` | Uma nota por arquivo, como as resenhas. Para a busca automática de fotos, inclua `jogo` (nome oficial), `editora` e `fontes` (`[título, url, uso]`, com a página da editora quando houver) | Fonte da página da notícia |
 | `tools/build_home.py` | Gera a página inicial com os 8 blocos | `index.html` |
 | `tools/build_noticia.py` | Gera a página de cada notícia e o arquivo `/noticias/` | `noticias/...` |
 | `agenda.json` | Datas de prêmios e eventos, revisadas por mês | Bloco Agenda |
