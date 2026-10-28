@@ -142,6 +142,16 @@
    "jogo": "Santuário",
    "url": "https://eliteboardgamers.com.br/santuario/",
    "data": "2026-10-28"
+  },
+  {
+   "jogo": "Root",
+   "url": "https://eliteboardgamers.com.br/root/",
+   "data": "2026-10-28"
+  },
+  {
+   "jogo": "Galactic Cruise",
+   "url": "https://eliteboardgamers.com.br/galactic-cruise/",
+   "data": "2026-10-28"
   }
  ],
  "jogos": [
@@ -1295,7 +1305,7 @@
      "fonte": "https://eliteboardgamers.com.br/"
     }
    ],
-   "status": "em_producao",
+   "status": "publicado",
    "prioridade": 22,
    "premios_distintos": 2
   },
@@ -1450,7 +1460,7 @@
      "fonte": "https://eliteboardgamers.com.br/"
     }
    ],
-   "status": "em_producao",
+   "status": "publicado",
    "prioridade": 25,
    "premios_distintos": 2
   },

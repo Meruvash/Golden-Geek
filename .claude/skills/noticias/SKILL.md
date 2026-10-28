@@ -1,11 +1,11 @@
 ---
 name: noticias
-description: Monta a edição diária de notícias da página inicial da Elite Boardgamers — coleta (feeds, Bluesky, Ludopedia), crivo editorial, 5 notas no padrão de notícias (PADRAO_EDITORIAL.md), atualização dos blocos e publicação, com a manchete esperando aprovação. Use quando pedirem "/noticias", "edição do dia", "notícias de hoje", "aprovo a manchete" ou quando a tarefa agendada diária disparar.
+description: Monta a edição diária de notícias da página inicial da Elite Boardgamers — coleta (feeds, Bluesky, Ludopedia), crivo editorial, 5 notas no padrão de notícias (PADRAO_EDITORIAL.md), atualização dos blocos e publicação, tudo no ar sem esperar aprovação (inclusive a manchete). Use quando pedirem "/noticias", "edição do dia", "notícias de hoje" ou quando a tarefa agendada diária disparar.
 ---
 
 # Edição diária de notícias
 
-Meta: **5 notas por dia**, todas com 5 pontos ou mais no crivo (PLANO_NOTICIAS.md). Melhor publicar 3 boas do que 5 fracas: se só 3 passarem, publique 3 e diga isso no resumo. O usuário aprova **só a manchete**; as outras notas saem direto.
+Meta: **5 notas por dia**, todas com 5 pontos ou mais no crivo (PLANO_NOTICIAS.md). Melhor publicar 3 boas do que 5 fracas: se só 3 passarem, publique 3 e diga isso no resumo. **Desde 28/10/2026 tudo sai direto, manchete inclusive** (pedido do usuário): ninguém aprova nada. A segurança vem das checagens e da verificação das 22h (skill `verificacao`), que corrige sozinha o que estiver errado.
 
 ## 1. Coletar
 
@@ -27,8 +27,8 @@ Uma nota por arquivo em `conteudo/noticias/<AAAA-MM-DD>-<assunto>.json`, no **pa
 
 - `ids_ludopedia`: ids dos jogos da nota que aparecem no calendário (o cartão passa a ligar para a nota).
 - `jogos`: resenhas nossas citadas (`{"nome", "resenha": "<slug>"}`).
-- `imagem`: capa da edição nacional via Ludopedia (`noticias/capas/<id>.jpg`, baixe `https://storage.googleapis.com/ludopedia-capas/<id>_m.jpg`) com crédito "Capa via Ludopedia"; sem capa, `null`. Nota com `imagem: null` (evento, prêmio, financiamento sem capa na Ludopedia) dispara sozinha a busca de fotos (gancho da skill `imagens`): quando o aviso chegar, escolha na folha e grave com `robo.py imagem-noticia`. Para isso, cite nas `fontes` a página oficial (editora, organizador, comunicado de imprensa).
-- Manchete proposta: `"manchete": true, "manchete_aprovada": false`.
+- `imagem`: capa da edição nacional via Ludopedia (`noticias/capas/<id>.jpg`, baixe `https://storage.googleapis.com/ludopedia-capas/<id>_m.jpg`) com crédito "Capa via Ludopedia"; sem capa, `null`. Nota com `imagem: null` (evento, prêmio, financiamento sem capa na Ludopedia) dispara sozinha a busca de fotos (gancho da skill `imagens`): quando o aviso chegar, escolha na folha e grave com `robo.py imagem-noticia`. Se nenhuma candidata servir (retrato, logo, foto de outro ano), a nota sai com `imagem: null`; nunca gere imagem por API. Para isso, cite nas `fontes` a página oficial (editora, organizador, comunicado de imprensa).
+- Manchete do dia: `"manchete": true` (sem `manchete_aprovada`; ela vai direto para o topo).
 
 - **Edição nacional (regra 6 do padrão das notícias):** para cada jogo da nota, rode `python3 tools/noticias/edicao_nacional.py "<jogo>"`, consulte a página do jogo na Ludopedia e faça busca estendida em português pensando em loja ("<jogo> jogo português loja brasileira"). Registre em `verificacao_nacional` (resultado, data e fontes, uma brasileira). Nunca deduza que o jogo não saiu no Brasil por não haver notícia de lançamento: foi o erro de Galactic Cruise, Rebirth e Hot Streak. Ausência se escreve "não encontramos edição nacional até <data>", nunca "não há" ou "sem edição nacional".
 
@@ -45,9 +45,9 @@ Em `conteudo/home.json`:
 
 1. `python3 tools/build_home.py` (gera a página inicial, as páginas das notas e `noticias/`) Ele grava `publicado_em` (hora de publicação) nas notas que ainda não têm, e as Últimas notícias seguem essa hora, não a pontuação: nota nova sempre entra no topo. Não edite `publicado_em` à mão; confira na página inicial que as notas novas aparecem nas Últimas notícias.
 2. Confira no celular (Playwright, 390 px): página inicial e uma nota nova, sem rolagem lateral.
-3. Commit e push direto na `main` com a mensagem `Notícias de <dd/mm/aaaa>: <títulos curtos>`. A manchete proposta entra como nota comum na lista; a manchete do topo continua a anterior.
-4. Termine com um resumo curto para o usuário: as notas publicadas (título e selo), a **manchete proposta com o lide e a opinião**, o que ficou de fora e por quê, e os avisos da coleta. Peça a aprovação da manchete.
+3. Commit e push direto na `main` com a mensagem `Notícias de <dd/mm/aaaa>: <títulos curtos>`. A manchete do dia já vai para o topo.
+4. Termine com um resumo curto para o usuário: as notas publicadas (título e selo), a manchete com o lide e a opinião, o que ficou de fora e por quê, e os avisos da coleta. Não peça aprovação.
 
-## Aprovação da manchete
+## Troca de manchete
 
-Quando o usuário aprovar ("aprovo a manchete", "pode subir"), mude a nota para `"manchete_aprovada": true`, rode `python3 tools/build_home.py`, faça commit e push e confirme no site. Se ele pedir outra manchete, troque as marcas entre as notas do dia. Se recusar, apague `manchete` da nota; ela segue na lista.
+Não há mais aprovação. Se o usuário pedir outra manchete, troque `"manchete": true` entre as notas do dia; se recusar a manchete, apague `manchete` da nota (ela segue na lista). Depois `python3 tools/build_home.py`, commit e push.
