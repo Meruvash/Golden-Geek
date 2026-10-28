@@ -62,6 +62,29 @@ h1{font-size:clamp(2.2rem,6vw,3.4rem);line-height:1.05;font-weight:800;letter-sp
 .corpo{display:grid;gap:6px;padding:14px 16px 18px;align-content:start}
 .selo{justify-self:start;font-weight:800;font-size:.76rem;line-height:1.35;border-radius:6px;padding:3px 9px;color:#fff;background:#157a43}
 .selo.publico{background:#8a5200}.selo.nao{background:#a3223a}
+.ress{font-size:.8rem;font-weight:700;color:#8a5200}
+.filtros[hidden]{display:none}
+.filtros{display:grid;gap:14px;margin:0 0 20px;padding:16px;border:1px solid var(--line);border-radius:12px;background:#0f1115}
+.filtros fieldset{border:0;margin:0;padding:0;display:grid;gap:8px}
+.filtros legend{font-size:.78rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);padding:0;margin-bottom:8px}
+.filtros legend small{text-transform:none;letter-spacing:0;font-weight:600}
+.busca{width:100%;font:inherit;padding:12px 14px;border-radius:10px;border:1px solid #3a3f48;background:#000;color:var(--ink)}
+.busca:focus{border-color:var(--gold);outline:none}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips button{font:inherit;font-size:.92rem;font-weight:700;min-height:40px;padding:6px 14px;border-radius:999px;border:1px solid #3a3f48;background:transparent;color:var(--ink);cursor:pointer;transition:background-color .15s ease,border-color .15s ease}
+.chips button:hover{border-color:var(--gold)}
+.chips button[aria-pressed="true"]{background:var(--gold);border-color:var(--gold);color:#000}
+.linha-f{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px 14px;align-items:end}
+.f{display:grid;gap:6px;font-size:.78rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.f select{font:inherit;font-size:.95rem;font-weight:600;letter-spacing:0;text-transform:none;min-height:42px;padding:8px 10px;border-radius:8px;border:1px solid #3a3f48;background:#000;color:var(--ink)}
+.ck{display:flex;align-items:center;gap:8px;font-size:.92rem;color:#c9cfd8;min-height:40px}.ck input{width:18px;height:18px;accent-color:var(--gold)}
+.mais-f summary{cursor:pointer;font-weight:700;color:var(--gold);min-height:40px;display:flex;align-items:center}
+.mais-f[open] summary{margin-bottom:10px}.painel{display:grid;gap:14px}
+.res-bar{display:flex;justify-content:space-between;align-items:center;gap:12px;border-top:1px solid var(--line);padding-top:12px}
+#contagem{font-weight:800}
+.limpar{font:inherit;font-weight:700;color:var(--gold);background:none;border:0;cursor:pointer;padding:8px 0;text-decoration:underline;text-underline-offset:3px}
+.vazio{padding:24px;border:1px dashed #3a3f48;border-radius:12px;text-align:center;color:#c9cfd8;margin-bottom:24px}
+.grid li[hidden]{display:none}
 .card h2{font-size:1.2rem;line-height:1.2;font-weight:800}
 .tag{font-size:.92rem;color:#3a414c}
 .vit{font-size:.82rem;color:#5a6270;display:flex;align-items:center;gap:6px}
@@ -85,238 +108,284 @@ footer .in{display:flex;flex-wrap:wrap;gap:10px 20px;padding-top:18px;padding-bo
   <p class="lede">26 resenhas com fontes: como funciona, o que funciona, pontos de atenção e para quem é cada jogo. Só entram jogos premiados no Golden Geek, Spiel des Jahres, Kennerspiel, As d'Or e Deutscher Spiele Preis.</p>
   <a class="zap" href="https://chat.whatsapp.com/IgQQkJdSkzHBaEq3UwFeAo" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8.4 19l-4.4 1Z"/><path d="M9.2 8.6c.3-.5.8-.5 1-.1l.7 1.5c.1.3 0 .6-.2.8l-.4.4c.5 1.1 1.4 2 2.5 2.5l.4-.4c.2-.2.5-.3.8-.2l1.5.7c.4.2.4.7-.1 1-.7.5-1.6.6-2.4.3a7 7 0 0 1-4.2-4.2c-.3-.8-.2-1.7.4-2.3Z"/></svg><span><b>Entre no grupo do WhatsApp</b><small>Receba as novas resenhas e converse sobre jogos</small></span></a>
  </section>
- <ul class="grid">
-  <li><a class="card" href="../galactic-cruise/">
+ <form class="filtros" id="filtros" role="search" aria-label="Filtrar resenhas" hidden>
+  <input class="busca" type="search" name="q" placeholder="Buscar jogo pelo nome" autocomplete="off" aria-label="Buscar jogo pelo nome">
+  <fieldset><legend>Jogadores</legend><div class="chips" data-campo="jogadores"><button type="button" data-v="1">1</button><button type="button" data-v="2">2</button><button type="button" data-v="3">3</button><button type="button" data-v="4">4</button><button type="button" data-v="5">5</button><button type="button" data-v="6">6+</button></div>
+   <label class="ck"><input type="checkbox" name="melhor"> só onde é a melhor contagem</label></fieldset>
+  <div class="linha-f"><label class="f">Melhor para<select name="perfil"><option value="">Todos</option><option value="entrada">Primeiro jogo moderno</option><option value="dupla">Jogar a dois</option><option value="festa">Festa e grupos grandes</option><option value="cooperativo">Cooperativo</option><option value="solo">Ótimo sozinho</option><option value="proximo">O próximo passo</option><option value="estrategia">Estrategistas</option><option value="campanha">Campanha com grupo fixo</option><option value="tema">Tema e história</option></select></label>
+   <label class="f">Ordenar por<select name="ordem"><option value="">Mais recentes</option><option value="nota">Nota BGG</option><option value="leve">Mais leve</option><option value="pesado">Mais pesado</option><option value="curto">Mais curto</option><option value="preco">Menor preço</option></select></label></div>
+  <details class="mais-f" open><summary>Mais filtros: duração, complexidade, estilo, prêmio…</summary><div class="painel">
+  <fieldset><legend>Duração</legend><div class="chips" data-campo="duracao"><button type="button" data-v="30">Até 30 min</button><button type="button" data-v="60">30 a 60 min</button><button type="button" data-v="120">1 a 2 h</button><button type="button" data-v="999">Mais de 2 h</button></div></fieldset>
+  <fieldset><legend>Complexidade <small>(peso BGG)</small></legend><div class="chips" data-campo="peso"><button type="button" data-v="leve">Leve</button><button type="button" data-v="media">Média</button><button type="button" data-v="pesada">Pesada</button></div></fieldset>
+  <div class="linha-f">
+   <label class="f">Estilo<select name="estilo"><option value="">Todos</option><option value="Campanha">Campanha</option><option value="Competitivo">Competitivo</option><option value="Cooperativo">Cooperativo</option><option value="Em equipes">Em equipes</option><option value="Semicooperativo">Semicooperativo</option></select></label>
+   <label class="f">Mecânica<select name="mecanica"><option value="">Todos</option><option value="Abstrato">Abstrato</option><option value="Alocação de trabalhadores">Alocação de trabalhadores</option><option value="Arriscar a sorte">Arriscar a sorte</option><option value="Colocação de peças">Colocação de peças</option><option value="Construção de baralho">Construção de baralho</option><option value="Construção de motor">Construção de motor</option><option value="Dados">Dados</option><option value="Dedução">Dedução</option><option value="Draft">Draft</option><option value="Exploração">Exploração</option><option value="Facções assimétricas">Facções assimétricas</option><option value="Investigação">Investigação</option><option value="Legacy">Legacy</option><option value="Palavras">Palavras</option><option value="Programação de ações">Programação de ações</option><option value="Vazas">Vazas</option></select></label>
+   <label class="f">Venceu o prêmio<select name="premio"><option value="">Todos</option><option value="As d&#x27;Or">As d&#x27;Or</option><option value="Deutscher Spiele Preis">Deutscher Spiele Preis</option><option value="Golden Geek">Golden Geek</option><option value="Kennerspiel des Jahres">Kennerspiel des Jahres</option><option value="Spiel des Jahres">Spiel des Jahres</option></select></label>
+   <label class="f">Pessoa mais nova na mesa<select name="idade"><option value="">Todos</option><option value="8">8 anos</option><option value="10">10 anos</option><option value="12">12 anos</option><option value="14">14 anos</option></select></label>
+   <label class="f">Preço até<select name="preco"><option value="">Todos</option><option value="150">R$ 150</option><option value="300">R$ 300</option><option value="500">R$ 500</option></select></label>
+   <label class="ck"><input type="checkbox" name="solo"> tem modo solo</label>
+   <label class="ck"><input type="checkbox" name="pt"> edição em português</label></div></div></details>
+  <div class="res-bar"><span id="contagem" aria-live="polite"></span><button type="reset" class="limpar">Limpar filtros</button></div>
+ </form>
+ <p class="vazio" id="vazio" hidden>Nenhuma resenha com esses filtros. <button type="button" class="limpar" id="limpar2">Limpar filtros</button></p>
+ <ul class="grid" id="lista">
+  <li data-f="{&quot;jogadores&quot;:[1,4],&quot;melhor&quot;:[3],&quot;duracao&quot;:[90,150],&quot;peso&quot;:3.97,&quot;idade&quot;:14,&quot;solo&quot;:true,&quot;portugues&quot;:true,&quot;estilos&quot;:[&quot;Competitivo&quot;],&quot;mecanicas&quot;:[&quot;Alocação de trabalhadores&quot;],&quot;premios&quot;:[&quot;Golden Geek&quot;],&quot;preco&quot;:559,&quot;nota&quot;:8.3,&quot;melhor_para&quot;:&quot;estrategia&quot;,&quot;nome&quot;:&quot;Galactic Cruise Galactic Cruise: resenha do Jogo do Ano pesado do Golden Geek&quot;}"><a class="card" href="../galactic-cruise/">
    <span class="capa"><img src="../galactic-cruise/capa.jpg?v=590b4278" srcset="../img/galactic-cruise/capa-3035b3a0-400.webp 400w, ../galactic-cruise/capa.jpg 800w" sizes="(min-width: 700px) 360px, 50vw" width="800" height="800" alt="Infográfico Elite Boardgamers sobre o jogo Galactic Cruise" loading="lazy"><span class="nota n9" aria-label="Nota BGG 8.3">8,3</span></span>
    <span class="corpo">
-    <span class="selo publico">Recomendado para público específico</span>
+    <span class="selo sim">Estrategistas</span>
     <h2>Galactic Cruise</h2>
     <span class="tag">Uma agência de turismo espacial em que cada engrenagem conta.</span>
+    
     <span class="vit">1 vitória em prêmios</span>
    </span>
   </a></li>
-  <li><a class="card" href="../root/">
+  <li data-f="{&quot;jogadores&quot;:[2,4],&quot;melhor&quot;:[4],&quot;duracao&quot;:[60,90],&quot;peso&quot;:3.8,&quot;idade&quot;:14,&quot;solo&quot;:false,&quot;portugues&quot;:true,&quot;estilos&quot;:[&quot;Competitivo&quot;],&quot;mecanicas&quot;:[&quot;Facções assimétricas&quot;],&quot;premios&quot;:[&quot;Golden Geek&quot;],&quot;preco&quot;:429,&quot;nota&quot;:8.1,&quot;melhor_para&quot;:&quot;estrategia&quot;,&quot;nome&quot;:&quot;Root: resenha do jogo de guerra com facções assimétricas Root&quot;}"><a class="card" href="../root/">
    <span class="capa"><img src="../root/capa.jpg?v=f05edbd9" srcset="../img/root/capa-9cdbb265-400.webp 400w, ../root/capa.jpg 800w" sizes="(min-width: 700px) 360px, 50vw" width="800" height="800" alt="Infográfico Elite Boardgamers sobre o jogo Root" loading="lazy"><span class="nota n9" aria-label="Nota BGG 8.1">8,1</span></span>
    <span class="corpo">
-    <span class="selo publico">Recomendado para público específico</span>
+    <span class="selo sim">Estrategistas</span>
     <h2>Root</h2>
     <span class="tag">Bichinhos fofos, guerra de verdade: cada facção joga outro jogo.</span>
+    
     <span class="vit">4 vitórias em prêmios</span>
    </span>
   </a></li>
-  <li><a class="card" href="../santuario/">
+  <li data-f="{&quot;jogadores&quot;:[1,5],&quot;melhor&quot;:[2,3],&quot;duracao&quot;:[40,100],&quot;peso&quot;:2.8,&quot;idade&quot;:12,&quot;solo&quot;:true,&quot;portugues&quot;:true,&quot;estilos&quot;:[&quot;Competitivo&quot;],&quot;mecanicas&quot;:[&quot;Colocação de peças&quot;],&quot;premios&quot;:[&quot;Deutscher Spiele Preis&quot;],&quot;preco&quot;:288,&quot;nota&quot;:7.7,&quot;melhor_para&quot;:&quot;proximo&quot;,&quot;nome&quot;:&quot;Santuário Santuário ou Ark Nova? Resenha do vencedor do DSP 2026&quot;}"><a class="card" href="../santuario/">
    <span class="capa"><img src="../santuario/capa.jpg?v=f0ac7418" srcset="../img/santuario/capa-1131a063-400.webp 400w, ../santuario/capa.jpg 800w" sizes="(min-width: 700px) 360px, 50vw" width="800" height="800" alt="Infográfico Elite Boardgamers sobre o jogo Santuário" loading="lazy"><span class="nota n7" aria-label="Nota BGG 7.7">7,7</span></span>
    <span class="corpo">
-    <span class="selo sim">Recomendado</span>
+    <span class="selo sim">O próximo passo</span>
     <h2>Santuário</h2>
     <span class="tag">O zoológico de Ark Nova, peça por peça.</span>
+    
     <span class="vit">1 vitória em prêmios</span>
    </span>
   </a></li>
-  <li><a class="card" href="../scythe/">
+  <li data-f="{&quot;jogadores&quot;:[1,5],&quot;melhor&quot;:[1,3,4,5],&quot;duracao&quot;:[90,115],&quot;peso&quot;:null,&quot;idade&quot;:14,&quot;solo&quot;:true,&quot;portugues&quot;:true,&quot;estilos&quot;:[&quot;Competitivo&quot;],&quot;mecanicas&quot;:[&quot;Facções assimétricas&quot;],&quot;premios&quot;:[&quot;As d&#x27;Or&quot;,&quot;Golden Geek&quot;],&quot;preco&quot;:581,&quot;nota&quot;:null,&quot;melhor_para&quot;:&quot;estrategia&quot;,&quot;nome&quot;:&quot;Scythe: resenha do Jogo do Ano 2016 no Golden Geek Scythe&quot;}"><a class="card" href="../scythe/">
    <span class="capa"><img src="../scythe/capa.jpg?v=59738b6e" srcset="../img/scythe/capa-691db600-400.webp 400w, ../scythe/capa.jpg 800w" sizes="(min-width: 700px) 360px, 50vw" width="800" height="800" alt="Infográfico Elite Boardgamers sobre o jogo Scythe" loading="lazy"></span>
    <span class="corpo">
-    <span class="selo sim">Recomendado</span>
+    <span class="selo sim">Estrategistas</span>
     <h2>Scythe</h2>
     <span class="tag">Expanda, produza e intimide: a guerra quase nunca acontece.</span>
+    
     <span class="vit">6 vitórias em prêmios</span>
    </span>
   </a></li>
-  <li><a class="card" href="../colt-express/">
+  <li data-f="{&quot;jogadores&quot;:[2,6],&quot;melhor&quot;:[5,6],&quot;duracao&quot;:[30,40],&quot;peso&quot;:null,&quot;idade&quot;:10,&quot;solo&quot;:false,&quot;portugues&quot;:true,&quot;estilos&quot;:[&quot;Competitivo&quot;],&quot;mecanicas&quot;:[&quot;Programação de ações&quot;],&quot;premios&quot;:[&quot;As d&#x27;Or&quot;,&quot;Spiel des Jahres&quot;],&quot;preco&quot;:259,&quot;nota&quot;:7.0,&quot;melhor_para&quot;:&quot;festa&quot;,&quot;nome&quot;:&quot;Colt Express Colt Express: resenha do assalto ao trem que dá errado&quot;}"><a class="card" href="../colt-express/">
    <span class="capa"><img src="../colt-express/capa.jpg?v=4b3bdc48" srcset="../img/colt-express/capa-d874a609-400.webp 400w, ../colt-express/capa.jpg 800w" sizes="(min-width: 700px) 360px, 50vw" width="800" height="800" alt="Infográfico Elite Boardgamers sobre o jogo Colt Express" loading="lazy"><span class="nota n7" aria-label="Nota BGG 7.0">7,0</span></span>
    <span class="corpo">
-    <span class="selo sim">Recomendado</span>
+    <span class="selo sim">Festa e grupos grandes</span>
     <h2>Colt Express</h2>
     <span class="tag">Planeje o assalto e veja tudo dar errado.</span>
+    
     <span class="vit">2 vitórias em prêmios</span>
    </span>
   </a></li>
-  <li><a class="card" href="../detective/">
+  <li data-f="{&quot;jogadores&quot;:[1,5],&quot;melhor&quot;:[2,3],&quot;duracao&quot;:[120,180],&quot;peso&quot;:null,&quot;idade&quot;:16,&quot;solo&quot;:true,&quot;portugues&quot;:true,&quot;estilos&quot;:[&quot;Cooperativo&quot;],&quot;mecanicas&quot;:[&quot;Investigação&quot;],&quot;premios&quot;:[&quot;As d&#x27;Or&quot;],&quot;preco&quot;:270,&quot;nota&quot;:null,&quot;melhor_para&quot;:&quot;tema&quot;,&quot;nome&quot;:&quot;Detective: resenha do jogo de investigação policial Detective: A Modern Crime Board Game Detective&quot;}"><a class="card" href="../detective/">
    <span class="capa"><img src="../detective/capa.jpg?v=3df50aa7" srcset="../img/detective/capa-f0eae8be-400.webp 400w, ../detective/capa.jpg 800w" sizes="(min-width: 700px) 360px, 50vw" width="800" height="800" alt="Infográfico Elite Boardgamers sobre o jogo Detective" loading="lazy"></span>
    <span class="corpo">
-    <span class="selo publico">Recomendado para público específico</span>
+    <span class="selo publico">Tema e história</span>
     <h2>Detective</h2>
     <span class="tag">Siga as pistas antes que o prazo acabe.</span>
+    <span class="ress">Com ressalva: textos em inglês</span>
     <span class="vit">1 vitória em prêmios</span>
    </span>
   </a></li>
-  <li><a class="card" href="../cascadia/">
+  <li data-f="{&quot;jogadores&quot;:[1,4],&quot;melhor&quot;:[1,2,3],&quot;duracao&quot;:[30,45],&quot;peso&quot;:1.8,&quot;idade&quot;:14,&quot;solo&quot;:true,&quot;portugues&quot;:true,&quot;estilos&quot;:[&quot;Competitivo&quot;],&quot;mecanicas&quot;:[&quot;Colocação de peças&quot;],&quot;premios&quot;:[&quot;Golden Geek&quot;,&quot;Spiel des Jahres&quot;],&quot;preco&quot;:296,&quot;nota&quot;:7.9,&quot;melhor_para&quot;:&quot;entrada&quot;,&quot;nome&quot;:&quot;Cascadia Cascadia: resenha do quebra-cabeça de natureza em 30 min&quot;}"><a class="card" href="../cascadia/">
    <span class="capa"><img src="../cascadia/capa.jpg?v=ed43850b" srcset="../img/cascadia/capa-40ada3d7-400.webp 400w, ../cascadia/capa.jpg 800w" sizes="(min-width: 700px) 360px, 50vw" width="800" height="800" alt="Infográfico Elite Boardgamers sobre o jogo Cascadia" loading="lazy"><span class="nota n7" aria-label="Nota BGG 7.9">7,9</span></span>
    <span class="corpo">
-    <span class="selo sim">Recomendado</span>
+    <span class="selo sim">Primeiro jogo moderno</span>
     <h2>Cascadia</h2>
     <span class="tag">Um quebra-cabeça de natureza que cabe em 30 minutos.</span>
+    
     <span class="vit">2 vitórias em prêmios</span>
    </span>
   </a></li>
-  <li><a class="card" href="../fate-of-the-fellowship/">
+  <li data-f="{&quot;jogadores&quot;:[1,5],&quot;melhor&quot;:[1,2,3],&quot;duracao&quot;:[60,150],&quot;peso&quot;:3.0,&quot;idade&quot;:14,&quot;solo&quot;:true,&quot;portugues&quot;:true,&quot;estilos&quot;:[&quot;Cooperativo&quot;],&quot;mecanicas&quot;:[],&quot;premios&quot;:[&quot;Golden Geek&quot;],&quot;preco&quot;:557,&quot;nota&quot;:8.3,&quot;melhor_para&quot;:&quot;tema&quot;,&quot;nome&quot;:&quot;Sina da Sociedade: resenha do Pandemic de O Senhor dos Anéis The Lord of the Rings: Fate of the Fellowship O Senhor dos Anéis: Sina da Sociedade&quot;}"><a class="card" href="../fate-of-the-fellowship/">
    <span class="capa"><img src="../fate-of-the-fellowship/capa.jpg?v=f43f67c0" srcset="../img/fate-of-the-fellowship/capa-9b700817-400.webp 400w, ../fate-of-the-fellowship/capa.jpg 800w" sizes="(min-width: 700px) 360px, 50vw" width="800" height="800" alt="Infográfico Elite Boardgamers sobre o jogo O Senhor dos Anéis: Sina da Sociedade" loading="lazy"><span class="nota n9" aria-label="Nota BGG 8.3">8,3</span></span>
    <span class="corpo">
-    <span class="selo sim">Recomendado</span>
+    <span class="selo sim">Tema e história</span>
     <h2>O Senhor dos Anéis: Sina da Sociedade</h2>
     <span class="tag">O Pandemic que virou Terra-média.</span>
+    
     <span class="vit">3 vitórias em prêmios</span>
    </span>
   </a></li>
-  <li><a class="card" href="../gloomhaven/">
+  <li data-f="{&quot;jogadores&quot;:[1,4],&quot;melhor&quot;:[1,3,4],&quot;duracao&quot;:[90,115],&quot;peso&quot;:3.9,&quot;idade&quot;:14,&quot;solo&quot;:true,&quot;portugues&quot;:true,&quot;estilos&quot;:[&quot;Campanha&quot;,&quot;Cooperativo&quot;],&quot;mecanicas&quot;:[],&quot;premios&quot;:[&quot;Golden Geek&quot;],&quot;preco&quot;:1128,&quot;nota&quot;:null,&quot;melhor_para&quot;:&quot;campanha&quot;,&quot;nome&quot;:&quot;Gloomhaven Gloomhaven vale a pena? Resenha da campanha na caixa&quot;}"><a class="card" href="../gloomhaven/">
    <span class="capa"><img src="../gloomhaven/capa.jpg?v=2a0a8688" srcset="../img/gloomhaven/capa-be1fef65-400.webp 400w, ../gloomhaven/capa.jpg 800w" sizes="(min-width: 700px) 360px, 50vw" width="800" height="800" alt="Infográfico Elite Boardgamers sobre o jogo Gloomhaven" loading="lazy"></span>
    <span class="corpo">
-    <span class="selo publico">Recomendado para público específico</span>
+    <span class="selo publico">Campanha com grupo fixo</span>
     <h2>Gloomhaven</h2>
     <span class="tag">Uma campanha inteira dentro de uma caixa.</span>
+    <span class="ress">Com ressalva: preço acima de R$ 1.000</span>
     <span class="vit">6 vitórias em prêmios</span>
    </span>
   </a></li>
-  <li><a class="card" href="../faraway/">
+  <li data-f="{&quot;jogadores&quot;:[2,6],&quot;melhor&quot;:[2,3,4],&quot;duracao&quot;:[15,30],&quot;peso&quot;:1.9,&quot;idade&quot;:null,&quot;solo&quot;:false,&quot;portugues&quot;:true,&quot;estilos&quot;:[&quot;Competitivo&quot;],&quot;mecanicas&quot;:[],&quot;premios&quot;:[&quot;As d&#x27;Or&quot;],&quot;preco&quot;:133,&quot;nota&quot;:null,&quot;melhor_para&quot;:&quot;dupla&quot;,&quot;nome&quot;:&quot;Faraway: resenha do jogo de cartas que pontua ao contrário Faraway&quot;}"><a class="card" href="../faraway/">
    <span class="capa"><img src="../faraway/capa.jpg?v=eb0116ba" srcset="../img/faraway/capa-d3efef88-400.webp 400w, ../faraway/capa.jpg 800w" sizes="(min-width: 700px) 360px, 50vw" width="800" height="800" alt="Infográfico Elite Boardgamers sobre o jogo Faraway" loading="lazy"></span>
    <span class="corpo">
-    <span class="selo sim">Recomendado</span>
+    <span class="selo sim">Jogar a dois</span>
     <h2>Faraway</h2>
     <span class="tag">Planeje para frente, pontue para trás.</span>
+    
     <span class="vit">1 vitória em prêmios</span>
    </span>
   </a></li>
-  <li><a class="card" href="../endeavor-deep-sea/">
+  <li data-f="{&quot;jogadores&quot;:[1,4],&quot;melhor&quot;:[1,2,3],&quot;duracao&quot;:[60,120],&quot;peso&quot;:2.9,&quot;idade&quot;:null,&quot;solo&quot;:true,&quot;portugues&quot;:true,&quot;estilos&quot;:[&quot;Competitivo&quot;,&quot;Cooperativo&quot;],&quot;mecanicas&quot;:[&quot;Exploração&quot;],&quot;premios&quot;:[&quot;Kennerspiel des Jahres&quot;],&quot;preco&quot;:450,&quot;nota&quot;:8.2,&quot;melhor_para&quot;:&quot;solo&quot;,&quot;nome&quot;:&quot;Endeavor: Deep Sea: resenha do Kennerspiel 2025 Endeavor: Deep Sea&quot;}"><a class="card" href="../endeavor-deep-sea/">
    <span class="capa"><img src="../endeavor-deep-sea/capa.jpg?v=e25c2ac8" srcset="../img/endeavor-deep-sea/capa-58bd2a0f-400.webp 400w, ../endeavor-deep-sea/capa.jpg 800w" sizes="(min-width: 700px) 360px, 50vw" width="800" height="800" alt="Infográfico Elite Boardgamers sobre o jogo Endeavor: Deep Sea" loading="lazy"><span class="nota n9" aria-label="Nota BGG 8.2">8,2</span></span>
    <span class="corpo">
-    <span class="selo sim">Recomendado</span>
+    <span class="selo sim">Ótimo sozinho</span>
     <h2>Endeavor: Deep Sea</h2>
     <span class="tag">Explore, pesquise e proteja o fundo do mar.</span>
+    
     <span class="vit">1 vitória em prêmios</span>
    </span>
   </a></li>
-  <li><a class="card" href="../bomb-busters/">
+  <li data-f="{&quot;jogadores&quot;:[2,5],&quot;melhor&quot;:[4],&quot;duracao&quot;:[30,60],&quot;peso&quot;:2.0,&quot;idade&quot;:10,&quot;solo&quot;:false,&quot;portugues&quot;:true,&quot;estilos&quot;:[&quot;Cooperativo&quot;],&quot;mecanicas&quot;:[&quot;Dedução&quot;],&quot;premios&quot;:[&quot;Spiel des Jahres&quot;],&quot;preco&quot;:279,&quot;nota&quot;:8.0,&quot;melhor_para&quot;:&quot;cooperativo&quot;,&quot;nome&quot;:&quot;Bomb Busters Bomb Busters: resenha do Spiel des Jahres 2025&quot;}"><a class="card" href="../bomb-busters/">
    <span class="capa"><img src="../bomb-busters/capa.jpg?v=2e296e62" srcset="../img/bomb-busters/capa-a7fa45d5-400.webp 400w, ../bomb-busters/capa.jpg 800w" sizes="(min-width: 700px) 360px, 50vw" width="800" height="800" alt="Infográfico Elite Boardgamers sobre o jogo Bomb Busters" loading="lazy"><span class="nota n9" aria-label="Nota BGG 8.0">8,0</span></span>
    <span class="corpo">
-    <span class="selo sim">Recomendado</span>
+    <span class="selo sim">Cooperativo</span>
     <h2>Bomb Busters</h2>
     <span class="tag">Corte o fio certo. Juntos.</span>
+    
     <span class="vit">1 vitória em prêmios</span>
    </span>
   </a></li>
-  <li><a class="card" href="../ark-nova/">
+  <li data-f="{&quot;jogadores&quot;:[1,4],&quot;melhor&quot;:[2],&quot;duracao&quot;:[90,150],&quot;peso&quot;:3.7,&quot;idade&quot;:14,&quot;solo&quot;:true,&quot;portugues&quot;:true,&quot;estilos&quot;:[&quot;Competitivo&quot;],&quot;mecanicas&quot;:[&quot;Construção de motor&quot;],&quot;premios&quot;:[&quot;As d&#x27;Or&quot;,&quot;Deutscher Spiele Preis&quot;,&quot;Golden Geek&quot;],&quot;preco&quot;:450,&quot;nota&quot;:8.5,&quot;melhor_para&quot;:&quot;estrategia&quot;,&quot;nome&quot;:&quot;Ark Nova vale a pena? Resenha do zoológico de cartas Ark Nova&quot;}"><a class="card" href="../ark-nova/">
    <span class="capa"><img src="../ark-nova/capa.jpg?v=71ede29f" srcset="../img/ark-nova/capa-75fcc644-400.webp 400w, ../ark-nova/capa.jpg 800w" sizes="(min-width: 700px) 360px, 50vw" width="800" height="800" alt="Infográfico Elite Boardgamers sobre o jogo Ark Nova" loading="lazy"><span class="nota n9" aria-label="Nota BGG 8.5">8,5</span></span>
    <span class="corpo">
-    <span class="selo publico">Recomendado para público específico</span>
+    <span class="selo sim">Estrategistas</span>
     <h2>Ark Nova</h2>
     <span class="tag">Um zoológico inteiro, uma carta de cada vez.</span>
+    
     <span class="vit">3 vitórias em prêmios</span>
    </span>
   </a></li>
-  <li><a class="card" href="../flip-7/">
+  <li data-f="{&quot;jogadores&quot;:[3,18],&quot;melhor&quot;:[6,7,8],&quot;duracao&quot;:[20,20],&quot;peso&quot;:1.04,&quot;idade&quot;:14,&quot;solo&quot;:false,&quot;portugues&quot;:true,&quot;estilos&quot;:[&quot;Competitivo&quot;],&quot;mecanicas&quot;:[&quot;Arriscar a sorte&quot;],&quot;premios&quot;:[&quot;Golden Geek&quot;],&quot;preco&quot;:98,&quot;nota&quot;:7.2,&quot;melhor_para&quot;:&quot;festa&quot;,&quot;nome&quot;:&quot;Flip 7: resenha do jogo de festa de arriscar mais uma Flip 7&quot;}"><a class="card" href="../flip-7/">
    <span class="capa"><img src="../flip-7/capa.jpg?v=0ad440b4" srcset="../img/flip-7/capa-f562576d-400.webp 400w, ../flip-7/capa.jpg 800w" sizes="(min-width: 700px) 360px, 50vw" width="800" height="800" alt="Infográfico Elite Boardgamers sobre o jogo Flip 7" loading="lazy"><span class="nota n7" aria-label="Nota BGG 7.2">7,2</span></span>
    <span class="corpo">
-    <span class="selo publico">Recomendado para público específico</span>
+    <span class="selo sim">Festa e grupos grandes</span>
     <h2>Flip 7</h2>
     <span class="tag">Vira mais uma? Sete diferentes ou estoura.</span>
+    
     <span class="vit">1 vitória em prêmios</span>
    </span>
   </a></li>
-  <li><a class="card" href="../arnak/">
+  <li data-f="{&quot;jogadores&quot;:[1,4],&quot;melhor&quot;:[1],&quot;duracao&quot;:[30,120],&quot;peso&quot;:2.88,&quot;idade&quot;:12,&quot;solo&quot;:true,&quot;portugues&quot;:true,&quot;estilos&quot;:[&quot;Competitivo&quot;],&quot;mecanicas&quot;:[&quot;Construção de baralho&quot;,&quot;Exploração&quot;],&quot;premios&quot;:[&quot;Deutscher Spiele Preis&quot;,&quot;Golden Geek&quot;],&quot;preco&quot;:584,&quot;nota&quot;:8.1,&quot;melhor_para&quot;:&quot;solo&quot;,&quot;nome&quot;:&quot;Lost Ruins of Arnak Lost Ruins of Arnak: resenha da expedição de cartas&quot;}"><a class="card" href="../arnak/">
    <span class="capa"><img src="../arnak/capa.jpg?v=dcec2298" srcset="../img/arnak/capa-eba09b71-400.webp 400w, ../arnak/capa.jpg 800w" sizes="(min-width: 700px) 360px, 50vw" width="800" height="800" alt="Infográfico Elite Boardgamers sobre o jogo Lost Ruins of Arnak" loading="lazy"><span class="nota n9" aria-label="Nota BGG 8.1">8,1</span></span>
    <span class="corpo">
-    <span class="selo sim">Recomendado</span>
+    <span class="selo sim">Ótimo sozinho</span>
     <h2>Lost Ruins of Arnak</h2>
     <span class="tag">Uma expedição de cartas rumo ao templo perdido.</span>
+    
     <span class="vit">2 vitórias em prêmios</span>
    </span>
   </a></li>
-  <li><a class="card" href="../pandemic-legacy/">
+  <li data-f="{&quot;jogadores&quot;:[2,4],&quot;melhor&quot;:[3,4],&quot;duracao&quot;:[60,60],&quot;peso&quot;:2.83,&quot;idade&quot;:null,&quot;solo&quot;:false,&quot;portugues&quot;:true,&quot;estilos&quot;:[&quot;Campanha&quot;,&quot;Cooperativo&quot;],&quot;mecanicas&quot;:[&quot;Legacy&quot;],&quot;premios&quot;:[&quot;As d&#x27;Or&quot;,&quot;Golden Geek&quot;],&quot;preco&quot;:300,&quot;nota&quot;:8.5,&quot;melhor_para&quot;:&quot;campanha&quot;,&quot;nome&quot;:&quot;Pandemic Legacy: Season 1 Pandemic Legacy: Season 1 vale a pena? Resenha&quot;}"><a class="card" href="../pandemic-legacy/">
    <span class="capa"><img src="../pandemic-legacy/capa.jpg?v=5246b673" srcset="../img/pandemic-legacy/capa-7ba9d0e3-400.webp 400w, ../pandemic-legacy/capa.jpg 800w" sizes="(min-width: 700px) 360px, 50vw" width="800" height="800" alt="Infográfico Elite Boardgamers sobre o jogo Pandemic Legacy: Season 1" loading="lazy"><span class="nota n9" aria-label="Nota BGG 8.5">8,5</span></span>
    <span class="corpo">
-    <span class="selo sim">Recomendado</span>
+    <span class="selo publico">Campanha com grupo fixo</span>
     <h2>Pandemic Legacy: Season 1</h2>
     <span class="tag">Um ano para salvar o mundo, gravado no tabuleiro.</span>
+    <span class="ress">Com ressalva: joga-se uma vez só</span>
     <span class="vit">5 vitórias em prêmios</span>
    </span>
   </a></li>
-  <li><a class="card" href="../the-mind/">
+  <li data-f="{&quot;jogadores&quot;:[2,4],&quot;melhor&quot;:[4],&quot;duracao&quot;:[20,20],&quot;peso&quot;:1.1,&quot;idade&quot;:8,&quot;solo&quot;:false,&quot;portugues&quot;:true,&quot;estilos&quot;:[&quot;Cooperativo&quot;],&quot;mecanicas&quot;:[],&quot;premios&quot;:[&quot;As d&#x27;Or&quot;,&quot;Golden Geek&quot;],&quot;preco&quot;:57,&quot;nota&quot;:6.7,&quot;melhor_para&quot;:&quot;cooperativo&quot;,&quot;nome&quot;:&quot;The Mind The Mind: resenha do jogo de sintonia em silêncio&quot;}"><a class="card" href="../the-mind/">
    <span class="capa"><img src="../the-mind/capa.jpg?v=d9173494" srcset="../img/the-mind/capa-c9b7b758-400.webp 400w, ../the-mind/capa.jpg 800w" sizes="(min-width: 700px) 360px, 50vw" width="800" height="800" alt="Infográfico Elite Boardgamers sobre o jogo The Mind" loading="lazy"><span class="nota n6" aria-label="Nota BGG 6.7">6,7</span></span>
    <span class="corpo">
-    <span class="selo publico">Recomendado para público específico</span>
+    <span class="selo sim">Cooperativo</span>
     <h2>The Mind</h2>
     <span class="tag">Silêncio, sintonia e cartas de 1 a 100.</span>
+    
     <span class="vit">4 vitórias em prêmios</span>
    </span>
   </a></li>
-  <li><a class="card" href="../sky-team/">
+  <li data-f="{&quot;jogadores&quot;:[2,2],&quot;melhor&quot;:[2],&quot;duracao&quot;:[20,20],&quot;peso&quot;:2.04,&quot;idade&quot;:10,&quot;solo&quot;:false,&quot;portugues&quot;:true,&quot;estilos&quot;:[&quot;Cooperativo&quot;],&quot;mecanicas&quot;:[&quot;Dados&quot;],&quot;premios&quot;:[&quot;Golden Geek&quot;,&quot;Spiel des Jahres&quot;],&quot;preco&quot;:217,&quot;nota&quot;:8.1,&quot;melhor_para&quot;:&quot;dupla&quot;,&quot;nome&quot;:&quot;Sky Team: resenha do cooperativo de dupla sem falar Sky Team&quot;}"><a class="card" href="../sky-team/">
    <span class="capa"><img src="../sky-team/capa.jpg?v=18cdd98d" srcset="../img/sky-team/capa-5364ffab-400.webp 400w, ../sky-team/capa.jpg 800w" sizes="(min-width: 700px) 360px, 50vw" width="800" height="800" alt="Infográfico Elite Boardgamers sobre o jogo Sky Team" loading="lazy"><span class="nota n9" aria-label="Nota BGG 8.1">8,1</span></span>
    <span class="corpo">
-    <span class="selo publico">Recomendado para público específico</span>
+    <span class="selo sim">Jogar a dois</span>
     <h2>Sky Team</h2>
     <span class="tag">Pouso perfeito, sem dizer uma palavra.</span>
+    
     <span class="vit">3 vitórias em prêmios</span>
    </span>
   </a></li>
-  <li><a class="card" href="../wingspan/">
+  <li data-f="{&quot;jogadores&quot;:[1,5],&quot;melhor&quot;:[1,2,3],&quot;duracao&quot;:[40,70],&quot;peso&quot;:2.45,&quot;idade&quot;:10,&quot;solo&quot;:true,&quot;portugues&quot;:true,&quot;estilos&quot;:[&quot;Competitivo&quot;],&quot;mecanicas&quot;:[&quot;Construção de motor&quot;],&quot;premios&quot;:[&quot;Deutscher Spiele Preis&quot;,&quot;Golden Geek&quot;,&quot;Kennerspiel des Jahres&quot;],&quot;preco&quot;:486,&quot;nota&quot;:8.0,&quot;melhor_para&quot;:&quot;proximo&quot;,&quot;nome&quot;:&quot;Wingspan Wingspan vale a pena? Resenha do motor de cartas de aves&quot;}"><a class="card" href="../wingspan/">
    <span class="capa"><img src="../wingspan/capa.jpg?v=bad1715c" srcset="../img/wingspan/capa-3160ff9d-400.webp 400w, ../wingspan/capa.jpg 800w" sizes="(min-width: 700px) 360px, 50vw" width="800" height="800" alt="Infográfico Elite Boardgamers sobre o jogo Wingspan" loading="lazy"><span class="nota n9" aria-label="Nota BGG 8.0">8,0</span></span>
    <span class="corpo">
-    <span class="selo sim">Recomendado</span>
+    <span class="selo sim">O próximo passo</span>
     <h2>Wingspan</h2>
     <span class="tag">Um motor de cartas que voa alto.</span>
+    
     <span class="vit">9 vitórias em prêmios</span>
    </span>
   </a></li>
-  <li><a class="card" href="../micromacro/">
+  <li data-f="{&quot;jogadores&quot;:[1,4],&quot;melhor&quot;:[2,3],&quot;duracao&quot;:[15,45],&quot;peso&quot;:1.1,&quot;idade&quot;:8,&quot;solo&quot;:true,&quot;portugues&quot;:true,&quot;estilos&quot;:[&quot;Cooperativo&quot;],&quot;mecanicas&quot;:[&quot;Investigação&quot;],&quot;premios&quot;:[&quot;As d&#x27;Or&quot;,&quot;Golden Geek&quot;,&quot;Spiel des Jahres&quot;],&quot;preco&quot;:232,&quot;nota&quot;:7.4,&quot;melhor_para&quot;:&quot;tema&quot;,&quot;nome&quot;:&quot;MicroMacro: Crime City Resenha de MicroMacro: Crime City, investigação em um mapa&quot;}"><a class="card" href="../micromacro/">
    <span class="capa"><img src="../micromacro/capa.jpg?v=41de634e" srcset="../img/micromacro/capa-f23cdddf-400.webp 400w, ../micromacro/capa.jpg 800w" sizes="(min-width: 700px) 360px, 50vw" width="800" height="800" alt="Infográfico Elite Boardgamers sobre o jogo MicroMacro: Crime City" loading="lazy"><span class="nota n7" aria-label="Nota BGG 7.4">7,4</span></span>
    <span class="corpo">
-    <span class="selo sim">Recomendado</span>
+    <span class="selo sim">Tema e história</span>
     <h2>MicroMacro: Crime City</h2>
     <span class="tag">Um mapa, dezesseis crimes, nenhum detalhe à toa.</span>
+    
     <span class="vit">4 vitórias em prêmios</span>
    </span>
   </a></li>
-  <li><a class="card" href="../codenames/">
+  <li data-f="{&quot;jogadores&quot;:[2,8],&quot;melhor&quot;:[4,5,6,7,8],&quot;duracao&quot;:[15,30],&quot;peso&quot;:1.25,&quot;idade&quot;:10,&quot;solo&quot;:false,&quot;portugues&quot;:true,&quot;estilos&quot;:[&quot;Competitivo&quot;,&quot;Em equipes&quot;],&quot;mecanicas&quot;:[&quot;Palavras&quot;],&quot;premios&quot;:[&quot;Golden Geek&quot;,&quot;Spiel des Jahres&quot;],&quot;preco&quot;:189,&quot;nota&quot;:7.5,&quot;melhor_para&quot;:&quot;festa&quot;,&quot;nome&quot;:&quot;Codenames: resenha do jogo de festa do Spiel des Jahres Codenames&quot;}"><a class="card" href="../codenames/">
    <span class="capa"><img src="../codenames/capa.jpg?v=6d746aec" srcset="../img/codenames/capa-ee06176b-400.webp 400w, ../codenames/capa.jpg 800w" sizes="(min-width: 700px) 360px, 50vw" width="800" height="800" alt="Infográfico Elite Boardgamers sobre o jogo Codenames" loading="lazy"><span class="nota n7" aria-label="Nota BGG 7.5">7,5</span></span>
    <span class="corpo">
-    <span class="selo sim">Recomendado</span>
+    <span class="selo sim">Festa e grupos grandes</span>
     <h2>Codenames</h2>
     <span class="tag">Um dos melhores jogos de festa já criados.</span>
+    
     <span class="vit">3 vitórias em prêmios</span>
    </span>
   </a></li>
-  <li><a class="card" href="../terraforming-mars/">
+  <li data-f="{&quot;jogadores&quot;:[1,5],&quot;melhor&quot;:[3],&quot;duracao&quot;:[120,120],&quot;peso&quot;:3.24,&quot;idade&quot;:12,&quot;solo&quot;:true,&quot;portugues&quot;:true,&quot;estilos&quot;:[&quot;Competitivo&quot;],&quot;mecanicas&quot;:[&quot;Construção de motor&quot;],&quot;premios&quot;:[&quot;As d&#x27;Or&quot;,&quot;Deutscher Spiele Preis&quot;],&quot;preco&quot;:399,&quot;nota&quot;:8.3,&quot;melhor_para&quot;:&quot;estrategia&quot;,&quot;nome&quot;:&quot;Terraforming Mars Terraforming Mars: resenha do vencedor do As d&#x27;Or Expert&quot;}"><a class="card" href="../terraforming-mars/">
    <span class="capa"><img src="../terraforming-mars/capa.jpg?v=025d3393" srcset="../img/terraforming-mars/capa-6ca50b91-400.webp 400w, ../terraforming-mars/capa.jpg 800w" sizes="(min-width: 700px) 360px, 50vw" width="800" height="800" alt="Infográfico Elite Boardgamers sobre o jogo Terraforming Mars" loading="lazy"><span class="nota n9" aria-label="Nota BGG 8.3">8,3</span></span>
    <span class="corpo">
-    <span class="selo sim">Recomendado</span>
+    <span class="selo sim">Estrategistas</span>
     <h2>Terraforming Mars</h2>
     <span class="tag">Um planeta inteiro para construir, uma carta de cada vez.</span>
+    
     <span class="vit">2 vitórias em prêmios</span>
    </span>
   </a></li>
-  <li><a class="card" href="../the-crew/">
+  <li data-f="{&quot;jogadores&quot;:[3,5],&quot;melhor&quot;:[3,4],&quot;duracao&quot;:[20,20],&quot;peso&quot;:1.96,&quot;idade&quot;:10,&quot;solo&quot;:false,&quot;portugues&quot;:true,&quot;estilos&quot;:[&quot;Cooperativo&quot;],&quot;mecanicas&quot;:[&quot;Vazas&quot;],&quot;premios&quot;:[&quot;As d&#x27;Or&quot;,&quot;Deutscher Spiele Preis&quot;,&quot;Golden Geek&quot;,&quot;Kennerspiel des Jahres&quot;],&quot;preco&quot;:136,&quot;nota&quot;:7.7,&quot;melhor_para&quot;:&quot;cooperativo&quot;,&quot;nome&quot;:&quot;The Crew: resenha do cooperativo de vazas em silêncio The Crew: The Quest for Planet Nine The Crew&quot;}"><a class="card" href="../the-crew/">
    <span class="capa"><img src="../the-crew/capa.jpg?v=9bf356e7" srcset="../img/the-crew/capa-a8d11a60-400.webp 400w, ../the-crew/capa.jpg 800w" sizes="(min-width: 700px) 360px, 50vw" width="800" height="800" alt="Infográfico Elite Boardgamers sobre o jogo The Crew" loading="lazy"><span class="nota n7" aria-label="Nota BGG 7.7">7,7</span></span>
    <span class="corpo">
-    <span class="selo sim">Recomendado</span>
+    <span class="selo sim">Cooperativo</span>
     <h2>The Crew</h2>
     <span class="tag">Silêncio na nave: a vaza certa na hora certa.</span>
+    
     <span class="vit">4 vitórias em prêmios</span>
    </span>
   </a></li>
-  <li><a class="card" href="../dune-imperium/">
+  <li data-f="{&quot;jogadores&quot;:[1,4],&quot;melhor&quot;:[1,2,3,4],&quot;duracao&quot;:[60,120],&quot;peso&quot;:2.94,&quot;idade&quot;:14,&quot;solo&quot;:true,&quot;portugues&quot;:true,&quot;estilos&quot;:[&quot;Competitivo&quot;],&quot;mecanicas&quot;:[&quot;Alocação de trabalhadores&quot;,&quot;Construção de baralho&quot;],&quot;premios&quot;:[&quot;As d&#x27;Or&quot;,&quot;Golden Geek&quot;],&quot;preco&quot;:370,&quot;nota&quot;:8.4,&quot;melhor_para&quot;:&quot;proximo&quot;,&quot;nome&quot;:&quot;Resenha de Dune: Imperium, deck-building com disputa direta Dune: Imperium&quot;}"><a class="card" href="../dune-imperium/">
    <span class="capa"><img src="../dune-imperium/capa.jpg?v=416cf88b" srcset="../img/dune-imperium/capa-b81a702d-400.webp 400w, ../dune-imperium/capa.jpg 800w" sizes="(min-width: 700px) 360px, 50vw" width="800" height="800" alt="Infográfico Elite Boardgamers sobre o jogo Dune: Imperium" loading="lazy"><span class="nota n9" aria-label="Nota BGG 8.4">8,4</span></span>
    <span class="corpo">
-    <span class="selo sim">Recomendado</span>
+    <span class="selo sim">O próximo passo</span>
     <h2>Dune: Imperium</h2>
     <span class="tag">Deck-building com faca nos dentes.</span>
+    
     <span class="vit">2 vitórias em prêmios</span>
    </span>
   </a></li>
-  <li><a class="card" href="../azul/">
+  <li data-f="{&quot;jogadores&quot;:[2,4],&quot;melhor&quot;:[2],&quot;duracao&quot;:[30,45],&quot;peso&quot;:1.76,&quot;idade&quot;:8,&quot;solo&quot;:false,&quot;portugues&quot;:true,&quot;estilos&quot;:[&quot;Competitivo&quot;],&quot;mecanicas&quot;:[&quot;Abstrato&quot;,&quot;Draft&quot;],&quot;premios&quot;:[&quot;As d&#x27;Or&quot;,&quot;Deutscher Spiele Preis&quot;,&quot;Golden Geek&quot;,&quot;Spiel des Jahres&quot;],&quot;preco&quot;:229,&quot;nota&quot;:7.7,&quot;melhor_para&quot;:&quot;entrada&quot;,&quot;nome&quot;:&quot;Azul: resenha de um dos melhores jogos de entrada Azul&quot;}"><a class="card" href="../azul/">
    <span class="capa"><img src="../azul/capa.jpg?v=e0ccc30b" srcset="../img/azul/capa-7c22485a-400.webp 400w, ../azul/capa.jpg 800w" sizes="(min-width: 700px) 360px, 50vw" width="800" height="800" alt="Infográfico Elite Boardgamers sobre o jogo Azul" loading="lazy"><span class="nota n7" aria-label="Nota BGG 7.7">7,7</span></span>
    <span class="corpo">
-    <span class="selo sim">Recomendado</span>
+    <span class="selo sim">Primeiro jogo moderno</span>
     <h2>Azul</h2>
     <span class="tag">Um dos melhores jogos de entrada já criados.</span>
+    
     <span class="vit">4 vitórias em prêmios</span>
    </span>
   </a></li>
-  <li><a class="card" href="../nemesis/">
+  <li data-f="{&quot;jogadores&quot;:[1,5],&quot;melhor&quot;:[4],&quot;duracao&quot;:[90,180],&quot;peso&quot;:null,&quot;idade&quot;:null,&quot;solo&quot;:true,&quot;portugues&quot;:true,&quot;estilos&quot;:[&quot;Semicooperativo&quot;],&quot;mecanicas&quot;:[],&quot;premios&quot;:[],&quot;preco&quot;:1000,&quot;nota&quot;:null,&quot;melhor_para&quot;:&quot;tema&quot;,&quot;nome&quot;:&quot;Nemesis Nemesis, Lockdown ou Retaliation? Resenha da série&quot;}"><a class="card" href="../nemesis/">
    <span class="capa"><img src="../nemesis/capa.jpg?v=dcc05b84" srcset="../img/nemesis/capa-18ca1db7-400.webp 400w, ../nemesis/capa.jpg 800w" sizes="(min-width: 700px) 360px, 50vw" width="800" height="800" alt="Infográfico Elite Boardgamers: Qual Nemesis é o seu?" loading="lazy"></span>
    <span class="corpo">
-    <span class="selo publico">Recomendado para público específico</span>
+    <span class="selo publico">Tema e história</span>
     <h2>Nemesis</h2>
     <span class="tag">Fugir, resistir na escuridão ou invadir o ninho: escolha o seu medo.</span>
+    <span class="ress">Com ressalva: preço acima de R$ 1.000</span>
     
    </span>
   </a></li>
@@ -330,6 +399,92 @@ footer .in{display:flex;flex-wrap:wrap;gap:10px 20px;padding-top:18px;padding-bo
  <a href="https://www.instagram.com/eliteboardgamers/" target="_blank" rel="noopener">Instagram @eliteboardgamers</a>
  <a href="https://chat.whatsapp.com/IgQQkJdSkzHBaEq3UwFeAo" target="_blank" rel="noopener">Grupo do WhatsApp</a>
 </div></footer>
+<script>
+(() => {
+  const form = document.getElementById("filtros"), lista = document.getElementById("lista");
+  const itens = [...lista.children].map((li, i) => ({li, i, d: JSON.parse(li.dataset.f)}));
+  const norm = t => t.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+  const chips = {};
+  const ler = () => {
+    const v = Object.fromEntries(new FormData(form));
+    form.querySelectorAll(".chips").forEach(g => v[g.dataset.campo] = chips[g.dataset.campo] || "");
+    return v;
+  };
+  const passa = (d, v) => {
+    if (v.q && !norm(d.nome).includes(norm(v.q.trim()))) return false;
+    if (v.jogadores) {
+      const n = +v.jogadores, j = d.jogadores;
+      if (!j || (n < 6 ? n < j[0] || n > j[1] : j[1] < 6)) return false;
+      if (v.melhor && !d.melhor.some(m => n < 6 ? m === n : m >= 6)) return false;
+    }
+    if (v.duracao) {
+      const t = d.duracao, lim = {"30": [0, 30], "60": [30, 60], "120": [60, 120], "999": [121, 9999]}[v.duracao];
+      if (!t || t[0] > lim[1] || t[1] < lim[0]) return false;
+    }
+    if (v.peso) {
+      if (d.peso == null) return false;
+      if (v.peso === "leve" ? d.peso >= 2 : v.peso === "media" ? d.peso < 2 || d.peso > 3 : d.peso <= 3) return false;
+    }
+    if (v.perfil && d.melhor_para !== v.perfil) return false;
+    if (v.estilo && !d.estilos.includes(v.estilo)) return false;
+    if (v.mecanica && !d.mecanicas.includes(v.mecanica)) return false;
+    if (v.premio && !d.premios.includes(v.premio)) return false;
+    if (v.idade && (d.idade == null || d.idade > +v.idade)) return false;
+    if (v.preco && (d.preco == null || d.preco > +v.preco)) return false;
+    if (v.solo && !d.solo) return false;
+    if (v.pt && !d.portugues) return false;
+    return true;
+  };
+  const ORDEM = {
+    nota: (a, b) => (b.d.nota ?? -1) - (a.d.nota ?? -1),
+    leve: (a, b) => (a.d.peso ?? 99) - (b.d.peso ?? 99),
+    pesado: (a, b) => (b.d.peso ?? -1) - (a.d.peso ?? -1),
+    curto: (a, b) => (a.d.duracao?.[0] ?? 9999) - (b.d.duracao?.[0] ?? 9999),
+    preco: (a, b) => (a.d.preco ?? 1e9) - (b.d.preco ?? 1e9),
+  };
+  const aplicar = (gravar = true) => {
+    const v = ler();
+    let n = 0;
+    itens.forEach(x => { const ok = passa(x.d, v); x.li.hidden = !ok; n += ok; });
+    [...itens].sort(ORDEM[v.ordem] || ((a, b) => a.i - b.i)).forEach(x => lista.append(x.li));
+    document.getElementById("contagem").textContent = n + (n === 1 ? " resenha" : " resenhas");
+    document.getElementById("vazio").hidden = n > 0;
+    if (gravar) {
+      const q = new URLSearchParams(Object.entries(v).filter(([, x]) => x));
+      history.replaceState(null, "", q.toString() ? "?" + q : location.pathname);
+    }
+  };
+  form.querySelectorAll(".chips").forEach(g => g.addEventListener("click", ev => {
+    const b = ev.target.closest("button"); if (!b) return;
+    chips[g.dataset.campo] = chips[g.dataset.campo] === b.dataset.v ? "" : b.dataset.v;
+    g.querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed", x.dataset.v === chips[g.dataset.campo]));
+    aplicar();
+  }));
+  form.addEventListener("input", () => aplicar());
+  form.addEventListener("submit", ev => ev.preventDefault());
+  // o reset nativo limpa campos e caixas; depois zera os botões e reaplica
+  form.addEventListener("reset", () => setTimeout(() => {
+    Object.keys(chips).forEach(k => chips[k] = "");
+    form.querySelectorAll(".chips button").forEach(b => b.setAttribute("aria-pressed", "false"));
+    aplicar();
+  }));
+  document.getElementById("limpar2").addEventListener("click", () => form.reset());
+  // filtros vindos do endereço (link compartilhado)
+  const url = new URLSearchParams(location.search);
+  let abrir = !matchMedia("(max-width: 699px)").matches;  // no celular, "Mais filtros" começa fechado
+  url.forEach((val, k) => {
+    const g = form.querySelector(`.chips[data-campo="${k}"]`);
+    if (!["q", "jogadores", "melhor", "perfil", "ordem"].includes(k)) abrir = true;
+    if (g) { chips[k] = val; g.querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed", x.dataset.v === val)); return; }
+    const el = form.elements[k]; if (!el) return;
+    if (el.type === "checkbox") el.checked = true; else el.value = val;
+  });
+  form.querySelector(".mais-f").open = abrir;
+  form.querySelectorAll(".chips button").forEach(b => b.hasAttribute("aria-pressed") || b.setAttribute("aria-pressed", "false"));
+  form.hidden = false;
+  aplicar(false);
+})();
+</script>
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "b37421bd1ade44f1a59e46b96626bf03"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>

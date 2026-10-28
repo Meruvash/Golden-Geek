@@ -9,8 +9,9 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import seo  # noqa: E402
+from filtros_resenha import PERFIS, derivar  # noqa: E402
 from imagens_resp import srcset  # noqa: E402
-from build_review import INSTAGRAM, ROOT, SITE, WHATSAPP, campo, capa_src, versao, e, faixa_nota, icone, nome_br, numero, selo_class  # noqa: E402
+from build_review import INSTAGRAM, ROOT, SITE, WHATSAPP, campo, capa_src, versao, e, faixa_nota, icone, nome_br, numero, selo_class, selo_perfil  # noqa: E402
 
 
 def card(c):
@@ -19,12 +20,16 @@ def card(c):
     titulo = nome_br(c)
     nota_html = f'<span class="nota {faixa_nota(nota)}" aria-label="Nota BGG {nota:.1f}">{f"{nota:.1f}".replace(".", ",")}</span>' if nota else ""
     premio = f'<span class="vit">{vit} vitória{"s" if vit != 1 else ""} em prêmios</span>' if vit else ""
-    return f"""  <li><a class="card" href="../{c["slug"]}/">
+    f = derivar(c)
+    f["nome"] = " ".join({c["jogo"], titulo, c.get("titulo_busca", "")})
+    dados = e(json.dumps(f, ensure_ascii=False, separators=(",", ":")))
+    return f"""  <li data-f="{dados}"><a class="card" href="../{c["slug"]}/">
    <span class="capa"><img src="{capa_src(c["slug"])}" srcset="{srcset(ROOT / c["slug"] / "capa.jpg", "../", (400,))}" sizes="(min-width: 700px) 360px, 50vw" width="800" height="800" alt="{e(c["alt"])}" loading="lazy">{nota_html}</span>
    <span class="corpo">
-    <span class="selo {selo_class(c["selo"])}">{e(c["selo"])}</span>
+    {selo_perfil(c, prefixo=False)}
     <h2>{e(titulo)}</h2>
     <span class="tag">{e(c["tagline"])}</span>
+    {f'<span class="ress">Com ressalva: {e(c["ressalva"])}</span>' if c.get("ressalva") else ""}
     {premio}
    </span>
   </a></li>
@@ -34,7 +39,32 @@ def card(c):
 def build():
     pauta = json.loads((ROOT / "pauta.json").read_text(encoding="utf-8"))
     slugs = [p["url"].rstrip("/").split("/")[-1] for p in reversed(pauta["publicadas"])]
-    cards = "".join(card(json.loads((ROOT / "conteudo" / f"{s}.json").read_text(encoding="utf-8"))) for s in slugs)
+    conteudos = [json.loads((ROOT / "conteudo" / f"{s}.json").read_text(encoding="utf-8")) for s in slugs]
+    cards = "".join(card(c) for c in conteudos)
+    todos = [derivar(c) for c in conteudos]
+    opcoes = lambda chave: sorted({x for d in todos for x in d[chave]})  # noqa: E731
+    sel = lambda nome, rotulo, itens: (f'<label class="f">{rotulo}<select name="{nome}"><option value="">Todos</option>'  # noqa: E731
+                                        + "".join(f'<option value="{e(v)}">{e(t)}</option>' for v, t in itens) + "</select></label>")
+    filtros = f"""<form class="filtros" id="filtros" role="search" aria-label="Filtrar resenhas" hidden>
+  <input class="busca" type="search" name="q" placeholder="Buscar jogo pelo nome" autocomplete="off" aria-label="Buscar jogo pelo nome">
+  <fieldset><legend>Jogadores</legend><div class="chips" data-campo="jogadores">{"".join(f'<button type="button" data-v="{n}">{n if n < 6 else "6+"}</button>' for n in range(1, 7))}</div>
+   <label class="ck"><input type="checkbox" name="melhor"> só onde é a melhor contagem</label></fieldset>
+  <div class="linha-f">{sel("perfil", "Melhor para", [(k, v[0]) for k, v in PERFIS.items() if any(d["melhor_para"] == k for d in todos)])}
+   <label class="f">Ordenar por<select name="ordem"><option value="">Mais recentes</option><option value="nota">Nota BGG</option><option value="leve">Mais leve</option><option value="pesado">Mais pesado</option><option value="curto">Mais curto</option><option value="preco">Menor preço</option></select></label></div>
+  <details class="mais-f" open><summary>Mais filtros: duração, complexidade, estilo, prêmio…</summary><div class="painel">
+  <fieldset><legend>Duração</legend><div class="chips" data-campo="duracao"><button type="button" data-v="30">Até 30 min</button><button type="button" data-v="60">30 a 60 min</button><button type="button" data-v="120">1 a 2 h</button><button type="button" data-v="999">Mais de 2 h</button></div></fieldset>
+  <fieldset><legend>Complexidade <small>(peso BGG)</small></legend><div class="chips" data-campo="peso"><button type="button" data-v="leve">Leve</button><button type="button" data-v="media">Média</button><button type="button" data-v="pesada">Pesada</button></div></fieldset>
+  <div class="linha-f">
+   {sel("estilo", "Estilo", [(x, x) for x in opcoes("estilos")])}
+   {sel("mecanica", "Mecânica", [(x, x) for x in opcoes("mecanicas")])}
+   {sel("premio", "Venceu o prêmio", [(x, x) for x in opcoes("premios")])}
+   {sel("idade", "Pessoa mais nova na mesa", [(str(n), f"{n} anos") for n in (8, 10, 12, 14)])}
+   {sel("preco", "Preço até", [(str(n), f"R$ {n}") for n in (150, 300, 500)])}
+   <label class="ck"><input type="checkbox" name="solo"> tem modo solo</label>
+   <label class="ck"><input type="checkbox" name="pt"> edição em português</label></div></div></details>
+  <div class="res-bar"><span id="contagem" aria-live="polite"></span><button type="reset" class="limpar">Limpar filtros</button></div>
+ </form>
+ <p class="vazio" id="vazio" hidden>Nenhuma resenha com esses filtros. <button type="button" class="limpar" id="limpar2">Limpar filtros</button></p>"""
     n = len(slugs)
     return f"""<!doctype html>
 <html lang="pt-BR">
@@ -100,6 +130,29 @@ h1{{font-size:clamp(2.2rem,6vw,3.4rem);line-height:1.05;font-weight:800;letter-s
 .corpo{{display:grid;gap:6px;padding:14px 16px 18px;align-content:start}}
 .selo{{justify-self:start;font-weight:800;font-size:.76rem;line-height:1.35;border-radius:6px;padding:3px 9px;color:#fff;background:#157a43}}
 .selo.publico{{background:#8a5200}}.selo.nao{{background:#a3223a}}
+.ress{{font-size:.8rem;font-weight:700;color:#8a5200}}
+.filtros[hidden]{{display:none}}
+.filtros{{display:grid;gap:14px;margin:0 0 20px;padding:16px;border:1px solid var(--line);border-radius:12px;background:#0f1115}}
+.filtros fieldset{{border:0;margin:0;padding:0;display:grid;gap:8px}}
+.filtros legend{{font-size:.78rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);padding:0;margin-bottom:8px}}
+.filtros legend small{{text-transform:none;letter-spacing:0;font-weight:600}}
+.busca{{width:100%;font:inherit;padding:12px 14px;border-radius:10px;border:1px solid #3a3f48;background:#000;color:var(--ink)}}
+.busca:focus{{border-color:var(--gold);outline:none}}
+.chips{{display:flex;flex-wrap:wrap;gap:8px}}
+.chips button{{font:inherit;font-size:.92rem;font-weight:700;min-height:40px;padding:6px 14px;border-radius:999px;border:1px solid #3a3f48;background:transparent;color:var(--ink);cursor:pointer;transition:background-color .15s ease,border-color .15s ease}}
+.chips button:hover{{border-color:var(--gold)}}
+.chips button[aria-pressed="true"]{{background:var(--gold);border-color:var(--gold);color:#000}}
+.linha-f{{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px 14px;align-items:end}}
+.f{{display:grid;gap:6px;font-size:.78rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}}
+.f select{{font:inherit;font-size:.95rem;font-weight:600;letter-spacing:0;text-transform:none;min-height:42px;padding:8px 10px;border-radius:8px;border:1px solid #3a3f48;background:#000;color:var(--ink)}}
+.ck{{display:flex;align-items:center;gap:8px;font-size:.92rem;color:#c9cfd8;min-height:40px}}.ck input{{width:18px;height:18px;accent-color:var(--gold)}}
+.mais-f summary{{cursor:pointer;font-weight:700;color:var(--gold);min-height:40px;display:flex;align-items:center}}
+.mais-f[open] summary{{margin-bottom:10px}}.painel{{display:grid;gap:14px}}
+.res-bar{{display:flex;justify-content:space-between;align-items:center;gap:12px;border-top:1px solid var(--line);padding-top:12px}}
+#contagem{{font-weight:800}}
+.limpar{{font:inherit;font-weight:700;color:var(--gold);background:none;border:0;cursor:pointer;padding:8px 0;text-decoration:underline;text-underline-offset:3px}}
+.vazio{{padding:24px;border:1px dashed #3a3f48;border-radius:12px;text-align:center;color:#c9cfd8;margin-bottom:24px}}
+.grid li[hidden]{{display:none}}
 .card h2{{font-size:1.2rem;line-height:1.2;font-weight:800}}
 .tag{{font-size:.92rem;color:#3a414c}}
 .vit{{font-size:.82rem;color:#5a6270;display:flex;align-items:center;gap:6px}}
@@ -123,7 +176,8 @@ footer .in{{display:flex;flex-wrap:wrap;gap:10px 20px;padding-top:18px;padding-b
   <p class="lede">{n} resenhas com fontes: como funciona, o que funciona, pontos de atenção e para quem é cada jogo. Só entram jogos premiados no Golden Geek, Spiel des Jahres, Kennerspiel, As d'Or e Deutscher Spiele Preis.</p>
   <a class="zap" href="{WHATSAPP}" target="_blank" rel="noopener">{icone("zap")}<span><b>Entre no grupo do WhatsApp</b><small>Receba as novas resenhas e converse sobre jogos</small></span></a>
  </section>
- <ul class="grid">
+ {filtros}
+ <ul class="grid" id="lista">
 {cards} </ul>
 </main>
 <footer><div class="in">
@@ -134,6 +188,92 @@ footer .in{{display:flex;flex-wrap:wrap;gap:10px 20px;padding-top:18px;padding-b
  <a href="{INSTAGRAM}" target="_blank" rel="noopener">Instagram @eliteboardgamers</a>
  <a href="{WHATSAPP}" target="_blank" rel="noopener">Grupo do WhatsApp</a>
 </div></footer>
+<script>
+(() => {{
+  const form = document.getElementById("filtros"), lista = document.getElementById("lista");
+  const itens = [...lista.children].map((li, i) => ({{li, i, d: JSON.parse(li.dataset.f)}}));
+  const norm = t => t.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+  const chips = {{}};
+  const ler = () => {{
+    const v = Object.fromEntries(new FormData(form));
+    form.querySelectorAll(".chips").forEach(g => v[g.dataset.campo] = chips[g.dataset.campo] || "");
+    return v;
+  }};
+  const passa = (d, v) => {{
+    if (v.q && !norm(d.nome).includes(norm(v.q.trim()))) return false;
+    if (v.jogadores) {{
+      const n = +v.jogadores, j = d.jogadores;
+      if (!j || (n < 6 ? n < j[0] || n > j[1] : j[1] < 6)) return false;
+      if (v.melhor && !d.melhor.some(m => n < 6 ? m === n : m >= 6)) return false;
+    }}
+    if (v.duracao) {{
+      const t = d.duracao, lim = {{"30": [0, 30], "60": [30, 60], "120": [60, 120], "999": [121, 9999]}}[v.duracao];
+      if (!t || t[0] > lim[1] || t[1] < lim[0]) return false;
+    }}
+    if (v.peso) {{
+      if (d.peso == null) return false;
+      if (v.peso === "leve" ? d.peso >= 2 : v.peso === "media" ? d.peso < 2 || d.peso > 3 : d.peso <= 3) return false;
+    }}
+    if (v.perfil && d.melhor_para !== v.perfil) return false;
+    if (v.estilo && !d.estilos.includes(v.estilo)) return false;
+    if (v.mecanica && !d.mecanicas.includes(v.mecanica)) return false;
+    if (v.premio && !d.premios.includes(v.premio)) return false;
+    if (v.idade && (d.idade == null || d.idade > +v.idade)) return false;
+    if (v.preco && (d.preco == null || d.preco > +v.preco)) return false;
+    if (v.solo && !d.solo) return false;
+    if (v.pt && !d.portugues) return false;
+    return true;
+  }};
+  const ORDEM = {{
+    nota: (a, b) => (b.d.nota ?? -1) - (a.d.nota ?? -1),
+    leve: (a, b) => (a.d.peso ?? 99) - (b.d.peso ?? 99),
+    pesado: (a, b) => (b.d.peso ?? -1) - (a.d.peso ?? -1),
+    curto: (a, b) => (a.d.duracao?.[0] ?? 9999) - (b.d.duracao?.[0] ?? 9999),
+    preco: (a, b) => (a.d.preco ?? 1e9) - (b.d.preco ?? 1e9),
+  }};
+  const aplicar = (gravar = true) => {{
+    const v = ler();
+    let n = 0;
+    itens.forEach(x => {{ const ok = passa(x.d, v); x.li.hidden = !ok; n += ok; }});
+    [...itens].sort(ORDEM[v.ordem] || ((a, b) => a.i - b.i)).forEach(x => lista.append(x.li));
+    document.getElementById("contagem").textContent = n + (n === 1 ? " resenha" : " resenhas");
+    document.getElementById("vazio").hidden = n > 0;
+    if (gravar) {{
+      const q = new URLSearchParams(Object.entries(v).filter(([, x]) => x));
+      history.replaceState(null, "", q.toString() ? "?" + q : location.pathname);
+    }}
+  }};
+  form.querySelectorAll(".chips").forEach(g => g.addEventListener("click", ev => {{
+    const b = ev.target.closest("button"); if (!b) return;
+    chips[g.dataset.campo] = chips[g.dataset.campo] === b.dataset.v ? "" : b.dataset.v;
+    g.querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed", x.dataset.v === chips[g.dataset.campo]));
+    aplicar();
+  }}));
+  form.addEventListener("input", () => aplicar());
+  form.addEventListener("submit", ev => ev.preventDefault());
+  // o reset nativo limpa campos e caixas; depois zera os botões e reaplica
+  form.addEventListener("reset", () => setTimeout(() => {{
+    Object.keys(chips).forEach(k => chips[k] = "");
+    form.querySelectorAll(".chips button").forEach(b => b.setAttribute("aria-pressed", "false"));
+    aplicar();
+  }}));
+  document.getElementById("limpar2").addEventListener("click", () => form.reset());
+  // filtros vindos do endereço (link compartilhado)
+  const url = new URLSearchParams(location.search);
+  let abrir = !matchMedia("(max-width: 699px)").matches;  // no celular, "Mais filtros" começa fechado
+  url.forEach((val, k) => {{
+    const g = form.querySelector(`.chips[data-campo="${{k}}"]`);
+    if (!["q", "jogadores", "melhor", "perfil", "ordem"].includes(k)) abrir = true;
+    if (g) {{ chips[k] = val; g.querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed", x.dataset.v === val)); return; }}
+    const el = form.elements[k]; if (!el) return;
+    if (el.type === "checkbox") el.checked = true; else el.value = val;
+  }});
+  form.querySelector(".mais-f").open = abrir;
+  form.querySelectorAll(".chips button").forEach(b => b.hasAttribute("aria-pressed") || b.setAttribute("aria-pressed", "false"));
+  form.hidden = false;
+  aplicar(false);
+}})();
+</script>
 {seo.ANALYTICS}
 </body>
 </html>
