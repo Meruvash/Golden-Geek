@@ -33,7 +33,16 @@ def cabecalho():
     return {"Authorization": f"Bearer {chave}"}
 
 
+# Pedido do usuário em 28/10/2026: resenhas sem gerar imagem pela API da OpenAI (sem gastos).
+# Só gera com PERMITIR_IMAGEM_GPT=1 no ambiente, e isso só com um novo OK explícito do usuário.
+def travar_gasto():
+    if os.environ.get("PERMITIR_IMAGEM_GPT") != "1":
+        sys.exit("Geração de imagem pela API da OpenAI desligada (pedido do usuário em 28/10/2026). "
+                 "As resenhas saem só com as fotos oficiais; nada foi enviado nem cobrado.")
+
+
 def enviar(arquivos, sem_fotos=False):
+    travar_gasto()
     if not sem_fotos:
         faltam = [a for a in arquivos if not fotos_liberadas(json.loads(Path(a).read_text(encoding="utf-8"))["slug"])]
         if faltam:
