@@ -104,7 +104,7 @@ footer .in{{display:flex;flex-wrap:wrap;gap:10px 20px;padding-top:18px;padding-b
  <a class="marca" href="./"><img src="../marca/elite-boardgamers.webp" width="318" height="254" alt="Elite Boardgamers"></a>
  <a class="ig" href="{INSTAGRAM}" target="_blank" rel="noopener" aria-label="Instagram @eliteboardgamers">{icone("insta")}<span>@eliteboardgamers</span></a>
  <a class="zap-mini" href="{WHATSAPP}" target="_blank" rel="noopener">{icone("zap")}<span>Grupo do WhatsApp</span></a>
- <a class="gg" href="../">Consulta <span class="gg-l">Golden Geek</span></a>
+ <a class="gg" href="../consulta/">Consulta <span class="gg-l">Golden Geek</span></a>
 </div></header>
 <main class="in">
  <section class="topo">
@@ -117,7 +117,7 @@ footer .in{{display:flex;flex-wrap:wrap;gap:10px 20px;padding-top:18px;padding-b
 </main>
 <footer><div class="in">
  <span>Elite Boardgamers</span>
- <a href="../">Consulta Golden Geek 2015–2025</a>
+ <a href="../consulta/">Consulta Golden Geek 2015–2025</a>
  <a href="{INSTAGRAM}" target="_blank" rel="noopener">Instagram @eliteboardgamers</a>
  <a href="{WHATSAPP}" target="_blank" rel="noopener">Grupo do WhatsApp</a>
 </div></footer>

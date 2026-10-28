@@ -691,7 +691,7 @@ footer a{{color:var(--bar-ink)}}
 <footer><div class="in">
  <span>Elite Boardgamers</span>
  <a href="../resenhas/">Todas as resenhas</a>
- <a href="../">Consulta Golden Geek</a>
+ <a href="../consulta/">Consulta Golden Geek</a>
  <a href="{INSTAGRAM}" target="_blank" rel="noopener">Instagram @eliteboardgamers</a>
  <a href="{WHATSAPP}" target="_blank" rel="noopener">Grupo do WhatsApp</a>
 </div></footer>
