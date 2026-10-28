@@ -133,9 +133,9 @@ h1,h2,p,ul{{margin:0}}ul{{padding:0;list-style:none}}img{{display:block;max-widt
 h1{{font-size:clamp(2.2rem,6vw,3.4rem);line-height:1.05;font-weight:800;letter-spacing:-.02em}}
 .lede{{color:#c9cfd8;max-width:62ch;font-size:1.05rem}}
 .zap{{display:flex;align-items:center;gap:12px;padding:14px 18px;border-radius:10px;background:var(--zap);color:#fff;text-decoration:none;max-width:520px;transition:background-color .2s ease,transform .2s ease}}
-.zap:hover{{background:#11683a}}.zap:active{{transform:scale(.98)}}
+.zap-fim{{margin:0 0 40px}}.zap:hover{{background:#11683a}}.zap:active{{transform:scale(.98)}}
 .zap .ic{{width:30px;height:30px;flex:none}}.zap b{{display:block;font-size:1.05rem}}.zap small{{display:block;font-size:.85rem;opacity:.92}}
-.grid{{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:18px;padding:8px 0 48px}}
+.grid{{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:18px;padding:8px 0 32px}}
 .card{{display:flex;flex-direction:column;height:100%;background:#f4f5f7;color:#14171c;border-radius:12px;overflow:hidden;text-decoration:none;transition:transform .25s cubic-bezier(.16,1,.3,1),box-shadow .25s ease}}
 .card:hover{{transform:translateY(-3px);box-shadow:0 10px 30px rgba(0,0,0,.55)}}
 .capa{{position:relative;display:block}}.capa img{{aspect-ratio:1;object-fit:cover;width:100%}}
@@ -204,11 +204,11 @@ footer .in{{display:flex;flex-wrap:wrap;gap:10px 20px;padding-top:18px;padding-b
  <section class="topo">
   <h1>Resenhas de jogos premiados</h1>
   <p class="lede">{n} resenhas com fontes: como funciona, o que funciona, pontos de atenção e para quem é cada jogo. Só entram jogos premiados no Golden Geek, Spiel des Jahres, Kennerspiel, As d'Or e Deutscher Spiele Preis.</p>
-  <a class="zap" href="{WHATSAPP}" target="_blank" rel="noopener">{icone("zap")}<span><b>Entre no grupo do WhatsApp</b><small>Receba as novas resenhas e converse sobre jogos</small></span></a>
  </section>
  {filtros}
  <ul class="grid" id="lista">
 {cards} </ul>
+  <a class="zap zap-fim" href="{WHATSAPP}" target="_blank" rel="noopener">{icone("zap")}<span><b>Entre no grupo do WhatsApp</b><small>Receba as novas resenhas e converse sobre jogos</small></span></a>
 </main>
 {rodape("../")}
 <script>

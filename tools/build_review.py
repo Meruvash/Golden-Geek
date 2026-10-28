@@ -309,6 +309,7 @@ def layout_v2(c, premios_bloco, ficha_html, fontes, fotos=None, info_meio=""):
   {como}
   {jogar}
   {pc}
+  <a class="zap zap-meio" href="{WHATSAPP}" target="_blank" rel="noopener">{icone("zap", "ic zi")}<span><b>Entre no grupo do WhatsApp</b><small>Converse sobre {e(c["jogo"])} e receba as próximas resenhas</small></span></a>
   {info_meio}
   {quem}
   {edicao}
@@ -636,7 +637,7 @@ footer{{background:var(--bar);color:var(--bar-ink);font-size:.88rem;border-top:1
 @media (max-width:700px){{.bar .ig span,.bar .zap-mini span{{display:none}}.bar .todas{{padding:6px 10px}}}}
 @media (max-width:599px){{.bar .todas{{display:none}}.bar .ig{{margin-left:auto}}.marca img{{width:68px}}footer .in{{align-items:center}}footer a{{display:inline-block;padding:6px 0}}}}
 .zap{{display:flex;align-items:center;gap:12px;margin-top:16px;padding:14px 18px;border-radius:10px;background:#157a43;color:#fff;text-decoration:none;transition:background-color .2s ease,transform .2s ease}}
-.zap:hover{{background:#11683a}}.zap:active{{transform:scale(.98)}}
+.zap-meio{{margin-top:0}}.zap:hover{{background:#11683a}}.zap:active{{transform:scale(.98)}}
 .zap .zi{{width:30px;height:30px;flex:none}}.zap b{{display:block;font-size:1.05rem}}.zap small{{display:block;font-size:.85rem;opacity:.9}}
 .comunidade p{{max-width:62ch;color:#c9cfd8}}.comunidade .acoes{{display:flex;flex-wrap:wrap;gap:12px;align-items:center}}
 .ig-btn{{display:flex;align-items:center;gap:8px;margin-top:16px;padding:14px 18px;border-radius:10px;border:1px solid #3a3f48;color:var(--ink);text-decoration:none;font-weight:700}}
@@ -749,7 +750,6 @@ footer a{{color:var(--bar-ink)}}
   </div>
   <div class="veredito">{selo_perfil(c)}<p>{e(c["tagline"])}</p><p class="nivel {selo_class(c["selo"])}">{e(nivel(c))}</p></div>
   <ul class="regua">{regua_html}</ul>
-  <a class="zap" href="{WHATSAPP}" target="_blank" rel="noopener">{icone("zap", "ic zi")}<span><b>Entre no grupo do WhatsApp</b><small>Converse sobre {e(c["jogo"])} e receba as próximas resenhas</small></span></a>
   <p class="lede">{e(c["lede"])}</p>
   {pub_html}
  </div>

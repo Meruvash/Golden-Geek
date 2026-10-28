@@ -57,7 +57,7 @@ def tabela(s):
 def build():
     s = ARQ.read_text(encoding="utf-8")
     html_tabela, total = tabela(s)
-    novo = re.sub(r'<div id="out">.*?</div>(?=\n\n <section class="notas">)', lambda _: f'<div id="out">{html_tabela}</div>', s, count=1, flags=re.S)
+    novo = re.sub(r'<div id="out">.*?</div>(?=\n\n <a class="zap")', lambda _: f'<div id="out">{html_tabela}</div>', s, count=1, flags=re.S)
     # moldura comum do site (tools/layout.py)
     novo = re.sub(r'<header class="(?:top)?bar".*?</nav>', lambda _: cabecalho("../", "Consulta Golden Geek"), novo, count=1, flags=re.S)
     novo = re.sub(r'<footer>.*?</footer>', lambda _: rodape("../"), novo, count=1, flags=re.S)
