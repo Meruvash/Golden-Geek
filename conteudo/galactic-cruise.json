@@ -22,7 +22,8 @@
    "categoria": "Deutscher Spiele Preis",
    "colocacao": 3,
    "resultado": "top 3",
-   "fonte": "https://de.wikipedia.org/wiki/Deutscher_Spiele_Preis"
+   "fonte": "https://de.wikipedia.org/wiki/Deutscher_Spiele_Preis",
+   "rotulo": "3º lugar"
   },
   {
    "premio": "Golden Geek",
@@ -30,7 +31,8 @@
    "categoria": "Jogo do Ano pesado",
    "colocacao": 1,
    "resultado": "vencedor",
-   "fonte": "https://eliteboardgamers.com.br/"
+   "fonte": "https://eliteboardgamers.com.br/",
+   "rotulo": "Vencedor"
   },
   {
    "premio": "Golden Geek",
@@ -38,7 +40,8 @@
    "categoria": "Arte",
    "colocacao": 2,
    "resultado": "top 3",
-   "fonte": "https://eliteboardgamers.com.br/"
+   "fonte": "https://eliteboardgamers.com.br/",
+   "rotulo": "2º lugar"
   },
   {
    "premio": "Golden Geek",
@@ -46,24 +49,67 @@
    "categoria": "Temático",
    "colocacao": 3,
    "resultado": "top 3",
-   "fonte": "https://eliteboardgamers.com.br/"
+   "fonte": "https://eliteboardgamers.com.br/",
+   "rotulo": "3º lugar"
   }
  ],
  "ficha": [
-  ["Ano", "2025"],
-  ["Designers", "T.K. King, Dennis Northcott e Koltin Thompson"],
-  ["Arte", "Ian O'Toole"],
-  ["Editora original", "Kinson Key Games"],
-  ["Editora no Brasil", "sem edição nacional encontrada"],
-  ["Jogadores", "1 a 4 (melhor com 3, segundo a enquete do BGG)"],
-  ["Duração anunciada", "90 a 150 minutos (resenhas relatam de pouco mais de 2 a 3 horas)"],
-  ["Idade", "14+"],
-  ["Nota BGG", "8,3 / 10 (7.883 avaliações)"],
-  ["Peso BGG", "3,97 / 5"],
-  ["Nota Ludopedia", "não confirmado nas fontes consultadas"],
-  ["Modo solo oficial", "Sim, com oponente automatizado (15 cartas solo)"],
-  ["Idioma", "inglês"],
-  ["Componentes", "tabuleiro principal, 4 tabuleiros de jogador, 36 meeples de hóspedes, 20 trabalhadores e consultores, 39 engrenagens de desenvolvimento, 48 plantas de nave, 36 cartas de agenda"]
+  [
+   "Ano",
+   "2025"
+  ],
+  [
+   "Designers",
+   "T.K. King, Dennis Northcott e Koltin Thompson"
+  ],
+  [
+   "Arte",
+   "Ian O'Toole"
+  ],
+  [
+   "Editora original",
+   "Kinson Key Games"
+  ],
+  [
+   "Editora no Brasil",
+   "sem edição nacional encontrada"
+  ],
+  [
+   "Jogadores",
+   "1 a 4 (melhor com 3, segundo a enquete do BGG)"
+  ],
+  [
+   "Duração anunciada",
+   "90 a 150 minutos (resenhas relatam de pouco mais de 2 a 3 horas)"
+  ],
+  [
+   "Idade",
+   "14+"
+  ],
+  [
+   "Nota BGG",
+   "8,3 / 10 (7.883 avaliações)"
+  ],
+  [
+   "Peso BGG",
+   "3,97 / 5"
+  ],
+  [
+   "Nota Ludopedia",
+   "não confirmado nas fontes consultadas"
+  ],
+  [
+   "Modo solo oficial",
+   "Sim, com oponente automatizado (15 cartas solo)"
+  ],
+  [
+   "Idioma",
+   "inglês"
+  ],
+  [
+   "Componentes",
+   "tabuleiro principal, 4 tabuleiros de jogador, 36 meeples de hóspedes, 20 trabalhadores e consultores, 39 engrenagens de desenvolvimento, 48 plantas de nave, 36 cartas de agenda"
+  ]
  ],
  "nota_ficha": "Nota, número de avaliações, peso e melhor número de jogadores do BGG obtidos por busca em fonte secundária (BoardMatch); a página da Ludopedia bloqueia acesso automatizado.",
  "como_funciona": [
@@ -75,20 +121,62 @@
   "Lançamentos e conquistas colocam cubos numa linha do tempo de três anos, e cada terço preenchido dispara uma fase de pontuação. Quando o terceiro ano enche, a rodada termina, todos fazem mais um turno e pontuam naves, segmentos e colunas de engrenagens esvaziadas; nave não lançada custa 5 pontos."
  ],
  "funciona": [
-  ["Engrenagens que ligam o tabuleiro", "As engrenagens de desenvolvimento fazem cada trabalhador valer por mais de um espaço: comprar uma peça entre o estaleiro e a propaganda deixa você agir nos dois prédios com um só peão. A Board Game Quest destaca esse sistema de ações encadeadas, que faz o tabuleiro parecer uma empresa que você vai organizando aos poucos."],
-  ["Ninguém fica trancado", "Em vez de bloquear um espaço, colocar trabalhador numa estação ocupada expulsa o rival, que recebe um bônus de dinheiro. Para a Meeple Mountain, isso resolve o velho problema de ficar sem lugar na alocação de trabalhadores e evita turnos perdidos, mesmo crítica sendo, no geral, negativa."],
-  ["Arte e produção de Ian O'Toole", "A Meeple Mountain diz que a arte acerta em cheio uma estética retrofuturista e minimalista. A Tabletop Gaming chama o design gráfico de O'Toole de impecável, e a Board Game Quest diz que a produção física é fantástica, com meeples que trocam de uniforme ao virar especialistas e um envelope de memorando com crachá de funcionário."],
-  ["Manuais de funcionário", "Cada jogador recebe um manual do funcionário de 8 páginas, com a sequência de lançamento escrita como checklist pré-voo. A Meeple Mountain diz que são as melhores ajudas de jogo do mercado, e a Board Game Quest afirma que elas ajudam a vencer a curva de aprendizado inicial."],
-  ["Complexo sem punir demais", "Para a Board Game Quest, que deu 4,5 de 5, o jogo é satisfatoriamente complexo sem castigar demais um planejamento imperfeito. Pela regra, uma nave que sai com cabine vazia ainda pontua nos planetas visitados. O crítico conta que uma jogadora do grupo gostou da partida apesar do peso de 3,97 no BGG."],
-  ["Disponível para testar online", "O Board Game Arena lançou a versão digital em 11 de novembro de 2025, com o modo solo incluído. É a forma mais barata de descobrir se o ciclo de montar e lançar naves agrada antes de importar uma caixa de US$ 119."]
+  [
+   "Engrenagens que ligam o tabuleiro",
+   "As engrenagens de desenvolvimento fazem cada trabalhador valer por mais de um espaço: comprar uma peça entre o estaleiro e a propaganda deixa você agir nos dois prédios com um só peão. A Board Game Quest destaca esse sistema de ações encadeadas, que faz o tabuleiro parecer uma empresa que você vai organizando aos poucos."
+  ],
+  [
+   "Ninguém fica trancado",
+   "Em vez de bloquear um espaço, colocar trabalhador numa estação ocupada expulsa o rival, que recebe um bônus de dinheiro. Para a Meeple Mountain, isso resolve o velho problema de ficar sem lugar na alocação de trabalhadores e evita turnos perdidos, mesmo crítica sendo, no geral, negativa."
+  ],
+  [
+   "Arte e produção de Ian O'Toole",
+   "A Meeple Mountain diz que a arte acerta em cheio uma estética retrofuturista e minimalista. A Tabletop Gaming chama o design gráfico de O'Toole de impecável, e a Board Game Quest diz que a produção física é fantástica, com meeples que trocam de uniforme ao virar especialistas e um envelope de memorando com crachá de funcionário."
+  ],
+  [
+   "Manuais de funcionário",
+   "Cada jogador recebe um manual do funcionário de 8 páginas, com a sequência de lançamento escrita como checklist pré-voo. A Meeple Mountain diz que são as melhores ajudas de jogo do mercado, e a Board Game Quest afirma que elas ajudam a vencer a curva de aprendizado inicial."
+  ],
+  [
+   "Complexo sem punir demais",
+   "Para a Board Game Quest, que deu 4,5 de 5, o jogo é satisfatoriamente complexo sem castigar demais um planejamento imperfeito. Pela regra, uma nave que sai com cabine vazia ainda pontua nos planetas visitados. O crítico conta que uma jogadora do grupo gostou da partida apesar do peso de 3,97 no BGG."
+  ],
+  [
+   "Disponível para testar online",
+   "O Board Game Arena lançou a versão digital em 11 de novembro de 2025, com o modo solo incluído. É a forma mais barata de descobrir se o ciclo de montar e lançar naves agrada antes de importar uma caixa de US$ 119."
+  ]
  ],
  "atencao": [
-  ["Moderada", "Sem edição em português", "Não encontramos edição nacional nem venda em lojas brasileiras. O jogo é em inglês, com muito texto nas cartas de agenda e nos manuais, e o preço sugerido nos Estados Unidos é de US$ 119 antes de frete e impostos de importação. Para muitos grupos, isso pesa mais do que qualquer regra."],
-  ["Moderada", "Preparação demorada", "A Board Game Quest diz que montar a mesa, principalmente na primeira vez, é uma tarefa considerável, e a BoardMatch registra cerca de 35 minutos de preparação. A Tabletop Gaming acrescenta que o modo solo também pede bastante arrumação antes de começar."],
-  ["Moderada", "Turnos repetitivos para alguns", "A Meeple Mountain classificou o jogo como medíocre: para o crítico, os turnos parecem seguir uma lista de tarefas, e lançar uma nave devolve você ao começo do ciclo econômico, sem motor que cresça. A Tabletop Gaming também achou cada lançamento menos empolgante do que o tema promete."],
-  ["Moderada", "Iconografia densa", "A área de dias no espaço do tabuleiro de jogador está lotada de ícones, aponta a Meeple Mountain, e a Board Game Quest diz que há muita iconografia para processar antes de conhecer bem as regras. Nas primeiras partidas, espere consultar o manual a cada lançamento."],
-  ["Leve", "Longo com quatro", "A caixa fala em 90 a 150 minutos, mas a Tabletop Gaming estima de 2 a 3 horas e achou que com quatro jogadores a partida se arrasta. No fim, os turnos ficam lentos enquanto cada um calcula a melhor jogada, como nota a Meeple Mountain."],
-  ["Leve", "Final abrupto e pouca variedade", "A Board Game Quest conta que o grupo muitas vezes sentiu que o jogo acabou um pouco cedo demais, porque o terceiro ano enche rápido. A Tabletop Gaming achou as plantas de nave pouco variadas e espera que as expansões resolvam isso."]
+  [
+   "Moderada",
+   "Sem edição em português",
+   "Não encontramos edição nacional nem venda em lojas brasileiras. O jogo é em inglês, com muito texto nas cartas de agenda e nos manuais, e o preço sugerido nos Estados Unidos é de US$ 119 antes de frete e impostos de importação. Para muitos grupos, isso pesa mais do que qualquer regra."
+  ],
+  [
+   "Moderada",
+   "Preparação demorada",
+   "A Board Game Quest diz que montar a mesa, principalmente na primeira vez, é uma tarefa considerável, e a BoardMatch registra cerca de 35 minutos de preparação. A Tabletop Gaming acrescenta que o modo solo também pede bastante arrumação antes de começar."
+  ],
+  [
+   "Moderada",
+   "Turnos repetitivos para alguns",
+   "A Meeple Mountain classificou o jogo como medíocre: para o crítico, os turnos parecem seguir uma lista de tarefas, e lançar uma nave devolve você ao começo do ciclo econômico, sem motor que cresça. A Tabletop Gaming também achou cada lançamento menos empolgante do que o tema promete."
+  ],
+  [
+   "Moderada",
+   "Iconografia densa",
+   "A área de dias no espaço do tabuleiro de jogador está lotada de ícones, aponta a Meeple Mountain, e a Board Game Quest diz que há muita iconografia para processar antes de conhecer bem as regras. Nas primeiras partidas, espere consultar o manual a cada lançamento."
+  ],
+  [
+   "Leve",
+   "Longo com quatro",
+   "A caixa fala em 90 a 150 minutos, mas a Tabletop Gaming estima de 2 a 3 horas e achou que com quatro jogadores a partida se arrasta. No fim, os turnos ficam lentos enquanto cada um calcula a melhor jogada, como nota a Meeple Mountain."
+  ],
+  [
+   "Leve",
+   "Final abrupto e pouca variedade",
+   "A Board Game Quest conta que o grupo muitas vezes sentiu que o jogo acabou um pouco cedo demais, porque o terceiro ano enche rápido. A Tabletop Gaming achou as plantas de nave pouco variadas e espera que as expansões resolvam isso."
+  ]
  ],
  "para_quem": [
   "Gosta de alocação de trabalhadores pesada, na linha de Pirates of Maracaibo",
@@ -109,15 +197,51 @@
  "tagline": "Uma agência de turismo espacial em que cada engrenagem conta.",
  "consulta": "28/10/2026",
  "fontes": [
-  ["Board Game Quest – Galactic Cruise Review", "https://www.boardgamequest.com/galactic-cruise-review/", "designers, arte, regras, componentes, peso BGG, crítica, citação"],
-  ["Meeple Mountain – Galactic Cruise", "https://www.meeplemountain.com/reviews/galactic-cruise/", "jogadores, idade, duração relatada, editoras, crítica"],
-  ["Tabletop Gaming – Galactic Cruise Review", "https://www.tabletopgaming.co.uk/?p=10436", "melhor com 3, duração relatada, preço no Reino Unido, crítica"],
-  ["BoardMatch – Galactic Cruise", "https://boardmatch.app/en/game/391137", "nota, número de avaliações, peso e melhor número de jogadores do BGG; tempo de preparação"],
-  ["Board Game Oracle – Galactic Cruise", "https://boardgameoracle.com/boardgame/price/lfW4sV_m8K/galactic-cruise", "créditos, ano, jogadores, duração, idade, preços nos EUA"],
-  ["Miniature Market – Galactic Cruise", "https://www.miniaturemarket.com/galactic-cruise-kkg-gme-gc.html", "lista de componentes"],
-  ["Allplay – Galactic Cruise", "https://www.allplay.com/board-games/galactic-cruise", "preço sugerido (MSRP), Deluxe Bits, expansões"],
-  ["Board Game Arena – Galactic Cruise", "https://en.boardgamearena.com/gamepanel?game=galacticcruise", "versão digital e data de lançamento"],
-  ["Board Game Arena – ajuda de regras", "https://en.doc.boardgamearena.com/Gamehelpgalacticcruise", "regras do turno, naves, lançamento e fim de jogo"]
+  [
+   "Board Game Quest – Galactic Cruise Review",
+   "https://www.boardgamequest.com/galactic-cruise-review/",
+   "designers, arte, regras, componentes, peso BGG, crítica, citação"
+  ],
+  [
+   "Meeple Mountain – Galactic Cruise",
+   "https://www.meeplemountain.com/reviews/galactic-cruise/",
+   "jogadores, idade, duração relatada, editoras, crítica"
+  ],
+  [
+   "Tabletop Gaming – Galactic Cruise Review",
+   "https://www.tabletopgaming.co.uk/?p=10436",
+   "melhor com 3, duração relatada, preço no Reino Unido, crítica"
+  ],
+  [
+   "BoardMatch – Galactic Cruise",
+   "https://boardmatch.app/en/game/391137",
+   "nota, número de avaliações, peso e melhor número de jogadores do BGG; tempo de preparação"
+  ],
+  [
+   "Board Game Oracle – Galactic Cruise",
+   "https://boardgameoracle.com/boardgame/price/lfW4sV_m8K/galactic-cruise",
+   "créditos, ano, jogadores, duração, idade, preços nos EUA"
+  ],
+  [
+   "Miniature Market – Galactic Cruise",
+   "https://www.miniaturemarket.com/galactic-cruise-kkg-gme-gc.html",
+   "lista de componentes"
+  ],
+  [
+   "Allplay – Galactic Cruise",
+   "https://www.allplay.com/board-games/galactic-cruise",
+   "preço sugerido (MSRP), Deluxe Bits, expansões"
+  ],
+  [
+   "Board Game Arena – Galactic Cruise",
+   "https://en.boardgamearena.com/gamepanel?game=galacticcruise",
+   "versão digital e data de lançamento"
+  ],
+  [
+   "Board Game Arena – ajuda de regras",
+   "https://en.doc.boardgamearena.com/Gamehelpgalacticcruise",
+   "regras do turno, naves, lançamento e fim de jogo"
+  ]
  ],
  "roteiro": {
   "tema": "retro-futuristic 1960s space tourism, sleek cruise rockets and shuttles, planets and moons, mid-century travel-poster graphic design in the style of Ian O'Toole, teal, cream and warm orange palette, clean flat shapes",
@@ -139,18 +263,49 @@
    "idioma inglês"
   ],
   "numeros": [
-   ["NOTA BGG", "8,3/10", "7.883 avaliações"],
-   ["PESO BGG", "3,97/5", "pesado"],
-   ["MELHOR COM", "3", "enquete do BGG"],
-   ["PREÇO EUA", "US$ 119", "sugerido, sem importação"]
+   [
+    "NOTA BGG",
+    "8,3/10",
+    "7.883 avaliações"
+   ],
+   [
+    "PESO BGG",
+    "3,97/5",
+    "pesado"
+   ],
+   [
+    "MELHOR COM",
+    "3",
+    "enquete do BGG"
+   ],
+   [
+    "PREÇO EUA",
+    "US$ 119",
+    "sugerido, sem importação"
+   ]
   ],
   "como_resumo": "Coloque trabalhadores, monte a nave, encha as cabines de hóspedes e lance cruzeiros que pontuam.",
   "passos": [
-   ["COLOQUE UM TRABALHADOR", "Ponha um peão numa estação e faça duas ações. Engrenagens ligam prédios vizinhos; usar a de um rival custa até 2 moedas."],
-   ["EXPULSE SEM MEDO", "Estação ocupada não bloqueia: você manda o trabalhador rival de volta e o dono dele ganha um bônus de dinheiro."],
-   ["MONTE A NAVE", "Pegue plantas e construa segmentos, cabine e motor. Cada dois segmentos vizinhos abrigam um hóspede; nave não lançada perde 5 pontos."],
-   ["LANCE O CRUZEIRO", "Escolha piloto, embarque hóspedes e pague comida, oxigênio e combustível. Dias no espaço dão bônus; planetas viram passeios que valem pontos."],
-   ["PREENCHA O CALENDÁRIO", "Lançamentos e conquistas põem cubos numa linha de três anos. Cada terço pontua; no terceiro ano cheio, a partida termina."]
+   [
+    "COLOQUE UM TRABALHADOR",
+    "Ponha um peão numa estação e faça duas ações. Engrenagens ligam prédios vizinhos; usar a de um rival custa até 2 moedas."
+   ],
+   [
+    "EXPULSE SEM MEDO",
+    "Estação ocupada não bloqueia: você manda o trabalhador rival de volta e o dono dele ganha um bônus de dinheiro."
+   ],
+   [
+    "MONTE A NAVE",
+    "Pegue plantas e construa segmentos, cabine e motor. Cada dois segmentos vizinhos abrigam um hóspede; nave não lançada perde 5 pontos."
+   ],
+   [
+    "LANCE O CRUZEIRO",
+    "Escolha piloto, embarque hóspedes e pague comida, oxigênio e combustível. Dias no espaço dão bônus; planetas viram passeios que valem pontos."
+   ],
+   [
+    "PREENCHA O CALENDÁRIO",
+    "Lançamentos e conquistas põem cubos numa linha de três anos. Cada terço pontua; no terceiro ano cheio, a partida termina."
+   ]
   ],
   "fortes": [
    "Engrenagens deixam um trabalhador agir em vários prédios.",
@@ -187,12 +342,30 @@
    "3º DEUTSCHER SPIELE PREIS 2026"
   ],
   "perfil": [
-   ["Facilidade de ensinar", 1],
-   ["Preparação rápida", 1],
-   ["Modo solo", 3],
-   ["Produção e componentes", 5],
-   ["Interação entre jogadores", 3],
-   ["Profundidade estratégica", 4]
+   [
+    "Facilidade de ensinar",
+    1
+   ],
+   [
+    "Preparação rápida",
+    1
+   ],
+   [
+    "Modo solo",
+    3
+   ],
+   [
+    "Produção e componentes",
+    5
+   ],
+   [
+    "Interação entre jogadores",
+    3
+   ],
+   [
+    "Profundidade estratégica",
+    4
+   ]
   ],
   "extra": {
    "titulo": "PREÇO DE REFERÊNCIA",
@@ -211,10 +384,26 @@
   "fonte": "Board Game Quest (tradução livre)"
  },
  "jogadores": [
-  ["Sozinho", "Modo solo oficial com oponente automatizado e 15 cartas próprias; a Tabletop Gaming avisa que a preparação dele é trabalhosa.", 2],
-  ["2 jogadores", "Suportado pela caixa, mas as fontes consultadas não avaliam essa contagem em detalhe nem a apontam como a melhor.", 2],
-  ["3 jogadores", "O melhor número na enquete do BGG e o ponto ideal para a Tabletop Gaming, com disputa sem esperas longas.", 3],
-  ["4 jogadores", "A Tabletop Gaming achou que a partida ficou longa demais com a mesa cheia.", 1]
+  [
+   "Sozinho",
+   "Modo solo oficial com oponente automatizado e 15 cartas próprias; a Tabletop Gaming avisa que a preparação dele é trabalhosa.",
+   2
+  ],
+  [
+   "2 jogadores",
+   "Suportado pela caixa, mas as fontes consultadas não avaliam essa contagem em detalhe nem a apontam como a melhor.",
+   2
+  ],
+  [
+   "3 jogadores",
+   "O melhor número na enquete do BGG e o ponto ideal para a Tabletop Gaming, com disputa sem esperas longas.",
+   3
+  ],
+  [
+   "4 jogadores",
+   "A Tabletop Gaming achou que a partida ficou longa demais com a mesa cheia.",
+   1
+  ]
  ],
  "primeira_partida": "Reserve pelo menos meia hora para a preparação, que a BoardMatch estima em 35 minutos, e conte com uma explicação longa. O que mais confunde é a iconografia dos dias no espaço e a ordem de pagamentos do lançamento. Dica prática: entregue a cada jogador o manual do funcionário aberto na página da checklist de lançamento e faça o primeiro lançamento junto com a mesa, em voz alta. Se puder, jogue antes uma partida no Board Game Arena, que automatiza esses passos.",
  "edicao_nacional": "Não encontramos edição nacional de Galactic Cruise, nem página com nota na Ludopedia acessível às nossas ferramentas, nem venda em lojas brasileiras consultadas em 28/10/2026. O jogo é em inglês, da Kinson Key Games, também distribuído por editoras como Portal Games, Super Meeple e PD-Verlag. Como referência, o preço sugerido nos EUA é de US$ 119 na Allplay e o britânico é de £ 100, ambos sem frete e impostos de importação.",
@@ -225,8 +414,20 @@
  },
  "versoes": "Não encontramos edição deluxe separada: o que existe é o pacote de peças Deluxe Bits, vendido à parte por US$ 35 na Allplay, além de tapete, sleeves e peças de metal. Há três expansões: Advancements e Accommodations (US$ 24 cada) e Achievements (US$ 49). A versão digital está no Board Game Arena desde 11 de novembro de 2025.",
  "comparacoes": [
-  ["Dune: Imperium", "dune-imperium", "Também mistura alocação de trabalhadores com disputa por espaços, mas troca a montagem de naves por um baralho que você constrói. É mais curto, mais interativo e tem edição em português."],
-  ["Ark Nova", "ark-nova", "Outro vencedor pesado de 90 a 150 minutos, com muita iconografia e combos encadeados. Ark Nova gira em torno de cartas e de um motor que cresce; Galactic Cruise reinicia o ciclo a cada lançamento."],
-  ["Terraforming Mars", "terraforming-mars", "Para quem quer um tema espacial com economia de recursos, Terraforming Mars aposta em cartas e produção crescente em vez de trabalhadores, e tem edição nacional."]
+  [
+   "Dune: Imperium",
+   "dune-imperium",
+   "Também mistura alocação de trabalhadores com disputa por espaços, mas troca a montagem de naves por um baralho que você constrói. É mais curto, mais interativo e tem edição em português."
+  ],
+  [
+   "Ark Nova",
+   "ark-nova",
+   "Outro vencedor pesado de 90 a 150 minutos, com muita iconografia e combos encadeados. Ark Nova gira em torno de cartas e de um motor que cresce; Galactic Cruise reinicia o ciclo a cada lançamento."
+  ],
+  [
+   "Terraforming Mars",
+   "terraforming-mars",
+   "Para quem quer um tema espacial com economia de recursos, Terraforming Mars aposta em cartas e produção crescente em vez de trabalhadores, e tem edição nacional."
+  ]
  ]
 }
