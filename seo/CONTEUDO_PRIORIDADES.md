@@ -19,13 +19,13 @@ O Google corta o título em ~60 caracteres. A proposta muda **só o título que 
 
 | Nota | Hoje (caract.) | Proposta para a busca |
 |---|---|---|
-| inimigos-da-terra-media-entrega-2027 | 94 | Inimigos da Terra-Média, jogo brasileiro, fica para 2027 |
+| inimigos-da-terra-media-entrega-2027 | 94 | Inimigos da Terra-Média tem entrega prevista para 2027 |
 | lancamentos-editoras-menores-novembro | 94 | Lançamentos das editoras menores em novembro |
 | excursions-galactic-cruise-campanha-termina | 93 | Excursions, de Galactic Cruise, encerra campanha nesta sexta |
 | osprey-desmonta-equipe-destemidos-imperium | 90 | Osprey põe à venda as linhas Destemidos e Imperium |
 | devir-civolution-e-formigas-pre-venda | 88 | Devir abre pré-venda de Civolution e Formigas |
 | financiamentos-abertos-battleforge-dia-da-caca | 87 | BattleForge: Berserker e Dia da Caça no MeepleStarter |
-| dante-inferno-across-the-board | 85 | DANTE: Inferno levanta R$ 425 mil no Catarse |
+| dante-inferno-across-the-board | 85 | DANTE: Inferno levantou R$ 425 mil no Catarse |
 | speakeasy-vital-lacerda-pre-venda-mosaico | 85 | Speakeasy, de Vital Lacerda, em pré-venda pela Mosaico |
 | guia-dos-premios-2027 | 81 | Guia dos prêmios de 2027: Golden Geek, Spiel des Jahres e mais |
 | diversao-offline-2027 | 80 | Diversão Offline 2027 deve ser de 9 a 11 de julho |
