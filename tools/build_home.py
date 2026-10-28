@@ -496,7 +496,7 @@ def build_nota(n):
     leia = "".join(f'<li><a href="{pre}noticias/{o["slug"]}/">{e(o["titulo"])}</a></li>' for o in relacionadas(n))
     corpo = f"""{cabecalho(pre, "Notícias")}
 <main id="conteudo" class="in"><div class="nota">
- <a class="volta" href="{pre}">← Todas as notícias</a>
+ <a class="volta" href="{pre}noticias/">← Todas as notícias</a>
  <article class="bloco">
   <span class="cat {CAT_CLASSE.get(n['categoria'], 'mercado')}">{e(n['categoria'])}</span> <span class="selo {sc}">{e(n['selo'])}</span>
   <h1>{e(n['titulo'])}</h1>
