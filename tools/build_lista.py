@@ -45,25 +45,38 @@ def build():
     opcoes = lambda chave: sorted({x for d in todos for x in d[chave]})  # noqa: E731
     sel = lambda nome, rotulo, itens: (f'<label class="f">{rotulo}<select name="{nome}"><option value="">Todos</option>'  # noqa: E731
                                         + "".join(f'<option value="{e(v)}">{e(t)}</option>' for v, t in itens) + "</select></label>")
-    filtros = f"""<form class="filtros" id="filtros" role="search" aria-label="Filtrar resenhas" hidden>
-  <input class="busca" type="search" name="q" placeholder="Buscar jogo pelo nome" autocomplete="off" aria-label="Buscar jogo pelo nome">
-  <fieldset><legend>Jogadores</legend><div class="chips" data-campo="jogadores">{"".join(f'<button type="button" data-v="{n}">{n if n < 6 else "6+"}</button>' for n in range(1, 7))}</div>
-   <label class="ck"><input type="checkbox" name="melhor"> só onde é a melhor contagem</label></fieldset>
-  <div class="linha-f">{sel("perfil", "Melhor para", [(k, v[0]) for k, v in PERFIS.items() if any(d["melhor_para"] == k for d in todos)])}
-   <label class="f">Ordenar por<select name="ordem"><option value="">Mais recentes</option><option value="nota">Nota BGG</option><option value="leve">Mais leve</option><option value="pesado">Mais pesado</option><option value="curto">Mais curto</option><option value="preco">Menor preço</option></select></label></div>
-  <details class="mais-f" open><summary>Mais filtros: duração, complexidade, estilo, prêmio…</summary><div class="painel">
-  <fieldset><legend>Duração</legend><div class="chips" data-campo="duracao"><button type="button" data-v="30">Até 30 min</button><button type="button" data-v="60">30 a 60 min</button><button type="button" data-v="120">1 a 2 h</button><button type="button" data-v="999">Mais de 2 h</button></div></fieldset>
-  <fieldset><legend>Complexidade <small>(peso BGG)</small></legend><div class="chips" data-campo="peso"><button type="button" data-v="leve">Leve</button><button type="button" data-v="media">Média</button><button type="button" data-v="pesada">Pesada</button></div></fieldset>
-  <div class="linha-f">
-   {sel("estilo", "Estilo", [(x, x) for x in opcoes("estilos")])}
-   {sel("mecanica", "Mecânica", [(x, x) for x in opcoes("mecanicas")])}
-   {sel("premio", "Venceu o prêmio", [(x, x) for x in opcoes("premios")])}
-   {sel("idade", "Pessoa mais nova na mesa", [(str(n), f"{n} anos") for n in (8, 10, 12, 14)])}
-   {sel("preco", "Preço até", [(str(n), f"R$ {n}") for n in (150, 300, 500)])}
-   <label class="ck"><input type="checkbox" name="solo"> tem modo solo</label>
-   <label class="ck"><input type="checkbox" name="pt"> edição em português</label></div></div></details>
-  <div class="res-bar"><span id="contagem" aria-live="polite"></span><button type="reset" class="limpar">Limpar filtros</button></div>
- </form>
+    chip = lambda campo, itens: (f'<div class="chips" data-campo="{campo}">'  # noqa: E731
+                                 + "".join(f'<button type="button" data-v="{v}" aria-pressed="false">{t}</button>' for v, t in itens) + "</div>")
+    filtros = f"""<div class="barra-f" id="barra-f" hidden>
+  <button type="button" class="btn-filtro" id="abrir-f" aria-haspopup="dialog" aria-controls="dlg-f">
+   <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M7 12h10M10 18h4"/></svg><span>Filtrar resenhas</span><b class="badge" id="n-ativos" hidden></b>
+  </button>
+  <span class="resumo-f" id="resumo-f" aria-live="polite">{len(conteudos)} resenhas</span>
+  <button type="button" class="limpar" id="limpar-topo" hidden>Limpar</button>
+ </div>
+ <dialog class="folha" id="dlg-f" aria-labelledby="t-f">
+  <form class="filtros" id="filtros" role="search">
+   <header class="folha-h"><h2 id="t-f">Filtrar resenhas</h2><button type="button" class="fechar" id="fechar-f" aria-label="Fechar filtros"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></header>
+   <div class="folha-b">
+    <input class="busca" type="search" name="q" placeholder="Buscar jogo pelo nome" autocomplete="off" aria-label="Buscar jogo pelo nome">
+    <fieldset><legend>Jogadores</legend>{chip("jogadores", [(n, n if n < 6 else "6+") for n in range(1, 7)])}
+     <label class="ck"><input type="checkbox" name="melhor"> só onde é a melhor contagem</label></fieldset>
+    <fieldset><legend>Melhor para</legend>{chip("perfil", [(k, v[0]) for k, v in PERFIS.items() if any(d["melhor_para"] == k for d in todos)])}</fieldset>
+    <fieldset><legend>Duração</legend>{chip("duracao", [(30, "Até 30 min"), (60, "30 a 60 min"), (120, "1 a 2 h"), (999, "Mais de 2 h")])}</fieldset>
+    <fieldset><legend>Complexidade <small>(peso BGG)</small></legend>{chip("peso", [("leve", "Leve"), ("media", "Média"), ("pesada", "Pesada")])}</fieldset>
+    <fieldset><legend>Estilo</legend>{chip("estilo", [(x, x) for x in opcoes("estilos")])}</fieldset>
+    <div class="linha-f">
+     {sel("mecanica", "Mecânica", [(x, x) for x in opcoes("mecanicas")])}
+     {sel("premio", "Venceu o prêmio", [(x, x) for x in opcoes("premios")])}
+     {sel("idade", "Pessoa mais nova na mesa", [(str(n), f"{n} anos") for n in (8, 10, 12, 14)])}
+     {sel("preco", "Preço até", [(str(n), f"R$ {n}") for n in (150, 300, 500)])}
+    </div>
+    <div class="linha-f"><label class="ck"><input type="checkbox" name="solo"> tem modo solo</label><label class="ck"><input type="checkbox" name="pt"> edição em português</label></div>
+    <label class="f">Ordenar por<select name="ordem"><option value="">Mais recentes</option><option value="nota">Nota BGG</option><option value="leve">Mais leve</option><option value="pesado">Mais pesado</option><option value="curto">Mais curto</option><option value="preco">Menor preço</option></select></label>
+   </div>
+   <footer class="folha-p"><button type="reset" class="limpar">Limpar</button><button type="button" class="ver" id="ver-f">Ver {len(conteudos)} resenhas</button></footer>
+  </form>
+ </dialog>
  <p class="vazio" id="vazio" hidden>Nenhuma resenha com esses filtros. <button type="button" class="limpar" id="limpar2">Limpar filtros</button></p>"""
     n = len(slugs)
     return f"""<!doctype html>
@@ -131,8 +144,33 @@ h1{{font-size:clamp(2.2rem,6vw,3.4rem);line-height:1.05;font-weight:800;letter-s
 .selo{{justify-self:start;font-weight:800;font-size:.76rem;line-height:1.35;border-radius:6px;padding:3px 9px;color:#fff;background:#157a43}}
 .selo.publico{{background:#8a5200}}.selo.nao{{background:#a3223a}}
 .ress{{font-size:.8rem;font-weight:700;color:#8a5200}}
-.filtros[hidden]{{display:none}}
-.filtros{{display:grid;gap:14px;margin:0 0 20px;padding:16px;border:1px solid var(--line);border-radius:12px;background:#0f1115}}
+.barra-f[hidden]{{display:none}}
+.barra-f{{position:sticky;top:0;z-index:5;display:flex;align-items:center;gap:14px;margin:0 -16px 16px;padding:10px 16px;background:rgba(0,0,0,.86);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}}
+.btn-filtro{{position:relative;display:inline-flex;align-items:center;gap:10px;min-height:46px;padding:10px 20px 10px 16px;border:0;border-radius:999px;font:inherit;font-weight:800;font-size:1rem;color:#14100a;cursor:pointer;
+ background:linear-gradient(180deg,#f3cd6a 0%,#e3b23c 55%,#c9962a 100%);box-shadow:0 1px 0 rgba(255,255,255,.45) inset,0 6px 18px rgba(227,178,60,.22);transition:transform .18s cubic-bezier(.16,1,.3,1),box-shadow .18s ease}}
+.btn-filtro .ic{{width:20px;height:20px;stroke-width:2.4}}
+.btn-filtro:hover{{transform:translateY(-1px);box-shadow:0 1px 0 rgba(255,255,255,.45) inset,0 10px 24px rgba(227,178,60,.32)}}
+.btn-filtro:active{{transform:scale(.97)}}
+.badge{{min-width:24px;height:24px;padding:0 7px;border-radius:999px;background:#14100a;color:var(--gold);font-size:.8rem;display:grid;place-items:center;font-variant-numeric:tabular-nums}}
+.badge[hidden]{{display:none}}
+.resumo-f{{color:var(--muted);font-weight:700;font-size:.92rem;font-variant-numeric:tabular-nums}}
+.barra-f .limpar{{margin-left:auto}}
+.folha{{border:0;padding:0;color:var(--ink);background:#0f1115;max-width:none;max-height:none;margin:0;inset:auto 0 0 0;width:100%;height:auto;max-height:88dvh;border-radius:18px 18px 0 0;box-shadow:0 -10px 40px rgba(0,0,0,.6)}}
+.folha::backdrop{{background:rgba(0,0,0,.62)}}
+.folha[open]{{animation:sobe .32s cubic-bezier(.16,1,.3,1)}}.folha[open]::backdrop{{animation:esmaece .32s ease}}
+@keyframes sobe{{from{{transform:translateY(100%)}}to{{transform:none}}}}@keyframes lateral{{from{{transform:translateX(100%)}}to{{transform:none}}}}@keyframes esmaece{{from{{opacity:0}}to{{opacity:1}}}}
+@media (min-width:760px){{.folha{{inset:0 0 0 auto;width:440px;height:100dvh;max-height:none;border-radius:18px 0 0 18px;box-shadow:-10px 0 40px rgba(0,0,0,.6)}}.folha[open]{{animation-name:lateral}}}}
+@media (prefers-reduced-motion:reduce){{.folha[open],.folha[open]::backdrop{{animation:none}}.btn-filtro{{transition:none}}}}
+.filtros{{display:flex;flex-direction:column;height:100%;max-height:inherit}}
+.folha-h{{display:flex;align-items:center;justify-content:space-between;padding:16px 18px 12px;border-bottom:1px solid var(--line)}}
+.folha-h h2{{font-size:1.15rem;font-weight:800}}
+.folha-h::before{{content:"";position:absolute;left:50%;top:7px;width:40px;height:4px;border-radius:4px;background:#3a3f48;transform:translateX(-50%)}}
+@media (min-width:760px){{.folha-h::before{{display:none}}}}
+.fechar{{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;border:1px solid #3a3f48;background:none;color:var(--ink);cursor:pointer}}.fechar:hover{{border-color:var(--gold)}}
+.folha-b{{flex:1;overflow-y:auto;overscroll-behavior:contain;padding:16px 18px;display:grid;gap:16px;align-content:start}}
+.folha-p{{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 18px calc(12px + env(safe-area-inset-bottom,0px));border-top:1px solid var(--line);background:#0f1115}}
+.ver{{flex:1;max-width:260px;min-height:48px;border:0;border-radius:999px;font:inherit;font-weight:800;color:#14100a;cursor:pointer;background:linear-gradient(180deg,#f3cd6a,#e3b23c 55%,#c9962a);font-variant-numeric:tabular-nums}}
+.ver:active{{transform:scale(.98)}}
 .filtros fieldset{{border:0;margin:0;padding:0;display:grid;gap:8px}}
 .filtros legend{{font-size:.78rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);padding:0;margin-bottom:8px}}
 .filtros legend small{{text-transform:none;letter-spacing:0;font-weight:600}}
@@ -142,14 +180,10 @@ h1{{font-size:clamp(2.2rem,6vw,3.4rem);line-height:1.05;font-weight:800;letter-s
 .chips button{{font:inherit;font-size:.92rem;font-weight:700;min-height:40px;padding:6px 14px;border-radius:999px;border:1px solid #3a3f48;background:transparent;color:var(--ink);cursor:pointer;transition:background-color .15s ease,border-color .15s ease}}
 .chips button:hover{{border-color:var(--gold)}}
 .chips button[aria-pressed="true"]{{background:var(--gold);border-color:var(--gold);color:#000}}
-.linha-f{{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px 14px;align-items:end}}
+.linha-f{{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px 14px;align-items:end}}
 .f{{display:grid;gap:6px;font-size:.78rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}}
 .f select{{font:inherit;font-size:.95rem;font-weight:600;letter-spacing:0;text-transform:none;min-height:42px;padding:8px 10px;border-radius:8px;border:1px solid #3a3f48;background:#000;color:var(--ink)}}
 .ck{{display:flex;align-items:center;gap:8px;font-size:.92rem;color:#c9cfd8;min-height:40px}}.ck input{{width:18px;height:18px;accent-color:var(--gold)}}
-.mais-f summary{{cursor:pointer;font-weight:700;color:var(--gold);min-height:40px;display:flex;align-items:center}}
-.mais-f[open] summary{{margin-bottom:10px}}.painel{{display:grid;gap:14px}}
-.res-bar{{display:flex;justify-content:space-between;align-items:center;gap:12px;border-top:1px solid var(--line);padding-top:12px}}
-#contagem{{font-weight:800}}
 .limpar{{font:inherit;font-weight:700;color:var(--gold);background:none;border:0;cursor:pointer;padding:8px 0;text-decoration:underline;text-underline-offset:3px}}
 .vazio{{padding:24px;border:1px dashed #3a3f48;border-radius:12px;text-align:center;color:#c9cfd8;margin-bottom:24px}}
 .grid li[hidden]{{display:none}}
@@ -190,8 +224,10 @@ footer .in{{display:flex;flex-wrap:wrap;gap:10px 20px;padding-top:18px;padding-b
 </div></footer>
 <script>
 (() => {{
-  const form = document.getElementById("filtros"), lista = document.getElementById("lista");
+  const form = document.getElementById("filtros"), lista = document.getElementById("lista"), dlg = document.getElementById("dlg-f");
+  if (!dlg.showModal) return;  // navegador sem <dialog>: fica a lista completa
   const itens = [...lista.children].map((li, i) => ({{li, i, d: JSON.parse(li.dataset.f)}}));
+  const total = itens.length, $ = id => document.getElementById(id);
   const norm = t => t.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
   const chips = {{}};
   const ler = () => {{
@@ -236,41 +272,50 @@ footer .in{{display:flex;flex-wrap:wrap;gap:10px 20px;padding-top:18px;padding-b
     let n = 0;
     itens.forEach(x => {{ const ok = passa(x.d, v); x.li.hidden = !ok; n += ok; }});
     [...itens].sort(ORDEM[v.ordem] || ((a, b) => a.i - b.i)).forEach(x => lista.append(x.li));
-    document.getElementById("contagem").textContent = n + (n === 1 ? " resenha" : " resenhas");
-    document.getElementById("vazio").hidden = n > 0;
+    const ativos = Object.entries(v).filter(([k, x]) => x && k !== "ordem" && !(k === "melhor" && !v.jogadores)).length;
+    $("n-ativos").hidden = !ativos; $("n-ativos").textContent = ativos;
+    $("abrir-f").setAttribute("aria-label", ativos ? `Filtrar resenhas, ${{ativos}} filtro${{ativos > 1 ? "s" : ""}} ativo${{ativos > 1 ? "s" : ""}}` : "Filtrar resenhas");
+    $("resumo-f").textContent = ativos ? `${{n}} de ${{total}} resenhas` : `${{total}} resenhas`;
+    $("limpar-topo").hidden = !ativos && !v.ordem;
+    $("ver-f").textContent = n ? `Ver ${{n}} resenha${{n === 1 ? "" : "s"}}` : "Nenhuma resenha";
+    $("ver-f").disabled = !n;
+    $("vazio").hidden = n > 0;
     if (gravar) {{
       const q = new URLSearchParams(Object.entries(v).filter(([, x]) => x));
       history.replaceState(null, "", q.toString() ? "?" + q : location.pathname);
     }}
   }};
+  const marcar = (g, val) => g.querySelectorAll("button").forEach(b => b.setAttribute("aria-pressed", b.dataset.v === val));
   form.querySelectorAll(".chips").forEach(g => g.addEventListener("click", ev => {{
     const b = ev.target.closest("button"); if (!b) return;
     chips[g.dataset.campo] = chips[g.dataset.campo] === b.dataset.v ? "" : b.dataset.v;
-    g.querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed", x.dataset.v === chips[g.dataset.campo]));
+    marcar(g, chips[g.dataset.campo]);
     aplicar();
   }}));
   form.addEventListener("input", () => aplicar());
-  form.addEventListener("submit", ev => ev.preventDefault());
-  // o reset nativo limpa campos e caixas; depois zera os botões e reaplica
+  form.addEventListener("submit", ev => {{ ev.preventDefault(); fechar(); }});
   form.addEventListener("reset", () => setTimeout(() => {{
     Object.keys(chips).forEach(k => chips[k] = "");
-    form.querySelectorAll(".chips button").forEach(b => b.setAttribute("aria-pressed", "false"));
+    form.querySelectorAll(".chips").forEach(g => marcar(g, ""));
     aplicar();
   }}));
-  document.getElementById("limpar2").addEventListener("click", () => form.reset());
+  const limpar = () => form.reset();
+  $("limpar-topo").addEventListener("click", limpar);
+  $("limpar2").addEventListener("click", limpar);
+  // abrir e fechar a gaveta
+  const fechar = () => {{ dlg.close(); }};
+  $("abrir-f").addEventListener("click", () => dlg.showModal());
+  $("fechar-f").addEventListener("click", fechar);
+  $("ver-f").addEventListener("click", () => {{ fechar(); $("barra-f").scrollIntoView({{block: "start"}}); }});
+  dlg.addEventListener("click", ev => {{ if (ev.target === dlg) fechar(); }});  // toque fora da gaveta
   // filtros vindos do endereço (link compartilhado)
-  const url = new URLSearchParams(location.search);
-  let abrir = !matchMedia("(max-width: 699px)").matches;  // no celular, "Mais filtros" começa fechado
-  url.forEach((val, k) => {{
+  new URLSearchParams(location.search).forEach((val, k) => {{
     const g = form.querySelector(`.chips[data-campo="${{k}}"]`);
-    if (!["q", "jogadores", "melhor", "perfil", "ordem"].includes(k)) abrir = true;
-    if (g) {{ chips[k] = val; g.querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed", x.dataset.v === val)); return; }}
+    if (g) {{ chips[k] = val; marcar(g, val); return; }}
     const el = form.elements[k]; if (!el) return;
     if (el.type === "checkbox") el.checked = true; else el.value = val;
   }});
-  form.querySelector(".mais-f").open = abrir;
-  form.querySelectorAll(".chips button").forEach(b => b.hasAttribute("aria-pressed") || b.setAttribute("aria-pressed", "false"));
-  form.hidden = false;
+  $("barra-f").hidden = false;
   aplicar(false);
 }})();
 </script>
