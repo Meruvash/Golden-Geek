@@ -528,7 +528,7 @@ def build(c):
 <style>
 @font-face{{font-family:"Public Sans";src:url(../fontes/public-sans.woff2) format("woff2");font-weight:400 800;font-style:normal;font-display:swap}}
 @font-face{{font-family:"Public Sans";src:url(../fontes/public-sans-italic.woff2) format("woff2");font-weight:400;font-style:italic;font-display:swap}}
-:root{{color-scheme:dark;--bar:#000;--bar-ink:#e9ecf1;--gold:#e3b23c;--ground:#000;--panel:#0f1115;--panel2:#171a20;--ink:#eceff3;--muted:#a1a9b5;--line:#262a32;--link:#8cb8ff;--ok:#157a43;--ok-ink:#5fd18f;--no:#c43a52;--no-ink:#ff8094;--warn:#b06a00;--warn-ink:#ffb547;--n9:#1d7d48;--n7:#2366a8;--n6:#6b4ea3;--n5:#b23a48}}
+:root{{color-scheme:dark;--bar:#000;--bar-ink:#e9ecf1;--gold:#e3b23c;--ground:#000;--panel:#0f1115;--panel2:#171a20;--ink:#eceff3;--muted:#a1a9b5;--line:#262a32;--link:#8cb8ff;--ok:#157a43;--ok-ink:#5fd18f;--no:#c43a52;--no-ink:#ff8094;--warn:#8a5200;--warn-ink:#ffb547;--n9:#1d7d48;--n7:#2366a8;--n6:#6b4ea3;--n5:#b23a48}}
 *{{box-sizing:border-box}}
 html{{-webkit-text-size-adjust:100%;scroll-padding-top:64px}}
 body{{margin:0;background:var(--ground);color:var(--ink);font:16px/1.6 "Public Sans",system-ui,sans-serif}}
@@ -642,7 +642,7 @@ footer{{background:var(--bar);color:var(--bar-ink);font-size:.88rem;border-top:1
 .comunidade p{{max-width:62ch;color:#c9cfd8}}.comunidade .acoes{{display:flex;flex-wrap:wrap;gap:12px;align-items:center}}
 .ig-btn{{display:flex;align-items:center;gap:8px;margin-top:16px;padding:14px 18px;border-radius:10px;border:1px solid #3a3f48;color:var(--ink);text-decoration:none;font-weight:700}}
 .ig-btn:hover{{border-color:var(--gold);color:var(--gold)}}
-.post{{display:flex;gap:10px;margin-top:12px}}
+.post{{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}}
 .post-btn{{flex:1 1 auto;white-space:nowrap;display:flex;align-items:center;justify-content:center;gap:7px;min-height:46px;padding:10px 12px;border-radius:10px;border:1px solid #3a3f48;background:var(--panel2);color:var(--ink);font:inherit;font-weight:700;cursor:pointer;touch-action:manipulation;transition:border-color .2s ease,transform .15s ease}}
 .post-btn:hover{{border-color:var(--gold)}}.post-btn:active{{transform:scale(.97)}}
 .post-st:empty,.leg-st:empty{{display:none}}.post-st,.leg-st{{font-size:.88rem;color:var(--ok-ink);margin-top:8px}}
@@ -676,7 +676,7 @@ details.mais{{margin-top:6px;border-top:1px solid #dde1e7;padding-top:10px}}
 details.mais summary{{cursor:pointer;font-weight:700;color:#1f5fae;list-style:none}}details.mais summary::-webkit-details-marker{{display:none}}
 details.mais summary::after{{content:" ▾";content:" ▾" / ""}}details.mais[open] summary::after{{content:" ▴";content:" ▴" / ""}}details.mais[open] .leitura{{margin-top:10px}}
 .fontes details.mais{{border:0;margin:0;padding:0}}.fontes summary h2{{display:inline;margin:0}}
-.faixa{{background:#0b0d10;border:1px solid #262a32;border-left:4px solid var(--acc)}}.faixa .leitura p{{color:#c9cfd8}}
+.faixa{{background:#0b0d10;border:1px solid #262a32;border-left:4px solid var(--acc)}}.faixa details.mais{{border-top-color:#262a32}}.faixa details.mais summary{{color:var(--link)}}.faixa .leitura p{{color:#c9cfd8}}
 .cit{{margin:0 0 16px;padding:0}}.cit p{{font-size:clamp(1.4rem,4.5vw,1.9rem);line-height:1.2;font-weight:800;color:#fff;letter-spacing:-.01em}}
 .cit cite{{display:block;margin-top:6px;font-style:normal;font-size:.85rem;color:var(--gold)}}
 .pc2{{display:grid;gap:20px}}.pc2 ul{{display:grid;gap:10px}}
@@ -717,10 +717,11 @@ a.cc:hover{{border-color:var(--acc)}}.cc img,.cc-ph{{width:72px;height:72px;bord
 .progresso{{position:fixed;top:0;left:0;right:0;height:3px;z-index:20;pointer-events:none}}.progresso i{{display:block;height:100%;width:0;background:var(--gold)}}
 .voltar-topo{{position:fixed;right:14px;bottom:14px;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:#14171c;color:#fff;border:1px solid #3a3f48;opacity:0;pointer-events:none;transition:opacity .2s ease;z-index:20}}
 .voltar-topo.on{{opacity:1;pointer-events:auto}}
-.tiles{{grid-template-columns:repeat(3,1fr)}}.tiles li{{padding:10px 8px;text-align:center}}.tiles .pontos{{display:flex;justify-content:center;margin:6px 0 2px}}.tiles .nv{{display:block;margin:0}}.tiles p{{display:none}}
+.tiles{{grid-template-columns:repeat(3,minmax(0,1fr))}}.tiles li{{padding:10px 8px;text-align:center}}.tiles .pontos{{display:flex;justify-content:center;margin:6px 0 2px}}.tiles .nv{{display:block;margin:0}}.tiles p{{display:none}}
 .tiles-txt{{margin-top:10px}}.tiles-txt li{{font-size:.9rem;color:#3a414c;margin:6px 0}}
 @media (min-width:860px){{.r30-grid,.pc2{{grid-template-columns:1fr 1fr}}.cards{{display:grid;overflow:visible}}.cards li{{padding:0}}}}
 @media (max-width:859px){{.v2 #premios{{order:0}}}}
+@media (max-width:359px){{.tiles{{grid-template-columns:repeat(2,minmax(0,1fr))}}}}
 @media (prefers-reduced-motion:reduce){{.voltar-topo{{transition:none}}}}
 footer .in{{max-width:1120px;margin:0 auto;padding:18px 16px;display:flex;flex-wrap:wrap;gap:10px 20px}}
 footer a{{color:var(--bar-ink)}}
