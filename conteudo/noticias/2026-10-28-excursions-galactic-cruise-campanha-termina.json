@@ -97,7 +97,12 @@
   "origem": "https://images.squarespace-cdn.com/content/v1/63be3bbedccfd7204863dacc/ea63f1a1-00e4-4360-8e23-82a0c5b98c4d/Screenshot+2026-10-22+at+12.24.30%E2%80%AFAM.png",
   "pagina": "https://www.kinsonkeygames.com/kinson-key-games-unlocked/excursions-development-diaries-4-6"
  },
- "jogos": [],
+ "jogos": [
+  {
+   "nome": "Galactic Cruise",
+   "resenha": "galactic-cruise"
+  }
+ ],
  "ids_ludopedia": [],
  "crivo": {
   "pontos": 7,

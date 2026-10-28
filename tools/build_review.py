@@ -839,4 +839,4 @@ if __name__ == "__main__":
         out.write_text(build(c), encoding="utf-8")
         print("ok", out.relative_to(ROOT))
     import build_sitemap
-    print("ok sitemap.xml (%d URLs), sitemap-noticias.xml (%d), robots.txt" % build_sitemap.build()[:2])
+    print("ok sitemap.xml (%d URLs), sitemap-noticias.xml (%d), robots.txt" % build_sitemap.atualizar()[:2])

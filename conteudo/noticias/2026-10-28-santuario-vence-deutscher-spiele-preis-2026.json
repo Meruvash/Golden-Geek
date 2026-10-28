@@ -52,12 +52,20 @@
  },
  "jogos": [
   {
+   "nome": "Santuário",
+   "resenha": "santuario"
+  },
+  {
    "nome": "Ark Nova",
    "resenha": "ark-nova"
   },
   {
    "nome": "Wingspan",
    "resenha": "wingspan"
+  },
+  {
+   "nome": "Galactic Cruise",
+   "resenha": "galactic-cruise"
   }
  ],
  "crivo": {

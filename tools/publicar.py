@@ -66,4 +66,4 @@ if __name__ == "__main__":
     except SystemExit as e:
         print(f"⚠️ página inicial NÃO regerada: {e}. Corrija e rode python3 tools/build_home.py")
     import build_sitemap
-    print("ok sitemap.xml (%d URLs), sitemap-noticias.xml (%d), robots.txt" % build_sitemap.build()[:2])
+    print("ok sitemap.xml (%d URLs), sitemap-noticias.xml (%d), robots.txt" % build_sitemap.atualizar()[:2])

@@ -120,7 +120,7 @@ def indexavel(url, html_arq):
 def build():
     estado = json.loads(ESTADO.read_text(encoding="utf-8")) if ESTADO.exists() else {}
     hoje = agora()
-    novo, entradas, fora = {}, [], []
+    novo, entradas, fora, mudaram = {}, [], [], []
     for tipo, url, arq, ass, inicial in fontes():
         if not indexavel(url, arq):
             fora.append(url)
@@ -131,6 +131,8 @@ def build():
         else:
             # primeira vez: data real de publicação; depois, a hora em que o conteúdo mudou
             lastmod = inicial if not antes else hoje.isoformat()
+            if antes:
+                mudaram.append(url)
         novo[url] = {"hash": ass, "lastmod": lastmod}
         entradas.append((tipo, url, lastmod))
 
@@ -165,11 +167,31 @@ def build():
                                                'xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">\n' + noticias + "</urlset>\n", encoding="utf-8")
     (ROOT / "robots.txt").write_text(ROBOTS, encoding="utf-8")
     ESTADO.write_text(json.dumps(novo, ensure_ascii=False, indent=1, sort_keys=True) + "\n", encoding="utf-8")
-    return len(entradas), len(recentes), fora
+    return len(entradas), len(recentes), fora, mudaram
+
+
+def atualizar():
+    """build() e, em seguida, regera as notícias e resenhas cujo conteúdo mudou nesta rodada, para o
+    dateModified do JSON-LD sair já com a data nova (a página foi gerada antes do registro ser atualizado)."""
+    total, recentes, fora, mudaram = build()
+    if mudaram:
+        import build_home
+        import build_review
+        for url in mudaram:
+            slug = url.rstrip("/").split("/")[-1]
+            if "/noticias/" in url:
+                for p in (ROOT / "conteudo" / "noticias").glob(f"*{slug}.json"):
+                    n = json.loads(p.read_text(encoding="utf-8"))
+                    if n["slug"] == slug:
+                        build_home.build_nota(n)
+            elif (ROOT / "conteudo" / f"{slug}.json").exists():
+                c = json.loads((ROOT / "conteudo" / f"{slug}.json").read_text(encoding="utf-8"))
+                (ROOT / slug / "index.html").write_text(build_review.build(c), encoding="utf-8")
+    return total, recentes, fora, mudaram
 
 
 if __name__ == "__main__":
-    total, recentes, fora = build()
+    total, recentes, fora, _ = atualizar()
     print(f"ok sitemap.xml ({total} URLs), sitemap-noticias.xml ({recentes} das últimas 48 h), robots.txt")
     for u in fora:
         print("  fora do sitemap (sem página, canonical diferente ou noindex):", u)

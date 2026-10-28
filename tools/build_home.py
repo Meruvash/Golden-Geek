@@ -518,4 +518,4 @@ if __name__ == "__main__":
     import build_consulta
     print("ok consulta/index.html:", build_consulta.build())
     import build_sitemap
-    print("ok sitemap.xml (%d URLs), sitemap-noticias.xml (%d), robots.txt" % build_sitemap.build()[:2])
+    print("ok sitemap.xml (%d URLs), sitemap-noticias.xml (%d), robots.txt" % build_sitemap.atualizar()[:2])
