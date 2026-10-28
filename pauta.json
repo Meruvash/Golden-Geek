@@ -1346,9 +1346,14 @@
      "fonte": "https://eliteboardgamers.com.br/"
     }
    ],
-   "status": "em_producao",
+   "status": "sem_fotos",
    "prioridade": 23,
-   "premios_distintos": 2
+   "premios_distintos": 2,
+   "fotos": {
+    "verificado_em": "2026-10-28",
+    "obs": "FFG, Asmodee UK, Commons: só caixa, arte e componentes em fundo branco; Galápagos bloqueia robôs. Pedir kit de imprensa."
+   },
+   "slug": "arkham-horror-lcg"
   },
   {
    "jogo": "7 Wonders Duel",
@@ -1397,9 +1402,14 @@
      "fonte": "https://eliteboardgamers.com.br/"
     }
    ],
-   "status": "em_producao",
+   "status": "sem_fotos",
    "prioridade": 24,
-   "premios_distintos": 2
+   "premios_distintos": 2,
+   "fotos": {
+    "verificado_em": "2026-10-28",
+    "obs": "Repos, Asmodee UK, Spiel des Jahres, Commons: só caixa, arte e componentes em fundo branco; Galápagos bloqueia robôs. Pedir kit (info@rprod.com)."
+   },
+   "slug": "7-wonders-duel"
   },
   {
    "jogo": "Galactic Cruise",

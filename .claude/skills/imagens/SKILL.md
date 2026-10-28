@@ -17,7 +17,7 @@ Ferramenta: `tools/imagens/robo.py`. Receitas por editora: `tools/imagens/editor
 
 ## Ordem das fontes
 
-Numa resenha, a busca só termina quando o `crivo.py --aplicar` diz **PUBLICA**: a página nova abre com foto oficial do jogo no topo e põe o infográfico no meio (modelo: `fate-of-the-fellowship/`). Caixa sozinha ou foto de catálogo em fundo branco não bastam; se a fonte da vez só tiver isso, passe para a próxima da lista (Santuário: a Feuerland só tinha catálogo, e a foto de topo veio da Capstone, a editora licenciada nos EUA).
+Numa resenha, as fotos vêm **antes** do texto (etapa 1 da skill `resenha`): jogo novo começa com `robo.py triagem <slug> --jogo ... --editora ...`, e quem não tiver foto boa sai da fila com `tools/fila_fotos.py sem-fotos`. A busca só termina quando o `crivo.py --aplicar` diz **PUBLICA**: a página nova abre com foto oficial do jogo no topo e põe o infográfico no meio (modelo: `fate-of-the-fellowship/`). Caixa sozinha ou foto de catálogo em fundo branco não bastam; se a fonte da vez só tiver isso, passe para a próxima da lista (Santuário: a Feuerland só tinha catálogo, e a foto de topo veio da Capstone, a editora licenciada nos EUA).
 
 1. **Editora original**: site e kit de imprensa.
 2. **Editoras licenciadas em outros países**: mesma arte e mesmas fotos, vindas da editora original (ex.: The Mind pela Pandasaurus nos EUA, Detective pela Pegasus na Alemanha). Mapeie a licenciada, fixe a página em `paginas` e aprove com `--nota "edição dos EUA"`. Ache as licenciadas na página do jogo no site do Spiel des Jahres (lista a editora alemã) ou pela busca na web.

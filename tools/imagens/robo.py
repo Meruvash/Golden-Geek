@@ -2,6 +2,8 @@
 
 Uso:
   python3 tools/imagens/robo.py mapear <dominio> [--nome "Editora"]   mapeia o site e grava a receita em editoras.json
+  python3 tools/imagens/robo.py triagem <slug> --jogo "Nome" --editora "Editora original" [--nacional "Editora BR"]
+                                       ficha mínima em triagem/<slug>.json para buscar fotos antes de escrever a resenha
   python3 tools/imagens/robo.py buscar <slug> [--url URL] [--editora DOMINIO]
                                        acha a página do jogo, baixa as candidatas e monta a folha de contato
   python3 tools/imagens/robo.py aprovar <slug> capa=3 mesa=5,7 jogabilidade=2 componentes=9 [--forcar] [--nota "2ª edição"]
@@ -624,9 +626,21 @@ def juntar_candidatas(slug, novas):
 
 def conteudo(slug):
     f = ROOT / "conteudo" / f"{slug}.json"
+    if not f.exists():  # triagem de fotos: o jogo ainda não tem resenha, só nome e editoras
+        f = ROOT / "triagem" / f"{slug}.json"
     if not f.exists():
-        sys.exit(f"Não achei {f.relative_to(ROOT)}")
+        sys.exit(f"Não achei conteudo/{slug}.json nem triagem/{slug}.json (crie com `triagem`)")
     return json.loads(f.read_text(encoding="utf-8"))
+
+
+def triagem(slug, jogo, editora, nacional=None):
+    """Ficha mínima para buscar fotos antes de escrever a resenha (etapa 1 da skill resenha)."""
+    ficha = [["Editora original", editora]] + ([["Editora no Brasil", nacional]] if nacional else [])
+    f = ROOT / "triagem" / f"{slug}.json"
+    f.parent.mkdir(exist_ok=True)
+    f.write_text(json.dumps({"slug": slug, "jogo": jogo, "ficha": ficha}, ensure_ascii=False, indent=1) + "\n",
+                 encoding="utf-8")
+    return f
 
 
 def paginas_oficiais(c, todas):
@@ -827,7 +841,7 @@ def main():
         sys.exit(__doc__)
     cmd, resto = args[0], args[1:]
     opc = {}
-    for flag in ("--nome", "--url", "--editora", "--nota"):
+    for flag in ("--nome", "--url", "--editora", "--nota", "--jogo", "--nacional"):
         if flag in resto:
             i = resto.index(flag)
             opc[flag] = resto[i + 1]
@@ -848,6 +862,10 @@ def main():
             todas[chave] = rec
             print(json.dumps({chave: rec}, ensure_ascii=False, indent=1))
         gravar_receitas(todas)
+    elif cmd == "triagem":
+        if not (opc.get("--jogo") and opc.get("--editora")):
+            sys.exit('Uso: triagem <slug> --jogo "Nome" --editora "Editora original" [--nacional "Editora no Brasil"]')
+        print(triagem(resto[0], opc["--jogo"], opc["--editora"], opc.get("--nacional")).relative_to(ROOT))
     elif cmd == "buscar":
         rel = buscar(cli, resto[0], opc.get("--url"), opc.get("--editora"))
         print(json.dumps(rel, ensure_ascii=False, indent=1))
