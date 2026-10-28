@@ -449,6 +449,9 @@ def build(c):
 <meta http-equiv="Expires" content="0">
 <title>{e(c["jogo"])}: resenha | Elite Boardgamers</title>
 <meta name="description" content="{e(c["descricao"])}">
+<link rel="canonical" href="{SITE}/{slug}/">
+<meta property="og:site_name" content="Elite Boardgamers">
+<meta property="og:locale" content="pt_BR">
 <meta property="og:title" content="{e(c["og_titulo"])}">
 <meta property="og:description" content="{e(c["descricao"])}">
 <meta property="og:type" content="article">
@@ -456,6 +459,7 @@ def build(c):
 <meta property="og:image" content="{SITE}/{slug}/capa.jpg{versao_capa}">
 <meta property="og:image:width" content="800">
 <meta property="og:image:height" content="800">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#000000">
 <link rel="icon" href="../favicon.svg" type="image/svg+xml">
 <link rel="preload" href="../fontes/public-sans.woff2" as="font" type="font/woff2" crossorigin>

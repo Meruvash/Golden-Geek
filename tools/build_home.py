@@ -14,6 +14,7 @@ from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+from PIL import Image  # noqa: E402
 from build_review import INSTAGRAM, ROOT, SITE, WHATSAPP, e, icone, versao  # noqa: E402
 from noticias.checar_noticia import problemas  # noqa: E402
 
@@ -116,7 +117,7 @@ h1,h2,h3,p,ul,ol,figure{margin:0}ul,ol{padding:0;list-style:none}img{display:blo
  .manchete{grid-area:manchete}.ultimas{grid-area:ultimas}.brasil{grid-area:brasil}.financ{grid-area:financ}.resenhas{grid-area:resenhas}.comunidade{grid-area:comunidade}
 }
 .bloco{background:var(--paper);color:var(--paper-ink);border-radius:10px;padding:16px;min-width:0}
-.bloco>h2{display:flex;align-items:baseline;justify-content:space-between;gap:10px;font-size:.8rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--paper-muted);margin-bottom:12px;padding-bottom:8px;border-bottom:2px solid var(--paper-ink)}
+.bloco>h2,.bloco>.h-sec{display:flex;align-items:baseline;justify-content:space-between;gap:10px;font-size:.8rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--paper-muted);margin-bottom:12px;padding-bottom:8px;border-bottom:2px solid var(--paper-ink)}
 .bloco>h2 a{font-size:.8rem;letter-spacing:0;text-transform:none;color:var(--link);font-weight:700;text-decoration:none}
 .bloco>h2 a:hover{text-decoration:underline}
 .cat{display:inline-block;font-size:.72rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;border-radius:4px;padding:2px 7px}
@@ -194,7 +195,8 @@ footer .in{display:flex;flex-wrap:wrap;gap:10px 20px;padding-top:18px;padding-bo
 .nota .corpo{display:grid;gap:12px;color:#3a414c;max-width:66ch}
 .nota figure img{width:100%%;max-height:420px;object-fit:contain;background:#e6e9ee;border-radius:8px}
 .nota figcaption{margin-top:6px}
-.nota h2{font-size:.8rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--paper-muted);margin-bottom:8px}
+.nota h2,.nota .h-sec{font-size:.8rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--paper-muted);margin-bottom:8px}
+.nota .h-sec{margin:0 0 8px;line-height:inherit;text-wrap:wrap}
 .nota .fontes li{margin:6px 0;font-size:.92rem}.nota .fontes a{color:var(--link)}.nota .fontes span{color:var(--paper-muted);font-size:.82rem}
 .nota .jogos{display:flex;flex-wrap:wrap;gap:8px}.nota .jogos a{display:inline-block;padding:6px 10px;border-radius:6px;background:#e6e9ee;text-decoration:none;font-weight:700;font-size:.9rem}
 .nota .crivo{font-size:.85rem;color:var(--paper-muted)}.nota .crivo b{color:var(--paper-ink)}
@@ -258,7 +260,7 @@ def rodape(pre):
 </div></footer>"""
 
 
-def pagina(titulo, descricao, url, imagem, pre, corpo):
+def pagina(titulo, descricao, url, imagem, pre, corpo, tipo="website", head_extra=""):
     return f"""<!doctype html>
 <html lang="pt-BR">
 <head>
@@ -266,11 +268,15 @@ def pagina(titulo, descricao, url, imagem, pre, corpo):
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>{e(titulo)}</title>
 <meta name="description" content="{e(descricao)}">
+<link rel="canonical" href="{url}">
+<meta property="og:site_name" content="Elite Boardgamers">
+<meta property="og:locale" content="pt_BR">
 <meta property="og:title" content="{e(titulo)}">
 <meta property="og:description" content="{e(descricao)}">
-<meta property="og:type" content="website">
+<meta property="og:type" content="{tipo}">
 <meta property="og:url" content="{url}">
 <meta property="og:image" content="{imagem}">
+<meta name="twitter:card" content="summary_large_image">{head_extra}
 <meta name="theme-color" content="#000000">
 <link rel="icon" href="{pre}favicon.svg" type="image/svg+xml">
 <link rel="preload" href="{pre}fontes/public-sans.woff2" as="font" type="font/woff2" crossorigin>
@@ -294,8 +300,10 @@ def build_home():
     # manchete: a mais recente aprovada; a proposta da rotina diária espera "manchete_aprovada": true
     m = max((n for n in ns if n.get("manchete") and n.get("manchete_aprovada", True)), key=lambda n: n["data"])
     resto = [n for n in ns if n is not m]
+    with Image.open(ROOT / "noticias" / m["imagem"]["arquivo"]) as im:
+        lw, lh = im.size
     manchete = f"""<article class="bloco manchete"><a href="noticias/{m['slug']}/">
-  <figure><img src="{img_nota(m, pre)}" width="941" height="1000" alt="{e(m['titulo'])}" fetchpriority="high"></figure>
+  <figure><img src="{img_nota(m, pre)}" width="{lw}" height="{lh}" alt="{e(m['titulo'])}" fetchpriority="high"></figure>
   <div class="txt"><span class="kick">Manchete · {e(m['categoria'])}</span><h1>{e(m['titulo'])}</h1><p>{e(m['lide'])}</p>
   <p class="opina"><span class="selo {SELO_CLASSE[m['selo']]}">{e(m['selo'])}</span> {e(m['veredito'])}</p>
   <span class="meta">{data_longa(m['data'])} · {e(m['fontes'][0]['nome'])}</span><span class="credito">{e(m['imagem']['credito'])}</span></div>
@@ -313,7 +321,7 @@ def build_home():
     arquivo = "".join(item(n, "../").replace('href="noticias/', 'href="../noticias/') for n in ns)
     corpo_arq = f"""{cabecalho("../", "Notícias")}
 <main id="conteudo" class="in"><div class="nota"><a class="volta" href="../">← Página inicial</a>
- <section class="bloco ultimas"><h2>Todas as notícias</h2><ul class="lista-n">{arquivo}</ul></section></div></main>
+ <section class="bloco ultimas"><h1 class="h-sec">Notícias de jogos de tabuleiro</h1><ul class="lista-n">{arquivo}</ul></section></div></main>
 {rodape("../")}"""
     (ROOT / "noticias" / "index.html").write_text(pagina("Notícias | Elite Boardgamers", "Todas as notícias de jogos de tabuleiro da Elite Boardgamers, com fonte, data e opinião.", f"{SITE}/noticias/", f"{SITE}/resenhas/capa.jpg", "../", corpo_arq), encoding="utf-8")
     # cada item do Em alta tem de levar a uma nota que trate do jogo já no título
@@ -413,7 +421,8 @@ def build_nota(n):
     out = ROOT / "noticias" / n["slug"] / "index.html"
     out.parent.mkdir(parents=True, exist_ok=True)
     img = f"{SITE}/noticias/{n['imagem']['arquivo']}" if n.get("imagem") else f"{SITE}/resenhas/capa.jpg"
-    out.write_text(pagina(f"{n['titulo']} | Elite Boardgamers", n["lide"], f"{SITE}/noticias/{n['slug']}/", img, pre, corpo), encoding="utf-8")
+    out.write_text(pagina(f"{n['titulo']} | Elite Boardgamers", n["lide"], f"{SITE}/noticias/{n['slug']}/", img, pre, corpo, "article",
+                           f'\n<meta property="article:published_time" content="{n["publicado_em"]}">'), encoding="utf-8")
 
 
 if __name__ == "__main__":
