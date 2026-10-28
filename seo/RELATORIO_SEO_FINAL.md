@@ -52,10 +52,18 @@ Todas as mudanças estão na `main` (no ar) e foram feitas nos **geradores** (`t
 - **`llms.txt` não implementado.** Não é requisito de nenhum buscador; fica como experimento opcional.
 - **Google Indexing API não usada.** Ela não se aplica a notícias.
 
+## Depois do relatório inicial (28/10/2026, mesma data)
+
+- Google Search Console verificado (arquivo `google6eabfb67f89b80bc.html`, que não pode ser apagado) e sitemaps enviados.
+- IndexNow: chave `788e463403f2d9cfd5dffb7304088938.txt`; primeiro envio de 51 URLs, depois só o que muda (`tools/indexnow.py`).
+- Cloudflare Web Analytics (sem cookies) em todas as páginas, declarado na política editorial.
+- Títulos: `titulo_seo` em 10 notícias, `titulo_busca` com ângulo próprio nas 26 resenhas, veredito "<jogo> vale a pena?".
+- Links internos: 8 notícias passaram a ligar para resenhas citadas; "Notícias sobre <jogo>" nas resenhas; "Leia também" nas notícias.
+- Imagem de compartilhamento da consulta hospedada no site.
+
 ## Pendências que dependem de acesso externo ou de decisão
 
-1. **Google Search Console e Bing Webmaster Tools:** criar as propriedades e enviar os sitemaps (passo a passo em `CHECKLIST_SEO.md`).
+1. **Bing Webmaster Tools:** importar do Search Console (o Search Console já está feito).
 2. **Dados reais de Core Web Vitals:** aguardar tráfego e acompanhar no Search Console.
-3. **Paginação de `/noticias/`:** necessária antes de ~40 notas (ver o plano de 90 dias).
-4. **IndexNow (Bing):** depende do Bing Webmaster; pode ser automatizado no fim do pipeline.
+3. **Revisar os títulos "vale a pena"** com dados do Search Console em 4 a 6 semanas.
 5. **Logs de robôs:** o GitHub Pages não fornece. Só com um CDN próprio na frente (mudança de infraestrutura, a decidir).
