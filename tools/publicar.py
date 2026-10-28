@@ -1,6 +1,7 @@
 """Publica resenhas aprovadas: status `publicado` em pauta.json e regera resenhas/index.html (build_lista.py).
 
-Uso: python3 tools/publicar.py conteudo/<slug>.json [...]
+Uso: python3 tools/publicar.py conteudo/<slug>.json [...] [--sem-fotos]
+Recusa resenha sem fotos oficiais liberadas (foto no topo, infográfico no meio); --sem-fotos só com o OK do usuário.
 Requer <slug>/index.html (build_review.py), <slug>/capa.jpg e <slug>/infografico.webp
 (o infográfico é dispensado quando a resenha tem fotos oficiais liberadas, "usar_na_pagina" no fotos/fontes.json).
 """
@@ -11,14 +12,17 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from checar_roteiro import checar_texto  # noqa: E402
+from checar_roteiro import SEM_FOTOS, checar_texto, fotos_liberadas  # noqa: E402
 SITE = "https://eliteboardgamers.com.br"
 
 
 def main():
     pauta = json.loads((ROOT / "pauta.json").read_text(encoding="utf-8"))
-    for arg in sys.argv[1:]:
+    sem_fotos = "--sem-fotos" in sys.argv
+    for arg in [a for a in sys.argv[1:] if a != "--sem-fotos"]:
         c = json.loads(Path(arg).read_text(encoding="utf-8"))
+        if not sem_fotos and not fotos_liberadas(c["slug"]):
+            sys.exit(f"{c['slug']}: {SEM_FOTOS}. Nada foi publicado.")
         erros = checar_texto(c)
         if erros:
             print(*erros, sep="\n - ")

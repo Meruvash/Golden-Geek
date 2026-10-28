@@ -744,5 +744,26 @@
    ],
    "verificado_em": "2026-10-28"
   }
+ },
+ "capstone-games.com": {
+  "nome": "Capstone Games",
+  "apelidos": [
+   "Capstone Games"
+  ],
+  "site": "https://capstone-games.com",
+  "plataforma": "shopify",
+  "estrategia": "sitemap+shopify_json",
+  "press_kit": "https://capstone-games.com/pages/become-a-retailer",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://capstone-games.com/sitemap.xml"
+   ],
+   "verificado_em": "2026-10-28"
+  }
  }
 }

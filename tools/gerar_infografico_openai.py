@@ -14,7 +14,7 @@ from pathlib import Path
 import requests
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from checar_roteiro import checar  # noqa: E402
+from checar_roteiro import SEM_FOTOS, checar, fotos_liberadas  # noqa: E402
 from prompt_infografico import TAMANHO, prompt  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -29,6 +29,7 @@ def main():
     ap.add_argument("--tamanho", default=TAMANHO)
     ap.add_argument("--qualidade", default="high", choices=["low", "medium", "high"])
     ap.add_argument("--dry-run", action="store_true", help="só mostra o prompt, sem chamar a API")
+    ap.add_argument("--sem-fotos", action="store_true", help="gera mesmo sem fotos oficiais (só com o OK do usuário)")
     a = ap.parse_args()
 
     c = json.load(open(a.conteudo, encoding="utf-8"))
@@ -37,6 +38,8 @@ def main():
         print(*erros, sep="\n - ")
         sys.exit("Roteiro fora do PADRAO_EDITORIAL.md; imagem não gerada.")
     texto = prompt(c)
+    if not (a.dry_run or a.sem_fotos or fotos_liberadas(c["slug"])):
+        sys.exit(f"{c['slug']}: {SEM_FOTOS}. Imagem não gerada.")
     if a.dry_run:
         print(texto)
         return
