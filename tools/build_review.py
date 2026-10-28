@@ -127,6 +127,13 @@ def primeira_frase(t):
 
 
 
+def url_fonte(nome, url):
+    """A Consulta Golden Geek morava na raiz do site e hoje fica em /consulta/: as fontes antigas ainda apontam para a raiz."""
+    if url.rstrip("/") == SITE and "consulta" in nome.lower():
+        return f"{SITE}/consulta/"
+    return url
+
+
 def versao(arq):
     """?v= com o hash do arquivo: quando a imagem muda, o endereço muda e navegador e WhatsApp buscam a nova."""
     return f"?v={hashlib.md5(arq.read_bytes()).hexdigest()[:8]}" if arq.exists() else ""
@@ -393,7 +400,7 @@ def build(c):
     sim = "".join(f"<li>{e(x)}</li>" for x in c["para_quem"])
     nao = "".join(f"<li>{e(x)}</li>" for x in c["nao_e_para"])
     fontes = "".join(
-        f'<li><a href="{e(u)}" target="_blank" rel="noopener">{e(n)}</a> <span>{e(uso)}</span></li>' for n, u, uso in c["fontes"]
+        f'<li><a href="{e(url_fonte(n, u))}" target="_blank" rel="noopener">{e(n)}</a> <span>{e(uso)}</span></li>' for n, u, uso in c["fontes"]
     )
     serie = f'<p class="note">{e(c["serie"])}</p>' if c.get("serie") else ""
     # Seções do padrão editorial v2; resenhas antigas sem esses campos continuam iguais.
