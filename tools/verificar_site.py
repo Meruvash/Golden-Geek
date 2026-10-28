@@ -8,6 +8,7 @@ Checagens automáticas (saem com código 1 se alguma falhar):
   - toda resenha publicada em pauta.json tem conteúdo que passa no texto do PADRAO_EDITORIAL.md, fotos oficiais
     liberadas (ou infográfico), index.html e capa.jpg, e a página bate com o que build_review.py gera hoje;
   - links e imagens internos de todas as páginas apontam para arquivos que existem;
+  - canonical, Open Graph e JSON-LD de cada página batem com o conteúdo visível (tools/checar_seo.py);
   - toda página publicada tem canonical para a própria URL e está no sitemap.xml, e robots.txt aponta para o sitemap;
   - com --online, as páginas do dia e a página inicial respondem 200 no site no ar.
 No fim, lista as notícias e resenhas publicadas na data (padrão: hoje) com as fontes, para a revisão de fatos.
@@ -23,6 +24,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "tools"))
 from checar_roteiro import checar_texto, fotos_liberadas  # noqa: E402
 from noticias.checar_noticia import problemas  # noqa: E402
+import checar_seo  # noqa: E402
 
 SITE = "https://eliteboardgamers.com.br"
 FORA = {".git", ".cache", "tools", "modelos", "marca", "lotes", "fontes", "triagem", ".claude", ".impeccable"}
@@ -145,6 +147,7 @@ def main():
     publicadas = checar_resenhas(erros)
     checar_links(erros)
     checar_sitemap(erros, ns, publicadas)
+    checar_seo.checar(erros)
 
     do_dia_n = [n for n in ns if n["data"] == dia]
     do_dia_r = [(p, c) for p, c in publicadas if p.get("data") == dia]

@@ -8,6 +8,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+import seo  # noqa: E402
 from build_review import INSTAGRAM, ROOT, SITE, WHATSAPP, campo, capa_src, versao, e, faixa_nota, icone, numero, selo_class  # noqa: E402
 
 
@@ -58,6 +59,7 @@ def build():
 <meta name="theme-color" content="#000000">
 <link rel="icon" href="../favicon.svg" type="image/svg+xml">
 <link rel="preload" href="../fontes/public-sans.woff2" as="font" type="font/woff2" crossorigin>
+{seo.script(seo.trilha(("Início", f"{SITE}/"), ("Resenhas", f"{SITE}/resenhas/")))}
 <style>
 @font-face{{font-family:"Public Sans";src:url(../fontes/public-sans.woff2) format("woff2");font-weight:400 800;font-display:swap}}
 :root{{color-scheme:dark;--ink:#eceff3;--muted:#a1a9b5;--line:#262a32;--gold:#e3b23c;--zap:#157a43;--n9:#1d7d48;--n7:#2366a8;--n6:#6b4ea3;--n5:#b23a48}}

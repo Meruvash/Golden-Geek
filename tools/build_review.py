@@ -13,10 +13,14 @@ from pathlib import Path
 
 from PIL import Image
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import seo  # noqa: E402
+
 ROOT = Path(__file__).resolve().parent.parent
 INSTAGRAM = "https://www.instagram.com/eliteboardgamers/"
 WHATSAPP = "https://chat.whatsapp.com/IgQQkJdSkzHBaEq3UwFeAo"
 SITE = "https://eliteboardgamers.com.br"
+MESES = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"]
 e = html.escape
 
 ICONES = {
@@ -36,6 +40,11 @@ ICONES = {
     "topo": '<path d="M12 19V5M5 12l7-7 7 7"/>',
     "compartilhar": '<circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="M8.2 10.8l7.6-4.4M8.2 13.2l7.6 4.4"/>',
 }
+
+
+def data_longa(iso):
+    a, m, d = (int(x) for x in iso[:10].split("-"))
+    return f"{d} de {MESES[m - 1]} de {a}"
 
 
 def icone(nome, cls="ic"):
@@ -421,6 +430,19 @@ def build(c):
     if principal:
         capa_da_foto(slug, principal)
     versao_capa = versao(ROOT / slug / "capa.jpg")
+    # data de publicação: a que publicar.py gravou em pauta.json (resenha ainda não publicada fica sem data)
+    pauta = json.loads((ROOT / "pauta.json").read_text(encoding="utf-8"))
+    publicada = next((p["data"] for p in pauta["publicadas"] if p["url"].rstrip("/").endswith("/" + slug)), None)
+    url = f"{SITE}/{slug}/"
+    pub_html = ""
+    ld = seo.script(seo.trilha(("Início", f"{SITE}/"), ("Resenhas", f"{SITE}/resenhas/"), (c["jogo"], url)))
+    if publicada:
+        pub_html = (f'<p class="pub">Resenha publicada em <time datetime="{publicada}">{data_longa(publicada)}</time>'
+                    f' · Redação Elite Boardgamers · com base em <a href="#fontes">{len(c["fontes"])} fontes</a></p>')
+        from build_sitemap import lastmod_registrado
+        ld = seo.script(seo.artigo("Article", url, f'{c["jogo"]}: resenha', c["descricao"], f"{SITE}/{slug}/capa.jpg{versao_capa}",
+                                   publicada, lastmod_registrado(url, c), {"@type": "Game", "name": c["jogo"]}),
+                        seo.trilha(("Início", f"{SITE}/"), ("Resenhas", f"{SITE}/resenhas/"), (c["jogo"], url)))
     if principal and not info.exists():
         # Resenha só com fotos (sem infográfico): a foto fica no topo e a legenda do Instagram ganha bloco próprio.
         topo_fig = foto_html(c, principal, "capa foto-capa", lazy=False)
@@ -463,6 +485,7 @@ def build(c):
 <meta name="theme-color" content="#000000">
 <link rel="icon" href="../favicon.svg" type="image/svg+xml">
 <link rel="preload" href="../fontes/public-sans.woff2" as="font" type="font/woff2" crossorigin>
+{ld}
 <style>
 @font-face{{font-family:"Public Sans";src:url(../fontes/public-sans.woff2) format("woff2");font-weight:400 800;font-style:normal;font-display:swap}}
 @font-face{{font-family:"Public Sans";src:url(../fontes/public-sans-italic.woff2) format("woff2");font-weight:400;font-style:italic;font-display:swap}}
@@ -508,6 +531,7 @@ h1{{font-size:clamp(2rem,7vw,3.1rem);line-height:1.05;font-weight:800;letter-spa
 .selo.publico{{background:var(--warn)}}.selo.nao{{background:var(--no)}}
 .veredito p{{font-weight:600}}
 .lede{{margin-top:14px;color:#c9cfd8;max-width:66ch}}
+.pub{{margin-top:10px;color:var(--muted);font-size:.85rem}}.pub a{{color:var(--link)}}
 .regua{{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;margin-top:16px;border:1px solid var(--line);border-radius:8px;background:var(--line);overflow:hidden}}
 .regua li{{display:grid;grid-template-columns:auto 1fr;column-gap:8px;padding:10px 12px;align-items:center;background:var(--panel)}}
 .ic{{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}}
@@ -688,6 +712,7 @@ footer a{{color:var(--bar-ink)}}
   <ul class="regua">{regua_html}</ul>
   <a class="zap" href="{WHATSAPP}" target="_blank" rel="noopener">{icone("zap", "ic zi")}<span><b>Entre no grupo do WhatsApp</b><small>Converse sobre {e(c["jogo"])} e receba as próximas resenhas</small></span></a>
   <p class="lede">{e(c["lede"])}</p>
+  {pub_html}
  </div>
 </div>
 </section>

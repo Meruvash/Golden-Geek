@@ -50,6 +50,14 @@ def data_git(arq):
     return None if h in rasos else quando
 
 
+def lastmod_registrado(url, dados):
+    """Última mudança de conteúdo já registrada para a página, ou None se o conteúdo mudou desde o registro
+    (a data nova entra no próximo build, junto com o sitemap)."""
+    estado = json.loads(ESTADO.read_text(encoding="utf-8")) if ESTADO.exists() else {}
+    reg = estado.get(url)
+    return reg["lastmod"] if reg and reg["hash"] == assinatura(dados) else None
+
+
 def lista_consulta(texto):
     raw = re.search(r"const RAW = `(.*?)`", texto, re.S)
     return raw.group(1) if raw else ""

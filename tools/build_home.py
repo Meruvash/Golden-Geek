@@ -15,6 +15,8 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from PIL import Image  # noqa: E402
+import seo  # noqa: E402
+from build_sitemap import lastmod_registrado  # noqa: E402
 from build_review import INSTAGRAM, ROOT, SITE, WHATSAPP, e, icone, versao  # noqa: E402
 from noticias.checar_noticia import problemas  # noqa: E402
 
@@ -260,7 +262,7 @@ def rodape(pre):
 </div></footer>"""
 
 
-def pagina(titulo, descricao, url, imagem, pre, corpo, tipo="website", head_extra=""):
+def pagina(titulo, descricao, url, imagem, pre, corpo, tipo="website", head_extra="", jsonld=""):
     return f"""<!doctype html>
 <html lang="pt-BR">
 <head>
@@ -268,19 +270,20 @@ def pagina(titulo, descricao, url, imagem, pre, corpo, tipo="website", head_extr
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>{e(titulo)}</title>
 <meta name="description" content="{e(descricao)}">
-<link rel="canonical" href="{url}">
+{f'<link rel="canonical" href="{url}">' if url else '<meta name="robots" content="noindex">'}
 <meta property="og:site_name" content="Elite Boardgamers">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:title" content="{e(titulo)}">
 <meta property="og:description" content="{e(descricao)}">
 <meta property="og:type" content="{tipo}">
-<meta property="og:url" content="{url}">
+<meta property="og:url" content="{url or SITE + '/'}">
 <meta property="og:image" content="{imagem}">
 <meta name="twitter:card" content="summary_large_image">{head_extra}
 <meta name="theme-color" content="#000000">
 <link rel="icon" href="{pre}favicon.svg" type="image/svg+xml">
 <link rel="preload" href="{pre}fontes/public-sans.woff2" as="font" type="font/woff2" crossorigin>
 <style>{CSS % {"pre": pre}}</style>
+{jsonld}
 </head>
 <body>
 {corpo}
@@ -323,7 +326,8 @@ def build_home():
 <main id="conteudo" class="in"><div class="nota"><a class="volta" href="../">← Página inicial</a>
  <section class="bloco ultimas"><h1 class="h-sec">Notícias de jogos de tabuleiro</h1><ul class="lista-n">{arquivo}</ul></section></div></main>
 {rodape("../")}"""
-    (ROOT / "noticias" / "index.html").write_text(pagina("Notícias | Elite Boardgamers", "Todas as notícias de jogos de tabuleiro da Elite Boardgamers, com fonte, data e opinião.", f"{SITE}/noticias/", f"{SITE}/resenhas/capa.jpg", "../", corpo_arq), encoding="utf-8")
+    (ROOT / "noticias" / "index.html").write_text(pagina("Notícias | Elite Boardgamers", "Todas as notícias de jogos de tabuleiro da Elite Boardgamers, com fonte, data e opinião.", f"{SITE}/noticias/", f"{SITE}/resenhas/capa.jpg", "../", corpo_arq,
+                                                       jsonld=seo.script(seo.trilha(("Início", f"{SITE}/"), ("Notícias", f"{SITE}/noticias/")))), encoding="utf-8")
     # cada item do Em alta tem de levar a uma nota que trate do jogo já no título
     for j in home["em_alta"]:
         slug = j["link"].strip("/").split("/")[-1]
@@ -380,7 +384,16 @@ def build_home():
 {rodape(pre)}"""
     titulo = "Elite Boardgamers: notícias de jogos de tabuleiro"
     descr = f"{m['titulo']}. Notícias de jogos de tabuleiro com fonte e data, lançamentos no Brasil e resenhas de jogos premiados."
-    (ROOT / "index.html").write_text(pagina(titulo, descr, f"{SITE}/", f"{SITE}/{img_nota(m, '')}", pre, corpo), encoding="utf-8")
+    # 404: servida pelo GitHub Pages em qualquer profundidade, por isso os caminhos são absolutos ("/")
+    corpo_404 = f"""{cabecalho("/", "")}
+<main id="conteudo" class="in"><div class="nota"><section class="bloco">
+ <h1>Página não encontrada</h1>
+ <p class="lide">O endereço pode ter mudado ou sido digitado errado. Veja o que há de novo:</p>
+ <div class="jogos"><a href="/">Notícias de hoje</a><a href="/resenhas/">Resenhas de jogos premiados</a><a href="/consulta/">Consulta Golden Geek</a></div>
+</section></div></main>
+{rodape("/")}"""
+    (ROOT / "404.html").write_text(pagina("Página não encontrada | Elite Boardgamers", "Página não encontrada.", "", f"{SITE}/resenhas/capa.jpg", "/", corpo_404), encoding="utf-8")
+    (ROOT / "index.html").write_text(pagina(titulo, descr, f"{SITE}/", f"{SITE}/{img_nota(m, '')}", pre, corpo, jsonld=seo.script(seo.site())), encoding="utf-8")
     return ns
 
 
@@ -403,7 +416,7 @@ def build_nota(n):
  <article class="bloco">
   <span class="cat {CAT_CLASSE.get(n['categoria'], 'mercado')}">{e(n['categoria'])}</span> <span class="selo {sc}">{e(n['selo'])}</span>
   <h1>{e(n['titulo'])}</h1>
-  <p class="meta">{data_longa(n['data'])} · Redação Elite Boardgamers</p>
+  <p class="meta"><time datetime="{n['publicado_em']}">{data_longa(n['data'])}</time> · Redação Elite Boardgamers</p>
  </article>
  <div class="bloco abre">{fig}<p class="lide">{e(n['lide'])}</p></div>
  <section class="bloco importa"><h2>Por que importa</h2><p>{e(n['por_que_importa'])}</p><p class="assina">Análise Elite Boardgamers</p></section>
@@ -421,8 +434,12 @@ def build_nota(n):
     out = ROOT / "noticias" / n["slug"] / "index.html"
     out.parent.mkdir(parents=True, exist_ok=True)
     img = f"{SITE}/noticias/{n['imagem']['arquivo']}" if n.get("imagem") else f"{SITE}/resenhas/capa.jpg"
-    out.write_text(pagina(f"{n['titulo']} | Elite Boardgamers", n["lide"], f"{SITE}/noticias/{n['slug']}/", img, pre, corpo, "article",
-                           f'\n<meta property="article:published_time" content="{n["publicado_em"]}">'), encoding="utf-8")
+    url = f"{SITE}/noticias/{n['slug']}/"
+    modificado = lastmod_registrado(url, {k: v for k, v in n.items() if k != "publicado_em"})
+    ld = seo.script(seo.artigo("NewsArticle", url, n["titulo"], n["lide"], img, n["publicado_em"], modificado),
+                    seo.trilha(("Início", f"{SITE}/"), ("Notícias", f"{SITE}/noticias/"), (n["titulo"], url)))
+    out.write_text(pagina(f"{n['titulo']} | Elite Boardgamers", n["lide"], url, img, pre, corpo, "article",
+                          f'\n<meta property="article:published_time" content="{n["publicado_em"]}">', ld), encoding="utf-8")
 
 
 if __name__ == "__main__":
