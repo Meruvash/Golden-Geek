@@ -8,6 +8,12 @@
    "link": "noticias/santuario-vence-deutscher-spiele-preis-2026/"
   },
   {
+   "nome": "Civolution",
+   "id_ludopedia": 57677,
+   "motivo": "Vencedor do As d'Or Expert, em pré-venda pela Devir",
+   "link": "noticias/devir-civolution-e-formigas-pre-venda/"
+  },
+  {
    "nome": "Duna: Imperium – Linhagens",
    "id_ludopedia": 69009,
    "motivo": "Chegou às lojas em outubro",
@@ -24,12 +30,6 @@
    "id_ludopedia": 66676,
    "motivo": "Chegou ao Brasil depois de dois Golden Geek",
    "link": "noticias/vantage-chega-ao-brasil/"
-  },
-  {
-   "nome": "Endeavor: Deep Sea – Águas Desconhecidas",
-   "id_ludopedia": 79643,
-   "motivo": "Expansão prevista para novembro",
-   "link": "noticias/expansoes-endeavor-e-arnak-novembro/"
   }
  ],
  "financiamentos": [
@@ -48,6 +48,14 @@
    "situacao": "62% da meta, termina em 06/11",
    "fonte": "MeepleStarter, 28/10/2026",
    "noticia": "financiamentos-abertos-battleforge-dia-da-caca"
+  },
+  {
+   "nome": "Excursions – a Galactic Cruise Game",
+   "editora": "Kinson Key Games",
+   "onde": "Kickstarter · aberto",
+   "situacao": "US$ 544 mil; termina em 30/10",
+   "fonte": "Tabletop Analytics, 28/10/2026",
+   "noticia": "excursions-galactic-cruise-campanha-termina"
   },
   {
    "nome": "The Lord of the Rings: The King's Gambit",

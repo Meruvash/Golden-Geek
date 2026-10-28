@@ -1,0 +1,92 @@
+{
+ "slug": "osprey-desmonta-equipe-destemidos-imperium",
+ "data": "2026-10-28",
+ "categoria": "Mercado",
+ "titulo": "Osprey desmonta equipe de jogos de tabuleiro e põe à venda as linhas Destemidos e Imperium",
+ "selo": "Informativo",
+ "lide": "A Osprey Games, braço de jogos da editora britânica Bloomsbury, desligou toda a equipe de desenvolvimento de jogos de tabuleiro e de cartas no fim de setembro e cancelou o estande em Essen. A empresa busca comprador só para o catálogo, que inclui Undaunted e Imperium, publicados aqui pela MeepleBR como Destemidos e Imperium.",
+ "por_que_importa": "Para quem coleciona Destemidos ou Imperium em português, a dúvida é o futuro das linhas. Sem equipe, a Osprey diz que não tem reimpressões planejadas e não informou o destino dos projetos em andamento. Até um comprador assumir o catálogo, caixas novas dependem de uma negociação sem prazo.",
+ "numeros": [
+  [
+   "maio de 2026",
+   "Bloomsbury anuncia a venda da divisão de jogos",
+   "Tabletop Gaming"
+  ],
+  [
+   "fim de setembro",
+   "saída da equipe de jogos, segundo fontes ouvidas pela BoardGameWire",
+   "BoardGameWire"
+  ],
+  [
+   "7",
+   "caixas de Destemidos e Imperium no catálogo da MeepleBR",
+   "MeepleBR"
+  ]
+ ],
+ "corpo": [
+  "A Bloomsbury anunciou em maio que venderia a divisão de jogos de tabuleiro e de cartas para se concentrar em livros; a Osprey segue com wargames e RPG. Segundo a BoardGameWire, a empresa confirmou que todos os funcionários dedicados só a esses jogos deixaram a companhia, sem dizer quantos.",
+  "Os jogos atuais seguem à venda e, segundo a Bloomsbury, bem abastecidos. Alguns contratos com autores limitariam a transferência de direitos, o que pode restringir a venda a quem levar todo ou quase todo o catálogo. Undaunted 2200: Revolution e Upland & Prairie mantiveram o lançamento previsto para outubro."
+ ],
+ "no_brasil": "A MeepleBR publica em português quatro caixas de Destemidos (Normandia, Norte da África, Reforços e Batalha da Grã-Bretanha) e três de Imperium (Clássicos, Lendas e Horizontes), todas no catálogo do site da editora em 28/10/2026. Não encontramos comunicado da MeepleBR sobre o caso até essa data.",
+ "critica": [],
+ "para_quem": [
+  "Coleciona Destemidos ou Imperium e espera caixas novas",
+  "Acompanha o mercado de editoras de jogos"
+ ],
+ "nao_e_para": [],
+ "veredito": "Quem quer completar a coleção de Destemidos ou Imperium não precisa correr, mas vale garantir as caixas que faltam enquanto estão no catálogo. Novidades das duas linhas só voltam a ser certas quando aparecer comprador.",
+ "fontes": [
+  {
+   "nome": "BoardGameWire: Osprey dispensa a equipe de jogos e cancela Essen",
+   "url": "https://boardgamewire.com/index.php/2026/10/16/osprey-games-lets-entire-board-and-card-game-development-team-go-cancels-essen-booth/",
+   "data": "16/10/2026"
+  },
+  {
+   "nome": "Tabletop Gaming: Osprey vai vender a divisão de jogos",
+   "url": "https://www.tabletopgaming.co.uk/news/osprey-games-to-sell-board-and-card-game-division/",
+   "data": "28/10/2026"
+  },
+  {
+   "nome": "MeepleBR: Destemidos – Normandia",
+   "url": "https://meeplebr.com/product/destemidos-normandia/",
+   "data": "28/10/2026"
+  },
+  {
+   "nome": "MeepleBR: Imperium: Clássicos",
+   "url": "https://meeplebr.com/product/imperium-classicos/",
+   "data": "28/10/2026"
+  }
+ ],
+ "imagem": null,
+ "jogos": [],
+ "ids_ludopedia": [],
+ "crivo": {
+  "pontos": 5,
+  "criterios": [
+   "Notícia do mercado com efeito no Brasil: linhas publicadas pela MeepleBR (3)",
+   "Confirmada por duas fontes: BoardGameWire e Tabletop Gaming (2)"
+  ]
+ },
+ "verificacao_nacional": [
+  {
+   "jogo": "Undaunted (Destemidos)",
+   "resultado": "edição nacional",
+   "data": "28/10/2026",
+   "fontes": [
+    "https://meeplebr.com/product/destemidos-normandia/",
+    "https://www.comparajogos.com.br/all?q=destemidos"
+   ],
+   "obs": "MeepleBR, quatro caixas"
+  },
+  {
+   "jogo": "Imperium",
+   "resultado": "edição nacional",
+   "data": "28/10/2026",
+   "fontes": [
+    "https://meeplebr.com/product/imperium-classicos/",
+    "https://www.comparajogos.com.br/item/imperium-classicos"
+   ],
+   "obs": "MeepleBR, três caixas"
+  }
+ ]
+}
