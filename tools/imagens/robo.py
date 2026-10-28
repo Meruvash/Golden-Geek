@@ -627,10 +627,25 @@ def conteudo(slug):
     return json.loads(f.read_text(encoding="utf-8"))
 
 
+def paginas_oficiais(c, todas):
+    """Links das fontes de uma notícia que são páginas de editoras mapeadas (o anúncio traz a imagem de divulgação)."""
+    urls = [f if isinstance(f, str) else (f[1] if len(f) > 1 else "") for f in c.get("fontes", [])]
+    achadas = []
+    for u in urls:
+        host = urlsplit(u).netloc.removeprefix("www.")
+        dom = next((d for d in todas if host == d or host.endswith("." + d) or urlsplit(todas[d]["site"]).netloc.removeprefix("www.") == host), None)
+        if dom:
+            achadas.append((dom, u))
+    return achadas
+
+
 def buscar(cli, slug, url_fixa=None, so_editora=None):
     c = conteudo(slug)
     fi = dict(c.get("ficha", []))
-    nomes = nomes_do_jogo(c)
+    if c.get("editora") and not fi.get("Editora original"):  # notícia: editora num campo próprio, sem ficha
+        fi["Editora original"] = c["editora"]
+    c.setdefault("jogo", c.get("titulo", slug))
+    nomes = nomes_do_jogo(c) if c.get("ficha") or c.get("editora") else []
     todas = receitas()
     fontes = []
     for campo in ("Editora original", "Editora no Brasil"):
@@ -674,6 +689,19 @@ def buscar(cli, slug, url_fixa=None, so_editora=None):
             for im in ims:
                 im.update(editora=rec["nome"], dominio=dominio)
             candidatas += ims
+    for dominio, pg in ([] if url_fixa else paginas_oficiais(c, todas)):
+        if so_editora and so_editora != dominio:
+            continue
+        rec = todas[dominio]
+        try:
+            ims = imagens_da_pagina(cli, pg, rec)
+        except (Bloqueado, LookupError) as e:
+            rel["avisos"].append(str(e))
+            continue
+        rel["editoras"].append({"editora": rec["nome"], "dominio": dominio, "campo": "Fonte da notícia", "paginas": [pg]})
+        for im in ims:
+            im.update(editora=rec["nome"], dominio=dominio)
+        candidatas += ims
     if url_fixa:
         dominio = urlsplit(url_fixa).netloc.removeprefix("www.")
         rec = todas.get(dominio) or {"nome": dominio, "plataforma": "html"}

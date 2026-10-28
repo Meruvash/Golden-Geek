@@ -29,6 +29,17 @@ Antes de confiar num domínio, confira o conteúdo: domínios de jogos mudam de 
 
 Fotos próprias que o usuário manda antes da hora ficam em `<slug>/fotos/reservadas/` com um `reservadas.json` (descrição, tipo sugerido, crédito). Fora do `fontes.json` elas não vão para a página; antes de buscar imagens de um jogo, confira se ele tem reservadas.
 
+## Gatilho automático (resenhas e notícias)
+
+`tools/imagens/gatilho.py` roda como gancho do Claude Code depois de cada Write, Edit ou Bash (`.claude/settings.json`). Quando aparece um conteúdo novo sem fotos aprovadas — `conteudo/<slug>.json` (resenha) ou `conteudo/noticias/<data>-<assunto>.json` (notícia), mexido nas últimas 6 horas —, ele:
+
+1. dispara `robo.py buscar` em segundo plano, uma vez só, assim que o arquivo tiver de onde buscar (editora na ficha; na notícia, `editora` ou `fontes`);
+2. avisa a sessão quando a busca termina, também uma vez só.
+
+Quando o aviso chegar, faça as etapas 3 e 4 abaixo (folha de contato, aprovar, marcar pessoas e texto, crivo). Na notícia, o slug é `noticias/<data>-<assunto>`: as fotos aprovadas vão para `noticias/<data>-<assunto>/fotos/`, ao lado da página. Regra do plano de notícias: foto só da editora, de licença livre ou nossa; sem foto boa, o cartão usa a capa da nossa resenha do jogo.
+
+Para reprocessar um conteúdo, apague `.cache/imagens/<slug>/busca.iniciada`.
+
 ## Etapa 1: a editora tem receita?
 
 A busca liga a ficha do jogo (`Editora original` e `Editora no Brasil` em `conteudo/<slug>.json`) às receitas pelo `nome` e pelos `apelidos`. Se faltar a editora:
