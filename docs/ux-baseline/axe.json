@@ -1,0 +1,90 @@
+{
+ "/": [
+  {
+   "id": "link-name",
+   "impacto": "serious",
+   "nos": 1,
+   "ajuda": "Links must have discernible text",
+   "exemplos": [
+    ".zap-mini"
+   ]
+  }
+ ],
+ "/noticias/": [
+  {
+   "id": "link-name",
+   "impacto": "serious",
+   "nos": 1,
+   "ajuda": "Links must have discernible text",
+   "exemplos": [
+    ".zap-mini"
+   ]
+  }
+ ],
+ "/resenhas/": [
+  {
+   "id": "link-name",
+   "impacto": "serious",
+   "nos": 1,
+   "ajuda": "Links must have discernible text",
+   "exemplos": [
+    ".zap-mini"
+   ]
+  }
+ ],
+ "/root/": [
+  {
+   "id": "color-contrast",
+   "impacto": "serious",
+   "nos": 3,
+   "ajuda": "Elements must meet minimum color contrast ratio thresholds",
+   "exemplos": [
+    "#resumo > .nivel.sim",
+    "#como-e-jogar > .mais > summary",
+    ".publico"
+   ]
+  },
+  {
+   "id": "link-name",
+   "impacto": "serious",
+   "nos": 1,
+   "ajuda": "Links must have discernible text",
+   "exemplos": [
+    ".zap-mini"
+   ]
+  }
+ ],
+ "/consulta/": [
+  {
+   "id": "link-name",
+   "impacto": "serious",
+   "nos": 1,
+   "ajuda": "Links must have discernible text",
+   "exemplos": [
+    ".zap-mini"
+   ]
+  }
+ ],
+ "/lancamentos/": [
+  {
+   "id": "link-name",
+   "impacto": "serious",
+   "nos": 1,
+   "ajuda": "Links must have discernible text",
+   "exemplos": [
+    ".zap-mini"
+   ]
+  }
+ ],
+ "/noticias/vantage-chega-ao-brasil/": [
+  {
+   "id": "link-name",
+   "impacto": "serious",
+   "nos": 1,
+   "ajuda": "Links must have discernible text",
+   "exemplos": [
+    ".zap-mini"
+   ]
+  }
+ ]
+}
