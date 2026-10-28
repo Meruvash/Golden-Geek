@@ -3,7 +3,7 @@
 Data: 28/10/2026 · Escopo: repositório `meruvash/golden-geek` (branch `main`, commit `9d8d722`) e o site no ar `https://eliteboardgamers.com.br`.
 Status: **diagnóstico, sem nenhuma alteração no site.** Os itens marcados como *validação externa* dependem de acesso que eu não tenho (Search Console, Bing Webmaster, DNS, dados reais de usuários).
 
-> Este arquivo fica no repositório, mas não é publicado no site (listado em `_config.yml`).
+> Este arquivo fica no repositório, mas não é publicado no site (a pasta `seo/` está listada em `_config.yml`).
 
 ---
 

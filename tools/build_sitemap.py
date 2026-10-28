@@ -96,6 +96,10 @@ def fontes():
         c = json.loads(arq.read_text(encoding="utf-8"))
         inicial = max(filter(None, [pub.get("data"), data_git(arq)]))
         paginas.append(("resenha", f"{SITE}/{slug}/", ROOT / slug / "index.html", assinatura(c), inicial))
+    for pag in sorted((ROOT / "noticias" / "pagina").glob("*/index.html"), key=lambda x: int(x.parent.name)):
+        # página do arquivo de notícias: muda quando entra nota nova; data = a da nota mais recente nela
+        datas = re.findall(r'href="\.\./\.\./\.\./noticias/([^/"]+)/"', pag.read_text(encoding="utf-8"))
+        paginas.append(("arquivo", f"{SITE}/noticias/pagina/{pag.parent.name}/", pag, assinatura(datas), None))
     politica = ROOT / "politica-editorial" / "index.html"
     if politica.exists():
         texto = re.search(r"<main.*?</main>", politica.read_text(encoding="utf-8"), re.S).group(0)

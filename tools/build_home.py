@@ -200,6 +200,7 @@ footer .in{display:flex;flex-wrap:wrap;gap:10px 20px;padding-top:18px;padding-bo
 .nota figcaption{margin-top:6px}
 .nota h2,.nota .h-sec{font-size:.8rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--paper-muted);margin-bottom:8px}
 .nota .h-sec{margin:0 0 8px;line-height:inherit;text-wrap:wrap}
+.paginas{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:16px;font-weight:700}.paginas a{color:var(--link)}.paginas span{color:var(--paper-muted);font-size:.9rem}
 .nota .fontes li{margin:6px 0;font-size:.92rem}.nota .fontes a{color:var(--link)}.nota .fontes span{color:var(--paper-muted);font-size:.82rem}
 .nota .jogos{display:flex;flex-wrap:wrap;gap:8px}.nota .jogos a{display:inline-block;padding:6px 10px;border-radius:6px;background:#e6e9ee;text-decoration:none;font-weight:700;font-size:.9rem}
 .nota .crivo{font-size:.85rem;color:var(--paper-muted)}.nota .crivo b{color:var(--paper-ink)}
@@ -363,13 +364,30 @@ def build_home():
                               for f in resto[8:] for u in ultimas if f["data"] >= u["data"]):
         sys.exit("Últimas notícias fora de ordem: há nota mais nova fora da lista")
     itens = "".join(item(n, pre) for n in ultimas)
-    arquivo = "".join(item(n, "../").replace('href="noticias/', 'href="../noticias/') for n in ns)
-    corpo_arq = f"""{cabecalho("../", "Notícias")}
-<main id="conteudo" class="in"><div class="nota"><a class="volta" href="../">← Página inicial</a>
- <section class="bloco ultimas"><h1 class="h-sec">Notícias de jogos de tabuleiro</h1><ul class="lista-n">{arquivo}</ul></section></div></main>
-{rodape("../")}"""
-    (ROOT / "noticias" / "index.html").write_text(pagina("Notícias | Elite Boardgamers", "Todas as notícias de jogos de tabuleiro da Elite Boardgamers, com fonte, data e opinião.", f"{SITE}/noticias/", f"{SITE}/resenhas/capa.jpg", "../", corpo_arq,
-                                                       jsonld=seo.script(seo.trilha(("Início", f"{SITE}/"), ("Notícias", f"{SITE}/noticias/")))), encoding="utf-8")
+    # arquivo de notícias: 30 por página; a 1ª é /noticias/, as outras /noticias/pagina/<n>/
+    POR_PAGINA = 30
+    paginas = [ns[i:i + POR_PAGINA] for i in range(0, len(ns), POR_PAGINA)] or [[]]
+    for velha in (ROOT / "noticias" / "pagina").glob("*/index.html"):
+        if not velha.parent.name.isdigit() or int(velha.parent.name) > len(paginas):
+            velha.unlink()
+            velha.parent.rmdir()
+    for num, lote in enumerate(paginas, 1):
+        p_pre = "../" if num == 1 else "../../../"
+        url = f"{SITE}/noticias/" if num == 1 else f"{SITE}/noticias/pagina/{num}/"
+        arquivo = "".join(item(n, p_pre).replace('href="noticias/', f'href="{p_pre}noticias/') for n in lote)
+        ant = "" if num == 1 else f'<a href="{p_pre}noticias/{"" if num == 2 else f"pagina/{num - 1}/"}" rel="prev">← Mais recentes</a>'
+        prox = f'<a href="{p_pre}noticias/pagina/{num + 1}/" rel="next">Mais antigas →</a>' if num < len(paginas) else ""
+        nav = f'<nav class="paginas" aria-label="Páginas de notícias">{ant}<span>Página {num} de {len(paginas)}</span>{prox}</nav>' if len(paginas) > 1 else ""
+        sufixo = "" if num == 1 else f" (página {num})"
+        corpo_arq = f"""{cabecalho(p_pre, "Notícias")}
+<main id="conteudo" class="in"><div class="nota"><a class="volta" href="{p_pre}">← Página inicial</a>
+ <section class="bloco ultimas"><h1 class="h-sec">Notícias de jogos de tabuleiro{sufixo}</h1><ul class="lista-n">{arquivo}</ul>{nav}</section></div></main>
+{rodape(p_pre)}"""
+        trilha = [("Início", f"{SITE}/"), ("Notícias", f"{SITE}/noticias/")] + ([] if num == 1 else [(f"Página {num}", url)])
+        destino = ROOT / "noticias" / ("index.html" if num == 1 else f"pagina/{num}/index.html")
+        destino.parent.mkdir(parents=True, exist_ok=True)
+        destino.write_text(pagina(f"Notícias{sufixo} | Elite Boardgamers", f"Notícias de jogos de tabuleiro da Elite Boardgamers, com fonte, data e opinião{sufixo}.", url,
+                                  f"{SITE}/resenhas/capa.jpg", p_pre, corpo_arq, jsonld=seo.script(seo.trilha(*trilha))), encoding="utf-8")
     # cada item do Em alta tem de levar a uma nota que trate do jogo já no título
     for j in home["em_alta"]:
         slug = j["link"].strip("/").split("/")[-1]
