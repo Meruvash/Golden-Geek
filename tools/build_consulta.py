@@ -1,7 +1,7 @@
 """Escreve no HTML de consulta/index.html a lista do Golden Geek que o JavaScript monta no navegador.
 
 Uso: python3 tools/build_consulta.py   (também roda no fim de build_home.py)
-Também reescreve o cabeçalho e o menu com a moldura comum de tools/layout.py.
+Também reescreve o cabeçalho, o menu e o rodapé com a moldura comum de tools/layout.py.
 A fonte continua sendo o bloco RAW dentro da própria página. Este script repete, em Python, o render() do estado
 inicial (sem filtros) e grava o resultado dentro de <div id="out">, para que buscadores e robôs de IA que não
 executam JavaScript leiam a lista inteira. No navegador, o render() troca esse conteúdo por um idêntico.
@@ -11,7 +11,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from layout import cabecalho  # noqa: E402
+from layout import cabecalho, rodape  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 ARQ = ROOT / "consulta" / "index.html"
@@ -57,9 +57,10 @@ def tabela(s):
 def build():
     s = ARQ.read_text(encoding="utf-8")
     html_tabela, total = tabela(s)
-    novo = re.sub(r'<div id="out">.*?</div>(?=\n\n <footer>)', lambda _: f'<div id="out">{html_tabela}</div>', s, count=1, flags=re.S)
+    novo = re.sub(r'<div id="out">.*?</div>(?=\n\n <section class="notas">)', lambda _: f'<div id="out">{html_tabela}</div>', s, count=1, flags=re.S)
     # moldura comum do site (tools/layout.py)
     novo = re.sub(r'<header class="(?:top)?bar".*?</nav>', lambda _: cabecalho("../", "Consulta Golden Geek"), novo, count=1, flags=re.S)
+    novo = re.sub(r'<footer>.*?</footer>', lambda _: rodape("../"), novo, count=1, flags=re.S)
     novo = re.sub(r'<span id="count" class="count">[^<]*</span>', f'<span id="count" class="count">{total}</span>', novo, count=1)
     if novo != s:
         ARQ.write_text(novo, encoding="utf-8")

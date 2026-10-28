@@ -19,7 +19,7 @@ import seo  # noqa: E402
 from imagens_resp import miniatura, srcset  # noqa: E402
 from build_sitemap import lastmod_registrado  # noqa: E402
 from build_review import INSTAGRAM, ROOT, SITE, WHATSAPP, e, icone, versao  # noqa: E402
-from layout import cabecalho  # noqa: E402
+from layout import cabecalho, rodape  # noqa: E402
 from noticias.checar_noticia import problemas  # noqa: E402
 
 MESES = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"]
@@ -248,13 +248,6 @@ footer .in{display:flex;flex-wrap:wrap;gap:10px 20px;padding-top:18px;padding-bo
 }
 @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
 """
-
-
-def rodape(pre):
-    return f"""<footer><div class="in">
- <span>Elite Boardgamers</span><a href="{pre or './'}">Notícias</a><a href="{pre}resenhas/">Resenhas</a><a href="{pre}lancamentos/">Lançamentos</a><a href="{pre}consulta/">Consulta Golden Geek</a><a href="{pre}politica-editorial/">Política editorial</a>
- <a href="{INSTAGRAM}" target="_blank" rel="noopener">Instagram @eliteboardgamers</a><a href="{WHATSAPP}" target="_blank" rel="noopener">Grupo do WhatsApp</a>
-</div></footer>"""
 
 
 def pagina(titulo, descricao, url, imagem, pre, corpo, tipo="website", head_extra="", jsonld=""):

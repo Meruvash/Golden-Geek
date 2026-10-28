@@ -761,15 +761,7 @@ footer a{{color:var(--bar-ink)}}
 
 {main_html}
 
-<footer><div class="in">
- <span>Elite Boardgamers</span>
- <a href="../">Notícias</a>
- <a href="../resenhas/">Todas as resenhas</a>
- <a href="../politica-editorial/">Política editorial</a>
- <a href="../consulta/">Consulta Golden Geek</a>
- <a href="{INSTAGRAM}" target="_blank" rel="noopener">Instagram @eliteboardgamers</a>
- <a href="{WHATSAPP}" target="_blank" rel="noopener">Grupo do WhatsApp</a>
-</div></footer>
+{rodape("../")}
 <script>
 (() => {{
   // Menu de seções: marca a seção que está na tela e rola o menu até ela.

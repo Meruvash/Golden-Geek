@@ -11,7 +11,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import seo  # noqa: E402
 from filtros_resenha import PERFIS, derivar  # noqa: E402
 from imagens_resp import srcset  # noqa: E402
-from layout import cabecalho  # noqa: E402
+from layout import cabecalho, rodape  # noqa: E402
 from build_review import INSTAGRAM, ROOT, SITE, WHATSAPP, campo, capa_src, versao, e, faixa_nota, icone, nome_br, numero, selo_class, selo_perfil  # noqa: E402
 
 
@@ -210,14 +210,7 @@ footer .in{{display:flex;flex-wrap:wrap;gap:10px 20px;padding-top:18px;padding-b
  <ul class="grid" id="lista">
 {cards} </ul>
 </main>
-<footer><div class="in">
- <span>Elite Boardgamers</span>
- <a href="../">Notícias</a>
- <a href="../consulta/">Consulta Golden Geek 2015–2025</a>
- <a href="../politica-editorial/">Política editorial</a>
- <a href="{INSTAGRAM}" target="_blank" rel="noopener">Instagram @eliteboardgamers</a>
- <a href="{WHATSAPP}" target="_blank" rel="noopener">Grupo do WhatsApp</a>
-</div></footer>
+{rodape("../")}
 <script>
 (() => {{
   const form = document.getElementById("filtros"), lista = document.getElementById("lista"), dlg = document.getElementById("dlg-f");
