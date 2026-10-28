@@ -59,7 +59,7 @@ def trilha(*itens):
 
 
 # CSS da trilha, igual nas páginas escuras (resenha, notícia)
-CSS_TRILHA = (".trilha ol{display:flex;align-items:center;min-width:0;margin:0;padding:0;list-style:none;font-size:.85rem;color:var(--muted)}"
+CSS_TRILHA = (".trilha{min-width:0;max-width:100%}.trilha ol{display:flex;align-items:center;min-width:0;margin:0;padding:0;list-style:none;font-size:.85rem;color:var(--muted)}"
               ".trilha li{display:flex;align-items:center;white-space:nowrap}"
               ".trilha li+li::before{content:\"›\";content:\"›\" / \"\";margin:0 8px;color:var(--muted)}"
               ".trilha a{color:var(--gold);font-weight:700;text-decoration:none;padding:4px 0}.trilha a:hover{text-decoration:underline}"
