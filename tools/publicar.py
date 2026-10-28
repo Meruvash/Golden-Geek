@@ -57,3 +57,11 @@ if __name__ == "__main__":
         c = json.loads((ROOT / "conteudo" / f"{slug}.json").read_text(encoding="utf-8"))
         (ROOT / slug / "index.html").write_text(build_review.build(c), encoding="utf-8")
     print("ok", len(pauta["publicadas"]), "resenhas regeradas")
+    # A página inicial mostra as últimas resenhas: regera junto, para a nova aparecer lá também.
+    import build_home
+    try:
+        for n in build_home.build_home():
+            build_home.build_nota(n)
+        print("ok index.html (Últimas resenhas atualizada)")
+    except SystemExit as e:
+        print(f"⚠️ página inicial NÃO regerada: {e}. Corrija e rode python3 tools/build_home.py")

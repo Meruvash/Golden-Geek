@@ -75,6 +75,10 @@ Padrão: **Batch API** (50% mais barata, entrega em até 24 h), com `gpt-image-2
 
 Refações pontuais e urgentes: `python3 tools/gerar_infografico_openai.py conteudo/<slug>.json` (síncrono, preço cheio). Use `--dry-run` para ver o prompt.
 
+## Rotina das fotos (14:51 de Brasília, sessão agendada)
+
+Na véspera, a tarefa "Fotos oficiais das resenhas do dia seguinte (15h)" passa por todos os jogos de `lotes/pendente.json` e os `em_producao` e roda a etapa 1b em quem ainda não tem fotos liberadas. Ela só faz commit de `<slug>/fotos/` e `tools/imagens/editoras.json` e avisa o usuário sobre o jogo que ficou sem foto de topo, com o pedido de kit de imprensa pronto.
+
 ## Rotina diária (07:55 de Brasília, sessão agendada)
 
 1. `buscar` o lote do dia anterior. Se concluído, faça a etapa 5 nas imagens e apresente a mensagem de aprovação (etapa 6) com as imagens.
@@ -95,7 +99,7 @@ O usuário responde em uma linha, por exemplo "aprova 1, 2 e 4; refaz a 3: <ajus
 
 1. `python3 tools/salvar_imagem.py <slug>` salva `<slug>/infografico.webp` (1600 px de largura, até ~800 KB) e `<slug>/capa.jpg` (800×800, recorte do topo) e apaga `variacao-*.png`.
 2. `python3 tools/build_review.py conteudo/<slug>.json` gera `<slug>/index.html`. Se o jogo tem fotos oficiais aprovadas, refaz também a `<slug>/capa.jpg` a partir da foto do topo (ver "Fotos oficiais na página" em `PADRAO_EDITORIAL.md`); por isso rode sempre depois do `salvar_imagem.py`.
-3. `python3 tools/publicar.py conteudo/<slug>.json` confere se há fotos oficiais liberadas (`usar_na_pagina`; ver etapa 1b), marca o jogo como `publicado` em `pauta.json` e regera `resenhas/index.html` inteira (`tools/build_lista.py`) e todas as páginas de resenha, para o bloco "Continue lendo" incluir a nova. Depois, `node tools/capa_resenhas.js` refaz `resenhas/capa.jpg` (prévia do WhatsApp da página de resenhas) com o mosaico das capas.
+3. `python3 tools/publicar.py conteudo/<slug>.json` confere se há fotos oficiais liberadas (`usar_na_pagina`; ver etapa 1b), marca o jogo como `publicado` em `pauta.json` e regera `resenhas/index.html` inteira (`tools/build_lista.py`) e todas as páginas de resenha, para o bloco "Continue lendo" incluir a nova, e a página inicial (bloco Últimas resenhas, via `tools/build_home.py`). Depois, `node tools/capa_resenhas.js` refaz `resenhas/capa.jpg` (prévia do WhatsApp da página de resenhas) com o mosaico das capas.
 4. Teste no Playwright em 390 px e 1200 px: sem erros de JS e sem rolagem horizontal.
 5. Commit em `main` e push.
 6. Grave a legenda do Instagram no campo `legenda` de `conteudo/<slug>.json` antes do passo 2 (é o texto que o botão "Legenda" copia) e entregue-a também na resposta: gancho de até 125 caracteres na 1ª linha, 3–4 linhas de resumo com o veredito e o prêmio, uma pergunta para comentários, "Resenha completa no link da bio" e 8–12 hashtags em PT e EN.

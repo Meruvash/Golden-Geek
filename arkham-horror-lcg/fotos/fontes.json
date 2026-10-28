@@ -12,6 +12,30 @@
    "imagem": "https://cdn.svc.asmodee.net/production-fantasyflightgames/uploads/image-converter/2026/09/FFG_AHC100_Product-Image-1.webp",
    "baixada_em": "2026-10-28",
    "aprovada": true
+  },
+  {
+   "arquivo": "fotos/mesa-1.webp",
+   "tipo": "mesa",
+   "largura": 1600,
+   "altura": 1600,
+   "editora": "Asmodee UK",
+   "credito": "Imagem: Asmodee UK · edição em inglês",
+   "pagina": "https://www.asmodee.co.uk/products/ffgahc100-arkham-horror-the-card-game-chapter-two-core-set",
+   "imagem": "https://cdn.shopify.com/s/files/1/0572/1076/5512/files/FFGAHC100_3.jpg",
+   "baixada_em": "2026-10-28",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 1600,
+   "altura": 1600,
+   "editora": "Asmodee UK",
+   "credito": "Imagem: Asmodee UK · edição em inglês",
+   "pagina": "https://www.asmodee.co.uk/products/ffgahc100-arkham-horror-the-card-game-chapter-two-core-set",
+   "imagem": "https://cdn.shopify.com/s/files/1/0572/1076/5512/files/FFGAHC100_5.jpg",
+   "baixada_em": "2026-10-28",
+   "aprovada": true
   }
  ]
 }
