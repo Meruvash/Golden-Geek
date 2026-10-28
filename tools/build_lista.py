@@ -74,6 +74,10 @@ h1,h2,p,ul{{margin:0}}ul{{padding:0;list-style:none}}img{{display:block;max-widt
 .bar .ig{{margin-left:auto}}.bar .ig:hover{{color:var(--gold)}}
 .bar .zap-mini{{background:var(--zap);color:#fff}}.bar .zap-mini:hover{{background:#11683a}}
 .bar .gg{{border:1px solid #3a3f48;border-radius:6px;padding:6px 12px}}.bar .gg:hover{{border-color:var(--gold)}}
+.nav{{border-bottom:1px solid var(--line);background:#0f1115}}
+.nav ul{{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}}
+.nav a{{display:block;padding:11px 12px;white-space:nowrap;text-decoration:none;font-weight:700;font-size:.92rem;border-bottom:3px solid transparent}}
+.nav a:hover{{border-bottom-color:var(--gold)}}.nav a[aria-current]{{color:var(--gold);border-bottom-color:var(--gold)}}
 @media (max-width:700px){{.bar .ig span,.bar .zap-mini span,.gg-l{{display:none}}.bar .gg{{padding:6px 10px}}}}
 @media (max-width:560px){{.grid{{grid-template-columns:1fr 1fr;gap:12px}}.corpo{{padding:10px 12px 14px}}.card h2{{font-size:1rem}}.tag{{font-size:.84rem}}.nota{{width:38px;height:44px;font-size:.85rem;right:6px;bottom:6px}}}}
 .topo{{padding:36px 0 24px;display:grid;gap:18px}}
@@ -101,11 +105,11 @@ footer .in{{display:flex;flex-wrap:wrap;gap:10px 20px;padding-top:18px;padding-b
 </head>
 <body>
 <header class="bar"><div class="in">
- <a class="marca" href="./"><img src="../marca/elite-boardgamers.webp" width="318" height="254" alt="Elite Boardgamers"></a>
+ <a class="marca" href="../"><img src="../marca/elite-boardgamers.webp" width="318" height="254" alt="Elite Boardgamers"></a>
  <a class="ig" href="{INSTAGRAM}" target="_blank" rel="noopener" aria-label="Instagram @eliteboardgamers">{icone("insta")}<span>@eliteboardgamers</span></a>
  <a class="zap-mini" href="{WHATSAPP}" target="_blank" rel="noopener">{icone("zap")}<span>Grupo do WhatsApp</span></a>
- <a class="gg" href="../consulta/">Consulta <span class="gg-l">Golden Geek</span></a>
 </div></header>
+<nav class="nav" aria-label="Seções do site"><ul class="in"><li><a href="../">Notícias</a></li><li><a href="./" aria-current="page">Resenhas</a></li><li><a href="../consulta/">Consulta Golden Geek</a></li></ul></nav>
 <main class="in">
  <section class="topo">
   <h1>Resenhas de jogos premiados</h1>
@@ -117,6 +121,7 @@ footer .in{{display:flex;flex-wrap:wrap;gap:10px 20px;padding-top:18px;padding-b
 </main>
 <footer><div class="in">
  <span>Elite Boardgamers</span>
+ <a href="../">Notícias</a>
  <a href="../consulta/">Consulta Golden Geek 2015–2025</a>
  <a href="{INSTAGRAM}" target="_blank" rel="noopener">Instagram @eliteboardgamers</a>
  <a href="{WHATSAPP}" target="_blank" rel="noopener">Grupo do WhatsApp</a>

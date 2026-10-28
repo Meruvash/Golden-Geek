@@ -479,6 +479,10 @@ a{{color:var(--link);text-underline-offset:.18em}}
 .marca{{display:flex;align-items:center;gap:10px}}.marca img{{width:84px;height:auto;border-radius:6px}}
 .bar .todas{{margin-left:auto;border:1px solid #3a3f48;border-radius:6px;padding:6px 12px}}
 .bar .todas:hover{{background:#1a1d22;border-color:var(--gold)}}
+.nav{{background:var(--panel);border-bottom:1px solid var(--line)}}
+.nav ul{{max-width:1120px;margin:0 auto;padding:0 8px;display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}}
+.nav a{{display:block;padding:11px 10px;white-space:nowrap;color:var(--ink);text-decoration:none;font-weight:700;font-size:.92rem;border-bottom:3px solid transparent}}
+.nav a:hover{{border-bottom-color:var(--gold)}}.nav a[aria-current]{{color:var(--gold);border-bottom-color:var(--gold)}}
 .jogo{{background:var(--panel);border-bottom:1px solid var(--line)}}
 .jogo .in{{max-width:1120px;margin:0 auto;padding:20px 16px 0;display:grid;gap:20px}}
 .capa a{{display:block;border-radius:8px;overflow:hidden;box-shadow:0 8px 28px rgba(0,0,0,.6)}}
@@ -660,11 +664,12 @@ footer a{{color:var(--bar-ink)}}
 <body>
 <a class="skip" href="#conteudo">Pular para o conteúdo</a>
 <header class="bar"><div class="in">
- <a class="marca" href="../resenhas/"><img src="../marca/elite-boardgamers.webp" width="318" height="254" alt="Elite Boardgamers"></a>
+ <a class="marca" href="../"><img src="../marca/elite-boardgamers.webp" width="318" height="254" alt="Elite Boardgamers"></a>
  <a class="ig" href="{INSTAGRAM}" target="_blank" rel="noopener" aria-label="Instagram @eliteboardgamers">{icone("insta")}<span>@eliteboardgamers</span></a>
  <a class="zap-mini" href="{WHATSAPP}" target="_blank" rel="noopener">{icone("zap")}<span>Grupo do WhatsApp</span></a>
  <a class="todas" href="../resenhas/">Todas as resenhas</a>
 </div></header>
+<nav class="nav" aria-label="Seções do site"><ul><li><a href="../">Notícias</a></li><li><a href="../resenhas/" aria-current="page">Resenhas</a></li><li><a href="../consulta/">Consulta Golden Geek</a></li></ul></nav>
 
 <section class="jogo"><div class="in">
  {topo_fig}
@@ -690,6 +695,7 @@ footer a{{color:var(--bar-ink)}}
 
 <footer><div class="in">
  <span>Elite Boardgamers</span>
+ <a href="../">Notícias</a>
  <a href="../resenhas/">Todas as resenhas</a>
  <a href="../consulta/">Consulta Golden Geek</a>
  <a href="{INSTAGRAM}" target="_blank" rel="noopener">Instagram @eliteboardgamers</a>
