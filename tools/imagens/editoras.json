@@ -680,5 +680,68 @@
    ],
    "verificado_em": "2026-10-28"
   }
+ },
+ "en.palaisdesfestivals.com": {
+  "nome": "Palais des Festivals",
+  "apelidos": [
+   "Palais des Festivals"
+  ],
+  "site": "https://en.palaisdesfestivals.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://en.palaisdesfestivals.com/press-area/",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://en.palaisdesfestivals.com/sitemap.xml/"
+   ],
+   "verificado_em": "2026-10-28"
+  }
+ },
+ "diversaooffline.com.br": {
+  "nome": "Diversão Offline",
+  "apelidos": [
+   "Diversão Offline"
+  ],
+  "site": "https://diversaooffline.com.br",
+  "plataforma": "wordpress",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://diversaooffline.com.br/sitemap_index.xml"
+   ],
+   "verificado_em": "2026-10-28"
+  }
+ },
+ "restorationgames.com": {
+  "nome": "Restoration Games",
+  "apelidos": [
+   "Restoration Games"
+  ],
+  "site": "https://restorationgames.com",
+  "plataforma": "woocommerce",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://restorationgames.com/sitemap_index.xml"
+   ],
+   "verificado_em": "2026-10-28"
+  }
  }
 }

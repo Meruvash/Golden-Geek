@@ -31,14 +31,18 @@ Fotos próprias que o usuário manda antes da hora ficam em `<slug>/fotos/reserv
 
 ## Gatilho automático (resenhas e notícias)
 
-`tools/imagens/gatilho.py` roda como gancho do Claude Code depois de cada Write, Edit ou Bash (`.claude/settings.json`). Quando aparece um conteúdo novo sem fotos aprovadas — `conteudo/<slug>.json` (resenha) ou `conteudo/noticias/<data>-<assunto>.json` (notícia), mexido nas últimas 6 horas —, ele:
+`tools/imagens/gatilho.py` roda como gancho do Claude Code depois de cada Write, Edit ou Bash (`.claude/settings.json`) e olha o conteúdo mexido nas últimas 6 horas:
 
-1. dispara `robo.py buscar` em segundo plano, uma vez só, assim que o arquivo tiver de onde buscar (editora na ficha; na notícia, `editora` ou `fontes`);
-2. avisa a sessão quando a busca termina, também uma vez só.
+- **resenha** `conteudo/<slug>.json` sem fotos aprovadas em `<slug>/fotos/fontes.json`, assim que a ficha tiver a editora;
+- **notícia** `conteudo/noticias/<data>-<assunto>.json` com `imagem` vazia (`null`) ou apontando para arquivo que não existe.
 
-Quando o aviso chegar, faça as etapas 3 e 4 abaixo (folha de contato, aprovar, marcar pessoas e texto, crivo). Na notícia, o slug é `noticias/<data>-<assunto>`: as fotos aprovadas vão para `noticias/<data>-<assunto>/fotos/`, ao lado da página. Regra do plano de notícias: foto só da editora, de licença livre ou nossa; sem foto boa, o cartão usa a capa da nossa resenha do jogo.
+Cada uma entra uma única vez numa **fila** (`.cache/imagens/fila.txt`), e um único trabalhador faz uma busca por vez (nunca em paralelo nos mesmos sites). A sessão é avisada quando cada busca termina ou falha. Busca interrompida volta para a fila sozinha. Para refazer, apague `.cache/imagens/<chave>/busca.iniciada`.
 
-Para reprocessar um conteúdo, apague `.cache/imagens/<slug>/busca.iniciada`.
+Na notícia, o robô procura pelos `jogos` citados (a ficha da nossa resenha diz a editora) e pelas `fontes` que são páginas de editoras ou organizadores mapeados em `editoras.json` (comunicado de imprensa, site oficial do evento). Escolhida a imagem na folha, grave com:
+
+`python3 tools/imagens/robo.py imagem-noticia noticias/<data>-<assunto> <n> [--nota "..."]`
+
+Ela vira `noticias/capas/<slug>.jpg` (até 1200 px, ≤ 250 KB, fundo transparente vira branco) e o campo `imagem` recebe arquivo, crédito ("Imagem: <fonte>"), origem e página. Foto de divulgação sem texto por cima; sem foto boa, deixe `null`.
 
 ## Etapa 1: a editora tem receita?
 

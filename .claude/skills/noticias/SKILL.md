@@ -27,7 +27,7 @@ Uma nota por arquivo em `conteudo/noticias/<AAAA-MM-DD>-<assunto>.json`, no **pa
 
 - `ids_ludopedia`: ids dos jogos da nota que aparecem no calendário (o cartão passa a ligar para a nota).
 - `jogos`: resenhas nossas citadas (`{"nome", "resenha": "<slug>"}`).
-- `imagem`: capa da edição nacional via Ludopedia (`noticias/capas/<id>.jpg`, baixe `https://storage.googleapis.com/ludopedia-capas/<id>_m.jpg`) com crédito "Capa via Ludopedia"; sem capa, `null`.
+- `imagem`: capa da edição nacional via Ludopedia (`noticias/capas/<id>.jpg`, baixe `https://storage.googleapis.com/ludopedia-capas/<id>_m.jpg`) com crédito "Capa via Ludopedia"; sem capa, `null`. Nota com `imagem: null` (evento, prêmio, financiamento sem capa na Ludopedia) dispara sozinha a busca de fotos (gancho da skill `imagens`): quando o aviso chegar, escolha na folha e grave com `robo.py imagem-noticia`. Para isso, cite nas `fontes` a página oficial (editora, organizador, comunicado de imprensa).
 - Manchete proposta: `"manchete": true, "manchete_aprovada": false`.
 
 `python3 tools/noticias/checar_noticia.py` precisa passar em todas.

@@ -11,6 +11,8 @@ Uso:
                                        Commons em livres.json), com autor e licença no crédito; somam-se às candidatas
   python3 tools/imagens/robo.py kit <slug> <zip ou link do zip> --nome "Editora"
                                        imagens de um kit de imprensa (link público ou arquivo baixado pelo usuário)
+  python3 tools/imagens/robo.py imagem-noticia noticias/<arquivo-sem-.json> <n> [--nota "..."]
+                                       grava a candidata n como imagem da notícia (noticias/capas/<slug>.jpg + campo imagem)
   python3 tools/imagens/robo.py lote [slug ...]   roda `buscar` nos jogos sem fotos e grava lotes/imagens-<data>.md
 
 Boa conduta: confere o robots.txt (RFC 9309, com * e $) de cada host antes de cada pedido, respeita o Crawl-delay
@@ -629,7 +631,8 @@ def conteudo(slug):
 
 def paginas_oficiais(c, todas):
     """Links das fontes de uma notícia que são páginas de editoras mapeadas (o anúncio traz a imagem de divulgação)."""
-    urls = [f if isinstance(f, str) else (f[1] if len(f) > 1 else "") for f in c.get("fontes", [])]
+    urls = [f if isinstance(f, str) else f.get("url", "") if isinstance(f, dict) else (f[1] if len(f) > 1 else "")
+            for f in c.get("fontes", [])]
     achadas = []
     for u in urls:
         host = urlsplit(u).netloc.removeprefix("www.")
@@ -644,8 +647,19 @@ def buscar(cli, slug, url_fixa=None, so_editora=None):
     fi = dict(c.get("ficha", []))
     if c.get("editora") and not fi.get("Editora original"):  # notícia: editora num campo próprio, sem ficha
         fi["Editora original"] = c["editora"]
+    nomes = []
+    for j in c.get("jogos", []):  # notícia: jogos citados; a ficha da nossa resenha diz a editora
+        nomes.append(j.get("nome", ""))
+        rf = ROOT / "conteudo" / f"{j.get('resenha')}.json"
+        if j.get("resenha") and rf.exists():
+            ficha_r = dict(json.loads(rf.read_text(encoding="utf-8")).get("ficha", []))
+            for campo in ("Editora original", "Editora no Brasil"):
+                if ficha_r.get(campo) and not fi.get(campo):
+                    fi[campo] = ficha_r[campo]
     c.setdefault("jogo", c.get("titulo", slug))
-    nomes = nomes_do_jogo(c) if c.get("ficha") or c.get("editora") else []
+    if c.get("ficha") or c.get("editora"):
+        nomes = nomes_do_jogo(c) + nomes
+    nomes = [n for n in dict.fromkeys(nomes) if n]
     todas = receitas()
     fontes = []
     for campo in ("Editora original", "Editora no Brasil"):
@@ -756,6 +770,31 @@ def aprovar(slug, escolhas, forcar=False, nota=None):
     reg_f.write_text(json.dumps(reg, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
 
 
+def imagem_noticia(slug, n, nota=None):
+    """Grava a candidata n como imagem da notícia (noticias/capas/<slug>.jpg) e preenche o campo `imagem` do JSON."""
+    arq_json = ROOT / "conteudo" / f"{slug}.json"
+    c = json.loads(arq_json.read_text(encoding="utf-8"))
+    cand = {x["n"]: x for x in json.loads((CACHE / slug / "candidatas.json").read_text(encoding="utf-8"))}[n]
+    im = Image.open(ROOT / cand["arquivo"])
+    if im.mode in ("RGBA", "LA", "P"):  # fundo transparente vira branco no JPG
+        im = im.convert("RGBA")
+        fundo = Image.new("RGB", im.size, "white")
+        fundo.paste(im, mask=im.split()[-1])
+        im = fundo
+    im = im.convert("RGB")
+    im.thumbnail((1200, 1200), Image.LANCZOS)
+    destino = ROOT / "noticias" / "capas" / f"{c['slug']}.jpg"
+    destino.parent.mkdir(parents=True, exist_ok=True)
+    for q in range(85, 55, -5):
+        im.save(destino, quality=q, optimize=True, progressive=True)
+        if destino.stat().st_size <= 250_000:
+            break
+    credito = (cand.get("credito") or f"Imagem: {cand['editora']}") + (f" · {nota}" if nota else "")
+    c["imagem"] = {"arquivo": f"capas/{c['slug']}.jpg", "credito": credito, "origem": cand["url"], "pagina": cand["pagina"]}
+    arq_json.write_text(json.dumps(c, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    print(f"noticias/capas/{c['slug']}.jpg  {im.width}x{im.height}  {destino.stat().st_size // 1024} KB  {credito}")
+
+
 def email_pedido(editora, jogo):
     return (f"Assunto: Pedido de kit de imprensa – {jogo}\n\n"
             f"Olá, equipe {editora},\n\n"
@@ -827,6 +866,8 @@ def main():
                   f"{(CACHE / slug / 'folha.jpg').relative_to(ROOT)}")
             for a in (avisos + av2)[:5]:
                 print("  ⚠️", a)
+    elif cmd == "imagem-noticia":
+        imagem_noticia(resto[0], int(resto[1]), opc.get("--nota"))
     elif cmd == "kit":
         if not opc.get("--nome"):
             sys.exit('Informe a editora: kit <slug> <zip ou link> --nome "Editora"')

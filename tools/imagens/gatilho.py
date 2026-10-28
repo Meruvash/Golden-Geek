@@ -1,14 +1,18 @@
-"""Gancho do Claude Code: percebe resenha ou notícia nova sem fotos e já dispara a busca de imagens.
+"""Gancho do Claude Code: percebe resenha ou notícia nova sem imagem e já põe a busca de fotos na fila.
 
-Roda depois de cada Write, Edit ou Bash (configurado em .claude/settings.json). Para cada conteúdo novo
-(conteudo/<slug>.json ou conteudo/noticias/<data>-<assunto>.json, mexido nas últimas horas) que ainda não tem
-fotos aprovadas:
-  1. dispara `robo.py buscar` em segundo plano, uma única vez (marca .cache/imagens/<slug>/busca.iniciada);
-  2. quando a busca termina, avisa a sessão uma única vez para revisar a folha de contato (skill imagens, etapas 3 e 4).
-O aviso volta para a sessão como contexto do gancho. O script nunca falha alto: qualquer erro sai em silêncio.
+Roda depois de cada Write, Edit ou Bash (configurado em .claude/settings.json) e olha o conteúdo mexido nas
+últimas horas:
+  - resenha `conteudo/<slug>.json` sem fotos aprovadas em `<slug>/fotos/fontes.json`;
+  - notícia `conteudo/noticias/<data>-<assunto>.json` com `imagem` vazia ou apontando para arquivo que não existe.
+Cada uma entra uma única vez numa fila (.cache/imagens/fila.txt). Um único trabalhador processa a fila, uma busca
+por vez, para nunca bater em paralelo nos mesmos sites. Quando a busca termina (ou falha), a sessão é avisada uma
+vez para revisar a folha de contato. Busca interrompida (trabalhador morto) volta para a fila sozinha.
+O script nunca falha alto: qualquer erro sai em silêncio.
 
-Teste manual: echo '{}' | python3 tools/imagens/gatilho.py
+Uso manual: echo '{}' | python3 tools/imagens/gatilho.py      (o que o gancho faz)
+            python3 tools/imagens/gatilho.py --trabalhar         (processa a fila; o gancho chama sozinho)
 """
+import fcntl
 import json
 import subprocess
 import sys
@@ -17,52 +21,103 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 CACHE = ROOT / ".cache" / "imagens"
+FILA = CACHE / "fila.txt"
+TRAVA = CACHE / "fila.lock"
 JANELA_H = 6  # só conteúdo mexido nas últimas horas conta como novo
 
 
-def slugs_novos(arquivo_tocado):
-    vistos = []
-    pastas = [ROOT / "conteudo", ROOT / "conteudo" / "noticias"]
+def recentes(arquivo_tocado):
     agora = time.time()
-    for pasta in pastas:
-        for f in pasta.glob("*.json") if pasta.exists() else []:
+    for pasta in (ROOT / "conteudo", ROOT / "conteudo" / "noticias"):
+        for f in sorted(pasta.glob("*.json")) if pasta.exists() else []:
             if agora - f.stat().st_mtime < JANELA_H * 3600 or (arquivo_tocado and f.resolve() == arquivo_tocado):
-                vistos.append(f)
-    for f in vistos:
-        rel = f.relative_to(ROOT / "conteudo").with_suffix("")
-        yield str(rel).replace("\\", "/"), f
+                yield str(f.relative_to(ROOT / "conteudo").with_suffix("")), f
 
 
-def tem_fotos(slug):
-    reg = ROOT / slug / "fotos" / "fontes.json"
+def precisa_de_imagem(chave, c):
+    if chave.startswith("noticias/"):
+        im = c.get("imagem")
+        return not (im and im.get("arquivo") and (ROOT / "noticias" / im["arquivo"]).exists())
     try:
-        return bool(json.loads(reg.read_text(encoding="utf-8")).get("fotos"))
+        return not json.loads((ROOT / chave / "fotos" / "fontes.json").read_text(encoding="utf-8")).get("fotos")
     except (OSError, ValueError):
-        return False
+        return True
 
 
 def tem_de_onde_buscar(c):
-    """Resenha com editora na ficha, notícia com editora ou com fontes; sem isso a busca não teria por onde começar."""
+    """Editora na ficha (resenha); editora, jogos ou fontes (notícia). Sem isso a busca não teria por onde começar."""
     ficha = dict(c.get("ficha", []))
-    return bool(ficha.get("Editora original") or ficha.get("Editora no Brasil") or c.get("editora") or c.get("fontes"))
+    return bool(ficha.get("Editora original") or ficha.get("Editora no Brasil") or c.get("editora")
+                or c.get("jogos") or c.get("fontes"))
 
 
-def disparar(slug):
-    pasta = CACHE / slug
+def fila():
+    return [l for l in FILA.read_text().splitlines() if l.strip()] if FILA.exists() else []
+
+
+def trabalhador_ativo():
+    TRAVA.parent.mkdir(parents=True, exist_ok=True)
+    with open(TRAVA, "a") as t:
+        try:
+            fcntl.flock(t, fcntl.LOCK_EX | fcntl.LOCK_NB)
+        except OSError:
+            return True
+        fcntl.flock(t, fcntl.LOCK_UN)
+        return False
+
+
+def enfileirar(chave):
+    pasta = CACHE / chave
     pasta.mkdir(parents=True, exist_ok=True)
+    for marca in ("busca.fim", "busca.erro", "busca.avisado"):
+        (pasta / marca).unlink(missing_ok=True)
     (pasta / "busca.iniciada").write_text(time.strftime("%Y-%m-%d %H:%M"))
-    cmd = (f'python3 tools/imagens/robo.py buscar "{slug}" > "{pasta / "busca.log"}" 2>&1; '
-           f'touch "{pasta / "busca.fim"}"')
-    subprocess.Popen(["sh", "-c", cmd], cwd=ROOT, stdin=subprocess.DEVNULL, stdout=subprocess.DEVNULL,
-                     stderr=subprocess.DEVNULL, start_new_session=True)
+    if chave not in fila():
+        with open(FILA, "a") as f:
+            f.write(chave + "\n")
 
 
-def resumo_busca(slug):
+def acordar_trabalhador():
+    subprocess.Popen([sys.executable, str(Path(__file__).resolve()), "--trabalhar"], cwd=ROOT,
+                     stdin=subprocess.DEVNULL, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
+                     start_new_session=True)
+
+
+def trabalhar():
+    """Processa a fila, uma busca por vez. Só um trabalhador roda: os outros saem na hora."""
+    TRAVA.parent.mkdir(parents=True, exist_ok=True)
+    with open(TRAVA, "a") as t:
+        try:
+            fcntl.flock(t, fcntl.LOCK_EX | fcntl.LOCK_NB)
+        except OSError:
+            return
+        while True:
+            itens = fila()
+            if not itens:
+                break
+            chave = itens[0]
+            pasta = CACHE / chave
+            pasta.mkdir(parents=True, exist_ok=True)
+            with open(pasta / "busca.log", "w") as log:
+                rc = subprocess.call([sys.executable, str(ROOT / "tools/imagens/robo.py"), "buscar", chave],
+                                     cwd=ROOT, stdout=log, stderr=subprocess.STDOUT)
+            (pasta / ("busca.fim" if rc == 0 else "busca.erro")).write_text(f"{time.strftime('%Y-%m-%d %H:%M')} rc={rc}")
+            FILA.write_text("".join(l + "\n" for l in fila() if l != chave))
+
+
+def candidatas(chave):
     try:
-        n = len(json.loads((CACHE / slug / "candidatas.json").read_text(encoding="utf-8")))
+        return len(json.loads((CACHE / chave / "candidatas.json").read_text(encoding="utf-8")))
     except (OSError, ValueError):
-        n = 0
-    return n
+        return 0
+
+
+def instrucao(chave):
+    if chave.startswith("noticias/"):
+        return (f"escolha uma imagem na folha .cache/imagens/{chave}/folha.jpg (foto de divulgação, sem texto por cima) "
+                f"e grave com `python3 tools/imagens/robo.py imagem-noticia {chave} <n>`")
+    return (f"abra .cache/imagens/{chave}/folha.jpg e siga a skill imagens (etapas 3 e 4: escolher, aprovar, "
+            f"marcar pessoas/texto e rodar o crivo)")
 
 
 def main():
@@ -72,36 +127,43 @@ def main():
         evento = {}
     caminho = (evento.get("tool_input") or {}).get("file_path")
     tocado = Path(caminho).resolve() if caminho else None
-    avisos = []
-    for slug, f in slugs_novos(tocado):
-        if tem_fotos(slug):
-            continue
+    avisos, novos = [], []
+    ativo = trabalhador_ativo()
+    for chave, f in recentes(tocado):
         try:
             c = json.loads(f.read_text(encoding="utf-8"))
         except (OSError, ValueError):
             continue  # arquivo pela metade: tenta de novo no próximo gancho
-        pasta = CACHE / slug
-        tipo = "notícia" if slug.startswith("noticias/") else "resenha"
-        reservadas = ROOT / slug / "fotos" / "reservadas"
-        extra = (f" Há fotos próprias guardadas em {reservadas.relative_to(ROOT)}/ (veja reservadas.json): "
+        if not precisa_de_imagem(chave, c):
+            continue
+        pasta = CACHE / chave
+        tipo = "notícia" if chave.startswith("noticias/") else "resenha"
+        reservadas = ROOT / chave / "fotos" / "reservadas"
+        extra = (f" Há fotos próprias guardadas em {reservadas.relative_to(ROOT)}/ (reservadas.json): "
                  "considere-as antes das da editora.") if reservadas.exists() else ""
-        if not (pasta / "busca.iniciada").exists():
-            if not tem_de_onde_buscar(c):
-                continue  # ainda sem editora nem fontes: espera a pesquisa preencher
-            disparar(slug)
-            avisos.append(f"Nova {tipo} detectada: {slug}. Comecei a busca de fotos em segundo plano "
-                          f"(log em .cache/imagens/{slug}/busca.log). Siga com o texto; aviso quando terminar.{extra}")
-        elif (pasta / "busca.fim").exists() and not (pasta / "busca.avisado").exists():
+        iniciada = (pasta / "busca.iniciada").exists()
+        fim, erro = (pasta / "busca.fim").exists(), (pasta / "busca.erro").exists()
+        if not iniciada:
+            if tem_de_onde_buscar(c):
+                enfileirar(chave)
+                novos.append(f"{tipo} {chave}")
+        elif not fim and not erro and not ativo and chave not in fila():
+            enfileirar(chave)  # o trabalhador morreu no meio: volta para a fila
+            novos.append(f"{tipo} {chave} (retomada)")
+        elif (fim or erro) and not (pasta / "busca.avisado").exists():
             (pasta / "busca.avisado").write_text(time.strftime("%Y-%m-%d %H:%M"))
-            n = resumo_busca(slug)
-            if n:
-                avisos.append(f"A busca de fotos de {slug} terminou: {n} candidatas. Abra .cache/imagens/{slug}/folha.jpg "
-                              f"e siga a skill imagens (etapas 3 e 4: escolher, aprovar, marcar pessoas/texto e rodar o "
-                              f"crivo).{extra}")
+            n = candidatas(chave)
+            if erro:
+                avisos.append(f"A busca de fotos de {chave} falhou (veja .cache/imagens/{chave}/busca.log).{extra}")
+            elif n:
+                avisos.append(f"A busca de fotos de {chave} terminou com {n} candidatas: {instrucao(chave)}.{extra}")
             else:
-                avisos.append(f"A busca de fotos de {slug} terminou sem candidatas (veja .cache/imagens/{slug}/busca.log). "
-                              f"Siga a ordem das fontes da skill imagens (licenciadas, kits, Commons, fotos próprias)."
-                              f"{extra}")
+                avisos.append(f"A busca de fotos de {chave} terminou sem candidatas (log em .cache/imagens/{chave}/"
+                              f"busca.log). Siga a ordem das fontes da skill imagens.{extra}")
+    if novos:
+        acordar_trabalhador()
+        avisos.insert(0, f"Conteúdo novo sem imagem: {', '.join(novos)}. Busca de fotos na fila, uma por vez, em "
+                         f"segundo plano ({len(fila())} na fila); aviso quando cada uma terminar.")
     if avisos:
         print(json.dumps({"hookSpecificOutput": {"hookEventName": evento.get("hook_event_name", "PostToolUse"),
                                                  "additionalContext": " ".join(avisos)}}, ensure_ascii=False))
@@ -109,6 +171,6 @@ def main():
 
 if __name__ == "__main__":
     try:
-        main()
+        trabalhar() if "--trabalhar" in sys.argv else main()
     except Exception:  # um gancho nunca pode atrapalhar a sessão
         pass
