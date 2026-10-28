@@ -1,0 +1,31 @@
+{
+ "slug": "harmonies",
+ "usar_na_pagina": true,
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 1414,
+   "altura": 1500,
+   "editora": "Libellud",
+   "credito": "Imagem: Libellud",
+   "pagina": "https://www.libellud.com/game/harmonies/",
+   "imagem": "https://cdn.svc.asmodee.net/production-libelludv2/uploads/2026/07/HARMONIES_BOX_COM_L.webp",
+   "baixada_em": "2026-10-28",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 1600,
+   "altura": 1047,
+   "editora": "Libellud",
+   "credito": "Imagem: Libellud",
+   "pagina": "https://www.libellud.com/game/harmonies/",
+   "imagem": "https://cdn.svc.asmodee.net/production-libelludv2/uploads/2026/07/HARMONIES_SPREADBOX_COM.webp",
+   "baixada_em": "2026-10-28",
+   "aprovada": true,
+   "principal": true
+  }
+ ]
+}

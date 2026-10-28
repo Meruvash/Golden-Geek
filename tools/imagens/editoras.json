@@ -786,5 +786,70 @@
    ],
    "verificado_em": "2026-10-28"
   }
+ },
+ "daysofwonder.com": {
+  "nome": "Days of Wonder",
+  "apelidos": [
+   "Days of Wonder"
+  ],
+  "site": "https://www.daysofwonder.com",
+  "plataforma": "wordpress",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://www.daysofwonder.com/press/",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.daysofwonder.com/sitemap_index.xml"
+   ],
+   "verificado_em": "2026-10-28"
+  }
+ },
+ "libellud.com": {
+  "nome": "Libellud",
+  "apelidos": [
+   "Libellud"
+  ],
+  "site": "https://www.libellud.com",
+  "plataforma": "wordpress",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.libellud.com/sitemap_index.xml"
+   ],
+   "verificado_em": "2026-10-28"
+  }
+ },
+ "deep-print-games.com": {
+  "nome": "Deep Print Games",
+  "apelidos": [
+   "Deep Print Games"
+  ],
+  "site": "https://www.deep-print-games.com",
+  "plataforma": "woocommerce",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.deep-print-games.com/wp-sitemap.xml",
+    "https://www.deep-print-games.com/sitemap.xml",
+    "https://www.deep-print-games.com/sitemap.html"
+   ],
+   "verificado_em": "2026-10-28"
+  }
  }
 }

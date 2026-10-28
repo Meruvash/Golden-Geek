@@ -1,0 +1,60 @@
+{
+ "slug": "civolution",
+ "usar_na_pagina": true,
+ "fotos": [
+  {
+   "arquivo": "fotos/mesa-1.webp",
+   "tipo": "mesa",
+   "largura": 1600,
+   "altura": 1067,
+   "editora": "Devir",
+   "credito": "Imagem: Devir",
+   "pagina": "https://devir.com.br/civolution/",
+   "imagem": "https://devir.com.br/wp-content/uploads/2026/09/IMG_1991.jpg",
+   "baixada_em": "2026-10-28",
+   "aprovada": true,
+   "principal": true
+  },
+  {
+   "arquivo": "fotos/mesa-2.webp",
+   "tipo": "mesa",
+   "largura": 1600,
+   "altura": 960,
+   "editora": "Devir",
+   "credito": "Imagem: Devir",
+   "pagina": "https://devir.com.br/civolution/",
+   "imagem": "https://devir.com.br/wp-content/uploads/2026/09/Civ_Website2.jpg",
+   "baixada_em": "2026-10-28",
+   "aprovada": true,
+   "texto": true,
+   "fora": true
+  },
+  {
+   "arquivo": "fotos/jogabilidade-1.webp",
+   "tipo": "jogabilidade",
+   "largura": 1600,
+   "altura": 1067,
+   "editora": "Devir",
+   "credito": "Imagem: Devir",
+   "pagina": "https://devir.com.br/civolution/",
+   "imagem": "https://devir.com.br/wp-content/uploads/2026/09/IMG_1995.jpg",
+   "baixada_em": "2026-10-28",
+   "aprovada": true,
+   "jogar": true
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 1600,
+   "altura": 960,
+   "editora": "Devir",
+   "credito": "Imagem: Devir",
+   "pagina": "https://devir.com.br/civolution/",
+   "imagem": "https://devir.com.br/wp-content/uploads/2026/09/Civ_Website1.jpg",
+   "baixada_em": "2026-10-28",
+   "aprovada": true,
+   "texto": true,
+   "fora": true
+  }
+ ]
+}

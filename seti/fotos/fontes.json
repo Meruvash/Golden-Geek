@@ -1,0 +1,70 @@
+{
+ "slug": "seti",
+ "usar_na_pagina": true,
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 1500,
+   "altura": 1322,
+   "editora": "Czech Games Edition",
+   "credito": "Imagem: Czech Games Edition",
+   "pagina": "https://www.czechgames.com/games/seti-search-for-extraterrestrial-intelligence",
+   "imagem": "https://cdn.prod.website-files.com/67d17a45b4e1484b40ea8869/67d17a45b4e1484b40ea8b32_Box%20image.webp",
+   "baixada_em": "2026-10-28",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/mesa-1.webp",
+   "tipo": "mesa",
+   "largura": 1600,
+   "altura": 1067,
+   "editora": "Czech Games Edition",
+   "credito": "Imagem: Czech Games Edition",
+   "pagina": "https://www.czechgames.com/games/seti-search-for-extraterrestrial-intelligence",
+   "imagem": "https://cdn.prod.website-files.com/67d17a45b4e1484b40ea8869/67d17a45b4e1484b40ea8cbd_Seti%20-002.webp",
+   "baixada_em": "2026-10-28",
+   "aprovada": true,
+   "principal": true
+  },
+  {
+   "arquivo": "fotos/mesa-2.webp",
+   "tipo": "mesa",
+   "largura": 1600,
+   "altura": 1066,
+   "editora": "Czech Games Edition",
+   "credito": "Imagem: Czech Games Edition",
+   "pagina": "https://www.czechgames.com/games/seti-search-for-extraterrestrial-intelligence",
+   "imagem": "https://cdn.prod.website-files.com/67d17a45b4e1484b40ea8869/67d17a45b4e1484b40ea8cbc_Seti%20-001.webp",
+   "baixada_em": "2026-10-28",
+   "aprovada": true,
+   "fora": true
+  },
+  {
+   "arquivo": "fotos/jogabilidade-1.webp",
+   "tipo": "jogabilidade",
+   "largura": 1600,
+   "altura": 1067,
+   "editora": "Czech Games Edition",
+   "credito": "Imagem: Czech Games Edition",
+   "pagina": "https://www.czechgames.com/games/seti-search-for-extraterrestrial-intelligence",
+   "imagem": "https://cdn.prod.website-files.com/67d17a45b4e1484b40ea8869/67d17a45b4e1484b40ea8cc1_Seti%20-031.webp",
+   "baixada_em": "2026-10-28",
+   "aprovada": true,
+   "fora": true
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 1600,
+   "altura": 1067,
+   "editora": "Czech Games Edition",
+   "credito": "Imagem: Czech Games Edition",
+   "pagina": "https://www.czechgames.com/games/seti-search-for-extraterrestrial-intelligence",
+   "imagem": "https://cdn.prod.website-files.com/67d17a45b4e1484b40ea8869/67d17a45b4e1484b40ea8cbf_Seti%20-026.webp",
+   "baixada_em": "2026-10-28",
+   "aprovada": true,
+   "jogar": true
+  }
+ ]
+}

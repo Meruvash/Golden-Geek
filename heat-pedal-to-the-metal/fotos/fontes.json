@@ -1,0 +1,57 @@
+{
+ "slug": "heat-pedal-to-the-metal",
+ "usar_na_pagina": true,
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 1498,
+   "altura": 1500,
+   "editora": "Days of Wonder",
+   "credito": "Imagem: Days of Wonder",
+   "pagina": "https://www.daysofwonder.com/game/heat/",
+   "imagem": "https://cdn.svc.asmodee.net/production-daysofwonder/uploads/image-converter/2024/07/9101-HT-elevation-left-EN-1.webp",
+   "baixada_em": "2026-10-28",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/mesa-1.webp",
+   "tipo": "mesa",
+   "largura": 1500,
+   "altura": 998,
+   "editora": "Days of Wonder",
+   "credito": "Imagem: Days of Wonder",
+   "pagina": "https://www.daysofwonder.com/game/heat/",
+   "imagem": "https://cdn.svc.asmodee.net/production-daysofwonder/uploads/image-converter/2024/07/14.webp",
+   "baixada_em": "2026-10-28",
+   "aprovada": true,
+   "principal": true
+  },
+  {
+   "arquivo": "fotos/mesa-2.webp",
+   "tipo": "mesa",
+   "largura": 1500,
+   "altura": 998,
+   "editora": "Days of Wonder",
+   "credito": "Imagem: Days of Wonder",
+   "pagina": "https://www.daysofwonder.com/game/heat/",
+   "imagem": "https://cdn.svc.asmodee.net/production-daysofwonder/uploads/image-converter/2024/07/03.webp",
+   "baixada_em": "2026-10-28",
+   "aprovada": true,
+   "fora": true
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 1500,
+   "altura": 998,
+   "editora": "Days of Wonder",
+   "credito": "Imagem: Days of Wonder",
+   "pagina": "https://www.daysofwonder.com/game/heat/",
+   "imagem": "https://cdn.svc.asmodee.net/production-daysofwonder/uploads/image-converter/2024/07/10.webp",
+   "baixada_em": "2026-10-28",
+   "aprovada": true,
+   "jogar": true
+  }
+ ]
+}
