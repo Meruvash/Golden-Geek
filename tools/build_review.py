@@ -122,6 +122,21 @@ def mais_resenhas(c, n=6):
     )
 
 
+def noticias_do_jogo(c, n=5):
+    """Notícias nossas que citam este jogo (campo jogos[].resenha das notas), mais recentes primeiro."""
+    notas = []
+    for p in (ROOT / "conteudo" / "noticias").glob("*.json"):
+        nota = json.loads(p.read_text(encoding="utf-8"))
+        if any(j.get("resenha") == c["slug"] for j in nota.get("jogos", [])):
+            notas.append(nota)
+    if not notas:
+        return ""
+    notas.sort(key=lambda x: (x["data"], x.get("publicado_em", "")), reverse=True)
+    itens = "".join(f'<li><time datetime="{x["data"]}">{data_longa(x["data"])}</time><a href="../noticias/{x["slug"]}/">{e(x["titulo"])}</a></li>'
+                    for x in notas[:n])
+    return f'<section class="bloco claro nj" id="noticias-do-jogo"><h2>Notícias sobre {e(c["jogo"])}</h2><ul>{itens}</ul></section>'
+
+
 FOTO_DESC = {"mesa": "mesa montada vista de cima", "componentes": "cartas e componentes", "capa": "caixa do jogo", "jogabilidade": "partida em andamento"}
 
 
@@ -259,7 +274,7 @@ def layout_v2(c, premios_bloco, ficha_html, fontes, fotos=None, info_meio=""):
    <p>{e(c["veredito"])}</p>
    <p class="tagline">{e(c["tagline"])}</p>
   </section>"""
-    mais = mais_resenhas(c)
+    mais = noticias_do_jogo(c) + mais_resenhas(c)
     comunidade = f"""<section class="bloco comunidade"><h2>Gostou da resenha?</h2><p>A Elite Boardgamers publica resenhas de jogos premiados todos os dias. Entre no grupo para conversar sobre jogos e siga no Instagram.</p><div class="acoes"><a class="zap" href="{WHATSAPP}" target="_blank" rel="noopener">{icone("zap", "ic zi")}<span><b>Entrar no grupo do WhatsApp</b></span></a><a class="ig-btn" href="{INSTAGRAM}" target="_blank" rel="noopener">{icone("insta")}<span>Seguir @eliteboardgamers</span></a></div></section>"""
     fontes_bloco = f'<section class="bloco claro fontes" id="fontes"><details class="mais"><summary><h2>Fontes ({len(c["fontes"])})</h2></summary><ul>{fontes}</ul><p class="note">Consulta às fontes em {e(c["consulta"])}.</p></details></section>'
     abas = "".join(
@@ -472,7 +487,7 @@ def build(c):
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
-<title>{e(c["jogo"])}: resenha | Elite Boardgamers</title>
+<title>{e(c["og_titulo"].replace(" Resenha Elite Boardgamers", " Resenha | Elite Boardgamers"))}</title>
 <meta name="description" content="{e(c["descricao"])}">
 <link rel="canonical" href="{SITE}/{slug}/">
 <meta property="og:site_name" content="Elite Boardgamers">
@@ -663,6 +678,7 @@ details.dobra{{border:0;margin:0;padding:0}}details.dobra summary{{color:inherit
 a.cc:hover{{border-color:var(--acc)}}.cc img,.cc-ph{{width:72px;height:72px;border-radius:6px;object-fit:cover}}
 .cc-ph{{display:grid;place-items:center;background:#14171c;color:var(--gold);font-weight:800;font-size:1.6rem}}
 .cc b{{display:block}}.cc span span{{display:block;font-size:.9rem;color:#3a414c}}.cc .vr{{color:#1f5fae;font-weight:700;margin-top:4px}}
+.nj li{{display:grid;gap:2px;padding:10px 0;border-top:1px solid #dde1e7}}.nj li:first-child{{border-top:0}}.nj time{{font-size:.8rem;color:#5a6270}}.nj a{{color:#1f5fae;font-weight:700;text-decoration:none}}.nj a:hover{{text-decoration:underline}}
 .mais-res ul{{display:grid;grid-template-columns:1fr 1fr;gap:12px}}
 .mais-res a{{display:grid;gap:6px;text-decoration:none;color:#14171c}}
 .mais-res img{{width:100%;aspect-ratio:1;object-fit:cover;border-radius:8px}}

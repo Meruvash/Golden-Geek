@@ -499,7 +499,10 @@ def build_nota(n):
     modificado = lastmod_registrado(url, {k: v for k, v in n.items() if k != "publicado_em"})
     ld = seo.script(seo.artigo("NewsArticle", url, n["titulo"], n["lide"], img, n["publicado_em"], modificado),
                     seo.trilha(("Início", f"{SITE}/"), ("Notícias", f"{SITE}/noticias/"), (n["titulo"], url)))
-    out.write_text(pagina(f"{n['titulo']} | Elite Boardgamers", n["lide"], url, img, pre, corpo, "article",
+    # título da busca: titulo_seo (opcional, aprovado pela edição) ou o título; o sufixo da marca só cabe em título curto
+    t_busca = n.get("titulo_seo") or n["titulo"]
+    t_busca = t_busca if len(t_busca) > 45 else f"{t_busca} | Elite Boardgamers"
+    out.write_text(pagina(t_busca, n["lide"], url, img, pre, corpo, "article",
                           f'\n<meta property="article:published_time" content="{n["publicado_em"]}">', ld), encoding="utf-8")
 
 
@@ -507,6 +510,11 @@ if __name__ == "__main__":
     for n in build_home():
         build_nota(n)
     print("ok index.html e", len(notas()), "notícias")
+    # resenhas mostram "Notícias sobre este jogo": regera as publicadas para incluir notas novas
+    import build_review
+    for pub in json.loads((ROOT / "pauta.json").read_text(encoding="utf-8"))["publicadas"]:
+        slug = pub["url"].rstrip("/").split("/")[-1]
+        (ROOT / slug / "index.html").write_text(build_review.build(json.loads((ROOT / "conteudo" / f"{slug}.json").read_text(encoding="utf-8"))), encoding="utf-8")
     import build_consulta
     print("ok consulta/index.html:", build_consulta.build())
     import build_sitemap
