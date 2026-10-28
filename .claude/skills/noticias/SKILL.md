@@ -30,7 +30,9 @@ Uma nota por arquivo em `conteudo/noticias/<AAAA-MM-DD>-<assunto>.json`, no **pa
 - `imagem`: capa da edição nacional via Ludopedia (`noticias/capas/<id>.jpg`, baixe `https://storage.googleapis.com/ludopedia-capas/<id>_m.jpg`) com crédito "Capa via Ludopedia"; sem capa, `null`. Nota com `imagem: null` (evento, prêmio, financiamento sem capa na Ludopedia) dispara sozinha a busca de fotos (gancho da skill `imagens`): quando o aviso chegar, escolha na folha e grave com `robo.py imagem-noticia`. Para isso, cite nas `fontes` a página oficial (editora, organizador, comunicado de imprensa).
 - Manchete proposta: `"manchete": true, "manchete_aprovada": false`.
 
-`python3 tools/noticias/checar_noticia.py` precisa passar em todas.
+- **Edição nacional (regra 6 do padrão das notícias):** para cada jogo da nota, rode `python3 tools/noticias/edicao_nacional.py "<jogo>"`, consulte a página do jogo na Ludopedia e faça busca estendida em português pensando em loja ("<jogo> jogo português loja brasileira"). Registre em `verificacao_nacional` (resultado, data e fontes, uma brasileira). Nunca deduza que o jogo não saiu no Brasil por não haver notícia de lançamento: foi o erro de Galactic Cruise, Rebirth e Hot Streak. Ausência se escreve "não encontramos edição nacional até <data>", nunca "não há" ou "sem edição nacional".
+
+`python3 tools/noticias/checar_noticia.py` precisa passar em todas: ele recusa frase categórica de ausência, ausência sem verificação registrada e texto que contradiz uma edição nacional verificada.
 
 ## 4. Atualizar os blocos
 
