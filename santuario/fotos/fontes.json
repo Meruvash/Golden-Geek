@@ -1,0 +1,29 @@
+{
+ "slug": "santuario",
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 1600,
+   "altura": 1600,
+   "editora": "Feuerland Spiele",
+   "credito": "Imagem: Feuerland Spiele · edição alemã (Artengarten)",
+   "pagina": "https://www.feuerland-spiele.de/spiele/artengarten/",
+   "imagem": "https://www.feuerland-spiele.de/fileadmin/game/Artengarten/Artengarten_BoxTop.jpg",
+   "baixada_em": "2026-10-28",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/mesa-1.webp",
+   "tipo": "mesa",
+   "largura": 1600,
+   "altura": 959,
+   "editora": "Feuerland Spiele",
+   "credito": "Imagem: Feuerland Spiele · edição alemã (Artengarten)",
+   "pagina": "https://www.feuerland-spiele.de/spiele/artengarten/",
+   "imagem": "https://www.feuerland-spiele.de/fileadmin/game/Artengarten/Artengarten_Schachtelszene.jpg",
+   "baixada_em": "2026-10-28",
+   "aprovada": true
+  }
+ ]
+}
