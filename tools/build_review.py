@@ -837,6 +837,7 @@ footer a{{color:var(--bar-ink)}}
   }}
 }})();
 </script>
+{seo.ANALYTICS}
 </body>
 </html>
 """

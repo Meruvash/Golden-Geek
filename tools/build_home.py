@@ -290,6 +290,7 @@ def pagina(titulo, descricao, url, imagem, pre, corpo, tipo="website", head_extr
 </head>
 <body>
 {corpo}
+{seo.ANALYTICS}
 </body>
 </html>
 """
@@ -322,6 +323,9 @@ def build_politica():
  </div></section>
  <section class="bloco"><h2>Imagens</h2><div class="corpo">
   <p>Usamos fotos oficiais de divulgação das editoras, imagens de licença livre ou fotos nossas, sempre com crédito.</p>
+ </div></section>
+ <section class="bloco"><h2>Medição de visitas</h2><div class="corpo">
+  <p>Contamos as visitas com o Cloudflare Web Analytics, que não usa cookies e não identifica quem visita o site. Os números servem só para saber quais páginas são lidas e melhorar o conteúdo.</p>
  </div></section>
  <section class="bloco"><h2>Correções</h2><div class="corpo">
   <p>Encontrou um erro? Mande uma mensagem no Instagram <a href="{INSTAGRAM}" target="_blank" rel="noopener">@eliteboardgamers</a> com o link da página e a fonte da informação correta. Erros confirmados são corrigidos na própria página.</p>

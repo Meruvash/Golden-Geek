@@ -8,6 +8,8 @@ import json
 SITE = "https://eliteboardgamers.com.br"
 ORG_ID = f"{SITE}/#organizacao"
 SITE_ID = f"{SITE}/#site"
+# Medidor de visitas sem cookies (Cloudflare Web Analytics); vai no fim do <body> de todas as páginas.
+ANALYTICS = """<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "b37421bd1ade44f1a59e46b96626bf03"}'></script><!-- End Cloudflare Web Analytics -->"""
 REDACAO = {"@type": "Organization", "name": "Redação Elite Boardgamers", "url": f"{SITE}/politica-editorial/"}
 
 
