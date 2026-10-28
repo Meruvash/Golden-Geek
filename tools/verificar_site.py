@@ -97,7 +97,8 @@ def checar_links(erros):
         html = pagina.read_text(encoding="utf-8")
         for alvo in set(LINK.findall(html)):
             u = urlparse(alvo)
-            if u.scheme or alvo.startswith(("#", "//", "data:", "mailto:", "tel:", "javascript:")) or not u.path:
+            # "${...}" é modelo de link montado pelo JavaScript da página, não endereço
+            if u.scheme or alvo.startswith(("#", "//", "data:", "mailto:", "tel:", "javascript:")) or not u.path or "${" in alvo:
                 continue
             caminho = (ROOT / u.path.lstrip("/")) if u.path.startswith("/") else (pagina.parent / unquote(u.path))
             if u.path.endswith("/") or caminho.is_dir():
