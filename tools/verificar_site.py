@@ -8,6 +8,7 @@ Checagens automáticas (saem com código 1 se alguma falhar):
   - toda resenha publicada em pauta.json tem conteúdo que passa no texto do PADRAO_EDITORIAL.md, fotos oficiais
     liberadas (ou infográfico), index.html e capa.jpg, e a página bate com o que build_review.py gera hoje;
   - links e imagens internos de todas as páginas apontam para arquivos que existem;
+  - toda página publicada tem canonical para a própria URL e está no sitemap.xml, e robots.txt aponta para o sitemap;
   - com --online, as páginas do dia e a página inicial respondem 200 no site no ar.
 No fim, lista as notícias e resenhas publicadas na data (padrão: hoje) com as fontes, para a revisão de fatos.
 """
@@ -103,6 +104,27 @@ def checar_links(erros):
                 erros.append(f"link quebrado em {rel}: {alvo}")
 
 
+def checar_sitemap(erros, ns, publicadas):
+    sitemap = ROOT / "sitemap.xml"
+    if not sitemap.exists() or not (ROOT / "robots.txt").exists():
+        erros.append("falta sitemap.xml ou robots.txt (rode python3 tools/build_sitemap.py)")
+        return
+    no_sitemap = set(re.findall(r"<loc>([^<]+)</loc>", sitemap.read_text(encoding="utf-8")))
+    if f"{SITE}/sitemap.xml" not in (ROOT / "robots.txt").read_text(encoding="utf-8"):
+        erros.append("robots.txt não aponta para o sitemap.xml")
+    urls = [f"{SITE}/", f"{SITE}/noticias/", f"{SITE}/resenhas/", f"{SITE}/consulta/"]
+    urls += [f"{SITE}/noticias/{n['slug']}/" for n in ns] + [p["url"] for p, _ in publicadas]
+    for url in urls:
+        arq = ROOT / url[len(SITE) + 1:] / "index.html"
+        if not arq.exists():
+            continue
+        canon = re.search(r'<link rel="canonical" href="([^"]+)">', arq.read_text(encoding="utf-8"))
+        if not canon or canon.group(1) != url:
+            erros.append(f"canonical ausente ou errado em {url}")
+        if url not in no_sitemap:
+            erros.append(f"fora do sitemap.xml: {url} (rode python3 tools/build_sitemap.py)")
+
+
 def checar_online(erros, urls):
     import requests
     for url in urls:
@@ -122,6 +144,7 @@ def main():
     ns = checar_noticias(erros)
     publicadas = checar_resenhas(erros)
     checar_links(erros)
+    checar_sitemap(erros, ns, publicadas)
 
     do_dia_n = [n for n in ns if n["data"] == dia]
     do_dia_r = [(p, c) for p, c in publicadas if p.get("data") == dia]

@@ -1,0 +1,159 @@
+"""Gera sitemap.xml, sitemap-noticias.xml e robots.txt.
+
+Uso: python3 tools/build_sitemap.py
+Roda sozinho no fim de build_home.py, build_review.py e publicar.py, então não precisa ser chamado à mão.
+
+Só entram páginas que existem, cujo canonical é a própria URL e que não têm noindex.
+O lastmod de cada página é a última vez que o conteúdo dela mudou de verdade (o JSON de origem), não a última
+vez que o HTML foi regerado: mudar o template não mexe no lastmod. O registro fica em conteudo/sitemap_estado.json.
+O histórico do git não serve para isso: os clones das rotinas são rasos e todo arquivo antigo aparece no commit-limite.
+O sitemap de notícias segue a regra do Google: só notas publicadas nas últimas 48 horas.
+"""
+import hashlib
+import json
+import re
+import subprocess
+from datetime import datetime, timedelta, timezone
+from pathlib import Path
+from xml.sax.saxutils import escape
+
+ROOT = Path(__file__).resolve().parent.parent
+SITE = "https://eliteboardgamers.com.br"
+ESTADO = ROOT / "conteudo" / "sitemap_estado.json"
+CANONICAL = re.compile(r'<link rel="canonical" href="([^"]+)">')
+NOINDEX = re.compile(r'<meta name="robots" content="[^"]*noindex', re.I)
+
+ROBOTS = f"""# Elite Boardgamers: todos os robôs de busca e de IA são bem-vindos.
+User-agent: *
+Allow: /
+
+Sitemap: {SITE}/sitemap.xml
+Sitemap: {SITE}/sitemap-noticias.xml
+"""
+
+
+def agora():
+    return datetime.now(timezone.utc).replace(microsecond=0)
+
+
+def assinatura(dados):
+    return hashlib.sha256(json.dumps(dados, ensure_ascii=False, sort_keys=True).encode()).hexdigest()[:16]
+
+
+def data_git(arq):
+    """Data do último commit que mexeu no arquivo, ou None se ele cai no limite de um clone raso (data falsa)."""
+    rasos = (ROOT / ".git" / "shallow").read_text().split() if (ROOT / ".git" / "shallow").exists() else []
+    r = subprocess.run(["git", "log", "-1", "--format=%H %cI", "--", str(arq.relative_to(ROOT))], cwd=ROOT, capture_output=True, text=True)
+    if r.returncode or not r.stdout.strip():
+        return None
+    h, quando = r.stdout.split()
+    return None if h in rasos else quando
+
+
+def lista_consulta(texto):
+    raw = re.search(r"const RAW = `(.*?)`", texto, re.S)
+    return raw.group(1) if raw else ""
+
+
+def data_lista_consulta(arq):
+    """Data do último commit que mudou a lista de vencedores da consulta (mudança de template não conta)."""
+    rasos = (ROOT / ".git" / "shallow").read_text().split() if (ROOT / ".git" / "shallow").exists() else []
+    rel = str(arq.relative_to(ROOT))
+    r = subprocess.run(["git", "log", "--format=%H %cI", "--", rel], cwd=ROOT, capture_output=True, text=True)
+    atual = lista_consulta(arq.read_text(encoding="utf-8"))
+    for linha in r.stdout.split("\n"):
+        if not linha:
+            continue
+        h, quando = linha.split()
+        if h in rasos:
+            return None
+        pai = subprocess.run(["git", "show", f"{h}^:{rel}"], cwd=ROOT, capture_output=True, text=True)
+        if pai.returncode or lista_consulta(pai.stdout) != atual:
+            return quando
+    return None
+
+
+def fontes():
+    """(url, caminho do HTML, assinatura do conteúdo, data inicial) de cada página do site."""
+    pauta = json.loads((ROOT / "pauta.json").read_text(encoding="utf-8"))
+    paginas = []
+    for p in sorted((ROOT / "conteudo" / "noticias").glob("*.json")):
+        n = json.loads(p.read_text(encoding="utf-8"))
+        n.pop("publicado_em", None)
+        n_pub = json.loads(p.read_text(encoding="utf-8")).get("publicado_em")
+        paginas.append(("noticia", f"{SITE}/noticias/{n['slug']}/", ROOT / "noticias" / n["slug"] / "index.html", assinatura(n), n_pub))
+    for pub in pauta["publicadas"]:
+        slug = pub["url"].rstrip("/").split("/")[-1]
+        arq = ROOT / "conteudo" / f"{slug}.json"
+        c = json.loads(arq.read_text(encoding="utf-8"))
+        inicial = max(filter(None, [pub.get("data"), data_git(arq)]))
+        paginas.append(("resenha", f"{SITE}/{slug}/", ROOT / slug / "index.html", assinatura(c), inicial))
+    consulta = ROOT / "consulta" / "index.html"
+    paginas.append(("consulta", f"{SITE}/consulta/", consulta, assinatura(lista_consulta(consulta.read_text(encoding="utf-8"))), data_lista_consulta(consulta)))
+    return paginas
+
+
+def indexavel(url, html_arq):
+    if not html_arq.exists():
+        return False
+    s = html_arq.read_text(encoding="utf-8")
+    c = CANONICAL.search(s)
+    return bool(c and c.group(1) == url and not NOINDEX.search(s))
+
+
+def build():
+    estado = json.loads(ESTADO.read_text(encoding="utf-8")) if ESTADO.exists() else {}
+    hoje = agora()
+    novo, entradas, fora = {}, [], []
+    for tipo, url, arq, ass, inicial in fontes():
+        if not indexavel(url, arq):
+            fora.append(url)
+            continue
+        antes = estado.get(url)
+        if antes and antes["hash"] == ass:
+            lastmod = antes["lastmod"]
+        else:
+            # primeira vez: data real de publicação; depois, a hora em que o conteúdo mudou
+            lastmod = inicial if not antes else hoje.isoformat()
+        novo[url] = {"hash": ass, "lastmod": lastmod}
+        entradas.append((tipo, url, lastmod))
+
+    def maior(tipos):
+        datas = [lm for t, _, lm in entradas if t in tipos and lm]
+        return max(datas, key=lambda d: datetime.fromisoformat(d if "T" in d else d + "T00:00:00+00:00")) if datas else None
+
+    secoes = [(f"{SITE}/", maior({"noticia", "resenha"})), (f"{SITE}/noticias/", maior({"noticia"})), (f"{SITE}/resenhas/", maior({"resenha"}))]
+    for url, lm in reversed(secoes):
+        rel = url[len(SITE) + 1:]
+        if indexavel(url, ROOT / rel / "index.html"):
+            entradas.insert(0, ("secao", url, lm))
+        else:
+            fora.append(url)
+
+    linhas = [f"  <url><loc>{escape(u)}</loc>{f'<lastmod>{lm}</lastmod>' if lm else ''}</url>" for _, u, lm in entradas]
+    (ROOT / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+                                      + "\n".join(linhas) + "\n</urlset>\n", encoding="utf-8")
+
+    limite = hoje - timedelta(hours=48)
+    recentes = []
+    for p in sorted((ROOT / "conteudo" / "noticias").glob("*.json")):
+        n = json.loads(p.read_text(encoding="utf-8"))
+        url = f"{SITE}/noticias/{n['slug']}/"
+        if n.get("publicado_em") and url in novo and datetime.fromisoformat(n["publicado_em"]) >= limite:
+            recentes.append((n["publicado_em"], url, n["titulo"]))
+    noticias = "".join(
+        f"""  <url><loc>{escape(u)}</loc><news:news><news:publication><news:name>Elite Boardgamers</news:name><news:language>pt</news:language></news:publication>"""
+        f"""<news:publication_date>{pub}</news:publication_date><news:title>{escape(t)}</news:title></news:news></url>\n"""
+        for pub, u, t in sorted(recentes, reverse=True))
+    (ROOT / "sitemap-noticias.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" '
+                                               'xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">\n' + noticias + "</urlset>\n", encoding="utf-8")
+    (ROOT / "robots.txt").write_text(ROBOTS, encoding="utf-8")
+    ESTADO.write_text(json.dumps(novo, ensure_ascii=False, indent=1, sort_keys=True) + "\n", encoding="utf-8")
+    return len(entradas), len(recentes), fora
+
+
+if __name__ == "__main__":
+    total, recentes, fora = build()
+    print(f"ok sitemap.xml ({total} URLs), sitemap-noticias.xml ({recentes} das últimas 48 h), robots.txt")
+    for u in fora:
+        print("  fora do sitemap (sem página, canonical diferente ou noindex):", u)

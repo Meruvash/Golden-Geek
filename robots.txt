@@ -1,0 +1,6 @@
+# Elite Boardgamers: todos os robôs de busca e de IA são bem-vindos.
+User-agent: *
+Allow: /
+
+Sitemap: https://eliteboardgamers.com.br/sitemap.xml
+Sitemap: https://eliteboardgamers.com.br/sitemap-noticias.xml
