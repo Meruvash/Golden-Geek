@@ -17,7 +17,7 @@ from PIL import Image
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import seo  # noqa: E402
-from build_home import MESES, cabecalho, norm, notas, pagina, rodape  # noqa: E402
+from build_home import MESES, cabecalho, capa_secao, norm, notas, pagina, rodape  # noqa: E402
 from build_review import ROOT, SITE, e  # noqa: E402
 
 PASTA = ROOT / "lancamentos"
@@ -353,7 +353,7 @@ def build(ano=None):
     titulo = f"Lançamentos de jogos de tabuleiro {ano} no Brasil | Elite Boardgamers"
     descricao = f"Calendário com os {len(por_id)} lançamentos de {ano} das editoras brasileiras: jogos de tabuleiro, expansões e RPGs, mês a mês, com capa, editora e situação."
     ld = seo.script(seo.trilha(("Início", f"{SITE}/"), ("Lançamentos", url)))
-    html = pagina(titulo, descricao, url, f"{SITE}/marca/elite-boardgamers.webp", pre, corpo, head_extra="\n" + CSS_CAL, jsonld=ld)
+    html = pagina(titulo, descricao, url, capa_secao("lancamentos"), pre, corpo, head_extra="\n" + CSS_CAL, jsonld=ld)
     html = html.replace("<body>", f'<body data-agora="{agora}" data-ano="{ano}">', 1)
     PASTA.mkdir(exist_ok=True)
     (PASTA / "index.html").write_text(html, encoding="utf-8")

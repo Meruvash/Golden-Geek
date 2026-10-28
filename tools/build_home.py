@@ -250,6 +250,20 @@ footer .in{display:flex;flex-wrap:wrap;gap:10px 20px;padding-top:18px;padding-bo
 """
 
 
+def og_dim(imagem):
+    """og:image:width/height lidos do arquivo, quando a imagem é do próprio site."""
+    arq = ROOT / imagem.removeprefix(SITE + "/").split("?")[0]
+    if not imagem.startswith(SITE + "/") or not arq.is_file():
+        return ""
+    with Image.open(arq) as im:
+        return f'\n<meta property="og:image:width" content="{im.width}">\n<meta property="og:image:height" content="{im.height}">'
+
+
+def capa_secao(secao):
+    """Prévia 1200×630 da seção (tools/capa_secoes.js), com ?v= para o WhatsApp buscar a nova quando mudar."""
+    return f"{SITE}/{secao}/capa.jpg{versao(ROOT / secao / 'capa.jpg')}"
+
+
 def pagina(titulo, descricao, url, imagem, pre, corpo, tipo="website", head_extra="", jsonld=""):
     return f"""<!doctype html>
 <html lang="pt-BR">
@@ -265,7 +279,7 @@ def pagina(titulo, descricao, url, imagem, pre, corpo, tipo="website", head_extr
 <meta property="og:description" content="{e(descricao)}">
 <meta property="og:type" content="{tipo}">
 <meta property="og:url" content="{url or SITE + '/'}">
-<meta property="og:image" content="{imagem}">
+<meta property="og:image" content="{imagem}">{og_dim(imagem)}
 <meta name="twitter:card" content="summary_large_image">{head_extra}
 <meta name="theme-color" content="#000000">
 <link rel="icon" href="{pre}favicon.svg" type="image/svg+xml">
@@ -322,7 +336,7 @@ def build_politica():
     out = ROOT / "politica-editorial" / "index.html"
     out.parent.mkdir(exist_ok=True)
     out.write_text(pagina("Política editorial | Elite Boardgamers", "Quem responde pela Elite Boardgamers e como notícias e resenhas são escolhidas, escritas, conferidas e corrigidas.",
-                          url, f"{SITE}/resenhas/capa.jpg", pre, corpo, jsonld=ld), encoding="utf-8")
+                          url, capa_secao("noticias"), pre, corpo, jsonld=ld), encoding="utf-8")
 
 
 def img_nota(n, pre):
@@ -377,7 +391,7 @@ def build_home():
         destino = ROOT / "noticias" / ("index.html" if num == 1 else f"pagina/{num}/index.html")
         destino.parent.mkdir(parents=True, exist_ok=True)
         destino.write_text(pagina(f"Notícias{sufixo} | Elite Boardgamers", f"Notícias de jogos de tabuleiro da Elite Boardgamers, com fonte, data e opinião{sufixo}.", url,
-                                  f"{SITE}/resenhas/capa.jpg", p_pre, corpo_arq, jsonld=seo.script(seo.trilha(*trilha))), encoding="utf-8")
+                                  capa_secao("noticias"), p_pre, corpo_arq, jsonld=seo.script(seo.trilha(*trilha))), encoding="utf-8")
     # cada item do Em alta tem de levar a uma nota que trate do jogo já no título
     for j in home["em_alta"]:
         slug = j["link"].strip("/").split("/")[-1]
@@ -442,7 +456,7 @@ def build_home():
  <div class="jogos"><a href="/">Notícias de hoje</a><a href="/resenhas/">Resenhas de jogos premiados</a><a href="/consulta/">Consulta Golden Geek</a></div>
 </section></div></main>
 {rodape("/")}"""
-    (ROOT / "404.html").write_text(pagina("Página não encontrada | Elite Boardgamers", "Página não encontrada.", "", f"{SITE}/resenhas/capa.jpg", "/", corpo_404), encoding="utf-8")
+    (ROOT / "404.html").write_text(pagina("Página não encontrada | Elite Boardgamers", "Página não encontrada.", "", capa_secao("noticias"), "/", corpo_404), encoding="utf-8")
     build_politica()
     (ROOT / "index.html").write_text(pagina(titulo, descr, f"{SITE}/", f"{SITE}/{img_nota(m, '')}", pre, corpo, jsonld=seo.script(seo.site())), encoding="utf-8")
     return ns
@@ -501,7 +515,7 @@ def build_nota(n):
 {rodape(pre)}"""
     out = ROOT / "noticias" / n["slug"] / "index.html"
     out.parent.mkdir(parents=True, exist_ok=True)
-    img = f"{SITE}/noticias/{n['imagem']['arquivo']}" if n.get("imagem") else f"{SITE}/resenhas/capa.jpg"
+    img = f"{SITE}/noticias/{n['imagem']['arquivo']}" if n.get("imagem") else capa_secao("noticias")
     url = f"{SITE}/noticias/{n['slug']}/"
     modificado = lastmod_registrado(url, {k: v for k, v in n.items() if k != "publicado_em"})
     ld = seo.script(seo.artigo("NewsArticle", url, n["titulo"], n["lide"], img, n["publicado_em"], modificado),
