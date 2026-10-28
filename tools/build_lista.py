@@ -116,7 +116,7 @@ footer .in{{display:flex;flex-wrap:wrap;gap:10px 20px;padding-top:18px;padding-b
  <a class="ig" href="{INSTAGRAM}" target="_blank" rel="noopener" aria-label="Instagram @eliteboardgamers">{icone("insta")}<span>@eliteboardgamers</span></a>
  <a class="zap-mini" href="{WHATSAPP}" target="_blank" rel="noopener">{icone("zap")}<span>Grupo do WhatsApp</span></a>
 </div></header>
-<nav class="nav" aria-label="Seções do site"><ul class="in"><li><a href="../">Notícias</a></li><li><a href="./" aria-current="page">Resenhas</a></li><li><a href="../consulta/">Consulta Golden Geek</a></li></ul></nav>
+<nav class="nav" aria-label="Seções do site"><ul class="in"><li><a href="../">Notícias</a></li><li><a href="./" aria-current="page">Resenhas</a></li><li><a href="../lancamentos/">Lançamentos</a></li><li><a href="../consulta/">Consulta Golden Geek</a></li></ul></nav>
 <main class="in">
  <section class="topo">
   <h1>Resenhas de jogos premiados</h1>

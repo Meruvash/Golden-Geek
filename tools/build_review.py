@@ -728,7 +728,7 @@ footer a{{color:var(--bar-ink)}}
  <a class="zap-mini" href="{WHATSAPP}" target="_blank" rel="noopener">{icone("zap")}<span>Grupo do WhatsApp</span></a>
  <a class="todas" href="../resenhas/">Todas as resenhas</a>
 </div></header>
-<nav class="nav" aria-label="Seções do site"><ul><li><a href="../">Notícias</a></li><li><a href="../resenhas/" aria-current="page">Resenhas</a></li><li><a href="../consulta/">Consulta Golden Geek</a></li></ul></nav>
+<nav class="nav" aria-label="Seções do site"><ul><li><a href="../">Notícias</a></li><li><a href="../resenhas/" aria-current="page">Resenhas</a></li><li><a href="../lancamentos/">Lançamentos</a></li><li><a href="../consulta/">Consulta Golden Geek</a></li></ul></nav>
 
 <section class="jogo"><div class="in">
  {topo_fig}

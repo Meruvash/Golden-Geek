@@ -170,6 +170,8 @@ h1,h2,h3,p,ul,ol,figure{margin:0}ul,ol{padding:0;list-style:none}img{display:blo
 .capas .st{justify-self:start;font-size:.68rem;font-weight:800;border-radius:4px;padding:1px 6px;color:var(--brasil);background:var(--brasil-bg)}
 .capas .st.lancado{color:#fff;background:var(--brasil)}
 .capas a:hover b{text-decoration:underline}
+.capas .todos a{height:100%%;min-height:140px;align-content:center;justify-items:center;text-align:center;border-radius:6px;background:var(--brasil-bg);color:var(--brasil);padding:12px}
+.capas .todos .mais{font-size:.86rem;font-weight:800;line-height:1.25}.capas .todos .mais::after{content:" →"}
 /* financiamentos */
 .financ li{display:grid;gap:2px;padding:10px 0;border-top:1px solid var(--paper-line)}.financ li:first-child{border-top:0;padding-top:0}
 .financ a{font-weight:800;text-decoration:none}.financ a:hover{text-decoration:underline}
@@ -248,7 +250,7 @@ footer .in{display:flex;flex-wrap:wrap;gap:10px 20px;padding-top:18px;padding-bo
 
 
 def cabecalho(pre, atual):
-    itens = [("", "Notícias"), ("resenhas/", "Resenhas"), ("consulta/", "Consulta Golden Geek")]
+    itens = [("", "Notícias"), ("resenhas/", "Resenhas"), ("lancamentos/", "Lançamentos"), ("consulta/", "Consulta Golden Geek")]
     nav = "".join(f'<li><a href="{pre}{h}"{" aria-current=\"page\"" if t == atual else ""}>{t}</a></li>' for h, t in itens)
     return f"""<header class="bar"><div class="in">
  <a class="marca" href="{pre or './'}"><img src="{pre}marca/elite-boardgamers.webp" width="318" height="254" alt="Elite Boardgamers"></a>
@@ -260,7 +262,7 @@ def cabecalho(pre, atual):
 
 def rodape(pre):
     return f"""<footer><div class="in">
- <span>Elite Boardgamers</span><a href="{pre or './'}">Notícias</a><a href="{pre}resenhas/">Resenhas</a><a href="{pre}consulta/">Consulta Golden Geek</a><a href="{pre}politica-editorial/">Política editorial</a>
+ <span>Elite Boardgamers</span><a href="{pre or './'}">Notícias</a><a href="{pre}resenhas/">Resenhas</a><a href="{pre}lancamentos/">Lançamentos</a><a href="{pre}consulta/">Consulta Golden Geek</a><a href="{pre}politica-editorial/">Política editorial</a>
  <a href="{INSTAGRAM}" target="_blank" rel="noopener">Instagram @eliteboardgamers</a><a href="{WHATSAPP}" target="_blank" rel="noopener">Grupo do WhatsApp</a>
 </div></footer>"""
 
@@ -416,10 +418,10 @@ def build_home():
     mes = mes_chegando()
     rotulo, jogos = lancamentos(mes)
     capas = "".join(
-        (f'<li><a href="noticias/{por_jogo[j["id_jogo"]]}/">' if j["id_jogo"] in por_jogo else f'<li><a href="{e(j["url"])}" target="_blank" rel="noopener">') + f'<img src="{capa_jogo(pre, j["id_jogo"])}" width="132" height="140" alt="" loading="lazy">'
+        f'<li><a href="lancamentos/#j{j["id_jogo"]}"><img src="{capa_jogo(pre, j["id_jogo"])}" width="132" height="140" alt="" loading="lazy">'
         f'<span class="st {j["status"]["slug"]}">{e(j["status"]["label"])}</span><b>{e(j["nome"].strip())}</b><span>{e((j.get("editora") or {}).get("nome", ""))}</span></a></li>'
         for j in jogos
-    )
+    ) + f'<li class="todos"><a href="lancamentos/#{mes}"><span class="mais">Ver os {len(jogos)} de {e(rotulo.split(" de ")[0].lower())} e todo o calendário</span></a></li>'
     financ = "".join(
         f'<li><span class="onde">{e(f["onde"])}</span><a href="{e(alvo(f)[0])}"{alvo(f)[1]}>{e(f["nome"])}</a>'
         f'<span class="s">{e(f["editora"])} · {e(f["situacao"])}</span><span class="f">Fonte: {e(f["fonte"])}</span></li>'
@@ -439,7 +441,7 @@ def build_home():
   <section class="bloco ultimas"><h2>Últimas notícias <a href="noticias/">Ver todas ({len(ns)})</a></h2><ul class="lista-n">{itens}</ul></section>
   <aside class="lado"><section class="bloco alta"><h2>Em alta</h2><ol class="hot">{alta}</ol></section>
   <section class="bloco agenda"><h2>Agenda</h2><ul>{agenda}</ul></section></aside>
-  <section class="bloco brasil" id="chegando"><h2>Chegando ao Brasil · {e(rotulo.lower())} <a href="https://ludopedia.com.br/lancamentos?mes={mes}" target="_blank" rel="noopener">Calendário completo na Ludopedia</a></h2><ul class="capas">{capas}</ul></section>
+  <section class="bloco brasil" id="chegando"><h2>Chegando ao Brasil · {e(rotulo.lower())} <a href="lancamentos/#{mes}">Calendário completo</a></h2><ul class="capas">{capas}</ul></section>
   <section class="bloco financ"><h2>Financiamentos</h2><ul>{financ}</ul></section>
   <section class="bloco resenhas"><h2>Últimas resenhas <a href="resenhas/">Ver todas</a></h2><ul class="res">{res}</ul></section>
   <section class="bloco comunidade"><p>Notícias de tabuleiro com fonte e data, todos os dias. Entre no grupo para receber as novidades e conversar sobre jogos.</p>
@@ -539,5 +541,7 @@ if __name__ == "__main__":
         (ROOT / slug / "index.html").write_text(build_review.build(json.loads((ROOT / "conteudo" / f"{slug}.json").read_text(encoding="utf-8"))), encoding="utf-8")
     import build_consulta
     print("ok consulta/index.html:", build_consulta.build())
+    import build_calendario
+    print("ok lancamentos/index.html: %d lançamentos, %d sem capa" % build_calendario.build())
     import build_sitemap
     print("ok sitemap.xml (%d URLs), sitemap-noticias.xml (%d), robots.txt" % build_sitemap.atualizar()[:2])

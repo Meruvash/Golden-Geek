@@ -2,7 +2,7 @@
 
 Uso: python3 tools/noticias/coletar.py [--dias 3]
 Saída: .cache/noticias/<AAAA-MM-DD>.json (candidatas ordenadas pela pontuação prévia) e .md (relatório para ler),
-e conteudo/lancamentos/<AAAA-MM>.json do mês atual e do próximo (precisa de LUDOPEDIA_TOKEN no ambiente).
+e conteudo/lancamentos/<AAAA-MM>.json de todos os meses do ano e do próximo mês (precisa de LUDOPEDIA_TOKEN no ambiente).
 
 O pré-crivo só ordena: a pontuação final, as fontes primárias e o texto seguem o padrão das notícias
 (PADRAO_EDITORIAL.md) e passam por tools/noticias/checar_noticia.py. Os sites são lidos pelo cliente do robô
@@ -127,7 +127,9 @@ def ludopedia(hoje):
         return [], ["Ludopedia: falta LUDOPEDIA_TOKEN no ambiente; calendário de lançamentos não atualizado"]
     itens, avisos = [], []
     prox = (hoje.replace(day=1) + timedelta(days=32)).replace(day=1)
-    for mes in (hoje.strftime("%Y-%m"), prox.strftime("%Y-%m")):
+    pauta = {hoje.strftime("%Y-%m"), prox.strftime("%Y-%m")}
+    # o ano inteiro alimenta o calendário (lancamentos/); só o mês atual e o próximo viram candidatas a nota
+    for mes in sorted({f"{hoje.year}-{m:02d}" for m in range(1, 13)} | pauta):
         try:
             r = requests.get(LUDO, params={"mes": mes}, headers={"Authorization": f"Bearer {token}"}, timeout=30)
             r.raise_for_status()
@@ -139,6 +141,8 @@ def ludopedia(hoje):
         antigo = json.loads(arq.read_text(encoding="utf-8")) if arq.exists() else {"lancados": [], "previstos": []}
         vistos = {(j["id_jogo"], j["status"]["slug"]) for g in ("lancados", "previstos") for j in antigo.get(g, [])}
         arq.write_text(json.dumps(d, ensure_ascii=False, indent=1), encoding="utf-8")
+        if mes not in pauta:
+            continue
         for g in ("lancados", "previstos"):
             for j in d[g]:
                 if j.get("fl_tipo") != 1 or (j["id_jogo"], j["status"]["slug"]) in vistos:
