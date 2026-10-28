@@ -33,6 +33,11 @@ body{margin:0;background:#000;color:var(--frame-ink);font:15px/1.45 "Public Sans
 .topbar .zap-mini{background:var(--zap);color:#fff}.topbar .zap-mini:hover{background:#11683a}
 .topbar .res{border:1px solid #3a3f48;border-radius:6px;padding:6px 12px}.topbar .res:hover{border-color:#e3b23c}
 @media (max-width:700px){.topbar .ig span,.topbar .zap-mini span{display:none}}
+.nav{border-bottom:1px solid var(--frame-line);background:#0f1115}
+.nav ul{max-width:960px;margin:0 auto;padding:0 8px;display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;list-style:none}
+.nav a{display:block;padding:11px 10px;white-space:nowrap;color:var(--frame-ink);text-decoration:none;font-weight:700;font-size:.92rem;border-bottom:3px solid transparent}
+.nav a:hover{border-bottom-color:#e3b23c}.nav a[aria-current]{color:#e3b23c;border-bottom-color:#e3b23c}
+@media (max-width:599px){.marca img{width:68px}}
 .intro h1{font-size:clamp(1.9rem,5vw,2.8rem);line-height:1.08;font-weight:800;letter-spacing:-.02em;margin:24px 0 10px}
 .intro p{margin:0;color:#c9cfd8;max-width:62ch}
 .zap{display:flex;align-items:center;gap:12px;margin:16px 0 4px;padding:14px 18px;border-radius:10px;background:var(--zap);color:#fff;text-decoration:none;max-width:520px}
@@ -97,11 +102,11 @@ tr.grp .ge{display:block;font-size:.8rem;font-weight:500;color:var(--muted);marg
 </head>
 <body>
 <header class="topbar"><div class="in">
- <a class="marca" href="../resenhas/"><img src="../marca/elite-boardgamers.webp" width="318" height="254" alt="Elite Boardgamers"></a>
+ <a class="marca" href="../"><img src="../marca/elite-boardgamers.webp" width="318" height="254" alt="Elite Boardgamers"></a>
  <a class="ig" href="https://www.instagram.com/eliteboardgamers/" target="_blank" rel="noopener" aria-label="Instagram @eliteboardgamers"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6" fill="currentColor"/></svg><span>@eliteboardgamers</span></a>
  <a class="zap-mini" href="https://chat.whatsapp.com/IgQQkJdSkzHBaEq3UwFeAo" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8.4 19l-4.4 1Z"/><path d="M9.2 8.6c.3-.5.8-.5 1-.1l.7 1.5c.1.3 0 .6-.2.8l-.4.4c.5 1.1 1.4 2 2.5 2.5l.4-.4c.2-.2.5-.3.8-.2l1.5.7c.4.2.4.7-.1 1-.7.5-1.6.6-2.4.3a7 7 0 0 1-4.2-4.2c-.3-.8-.2-1.7.4-2.3Z"/></svg><span>Grupo do WhatsApp</span></a>
- <a class="res" href="../resenhas/">Resenhas</a>
 </div></header>
+<nav class="nav" aria-label="Seções do site"><ul><li><a href="../">Notícias</a></li><li><a href="../resenhas/">Resenhas</a></li><li><a href="./" aria-current="page">Consulta Golden Geek</a></li></ul></nav>
 <div class="wrap">
  <section class="intro">
   <h1>Consulta Golden Geek 2015–2025</h1>

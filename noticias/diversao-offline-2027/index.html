@@ -145,6 +145,29 @@ footer .in{display:flex;flex-wrap:wrap;gap:10px 20px;padding-top:18px;padding-bo
 .quem .no li::before{background:#b3263e}
 .nota .veredito{background:var(--panel2);color:var(--ink);border:1px solid var(--gold)}.nota .veredito h2{color:var(--gold)}
 .nota .veredito p{font-size:1.08rem;font-weight:600;margin-top:10px;max-width:62ch}
+/* celular: blocos de ponta a ponta, lista enxuta e textos miúdos um pouco maiores */
+@media (max-width:599px){
+ .marca img{width:68px}
+ .grade{gap:8px;padding-bottom:24px}.nota{gap:8px;padding-top:14px;padding-bottom:24px}
+ .grade .bloco,.nota .bloco{margin-left:-16px;margin-right:-16px;border-radius:0}
+ .nota .bloco{padding:18px 16px}
+ .nota .abre figure{margin:-18px -16px 0}.nota .abre figure img{border-radius:0;max-height:440px;object-fit:contain}
+ .nota .abre figcaption{padding:0 16px}
+ .manchete img{aspect-ratio:4/3;object-position:center top}.manchete .txt{padding:16px 16px 18px}.manchete h1{font-size:1.65rem}.manchete p{font-size:1rem}
+ .meta{font-size:.84rem}.cat{font-size:.74rem}.credito{font-size:.76rem}
+ .lista-n a{grid-template-columns:68px 1fr;gap:12px;padding:14px 0}
+ .lista-n img{width:68px;height:68px}
+ .lista-n .sem-img{grid-template-columns:1fr}.lista-n .sem{display:none}
+ .lista-n .meta{display:inline}
+ .lista-n div>.cat+.meta{white-space:nowrap}
+ .lista-n h3{font-size:1.06rem;margin:5px 0 6px}
+ .lista-n p{display:block;-webkit-line-clamp:unset;overflow:visible;font-size:.92rem}
+ .lista-n .resumo{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;margin-top:5px;color:#3a414c}
+ .hot span,.financ .f,.capas span{font-size:.82rem}
+ .agenda li{grid-template-columns:92px 1fr}
+ .nota .fontes li{margin:10px 0}
+ footer .in{gap:4px 20px;align-items:center}footer a{display:inline-block;padding:6px 0}
+}
 @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
 </style>
 </head>
