@@ -47,8 +47,7 @@ def precisa_de_imagem(chave, c):
 def tem_de_onde_buscar(c):
     """Editora na ficha (resenha); editora, jogos ou fontes (notícia). Sem isso a busca não teria por onde começar."""
     ficha = dict(c.get("ficha", []))
-    return bool(ficha.get("Editora original") or ficha.get("Editora no Brasil") or c.get("editora")
-                or c.get("jogos") or c.get("fontes"))
+    return bool(ficha.get("Editora original") or ficha.get("Editora no Brasil") or c.get("editora") or c.get("fontes"))
 
 
 def fila():

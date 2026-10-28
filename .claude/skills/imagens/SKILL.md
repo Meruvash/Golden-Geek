@@ -38,7 +38,7 @@ Fotos próprias que o usuário manda antes da hora ficam em `<slug>/fotos/reserv
 
 Cada uma entra uma única vez numa **fila** (`.cache/imagens/fila.txt`), e um único trabalhador faz uma busca por vez (nunca em paralelo nos mesmos sites). A sessão é avisada quando cada busca termina ou falha. Busca interrompida volta para a fila sozinha. Para refazer, apague `.cache/imagens/<chave>/busca.iniciada`.
 
-Na notícia, o robô procura pelos `jogos` citados (a ficha da nossa resenha diz a editora) e pelas `fontes` que são páginas de editoras ou organizadores mapeados em `editoras.json` (comunicado de imprensa, site oficial do evento). Escolhida a imagem na folha, grave com:
+Na notícia, o robô procura só nas `fontes` que são páginas de editoras ou organizadores mapeados em `editoras.json` (comunicado de imprensa, site oficial do evento). O campo `jogos` lista resenhas nossas relacionadas, não o assunto da nota, e por isso não entra na busca. Fonte oficial ainda não mapeada: rode `mapear` no domínio e apague `busca.iniciada` para refazer. Escolhida a imagem na folha, grave com:
 
 `python3 tools/imagens/robo.py imagem-noticia noticias/<data>-<assunto> <n> [--nota "..."]`
 
