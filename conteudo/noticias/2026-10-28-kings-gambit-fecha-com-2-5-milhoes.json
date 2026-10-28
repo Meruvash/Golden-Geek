@@ -75,7 +75,12 @@
    "data": "28/10/2026"
   }
  ],
- "imagem": null,
+ "imagem": {
+  "arquivo": "capas/kings-gambit-fecha-com-2-5-milhoes.jpg",
+  "credito": "Imagem: Restoration Games",
+  "origem": "https://restorationgames.com/wp-content/uploads/2026/10/Art-of-the-Miniature.png",
+  "pagina": "https://restorationgames.com/press-release-the-lord-of-the-rings-the-kings-gambit/"
+ },
  "jogos": [
   {
    "nome": "Pandemic Legacy",

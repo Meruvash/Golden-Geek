@@ -485,7 +485,7 @@ def palpite(c):
     return "capa" if c.get("fundo_liso") and 0.75 < w / h < 1.35 else "?"
 
 
-def baixar_candidatas(cli, candidatas, pasta):
+def baixar_candidatas(cli, candidatas, pasta, lado_min=LADO_MIN):
     pasta.mkdir(parents=True, exist_ok=True)
     boas, hashes, avisos = [], [], []
     for c in candidatas[:MAX_CANDIDATAS]:
@@ -500,7 +500,7 @@ def baixar_candidatas(cli, candidatas, pasta):
             avisos.append(f"não baixou {c['url']}: {e}")
             continue
         w, h = im.size
-        if min(w, h) < LADO_MIN or max(w, h) / min(w, h) > 3:
+        if min(w, h) < lado_min or max(w, h) / min(w, h) > 3:
             continue
         hsh = dhash(im)
         dup = next((b for b, hb in zip(boas, hashes) if bin(hb ^ hsh).count("1") <= 6), None)
@@ -647,15 +647,8 @@ def buscar(cli, slug, url_fixa=None, so_editora=None):
     fi = dict(c.get("ficha", []))
     if c.get("editora") and not fi.get("Editora original"):  # notícia: editora num campo próprio, sem ficha
         fi["Editora original"] = c["editora"]
+    # Notícia: `jogos` lista resenhas nossas relacionadas, não o assunto da nota; a busca usa só as fontes oficiais.
     nomes = []
-    for j in c.get("jogos", []):  # notícia: jogos citados; a ficha da nossa resenha diz a editora
-        nomes.append(j.get("nome", ""))
-        rf = ROOT / "conteudo" / f"{j.get('resenha')}.json"
-        if j.get("resenha") and rf.exists():
-            ficha_r = dict(json.loads(rf.read_text(encoding="utf-8")).get("ficha", []))
-            for campo in ("Editora original", "Editora no Brasil"):
-                if ficha_r.get(campo) and not fi.get(campo):
-                    fi[campo] = ficha_r[campo]
     c.setdefault("jogo", c.get("titulo", slug))
     if c.get("ficha") or c.get("editora"):
         nomes = nomes_do_jogo(c) + nomes
@@ -723,7 +716,8 @@ def buscar(cli, slug, url_fixa=None, so_editora=None):
             im.update(editora=rec["nome"], dominio=dominio)
             candidatas.append(im)
     pasta = CACHE / slug
-    boas, avisos = baixar_candidatas(cli, candidatas, pasta / "candidatas")
+    # notícia usa a imagem menor (destaque, miniatura e prévia do WhatsApp): 500 px no lado menor bastam
+    boas, avisos = baixar_candidatas(cli, candidatas, pasta / "candidatas", 500 if slug.startswith("noticias/") else LADO_MIN)
     rel["avisos"] += avisos
     ordem = {"capa": 0, "mesa": 1, "jogabilidade": 2, "componentes": 3, "?": 4}
     boas.sort(key=lambda b: (ordem[b["palpite"]], -b["w"] * b["h"]))
