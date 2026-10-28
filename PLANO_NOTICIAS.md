@@ -1,0 +1,140 @@
+# Plano da página inicial de notícias
+
+A página inicial de eliteboardgamers.com.br passa a ser um portal de notícias de jogos de tabuleiro, no formato do BoardGameGeek e da Ludopedia: manchete, últimas notícias, jogos em alta, lançamentos no Brasil, financiamentos, agenda e as nossas resenhas. Toda notícia passa por um crivo editorial, como as fotos e as resenhas já passam.
+
+## 1. Como BGG e Ludopedia montam a página inicial
+
+| Bloco | BoardGameGeek | Ludopedia | Nós |
+|---|---|---|---|
+| Notícias | BGG News (W. Eric Martin), lista cronológica | Notícias da comunidade e das editoras | Manchete + últimas notícias, com crivo |
+| Jogos em alta | The Hotness (mais acessados) | Ranking e jogos em destaque | "Em alta": jogos que mais aparecem nas notícias da semana e nas nossas resenhas |
+| Lançamentos | Novos itens no banco de dados | Lançamentos nacionais | "Chegando ao Brasil": anúncios e pré-vendas das editoras nacionais |
+| Financiamento | Crowdfunding em destaque | Pouco destaque | Campanhas relevantes no Catarse, Kickstarter e Gamefound |
+| Eventos | Fóruns e agenda | Eventos e encontros | Agenda: prêmios, feiras (Essen, Gen Con, Diversão Offline) |
+| Conteúdo próprio | Reviews de usuários | Resenhas e vídeos | Nossas resenhas de jogos premiados |
+
+## 2. Estrutura da nova página inicial
+
+Ordem no celular, de cima para baixo:
+
+1. **Manchete**: a notícia mais relevante do dia, com foto, título, lide e fonte.
+2. **Últimas notícias**: 6 a 8 cartões com data, título, uma linha de resumo, selo da categoria e fonte.
+3. **Chegando ao Brasil**: lançamentos e pré-vendas das editoras nacionais.
+4. **Em alta**: 5 jogos com capa, cada um com a notícia ou resenha que o colocou ali.
+5. **Financiamentos**: campanhas ativas que passam no crivo, com meta, valor arrecadado e prazo.
+6. **Agenda**: próximos prêmios e eventos, com data.
+7. **Últimas resenhas**: os 4 cartões mais recentes da Elite Boardgamers.
+8. **Comunidade**: grupo do WhatsApp e Instagram.
+
+A **Consulta Golden Geek**, que hoje ocupa a página inicial, vai para `eliteboardgamers.com.br/consulta/`, com link no menu. Cada notícia ganha página própria em `/noticias/<data>-<assunto>/`, com prévia de WhatsApp, e há um arquivo em `/noticias/`.
+
+## 3. Fontes
+
+Testadas em 28/10/2026 com o robô do site, que respeita o `robots.txt`.
+
+**Coleta automática (feed liberado para robôs)**
+
+| Fonte | País | O que traz | Situação do feed |
+|---|---|---|---|
+| BoardGameWire | Reino Unido | Mercado: editoras, vendas, aquisições | ativo (19/10) |
+| Board Game Quest | EUA | Notícias, lançamentos, financiamentos | ativo (27/10) |
+| Meeple Mountain | EUA | Notícias e análises | ativo (27/10) |
+| Spiel des Jahres | Alemanha | Prêmio mais importante do mundo | ativo (01/10) |
+| Covil dos Jogos | Brasil | Notícias e lançamentos nacionais | ativo (27/10) |
+| Dicebreaker | Reino Unido | Notícias | **feed parado desde maio de 2024**; acompanhar pelo site |
+
+**Acompanhamento manual (o site proíbe robôs; você ou eu lemos e citamos com link)**
+
+| Fonte | País | Por que importa |
+|---|---|---|
+| BGG News | EUA | A principal fonte de anúncios de jogos do mundo |
+| Ludopedia | Brasil | Lançamentos e comunidade brasileira |
+| Shut Up & Sit Down | Reino Unido | Crítica de referência |
+| Tabletop Gaming | Reino Unido | Revista do setor |
+| Wargamer | Reino Unido | Notícias diárias de tabuleiro |
+
+**Fontes primárias (confirmam a notícia)**: sites e redes oficiais das editoras nacionais (Galápagos, Devir, Grok, MeepleBR, Conclave, Ludofy e outras) e internacionais, páginas oficiais dos prêmios (Spiel des Jahres, As d'Or, Golden Geek, Origins, Kennerspiel), páginas das campanhas (Catarse, Kickstarter, Gamefound, BackerKit) e sites dos eventos.
+
+Fontes que não responderam do servidor na nuvem (Tábula Quadrada, Jogando Offline, blog da Galápagos, Mesa de Jogo) serão testadas de novo antes de entrar na lista.
+
+## 4. Crivo editorial das notícias
+
+Segue a lógica do crivo das fotos: primeiro eliminatórios, depois pontuação. Fica escrito em `PADRAO_EDITORIAL.md` e é conferido por `tools/noticias/checar_noticia.py`, que se recusa a publicar uma nota fora do padrão.
+
+**Eliminatórios (a notícia não entra)**
+- Sem fonte primária: só boato, vazamento ou "fontes dizem".
+- Conteúdo pago ou release sem fato novo ("promoção da semana", "jogo X está incrível").
+- Mais de 14 dias de atraso, a não ser em lançamento no Brasil.
+- Já publicada por nós, mesmo vinda de outra fonte (deduplicação).
+- Jogo, editora ou campanha sem relação com tabuleiro moderno (RPG, card game colecionável, videogame), salvo adaptação de jogo de tabuleiro.
+
+**Pontuação de relevância (entra com 5 pontos ou mais; manchete é a maior pontuação do dia)**
+
+| Critério | Pontos |
+|---|---|
+| Lançamento ou pré-venda confirmado no Brasil | 4 |
+| Prêmio grande (indicação ou vencedor): Spiel des Jahres, Kennerspiel, As d'Or, Golden Geek | 4 |
+| Jogo que já tem resenha nossa ou está na pauta | 3 |
+| Jogo no top 100 do BGG ou de designer premiado | 3 |
+| Notícia do mercado com efeito no Brasil (preço, distribuição, editora nova) | 3 |
+| Financiamento acima de US$ 500 mil ou R$ 200 mil, ou recorde | 2 |
+| Confirmada por duas fontes independentes | 2 |
+| Evento grande (Essen, Gen Con, Diversão Offline) | 2 |
+
+**Regras de texto**
+1. Título informativo, sem caça-clique: o que aconteceu, com quem.
+2. Lide de 40 a 70 palavras: o fato, quando, onde e por que importa para quem joga no Brasil.
+3. Corpo de 80 a 200 palavras, escrito por nós. Nada copiado; citação de outro site só curta, entre aspas e com fonte.
+4. Fonte com link no fim, e a data da consulta.
+5. Preço sempre com data. Data de lançamento sempre como "previsto" até sair.
+6. Foto só da editora (imagem de divulgação, com crédito), de licença livre ou nossa. Sem foto boa, o cartão usa a capa da nossa resenha ou fica sem foto.
+
+## 5. Skills e ferramentas a desenvolver
+
+| Skill / ferramenta | O que faz | Saída |
+|---|---|---|
+| `noticias` (skill) | Orquestra o dia: coleta, crivo, redação, revisão e publicação | Edição do dia publicada |
+| `tools/noticias/coletar.py` | Lê os feeds liberados, respeitando o `robots.txt` e as pausas pedidas, e junta candidatas | `.cache/noticias/candidatas.json` |
+| `tools/noticias/crivo.py` | Aplica eliminatórios e pontuação, deduplica e marca a manchete | Lista ordenada com o motivo de cada nota |
+| `tools/noticias/checar_noticia.py` | Confere regras de texto, fontes e datas antes de publicar | Aprova ou recusa, com o motivo |
+| `conteudo/noticias/<data>-<assunto>.json` | Uma nota por arquivo, como as resenhas | Fonte da página da notícia |
+| `tools/build_home.py` | Gera a página inicial com os 8 blocos | `index.html` |
+| `tools/build_noticia.py` | Gera a página de cada notícia e o arquivo `/noticias/` | `noticias/...` |
+| `agenda.json` | Datas de prêmios e eventos, revisadas por mês | Bloco Agenda |
+| `editoras_br.json` | Páginas de lançamentos e redes das editoras nacionais | Bloco Chegando ao Brasil |
+
+O robô de notícias reaproveita o cliente do robô de imagens (`tools/imagens/robo.py`): mesmo `robots.txt`, mesmas pausas, mesma identificação.
+
+## 6. Fluxo de cada dia
+
+1. **Coleta** (automática, de manhã): feeds liberados.
+2. **Leitura manual** (10 minutos): BGG News e Ludopedia. Você me manda links que valham a pena, ou eu consulto na conversa.
+3. **Crivo**: o robô ordena as candidatas e eu confiro as fontes primárias.
+4. **Redação**: eu escrevo as notas que passaram, no padrão.
+5. **Sua aprovação**: você vê a edição do dia antes de publicar (como foi com as fotos). Depois que o padrão estiver firme, a aprovação pode ficar só para a manchete.
+6. **Publicação**: página inicial, páginas das notas e prévias do WhatsApp.
+
+## 7. Etapas
+
+| Etapa | Entrega | Para você ver |
+|---|---|---|
+| 1. Protótipo da página inicial | Página com os 8 blocos e notas de exemplo, num ramo separado | Capturas de celular e computador |
+| 2. Crivo e padrão das notícias | Regras em `PADRAO_EDITORIAL.md` e `checar_noticia.py` | 5 notas reais do dia avaliadas |
+| 3. Coleta automática | `coletar.py` e `crivo.py` com as fontes liberadas | Relatório de um dia de coleta |
+| 4. Páginas de notícia e arquivo | `build_noticia.py` e `/noticias/` | Uma nota publicada de ponta a ponta |
+| 5. Blocos de dados | Agenda, Chegando ao Brasil, Financiamentos, Em alta | Página inicial completa |
+| 6. Rotina | Skill `noticias` e tarefa agendada diária | Primeira semana de edições |
+
+## 8. Riscos e cuidados
+
+- **Direito autoral**: notícia é fato e pode ser recontada, mas texto e foto têm dono. Por isso: texto próprio, citação curta e foto com crédito ou licença.
+- **Fontes que bloqueiam robôs** (BGG, Ludopedia): só leitura manual e citação com link, nunca raspagem.
+- **Feeds que param** (Dicebreaker parou em 2024): `coletar.py` avisa quando uma fonte passa 30 dias sem nada novo.
+- **Volume**: melhor 3 notas boas por dia do que 15 fracas. O crivo corta; a página inicial mostra o que passou.
+
+## 9. Decisões suas
+
+1. Quantas notas por dia, em média: 3, 5 ou 8?
+2. Aprovar toda nota antes de publicar ou só a manchete?
+3. A Consulta Golden Geek pode sair da página inicial e ir para `/consulta/`?
+4. Notícia de financiamento coletivo entra, ou só jogo que vai sair em loja?
