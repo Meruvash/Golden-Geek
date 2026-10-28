@@ -4,8 +4,10 @@ Uso: python3 tools/noticias/checar_noticia.py [conteudo/noticias/<arquivo>.json 
 Sai com erro se alguma nota não passar; tools/build_home.py usa a mesma função e se recusa a publicar.
 """
 import json
+import re
 import sys
 from pathlib import Path
+from urllib.parse import urlparse
 
 ROOT = Path(__file__).resolve().parent.parent.parent
 SELOS = {"Vale a compra", "Vale acompanhar", "Para fãs do jogo base", "Com ressalvas", "Informativo"}
@@ -14,6 +16,54 @@ FAIXAS = {"titulo": (8, 16), "lide": (35, 70), "por_que_importa": (30, 70), "no_
 
 def palavras(t):
     return len(t.split())
+
+
+# Edição nacional: dizer que um jogo não saiu no Brasil é afirmação grave e já erramos por deduzir isso
+# da falta de notícia de lançamento (Galactic Cruise, Rebirth, Hot Streak). Toda frase de ausência precisa
+# de verificação registrada em `verificacao_nacional`, e frases categóricas são proibidas.
+_ED = r"(edição|edições|versão|lançamento|editora)[^.;:]{0,25}(nacional|brasileira|em português|no brasil)"
+AUSENCIA = re.compile(r"(\bsem\b|não há|não tem|não existe|nenhuma|não encontramos|não confirmamos|ainda não)[^.;:]{0,60}" + _ED, re.I)
+CATEGORICO = re.compile(r"((não há|não tem|não existe|ainda não há|nenhuma)[^.;:]{0,40}" + _ED +
+                        r"|\bsem (edição|versão) (nacional|brasileira|em português)\b(?! (encontrada|confirmada)))", re.I)
+RESULTADOS = {"edição nacional", "não encontrada"}
+
+
+def textos(n):
+    for campo in ("titulo", "lide", "por_que_importa", "no_brasil", "veredito"):
+        yield n.get(campo) or ""
+    yield from n.get("corpo", [])
+    yield from n.get("para_quem", [])
+    yield from n.get("nao_e_para", [])
+    yield from (c.get("texto", "") for c in n.get("critica", []))
+
+
+def checar_edicao_nacional(n):
+    erros = []
+    frases = [f for t in textos(n) for f in re.split(r"(?<=[.!?])\s+", t) if AUSENCIA.search(f)]
+    for f in frases:
+        if CATEGORICO.search(f):
+            erros.append(f"edição nacional: frase categórica {f!r}. Escreva o que foi verificado: "
+                         "'não encontramos edição nacional (na Ludopedia, no ComparaJogos e em lojas) até <data>'")
+    ver = n.get("verificacao_nacional") or []
+    for v in ver:
+        fontes = v.get("fontes") or []
+        if v.get("resultado") not in RESULTADOS or not v.get("jogo") or not v.get("data"):
+            erros.append(f"verificacao_nacional: cada item precisa de jogo, data e resultado ({' ou '.join(sorted(RESULTADOS))})")
+        if len(fontes) < 2 or not any(urlparse(u).netloc.endswith(".br") for u in fontes):
+            erros.append(f"verificacao_nacional de {v.get('jogo')!r}: pelo menos 2 fontes com link, uma delas brasileira "
+                         "(Ludopedia, ComparaJogos ou loja); rode tools/noticias/edicao_nacional.py")
+        if v.get("resultado") == "não encontrada" and not any("comparajogos.com.br" in u for u in fontes):
+            erros.append(f"verificacao_nacional de {v.get('jogo')!r}: ausência precisa do link do ComparaJogos "
+                         "(saída de tools/noticias/edicao_nacional.py), que mostra se há loja brasileira vendendo")
+    if frases and not any(v.get("resultado") == "não encontrada" for v in ver):
+        erros.append("edição nacional: a nota diz que não há edição nacional, mas não registra a verificação "
+                     "(campo verificacao_nacional; ver PADRAO_EDITORIAL.md)")
+    for v in ver:
+        if v.get("resultado") == "edição nacional":
+            for f in frases:
+                if v.get("jogo", "").lower() in f.lower():
+                    erros.append(f"edição nacional: {v['jogo']} tem edição nacional verificada, mas o texto diz o contrário: {f!r}")
+    return erros
 
 
 def problemas(n):
@@ -40,7 +90,7 @@ def problemas(n):
         erros.append("fontes: pelo menos 2, com link e data")
     if n.get("crivo", {}).get("pontos", 0) < 5:
         erros.append("crivo abaixo de 5 pontos")
-    return erros
+    return erros + checar_edicao_nacional(n)
 
 
 if __name__ == "__main__":

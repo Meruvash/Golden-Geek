@@ -124,6 +124,7 @@ A notícia da Elite Boardgamers não repete o release: diz o que aconteceu, por 
 | `veredito` | Nossa opinião | 20 a 60 palavras: conselho claro (comprar, esperar, acompanhar) e o porquê. |
 | `fontes` | Fontes | pelo menos 2, com link e data da consulta. |
 | `crivo` | Por que esta notícia entrou | pontos e critérios do crivo (PLANO_NOTICIAS.md). |
+| `verificacao_nacional` | (não aparece na página) | Obrigatório quando a nota diz que um jogo não tem edição nacional, e recomendado para todo jogo citado: `[{jogo, resultado, data, fontes, obs}]`, com `resultado` "edição nacional" ou "não encontrada" e pelo menos 2 fontes com link, uma brasileira. "Não encontrada" exige o link do ComparaJogos. Ver regra 6. |
 
 Regras de texto:
 
@@ -132,3 +133,9 @@ Regras de texto:
 3. **Sem citação inventada.** Frase entre aspas só se a frase original existe; o resto é paráfrase com dono.
 4. **Previsão é previsão.** Data de lançamento é "prevista" até o jogo chegar às lojas.
 5. **Crítica dividida aparece dividida.** Se as resenhas discordam, mostre os dois lados.
+6. **Edição nacional: verificação obrigatória.** Ausência de notícia de lançamento não prova que o jogo não saiu no Brasil; foi assim que erramos Galactic Cruise (Jelly Monster, nov/2025), Rebirth e Hot Streak. Antes de escrever que um jogo não tem edição nacional, faça os três passos e registre em `verificacao_nacional`:
+   1. `python3 tools/noticias/edicao_nacional.py "<nome do jogo>"`: consulta o ComparaJogos. Oferta de jogo novo em loja brasileira (fora Amazon e marketplaces) é sinal forte de edição nacional: abra a página da loja e confira editora e idioma.
+   2. Página do jogo na Ludopedia (campo de edição nacional e "No Brasil").
+   3. Busca na web em modo estendido, em português e pensando em loja: "<nome> jogo português loja brasileira", "<nome> editora nacional". A busca comum não alcança lojas brasileiras.
+
+   Só então, e só se nada aparecer, escreva o que foi verificado e até quando: "não encontramos edição nacional até <data>". Nunca "não há", "não tem", "ainda não há" ou "sem edição nacional": o verificador recusa essas frases. Se um jogo tem edição nacional, diga a editora, o mês de lançamento e a fonte.

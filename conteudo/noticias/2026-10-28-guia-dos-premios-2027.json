@@ -27,7 +27,7 @@
   "No Golden Geek do ciclo 2025, anunciado em maio de 2026, Galactic Cruise venceu como jogo pesado do ano, O Senhor dos Anéis: Sina da Sociedade levou jogo médio, cooperativo e temático, e Hot Streak ficou com jogo leve e de festa. Vantage foi o mais inovador e o melhor solo.",
   "No Spiel des Jahres 2026, venceu Dito!, de Martin Ang; no Kennerspiel, Rebirth, de Reiner Knizia. Fora desse calendário, o Deutscher Spiele Preis, votado pelo público, sai na Spiel Essen, em outubro: em 2026 venceu Santuário."
  ],
- "no_brasil": "Vários premiados de 2026 já estão aqui: Sina da Sociedade (Galápagos) tem resenha nossa, Vantage chegou às lojas em outubro e Santuário saiu pela Grok. Não encontramos edição nacional anunciada de Dito!, Rebirth, Galactic Cruise ou Hot Streak até 28/10/2026.",
+ "no_brasil": "Vários premiados de 2026 já estão aqui: Sina da Sociedade (Galápagos) tem resenha nossa, Vantage chegou às lojas em outubro, Santuário saiu pela Grok, Galactic Cruise pela Jelly Monster (nov/2025), Rebirth pela Jelly Monster (jun/2026) e Hot Streak pela Asmodee (ago/2026). De Dito!, não confirmamos edição nacional até 28/10/2026.",
  "critica": [
   {
    "fonte": "Júri do Spiel des Jahres, via Tagesspiegel/dpa",
@@ -76,6 +76,21 @@
    "nome": "BoardGameWire: Deutscher Spiele Preis 2026",
    "url": "https://boardgamewire.com/index.php/2026/10/27/two-games-two-deutscher-spiele-preis-wins-ark-nova-designer-mathias-wigge-takes-second-title-with-sanctuary/",
    "data": "27/10/2026"
+  },
+  {
+   "nome": "Bravo Jogos: Galactic Cruise",
+   "url": "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-galact-cruise-p",
+   "data": "28/10/2026"
+  },
+  {
+   "nome": "Bravo Jogos: Hot Streak",
+   "url": "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-hot-streak-p",
+   "data": "28/10/2026"
+  },
+  {
+   "nome": "Alquimistas dos Jogos: Rebirth",
+   "url": "https://www.alquimistasdosjogos.com.br/jogos/rebirth",
+   "data": "28/10/2026"
   }
  ],
  "imagem": {
@@ -95,5 +110,48 @@
    "Jogo com resenha nossa: Sina da Sociedade (3)",
    "Confirmada por duas fontes (2)"
   ]
- }
+ },
+ "verificacao_nacional": [
+  {
+   "jogo": "Galactic Cruise",
+   "resultado": "edição nacional",
+   "data": "28/10/2026",
+   "fontes": [
+    "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-galact-cruise-p",
+    "https://www.caixinhaboardgames.com.br/produtos/galactic-cruise/",
+    "https://www.comparajogos.com.br/item/galactic-cruise"
+   ],
+   "obs": "Jelly Monster, português, lançamento nov/2025"
+  },
+  {
+   "jogo": "Rebirth",
+   "resultado": "edição nacional",
+   "data": "28/10/2026",
+   "fontes": [
+    "https://www.alquimistasdosjogos.com.br/jogos/rebirth",
+    "https://ludopedia.com.br/jogo/rebirth"
+   ],
+   "obs": "Jelly Monster, português, lançamento 06/2026"
+  },
+  {
+   "jogo": "Hot Streak",
+   "resultado": "edição nacional",
+   "data": "28/10/2026",
+   "fontes": [
+    "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-hot-streak-p",
+    "https://www.comparajogos.com.br/item/hot-streak"
+   ],
+   "obs": "Asmodee, português, lançamento ago/2026"
+  },
+  {
+   "jogo": "Dito!",
+   "resultado": "não encontrada",
+   "data": "28/10/2026",
+   "fontes": [
+    "https://www.comparajogos.com.br/all?q=dito",
+    "https://www.philibertnet.com/en/9499-game-factory"
+   ],
+   "obs": "só edições europeias (alemã e francesa em pré-venda)"
+  }
+ ]
 }

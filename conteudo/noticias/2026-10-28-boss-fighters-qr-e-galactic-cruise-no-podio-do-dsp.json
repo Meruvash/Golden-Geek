@@ -54,7 +54,7 @@
   ]
  },
  "selo": "Vale acompanhar",
- "por_que_importa": "Um jogo que depende de aplicativo no pódio de um prêmio votado por jogadores mostra que a tecnologia na mesa deixou de ser rejeitada por princípio. Para quem está no Brasil, falta o principal: ainda não há edição nacional anunciada.",
+ "por_que_importa": "Um jogo que depende de aplicativo no pódio de um prêmio votado por jogadores mostra que a tecnologia na mesa deixou de ser rejeitada por princípio. Para quem está no Brasil, falta o principal: não encontramos edição nacional anunciada.",
  "numeros": [
   [
    "100 mil+",
@@ -77,7 +77,7 @@
    "Arquivo do DSP"
   ]
  ],
- "no_brasil": "Não encontramos edição nacional nem anúncio de editora brasileira até 28/10/2026. O aplicativo já tem português do Brasil, segundo a App Store, mas as cartas e o manual das edições à venda estão em inglês ou alemão.",
+ "no_brasil": "Não encontramos edição nacional nem anúncio de editora brasileira até 28/10/2026, no ComparaJogos e em buscas por lojas brasileiras. O aplicativo já tem português do Brasil, segundo a App Store, mas as cartas e o manual das edições à venda estão em inglês ou alemão.",
  "critica": [
   {
    "fonte": "Board Game Quest",
@@ -97,5 +97,17 @@
  "nao_e_para": [
   "Quer o jogo em português, sem depender de importação"
  ],
- "veredito": "Vale acompanhar: é um sucesso de vendas premiado, mas, sem edição nacional, comprar hoje significa importar e jogar com cartas em outra língua. Se uma editora brasileira anunciar, voltamos ao assunto."
+ "veredito": "Vale acompanhar: é um sucesso de vendas premiado, mas, sem edição nacional encontrada, comprar hoje significa importar e jogar com cartas em outra língua. Se uma editora brasileira anunciar, voltamos ao assunto.",
+ "verificacao_nacional": [
+  {
+   "jogo": "Boss Fighters QR",
+   "resultado": "não encontrada",
+   "data": "28/10/2026",
+   "fontes": [
+    "https://www.comparajogos.com.br/item/boss-fighters-qr",
+    "https://pegasus.de/en/Boss-Fighters-QR-English-Edition/51270E"
+   ],
+   "obs": "no ComparaJogos, só um anúncio da Amazon (importado); edições encontradas em alemão, inglês, francês e tcheco"
+  }
+ ]
 }

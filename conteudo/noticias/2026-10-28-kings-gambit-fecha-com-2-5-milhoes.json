@@ -5,7 +5,7 @@
  "titulo": "King's Gambit fecha com US$ 2,58 milhões; edição de loja sai em 2027",
  "selo": "Vale acompanhar",
  "lide": "The Lord of the Rings: The King's Gambit, da Restoration Games, encerrou o Kickstarter em 20 de outubro com US$ 2,58 milhões de 8.325 apoiadores. Uma edição comum chega às lojas em 2027 pela Space Cowboys, com distribuição mundial da Asmodee.",
- "por_que_importa": "Os apoiadores preferiram em massa as versões mais caras, acima de US$ 379. Para o Brasil, o que conta é a edição de loja: com a Asmodee na distribuição, há caminho para uma versão nacional, mas nenhuma editora brasileira anunciou o jogo ainda.",
+ "por_que_importa": "Os apoiadores preferiram em massa as versões mais caras, acima de US$ 379. Para o Brasil, o que conta é a edição de loja: com a Asmodee na distribuição, há caminho para uma versão nacional, mas não encontramos anúncio de editora brasileira até agora.",
  "numeros": [
   [
    "US$ 2.576.794",
@@ -27,7 +27,7 @@
   "O jogo é uma nova versão de Star Wars: The Queen's Gambit (2000), assinada por Rob Daviau e Justin D. Jacobson, para 1 a 4 pessoas em times de Sombra contra Povos Livres. Daviau é coautor de Pandemic Legacy.",
   "A edição de loja terá tabuleiros menores, sem as peças grandes de Minas Tirith e Mordor, e miniaturas de duas cores."
  ],
- "no_brasil": "Não há edição nacional anunciada até 28/10/2026. A edição de loja da Space Cowboys é prevista para 2027, com distribuição mundial da Asmodee, dona da Galápagos; uma versão brasileira é possível, mas não foi confirmada.",
+ "no_brasil": "Não encontramos edição nacional anunciada até 28/10/2026, no ComparaJogos e em buscas por editoras brasileiras. A edição de loja da Space Cowboys é prevista para 2027, com distribuição mundial da Asmodee, dona da Galápagos; uma versão brasileira é possível, mas não foi confirmada.",
  "critica": [
   {
    "fonte": "GamingTrend",
@@ -45,7 +45,7 @@
   "Prefere esperar a versão de loja, mais barata"
  ],
  "nao_e_para": [
-  "Quer jogar logo em português: não há edição nacional anunciada"
+  "Quer jogar logo em português: não encontramos edição nacional anunciada"
  ],
  "veredito": "Vale acompanhar a edição de loja de 2027 e um possível anúncio da Galápagos. Importar a versão de campanha só compensa para quem faz questão das peças grandes.",
  "fontes": [
@@ -89,5 +89,17 @@
    "Designer premiado: Rob Daviau (3)",
    "Confirmada por duas fontes (2)"
   ]
- }
+ },
+ "verificacao_nacional": [
+  {
+   "jogo": "King's Gambit",
+   "resultado": "não encontrada",
+   "data": "28/10/2026",
+   "fontes": [
+    "https://www.comparajogos.com.br/all?q=king%27s%20gambit",
+    "https://restorationgames.com/press-release-the-lord-of-the-rings-the-kings-gambit/"
+   ],
+   "obs": "edição de loja prevista para 2027 pela Space Cowboys, distribuição Asmodee; nenhuma editora brasileira citada"
+  }
+ ]
 }

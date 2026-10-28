@@ -81,5 +81,37 @@
    "Prêmio grande: As d'Or (4)",
    "Confirmada por duas fontes (2)"
   ]
- }
+ },
+ "verificacao_nacional": [
+  {
+   "jogo": "Toy Battle",
+   "resultado": "não encontrada",
+   "data": "28/10/2026",
+   "fontes": [
+    "https://www.comparajogos.com.br/item/toy-battle",
+    "https://ludopedia.com.br/jogo/toy-battle"
+   ],
+   "obs": "Ludopedia lista só a Repos Production; sem oferta em loja nacional"
+  },
+  {
+   "jogo": "Zenith",
+   "resultado": "não encontrada",
+   "data": "28/10/2026",
+   "fontes": [
+    "https://www.comparajogos.com.br/item/zenith",
+    "https://ludopedia.com.br/jogo/zenith"
+   ],
+   "obs": "sem oferta em loja nacional; na Ludopedia, só pedido de edição no fórum"
+  },
+  {
+   "jogo": "A Ilha dos Mookies",
+   "resultado": "não encontrada",
+   "data": "28/10/2026",
+   "fontes": [
+    "https://www.comparajogos.com.br/all?q=mookies",
+    "https://www.philibertnet.com/fr/le-scorpion-masque/156540-l-ile-des-mookies-807658001614.html"
+   ],
+   "obs": "só edições francesa e inglesa (Mooki Island)"
+  }
+ ]
 }
