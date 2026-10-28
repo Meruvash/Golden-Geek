@@ -1,5 +1,6 @@
 {
  "slug": "azul",
+ "usar_na_pagina": true,
  "fotos": [
   {
    "arquivo": "fotos/capa-1.webp",
@@ -14,16 +15,46 @@
    "aprovada": true
   },
   {
+   "arquivo": "fotos/mesa-1.webp",
+   "tipo": "mesa",
+   "largura": 1600,
+   "altura": 1200,
+   "editora": "Honza F.",
+   "credito": "Foto: Honza F. · CC0 · Wikimedia Commons",
+   "licenca": "CC0",
+   "pagina": "https://commons.wikimedia.org/wiki/File:A_game_of_Azul_in_progress.jpg",
+   "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/A_game_of_Azul_in_progress.jpg/1920px-A_game_of_Azul_in_progress.jpg",
+   "baixada_em": "2026-10-27",
+   "aprovada": true,
+   "fora": true
+  },
+  {
+   "arquivo": "fotos/mesa-2.webp",
+   "tipo": "mesa",
+   "largura": 1600,
+   "altura": 1200,
+   "editora": "Gábor Zehetmayer",
+   "credito": "Foto: Gábor Zehetmayer · CC0 · Wikimedia Commons",
+   "licenca": "CC0",
+   "pagina": "https://commons.wikimedia.org/wiki/File:A_four-player_game_of_the_board_game_Azul.jpg",
+   "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/A_four-player_game_of_the_board_game_Azul.jpg/1920px-A_four-player_game_of_the_board_game_Azul.jpg",
+   "baixada_em": "2026-10-27",
+   "aprovada": true,
+   "principal": true
+  },
+  {
    "arquivo": "fotos/componentes-1.webp",
    "tipo": "componentes",
-   "largura": 1080,
-   "altura": 1080,
-   "editora": "Plan B Games",
-   "credito": "Imagem: Plan B Games",
-   "pagina": "https://www.nextmove-games.com/azul/",
-   "imagem": "https://cdn.svc.asmodee.net/production-nextmove/uploads/2024/04/azul_factories.jpg",
+   "largura": 1600,
+   "altura": 1200,
+   "editora": "Pongrácz Zsolt",
+   "credito": "Foto: Pongrácz Zsolt · CC BY-SA 3.0 · Wikimedia Commons",
+   "licenca": "CC BY-SA 3.0",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Azul_tiles.jpg",
+   "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Azul_tiles.jpg/1920px-Azul_tiles.jpg",
    "baixada_em": "2026-10-27",
-   "aprovada": true
+   "aprovada": true,
+   "jogar": true
   }
  ]
 }

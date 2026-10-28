@@ -1,0 +1,44 @@
+{
+ "slug": "fate-of-the-fellowship",
+ "usar_na_pagina": true,
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 1500,
+   "altura": 1500,
+   "editora": "Z-Man Games",
+   "credito": "Imagem: Z-Man Games · edição em inglês",
+   "pagina": "https://www.zmangames.com/game/the-lord-of-the-rings-fate-of-the-fellowship/",
+   "imagem": "https://cdn.svc.asmodee.net/production-zman/uploads/image-converter/2025/01/Box-Front-Right.webp",
+   "baixada_em": "2026-10-27",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 1600,
+   "altura": 1600,
+   "editora": "Z-Man Games",
+   "credito": "Imagem: Z-Man Games · edição em inglês",
+   "pagina": "https://www.zmangames.com/announcements/announcing-the-lord-of-the-rings-fate-of-the-fellowship/",
+   "imagem": "https://cdn.svc.asmodee.net/production-zman/uploads/2025/01/Component-Image-2-1.png",
+   "baixada_em": "2026-10-27",
+   "aprovada": true,
+   "principal": true
+  },
+  {
+   "arquivo": "fotos/componentes-2.webp",
+   "tipo": "componentes",
+   "largura": 1600,
+   "altura": 1600,
+   "editora": "Z-Man Games",
+   "credito": "Imagem: Z-Man Games · edição em inglês",
+   "pagina": "https://www.zmangames.com/announcements/announcing-the-lord-of-the-rings-fate-of-the-fellowship/",
+   "imagem": "https://cdn.svc.asmodee.net/production-zman/uploads/2025/01/Component-Image-6-1.png",
+   "baixada_em": "2026-10-27",
+   "aprovada": true,
+   "fora": true
+  }
+ ]
+}

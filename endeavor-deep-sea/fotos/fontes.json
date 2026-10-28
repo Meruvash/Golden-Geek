@@ -1,29 +1,61 @@
 {
  "slug": "endeavor-deep-sea",
+ "usar_na_pagina": true,
  "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 1600,
+   "altura": 1237,
+   "editora": "Sean Jacquemain (Burnt Island Games).",
+   "credito": "Foto: Sean Jacquemain (Burnt Island Games) · CC BY-SA 4.0 · Wikimedia Commons",
+   "licenca": "CC BY-SA 4.0",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Endeavor_Deep_Sea_%E2%80%94_Box.jpg",
+   "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Endeavor_Deep_Sea_%E2%80%94_Box.jpg/1920px-Endeavor_Deep_Sea_%E2%80%94_Box.jpg",
+   "baixada_em": "2026-10-27",
+   "aprovada": true
+  },
   {
    "arquivo": "fotos/mesa-1.webp",
    "tipo": "mesa",
    "largura": 1600,
-   "altura": 717,
-   "editora": "Burnt Island Games",
-   "credito": "Imagem: Burnt Island Games",
-   "pagina": "https://www.burntislandgames.com/endeavordeepsea",
-   "imagem": "https://static.wixstatic.com/media/78243e_ef05412491d44712bc57a889fc2d18c4~mv2.jpg/v1/fill/w_2110,h_945,q_90,enc_avif,quality_auto/78243e_ef05412491d44712bc57a889fc2d18c4~mv2.jpg",
+   "altura": 1068,
+   "editora": "Sean Jacquemain (Burnt Island Games).",
+   "credito": "Foto: Sean Jacquemain (Burnt Island Games) · CC BY-SA 4.0 · Wikimedia Commons",
+   "licenca": "CC BY-SA 4.0",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Endeavor_Deep_Sea_%E2%80%94_Gameplay_1_out_of_4.jpg",
+   "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Endeavor_Deep_Sea_%E2%80%94_Gameplay_1_out_of_4.jpg/1920px-Endeavor_Deep_Sea_%E2%80%94_Gameplay_1_out_of_4.jpg",
    "baixada_em": "2026-10-27",
-   "aprovada": true
+   "aprovada": true,
+   "principal": true
   },
   {
    "arquivo": "fotos/jogabilidade-1.webp",
    "tipo": "jogabilidade",
    "largura": 1600,
-   "altura": 717,
-   "editora": "Burnt Island Games",
-   "credito": "Imagem: Burnt Island Games",
-   "pagina": "https://www.burntislandgames.com/endeavordeepsea",
-   "imagem": "https://static.wixstatic.com/media/78243e_cc8ec6c5f1794d64898e6fb49b280853~mv2.jpg/v1/fill/w_2110,h_945,q_90,enc_avif,quality_auto/78243e_cc8ec6c5f1794d64898e6fb49b280853~mv2.jpg",
+   "altura": 1013,
+   "editora": "Sean Jacquemain (Burnt Island Games).",
+   "credito": "Foto: Sean Jacquemain (Burnt Island Games) · CC BY-SA 4.0 · Wikimedia Commons",
+   "licenca": "CC BY-SA 4.0",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Endeavor_Deep_Sea_%E2%80%94_Gameplay_4_out_of_4.jpg",
+   "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Endeavor_Deep_Sea_%E2%80%94_Gameplay_4_out_of_4.jpg/1920px-Endeavor_Deep_Sea_%E2%80%94_Gameplay_4_out_of_4.jpg",
    "baixada_em": "2026-10-27",
-   "aprovada": true
+   "aprovada": true,
+   "fora": true
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 1600,
+   "altura": 1068,
+   "editora": "Sean Jacquemain (Burnt Island Games).",
+   "credito": "Foto: Sean Jacquemain (Burnt Island Games) · CC BY-SA 4.0 · Wikimedia Commons",
+   "licenca": "CC BY-SA 4.0",
+   "pagina": "https://commons.wikimedia.org/wiki/File:Endeavor_Deep_Sea_%E2%80%94_Gameplay_2_out_of_4.jpg",
+   "imagem": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Endeavor_Deep_Sea_%E2%80%94_Gameplay_2_out_of_4.jpg/1920px-Endeavor_Deep_Sea_%E2%80%94_Gameplay_2_out_of_4.jpg",
+   "baixada_em": "2026-10-27",
+   "aprovada": true,
+   "jogar": true
   }
  ]
 }

@@ -253,7 +253,7 @@ def layout_v2(c, premios_bloco, ficha_html, fontes, fotos=None, info_meio=""):
     abas = "".join(
         f'<li><a href="#{i}">{t}</a></li>'
         for i, t in (("resumo", "Resumo"), ("como-funciona", "Como funciona"), ("como-e-jogar", "Como é jogar"), ("pros-contras", "Prós e contras"),
-                     *((("infografico", "Infográfico"),) if info_meio else ()), ("para-quem", "Para quem é"), ("edicao", "Preço"), ("veredito", "Veredito"), ("mais-resenhas", "Mais resenhas"), ("ficha", "Ficha"))
+                     *((("infografico", "Infográfico"),) if 'id="infografico"' in info_meio else ()), ("para-quem", "Para quem é"), ("edicao", "Preço"), ("veredito", "Veredito"), ("mais-resenhas", "Mais resenhas"), ("ficha", "Ficha"))
     )
     premios_bloco = re.sub(r'<h2>Prêmios</h2><p class="resumo">(.*?)</p>', r'<details class="mais dobra" open><summary><h2>Prêmios</h2> <span class="resumo">\1</span></summary>', premios_bloco).replace("</ul></section>", "</ul></details></section>")
     main = f"""<main id="conteudo" class="v2" style="--acc:{e(c.get("cor", "#e3b23c"))}">
@@ -421,7 +421,14 @@ def build(c):
     if principal:
         capa_da_foto(slug, principal)
     versao_capa = versao(ROOT / slug / "capa.jpg")
-    if principal:
+    if principal and not info.exists():
+        # Resenha só com fotos (sem infográfico): a foto fica no topo e a legenda do Instagram ganha bloco próprio.
+        topo_fig = foto_html(c, principal, "capa foto-capa", lazy=False)
+        info_meio = (f'<section class="bloco info-meio" id="legenda-ig"><h2>Legenda para o Instagram</h2>'
+                     f'<div class="post">{legenda_btn}</div>{legenda_box}</section>' if leg else "")
+    elif not info.exists():
+        sys.exit(f"{slug}: sem infografico.webp e sem foto liberada para o topo; não há o que pôr no topo da página.")
+    elif principal:
         topo_fig = foto_html(c, principal, "capa foto-capa", lazy=False)
         info_meio = (f'<section class="bloco info-meio" id="infografico"><h2>Infográfico para o Instagram</h2>'
                      f'<p class="sub">A resenha inteira em uma imagem: salve na galeria ou copie a legenda pronta.</p>'
@@ -727,8 +734,8 @@ footer a{{color:var(--bar-ink)}}
     cv.getContext("2d").drawImage(img, 0, 0);
     cv.toBlob(b => {{ if (b) arquivo = new File([b], nome, {{ type: "image/jpeg" }}); }}, "image/jpeg", 0.92);
   }};
-  img.complete ? preparar() : img.addEventListener("load", preparar);
-  document.getElementById("b-salvar").addEventListener("click", async () => {{
+  if (img) img.complete ? preparar() : img.addEventListener("load", preparar);
+  if (img) document.getElementById("b-salvar").addEventListener("click", async () => {{
     preparar();
     if (!arquivo) {{ st.textContent = "A imagem ainda está carregando. Tente de novo em um instante."; return; }}
     if (navigator.canShare && navigator.canShare({{ files: [arquivo] }})) {{

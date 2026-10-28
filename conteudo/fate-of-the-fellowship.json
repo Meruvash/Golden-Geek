@@ -1,0 +1,450 @@
+{
+ "slug": "fate-of-the-fellowship",
+ "jogo": "The Lord of the Rings: Fate of the Fellowship",
+ "cor": "#b07d2a",
+ "kicker": "Resenha · Cooperativo épico",
+ "og_titulo": "O Senhor dos Anéis: Sina da Sociedade vale a pena? Resenha Elite Boardgamers",
+ "descricao": "Resenha de O Senhor dos Anéis: Sina da Sociedade (Fate of the Fellowship), vencedor de três Golden Geek em 2025, incluindo Jogo do Ano médio: como funciona, pontos fortes, pontos de atenção e para quem é.",
+ "titulo_html": "O Pandemic que virou Terra-média: <span>Sina da Sociedade</span>",
+ "lede": "O Senhor dos Anéis: Sina da Sociedade (Fate of the Fellowship, no original) é o jogo cooperativo de Matt Leacock, o criador de Pandemic, em que o grupo leva Frodo até a Montanha da Perdição enquanto segura os exércitos de Sauron. Venceu três Golden Geek em 2025, incluindo Jogo do Ano médio, e tem edição nacional da Galápagos. É para quem gosta de cooperativos com peso e ama a obra de Tolkien; a crítica o aponta como o melhor Pandemic até aqui.",
+ "tags": [
+  "1–5 jogadores",
+  "60–150 min",
+  "Cooperativo",
+  "Pandemic System",
+  "Médio"
+ ],
+ "alt": "Infográfico Elite Boardgamers sobre o jogo O Senhor dos Anéis: Sina da Sociedade",
+ "premiacoes": [
+  {
+   "premio": "Golden Geek",
+   "ano": 2025,
+   "categoria": "Jogo do Ano médio",
+   "colocacao": 1,
+   "resultado": "vencedor",
+   "fonte": "https://eliteboardgamers.com.br/",
+   "rotulo": "Vencedor"
+  },
+  {
+   "premio": "Golden Geek",
+   "ano": 2025,
+   "categoria": "Cooperativo",
+   "colocacao": 1,
+   "resultado": "vencedor",
+   "fonte": "https://eliteboardgamers.com.br/",
+   "rotulo": "Vencedor"
+  },
+  {
+   "premio": "Golden Geek",
+   "ano": 2025,
+   "categoria": "Temático",
+   "colocacao": 1,
+   "resultado": "vencedor",
+   "fonte": "https://eliteboardgamers.com.br/",
+   "rotulo": "Vencedor"
+  },
+  {
+   "premio": "Golden Geek",
+   "ano": 2025,
+   "categoria": "Solo",
+   "colocacao": 2,
+   "resultado": "top 3",
+   "fonte": "https://eliteboardgamers.com.br/",
+   "rotulo": "2º lugar"
+  },
+  {
+   "premio": "Golden Geek",
+   "ano": 2025,
+   "categoria": "Arte",
+   "colocacao": 3,
+   "resultado": "top 3",
+   "fonte": "https://eliteboardgamers.com.br/",
+   "rotulo": "3º lugar"
+  }
+ ],
+ "ficha": [
+  [
+   "Ano",
+   "2025"
+  ],
+  [
+   "Designer",
+   "Matt Leacock"
+  ],
+  [
+   "Arte",
+   "Jared Blando e Cory Godbey"
+  ],
+  [
+   "Editora original",
+   "Z-Man Games"
+  ],
+  [
+   "Editora no Brasil",
+   "Galápagos (O Senhor dos Anéis: Sina da Sociedade)"
+  ],
+  [
+   "Jogadores",
+   "1 a 5"
+  ],
+  [
+   "Duração anunciada",
+   "60 a 150 minutos"
+  ],
+  [
+   "Idade",
+   "14+"
+  ],
+  [
+   "Nota BGG",
+   "cerca de 8,3 / 10 (média de usuários, conforme sites que replicam o BGG)"
+  ],
+  [
+   "Peso BGG",
+   "cerca de 3 / 5 (entre 2,96 e 3,1, conforme a fonte)"
+  ],
+  [
+   "Nota Ludopedia",
+   "não confirmado nas fontes consultadas"
+  ],
+  [
+   "Modo solo oficial",
+   "Sim"
+  ],
+  [
+   "Componentes",
+   "13 personagens, 9 miniaturas de Nazgûl, 83 tropas, 7 dados de busca, 3 dados de batalha, 24 cartas de objetivo, 50 cartas da Sombra e torre de dados de Barad-dûr"
+  ],
+  [
+   "Base",
+   "Pandemic System"
+  ]
+ ],
+ "nota_ficha": "Nota e peso do BGG vêm de sites que replicam o BoardGameGeek, que bloqueia acesso automatizado, e variam entre eles. Não encontramos a nota da Ludopedia.",
+ "como_funciona": [
+  "Cada partida tem um único objetivo final, sempre o mesmo: levar Frodo e Sam até a Montanha da Perdição e destruir o Um Anel. Antes disso, o grupo precisa cumprir de três a cinco objetivos sorteados entre 24 cartas, como enfrentar o Balrog em Moria, tomar Isengard ou reunir o Conselho de Elrond. O jogo é inteiramente cooperativo: todos ganham ou perdem juntos.",
+  "Cada jogador controla dois dos 13 personagens, e alguém sempre fica com Frodo e Sam, que contam como um só. No seu turno, um dos seus personagens faz quatro ações e o outro faz uma. As ações são viajar (levando tropas junto), recrutar tropas amigas, atacar, capturar um baluarte inimigo vazio, trocar cartas com quem está no mesmo lugar e preparar, que transforma uma carta em ficha.",
+  "As cartas de região são o combustível de tudo. Cada uma traz um símbolo, como furtividade, coragem, amizade ou resistência, e muitas ações e objetivos pedem para descartar o símbolo certo. Depois das ações, você compra duas cartas de região e revela as cartas da Sombra, que fazem os exércitos de Sauron surgir e marchar pelas setas do mapa rumo aos refúgios dos povos livres.",
+  "Frodo é o centro da tensão. Sempre que ele anda, precisa gastar furtividade; se não gastar, rola os dados de busca, um para cada Nazgûl na região e cada tropa inimiga no destino, e cerca de metade das faces tira esperança. Esperança é a única barra de vida do grupo: começa em 6 e, se chegar a zero, todos perdem.",
+  "Misturadas no baralho estão as cartas do Escurecer, o equivalente às epidemias de Pandemic: aumentam quantas cartas da Sombra saem por turno e trazem de volta as que já saíram. Para vencer, Frodo precisa chegar à Montanha da Perdição, descartar cinco símbolos de anel e sobreviver a uma última rolagem de busca."
+ ],
+ "experiencia": [
+  "Uma rodada começa com uma escolha difícil: qual dos seus dois personagens recebe as quatro ações. Gimli pode levar tropas de anões para defender o Abismo de Helm, enquanto Frodo, com uma única ação, avança um passo gastando a última carta de furtividade. Depois vêm as cartas da Sombra, e a mesa inteira prende a respiração para ver se os orcs vão chegar ao Condado ou se o Olho de Sauron vai encontrar Frodo.",
+  "O ritmo é de gestão de crise, como em Pandemic, mas com uma história se formando na mesa. Na partida descrita pela Wargamer, os Nazgûl cercaram o Condado cedo e Gollum precisou guiar os hobbits por outro caminho. A GamesRadar+ chama o resultado de o melhor jogo da série Pandemic até agora, mas avisa que há turnos em que, sem as cartas certas, quase não há o que fazer. Com quatro ou cinco pessoas, a partida passa de duas horas e meia, segundo a Player Elimination."
+ ],
+ "funciona": [
+  [
+   "Objetivos que contam a história",
+   "As 24 cartas de objetivo transformam cenas dos livros em metas: libertar o rei de Rohan, enfrentar o Balrog, tomar Isengard. Escolhendo combinações diferentes, cada partida conta outra versão da jornada e muda a estratégia. A GamesRadar+ deu nota máxima à rejogabilidade e chamou o sistema de objetivos de pura genialidade."
+  ],
+  [
+   "Dois personagens por jogador",
+   "Dividir quatro ações e uma ação entre seus dois personagens é uma decisão pequena e constante que espalha o grupo pelo mapa e resolve vários problemas ao mesmo tempo. Para a Wargamer, isso evita o problema clássico de Pandemic, em que um jogador com poderes menos úteis passa turnos sem fazer nada importante."
+  ],
+  [
+   "Frodo em fuga constante",
+   "Cada passo de Frodo pede furtividade ou uma rolagem de dados contra os Nazgûl, e os outros personagens podem atrair o Olho de Sauron para longe com batalhas. A Player Elimination descreve a sensação de estar sempre em fuga, e a Wargamer conta que voar com as Águias até a Montanha traz todos os Nazgûl junto."
+  ],
+  [
+   "Melhor que o Pandemic original",
+   "Cada carta da Sombra tem dois efeitos possíveis, definidos pelo verso da carta de baixo, então o reembaralhamento das cartas do Escurecer não repete o mesmo desastre. Para a Wargamer, o jogo melhora Pandemic em todos os sentidos; para a GamesRadar+, é o melhor da série até aqui."
+  ],
+  [
+   "Modo solo de verdade",
+   "No modo solo oficial, você controla quatro personagens mais Frodo, com uma única mão de cartas para todos. A Zatu, que deu nota 94%, considera o solo excelente e desafiador, e o jogo ficou em 2º lugar no Golden Geek de melhor solo em 2025."
+  ],
+  [
+   "Produção caprichada",
+   "O mapa da Terra-média tem pequenas cenas desenhadas por Jared Blando e Cory Godbey, os nove Nazgûl são miniaturas de plástico em bases transparentes e a torre de dados imita Barad-dûr. A GamesRadar+ diz que a caixa organiza tantos componentes que parece uma TARDIS de papelão."
+  ]
+ ],
+ "atencao": [
+  [
+   "Moderada",
+   "Turnos sem o que fazer",
+   "Como quase tudo pede a carta com o símbolo certo, há turnos em que não dá para usar todas as ações. A GamesRadar+ dá o exemplo de Frodo sem cartas de furtividade e fora de um refúgio: andar é arriscado demais e sobra pouco para fazer. Acontece pouco, mas frustra quando acontece."
+  ],
+  [
+   "Moderada",
+   "Tabuleiro apertado e confuso",
+   "O mapa é pequeno para tanta coisa: rotas cruzadas, setas coloridas e dezenas de tropas minúsculas. A Player Elimination aponta essa bagunça visual como a maior crítica ao jogo, e a GamesRadar+ conta que os Nazgûl caem das bases e escondem informação do mapa."
+  ],
+  [
+   "Moderada",
+   "Difícil e com curva longa",
+   "A Gaming Trend diz que precisou de algumas partidas no nível fácil antes de passar para o padrão, e a CoopGestalt avisa que é muito fácil perder por falta de esperança. Há ainda três níveis acima do padrão. Quem quer vencer logo na primeira vez pode se frustrar."
+  ],
+  [
+   "Moderada",
+   "Longo com mesa cheia",
+   "Com quatro ou cinco jogadores, a partida passa de duas horas e meia, segundo a Player Elimination. A Gaming Trend acha que o ponto ideal fica em dois ou três jogadores, porque com cinco são dez personagens e muitas cartas para administrar."
+  ],
+  [
+   "Leve",
+   "Preparação demorada",
+   "O manual dedica cinco páginas ilustradas só à preparação, conta a Wargamer, que sugere deixar o tabuleiro pronto antes de os amigos chegarem. Há tropas, Nazgûl, baralhos e trilhas a ajustar conforme o número de jogadores e a dificuldade escolhida."
+  ],
+  [
+   "Leve",
+   "Cartas finas",
+   "GamesRadar+ e Zatu reclamam do papel das cartas, mais fino que o de outros Pandemic. A Zatu encontrou cartas com bordas imperfeitas logo ao abrir a caixa e recomenda usar protetores; a loja Masmorra indica 74 protetores médios e 97 grandes."
+  ]
+ ],
+ "para_quem": [
+  "Ama O Senhor dos Anéis e quer reviver a jornada",
+  "Gosta de Pandemic e quer algo mais profundo",
+  "Joga sozinho ou em grupo de 2 ou 3",
+  "Gosta de cooperativos difíceis que pedem várias partidas",
+  "Quer um jogo diferente a cada partida"
+ ],
+ "nao_e_para": [
+  "Não gosta de jogos cooperativos",
+  "Quer um jogo rápido para a família",
+  "Se irrita com azar nos dados",
+  "Costuma jogar com 5 e não quer partidas de 3 horas"
+ ],
+ "selo": "Recomendado",
+ "veredito": "Sina da Sociedade pega a estrutura de Pandemic e a transforma numa aventura da Terra-média de verdade: dois personagens por jogador, 24 objetivos tirados dos livros, Frodo fugindo dos Nazgûl a cada passo e um final decidido nos dados. A crítica o considera o melhor jogo da série. Os tropeços existem: tabuleiro apertado, turnos travados pela falta da carta certa, cartas finas, preparação longa e partidas acima de duas horas com mesa cheia. Por cerca de R$ 560 a R$ 600, é compra certa para fãs de Tolkien e de cooperativos de peso, e brilha sozinho ou com dois ou três jogadores.",
+ "tagline": "O Pandemic que virou Terra-média.",
+ "consulta": "27/10/2026",
+ "fontes": [
+  [
+   "Z-Man Games – anúncio de Fate of the Fellowship",
+   "https://www.zmangames.com/announcements/announcing-the-lord-of-the-rings-fate-of-the-fellowship/",
+   "página da editora, objetivos, personagens"
+  ],
+  [
+   "GamesRadar+ – Fate of the Fellowship review",
+   "https://www.gamesradar.com/games/board-games/fate-of-the-fellowship-review",
+   "crítica, ações, duração, componentes"
+  ],
+  [
+   "Wargamer – Fate of the Fellowship review",
+   "https://www.wargamer.com/lord-of-the-rings-fate-of-the-fellowship/review",
+   "crítica, cartas da Sombra, preparação"
+  ],
+  [
+   "Zatu – Fate of the Fellowship review",
+   "https://zatu.com/blogs/reviews/the-lord-of-the-rings-fate-of-the-fellowship-review",
+   "crítica, modo solo, esperança"
+  ],
+  [
+   "Gaming Trend – Fate of the Fellowship review",
+   "https://gamingtrend.com/reviews/the-lord-of-the-rings-fate-of-the-fellowship-review-the-road-to-mordor-got-a-whole-lot-more-complicated/",
+   "crítica, final, dificuldade, arte"
+  ],
+  [
+   "Player Elimination – Fate of the Fellowship review",
+   "https://playerelimination.com/2025/08/18/a-lord-of-the-rings-fate-of-the-fellowship-review",
+   "crítica, duração com 4–5"
+  ],
+  [
+   "CoopGestalt – Fate of the Fellowship",
+   "https://coopgestalt.com/2025/08/",
+   "dificuldade"
+  ],
+  [
+   "Board Game Arena – Fate of the Fellowship",
+   "https://en.boardgamearena.com/news?id=921",
+   "versão online, níveis de dificuldade"
+  ],
+  [
+   "Masmorra – O Senhor dos Anéis: Sina da Sociedade",
+   "https://www.masmorra.com.br/produtos/pan721",
+   "edição nacional, componentes, preço de referência"
+  ],
+  [
+   "Joy Joy Café – Sina da Sociedade",
+   "https://loja.joyjoycafe.com.br/o-senhor-dos-aneis-sina-da-sociedade-pandemic-system",
+   "preço de referência"
+  ],
+  [
+   "Odisseia Jogos – Sina da Sociedade",
+   "https://www.odisseiajogos.com.br/board-games/o-senhor-dos-aneis-sina-da-sociedade",
+   "preço de referência"
+  ],
+  [
+   "Board Game Matcher – Fate of the Fellowship",
+   "https://v2.boardgamematcher.com/game/the-lord-of-the-rings-fate-of-the-fellowship",
+   "nota e peso do BGG"
+  ],
+  [
+   "Board Game Oracle – Fate of the Fellowship",
+   "https://boardgameoracle.com/boardgame/price/1AESLKcacZ/the-lord-of-the-rings-fate-of-the-fellowship",
+   "peso do BGG"
+  ]
+ ],
+ "roteiro": {
+  "tema": "Tolkien's Middle-earth epic fantasy, illustrated storybook map, dark shadow armies from Mordor, warm parchment gold against deep shadow red and black",
+  "cena": "Frodo and Sam sneaking toward Mount Doom while the Eye of Sauron searches the land and nine black Ringwraiths ride, the fellowship gathering armies in the distance",
+  "mesa": "a box titled \"O SENHOR DOS ANÉIS: SINA DA SOCIEDADE\" with illustrated fellowship art, an illustrated map of Middle-earth board covered with tiny red enemy meeples and blue friendly troops, nine black plastic Nazgûl miniatures on clear stands, wooden character standees, a cardboard Barad-dûr dice tower and black and white custom dice, tarot-size objective cards",
+  "titulo": "O SENHOR DOS ANÉIS: SINA DA SOCIEDADE",
+  "chamada": "O PANDEMIC VIROU TERRA-MÉDIA: LEVE FRODO À MONTANHA DA PERDIÇÃO ENQUANTO OS EXÉRCITOS DE SAURON AVANÇAM.",
+  "destaque": "TRÊS GOLDEN GEEK EM 2025, INCLUINDO JOGO DO ANO MÉDIO. PARA A CRÍTICA, O MELHOR PANDEMIC JÁ FEITO, COM TOLKIEN EM CADA DECISÃO.",
+  "lateral": [
+   "1–5 jogadores",
+   "60–150 min",
+   "complexidade 3 / 5 (médio)",
+   "modo solo: oficial",
+   "dados de busca e batalha",
+   "designer Matt Leacock",
+   "editora original Z-Man Games",
+   "editora no Brasil Galápagos",
+   "ano 2025",
+   "idioma português (BR)"
+  ],
+  "numeros": [
+   [
+    "PERSONAGENS",
+    "13",
+    "2 por jogador"
+   ],
+   [
+    "OBJETIVOS",
+    "24",
+    "3 a 5 por partida"
+   ],
+   [
+    "NAZGÛL",
+    "9",
+    "miniaturas caçando Frodo"
+   ],
+   [
+    "DIFICULDADE",
+    "5",
+    "níveis, do introdutório ao lendário"
+   ]
+  ],
+  "como_resumo": "Cooperativo de crise: segure os exércitos de Sauron enquanto Frodo foge até a Montanha da Perdição.",
+  "passos": [
+   [
+    "DOIS PERSONAGENS",
+    "Cada jogador controla dois personagens. No seu turno, um deles faz quatro ações e o outro, só uma."
+   ],
+   [
+    "VIAJE E LUTE",
+    "Viaje levando tropas, recrute aliados, ataque exércitos e capture baluartes inimigos, gastando cartas com o símbolo pedido pela ação."
+   ],
+   [
+    "FRODO SE ESCONDE",
+    "Para Frodo andar, gaste furtividade. Sem ela, role os dados de busca contra os Nazgûl e arrisque perder esperança."
+   ],
+   [
+    "A SOMBRA AVANÇA",
+    "Compre duas cartas de região e revele as cartas da Sombra: orcs surgem e marcham pelo mapa rumo aos refúgios."
+   ],
+   [
+    "DESTRUA O ANEL",
+    "Cumpra os objetivos sorteados, leve Frodo à Montanha da Perdição, descarte cinco anéis e sobreviva à rolagem final."
+   ]
+  ],
+  "fortes": [
+   "24 objetivos tirados de cenas dos livros.",
+   "Dois personagens por jogador: quatro ações e uma.",
+   "Frodo foge dos Nazgûl a cada passo.",
+   "Cartas da Sombra com dois efeitos possíveis.",
+   "Modo solo oficial elogiado pela crítica.",
+   "Torre de dados de Barad-dûr e nove Nazgûl.",
+   "Cinco níveis de dificuldade para crescer junto."
+  ],
+  "atencao": [
+   "Turnos travados pela falta da carta certa.",
+   "Tabuleiro pequeno e cheio de peças minúsculas.",
+   "Difícil: perder por esperança é comum.",
+   "Mais de duas horas com 4 ou 5.",
+   "Cinco páginas de manual só para preparar.",
+   "Cartas finas: vale usar protetores."
+  ],
+  "ficha": [
+   "Designer: Matt Leacock",
+   "Arte: Jared Blando e Cory Godbey",
+   "Editora original: Z-Man Games",
+   "Editora no Brasil: Galápagos",
+   "Jogadores: 1 a 5",
+   "Duração: 60–150 min",
+   "Idade: 14+",
+   "Peso BGG: cerca de 3 / 5",
+   "Componentes: 13 personagens, 9 Nazgûl, 83 tropas, 24 objetivos",
+   "Extra: torre de dados de Barad-dûr"
+  ],
+  "premios": [
+   "GOLDEN GEEK 2025 · JOGO DO ANO MÉDIO",
+   "GOLDEN GEEK 2025 · COOPERATIVO",
+   "GOLDEN GEEK 2025 · TEMÁTICO"
+  ],
+  "perfil": [
+   [
+    "Tema e narrativa",
+    5
+   ],
+   [
+    "Cooperação",
+    5
+   ],
+   [
+    "Modo solo",
+    4
+   ],
+   [
+    "Rejogabilidade",
+    5
+   ],
+   [
+    "Facilidade de ensinar",
+    2
+   ],
+   [
+    "Preparação rápida",
+    2
+   ]
+  ],
+  "extra": {
+   "titulo": "CINCO NÍVEIS DE DIFICULDADE",
+   "texto": "Comece no introdutório e suba para padrão, heroico, épico e lendário. As cartas do Escurecer e a quantidade de objetivos definem o desafio, então o jogo cresce junto com o grupo."
+  },
+  "veredito": "O MELHOR PANDEMIC JÁ FEITO, COM TOLKIEN EM CADA DECISÃO.",
+  "veredito_texto": "Objetivos dos livros, dois personagens por jogador e Frodo em fuga constante. Tabuleiro apertado e turnos travados pesam: compra certa para fãs de Tolkien e cooperativos, melhor com até três."
+ },
+ "jogadores": [
+  [
+   "Sozinho",
+   "Modo solo oficial: você controla quatro personagens e Frodo com uma única mão de cartas. A Zatu considera o solo excelente.",
+   3
+  ],
+  [
+   "2 ou 3 jogadores",
+   "O ponto ideal para a Gaming Trend: variedade de personagens sem que o turno de cada um demore demais.",
+   3
+  ],
+  [
+   "4 ou 5 jogadores",
+   "Funciona, mas com dez personagens a partida passa de duas horas e meia e fica bem mais difícil de coordenar.",
+   2
+  ]
+ ],
+ "primeira_partida": "Reserve uma noite inteira e monte o tabuleiro antes de chamar o grupo: só a preparação ocupa cinco páginas do manual. Use o cenário inicial sugerido pela editora e o nível introdutório, e escolha personagens simples para quem nunca jogou Pandemic. O que mais confunde é lembrar que os Nazgûl agem por região, e não por local, e que quase toda ação pede a carta com o símbolo certo. Dica: deixe o objetivo final, Destruir o Um Anel, sempre à vista de todos.",
+ "edicao_nacional": "A Galápagos publica o jogo como O Senhor dos Anéis: Sina da Sociedade – Um jogo Pandemic System, em português, com o mesmo conteúdo da caixa original, incluindo a torre de dados de Barad-dûr. Em 27/10/2026, as lojas consultadas mostravam preços entre R$ 557,91 e R$ 599,99, e a maioria estava sem estoque. Vale acompanhar as reposições.",
+ "versoes": "Não há expansões oficiais confirmadas nas fontes consultadas. Nos Estados Unidos, lojas participantes deram uma promoção estética de Gandalf, o Branco. O Board Game Arena teve uma versão online por tempo limitado, com 10 dos 13 personagens e 4 objetivos para iniciantes, que serviu de teste gratuito antes da compra.",
+ "comparacoes": [
+  [
+   "Pandemic Legacy: Season 1",
+   "pandemic-legacy",
+   "O mesmo sistema de Matt Leacock em formato de campanha que muda o tabuleiro a cada partida. Mais leve e mais curto por sessão, mas com uma história marcante ao longo de doze meses."
+  ],
+  [
+   "Gloomhaven",
+   "gloomhaven",
+   "Para quem quer um cooperativo ainda mais pesado, com combate tático e campanha de meses. Troca a gestão de crise no mapa por batalhas de cartas em masmorras."
+  ]
+ ],
+ "citacao": {
+  "texto": "O melhor jogo da série Pandemic até agora.",
+  "fonte": "GamesRadar+ (tradução livre)"
+ },
+ "preco_ref": {
+  "faixa": "R$ 557,91 a R$ 599,99",
+  "data": "27/10/2026",
+  "obs": "a maioria das lojas sem estoque"
+ },
+ "legenda": "O Pandemic virou Terra-média: leve Frodo à Montanha da Perdição antes que Sauron vença. 💍🔥\n\nO Senhor dos Anéis: Sina da Sociedade venceu três Golden Geek em 2025, incluindo Jogo do Ano médio, Cooperativo e Temático.\nCada jogador controla dois personagens, os Nazgûl caçam Frodo a cada passo e 24 objetivos tirados dos livros mudam cada partida.\nO tabuleiro apertado e os turnos travados pela falta da carta certa pesam, mas a crítica o chama de o melhor Pandemic já feito.\nVeredito: RECOMENDADO.\n\nVocê levaria Frodo pelo caminho dos livros ou pela porta da frente de Mordor?\nResenha completa no link da bio.\n\n#SenhorDosAneis #SinaDaSociedade #FateOfTheFellowship #JogosDeTabuleiro #BoardGames #Cooperativo #Pandemic #Tolkien #GoldenGeek #Galapagos #EliteBoardgamers"
+}

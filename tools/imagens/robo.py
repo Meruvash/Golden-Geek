@@ -132,6 +132,7 @@ class Cliente:
         self.robots = {}
         self.ultimo = {}
         self.pedidos = 0
+        self.pausa = {}  # host -> horário até quando o servidor pediu para não voltar
 
     def _host(self, url):
         p = urlsplit(url)
@@ -169,6 +170,10 @@ class Cliente:
         meta = json.loads(meta_f.read_text()) if meta_f.exists() else None
         if usar_cache and meta and time.time() - meta["quando"] < CACHE_DIAS * 86400:
             return meta["url"], self._ler(corpo_f, binario)
+        host = self._host(url)
+        if self.pausa.get(host, 0) > time.time():
+            raise LookupError(f"{host} pediu pausa até {time.strftime('%H:%M', time.localtime(self.pausa[host]))}; "
+                              "rode de novo depois")
         rob = self._robots(url)
         if rob.status == 0:
             raise LookupError(f"robots.txt de {self._host(url)} inacessível (erro de rede); tente mais tarde")
@@ -198,10 +203,13 @@ class Cliente:
             if r.status_code in (401, 403):
                 raise Bloqueado(f"{r.status_code} em {url}")
             if r.status_code == 429 or r.status_code >= 500:
-                if espera is None:
-                    raise LookupError(f"{r.status_code} em {url}")
-                time.sleep(int(r.headers.get("Retry-After", espera)) if r.headers.get("Retry-After", "").isdigit()
-                           else espera)
+                pedida = r.headers.get("Retry-After", "")
+                pedida = int(pedida) if pedida.isdigit() else espera
+                if espera is None or pedida > 120:
+                    # pausa longa: respeita sem travar o lote; o host fica de fora até o horário pedido
+                    self.pausa[host] = time.time() + (pedida or 600)
+                    raise LookupError(f"{r.status_code} em {url} (servidor pediu {pedida or 600} s de pausa)")
+                time.sleep(pedida)
                 continue
             if r.status_code >= 400:
                 raise LookupError(f"{r.status_code} em {url}")
@@ -486,7 +494,8 @@ def baixar_candidatas(cli, candidatas, pasta):
         except Bloqueado as e:
             avisos.append(str(e))
             continue
-        except (LookupError, OSError):
+        except (LookupError, OSError) as e:
+            avisos.append(f"não baixou {c['url']}: {e}")
             continue
         w, h = im.size
         if min(w, h) < LADO_MIN or max(w, h) / min(w, h) > 3:
@@ -585,7 +594,8 @@ def kit(cli, origem, editora):
         if base.startswith(("._", ".")) or not re.search(r"\.(jpe?g|png|webp|tiff?)$", base, re.I):
             continue  # pula lixo do macOS e o que não é imagem
         res.append({"url": f"{pagina}#{base}", "alt": base, "pagina": pagina, "editora": editora,
-                    "credito": f"Imagem: {editora} (kit de imprensa)", "_dados": z.read(nome)})
+                    "credito": f"Imagem: {editora}" + ("" if local.exists() else " (kit de imprensa)"),
+                    "_dados": z.read(nome)})
     return res
 
 
