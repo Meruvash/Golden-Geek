@@ -49,6 +49,24 @@ def cabecalho(pre, atual="", sub=False):
 <nav class="nav" aria-label="Seções do site"><ul class="in">{nav}</ul></nav>"""
 
 
+def trilha(*itens):
+    """Trilha visível (breadcrumb) a partir de pares (rótulo, href); o último item é a página atual, sem link.
+
+    Os rótulos são os mesmos do BreadcrumbList em JSON-LD (seo.trilha), que já existe nessas páginas."""
+    *links, (atual, _) = itens
+    lis = "".join(f'<li><a href="{h}">{r}</a></li>' for r, h in links)
+    return f'<nav class="trilha" aria-label="Trilha de navegação"><ol>{lis}<li aria-current="page">{atual}</li></ol></nav>'
+
+
+# CSS da trilha, igual nas páginas escuras (resenha, notícia)
+CSS_TRILHA = (".trilha ol{display:flex;align-items:center;min-width:0;margin:0;padding:0;list-style:none;font-size:.85rem;color:var(--muted)}"
+              ".trilha li{display:flex;align-items:center;white-space:nowrap}"
+              ".trilha li+li::before{content:\"›\";content:\"›\" / \"\";margin:0 8px;color:var(--muted)}"
+              ".trilha a{color:var(--gold);font-weight:700;text-decoration:none;padding:4px 0}.trilha a:hover{text-decoration:underline}"
+              ".trilha li:last-child{display:block;min-width:0;overflow:hidden;text-overflow:ellipsis}"
+              ".trilha li:last-child::before{display:inline}")
+
+
 def rodape(pre):
     return f"""<footer><div class="in">
  <span>Elite Boardgamers</span><a href="{pre}noticias/">Notícias</a><a href="{pre}resenhas/">Resenhas</a><a href="{pre}lancamentos/">Lançamentos</a><a href="{pre}consulta/">Consulta Golden Geek</a><a href="{pre}politica-editorial/">Política editorial</a>

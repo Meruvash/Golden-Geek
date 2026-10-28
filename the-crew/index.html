@@ -49,6 +49,8 @@ a{color:var(--link);text-underline-offset:.18em}
 .nav a:hover{border-bottom-color:var(--gold)}.nav a[aria-current]{color:var(--gold);border-bottom-color:var(--gold)}
 .jogo{background:var(--panel);border-bottom:1px solid var(--line)}
 .jogo .in{max-width:1120px;margin:0 auto;padding:20px 16px 0;display:grid;gap:20px}
+.trilha ol{display:flex;align-items:center;min-width:0;margin:0;padding:0;list-style:none;font-size:.85rem;color:var(--muted)}.trilha li{display:flex;align-items:center;white-space:nowrap}.trilha li+li::before{content:"›";content:"›" / "";margin:0 8px;color:var(--muted)}.trilha a{color:var(--gold);font-weight:700;text-decoration:none;padding:4px 0}.trilha a:hover{text-decoration:underline}.trilha li:last-child{display:block;min-width:0;overflow:hidden;text-overflow:ellipsis}.trilha li:last-child::before{display:inline}
+.jogo .trilha{grid-column:1/-1;margin-bottom:-8px}
 .capa a{display:block;border-radius:8px;overflow:hidden;box-shadow:0 8px 28px rgba(0,0,0,.6)}
 .capa figcaption{font-size:.82rem;color:var(--muted);margin-top:6px}
 .foto-capa img{border-radius:8px;box-shadow:0 8px 28px rgba(0,0,0,.6)}
@@ -241,6 +243,7 @@ footer a{color:var(--bar-ink)}
 <nav class="nav" aria-label="Seções do site"><ul class="in"><li><a href="../noticias/">Notícias</a></li><li><a href="../resenhas/" aria-current="true">Resenhas</a></li><li><a href="../lancamentos/">Lançamentos</a></li><li><a href="../consulta/">Consulta Golden Geek</a></li></ul></nav>
 
 <section class="jogo"><div class="in">
+ <nav class="trilha" aria-label="Trilha de navegação"><ol><li><a href="../">Início</a></li><li><a href="../resenhas/">Resenhas</a></li><li aria-current="page">The Crew: The Quest for Planet Nine</li></ol></nav>
  <figure class="capa" id="info">
   <a href="infografico.webp" target="_blank" rel="noopener"><img src="infografico.webp" width="1600" height="1600" alt="Infográfico Elite Boardgamers sobre o jogo The Crew" fetchpriority="high"></a>
   <figcaption>Toque para ver o infográfico em tamanho cheio.</figcaption>

@@ -19,7 +19,7 @@ import seo  # noqa: E402
 from imagens_resp import miniatura, srcset  # noqa: E402
 from build_sitemap import lastmod_registrado  # noqa: E402
 from build_review import INSTAGRAM, ROOT, SITE, WHATSAPP, e, icone, versao  # noqa: E402
-from layout import cabecalho, rodape  # noqa: E402
+from layout import CSS_TRILHA, cabecalho, rodape, trilha  # noqa: E402
 from noticias.checar_noticia import problemas  # noqa: E402
 
 MESES = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"]
@@ -270,7 +270,7 @@ def pagina(titulo, descricao, url, imagem, pre, corpo, tipo="website", head_extr
 <meta name="theme-color" content="#000000">
 <link rel="icon" href="{pre}favicon.svg" type="image/svg+xml">
 <link rel="preload" href="{pre}fontes/public-sans.woff2" as="font" type="font/woff2" crossorigin>
-<style>{CSS % {"pre": pre}}</style>
+<style>{CSS % {"pre": pre}}{CSS_TRILHA}</style>
 {jsonld}
 </head>
 <body>
@@ -479,7 +479,7 @@ def build_nota(n):
     leia = "".join(f'<li><a href="{pre}noticias/{o["slug"]}/">{e(o["titulo"])}</a></li>' for o in relacionadas(n))
     corpo = f"""{cabecalho(pre, "Notícias", sub=True)}
 <main id="conteudo" class="in"><div class="nota">
- <a class="volta" href="{pre}noticias/">← Todas as notícias</a>
+ {trilha(("Início", pre), ("Notícias", f"{pre}noticias/"), (e(n["titulo"]), ""))}
  <article class="bloco">
   <span class="cat {CAT_CLASSE.get(n['categoria'], 'mercado')}">{e(n['categoria'])}</span> <span class="selo {sc}">{e(n['selo'])}</span>
   <h1>{e(n['titulo'])}</h1>
