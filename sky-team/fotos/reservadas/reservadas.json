@@ -1,0 +1,25 @@
+{
+ "slug": "sky-team",
+ "obs": "Fotos próprias enviadas pelo usuário em 28/10/2026, guardadas para uso futuro. Não estão no fontes.json, então não aparecem na página. Mais fotos virão; ao montar o conjunto, aprovar com robo.py kit ou converter e registrar no fontes.json.",
+ "credito_sugerido": "Foto: Elite Boardgamers (confirmar com o usuário)",
+ "fotos": [
+  {
+   "arquivo": "fotos/reservadas/organizador-caixa.jpg",
+   "tipo_sugerido": "componentes",
+   "largura": 1500,
+   "altura": 2000,
+   "descricao": "Caixa aberta com organizador impresso em 3D (azul, com placa 'SKY TEAM'): dados azuis e laranja, avião, marcadores, cafés e o painel de aproximação.",
+   "atencao": "O organizador é impresso em 3D, não é componente oficial do jogo; vale dizer isso na legenda se for usada.",
+   "pessoas": false
+  },
+  {
+   "arquivo": "fotos/reservadas/mesa-partida-caixa.jpg",
+   "tipo_sugerido": "mesa",
+   "largura": 1500,
+   "altura": 2000,
+   "descricao": "Painel de controle montado no meio da partida (aeroporto YUL Montréal-Trudeau), com a caixa da edição em português ('Preparem-se para pousar') ao fundo e torre de controle impressa em 3D.",
+   "atencao": "Candidata forte para o topo da página: mesa real, edição nacional visível, sem pessoas.",
+   "pessoas": false
+  }
+ ]
+}

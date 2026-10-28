@@ -27,6 +27,8 @@ Não use: galeria do BoardGameGeek (fotos de usuários, e o site bloqueia robôs
 
 Antes de confiar num domínio, confira o conteúdo: domínios de jogos mudam de dono (`flatoutgames.com` está à venda; `detectiveboardgame.com` virou um podcast polonês).
 
+Fotos próprias que o usuário manda antes da hora ficam em `<slug>/fotos/reservadas/` com um `reservadas.json` (descrição, tipo sugerido, crédito). Fora do `fontes.json` elas não vão para a página; antes de buscar imagens de um jogo, confira se ele tem reservadas.
+
 ## Etapa 1: a editora tem receita?
 
 A busca liga a ficha do jogo (`Editora original` e `Editora no Brasil` em `conteudo/<slug>.json`) às receitas pelo `nome` e pelos `apelidos`. Se faltar a editora:
