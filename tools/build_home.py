@@ -275,6 +275,51 @@ footer .in{display:flex;flex-wrap:wrap;gap:10px 20px;padding-top:18px;padding-bo
  footer .in{gap:4px 20px;align-items:center}footer a{display:inline-block;padding:6px 0}
 }
 @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
+/* ===== Paleta de seções (referência: The Verge) =====
+   Filete colorido em cima de cada seção, título em caixa normal, etiquetas preenchidas, linha de data em
+   monoespaçada e faixas de cor alternando com os blocos claros de leitura. As faixas trocam as variáveis
+   --paper-*: o conteúdo de dentro (que usa essas variáveis) muda de cor sem regra nova. */
+:root{--mono:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,monospace;
+--faixa-escura:#121419;--faixa-verde:#0b2a1b;--faixa-roxa:#21173a;--faixa-ouro:#1d1606}
+.bloco>h2,.bloco>.h-sec{border-bottom:0;border-top:3px solid var(--acc,var(--gold));padding:10px 0 0;margin-bottom:14px;
+ font-size:1.12rem;letter-spacing:-.01em;text-transform:none;color:var(--paper-ink)}
+.bloco>h2 a{font-family:var(--mono);font-size:.72rem;text-transform:uppercase;letter-spacing:.06em}
+.meta,.credito,.card-n .meta,.edicao{font-family:var(--mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.05em}
+.edicao{color:var(--gold)}
+/* manchete: etiqueta preenchida, como o "FIRST LOOK" */
+.manchete .kick{justify-self:start;background:var(--gold);color:#000;border-radius:3px;padding:3px 8px;font-size:.7rem}
+.manchete{border-top:4px solid var(--gold)}
+/* faixas escuras e coloridas */
+.bloco.alta,.bloco.agenda,.bloco.financ,.bloco.brasil,.bloco.resenhas{--paper-ink:#eceff3;--paper-muted:#a7afbb;--paper-line:#2c313a;color:var(--paper-ink)}
+.bloco.alta{background:var(--faixa-escura);border:1px solid #262a32}
+.alta .hot a::before{font-size:1.6rem;color:var(--gold);font-weight:800}
+.alta .hot a{grid-template-columns:28px 44px 1fr}
+.bloco.agenda{background:var(--faixa-ouro);border:1px solid #3a2e10;--acc:#f0c24b}
+.agenda .q{color:#f0c24b}
+.bloco.brasil{background:var(--faixa-verde);border:1px solid #17432c;--acc:#3ddc84}
+.brasil h2 a,.alta h2 a,.agenda h2 a,.financ h2 a,.resenhas h2 a{color:var(--acc,var(--gold))}
+.brasil .capas img{background:#1a3d2b}
+.brasil .capas .todos a{background:#123824;color:#7ff0b0}
+.bloco.financ{background:var(--faixa-roxa);border:1px solid #3b2a66;--acc:#b493ff}
+.financ .onde{color:#c9b3ff}.financ .s{color:#d4cce8}
+.bloco.resenhas{background:var(--faixa-escura);border:1px solid #262a32}
+.res img{outline:1px solid #262a32}
+.ultimas{--acc:var(--gold)}
+/* arquivo /noticias/: quadradinhos escuros com a cor da categoria no topo */
+.card-n{--cat:var(--gold)}
+.card-n:has(.cat.brasil){--cat:#3ddc84}.card-n:has(.cat.financ){--cat:#b493ff}.card-n:has(.cat.mercado){--cat:#6ea8ff}.card-n:has(.cat.premios){--cat:#f0c24b}
+.card-n a{background:var(--faixa-escura);color:var(--ink);border:1px solid #262a32;border-top:4px solid var(--cat)}
+.card-n a:hover{border-color:var(--cat)}
+.card-n .resumo{color:#b9c0cb}.card-n .meta{color:#8d96a3}
+.card-n .ci{background:#1b1e24}
+.arq-topo h1{border-top:3px solid var(--gold);padding-top:12px}
+/* página da notícia: blocos de análise em faixas, texto corrido nos blocos claros */
+.nota .importa{background:var(--faixa-ouro);border:1px solid #3a2e10;border-left:4px solid var(--gold);--paper-ink:#eceff3;--paper-muted:#bfae84}
+.nota .importa p{color:#f1ead6}
+.nota .brasil-n{background:var(--faixa-verde);border:1px solid #17432c;border-left:4px solid #3ddc84;--paper-ink:#eceff3;--paper-muted:#8fd3ae;--acc:#3ddc84}
+.nota .brasil-n p{color:#dcefe4}
+.nota .crivo{background:var(--faixa-escura);border:1px solid #262a32;--paper-ink:#eceff3;--paper-muted:#a7afbb}
+.nota .crivo p{color:#c9cfd8}
 """
 
 
