@@ -104,6 +104,16 @@ tr.grp .ge{display:block;font-size:.8rem;font-weight:500;color:var(--muted);marg
  td.pos{font-size:1.05rem;min-width:44px}
  td.g{flex:1}
 }
+/* Paleta de seções (referência: The Verge, como na home e em /noticias/): filtros em faixa escura com filete
+   dourado e cabeçalhos de grupo escuros; as linhas dos jogos seguem claras para leitura. */
+.intro h1{border-top:3px solid #e3b23c;padding-top:12px}
+.panel{--card:#121419;--bg:#000;--ink:#eceff3;--muted:#a7afbb;--line:#2c313a;--accent:#e3b23c;background:var(--card);border-color:#262a32;border-top:3px solid #e3b23c}
+.panel .search::placeholder{color:#8b93a0}
+.seg button.on{color:#000}
+.count{font-family:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,monospace;font-size:.74rem;text-transform:uppercase;letter-spacing:.05em}
+tr.grp th,tbody:first-of-type tr.grp th{background:#121419;color:#eceff3;border-top:3px solid #e3b23c}
+tr.grp .gy{color:#e3b23c}tr.grp .ge{color:#a7afbb}
+@media (max-width:600px){tr.grp th{border-top:3px solid #e3b23c;border-bottom:0}}
 </style>
 <style id="moldura">.busca-btn{display:grid;place-items:center;flex:none;width:44px;height:44px;padding:0;border:1px solid #3a3f48;border-radius:8px;background:none;color:#e9ecf1;cursor:pointer}.busca-btn:hover{border-color:#e3b23c;color:#e3b23c}.busca-btn[hidden]{display:none}footer .in a{display:inline-flex;align-items:center;min-height:24px}.nav .casa{display:flex;align-items:center;justify-content:center;min-width:44px}.nav .casa .ic{width:20px;height:20px}@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.card:hover,.jogo:hover .capa img,.jogo:active .capa,.zap:active,.post-btn:active,.btn-filtro:hover,.btn-filtro:active,.ver:active{transform:none!important}}</style>
 </head>
