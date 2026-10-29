@@ -36,6 +36,7 @@ Vale para todo infográfico novo. O modelo é `modelos/referencia-1.jpg` (Códig
 3. **Como funciona ensina.** Os 5 passos, lidos em sequência, explicam uma rodada de verdade, com os termos do jogo.
 4. **Consistência.** Lateral, números e ficha batem com a `ficha` da página.
 5. **Bandeira do Brasil** só na linha "editora no Brasil", e só se houver edição nacional confirmada.
+7. **Texto de gente, não de fórmula** (vale para resenhas e notícias). Sem muletas e adjetivos vazios ("vale a pena", "para quem gosta de", "ideal para", "jornada", "envolvente", "promete", "não é só X, é Y"): troque por um detalhe concreto (quanto tempo, quantas peças, qual jogo parecido, o que acontece na mesa). Varie a abertura das frases e dos itens de lista. Opinião com posição clara. A lista fica em `tools/vicios.py`; `checar_roteiro.py` e `checar_noticia.py` avisam (sem bloquear) e o aviso deve ser resolvido antes de publicar. Nunca use ferramenta de "humanizar" texto: ela troca palavras sem critério e cria erro.
 6. **Revisão da imagem** (etapa 5 da skill): conferir bloco por bloco contra o roteiro. Duas falhas no mesmo bloco → gerar a arte sem texto e compor o texto por cima em HTML (Playwright).
 
 # Padrão editorial do texto do site (v2)

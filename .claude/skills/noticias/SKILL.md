@@ -38,7 +38,7 @@ Uma nota por arquivo em `conteudo/noticias/<AAAA-MM-DD>-<assunto>.json`, no **pa
 
 - **Edição nacional (regra 6 do padrão das notícias):** para cada jogo da nota, rode `python3 tools/noticias/edicao_nacional.py "<jogo>"`, consulte a página do jogo na Ludopedia e faça busca estendida em português pensando em loja ("<jogo> jogo português loja brasileira"). Registre em `verificacao_nacional` (resultado, data e fontes, uma brasileira). Nunca deduza que o jogo não saiu no Brasil por não haver notícia de lançamento: foi o erro de Galactic Cruise, Rebirth e Hot Streak. Ausência se escreve "não encontramos edição nacional até <data>", nunca "não há" ou "sem edição nacional".
 
-`python3 tools/noticias/checar_noticia.py` precisa passar em todas: ele recusa frase categórica de ausência, ausência sem verificação registrada e texto que contradiz uma edição nacional verificada.
+`python3 tools/noticias/checar_noticia.py` mostra também `⚠️ vício de texto` (regra 7 do PADRAO_EDITORIAL.md): reescreva o trecho com um detalhe concreto antes de publicar. Ele precisa passar em todas: ele recusa frase categórica de ausência, ausência sem verificação registrada e texto que contradiz uma edição nacional verificada.
 
 ## 4. Atualizar os blocos
 
