@@ -1,7 +1,7 @@
 """Gera a página inicial de notícias e a página de cada notícia.
 
 Uso: python3 tools/build_home.py
-Lê conteudo/noticias/*.json (uma nota por arquivo), conteudo/home.json (Em alta, Financiamentos, Agenda),
+Lê conteudo/noticias/*.json (uma nota por arquivo), conteudo/home.json (Destaques, chave em_alta; Financiamentos, Agenda),
 conteudo/lancamentos/<AAAA-MM>.json (calendário da Ludopedia) e pauta.json (últimas resenhas).
 Saída: index.html e noticias/<slug>/index.html. As regras das notas estão em PLANO_NOTICIAS.md.
 """
@@ -149,7 +149,8 @@ h1,h2,h3,p,ul,ol,figure{margin:0}ul,ol{padding:0;list-style:none}img{display:blo
 .lista-n h3,.nota .lista-n h2{font-size:1.02rem;line-height:1.25;font-weight:800;margin:3px 0 2px;text-wrap:balance;letter-spacing:0;text-transform:none;color:inherit}
 .lista-n a:hover h3{text-decoration:underline}
 .lista-n p{font-size:.88rem;color:#3a414c;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-/* em alta: régua do "The Hotness" do BGG */
+/* destaques (chave em_alta): régua do "The Hotness" do BGG */
+.alta .crit-h{font-size:.8rem;color:var(--paper-muted);margin:-4px 0 8px}
 .hot li{counter-increment:h;border-top:1px solid var(--paper-line)}.hot li:first-child{border-top:0}
 .hot{counter-reset:h}
 .hot a{display:grid;grid-template-columns:22px 44px 1fr;gap:10px;align-items:center;padding:9px 0;text-decoration:none}
@@ -316,6 +317,9 @@ def build_politica():
   <p>Toda notícia passa por um crivo editorial. Fica de fora o que não tem fonte primária (boato, vazamento ou "fontes dizem"), conteúdo pago ou release sem fato novo, notícia atrasada e assunto sem relação com tabuleiro moderno.</p>
   <p>O que passa recebe pontos por relevância para quem joga no Brasil, como lançamento confirmado no país, prêmio importante ou confirmação por duas fontes independentes. Só entra com 5 pontos ou mais, e cada notícia mostra no fim por que entrou.</p>
  </div></section>
+ <section class="bloco" id="destaques"><h2>Destaques da página inicial</h2><div class="corpo">
+  <p>O bloco Destaques reúne os jogos mais citados nas nossas notícias dos últimos 7 dias, cada um com o link de uma notícia sobre ele. Não é um ranking de acessos nem de vendas: o site não usa dados de visitas para montar essa lista.</p>
+ </div></section>
  <section class="bloco"><h2>Fato e opinião</h2><div class="corpo">
   <p>Os fatos vêm com fonte e data de consulta. A nossa opinião aparece separada, nas seções "Por que importa" e "Nossa opinião". A opinião de outros veículos aparece sempre com o nome de quem a deu.</p>
   <p>As resenhas reúnem a análise de veículos especializados e dados públicos, como os do BoardGameGeek e da Ludopedia. A nota exibida é a do BoardGameGeek, dada pelos jogadores de lá; não damos nota própria. Preços sempre aparecem com a data em que foram consultados.</p>
@@ -392,13 +396,13 @@ def build_home():
         destino.parent.mkdir(parents=True, exist_ok=True)
         destino.write_text(pagina(f"Notícias{sufixo} | Elite Boardgamers", f"Notícias de jogos de tabuleiro da Elite Boardgamers, com fonte, data e opinião{sufixo}.", url,
                                   capa_secao("noticias"), p_pre, corpo_arq, jsonld=seo.script(seo.trilha(*trilha))), encoding="utf-8")
-    # cada item do Em alta tem de levar a uma nota que trate do jogo já no título
+    # cada item dos Destaques tem de levar a uma nota que trate do jogo já no título
     for j in home["em_alta"]:
         slug = j["link"].strip("/").split("/")[-1]
         alvo_n = next((n for n in ns if n["slug"] == slug), None)
         base = norm(re.split(r" [–-] |:", j["nome"])[0])
         if not alvo_n or base not in norm(alvo_n["titulo"]):
-            sys.exit(f"Em alta: '{j['nome']}' leva a {slug}, que não trata do jogo no título")
+            sys.exit(f"Destaques: '{j['nome']}' leva a {slug}, que não trata do jogo no título")
     alta = "".join(
         f'<li><a href="{j["link"]}"><img src="{capa_jogo(pre, j["id_ludopedia"])}" width="44" height="44" alt="" loading="lazy"><div><b>{e(j["nome"])}</b><span>{e(j["motivo"])}</span></div></a></li>'
         for j in home["em_alta"]
@@ -436,7 +440,7 @@ def build_home():
  <div class="grade">
   {manchete}
   <section class="bloco ultimas"><h2>Últimas notícias <a href="noticias/">Ver todas ({len(ns)})</a></h2><ul class="lista-n">{itens}</ul></section>
-  <aside class="lado"><section class="bloco alta"><h2>Em alta</h2><ol class="hot">{alta}</ol></section>
+  <aside class="lado"><section class="bloco alta"><h2>Destaques <a href="politica-editorial/#destaques" aria-label="Critério dos destaques">Critério</a></h2><p class="crit-h">Os jogos mais citados nas nossas notícias dos últimos 7 dias.</p><ol class="hot">{alta}</ol></section>
   <section class="bloco agenda"><h2>Agenda</h2><ul>{agenda}</ul></section></aside>
   <section class="bloco brasil" id="chegando"><h2>Chegando ao Brasil · {e(rotulo.lower())} <a href="lancamentos/#{mes}">Calendário completo</a></h2><ul class="capas">{capas}</ul></section>
   <section class="bloco financ"><h2>Financiamentos</h2><ul>{financ}</ul></section>
