@@ -22,6 +22,7 @@ ICONES = {
     "preco": '<path d="M3 12V4h8l10 10-8 8L3 12Z"/><circle cx="7.5" cy="8.5" r="1.5"/>',
     "voltar": '<path d="M15 18l-6-6 6-6"/>',
     "topo": '<path d="M12 19V5M5 12l7-7 7 7"/>',
+    "casa": '<path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 9.5V20h13V9.5"/><path d="M10 20v-5.5h4V20"/>',
     "busca": '<circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/>',
     "compartilhar": '<circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="M8.2 10.8l7.6-4.4M8.2 13.2l7.6 4.4"/>',
 }
@@ -48,6 +49,7 @@ CSS_BUSCA = (".busca-btn{display:grid;place-items:center;flex:none;width:44px;he
              "background:none;color:#e9ecf1;cursor:pointer}.busca-btn:hover{border-color:#e3b23c;color:#e3b23c}.busca-btn[hidden]{display:none}"
              # alvo de toque mínimo de 24 px (WCAG 2.2, 2.5.8) nos links do rodapé comum
              "footer .in a{display:inline-flex;align-items:center;min-height:24px}"
+             ".nav .casa{display:flex;align-items:center;justify-content:center;min-width:44px}.nav .casa .ic{width:20px;height:20px}"
              "@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;"
              "transition-duration:.01ms!important;scroll-behavior:auto!important}"
              ".card:hover,.jogo:hover .capa img,.jogo:active .capa,.zap:active,.post-btn:active,.btn-filtro:hover,.btn-filtro:active,.ver:active{transform:none!important}}")
@@ -60,7 +62,9 @@ def cabecalho(pre, atual="", sub=False):
     numa subpágina (uma resenha, uma notícia) recebe aria-current="true", que marca a seção sem dizer
     que o link leva à própria página. O visual é o mesmo nos dois casos ([aria-current] no CSS)."""
     marca = "page" if not sub else "true"
-    nav = "".join(f'<li><a href="{pre}{h}"{f" aria-current=\"{marca}\"" if t == atual else ""}>{t}</a></li>' for h, t in SECOES)
+    # primeiro item: a casinha, que volta à página inicial (marcada como página atual na própria home)
+    casa = f'<li><a class="casa" href="{pre or './'}" aria-label="Página inicial"{" aria-current=\"page\"" if atual == "Início" else ""}>{icone("casa")}</a></li>'
+    nav = casa + "".join(f'<li><a href="{pre}{h}"{f" aria-current=\"{marca}\"" if t == atual else ""}>{t}</a></li>' for h, t in SECOES)
     return f"""<header class="bar" id="topo"><div class="in">
  <a class="marca" href="{pre or './'}"><img src="{pre}marca/elite-boardgamers.webp" width="318" height="254" alt="Elite Boardgamers: página inicial"></a>
  <a class="ig" href="{INSTAGRAM}" target="_blank" rel="noopener" aria-label="Instagram @eliteboardgamers">{icone("insta")}<span>@eliteboardgamers</span></a>

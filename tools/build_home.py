@@ -580,7 +580,7 @@ def build_home():
     for s in slugs:
         c = json.loads((ROOT / "conteudo" / f"{s}.json").read_text(encoding="utf-8"))
         res += f'<li><a href="{s}/"><img src="{s}/capa.jpg{versao(ROOT / s / "capa.jpg")}" srcset="{srcset(ROOT / s / "capa.jpg", pre, (400,))}" sizes="(min-width: 640px) 160px, 45vw" width="800" height="800" alt="" loading="lazy"><b>{e(c["jogo"])}</b></a></li>'
-    corpo = f"""{cabecalho(pre)}
+    corpo = f"""{cabecalho(pre, "Início")}
 <main id="conteudo" class="in">
  <p class="edicao">Edição de {data_longa(max(n["data"] for n in ns))}</p>
  <div class="grade">
