@@ -134,6 +134,13 @@ CSS_CAL = """<style>
 .cal-topo .fonte{font-size:.82rem;color:var(--muted)}
 .cal-topo .fonte a{color:var(--gold)}
 .ctrl{position:sticky;top:0;z-index:5;background:var(--ground);margin:0 -16px;padding:10px 16px 8px;border-bottom:1px solid var(--line);display:grid;gap:8px}
+.atalhos{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;margin:0 -16px;padding:0 16px;font-size:.84rem;font-weight:700}
+.atalhos::-webkit-scrollbar{display:none}
+.atalhos a{flex:none;color:var(--gold);text-decoration:none;padding:6px 10px;border-radius:999px;min-height:32px;display:inline-flex;align-items:center}
+.atalhos a:first-child{padding-left:0}
+.atalhos a:hover,.atalhos a:focus-visible{text-decoration:underline}
+.sobe{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom));z-index:6;font:inherit;font-size:.86rem;font-weight:800;padding:10px 14px;border-radius:999px;border:1px solid var(--gold);background:var(--ground);color:var(--gold);cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.45);min-height:44px}
+.sobe[hidden]{display:none}
 .busca{position:relative}
 .busca input{width:100%;font:inherit;font-size:16px;padding:11px 40px 11px 14px;border-radius:10px;border:1px solid #333944;background:var(--panel2);color:var(--ink)}
 .busca input::placeholder{color:#8b93a0}
@@ -219,9 +226,10 @@ JS = """<script>
   const TIPOS = { jogo: 'Jogo', exp: 'Expansão', rpg: 'RPG', outro: 'Outros' };
   // texto da busca (nome + editora, sem acento) tirado do próprio cartão
   const BUSCA = new Map(itens.map(li => [li, norm(li.querySelector('.nome').textContent + ' ' + li.querySelector('.ed').textContent)]));
-  // Sem âncora, a página mostra o ano inteiro e rola até o mês corrente (chip destacado); os outros meses continuam na lista.
+  // Sem âncora, a página abre no topo com o mês corrente selecionado; o ano inteiro fica no chip "Ano todo".
   const est = { mes: 'ano', tipo: '', st: '', q: '' };
   const agora = NOMES[document.body.dataset.agora] ? document.body.dataset.agora : (meses.length ? meses[meses.length - 1].dataset.mes : '');
+  if (agora) est.mes = agora;  // abre no mês corrente, com o menu do site à vista; o ano todo fica no chip "Ano todo"
 
   function passa(li) {
     if (est.tipo && li.dataset.tipo !== est.tipo) return false;
@@ -311,11 +319,10 @@ JS = """<script>
   else if (/^j\\d+$/.test(h) && document.getElementById(h)) { alvo = document.getElementById(h); est.mes = alvo.closest('.mes').dataset.mes; }
   render(false); centraChip();
   if (alvo) { alvo.scrollIntoView({ block: 'center' }); abre(alvo); }
-  else if (!h && agora) {
-    document.getElementById('m' + agora).scrollIntoView({ block: 'start' });
-    const c = chipsMes.find(x => x.dataset.mes === agora);  // o chip do mês corrente (borda dourada) fica à vista no trilho
-    if (c) c.parentElement.scrollLeft = c.offsetLeft - c.parentElement.clientWidth / 2 + c.offsetWidth / 2;
-  }
+  // botão de voltar ao topo, onde estão o menu do site e os filtros
+  const sobe = $('.sobe');
+  addEventListener('scroll', () => { sobe.hidden = scrollY < 900; }, { passive: true });
+  sobe.addEventListener('click', () => scrollTo(0, 0));  // instantâneo: a lista é longa e o content-visibility muda as alturas no caminho
 })();
 </script>"""
 
@@ -360,12 +367,14 @@ def build(ano=None):
   <p class="fonte">Dados e capas do <a href="https://ludopedia.com.br/lancamentos" target="_blank" rel="noopener">calendário da Ludopedia</a>, consultado em {atualizado:%d/%m/%Y}. Datas previstas pelas editoras podem mudar.</p>
  </div>
  <div class="ctrl">
+  <nav class="atalhos" aria-label="Seções do site"><a href="{pre}">Início</a><a href="{pre}noticias/">Notícias</a><a href="{pre}resenhas/">Resenhas</a><a href="{pre}consulta/">Consulta Golden Geek</a></nav>
   <div class="busca"><input id="busca" type="search" placeholder="Buscar jogo ou editora" aria-label="Buscar jogo ou editora" autocomplete="off" enterkeyhint="search"><button type="button" class="limpa" aria-label="Limpar busca">×</button></div>
   <div class="trilho" role="group" aria-label="Mês">{"".join(chips)}</div>
   <div class="filtros" role="group" aria-label="Filtros">{filtros}</div>
  </div>
  <p class="contagem" aria-live="polite"></p>
  <div class="lista">{"".join(secoes)}</div>
+ <button type="button" class="sobe" hidden aria-label="Voltar ao topo da página">↑ Topo</button>
  <div class="vazio" hidden><p>Nenhum lançamento com esses filtros.</p><button type="button" class="chip">Limpar filtros</button></div>
 </main>
 <dialog class="ficha" id="ficha" aria-labelledby="ficha-nome" aria-modal="true">
