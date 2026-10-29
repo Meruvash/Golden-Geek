@@ -21,7 +21,7 @@ from build_sitemap import lastmod_registrado  # noqa: E402
 from build_review import INSTAGRAM, ROOT, SITE, WHATSAPP, e, icone, versao  # noqa: E402
 from og import url_cartao  # noqa: E402
 from layout import CSS_BUSCA, CSS_TRILHA, cabecalho, rodape, trilha  # noqa: E402
-from noticias.checar_noticia import problemas  # noqa: E402
+from noticias.checar_noticia import checar_cota, problemas  # noqa: E402
 
 MESES = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"]
 SELO_CLASSE = {"Vale a compra": "compra", "Vale acompanhar": "acompanhar", "Para fãs do jogo base": "fas", "Com ressalvas": "ressalvas", "Informativo": "info"}
@@ -64,6 +64,8 @@ def notas():
     ruins = {n["slug"]: problemas(n) for n in ns if problemas(n)}
     if ruins:
         sys.exit("Notícias fora do padrão (rode tools/noticias/checar_noticia.py): " + ", ".join(ruins))
+    if checar_cota(ns):
+        sys.exit("Cota diária de notícias: " + "; ".join(checar_cota(ns)))
     # mais recentes primeiro (dia e hora de publicação); empate, as mais pontuadas no crivo
     return sorted(ns, key=lambda n: (n["data"], datetime.fromisoformat(n["publicado_em"]).timestamp(), n["crivo"]["pontos"]), reverse=True)
 
@@ -398,7 +400,7 @@ def build_politica():
  </div></section>
  <section class="bloco"><h2>Como escolhemos as notícias</h2><div class="corpo">
   <p>Toda notícia passa por um crivo editorial. Fica de fora o que não tem fonte primária (boato, vazamento ou "fontes dizem"), conteúdo pago ou release sem fato novo, notícia atrasada e assunto sem relação com tabuleiro moderno.</p>
-  <p>O que passa recebe pontos por relevância para quem joga no Brasil, como lançamento confirmado no país, prêmio importante ou confirmação por duas fontes independentes. Só entra com 5 pontos ou mais, e cada notícia mostra no fim por que entrou.</p>
+  <p>O que passa recebe pontos por relevância para quem joga no Brasil, como lançamento confirmado no país, prêmio importante ou confirmação por duas fontes independentes. Entra com 5 pontos ou mais. Para o leitor ter notícia todo dia, publicamos 4 por dia (nunca menos de 3): quando poucas chegam a 5 pontos, completamos com as mais bem pontuadas que passaram pelas eliminatórias, e a notícia avisa isso. Cada notícia mostra no fim por que entrou.</p>
  </div></section>
  <section class="bloco" id="destaques"><h2>Destaques da página inicial</h2><div class="corpo">
   <p>O bloco Destaques reúne os jogos mais citados nas nossas notícias dos últimos 7 dias, cada um com o link de uma notícia sobre ele. Não é um ranking de acessos nem de vendas: o site não usa dados de visitas para montar essa lista.</p>
@@ -661,7 +663,7 @@ def build_nota(n):
  {f'<section class="bloco"><h2>Jogos citados</h2><div class="jogos">{jogos}</div></section>' if jogos else ""}
  {f'<section class="bloco leia"><h2>Leia também</h2><ul>{leia}</ul></section>' if leia else ""}
  <section class="bloco fontes"><h2>Fontes</h2><ul>{fontes}</ul></section>
- <section class="bloco crivo"><h2>Por que esta notícia entrou</h2><p><b>{n['crivo']['pontos']} pontos no crivo editorial</b> (mínimo 5): {e("; ".join(n['crivo']['criterios']))}.</p></section>
+ <section class="bloco crivo"><h2>Por que esta notícia entrou</h2><p><b>{n['crivo']['pontos']} pontos no crivo editorial</b> ({"abaixo de 5, entrou para completar as 4 notícias do dia" if n['crivo'].get('cota') else "mínimo 5"}): {e("; ".join(n['crivo']['criterios']) or "nenhum critério de pontuação")}.</p></section>
 </div></main>
 {rodape(pre)}"""
     out = ROOT / "noticias" / n["slug"] / "index.html"

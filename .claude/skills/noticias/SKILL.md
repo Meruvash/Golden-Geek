@@ -1,11 +1,11 @@
 ---
 name: noticias
-description: Monta a edição diária de notícias da página inicial da Elite Boardgamers — coleta (feeds, Bluesky, Ludopedia), crivo editorial, 5 notas no padrão de notícias (PADRAO_EDITORIAL.md), atualização dos blocos e publicação, tudo no ar sem esperar aprovação (inclusive a manchete). Use quando pedirem "/noticias", "edição do dia", "notícias de hoje" ou quando a tarefa agendada diária disparar.
+description: Monta a edição diária de notícias da página inicial da Elite Boardgamers — coleta (feeds, Bluesky, Ludopedia), crivo editorial, 4 notas por dia (mínimo 3) no padrão de notícias (PADRAO_EDITORIAL.md), atualização dos blocos e publicação, tudo no ar sem esperar aprovação (inclusive a manchete). Use quando pedirem "/noticias", "edição do dia", "notícias de hoje" ou quando a tarefa agendada diária disparar.
 ---
 
 # Edição diária de notícias
 
-Meta: **5 notas por dia**, todas com 5 pontos ou mais no crivo (PLANO_NOTICIAS.md). Melhor publicar 3 boas do que 5 fracas: se só 3 passarem, publique 3 e diga isso no resumo. **Desde 28/10/2026 tudo sai direto, manchete inclusive** (pedido do usuário): ninguém aprova nada. A segurança vem das checagens e da verificação das 22h (skill `verificacao`), que corrige sozinha o que estiver errado.
+Meta: **4 notas por dia, nunca menos de 3** (pedido do usuário em 29/10/2026; PLANO_NOTICIAS.md, "Cota diária"). Entram primeiro as de 5 pontos ou mais no crivo. Se não chegarem a 4, complete até 4 com as mais bem pontuadas abaixo de 5, **independente da nota**, desde que passem pelos eliminatórios (fonte primária, sem conteúdo pago, dentro do prazo, sem repetir nota, tabuleiro moderno) e pelo padrão das notícias; marque cada uma com `"cota": true` no `crivo`. Abaixo de 3 só se nem 3 candidatas passarem pelos eliminatórios: aí busque nas fontes de leitura manual e nos feeds com `--dias 4` antes de desistir, e diga no resumo quantas faltaram e por quê. **Desde 28/10/2026 tudo sai direto, manchete inclusive** (pedido do usuário): ninguém aprova nada. A segurança vem das checagens e da verificação das 22h (skill `verificacao`), que corrige sozinha o que estiver errado.
 
 ## 1. Coletar
 
@@ -18,7 +18,7 @@ O pré-crivo só ordena. Leia também as fontes de leitura manual listadas no fi
 1. Para cada candidata promissora, ache a **fonte primária** (editora, prêmio, campanha, evento). Sem ela, a nota não sai.
 2. Pontue pelo crivo de PLANO_NOTICIAS.md com o que a pesquisa confirmou. Resenha, vídeo e lista de recomendação não são notícia: servem de fonte de crítica.
 3. Agrupe o que for do mesmo assunto (vários lançamentos de uma editora no mês viram uma nota).
-4. Escolha até 5 e marque a de maior pontuação como manchete proposta.
+4. Escolha 4 (as de 5 pontos ou mais primeiro, depois a cota) e marque a de maior pontuação como manchete. Nota de cota nunca é manchete se houver uma de pontuação maior. `checar_noticia.py` e `build_home.py` recusam cota além do necessário para fechar 4.
 5. Novidades do calendário da Ludopedia (lançamento novo ou mudança de situação) que não virarem nota: pelo menos garanta que os cartões do mês ligam a alguma nota; se não ligarem, eles levam para a Ludopedia.
 
 ## 3. Escrever

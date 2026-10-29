@@ -26,6 +26,7 @@ AUSENCIA = re.compile(r"(\bsem\b|não há|não tem|não existe|nenhuma|não enco
 CATEGORICO = re.compile(r"((não há|não tem|não existe|ainda não há|nenhuma)[^.;:]{0,40}" + _ED +
                         r"|\bsem (edição|versão) (nacional|brasileira|em português)\b(?! (encontrada|confirmada)))", re.I)
 RESULTADOS = {"edição nacional", "não encontrada"}
+CORTE, META, PISO = 5, 4, 3  # pontos para entrar pelo crivo; notas por dia; mínimo por dia (ver PLANO_NOTICIAS.md)
 
 
 def textos(n):
@@ -88,9 +89,27 @@ def problemas(n):
         erros.append("para_quem: 1 a 3 itens; nao_e_para: até 3")
     if len(n.get("fontes", [])) < 2 or any(not f.get("url") or not f.get("data") for f in n.get("fontes", [])):
         erros.append("fontes: pelo menos 2, com link e data")
-    if n.get("crivo", {}).get("pontos", 0) < 5:
-        erros.append("crivo abaixo de 5 pontos")
+    crivo = n.get("crivo", {})
+    if crivo.get("pontos", 0) < CORTE and not crivo.get("cota"):
+        erros.append(f"crivo abaixo de {CORTE} pontos (só entra marcada como cota do dia: crivo.cota = true)")
     return erros + checar_edicao_nacional(n)
+
+
+def checar_cota(ns):
+    """Cota diária (pedido do usuário em 29/10/2026): o dia fecha com META notas, nunca menos que PISO.
+    Nota abaixo do corte só entra marcada `crivo.cota` e só para completar a META; as do corte entram todas."""
+    erros = []
+    por_dia = {}
+    for n in ns:
+        por_dia.setdefault(n.get("data"), []).append(n)
+    for dia, lista in por_dia.items():
+        cota = [n for n in lista if n.get("crivo", {}).get("pontos", 0) < CORTE]
+        if len(cota) > max(0, META - (len(lista) - len(cota))):
+            erros.append(f"{dia}: {len(cota)} notas de cota, mas a cota só completa o dia até {META} notas")
+        if cota and max(n["crivo"].get("pontos", 0) for n in cota) > min(
+                (n["crivo"].get("pontos", 0) for n in lista if n.get("manchete")), default=99):
+            erros.append(f"{dia}: a manchete precisa ser a nota de maior pontuação do dia")
+    return erros
 
 
 if __name__ == "__main__":
@@ -100,4 +119,8 @@ if __name__ == "__main__":
         e = problemas(json.loads(a.read_text(encoding="utf-8")))
         print(("✅ " if not e else "❌ ") + a.name + ("" if not e else "\n   - " + "\n   - ".join(e)))
         ruim += bool(e)
+    todas = [json.loads(p.read_text(encoding="utf-8")) for p in sorted((ROOT / "conteudo" / "noticias").glob("*.json"))]
+    for e in checar_cota(todas):
+        print("❌ " + e)
+        ruim += 1
     sys.exit(1 if ruim else 0)
