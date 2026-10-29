@@ -29,7 +29,7 @@ Em todas as rodadas, respeite o que cada site permite: sites que proíbem robôs
 
 ## 3. Escrever
 
-Uma nota por arquivo em `conteudo/noticias/<AAAA-MM-DD>-<assunto>.json`, no **padrão das notícias** (PADRAO_EDITORIAL.md, "Padrão editorial das notícias"): selo, lide, por que importa, números com fonte, contexto, no Brasil (preço com data ou a falta dele), crítica atribuída, para quem, nossa opinião, fontes com data e o crivo. Opinião ancorada nas nossas resenhas e na crítica citada. Citação literal só de frase que você leu na fonte. **Não cite a Ludopedia no texto** (lide, contexto, no Brasil etc.): escreva "segundo o nosso calendário de lançamentos"; a Ludopedia vai só nas `fontes`, na fonte dos números e no crédito da capa.
+Uma nota por arquivo em `conteudo/noticias/<AAAA-MM-DD>-<assunto>.json`, no **padrão das notícias** (PADRAO_EDITORIAL.md, "Padrão editorial das notícias"): selo, lide, por que importa, números com fonte, contexto, no Brasil (preço com data ou a falta dele), crítica atribuída, para quem, nossa opinião, fontes com data e o crivo. Opinião ancorada nas nossas resenhas e na crítica citada. Citação literal só de frase que você leu na fonte. **Não cite a Ludopedia no texto** (lide, contexto, no Brasil etc.): escreva "segundo o nosso calendário de lançamentos"; a Ludopedia vai só nas `fontes`, na fonte dos números e no crédito da capa. **Também não cite loja de varejo no texto** (seria publicidade de graça): "em loja parceira" ou "em lojas brasileiras"; a loja vai só nas fontes. A loja da própria editora pode.
 
 - `ids_ludopedia`: ids dos jogos da nota que aparecem no calendário (o cartão passa a ligar para a nota).
 - `jogos`: resenhas nossas citadas (`{"nome", "resenha": "<slug>"}`).

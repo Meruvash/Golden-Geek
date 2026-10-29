@@ -134,6 +134,7 @@ A notícia da Elite Boardgamers não repete o release: diz o que aconteceu, por 
 Regras de texto:
 
 - **Ludopedia só nas fontes** (29/10/2026): o texto da nota não cita a Ludopedia. Lançamento, pré-venda e data prevista se atribuem ao **nosso calendário de lançamentos** (/lancamentos/, que usa os dados dela), e a Ludopedia aparece só na lista de fontes, no campo `fonte` dos números e no crédito da capa ("Capa via Ludopedia"). `checar_noticia.py` recusa a nota que citar a Ludopedia no texto.
+- **Loja não aparece no texto** (29/10/2026): nome de loja de varejo (TabuleRIO, Amazon etc.) seria publicidade de graça. No texto, escreva "em loja parceira", "em lojas brasileiras" ou "a partir de R$ X, segundo o ComparaJogos"; a loja vai só nas `fontes` e na fonte dos números. A loja da própria editora pode ser citada ("loja oficial da Ludofun"). `checar_noticia.py` recusa as lojas da lista `LOJAS`.
 
 1. **Opinião ancorada.** O veredito se apoia nas nossas resenhas (quando o jogo tem) e na crítica citada; nunca em impressão solta.
 2. **Brasil primeiro.** Toda nota responde: dá para comprar aqui, por quanto e de quem? Se não dá, diz isso.

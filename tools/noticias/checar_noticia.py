@@ -26,6 +26,12 @@ AUSENCIA = re.compile(r"(\bsem\b|não há|não tem|não existe|nenhuma|não enco
 CATEGORICO = re.compile(r"((não há|não tem|não existe|ainda não há|nenhuma)[^.;:]{0,40}" + _ED +
                         r"|\bsem (edição|versão) (nacional|brasileira|em português)\b(?! (encontrada|confirmada)))", re.I)
 RESULTADOS = {"edição nacional", "não encontrada"}
+# Loja de varejo não aparece no texto (pedido do usuário em 29/10/2026: seria publicidade de graça); só nas fontes.
+# A loja da própria editora pode ("loja da Grok", "loja oficial da Ludofun"). Acrescente aqui as lojas novas.
+LOJAS = re.compile(r"\b(TabuleRIO|Bravo Jogos|Ludostation|Masmorra BG|Caixinha Boardgames|Pittas|Taverna Real|Alquimistas dos Jogos|"
+                   r"TabuLoja|Place Games|F[aá]cil Shopping|PlayEasy|Animus Ludere|Board Game Barato|Pira no Boardgame|Meca dos Jogos|"
+                   r"Space Board Games|Omniverse|Le[aã]o Livros|Ludolovers|Javali Jogos|Tubaleria|Livtoys|Brech[oó] L[uú]dico|"
+                   r"Amazon|Mercado Livre|Magalu|Magazine Luiza|Shopee|Americanas)\b", re.I)
 MINIMO, DESDE = 5, "2026-10-29"  # notas por dia, no mínimo, sem máximo; regra da manchete vale desde DESDE (PLANO_NOTICIAS.md)
 
 
@@ -93,6 +99,11 @@ def problemas(n):
     for t in list(textos(n)) + [n.get("titulo_seo") or ""] + [x[1] for x in n.get("numeros", []) if len(x) > 1] + n.get("crivo", {}).get("criterios", []):
         if re.search(r"ludop[eé]dia", t, re.I):
             erros.append(f"texto cita a Ludopedia ({t[:60]!r}…): escreva 'nosso calendário de lançamentos'; a Ludopedia fica só nas fontes")
+            break
+    for t in list(textos(n)) + [x[1] for x in n.get("numeros", []) if len(x) > 1] + n.get("crivo", {}).get("criterios", []):
+        m = LOJAS.search(t)
+        if m:
+            erros.append(f"texto cita a loja {m.group(0)!r}: escreva 'em loja parceira' ou 'em lojas brasileiras'; a loja fica só nas fontes")
             break
     if not isinstance(n.get("crivo", {}).get("pontos"), int):
         erros.append("crivo sem pontos")
