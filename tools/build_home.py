@@ -553,7 +553,7 @@ def build_home():
         if not alvo_n or base not in norm(alvo_n["titulo"]):
             sys.exit(f"Destaques: '{j['nome']}' leva a {slug}, que não trata do jogo no título")
     alta = "".join(
-        f'<li><a href="{j["link"]}"><img src="{capa_jogo(pre, j["id_ludopedia"])}" width="44" height="44" alt="" loading="lazy"><div><b>{e(j["nome"])}</b><span>{e(j["motivo"])}</span></div></a></li>'
+        f'<li><a href="{j["link"]}"><img src="{miniatura(ROOT / "noticias" / "capas" / f'{j["id_ludopedia"]}.jpg', pre, 96)}" width="44" height="44" alt="" loading="lazy"><div><b>{e(j["nome"])}</b><span>{e(j["motivo"])}</span></div></a></li>'
         for j in home["em_alta"]
     )
     def alvo(item):
@@ -568,7 +568,7 @@ def build_home():
     mes = mes_chegando()
     rotulo, jogos = lancamentos(mes)
     capas = "".join(
-        f'<li><a href="lancamentos/#j{j["id_jogo"]}"><img src="{capa_jogo(pre, j["id_jogo"])}" width="132" height="140" alt="" loading="lazy">'
+        f'<li><a href="lancamentos/#j{j["id_jogo"]}"><img src="{miniatura(ROOT / "noticias" / "capas" / f'{j["id_jogo"]}.jpg', pre, 280)}" width="132" height="140" alt="" loading="lazy">'
         f'<span class="st {j["status"]["slug"]}">{e(j["status"]["label"])}</span><b>{e(j["nome"].strip())}</b><span>{e((j.get("editora") or {}).get("nome", ""))}</span></a></li>'
         for j in jogos
     ) + f'<li class="todos"><a href="lancamentos/#{mes}"><span class="mais">Ver os {len(jogos)} de {e(rotulo.split(" de ")[0].lower())} e todo o calendário</span></a></li>'
