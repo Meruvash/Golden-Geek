@@ -84,7 +84,9 @@ def main():
     # 5. teste no ar (o certificado do domínio novo pode levar alguns minutos)
     for _ in range(20):
         try:
-            with urllib.request.urlopen(f"{API}/v1/pagina?p=/root/", timeout=20) as r:
+            # a Cloudflare barra o identificador padrão do Python (Python-urllib)
+            teste = urllib.request.Request(f"{API}/v1/pagina?p=/root/", headers={"User-Agent": "EliteBoardgamers-instalador/1.0"})
+            with urllib.request.urlopen(teste, timeout=20) as r:
                 print("ok serviço no ar:", r.read().decode()[:80])
                 break
         except Exception as ex:  # noqa: BLE001
