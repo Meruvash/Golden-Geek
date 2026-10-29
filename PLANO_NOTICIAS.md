@@ -110,7 +110,7 @@ Segue a lógica do crivo das fotos: primeiro eliminatórios, depois pontuação.
 - Já publicada por nós, mesmo vinda de outra fonte (deduplicação).
 - Jogo, editora ou campanha sem relação com tabuleiro moderno (RPG, card game colecionável, videogame), salvo adaptação de jogo de tabuleiro.
 
-**Pontuação de relevância (ordena as candidatas: saem as 5 maiores do dia; manchete é a maior)**
+**Pontuação de relevância (a meta é 5 notas com 5 pontos ou mais; abaixo disso, só depois das três rodadas de pesquisa; manchete é a maior)**
 
 | Critério | Pontos |
 |---|---|
@@ -125,12 +125,13 @@ Segue a lógica do crivo das fotos: primeiro eliminatórios, depois pontuação.
 
 **Edição diária (29/10/2026, pedido do usuário)**
 
-O corte de 5 pontos estava deixando dias sem nenhuma notícia. Por isso não há mais nota de corte: **saem 5 notas por dia, as 5 mais bem pontuadas**, independente da nota.
+O corte de 5 pontos estava deixando dias sem nenhuma notícia. A meta passa a ser **5 notas por dia**, e a qualidade vem primeiro:
 
-1. Toda candidata que passa pelos eliminatórios é pontuada.
-2. Publicam-se as 5 de maior pontuação; a maior é a manchete.
-3. Os eliminatórios e o padrão de texto continuam valendo para todas.
-4. Menos de 5 só se nem 5 candidatas passarem pelos eliminatórios, e o resumo do dia explica.
+1. **Rodada 1:** fontes automáticas (`coletar.py`: feeds, Bluesky, Ludopedia). Toda candidata que passa pelos eliminatórios é pontuada.
+2. **Rodada 2**, se não houver 5 notas com 5 pontos ou mais: pesquisa em outras fontes, com preferência para as nacionais (editoras, Ludopedia, Compara Jogos, Catarse, eventos).
+3. **Rodada 3**, se ainda faltar: pesquisa em fontes diferentes das duas primeiras (BGG News, sites internacionais, prêmios, Kickstarter e Gamefound).
+4. Só depois da terceira rodada, se ainda faltarem notas de 5 pontos, o dia fecha com as **5 mais bem pontuadas**, independente da nota. A maior é a manchete.
+5. Os eliminatórios e o padrão de texto valem para todas. Menos de 5 só se nem 5 candidatas passarem pelos eliminatórios depois das três rodadas, e o resumo do dia explica.
 
 **Regras de texto**
 1. Título informativo, sem caça-clique: o que aconteceu, com quem.
@@ -185,7 +186,7 @@ O robô de notícias reaproveita o cliente do robô de imagens (`tools/imagens/r
 
 ## 9. Decisões tomadas (28/10/2026)
 
-1. **5 notas por dia, as mais bem pontuadas, sem nota de corte** (alterado em 29/10/2026; antes, corte de 5 pontos). Ver "Edição diária" na seção 4.
+1. **5 notas por dia**: primeiro as de 5 pontos ou mais, com até três rodadas de pesquisa; se ainda faltar, as mais bem pontuadas (alterado em 29/10/2026; antes, corte fixo de 5 pontos). Ver "Edição diária" na seção 4.
 2. **Aprovação só da manchete**; as outras 4 saem depois do crivo e do `checar_noticia.py`.
 3. **A Consulta Golden Geek vai para `/consulta/`**, com link no menu.
 4. **Financiamento coletivo entra**, com o mesmo crivo (fonte primária: a página da campanha).

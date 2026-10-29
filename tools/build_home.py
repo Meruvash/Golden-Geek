@@ -400,7 +400,7 @@ def build_politica():
  </div></section>
  <section class="bloco"><h2>Como escolhemos as notícias</h2><div class="corpo">
   <p>Toda notícia passa por um crivo editorial. Fica de fora o que não tem fonte primária (boato, vazamento ou "fontes dizem"), conteúdo pago ou release sem fato novo, notícia atrasada e assunto sem relação com tabuleiro moderno.</p>
-  <p>O que passa recebe pontos por relevância para quem joga no Brasil, como lançamento confirmado no país, prêmio importante ou confirmação por duas fontes independentes. Publicamos 5 notícias por dia: as 5 mais bem pontuadas entre as que passaram pelas eliminatórias, seja qual for a pontuação. A de maior pontuação vira a manchete, e cada notícia mostra no fim por que entrou.</p>
+  <p>O que passa recebe pontos por relevância para quem joga no Brasil, como lançamento confirmado no país, prêmio importante ou confirmação por duas fontes independentes. Publicamos 5 notícias por dia e queremos que todas tenham 5 pontos ou mais. Quando não chegam a cinco, pesquisamos de novo em outras fontes, primeiro nas brasileiras e depois em mais uma leva de fontes diferentes. Só depois dessas três buscas completamos o dia com as mais bem pontuadas entre as que passaram pelas eliminatórias. A de maior pontuação vira a manchete, e cada notícia mostra no fim por que entrou.</p>
  </div></section>
  <section class="bloco" id="destaques"><h2>Destaques da página inicial</h2><div class="corpo">
   <p>O bloco Destaques reúne os jogos mais citados nas nossas notícias dos últimos 7 dias, cada um com o link de uma notícia sobre ele. Não é um ranking de acessos nem de vendas: o site não usa dados de visitas para montar essa lista.</p>
@@ -663,7 +663,7 @@ def build_nota(n):
  {f'<section class="bloco"><h2>Jogos citados</h2><div class="jogos">{jogos}</div></section>' if jogos else ""}
  {f'<section class="bloco leia"><h2>Leia também</h2><ul>{leia}</ul></section>' if leia else ""}
  <section class="bloco fontes"><h2>Fontes</h2><ul>{fontes}</ul></section>
- <section class="bloco crivo"><h2>Por que esta notícia entrou</h2><p><b>{n['crivo']['pontos']} pontos no crivo editorial</b>{":" if n['crivo']['criterios'] else ""} {e("; ".join(n['crivo']['criterios']) or "(nenhum critério de pontuação; entrou entre as 5 mais bem pontuadas do dia)")}.</p></section>
+ <section class="bloco crivo"><h2>Por que esta notícia entrou</h2><p><b>{n['crivo']['pontos']} pontos no crivo editorial</b>{":" if n['crivo']['criterios'] else ""} {e("; ".join(n['crivo']['criterios']) or "(nenhum critério de pontuação; entrou entre as 5 mais bem pontuadas do dia, depois das três buscas)")}.</p></section>
 </div></main>
 {rodape(pre)}"""
     out = ROOT / "noticias" / n["slug"] / "index.html"
