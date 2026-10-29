@@ -9,6 +9,9 @@ import sys
 from pathlib import Path
 from urllib.parse import urlparse
 
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from vicios import avisos  # noqa: E402
+
 ROOT = Path(__file__).resolve().parent.parent.parent
 SELOS = {"Vale a compra", "Vale acompanhar", "Para fãs do jogo base", "Com ressalvas", "Informativo"}
 FAIXAS = {"titulo": (8, 16), "lide": (35, 70), "por_que_importa": (30, 70), "no_brasil": (25, 80), "veredito": (20, 60)}
@@ -35,7 +38,8 @@ LOJAS = re.compile(r"\b(TabuleRIO|Bravo Jogos|Ludostation|Masmorra BG|Caixinha B
 MINIMO, DESDE = 5, "2026-10-29"
 # Notícia sem foto não sai (pedido do usuário em 29/10/2026): sem foto boa, pesquise mais fotos ou troque de notícia.
 # Vale para as notas com data a partir de FOTO_DESDE; as anteriores ficam como estão.
-FOTO_DESDE, FOTO_MIN = "2026-10-29", 500  # notas por dia, no mínimo, sem máximo; regra da manchete vale desde DESDE (PLANO_NOTICIAS.md)
+FOTO_DESDE, FOTO_MIN = "2026-10-29", 500
+VICIOS_DESDE = "2026-10-30"  # aviso de vício de texto (tools/vicios.py) nas notas novas; não bloqueia  # notas por dia, no mínimo, sem máximo; regra da manchete vale desde DESDE (PLANO_NOTICIAS.md)
 
 
 def textos(n):
@@ -154,6 +158,10 @@ if __name__ == "__main__":
     for a in arqs:
         e = problemas(json.loads(a.read_text(encoding="utf-8")))
         print(("✅ " if not e else "❌ ") + a.name + ("" if not e else "\n   - " + "\n   - ".join(e)))
+        n = json.loads(a.read_text(encoding="utf-8"))
+        if n.get("data", "") >= VICIOS_DESDE or sys.argv[1:]:
+            for v in avisos(n):
+                print("   ⚠️ vício de texto: " + v)
         ruim += bool(e)
     todas = [json.loads(p.read_text(encoding="utf-8")) for p in sorted((ROOT / "conteudo" / "noticias").glob("*.json"))]
     for e in checar_dia(todas):

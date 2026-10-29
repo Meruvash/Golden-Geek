@@ -8,6 +8,9 @@ import re
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from vicios import avisos  # noqa: E402
+
 # Itens que serviriam para qualquer jogo: sozinhos não dizem nada.
 GENERICOS = [
     "arte marcante", "arte bonita", "muito divertido", "divertido", "tema fino", "sorte nas cartas",
@@ -168,6 +171,8 @@ def main(arquivos):
                 print("   -", x)
         else:
             print(f"✓ {c['slug']}")
+        for v in avisos(c):
+            print("   ⚠️ vício de texto:", v)
     return 1 if falhou else 0
 
 

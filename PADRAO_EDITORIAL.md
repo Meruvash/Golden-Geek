@@ -36,6 +36,7 @@ Vale para todo infográfico novo. O modelo é `modelos/referencia-1.jpg` (Códig
 3. **Como funciona ensina.** Os 5 passos, lidos em sequência, explicam uma rodada de verdade, com os termos do jogo.
 4. **Consistência.** Lateral, números e ficha batem com a `ficha` da página.
 5. **Bandeira do Brasil** só na linha "editora no Brasil", e só se houver edição nacional confirmada.
+7. **Texto de gente, não de fórmula** (vale para resenhas e notícias). Sem muletas e adjetivos vazios ("vale a pena", "para quem gosta de", "ideal para", "jornada", "envolvente", "promete", "não é só X, é Y"): troque por um detalhe concreto (quanto tempo, quantas peças, qual jogo parecido, o que acontece na mesa). Varie a abertura das frases e dos itens de lista. Opinião com posição clara. A lista fica em `tools/vicios.py`; `checar_roteiro.py` e `checar_noticia.py` avisam (sem bloquear) e o aviso deve ser resolvido antes de publicar. Nunca use ferramenta de "humanizar" texto: ela troca palavras sem critério e cria erro.
 6. **Revisão da imagem** (etapa 5 da skill): conferir bloco por bloco contra o roteiro. Duas falhas no mesmo bloco → gerar a arte sem texto e compor o texto por cima em HTML (Playwright).
 
 # Padrão editorial do texto do site (v2)
@@ -180,3 +181,12 @@ Regras de texto:
    3. Busca na web em modo estendido, em português e pensando em loja: "<nome> jogo português loja brasileira", "<nome> editora nacional". A busca comum não alcança lojas brasileiras.
 
    Só então, e só se nada aparecer, escreva o que foi verificado e até quando: "não encontramos edição nacional até <data>". Nunca "não há", "não tem", "ainda não há" ou "sem edição nacional": o verificador recusa essas frases. Se um jogo tem edição nacional, diga a editora, o mês de lançamento e a fonte.
+
+# Chamadas para redes (WhatsApp, Telegram, Instagram)
+
+Pedido do usuário em 29/10/2026: chamada com emoção, que faça clicar e comentar. Ficam em `conteudo/chamadas.json`
+(`{"<slug>": {"chamada": "...", "pergunta": "..."}}`), fora da página, e `tools/divulgacao.py` usa no pacote do dia.
+
+- **Chamada** (até 120 caracteres, 1 emoji no fim): pode usar curiosidade ("mas um deles já atrasou"), contraste ("R$ 118 ou R$ 422,99?"), opinião forte, a dor do leitor ("a caixa assusta?"), número ou prêmio real e urgência real (pré-venda aberta, prazo de campanha).
+- **Pergunta** para puxar comentário: fácil de responder em uma palavra ou escolha ("Looot ou Through the Desert?", "pé embaixo ou freio?"), sobre o gosto do leitor, nunca prova de conhecimento.
+- **A regra que não se quebra:** a página precisa entregar o que a chamada promete. Todo número, prêmio, preço ou data da chamada está no texto publicado. Proibido: fato inventado, urgência falsa, "você não vai acreditar", "chocante", CAIXA ALTA, mistério sobre algo que o texto não revela. Clickbait enganoso derruba a distribuição no Google Discover e no Facebook e queima a confiança do grupo.

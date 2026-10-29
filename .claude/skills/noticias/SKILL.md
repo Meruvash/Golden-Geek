@@ -38,7 +38,7 @@ Uma nota por arquivo em `conteudo/noticias/<AAAA-MM-DD>-<assunto>.json`, no **pa
 
 - **Edição nacional (regra 6 do padrão das notícias):** para cada jogo da nota, rode `python3 tools/noticias/edicao_nacional.py "<jogo>"`, consulte a página do jogo na Ludopedia e faça busca estendida em português pensando em loja ("<jogo> jogo português loja brasileira"). Registre em `verificacao_nacional` (resultado, data e fontes, uma brasileira). Nunca deduza que o jogo não saiu no Brasil por não haver notícia de lançamento: foi o erro de Galactic Cruise, Rebirth e Hot Streak. Ausência se escreve "não encontramos edição nacional até <data>", nunca "não há" ou "sem edição nacional".
 
-`python3 tools/noticias/checar_noticia.py` precisa passar em todas: ele recusa frase categórica de ausência, ausência sem verificação registrada e texto que contradiz uma edição nacional verificada.
+`python3 tools/noticias/checar_noticia.py` mostra também `⚠️ vício de texto` (regra 7 do PADRAO_EDITORIAL.md): reescreva o trecho com um detalhe concreto antes de publicar. Ele precisa passar em todas: ele recusa frase categórica de ausência, ausência sem verificação registrada e texto que contradiz uma edição nacional verificada.
 
 ## 4. Atualizar os blocos
 
@@ -58,7 +58,8 @@ Ao lado da data, as páginas mostram quem publica o jogo, nunca o site de onde v
 2. Confira no celular (Playwright, 390 px): página inicial e uma nota nova, sem rolagem lateral.
 3. Commit e push direto na `main` com a mensagem `Notícias de <dd/mm/aaaa>: <títulos curtos>`. A manchete do dia já vai para o topo. Inclua no commit `noticias/capa.jpg`, `lancamentos/capa.jpg`, `sitemap.xml`, `sitemap-noticias.xml`, `robots.txt`, `404.html`, `img/`, `jogos-de-tabuleiro/`, `premios/` e `conteudo/sitemap_estado.json`, que os scripts regeram sozinhos.
 4. Depois que as páginas estiverem no ar (o GitHub Pages leva alguns minutos), rode `python3 tools/indexnow.py` para avisar Bing e outros buscadores; página que ainda não subiu fica para a próxima rodada. Se ele gravar `conteudo/indexnow_estado.json`, faça commit e push só desse arquivo (`IndexNow de <dd/mm/aaaa>`).
-5. Termine com um resumo curto para o usuário: quantas rodadas de pesquisa foram feitas e o que cada uma achou, as notas publicadas (título, selo e pontos, avisando as que ficaram abaixo de 5), a manchete com o lide e a opinião, o que ficou de fora e por quê, e os avisos da coleta. Não peça aprovação.
+5. Escreva em `conteudo/chamadas.json` a `chamada` e a `pergunta` de cada nota nova (PADRAO_EDITORIAL.md, "Chamadas para redes": emoção e curiosidade, sempre cumpridas pelo texto). Depois rode `python3 tools/divulgacao.py`: grava `divulgacao/<AAAA-MM-DD>.md` com o resumo do dia para grupos de WhatsApp/Telegram e, por nota, o texto do WhatsApp e a legenda do Instagram (tudo tirado do que foi publicado). Faça commit e push desse arquivo junto com o IndexNow (ou sozinho, `Divulgação de <dd/mm/aaaa>`). Rode de novo se entrar nota depois, no mesmo dia.
+6. Termine com um resumo curto para o usuário, **começando pelo resumo para os grupos** (o bloco que o `divulgacao.py` imprime, pronto para copiar) e o link do pacote completo: `https://github.com/Meruvash/Golden-Geek/blob/main/divulgacao/<AAAA-MM-DD>.md`. Depois: quantas rodadas de pesquisa foram feitas e o que cada uma achou, as notas publicadas (título, selo e pontos, avisando as que ficaram abaixo de 5), a manchete com o lide e a opinião, o que ficou de fora e por quê, e os avisos da coleta. Não peça aprovação.
 
 ## Troca de manchete
 
