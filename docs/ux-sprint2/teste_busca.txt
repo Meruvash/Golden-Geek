@@ -1,0 +1,27 @@
+✅ carga inicial não baixa busca.js nem busca.json
+✅ lupa visível no cabeçalho
+✅ diálogo com aria-modal
+✅ foco vai para o campo de busca
+✅ campo tem rótulo
+✅ índice baixado ao abrir
+✅ "santuario" encontra a resenha Santuário
+✅ "SANTUÁRIO" encontra a resenha Santuário
+✅ "sanctuary" encontra a resenha Santuário
+✅ "duna imperium" encontra a resenha Dune: Imperium
+✅ "dune imperium" encontra a resenha Dune: Imperium
+✅ "sina sociedade" encontra a resenha O Senhor dos Anéis: Sina da Sociedade
+✅ "fate of the fellowship" encontra a resenha O Senhor dos Anéis: Sina da Sociedade
+✅ "ruinas perdidas" encontra a resenha Lost Ruins of Arnak
+✅ "arnak" encontra a resenha Lost Ruins of Arnak
+✅ "codigo secreto" encontra a resenha Codenames
+✅ resultados agrupados por tipo, resenhas primeiro
+✅ Golden Geek aparece como grupo próprio
+✅ estado vazio com sugestão
+✅ Esc fecha o diálogo
+✅ Ctrl+K abre o diálogo
+✅ seta marca o primeiro resultado
+✅ Enter leva à resenha /fate-of-the-fellowship/
+✅ Consulta abre filtrada em Wingspan
+✅ lançamento abre a ficha do jogo em /lancamentos/
+
+Tudo certo
