@@ -479,7 +479,10 @@ def build(c):
     # Só a caixa não basta para o topo: sem foto de mesa, componentes ou jogabilidade, fica o infográfico.
     principal = foto_principal(fotos) if set(fotos) - {"capa"} else None
     if principal:
-        capa_da_foto(slug, principal)
+        try:
+            capa_da_foto(slug, principal)
+        except Exception as ex:  # foto com problema: fica a capa.jpg que já existe e a resenha sai igual
+            print(f"  aviso: capa de {slug} não refeita ({ex.__class__.__name__})")
     versao_capa = versao(ROOT / slug / "capa.jpg")
     # data de publicação: a que publicar.py gravou em pauta.json (resenha ainda não publicada fica sem data)
     pauta = json.loads((ROOT / "pauta.json").read_text(encoding="utf-8"))

@@ -49,7 +49,8 @@ TOKEN_UA = "goldengeekbot"
 DELAY_MIN = 3.0
 CACHE_DIAS = 7
 MAX_CANDIDATAS = 30
-LADO_MIN = 800
+LADO_MIN = 800  # tamanho preferido; abaixo disso a foto entra marcada "pequena", não é descartada
+LADO_PISO = 300  # abaixo disso é ícone ou miniatura, não foto
 TIPOS = ("capa", "mesa", "jogabilidade", "componentes")
 PISTAS = {
     "capa": r"box|cover|caixa|capa|schachtel|boite|packshot|3d|front|portada",
@@ -502,7 +503,8 @@ def baixar_candidatas(cli, candidatas, pasta, lado_min=LADO_MIN):
             avisos.append(f"não baixou {c['url']}: {e}")
             continue
         w, h = im.size
-        if min(w, h) < lado_min or max(w, h) / min(w, h) > 3:
+        # tamanho é preferência, não regra: foto menor que o ideal fica na folha, marcada, para não travar a produção
+        if min(w, h) < LADO_PISO or max(w, h) / min(w, h) > 3:
             continue
         hsh = dhash(im)
         dup = next((b for b, hb in zip(boas, hashes) if bin(hb ^ hsh).count("1") <= 6), None)
@@ -514,7 +516,7 @@ def baixar_candidatas(cli, candidatas, pasta, lado_min=LADO_MIN):
             hashes.pop(i)
         rgb = im.convert("RGBA") if im.mode in ("RGBA", "LA", "P") else im.convert("RGB")
         cantos = [rgb.getpixel(p) for p in ((0, 0), (w - 1, 0), (0, h - 1), (w - 1, h - 1))]
-        c.update(w=w, h=h, bytes=len(dados), fundo_liso=all(
+        c.update(w=w, h=h, bytes=len(dados), pequena=min(w, h) < lado_min, fundo_liso=all(
             (len(px) == 4 and px[3] < 20) or min(px[:3]) > 235 for px in cantos))
         arq = pasta / f"{hashlib.sha1(c['url'].encode()).hexdigest()[:12]}.{(im.format or 'jpg').lower()}"
         arq.write_bytes(dados)
@@ -540,7 +542,7 @@ def folha_de_contato(cands, destino):
         im.thumbnail((lado - 8, lado - 8))
         x, y = (i % cols) * lado, (i // cols) * (lado + 34)
         folha.paste(im, (x + (lado - im.width) // 2, y + 4 + (lado - 8 - im.height) // 2))
-        d.text((x + 6, y + lado + 4), f"#{c['n']} {c['w']}x{c['h']} {c['palpite']}", fill="black", font=fonte)
+        d.text((x + 6, y + lado + 4), f"#{c['n']} {c['w']}x{c['h']} {c['palpite']}{' pequena' if c.get('pequena') else ''}", fill="black", font=fonte)
     folha.save(destino, quality=82)
 
 
@@ -730,11 +732,12 @@ def buscar(cli, slug, url_fixa=None, so_editora=None):
             im.update(editora=rec["nome"], dominio=dominio)
             candidatas.append(im)
     pasta = CACHE / slug
-    # notícia usa a imagem menor (destaque, miniatura e prévia do WhatsApp): 500 px no lado menor bastam
+    # notícia usa a imagem menor (destaque, miniatura e prévia do WhatsApp): 500 px no lado menor bastam.
+    # Menores que isso entram marcadas "pequena" e vão para o fim da folha: só servem se não houver outra.
     boas, avisos = baixar_candidatas(cli, candidatas, pasta / "candidatas", 500 if slug.startswith("noticias/") else LADO_MIN)
     rel["avisos"] += avisos
     ordem = {"capa": 0, "mesa": 1, "jogabilidade": 2, "componentes": 3, "?": 4}
-    boas.sort(key=lambda b: (ordem[b["palpite"]], -b["w"] * b["h"]))
+    boas.sort(key=lambda b: (b["pequena"], ordem[b["palpite"]], -b["w"] * b["h"]))
     for n, b in enumerate(boas, 1):
         b["n"] = n
     (pasta / "candidatas.json").write_text(json.dumps(boas, ensure_ascii=False, indent=1), encoding="utf-8")

@@ -55,7 +55,7 @@ A busca liga a ficha do jogo (`Editora original` e `Editora no Brasil` em `conte
 
 ## Etapa 2: buscar
 
-`python3 tools/imagens/robo.py buscar <slug>` acha a página do jogo pelo sitemap (edições especiais e expansões perdem pontos), extrai as imagens (no Shopify, pelo JSON do produto; nos outros, por og:image, JSON-LD, galerias e srcset, sempre pedindo a maior versão), descarta as pequenas (< 800 px) e as duplicadas e monta `.cache/imagens/<slug>/folha.jpg` (grade numerada) e `candidatas.json`.
+`python3 tools/imagens/robo.py buscar <slug>` acha a página do jogo pelo sitemap (edições especiais e expansões perdem pontos), extrai as imagens (no Shopify, pelo JSON do produto; nos outros, por og:image, JSON-LD, galerias e srcset, sempre pedindo a maior versão), descarta ícones e miniaturas (< 300 px) e as duplicadas; fotos abaixo do tamanho ideal (800 px, ou 500 px em notícia) **não são descartadas**: vão para o fim da folha marcadas "pequena". Tamanho é preferência, não regra: use a pequena quando não houver outra melhor, e a produção segue e monta `.cache/imagens/<slug>/folha.jpg` (grade numerada) e `candidatas.json`.
 
 - Página certa fora do sitemap: `--url <página>`. Só uma editora: `--editora <dominio>`.
 - Site montado com JavaScript (página quase vazia sem ele): o `mapear` marca `"js": true` na receita e o robô passa a abrir as páginas num Chromium sem janela (`tools/imagens/navegador.js`, Playwright do Node). O navegador pergunta ao robô antes de cada pedido se o robots.txt permite, não baixa imagens, fontes nem CSS e usa o mesmo User-Agent; as imagens vêm depois pelo cliente com pausa.

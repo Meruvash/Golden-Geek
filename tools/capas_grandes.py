@@ -1,5 +1,7 @@
 """Capas das notícias em tamanho bom para o Google (Discover pede imagem com pelo menos 1200 px de largura).
 
+É preferência, não regra: nada aqui bloqueia a publicação. Sem versão cheia, fica a média; sem capa, nada acontece.
+
 Uso: python3 tools/capas_grandes.py   troca as capas da Ludopedia em versão média (_m, ~500 px) pela versão cheia (~1000 px)
 larga(arquivo) devolve uma versão 1200×675 (16:9) da imagem: a capa inteira no centro, sem esticar, e as laterais
 preenchidas com a própria capa desfocada. Sem texto por cima; serve só para a imagem do NewsArticle (JSON-LD).
@@ -52,11 +54,11 @@ def atualizar():
     for p in sorted(CAPAS.glob("*.jpg")):
         if not re.fullmatch(r"\d+", p.stem):
             continue
-        with Image.open(p) as im:
-            if im.width > 520:
-                continue
-            atual = im.width
         try:
+            with Image.open(p) as im:
+                if im.width > 520:
+                    continue
+                atual = im.width
             with urllib.request.urlopen(urllib.request.Request(LUDO.format(id=p.stem), headers={"User-Agent": "EliteBoardgamers/1.0"}), timeout=30) as r:
                 dados = r.read()
             nova = Image.open(io.BytesIO(dados))

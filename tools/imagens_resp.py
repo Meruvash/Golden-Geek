@@ -28,10 +28,14 @@ def variante(original, largura):
 
 def srcset(original, pre, larguras=(480, 800, 1200)):
     """Atributo srcset com as variantes menores que o original e o próprio original na largura real.
-    pre: prefixo relativo da página até a raiz do site ("", "../", "../../")."""
+    pre: prefixo relativo da página até a raiz do site ("", "../", "../../").
+    Imagem é preferência, não regra: sem arquivo ou com arquivo ilegível, sai só o original e a página é gerada igual."""
     original = Path(original)
-    with Image.open(original) as im:
-        w = im.width
+    try:
+        with Image.open(original) as im:
+            w = im.width
+    except Exception:
+        return f"{pre}{original.relative_to(ROOT).as_posix()}"
     itens = [f"{pre}{variante(original, lg).relative_to(ROOT).as_posix()} {lg}w" for lg in larguras if lg < w]
     itens.append(f"{pre}{original.relative_to(ROOT).as_posix()} {w}w")
     return ", ".join(itens)
@@ -42,7 +46,10 @@ def miniatura(original, pre, largura=160):
     original = Path(original)
     if not original.exists():  # capa ainda não baixada: mantém o caminho (a verificação acusa o link)
         return f"{pre}{original.relative_to(ROOT).as_posix()}"
-    with Image.open(original) as im:
-        if im.width <= largura:
-            return f"{pre}{original.relative_to(ROOT).as_posix()}"
+    try:
+        with Image.open(original) as im:
+            if im.width <= largura:
+                return f"{pre}{original.relative_to(ROOT).as_posix()}"
+    except Exception:  # arquivo ilegível: mantém o caminho
+        return f"{pre}{original.relative_to(ROOT).as_posix()}"
     return f"{pre}{variante(original, largura).relative_to(ROOT).as_posix()}"

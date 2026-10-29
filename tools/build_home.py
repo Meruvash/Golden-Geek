@@ -332,7 +332,11 @@ def og_dim(imagem):
     arq = ROOT / imagem.removeprefix(SITE + "/").split("?")[0]
     if not imagem.startswith(SITE + "/") or not arq.is_file():
         return ""
-    with Image.open(arq) as im:
+    try:
+        im = Image.open(arq)
+    except Exception:
+        return ""
+    with im:
         return f'\n<meta property="og:image:width" content="{im.width}">\n<meta property="og:image:height" content="{im.height}">'
 
 
@@ -467,8 +471,11 @@ def linha_data(n, data):
 
 def bloco_manchete(m, pre, titulo="h1"):
     """A notícia principal, com foto grande, lide e a nossa opinião: no topo da home (h1) e do arquivo /noticias/ (h2)."""
-    with Image.open(ROOT / "noticias" / m["imagem"]["arquivo"]) as im:
-        lw, lh = im.size
+    try:
+        with Image.open(ROOT / "noticias" / m["imagem"]["arquivo"]) as im:
+            lw, lh = im.size
+    except Exception:  # imagem com problema não segura a manchete
+        lw, lh = 1200, 675
     return f"""<article class="bloco manchete" data-cat="{CATEGORIAS.get(m['categoria'], 'outras')}"><a href="{pre}noticias/{m['slug']}/">
   <figure><img src="{img_nota(m, pre)}" srcset="{srcset(ROOT / "noticias" / m["imagem"]["arquivo"], pre)}" sizes="(min-width: 640px) 340px, 100vw" width="{lw}" height="{lh}" alt="{e(m['titulo'])}" fetchpriority="high"></figure>
   <div class="txt"><span class="kick">Manchete · {e(m['categoria'])}</span><{titulo} class="m-tit">{e(m['titulo'])}</{titulo}><p>{e(m['lide'])}</p>
@@ -705,11 +712,15 @@ def build_nota(n):
     url = f"{SITE}/noticias/{n['slug']}/"
     modificado = lastmod_registrado(url, {k: v for k, v in n.items() if k != "publicado_em"})
     # imagem para o Google: versão 16:9 com 1200 px (Discover) antes da capa original
+    # é preferência, não regra: qualquer problema com a imagem só deixa de fora a versão larga
     imagens = [img]
     if n.get("imagem"):
-        larga = capas_grandes.larga(ROOT / "noticias" / n["imagem"]["arquivo"])
-        if larga != ROOT / "noticias" / n["imagem"]["arquivo"]:
-            imagens.insert(0, f"{SITE}/{larga.relative_to(ROOT).as_posix()}")
+        try:
+            larga = capas_grandes.larga(ROOT / "noticias" / n["imagem"]["arquivo"])
+            if larga != ROOT / "noticias" / n["imagem"]["arquivo"]:
+                imagens.insert(0, f"{SITE}/{larga.relative_to(ROOT).as_posix()}")
+        except Exception as ex:
+            print(f"  aviso: sem versão larga para {n['slug']} ({ex.__class__.__name__}); a nota sai normalmente")
     ld = seo.script(seo.artigo("NewsArticle", url, n["titulo"], n["lide"], imagens, n["publicado_em"], modificado),
                     seo.trilha(("Início", f"{SITE}/"), ("Notícias", f"{SITE}/noticias/"), (n["titulo"], url)))
     # título da busca: titulo_seo (opcional, aprovado pela edição) ou o título; o sufixo da marca só cabe em título curto
