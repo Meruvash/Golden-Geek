@@ -133,6 +133,8 @@ A notícia da Elite Boardgamers não repete o release: diz o que aconteceu, por 
 
 Regras de texto:
 
+- **Ludopedia só nas fontes** (29/10/2026): o texto da nota não cita a Ludopedia. Lançamento, pré-venda e data prevista se atribuem ao **nosso calendário de lançamentos** (/lancamentos/, que usa os dados dela), e a Ludopedia aparece só na lista de fontes, no campo `fonte` dos números e no crédito da capa ("Capa via Ludopedia"). `checar_noticia.py` recusa a nota que citar a Ludopedia no texto.
+
 1. **Opinião ancorada.** O veredito se apoia nas nossas resenhas (quando o jogo tem) e na crítica citada; nunca em impressão solta.
 2. **Brasil primeiro.** Toda nota responde: dá para comprar aqui, por quanto e de quem? Se não dá, diz isso.
 3. **Sem citação inventada.** Frase entre aspas só se a frase original existe; o resto é paráfrase com dono.

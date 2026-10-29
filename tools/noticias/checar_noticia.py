@@ -89,6 +89,11 @@ def problemas(n):
         erros.append("para_quem: 1 a 3 itens; nao_e_para: até 3")
     if len(n.get("fontes", [])) < 2 or any(not f.get("url") or not f.get("data") for f in n.get("fontes", [])):
         erros.append("fontes: pelo menos 2, com link e data")
+    # Ludopedia só nas fontes (pedido do usuário em 29/10/2026): no texto, o calendário é o nosso
+    for t in list(textos(n)) + [n.get("titulo_seo") or ""] + [x[1] for x in n.get("numeros", []) if len(x) > 1] + n.get("crivo", {}).get("criterios", []):
+        if re.search(r"ludop[eé]dia", t, re.I):
+            erros.append(f"texto cita a Ludopedia ({t[:60]!r}…): escreva 'nosso calendário de lançamentos'; a Ludopedia fica só nas fontes")
+            break
     if not isinstance(n.get("crivo", {}).get("pontos"), int):
         erros.append("crivo sem pontos")
     return erros + checar_edicao_nacional(n)
