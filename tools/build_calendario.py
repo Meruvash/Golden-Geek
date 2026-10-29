@@ -24,6 +24,8 @@ PASTA = ROOT / "lancamentos"
 CAPAS = PASTA / "capas"
 LARGURA = 320
 LUDO_CAPA = "https://storage.googleapis.com/ludopedia-capas/{id}_{t}.jpg"
+LUDO_JOGO = "https://ludopedia.com.br/jogo/"
+LUDO_TOPICO = "https://ludopedia.com.br/topico/"
 # situação da Ludopedia -> (classe, rótulo curto, ordem dentro do mês)
 SITUACAO = {
     "lancado": ("lancado", "Lançado", 0),
@@ -99,26 +101,28 @@ def links_nossos():
     return noticias, resenhas
 
 
-def cartao(j, noticias, resenhas, tem_capa):
+def cartao(j, noticias, resenhas, tem_capa, prioridade=False):
     tclasse, trotulo = tipo(j)
     sclasse, srotulo, _ = situacao(j)
     nome = j["nome"].strip()
     editora = (j.get("editora") or {}).get("nome", "").strip()
     mes_i = int(j["mes"][5:]) - 1
-    dados = {
-        "nome": nome, "editora": editora, "mes": f"{MESES[mes_i]} de {j['mes'][:4]}", "situacao": srotulo, "tipo": trotulo,
-        "ludopedia": j["url"], "topico": j.get("url_topico") or "",
-        "noticia": f"../noticias/{noticias[j['id_jogo']]}/" if j["id_jogo"] in noticias else "",
-        "resenha": f"../{resenhas[norm(nome)]}/" if norm(nome) in resenhas else "",
-    }
-    img = (f'<img src="capas/{j["id_jogo"]}.webp" width="320" height="320" alt="" loading="lazy" decoding="async">' if tem_capa
+    # O que a ficha mostra e já está no cartão (nome, editora, situação, tipo, mês) é lido do próprio cartão;
+    # nos atributos ficam só os endereços da Ludopedia, sem o prefixo comum. Antes, um JSON repetia tudo (metade do HTML).
+    lud = j["url"].removeprefix(LUDO_JOGO)
+    top = (j.get("url_topico") or "").removeprefix(LUDO_TOPICO)
+    nossos = ([(f"../noticias/{noticias[j['id_jogo']]}/", "Notícia")] if j["id_jogo"] in noticias else []) + \
+             ([(f"../{resenhas[norm(nome)]}/", "Resenha")] if norm(nome) in resenhas else [])
+    carga = ' fetchpriority="high"' if prioridade else ' loading="lazy" decoding="async"'
+    img = (f'<img src="capas/{j["id_jogo"]}.webp" width="320" height="320" alt=""{carga}>' if tem_capa
            else '<span class="sem-capa" aria-hidden="true"></span>')
-    nossa = '<span class="nossa">Notícia</span>' if dados["noticia"] else ('<span class="nossa">Resenha</span>' if dados["resenha"] else "")
-    busca = norm(f"{nome} {editora}")
-    return (f'<li id="j{j["id_jogo"]}" data-tipo="{tclasse}" data-st="{sclasse}" data-busca="{e(busca)}">'
-            f'<button type="button" class="jogo" data-j=\'{e(json.dumps(dados, ensure_ascii=False))}\'>'
-            f'<span class="capa">{img}<span class="st {sclasse}">{srotulo}</span>{nossa}</span>'
-            f'<span class="nome">{e(nome)}</span><span class="ed">{e(editora)}</span></button></li>')
+    selos = ('<span class="nossas">' + "".join(f'<a class="nossa" href="{h}" aria-label="{r} da Elite: {e(nome)}">{r}</a>' for h, r in nossos) + "</span>"
+             if nossos else "")
+    return (f'<li id="j{j["id_jogo"]}" data-tipo="{tclasse}" data-st="{sclasse}" data-l="{e(lud)}"'
+            f'{f" data-tp={chr(34)}{e(top)}{chr(34)}" if top else ""}>'
+            f'<button type="button" class="jogo">'
+            f'<span class="capa">{img}<span class="st {sclasse}">{srotulo}</span></span>'
+            f'<span class="nome">{e(nome)}</span><span class="ed">{e(editora)}</span></button>{selos}</li>')
 
 
 CSS_CAL = """<style>
@@ -167,7 +171,15 @@ CSS_CAL = """<style>
 .sem-capa{display:block;width:100%;height:100%;background:repeating-linear-gradient(45deg,#e6e9ee 0 10px,#eef0f3 10px 20px)}
 .st{position:absolute;left:6px;top:6px;font-size:.7rem;font-weight:800;line-height:1.3;border-radius:5px;padding:2px 7px;color:#fff;box-shadow:0 1px 3px rgba(0,0,0,.35)}
 .st.lancado{background:#1b7a45}.st.pre{background:#1f5fae}.st.financ{background:#6b4ea3}.st.anunciado{background:#8a5f00}.st.dev{background:#5a6270}
-.nossa{position:absolute;right:6px;bottom:6px;font-size:.68rem;font-weight:800;border-radius:5px;padding:2px 6px;background:var(--gold);color:#000}
+.grade-cal li{position:relative}
+.nossas{position:absolute;right:6px;top:6px;display:flex;flex-direction:column;align-items:flex-end;gap:4px}
+.nossa{display:inline-flex;align-items:center;min-height:24px;font-size:.7rem;font-weight:800;border-radius:5px;padding:2px 8px;background:var(--gold);color:#000;text-decoration:none;box-shadow:0 1px 3px rgba(0,0,0,.35)}
+.nossa:hover{text-decoration:underline}
+/* meses fora da tela não são desenhados até chegarem perto (a altura reservada vem de cada seção) */
+.mes{content-visibility:auto;contain-intrinsic-size:auto calc(var(--r2) * 260px + 60px)}
+@media (min-width:600px){.mes{contain-intrinsic-size:auto calc(var(--r3) * 280px + 60px)}}
+@media (min-width:860px){.mes{contain-intrinsic-size:auto calc(var(--r5) * 250px + 60px)}}
+@media (min-width:1120px){.mes{contain-intrinsic-size:auto calc(var(--r6) * 240px + 60px)}}
 .nome{font-size:.93rem;font-weight:800;line-height:1.22;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;margin-top:4px}
 .ed{font-size:.8rem;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .vazio{padding:40px 8px;text-align:center;color:var(--muted)}
@@ -203,13 +215,17 @@ JS = """<script>
   const itens = $$('.grade-cal li'), meses = $$('.mes'), chipsMes = $$('.trilho .chip');
   const busca = $('#busca'), caixa = $('.busca'), cont = $('.contagem'), vazio = $('.vazio');
   const NOMES = Object.fromEntries(meses.map(m => [m.dataset.mes, m.dataset.nome]));
-  const est = { mes: document.body.dataset.agora, tipo: '', st: '', q: '' };
-  if (!NOMES[est.mes]) est.mes = meses.length ? meses[meses.length - 1].dataset.mes : '';
+  const TIPOS = { jogo: 'Jogo', exp: 'Expansão', rpg: 'RPG', outro: 'Outros' };
+  // texto da busca (nome + editora, sem acento) tirado do próprio cartão
+  const BUSCA = new Map(itens.map(li => [li, norm(li.querySelector('.nome').textContent + ' ' + li.querySelector('.ed').textContent)]));
+  // Sem âncora, a página mostra o ano inteiro e rola até o mês corrente (chip destacado); os outros meses continuam na lista.
+  const est = { mes: 'ano', tipo: '', st: '', q: '' };
+  const agora = NOMES[document.body.dataset.agora] ? document.body.dataset.agora : (meses.length ? meses[meses.length - 1].dataset.mes : '');
 
   function passa(li) {
     if (est.tipo && li.dataset.tipo !== est.tipo) return false;
     if (est.st && li.dataset.st !== est.st) return false;
-    if (est.q && !li.dataset.busca.includes(est.q)) return false;
+    if (est.q && !est.q.split(/\\s+/).every(t => BUSCA.get(li).includes(t))) return false;
     return true;
   }
   function render(rolar) {
@@ -260,7 +276,13 @@ JS = """<script>
   // ficha do jogo
   const dlg = $('#ficha');
   function abre(li) {
-    const d = JSON.parse(li.querySelector('.jogo').dataset.j), img = li.querySelector('img');
+    const txt = s => (li.querySelector(s)?.textContent || '').trim(), link = r => li.querySelector(`.nossa[href]:is(${r})`)?.getAttribute('href');
+    const d = { nome: txt('.nome'), editora: txt('.ed'), mes: li.closest('.mes').dataset.nome, situacao: txt('.st'), tipo: TIPOS[li.dataset.tipo] || '',
+      ludopedia: (li.dataset.l.startsWith('http') ? '' : 'https://ludopedia.com.br/jogo/') + li.dataset.l,
+      topico: li.dataset.tp ? (li.dataset.tp.startsWith('http') ? '' : 'https://ludopedia.com.br/topico/') + li.dataset.tp : '',
+      noticia: [...li.querySelectorAll('.nossa')].find(a => a.textContent === 'Notícia')?.getAttribute('href') || '',
+      resenha: [...li.querySelectorAll('.nossa')].find(a => a.textContent === 'Resenha')?.getAttribute('href') || '' };
+    const img = li.querySelector('img');
     $('.topo .capa2', dlg).innerHTML = img ? `<img src="${img.getAttribute('src')}" alt="Capa de ${d.nome.replace(/"/g, '&quot;')}">` : '<span class="sem-capa"></span>';
     $('h2', dlg).textContent = d.nome;
     $('.ed2', dlg).textContent = d.editora;
@@ -288,6 +310,11 @@ JS = """<script>
   else if (/^j\\d+$/.test(h) && document.getElementById(h)) { alvo = document.getElementById(h); est.mes = alvo.closest('.mes').dataset.mes; }
   render(false); centraChip();
   if (alvo) { alvo.scrollIntoView({ block: 'center' }); abre(alvo); }
+  else if (!h && agora) {
+    document.getElementById('m' + agora).scrollIntoView({ block: 'start' });
+    const c = chipsMes.find(x => x.dataset.mes === agora);  // o chip do mês corrente (borda dourada) fica à vista no trilho
+    if (c) c.parentElement.scrollLeft = c.offsetLeft - c.parentElement.clientWidth / 2 + c.offsetWidth / 2;
+  }
 })();
 </script>"""
 
@@ -310,8 +337,11 @@ def build(ano=None):
         js = sorted(porm[mes], key=lambda j: (situacao(j)[2], norm(j["nome"])))
         i = int(mes[5:]) - 1
         nome_mes = f"{MESES[i]} de {mes[:4]}"
-        cards = "".join(cartao(j, noticias, resenhas, capas[j["id_jogo"]]) for j in js)
-        secoes.append(f'<section class="mes" id="m{mes}" data-mes="{mes}" data-nome="{nome_mes}"><h2>{nome_mes.capitalize()} '
+        # a página abre rolada até o mês corrente: as primeiras capas dele são a maior pintura da tela (LCP)
+        cards = "".join(cartao(j, noticias, resenhas, capas[j["id_jogo"]], mes == agora and k < 4) for k, j in enumerate(js))
+        # linhas da grade em cada largura (2, 3, 5 e 6 colunas): base da altura reservada pelo content-visibility
+        linhas = ";".join(f"--r{c}:{-(-len(js) // c)}" for c in (2, 3, 5, 6))
+        secoes.append(f'<section class="mes" id="m{mes}" data-mes="{mes}" data-nome="{nome_mes}" style="{linhas}"><h2>{nome_mes.capitalize()} '
                       f'<span>{len(js)} lançamentos</span></h2><ul class="grade-cal">{cards}</ul></section>')
         chips.append(f'<button type="button" class="chip{" agora" if mes == agora else ""}" data-mes="{mes}" aria-pressed="false">'
                      f'{MES_CURTO[i]}<small>{len(js)}</small></button>')
@@ -337,7 +367,7 @@ def build(ano=None):
  <div class="lista">{"".join(secoes)}</div>
  <div class="vazio" hidden><p>Nenhum lançamento com esses filtros.</p><button type="button" class="chip">Limpar filtros</button></div>
 </main>
-<dialog class="ficha" id="ficha" aria-labelledby="ficha-nome">
+<dialog class="ficha" id="ficha" aria-labelledby="ficha-nome" aria-modal="true">
  <div class="folha">
   <span class="alca" aria-hidden="true"></span>
   <button type="button" class="fecha" aria-label="Fechar">×</button>
