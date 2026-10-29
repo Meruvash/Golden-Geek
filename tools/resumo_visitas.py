@@ -18,13 +18,18 @@ API = "https://api.cloudflare.com/client/v4/graphql"
 BRT = timezone(timedelta(hours=-3))
 CONTA = "0b88cc2d6b58c936265686f078d9969f"  # ID da conta Cloudflare do domínio (identificador, não é segredo)
 
-CONSULTA = """query($conta: String!, $ini: Time!, $fim: Time!, $host: String!) {
+# assistentes de IA que mandam visita com origem (ChatGPT, Perplexity, Claude, Gemini, Copilot)
+IAS = ["chatgpt.com", "chat.openai.com", "perplexity.ai", "www.perplexity.ai", "claude.ai", "gemini.google.com", "copilot.microsoft.com"]
+
+CONSULTA = """query($conta: String!, $ini: Time!, $fim: Time!, $host: String!, $ias: [String!]) {
   viewer { accounts(filter: {accountTag: $conta}) {
     total: rumPageloadEventsAdaptiveGroups(limit: 1, filter: {datetime_geq: $ini, datetime_lt: $fim, requestHost: $host}) {
       count sum { visits } }
     paginas: rumPageloadEventsAdaptiveGroups(limit: 5, orderBy: [count_DESC], filter: {datetime_geq: $ini, datetime_lt: $fim, requestHost: $host}) {
       count dimensions { requestPath } }
     origens: rumPageloadEventsAdaptiveGroups(limit: 5, orderBy: [sum_visits_DESC], filter: {datetime_geq: $ini, datetime_lt: $fim, requestHost: $host}) {
+      sum { visits } dimensions { refererHost } }
+    ia: rumPageloadEventsAdaptiveGroups(limit: 10, filter: {datetime_geq: $ini, datetime_lt: $fim, requestHost: $host, refererHost_in: $ias}) {
       sum { visits } dimensions { refererHost } }
     aparelhos: rumPageloadEventsAdaptiveGroups(limit: 5, orderBy: [count_DESC], filter: {datetime_geq: $ini, datetime_lt: $fim, requestHost: $host}) {
       count dimensions { deviceType } }
@@ -33,7 +38,7 @@ CONSULTA = """query($conta: String!, $ini: Time!, $fim: Time!, $host: String!) {
 
 
 def consultar(token, conta, ini, fim):
-    corpo = json.dumps({"query": CONSULTA, "variables": {"conta": conta, "ini": ini.isoformat(), "fim": fim.isoformat(), "host": HOST}}).encode()
+    corpo = json.dumps({"query": CONSULTA, "variables": {"conta": conta, "ini": ini.isoformat(), "fim": fim.isoformat(), "host": HOST, "ias": IAS}}).encode()
     req = urllib.request.Request(API, data=corpo, headers={"Authorization": f"Bearer {token}", "Content-Type": "application/json"})
     with urllib.request.urlopen(req, timeout=60) as r:
         dados = json.loads(r.read())
@@ -51,6 +56,8 @@ def periodo(nome, d):
     origens = [o for o in d["origens"] if o["dimensions"]["refererHost"] != HOST]
     if origens:
         linhas.append("  De onde veio: " + "; ".join(f"{o['dimensions']['refererHost'] or 'direto/sem origem'} ({o['sum']['visits']})" for o in origens))
+    ia = sum(o["sum"]["visits"] for o in d["ia"])
+    linhas.append(f"  De assistentes de IA: {ia}" + (" (" + "; ".join(f"{o['dimensions']['refererHost']} ({o['sum']['visits']})" for o in d["ia"]) + ")" if ia else ""))
     if d["aparelhos"]:
         linhas.append("  Aparelhos: " + "; ".join(f"{a['dimensions']['deviceType']} ({a['count']})" for a in d["aparelhos"]))
     return "\n".join(linhas)
