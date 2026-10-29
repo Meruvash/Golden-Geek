@@ -22,7 +22,8 @@ def card(c):
     nota_html = f'<span class="nota {faixa_nota(nota)}" aria-label="Nota BGG {nota:.1f}">{f"{nota:.1f}".replace(".", ",")}</span>' if nota else ""
     premio = f'<span class="vit">{vit} vitória{"s" if vit != 1 else ""} em prêmios</span>' if vit else ""
     f = derivar(c)
-    f["nome"] = " ".join({c["jogo"], titulo, c.get("titulo_busca", "")})
+    # dict.fromkeys tira repetidos mantendo a ordem (um set mudava a ordem a cada execução e gerava diff à toa)
+    f["nome"] = " ".join(dict.fromkeys(x for x in (c["jogo"], titulo, c.get("titulo_busca", "")) if x))
     dados = e(json.dumps(f, ensure_ascii=False, separators=(",", ":")))
     return f"""  <li data-f="{dados}"><a class="card" href="../{c["slug"]}/">
    <span class="capa"><img src="{capa_src(c["slug"])}" srcset="{srcset(ROOT / c["slug"] / "capa.jpg", "../", (400,))}" sizes="(min-width: 700px) 360px, 50vw" width="800" height="800" alt="{e(c["alt"])}" loading="lazy">{nota_html}</span>
