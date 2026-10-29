@@ -763,6 +763,11 @@ def aprovar(slug, escolhas, forcar=False, nota=None):
             c = cands[n]
             im = Image.open(ROOT / c["arquivo"])
             im = im.convert("RGBA") if im.mode in ("RGBA", "LA", "P") else im.convert("RGB")
+            if im.mode == "RGBA" and tipo != "capa":
+                # Recorte com fundo transparente vira serrilhado escuro no tema da página: achata no branco.
+                fundo = Image.new("RGB", im.size, "white")
+                fundo.paste(im, mask=im.split()[3])
+                im = fundo
             im.thumbnail((1600, 1600), Image.LANCZOS)
             nome = f"{tipo}-{i}.webp"
             for q in range(86, 55, -6):

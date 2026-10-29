@@ -135,13 +135,13 @@ footer .in{display:flex;flex-wrap:wrap;gap:10px 20px;padding-top:18px;padding-bo
 <main class="in">
  <section class="topo">
   <h1>Resenhas de jogos premiados</h1>
-  <p class="lede">26 resenhas com fontes: como funciona, o que funciona, pontos de atenção e para quem é cada jogo. Só entram jogos premiados no Golden Geek, Spiel des Jahres, Kennerspiel, As d'Or e Deutscher Spiele Preis.</p>
+  <p class="lede">30 resenhas com fontes: como funciona, o que funciona, pontos de atenção e para quem é cada jogo. Só entram jogos premiados no Golden Geek, Spiel des Jahres, Kennerspiel, As d'Or e Deutscher Spiele Preis.</p>
  </section>
  <div class="barra-f" id="barra-f" hidden>
   <button type="button" class="btn-filtro" id="abrir-f" aria-haspopup="dialog" aria-controls="dlg-f">
    <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M7 12h10M10 18h4"/></svg><span>Filtrar resenhas</span><b class="badge" id="n-ativos" hidden></b>
   </button>
-  <span class="resumo-f" id="resumo-f" aria-live="polite">26 resenhas</span>
+  <span class="resumo-f" id="resumo-f" aria-live="polite">30 resenhas</span>
  </div>
  <div class="ativos" id="ativos" aria-label="Filtros ativos" role="group" hidden></div>
  <dialog class="folha" id="dlg-f" aria-labelledby="t-f">
@@ -166,11 +166,51 @@ footer .in{display:flex;flex-wrap:wrap;gap:10px 20px;padding-top:18px;padding-bo
     </div></details>
     <label class="f">Ordenar por<select name="ordem"><option value="">Mais recentes</option><option value="nota">Nota BGG</option><option value="leve">Mais leve</option><option value="pesado">Mais pesado</option><option value="curto">Mais curto</option><option value="preco">Menor preço</option></select></label>
    </div>
-   <footer class="folha-p"><button type="reset" class="limpar">Limpar</button><button type="button" class="ver" id="ver-f">Ver 26 resenhas</button></footer>
+   <footer class="folha-p"><button type="reset" class="limpar">Limpar</button><button type="button" class="ver" id="ver-f">Ver 30 resenhas</button></footer>
   </form>
  </dialog>
  <div class="vazio" id="vazio" hidden><p>Nenhuma resenha com esses filtros.</p><div class="sugere" id="sugere"></div><button type="button" class="limpar" id="limpar2">Limpar todos os filtros</button></div>
  <ul class="grid" id="lista">
+  <li data-f="{&quot;jogadores&quot;:[1,4],&quot;melhor&quot;:[2,3],&quot;duracao&quot;:[90,180],&quot;peso&quot;:4.24,&quot;idade&quot;:14,&quot;solo&quot;:true,&quot;portugues&quot;:true,&quot;estilos&quot;:[&quot;Competitivo&quot;],&quot;mecanicas&quot;:[],&quot;premios&quot;:[&quot;As d&#x27;Or&quot;],&quot;preco&quot;:774,&quot;nota&quot;:8.2,&quot;melhor_para&quot;:&quot;estrategia&quot;,&quot;nome&quot;:&quot;Civolution Civolution: resenha do vencedor do As d&#x27;Or Expert 2026&quot;}"><a class="card" href="../civolution/">
+   <span class="capa"><img src="../civolution/capa.jpg?v=a3567383" srcset="../img/civolution/capa-356f970f-400.webp 400w, ../civolution/capa.jpg 800w" sizes="(min-width: 700px) 360px, 50vw" width="800" height="800" alt="Mesa montada de Civolution com os consoles dos jogadores, o mapa modular e os dados" loading="lazy"><span class="nota n9" aria-label="Nota BGG 8.2">8,2</span></span>
+   <span class="corpo">
+    <span class="selo sim">Estrategistas</span>
+    <h2>Civolution</h2>
+    <span class="tag">Dois dados, uma divindade e quatro eras para levar seu povo mais longe.</span>
+    
+    <span class="vit">1 vitória em prêmios</span>
+   </span>
+  </a></li>
+  <li data-f="{&quot;jogadores&quot;:[1,4],&quot;melhor&quot;:[2,3],&quot;duracao&quot;:[30,45],&quot;peso&quot;:2.0,&quot;idade&quot;:10,&quot;solo&quot;:true,&quot;portugues&quot;:true,&quot;estilos&quot;:[&quot;Competitivo&quot;],&quot;mecanicas&quot;:[],&quot;premios&quot;:[&quot;Golden Geek&quot;],&quot;preco&quot;:254,&quot;nota&quot;:8.0,&quot;melhor_para&quot;:&quot;proximo&quot;,&quot;nome&quot;:&quot;Harmonies Harmonies: resenha do Jogo do Ano médio no Golden Geek 2024&quot;}"><a class="card" href="../harmonies/">
+   <span class="capa"><img src="../harmonies/capa.jpg?v=3428f5da" srcset="../img/harmonies/capa-5f35f8f4-400.webp 400w, ../harmonies/capa.jpg 800w" sizes="(min-width: 700px) 360px, 50vw" width="800" height="800" alt="Componentes de Harmonies montados na mesa: tabuleiros, fichas coloridas e cartas de animais" loading="lazy"><span class="nota n9" aria-label="Nota BGG 8.0">8,0</span></span>
+   <span class="corpo">
+    <span class="selo sim">O próximo passo</span>
+    <h2>Harmonies</h2>
+    <span class="tag">Empilhe a paisagem certa e os animais vêm morar nela.</span>
+    
+    <span class="vit">1 vitória em prêmios</span>
+   </span>
+  </a></li>
+  <li data-f="{&quot;jogadores&quot;:[1,6],&quot;melhor&quot;:[5,6],&quot;duracao&quot;:[30,60],&quot;peso&quot;:2.2,&quot;idade&quot;:10,&quot;solo&quot;:true,&quot;portugues&quot;:true,&quot;estilos&quot;:[&quot;Competitivo&quot;],&quot;mecanicas&quot;:[],&quot;premios&quot;:[&quot;Golden Geek&quot;],&quot;preco&quot;:449,&quot;nota&quot;:8.0,&quot;melhor_para&quot;:&quot;proximo&quot;,&quot;nome&quot;:&quot;Heat: Pedal to the Metal Heat: resenha da corrida que venceu o Golden Geek 2022&quot;}"><a class="card" href="../heat-pedal-to-the-metal/">
+   <span class="capa"><img src="../heat-pedal-to-the-metal/capa.jpg?v=7ea3a5ba" srcset="../img/heat-pedal-to-the-metal/capa-8956b6bf-400.webp 400w, ../heat-pedal-to-the-metal/capa.jpg 800w" sizes="(min-width: 700px) 360px, 50vw" width="800" height="800" alt="Foto oficial do jogo Heat: Pedal to the Metal montado na mesa" loading="lazy"><span class="nota n9" aria-label="Nota BGG 8.0">8,0</span></span>
+   <span class="corpo">
+    <span class="selo sim">O próximo passo</span>
+    <h2>Heat: Pedal to the Metal</h2>
+    <span class="tag">Acelerar custa calor; frear custa a corrida.</span>
+    
+    <span class="vit">2 vitórias em prêmios</span>
+   </span>
+  </a></li>
+  <li data-f="{&quot;jogadores&quot;:[1,4],&quot;melhor&quot;:[2],&quot;duracao&quot;:[40,160],&quot;peso&quot;:null,&quot;idade&quot;:14,&quot;solo&quot;:true,&quot;portugues&quot;:true,&quot;estilos&quot;:[&quot;Competitivo&quot;],&quot;mecanicas&quot;:[],&quot;premios&quot;:[&quot;Deutscher Spiele Preis&quot;,&quot;Golden Geek&quot;],&quot;preco&quot;:743,&quot;nota&quot;:null,&quot;melhor_para&quot;:&quot;estrategia&quot;,&quot;nome&quot;:&quot;SETI: Search for Extraterrestrial Intelligence SETI SETI: resenha do vencedor do Deutscher Spiele Preis 2025&quot;}"><a class="card" href="../seti/">
+   <span class="capa"><img src="../seti/capa.jpg?v=337df774" srcset="../img/seti/capa-492e48a5-400.webp 400w, ../seti/capa.jpg 800w" sizes="(min-width: 700px) 360px, 50vw" width="800" height="800" alt="Mesa montada de SETI, com o tabuleiro do sistema solar de discos giratórios" loading="lazy"></span>
+   <span class="corpo">
+    <span class="selo sim">Estrategistas</span>
+    <h2>SETI</h2>
+    <span class="tag">Sondas, telescópios e um céu que gira: a busca por vida virou euro de primeira.</span>
+    
+    <span class="vit">3 vitórias em prêmios</span>
+   </span>
+  </a></li>
   <li data-f="{&quot;jogadores&quot;:[1,4],&quot;melhor&quot;:[3],&quot;duracao&quot;:[90,150],&quot;peso&quot;:3.97,&quot;idade&quot;:14,&quot;solo&quot;:true,&quot;portugues&quot;:true,&quot;estilos&quot;:[&quot;Competitivo&quot;],&quot;mecanicas&quot;:[&quot;Alocação de trabalhadores&quot;],&quot;premios&quot;:[&quot;Golden Geek&quot;],&quot;preco&quot;:559,&quot;nota&quot;:8.3,&quot;melhor_para&quot;:&quot;estrategia&quot;,&quot;nome&quot;:&quot;Galactic Cruise Galactic Cruise: resenha do Jogo do Ano pesado do Golden Geek&quot;}"><a class="card" href="../galactic-cruise/">
    <span class="capa"><img src="../galactic-cruise/capa.jpg?v=590b4278" srcset="../img/galactic-cruise/capa-3035b3a0-400.webp 400w, ../galactic-cruise/capa.jpg 800w" sizes="(min-width: 700px) 360px, 50vw" width="800" height="800" alt="Infográfico Elite Boardgamers sobre o jogo Galactic Cruise" loading="lazy"><span class="nota n9" aria-label="Nota BGG 8.3">8,3</span></span>
    <span class="corpo">
