@@ -4,6 +4,7 @@
 exclude:
   - seo
   - docs
+  - worker
   - PADRAO_EDITORIAL.md
   - PAUTA_NOTICIAS.md
   - PLANO_FOTOS.md

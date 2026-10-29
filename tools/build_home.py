@@ -21,6 +21,7 @@ from imagens_resp import miniatura, srcset  # noqa: E402
 from build_sitemap import lastmod_registrado  # noqa: E402
 from build_review import INSTAGRAM, ROOT, SITE, WHATSAPP, e, icone, versao  # noqa: E402
 from og import url_cartao  # noqa: E402
+from layout import _config_interacoes, compartilhar, interacoes  # noqa: E402
 from layout import CSS_BUSCA, CSS_TRILHA, cabecalho, rodape, trilha  # noqa: E402
 from noticias.checar_noticia import checar_dia, problemas  # noqa: E402
 
@@ -279,6 +280,8 @@ footer .in{display:flex;flex-wrap:wrap;gap:10px 20px;padding-top:18px;padding-bo
  footer .in{gap:4px 20px;align-items:center}footer a{display:inline-block;padding:6px 0}
 }
 @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
+/* compartilhar */
+.nota article .compartilhe{margin-top:12px}.cp-home .cp-t,.cp-bloco .cp-t{font-size:1.05rem}
 /* ===== Paleta de seções (referência: The Verge) =====
    Filete colorido em cima de cada seção, título em caixa normal, etiquetas preenchidas, linha de data em
    monoespaçada e faixas de cor alternando com os blocos claros de leitura. As faixas trocam as variáveis
@@ -386,6 +389,13 @@ def pagina(titulo, descricao, url, imagem, pre, corpo, tipo="website", head_extr
 """
 
 
+# entra na política editorial quando o serviço de curtidas e comentários estiver instalado
+SECAO_COMENTARIOS = """ <section class="bloco" id="comentarios"><h2>Comentários e curtidas</h2><div class="corpo">
+  <p>Todo comentário passa por moderação antes de aparecer. Uma ferramenta de inteligência artificial faz a primeira leitura com regras públicas: publica os comentários respeitosos sobre jogos, descarta propaganda, golpe, ofensa, discurso de ódio e dados pessoais de outras pessoas, e manda para o responsável editorial tudo o que não for claro. Discordar do site, de uma resenha ou de uma editora, com educação, é bem-vindo.</p>
+  <p>Para comentar pedimos só um nome. O e-mail é opcional, nunca é publicado e só serve para respondermos ou excluirmos o comentário a pedido. Não guardamos o endereço IP: usamos apenas uma assinatura dele, que muda todo dia, para limitar abusos. A curtida é contada uma vez por aparelho, com um identificador aleatório guardado no seu navegador, sem cookies de rastreamento. Quer apagar um comentário seu? Peça pelo Instagram.</p>
+ </div></section>"""
+
+
 def build_politica():
     """Página de política editorial: quem responde pelo site e como notícias e resenhas são feitas."""
     pre = "../"
@@ -420,6 +430,7 @@ def build_politica():
  <section class="bloco"><h2>Medição de visitas</h2><div class="corpo">
   <p>Contamos as visitas com o Cloudflare Web Analytics, que não usa cookies e não identifica quem visita o site. Os números servem só para saber quais páginas são lidas e melhorar o conteúdo.</p>
  </div></section>
+{SECAO_COMENTARIOS if _config_interacoes().get("api") else ""}
  <section class="bloco"><h2>Correções</h2><div class="corpo">
   <p>Encontrou um erro? Mande uma mensagem no Instagram <a href="{INSTAGRAM}" target="_blank" rel="noopener">@eliteboardgamers</a> com o link da página e a fonte da informação correta. Erros confirmados são corrigidos na própria página.</p>
  </div></section>
@@ -634,6 +645,7 @@ def build_home():
   <section class="bloco brasil" id="chegando"><h2>Chegando ao Brasil · {e(rotulo.lower())} <a href="lancamentos/#{mes}">Calendário completo</a></h2><ul class="capas">{capas}</ul></section>
   <section class="bloco financ"><h2>Financiamentos</h2><ul>{financ}</ul></section>
   <section class="bloco resenhas"><h2>Últimas resenhas <a href="resenhas/">Ver todas</a></h2><ul class="res">{res}</ul></section>
+  <section class="bloco cp-home">{compartilhar("Elite Boardgamers: notícias, resenhas de jogos premiados e o calendário de lançamentos de jogos de tabuleiro no Brasil.", f"{SITE}/", "Tem um grupo de jogo? Mande o site para a turma.")}</section>
   <section class="bloco comunidade"><p>Notícias de tabuleiro com fonte e data, todos os dias. Entre no grupo para receber as novidades e conversar sobre jogos.</p>
    <div class="acoes"><a class="btn zap" href="{WHATSAPP}" target="_blank" rel="noopener">{icone("zap")}Entrar no grupo do WhatsApp</a><a class="btn ig" href="{INSTAGRAM}" target="_blank" rel="noopener">{icone("insta")}@eliteboardgamers</a></div></section>
  </div>
@@ -672,6 +684,8 @@ def relacionadas(n, limite=3):
 
 def build_nota(n):
     pre = "../../"
+    url = f"{SITE}/noticias/{n['slug']}/"
+    texto_cp = f"{n['titulo']} (via Elite Boardgamers)"
     fig = (f'<figure><img src="{pre}noticias/{n["imagem"]["arquivo"]}" srcset="{srcset(ROOT / "noticias" / n["imagem"]["arquivo"], pre)}" sizes="(min-width: 760px) 720px, 100vw" alt="{e(n["titulo"])}"><figcaption class="credito">{e(n["imagem"]["credito"])}</figcaption></figure>'
            if n.get("imagem") else "")
     jogos = "".join(f'<a href="{pre}{j["resenha"]}/">Resenha: {e(j["nome"])}</a>' for j in n.get("jogos", []))
@@ -691,6 +705,7 @@ def build_nota(n):
   <span class="cat {CAT_CLASSE.get(n['categoria'], 'mercado')}">{e(n['categoria'])}</span> <span class="selo {sc}">{e(n['selo'])}</span>
   <h1>{e(n['titulo'])}</h1>
   <p class="meta"><time datetime="{n['publicado_em']}">{data_longa(n['data'])}</time> · Redação Elite Boardgamers</p>
+  {compartilhar(texto_cp, url, "", compacto=True)}
  </article>
  <div class="bloco abre">{fig}<p class="lide">{e(n['lide'])}</p></div>
  <section class="bloco importa"><h2>Por que importa</h2><p>{e(n['por_que_importa'])}</p><p class="assina">Análise Elite Boardgamers</p></section>
@@ -700,6 +715,8 @@ def build_nota(n):
  <section class="bloco"><h2>O que diz a crítica</h2>{f'<ul class="crit">{critica}</ul>' if critica else '<p class="corpo">Ainda não encontramos resenha publicada por veículo especializado.</p>'}</section>
  <section class="bloco quem"><div><h2>Interessa a você se…</h2><ul class="ok">{sim}</ul></div>{f'<div><h2>Pense duas vezes se…</h2><ul class="no">{nao}</ul></div>' if nao else ""}</section>
  <section class="bloco veredito {sc}"><h2>Nossa opinião</h2><span class="selo {sc}">{e(n['selo'])}</span><p>{e(n['veredito'])}</p></section>
+ <section class="bloco cp-bloco">{compartilhar(texto_cp, url, "Conhece alguém que vai gostar? Mande esta notícia.")}</section>
+ {interacoes(pre, f"/noticias/{n['slug']}/")}
  {f'<section class="bloco"><h2>Jogos citados</h2><div class="jogos">{jogos}</div></section>' if jogos else ""}
  {f'<section class="bloco leia"><h2>Leia também</h2><ul>{leia}</ul></section>' if leia else ""}
  <section class="bloco fontes"><h2>Fontes</h2><ul>{fontes}</ul></section>

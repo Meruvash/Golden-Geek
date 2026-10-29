@@ -172,6 +172,11 @@
    "jogo": "Civolution",
    "url": "https://eliteboardgamers.com.br/civolution/",
    "data": "2026-10-29"
+  },
+  {
+   "jogo": "Vantage",
+   "url": "https://eliteboardgamers.com.br/vantage/",
+   "data": "2026-10-29"
   }
  ],
  "jogos": [
@@ -2358,9 +2363,10 @@
      "fonte": "https://eliteboardgamers.com.br/"
     }
    ],
-   "status": "na_fila",
+   "status": "publicado",
    "prioridade": 51,
-   "premios_distintos": 1
+   "premios_distintos": 1,
+   "slug": "vantage"
   },
   {
    "jogo": "Arcs",

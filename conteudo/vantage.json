@@ -1,0 +1,383 @@
+{
+ "slug": "vantage",
+ "jogo": "Vantage",
+ "cor": "#4f7fb8",
+ "kicker": "Resenha · Exploração em mundo aberto",
+ "og_titulo": "Vantage vale a pena? Resenha Elite Boardgamers",
+ "titulo_busca": "Vantage vale a pena? Resenha do jogo de mundo aberto",
+ "descricao": "Resenha de Vantage, de Jamey Stegmaier, melhor solo e mais inovador no Golden Geek 2025: como funciona, o que divide a crítica e para quem é.",
+ "titulo_html": "Um jogo para seis pessoas que querem ficar sozinhas: <span>Vantage</span>",
+ "lede": "Vantage é a obra de oito anos de Jamey Stegmaier, o autor de Scythe: um cooperativo de mundo aberto com quase 800 locais, num planeta desconhecido. Venceu o Golden Geek de mais inovador. E é inovador mesmo. Ninguém tinha feito um cooperativo em que os jogadores quase não cooperam. Isso não é uma crítica. Bom, é um pouco. Custa perto de R$ 900, e não, isso não é piada.",
+ "tags": [
+  "1–6 jogadores",
+  "120–180 min",
+  "14+",
+  "Cooperativo",
+  "Mundo aberto"
+ ],
+ "alt": "Mesa de Vantage montada, com tabuleiro central, cartas de local e dados",
+ "premiacoes": [
+  {
+   "premio": "Golden Geek",
+   "ano": 2025,
+   "categoria": "Inovação",
+   "colocacao": 1,
+   "resultado": "vencedor",
+   "fonte": "https://boardgamewire.com/index.php/2026/05/12/co-op-titles-fate-of-the-fellowship-vantage-dominate-20th-golden-geek-awards-hot-streak-scores-pair-of-wins/",
+   "rotulo": "Vencedor"
+  },
+  {
+   "premio": "Golden Geek",
+   "ano": 2025,
+   "categoria": "Solo",
+   "colocacao": 1,
+   "resultado": "vencedor",
+   "fonte": "https://boardgamewire.com/index.php/2026/05/12/co-op-titles-fate-of-the-fellowship-vantage-dominate-20th-golden-geek-awards-hot-streak-scores-pair-of-wins/",
+   "rotulo": "Vencedor"
+  },
+  {
+   "premio": "Golden Geek",
+   "ano": 2025,
+   "categoria": "Cooperativo",
+   "colocacao": 2,
+   "resultado": "top 3",
+   "fonte": "https://boardgamewire.com/index.php/2026/05/12/co-op-titles-fate-of-the-fellowship-vantage-dominate-20th-golden-geek-awards-hot-streak-scores-pair-of-wins/",
+   "rotulo": "2º lugar"
+  },
+  {
+   "premio": "Golden Geek",
+   "ano": 2025,
+   "categoria": "Temático",
+   "colocacao": 2,
+   "resultado": "top 3",
+   "fonte": "https://boardgamewire.com/index.php/2026/05/12/co-op-titles-fate-of-the-fellowship-vantage-dominate-20th-golden-geek-awards-hot-streak-scores-pair-of-wins/",
+   "rotulo": "2º lugar"
+  },
+  {
+   "premio": "Golden Geek",
+   "ano": 2025,
+   "categoria": "Jogo do Ano médio",
+   "colocacao": 2,
+   "resultado": "top 3",
+   "fonte": "https://boardgamewire.com/index.php/2026/05/12/co-op-titles-fate-of-the-fellowship-vantage-dominate-20th-golden-geek-awards-hot-streak-scores-pair-of-wins/",
+   "rotulo": "2º lugar"
+  },
+  {
+   "premio": "Dice Tower Awards",
+   "ano": 2025,
+   "categoria": "Mais inovador",
+   "colocacao": 1,
+   "resultado": "vencedor",
+   "fonte": "https://boardgamewire.com/index.php/2026/08/10/crowdfunded-euros-from-smaller-publishers-dominate-dice-tower-awards-as-galactic-cruise-claims-game-of-the-year/",
+   "rotulo": "Vencedor"
+  }
+ ],
+ "ficha": [
+  [
+   "Ano",
+   "2025"
+  ],
+  [
+   "Designer",
+   "Jamey Stegmaier"
+  ],
+  [
+   "Arte",
+   "Valentina Filić, Sören Meding e Emilien Rotival"
+  ],
+  [
+   "Editora original",
+   "Stonemaier Games"
+  ],
+  [
+   "Editora no Brasil",
+   "Asmodee (Galápagos)"
+  ],
+  [
+   "Jogadores",
+   "1 a 6"
+  ],
+  [
+   "Duração anunciada",
+   "120 a 180 minutos"
+  ],
+  [
+   "Idade",
+   "14+ (segundo lojas e resenhas; a Stonemaier não informa)"
+  ],
+  [
+   "Nota BGG",
+   "cerca de 8,2 a 8,3 / 10 (conforme sites que replicam o BGG)"
+  ],
+  [
+   "Peso BGG",
+   "cerca de 2,3 / 5"
+  ],
+  [
+   "Modo solo oficial",
+   "Sim, sem Automa: você controla tudo"
+  ],
+  [
+   "Componentes",
+   "quase 800 cartas de local, mais de 900 outras cartas, 8 livros de história, 32 dados"
+  ]
+ ],
+ "nota_ficha": "Nota e peso do BGG vêm de sites que replicam o BoardGameGeek, que bloqueia acesso automatizado. A idade vem de lojas brasileiras e de resenhas.",
+ "como_funciona": [
+  "Os jogadores estavam numa nave que caiu num planeta desconhecido, e cada um acorda num ponto diferente do mapa, longe dos outros. Não há tabuleiro de mapa: cada lugar é uma carta numerada, e só quem está nela pode ver a ilustração. O resto da mesa ouve a descrição.",
+  "No seu turno, você escolhe uma ação: uma das ações do local onde está, a ação de uma carta que tem ou partir numa direção. O número da ação manda para um parágrafo num dos oito livros de história, onde você lê o custo, mas não o resultado.",
+  "A regra central é que toda ação dá certo. O desafio é o preço. Você rola dados de desafio conforme o custo e encaixa cada dado nos espaços das cartas da sua grade 3x3. Dado que não cabe vira perda de tempo, moral ou vida. Fichas de habilidade, suas ou doadas por outros jogadores, reduzem o custo antes da rolagem.",
+  "Depois de pagar, você lê o resultado: um item, uma pessoa, um ferimento, uma nova direção ou um 'continue', que dá mais uma ação. Cada local só pode ser usado uma vez, então andar é obrigatório. Quem está no mesmo lugar pode trocar itens e mostrar a carta; quem está longe ajuda doando fichas ou pondo dados nas cartas do outro, com permissão.",
+  "O grupo tem uma missão em comum por partida e pode descobrir destinos pelo caminho. Cumprir a missão permite encerrar ou seguir atrás de um destino; cumprir os dois é a vitória épica. A partida também acaba se o tempo, a moral ou a vida de alguém chegar a zero duas vezes. Não é campanha: cada partida começa do zero."
+ ],
+ "passos": [
+  [
+   "ESCOLHA ONDE AGIR",
+   "Use uma ação do local onde você está, a ação de uma carta sua ou parta numa das quatro direções do mapa."
+  ],
+  [
+   "LEIA SÓ O CUSTO",
+   "O número da ação leva a um parágrafo do livro de história. Você vê quanto vai custar, mas ainda não o que acontece."
+  ],
+  [
+   "ROLE E ENCAIXE",
+   "Role dados de desafio conforme o custo e encaixe cada um nas cartas da sua grade. Fichas de habilidade baratearam antes."
+  ],
+  [
+   "PAGUE O PREÇO",
+   "Dado que não coube tira tempo, moral ou vida. A ação sempre dá certo: o que muda é quanto ela custou."
+  ],
+  [
+   "SIGA A HISTÓRIA",
+   "Leia o resultado, ganhe itens ou pessoas e decida com o grupo se vale perseguir a missão, um destino ou os dois."
+  ]
+ ],
+ "como_resumo": "Explore um planeta carta a carta, sempre conseguindo o que tenta, mas pagando caro por isso.",
+ "perfil": [
+  [
+   "Sensação de descoberta",
+   5
+  ],
+  [
+   "Componentes e arte",
+   5
+  ],
+  [
+   "Modo solo",
+   4
+  ],
+  [
+   "Facilidade de ensinar",
+   3
+  ],
+  [
+   "Partida curta",
+   1
+  ],
+  [
+   "Interação entre jogadores",
+   2
+  ]
+ ],
+ "experiencia": [
+  "Vamos ser honestos: a primeira hora é maravilhosa. Você sobe uma encosta, encontra uma criatura e o jogo garante que tudo o que você tenta dá certo. É a única coisa na sua vida que funciona assim. Aproveite.",
+  "Depois, a parte que ninguém coloca na caixa. Cada jogador está num canto do planeta e a regra proíbe mostrar a carta, então o Carlos descreve uma ilustração que ninguém vê. Ele não é bom nisso. Ninguém é. Ele fala de um cogumelo há quatro minutos. Você poderia estar fazendo qualquer coisa. Mas você pagou R$ 900, então você escuta o cogumelo. A Board Game Quest e a Meeple Mountain recomendam de 1 a 3 jogadores. Não porque odeiam amigos. Porque já jogaram com eles."
+ ],
+ "funciona": [
+  [
+   "Você nunca falha",
+   "É a melhor ideia do jogo. Toda ação acontece; os dados só decidem quanto ela custa em tempo, moral e vida. A Board Game Quest destaca isso como a grande virada: acaba a frustração de perder o turno numa rolagem ruim, e cada decisão passa a ser sobre o preço que você aceita pagar."
+  ],
+  [
+   "Um mundo de verdade aberto",
+   "Quase 800 locais ligados entre si e mais de 900 cartas a descobrir. A AV Club admite não ter visto nem um quarto do conteúdo, e a Board Game Quest elogia a rejogabilidade: cada partida começa num ponto diferente, com missão diferente, e o planeta muda de cara."
+  ],
+  [
+   "Solo que não pede robô",
+   "Sem Automa nem regra extra: você controla o seu personagem e o jogo flui sem esperar ninguém. Não por acaso venceu o Golden Geek de melhor solo, e o Opinionated Gamers registra que a partida sozinho é bem mais rápida que em grupo."
+  ],
+  [
+   "Narrativa que deixa espaço",
+   "Os parágrafos são curtos e evocativos, e a imaginação completa o resto. A Meeple Mountain elogia exatamente essa economia: o jogo sugere em vez de narrar tudo, e a história que você conta depois é sua, não do livro."
+  ],
+  [
+   "Preparação de dois minutos",
+   "Para uma caixa desse tamanho, montar a mesa é quase instantâneo: cada um pega um personagem e uma carta de local, e o resto fica nos livros. A Stonemaier anuncia dois minutos de preparação, e é dos raros números de marketing que não precisam de asterisco."
+  ],
+  [
+   "Produção caprichada",
+   "As ilustrações em primeira pessoa de Valentina Filić, Sören Meding e Emilien Rotival são a vitrine do jogo. O Tabletop Games Blog, que não gostou do resto, elogia a produção e as conversas que essa perspectiva provoca na mesa."
+  ]
+ ],
+ "atencao": [
+  [
+   "Grave",
+   "Cooperativo, tecnicamente",
+   "Vocês estão no mesmo time. Vocês só não estão no mesmo lugar, na mesma conversa nem, às vezes, no mesmo jogo. O Tabletop Games Blog chama de paciência multijogador, e Ben B., do Opinionated Gamers, concorda. E olha, a gente gosta de paciência. Só não sabia que dava para jogar em seis."
+  ],
+  [
+   "Grave",
+   "Até seis jogadores, diz a caixa",
+   "A caixa diz seis. A crítica diz três. Alguém está mentindo, e não é a crítica. A Board Game Quest não passa de três, e a Meeple Mountain conta que a partida com quatro foi a primeira e a última. A gente não está dizendo que a caixa mente. Está dizendo que a caixa é otimista. Como um anúncio de apartamento."
+  ],
+  [
+   "Moderada",
+   "A terceira hora",
+   "Para o Tabletop Games Blog, o encanto vai sumindo ao longo da partida. A Punchboard diz que o jogo para para cheirar as flores quando quer. É lindo. É poético. São onze e meia da noite e você trabalha amanhã."
+  ],
+  [
+   "Moderada",
+   "Peso médio, segundo quem",
+   "O BGG diz peso médio. A AV Club diz que há termos, peças e restrições demais, e o Tabletop Games Blog achou o livro de regras confuso. Os dois podem estar certos. O jogo é médio. O manual é que fez musculação."
+  ],
+  [
+   "Moderada",
+   "Começa do zero, sempre",
+   "Não é campanha: tudo o que você conquistou some quando a caixa fecha, como aponta a CO-OP Gestalt. Oito livros, quase 800 locais e nenhuma memória. É como um peixinho dourado, só que ocupa a estante inteira."
+  ],
+  [
+   "Moderada",
+   "Quase R$ 900",
+   "Em 29/10/2026, o menor preço em lojas brasileiras era R$ 873,63 no Pix, segundo o ComparaJogos. Lá fora, US$ 90. A crítica recomenda testar antes de comprar. A gente também recomenda. Não porque o jogo é ruim. Porque é caro."
+  ]
+ ],
+ "jogadores": [
+  [
+   "Sozinho",
+   "O melhor jeito de jogar: sem espera, no seu ritmo, e premiado como melhor solo no Golden Geek 2025.",
+   3
+  ],
+  [
+   "2 ou 3 jogadores",
+   "Ponto ideal para a Board Game Quest e a Meeple Mountain: ainda dá para combinar estratégias sem esperar demais.",
+   3
+  ],
+  [
+   "4 a 6 jogadores",
+   "A crítica desaconselha: a espera entre turnos cresce e a partida arrasta.",
+   1
+  ]
+ ],
+ "primeira_partida": "Separe três horas para a primeira partida, como relatou a Board Game Quest, e siga a sugestão do próprio livro de regras: ignore a missão e só explore. Use a referência de regras online da Stonemaier para tirar dúvidas no meio do caminho. Na estreia, jogue no máximo em três pessoas; com mais, a primeira impressão vai ser de espera, não de descoberta.",
+ "edicao_nacional": "A edição em português é da Asmodee (Galápagos) e chegou às lojas em outubro de 2026. Em 29/10/2026, o ComparaJogos listava 13 ofertas, a menor por R$ 873,63 no Pix. O jogo tem muito texto e exige português: a versão em inglês só serve para quem lê com folga, já que a história inteira está nos livros.",
+ "preco_ref": {
+  "faixa": "a partir de R$ 873,63",
+  "data": "29/10/2026",
+  "obs": "menor preço no Pix em lojas brasileiras, segundo o ComparaJogos"
+ },
+ "versoes": "Não há expansões, e a Stonemaier diz que não pretende lançar nenhuma. Há acessórios vendidos à parte, como moedas de metal e fichas de madeira, e uma referência oficial de regras online, com os livros de história. O jogo não depende de aplicativo.",
+ "comparacoes": [
+  [
+   "Scythe",
+   "scythe",
+   "Do mesmo autor e com a mesma ambição de mundo, mas competitivo, com mapa à vista e disputa direta. Se você quer Stegmaier com interação de verdade, é por aqui."
+  ],
+  [
+   "O Senhor dos Anéis: Sina da Sociedade",
+   "fate-of-the-fellowship",
+   "Bateu Vantage no Golden Geek de cooperativo. O grupo decide junto o tempo todo, com tensão e objetivo claro, o contrário do isolamento de Vantage."
+  ],
+  [
+   "Gloomhaven",
+   "gloomhaven",
+   "Para quem quer exploração com história que continua: campanha longa, progressão entre sessões e combate tático. Mais pesado, mas nada se perde ao fechar a caixa."
+  ]
+ ],
+ "para_quem": [
+  "Joga sozinho e quer um planeta inteiro só para si",
+  "Prefere descobrir a vencer",
+  "Não precisa de meta clara para ser feliz",
+  "Lê bem e sente falta dos livros-jogo",
+  "Joga em dupla com alguém que escuta"
+ ],
+ "nao_e_para": [
+  "Joga cooperativo para discutir com os amigos",
+  "Reúne quatro ou mais pessoas toda semana",
+  "Precisa saber o que está otimizando",
+  "Quer que algo fique para a próxima partida",
+  "Tem um amigo que descreve cogumelos"
+ ],
+ "selo": "Recomendado com ressalva",
+ "ressalva": "só de 1 a 3 jogadores",
+ "melhor_para": "solo",
+ "veredito": "Olha, a gente não vai fingir que Vantage é ruim. Não é. Sozinho, é o melhor jogo solo do ano, e não somos nós que dizemos, é o Golden Geek. A ação que nunca falha é a ideia mais esperta que alguém teve num tabuleiro em muito tempo. Stegmaier passou oito anos nisso, e dá para ver. O problema é que ele passou oito anos fazendo um jogo maravilhoso para uma pessoa e depois imprimiu seis na caixa. Em grupo, vira reunião de condomínio: você paga quase R$ 900 para ouvir amigos lerem parágrafos. Você já faz isso de graça no grupo da família. Compre se joga sozinho. Se joga em seis, compre outro jogo. Ou outros amigos.",
+ "tagline": "Não é um jogo ruim. É um ótimo jogo solo com cinco cadeiras sobrando.",
+ "citacao": {
+  "texto": "Vantage é um triunfo.",
+  "fonte": "Meeple Mountain (tradução livre)"
+ },
+ "consulta": "29/10/2026",
+ "fontes": [
+  [
+   "Stonemaier Games – Vantage",
+   "https://stonemaiergames.com/games/vantage/",
+   "ficha, componentes, duração, preço"
+  ],
+  [
+   "Vantage – referência de regras (Rulepop)",
+   "https://vantage.rulepop.com/",
+   "regras, turno, fim de jogo, solo"
+  ],
+  [
+   "Board Game Quest – Vantage review",
+   "https://www.boardgamequest.com/vantage-review/",
+   "crítica, contagem de jogadores, duração"
+  ],
+  [
+   "Meeple Mountain – Vantage",
+   "https://meeplemountain.com/reviews/vantage",
+   "crítica, narrativa, quatro jogadores"
+  ],
+  [
+   "Tabletop Games Blog – Vantage",
+   "https://tabletopgamesblog.com/2026/07/18/vantage-saturday-review/",
+   "crítica, isolamento, regras"
+  ],
+  [
+   "AV Club – Vantage",
+   "https://www.avclub.com/the-board-game-vantage-is-too-big-for-its-own-good",
+   "crítica, excesso de regras"
+  ],
+  [
+   "Opinionated Gamers – Vantage",
+   "https://opinionatedgamers.com/2025/10/01/josiah-fiscus-review-of-vantage/",
+   "crítica, solo, idade"
+  ],
+  [
+   "Punchboard – Vantage",
+   "https://punchboard.co.uk/vantage-review/",
+   "crítica, ritmo"
+  ],
+  [
+   "CO-OP Gestalt – Vantage",
+   "https://coopgestalt.com/2025/08/15/what-vantage-is-and-isnt-a-review-of-vantage/",
+   "progressão, campanha"
+  ],
+  [
+   "BoardGameWire – Golden Geek 2025",
+   "https://boardgamewire.com/index.php/2026/05/12/co-op-titles-fate-of-the-fellowship-vantage-dominate-20th-golden-geek-awards-hot-streak-scores-pair-of-wins/",
+   "prêmios"
+  ],
+  [
+   "BoardGameWire – Dice Tower Awards",
+   "https://boardgamewire.com/index.php/2026/08/10/crowdfunded-euros-from-smaller-publishers-dominate-dice-tower-awards-as-galactic-cruise-claims-game-of-the-year/",
+   "prêmio de inovação"
+  ],
+  [
+   "Stonemaier – oito anos de Vantage",
+   "https://stonemaiergames.com/?p=27754",
+   "tempo de desenvolvimento"
+  ],
+  [
+   "Stonemaier – expansões e localização",
+   "https://stonemaiergames.com/?p=27380",
+   "sem expansões, edição brasileira"
+  ],
+  [
+   "ComparaJogos – Vantage",
+   "https://www.comparajogos.com.br/item/vantage",
+   "preço no Brasil, idioma, nota"
+  ]
+ ],
+ "legenda": "Vantage é um jogo para seis pessoas que querem ficar sozinhas. 🪐\n\nMelhor solo do Golden Geek 2025. A ação nunca falha, a única coisa na sua vida que funciona assim.\nA caixa diz até 6 jogadores. A crítica diz até 3. Alguém está mentindo, e não é a crítica.\nVeredito: RECOMENDADO COM RESSALVA. Só de 1 a 3, e quase R$ 900. Não, isso não é piada.\n\nMarca aqui o amigo que descreve cogumelos. 👇\nResenha completa no link da bio.\n\n#Vantage #JogosDeTabuleiro #BoardGames #Stonemaier #JameyStegmaier #JogoSolo #Cooperativo #GoldenGeek #EliteBoardgamers #Boardgamer"
+}
