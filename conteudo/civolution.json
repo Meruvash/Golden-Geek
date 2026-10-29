@@ -1,0 +1,358 @@
+{
+ "slug": "civolution",
+ "jogo": "Civolution",
+ "cor": "#2f7d6b",
+ "kicker": "Resenha · Eurogame pesado com dados",
+ "og_titulo": "Civolution vale a pena? Resenha Elite Boardgamers",
+ "titulo_busca": "Civolution: resenha do vencedor do As d'Or Expert 2026",
+ "descricao": "Resenha de Civolution, de Stefan Feld, vencedor do As d'Or Expert 2026 e em pré-venda pela Devir: como funciona, pontos fortes, pontos de atenção e para quem é.",
+ "titulo_html": "Dados, deuses e quatro eras: <span>Civolution</span>",
+ "lede": "Civolution é o eurogame mais pesado de Stefan Feld, autor de The Castles of Burgundy: cada jogador é uma divindade que guia uma civilização por quatro eras, usando pares de dados para ativar ações num painel que lembra uma árvore tecnológica. Venceu o As d'Or Expert 2026 e ficou em 3º no Golden Geek de jogo pesado de 2024. É para quem já gosta de jogos longos e cheios de escolhas, e a crítica especializada o trata como o melhor Feld até hoje.",
+ "tags": [
+  "1–4 jogadores",
+  "90–180 min",
+  "14+",
+  "Seleção de dados",
+  "Solo"
+ ],
+ "alt": "Mesa montada de Civolution com os consoles dos jogadores, o mapa modular e os dados",
+ "premiacoes": [
+  {
+   "premio": "As d'Or",
+   "ano": 2026,
+   "categoria": "Jeu de l’année Expert",
+   "colocacao": 1,
+   "resultado": "vencedor",
+   "fonte": "https://fr.wikipedia.org/wiki/As_d%27Or",
+   "rotulo": "Vencedor"
+  },
+  {
+   "premio": "Golden Geek",
+   "ano": 2024,
+   "categoria": "Jogo do Ano pesado",
+   "colocacao": 3,
+   "resultado": "top 3",
+   "fonte": "https://eliteboardgamers.com.br/",
+   "rotulo": "3º lugar"
+  }
+ ],
+ "ficha": [
+  [
+   "Ano",
+   "2024"
+  ],
+  [
+   "Designer",
+   "Stefan Feld"
+  ],
+  [
+   "Arte",
+   "Dennis Lohausen"
+  ],
+  [
+   "Editora original",
+   "Deep Print Games"
+  ],
+  [
+   "Editora no Brasil",
+   "Devir (em pré-venda)"
+  ],
+  [
+   "Jogadores",
+   "1 a 4"
+  ],
+  [
+   "Duração anunciada",
+   "90 a 180 minutos (BGG e editora original); 180 minutos na página da Devir"
+  ],
+  [
+   "Duração relatada",
+   "3 a 4 horas nas primeiras partidas e perto de 2 horas depois, segundo a Meeple Mountain"
+  ],
+  [
+   "Idade",
+   "14+"
+  ],
+  [
+   "Nota BGG",
+   "8,2 (6.509 avaliações), segundo a BoardMatch, que reproduz dados do BGG"
+  ],
+  [
+   "Peso BGG",
+   "4,24 / 5 (BoardMatch); 4,3 / 5 (Board Game Bliss)"
+  ],
+  [
+   "Melhor com",
+   "2 jogadores, pela enquete do BGG (BoardMatch); 2 e 3, segundo a Board Game Bliss"
+  ],
+  [
+   "Nota Ludopedia",
+   "8,7 (68 avaliações), segundo resultado de busca; página não acessada diretamente"
+  ],
+  [
+   "Modo solo",
+   "Sim, com o autômato V.I.C.I.; há versão em aplicativo web que exige a caixa física"
+  ],
+  [
+   "Componentes",
+   "4 consoles, 2 tabuleiros auxiliares, 8 pranchas de continente, 224 cartas, 38 dados, 80 tribos, 200 marcadores octogonais, 60 peças de módulo, entre outros"
+  ]
+ ],
+ "nota_ficha": "Consultas em 29/10/2026. BoardGameGeek e Ludopedia bloqueiam acesso automatizado: os números do BGG vêm de páginas que os reproduzem (BoardMatch e Board Game Bliss, que divergem no peso) e a nota da Ludopedia vem de resultado de busca. Componentes conforme a página da Bravo Jogos para a edição da Devir.",
+ "como_funciona": [
+  "Cada jogador é uma divindade local que conduz um povo num continente isolado. A partida dura quatro eras, e vence quem tiver mais pontos de sucesso no fim. Há vários caminhos para pontuar: subir em trilhas de progresso, espalhar tribos pelo mapa, construir povoados e montar fileiras de cartas no seu console.",
+  "O console é o painel pessoal de cada um: recursos do lado esquerdo, ações (os módulos) do lado direito. Para fazer uma ação, você escolhe dois dados brancos do seu estoque com os valores que o módulo pede, encaixa os dois ali, resolve o efeito e tira os dados. Quem já jogou The Castles of Burgundy reconhece a ideia, aqui com muito mais opções.",
+  "A sorte dos dados tem remédio. Fichas de ideia mudam um dado em um ponto para cima ou para baixo, o foco vale qualquer número e os marcadores de planejamento ficam presos a um valor escolhido. Os dados rosa servem para caçar e passar em testes que melhoram ações já evoluídas.",
+  "No mapa modular, sorteado a cada partida, suas tribos se movem entre regiões, descobrem recursos e locais especiais, produzem e levam os recursos ao console, e podem erguer fazendas e povoados. Todos os recursos usam o mesmo marcador octogonal de madeira, posto no espaço certo do console.",
+  "Quando não quer ou não pode agir, você faz um turno de reinício: rola de novo os seus dados. Esses reinícios funcionam como relógio: depois de um certo número, a era termina, com fase de locais, alimentação do povo, clima e eventos e uma pontuação de era. Depois da quarta vem a pontuação final."
+ ],
+ "experiencia": [
+  "Uma vez montado, Civolution é um quebra-cabeça pessoal. Você olha os dados que rolou, por exemplo um 2, um 5 e dois 6, e procura no console quais módulos aceitam esses pares. O par 5 e 6 pode mover duas tribos até uma região ainda escondida; gastar uma ficha de ideia transforma o 2 num 3 e libera uma troca de ouro por madeira. Cada escolha deixa os dados que sobram mais ou menos úteis, e às vezes vale fazer um reinício só para rolar tudo de novo no momento certo.",
+  "A interação é baixa, mas existe: quando a reserva central acaba, quem pega um dado o tira de quem tem mais daquela cor, e uma tribo pode expulsar outra de um espaço do mapa. Para a Punchboard, é uma caixa de areia em que cada partida segue um rumo diferente. O preço é o tempo: a Meeple Mountain levou cerca de quatro horas na primeira partida."
+ ],
+ "citacao": {
+  "texto": "Uma caixa de areia gloriosa, que reúne as melhores partes dos jogos de Stefan Feld num só.",
+  "fonte": "Punchboard (tradução livre)"
+ },
+ "funciona": [
+  [
+   "Dados com muitas saídas",
+   "Os dados escolhem a ação, mas não prendem o jogador: ideias, foco e planejamento ajustam os valores, e o reinício permite rolar tudo de novo. A Meeple Mountain vê ecos de The Castles of Burgundy com um espaço de decisão muito maior, e a Punchboard diz que as formas de contornar o azar compensam um dado ruim."
+  ],
+  [
+   "Vários caminhos para vencer",
+   "Trilhas de progresso, cartas em fileiras, povoados, tribos espalhadas e diamantes pontuam no fim. A Meeple Mountain resume que não existe um caminho melhor a seguir, e o sorteio de trilhas que valem muito em cada era muda o plano de uma partida para a outra."
+  ],
+  [
+   "Mapa diferente a cada partida",
+   "As pranchas de continente formam um mapa modular sorteado, e os recursos e locais só aparecem quando uma tribo entra na região. Para a Punchboard, isso faz de Civolution uma caixa de areia: numa das partidas do crítico, os jogadores exploraram só um terço do mapa."
+  ],
+  [
+   "Organização exemplar da caixa",
+   "Todos os recursos são o mesmo marcador octogonal de madeira, o que acelera montar e guardar, como aponta a Punchboard. A Meeple Mountain elogiou a organização da caixa, o manual e as ajudas de jogo, e escreveu em caixa alta que é assim que se faz."
+  ],
+  [
+   "Atenção durante a vez dos outros",
+   "Como os rivais quase não atrapalham o seu console, dá para planejar a próxima jogada enquanto os outros jogam, o que a Meeple Mountain cita como ponto a favor. A interação que existe, roubo de dados e expulsão de tribos, é pequena, mas tem peso."
+  ],
+  [
+   "Crítica e comunidade em sintonia",
+   "Tom Vasel e Mike DiLisio, da The Dice Tower, deram nota 9,0. A Meeple Mountain deu a nota máxima e a Punchboard chamou de obrigatório. No BGG, a nota passa de 8,2 com mais de 6 mil avaliações, segundo a BoardMatch."
+  ]
+ ],
+ "atencao": [
+  [
+   "Moderada",
+   "Curva de aprendizado íngreme",
+   "São 15 módulos de ação, seis trilhas, cartas e mapa, e o peso fica acima de 4 em 5 no BGG. A Punchboard avisa que, se você ainda não gosta de jogos pesados, este não vai mudar sua opinião, e a Meeple Mountain prevê muita paralisia por análise nas primeiras partidas."
+  ],
+  [
+   "Moderada",
+   "Partidas longas",
+   "A caixa promete de 90 a 180 minutos, mas a primeira partida da Meeple Mountain levou cerca de quatro horas; as seguintes, com o mesmo número de jogadores, ficaram perto de duas. A Punchboard lista de 120 a 240 minutos. Reserve a noite inteira na estreia."
+  ],
+  [
+   "Moderada",
+   "Ocupa uma mesa enorme",
+   "Cada console é grande, e ainda entram dois tabuleiros auxiliares e o mapa. A Meeple Mountain conta que a dois já foi um aperto numa mesa de cerca de 1,2 m por 1,2 m, com tabuleiros sobrando para fora, e que de algumas cadeiras é difícil enxergar o mapa."
+  ],
+  [
+   "Leve",
+   "Turnos de reinício frustram",
+   "O reinício é o relógio da era, mas a Punchboard diz que muitas vezes parece um turno perdido. A Meeple Mountain acrescenta que, quando os outros reiniciam em sequência, a era pode acabar antes de você completar o plano que vinha montando."
+  ],
+  [
+   "Leve",
+   "Sorte ainda pesa",
+   "Mesmo com ideias e foco, um par ruim de dados pode atrasar um plano inteiro. A Meeple Mountain fala em aleatoriedade alta mesmo com as formas de ajuste, e a Punchboard pede que você planeje cada era já contando com algumas rolagens ruins pelo caminho."
+  ],
+  [
+   "Moderada",
+   "Preço alto e pré-venda",
+   "Para a edição da Devir, as ofertas consultadas em 29/10/2026 iam de R$ 774,30 a R$ 849,90 no Pix ou à vista, e a entrega ainda é prevista para o fim de outubro, com possível atraso, segundo a Bravo Jogos. É um investimento grande para quem não conhece Feld."
+  ]
+ ],
+ "jogadores": [
+  [
+   "Sozinho",
+   "Tem modo solo com o autômato V.I.C.I., e o jogo foi indicado ao Golden Geek de solo; há também versão em aplicativo web.",
+   2
+  ],
+  [
+   "2 jogadores",
+   "O melhor número pela enquete do BGG, segundo a BoardMatch: menos espera e um mapa mais fácil de acompanhar.",
+   3
+  ],
+  [
+   "3 jogadores",
+   "Também apontado entre os melhores pela Board Game Bliss, com mais disputa por regiões e dados da reserva.",
+   3
+  ],
+  [
+   "4 jogadores",
+   "Funciona, mas exige mesa muito grande e alonga a partida; a Meeple Mountain diz que o mapa fica difícil de ver.",
+   2
+  ]
+ ],
+ "primeira_partida": "Separe pelo menos quatro horas: foi o que a Meeple Mountain levou na primeira partida. O crítico recomenda que o grupo assista antes a um vídeo de regras, porque a quantidade de módulos assusta na primeira leitura. O que mais confunde é quando reiniciar e como os reinícios encerram a era. Dica prática: deixe o glossário e os livretos de resumo da caixa à mão e, na primeira partida, foque em duas ou três trilhas em vez de tentar tudo.",
+ "edicao_nacional": "A Devir Brasil lança Civolution em português, em pré-venda nas lojas parceiras, com envio previsto para o fim de outubro de 2026 e possibilidade de atraso. Em 29/10/2026, a menor oferta no ComparaJogos era R$ 774,30 no Pix, na iTabuleiros; a Javali Jogos pedia R$ 788,40 à vista e a Bravo Jogos, R$ 849,90. A Devir também anunciou a expansão Carta de Admissão.",
+ "preco_ref": {
+  "faixa": "R$ 774,30 a R$ 849,90",
+  "data": "29/10/2026",
+  "obs": "edição Devir em pré-venda, envio previsto para o fim de outubro; menor valor no Pix (ComparaJogos), maior na Bravo Jogos"
+ },
+ "versoes": "A Carta de Admissão, pequena expansão também anunciada pela Devir, traz três módulos opcionais: fichas de atributo inicial, seis criaturas para domesticar em caçadas e peças de nível 4 para os 15 módulos. Para o solo, o autômato V.I.C.I. tem versão em aplicativo web, que exige a caixa física. Uma versão digital completa do jogo não foi confirmada nas fontes consultadas.",
+ "comparacoes": [
+  [
+   "The Castles of Burgundy",
+   null,
+   "O clássico de Stefan Feld em que dois dados escolhem as ações. Civolution parte da mesma ideia, mas com muito mais módulos, mapa modular e cartas, num jogo bem mais pesado, segundo a Meeple Mountain."
+  ],
+  [
+   "Ark Nova",
+   "ark-nova",
+   "Outro eurogame pesado premiado em que você monta um motor pessoal com cartas em fileiras. Troca os dados por uma régua de ações e a civilização por um zoológico."
+  ],
+  [
+   "Terraforming Mars",
+   "terraforming-mars",
+   "Também venceu o As d'Or Expert e é longo, com muitas cartas e pouca interação direta. É uma boa ponte para quem quer chegar ao peso de Civolution."
+  ]
+ ],
+ "para_quem": [
+  "Gosta de eurogames pesados e de partidas de três horas",
+  "Já jogou e gostou de The Castles of Burgundy",
+  "Prefere planejar o próprio motor a atrapalhar os rivais",
+  "Joga a dois ou a três com frequência",
+  "Quer um jogo que muda a cada partida pelo mapa sorteado"
+ ],
+ "nao_e_para": [
+  "Ainda está começando nos jogos modernos",
+  "Tem mesa pequena",
+  "Quer muita interação direta e confronto",
+  "Não tolera sorte de dados, mesmo com formas de controlar",
+  "Não quer pagar perto de R$ 800 numa pré-venda"
+ ],
+ "selo": "Recomendado",
+ "melhor_para": "estrategia",
+ "veredito": "Civolution entrega o Feld mais ambicioso: dados que escolhem a ação, com várias formas de ajustar o azar, um mapa sorteado que muda cada partida e muitos caminhos para pontuar. A crítica é quase unânime, com nota 9,0 na The Dice Tower e nota máxima na Meeple Mountain, e o jogo venceu o As d'Or Expert 2026. Pesa a duração, que passa de três horas na estreia, a mesa enorme, os reinícios que às vezes parecem turnos perdidos e o preço da pré-venda, perto de R$ 800. Para quem já curte eurogames pesados, vale cada real; para quem está começando, há portas de entrada melhores.",
+ "tagline": "Dois dados, uma divindade e quatro eras para levar seu povo mais longe.",
+ "consulta": "29/10/2026",
+ "fontes": [
+  [
+   "Devir – Civolution",
+   "https://devir.com.br/civolution/",
+   "jogadores, duração, idade, componentes, expansão Carta de Admissão, indicações ao Golden Geek"
+  ],
+  [
+   "Devir – pré-vendas e lançamentos",
+   "https://devir.com.br/pre-vendas-lancamentos/",
+   "lojas parceiras da pré-venda"
+  ],
+  [
+   "Bravo Jogos – Civolution (pré-venda)",
+   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-civolution-p",
+   "preço de pré-venda, envio previsto, editora, idioma, lista de componentes"
+  ],
+  [
+   "ComparaJogos – Civolution",
+   "https://www.comparajogos.com.br/item/civolution",
+   "ofertas em lojas brasileiras e menor preço"
+  ],
+  [
+   "Meeple Mountain – Civolution review",
+   "https://www.meeplemountain.com/reviews/civolution/",
+   "crítica, regras, duração relatada, tamanho da mesa"
+  ],
+  [
+   "Punchboard – Civolution review",
+   "https://punchboard.co.uk/civolution-review/",
+   "crítica, regras, citação"
+  ],
+  [
+   "The Dice Tower – Civolution review",
+   "https://www.dicetower.com/review/civolution-review-its-revolization",
+   "notas de Tom Vasel e Mike DiLisio"
+  ],
+  [
+   "BoardMatch – Civolution (dados do BGG)",
+   "https://boardmatch.app/en/game/400602",
+   "nota BGG, nº de avaliações, peso, melhor número de jogadores"
+  ],
+  [
+   "Board Game Bliss – Civolution",
+   "https://www.boardgamebliss.com/collections/stefan-feld/products/civolution",
+   "peso BGG, melhor número de jogadores, idade"
+  ],
+  [
+   "Meeple Mountain – ficha de Civolution",
+   "https://www.meeplemountain.com/boardgame/civolution/",
+   "aplicativo web do autômato solo V.I.C.I."
+  ],
+  [
+   "Ludopedia – Civolution",
+   "https://ludopedia.com.br/jogo/civolution",
+   "nota e nº de avaliações (via resultado de busca)"
+  ],
+  [
+   "BoardGameWire – As d'Or 2026",
+   "https://boardgamewire.com/?p=6109",
+   "vitória no As d'Or Expert 2026"
+  ],
+  [
+   "Wikipedia – As d'Or",
+   "https://fr.wikipedia.org/wiki/As_d%27Or",
+   "premiação As d'Or 2026"
+  ]
+ ],
+ "legenda": "O jogo mais pesado de Stefan Feld chega em português pela Devir. 🎲🌍\n\nCivolution venceu o As d'Or Expert 2026 e ficou em 3º no Golden Geek de jogo pesado de 2024.\nPares de dados ativam ações num painel que parece árvore tecnológica, num mapa sorteado a cada partida.\nPesa a duração, a mesa enorme e o preço da pré-venda, perto de R$ 800, mas a crítica o chama de melhor Feld.\nVeredito: RECOMENDADO.\n\nVocê já jogou The Castles of Burgundy? Encararia o Feld mais pesado?\nResenha completa no link da bio.\n\n#Civolution #StefanFeld #Devir #JogosDeTabuleiro #BoardGames #Boardgamer #Eurogame #AsDOr #DeepPrintGames #EliteBoardgamers #JogoSolo",
+ "passos": [
+  [
+   "Role seus dados",
+   "Cada jogador tem um estoque pessoal de dados brancos e rosa. No início, e a cada reinício, você rola os seus."
+  ],
+  [
+   "Ative um módulo",
+   "Escolha dois dados brancos com os valores pedidos por um módulo do seu console, encaixe-os e resolva a ação, como mover tribos ou produzir."
+  ],
+  [
+   "Ajuste o azar",
+   "Fichas de ideia mudam um dado em um ponto, o foco vale qualquer número e o planejamento fixa um valor escolhido."
+  ],
+  [
+   "Explore o continente",
+   "Tribos entram em regiões do mapa sorteado, descobrem recursos e locais, levam recursos ao console e erguem fazendas e povoados."
+  ],
+  [
+   "Feche as eras",
+   "Reinícios avançam o relógio; ao fim de cada era o povo come, há eventos e pontuação. Depois da quarta, mais pontos vencem."
+  ]
+ ],
+ "como_resumo": "Combine pares de dados para evoluir seu povo e pontuar mais que todos em quatro eras.",
+ "perfil": [
+  [
+   "Profundidade estratégica",
+   5
+  ],
+  [
+   "Variedade entre partidas",
+   5
+  ],
+  [
+   "Interação entre jogadores",
+   2
+  ],
+  [
+   "Facilidade de ensinar",
+   1
+  ],
+  [
+   "Partida curta",
+   1
+  ],
+  [
+   "Controle sobre a sorte",
+   4
+  ]
+ ]
+}
