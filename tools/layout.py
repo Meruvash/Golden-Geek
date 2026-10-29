@@ -73,6 +73,10 @@ CSS_COMPARTILHAR = (".cpw{position:relative;display:inline-block}"
                     ".lt-b:hover{background:#262a31;color:#fff}.lt-b .ic{width:20px;height:20px}"
                     ".barra-lt .lt-b.curtir{background:none;border:0;color:#e9ecf1;padding:8px 14px}.barra-lt .lt-b.curtir[aria-pressed=true]{color:#ff6b81;background:none}"
                     "@media (max-width:479px){.lt-b span{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}}.lt-b.curtir[aria-pressed=true] .ic{fill:currentColor}"
+                    # botão do grupo do WhatsApp: dourado da marca, só o ícone no celular
+                    ".lt-grupo{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-width:44px;min-height:44px;padding:0 12px;border-radius:999px;"
+                    "background:#e3b23c;color:#14171c;font-size:.9rem;font-weight:800;text-decoration:none}.lt-grupo:hover{background:#f0c44f;color:#14171c}"
+                    ".lt-grupo .ic{width:22px;height:22px}@media (max-width:479px){.lt-grupo{padding:0}.lt-grupo span{display:none}}"
                     ".barra-lt .cp{min-height:44px;padding:8px 16px;font-size:.9rem}"
                     "body.lt-on .voltar-topo,body.lt-on button.sobe{bottom:calc(76px + env(safe-area-inset-bottom))}"
                     "@media print{.barra-lt{display:none}}")
@@ -214,7 +218,8 @@ def barra_leitura(texto="", url="", interacao=True):
     if interacao and _config_interacoes().get("api"):
         extras = (f'<button type="button" class="lt-b curtir" aria-pressed="false" aria-label="Curtir">{icone("coracao")}<b class="n">–</b></button>'
                   f'<a class="lt-b" href="#comentarios">{icone("balao")}<span>Comentários</span></a>')
-    return (f'<div class="barra-lt fora" role="region" aria-label="Ações da página">{extras}{botao_compartilhar(texto, url)}</div>'
+    return (f'<div class="barra-lt fora" role="region" aria-label="Ações da página">{extras}{botao_compartilhar(texto, url)}'
+            f'<a class="lt-grupo" href="{WHATSAPP}" target="_blank" rel="noopener" aria-label="Entrar no grupo do WhatsApp da Elite">{icone("zap")}<span>Grupo</span></a></div>'
             f'<script>{JS_LEITURA}</script>')
 
 
