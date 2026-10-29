@@ -110,7 +110,7 @@ Segue a lógica do crivo das fotos: primeiro eliminatórios, depois pontuação.
 - Já publicada por nós, mesmo vinda de outra fonte (deduplicação).
 - Jogo, editora ou campanha sem relação com tabuleiro moderno (RPG, card game colecionável, videogame), salvo adaptação de jogo de tabuleiro.
 
-**Pontuação de relevância (entra com 5 pontos ou mais; manchete é a maior pontuação do dia; abaixo disso, só pela cota diária)**
+**Pontuação de relevância (ordena as candidatas: saem as 5 maiores do dia; manchete é a maior)**
 
 | Critério | Pontos |
 |---|---|
@@ -123,14 +123,14 @@ Segue a lógica do crivo das fotos: primeiro eliminatórios, depois pontuação.
 | Confirmada por duas fontes independentes | 2 |
 | Evento grande (Essen, Gen Con, Diversão Offline) | 2 |
 
-**Cota diária (29/10/2026, pedido do usuário)**
+**Edição diária (29/10/2026, pedido do usuário)**
 
-O corte de 5 pontos estava deixando dias sem nenhuma notícia. Por isso o dia fecha com **4 notas, nunca menos de 3**:
+O corte de 5 pontos estava deixando dias sem nenhuma notícia. Por isso não há mais nota de corte: **saem 5 notas por dia, as 5 mais bem pontuadas**, independente da nota.
 
-1. Entram todas as candidatas com 5 pontos ou mais (até a meta do dia).
-2. Se não chegarem a 4, completa-se até 4 com as mais bem pontuadas abaixo de 5, independente da nota, marcadas `"cota": true` no `crivo`. A página da nota avisa que ela entrou para completar o dia.
-3. Os eliminatórios continuam valendo para todas: a cota afrouxa a relevância, nunca a fonte primária nem o padrão de texto.
-4. Menos de 3 só se nem 3 candidatas passarem pelos eliminatórios, e o resumo do dia explica.
+1. Toda candidata que passa pelos eliminatórios é pontuada.
+2. Publicam-se as 5 de maior pontuação; a maior é a manchete.
+3. Os eliminatórios e o padrão de texto continuam valendo para todas.
+4. Menos de 5 só se nem 5 candidatas passarem pelos eliminatórios, e o resumo do dia explica.
 
 **Regras de texto**
 1. Título informativo, sem caça-clique: o que aconteceu, com quem.
@@ -185,7 +185,7 @@ O robô de notícias reaproveita o cliente do robô de imagens (`tools/imagens/r
 
 ## 9. Decisões tomadas (28/10/2026)
 
-1. **4 notas por dia, mínimo 3** (alterado em 29/10/2026; antes, 5 em média com corte de 5 pontos). Ver "Cota diária" na seção 4.
+1. **5 notas por dia, as mais bem pontuadas, sem nota de corte** (alterado em 29/10/2026; antes, corte de 5 pontos). Ver "Edição diária" na seção 4.
 2. **Aprovação só da manchete**; as outras 4 saem depois do crivo e do `checar_noticia.py`.
 3. **A Consulta Golden Geek vai para `/consulta/`**, com link no menu.
 4. **Financiamento coletivo entra**, com o mesmo crivo (fonte primária: a página da campanha).
