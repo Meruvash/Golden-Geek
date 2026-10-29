@@ -76,6 +76,20 @@ Regras de texto:
 4. **Exemplo concreto** em Como é jogar e em pelo menos dois pontos fortes ou de atenção.
 5. **Sem frase genérica** ("muito divertido", "arte marcante", "tema fino") sem dizer o quê e por quê.
 
+## Opinião forte (29/10/2026)
+
+Pedido do usuário: a resenha precisa gerar reação e compartilhamento. O tom das partes de opinião é **inteligente, sarcástico e ácido**. Modelo aprovado: `conteudo/vantage.json` ("uma obra-prima para uma pessoa e uma reunião de condomínio para seis"). Referências: Berger e Milkman (emoção de alta ativação se compartilha), *Contágio* (STEPPS), *Ideias que colam* (o inesperado), *Breakthrough Advertising* (ângulo novo para um público que já viu tudo), *Save the Cat* (logline).
+
+**Onde vai o tom:** `titulo_html`, `tagline`, `lede` (a partir da segunda frase), `experiencia`, títulos e textos de `atencao`, `para_quem` / `nao_e_para`, `veredito` e `legenda`. **Onde não vai:** `como_funciona`, `passos`, ficha, prêmios, edição nacional e fontes, que continuam neutros e exatos.
+
+1. **Uma tese por resenha.** Uma frase que o leitor possa repetir ou contestar, de preferência contra o consenso ("superestimado", "solo que finge ser para seis"). Ela aparece no título ou na tagline, abre o veredito e a legenda.
+2. **O sarcasmo nasce do fato.** A graça vem do contraste entre o que a caixa promete e o que a crítica e as regras mostram (até seis jogadores × "não passe de três"; oito anos de desenvolvimento × recomeçar do zero). Todo número e toda crítica citada continuam com fonte.
+3. **Alvo certo.** Ironia contra o jogo, o preço, o marketing, a edição e as decisões da editora. Nunca contra pessoas, autores, editoras como empresa, lojistas ou quem gosta do jogo.
+4. **Justiça na mesma página.** A resenha ácida reconhece o que o jogo faz bem em `funciona`, com o mesmo cuidado. O selo segue as regras de sempre: o tom não muda o selo, e opinião forte não é desculpa para "Não recomendado".
+5. **Frase pronta para compartilhar.** Pelo menos uma frase curta e citável no veredito (capital social: o leitor compartilha para parecer entendido), e a legenda fecha com uma pergunta que provoque resposta.
+6. **Inteligente, não grosseiro.** Nada de palavrão, xingamento ou deboche fácil. Comparações concretas e inesperadas ("reunião de condomínio", "peça de ficção") funcionam melhor que adjetivos.
+7. **Nada inventado para causar.** Se a pesquisa não sustenta a polêmica, o tom fica firme mas sem a tese contrária. A opinião é da Elite Boardgamers e precisa ser defensável.
+
 ## Fotos oficiais na página
 
 Quando a resenha tem fotos aprovadas em `<slug>/fotos/fontes.json` (skill `imagens`) e o jogo foi liberado com `"usar_na_pagina": true` nesse arquivo (depois da revisão das fotos), `build_review.py` monta a página assim (modelo aprovado com Terraforming Mars):
