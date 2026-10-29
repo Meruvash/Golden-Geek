@@ -47,8 +47,10 @@ def periodo(nome, d):
     linhas = [f"*{nome}*: {total['sum']['visits']} visitas, {total['count']} visualizações"]
     if d["paginas"]:
         linhas.append("  Páginas mais lidas: " + "; ".join(f"{p['dimensions']['requestPath']} ({p['count']})" for p in d["paginas"]))
-    if d["origens"]:
-        linhas.append("  De onde veio: " + "; ".join(f"{o['dimensions']['refererHost'] or 'direto/sem origem'} ({o['sum']['visits']})" for o in d["origens"]))
+    # navegação dentro do próprio site não é origem de visita
+    origens = [o for o in d["origens"] if o["dimensions"]["refererHost"] != HOST]
+    if origens:
+        linhas.append("  De onde veio: " + "; ".join(f"{o['dimensions']['refererHost'] or 'direto/sem origem'} ({o['sum']['visits']})" for o in origens))
     if d["aparelhos"]:
         linhas.append("  Aparelhos: " + "; ".join(f"{a['dimensions']['deviceType']} ({a['count']})" for a in d["aparelhos"]))
     return "\n".join(linhas)
