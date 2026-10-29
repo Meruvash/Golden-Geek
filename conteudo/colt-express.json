@@ -91,10 +91,6 @@
   ],
   [
    "Componentes",
-   "Trem de papelão montado em 3D"
-  ],
-  [
-   "Componentes",
    "trem 3D (locomotiva e 6 vagões), 10 peças de cenário, 6 bandidos de madeira, xerife, 18 sacos de dinheiro, 6 joias, 2 maletas, 17 cartas de rodada"
   ],
   [
@@ -102,7 +98,7 @@
    "mais de 450 mil até novembro de 2016, segundo a editora"
   ]
  ],
- "nota_ficha": "Nota do BGG de fonte secundária; o peso diverge entre as fontes e foi omitido.",
+ "nota_ficha": "Nota do BGG de fonte secundária; o peso diverge entre as fontes e foi omitido. Correção em 29/10/2026: o preço de referência passou de R$ 259 (Pix) a R$ 279 para R$ 278 (Pix) a R$ 299, conforme a Caixinha Boardgames.",
  "como_funciona": [
   "O trem de papelão, com locomotiva e vagões, fica montado no centro da mesa, cheio de bolsas de dinheiro, joias e uma maleta guardada pelo xerife. Cada jogador controla um bandido com uma habilidade própria e um baralho de 10 cartas de ação.",
   "A partida tem cinco rodadas, e cada uma começa com uma carta de rodada que diz quantas ações serão jogadas e se algumas entram viradas para baixo, como num túnel. Na fase de planejamento, os jogadores colocam cartas numa pilha comum, uma de cada vez.",
@@ -155,7 +151,7 @@
   [
    "Leve",
    "Fraco com poucos jogadores",
-   "A Board Game Quest aponta que a interação cai com menos gente e que o jogo só brilha de verdade com cinco ou seis jogadores. A dois, perde boa parte do caos que o torna divertido."
+   "A Board Game Quest aponta que, com três ou quatro jogadores, o jogo funciona, mas a interação cai um pouco, e que ele só brilha de verdade com cinco ou seis jogadores."
   ],
   [
    "Leve",
@@ -186,7 +182,7 @@
  "melhor_para": "festa",
  "veredito": "Colt Express é um faroeste leve e caótico, com um trem de verdade sobre a mesa e planos que desmoronam de um jeito engraçado. A regra cabe em duas páginas, a partida dura meia hora e todos interagem o tempo todo, o que explica o Spiel des Jahres e as 450 mil cópias vendidas. Falta controle para quem gosta de planejar, o jogo perde força com poucos jogadores e a edição nacional anda esgotada. Para família e grupos de cinco ou seis, continua um clássico que vale a pena ter na estante.",
  "tagline": "Planeje o assalto e veja tudo dar errado.",
- "consulta": "27/10/2026",
+ "consulta": "29/10/2026",
  "fontes": [
   [
    "Wikipedia – Colt Express",
@@ -387,13 +383,13 @@
   ]
  ],
  "primeira_partida": "Monte o trem antes de chamar o grupo, porque a primeira montagem leva alguns minutos. Explique as ações com o trem na mesa e faça uma rodada de teste com as cartas abertas, mostrando como a ordem da pilha muda tudo. O ponto que mais confunde é a carta virada para baixo nas rodadas de túnel: lembre que ela entra na pilha sem que os outros vejam qual é.",
- "edicao_nacional": "A MeepleBR publicou Colt Express em português, com o trem 3D, os seis bandidos e o conteúdo da caixa original. Em 27/10/2026, as lojas consultadas listavam o jogo entre R$ 259 (no Pix) e R$ 279, mas ele estava esgotado em várias delas, inclusive na loja da editora. Não encontramos a Big Box em português nessas lojas.",
+ "edicao_nacional": "A MeepleBR publicou Colt Express em português, com o trem 3D, os seis bandidos e o conteúdo da caixa original. Em 29/10/2026, a Caixinha Boardgames listava o jogo por R$ 278 no Pix e R$ 299 no preço cheio, mas sem estoque; ele também aparecia esgotado em outras lojas consultadas em 27/10/2026, inclusive na loja da editora. Não encontramos a Big Box em português nessas lojas.",
  "preco_ref": {
-  "faixa": "R$ 259 a R$ 279",
-  "data": "27/10/2026",
-  "obs": "esgotado em várias lojas"
+  "faixa": "R$ 278 (Pix) a R$ 299",
+  "data": "29/10/2026",
+  "obs": "Caixinha Boardgames, esgotado"
  },
- "versoes": "A Big Box de 2022 junta o jogo base com as expansões Horses & Stagecoach, com cavalos e diligência, e Marshal & Prisoners, que leva o jogo a até nove jogadores. Há também a expansão Couriers & Armoured Train, com um segundo trem e partidas em equipe, e o jogo está disponível online no Board Game Arena.",
+ "versoes": "A Big Box de 2022 junta o jogo base com as expansões Horses & Stagecoach, com cavalos e diligência, e Marshal & Prisoners, que leva o jogo a até oito jogadores; só a Big Box completa chega a nove. Há também a expansão Couriers & Armoured Train, com um segundo trem e partidas em equipe, e o jogo está disponível online no Board Game Arena.",
  "comparacoes": [
   [
    "Flip 7",
