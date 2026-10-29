@@ -1,0 +1,17 @@
+# Serviço de interações (curtidas e comentários). Instalação: python3 tools/comentarios/instalar.py
+name = "elite-interacoes"
+main = "src/index.js"
+compatibility_date = "2026-10-01"
+workers_dev = false
+
+[vars]
+ORIGEM = "https://eliteboardgamers.com.br"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "elite-interacoes"
+database_id = "PREENCHIDO_PELO_INSTALADOR"
+
+[[routes]]
+pattern = "api.eliteboardgamers.com.br"
+custom_domain = true

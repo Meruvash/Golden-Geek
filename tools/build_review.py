@@ -16,7 +16,7 @@ from PIL import Image
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import seo  # noqa: E402
 from imagens_resp import srcset  # noqa: E402
-from layout import compartilhar  # noqa: E402
+from layout import compartilhar, interacoes  # noqa: E402
 from layout import CSS_BUSCA, CSS_TRILHA, ICONES, INSTAGRAM, WHATSAPP, cabecalho, icone, rodape, trilha  # noqa: E402,F401
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -308,7 +308,8 @@ def layout_v2(c, premios_bloco, ficha_html, fontes, fotos=None, info_meio=""):
    <p>{e(c["veredito"])}</p>
    <p class="tagline">{e(c["tagline"])}</p>
   </section>
-  <section class="bloco claro cp-bloco">{compartilhar(f"{nome_br(c)}: {c['tagline']} Resenha da Elite Boardgamers", f"{SITE}/{c['slug']}/", f"Conhece alguém que joga {nome_br(c)}? Mande esta resenha.")}</section>"""
+  <section class="bloco claro cp-bloco">{compartilhar(f"{nome_br(c)}: {c['tagline']} Resenha da Elite Boardgamers", f"{SITE}/{c['slug']}/", f"Conhece alguém que joga {nome_br(c)}? Mande esta resenha.")}</section>
+  {interacoes("../", f"/{c['slug']}/", "bloco claro")}"""
     mais = noticias_do_jogo(c) + mais_resenhas(c)
     comunidade = f"""<section class="bloco comunidade"><h2>Gostou da resenha?</h2><p>A Elite Boardgamers publica resenhas de jogos premiados todos os dias. Entre no grupo para conversar sobre jogos e siga no Instagram.</p><div class="acoes"><a class="zap" href="{WHATSAPP}" target="_blank" rel="noopener">{icone("zap", "ic zi")}<span><b>Entrar no grupo do WhatsApp</b></span></a><a class="ig-btn" href="{INSTAGRAM}" target="_blank" rel="noopener">{icone("insta")}<span>Seguir @eliteboardgamers</span></a></div></section>"""
     fontes_bloco = f'<section class="bloco claro fontes" id="fontes"><details class="mais"><summary><h2>Fontes ({len(c["fontes"])})</h2></summary><ul>{fontes}</ul><p class="note">Consulta às fontes em {e(c["consulta"])}.</p></details></section>'

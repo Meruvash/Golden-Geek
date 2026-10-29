@@ -21,7 +21,7 @@ from imagens_resp import miniatura, srcset  # noqa: E402
 from build_sitemap import lastmod_registrado  # noqa: E402
 from build_review import INSTAGRAM, ROOT, SITE, WHATSAPP, e, icone, versao  # noqa: E402
 from og import url_cartao  # noqa: E402
-from layout import compartilhar  # noqa: E402
+from layout import _config_interacoes, compartilhar, interacoes  # noqa: E402
 from layout import CSS_BUSCA, CSS_TRILHA, cabecalho, rodape, trilha  # noqa: E402
 from noticias.checar_noticia import checar_dia, problemas  # noqa: E402
 
@@ -389,6 +389,13 @@ def pagina(titulo, descricao, url, imagem, pre, corpo, tipo="website", head_extr
 """
 
 
+# entra na política editorial quando o serviço de curtidas e comentários estiver instalado
+SECAO_COMENTARIOS = """ <section class="bloco" id="comentarios"><h2>Comentários e curtidas</h2><div class="corpo">
+  <p>Todo comentário passa por moderação antes de aparecer. Uma ferramenta de inteligência artificial faz a primeira leitura com regras públicas: publica os comentários respeitosos sobre jogos, descarta propaganda, golpe, ofensa, discurso de ódio e dados pessoais de outras pessoas, e manda para o responsável editorial tudo o que não for claro. Discordar do site, de uma resenha ou de uma editora, com educação, é bem-vindo.</p>
+  <p>Para comentar pedimos só um nome. O e-mail é opcional, nunca é publicado e só serve para respondermos ou excluirmos o comentário a pedido. Não guardamos o endereço IP: usamos apenas uma assinatura dele, que muda todo dia, para limitar abusos. A curtida é contada uma vez por aparelho, com um identificador aleatório guardado no seu navegador, sem cookies de rastreamento. Quer apagar um comentário seu? Peça pelo Instagram.</p>
+ </div></section>"""
+
+
 def build_politica():
     """Página de política editorial: quem responde pelo site e como notícias e resenhas são feitas."""
     pre = "../"
@@ -423,6 +430,7 @@ def build_politica():
  <section class="bloco"><h2>Medição de visitas</h2><div class="corpo">
   <p>Contamos as visitas com o Cloudflare Web Analytics, que não usa cookies e não identifica quem visita o site. Os números servem só para saber quais páginas são lidas e melhorar o conteúdo.</p>
  </div></section>
+{SECAO_COMENTARIOS if _config_interacoes().get("api") else ""}
  <section class="bloco"><h2>Correções</h2><div class="corpo">
   <p>Encontrou um erro? Mande uma mensagem no Instagram <a href="{INSTAGRAM}" target="_blank" rel="noopener">@eliteboardgamers</a> com o link da página e a fonte da informação correta. Erros confirmados são corrigidos na própria página.</p>
  </div></section>
@@ -708,6 +716,7 @@ def build_nota(n):
  <section class="bloco quem"><div><h2>Interessa a você se…</h2><ul class="ok">{sim}</ul></div>{f'<div><h2>Pense duas vezes se…</h2><ul class="no">{nao}</ul></div>' if nao else ""}</section>
  <section class="bloco veredito {sc}"><h2>Nossa opinião</h2><span class="selo {sc}">{e(n['selo'])}</span><p>{e(n['veredito'])}</p></section>
  <section class="bloco cp-bloco">{compartilhar(texto_cp, url, "Conhece alguém que vai gostar? Mande esta notícia.")}</section>
+ {interacoes(pre, f"/noticias/{n['slug']}/")}
  {f'<section class="bloco"><h2>Jogos citados</h2><div class="jogos">{jogos}</div></section>' if jogos else ""}
  {f'<section class="bloco leia"><h2>Leia também</h2><ul>{leia}</ul></section>' if leia else ""}
  <section class="bloco fontes"><h2>Fontes</h2><ul>{fontes}</ul></section>
