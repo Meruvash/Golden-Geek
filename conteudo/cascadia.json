@@ -40,7 +40,7 @@
    "categoria": "Jogo do Ano leve",
    "colocacao": 1,
    "resultado": "vencedor",
-   "fonte": "https://eliteboardgamers.com.br/",
+   "fonte": "https://opinionatedgamers.com/2022/05/03/ark-nova-the-crew-and-cascadia-win-golden-geeks/",
    "rotulo": "Vencedor"
   }
  ],
@@ -98,7 +98,7 @@
    "85 peças de habitat, 5 peças iniciais, 100 fichas de madeira de animais, 25 fichas de pinha, 21 cartas de pontuação"
   ]
  ],
- "nota_ficha": "Nota e peso do BGG obtidos por busca em fonte secundária.",
+ "nota_ficha": "Nota e peso do BGG obtidos por busca em fonte secundária. Correção em 29/10/2026: a faixa de preço passou de R$ 296 a R$ 330 para R$ 261 a R$ 330, conforme o ComparaJogos e a Bravo Jogos.",
  "como_funciona": [
   "Cada jogador começa com uma peça inicial de três habitats. No centro da mesa ficam quatro pares, cada um com uma peça hexagonal de habitat e uma ficha de madeira de animal. Os habitats são cinco: montanha, floresta, campo, pântano e rio.",
   "Na sua vez, você escolhe um dos quatro pares, encaixa a peça ao lado das que já tem e coloca o animal numa peça que mostre aquele bicho. Cada peça recebe um único animal, e as peças de habitat único dão uma ficha de pinha quando recebem o animal certo.",
@@ -121,7 +121,7 @@
   ],
   [
    "Preparação quase instantânea",
-   "Basta separar as peças, encher o saco de fichas e sortear as cartas de objetivo. Uma resenha no BGG descreve a preparação como quase inexistente, o que faz Cascadia sair da estante com facilidade numa noite de semana."
+   "Basta separar as peças, encher o saco de fichas e sortear as cartas de objetivo. A preparação é curta, o que faz Cascadia sair da estante com facilidade numa noite de semana."
   ],
   [
    "Bom para várias idades",
@@ -177,7 +177,7 @@
  "melhor_para": "entrada",
  "veredito": "Cascadia é um quebra-cabeça relaxante, bonito e muito rejogável: a regra cabe em poucos minutos, a preparação é quase instantânea e as cartas de objetivo mudam a estratégia a cada partida. O modo solo é premiado e a variante família abre espaço para crianças. Quase não há interação e a sorte nos pares às vezes atrapalha, então quem gosta de disputa direta vai achar morno. Para família, casal ou quem joga sozinho, por cerca de R$ 300, é compra certa e um dos melhores jogos leves da sua geração.",
  "tagline": "Um quebra-cabeça de natureza que cabe em 30 minutos.",
- "consulta": "27/10/2026",
+ "consulta": "29/10/2026",
  "fontes": [
   [
    "Wikipedia – Cascadia",
@@ -200,9 +200,14 @@
    "componentes"
   ],
   [
-   "BGG – Board Game Breakdown",
-   "https://boardgamegeek.com/thread/2900971/board-game-breakdown-cascadia-in-depth-review",
-   "preparação"
+   "Opinionated Gamers – Ark Nova, The Crew, and Cascadia win Golden Geeks",
+   "https://opinionatedgamers.com/2022/05/03/ark-nova-the-crew-and-cascadia-win-golden-geeks/",
+   "Golden Geek de Jogo do Ano leve 2021"
+  ],
+  [
+   "ComparaJogos – Cascadia",
+   "https://www.comparajogos.com.br/item/cascadia",
+   "preço de referência (a partir de R$ 261 no Pix)"
   ],
   [
    "Bravo Jogos – Cascadia (Grok)",
@@ -378,10 +383,10 @@
   ]
  ],
  "primeira_partida": "Dá para explicar Cascadia em poucos minutos, e a Meeple Mountain conta que uma criança de 7 anos venceu a primeira partida. Para a estreia, use a carta de variante família, que simplifica os objetivos, e lembre o grupo de que cada peça recebe um único animal. O ponto que mais confunde é a ficha de pinha: vale mostrar logo no começo como ela separa peça e animal.",
- "edicao_nacional": "A Grok Games lançou Cascadia em português em agosto de 2022, com o conteúdo da caixa original: 85 peças de habitat, 100 fichas de madeira de animais e 21 cartas de pontuação. Em 27/10/2026, as lojas consultadas vendiam o jogo entre R$ 296 e R$ 330. A caixa nacional indica 14 anos ou mais, embora a regra seja leve.",
+ "edicao_nacional": "A Grok Games lançou Cascadia em português em agosto de 2022, com o conteúdo da caixa original: 85 peças de habitat, 100 fichas de madeira de animais e 21 cartas de pontuação. Em 29/10/2026, o ComparaJogos listava a edição da Grok a partir de R$ 261 no Pix, e a Bravo Jogos vendia por R$ 329,99: faixa de R$ 261 a R$ 330. A caixa nacional indica 14 anos ou mais, embora a regra seja leve.",
  "preco_ref": {
-  "faixa": "R$ 296 a R$ 330",
-  "data": "27/10/2026",
+  "faixa": "R$ 261 a R$ 330",
+  "data": "29/10/2026",
   "obs": "edição da Grok em português"
  },
  "versoes": "A versão digital oficial, desenvolvida pela Dire Wolf, chegou à Steam em fevereiro de 2025, mas sem textos em português. Nas lojas brasileiras consultadas, a edição da Grok aparece sozinha, sem expansões em português à venda.",

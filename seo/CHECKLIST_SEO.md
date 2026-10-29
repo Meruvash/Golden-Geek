@@ -33,8 +33,17 @@
 - [x] Data de publicação visível nas resenhas
 - [x] Links internos: notícias ↔ resenhas do mesmo jogo, "Leia também" entre notícias
 
+## Arquitetura editorial
+- [x] Selo das resenhas: nível + perfil "Melhor para" (critérios no `PADRAO_EDITORIAL.md`; 🤖 `checar_roteiro.py`)
+- [x] Busca com filtros em `/resenhas/`, em botão + gaveta (os cartões aparecem na 1ª tela)
+- [x] Guia `/jogos-de-tabuleiro/` e 8 guias "Melhores jogos para…" (🤖 no sitemap e na verificação; mínimo de 3 jogos)
+- [x] Lançamentos no Brasil (`/lancamentos/`)
+- [ ] Página de premiações (`/premios/`)
+- [ ] Comparativos ("X ou Y?"), só com dois jogos resenhados e revisão editorial
+- [ ] Editoras e "campanha e legacy": quando houver jogos suficientes
+
 ## Performance
-- [x] Imagens responsivas (`srcset`) nas imagens principais
+- [x] Imagens responsivas (`srcset`) nas imagens principais e também abaixo da dobra (infográficos, fotos, capas pequenas)
 - [x] Fonte própria com `preload` e `font-display: swap`; CSS inline; zero JS externo
 - [x] CLS 0 nas páginas medidas
 - [ ] Confirmar LCP ≤ 2,5 s no p75 com dados reais (Search Console → Core Web Vitals)

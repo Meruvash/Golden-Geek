@@ -26,6 +26,7 @@ AUSENCIA = re.compile(r"(\bsem\b|não há|não tem|não existe|nenhuma|não enco
 CATEGORICO = re.compile(r"((não há|não tem|não existe|ainda não há|nenhuma)[^.;:]{0,40}" + _ED +
                         r"|\bsem (edição|versão) (nacional|brasileira|em português)\b(?! (encontrada|confirmada)))", re.I)
 RESULTADOS = {"edição nacional", "não encontrada"}
+POR_DIA, DESDE = 5, "2026-10-29"  # notas publicadas por dia, as de maior pontuação (ver PLANO_NOTICIAS.md)
 
 
 def textos(n):
@@ -88,9 +89,26 @@ def problemas(n):
         erros.append("para_quem: 1 a 3 itens; nao_e_para: até 3")
     if len(n.get("fontes", [])) < 2 or any(not f.get("url") or not f.get("data") for f in n.get("fontes", [])):
         erros.append("fontes: pelo menos 2, com link e data")
-    if n.get("crivo", {}).get("pontos", 0) < 5:
-        erros.append("crivo abaixo de 5 pontos")
+    if not isinstance(n.get("crivo", {}).get("pontos"), int):
+        erros.append("crivo sem pontos")
     return erros + checar_edicao_nacional(n)
+
+
+def checar_dia(ns):
+    """Edição diária (pedido do usuário em 29/10/2026): saem as POR_DIA notas mais bem pontuadas do dia,
+    seja qual for a nota; a manchete é a de maior pontuação. Vale a partir de DESDE."""
+    erros = []
+    por_dia = {}
+    for n in ns:
+        if n.get("data", "") >= DESDE:
+            por_dia.setdefault(n["data"], []).append(n)
+    for dia, lista in por_dia.items():
+        if len(lista) > POR_DIA:
+            erros.append(f"{dia}: {len(lista)} notas; o dia publica só as {POR_DIA} mais bem pontuadas")
+        pts = [n["crivo"].get("pontos", 0) for n in lista]
+        if any(n.get("manchete") and n["crivo"].get("pontos", 0) < max(pts) for n in lista):
+            erros.append(f"{dia}: a manchete precisa ser a nota de maior pontuação do dia")
+    return erros
 
 
 if __name__ == "__main__":
@@ -100,4 +118,8 @@ if __name__ == "__main__":
         e = problemas(json.loads(a.read_text(encoding="utf-8")))
         print(("✅ " if not e else "❌ ") + a.name + ("" if not e else "\n   - " + "\n   - ".join(e)))
         ruim += bool(e)
+    todas = [json.loads(p.read_text(encoding="utf-8")) for p in sorted((ROOT / "conteudo" / "noticias").glob("*.json"))]
+    for e in checar_dia(todas):
+        print("❌ " + e)
+        ruim += 1
     sys.exit(1 if ruim else 0)

@@ -21,7 +21,7 @@ from build_sitemap import lastmod_registrado  # noqa: E402
 from build_review import INSTAGRAM, ROOT, SITE, WHATSAPP, e, icone, versao  # noqa: E402
 from og import url_cartao  # noqa: E402
 from layout import CSS_BUSCA, CSS_TRILHA, cabecalho, rodape, trilha  # noqa: E402
-from noticias.checar_noticia import problemas  # noqa: E402
+from noticias.checar_noticia import checar_dia, problemas  # noqa: E402
 
 MESES = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"]
 SELO_CLASSE = {"Vale a compra": "compra", "Vale acompanhar": "acompanhar", "Para fãs do jogo base": "fas", "Com ressalvas": "ressalvas", "Informativo": "info"}
@@ -64,6 +64,8 @@ def notas():
     ruins = {n["slug"]: problemas(n) for n in ns if problemas(n)}
     if ruins:
         sys.exit("Notícias fora do padrão (rode tools/noticias/checar_noticia.py): " + ", ".join(ruins))
+    if checar_dia(ns):
+        sys.exit("Edição do dia: " + "; ".join(checar_dia(ns)))
     # mais recentes primeiro (dia e hora de publicação); empate, as mais pontuadas no crivo
     return sorted(ns, key=lambda n: (n["data"], datetime.fromisoformat(n["publicado_em"]).timestamp(), n["crivo"]["pontos"]), reverse=True)
 
@@ -398,7 +400,7 @@ def build_politica():
  </div></section>
  <section class="bloco"><h2>Como escolhemos as notícias</h2><div class="corpo">
   <p>Toda notícia passa por um crivo editorial. Fica de fora o que não tem fonte primária (boato, vazamento ou "fontes dizem"), conteúdo pago ou release sem fato novo, notícia atrasada e assunto sem relação com tabuleiro moderno.</p>
-  <p>O que passa recebe pontos por relevância para quem joga no Brasil, como lançamento confirmado no país, prêmio importante ou confirmação por duas fontes independentes. Só entra com 5 pontos ou mais, e cada notícia mostra no fim por que entrou.</p>
+  <p>O que passa recebe pontos por relevância para quem joga no Brasil, como lançamento confirmado no país, prêmio importante ou confirmação por duas fontes independentes. Publicamos 5 notícias por dia e queremos que todas tenham 5 pontos ou mais. Quando não chegam a cinco, pesquisamos de novo em outras fontes, primeiro nas brasileiras e depois em mais uma leva de fontes diferentes. Só depois dessas três buscas completamos o dia com as mais bem pontuadas entre as que passaram pelas eliminatórias. A de maior pontuação vira a manchete, e cada notícia mostra no fim por que entrou.</p>
  </div></section>
  <section class="bloco" id="destaques"><h2>Destaques da página inicial</h2><div class="corpo">
   <p>O bloco Destaques reúne os jogos mais citados nas nossas notícias dos últimos 7 dias, cada um com o link de uma notícia sobre ele. Não é um ranking de acessos nem de vendas: o site não usa dados de visitas para montar essa lista.</p>
@@ -582,7 +584,7 @@ def build_home():
         if not alvo_n or base not in norm(alvo_n["titulo"]):
             sys.exit(f"Destaques: '{j['nome']}' leva a {slug}, que não trata do jogo no título")
     alta = "".join(
-        f'<li><a href="{j["link"]}"><img src="{capa_jogo(pre, j["id_ludopedia"])}" width="44" height="44" alt="" loading="lazy"><div><b>{e(j["nome"])}</b><span>{e(j["motivo"])}</span></div></a></li>'
+        f'<li><a href="{j["link"]}"><img src="{miniatura(ROOT / "noticias" / "capas" / f'{j["id_ludopedia"]}.jpg', pre, 96)}" width="44" height="44" alt="" loading="lazy"><div><b>{e(j["nome"])}</b><span>{e(j["motivo"])}</span></div></a></li>'
         for j in home["em_alta"]
     )
     def alvo(item):
@@ -597,7 +599,7 @@ def build_home():
     mes = mes_chegando()
     rotulo, jogos = lancamentos(mes)
     capas = "".join(
-        f'<li><a href="lancamentos/#j{j["id_jogo"]}"><img src="{capa_jogo(pre, j["id_jogo"])}" width="132" height="140" alt="" loading="lazy">'
+        f'<li><a href="lancamentos/#j{j["id_jogo"]}"><img src="{miniatura(ROOT / "noticias" / "capas" / f'{j["id_jogo"]}.jpg', pre, 280)}" width="132" height="140" alt="" loading="lazy">'
         f'<span class="st {j["status"]["slug"]}">{e(j["status"]["label"])}</span><b>{e(j["nome"].strip())}</b><span>{e((j.get("editora") or {}).get("nome", ""))}</span></a></li>'
         for j in jogos
     ) + f'<li class="todos"><a href="lancamentos/#{mes}"><span class="mais">Ver os {len(jogos)} de {e(rotulo.split(" de ")[0].lower())} e todo o calendário</span></a></li>'
@@ -628,7 +630,7 @@ def build_home():
  </div>
 </main>
 {rodape(pre)}"""
-    titulo = "Elite Boardgamers: notícias de jogos de tabuleiro"
+    titulo = "Elite Boardgamers: notícias e resenhas de jogos de tabuleiro"
     descr = f"{m['titulo']}. Notícias de jogos de tabuleiro com fonte e data, lançamentos no Brasil e resenhas de jogos premiados."
     # 404: servida pelo GitHub Pages em qualquer profundidade, por isso os caminhos são absolutos ("/")
     corpo_404 = f"""{cabecalho("/", "")}
@@ -692,7 +694,7 @@ def build_nota(n):
  {f'<section class="bloco"><h2>Jogos citados</h2><div class="jogos">{jogos}</div></section>' if jogos else ""}
  {f'<section class="bloco leia"><h2>Leia também</h2><ul>{leia}</ul></section>' if leia else ""}
  <section class="bloco fontes"><h2>Fontes</h2><ul>{fontes}</ul></section>
- <section class="bloco crivo"><h2>Por que esta notícia entrou</h2><p><b>{n['crivo']['pontos']} pontos no crivo editorial</b> (mínimo 5): {e("; ".join(n['crivo']['criterios']))}.</p></section>
+ <section class="bloco crivo"><h2>Por que esta notícia entrou</h2><p><b>{n['crivo']['pontos']} pontos no crivo editorial</b>{":" if n['crivo']['criterios'] else ""} {e("; ".join(n['crivo']['criterios']) or "(nenhum critério de pontuação; entrou entre as 5 mais bem pontuadas do dia, depois das três buscas)")}.</p></section>
 </div></main>
 {rodape(pre)}"""
     out = ROOT / "noticias" / n["slug"] / "index.html"
@@ -716,6 +718,11 @@ if __name__ == "__main__":
     for n in build_home():
         build_nota(n)
     print("ok index.html e", len(notas()), "notícias")
+    # guias "Melhores jogos para…" antes das resenhas: o balão do perfil só liga para guia que existe
+    import build_guias
+    print("ok guias:", len(build_guias.build()), "páginas em /jogos-de-tabuleiro/")
+    import build_premios
+    print("ok", build_premios.build())
     # resenhas mostram "Notícias sobre este jogo": regera as publicadas para incluir notas novas
     import build_review
     for pub in json.loads((ROOT / "pauta.json").read_text(encoding="utf-8"))["publicadas"]:

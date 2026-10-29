@@ -88,9 +88,18 @@ def nivel(c):
     return f'{c["selo"]}: {c["ressalva"]}' if c.get("ressalva") else c["selo"]
 
 
-def selo_perfil(c, prefixo=True):
-    """Balão do perfil, com a cor do nível de recomendação."""
-    return f'<span class="selo {selo_class(c["selo"])}">{e(perfil_rotulo(c, longo=prefixo))}</span>'
+# perfil → página-guia em /jogos-de-tabuleiro/ (tools/build_guias.py)
+GUIA_PERFIL = {"entrada": "para-iniciantes", "dupla": "para-dois-jogadores", "festa": "para-festa-e-grupos", "cooperativo": "cooperativos",
+               "solo": "para-jogar-sozinho", "proximo": "peso-medio", "estrategia": "estrategia", "campanha": "campanha-e-legacy", "tema": "tematicos"}
+
+
+def selo_perfil(c, prefixo=True, link=None):
+    """Balão do perfil, com a cor do nível de recomendação; com link=prefixo, leva ao guia do perfil se ele existir."""
+    rot = e(perfil_rotulo(c, longo=prefixo))
+    guia = GUIA_PERFIL.get(c.get("melhor_para"))
+    if link and guia and (ROOT / "jogos-de-tabuleiro" / guia / "index.html").exists():
+        return f'<a class="selo {selo_class(c["selo"])} selo-link" href="{link}jogos-de-tabuleiro/{guia}/">{rot} <span aria-hidden="true">→</span></a>'
+    return f'<span class="selo {selo_class(c["selo"])}">{rot}</span>'
 
 
 NIVEIS = {3: "Ótimo", 2: "Bom", 1: "Fraco"}
@@ -131,7 +140,7 @@ def mais_resenhas(c, n=6):
             continue
         o = json.loads((ROOT / "conteudo" / f"{s}.json").read_text(encoding="utf-8"))
         cards.append(
-            f'<li><a href="../{s}/"><img src="{capa_src(s)}" width="800" height="800" alt="" loading="lazy">'
+            f'<li><a href="../{s}/"><img src="{capa_src(s)}" srcset="{srcset(ROOT / s / "capa.jpg", "../", (400,))}" sizes="(min-width: 860px) 230px, 45vw" width="800" height="800" alt="" loading="lazy">'
             f'<b>{e(o["jogo"])}</b>{selo_perfil(o, prefixo=False)}</a></li>'
         )
         if len(cards) == n:
@@ -196,8 +205,9 @@ def capa_da_foto(slug, f):
 
 
 def foto_html(c, f, classe="foto", lazy=True):
-    # só a foto do topo (a imagem LCP) ganha variantes menores; as de baixo já carregam sob demanda
-    resp = "" if lazy else f' srcset="{srcset(ROOT / c["slug"] / f["arquivo"], "../")}" sizes="(min-width: 860px) 420px, calc(100vw - 32px)"'
+    # variantes menores em todas as fotos: a do topo é a imagem LCP; as de baixo pesam no plano de dados do celular
+    tam = "(min-width: 860px) 420px, calc(100vw - 32px)" if not lazy else "(min-width: 860px) 700px, calc(100vw - 32px)"
+    resp = f' srcset="{srcset(ROOT / c["slug"] / f["arquivo"], "../")}" sizes="{tam}"'
     return (f'<figure class="{classe}"><img src="{e(f["arquivo"])}"{resp} width="{f["largura"]}" height="{f["altura"]}" '
             f'alt="{e(c["jogo"])}: {FOTO_DESC.get(f["tipo"], f["tipo"])}"{" loading=\"lazy\"" if lazy else " fetchpriority=\"high\""}>'
             f'<figcaption>{e(f["credito"])}</figcaption></figure>')
@@ -283,7 +293,7 @@ def layout_v2(c, premios_bloco, ficha_html, fontes, fotos=None, info_meio=""):
    <details class="mais dobra" open><summary><h2>Expansões e versões</h2></summary><p>{e(c.get("versoes", ""))}</p></details>
   </section>"""
     cards = "".join(
-        f'<li><a class="cc" href="../{sl}/"><img src="{capa_src(sl)}" width="800" height="800" alt="" loading="lazy"><span><b>{e(j)}</b><span>{e(x)}</span><span class="vr">Ler a resenha →</span></span></a></li>'
+        f'<li><a class="cc" href="../{sl}/"><img src="{capa_src(sl)}" srcset="{srcset(ROOT / sl / "capa.jpg", "../", (400,))}" sizes="(min-width: 860px) 230px, 45vw" width="800" height="800" alt="" loading="lazy"><span><b>{e(j)}</b><span>{e(x)}</span><span class="vr">Ler a resenha →</span></span></a></li>'
         if sl else f'<li><div class="cc"><span class="cc-ph" aria-hidden="true">{e(j[0])}</span><span><b>{e(j)}</b><span>{e(x)}</span></span></div></li>'
         for j, sl, x in c.get("comparacoes", [])
     )
@@ -455,8 +465,10 @@ def build(c):
   <section class="bloco claro" id="ficha"><h2>Ficha técnica</h2><dl>{ficha_html}</dl><p class="note">{e(c["nota_ficha"])}</p></section>
  </aside>
 </main>"""
+    info_arq = ROOT / c["slug"] / "infografico.webp"
+    info_ss = f' srcset="{srcset(info_arq, "../")}" sizes="(min-width: 860px) 520px, calc(100vw - 32px)"' if info_arq.exists() else ""
     info_fig = f"""<figure class="capa" id="info">
-  <a href="infografico.webp" target="_blank" rel="noopener"><img src="infografico.webp" width="{larg}" height="{alt}" alt="{e(c["alt"])}"{{carga}}></a>
+  <a href="infografico.webp" target="_blank" rel="noopener"><img src="infografico.webp"{info_ss} width="{larg}" height="{alt}" alt="{e(c["alt"])}"{{carga}}></a>
   <figcaption>Toque para ver o infográfico em tamanho cheio.</figcaption>
   <div class="post"><button type="button" class="post-btn" id="b-salvar">{icone("salvar")}Salvar na galeria</button>{legenda_btn}</div>
   <p class="post-st" id="salvar-st" role="status"></p>
@@ -575,6 +587,7 @@ h1{{font-size:clamp(2rem,7vw,3.1rem);line-height:1.05;font-weight:800;letter-spa
 .selo{{font-weight:800;font-size:.9rem;border-radius:999px;padding:3px 12px;color:#fff;background:var(--ok)}}
 .selo.publico{{background:var(--warn)}}.selo.nao{{background:var(--no)}}
 .veredito p{{font-weight:600}}
+.selo-link{{text-decoration:none}}.selo-link:hover{{filter:brightness(1.12);text-decoration:underline;text-underline-offset:3px}}
 .nivel{{flex-basis:100%;font-size:.86rem;font-weight:700;color:var(--ok-ink)}}.nivel.publico{{color:var(--warn-ink)}}.nivel.nao{{color:var(--no-ink)}}
 .nivel::before{{content:"✓ "}}.nivel.publico::before{{content:"! "}}.nivel.nao::before{{content:"✕ "}}
 .r30 .nivel{{color:#157a43;margin-top:6px}}.r30 .nivel.publico{{color:#8a5200}}.r30 .nivel.nao{{color:#a3223a}}
@@ -756,7 +769,7 @@ footer a{{color:var(--bar-ink)}}
    <div class="nota-box">{nota_html}</div>
    <p class="linha">{e(linha)}</p>
   </div>
-  <div class="veredito">{selo_perfil(c)}<p>{e(c["tagline"])}</p><p class="nivel {selo_class(c["selo"])}">{e(nivel(c))}</p></div>
+  <div class="veredito">{selo_perfil(c, link="../")}<p>{e(c["tagline"])}</p><p class="nivel {selo_class(c["selo"])}">{e(nivel(c))}</p></div>
   <ul class="regua">{regua_html}</ul>
   <p class="lede">{e(c["lede"])}</p>
   {pub_html}

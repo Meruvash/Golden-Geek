@@ -48,6 +48,11 @@ if __name__ == "__main__":
     sys.path.insert(0, str(Path(__file__).resolve().parent))
     import og
     print("ok cartões de prévia: %d refeitos de %d" % og.gerar())
+    # guias "Melhores jogos para…" antes das resenhas: o balão do perfil só liga para guia que existe
+    import build_guias
+    print("ok guias:", len(build_guias.build()), "páginas em /jogos-de-tabuleiro/")
+    import build_premios
+    print("ok", build_premios.build())
     import build_lista
     (ROOT / "resenhas" / "index.html").write_text(build_lista.build(), encoding="utf-8")
     print("ok resenhas/index.html")

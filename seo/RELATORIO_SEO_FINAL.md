@@ -61,9 +61,21 @@ Todas as mudanças estão na `main` (no ar) e foram feitas nos **geradores** (`t
 - Links internos: 8 notícias passaram a ligar para resenhas citadas; "Notícias sobre <jogo>" nas resenhas; "Leia também" nas notícias.
 - Imagem de compartilhamento da consulta hospedada no site.
 
+## 29/10/2026
+
+| Entrega | Evidência |
+|---|---|
+| Selo das resenhas dividido em **nível** (Recomendado / com ressalva / Não recomendado) e **perfil "Melhor para"** (9 perfis com critério) | `melhor_para`, `ressalva` nos JSONs; `checar_roteiro.py` exige os dois e cobra ressalva com ponto grave ou preço acima de R$ 800 |
+| Busca com filtros em `/resenhas/` (jogadores e melhor contagem, duração, complexidade, perfil, estilo, mecânica, prêmio, idade, preço, solo, português), em botão + gaveta | dados de `tools/filtros_resenha.py`; teste no ar: 1º cartão visível na 1ª tela do celular; sem JS a lista segue completa |
+| Guia `/jogos-de-tabuleiro/` + 8 guias "Melhores jogos para…" | `tools/build_guias.py`; critério visível em cada página; guia com menos de 3 jogos não é publicado (campanha e legacy: 2); validator.schema.org 0 erros |
+| Links para os guias | rodapé comum (`tools/layout.py`), topo de `/resenhas/`, balão "Melhor para" de cada resenha |
+| Imagens leves abaixo da dobra (infográficos, fotos, capas pequenas) | lendo a página inteira num Pixel 5: home 1.647 → 861 KB; Wingspan 2.225 → 1.901 KB; Cascadia 2.708 → 2.130 KB |
+| Verificação noturna sem falso alarme na página `/lancamentos/` | `verificar_site.py` ignora modelos de link `${…}` do JavaScript |
+
 ## Pendências que dependem de acesso externo ou de decisão
 
 1. **Bing Webmaster Tools:** importar do Search Console (o Search Console já está feito).
 2. **Dados reais de Core Web Vitals:** aguardar tráfego e acompanhar no Search Console.
 3. **Revisar os títulos "vale a pena"** com dados do Search Console em 4 a 6 semanas.
+4. **Links de outros sites:** divulgar a Consulta Golden Geek e os guias (grupos, Ludopedia, editoras). É o que mais pesa para "jogos de tabuleiro" e "board game".
 5. **Logs de robôs:** o GitHub Pages não fornece. Só com um CDN próprio na frente (mudança de infraestrutura, a decidir).

@@ -1,6 +1,12 @@
 {
- "edicao": "2026-10-28",
+ "edicao": "2026-10-29",
  "em_alta": [
+  {
+   "nome": "Looot",
+   "id_ludopedia": 61866,
+   "motivo": "Indicado ao Kennerspiel 2025, anunciado pela Devir",
+   "link": "noticias/devir-looot-e-through-the-desert/"
+  },
   {
    "nome": "Santuário",
    "id_ludopedia": 78727,
@@ -14,16 +20,10 @@
    "link": "noticias/devir-civolution-e-formigas-pre-venda/"
   },
   {
-   "nome": "Duna: Imperium – Linhagens",
-   "id_ludopedia": 69009,
-   "motivo": "Chegou às lojas em outubro",
-   "link": "noticias/galapagos-lanca-duna-linhagens-vantage-harmonies-pulsar/"
-  },
-  {
-   "nome": "Gaudí",
-   "id_ludopedia": 83431,
-   "motivo": "Em pré-venda pela Devir",
-   "link": "noticias/devir-gaudi-e-catan-jogo-de-cartas-novembro/"
+   "nome": "Caper: Europe",
+   "id_ludopedia": 30558,
+   "motivo": "Chegou às lojas pela Galápagos",
+   "link": "noticias/galapagos-azul-kids-caper-europe-nas-lojas/"
   },
   {
    "nome": "Vantage",

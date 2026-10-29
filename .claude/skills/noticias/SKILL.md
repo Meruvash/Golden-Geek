@@ -1,24 +1,30 @@
 ---
 name: noticias
-description: Monta a edição diária de notícias da página inicial da Elite Boardgamers — coleta (feeds, Bluesky, Ludopedia), crivo editorial, 5 notas no padrão de notícias (PADRAO_EDITORIAL.md), atualização dos blocos e publicação, tudo no ar sem esperar aprovação (inclusive a manchete). Use quando pedirem "/noticias", "edição do dia", "notícias de hoje" ou quando a tarefa agendada diária disparar.
+description: Monta a edição diária de notícias da página inicial da Elite Boardgamers — coleta (feeds, Bluesky, Ludopedia), crivo editorial, 5 notas por dia (meta de 5 pontos ou mais) no padrão de notícias (PADRAO_EDITORIAL.md), atualização dos blocos e publicação, tudo no ar sem esperar aprovação (inclusive a manchete). Se ainda faltarem notas de 5 pontos, faz uma segunda rodada em fontes nacionais e uma terceira em outras fontes antes de completar com as mais bem pontuadas. Use quando pedirem "/noticias", "edição do dia", "notícias de hoje" ou quando a tarefa agendada diária disparar.
 ---
 
 # Edição diária de notícias
 
-Meta: **5 notas por dia**, todas com 5 pontos ou mais no crivo (PLANO_NOTICIAS.md). Melhor publicar 3 boas do que 5 fracas: se só 3 passarem, publique 3 e diga isso no resumo. **Desde 28/10/2026 tudo sai direto, manchete inclusive** (pedido do usuário): ninguém aprova nada. A segurança vem das checagens e da verificação das 22h (skill `verificacao`), que corrige sozinha o que estiver errado.
+Meta: **5 notas por dia** (pedido do usuário em 29/10/2026; PLANO_NOTICIAS.md, "Edição diária"). O objetivo continua sendo 5 notas com **5 pontos ou mais** no crivo; para isso a pesquisa tem até **três rodadas** (seção 1). Só depois da terceira rodada, se ainda faltarem notas de 5 pontos, o dia fecha com as 5 mais bem pontuadas, independente da nota. Os eliminatórios (fonte primária, sem conteúdo pago, dentro do prazo, sem repetir nota, tabuleiro moderno) e o padrão das notícias valem sempre. **Desde 28/10/2026 tudo sai direto, manchete inclusive** (pedido do usuário): ninguém aprova nada. A segurança vem das checagens e da verificação das 22h (skill `verificacao`), que corrige sozinha o que estiver errado.
 
-## 1. Coletar
+## 1. Coletar, em até três rodadas
 
-`python3 tools/noticias/coletar.py --dias 2` (use `--dias 4` na segunda-feira). Lê os feeds liberados e os perfis do Bluesky de `tools/noticias/fontes.json`, atualiza `conteudo/lancamentos/` pela API da Ludopedia (`LUDOPEDIA_TOKEN` no ambiente; sem ele, avise no resumo) e grava `.cache/noticias/<data>.md` com as candidatas já ordenadas pelo pré-crivo e as eliminadas (conteúdo pago, fora do tabuleiro, já publicadas).
+Depois de cada rodada, pontue as candidatas novas (seção 2, passos 1 a 3). Quando houver **5 notas com 5 pontos ou mais**, pare e vá para a escolha. Se não houver, faça a rodada seguinte. Cada rodada usa fontes que as anteriores não usaram.
 
-O pré-crivo só ordena. Leia também as fontes de leitura manual listadas no fim do relatório quando der (WebSearch e WebFetch respeitando o que os sites permitem), principalmente nas semanas de Spoiler Fest da Galápagos e de feiras.
+**Rodada 1: fontes automáticas.** `python3 tools/noticias/coletar.py --dias 2` (use `--dias 4` na segunda-feira). Lê os feeds liberados e os perfis do Bluesky de `tools/noticias/fontes.json`, atualiza `conteudo/lancamentos/` pela API da Ludopedia (`LUDOPEDIA_TOKEN` no ambiente; sem ele, avise no resumo) e grava `.cache/noticias/<data>.md` com as candidatas já ordenadas pelo pré-crivo e as eliminadas (conteúdo pago, fora do tabuleiro, já publicadas). O pré-crivo só ordena.
+
+**Rodada 2: fontes nacionais.** Preferência para o Brasil (PLANO_NOTICIAS.md, "Fontes nacionais"): Ludopedia (LudoNews, "Rodada da semana nas editoras nacionais" e o calendário de lançamentos, procurando lançamento novo ou mudança de situação), Compara Jogos ("Estação de Notícias"), as páginas de lançamentos e pré-venda das editoras (Galápagos e o Spoiler Board, Devir, Grok, MeepleBR, Conclave, PaperGames, Ludens Spirit, Calamity, Bucaneiros), financiamentos nacionais no Catarse, Drops de Jogos, Poltrona Nerd e a agenda de eventos (Diversão Offline). Complete com WebSearch em português ("jogo de tabuleiro pré-venda", "lançamento jogo de tabuleiro <mês> <ano>", "<editora> lançamento") e use `--dias 4` se a rodada 1 foi com `--dias 2`.
+
+**Rodada 3: outras fontes, principalmente internacionais.** As que as rodadas anteriores não leram: BGG News (boardgamegeek.com/blog/1), Shut Up & Sit Down, Tabletop Gaming, Wargamer, Dicebreaker, os sites dos prêmios (Spiel des Jahres, As d'Or, Golden Geek, Origins, Dice Tower), campanhas em destaque no Kickstarter e no Gamefound (categoria de tabuleiro) e comunicados das editoras estrangeiras com edição prevista no Brasil. Complete com WebSearch em inglês ("board game news", "board game announced", "tabletop crowdfunding record") dentro do prazo de 14 dias.
+
+Em todas as rodadas, respeite o que cada site permite: sites que proíbem robôs só por leitura pontual (WebSearch e WebFetch de uma página) e citação com link, nunca raspagem. Nas semanas de Spoiler Fest da Galápagos e de feiras, a rodada 2 é obrigatória mesmo que a rodada 1 já tenha bastado.
 
 ## 2. Escolher as notas
 
 1. Para cada candidata promissora, ache a **fonte primária** (editora, prêmio, campanha, evento). Sem ela, a nota não sai.
 2. Pontue pelo crivo de PLANO_NOTICIAS.md com o que a pesquisa confirmou. Resenha, vídeo e lista de recomendação não são notícia: servem de fonte de crítica.
 3. Agrupe o que for do mesmo assunto (vários lançamentos de uma editora no mês viram uma nota).
-4. Escolha até 5 e marque a de maior pontuação como manchete proposta.
+4. Escolha as 5 de maior pontuação entre tudo o que as rodadas acharam (empate: a mais recente e a com mais fontes) e marque a maior como manchete. Nota abaixo de 5 pontos só entra depois da rodada 3. `checar_noticia.py` e `build_home.py` recusam dia com mais de 5 notas ou manchete que não seja a maior pontuação.
 5. Novidades do calendário da Ludopedia (lançamento novo ou mudança de situação) que não virarem nota: pelo menos garanta que os cartões do mês ligam a alguma nota; se não ligarem, eles levam para a Ludopedia.
 
 ## 3. Escrever
@@ -50,9 +56,9 @@ Ao lado da data, as páginas mostram quem publica o jogo, nunca o site de onde v
 1. `python3 tools/build_home.py` (gera a página inicial, as páginas das notas e `noticias/`) Ele grava `publicado_em` (hora de publicação) nas notas que ainda não têm, e as Últimas notícias seguem essa hora, não a pontuação: nota nova sempre entra no topo. Não edite `publicado_em` à mão; confira na página inicial que as notas novas aparecem nas Últimas notícias.
    Em seguida, `node tools/capa_secoes.js` refaz as prévias do WhatsApp de `/noticias/` e `/lancamentos/` (`noticias/capa.jpg`, `lancamentos/capa.jpg`, 1200×630) com as notas e o mês do dia, e `python3 tools/build_home.py` de novo para o `?v=` das páginas apontar para a imagem nova.
 2. Confira no celular (Playwright, 390 px): página inicial e uma nota nova, sem rolagem lateral.
-3. Commit e push direto na `main` com a mensagem `Notícias de <dd/mm/aaaa>: <títulos curtos>`. A manchete do dia já vai para o topo. Inclua no commit `noticias/capa.jpg`, `lancamentos/capa.jpg`, `sitemap.xml`, `sitemap-noticias.xml`, `robots.txt`, `404.html`, `img/` e `conteudo/sitemap_estado.json`, que os scripts regeram sozinhos.
+3. Commit e push direto na `main` com a mensagem `Notícias de <dd/mm/aaaa>: <títulos curtos>`. A manchete do dia já vai para o topo. Inclua no commit `noticias/capa.jpg`, `lancamentos/capa.jpg`, `sitemap.xml`, `sitemap-noticias.xml`, `robots.txt`, `404.html`, `img/`, `jogos-de-tabuleiro/`, `premios/` e `conteudo/sitemap_estado.json`, que os scripts regeram sozinhos.
 4. Depois que as páginas estiverem no ar (o GitHub Pages leva alguns minutos), rode `python3 tools/indexnow.py` para avisar Bing e outros buscadores; página que ainda não subiu fica para a próxima rodada. Se ele gravar `conteudo/indexnow_estado.json`, faça commit e push só desse arquivo (`IndexNow de <dd/mm/aaaa>`).
-5. Termine com um resumo curto para o usuário: as notas publicadas (título e selo), a manchete com o lide e a opinião, o que ficou de fora e por quê, e os avisos da coleta. Não peça aprovação.
+5. Termine com um resumo curto para o usuário: quantas rodadas de pesquisa foram feitas e o que cada uma achou, as notas publicadas (título, selo e pontos, avisando as que ficaram abaixo de 5), a manchete com o lide e a opinião, o que ficou de fora e por quê, e os avisos da coleta. Não peça aprovação.
 
 ## Troca de manchete
 

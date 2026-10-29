@@ -116,6 +116,7 @@ def checar_sitemap(erros, ns, publicadas):
     if f"{SITE}/sitemap.xml" not in (ROOT / "robots.txt").read_text(encoding="utf-8"):
         erros.append("robots.txt não aponta para o sitemap.xml")
     urls = [f"{SITE}/", f"{SITE}/noticias/", f"{SITE}/resenhas/", f"{SITE}/consulta/", f"{SITE}/politica-editorial/"]
+    urls += [f"{SITE}/{g.parent.relative_to(ROOT).as_posix()}/" for g in [*(ROOT / "jogos-de-tabuleiro").glob("**/index.html"), *(ROOT / "premios").glob("index.html")]]
     urls += [f"{SITE}/noticias/{n['slug']}/" for n in ns] + [p["url"] for p, _ in publicadas]
     for url in urls:
         arq = ROOT / url[len(SITE) + 1:] / "index.html"

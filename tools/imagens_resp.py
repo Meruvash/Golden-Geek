@@ -40,6 +40,8 @@ def srcset(original, pre, larguras=(480, 800, 1200)):
 def miniatura(original, pre, largura=160):
     """Caminho de uma variante pequena para miniaturas de tamanho fixo (ex.: 76 px na tela, 2x para retina)."""
     original = Path(original)
+    if not original.exists():  # capa ainda não baixada: mantém o caminho (a verificação acusa o link)
+        return f"{pre}{original.relative_to(ROOT).as_posix()}"
     with Image.open(original) as im:
         if im.width <= largura:
             return f"{pre}{original.relative_to(ROOT).as_posix()}"

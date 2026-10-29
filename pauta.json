@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-28",
+ "atualizado_em": "2026-10-29",
  "regras": {
   "premios": [
    "Golden Geek",
@@ -152,6 +152,26 @@
    "jogo": "Galactic Cruise",
    "url": "https://eliteboardgamers.com.br/galactic-cruise/",
    "data": "2026-10-28"
+  },
+  {
+   "jogo": "SETI: Search for Extraterrestrial Intelligence",
+   "url": "https://eliteboardgamers.com.br/seti/",
+   "data": "2026-10-29"
+  },
+  {
+   "jogo": "Heat: Pedal to the Metal",
+   "url": "https://eliteboardgamers.com.br/heat-pedal-to-the-metal/",
+   "data": "2026-10-29"
+  },
+  {
+   "jogo": "Harmonies",
+   "url": "https://eliteboardgamers.com.br/harmonies/",
+   "data": "2026-10-29"
+  },
+  {
+   "jogo": "Civolution",
+   "url": "https://eliteboardgamers.com.br/civolution/",
+   "data": "2026-10-29"
   }
  ],
  "jogos": [
@@ -1550,7 +1570,7 @@
      "fonte": "https://eliteboardgamers.com.br/"
     }
    ],
-   "status": "na_fila",
+   "status": "publicado",
    "prioridade": 27,
    "premios_distintos": 2,
    "slug": "seti"
@@ -1594,7 +1614,7 @@
      "fonte": "https://eliteboardgamers.com.br/"
     }
    ],
-   "status": "na_fila",
+   "status": "publicado",
    "prioridade": 28,
    "premios_distintos": 2,
    "slug": "heat-pedal-to-the-metal"
@@ -1677,7 +1697,7 @@
      "fonte": "https://eliteboardgamers.com.br/"
     }
    ],
-   "status": "na_fila",
+   "status": "publicado",
    "prioridade": 30,
    "premios_distintos": 2,
    "slug": "harmonies"
@@ -1744,7 +1764,7 @@
      "fonte": "https://eliteboardgamers.com.br/"
     }
    ],
-   "status": "na_fila",
+   "status": "publicado",
    "prioridade": 32,
    "premios_distintos": 2,
    "slug": "civolution"
