@@ -65,7 +65,12 @@
    "data": "28/10/2026"
   }
  ],
- "imagem": null,
+ "imagem": {
+  "arquivo": "capas/diversao-offline-2027.jpg",
+  "credito": "Diversão Offline: O Jogo · Imagem: Diversão Offline",
+  "origem": "https://diversaooffline.com.br/wp-content/uploads/2025/05/jogo-doff-3.png",
+  "pagina": "https://diversaooffline.com.br/"
+ },
  "jogos": [],
  "crivo": {
   "pontos": 5,

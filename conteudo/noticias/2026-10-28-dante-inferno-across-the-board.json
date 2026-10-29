@@ -66,8 +66,10 @@
   }
  ],
  "imagem": {
-  "arquivo": "capas/56209.jpg",
-  "credito": "Capa via Ludopedia"
+  "arquivo": "capas/dante-inferno-across-the-board.jpg",
+  "credito": "Imagem: Across the Board, campanha de DANTE: Inferno no Catarse",
+  "origem": "https://s3-sa-east-1.amazonaws.com/cdn.br.catarse/uploads/project/uploaded_image/191191/88611a38-cf4b-4979-b576-002bce884576.png",
+  "pagina": "https://www.catarse.com.br/dante_inferno"
  },
  "jogos": [],
  "ids_ludopedia": [
