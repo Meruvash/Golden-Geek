@@ -655,6 +655,10 @@ footer{{background:var(--bar);color:var(--bar-ink);font-size:.88rem;border-top:1
 /* layout v2 */
 .v2>.col,.v2 .bloco{{min-width:0}}
 .v2 .kick{{margin:0;font-size:.75rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--gold)}}
+/* paleta de seções (referência: The Verge, como em notícias): filete na cor do jogo sobre o título de cada seção
+   e a linha de publicação em monoespaçada */
+.v2 .bloco.claro>h2,.v2 .faixa>h2,.v2 .pc2>div>h2,.v2 .preco-card>h2{{border-top:3px solid var(--acc);padding-top:10px}}
+.pub{{font-family:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,monospace;font-size:.72rem;text-transform:uppercase;letter-spacing:.05em}}
 .r30{{background:#101318;border:1px solid #3a3f48;border-left:4px solid var(--acc);display:grid;gap:14px}}
 .r30-grid{{display:grid;gap:14px}}.r30 h3{{font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:6px}}
 .mini li{{display:flex;gap:8px;align-items:flex-start;margin:5px 0;font-weight:600;font-size:.95rem}}.mini .ic{{width:18px;height:18px;flex:none;margin-top:3px}}
