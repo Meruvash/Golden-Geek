@@ -17,7 +17,7 @@ from PIL import Image
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import seo  # noqa: E402
-from build_home import MESES, cabecalho, capa_secao, norm, notas, pagina, rodape  # noqa: E402
+from build_home import MESES, NOME_EDITORA, cabecalho, capa_secao, norm, notas, pagina, rodape  # noqa: E402
 from build_review import ROOT, SITE, e  # noqa: E402
 
 PASTA = ROOT / "lancamentos"
@@ -106,6 +106,7 @@ def cartao(j, noticias, resenhas, tem_capa, prioridade=False):
     sclasse, srotulo, _ = situacao(j)
     nome = j["nome"].strip()
     editora = (j.get("editora") or {}).get("nome", "").strip()
+    editora = NOME_EDITORA.get(editora, editora)  # nome atual (ex.: a Galápagos hoje é a Asmodee)
     mes_i = int(j["mes"][5:]) - 1
     # O que a ficha mostra e já está no cartão (nome, editora, situação, tipo, mês) é lido do próprio cartão;
     # nos atributos ficam só os endereços da Ludopedia, sem o prefixo comum. Antes, um JSON repetia tudo (metade do HTML).

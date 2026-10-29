@@ -23,6 +23,9 @@ O relatório tem duas partes: as falhas automáticas (notícia fora do padrão, 
 
 ## 2. Revisão editorial do que subiu no dia
 
+**Nome da editora:** a Galápagos hoje é a Asmodee (galapagosjogos.com.br redireciona para asmodee.com.br). Não troque "Asmodee" por Galápagos ao conferir com as fontes: o texto usa sempre "Asmodee", mesmo quando a fonte ainda disser Galápagos; os nomes das fontes ficam como a página citada os escreve.
+
+
 Para **cada** notícia e resenha da lista "Publicado em <data>":
 
 1. Abra o JSON e as fontes citadas (WebFetch/WebSearch, respeitando robots.txt; BGG e Ludopedia só pela busca).

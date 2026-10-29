@@ -66,6 +66,9 @@ Saída da pesquisa: FICHA (ano, autor, editora, jogadores, duração anunciada e
 
 ## Etapa 2: texto da resenha
 
+**Nome da editora:** a Galápagos hoje é a Asmodee (galapagosjogos.com.br redireciona para asmodee.com.br). No texto, escreva sempre "Asmodee", mesmo quando a fonte ainda disser Galápagos; os nomes das fontes ficam como a página citada os escreve.
+
+
 O texto do site segue a segunda parte do **`PADRAO_EDITORIAL.md`** (exemplo completo: `conteudo/gloomhaven.json`). Seções: abertura (`lede`), Como funciona (4–6 parágrafos), Como é jogar (`experiencia`), O que funciona muito bem e Pontos de atenção (5–7 itens de 30–70 palavras, com gravidade), Com quantos jogar (`jogadores`), Primeira partida, Edição nacional e preço, Expansões e versões (`versoes`), Se você gosta de… (`comparacoes`, ligando para as nossas resenhas), Para quem é / não é (4–5 cada), Veredito com selo (nível `selo` + `ressalva` quando houver, e perfil `melhor_para`; regras no PADRAO_EDITORIAL.md) e tagline, Prêmios, Ficha e Fontes (pelo menos 6). Tom direto e honesto, escrito para quem nunca jogou; opinião sempre com dono; nada além do que está na pesquisa.
 
 `python3 tools/checar_roteiro.py` confere o texto (e o roteiro, nas resenhas antigas que têm um); `publicar.py` se recusa a seguir se ele não passar.

@@ -51,7 +51,7 @@
   ],
   [
    "Edição nacional",
-   "Nemesis: Galápagos (2020). Lockdown e Retaliation: sem edição nacional, segundo a Ludopedia"
+   "Nemesis: Asmodee (2020). Lockdown e Retaliation: sem edição nacional, segundo a Ludopedia"
   ],
   [
    "Nota BGG",
@@ -113,7 +113,7 @@
   [
    "Moderada",
    "Edição nacional limitada",
-   "Só o Nemesis original saiu em português, pela Galápagos, e a edição aparece esgotada ou cara nas lojas consultadas. Lockdown e Retaliation não têm edição nacional, segundo a Ludopedia, e dependem de muito texto em inglês."
+   "Só o Nemesis original saiu em português, pela Asmodee, e a edição aparece esgotada ou cara nas lojas consultadas. Lockdown e Retaliation não têm edição nacional, segundo a Ludopedia, e dependem de muito texto em inglês."
   ],
   [
    "Leve",
@@ -138,7 +138,11 @@
  "selo": "Recomendado com ressalva",
  "melhor_para": "tema",
  "ressalva": "preço acima de R$ 1.000",
- "filtros_ajuste": {"estilos": ["Semicooperativo"]},
+ "filtros_ajuste": {
+  "estilos": [
+   "Semicooperativo"
+  ]
+ },
  "veredito": "A série Nemesis brilha quando o grupo valoriza tensão, narrativa imprevisível e objetivos que nem sempre alinham os interesses: cada partida vira uma história de traições e resgates. O original é a escolha mais segura para conhecer a proposta e o único em português; Lockdown aprofunda o suspense com energia e escuridão; Retaliation atende quem prefere ação, sem tirar a chance de fracasso. O preço é alto: regras pesadas, partidas que tomam a noite, eliminação e sorte que pode vencer o planejamento. Para quem ama terror à mesa, vale.",
  "tagline": "Fugir, resistir na escuridão ou invadir o ninho: escolha o seu medo.",
  "consulta": "25/10/2026",
@@ -270,7 +274,7 @@
   ]
  ],
  "primeira_partida": "Comece pelo Nemesis original e reserve uma noite inteira. Leia o manual antes e, se o grupo for novo, use o modo cooperativo da caixa na primeira partida, para aprender ruído, criaturas e ferimentos sem traições. O que mais confunde são as exceções das criaturas e do ambiente. Dica prática: deixe um jogador experiente cuidar das cartas de evento e de ataque das criaturas.",
- "edicao_nacional": "A Galápagos lançou o Nemesis original em português em novembro de 2020, mas a edição aparece esgotada ou cara: em 27/10/2026, os anúncios ficavam entre R$ 1.000 e R$ 1.200. Lockdown e Retaliation não têm edição nacional, segundo a Ludopedia; para Lockdown, circula só um manual traduzido por fãs, sem revisão.",
+ "edicao_nacional": "A Asmodee lançou o Nemesis original em português em novembro de 2020, mas a edição aparece esgotada ou cara: em 27/10/2026, os anúncios ficavam entre R$ 1.000 e R$ 1.200. Lockdown e Retaliation não têm edição nacional, segundo a Ludopedia; para Lockdown, circula só um manual traduzido por fãs, sem revisão.",
  "preco_ref": {
   "faixa": "R$ 1.000 a R$ 1.200",
   "data": "27/10/2026",

@@ -108,6 +108,8 @@ def build():
         nome = j["nome"].strip()
         slug, nomes = cruza(nome)
         ed = (j.get("editora") or {}).get("nome", "").strip()
+        from build_home import NOME_EDITORA
+        ed = NOME_EDITORA.get(ed, ed)
         mes = MESES[int(j["mes"][5:]) - 1]
         regs.append(reg("l", nome, " · ".join(x for x in (tipo(j)[1], ed, f"{mes} de {j['mes'][:4]}", situacao(j)[1]) if x),
                         f'lancamentos/#j{j["id_jogo"]}', nomes, slug))
