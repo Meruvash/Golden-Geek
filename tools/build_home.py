@@ -19,6 +19,7 @@ import seo  # noqa: E402
 from imagens_resp import miniatura, srcset  # noqa: E402
 from build_sitemap import lastmod_registrado  # noqa: E402
 from build_review import INSTAGRAM, ROOT, SITE, WHATSAPP, e, icone, versao  # noqa: E402
+from og import url_cartao  # noqa: E402
 from layout import CSS_BUSCA, CSS_TRILHA, cabecalho, rodape, trilha  # noqa: E402
 from noticias.checar_noticia import problemas  # noqa: E402
 
@@ -608,7 +609,7 @@ def build_home():
 {rodape("/")}"""
     (ROOT / "404.html").write_text(pagina("Página não encontrada | Elite Boardgamers", "Página não encontrada.", "", capa_secao("noticias"), "/", corpo_404), encoding="utf-8")
     build_politica()
-    (ROOT / "index.html").write_text(pagina(titulo, descr, f"{SITE}/", f"{SITE}/{img_nota(m, '')}", pre, corpo, jsonld=seo.script(seo.site())), encoding="utf-8")
+    (ROOT / "index.html").write_text(pagina(titulo, descr, f"{SITE}/", url_cartao(f"noticia-{m['slug']}") or f"{SITE}/{img_nota(m, '')}", pre, corpo, jsonld=seo.script(seo.site())), encoding="utf-8")
     return ns
 
 
@@ -673,11 +674,14 @@ def build_nota(n):
     # título da busca: titulo_seo (opcional, aprovado pela edição) ou o título; o sufixo da marca só cabe em título curto
     t_busca = n.get("titulo_seo") or n["titulo"]
     t_busca = t_busca if len(t_busca) > 42 else f"{t_busca} | Elite Boardgamers"
-    out.write_text(pagina(t_busca, n["lide"], url, img, pre, corpo, "article",
+    # prévia do WhatsApp: o cartão largo de tools/og.py; o JSON-LD continua com a foto da nota
+    out.write_text(pagina(t_busca, n["lide"], url, url_cartao(f"noticia-{n['slug']}") or img, pre, corpo, "article",
                           f'\n<meta property="article:published_time" content="{n["publicado_em"]}">', ld), encoding="utf-8")
 
 
 if __name__ == "__main__":
+    import og
+    print("ok cartões de prévia: %d refeitos de %d" % og.gerar())
     for n in build_home():
         build_nota(n)
     print("ok index.html e", len(notas()), "notícias")

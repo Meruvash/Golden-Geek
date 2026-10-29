@@ -46,6 +46,8 @@ def main():
 if __name__ == "__main__":
     main()
     sys.path.insert(0, str(Path(__file__).resolve().parent))
+    import og
+    print("ok cartões de prévia: %d refeitos de %d" % og.gerar())
     import build_lista
     (ROOT / "resenhas" / "index.html").write_text(build_lista.build(), encoding="utf-8")
     print("ok resenhas/index.html")

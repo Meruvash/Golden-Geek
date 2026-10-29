@@ -496,6 +496,11 @@ def build(c):
                      f'{info_fig.replace("{carga}", " loading=\"lazy\"")}</section>')
     else:
         topo_fig, info_meio = info_fig.replace("{carga}", ' fetchpriority="high"'), ""
+    # prévia do WhatsApp: o cartão largo de tools/og.py (prévia grande); sem ele, a capa quadrada
+    from og import url_cartao
+    cartao = url_cartao(f"resenha-{slug}")
+    og_imagem = (f'<meta property="og:image" content="{cartao}">\n<meta property="og:image:width" content="1200">\n<meta property="og:image:height" content="630">'
+                 if cartao else f'<meta property="og:image" content="{SITE}/{slug}/capa.jpg{versao_capa}">\n<meta property="og:image:width" content="800">\n<meta property="og:image:height" content="800">')
     if c.get("experiencia"):
         abas_html, main_html = layout_v2(c, premios_bloco, ficha_html, fontes, fotos, info_meio)
     else:
@@ -517,9 +522,7 @@ def build(c):
 <meta property="og:description" content="{e(c["descricao"])}">
 <meta property="og:type" content="article">
 <meta property="og:url" content="{SITE}/{slug}/">
-<meta property="og:image" content="{SITE}/{slug}/capa.jpg{versao_capa}">
-<meta property="og:image:width" content="800">
-<meta property="og:image:height" content="800">
+{og_imagem}
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#000000">
 <link rel="icon" href="../favicon.svg" type="image/svg+xml">
@@ -850,6 +853,8 @@ footer a{{color:var(--bar-ink)}}
 
 
 if __name__ == "__main__":
+    import og
+    print("ok cartões de prévia: %d refeitos de %d" % og.gerar())
     for arg in sys.argv[1:]:
         c = json.loads(Path(arg).read_text(encoding="utf-8"))
         out = ROOT / c["slug"] / "index.html"
