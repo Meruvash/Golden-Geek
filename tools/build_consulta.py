@@ -11,7 +11,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from layout import CSS_BUSCA, cabecalho, rodape  # noqa: E402
+from layout import CSS_BUSCA, cabecalho, compartilhar, rodape  # noqa: E402
 from busca import chave, resenhas_por_nome  # noqa: E402
 import json  # noqa: E402
 
@@ -73,10 +73,13 @@ def build():
     raw = re.search(r"const RAW = `(.*?)`", s, re.S).group(1)
     resenhas = mapa_resenhas({n for linha in raw.strip().split("\n") if linha.strip() for n in linha.strip().split(" | ")[2].split("; ")})
     html_tabela, total = tabela(s, resenhas)
-    novo = re.sub(r'<div id="out">.*?</div>(?=\n\n <a class="zap")', lambda _: f'<div id="out">{html_tabela}</div>', s, count=1, flags=re.S)
+    novo = re.sub(r'<div id="out">.*?</div>(?=\n\n <!--cp-->)', lambda _: f'<div id="out">{html_tabela}</div>', s, count=1, flags=re.S)
     # moldura comum do site (tools/layout.py)
     novo = re.sub(r'<header class="(?:top)?bar".*?</nav>', lambda _: cabecalho("../", "Consulta Golden Geek"), novo, count=1, flags=re.S)
     novo = re.sub(r'(?:<style id="moldura">.*?</style>\n)?</head>', lambda _: f'<style id="moldura">{CSS_BUSCA}</style>\n</head>', novo, count=1, flags=re.S)
+    # compartilhar a lista do jeito que está filtrada (o endereço guarda ano, categoria e pesquisa)
+    cp = compartilhar("Consulta Golden Geek 2015–2025 na Elite Boardgamers", "", "Compartilhe esta lista, com os filtros que você escolheu")
+    novo = re.sub(r'<!--cp-->.*?<!--/cp-->', lambda _: f'<!--cp--><div class="cp-consulta">{cp}</div><!--/cp-->', novo, count=1, flags=re.S)
     novo = re.sub(r'<footer>.*?</footer>', lambda _: rodape("../"), novo, count=1, flags=re.S)
     novo = re.sub(r'^const RESENHAS = .*;$', lambda _: "const RESENHAS = " + json.dumps(resenhas, ensure_ascii=False, sort_keys=True) + ";", novo, count=1, flags=re.M)
     novo = re.sub(r'<span id="count" class="count">[^<]*</span>', f'<span id="count" class="count">{total}</span>', novo, count=1)

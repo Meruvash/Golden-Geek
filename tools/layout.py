@@ -43,12 +43,22 @@ DISPARADOR = ("(()=>{const b=document.querySelector('.busca-btn');let c;b.hidden
               "b.addEventListener('click',a);addEventListener('keydown',e=>{const t=e.target,ed=t.isContentEditable||/^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName);"
               "if((e.key==='/'&&!ed&&!e.ctrlKey&&!e.metaKey)||((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k')){e.preventDefault();a()}})})()")
 
+CSS_COMPARTILHAR = (".compartilhe{display:grid;gap:8px}.compartilhe .cp-t{font-weight:800;font-size:1rem;margin:0}"
+                    ".cp-b{display:flex;flex-wrap:wrap;align-items:center;gap:8px}"
+                    ".cp{display:inline-flex;align-items:center;gap:7px;box-sizing:border-box;line-height:1.2;min-height:40px;margin:0;padding:8px 14px;border-radius:999px;border:1px solid #3a3f48;"
+                    "background:#14171c;color:#fff;font:inherit;font-size:.9rem;font-weight:700;text-decoration:none;cursor:pointer}"
+                    ".compartilhe .cp,.compartilhe .cp:hover{color:#fff}.cp:hover{border-color:#e3b23c}.cp .ic{width:18px;height:18px}.cp[hidden]{display:none}"
+                    ".cp.cp-zap{background:#157a43;border-color:#157a43}.cp.cp-zap:hover{background:#11683a}"
+                    ".cp-st{font-size:.88rem;font-weight:700;color:#1b7a45;margin:0}.cp-st:empty{display:none}"
+                    ".compartilhe.compacto .cp{min-height:36px;padding:6px 12px;font-size:.84rem}")
+
 # CSS comum a todas as páginas: botão de busca e respeito a prefers-reduced-motion (sem transições, animações,
 # rolagem suave nem os deslocamentos de hover/toque dos cartões e botões)
 CSS_BUSCA = (".busca-btn{display:grid;place-items:center;flex:none;width:44px;height:44px;padding:0;border:1px solid #3a3f48;border-radius:8px;"
              "background:none;color:#e9ecf1;cursor:pointer}.busca-btn:hover{border-color:#e3b23c;color:#e3b23c}.busca-btn[hidden]{display:none}"
              # alvo de toque mínimo de 24 px (WCAG 2.2, 2.5.8) nos links do rodapé comum
              "footer .in a{display:inline-flex;align-items:center;min-height:24px}"
+             + CSS_COMPARTILHAR +
              ".nav .casa{display:flex;align-items:center;justify-content:center;min-width:44px}.nav .casa .ic{width:20px;height:20px}"
              "@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;"
              "transition-duration:.01ms!important;scroll-behavior:auto!important}"
@@ -91,6 +101,46 @@ CSS_TRILHA = (".trilha{min-width:0;max-width:100%}.trilha ol{display:flex;align-
               ".trilha a{color:var(--gold);font-weight:700;text-decoration:none;padding:4px 0}.trilha a:hover{text-decoration:underline}"
               ".trilha li:last-child{display:block;min-width:0;overflow:hidden;text-overflow:ellipsis}"
               ".trilha li:last-child::before{display:inline}")
+
+
+SITE = "https://eliteboardgamers.com.br"
+
+# Compartilhar: os links de WhatsApp, Telegram, X e Facebook funcionam sem JavaScript; o script só cuida de
+# "Copiar link", do menu nativo do celular ("Mais opções") e do endereço das páginas que mudam com os filtros.
+JS_COMPARTILHAR = """(()=>{if(window.__cp)return;window.__cp=1;
+const url=c=>c.dataset.url||location.href,txt=c=>c.dataset.texto||document.title;
+const monta=c=>{const u=encodeURIComponent(url(c)),t=encodeURIComponent(txt(c));
+ c.querySelectorAll('[data-rede]').forEach(a=>{a.href={zap:'https://wa.me/?text='+t+'%20'+u,tg:'https://t.me/share/url?url='+u+'&text='+t,
+ x:'https://twitter.com/intent/tweet?url='+u+'&text='+t,fb:'https://www.facebook.com/sharer/sharer.php?u='+u}[a.dataset.rede]})};
+document.querySelectorAll('.compartilhe').forEach(c=>{if(navigator.share)c.querySelectorAll('.cp-nativo').forEach(b=>b.hidden=false)});
+document.addEventListener('click',async ev=>{const el=ev.target.closest('.compartilhe [data-rede],.cp-copiar,.cp-nativo');if(!el)return;
+ const c=el.closest('.compartilhe'),st=c.querySelector('.cp-st');
+ if(el.dataset.rede){monta(c);return}
+ if(el.classList.contains('cp-nativo')){try{await navigator.share({title:document.title,text:txt(c),url:url(c)})}catch(e){}return}
+ let ok=false;try{await navigator.clipboard.writeText(url(c));ok=true}catch(e){
+  const i=document.createElement('input');i.value=url(c);document.body.append(i);i.select();try{ok=document.execCommand('copy')}catch(e2){}i.remove()}
+ if(st)st.textContent=ok?'Link copiado! É só colar na conversa.':'Não deu para copiar: segure o dedo na barra de endereço e copie por lá.'})})()"""
+
+
+def compartilhar(texto, url="", titulo="Compartilhe", compacto=False):
+    """Barra de compartilhamento. Sem `url`, usa o endereço atual (páginas cujo endereço muda com os filtros)."""
+    import html
+    zap = '<a class="cp cp-zap" data-rede="zap" href="{}" target="_blank" rel="noopener">{}WhatsApp</a>'
+    from urllib.parse import quote
+    href = lambda rede: {"zap": f"https://wa.me/?text={quote(texto + " " + url, safe="")}", "tg": f"https://t.me/share/url?url={quote(url, safe="")}&text={quote(texto, safe="")}",
+                         "x": f"https://twitter.com/intent/tweet?url={quote(url, safe="")}&text={quote(texto, safe="")}",
+                         "fb": f"https://www.facebook.com/sharer/sharer.php?u={quote(url, safe="")}"}[rede] if url else "#"
+    botoes = (zap.format(html.escape(href("zap")), icone("zap"))
+              + f'<button type="button" class="cp cp-copiar">{icone("copiar")}Copiar link</button>'
+              + f'<button type="button" class="cp cp-nativo" hidden>{icone("compartilhar")}Mais opções</button>'
+              + ("" if compacto else
+                 f'<a class="cp" data-rede="tg" href="{html.escape(href("tg"))}" target="_blank" rel="noopener">Telegram</a>'
+                 f'<a class="cp" data-rede="x" href="{html.escape(href("x"))}" target="_blank" rel="noopener">X</a>'
+                 f'<a class="cp" data-rede="fb" href="{html.escape(href("fb"))}" target="_blank" rel="noopener">Facebook</a>'))
+    dados = (f' data-url="{html.escape(url)}"' if url else "") + f' data-texto="{html.escape(texto)}"'
+    return (f'<div class="compartilhe{" compacto" if compacto else ""}"{dados}>'
+            + (f'<p class="cp-t">{html.escape(titulo)}</p>' if titulo else "")
+            + f'<div class="cp-b">{botoes}</div><p class="cp-st" role="status"></p></div><script>{JS_COMPARTILHAR}</script>')
 
 
 def rodape(pre):
