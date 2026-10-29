@@ -11,7 +11,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from layout import cabecalho, rodape  # noqa: E402
+from layout import CSS_BUSCA, cabecalho, rodape  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 ARQ = ROOT / "consulta" / "index.html"
@@ -60,6 +60,7 @@ def build():
     novo = re.sub(r'<div id="out">.*?</div>(?=\n\n <a class="zap")', lambda _: f'<div id="out">{html_tabela}</div>', s, count=1, flags=re.S)
     # moldura comum do site (tools/layout.py)
     novo = re.sub(r'<header class="(?:top)?bar".*?</nav>', lambda _: cabecalho("../", "Consulta Golden Geek"), novo, count=1, flags=re.S)
+    novo = re.sub(r'(?:<style id="moldura">.*?</style>\n)?</head>', lambda _: f'<style id="moldura">{CSS_BUSCA}</style>\n</head>', novo, count=1, flags=re.S)
     novo = re.sub(r'<footer>.*?</footer>', lambda _: rodape("../"), novo, count=1, flags=re.S)
     novo = re.sub(r'<span id="count" class="count">[^<]*</span>', f'<span id="count" class="count">{total}</span>', novo, count=1)
     if novo != s:

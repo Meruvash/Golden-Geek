@@ -22,6 +22,7 @@ ICONES = {
     "preco": '<path d="M3 12V4h8l10 10-8 8L3 12Z"/><circle cx="7.5" cy="8.5" r="1.5"/>',
     "voltar": '<path d="M15 18l-6-6 6-6"/>',
     "topo": '<path d="M12 19V5M5 12l7-7 7 7"/>',
+    "busca": '<circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/>',
     "compartilhar": '<circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="M8.2 10.8l7.6-4.4M8.2 13.2l7.6 4.4"/>',
 }
 
@@ -31,6 +32,19 @@ SECOES = [("noticias/", "Notícias"), ("resenhas/", "Resenhas"), ("lancamentos/"
 
 def icone(nome, cls="ic"):
     return f'<svg class="{cls}" viewBox="0 0 24 24" aria-hidden="true">{ICONES[nome]}</svg>'
+
+
+# Disparador da busca: mostra a lupa e, no clique, em "/" ou em Ctrl+K, baixa busca.js (e o índice) pela primeira vez.
+# É o único JavaScript de busca na carga da página.
+DISPARADOR = ("(()=>{const b=document.querySelector('.busca-btn');let c;b.hidden=false;"
+              "const a=()=>{c=c||new Promise((r,j)=>{const s=document.createElement('script');s.src='PREbusca.js';s.onload=r;"
+              "s.onerror=()=>{c=null;j()};document.head.append(s)});c.then(()=>abrirBusca('PRE'),()=>{})};"
+              "b.addEventListener('click',a);addEventListener('keydown',e=>{const t=e.target,ed=t.isContentEditable||/^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName);"
+              "if((e.key==='/'&&!ed&&!e.ctrlKey&&!e.metaKey)||((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k')){e.preventDefault();a()}})})()")
+
+# CSS do botão de busca, igual em todas as páginas
+CSS_BUSCA = (".busca-btn{display:grid;place-items:center;flex:none;width:44px;height:44px;padding:0;border:1px solid #3a3f48;border-radius:8px;"
+             "background:none;color:#e9ecf1;cursor:pointer}.busca-btn:hover{border-color:#e3b23c;color:#e3b23c}.busca-btn[hidden]{display:none}")
 
 
 def cabecalho(pre, atual="", sub=False):
@@ -45,7 +59,9 @@ def cabecalho(pre, atual="", sub=False):
  <a class="marca" href="{pre or './'}"><img src="{pre}marca/elite-boardgamers.webp" width="318" height="254" alt="Elite Boardgamers: página inicial"></a>
  <a class="ig" href="{INSTAGRAM}" target="_blank" rel="noopener" aria-label="Instagram @eliteboardgamers">{icone("insta")}<span>@eliteboardgamers</span></a>
  <a class="zap-mini" href="{WHATSAPP}" target="_blank" rel="noopener" aria-label="Grupo do WhatsApp">{icone("zap")}<span>Grupo do WhatsApp</span></a>
+ <button type="button" class="busca-btn" aria-label="Buscar no site" aria-haspopup="dialog" aria-keyshortcuts="/ Control+K" hidden>{icone("busca")}</button>
 </div></header>
+<script>{DISPARADOR.replace("PRE", pre)}</script>
 <nav class="nav" aria-label="Seções do site"><ul class="in">{nav}</ul></nav>"""
 
 

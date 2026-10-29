@@ -16,7 +16,7 @@ from PIL import Image
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import seo  # noqa: E402
 from imagens_resp import srcset  # noqa: E402
-from layout import CSS_TRILHA, ICONES, INSTAGRAM, WHATSAPP, cabecalho, icone, rodape, trilha  # noqa: E402,F401
+from layout import CSS_BUSCA, CSS_TRILHA, ICONES, INSTAGRAM, WHATSAPP, cabecalho, icone, rodape, trilha  # noqa: E402,F401
 
 ROOT = Path(__file__).resolve().parent.parent
 SITE = "https://eliteboardgamers.com.br"
@@ -552,7 +552,7 @@ a{{color:var(--link);text-underline-offset:.18em}}
 .nav a:hover{{border-bottom-color:var(--gold)}}.nav a[aria-current]{{color:var(--gold);border-bottom-color:var(--gold)}}
 .jogo{{background:var(--panel);border-bottom:1px solid var(--line)}}
 .jogo .in{{max-width:1120px;margin:0 auto;padding:20px 16px 0;display:grid;gap:20px}}
-{CSS_TRILHA}
+{CSS_TRILHA}{CSS_BUSCA}
 .jogo .trilha{{grid-column:1/-1;margin-bottom:-8px}}
 .capa a{{display:block;border-radius:8px;overflow:hidden;box-shadow:0 8px 28px rgba(0,0,0,.6)}}
 .capa figcaption{{font-size:.82rem;color:var(--muted);margin-top:6px}}

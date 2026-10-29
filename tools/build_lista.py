@@ -11,7 +11,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import seo  # noqa: E402
 from filtros_resenha import PERFIS, derivar  # noqa: E402
 from imagens_resp import srcset  # noqa: E402
-from layout import cabecalho, rodape  # noqa: E402
+from layout import CSS_BUSCA, cabecalho, rodape  # noqa: E402
 from build_review import INSTAGRAM, ROOT, SITE, WHATSAPP, campo, capa_src, versao, e, faixa_nota, icone, nome_br, numero, selo_class, selo_perfil  # noqa: E402
 
 
@@ -120,6 +120,7 @@ h1,h2,p,ul{{margin:0}}ul{{padding:0;list-style:none}}img{{display:block;max-widt
 .bar .in{{display:flex;align-items:center;gap:12px;padding-top:8px;padding-bottom:8px}}
 .bar a{{text-decoration:none;font-weight:600;font-size:.95rem}}
 .marca img{{width:84px;border-radius:6px}}
+{CSS_BUSCA}
 .bar .ig,.bar .zap-mini{{display:flex;align-items:center;gap:6px;padding:6px 10px;border-radius:6px}}
 .bar .ig{{margin-left:auto}}.bar .ig:hover{{color:var(--gold)}}
 .bar .zap-mini{{background:var(--zap);color:#fff}}.bar .zap-mini:hover{{background:#11683a}}

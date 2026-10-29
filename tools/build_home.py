@@ -19,7 +19,7 @@ import seo  # noqa: E402
 from imagens_resp import miniatura, srcset  # noqa: E402
 from build_sitemap import lastmod_registrado  # noqa: E402
 from build_review import INSTAGRAM, ROOT, SITE, WHATSAPP, e, icone, versao  # noqa: E402
-from layout import CSS_TRILHA, cabecalho, rodape, trilha  # noqa: E402
+from layout import CSS_BUSCA, CSS_TRILHA, cabecalho, rodape, trilha  # noqa: E402
 from noticias.checar_noticia import problemas  # noqa: E402
 
 MESES = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"]
@@ -284,7 +284,7 @@ def pagina(titulo, descricao, url, imagem, pre, corpo, tipo="website", head_extr
 <meta name="theme-color" content="#000000">
 <link rel="icon" href="{pre}favicon.svg" type="image/svg+xml">
 <link rel="preload" href="{pre}fontes/public-sans.woff2" as="font" type="font/woff2" crossorigin>
-<style>{CSS % {"pre": pre}}{CSS_TRILHA}</style>
+<style>{CSS % {"pre": pre}}{CSS_TRILHA}{CSS_BUSCA}</style>
 {jsonld}
 </head>
 <body>
@@ -543,5 +543,7 @@ if __name__ == "__main__":
     print("ok consulta/index.html:", build_consulta.build())
     import build_calendario
     print("ok lancamentos/index.html: %d lançamentos, %d sem capa" % build_calendario.build())
+    import busca
+    print("ok busca.json:", busca.build(), "registros")
     import build_sitemap
     print("ok sitemap.xml (%d URLs), sitemap-noticias.xml (%d), robots.txt" % build_sitemap.atualizar()[:2])
