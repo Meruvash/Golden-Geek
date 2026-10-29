@@ -26,7 +26,7 @@ AUSENCIA = re.compile(r"(\bsem\b|não há|não tem|não existe|nenhuma|não enco
 CATEGORICO = re.compile(r"((não há|não tem|não existe|ainda não há|nenhuma)[^.;:]{0,40}" + _ED +
                         r"|\bsem (edição|versão) (nacional|brasileira|em português)\b(?! (encontrada|confirmada)))", re.I)
 RESULTADOS = {"edição nacional", "não encontrada"}
-POR_DIA, DESDE = 5, "2026-10-29"  # notas publicadas por dia, as de maior pontuação (ver PLANO_NOTICIAS.md)
+MINIMO, DESDE = 5, "2026-10-29"  # notas por dia, no mínimo, sem máximo; regra da manchete vale desde DESDE (PLANO_NOTICIAS.md)
 
 
 def textos(n):
@@ -100,16 +100,14 @@ def problemas(n):
 
 
 def checar_dia(ns):
-    """Edição diária (pedido do usuário em 29/10/2026): saem as POR_DIA notas mais bem pontuadas do dia,
-    seja qual for a nota; a manchete é a de maior pontuação. Vale a partir de DESDE."""
+    """Edição diária (pedido do usuário em 29/10/2026): no mínimo MINIMO notas por dia e sem máximo;
+    quanto mais notícia boa, melhor. Aqui só se confere que a manchete é a nota de maior pontuação do dia."""
     erros = []
     por_dia = {}
     for n in ns:
         if n.get("data", "") >= DESDE:
             por_dia.setdefault(n["data"], []).append(n)
     for dia, lista in por_dia.items():
-        if len(lista) > POR_DIA:
-            erros.append(f"{dia}: {len(lista)} notas; o dia publica só as {POR_DIA} mais bem pontuadas")
         pts = [n["crivo"].get("pontos", 0) for n in lista]
         if any(n.get("manchete") and n["crivo"].get("pontos", 0) < max(pts) for n in lista):
             erros.append(f"{dia}: a manchete precisa ser a nota de maior pontuação do dia")

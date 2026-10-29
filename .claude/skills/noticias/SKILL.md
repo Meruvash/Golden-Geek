@@ -1,11 +1,11 @@
 ---
 name: noticias
-description: Monta a edição diária de notícias da página inicial da Elite Boardgamers — coleta (feeds, Bluesky, Ludopedia), crivo editorial, 5 notas por dia (meta de 5 pontos ou mais) no padrão de notícias (PADRAO_EDITORIAL.md), atualização dos blocos e publicação, tudo no ar sem esperar aprovação (inclusive a manchete). Se ainda faltarem notas de 5 pontos, faz uma segunda rodada em fontes nacionais e uma terceira em outras fontes antes de completar com as mais bem pontuadas. Use quando pedirem "/noticias", "edição do dia", "notícias de hoje" ou quando a tarefa agendada diária disparar.
+description: Monta a edição diária de notícias da página inicial da Elite Boardgamers — coleta (feeds, Bluesky, Ludopedia), crivo editorial, no mínimo 5 notas por dia e sem limite (meta de 5 pontos ou mais) no padrão de notícias (PADRAO_EDITORIAL.md), atualização dos blocos e publicação, tudo no ar sem esperar aprovação (inclusive a manchete). Se ainda faltarem notas de 5 pontos, faz uma segunda rodada em fontes nacionais e uma terceira em outras fontes; publica tudo o que passar pelos eliminatórios. Use quando pedirem "/noticias", "edição do dia", "notícias de hoje" ou quando a tarefa agendada diária disparar.
 ---
 
 # Edição diária de notícias
 
-Meta: **5 notas por dia** (pedido do usuário em 29/10/2026; PLANO_NOTICIAS.md, "Edição diária"). O objetivo continua sendo 5 notas com **5 pontos ou mais** no crivo; para isso a pesquisa tem até **três rodadas** (seção 1). Só depois da terceira rodada, se ainda faltarem notas de 5 pontos, o dia fecha com as 5 mais bem pontuadas, independente da nota. Os eliminatórios (fonte primária, sem conteúdo pago, dentro do prazo, sem repetir nota, tabuleiro moderno) e o padrão das notícias valem sempre. **Desde 28/10/2026 tudo sai direto, manchete inclusive** (pedido do usuário): ninguém aprova nada. A segurança vem das checagens e da verificação das 22h (skill `verificacao`), que corrige sozinha o que estiver errado.
+Meta: **no mínimo 5 notas por dia, sem limite máximo** (pedidos do usuário em 29/10/2026: "quanto mais notícia, melhor"; PLANO_NOTICIAS.md, "Edição diária"). Publique **toda** candidata que passar pelos eliminatórios (fonte primária, sem conteúdo pago, dentro do prazo, sem repetir nota, tabuleiro moderno) e pelo padrão das notícias, inclusive as abaixo de 5 pontos. As três rodadas de pesquisa (seção 1) servem para chegar a pelo menos 5 notas com **5 pontos ou mais**; notícia extra nunca sai do ar para manter um número. **Desde 28/10/2026 tudo sai direto, manchete inclusive** (pedido do usuário): ninguém aprova nada. A segurança vem das checagens e da verificação das 22h (skill `verificacao`), que corrige sozinha o que estiver errado.
 
 ## 1. Coletar, em até três rodadas
 
@@ -24,7 +24,7 @@ Em todas as rodadas, respeite o que cada site permite: sites que proíbem robôs
 1. Para cada candidata promissora, ache a **fonte primária** (editora, prêmio, campanha, evento). Sem ela, a nota não sai.
 2. Pontue pelo crivo de PLANO_NOTICIAS.md com o que a pesquisa confirmou. Resenha, vídeo e lista de recomendação não são notícia: servem de fonte de crítica.
 3. Agrupe o que for do mesmo assunto (vários lançamentos de uma editora no mês viram uma nota).
-4. Escolha as 5 de maior pontuação entre tudo o que as rodadas acharam (empate: a mais recente e a com mais fontes) e marque a maior como manchete. Nota abaixo de 5 pontos só entra depois da rodada 3. `checar_noticia.py` e `build_home.py` recusam dia com mais de 5 notas ou manchete que não seja a maior pontuação.
+4. Publique todas as que passaram (empate na pontuação: a mais recente e a com mais fontes primeiro) e marque a maior como manchete. Nota que chega depois, no mesmo dia, entra também, sem tirar nenhuma do ar. `checar_noticia.py` e `build_home.py` recusam manchete que não seja a maior pontuação do dia.
 5. Novidades do calendário da Ludopedia (lançamento novo ou mudança de situação) que não virarem nota: pelo menos garanta que os cartões do mês ligam a alguma nota; se não ligarem, eles levam para a Ludopedia.
 
 ## 3. Escrever

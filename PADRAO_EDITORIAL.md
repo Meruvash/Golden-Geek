@@ -127,7 +127,7 @@ A notícia da Elite Boardgamers não repete o release: diz o que aconteceu, por 
 | `para_quem` / `nao_e_para` | Interessa a você se… / Pense duas vezes se… | 1 a 3 itens cada (`nao_e_para` pode ficar vazio em nota informativa). |
 | `veredito` | Nossa opinião | 20 a 60 palavras: conselho claro (comprar, esperar, acompanhar) e o porquê. |
 | `fontes` | Fontes | pelo menos 2, com link e data da consulta. |
-| `crivo` | Por que esta notícia entrou | pontos e critérios do crivo (PLANO_NOTICIAS.md). A meta é 5 notas de 5 pontos ou mais; nota abaixo disso só entra depois das três rodadas de pesquisa (PLANO_NOTICIAS.md, "Edição diária"). |
+| `crivo` | Por que esta notícia entrou | pontos e critérios do crivo (PLANO_NOTICIAS.md). No mínimo 5 notas por dia e sem máximo; a pontuação ordena as notas e escolhe a manchete (PLANO_NOTICIAS.md, "Edição diária"). |
 | `publicado_em` | (ordem das Últimas notícias) | Hora de publicação, ISO 8601. Preenchido por `tools/build_home.py` (commit que criou o arquivo ou a hora da geração); não se escreve à mão. A lista da página inicial segue esta hora, e a geração para se uma nota mais nova ficar fora dela. |
 | `verificacao_nacional` | (não aparece na página) | Obrigatório quando a nota diz que um jogo não tem edição nacional, e recomendado para todo jogo citado: `[{jogo, resultado, data, fontes, obs}]`, com `resultado` "edição nacional" ou "não encontrada" e pelo menos 2 fontes com link, uma brasileira. "Não encontrada" exige o link do ComparaJogos. Ver regra 6. |
 
