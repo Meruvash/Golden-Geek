@@ -12,6 +12,8 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from layout import CSS_BUSCA, cabecalho, rodape  # noqa: E402
+from busca import chave, resenhas_por_nome  # noqa: E402
+import json  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 ARQ = ROOT / "consulta" / "index.html"
@@ -23,7 +25,18 @@ def esc(s):
     return "".join({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"}.get(ch, ch) for ch in s)
 
 
-def tabela(s):
+def mapa_resenhas(nomes):
+    """Jogos do Golden Geek que têm resenha (mesmo nome normalizado que um apelido da resenha): slug e outros nomes."""
+    por_nome = resenhas_por_nome()
+    mapa = {}
+    for n in nomes:
+        if chave(n) in por_nome:
+            slug, apelidos = por_nome[chave(n)]
+            mapa[n] = {"r": slug, "a": " ".join(a for a in apelidos if chave(a) != chave(n))}
+    return mapa
+
+
+def tabela(s, resenhas):
     raw = re.search(r"const RAW = `(.*?)`", s, re.S).group(1)
     oficial = dict(re.findall(r'^\s*"(.+?)": "(.+?)",?$', re.search(r"const OFFICIAL = \{(.*?)\};", s, re.S).group(1), re.M))
     rows = []
@@ -44,24 +57,28 @@ def tabela(s):
                 body += "</tbody>"
             key = k
             en = f'<span class="ge">{esc(oficial[r["c"]])}</span>' if r["c"] in oficial else ""
-            body += f'<tbody><tr class="grp"><th colspan="4"><span class="gy">{r["y"]}</span><span class="gc">{esc(r["c"])}</span>{en}</th></tr>'
+            body += f'<tbody><tr class="grp"><th colspan="2"><span class="gy">{r["y"]}</span><span class="gc">{esc(r["c"])}</span>{en}</th></tr>'
         n = len(occ[r["n"]])
         badge = f'<button type="button" class="multi" data-g="{esc(r["n"])}" title="Ver todas as aparições">{n} aparições</button>' if n > 1 else ""
-        body += (f'<tr class="row{" first" if r["p"] == 1 else ""}"><td class="y">{r["y"]}</td><td class="c">{esc(r["c"])}</td>'
-                 f'<td class="pos">{PLACE[r["p"] - 1]}</td><td class="g">{esc(r["n"])}{badge}</td></tr>')
+        res = f'<a class="res" href="../{resenhas[r["n"]]["r"]}/">Ler resenha</a>' if r["n"] in resenhas else ""
+        body += (f'<tr class="row{" first" if r["p"] == 1 else ""}">'
+                 f'<td class="pos">{PLACE[r["p"] - 1]}</td><td class="g">{esc(r["n"])}{badge}{res}</td></tr>')
     body += "</tbody>"
     total = f'{len(rows)} {"resultado" if len(rows) == 1 else "resultados"}'
-    return f"<table><thead><tr><th>Ano</th><th>Categoria</th><th>Colocação</th><th>Jogo</th></tr></thead>{body}</table>", total
+    return f"<table><thead><tr><th>Colocação</th><th>Jogo</th></tr></thead>{body}</table>", total
 
 
 def build():
     s = ARQ.read_text(encoding="utf-8")
-    html_tabela, total = tabela(s)
+    raw = re.search(r"const RAW = `(.*?)`", s, re.S).group(1)
+    resenhas = mapa_resenhas({n for linha in raw.strip().split("\n") if linha.strip() for n in linha.strip().split(" | ")[2].split("; ")})
+    html_tabela, total = tabela(s, resenhas)
     novo = re.sub(r'<div id="out">.*?</div>(?=\n\n <a class="zap")', lambda _: f'<div id="out">{html_tabela}</div>', s, count=1, flags=re.S)
     # moldura comum do site (tools/layout.py)
     novo = re.sub(r'<header class="(?:top)?bar".*?</nav>', lambda _: cabecalho("../", "Consulta Golden Geek"), novo, count=1, flags=re.S)
     novo = re.sub(r'(?:<style id="moldura">.*?</style>\n)?</head>', lambda _: f'<style id="moldura">{CSS_BUSCA}</style>\n</head>', novo, count=1, flags=re.S)
     novo = re.sub(r'<footer>.*?</footer>', lambda _: rodape("../"), novo, count=1, flags=re.S)
+    novo = re.sub(r'^const RESENHAS = .*;$', lambda _: "const RESENHAS = " + json.dumps(resenhas, ensure_ascii=False, sort_keys=True) + ";", novo, count=1, flags=re.M)
     novo = re.sub(r'<span id="count" class="count">[^<]*</span>', f'<span id="count" class="count">{total}</span>', novo, count=1)
     if novo != s:
         ARQ.write_text(novo, encoding="utf-8")

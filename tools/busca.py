@@ -58,15 +58,23 @@ def reg(tipo, nome, contexto, url, nomes=(), resenha=None):
     return r
 
 
-def build():
+def resenhas():
+    """Resenhas publicadas, mais recentes primeiro: (slug, conteúdo, apelidos)."""
     pauta = json.loads((ROOT / "pauta.json").read_text(encoding="utf-8"))
-    regs, por_nome = [], {}  # por_nome: chave de cada apelido -> (slug da resenha, todos os apelidos)
     for pub in reversed(pauta["publicadas"]):
         slug = pub["url"].rstrip("/").split("/")[-1]
         c = json.loads((ROOT / "conteudo" / f"{slug}.json").read_text(encoding="utf-8"))
-        nomes = apelidos(c, pub.get("serie", []))
-        for n in nomes:
-            por_nome[chave(n)] = (slug, nomes)
+        yield slug, c, apelidos(c, pub.get("serie", []))
+
+
+def resenhas_por_nome():
+    """Chave normalizada de cada apelido -> (slug da resenha, todos os apelidos). Usado aqui e na Consulta."""
+    return {chave(n): (slug, nomes) for slug, _, nomes in resenhas() for n in nomes}
+
+
+def build():
+    regs, por_nome = [], resenhas_por_nome()
+    for slug, c, nomes in resenhas():
         outros = [n for n in nomes if n != nome_br(c)]
         regs.append(reg("r", nome_br(c), " · ".join(outros[:2]) or c["tagline"], f"{slug}/", nomes))
 
