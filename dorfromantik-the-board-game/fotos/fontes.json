@@ -1,0 +1,61 @@
+{
+ "slug": "dorfromantik-the-board-game",
+ "usar_na_pagina": true,
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 1600,
+   "altura": 1600,
+   "editora": "Pegasus Spiele",
+   "credito": "Imagem: Pegasus Spiele · edição alemã",
+   "pagina": "https://pegasus.de/en/Dorfromantik-Das-Brettspiel-Spiel-des-Jahres-2023/51240G",
+   "imagem": "https://cdn.pegasus.de/public/media/0c/e9/fd/1784725021/4250231731877_02_web.jpg?ts=1784725021",
+   "baixada_em": "2026-10-29",
+   "aprovada": true,
+   "texto": true,
+   "fora": true
+  },
+  {
+   "arquivo": "fotos/mesa-1.webp",
+   "tipo": "mesa",
+   "largura": 1600,
+   "altura": 1600,
+   "editora": "Pegasus Spiele",
+   "credito": "Imagem: Pegasus Spiele · edição alemã",
+   "pagina": "https://pegasus.de/en/Dorfromantik-Das-Brettspiel-Spiel-des-Jahres-2023/51240G",
+   "imagem": "https://cdn.pegasus.de/public/media/c6/a8/10/1740565763/dorfromantik-brettspiel-spielsituation.webp?ts=1740650745",
+   "baixada_em": "2026-10-29",
+   "aprovada": true,
+   "pessoas": true,
+   "fora": true
+  },
+  {
+   "arquivo": "fotos/mesa-2.webp",
+   "tipo": "mesa",
+   "largura": 1600,
+   "altura": 1075,
+   "editora": "Pegasus Spiele",
+   "credito": "Imagem: Pegasus Spiele · edição alemã",
+   "pagina": "https://pegasus.de/en/Dorfromantik-Das-Brettspiel-Spiel-des-Jahres-2023/51240G",
+   "imagem": "https://cdn.pegasus.de/public/media/b5/57/52/1717756964/4250231731877_05.jpg?ts=1767598659",
+   "baixada_em": "2026-10-29",
+   "aprovada": true,
+   "pessoas": true,
+   "fora": true
+  },
+  {
+   "arquivo": "fotos/jogabilidade-1.webp",
+   "tipo": "jogabilidade",
+   "largura": 1600,
+   "altura": 1018,
+   "editora": "Pegasus Spiele",
+   "credito": "Imagem: Pegasus Spiele · edição alemã",
+   "pagina": "https://pegasus.de/en/Dorfromantik-Das-Brettspiel-Spiel-des-Jahres-2023/51240G",
+   "imagem": "https://cdn.pegasus.de/public/media/54/d0/9c/1717756093/4250231731877_06.jpg?ts=1767598659",
+   "baixada_em": "2026-10-29",
+   "aprovada": true,
+   "principal": true
+  }
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "slug": "challengers",
+ "usar_na_pagina": true,
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 898,
+   "altura": 900,
+   "editora": "spiel-des-jahres.de",
+   "credito": "Imagem: spiel-des-jahres.de · foto do Spiel des Jahres",
+   "pagina": "https://www.spiel-des-jahres.de/spiele/challengers/",
+   "imagem": "https://www.spiel-des-jahres.de/wp-content/uploads/2023/05/challengers-1.jpg",
+   "baixada_em": "2026-10-29",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/jogabilidade-1.webp",
+   "tipo": "jogabilidade",
+   "largura": 1600,
+   "altura": 1067,
+   "editora": "spiel-des-jahres.de",
+   "credito": "Imagem: spiel-des-jahres.de · foto do Spiel des Jahres",
+   "pagina": "https://www.spiel-des-jahres.de/spiele/challengers/",
+   "imagem": "https://www.spiel-des-jahres.de/wp-content/uploads/2023/07/challengers_nom_sdj_2023_0293.jpeg",
+   "baixada_em": "2026-10-29",
+   "aprovada": true,
+   "principal": true
+  },
+  {
+   "arquivo": "fotos/jogabilidade-2.webp",
+   "tipo": "jogabilidade",
+   "largura": 1600,
+   "altura": 1067,
+   "editora": "spiel-des-jahres.de",
+   "credito": "Imagem: spiel-des-jahres.de · foto do Spiel des Jahres",
+   "pagina": "https://www.spiel-des-jahres.de/spiele/challengers/",
+   "imagem": "https://www.spiel-des-jahres.de/wp-content/uploads/2023/07/challengers_nom_sdj_2023_0301.jpeg",
+   "baixada_em": "2026-10-29",
+   "aprovada": true,
+   "jogar": true
+  }
+ ]
+}
