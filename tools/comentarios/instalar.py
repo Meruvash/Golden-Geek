@@ -4,7 +4,7 @@ Uso: python3 tools/comentarios/instalar.py
 Precisa de duas variáveis no ambiente (nunca no código nem no chat):
   CLOUDFLARE_API_TOKEN_COMENTARIOS  chave com Workers Scripts, D1 e Turnstile (editar) na conta e
                                     Workers Routes e DNS (editar) na zona eliteboardgamers.com.br
-  MODERACAO_SENHA                   senha do painel de moderação (24 caracteres ou mais), escolhida pelo editor
+  MODERACAO_SENHA                   senha do painel (24+ caracteres); sem ela, o instalador gera uma e a mostra uma vez
 Passos (pode rodar de novo sem estragar nada): banco D1 + tabelas, verificador anti-robô (Turnstile),
 publicação do worker em api.eliteboardgamers.com.br, segredos, conteudo/interacoes.json e um teste no ar.
 Depois: python3 tools/build_home.py para as páginas ganharem a seção.
@@ -47,8 +47,13 @@ def main():
     token, senha = os.environ.get("CLOUDFLARE_API_TOKEN_COMENTARIOS"), os.environ.get("MODERACAO_SENHA")
     if not token:
         sys.exit("Falta CLOUDFLARE_API_TOKEN_COMENTARIOS no ambiente.")
-    if not senha or len(senha) < 24:
-        sys.exit("Falta MODERACAO_SENHA no ambiente (24 caracteres ou mais).")
+    gerada = False
+    if not senha:
+        # sem senha cadastrada: gera uma forte e grava só na Cloudflare; o editor guarda depois como MODERACAO_SENHA
+        import secrets
+        senha, gerada = secrets.token_urlsafe(24), True
+    elif len(senha) < 24:
+        sys.exit("MODERACAO_SENHA precisa ter 24 caracteres ou mais.")
 
     # 1. banco D1 (reaproveita se já existir) e tabelas
     bancos = cf("GET", f"accounts/{CONTA}/d1/database?name=elite-interacoes", token)["result"]
@@ -79,7 +84,9 @@ def main():
     # 5. teste no ar (o certificado do domínio novo pode levar alguns minutos)
     for _ in range(20):
         try:
-            with urllib.request.urlopen(f"{API}/v1/pagina?p=/root/", timeout=20) as r:
+            # a Cloudflare barra o identificador padrão do Python (Python-urllib)
+            teste = urllib.request.Request(f"{API}/v1/pagina?p=/root/", headers={"User-Agent": "EliteBoardgamers-instalador/1.0"})
+            with urllib.request.urlopen(teste, timeout=20) as r:
                 print("ok serviço no ar:", r.read().decode()[:80])
                 break
         except Exception as ex:  # noqa: BLE001
@@ -88,6 +95,8 @@ def main():
     else:
         print("⚠️ o serviço ainda não respondeu (", ultimo, "). Espere alguns minutos e teste", f"{API}/v1/pagina?p=/root/")
     print("Painel de moderação:", f"{API}/painel")
+    if gerada:
+        print("SENHA GERADA (mostre ao editor uma vez; ele deve guardá-la como MODERACAO_SENHA nos segredos do ambiente):", senha)
 
 
 if __name__ == "__main__":

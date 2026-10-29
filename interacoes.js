@@ -14,8 +14,13 @@
   let disp = guarda.get("eb-disp");
   if (!disp) { disp = (crypto.randomUUID ? crypto.randomUUID() : String(Math.random()).slice(2) + Date.now()).replace(/[^a-z0-9-]/gi, ""); guarda.set("eb-disp", disp); }
   const curtidas = new Set(JSON.parse(guarda.get("eb-curtidas") || "[]"));
-  const btn = $(".curtir"), num = $(".curtir .n");
-  const marca = on => { btn.setAttribute("aria-pressed", on ? "true" : "false"); btn.querySelector(".rot").textContent = on ? "Curtido" : "Curtir"; };
+  // o botão da seção e o da barra de leitura (no rodapé da tela) mostram o mesmo estado
+  const btns = [...document.querySelectorAll(".curtir")], nums = [...document.querySelectorAll(".curtir .n")];
+  const num = { get textContent() { return nums[0].textContent; }, set textContent(v) { nums.forEach(n => { n.textContent = v; }); } };
+  const marca = on => btns.forEach(b => {
+    b.setAttribute("aria-pressed", on ? "true" : "false");
+    const r = b.querySelector(".rot"); if (r) r.textContent = on ? "Curtido" : "Curtir"; else b.setAttribute("aria-label", on ? "Curtido" : "Curtir");
+  });
   const data = iso => { const d = new Date(iso.replace(" ", "T") + "Z"); return d.toLocaleDateString("pt-BR", { day: "numeric", month: "long", year: "numeric" }); };
 
   const desenha = lista => {
@@ -25,9 +30,9 @@
   };
   fetch(`${api}/v1/pagina?p=${encodeURIComponent(p)}`).then(r => r.json()).then(d => {
     num.textContent = d.curtidas; marca(curtidas.has(p)); desenha(d.comentarios || []); sec.classList.add("pronto");
-  }).catch(() => { sec.hidden = true; });  // serviço fora do ar: a página segue sem a seção
+  }).catch(() => { sec.hidden = true; document.querySelectorAll(".barra-lt .curtir, .barra-lt a[href='#comentarios']").forEach(e => e.remove()); });  // serviço fora do ar: a página segue sem a seção
 
-  btn.addEventListener("click", async () => {
+  btns.forEach(b => b.addEventListener("click", async () => {
     const desfazer = curtidas.has(p);
     desfazer ? curtidas.delete(p) : curtidas.add(p);
     guarda.set("eb-curtidas", JSON.stringify([...curtidas]));
@@ -36,7 +41,7 @@
       const r = await fetch(`${api}/v1/curtir`, { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ p, d: disp, desfazer }) });
       num.textContent = (await r.json()).curtidas;
     } catch { /* sem conexão: fica a contagem otimista */ }
-  });
+  }));
 
   // anti-robô: carrega o Turnstile da Cloudflare só quando a pessoa começa a comentar
   const form = $(".com-form"), st = $(".com-st");

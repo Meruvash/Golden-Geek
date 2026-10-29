@@ -21,7 +21,7 @@ from imagens_resp import miniatura, srcset  # noqa: E402
 from build_sitemap import lastmod_registrado  # noqa: E402
 from build_review import INSTAGRAM, ROOT, SITE, WHATSAPP, e, icone, versao  # noqa: E402
 from og import url_cartao  # noqa: E402
-from layout import _config_interacoes, compartilhar, interacoes  # noqa: E402
+from layout import _config_interacoes, barra_leitura, botao_compartilhar, convite_compartilhar, interacoes  # noqa: E402
 from layout import CSS_BUSCA, CSS_TRILHA, cabecalho, rodape, trilha  # noqa: E402
 from noticias.checar_noticia import checar_dia, problemas  # noqa: E402
 
@@ -281,7 +281,7 @@ footer .in{display:flex;flex-wrap:wrap;gap:10px 20px;padding-top:18px;padding-bo
 }
 @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
 /* compartilhar */
-.nota article .compartilhe{margin-top:12px}.cp-home .cp-t,.cp-bloco .cp-t{font-size:1.05rem}
+.comunidade .cp{background:none;border:1px solid #3a3f48;color:var(--ink)}.comunidade .cp:hover{border-color:var(--gold);background:none}
 /* ===== Paleta de seções (referência: The Verge) =====
    Filete colorido em cima de cada seção, título em caixa normal, etiquetas preenchidas, linha de data em
    monoespaçada e faixas de cor alternando com os blocos claros de leitura. As faixas trocam as variáveis
@@ -645,9 +645,8 @@ def build_home():
   <section class="bloco brasil" id="chegando"><h2>Chegando ao Brasil · {e(rotulo.lower())} <a href="lancamentos/#{mes}">Calendário completo</a></h2><ul class="capas">{capas}</ul></section>
   <section class="bloco financ"><h2>Financiamentos</h2><ul>{financ}</ul></section>
   <section class="bloco resenhas"><h2>Últimas resenhas <a href="resenhas/">Ver todas</a></h2><ul class="res">{res}</ul></section>
-  <section class="bloco cp-home">{compartilhar("Elite Boardgamers: notícias, resenhas de jogos premiados e o calendário de lançamentos de jogos de tabuleiro no Brasil.", f"{SITE}/", "Tem um grupo de jogo? Mande o site para a turma.")}</section>
   <section class="bloco comunidade"><p>Notícias de tabuleiro com fonte e data, todos os dias. Entre no grupo para receber as novidades e conversar sobre jogos.</p>
-   <div class="acoes"><a class="btn zap" href="{WHATSAPP}" target="_blank" rel="noopener">{icone("zap")}Entrar no grupo do WhatsApp</a><a class="btn ig" href="{INSTAGRAM}" target="_blank" rel="noopener">{icone("insta")}@eliteboardgamers</a></div></section>
+   <div class="acoes"><a class="btn zap" href="{WHATSAPP}" target="_blank" rel="noopener">{icone("zap")}Entrar no grupo do WhatsApp</a><a class="btn ig" href="{INSTAGRAM}" target="_blank" rel="noopener">{icone("insta")}@eliteboardgamers</a>{botao_compartilhar("Elite Boardgamers: notícias, resenhas de jogos premiados e o calendário de lançamentos de jogos de tabuleiro no Brasil.", f"{SITE}/", "Compartilhar o site")}</div></section>
  </div>
 </main>
 {rodape(pre)}"""
@@ -660,7 +659,7 @@ def build_home():
  <p class="lide">O endereço pode ter mudado ou sido digitado errado. Veja o que há de novo:</p>
  <div class="jogos"><a href="/">Notícias de hoje</a><a href="/resenhas/">Resenhas de jogos premiados</a><a href="/consulta/">Consulta Golden Geek</a></div>
 </section></div></main>
-{rodape("/")}"""
+{rodape("/", "")}"""
     (ROOT / "404.html").write_text(pagina("Página não encontrada | Elite Boardgamers", "Página não encontrada.", "", capa_secao("noticias"), "/", corpo_404), encoding="utf-8")
     build_politica()
     (ROOT / "index.html").write_text(pagina(titulo, descr, f"{SITE}/", url_cartao(f"noticia-{m['slug']}") or f"{SITE}/{img_nota(m, '')}", pre, corpo, jsonld=seo.script(seo.site())), encoding="utf-8")
@@ -705,7 +704,6 @@ def build_nota(n):
   <span class="cat {CAT_CLASSE.get(n['categoria'], 'mercado')}">{e(n['categoria'])}</span> <span class="selo {sc}">{e(n['selo'])}</span>
   <h1>{e(n['titulo'])}</h1>
   <p class="meta"><time datetime="{n['publicado_em']}">{data_longa(n['data'])}</time> · Redação Elite Boardgamers</p>
-  {compartilhar(texto_cp, url, "", compacto=True)}
  </article>
  <div class="bloco abre">{fig}<p class="lide">{e(n['lide'])}</p></div>
  <section class="bloco importa"><h2>Por que importa</h2><p>{e(n['por_que_importa'])}</p><p class="assina">Análise Elite Boardgamers</p></section>
@@ -715,14 +713,14 @@ def build_nota(n):
  <section class="bloco"><h2>O que diz a crítica</h2>{f'<ul class="crit">{critica}</ul>' if critica else '<p class="corpo">Ainda não encontramos resenha publicada por veículo especializado.</p>'}</section>
  <section class="bloco quem"><div><h2>Interessa a você se…</h2><ul class="ok">{sim}</ul></div>{f'<div><h2>Pense duas vezes se…</h2><ul class="no">{nao}</ul></div>' if nao else ""}</section>
  <section class="bloco veredito {sc}"><h2>Nossa opinião</h2><span class="selo {sc}">{e(n['selo'])}</span><p>{e(n['veredito'])}</p></section>
- <section class="bloco cp-bloco">{compartilhar(texto_cp, url, "Conhece alguém que vai gostar? Mande esta notícia.")}</section>
+ {convite_compartilhar(texto_cp, url, "Conhece alguém que vai gostar?", "Mande esta notícia para a turma.")}
  {interacoes(pre, f"/noticias/{n['slug']}/")}
  {f'<section class="bloco"><h2>Jogos citados</h2><div class="jogos">{jogos}</div></section>' if jogos else ""}
  {f'<section class="bloco leia"><h2>Leia também</h2><ul>{leia}</ul></section>' if leia else ""}
  <section class="bloco fontes"><h2>Fontes</h2><ul>{fontes}</ul></section>
  <section class="bloco crivo"><h2>Por que esta notícia entrou</h2><p><b>{n['crivo']['pontos']} pontos no crivo editorial</b>{":" if n['crivo']['criterios'] else ""} {e("; ".join(n['crivo']['criterios']) or "(nenhum critério de pontuação)")}.</p></section>
 </div></main>
-{rodape(pre)}"""
+{rodape(pre, barra_leitura(texto_cp, url))}"""
     out = ROOT / "noticias" / n["slug"] / "index.html"
     out.parent.mkdir(parents=True, exist_ok=True)
     img = f"{SITE}/noticias/{n['imagem']['arquivo']}" if n.get("imagem") else capa_secao("noticias")

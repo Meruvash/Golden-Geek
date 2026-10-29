@@ -22,7 +22,9 @@ def chamar(caminho, corpo=None):
         sys.exit("Serviço não instalado (conteudo/interacoes.json sem api) ou MODERACAO_SENHA ausente.")
     req = urllib.request.Request(f"{api}/v1/moderacao/{caminho}", method="POST" if corpo else "GET",
                                  data=json.dumps(corpo).encode() if corpo else None,
-                                 headers={"Authorization": f"Bearer {senha}", "Content-Type": "application/json"})
+                                 headers={"Authorization": f"Bearer {senha}", "Content-Type": "application/json",
+                                          # a Cloudflare barra o identificador padrão do Python (Python-urllib)
+                                          "User-Agent": "EliteBoardgamers-moderacao/1.0"})
     with urllib.request.urlopen(req, timeout=30) as r:
         return json.load(r)
 

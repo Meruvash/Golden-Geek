@@ -298,7 +298,7 @@
    "sitemaps": [
     "https://www.zmangames.com/sitemap_index.xml"
    ],
-   "verificado_em": "2026-10-27"
+   "verificado_em": "2026-10-29"
   }
  },
  "stonemaiergames.com": {
@@ -850,6 +850,128 @@
     "https://www.deep-print-games.com/sitemap.html"
    ],
    "verificado_em": "2026-10-28"
+  }
+ },
+ "cmyk.games": {
+  "nome": "CMYK",
+  "apelidos": [
+   "CMYK"
+  ],
+  "site": "https://www.cmyk.games",
+  "plataforma": "shopify",
+  "estrategia": "sitemap+shopify_json",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.cmyk.games/sitemap.xml"
+   ],
+   "verificado_em": "2026-10-29"
+  }
+ },
+ "quined.nl": {
+  "nome": "Quined Games",
+  "apelidos": [
+   "Quined Games"
+  ],
+  "site": "https://quinedgames.com",
+  "plataforma": "wordpress",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://quinedgames.com/wp-sitemap.xml"
+   ],
+   "verificado_em": "2026-10-29"
+  }
+ },
+ "1moretimegames.com": {
+  "nome": "1 More Time Games",
+  "apelidos": [
+   "1 More Time Games"
+  ],
+  "site": "https://1moretimegames.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [],
+   "verificado_em": "2026-10-29"
+  }
+ },
+ "adamsapplegames.com": {
+  "nome": "Adam's Apple Games",
+  "apelidos": [
+   "Adam's Apple Games"
+  ],
+  "site": "https://adamsapplegames.com",
+  "plataforma": "woocommerce",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://adamsapplegames.com/media/",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "http://cdn.attracta.com/sitemap/4273372.xml.gz"
+   ],
+   "verificado_em": "2026-10-29"
+  }
+ },
+ "ravensburger.de": {
+  "nome": "Ravensburger",
+  "apelidos": [
+   "Ravensburger"
+  ],
+  "site": "https://www.ravensburger.de",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://www.ravensburger-gruppe.de/de/presse/index.html",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.ravensburger.de/sitemap.xml"
+   ],
+   "verificado_em": "2026-10-29"
+  }
+ },
+ "hans-im-glueck.de": {
+  "nome": "Hans im Glück",
+  "apelidos": [
+   "Hans im Glück"
+  ],
+  "site": "https://www.hans-im-glueck.de",
+  "plataforma": "woocommerce",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://www.hans-im-glueck.de/presse/",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [],
+   "verificado_em": "2026-10-29"
   }
  }
 }
