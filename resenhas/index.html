@@ -66,14 +66,14 @@ h1{font-size:clamp(2.2rem,6vw,3.4rem);line-height:1.05;font-weight:800;letter-sp
 .ress{font-size:.8rem;font-weight:700;color:#8a5200}
 .barra-f[hidden]{display:none}
 .barra-f{position:sticky;top:0;z-index:5;display:flex;align-items:center;gap:14px;margin:0 -16px 16px;padding:10px 16px;background:rgba(0,0,0,.86);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.btn-filtro{position:relative;display:inline-flex;align-items:center;gap:10px;min-height:46px;padding:10px 20px 10px 16px;border:0;border-radius:999px;font:inherit;font-weight:800;font-size:1rem;color:#14100a;cursor:pointer;
+.btn-filtro{position:relative;flex:none;white-space:nowrap;display:inline-flex;align-items:center;gap:10px;min-height:46px;padding:10px 20px 10px 16px;border:0;border-radius:999px;font:inherit;font-weight:800;font-size:1rem;color:#14100a;cursor:pointer;
  background:linear-gradient(180deg,#f3cd6a 0%,#e3b23c 55%,#c9962a 100%);box-shadow:0 1px 0 rgba(255,255,255,.45) inset,0 6px 18px rgba(227,178,60,.22);transition:transform .18s cubic-bezier(.16,1,.3,1),box-shadow .18s ease}
 .btn-filtro .ic{width:20px;height:20px;stroke-width:2.4}
 .btn-filtro:hover{transform:translateY(-1px);box-shadow:0 1px 0 rgba(255,255,255,.45) inset,0 10px 24px rgba(227,178,60,.32)}
 .btn-filtro:active{transform:scale(.97)}
 .badge{min-width:24px;height:24px;padding:0 7px;border-radius:999px;background:#14100a;color:var(--gold);font-size:.8rem;display:grid;place-items:center;font-variant-numeric:tabular-nums}
 .badge[hidden]{display:none}
-.resumo-f{color:var(--muted);font-weight:700;font-size:.92rem;font-variant-numeric:tabular-nums}
+.resumo-f{min-width:0;color:var(--muted);font-weight:700;font-size:.92rem;font-variant-numeric:tabular-nums}
 .barra-f .limpar{margin-left:auto}
 .folha{border:0;padding:0;color:var(--ink);background:#0f1115;max-width:none;max-height:none;margin:0;inset:auto 0 0 0;width:100%;height:auto;max-height:88dvh;border-radius:18px 18px 0 0;box-shadow:0 -10px 40px rgba(0,0,0,.6)}
 .folha::backdrop{background:rgba(0,0,0,.62)}
@@ -105,7 +105,13 @@ h1{font-size:clamp(2.2rem,6vw,3.4rem);line-height:1.05;font-weight:800;letter-sp
 .f select{font:inherit;font-size:.95rem;font-weight:600;letter-spacing:0;text-transform:none;min-height:42px;padding:8px 10px;border-radius:8px;border:1px solid #3a3f48;background:#000;color:var(--ink)}
 .ck{display:flex;align-items:center;gap:8px;font-size:.92rem;color:#c9cfd8;min-height:40px}.ck input{width:18px;height:18px;accent-color:var(--gold)}
 .limpar{font:inherit;font-weight:700;color:var(--gold);background:none;border:0;cursor:pointer;padding:8px 0;text-decoration:underline;text-underline-offset:3px}
-.vazio{padding:24px;border:1px dashed #3a3f48;border-radius:12px;text-align:center;color:#c9cfd8;margin-bottom:24px}
+.vazio{padding:24px;border:1px dashed #3a3f48;border-radius:12px;text-align:center;color:#c9cfd8;margin-bottom:24px;display:grid;gap:12px;justify-items:center}.vazio[hidden]{display:none}
+.sugere{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+.ativos{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:-6px 0 16px}.ativos[hidden]{display:none}
+.chip-at{display:inline-flex;align-items:center;gap:6px;min-height:36px;padding:4px 12px;border-radius:999px;border:1px solid var(--gold);background:#1a1508;color:var(--ink);font:inherit;font-size:.88rem;font-weight:700;cursor:pointer}.chip-at span{color:var(--gold);font-size:1.1rem;line-height:1}.chip-at:hover{background:#2a210b}
+.chips .n,.ck .n{margin-left:4px;font-size:.78rem;font-weight:600;color:var(--muted);font-variant-numeric:tabular-nums}.chips button[aria-pressed="true"] .n{color:#000}
+.chips button:disabled,.ck input:disabled{opacity:.38;cursor:not-allowed}.chips button:disabled:hover{border-color:#3a3f48}.ck:has(input:disabled){opacity:.6}
+.mais-f{border-top:1px solid var(--line);padding-top:12px}.mais-f summary{cursor:pointer;font-weight:800;color:var(--gold);min-height:40px;display:flex;align-items:center;gap:8px;list-style:none}.mais-f summary::-webkit-details-marker{display:none}.mais-f summary::after{content:"▾";content:"▾" / "";margin-left:auto}.mais-f[open] summary::after{content:"▴";content:"▴" / ""}.mais-b{display:grid;gap:16px;margin-top:12px}
 .grid li[hidden]{display:none}
 .card h2{font-size:1.2rem;line-height:1.2;font-weight:800}
 .tag{font-size:.92rem;color:#3a414c}
@@ -136,32 +142,34 @@ footer .in{display:flex;flex-wrap:wrap;gap:10px 20px;padding-top:18px;padding-bo
    <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M7 12h10M10 18h4"/></svg><span>Filtrar resenhas</span><b class="badge" id="n-ativos" hidden></b>
   </button>
   <span class="resumo-f" id="resumo-f" aria-live="polite">26 resenhas</span>
-  <button type="button" class="limpar" id="limpar-topo" hidden>Limpar</button>
  </div>
+ <div class="ativos" id="ativos" aria-label="Filtros ativos" role="group" hidden></div>
  <dialog class="folha" id="dlg-f" aria-labelledby="t-f">
   <form class="filtros" id="filtros" role="search">
    <header class="folha-h"><h2 id="t-f">Filtrar resenhas</h2><button type="button" class="fechar" id="fechar-f" aria-label="Fechar filtros"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></header>
    <div class="folha-b">
     <input class="busca" type="search" name="q" placeholder="Buscar jogo pelo nome" autocomplete="off" aria-label="Buscar jogo pelo nome">
-    <fieldset><legend>Jogadores</legend><div class="chips" data-campo="jogadores"><button type="button" data-v="1" aria-pressed="false">1</button><button type="button" data-v="2" aria-pressed="false">2</button><button type="button" data-v="3" aria-pressed="false">3</button><button type="button" data-v="4" aria-pressed="false">4</button><button type="button" data-v="5" aria-pressed="false">5</button><button type="button" data-v="6" aria-pressed="false">6+</button></div>
-     <label class="ck"><input type="checkbox" name="melhor"> só onde é a melhor contagem</label></fieldset>
-    <fieldset><legend>Melhor para</legend><div class="chips" data-campo="perfil"><button type="button" data-v="entrada" aria-pressed="false">Primeiro jogo moderno</button><button type="button" data-v="dupla" aria-pressed="false">Jogar a dois</button><button type="button" data-v="festa" aria-pressed="false">Festa e grupos grandes</button><button type="button" data-v="cooperativo" aria-pressed="false">Cooperativo</button><button type="button" data-v="solo" aria-pressed="false">Ótimo sozinho</button><button type="button" data-v="proximo" aria-pressed="false">O próximo passo</button><button type="button" data-v="estrategia" aria-pressed="false">Estrategistas</button><button type="button" data-v="campanha" aria-pressed="false">Campanha com grupo fixo</button><button type="button" data-v="tema" aria-pressed="false">Tema e história</button></div></fieldset>
-    <fieldset><legend>Duração</legend><div class="chips" data-campo="duracao"><button type="button" data-v="30" aria-pressed="false">Até 30 min</button><button type="button" data-v="60" aria-pressed="false">30 a 60 min</button><button type="button" data-v="120" aria-pressed="false">1 a 2 h</button><button type="button" data-v="999" aria-pressed="false">Mais de 2 h</button></div></fieldset>
-    <fieldset><legend>Complexidade <small>(peso BGG)</small></legend><div class="chips" data-campo="peso"><button type="button" data-v="leve" aria-pressed="false">Leve</button><button type="button" data-v="media" aria-pressed="false">Média</button><button type="button" data-v="pesada" aria-pressed="false">Pesada</button></div></fieldset>
-    <fieldset><legend>Estilo</legend><div class="chips" data-campo="estilo"><button type="button" data-v="Campanha" aria-pressed="false">Campanha</button><button type="button" data-v="Competitivo" aria-pressed="false">Competitivo</button><button type="button" data-v="Cooperativo" aria-pressed="false">Cooperativo</button><button type="button" data-v="Em equipes" aria-pressed="false">Em equipes</button><button type="button" data-v="Semicooperativo" aria-pressed="false">Semicooperativo</button></div></fieldset>
+    <fieldset><legend>Jogadores</legend><div class="chips" data-campo="jogadores"><button type="button" data-v="1" data-t="1" aria-pressed="false">1<small class="n"></small></button><button type="button" data-v="2" data-t="2" aria-pressed="false">2<small class="n"></small></button><button type="button" data-v="3" data-t="3" aria-pressed="false">3<small class="n"></small></button><button type="button" data-v="4" data-t="4" aria-pressed="false">4<small class="n"></small></button><button type="button" data-v="5" data-t="5" aria-pressed="false">5<small class="n"></small></button><button type="button" data-v="6" data-t="6+" aria-pressed="false">6+<small class="n"></small></button></div>
+     <label class="ck"><input type="checkbox" name="melhor"><span>só onde é a melhor contagem <small class="n"></small></span></label></fieldset>
+    <fieldset><legend>Melhor para</legend><div class="chips" data-campo="perfil"><button type="button" data-v="entrada" data-t="Primeiro jogo moderno" aria-pressed="false">Primeiro jogo moderno<small class="n"></small></button><button type="button" data-v="dupla" data-t="Jogar a dois" aria-pressed="false">Jogar a dois<small class="n"></small></button><button type="button" data-v="festa" data-t="Festa e grupos grandes" aria-pressed="false">Festa e grupos grandes<small class="n"></small></button><button type="button" data-v="cooperativo" data-t="Cooperativo" aria-pressed="false">Cooperativo<small class="n"></small></button><button type="button" data-v="solo" data-t="Ótimo sozinho" aria-pressed="false">Ótimo sozinho<small class="n"></small></button><button type="button" data-v="proximo" data-t="O próximo passo" aria-pressed="false">O próximo passo<small class="n"></small></button><button type="button" data-v="estrategia" data-t="Estrategistas" aria-pressed="false">Estrategistas<small class="n"></small></button><button type="button" data-v="campanha" data-t="Campanha com grupo fixo" aria-pressed="false">Campanha com grupo fixo<small class="n"></small></button><button type="button" data-v="tema" data-t="Tema e história" aria-pressed="false">Tema e história<small class="n"></small></button></div></fieldset>
+    <fieldset><legend>Duração</legend><div class="chips" data-campo="duracao"><button type="button" data-v="30" data-t="Até 30 min" aria-pressed="false">Até 30 min<small class="n"></small></button><button type="button" data-v="60" data-t="30 a 60 min" aria-pressed="false">30 a 60 min<small class="n"></small></button><button type="button" data-v="120" data-t="1 a 2 h" aria-pressed="false">1 a 2 h<small class="n"></small></button><button type="button" data-v="999" data-t="Mais de 2 h" aria-pressed="false">Mais de 2 h<small class="n"></small></button></div></fieldset>
+    <fieldset><legend>Complexidade <small>(peso BGG)</small></legend><div class="chips" data-campo="peso"><button type="button" data-v="leve" data-t="Leve" aria-pressed="false">Leve<small class="n"></small></button><button type="button" data-v="media" data-t="Média" aria-pressed="false">Média<small class="n"></small></button><button type="button" data-v="pesada" data-t="Pesada" aria-pressed="false">Pesada<small class="n"></small></button></div></fieldset>
+    <details class="mais-f" id="mais-f"><summary>Mais filtros <b class="badge" id="n-mais" hidden></b></summary><div class="mais-b">
+    <fieldset><legend>Estilo</legend><div class="chips" data-campo="estilo"><button type="button" data-v="Campanha" data-t="Campanha" aria-pressed="false">Campanha<small class="n"></small></button><button type="button" data-v="Competitivo" data-t="Competitivo" aria-pressed="false">Competitivo<small class="n"></small></button><button type="button" data-v="Cooperativo" data-t="Cooperativo" aria-pressed="false">Cooperativo<small class="n"></small></button><button type="button" data-v="Em equipes" data-t="Em equipes" aria-pressed="false">Em equipes<small class="n"></small></button><button type="button" data-v="Semicooperativo" data-t="Semicooperativo" aria-pressed="false">Semicooperativo<small class="n"></small></button></div></fieldset>
     <div class="linha-f">
-     <label class="f">Mecânica<select name="mecanica"><option value="">Todos</option><option value="Abstrato">Abstrato</option><option value="Alocação de trabalhadores">Alocação de trabalhadores</option><option value="Arriscar a sorte">Arriscar a sorte</option><option value="Colocação de peças">Colocação de peças</option><option value="Construção de baralho">Construção de baralho</option><option value="Construção de motor">Construção de motor</option><option value="Dados">Dados</option><option value="Dedução">Dedução</option><option value="Draft">Draft</option><option value="Exploração">Exploração</option><option value="Facções assimétricas">Facções assimétricas</option><option value="Investigação">Investigação</option><option value="Legacy">Legacy</option><option value="Palavras">Palavras</option><option value="Programação de ações">Programação de ações</option><option value="Vazas">Vazas</option></select></label>
-     <label class="f">Venceu o prêmio<select name="premio"><option value="">Todos</option><option value="As d&#x27;Or">As d&#x27;Or</option><option value="Deutscher Spiele Preis">Deutscher Spiele Preis</option><option value="Golden Geek">Golden Geek</option><option value="Kennerspiel des Jahres">Kennerspiel des Jahres</option><option value="Spiel des Jahres">Spiel des Jahres</option></select></label>
-     <label class="f">Pessoa mais nova na mesa<select name="idade"><option value="">Todos</option><option value="8">8 anos</option><option value="10">10 anos</option><option value="12">12 anos</option><option value="14">14 anos</option></select></label>
-     <label class="f">Preço até<select name="preco"><option value="">Todos</option><option value="150">R$ 150</option><option value="300">R$ 300</option><option value="500">R$ 500</option></select></label>
+     <label class="f">Mecânica<select name="mecanica"><option value="">Todos</option><option value="Abstrato" data-t="Abstrato">Abstrato</option><option value="Alocação de trabalhadores" data-t="Alocação de trabalhadores">Alocação de trabalhadores</option><option value="Arriscar a sorte" data-t="Arriscar a sorte">Arriscar a sorte</option><option value="Colocação de peças" data-t="Colocação de peças">Colocação de peças</option><option value="Construção de baralho" data-t="Construção de baralho">Construção de baralho</option><option value="Construção de motor" data-t="Construção de motor">Construção de motor</option><option value="Dados" data-t="Dados">Dados</option><option value="Dedução" data-t="Dedução">Dedução</option><option value="Draft" data-t="Draft">Draft</option><option value="Exploração" data-t="Exploração">Exploração</option><option value="Facções assimétricas" data-t="Facções assimétricas">Facções assimétricas</option><option value="Investigação" data-t="Investigação">Investigação</option><option value="Legacy" data-t="Legacy">Legacy</option><option value="Palavras" data-t="Palavras">Palavras</option><option value="Programação de ações" data-t="Programação de ações">Programação de ações</option><option value="Vazas" data-t="Vazas">Vazas</option></select></label>
+     <label class="f">Venceu o prêmio<select name="premio"><option value="">Todos</option><option value="As d&#x27;Or" data-t="As d&#x27;Or">As d&#x27;Or</option><option value="Deutscher Spiele Preis" data-t="Deutscher Spiele Preis">Deutscher Spiele Preis</option><option value="Golden Geek" data-t="Golden Geek">Golden Geek</option><option value="Kennerspiel des Jahres" data-t="Kennerspiel des Jahres">Kennerspiel des Jahres</option><option value="Spiel des Jahres" data-t="Spiel des Jahres">Spiel des Jahres</option></select></label>
+     <label class="f">Pessoa mais nova na mesa<select name="idade"><option value="">Todos</option><option value="8" data-t="8 anos">8 anos</option><option value="10" data-t="10 anos">10 anos</option><option value="12" data-t="12 anos">12 anos</option><option value="14" data-t="14 anos">14 anos</option></select></label>
+     <label class="f">Preço até<select name="preco"><option value="">Todos</option><option value="150" data-t="R$ 150">R$ 150</option><option value="300" data-t="R$ 300">R$ 300</option><option value="500" data-t="R$ 500">R$ 500</option></select></label>
     </div>
-    <div class="linha-f"><label class="ck"><input type="checkbox" name="solo"> tem modo solo</label><label class="ck"><input type="checkbox" name="pt"> edição em português</label></div>
+    <div class="linha-f"><label class="ck"><input type="checkbox" name="solo"><span>tem modo solo <small class="n"></small></span></label><label class="ck"><input type="checkbox" name="pt"><span>edição em português <small class="n"></small></span></label></div>
+    </div></details>
     <label class="f">Ordenar por<select name="ordem"><option value="">Mais recentes</option><option value="nota">Nota BGG</option><option value="leve">Mais leve</option><option value="pesado">Mais pesado</option><option value="curto">Mais curto</option><option value="preco">Menor preço</option></select></label>
    </div>
    <footer class="folha-p"><button type="reset" class="limpar">Limpar</button><button type="button" class="ver" id="ver-f">Ver 26 resenhas</button></footer>
   </form>
  </dialog>
- <p class="vazio" id="vazio" hidden>Nenhuma resenha com esses filtros. <button type="button" class="limpar" id="limpar2">Limpar filtros</button></p>
+ <div class="vazio" id="vazio" hidden><p>Nenhuma resenha com esses filtros.</p><div class="sugere" id="sugere"></div><button type="button" class="limpar" id="limpar2">Limpar todos os filtros</button></div>
  <ul class="grid" id="lista">
   <li data-f="{&quot;jogadores&quot;:[1,4],&quot;melhor&quot;:[3],&quot;duracao&quot;:[90,150],&quot;peso&quot;:3.97,&quot;idade&quot;:14,&quot;solo&quot;:true,&quot;portugues&quot;:true,&quot;estilos&quot;:[&quot;Competitivo&quot;],&quot;mecanicas&quot;:[&quot;Alocação de trabalhadores&quot;],&quot;premios&quot;:[&quot;Golden Geek&quot;],&quot;preco&quot;:559,&quot;nota&quot;:8.3,&quot;melhor_para&quot;:&quot;estrategia&quot;,&quot;nome&quot;:&quot;Galactic Cruise: resenha do Jogo do Ano pesado do Golden Geek Galactic Cruise&quot;}"><a class="card" href="../galactic-cruise/">
    <span class="capa"><img src="../galactic-cruise/capa.jpg?v=590b4278" srcset="../img/galactic-cruise/capa-3035b3a0-400.webp 400w, ../galactic-cruise/capa.jpg 800w" sizes="(min-width: 700px) 360px, 50vw" width="800" height="800" alt="Infográfico Elite Boardgamers sobre o jogo Galactic Cruise" loading="lazy"><span class="nota n9" aria-label="Nota BGG 8.3">8,3</span></span>
@@ -173,7 +181,7 @@ footer .in{display:flex;flex-wrap:wrap;gap:10px 20px;padding-top:18px;padding-bo
     <span class="vit">1 vitória em prêmios</span>
    </span>
   </a></li>
-  <li data-f="{&quot;jogadores&quot;:[2,4],&quot;melhor&quot;:[4],&quot;duracao&quot;:[60,90],&quot;peso&quot;:3.8,&quot;idade&quot;:14,&quot;solo&quot;:false,&quot;portugues&quot;:true,&quot;estilos&quot;:[&quot;Competitivo&quot;],&quot;mecanicas&quot;:[&quot;Facções assimétricas&quot;],&quot;premios&quot;:[&quot;Golden Geek&quot;],&quot;preco&quot;:429,&quot;nota&quot;:8.1,&quot;melhor_para&quot;:&quot;estrategia&quot;,&quot;nome&quot;:&quot;Root Root: resenha do jogo de guerra com facções assimétricas&quot;}"><a class="card" href="../root/">
+  <li data-f="{&quot;jogadores&quot;:[2,4],&quot;melhor&quot;:[4],&quot;duracao&quot;:[60,90],&quot;peso&quot;:3.8,&quot;idade&quot;:14,&quot;solo&quot;:false,&quot;portugues&quot;:true,&quot;estilos&quot;:[&quot;Competitivo&quot;],&quot;mecanicas&quot;:[&quot;Facções assimétricas&quot;],&quot;premios&quot;:[&quot;Golden Geek&quot;],&quot;preco&quot;:429,&quot;nota&quot;:8.1,&quot;melhor_para&quot;:&quot;estrategia&quot;,&quot;nome&quot;:&quot;Root: resenha do jogo de guerra com facções assimétricas Root&quot;}"><a class="card" href="../root/">
    <span class="capa"><img src="../root/capa.jpg?v=f05edbd9" srcset="../img/root/capa-9cdbb265-400.webp 400w, ../root/capa.jpg 800w" sizes="(min-width: 700px) 360px, 50vw" width="800" height="800" alt="Infográfico Elite Boardgamers sobre o jogo Root" loading="lazy"><span class="nota n9" aria-label="Nota BGG 8.1">8,1</span></span>
    <span class="corpo">
     <span class="selo sim">Estrategistas</span>
@@ -183,7 +191,7 @@ footer .in{display:flex;flex-wrap:wrap;gap:10px 20px;padding-top:18px;padding-bo
     <span class="vit">4 vitórias em prêmios</span>
    </span>
   </a></li>
-  <li data-f="{&quot;jogadores&quot;:[1,5],&quot;melhor&quot;:[2,3],&quot;duracao&quot;:[40,100],&quot;peso&quot;:2.8,&quot;idade&quot;:12,&quot;solo&quot;:true,&quot;portugues&quot;:true,&quot;estilos&quot;:[&quot;Competitivo&quot;],&quot;mecanicas&quot;:[&quot;Colocação de peças&quot;],&quot;premios&quot;:[&quot;Deutscher Spiele Preis&quot;],&quot;preco&quot;:288,&quot;nota&quot;:7.7,&quot;melhor_para&quot;:&quot;proximo&quot;,&quot;nome&quot;:&quot;Santuário ou Ark Nova? Resenha do vencedor do DSP 2026 Santuário&quot;}"><a class="card" href="../santuario/">
+  <li data-f="{&quot;jogadores&quot;:[1,5],&quot;melhor&quot;:[2,3],&quot;duracao&quot;:[40,100],&quot;peso&quot;:2.8,&quot;idade&quot;:12,&quot;solo&quot;:true,&quot;portugues&quot;:true,&quot;estilos&quot;:[&quot;Competitivo&quot;],&quot;mecanicas&quot;:[&quot;Colocação de peças&quot;],&quot;premios&quot;:[&quot;Deutscher Spiele Preis&quot;],&quot;preco&quot;:288,&quot;nota&quot;:7.7,&quot;melhor_para&quot;:&quot;proximo&quot;,&quot;nome&quot;:&quot;Santuário Santuário ou Ark Nova? Resenha do vencedor do DSP 2026&quot;}"><a class="card" href="../santuario/">
    <span class="capa"><img src="../santuario/capa.jpg?v=f0ac7418" srcset="../img/santuario/capa-1131a063-400.webp 400w, ../santuario/capa.jpg 800w" sizes="(min-width: 700px) 360px, 50vw" width="800" height="800" alt="Infográfico Elite Boardgamers sobre o jogo Santuário" loading="lazy"><span class="nota n7" aria-label="Nota BGG 7.7">7,7</span></span>
    <span class="corpo">
     <span class="selo sim">O próximo passo</span>
@@ -193,7 +201,7 @@ footer .in{display:flex;flex-wrap:wrap;gap:10px 20px;padding-top:18px;padding-bo
     <span class="vit">1 vitória em prêmios</span>
    </span>
   </a></li>
-  <li data-f="{&quot;jogadores&quot;:[1,5],&quot;melhor&quot;:[1,3,4,5],&quot;duracao&quot;:[90,115],&quot;peso&quot;:null,&quot;idade&quot;:14,&quot;solo&quot;:true,&quot;portugues&quot;:true,&quot;estilos&quot;:[&quot;Competitivo&quot;],&quot;mecanicas&quot;:[&quot;Facções assimétricas&quot;],&quot;premios&quot;:[&quot;As d&#x27;Or&quot;,&quot;Golden Geek&quot;],&quot;preco&quot;:581,&quot;nota&quot;:null,&quot;melhor_para&quot;:&quot;estrategia&quot;,&quot;nome&quot;:&quot;Scythe: resenha do Jogo do Ano 2016 no Golden Geek Scythe&quot;}"><a class="card" href="../scythe/">
+  <li data-f="{&quot;jogadores&quot;:[1,5],&quot;melhor&quot;:[1,3,4,5],&quot;duracao&quot;:[90,115],&quot;peso&quot;:null,&quot;idade&quot;:14,&quot;solo&quot;:true,&quot;portugues&quot;:true,&quot;estilos&quot;:[&quot;Competitivo&quot;],&quot;mecanicas&quot;:[&quot;Facções assimétricas&quot;],&quot;premios&quot;:[&quot;As d&#x27;Or&quot;,&quot;Golden Geek&quot;],&quot;preco&quot;:581,&quot;nota&quot;:null,&quot;melhor_para&quot;:&quot;estrategia&quot;,&quot;nome&quot;:&quot;Scythe Scythe: resenha do Jogo do Ano 2016 no Golden Geek&quot;}"><a class="card" href="../scythe/">
    <span class="capa"><img src="../scythe/capa.jpg?v=59738b6e" srcset="../img/scythe/capa-691db600-400.webp 400w, ../scythe/capa.jpg 800w" sizes="(min-width: 700px) 360px, 50vw" width="800" height="800" alt="Infográfico Elite Boardgamers sobre o jogo Scythe" loading="lazy"></span>
    <span class="corpo">
     <span class="selo sim">Estrategistas</span>
@@ -203,7 +211,7 @@ footer .in{display:flex;flex-wrap:wrap;gap:10px 20px;padding-top:18px;padding-bo
     <span class="vit">6 vitórias em prêmios</span>
    </span>
   </a></li>
-  <li data-f="{&quot;jogadores&quot;:[2,6],&quot;melhor&quot;:[5,6],&quot;duracao&quot;:[30,40],&quot;peso&quot;:null,&quot;idade&quot;:10,&quot;solo&quot;:false,&quot;portugues&quot;:true,&quot;estilos&quot;:[&quot;Competitivo&quot;],&quot;mecanicas&quot;:[&quot;Programação de ações&quot;],&quot;premios&quot;:[&quot;As d&#x27;Or&quot;,&quot;Spiel des Jahres&quot;],&quot;preco&quot;:259,&quot;nota&quot;:7.0,&quot;melhor_para&quot;:&quot;festa&quot;,&quot;nome&quot;:&quot;Colt Express Colt Express: resenha do assalto ao trem que dá errado&quot;}"><a class="card" href="../colt-express/">
+  <li data-f="{&quot;jogadores&quot;:[2,6],&quot;melhor&quot;:[5,6],&quot;duracao&quot;:[30,40],&quot;peso&quot;:null,&quot;idade&quot;:10,&quot;solo&quot;:false,&quot;portugues&quot;:true,&quot;estilos&quot;:[&quot;Competitivo&quot;],&quot;mecanicas&quot;:[&quot;Programação de ações&quot;],&quot;premios&quot;:[&quot;As d&#x27;Or&quot;,&quot;Spiel des Jahres&quot;],&quot;preco&quot;:259,&quot;nota&quot;:7.0,&quot;melhor_para&quot;:&quot;festa&quot;,&quot;nome&quot;:&quot;Colt Express: resenha do assalto ao trem que dá errado Colt Express&quot;}"><a class="card" href="../colt-express/">
    <span class="capa"><img src="../colt-express/capa.jpg?v=4b3bdc48" srcset="../img/colt-express/capa-d874a609-400.webp 400w, ../colt-express/capa.jpg 800w" sizes="(min-width: 700px) 360px, 50vw" width="800" height="800" alt="Infográfico Elite Boardgamers sobre o jogo Colt Express" loading="lazy"><span class="nota n7" aria-label="Nota BGG 7.0">7,0</span></span>
    <span class="corpo">
     <span class="selo sim">Festa e grupos grandes</span>
@@ -213,7 +221,7 @@ footer .in{display:flex;flex-wrap:wrap;gap:10px 20px;padding-top:18px;padding-bo
     <span class="vit">2 vitórias em prêmios</span>
    </span>
   </a></li>
-  <li data-f="{&quot;jogadores&quot;:[1,5],&quot;melhor&quot;:[2,3],&quot;duracao&quot;:[120,180],&quot;peso&quot;:null,&quot;idade&quot;:16,&quot;solo&quot;:true,&quot;portugues&quot;:true,&quot;estilos&quot;:[&quot;Cooperativo&quot;],&quot;mecanicas&quot;:[&quot;Investigação&quot;],&quot;premios&quot;:[&quot;As d&#x27;Or&quot;],&quot;preco&quot;:270,&quot;nota&quot;:null,&quot;melhor_para&quot;:&quot;tema&quot;,&quot;nome&quot;:&quot;Detective: A Modern Crime Board Game Detective Detective: resenha do jogo de investigação policial&quot;}"><a class="card" href="../detective/">
+  <li data-f="{&quot;jogadores&quot;:[1,5],&quot;melhor&quot;:[2,3],&quot;duracao&quot;:[120,180],&quot;peso&quot;:null,&quot;idade&quot;:16,&quot;solo&quot;:true,&quot;portugues&quot;:true,&quot;estilos&quot;:[&quot;Cooperativo&quot;],&quot;mecanicas&quot;:[&quot;Investigação&quot;],&quot;premios&quot;:[&quot;As d&#x27;Or&quot;],&quot;preco&quot;:270,&quot;nota&quot;:null,&quot;melhor_para&quot;:&quot;tema&quot;,&quot;nome&quot;:&quot;Detective: resenha do jogo de investigação policial Detective Detective: A Modern Crime Board Game&quot;}"><a class="card" href="../detective/">
    <span class="capa"><img src="../detective/capa.jpg?v=3df50aa7" srcset="../img/detective/capa-f0eae8be-400.webp 400w, ../detective/capa.jpg 800w" sizes="(min-width: 700px) 360px, 50vw" width="800" height="800" alt="Infográfico Elite Boardgamers sobre o jogo Detective" loading="lazy"></span>
    <span class="corpo">
     <span class="selo publico">Tema e história</span>
@@ -223,7 +231,7 @@ footer .in{display:flex;flex-wrap:wrap;gap:10px 20px;padding-top:18px;padding-bo
     <span class="vit">1 vitória em prêmios</span>
    </span>
   </a></li>
-  <li data-f="{&quot;jogadores&quot;:[1,4],&quot;melhor&quot;:[1,2,3],&quot;duracao&quot;:[30,45],&quot;peso&quot;:1.8,&quot;idade&quot;:14,&quot;solo&quot;:true,&quot;portugues&quot;:true,&quot;estilos&quot;:[&quot;Competitivo&quot;],&quot;mecanicas&quot;:[&quot;Colocação de peças&quot;],&quot;premios&quot;:[&quot;Golden Geek&quot;,&quot;Spiel des Jahres&quot;],&quot;preco&quot;:296,&quot;nota&quot;:7.9,&quot;melhor_para&quot;:&quot;entrada&quot;,&quot;nome&quot;:&quot;Cascadia: resenha do quebra-cabeça de natureza em 30 min Cascadia&quot;}"><a class="card" href="../cascadia/">
+  <li data-f="{&quot;jogadores&quot;:[1,4],&quot;melhor&quot;:[1,2,3],&quot;duracao&quot;:[30,45],&quot;peso&quot;:1.8,&quot;idade&quot;:14,&quot;solo&quot;:true,&quot;portugues&quot;:true,&quot;estilos&quot;:[&quot;Competitivo&quot;],&quot;mecanicas&quot;:[&quot;Colocação de peças&quot;],&quot;premios&quot;:[&quot;Golden Geek&quot;,&quot;Spiel des Jahres&quot;],&quot;preco&quot;:296,&quot;nota&quot;:7.9,&quot;melhor_para&quot;:&quot;entrada&quot;,&quot;nome&quot;:&quot;Cascadia Cascadia: resenha do quebra-cabeça de natureza em 30 min&quot;}"><a class="card" href="../cascadia/">
    <span class="capa"><img src="../cascadia/capa.jpg?v=ed43850b" srcset="../img/cascadia/capa-40ada3d7-400.webp 400w, ../cascadia/capa.jpg 800w" sizes="(min-width: 700px) 360px, 50vw" width="800" height="800" alt="Infográfico Elite Boardgamers sobre o jogo Cascadia" loading="lazy"><span class="nota n7" aria-label="Nota BGG 7.9">7,9</span></span>
    <span class="corpo">
     <span class="selo sim">Primeiro jogo moderno</span>
@@ -273,7 +281,7 @@ footer .in{display:flex;flex-wrap:wrap;gap:10px 20px;padding-top:18px;padding-bo
     <span class="vit">1 vitória em prêmios</span>
    </span>
   </a></li>
-  <li data-f="{&quot;jogadores&quot;:[2,5],&quot;melhor&quot;:[4],&quot;duracao&quot;:[30,60],&quot;peso&quot;:2.0,&quot;idade&quot;:10,&quot;solo&quot;:false,&quot;portugues&quot;:true,&quot;estilos&quot;:[&quot;Cooperativo&quot;],&quot;mecanicas&quot;:[&quot;Dedução&quot;],&quot;premios&quot;:[&quot;Spiel des Jahres&quot;],&quot;preco&quot;:279,&quot;nota&quot;:8.0,&quot;melhor_para&quot;:&quot;cooperativo&quot;,&quot;nome&quot;:&quot;Bomb Busters: resenha do Spiel des Jahres 2025 Bomb Busters&quot;}"><a class="card" href="../bomb-busters/">
+  <li data-f="{&quot;jogadores&quot;:[2,5],&quot;melhor&quot;:[4],&quot;duracao&quot;:[30,60],&quot;peso&quot;:2.0,&quot;idade&quot;:10,&quot;solo&quot;:false,&quot;portugues&quot;:true,&quot;estilos&quot;:[&quot;Cooperativo&quot;],&quot;mecanicas&quot;:[&quot;Dedução&quot;],&quot;premios&quot;:[&quot;Spiel des Jahres&quot;],&quot;preco&quot;:279,&quot;nota&quot;:8.0,&quot;melhor_para&quot;:&quot;cooperativo&quot;,&quot;nome&quot;:&quot;Bomb Busters Bomb Busters: resenha do Spiel des Jahres 2025&quot;}"><a class="card" href="../bomb-busters/">
    <span class="capa"><img src="../bomb-busters/capa.jpg?v=2e296e62" srcset="../img/bomb-busters/capa-a7fa45d5-400.webp 400w, ../bomb-busters/capa.jpg 800w" sizes="(min-width: 700px) 360px, 50vw" width="800" height="800" alt="Infográfico Elite Boardgamers sobre o jogo Bomb Busters" loading="lazy"><span class="nota n9" aria-label="Nota BGG 8.0">8,0</span></span>
    <span class="corpo">
     <span class="selo sim">Cooperativo</span>
@@ -303,7 +311,7 @@ footer .in{display:flex;flex-wrap:wrap;gap:10px 20px;padding-top:18px;padding-bo
     <span class="vit">1 vitória em prêmios</span>
    </span>
   </a></li>
-  <li data-f="{&quot;jogadores&quot;:[1,4],&quot;melhor&quot;:[1],&quot;duracao&quot;:[30,120],&quot;peso&quot;:2.88,&quot;idade&quot;:12,&quot;solo&quot;:true,&quot;portugues&quot;:true,&quot;estilos&quot;:[&quot;Competitivo&quot;],&quot;mecanicas&quot;:[&quot;Construção de baralho&quot;,&quot;Exploração&quot;],&quot;premios&quot;:[&quot;Deutscher Spiele Preis&quot;,&quot;Golden Geek&quot;],&quot;preco&quot;:584,&quot;nota&quot;:8.1,&quot;melhor_para&quot;:&quot;solo&quot;,&quot;nome&quot;:&quot;Lost Ruins of Arnak: resenha da expedição de cartas Lost Ruins of Arnak&quot;}"><a class="card" href="../arnak/">
+  <li data-f="{&quot;jogadores&quot;:[1,4],&quot;melhor&quot;:[1],&quot;duracao&quot;:[30,120],&quot;peso&quot;:2.88,&quot;idade&quot;:12,&quot;solo&quot;:true,&quot;portugues&quot;:true,&quot;estilos&quot;:[&quot;Competitivo&quot;],&quot;mecanicas&quot;:[&quot;Construção de baralho&quot;,&quot;Exploração&quot;],&quot;premios&quot;:[&quot;Deutscher Spiele Preis&quot;,&quot;Golden Geek&quot;],&quot;preco&quot;:584,&quot;nota&quot;:8.1,&quot;melhor_para&quot;:&quot;solo&quot;,&quot;nome&quot;:&quot;Lost Ruins of Arnak Lost Ruins of Arnak: resenha da expedição de cartas&quot;}"><a class="card" href="../arnak/">
    <span class="capa"><img src="../arnak/capa.jpg?v=dcec2298" srcset="../img/arnak/capa-eba09b71-400.webp 400w, ../arnak/capa.jpg 800w" sizes="(min-width: 700px) 360px, 50vw" width="800" height="800" alt="Infográfico Elite Boardgamers sobre o jogo Lost Ruins of Arnak" loading="lazy"><span class="nota n9" aria-label="Nota BGG 8.1">8,1</span></span>
    <span class="corpo">
     <span class="selo sim">Ótimo sozinho</span>
@@ -403,7 +411,7 @@ footer .in{display:flex;flex-wrap:wrap;gap:10px 20px;padding-top:18px;padding-bo
     <span class="vit">2 vitórias em prêmios</span>
    </span>
   </a></li>
-  <li data-f="{&quot;jogadores&quot;:[2,4],&quot;melhor&quot;:[2],&quot;duracao&quot;:[30,45],&quot;peso&quot;:1.76,&quot;idade&quot;:8,&quot;solo&quot;:false,&quot;portugues&quot;:true,&quot;estilos&quot;:[&quot;Competitivo&quot;],&quot;mecanicas&quot;:[&quot;Abstrato&quot;,&quot;Draft&quot;],&quot;premios&quot;:[&quot;As d&#x27;Or&quot;,&quot;Deutscher Spiele Preis&quot;,&quot;Golden Geek&quot;,&quot;Spiel des Jahres&quot;],&quot;preco&quot;:229,&quot;nota&quot;:7.7,&quot;melhor_para&quot;:&quot;entrada&quot;,&quot;nome&quot;:&quot;Azul: resenha de um dos melhores jogos de entrada Azul&quot;}"><a class="card" href="../azul/">
+  <li data-f="{&quot;jogadores&quot;:[2,4],&quot;melhor&quot;:[2],&quot;duracao&quot;:[30,45],&quot;peso&quot;:1.76,&quot;idade&quot;:8,&quot;solo&quot;:false,&quot;portugues&quot;:true,&quot;estilos&quot;:[&quot;Competitivo&quot;],&quot;mecanicas&quot;:[&quot;Abstrato&quot;,&quot;Draft&quot;],&quot;premios&quot;:[&quot;As d&#x27;Or&quot;,&quot;Deutscher Spiele Preis&quot;,&quot;Golden Geek&quot;,&quot;Spiel des Jahres&quot;],&quot;preco&quot;:229,&quot;nota&quot;:7.7,&quot;melhor_para&quot;:&quot;entrada&quot;,&quot;nome&quot;:&quot;Azul Azul: resenha de um dos melhores jogos de entrada&quot;}"><a class="card" href="../azul/">
    <span class="capa"><img src="../azul/capa.jpg?v=e0ccc30b" srcset="../img/azul/capa-7c22485a-400.webp 400w, ../azul/capa.jpg 800w" sizes="(min-width: 700px) 360px, 50vw" width="800" height="800" alt="Infográfico Elite Boardgamers sobre o jogo Azul" loading="lazy"><span class="nota n7" aria-label="Nota BGG 7.7">7,7</span></span>
    <span class="corpo">
     <span class="selo sim">Primeiro jogo moderno</span>
@@ -431,13 +439,19 @@ footer .in{display:flex;flex-wrap:wrap;gap:10px 20px;padding-top:18px;padding-bo
  <a href="https://www.instagram.com/eliteboardgamers/" target="_blank" rel="noopener">Instagram @eliteboardgamers</a><a href="https://chat.whatsapp.com/IgQQkJdSkzHBaEq3UwFeAo" target="_blank" rel="noopener">Grupo do WhatsApp</a>
 </div></footer>
 <script>
+
 (() => {
   const form = document.getElementById("filtros"), lista = document.getElementById("lista"), dlg = document.getElementById("dlg-f");
   if (!dlg.showModal) return;  // navegador sem <dialog>: fica a lista completa
   const itens = [...lista.children].map((li, i) => ({li, i, d: JSON.parse(li.dataset.f)}));
   const total = itens.length, $ = id => document.getElementById(id);
-  const norm = t => t.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+  const norm = t => t.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+  const esc = t => String(t).replace(/[&<>"]/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"})[c]);
   const chips = {};
+  const NOMES = {q: "Nome", jogadores: "Jogadores", melhor: "Melhor contagem", perfil: "Melhor para", duracao: "Duração", peso: "Complexidade",
+                 estilo: "Estilo", mecanica: "Mecânica", premio: "Prêmio", idade: "Pessoa mais nova", preco: "Preço até", solo: "Modo solo", pt: "Em português"};
+  const MAIS = ["estilo", "mecanica", "premio", "idade", "preco", "solo", "pt"];  // os que ficam em "Mais filtros"
+  const grupo = k => form.querySelector(`.chips[data-campo="${k}"]`);
   const ler = () => {
     const v = Object.fromEntries(new FormData(form));
     form.querySelectorAll(".chips").forEach(g => v[g.dataset.campo] = chips[g.dataset.campo] || "");
@@ -468,6 +482,7 @@ footer .in{display:flex;flex-wrap:wrap;gap:10px 20px;padding-top:18px;padding-bo
     if (v.pt && !d.portugues) return false;
     return true;
   };
+  const conta = v => itens.reduce((n, x) => n + passa(x.d, v), 0);
   const ORDEM = {
     nota: (a, b) => (b.d.nota ?? -1) - (a.d.nota ?? -1),
     leve: (a, b) => (a.d.peso ?? 99) - (b.d.peso ?? 99),
@@ -475,27 +490,80 @@ footer .in{display:flex;flex-wrap:wrap;gap:10px 20px;padding-top:18px;padding-bo
     curto: (a, b) => (a.d.duracao?.[0] ?? 9999) - (b.d.duracao?.[0] ?? 9999),
     preco: (a, b) => (a.d.preco ?? 1e9) - (b.d.preco ?? 1e9),
   };
+  // filtros que de fato restringem a lista ("melhor contagem" só vale com um número de jogadores)
+  const ativosDe = v => Object.entries(v).filter(([k, x]) => x && k !== "ordem" && !(k === "melhor" && !v.jogadores));
+  const rotulo = (k, val) => {
+    if (k === "q") return `“${val}”`;
+    const g = grupo(k);
+    if (g) return [...g.querySelectorAll("button")].find(b => b.dataset.v === val)?.dataset.t || val;
+    const el = form.elements[k];
+    if (el && el.tagName === "SELECT") return [...el.options].find(o => o.value === val)?.dataset.t || val;
+    return "";
+  };
+  const sem = (v, k) => ({...v, [k]: "", ...(k === "jogadores" ? {melhor: ""} : {})});
+  // quantas resenhas cada opção deixaria na tela, mantidos os outros filtros; a que zeraria fica desabilitada
+  const contagens = v => {
+    form.querySelectorAll(".chips").forEach(g => {
+      const k = g.dataset.campo;
+      g.querySelectorAll("button").forEach(b => {
+        const on = chips[k] === b.dataset.v, n = conta({...v, [k]: b.dataset.v});
+        b.querySelector(".n").textContent = n;
+        b.disabled = !on && n === 0;
+      });
+    });
+    form.querySelectorAll("select").forEach(s => {
+      if (s.name === "ordem") return;
+      [...s.options].forEach(o => {
+        if (!o.value) return;
+        const n = conta({...v, [s.name]: o.value});
+        o.textContent = `${o.dataset.t} (${n})`;
+        o.disabled = n === 0 && s.value !== o.value;
+      });
+    });
+    form.querySelectorAll("input[type=checkbox]").forEach(c => {
+      const sozinho = c.name === "melhor" && !v.jogadores, n = conta({...v, [c.name]: "on"});
+      c.closest("label").querySelector(".n").textContent = sozinho ? "(escolha os jogadores)" : `(${n})`;
+      c.disabled = !c.checked && (sozinho || n === 0);
+    });
+  };
   const aplicar = (gravar = true) => {
-    const v = ler();
+    const v = ler(), ativos = ativosDe(v);
     let n = 0;
     itens.forEach(x => { const ok = passa(x.d, v); x.li.hidden = !ok; n += ok; });
     [...itens].sort(ORDEM[v.ordem] || ((a, b) => a.i - b.i)).forEach(x => lista.append(x.li));
-    const ativos = Object.entries(v).filter(([k, x]) => x && k !== "ordem" && !(k === "melhor" && !v.jogadores)).length;
-    $("n-ativos").hidden = !ativos; $("n-ativos").textContent = ativos;
-    $("abrir-f").setAttribute("aria-label", ativos ? `Filtrar resenhas, ${ativos} filtro${ativos > 1 ? "s" : ""} ativo${ativos > 1 ? "s" : ""}` : "Filtrar resenhas");
-    $("resumo-f").textContent = ativos ? `${n} de ${total} resenhas` : `${total} resenhas`;
-    $("limpar-topo").hidden = !ativos && !v.ordem;
+    contagens(v);
+    $("n-ativos").hidden = !ativos.length; $("n-ativos").textContent = ativos.length;
+    const mais = ativos.filter(([k]) => MAIS.includes(k)).length;
+    $("n-mais").hidden = !mais; $("n-mais").textContent = mais;
+    $("abrir-f").setAttribute("aria-label", ativos.length ? `Filtrar resenhas, ${ativos.length} filtro${ativos.length > 1 ? "s" : ""} ativo${ativos.length > 1 ? "s" : ""}` : "Filtrar resenhas");
+    $("resumo-f").textContent = ativos.length ? `${n} de ${total} resenhas` : `${total} resenhas`;
+    // filtros ativos como etiquetas removíveis, fora da gaveta
+    $("ativos").innerHTML = ativos.map(([k, x]) => {
+      const r = rotulo(k, x), txt = NOMES[k] + (r ? ": " + r : "");
+      return `<button type="button" class="chip-at" data-k="${k}" aria-label="Remover filtro ${esc(txt)}">${esc(txt)}<span aria-hidden="true">×</span></button>`;
+    }).join("") + (ativos.length > 1 ? '<button type="button" class="limpar" data-k="*">Limpar tudo</button>' : "");
+    $("ativos").hidden = !ativos.length;
     $("ver-f").textContent = n ? `Ver ${n} resenha${n === 1 ? "" : "s"}` : "Nenhuma resenha";
     $("ver-f").disabled = !n;
+    // sem resultado: diz qual filtro tirar para voltar a ter resenhas
     $("vazio").hidden = n > 0;
+    $("sugere").innerHTML = n ? "" : ativos.map(([k, x]) => [k, x, conta(sem(v, k))]).filter(a => a[2]).sort((a, b) => b[2] - a[2]).slice(0, 3)
+      .map(([k, x, c]) => { const r = rotulo(k, x); return `<button type="button" class="chip-at" data-k="${k}">Tirar ${esc(NOMES[k] + (r ? ": " + r : ""))} (${c} resenha${c > 1 ? "s" : ""})</button>`; }).join("");
     if (gravar) {
       const q = new URLSearchParams(Object.entries(v).filter(([, x]) => x));
       history.replaceState(null, "", q.toString() ? "?" + q : location.pathname);
     }
   };
   const marcar = (g, val) => g.querySelectorAll("button").forEach(b => b.setAttribute("aria-pressed", b.dataset.v === val));
+  const remover = k => {
+    if (k === "*") return form.reset();
+    if (grupo(k)) { chips[k] = ""; marcar(grupo(k), ""); }
+    else { const el = form.elements[k]; if (el.type === "checkbox") el.checked = false; else el.value = ""; }
+    if (k === "jogadores") form.elements.melhor.checked = false;
+    aplicar();
+  };
   form.querySelectorAll(".chips").forEach(g => g.addEventListener("click", ev => {
-    const b = ev.target.closest("button"); if (!b) return;
+    const b = ev.target.closest("button"); if (!b || b.disabled) return;
     chips[g.dataset.campo] = chips[g.dataset.campo] === b.dataset.v ? "" : b.dataset.v;
     marcar(g, chips[g.dataset.campo]);
     aplicar();
@@ -507,24 +575,26 @@ footer .in{display:flex;flex-wrap:wrap;gap:10px 20px;padding-top:18px;padding-bo
     form.querySelectorAll(".chips").forEach(g => marcar(g, ""));
     aplicar();
   }));
-  const limpar = () => form.reset();
-  $("limpar-topo").addEventListener("click", limpar);
-  $("limpar2").addEventListener("click", limpar);
+  const tirar = ev => { const b = ev.target.closest("[data-k]"); if (b) remover(b.dataset.k); };
+  $("ativos").addEventListener("click", tirar);
+  $("sugere").addEventListener("click", tirar);
+  $("limpar2").addEventListener("click", () => form.reset());
   // abrir e fechar a gaveta
   const fechar = () => { dlg.close(); };
   $("abrir-f").addEventListener("click", () => dlg.showModal());
   $("fechar-f").addEventListener("click", fechar);
   $("ver-f").addEventListener("click", () => { fechar(); $("barra-f").scrollIntoView({block: "start"}); });
   dlg.addEventListener("click", ev => { if (ev.target === dlg) fechar(); });  // toque fora da gaveta
-  // filtros vindos do endereço (link compartilhado)
+  // filtros vindos do endereço (link compartilhado ou botão voltar)
   new URLSearchParams(location.search).forEach((val, k) => {
-    const g = form.querySelector(`.chips[data-campo="${k}"]`);
+    const g = grupo(k);
     if (g) { chips[k] = val; marcar(g, val); return; }
     const el = form.elements[k]; if (!el) return;
     if (el.type === "checkbox") el.checked = true; else el.value = val;
   });
   $("barra-f").hidden = false;
   aplicar(false);
+  if (ativosDe(ler()).some(([k]) => MAIS.includes(k))) $("mais-f").open = true;
 })();
 </script>
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "b37421bd1ade44f1a59e46b96626bf03"}'></script><!-- End Cloudflare Web Analytics -->

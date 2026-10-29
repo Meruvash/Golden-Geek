@@ -37,6 +37,166 @@ def card(c):
 """
 
 
+JS_FILTROS = r"""
+(() => {
+  const form = document.getElementById("filtros"), lista = document.getElementById("lista"), dlg = document.getElementById("dlg-f");
+  if (!dlg.showModal) return;  // navegador sem <dialog>: fica a lista completa
+  const itens = [...lista.children].map((li, i) => ({li, i, d: JSON.parse(li.dataset.f)}));
+  const total = itens.length, $ = id => document.getElementById(id);
+  const norm = t => t.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+  const esc = t => String(t).replace(/[&<>"]/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"})[c]);
+  const chips = {};
+  const NOMES = {q: "Nome", jogadores: "Jogadores", melhor: "Melhor contagem", perfil: "Melhor para", duracao: "Duração", peso: "Complexidade",
+                 estilo: "Estilo", mecanica: "Mecânica", premio: "Prêmio", idade: "Pessoa mais nova", preco: "Preço até", solo: "Modo solo", pt: "Em português"};
+  const MAIS = ["estilo", "mecanica", "premio", "idade", "preco", "solo", "pt"];  // os que ficam em "Mais filtros"
+  const grupo = k => form.querySelector(`.chips[data-campo="${k}"]`);
+  const ler = () => {
+    const v = Object.fromEntries(new FormData(form));
+    form.querySelectorAll(".chips").forEach(g => v[g.dataset.campo] = chips[g.dataset.campo] || "");
+    return v;
+  };
+  const passa = (d, v) => {
+    if (v.q && !norm(d.nome).includes(norm(v.q.trim()))) return false;
+    if (v.jogadores) {
+      const n = +v.jogadores, j = d.jogadores;
+      if (!j || (n < 6 ? n < j[0] || n > j[1] : j[1] < 6)) return false;
+      if (v.melhor && !d.melhor.some(m => n < 6 ? m === n : m >= 6)) return false;
+    }
+    if (v.duracao) {
+      const t = d.duracao, lim = {"30": [0, 30], "60": [30, 60], "120": [60, 120], "999": [121, 9999]}[v.duracao];
+      if (!t || t[0] > lim[1] || t[1] < lim[0]) return false;
+    }
+    if (v.peso) {
+      if (d.peso == null) return false;
+      if (v.peso === "leve" ? d.peso >= 2 : v.peso === "media" ? d.peso < 2 || d.peso > 3 : d.peso <= 3) return false;
+    }
+    if (v.perfil && d.melhor_para !== v.perfil) return false;
+    if (v.estilo && !d.estilos.includes(v.estilo)) return false;
+    if (v.mecanica && !d.mecanicas.includes(v.mecanica)) return false;
+    if (v.premio && !d.premios.includes(v.premio)) return false;
+    if (v.idade && (d.idade == null || d.idade > +v.idade)) return false;
+    if (v.preco && (d.preco == null || d.preco > +v.preco)) return false;
+    if (v.solo && !d.solo) return false;
+    if (v.pt && !d.portugues) return false;
+    return true;
+  };
+  const conta = v => itens.reduce((n, x) => n + passa(x.d, v), 0);
+  const ORDEM = {
+    nota: (a, b) => (b.d.nota ?? -1) - (a.d.nota ?? -1),
+    leve: (a, b) => (a.d.peso ?? 99) - (b.d.peso ?? 99),
+    pesado: (a, b) => (b.d.peso ?? -1) - (a.d.peso ?? -1),
+    curto: (a, b) => (a.d.duracao?.[0] ?? 9999) - (b.d.duracao?.[0] ?? 9999),
+    preco: (a, b) => (a.d.preco ?? 1e9) - (b.d.preco ?? 1e9),
+  };
+  // filtros que de fato restringem a lista ("melhor contagem" só vale com um número de jogadores)
+  const ativosDe = v => Object.entries(v).filter(([k, x]) => x && k !== "ordem" && !(k === "melhor" && !v.jogadores));
+  const rotulo = (k, val) => {
+    if (k === "q") return `“${val}”`;
+    const g = grupo(k);
+    if (g) return [...g.querySelectorAll("button")].find(b => b.dataset.v === val)?.dataset.t || val;
+    const el = form.elements[k];
+    if (el && el.tagName === "SELECT") return [...el.options].find(o => o.value === val)?.dataset.t || val;
+    return "";
+  };
+  const sem = (v, k) => ({...v, [k]: "", ...(k === "jogadores" ? {melhor: ""} : {})});
+  // quantas resenhas cada opção deixaria na tela, mantidos os outros filtros; a que zeraria fica desabilitada
+  const contagens = v => {
+    form.querySelectorAll(".chips").forEach(g => {
+      const k = g.dataset.campo;
+      g.querySelectorAll("button").forEach(b => {
+        const on = chips[k] === b.dataset.v, n = conta({...v, [k]: b.dataset.v});
+        b.querySelector(".n").textContent = n;
+        b.disabled = !on && n === 0;
+      });
+    });
+    form.querySelectorAll("select").forEach(s => {
+      if (s.name === "ordem") return;
+      [...s.options].forEach(o => {
+        if (!o.value) return;
+        const n = conta({...v, [s.name]: o.value});
+        o.textContent = `${o.dataset.t} (${n})`;
+        o.disabled = n === 0 && s.value !== o.value;
+      });
+    });
+    form.querySelectorAll("input[type=checkbox]").forEach(c => {
+      const sozinho = c.name === "melhor" && !v.jogadores, n = conta({...v, [c.name]: "on"});
+      c.closest("label").querySelector(".n").textContent = sozinho ? "(escolha os jogadores)" : `(${n})`;
+      c.disabled = !c.checked && (sozinho || n === 0);
+    });
+  };
+  const aplicar = (gravar = true) => {
+    const v = ler(), ativos = ativosDe(v);
+    let n = 0;
+    itens.forEach(x => { const ok = passa(x.d, v); x.li.hidden = !ok; n += ok; });
+    [...itens].sort(ORDEM[v.ordem] || ((a, b) => a.i - b.i)).forEach(x => lista.append(x.li));
+    contagens(v);
+    $("n-ativos").hidden = !ativos.length; $("n-ativos").textContent = ativos.length;
+    const mais = ativos.filter(([k]) => MAIS.includes(k)).length;
+    $("n-mais").hidden = !mais; $("n-mais").textContent = mais;
+    $("abrir-f").setAttribute("aria-label", ativos.length ? `Filtrar resenhas, ${ativos.length} filtro${ativos.length > 1 ? "s" : ""} ativo${ativos.length > 1 ? "s" : ""}` : "Filtrar resenhas");
+    $("resumo-f").textContent = ativos.length ? `${n} de ${total} resenhas` : `${total} resenhas`;
+    // filtros ativos como etiquetas removíveis, fora da gaveta
+    $("ativos").innerHTML = ativos.map(([k, x]) => {
+      const r = rotulo(k, x), txt = NOMES[k] + (r ? ": " + r : "");
+      return `<button type="button" class="chip-at" data-k="${k}" aria-label="Remover filtro ${esc(txt)}">${esc(txt)}<span aria-hidden="true">×</span></button>`;
+    }).join("") + (ativos.length > 1 ? '<button type="button" class="limpar" data-k="*">Limpar tudo</button>' : "");
+    $("ativos").hidden = !ativos.length;
+    $("ver-f").textContent = n ? `Ver ${n} resenha${n === 1 ? "" : "s"}` : "Nenhuma resenha";
+    $("ver-f").disabled = !n;
+    // sem resultado: diz qual filtro tirar para voltar a ter resenhas
+    $("vazio").hidden = n > 0;
+    $("sugere").innerHTML = n ? "" : ativos.map(([k, x]) => [k, x, conta(sem(v, k))]).filter(a => a[2]).sort((a, b) => b[2] - a[2]).slice(0, 3)
+      .map(([k, x, c]) => { const r = rotulo(k, x); return `<button type="button" class="chip-at" data-k="${k}">Tirar ${esc(NOMES[k] + (r ? ": " + r : ""))} (${c} resenha${c > 1 ? "s" : ""})</button>`; }).join("");
+    if (gravar) {
+      const q = new URLSearchParams(Object.entries(v).filter(([, x]) => x));
+      history.replaceState(null, "", q.toString() ? "?" + q : location.pathname);
+    }
+  };
+  const marcar = (g, val) => g.querySelectorAll("button").forEach(b => b.setAttribute("aria-pressed", b.dataset.v === val));
+  const remover = k => {
+    if (k === "*") return form.reset();
+    if (grupo(k)) { chips[k] = ""; marcar(grupo(k), ""); }
+    else { const el = form.elements[k]; if (el.type === "checkbox") el.checked = false; else el.value = ""; }
+    if (k === "jogadores") form.elements.melhor.checked = false;
+    aplicar();
+  };
+  form.querySelectorAll(".chips").forEach(g => g.addEventListener("click", ev => {
+    const b = ev.target.closest("button"); if (!b || b.disabled) return;
+    chips[g.dataset.campo] = chips[g.dataset.campo] === b.dataset.v ? "" : b.dataset.v;
+    marcar(g, chips[g.dataset.campo]);
+    aplicar();
+  }));
+  form.addEventListener("input", () => aplicar());
+  form.addEventListener("submit", ev => { ev.preventDefault(); fechar(); });
+  form.addEventListener("reset", () => setTimeout(() => {
+    Object.keys(chips).forEach(k => chips[k] = "");
+    form.querySelectorAll(".chips").forEach(g => marcar(g, ""));
+    aplicar();
+  }));
+  const tirar = ev => { const b = ev.target.closest("[data-k]"); if (b) remover(b.dataset.k); };
+  $("ativos").addEventListener("click", tirar);
+  $("sugere").addEventListener("click", tirar);
+  $("limpar2").addEventListener("click", () => form.reset());
+  // abrir e fechar a gaveta
+  const fechar = () => { dlg.close(); };
+  $("abrir-f").addEventListener("click", () => dlg.showModal());
+  $("fechar-f").addEventListener("click", fechar);
+  $("ver-f").addEventListener("click", () => { fechar(); $("barra-f").scrollIntoView({block: "start"}); });
+  dlg.addEventListener("click", ev => { if (ev.target === dlg) fechar(); });  // toque fora da gaveta
+  // filtros vindos do endereço (link compartilhado ou botão voltar)
+  new URLSearchParams(location.search).forEach((val, k) => {
+    const g = grupo(k);
+    if (g) { chips[k] = val; marcar(g, val); return; }
+    const el = form.elements[k]; if (!el) return;
+    if (el.type === "checkbox") el.checked = true; else el.value = val;
+  });
+  $("barra-f").hidden = false;
+  aplicar(false);
+  if (ativosDe(ler()).some(([k]) => MAIS.includes(k))) $("mais-f").open = true;
+})();
+"""
+
+
 def build():
     pauta = json.loads((ROOT / "pauta.json").read_text(encoding="utf-8"))
     slugs = [p["url"].rstrip("/").split("/")[-1] for p in reversed(pauta["publicadas"])]
@@ -44,27 +204,30 @@ def build():
     cards = "".join(card(c) for c in conteudos)
     todos = [derivar(c) for c in conteudos]
     opcoes = lambda chave: sorted({x for d in todos for x in d[chave]})  # noqa: E731
+    # data-t guarda o rótulo puro: o JavaScript acrescenta a contagem de resenhas ao lado de cada opção
     sel = lambda nome, rotulo, itens: (f'<label class="f">{rotulo}<select name="{nome}"><option value="">Todos</option>'  # noqa: E731
-                                        + "".join(f'<option value="{e(v)}">{e(t)}</option>' for v, t in itens) + "</select></label>")
+                                        + "".join(f'<option value="{e(v)}" data-t="{e(t)}">{e(t)}</option>' for v, t in itens) + "</select></label>")
     chip = lambda campo, itens: (f'<div class="chips" data-campo="{campo}">'  # noqa: E731
-                                 + "".join(f'<button type="button" data-v="{v}" aria-pressed="false">{t}</button>' for v, t in itens) + "</div>")
+                                 + "".join(f'<button type="button" data-v="{v}" data-t="{e(str(t))}" aria-pressed="false">{t}<small class="n"></small></button>' for v, t in itens) + "</div>")
+    ck = lambda nome, rotulo: f'<label class="ck"><input type="checkbox" name="{nome}"><span>{rotulo} <small class="n"></small></span></label>'  # noqa: E731
     filtros = f"""<div class="barra-f" id="barra-f" hidden>
   <button type="button" class="btn-filtro" id="abrir-f" aria-haspopup="dialog" aria-controls="dlg-f">
    <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M7 12h10M10 18h4"/></svg><span>Filtrar resenhas</span><b class="badge" id="n-ativos" hidden></b>
   </button>
   <span class="resumo-f" id="resumo-f" aria-live="polite">{len(conteudos)} resenhas</span>
-  <button type="button" class="limpar" id="limpar-topo" hidden>Limpar</button>
  </div>
+ <div class="ativos" id="ativos" aria-label="Filtros ativos" role="group" hidden></div>
  <dialog class="folha" id="dlg-f" aria-labelledby="t-f">
   <form class="filtros" id="filtros" role="search">
    <header class="folha-h"><h2 id="t-f">Filtrar resenhas</h2><button type="button" class="fechar" id="fechar-f" aria-label="Fechar filtros"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></header>
    <div class="folha-b">
     <input class="busca" type="search" name="q" placeholder="Buscar jogo pelo nome" autocomplete="off" aria-label="Buscar jogo pelo nome">
     <fieldset><legend>Jogadores</legend>{chip("jogadores", [(n, n if n < 6 else "6+") for n in range(1, 7)])}
-     <label class="ck"><input type="checkbox" name="melhor"> só onde é a melhor contagem</label></fieldset>
+     {ck("melhor", "só onde é a melhor contagem")}</fieldset>
     <fieldset><legend>Melhor para</legend>{chip("perfil", [(k, v[0]) for k, v in PERFIS.items() if any(d["melhor_para"] == k for d in todos)])}</fieldset>
     <fieldset><legend>Duração</legend>{chip("duracao", [(30, "Até 30 min"), (60, "30 a 60 min"), (120, "1 a 2 h"), (999, "Mais de 2 h")])}</fieldset>
     <fieldset><legend>Complexidade <small>(peso BGG)</small></legend>{chip("peso", [("leve", "Leve"), ("media", "Média"), ("pesada", "Pesada")])}</fieldset>
+    <details class="mais-f" id="mais-f"><summary>Mais filtros <b class="badge" id="n-mais" hidden></b></summary><div class="mais-b">
     <fieldset><legend>Estilo</legend>{chip("estilo", [(x, x) for x in opcoes("estilos")])}</fieldset>
     <div class="linha-f">
      {sel("mecanica", "Mecânica", [(x, x) for x in opcoes("mecanicas")])}
@@ -72,13 +235,14 @@ def build():
      {sel("idade", "Pessoa mais nova na mesa", [(str(n), f"{n} anos") for n in (8, 10, 12, 14)])}
      {sel("preco", "Preço até", [(str(n), f"R$ {n}") for n in (150, 300, 500)])}
     </div>
-    <div class="linha-f"><label class="ck"><input type="checkbox" name="solo"> tem modo solo</label><label class="ck"><input type="checkbox" name="pt"> edição em português</label></div>
+    <div class="linha-f">{ck("solo", "tem modo solo")}{ck("pt", "edição em português")}</div>
+    </div></details>
     <label class="f">Ordenar por<select name="ordem"><option value="">Mais recentes</option><option value="nota">Nota BGG</option><option value="leve">Mais leve</option><option value="pesado">Mais pesado</option><option value="curto">Mais curto</option><option value="preco">Menor preço</option></select></label>
    </div>
    <footer class="folha-p"><button type="reset" class="limpar">Limpar</button><button type="button" class="ver" id="ver-f">Ver {len(conteudos)} resenhas</button></footer>
   </form>
  </dialog>
- <p class="vazio" id="vazio" hidden>Nenhuma resenha com esses filtros. <button type="button" class="limpar" id="limpar2">Limpar filtros</button></p>"""
+ <div class="vazio" id="vazio" hidden><p>Nenhuma resenha com esses filtros.</p><div class="sugere" id="sugere"></div><button type="button" class="limpar" id="limpar2">Limpar todos os filtros</button></div>"""
     n = len(slugs)
     return f"""<!doctype html>
 <html lang="pt-BR">
@@ -148,14 +312,14 @@ h1{{font-size:clamp(2.2rem,6vw,3.4rem);line-height:1.05;font-weight:800;letter-s
 .ress{{font-size:.8rem;font-weight:700;color:#8a5200}}
 .barra-f[hidden]{{display:none}}
 .barra-f{{position:sticky;top:0;z-index:5;display:flex;align-items:center;gap:14px;margin:0 -16px 16px;padding:10px 16px;background:rgba(0,0,0,.86);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}}
-.btn-filtro{{position:relative;display:inline-flex;align-items:center;gap:10px;min-height:46px;padding:10px 20px 10px 16px;border:0;border-radius:999px;font:inherit;font-weight:800;font-size:1rem;color:#14100a;cursor:pointer;
+.btn-filtro{{position:relative;flex:none;white-space:nowrap;display:inline-flex;align-items:center;gap:10px;min-height:46px;padding:10px 20px 10px 16px;border:0;border-radius:999px;font:inherit;font-weight:800;font-size:1rem;color:#14100a;cursor:pointer;
  background:linear-gradient(180deg,#f3cd6a 0%,#e3b23c 55%,#c9962a 100%);box-shadow:0 1px 0 rgba(255,255,255,.45) inset,0 6px 18px rgba(227,178,60,.22);transition:transform .18s cubic-bezier(.16,1,.3,1),box-shadow .18s ease}}
 .btn-filtro .ic{{width:20px;height:20px;stroke-width:2.4}}
 .btn-filtro:hover{{transform:translateY(-1px);box-shadow:0 1px 0 rgba(255,255,255,.45) inset,0 10px 24px rgba(227,178,60,.32)}}
 .btn-filtro:active{{transform:scale(.97)}}
 .badge{{min-width:24px;height:24px;padding:0 7px;border-radius:999px;background:#14100a;color:var(--gold);font-size:.8rem;display:grid;place-items:center;font-variant-numeric:tabular-nums}}
 .badge[hidden]{{display:none}}
-.resumo-f{{color:var(--muted);font-weight:700;font-size:.92rem;font-variant-numeric:tabular-nums}}
+.resumo-f{{min-width:0;color:var(--muted);font-weight:700;font-size:.92rem;font-variant-numeric:tabular-nums}}
 .barra-f .limpar{{margin-left:auto}}
 .folha{{border:0;padding:0;color:var(--ink);background:#0f1115;max-width:none;max-height:none;margin:0;inset:auto 0 0 0;width:100%;height:auto;max-height:88dvh;border-radius:18px 18px 0 0;box-shadow:0 -10px 40px rgba(0,0,0,.6)}}
 .folha::backdrop{{background:rgba(0,0,0,.62)}}
@@ -187,7 +351,13 @@ h1{{font-size:clamp(2.2rem,6vw,3.4rem);line-height:1.05;font-weight:800;letter-s
 .f select{{font:inherit;font-size:.95rem;font-weight:600;letter-spacing:0;text-transform:none;min-height:42px;padding:8px 10px;border-radius:8px;border:1px solid #3a3f48;background:#000;color:var(--ink)}}
 .ck{{display:flex;align-items:center;gap:8px;font-size:.92rem;color:#c9cfd8;min-height:40px}}.ck input{{width:18px;height:18px;accent-color:var(--gold)}}
 .limpar{{font:inherit;font-weight:700;color:var(--gold);background:none;border:0;cursor:pointer;padding:8px 0;text-decoration:underline;text-underline-offset:3px}}
-.vazio{{padding:24px;border:1px dashed #3a3f48;border-radius:12px;text-align:center;color:#c9cfd8;margin-bottom:24px}}
+.vazio{{padding:24px;border:1px dashed #3a3f48;border-radius:12px;text-align:center;color:#c9cfd8;margin-bottom:24px;display:grid;gap:12px;justify-items:center}}.vazio[hidden]{{display:none}}
+.sugere{{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}}
+.ativos{{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:-6px 0 16px}}.ativos[hidden]{{display:none}}
+.chip-at{{display:inline-flex;align-items:center;gap:6px;min-height:36px;padding:4px 12px;border-radius:999px;border:1px solid var(--gold);background:#1a1508;color:var(--ink);font:inherit;font-size:.88rem;font-weight:700;cursor:pointer}}.chip-at span{{color:var(--gold);font-size:1.1rem;line-height:1}}.chip-at:hover{{background:#2a210b}}
+.chips .n,.ck .n{{margin-left:4px;font-size:.78rem;font-weight:600;color:var(--muted);font-variant-numeric:tabular-nums}}.chips button[aria-pressed="true"] .n{{color:#000}}
+.chips button:disabled,.ck input:disabled{{opacity:.38;cursor:not-allowed}}.chips button:disabled:hover{{border-color:#3a3f48}}.ck:has(input:disabled){{opacity:.6}}
+.mais-f{{border-top:1px solid var(--line);padding-top:12px}}.mais-f summary{{cursor:pointer;font-weight:800;color:var(--gold);min-height:40px;display:flex;align-items:center;gap:8px;list-style:none}}.mais-f summary::-webkit-details-marker{{display:none}}.mais-f summary::after{{content:"▾";content:"▾" / "";margin-left:auto}}.mais-f[open] summary::after{{content:"▴";content:"▴" / ""}}.mais-b{{display:grid;gap:16px;margin-top:12px}}
 .grid li[hidden]{{display:none}}
 .card h2{{font-size:1.2rem;line-height:1.2;font-weight:800}}
 .tag{{font-size:.92rem;color:#3a414c}}
@@ -213,102 +383,7 @@ footer .in{{display:flex;flex-wrap:wrap;gap:10px 20px;padding-top:18px;padding-b
 </main>
 {rodape("../")}
 <script>
-(() => {{
-  const form = document.getElementById("filtros"), lista = document.getElementById("lista"), dlg = document.getElementById("dlg-f");
-  if (!dlg.showModal) return;  // navegador sem <dialog>: fica a lista completa
-  const itens = [...lista.children].map((li, i) => ({{li, i, d: JSON.parse(li.dataset.f)}}));
-  const total = itens.length, $ = id => document.getElementById(id);
-  const norm = t => t.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
-  const chips = {{}};
-  const ler = () => {{
-    const v = Object.fromEntries(new FormData(form));
-    form.querySelectorAll(".chips").forEach(g => v[g.dataset.campo] = chips[g.dataset.campo] || "");
-    return v;
-  }};
-  const passa = (d, v) => {{
-    if (v.q && !norm(d.nome).includes(norm(v.q.trim()))) return false;
-    if (v.jogadores) {{
-      const n = +v.jogadores, j = d.jogadores;
-      if (!j || (n < 6 ? n < j[0] || n > j[1] : j[1] < 6)) return false;
-      if (v.melhor && !d.melhor.some(m => n < 6 ? m === n : m >= 6)) return false;
-    }}
-    if (v.duracao) {{
-      const t = d.duracao, lim = {{"30": [0, 30], "60": [30, 60], "120": [60, 120], "999": [121, 9999]}}[v.duracao];
-      if (!t || t[0] > lim[1] || t[1] < lim[0]) return false;
-    }}
-    if (v.peso) {{
-      if (d.peso == null) return false;
-      if (v.peso === "leve" ? d.peso >= 2 : v.peso === "media" ? d.peso < 2 || d.peso > 3 : d.peso <= 3) return false;
-    }}
-    if (v.perfil && d.melhor_para !== v.perfil) return false;
-    if (v.estilo && !d.estilos.includes(v.estilo)) return false;
-    if (v.mecanica && !d.mecanicas.includes(v.mecanica)) return false;
-    if (v.premio && !d.premios.includes(v.premio)) return false;
-    if (v.idade && (d.idade == null || d.idade > +v.idade)) return false;
-    if (v.preco && (d.preco == null || d.preco > +v.preco)) return false;
-    if (v.solo && !d.solo) return false;
-    if (v.pt && !d.portugues) return false;
-    return true;
-  }};
-  const ORDEM = {{
-    nota: (a, b) => (b.d.nota ?? -1) - (a.d.nota ?? -1),
-    leve: (a, b) => (a.d.peso ?? 99) - (b.d.peso ?? 99),
-    pesado: (a, b) => (b.d.peso ?? -1) - (a.d.peso ?? -1),
-    curto: (a, b) => (a.d.duracao?.[0] ?? 9999) - (b.d.duracao?.[0] ?? 9999),
-    preco: (a, b) => (a.d.preco ?? 1e9) - (b.d.preco ?? 1e9),
-  }};
-  const aplicar = (gravar = true) => {{
-    const v = ler();
-    let n = 0;
-    itens.forEach(x => {{ const ok = passa(x.d, v); x.li.hidden = !ok; n += ok; }});
-    [...itens].sort(ORDEM[v.ordem] || ((a, b) => a.i - b.i)).forEach(x => lista.append(x.li));
-    const ativos = Object.entries(v).filter(([k, x]) => x && k !== "ordem" && !(k === "melhor" && !v.jogadores)).length;
-    $("n-ativos").hidden = !ativos; $("n-ativos").textContent = ativos;
-    $("abrir-f").setAttribute("aria-label", ativos ? `Filtrar resenhas, ${{ativos}} filtro${{ativos > 1 ? "s" : ""}} ativo${{ativos > 1 ? "s" : ""}}` : "Filtrar resenhas");
-    $("resumo-f").textContent = ativos ? `${{n}} de ${{total}} resenhas` : `${{total}} resenhas`;
-    $("limpar-topo").hidden = !ativos && !v.ordem;
-    $("ver-f").textContent = n ? `Ver ${{n}} resenha${{n === 1 ? "" : "s"}}` : "Nenhuma resenha";
-    $("ver-f").disabled = !n;
-    $("vazio").hidden = n > 0;
-    if (gravar) {{
-      const q = new URLSearchParams(Object.entries(v).filter(([, x]) => x));
-      history.replaceState(null, "", q.toString() ? "?" + q : location.pathname);
-    }}
-  }};
-  const marcar = (g, val) => g.querySelectorAll("button").forEach(b => b.setAttribute("aria-pressed", b.dataset.v === val));
-  form.querySelectorAll(".chips").forEach(g => g.addEventListener("click", ev => {{
-    const b = ev.target.closest("button"); if (!b) return;
-    chips[g.dataset.campo] = chips[g.dataset.campo] === b.dataset.v ? "" : b.dataset.v;
-    marcar(g, chips[g.dataset.campo]);
-    aplicar();
-  }}));
-  form.addEventListener("input", () => aplicar());
-  form.addEventListener("submit", ev => {{ ev.preventDefault(); fechar(); }});
-  form.addEventListener("reset", () => setTimeout(() => {{
-    Object.keys(chips).forEach(k => chips[k] = "");
-    form.querySelectorAll(".chips").forEach(g => marcar(g, ""));
-    aplicar();
-  }}));
-  const limpar = () => form.reset();
-  $("limpar-topo").addEventListener("click", limpar);
-  $("limpar2").addEventListener("click", limpar);
-  // abrir e fechar a gaveta
-  const fechar = () => {{ dlg.close(); }};
-  $("abrir-f").addEventListener("click", () => dlg.showModal());
-  $("fechar-f").addEventListener("click", fechar);
-  $("ver-f").addEventListener("click", () => {{ fechar(); $("barra-f").scrollIntoView({{block: "start"}}); }});
-  dlg.addEventListener("click", ev => {{ if (ev.target === dlg) fechar(); }});  // toque fora da gaveta
-  // filtros vindos do endereço (link compartilhado)
-  new URLSearchParams(location.search).forEach((val, k) => {{
-    const g = form.querySelector(`.chips[data-campo="${{k}}"]`);
-    if (g) {{ chips[k] = val; marcar(g, val); return; }}
-    const el = form.elements[k]; if (!el) return;
-    if (el.type === "checkbox") el.checked = true; else el.value = val;
-  }});
-  $("barra-f").hidden = false;
-  aplicar(false);
-}})();
-</script>
+{JS_FILTROS}</script>
 {seo.ANALYTICS}
 </body>
 </html>
