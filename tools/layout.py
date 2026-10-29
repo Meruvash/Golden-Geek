@@ -42,9 +42,13 @@ DISPARADOR = ("(()=>{const b=document.querySelector('.busca-btn');let c;b.hidden
               "b.addEventListener('click',a);addEventListener('keydown',e=>{const t=e.target,ed=t.isContentEditable||/^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName);"
               "if((e.key==='/'&&!ed&&!e.ctrlKey&&!e.metaKey)||((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k')){e.preventDefault();a()}})})()")
 
-# CSS do botão de busca, igual em todas as páginas
+# CSS comum a todas as páginas: botão de busca e respeito a prefers-reduced-motion (sem transições, animações,
+# rolagem suave nem os deslocamentos de hover/toque dos cartões e botões)
 CSS_BUSCA = (".busca-btn{display:grid;place-items:center;flex:none;width:44px;height:44px;padding:0;border:1px solid #3a3f48;border-radius:8px;"
-             "background:none;color:#e9ecf1;cursor:pointer}.busca-btn:hover{border-color:#e3b23c;color:#e3b23c}.busca-btn[hidden]{display:none}")
+             "background:none;color:#e9ecf1;cursor:pointer}.busca-btn:hover{border-color:#e3b23c;color:#e3b23c}.busca-btn[hidden]{display:none}"
+             "@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;"
+             "transition-duration:.01ms!important;scroll-behavior:auto!important}"
+             ".card:hover,.jogo:hover .capa img,.jogo:active .capa,.zap:active,.post-btn:active,.btn-filtro:hover,.btn-filtro:active,.ver:active{transform:none!important}}")
 
 
 def cabecalho(pre, atual="", sub=False):
