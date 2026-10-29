@@ -78,7 +78,7 @@ Regras de texto:
 
 ## Opinião forte (29/10/2026)
 
-Pedido do usuário: a resenha precisa gerar reação e compartilhamento. O tom das partes de opinião é **inteligente, sarcástico e ácido**. Modelo aprovado: `conteudo/vantage.json` ("uma obra-prima para uma pessoa e uma reunião de condomínio para seis"). Referências: Berger e Milkman (emoção de alta ativação se compartilha), *Contágio* (STEPPS), *Ideias que colam* (o inesperado), *Breakthrough Advertising* (ângulo novo para um público que já viu tudo), *Save the Cat* (logline).
+Pedido do usuário: a resenha precisa gerar reação e compartilhamento. O tom das partes de opinião é **inteligente, sarcástico, ácido e engraçado**, com a estrutura de stand-up de Ricky Gervais (mapa abaixo). Modelo aprovado: `conteudo/vantage.json` ("um jogo para seis pessoas que querem ficar sozinhas"). Referências: Berger e Milkman (emoção de alta ativação se compartilha), *Contágio* (STEPPS), *Ideias que colam* (o inesperado), *Breakthrough Advertising* (ângulo novo para um público que já viu tudo), *Save the Cat* (logline).
 
 **Onde vai o tom:** `titulo_html`, `tagline`, `lede` (a partir da segunda frase), `experiencia`, títulos e textos de `atencao`, `para_quem` / `nao_e_para`, `veredito` e `legenda`. **Onde não vai:** `como_funciona`, `passos`, ficha, prêmios, edição nacional e fontes, que continuam neutros e exatos.
 
@@ -89,6 +89,24 @@ Pedido do usuário: a resenha precisa gerar reação e compartilhamento. O tom d
 5. **Frase pronta para compartilhar.** Pelo menos uma frase curta e citável no veredito (capital social: o leitor compartilha para parecer entendido), e a legenda fecha com uma pergunta que provoque resposta.
 6. **Inteligente, não grosseiro.** Nada de palavrão, xingamento ou deboche fácil. Comparações concretas e inesperadas ("reunião de condomínio", "peça de ficção") funcionam melhor que adjetivos.
 7. **Nada inventado para causar.** Se a pesquisa não sustenta a polêmica, o tom fica firme mas sem a tese contrária. A opinião é da Elite Boardgamers e precisa ser defensável.
+8. **Voz: "a gente".** Tom de conversa, mas a voz é do site: "a gente", nunca "eu". Nunca cite o nome de Gervais nem de outro humorista no texto; é só a estrutura.
+9. **Nada de muleta.** A mesma piada no máximo uma vez por resenha; o preço entra no máximo três vezes nas partes de opinião (além do item de preço). Bordões de uma resenha não se repetem na seguinte: "Olha", "Isso não é uma crítica. Bom, é um pouco", "Ou outros amigos" e similares valem uma vez e depois saem do repertório. Repita as técnicas, não as frases.
+10. **Sem palavrão e sem alvo vulnerável.** Gervais xinga e às vezes mira em grupos de pessoas; aqui não. Nada de piada com doença, deficiência, aparência, origem ou religião.
+
+**Mapa do estilo (Ricky Gervais: monólogos do Globo de Ouro e especiais *Humanity*, *SuperNature* e *Armageddon*)**
+
+1. **A verdade que ninguém fala em voz alta.** O que todo mundo pensa e o marketing esconde ("a caixa diz seis, a crítica diz três").
+2. **Abertura de confissão.** "Vamos ser honestos", "olha": tom de conversa antes da faca.
+3. **Frases curtas, em sequência.** Uma ideia por frase. A piada vem na última.
+4. **O recuo que não recua.** Finge pedir desculpa e reforça o ataque ("Isso não é uma crítica. Bom, é um pouco.").
+5. **Lógica até o absurdo.** Seguir o raciocínio com cara séria até o ridículo ("oito anos fazendo um jogo para uma pessoa e depois imprimiu seis na caixa").
+6. **Ataque para cima.** O alvo é o poderoso: o jogo premiado, a editora, o marketing, o preço. Nunca o leitor.
+7. **Elogio sincero no meio do ataque.** Reconhecer o mérito deixa a crítica mais crível e mais cruel.
+8. **A vida real como contraponto.** "São onze e meia da noite e você trabalha amanhã"; "você já faz isso de graça no grupo da família".
+9. **Final que vira de lado.** Parece conselho e termina em soco.
+10. **Autoironia do próprio público.** Nós, que pagamos caro por papelão, também entramos na piada.
+
+Outras referências de tom, para variar a técnica: Roger Ebert (a demolição elegante), A. A. Gill e Jay Rayner (o detalhe concreto e a comparação absurda), Charlie Brooker (o exagero que escala), Jeremy Clarkson (a comparação doméstica e o deadpan), Ben "Yahtzee" Croshaw e Quinns, do Shut Up & Sit Down (humor sobre o próprio hobby), Dorothy Parker (a frase curta e letal), José Simão, Stanislaw Ponte Preta e Millôr Fernandes (o humor brasileiro).
 
 ## Fotos oficiais na página
 
