@@ -560,7 +560,7 @@ def build(c):
 @font-face{{font-family:"Public Sans";src:url(../fontes/public-sans-italic.woff2) format("woff2");font-weight:400;font-style:italic;font-display:swap}}
 :root{{color-scheme:dark;--bar:#000;--bar-ink:#e9ecf1;--gold:#e3b23c;--ground:#000;--panel:#0f1115;--panel2:#171a20;--ink:#eceff3;--muted:#a1a9b5;--line:#262a32;--link:#8cb8ff;--ok:#157a43;--ok-ink:#5fd18f;--no:#c43a52;--no-ink:#ff8094;--warn:#8a5200;--warn-ink:#ffb547;--n9:#1d7d48;--n7:#2366a8;--n6:#6b4ea3;--n5:#b23a48}}
 *{{box-sizing:border-box}}
-html{{-webkit-text-size-adjust:100%;scroll-padding-top:64px}}
+html{{-webkit-text-size-adjust:100%;scroll-padding-top:calc(var(--nav-h,49px) + 64px)}}
 body{{margin:0;background:var(--ground);color:var(--ink);font:16px/1.6 "Public Sans",system-ui,sans-serif}}
 h1,h2,h3,p,ul,dl,dd,figure{{margin:0}}
 ul{{padding:0;list-style:none}}
@@ -766,7 +766,7 @@ footer a{{color:var(--bar-ink)}}
  main{{grid-template-columns:minmax(0,1fr) 340px;align-items:start}}
  .pc,.quem,.duo{{grid-template-columns:1fr 1fr}}
  .regua{{grid-template-columns:repeat(auto-fit,minmax(120px,1fr))}}
- aside{{position:sticky;top:64px}}
+ aside{{position:sticky;top:calc(var(--nav-h,49px) + 64px)}}
 }}
 @media (max-width:859px){{aside{{display:contents}}#premios{{order:-1}}}}
 @media (prefers-reduced-motion:reduce){{html{{scroll-behavior:auto}}}}
@@ -799,8 +799,7 @@ footer a{{color:var(--bar-ink)}}
 
 {main_html}
 
-{rodape("../")}
-{barra_leitura(texto_cp(c), f"{SITE}/{slug}/")}
+{rodape("../", barra_leitura(texto_cp(c), f"{SITE}/{slug}/"))}
 <script>
 (() => {{
   // Menu de seções: marca a seção que está na tela e rola o menu até ela.

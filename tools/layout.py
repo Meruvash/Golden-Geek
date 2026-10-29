@@ -74,7 +74,7 @@ CSS_COMPARTILHAR = (".cpw{position:relative;display:inline-block}"
                     ".barra-lt .lt-b.curtir{background:none;border:0;color:#e9ecf1;padding:8px 14px}.barra-lt .lt-b.curtir[aria-pressed=true]{color:#ff6b81;background:none}"
                     "@media (max-width:479px){.lt-b span{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}}.lt-b.curtir[aria-pressed=true] .ic{fill:currentColor}"
                     ".barra-lt .cp{min-height:44px;padding:8px 16px;font-size:.9rem}"
-                    "body.lt-on .voltar-topo{bottom:calc(76px + env(safe-area-inset-bottom))}"
+                    "body.lt-on .voltar-topo,body.lt-on button.sobe{bottom:calc(76px + env(safe-area-inset-bottom))}"
                     "@media print{.barra-lt{display:none}}")
 
 CSS_INTERACOES = (".interacoes{display:grid;gap:14px}.interacoes[hidden]{display:none}"
@@ -103,22 +103,19 @@ CSS_BUSCA = (".busca-btn{display:grid;place-items:center;flex:none;width:44px;he
              # alvo de toque mínimo de 24 px (WCAG 2.2, 2.5.8) nos links do rodapé comum
              "footer .in a{display:inline-flex;align-items:center;min-height:24px}"
              + CSS_COMPARTILHAR + CSS_INTERACOES +
-             # menu das seções preso no topo: some ao rolar para baixo e volta ao rolar para cima
-             ".nav{position:sticky;top:0;z-index:20;transition:transform .2s ease}.nav.some{transform:translateY(-100%)}"
-             ".abas,.barra-f,.ctrl{transition:top .2s ease}body.nav-on .abas,body.nav-on .barra-f,body.nav-on .ctrl{top:var(--nav-h,0px)}"
+             # menu das seções sempre preso no topo; as outras barras presas ficam logo abaixo dele
+             ":where(html){scroll-padding-top:calc(var(--nav-h,49px) + 12px)}"
+             ".nav{position:sticky;top:0;z-index:20}body .abas,body .barra-f,body .ctrl{top:var(--nav-h,49px)}"
              ".nav .casa{display:flex;align-items:center;justify-content:center;min-width:44px}.nav .casa .ic{width:20px;height:20px}"
              "@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;"
              "transition-duration:.01ms!important;scroll-behavior:auto!important}"
              ".card:hover,.jogo:hover .capa img,.jogo:active .capa,.zap:active,.post-btn:active,.btn-filtro:hover,.btn-filtro:active,.ver:active{transform:none!important}}")
 
 
-# O menu fica preso no topo; ao rolar para baixo ele sai da frente e volta quando a pessoa rola para cima.
-# Barras que também ficam presas no topo (abas da resenha, filtros) descem para baixo do menu enquanto ele aparece.
-JS_MENU = ("(()=>{const n=document.querySelector('.nav'),b=document.querySelector('header.bar'),r=document.documentElement;let y=scrollY;"
-           "const h=()=>r.style.setProperty('--nav-h',n.offsetHeight+'px');h();addEventListener('resize',h);"
-           "const poe=m=>{const preso=scrollY>b.offsetHeight;n.classList.toggle('some',preso&&!m);document.body.classList.toggle('nav-on',preso&&m)};"
-           "addEventListener('scroll',()=>{const a=scrollY,d=a-y;if(Math.abs(d)<8&&a>b.offsetHeight)return;y=a;poe(d<0||a<=b.offsetHeight)},{passive:true});"
-           "n.addEventListener('focusin',()=>poe(true))})()")
+# O menu fica sempre preso no topo; barras que também ficam presas (abas da resenha, filtros) param logo abaixo dele.
+# O script só mede a altura do menu (que muda se o texto quebrar ou a fonte for maior).
+JS_MENU = ("(()=>{const n=document.querySelector('.nav'),h=()=>document.documentElement.style.setProperty('--nav-h',n.offsetHeight+'px');"
+           "h();addEventListener('resize',h);addEventListener('load',h)})()")
 
 
 def cabecalho(pre, atual="", sub=False):
@@ -210,10 +207,11 @@ def convite_compartilhar(texto, url, titulo, sub, classe="bloco"):
             f'{botao_compartilhar(texto, url)}</section>')
 
 
-def barra_leitura(texto, url):
-    """Barra fixa durante a leitura de notícias e resenhas: Curtir e Comentários (só com o serviço ligado) e Compartilhar."""
+def barra_leitura(texto="", url="", interacao=True):
+    """Barra fixa no pé da tela: Compartilhar em todas as páginas; nas notícias e resenhas também Curtir e Comentários
+    (só com o serviço ligado). Sem `texto` e `url`, compartilha o título e o endereço da própria página."""
     extras = ""
-    if _config_interacoes().get("api"):
+    if interacao and _config_interacoes().get("api"):
         extras = (f'<button type="button" class="lt-b curtir" aria-pressed="false" aria-label="Curtir">{icone("coracao")}<b class="n">–</b></button>'
                   f'<a class="lt-b" href="#comentarios">{icone("balao")}<span>Comentários</span></a>')
     return (f'<div class="barra-lt fora" role="region" aria-label="Ações da página">{extras}{botao_compartilhar(texto, url)}</div>'
@@ -252,8 +250,12 @@ def interacoes(pre, caminho, classe="bloco"):
 <script src="{pre}interacoes.js" defer></script>"""
 
 
-def rodape(pre):
+def rodape(pre, barra=None):
+    """Rodapé comum. `barra` é a barra fixa do pé da tela: por padrão, só Compartilhar; "" para nenhuma."""
+    if barra is None:
+        barra = barra_leitura(interacao=False)
     return f"""<footer><div class="in">
  <span>Elite Boardgamers</span><a href="{pre}noticias/">Notícias</a><a href="{pre}resenhas/">Resenhas</a><a href="{pre}lancamentos/">Lançamentos</a><a href="{pre}consulta/">Consulta Golden Geek</a><a href="{pre}jogos-de-tabuleiro/">Guia de jogos de tabuleiro</a><a href="{pre}premios/">Prêmios</a><a href="{pre}politica-editorial/">Política editorial</a>
  <a href="{INSTAGRAM}" target="_blank" rel="noopener">Instagram @eliteboardgamers</a><a href="{WHATSAPP}" target="_blank" rel="noopener">Grupo do WhatsApp</a>
-</div></footer>"""
+</div></footer>
+{barra}"""

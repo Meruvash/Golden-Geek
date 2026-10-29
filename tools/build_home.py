@@ -659,7 +659,7 @@ def build_home():
  <p class="lide">O endereço pode ter mudado ou sido digitado errado. Veja o que há de novo:</p>
  <div class="jogos"><a href="/">Notícias de hoje</a><a href="/resenhas/">Resenhas de jogos premiados</a><a href="/consulta/">Consulta Golden Geek</a></div>
 </section></div></main>
-{rodape("/")}"""
+{rodape("/", "")}"""
     (ROOT / "404.html").write_text(pagina("Página não encontrada | Elite Boardgamers", "Página não encontrada.", "", capa_secao("noticias"), "/", corpo_404), encoding="utf-8")
     build_politica()
     (ROOT / "index.html").write_text(pagina(titulo, descr, f"{SITE}/", url_cartao(f"noticia-{m['slug']}") or f"{SITE}/{img_nota(m, '')}", pre, corpo, jsonld=seo.script(seo.site())), encoding="utf-8")
@@ -720,8 +720,7 @@ def build_nota(n):
  <section class="bloco fontes"><h2>Fontes</h2><ul>{fontes}</ul></section>
  <section class="bloco crivo"><h2>Por que esta notícia entrou</h2><p><b>{n['crivo']['pontos']} pontos no crivo editorial</b>{":" if n['crivo']['criterios'] else ""} {e("; ".join(n['crivo']['criterios']) or "(nenhum critério de pontuação)")}.</p></section>
 </div></main>
-{barra_leitura(texto_cp, url)}
-{rodape(pre)}"""
+{rodape(pre, barra_leitura(texto_cp, url))}"""
     out = ROOT / "noticias" / n["slug"] / "index.html"
     out.parent.mkdir(parents=True, exist_ok=True)
     img = f"{SITE}/noticias/{n['imagem']['arquivo']}" if n.get("imagem") else capa_secao("noticias")

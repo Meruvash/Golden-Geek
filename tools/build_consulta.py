@@ -11,7 +11,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from layout import CSS_BUSCA, botao_compartilhar, cabecalho, rodape  # noqa: E402
+from layout import CSS_BUSCA, barra_leitura, botao_compartilhar, cabecalho, rodape  # noqa: E402
 from busca import chave, resenhas_por_nome  # noqa: E402
 import json  # noqa: E402
 
@@ -80,7 +80,9 @@ def build():
     # compartilhar a lista do jeito que está filtrada (o endereço guarda ano, categoria e pesquisa)
     cp = botao_compartilhar("Consulta Golden Geek 2015–2025 na Elite Boardgamers", "", "Compartilhar", mini=True)
     novo = re.sub(r'<!--cp-->.*?<!--/cp-->', lambda _: f'<!--cp-->{cp}<!--/cp-->', novo, count=1, flags=re.S)
-    novo = re.sub(r'<footer>.*?</footer>', lambda _: rodape("../"), novo, count=1, flags=re.S)
+    # rodapé + barra de compartilhar do pé da tela (entre marcadores, para ser trocada inteira na próxima geração)
+    novo = re.sub(r'<footer>.*?</footer>(?:\s*<!--lt-->.*?<!--/lt-->)?', lambda _: rodape("../", "\n<!--lt-->" + barra_leitura(interacao=False) + "<!--/lt-->"),
+                  novo, count=1, flags=re.S)
     novo = re.sub(r'^const RESENHAS = .*;$', lambda _: "const RESENHAS = " + json.dumps(resenhas, ensure_ascii=False, sort_keys=True) + ";", novo, count=1, flags=re.M)
     novo = re.sub(r'<span id="count" class="count">[^<]*</span>', f'<span id="count" class="count">{total}</span>', novo, count=1)
     if novo != s:
