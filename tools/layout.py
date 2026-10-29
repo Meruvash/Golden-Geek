@@ -103,10 +103,22 @@ CSS_BUSCA = (".busca-btn{display:grid;place-items:center;flex:none;width:44px;he
              # alvo de toque mínimo de 24 px (WCAG 2.2, 2.5.8) nos links do rodapé comum
              "footer .in a{display:inline-flex;align-items:center;min-height:24px}"
              + CSS_COMPARTILHAR + CSS_INTERACOES +
+             # menu das seções preso no topo: some ao rolar para baixo e volta ao rolar para cima
+             ".nav{position:sticky;top:0;z-index:20;transition:transform .2s ease}.nav.some{transform:translateY(-100%)}"
+             ".abas,.barra-f,.ctrl{transition:top .2s ease}body.nav-on .abas,body.nav-on .barra-f,body.nav-on .ctrl{top:var(--nav-h,0px)}"
              ".nav .casa{display:flex;align-items:center;justify-content:center;min-width:44px}.nav .casa .ic{width:20px;height:20px}"
              "@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;"
              "transition-duration:.01ms!important;scroll-behavior:auto!important}"
              ".card:hover,.jogo:hover .capa img,.jogo:active .capa,.zap:active,.post-btn:active,.btn-filtro:hover,.btn-filtro:active,.ver:active{transform:none!important}}")
+
+
+# O menu fica preso no topo; ao rolar para baixo ele sai da frente e volta quando a pessoa rola para cima.
+# Barras que também ficam presas no topo (abas da resenha, filtros) descem para baixo do menu enquanto ele aparece.
+JS_MENU = ("(()=>{const n=document.querySelector('.nav'),b=document.querySelector('header.bar'),r=document.documentElement;let y=scrollY;"
+           "const h=()=>r.style.setProperty('--nav-h',n.offsetHeight+'px');h();addEventListener('resize',h);"
+           "const poe=m=>{const preso=scrollY>b.offsetHeight;n.classList.toggle('some',preso&&!m);document.body.classList.toggle('nav-on',preso&&m)};"
+           "addEventListener('scroll',()=>{const a=scrollY,d=a-y;if(Math.abs(d)<8&&a>b.offsetHeight)return;y=a;poe(d<0||a<=b.offsetHeight)},{passive:true});"
+           "n.addEventListener('focusin',()=>poe(true))})()")
 
 
 def cabecalho(pre, atual="", sub=False):
@@ -126,7 +138,8 @@ def cabecalho(pre, atual="", sub=False):
  <button type="button" class="busca-btn" aria-label="Buscar no site" aria-haspopup="dialog" aria-keyshortcuts="/ Control+K" hidden>{icone("busca")}</button>
 </div></header>
 <script>{DISPARADOR.replace("PRE", pre)}</script>
-<nav class="nav" aria-label="Seções do site"><ul class="in">{nav}</ul></nav>"""
+<nav class="nav" aria-label="Seções do site"><ul class="in">{nav}</ul></nav>
+<script>{JS_MENU}</script>"""
 
 
 def trilha(*itens):
