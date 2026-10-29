@@ -16,7 +16,7 @@ from PIL import Image
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import seo  # noqa: E402
 from imagens_resp import srcset  # noqa: E402
-from layout import compartilhar, interacoes  # noqa: E402
+from layout import barra_leitura, convite_compartilhar, interacoes  # noqa: E402
 from layout import CSS_BUSCA, CSS_TRILHA, ICONES, INSTAGRAM, WHATSAPP, cabecalho, icone, rodape, trilha  # noqa: E402,F401
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -27,6 +27,11 @@ e = html.escape
 def nome_br(c):
     """Nome do jogo como o leitor brasileiro conhece (o og_titulo usa o nome da edição nacional)."""
     return c["og_titulo"].split(" vale a pena")[0].split(" Resenha")[0]
+
+
+def texto_cp(c):
+    """Texto que acompanha o link quando alguém compartilha a resenha."""
+    return f"{nome_br(c)}: {c['tagline']} Resenha da Elite Boardgamers"
 
 
 def titulo_busca(c):
@@ -308,7 +313,7 @@ def layout_v2(c, premios_bloco, ficha_html, fontes, fotos=None, info_meio=""):
    <p>{e(c["veredito"])}</p>
    <p class="tagline">{e(c["tagline"])}</p>
   </section>
-  <section class="bloco claro cp-bloco">{compartilhar(f"{nome_br(c)}: {c['tagline']} Resenha da Elite Boardgamers", f"{SITE}/{c['slug']}/", f"Conhece alguém que joga {nome_br(c)}? Mande esta resenha.")}</section>
+  {convite_compartilhar(texto_cp(c), f"{SITE}/{c['slug']}/", f"Conhece alguém que joga {e(nome_br(c))}?", "Mande esta resenha para a turma.", "bloco claro")}
   {interacoes("../", f"/{c['slug']}/", "bloco claro")}"""
     mais = noticias_do_jogo(c) + mais_resenhas(c)
     comunidade = f"""<section class="bloco comunidade"><h2>Gostou da resenha?</h2><p>A Elite Boardgamers publica resenhas de jogos premiados todos os dias. Entre no grupo para conversar sobre jogos e siga no Instagram.</p><div class="acoes"><a class="zap" href="{WHATSAPP}" target="_blank" rel="noopener">{icone("zap", "ic zi")}<span><b>Entrar no grupo do WhatsApp</b></span></a><a class="ig-btn" href="{INSTAGRAM}" target="_blank" rel="noopener">{icone("insta")}<span>Seguir @eliteboardgamers</span></a></div></section>"""
@@ -684,7 +689,7 @@ footer{{background:var(--bar);color:var(--bar-ink);font-size:.88rem;border-top:1
 /* paleta de seções (referência: The Verge, como em notícias): filete na cor do jogo sobre o título de cada seção
    e a linha de publicação em monoespaçada */
 .v2 .bloco.claro>h2,.v2 .faixa>h2,.v2 .pc2>div>h2,.v2 .preco-card>h2{{border-top:3px solid var(--acc);padding-top:10px}}
-.jogo .compartilhe{{margin-top:14px}}.jogo .cp-st{{color:var(--ok-ink)}}
+
 .pub{{font-family:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,monospace;font-size:.72rem;text-transform:uppercase;letter-spacing:.05em}}
 .r30{{background:#101318;border:1px solid #3a3f48;border-left:4px solid var(--acc);display:grid;gap:14px}}
 .r30-grid{{display:grid;gap:14px}}.r30 h3{{font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:6px}}
@@ -784,7 +789,6 @@ footer a{{color:var(--bar-ink)}}
   <ul class="regua">{regua_html}</ul>
   <p class="lede">{e(c["lede"])}</p>
   {pub_html}
-  {compartilhar(f"{nome_br(c)}: {c['tagline']} Resenha da Elite Boardgamers", f"{SITE}/{slug}/", "", compacto=True)}
  </div>
 </div>
 </section>
@@ -796,6 +800,7 @@ footer a{{color:var(--bar-ink)}}
 {main_html}
 
 {rodape("../")}
+{barra_leitura(texto_cp(c), f"{SITE}/{slug}/")}
 <script>
 (() => {{
   // Menu de seções: marca a seção que está na tela e rola o menu até ela.

@@ -17,7 +17,7 @@ from PIL import Image
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import seo  # noqa: E402
-from layout import compartilhar  # noqa: E402
+from layout import botao_compartilhar  # noqa: E402
 from build_home import MESES, NOME_EDITORA, cabecalho, capa_secao, norm, notas, pagina, rodape  # noqa: E402
 from build_review import ROOT, SITE, e  # noqa: E402
 
@@ -305,7 +305,7 @@ JS = """<script>
     acoes.push(`<a class="${acoes.length ? 'sec' : 'pri'}" href="${d.ludopedia}" target="_blank" rel="noopener">Ver o jogo na Ludopedia</a>`);
     if (d.topico) acoes.push(`<a class="sec" href="${d.topico}" target="_blank" rel="noopener">Tópico oficial na Ludopedia</a>`);
     $('.acoes', dlg).innerHTML = acoes.join('');
-    $('.compartilhe', dlg).dataset.texto = `${d.nome} (${d.editora}): lançamento no Brasil, no calendário da Elite Boardgamers`;
+    $('.cpw', dlg).dataset.texto = `${d.nome} (${d.editora}): lançamento no Brasil, no calendário da Elite Boardgamers`;
     $('.cp-st', dlg).textContent = '';
     history.replaceState(null, '', '#' + li.id);
     dlg.showModal();
@@ -387,7 +387,7 @@ def build(ano=None):
   <div class="topo"><div class="capa2"></div><div><h2 id="ficha-nome"></h2><p class="ed2"></p></div></div>
   <dl><dt>Previsto para</dt><dd class="v-mes"></dd><dt>Situação</dt><dd class="v-st"></dd><dt>Tipo</dt><dd class="v-tipo"></dd></dl>
   <div class="acoes"></div>
-  {compartilhar("Lançamento no Brasil, no calendário da Elite Boardgamers", "", "Compartilhar este lançamento", compacto=True)}
+  <div class="cp-ficha">{botao_compartilhar("Lançamento no Brasil, no calendário da Elite Boardgamers", "", "Compartilhar este jogo", mini=True)}</div>
   <p class="nota-fonte">Dados do calendário da Ludopedia.</p>
  </div>
 </dialog>

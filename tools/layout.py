@@ -25,6 +25,7 @@ ICONES = {
     "casa": '<path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 9.5V20h13V9.5"/><path d="M10 20v-5.5h4V20"/>',
     "coracao": '<path d="M12 20s-7.5-4.6-9.3-9.2C1.4 7.4 3.6 4 7 4c2 0 3.6 1.1 5 3 1.4-1.9 3-3 5-3 3.4 0 5.6 3.4 4.3 6.8C19.5 15.4 12 20 12 20Z"/>',
     "busca": '<circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/>',
+    "balao": '<path d="M4 5h16v11H9l-5 4V5Z"/>',
     "compartilhar": '<circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="M8.2 10.8l7.6-4.4M8.2 13.2l7.6 4.4"/>',
 }
 
@@ -44,14 +45,37 @@ DISPARADOR = ("(()=>{const b=document.querySelector('.busca-btn');let c;b.hidden
               "b.addEventListener('click',a);addEventListener('keydown',e=>{const t=e.target,ed=t.isContentEditable||/^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName);"
               "if((e.key==='/'&&!ed&&!e.ctrlKey&&!e.metaKey)||((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k')){e.preventDefault();a()}})})()")
 
-CSS_COMPARTILHAR = (".compartilhe{display:grid;gap:8px}.compartilhe .cp-t{font-weight:800;font-size:1rem;margin:0}"
-                    ".cp-b{display:flex;flex-wrap:wrap;align-items:center;gap:8px}"
-                    ".cp{display:inline-flex;align-items:center;gap:7px;box-sizing:border-box;line-height:1.2;min-height:40px;margin:0;padding:8px 14px;border-radius:999px;border:1px solid #3a3f48;"
-                    "background:#14171c;color:#fff;font:inherit;font-size:.9rem;font-weight:700;text-decoration:none;cursor:pointer}"
-                    ".compartilhe .cp,.compartilhe .cp:hover{color:#fff}.cp:hover{border-color:#e3b23c}.cp .ic{width:18px;height:18px}.cp[hidden]{display:none}"
-                    ".cp.cp-zap{background:#157a43;border-color:#157a43}.cp.cp-zap:hover{background:#11683a}"
-                    ".cp-st{font-size:.88rem;font-weight:700;color:#1b7a45;margin:0}.cp-st:empty{display:none}"
-                    ".compartilhe.compacto .cp{min-height:36px;padding:6px 12px;font-size:.84rem}")
+# Compartilhar: um botão só. No celular abre o menu do próprio aparelho (WhatsApp, Instagram, Telegram...);
+# no computador abre uma janelinha com WhatsApp e Copiar link.
+CSS_COMPARTILHAR = (".cpw{position:relative;display:inline-block}"
+                    ".cp{display:inline-flex;align-items:center;justify-content:center;gap:8px;box-sizing:border-box;line-height:1.2;min-height:44px;margin:0;padding:10px 20px;"
+                    "border-radius:999px;border:0;background:#157a43;color:#fff;font:inherit;font-size:.95rem;font-weight:800;text-decoration:none;cursor:pointer}"
+                    ".cp:hover{background:#11683a;color:#fff}.cp .ic{width:19px;height:19px}.cp[hidden]{display:none}"
+                    ".cpw.mini .cp{min-height:40px;padding:8px 14px;font-size:.88rem}"
+                    ".cp-menu{position:absolute;z-index:30;top:calc(100% + 8px);left:0;min-width:200px;display:grid;gap:2px;padding:6px;border-radius:12px;"
+                    "background:#fff;border:1px solid #dde1e7;box-shadow:0 10px 30px rgba(0,0,0,.25)}.cp-menu[hidden]{display:none}"
+                    ".cp-menu.sobe{top:auto;bottom:calc(100% + 8px)}.cp-menu.dir{left:auto;right:0}"
+                    ".cp-op{display:flex;align-items:center;gap:10px;min-height:44px;padding:8px 12px;border:0;border-radius:8px;background:none;"
+                    "color:#14171c;font:inherit;font-size:.95rem;font-weight:700;text-align:left;text-decoration:none;cursor:pointer}"
+                    ".cp-op:hover,.cp-op:focus-visible{background:#eef1f4;color:#14171c}.cp-op .ic{width:20px;height:20px}.cp-op.zap-op .ic{color:#157a43}"
+                    ".cp-st{position:absolute;z-index:30;top:calc(100% + 8px);left:0;white-space:nowrap;margin:0;padding:6px 12px;border-radius:8px;"
+                    "background:#14171c;color:#fff;font-size:.85rem;font-weight:700}.cp-st:empty{display:none}.barra-lt .cp-st{top:auto;bottom:calc(100% + 8px)}"
+                    # convite no fim do conteúdo
+                    ".convite{display:flex;align-items:center;justify-content:space-between;gap:12px 20px;flex-wrap:wrap}"
+                    ".convite .cv-t{margin:0;font-weight:800;font-size:1.1rem}.convite .cv-s{margin:2px 0 0;font-size:.92rem;opacity:.8}"
+                    # barra de leitura: aparece depois de rolar e some perto do fim
+                    ".barra-lt{position:fixed;z-index:25;left:50%;bottom:calc(12px + env(safe-area-inset-bottom));display:flex;align-items:center;gap:4px;padding:5px;"
+                    "border-radius:999px;background:#14171c;border:1px solid #3a3f48;box-shadow:0 8px 24px rgba(0,0,0,.35);"
+                    "transform:translate(-50%,0);transition:transform .25s ease,opacity .25s ease}"
+                    ".barra-lt.fora{transform:translate(-50%,calc(100% + 24px));opacity:0;pointer-events:none}"
+                    ".lt-b{display:inline-flex;align-items:center;gap:7px;min-height:44px;padding:8px 14px;border:0;border-radius:999px;background:none;"
+                    "color:#e9ecf1;font:inherit;font-size:.9rem;font-weight:700;text-decoration:none;cursor:pointer}"
+                    ".lt-b:hover{background:#262a31;color:#fff}.lt-b .ic{width:20px;height:20px}"
+                    ".barra-lt .lt-b.curtir{background:none;border:0;color:#e9ecf1;padding:8px 14px}.barra-lt .lt-b.curtir[aria-pressed=true]{color:#ff6b81;background:none}"
+                    "@media (max-width:479px){.lt-b span{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}}.lt-b.curtir[aria-pressed=true] .ic{fill:currentColor}"
+                    ".barra-lt .cp{min-height:44px;padding:8px 16px;font-size:.9rem}"
+                    "body.lt-on .voltar-topo{bottom:calc(76px + env(safe-area-inset-bottom))}"
+                    "@media print{.barra-lt{display:none}}")
 
 CSS_INTERACOES = (".interacoes{display:grid;gap:14px}.interacoes[hidden]{display:none}"
                   ".curtir-l{display:flex;align-items:center;gap:12px;flex-wrap:wrap}"
@@ -125,43 +149,62 @@ CSS_TRILHA = (".trilha{min-width:0;max-width:100%}.trilha ol{display:flex;align-
 
 SITE = "https://eliteboardgamers.com.br"
 
-# Compartilhar: os links de WhatsApp, Telegram, X e Facebook funcionam sem JavaScript; o script só cuida de
-# "Copiar link", do menu nativo do celular ("Mais opções") e do endereço das páginas que mudam com os filtros.
-JS_COMPARTILHAR = """(()=>{if(window.__cp)return;window.__cp=1;
-const url=c=>c.dataset.url||location.href,txt=c=>c.dataset.texto||document.title;
-const monta=c=>{const u=encodeURIComponent(url(c)),t=encodeURIComponent(txt(c));
- c.querySelectorAll('[data-rede]').forEach(a=>{a.href={zap:'https://wa.me/?text='+t+'%20'+u,tg:'https://t.me/share/url?url='+u+'&text='+t,
- x:'https://twitter.com/intent/tweet?url='+u+'&text='+t,fb:'https://www.facebook.com/sharer/sharer.php?u='+u}[a.dataset.rede]})};
-document.querySelectorAll('.compartilhe').forEach(c=>{if(navigator.share)c.querySelectorAll('.cp-nativo').forEach(b=>b.hidden=false)});
-document.addEventListener('click',async ev=>{const el=ev.target.closest('.compartilhe [data-rede],.cp-copiar,.cp-nativo');if(!el)return;
- const c=el.closest('.compartilhe'),st=c.querySelector('.cp-st');
- if(el.dataset.rede){monta(c);return}
- if(el.classList.contains('cp-nativo')){try{await navigator.share({title:document.title,text:txt(c),url:url(c)})}catch(e){}return}
- let ok=false;try{await navigator.clipboard.writeText(url(c));ok=true}catch(e){
-  const i=document.createElement('input');i.value=url(c);document.body.append(i);i.select();try{ok=document.execCommand('copy')}catch(e2){}i.remove()}
- if(st)st.textContent=ok?'Link copiado! É só colar na conversa.':'Não deu para copiar: segure o dedo na barra de endereço e copie por lá.'})})()"""
+# Sem JavaScript, o botão é um link para o WhatsApp; o script troca pelo menu do celular ou pela janelinha.
+JS_COMPARTILHAR = """(()=>{const pega=c=>({u:c.dataset.url||location.href,t:c.dataset.texto||document.title});
+document.querySelectorAll('.cpw:not(.ok)').forEach(c=>{c.classList.add('ok');const b=c.querySelector('.cp');
+ const n=document.createElement('button');n.type='button';n.className=b.className;n.innerHTML=b.innerHTML;n.setAttribute('aria-expanded','false');b.replaceWith(n)});
+if(window.__cp)return;window.__cp=1;
+const celular=()=>navigator.share&&matchMedia('(pointer:coarse)').matches;
+const fecha=()=>document.querySelectorAll('.cp-menu:not([hidden])').forEach(m=>{m.hidden=true;m.parentNode.querySelector('.cp').setAttribute('aria-expanded','false')});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')fecha()});
+document.addEventListener('click',async ev=>{const c=ev.target.closest('.cpw');if(!c){fecha();return}
+ const {u,t}=pega(c),m=c.querySelector('.cp-menu'),st=c.querySelector('.cp-st'),el=ev.target.closest('.cp,.cp-op');if(!el)return;
+ if(el.classList.contains('cp')){
+  if(celular()){try{await navigator.share({title:document.title,text:t,url:u})}catch(e){}return}
+  const abre=m.hidden;fecha();if(!abre)return;
+  m.querySelector('.zap-op').href='https://wa.me/?text='+encodeURIComponent(t+' '+u);
+  const r=c.getBoundingClientRect();m.classList.toggle('sobe',!!c.closest('.barra-lt')||r.bottom>innerHeight-140);m.classList.toggle('dir',r.left>innerWidth-220);
+  m.hidden=false;el.setAttribute('aria-expanded','true');m.querySelector('.cp-op').focus();return}
+ if(el.classList.contains('zap-op')){fecha();return}
+ fecha();let ok=false;try{await navigator.clipboard.writeText(u);ok=true}catch(e){
+  const i=document.createElement('input');i.value=u;document.body.append(i);i.select();try{ok=document.execCommand('copy')}catch(e2){}i.remove()}
+ st.textContent=ok?'Link copiado!':'Não deu para copiar o link.';clearTimeout(st._t);st._t=setTimeout(()=>st.textContent='',2500);
+ c.querySelector('.cp').focus()})})()"""
+
+# Barra de leitura: aparece depois que a pessoa rola um pouco e some quando o convite do fim ou o rodapé aparecem.
+JS_LEITURA = """(()=>{const l=document.querySelector('.barra-lt');if(!l)return;const vis=new Set();
+const poe=()=>{const on=scrollY>500&&!vis.size;l.classList.toggle('fora',!on);l.inert=!on;document.body.classList.toggle('lt-on',on)};
+const io=new IntersectionObserver(es=>{es.forEach(e=>e.isIntersecting?vis.add(e.target):vis.delete(e.target));poe()});
+document.querySelectorAll('.convite,footer').forEach(x=>io.observe(x));addEventListener('scroll',poe,{passive:true});poe()})()"""
 
 
-def compartilhar(texto, url="", titulo="Compartilhe", compacto=False):
-    """Barra de compartilhamento. Sem `url`, usa o endereço atual (páginas cujo endereço muda com os filtros)."""
+def botao_compartilhar(texto, url="", rotulo="Compartilhar", mini=False):
+    """Botão único de compartilhar. Sem `url`, usa o endereço atual (páginas cujo endereço muda com os filtros)."""
     import html
-    zap = '<a class="cp cp-zap" data-rede="zap" href="{}" target="_blank" rel="noopener">{}WhatsApp</a>'
     from urllib.parse import quote
-    href = lambda rede: {"zap": f"https://wa.me/?text={quote(texto + " " + url, safe="")}", "tg": f"https://t.me/share/url?url={quote(url, safe="")}&text={quote(texto, safe="")}",
-                         "x": f"https://twitter.com/intent/tweet?url={quote(url, safe="")}&text={quote(texto, safe="")}",
-                         "fb": f"https://www.facebook.com/sharer/sharer.php?u={quote(url, safe="")}"}[rede] if url else "#"
-    botoes = (zap.format(html.escape(href("zap")), icone("zap"))
-              + f'<button type="button" class="cp cp-copiar">{icone("copiar")}Copiar link</button>'
-              + f'<button type="button" class="cp cp-nativo" hidden>{icone("compartilhar")}Mais opções</button>'
-              + ("" if compacto else
-                 f'<a class="cp" data-rede="tg" href="{html.escape(href("tg"))}" target="_blank" rel="noopener">Telegram</a>'
-                 f'<a class="cp" data-rede="x" href="{html.escape(href("x"))}" target="_blank" rel="noopener">X</a>'
-                 f'<a class="cp" data-rede="fb" href="{html.escape(href("fb"))}" target="_blank" rel="noopener">Facebook</a>'))
+    zap = f"https://wa.me/?text={quote(texto + ' ' + url, safe='')}" if url else "https://wa.me/"
     dados = (f' data-url="{html.escape(url)}"' if url else "") + f' data-texto="{html.escape(texto)}"'
-    return (f'<div class="compartilhe{" compacto" if compacto else ""}"{dados}>'
-            + (f'<p class="cp-t">{html.escape(titulo)}</p>' if titulo else "")
-            + f'<div class="cp-b">{botoes}</div><p class="cp-st" role="status"></p></div><script>{JS_COMPARTILHAR}</script>')
+    return (f'<div class="cpw{" mini" if mini else ""}"{dados}>'
+            f'<a class="cp" href="{html.escape(zap)}" target="_blank" rel="noopener">{icone("compartilhar")}<span>{html.escape(rotulo)}</span></a>'
+            f'<div class="cp-menu" hidden><a class="cp-op zap-op" href="{html.escape(zap)}" target="_blank" rel="noopener">{icone("zap")}WhatsApp</a>'
+            f'<button type="button" class="cp-op">{icone("copiar")}Copiar link</button></div>'
+            f'<p class="cp-st" role="status"></p></div><script>{JS_COMPARTILHAR}</script>')
 
+
+def convite_compartilhar(texto, url, titulo, sub, classe="bloco"):
+    """O convite único no fim do conteúdo (depois de "Nossa opinião" ou do veredito)."""
+    return (f'<section class="{classe} convite" aria-label="Compartilhar"><div><p class="cv-t">{titulo}</p><p class="cv-s">{sub}</p></div>'
+            f'{botao_compartilhar(texto, url)}</section>')
+
+
+def barra_leitura(texto, url):
+    """Barra fixa durante a leitura de notícias e resenhas: Curtir e Comentários (só com o serviço ligado) e Compartilhar."""
+    extras = ""
+    if _config_interacoes().get("api"):
+        extras = (f'<button type="button" class="lt-b curtir" aria-pressed="false" aria-label="Curtir">{icone("coracao")}<b class="n">–</b></button>'
+                  f'<a class="lt-b" href="#comentarios">{icone("balao")}<span>Comentários</span></a>')
+    return (f'<div class="barra-lt fora" role="region" aria-label="Ações da página">{extras}{botao_compartilhar(texto, url)}</div>'
+            f'<script>{JS_LEITURA}</script>')
 
 
 def _config_interacoes():
