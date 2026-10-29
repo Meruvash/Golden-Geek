@@ -100,6 +100,10 @@ def fontes():
         # página do arquivo de notícias: muda quando entra nota nova; data = a da nota mais recente nela
         datas = re.findall(r'href="\.\./\.\./\.\./noticias/([^/"]+)/"', pag.read_text(encoding="utf-8"))
         paginas.append(("arquivo", f"{SITE}/noticias/pagina/{pag.parent.name}/", pag, assinatura(datas), None))
+    # páginas de categoria do arquivo (só existem quando o arquivo de notícias tem mais de uma página)
+    for pag in sorted((ROOT / "noticias" / "categoria").glob("*/index.html")):
+        notas = re.findall(r'href="\.\./\.\./\.\./noticias/([^/"]+)/"', pag.read_text(encoding="utf-8"))
+        paginas.append(("arquivo", f"{SITE}/noticias/categoria/{pag.parent.name}/", pag, assinatura(notas), None))
     politica = ROOT / "politica-editorial" / "index.html"
     if politica.exists():
         texto = re.search(r"<main.*?</main>", politica.read_text(encoding="utf-8"), re.S).group(0)

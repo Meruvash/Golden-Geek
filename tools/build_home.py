@@ -24,6 +24,8 @@ from noticias.checar_noticia import problemas  # noqa: E402
 
 MESES = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"]
 SELO_CLASSE = {"Vale a compra": "compra", "Vale acompanhar": "acompanhar", "Para fãs do jogo base": "fas", "Com ressalvas": "ressalvas", "Informativo": "info"}
+# categorias na ordem dos chips do arquivo de notícias, com o trecho de URL de cada uma
+CATEGORIAS = {"Chegando ao Brasil": "chegando-ao-brasil", "Financiamento": "financiamento", "Mercado": "mercado", "Prêmios": "premios", "Eventos": "eventos"}
 CAT_CLASSE = {"Prêmios": "premios", "Chegando ao Brasil": "brasil", "Mercado": "mercado", "Financiamento": "financ", "Eventos": "mercado"}
 
 
@@ -205,6 +207,11 @@ footer .in{display:flex;flex-wrap:wrap;gap:10px 20px;padding-top:18px;padding-bo
 .nota h2,.nota .h-sec{font-size:.8rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--paper-muted);margin-bottom:8px}
 .nota .h-sec{margin:0 0 8px;line-height:inherit;text-wrap:wrap}
 .leia li{padding:8px 0;border-top:1px solid var(--paper-line)}.leia li:first-child{border-top:0}.leia a{color:var(--link);font-weight:700;text-decoration:none}.leia a:hover{text-decoration:underline}
+.cats{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 12px}.cats[hidden]{display:none}
+.cats button{font:inherit;font-size:.86rem;font-weight:700;min-height:36px;padding:4px 12px;border-radius:999px;border:1px solid var(--paper-line);background:#fff;color:var(--paper-ink);cursor:pointer}
+.cats button small{margin-left:6px;font-weight:600;color:var(--paper-muted);font-variant-numeric:tabular-nums}
+.cats button:hover{border-color:var(--paper-ink)}.cats button[aria-pressed="true"]{background:var(--paper-ink);border-color:var(--paper-ink);color:#fff}.cats button[aria-pressed="true"] small{color:#c9cfd8}
+.cat-nota{font-size:.88rem;color:var(--paper-muted);margin:0 0 12px}.cat-nota a{color:var(--link);font-weight:700}
 .paginas{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:16px;font-weight:700}.paginas a{color:var(--link)}.paginas span{color:var(--paper-muted);font-size:.9rem}
 .nota .fontes li{margin:6px 0;font-size:.92rem}.nota .fontes a{color:var(--link)}.nota .fontes span{color:var(--paper-muted);font-size:.82rem}
 .nota .jogos{display:flex;flex-wrap:wrap;gap:8px}.nota .jogos a{display:inline-block;padding:6px 10px;border-radius:6px;background:#e6e9ee;text-decoration:none;font-weight:700;font-size:.9rem}
@@ -258,6 +265,16 @@ def og_dim(imagem):
         return ""
     with Image.open(arq) as im:
         return f'\n<meta property="og:image:width" content="{im.width}">\n<meta property="og:image:height" content="{im.height}">'
+
+
+JS_CATEGORIAS = """(()=>{const g=document.querySelector('.cats');if(!g)return;
+const lis=[...document.querySelectorAll('.lista-n li')],nota=document.querySelector('.cat-nota');
+const aplica=v=>{lis.forEach(li=>{li.hidden=!!v&&li.dataset.cat!==v});
+g.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.c===v)));
+const u=new URL(location.href);if(v)u.searchParams.set('categoria',v);else u.searchParams.delete('categoria');history.replaceState(null,'',u);
+if(nota){const b=g.querySelector('[data-c="'+v+'"]'),a=nota.querySelector('a');nota.hidden=!v;if(v){a.href=b.dataset.pag;a.textContent='Ver todas as notícias de '+b.dataset.t}}};
+g.addEventListener('click',ev=>{const b=ev.target.closest('button');if(b)aplica(b.dataset.c)});
+const c=new URLSearchParams(location.search).get('categoria');g.hidden=false;aplica(c&&g.querySelector('[data-c="'+c+'"]')?c:'')})()"""
 
 
 def capa_secao(secao):
@@ -363,7 +380,7 @@ def build_home():
   <span class="meta">{data_longa(m['data'])} · {e(m['fontes'][0]['nome'])}</span><span class="credito">{e(m['imagem']['credito'])}</span></div>
  </a></article>"""
     def item(n, pre):
-        return f"""<li><a href="noticias/{n['slug']}/"{'' if n.get("imagem") else ' class="sem-img"'}>{f'<img src="{miniatura(ROOT / "noticias" / n["imagem"]["arquivo"], pre)}" width="76" height="76" alt="" loading="lazy">' if n.get("imagem") else f'<span class="sem">{icone("dica")}</span>'}
+        return f"""<li data-cat="{CATEGORIAS.get(n['categoria'], 'outras')}"><a href="noticias/{n['slug']}/"{'' if n.get("imagem") else ' class="sem-img"'}>{f'<img src="{miniatura(ROOT / "noticias" / n["imagem"]["arquivo"], pre)}" width="76" height="76" alt="" loading="lazy">' if n.get("imagem") else f'<span class="sem">{icone("dica")}</span>'}
    <div><span class="cat {CAT_CLASSE.get(n['categoria'], 'mercado')}">{e(n['categoria'])}</span> <span class="meta">{data_curta(n['data'])} · {e(n['fontes'][0]['nome'].split(':')[0])}</span>
    <h3>{e(n['titulo'])}</h3><p><span class="selo {SELO_CLASSE[n['selo']]}">{e(n['selo'])}</span> <span class="resumo">{e(n['por_que_importa'])}</span></p></div></a></li>"""
     ultimas = resto[:8]
@@ -379,6 +396,40 @@ def build_home():
         if not velha.parent.name.isdigit() or int(velha.parent.name) > len(paginas):
             velha.unlink()
             velha.parent.rmdir()
+    # Com mais de uma página, cada categoria ganha também uma página estática e indexável (/noticias/categoria/<nome>/),
+    # porque o filtro no navegador só enxerga as notas da página aberta. Com uma página só, elas não existem.
+    paginado = len(paginas) > 1
+    por_cat = {c: [n for n in ns if n["categoria"] == c] for c in CATEGORIAS}
+    pasta_cat = ROOT / "noticias" / "categoria"
+    for velha in pasta_cat.glob("*/index.html"):
+        if not paginado or velha.parent.name not in CATEGORIAS.values() or not por_cat[next(c for c, v in CATEGORIAS.items() if v == velha.parent.name)]:
+            velha.unlink()
+            velha.parent.rmdir()
+    if paginado:
+        for cat, lista in por_cat.items():
+            if not lista:
+                continue
+            c_pre, url_c = "../../../", f"{SITE}/noticias/categoria/{CATEGORIAS[cat]}/"
+            itens_c = "".join(item(n, c_pre).replace('href="noticias/', f'href="{c_pre}noticias/').replace("<h3>", "<h2>").replace("</h3>", "</h2>") for n in lista)
+            corpo_c = f"""{cabecalho(c_pre, "Notícias", sub=True)}
+<main id="conteudo" class="in"><div class="nota">{trilha(("Início", c_pre), ("Notícias", f"{c_pre}noticias/"), (e(cat), ""))}
+ <section class="bloco ultimas"><h1 class="h-sec">{e(cat)}: notícias de jogos de tabuleiro</h1><ul class="lista-n">{itens_c}</ul></section></div></main>
+{rodape(c_pre)}"""
+            destino_c = pasta_cat / CATEGORIAS[cat] / "index.html"
+            destino_c.parent.mkdir(parents=True, exist_ok=True)
+            destino_c.write_text(pagina(f"{cat}: notícias | Elite Boardgamers", f"Notícias de jogos de tabuleiro da categoria {cat}, com fonte, data e opinião.", url_c,
+                                        capa_secao("noticias"), c_pre, corpo_c,
+                                        jsonld=seo.script(seo.trilha(("Início", f"{SITE}/"), ("Notícias", f"{SITE}/noticias/"), (cat, url_c))))
+                                 , encoding="utf-8")
+
+    def chips_cat(lote, p_pre):
+        """Chips de categoria do arquivo: filtram as notas da página no navegador (estado em ?categoria=)."""
+        conta = {c: sum(1 for n in lote if n["categoria"] == c) for c in CATEGORIAS}
+        bts = "".join(f'<button type="button" data-c="{v}" data-t="{e(c)}" data-pag="{p_pre}noticias/categoria/{v}/" aria-pressed="false">{e(c)}<small>{conta[c]}</small></button>'
+                      for c, v in CATEGORIAS.items() if conta[c])
+        nota = '<p class="cat-nota" hidden>Esta página mostra só parte do arquivo. <a href="#">Ver todas</a></p>' if paginado else ""
+        return (f'<div class="cats" role="group" aria-label="Filtrar por categoria" hidden><button type="button" data-c="" aria-pressed="true">Todas<small>{len(lote)}</small></button>{bts}</div>{nota}')
+
     for num, lote in enumerate(paginas, 1):
         p_pre = "../" if num == 1 else "../../../"
         url = f"{SITE}/noticias/" if num == 1 else f"{SITE}/noticias/pagina/{num}/"
@@ -389,13 +440,13 @@ def build_home():
         sufixo = "" if num == 1 else f" (página {num})"
         corpo_arq = f"""{cabecalho(p_pre, "Notícias", sub=num > 1)}
 <main id="conteudo" class="in"><div class="nota"><a class="volta" href="{p_pre}">← Página inicial</a>
- <section class="bloco ultimas"><h1 class="h-sec">Notícias de jogos de tabuleiro{sufixo}</h1><ul class="lista-n">{arquivo}</ul>{nav}</section></div></main>
+ <section class="bloco ultimas"><h1 class="h-sec">Notícias de jogos de tabuleiro{sufixo}</h1>{chips_cat(lote, p_pre)}<ul class="lista-n">{arquivo}</ul>{nav}<script>{JS_CATEGORIAS}</script></section></div></main>
 {rodape(p_pre)}"""
-        trilha = [("Início", f"{SITE}/"), ("Notícias", f"{SITE}/noticias/")] + ([] if num == 1 else [(f"Página {num}", url)])
+        trilha_ld = [("Início", f"{SITE}/"), ("Notícias", f"{SITE}/noticias/")] + ([] if num == 1 else [(f"Página {num}", url)])
         destino = ROOT / "noticias" / ("index.html" if num == 1 else f"pagina/{num}/index.html")
         destino.parent.mkdir(parents=True, exist_ok=True)
         destino.write_text(pagina(f"Notícias{sufixo} | Elite Boardgamers", f"Notícias de jogos de tabuleiro da Elite Boardgamers, com fonte, data e opinião{sufixo}.", url,
-                                  capa_secao("noticias"), p_pre, corpo_arq, jsonld=seo.script(seo.trilha(*trilha))), encoding="utf-8")
+                                  capa_secao("noticias"), p_pre, corpo_arq, jsonld=seo.script(seo.trilha(*trilha_ld))), encoding="utf-8")
     # cada item dos Destaques tem de levar a uma nota que trate do jogo já no título
     for j in home["em_alta"]:
         slug = j["link"].strip("/").split("/")[-1]
