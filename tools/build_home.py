@@ -599,7 +599,7 @@ def build_home():
  </div>
 </main>
 {rodape(pre)}"""
-    titulo = "Elite Boardgamers: notícias de jogos de tabuleiro"
+    titulo = "Elite Boardgamers: notícias e resenhas de jogos de tabuleiro"
     descr = f"{m['titulo']}. Notícias de jogos de tabuleiro com fonte e data, lançamentos no Brasil e resenhas de jogos premiados."
     # 404: servida pelo GitHub Pages em qualquer profundidade, por isso os caminhos são absolutos ("/")
     corpo_404 = f"""{cabecalho("/", "")}
@@ -690,6 +690,8 @@ if __name__ == "__main__":
     # guias "Melhores jogos para…" antes das resenhas: o balão do perfil só liga para guia que existe
     import build_guias
     print("ok guias:", len(build_guias.build()), "páginas em /jogos-de-tabuleiro/")
+    import build_premios
+    print("ok", build_premios.build())
     # resenhas mostram "Notícias sobre este jogo": regera as publicadas para incluir notas novas
     import build_review
     for pub in json.loads((ROOT / "pauta.json").read_text(encoding="utf-8"))["publicadas"]:

@@ -95,6 +95,6 @@ CSS_TRILHA = (".trilha{min-width:0;max-width:100%}.trilha ol{display:flex;align-
 
 def rodape(pre):
     return f"""<footer><div class="in">
- <span>Elite Boardgamers</span><a href="{pre}noticias/">Notícias</a><a href="{pre}resenhas/">Resenhas</a><a href="{pre}lancamentos/">Lançamentos</a><a href="{pre}consulta/">Consulta Golden Geek</a><a href="{pre}jogos-de-tabuleiro/">Guia de jogos de tabuleiro</a><a href="{pre}politica-editorial/">Política editorial</a>
+ <span>Elite Boardgamers</span><a href="{pre}noticias/">Notícias</a><a href="{pre}resenhas/">Resenhas</a><a href="{pre}lancamentos/">Lançamentos</a><a href="{pre}consulta/">Consulta Golden Geek</a><a href="{pre}jogos-de-tabuleiro/">Guia de jogos de tabuleiro</a><a href="{pre}premios/">Prêmios</a><a href="{pre}politica-editorial/">Política editorial</a>
  <a href="{INSTAGRAM}" target="_blank" rel="noopener">Instagram @eliteboardgamers</a><a href="{WHATSAPP}" target="_blank" rel="noopener">Grupo do WhatsApp</a>
 </div></footer>"""

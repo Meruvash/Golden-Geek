@@ -26,6 +26,20 @@ BASE = "jogos-de-tabuleiro"
 
 # perfil: (slug, título da página, frase do cartão no guia geral, critério visível, introdução, regra pelos dados, filtro em /resenhas/)
 GUIAS = {
+    "melhores": ("melhores", "Os melhores jogos de tabuleiro premiados",
+                 "Os mais premiados entre todos os que resenhamos.",
+                 "número de vitórias em prêmios (cada categoria conta) e, no empate, nota no BoardGameGeek",
+                 "Uma lista para quem quer ir direto ao que a crítica e os jogadores mais premiaram: Spiel des Jahres, "
+                 "Kennerspiel, As d'Or, Deutscher Spiele Preis e Golden Geek. Todos têm resenha completa no site, com "
+                 "pontos fortes, pontos de atenção e para quem é cada um.",
+                 lambda d: True, "ordem=nota"),
+    "familia": ("para-familia", "Melhores jogos de tabuleiro para família",
+                "Para jogar com crianças, pais e avós na mesma mesa.",
+                "idade mínima de até 10 anos, peso no BoardGameGeek até 2,5, partidas de até 1 hora e espaço para 4 pessoas ou mais",
+                "Jogo de família precisa caber na idade da criança, ser explicado rápido e acabar antes do cansaço, sem "
+                "deixar os adultos entediados. Estes premiados atendem a tudo isso.",
+                lambda d: d["idade"] is not None and d["idade"] <= 10 and d["peso"] is not None and d["peso"] <= 2.5
+                and d["duracao"] and d["duracao"][1] <= 60 and d["jogadores"] and d["jogadores"][1] >= 4, "idade=10"),
     "entrada": ("para-iniciantes", "Melhores jogos de tabuleiro para iniciantes",
                 "Regras curtas, partida rápida e diversão já na primeira mesa.",
                 "peso no BoardGameGeek abaixo de 2 (numa escala de 1 a 5) e partidas de até 45 minutos",
@@ -86,6 +100,9 @@ GUIAS = {
              lambda d: False, "perfil=tema"),
 }
 
+# como cada guia ordena a lista (o padrão vale para os guias que correspondem a um perfil "Melhor para")
+ORDEM_TXT = {"melhores": "", "familia": ", em ordem de nota no BoardGameGeek"}
+
 CSS_GUIA = """<style>
 .guia .lide{max-width:68ch}
 .criterio{font-size:.92rem;color:var(--paper-muted);margin-top:10px}
@@ -104,6 +121,8 @@ CSS_GUIA = """<style>
 .perfis a:hover{border-color:var(--gold)}.perfis b{font-size:1.02rem}.perfis span{font-size:.88rem;color:var(--paper-muted)}.perfis small{font-weight:800;color:var(--link)}
 .perguntas{display:grid;gap:10px}.perguntas li{padding-left:14px;border-left:3px solid var(--gold)}
 .mais-g{font-weight:700;color:var(--link)}
+.ranking{counter-reset:pos}.ranking>li{counter-increment:pos;position:relative}
+.ranking>li>a{padding-left:52px}.ranking>li::before{content:counter(pos) "º";position:absolute;left:12px;top:14px;font-weight:800;font-size:1.05rem;color:var(--premios);font-variant-numeric:tabular-nums}
 @media (max-width:480px){.jogos-g>li>a{grid-template-columns:72px 1fr;gap:12px}.jogos-g img{width:72px;height:72px}}
 </style>"""
 
@@ -141,9 +160,15 @@ def resenhas():
     return out
 
 
+def vitorias(c):
+    return sum(1 for a in c["premiacoes"] if a.get("resultado") == "vencedor")
+
+
 def selecao(perfil, todas):
     _, _, _, _, _, regra, _ = GUIAS[perfil]
     escolhidos = [(c, d) for c, d, _ in todas if d["melhor_para"] == perfil or regra(d)]
+    if perfil == "melhores":
+        return sorted(escolhidos, key=lambda x: (-vitorias(x[0]), -(x[1]["nota"] or 0)))
     return sorted(escolhidos, key=lambda x: (x[1]["melhor_para"] != perfil, -(x[1]["nota"] or 0)))
 
 
@@ -178,15 +203,16 @@ def build_guia(perfil, todas):
     pre = "../../"
     url = f"{SITE}/{BASE}/{slug}/"
     lista = "".join(cartao(c, d, pre) for c, d in jogos)
+    ol = '<ol class="jogos-g ranking">' if perfil == "melhores" else '<ol class="jogos-g">'
     corpo = f"""{cabecalho(pre, "Resenhas", sub=True)}
 <main id="conteudo" class="in"><div class="nota guia">
  {trilha(("Início", pre), ("Jogos de tabuleiro", f"{pre}{BASE}/"), (titulo, ""))}
  <article class="bloco">
   <h1>{e(titulo)}</h1>
   <p class="lide">{e(intro)}</p>
-  <p class="criterio"><span class="pq-r">Como escolhemos:</span> {e(criterio)}. Só entram jogos premiados com resenha completa no site; primeiro os que têm este perfil como principal, depois por nota no BoardGameGeek.</p>
+  <p class="criterio"><span class="pq-r">Como escolhemos:</span> {e(criterio)}. Só entram jogos premiados com resenha completa no site{ORDEM_TXT.get(perfil, "; primeiro os que têm este perfil como principal, depois por nota no BoardGameGeek")}.</p>
  </article>
- <section class="bloco"><h2>Os {len(jogos)} jogos escolhidos</h2><ol class="jogos-g">{lista}</ol>
+ <section class="bloco"><h2>Os {len(jogos)} jogos escolhidos</h2>{ol}{lista}</ol>
   <p class="criterio"><a class="mais-g" href="{pre}resenhas/?{filtro}">Refinar na busca de resenhas →</a></p></section>
  <section class="bloco"><h2>Outros guias</h2><ul class="perfis">{perfis_html(todas, pre, exceto=perfil)}</ul></section>
 </div></main>
@@ -238,7 +264,8 @@ def build_hub(todas):
   <p>Todos os jogos resenhados aqui venceram ou foram finalistas de prêmios importantes: o Spiel des Jahres (Alemanha,
   jogos de família) e o Kennerspiel des Jahres (para quem já joga), o As d'Or (França), o Deutscher Spiele Preis
   (votado pelo público) e o Golden Geek (votado pela comunidade do BoardGameGeek). Para ver todos os premiados do
-  Golden Geek desde 2015, use a <a href="{pre}consulta/">Consulta Golden Geek</a>.</p>
+  Golden Geek desde 2015, use a <a href="{pre}consulta/">Consulta Golden Geek</a>; para os vencedores de cada prêmio
+  que já resenhamos, veja a <a href="{pre}premios/">página de prêmios</a>.</p>
  </div></section>
  <section class="bloco"><h2>Resenhas mais recentes</h2><ol class="jogos-g">{"".join(cartao(c, d, pre) for c, d, _ in recentes)}</ol>
   <p class="criterio"><a class="mais-g" href="{pre}resenhas/">Ver todas as {len(todas)} resenhas →</a></p></section>
