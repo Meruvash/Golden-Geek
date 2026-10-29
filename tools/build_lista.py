@@ -256,6 +256,7 @@ def build():
 <title>Resenhas Elite Boardgamers</title>
 <meta name="description" content="Resenhas de jogos de tabuleiro premiados, com fontes: o que funciona, pontos de atenção e para quem é cada jogo.">
 <link rel="canonical" href="{SITE}/resenhas/">
+<meta name="robots" content="max-image-preview:large">
 <meta property="og:site_name" content="Elite Boardgamers">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:title" content="Resenhas Elite Boardgamers">

@@ -528,6 +528,7 @@ def build(c):
 <title>{e(titulo_busca(c))}</title>
 <meta name="description" content="{e(c["descricao"])}">
 <link rel="canonical" href="{SITE}/{slug}/">
+<meta name="robots" content="max-image-preview:large">
 <meta property="og:site_name" content="Elite Boardgamers">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:title" content="{e(titulo_busca(c))}">

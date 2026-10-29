@@ -16,6 +16,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from PIL import Image  # noqa: E402
 import seo  # noqa: E402
+import capas_grandes  # noqa: E402
 from imagens_resp import miniatura, srcset  # noqa: E402
 from build_sitemap import lastmod_registrado  # noqa: E402
 from build_review import INSTAGRAM, ROOT, SITE, WHATSAPP, e, icone, versao  # noqa: E402
@@ -358,7 +359,7 @@ def pagina(titulo, descricao, url, imagem, pre, corpo, tipo="website", head_extr
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>{e(titulo)}</title>
 <meta name="description" content="{e(descricao)}">
-{f'<link rel="canonical" href="{url}">' if url else '<meta name="robots" content="noindex">'}
+{f'<link rel="canonical" href="{url}">' + chr(10) + '<meta name="robots" content="max-image-preview:large">' if url else '<meta name="robots" content="noindex">'}
 <meta property="og:site_name" content="Elite Boardgamers">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:title" content="{e(titulo)}">
@@ -703,7 +704,13 @@ def build_nota(n):
     img = f"{SITE}/noticias/{n['imagem']['arquivo']}" if n.get("imagem") else capa_secao("noticias")
     url = f"{SITE}/noticias/{n['slug']}/"
     modificado = lastmod_registrado(url, {k: v for k, v in n.items() if k != "publicado_em"})
-    ld = seo.script(seo.artigo("NewsArticle", url, n["titulo"], n["lide"], img, n["publicado_em"], modificado),
+    # imagem para o Google: versão 16:9 com 1200 px (Discover) antes da capa original
+    imagens = [img]
+    if n.get("imagem"):
+        larga = capas_grandes.larga(ROOT / "noticias" / n["imagem"]["arquivo"])
+        if larga != ROOT / "noticias" / n["imagem"]["arquivo"]:
+            imagens.insert(0, f"{SITE}/{larga.relative_to(ROOT).as_posix()}")
+    ld = seo.script(seo.artigo("NewsArticle", url, n["titulo"], n["lide"], imagens, n["publicado_em"], modificado),
                     seo.trilha(("Início", f"{SITE}/"), ("Notícias", f"{SITE}/noticias/"), (n["titulo"], url)))
     # título da busca: titulo_seo (opcional, aprovado pela edição) ou o título; o sufixo da marca só cabe em título curto
     t_busca = n.get("titulo_seo") or n["titulo"]
@@ -714,6 +721,11 @@ def build_nota(n):
 
 
 if __name__ == "__main__":
+    # capa da Ludopedia em versão média vira a versão cheia (melhor na página e no Google)
+    try:
+        print("ok capas trocadas pela versão cheia:", capas_grandes.atualizar())
+    except Exception as ex:  # sem rede: segue com as capas atuais
+        print("⚠️ capas não atualizadas:", ex.__class__.__name__)
     import og
     print("ok cartões de prévia: %d refeitos de %d" % og.gerar())
     for n in build_home():

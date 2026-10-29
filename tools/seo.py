@@ -33,7 +33,7 @@ def trilha(*itens):
 
 def artigo(tipo, url, titulo, descricao, imagem, publicado, modificado=None, sobre=None):
     a = {"@type": tipo, "@id": f"{url}#artigo", "mainEntityOfPage": url, "headline": titulo, "description": descricao,
-         "image": [imagem], "datePublished": publicado, "author": REDACAO, "publisher": {"@id": ORG_ID}, "inLanguage": "pt-BR"}
+         "image": imagem if isinstance(imagem, list) else [imagem], "datePublished": publicado, "author": REDACAO, "publisher": {"@id": ORG_ID}, "inLanguage": "pt-BR"}
     if modificado and modificado > publicado:
         a["dateModified"] = modificado
     if sobre:

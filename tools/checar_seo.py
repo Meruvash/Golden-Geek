@@ -34,6 +34,8 @@ def problemas(url, s):
         erros.append("canonical ausente ou diferente da URL")
     if not og or og.group(1) != url:
         erros.append("og:url diferente da URL")
+    if 'content="max-image-preview:large"' not in s:
+        erros.append("sem <meta name=\"robots\" content=\"max-image-preview:large\"> (imagem grande no Google Discover)")
     if len(re.findall(r"<h1[\s>]", s)) != 1:
         erros.append("página sem exatamente um H1")
     blocos = re.findall(r'<script type="application/ld\+json">(.*?)</script>', s, re.S)
