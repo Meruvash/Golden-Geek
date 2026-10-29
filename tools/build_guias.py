@@ -13,6 +13,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+import faq  # noqa: E402
 import seo  # noqa: E402
 from build_home import pagina  # noqa: E402
 from build_review import ROOT, SITE, data_longa, nome_br, versao  # noqa: E402
@@ -244,6 +245,16 @@ def build_hub(todas):
     url = f"{SITE}/{BASE}/"
     titulo = "Jogos de tabuleiro: guia para escolher o seu"
     recentes = sorted(todas, key=lambda x: x[2] or "", reverse=True)[:6]
+    # perguntas frequentes: respostas tiradas dos próprios guias (os três primeiros e o critério)
+    pergs = []
+    for perfil, (slug_g, _, _, criterio, _, _, _) in GUIAS.items():
+        sel = selecao(perfil, todas)
+        qa = faq.guia(perfil, [nome_br(c) for c, _ in sel[:3]], criterio) if len(sel) >= MINIMO else None
+        if qa:
+            pergs.append((*qa, f"{pre}{BASE}/{slug_g}/"))
+    faq_html = ('<section class="bloco faq" id="perguntas"><h2>Perguntas frequentes</h2>' + "".join(
+        f'<details><summary><h3>{e(q)}</h3></summary><p>{e(r)} <a href="{u}">Ver o guia completo →</a></p></details>'
+        for q, r, u in pergs) + "</section>") if pergs else ""
     corpo = f"""{cabecalho(pre, "Resenhas", sub=True)}
 <main id="conteudo" class="in"><div class="nota guia">
  {trilha(("Início", pre), ("Jogos de tabuleiro", ""))}
@@ -267,6 +278,7 @@ def build_hub(todas):
   Golden Geek desde 2015, use a <a href="{pre}consulta/">Consulta Golden Geek</a>; para os vencedores de cada prêmio
   que já resenhamos, veja a <a href="{pre}premios/">página de prêmios</a>.</p>
  </div></section>
+ {faq_html}
  <section class="bloco"><h2>Resenhas mais recentes</h2><ol class="jogos-g">{"".join(cartao(c, d, pre) for c, d, _ in recentes)}</ol>
   <p class="criterio"><a class="mais-g" href="{pre}resenhas/">Ver todas as {len(todas)} resenhas →</a></p></section>
 </div></main>
@@ -274,12 +286,13 @@ def build_hub(todas):
     guias = [(GUIAS[p][1], f"{SITE}/{BASE}/{GUIAS[p][0]}/") for p in GUIAS if len(selecao(p, todas)) >= MINIMO]
     ld = seo.script({"@type": "CollectionPage", "@id": url, "url": url, "name": titulo, "inLanguage": "pt-BR",
                      "hasPart": [{"@type": "WebPage", "url": u, "name": n} for n, u in guias]},
+                    *([faq.ld([(q, r) for q, r, _ in pergs], url)] if pergs else []),
                     seo.trilha(("Início", f"{SITE}/"), ("Jogos de tabuleiro", url)))
     descr = ("Guia de jogos de tabuleiro (board games): como escolher pelo número de jogadores, duração e complexidade, "
              "e os melhores premiados para iniciantes, para dois, para festa, cooperativos e de estratégia.")
     (ROOT / BASE).mkdir(exist_ok=True)
     (ROOT / BASE / "index.html").write_text(pagina(titulo, descr, url, f"{SITE}/resenhas/capa.jpg", pre, corpo,
-                                                   head_extra="\n" + CSS_GUIA, jsonld=ld), encoding="utf-8")
+                                                   head_extra="\n" + CSS_GUIA + "\n<style>" + faq.CSS + "</style>", jsonld=ld), encoding="utf-8")
     return url
 
 

@@ -762,6 +762,8 @@ if __name__ == "__main__":
     print("ok guias:", len(build_guias.build()), "páginas em /jogos-de-tabuleiro/")
     import build_premios
     print("ok", build_premios.build())
+    import build_llms
+    print("ok", build_llms.build())
     # resenhas mostram "Notícias sobre este jogo": regera as publicadas para incluir notas novas
     import build_review
     for pub in json.loads((ROOT / "pauta.json").read_text(encoding="utf-8"))["publicadas"]:

@@ -14,6 +14,7 @@ from pathlib import Path
 from PIL import Image
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+import faq  # noqa: E402
 import seo  # noqa: E402
 from imagens_resp import srcset  # noqa: E402
 from layout import barra_leitura, convite_compartilhar, interacoes  # noqa: E402
@@ -338,6 +339,7 @@ def layout_v2(c, premios_bloco, ficha_html, fontes, fotos=None, info_meio=""):
   {veredito}
   {mais}
   {comunidade}
+  {faq.secao(faq.resenha(c, nome_br(c)))}
   {fontes_bloco}
  </div>
  <aside>
@@ -507,6 +509,7 @@ def build(c):
         from build_sitemap import lastmod_registrado
         ld = seo.script(seo.artigo("Article", url, f'{c["jogo"]}: resenha', c["descricao"], f"{SITE}/{slug}/capa.jpg{versao_capa}",
                                    publicada, lastmod_registrado(url, c), {"@type": "Game", "name": c["jogo"]}),
+                        *([faq.ld(faq.resenha(c, nome_br(c)), url)] if faq.resenha(c, nome_br(c)) and c.get("experiencia") else []),
                         seo.trilha(("Início", f"{SITE}/"), ("Resenhas", f"{SITE}/resenhas/"), (c["jogo"], url)))
     if principal and not info.exists():
         # Resenha só com fotos (sem infográfico): a foto fica no topo e a legenda do Instagram ganha bloco próprio.
@@ -770,6 +773,7 @@ footer a{{color:var(--bar-ink)}}
 }}
 @media (max-width:859px){{aside{{display:contents}}#premios{{order:-1}}}}
 @media (prefers-reduced-motion:reduce){{html{{scroll-behavior:auto}}}}
+{faq.CSS}
 </style>
 </head>
 <body>

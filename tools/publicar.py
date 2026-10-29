@@ -53,6 +53,8 @@ if __name__ == "__main__":
     print("ok guias:", len(build_guias.build()), "páginas em /jogos-de-tabuleiro/")
     import build_premios
     print("ok", build_premios.build())
+    import build_llms
+    print("ok", build_llms.build())
     import build_lista
     (ROOT / "resenhas" / "index.html").write_text(build_lista.build(), encoding="utf-8")
     print("ok resenhas/index.html")

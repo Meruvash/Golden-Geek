@@ -47,7 +47,7 @@ Correções:
 
 ## 3. Publicar e avisar
 
-- Commit e push na `main`: `Verificação de <dd/mm/aaaa>: <o que foi corrigido>` (só se algo mudou; nunca `.cache/`). Inclua no commit `sitemap.xml`, `sitemap-noticias.xml`, `robots.txt`, `404.html`, `img/`, `jogos-de-tabuleiro/`, `premios/` e `conteudo/sitemap_estado.json`, que os scripts regeram sozinhos.
+- Commit e push na `main`: `Verificação de <dd/mm/aaaa>: <o que foi corrigido>` (só se algo mudou; nunca `.cache/`). Inclua no commit `sitemap.xml`, `sitemap-noticias.xml`, `robots.txt`, `llms.txt`, `404.html`, `img/`, `jogos-de-tabuleiro/`, `premios/` e `conteudo/sitemap_estado.json`, que os scripts regeram sozinhos.
 - `python3 tools/verificar_site.py --online` no fim (espere o Pages atualizar).
 - Rede de segurança do IndexNow: `python3 tools/indexnow.py` avisa o que as rotinas do dia não avisaram. Se ele gravar `conteudo/indexnow_estado.json`, commit e push desse arquivo.
 - Resumo curto ao usuário, em português: quantos itens foram conferidos, o que foi corrigido (item, antes → depois, fonte), o que saiu do ar e por quê, e o que ficou pendente. Se tudo estava certo, diga isso em uma linha.
