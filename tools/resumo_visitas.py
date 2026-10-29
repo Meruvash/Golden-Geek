@@ -1,6 +1,6 @@
 """Resumo de visitas do site (Cloudflare Web Analytics): hoje e ontem, no horário de Brasília.
 
-Uso: python3 tools/resumo_visitas.py
+Uso: python3 tools/resumo_visitas.py [--semana]   (--semana acrescenta as visitas por dia dos últimos 7 dias)
 Precisa de duas variáveis de ambiente, configuradas no ambiente da nuvem (nunca no repositório):
   CLOUDFLARE_API_TOKEN   chave só de leitura com a permissão "Account Analytics: Read"
   CLOUDFLARE_ACCOUNT_ID  opcional: ID da conta (padrão: a conta onde está o domínio, em CONTA abaixo)
@@ -56,6 +56,29 @@ def periodo(nome, d):
     return "\n".join(linhas)
 
 
+DIAS = ("seg", "ter", "qua", "qui", "sex", "sáb", "dom")
+BUSCADORES = ("google", "bing", "duckduckgo", "yahoo", "ecosia", "yandex")
+
+
+def tendencia(token, conta, hoje, dias=7):
+    """Visitas por dia nos últimos dias fechados (horário de Brasília) e quantas vieram de buscadores."""
+    linhas = ["*Últimos dias* (visitas no total · vindas do Google e outros buscadores)"]
+    totais = []
+    for i in range(dias, 0, -1):
+        ini = hoje - timedelta(days=i)
+        d = consultar(token, conta, ini, ini + timedelta(days=1))
+        total = d["total"][0]["sum"]["visits"] if d["total"] else 0
+        busca = sum(o["sum"]["visits"] for o in d["origens"] if any(b in (o["dimensions"]["refererHost"] or "") for b in BUSCADORES))
+        totais.append((total, busca))
+        if total or totais[:-1] and any(t for t, _ in totais[:-1]):
+            linhas.append(f"  {ini:%d/%m} ({DIAS[ini.weekday()]}): {total} visitas · {busca} de buscador")
+    com_dados = [t for t in totais if t[0]]
+    if len(com_dados) >= 2:
+        (a, ba), (b, bb) = com_dados[0], com_dados[-1]
+        linhas.append(f"  Do primeiro ao último dia com dados: {a} → {b} visitas; buscadores {ba} → {bb}.")
+    return "\n".join(linhas)
+
+
 def main():
     token, conta = os.environ.get("CLOUDFLARE_API_TOKEN"), os.environ.get("CLOUDFLARE_ACCOUNT_ID") or CONTA
     if not token:
@@ -66,6 +89,8 @@ def main():
     print(f"Visitas em eliteboardgamers.com.br (horário de Brasília, {agora:%d/%m %H:%M})")
     print(periodo(f"Hoje, até {agora:%H:%M}", consultar(token, conta, hoje, agora)))
     print(periodo(f"Ontem ({ontem:%d/%m})", consultar(token, conta, ontem, hoje)))
+    if "--semana" in sys.argv:
+        print(tendencia(token, conta, hoje))
 
 
 if __name__ == "__main__":
