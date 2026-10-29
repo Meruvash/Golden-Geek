@@ -10,7 +10,7 @@ ORIGEM = "https://eliteboardgamers.com.br"
 [[d1_databases]]
 binding = "DB"
 database_name = "elite-interacoes"
-database_id = "PREENCHIDO_PELO_INSTALADOR"
+database_id = "e117a6dc-26b6-49d7-a02e-7b57e8be4852"
 
 [[routes]]
 pattern = "api.eliteboardgamers.com.br"

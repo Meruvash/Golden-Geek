@@ -308,7 +308,22 @@ document.addEventListener('click',async ev=>{const el=ev.target.closest('.compar
  let ok=false;try{await navigator.clipboard.writeText(url(c));ok=true}catch(e){
   const i=document.createElement('input');i.value=url(c);document.body.append(i);i.select();try{ok=document.execCommand('copy')}catch(e2){}i.remove()}
  if(st)st.textContent=ok?'Link copiado! É só colar na conversa.':'Não deu para copiar: segure o dedo na barra de endereço e copie por lá.'})})()</script></section>
- 
+ <section class="bloco interacoes" id="comentarios" data-api="https://api.eliteboardgamers.com.br" data-p="/noticias/santuario-vence-deutscher-spiele-preis-2026/" data-turnstile="0x4AAAAAAFrf_u5uh6OZZemp">
+ <div class="curtir-l"><button type="button" class="curtir" aria-pressed="false"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7.5-4.6-9.3-9.2C1.4 7.4 3.6 4 7 4c2 0 3.6 1.1 5 3 1.4-1.9 3-3 5-3 3.4 0 5.6 3.4 4.3 6.8C19.5 15.4 12 20 12 20Z"/></svg><span class="rot">Curtir</span> <b class="n" aria-label="curtidas">–</b></button><span class="curtir-dica">Gostou? Deixe um coração.</span></div>
+ <h2>Comentários <span class="coms-n"></span></h2>
+ <ol class="coms"></ol><p class="coms-vazio">Ainda não há comentários. Seja a primeira pessoa a comentar.</p>
+ <form class="com-form">
+  <label>Nome<input name="nome" required minlength="2" maxlength="60" autocomplete="name"></label>
+  <label>E-mail <small>(opcional, não é publicado)</small><input name="email" type="email" maxlength="120" autocomplete="email"></label>
+  <label>Comentário<textarea name="texto" required minlength="3" maxlength="1500" rows="4"></textarea></label>
+  <label class="isca" aria-hidden="true">Site<input name="site" tabindex="-1" autocomplete="off"></label>
+  <div class="com-ts"></div>
+  <button type="submit">Enviar comentário</button>
+  <p class="com-aviso">Todo comentário passa por moderação antes de aparecer. O e-mail não é publicado. <a href="../../politica-editorial/#comentarios">Como moderamos</a></p>
+  <p class="com-st" role="status"></p>
+ </form>
+</section>
+<script src="../../interacoes.js" defer></script>
  <section class="bloco"><h2>Jogos citados</h2><div class="jogos"><a href="../../santuario/">Resenha: Santuário</a><a href="../../ark-nova/">Resenha: Ark Nova</a><a href="../../wingspan/">Resenha: Wingspan</a><a href="../../galactic-cruise/">Resenha: Galactic Cruise</a></div></section>
  <section class="bloco leia"><h2>Leia também</h2><ul><li><a href="../../noticias/guia-dos-premios-2027/">Guia dos prêmios de 2027: quando saem Golden Geek, Spiel des Jahres e Kennerspiel</a></li><li><a href="../../noticias/excursions-galactic-cruise-campanha-termina/">Excursions, versão mais curta de Galactic Cruise, encerra campanha no Kickstarter nesta sexta</a></li><li><a href="../../noticias/vantage-chega-ao-brasil/">Vantage chega ao Brasil com dois Golden Geek, seis cadeiras na caixa e três na prática</a></li></ul></section>
  <section class="bloco fontes"><h2>Fontes</h2><ul><li><a href="https://boardgamewire.com/index.php/2026/10/27/two-games-two-deutscher-spiele-preis-wins-ark-nova-designer-mathias-wigge-takes-second-title-with-sanctuary/" target="_blank" rel="noopener">BoardGameWire</a> <span>consulta em 27/10/2026</span></li><li><a href="https://www.deutscherspielepreis.de/" target="_blank" rel="noopener">Arquivo do Deutscher Spiele Preis (projeto de fãs)</a> <span>consulta em 28/10/2026</span></li><li><a href="https://www.gamesradar.com/games/board-games/sanctuary-review/" target="_blank" rel="noopener">GamesRadar+: resenha de Sanctuary</a> <span>consulta em 28/10/2026</span></li><li><a href="https://zatu.com/en-us/blogs/reviews/sanctuary-review" target="_blank" rel="noopener">Zatu: resenha de Sanctuary</a> <span>consulta em 28/10/2026</span></li><li><a href="https://www.board-game.co.uk/sanctuary-preview/" target="_blank" rel="noopener">board-game.co.uk: prévia de Sanctuary</a> <span>consulta em 28/10/2026</span></li><li><a href="https://loja.grokgames.com.br/jogos" target="_blank" rel="noopener">Loja Grok Games</a> <span>consulta em 28/10/2026</span></li><li><a href="https://ludopedia.com.br/jogo/sanctuary-i" target="_blank" rel="noopener">Ludopedia: Santuário</a> <span>consulta em 28/10/2026</span></li></ul></section>

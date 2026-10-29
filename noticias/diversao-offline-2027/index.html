@@ -308,7 +308,22 @@ document.addEventListener('click',async ev=>{const el=ev.target.closest('.compar
  let ok=false;try{await navigator.clipboard.writeText(url(c));ok=true}catch(e){
   const i=document.createElement('input');i.value=url(c);document.body.append(i);i.select();try{ok=document.execCommand('copy')}catch(e2){}i.remove()}
  if(st)st.textContent=ok?'Link copiado! É só colar na conversa.':'Não deu para copiar: segure o dedo na barra de endereço e copie por lá.'})})()</script></section>
- 
+ <section class="bloco interacoes" id="comentarios" data-api="https://api.eliteboardgamers.com.br" data-p="/noticias/diversao-offline-2027/" data-turnstile="0x4AAAAAAFrf_u5uh6OZZemp">
+ <div class="curtir-l"><button type="button" class="curtir" aria-pressed="false"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7.5-4.6-9.3-9.2C1.4 7.4 3.6 4 7 4c2 0 3.6 1.1 5 3 1.4-1.9 3-3 5-3 3.4 0 5.6 3.4 4.3 6.8C19.5 15.4 12 20 12 20Z"/></svg><span class="rot">Curtir</span> <b class="n" aria-label="curtidas">–</b></button><span class="curtir-dica">Gostou? Deixe um coração.</span></div>
+ <h2>Comentários <span class="coms-n"></span></h2>
+ <ol class="coms"></ol><p class="coms-vazio">Ainda não há comentários. Seja a primeira pessoa a comentar.</p>
+ <form class="com-form">
+  <label>Nome<input name="nome" required minlength="2" maxlength="60" autocomplete="name"></label>
+  <label>E-mail <small>(opcional, não é publicado)</small><input name="email" type="email" maxlength="120" autocomplete="email"></label>
+  <label>Comentário<textarea name="texto" required minlength="3" maxlength="1500" rows="4"></textarea></label>
+  <label class="isca" aria-hidden="true">Site<input name="site" tabindex="-1" autocomplete="off"></label>
+  <div class="com-ts"></div>
+  <button type="submit">Enviar comentário</button>
+  <p class="com-aviso">Todo comentário passa por moderação antes de aparecer. O e-mail não é publicado. <a href="../../politica-editorial/#comentarios">Como moderamos</a></p>
+  <p class="com-st" role="status"></p>
+ </form>
+</section>
+<script src="../../interacoes.js" defer></script>
  
  
  <section class="bloco fontes"><h2>Fontes</h2><ul><li><a href="https://diversaooffline.com.br/" target="_blank" rel="noopener">Diversão Offline: site oficial</a> <span>consulta em 28/10/2026</span></li><li><a href="https://saopauloparacriancas.com.br/?p=291329" target="_blank" rel="noopener">São Paulo para Crianças: DOFF 2026</a> <span>consulta em 28/10/2026</span></li><li><a href="https://visitesaopaulo.com/evento/simposio-academico-diversao-offline-2026/" target="_blank" rel="noopener">Visite São Paulo: SIMDOFF 2026</a> <span>consulta em 28/10/2026</span></li><li><a href="https://blogs.correiobraziliense.com.br/diarioradioativo/diversao-offline-estreia-sp/" target="_blank" rel="noopener">Correio Braziliense: estreia do DOFF em SP</a> <span>consulta em 28/10/2026</span></li></ul></section>
