@@ -137,8 +137,8 @@ h1,h2,h3,p,ul,ol,figure{margin:0}ul,ol{padding:0;list-style:none}img{display:blo
 .manchete img{width:100%%;aspect-ratio:16/10;object-fit:cover;object-position:center 30%%}
 .manchete .txt{padding:16px;display:grid;gap:8px}
 .manchete .kick{font-size:.75rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--premios)}
-.manchete h1{font-size:clamp(1.5rem,4.2vw,2.2rem);line-height:1.12;font-weight:800;letter-spacing:-.015em;text-wrap:balance}
-.manchete a:hover h1{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:4px}
+.manchete .m-tit{font-size:clamp(1.5rem,4.2vw,2.2rem);line-height:1.12;font-weight:800;letter-spacing:-.015em;text-wrap:balance}
+.manchete a:hover .m-tit{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:4px}
 .manchete p{color:#3a414c;max-width:62ch}
 .credito{font-size:.72rem;color:var(--paper-muted)}
 @media (min-width:640px){.manchete a{grid-template-columns:42%% 1fr}.manchete img{aspect-ratio:auto;height:100%%;min-height:300px}.manchete .txt{padding:20px 22px;align-content:center}}
@@ -207,11 +207,31 @@ footer .in{display:flex;flex-wrap:wrap;gap:10px 20px;padding-top:18px;padding-bo
 .nota h2,.nota .h-sec{font-size:.8rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--paper-muted);margin-bottom:8px}
 .nota .h-sec{margin:0 0 8px;line-height:inherit;text-wrap:wrap}
 .leia li{padding:8px 0;border-top:1px solid var(--paper-line)}.leia li:first-child{border-top:0}.leia a{display:inline-block;padding:3px 0;color:var(--link);font-weight:700;text-decoration:none}.leia a:hover{text-decoration:underline}
-.cats{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 12px}.cats[hidden]{display:none}
-.cats button{font:inherit;font-size:.86rem;font-weight:700;min-height:36px;padding:4px 12px;border-radius:999px;border:1px solid var(--paper-line);background:#fff;color:var(--paper-ink);cursor:pointer}
-.cats button small{margin-left:6px;font-weight:600;color:var(--paper-muted);font-variant-numeric:tabular-nums}
-.cats button:hover{border-color:var(--paper-ink)}.cats button[aria-pressed="true"]{background:var(--paper-ink);border-color:var(--paper-ink);color:#fff}.cats button[aria-pressed="true"] small{color:#c9cfd8}
-.cat-nota{font-size:.88rem;color:var(--paper-muted);margin:0 0 12px}.cat-nota a{color:var(--link);font-weight:700}
+/* arquivo de notícias: manchete em destaque e quadradinhos sobre a moldura preta */
+.arq{display:grid;gap:16px;padding-top:16px;padding-bottom:40px}
+.arq-topo{display:grid;gap:4px}.arq-topo h1{font-size:clamp(1.6rem,4.5vw,2.3rem);line-height:1.1;font-weight:800;letter-spacing:-.015em}.arq-topo p{color:var(--muted);font-size:.95rem}
+.cats{display:flex;flex-wrap:wrap;gap:8px}.cats[hidden]{display:none}
+.cats button{font:inherit;font-size:.86rem;font-weight:700;min-height:36px;padding:4px 12px;border-radius:999px;border:1px solid #3a3f48;background:var(--panel2);color:var(--ink);cursor:pointer}
+.cats button small{margin-left:6px;font-weight:600;color:var(--muted);font-variant-numeric:tabular-nums}
+.cats button:hover{border-color:var(--gold)}.cats button[aria-pressed="true"]{background:var(--gold);border-color:var(--gold);color:#000}.cats button[aria-pressed="true"] small{color:#3a2a00}
+.cat-nota{font-size:.9rem;color:var(--muted)}.cat-nota a{color:var(--gold);font-weight:700}
+.arq .manchete[hidden],.card-n[hidden]{display:none}
+/* .brasil, .financ e .manchete também são nomes de blocos da home (ordem e área de grade): no arquivo não valem */
+.arq .manchete,.arq .brasil,.arq .financ,.arq .mercado,.arq .premios{grid-area:auto;order:0}
+.grade-n{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+@media (min-width:600px){.grade-n{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}}
+@media (min-width:1000px){.grade-n{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.card-n a{display:flex;flex-direction:column;height:100%%;background:var(--paper);color:var(--paper-ink);border-radius:10px;overflow:hidden;text-decoration:none;border:2px solid transparent}
+.card-n a:hover{border-color:var(--gold)}.card-n a:hover h2{text-decoration:underline}
+.card-n .ci{position:relative;display:block;aspect-ratio:1;overflow:hidden;background:#e6e9ee}.card-n img{position:absolute;inset:0;width:100%%;height:100%%;object-fit:cover}
+.card-n .sem{position:absolute;inset:0;display:grid;place-items:center;width:100%%;height:100%%}.card-n .sem .ic{width:40px;height:40px}
+.card-n .sem.premios{background:var(--premios-bg);color:var(--premios)}.card-n .sem.brasil{background:var(--brasil-bg);color:var(--brasil)}.card-n .sem.mercado{background:var(--mercado-bg);color:var(--mercado)}.card-n .sem.financ{background:var(--financ-bg);color:var(--financ)}
+.card-n .cb{display:grid;gap:6px;align-content:start;padding:10px 12px 14px;flex:1}
+.card-n .cat{justify-self:start}.card-n .selo{justify-self:start}
+.card-n h2{font-size:1rem;line-height:1.25;font-weight:800;text-wrap:balance}
+.card-n .resumo{font-size:.86rem;color:#3a414c;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+@media (max-width:599px){.card-n .resumo{display:none}.card-n h2{font-size:.95rem}.card-n .cb{padding:9px 10px 12px}.card-n .cat{font-size:.66rem}}
+.arq .paginas{margin:0;color:var(--ink)}.arq .paginas a{color:var(--gold)}.arq .paginas span{color:var(--muted)}
 .paginas{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:16px;font-weight:700}.paginas a{color:var(--link)}.paginas span{color:var(--paper-muted);font-size:.9rem}
 .nota .fontes li{margin:6px 0;font-size:.92rem}.nota .fontes a{color:var(--link)}.nota .fontes span{color:var(--paper-muted);font-size:.82rem}
 .nota .jogos{display:flex;flex-wrap:wrap;gap:8px}.nota .jogos a{display:inline-block;padding:6px 10px;border-radius:6px;background:#e6e9ee;text-decoration:none;font-weight:700;font-size:.9rem}
@@ -239,7 +259,7 @@ footer .in{display:flex;flex-wrap:wrap;gap:10px 20px;padding-top:18px;padding-bo
  .nota .bloco{padding:18px 16px}
  .nota .abre figure{margin:-18px -16px 0}.nota .abre figure img{border-radius:0;max-height:440px;object-fit:contain}
  .nota .abre figcaption{padding:0 16px}
- .manchete img{aspect-ratio:4/3;object-position:center top}.manchete .txt{padding:16px 16px 18px}.manchete h1{font-size:1.65rem}.manchete p{font-size:1rem}
+ .manchete img{aspect-ratio:4/3;object-position:center top}.manchete .txt{padding:16px 16px 18px}.manchete .m-tit{font-size:1.65rem}.manchete p{font-size:1rem}
  .meta{font-size:.84rem}.cat{font-size:.74rem}.credito{font-size:.76rem}
  .lista-n a{grid-template-columns:68px 1fr;gap:12px;padding:14px 0}
  .lista-n img{width:68px;height:68px}
@@ -268,7 +288,7 @@ def og_dim(imagem):
 
 
 JS_CATEGORIAS = """(()=>{const g=document.querySelector('.cats');if(!g)return;
-const lis=[...document.querySelectorAll('.lista-n li')],nota=document.querySelector('.cat-nota');
+const lis=[...document.querySelectorAll('.arq [data-cat]')],nota=document.querySelector('.cat-nota');
 const aplica=v=>{lis.forEach(li=>{li.hidden=!!v&&li.dataset.cat!==v});
 g.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.c===v)));
 const u=new URL(location.href);if(v)u.searchParams.set('categoria',v);else u.searchParams.delete('categoria');history.replaceState(null,'',u);
@@ -364,6 +384,33 @@ def img_nota(n, pre):
     return f"{pre}noticias/{n['imagem']['arquivo']}" if n.get("imagem") else None
 
 
+def bloco_manchete(m, pre, titulo="h1"):
+    """A notícia principal, com foto grande, lide e a nossa opinião: no topo da home (h1) e do arquivo /noticias/ (h2)."""
+    with Image.open(ROOT / "noticias" / m["imagem"]["arquivo"]) as im:
+        lw, lh = im.size
+    return f"""<article class="bloco manchete" data-cat="{CATEGORIAS.get(m['categoria'], 'outras')}"><a href="{pre}noticias/{m['slug']}/">
+  <figure><img src="{img_nota(m, pre)}" srcset="{srcset(ROOT / "noticias" / m["imagem"]["arquivo"], pre)}" sizes="(min-width: 640px) 340px, 100vw" width="{lw}" height="{lh}" alt="{e(m['titulo'])}" fetchpriority="high"></figure>
+  <div class="txt"><span class="kick">Manchete · {e(m['categoria'])}</span><{titulo} class="m-tit">{e(m['titulo'])}</{titulo}><p>{e(m['lide'])}</p>
+  <p class="opina"><span class="selo {SELO_CLASSE[m['selo']]}">{e(m['selo'])}</span> {e(m['veredito'])}</p>
+  <span class="meta">{data_longa(m['data'])} · {e(m['fontes'][0]['nome'])}</span><span class="credito">{e(m['imagem']['credito'])}</span></div>
+ </a></article>"""
+
+
+def cartao_nota(n, pre):
+    """Quadradinho da grade do arquivo: imagem, categoria, título, selo de opinião e data, levando à notícia."""
+    if n.get("imagem"):
+        arq = ROOT / "noticias" / n["imagem"]["arquivo"]
+        img = (f'<img src="{img_nota(n, pre)}" srcset="{srcset(arq, pre, (480,))}" sizes="(min-width: 1000px) 270px, (min-width: 600px) 31vw, 46vw" '
+               f'alt="" loading="lazy" decoding="async">')
+    else:
+        img = f'<span class="sem {CAT_CLASSE.get(n["categoria"], "mercado")}" aria-hidden="true">{icone("dica")}</span>'
+    return (f'<li class="card-n" data-cat="{CATEGORIAS.get(n["categoria"], "outras")}"><a href="{pre}noticias/{n["slug"]}/">'
+            f'<span class="ci">{img}</span><span class="cb"><span class="cat {CAT_CLASSE.get(n["categoria"], "mercado")}">{e(n["categoria"])}</span>'
+            f'<h2>{e(n["titulo"])}</h2><span class="selo {SELO_CLASSE[n["selo"]]}">{e(n["selo"])}</span>'
+            f'<span class="resumo">{e(n["por_que_importa"])}</span>'
+            f'<span class="meta">{data_curta(n["data"])} · {e(n["fontes"][0]["nome"].split(":")[0])}</span></span></a></li>')
+
+
 def build_home():
     ns = notas()
     home = json.loads((ROOT / "conteudo" / "home.json").read_text(encoding="utf-8"))
@@ -371,14 +418,7 @@ def build_home():
     # manchete: a mais recente aprovada; a proposta da rotina diária espera "manchete_aprovada": true
     m = max((n for n in ns if n.get("manchete") and n.get("manchete_aprovada", True)), key=lambda n: n["data"])
     resto = [n for n in ns if n is not m]
-    with Image.open(ROOT / "noticias" / m["imagem"]["arquivo"]) as im:
-        lw, lh = im.size
-    manchete = f"""<article class="bloco manchete"><a href="noticias/{m['slug']}/">
-  <figure><img src="{img_nota(m, pre)}" srcset="{srcset(ROOT / "noticias" / m["imagem"]["arquivo"], pre)}" sizes="(min-width: 640px) 340px, 100vw" width="{lw}" height="{lh}" alt="{e(m['titulo'])}" fetchpriority="high"></figure>
-  <div class="txt"><span class="kick">Manchete · {e(m['categoria'])}</span><h1>{e(m['titulo'])}</h1><p>{e(m['lide'])}</p>
-  <p class="opina"><span class="selo {SELO_CLASSE[m['selo']]}">{e(m['selo'])}</span> {e(m['veredito'])}</p>
-  <span class="meta">{data_longa(m['data'])} · {e(m['fontes'][0]['nome'])}</span><span class="credito">{e(m['imagem']['credito'])}</span></div>
- </a></article>"""
+    manchete = bloco_manchete(m, pre)
     def item(n, pre):
         return f"""<li data-cat="{CATEGORIAS.get(n['categoria'], 'outras')}"><a href="noticias/{n['slug']}/"{'' if n.get("imagem") else ' class="sem-img"'}>{f'<img src="{miniatura(ROOT / "noticias" / n["imagem"]["arquivo"], pre)}" width="76" height="76" alt="" loading="lazy">' if n.get("imagem") else f'<span class="sem">{icone("dica")}</span>'}
    <div><span class="cat {CAT_CLASSE.get(n['categoria'], 'mercado')}">{e(n['categoria'])}</span> <span class="meta">{data_curta(n['data'])} · {e(n['fontes'][0]['nome'].split(':')[0])}</span>
@@ -410,10 +450,12 @@ def build_home():
             if not lista:
                 continue
             c_pre, url_c = "../../../", f"{SITE}/noticias/categoria/{CATEGORIAS[cat]}/"
-            itens_c = "".join(item(n, c_pre).replace('href="noticias/', f'href="{c_pre}noticias/').replace("<h3>", "<h2>").replace("</h3>", "</h2>") for n in lista)
+            itens_c = "".join(cartao_nota(n, c_pre) for n in lista)
             corpo_c = f"""{cabecalho(c_pre, "Notícias", sub=True)}
-<main id="conteudo" class="in"><div class="nota">{trilha(("Início", c_pre), ("Notícias", f"{c_pre}noticias/"), (e(cat), ""))}
- <section class="bloco ultimas"><h1 class="h-sec">{e(cat)}: notícias de jogos de tabuleiro</h1><ul class="lista-n">{itens_c}</ul></section></div></main>
+<main id="conteudo" class="in arq">{trilha(("Início", c_pre), ("Notícias", f"{c_pre}noticias/"), (e(cat), ""))}
+ <div class="arq-topo"><h1>{e(cat)}: notícias de jogos de tabuleiro</h1><p>{len(lista)} notícia{"s" if len(lista) > 1 else ""} nesta categoria.</p></div>
+ <ul class="grade-n">{itens_c}</ul>
+</main>
 {rodape(c_pre)}"""
             destino_c = pasta_cat / CATEGORIAS[cat] / "index.html"
             destino_c.parent.mkdir(parents=True, exist_ok=True)
@@ -433,14 +475,22 @@ def build_home():
     for num, lote in enumerate(paginas, 1):
         p_pre = "../" if num == 1 else "../../../"
         url = f"{SITE}/noticias/" if num == 1 else f"{SITE}/noticias/pagina/{num}/"
-        arquivo = "".join(item(n, p_pre).replace('href="noticias/', f'href="{p_pre}noticias/').replace("<h3>", "<h2>").replace("</h3>", "</h2>") for n in lote)
+        # 1ª página: a manchete em destaque no topo e as demais em quadradinhos; páginas seguintes só a grade
+        destaque = bloco_manchete(m, p_pre, "h2") if num == 1 else ""
+        arquivo = "".join(cartao_nota(n, p_pre) for n in lote if not (num == 1 and n is m))
         ant = "" if num == 1 else f'<a href="{p_pre}noticias/{"" if num == 2 else f"pagina/{num - 1}/"}" rel="prev">← Mais recentes</a>'
         prox = f'<a href="{p_pre}noticias/pagina/{num + 1}/" rel="next">Mais antigas →</a>' if num < len(paginas) else ""
         nav = f'<nav class="paginas" aria-label="Páginas de notícias">{ant}<span>Página {num} de {len(paginas)}</span>{prox}</nav>' if len(paginas) > 1 else ""
         sufixo = "" if num == 1 else f" (página {num})"
         corpo_arq = f"""{cabecalho(p_pre, "Notícias", sub=num > 1)}
-<main id="conteudo" class="in"><div class="nota"><a class="volta" href="{p_pre}">← Página inicial</a>
- <section class="bloco ultimas"><h1 class="h-sec">Notícias de jogos de tabuleiro{sufixo}</h1>{chips_cat(lote, p_pre)}<ul class="lista-n">{arquivo}</ul>{nav}<script>{JS_CATEGORIAS}</script></section></div></main>
+<main id="conteudo" class="in arq">
+ <div class="arq-topo"><h1>Notícias de jogos de tabuleiro{sufixo}</h1><p>Com fonte, data e a nossa opinião separada do fato. {len(ns)} notícias publicadas.</p></div>
+ {chips_cat(lote, p_pre)}
+ {destaque}
+ <ul class="grade-n">{arquivo}</ul>
+ {nav}
+ <script>{JS_CATEGORIAS}</script>
+</main>
 {rodape(p_pre)}"""
         trilha_ld = [("Início", f"{SITE}/"), ("Notícias", f"{SITE}/noticias/")] + ([] if num == 1 else [(f"Página {num}", url)])
         destino = ROOT / "noticias" / ("index.html" if num == 1 else f"pagina/{num}/index.html")
