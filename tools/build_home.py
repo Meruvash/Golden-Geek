@@ -124,7 +124,7 @@ h1,h2,h3,p,ul,ol,figure{margin:0}ul,ol{padding:0;list-style:none}img{display:blo
 }
 .bloco{background:var(--paper);color:var(--paper-ink);border-radius:10px;padding:16px;min-width:0}
 .bloco>h2,.bloco>.h-sec{display:flex;align-items:baseline;justify-content:space-between;gap:10px;font-size:.8rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--paper-muted);margin-bottom:12px;padding-bottom:8px;border-bottom:2px solid var(--paper-ink)}
-.bloco>h2 a{font-size:.8rem;letter-spacing:0;text-transform:none;color:var(--link);font-weight:700;text-decoration:none}
+.bloco>h2 a{display:inline-flex;align-items:center;min-height:24px;font-size:.8rem;letter-spacing:0;text-transform:none;color:var(--link);font-weight:700;text-decoration:none}
 .bloco>h2 a:hover{text-decoration:underline}
 .cat{display:inline-block;font-size:.72rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;border-radius:4px;padding:2px 7px}
 .cat.premios{color:var(--premios);background:var(--premios-bg)}.cat.brasil{color:var(--brasil);background:var(--brasil-bg)}
@@ -164,7 +164,7 @@ h1,h2,h3,p,ul,ol,figure{margin:0}ul,ol{padding:0;list-style:none}img{display:blo
 .agenda li{display:grid;grid-template-columns:104px 1fr;gap:10px;padding:9px 0;border-top:1px solid var(--paper-line);font-size:.9rem}
 .agenda li:first-child{border-top:0;padding-top:0}
 .agenda .q{font-weight:800;font-variant-numeric:tabular-nums}.agenda .q small{display:block;font-weight:600;font-size:.72rem;color:var(--paper-muted)}
-.agenda .d{color:var(--paper-muted);font-size:.82rem}.agenda a{text-decoration:none}.agenda a:hover{text-decoration:underline}
+.agenda .d{color:var(--paper-muted);font-size:.82rem}.agenda a{display:inline-block;padding:3px 0;text-decoration:none}.agenda a:hover{text-decoration:underline}
 /* chegando ao Brasil */
 .capas{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:6px}
 .capas li{flex:0 0 132px;scroll-snap-align:start}
@@ -206,7 +206,7 @@ footer .in{display:flex;flex-wrap:wrap;gap:10px 20px;padding-top:18px;padding-bo
 .nota figcaption{margin-top:6px}
 .nota h2,.nota .h-sec{font-size:.8rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--paper-muted);margin-bottom:8px}
 .nota .h-sec{margin:0 0 8px;line-height:inherit;text-wrap:wrap}
-.leia li{padding:8px 0;border-top:1px solid var(--paper-line)}.leia li:first-child{border-top:0}.leia a{color:var(--link);font-weight:700;text-decoration:none}.leia a:hover{text-decoration:underline}
+.leia li{padding:8px 0;border-top:1px solid var(--paper-line)}.leia li:first-child{border-top:0}.leia a{display:inline-block;padding:3px 0;color:var(--link);font-weight:700;text-decoration:none}.leia a:hover{text-decoration:underline}
 .cats{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 12px}.cats[hidden]{display:none}
 .cats button{font:inherit;font-size:.86rem;font-weight:700;min-height:36px;padding:4px 12px;border-radius:999px;border:1px solid var(--paper-line);background:#fff;color:var(--paper-ink);cursor:pointer}
 .cats button small{margin-left:6px;font-weight:600;color:var(--paper-muted);font-variant-numeric:tabular-nums}
