@@ -49,7 +49,7 @@ Em `conteudo/home.json`:
 
 ## Editora na linha de data
 
-Ao lado da data, as páginas mostram quem publica o jogo, nunca o site de onde veio a informação (Ludopedia, BoardGameWire etc. ficam só na seção Fontes). Preencha `"editora"` na nota com o nome que o próprio texto cita (ex.: `"Galápagos"`, `"Restoration Games"`). Sem o campo, `build_home.py` usa a editora do calendário de lançamentos pelos `ids_ludopedia`; se não houver editora (evento, prêmio, guia), a linha mostra só a data. Não invente editora.
+Ao lado da data, as páginas mostram quem publica o jogo, nunca o site de onde veio a informação (Ludopedia, BoardGameWire etc. ficam só na seção Fontes). Preencha `"editora"` na nota com o nome que o próprio texto cita (ex.: `"Galápagos"`, `"Restoration Games"`). Sem o campo, `build_home.py` usa a editora do calendário de lançamentos pelos `ids_ludopedia`; se não houver editora (evento, prêmio, guia), a linha mostra só a data. Não invente editora. A Galápagos hoje é a Asmodee (o site antigo redireciona para asmodee.com.br): use `"Asmodee"`.
 
 ## 5. Publicar
 

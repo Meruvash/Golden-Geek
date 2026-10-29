@@ -433,8 +433,9 @@ def img_nota(n, pre):
 
 
 _EDITORAS_LANC = None
-# como a Ludopedia grafa algumas editoras -> como o leitor as conhece (e como as notas escrevem)
-NOME_EDITORA = {"Asmodee (Galápagos)": "Galápagos"}
+# como o calendário grafa algumas editoras -> nome atual da editora.
+# A Galápagos hoje opera como Asmodee: galapagosjogos.com.br redireciona para asmodee.com.br (conferido em 29/10/2026).
+NOME_EDITORA = {"Asmodee (Galápagos)": "Asmodee", "Galápagos": "Asmodee", "Galápagos Jogos": "Asmodee"}
 
 
 def editora_nota(n):
@@ -445,7 +446,7 @@ def editora_nota(n):
     (notícia de evento ou prêmio sem editora). As fontes continuam listadas dentro de cada notícia."""
     global _EDITORAS_LANC
     if n.get("editora"):
-        return n["editora"]
+        return NOME_EDITORA.get(n["editora"], n["editora"])
     if _EDITORAS_LANC is None:
         _EDITORAS_LANC = {}
         for arq in (ROOT / "conteudo" / "lancamentos").glob("*.json"):
