@@ -268,7 +268,7 @@ footer .in{display:flex;flex-wrap:wrap;gap:10px 20px;padding-top:18px;padding-bo
  .lista-n img{width:68px;height:68px}
  .lista-n .sem-img{grid-template-columns:1fr}.lista-n .sem{display:none}
  .lista-n .meta{display:inline}
- .lista-n div>.cat+.meta{white-space:nowrap}
+ .lista-n div>.cat+.meta{white-space:normal}
  .lista-n h3,.nota .lista-n h2{font-size:1.06rem;margin:5px 0 6px}
  .lista-n p{display:block;-webkit-line-clamp:unset;overflow:visible;font-size:.92rem}
  .lista-n .resumo{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;margin-top:5px;color:#3a414c}
@@ -432,6 +432,37 @@ def img_nota(n, pre):
     return f"{pre}noticias/{n['imagem']['arquivo']}" if n.get("imagem") else None
 
 
+_EDITORAS_LANC = None
+# como a Ludopedia grafa algumas editoras -> como o leitor as conhece (e como as notas escrevem)
+NOME_EDITORA = {"Asmodee (Galápagos)": "Galápagos"}
+
+
+def editora_nota(n):
+    """Quem publica o jogo da notícia, para a linha de data (no lugar do site de onde veio a informação).
+
+    Ordem: o campo "editora" da nota (tirado do próprio texto); senão as editoras do calendário de lançamentos
+    para os ids_ludopedia da nota (duas aparecem juntas, três ou mais viram "Várias editoras"); senão nada
+    (notícia de evento ou prêmio sem editora). As fontes continuam listadas dentro de cada notícia."""
+    global _EDITORAS_LANC
+    if n.get("editora"):
+        return n["editora"]
+    if _EDITORAS_LANC is None:
+        _EDITORAS_LANC = {}
+        for arq in (ROOT / "conteudo" / "lancamentos").glob("*.json"):
+            d = json.loads(arq.read_text(encoding="utf-8"))
+            for j in d["previstos"] + d["lancados"]:
+                if (j.get("editora") or {}).get("nome"):
+                    nome = j["editora"]["nome"].strip()
+                    _EDITORAS_LANC[j["id_jogo"]] = NOME_EDITORA.get(nome, nome)
+    eds = list(dict.fromkeys(_EDITORAS_LANC[i] for i in n.get("ids_ludopedia", []) if i in _EDITORAS_LANC))
+    return "" if not eds else eds[0] if len(eds) == 1 else " e ".join(eds) if len(eds) == 2 else "Várias editoras"
+
+
+def linha_data(n, data):
+    ed = editora_nota(n)
+    return f"{data} · {e(ed)}" if ed else data
+
+
 def bloco_manchete(m, pre, titulo="h1"):
     """A notícia principal, com foto grande, lide e a nossa opinião: no topo da home (h1) e do arquivo /noticias/ (h2)."""
     with Image.open(ROOT / "noticias" / m["imagem"]["arquivo"]) as im:
@@ -440,7 +471,7 @@ def bloco_manchete(m, pre, titulo="h1"):
   <figure><img src="{img_nota(m, pre)}" srcset="{srcset(ROOT / "noticias" / m["imagem"]["arquivo"], pre)}" sizes="(min-width: 640px) 340px, 100vw" width="{lw}" height="{lh}" alt="{e(m['titulo'])}" fetchpriority="high"></figure>
   <div class="txt"><span class="kick">Manchete · {e(m['categoria'])}</span><{titulo} class="m-tit">{e(m['titulo'])}</{titulo}><p>{e(m['lide'])}</p>
   <p class="opina"><span class="selo {SELO_CLASSE[m['selo']]}">{e(m['selo'])}</span> {e(m['veredito'])}</p>
-  <span class="meta">{data_longa(m['data'])} · {e(m['fontes'][0]['nome'])}</span><span class="credito">{e(m['imagem']['credito'])}</span></div>
+  <span class="meta">{linha_data(m, data_longa(m['data']))}</span><span class="credito">{e(m['imagem']['credito'])}</span></div>
  </a></article>"""
 
 
@@ -456,7 +487,7 @@ def cartao_nota(n, pre):
             f'<span class="ci">{img}</span><span class="cb"><span class="cat {CAT_CLASSE.get(n["categoria"], "mercado")}">{e(n["categoria"])}</span>'
             f'<h2>{e(n["titulo"])}</h2><span class="selo {SELO_CLASSE[n["selo"]]}">{e(n["selo"])}</span>'
             f'<span class="resumo">{e(n["por_que_importa"])}</span>'
-            f'<span class="meta">{data_curta(n["data"])} · {e(n["fontes"][0]["nome"].split(":")[0])}</span></span></a></li>')
+            f'<span class="meta">{linha_data(n, data_curta(n["data"]))}</span></span></a></li>')
 
 
 def build_home():
@@ -469,7 +500,7 @@ def build_home():
     manchete = bloco_manchete(m, pre)
     def item(n, pre):
         return f"""<li data-cat="{CATEGORIAS.get(n['categoria'], 'outras')}"><a href="noticias/{n['slug']}/"{'' if n.get("imagem") else ' class="sem-img"'}>{f'<img src="{miniatura(ROOT / "noticias" / n["imagem"]["arquivo"], pre)}" width="76" height="76" alt="" loading="lazy">' if n.get("imagem") else f'<span class="sem">{icone("dica")}</span>'}
-   <div><span class="cat {CAT_CLASSE.get(n['categoria'], 'mercado')}">{e(n['categoria'])}</span> <span class="meta">{data_curta(n['data'])} · {e(n['fontes'][0]['nome'].split(':')[0])}</span>
+   <div><span class="cat {CAT_CLASSE.get(n['categoria'], 'mercado')}">{e(n['categoria'])}</span> <span class="meta">{linha_data(n, data_curta(n['data']))}</span>
    <h3>{e(n['titulo'])}</h3><p><span class="selo {SELO_CLASSE[n['selo']]}">{e(n['selo'])}</span> <span class="resumo">{e(n['por_que_importa'])}</span></p></div></a></li>"""
     ultimas = resto[:8]
     # trava: nenhuma nota fora da lista pode ser mais nova que uma que está nela

@@ -47,6 +47,10 @@ Em `conteudo/home.json`:
 - **Financiamentos**: tire o que encerrou, marque "aberto" ou "encerrado", ligue à nota (`noticia`).
 - **Agenda**: tire o que passou; datas não confirmadas ficam `"previsto": true`.
 
+## Editora na linha de data
+
+Ao lado da data, as páginas mostram quem publica o jogo, nunca o site de onde veio a informação (Ludopedia, BoardGameWire etc. ficam só na seção Fontes). Preencha `"editora"` na nota com o nome que o próprio texto cita (ex.: `"Galápagos"`, `"Restoration Games"`). Sem o campo, `build_home.py` usa a editora do calendário de lançamentos pelos `ids_ludopedia`; se não houver editora (evento, prêmio, guia), a linha mostra só a data. Não invente editora.
+
 ## 5. Publicar
 
 1. `python3 tools/build_home.py` (gera a página inicial, as páginas das notas e `noticias/`) Ele grava `publicado_em` (hora de publicação) nas notas que ainda não têm, e as Últimas notícias seguem essa hora, não a pontuação: nota nova sempre entra no topo. Não edite `publicado_em` à mão; confira na página inicial que as notas novas aparecem nas Últimas notícias.
