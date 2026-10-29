@@ -1853,13 +1853,10 @@
      "fonte": "https://en.wikipedia.org/wiki/Spiel_des_Jahres"
     }
    ],
-   "status": "sem_fotos",
+   "status": "na_fila",
    "premios_distintos": 2,
    "prioridade": 35,
-   "fotos": {
-    "verificado_em": "2026-10-29",
-    "obs": "Z-Man Games (só arte), 1 More Time Games (sem página do jogo), Spiel des Jahres (só fotos com mãos); Galápagos bloqueia robôs"
-   }
+   "slug": "challengers"
   },
   {
    "jogo": "Dorfromantik: The Board Game",

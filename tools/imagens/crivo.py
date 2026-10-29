@@ -5,7 +5,7 @@ Uso:
   python3 tools/imagens/crivo.py --aplicar slug ...    grava a escolha no fontes.json e libera a página
 
 As regras estão em PADRAO_EDITORIAL.md ("Crivo de qualidade das fotos"). As medidas são automáticas;
-o que exige olhar a foto fica em marcas no fontes.json, postas na revisão: "pessoas" (pessoas ou mãos)
+o que exige olhar a foto fica em marcas no fontes.json, postas na revisão: "pessoas" (rosto de frente; mãos e rosto de perfil podem, pedido do usuário em 29/10/2026)
 e "texto" (texto por cima da foto ou texto em outra língua que domina a imagem). "outra_edicao" não
 reprova: a foto entra com o aviso no crédito.
 """
@@ -51,7 +51,7 @@ def avaliar(f, m):
     """Motivos de reprovação geral e os lugares em que a foto pode entrar."""
     fora = []
     if f.get("pessoas"):
-        fora.append("pessoas ou mãos")
+        fora.append("rosto de frente")
     if f.get("texto"):
         fora.append("texto por cima ou em outra língua")
     if not BRILHO[0] <= m["brilho"] <= BRILHO[1]:

@@ -118,7 +118,7 @@ Quando a resenha tem fotos aprovadas em `<slug>/fotos/fontes.json` (skill `image
 - **Edição nacional e preço:** a caixa (`capa`), pequena, ao lado do texto.
 - **Infográfico:** desce para o meio, na seção "Infográfico para o Instagram" depois de Prós e contras, com os botões Salvar na galeria e Legenda.
 - Toda foto leva o crédito da editora embaixo ("Imagem: …").
-- **Sem pessoas:** foto em que aparecem pessoas ou mãos leva `"pessoas": true` no `fontes.json` e não entra na página.
+- **Sem rosto de frente:** foto com mãos, braços ou rosto de perfil pode entrar (29/10/2026). Só a foto em que aparece o rosto de alguém de frente leva `"pessoas": true` no `fontes.json` e não entra na página.
 - **Miniatura:** a `capa.jpg` (cartão na lista de resenhas e prévia do link no WhatsApp) é refeita a partir da foto do topo, recortada no centro em 800×800, sempre que a página é gerada. O `og:image` leva `?v=` com a versão da imagem, para o WhatsApp buscar a nova.
 - Só a caixa não basta: sem foto de mesa, componentes ou jogabilidade, a página continua com o infográfico no topo e a miniatura do infográfico.
 
@@ -127,7 +127,7 @@ Quando a resenha tem fotos aprovadas em `<slug>/fotos/fontes.json` (skill `image
 `python3 tools/imagens/crivo.py <slug>` avalia cada foto aprovada pelo robô e escolhe o lugar dela na página; `--aplicar` grava a escolha no `fontes.json` (`principal`, `jogar`, `fora`) e libera a página (`usar_na_pagina`). A página só ganha fotos se alguma passar para o topo; senão fica com o infográfico até chegarem fotos melhores. Os limites foram calibrados com as fotos já aprovadas.
 
 **Eliminatórios (a foto não entra em lugar nenhum)** — marcados na revisão visual da folha de contato:
-- pessoas ou mãos (`"pessoas": true`);
+- rosto de alguém de frente (`"pessoas": true`); mãos e perfil podem;
 - texto por cima da foto (faixa de loja, selo, ícones de idade) ou texto em outra língua que domina a imagem (`"texto": true`);
 - medidos pelo crivo: brilho médio fora de 40–235 (escura ou estourada) e nitidez abaixo de 6.
 
