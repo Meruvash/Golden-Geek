@@ -31,7 +31,7 @@ Para **cada** notícia e resenha da lista "Publicado em <data>":
 1. Abra o JSON e as fontes citadas (WebFetch/WebSearch, respeitando robots.txt; BGG e Ludopedia só pela busca).
 2. Confira, item por item: nomes de jogos, autores e editoras; datas; números (notas, preços com data, valores de campanha, prazos); prêmios e colocações; edição nacional (regra 6 do padrão das notícias: `tools/noticias/edicao_nacional.py "<jogo>"` e busca em português; ausência se escreve "não encontramos edição nacional até <data>"); citações literais (só frase que está na fonte).
 3. Confira se a opinião tem dono, se o selo bate com o texto e se a nota ainda é notícia (campanha encerrada, data adiada).
-4. Imagem: a foto da nota/resenha é do jogo ou evento certo, com crédito; nota com `imagem: null` ganha nova tentativa pela skill `imagens` (nunca imagem gerada por API).
+4. Imagem: a foto da nota/resenha é do jogo ou evento certo, com crédito; notícia nova não pode estar sem foto (`checar_noticia.py` recusa); nota antiga com `imagem: null` ganha nova tentativa pela skill `imagens` (nunca imagem gerada por API).
 
 Correções:
 

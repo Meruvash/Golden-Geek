@@ -139,7 +139,7 @@ O corte de 5 pontos estava deixando dias sem nenhuma notícia. A meta passa a se
 3. Corpo de 80 a 200 palavras, escrito por nós. Nada copiado; citação de outro site só curta, entre aspas e com fonte.
 4. Fonte com link no fim, e a data da consulta.
 5. Preço sempre com data. Data de lançamento sempre como "previsto" até sair.
-6. Foto só da editora (imagem de divulgação, com crédito), de licença livre ou nossa. Sem foto boa, o cartão usa a capa da nossa resenha ou fica sem foto.
+6. Foto só da editora (imagem de divulgação, com crédito), de licença livre ou nossa. Sem foto boa, a nota não sai: procure em outras fontes ou troque de notícia (pedido do usuário em 29/10/2026).
 
 ## 5. Skills e ferramentas a desenvolver
 

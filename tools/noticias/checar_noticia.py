@@ -32,7 +32,10 @@ LOJAS = re.compile(r"\b(TabuleRIO|Bravo Jogos|Ludostation|Masmorra BG|Caixinha B
                    r"TabuLoja|Place Games|F[aá]cil Shopping|PlayEasy|Animus Ludere|Board Game Barato|Pira no Boardgame|Meca dos Jogos|"
                    r"Space Board Games|Omniverse|Le[aã]o Livros|Ludolovers|Javali Jogos|Tubaleria|Livtoys|Brech[oó] L[uú]dico|"
                    r"Amazon|Mercado Livre|Magalu|Magazine Luiza|Shopee|Americanas)\b", re.I)
-MINIMO, DESDE = 5, "2026-10-29"  # notas por dia, no mínimo, sem máximo; regra da manchete vale desde DESDE (PLANO_NOTICIAS.md)
+MINIMO, DESDE = 5, "2026-10-29"
+# Notícia sem foto não sai (pedido do usuário em 29/10/2026): sem foto boa, pesquise mais fotos ou troque de notícia.
+# Vale para as notas com data a partir de FOTO_DESDE; as anteriores ficam como estão.
+FOTO_DESDE, FOTO_MIN = "2026-10-29", 500  # notas por dia, no mínimo, sem máximo; regra da manchete vale desde DESDE (PLANO_NOTICIAS.md)
 
 
 def textos(n):
@@ -73,6 +76,24 @@ def checar_edicao_nacional(n):
     return erros
 
 
+def checar_foto(n):
+    im = n.get("imagem") or {}
+    arq = ROOT / "noticias" / im["arquivo"] if im.get("arquivo") else None
+    if not arq or not arq.is_file():
+        return ["sem foto: notícia não sai sem foto. Busque mais fotos (skill imagens, outras fontes) ou troque de notícia"]
+    try:
+        from PIL import Image
+        with Image.open(arq) as f:
+            lado = min(f.size)
+    except Exception:
+        return [f"foto ilegível ({im['arquivo']}): baixe de novo ou busque outra"]
+    if lado < FOTO_MIN:
+        return [f"foto pequena ({lado} px no lado menor; mínimo {FOTO_MIN}): busque uma maior ou troque de notícia"]
+    if not im.get("credito"):
+        return ["foto sem crédito"]
+    return []
+
+
 def problemas(n):
     erros = []
     for campo, (a, b) in FAIXAS.items():
@@ -105,6 +126,8 @@ def problemas(n):
         if m:
             erros.append(f"texto cita a loja {m.group(0)!r}: escreva 'em loja parceira' ou 'em lojas brasileiras'; a loja fica só nas fontes")
             break
+    if n.get("data", "") >= FOTO_DESDE:
+        erros += checar_foto(n)
     if not isinstance(n.get("crivo", {}).get("pontos"), int):
         erros.append("crivo sem pontos")
     return erros + checar_edicao_nacional(n)

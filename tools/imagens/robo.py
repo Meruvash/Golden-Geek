@@ -733,7 +733,7 @@ def buscar(cli, slug, url_fixa=None, so_editora=None):
             candidatas.append(im)
     pasta = CACHE / slug
     # notícia usa a imagem menor (destaque, miniatura e prévia do WhatsApp): 500 px no lado menor é o mínimo firme,
-    # porque sem foto boa a nota sai sem foto e nada trava. Resenha: 800 px ideal, 600 px como último recurso ("pequena").
+    # notícia sem foto boa não é publicada (procure em outras fontes ou troque de notícia). Resenha: 800 px ideal, 600 px como último recurso ("pequena").
     noticia = slug.startswith("noticias/")
     boas, avisos = baixar_candidatas(cli, candidatas, pasta / "candidatas", 500 if noticia else LADO_MIN, 500 if noticia else LADO_PISO)
     rel["avisos"] += avisos
