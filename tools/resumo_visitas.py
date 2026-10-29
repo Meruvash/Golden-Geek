@@ -3,7 +3,7 @@
 Uso: python3 tools/resumo_visitas.py
 Precisa de duas variáveis de ambiente, configuradas no ambiente da nuvem (nunca no repositório):
   CLOUDFLARE_API_TOKEN   chave só de leitura com a permissão "Account Analytics: Read"
-  CLOUDFLARE_ACCOUNT_ID  ID da conta (aparece na página inicial do painel da Cloudflare)
+  CLOUDFLARE_ACCOUNT_ID  opcional: ID da conta (padrão: a conta onde está o domínio, em CONTA abaixo)
 Visitas = entradas no site vindas de fora; visualizações = páginas abertas. Sem cookies, a Cloudflare não sabe se duas
 visitas são da mesma pessoa, então "visitas" é o número mais próximo de "pessoas", não uma contagem exata.
 """
@@ -16,6 +16,7 @@ from datetime import datetime, timedelta, timezone
 HOST = "eliteboardgamers.com.br"
 API = "https://api.cloudflare.com/client/v4/graphql"
 BRT = timezone(timedelta(hours=-3))
+CONTA = "0b88cc2d6b58c936265686f078d9969f"  # ID da conta Cloudflare do domínio (identificador, não é segredo)
 
 CONSULTA = """query($conta: String!, $ini: Time!, $fim: Time!, $host: String!) {
   viewer { accounts(filter: {accountTag: $conta}) {
@@ -54,9 +55,9 @@ def periodo(nome, d):
 
 
 def main():
-    token, conta = os.environ.get("CLOUDFLARE_API_TOKEN"), os.environ.get("CLOUDFLARE_ACCOUNT_ID")
-    if not token or not conta:
-        sys.exit("Faltam CLOUDFLARE_API_TOKEN e/ou CLOUDFLARE_ACCOUNT_ID no ambiente.")
+    token, conta = os.environ.get("CLOUDFLARE_API_TOKEN"), os.environ.get("CLOUDFLARE_ACCOUNT_ID") or CONTA
+    if not token:
+        sys.exit("Falta CLOUDFLARE_API_TOKEN no ambiente.")
     agora = datetime.now(BRT)
     hoje = agora.replace(hour=0, minute=0, second=0, microsecond=0)
     ontem = hoje - timedelta(days=1)
