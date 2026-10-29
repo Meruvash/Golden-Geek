@@ -1,0 +1,58 @@
+{
+ "slug": "carnegie",
+ "usar_na_pagina": true,
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 1141,
+   "altura": 1600,
+   "editora": "Quined Games",
+   "credito": "Imagem: Quined Games · edição alemã",
+   "pagina": "https://quinedgames.com/featured_item/carnegie/",
+   "imagem": "https://quinedgames.com/wp-content/uploads/2020/10/CarnegieFront.jpg",
+   "baixada_em": "2026-10-29",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/mesa-1.webp",
+   "tipo": "mesa",
+   "largura": 1350,
+   "altura": 1350,
+   "editora": "Pegasus Spiele",
+   "credito": "Imagem: Pegasus Spiele · edição alemã",
+   "pagina": "https://pegasus.de/en/Carnegie/57007G",
+   "imagem": "https://cdn.pegasus.de/public/media/e6/87/8d/1717755664/4250231730849_carnegie_spielmaterial-szene-1-min.png?ts=1767598656",
+   "baixada_em": "2026-10-29",
+   "aprovada": true,
+   "principal": true
+  },
+  {
+   "arquivo": "fotos/jogabilidade-1.webp",
+   "tipo": "jogabilidade",
+   "largura": 1600,
+   "altura": 1074,
+   "editora": "Pegasus Spiele",
+   "credito": "Imagem: Pegasus Spiele · edição alemã",
+   "pagina": "https://pegasus.de/en/Carnegie/57007G",
+   "imagem": "https://cdn.pegasus.de/public/media/f7/42/b5/1717754713/4250231730849_carnegie_emotionsfotos_web-6-min.jpg?ts=1767598656",
+   "baixada_em": "2026-10-29",
+   "aprovada": true,
+   "pessoas": true,
+   "fora": true
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 1350,
+   "altura": 1350,
+   "editora": "Pegasus Spiele",
+   "credito": "Imagem: Pegasus Spiele · edição alemã",
+   "pagina": "https://pegasus.de/en/Carnegie/57007G",
+   "imagem": "https://cdn.pegasus.de/public/media/02/60/29/1717755504/4250231730849_carnegie_spielmaterial-szene-4-min.png?ts=1767598656",
+   "baixada_em": "2026-10-29",
+   "aprovada": true,
+   "jogar": true
+  }
+ ]
+}

@@ -1,0 +1,73 @@
+{
+ "slug": "daybreak",
+ "usar_na_pagina": true,
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 1500,
+   "altura": 1500,
+   "editora": "CMYK",
+   "credito": "Imagem: CMYK",
+   "pagina": "https://www.cmyk.games/products/daybreak",
+   "imagem": "https://cdn.shopify.com/s/files/1/0473/5562/5629/files/Daybreaksquare.png",
+   "baixada_em": "2026-10-29",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/mesa-1.webp",
+   "tipo": "mesa",
+   "largura": 1600,
+   "altura": 900,
+   "editora": "CMYK",
+   "credito": "Imagem: CMYK",
+   "pagina": "https://www.cmyk.games/products/daybreak",
+   "imagem": "https://cdn.shopify.com/s/files/1/0473/5562/5629/files/DAY0101-DaybreakQuickstart-e30-clean4k-RAR.00_06_24_05.Still007.jpg",
+   "baixada_em": "2026-10-29",
+   "aprovada": true,
+   "pessoas": true,
+   "fora": true
+  },
+  {
+   "arquivo": "fotos/jogabilidade-1.webp",
+   "tipo": "jogabilidade",
+   "largura": 1600,
+   "altura": 900,
+   "editora": "CMYK",
+   "credito": "Imagem: CMYK",
+   "pagina": "https://www.cmyk.games/products/daybreak",
+   "imagem": "https://cdn.shopify.com/s/files/1/0473/5562/5629/files/DAY0101-DaybreakQuickstart-e30-clean4k-RAR.00_00_35_13.Still003.jpg",
+   "baixada_em": "2026-10-29",
+   "aprovada": true,
+   "pessoas": true,
+   "fora": true
+  },
+  {
+   "arquivo": "fotos/jogabilidade-2.webp",
+   "tipo": "jogabilidade",
+   "largura": 1600,
+   "altura": 900,
+   "editora": "CMYK",
+   "credito": "Imagem: CMYK",
+   "pagina": "https://www.cmyk.games/products/daybreak",
+   "imagem": "https://cdn.shopify.com/s/files/1/0473/5562/5629/files/DAY0101-DaybreakQuickstart-e30-clean4k-RAR.00_00_27_03.Still002.jpg",
+   "baixada_em": "2026-10-29",
+   "aprovada": true,
+   "pessoas": true,
+   "fora": true
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 1600,
+   "altura": 900,
+   "editora": "CMYK",
+   "credito": "Imagem: CMYK",
+   "pagina": "https://www.cmyk.games/products/daybreak",
+   "imagem": "https://cdn.shopify.com/s/files/1/0473/5562/5629/files/DAY0101-DaybreakQuickstart-e30-clean4k-RAR.00_00_56_12.Still004.jpg",
+   "baixada_em": "2026-10-29",
+   "aprovada": true,
+   "principal": true
+  }
+ ]
+}

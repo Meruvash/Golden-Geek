@@ -1799,7 +1799,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 2,
-   "prioridade": 33
+   "prioridade": 33,
+   "slug": "daybreak"
   },
   {
    "jogo": "Carnegie",
@@ -1826,7 +1827,8 @@
    ],
    "status": "na_fila",
    "prioridade": 34,
-   "premios_distintos": 2
+   "premios_distintos": 2,
+   "slug": "carnegie"
   },
   {
    "jogo": "Challengers!",
@@ -1851,9 +1853,13 @@
      "fonte": "https://en.wikipedia.org/wiki/Spiel_des_Jahres"
     }
    ],
-   "status": "na_fila",
+   "status": "sem_fotos",
    "premios_distintos": 2,
-   "prioridade": 35
+   "prioridade": 35,
+   "fotos": {
+    "verificado_em": "2026-10-29",
+    "obs": "Z-Man Games (só arte), 1 More Time Games (sem página do jogo), Spiel des Jahres (só fotos com mãos); Galápagos bloqueia robôs"
+   }
   },
   {
    "jogo": "Dorfromantik: The Board Game",
@@ -1880,7 +1886,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 2,
-   "prioridade": 36
+   "prioridade": 36,
+   "slug": "dorfromantik-the-board-game"
   },
   {
    "jogo": "Planet Unknown",
@@ -1905,9 +1912,13 @@
      "fonte": "https://en.wikipedia.org/wiki/Spiel_des_Jahres"
     }
    ],
-   "status": "na_fila",
+   "status": "sem_fotos",
    "premios_distintos": 2,
-   "prioridade": 37
+   "prioridade": 37,
+   "fotos": {
+    "verificado_em": "2026-10-29",
+    "obs": "Adam's Apple Games (só caixas), Strohmann Games e Pegasus (página não encontrada); Galápagos bloqueia robôs"
+   }
   },
   {
    "jogo": "That’s Not a Hat",
