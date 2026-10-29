@@ -208,6 +208,9 @@ def foto_html(c, f, classe="foto", lazy=True):
     # variantes menores em todas as fotos: a do topo é a imagem LCP; as de baixo pesam no plano de dados do celular
     tam = "(min-width: 860px) 420px, calc(100vw - 32px)" if not lazy else "(min-width: 860px) 700px, calc(100vw - 32px)"
     resp = f' srcset="{srcset(ROOT / c["slug"] / f["arquivo"], "../")}" sizes="{tam}"'
+    # foto menor que o ideal (último recurso da triagem) aparece no tamanho real, sem esticar e borrar
+    if f["largura"] < 800:
+        resp += f' style="max-width:min(100%,{f["largura"]}px);margin-inline:auto;display:block"'
     return (f'<figure class="{classe}"><img src="{e(f["arquivo"])}"{resp} width="{f["largura"]}" height="{f["altura"]}" '
             f'alt="{e(c["jogo"])}: {FOTO_DESC.get(f["tipo"], f["tipo"])}"{" loading=\"lazy\"" if lazy else " fetchpriority=\"high\""}>'
             f'<figcaption>{e(f["credito"])}</figcaption></figure>')

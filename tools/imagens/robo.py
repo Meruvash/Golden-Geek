@@ -50,7 +50,7 @@ DELAY_MIN = 3.0
 CACHE_DIAS = 7
 MAX_CANDIDATAS = 30
 LADO_MIN = 800  # tamanho preferido; abaixo disso a foto entra marcada "pequena", não é descartada
-LADO_PISO = 300  # abaixo disso é ícone ou miniatura, não foto
+LADO_PISO = 600  # resenha: abaixo disso a foto fica feia mesmo sem esticar; descartada
 TIPOS = ("capa", "mesa", "jogabilidade", "componentes")
 PISTAS = {
     "capa": r"box|cover|caixa|capa|schachtel|boite|packshot|3d|front|portada",
@@ -488,7 +488,7 @@ def palpite(c):
     return "capa" if c.get("fundo_liso") and 0.75 < w / h < 1.35 else "?"
 
 
-def baixar_candidatas(cli, candidatas, pasta, lado_min=LADO_MIN):
+def baixar_candidatas(cli, candidatas, pasta, lado_min=LADO_MIN, piso=LADO_PISO):
     pasta.mkdir(parents=True, exist_ok=True)
     boas, hashes, avisos = [], [], []
     for c in candidatas[:MAX_CANDIDATAS]:
@@ -503,8 +503,8 @@ def baixar_candidatas(cli, candidatas, pasta, lado_min=LADO_MIN):
             avisos.append(f"não baixou {c['url']}: {e}")
             continue
         w, h = im.size
-        # tamanho é preferência, não regra: foto menor que o ideal fica na folha, marcada, para não travar a produção
-        if min(w, h) < LADO_PISO or max(w, h) / min(w, h) > 3:
+        # resenha: foto entre o piso e o ideal fica na folha, marcada, para não travar a produção (último recurso)
+        if min(w, h) < piso or max(w, h) / min(w, h) > 3:
             continue
         hsh = dhash(im)
         dup = next((b for b, hb in zip(boas, hashes) if bin(hb ^ hsh).count("1") <= 6), None)
@@ -732,9 +732,10 @@ def buscar(cli, slug, url_fixa=None, so_editora=None):
             im.update(editora=rec["nome"], dominio=dominio)
             candidatas.append(im)
     pasta = CACHE / slug
-    # notícia usa a imagem menor (destaque, miniatura e prévia do WhatsApp): 500 px no lado menor bastam.
-    # Menores que isso entram marcadas "pequena" e vão para o fim da folha: só servem se não houver outra.
-    boas, avisos = baixar_candidatas(cli, candidatas, pasta / "candidatas", 500 if slug.startswith("noticias/") else LADO_MIN)
+    # notícia usa a imagem menor (destaque, miniatura e prévia do WhatsApp): 500 px no lado menor é o mínimo firme,
+    # porque sem foto boa a nota sai sem foto e nada trava. Resenha: 800 px ideal, 600 px como último recurso ("pequena").
+    noticia = slug.startswith("noticias/")
+    boas, avisos = baixar_candidatas(cli, candidatas, pasta / "candidatas", 500 if noticia else LADO_MIN, 500 if noticia else LADO_PISO)
     rel["avisos"] += avisos
     ordem = {"capa": 0, "mesa": 1, "jogabilidade": 2, "componentes": 3, "?": 4}
     boas.sort(key=lambda b: (b["pequena"], ordem[b["palpite"]], -b["w"] * b["h"]))
