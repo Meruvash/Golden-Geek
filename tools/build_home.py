@@ -685,6 +685,9 @@ if __name__ == "__main__":
     for n in build_home():
         build_nota(n)
     print("ok index.html e", len(notas()), "notícias")
+    # guias "Melhores jogos para…" antes das resenhas: o balão do perfil só liga para guia que existe
+    import build_guias
+    print("ok guias:", len(build_guias.build()), "páginas em /jogos-de-tabuleiro/")
     # resenhas mostram "Notícias sobre este jogo": regera as publicadas para incluir notas novas
     import build_review
     for pub in json.loads((ROOT / "pauta.json").read_text(encoding="utf-8"))["publicadas"]:

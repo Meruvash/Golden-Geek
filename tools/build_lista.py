@@ -311,6 +311,7 @@ h1{{font-size:clamp(2.2rem,6vw,3.4rem);line-height:1.05;font-weight:800;letter-s
 .selo{{justify-self:start;font-weight:800;font-size:.76rem;line-height:1.35;border-radius:6px;padding:3px 9px;color:#fff;background:#157a43}}
 .selo.publico{{background:#8a5200}}.selo.nao{{background:#a3223a}}
 .ress{{font-size:.8rem;font-weight:700;color:#8a5200}}
+.guia-link{{color:var(--gold);font-weight:700;text-underline-offset:3px}}
 .barra-f[hidden]{{display:none}}
 .barra-f{{position:sticky;top:0;z-index:5;display:flex;align-items:center;gap:14px;margin:0 -16px 16px;padding:10px 16px;background:rgba(0,0,0,.86);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}}
 .btn-filtro{{position:relative;flex:none;white-space:nowrap;display:inline-flex;align-items:center;gap:10px;min-height:46px;padding:10px 20px 10px 16px;border:0;border-radius:999px;font:inherit;font-weight:800;font-size:1rem;color:#14100a;cursor:pointer;
@@ -375,7 +376,7 @@ footer .in{{display:flex;flex-wrap:wrap;gap:10px 20px;padding-top:18px;padding-b
 <main class="in">
  <section class="topo">
   <h1>Resenhas de jogos premiados</h1>
-  <p class="lede">{n} resenhas com fontes: como funciona, o que funciona, pontos de atenção e para quem é cada jogo. Só entram jogos premiados no Golden Geek, Spiel des Jahres, Kennerspiel, As d'Or e Deutscher Spiele Preis.</p>
+  <p class="lede">{n} resenhas com fontes: como funciona, o que funciona, pontos de atenção e para quem é cada jogo. Só entram jogos premiados no Golden Geek, Spiel des Jahres, Kennerspiel, As d'Or e Deutscher Spiele Preis. Não sabe por onde começar? Veja o <a class="guia-link" href="../jogos-de-tabuleiro/">guia de jogos de tabuleiro</a>, com os melhores para iniciantes, para dois, para festa e mais.</p>
  </section>
  {filtros}
  <ul class="grid" id="lista">

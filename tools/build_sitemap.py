@@ -104,6 +104,10 @@ def fontes():
     for pag in sorted((ROOT / "noticias" / "categoria").glob("*/index.html")):
         notas = re.findall(r'href="\.\./\.\./\.\./noticias/([^/"]+)/"', pag.read_text(encoding="utf-8"))
         paginas.append(("arquivo", f"{SITE}/noticias/categoria/{pag.parent.name}/", pag, assinatura(notas), None))
+    for guia in sorted((ROOT / "jogos-de-tabuleiro").glob("**/index.html")):
+        rel = guia.parent.relative_to(ROOT).as_posix()
+        texto = re.search(r"<main.*?</main>", guia.read_text(encoding="utf-8"), re.S).group(0)
+        paginas.append(("guia", f"{SITE}/{rel}/", guia, assinatura(texto), data_git(guia) or agora().isoformat()))
     politica = ROOT / "politica-editorial" / "index.html"
     if politica.exists():
         texto = re.search(r"<main.*?</main>", politica.read_text(encoding="utf-8"), re.S).group(0)

@@ -70,6 +70,7 @@ h1{font-size:clamp(2rem,7vw,3.1rem);line-height:1.05;font-weight:800;letter-spac
 .selo{font-weight:800;font-size:.9rem;border-radius:999px;padding:3px 12px;color:#fff;background:var(--ok)}
 .selo.publico{background:var(--warn)}.selo.nao{background:var(--no)}
 .veredito p{font-weight:600}
+.selo-link{text-decoration:none}.selo-link:hover{filter:brightness(1.12);text-decoration:underline;text-underline-offset:3px}
 .nivel{flex-basis:100%;font-size:.86rem;font-weight:700;color:var(--ok-ink)}.nivel.publico{color:var(--warn-ink)}.nivel.nao{color:var(--no-ink)}
 .nivel::before{content:"✓ "}.nivel.publico::before{content:"! "}.nivel.nao::before{content:"✕ "}
 .r30 .nivel{color:#157a43;margin-top:6px}.r30 .nivel.publico{color:#8a5200}.r30 .nivel.nao{color:#a3223a}
@@ -258,7 +259,7 @@ footer a{color:var(--bar-ink)}
    <div class="nota-box"><div class="nota n9" role="img" aria-label="Nota BGG 8.1 de 10"><span>8,1</span></div><p class="nota-k">Nota BGG</p></div>
    <p class="linha">2020 · Mín &amp; Elwen</p>
   </div>
-  <div class="veredito"><span class="selo sim">Melhor para: jogar sozinho</span><p>Uma expedição de cartas rumo ao templo perdido.</p><p class="nivel sim">Recomendado</p></div>
+  <div class="veredito"><a class="selo sim selo-link" href="../jogos-de-tabuleiro/para-jogar-sozinho/">Melhor para: jogar sozinho <span aria-hidden="true">→</span></a><p>Uma expedição de cartas rumo ao templo perdido.</p><p class="nivel sim">Recomendado</p></div>
   <ul class="regua"><li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 11a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm8 1a3 3 0 1 0 0-6M2 20c0-3.3 2.7-6 6-6s6 2.7 6 6M15.5 14.2c3 .4 5.5 2.8 5.5 5.8"/></svg><span class="r-v">1–4</span><span class="r-k">Jogadores</span></li><li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg><span class="r-v">30–120 min</span><span class="r-k">Duração</span></li><li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21a9 9 0 1 1 0-18 9 9 0 0 1 0 18Z"/><path d="M9 10h.01M15 10h.01M8.5 14.5c1.9 2 5.1 2 7 0"/></svg><span class="r-v">12+</span><span class="r-k">Idade</span></li><li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9h12l2 11H4L6 9Z"/><path d="M9 9a3 3 0 1 1 6 0"/></svg><span class="r-v">2,9 / 5</span><span class="r-k">Peso BGG</span></li></ul>
   <p class="lede">Lost Ruins of Arnak, lançado no Brasil pela Devir como As Ruínas Perdidas de Arnak, mistura construção de baralho com alocação de trabalhadores numa expedição a uma ilha perdida, cheia de guardiões e com um templo escondido. Venceu o Deutscher Spiele Preis 2021 e o Golden Geek de Jogo do Ano médio em 2020, e foi indicado ao Kennerspiel. É um dos jogos médios mais agradáveis da sua geração.</p>
   <p class="pub">Resenha publicada em <time datetime="2026-10-26">26 de outubro de 2026</time> · Redação Elite Boardgamers · com base em <a href="#fontes">10 fontes</a></p>
@@ -350,7 +351,7 @@ Resenha completa no link da bio.
 <a class="voltar-topo" href="#topo" aria-label="Voltar ao topo"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg></a>
 
 <footer><div class="in">
- <span>Elite Boardgamers</span><a href="../noticias/">Notícias</a><a href="../resenhas/">Resenhas</a><a href="../lancamentos/">Lançamentos</a><a href="../consulta/">Consulta Golden Geek</a><a href="../politica-editorial/">Política editorial</a>
+ <span>Elite Boardgamers</span><a href="../noticias/">Notícias</a><a href="../resenhas/">Resenhas</a><a href="../lancamentos/">Lançamentos</a><a href="../consulta/">Consulta Golden Geek</a><a href="../jogos-de-tabuleiro/">Guia de jogos de tabuleiro</a><a href="../politica-editorial/">Política editorial</a>
  <a href="https://www.instagram.com/eliteboardgamers/" target="_blank" rel="noopener">Instagram @eliteboardgamers</a><a href="https://chat.whatsapp.com/IgQQkJdSkzHBaEq3UwFeAo" target="_blank" rel="noopener">Grupo do WhatsApp</a>
 </div></footer>
 <script>

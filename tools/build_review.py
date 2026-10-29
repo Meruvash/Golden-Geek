@@ -88,9 +88,18 @@ def nivel(c):
     return f'{c["selo"]}: {c["ressalva"]}' if c.get("ressalva") else c["selo"]
 
 
-def selo_perfil(c, prefixo=True):
-    """Balão do perfil, com a cor do nível de recomendação."""
-    return f'<span class="selo {selo_class(c["selo"])}">{e(perfil_rotulo(c, longo=prefixo))}</span>'
+# perfil → página-guia em /jogos-de-tabuleiro/ (tools/build_guias.py)
+GUIA_PERFIL = {"entrada": "para-iniciantes", "dupla": "para-dois-jogadores", "festa": "para-festa-e-grupos", "cooperativo": "cooperativos",
+               "solo": "para-jogar-sozinho", "proximo": "peso-medio", "estrategia": "estrategia", "campanha": "campanha-e-legacy", "tema": "tematicos"}
+
+
+def selo_perfil(c, prefixo=True, link=None):
+    """Balão do perfil, com a cor do nível de recomendação; com link=prefixo, leva ao guia do perfil se ele existir."""
+    rot = e(perfil_rotulo(c, longo=prefixo))
+    guia = GUIA_PERFIL.get(c.get("melhor_para"))
+    if link and guia and (ROOT / "jogos-de-tabuleiro" / guia / "index.html").exists():
+        return f'<a class="selo {selo_class(c["selo"])} selo-link" href="{link}jogos-de-tabuleiro/{guia}/">{rot} <span aria-hidden="true">→</span></a>'
+    return f'<span class="selo {selo_class(c["selo"])}">{rot}</span>'
 
 
 NIVEIS = {3: "Ótimo", 2: "Bom", 1: "Fraco"}
@@ -575,6 +584,7 @@ h1{{font-size:clamp(2rem,7vw,3.1rem);line-height:1.05;font-weight:800;letter-spa
 .selo{{font-weight:800;font-size:.9rem;border-radius:999px;padding:3px 12px;color:#fff;background:var(--ok)}}
 .selo.publico{{background:var(--warn)}}.selo.nao{{background:var(--no)}}
 .veredito p{{font-weight:600}}
+.selo-link{{text-decoration:none}}.selo-link:hover{{filter:brightness(1.12);text-decoration:underline;text-underline-offset:3px}}
 .nivel{{flex-basis:100%;font-size:.86rem;font-weight:700;color:var(--ok-ink)}}.nivel.publico{{color:var(--warn-ink)}}.nivel.nao{{color:var(--no-ink)}}
 .nivel::before{{content:"✓ "}}.nivel.publico::before{{content:"! "}}.nivel.nao::before{{content:"✕ "}}
 .r30 .nivel{{color:#157a43;margin-top:6px}}.r30 .nivel.publico{{color:#8a5200}}.r30 .nivel.nao{{color:#a3223a}}
@@ -756,7 +766,7 @@ footer a{{color:var(--bar-ink)}}
    <div class="nota-box">{nota_html}</div>
    <p class="linha">{e(linha)}</p>
   </div>
-  <div class="veredito">{selo_perfil(c)}<p>{e(c["tagline"])}</p><p class="nivel {selo_class(c["selo"])}">{e(nivel(c))}</p></div>
+  <div class="veredito">{selo_perfil(c, link="../")}<p>{e(c["tagline"])}</p><p class="nivel {selo_class(c["selo"])}">{e(nivel(c))}</p></div>
   <ul class="regua">{regua_html}</ul>
   <p class="lede">{e(c["lede"])}</p>
   {pub_html}
