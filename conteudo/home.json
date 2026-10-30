@@ -1,17 +1,17 @@
 {
- "edicao": "2026-10-29",
+ "edicao": "2026-10-30",
  "em_alta": [
+  {
+   "nome": "Money!",
+   "id_ludopedia": 4897,
+   "motivo": "Knizia anunciado pela Ludofun",
+   "link": "noticias/ludofun-money-reiner-knizia/"
+  },
   {
    "nome": "Looot",
    "id_ludopedia": 61866,
    "motivo": "Indicado ao Kennerspiel 2025, anunciado pela Devir",
    "link": "noticias/devir-looot-e-through-the-desert/"
-  },
-  {
-   "nome": "Santuário",
-   "id_ludopedia": 78727,
-   "motivo": "Venceu o Deutscher Spiele Preis 2026",
-   "link": "noticias/santuario-vence-deutscher-spiele-preis-2026/"
   },
   {
    "nome": "Civolution",
@@ -33,6 +33,14 @@
   }
  ],
  "financiamentos": [
+  {
+   "nome": "Eleição",
+   "editora": "Independente",
+   "onde": "Brasil · encerrado",
+   "situacao": "R$ 183 mil no Catarse; previsto para dezembro",
+   "fonte": "Catarse, 30/10/2026",
+   "noticia": "eleicao-e-rogue-duel-independentes-dezembro"
+  },
   {
    "nome": "BattleForge: Berserker",
    "editora": "Calamity Games",
