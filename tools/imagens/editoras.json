@@ -1014,5 +1014,45 @@
    ],
    "verificado_em": "2026-10-30"
   }
+ },
+ "hegemonicproject.com": {
+  "nome": "Hegemonic Project Games",
+  "apelidos": [
+   "Hegemonic Project Games"
+  ],
+  "site": "https://hegemonicproject.com",
+  "plataforma": "woocommerce",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": 20.0,
+   "sitemaps": [],
+   "verificado_em": "2026-10-30"
+  }
+ },
+ "redravengames.com": {
+  "nome": "Red Raven Games",
+  "apelidos": [
+   "Red Raven Games"
+  ],
+  "site": "https://www.redravengames.com",
+  "plataforma": "woocommerce",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://www.redravengames.com/frequently-asked-questions-retailers/",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.redravengames.com/wp-sitemap.xml"
+   ],
+   "verificado_em": "2026-10-30"
+  }
  }
 }
