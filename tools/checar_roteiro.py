@@ -95,6 +95,12 @@ def checar_texto(c):
         erros.append("texto · selo: há ponto de atenção grave ou preço acima de R$ 800; use \"Recomendado com ressalva\" e escreva a ressalva")
     if (c.get("selo") == "Recomendado com ressalva") != bool(c.get("ressalva")):
         erros.append("texto · ressalva: obrigatória com \"Recomendado com ressalva\" (2 a 6 palavras) e só com ele")
+    og = c.get("og_titulo", "")
+    if " vale a pena?" not in og or not og.endswith(" Resenha Elite Boardgamers") or "resenha" in og.split(" vale a pena")[0].lower():
+        erros.append("texto · og_titulo: precisa seguir o modelo \"<nome no Brasil> vale a pena? Resenha Elite Boardgamers\" "
+                     "(é de onde sai o nome do jogo no veredito, nas perguntas e nos guias; o título da busca é o titulo_busca)")
+    if len(c.get("descricao", "")) > 155:
+        erros.append(f"texto · descricao: {len(c['descricao'])} caracteres; até 155 (o Google corta o resto)")
     tb = c.get("titulo_busca", "")
     if not tb:
         erros.append("texto · titulo_busca: falta o título da busca (ver PADRAO_EDITORIAL.md)")

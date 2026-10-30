@@ -360,7 +360,10 @@ def build(ano=None):
         "".join(f'<button type="button" class="chip" data-f="{f}" data-v="{v}" aria-pressed="false">{r}</button>' for v, r in op)
         for f, op in (("tipo", FILTRO_TIPO), ("st", FILTRO_SITUACAO))))
 
-    atualizado = max(datetime.fromtimestamp((ROOT / "conteudo" / "lancamentos" / f"{m}.json").stat().st_mtime) for m in rotulos)
+    # data da última consulta à Ludopedia (gravada por coletar.py); a data do arquivo muda a cada clone
+    reg = ROOT / "conteudo" / "lancamentos" / "consultado.txt"
+    atualizado = (datetime.fromisoformat(reg.read_text(encoding="utf-8").strip()) if reg.exists() else
+                  max(datetime.fromtimestamp((ROOT / "conteudo" / "lancamentos" / f"{m}.json").stat().st_mtime) for m in rotulos))
     pre = "../"
     corpo = f"""{cabecalho(pre, "Lançamentos")}
 <main id="conteudo" class="in cal">

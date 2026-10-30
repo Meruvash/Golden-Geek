@@ -26,8 +26,17 @@ MESES = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "a
 e = html.escape
 
 def nome_br(c):
-    """Nome do jogo como o leitor brasileiro conhece (o og_titulo usa o nome da edição nacional)."""
-    return c["og_titulo"].split(" vale a pena")[0].split(" Resenha")[0]
+    """Nome do jogo como o leitor brasileiro conhece: campo `nome_br`, ou o og_titulo no modelo "<nome> vale a pena?
+    Resenha Elite Boardgamers" (nome da edição nacional), ou o nome destacado no título da página, ou `jogo`.
+    Em 30/10/2026 resenhas com og_titulo fora do modelo levaram o título inteiro para o veredito, as perguntas e os
+    guias; por isso o og_titulo só vale quando segue o modelo."""
+    if c.get("nome_br"):
+        return c["nome_br"]
+    og = c.get("og_titulo", "")
+    if " vale a pena" in og:
+        return og.split(" vale a pena")[0].split(" Resenha")[0]
+    m = re.search(r"<span>(.*?)</span>", c.get("titulo_html", ""))
+    return html.unescape(m.group(1)) if m else c["jogo"]
 
 
 def texto_cp(c):

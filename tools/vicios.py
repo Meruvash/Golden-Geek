@@ -22,7 +22,8 @@ VICIOS = [
     (r"não é apenas|não é só um", "fórmula \"não é só X, é Y\": diga Y direto"),
     (r"se destaca", "diga em que e diante de quê"),
 ]
-PULAR = {"fontes", "url", "imagem", "verificacao_nacional", "ficha", "fonte", "slug", "credito", "pagina", "origem", "filtros_ajuste"}
+# og_titulo segue o modelo fixo "<nome> vale a pena? Resenha Elite Boardgamers" e titulo_busca repete a busca do leitor
+PULAR = {"og_titulo", "titulo_busca", "fontes", "url", "imagem", "verificacao_nacional", "ficha", "fonte", "slug", "credito", "pagina", "origem", "filtros_ajuste"}
 
 
 def _textos(x, campo=""):

@@ -141,6 +141,8 @@ def ludopedia(hoje):
         antigo = json.loads(arq.read_text(encoding="utf-8")) if arq.exists() else {"lancados": [], "previstos": []}
         vistos = {(j["id_jogo"], j["status"]["slug"]) for g in ("lancados", "previstos") for j in antigo.get(g, [])}
         arq.write_text(json.dumps(d, ensure_ascii=False, indent=1), encoding="utf-8")
+        # data da consulta fica registrada: a data do arquivo muda a cada clone e não serve para isso
+        (ROOT / "conteudo" / "lancamentos" / "consultado.txt").write_text(hoje.isoformat() + "\n", encoding="utf-8")
         if mes not in pauta:
             continue
         for g in ("lancados", "previstos"):
