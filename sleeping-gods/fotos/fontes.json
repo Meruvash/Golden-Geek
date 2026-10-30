@@ -1,0 +1,96 @@
+{
+ "slug": "sleeping-gods",
+ "usar_na_pagina": true,
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 1273,
+   "altura": 1600,
+   "editora": "Red Raven Games",
+   "credito": "Imagem: Red Raven Games",
+   "pagina": "https://www.redravengames.com/sleeping-gods/",
+   "imagem": "https://www.redravengames.com/wp-content/uploads/2021/06/box-sleeping-shadow.png",
+   "baixada_em": "2026-10-30",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/mesa-1.webp",
+   "tipo": "mesa",
+   "largura": 1200,
+   "altura": 800,
+   "editora": "Red Raven Games",
+   "credito": "Imagem: Red Raven Games",
+   "pagina": "https://www.redravengames.com/sleeping-gods/",
+   "imagem": "https://www.redravengames.com/wp-content/uploads/2021/07/sleeping-gods-low-43.jpg",
+   "baixada_em": "2026-10-30",
+   "aprovada": true,
+   "principal": true
+  },
+  {
+   "arquivo": "fotos/jogabilidade-1.webp",
+   "tipo": "jogabilidade",
+   "largura": 1200,
+   "altura": 800,
+   "editora": "Red Raven Games",
+   "credito": "Imagem: Red Raven Games",
+   "pagina": "https://www.redravengames.com/sleeping-gods/",
+   "imagem": "https://www.redravengames.com/wp-content/uploads/2021/07/sleeping-gods-web-1.jpg",
+   "baixada_em": "2026-10-30",
+   "aprovada": true,
+   "fora": true
+  },
+  {
+   "arquivo": "fotos/jogabilidade-2.webp",
+   "tipo": "jogabilidade",
+   "largura": 1200,
+   "altura": 800,
+   "editora": "Red Raven Games",
+   "credito": "Imagem: Red Raven Games",
+   "pagina": "https://www.redravengames.com/sleeping-gods/",
+   "imagem": "https://www.redravengames.com/wp-content/uploads/2021/07/sleeping-gods-web-7.jpg",
+   "baixada_em": "2026-10-30",
+   "aprovada": true,
+   "fora": true
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 1200,
+   "altura": 800,
+   "editora": "Red Raven Games",
+   "credito": "Imagem: Red Raven Games",
+   "pagina": "https://www.redravengames.com/sleeping-gods/",
+   "imagem": "https://www.redravengames.com/wp-content/uploads/2021/07/sleeping-gods-web-5.jpg",
+   "baixada_em": "2026-10-30",
+   "aprovada": true,
+   "jogar": true
+  },
+  {
+   "arquivo": "fotos/componentes-2.webp",
+   "tipo": "componentes",
+   "largura": 1200,
+   "altura": 800,
+   "editora": "Red Raven Games",
+   "credito": "Imagem: Red Raven Games",
+   "pagina": "https://www.redravengames.com/sleeping-gods/",
+   "imagem": "https://www.redravengames.com/wp-content/uploads/2021/07/sleeping-gods-web-4.jpg",
+   "baixada_em": "2026-10-30",
+   "aprovada": true,
+   "fora": true
+  },
+  {
+   "arquivo": "fotos/componentes-3.webp",
+   "tipo": "componentes",
+   "largura": 1200,
+   "altura": 800,
+   "editora": "Red Raven Games",
+   "credito": "Imagem: Red Raven Games",
+   "pagina": "https://www.redravengames.com/sleeping-gods/",
+   "imagem": "https://www.redravengames.com/wp-content/uploads/2021/07/tides-low-9.jpg",
+   "baixada_em": "2026-10-30",
+   "aprovada": true,
+   "fora": true
+  }
+ ]
+}

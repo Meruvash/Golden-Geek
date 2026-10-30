@@ -1,0 +1,96 @@
+{
+ "slug": "return-to-dark-tower",
+ "usar_na_pagina": true,
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 1200,
+   "altura": 1200,
+   "editora": "Restoration Games",
+   "credito": "Imagem: Restoration Games",
+   "pagina": "https://restorationgames.com/return-to-dark-tower/",
+   "imagem": "https://restorationgames.com/wp-content/uploads/2022/05/RG_Web_RTDT_BaseGame_Box-1200x1200-1.png",
+   "baixada_em": "2026-10-30",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/mesa-1.webp",
+   "tipo": "mesa",
+   "largura": 900,
+   "altura": 900,
+   "editora": "Restoration Games",
+   "credito": "Imagem: Restoration Games",
+   "pagina": "https://restorationgames.com/return-to-dark-tower/",
+   "imagem": "https://restorationgames.com/wp-content/uploads/2022/05/rtdt-1-scaled_square.jpg",
+   "baixada_em": "2026-10-30",
+   "aprovada": true,
+   "principal": true
+  },
+  {
+   "arquivo": "fotos/jogabilidade-1.webp",
+   "tipo": "jogabilidade",
+   "largura": 900,
+   "altura": 900,
+   "editora": "Restoration Games",
+   "credito": "Imagem: Restoration Games",
+   "pagina": "https://restorationgames.com/return-to-dark-tower/",
+   "imagem": "https://restorationgames.com/wp-content/uploads/2022/05/rtdt-2-scaled_square.jpg",
+   "baixada_em": "2026-10-30",
+   "aprovada": true,
+   "fora": true
+  },
+  {
+   "arquivo": "fotos/jogabilidade-2.webp",
+   "tipo": "jogabilidade",
+   "largura": 900,
+   "altura": 900,
+   "editora": "Restoration Games",
+   "credito": "Imagem: Restoration Games",
+   "pagina": "https://restorationgames.com/return-to-dark-tower/",
+   "imagem": "https://restorationgames.com/wp-content/uploads/2022/05/rtdt-4-scaled_square.jpg",
+   "baixada_em": "2026-10-30",
+   "aprovada": true,
+   "fora": true
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 900,
+   "altura": 900,
+   "editora": "Restoration Games",
+   "credito": "Imagem: Restoration Games",
+   "pagina": "https://restorationgames.com/return-to-dark-tower/",
+   "imagem": "https://restorationgames.com/wp-content/uploads/2022/05/rtdt-3-scaled_square.jpg",
+   "baixada_em": "2026-10-30",
+   "aprovada": true,
+   "jogar": true
+  },
+  {
+   "arquivo": "fotos/componentes-2.webp",
+   "tipo": "componentes",
+   "largura": 900,
+   "altura": 900,
+   "editora": "Restoration Games",
+   "credito": "Imagem: Restoration Games",
+   "pagina": "https://restorationgames.com/return-to-dark-tower/",
+   "imagem": "https://restorationgames.com/wp-content/uploads/2022/05/rtdt-6-scaled_square.jpg",
+   "baixada_em": "2026-10-30",
+   "aprovada": true,
+   "fora": true
+  },
+  {
+   "arquivo": "fotos/componentes-3.webp",
+   "tipo": "componentes",
+   "largura": 900,
+   "altura": 900,
+   "editora": "Restoration Games",
+   "credito": "Imagem: Restoration Games",
+   "pagina": "https://restorationgames.com/return-to-dark-tower/",
+   "imagem": "https://restorationgames.com/wp-content/uploads/2022/05/rtdt-7-scaled_square.jpg",
+   "baixada_em": "2026-10-30",
+   "aprovada": true,
+   "fora": true
+  }
+ ]
+}

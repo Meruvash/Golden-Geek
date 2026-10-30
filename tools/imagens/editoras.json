@@ -213,7 +213,7 @@
    "sitemaps": [
     "https://catchupgames.com/wp-sitemap.xml"
    ],
-   "verificado_em": "2026-10-27"
+   "verificado_em": "2026-10-30"
   }
  },
  "theop.games": {
@@ -742,7 +742,7 @@
    "sitemaps": [
     "https://restorationgames.com/sitemap_index.xml"
    ],
-   "verificado_em": "2026-10-28"
+   "verificado_em": "2026-10-30"
   }
  },
  "capstone-games.com": {
@@ -1051,6 +1051,27 @@
    "crawl_delay": null,
    "sitemaps": [
     "https://www.redravengames.com/wp-sitemap.xml"
+   ],
+   "verificado_em": "2026-10-30"
+  }
+ },
+ "insideupgames.com": {
+  "nome": "Inside Up Games",
+  "apelidos": [
+   "Inside Up Games"
+  ],
+  "site": "https://insideupgames.com",
+  "plataforma": "woocommerce",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://insideupgames.com/media/",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://insideupgames.com/sitemap_index.xml"
    ],
    "verificado_em": "2026-10-30"
   }

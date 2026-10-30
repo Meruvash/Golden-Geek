@@ -2315,7 +2315,8 @@
    "status": "na_fila",
    "prioridade": 38,
    "premios_distintos": 1,
-   "carro_chefe": true
+   "carro_chefe": true,
+   "slug": "sleeping-gods"
   },
   {
    "jogo": "The Lord of the Rings: Fate of the Fellowship",
@@ -2692,10 +2693,14 @@
      "fonte": "https://eliteboardgamers.com.br/"
     }
    ],
-   "status": "na_fila",
+   "status": "sem_fotos",
    "prioridade": 23,
    "premios_distintos": 1,
-   "carro_chefe": true
+   "carro_chefe": true,
+   "fotos": {
+    "verificado_em": "2026-10-30",
+    "obs": "hegemonicproject.com (loja e what-is-hegemony): só renders de catálogo em fundo branco; sem edição nacional localizada"
+   }
   },
   {
    "jogo": "On Mars",
@@ -2979,7 +2984,8 @@
    "status": "na_fila",
    "prioridade": 29,
    "premios_distintos": 1,
-   "carro_chefe": true
+   "carro_chefe": true,
+   "slug": "cat-in-the-box-deluxe-edition"
   },
   {
    "jogo": "Flamecraft",
@@ -3910,7 +3916,8 @@
    "status": "na_fila",
    "prioridade": 47,
    "premios_distintos": 1,
-   "carro_chefe": true
+   "carro_chefe": true,
+   "slug": "return-to-dark-tower"
   },
   {
    "jogo": "Radlands",
