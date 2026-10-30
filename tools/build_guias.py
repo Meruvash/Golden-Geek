@@ -167,7 +167,8 @@ def vitorias(c):
 
 def selecao(perfil, todas):
     _, _, _, _, _, regra, _ = GUIAS[perfil]
-    escolhidos = [(c, d) for c, d, _ in todas if d["melhor_para"] == perfil or regra(d)]
+    # os guias são de premiados: resenha aberta como exceção, sem prêmio da pauta, não entra (Luz Final, 30/10/2026)
+    escolhidos = [(c, d) for c, d, _ in todas if c.get("premiacoes") and (d["melhor_para"] == perfil or regra(d))]
     if perfil == "melhores":
         return sorted(escolhidos, key=lambda x: (-vitorias(x[0]), -(x[1]["nota"] or 0)))
     return sorted(escolhidos, key=lambda x: (x[1]["melhor_para"] != perfil, -(x[1]["nota"] or 0)))
@@ -272,7 +273,7 @@ def build_hub(todas):
   <li><b>Competir ou cooperar?</b> Nos cooperativos todos ganham ou perdem juntos. <a href="{pre}resenhas/?estilo=Cooperativo">Ver cooperativos</a>.</li>
  </ul></section>
  <section class="bloco"><h2>Prêmios que ajudam a escolher</h2><div class="corpo">
-  <p>Todos os jogos resenhados aqui venceram ou foram finalistas de prêmios importantes: o Spiel des Jahres (Alemanha,
+  <p>Quase todos os jogos resenhados aqui venceram ou foram finalistas de prêmios importantes: o Spiel des Jahres (Alemanha,
   jogos de família) e o Kennerspiel des Jahres (para quem já joga), o As d'Or (França), o Deutscher Spiele Preis
   (votado pelo público) e o Golden Geek (votado pela comunidade do BoardGameGeek). Para ver todos os premiados do
   Golden Geek desde 2015, use a <a href="{pre}consulta/">Consulta Golden Geek</a>; para os vencedores de cada prêmio

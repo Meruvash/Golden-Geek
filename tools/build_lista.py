@@ -377,7 +377,7 @@ footer .in{{display:flex;flex-wrap:wrap;gap:10px 20px;padding-top:18px;padding-b
 <main class="in">
  <section class="topo">
   <h1>Resenhas de jogos premiados</h1>
-  <p class="lede">{n} resenhas com fontes: como funciona, o que funciona, pontos de atenção e para quem é cada jogo. Só entram jogos premiados no Golden Geek, Spiel des Jahres, Kennerspiel, As d'Or e Deutscher Spiele Preis. Não sabe por onde começar? Veja o <a class="guia-link" href="../jogos-de-tabuleiro/">guia de jogos de tabuleiro</a>, com os melhores para iniciantes, para dois, para festa e mais.</p>
+  <p class="lede">{n} resenhas com fontes: como funciona, o que funciona, pontos de atenção e para quem é cada jogo. A pauta é de jogos premiados no Golden Geek, Spiel des Jahres, Kennerspiel, As d'Or e Deutscher Spiele Preis; as raras exceções vêm avisadas na ficha da própria resenha. Não sabe por onde começar? Veja o <a class="guia-link" href="../jogos-de-tabuleiro/">guia de jogos de tabuleiro</a>, com os melhores para iniciantes, para dois, para festa e mais.</p>
  </section>
  {filtros}
  <ul class="grid" id="lista">

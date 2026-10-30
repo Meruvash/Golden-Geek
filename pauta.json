@@ -198,6 +198,11 @@
    "jogo": "Dorfromantik: The Board Game",
    "url": "https://eliteboardgamers.com.br/dorfromantik-the-board-game/",
    "data": "2026-10-30"
+  },
+  {
+   "jogo": "Luz Final",
+   "url": "https://eliteboardgamers.com.br/last-light/",
+   "data": "2026-10-30"
   }
  ],
  "jogos": [
@@ -10861,6 +10866,23 @@
    "prioridade": 433,
    "premios_distintos": 1,
    "carro_chefe": false
+  },
+  {
+   "jogo": "Luz Final",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [],
+   "premios_distintos": 0,
+   "prioridade": 0,
+   "status": "publicado",
+   "slug": "last-light",
+   "carro_chefe": false,
+   "fotos": {
+    "verificado_em": "2026-10-30",
+    "obs": "Grey Fox Games (loja oficial): caixa, mesa (recortada para tirar o texto promocional) e componentes"
+   },
+   "excecao": "pedido do usuário em 30/10/2026: resenha de jogo sem prêmio da pauta (Luz Final, edição da Mosaico Jogos)"
   }
  ]
 }

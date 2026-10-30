@@ -1,0 +1,46 @@
+{
+ "slug": "last-light",
+ "usar_na_pagina": true,
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 1000,
+   "altura": 1000,
+   "editora": "Grey Fox Games",
+   "credito": "Imagem: Grey Fox Games",
+   "pagina": "https://greyfoxgames.com/products/last-light-retail-edition",
+   "imagem": "https://cdn.shopify.com/s/files/1/0669/3961/7510/files/Rewards_Standard.jpg",
+   "baixada_em": "2026-10-30",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/mesa-1.webp",
+   "tipo": "mesa",
+   "largura": 1000,
+   "altura": 575,
+   "editora": "Grey Fox Games",
+   "credito": "Imagem: Grey Fox Games",
+   "pagina": "https://greyfoxgames.com/products/last-light-base-game-deluxe-ks",
+   "imagem": "https://cdn.shopify.com/s/files/1/0669/3961/7510/files/ll_realphoto.jpg",
+   "baixada_em": "2026-10-30",
+   "aprovada": true,
+   "texto": false,
+   "obs": "recortada para tirar o logotipo e a faixa de texto promocional da imagem original",
+   "principal": true
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 660,
+   "altura": 652,
+   "editora": "Grey Fox Games",
+   "credito": "Imagem: Grey Fox Games",
+   "pagina": "https://greyfoxgames.com/products/last-light-base-game-deluxe-ks",
+   "imagem": "https://cdn.shopify.com/s/files/1/0669/3961/7510/files/basedeluxe.jpg",
+   "baixada_em": "2026-10-30",
+   "aprovada": true,
+   "jogar": true
+  }
+ ]
+}

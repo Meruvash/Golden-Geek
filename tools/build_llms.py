@@ -21,7 +21,7 @@ def build():
     linhas = [
         "# Elite Boardgamers",
         "",
-        "> Portal brasileiro de notícias e resenhas de jogos de tabuleiro modernos (board games), em português. Resenhas de "
+        "> Portal brasileiro de notícias e resenhas de jogos de tabuleiro modernos (board games), em português. Resenhas, quase todas de "
         "jogos premiados (Spiel des Jahres, Kennerspiel, As d'Or, Deutscher Spiele Preis, Golden Geek) com selo de "
         "recomendação, para quem é cada jogo, preço em lojas brasileiras com data e verificação de edição nacional; "
         "notícias diárias de lançamentos, pré-vendas e financiamentos no Brasil.",

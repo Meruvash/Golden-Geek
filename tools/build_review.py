@@ -163,7 +163,7 @@ def mais_resenhas(c, n=6):
             break
     return (
         f'<section class="bloco claro mais-res" id="mais-resenhas"><h2>Continue lendo</h2>'
-        f'<p class="sub">Outras resenhas de jogos premiados da Elite Boardgamers.</p><ul>{"".join(cards)}</ul>'
+        f'<p class="sub">Outras resenhas da Elite Boardgamers.</p><ul>{"".join(cards)}</ul>'
         f'<a class="ver-todas" href="../resenhas/">Ver todas as {total} resenhas</a></section>'
     )
 

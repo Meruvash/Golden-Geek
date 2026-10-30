@@ -1,14 +1,51 @@
 {
  "_regras": "Chamadas para redes (PADRAO_EDITORIAL.md, 'Chamadas para redes'): emoção e curiosidade, sempre cumpridas pelo texto. Fica fora da página, então não mexe na data de modificação.",
- "devir-looot-e-through-the-desert": {"chamada": "Um finalista do Kennerspiel vai sair em português. E vem com um clássico do Knizia junto 👀", "pergunta": "Looot ou Through the Desert: qual entra primeiro na sua estante?"},
- "dezembro-earthborne-rangers-santorini-agent-avenue": {"chamada": "Três jogos que a gringa adora estão marcados para dezembro. Mas um deles já atrasou uma vez… ⏳", "pergunta": "Qual desses três você quer debaixo da árvore de Natal?"},
- "galapagos-azul-kids-caper-europe-nas-lojas": {"chamada": "Um dos jogos para dois mais elogiados dos últimos anos chegou às lojas por menos de R$ 200 💸", "pergunta": "Na sua casa, joga-se mais a dois ou em grupo?"},
- "horizontes-de-spirit-island-pre-venda-ace-studios": {"chamada": "Sempre quis jogar Spirit Island, mas a caixa assusta? Agora tem um jeito mais barato de começar 🌋", "pergunta": "Já jogou Spirit Island? Valeu o esforço de aprender?"},
- "kinfire-delve-pre-venda-ludofun": {"chamada": "Cooperativo bem avaliado lá fora, R$ 198 a caixa, dá para jogar sozinho. Chegou ao Brasil 🔥", "pergunta": "Qual foi o último jogo que te prendeu jogando sozinho?"},
- "ruins-alebrijes-protocolo-scintilla-outubro": {"chamada": "R$ 118 ou R$ 422,99? Três lançamentos de outubro, e só um tem a crítica do lado dele 🤔", "pergunta": "Você compra jogo sem ler resenha antes?"},
- "seti": {"chamada": "Caçar vida fora da Terra virou um euro pesado de primeira. E os alienígenas aparecem no meio da partida 👽", "pergunta": "Jogo pesado de duas horas: você encara ou foge?"},
- "heat-pedal-to-the-metal": {"chamada": "Acelerar esquenta o motor. Frear perde a corrida. O que você faz na última curva? 🏎️🔥", "pergunta": "Na última curva: pé embaixo ou freio?"},
- "harmonies": {"chamada": "Meia hora, três fichas por turno e uma paisagem que vira casa de bicho. Simples, bonito e difícil de largar 🦊", "pergunta": "Você prefere jogo tranquilo e bonito ou jogo de briga na mesa?"},
- "civolution": {"chamada": "Venceu o As d'Or e levou 9,0 da Dice Tower. Dois dados decidem tudo… ou quase 🎲", "pergunta": "Dado em jogo pesado: tempero ou pecado?"},
- "vantage": {"chamada": "O melhor jogo solo do ano tem um problema: as outras cinco cadeiras da mesa 🪑", "pergunta": "Você joga solo ou só joga com a galera?"}
+ "devir-looot-e-through-the-desert": {
+  "chamada": "Um finalista do Kennerspiel vai sair em português. E vem com um clássico do Knizia junto 👀",
+  "pergunta": "Looot ou Through the Desert: qual entra primeiro na sua estante?"
+ },
+ "dezembro-earthborne-rangers-santorini-agent-avenue": {
+  "chamada": "Três jogos que a gringa adora estão marcados para dezembro. Mas um deles já atrasou uma vez… ⏳",
+  "pergunta": "Qual desses três você quer debaixo da árvore de Natal?"
+ },
+ "galapagos-azul-kids-caper-europe-nas-lojas": {
+  "chamada": "Um dos jogos para dois mais elogiados dos últimos anos chegou às lojas por menos de R$ 200 💸",
+  "pergunta": "Na sua casa, joga-se mais a dois ou em grupo?"
+ },
+ "horizontes-de-spirit-island-pre-venda-ace-studios": {
+  "chamada": "Sempre quis jogar Spirit Island, mas a caixa assusta? Agora tem um jeito mais barato de começar 🌋",
+  "pergunta": "Já jogou Spirit Island? Valeu o esforço de aprender?"
+ },
+ "kinfire-delve-pre-venda-ludofun": {
+  "chamada": "Cooperativo bem avaliado lá fora, R$ 198 a caixa, dá para jogar sozinho. Chegou ao Brasil 🔥",
+  "pergunta": "Qual foi o último jogo que te prendeu jogando sozinho?"
+ },
+ "ruins-alebrijes-protocolo-scintilla-outubro": {
+  "chamada": "R$ 118 ou R$ 422,99? Três lançamentos de outubro, e só um tem a crítica do lado dele 🤔",
+  "pergunta": "Você compra jogo sem ler resenha antes?"
+ },
+ "seti": {
+  "chamada": "Caçar vida fora da Terra virou um euro pesado de primeira. E os alienígenas aparecem no meio da partida 👽",
+  "pergunta": "Jogo pesado de duas horas: você encara ou foge?"
+ },
+ "heat-pedal-to-the-metal": {
+  "chamada": "Acelerar esquenta o motor. Frear perde a corrida. O que você faz na última curva? 🏎️🔥",
+  "pergunta": "Na última curva: pé embaixo ou freio?"
+ },
+ "harmonies": {
+  "chamada": "Meia hora, três fichas por turno e uma paisagem que vira casa de bicho. Simples, bonito e difícil de largar 🦊",
+  "pergunta": "Você prefere jogo tranquilo e bonito ou jogo de briga na mesa?"
+ },
+ "civolution": {
+  "chamada": "Venceu o As d'Or e levou 9,0 da Dice Tower. Dois dados decidem tudo… ou quase 🎲",
+  "pergunta": "Dado em jogo pesado: tempero ou pecado?"
+ },
+ "vantage": {
+  "chamada": "O melhor jogo solo do ano tem um problema: as outras cinco cadeiras da mesa 🪑",
+  "pergunta": "Você joga solo ou só joga com a galera?"
+ },
+ "last-light": {
+  "chamada": "A caixa promete um 4X em uma hora. Na crítica, só deu uma hora com o autor na mesa 🪐",
+  "pergunta": "Guerra espacial: uma hora ou uma tarde inteira?"
+ }
 }

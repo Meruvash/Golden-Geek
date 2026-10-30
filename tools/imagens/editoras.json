@@ -973,5 +973,46 @@
    "sitemaps": [],
    "verificado_em": "2026-10-29"
   }
+ },
+ "greyfoxgames.com": {
+  "nome": "Grey Fox Games",
+  "apelidos": [
+   "Grey Fox Games"
+  ],
+  "site": "https://greyfoxgames.com",
+  "plataforma": "shopify",
+  "estrategia": "sitemap+shopify_json",
+  "press_kit": "https://greyfoxgames.com/pages/downloads",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://greyfoxgames.com/sitemap.xml"
+   ],
+   "verificado_em": "2026-10-30"
+  }
+ },
+ "tlamagames.com": {
+  "nome": "tlamagames.com",
+  "apelidos": [],
+  "site": "https://www.tlamagames.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.tlamagames.com/en/sitemap.xml",
+    "https://www.tlamagames.com/sitemap.xml"
+   ],
+   "verificado_em": "2026-10-30"
+  }
  }
 }

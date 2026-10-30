@@ -19,6 +19,9 @@ ROOT = Path(__file__).resolve().parent.parent.parent
 
 # Limites calibrados com as fotos já aprovadas (Terraforming Mars, Flip 7, Faraway, Wingspan, Arnak, Codenames, Nemesis...).
 TOPO = {"lado": 800, "proporcao": 1.8, "branco": 0.35, "liso": 0.45}
+# Último recurso (pedido do usuário em 29/10/2026: tamanho é preferência, não regra): foto larga e nítida um pouco
+# abaixo do ideal entra no topo quando nenhuma outra serve. Na página ela aparece no tamanho real, sem esticar.
+TOPO_RESERVA = {"lado": 560, "largura": 900}
 JOGAR = {"lado": 600, "proporcao": 2.4}
 CAIXA = {"lado": 400}
 BRILHO = (40, 235)
@@ -38,6 +41,7 @@ def medir(arq):
     blocos = [ImageStat.Stat(g.crop((x, y, x + 10, y + 10))).stddev[0] for y in range(0, H - 10, 10) for x in range(0, W - 10, 10)]
     return {
         "lado": min(w, h),
+        "largura": w,
         "proporcao": round(max(w, h) / min(w, h), 2),
         "brilho": round(ImageStat.Stat(g).mean[0]),
         # fundo de catálogo: muito branco recortado ou muitos trechos lisos (fundo de estúdio)
@@ -68,6 +72,9 @@ def avaliar(f, m):
     catalogo = m["branco"] >= TOPO["branco"] or m["liso"] >= TOPO["liso"]
     if m["lado"] >= TOPO["lado"] and m["proporcao"] <= TOPO["proporcao"] and not catalogo:
         lugares.append("topo")
+    elif (m["lado"] >= TOPO_RESERVA["lado"] and m.get("largura", 0) >= TOPO_RESERVA["largura"]
+          and m["proporcao"] <= TOPO["proporcao"] and not catalogo):
+        lugares.append("topo_reserva")
     if m["lado"] >= JOGAR["lado"] and m["proporcao"] <= JOGAR["proporcao"]:
         lugares.append("jogar")
     return ([] if lugares else ["resolução ou proporção fora do limite"]), lugares
@@ -77,6 +84,8 @@ def escolher(fotos):
     """Topo: a melhor foto sem cara de catálogo; Como é jogar: outra foto, de preferência também sem fundo de catálogo."""
     pode = lambda lugar: [f for f in fotos if lugar in f["_lugares"]]
     topo = sorted(pode("topo"), key=lambda f: (ORDEM_TOPO.index(f["tipo"]), -f["_m"]["nitidez"]))
+    if not topo:  # nenhuma no tamanho ideal: a melhor das de reserva
+        topo = sorted(pode("topo_reserva"), key=lambda f: (ORDEM_TOPO.index(f["tipo"]), -f["_m"]["largura"]))
     topo = topo[0] if topo else None
     resto = [f for f in pode("jogar") if f is not topo]
     jogar = sorted(resto, key=lambda f: ("topo" not in f["_lugares"], ORDEM_JOGAR.index(f["tipo"])))
