@@ -268,7 +268,7 @@ def build():
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#000000">
-<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../favicon-48.png" sizes="48x48" type="image/png"><link rel="icon" href="../favicon-32.png" sizes="32x32" type="image/png"><link rel="apple-touch-icon" href="../apple-touch-icon.png"><link rel="manifest" href="../site.webmanifest">
 <link rel="preload" href="../fontes/public-sans.woff2" as="font" type="font/woff2" crossorigin>
 {seo.script(seo.trilha(("Início", f"{SITE}/"), ("Resenhas", f"{SITE}/resenhas/")))}
 <style>

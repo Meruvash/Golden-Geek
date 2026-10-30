@@ -385,7 +385,7 @@ def pagina(titulo, descricao, url, imagem, pre, corpo, tipo="website", head_extr
 <meta property="og:image" content="{imagem}">{og_dim(imagem)}
 <meta name="twitter:card" content="summary_large_image">{head_extra}
 <meta name="theme-color" content="#000000">
-<link rel="icon" href="{pre}favicon.svg" type="image/svg+xml">
+<link rel="icon" href="{pre}favicon-48.png" sizes="48x48" type="image/png"><link rel="icon" href="{pre}favicon-32.png" sizes="32x32" type="image/png"><link rel="apple-touch-icon" href="{pre}apple-touch-icon.png"><link rel="manifest" href="{pre}site.webmanifest">
 <link rel="preload" href="{pre}fontes/public-sans.woff2" as="font" type="font/woff2" crossorigin>
 <style>{CSS % {"pre": pre}}{CSS_TRILHA}{CSS_BUSCA}</style>
 {jsonld}
