@@ -211,6 +211,8 @@ footer .in{display:flex;flex-wrap:wrap;gap:10px 20px;padding-top:18px;padding-bo
 .nota figcaption{margin-top:6px}
 .nota h2,.nota .h-sec{font-size:.8rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--paper-muted);margin-bottom:8px}
 .nota .h-sec{margin:0 0 8px;line-height:inherit;text-wrap:wrap}
+.banner{background:#0b0c0e;border-bottom:1px solid var(--line)}.banner img{display:block;width:100%%;height:auto;max-width:1148px;margin:0 auto}
+@media (min-width:1180px){.banner{background:none;border:0;padding-top:16px}.banner img{border-radius:10px}}
 .continua ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
 .continua a{display:grid;grid-template-columns:96px minmax(0,1fr);gap:14px;align-items:center;padding:8px;border-radius:10px;border:1px solid var(--paper-line);color:var(--paper-ink);text-decoration:none}
 .continua a:hover{border-color:var(--gold)}.continua a:hover b{text-decoration:underline}
@@ -642,6 +644,7 @@ def build_home():
         c = json.loads((ROOT / "conteudo" / f"{s}.json").read_text(encoding="utf-8"))
         res += f'<li><a href="{s}/"><img src="{s}/capa.jpg{versao(ROOT / s / "capa.jpg")}" srcset="{srcset(ROOT / s / "capa.jpg", pre, (400,))}" sizes="(min-width: 640px) 160px, 45vw" width="800" height="800" alt="" loading="lazy"><b>{e(c["jogo"])}</b></a></li>'
     corpo = f"""{cabecalho(pre, "Início")}
+<div class="banner"><img src="marca/banner-1200.webp" srcset="marca/banner-800.webp 800w, marca/banner-1200.webp 1200w, marca/banner-1983.webp 1983w" sizes="(min-width: 1148px) 1148px, 100vw" width="1983" height="586" alt="Elite Board Gamers: notícias, análises e jogos sempre em pauta" fetchpriority="high"></div>
 <main id="conteudo" class="in">
  <p class="edicao">Edição de {data_longa(max(n["data"] for n in ns))}</p>
  <div class="grade">
