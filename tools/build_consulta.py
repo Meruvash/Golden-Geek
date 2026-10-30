@@ -75,7 +75,9 @@ def build():
     html_tabela, total = tabela(s, resenhas)
     novo = re.sub(r'<div id="out">.*?</div>(?=\n\n <a class="zap")', lambda _: f'<div id="out">{html_tabela}</div>', s, count=1, flags=re.S)
     # moldura comum do site (tools/layout.py)
-    novo = re.sub(r'<header class="(?:top)?bar".*?</nav>', lambda _: cabecalho("../", "Consulta Golden Geek"), novo, count=1, flags=re.S)
+    # leva junto os scripts do menu que vêm depois do </nav> (antes, cada geração deixava uma cópia a mais)
+    novo = re.sub(r'<header class="(?:top)?bar".*?</nav>(?:\s*<script>\(\(\)=>\{const n=document\.querySelector\(\'\.nav\'\).*?</script>)*',
+                  lambda _: cabecalho("../", "Consulta Golden Geek"), novo, count=1, flags=re.S)
     novo = re.sub(r'(?:<style id="moldura">.*?</style>\n)?</head>', lambda _: f'<style id="moldura">{CSS_BUSCA}</style>\n</head>', novo, count=1, flags=re.S)
     # compartilhar a lista do jeito que está filtrada (o endereço guarda ano, categoria e pesquisa)
     cp = botao_compartilhar("Consulta Golden Geek 2015–2025 na Elite Boardgamers", "", "Compartilhar", mini=True)
