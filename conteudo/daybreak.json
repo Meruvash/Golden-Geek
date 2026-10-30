@@ -1,0 +1,417 @@
+{
+ "slug": "daybreak",
+ "jogo": "Daybreak",
+ "cor": "#d9653b",
+ "kicker": "Resenha · Cooperativo sobre o clima",
+ "og_titulo": "Daybreak, o Kennerspiel 2024: resenha Elite Boardgamers",
+ "titulo_busca": "Daybreak: resenha do cooperativo do clima, Kennerspiel 2024",
+ "descricao": "Resenha de Daybreak, de Matt Leacock e Matteo Menapace, Kennerspiel des Jahres 2024: como funciona, o que divide a crítica, edição nacional e para quem é.",
+ "titulo_html": "A única cúpula do clima em que todo mundo assina o acordo: <span>Daybreak</span>",
+ "lede": "Daybreak é um cooperativo de Matt Leacock, o autor de Pandemic, e Matteo Menapace: cada jogador comanda uma potência mundial, e o grupo tenta cortar o carbono antes que o planeta esquente demais. Venceu o Kennerspiel des Jahres 2024. A ciência, a crítica elogia. A ficção está em outro lugar: China, Estados Unidos, Europa e Países Emergentes concordando de primeira. Para grupos de dois a quatro que gostam de montar combos de cartas juntos, a pré-venda nacional sai por menos de R$ 300.",
+ "tags": [
+  "1–4 jogadores",
+  "60–90 min",
+  "10+",
+  "Cooperativo",
+  "Clima"
+ ],
+ "alt": "Mesa de Daybreak montada, com o mapa-múndi, o termômetro de faixas vermelhas, árvores de madeira e cubos de carbono",
+ "premiacoes": [
+  {
+   "premio": "Kennerspiel des Jahres",
+   "ano": 2024,
+   "categoria": "Kennerspiel des Jahres",
+   "colocacao": 1,
+   "resultado": "vencedor",
+   "fonte": "https://en.wikipedia.org/wiki/Spiel_des_Jahres",
+   "rotulo": "Vencedor"
+  },
+  {
+   "premio": "As d'Or",
+   "ano": 2025,
+   "categoria": "Jeu de l’année Expert",
+   "colocacao": null,
+   "resultado": "finalista",
+   "fonte": "https://fr.wikipedia.org/wiki/As_d%27Or",
+   "rotulo": "Finalista"
+  },
+  {
+   "premio": "Diana Jones Award",
+   "ano": 2025,
+   "categoria": "Prêmio anual (dividido com Rose Estes)",
+   "colocacao": 1,
+   "resultado": "vencedor",
+   "fonte": "https://www.dianajonesaward.org/the-2025-award/",
+   "rotulo": "Vencedor"
+  },
+  {
+   "premio": "Prix Lizzie Magie (Rennes en Jeux)",
+   "ano": 2025,
+   "categoria": "Impacto social",
+   "colocacao": 1,
+   "resultado": "vencedor",
+   "fonte": "https://www.rennesenjeux.fr/prix-lizzie-magie/",
+   "rotulo": "Vencedor"
+  }
+ ],
+ "ficha": [
+  [
+   "Ano",
+   "2023"
+  ],
+  [
+   "Designers",
+   "Matt Leacock e Matteo Menapace"
+  ],
+  [
+   "Arte",
+   "Mads Berg e uma equipe internacional de ilustradores"
+  ],
+  [
+   "Editora original",
+   "CMYK"
+  ],
+  [
+   "Outras edições",
+   "Schmidt Spiele (Alemanha, com o nome e-Mission)"
+  ],
+  [
+   "Editora no Brasil",
+   "Asmodee (Galápagos), em pré-venda"
+  ],
+  [
+   "Jogadores",
+   "1 a 4"
+  ],
+  [
+   "Duração anunciada",
+   "60 a 90 minutos"
+  ],
+  [
+   "Idade",
+   "10+"
+  ],
+  [
+   "Nota BGG",
+   "cerca de 7,7 / 10 (conforme sites que replicam o BGG)"
+  ],
+  [
+   "Peso BGG",
+   "cerca de 2,9 / 5"
+  ],
+  [
+   "Modo solo oficial",
+   "Sim"
+  ],
+  [
+   "Componentes",
+   "sem plástico; 158 cartas de Projeto Local, peças de madeira e papelão"
+  ]
+ ],
+ "nota_ficha": "Nota e peso do BGG vêm de sites que replicam o BoardGameGeek (BoardGameOracle e ComparaJogos), que bloqueia acesso automatizado. Duração e idade são do site oficial; algumas lojas brasileiras anunciam até 120 minutos e 12+ ou 14+.",
+ "como_funciona": [
+  "Cada jogador assume uma Potência Mundial: China, Europa, Estados Unidos ou Países Emergentes (Majority World, na edição em inglês). Todos começam produzindo muito carbono, com fichas de Energia Suja e de Emissões no próprio tabuleiro. O objetivo comum é alcançar o Drawdown, o momento em que o grupo retira da atmosfera mais carbono do que produz, antes do fim da sexta rodada.",
+  "Não há ordem de turno: todos jogam ao mesmo tempo. Cada rodada tem cinco etapas. Na Global, o grupo vê a carta de Crise prevista e escolhe, entre duas, uma carta de Projeto Global. Na Local, cada um compra cartas de Projeto Local e as joga no próprio tabuleiro para trocar energia suja por limpa, cortar emissões e ganhar fichas de Resiliência social, ecológica e de infraestrutura.",
+  "A mecânica central é a das pilhas. Cada jogador tem até cinco pilhas de cartas, e só a ação da carta da frente vale. Uma carta nova pode entrar na frente, para usar a ação dela; atrás, para somar seus símbolos à ação da frente e deixá-la mais forte; ou ser descartada para pagar o custo de outra ação.",
+  "Na etapa de Emissões, cada potência precisa atender à própria demanda de energia. O carbono gerado é absorvido pelas peças de Árvores e Oceanos do mapa, e o que sobra vai para o Termômetro; cada linha cheia vira uma Faixa de Temperatura, 0,1 °C a mais. Na etapa de Crise, rola-se o dado de Efeitos Planetários uma vez por faixa e resolvem-se as cartas de Crise, que criam Comunidades em Crise e tiram resiliência. No Crescimento, a demanda de energia de todos sobe.",
+  "O grupo vence se atingir o Drawdown e sobreviver a uma última etapa de Crise. Perde se o Termômetro chegar a oito Faixas de Temperatura, se algum jogador acumular 12 Comunidades em Crise ou se a sexta rodada terminar sem Drawdown. Cartas de Desafio opcionais deixam o jogo mais difícil."
+ ],
+ "passos": [
+  [
+   "REUNIÃO GLOBAL",
+   "Vejam juntos a carta de Crise prevista e escolham, entre duas cartas de Projeto Global, a que fica em jogo nesta rodada."
+  ],
+  [
+   "MONTE SUAS PILHAS",
+   "Todos jogam ao mesmo tempo: cada carta entra na frente de uma pilha, atrás dela para reforçar a ação ou vai ao descarte como pagamento."
+  ],
+  [
+   "TROQUE A ENERGIA",
+   "Atenda à demanda de energia da sua potência, troque Energia Suja por Limpa, corte emissões e junte fichas de Resiliência para proteger suas comunidades."
+  ],
+  [
+   "CONTE O CARBONO",
+   "Árvores e Oceanos absorvem parte do carbono emitido; o excesso vai para o Termômetro, e cada linha cheia aquece o planeta em 0,1 °C."
+  ],
+  [
+   "ENFRENTE A CRISE",
+   "Role o dado de Efeitos Planetários por faixa de temperatura e resolva as cartas de Crise. Atinja o Drawdown e sobreviva à última crise para vencer."
+  ]
+ ],
+ "como_resumo": "Quatro potências cortam carbono juntas, carta a carta, antes que o termômetro estoure.",
+ "perfil": [
+  [
+   "Tema e mensagem",
+   5
+  ],
+  [
+   "Componentes e acabamento",
+   5
+  ],
+  [
+   "Cooperação de verdade",
+   3
+  ],
+  [
+   "Facilidade de ensinar",
+   3
+  ],
+  [
+   "Partida curta",
+   3
+  ],
+  [
+   "Controle sobre a sorte",
+   2
+  ]
+ ],
+ "experiencia": [
+  "A rodada começa com uma reunião de dois minutos: o grupo escolhe um Projeto Global e cada um baixa a cabeça para o próprio tabuleiro. Daí em diante, é quebra-cabeça de cartas. Um exemplo do próprio manual: você tem o Trem-Bala na mão. Coloca atrás da pilha de Incentivos e fabrica um monte de resiliência de infraestrutura, ou joga na frente e usa os símbolos de Rede para zerar as emissões de transporte? Ninguém espera a sua vez, porque não existe vez. Quatro governos decidindo ao mesmo tempo, e o planeta aguardando o resultado.",
+  "Aí vem a parte em que a crítica não se entende. A Board Game Quest avisa que, com tudo aberto na mesa, um jogador pode mandar em todos. Dale Yu, da Opinionated Gamers, diz o contrário: com mãos e tabuleiros separados, ninguém consegue comandar. A Meeple Mountain viu uma terceira coisa, cada um jogando sozinho. Um manda em todos. Ninguém manda em ninguém. Cada um por si. Sem querer, Daybreak virou a simulação mais fiel de diplomacia internacional que já passou pela nossa mesa."
+ ],
+ "funciona": [
+  [
+   "Pilhas que pedem cabeça",
+   "Jogar a carta na frente ou atrás da pilha é o coração do jogo. A Meeple Mountain, que não gostou do resto, põe esse sistema entre os melhores que já viu: no mesmo turno, você decide entre reforçar a ação da frente ou aproveitar os símbolos da carta nova. Dan Thurot, do Space-Biff, compara o motor de cartas ao de Terraforming Mars e Ark Nova."
+  ],
+  [
+   "Todo mundo joga ao mesmo tempo",
+   "Sem ordem de turno, ninguém fica olhando o teto. Dale Yu e Mark Jackson, da Opinionated Gamers, elogiam a tensão de quase toda rodada e a comunicação constante, e a Tabletop Gaming destaca que dá para aconselhar o vizinho sobre como usar as cartas dele. Nas partidas de Dale com jogadores casuais, o jogo durou pouco mais de uma hora."
+  ],
+  [
+   "Um tema com tese",
+   "Para Thurot, é o projeto mais conceitual e lúcido de Leacock: um jogo com tese, tom e mensagem. A Tabletop Gaming, que temia que o tema virasse aula e afogasse a diversão, concluiu o contrário e classificou Daybreak como Must Play, bem-feito e divertido apesar do assunto pesado."
+  ],
+  [
+   "Caixa sem plástico",
+   "Nenhuma peça de plástico, nem na embalagem: o jogo vem lacrado com adesivo, em papel e madeira, com certificação FSC, segundo a Tabletop Gaming e a Opinionated Gamers. Thurot aplaude a CMYK por fazer a caixa combinar com a mensagem. Raro caso de jogo que não contradiz o próprio tema no momento em que você tira o lacre."
+  ],
+  [
+   "QR code com a ciência",
+   "Cada carta tem um código que leva a uma página com a regra e a pesquisa por trás do tema. A Board Game Quest chama isso de nível de suporte que todas as editoras deveriam copiar, e a Meeple Mountain conta que ele resolve dúvidas de regra no meio da partida, sem ninguém folhear o manual."
+  ],
+  [
+   "Dificuldade regulável",
+   "As Cartas de Desafio, guardadas numa caixinha à parte, deixam o jogo mais difícil quando o grupo pega o jeito. A Tabletop Gaming considera a ideia uma forma esperta de evitar frustração, e a Board Game Quest diz que elas acrescentam variedade e dificuldade de verdade às partidas seguintes."
+  ],
+  [
+   "Desigualdade no tabuleiro",
+   "Os Países Emergentes começam em posição mais difícil e têm a demanda de energia que mais cresce: 3 por rodada, contra 1 de Estados Unidos e Europa. A Tabletop Gaming vê nisso um convite para os outros ajudarem, e um estudo acadêmico citado pela Wikipedia aponta Daybreak como o único de cinco jogos analisados que põe desigualdades históricas na regra."
+  ]
+ ],
+ "atencao": [
+  [
+   "Moderada",
+   "O otimismo como regra",
+   "A Polygon publicou a crítica com o título dizendo que o jogo é cegamente otimista. Thurot concorda pela metade: o exagero, para ele, não está na tecnologia, e sim na facilidade com que as potências aceitam as soluções que os autores consideram certas. Quatro governos decidem a matriz energética do mundo em uma hora. O seu grupo leva quarenta minutos para escolher o sabor da pizza."
+  ],
+  [
+   "Moderada",
+   "Cooperativo, cada um no seu canto",
+   "A Meeple Mountain resume: Pandemic é experiência de grupo; Daybreak, cada um montando o próprio motor ao lado dos outros. Thurot sente falta de cartas que dependam do vizinho e acha os Projetos Globais, a parte realmente coletiva, pequenos e fáceis de esquecer; a Tabletop Gaming os achou situacionais demais. O planeta é de todos. O tabuleiro, de cada um."
+  ],
+  [
+   "Moderada",
+   "A carta certa que não vem",
+   "Nas cerca de 15 partidas da Meeple Mountain, as derrotas vieram pela falta das cartas certas num baralho de 158 projetos locais, e a Zatu também reclama do peso da sorte. Você pode ter um plano impecável de transição energética. O baralho tem outro plano, e é ele quem compra as cartas."
+  ],
+  [
+   "Moderada",
+   "O mundo piora em cascata",
+   "Com o termômetro subindo, chegam mais cartas de Crise, mais rolagens de Efeitos Planetários, menos cartas na mão e menos árvores e oceanos para absorver carbono. A Meeple Mountain achou isso frustrante, não desafiador, e a Tabletop Gaming admite que as derrotas em cascata desanimam. É realista. Ninguém prometeu que realismo seria agradável."
+  ],
+  [
+   "Leve",
+   "Um chefe na mesa",
+   "A Board Game Quest alerta que, com toda a informação aberta, um jogador pode ditar a jogada de todos, e sugere esconder as mãos para evitar isso. Nos comentários da Opinionated Gamers, um leitor contou uma partida em que alguém mais falante esticou o jogo em cerca de uma hora. O turno é simultâneo. A vontade de dar palpite também."
+  ],
+  [
+   "Leve",
+   "Manual com prólogo",
+   "Dale Yu notou que as regras propriamente ditas só começam na página 14 do livro, depois da apresentação e da preparação. A Tabletop Gaming reclama que os detalhes de regra das páginas do QR code ficam no rodapé, e a Zatu achou os ícones demais na estreia. É um manual que primeiro convence você da causa e só depois ensina o jogo."
+  ]
+ ],
+ "jogadores": [
+  [
+   "Sozinho",
+   "Há modo solo oficial, com a demanda de energia subindo 2 por rodada. Mark Jackson, da Opinionated Gamers, ainda não tinha vencido nele, e a Meeple Mountain se frustrou jogando quase sempre solo.",
+   2
+  ],
+  [
+   "2 jogadores",
+   "A Board Game Quest recomenda estrear a dois, com China e Estados Unidos, e Lorna, da Opinionated Gamers, gostou da partida a dois pelo jogo simultâneo.",
+   3
+  ],
+  [
+   "3 ou 4 jogadores",
+   "A desigualdade entre as potências aparece inteira, mas a Board Game Quest vê mais risco de um jogador comandar, e a Meeple Mountain sentiu cada um isolado na partida a quatro.",
+   2
+  ]
+ ],
+ "primeira_partida": "Reserve até duas horas para a estreia com explicação: a caixa fala em 60 a 90 minutos, e a Board Game Quest relata partidas de uma a duas horas. Deixe as Cartas de Desafio na caixa, como pede o manual. A Board Game Quest sugere estrear a dois; com mais gente, a Zatu aconselha não pegar os Países Emergentes logo na primeira vez, já que é a potência que começa mais apertada. O que mais confunde é a regra das pilhas: vale jogar a primeira rodada com todos mostrando como empilham e por quê.",
+ "edicao_nacional": "A edição em português é da Asmodee (as lojas a listam pela marca Galápagos) e está em pré-venda: a Ludostation prevê chegada em 15 de novembro de 2026, e a Caixinha Boardgames, até o fim de novembro. Em 30/10/2026, o ComparaJogos listava 10 ofertas de jogo novo, de R$ 268,77 no Pix, na Caixinha Boardgames, a cerca de R$ 600. O preço cheio anunciado pelas lojas fica entre R$ 533 e R$ 549,99. O jogo tem muito texto nas cartas, então a edição nacional faz diferença para a mesa toda.",
+ "preco_ref": {
+  "faixa": "a partir de R$ 268,77",
+  "data": "30/10/2026",
+  "obs": "pré-venda da edição da Asmodee (Galápagos), no Pix, na Caixinha Boardgames, segundo o ComparaJogos; chegada prevista para novembro de 2026"
+ },
+ "versoes": "Até 30/10/2026, não encontramos expansão de Daybreak nas fontes consultadas. A caixa já traz as Cartas de Desafio, para aumentar a dificuldade, e preparações alternativas. A CMYK vende uma segunda edição com todas as erratas incorporadas. Na Alemanha, o jogo saiu pela Schmidt Spiele com o nome e-Mission, e foi com esse nome que levou o Kennerspiel. Há versão digital no Board Game Arena, onde parte da crítica fez suas partidas.",
+ "comparacoes": [
+  [
+   "Pandemic Legacy: Season 1",
+   "pandemic-legacy",
+   "Mesmo autor, outra cooperação: o grupo discute cada movimento num mapa único, e a campanha marca o tabuleiro para sempre. Se você quer Leacock com conversa o tempo todo, comece por lá."
+  ],
+  [
+   "O Senhor dos Anéis: Sina da Sociedade",
+   "fate-of-the-fellowship",
+   "O cooperativo mais recente de Leacock leva o sistema de Pandemic à Terra-média: mais deslocamento e decisão coletiva no mapa, menos motor de cartas pessoal do que em Daybreak."
+  ],
+  [
+   "Terraforming Mars",
+   "terraforming-mars",
+   "Thurot compara o motor de cartas de Daybreak ao de Terraforming Mars. Lá o planeta também muda carta a carta, mas o jogo é competitivo e as partidas passam de duas horas; aqui, todos ganham ou perdem juntos."
+  ]
+ ],
+ "para_quem": [
+  "Gosta de montar combos de cartas, mas prefere ganhar junto com os amigos",
+  "Topa um jogo sobre clima sem cara de aula",
+  "Joga a dois com frequência",
+  "Liga para o que vem dentro da caixa, inclusive a falta de plástico",
+  "Acredita que quatro potências podem se entender em uma hora, ou finge bem"
+ ],
+ "nao_e_para": [
+  "Ama a discussão de Pandemic, com o grupo decidindo cada jogada junto",
+  "Perde a paciência quando o baralho não entrega a carta certa",
+  "Joga para vencer o colega, não o termômetro",
+  "Acha que mesa de jogo não é lugar para política climática",
+  "Tem no grupo alguém que joga a vez de todo mundo"
+ ],
+ "selo": "Recomendado",
+ "melhor_para": "cooperativo",
+ "veredito": "A parte mais fantasiosa de Daybreak não é zerar o carbono do planeta em seis rodadas. É China, Estados Unidos, Europa e Países Emergentes concordando na primeira reunião. Dito isso, o jogo é bom, e o Kennerspiel 2024 tem motivo. O sistema de pilhas dá uma decisão de verdade a cada carta, a caixa sem plástico conversa com o tema e o QR code ensina sem pregar. Pesam a sorte do baralho, as crises em cascata e uma cooperação que, para a Meeple Mountain, vira cada um no seu canto. Para dois a quatro jogadores que preferem montar motor juntos a competir, e por menos de R$ 300 na pré-venda, compre. Só não use a vitória como prova de nada. Daybreak é a única negociação climática em que ninguém sai da mesa.",
+ "tagline": "Salvar o planeta em seis rodadas é o de menos. O milagre é quatro potências concordando.",
+ "citacao": {
+  "texto": "Ele facilita o caminho para a ação climática.",
+  "fonte": "Dan Thurot, Space-Biff! (tradução livre)"
+ },
+ "consulta": "30/10/2026",
+ "fontes": [
+  [
+   "Daybreak – site oficial",
+   "https://daybreakgame.org/",
+   "jogadores, duração, idade, componentes sem plástico"
+  ],
+  [
+   "CMYK – Daybreak",
+   "https://www.cmyk.games/products/daybreak",
+   "editora, segunda edição, preço lá fora"
+  ],
+  [
+   "Regras em português (Ludoteca SP Leituras)",
+   "https://ludoteca.spleituras.org.br/arquivos/jogos-268-regras-daybreak.pdf",
+   "regras, etapas, vitória e derrota"
+  ],
+  [
+   "Wikipedia – Daybreak (board game)",
+   "https://en.wikipedia.org/wiki/Daybreak_(board_game)",
+   "ficha, recepção, estudo acadêmico"
+  ],
+  [
+   "Tabletop Gaming – Daybreak Game Review",
+   "https://www.tabletopgaming.co.uk/Reviews/daybreak-game-review/",
+   "crítica, componentes, Cartas de Desafio"
+  ],
+  [
+   "Board Game Quest – Daybreak Review",
+   "https://www.boardgamequest.com/daybreak-review/",
+   "crítica, contagem de jogadores, duração"
+  ],
+  [
+   "Meeple Mountain – Daybreak",
+   "https://www.meeplemountain.com/reviews/daybreak/",
+   "crítica, interação, sorte, dificuldade"
+  ],
+  [
+   "Space-Biff! – The Ministry for the Here and Now",
+   "https://spacebiff.com/2024/01/04/daybreak/",
+   "crítica, otimismo, componentes"
+  ],
+  [
+   "Opinionated Gamers – Dale Yu: Review of Daybreak",
+   "https://opinionatedgamers.com/2023/12/08/dale-yu-review-of-daybreak/",
+   "regras, duração, opiniões da equipe"
+  ],
+  [
+   "Opinionated Gamers – Daybreak (eMission)",
+   "https://opinionatedgamers.com/2024/07/15/dale-yu-review-of-daybreak-emission/",
+   "edição alemã"
+  ],
+  [
+   "Polygon – Daybreak is blindly optimistic",
+   "https://www.polygon.com/23944065/daybreak-board-game-review",
+   "crítica ao otimismo (título)"
+  ],
+  [
+   "Zatu – Daybreak: my thoughts",
+   "https://zatu.com/blogs/reviews/daybreak-my-thoughts",
+   "crítica, sorte, ícones"
+  ],
+  [
+   "The Dice Tower – Daybreak Review",
+   "https://dicetower.com/review/daybreak-review-original-or-carbon-copy",
+   "notas da crítica"
+  ],
+  [
+   "Wikipedia – Spiel des Jahres",
+   "https://en.wikipedia.org/wiki/Spiel_des_Jahres",
+   "Kennerspiel des Jahres 2024"
+  ],
+  [
+   "Wikipédia – As d'Or",
+   "https://fr.wikipedia.org/wiki/As_d%27Or",
+   "finalista do As d'Or Expert 2025"
+  ],
+  [
+   "Diana Jones Award – The 2025 Award",
+   "https://www.dianajonesaward.org/the-2025-award/",
+   "prêmio de 2025"
+  ],
+  [
+   "Rennes en Jeux – Prix Lizzie Magie",
+   "https://www.rennesenjeux.fr/prix-lizzie-magie/",
+   "prêmio de 2025"
+  ],
+  [
+   "BoardGameOracle – Daybreak",
+   "https://www.boardgameoracle.com/en-CA/boardgame/price/f0OSbQyvFI/daybreak",
+   "nota e peso do BGG, arte"
+  ],
+  [
+   "Board Game Arena – Daybreak",
+   "https://en.boardgamearena.com/gamepanel?game=daybreak",
+   "versão digital"
+  ],
+  [
+   "ComparaJogos – Daybreak",
+   "https://www.comparajogos.com.br/item/daybreak",
+   "preço no Brasil, ofertas"
+  ],
+  [
+   "Caixinha Boardgames – Daybreak",
+   "https://www.caixinhaboardgames.com.br/produtos/daybreak/",
+   "pré-venda, menor preço, previsão de chegada"
+  ],
+  [
+   "Ludostation – Daybreak",
+   "https://ludostation.com.br/produtos/daybreak/",
+   "pré-venda, previsão de chegada"
+  ],
+  [
+   "Facil Shopping – Daybreak",
+   "https://www.facilshopping.com.br/produtos/daybreak-galapagos/",
+   "marca Galápagos, idioma português"
+  ]
+ ],
+ "legenda": "Daybreak é a única cúpula do clima em que todo mundo assina o acordo. 🌍🌡️\n\nKennerspiel des Jahres 2024, do criador de Pandemic: quatro potências cortam carbono juntas antes que o termômetro estoure.\nO sistema de pilhas de cartas é ótimo, a caixa não tem plástico e a pré-venda nacional sai por menos de R$ 300.\nPesam a sorte do baralho e uma cooperação em que cada um fica no seu canto.\nVeredito: RECOMENDADO.\n\nNo seu grupo, quem faria o papel do país que não assina nada? 👇\nResenha completa no link da bio.\n\n#Daybreak #JogosDeTabuleiro #BoardGames #Kennerspiel #MattLeacock #JogoCooperativo #CoopGames #Clima #ClimateAction #Galapagos #EliteBoardgamers #Boardgamer"
+}

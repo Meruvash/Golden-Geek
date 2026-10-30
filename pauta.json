@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-29",
+ "atualizado_em": "2026-10-30",
  "regras": {
   "premios": [
    "Golden Geek",
@@ -177,6 +177,26 @@
    "jogo": "Vantage",
    "url": "https://eliteboardgamers.com.br/vantage/",
    "data": "2026-10-29"
+  },
+  {
+   "jogo": "Daybreak",
+   "url": "https://eliteboardgamers.com.br/daybreak/",
+   "data": "2026-10-30"
+  },
+  {
+   "jogo": "Carnegie",
+   "url": "https://eliteboardgamers.com.br/carnegie/",
+   "data": "2026-10-30"
+  },
+  {
+   "jogo": "Challengers!",
+   "url": "https://eliteboardgamers.com.br/challengers/",
+   "data": "2026-10-30"
+  },
+  {
+   "jogo": "Dorfromantik: The Board Game",
+   "url": "https://eliteboardgamers.com.br/dorfromantik-the-board-game/",
+   "data": "2026-10-30"
   }
  ],
  "jogos": [
@@ -1797,7 +1817,7 @@
      "fonte": "https://en.wikipedia.org/wiki/Spiel_des_Jahres"
     }
    ],
-   "status": "na_fila",
+   "status": "publicado",
    "premios_distintos": 2,
    "prioridade": 33,
    "slug": "daybreak"
@@ -1825,7 +1845,7 @@
      "fonte": "https://eliteboardgamers.com.br/"
     }
    ],
-   "status": "na_fila",
+   "status": "publicado",
    "prioridade": 34,
    "premios_distintos": 2,
    "slug": "carnegie"
@@ -1853,7 +1873,7 @@
      "fonte": "https://en.wikipedia.org/wiki/Spiel_des_Jahres"
     }
    ],
-   "status": "na_fila",
+   "status": "publicado",
    "premios_distintos": 2,
    "prioridade": 35,
    "slug": "challengers"
@@ -1881,7 +1901,7 @@
      "fonte": "https://en.wikipedia.org/wiki/Spiel_des_Jahres"
     }
    ],
-   "status": "na_fila",
+   "status": "publicado",
    "premios_distintos": 2,
    "prioridade": 36,
    "slug": "dorfromantik-the-board-game"
