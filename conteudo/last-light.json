@@ -8,24 +8,72 @@
  "descricao": "Resenha de Luz Final (Last Light), 4X espacial com tabuleiro giratório da Mosaico Jogos: como funciona, o que divide a crítica, preço e para quem é.",
  "titulo_html": "O 4X de uma hora, quando quem ensina é o autor: <span>Luz Final</span>",
  "lede": "Luz Final, o Last Light de Roy Cannaday, é vendido como uma corrida espacial 4X com planetas em 3D e tabuleiro que gira, tudo em cerca de uma hora. A Mosaico Jogos lançou a edição em português. A promessa da hora é verdadeira, desde que o autor esteja na mesa. E dos quatro X, a crítica só encontrou três. Mesmo assim, a gente entende por que tanta gente quer jogar de novo.",
- "tags": ["2–4 jogadores", "60–75 min", "14+", "4X espacial", "Ações simultâneas"],
+ "tags": [
+  "2–4 jogadores",
+  "60–75 min",
+  "14+",
+  "4X espacial",
+  "Ações simultâneas"
+ ],
  "alt": "Tabuleiro giratório de Luz Final com planetas em 3D e naves sobre os anéis",
  "premiacoes": [],
  "ficha": [
-  ["Ano", "2023"],
-  ["Designer", "Roy Cannaday"],
-  ["Arte", "Christian Strain, Clark Miller e Jose David Lanza Cebrian, segundo o analog.games"],
-  ["Editora original", "Grey Fox Games"],
-  ["Editora no Brasil", "Mosaico Jogos"],
-  ["Jogadores", "2 a 4 (até 8 com a expansão Infinity)"],
-  ["Duração anunciada", "60 minutos ou mais (Grey Fox); 45 a 75 minutos (ComparaJogos)"],
-  ["Duração relatada", "de 1 hora a 2 horas e meia com quatro jogadores, segundo a Shelfside; o grupo da Meeple Mountain não terminou nenhuma partida em menos de 1 hora"],
-  ["Idade", "14+"],
-  ["Nota ComparaJogos", "7,3 (mais de 344 avaliações)"],
-  ["Complexidade", "2,8 / 5, segundo o ComparaJogos"],
-  ["Nota BGG", "não confirmado nas fontes consultadas (uma loja que replica o BGG mostra 7,5)"],
-  ["Melhor com", "4 jogadores, segundo a Shelfside"],
-  ["Financiamento", "cerca de US$ 1 milhão em duas campanhas desde o fim de 2022, segundo a BoardGameWire"]
+  [
+   "Ano",
+   "2023"
+  ],
+  [
+   "Designer",
+   "Roy Cannaday"
+  ],
+  [
+   "Arte",
+   "Christian Strain, Clark Miller e Jose David Lanza Cebrian, segundo o analog.games"
+  ],
+  [
+   "Editora original",
+   "Grey Fox Games"
+  ],
+  [
+   "Editora no Brasil",
+   "Mosaico Jogos"
+  ],
+  [
+   "Jogadores",
+   "2 a 4 (até 8 com a expansão Infinity)"
+  ],
+  [
+   "Duração anunciada",
+   "60 minutos ou mais (Grey Fox); 45 a 75 minutos (ComparaJogos)"
+  ],
+  [
+   "Duração relatada",
+   "de 1 hora a 2 horas e meia com quatro jogadores, segundo a Shelfside; o grupo da Meeple Mountain não terminou nenhuma partida em menos de 1 hora"
+  ],
+  [
+   "Idade",
+   "14+"
+  ],
+  [
+   "Nota ComparaJogos",
+   "7,3 (mais de 344 avaliações)"
+  ],
+  [
+   "Complexidade",
+   "2,8 / 5, segundo o ComparaJogos"
+  ],
+  [
+   "Nota BGG",
+   "não confirmado nas fontes consultadas (uma loja que replica o BGG mostra 7,5)"
+  ],
+  [
+   "Melhor com",
+   "4 jogadores, segundo a Shelfside"
+  ],
+  [
+   "Financiamento",
+   "cerca de US$ 1 milhão em duas campanhas desde o fim de 2022, segundo a BoardGameWire"
+  ]
  ],
  "nota_ficha": "Ludopedia e BoardGameGeek bloqueiam acesso automatizado: nota e complexidade vêm do ComparaJogos, e a nota do BGG ficou sem confirmação direta. Luz Final não venceu nenhum dos prêmios que pautam o site; é uma exceção editorial.",
  "como_funciona": [
@@ -36,50 +84,167 @@
   "Não dá para eliminar ninguém: a nave-colônia de cada jogador não pode ser destruída. O controle do tempo está na carta Renovar: segurá-la permite repetir ações antes de devolver a mão, mas atrasa o giro do tabuleiro para todos."
  ],
  "passos": [
-  ["ESCOLHA EM SEGREDO", "Todos escolhem uma carta de ação ao mesmo tempo: pesquisar, minerar, construir, comerciar, comandar ou renovar."],
-  ["REVELE JUNTO", "As cartas são reveladas e as ações acontecem em paralelo. Ninguém espera a vez de ninguém."],
-  ["EXPANDA E ATAQUE", "Construa naves e extratores, colete recursos e use o Comandar para mover e atirar em quem estiver ao alcance."],
-  ["GIRE O UNIVERSO", "Quando todos já jogaram Renovar, os dois anéis giram e levam planetas e naves; quem está no centro ganha Luz."],
-  ["CHEGUE A 20 DE LUZ", "O primeiro a juntar 20 de Luz dispara o fim, e vence quem tiver mais Luz na mesa."]
+  [
+   "ESCOLHA EM SEGREDO",
+   "Todos escolhem uma carta de ação ao mesmo tempo: pesquisar, minerar, construir, comerciar, comandar ou renovar."
+  ],
+  [
+   "REVELE JUNTO",
+   "As cartas são reveladas e as ações acontecem em paralelo. Ninguém espera a vez de ninguém."
+  ],
+  [
+   "EXPANDA E ATAQUE",
+   "Construa naves e extratores, colete recursos e use o Comandar para mover e atirar em quem estiver ao alcance."
+  ],
+  [
+   "GIRE O UNIVERSO",
+   "Quando todos já jogaram Renovar, os dois anéis giram e levam planetas e naves; quem está no centro ganha Luz."
+  ],
+  [
+   "CHEGUE A 20 DE LUZ",
+   "O primeiro a juntar 20 de Luz dispara o fim, e vence quem tiver mais Luz na mesa."
+  ]
  ],
  "como_resumo": "Escolha ações em segredo, revele junto com todos e corra para juntar 20 de Luz enquanto o tabuleiro gira.",
- "perfil": [["Ritmo da partida", 5], ["Componentes e visual", 4], ["Interação entre jogadores", 4], ["Facilidade de ensinar", 3], ["Equilíbrio das facções", 2], ["Partida curta", 3]],
+ "perfil": [
+  [
+   "Ritmo da partida",
+   5
+  ],
+  [
+   "Componentes e visual",
+   4
+  ],
+  [
+   "Interação entre jogadores",
+   4
+  ],
+  [
+   "Facilidade de ensinar",
+   3
+  ],
+  [
+   "Equilíbrio das facções",
+   2
+  ],
+  [
+   "Partida curta",
+   3
+  ]
+ ],
  "experiencia": [
   "Todo mundo vira a carta ao mesmo tempo. É o melhor momento do jogo. Você escolheu Minerar, o vizinho escolheu Comandar, e o seu cargueiro, que estava tão tranquilo, acabou de virar alvo. Não houve espera, não houve turno alheio, não houve tempo de pegar o celular. A Talking Shelf Space chama isso de adivinhação dupla constante, e é exatamente isso: você não joga contra o tabuleiro, joga contra o que acha que o outro acha que você vai fazer.",
   "Aí o anel gira. O planeta que você minerava a rodada inteira sai andando, levando o seu extrator junto, e a nave do adversário que estava longe agora está do lado. A Zatu resume: não existe se esconder no canto. É verdade. Num 4X, quem se esconde no canto geralmente vence; aqui, o canto vem até você.",
   "A hora prometida é outra conversa. A Shelfside teve partidas de uma hora, sim, quase sempre quando alguém disparou na frente sem ninguém conseguir frear. As boas, com disputa até o fim, chegaram a duas horas e meia. A única partida de uma hora cravada que a Meeple Mountain registrou foi com oito jogadores e o próprio Roy Cannaday na mesa. O que é ótimo. Para quem tem o Roy em casa."
  ],
- "citacao": {"texto": "Você nunca consegue se esconder no canto.", "fonte": "Zatu (tradução livre)"},
+ "citacao": {
+  "texto": "Você nunca consegue se esconder no canto.",
+  "fonte": "Zatu (tradução livre)"
+ },
  "funciona": [
-  ["Ninguém espera a vez", "As ações são escolhidas em segredo e reveladas juntas, e a maioria acontece ao mesmo tempo. A Zatu aponta isso como o motivo de o jogo andar tão rápido para o gênero, e a Shelfside concorda que, mesmo com quatro jogadores, a escolha continua veloz. Num gênero famoso por esperas longas, é uma vitória de verdade."],
-  ["O tabuleiro que gira", "O giro dos anéis no fim de cada rodada leva planetas, naves e extratores, e muda quem alcança quem. A Talking Shelf Space chama o tabuleiro de grande atração do jogo e diz que ele torna impossível se entrincheirar num canto, o vício clássico dos jogos de conquista."],
-  ["A carta Renovar é o coração", "Segurar a Renovar deixa você repetir ações antes de devolver a mão, mas atrasa o giro de todo mundo. A Meeple Mountain diz que é aí que a estratégia brilha: a primeira impressão de jogo simples de destruir naves dá lugar a um quebra-cabeça de tempo."],
-  ["Visual que para a mesa", "Os planetas em 3D sobre um tabuleiro com brilho ultravioleta fazem as pessoas pararem para olhar. A Meeple Mountain admite que, se fosse papelão plano com planetas desenhados, teria passado reto, e a Shelfside fala em planetas coloridos de bala de goma."],
-  ["Fácil de explicar", "Cada carta de ação se lê da esquerda para a direita, e a Shelfside diz que isso facilita ensinar. A Zatu recomenda o jogo até para quem não costuma gostar do gênero, com nota de 90%."],
-  ["Interação sem pausa", "Quem não joga Comandar na mesma hora que o atacante leva um tiro sem responder. A Talking Shelf Space elogia justamente isso, as naves não se defendem sozinhas, e o resultado é uma mesa atenta o tempo todo."]
+  [
+   "Ninguém espera a vez",
+   "As ações são escolhidas em segredo e reveladas juntas, e a maioria acontece ao mesmo tempo. A Zatu aponta isso como o motivo de o jogo andar tão rápido para o gênero, e a Shelfside concorda que, mesmo com quatro jogadores, a escolha continua veloz. Num gênero famoso por esperas longas, é uma vitória de verdade."
+  ],
+  [
+   "O tabuleiro que gira",
+   "O giro dos anéis no fim de cada rodada leva planetas, naves e extratores, e muda quem alcança quem. A Talking Shelf Space chama o tabuleiro de grande atração do jogo e diz que ele torna impossível se entrincheirar num canto, o vício clássico dos jogos de conquista."
+  ],
+  [
+   "A carta Renovar é o coração",
+   "Segurar a Renovar deixa você repetir ações antes de devolver a mão, mas atrasa o giro de todo mundo. A Meeple Mountain diz que é aí que a estratégia brilha: a primeira impressão de jogo simples de destruir naves dá lugar a um quebra-cabeça de tempo."
+  ],
+  [
+   "Visual que para a mesa",
+   "Os planetas em 3D sobre um tabuleiro com brilho ultravioleta fazem as pessoas pararem para olhar. A Meeple Mountain admite que, se fosse papelão plano com planetas desenhados, teria passado reto, e a Shelfside fala em planetas coloridos de bala de goma."
+  ],
+  [
+   "Fácil de explicar",
+   "Cada carta de ação se lê da esquerda para a direita, e a Shelfside diz que isso facilita ensinar. A Zatu recomenda o jogo até para quem não costuma gostar do gênero, com nota de 90%."
+  ],
+  [
+   "Interação sem pausa",
+   "Quem não joga Comandar na mesma hora que o atacante leva um tiro sem responder. A Talking Shelf Space elogia justamente isso, as naves não se defendem sozinhas, e o resultado é uma mesa atenta o tempo todo."
+  ]
  ],
  "atencao": [
-  ["Moderado", "Uma hora, com asterisco", "A caixa fala em uma hora. A Shelfside relata de uma hora a duas horas e meia com quatro jogadores, e as partidas curtas foram justamente as que alguém disparou na frente. O grupo da Meeple Mountain não terminou nenhuma em menos de uma hora. A hora existe; a gente só não garante que ela venha na sua mesa."],
-  ["Moderado", "4X, com um X a menos", "4X quer dizer explorar, expandir, explorar recursos e exterminar. A Meeple Mountain lembra que a nave-colônia de ninguém pode ser destruída, e a Shelfside diz que o jogo não é um 4X de verdade, como anunciado. Dá para pontuar pesquisando sem nunca vencer uma briga. É ótimo para quem odeia ser eliminado. É estranho para quem comprou guerra espacial."],
-  ["Moderado", "Facções e tecnologias desiguais", "A Shelfside considera algumas tecnologias e fichas de exploração muito desequilibradas, as tecnologias de movimento essenciais demais e algumas facções fracas, coisa de última hora no projeto. A Talking Shelf Space concorda que algumas cartas são bem melhores que outras e acha que a variedade cansa rápido."],
-  ["Moderado", "O manual não ajuda", "A Meeple Mountain reclama da falta de cartas de ajuda e diz que o grupo passou tempo demais no manual na primeira partida. A Shelfside aponta zero exemplos de ataque num jogo de combate espacial, e a Talking Shelf Space diz que regras importantes ficam escondidas em notas laterais."],
-  ["Leve", "Produção feita para foto", "A Zatu se preocupa com o desgaste do tabuleiro e da haste central. A Shelfside conta que as peças dos planetas soltam na montagem e que as cartas gastam rápido, e a Talking Shelf Space resume a edição de luxo como feita para imagem de financiamento coletivo. Ou seja: bonito na campanha, frágil na terça-feira."],
-  ["Moderado", "Preço de jogo grande", "Em 30/10/2026, o menor preço em loja brasileira era R$ 745,65 no Pix. A Shelfside baixou a própria nota principalmente pelo preço da versão de luxo lá fora. Por um jogo de uma hora, com ou sem asterisco, é dinheiro de jogo de três."]
+  [
+   "Moderado",
+   "Uma hora, com asterisco",
+   "A caixa fala em uma hora. A Shelfside relata de uma hora a duas horas e meia com quatro jogadores, e as partidas curtas foram justamente as que alguém disparou na frente. O grupo da Meeple Mountain não terminou nenhuma em menos de uma hora. A hora existe; a gente só não garante que ela venha na sua mesa."
+  ],
+  [
+   "Moderado",
+   "4X, com um X a menos",
+   "4X quer dizer explorar, expandir, explorar recursos e exterminar. A Meeple Mountain lembra que a nave-colônia de ninguém pode ser destruída, e a Shelfside diz que o jogo não é um 4X de verdade, como anunciado. Dá para pontuar pesquisando sem nunca vencer uma briga. É ótimo para quem odeia ser eliminado. É estranho para quem comprou guerra espacial."
+  ],
+  [
+   "Moderado",
+   "Facções e tecnologias desiguais",
+   "A Shelfside considera algumas tecnologias e fichas de exploração muito desequilibradas, as tecnologias de movimento essenciais demais e algumas facções fracas, coisa de última hora no projeto. A Talking Shelf Space concorda que algumas cartas são bem melhores que outras e acha que a variedade cansa rápido."
+  ],
+  [
+   "Moderado",
+   "O manual não ajuda",
+   "A Meeple Mountain reclama da falta de cartas de ajuda e diz que o grupo passou tempo demais no manual na primeira partida. A Shelfside aponta zero exemplos de ataque num jogo de combate espacial, e a Talking Shelf Space diz que regras importantes ficam escondidas em notas laterais."
+  ],
+  [
+   "Leve",
+   "Produção feita para foto",
+   "A Zatu se preocupa com o desgaste do tabuleiro e da haste central. A Shelfside conta que as peças dos planetas soltam na montagem e que as cartas gastam rápido, e a Talking Shelf Space resume a edição de luxo como feita para imagem de financiamento coletivo. Ou seja: bonito na campanha, frágil na terça-feira."
+  ],
+  [
+   "Moderado",
+   "Preço de jogo grande",
+   "Em 30/10/2026, o menor preço em loja brasileira era R$ 745,65 no Pix. A Shelfside baixou a própria nota principalmente pelo preço da versão de luxo lá fora. Por um jogo de uma hora, com ou sem asterisco, é dinheiro de jogo de três."
+  ]
  ],
  "jogadores": [
-  ["2 jogadores", "Usa uma facção neutra controlada por quem está atrás no placar. A Talking Shelf Space diz que assim você não tem a experiência completa.", 1],
-  ["3 jogadores", "Funciona, mas a Shelfside prefere mais gente na mesa para segurar quem dispara na frente.", 2],
-  ["4 jogadores", "A melhor contagem para a Shelfside: mais jogadores freiam o líder, e o anel fica lotado.", 3],
-  ["5 a 8 jogadores", "Só com a expansão Infinity. A Meeple Mountain relata uma partida de oito em uma hora, com o autor na mesa.", 2]
+  [
+   "2 jogadores",
+   "Usa uma facção neutra controlada por quem está atrás no placar. A Talking Shelf Space diz que assim você não tem a experiência completa.",
+   1
+  ],
+  [
+   "3 jogadores",
+   "Funciona, mas a Shelfside prefere mais gente na mesa para segurar quem dispara na frente.",
+   2
+  ],
+  [
+   "4 jogadores",
+   "A melhor contagem para a Shelfside: mais jogadores freiam o líder, e o anel fica lotado.",
+   3
+  ],
+  [
+   "5 a 8 jogadores",
+   "Só com a expansão Infinity. A Meeple Mountain relata uma partida de oito em uma hora, com o autor na mesa.",
+   2
+  ]
  ],
  "primeira_partida": "Reserve duas horas para a primeira partida e leia antes, com calma, as regras de ataque e da carta Renovar: é ali que o manual esconde o que importa, segundo a Talking Shelf Space. Como faltam cartas de ajuda, imprima ou anote um resumo das seis ações para cada jogador. Jogue com quatro, se puder: com menos gente, um líder disparado acaba com a graça mais cedo.",
- "edicao_nacional": "A edição em português é da Mosaico Jogos, com componentes em português; o ComparaJogos marca alta dependência de idioma, porque as cartas têm muito texto. Em 30/10/2026, o ComparaJogos listava 17 ofertas de jogo novo, a menor por R$ 745,65 no Pix. As lojas vendem a edição Deluxe, com miniaturas, e a Deluxe Completa, que inclui a expansão Infinity e passa de R$ 900.",
- "preco_ref": {"faixa": "a partir de R$ 745,65", "data": "30/10/2026", "obs": "menor preço no Pix em lojas brasileiras, segundo o ComparaJogos; a Deluxe Completa, com a expansão, passa de R$ 900"},
- "versoes": "A expansão Infinity traz novas raças alienígenas e componentes para até oito jogadores. Lá fora há uma versão de varejo, com fichas de papelão no lugar das miniaturas de plástico da edição Deluxe, além de pacotes de facções e planetas de resina vendidos à parte. O modo solo foi cortado do projeto, segundo a Talking Shelf Space.",
+ "edicao_nacional": "A edição em português é da Mosaico Jogos, em duas caixas: a Edição Deluxe, só com o jogo base, e a Edição Deluxe Completa, com a expansão Infinity. O ComparaJogos marca alta dependência de idioma, porque as cartas têm muito texto. Em 30/10/2026, a Deluxe saía a partir de R$ 753,29 no Pix, e a Completa, a partir de R$ 899,81. O quadro logo abaixo mostra o que vem em cada caixa.",
+ "preco_ref": {
+  "faixa": "a partir de R$ 753,29 (Deluxe) e R$ 899,81 (Completa)",
+  "data": "30/10/2026",
+  "obs": "menores preços no Pix de jogo novo em lojas brasileiras, segundo o ComparaJogos e as lojas"
+ },
+ "versoes": "A expansão Infinity traz 10 novas facções e componentes para até oito jogadores; no Brasil, ela só vem dentro da Edição Deluxe Completa. Lá fora há uma versão de varejo, com fichas de papelão no lugar das peças de plástico, além de facções e planetas de resina vendidos à parte. O modo solo foi cortado do projeto, segundo a Talking Shelf Space.",
  "comparacoes": [
-  ["Scythe", "scythe", "Também tem disputa de território e máquina de recursos, mas é um euro longo e calculado, em que o combate quase não acontece. Luz Final é o oposto: briga o tempo todo e acaba bem antes."],
-  ["Twilight Imperium", null, "A Shelfside vê em Luz Final um gostinho de Twilight Imperium numa caixa curta: frotas, melhorias e tecnologia. Twilight entrega a ópera espacial inteira e cobra uma tarde por isso."],
-  ["Root", "root", "Outro jogo de facções desiguais e briga direta num mapa compartilhado. Root aprofunda a assimetria; Luz Final troca profundidade por velocidade e um tabuleiro que se mexe."]
+  [
+   "Scythe",
+   "scythe",
+   "Também tem disputa de território e máquina de recursos, mas é um euro longo e calculado, em que o combate quase não acontece. Luz Final é o oposto: briga o tempo todo e acaba bem antes."
+  ],
+  [
+   "Twilight Imperium",
+   null,
+   "A Shelfside vê em Luz Final um gostinho de Twilight Imperium numa caixa curta: frotas, melhorias e tecnologia. Twilight entrega a ópera espacial inteira e cobra uma tarde por isso."
+  ],
+  [
+   "Root",
+   "root",
+   "Outro jogo de facções desiguais e briga direta num mapa compartilhado. Root aprofunda a assimetria; Luz Final troca profundidade por velocidade e um tabuleiro que se mexe."
+  ]
  ],
  "para_quem": [
   "Quer briga espacial sem passar a noite inteira na mesa",
@@ -102,16 +267,125 @@
  "tagline": "O 4X de uma hora existe. Ele só pede o autor junto e um X a menos.",
  "consulta": "30/10/2026",
  "fontes": [
-  ["Grey Fox Games – Last Light (loja oficial)", "https://greyfoxgames.com/products/last-light-base-game-deluxe-ks", "fotos oficiais, edição Deluxe, jogadores, duração, idade"],
-  ["ComparaJogos – Luz Final", "https://www.comparajogos.com.br/item/luz-final", "editora no Brasil, preço, nota, complexidade, dependência de idioma"],
-  ["Bravo Jogos – Luz Final (Jogo Base)", "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-luz-final-p", "componentes, idioma, facções, objetivo de 20 de Luz"],
-  ["Meeple Mountain – Last Light Review", "https://www.meeplemountain.com/reviews/last-light/", "regras, cartas de ação, giro dos anéis, duração, crítica"],
-  ["Zatu – Last Light Board Game Review", "https://zatu.com/blogs/reviews/last-light-board-game-review", "crítica, ritmo, tabuleiro giratório, produção, nota de 90%"],
-  ["Shelfside – Last Light Review", "https://www.shelfside.co/reviews-2023/lastlight-review", "crítica, equilíbrio, duração com quatro, melhor contagem, preço"],
-  ["Talking Shelf Space – First Impressions of Last Light", "https://talkingshelfspace.com/review-last-light/", "crítica, giro do tabuleiro, contagem de jogadores, modo solo cortado"],
-  ["The Dice Tower – Last Light Review", "https://dicetower.com/review/last-light-review-cannaday-keeps-downtime-away", "notas de Tom Vasel, Chris Yi e Joey Evans, selo de excelência"],
-  ["BoardGameWire – Roy Cannaday deixa a Dice Tower", "https://boardgamewire.com/index.php/2024/09/11/dice-tower-editor-roy-cannaday-leaves-after-success-of-last-light-design-opens-up-new-opportunities/", "financiamento, expansão Infinity, segunda tiragem"],
-  ["analog.games – Last Light (Luz Final)", "https://analog.games/gameItem/show/419cd83f96a059f90196afb3776b7fff/luz-final?lang=PT", "nome no Brasil, artistas, editoras"]
+  [
+   "Grey Fox Games – Last Light (loja oficial)",
+   "https://greyfoxgames.com/products/last-light-base-game-deluxe-ks",
+   "fotos oficiais, edição Deluxe, jogadores, duração, idade"
+  ],
+  [
+   "ComparaJogos – Luz Final",
+   "https://www.comparajogos.com.br/item/luz-final",
+   "editora no Brasil, preço, nota, complexidade, dependência de idioma"
+  ],
+  [
+   "Bravo Jogos – Luz Final (Jogo Base)",
+   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-luz-final-p",
+   "componentes, idioma, facções, objetivo de 20 de Luz"
+  ],
+  [
+   "Meeple Mountain – Last Light Review",
+   "https://www.meeplemountain.com/reviews/last-light/",
+   "regras, cartas de ação, giro dos anéis, duração, crítica"
+  ],
+  [
+   "Zatu – Last Light Board Game Review",
+   "https://zatu.com/blogs/reviews/last-light-board-game-review",
+   "crítica, ritmo, tabuleiro giratório, produção, nota de 90%"
+  ],
+  [
+   "Shelfside – Last Light Review",
+   "https://www.shelfside.co/reviews-2023/lastlight-review",
+   "crítica, equilíbrio, duração com quatro, melhor contagem, preço"
+  ],
+  [
+   "Talking Shelf Space – First Impressions of Last Light",
+   "https://talkingshelfspace.com/review-last-light/",
+   "crítica, giro do tabuleiro, contagem de jogadores, modo solo cortado"
+  ],
+  [
+   "The Dice Tower – Last Light Review",
+   "https://dicetower.com/review/last-light-review-cannaday-keeps-downtime-away",
+   "notas de Tom Vasel, Chris Yi e Joey Evans, selo de excelência"
+  ],
+  [
+   "BoardGameWire – Roy Cannaday deixa a Dice Tower",
+   "https://boardgamewire.com/index.php/2024/09/11/dice-tower-editor-roy-cannaday-leaves-after-success-of-last-light-design-opens-up-new-opportunities/",
+   "financiamento, expansão Infinity, segunda tiragem"
+  ],
+  [
+   "analog.games – Last Light (Luz Final)",
+   "https://analog.games/gameItem/show/419cd83f96a059f90196afb3776b7fff/luz-final?lang=PT",
+   "nome no Brasil, artistas, editoras"
+  ],
+  [
+   "Mosaico Jogos – Luz Final Deluxe ALL IN (loja oficial)",
+   "https://www.mosaicoloja.com.br/pre-venda/mosaico-jogos-luz-final-deluxe-all-in",
+   "conteúdo da Edição Deluxe Completa, jogadores, preço"
+  ],
+  [
+   "Alquimistas dos Jogos – Luz Final Edição Deluxe Completa",
+   "https://www.alquimistasdosjogos.com.br/jogos/luz-final-edicao-deluxe-completa",
+   "lista de componentes do base e da Infinity, promos, preço"
+  ],
+  [
+   "Cangaia Jogos – Luz Final Edição Deluxe + Infinity",
+   "https://www.cangaiajogos.com.br/luz-final-edicao-deluxe-infinty",
+   "lista de componentes, sleeves não inclusos, preço"
+  ],
+  [
+   "PlayEasy – Luz Final Edição Deluxe",
+   "https://www.playeasy.com.br/luz-final-edicao-deluxe.html",
+   "edição só com o jogo base, preço"
+  ],
+  [
+   "PlayEasy – Luz Final Edição Deluxe Completa",
+   "https://www.playeasy.com.br/luz-final-edicao-deluxe-completa.html",
+   "base com expansão, 10 novas facções, até 8 jogadores, preço"
+  ],
+  [
+   "Taverna Real – Luz Final Deluxe Completa",
+   "https://www.tavernareal.com/tabuleiro/luz-final-edicao-deluxe",
+   "promos e planeta dourado, sleeves não inclusos, preço"
+  ]
  ],
- "legenda": "O 4X de uma hora existe. Ele só pede o autor na mesa e um X a menos. 🪐\n\nLuz Final (Last Light), de Roy Cannaday, chegou em português pela Mosaico Jogos.\nTodo mundo revela a ação ao mesmo tempo, o tabuleiro gira e leva os planetas junto, e ninguém consegue se esconder no canto.\nO manual ajuda pouco e algumas facções parecem rascunho. Veredito: RECOMENDADO COM RESSALVA.\n\nVocê prefere uma guerra espacial de uma hora ou uma de uma tarde inteira?\n\nResenha completa no link da bio.\n\n#LuzFinal #LastLight #MosaicoJogos #GreyFoxGames #JogosDeTabuleiro #BoardGames #Boardgamer #4X #SpaceGames #JogoDeEstrategia #EliteBoardgamers"
+ "legenda": "O 4X de uma hora existe. Ele só pede o autor na mesa e um X a menos. 🪐\n\nLuz Final (Last Light), de Roy Cannaday, chegou em português pela Mosaico Jogos.\nTodo mundo revela a ação ao mesmo tempo, o tabuleiro gira e leva os planetas junto, e ninguém consegue se esconder no canto.\nO manual ajuda pouco e algumas facções parecem rascunho. Veredito: RECOMENDADO COM RESSALVA.\n\nVocê prefere uma guerra espacial de uma hora ou uma de uma tarde inteira?\n\nResenha completa no link da bio.\n\n#LuzFinal #LastLight #MosaicoJogos #GreyFoxGames #JogosDeTabuleiro #BoardGames #Boardgamer #4X #SpaceGames #JogoDeEstrategia #EliteBoardgamers",
+ "caixas_br": {
+  "titulo": "Qual caixa de Luz Final comprar",
+  "resumo": "No Brasil, a Mosaico Jogos vende duas caixas de Luz Final: a Edição Deluxe, só com o jogo base, para 2 a 4 jogadores, e a Edição Deluxe Completa, com o jogo base e a expansão Infinity na mesma caixa, para 2 a 8 jogadores e com 10 facções a mais. Em 30/10/2026, a Completa custava a partir de R$ 146 a mais no Pix.",
+  "itens": [
+   {
+    "nome": "Edição Deluxe",
+    "nomes_loja": "\"Edição Deluxe\", \"Edição Deluxe Base\" ou \"Jogo Base\"",
+    "jogadores": "2 a 4 jogadores",
+    "preco": "R$ 753,29 a R$ 790,50 no Pix (30/10/2026)",
+    "inclui": [
+     "1 tabuleiro giratório de dois anéis e a anã branca no centro",
+     "15 cartas de facção",
+     "24 cartas de ação, 83 de tecnologia e 16 de conquista",
+     "40 naves pequenas, 32 extratores e 15 planetas 3D",
+     "7 asteroides, 6 dados próprios, 60 recursos comuns e 30 cristais",
+     "marcadores de dano, de exploração e de atenção, e 4 cartas de referência"
+    ],
+    "obs": "Não traz a expansão: o jogo não passa de 4 jogadores."
+   },
+   {
+    "nome": "Edição Deluxe Completa",
+    "nomes_loja": "\"Deluxe Completa\", \"Deluxe All In\" ou \"Deluxe + Infinity\"",
+    "jogadores": "2 a 8 jogadores",
+    "preco": "R$ 899,81 a R$ 1.161,38 no Pix (30/10/2026); R$ 1.250 na loja da Mosaico",
+    "inclui": [
+     "tudo o que vem na Edição Deluxe",
+     "a expansão Infinity dentro da mesma caixa",
+     "10 facções a mais (25 no total)",
+     "4 tabuleiros laterais para jogar de 5 a 8",
+     "mais 40 naves, 32 extratores e 12 planetas",
+     "mais 24 cartas de ação, 16 de conquista, 6 dados, 60 recursos e 60 cristais",
+     "fichas de dano em acrílico e cápsulas de recurso, segundo a Mosaico"
+    ],
+    "obs": "A Alquimistas dos Jogos e a Taverna Real dizem que a caixa também traz promos e um planeta dourado; a página da Mosaico não cita esses itens. Confirme com a loja antes de pagar a diferença por eles."
+   }
+  ],
+  "conselho": "Joga sempre com até quatro pessoas? A Edição Deluxe basta, e a gente acha que é a compra certa. A Completa só se paga se o grupo passa de quatro com frequência, porque a expansão é o único jeito de chegar a oito. E não achamos a Infinity avulsa à venda no Brasil: comprar o base agora e a expansão depois pode não ser uma opção.",
+  "nota": "Divergência nas fontes: a página da Mosaico fala em 128 miniaturas de naves, 64 de extratores e 24 planetas na Edição Deluxe Completa, enquanto as listas das lojas somam 80 naves, 64 extratores e 27 planetas. Nenhuma loja consultada informa o material das naves da Edição Deluxe. Sleeves não vêm em nenhuma das duas caixas. A versão de varejo, com fichas de papelão no lugar das peças de plástico, não aparece à venda no Brasil, e um anúncio de R$ 745,65 no Pix (Meca dos Jogos) não deixa claro qual das duas caixas é."
+ }
 }

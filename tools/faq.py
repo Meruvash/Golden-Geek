@@ -48,6 +48,8 @@ def resenha(c, nome):
         p.append((f"Para quantos jogadores é {nome} e quanto tempo dura?", r))
     if c.get("edicao_nacional"):
         p.append((f"{nome} tem edição em português?", frases(c["edicao_nacional"], 1)))
+    if (c.get("caixas_br") or {}).get("resumo"):
+        p.append((f"Qual a diferença entre as versões de {nome}?", c["caixas_br"]["resumo"]))
     preco = c.get("preco_ref") or {}
     if preco.get("faixa") and preco.get("data"):
         p.append((f"Quanto custa {nome} no Brasil?",

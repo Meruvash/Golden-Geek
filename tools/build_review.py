@@ -232,6 +232,33 @@ def foto_html(c, f, classe="foto", lazy=True):
             f'<figcaption>{e(f["credito"])}</figcaption></figure>')
 
 
+CSS_CAIXAS = """.caixas .cx-lista{display:grid;gap:14px;margin:14px 0;padding:0;list-style:none}
+.caixas .cx{border:1px solid var(--paper-line,#d9dde3);border-radius:10px;padding:14px 16px;background:#fff}
+.caixas .cx h3{margin:0 0 2px;font-size:1.05rem}.caixas .cx-lojas{margin:0 0 8px;font-size:.85rem;color:var(--paper-muted,#5a6270)}
+.caixas .cx-dados{display:flex;flex-wrap:wrap;gap:6px 14px;margin:0 0 8px;font-weight:700}
+.caixas .cx ul{margin:0 0 8px;padding-left:20px;list-style:disc}.caixas .cx li{margin:2px 0}.caixas .cx-obs{margin:0;font-size:.9rem}
+.caixas .cx-nota{font-size:.88rem;color:var(--paper-muted,#5a6270)}
+@media (min-width:860px){.caixas .cx-lista{grid-template-columns:1fr 1fr}}"""
+
+
+def caixas_html(c):
+    """Bloco "Qual caixa comprar": as edições à venda no Brasil, o que vem em cada uma e o preço (campo caixas_br)."""
+    cx = c.get("caixas_br")
+    if not cx:
+        return ""
+    itens = "".join(
+        f'<li class="cx"><h3>{e(i["nome"])}</h3>'
+        + (f'<p class="cx-lojas">Nas lojas: {e(i["nomes_loja"])}</p>' if i.get("nomes_loja") else "")
+        + f'<p class="cx-dados"><span>{e(i["jogadores"])}</span><span>{e(i["preco"])}</span></p>'
+        + f'<ul>{"".join(f"<li>{e(x)}</li>" for x in i["inclui"])}</ul>'
+        + (f'<p class="cx-obs">{e(i["obs"])}</p>' if i.get("obs") else "") + "</li>"
+        for i in cx["itens"])
+    return (f'\n  <section class="bloco claro caixas" id="caixas"><h2>{e(cx.get("titulo", "Qual caixa comprar"))}</h2>'
+            f'<p>{e(cx["resumo"])}</p><ul class="cx-lista">{itens}</ul>'
+            + (f'<p><b>Qual escolher:</b> {e(cx["conselho"])}</p>' if cx.get("conselho") else "")
+            + (f'<p class="cx-nota">{e(cx["nota"])}</p>' if cx.get("nota") else "") + "</section>")
+
+
 def layout_v2(c, premios_bloco, ficha_html, fontes, fotos=None, info_meio=""):
     """Página do padrão editorial v2: resumo no topo, formatos visuais por seção e 'Ler mais' para o que é longo."""
     fotos = fotos or {}
@@ -310,7 +337,7 @@ def layout_v2(c, premios_bloco, ficha_html, fontes, fotos=None, info_meio=""):
     {f'<p class="faixa-preco">{e(preco["faixa"])}</p><p class="preco-meta">Lojas consultadas em {e(preco["data"])}{" · " + e(preco["obs"]) if preco.get("obs") else ""}</p>' if preco else ""}
     {foto_html(c, fotos["capa"], "foto caixa") if "capa" in fotos else ""}<p>{e(c.get("edicao_nacional", ""))}</p></div>
    <details class="mais dobra" open><summary><h2>Expansões e versões</h2></summary><p>{e(c.get("versoes", ""))}</p></details>
-  </section>"""
+  </section>""" + caixas_html(c)
     cards = "".join(
         f'<li><a class="cc" href="../{sl}/"><img src="{capa_src(sl)}" srcset="{srcset(ROOT / sl / "capa.jpg", "../", (400,))}" sizes="(min-width: 860px) 230px, 45vw" width="800" height="800" alt="" loading="lazy"><span><b>{e(j)}</b><span>{e(x)}</span><span class="vr">Ler a resenha →</span></span></a></li>'
         if sl else f'<li><div class="cc"><span class="cc-ph" aria-hidden="true">{e(j[0])}</span><span><b>{e(j)}</b><span>{e(x)}</span></span></div></li>'
@@ -331,7 +358,7 @@ def layout_v2(c, premios_bloco, ficha_html, fontes, fotos=None, info_meio=""):
     abas = "".join(
         f'<li><a href="#{i}">{t}</a></li>'
         for i, t in (("resumo", "Resumo"), ("como-funciona", "Como funciona"), ("como-e-jogar", "Como é jogar"), ("pros-contras", "Prós e contras"),
-                     *((("infografico", "Infográfico"),) if 'id="infografico"' in info_meio else ()), ("para-quem", "Para quem é"), ("edicao", "Preço"), ("veredito", "Veredito"), ("mais-resenhas", "Mais resenhas"), ("ficha", "Ficha"))
+                     *((("infografico", "Infográfico"),) if 'id="infografico"' in info_meio else ()), ("para-quem", "Para quem é"), ("edicao", "Preço"), *((("caixas", "Qual caixa"),) if c.get("caixas_br") else ()), ("veredito", "Veredito"), ("mais-resenhas", "Mais resenhas"), ("ficha", "Ficha"))
     )
     premios_bloco = re.sub(r'<h2>Prêmios</h2><p class="resumo">(.*?)</p>', r'<details class="mais dobra" open><summary><h2>Prêmios</h2> <span class="resumo">\1</span></summary>', premios_bloco).replace("</ul></section>", "</ul></details></section>")
     main = f"""<main id="conteudo" class="v2" style="--acc:{e(c.get("cor", "#e3b23c"))}">
@@ -783,6 +810,7 @@ footer a{{color:var(--bar-ink)}}
 @media (max-width:859px){{aside{{display:contents}}#premios{{order:-1}}}}
 @media (prefers-reduced-motion:reduce){{html{{scroll-behavior:auto}}}}
 {faq.CSS}
+{CSS_CAIXAS}
 </style>
 </head>
 <body>
