@@ -8,7 +8,13 @@
  "descricao": "Resenha de SETI, vencedor do Deutscher Spiele Preis 2025 e do Golden Geek de Jogo do Ano pesado 2024: como funciona, pontos fortes, pontos de atenção e para quem é.",
  "titulo_html": "Lance sondas, aponte telescópios e encontre vida fora da Terra: <span>SETI</span>",
  "lede": "SETI é um jogo pesado de estratégia em que cada jogador comanda uma instituição científica atrás de sinais de vida fora da Terra: lança sondas para planetas e luas, varre estrelas com telescópios e analisa dados no computador. Criado por Tomáš Holek e lançado pela Czech Games Edition em 2024, venceu o Deutscher Spiele Preis 2025 e o Golden Geek de Jogo do Ano pesado. É para quem gosta de cartas com vários usos e partidas longas. Saiu em português pela Devir, mas anda esgotado.",
- "tags": ["1–4 jogadores", "40–160 min", "14+", "Pesado", "Cartas multiuso"],
+ "tags": [
+  "1–4 jogadores",
+  "40–160 min",
+  "14+",
+  "Pesado",
+  "Cartas multiuso"
+ ],
  "alt": "Mesa montada de SETI, com o tabuleiro do sistema solar de discos giratórios",
  "premiacoes": [
   {
@@ -26,7 +32,7 @@
    "categoria": "Jogo do Ano pesado",
    "colocacao": 1,
    "resultado": "vencedor",
-   "fonte": "https://eliteboardgamers.com.br/",
+   "fonte": "https://boardgamewire.com/?p=4334",
    "rotulo": "Vencedor"
   },
   {
@@ -35,7 +41,7 @@
    "categoria": "Temático",
    "colocacao": 1,
    "resultado": "vencedor",
-   "fonte": "https://eliteboardgamers.com.br/",
+   "fonte": "https://boardgamewire.com/?p=4334",
    "rotulo": "Vencedor"
   },
   {
@@ -44,27 +50,75 @@
    "categoria": "Inovação",
    "colocacao": 3,
    "resultado": "top 3",
-   "fonte": "https://eliteboardgamers.com.br/",
+   "fonte": "https://boardgamewire.com/?p=4334",
    "rotulo": "3º lugar"
   }
  ],
  "ficha": [
-  ["Ano", "2024"],
-  ["Designer", "Tomáš Holek"],
-  ["Arte", "equipe de 11 ilustradores, entre eles Ondřej Hrdina, Jakub Politzer e Petr Štich"],
-  ["Editora original", "Czech Games Edition"],
-  ["Editora no Brasil", "Devir (SETI: Busca por Inteligência Extraterrestre, lançado em 2025)"],
-  ["Jogadores", "1 a 4"],
-  ["Melhor com", "não confirmado nas fontes consultadas (a Meeple Mountain prefere 2; a Board Game Quest acha 4 imprevisível demais)"],
-  ["Duração anunciada", "40 minutos por jogador (40 a 160 minutos)"],
-  ["Duração relatada", "cerca de 2 horas a dois e 2 h 45 a três, segundo a Opinionated Gamers; 90 a 180 minutos, segundo a Board Game Quest"],
-  ["Idade", "14+"],
-  ["Nota Ludopedia", "9,2 de média (775 avaliações)"],
-  ["Peso Ludopedia", "4,0 / 5 (médio-pesado)"],
-  ["Nota e peso BGG", "não confirmado nas fontes consultadas; a Opinionated Gamers registra o jogo em 16º no ranking do BGG em abril de 2026"],
-  ["Modo solo oficial", "Sim, com 19 cartas de ação solo, 24 objetivos solo e cinco níveis de dificuldade"],
-  ["Idioma", "português (edição Devir)"],
-  ["Componentes", "tabuleiro do sistema solar com discos giratórios, tabuleiros de tecnologia e planetário, 4 tabuleiros de setor, 4 tabuleiros de jogador de camada dupla, 5 tabuleiros de espécies alienígenas, 216 cartas (138 de projeto, 55 alienígenas), 48 peças de tecnologia, 32 sondas de madeira, 70 fichas de dados"]
+  [
+   "Ano",
+   "2024"
+  ],
+  [
+   "Designer",
+   "Tomáš Holek"
+  ],
+  [
+   "Arte",
+   "equipe de 11 ilustradores, entre eles Ondřej Hrdina, Jakub Politzer e Petr Štich"
+  ],
+  [
+   "Editora original",
+   "Czech Games Edition"
+  ],
+  [
+   "Editora no Brasil",
+   "Devir (SETI: Busca por Inteligência Extraterrestre, lançado em 2025)"
+  ],
+  [
+   "Jogadores",
+   "1 a 4"
+  ],
+  [
+   "Melhor com",
+   "não confirmado nas fontes consultadas (a Meeple Mountain prefere 2; a Board Game Quest acha 4 imprevisível demais)"
+  ],
+  [
+   "Duração anunciada",
+   "40 minutos por jogador (40 a 160 minutos)"
+  ],
+  [
+   "Duração relatada",
+   "cerca de 2 horas a dois e 2 h 45 a três, segundo a Opinionated Gamers; 90 a 180 minutos, segundo a Board Game Quest"
+  ],
+  [
+   "Idade",
+   "14+"
+  ],
+  [
+   "Nota Ludopedia",
+   "9,2 de média (775 avaliações)"
+  ],
+  [
+   "Peso Ludopedia",
+   "4,0 / 5 (médio-pesado)"
+  ],
+  [
+   "Nota e peso BGG",
+   "não confirmado nas fontes consultadas; a Opinionated Gamers registra o jogo em 16º no ranking do BGG em abril de 2026"
+  ],
+  [
+   "Modo solo oficial",
+   "Sim, com 19 cartas de ação solo, 24 objetivos solo e cinco níveis de dificuldade"
+  ],
+  [
+   "Idioma",
+   "português (edição Devir)"
+  ],
+  [
+   "Componentes",
+   "tabuleiro do sistema solar com discos giratórios, tabuleiros de tecnologia e planetário, 4 tabuleiros de setor, 4 tabuleiros de jogador de camada dupla, 5 tabuleiros de espécies alienígenas, 216 cartas (138 de projeto, 55 alienígenas), 48 peças de tecnologia, 32 sondas de madeira, 70 fichas de dados"
+  ]
  ],
  "nota_ficha": "Nota, número de avaliações e peso da Ludopedia obtidos por busca em 29/10/2026, porque a página da Ludopedia bloqueia acesso automatizado. A nota e o peso atuais do BGG variam entre as fontes secundárias e não são reproduzidos. Componentes e duração anunciada da página da Czech Games Edition.",
  "como_funciona": [
@@ -83,25 +137,79 @@
   "fonte": "Board Game Quest (tradução livre)"
  },
  "funciona": [
-  ["Cartas com vários usos e ciência de verdade", "Cada uma das mais de 130 cartas de projeto se baseia em tecnologias e missões reais ou futuras, e pode ser jogada, descartada por um bônus ou virar renda. A Board Game Quest elogia essas cartas e a arte delas, e a escolha de qual sacrificar com só quatro na mão é, para a Meeple Mountain, difícil e recompensadora."],
-  ["Sistema solar que gira muda os planos", "Os discos giratórios fazem o mapa mudar a cada pesquisa de tecnologia ou primeiro passe da rodada. Uma sonda a um passo de Júpiter pode ficar a três depois que um rival pesquisa. A GamesRadar+ elogia como o jogo simula práticas reais da busca por vida extraterrestre, e o tabuleiro móvel é a parte mais visível disso."],
-  ["Economia apertada que obriga a escolher", "Créditos, energia e publicidade nunca sobram, e cada ação principal custa caro. Para a Board Game Quest, a economia justa força escolhas de recursos com peso e planejamento de combinações, e as melhorias do tabuleiro de jogador são do tipo de decisão que esquenta a cabeça de um jeito bom."],
-  ["Alienígenas trazem surpresa e variedade", "São cinco espécies na caixa, e só duas entram em cada partida, sorteadas e escondidas até que os rastros dela se completem. Quando uma aparece, chegam regras, cartas e pontuações novas no meio do jogo. A Meeple Mountain e a Board Game Quest citam essa revelação como fonte de variedade entre partidas."],
-  ["Modo solo bem cuidado", "O solo tem cartas de ação próprias para o adversário automatizado, objetivos exclusivos e cinco níveis de dificuldade. A Meeple Mountain diz ter gostado mais do solo do que esperava, e a GamesRadar+ destacou o modo solo entre os pontos fortes do jogo."],
-  ["Reconhecido pela crítica e no Brasil", "Venceu o Deutscher Spiele Preis 2025 e o Golden Geek de Jogo do Ano pesado e de Temático em 2024. A Polygon o incluiu entre os melhores jogos de 2024, a Board Game Quest o chamou de seu euro favorito do ano e, na Ludopedia, a média é 9,2 com 775 avaliações."]
+  [
+   "Cartas com vários usos e ciência de verdade",
+   "Cada uma das mais de 130 cartas de projeto se baseia em tecnologias e missões reais ou futuras, e pode ser jogada, descartada por um bônus ou virar renda. A Board Game Quest elogia essas cartas e a arte delas, e a escolha de qual sacrificar com só quatro na mão é, para a Meeple Mountain, difícil e recompensadora."
+  ],
+  [
+   "Sistema solar que gira muda os planos",
+   "Os discos giratórios fazem o mapa mudar a cada pesquisa de tecnologia ou primeiro passe da rodada. Uma sonda a um passo de Júpiter pode ficar a três depois que um rival pesquisa. A GamesRadar+ elogia como o jogo simula práticas reais da busca por vida extraterrestre, e o tabuleiro móvel é a parte mais visível disso."
+  ],
+  [
+   "Economia apertada que obriga a escolher",
+   "Créditos, energia e publicidade nunca sobram, e cada ação principal custa caro. Para a Board Game Quest, a economia justa força escolhas de recursos com peso e planejamento de combinações, e as melhorias do tabuleiro de jogador são do tipo de decisão que esquenta a cabeça de um jeito bom."
+  ],
+  [
+   "Alienígenas trazem surpresa e variedade",
+   "São cinco espécies na caixa, e só duas entram em cada partida, sorteadas e escondidas até que os rastros dela se completem. Quando uma aparece, chegam regras, cartas e pontuações novas no meio do jogo. A Meeple Mountain e a Board Game Quest citam essa revelação como fonte de variedade entre partidas."
+  ],
+  [
+   "Modo solo bem cuidado",
+   "O solo tem cartas de ação próprias para o adversário automatizado, objetivos exclusivos e cinco níveis de dificuldade. A Meeple Mountain diz ter gostado mais do solo do que esperava, e a GamesRadar+ destacou o modo solo entre os pontos fortes do jogo."
+  ],
+  [
+   "Reconhecido pela crítica e no Brasil",
+   "Venceu o Deutscher Spiele Preis 2025 e o Golden Geek de Jogo do Ano pesado e de Temático em 2024. A Polygon o incluiu entre os melhores jogos de 2024, a Board Game Quest o chamou de seu euro favorito do ano e, na Ludopedia, a média é 9,2 com 775 avaliações."
+  ]
  ],
  "atencao": [
-  ["Moderada", "Partidas longas, sobretudo a quatro", "A caixa fala em 40 minutos por jogador, mas a Opinionated Gamers relata cerca de duas horas a dois, 2 h 45 a três e estima mais de três horas a quatro. A GamesRadar+ e a Tabletop Gaming também apontam a duração como problema, e um dos críticos da Opinionated Gamers diz que isso dificulta levar o jogo à mesa."],
-  ["Moderada", "Espera e acaso com a mesa cheia", "A quatro, a Meeple Mountain mediu esperas de cinco a sete minutos entre turnos e concluiu que o número máximo de jogadores não funciona. A Board Game Quest acrescenta que, com quatro, o sistema solar gira tantas vezes entre os seus turnos que fica difícil planejar uma rota para as sondas."],
-  ["Moderada", "Esgotado nas lojas brasileiras", "A edição da Devir aparecia esgotada ou indisponível em todas as lojas consultadas em 29/10/2026, como Odisseia Jogos, Pittas Board Games, Brechó Lúdico, Livtoys e Paladins, e o ComparaJogos não listava oferta de jogo novo. Quem quiser comprar agora depende de reposição ou de anúncios de terceiros."],
-  ["Leve", "Começo lento e sem recuperação", "As duas primeiras rodadas têm poucos recursos para turnos marcantes, segundo a Meeple Mountain. A GamesRadar+ lamenta a falta de mecanismos de recuperação para quem fica para trás, e na Opinionated Gamers um jogador viu o rival disparar só com os bônus de fim de jogo, sem entender o que deveria ter feito diferente."],
-  ["Leve", "Alienígenas podem bagunçar o planejamento", "Para Alan H., da Opinionated Gamers, os primeiros 70% da partida são ótimos, mas a revelação dos alienígenas transforma a pontuação em adivinhação e não se liga ao resto do jogo. A Board Game Quest, que gostou deles, acha cinco espécies na caixa base poucas para muitas partidas."]
+  [
+   "Moderada",
+   "Partidas longas, sobretudo a quatro",
+   "A caixa fala em 40 minutos por jogador, mas a Opinionated Gamers relata cerca de duas horas a dois, 2 h 45 a três e estima mais de três horas a quatro. A GamesRadar+ e a Tabletop Gaming também apontam a duração como problema, e um dos críticos da Opinionated Gamers diz que isso dificulta levar o jogo à mesa."
+  ],
+  [
+   "Moderada",
+   "Espera e acaso com a mesa cheia",
+   "A quatro, a Meeple Mountain mediu esperas de cinco a sete minutos entre turnos e concluiu que o número máximo de jogadores não funciona. A Board Game Quest acrescenta que, com quatro, o sistema solar gira tantas vezes entre os seus turnos que fica difícil planejar uma rota para as sondas."
+  ],
+  [
+   "Moderada",
+   "Esgotado nas lojas brasileiras",
+   "A edição da Devir aparecia esgotada ou indisponível em todas as lojas consultadas em 29/10/2026, como Odisseia Jogos, Pittas Board Games, Brechó Lúdico, Livtoys e Paladins, e o ComparaJogos só listava uma oferta de jogo novo com estoque, acima de R$ 900 (R$ 929,81 no Pix em 30/10/2026). Quem quiser comprar agora depende de reposição ou de anúncios de terceiros."
+  ],
+  [
+   "Leve",
+   "Começo lento e sem recuperação",
+   "As duas primeiras rodadas têm poucos recursos para turnos marcantes, segundo a Meeple Mountain. A GamesRadar+ lamenta a falta de mecanismos de recuperação para quem fica para trás, e na Opinionated Gamers um jogador viu o rival disparar só com os bônus de fim de jogo, sem entender o que deveria ter feito diferente."
+  ],
+  [
+   "Leve",
+   "Alienígenas podem bagunçar o planejamento",
+   "Para Alan H., da Opinionated Gamers, os primeiros 70% da partida são ótimos, mas a revelação dos alienígenas transforma a pontuação em adivinhação e não se liga ao resto do jogo. A Board Game Quest, que gostou deles, acha cinco espécies na caixa base poucas para muitas partidas."
+  ]
  ],
  "jogadores": [
-  ["Sozinho", "Modo solo oficial com cinco níveis de dificuldade; a Meeple Mountain gostou mais do que esperava, e a GamesRadar+ o destaca entre os pontos fortes.", 2],
-  ["2 jogadores", "A contagem preferida da Meeple Mountain, com partidas que podem terminar em menos de 90 minutos, segundo a mesma crítica.", 3],
-  ["3 jogadores", "Disputa maior pelos setores de estrelas; a Opinionated Gamers relata partidas de cerca de 2 h 45.", 2],
-  ["4 jogadores", "A Meeple Mountain mediu esperas de 5 a 7 minutos entre turnos, e a Board Game Quest achou o sistema solar imprevisível demais com quatro.", 1]
+  [
+   "Sozinho",
+   "Modo solo oficial com cinco níveis de dificuldade; a Meeple Mountain gostou mais do que esperava, e a GamesRadar+ o destaca entre os pontos fortes.",
+   2
+  ],
+  [
+   "2 jogadores",
+   "A contagem preferida da Meeple Mountain, com partidas que podem terminar em menos de 90 minutos, segundo a mesma crítica.",
+   3
+  ],
+  [
+   "3 jogadores",
+   "Disputa maior pelos setores de estrelas; a Opinionated Gamers relata partidas de cerca de 2 h 45.",
+   2
+  ],
+  [
+   "4 jogadores",
+   "A Meeple Mountain mediu esperas de 5 a 7 minutos entre turnos, e a Board Game Quest achou o sistema solar imprevisível demais com quatro.",
+   1
+  ]
  ],
  "primeira_partida": "Reserve a noite: a partida de aprendizado passa fácil de duas horas mesmo com poucas pessoas, e a explicação é longa. O que mais confunde é a diferença entre ação principal e ações livres, e quando o sistema solar gira. Dica prática: ensine primeiro os três caminhos de tecnologia (sonda, telescópio e computador) e deixe os alienígenas para quando o primeiro aparecer, porque as regras deles só entram em jogo nesse momento. Na primeira vez, jogue com dois ou três, nunca com quatro.",
  "edicao_nacional": "A Devir lançou SETI em português em 2025, com o título SETI: Busca por Inteligência Extraterrestre. Em 29/10/2026, o preço de tabela era R$ 799,90 na Odisseia Jogos, na Pittas Board Games e no Brechó Lúdico, com desconto no Pix (R$ 743,91 na Pittas), mas o jogo estava esgotado nas três e indisponível em outras lojas consultadas. A expansão Agências Espaciais também foi anunciada pela Devir para o Brasil em 2026.",
@@ -112,9 +220,21 @@
  },
  "versoes": "A primeira expansão, Space Agencies (Agências Espaciais, na edição da Devir), traz 42 cartas novas, três espécies alienígenas e agências com poderes próprios que encurtam o jogo para quatro rodadas; venceu o Golden Geek de Expansão em 2025. Não encontramos versão digital completa nas fontes consultadas: a Czech Games Edition oferece só um aplicativo de apoio que sorteia o sistema solar.",
  "comparacoes": [
-  ["Terraforming Mars", "terraforming-mars", "Outro jogo espacial com cartas baseadas em ciência real e um motor de renda que cresce. Terraforming Mars é mais aberto e solitário; SETI tem tabuleiro móvel e disputa direta por setores do céu."],
-  ["Ark Nova", "ark-nova", "Para quem gosta de euros pesados movidos a centenas de cartas diferentes e combinações. Ark Nova tem mais cartas e partidas igualmente longas, mas troca as surpresas alienígenas por um zoológico que cresce de forma previsível."],
-  ["Galactic Cruise", "galactic-cruise", "Outro vencedor do Golden Geek de Jogo do Ano pesado com tema espacial. Galactic Cruise é alocação de trabalhadores com naves e hóspedes; SETI depende mais das cartas e da posição das sondas no sistema solar."]
+  [
+   "Terraforming Mars",
+   "terraforming-mars",
+   "Outro jogo espacial com cartas baseadas em ciência real e um motor de renda que cresce. Terraforming Mars é mais aberto e solitário; SETI tem tabuleiro móvel e disputa direta por setores do céu."
+  ],
+  [
+   "Ark Nova",
+   "ark-nova",
+   "Para quem gosta de euros pesados movidos a centenas de cartas diferentes e combinações. Ark Nova tem mais cartas e partidas igualmente longas, mas troca as surpresas alienígenas por um zoológico que cresce de forma previsível."
+  ],
+  [
+   "Galactic Cruise",
+   "galactic-cruise",
+   "Outro vencedor do Golden Geek de Jogo do Ano pesado com tema espacial. Galactic Cruise é alocação de trabalhadores com naves e hóspedes; SETI depende mais das cartas e da posição das sondas no sistema solar."
+  ]
  ],
  "para_quem": [
   "Gosta de euros pesados com cartas que servem para várias coisas",
@@ -127,7 +247,7 @@
   "Joga quase sempre com quatro pessoas e não tolera esperas longas",
   "Prefere partidas de até uma hora",
   "Fica frustrado quando o mapa muda por causa da jogada de outro",
-  "Precisa comprar o jogo novo hoje numa loja brasileira"
+  "Precisa comprar o jogo novo hoje pelo preço de tabela"
  ],
  "selo": "Recomendado",
  "melhor_para": "estrategia",
@@ -135,36 +255,125 @@
  "tagline": "Sondas, telescópios e um céu que gira: a busca por vida virou euro de primeira.",
  "consulta": "29/10/2026",
  "fontes": [
-  ["Czech Games Edition – SETI", "https://www.czechgames.com/games/seti-search-for-extraterrestrial-intelligence", "designer, jogadores, duração anunciada, idade, modo solo, componentes, aplicativo de apoio"],
-  ["Wikipedia – SETI: Search for Extraterrestrial Intelligence", "https://en.wikipedia.org/wiki/SETI:_Search_for_Extraterrestrial_Intelligence", "ano, ilustradores, duração (40 a 160 min), cinco rodadas, críticas da Polygon, Tabletop Gaming e GamesRadar+, expansão"],
-  ["Board Game Quest – SETI Review", "https://www.boardgamequest.com/seti-search-for-extraterrestrial-intelligence-review/", "regras (ações, renda, rotação, alienígenas), duração relatada, crítica, citação"],
-  ["Meeple Mountain – SETI Game Review", "https://www.meeplemountain.com/reviews/seti-search-for-extraterrestrial-intelligence/", "mão de quatro cartas, metas de 25/50/70 pontos, solo com cinco níveis, esperas a quatro, melhor a dois, crítica"],
-  ["Opinionated Gamers – Review: SETI and SETI: Space Agencies", "https://opinionatedgamers.com/2026/04/10/review-seti-and-seti-space-agencies/", "duração relatada por número de jogadores, 16º no ranking do BGG (abr/2026), conteúdo da expansão, críticas"],
-  ["GamesRadar+ – SETI review", "https://www.gamesradar.com/tabletop-gaming/seti-review/", "crítica: simulação científica, duração com quatro, falta de recuperação"],
-  ["Ludopedia – SETI: Busca por Inteligência Extraterrestre", "https://ludopedia.com.br/jogo/seti-search-for-extraterrestrial-intelligence", "nota média, número de avaliações e peso (via busca)"],
-  ["Ludopedia – SETI: Agências Espaciais chega ao Brasil", "https://ludopedia.com.br/topico/98719/seti-agencias-espaciais-chega-ao-brasil-em-junho", "expansão anunciada pela Devir para o Brasil em 2026 (via busca)"],
-  ["ComparaJogos – SETI: Busca por Inteligência Extraterrestre", "https://www.comparajogos.com.br/item/seti-busca-por-inteligencia-extraterrestre", "editora nacional (Devir), lançamento em 2025, sem ofertas de jogo novo"],
-  ["Odisseia Jogos – SETI", "https://www.odisseiajogos.com.br/board-games/seti", "preço (R$ 799,90; R$ 759,90 no Pix), indisponível"],
-  ["Pittas Board Games – SETI", "https://www.pittasboardgames.com.br/produtos/seti/", "preço (R$ 799,90; R$ 743,91 no Pix), português, Devir, esgotado"],
-  ["Brechó Lúdico – SETI", "https://brecholudico.com.br/produto/seti-busca-por-inteligencia-extraterrestre/", "preço (R$ 799,90), novo, Devir, fora de estoque"],
-  ["Paladins Games – SETI", "https://paladinsgames.com.br/seti", "edição em português da Devir, indisponível"],
-  ["Livtoys – SETI: Busca por Inteligência Extraterrestre", "https://www.livtoys.com.br/boardgames/seti-busca-por-inteligencia-extraterrestre", "marca Devir, indisponível"]
+  [
+   "Czech Games Edition – SETI",
+   "https://www.czechgames.com/games/seti-search-for-extraterrestrial-intelligence",
+   "designer, jogadores, duração anunciada, idade, modo solo, componentes, aplicativo de apoio"
+  ],
+  [
+   "Wikipedia – SETI: Search for Extraterrestrial Intelligence",
+   "https://en.wikipedia.org/wiki/SETI:_Search_for_Extraterrestrial_Intelligence",
+   "ano, ilustradores, duração (40 a 160 min), cinco rodadas, críticas da Polygon, Tabletop Gaming e GamesRadar+, expansão"
+  ],
+  [
+   "Board Game Quest – SETI Review",
+   "https://www.boardgamequest.com/seti-search-for-extraterrestrial-intelligence-review/",
+   "regras (ações, renda, rotação, alienígenas), duração relatada, crítica, citação"
+  ],
+  [
+   "Meeple Mountain – SETI Game Review",
+   "https://www.meeplemountain.com/reviews/seti-search-for-extraterrestrial-intelligence/",
+   "mão de quatro cartas, metas de 25/50/70 pontos, solo com cinco níveis, esperas a quatro, melhor a dois, crítica"
+  ],
+  [
+   "Opinionated Gamers – Review: SETI and SETI: Space Agencies",
+   "https://opinionatedgamers.com/2026/04/10/review-seti-and-seti-space-agencies/",
+   "duração relatada por número de jogadores, 16º no ranking do BGG (abr/2026), conteúdo da expansão, críticas"
+  ],
+  [
+   "GamesRadar+ – SETI review",
+   "https://www.gamesradar.com/tabletop-gaming/seti-review/",
+   "crítica: simulação científica, duração com quatro, falta de recuperação"
+  ],
+  [
+   "Ludopedia – SETI: Busca por Inteligência Extraterrestre",
+   "https://ludopedia.com.br/jogo/seti-search-for-extraterrestrial-intelligence",
+   "nota média, número de avaliações e peso (via busca)"
+  ],
+  [
+   "Ludopedia – SETI: Agências Espaciais chega ao Brasil",
+   "https://ludopedia.com.br/topico/98719/seti-agencias-espaciais-chega-ao-brasil-em-junho",
+   "expansão anunciada pela Devir para o Brasil em 2026 (via busca)"
+  ],
+  [
+   "ComparaJogos – SETI: Busca por Inteligência Extraterrestre",
+   "https://www.comparajogos.com.br/item/seti-busca-por-inteligencia-extraterrestre",
+   "editora nacional (Devir), lançamento em 2025, sem ofertas de jogo novo"
+  ],
+  [
+   "Odisseia Jogos – SETI",
+   "https://www.odisseiajogos.com.br/board-games/seti",
+   "preço (R$ 799,90; R$ 759,90 no Pix), indisponível"
+  ],
+  [
+   "Pittas Board Games – SETI",
+   "https://www.pittasboardgames.com.br/produtos/seti/",
+   "preço (R$ 799,90; R$ 743,91 no Pix), português, Devir, esgotado"
+  ],
+  [
+   "Brechó Lúdico – SETI",
+   "https://brecholudico.com.br/produto/seti-busca-por-inteligencia-extraterrestre/",
+   "preço (R$ 799,90), novo, Devir, fora de estoque"
+  ],
+  [
+   "Paladins Games – SETI",
+   "https://paladinsgames.com.br/seti",
+   "edição em português da Devir, indisponível"
+  ],
+  [
+   "Livtoys – SETI: Busca por Inteligência Extraterrestre",
+   "https://www.livtoys.com.br/boardgames/seti-busca-por-inteligencia-extraterrestre",
+   "marca Devir, indisponível"
+  ]
  ],
  "passos": [
-  ["PREPARE A RENDA", "Comece com créditos, energia, publicidade e cinco cartas; guarde uma carta embaixo da renda para receber mais recursos a cada rodada."],
-  ["UMA AÇÃO PRINCIPAL", "Na vez, faça uma ação: jogar carta, lançar, orbitar ou pousar sonda, varrer o céu, analisar dados, pesquisar tecnologia ou passar."],
-  ["AÇÕES LIVRES À VONTADE", "Antes e depois, descarte cartas pelo efeito menor, gaste energia para mover sondas, cumpra missões e troque recursos sem gastar a vez."],
-  ["O SISTEMA SOLAR GIRA", "Pesquisar tecnologia ou ser o primeiro a passar gira os discos do tabuleiro, e planetas e sondas mudam de lugar para todos."],
-  ["ENCONTRE OS ALIENÍGENAS", "Sinais, pousos e dados deixam rastros; completos, revelam uma espécie com regras novas. Após cinco rodadas, vence quem somar mais pontos."]
+  [
+   "PREPARE A RENDA",
+   "Comece com créditos, energia, publicidade e cinco cartas; guarde uma carta embaixo da renda para receber mais recursos a cada rodada."
+  ],
+  [
+   "UMA AÇÃO PRINCIPAL",
+   "Na vez, faça uma ação: jogar carta, lançar, orbitar ou pousar sonda, varrer o céu, analisar dados, pesquisar tecnologia ou passar."
+  ],
+  [
+   "AÇÕES LIVRES À VONTADE",
+   "Antes e depois, descarte cartas pelo efeito menor, gaste energia para mover sondas, cumpra missões e troque recursos sem gastar a vez."
+  ],
+  [
+   "O SISTEMA SOLAR GIRA",
+   "Pesquisar tecnologia ou ser o primeiro a passar gira os discos do tabuleiro, e planetas e sondas mudam de lugar para todos."
+  ],
+  [
+   "ENCONTRE OS ALIENÍGENAS",
+   "Sinais, pousos e dados deixam rastros; completos, revelam uma espécie com regras novas. Após cinco rodadas, vence quem somar mais pontos."
+  ]
  ],
  "como_resumo": "Lance sondas, rastreie sinais e revele alienígenas antes dos rivais em cinco rodadas.",
  "perfil": [
-  ["Profundidade estratégica", 5],
-  ["Tema e ciência", 5],
-  ["Variedade entre partidas", 4],
-  ["Interação entre jogadores", 3],
-  ["Facilidade de ensinar", 1],
-  ["Partida curta", 1]
+  [
+   "Profundidade estratégica",
+   5
+  ],
+  [
+   "Tema e ciência",
+   5
+  ],
+  [
+   "Variedade entre partidas",
+   4
+  ],
+  [
+   "Interação entre jogadores",
+   3
+  ],
+  [
+   "Facilidade de ensinar",
+   1
+  ],
+  [
+   "Partida curta",
+   1
+  ]
  ],
  "legenda": "Lance sondas, aponte telescópios e encontre vida fora da Terra. 🛰️👽\n\nSETI venceu o Deutscher Spiele Preis 2025 e o Golden Geek de Jogo do Ano pesado 2024.\nCartas com ciência real, um sistema solar que gira e alienígenas que surgem no meio da partida.\nPede de duas a três horas e brilha a dois ou três. Tem edição em português pela Devir, hoje esgotada.\nVeredito: RECOMENDADO.\n\nSe a gente encontrasse vida lá fora, você apostaria em sonda ou em telescópio?\nResenha completa no link da bio.\n\n#SETI #DeutscherSpielePreis #GoldenGeek #JogosDeTabuleiro #BoardGames #Boardgamer #Eurogame #JogoDeEstrategia #CzechGamesEdition #Devir #EliteBoardgamers #SpaceGames"
 }
