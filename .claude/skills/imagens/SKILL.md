@@ -10,7 +10,12 @@ Ferramenta: `tools/imagens/robo.py`. Receitas por editora: `tools/imagens/editor
 ## Regras que não mudam
 
 - **O robots.txt manda.** O robô confere cada URL (inclusive o CDN das imagens) antes de pedir e espera pelo menos 3 s entre pedidos no mesmo host (mais, se o `Crawl-delay` pedir).
-- **401/403 é um não.** Nunca troque o User-Agent, não use proxy nem navegador para contornar um bloqueio. Editora bloqueada recebe o pedido de kit de imprensa (rascunho no relatório do lote), que **o usuário** envia se quiser.
+- **401/403 é um não.** Nunca troque o User-Agent, não use proxy nem navegador para contornar um bloqueio. Editora bloqueada ou sem foto de mesa recebe o pedido de kit de imprensa.
+- **Envio automático (pedido do usuário em 30/10/2026):** com um conector de e-mail ligado na sessão, a triagem envia o pedido sozinha. O e-mail sai da conta do usuário, em inglês, com o usuário em cópia.
+  - O endereço vem do site da própria editora (páginas de imprensa, mídia, contato ou lojistas), respeitando o robots.txt. Nunca use endereço adivinhado nem tirado de terceiros.
+  - Um pedido por editora e por jogo. Antes de enviar, confira o campo `kit_pedido` do jogo no pauta.json e não repita. Depois de enviar, grave `kit_pedido: {"data", "para", "editora"}` no pauta.json.
+  - Formulário de contato nunca é preenchido: o texto vai pronto no relatório para o usuário colar.
+  - Sem conector de e-mail, o rascunho vai no relatório.
 - **Erro de rede não é bloqueio.** Receita com `status: "erro"` deve ser mapeada de novo mais tarde.
 - **Sempre com crédito.** Cada foto aprovada fica registrada em `<slug>/fotos/fontes.json` com editora, página e URL de origem.
 - Só imagens do jogo: nada de logos, banners, anúncios de outros jogos ou artes de propaganda com letreiro quando houver foto limpa.
