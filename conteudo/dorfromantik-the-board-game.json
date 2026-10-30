@@ -1,0 +1,367 @@
+{
+ "slug": "dorfromantik-the-board-game",
+ "jogo": "Dorfromantik: The Board Game",
+ "cor": "#7a9a3f",
+ "kicker": "Resenha · Cooperativo de peças hexagonais",
+ "og_titulo": "Dorfromantik: resenha do Spiel des Jahres 2023 | Elite Boardgamers",
+ "titulo_busca": "Dorfromantik: resenha do Spiel des Jahres em que ninguém perde",
+ "descricao": "Resenha de Dorfromantik: The Board Game, Spiel des Jahres 2023: como funciona o cooperativo de peças hexagonais com campanha, a edição nacional da Across the Board, preço e para quem é.",
+ "titulo_html": "Paz no campo, com meta de produtividade: <span>Dorfromantik</span>",
+ "lede": "Dorfromantik: The Board Game é a versão de mesa do videogame de mesmo nome: um cooperativo de 1 a 6 jogadores em que todos montam juntos uma paisagem de peças hexagonais. Venceu o Spiel des Jahres 2023. O júri disse que ele tira a pressão do dia a dia. Tira mesmo. E devolve em forma de planilha: no fim de cada partida, você arredonda os pontos e pinta bolinhas para abrir caixas. A gente adorou a planilha. Isso diz mais sobre a gente do que sobre o jogo.",
+ "tags": [
+  "1–6 jogadores",
+  "30–60 min",
+  "8+",
+  "Cooperativo",
+  "Campanha"
+ ],
+ "alt": "Partida de Dorfromantik: The Board Game com a paisagem de peças hexagonais de campos, florestas, vilas, rios e trilhos",
+ "premiacoes": [
+  {
+   "premio": "Spiel des Jahres",
+   "ano": 2023,
+   "categoria": "Spiel des Jahres",
+   "colocacao": 1,
+   "resultado": "vencedor",
+   "fonte": "https://en.wikipedia.org/wiki/Spiel_des_Jahres",
+   "rotulo": "Vencedor"
+  },
+  {
+   "premio": "Deutscher Spiele Preis",
+   "ano": 2023,
+   "categoria": "Deutscher Spiele Preis",
+   "colocacao": 2,
+   "resultado": "top 3",
+   "fonte": "https://de.wikipedia.org/wiki/Deutscher_Spiele_Preis",
+   "rotulo": "2º lugar"
+  }
+ ],
+ "ficha": [
+  [
+   "Ano",
+   "2022 (edição alemã, novembro)"
+  ],
+  [
+   "Designers",
+   "Michael Palm e Lukas Zach"
+  ],
+  [
+   "Arte",
+   "Paul Riebe"
+  ],
+  [
+   "Editora original",
+   "Pegasus Spiele"
+  ],
+  [
+   "Editora no Brasil",
+   "Across the Board (português do Brasil)"
+  ],
+  [
+   "Jogadores",
+   "1 a 6"
+  ],
+  [
+   "Duração anunciada",
+   "30 a 60 minutos"
+  ],
+  [
+   "Idade",
+   "8+"
+  ],
+  [
+   "Nota BGG",
+   "7,6 / 10 (maio de 2026, segundo a Wikipedia)"
+  ],
+  [
+   "Peso BGG",
+   "cerca de 1,6 / 5"
+  ],
+  [
+   "Modo solo",
+   "Sem regras próprias; funciona com poucos ajustes"
+  ],
+  [
+   "Componentes",
+   "48 peças de paisagem, 25 peças e 25 marcadores de tarefa, blocos de pontuação e de campanha, e 5 caixas fechadas com 32 peças, 31 cartas, 8 marcadores, 5 corações de madeira e 1 figura"
+  ]
+ ],
+ "nota_ficha": "Nota do BGG segundo a Wikipedia em inglês (maio de 2026); o peso vem de sites que replicam o BoardGameGeek, que bloqueia acesso automatizado. Componentes segundo a Wikipedia em alemão.",
+ "como_funciona": [
+  "Dorfromantik é cooperativo: todos jogam contra o próprio recorde, montando juntos uma única paisagem com peças hexagonais de campos de trigo, florestas, vilas, prados, rios e trilhos. Não há tabuleiro; o mapa cresce a partir da primeira peça.",
+  "No seu turno, você faz uma coisa só. Se houver menos de três tarefas abertas na mesa, revela uma peça de tarefa, sorteia um marcador da mesma cor e a coloca no mapa. Se já houver três, revela uma peça de paisagem e a encaixa encostada em pelo menos um lado de outra peça. Os terrenos não precisam combinar nas bordas, mas rios e trilhos não podem ser interrompidos.",
+  "O marcador de tarefa diz um número de 4 a 6: é quantas peças daquele terreno precisam formar uma área contínua com a peça de tarefa. Quando a área chega exatamente a esse número, a tarefa está cumprida e o marcador vira ponto; quanto maior o número, mais pontos. Algumas peças trazem bandeiras, que pontuam no fim se a área daquele terreno estiver toda fechada, sem bordas abertas.",
+  "A partida acaba quando as peças de paisagem terminam. Contam pontos as tarefas cumpridas, as áreas com bandeira fechadas, o rio mais longo e o trilho mais longo.",
+  "Depois vem a campanha. O grupo arredonda a pontuação para baixo, até a dezena, e pinta no bloco de campanha as bolinhas correspondentes. Ao completar trechos, abre uma das cinco caixas fechadas, com peças especiais, cartas de conquista e novas formas de pontuar, que entram nas partidas seguintes. Segundo a Wikipedia, o conteúdo acaba em 15 a 20 partidas; depois, dá para recomeçar a campanha ou seguir jogando sem novidades."
+ ],
+ "passos": [
+  [
+   "MANTENHA TRÊS TAREFAS",
+   "Com menos de três tarefas abertas, revele uma peça de tarefa, sorteie o marcador da mesma cor e coloque-a no mapa."
+  ],
+  [
+   "REVELE A PAISAGEM",
+   "Com três tarefas na mesa, revele uma peça de paisagem e encaixe-a encostada em ao menos um lado da paisagem já montada."
+  ],
+  [
+   "RESPEITE RIOS E TRILHOS",
+   "Campos, florestas e vilas podem mudar na borda, mas rios e trilhos precisam continuar. Discutam juntos onde cada peça rende mais."
+  ],
+  [
+   "CUMPRA NO NÚMERO EXATO",
+   "A área do terreno ligada à tarefa precisa ter exatamente as peças do marcador, de 4 a 6. Cumprida, o marcador vira ponto."
+  ],
+  [
+   "SOME E ABRA CAIXAS",
+   "Sem peças de paisagem, a partida acaba. Some tarefas, bandeiras, maior rio e maior trilho, e avance no bloco de campanha."
+  ]
+ ],
+ "como_resumo": "Montem juntos uma paisagem de hexágonos, cumpram tarefas e usem os pontos para abrir caixas novas.",
+ "perfil": [
+  [
+   "Facilidade de ensinar",
+   5
+  ],
+  [
+   "Clima tranquilo",
+   5
+  ],
+  [
+   "Modo solo",
+   5
+  ],
+  [
+   "Progressão de campanha",
+   4
+  ],
+  [
+   "Partida curta",
+   4
+  ],
+  [
+   "Tensão e risco",
+   1
+  ]
+ ],
+ "experiencia": [
+  "Confissão: a gente entrou achando que ia descansar. A primeira partida é isso mesmo. Ninguém ataca ninguém, não existe derrota, e a pior coisa que pode acontecer é uma floresta ficar torta. O júri do Spiel des Jahres chamou de jogo para se sentir bem. Na terceira partida, alguém já está com uma calculadora mental ligada.",
+  "O turno típico é um comitê decidindo onde vai uma árvore. Há uma tarefa de floresta pedindo 5 peças, e a área já tem 4. A peça revelada tem floresta de um lado e um trecho de rio do outro. Encaixar ali fecha a tarefa, mas o rio vai bater numa vila, e rio não pode ser interrompido. Outro lugar salva o rio e deixa a floresta com 4. O grupo discute. Ninguém está bravo. Todo mundo só quer, muito, os 5 pontos.",
+  "No fim, vocês somam tudo, arredondam para baixo e pintam bolinhas. A sensação de abrir uma caixa lacrada é real; a Meeple Mountain compara esse gancho ao dos videogames roguelite, em que cada tentativa destrava algo para a próxima. É o campo europeu mais bonito que já virou relatório trimestral. E funciona."
+ ],
+ "funciona": [
+  [
+   "Regra que se ensina com a peça na mão",
+   "Pegue uma peça, coloque a peça. A Co-op Board Games resume assim o fluxo e o coloca entre os cooperativos que mais andam sem travar, e a Tabletop Gaming elogia a preparação relâmpago. Com peso perto de 1,6 no BGG, é dos raros premiados que dá para explicar enquanto o café esfria."
+  ],
+  [
+   "Caixas fechadas que pedem mais uma partida",
+   "As cinco caixas lacradas são o motor do jogo. Para a Co-op Board Games, abrir cada uma e marcar conquistas é genuinamente empolgante, e a Meeple Mountain diz que a campanha cria vontade de jogar de novo na mesma hora. Cada caixa traz peças especiais ou formas de pontuar que mudam as tarefas que o grupo persegue."
+  ],
+  [
+   "Um solo de primeira linha",
+   "Mesmo sem regras próprias para jogar sozinho, o solo é onde o jogo brilha para boa parte da crítica. A Reich der Spiele chama o solo de inacreditavelmente bom, e a Tabletop Gaming diz que ele é tão bom quanto em grupo, se não melhor. Uma partida solo levou de 20 a 25 minutos na Meeple Mountain."
+  ],
+  [
+   "Calmo, mas não raso",
+   "Para a Wargamer, o custo de um erro nunca é alto a ponto de acelerar o coração, e mesmo assim o quebra-cabeça é surpreendentemente rico. David Fox, do Boards Eye View, descreve um equilíbrio de pratinhos em clima zen: três tarefas abertas, rios e trilhos que não podem parar, e bandeiras esperando a área fechar."
+  ],
+  [
+   "Cooperativo de família sem choro",
+   "Como ninguém perde, a Tabletop Gaming destaca que não há lágrimas antes da hora de dormir. A idade indicada é 8 anos, as decisões ficam todas à vista na mesa e uma criança pode sugerir a jogada certa sem precisar entender estratégia de longo prazo."
+  ],
+  [
+   "Mais focado que o videogame",
+   "O videogame da Toukana Interactive é só para um jogador e premia encaixar bordas iguais. Michael Palm e Lukas Zach soltaram essa regra: no tabuleiro, só rios e trilhos precisam continuar, e o resto vale pelas tarefas. David Fox, que achou o videogame arrastado, chama o tabuleiro de releitura mais focada."
+  ]
+ ],
+ "atencao": [
+  [
+   "Moderada",
+   "Não dá para perder. Nunca.",
+   "O próprio júri do Spiel des Jahres avisa: o jogo traz metas novas a cada partida, mas você nunca pode perder. A Wargamer registra que há quem diga que isso nem é jogo, e acha a crítica dura demais, mas não totalmente errada. Para a Tabletop Gaming, quem gosta de tensão e de decisões de roer unhas deve procurar outra caixa."
+  ],
+  [
+   "Moderada",
+   "O sossego vem com planilha",
+   "Tirando a paisagem, sobra o que a Reich der Spiele descreve, friamente, como um sistema puro de otimização de pontos. Cada partida termina com soma, arredondamento e bolinhas pintadas num bloco. A gente gosta. Mas quem procurava fugir de metas no fim de semana acabou de encontrar uma nova, com rio e trilho."
+  ],
+  [
+   "Moderada",
+   "Mais gente, menos graça",
+   "A caixa vai até seis, mas a Reich der Spiele diz que a diversão cai bastante em grupo e que aparece o problema clássico do cooperativo: o jogador que manda em todo mundo. A Co-op Board Games também alerta para isso. David Fox testou com dois a quatro e concluiu que a melhor companhia é ele mesmo e o gato."
+  ],
+  [
+   "Leve",
+   "A ordem das tarefas tem sorte",
+   "A pontuação não depende só de resolver bem o quebra-cabeça. David Fox mostra o problema: tarefas que saem numa ordem ruim podem pedir quinze peças para o mesmo resultado que, noutra ordem, sairia mais barato. Em jogo cooperativo de recorde, isso mexe direto no avanço da campanha."
+  ],
+  [
+   "Leve",
+   "A campanha tem prazo de validade",
+   "Segundo a Wikipedia, o conteúdo das caixas acaba em 15 a 20 partidas; a Co-op Board Games fechou a dela em 18. Depois, resta recomeçar o bloco ou caçar recorde. Justin Bell, da Meeple Mountain, gostou e mesmo assim diz que não deve voltar ao jogo, porque desafio de pontuação máxima não é a praia dele."
+  ],
+  [
+   "Leve",
+   "Mesa cheia no fim da campanha",
+   "Com as caixas abertas, o mapa enche de símbolos. A Co-op Board Games diz que fica difícil achar as peças com bandeira e queria ícones mais visíveis, e a Reich der Spiele acha que a paisagem fica confusa rápido e que o manual nem sempre é claro."
+  ]
+ ],
+ "jogadores": [
+  [
+   "Sozinho",
+   "Para a Reich der Spiele, a Tabletop Gaming e o Boards Eye View, é o melhor jeito: sem discussão, no seu ritmo, em menos de meia hora.",
+   3
+  ],
+  [
+   "2 jogadores",
+   "Sites que replicam o BGG apontam 1 e 2 como as melhores contagens: dá para conversar sobre cada peça sem que ninguém fique sobrando.",
+   3
+  ],
+  [
+   "3 ou 4 jogadores",
+   "Funciona, e a Co-op Board Games jogou quase sempre em três; o risco é um jogador decidir todas as peças pelos outros.",
+   2
+  ],
+  [
+   "5 ou 6 jogadores",
+   "Cada pessoa coloca uma peça a cada cinco ou seis turnos, e nenhuma crítica consultada recomenda essa contagem.",
+   1
+  ]
+ ],
+ "primeira_partida": "As regras cabem em poucos minutos, e a Tabletop Gaming elogia a preparação rápida. O que confunde no começo é a tarefa: a área precisa ter exatamente o número do marcador, e rio e trilho não podem ser interrompidos. Dica prática da Co-op Board Games para não virar monólogo: em grupo, cada jogador propõe duas ou três posições para a peça antes de decidirem juntos. E não abra as caixas fechadas antes da hora; a graça é destravar uma por vez.",
+ "edicao_nacional": "A edição brasileira é da Across the Board, editora do grupo Best Mark, de São Paulo, com o título Dorfromantik: O jogo de tabuleiro e componentes em português do Brasil. Em 30/10/2026, a própria editora vendia por R$ 328,00 (R$ 311,60 no Pix), e o menor preço no ComparaJogos era R$ 251,81 no Pix, na Alquimistas dos Jogos. A Guilda dos Jogos tinha a última unidade a R$ 259,12 no Pix.",
+ "preco_ref": {
+  "faixa": "a partir de R$ 251,81",
+  "data": "30/10/2026",
+  "obs": "menor preço no Pix em lojas brasileiras, segundo o ComparaJogos; na Across the Board, R$ 311,60 no Pix"
+ },
+ "versoes": "Há duas miniexpansões: The Great Mill (2023), com um moinho de papelão e duas cartas, e Die Wetterau (2024), com três peças de pontos turísticos da região alemã. Depois vieram jogos independentes: The Duel (2023), competitivo para dois e com material extra para o jogo base; Sakura (2024), no Japão, com seis caixas e 40 conquistas; e Light Luggage (2025), versão compacta lançada em alemão. A Across the Board vende The Duel e Sakura no Brasil. O videogame da Toukana Interactive, de 2022, é só para um jogador.",
+ "comparacoes": [
+  [
+   "Cascadia",
+   "cascadia",
+   "Também é colocação de peças hexagonais com natureza, mas competitivo: cada um monta o próprio mapa e disputa animais e habitats. Para quem quer a mesma calma com alguém para vencer."
+  ],
+  [
+   "Harmonies",
+   "harmonies",
+   "Outro quebra-cabeça de paisagem em hexágonos, com peças empilhadas e animais que pedem formatos específicos. Tem mais escolha por turno e placar entre jogadores, sem campanha."
+  ],
+  [
+   "Sky Team",
+   "sky-team",
+   "O Spiel des Jahres seguinte também é cooperativo, mas é o oposto em clima: dois pilotos, dados escondidos e um pouso que pode dar errado. Para quem sentiu falta de poder perder."
+  ]
+ ],
+ "para_quem": [
+  "Joga sozinho ou em dupla e gosta de bater o próprio recorde",
+  "Tem filhos a partir de 8 anos e quer um cooperativo sem choro",
+  "Gosta de pintar bolinha em planilha e não tem vergonha disso",
+  "Jogou o videogame e queria dividir a paisagem com alguém",
+  "Prefere uma partida de meia hora a uma noite inteira"
+ ],
+ "nao_e_para": [
+  "Precisa de risco de derrota para sentir que jogou",
+  "Reúne seis pessoas que gostam de opinar sobre tudo",
+  "Já tem um amigo que decide a jogada de todo mundo",
+  "Quer uma caixa para jogar cem vezes sem enjoar da pontuação",
+  "Foge de metas no fim de semana, por princípio"
+ ],
+ "selo": "Recomendado",
+ "melhor_para": "entrada",
+ "veredito": "Dorfromantik vende paz no campo e entrega uma planilha de metas. E a planilha é a melhor parte. O júri do Spiel des Jahres disse que ele tira a pressão do dia a dia, e tira: ninguém perde, a regra se ensina com a peça na mão e o solo é elogiado por quase toda a crítica consultada. Mas o que faz a gente voltar é pintar bolinha e abrir caixa lacrada. É o único lugar onde bater meta relaxa. Pesa o que vem junto: nenhuma tensão, um grupo grande que dilui a graça e uma campanha que acaba em 15 a 20 partidas. Por pouco mais de R$ 250, sozinho, em dupla ou com criança, a gente compra. Só não conte para o seu chefe que você gosta de metas.",
+ "tagline": "Paz no campo, com meta de produtividade. E a meta é a melhor parte.",
+ "citacao": {
+  "texto": "Um quebra-cabeça cooperativo acessível, charmoso e surpreendentemente rico, com garantia de zero estresse.",
+  "fonte": "Wargamer (tradução livre)"
+ },
+ "consulta": "30/10/2026",
+ "fontes": [
+  [
+   "Wikipedia – Dorfromantik: The Board Game",
+   "https://en.wikipedia.org/wiki/Dorfromantik:_The_Board_Game",
+   "regras, campanha, expansões, lançamento, nota BGG"
+  ],
+  [
+   "Wikipedia (alemão) – Dorfromantik: Das Brettspiel",
+   "https://de.wikipedia.org/wiki/Dorfromantik:_Das_Brettspiel",
+   "componentes, regras, idiomas"
+  ],
+  [
+   "Wikipedia – Dorfromantik (videogame)",
+   "https://en.wikipedia.org/wiki/Dorfromantik",
+   "relação com o videogame"
+  ],
+  [
+   "Spiel des Jahres – Dorfromantik",
+   "https://www.spiel-des-jahres.de/en/spiel-des-jahres-2023-dorfromantik/",
+   "justificativa do júri"
+  ],
+  [
+   "Wikipedia – Spiel des Jahres",
+   "https://en.wikipedia.org/wiki/Spiel_des_Jahres",
+   "prêmio de 2023"
+  ],
+  [
+   "Wikipedia (alemão) – Deutscher Spiele Preis",
+   "https://de.wikipedia.org/wiki/Deutscher_Spiele_Preis",
+   "2º lugar em 2023"
+  ],
+  [
+   "Meeple Mountain – Dorfromantik: The Board Game",
+   "https://www.meeplemountain.com/reviews/dorfromantik-the-board-game/",
+   "crítica, campanha, solo, fim de jogo"
+  ],
+  [
+   "Wargamer – Dorfromantik board game review",
+   "https://www.wargamer.com/dorfromantik-board-game/review",
+   "crítica, ausência de derrota"
+  ],
+  [
+   "Tabletop Gaming – Dorfromantik: The Board Game Review",
+   "https://www.tabletopgaming.co.uk/reviews/dorfromantik-the-board-game-review/",
+   "crítica, família, solo"
+  ],
+  [
+   "Co-op Board Games – Dorfromantik Review",
+   "https://coopboardgames.com/cooperative-board-game-reviews/dorfromantik-review",
+   "crítica, campanha de 18 partidas, jogador que manda"
+  ],
+  [
+   "Reich der Spiele – Dorfromantik",
+   "https://www.reich-der-spiele.de/kritiken/dorfromantik",
+   "crítica, solo, grupo, otimização de pontos"
+  ],
+  [
+   "Boards Eye View – Dorfromantik",
+   "https://www.boardseyeview.net/post/dorfromantik",
+   "crítica, sorte das tarefas, videogame"
+  ],
+  [
+   "Across the Board – Dorfromantik",
+   "https://www.acrosstheboard.com.br/feminino/dorf-romantik-the-board-game",
+   "edição nacional, preço da editora, The Duel e Sakura"
+  ],
+  [
+   "ComparaJogos – Dorfromantik: The Board Game",
+   "https://www.comparajogos.com.br/item/dorfromantik-the-board-game",
+   "preços no Brasil, peso, idioma"
+  ],
+  [
+   "Alquimistas dos Jogos – Dorfromantik",
+   "https://www.alquimistasdosjogos.com.br/jogos/dorfromantik-the-board-game-great-mill",
+   "editora e idioma da edição nacional, preço"
+  ],
+  [
+   "Guilda dos Jogos – Dorfromantik",
+   "https://www.guildadosjogos.com.br/dorfromantik-the-board-game",
+   "preço e estoque"
+  ],
+  [
+   "BoardGameGeek – edição em português",
+   "https://boardgamegeek.com/boardgameversion/749572",
+   "edição Dorfromantik: O jogo de tabuleiro (2024)"
+  ]
+ ],
+ "legenda": "Dorfromantik vende paz no campo e entrega uma planilha de metas. E a planilha é a melhor parte. 🌾\n\nSpiel des Jahres 2023 e 2º lugar no Deutscher Spiele Preis.\nCooperativo de peças hexagonais em que ninguém perde: o adversário é o seu recorde, e os pontos abrem caixas lacradas.\nBrilha sozinho, em dupla e com criança. Em seis, alguém vira gerente. Tem edição nacional da Across the Board.\nVeredito: RECOMENDADO.\n\nVocê joga para relaxar ou para bater meta? Seja sincero. 👇\nResenha completa no link da bio.\n\n#Dorfromantik #SpielDesJahres #JogosDeTabuleiro #BoardGames #Boardgamer #Cooperativo #JogoSolo #PegasusSpiele #AcrossTheBoard #EliteBoardgamers"
+}
