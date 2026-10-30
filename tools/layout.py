@@ -64,7 +64,7 @@ CSS_COMPARTILHAR = (".cpw{position:relative;display:inline-block}"
                     ".convite{display:flex;align-items:center;justify-content:space-between;gap:12px 20px;flex-wrap:wrap}"
                     ".convite .cv-t{margin:0;font-weight:800;font-size:1.1rem}.convite .cv-s{margin:2px 0 0;font-size:.92rem;opacity:.8}"
                     # barra de leitura: aparece depois de rolar e some perto do fim
-                    ".barra-lt{position:fixed;z-index:25;left:50%;bottom:calc(12px + env(safe-area-inset-bottom));display:flex;align-items:center;gap:4px;padding:5px;"
+                    ".barra-lt>*{flex:none}.barra-lt{width:max-content;max-width:calc(100vw - 12px);box-sizing:border-box;position:fixed;z-index:25;left:50%;bottom:calc(12px + env(safe-area-inset-bottom));display:flex;align-items:center;gap:4px;padding:5px;"
                     "border-radius:999px;background:#14171c;border:1px solid #3a3f48;box-shadow:0 8px 24px rgba(0,0,0,.35);"
                     "transform:translate(-50%,0);transition:transform .25s ease,opacity .25s ease}"
                     ".barra-lt.fora{transform:translate(-50%,calc(100% + 24px));opacity:0;pointer-events:none}"
@@ -74,9 +74,12 @@ CSS_COMPARTILHAR = (".cpw{position:relative;display:inline-block}"
                     ".barra-lt .lt-b.curtir{background:none;border:0;color:#e9ecf1;padding:8px 14px}.barra-lt .lt-b.curtir[aria-pressed=true]{color:#ff6b81;background:none}"
                     "@media (max-width:479px){.lt-b span{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}}.lt-b.curtir[aria-pressed=true] .ic{fill:currentColor}"
                     # botão do grupo do WhatsApp: dourado da marca, só o ícone no celular
-                    ".lt-grupo{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-width:44px;min-height:44px;padding:0 12px;border-radius:999px;"
-                    "background:#e3b23c;color:#14171c;font-size:.9rem;font-weight:800;text-decoration:none}.lt-grupo:hover{background:#f0c44f;color:#14171c}"
-                    ".lt-grupo .ic{width:22px;height:22px}@media (max-width:479px){.lt-grupo{padding:0}.lt-grupo span{display:none}}"
+                    ".lt-grupo{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:44px;padding:0 14px 0 6px;border-radius:999px;"
+                    "background:#e3b23c;color:#14171c;font-size:.9rem;font-weight:800;text-decoration:none;white-space:nowrap}.lt-grupo:hover{background:#f0c44f;color:#14171c}"
+                    ".lt-grupo img{width:32px;height:32px;border-radius:8px;display:block}"
+                    # celular: botões mais justos para caber curtir, comentários, compartilhar e o grupo com nome
+                    "@media (max-width:479px){.barra-lt{gap:2px}.barra-lt .lt-b{padding:8px 10px}.barra-lt .cp{padding:8px 12px}.lt-grupo{padding:0 12px 0 6px}}"
+                    "@media (max-width:399px){.barra-lt:has(.curtir) .cp span{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}.barra-lt:has(.curtir) .cp{padding:8px 14px}}"
                     ".barra-lt .cp{min-height:44px;padding:8px 16px;font-size:.9rem}"
                     "body.lt-on .voltar-topo,body.lt-on button.sobe{bottom:calc(76px + env(safe-area-inset-bottom))}"
                     "@media print{.barra-lt{display:none}}")
@@ -221,7 +224,7 @@ def barra_leitura(texto="", url="", interacao=True):
         extras = (f'<button type="button" class="lt-b curtir" aria-pressed="false" aria-label="Curtir">{icone("coracao")}<b class="n">–</b></button>'
                   f'<a class="lt-b" href="#comentarios">{icone("balao")}<span>Comentários</span></a>')
     return (f'<div class="barra-lt fora" role="region" aria-label="Ações da página">{extras}{botao_compartilhar(texto, url)}'
-            f'<a class="lt-grupo" href="{WHATSAPP}" target="_blank" rel="noopener" aria-label="Entrar no grupo do WhatsApp da Elite">{icone("zap")}<span>Grupo</span></a></div>'
+            f'<a class="lt-grupo" href="{WHATSAPP}" target="_blank" rel="noopener" aria-label="Entrar no grupo do WhatsApp da Elite"><img src="/favicon-48.png" width="48" height="48" alt=""><span>Grupo</span></a></div>'
             f'<script>{JS_LEITURA}</script>')
 
 
