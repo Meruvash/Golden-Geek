@@ -1,6 +1,8 @@
-"""Pacote de divulgação do dia: textos prontos para copiar e colar no Instagram e nos grupos de WhatsApp/Telegram.
+"""Pacote de divulgação do dia: textos prontos para copiar e colar no Instagram, nos grupos de WhatsApp/Telegram
+e no fórum da Ludopédia (resenhas).
 
 Uso: python3 tools/divulgacao.py [AAAA-MM-DD]   (sem data: hoje, no horário de Brasília)
+     python3 tools/divulgacao.py --ludopedia     (todas as resenhas já publicadas, em divulgacao/ludopedia.md)
 Grava divulgacao/<data>.md (fica no repositório, fora do site) e imprime o resumo para os grupos.
 Os textos saem só do que já está publicado (título, lide, opinião, legenda da resenha): nada é inventado aqui.
 Pedido do usuário em 29/10/2026: trazer gente para o site pelas redes enquanto o Google ainda manda pouco.
@@ -87,6 +89,47 @@ def bloco_resenha(c, ch):
             f"**Instagram (legenda)**\n\n```\n{insta}\n```\n")
 
 
+def pagina_ludopedia(c):
+    """Página do jogo na Ludopédia, quando a resenha a usou como fonte (sem os parâmetros de aba)."""
+    for _, url, *_ in c.get("fontes", []):
+        if "ludopedia.com.br/jogo/" in url:
+            return re.split(r"[?&]", url)[0]
+    return None
+
+
+def post_ludopedia(c):
+    """Tópico de análise para o fórum do jogo na Ludopédia: um resumo próprio, não a resenha inteira
+    (texto idêntico ao do site concorreria com ele no Google), com o link para a resenha completa no fim.
+    Texto simples, sem marcação, para sair igual em qualquer editor. Tudo sai da resenha publicada."""
+    url = f"{SITE}/{c['slug']}/"
+    titulo = f"(Análise) {c['jogo']}: {c['tagline']}"
+    partes = [c["lede"]]
+    if c.get("experiencia"):
+        partes.append("COMO É JOGAR\n" + c["experiencia"][0])
+    if c.get("funciona"):
+        partes.append("O QUE FUNCIONA\n" + "\n".join(f"• {t}: {primeira_frase(x)}" for t, x in c["funciona"][:3]))
+    if c.get("atencao"):
+        partes.append("PONTOS DE ATENÇÃO\n" + "\n".join(f"• {t}: {primeira_frase(x)}" for _, t, x in c["atencao"][:3]))
+    if c.get("para_quem"):
+        partes.append("É PARA VOCÊ SE...\n" + "\n".join(f"• {x}" for x in c["para_quem"][:3]))
+    partes.append(f"VEREDITO ({c['selo']})\n{c['veredito']}")
+    if c.get("edicao_nacional"):
+        preco = c.get("preco_ref") or {}
+        partes.append("NO BRASIL\n" + primeira_frase(c["edicao_nacional"])
+                      + (f" Preço: {preco['faixa']} (consulta em {preco['data']})." if preco.get("faixa") else ""))
+    partes.append("A resenha completa, com as regras passo a passo, o que diz a crítica, as fontes e a comparação com outros jogos, "
+                  f"está no site da Elite Board Gamers:\n{url}")
+    onde = pagina_ludopedia(c)
+    return (f"### Ludopédia: {c['jogo']}\n\n"
+            + (f"Onde postar: fórum do jogo em {onde} (novo tópico, categoria de análise ou resenha)\n\n" if onde
+               else "Onde postar: procure o jogo na busca da Ludopédia e abra um novo tópico no fórum dele (categoria de análise ou resenha)\n\n")
+            + f"**Título do tópico**\n\n```\n{titulo}\n```\n\n**Texto**\n\n```\n" + "\n\n".join(partes) + "\n```\n")
+
+
+AVISO_LUDOPEDIA = ("Cole o título e o texto num tópico novo do fórum do jogo. Responda aos comentários: isso mantém o tópico em destaque. "
+                   "Não cole a resenha inteira do site nem só o link: o resumo com o link é o que a comunidade aceita melhor.\n\n")
+
+
 def resumo_grupos(dia, ns, rs, ch):
     d = datetime.fromisoformat(dia).strftime("%d/%m")
     linhas = [f"🎲 *O que rolou no tabuleiro hoje ({d})*", ""]
@@ -110,14 +153,32 @@ def gerar(dia):
           "com o endereço da notícia. Poste em horários diferentes ao longo do dia, não tudo de uma vez.\n\n"
           f"## Resumo do dia para grupos de WhatsApp e Telegram\n\n```\n{resumo}\n```\n\n"
           + (f"## Notícias ({len(ns)})\n\n" + "\n".join(bloco_noticia(n, ch) for n in ns) if ns else "")
-          + (f"\n## Resenhas ({len(rs)})\n\n" + "\n".join(bloco_resenha(c, ch) for c in rs) if rs else ""))
+          + (f"\n## Resenhas ({len(rs)})\n\n" + "\n".join(bloco_resenha(c, ch) for c in rs) if rs else "")
+          + (f"\n## Ludopédia ({len(rs)})\n\n{AVISO_LUDOPEDIA}" + "\n".join(post_ludopedia(c) for c in rs) if rs else ""))
     destino = ROOT / "divulgacao" / f"{dia}.md"
     destino.parent.mkdir(exist_ok=True)
     destino.write_text(md, encoding="utf-8")
     return destino, resumo
 
 
+def todas_ludopedia():
+    """Arquivo com o tópico da Ludopédia de todas as resenhas publicadas (para ir postando aos poucos)."""
+    pauta = json.loads((ROOT / "pauta.json").read_text(encoding="utf-8"))
+    rs = []
+    for pub in sorted(pauta["publicadas"], key=lambda p: p.get("data", ""), reverse=True):
+        arq = ROOT / "conteudo" / f'{pub["url"].rstrip("/").split("/")[-1]}.json'
+        if arq.exists():
+            rs.append(json.loads(arq.read_text(encoding="utf-8")))
+    destino = ROOT / "divulgacao" / "ludopedia.md"
+    destino.write_text(f"# Resenhas para a Ludopédia ({len(rs)})\n\nDa mais nova para a mais antiga. Uma ou duas por dia é o bastante. "
+                       + AVISO_LUDOPEDIA + "\n".join(post_ludopedia(c) for c in rs), encoding="utf-8")
+    return destino, len(rs)
+
+
 if __name__ == "__main__":
+    if "--ludopedia" in sys.argv:
+        destino, n = todas_ludopedia()
+        sys.exit(print(f"ok {destino.relative_to(ROOT)}: {n} resenhas"))
     dia = sys.argv[1] if len(sys.argv) > 1 else datetime.now(BRT).date().isoformat()
     destino, resumo = gerar(dia)
     if not destino:
