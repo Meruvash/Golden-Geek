@@ -110,6 +110,8 @@ CSS_BUSCA = (".busca-btn{display:grid;place-items:center;flex:none;width:44px;he
              # menu das seções sempre preso no topo; as outras barras presas ficam logo abaixo dele
              ":where(html){scroll-padding-top:calc(var(--nav-h,49px) + 12px)}"
              ".nav{position:sticky;top:0;z-index:20}body .abas,body .barra-f,body .ctrl{top:var(--nav-h,49px)}"
+             # logo horizontal do cabeçalho (dado EB + ELITE BOARD GAMERS), pela altura
+             ".marca img.logo{width:auto;height:48px;border-radius:0}@media (max-width:480px){.marca img.logo{height:40px}}"
              ".nav .casa{display:flex;align-items:center;justify-content:center;min-width:44px}.nav .casa .ic{width:20px;height:20px}"
              "@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;"
              "transition-duration:.01ms!important;scroll-behavior:auto!important}"
@@ -133,7 +135,7 @@ def cabecalho(pre, atual="", sub=False):
     casa = f'<li><a class="casa" href="{pre or './'}" aria-label="Página inicial"{" aria-current=\"page\"" if atual == "Início" else ""}>{icone("casa")}</a></li>'
     nav = casa + "".join(f'<li><a href="{pre}{h}"{f" aria-current=\"{marca}\"" if t == atual else ""}>{t}</a></li>' for h, t in SECOES)
     return f"""<header class="bar" id="topo"><div class="in">
- <a class="marca" href="{pre or './'}"><img src="{pre}marca/elite-boardgamers.webp" width="318" height="254" alt="Elite Boardgamers: página inicial"></a>
+ <a class="marca" href="{pre or './'}"><img class="logo" src="{pre}marca/logo-eb-104.webp" srcset="{pre}marca/logo-eb-52.webp 157w, {pre}marca/logo-eb-104.webp 314w, {pre}marca/logo-eb-156.webp 472w" sizes="(max-width: 480px) 121px, 145px" width="157" height="52" alt="Elite Board Gamers: página inicial"></a>
  <a class="ig" href="{INSTAGRAM}" target="_blank" rel="noopener" aria-label="Instagram @eliteboardgamers">{icone("insta")}<span>@eliteboardgamers</span></a>
  <a class="zap-mini" href="{WHATSAPP}" target="_blank" rel="noopener" aria-label="Grupo do WhatsApp">{icone("zap")}<span>Grupo do WhatsApp</span></a>
  <button type="button" class="busca-btn" aria-label="Buscar no site" aria-haspopup="dialog" aria-keyshortcuts="/ Control+K" hidden>{icone("busca")}</button>
