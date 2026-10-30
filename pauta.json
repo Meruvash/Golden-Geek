@@ -12,9 +12,10 @@
   ],
   "entram": "vencedores e indicados que ficaram entre os 3 melhores da categoria",
   "excluidos": "categorias Aplicativo e Print & Play do Golden Geek (não são jogos de caixa)",
-  "ordem": "vencedores antes de indicados; jogos-base antes de expansões; mais prêmios diferentes primeiro; mais premiações primeiro; prêmio mais recente primeiro",
+  "ordem": "vencedores do Golden Geek primeiro (pedido do usuário em 30/10/2026): carros-chefe (Jogo do Ano, Temático, Estratégia, Cooperativo, Família, Festa ou 2+ categorias; mais vitórias e Jogo do Ano antes, prêmio mais recente antes), depois os outros vencedores do Golden Geek, depois o resto (vencedores antes de indicados; mais prêmios diferentes primeiro; prêmio mais recente primeiro); expansões no fim",
   "ritmo": "4 resenhas por dia",
-  "finalistas": "em prêmios sem ranking (Spiel des Jahres, As d'Or), os indicados/finalistas oficiais contam como top 3"
+  "finalistas": "em prêmios sem ranking (Spiel des Jahres, As d'Or), os indicados/finalistas oficiais contam como top 3",
+  "carro_chefe": "todo dia pelo menos 1 das 4 resenhas é carro-chefe (★ em fila_fotos.py), o jogo forte para divulgar; fila_fotos.py dia escolhe os 4 e garante isso"
  },
  "pendente": "Prêmio Ludopedia: o site bloqueia acesso automatizado; incluir manualmente ou por outra fonte",
  "publicadas": [
@@ -1402,13 +1403,14 @@
     }
    ],
    "status": "sem_fotos",
-   "prioridade": 23,
+   "prioridade": 57,
    "premios_distintos": 2,
    "fotos": {
     "verificado_em": "2026-10-28",
     "obs": "FFG, Asmodee UK, Commons: só caixa, arte e componentes em fundo branco; Galápagos bloqueia robôs. Pedir kit de imprensa."
    },
-   "slug": "arkham-horror-lcg"
+   "slug": "arkham-horror-lcg",
+   "carro_chefe": false
   },
   {
    "jogo": "7 Wonders Duel",
@@ -1458,13 +1460,14 @@
     }
    ],
    "status": "sem_fotos",
-   "prioridade": 24,
+   "prioridade": 40,
    "premios_distintos": 2,
    "fotos": {
     "verificado_em": "2026-10-28",
     "obs": "Repos, Asmodee UK, Spiel des Jahres, Commons: só caixa, arte e componentes em fundo branco; Galápagos bloqueia robôs. Pedir kit (info@rprod.com)."
    },
-   "slug": "7-wonders-duel"
+   "slug": "7-wonders-duel",
+   "carro_chefe": true
   },
   {
    "jogo": "Galactic Cruise",
@@ -1549,12 +1552,13 @@
     }
    ],
    "status": "sem_fotos",
-   "prioridade": 26,
+   "prioridade": 58,
    "premios_distintos": 2,
    "fotos": {
     "verificado_em": "2026-10-28",
     "obs": "Repos Production (página do jogo e de imprensa): só caixa, render de catálogo e arte; Asmodee distribui"
-   }
+   },
+   "carro_chefe": false
   },
   {
    "jogo": "SETI: Search for Extraterrestrial Intelligence",
@@ -1684,12 +1688,13 @@
     }
    ],
    "status": "sem_fotos",
-   "prioridade": 29,
+   "prioridade": 59,
    "premios_distintos": 2,
    "fotos": {
     "verificado_em": "2026-10-28",
     "obs": "Libellud: só caixas e arte; Galápagos bloqueia robôs"
-   }
+   },
+   "carro_chefe": false
   },
   {
    "jogo": "Harmonies",
@@ -1759,12 +1764,13 @@
     }
    ],
    "status": "sem_fotos",
-   "prioridade": 31,
+   "prioridade": 60,
    "premios_distintos": 2,
    "fotos": {
     "verificado_em": "2026-10-28",
     "obs": "Le Scorpion Masqué (página do jogo): só render de catálogo em fundo liso, selos e arte"
-   }
+   },
+   "carro_chefe": false
   },
   {
    "jogo": "Civolution",
@@ -1931,11 +1937,12 @@
    ],
    "status": "sem_fotos",
    "premios_distintos": 2,
-   "prioridade": 37,
+   "prioridade": 96,
    "fotos": {
     "verificado_em": "2026-10-29",
     "obs": "Adam's Apple Games (só caixas), Strohmann Games e Pegasus (página não encontrada); Galápagos bloqueia robôs"
-   }
+   },
+   "carro_chefe": false
   },
   {
    "jogo": "That’s Not a Hat",
@@ -1961,8 +1968,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 38,
-   "premios_distintos": 2
+   "prioridade": 45,
+   "premios_distintos": 2,
+   "carro_chefe": true
   },
   {
    "jogo": "7 Wonders: Architects",
@@ -1988,8 +1996,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 39,
-   "premios_distintos": 2
+   "prioridade": 97,
+   "premios_distintos": 2,
+   "carro_chefe": false
   },
   {
    "jogo": "Living Forest",
@@ -2016,7 +2025,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 2,
-   "prioridade": 40
+   "prioridade": 98,
+   "carro_chefe": false
   },
   {
    "jogo": "Dragomino",
@@ -2043,7 +2053,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 2,
-   "prioridade": 41
+   "prioridade": 99,
+   "carro_chefe": false
   },
   {
    "jogo": "Paleo",
@@ -2070,7 +2081,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 2,
-   "prioridade": 42
+   "prioridade": 100,
+   "carro_chefe": false
   },
   {
    "jogo": "Just One",
@@ -2096,8 +2108,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 43,
-   "premios_distintos": 2
+   "prioridade": 101,
+   "premios_distintos": 2,
+   "carro_chefe": false
   },
   {
    "jogo": "Werewords",
@@ -2123,8 +2136,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 44,
-   "premios_distintos": 2
+   "prioridade": 55,
+   "premios_distintos": 2,
+   "carro_chefe": true
   },
   {
    "jogo": "That’s Pretty Clever",
@@ -2150,8 +2164,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 45,
-   "premios_distintos": 2
+   "prioridade": 61,
+   "premios_distintos": 2,
+   "carro_chefe": false
   },
   {
    "jogo": "The Quacks of Quedlinburg",
@@ -2177,8 +2192,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 46,
-   "premios_distintos": 2
+   "prioridade": 53,
+   "premios_distintos": 2,
+   "carro_chefe": true
   },
   {
    "jogo": "Kingdomino",
@@ -2205,7 +2221,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 2,
-   "prioridade": 47
+   "prioridade": 102,
+   "carro_chefe": false
   },
   {
    "jogo": "The Voyages of Marco Polo",
@@ -2231,8 +2248,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 48,
-   "premios_distintos": 2
+   "prioridade": 103,
+   "premios_distintos": 2,
+   "carro_chefe": false
   },
   {
    "jogo": "Sleeping Gods",
@@ -2290,8 +2308,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 49,
-   "premios_distintos": 1
+   "prioridade": 38,
+   "premios_distintos": 1,
+   "carro_chefe": true
   },
   {
    "jogo": "The Lord of the Rings: Fate of the Fellowship",
@@ -2436,8 +2455,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 52,
-   "premios_distintos": 1
+   "prioridade": 37,
+   "premios_distintos": 1,
+   "carro_chefe": true
   },
   {
    "jogo": "Oath: Chronicles of Empire and Exile",
@@ -2479,8 +2499,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 53,
-   "premios_distintos": 1
+   "prioridade": 62,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Gloomhaven: Jaws of the Lion",
@@ -2522,8 +2543,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 54,
-   "premios_distintos": 1
+   "prioridade": 24,
+   "premios_distintos": 1,
+   "carro_chefe": true
   },
   {
    "jogo": "Hot Streak",
@@ -2557,8 +2579,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 55,
-   "premios_distintos": 1
+   "prioridade": 26,
+   "premios_distintos": 1,
+   "carro_chefe": true
   },
   {
    "jogo": "The Lord of the Rings: Duel for Middle-earth",
@@ -2592,8 +2615,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 56,
-   "premios_distintos": 1
+   "prioridade": 63,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Earth",
@@ -2627,8 +2651,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 57,
-   "premios_distintos": 1
+   "prioridade": 42,
+   "premios_distintos": 1,
+   "carro_chefe": true
   },
   {
    "jogo": "Hegemony: Lead Your Class to Victory",
@@ -2662,8 +2687,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 58,
-   "premios_distintos": 1
+   "prioridade": 23,
+   "premios_distintos": 1,
+   "carro_chefe": true
   },
   {
    "jogo": "On Mars",
@@ -2697,8 +2723,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 59,
-   "premios_distintos": 1
+   "prioridade": 64,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Brass: Birmingham",
@@ -2732,8 +2759,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 60,
-   "premios_distintos": 1
+   "prioridade": 54,
+   "premios_distintos": 1,
+   "carro_chefe": true
   },
   {
    "jogo": "KeyForge: Call of the Archons",
@@ -2767,8 +2795,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 61,
-   "premios_distintos": 1
+   "prioridade": 65,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Star Wars: Rebellion",
@@ -2802,8 +2831,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 62,
-   "premios_distintos": 1
+   "prioridade": 66,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Slay the Spire: The Board Game",
@@ -2829,8 +2859,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 63,
-   "premios_distintos": 1
+   "prioridade": 67,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "So Clover!",
@@ -2856,8 +2887,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 64,
-   "premios_distintos": 1
+   "prioridade": 48,
+   "premios_distintos": 1,
+   "carro_chefe": true
   },
   {
    "jogo": "The Castles of Burgundy: Special Edition",
@@ -2883,8 +2915,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 65,
-   "premios_distintos": 1
+   "prioridade": 68,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Undaunted: Battle of Britain",
@@ -2910,8 +2943,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 66,
-   "premios_distintos": 1
+   "prioridade": 69,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Cat in the Box: Deluxe Edition",
@@ -2937,8 +2971,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 67,
-   "premios_distintos": 1
+   "prioridade": 29,
+   "premios_distintos": 1,
+   "carro_chefe": true
   },
   {
    "jogo": "Flamecraft",
@@ -2964,8 +2999,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 68,
-   "premios_distintos": 1
+   "prioridade": 70,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Splendor Duel",
@@ -2991,8 +3027,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 69,
-   "premios_distintos": 1
+   "prioridade": 71,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Undaunted: Stalingrad",
@@ -3018,8 +3055,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 70,
-   "premios_distintos": 1
+   "prioridade": 72,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Final Girl",
@@ -3045,8 +3083,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 71,
-   "premios_distintos": 1
+   "prioridade": 73,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "The Crew: Mission Deep Sea",
@@ -3072,8 +3111,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 72,
-   "premios_distintos": 1
+   "prioridade": 31,
+   "premios_distintos": 1,
+   "carro_chefe": true
   },
   {
    "jogo": "Forgotten Waters",
@@ -3099,8 +3139,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 73,
-   "premios_distintos": 1
+   "prioridade": 74,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Imperial Struggle",
@@ -3126,8 +3167,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 74,
-   "premios_distintos": 1
+   "prioridade": 75,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Undaunted: North Africa",
@@ -3153,8 +3195,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 75,
-   "premios_distintos": 1
+   "prioridade": 76,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Undaunted: Normandy",
@@ -3180,8 +3223,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 76,
-   "premios_distintos": 1
+   "prioridade": 77,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Wavelength",
@@ -3207,8 +3251,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 77,
-   "premios_distintos": 1
+   "prioridade": 49,
+   "premios_distintos": 1,
+   "carro_chefe": true
   },
   {
    "jogo": "Century: Spice Road",
@@ -3235,7 +3280,8 @@
    ],
    "status": "na_fila",
    "prioridade": 78,
-   "premios_distintos": 1
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Captain Sonar",
@@ -3262,7 +3308,8 @@
    ],
    "status": "na_fila",
    "prioridade": 79,
-   "premios_distintos": 1
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Codenames: Pictures",
@@ -3288,8 +3335,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 80,
-   "premios_distintos": 1
+   "prioridade": 39,
+   "premios_distintos": 1,
+   "carro_chefe": true
   },
   {
    "jogo": "Mechs vs. Minions",
@@ -3315,8 +3363,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 81,
-   "premios_distintos": 1
+   "prioridade": 56,
+   "premios_distintos": 1,
+   "carro_chefe": true
   },
   {
    "jogo": "Santuário",
@@ -3354,7 +3403,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 83
+   "prioridade": 104,
+   "carro_chefe": false
   },
   {
    "jogo": "Zénith",
@@ -3373,7 +3423,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 84
+   "prioridade": 105,
+   "carro_chefe": false
   },
   {
    "jogo": "Behind",
@@ -3392,7 +3443,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 85
+   "prioridade": 106,
+   "carro_chefe": false
   },
   {
    "jogo": "Kutná Hora",
@@ -3411,7 +3463,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 86
+   "prioridade": 107,
+   "carro_chefe": false
   },
   {
    "jogo": "Odin",
@@ -3430,7 +3483,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 87
+   "prioridade": 108,
+   "carro_chefe": false
   },
   {
    "jogo": "Opération Noisettes",
@@ -3449,7 +3503,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 88
+   "prioridade": 109,
+   "carro_chefe": false
   },
   {
    "jogo": "Star Wars: The Battle of Hoth",
@@ -3467,8 +3522,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 89,
-   "premios_distintos": 1
+   "prioridade": 80,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "The Old King’s Crown",
@@ -3486,8 +3542,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 90,
-   "premios_distintos": 1
+   "prioridade": 81,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Topp die Torte",
@@ -3506,7 +3563,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 91
+   "prioridade": 110,
+   "carro_chefe": false
   },
   {
    "jogo": "Castle Combo",
@@ -3524,8 +3582,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 92,
-   "premios_distintos": 1
+   "prioridade": 41,
+   "premios_distintos": 1,
+   "carro_chefe": true
   },
   {
    "jogo": "Forest Shuffle",
@@ -3544,7 +3603,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 93
+   "prioridade": 111,
+   "carro_chefe": false
   },
   {
    "jogo": "La Famiglia",
@@ -3563,7 +3623,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 94
+   "prioridade": 112,
+   "carro_chefe": false
   },
   {
    "jogo": "Magic Keys",
@@ -3582,7 +3643,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 95
+   "prioridade": 113,
+   "carro_chefe": false
   },
   {
    "jogo": "Mon puzzle aventure",
@@ -3601,7 +3663,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 96
+   "prioridade": 114,
+   "carro_chefe": false
   },
   {
    "jogo": "The Fellowship of the Ring: Trick-Taking Game",
@@ -3619,8 +3682,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 97,
-   "premios_distintos": 1
+   "prioridade": 44,
+   "premios_distintos": 1,
+   "carro_chefe": true
   },
   {
    "jogo": "Trio",
@@ -3639,7 +3703,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 98
+   "prioridade": 115,
+   "carro_chefe": false
   },
   {
    "jogo": "Unconscious Mind",
@@ -3657,8 +3722,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 99,
-   "premios_distintos": 1
+   "prioridade": 83,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Akropolis",
@@ -3677,7 +3743,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 100
+   "prioridade": 116,
+   "carro_chefe": false
   },
   {
    "jogo": "Flashback Zombie Kids",
@@ -3696,7 +3763,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 101
+   "prioridade": 117,
+   "carro_chefe": false
   },
   {
    "jogo": "Legacy of Yu",
@@ -3714,8 +3782,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 102,
-   "premios_distintos": 1
+   "prioridade": 84,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Mysterium Kids",
@@ -3734,7 +3803,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 103
+   "prioridade": 118,
+   "carro_chefe": false
   },
   {
    "jogo": "Thunder Road: Vendetta",
@@ -3752,8 +3822,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 104,
-   "premios_distintos": 1
+   "prioridade": 43,
+   "premios_distintos": 1,
+   "carro_chefe": true
   },
   {
    "jogo": "Bubble Stories",
@@ -3772,7 +3843,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 105
+   "prioridade": 119,
+   "carro_chefe": false
   },
   {
    "jogo": "Magic Mountain",
@@ -3791,7 +3863,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 106
+   "prioridade": 120,
+   "carro_chefe": false
   },
   {
    "jogo": "Ready Set Bet",
@@ -3809,8 +3882,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 107,
-   "premios_distintos": 1
+   "prioridade": 46,
+   "premios_distintos": 1,
+   "carro_chefe": true
   },
   {
    "jogo": "Return to Dark Tower",
@@ -3828,8 +3902,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 108,
-   "premios_distintos": 1
+   "prioridade": 47,
+   "premios_distintos": 1,
+   "carro_chefe": true
   },
   {
    "jogo": "Radlands",
@@ -3847,8 +3922,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 109,
-   "premios_distintos": 1
+   "prioridade": 85,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Undaunted: Reinforcements",
@@ -3866,8 +3942,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 110,
-   "premios_distintos": 1
+   "prioridade": 86,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Attrape-rêves",
@@ -3886,7 +3963,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 111
+   "prioridade": 121,
+   "carro_chefe": false
   },
   {
    "jogo": "Hedgehog Roll",
@@ -3905,7 +3983,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 112
+   "prioridade": 122,
+   "carro_chefe": false
   },
   {
    "jogo": "Oriflamme",
@@ -3924,7 +4003,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 113
+   "prioridade": 123,
+   "carro_chefe": false
   },
   {
    "jogo": "Pictures",
@@ -3943,7 +4023,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 114
+   "prioridade": 124,
+   "carro_chefe": false
   },
   {
    "jogo": "Res Arcana",
@@ -3962,7 +4043,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 115
+   "prioridade": 125,
+   "carro_chefe": false
   },
   {
    "jogo": "Under Falling Skies",
@@ -3980,8 +4062,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 116,
-   "premios_distintos": 1
+   "prioridade": 87,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Dune",
@@ -3999,8 +4082,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 117,
-   "premios_distintos": 1
+   "prioridade": 52,
+   "premios_distintos": 1,
+   "carro_chefe": true
   },
   {
    "jogo": "Mr Wolf",
@@ -4019,7 +4103,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 118
+   "prioridade": 126,
+   "carro_chefe": false
   },
   {
    "jogo": "Valley of the Vikings",
@@ -4038,7 +4123,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 119
+   "prioridade": 127,
+   "carro_chefe": false
   },
   {
    "jogo": "Watergate",
@@ -4056,8 +4142,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 120,
-   "premios_distintos": 1
+   "prioridade": 88,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Dragon's Breath",
@@ -4076,7 +4163,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 121
+   "prioridade": 128,
+   "carro_chefe": false
   },
   {
    "jogo": "Hannibal & Hamilcar",
@@ -4094,8 +4182,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 122,
-   "premios_distintos": 1
+   "prioridade": 89,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Nom d’un renard",
@@ -4114,7 +4203,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 123
+   "prioridade": 129,
+   "carro_chefe": false
   },
   {
    "jogo": "878: Vikings – Invasions of England",
@@ -4132,8 +4222,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 124,
-   "premios_distintos": 1
+   "prioridade": 90,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Codenames Duet",
@@ -4151,8 +4242,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 125,
-   "premios_distintos": 1
+   "prioridade": 91,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Exit: The Game",
@@ -4171,7 +4263,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 126
+   "prioridade": 130,
+   "carro_chefe": false
   },
   {
    "jogo": "ICECOOL",
@@ -4190,7 +4283,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 127
+   "prioridade": 131,
+   "carro_chefe": false
   },
   {
    "jogo": "Kikou le Coucou",
@@ -4209,7 +4303,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 128
+   "prioridade": 132,
+   "carro_chefe": false
   },
   {
    "jogo": "Photosynthesis",
@@ -4227,8 +4322,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 129,
-   "premios_distintos": 1
+   "prioridade": 92,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Unlock!",
@@ -4247,7 +4343,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 130
+   "prioridade": 133,
+   "carro_chefe": false
   },
   {
    "jogo": "Falling Sky: The Gallic Revolt Against Caesar",
@@ -4265,8 +4362,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 131,
-   "premios_distintos": 1
+   "prioridade": 93,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Isle of Skye: From Chieftain to King",
@@ -4285,7 +4383,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 132
+   "prioridade": 134,
+   "carro_chefe": false
   },
   {
    "jogo": "Maître Renard",
@@ -4304,7 +4403,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 133
+   "prioridade": 135,
+   "carro_chefe": false
   },
   {
    "jogo": "Mombasa",
@@ -4323,7 +4423,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 134
+   "prioridade": 136,
+   "carro_chefe": false
   },
   {
    "jogo": "My First Stone Age",
@@ -4342,7 +4443,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 135
+   "prioridade": 137,
+   "carro_chefe": false
   },
   {
    "jogo": "Broom Service",
@@ -4361,7 +4463,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 136
+   "prioridade": 138,
+   "carro_chefe": false
   },
   {
    "jogo": "Churchill",
@@ -4379,8 +4482,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 137,
-   "premios_distintos": 1
+   "prioridade": 94,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Five Tribes",
@@ -4399,7 +4503,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 138
+   "prioridade": 139,
+   "carro_chefe": false
   },
   {
    "jogo": "La Chasse aux Gigamons",
@@ -4418,7 +4523,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 139
+   "prioridade": 140,
+   "carro_chefe": false
   },
   {
    "jogo": "Loony Quest",
@@ -4437,7 +4543,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 140
+   "prioridade": 141,
+   "carro_chefe": false
   },
   {
    "jogo": "Spinderella",
@@ -4456,7 +4563,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 141
+   "prioridade": 142,
+   "carro_chefe": false
   },
   {
    "jogo": "Tiny Epic Galaxies",
@@ -4474,8 +4582,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 142,
-   "premios_distintos": 1
+   "prioridade": 95,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "SETI: Space Agencies",
@@ -4493,8 +4602,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 143,
-   "premios_distintos": 1
+   "prioridade": 402,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Arcs: The Blighted Reach Expansion",
@@ -4512,8 +4622,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 144,
-   "premios_distintos": 1
+   "prioridade": 403,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Ark Nova: Marine Worlds",
@@ -4531,8 +4642,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 145,
-   "premios_distintos": 1
+   "prioridade": 404,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Dune: Imperium – Rise of Ix",
@@ -4550,8 +4662,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 146,
-   "premios_distintos": 1
+   "prioridade": 405,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Lost Ruins of Arnak: Expedition Leaders",
@@ -4569,8 +4682,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 147,
-   "premios_distintos": 1
+   "prioridade": 406,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Wingspan: Oceania Expansion",
@@ -4588,8 +4702,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 148,
-   "premios_distintos": 1
+   "prioridade": 407,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Wingspan: European Expansion",
@@ -4607,8 +4722,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 149,
-   "premios_distintos": 1
+   "prioridade": 408,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Scythe: The Rise of Fenris",
@@ -4626,8 +4742,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 150,
-   "premios_distintos": 1
+   "prioridade": 409,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Scythe: The Wind Gambit",
@@ -4645,8 +4762,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 151,
-   "premios_distintos": 1
+   "prioridade": 410,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "7 Wonders Duel: Pantheon",
@@ -4664,8 +4782,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 152,
-   "premios_distintos": 1
+   "prioridade": 411,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Ticket to Ride Map Collection: Volume 5 – United Kingdom & Pennsylvania",
@@ -4683,8 +4802,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 153,
-   "premios_distintos": 1
+   "prioridade": 412,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "T.I.M.E Stories",
@@ -4742,8 +4862,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 154,
-   "premios_distintos": 4
+   "prioridade": 143,
+   "premios_distintos": 4,
+   "carro_chefe": false
   },
   {
    "jogo": "Captain Flip",
@@ -4777,8 +4898,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 155,
-   "premios_distintos": 3
+   "prioridade": 144,
+   "premios_distintos": 3,
+   "carro_chefe": false
   },
   {
    "jogo": "Great Western Trail",
@@ -4812,8 +4934,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 156,
-   "premios_distintos": 3
+   "prioridade": 145,
+   "premios_distintos": 3,
+   "carro_chefe": false
   },
   {
    "jogo": "Take Time",
@@ -4839,8 +4962,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 157,
-   "premios_distintos": 2
+   "prioridade": 146,
+   "premios_distintos": 2,
+   "carro_chefe": false
   },
   {
    "jogo": "Darwin’s Journey",
@@ -4866,8 +4990,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 158,
-   "premios_distintos": 2
+   "prioridade": 147,
+   "premios_distintos": 2,
+   "carro_chefe": false
   },
   {
    "jogo": "In the Footsteps of Darwin",
@@ -4894,7 +5019,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 2,
-   "prioridade": 159
+   "prioridade": 148,
+   "carro_chefe": false
   },
   {
    "jogo": "The White Castle",
@@ -4920,8 +5046,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 160,
-   "premios_distintos": 2
+   "prioridade": 149,
+   "premios_distintos": 2,
+   "carro_chefe": false
   },
   {
    "jogo": "Iki",
@@ -4948,7 +5075,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 2,
-   "prioridade": 161
+   "prioridade": 150,
+   "carro_chefe": false
   },
   {
    "jogo": "Top Ten",
@@ -4975,7 +5103,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 2,
-   "prioridade": 162
+   "prioridade": 151,
+   "carro_chefe": false
   },
   {
    "jogo": "The Adventures of Robin Hood",
@@ -5002,7 +5131,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 2,
-   "prioridade": 163
+   "prioridade": 152,
+   "carro_chefe": false
   },
   {
    "jogo": "The King's Dilemma",
@@ -5029,7 +5159,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 2,
-   "prioridade": 164
+   "prioridade": 153,
+   "carro_chefe": false
   },
   {
    "jogo": "Cartographers",
@@ -5056,7 +5187,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 2,
-   "prioridade": 165
+   "prioridade": 154,
+   "carro_chefe": false
   },
   {
    "jogo": "Maracaibo",
@@ -5082,8 +5214,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 166,
-   "premios_distintos": 2
+   "prioridade": 155,
+   "premios_distintos": 2,
+   "carro_chefe": false
   },
   {
    "jogo": "My City",
@@ -5109,8 +5242,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 167,
-   "premios_distintos": 2
+   "prioridade": 156,
+   "premios_distintos": 2,
+   "carro_chefe": false
   },
   {
    "jogo": "Magic Maze",
@@ -5136,8 +5270,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 168,
-   "premios_distintos": 2
+   "prioridade": 157,
+   "premios_distintos": 2,
+   "carro_chefe": false
   },
   {
    "jogo": "Imhotep",
@@ -5163,8 +5298,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 169,
-   "premios_distintos": 2
+   "prioridade": 158,
+   "premios_distintos": 2,
+   "carro_chefe": false
   },
   {
    "jogo": "Machi Koro",
@@ -5191,7 +5327,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 2,
-   "prioridade": 170
+   "prioridade": 159,
+   "carro_chefe": false
   },
   {
    "jogo": "Orléans",
@@ -5218,7 +5355,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 2,
-   "prioridade": 171
+   "prioridade": 160,
+   "carro_chefe": false
   },
   {
    "jogo": "The 7th Continent",
@@ -5268,8 +5406,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 172,
-   "premios_distintos": 1
+   "prioridade": 161,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Earthborne Rangers",
@@ -5303,8 +5442,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 173,
-   "premios_distintos": 1
+   "prioridade": 162,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Wonderland’s War",
@@ -5338,8 +5478,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 174,
-   "premios_distintos": 1
+   "prioridade": 163,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Canvas",
@@ -5373,8 +5514,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 175,
-   "premios_distintos": 1
+   "prioridade": 164,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Marvel Champions: The Card Game",
@@ -5408,8 +5550,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 176,
-   "premios_distintos": 1
+   "prioridade": 165,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Chronicles of Crime",
@@ -5443,8 +5586,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 177,
-   "premios_distintos": 1
+   "prioridade": 166,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Magical Athlete",
@@ -5470,8 +5614,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 178,
-   "premios_distintos": 1
+   "prioridade": 167,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Moon Colony Bloodbath",
@@ -5497,8 +5642,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 179,
-   "premios_distintos": 1
+   "prioridade": 168,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Star Trek: Captain’s Chair",
@@ -5524,8 +5670,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 180,
-   "premios_distintos": 1
+   "prioridade": 169,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "A Gest of Robin Hood",
@@ -5551,8 +5698,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 181,
-   "premios_distintos": 1
+   "prioridade": 170,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Dune: Imperium – Uprising",
@@ -5578,8 +5726,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 182,
-   "premios_distintos": 1
+   "prioridade": 171,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "John Company: Second Edition",
@@ -5605,8 +5754,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 183,
-   "premios_distintos": 1
+   "prioridade": 172,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Long Shot: The Dice Game",
@@ -5632,8 +5782,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 184,
-   "premios_distintos": 1
+   "prioridade": 173,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Resist!",
@@ -5659,8 +5810,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 185,
-   "premios_distintos": 1
+   "prioridade": 174,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Wingspan Asia",
@@ -5686,8 +5838,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 186,
-   "premios_distintos": 1
+   "prioridade": 175,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Calico",
@@ -5713,8 +5866,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 187,
-   "premios_distintos": 1
+   "prioridade": 176,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "The Search for Planet X",
@@ -5740,8 +5894,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 188,
-   "premios_distintos": 1
+   "prioridade": 177,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Blitzkrieg!: World War Two in 20 Minutes",
@@ -5767,8 +5922,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 189,
-   "premios_distintos": 1
+   "prioridade": 178,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Paladins of the West Kingdom",
@@ -5794,8 +5950,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 190,
-   "premios_distintos": 1
+   "prioridade": 179,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Tapestry",
@@ -5821,8 +5978,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 191,
-   "premios_distintos": 1
+   "prioridade": 180,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "The Lord of the Rings: Journeys in Middle-earth",
@@ -5848,8 +6006,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 192,
-   "premios_distintos": 1
+   "prioridade": 181,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Welcome To…",
@@ -5875,8 +6034,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 193,
-   "premios_distintos": 1
+   "prioridade": 182,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Sagrada",
@@ -5902,8 +6062,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 194,
-   "premios_distintos": 1
+   "prioridade": 183,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Mansions of Madness: Second Edition",
@@ -5929,8 +6090,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 195,
-   "premios_distintos": 1
+   "prioridade": 184,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Baseball Highlights: 2045",
@@ -5956,8 +6118,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 196,
-   "premios_distintos": 1
+   "prioridade": 185,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Archéo",
@@ -5976,7 +6139,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 197
+   "prioridade": 186,
+   "carro_chefe": false
   },
   {
    "jogo": "Arcs: Guerre et Déclin dans les Confins",
@@ -5995,7 +6159,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 198
+   "prioridade": 187,
+   "carro_chefe": false
   },
   {
    "jogo": "Boss Fighters QR",
@@ -6014,7 +6179,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 199
+   "prioridade": 188,
+   "carro_chefe": false
   },
   {
    "jogo": "First Rat",
@@ -6033,7 +6199,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 200
+   "prioridade": 189,
+   "carro_chefe": false
   },
   {
    "jogo": "Fourmis",
@@ -6052,7 +6219,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 201
+   "prioridade": 190,
+   "carro_chefe": false
   },
   {
    "jogo": "La Valse des Fantômes",
@@ -6071,7 +6239,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 202
+   "prioridade": 191,
+   "carro_chefe": false
   },
   {
    "jogo": "Rebirth",
@@ -6090,7 +6259,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 203
+   "prioridade": 192,
+   "carro_chefe": false
   },
   {
    "jogo": "Cascadia Junior",
@@ -6109,7 +6279,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 204
+   "prioridade": 193,
+   "carro_chefe": false
   },
   {
    "jogo": "Cross Bronx Expressway",
@@ -6127,8 +6298,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 205,
-   "premios_distintos": 1
+   "prioridade": 194,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Eternal Decks",
@@ -6146,8 +6318,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 206,
-   "premios_distintos": 1
+   "prioridade": 195,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "For a Crown",
@@ -6166,7 +6339,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 207
+   "prioridade": 196,
+   "carro_chefe": false
   },
   {
    "jogo": "Krakel Orakel",
@@ -6185,7 +6359,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 208
+   "prioridade": 197,
+   "carro_chefe": false
   },
   {
    "jogo": "Kronologic : Paris 1920",
@@ -6204,7 +6379,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 209
+   "prioridade": 198,
+   "carro_chefe": false
   },
   {
    "jogo": "Le Clan des Souris",
@@ -6223,7 +6399,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 210
+   "prioridade": 199,
+   "carro_chefe": false
   },
   {
    "jogo": "Les Éclairtout",
@@ -6242,7 +6419,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 211
+   "prioridade": 200,
+   "carro_chefe": false
   },
   {
    "jogo": "Looot",
@@ -6261,7 +6439,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 212
+   "prioridade": 201,
+   "carro_chefe": false
   },
   {
    "jogo": "Luthier",
@@ -6279,8 +6458,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 213,
-   "premios_distintos": 1
+   "prioridade": 202,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Mimose et Sam et le voleur de fruits",
@@ -6299,7 +6479,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 214
+   "prioridade": 203,
+   "carro_chefe": false
   },
   {
    "jogo": "Sankoré",
@@ -6318,7 +6499,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 215
+   "prioridade": 204,
+   "carro_chefe": false
   },
   {
    "jogo": "Speakeasy",
@@ -6336,8 +6518,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 216,
-   "premios_distintos": 1
+   "prioridade": 205,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Tag Team",
@@ -6355,8 +6538,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 217,
-   "premios_distintos": 1
+   "prioridade": 206,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Cat in the Box",
@@ -6375,7 +6559,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 218
+   "prioridade": 207,
+   "carro_chefe": false
   },
   {
    "jogo": "Dune: War for Arrakis",
@@ -6393,8 +6578,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 219,
-   "premios_distintos": 1
+   "prioridade": 208,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Eila et l'Éclat de la montagne",
@@ -6413,7 +6599,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 220
+   "prioridade": 209,
+   "carro_chefe": false
   },
   {
    "jogo": "Fromage",
@@ -6431,8 +6618,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 221,
-   "premios_distintos": 1
+   "prioridade": 210,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Gloomhaven: Buttons & Bugs",
@@ -6450,8 +6638,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 222,
-   "premios_distintos": 1
+   "prioridade": 211,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Große kleine Edelsteine",
@@ -6470,7 +6659,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 223
+   "prioridade": 212,
+   "carro_chefe": false
   },
   {
    "jogo": "Imperium: Horizons",
@@ -6488,8 +6678,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 224,
-   "premios_distintos": 1
+   "prioridade": 213,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Kelp: Shark vs Octopus",
@@ -6507,8 +6698,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 225,
-   "premios_distintos": 1
+   "prioridade": 214,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Le Château blanc",
@@ -6527,7 +6719,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 226
+   "prioridade": 215,
+   "carro_chefe": false
   },
   {
    "jogo": "Let’s Go! To Japan",
@@ -6545,8 +6738,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 227,
-   "premios_distintos": 1
+   "prioridade": 216,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Morris le dodo",
@@ -6565,7 +6759,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 228
+   "prioridade": 217,
+   "carro_chefe": false
   },
   {
    "jogo": "Perfect Words",
@@ -6584,7 +6779,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 229
+   "prioridade": 218,
+   "carro_chefe": false
   },
   {
    "jogo": "Super Miaou",
@@ -6603,7 +6799,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 230
+   "prioridade": 219,
+   "carro_chefe": false
   },
   {
    "jogo": "Taco Kitten Pizza",
@@ -6622,7 +6819,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 231
+   "prioridade": 220,
+   "carro_chefe": false
   },
   {
    "jogo": "The Gang",
@@ -6640,8 +6838,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 232,
-   "premios_distintos": 1
+   "prioridade": 221,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "The Guild of Merchant Explorers",
@@ -6660,7 +6859,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 233
+   "prioridade": 222,
+   "carro_chefe": false
   },
   {
    "jogo": "Things in Rings",
@@ -6678,8 +6878,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 234,
-   "premios_distintos": 1
+   "prioridade": 223,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Ticket to Ride Legacy: Legends of the West",
@@ -6698,7 +6899,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 235
+   "prioridade": 224,
+   "carro_chefe": false
   },
   {
    "jogo": "Alice Is Missing",
@@ -6717,7 +6919,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 236
+   "prioridade": 225,
+   "carro_chefe": false
   },
   {
    "jogo": "Carla Caramel",
@@ -6736,7 +6939,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 237
+   "prioridade": 226,
+   "carro_chefe": false
   },
   {
    "jogo": "District noir",
@@ -6755,7 +6959,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 238
+   "prioridade": 227,
+   "carro_chefe": false
   },
   {
    "jogo": "Dixit: Disney Edition",
@@ -6773,8 +6978,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 239,
-   "premios_distintos": 1
+   "prioridade": 228,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Fun Facts",
@@ -6793,7 +6999,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 240
+   "prioridade": 229,
+   "carro_chefe": false
   },
   {
    "jogo": "Fédération",
@@ -6812,7 +7019,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 241
+   "prioridade": 230,
+   "carro_chefe": false
   },
   {
    "jogo": "Gigamons",
@@ -6831,7 +7039,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 242
+   "prioridade": 231,
+   "carro_chefe": false
   },
   {
    "jogo": "Halls of Hegra",
@@ -6849,8 +7058,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 243,
-   "premios_distintos": 1
+   "prioridade": 232,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Knarr",
@@ -6868,8 +7078,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 244,
-   "premios_distintos": 1
+   "prioridade": 233,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "La Colline aux feux follets",
@@ -6888,7 +7099,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 245
+   "prioridade": 234,
+   "carro_chefe": false
   },
   {
    "jogo": "La Planche des pirates",
@@ -6907,7 +7119,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 246
+   "prioridade": 235,
+   "carro_chefe": false
   },
   {
    "jogo": "Next Station London",
@@ -6926,7 +7139,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 247
+   "prioridade": 236,
+   "carro_chefe": false
   },
   {
    "jogo": "Sleeping Gods: Distant Skies",
@@ -6944,8 +7158,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 248,
-   "premios_distintos": 1
+   "prioridade": 237,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Star Wars: The Deckbuilding Game",
@@ -6963,8 +7178,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 249,
-   "premios_distintos": 1
+   "prioridade": 238,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "The British Way",
@@ -6982,8 +7198,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 250,
-   "premios_distintos": 1
+   "prioridade": 239,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Voidfall",
@@ -7001,8 +7218,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 251,
-   "premios_distintos": 1
+   "prioridade": 240,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Attrape-Monstres",
@@ -7021,7 +7239,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 252
+   "prioridade": 241,
+   "carro_chefe": false
   },
   {
    "jogo": "Blood on the Clocktower",
@@ -7039,8 +7258,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 253,
-   "premios_distintos": 1
+   "prioridade": 242,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Cartaventura : Lhassa",
@@ -7059,7 +7279,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 254
+   "prioridade": 243,
+   "carro_chefe": false
   },
   {
    "jogo": "Cryptid",
@@ -7078,7 +7299,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 255
+   "prioridade": 244,
+   "carro_chefe": false
   },
   {
    "jogo": "Endless Winter: Paleoamericans",
@@ -7096,8 +7318,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 256,
-   "premios_distintos": 1
+   "prioridade": 245,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Everdell: The Complete Collection",
@@ -7115,8 +7338,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 257,
-   "premios_distintos": 1
+   "prioridade": 246,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Ganz Schön Clever Kids",
@@ -7135,7 +7359,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 258
+   "prioridade": 247,
+   "carro_chefe": false
   },
   {
    "jogo": "Happy City",
@@ -7154,7 +7379,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 259
+   "prioridade": 248,
+   "carro_chefe": false
   },
   {
    "jogo": "ISS Vanguard",
@@ -7172,8 +7398,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 260,
-   "premios_distintos": 1
+   "prioridade": 249,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Les Ruines Perdues de Narak",
@@ -7192,7 +7419,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 261
+   "prioridade": 250,
+   "carro_chefe": false
   },
   {
    "jogo": "Nemo’s War: The Ultimate Edition",
@@ -7210,8 +7438,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 262,
-   "premios_distintos": 1
+   "prioridade": 251,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Nouvelles Contrées",
@@ -7230,7 +7459,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 263
+   "prioridade": 252,
+   "carro_chefe": false
   },
   {
    "jogo": "Oathsworn: Into the Deepwood",
@@ -7248,8 +7478,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 264,
-   "premios_distintos": 1
+   "prioridade": 253,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Oltréé",
@@ -7268,7 +7499,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 265
+   "prioridade": 254,
+   "carro_chefe": false
   },
   {
    "jogo": "Pin Pon !",
@@ -7287,7 +7519,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 266
+   "prioridade": 255,
+   "carro_chefe": false
   },
   {
    "jogo": "Quacks & Co. Quedlinburg Dash",
@@ -7306,7 +7539,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 267
+   "prioridade": 256,
+   "carro_chefe": false
   },
   {
    "jogo": "Scout",
@@ -7325,7 +7559,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 268
+   "prioridade": 257,
+   "carro_chefe": false
   },
   {
    "jogo": "Votes for Women",
@@ -7343,8 +7578,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 269,
-   "premios_distintos": 1
+   "prioridade": 258,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Atlantic Chase",
@@ -7362,8 +7598,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 270,
-   "premios_distintos": 1
+   "prioridade": 259,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Carro Combo",
@@ -7382,7 +7619,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 271
+   "prioridade": 260,
+   "carro_chefe": false
   },
   {
    "jogo": "Don’t Get Got!: Shut Up & Sit Down Special Edition",
@@ -7400,8 +7638,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 272,
-   "premios_distintos": 1
+   "prioridade": 261,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Détective Charlie",
@@ -7420,7 +7659,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 273
+   "prioridade": 262,
+   "carro_chefe": false
   },
   {
    "jogo": "Fantasy Realms",
@@ -7439,7 +7679,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 274
+   "prioridade": 263,
+   "carro_chefe": false
   },
   {
    "jogo": "Ghost Adventure",
@@ -7458,7 +7699,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 275
+   "prioridade": 264,
+   "carro_chefe": false
   },
   {
    "jogo": "Imperium: Classics",
@@ -7476,8 +7718,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 276,
-   "premios_distintos": 1
+   "prioridade": 265,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Kraken Attack !",
@@ -7496,7 +7739,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 277
+   "prioridade": 266,
+   "carro_chefe": false
   },
   {
    "jogo": "La Maison des souris",
@@ -7515,7 +7759,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 278
+   "prioridade": 267,
+   "carro_chefe": false
   },
   {
    "jogo": "Mia London",
@@ -7534,7 +7779,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 279
+   "prioridade": 268,
+   "carro_chefe": false
   },
   {
    "jogo": "MicroMacro: Crime City – Full House",
@@ -7552,8 +7798,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 280,
-   "premios_distintos": 1
+   "prioridade": 269,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Red Flag Over Paris",
@@ -7571,8 +7818,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 281,
-   "premios_distintos": 1
+   "prioridade": 270,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Stella: Dixit Universe",
@@ -7590,8 +7838,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 282,
-   "premios_distintos": 1
+   "prioridade": 271,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Storytailors",
@@ -7610,7 +7859,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 283
+   "prioridade": 272,
+   "carro_chefe": false
   },
   {
    "jogo": "Summoner Wars (Second Edition)",
@@ -7628,8 +7878,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 284,
-   "premios_distintos": 1
+   "prioridade": 273,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Tainted Grail : La Chute d'Avalon",
@@ -7648,7 +7899,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 285
+   "prioridade": 274,
+   "carro_chefe": false
   },
   {
    "jogo": "Terraforming Mars: Ares Expedition",
@@ -7666,8 +7918,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 286,
-   "premios_distintos": 1
+   "prioridade": 275,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "That Time You Killed Me",
@@ -7685,8 +7938,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 287,
-   "premios_distintos": 1
+   "prioridade": 276,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Zombie Teenz Evolution",
@@ -7705,7 +7959,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 288
+   "prioridade": 277,
+   "carro_chefe": false
   },
   {
    "jogo": "Beyond the Sun",
@@ -7723,8 +7978,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 289,
-   "premios_distintos": 1
+   "prioridade": 278,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Draftosaurus",
@@ -7743,7 +7999,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 290
+   "prioridade": 279,
+   "carro_chefe": false
   },
   {
    "jogo": "Fiesta de los Muertos",
@@ -7762,7 +8019,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 291
+   "prioridade": 280,
+   "carro_chefe": false
   },
   {
    "jogo": "Fort",
@@ -7780,8 +8038,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 292,
-   "premios_distintos": 1
+   "prioridade": 281,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Foto Fish",
@@ -7800,7 +8059,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 293
+   "prioridade": 282,
+   "carro_chefe": false
   },
   {
    "jogo": "It’s A Wonderful World",
@@ -7819,7 +8079,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 294
+   "prioridade": 283,
+   "carro_chefe": false
   },
   {
    "jogo": "La Vallée des Vikings",
@@ -7838,7 +8099,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 295
+   "prioridade": 284,
+   "carro_chefe": false
   },
   {
    "jogo": "Little Town",
@@ -7857,7 +8119,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 296
+   "prioridade": 285,
+   "carro_chefe": false
   },
   {
    "jogo": "Nova Luna",
@@ -7876,7 +8139,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 297
+   "prioridade": 286,
+   "carro_chefe": false
   },
   {
    "jogo": "Oceans",
@@ -7894,8 +8158,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 298,
-   "premios_distintos": 1
+   "prioridade": 287,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Pandemic Legacy: Season 0",
@@ -7913,8 +8178,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 299,
-   "premios_distintos": 1
+   "prioridade": 288,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Project L",
@@ -7932,8 +8198,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 300,
-   "premios_distintos": 1
+   "prioridade": 289,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Robots",
@@ -7952,7 +8219,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 301
+   "prioridade": 290,
+   "carro_chefe": false
   },
   {
    "jogo": "Roulapik d'Urtis Sulinskas",
@@ -7971,7 +8239,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 302
+   "prioridade": 291,
+   "carro_chefe": false
   },
   {
    "jogo": "Santa Monica",
@@ -7989,8 +8258,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 303,
-   "premios_distintos": 1
+   "prioridade": 292,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Unmatched: Cobble & Fog",
@@ -8008,8 +8278,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 304,
-   "premios_distintos": 1
+   "prioridade": 293,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Versailles 1919",
@@ -8027,8 +8298,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 305,
-   "premios_distintos": 1
+   "prioridade": 294,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Viscounts of the West Kingdom",
@@ -8046,8 +8318,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 306,
-   "premios_distintos": 1
+   "prioridade": 295,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Yum Yum Island",
@@ -8066,7 +8339,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 307
+   "prioridade": 296,
+   "carro_chefe": false
   },
   {
    "jogo": "Azul: Summer Pavilion",
@@ -8084,8 +8358,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 308,
-   "premios_distintos": 1
+   "prioridade": 297,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Carpe Diem",
@@ -8104,7 +8379,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 309
+   "prioridade": 298,
+   "carro_chefe": false
   },
   {
    "jogo": "Fabulantica",
@@ -8123,7 +8399,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 310
+   "prioridade": 299,
+   "carro_chefe": false
   },
   {
    "jogo": "Go Gecko Go!",
@@ -8142,7 +8419,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 311
+   "prioridade": 300,
+   "carro_chefe": false
   },
   {
    "jogo": "KeyForge",
@@ -8161,7 +8439,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 312
+   "prioridade": 301,
+   "carro_chefe": false
   },
   {
    "jogo": "Kikafé?",
@@ -8180,7 +8459,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 313
+   "prioridade": 302,
+   "carro_chefe": false
   },
   {
    "jogo": "L'île au trésor",
@@ -8199,7 +8479,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 314
+   "prioridade": 303,
+   "carro_chefe": false
   },
   {
    "jogo": "L.A.M.A. (L.L.A.M.A.)",
@@ -8218,7 +8499,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 315
+   "prioridade": 304,
+   "carro_chefe": false
   },
   {
    "jogo": "Le Monstre des couleurs",
@@ -8237,7 +8519,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 316
+   "prioridade": 305,
+   "carro_chefe": false
   },
   {
    "jogo": "Letter Jam",
@@ -8255,8 +8538,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 317,
-   "premios_distintos": 1
+   "prioridade": 306,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Men at Work",
@@ -8274,8 +8558,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 318,
-   "premios_distintos": 1
+   "prioridade": 307,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "PARKS",
@@ -8293,8 +8578,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 319,
-   "premios_distintos": 1
+   "prioridade": 308,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Shadows Amsterdam",
@@ -8313,7 +8599,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 320
+   "prioridade": 309,
+   "carro_chefe": false
   },
   {
    "jogo": "Solenia",
@@ -8332,7 +8619,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 321
+   "prioridade": 310,
+   "carro_chefe": false
   },
   {
    "jogo": "Spirit Island",
@@ -8351,7 +8639,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 322
+   "prioridade": 311,
+   "carro_chefe": false
   },
   {
    "jogo": "Star Wars: Outer Rim",
@@ -8369,8 +8658,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 323,
-   "premios_distintos": 1
+   "prioridade": 312,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Teotihuacan",
@@ -8389,7 +8679,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 324
+   "prioridade": 313,
+   "carro_chefe": false
   },
   {
    "jogo": "The Taverns of Tiefenthal",
@@ -8408,7 +8699,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 325
+   "prioridade": 314,
+   "carro_chefe": false
   },
   {
    "jogo": "Tiny Towns",
@@ -8426,8 +8718,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 326,
-   "premios_distintos": 1
+   "prioridade": 315,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Twice as Clever",
@@ -8445,8 +8738,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 327,
-   "premios_distintos": 1
+   "prioridade": 316,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "UBOOT: The Board Game",
@@ -8464,8 +8758,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 328,
-   "premios_distintos": 1
+   "prioridade": 317,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Zombie Kidz Evolution",
@@ -8484,7 +8779,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 329
+   "prioridade": 318,
+   "carro_chefe": false
   },
   {
    "jogo": "1066: Tears to Many Mothers",
@@ -8502,8 +8798,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 330,
-   "premios_distintos": 1
+   "prioridade": 319,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Architects of the West Kingdom",
@@ -8521,8 +8818,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 331,
-   "premios_distintos": 1
+   "prioridade": 320,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Booum !",
@@ -8541,7 +8839,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 332
+   "prioridade": 321,
+   "carro_chefe": false
   },
   {
    "jogo": "Cataclysm: A Second World War",
@@ -8559,8 +8858,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 333,
-   "premios_distintos": 1
+   "prioridade": 322,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Decrypto",
@@ -8578,8 +8878,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 334,
-   "premios_distintos": 1
+   "prioridade": 323,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Dice Forge",
@@ -8598,7 +8899,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 335
+   "prioridade": 324,
+   "carro_chefe": false
   },
   {
    "jogo": "Duelosaur Island",
@@ -8616,8 +8918,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 336,
-   "premios_distintos": 1
+   "prioridade": 325,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Emojito!",
@@ -8636,7 +8939,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 337
+   "prioridade": 326,
+   "carro_chefe": false
   },
   {
    "jogo": "Everdell",
@@ -8654,8 +8958,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 338,
-   "premios_distintos": 1
+   "prioridade": 327,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Flamme rouge",
@@ -8674,7 +8979,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 339
+   "prioridade": 328,
+   "carro_chefe": false
   },
   {
    "jogo": "Gaia Project",
@@ -8693,7 +8999,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 340
+   "prioridade": 329,
+   "carro_chefe": false
   },
   {
    "jogo": "Heaven & Ale",
@@ -8712,7 +9019,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 341
+   "prioridade": 330,
+   "carro_chefe": false
   },
   {
    "jogo": "Luxor",
@@ -8731,7 +9039,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 342
+   "prioridade": 331,
+   "carro_chefe": false
   },
   {
    "jogo": "Panic Mansion",
@@ -8750,7 +9059,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 343
+   "prioridade": 332,
+   "carro_chefe": false
   },
   {
    "jogo": "Perlatette",
@@ -8769,7 +9079,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 344
+   "prioridade": 333,
+   "carro_chefe": false
   },
   {
    "jogo": "Rajas of the Ganges",
@@ -8788,7 +9099,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 345
+   "prioridade": 334,
+   "carro_chefe": false
   },
   {
    "jogo": "Rising Sun",
@@ -8806,8 +9118,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 346,
-   "premios_distintos": 1
+   "prioridade": 335,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Teotihuacan: City of Gods",
@@ -8825,8 +9138,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 347,
-   "premios_distintos": 1
+   "prioridade": 336,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Thunderstone Quest",
@@ -8844,8 +9158,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 348,
-   "premios_distintos": 1
+   "prioridade": 337,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Twin it",
@@ -8864,7 +9179,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 349
+   "prioridade": 338,
+   "carro_chefe": false
   },
   {
    "jogo": "War Chest",
@@ -8882,8 +9198,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 350,
-   "premios_distintos": 1
+   "prioridade": 339,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Western Legends",
@@ -8901,8 +9218,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 351,
-   "premios_distintos": 1
+   "prioridade": 340,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "A Feast for Odin",
@@ -8921,7 +9239,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 352
+   "prioridade": 341,
+   "carro_chefe": false
   },
   {
    "jogo": "Animouv",
@@ -8940,7 +9259,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 353
+   "prioridade": 342,
+   "carro_chefe": false
   },
   {
    "jogo": "Captain Silver",
@@ -8959,7 +9279,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 354
+   "prioridade": 343,
+   "carro_chefe": false
   },
   {
    "jogo": "Caverna: Cave vs. Cave",
@@ -8977,8 +9298,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 355,
-   "premios_distintos": 1
+   "prioridade": 344,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Clank! In! Space!",
@@ -8996,8 +9318,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 356,
-   "premios_distintos": 1
+   "prioridade": 345,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Clans of Caledonia",
@@ -9015,8 +9338,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 357,
-   "premios_distintos": 1
+   "prioridade": 346,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Conan",
@@ -9035,7 +9359,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 358
+   "prioridade": 347,
+   "carro_chefe": false
   },
   {
    "jogo": "Ethnos",
@@ -9053,8 +9378,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 359,
-   "premios_distintos": 1
+   "prioridade": 348,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Imagine",
@@ -9073,7 +9399,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 360
+   "prioridade": 349,
+   "carro_chefe": false
   },
   {
    "jogo": "L’âge de pierre junior",
@@ -9092,7 +9419,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 361
+   "prioridade": 350,
+   "carro_chefe": false
   },
   {
    "jogo": "Nemo’s War (Second Edition)",
@@ -9110,8 +9438,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 362,
-   "premios_distintos": 1
+   "prioridade": 351,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Pandemic Legacy: Season 2",
@@ -9129,8 +9458,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 363,
-   "premios_distintos": 1
+   "prioridade": 352,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Pendragon: The Fall of Roman Britain",
@@ -9148,8 +9478,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 364,
-   "premios_distintos": 1
+   "prioridade": 353,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Raiders of the North Sea",
@@ -9168,7 +9499,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 365
+   "prioridade": 354,
+   "carro_chefe": false
   },
   {
    "jogo": "Spyfall 2",
@@ -9186,8 +9518,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 366,
-   "premios_distintos": 1
+   "prioridade": 355,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Star Realms",
@@ -9206,7 +9539,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 367
+   "prioridade": 356,
+   "carro_chefe": false
   },
   {
    "jogo": "The Fox in the Forest",
@@ -9224,8 +9558,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 368,
-   "premios_distintos": 1
+   "prioridade": 357,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "The Mysterious Forest",
@@ -9244,7 +9579,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 369
+   "prioridade": 358,
+   "carro_chefe": false
   },
   {
    "jogo": "The Quest for El Dorado",
@@ -9263,7 +9599,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 370
+   "prioridade": 359,
+   "carro_chefe": false
   },
   {
    "jogo": "This War of Mine",
@@ -9281,8 +9618,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 371,
-   "premios_distintos": 1
+   "prioridade": 360,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Time of Crisis",
@@ -9300,8 +9638,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 372,
-   "premios_distintos": 1
+   "prioridade": 361,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Tortuga 1667",
@@ -9319,8 +9658,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 373,
-   "premios_distintos": 1
+   "prioridade": 362,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Animal Mystère",
@@ -9339,7 +9679,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 374
+   "prioridade": 363,
+   "carro_chefe": false
   },
   {
    "jogo": "Clank!",
@@ -9357,8 +9698,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 375,
-   "premios_distintos": 1
+   "prioridade": 364,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Comanchería: The Rise and Fall of the Comanche Empire",
@@ -9376,8 +9718,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 376,
-   "premios_distintos": 1
+   "prioridade": 365,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Hero Realms",
@@ -9395,8 +9738,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 377,
-   "premios_distintos": 1
+   "prioridade": 366,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Inis",
@@ -9414,8 +9758,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 378,
-   "premios_distintos": 1
+   "prioridade": 367,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Karuba",
@@ -9434,7 +9779,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 379
+   "prioridade": 368,
+   "carro_chefe": false
   },
   {
    "jogo": "Le jeu aux mille titres",
@@ -9453,7 +9799,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 380
+   "prioridade": 369,
+   "carro_chefe": false
   },
   {
    "jogo": "Leo Goes to the Barber",
@@ -9472,7 +9819,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 381
+   "prioridade": 370,
+   "carro_chefe": false
   },
   {
    "jogo": "Liberty or Death: The American Insurrection",
@@ -9490,8 +9838,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 382,
-   "premios_distintos": 1
+   "prioridade": 371,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Mafia de Cuba",
@@ -9510,7 +9859,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 383
+   "prioridade": 372,
+   "carro_chefe": false
   },
   {
    "jogo": "Mmm!",
@@ -9529,7 +9879,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 384
+   "prioridade": 373,
+   "carro_chefe": false
   },
   {
    "jogo": "Quadropolis",
@@ -9547,8 +9898,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 385,
-   "premios_distintos": 1
+   "prioridade": 374,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Qui paire gagne",
@@ -9567,7 +9919,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 386
+   "prioridade": 375,
+   "carro_chefe": false
   },
   {
    "jogo": "Secret Hitler",
@@ -9585,8 +9938,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 387,
-   "premios_distintos": 1
+   "prioridade": 376,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Sushi Go Party!",
@@ -9604,8 +9958,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 388,
-   "premios_distintos": 1
+   "prioridade": 377,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Vast: The Crystal Caverns",
@@ -9623,8 +9978,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 389,
-   "premios_distintos": 1
+   "prioridade": 378,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "504",
@@ -9642,8 +9998,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 390,
-   "premios_distintos": 1
+   "prioridade": 379,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Above and Below",
@@ -9661,8 +10018,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 391,
-   "premios_distintos": 1
+   "prioridade": 380,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Abyss",
@@ -9681,7 +10039,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 392
+   "prioridade": 381,
+   "carro_chefe": false
   },
   {
    "jogo": "Arboretum",
@@ -9699,8 +10058,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 393,
-   "premios_distintos": 1
+   "prioridade": 382,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Between Two Cities",
@@ -9718,8 +10078,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 394,
-   "premios_distintos": 1
+   "prioridade": 383,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Blood Rage",
@@ -9737,8 +10098,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 395,
-   "premios_distintos": 1
+   "prioridade": 384,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Dead of Winter",
@@ -9757,7 +10119,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 396
+   "prioridade": 385,
+   "carro_chefe": false
   },
   {
    "jogo": "Deus",
@@ -9776,7 +10139,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 397
+   "prioridade": 386,
+   "carro_chefe": false
   },
   {
    "jogo": "Elysium",
@@ -9795,7 +10159,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 398
+   "prioridade": 387,
+   "carro_chefe": false
   },
   {
    "jogo": "Flick ’em Up!",
@@ -9813,8 +10178,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 399,
-   "premios_distintos": 1
+   "prioridade": 388,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Hostage Negotiator",
@@ -9832,8 +10198,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 400,
-   "premios_distintos": 1
+   "prioridade": 389,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Héros à Louer",
@@ -9852,7 +10219,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 401
+   "prioridade": 390,
+   "carro_chefe": false
   },
   {
    "jogo": "Le Lièvre et la Tortue",
@@ -9871,7 +10239,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 402
+   "prioridade": 391,
+   "carro_chefe": false
   },
   {
    "jogo": "Parade",
@@ -9890,7 +10259,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 403
+   "prioridade": 392,
+   "carro_chefe": false
   },
   {
    "jogo": "Perlin Pinpin",
@@ -9909,7 +10279,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 404
+   "prioridade": 393,
+   "carro_chefe": false
   },
   {
    "jogo": "Push a Monster",
@@ -9928,7 +10299,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 405
+   "prioridade": 394,
+   "carro_chefe": false
   },
   {
    "jogo": "Schatz-Rabatz",
@@ -9947,7 +10319,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 406
+   "prioridade": 395,
+   "carro_chefe": false
   },
   {
    "jogo": "Splendor",
@@ -9966,7 +10339,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 407
+   "prioridade": 396,
+   "carro_chefe": false
   },
   {
    "jogo": "The Game",
@@ -9985,7 +10359,8 @@
    ],
    "status": "na_fila",
    "premios_distintos": 1,
-   "prioridade": 408
+   "prioridade": 397,
+   "carro_chefe": false
   },
   {
    "jogo": "The Grizzled",
@@ -10003,8 +10378,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 409,
-   "premios_distintos": 1
+   "prioridade": 398,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "The U.S. Civil War",
@@ -10022,8 +10398,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 410,
-   "premios_distintos": 1
+   "prioridade": 399,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Tides of Time",
@@ -10041,8 +10418,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 411,
-   "premios_distintos": 1
+   "prioridade": 400,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Triumph & Tragedy",
@@ -10060,8 +10438,9 @@
     }
    ],
    "status": "na_fila",
-   "prioridade": 412,
-   "premios_distintos": 1
+   "prioridade": 401,
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Dune: Imperium – Bloodlines",
@@ -10080,7 +10459,8 @@
    ],
    "status": "na_fila",
    "prioridade": 413,
-   "premios_distintos": 1
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Lost Ruins of Arnak: Twisted Paths",
@@ -10099,7 +10479,8 @@
    ],
    "status": "na_fila",
    "prioridade": 414,
-   "premios_distintos": 1
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Forest Shuffle: Alpine",
@@ -10118,7 +10499,8 @@
    ],
    "status": "na_fila",
    "prioridade": 415,
-   "premios_distintos": 1
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Heat: Heavy Rain",
@@ -10137,7 +10519,8 @@
    ],
    "status": "na_fila",
    "prioridade": 416,
-   "premios_distintos": 1
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Cascadia: Landmarks",
@@ -10156,7 +10539,8 @@
    ],
    "status": "na_fila",
    "prioridade": 417,
-   "premios_distintos": 1
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Lost Ruins of Arnak: The Missing Expedition",
@@ -10175,7 +10559,8 @@
    ],
    "status": "na_fila",
    "prioridade": 418,
-   "premios_distintos": 1
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Dune: Imperium – Immortality",
@@ -10194,7 +10579,8 @@
    ],
    "status": "na_fila",
    "prioridade": 419,
-   "premios_distintos": 1
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Concordia: Solitaria",
@@ -10213,7 +10599,8 @@
    ],
    "status": "na_fila",
    "prioridade": 420,
-   "premios_distintos": 1
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "PARKS: Nightfall",
@@ -10232,7 +10619,8 @@
    ],
    "status": "na_fila",
    "prioridade": 421,
-   "premios_distintos": 1
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Root: The Underworld Expansion",
@@ -10251,7 +10639,8 @@
    ],
    "status": "na_fila",
    "prioridade": 422,
-   "premios_distintos": 1
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Spirit Island: Jagged Earth",
@@ -10270,7 +10659,8 @@
    ],
    "status": "na_fila",
    "prioridade": 423,
-   "premios_distintos": 1
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Terraforming Mars: Turmoil",
@@ -10289,7 +10679,8 @@
    ],
    "status": "na_fila",
    "prioridade": 424,
-   "premios_distintos": 1
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "The Quacks of Quedlinburg: The Herb Witches",
@@ -10308,7 +10699,8 @@
    ],
    "status": "na_fila",
    "prioridade": 425,
-   "premios_distintos": 1
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Root: The Riverfolk Expansion",
@@ -10327,7 +10719,8 @@
    ],
    "status": "na_fila",
    "prioridade": 426,
-   "premios_distintos": 1
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Terraforming Mars: Prelude",
@@ -10346,7 +10739,8 @@
    ],
    "status": "na_fila",
    "prioridade": 427,
-   "premios_distintos": 1
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Terraforming Mars: Hellas & Elysium",
@@ -10365,7 +10759,8 @@
    ],
    "status": "na_fila",
    "prioridade": 428,
-   "premios_distintos": 1
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Terraforming Mars: Venus Next",
@@ -10384,7 +10779,8 @@
    ],
    "status": "na_fila",
    "prioridade": 429,
-   "premios_distintos": 1
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Dead of Winter: The Long Night",
@@ -10403,7 +10799,8 @@
    ],
    "status": "na_fila",
    "prioridade": 430,
-   "premios_distintos": 1
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "T.I.M.E Stories: A Prophecy of Dragons",
@@ -10422,7 +10819,8 @@
    ],
    "status": "na_fila",
    "prioridade": 431,
-   "premios_distintos": 1
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Five Tribes: The Artisans of Naqala",
@@ -10441,7 +10839,8 @@
    ],
    "status": "na_fila",
    "prioridade": 432,
-   "premios_distintos": 1
+   "premios_distintos": 1,
+   "carro_chefe": false
   },
   {
    "jogo": "Roll for the Galaxy: Ambition",
@@ -10460,7 +10859,8 @@
    ],
    "status": "na_fila",
    "prioridade": 433,
-   "premios_distintos": 1
+   "premios_distintos": 1,
+   "carro_chefe": false
   }
  ]
 }

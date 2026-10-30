@@ -36,7 +36,7 @@ Se o jogo tiver `serie` ou outros itens da mesma série na fila (versões, sequ�
 
 Prêmios que contam (de `pauta.json > regras`): Golden Geek, Spiel des Jahres, Kennerspiel, Kinderspiel, As d'Or, Deutscher Spiele Preis e Prêmio Ludopedia. Entram vencedores e indicados que ficaram entre os 3 melhores da categoria. Excluir as categorias Aplicativo e Print & Play.
 
-Para cada prêmio novo: colete de página oficial (Wikipedia só para conferir), registre `{premio, ano, categoria, colocacao, fonte}` e una com o jogo existente pelo nome oficial do BGG. Recalcule `prioridade`: vencedores antes de indicados; jogos-base antes de expansões; mais premiações primeiro; prêmio mais recente primeiro. Nunca inclua um jogo sem fonte do prêmio.
+Para cada prêmio novo: colete de página oficial (Wikipedia só para conferir), registre `{premio, ano, categoria, colocacao, fonte}` e una com o jogo existente pelo nome oficial do BGG. Recalcule `prioridade` com `python3 tools/fila_fotos.py reordenar`: **vencedores do Golden Geek primeiro** (pedido do usuário em 30/10/2026), começando pelos carros-chefe (★: Jogo do Ano, Temático, Estratégia, Cooperativo, Família, Festa ou duas categorias ou mais), depois os outros vencedores do Golden Geek, depois o resto (vencedores antes de indicados; mais premiações primeiro; prêmio mais recente primeiro); expansões no fim. Nunca inclua um jogo sem fonte do prêmio.
 
 ## Etapa 1: triagem de fotos (antes de pesquisar e escrever)
 
@@ -83,7 +83,7 @@ Na véspera, a tarefa "Fotos oficiais das resenhas do dia seguinte (15h)" faz a 
 
 ## Rotina diária (07:55 de Brasília, sessão agendada): 4 resenhas no ar, sem aprovação
 
-1. `git pull origin main`. Pegue os 4 próximos `na_fila` com "fotos ok" em `fila_fotos.py proximos` (faltando, faça a triagem da etapa 1; quem não passar vira `sem_fotos` e entra o seguinte).
+1. `git pull origin main`. `python3 tools/fila_fotos.py dia` escolhe os 4 do dia entre os `na_fila` com "fotos ok" e **garante pelo menos 1 carro-chefe (★)**: o jogo popular e premiado que dá para divulgar como destaque do dia (pedido do usuário em 30/10/2026). Se ele avisar que nenhum carro-chefe tem fotos, faça a triagem (etapa 1) do carro-chefe indicado antes de escrever; quem não passar vira `sem_fotos` e entra o carro-chefe seguinte. Faltando jogos com fotos, faça a triagem dos próximos.
 2. Para cada um: etapa 1b (pesquisa) e etapa 2 (texto), com `perfil`, `passos`, `como_resumo` e `legenda` no JSON. Não escreva `roteiro`: sem ele, `python3 tools/checar_roteiro.py conteudo/<slug>.json` confere só o texto do site, e precisa passar.
 3. Publique na hora (etapa 7) todos os que passaram, num único commit em `main` com push.
 4. Resumo curto ao usuário: jogos publicados com link, selo e prêmio, os que saíram da fila (`sem_fotos`) com o pedido de kit de imprensa pronto, e as legendas do Instagram. Não peça aprovação.
