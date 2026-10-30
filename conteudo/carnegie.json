@@ -1,0 +1,391 @@
+{
+ "slug": "carnegie",
+ "jogo": "Carnegie",
+ "cor": "#8a5a3c",
+ "kicker": "Resenha · Euro pesado de empresas e ferrovias",
+ "og_titulo": "Carnegie: a resenha do euro que faz da doação um investimento",
+ "titulo_busca": "Carnegie: resenha do vencedor do Golden Geek de jogo pesado",
+ "descricao": "Resenha de Carnegie, de Xavier Georges, vencedor do Golden Geek 2022 de jogo pesado e finalista do As d'Or 2023: como funciona, o que a crítica elogia e onde achar no Brasil.",
+ "titulo_html": "Filantropia, só que com planilha: <span>Carnegie</span>",
+ "lede": "Carnegie é um eurogame pesado de Xavier Georges, com arte de Ian O'Toole: cada jogador monta uma empresa nos Estados Unidos do século XIX ao longo de 20 rodadas. Venceu o Golden Geek de Jogo do Ano pesado de 2022 e foi finalista do As d'Or Expert 2023. O tema é um magnata que virou filantropo. O jogo entendeu a filantropia do jeito dele: doar custa 5 dólares de papel e pode render 12 pontos. Nenhum banco paga isso.",
+ "tags": [
+  "1–4 jogadores",
+  "90–120 min",
+  "12+",
+  "Pesado",
+  "Seleção de ações"
+ ],
+ "alt": "Mesa de Carnegie montada, com o mapa dos Estados Unidos, os tabuleiros de empresa e os trabalhadores dos jogadores",
+ "premiacoes": [
+  {
+   "premio": "Golden Geek",
+   "ano": 2022,
+   "categoria": "Jogo do Ano pesado",
+   "colocacao": 1,
+   "resultado": "vencedor",
+   "fonte": "https://boardgamewire.com/?p=251",
+   "rotulo": "Vencedor"
+  },
+  {
+   "premio": "As d'Or",
+   "ano": 2023,
+   "categoria": "Jeu de l’année Expert",
+   "colocacao": null,
+   "resultado": "finalista",
+   "fonte": "https://fr.wikipedia.org/wiki/As_d%27Or",
+   "rotulo": "Finalista"
+  },
+  {
+   "premio": "Jogo do Ano (Spiel Portugal)",
+   "ano": 2023,
+   "categoria": "Jogo do Ano",
+   "colocacao": 1,
+   "resultado": "vencedor",
+   "fonte": "https://opinionatedgamers.com/2023/11/13/carnegie-wins-2023-jogo-do-ano-award/",
+   "rotulo": "Vencedor"
+  }
+ ],
+ "ficha": [
+  [
+   "Ano",
+   "2022"
+  ],
+  [
+   "Designer",
+   "Xavier Georges"
+  ],
+  [
+   "Arte",
+   "Ian O'Toole"
+  ],
+  [
+   "Editora original",
+   "Quined Games"
+  ],
+  [
+   "Outras edições",
+   "Pegasus Spiele (edição em alemão e inglês)"
+  ],
+  [
+   "Editora no Brasil",
+   "Mosaico Jogos (2022), segundo o ComparaJogos; não confirmada pela editora"
+  ],
+  [
+   "Jogadores",
+   "1 a 4"
+  ],
+  [
+   "Duração anunciada",
+   "90 minutos (Quined) ou 90 a 120 minutos (Pegasus)"
+  ],
+  [
+   "Duração relatada",
+   "1,5 a 3 horas (Board's Eye View)"
+  ],
+  [
+   "Idade",
+   "12+"
+  ],
+  [
+   "Nota BGG",
+   "7,9 / 10, com 12.180 notas (via Boardmatch)"
+  ],
+  [
+   "Peso BGG",
+   "3,82 / 5"
+  ],
+  [
+   "Melhor com",
+   "4 jogadores (enquete do BGG, via Boardmatch)"
+  ],
+  [
+   "Modo solo oficial",
+   "Sim, contra Andrew, um rival movido por 20 cartas de ação"
+  ]
+ ],
+ "nota_ficha": "Nota, peso e enquete de número de jogadores do BGG vêm do Boardmatch, que replica o BoardGameGeek; o BGG bloqueia acesso automatizado. A edição nacional aparece no catálogo do ComparaJogos, mas não achamos página da Mosaico Jogos sobre ela. Consulta em 30/10/2026.",
+ "como_funciona": [
+  "Cada jogador dirige uma empresa nos Estados Unidos do fim do século XIX. O objetivo é terminar com mais pontos de vitória, que vêm de funcionários ativos, departamentos construídos, obras nas cidades, ligações entre grandes cidades, avanço em pesquisa e doações. A partida dura 20 rodadas.",
+  "Em cada rodada, um jogador é o primeiro e escolhe uma de quatro ações: Recursos Humanos, Gestão, Construção ou Pesquisa e Desenvolvimento. A escolha é feita na linha do tempo, uma faixa de quadros sorteada no início: cada ação avança uma casa na sua fileira, e a casa onde ela para dispara um evento para todos.",
+  "Os eventos são de dois tipos. O de renda ativa uma das quatro regiões do mapa: quem tem funcionários em missão ali os traz de volta e recebe a renda dos seus projetos, mais um bônus de transporte. O de doação permite a cada jogador comprar uma doação, que custa US$ 5 na primeira vez e US$ 5 a mais em cada uma das seguintes.",
+  "Depois do evento, o primeiro jogador usa os departamentos da ação escolhida, e os outros fazem o mesmo com os seus, em ordem. Departamento é uma peça do tabuleiro da empresa que só funciona com funcionário de pé, ativo. Muitas ações mandam funcionários em missão para o mapa, e eles só voltam quando aquela região for ativada.",
+  "Recursos Humanos move funcionários entre departamentos; Gestão dá dinheiro, mercadorias ou novos departamentos; Construção põe peças em cidades do mapa; Pesquisa avança as trilhas de projeto e de transporte. No fim, contam ainda as cidades grandes ligadas por uma linha contínua de obras: Nova York, Chicago, Nova Orleans e São Francisco.",
+  "Com três ou quatro pessoas, há uma ficha que permite, uma vez por partida, fazer outra ação no lugar da escolhida. O modo solo põe o jogador contra Andrew, um rival movido por um baralho de 20 cartas."
+ ],
+ "passos": [
+  [
+   "ESCOLHA A AÇÃO",
+   "O primeiro jogador escolhe Recursos Humanos, Gestão, Construção ou Pesquisa, avançando a peça dessa ação na linha do tempo."
+  ],
+  [
+   "DISPARE O EVENTO",
+   "A casa da linha do tempo ativa a renda de uma região do mapa ou abre uma rodada de doações para todos os jogadores."
+  ],
+  [
+   "USE OS DEPARTAMENTOS",
+   "Todos usam os departamentos da ação escolhida, um uso por funcionário ativo, começando pelo primeiro jogador e seguindo em ordem."
+  ],
+  [
+   "MANDE EM MISSÃO",
+   "Construir ou usar certos departamentos envia funcionários ao mapa. Eles só voltam, com renda, quando a região for ativada."
+  ],
+  [
+   "LIGUE O PAÍS",
+   "Depois de 20 rodadas, pontuam funcionários, departamentos, obras, doações e a maior linha contínua entre as grandes cidades."
+  ]
+ ],
+ "como_resumo": "Escolha uma ação que todos seguem e planeje quando seus funcionários voltam com a renda.",
+ "perfil": [
+  [
+   "Profundidade estratégica",
+   5
+  ],
+  [
+   "Componentes e arte",
+   4
+  ],
+  [
+   "Interação entre jogadores",
+   3
+  ],
+  [
+   "Tema presente na mesa",
+   2
+  ],
+  [
+   "Facilidade de ensinar",
+   2
+  ],
+  [
+   "Partida curta",
+   2
+  ]
+ ],
+ "experiencia": [
+  "A primeira coisa que se aprende é que a sua vez dura a rodada inteira. Quando a vizinha escolhe Construção, você também constrói, se tiver departamento para isso. A Meeple Mountain diz que a melhor parte é adivinhar qual das quatro ações cada um vai pegar, e é verdade: metade da partida se joga olhando o tabuleiro dos outros.",
+  "Um exemplo. A Construção do primeiro jogador cai numa casa de renda do Meio-Oeste. Você tem três funcionários em missão ali, volta com todos, recebe renda das obras e ainda constrói. Quem não tinha ninguém no Meio-Oeste assiste, com a cara de quem viu o ônibus passar.",
+  "Já a doação é onde o tema tropeça. A rodada abre doações, e a mesa faz conta: US$ 5 agora, até 12 pontos no fim. Ninguém doa por bondade. Doa porque rende mais que construir. O Board's Eye View se sentiu um contador de pontos, não um industrial nem um filantropo. A gente se sentiu um consultor tributário."
+ ],
+ "funciona": [
+  [
+   "A linha do tempo",
+   "A escolha da ação também decide o evento da rodada: renda numa região ou doação. A Meeple Mountain chama esse sistema de a parte genial do jogo e destaca o quebra-cabeça de renda: planejar quando seus funcionários voltam de missão, porque é a ação de outro jogador que pode trazê-los de volta."
+  ],
+  [
+   "Ninguém joga sozinho",
+   "Toda ação escolhida vale para todos, cada um com seus departamentos. Para o Board's Eye View, o jogo não parece solitário com nenhum número de jogadores, porque você precisa acompanhar o tabuleiro dos rivais para prever a próxima escolha. É disputa por antecipação, sem ataque direto."
+  ],
+  [
+   "Vinte rodadas, uma estrutura",
+   "O tabuleiro parece um painel de controle, mas as 20 rodadas seguem sempre o mesmo roteiro: ação, evento, departamentos. O Board's Eye View diz que as regras ficam familiares em poucas rodadas e a cabeça passa para a estratégia, e o Fandomentals elogia o equilíbrio de só quatro ações e quatro regiões."
+  ],
+  [
+   "Sorte quase zero",
+   "Informação aberta e quase nenhum acaso: o único sorteio relevante é o da linha do tempo e dos departamentos, na preparação. O Board's Eye View o descreve como um euro de informação completa, e a ficha do Board Game Arena dá nota 1 de 5 para sorte e 5 de 5 para estratégia."
+  ],
+  [
+   "Arte que organiza a mesa",
+   "Ian O'Toole fez tabuleiro e ícones. A Meeple Mountain elogia o mapa de linhas limpas e o resumo de pontuação no canto do tabuleiro; o Geeky Guide diz que os ícones tornam legível um tabuleiro denso; e o Board's Eye View gostou da paleta de cores discreta."
+  ],
+  [
+   "Dá para testar antes",
+   "O jogo está no Board Game Arena desde junho de 2021, com mais de 141 mil partidas registradas na página do jogo. O revisor da Meeple Mountain jogou 17 vezes lá antes de comprar a edição de loja, e lembra que a versão digital permite experimentar antes de gastar."
+  ]
+ ],
+ "atencao": [
+  [
+   "Moderada",
+   "Caridade com retorno garantido",
+   "O jogo homenageia um filantropo, mas a mesa doa porque a conta fecha. O Board's Eye View achou o tema interessante e ausente na partida, e a Meeple Mountain diz que é difícil saber em que época e lugar a história se passa. O homenageado bancou cerca de 2.500 bibliotecas, diz a descrição da editora. A mesa só pergunta quantos pontos isso vale."
+  ],
+  [
+   "Moderada",
+   "O manual chega antes do jogo",
+   "O Fandomentals admite que o jogo parece complicado e difícil de aprender no começo, e o Geeky Guide recomenda alguém experiente para ensinar. A Meeple Mountain diz que preparação e manual intimidam, mas as ações são simples. A ordem é sempre a mesma: primeiro o susto, depois a recompensa."
+  ],
+  [
+   "Moderada",
+   "Pesquisa manda na empresa",
+   "Para a Meeple Mountain, Pesquisa e Desenvolvimento é o departamento mais importante, e a escolha inicial de departamentos vira corrida do ouro quando o sorteio deixa poucas peças de pesquisa. A empresa é diversificada. A vitória, nem tanto: quem perde a pesquisa no começo passa a partida correndo atrás."
+  ],
+  [
+   "Leve",
+   "Poucos caminhos para vencer",
+   "O Board's Eye View acha as rotas de vitória limitadas e diz que a pontuação final favorece os projetos, o que estreita as estratégias. Ele sugere tabuleiros assimétricos como solução e duvida que o jogo dure tanto quanto Puerto Rico ou Terra Mystica nas prateleiras."
+  ],
+  [
+   "Moderada",
+   "Noventa minutos, segundo a caixa",
+   "A Quined anuncia 90 minutos. O Board's Eye View fala em uma hora e meia a três, o Geeky Guide chama de programa para a noite toda, e o Boardmatch soma cerca de 35 minutos de preparação. A caixa conta o tempo de quem já jogou vinte vezes. A sua estreia conta o resto."
+  ],
+  [
+   "Moderada",
+   "Achar uma cópia no Brasil",
+   "Em 30/10/2026, o ComparaJogos não tinha nenhuma oferta de exemplar novo. O único anúncio era uma Edição Deluxe usada no Brechó Lúdico, por R$ 995,93 no Pix. Na loja da Pegasus, a edição alemã saía por 39 euros em promoção. É o jogo sobre generosidade mais difícil de ganhar de presente."
+  ],
+  [
+   "Leve",
+   "Andrew não perdoa",
+   "O modo solo contra Andrew, movido a cartas, é bem avaliado pela Meeple Mountain, que jogou 16 das suas 17 partidas sozinho. O Board's Eye View discorda em parte: achou o rival muito difícil de vencer e a experiência menos divertida que contra pessoas."
+  ]
+ ],
+ "jogadores": [
+  [
+   "Sozinho",
+   "Contra Andrew e suas 20 cartas. A Meeple Mountain jogou quase sempre assim; o Board's Eye View achou difícil demais e menos divertido.",
+   2
+  ],
+  [
+   "2 jogadores",
+   "Funciona, com metade dos departamentos fora da caixa e sem a ficha de troca de ação. Não achamos crítica que avalie essa contagem a fundo.",
+   2
+  ],
+  [
+   "3 jogadores",
+   "Oito departamentos saem da caixa, e só o terceiro jogador recebe a ficha de troca de ação. Não achamos crítica que compare essa contagem.",
+   2
+  ],
+  [
+   "4 jogadores",
+   "A contagem preferida na enquete do BGG: todos os 32 departamentos em jogo, ficha de troca para todos e mais gente para seguir as suas ações.",
+   3
+  ]
+ ],
+ "primeira_partida": "Reserve a noite: o Board's Eye View fala em uma hora e meia a três horas de partida, e o Boardmatch soma cerca de 35 minutos de preparação. O que mais confunde é a missão: funcionário mandado ao mapa só volta quando a região dele for ativada na linha do tempo. Na primeira partida, não deixe ninguém sem um departamento de Pesquisa, o mais forte segundo a Meeple Mountain, e se puder, jogue uma partida no Board Game Arena antes.",
+ "edicao_nacional": "O catálogo do ComparaJogos registra uma edição da Mosaico Jogos, de 2022, mas não encontramos página da editora sobre o jogo, e o idioma dessa edição não está confirmado. Em 30/10/2026, não havia oferta de exemplar novo em lojas brasileiras no ComparaJogos; o único anúncio era uma Edição Deluxe usada no Brechó Lúdico, por R$ 995,93 no Pix ou R$ 1.099,99 no cartão. A edição da Pegasus, em alemão e inglês, custava 39 euros na loja da editora.",
+ "preco_ref": {
+  "faixa": "R$ 995,93 (único anúncio, usado)",
+  "data": "30/10/2026",
+  "obs": "sem oferta de exemplar novo no ComparaJogos; Edição Deluxe usada no Brechó Lúdico, preço no Pix"
+ },
+ "versoes": "A expansão Departamentos e Doações (Departments & Donations) traz quatro módulos: um bloco para personalizar os recursos iniciais, 16 novos departamentos, quatro novas doações e regras opcionais. Ela vem incluída na edição Deluxe do Kickstarter; em 30/10/2026, o ComparaJogos não tinha oferta dela. O jogo base está no Board Game Arena desde junho de 2021 e tem um aplicativo para iPhone, iPad e Mac, só solo, por US$ 4,99.",
+ "comparacoes": [
+  [
+   "Ark Nova",
+   "ark-nova",
+   "Venceu o As d'Or Expert 2023, em que Carnegie foi finalista. Também é pesado e longo, mas troca a linha do tempo compartilhada por centenas de cartas e um zoológico, com mais acaso na compra."
+  ],
+  [
+   "SETI",
+   "seti",
+   "Outro vencedor do Golden Geek de Jogo do Ano pesado, em 2024. Também pede duas horas ou mais, mas gira em torno de cartas com vários usos e de um sistema solar que se move; Carnegie quase não tem acaso."
+  ],
+  [
+   "Terraforming Mars",
+   "terraforming-mars",
+   "Também é um euro sobre fazer uma empresa crescer rodada a rodada, com renda que aumenta. Terraforming Mars depende das cartas compradas; em Carnegie, tudo o que pode acontecer está à vista desde a preparação."
+  ]
+ ],
+ "para_quem": [
+  "Joga Ark Nova ou SETI e quer algo com menos acaso",
+  "Gosta de prever a jogada do vizinho mais do que de atacá-lo",
+  "Acha divertido planejar fluxo de caixa",
+  "Reúne quatro pessoas com uma noite livre",
+  "Topa testar no Board Game Arena antes de procurar a caixa"
+ ],
+ "nao_e_para": [
+  "Escolhe jogo pelo tema e quer sentir a história",
+  "Ainda está nos primeiros jogos modernos",
+  "Desiste quando o manual tem mais ícones que palavras",
+  "Não quer pagar perto de mil reais num usado",
+  "Doa sem esperar pontos em troca, como as pessoas normais"
+ ],
+ "selo": "Recomendado com ressalva",
+ "ressalva": "só usado, perto de R$ 1.000",
+ "melhor_para": "estrategia",
+ "veredito": "Carnegie é um jogo sobre filantropia em que a caridade é o melhor investimento da mesa. E é exatamente por isso que funciona. A linha do tempo, em que a sua escolha decide a renda de todos, é das ideias mais espertas dos euros pesados recentes, e o Golden Geek de 2022 concorda. O tema, esse, ficou na caixa: ninguém se sente filantropo, todo mundo se sente contador. Pesa o manual intimidador, a força da Pesquisa e a falta de cópias novas no Brasil, onde o único anúncio era um usado por R$ 995,93. Quem gosta de euro pesado sem sorte deve jogar. A ordem certa é testar no Board Game Arena, gostar e só então caçar a caixa. Fazer o bem, aqui, é uma questão de fluxo de caixa.",
+ "tagline": "O único jogo em que doar dinheiro é a jogada mais lucrativa da noite.",
+ "citacao": {
+  "texto": "Os fãs de jogos pesados de estratégia o adoram como um quebra-cabeça de peso médio.",
+  "fonte": "Meeple Mountain (tradução livre)"
+ },
+ "consulta": "30/10/2026",
+ "fontes": [
+  [
+   "Quined Games – Carnegie",
+   "https://quinedgames.com/featured_item/carnegie/",
+   "ficha, jogadores, duração, edição Kickstarter"
+  ],
+  [
+   "Pegasus Spiele – Carnegie",
+   "https://pegasus.de/en/Carnegie/57007G",
+   "edição alemã, componentes, preço na editora"
+  ],
+  [
+   "Board Game Arena – regras de Carnegie",
+   "https://en.doc.boardgamearena.com/Gamehelpcarnegie",
+   "regras, turno, pontuação, modo solo"
+  ],
+  [
+   "Board Game Arena – Carnegie",
+   "https://en.boardgamearena.com/gamepanel?game=carnegie",
+   "versão digital, partidas registradas, sorte e estratégia"
+  ],
+  [
+   "Meeple Mountain – Carnegie review",
+   "https://www.meeplemountain.com/reviews/carnegie",
+   "crítica, linha do tempo, Pesquisa, produção, solo"
+  ],
+  [
+   "Board's Eye View – Carnegie",
+   "https://www.boardseyeview.net/post/carnegie",
+   "crítica, tema, interação, duração, solo"
+  ],
+  [
+   "The Fandomentals – Carnegie review",
+   "https://thefandomentals.com/carnegie-board-game-review",
+   "crítica, aprendizado, componentes"
+  ],
+  [
+   "The Geeky Guide – Carnegie",
+   "https://www.geeky-guide.com/board-games/carnegie",
+   "crítica, ensino, duração, arte"
+  ],
+  [
+   "Doutor Finanças – A vitória dos mais generosos",
+   "https://www.doutorfinancas.pt/vida-e-familia/cultura-e-lazer/a-vitoria-dos-mais-generosos/",
+   "crítica em português, doações, dificuldade"
+  ],
+  [
+   "BoardGameWire – Golden Geek 2022",
+   "https://boardgamewire.com/?p=251",
+   "prêmio de Jogo do Ano pesado"
+  ],
+  [
+   "Wikipédia (FR) – As d'Or",
+   "https://fr.wikipedia.org/wiki/As_d%27Or",
+   "finalista do As d'Or Expert 2023"
+  ],
+  [
+   "Opinionated Gamers – Jogo do Ano 2023",
+   "https://opinionatedgamers.com/2023/11/13/carnegie-wins-2023-jogo-do-ano-award/",
+   "prêmio em Portugal, outros prêmios"
+  ],
+  [
+   "Boardmatch – Carnegie",
+   "https://boardmatch.app/en/game/310873",
+   "nota, peso e enquete do BGG, preparação"
+  ],
+  [
+   "ComparaJogos – Carnegie",
+   "https://www.comparajogos.com.br/item/carnegie",
+   "preço no Brasil, edição nacional"
+  ],
+  [
+   "ComparaJogos – Carnegie: Expansion",
+   "https://www.comparajogos.com.br/item/carnegie-expansion",
+   "expansão no Brasil"
+  ],
+  [
+   "Leisure Games – Departments and Donations",
+   "https://leisuregames.com/collections/all/products/carnegie-expansion-departments-and-donations",
+   "conteúdo da expansão"
+  ],
+  [
+   "App Store – Carnegie: The Board Game",
+   "https://apps.apple.com/us/app/carnegie-the-board-game/id6741925650",
+   "aplicativo solo, preço"
+  ]
+ ],
+ "legenda": "Carnegie: o jogo sobre filantropia em que doar é a jogada mais lucrativa da noite. 🏭💸\n\nVenceu o Golden Geek 2022 de Jogo do Ano pesado e foi finalista do As d'Or Expert 2023.\nA sua escolha de ação vale para a mesa toda, e quase nada fica para a sorte.\nO tema ficou na caixa: ninguém se sente filantropo, todo mundo se sente contador.\nVeredito: RECOMENDADO COM RESSALVA. Novo, sumiu das lojas; o único anúncio era um usado perto de R$ 1.000.\n\nVocê doaria US$ 5 de papel por 12 pontos ou guardaria para construir?\nResenha completa no link da bio.\n\n#Carnegie #JogosDeTabuleiro #BoardGames #Boardgamer #GoldenGeek #AsDOr #Eurogame #JogoDeEstrategia #XavierGeorges #IanOToole #EliteBoardgamers"
+}
