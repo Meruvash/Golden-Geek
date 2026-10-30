@@ -1,0 +1,362 @@
+{
+ "slug": "challengers",
+ "jogo": "Challengers!",
+ "cor": "#e07a2f",
+ "kicker": "Resenha · Torneio de cartas para grupos",
+ "og_titulo": "Challengers!: resenha Elite Boardgamers do Kennerspiel 2023",
+ "titulo_busca": "Challengers!: resenha do Kennerspiel jogado da arquibancada",
+ "descricao": "Resenha de Challengers!, Kennerspiel des Jahres e As d'Or Initié 2023: como funciona o torneio de cartas para até oito, o que divide a crítica e o preço no Brasil.",
+ "titulo_html": "Super Trunfo com pré-temporada: <span>Challengers!</span>",
+ "lede": "Challengers! é um jogo de cartas para até oito pessoas que imita um torneio: entre as rodadas você monta o seu time, e no duelo as cartas se enfrentam sozinhas, viradas do topo do monte. Venceu o Kennerspiel des Jahres e o As d'Or Initié em 2023. O Kennerspiel é o prêmio alemão para jogadores experientes. A Board's Eye View conta que quem mais gostou foram as crianças. A gente acha que os dois estão certos.",
+ "tags": [
+  "1–8 jogadores",
+  "45 min",
+  "8+",
+  "Construção de baralho",
+  "Torneio"
+ ],
+ "alt": "Dois duelos de Challengers! sobre tapetes de parque, com cartas de personagens, troféus e um aperto de mão entre jogadores",
+ "premiacoes": [
+  {
+   "premio": "Kennerspiel des Jahres",
+   "ano": 2023,
+   "categoria": "Kennerspiel des Jahres",
+   "colocacao": 1,
+   "resultado": "vencedor",
+   "fonte": "https://en.wikipedia.org/wiki/Spiel_des_Jahres",
+   "rotulo": "Vencedor"
+  },
+  {
+   "premio": "As d'Or",
+   "ano": 2023,
+   "categoria": "Jeu de l’année Initié",
+   "colocacao": 1,
+   "resultado": "vencedor",
+   "fonte": "https://fr.wikipedia.org/wiki/As_d%27Or",
+   "rotulo": "Vencedor"
+  }
+ ],
+ "ficha": [
+  [
+   "Ano",
+   "2022"
+  ],
+  [
+   "Designers",
+   "Johannes Krenner e Markus Slawitscheck"
+  ],
+  [
+   "Arte",
+   "Jeff Harvey"
+  ],
+  [
+   "Editora original",
+   "1 More Time Games / Z-Man Games"
+  ],
+  [
+   "Editora no Brasil",
+   "Asmodee (Galápagos), edição de 2023"
+  ],
+  [
+   "Jogadores",
+   "1 a 8"
+  ],
+  [
+   "Duração anunciada",
+   "cerca de 45 minutos"
+  ],
+  [
+   "Idade",
+   "8+ (editora); o júri do Spiel des Jahres indica 10+"
+  ],
+  [
+   "Nota BGG",
+   "cerca de 7,1 / 10 (conforme site que replica o BGG)"
+  ],
+  [
+   "Peso BGG",
+   "cerca de 1,8 / 5"
+  ],
+  [
+   "Componentes",
+   "336 cartas, 4 tapetes de parque, 4 discos de bandeira, 28 troféus, 40 fichas de torcedor e 3 organizadores de cartas"
+  ]
+ ],
+ "nota_ficha": "Nota e peso do BGG vêm do BoardGameMatcher, que replica o BoardGameGeek (o BGG bloqueia acesso automatizado). A lista de componentes é a da edição nacional no ComparaJogos. A Ludopedia não foi consultada diretamente: nota e enquete de lá não confirmadas nas fontes consultadas.",
+ "como_funciona": [
+  "Challengers! simula um torneio de pega-bandeira entre equipes de personagens improváveis, de magos e gângsteres a alienígenas. São sete rodadas, e em cada uma os jogadores se enfrentam em duelos de um contra um, todos ao mesmo tempo. Uma carta de plano, a placa de partida do torneio, diz quem enfrenta quem e em qual dos quatro parques, os tapetes de neoprene espalhados pela mesa.",
+  "Todos começam com o mesmo baralho de seis cartas fracas. Antes de cada duelo vem a fase de baralho: você vê cinco cartas de uma das pilhas A, B ou C, com cartas mais fortes conforme o torneio avança, fica com uma ou duas e pode tirar do seu baralho quantas cartas quiser. É a construção de baralho (montar o próprio monte ao longo do jogo), onde estão as decisões.",
+  "No duelo, ninguém escolhe carta. Cada um embaralha o próprio monte. Quem defende vira a carta do topo e põe a bandeira nela; o adversário vira cartas, uma a uma, somando a força, até igualar ou passar. Então a bandeira muda de lado, as cartas derrotadas vão para o banco de reservas e quem perdeu a bandeira passa a atacar. Algumas cartas têm efeitos especiais.",
+  "O banco tem seis espaços, e cartas com o mesmo nome dividem um espaço. Perde o duelo quem precisa mandar uma carta ao banco sem espaço livre ou quem precisa virar uma carta com o monte vazio. O vencedor leva o troféu da rodada, com uma quantidade secreta de fãs no verso, que cresce ao longo do torneio: 2 ou 3 fãs na primeira rodada, 9 ou 10 na sétima.",
+  "Depois da sétima rodada, os dois jogadores com mais fãs disputam a final. Eles não ganham cartas novas, só podem tirar cartas do baralho, e quem vence a final vence o jogo, não importa quantos fãs acumulou. Com número ímpar de pessoas, um robô com baralho próprio completa a chave, mas não vai à final. A dois e sozinho não há final: ganha quem tiver mais fãs, e quem abrir 11 fãs de vantagem vence na hora."
+ ],
+ "passos": [
+  [
+   "VEJA O CHAVEAMENTO",
+   "A carta de plano diz contra quem você joga nesta rodada e em qual dos quatro parques de neoprene da mesa."
+  ],
+  [
+   "REFORCE O TIME",
+   "Veja cinco cartas da pilha da rodada, fique com uma ou duas e tire do seu baralho o que estiver atrapalhando."
+  ],
+  [
+   "EMBARALHE E DUELE",
+   "Quem defende vira uma carta com a bandeira; o rival vira cartas, somando força, até igualar ou superar e tomar a bandeira."
+  ],
+  [
+   "CUIDE DO BANCO",
+   "Cartas derrotadas vão para um banco de seis espaços. Sem espaço livre ou sem carta para virar, você perde o duelo."
+  ],
+  [
+   "CHEGUE À FINAL",
+   "Cada vitória dá um troféu com fãs. Depois de sete rodadas, os dois com mais fãs decidem tudo num último duelo."
+  ]
+ ],
+ "como_resumo": "Monte seu time de cartas entre as rodadas e torça enquanto o duelo se resolve sozinho.",
+ "perfil": [
+  [
+   "Diversão em grupo grande",
+   5
+  ],
+  [
+   "Facilidade de ensinar",
+   5
+  ],
+  [
+   "Componentes e arte",
+   4
+  ],
+  [
+   "Controle sobre a sorte",
+   2
+  ],
+  [
+   "Decisões durante o duelo",
+   1
+  ],
+  [
+   "Modo solo",
+   1
+  ]
+ ],
+ "experiencia": [
+  "Na fase de baralho, você é técnico. Vê cinco cartas, pensa na combinação, corta do elenco aquela carta de força 1 que só ocupa vaga no banco. É bom. Dá a sensação de prancheta na mão. Aí começa o duelo e você vira torcedor. Embaralha, vira a carta de cima, soma. O adversário vira, soma. Ninguém decide nada. A Board's Eye View compara com Super Trunfo. A gente acrescenta que o Super Trunfo pelo menos deixa você escolher o atributo.",
+  "Um exemplo. Na quarta rodada você pega uma carta forte da pilha B e corta duas cartas iniciais para ela aparecer mais cedo. No duelo, ela sai por último. Você perde a bandeira três vezes, o banco enche e o troféu vai para o outro lado. O plano estava certo. O embaralhamento discordou. E acontece a coisa curiosa: oito adultos rindo alto de uma derrota que ninguém causou. A Meeple Mountain chama isso de diversão grande e boba, e o júri do Spiel des Jahres fala num clima de torneio que transforma a noite em evento. É uma pelada de cartas: o placar importa até o apito final, e depois ninguém lembra dele."
+ ],
+ "funciona": [
+  [
+   "O vestiário é o jogo",
+   "Escolher uma ou duas cartas entre cinco e cortar o que atrapalha é onde mora a estratégia. Simon Weinberg, da Opinionated Gamers, chama a montagem do baralho de muito variada, cheia de sinergias e combinações, e a Tabletop Gaming diz que o draft dá bastante em que pensar. Cortar a carta de força 1 para a nova aparecer mais cedo é decisão de técnico."
+  ],
+  [
+   "Oito pessoas em 45 minutos",
+   "Construção de baralho para até oito jogadores, com os quatro duelos acontecendo ao mesmo tempo, então ninguém fica parado esperando a vez. O júri do Spiel des Jahres destacou que grupos grandes se divertem com o clima de torneio, e Justin Bell, da Meeple Mountain, diz que é com oito que o jogo realmente brilha."
+  ],
+  [
+   "Uma final que muda a noite",
+   "Sete rodadas de fãs acumulados terminam num duelo único entre os dois primeiros colocados, com a mesa inteira assistindo. O júri do Spiel des Jahres descreve um jogo emocionante e turbulento até o duelo final, e é esse fechamento que transforma uma sequência de partidinhas de cinco minutos num campeonato."
+  ],
+  [
+   "Explica-se em minutos",
+   "O manual é curto e a iconografia é pouca. A Meeple Mountain diz que o jogo é fácil de ensinar, e a Board's Eye View elogia o livro de regras e o design gráfico claros. Na prática, a regra do duelo cabe numa frase: vire cartas até igualar a força do adversário e tomar a bandeira."
+  ],
+  [
+   "Produção acima do preço",
+   "Tapetes de neoprene para os parques, organizadores de cartas e a arte bem-humorada de Jeff Harvey, com magos, gângsteres e alienígenas. A Meeple Mountain elogia a produção, o GeekTyrant destaca a arte e os tapetes, e a Opinionated Gamers considerou a caixa um bom negócio pelos cerca de 40 euros cobrados na Europa."
+  ],
+  [
+   "Funciona com quem não joga",
+   "A Board's Eye View relata que o jogo fez sucesso com crianças e com quem não costuma jogar, e o GeekTyrant viu até quem não gosta de construção de baralho se divertir. Como ninguém escolhe carta no duelo, ninguém é culpado pela derrota, o que tira peso da mesa quando há iniciantes."
+  ]
+ ],
+ "atencao": [
+  [
+   "Moderada",
+   "Você assiste ao próprio jogo",
+   "Durante o duelo, a única decisão é nenhuma. Simon Weinberg, da Opinionated Gamers, avisa que quem quer controle total vai se frustrar, e a Board's Eye View diz que a escolha se resume ao draft e encolhe quando as cartas oferecidas não ajudam. É um jogo de cartas que dá para jogar com a outra mão no saco de pipoca."
+  ],
+  [
+   "Moderada",
+   "O embaralhamento tem a última palavra",
+   "Justin Bell, da Meeple Mountain, admite que a queixa mais comum dos jogadores é válida: quem manda é a sorte da compra. A Board's Eye View compara com Super Trunfo e com Batalha, o velho jogo de virar cartas. Você monta o baralho perfeito e vê a melhor carta sair por último. Acontece no futebol também, e lá pelo menos dá para culpar o juiz."
+  ],
+  [
+   "Moderada",
+   "Prêmio de experiente, sucesso entre crianças",
+   "O Kennerspiel é o prêmio alemão para quem já tem estrada nos jogos. A Board's Eye View viu o jogo encantar crianças e não jogadores, enquanto os adultos do grupo saíram pouco impressionados, e chamou o prêmio de absurdo. A Tabletop Gaming acha o jogo ralo para quem procura cálculo pesado. Quem compra pelo selo esperando uma noite de cálculo vai ganhar uma noite de torcida."
+  ],
+  [
+   "Leve",
+   "A dois, o torneio vira amistoso",
+   "Sem final e com vitória antecipada para quem abre 11 fãs de vantagem, a partida a dois pode acabar no meio, o que a Meeple Mountain diz não ser um bom jeito de sair do jogo. O GeekTyrant achou viável, mas longe do ideal, e o solo é, para a Meeple Mountain, uma longa partida de Batalha contra um baralho robô."
+  ],
+  [
+   "Leve",
+   "Número ímpar convoca o robô",
+   "Com três, cinco ou sete pessoas, alguém enfrenta a cada rodada o robô, um baralho automático que não compra cartas, não ganha fãs e não vai à final. A Board's Eye View recomenda ficar nos números pares. O robô ocupa uma cadeira, não pontua e não ajuda a arrumar a mesa: é o convidado que só veio comer."
+  ],
+  [
+   "Leve",
+   "Oito pessoas, quatro tapetes",
+   "Os duelos são simultâneos e os pares mudam a cada rodada, então o GeekTyrant avisa que o jogo pede espaço, e a Tabletop Gaming descreve gente trocando de lugar como num torneio de verdade. A Meeple Mountain notou lentidão na fase de compra com oito. Antes de convidar, confira se a sala comporta quatro tapetes e uma final com plateia."
+  ]
+ ],
+ "jogadores": [
+  [
+   "Sozinho",
+   "Uma longa partida contra um baralho robô, segundo a Meeple Mountain. Serve para testar combinações, não para a noite.",
+   1
+  ],
+  [
+   "2 jogadores",
+   "Sem final e com vitória antecipada por 11 fãs de vantagem. O GeekTyrant achou viável, mas longe do ideal.",
+   1
+  ],
+  [
+   "3, 5 ou 7 jogadores",
+   "Funciona, mas a cada rodada alguém enfrenta o robô, que não pontua. A Board's Eye View prefere números pares.",
+   2
+  ],
+  [
+   "4 jogadores",
+   "Para o GeekTyrant, as partidas a quatro foram ótimas: já há final e rodízio de adversários.",
+   2
+  ],
+  [
+   "6 ou 8 jogadores",
+   "O auge: a Meeple Mountain diz que o jogo brilha com oito, com mais variedade de rivais a cada rodada.",
+   3
+  ]
+ ],
+ "primeira_partida": "A explicação é curta: a Meeple Mountain e a Board's Eye View elogiam o manual enxuto e claro. O ponto que mais pede atenção é o banco: cartas com o mesmo nome dividem um espaço, e a sétima carta diferente encerra o duelo, então lembre todos disso antes da primeira rodada. Dica prática: corte do baralho as cartas iniciais mais fracas assim que tiver substitutas, porque baralho menor traz as cartas boas mais cedo, mas não exagere, já que monte vazio também perde. E monte a mesa com número par de pessoas, para ninguém passar a noite contra o robô.",
+ "edicao_nacional": "A edição em português é da Asmodee, lançada em 2023 sob o nome Galápagos, segundo o ComparaJogos, que classifica o texto das cartas como moderado, com necessidade de consulta. Em 30/10/2026, o ComparaJogos listava oito ofertas de jogo novo entre R$ 180 e R$ 280; a menor era R$ 180 no Pix, na Overrun Geek Store. Como as cartas têm efeitos escritos, a edição nacional ajuda bastante quem joga com crianças.",
+ "preco_ref": {
+  "faixa": "a partir de R$ 180",
+  "data": "30/10/2026",
+  "obs": "menor preço no Pix (Overrun Geek Store) entre 8 ofertas de jogo novo listadas pelo ComparaJogos, que iam até cerca de R$ 280"
+ },
+ "versoes": "Challengers! Beach Cup (2023) é um jogo independente, com cartas novas e 16 treinadores que dão a cada jogador um poder próprio; a Meeple Mountain sugere ter as duas caixas para torneios de 16 pessoas. Não encontramos edição nacional de Beach Cup até 30/10/2026. O ComparaJogos lista ainda as fichas bônus Lucky Coins!. No digital, Challengers! está no Board Game Arena desde junho de 2023, e Beach Cup chegou lá em novembro de 2025.",
+ "comparacoes": [
+  [
+   "Flip 7",
+   "flip-7",
+   "Também é sorte de virar cartas para mesa cheia, mas em 20 minutos e com uma decisão real a cada carta: parar ou arriscar. Se a sua parte favorita é gritar com o baralho, é mais direto."
+  ],
+  [
+   "Codenames",
+   "codenames",
+   "Outro campeão de grupo grande, até oito pessoas, só que a disputa é de cabeça, em equipes, e cada pista tem um responsável. Bom para quem prefere culpar um amigo em vez do embaralhamento."
+  ],
+  [
+   "The Crew",
+   "the-crew",
+   "Outro Kennerspiel de cartas, de 2020, e o oposto de Challengers!: cada carta jogada é uma decisão pensada, em silêncio e em cooperação, para três a cinco pessoas. Mais cálculo, menos arquibancada."
+  ]
+ ],
+ "para_quem": [
+  "Reúne seis ou oito pessoas e nunca sabe o que pôr na mesa",
+  "Joga com crianças a partir de 8 anos e com quem não joga",
+  "Gosta de montar baralho e ver no que deu",
+  "Acha que a melhor parte do futebol é a resenha depois do jogo",
+  "Prefere rir da derrota a analisar a derrota"
+ ],
+ "nao_e_para": [
+  "Joga quase sempre a dois ou sozinho",
+  "Precisa sentir que perdeu por culpa própria",
+  "Comprou pelo selo de Kennerspiel esperando uma noite de cálculo",
+  "Tem mesa pequena e oito convidados",
+  "Não suporta assistir enquanto as cartas decidem"
+ ],
+ "selo": "Recomendado",
+ "melhor_para": "entrada",
+ "veredito": "Challengers! é Super Trunfo com pré-temporada, e a pré-temporada é ótima. Montar o time entre as rodadas tem escolha de verdade, a final transforma a noite num campeonato e o jogo se explica em minutos para oito pessoas. Depois, o embaralhamento assume e você vira torcida. A crítica concorda com as duas metades: a Meeple Mountain chama de diversão grande e boba, a Board's Eye View, de algodão-doce bem-feito. Acontece que algodão-doce é bom. Por R$ 180, ou R$ 22,50 por cabeça numa mesa de oito, é o jogo que a gente leva quando o grupo é grande e a paciência é curta. Só não chame de jogo para experientes. O prêmio já fez isso por você.",
+ "tagline": "Você escala o time, as cartas jogam a partida e a sorte apita a final.",
+ "citacao": {
+  "texto": "Para o meu gosto, é simplesmente diversão numa caixa.",
+  "fonte": "Simon Weinberg, Opinionated Gamers (tradução livre)"
+ },
+ "consulta": "30/10/2026",
+ "fontes": [
+  [
+   "Spiel des Jahres – Challengers!",
+   "https://www.spiel-des-jahres.de/spiele/challengers/",
+   "prêmio, ficha, avaliação do júri, idade"
+  ],
+  [
+   "Wikipedia – Spiel des Jahres",
+   "https://en.wikipedia.org/wiki/Spiel_des_Jahres",
+   "Kennerspiel des Jahres 2023 e indicados"
+  ],
+  [
+   "Wikipédia (fr) – As d'Or",
+   "https://fr.wikipedia.org/wiki/As_d%27Or",
+   "As d'Or Initié 2023"
+  ],
+  [
+   "Board Game Arena – regras de Challengers!",
+   "https://en.doc.boardgamearena.com/Gamehelpchallengers",
+   "regras, banco, fãs, robô, final"
+  ],
+  [
+   "Tabletop Gaming – Challengers! review",
+   "https://www.tabletopgaming.co.uk/reviews/challengers-review/",
+   "crítica, draft, profundidade"
+  ],
+  [
+   "Meeple Mountain – Challengers!",
+   "https://www.meeplemountain.com/reviews/challengers/",
+   "crítica, sorte, contagem de jogadores, produção"
+  ],
+  [
+   "Opinionated Gamers – Simon Weinberg",
+   "https://opinionatedgamers.com/2022/12/15/simon-weinberg-review-of-challengers/",
+   "crítica, montagem do baralho, controle, citação"
+  ],
+  [
+   "Board's Eye View – Challengers!",
+   "https://boardseyeview.net/post/challengers",
+   "crítica, sorte, público, prêmio"
+  ],
+  [
+   "GeekTyrant – Challengers",
+   "https://geektyrant.com/news/review-challengers-is-a-fun-deckbuilder-with-support-for-big-groups",
+   "crítica, espaço, dois jogadores"
+  ],
+  [
+   "The Dice Tower – Challengers!",
+   "https://dicetower.com/board-game/359970",
+   "notas dos críticos"
+  ],
+  [
+   "Meeple Mountain – Challengers! Beach Cup",
+   "https://www.meeplemountain.com/reviews/challengers-beach-cup/",
+   "expansão independente, treinadores, 16 jogadores"
+  ],
+  [
+   "Board Game Arena – Challengers! (notícia)",
+   "https://en.boardgamearena.com/news?id=692",
+   "versão digital"
+  ],
+  [
+   "Board Game Arena – Beach Cup (notícia)",
+   "https://en.boardgamearena.com/news?id=1001",
+   "Beach Cup no digital"
+  ],
+  [
+   "BoardGameMatcher – Challengers!",
+   "https://boardgamematcher.com/game/challengers",
+   "nota e peso do BGG"
+  ],
+  [
+   "ComparaJogos – Challengers!",
+   "https://www.comparajogos.com.br/item/challengers",
+   "edição nacional, componentes, preço no Brasil"
+  ],
+  [
+   "ComparaJogos – Challengers! Beach Cup",
+   "https://www.comparajogos.com.br/item/challengers-beach-cup",
+   "Beach Cup sem oferta no Brasil"
+  ]
+ ],
+ "legenda": "Challengers! é Super Trunfo com pré-temporada. E a pré-temporada é ótima. 🏆🃏\n\nKennerspiel des Jahres e As d'Or Initié 2023.\nEntre as rodadas você monta o time. No duelo, as cartas jogam sozinhas e você vira torcida.\nBrilha com 6 ou 8 pessoas, explica-se em minutos e sai a partir de R$ 180.\nVeredito: RECOMENDADO. Só não chame de jogo para experientes.\n\nVocê prefere perder por culpa própria ou por culpa do baralho? 👇\nResenha completa no link da bio.\n\n#Challengers #KennerspielDesJahres #AsDOr #JogosDeTabuleiro #BoardGames #JogoDeCartas #ConstrucaoDeBaralho #DeckBuilding #JogoEmGrupo #Asmodee #EliteBoardgamers #Boardgamer"
+}
