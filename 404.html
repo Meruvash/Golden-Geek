@@ -137,7 +137,14 @@ footer .in{display:flex;flex-wrap:wrap;gap:10px 20px;padding-top:18px;padding-bo
 .nota figcaption{margin-top:6px}
 .nota h2,.nota .h-sec{font-size:.8rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--paper-muted);margin-bottom:8px}
 .nota .h-sec{margin:0 0 8px;line-height:inherit;text-wrap:wrap}
-.leia li{padding:8px 0;border-top:1px solid var(--paper-line)}.leia li:first-child{border-top:0}.leia a{display:inline-block;padding:3px 0;color:var(--link);font-weight:700;text-decoration:none}.leia a:hover{text-decoration:underline}
+.continua ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.continua a{display:grid;grid-template-columns:96px minmax(0,1fr);gap:14px;align-items:center;padding:8px;border-radius:10px;border:1px solid var(--paper-line);color:var(--paper-ink);text-decoration:none}
+.continua a:hover{border-color:var(--gold)}.continua a:hover b{text-decoration:underline}
+.continua img,.continua .sem{width:96px;height:96px;object-fit:cover;border-radius:8px;display:grid;place-items:center}
+.continua .rot{display:block;font-size:.72rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#5a6270}
+.continua b{display:block;font-size:1rem;line-height:1.28;margin-top:2px}.continua small{display:block;margin-top:4px;font-size:.86rem;color:#3a414c}
+.continua .cl-res a{grid-template-columns:120px minmax(0,1fr);background:#fff8e6;border-color:#e3b23c}.continua .cl-res img{width:120px;height:120px}
+.continua .cl-res .rot{color:#8a6100}.continua .cl-res b{font-size:1.1rem}
 /* arquivo de notícias: manchete em destaque e quadradinhos sobre a moldura preta */
 .arq{display:grid;gap:16px;padding-top:16px;padding-bottom:40px}
 .arq-topo{display:grid;gap:4px}.arq-topo h1{font-size:clamp(1.6rem,4.5vw,2.3rem);line-height:1.1;font-weight:800;letter-spacing:-.015em}.arq-topo p{color:var(--muted);font-size:.95rem}

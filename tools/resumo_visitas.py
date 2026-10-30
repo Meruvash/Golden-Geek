@@ -1,6 +1,6 @@
 """Resumo de visitas do site (Cloudflare Web Analytics): hoje e ontem, no horário de Brasília.
 
-Uso: python3 tools/resumo_visitas.py [--semana]   (--semana acrescenta as visitas por dia dos últimos 7 dias)
+Uso: python3 tools/resumo_visitas.py [--semana]   (--semana: tendência dos últimos 7 dias e retenção por tipo de página) [--semana]   (--semana acrescenta as visitas por dia dos últimos 7 dias)
 Precisa de duas variáveis de ambiente, configuradas no ambiente da nuvem (nunca no repositório):
   CLOUDFLARE_API_TOKEN   chave só de leitura com a permissão "Account Analytics: Read"
   CLOUDFLARE_ACCOUNT_ID  opcional: ID da conta (padrão: a conta onde está o domínio, em CONTA abaixo)
@@ -86,6 +86,60 @@ def tendencia(token, conta, hoje, dias=7):
     return "\n".join(linhas)
 
 
+CAMINHOS = """query($conta: String!, $ini: Time!, $fim: Time!, $host: String!) {
+  viewer { accounts(filter: {accountTag: $conta}) {
+    g: rumPageloadEventsAdaptiveGroups(limit: 2000, filter: {datetime_geq: $ini, datetime_lt: $fim, requestHost: $host}) {
+      count sum { visits } dimensions { requestPath refererHost refererPath } }
+  } }
+}"""
+SECOES_FIXAS = {"/": "Página inicial", "/noticias/": "Lista de notícias", "/resenhas/": "Lista de resenhas"}
+
+
+def tipo_pagina(caminho):
+    caminho = caminho or "/"
+    if caminho in SECOES_FIXAS:
+        return SECOES_FIXAS[caminho]
+    for prefixo, nome in (("/noticias/", "Notícia"), ("/lancamentos/", "Lançamentos"), ("/consulta/", "Consulta"),
+                          ("/jogos-de-tabuleiro/", "Guias"), ("/premios/", "Prêmios"), ("/politica-editorial/", "Outras")):
+        if caminho.startswith(prefixo):
+            return nome
+    return "Resenha" if caminho.count("/") == 2 else "Outras"
+
+
+def retencao(token, conta, hoje, dias=7):
+    """Que tipo de página traz gente de fora e que tipo faz a pessoa abrir outra página do site (últimos dias fechados).
+
+    "Entradas" = visitas que começaram naquela página, vindas de fora. "Cliques para outra página" = páginas abertas a partir
+    dela dentro do site. Sem tempo de leitura: a Cloudflare não mede, e o site não usa rastreamento extra."""
+    entradas, cliques, portas = {}, {}, {}
+    for i in range(dias, 0, -1):
+        ini = hoje - timedelta(days=i)
+        corpo = json.dumps({"query": CAMINHOS, "variables": {"conta": conta, "ini": ini.isoformat(), "fim": (ini + timedelta(days=1)).isoformat(), "host": HOST}}).encode()
+        req = urllib.request.Request(API, data=corpo, headers={"Authorization": f"Bearer {token}", "Content-Type": "application/json"})
+        with urllib.request.urlopen(req, timeout=60) as r:
+            dados = json.loads(r.read())
+        if dados.get("errors"):
+            sys.exit("A Cloudflare recusou a consulta: " + "; ".join(e.get("message", "") for e in dados["errors"]))
+        for g in dados["data"]["viewer"]["accounts"][0]["g"]:
+            d = g["dimensions"]
+            if d["refererHost"] == HOST:
+                # recarregar a mesma página (ou mudar filtro) não é seguir para outra página
+                if (d["refererPath"] or "/") != d["requestPath"]:
+                    t = tipo_pagina(d["refererPath"])
+                    cliques[t] = cliques.get(t, 0) + g["count"]
+            else:
+                t = tipo_pagina(d["requestPath"])
+                entradas[t] = entradas.get(t, 0) + g["sum"]["visits"]
+                portas[d["requestPath"]] = portas.get(d["requestPath"], 0) + g["sum"]["visits"]
+    linhas = [f"*Retenção dos últimos {dias} dias* (tipo de página: entradas de fora · cliques para outra página · cliques por entrada)"]
+    for t in sorted(set(entradas) | set(cliques), key=lambda t: -entradas.get(t, 0)):
+        en, cl = entradas.get(t, 0), cliques.get(t, 0)
+        linhas.append(f"  {t}: {en} entradas · {cl} cliques" + (f" · {cl / en:.1f} por entrada" if en else ""))
+    linhas.append("  Páginas que mais trouxeram gente: " + "; ".join(f"{c} ({n})" for c, n in sorted(portas.items(), key=lambda x: -x[1])[:6]))
+    linhas.append("  Atenção: os cliques podem vir de quem entrou por outra página; testes do próprio site também entram na conta.")
+    return "\n".join(linhas)
+
+
 def main():
     token, conta = os.environ.get("CLOUDFLARE_API_TOKEN"), os.environ.get("CLOUDFLARE_ACCOUNT_ID") or CONTA
     if not token:
@@ -98,6 +152,7 @@ def main():
     print(periodo(f"Ontem ({ontem:%d/%m})", consultar(token, conta, ontem, hoje)))
     if "--semana" in sys.argv:
         print(tendencia(token, conta, hoje))
+        print(retencao(token, conta, hoje))
 
 
 if __name__ == "__main__":

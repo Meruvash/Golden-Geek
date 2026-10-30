@@ -211,7 +211,14 @@ footer .in{display:flex;flex-wrap:wrap;gap:10px 20px;padding-top:18px;padding-bo
 .nota figcaption{margin-top:6px}
 .nota h2,.nota .h-sec{font-size:.8rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--paper-muted);margin-bottom:8px}
 .nota .h-sec{margin:0 0 8px;line-height:inherit;text-wrap:wrap}
-.leia li{padding:8px 0;border-top:1px solid var(--paper-line)}.leia li:first-child{border-top:0}.leia a{display:inline-block;padding:3px 0;color:var(--link);font-weight:700;text-decoration:none}.leia a:hover{text-decoration:underline}
+.continua ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.continua a{display:grid;grid-template-columns:96px minmax(0,1fr);gap:14px;align-items:center;padding:8px;border-radius:10px;border:1px solid var(--paper-line);color:var(--paper-ink);text-decoration:none}
+.continua a:hover{border-color:var(--gold)}.continua a:hover b{text-decoration:underline}
+.continua img,.continua .sem{width:96px;height:96px;object-fit:cover;border-radius:8px;display:grid;place-items:center}
+.continua .rot{display:block;font-size:.72rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#5a6270}
+.continua b{display:block;font-size:1rem;line-height:1.28;margin-top:2px}.continua small{display:block;margin-top:4px;font-size:.86rem;color:#3a414c}
+.continua .cl-res a{grid-template-columns:120px minmax(0,1fr);background:#fff8e6;border-color:#e3b23c}.continua .cl-res img{width:120px;height:120px}
+.continua .cl-res .rot{color:#8a6100}.continua .cl-res b{font-size:1.1rem}
 /* arquivo de notícias: manchete em destaque e quadradinhos sobre a moldura preta */
 .arq{display:grid;gap:16px;padding-top:16px;padding-bottom:40px}
 .arq-topo{display:grid;gap:4px}.arq-topo h1{font-size:clamp(1.6rem,4.5vw,2.3rem);line-height:1.1;font-weight:800;letter-spacing:-.015em}.arq-topo p{color:var(--muted);font-size:.95rem}
@@ -681,6 +688,29 @@ def relacionadas(n, limite=3):
     return [o for *_, o in cands[:limite]]
 
 
+def continue_lendo(n, pre, total=3):
+    """Bloco logo depois de "Nossa opinião": a resenha do jogo citado (quando existe) e notícias relacionadas, com imagem.
+    É por aqui que o leitor que chegou pelo link da notícia segue para outra página em vez de sair do site."""
+    itens = []
+    for j in n.get("jogos", []):
+        arq = ROOT / "conteudo" / f'{j.get("resenha")}.json'
+        if j.get("resenha") and arq.exists() and len(itens) < 1:
+            c = json.loads(arq.read_text(encoding="utf-8"))
+            capa = ROOT / j["resenha"] / "capa.jpg"
+            itens.append(f'<li class="cl-res"><a href="{pre}{j["resenha"]}/"><img src="{pre}{j["resenha"]}/capa.jpg{versao(capa)}" srcset="{srcset(capa, pre, (400,))}" sizes="120px" '
+                         f'width="800" height="800" alt="" loading="lazy" decoding="async"><span><span class="rot">Resenha</span><b>Leia a resenha de {e(c["jogo"])}</b>'
+                         f'<small>{e(c["tagline"])}</small></span></a></li>')
+    for o in relacionadas(n, total - len(itens)):
+        if o.get("imagem"):
+            arq = ROOT / "noticias" / o["imagem"]["arquivo"]
+            img = f'<img src="{img_nota(o, pre)}" srcset="{srcset(arq, pre, (480,))}" sizes="96px" alt="" loading="lazy" decoding="async">'
+        else:
+            img = f'<span class="sem {CAT_CLASSE.get(o["categoria"], "mercado")}" aria-hidden="true">{icone("dica")}</span>'
+        itens.append(f'<li><a href="{pre}noticias/{o["slug"]}/">{img}<span><span class="rot">{e(o["categoria"])}</span><b>{e(o["titulo"])}</b>'
+                     f'<small>{data_curta(o["data"])}</small></span></a></li>')
+    return f'<section class="bloco continua"><h2>Continue lendo</h2><ul>{"".join(itens)}</ul></section>' if itens else ""
+
+
 def build_nota(n):
     pre = "../../"
     url = f"{SITE}/noticias/{n['slug']}/"
@@ -696,7 +726,7 @@ def build_nota(n):
     sim = "".join(f"<li>{e(x)}</li>" for x in n["para_quem"])
     nao = "".join(f"<li>{e(x)}</li>" for x in n.get("nao_e_para", []))
     sc = SELO_CLASSE[n["selo"]]
-    leia = "".join(f'<li><a href="{pre}noticias/{o["slug"]}/">{e(o["titulo"])}</a></li>' for o in relacionadas(n))
+    leia = continue_lendo(n, pre)
     corpo = f"""{cabecalho(pre, "Notícias", sub=True)}
 <main id="conteudo" class="in"><div class="nota">
  {trilha(("Início", pre), ("Notícias", f"{pre}noticias/"), (e(n["titulo"]), ""))}
@@ -713,11 +743,11 @@ def build_nota(n):
  <section class="bloco"><h2>O que diz a crítica</h2>{f'<ul class="crit">{critica}</ul>' if critica else '<p class="corpo">Ainda não encontramos resenha publicada por veículo especializado.</p>'}</section>
  <section class="bloco quem"><div><h2>Interessa a você se…</h2><ul class="ok">{sim}</ul></div>{f'<div><h2>Pense duas vezes se…</h2><ul class="no">{nao}</ul></div>' if nao else ""}</section>
  <section class="bloco veredito {sc}"><h2>Nossa opinião</h2><span class="selo {sc}">{e(n['selo'])}</span><p>{e(n['veredito'])}</p></section>
+ {leia}
  {convite_compartilhar(texto_cp, url, "Conhece alguém que vai gostar?", "Mande esta notícia para a turma.")}
  {interacoes(pre, f"/noticias/{n['slug']}/")}
  {f'<section class="bloco"><h2>Jogos citados</h2><div class="jogos">{jogos}</div></section>' if jogos else ""}
- {f'<section class="bloco leia"><h2>Leia também</h2><ul>{leia}</ul></section>' if leia else ""}
- <section class="bloco fontes"><h2>Fontes</h2><ul>{fontes}</ul></section>
+  <section class="bloco fontes"><h2>Fontes</h2><ul>{fontes}</ul></section>
  <section class="bloco crivo"><h2>Por que esta notícia entrou</h2><p><b>{n['crivo']['pontos']} pontos no crivo editorial</b>{":" if n['crivo']['criterios'] else ""} {e("; ".join(n['crivo']['criterios']) or "(nenhum critério de pontuação)")}.</p></section>
 </div></main>
 {rodape(pre, barra_leitura(texto_cp, url))}"""
