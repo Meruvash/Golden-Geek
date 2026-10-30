@@ -1,15 +1,16 @@
 # Resenhas para a Ludopédia (36)
 
-Da mais nova para a mais antiga. Uma ou duas por dia é o bastante. Cole o título e o texto num tópico novo do fórum do jogo. Responda aos comentários: isso mantém o tópico em destaque. Não cole a resenha inteira do site nem só o link: o resumo com o link é o que a comunidade aceita melhor.
+Da mais nova para a mais antiga. Uma ou duas por dia é o bastante. Para o canal da Elite na Ludopédia (menu Canais > Meus Canais > nova postagem; não é o fórum). Cole o título e o texto, use a imagem indicada como capa e, se o editor deixar, marque o jogo, para a postagem aparecer na página dele. Responda aos comentários. Não cole a resenha inteira do site nem só o link: o resumo com o link evita texto repetido no Google e é o que a comunidade aceita melhor.
 
 ### Ludopédia: Daybreak
 
-Onde postar: procure o jogo na busca da Ludopédia e abra um novo tópico no fórum dele (categoria de análise ou resenha)
+Jogo para marcar na postagem: Daybreak (procure pelo nome na Ludopédia)
+Imagem de capa da postagem: https://eliteboardgamers.com.br/img/og/resenha-daybreak.jpg
 
-**Título do tópico**
+**Título da postagem**
 
 ```
-(Análise) Daybreak: Salvar o planeta em seis rodadas é o de menos. O milagre é quatro potências concordando.
+Resenha: Daybreak. Salvar o planeta em seis rodadas é o de menos. O milagre é quatro potências concordando.
 ```
 
 **Texto**
@@ -47,12 +48,13 @@ https://eliteboardgamers.com.br/daybreak/
 
 ### Ludopédia: Carnegie
 
-Onde postar: procure o jogo na busca da Ludopédia e abra um novo tópico no fórum dele (categoria de análise ou resenha)
+Jogo para marcar na postagem: Carnegie (procure pelo nome na Ludopédia)
+Imagem de capa da postagem: https://eliteboardgamers.com.br/img/og/resenha-carnegie.jpg
 
-**Título do tópico**
+**Título da postagem**
 
 ```
-(Análise) Carnegie: O único jogo em que doar dinheiro é a jogada mais lucrativa da noite.
+Resenha: Carnegie. O único jogo em que doar dinheiro é a jogada mais lucrativa da noite.
 ```
 
 **Texto**
@@ -90,12 +92,13 @@ https://eliteboardgamers.com.br/carnegie/
 
 ### Ludopédia: Challengers!
 
-Onde postar: procure o jogo na busca da Ludopédia e abra um novo tópico no fórum dele (categoria de análise ou resenha)
+Jogo para marcar na postagem: Challengers! (procure pelo nome na Ludopédia)
+Imagem de capa da postagem: https://eliteboardgamers.com.br/img/og/resenha-challengers.jpg
 
-**Título do tópico**
+**Título da postagem**
 
 ```
-(Análise) Challengers!: Você escala o time, as cartas jogam a partida e a sorte apita a final.
+Resenha: Challengers!. Você escala o time, as cartas jogam a partida e a sorte apita a final.
 ```
 
 **Texto**
@@ -133,12 +136,13 @@ https://eliteboardgamers.com.br/challengers/
 
 ### Ludopédia: Dorfromantik: The Board Game
 
-Onde postar: procure o jogo na busca da Ludopédia e abra um novo tópico no fórum dele (categoria de análise ou resenha)
+Jogo para marcar na postagem: Dorfromantik: The Board Game (procure pelo nome na Ludopédia)
+Imagem de capa da postagem: https://eliteboardgamers.com.br/img/og/resenha-dorfromantik-the-board-game.jpg
 
-**Título do tópico**
+**Título da postagem**
 
 ```
-(Análise) Dorfromantik: The Board Game: Paz no campo, com meta de produtividade. E a meta é a melhor parte.
+Resenha: Dorfromantik: The Board Game. Paz no campo, com meta de produtividade. E a meta é a melhor parte.
 ```
 
 **Texto**
@@ -176,12 +180,13 @@ https://eliteboardgamers.com.br/dorfromantik-the-board-game/
 
 ### Ludopédia: Luz Final
 
-Onde postar: procure o jogo na busca da Ludopédia e abra um novo tópico no fórum dele (categoria de análise ou resenha)
+Jogo para marcar na postagem: Luz Final (procure pelo nome na Ludopédia)
+Imagem de capa da postagem: https://eliteboardgamers.com.br/img/og/resenha-last-light.jpg
 
-**Título do tópico**
+**Título da postagem**
 
 ```
-(Análise) Luz Final: O 4X de uma hora existe. Ele só pede o autor junto e um X a menos.
+Resenha: Luz Final. O 4X de uma hora existe. Ele só pede o autor junto e um X a menos.
 ```
 
 **Texto**
@@ -219,12 +224,13 @@ https://eliteboardgamers.com.br/last-light/
 
 ### Ludopédia: SETI: Search for Extraterrestrial Intelligence
 
-Onde postar: fórum do jogo em https://ludopedia.com.br/jogo/seti-search-for-extraterrestrial-intelligence (novo tópico, categoria de análise ou resenha)
+Jogo para marcar na postagem: SETI: Search for Extraterrestrial Intelligence (https://ludopedia.com.br/jogo/seti-search-for-extraterrestrial-intelligence)
+Imagem de capa da postagem: https://eliteboardgamers.com.br/img/og/resenha-seti.jpg
 
-**Título do tópico**
+**Título da postagem**
 
 ```
-(Análise) SETI: Search for Extraterrestrial Intelligence: Sondas, telescópios e um céu que gira: a busca por vida virou euro de primeira.
+Resenha: SETI: Search for Extraterrestrial Intelligence. Sondas, telescópios e um céu que gira: a busca por vida virou euro de primeira.
 ```
 
 **Texto**
@@ -262,12 +268,13 @@ https://eliteboardgamers.com.br/seti/
 
 ### Ludopédia: Heat: Pedal to the Metal
 
-Onde postar: fórum do jogo em https://ludopedia.com.br/jogo/heat-pedal-to-the-metal (novo tópico, categoria de análise ou resenha)
+Jogo para marcar na postagem: Heat: Pedal to the Metal (https://ludopedia.com.br/jogo/heat-pedal-to-the-metal)
+Imagem de capa da postagem: https://eliteboardgamers.com.br/img/og/resenha-heat-pedal-to-the-metal.jpg
 
-**Título do tópico**
+**Título da postagem**
 
 ```
-(Análise) Heat: Pedal to the Metal: Acelerar custa calor; frear custa a corrida.
+Resenha: Heat: Pedal to the Metal. Acelerar custa calor; frear custa a corrida.
 ```
 
 **Texto**
@@ -305,12 +312,13 @@ https://eliteboardgamers.com.br/heat-pedal-to-the-metal/
 
 ### Ludopédia: Harmonies
 
-Onde postar: fórum do jogo em https://ludopedia.com.br/jogo/harmonies (novo tópico, categoria de análise ou resenha)
+Jogo para marcar na postagem: Harmonies (https://ludopedia.com.br/jogo/harmonies)
+Imagem de capa da postagem: https://eliteboardgamers.com.br/img/og/resenha-harmonies.jpg
 
-**Título do tópico**
+**Título da postagem**
 
 ```
-(Análise) Harmonies: Empilhe a paisagem certa e os animais vêm morar nela.
+Resenha: Harmonies. Empilhe a paisagem certa e os animais vêm morar nela.
 ```
 
 **Texto**
@@ -348,12 +356,13 @@ https://eliteboardgamers.com.br/harmonies/
 
 ### Ludopédia: Civolution
 
-Onde postar: fórum do jogo em https://ludopedia.com.br/jogo/civolution (novo tópico, categoria de análise ou resenha)
+Jogo para marcar na postagem: Civolution (https://ludopedia.com.br/jogo/civolution)
+Imagem de capa da postagem: https://eliteboardgamers.com.br/img/og/resenha-civolution.jpg
 
-**Título do tópico**
+**Título da postagem**
 
 ```
-(Análise) Civolution: Dois dados, uma divindade e quatro eras para levar seu povo mais longe.
+Resenha: Civolution. Dois dados, uma divindade e quatro eras para levar seu povo mais longe.
 ```
 
 **Texto**
@@ -391,12 +400,13 @@ https://eliteboardgamers.com.br/civolution/
 
 ### Ludopédia: Vantage
 
-Onde postar: procure o jogo na busca da Ludopédia e abra um novo tópico no fórum dele (categoria de análise ou resenha)
+Jogo para marcar na postagem: Vantage (procure pelo nome na Ludopédia)
+Imagem de capa da postagem: https://eliteboardgamers.com.br/img/og/resenha-vantage.jpg
 
-**Título do tópico**
+**Título da postagem**
 
 ```
-(Análise) Vantage: Não é um jogo ruim. É um ótimo jogo solo com cinco cadeiras sobrando.
+Resenha: Vantage. Não é um jogo ruim. É um ótimo jogo solo com cinco cadeiras sobrando.
 ```
 
 **Texto**
@@ -434,12 +444,13 @@ https://eliteboardgamers.com.br/vantage/
 
 ### Ludopédia: Cascadia
 
-Onde postar: procure o jogo na busca da Ludopédia e abra um novo tópico no fórum dele (categoria de análise ou resenha)
+Jogo para marcar na postagem: Cascadia (procure pelo nome na Ludopédia)
+Imagem de capa da postagem: https://eliteboardgamers.com.br/img/og/resenha-cascadia.jpg
 
-**Título do tópico**
+**Título da postagem**
 
 ```
-(Análise) Cascadia: Um quebra-cabeça de natureza que cabe em 30 minutos.
+Resenha: Cascadia. Um quebra-cabeça de natureza que cabe em 30 minutos.
 ```
 
 **Texto**
@@ -477,12 +488,13 @@ https://eliteboardgamers.com.br/cascadia/
 
 ### Ludopédia: Detective: A Modern Crime Board Game
 
-Onde postar: procure o jogo na busca da Ludopédia e abra um novo tópico no fórum dele (categoria de análise ou resenha)
+Jogo para marcar na postagem: Detective: A Modern Crime Board Game (procure pelo nome na Ludopédia)
+Imagem de capa da postagem: https://eliteboardgamers.com.br/img/og/resenha-detective.jpg
 
-**Título do tópico**
+**Título da postagem**
 
 ```
-(Análise) Detective: A Modern Crime Board Game: Siga as pistas antes que o prazo acabe.
+Resenha: Detective: A Modern Crime Board Game. Siga as pistas antes que o prazo acabe.
 ```
 
 **Texto**
@@ -520,12 +532,13 @@ https://eliteboardgamers.com.br/detective/
 
 ### Ludopédia: Colt Express
 
-Onde postar: procure o jogo na busca da Ludopédia e abra um novo tópico no fórum dele (categoria de análise ou resenha)
+Jogo para marcar na postagem: Colt Express (procure pelo nome na Ludopédia)
+Imagem de capa da postagem: https://eliteboardgamers.com.br/img/og/resenha-colt-express.jpg
 
-**Título do tópico**
+**Título da postagem**
 
 ```
-(Análise) Colt Express: Planeje o assalto e veja tudo dar errado.
+Resenha: Colt Express. Planeje o assalto e veja tudo dar errado.
 ```
 
 **Texto**
@@ -563,12 +576,13 @@ https://eliteboardgamers.com.br/colt-express/
 
 ### Ludopédia: Scythe
 
-Onde postar: fórum do jogo em https://ludopedia.com.br/jogo/scythe (novo tópico, categoria de análise ou resenha)
+Jogo para marcar na postagem: Scythe (https://ludopedia.com.br/jogo/scythe)
+Imagem de capa da postagem: https://eliteboardgamers.com.br/img/og/resenha-scythe.jpg
 
-**Título do tópico**
+**Título da postagem**
 
 ```
-(Análise) Scythe: Expanda, produza e intimide: a guerra quase nunca acontece.
+Resenha: Scythe. Expanda, produza e intimide: a guerra quase nunca acontece.
 ```
 
 **Texto**
@@ -606,12 +620,13 @@ https://eliteboardgamers.com.br/scythe/
 
 ### Ludopédia: Santuário
 
-Onde postar: procure o jogo na busca da Ludopédia e abra um novo tópico no fórum dele (categoria de análise ou resenha)
+Jogo para marcar na postagem: Santuário (procure pelo nome na Ludopédia)
+Imagem de capa da postagem: https://eliteboardgamers.com.br/img/og/resenha-santuario.jpg
 
-**Título do tópico**
+**Título da postagem**
 
 ```
-(Análise) Santuário: O zoológico de Ark Nova, peça por peça.
+Resenha: Santuário. O zoológico de Ark Nova, peça por peça.
 ```
 
 **Texto**
@@ -649,12 +664,13 @@ https://eliteboardgamers.com.br/santuario/
 
 ### Ludopédia: Root
 
-Onde postar: fórum do jogo em https://ludopedia.com.br/jogo/root (novo tópico, categoria de análise ou resenha)
+Jogo para marcar na postagem: Root (https://ludopedia.com.br/jogo/root)
+Imagem de capa da postagem: https://eliteboardgamers.com.br/img/og/resenha-root.jpg
 
-**Título do tópico**
+**Título da postagem**
 
 ```
-(Análise) Root: Bichinhos fofos, guerra de verdade: cada facção joga outro jogo.
+Resenha: Root. Bichinhos fofos, guerra de verdade: cada facção joga outro jogo.
 ```
 
 **Texto**
@@ -692,12 +708,13 @@ https://eliteboardgamers.com.br/root/
 
 ### Ludopédia: Galactic Cruise
 
-Onde postar: fórum do jogo em https://ludopedia.com.br/jogo/galactic-cruise (novo tópico, categoria de análise ou resenha)
+Jogo para marcar na postagem: Galactic Cruise (https://ludopedia.com.br/jogo/galactic-cruise)
+Imagem de capa da postagem: https://eliteboardgamers.com.br/img/og/resenha-galactic-cruise.jpg
 
-**Título do tópico**
+**Título da postagem**
 
 ```
-(Análise) Galactic Cruise: Uma agência de turismo espacial em que cada engrenagem conta.
+Resenha: Galactic Cruise. Uma agência de turismo espacial em que cada engrenagem conta.
 ```
 
 **Texto**
@@ -735,12 +752,13 @@ https://eliteboardgamers.com.br/galactic-cruise/
 
 ### Ludopédia: Ark Nova
 
-Onde postar: procure o jogo na busca da Ludopédia e abra um novo tópico no fórum dele (categoria de análise ou resenha)
+Jogo para marcar na postagem: Ark Nova (procure pelo nome na Ludopédia)
+Imagem de capa da postagem: https://eliteboardgamers.com.br/img/og/resenha-ark-nova.jpg
 
-**Título do tópico**
+**Título da postagem**
 
 ```
-(Análise) Ark Nova: Um zoológico inteiro, uma carta de cada vez.
+Resenha: Ark Nova. Um zoológico inteiro, uma carta de cada vez.
 ```
 
 **Texto**
@@ -778,12 +796,13 @@ https://eliteboardgamers.com.br/ark-nova/
 
 ### Ludopédia: Bomb Busters
 
-Onde postar: procure o jogo na busca da Ludopédia e abra um novo tópico no fórum dele (categoria de análise ou resenha)
+Jogo para marcar na postagem: Bomb Busters (procure pelo nome na Ludopédia)
+Imagem de capa da postagem: https://eliteboardgamers.com.br/img/og/resenha-bomb-busters.jpg
 
-**Título do tópico**
+**Título da postagem**
 
 ```
-(Análise) Bomb Busters: Corte o fio certo. Juntos.
+Resenha: Bomb Busters. Corte o fio certo. Juntos.
 ```
 
 **Texto**
@@ -821,12 +840,13 @@ https://eliteboardgamers.com.br/bomb-busters/
 
 ### Ludopédia: Endeavor: Deep Sea
 
-Onde postar: fórum do jogo em https://ludopedia.com.br/jogo/endeavor-deep-sea (novo tópico, categoria de análise ou resenha)
+Jogo para marcar na postagem: Endeavor: Deep Sea (https://ludopedia.com.br/jogo/endeavor-deep-sea)
+Imagem de capa da postagem: https://eliteboardgamers.com.br/img/og/resenha-endeavor-deep-sea.jpg
 
-**Título do tópico**
+**Título da postagem**
 
 ```
-(Análise) Endeavor: Deep Sea: Explore, pesquise e proteja o fundo do mar.
+Resenha: Endeavor: Deep Sea. Explore, pesquise e proteja o fundo do mar.
 ```
 
 **Texto**
@@ -864,12 +884,13 @@ https://eliteboardgamers.com.br/endeavor-deep-sea/
 
 ### Ludopédia: Faraway
 
-Onde postar: fórum do jogo em https://ludopedia.com.br/jogo/faraway-people-from-below (novo tópico, categoria de análise ou resenha)
+Jogo para marcar na postagem: Faraway (https://ludopedia.com.br/jogo/faraway-people-from-below)
+Imagem de capa da postagem: https://eliteboardgamers.com.br/img/og/resenha-faraway.jpg
 
-**Título do tópico**
+**Título da postagem**
 
 ```
-(Análise) Faraway: Planeje para frente, pontue para trás.
+Resenha: Faraway. Planeje para frente, pontue para trás.
 ```
 
 **Texto**
@@ -907,12 +928,13 @@ https://eliteboardgamers.com.br/faraway/
 
 ### Ludopédia: Gloomhaven
 
-Onde postar: fórum do jogo em https://ludopedia.com.br/jogo/gloomhaven (novo tópico, categoria de análise ou resenha)
+Jogo para marcar na postagem: Gloomhaven (https://ludopedia.com.br/jogo/gloomhaven)
+Imagem de capa da postagem: https://eliteboardgamers.com.br/img/og/resenha-gloomhaven.jpg
 
-**Título do tópico**
+**Título da postagem**
 
 ```
-(Análise) Gloomhaven: Uma campanha inteira dentro de uma caixa.
+Resenha: Gloomhaven. Uma campanha inteira dentro de uma caixa.
 ```
 
 **Texto**
@@ -950,12 +972,13 @@ https://eliteboardgamers.com.br/gloomhaven/
 
 ### Ludopédia: The Lord of the Rings: Fate of the Fellowship
 
-Onde postar: procure o jogo na busca da Ludopédia e abra um novo tópico no fórum dele (categoria de análise ou resenha)
+Jogo para marcar na postagem: The Lord of the Rings: Fate of the Fellowship (procure pelo nome na Ludopédia)
+Imagem de capa da postagem: https://eliteboardgamers.com.br/img/og/resenha-fate-of-the-fellowship.jpg
 
-**Título do tópico**
+**Título da postagem**
 
 ```
-(Análise) The Lord of the Rings: Fate of the Fellowship: O Pandemic que virou Terra-média.
+Resenha: The Lord of the Rings: Fate of the Fellowship. O Pandemic que virou Terra-média.
 ```
 
 **Texto**
@@ -993,12 +1016,13 @@ https://eliteboardgamers.com.br/fate-of-the-fellowship/
 
 ### Ludopédia: Azul
 
-Onde postar: fórum do jogo em https://ludopedia.com.br/jogo/azul (novo tópico, categoria de análise ou resenha)
+Jogo para marcar na postagem: Azul (https://ludopedia.com.br/jogo/azul)
+Imagem de capa da postagem: https://eliteboardgamers.com.br/img/og/resenha-azul.jpg
 
-**Título do tópico**
+**Título da postagem**
 
 ```
-(Análise) Azul: Um dos melhores jogos de entrada já criados.
+Resenha: Azul. Um dos melhores jogos de entrada já criados.
 ```
 
 **Texto**
@@ -1036,12 +1060,13 @@ https://eliteboardgamers.com.br/azul/
 
 ### Ludopédia: Dune: Imperium
 
-Onde postar: procure o jogo na busca da Ludopédia e abra um novo tópico no fórum dele (categoria de análise ou resenha)
+Jogo para marcar na postagem: Dune: Imperium (procure pelo nome na Ludopédia)
+Imagem de capa da postagem: https://eliteboardgamers.com.br/img/og/resenha-dune-imperium.jpg
 
-**Título do tópico**
+**Título da postagem**
 
 ```
-(Análise) Dune: Imperium: Deck-building com faca nos dentes.
+Resenha: Dune: Imperium. Deck-building com faca nos dentes.
 ```
 
 **Texto**
@@ -1079,12 +1104,13 @@ https://eliteboardgamers.com.br/dune-imperium/
 
 ### Ludopédia: The Crew: The Quest for Planet Nine
 
-Onde postar: fórum do jogo em https://ludopedia.com.br/jogo/the-crew-the-quest-for-planet-nine (novo tópico, categoria de análise ou resenha)
+Jogo para marcar na postagem: The Crew: The Quest for Planet Nine (https://ludopedia.com.br/jogo/the-crew-the-quest-for-planet-nine)
+Imagem de capa da postagem: https://eliteboardgamers.com.br/img/og/resenha-the-crew.jpg
 
-**Título do tópico**
+**Título da postagem**
 
 ```
-(Análise) The Crew: The Quest for Planet Nine: Silêncio na nave: a vaza certa na hora certa.
+Resenha: The Crew: The Quest for Planet Nine. Silêncio na nave: a vaza certa na hora certa.
 ```
 
 **Texto**
@@ -1122,12 +1148,13 @@ https://eliteboardgamers.com.br/the-crew/
 
 ### Ludopédia: Terraforming Mars
 
-Onde postar: procure o jogo na busca da Ludopédia e abra um novo tópico no fórum dele (categoria de análise ou resenha)
+Jogo para marcar na postagem: Terraforming Mars (procure pelo nome na Ludopédia)
+Imagem de capa da postagem: https://eliteboardgamers.com.br/img/og/resenha-terraforming-mars.jpg
 
-**Título do tópico**
+**Título da postagem**
 
 ```
-(Análise) Terraforming Mars: Um planeta inteiro para construir, uma carta de cada vez.
+Resenha: Terraforming Mars. Um planeta inteiro para construir, uma carta de cada vez.
 ```
 
 **Texto**
@@ -1165,12 +1192,13 @@ https://eliteboardgamers.com.br/terraforming-mars/
 
 ### Ludopédia: Codenames
 
-Onde postar: procure o jogo na busca da Ludopédia e abra um novo tópico no fórum dele (categoria de análise ou resenha)
+Jogo para marcar na postagem: Codenames (procure pelo nome na Ludopédia)
+Imagem de capa da postagem: https://eliteboardgamers.com.br/img/og/resenha-codenames.jpg
 
-**Título do tópico**
+**Título da postagem**
 
 ```
-(Análise) Codenames: Um dos melhores jogos de festa já criados.
+Resenha: Codenames. Um dos melhores jogos de festa já criados.
 ```
 
 **Texto**
@@ -1208,12 +1236,13 @@ https://eliteboardgamers.com.br/codenames/
 
 ### Ludopédia: MicroMacro: Crime City
 
-Onde postar: fórum do jogo em https://ludopedia.com.br/jogo/micromacro-crime-city (novo tópico, categoria de análise ou resenha)
+Jogo para marcar na postagem: MicroMacro: Crime City (https://ludopedia.com.br/jogo/micromacro-crime-city)
+Imagem de capa da postagem: https://eliteboardgamers.com.br/img/og/resenha-micromacro.jpg
 
-**Título do tópico**
+**Título da postagem**
 
 ```
-(Análise) MicroMacro: Crime City: Um mapa, dezesseis crimes, nenhum detalhe à toa.
+Resenha: MicroMacro: Crime City. Um mapa, dezesseis crimes, nenhum detalhe à toa.
 ```
 
 **Texto**
@@ -1251,12 +1280,13 @@ https://eliteboardgamers.com.br/micromacro/
 
 ### Ludopédia: Wingspan
 
-Onde postar: procure o jogo na busca da Ludopédia e abra um novo tópico no fórum dele (categoria de análise ou resenha)
+Jogo para marcar na postagem: Wingspan (procure pelo nome na Ludopédia)
+Imagem de capa da postagem: https://eliteboardgamers.com.br/img/og/resenha-wingspan.jpg
 
-**Título do tópico**
+**Título da postagem**
 
 ```
-(Análise) Wingspan: Um motor de cartas que voa alto.
+Resenha: Wingspan. Um motor de cartas que voa alto.
 ```
 
 **Texto**
@@ -1294,12 +1324,13 @@ https://eliteboardgamers.com.br/wingspan/
 
 ### Ludopédia: Sky Team
 
-Onde postar: procure o jogo na busca da Ludopédia e abra um novo tópico no fórum dele (categoria de análise ou resenha)
+Jogo para marcar na postagem: Sky Team (procure pelo nome na Ludopédia)
+Imagem de capa da postagem: https://eliteboardgamers.com.br/img/og/resenha-sky-team.jpg
 
-**Título do tópico**
+**Título da postagem**
 
 ```
-(Análise) Sky Team: Pouso perfeito, sem dizer uma palavra.
+Resenha: Sky Team. Pouso perfeito, sem dizer uma palavra.
 ```
 
 **Texto**
@@ -1337,12 +1368,13 @@ https://eliteboardgamers.com.br/sky-team/
 
 ### Ludopédia: The Mind
 
-Onde postar: procure o jogo na busca da Ludopédia e abra um novo tópico no fórum dele (categoria de análise ou resenha)
+Jogo para marcar na postagem: The Mind (procure pelo nome na Ludopédia)
+Imagem de capa da postagem: https://eliteboardgamers.com.br/img/og/resenha-the-mind.jpg
 
-**Título do tópico**
+**Título da postagem**
 
 ```
-(Análise) The Mind: Silêncio, sintonia e cartas de 1 a 100.
+Resenha: The Mind. Silêncio, sintonia e cartas de 1 a 100.
 ```
 
 **Texto**
@@ -1380,12 +1412,13 @@ https://eliteboardgamers.com.br/the-mind/
 
 ### Ludopédia: Pandemic Legacy: Season 1
 
-Onde postar: fórum do jogo em https://ludopedia.com.br/jogo/pandemic-legacy-season-1 (novo tópico, categoria de análise ou resenha)
+Jogo para marcar na postagem: Pandemic Legacy: Season 1 (https://ludopedia.com.br/jogo/pandemic-legacy-season-1)
+Imagem de capa da postagem: https://eliteboardgamers.com.br/img/og/resenha-pandemic-legacy.jpg
 
-**Título do tópico**
+**Título da postagem**
 
 ```
-(Análise) Pandemic Legacy: Season 1: Um ano para salvar o mundo, gravado no tabuleiro.
+Resenha: Pandemic Legacy: Season 1. Um ano para salvar o mundo, gravado no tabuleiro.
 ```
 
 **Texto**
@@ -1423,12 +1456,13 @@ https://eliteboardgamers.com.br/pandemic-legacy/
 
 ### Ludopédia: Lost Ruins of Arnak
 
-Onde postar: procure o jogo na busca da Ludopédia e abra um novo tópico no fórum dele (categoria de análise ou resenha)
+Jogo para marcar na postagem: Lost Ruins of Arnak (procure pelo nome na Ludopédia)
+Imagem de capa da postagem: https://eliteboardgamers.com.br/img/og/resenha-arnak.jpg
 
-**Título do tópico**
+**Título da postagem**
 
 ```
-(Análise) Lost Ruins of Arnak: Uma expedição de cartas rumo ao templo perdido.
+Resenha: Lost Ruins of Arnak. Uma expedição de cartas rumo ao templo perdido.
 ```
 
 **Texto**
@@ -1466,12 +1500,13 @@ https://eliteboardgamers.com.br/arnak/
 
 ### Ludopédia: Flip 7
 
-Onde postar: fórum do jogo em https://ludopedia.com.br/jogo/flip-7 (novo tópico, categoria de análise ou resenha)
+Jogo para marcar na postagem: Flip 7 (https://ludopedia.com.br/jogo/flip-7)
+Imagem de capa da postagem: https://eliteboardgamers.com.br/img/og/resenha-flip-7.jpg
 
-**Título do tópico**
+**Título da postagem**
 
 ```
-(Análise) Flip 7: Vira mais uma? Sete diferentes ou estoura.
+Resenha: Flip 7. Vira mais uma? Sete diferentes ou estoura.
 ```
 
 **Texto**
@@ -1509,12 +1544,13 @@ https://eliteboardgamers.com.br/flip-7/
 
 ### Ludopédia: Nemesis
 
-Onde postar: fórum do jogo em https://ludopedia.com.br/jogo/nemesis (novo tópico, categoria de análise ou resenha)
+Jogo para marcar na postagem: Nemesis (https://ludopedia.com.br/jogo/nemesis)
+Imagem de capa da postagem: https://eliteboardgamers.com.br/img/og/resenha-nemesis.jpg
 
-**Título do tópico**
+**Título da postagem**
 
 ```
-(Análise) Nemesis: Fugir, resistir na escuridão ou invadir o ninho: escolha o seu medo.
+Resenha: Nemesis. Fugir, resistir na escuridão ou invadir o ninho: escolha o seu medo.
 ```
 
 **Texto**

@@ -1,5 +1,5 @@
 """Pacote de divulgação do dia: textos prontos para copiar e colar no Instagram, nos grupos de WhatsApp/Telegram
-e no fórum da Ludopédia (resenhas).
+e no canal da Elite na Ludopédia (resenhas).
 
 Uso: python3 tools/divulgacao.py [AAAA-MM-DD]   (sem data: hoje, no horário de Brasília)
      python3 tools/divulgacao.py --ludopedia     (todas as resenhas já publicadas, em divulgacao/ludopedia.md)
@@ -98,11 +98,11 @@ def pagina_ludopedia(c):
 
 
 def post_ludopedia(c):
-    """Tópico de análise para o fórum do jogo na Ludopédia: um resumo próprio, não a resenha inteira
+    """Postagem para o canal da Elite na Ludopédia (seção Canais, não o fórum): um resumo próprio, não a resenha inteira
     (texto idêntico ao do site concorreria com ele no Google), com o link para a resenha completa no fim.
     Texto simples, sem marcação, para sair igual em qualquer editor. Tudo sai da resenha publicada."""
     url = f"{SITE}/{c['slug']}/"
-    titulo = f"(Análise) {c['jogo']}: {c['tagline']}"
+    titulo = f"Resenha: {c['jogo']}. {c['tagline']}"
     partes = [c["lede"]]
     if c.get("experiencia"):
         partes.append("COMO É JOGAR\n" + c["experiencia"][0])
@@ -121,13 +121,15 @@ def post_ludopedia(c):
                   f"está no site da Elite Board Gamers:\n{url}")
     onde = pagina_ludopedia(c)
     return (f"### Ludopédia: {c['jogo']}\n\n"
-            + (f"Onde postar: fórum do jogo em {onde} (novo tópico, categoria de análise ou resenha)\n\n" if onde
-               else "Onde postar: procure o jogo na busca da Ludopédia e abra um novo tópico no fórum dele (categoria de análise ou resenha)\n\n")
-            + f"**Título do tópico**\n\n```\n{titulo}\n```\n\n**Texto**\n\n```\n" + "\n\n".join(partes) + "\n```\n")
+            + f"Jogo para marcar na postagem: {c['jogo']}" + (f" ({onde})" if onde else " (procure pelo nome na Ludopédia)") + "\n"
+            + f"Imagem de capa da postagem: {SITE}/img/og/resenha-{c['slug']}.jpg\n\n"
+            + f"**Título da postagem**\n\n```\n{titulo}\n```\n\n**Texto**\n\n```\n" + "\n\n".join(partes) + "\n```\n")
 
 
-AVISO_LUDOPEDIA = ("Cole o título e o texto num tópico novo do fórum do jogo. Responda aos comentários: isso mantém o tópico em destaque. "
-                   "Não cole a resenha inteira do site nem só o link: o resumo com o link é o que a comunidade aceita melhor.\n\n")
+AVISO_LUDOPEDIA = ("Para o canal da Elite na Ludopédia (menu Canais > Meus Canais > nova postagem; não é o fórum). Cole o título e o texto, "
+                   "use a imagem indicada como capa e, se o editor deixar, marque o jogo, para a postagem aparecer na página dele. "
+                   "Responda aos comentários. Não cole a resenha inteira do site nem só o link: o resumo com o link evita "
+                   "texto repetido no Google e é o que a comunidade aceita melhor.\n\n")
 
 
 def resumo_grupos(dia, ns, rs, ch):
