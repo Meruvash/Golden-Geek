@@ -1,0 +1,57 @@
+{
+ "slug": "wavelength",
+ "usar_na_pagina": true,
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 1600,
+   "altura": 1600,
+   "editora": "CMYK",
+   "credito": "Imagem: CMYK",
+   "pagina": "https://www.cmyk.games/products/wavelength",
+   "imagem": "https://cdn.shopify.com/s/files/1/0473/5562/5629/files/Hvass_Hannibal_007_PhotobyDavidStjernholm.jpg",
+   "baixada_em": "2026-10-31",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/jogabilidade-1.webp",
+   "tipo": "jogabilidade",
+   "largura": 1280,
+   "altura": 1600,
+   "editora": "CMYK",
+   "credito": "Imagem: CMYK",
+   "pagina": "https://www.cmyk.games/products/wavelength",
+   "imagem": "https://cdn.shopify.com/s/files/1/0473/5562/5629/files/Hvass_Hannibal_008_PhotobyDavidStjernholm.jpg",
+   "baixada_em": "2026-10-31",
+   "aprovada": true,
+   "fora": true
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 1600,
+   "altura": 1067,
+   "editora": "CMYK",
+   "credito": "Imagem: CMYK",
+   "pagina": "https://www.cmyk.games/products/wavelength",
+   "imagem": "https://cdn.shopify.com/s/files/1/0473/5562/5629/products/DSC07240.jpg",
+   "baixada_em": "2026-10-31",
+   "aprovada": true,
+   "jogar": true
+  },
+  {
+   "arquivo": "fotos/componentes-2.webp",
+   "tipo": "componentes",
+   "largura": 1600,
+   "altura": 1600,
+   "editora": "CMYK",
+   "credito": "Imagem: CMYK",
+   "pagina": "https://www.cmyk.games/products/wavelength",
+   "imagem": "https://cdn.shopify.com/s/files/1/0473/5562/5629/files/Hvass_Hannibal_007_PhotobyDavidStjernholm.jpg",
+   "baixada_em": "2026-10-31",
+   "aprovada": true,
+   "principal": true
+  }
+ ]
+}
