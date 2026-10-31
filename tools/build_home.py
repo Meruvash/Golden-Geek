@@ -807,6 +807,8 @@ if __name__ == "__main__":
     print("ok resenhas/index.html")
     import build_consulta
     print("ok consulta/index.html:", build_consulta.build())
+    import build_como_jogar
+    print("ok como-jogar:", len(build_como_jogar.build()), "páginas")
     import build_calendario
     print("ok lancamentos/index.html: %d lançamentos, %d sem capa" % build_calendario.build())
     import busca
