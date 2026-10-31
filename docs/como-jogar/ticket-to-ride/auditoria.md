@@ -105,3 +105,33 @@ Mesma moldura do PROMPT_PILOTO, seção 10: de 5 a 8 adultos que nunca jogaram T
 ## 8. Ligação com uma resenha futura
 
 O site não tem resenha de Ticket to Ride (`resenha: null`). Quando houver, basta preencher o campo `resenha` no JSON: o conversor já põe o link "Leia a nossa resenha" no fim da página.
+
+## Auditoria independente
+
+Feita em 31/10/2026 por um auditor que não escreveu o texto.
+
+**Fontes baixadas pelo auditor (fora do repositório).** Manual brasileiro pela mesma API da Biblioteca de Downloads da Galápagos (`id=2280`): HTTP 200, ZIP com "T2R rules BR-compressed.pdf", 4 páginas, sha256 78280479…7c101c8c, igual ao do dossiê. Texto extraído com `pdftotext -layout`, página por página. A ordem das páginas confere com a do tutorial: p. 1 capa e história; p. 2 Componentes, Preparação, Objetivo e início do Turno; p. 3 Conquistar uma Rota, Comprar Bilhetes, Cartas de Vagão e Conquistando Rotas; p. 4 Tabela de Pontuação, Comprando Bilhetes, Final do Jogo e Calculando os Pontos. Também baixados, para conferência: o manual em inglês de 2015 (mesmo link do dossiê) e o manual de 2025 em português (link da página oficial da Days of Wonder).
+
+**O que conferi.**
+
+- Cada afirmação normativa do 4 minutos, das etapas 1 a 4, da seção 6, da avaliação e da folha de consulta contra a página citada do manual de 2016. Todas conferem, inclusive a Tabela de Pontuação (p. 4), as 110 cartas e 30 Bilhetes (p. 2), a Locomotiva aberta e a da reposição (p. 3), a pilha vazia (p. 3), as Rotas Duplas com 2 ou 3 jogadores (p. 3), a compra de Bilhetes e a pilha curta (p. 4), o fim com 0, 1 ou 2 trens (p. 4) e o desempate (p. 4).
+- As leituras marcadas como `[!edicao]` (Locomotiva aberta como segunda carta, trens suficientes, só Locomotivas, Bilhetes antigos, empate persistente) estão de fato em aberto no manual de 2016 e estão apresentadas como leitura, não como regra. As afirmações sobre a edição de 2025 conferem com o manual de 2025 (33 Bilhetes, 4 iniciais com mínimo de 2 e devolução embaralhada, roxo, "Controlar", Locomotiva aberta só como primeira carta, rota inteira num único turno, devolução de Bilhetes na ordem que preferir, proibição de devolver Bilhetes antigos, primeiro jogador escolhido pela mesa, vitória dividida). O "todos os empatados" no Maior Caminho confere com o inglês ("all tied players score the 10 point bonus").
+- Legalidade de cada exemplo: Montréal-New York com Azul, Azul e Locomotiva; a sequência Verde, Locomotiva na reposição, Verde, Amarelo; as três formas de pagar Montréal-Toronto (são exatamente três com 3 Verdes, 2 Vermelhos e 1 Locomotiva); a última volta de Ana e Bruno (Ana dispara o fim com 1 trem, Bruno e depois Ana jogam um turno cada). Todos legais.
+- Contas refeitas num script Python próprio (scratchpad do auditor): tabela, 42 trens e 1 carta, 15 contra 8, 14 pontos e 10 trens, treino da tabela, Ana (44 trens, 83 pontos, sobra 1 trem; 83 + 14 + 10 = 107), Bruno (40 trens, 65 pontos), Carla 55, sua vez 69, caminho mais longo 10 (busca exaustiva no esquema A-B-C-D-E), avaliação 3, 5 e 8.
+- JSON: 2 a 5 jogadores, 30 a 60 min e 8+ conferem com a capa do manual (p. 1); edição Galápagos confere; os três pontos do resumo conferem (p. 2 a 4).
+- Regra essencial de fora: nenhuma. O manual não diz quem fica com a carta física de Maior Caminho num empate nem o que fazer se a pilha de Bilhetes acabar; o tutorial também não diz, o que é coerente.
+
+**Problemas achados e corrigidos.**
+
+1. **Conta errada no exemplo resolvido da etapa 4 (manual p. 4 para a regra de soma).** Bruno tem 65 pontos de rotas e 13 + 8 + 11 + 5 = 37 de Bilhetes, total **102**, não 95. Corrigido no tutorial. Ana continua vencendo (107 a 102) e o comentário "Por que importa" segue verdadeiro. A tabela da seção 3 desta auditoria, acima, também registra 95 por engano.
+2. **JSON, campo `resumo`.** Dizia que a partida acaba "quando os trens de alguém acabarem"; pelo manual (p. 4) o fim começa quando alguém fica com 0, 1 ou 2 trens no fim do turno. Reescrito: "vence quem somar mais pontos no fim, que chega quando alguém fica com 2 trens ou menos."
+
+**O que ficou em aberto.** As cinco leituras de `[!edicao]` dependem do manual de 2025 ou de dedução; estão bem sinalizadas, mas a da Locomotiva aberta como segunda carta aparece como resposta fechada no treino c e na folha de consulta (com a ressalva "leitura explicada na etapa 2"). Não confirmei se a edição de 2025 é vendida no Brasil. "Com um pedaço do Canadá" (seção 0) não está no manual brasileiro, que diz "mapa dos EUA"; o inglês fala em "North America" e o próprio manual cita Montréal e Toronto, por isso mantive.
+
+**Teste de execução (só com o tutorial).**
+
+- Preparação para 2 jogadores e para 5: feita sem consultar o manual, seguindo os 10 passos da etapa 1. Nada mudou entre 2 e 5 na mesa, como o texto avisa. Pequena adivinhação: onde fica a pilha de descarte das 5 cartas trocadas por 3 Locomotivas; o texto só diz "descarte", e a pilha de descarte é citada na etapa 1, o que basta.
+- Rodada completa com 3 jogadores (compra de 2 cartas com reposição, compra de Locomotiva aberta, conquista de rota cinza e de Rota Dupla com a outra interditada, compra de Bilhetes): executada sem dúvida de regra. Adivinhação menor: o que fazer se a pilha de Bilhetes estiver vazia (o manual também não diz).
+- Avaliação final respondida antes de ler as respostas: não; mais uma; não; não; 10 e 4; não; quatro; +4. As oito batem com as respostas do tutorial.
+
+**Veredito.** Com as duas correções, o tutorial está pronto para publicar.

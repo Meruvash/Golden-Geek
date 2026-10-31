@@ -8,6 +8,7 @@ Marcação do tutorial.md (a mesma do de Clank!):
   ### Respostas ...    tudo até o próximo ### ou ## fica escondido num "mostrar"
   > [!tipo] ...        bloco: entender, passos, resolvido, complete, suavez, treino, atencao, edicao, dica
   (p. 7)               página do manual, vira a etiqueta "p. 7"
+Só gera página com "publicar": true no JSON, marcado depois da auditoria independente; rascunho não vai ao ar.
 Uma página escrita à mão (sem tutorial.md) não é tocada: o JSON dela só alimenta a lista em /como-jogar/.
 """
 import html
@@ -57,6 +58,8 @@ def blocos(linhas):
             m = re.match(r"\[!(\w+)\]\s*(.*)", bq[0])
             tipo, bq[0] = (m.group(1), m.group(2)) if m else ("entender", bq[0])
             rot = ROTULOS.get(tipo, tipo.capitalize())
+            # "**Para entender.**" no começo repete o rótulo do bloco
+            bq[0] = re.sub(r"^\*\*" + re.escape(rot) + r"\.\*\*\s*", "", bq[0], flags=re.I)
             # "**Passo a passo: preparação**" -> "**Preparação**" (o rótulo já diz "Passo a passo")
             prefixo = {"passos": "Passo a passo: ", "treino": "Treino rápido: "}.get(tipo)
             if prefixo:
@@ -213,7 +216,8 @@ def build():
     feitos = []
     for meta in metas():
         md = ROOT / "docs" / "como-jogar" / meta["slug"] / "tutorial.md"
-        if meta.get("html_manual") or not md.exists():
+        # só vira página o tutorial conferido pela auditoria independente ("publicar": true no JSON)
+        if meta.get("html_manual") or not meta.get("publicar") or not md.exists():
             continue
         destino = ROOT / "como-jogar" / meta["slug"] / "index.html"
         destino.parent.mkdir(parents=True, exist_ok=True)
@@ -225,4 +229,7 @@ def build():
 
 
 if __name__ == "__main__":
+    import sys
+    if len(sys.argv) > 1:
+        sys.exit(__doc__)
     print("ok", build())

@@ -264,7 +264,7 @@ As respostas ficam escondidas no fim de cada etapa. Tente antes de abrir. No fin
 >
 > Ana tem o caminho contínuo mais longo e ganha 10 pontos.
 >
-> Total: Ana, 83 + 14 + 10 = **107**. Bruno, 65 + 37 = **95**. Ana vence.
+> Total: Ana, 83 + 14 + 10 = **107**. Bruno, 65 + 37 = **102**. Ana vence.
 >
 > Por que importa: Bruno completou mais Bilhetes, mas Ana ganhou nas rotas longas. Os 7 pontos que ela perdeu no Bilhete incompleto não mudaram o resultado; com uma diferença menor, mudariam.
 

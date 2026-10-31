@@ -9,7 +9,7 @@
  "edicao": "Edição Galápagos",
  "data": "2026-10-31",
  "descricao": "Regras de Ticket to Ride passo a passo, conferidas no manual da Galápagos: preparação, as três ações, Locomotivas, Bilhetes de Destino e contagem.",
- "resumo": "Você junta Cartas de Vagão da mesma cor para ocupar rotas no mapa dos Estados Unidos e ligar as cidades dos seus Bilhetes de Destino; vence quem somar mais pontos quando os trens de alguém acabarem.",
+ "resumo": "Você junta Cartas de Vagão da mesma cor para ocupar rotas no mapa dos Estados Unidos e ligar as cidades dos seus Bilhetes de Destino; vence quem somar mais pontos no fim, que chega quando alguém fica com 2 trens ou menos.",
  "pontos": [
   "Em cada turno, uma ação só: comprar 2 Cartas de Vagão, conquistar uma rota ou comprar Bilhetes de Destino.",
   "Rotas pontuam na hora, e as longas valem muito mais: 6 espaços dão 15 pontos.",
@@ -18,5 +18,6 @@
  "leitura_min": 29,
  "etapas": 4,
  "resenha": null,
- "chamada": "Junte cartas da mesma cor, ocupe rotas no mapa e ligue as cidades dos seus Bilhetes antes que os trens acabem. Começa com um resumo para jogar em 4 minutos e segue em quatro etapas, da mesa montada à contagem de pontos."
+ "chamada": "Junte cartas da mesma cor, ocupe rotas no mapa e ligue as cidades dos seus Bilhetes antes que os trens acabem. Começa com um resumo para jogar em 4 minutos e segue em quatro etapas, da mesa montada à contagem de pontos.",
+ "publicar": true
 }

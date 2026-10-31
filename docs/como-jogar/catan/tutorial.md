@@ -24,13 +24,20 @@ Na primeira partida, use a montagem para principiantes desenhada na p. 1 do manu
 
 ### Seu primeiro turno
 
-| Terreno | Produz | | Construção | Custo |
-|---|---|---|---|---|
-| Floresta | madeira | | Estrada | argila e madeira |
-| Colina | argila | | Aldeia | argila, madeira, lã e cereais |
-| Pasto | lã | | Cidade | 3 minérios e 2 cereais |
-| Lavoura | cereais | | Carta de desenvolvimento | minério, lã e cereais |
-| Montanha | minério | | | |
+| Terreno | Produz |
+|---|---|
+| Floresta | madeira |
+| Colina | argila |
+| Pasto | lã |
+| Lavoura | cereais |
+| Montanha | minério |
+
+| Construção | Custo |
+|---|---|
+| Estrada | argila e madeira |
+| Aldeia | argila, madeira, lã e cereais |
+| Cidade | 3 minérios e 2 cereais |
+| Carta de desenvolvimento | minério, lã e cereais |
 
 1. **Role os dois dados** e some. Todo terreno com aquele número produz para **todos** os jogadores: 1 carta por aldeia encostada nele. Saiu 7: veja abaixo.
 2. **Troque**, se quiser: com qualquer outro jogador, nos termos que combinarem, ou com a reserva, entregando 4 cartas iguais por 1 à sua escolha.
@@ -80,7 +87,7 @@ As respostas ficam escondidas no fim de cada etapa: tente antes de abrir. No fim
 
 ## 2. Etapa 1: montar a ilha
 
-> [!entender] **Para entender.** A ilha tem três tipos de lugar, e cada peça só vai num deles. Os **terrenos** são os hexágonos. As **encruzilhadas** são as pontas dos hexágonos, onde três terrenos se encontram, ou um ou dois terrenos e o mar: é ali que ficam aldeias e cidades. Os **caminhos** são os lados dos hexágonos, entre duas encruzilhadas: é ali que ficam as estradas, uma por caminho (p. 1 e 3; manual original, p. 4 e 10).
+> [!entender] **Para entender.** A ilha tem três tipos de lugar. Os **terrenos** são os hexágonos. As **encruzilhadas** são as pontas deles, onde se encontram três terrenos, ou terreno e mar: ali ficam aldeias e cidades. Os **caminhos** são os lados, entre duas encruzilhadas: ali ficam as estradas, uma por caminho (p. 1 e 3; manual original, p. 4 e 10).
 >
 > Uma aldeia encosta em até 3 terrenos e recebe de todos eles. Na costa, ela encosta em menos terrenos, mas pode estar num **porto**, impresso na moldura, que dá trocas melhores com a reserva (p. 1 e 3).
 >
@@ -153,7 +160,7 @@ As respostas ficam escondidas no fim de cada etapa: tente antes de abrir. No fim
 
 ## 4. Etapa 3: trocar e construir
 
-> [!entender] **Para entender.** Depois dos dados, o seu turno tem duas fases, nesta ordem: comércio e construção (p. 2). As trocas existem porque nenhuma posição produz de tudo, e cada construção pede uma combinação diferente (p. 1).
+> [!entender] **Para entender.** Depois dos dados vêm, nesta ordem, comércio e construção (p. 2). Nenhuma posição produz de tudo, e cada construção pede uma combinação diferente (p. 1).
 >
 > Com a reserva, você entrega 4 cartas por 1, a não ser que tenha um porto; com outro jogador, os termos são livres, mas a troca sempre passa por quem está na vez. Na construção, estradas não valem pontos, mas abrem lugar para aldeias; aldeias valem 1 ponto e produzem; cidades valem 2 e produzem o dobro, mas só nascem de uma aldeia sua (p. 3 e 4).
 
@@ -168,18 +175,18 @@ As respostas ficam escondidas no fim de cada etapa: tente antes de abrir. No fim
 
 > [!passos] **Passo a passo: construção** (p. 3 e 4)
 >
-> 1. Pague o custo da tabela de custos de construção, devolvendo as cartas à reserva, e ponha no tabuleiro a peça que está à sua frente. Pode construir quantas coisas puder pagar.
+> 1. Pague o custo da tabela, devolvendo as cartas à reserva, e ponha a peça no tabuleiro. Construa quanto puder pagar.
 > 2. **Estrada** (argila e madeira): num caminho vazio. Ela precisa sair de uma encruzilhada onde você já tem estrada, aldeia ou cidade (manual original, p. 4 e 11). Uma aldeia ou cidade de outro jogador numa encruzilhada impede a sua estrada de continuar por ali.
 > 3. **Aldeia** (argila, madeira, lã e cereais): numa encruzilhada vazia aonde chegue pelo menos uma estrada sua.
 > 4. **Regra da distância:** as três encruzilhadas vizinhas da nova aldeia precisam estar vazias, sem aldeia nem cidade de ninguém, nem suas.
 > 5. **Cidade** (3 minérios e 2 cereais): só no lugar de uma aldeia sua. A aldeia volta para a sua frente e pode ser construída de novo depois (manual original, p. 6).
 > 6. **Carta de desenvolvimento** (minério, lã e cereais): pegue a carta do topo do monte e guarde escondida. Para que serve, etapa 4.
-> 7. Você só tem as peças que recebeu: 5 aldeias, 4 cidades e 15 estradas (p. 2). Com as 5 aldeias no tabuleiro, só constrói outra depois de transformar uma delas em cidade (manual original, p. 12).
-> 8. Terminou de construir, passe os dados para a esquerda.
+> 7. Você só tem 5 aldeias, 4 cidades e 15 estradas (p. 2). Com as 5 aldeias no tabuleiro, outra só depois de transformar uma em cidade (manual original, p. 12).
+> 8. Terminou, passe os dados para a esquerda.
 
-> [!resolvido] **Exemplo resolvido.** Ana tem 2 madeiras, 1 argila, 5 lãs e 1 cereais. Ela quer uma estrada até uma encruzilhada livre e, no mesmo turno, uma aldeia lá. Juntas, custam 2 argilas, 2 madeiras, 1 lã e 1 cereais. Falta 1 argila.
+> [!resolvido] **Exemplo resolvido.** Ana tem 2 madeiras, 1 argila, 5 lãs e 1 cereais e quer uma estrada até uma encruzilhada livre e uma aldeia lá. Juntas, custam 2 argilas, 2 madeiras, 1 lã e 1 cereais: falta 1 argila.
 >
-> Com a reserva, ela daria 4 lãs por 1 argila, construiria as duas peças e ficaria sem nenhuma carta. Ela tenta antes o Comércio Interno e oferece 1 lã por 1 argila. Bruno aceita. Ana constrói a estrada e depois a aldeia, que respeita a regra da distância, e termina com 3 lãs na mão.
+> Com a reserva, daria 4 lãs pela argila e acabaria sem cartas. Ela oferece a Bruno 1 lã por 1 argila, e ele aceita. Ana constrói a estrada, depois a aldeia, que respeita a regra da distância, e fica com 3 lãs.
 
 > [!complete] **Complete.** Bruno tem uma aldeia no porto especial de minério e, na mão, 5 minérios e 1 cereais. Ele quer uma cidade. Já sabemos que a cidade custa 3 minérios e 2 cereais, então falta 1 cereais. Complete: que troca ele faz com a reserva, e com que cartas termina o turno?
 
@@ -214,15 +221,15 @@ As respostas ficam escondidas no fim de cada etapa: tente antes de abrir. No fim
 > [!passos] **Passo a passo: saiu 7** (p. 4; manual original, p. 11)
 >
 > 1. Ninguém recebe matéria-prima.
-> 2. Todo jogador com mais de 7 cartas de matéria-prima na mão, inclusive quem rolou, escolhe metade delas e devolve à reserva. Número ímpar arredonda para baixo: com 9, devolve 4.
+> 2. Quem tiver mais de 7 cartas de matéria-prima, inclusive quem rolou, escolhe metade e devolve à reserva, arredondando para baixo: com 9, devolve 4.
 > 3. Quem rolou é obrigado a mudar o ladrão para outro terreno: qualquer um com ficha numerada ou o deserto. Não pode deixá-lo onde está.
-> 4. Depois, pode tirar 1 carta de matéria-prima de um jogador com aldeia ou cidade encostada no novo terreno. Se houver mais de um, escolhe de quem. O roubado segura as cartas viradas para baixo e o ladrão tira uma sem ver. Quem não tem cartas não entrega nada (manual original, p. 8).
+> 4. Depois, pode tirar 1 carta de matéria-prima, sem ver, de um jogador à sua escolha com aldeia ou cidade encostada no novo terreno. Quem não tem cartas não entrega nada (manual original, p. 8).
 > 5. O turno continua na fase de comércio.
 
 > [!passos] **Passo a passo: cartas de desenvolvimento** (p. 2 e 4)
 >
-> 1. Você joga no máximo **uma** carta de desenvolvimento por turno, a qualquer momento do turno, até antes de rolar os dados (p. 2 e 4; manual original, p. 7).
-> 2. Não pode jogar a carta no mesmo turno em que a comprou. A exceção é a de Ponto de Vitória, logo abaixo (manual original, p. 7).
+> 1. No máximo **uma** carta de desenvolvimento por turno, a qualquer momento, até antes dos dados (p. 2 e 4; manual original, p. 7).
+> 2. Nunca no turno em que foi comprada, exceto a de Ponto de Vitória, abaixo (p. 4; manual original, p. 7).
 > 3. **Cavaleiro:** mova o ladrão e roube como no 7, passos 3 e 4. Ninguém descarta. A carta fica virada para cima à sua frente.
 > 4. **Progresso:** faça o que a carta diz e devolva-a à caixa. **Monopólio:** escolha uma matéria-prima; todos os outros jogadores lhe entregam todas as cartas dela que tiverem. **Construção de Estradas:** construa 2 estradas de graça, pelas regras normais. **Invenção:** pegue da reserva 2 cartas de matéria-prima à sua escolha, iguais ou diferentes, que pode usar no mesmo turno (manual original, p. 10).
 > 5. **Ponto de Vitória** (Biblioteca, Mercado, Câmara, Igreja, Universidade): fica escondida e vale 1 ponto. Você só a mostra quando ela lhe dá os 10 pontos, e então pode mostrar todas de uma vez, mesmo a comprada naquele turno (p. 4; manual original, p. 5 e 7).
@@ -261,11 +268,10 @@ As respostas ficam escondidas no fim de cada etapa: tente antes de abrir. No fim
 > [!passos] **Passo a passo: pontos e fim de partida** (p. 3 e 4)
 >
 > 1. **Pontos:** aldeia, 1. Cidade, 2. Carta de Ponto de Vitória, 1. Maior Estrada Comercial, 2. Maior Exército de Cavalaria, 2.
-> 2. **Maior Estrada Comercial:** o primeiro a ter uma estrada contínua de pelo menos 5 peças pega a carta na hora. Conta só a sequência mais longa: ramos de uma bifurcação não somam. Uma aldeia ou cidade de outro jogador no meio interrompe a estrada (p. 3; manual original, p. 9).
+> 2. **Maior Estrada Comercial:** o primeiro a ter uma estrada contínua de 5 peças ou mais pega a carta na hora. Ramos de bifurcação não somam, e aldeia ou cidade de outro jogador no meio interrompe a estrada (p. 3; manual original, p. 9).
 > 3. Quem fizer uma estrada **maior** que a do dono atual toma a carta na hora. Empatar não basta.
 > 4. **Maior Exército de Cavalaria:** o primeiro a ter 3 cartas de Cavaleiro jogadas à sua frente pega a carta. Quem passar a ter **mais** Cavaleiros jogados que o dono atual toma a carta na hora (p. 4).
-> 5. **Fim:** a partida termina no turno em que um jogador tem 10 pontos ou mais. Para vencer, ele precisa ter os 10 durante o próprio turno, seja porque os alcançou nele, seja porque já os tinha quando o turno começou (p. 4).
-> 6. Se você chegar a 10 fora da sua vez, espere: a partida segue até alguém ter 10 no próprio turno, e esse alguém pode ser você (manual original, p. 5 e 7).
+> 5. **Fim:** vence quem tiver 10 pontos ou mais durante o próprio turno, alcançados nele ou já presentes quando ele começou (p. 4). Chegou a 10 fora da sua vez? A partida segue até alguém ter 10 no próprio turno, e esse alguém pode ser você (manual original, p. 5 e 7).
 
 > [!passos] **Passo a passo: estrada interrompida** (manual original, p. 9)
 >
@@ -301,7 +307,7 @@ As respostas ficam escondidas no fim de cada etapa: tente antes de abrir. No fim
 
 ## 7. Situações especiais
 
-**Da segunda partida em diante: montagem aleatória.** Depois de um ou dois jogos, o manual sugere montar a ilha ao acaso (p. 2). O folheto em português manda os detalhes para o Almanaque, que não está publicado, então os passos abaixo vêm do manual original.
+**Montagem aleatória.** Depois de um ou dois jogos, o manual sugere montar a ilha ao acaso (p. 2). Os detalhes estão no Almanaque, não publicado em português; os passos vêm do manual original.
 
 > [!passos] **Passo a passo: montagem aleatória e fase de fundação** (manual original, p. 12 e 13)
 >
@@ -311,19 +317,19 @@ As respostas ficam escondidas no fim de cada etapa: tente antes de abrir. No fim
 > 4. Ponha o ladrão no deserto. Prepare cartas, peças e cartas especiais como na etapa 1.
 > 5. Cada jogador rola os dois dados. Quem tirar mais começa.
 > 6. **Primeira rodada:** a partir de quem começa, em sentido horário, cada jogador põe 1 aldeia numa encruzilhada livre e 1 estrada encostada nela. A regra da distância já vale.
-> 7. **Segunda rodada:** começa quem foi o último na primeira, e a ordem segue no sentido anti-horário, de modo que o primeiro jogador põe por último. Cada um põe a segunda aldeia, em qualquer encruzilhada livre que respeite a regra da distância, e uma estrada encostada nela.
+> 7. **Segunda rodada:** começa quem foi o último e segue no sentido anti-horário, de modo que o primeiro jogador põe por último. Cada um põe a segunda aldeia, em qualquer encruzilhada que respeite a regra da distância, e uma estrada encostada nela.
 > 8. Logo depois de pôr a segunda aldeia, cada jogador recebe 1 carta de cada terreno vizinho a ela.
 > 9. O primeiro jogador começa a partida rolando os dados.
 
 > [!edicao] O manual original sorteia peças de porto avulsas, da caixa americana. Na caixa da Devir, os 9 portos vêm impressos nas 6 peças de moldura (manual do Catan Plus, p. 2), por isso o passo 1 varia os portos pela ordem da moldura, opção que o próprio manual original oferece.
 
-**Faltam cartas na reserva.** Se uma matéria-prima não tiver cartas suficientes para todos que produziram, ninguém recebe aquela matéria-prima nesse lançamento. Se a falta atingir um jogador só, ele recebe o que houver. As outras matérias-primas são entregues normalmente (manual original, p. 4 e 10).
+**Faltam cartas na reserva.** Se não houver cartas de uma matéria-prima para todos que produziram, ninguém a recebe nesse lançamento; se a falta atingir um jogador só, ele recebe o que houver. As outras matérias-primas saem normalmente (manual original, p. 4 e 10).
 
-**Quantas cartas você tem?** Os outros podem perguntar quantas cartas de matéria-prima você tem na mão, e você responde a verdade (manual original, p. 8).
+**Quantas cartas você tem?** Se perguntarem, você diz a verdade (manual original, p. 8).
 
-**Trocar e construir na mesma fase.** O manual separa comércio e construção para facilitar o aprendizado e recomenda que jogadores experientes juntem as duas: depois dos dados, troque e construa em qualquer ordem, quantas vezes quiser, inclusive usando um porto no mesmo turno em que construiu a aldeia nele (manual original, p. 6). Combine com a mesa antes de começar.
+**Trocar e construir na mesma fase.** Para jogadores experientes, o manual recomenda juntar as duas fases: depois dos dados, troque e construa em qualquer ordem, inclusive usando um porto no turno em que construiu a aldeia nele (manual original, p. 6). Combine com a mesa antes.
 
-**Dois jogadores, ou cinco e seis.** O jogo base é para 3 ou 4 jogadores (p. 2; página do produto da Devir). A Devir publicou no mesmo site uma variante para duas pessoas, e partidas de 5 e 6 pedem a expansão própria. Este guia não cobre esses modos.
+**Dois, cinco ou seis jogadores.** O jogo base é para 3 ou 4 (página do produto da Devir). Há uma variante oficial para duas pessoas no site da Devir, e 5 ou 6 pedem a expansão própria. Este guia não cobre esses modos.
 
 > [!edicao] **Sobre a edição.** O folheto que a Devir Brasil distribui é o da edição de 2015, traduzido em Portugal, daí "aldeia" e "matéria-prima". Segundo a página da 6ª edição, a mudança foi de arte, caixa e verso das cartas, não de regras. Se a sua caixa usar outro nome para alguma peça, a regra é a mesma.
 
@@ -377,7 +383,7 @@ Responda sem consultar. Depois confira e veja o que reler.
 
 **Saiu 7:** ninguém produz; mais de 7 cartas, devolva metade, arredondando para baixo; mova o ladrão para outro terreno; roube 1 carta, sem ver, de quem estiver encostado; siga para o comércio.
 
-**Cartas de desenvolvimento:** Cavaleiro move o ladrão e fica à sua frente. Monopólio: todos lhe dão as cartas de uma matéria-prima. Construção de Estradas: 2 estradas de graça. Invenção: 2 cartas da reserva. Ponto de Vitória: 1 ponto, escondido até a vitória.
+**Cartas de desenvolvimento:** Cavaleiro move o ladrão e fica à sua frente. Monopólio: todas as cartas de uma matéria-prima. Construção de Estradas: 2 estradas grátis. Invenção: 2 cartas da reserva. Ponto de Vitória: 1 ponto escondido.
 
 **Cartas especiais (2 pontos cada):** Maior Estrada Comercial, a partir de 5 peças seguidas; Maior Exército de Cavalaria, a partir de 3 Cavaleiros jogados. Para tomar de alguém, é preciso ter mais, não o mesmo.
 

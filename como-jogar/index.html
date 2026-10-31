@@ -169,6 +169,8 @@ html{scroll-padding-top:calc(var(--nav-h,45px) + 56px)}
 .indice a{display:flex;gap:10px;align-items:baseline;min-height:40px;padding:9px 0}
 .indice a::before{content:counter(it);flex:none;width:1.6em;font-size:.8rem;font-weight:800;color:var(--ouro-ink);font-variant-numeric:tabular-nums}
 .nota-pe{color:var(--muted);font-size:.85rem;padding:4px 2px 0}
+/* endereços longos (fontes) quebram em vez de alargar a página */
+.sec a,.sec li,.sec p{overflow-wrap:anywhere}
 /* títulos das etapas com mais respiro */
 .sec{scroll-margin-top:calc(var(--nav-h,45px) + 56px)}
 @media (min-width:601px){.sec{padding:24px 28px}}
@@ -211,7 +213,7 @@ html{scroll-padding-top:calc(var(--nav-h,45px) + 56px)}
   <section class="bloco sec" aria-labelledby="lista-t">
     <h2 id="lista-t">Tutoriais publicados</h2>
     <ul class="lista-t">
-      <li><a href="clank-catacombs/"><span class="num-l">Construção de baralho · Exploração</span><b>Como jogar Clank! Catacombs</b><span>Entre nas catacumbas, pegue um Artefato e saia vivo pela Cripta. Começa com um resumo para jogar em 4 minutos e segue em cinco etapas, da mesa montada à contagem de pontos.</span><span class="meta-e"><span>2 a 4 jogadores</span><span>60 a 120 min</span><span>Edição Galápagos</span></span></a></li>
+      <li><a href="ticket-to-ride/"><span class="num-l">Coleção de conjuntos · Família</span><b>Como jogar Ticket to Ride</b><span>Junte cartas da mesma cor, ocupe rotas no mapa e ligue as cidades dos seus Bilhetes antes que os trens acabem. Começa com um resumo para jogar em 4 minutos e segue em quatro etapas, da mesa montada à contagem de pontos.</span><span class="meta-e"><span>2 a 5 jogadores</span><span>30 a 60 min</span><span>Edição Galápagos</span></span></a></li><li><a href="clank-catacombs/"><span class="num-l">Construção de baralho · Exploração</span><b>Como jogar Clank! Catacombs</b><span>Entre nas catacumbas, pegue um Artefato e saia vivo pela Cripta. Começa com um resumo para jogar em 4 minutos e segue em cinco etapas, da mesa montada à contagem de pontos.</span><span class="meta-e"><span>2 a 4 jogadores</span><span>60 a 120 min</span><span>Edição Galápagos</span></span></a></li>
     </ul>
   </section>
 <p class="nota-pe">Regras conferidas nos manuais oficiais, com a página citada. Nenhuma imagem gerada por IA.</p>

@@ -25,11 +25,10 @@ Na ordem. O marcado *(depois)* se monta já e se usa mais tarde.
 
 O primeiro jogador põe o marcador de primeiro jogador no centro da mesa e joga. A vez segue no sentido horário (p. 3).
 
-1. **Pegue** todos os azulejos de uma mesma cor, de um destes lugares (p. 3):
-   - de um expositor: os que sobram nele vão para o centro da mesa;
-   - do centro da mesa: se for o primeiro da rodada a pegar do centro, leve também o marcador de primeiro jogador e ponha-o no espaço livre mais à esquerda da sua fileira do chão.
-2. **Guarde** todos numa só fileira de modelo, da direita para a esquerda. A primeira tem 1 espaço, a quinta tem 5. Uma fileira de modelo só aceita uma cor (p. 3).
-3. **O que não couber** vai para a fileira do chão, da esquerda para a direita. Você também pode mandar azulejos para o chão por escolha (p. 3 e 4).
+1. **Pegue** todos os azulejos de uma mesma cor de um expositor; os que sobram nele vão para o centro da mesa (p. 3).
+2. **Ou pegue** todos os azulejos de uma mesma cor do centro da mesa. Se for o primeiro da rodada a pegar do centro, leve também o marcador de primeiro jogador e ponha-o no espaço livre mais à esquerda da sua fileira do chão (p. 3).
+3. **Guarde** todos numa só fileira de modelo, da direita para a esquerda. A primeira tem 1 espaço, a quinta tem 5. Uma fileira de modelo só aceita uma cor (p. 3).
+4. **O que não couber** vai para a fileira do chão, da esquerda para a direita. Você também pode mandar azulejos para o chão por escolha (p. 3 e 4).
 
 Pegar é obrigatório: ninguém passa a vez. A rodada continua até não sobrar azulejo em nenhum expositor nem no centro (p. 3 e 4).
 
@@ -116,9 +115,7 @@ O guia tem quatro etapas, cada uma uma parte real da partida: montar a mesa, peg
 > [!passos] **Passo a passo: o turno na Oferta da fábrica** (p. 3 e 4)
 >
 > 1. **Quem começa** põe o marcador de primeiro jogador no centro da mesa e faz o primeiro turno. A vez segue no sentido horário.
-> 2. **Pegue azulejos** de um destes dois modos, e só de um:
->    - de um expositor de fábrica, todos os azulejos de uma mesma cor; os que restam nesse expositor vão para o centro da mesa;
->    - do centro da mesa, todos os azulejos de uma mesma cor. Se você for o primeiro da rodada a pegar do centro, pegue também o marcador de primeiro jogador e ponha-o no espaço livre mais à esquerda da sua fileira do chão.
+> 2. **Pegue azulejos** de um destes dois modos, e só de um. Modo a: de um expositor de fábrica, todos os azulejos de uma mesma cor; os que restam nesse expositor vão para o centro da mesa. Modo b: do centro da mesa, todos os azulejos de uma mesma cor; se você for o primeiro da rodada a pegar do centro, pegue também o marcador de primeiro jogador e ponha-o no espaço livre mais à esquerda da sua fileira do chão.
 > 3. **Escolha uma fileira de modelo** e ponha nela os azulejos, um por um, da direita para a esquerda.
 > 4. **Uma cor por fileira.** Se a fileira de modelo já tem azulejos, só entram azulejos da mesma cor.
 > 5. **Cor repetida na parede, não.** Você não pode pôr azulejos de uma cor numa fileira de modelo se a linha correspondente da parede já tem um azulejo dessa cor.
@@ -255,10 +252,7 @@ O guia tem quatro etapas, cada uma uma parte real da partida: montar a mesa, peg
 >
 > 1. Jogue a rodada normalmente, até o fim do Revestimento de parede, incluindo a fileira do chão.
 > 2. Se pelo menos um jogador completou pelo menos uma fileira horizontal de 5 azulejos na parede, a partida acaba aqui. Não há Preparação para a próxima rodada.
-> 3. Cada jogador ganha os bônus:
->    - **2 pontos** por fileira horizontal completa da parede;
->    - **7 pontos** por fileira vertical completa da parede;
->    - **10 pontos** por cor com os 5 azulejos na parede.
+> 3. Cada jogador ganha os bônus: **2 pontos** por fileira horizontal completa da parede, **7 pontos** por fileira vertical completa da parede e **10 pontos** por cor com os 5 azulejos na parede.
 > 4. Vence quem tem mais pontos na trilha de pontuação.
 > 5. **Empate:** vence quem tem mais fileiras horizontais completas. Se continuar empatado, a vitória é dividida.
 

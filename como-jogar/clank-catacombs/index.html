@@ -166,6 +166,8 @@ html{scroll-padding-top:calc(var(--nav-h,45px) + 56px)}
 .indice a{display:flex;gap:10px;align-items:baseline;min-height:40px;padding:9px 0}
 .indice a::before{content:counter(it);flex:none;width:1.6em;font-size:.8rem;font-weight:800;color:var(--ouro-ink);font-variant-numeric:tabular-nums}
 .nota-pe{color:var(--muted);font-size:.85rem;padding:4px 2px 0}
+/* endereços longos (fontes) quebram em vez de alargar a página */
+.sec a,.sec li,.sec p{overflow-wrap:anywhere}
 /* títulos das etapas com mais respiro */
 .sec{scroll-margin-top:calc(var(--nav-h,45px) + 56px)}
 @media (min-width:601px){.sec{padding:24px 28px}}
