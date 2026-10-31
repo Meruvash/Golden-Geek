@@ -5,7 +5,7 @@ As páginas Como Jogar são escritas à parte (docs/como-jogar/) e publicadas co
 - põe uma faixa presa abaixo do menu com a etapa em que o leitor está e uma barra de progresso;
 - transforma as tabelas em fichas no celular (cada linha vira um cartão com o nome da coluna);
 - recolhe a nota sobre o método (4C/ID) num "Sobre o método", fechado por padrão.
-O texto das páginas não muda. Pode rodar quantas vezes quiser: cada troca fica entre marcadores.
+Vale também para o índice /como-jogar/ (sem a faixa de progresso). O texto das páginas não muda. Pode rodar quantas vezes quiser: cada troca fica entre marcadores.
 
 Uso: python3 tools/build_como_jogar.py   (também roda dentro de build_home.py)
 """
@@ -98,22 +98,25 @@ def rotular_tabelas(html):
 
 
 def montar(arq):
+    """Uma página: o índice /como-jogar/ (indice=True, sem faixa de progresso) ou um tutorial /como-jogar/<slug>/."""
+    indice = arq.parent.name == "como-jogar"
+    pre = "../" if indice else PRE
     s = arq.read_text(encoding="utf-8")
     novo = s
     # estilos: moldura do site + ajustes do guia, depois do estilo próprio da página
     estilos = f'<style id="moldura">{CSS_BUSCA}{CSS_MOLDURA}</style>\n<style id="guia-extra">{CSS_GUIA}</style>\n'
     novo = re.sub(r'(?:<style id="moldura">.*?</style>\n<style id="guia-extra">.*?</style>\n)?</head>', lambda _: estilos + "</head>", novo, count=1, flags=re.S)
     # cabeçalho: na primeira vez, o próprio (banner + menu); depois, o que está entre marcadores
-    topo = (f'<!--moldura--><a class="skip" href="#conteudo">Pular para o conteúdo</a>\n{cabecalho(PRE)}'
-            f'\n<div class="guia-prog"><a href="#neste-guia"><span class="gp-r">Guia</span><span class="gp-t">Neste guia</span><span class="gp-i">Índice</span></a><span class="gp-b" aria-hidden="true"></span></div>'
-            f'<!--/moldura-->\n')
+    topo = (f'<!--moldura--><a class="skip" href="#conteudo">Pular para o conteúdo</a>\n{cabecalho(pre, "Como jogar", sub=not indice)}'
+            + ("" if indice else '\n<div class="guia-prog"><a href="#neste-guia"><span class="gp-r">Guia</span><span class="gp-t">Neste guia</span><span class="gp-i">Índice</span></a><span class="gp-b" aria-hidden="true"></span></div>')
+            + '<!--/moldura-->\n')
     novo = re.sub(r'<!--moldura-->.*?<!--/moldura-->\n|<a class="skip".*?</nav>\n(?=\s*<main)', lambda _: topo, novo, count=1, flags=re.S)
     # rodapé: a nota da página vira um parágrafo no fim do conteúdo, e entra o rodapé comum (com a barra do pé da tela)
     m = re.search(r'<footer><div class="in gut">(.*?)</div></footer>', novo, re.S)
     if m and 'class="nota-pe"' not in novo:
         nota = re.sub(r'<a [^>]*>Elite Boardgamers</a> · ', "", m.group(1))
         novo = re.sub(r"</div>\s*</main>", lambda _: f'<p class="nota-pe">{nota}</p>\n</div></main>', novo, count=1)
-    fim = f"<!--rodape-->{rodape(PRE)}\n<script>{JS_GUIA}</script><!--/rodape-->"
+    fim = f"<!--rodape-->{rodape(pre)}\n<script>{JS_GUIA}</script><!--/rodape-->"
     novo = re.sub(r'<!--rodape-->.*?<!--/rodape-->|<footer><div class="in gut">.*?</div></footer>', lambda _: fim, novo, count=1, flags=re.S)
     # índice com âncora, para a faixa de progresso levar até ele
     novo = novo.replace('<nav class="bloco indice" aria-label="Neste guia">', '<nav class="bloco indice" id="neste-guia" aria-label="Neste guia">')
@@ -132,8 +135,12 @@ def montar(arq):
     titulo = _html.unescape(re.sub(r"<[^>]+>", "", re.search(r"<h1[^>]*>(.*?)</h1>", novo, re.S).group(1))).strip()
     descr = _html.unescape(re.search(r'<meta name="description" content="([^"]*)"', novo).group(1))
     img = re.search(r'<meta property="og:image" content="([^"]+)"', novo).group(1)
-    data = re.search(r'<time datetime="([^"]+)">', novo).group(1)
-    ld = seo.script(seo.artigo("Article", url, titulo, descr, img, data), seo.trilha(("Início", f"{seo.SITE}/"), (titulo, url)))
+    if indice:
+        ld = seo.script(seo.trilha(("Início", f"{seo.SITE}/"), ("Como jogar", url)))
+    else:
+        data = re.search(r'<time datetime="([^"]+)">', novo).group(1)
+        ld = seo.script(seo.artigo("Article", url, titulo, descr, img, data),
+                        seo.trilha(("Início", f"{seo.SITE}/"), ("Como jogar", f"{seo.SITE}/como-jogar/"), (titulo, url)))
     novo = re.sub(r'(?:<script type="application/ld\+json">.*?</script>\n)?(?=<style id="moldura">)', lambda _: ld + "\n", novo, count=1, flags=re.S)
     if novo != s:
         arq.write_text(novo, encoding="utf-8")
@@ -141,7 +148,7 @@ def montar(arq):
 
 
 def build():
-    return [montar(a) for a in sorted((ROOT / "como-jogar").glob("*/index.html"))]
+    return [montar(a) for a in [ROOT / "como-jogar" / "index.html", *sorted((ROOT / "como-jogar").glob("*/index.html"))] if a.exists()]
 
 
 if __name__ == "__main__":
