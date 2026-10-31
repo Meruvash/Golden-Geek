@@ -140,7 +140,28 @@ def montar(arq):
     return arq
 
 
+def lista_indice():
+    """Lista de tutoriais em /como-jogar/, a partir de conteudo/como-jogar/*.json (mais novos primeiro)."""
+    import como_jogar_md
+    arq = ROOT / "como-jogar" / "index.html"
+    if not arq.exists():
+        return
+    e = _html.escape
+    itens = "".join(
+        f'<li><a href="{m["slug"]}/"><span class="num-l">{e(m["genero"])}</span><b>{e(m["titulo"])}</b><span>{e(m["chamada"])}</span>'
+        f'<span class="meta-e"><span>{e(m["jogadores"])}</span><span>{e(m["duracao"])}</span><span>{e(m["edicao"])}</span></span></a></li>'
+        for m in sorted(como_jogar_md.metas(), key=lambda m: (m["data"], m["titulo"]), reverse=True)
+        if (ROOT / "como-jogar" / m["slug"] / "index.html").exists())
+    s = arq.read_text(encoding="utf-8")
+    novo = re.sub(r'(<ul class="lista-t">).*?(</ul>)', lambda x: f"{x.group(1)}\n      {itens}\n    {x.group(2)}", s, count=1, flags=re.S)
+    if novo != s:
+        arq.write_text(novo, encoding="utf-8")
+
+
 def build():
+    import como_jogar_md
+    como_jogar_md.build()
+    lista_indice()
     return [montar(a) for a in [ROOT / "como-jogar" / "index.html", *sorted((ROOT / "como-jogar").glob("*/index.html"))] if a.exists()]
 
 
