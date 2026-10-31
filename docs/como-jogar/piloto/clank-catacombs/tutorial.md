@@ -2,6 +2,46 @@
 
 *Rascunho experimental da linha COMO JOGAR do Elite Boardgamers. Não publicado. Regras conferidas no manual da edição brasileira (Galápagos, v1.0) e no manual original em inglês (Dire Wolf Digital, 2022). As páginas citadas são as do manual brasileiro, que tem a mesma paginação do original.*
 
+## 4min. Comece a jogar em 4 minutos
+
+O essencial para a primeira partida. O resto do guia explica cada ponto com exemplos.
+
+**O objetivo.** Entre na masmorra, pegue um Artefato e volte à Cripta. Quem escapa ganha 20 pontos de bônus. No fim, vence quem soma mais pontos: Artefato, Ouro, fichas e cartas. Quem cai sem Artefato, ou cai nas Profundezas, faz zero.
+
+**Monte a mesa.**
+
+1. Tabuleiro de Clank! num canto. Marcador do Dragão na casa da Trilha de Fúria com o número de jogadores.
+2. Peças: embaralhe as 22 das Profundezas; das 6 outras, tire 2 sem olhar e ponha 4 em cima da pilha.
+3. Banco: Ouro, Gazuas, 5 cubos de Fantasma, Bolsa do Dragão com os 24 cubos pretos, Artefatos empilhados (5 pontos no topo, 20 na base), segredos e prisioneiros embaralhados, Mercado.
+4. Peça Inicial no centro; Ídolos de Macaco no Altar dos Macacos; uma ficha de Maestria por jogador perto da Cripta.
+5. Reserva: Goblin, Mercenário, Explorar, Tomo Secreto. Fileira da Masmorra: 6 cartas sem o símbolo de Ataque do Dragão.
+6. Cada jogador: 30 cubos, peão na Cripta, 3 Gazuas, baralho de 10 cartas embaralhado, 5 na mão.
+7. O Jogador 1 põe 3 cubos na área de Clank!, o 2 põe 2, o 3 põe 1, o 4 nenhum.
+
+**Seu turno.** Jogue as 5 cartas da mão, todas, na ordem que quiser. Elas dão três recursos: **Habilidade** (adquirir cartas e usar Dispositivos), **Espadas** (combater monstros) e **Botas** (andar). Os recursos se somam, podem ser divididos e o que sobrar se perde no fim do turno. Faça as ações que quiser, quantas vezes puder pagar:
+
+- **Adquirir uma Carta:** pague o custo (canto inferior direito) em Habilidade. A carta vai para o seu descarte e volta à mão quando o baralho acabar e você embaralhar o descarte.
+- **Combater um Monstro:** pague em Espadas e ganhe a recompensa. O Goblin da Reserva pode ser combatido várias vezes.
+- **Andar:** cada túnel custa 1 Bota. Pegada: 2 Botas. Monstro: 1 de dano por ícone, que cada Espada evita. Cadeado: gaste 1 Gazua. Seta: só nesse sentido.
+- **Pegar um Artefato:** um por jogador (dois com Mochila), sem troca. A fúria do dragão sobe 1 casa.
+- **Na sala certa:** comprar no Mercado (7 de Ouro), abrir Baú, Biblioteca ou Prisão (1 Gazua), marcar um Santuário de Passagem (1 cubo, rende Ouro).
+
+**O barulho.** "+1 Clank!" põe um cubo seu na área de Clank!. "-1 Clank!" tira um. Esses cubos são o seu risco: no ataque, eles vão para a bolsa do dragão.
+
+**A borda do mapa.** Atravessar um túnel que termina no vazio revela uma peça nova: encaixe-a ali, girando como quiser. As quatro primeiras são seguras; depois começam as Profundezas, onde ficam os Artefatos mais valiosos.
+
+**Fim do turno, sempre nesta ordem.**
+
+1. Cartas jogadas para o descarte; compre 5 novas.
+2. Reponha a Fileira da Masmorra até 6 cartas. Carta nova com texto Revelar: execute-o na hora.
+3. Se alguma carta nova tiver o símbolo de Ataque do Dragão, ele ataca uma vez: todos os cubos da área de Clank! vão para a bolsa e saem tantos quanto a Trilha de Fúria mostra, mais 1 por carta de Perigo. Cubo preto não fere. Cubo colorido é 1 de dano ao dono. Fantasma fere todos.
+
+**Vida.** O Contador de Pontos de Vida tem 10 casas. No décimo dano, você está nocauteado.
+
+**O fim.** Escapar é chegar à Cripta com um Artefato: você sai do jogo e pega a ficha de Maestria. Quem saiu passa, no próprio turno, a sortear 4 cubos da bolsa contra quem ficou (6 com 2 jogadores). A partida acaba quando todos escaparam ou caíram. Conte Artefato, fichas, Ouro e pontos das cartas. Empate: vence o Artefato mais valioso.
+
+> [!atencao] **Os três erros mais caros.** Adquirir carta não a põe na mão: ela vai para o descarte. Pegar o Artefato deixa o dragão mais forte para todos, inclusive você. Cair nas Profundezas zera a pontuação, mesmo com o melhor Artefato do jogo.
+
 ## 0. Antes de tudo: o que é este jogo
 
 Você é um ladrão que desce às catacumbas de um dragão. O plano tem três partes: entrar, pegar um **Artefato** e sair vivo pela **Cripta**, o lugar de onde todos partem. Quem sai ganha um bônus de 20 pontos. No fim, vence quem tiver mais pontos somando o Artefato, o ouro, as fichas e as cartas que juntou (p. 3 e 14).
