@@ -120,3 +120,41 @@ Mesmo protocolo do prompt: de 5 a 8 adultos que nunca jogaram Catan. Tarefas obs
 ## 8. Ligação com a resenha
 
 Não há resenha de Catan no site. Se uma for escrita, o "Comece a jogar em 4 minutos" pode virar o bloco de regras dela, com link para o tutorial completo (proposta; nada implementado).
+
+## Auditoria independente
+
+Feita em 31/10/2026 por um agente que não escreveu o tutorial, sem acesso aos arquivos de trabalho do redator.
+
+### O que foi conferido
+
+- **Manuais baixados de novo**, dos mesmos links do dossiê, para o scratchpad do auditor (fora do repositório): folheto Devir `693602_Cat_Basis34_Manual_PT02.pdf` (4.045.086 bytes, mesmo tamanho do dossiê), manual do *Catan Plus* (`693152_CAT_BigBox19_Manual_PT03.pdf`) e *Catan Game Rules & Almanac* em inglês (`catan_base_rules_2020_200707.pdf`, 16 páginas). Texto extraído com `pdftotext` (com e sem `-layout`), página a página. Paginação do folheto confirmada: os números impressos 2, 3 e 4 estão nas páginas 1, 2 e 3 do arquivo, e a página 4 do arquivo é a "página 1" (resumo e montagem para principiantes). A paginação do original coincide com a do arquivo.
+- **Página do produto da Devir** (6ª edição) baixada de novo: "Idade: 10 anos", "Duração: 75 min. aprox.", "Jogadores: 3 a 4" e "as mudanças são apenas visuais e de organização" conferem com o JSON e com o bloco "Sobre a edição".
+- **Cada afirmação normativa** do tutorial (4 minutos, etapas 1 a 5, situações especiais, avaliação e folha de consulta) contra a página citada. As citações de página do folheto e do original estão corretas.
+- **Regras tiradas do original em inglês**: todas as marcadas "manual original" conferem com o texto em inglês (p. 4, 5, 6, 7, 8, 9, 10, 11, 12, 13 e 14). O cabeçalho do tutorial avisa que o que o folheto manda procurar no Almanaque vem do original e está marcado assim; a marcação é consistente. Nenhuma delas contradiz o folheto. Os dois pontos de atrito com o folheto foram examinados: (1) ligação da estrada (folheto só fala em estrada própria; o original inclui aldeia e cidade), um acréscimo, não uma contradição, e indispensável na fase de fundação; (2) roubo no 7 (o folheto diz "pode roubar", o original "you steal"): o tutorial segue o folheto.
+- **Contas**: refeitas num script Python próprio (frequências dos dois dados; mãos dos exemplos de 4 minutos; peças restantes; produção das etapas 2; trocas e construções da etapa 3, incluindo busca exaustiva de trocas 3:1 para a "sua vez 2" de Carla; descartes 8, 9, 7, 11, 12 e 10; Monopólio; todas as somas de pontos da etapa 5; avaliação 3). Todas batem com o texto.
+- **Legalidade dos exemplos**: as três construções na montanha com 8 (etapa 2) só cabem em pontas alternadas do hexágono, o que a regra da distância permite; o corte da estrada de Ana (7 peças em 3 + 4) e a passagem da carta a Bruno seguem o exemplo da p. 9 do original; Diana com 4 cidades está no limite de peças; o "5 aldeias e 2 cidades" do treino é possível porque a aldeia ampliada volta ao jogador.
+- **JSON** (`conteudo/como-jogar/catan.json`): jogadores, duração, idade, edição (no mesmo formato dos outros tutoriais) e os três pontos do resumo conferem com o folheto (p. 2, 3 e 4).
+- **Regras essenciais ausentes**: nenhuma encontrada. Conferidos em especial: ordem descarte antes do ladrão, Cavaleiro sem descarte (o folheto remete só aos "pontos 1 e 2", mover e roubar, p. 4), carta de desenvolvimento antes dos dados, monte vazio, porto especial que não dá 3:1, limite de peças.
+
+### Problemas achados e corrigidos
+
+1. **Bloco [!edicao] da estrada interrompida (etapa 5)**: dizia que "estrada interrompida e empate não estão no folheto". Falso em parte: o folheto diz que a estrada interrompida por aldeia ou cidade de outro jogador não conta como contínua e ilustra o corte (p. 3). O que falta no folheto é o destino da carta depois do corte e o empate. O bloco foi reescrito; também saiu "da mesma edição de 2015", trocado por "cujas regras valem desde 2015" (original, p. 14: edição em inglês de 2020, regras em vigor desde 01/01/2015).
+2. **Passo 2 da estrada interrompida**: "segue empatado com a maior estrada" não cobria o dono que, depois do corte, continua com a maior estrada sozinho. Reescrito como "ainda tem a maior estrada, mesmo empatado com outro jogador" (original, p. 9).
+3. **Passo 3 da montagem aleatória**: dizia para pôr as fichas nos terrenos "com a letra para cima" e "depois vire as fichas". O original (p. 13) manda separar as fichas ao lado do tabuleiro com a letra para cima e não diz quando virá-las. O passo segue agora o original, e o bloco [!edicao] seguinte diz que o manual não esclarece esse momento.
+4. **Transparência da fonte**: no passo 3 do "Seu primeiro turno", a ligação da estrada a "estrada ou construção sua" vem do original e estava sem marca; ganhou "(manual original, p. 4)".
+
+Portões depois das correções: `tools/checar_comece.py` ✅; travessões 0; `vicios.avisos` sem aviso.
+
+### Em aberto
+
+- A montagem para principiantes depende do desenho da p. 1 do folheto (o tutorial não descreve terreno por terreno). O leitor tem o desenho na caixa, mas o guia não é autossuficiente nesse ponto.
+- Os nomes e o texto da 6ª edição brasileira não foram conferidos (manual não publicado). O tutorial avisa.
+- "Construa estrada ao longo da costa" (original, p. 6 e 11) não está no texto; não é essencial, mas um iniciante pode perguntar.
+- A seção "1. Como este guia ensina" descreve a estrutura do guia; existe igual nos outros tutoriais do site, por isso não foi mexida.
+
+### Teste de execução (só com o tutorial)
+
+- **2 jogadores**: não dá para preparar. O tutorial diz claramente que o jogo base é para 3 ou 4 e só aponta para a variante oficial da Devir. Coerente com a caixa, mas quem busca "como jogar catan de 2" (segunda sugestão do autocompletar) não sai jogando.
+- **4 jogadores (máximo)**: preparação feita sem adivinhar, exceto a posição das peças, que exige o desenho do manual. Cartas iniciais (aldeia com letra), reserva, monte, cartas especiais e quem começa: claros.
+- **Rodada completa**: rolar, produzir para todos, trocar (só com o jogador da vez, 4:1 ou porto), construir com a tabela e passar à esquerda: sem dúvida. No 7, a ordem descarte, ladrão, roubo e comércio está clara. Pontos onde precisei pensar: se a estrada pode correr pela costa (não dito) e, na montagem aleatória, quando virar as fichas (agora dito que o manual não esclarece).
+- **Avaliação final**, respondida antes de ler as respostas: 1) 2 argilas; 2) nada; 3) sim, 2 argilas por 1 madeira; 4) não; 5) devolvo 5; 6) não; 7) eu; 8) não. As 8 conferem com o gabarito.
