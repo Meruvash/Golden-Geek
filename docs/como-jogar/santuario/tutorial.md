@@ -448,29 +448,73 @@ Em cada etapa, o que fica à vista é o essencial: o passo a passo e o erro mais
 
 ## 8. Avaliação final
 
-Responda sem consultar. Depois confira e veja o que reler.
+Responda sem consultar. Ao tocar numa opção, aparecem a resposta certa e a etapa a reler.
 
-1. Sua carta de Projetos está no encaixe 2, lado I. No passo 1, de quais posições pode vir a peça?
-2. Você tem um Animal de Água de nível 3 e a carta de Água no encaixe 2, lado I. Pode jogá-lo? E com a carta de Rocha no encaixe 4?
-3. Você quer jogar um Prédio com a carta de Projetos. Pode?
-4. Uma seta do Animal que você quer jogar apontaria para fora do tabuleiro. O que acontece?
-5. Você tem 1 ícone de felino e 3 marcadores de conservação. Pode apoiar a meta de felinos com o 4×? E com 0 ícones e 4 marcadores?
-6. No fim do seu turno, você tem 8 peças na mão. O que faz?
-7. Você cobriu o tabuleiro inteiro no fim do seu turno. O que acontece com você e com os outros?
-8. Dois jogadores empatam com 70 pontos. Um tem 9 Animais no zoológico; o outro, 11. Quem vence?
+?? 1. Sua carta de Projetos está no encaixe 2, lado I. No passo 1, de quais posições pode vir a peça?
+- ( ) Só da posição 2.
+- (x) Da posição 1 ou 2.
+- ( ) Das posições 1 a 3.
+- ( ) De qualquer posição, de 1 a 6.
+= **Posição 1 ou 2**: o alcance é a seta da carta de Projetos, no lado I o número do encaixe (p. 4). Se errou, releia a etapa 2.
 
-### Respostas da avaliação
+?? 2. Você tem um Animal de Água de nível 3 e a carta de Água no encaixe 2, lado I. Pode jogá-lo?
+- ( ) Sim: o habitat bate, e o nível só limita Projetos.
+- ( ) Sim: no lado I a força é o encaixe mais 1, e dá 3.
+- (x) Não.
+= **Não**, força 2 é menor que o nível 3 (p. 3 e 5). Se errou, releia a etapa 2.
 
-1. **Posição 1 ou 2** (etapa 2).
-2. **Não**, força 2 é menor que o nível 3. **Também não** com Rocha: o habitat tem de ser o mesmo (etapa 2).
-3. **Não.** Prédio entra só no passo 3, sem carta (etapas 2 e 4).
-4. A peça **não pode ir** naquela casa (etapa 3).
-5. **Sim**: 1 + 3 = 4. **Não** com 0 ícones: é preciso pelo menos 1 de verdade (etapa 4).
-6. **Descarta 2** no passo 6, viradas para cima, e fica com 6 (etapa 4).
-7. Você pega o **marcador de 10** e não joga mais; cada outro joga **1 turno** (etapa 5).
-8. **O de 11 Animais** (etapa 5).
+?? 3. E com a carta de Rocha no encaixe 4, pode jogar o mesmo Animal de Água de nível 3?
+- (x) Não.
+- ( ) Sim: força 4 basta para o nível 3.
+- ( ) Sim, se a carta de Rocha estiver no lado II.
+= **Também não** com Rocha: o habitat tem de ser o mesmo; só o Animal indefinido entra com qualquer carta de Animais (p. 5). Se errou, releia a etapa 2.
 
-> [!atencao] **Critério para começar a jogar.** Acertou 7 ou 8? Monte a mesa e jogue, com a folha de consulta ao lado. Errou a 1 ou a 2, releia a etapa 2. Errou a 3, a 4, a 5 ou a 6, as etapas 3 e 4. Errou a 7 ou a 8, a etapa 5.
+?? 4. Você quer jogar um Prédio com a carta de Projetos. Pode?
+- ( ) Sim, se a força for igual ou maior que a condição do Prédio.
+- (x) Não.
+- ( ) Sim, mas só com a carta de Projetos no lado II.
+= **Não.** Prédio entra só no passo 3, sem carta (p. 6). Se errou, releia as etapas 2 e 4.
+
+?? 5. Uma seta do Animal que você quer jogar apontaria para fora do tabuleiro. O que acontece?
+- ( ) Você gira a peça para a seta apontar para dentro.
+- ( ) A seta é ignorada e a peça entra assim mesmo.
+- ( ) Você vira uma peça da mão como espaço livre na casa mais próxima.
+- (x) A peça não pode ir naquela casa.
+= A peça **não pode ir** naquela casa: a seta não pode apontar para fora do tabuleiro, e nenhuma peça gira (p. 2 e 3). Se errou, releia a etapa 3.
+
+?? 6. Você tem 1 ícone de felino e 3 marcadores de conservação. Pode apoiar a meta de felinos com o 4×?
+- ( ) Não: marcadores de conservação só valem 2 pontos no fim.
+- (x) Sim.
+- ( ) Não: é preciso ter pelo menos 2 ícones de verdade.
+= **Sim**: 1 + 3 = 4, porque cada marcador de conservação devolvido vale 1 ícone (p. 7). Se errou, releia a etapa 4.
+
+?? 7. E com 0 ícones de felino e 4 marcadores de conservação, pode apoiar a meta com o 4×?
+- ( ) Sim: os 4 marcadores valem 4 ícones.
+- ( ) Sim, mas só com o marcador 2×.
+- (x) Não.
+= **Não** com 0 ícones: é preciso pelo menos 1 de verdade (p. 7). Se errou, releia a etapa 4.
+
+?? 8. No fim do seu turno, você tem 8 peças na mão. O que faz?
+- (x) Descarta 2 no passo 6, viradas para cima, e fica com 6.
+- ( ) Descarta 2 viradas para baixo, embaixo da pilha.
+- ( ) Vira 2 como espaços livres no seu zoológico.
+- ( ) Nada: o limite só vale quando você pega peças.
+= **Descarta 2** no passo 6, viradas para cima, e fica com 6 (p. 3 e 8). Se errou, releia a etapa 4.
+
+?? 9. Você cobriu o tabuleiro inteiro no fim do seu turno. O que acontece com você e com os outros?
+- ( ) A partida acaba na hora, sem turno extra para ninguém.
+- ( ) Você pega o marcador de 10, e todos, inclusive você, jogam mais 1 turno.
+- (x) Você pega o marcador de 10 e não joga mais; cada outro joga 1 turno.
+- ( ) Você pega o marcador de 5, e os outros jogam até a pilha acabar.
+= Você pega o **marcador de 10** e não joga mais; cada outro joga **1 turno** (p. 8). Se errou, releia a etapa 5.
+
+?? 10. Dois jogadores empatam com 70 pontos. Um tem 9 Animais no zoológico; o outro, 11. Quem vence?
+- ( ) O de 9 Animais.
+- (x) O de 11 Animais.
+- ( ) Ninguém desempata: os dois dividem a vitória.
+= **O de 11 Animais**: no empate vence quem tem mais peças de Animal no zoológico; a vitória só é dividida se persistir (p. 8). Se errou, releia a etapa 5.
+
+> [!atencao] **Critério para começar a jogar.** Acertou 9 ou 10? Monte a mesa e jogue, com a folha de consulta ao lado. Errou da 1 à 3, releia a etapa 2. Errou da 4 à 8, as etapas 3 e 4. Errou a 9 ou a 10, a etapa 5.
 
 ## 9. Para consultar durante a partida
 

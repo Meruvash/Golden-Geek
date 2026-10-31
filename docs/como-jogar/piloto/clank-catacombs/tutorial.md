@@ -522,22 +522,47 @@ As respostas de cada etapa ficam escondidas no fim dela. Tente antes de abrir. N
 > O Jogador 1 vence. O Artefato do Jogador 2 não conta para nada, nem para desempate.
 
 > [!complete] **Complete.** Numa outra partida, o Jogador 2 escapa com o Artefato de 12 pontos. Ele tem 6 de Ouro, uma Coroa de 10 pontos e um Tomo Secreto no baralho. Já somamos o Artefato e o Ouro: 18. Termine a conta.
+>
+> ?? Quantos pontos ele faz no total?
+> - ( ) 35
+> - ( ) 48
+> - (x) 55
+> = 18 + 20 (Maestria) + 10 (Coroa) + 7 (Tomo Secreto) = **55 pontos** (p. 14).
 
-> [!suavez] **Sua vez.** Nessa mesma partida, o Jogador 3 foi nocauteado numa peça segura, com o Artefato de 10, um Ídolo de Macaco, um Kit de Ladrão, 4 de Ouro e uma carta que vale 1 ponto. O Jogador 4 foi nocauteado numa peça segura sem Artefato, com 30 de Ouro. Quanto cada um faz?
+> [!suavez] **Sua vez.** Nessa mesma partida, o Jogador 3 foi nocauteado numa peça segura, com o Artefato de 10, um Ídolo de Macaco, um Kit de Ladrão, 4 de Ouro e uma carta que vale 1 ponto. O Jogador 4 foi nocauteado numa peça segura sem Artefato, com 30 de Ouro.
+>
+> ?? Quanto faz o Jogador 3?
+> - ( ) 42, com a ficha de Maestria
+> - (x) 22
+> - ( ) 20, porque o Kit de Ladrão não vale ponto
+> - ( ) 0, porque foi nocauteado
+> = O Jogador 3 faz 10 + 5 + 2 + 4 + 1 = **22**, sem a ficha de Maestria, que é só de quem escapa (p. 14).
+>
+> ?? Quanto faz o Jogador 4?
+> - ( ) 30, porque caiu numa peça segura
+> - ( ) 50, com a ficha de Maestria
+> - (x) 0
+> = O Jogador 4 faz **0**: sem Artefato, nada conta (p. 14).
 
 > [!treino] **Treino rápido: pontua ou zera?**
 >
-> a) Nocauteado na metade de cima da Peça Inicial, com Artefato.
+> ?? a) Nocauteado na metade de cima da Peça Inicial, com Artefato.
+> - (x) Zera
+> - ( ) Pontua, sem a ficha de Maestria
+> - ( ) Pontua, com a ficha de Maestria
+> = Zera. A metade de cima da Peça Inicial faz parte das Profundezas (p. 14).
 >
-> b) Nocauteado na metade de baixo da Peça Inicial, com Artefato.
+> ?? b) Nocauteado na metade de baixo da Peça Inicial, com Artefato.
+> - ( ) Zera
+> - (x) Pontua, sem a ficha de Maestria
+> - ( ) Pontua, com a ficha de Maestria
+> = Pontua, sem a ficha de Maestria: a metade de baixo não é Profundezas, e a ficha é só de quem escapa (p. 14).
 >
-> c) Escapou com Artefato, mas sem nenhuma outra ficha nem Ouro.
-
-### Respostas da etapa 5
-
-- **Complete:** 18 + 20 (Maestria) + 10 (Coroa) + 7 (Tomo Secreto) = **55 pontos**.
-- **Sua vez:** o Jogador 3 faz 10 + 5 + 2 + 4 + 1 = **22**. O Jogador 4 faz **0**: sem Artefato, nada conta.
-- **Treino a:** zera. A metade de cima da Peça Inicial faz parte das Profundezas. **b:** pontua, sem a ficha de Maestria. **c:** pontua: o Artefato, a ficha de Maestria (20) e os pontos das cartas, se houver (p. 14).
+> ?? c) Escapou com Artefato, mas sem nenhuma outra ficha nem Ouro.
+> - ( ) Zera: sem Ouro nem fichas, não há o que somar
+> - ( ) Pontua só o valor do Artefato
+> - (x) Pontua: o Artefato, a ficha de Maestria (20) e os pontos das cartas, se houver
+> = Pontua: o Artefato, a ficha de Maestria (20) e os pontos das cartas, se houver (p. 14).
 
 ## 7. Situações especiais
 

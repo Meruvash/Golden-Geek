@@ -477,27 +477,69 @@ Cada pergunta tem opções: escolha uma, e a resposta certa aparece com a explic
 
 > [!resolvido] **Exemplo resolvido.** Ana começa o turno com 4 aldeias, 1 cidade, a Maior Estrada Comercial e uma carta de Ponto de Vitória escondida: 4 + 2 + 2 + 1 = 9 pontos, dos quais os outros só veem 8. Ela constrói a quinta aldeia e soma: 5 + 2 + 2 + 1 = 10. Mostra a carta de Ponto de Vitória e vence na hora, sem terminar o turno.
 
-> [!complete] **Complete.** Carla começa o turno com 4 aldeias e 2 cidades, e 2 Cavaleiros jogados à sua frente. Ninguém tem o Maior Exército de Cavalaria. Ela transforma uma aldeia em cidade e depois joga o terceiro Cavaleiro. Já somamos o começo do turno: 4 + 4 = 8. Complete a conta. Ela vence?
-
-> [!suavez] **Sua vez.** Duas situações:
+> [!complete] **Complete.** Carla começa o turno com 4 aldeias e 2 cidades, e 2 Cavaleiros jogados à sua frente. Ninguém tem o Maior Exército de Cavalaria. Ela transforma uma aldeia em cidade e depois joga o terceiro Cavaleiro. Já somamos o começo do turno: 4 + 4 = 8.
 >
-> 1. Diana tem 1 aldeia, 4 cidades e acabou de comprar uma carta que é de Ponto de Vitória. Quantos pontos tem? O que ela faz?
-> 2. Ana tem a Maior Estrada Comercial com 7 peças seguidas. Bruno tem uma estrada de 6. No turno de Carla, Carla constrói uma aldeia no meio da estrada de Ana, deixando dois trechos de 3 e 4 peças. Quem fica com a carta? Se isso der a alguém 10 pontos, ele vence na hora?
+> ?? Com quantos pontos ela fica?
+> - ( ) 12
+> - (x) 11
+> - ( ) 10
+> - ( ) 9
+> = 11. A cidade nova troca 1 ponto de aldeia por 2 de cidade: 3 aldeias e 3 cidades, 3 + 6 = 9. O terceiro Cavaleiro dá o Maior Exército de Cavalaria, mais 2: 11 pontos (p. 4).
+>
+> ?? Ela vence?
+> - ( ) Não: só vence se ainda tiver 10 no começo do próximo turno
+> - ( ) Não: precisa ter exatamente 10 pontos
+> - (x) Sim
+> = Sim. Ela vence, porque chegou a 10 ou mais no próprio turno (p. 4).
+
+> [!suavez] **Sua vez.** Duas situações. Primeira: Diana tem 1 aldeia, 4 cidades e acabou de comprar uma carta que é de Ponto de Vitória.
+>
+> ?? Quantos pontos Diana tem?
+> - ( ) 6
+> - ( ) 9
+> - (x) 10
+> = 1 + 8 + 1 = 10: a aldeia, as 4 cidades e a carta de Ponto de Vitória (p. 4).
+>
+> ?? O que ela faz?
+> - (x) Mostra a carta e vence
+> - ( ) Guarda a carta e só a mostra no próximo turno
+> - ( ) Mostra a carta, mas só vence se ninguém chegar a 10 até o fim da rodada
+> = Ela mostra a carta e vence, mesmo tendo comprado a carta agora (manual original, p. 7).
+>
+> Segunda: Ana tem a Maior Estrada Comercial com 7 peças seguidas. Bruno tem uma estrada de 6. No turno de Carla, Carla constrói uma aldeia no meio da estrada de Ana, deixando dois trechos de 3 e 4 peças.
+>
+> ?? Quem fica com a carta?
+> - ( ) Ana, que continua dona até alguém fazer uma estrada maior que 7
+> - (x) Bruno
+> - ( ) Carla, que cortou a estrada
+> - ( ) Ninguém: a carta fica de lado
+> = Bruno. Ana fica com 4 peças seguidas, menos de 5. Bruno tem agora sozinho a maior estrada, 6, e toma a carta (manual original, p. 9).
+>
+> ?? Se isso der a Bruno 10 pontos, ele vence na hora?
+> - ( ) Sim: a carta dá os 2 pontos na hora
+> - (x) Não
+> - ( ) Sim, se ele mostrar os pontos antes do fim do turno de Carla
+> = Não. Se ele chegar a 10 com isso, não vence no turno de Carla: precisa ter os 10 no próprio turno (p. 4; manual original, p. 5).
 
 > [!treino] **Treino rápido: quantos pontos?**
 >
-> a) 4 aldeias e 1 cidade.
+> ?? a) 4 aldeias e 1 cidade.
+> - ( ) 5
+> - (x) 6
+> - ( ) 8
+> = 6: 4 + 2 (p. 4).
 >
-> b) 2 aldeias, 2 cidades e o Maior Exército de Cavalaria.
+> ?? b) 2 aldeias, 2 cidades e o Maior Exército de Cavalaria.
+> - (x) 8
+> - ( ) 6
+> - ( ) 7
+> = 8: 2 + 4 + 2 (p. 4).
 >
-> c) 5 aldeias, 2 cidades, a Maior Estrada Comercial e 1 carta de Ponto de Vitória.
-
-### Respostas da etapa 5
-
-- **Complete:** a cidade nova troca 1 ponto de aldeia por 2 de cidade: 3 aldeias e 3 cidades, 3 + 6 = 9. O terceiro Cavaleiro dá o Maior Exército de Cavalaria, mais 2: 11 pontos. Ela vence, porque chegou a 10 no próprio turno (p. 4).
-- **Sua vez 1:** 1 + 8 + 1 = 10. Ela mostra a carta e vence, mesmo tendo comprado a carta agora (manual original, p. 7).
-- **Sua vez 2:** Ana fica com 4 peças seguidas, menos de 5. Bruno tem agora sozinho a maior estrada, 6, e toma a carta. Se ele chegar a 10 com isso, não vence no turno de Carla: precisa ter os 10 no próprio turno (p. 4; manual original, p. 5 e 9).
-- **Treino:** a) 6. b) 8. c) 5 + 4 + 2 + 1 = 12.
+> ?? c) 5 aldeias, 2 cidades, a Maior Estrada Comercial e 1 carta de Ponto de Vitória.
+> - ( ) 10
+> - ( ) 11
+> - (x) 12
+> = 12: 5 + 4 + 2 + 1. A carta de Ponto de Vitória escondida também conta (p. 3 e 4).
 
 ## 7. Situações especiais
 
