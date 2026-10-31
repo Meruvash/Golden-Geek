@@ -104,7 +104,7 @@ O repositório não tem manuais. As resenhas do portal foram escritas com fontes
 
 Critérios, nesta ordem:
 
-1. Manual oficial em português da edição brasileira acessível publicamente (site da editora nacional) e manual original da editora de origem. Sem o manual em português, o jogo sai da lista.
+1. Manual oficial em português da edição brasileira acessível publicamente (site da editora nacional) e manual original da editora de origem. Sem o manual em português, use o manual oficial em inglês, com aviso ao leitor (decisão do editor em 31/10/2026; detalhes em docs/como-jogar/BRIEF.md).
 2. Já tem resenha no Elite (há uma pasta `<slug>/` e um `conteudo/<slug>.json`), para que o tutorial complemente uma página existente.
 3. Complexidade suficiente para testar o método: mais de um tipo de ação, uma pontuação que exija explicação, pelo menos uma regra que costuma ser jogada errado. Jogos de peso muito baixo (uma ação só) não testam nada; jogos de peso alto deixam o piloto longo demais.
 4. Procura real: confira se "como jogar <nome>" aparece no autocomplete do Google e do YouTube (`curl -s "https://suggestqueries.google.com/complete/search?client=firefox&hl=pt-BR&q=como+jogar+<nome>"`; para o YouTube, acrescente `&ds=yt` e use `client=youtube`). Registre o que viu, com data.
