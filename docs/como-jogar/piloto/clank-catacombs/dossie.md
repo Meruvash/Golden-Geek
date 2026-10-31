@@ -210,7 +210,7 @@ O 4C/ID foi pensado para cursos com tarefas reais e apoio que vai sendo retirado
 **Classes de tarefa** (da mais simples à partida inteira):
 
 1. **Montar a mesa.** Apoio: lista numerada que se confere na mesa. Sem variação: é procedimento.
-2. **Jogar um turno de abertura.** Só cartas iniciais, reserva e um túnel comum. Exemplo resolvido (Ana), depois tarefa para completar (Bruno), com a resposta adiante.
+2. **Jogar um turno de abertura.** Só cartas iniciais, reserva e um túnel comum. Exemplo resolvido (Jogador 1), depois tarefa para completar (Jogador 2), com a resposta adiante.
 3. **Fechar o turno e sobreviver ao dragão.** Exemplo resolvido de ataque; tarefa: dizer quem toma quanto dano num sorteio dado.
 4. **Atravessar a masmorra.** Túneis com ícones, peça nova, recompensas, recursos trancados. Exemplo resolvido com escolha (gastar Swords no túnel ou no Goblin); tarefa sem apoio na seção de verificação.
 5. **Pegar o Artifact, fugir e contar pontos.** Exemplo resolvido de pontuação com três destinos (fuga, nocaute nas Profundezas, nocaute fora delas); tarefa de pontuação sem apoio.

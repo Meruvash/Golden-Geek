@@ -76,7 +76,7 @@ As respostas de cada etapa ficam escondidas no fim dela. Tente antes de abrir. N
 
 > [!atencao] O peão começa na Cripta, que fica na Peça Inicial mas fora da masmorra. A Cripta é também a única saída.
 
-> [!suavez] **Sua vez.** Você vai montar uma partida de 3 jogadores: Ana começa, depois Bruno, depois Carla. Responda olhando só o passo a passo:
+> [!suavez] **Sua vez.** Você vai montar uma partida de 3 jogadores: o Jogador 1 começa, depois o Jogador 2, depois o Jogador 3. Responda olhando só o passo a passo:
 >
 > 1. Em que casa da Trilha de Fúria fica o Marcador do Dragão, e quantos cubos sairão no primeiro ataque se nada mudar?
 > 2. Quantas fichas de Maestria ficam perto da Cripta?
@@ -87,7 +87,7 @@ As respostas de cada etapa ficam escondidas no fim dela. Tente antes de abrir. N
 
 1. Na segunda casa de baixo para cima, a do peão com o número 3. Ela mostra 2, então saem 2 cubos (passo 1).
 2. Três, uma por jogador (passo 7).
-3. Ana 3, Bruno 2, Carla 1 (passo 11).
+3. Jogador 1: 3; Jogador 2: 2; Jogador 3: 1 (passo 11).
 4. Troca por outra carta do Baralho da Masmorra até haver 6 cartas sem o símbolo, e embaralha a trocada de volta (passo 9).
 
 ## 3. Etapa 2: jogar o primeiro turno
@@ -108,17 +108,17 @@ As respostas de cada etapa ficam escondidas no fim dela. Tente antes de abrir. N
 > 6. **Adquirir uma Carta:** pague em Habilidade o custo do canto inferior direito. Pode ser uma carta de faixa azul da Fileira ou uma de faixa amarela da Reserva. Ela vai para o seu descarte. Não reponha a Fileira agora. A Reserva tem estoque limitado. O texto **Adquirir** de uma carta, se houver, acontece uma vez, na hora da aquisição na Fileira (p. 11).
 > 7. **Movimentação:** cada túnel custa pelo menos 1 Bota. Nesta etapa, use só túneis sem ícones; os ícones ficam para a etapa 4.
 
-> [!resolvido] **Exemplo resolvido.** Ana começa com Roubar, Roubar, Roubar, Tropeçar e Contornar. Ela joga as cinco. Os três Roubar dão 3 Habilidades; o Contornar dá 1 Bota; o Tropeçar faz +1 Clank!, e ela põe 1 cubo vermelho na área de Clank!.
+> [!resolvido] **Exemplo resolvido.** O Jogador 1 começa com Roubar, Roubar, Roubar, Tropeçar e Contornar. Ele joga as cinco. Os três Roubar dão 3 Habilidades; o Contornar dá 1 Bota; o Tropeçar faz +1 Clank!, e ele põe 1 cubo vermelho na área de Clank!.
 >
-> Com 3 Habilidades, ela não alcança um Tomo Secreto, que custa 7. Um Explorar custa 3: ela o adquire e o põe no descarte. Com a Bota, sai da Cripta por um túnel sem ícones e chega à primeira sala da masmorra.
+> Com 3 Habilidades, ele não alcança um Tomo Secreto, que custa 7. Um Explorar custa 3: ele o adquire e o põe no descarte. Com a Bota, sai da Cripta por um túnel sem ícones e chega à primeira sala da masmorra.
 >
-> Ela encerra o turno: as cinco cartas vão para o descarte, onde já está o Explorar, e ela compra as 5 cartas que restam no baralho inicial. Ninguém tirou carta da Fileira, então nada entra e o dragão não ataca.
+> Ele encerra o turno: as cinco cartas vão para o descarte, onde já está o Explorar, e ele compra as 5 cartas que restam no baralho inicial. Ninguém tirou carta da Fileira, então nada entra e o dragão não ataca.
 >
-> Por que essa escolha: o Explorar (2 Habilidades e 1 Bota) é melhor que qualquer carta inicial, mas Ana só vai usá-lo depois de embaralhar o descarte, no terceiro turno dela ou mais tarde.
+> Por que essa escolha: o Explorar (2 Habilidades e 1 Bota) é melhor que qualquer carta inicial, mas o Jogador 1 só vai usá-lo depois de embaralhar o descarte, no terceiro turno dele ou mais tarde.
 
-> [!complete] **Complete.** Bruno tem Roubar, Roubar, Tropeçar, Tropeçar e Contornar. Já somamos: 2 Habilidades e 1 Bota. Falta você dizer: quantos cubos ele põe na área de Clank!, se ele consegue adquirir um Explorar e se consegue combater o Goblin.
+> [!complete] **Complete.** O Jogador 2 tem Roubar, Roubar, Tropeçar, Tropeçar e Contornar. Já somamos: 2 Habilidades e 1 Bota. Falta você dizer: quantos cubos ele põe na área de Clank!, se ele consegue adquirir um Explorar e se consegue combater o Goblin.
 
-> [!suavez] **Sua vez.** Carla tem Roubar, Roubar, Roubar, Roubar e Tropeçar, e está na Cripta. O que ela pode fazer neste turno, e o que não pode?
+> [!suavez] **Sua vez.** O Jogador 3 tem Roubar, Roubar, Roubar, Roubar e Tropeçar, e está na Cripta. O que ele pode fazer neste turno, e o que não pode?
 
 > [!treino] **Treino rápido: recursos e barulho.** Para cada mão, diga quantas Habilidades, Espadas e Botas ela gera e quantos cubos o dono deixa na área de Clank! no fim do turno (comece com nenhum cubo dele lá).
 >
@@ -132,8 +132,8 @@ As respostas de cada etapa ficam escondidas no fim dela. Tente antes de abrir. N
 
 ### Respostas da etapa 2
 
-- **Complete (Bruno):** 2 cubos. Não adquire o Explorar, que custa 3. Não combate o Goblin, que exige 2 Espadas. Com 2 Habilidades, pode adquirir uma carta ou usar um Dispositivo de custo até 2, se houver na Fileira, e andar um túnel sem ícones (p. 6 e 7).
-- **Sua vez (Carla):** 4 Habilidades, nenhuma Bota e +1 Clank!. Ela pode adquirir um Explorar (3) e perde a Habilidade que sobra, ou adquirir outra carta de custo até 4. Ela não pode sair da Cripta, porque não tem Bota. O cubo do Tropeçar vai para a área de Clank! de qualquer jeito.
+- **Complete (Jogador 2):** 2 cubos. Não adquire o Explorar, que custa 3. Não combate o Goblin, que exige 2 Espadas. Com 2 Habilidades, pode adquirir uma carta ou usar um Dispositivo de custo até 2, se houver na Fileira, e andar um túnel sem ícones (p. 6 e 7).
+- **Sua vez (Jogador 3):** 4 Habilidades, nenhuma Bota e +1 Clank!. Ele pode adquirir um Explorar (3) e perde a Habilidade que sobra, ou adquirir outra carta de custo até 4. Ele não pode sair da Cripta, porque não tem Bota. O cubo do Tropeçar vai para a área de Clank! de qualquer jeito.
 - **Treino a:** 4 Habilidades, 0 Espadas, 1 Bota, 2 cubos.
 - **Treino b:** 2 Habilidades, 3 Espadas, 1 Bota, nenhum cubo. O Tropeçar põe 1 cubo e o Ataque Surpresa tira esse cubo; sobra um desconto de 1 que se perde no fim do turno.
 - **Treino c:** 5 Habilidades, 4 Espadas, 1 Bota, 1 cubo.
@@ -167,15 +167,15 @@ As respostas de cada etapa ficam escondidas no fim dela. Tente antes de abrir. N
 > - Curar é devolver um cubo do Contador ao suprimento.
 > - Contador cheio, no décimo dano: você está **nocauteado**.
 
-> [!resolvido] **Exemplo resolvido.** Partida de 2 jogadores. Na área de Clank! estão 2 cubos vermelhos (Ana), 3 azuis (Bruno) e 1 de Fantasma, que entrou quando alguém revelou uma peça assombrada. O Marcador está na quinta casa, que mostra 4; não há carta de Perigo na Fileira.
+> [!resolvido] **Exemplo resolvido.** Partida de 2 jogadores. Na área de Clank! estão 2 cubos vermelhos (Jogador 1), 3 azuis (Jogador 2) e 1 de Fantasma, que entrou quando alguém revelou uma peça assombrada. O Marcador está na quinta casa, que mostra 4; não há carta de Perigo na Fileira.
 >
-> Os seis cubos vão para a bolsa. Saem 4: um preto, um azul, o Fantasma e um vermelho. O preto vai para o Banco. O azul é 1 de dano para Bruno; o vermelho, 1 para Ana; o Fantasma, 1 para cada um, com cubos do próprio suprimento. Resultado: 2 de dano para cada. O Fantasma volta para a área de Clank!, e 1 vermelho e 2 azuis continuam na bolsa.
+> Os seis cubos vão para a bolsa. Saem 4: um preto, um azul, o Fantasma e um vermelho. O preto vai para o Banco. O azul é 1 de dano para o Jogador 2; o vermelho, 1 para o Jogador 1; o Fantasma, 1 para cada um, com cubos do próprio suprimento. Resultado: 2 de dano para cada. O Fantasma volta para a área de Clank!, e 1 vermelho e 2 azuis continuam na bolsa.
 >
 > Por que importa: os cubos que ficaram vão disputar o próximo sorteio junto com o barulho novo.
 
-> [!complete] **Complete.** Partida de 3 jogadores: Ana (vermelho), Bruno (azul) e Carla (verde). O Marcador está na quarta casa, que mostra 3, e há uma carta de Perigo na Fileira, então saem 4 cubos. Saem: azul, Fantasma, verde e preto. O preto vai para o Banco e o azul é 1 de dano para Bruno. Termine: quanto dano cada um sofre no total, e para onde vai o Fantasma?
+> [!complete] **Complete.** Partida de 3 jogadores: Jogador 1 (vermelho), Jogador 2 (azul) e Jogador 3 (verde). O Marcador está na quarta casa, que mostra 3, e há uma carta de Perigo na Fileira, então saem 4 cubos. Saem: azul, Fantasma, verde e preto. O preto vai para o Banco e o azul é 1 de dano para o Jogador 2. Termine: quanto dano cada um sofre no total, e para onde vai o Fantasma?
 
-> [!suavez] **Sua vez.** No fim do turno de Bruno, entram duas cartas novas na Fileira, as duas com o símbolo de Ataque do Dragão. Uma terceira carta com o símbolo já estava lá desde o turno anterior. Uma das novas tem um texto Revelar. Em que ordem as coisas acontecem, e quantos ataques há?
+> [!suavez] **Sua vez.** No fim do turno do Jogador 2, entram duas cartas novas na Fileira, as duas com o símbolo de Ataque do Dragão. Uma terceira carta com o símbolo já estava lá desde o turno anterior. Uma das novas tem um texto Revelar. Em que ordem as coisas acontecem, e quantos ataques há?
 
 > [!treino] **Treino rápido: quantos cubos saem?**
 >
@@ -187,7 +187,7 @@ As respostas de cada etapa ficam escondidas no fim dela. Tente antes de abrir. N
 
 ### Respostas da etapa 3
 
-- **Complete:** Ana 1 (o Fantasma), Bruno 2 (azul e Fantasma), Carla 2 (verde e Fantasma). O Fantasma volta para a área de Clank! depois do ataque.
+- **Complete:** Jogador 1: 1 (o Fantasma); Jogador 2: 2 (azul e Fantasma); Jogador 3: 2 (verde e Fantasma). O Fantasma volta para a área de Clank! depois do ataque.
 - **Sua vez:** primeiro o texto Revelar é executado, assim que a carta aparece. Depois há **um** ataque, porque entraram cartas novas com o símbolo. A carta antiga não conta (p. 11 e 12).
 - **Treino a:** 3. **Treino b:** 4 da casa mais 2 de Perigo, 6. **Treino c:** 4, porque no turno de quem saiu do jogo a trilha e o Perigo são ignorados; numa partida de 2 seriam 6 (p. 14).
 
@@ -227,19 +227,19 @@ As respostas de cada etapa ficam escondidas no fim dela. Tente antes de abrir. N
 > - **Combater um Monstro** (faixa vermelha): pague em Espadas o número do canto inferior direito e ganhe a recompensa de DERROTA; a carta vai para o descarte da Masmorra. O Goblin da Reserva não vai embora: pode ser combatido várias vezes no mesmo turno.
 > - **Teletransporte:** leva a uma sala, quase sempre vizinha, sem gastar Botas, ignorando os ícones do túnel e até contra a seta. Também pode sair pela borda e descobrir peça.
 
-> [!resolvido] **Exemplo resolvido: Espadas no túnel ou no Goblin.** Ana tem Explorar, Explorar, Mercenário, Contornar e Roubar: 6 Habilidades, 2 Espadas e 3 Botas. Para chegar à sala que ela quer, precisa atravessar um túnel com Pegada e depois um túnel com dois ícones de Monstro.
+> [!resolvido] **Exemplo resolvido: Espadas no túnel ou no Goblin.** O Jogador 1 tem Explorar, Explorar, Mercenário, Contornar e Roubar: 6 Habilidades, 2 Espadas e 3 Botas. Para chegar à sala que ele quer, precisa atravessar um túnel com Pegada e depois um túnel com dois ícones de Monstro.
 >
-> O primeiro túnel custa 2 Botas; o segundo, 1. As três Botas acabam ali. Os dois Monstros causam 2 de dano, a menos que ela gaste Espadas.
+> O primeiro túnel custa 2 Botas; o segundo, 1. As três Botas acabam ali. Os dois Monstros causam 2 de dano, a menos que ele gaste Espadas.
 >
-> Ela pode gastar as 2 Espadas nos ícones e chegar inteira, ou guardá-las para o Goblin, que dá 1 de Ouro, e aceitar 2 de dano: 2 cubos do suprimento no Contador. Ana prefere chegar inteira: 1 de Ouro não paga dois ferimentos tão cedo. As 6 Habilidades viram dois Explorar da Reserva (3 cada). Nenhum recurso se perdeu.
+> Ele pode gastar as 2 Espadas nos ícones e chegar inteiro, ou guardá-las para o Goblin, que dá 1 de Ouro, e aceitar 2 de dano: 2 cubos do suprimento no Contador. O Jogador 1 prefere chegar inteiro: 1 de Ouro não paga dois ferimentos tão cedo. As 6 Habilidades viram dois Explorar da Reserva (3 cada). Nenhum recurso se perdeu.
 
-> [!complete] **Complete.** Bruno está numa sala na borda da masmorra e ainda tem 1 Bota. Ele atravessa o túnel que leva à borda e revela a peça nova. Na posição em que ele a encaixaria, o túnel ganha um ícone de Pegada. O que ele pode fazer? Já sabemos que, nessa posição, o túnel custaria 2 Botas. Complete com as duas saídas que a regra permite.
+> [!complete] **Complete.** O Jogador 2 está numa sala na borda da masmorra e ainda tem 1 Bota. Ele atravessa o túnel que leva à borda e revela a peça nova. Na posição em que ele a encaixaria, o túnel ganha um ícone de Pegada. O que ele pode fazer? Já sabemos que, nessa posição, o túnel custaria 2 Botas. Complete com as duas saídas que a regra permite.
 
 > [!suavez] **Sua vez.** Três situações:
 >
-> 1. Carla entra numa sala que dá 2 de Ouro, sai e volta a ela no mesmo turno. Quanto Ouro ganha?
-> 2. Ana entra numa Caverna de Cristal com 2 Botas ainda não gastas e uma carta que permite se teletransportar para uma sala vizinha. O que ela pode fazer?
-> 3. Bruno quer ir de uma sala a outra por um portal. O túnel até o portal de saída tem um ícone de Monstro, e ele não tem Espadas. Quanto custa a viagem?
+> 1. O Jogador 3 entra numa sala que dá 2 de Ouro, sai e volta a ela no mesmo turno. Quanto Ouro ganha?
+> 2. O Jogador 1 entra numa Caverna de Cristal com 2 Botas ainda não gastas e uma carta que permite se teletransportar para uma sala vizinha. O que ele pode fazer?
+> 3. O Jogador 2 quer ir de uma sala a outra por um portal. O túnel até o portal de saída tem um ícone de Monstro, e ele não tem Espadas. Quanto custa a viagem?
 
 > [!treino] **Treino rápido: quanto custa este túnel?** Diga as Botas, as Gazuas e o dano.
 >
@@ -255,7 +255,7 @@ As respostas de cada etapa ficam escondidas no fim dela. Tente antes de abrir. N
 
 - **Complete:** ele pode girar a peça para outra orientação, no mesmo lugar, em que o túnel não tenha Pegada. Ou pode interromper o movimento e conseguir mais uma Bota antes de continuar, por exemplo com um Dispositivo ou um monstro cuja recompensa dê Bota, se houver na Fileira. Adquirir uma carta não serve aqui: ela vai para o descarte, não para a mão (p. 7 e 9).
 - **Sua vez 1:** 2 de Ouro, só uma vez. Cada sala dá a recompensa uma vez por turno (p. 10).
-- **Sua vez 2:** pode se teletransportar, mas não pode gastar as Botas. Continua exausta depois (p. 10 e 11).
+- **Sua vez 2:** pode se teletransportar, mas não pode gastar as Botas. Continua exausto depois (p. 10 e 11).
 - **Sua vez 3:** 1 Bota pelo percurso inteiro e 1 de dano pelo Monstro, com um cubo do suprimento, desde que ele tenha cubos e que isso não encha o Contador (p. 10 e 12).
 - **Treino a:** 1 Bota. **b:** 2 Botas, nenhum dano. **c:** 1 Bota, 1 Gazua, 2 de dano. **d:** não pode passar, com qualquer número de Botas. Só Teletransporte ou um Grande Segredo específico permitem ir contra a seta (p. 7, 11 e Guia de Fichas).
 
@@ -279,17 +279,17 @@ As respostas de cada etapa ficam escondidas no fim dela. Tente antes de abrir. N
 
 > [!resolvido] **Exemplo resolvido: três finais.** Partida de 3 jogadores.
 >
-> Ana escapa com o Artefato de 15 pontos. Tem a ficha de Maestria (20), um Ídolo de Macaco (5), 9 de Ouro, um Tomo Secreto no baralho (7), um Ataque Surpresa (1) e um Prisioneiro Aldeão (2). Total: 15 + 20 + 5 + 9 + 7 + 1 + 2 = **59 pontos**.
+> O Jogador 1 escapa com o Artefato de 15 pontos. Tem a ficha de Maestria (20), um Ídolo de Macaco (5), 9 de Ouro, um Tomo Secreto no baralho (7), um Ataque Surpresa (1) e um Prisioneiro Aldeão (2). Total: 15 + 20 + 5 + 9 + 7 + 1 + 2 = **59 pontos**.
 >
-> Bruno pegou o Artefato de 20, o melhor da partida, mas foi nocauteado numa peça escura, nas Profundezas: **0 ponto**.
+> O Jogador 2 pegou o Artefato de 20, o melhor da partida, mas foi nocauteado numa peça escura, nas Profundezas: **0 ponto**.
 >
-> Carla foi nocauteada numa das quatro peças seguras, com o Artefato de 10, 12 de Ouro e 3 pontos em cartas: 10 + 12 + 3 = **25 pontos**, sem ficha de Maestria.
+> O Jogador 3 foi nocauteado numa das quatro peças seguras, com o Artefato de 10, 12 de Ouro e 3 pontos em cartas: 10 + 12 + 3 = **25 pontos**, sem ficha de Maestria.
 >
-> Ana vence. O Artefato de Bruno não conta para nada, nem para desempate.
+> O Jogador 1 vence. O Artefato do Jogador 2 não conta para nada, nem para desempate.
 
-> [!complete] **Complete.** Bruno escapa com o Artefato de 12 pontos. Ele tem 6 de Ouro, uma Coroa de 10 pontos e um Tomo Secreto no baralho. Já somamos o Artefato e o Ouro: 18. Termine a conta.
+> [!complete] **Complete.** Numa outra partida, o Jogador 2 escapa com o Artefato de 12 pontos. Ele tem 6 de Ouro, uma Coroa de 10 pontos e um Tomo Secreto no baralho. Já somamos o Artefato e o Ouro: 18. Termine a conta.
 
-> [!suavez] **Sua vez.** Carla foi nocauteada numa peça segura, com o Artefato de 10, um Ídolo de Macaco, um Kit de Ladrão, 4 de Ouro e uma carta que vale 1 ponto. Diego foi nocauteado numa peça segura sem Artefato, com 30 de Ouro. Quanto cada um faz?
+> [!suavez] **Sua vez.** Nessa mesma partida, o Jogador 3 foi nocauteado numa peça segura, com o Artefato de 10, um Ídolo de Macaco, um Kit de Ladrão, 4 de Ouro e uma carta que vale 1 ponto. O Jogador 4 foi nocauteado numa peça segura sem Artefato, com 30 de Ouro. Quanto cada um faz?
 
 > [!treino] **Treino rápido: pontua ou zera?**
 >
@@ -302,7 +302,7 @@ As respostas de cada etapa ficam escondidas no fim dela. Tente antes de abrir. N
 ### Respostas da etapa 5
 
 - **Complete:** 18 + 20 (Maestria) + 10 (Coroa) + 7 (Tomo Secreto) = **55 pontos**.
-- **Sua vez:** Carla faz 10 + 5 + 2 + 4 + 1 = **22**. Diego faz **0**: sem Artefato, nada conta.
+- **Sua vez:** o Jogador 3 faz 10 + 5 + 2 + 4 + 1 = **22**. O Jogador 4 faz **0**: sem Artefato, nada conta.
 - **Treino a:** zera. A metade de cima da Peça Inicial faz parte das Profundezas. **b:** pontua, sem a ficha de Maestria. **c:** pontua: o Artefato, a ficha de Maestria (20) e os pontos das cartas, se houver (p. 14).
 
 ## 7. Situações especiais
