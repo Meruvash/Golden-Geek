@@ -1075,5 +1075,45 @@
    ],
    "verificado_em": "2026-10-30"
   }
+ },
+ "lookout-spiele.de": {
+  "nome": "Lookout Games",
+  "apelidos": [
+   "Lookout Games"
+  ],
+  "site": "https://www.lookout-spiele.de",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 404,
+   "crawl_delay": null,
+   "sitemaps": [],
+   "verificado_em": "2026-10-31"
+  }
+ },
+ "eggertspiele.de": {
+  "nome": "eggertspiele",
+  "apelidos": [
+   "eggertspiele"
+  ],
+  "site": "https://www.eggertspiele.de",
+  "plataforma": "wordpress",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.eggertspiele.de/sitemap_index.xml"
+   ],
+   "verificado_em": "2026-10-31"
+  }
  }
 }

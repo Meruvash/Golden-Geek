@@ -1,0 +1,70 @@
+{
+ "slug": "great-western-trail",
+ "usar_na_pagina": true,
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 1019,
+   "altura": 1600,
+   "editora": "Lookout Games",
+   "credito": "Imagem: Lookout Games · Great Western Trail: El Paso",
+   "pagina": "https://www.lookout-spiele.de/en/games/gwt_elpaso.html",
+   "imagem": "https://www.lookout-spiele.de/upload/en_gwt_elpaso.html_GalleryImage_2.png",
+   "baixada_em": "2026-10-31",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/mesa-1.webp",
+   "tipo": "mesa",
+   "largura": 1000,
+   "altura": 667,
+   "editora": "Lookout Games",
+   "credito": "Imagem: Lookout Games · Great Western Trail: El Paso",
+   "pagina": "https://www.lookout-spiele.de/en/games/gwt_elpaso.html",
+   "imagem": "https://www.lookout-spiele.de/upload/en_gwt_elpaso.html_GalleryImage.jpeg",
+   "baixada_em": "2026-10-31",
+   "aprovada": true,
+   "fora": true
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 1600,
+   "altura": 1067,
+   "editora": "Lookout Games",
+   "credito": "Imagem: Lookout Games · Great Western Trail: El Paso",
+   "pagina": "https://www.lookout-spiele.de/en/games/gwt_elpaso.html",
+   "imagem": "https://www.lookout-spiele.de/upload/en_gwt_elpaso.html_GalleryImage_2.jpeg",
+   "baixada_em": "2026-10-31",
+   "aprovada": true,
+   "principal": true
+  },
+  {
+   "arquivo": "fotos/componentes-2.webp",
+   "tipo": "componentes",
+   "largura": 1000,
+   "altura": 667,
+   "editora": "Lookout Games",
+   "credito": "Imagem: Lookout Games · Great Western Trail: El Paso",
+   "pagina": "https://www.lookout-spiele.de/en/games/gwt_elpaso.html",
+   "imagem": "https://www.lookout-spiele.de/upload/en_gwt_elpaso.html_GalleryImage_3.jpeg",
+   "baixada_em": "2026-10-31",
+   "aprovada": true,
+   "jogar": true
+  },
+  {
+   "arquivo": "fotos/componentes-3.webp",
+   "tipo": "componentes",
+   "largura": 1000,
+   "altura": 667,
+   "editora": "Lookout Games",
+   "credito": "Imagem: Lookout Games · Great Western Trail: El Paso",
+   "pagina": "https://www.lookout-spiele.de/en/games/gwt_elpaso.html",
+   "imagem": "https://www.lookout-spiele.de/upload/en_gwt_elpaso.html_GalleryImage_4.jpeg",
+   "baixada_em": "2026-10-31",
+   "aprovada": true,
+   "fora": true
+  }
+ ]
+}

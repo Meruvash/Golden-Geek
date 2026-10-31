@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-30",
+ "atualizado_em": "2026-10-31",
  "regras": {
   "premios": [
    "Golden Geek",
@@ -4949,7 +4949,8 @@
    "status": "na_fila",
    "prioridade": 145,
    "premios_distintos": 3,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "slug": "great-western-trail"
   },
   {
    "jogo": "Take Time",
