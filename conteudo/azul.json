@@ -133,9 +133,9 @@
  "nota_ficha": "Números do BoardGameGeek e da Ludopedia obtidos por busca, porque os dois sites bloqueiam acesso automatizado. O ranking geral do BGG variou entre as fontes (#73 a #99) e foi omitido.",
  "como_funciona": [
   "Cada jogador tem um tabuleiro com duas partes: à esquerda, cinco linhas de preparação, de 1 a 5 espaços; à direita, a parede, uma grade de 5 por 5 em que cada cor tem um lugar certo em cada fileira. No centro da mesa ficam os expositores, chamados de fábricas, com quatro azulejos sorteados cada.",
-  "Na sua vez, você escolhe uma fábrica e pega todos os azulejos de uma única cor; o resto vai para o centro da mesa. Também pode pegar todos os azulejos de uma cor que estejam no centro, e o primeiro a fazer isso recebe a ficha de primeiro jogador, que vale um ponto negativo.",
+  "Na sua vez, você escolhe uma fábrica e pega todos os azulejos de uma única cor; o resto vai para o centro da mesa. Também pode pegar todos os azulejos de uma cor que estejam no centro, e o primeiro a fazer isso recebe a ficha de primeiro jogador, que vai para a linha do chão e tira pontos como um azulejo caído.",
   "Os azulejos pegos vão para uma linha de preparação, sempre de uma única cor por linha. O que não cabe cai na linha do chão, na parte de baixo do tabuleiro, e tira pontos no fim da rodada, cada vez mais à medida que ela enche.",
-  "Quando os azulejos da mesa acabam, a rodada termina. Cada linha de preparação completa manda um azulejo para a parede, na mesma fileira, e o resto é descartado. O azulejo vale um ponto, mais um por peça ligada a ele na horizontal e na vertical.",
+  "Quando os azulejos da mesa acabam, a rodada termina. Cada linha de preparação completa manda um azulejo para a parede, na mesma fileira, e o resto é descartado. Sozinho, o azulejo vale 1 ponto; com vizinhos, vale a sequência que forma na linha mais a que forma na coluna, contando a si mesmo nas duas.",
   "O jogo acaba quando alguém completa uma fileira horizontal da parede. Aí entram os bônus: 2 pontos por fileira completa, 7 por coluna completa e 10 por cor com os cinco azulejos na parede. Vence quem tiver mais pontos."
  ],
  "funciona": [

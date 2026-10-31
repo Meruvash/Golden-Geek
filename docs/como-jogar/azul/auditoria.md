@@ -103,3 +103,26 @@ Mesmo protocolo do piloto (PROMPT_PILOTO, seção 10): 5 a 8 adultos que nunca j
 ## 9. Ligação com a resenha
 
 A resenha de Azul (`conteudo/azul.json`) tem dois erros de regra que o tutorial corrige (dossiê, seção 4.8): a fórmula de pontuação ("um ponto, mais um por peça ligada") e o marcador de primeiro jogador "vale um ponto negativo". Proposta, nada implementado: corrigir as duas frases da resenha e ligar a resenha ao tutorial (campo `resenha: "azul"` já preenchido no `azul.json`).
+
+## Auditoria independente
+
+Feita em 31/10/2026 por um auditor que não escreveu o texto.
+
+**O que foi conferido.**
+
+- Manual brasileiro baixado de novo pelo mesmo link do dossiê (`store/file?id=1458&tagId=2&group=b2c`, .zip com `AZU001_regras_v1.0.pdf`, 6 páginas, criado em 27/02/2023), salvo no scratchpad. Texto extraído com `pdftotext -layout`, página a página; p. 2 e p. 5 renderizadas para ler a disposição da parede colorida (linha 1: azul, amarelo, vermelho, preto, branco, deslocando uma casa para a direita a cada linha) e os valores do chão (-1, -1, -2, -2, -2, -3, -3; Pedro perde 8 com 4 azulejos e o marcador).
+- Manual original em inglês baixado do link da página da Next Move, para conferir os dois blocos [!edicao] de tradução: *In all later rounds* (p. 4) e *Wall-tiling* também na Partida Alternativa (p. 6). Os dois conferem.
+- Cada afirmação normativa das seções 4 minutos, 0, etapas 1 a 4, Situações especiais, Avaliação e Consulta, contra a página citada (p. 2 a 6). Todas conferem.
+- Todos os exemplos e respostas recalculados num script próprio (parede colorida, pontuação da p. 5, chão, piso em 0, bônus da p. 6): etapa 3 Resolvido 5 + 1 - 2 = 4; Complete 13; ordem invertida 4; Sua vez 2 = 0; treino 1, 3, 5, 1, 7, 8 e 14; etapa 4 Ana 7 pontos, 58, bônus 4 + 7 + 0, final 69; Bruno 70; Sua vez 1 = 9; avaliação 2, 5 e 0. Todas as posições de cor citadas (vermelho L1C3, preto L2C5, amarelo L2C3, azul L2C2, branco L2C1, vermelho L2C4) conferem. Todas as jogadas dos exemplos são legais.
+- `azul.json`: 2 a 4 jogadores (p. 2) e Edição Galápagos (p. 6) conferem no manual; 14+ e 30 a 45 min conferem no verso da caixa brasileira (`AZU001_verso.png`, baixado da página do produto; a API do produto registra 14+, 2 a 4 e "30 min"). Os três pontos do resumo conferem (chão de 1 a 14, p. 5; bônus 2, 7 e 10, p. 6).
+- Regra essencial ausente: nenhuma encontrada.
+
+**Problemas achados e corrigidos.** Nenhum erro de regra, conta ou exemplo. Três ajustes de precisão:
+
+1. Folha de consulta, "Pontos de um azulejo" (p. 5): "sequência horizontal (contando ele) mais sequência vertical (contando ele)" permitia somar 1 ponto pela direção sem vizinho. O manual só conta a direção em que há azulejo conectado. Reescrito: soma a horizontal se houver vizinho na linha, a vertical se houver vizinho na coluna, contando ele nas duas.
+2. Seção 0: "o tamanho das sequências de que passa a fazer parte" tinha a mesma ambiguidade; virou "das sequências que forma com eles".
+3. Etapa 3, Sua vez 1: a resposta dizia que a ordem de cima para baixo existe "por isso" (porque muda os pontos). O manual dá a ordem (p. 4), não o motivo. Pergunta e resposta passaram a falar que a ordem importa e que o manual manda seguir de cima para baixo.
+
+**Em aberto.** As lacunas L1 e L2 continuam no bloco [!edicao] das Situações especiais (o manual de fato não as resolve). "Azulejos da parede nunca voltam ao saco" (Situações especiais) não está escrito no manual, mas decorre da p. 5 (o saco só é reabastecido com a tampa); mantido. A ordem chão antes dos bônus (R5) segue como interpretação bem apoiada nas p. 5 e 6.
+
+**Teste de execução.** Preparação para 2 jogadores (5 expositores, 20 azulejos) e para 4 (9 expositores, 36 azulejos), e uma rodada completa (Oferta até esvaziar mesa e centro, Revestimento de cima para baixo, limpeza, chão, Preparação pelo dono do marcador), feitas só com o texto, sem adivinhar nada essencial. Pontos em que hesitei: o número total de azulejos para 4 jogadores não aparece escrito (conta trivial); no início da 2ª rodada, quem põe o marcador no centro está no passo 5 da Preparação para a próxima rodada, mas não na folha de consulta ("Próxima rodada"), que só diz quem enche os expositores (a Preparação da folha cobre isso). Avaliação final respondida antes de ler as respostas: 8 de 8, iguais às do texto.

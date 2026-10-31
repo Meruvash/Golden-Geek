@@ -41,7 +41,7 @@ Na primeira partida, use a montagem para principiantes desenhada na p. 1 do manu
 
 1. **Role os dois dados** e some. Todo terreno com aquele número produz para **todos** os jogadores: 1 carta por aldeia encostada nele. Saiu 7: veja abaixo.
 2. **Troque**, se quiser: com qualquer outro jogador, nos termos que combinarem, ou com a reserva, entregando 4 cartas iguais por 1 à sua escolha.
-3. **Construa**, se puder pagar. Estrada vai num caminho (um lado de terreno) ligado a uma estrada ou construção sua. Aldeia vai numa encruzilhada (onde os terrenos se encontram) ligada a uma estrada sua, sem nenhuma aldeia ou cidade nas três encruzilhadas vizinhas. Cartas pagas voltam para a reserva.
+3. **Construa**, se puder pagar. Estrada vai num caminho (um lado de terreno) ligado a uma estrada ou construção sua (manual original, p. 4). Aldeia vai numa encruzilhada (onde os terrenos se encontram) ligada a uma estrada sua, sem nenhuma aldeia ou cidade nas três encruzilhadas vizinhas. Cartas pagas voltam para a reserva.
 4. Passe os dados para a esquerda.
 
 > [!resolvido] **Exemplo resolvido.** O jogador azul começou com 1 madeira, 1 minério e 1 argila (p. 2). Ele rola os dados e o número não toca nenhuma aldeia dele. Sem trocar, paga 1 argila e 1 madeira e põe uma estrada encostada a uma das suas estradas. Fica com 1 minério e passa os dados.
@@ -276,10 +276,10 @@ As respostas ficam escondidas no fim de cada etapa: tente antes de abrir. No fim
 > [!passos] **Passo a passo: estrada interrompida** (manual original, p. 9)
 >
 > 1. Você pode construir uma aldeia numa encruzilhada livre no meio da estrada de outro jogador, se tiver estrada sua chegando lá e respeitar a regra da distância. Isso parte a estrada dele em duas.
-> 2. Se o dono da carta, depois do corte, segue empatado com a maior estrada, fica com a carta. Se não, ela vai para quem tem sozinho a maior estrada.
+> 2. Se o dono da carta, depois do corte, ainda tem a maior estrada, mesmo empatado com outro jogador, fica com a carta. Se não, ela vai para quem tem sozinho a maior estrada.
 > 3. Se dois ou mais empatam na nova maior, ou se ninguém tem mais 5 peças seguidas, a carta fica de lado até um único jogador ter a maior.
 
-> [!edicao] Estrada interrompida e empate não estão no folheto em português, que manda consultar o Almanaque. Vêm do manual original (p. 9), da mesma edição de 2015.
+> [!edicao] O folheto em português diz que aldeia ou cidade de outro jogador interrompe a estrada (p. 3), mas não diz o que acontece com a carta depois do corte nem em caso de empate: manda consultar o Almanaque. Os passos acima vêm do manual original (p. 9), cujas regras valem desde 2015, o mesmo ano do texto do folheto.
 
 > [!resolvido] **Exemplo resolvido.** Ana começa o turno com 4 aldeias, 1 cidade, a Maior Estrada Comercial e uma carta de Ponto de Vitória escondida: 4 + 2 + 2 + 1 = 9 pontos, dos quais os outros só veem 8. Ela constrói a quinta aldeia e soma: 5 + 2 + 2 + 1 = 10. Mostra a carta de Ponto de Vitória e vence na hora, sem terminar o turno.
 
@@ -313,7 +313,7 @@ As respostas ficam escondidas no fim de cada etapa: tente antes de abrir. No fim
 >
 > 1. Monte a moldura. Para os portos mudarem de lugar, embaralhe a ordem das peças de moldura.
 > 2. Vire os terrenos para baixo, embaralhe e ponha-os virados para cima dentro da moldura.
-> 3. Ponha as fichas numeradas com a letra para cima. Comece num terreno do canto e siga a ordem alfabética, em espiral para o centro, no sentido contrário ao dos ponteiros do relógio, pulando o deserto. Depois vire as fichas.
+> 3. Separe as fichas numeradas ao lado do tabuleiro, com a letra para cima. Comece num terreno do canto e ponha uma ficha em cada terreno na ordem alfabética, em espiral para o centro, no sentido contrário ao dos ponteiros do relógio, pulando o deserto.
 > 4. Ponha o ladrão no deserto. Prepare cartas, peças e cartas especiais como na etapa 1.
 > 5. Cada jogador rola os dois dados. Quem tirar mais começa.
 > 6. **Primeira rodada:** a partir de quem começa, em sentido horário, cada jogador põe 1 aldeia numa encruzilhada livre e 1 estrada encostada nela. A regra da distância já vale.
@@ -321,7 +321,7 @@ As respostas ficam escondidas no fim de cada etapa: tente antes de abrir. No fim
 > 8. Logo depois de pôr a segunda aldeia, cada jogador recebe 1 carta de cada terreno vizinho a ela.
 > 9. O primeiro jogador começa a partida rolando os dados.
 
-> [!edicao] O manual original sorteia peças de porto avulsas, da caixa americana. Na caixa da Devir, os 9 portos vêm impressos nas 6 peças de moldura (manual do Catan Plus, p. 2), por isso o passo 1 varia os portos pela ordem da moldura, opção que o próprio manual original oferece.
+> [!edicao] O manual original sorteia peças de porto avulsas, da caixa americana. Na caixa da Devir, os 9 portos vêm impressos nas 6 peças de moldura (manual do Catan Plus, p. 2), por isso o passo 1 varia os portos pela ordem da moldura, opção que o próprio manual original oferece. O manual original também não diz em que momento as fichas passam a mostrar o número; o que importa é que, no fim da montagem, todas mostrem o número.
 
 **Faltam cartas na reserva.** Se não houver cartas de uma matéria-prima para todos que produziram, ninguém a recebe nesse lançamento; se a falta atingir um jogador só, ele recebe o que houver. As outras matérias-primas saem normalmente (manual original, p. 4 e 10).
 

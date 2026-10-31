@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Como jogar Azul: regras passo a passo | Elite Boardgamers</title>
+<meta name="description" content="Regras de Azul passo a passo, conferidas no manual da Galápagos: preparação, como pegar azulejos, a pontuação da parede, o chão e os bônus finais.">
+<link rel="canonical" href="https://eliteboardgamers.com.br/como-jogar/azul/">
+<meta name="robots" content="max-image-preview:large">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Como jogar Azul">
+<meta property="og:description" content="Regras de Azul passo a passo, conferidas no manual da Galápagos: preparação, como pegar azulejos, a pontuação da parede, o chão e os bônus finais.">
+<meta property="og:url" content="https://eliteboardgamers.com.br/como-jogar/azul/">
+<meta property="og:image" content="https://eliteboardgamers.com.br/marca/banner-1200.webp">
+<link rel="icon" href="../../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32.png">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<link rel="preload" href="../../fontes/public-sans.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:"Public Sans";src:url(../../fontes/public-sans.woff2) format("woff2");font-weight:400 800;font-style:normal;font-display:swap}
+@font-face{font-family:"Public Sans";src:url(../../fontes/public-sans-italic.woff2) format("woff2");font-weight:400;font-style:italic;font-display:swap}
+/* Layout: o mesmo da página de lição do Discipulado (O Paladino): fundo preto (pedido do editor: preto no lugar do azul), faixa do banner, navegação fixa, coluna central de 760px com cartões claros de papel, filete dourado sobre os títulos de seção. Visual único (o site não tem tema claro). */
+:root{
+  color-scheme:dark;
+  --ground:#000; --panel:#0f1115; --panel2:#171a20; --line:#262a32; --line2:#2e333c;
+  --ink:#eceff3; --muted:#a1a9b5; --gold:#e3b23c;
+  --paper:#f4f5f7; --paper-ink:#14171c; --paper-muted:#5a6270; --paper-line:#dde1e7; --paper-text:#3a414c;
+  --link:#1f5fae; --ok:#1b7a45; --ok-bg:#e3f4ea; --cinza-bg:#eceef1; --ouro-bg:#fff4d1; --ouro-ink:#8a5f00;
+  --erro:#b3263e; --faixa-ouro:#1d1606; --ouro-claro:#f1ead6; --check:#4cc38a;
+  --f-body:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box}
+html{scroll-padding-top:64px}
+body{margin:0;background:var(--ground);color:var(--ink);font:16px/1.55 var(--f-body)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--panel)}
+h1,h2,h3,p,ul,ol,figure{margin:0}
+a{color:var(--link);text-underline-offset:.18em}
+::selection{background:var(--gold);color:#000}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px;border-radius:3px}
+.gut{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+
+.skip{position:absolute;left:-999px}.skip:focus{left:12px;top:8px;z-index:40;background:var(--gold);color:#000;padding:6px 10px}
+.aviso{background:var(--gold);color:#000;font-weight:800;font-size:.8rem;text-align:center}
+.aviso .gut{padding-block:6px}
+.topo{background:var(--ground)}
+.topo img{display:block;width:100%;max-width:640px;height:auto;margin:0 auto}
+.nav{background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line);position:sticky;top:env(safe-area-inset-top,0px);z-index:20}
+.nav ul{max-width:1120px;margin:0 auto;list-style:none;display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;padding-block:0}
+.nav a{display:block;padding:11px 12px;white-space:nowrap;color:var(--ink);text-decoration:none;font-weight:700;font-size:.92rem;border-bottom:3px solid transparent}
+.nav a[aria-current]{color:var(--gold);border-bottom-color:var(--gold)}
+
+.nota{max-width:760px;margin:0 auto;padding-block:20px 56px;display:grid;gap:16px}
+.trilha ol{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:4px 8px;font-size:.85rem;color:var(--muted)}
+.trilha li+li::before{content:"›";margin-right:8px;color:var(--muted)}
+.trilha a{color:var(--gold);font-weight:700;text-decoration:none}
+
+.bloco{background:var(--paper);color:var(--paper-ink);border-radius:10px;padding:20px;min-width:0;display:grid;gap:14px}
+.num-l{font-size:.8rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--paper-muted)}
+h1{font-size:clamp(1.7rem,5vw,2.4rem);line-height:1.12;font-weight:800;letter-spacing:-.015em;text-wrap:balance}
+.meta-e{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:.88rem;color:var(--paper-muted)}
+.meta{font-family:var(--mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.05em;color:var(--paper-muted)}
+
+.r1{background:var(--panel2);color:var(--ink);border:1px solid var(--line2);border-left:4px solid var(--gold)}
+.kick{font-size:.75rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--gold)}
+.r1 .resp{font-size:1.12rem;font-weight:600;line-height:1.45}
+.r1 ul{list-style:none;padding:0;display:grid;gap:8px}
+.r1 li{display:flex;gap:8px;align-items:flex-start;color:#dfe4ea}
+.r1 li svg{flex:none;width:20px;height:20px;margin-top:2px;stroke:var(--check);fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.r1 .pe{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:.88rem;color:var(--muted)}
+.r1 .pe b{color:var(--ink)}
+.legenda{display:flex;flex-wrap:wrap;gap:8px}
+.legenda span{font-size:.74rem;font-weight:800;letter-spacing:.04em;border-radius:999px;padding:3px 10px 3px 14px;background:var(--paper);color:var(--paper-ink)}
+.legenda .l1{box-shadow:inset 5px 0 0 var(--paper-ink)}.legenda .l2{box-shadow:inset 5px 0 0 var(--ok)}
+.legenda .l3{box-shadow:inset 5px 0 0 var(--gold)}.legenda .l4{box-shadow:inset 5px 0 0 var(--ouro-ink)}
+
+.indice h2,.sec>h2{font-size:1.15rem;font-weight:800;line-height:1.3;color:var(--paper-ink);border-top:3px solid var(--gold);padding-top:12px;text-wrap:balance;display:flex;gap:10px;align-items:baseline}
+.indice ol{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:2px 16px}
+.indice a{display:block;padding:6px 0;color:var(--paper-ink);text-decoration:none;font-weight:600;font-size:.94rem;border-bottom:1px solid var(--paper-line)}
+.indice a:hover{color:var(--link)}
+
+.sec>h2 .num{display:none}
+.sec h3{font-size:1.05rem;font-weight:800;margin-top:6px}
+.sec p{color:var(--paper-text);max-width:66ch}
+.sec ul,.sec ol{padding-left:1.3em;display:grid;gap:6px;color:var(--paper-text)}
+.sec ul{list-style:disc}
+.sec li::marker{color:var(--ouro-ink);font-weight:800}
+strong{font-weight:700;color:var(--paper-ink)}
+.pg{white-space:nowrap;font-size:.76em;color:var(--paper-muted);border:1px solid var(--paper-line);background:#fff;border-radius:4px;padding:0 5px;vertical-align:.08em;font-variant-numeric:tabular-nums}
+code{font-size:.9em;background:#fff;padding:1px 5px;border-radius:4px}
+
+.tab{overflow-x:auto;border:1px solid var(--paper-line);border-radius:8px;background:#fff}
+table{border-collapse:collapse;width:100%;font-size:.92rem;color:var(--paper-text)}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--paper-line);vertical-align:top}
+th{font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--paper-muted);background:var(--paper)}
+tr:last-child td{border-bottom:0}
+
+.call{border-radius:8px;padding:14px 16px;display:grid;gap:10px;min-width:0;background:#fff;border:1px solid var(--paper-line);border-left:4px solid var(--paper-muted)}
+.call .rot{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;font-weight:800;color:var(--paper-muted)}
+.call.entender{background:var(--cinza-bg);border-color:#d5d9df;border-left-color:var(--paper-ink)}
+.call.entender .rot{color:var(--paper-ink)}
+.call.passos{border-left-color:var(--ok)}
+.call.passos .rot{color:var(--ok)}
+.call.resolvido{background:var(--panel2);border-color:var(--line2);border-left-color:var(--gold)}
+.call.resolvido .rot{color:var(--gold)}
+.call.resolvido p,.call.resolvido li{color:#dfe4ea}
+.call.resolvido strong{color:#fff}
+.call.resolvido .pg{color:#c8ccd2;border-color:var(--line2)}
+.call.complete{border-left:4px dashed var(--gold)}
+.call.complete .rot{color:var(--ouro-ink)}
+.call.suavez{background:var(--faixa-ouro);border-color:#3a2e10;border-left-color:var(--gold)}
+.call.suavez .rot{color:var(--gold)}
+.call.suavez p,.call.suavez li{color:var(--ouro-claro)}
+.call.suavez strong{color:#fff}
+.call.suavez li::marker{color:var(--gold)}
+.call.suavez .pg{color:var(--ouro-claro);border-color:#3a2e10}
+.call.treino{background:var(--ouro-bg);border-color:#f0dfa6;border-left-color:var(--ouro-ink)}
+.call.treino .rot{color:var(--ouro-ink)}
+.call.atencao{border-left-color:var(--erro)}
+.call.atencao .rot{color:var(--erro)}
+.call.edicao{background:var(--paper);border-left-color:var(--paper-ink)}
+.call.edicao .rot{color:var(--paper-ink)}
+.call.dica{background:var(--ouro-bg);border-left-color:var(--gold)}
+.call.dica .rot{color:var(--ouro-ink)}
+.call ol,.call ul{padding-left:1.3em}
+.call .pg{background:transparent}
+
+.respostas{border:1px solid var(--paper-line);border-left:4px solid var(--ok);border-radius:8px;background:#fff}
+.respostas summary{cursor:pointer;padding:12px 16px;font-weight:800;color:var(--ok);list-style:none;min-height:44px;display:flex;align-items:center}
+.respostas summary::-webkit-details-marker{display:none}
+.respostas summary::before{content:"+";display:inline-grid;place-items:center;width:1.4em;height:1.4em;margin-right:8px;border-radius:50%;background:var(--ok-bg)}
+.respostas[open] summary::before{content:"−"}
+.respostas>div{padding:0 16px 16px;display:grid;gap:12px}
+
+.sec.rapido{outline:2px solid var(--gold);outline-offset:-2px}
+.sec.rapido>h2::after{content:"4 min de leitura";margin-left:auto;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:#000;background:var(--gold);border-radius:3px;padding:3px 8px;white-space:nowrap}
+.sec.rapido>p:first-of-type{font-size:1.02rem}
+.sec.ref{outline:2px solid var(--gold);outline-offset:-2px}
+.sec.ref>h2::after{content:"Leve para a mesa";margin-left:auto;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:#000;background:var(--gold);border-radius:3px;padding:3px 8px;white-space:nowrap}
+
+footer{border-top:1px solid var(--line);background:var(--panel);color:var(--muted);font-size:.85rem}
+footer .in{max-width:760px;margin:0 auto;padding-block:20px}
+@media (max-width:600px){
+  .bloco{padding:16px;border-radius:8px}
+  .sec.ref>h2::after{display:none}
+}
+/* essencial x opcional: o que não é essencial abre com um toque */
+.dobra{border:1px solid var(--paper-line);border-radius:8px;background:#fff}
+.dobra>summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:10px;padding:11px 14px;font-weight:700;font-size:.92rem;color:var(--paper-ink);min-height:44px}
+.dobra>summary::-webkit-details-marker{display:none}
+.dobra>summary::before{content:"+";flex:none;display:grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--paper-line);color:var(--paper-ink);font-weight:800;line-height:1}
+.dobra[open]>summary::before{content:"−"}
+.dobra>.call,.dobra>details,.dobra>aside{margin:0 12px 12px}
+.dobra.pratica>summary{color:var(--ouro-ink)}
+.dobra.pratica[open]{display:grid;gap:10px;padding-bottom:12px}
+.dobra.pratica>*:not(summary){margin:0 12px}
+.dobra.sec-opc{border-style:dashed}
+.dobra.sec-opc[open]{padding-bottom:12px}
+.dobra.sec-opc>*:not(summary){margin-left:14px;margin-right:14px}
+.tag-opc{margin-left:10px;font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;font-weight:800;color:var(--paper-muted);border:1px solid var(--paper-line);border-radius:3px;padding:2px 6px;vertical-align:middle}
+.legenda-f{font-size:.88rem;color:var(--muted)}.legenda-f b{color:var(--ink)}
+.mais-i{display:inline-grid;place-items:center;width:18px;height:18px;border-radius:50%;background:var(--paper-line);color:var(--paper-ink);font-weight:800;font-size:.8rem}
+.indice small{color:var(--muted);font-weight:400}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://eliteboardgamers.com.br/#organizacao", "name": "Elite Boardgamers", "url": "https://eliteboardgamers.com.br/", "logo": {"@type": "ImageObject", "url": "https://eliteboardgamers.com.br/marca/elite-boardgamers.webp", "width": 318, "height": 254}, "sameAs": ["https://www.instagram.com/eliteboardgamers/"]}, {"@type": "Article", "@id": "https://eliteboardgamers.com.br/como-jogar/azul/#artigo", "mainEntityOfPage": "https://eliteboardgamers.com.br/como-jogar/azul/", "headline": "Como jogar Azul", "description": "Regras de Azul passo a passo, conferidas no manual da Galápagos: preparação, como pegar azulejos, a pontuação da parede, o chão e os bônus finais.", "image": ["https://eliteboardgamers.com.br/marca/banner-1200.webp"], "datePublished": "2026-10-31", "author": {"@type": "Organization", "name": "Redação Elite Boardgamers", "url": "https://eliteboardgamers.com.br/politica-editorial/"}, "publisher": {"@id": "https://eliteboardgamers.com.br/#organizacao"}, "inLanguage": "pt-BR"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Início", "item": "https://eliteboardgamers.com.br/"}, {"@type": "ListItem", "position": 2, "name": "Como jogar", "item": "https://eliteboardgamers.com.br/como-jogar/"}, {"@type": "ListItem", "position": 3, "name": "Como jogar Azul", "item": "https://eliteboardgamers.com.br/como-jogar/azul/"}]}]}</script>
+<style id="moldura">.busca-btn{display:grid;place-items:center;flex:none;width:44px;height:44px;padding:0;border:1px solid #3a3f48;border-radius:8px;background:none;color:#e9ecf1;cursor:pointer}.busca-btn:hover{border-color:#e3b23c;color:#e3b23c}.busca-btn[hidden]{display:none}footer .in a{display:inline-flex;align-items:center;min-height:24px}.cpw{position:relative;display:inline-block}.cp{display:inline-flex;align-items:center;justify-content:center;gap:8px;box-sizing:border-box;line-height:1.2;min-height:44px;margin:0;padding:10px 20px;border-radius:999px;border:0;background:#157a43;color:#fff;font:inherit;font-size:.95rem;font-weight:800;text-decoration:none;cursor:pointer}.cp:hover{background:#11683a;color:#fff}.cp .ic{width:19px;height:19px}.cp[hidden]{display:none}.cpw.mini .cp{min-height:40px;padding:8px 14px;font-size:.88rem}.cp-menu{position:absolute;z-index:30;top:calc(100% + 8px);left:0;min-width:200px;display:grid;gap:2px;padding:6px;border-radius:12px;background:#fff;border:1px solid #dde1e7;box-shadow:0 10px 30px rgba(0,0,0,.25)}.cp-menu[hidden]{display:none}.cp-menu.sobe{top:auto;bottom:calc(100% + 8px)}.cp-menu.dir{left:auto;right:0}.cp-op{display:flex;align-items:center;gap:10px;min-height:44px;padding:8px 12px;border:0;border-radius:8px;background:none;color:#14171c;font:inherit;font-size:.95rem;font-weight:700;text-align:left;text-decoration:none;cursor:pointer}.cp-op:hover,.cp-op:focus-visible{background:#eef1f4;color:#14171c}.cp-op .ic{width:20px;height:20px}.cp-op.zap-op .ic{color:#157a43}.cp-st{position:absolute;z-index:30;top:calc(100% + 8px);left:0;white-space:nowrap;margin:0;padding:6px 12px;border-radius:8px;background:#14171c;color:#fff;font-size:.85rem;font-weight:700}.cp-st:empty{display:none}.barra-lt .cp-st{top:auto;bottom:calc(100% + 8px)}.convite{display:flex;align-items:center;justify-content:space-between;gap:12px 20px;flex-wrap:wrap}.convite .cv-t{margin:0;font-weight:800;font-size:1.1rem}.convite .cv-s{margin:2px 0 0;font-size:.92rem;opacity:.8}.barra-lt>*{flex:none}.barra-lt{width:max-content;max-width:calc(100vw - 12px);box-sizing:border-box;position:fixed;z-index:25;left:50%;bottom:calc(12px + env(safe-area-inset-bottom));display:flex;align-items:center;gap:4px;padding:5px;border-radius:999px;background:#14171c;border:1px solid #3a3f48;box-shadow:0 8px 24px rgba(0,0,0,.35);transform:translate(-50%,0);transition:transform .25s ease,opacity .25s ease}.barra-lt.fora{transform:translate(-50%,calc(100% + 24px));opacity:0;pointer-events:none}.lt-b{display:inline-flex;align-items:center;gap:7px;min-height:44px;padding:8px 14px;border:0;border-radius:999px;background:none;color:#e9ecf1;font:inherit;font-size:.9rem;font-weight:700;text-decoration:none;cursor:pointer}.lt-b:hover{background:#262a31;color:#fff}.lt-b .ic{width:20px;height:20px}.barra-lt .lt-b.curtir{background:none;border:0;color:#e9ecf1;padding:8px 14px}.barra-lt .lt-b.curtir[aria-pressed=true]{color:#ff6b81;background:none}@media (max-width:479px){.lt-b span{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}}.lt-b.curtir[aria-pressed=true] .ic{fill:currentColor}.lt-grupo{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:44px;padding:0 14px 0 6px;border-radius:999px;background:#e3b23c;color:#14171c;font-size:.9rem;font-weight:800;text-decoration:none;white-space:nowrap}.lt-grupo:hover{background:#f0c44f;color:#14171c}.lt-grupo img{width:32px;height:32px;border-radius:8px;display:block}@media (max-width:479px){.barra-lt{gap:2px}.barra-lt .lt-b{padding:8px 10px}.barra-lt .cp{padding:8px 12px}.lt-grupo{padding:0 12px 0 6px}}@media (max-width:399px){.barra-lt:has(.curtir) .cp span{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}.barra-lt:has(.curtir) .cp{padding:8px 14px}}.barra-lt .cp{min-height:44px;padding:8px 16px;font-size:.9rem}body.lt-on .voltar-topo,body.lt-on button.sobe{bottom:calc(76px + env(safe-area-inset-bottom))}@media print{.barra-lt{display:none}}.interacoes{display:grid;gap:14px}.interacoes[hidden]{display:none}.curtir-l{display:flex;align-items:center;gap:12px;flex-wrap:wrap}.curtir{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:8px 18px;border-radius:999px;border:2px solid #b3263e;background:#fff;color:#b3263e;font:inherit;font-weight:800;cursor:pointer}.curtir .ic{width:22px;height:22px}.curtir[aria-pressed=true]{background:#b3263e;color:#fff}.curtir[aria-pressed=true] .ic{fill:currentColor}.curtir .n{font-variant-numeric:tabular-nums}.curtir-dica{font-size:.9rem;color:#5a6270}.interacoes h2{margin:4px 0 0}.coms{list-style:none;margin:0;padding:0;display:grid;gap:10px}.coms li{background:#fff;border:1px solid #dde1e7;border-radius:10px;padding:12px 14px}.com-quem{margin:0;font-size:.92rem}.com-quem time{color:#5a6270;font-size:.8rem;margin-left:6px}.com-txt{margin:4px 0 0;white-space:pre-wrap;color:#14171c}.coms-vazio{margin:0;color:#5a6270}.com-form{display:grid;gap:10px;border-top:1px solid #dde1e7;padding-top:14px}.com-form label{display:grid;gap:4px;font-weight:700;font-size:.9rem;color:#14171c}.com-form small{font-weight:600;color:#5a6270}.com-form input,.com-form textarea{font:inherit;font-size:16px;font-weight:400;padding:10px 12px;border:1px solid #c8cdd5;border-radius:8px;background:#fff;color:#14171c}.com-form textarea{resize:vertical;min-height:110px}.com-form .isca{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}.com-form button{justify-self:start;min-height:44px;padding:10px 20px;border-radius:999px;border:0;background:#14171c;color:#fff;font:inherit;font-weight:800;cursor:pointer}.com-form button:disabled{opacity:.6}.com-aviso{margin:0;font-size:.82rem;color:#5a6270}.com-aviso a{color:#1f5fae}.com-st{margin:0;font-weight:700;font-size:.92rem}.com-st:empty{display:none}.com-st.ok{color:#1b7a45}.com-st.erro{color:#a3223a}:where(html){scroll-padding-top:calc(var(--nav-h,49px) + 12px)}.nav{position:sticky;top:0;z-index:20}body .abas,body .barra-f,body .ctrl{top:var(--nav-h,49px)}.marca img.logo{width:auto;height:48px;border-radius:0}@media (max-width:480px){.marca img.logo{height:40px}}.nav .casa{display:flex;align-items:center;justify-content:center;min-width:44px}.nav .casa .ic{width:20px;height:20px}@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.card:hover,.jogo:hover .capa img,.jogo:active .capa,.zap:active,.post-btn:active,.btn-filtro:hover,.btn-filtro:active,.ver:active{transform:none!important}}.in{max-width:1180px;margin:0 auto;padding-left:16px;padding-right:16px}.ic{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round;flex:none}.bar{border-bottom:1px solid var(--line);background:#000;color:var(--ink)}.bar .in{display:flex;align-items:center;gap:12px;padding-top:8px;padding-bottom:8px}.bar a{color:inherit;text-decoration:none;font-weight:600;font-size:.95rem}.marca img{display:block;width:84px;border-radius:6px}.bar .ig{margin-left:auto;display:flex;align-items:center;gap:6px;padding:6px 10px;border-radius:6px}.bar .ig:hover{color:var(--gold)}.bar .zap-mini{display:flex;align-items:center;gap:6px;padding:6px 10px;border-radius:6px;background:#157a43;color:#fff}.nav ul{padding-left:16px;padding-right:16px}.nav ul li{list-style:none}@media (max-width:700px){.bar .ig span,.bar .zap-mini span{display:none}}footer{font-size:.9rem}footer .in{max-width:1180px;display:flex;flex-wrap:wrap;gap:6px 16px;padding-top:20px;padding-bottom:28px}footer a{color:var(--muted);text-decoration:none}footer a:hover{color:var(--gold)}</style>
+<style id="guia-extra">
+/* faixa de progresso, presa logo abaixo do menu */
+.guia-prog{position:sticky;top:var(--nav-h,45px);z-index:15;background:var(--panel);border-bottom:1px solid var(--line)}
+.guia-prog a{display:flex;align-items:center;gap:10px;max-width:760px;margin:0 auto;padding:9px 16px;color:var(--ink);text-decoration:none;font-size:.86rem;font-weight:700;min-height:40px}
+.guia-prog .gp-r{flex:none;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--gold)}
+.guia-prog .gp-t{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.guia-prog .gp-i{margin-left:auto;flex:none;font-size:.78rem;color:var(--muted);font-weight:600}
+.guia-prog .gp-b{position:absolute;left:0;right:0;bottom:-1px;height:3px;background:var(--gold);transform-origin:0 50%;transform:scaleX(0)}
+html{scroll-padding-top:calc(var(--nav-h,45px) + 56px)}
+/* legenda dos blocos: pontos de cor em vez de pílulas */
+.legenda{gap:6px 16px}
+.legenda span{position:relative;background:none;color:var(--muted);box-shadow:none!important;padding:0 0 0 16px;font-size:.8rem;letter-spacing:0}
+.legenda span::before{content:"";position:absolute;left:0;top:.32em;width:10px;height:10px;border-radius:3px;background:var(--paper)}
+.legenda .l2::before{background:var(--ok)}.legenda .l3::before{background:var(--gold)}.legenda .l4::before{background:var(--ouro-ink)}
+/* índice numerado */
+.indice ol{counter-reset:it}.indice li{counter-increment:it}
+.indice a{display:flex;gap:10px;align-items:baseline;min-height:40px;padding:9px 0}
+.indice a::before{content:counter(it);flex:none;width:1.6em;font-size:.8rem;font-weight:800;color:var(--ouro-ink);font-variant-numeric:tabular-nums}
+.nota-pe{color:var(--muted);font-size:.85rem;padding:4px 2px 0}
+/* endereços longos (fontes) quebram em vez de alargar a página */
+.sec a,.sec li,.sec p{overflow-wrap:anywhere}
+/* títulos das etapas com mais respiro */
+.sec{scroll-margin-top:calc(var(--nav-h,45px) + 56px)}
+@media (min-width:601px){.sec{padding:24px 28px}}
+/* tabelas: fichas no celular (menos as grades de células curtas, que ficam tabela e centralizadas) */
+.tab table.grade th,.tab table.grade td{text-align:center;padding:7px 6px}
+@media (max-width:600px){
+ .tab:not(:has(.grade)){border:0;background:none;overflow:visible;border-radius:0}
+ .tab:not(:has(.grade)) table,.tab:not(:has(.grade)) tbody,.tab:not(:has(.grade)) tr,.tab:not(:has(.grade)) td{display:block}
+ .tab:not(:has(.grade)) thead{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+ .tab:not(:has(.grade)) tr{background:#fff;border:1px solid var(--paper-line);border-radius:8px;padding:10px 12px;margin-bottom:8px}
+ .tab:not(:has(.grade)) td{border:0;padding:3px 0;display:grid;grid-template-columns:6.5em minmax(0,1fr);gap:8px}
+ .tab:not(:has(.grade)) td::before{content:attr(data-label);font-size:.7rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--paper-muted);padding-top:3px}
+ .tab:not(:has(.grade)) td:empty{display:none}
+ .tab:not(:has(.grade)) td:first-child{display:block;font-weight:800;color:var(--paper-ink);padding-bottom:4px}
+ .tab:not(:has(.grade)) td:first-child::before{display:none}
+}
+</style>
+</head>
+<body>
+<!--moldura--><a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<header class="bar" id="topo"><div class="in">
+ <a class="marca" href="../../"><img class="logo" src="../../marca/logo-eb-104.webp" srcset="../../marca/logo-eb-52.webp 157w, ../../marca/logo-eb-104.webp 314w, ../../marca/logo-eb-156.webp 472w" sizes="(max-width: 480px) 121px, 145px" width="157" height="52" alt="Elite Board Gamers: página inicial"></a>
+ <a class="ig" href="https://www.instagram.com/eliteboardgamers/" target="_blank" rel="noopener" aria-label="Instagram @eliteboardgamers"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6" fill="currentColor"/></svg><span>@eliteboardgamers</span></a>
+ <a class="zap-mini" href="https://chat.whatsapp.com/IgQQkJdSkzHBaEq3UwFeAo" target="_blank" rel="noopener" aria-label="Grupo do WhatsApp"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8.4 19l-4.4 1Z"/><path d="M9.2 8.6c.3-.5.8-.5 1-.1l.7 1.5c.1.3 0 .6-.2.8l-.4.4c.5 1.1 1.4 2 2.5 2.5l.4-.4c.2-.2.5-.3.8-.2l1.5.7c.4.2.4.7-.1 1-.7.5-1.6.6-2.4.3a7 7 0 0 1-4.2-4.2c-.3-.8-.2-1.7.4-2.3Z"/></svg><span>Grupo do WhatsApp</span></a>
+ <button type="button" class="busca-btn" aria-label="Buscar no site" aria-haspopup="dialog" aria-keyshortcuts="/ Control+K" hidden><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></button>
+</div></header>
+<script>(()=>{const b=document.querySelector('.busca-btn');let c;b.hidden=false;const a=()=>{c=c||new Promise((r,j)=>{const s=document.createElement('script');s.src='../../busca.js';s.onload=r;s.onerror=()=>{c=null;j()};document.head.append(s)});c.then(()=>abrirBusca('../../'),()=>{})};b.addEventListener('click',a);addEventListener('keydown',e=>{const t=e.target,ed=t.isContentEditable||/^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName);if((e.key==='/'&&!ed&&!e.ctrlKey&&!e.metaKey)||((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k')){e.preventDefault();a()}})})()</script>
+<nav class="nav" aria-label="Seções do site"><ul class="in"><li><a class="casa" href="../../" aria-label="Página inicial"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 9.5V20h13V9.5"/><path d="M10 20v-5.5h4V20"/></svg></a></li><li><a href="../../noticias/">Notícias</a></li><li><a href="../../resenhas/">Resenhas</a></li><li><a href="../../como-jogar/" aria-current="true">Como jogar</a></li><li><a href="../../lancamentos/">Lançamentos</a></li><li><a href="../../consulta/">Consulta Golden Geek</a></li></ul></nav>
+<script>(()=>{const n=document.querySelector('.nav'),h=()=>document.documentElement.style.setProperty('--nav-h',n.offsetHeight+'px');h();addEventListener('resize',h);addEventListener('load',h)})()</script>
+<div class="guia-prog"><a href="#neste-guia"><span class="gp-r">Guia</span><span class="gp-t">Neste guia</span><span class="gp-i">Índice</span></a><span class="gp-b" aria-hidden="true"></span></div><!--/moldura-->
+
+<main id="conteudo" class="gut"><div class="nota">
+  <nav class="trilha" aria-label="Trilha de navegação"><ol><li><a href="../../">Início</a></li><li><a href="../">Como jogar</a></li><li aria-current="page">Azul</li></ol></nav>
+
+  <article class="bloco">
+    <span class="num-l">Abstrato · Família</span>
+    <h1>Como jogar Azul</h1>
+    <p class="meta-e"><span>Para quem nunca jogou</span><span>2 a 4 jogadores</span><span>30 a 45 min</span><span>14+</span><span>Edição Galápagos</span></p>
+    <p class="meta"><time datetime="2026-10-31">31 de outubro de 2026</time> · Redação Elite Boardgamers</p>
+  </article>
+
+  <section class="bloco r1" aria-label="Resumo em 1 minuto">
+    <span class="kick">Resumo em 1 minuto</span>
+    <p class="resp">Você pega azulejos de uma cor nos expositores, completa as fileiras de modelo do seu tabuleiro para levá-los à parede e vence quem somar mais pontos quando alguém fechar uma linha horizontal.</p>
+    <ul><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.5l4.5 4.5L19.5 6.5"/></svg><span>Na sua vez, você leva todos os azulejos de uma cor de um expositor ou do centro, e tudo vai para uma única fileira de modelo.</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.5l4.5 4.5L19.5 6.5"/></svg><span>O que não cabe cai na fileira do chão, que tira de 1 a 14 pontos no fim da rodada.</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.5l4.5 4.5L19.5 6.5"/></svg><span>Cada azulejo na parede vale 1 ponto sozinho ou o tamanho das sequências que forma; no fim, linhas, colunas e cores completas dão 2, 7 e 10 pontos.</span></li></ul>
+    <p class="pe"><span><b>Como você aprende:</b> 4 etapas, da mesa montada à contagem de pontos</span><span><b>Leitura do essencial:</b> cerca de 8 min</span></p>
+    <p class="legenda-f"><b>À vista, só o essencial para jogar.</b> O que abre com <span class="mais-i">+</span> é explicação, exemplo, exercício ou regra de caso especial: abra quando precisar.</p>
+  </section>
+
+<section class="bloco sec rapido" id="comece-a-jogar-em-4-minutos"><h2><span class="num"></span>Comece a jogar em 4 minutos</h2>
+<p><strong>Meta:</strong> em 4 minutos de leitura, montar a mesa e jogar o seu primeiro turno sem abrir o manual.</p>
+<h3>A ideia do jogo</h3>
+<p>Você decora uma parede com <strong>azulejos</strong>. Na sua vez, pega todos os azulejos de uma cor num dos <strong>expositores de fábrica</strong> e os guarda numa das cinco <strong>fileiras de modelo</strong> do seu tabuleiro. No fim da rodada, cada fileira de modelo cheia manda um azulejo para a parede e rende pontos; o que você pegou e não coube cai na <strong>fileira do chão</strong> e tira pontos.</p>
+<h3>Monte a mesa</h3>
+<p>Na ordem. O marcado <em>(depois)</em> se monta já e se usa mais tarde.</p>
+<ol><li>Cada jogador pega um tabuleiro de jogador, todos com a parede colorida para cima. O lado cinza é uma variante <em>(depois)</em>.</li><li>Cada um põe o seu marcador de pontuação no espaço 0 da trilha de pontuação, a grade numerada no alto do tabuleiro.</li><li>Ponha expositores de fábrica em círculo no meio da mesa: 5 com 2 jogadores, 7 com 3, 9 com 4. O espaço vazio no meio do círculo é o centro da mesa.</li><li>Ponha os 100 azulejos (20 de cada uma das 5 cores) no saco.</li><li>Quem visitou Portugal mais recentemente pega o marcador de primeiro jogador e enche cada expositor com exatamente 4 azulejos tirados do saco sem olhar.</li><li>O que sobrou (tabuleiros, marcadores, expositores) volta para a caixa. A tampa da caixa fica à mão: ela guarda os azulejos descartados <em>(depois)</em>.</li></ol>
+<h3>Seu primeiro turno</h3>
+<p>O primeiro jogador põe o marcador de primeiro jogador no centro da mesa e joga. A vez segue no sentido horário <span class="pg">p.&nbsp;3</span>.</p>
+<ol><li><strong>Pegue</strong> todos os azulejos de uma mesma cor de um expositor; os que sobram nele vão para o centro da mesa <span class="pg">p.&nbsp;3</span>.</li><li><strong>Ou pegue</strong> todos os azulejos de uma mesma cor do centro da mesa. Se for o primeiro da rodada a pegar do centro, leve também o marcador de primeiro jogador e ponha-o no espaço livre mais à esquerda da sua fileira do chão <span class="pg">p.&nbsp;3</span>.</li><li><strong>Guarde</strong> todos numa só fileira de modelo, da direita para a esquerda. A primeira tem 1 espaço, a quinta tem 5. Uma fileira de modelo só aceita uma cor <span class="pg">p.&nbsp;3</span>.</li><li><strong>O que não couber</strong> vai para a fileira do chão, da esquerda para a direita. Você também pode mandar azulejos para o chão por escolha <span class="pg">p.&nbsp;3 e 4</span>.</li></ol>
+<p>Pegar é obrigatório: ninguém passa a vez. A rodada continua até não sobrar azulejo em nenhum expositor nem no centro <span class="pg">p.&nbsp;3 e 4</span>.</p>
+<aside class="call resolvido"><p class="rot">Tarefa · exemplo resolvido</p><p><strong>Exemplo resolvido.</strong> Partida de 2 jogadores. Ana começa. Um expositor tem 2 azuis, 1 amarelo e 1 preto. Ana pega os 2 azuis e manda o amarelo e o preto para o centro. Ela guarda os azuis na segunda fileira de modelo, que tem 2 espaços: a fileira fica cheia e nada cai no chão.</p></aside>
+<aside class="call complete"><p class="rot">Tarefa · complete</p><p><strong>Complete.</strong> Agora é Bruno. Outro expositor tem 3 vermelhos e 1 branco. Ele pega os 3 vermelhos; o branco vai para o centro. Em quais fileiras de modelo os 3 cabem sem nada cair no chão? E se ele escolher a primeira fileira?</p></aside>
+<aside class="call suavez"><p class="rot">Tarefa · sua vez</p><p><strong>Agora a sua mesa.</strong> Antes de pegar: que cor você quer, e de onde? Quantos azulejos vêm? Em que fileira de modelo cabem todos? O que vai para o centro? Se pegar do centro, você é o primeiro a fazer isso nesta rodada?</p></aside>
+<details class="respostas"><summary>Resposta do Complete: mostrar</summary><div><p>cabem na terceira (que fica cheia), na quarta ou na quinta. Na primeira, entra 1 vermelho e os outros 2 vão para o chão.</p></div></details>
+<h3>Ainda não precisa saber</h3>
+<p>Quando os azulejos acabam, a rodada passa para o revestimento da parede, com a pontuação: <a href="#etapa-3-revestir-a-parede-e-pontuar">etapa 3</a>. A regra que proíbe guardar uma cor que já está na mesma linha da parede só muda alguma coisa a partir da segunda rodada: <a href="#etapa-2-pegar-azulejos">etapa 2</a>. Fim da partida e bônus: <a href="#etapa-4-o-fim-da-partida-e-os-bonus">etapa 4</a>.</p>
+<h3>Como a partida acaba</h3>
+<p>A partida termina no fim da rodada em que alguém completa uma fileira horizontal de 5 azulejos na parede. Aí entram bônus por fileira horizontal, fileira vertical e cor completas, e vence quem tiver mais pontos <span class="pg">p.&nbsp;6</span>.</p>
+<aside class="call atencao"><p class="rot">Atenção</p><p><strong>Os três erros mais caros.</strong> Todos os azulejos da cor escolhida vêm juntos: não dá para pegar só uma parte. Tudo o que você pegou vai para uma única fileira de modelo, e o excesso cai no chão. O marcador de primeiro jogador também conta como penalidade na fileira do chão.</p></aside>
+</section>
+  <nav class="bloco indice" id="neste-guia" aria-label="Neste guia"><h2>Neste guia</h2><ol><li><a href="#comece-a-jogar-em-4-minutos">Comece a jogar em 4 minutos</a></li><li><a href="#antes-de-tudo-o-que-e-este-jogo">Antes de tudo: o que é este jogo</a> <small>(opcional)</small></li><li><a href="#como-este-guia-ensina">Como este guia ensina</a> <small>(opcional)</small></li><li><a href="#etapa-1-montar-a-mesa">Etapa 1: montar a mesa</a></li><li><a href="#etapa-2-pegar-azulejos">Etapa 2: pegar azulejos</a></li><li><a href="#etapa-3-revestir-a-parede-e-pontuar">Etapa 3: revestir a parede e pontuar</a></li><li><a href="#etapa-4-o-fim-da-partida-e-os-bonus">Etapa 4: o fim da partida e os bônus</a></li><li><a href="#situacoes-especiais">Situações especiais</a> <small>(opcional)</small></li><li><a href="#avaliacao-final">Avaliação final</a> <small>(opcional)</small></li><li><a href="#para-consultar-durante-a-partida">Para consultar durante a partida</a></li><li><a href="#fontes">Fontes</a></li></ol></nav>
+
+<section class="bloco sec opc" id="antes-de-tudo-o-que-e-este-jogo"><h2><span class="num">0</span>Antes de tudo: o que é este jogo<span class="tag-opc">Opcional</span></h2>
+<details class="dobra sec-opc"><summary>Abrir esta seção</summary><p>Você é um artista que assenta azulejos nas paredes de um palácio. Cada jogador tem a sua parede, uma grade de 5 por 5 desenhada no tabuleiro, com o lugar de cada cor já marcado. Os azulejos chegam por um mercado comum, os <strong>expositores de fábrica</strong>, e todos pegam do mesmo lugar. Vence quem tiver mais pontos quando a partida acabar <span class="pg">p.&nbsp;2, 3 e 6</span>.</p>
+<p>A parede não recebe azulejos direto. Primeiro você junta azulejos de uma cor numa das cinco <strong>fileiras de modelo</strong>, que guardam de 1 a 5 azulejos. Só quando uma delas está cheia, no fim da rodada, um azulejo passa para a parede e rende pontos <span class="pg">p.&nbsp;3 e 4</span>.</p>
+<p>O que torna isso difícil é que você não escolhe quantos azulejos levar: leva <strong>todos</strong> os de uma cor. A sobra cai na <strong>fileira do chão</strong> e custa pontos. E o que você deixa para trás vai para o centro da mesa, onde outro jogador pode aproveitar, ou ser obrigado a levar o que não quer <span class="pg">p.&nbsp;3 e 4</span>.</p>
+<p>Duas ideias sustentam o resto:</p>
+<ul><li><strong>Azulejo ligado vale mais.</strong> Sozinho na parede, um azulejo vale 1 ponto. Encostado em outros, vale o tamanho das sequências que forma com eles, na linha e na coluna <span class="pg">p.&nbsp;5</span>.</li><li><strong>A partida acaba quando alguém fecha uma linha.</strong> Quando um jogador completa uma fileira horizontal da parede, aquela rodada é a última <span class="pg">p.&nbsp;6</span>.</li></ul></details>
+</section>
+<section class="bloco sec opc" id="como-este-guia-ensina"><h2><span class="num">1</span>Como este guia ensina<span class="tag-opc">Opcional</span></h2>
+<details class="dobra sec-opc"><summary>Abrir esta seção</summary><p>O guia tem quatro etapas, cada uma uma parte real da partida: montar a mesa, pegar azulejos, revestir a parede e pontuar, e fechar a partida com os bônus. Em cada etapa vêm, nesta ordem: <strong>Para entender</strong> (como aquela parte funciona e por quê), <strong>Passo a passo</strong> (as regras exatas), três tarefas com ajuda decrescente (um <strong>exemplo resolvido</strong>, uma tarefa para <strong>completar</strong> e uma <strong>sua vez</strong>, sem ajuda) e um <strong>treino rápido</strong> para o que precisa ficar automático. As respostas ficam escondidas no fim de cada etapa: tente antes de abrir. No final, uma avaliação curta diz o que reler, e uma folha de consulta vai para a mesa.</p></details>
+</section>
+<section class="bloco sec" id="etapa-1-montar-a-mesa"><h2><span class="num">2</span>Etapa 1: montar a mesa</h2>
+<details class="dobra entender"><summary>Por que funciona assim</summary><aside class="call entender"><p>A caixa tem poucas peças, e cada uma tem uma função clara.</p>
+<p><strong>O tabuleiro de jogador</strong> tem quatro partes <span class="pg">p.&nbsp;2</span>. No alto, a <strong>trilha de pontuação</strong>, uma grade numerada até 100 onde anda o seu <strong>marcador de pontuação</strong>. À esquerda, as cinco <strong>fileiras de modelo</strong>, em escada, de 1 a 5 espaços. À direita, a <strong>parede</strong>, com 25 espaços em 5 linhas e 5 colunas. Embaixo, a <strong>fileira do chão</strong>, com 7 espaços.</p>
+<p><strong>A parede colorida</strong> mostra onde cada cor vai. Cada linha tem as 5 cores uma vez, e cada coluna também; de uma linha para a de baixo, o desenho desliza uma casa para a direita (ilustração da p. 2). Você não escolhe a casa: o azulejo vai sempre para o espaço da sua cor, na linha da fileira de modelo de onde saiu <span class="pg">p.&nbsp;4 e 5</span>.</p>
+<p><strong>Os azulejos</strong> são 100, 20 de cada cor <span class="pg">p.&nbsp;2</span>. O manual nomeia quatro cores: azul, amarelo, vermelho e preto. Este guia chama a quinta de <strong>branca</strong>, pelo fundo branco com desenho turquesa.</p>
+<p><strong>Os expositores de fábrica</strong> são os discos onde aparecem 4 azulejos por rodada. O <strong>centro da mesa</strong>, no meio do círculo, recebe as sobras. O <strong>marcador de primeiro jogador</strong> é uma peça com o número 1. A <strong>tampa da caixa</strong> guarda os azulejos descartados até o saco esvaziar <span class="pg">p.&nbsp;2, 3 e 5</span>.</p></aside></details>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Preparação</strong> <span class="pg">p.&nbsp;2</span>. É igual para 2, 3 ou 4 jogadores, salvo no passo 3.</p>
+<ol><li>Dê a cada jogador um tabuleiro de jogador. Todos usam o lado com a parede colorida. O lado cinza é a Partida Alternativa (veja as Situações especiais), e todos precisam usar o mesmo lado.</li><li>Cada jogador põe 1 marcador de pontuação no espaço 0 da sua trilha de pontuação.</li><li>Arrume os expositores de fábrica em círculo ao redor do centro da mesa: 5 numa partida de 2 jogadores, 7 numa de 3 e 9 numa de 4.</li><li>Ponha os 100 azulejos no saco.</li><li>O jogador que visitou Portugal mais recentemente pega o marcador de primeiro jogador e enche cada expositor com exatamente 4 azulejos tirados do saco ao acaso.</li><li>Devolva à caixa os tabuleiros, marcadores de pontuação e expositores que não serão usados.</li></ol></aside>
+<aside class="call atencao"><p class="rot">Atenção</p><p>O marcador de primeiro jogador não fica com quem começa. No início da primeira jogada, essa pessoa o põe no centro da mesa, e ele fica lá até alguém pegar azulejos do centro <span class="pg">p.&nbsp;3</span>.</p></aside>
+
+
+<details class="dobra pratica"><summary>Pratique esta etapa: exercícios com respostas</summary><aside class="call suavez"><p class="rot">Tarefa · sua vez</p><p><strong>Sua vez.</strong> Você vai montar uma partida de 3 jogadores. Responda olhando só o passo a passo:</p>
+<ol><li>Quantos expositores de fábrica vão para a mesa, e quantos voltam para a caixa?</li><li>Quantos azulejos saem do saco na preparação?</li><li>Quem enche os expositores?</li><li>Em que espaço da trilha de pontuação fica cada marcador?</li></ol></aside>
+<details class="respostas"><summary>Respostas da etapa 1: mostrar</summary><div><ol><li>Sete na mesa; dois voltam para a caixa, junto com 1 tabuleiro e 1 marcador de pontuação (passos 3 e 6).</li><li>28: 4 em cada um dos 7 expositores (passo 5).</li><li>Quem pegou o marcador de primeiro jogador (passo 5).</li><li>No 0 (passo 2).</li></ol></div></details></details>
+</section>
+<section class="bloco sec" id="etapa-2-pegar-azulejos"><h2><span class="num">3</span>Etapa 2: pegar azulejos</h2>
+<details class="dobra entender"><summary>Por que funciona assim</summary><aside class="call entender"><p>Cada rodada começa com a <strong>Oferta da fábrica</strong>, a fase em que os jogadores, um de cada vez, pegam azulejos até a mesa esvaziar <span class="pg">p.&nbsp;3</span>. Ninguém passa a vez, e ninguém escolhe quantos leva: leva todos os de uma cor. Por isso a pergunta de cada turno não é só "do que eu preciso?", mas também "quantos vêm junto e onde vou guardá-los?".</p>
+<p>O centro da mesa cresce durante a rodada: cada vez que alguém pega de um expositor, as sobras vão para lá. Perto do fim, ele pode concentrar muitos azulejos de uma cor, e quem pegar essa cor leva todos.</p>
+<p>Ser o primeiro a pegar do centro tem um preço e um prêmio: o marcador de primeiro jogador vai para a sua fileira do chão e tira pontos como um azulejo, mas você começa a próxima rodada <span class="pg">p.&nbsp;3 e 5</span>.</p></aside></details>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>O turno na Oferta da fábrica</strong> <span class="pg">p.&nbsp;3 e 4</span></p>
+<ol><li><strong>Quem começa</strong> põe o marcador de primeiro jogador no centro da mesa e faz o primeiro turno. A vez segue no sentido horário.</li><li><strong>Pegue azulejos</strong> de um destes dois modos, e só de um. Modo a: de um expositor de fábrica, todos os azulejos de uma mesma cor; os que restam nesse expositor vão para o centro da mesa. Modo b: do centro da mesa, todos os azulejos de uma mesma cor; se você for o primeiro da rodada a pegar do centro, pegue também o marcador de primeiro jogador e ponha-o no espaço livre mais à esquerda da sua fileira do chão.</li><li><strong>Escolha uma fileira de modelo</strong> e ponha nela os azulejos, um por um, da direita para a esquerda.</li><li><strong>Uma cor por fileira.</strong> Se a fileira de modelo já tem azulejos, só entram azulejos da mesma cor.</li><li><strong>Cor repetida na parede, não.</strong> Você não pode pôr azulejos de uma cor numa fileira de modelo se a linha correspondente da parede já tem um azulejo dessa cor.</li><li><strong>Excesso.</strong> Com todos os espaços ocupados, a fileira de modelo está completa. O que não coube, e o que você não pode ou não quer pôr numa fileira de modelo, vai para a fileira do chão, da esquerda para a direita. Com os 7 espaços do chão ocupados, os azulejos que ainda caírem vão para a tampa da caixa.</li><li><strong>Fim da fase.</strong> A Oferta da fábrica termina quando não há mais azulejos no centro da mesa nem em nenhum expositor.</li></ol></aside>
+<details class="dobra edicao"><summary>Sobre a edição</summary><aside class="call edicao"><p>No passo 5, o manual brasileiro diz "em todos os turnos subsequentes"; o original diz <em>in all later rounds</em>, "nas rodadas seguintes" <span class="pg">p.&nbsp;4</span>. O resultado é o mesmo: a parede começa vazia e só muda no fim de cada rodada.</p></aside></details>
+<details class="dobra resolvido"><summary>Ver um exemplo resolvido</summary><aside class="call resolvido"><p>Segunda rodada. A parede de Ana tem um amarelo na primeira linha e um preto na terceira. Na quarta fileira de modelo, ela guardou 2 vermelhos na rodada anterior; as outras fileiras de modelo estão vazias. Ana pega 3 amarelos de um expositor. Onde eles podem entrar?</p>
+<ul><li>Primeira fileira: não. A primeira linha da parede já tem amarelo.</li><li>Segunda fileira: sim, mas só cabem 2; o terceiro cai no chão.</li><li>Terceira fileira: sim, e os 3 a completam. O preto da terceira linha da parede é outra cor.</li><li>Quarta fileira: não. Ela já tem vermelho.</li><li>Quinta fileira: sim; ficam 3 dos 5 espaços ocupados.</li><li>Fileira do chão: sim, por escolha, os 3.</li></ul>
+<p>Ana escolhe a terceira fileira, que fica completa sem perder nada. A quinta também não perderia nada agora, mas ainda precisaria de 2 amarelos.</p></aside></details>
+
+
+
+
+<details class="dobra pratica"><summary>Pratique esta etapa: exercícios com respostas</summary><aside class="call complete"><p class="rot">Tarefa · complete</p><p><strong>Complete.</strong> Na mesma rodada, Bruno é o primeiro a pegar do centro: leva os 4 pretos que estão lá. A quarta fileira de modelo dele já tem 1 preto, e a quarta linha da parede não tem preto. A fileira do chão dele está vazia. O marcador de primeiro jogador já foi para o primeiro espaço da fileira do chão. Termine: se Bruno usar a quarta fileira, quantos pretos entram nela, para onde vai o resto e em que espaço do chão ele fica?</p></aside>
+<aside class="call suavez"><p class="rot">Tarefa · sua vez</p><p><strong>Sua vez.</strong> Três situações:</p>
+<ol><li>Você pega 2 vermelhos. Sua terceira fileira de modelo tem 1 amarelo, e a primeira linha da sua parede já tem vermelho. Pode pôr os vermelhos na terceira fileira? E na primeira?</li><li>Sua fileira do chão já tem 6 azulejos, e você manda mais 3 para ela. Onde ficam?</li><li>Todos os expositores estão vazios, mas há 1 azulejo no centro da mesa. A Oferta da fábrica acabou?</li></ol></aside>
+<aside class="call treino"><p class="rot">Treino rápido</p><p><strong>Pode ou não pode?</strong> Para cada caso, diga se os azulejos podem entrar na fileira de modelo citada.</p>
+<p>a) 2 azuis na segunda fileira, que está vazia; a segunda linha da parede não tem azul.</p>
+<p>b) 1 preto na quinta fileira, que já tem 2 pretos; a quinta linha da parede tem preto.</p>
+<p>c) 3 brancos na quarta fileira, que tem 1 amarelo.</p>
+<p>d) 4 vermelhos na primeira fileira, que está vazia; a primeira linha da parede não tem vermelho.</p></aside>
+<details class="respostas"><summary>Respostas da etapa 2: mostrar</summary><div><ul><li><strong>Complete:</strong> entram 3 pretos, que completam a quarta fileira (1 que já estava mais 3). O quarto preto vai para a fileira do chão, no segundo espaço, logo depois do marcador de primeiro jogador <span class="pg">p.&nbsp;3 e 4</span>.</li><li><strong>Sua vez 1:</strong> na terceira, não: ela já tem amarelo. Na primeira, também não: a linha da parede já tem vermelho. Sobram as outras fileiras de modelo ou o chão <span class="pg">p.&nbsp;3 e 4</span>.</li><li><strong>Sua vez 2:</strong> o primeiro ocupa o sétimo espaço; os outros 2 vão para a tampa da caixa <span class="pg">p.&nbsp;4</span>.</li><li><strong>Sua vez 3:</strong> não. A fase só termina quando não há azulejos nos expositores <strong>nem</strong> no centro. Alguém ainda tem de pegar aquele azulejo <span class="pg">p.&nbsp;4</span>.</li><li><strong>Treino a:</strong> pode, e a fileira fica completa. <strong>b:</strong> não pode: a quinta linha da parede já tem preto. Aliás, a situação nem deveria existir, porque os 2 pretos também não poderiam ter entrado ali. <strong>c:</strong> não pode: a fileira já tem outra cor. <strong>d:</strong> pode escolher a primeira fileira, mas só 1 vermelho cabe; os outros 3 vão para o chão.</li></ul></div></details></details>
+</section>
+<section class="bloco sec" id="etapa-3-revestir-a-parede-e-pontuar"><h2><span class="num">4</span>Etapa 3: revestir a parede e pontuar</h2>
+<details class="dobra entender"><summary>Por que funciona assim</summary><aside class="call entender"><p>Quando a mesa esvazia, vem o <strong>Revestimento de parede</strong>, que todos podem fazer ao mesmo tempo, cada um no seu tabuleiro <span class="pg">p.&nbsp;4</span>. É aqui que os pontos aparecem.</p>
+<p>Só as fileiras de modelo completas rendem. De cada uma, <strong>um</strong> azulejo passa para a parede, e os outros vão para a tampa da caixa. Uma fileira incompleta não perde nada: espera a próxima rodada <span class="pg">p.&nbsp;4</span>. Quanto mais longa a fileira, mais azulejos ela consome para render o mesmo único azulejo na parede.</p>
+<p>Os pontos de cada azulejo dependem dos vizinhos que ele já encontra na parede <span class="pg">p.&nbsp;5</span>. Por isso, construir a parede em blocos rende mais que espalhar azulejos, e a ordem em que os azulejos chegam importa.</p></aside></details>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>O Revestimento de parede</strong> <span class="pg">p.&nbsp;4 e 5</span></p>
+<ol><li>Percorra as suas fileiras de modelo <strong>de cima para baixo</strong>.</li><li>Em cada fileira completa, mova o azulejo da extrema direita para o espaço da mesma cor na linha correspondente da parede. Marque os pontos dele <strong>na hora</strong>, antes de passar para a fileira de baixo.</li><li>Fileira incompleta: ignore.</li><li>Depois, tire todos os azulejos das fileiras de modelo que ficaram sem azulejo no espaço da extrema direita e ponha-os na tampa da caixa. Os azulejos das fileiras incompletas ficam no tabuleiro para a próxima rodada.</li><li>Por fim, conte a fileira do chão: cada azulejo tira os pontos impressos logo acima do espaço dele. Ajuste o marcador de pontuação. A pontuação nunca fica abaixo de 0.</li><li>Ponha os azulejos da fileira do chão na tampa da caixa. Se o marcador de primeiro jogador estiver no seu chão, ele conta como um azulejo de penalidade, mas não vai para a tampa: fica à sua frente, e você começa a próxima rodada.</li></ol></aside>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Quantos pontos vale um azulejo</strong> <span class="pg">p.&nbsp;5</span></p>
+<ol><li>Se nenhum azulejo encosta nele, na horizontal ou na vertical: <strong>1 ponto</strong>.</li><li>Se há azulejos ligados a ele na horizontal: conte todos os azulejos dessa linha que formam uma sequência sem buraco com ele, <strong>incluindo ele mesmo</strong>, e ganhe esse número de pontos.</li><li>Se há azulejos ligados a ele na vertical: faça a mesma conta na coluna e some.</li><li>Diagonal não conta. Um azulejo separado por um espaço vazio também não.</li></ol></aside>
+<p><strong>A fileira do chão.</strong> Valores impressos nos 7 espaços, da esquerda para a direita (ilustração da p. 5):</p>
+<div class="tab"><table><thead><tr><th>Espaço</th><th>1º</th><th>2º</th><th>3º</th><th>4º</th><th>5º</th><th>6º</th><th>7º</th></tr></thead><tbody><tr><td data-label="Espaço">Perde</td><td data-label="1º">1</td><td data-label="2º">1</td><td data-label="3º">2</td><td data-label="4º">2</td><td data-label="5º">2</td><td data-label="6º">3</td><td data-label="7º">3</td></tr><tr><td data-label="Espaço">Total acumulado</td><td data-label="1º">1</td><td data-label="2º">2</td><td data-label="3º">4</td><td data-label="4º">6</td><td data-label="5º">8</td><td data-label="6º">11</td><td data-label="7º">14</td></tr></tbody></table></div>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Preparação para a próxima rodada</strong> <span class="pg">p.&nbsp;5</span></p>
+<ol><li>Se ninguém completou uma fileira horizontal de 5 azulejos na parede, a partida continua. Se alguém completou, vá para a etapa 4.</li><li>Quem tem o marcador de primeiro jogador enche cada expositor com 4 azulejos do saco, como na preparação.</li><li>Se o saco esvaziar, ponha nele todos os azulejos da tampa da caixa e continue enchendo os expositores que faltam.</li><li>Se o saco e a tampa esvaziarem, comece a rodada assim mesmo, com expositores incompletos.</li><li>Comece a nova rodada. Quem tem o marcador o põe no centro da mesa e faz o primeiro turno <span class="pg">p.&nbsp;3</span>.</li></ol></aside>
+<details class="dobra resolvido"><summary>Ver um exemplo resolvido</summary><aside class="call resolvido"><p>Fim de uma rodada. A parede de Ana tem, na primeira linha, o azul (coluna 1) e o amarelo (coluna 2); na segunda linha, o amarelo (coluna 3). Nas fileiras de modelo, a primeira está completa com 1 vermelho, a segunda está completa com 2 pretos, e a terceira tem só 2 de 3 azuis. No chão há 2 azulejos.</p>
+<ol><li>Primeira fileira: o vermelho vai para a primeira linha, coluna 3. Na horizontal, forma uma sequência com o azul e o amarelo: 3 pontos. Na vertical, encosta no amarelo de baixo: 2 pontos. Total: <strong>5</strong>.</li><li>Segunda fileira: o preto vai para a segunda linha, coluna 5. Não encosta em nenhum azulejo: <strong>1 ponto</strong>.</li><li>Terceira fileira: incompleta, fica como está.</li><li>Limpeza: o preto que sobrou na segunda fileira vai para a tampa.</li><li>Chão: 1 + 1 = <strong>2 pontos a menos</strong>, e os 2 azulejos vão para a tampa.</li></ol>
+<p>Saldo da rodada: 5 + 1 - 2 = <strong>4 pontos</strong>.</p></aside></details>
+
+
+
+
+<details class="dobra pratica"><summary>Pratique esta etapa: exercícios com respostas</summary><aside class="call complete"><p class="rot">Tarefa · complete</p><p><strong>Complete.</strong> Bruno tem 10 pontos. A parede dele tem só o azul da segunda linha (coluna 2). Nesta rodada, a primeira fileira de modelo dele está completa com 1 azul, e a segunda está completa com 2 brancos. No chão, estão o marcador de primeiro jogador e mais 1 azulejo. O azul vai para a primeira linha, coluna 1, e não encosta em nada: 1 ponto. Termine: o branco vai para a segunda linha, coluna 1. Quantos pontos ele faz? Quanto Bruno perde no chão, e com quantos pontos fica?</p></aside>
+<aside class="call suavez"><p class="rot">Tarefa · sua vez</p><p><strong>Sua vez.</strong> Três situações:</p>
+<ol><li>No exemplo do Complete, o que mudaria se Bruno movesse primeiro o branco e depois o azul? Por que a ordem importa?</li><li>Você tem 3 pontos. Nesta rodada, move um azulejo que não encosta em nada e tem 4 azulejos no chão. Com quantos pontos fica?</li><li>O marcador de primeiro jogador estava no seu chão. Para onde ele vai no fim da fase, e o que isso muda?</li></ol></aside>
+<aside class="call treino"><p class="rot">Treino rápido</p><p><strong>Quantos pontos?</strong> Diga os pontos do azulejo novo.</p>
+<p>a) Nenhum vizinho.</p>
+<p>b) Dois azulejos seguidos à esquerda dele, na mesma linha; nada em cima nem embaixo.</p>
+<p>c) Um azulejo à esquerda, um em cima e um embaixo.</p>
+<p>d) Na mesma linha, um azulejo dois espaços à esquerda, com um espaço vazio entre eles.</p>
+<p>e) Um azulejo à esquerda, um à direita, um embaixo e dois em cima, em sequência.</p>
+<p>f) Quanto se perde com 5 azulejos no chão? E com 9 azulejos caídos na mesma rodada?</p></aside>
+<details class="respostas"><summary>Respostas da etapa 3: mostrar</summary><div><ul><li><strong>Complete:</strong> o branco encosta no azul de cima (vertical: 2) e no azul da direita (horizontal: 2): <strong>4 pontos</strong>. No chão, marcador e azulejo ocupam os dois primeiros espaços: 1 + 1 = <strong>2</strong>. Bruno fica com 10 + 1 + 4 - 2 = <strong>13</strong>. O marcador vai para a frente dele, e ele começa a próxima rodada <span class="pg">p.&nbsp;4 e 5</span>.</li><li><strong>Sua vez 1:</strong> o branco faria só 2 (horizontal com o azul da coluna 2, sem ninguém em cima) e o azul depois faria 2 (vertical com o branco): 4 em vez de 5. A ordem muda os pontos, e o manual manda seguir de cima para baixo <span class="pg">p.&nbsp;4</span>.</li><li><strong>Sua vez 2:</strong> 3 + 1 = 4; o chão tira 1 + 1 + 2 + 2 = 6. A conta daria -2, mas a pontuação nunca fica abaixo de 0: você fica com <strong>0</strong> <span class="pg">p.&nbsp;5</span>.</li><li><strong>Sua vez 3:</strong> ele conta como penalidade, mas não vai para a tampa. Fica à sua frente, e você enche os expositores e começa a próxima rodada <span class="pg">p.&nbsp;5</span>.</li><li><strong>Treino a:</strong> 1. <strong>b:</strong> 3 (os dois e ele). <strong>c:</strong> 2 na horizontal e 3 na vertical: 5. <strong>d:</strong> 1; o espaço vazio quebra a sequência. <strong>e:</strong> 3 na horizontal e 4 na vertical: 7. <strong>f:</strong> 1 + 1 + 2 + 2 + 2 = 8. Com 9, só 7 cabem no chão: 14 pontos, e os 2 restantes vão para a tampa sem custo extra <span class="pg">p.&nbsp;4 e 5</span>.</li></ul></div></details></details>
+</section>
+<section class="bloco sec" id="etapa-4-o-fim-da-partida-e-os-bonus"><h2><span class="num">5</span>Etapa 4: o fim da partida e os bônus</h2>
+<details class="dobra entender"><summary>Por que funciona assim</summary><aside class="call entender"><p>Ninguém sabe de antemão quantas rodadas a partida terá. Ela acaba no fim da rodada em que alguém completa uma fileira horizontal da parede <span class="pg">p.&nbsp;6</span>.</p>
+<p>Os bônus de fim de partida pagam três desenhos diferentes na parede: linhas, colunas e cores completas. Uma linha completa paga pouco; uma coluna e uma cor completas pagam bem mais, e as duas exigem azulejos em todas as cinco linhas da parede <span class="pg">p.&nbsp;6</span>.</p></aside></details>
+<details class="dobra dica"><summary>Dica</summary><aside class="call dica"><p>Como é a primeira linha completa que encerra a partida, quem está na frente no placar costuma ganhar ao fechar uma linha cedo, e quem está atrás, ao adiar. É uma leitura da regra, não uma obrigação: olhe as paredes dos outros antes de decidir.</p></aside></details>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>O fim da partida</strong> <span class="pg">p.&nbsp;5 e 6</span></p>
+<ol><li>Jogue a rodada normalmente, até o fim do Revestimento de parede, incluindo a fileira do chão.</li><li>Se pelo menos um jogador completou pelo menos uma fileira horizontal de 5 azulejos na parede, a partida acaba aqui. Não há Preparação para a próxima rodada.</li><li>Cada jogador ganha os bônus: <strong>2 pontos</strong> por fileira horizontal completa da parede, <strong>7 pontos</strong> por fileira vertical completa da parede e <strong>10 pontos</strong> por cor com os 5 azulejos na parede.</li><li>Vence quem tem mais pontos na trilha de pontuação.</li><li><strong>Empate:</strong> vence quem tem mais fileiras horizontais completas. Se continuar empatado, a vitória é dividida.</li></ol></aside>
+<details class="dobra resolvido"><summary>Ver um exemplo resolvido</summary><aside class="call resolvido"><p>Última rodada. Ana tem 52 pontos. A parede dela está assim antes do Revestimento (X é azulejo):</p>
+<div class="tab"><table class="grade"><thead><tr><th>Linha</th><th>Col. 1</th><th>Col. 2</th><th>Col. 3</th><th>Col. 4</th><th>Col. 5</th></tr></thead><tbody><tr><td>1</td><td>X</td><td>X</td><td>X</td><td>X</td><td>X</td></tr><tr><td>2</td><td>X</td><td>X</td><td>X</td><td></td><td>X</td></tr><tr><td>3</td><td>X</td><td>X</td><td>X</td><td></td><td></td></tr><tr><td>4</td><td>X</td><td>X</td><td></td><td></td><td></td></tr><tr><td>5</td><td>X</td><td></td><td></td><td></td><td></td></tr></tbody></table></div>
+<p>A segunda fileira de modelo dela está completa com 2 vermelhos, e o espaço vermelho da segunda linha da parede é a coluna 4. Há 1 azulejo no chão.</p>
+<ol><li>O vermelho entra na segunda linha, coluna 4. Na horizontal, completa a linha: 5 pontos. Na vertical, encosta no azulejo de cima: 2 pontos. Total: <strong>7</strong>. Ana vai a 59.</li><li>O chão tira <strong>1</strong>: 58.</li><li>A segunda linha está completa: a partida acaba no fim desta fase.</li><li>Bônus: 2 fileiras horizontais completas (2 x 2 = 4) e 1 fileira vertical completa, a coluna 1 (7). Nenhuma cor tem os 5 azulejos. Total de bônus: <strong>11</strong>.</li></ol>
+<p>Ana termina com 58 + 11 = <strong>69 pontos</strong>.</p></aside></details>
+
+
+
+
+<details class="dobra pratica"><summary>Pratique esta etapa: exercícios com respostas</summary><aside class="call complete"><p class="rot">Tarefa · complete</p><p><strong>Complete.</strong> Bruno termina o Revestimento com 48 pontos. A parede dele tem 1 fileira horizontal completa, nenhuma vertical, e os 5 pretos e os 5 vermelhos colocados. Já somamos a linha: 48 + 2 = 50. Termine a conta e diga quem vence.</p></aside>
+<aside class="call suavez"><p class="rot">Tarefa · sua vez</p><p><strong>Sua vez.</strong> Duas situações:</p>
+<ol><li>Na última rodada, você tem 3 pontos depois de mover os azulejos e 3 azulejos no chão. Sua parede tem 1 fileira horizontal e 1 vertical completas. Com quantos pontos termina?</li><li>Ana e Bruno terminam com 60 pontos. Ana tem 2 fileiras horizontais completas; Bruno, 1. Quem vence? E se os dois tivessem 1?</li></ol></aside>
+<aside class="call treino"><p class="rot">Treino rápido</p><p><strong>Quanto de bônus?</strong></p>
+<p>a) 1 fileira horizontal completa e nada mais.</p>
+<p>b) 2 fileiras horizontais e 2 verticais.</p>
+<p>c) 1 fileira horizontal e 1 cor completa.</p></aside>
+<details class="respostas"><summary>Respostas da etapa 4: mostrar</summary><div><ul><li><strong>Complete:</strong> duas cores completas valem 2 x 10 = 20. Bruno termina com 50 + 20 = <strong>70</strong> e vence Ana, que fez 69 <span class="pg">p.&nbsp;6</span>.</li><li><strong>Sua vez 1:</strong> o chão tira 1 + 1 + 2 = 4, mas a pontuação para em 0. Depois vêm os bônus: 2 + 7 = 9. Você termina com <strong>9</strong> <span class="pg">p.&nbsp;5 e 6</span>.</li><li><strong>Sua vez 2:</strong> Ana vence, com mais fileiras horizontais completas. Com 1 cada, a vitória é dividida <span class="pg">p.&nbsp;6</span>.</li><li><strong>Treino a:</strong> 2. <strong>b:</strong> 4 + 14 = 18. <strong>c:</strong> 2 + 10 = 12.</li></ul></div></details></details>
+</section>
+<section class="bloco sec opc" id="situacoes-especiais"><h2><span class="num">6</span>Situações especiais<span class="tag-opc">Opcional</span></h2>
+<details class="dobra sec-opc"><summary>Abrir esta seção</summary><p><strong>Mandar azulejos para o chão por escolha.</strong> Você pode pôr no chão azulejos que caberiam numa fileira de modelo; o exemplo da p. 4 mostra isso <span class="pg">p.&nbsp;4</span>.</p>
+<details class="dobra dica"><summary>Dica</summary><aside class="call dica"><p>Perder 1 ou 2 pontos no chão pode sair mais barato do que ocupar uma fileira de modelo longa com uma cor que você não vai conseguir completar. Compare antes de escolher.</p></aside></details>
+<p><strong>Fileira de modelo que já está cheia.</strong> Uma fileira completa no meio da rodada continua completa até o Revestimento. Se você puser nela mais azulejos da mesma cor, todos são excesso e vão para o chão <span class="pg">p.&nbsp;3</span>.</p>
+<details class="dobra edicao"><summary>Sobre a edição</summary><aside class="call edicao"><p>O manual não diz o que acontece quando o primeiro jogador a pegar do centro já tem os 7 espaços do chão ocupados: ele manda pôr o marcador "no espaço livre mais à esquerda", e não há espaço livre <span class="pg">p.&nbsp;3</span>. Também não diz quem começa a rodada seguinte se ninguém pegar do centro, o que só acontece se nenhum expositor deixar sobras. Os dois casos são raros. Combine com a mesa antes de jogar.</p></aside></details>
+<p><strong>Saco vazio.</strong> Os azulejos da tampa voltam para o saco; com saco e tampa vazios, a rodada começa com expositores incompletos <span class="pg">p.&nbsp;5</span>. Azulejos da parede nunca voltam ao saco.</p>
+<p><strong>A pontuação não fica negativa.</strong> A fileira do chão pode tirar mais pontos do que você tem; o marcador para no 0 <span class="pg">p.&nbsp;5</span>.</p>
+<details class="dobra edicao"><summary>Sobre a edição</summary><aside class="call edicao"><p>Na Partida Alternativa <span class="pg">p.&nbsp;6</span>, o manual brasileiro chama a fase de "assentamento de azulejos", mas é o mesmo <strong>Revestimento de parede</strong> das outras páginas. O original usa o mesmo nome nos dois lugares (<em>Wall-tiling</em>).</p></aside></details>
+<p><strong>Partida Alternativa (lado cinza).</strong> Com o lado cinza dos tabuleiros, as regras são as mesmas, com uma diferença: ao mover um azulejo para a parede, você escolhe qualquer espaço da linha correspondente. Em compensação, nenhuma cor pode se repetir numa mesma coluna da parede, nem numa mesma linha. Se, no Revestimento, o azulejo da extrema direita de uma fileira de modelo completa não tiver espaço válido, todos os azulejos dessa fileira vão na hora para a fileira do chão <span class="pg">p.&nbsp;6</span>. Todos os jogadores usam o mesmo lado <span class="pg">p.&nbsp;2</span>.</p></details>
+</section>
+<section class="bloco sec opc" id="avaliacao-final"><h2><span class="num">7</span>Avaliação final<span class="tag-opc">Opcional</span></h2>
+<details class="dobra sec-opc"><summary>Abrir esta seção</summary><p>Responda sem consultar. Depois confira e veja o que reler.</p>
+<ol><li>Um expositor tem 2 amarelos, 1 preto e 1 branco. Você quer só 1 amarelo. Pode?</li><li>Você é o primeiro a pegar do centro, e sua fileira do chão já tem 2 azulejos. Em que espaço fica o marcador de primeiro jogador, e quanto ele custa?</li><li>Sua quinta fileira de modelo tem 3 azuis, e a quinta linha da parede já tem azul. Como isso pode estar errado?</li><li>Sua terceira fileira de modelo tem 2 de 3 espaços ocupados no fim da rodada. O que acontece com esses azulejos?</li><li>O azulejo novo tem um vizinho à esquerda, um à direita e um em cima. Quantos pontos faz?</li><li>Você tem 4 pontos e 5 azulejos no chão, e não moveu nenhum azulejo para a parede. Com quanto fica?</li><li>Alguém completou uma fileira horizontal da parede durante o Revestimento. Você ainda conta a sua fileira do chão? Há uma nova rodada?</li><li>Qual bônus vale mais: uma fileira vertical completa ou uma cor completa?</li></ol>
+<details class="respostas"><summary>Respostas da avaliação: mostrar</summary><div><ol><li><strong>Não.</strong> Você leva todos os azulejos da cor escolhida; os outros 2 do expositor vão para o centro (etapa 2).</li><li><strong>No terceiro espaço</strong>, o mais à esquerda que está livre. Ele tira <strong>2 pontos</strong>, como um azulejo naquele espaço (etapas 2 e 3).</li><li><strong>A regra proíbe</strong> pôr na fileira de modelo uma cor que a linha correspondente da parede já tem. Os azuis nunca poderiam ter entrado ali (etapa 2).</li><li><strong>Ficam</strong> no tabuleiro para a próxima rodada; fileira incompleta não perde nada (etapa 3).</li><li><strong>5 pontos</strong>: 3 na horizontal e 2 na vertical (etapa 3).</li><li><strong>0.</strong> O chão tira 8, e a pontuação não fica negativa (etapa 3).</li><li><strong>Sim</strong>, o chão é contado, porque faz parte do Revestimento. <strong>Não</strong> há nova rodada: vêm os bônus (etapa 4).</li><li><strong>A cor completa</strong>, 10 pontos, contra 7 da fileira vertical (etapa 4).</li></ol>
+<aside class="call atencao"><p class="rot">Atenção</p><p><strong>Critério para começar a jogar.</strong> Acertou 7 ou 8? Monte a mesa e jogue, com a folha de consulta ao lado. Errou a 1, a 2 ou a 3, releia a etapa 2. Errou a 4, a 5 ou a 6, a etapa 3. Errou a 7 ou a 8, a etapa 4. Depois refaça só as perguntas que errou.</p></aside></div></details></details>
+</section>
+<section class="bloco sec ref" id="para-consultar-durante-a-partida"><h2><span class="num">8</span>Para consultar durante a partida</h2>
+<p><strong>Preparação:</strong> expositores de fábrica: 5 (2 jogadores), 7 (3), 9 (4), com 4 azulejos cada. Marcadores de pontuação no 0. Quem tem o marcador de primeiro jogador enche os expositores e o põe no centro ao começar.</p>
+<p><strong>Seu turno (Oferta da fábrica)</strong></p>
+<ol><li>Pegue todos os azulejos de uma cor: de um expositor (o resto vai para o centro) ou do centro (o primeiro a pegar do centro leva o marcador para o chão).</li><li>Ponha todos numa só fileira de modelo, da direita para a esquerda.</li><li>Uma cor por fileira de modelo. Nada de cor que a linha da parede já tem.</li><li>Excesso, ou o que você não quer: fileira do chão, da esquerda para a direita. Depois do 7º espaço: tampa da caixa.</li><li>A fase acaba quando expositores <strong>e</strong> centro estão vazios.</li></ol>
+<p><strong>Revestimento de parede</strong></p>
+<ol><li>De cima para baixo: de cada fileira de modelo completa, o azulejo da direita vai para o espaço da sua cor na parede. Pontue na hora.</li><li>Sobras das fileiras completas: tampa. Fileiras incompletas: ficam.</li><li>Chão: perde 1, 1, 2, 2, 2, 3, 3 (máximo 14). Nunca abaixo de 0. Marcador de primeiro jogador: conta, e fica à sua frente.</li></ol>
+<p><strong>Pontos de um azulejo:</strong> sem vizinhos, 1. Com vizinhos: a sequência horizontal, se ele tiver vizinho na linha, mais a vertical, se tiver vizinho na coluna, contando ele nas duas. Diagonal não conta.</p>
+<p><strong>Próxima rodada:</strong> quem tem o marcador enche os expositores. Saco vazio: use a tampa. Tudo vazio: comece assim mesmo.</p>
+<p><strong>Fim:</strong> no fim do Revestimento da rodada em que alguém completou uma fileira horizontal. Bônus: horizontal 2, vertical 7, cor 10. Empate: mais fileiras horizontais completas; persistindo, vitória dividida.</p>
+</section>
+<section class="bloco sec" id="fontes"><h2><span class="num">9</span>Fontes</h2>
+<ul><li>Galápagos. <em>Azul: livro de regras</em> (edição brasileira, arquivo AZU001_regras_v1.0.pdf, 6 páginas, criado em 27/02/2023, tradução de Bárbara Coelho, revisão de Evelyn Trippo e Priscilla Freitas). Biblioteca de Downloads da Galápagos, <a href="https://www.asmodee.com.br/download-library">https://www.asmodee.com.br/download-library</a>. Consultado em 31/10/2026.</li><li>Next Move e Plan B Games. <em>Azul: rulebook</em> (inglês, 6 páginas, 2018). <a href="https://www.nextmove-games.com/en/azul/azul-game/">https://www.nextmove-games.com/en/azul/azul-game/</a>. Consultado em 31/10/2026. Usado para conferir a tradução.</li><li>Galápagos. Página do produto AZU001, <a href="https://www.asmodee.com.br/jogo-de-tabuleiro-azul/produto/AZU001">https://www.asmodee.com.br/jogo-de-tabuleiro-azul/produto/AZU001</a>, e imagem do verso da caixa brasileira (jogadores, duração, idade e componentes). Consultado em 31/10/2026.</li><li>Não foram encontrados FAQ nem errata oficiais até 31/10/2026.</li></ul>
+</section>
+<section class="bloco"><p class="sec-intro">Quer saber se vale a pena antes de jogar? <a href="../../azul/">Leia a nossa resenha de Azul</a>.</p></section>
+<p class="nota-pe">Regras conferidas no manual da edição brasileira (Galápagos, arquivo AZU001_regras_v1.0, de 2023, tradução de Bárbara Coelho) e no manual original em inglês (Next Move e Plan B Games, 2018). As páginas citadas são as do manual brasileiro, que tem a mesma paginação do original.</p>
+</div></main>
+
+<!--rodape--><footer><div class="in">
+ <span>Elite Boardgamers</span><a href="../../noticias/">Notícias</a><a href="../../resenhas/">Resenhas</a><a href="../../como-jogar/">Como jogar</a><a href="../../lancamentos/">Lançamentos</a><a href="../../consulta/">Consulta Golden Geek</a><a href="../../jogos-de-tabuleiro/">Guia de jogos de tabuleiro</a><a href="../../premios/">Prêmios</a><a href="../../politica-editorial/">Política editorial</a>
+ <a href="https://www.instagram.com/eliteboardgamers/" target="_blank" rel="noopener">Instagram @eliteboardgamers</a><a href="https://chat.whatsapp.com/IgQQkJdSkzHBaEq3UwFeAo" target="_blank" rel="noopener">Grupo do WhatsApp</a>
+</div></footer>
+<div class="barra-lt fora" role="region" aria-label="Ações da página"><div class="cpw" data-texto=""><a class="cp" href="https://wa.me/" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="M8.2 10.8l7.6-4.4M8.2 13.2l7.6 4.4"/></svg><span>Compartilhar</span></a><div class="cp-menu" hidden><a class="cp-op zap-op" href="https://wa.me/" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8.4 19l-4.4 1Z"/><path d="M9.2 8.6c.3-.5.8-.5 1-.1l.7 1.5c.1.3 0 .6-.2.8l-.4.4c.5 1.1 1.4 2 2.5 2.5l.4-.4c.2-.2.5-.3.8-.2l1.5.7c.4.2.4.7-.1 1-.7.5-1.6.6-2.4.3a7 7 0 0 1-4.2-4.2c-.3-.8-.2-1.7.4-2.3Z"/></svg>WhatsApp</a><button type="button" class="cp-op"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h8"/></svg>Copiar link</button></div><p class="cp-st" role="status"></p></div><script>(()=>{const pega=c=>({u:c.dataset.url||location.href,t:c.dataset.texto||document.title});
+document.querySelectorAll('.cpw:not(.ok)').forEach(c=>{c.classList.add('ok');const b=c.querySelector('.cp');
+ const n=document.createElement('button');n.type='button';n.className=b.className;n.innerHTML=b.innerHTML;n.setAttribute('aria-expanded','false');b.replaceWith(n)});
+if(window.__cp)return;window.__cp=1;
+const celular=()=>navigator.share&&matchMedia('(pointer:coarse)').matches;
+const fecha=()=>document.querySelectorAll('.cp-menu:not([hidden])').forEach(m=>{m.hidden=true;m.parentNode.querySelector('.cp').setAttribute('aria-expanded','false')});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')fecha()});
+document.addEventListener('click',async ev=>{const c=ev.target.closest('.cpw');if(!c){fecha();return}
+ const {u,t}=pega(c),m=c.querySelector('.cp-menu'),st=c.querySelector('.cp-st'),el=ev.target.closest('.cp,.cp-op');if(!el)return;
+ if(el.classList.contains('cp')){
+  if(celular()){try{await navigator.share({title:document.title,text:t,url:u})}catch(e){}return}
+  const abre=m.hidden;fecha();if(!abre)return;
+  m.querySelector('.zap-op').href='https://wa.me/?text='+encodeURIComponent(t+' '+u);
+  const r=c.getBoundingClientRect();m.classList.toggle('sobe',!!c.closest('.barra-lt')||r.bottom>innerHeight-140);m.classList.toggle('dir',r.left>innerWidth-220);
+  m.hidden=false;el.setAttribute('aria-expanded','true');m.querySelector('.cp-op').focus();return}
+ if(el.classList.contains('zap-op')){fecha();return}
+ fecha();let ok=false;try{await navigator.clipboard.writeText(u);ok=true}catch(e){
+  const i=document.createElement('input');i.value=u;document.body.append(i);i.select();try{ok=document.execCommand('copy')}catch(e2){}i.remove()}
+ st.textContent=ok?'Link copiado!':'Não deu para copiar o link.';clearTimeout(st._t);st._t=setTimeout(()=>st.textContent='',2500);
+ c.querySelector('.cp').focus()})})()</script><a class="lt-grupo" href="https://chat.whatsapp.com/IgQQkJdSkzHBaEq3UwFeAo" target="_blank" rel="noopener" aria-label="Entrar no grupo do WhatsApp da Elite"><img src="/favicon-48.png" width="48" height="48" alt=""><span>Grupo</span></a></div><script>(()=>{const l=document.querySelector('.barra-lt');if(!l)return;const vis=new Set();
+const poe=()=>{const on=scrollY>500&&!vis.size;l.classList.toggle('fora',!on);l.inert=!on;document.body.classList.toggle('lt-on',on)};
+const io=new IntersectionObserver(es=>{es.forEach(e=>e.isIntersecting?vis.add(e.target):vis.delete(e.target));poe()});
+document.querySelectorAll('.convite,footer').forEach(x=>io.observe(x));addEventListener('scroll',poe,{passive:true});poe()})()</script>
+<script>(()=>{const g=document.querySelector('.guia-prog');if(!g)return;const t=g.querySelector('.gp-t'),b=g.querySelector('.gp-b');
+const secs=[...document.querySelectorAll('.sec[id]')],idx=document.querySelector('.indice');
+const poe=()=>{const y=scrollY+innerHeight*.3;let at=null;for(const s of secs){if(s.offsetTop<=y)at=s}
+ t.textContent=at&&scrollY>idx.offsetTop?at.querySelector('h2').textContent.replace(/^\d+/,'').trim():'Neste guia';
+ const h=document.documentElement.scrollHeight-innerHeight;b.style.transform='scaleX('+(h>0?Math.min(1,scrollY/h):0)+')'};
+addEventListener('scroll',poe,{passive:true});addEventListener('resize',poe);poe()})()</script><!--/rodape-->
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "b37421bd1ade44f1a59e46b96626bf03"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

@@ -60,7 +60,7 @@ O que torna isso difícil é que você não escolhe quantos azulejos levar: leva
 
 Duas ideias sustentam o resto:
 
-- **Azulejo ligado vale mais.** Sozinho na parede, um azulejo vale 1 ponto. Encostado em outros, vale o tamanho das sequências de que passa a fazer parte, na linha e na coluna (p. 5).
+- **Azulejo ligado vale mais.** Sozinho na parede, um azulejo vale 1 ponto. Encostado em outros, vale o tamanho das sequências que forma com eles, na linha e na coluna (p. 5).
 - **A partida acaba quando alguém fecha uma linha.** Quando um jogador completa uma fileira horizontal da parede, aquela rodada é a última (p. 6).
 
 ## 1. Como este guia ensina
@@ -214,7 +214,7 @@ O guia tem quatro etapas, cada uma uma parte real da partida: montar a mesa, peg
 
 > [!suavez] **Sua vez.** Três situações:
 >
-> 1. No exemplo do Complete, o que mudaria se Bruno movesse primeiro o branco e depois o azul? Por que a ordem existe?
+> 1. No exemplo do Complete, o que mudaria se Bruno movesse primeiro o branco e depois o azul? Por que a ordem importa?
 > 2. Você tem 3 pontos. Nesta rodada, move um azulejo que não encosta em nada e tem 4 azulejos no chão. Com quantos pontos fica?
 > 3. O marcador de primeiro jogador estava no seu chão. Para onde ele vai no fim da fase, e o que isso muda?
 
@@ -235,7 +235,7 @@ O guia tem quatro etapas, cada uma uma parte real da partida: montar a mesa, peg
 ### Respostas da etapa 3
 
 - **Complete:** o branco encosta no azul de cima (vertical: 2) e no azul da direita (horizontal: 2): **4 pontos**. No chão, marcador e azulejo ocupam os dois primeiros espaços: 1 + 1 = **2**. Bruno fica com 10 + 1 + 4 - 2 = **13**. O marcador vai para a frente dele, e ele começa a próxima rodada (p. 4 e 5).
-- **Sua vez 1:** o branco faria só 2 (horizontal com o azul da coluna 2, sem ninguém em cima) e o azul depois faria 2 (vertical com o branco): 4 em vez de 5. A ordem muda os pontos, e por isso a regra fixa de cima para baixo (p. 4).
+- **Sua vez 1:** o branco faria só 2 (horizontal com o azul da coluna 2, sem ninguém em cima) e o azul depois faria 2 (vertical com o branco): 4 em vez de 5. A ordem muda os pontos, e o manual manda seguir de cima para baixo (p. 4).
 - **Sua vez 2:** 3 + 1 = 4; o chão tira 1 + 1 + 2 + 2 = 6. A conta daria -2, mas a pontuação nunca fica abaixo de 0: você fica com **0** (p. 5).
 - **Sua vez 3:** ele conta como penalidade, mas não vai para a tampa. Fica à sua frente, e você enche os expositores e começa a próxima rodada (p. 5).
 - **Treino a:** 1. **b:** 3 (os dois e ele). **c:** 2 na horizontal e 3 na vertical: 5. **d:** 1; o espaço vazio quebra a sequência. **e:** 3 na horizontal e 4 na vertical: 7. **f:** 1 + 1 + 2 + 2 + 2 = 8. Com 9, só 7 cabem no chão: 14 pontos, e os 2 restantes vão para a tampa sem custo extra (p. 4 e 5).
@@ -357,7 +357,7 @@ Responda sem consultar. Depois confira e veja o que reler.
 2. Sobras das fileiras completas: tampa. Fileiras incompletas: ficam.
 3. Chão: perde 1, 1, 2, 2, 2, 3, 3 (máximo 14). Nunca abaixo de 0. Marcador de primeiro jogador: conta, e fica à sua frente.
 
-**Pontos de um azulejo:** sem vizinhos, 1. Com vizinhos: sequência horizontal (contando ele) mais sequência vertical (contando ele). Diagonal não conta.
+**Pontos de um azulejo:** sem vizinhos, 1. Com vizinhos: a sequência horizontal, se ele tiver vizinho na linha, mais a vertical, se tiver vizinho na coluna, contando ele nas duas. Diagonal não conta.
 
 **Próxima rodada:** quem tem o marcador enche os expositores. Saco vazio: use a tampa. Tudo vazio: comece assim mesmo.
 

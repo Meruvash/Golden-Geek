@@ -174,17 +174,18 @@ html{scroll-padding-top:calc(var(--nav-h,45px) + 56px)}
 /* títulos das etapas com mais respiro */
 .sec{scroll-margin-top:calc(var(--nav-h,45px) + 56px)}
 @media (min-width:601px){.sec{padding:24px 28px}}
-/* tabelas: fichas no celular */
+/* tabelas: fichas no celular (menos as grades de células curtas, que ficam tabela e centralizadas) */
+.tab table.grade th,.tab table.grade td{text-align:center;padding:7px 6px}
 @media (max-width:600px){
- .tab{border:0;background:none;overflow:visible;border-radius:0}
- .tab table,.tab tbody,.tab tr,.tab td{display:block}
- .tab thead{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
- .tab tr{background:#fff;border:1px solid var(--paper-line);border-radius:8px;padding:10px 12px;margin-bottom:8px}
- .tab td{border:0;padding:3px 0;display:grid;grid-template-columns:6.5em minmax(0,1fr);gap:8px}
- .tab td::before{content:attr(data-label);font-size:.7rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--paper-muted);padding-top:3px}
- .tab td:empty{display:none}
- .tab td:first-child{display:block;font-weight:800;color:var(--paper-ink);padding-bottom:4px}
- .tab td:first-child::before{display:none}
+ .tab:not(:has(.grade)){border:0;background:none;overflow:visible;border-radius:0}
+ .tab:not(:has(.grade)) table,.tab:not(:has(.grade)) tbody,.tab:not(:has(.grade)) tr,.tab:not(:has(.grade)) td{display:block}
+ .tab:not(:has(.grade)) thead{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+ .tab:not(:has(.grade)) tr{background:#fff;border:1px solid var(--paper-line);border-radius:8px;padding:10px 12px;margin-bottom:8px}
+ .tab:not(:has(.grade)) td{border:0;padding:3px 0;display:grid;grid-template-columns:6.5em minmax(0,1fr);gap:8px}
+ .tab:not(:has(.grade)) td::before{content:attr(data-label);font-size:.7rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--paper-muted);padding-top:3px}
+ .tab:not(:has(.grade)) td:empty{display:none}
+ .tab:not(:has(.grade)) td:first-child{display:block;font-weight:800;color:var(--paper-ink);padding-bottom:4px}
+ .tab:not(:has(.grade)) td:first-child::before{display:none}
 }
 </style>
 </head>
@@ -213,7 +214,7 @@ html{scroll-padding-top:calc(var(--nav-h,45px) + 56px)}
   <section class="bloco sec" aria-labelledby="lista-t">
     <h2 id="lista-t">Tutoriais publicados</h2>
     <ul class="lista-t">
-      <li><a href="ticket-to-ride/"><span class="num-l">Coleção de conjuntos · Família</span><b>Como jogar Ticket to Ride</b><span>Junte cartas da mesma cor, ocupe rotas no mapa e ligue as cidades dos seus Bilhetes antes que os trens acabem. Começa com um resumo para jogar em 4 minutos e segue em quatro etapas, da mesa montada à contagem de pontos.</span><span class="meta-e"><span>2 a 5 jogadores</span><span>30 a 60 min</span><span>Edição Galápagos</span></span></a></li><li><a href="clank-catacombs/"><span class="num-l">Construção de baralho · Exploração</span><b>Como jogar Clank! Catacombs</b><span>Entre nas catacumbas, pegue um Artefato e saia vivo pela Cripta. Começa com um resumo para jogar em 4 minutos e segue em cinco etapas, da mesa montada à contagem de pontos.</span><span class="meta-e"><span>2 a 4 jogadores</span><span>60 a 120 min</span><span>Edição Galápagos</span></span></a></li>
+      <li><a href="ticket-to-ride/"><span class="num-l">Coleção de conjuntos · Família</span><b>Como jogar Ticket to Ride</b><span>Junte cartas da mesma cor, ocupe rotas no mapa e ligue as cidades dos seus Bilhetes antes que os trens acabem. Começa com um resumo para jogar em 4 minutos e segue em quatro etapas, da mesa montada à contagem de pontos.</span><span class="meta-e"><span>2 a 5 jogadores</span><span>30 a 60 min</span><span>Edição Galápagos</span></span></a></li><li><a href="clank-catacombs/"><span class="num-l">Construção de baralho · Exploração</span><b>Como jogar Clank! Catacombs</b><span>Entre nas catacumbas, pegue um Artefato e saia vivo pela Cripta. Começa com um resumo para jogar em 4 minutos e segue em cinco etapas, da mesa montada à contagem de pontos.</span><span class="meta-e"><span>2 a 4 jogadores</span><span>60 a 120 min</span><span>Edição Galápagos</span></span></a></li><li><a href="azul/"><span class="num-l">Abstrato · Família</span><b>Como jogar Azul</b><span>Pegue azulejos de uma cor, encha as fileiras de modelo e decore a parede sem deixar nada cair no chão. Começa com um resumo para jogar em 4 minutos e segue em quatro etapas, da mesa montada aos bônus finais.</span><span class="meta-e"><span>2 a 4 jogadores</span><span>30 a 45 min</span><span>Edição Galápagos</span></span></a></li>
     </ul>
   </section>
 <p class="nota-pe">Regras conferidas nos manuais oficiais, com a página citada. Nenhuma imagem gerada por IA.</p>
