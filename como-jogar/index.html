@@ -168,12 +168,6 @@ html{scroll-padding-top:calc(var(--nav-h,45px) + 56px)}
 .indice ol{counter-reset:it}.indice li{counter-increment:it}
 .indice a{display:flex;gap:10px;align-items:baseline;min-height:40px;padding:9px 0}
 .indice a::before{content:counter(it);flex:none;width:1.6em;font-size:.8rem;font-weight:800;color:var(--ouro-ink);font-variant-numeric:tabular-nums}
-/* sobre o método, recolhido */
-.metodo{border:1px solid var(--paper-line);border-radius:8px;background:#fff}
-.metodo summary{cursor:pointer;list-style:none;padding:12px 16px;min-height:44px;display:flex;align-items:center;gap:8px;font-weight:700;color:var(--paper-muted);font-size:.92rem}
-.metodo summary::-webkit-details-marker{display:none}
-.metodo summary::after{content:"+";margin-left:auto;font-weight:800}.metodo[open] summary::after{content:"−"}
-.metodo>.call{border:0;border-top:1px solid var(--paper-line);border-radius:0 0 8px 8px}
 .nota-pe{color:var(--muted);font-size:.85rem;padding:4px 2px 0}
 /* títulos das etapas com mais respiro */
 .sec{scroll-margin-top:calc(var(--nav-h,45px) + 56px)}

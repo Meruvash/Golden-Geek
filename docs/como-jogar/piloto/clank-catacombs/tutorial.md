@@ -87,7 +87,6 @@ Dentro de cada etapa, os blocos aparecem sempre na mesma ordem:
 
 As respostas de cada etapa ficam escondidas no fim dela. Tente antes de abrir. No final há uma avaliação curta, com a indicação de qual etapa reler se algo não ficou claro, e uma folha de consulta para levar à mesa.
 
-> [!entender] Este formato segue o modelo de ensino de habilidades complexas chamado 4C/ID (van Merriënboer e Kirschner, *Ten Steps to Complex Learning*): tarefas reais em ordem de dificuldade, explicação de apoio antes delas, regras exatas no momento do uso e treino só onde o erro é comum. O modelo é usado em cursos; aqui ele foi adaptado para um texto, e ainda não foi testado com jogadores.
 
 ## 2. Etapa 1: montar a mesa
 

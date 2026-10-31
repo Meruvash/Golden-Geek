@@ -4,7 +4,7 @@ As páginas Como Jogar são escritas à parte (docs/como-jogar/) e publicadas co
 - troca o cabeçalho e o rodapé próprios pelos do site (logo, menu, busca, rodapé e barra de compartilhar/grupo);
 - põe uma faixa presa abaixo do menu com a etapa em que o leitor está e uma barra de progresso;
 - transforma as tabelas em fichas no celular (cada linha vira um cartão com o nome da coluna);
-- recolhe a nota sobre o método (4C/ID) num "Sobre o método", fechado por padrão.
+- tira a nota "Para entender" que explicava o método (4C/ID), a pedido do editor.
 Vale também para o índice /como-jogar/ (sem a faixa de progresso). O texto das páginas não muda. Pode rodar quantas vezes quiser: cada troca fica entre marcadores.
 
 Uso: python3 tools/build_como_jogar.py   (também roda dentro de build_home.py)
@@ -51,12 +51,6 @@ html{scroll-padding-top:calc(var(--nav-h,45px) + 56px)}
 .indice ol{counter-reset:it}.indice li{counter-increment:it}
 .indice a{display:flex;gap:10px;align-items:baseline;min-height:40px;padding:9px 0}
 .indice a::before{content:counter(it);flex:none;width:1.6em;font-size:.8rem;font-weight:800;color:var(--ouro-ink);font-variant-numeric:tabular-nums}
-/* sobre o método, recolhido */
-.metodo{border:1px solid var(--paper-line);border-radius:8px;background:#fff}
-.metodo summary{cursor:pointer;list-style:none;padding:12px 16px;min-height:44px;display:flex;align-items:center;gap:8px;font-weight:700;color:var(--paper-muted);font-size:.92rem}
-.metodo summary::-webkit-details-marker{display:none}
-.metodo summary::after{content:"+";margin-left:auto;font-weight:800}.metodo[open] summary::after{content:"−"}
-.metodo>.call{border:0;border-top:1px solid var(--paper-line);border-radius:0 0 8px 8px}
 .nota-pe{color:var(--muted);font-size:.85rem;padding:4px 2px 0}
 /* títulos das etapas com mais respiro */
 .sec{scroll-margin-top:calc(var(--nav-h,45px) + 56px)}
@@ -120,10 +114,9 @@ def montar(arq):
     novo = re.sub(r'<!--rodape-->.*?<!--/rodape-->|<footer><div class="in gut">.*?</div></footer>', lambda _: fim, novo, count=1, flags=re.S)
     # índice com âncora, para a faixa de progresso levar até ele
     novo = novo.replace('<nav class="bloco indice" aria-label="Neste guia">', '<nav class="bloco indice" id="neste-guia" aria-label="Neste guia">')
-    # nota sobre o método, recolhida
-    novo = re.sub(r'(<section class="bloco sec" id="como-este-guia-ensina">.*?)(<aside class="call entender">.*?</aside>)',
-                  lambda x: x.group(1) + f'<details class="metodo"><summary>Sobre o método deste guia</summary>{x.group(2)}</details>'
-                  if "metodo" not in x.group(0) else x.group(0), novo, count=1, flags=re.S)
+    # a nota "Para entender" que explicava o método (4C/ID) saiu das páginas a pedido do editor (31/10/2026)
+    novo = re.sub(r'\n?(?:<details class="metodo"><summary>[^<]*</summary>)?<aside class="call entender"><p class="rot">Para entender</p><p>Este formato segue o modelo de ensino.*?</aside>(?:</details>)?',
+                  "", novo, flags=re.S)
     # o mesmo contador de visitas sem cookies das outras páginas (sem ele, o Como Jogar não aparece no resumo de visitas)
     if "cloudflareinsights" not in novo:
         novo = novo.replace("</body>", seo.ANALYTICS + "\n</body>", 1)
