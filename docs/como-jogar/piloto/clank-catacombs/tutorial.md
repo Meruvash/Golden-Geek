@@ -219,9 +219,10 @@ As respostas de cada etapa ficam escondidas no fim dela. Tente antes de abrir. N
 >
 > - O Contador de Pontos de Vida tem 10 casas, do coração à caveira (ilustração da p. 12). O dano entra da esquerda para a direita.
 > - No ataque, o cubo do dano é o que saiu da bolsa. Fora do ataque (um túnel com Monstro, por exemplo), o cubo sai do seu suprimento.
-> - Você não pode escolher sofrer dano fora do ataque se não tiver cubos no suprimento ou se isso fosse encher o seu Contador.
 > - Curar é devolver um cubo do Contador ao suprimento.
 > - Contador cheio, no décimo dano: você está **nocauteado**.
+
+> [!mais] **Dano por escolha.** Você não pode escolher sofrer dano fora do ataque (atravessar um Monstro sem Espada, por exemplo) se não tiver cubos no suprimento ou se isso fosse encher o seu Contador (p. 12).
 
 > [!resolvido] **Exemplo resolvido.** Partida de 2 jogadores. Na área de Clank! estão 2 cubos vermelhos (Jogador 1), 3 azuis (Jogador 2) e 1 de Fantasma, que entrou quando alguém revelou uma peça assombrada. O Marcador está na quinta casa, que mostra 4; não há carta de Perigo na Fileira.
 >
@@ -268,20 +269,30 @@ As respostas de cada etapa ficam escondidas no fim dela. Tente antes de abrir. N
 > 2. A peça vai num espaço vazio (nunca empilhada), pode ser girada à vontade e precisa encostar uma borda inteira em outra peça. A exceção são as bordas longas da Peça Inicial: ali a nova peça se alinha com a metade de cima ou com a de baixo.
 > 3. A peça nova completa o túnel por onde você saiu e pode acrescentar ícones a ele. Se você não tiver Botas para uma Pegada ou Gazua para um Cadeado, gire a peça para outra orientação, no mesmo lugar. Você também pode parar o movimento para buscar ajuda: adquirir uma carta, usar um Dispositivo ou combater um monstro.
 > 4. Se a peça trouxer uma sala de Artefato, o Artefato do topo da pilha vai para ela. Com um ou dois sinais de "mais" na sala, vai o Artefato uma ou duas posições abaixo do topo; se não houver tantos, o mais valioso que restar; se a pilha estiver vazia, nada (p. 10).
-> 5. Se a peça for assombrada (quatro das Profundezas são), um cubo de Fantasma do Banco vai para a área de Clank! (p. 10).
-> 6. Com a pilha de peças vazia, ninguém mais sai pela borda.
+
+> [!mais] **Peça assombrada.** Se a peça revelada for assombrada (quatro das Profundezas são), um cubo de Fantasma do Banco vai para a área de Clank! (p. 10).
+
+> [!mais] **Sem peças na pilha.** Com a pilha de peças vazia, ninguém mais sai pela borda (p. 9).
 
 > [!passos] **Passo a passo: as salas e as outras ações** (p. 7, 8, 10 e 11)
 >
 > - **Recompensas ao entrar** (Pequeno Segredo, Ídolo de Macaco, Ouro, Cura): uma vez por turno por sala. Para ganhar de novo, volte em outro turno. Duas salas diferentes do mesmo tipo valem no mesmo turno. O Ídolo de Macaco vale 5 pontos e não é Artefato.
-> - **Caverna de Cristal:** ao entrar, você fica exausto e não gasta mais Botas neste turno. O Teletransporte continua permitido, e você continua exausto.
-> - **Portal:** você não para nele. Entra e sai por qualquer outro portal da masmorra. O percurso inteiro, de sala a sala, custa 1 Bota; os ícones dos túneis ligados continuam valendo. Teletransporte também passa por portais.
-> - **Santuário de Passagem:** ação especial. Ponha um cubo do suprimento num espaço vazio e ganhe 1 de Ouro por Santuário que você já marcou, contando este (1, depois 2, depois 3). Não se marca o mesmo duas vezes, e esses cubos nunca viram barulho.
-> - **Abrir um Baú, Biblioteca ou Prisão:** gaste 1 Gazua e cubra o atributo; ninguém mais o abre. Baú: um Grande Segredo sorteado. Biblioteca: um Tomo Secreto da Reserva, de graça, no seu descarte. Prisão: dois Prisioneiros sorteados, abertos no seu suprimento; alguns têm efeito imediato, como a Aventureira (fúria sobe 1 casa), a Bárbara (2 Espadas neste turno), o Clérigo (cura 1) e o Prisioneiro Assombrado (um Fantasma na área de Clank!), e todos ficam com você para a pontuação (Guia de Fichas). Não gaste a Gazua se não houver o que pegar; o último Prisioneiro sozinho pode ser libertado.
-> - **Comprar do Mercado:** numa sala de Mercado, cada item custa 7 de Ouro. Pode repetir e comprar itens iguais. Mochila: permite carregar um segundo Artefato; vale 5 pontos. Amuleto de Sangue: só para quem tem pelo menos 5 de dano; cura 2 na hora; vale 7. Kit de Ladrão: 2 Gazuas na hora; vale 2. Coroa: vale o número impresso; quem compra leva a mais valiosa que sobrou (Guia de Fichas, p. 18 do manual original).
-> - **Usar um Dispositivo** (faixa roxa): pague em Habilidade, faça o texto USE na hora; a carta vai para o descarte da Masmorra.
 > - **Combater um Monstro** (faixa vermelha): pague em Espadas o número do canto inferior direito e ganhe a recompensa de DERROTA; a carta vai para o descarte da Masmorra. O Goblin da Reserva não vai embora: pode ser combatido várias vezes no mesmo turno.
-> - **Teletransporte:** leva a uma sala, quase sempre vizinha, sem gastar Botas, ignorando os ícones do túnel e até contra a seta. Também pode sair pela borda e descobrir peça.
+> - **Usar um Dispositivo** (faixa roxa): pague em Habilidade, faça o texto USE na hora; a carta vai para o descarte da Masmorra.
+> - **Abrir um Baú, Biblioteca ou Prisão:** gaste 1 Gazua e cubra o atributo; ninguém mais o abre. Baú: um Grande Segredo sorteado. Biblioteca: um Tomo Secreto da Reserva, de graça, no seu descarte. Prisão: dois Prisioneiros sorteados, abertos no seu suprimento. Não gaste a Gazua se não houver o que pegar.
+> - **Comprar do Mercado:** numa sala de Mercado, cada item custa 7 de Ouro. Pode repetir e comprar itens iguais.
+
+> [!mais] **Prisioneiros.** Alguns têm efeito imediato, como a Aventureira (fúria sobe 1 casa), a Bárbara (2 Espadas neste turno), o Clérigo (cura 1) e o Prisioneiro Assombrado (um Fantasma na área de Clank!), e todos ficam com você para a pontuação (Guia de Fichas). O último Prisioneiro sozinho pode ser libertado.
+
+> [!mais] **Itens do Mercado.** Mochila: permite carregar um segundo Artefato; vale 5 pontos. Amuleto de Sangue: só para quem tem pelo menos 5 de dano; cura 2 na hora; vale 7. Kit de Ladrão: 2 Gazuas na hora; vale 2. Coroa: vale o número impresso; quem compra leva a mais valiosa que sobrou (Guia de Fichas, p. 18 do manual original).
+
+> [!mais] **Caverna de Cristal.** Ao entrar, você fica exausto e não gasta mais Botas neste turno. O Teletransporte continua permitido, e você continua exausto.
+
+> [!mais] **Portal.** Você não para nele. Entra e sai por qualquer outro portal da masmorra. O percurso inteiro, de sala a sala, custa 1 Bota; os ícones dos túneis ligados continuam valendo. Teletransporte também passa por portais.
+
+> [!mais] **Santuário de Passagem.** Ação especial. Ponha um cubo do suprimento num espaço vazio e ganhe 1 de Ouro por Santuário que você já marcou, contando este (1, depois 2, depois 3). Não se marca o mesmo duas vezes, e esses cubos nunca viram barulho.
+
+> [!mais] **Teletransporte.** Leva a uma sala, quase sempre vizinha, sem gastar Botas, ignorando os ícones do túnel e até contra a seta. Também pode sair pela borda e descobrir peça.
 
 > [!resolvido] **Exemplo resolvido: Espadas no túnel ou no Goblin.** O Jogador 1 tem Explorar, Explorar, Mercenário, Contornar e Roubar: 6 Habilidades, 2 Espadas e 3 Botas. Para chegar à sala que ele quer, precisa atravessar um túnel com Pegada e depois um túnel com dois ícones de Monstro.
 >
@@ -327,9 +338,11 @@ As respostas de cada etapa ficam escondidas no fim dela. Tente antes de abrir. N
 > 2. **Escapar:** chegue à Cripta com um Artefato. Termine o resto do turno; antes de repor a Fileira, tire o peão do tabuleiro e pegue uma ficha de Maestria (20 pontos).
 > 3. **Ser nocauteado:** Contador cheio, deite o peão. Sem Artefato, ou com o peão nas Profundezas, você faz 0 ponto. Com Artefato e fora das Profundezas, você pontua, mas sem a ficha de Maestria.
 > 4. **Quem saiu do jogo** não joga cartas, não faz barulho, não é afetado por cartas que atingem todos os jogadores e não sofre dano. No turno dessa pessoa, todos os cubos da área de Clank! vão para a bolsa e saem exatamente 4 (6 numa partida de 2 jogadores), ignorando a Trilha de Fúria e o Perigo. O dano é aplicado como num ataque.
-> 5. A partida termina quando todos escaparam ou foram nocauteados. Ela também termina na hora, com todos os que ainda estão na masmorra nocauteados, se o Baralho da Masmorra não tiver cartas para repor a Fileira, ou se a Bolsa do Dragão ficar vazia depois de um ataque (p. 12).
+> 5. A partida termina quando todos escaparam ou foram nocauteados.
 > 6. **Pontos**, só para quem tem Artefato e não caiu nas Profundezas: o valor do Artefato; os pontos das outras fichas (Maestria, Ídolos de Macaco, Prisioneiros, itens do Mercado, segredos que valem pontos); 1 ponto por Ouro; os pontos das cartas do baralho inteiro, contando mão e descarte.
 > 7. **Empate:** vence quem tem o Artefato mais valioso.
+
+> [!mais] **Fim antecipado.** Ela também termina na hora, com todos os que ainda estão na masmorra nocauteados, se o Baralho da Masmorra não tiver cartas para repor a Fileira, ou se a Bolsa do Dragão ficar vazia depois de um ataque (p. 12).
 
 > [!edicao] A Mochila permite carregar um segundo Artefato, mas a pontuação fala em "o valor do próprio Artefato", no singular, e também manda somar "quaisquer outras fichas adquiridas" (p. 14). O manual não resolve o caso de forma explícita; a leitura mais provável é que os dois contam. Combine com a mesa antes de jogar.
 

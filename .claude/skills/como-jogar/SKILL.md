@@ -23,3 +23,5 @@ Linha editorial de ensino de regras, separada das resenhas. Voz neutra e exata d
 - Toda conta de exemplo refeita em script.
 - Manual e PDFs ficam no scratchpad, nunca no repositório.
 - Nunca explicar o método de ensino ao leitor (pedido do editor em 31/10/2026).
+
+- Essencial à vista, o resto a um toque: regra de caso especial vai em `> [!mais] **Título.** texto`, nunca no passo a passo (PADRAO_EDITORIAL.md, "Como Jogar: essencial à vista").

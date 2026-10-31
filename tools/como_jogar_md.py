@@ -6,7 +6,12 @@ Marcação do tutorial.md (a mesma do de Clank!):
   ## 4min. Título      seção "comece em 4 minutos" (destacada)
   ## N. Título         seção numerada; "Para consultar durante a partida" vira a folha de consulta
   ### Respostas ...    tudo até o próximo ### ou ## fica escondido num "mostrar"
-  > [!tipo] ...        bloco: entender, passos, resolvido, complete, suavez, treino, atencao, edicao, dica
+  > [!tipo] ...        bloco: entender, passos, resolvido, complete, suavez, treino, atencao, edicao, dica, mais
+                       ("mais" = regra adicional ou de caso especial: "> [!mais] **Caverna de Cristal.** texto")
+Essencial x opcional (pedido do editor em 31/10/2026): à vista ficam só o "comece em 4 minutos", os blocos passos e
+atencao, tabelas e listas; explicação (entender), exemplo (resolvido), edição, dica e regra adicional (mais) abrem com
+um toque; as tarefas e respostas de cada etapa vão juntas para "Pratique esta etapa"; as seções de apoio (OPCIONAIS)
+ficam inteiras recolhidas. O tempo de leitura do topo conta só o que fica à vista.
   (p. 7)               página do manual, vira a etiqueta "p. 7"
 Uma página escrita à mão (sem tutorial.md) não é tocada: o JSON dela só alimenta a lista em /como-jogar/.
 """
@@ -21,7 +26,13 @@ SITE = "https://eliteboardgamers.com.br"
 MESES = ("janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro")
 ROTULOS = {"entender": "Para entender", "passos": "Passo a passo", "resolvido": "Tarefa · exemplo resolvido",
            "complete": "Tarefa · complete", "suavez": "Tarefa · sua vez", "treino": "Treino rápido",
-           "atencao": "Atenção", "edicao": "Sobre a edição", "dica": "Dica"}
+           "atencao": "Atenção", "edicao": "Sobre a edição", "dica": "Dica", "mais": "Regra adicional"}
+# o que abre com um toque fora do "comece em 4 minutos": rótulo do botão
+DOBRA = {"entender": "Por que funciona assim", "resolvido": "Ver um exemplo resolvido", "edicao": "Sobre a edição",
+         "dica": "Dica", "mais": "Regra adicional"}
+TAREFAS = ("complete", "suavez", "treino")
+OPCIONAIS = ("Antes de tudo", "Como este guia ensina", "Situações especiais", "Avaliação final")
+PALAVRAS_MIN = 200
 CHECK = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.5l4.5 4.5L19.5 6.5"/></svg>'
 
 
@@ -41,8 +52,9 @@ def inline(t):
     return t
 
 
-def blocos(linhas):
-    """Markdown simples -> HTML: parágrafos, listas, tabelas, ### e blocos > [!tipo]."""
+def blocos(linhas, dobrar=False):
+    """Markdown simples -> HTML: parágrafos, listas, tabelas, ### e blocos > [!tipo].
+    dobrar=True: blocos que não são essenciais viram "abre com um toque" (DOBRA)."""
     out, i = [], 0
     while i < len(linhas):
         l = linhas[i]
@@ -61,6 +73,18 @@ def blocos(linhas):
             prefixo = {"passos": "Passo a passo: ", "treino": "Treino rápido: "}.get(tipo)
             if prefixo:
                 bq[0] = re.sub(r"^\*\*" + re.escape(prefixo) + r"(\w)", lambda x: "**" + x.group(1).upper(), bq[0], flags=re.I)
+            if dobrar and tipo in DOBRA:
+                # título do botão: o negrito do começo ("**Caverna de Cristal.** ...") ou o rótulo do tipo
+                t = re.match(r"\*\*(.+?)[.:]?\*\*\s*", bq[0])
+                titulo = t.group(1) if t and not t.group(1).lower().startswith(("para entender", "exemplo resolvido")) else ""
+                if t:
+                    bq[0] = bq[0][t.end():]
+                rotulo = DOBRA[tipo] + (f": {titulo}" if titulo and tipo == "mais" else "")
+                if titulo and tipo in ("entender", "dica", "edicao"):
+                    rotulo = f"{DOBRA[tipo]}: {titulo}"
+                out.append(f'<details class="dobra {tipo}"><summary>{inline(rotulo)}</summary>'
+                           f'<aside class="call {tipo}">{blocos(bq)}</aside></details>')
+                continue
             out.append(f'<aside class="call {tipo}"><p class="rot">{rot}</p>{blocos(bq)}</aside>')
             continue
         if l.startswith("|"):
@@ -111,16 +135,38 @@ def secao(titulo, num, linhas):
         else:
             atual.append(l)
     partes.append(atual)
+    dobrar = num != "4min"
     corpo = []
     for p in partes:
         if p and re.match(r"### Respostas?\b", p[0]):
             rot = p[0][4:].strip()
             corpo.append(f'<details class="respostas"><summary>{inline(rot)}: mostrar</summary><div>{blocos(p[1:])}</div></details>')
         else:
-            corpo.append(blocos(p))
-    classe = "bloco sec" + (" rapido" if num == "4min" else "") + (" ref" if titulo.lower().startswith("para consultar") else "")
-    return (f'<section class="{classe}" id="{slugify(titulo)}"><h2><span class="num">{"" if num == "4min" else num}</span>{inline(titulo)}</h2>\n'
-            + "\n".join(corpo) + "\n</section>")
+            corpo.append(blocos(p, dobrar))
+    html_corpo = "\n".join(corpo)
+    opcional = any(titulo.startswith(o) for o in OPCIONAIS)
+    if dobrar and not opcional:
+        # tarefas e respostas da etapa saem do meio do texto e vão juntas para o fim, num só "abre com um toque"
+        pratica = re.findall(r'<aside class="call (?:%s)">.*?</aside>|<details class="respostas">.*?</details>' % "|".join(TAREFAS), html_corpo, re.S)
+        if pratica:
+            for x in pratica:
+                html_corpo = html_corpo.replace(x, "", 1)
+            html_corpo += ('\n<details class="dobra pratica"><summary>Pratique esta etapa: exercícios com respostas</summary>'
+                           + "\n".join(pratica) + "</details>")
+    if opcional:
+        html_corpo = f'<details class="dobra sec-opc"><summary>Abrir esta seção</summary>{html_corpo}</details>'
+    classe = "bloco sec" + (" rapido" if num == "4min" else "") + (" ref" if titulo.lower().startswith("para consultar") else "") + (" opc" if opcional else "")
+    selo = '<span class="tag-opc">Opcional</span>' if opcional else ""
+    return (f'<section class="{classe}" id="{slugify(titulo)}"><h2><span class="num">{"" if num == "4min" else num}</span>{inline(titulo)}{selo}</h2>\n'
+            + html_corpo + "\n</section>")
+
+
+def visiveis(html_txt):
+    """Palavras do que fica à vista (fora dos "abre com um toque"): base do tempo de leitura do topo."""
+    sem = re.sub(r"<details.*?</details>", " ", html_txt, flags=re.S)
+    while "<details" in sem:
+        sem = re.sub(r"<details.*?</details>", " ", sem, flags=re.S)
+    return len(re.findall(r"\w+", html.unescape(re.sub(r"<[^>]+>", " ", sem))))
 
 
 def pagina(meta, md):
@@ -141,7 +187,13 @@ def pagina(meta, md):
     data_longa = f"{int(d[8:10])} de {MESES[int(d[5:7]) - 1]} de {d[:4]}"
     rapido = [s for s in secoes if s[1] == "4min"]
     resto = [s for s in secoes if s[1] != "4min"]
-    indice = "".join(f'<li><a href="#{slugify(t)}">{e(t)}</a></li>' for t, _, _ in rapido + resto)
+    indice = "".join(f'<li><a href="#{slugify(t)}">{e(t)}</a>{" <small>(opcional)</small>" if any(t.startswith(o) for o in OPCIONAIS) else ""}</li>' for t, _, _ in rapido + resto)
+    secs_html = "\n".join(secao(t, n, c) for t, n, c in resto)
+    # no "comece em 4 minutos", "etapa 4" vira link para a seção da etapa
+    etapas_id = {m.group(1): slugify(t) for t, _, _ in resto if (m := re.match(r"Etapa (\d+)", t))}
+    rapido_html = re.sub(r"\betapa (\d+)\b", lambda m: f'<a href="#{etapas_id[m.group(1)]}">etapa {m.group(1)}</a>' if m.group(1) in etapas_id else m.group(0),
+                         "\n".join(secao(t, n, c) for t, n, c in rapido))
+    leitura = max(1, round(visiveis(secs_html) / PALAVRAS_MIN))
     resenha = ""
     if meta.get("resenha") and (ROOT / meta["resenha"] / "index.html").exists():
         resenha = (f'<section class="bloco"><p class="sec-intro">Quer saber se vale a pena antes de jogar? '
@@ -185,14 +237,14 @@ def pagina(meta, md):
     <span class="kick">Resumo em 1 minuto</span>
     <p class="resp">{e(meta['resumo'])}</p>
     <ul>{"".join(f"<li>{CHECK}<span>{e(p)}</span></li>" for p in meta['pontos'])}</ul>
-    <p class="pe"><span><b>Como você aprende:</b> {meta['etapas']} etapas, da mesa montada à contagem de pontos</span><span><b>Leitura:</b> cerca de {meta['leitura_min']} min</span></p>
-    <div class="legenda" aria-label="Tipos de bloco"><span class="l1">Para entender</span><span class="l2">Passo a passo</span><span class="l3">Tarefas</span><span class="l4">Treino rápido</span></div>
+    <p class="pe"><span><b>Como você aprende:</b> {meta['etapas']} etapas, da mesa montada à contagem de pontos</span><span><b>Leitura do essencial:</b> cerca de {leitura} min</span></p>
+    <p class="legenda-f"><b>À vista, só o essencial para jogar.</b> O que abre com <span class="mais-i">+</span> é explicação, exemplo, exercício ou regra de caso especial: abra quando precisar.</p>
   </section>
 
-{chr(10).join(secao(t, n, c) for t, n, c in rapido)}
+{rapido_html}
   <nav class="bloco indice" aria-label="Neste guia"><h2>Neste guia</h2><ol>{indice}</ol></nav>
 
-{chr(10).join(secao(t, n, c) for t, n, c in resto)}
+{secs_html}
 {resenha}
 <p class="nota-pe">{inline(intro)}</p>
 </div></main>
@@ -212,7 +264,7 @@ def build():
     """Gera a página de cada tutorial que tem tutorial.md; devolve os slugs gerados."""
     feitos = []
     for meta in metas():
-        md = ROOT / "docs" / "como-jogar" / meta["slug"] / "tutorial.md"
+        md = ROOT / (meta.get("md") or f"docs/como-jogar/{meta['slug']}/tutorial.md")
         if meta.get("html_manual") or not md.exists():
             continue
         destino = ROOT / "como-jogar" / meta["slug"] / "index.html"

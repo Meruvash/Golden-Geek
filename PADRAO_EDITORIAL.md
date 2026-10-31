@@ -224,3 +224,13 @@ Pedido do usuário: a seção curta do topo de cada tutorial precisa garantir qu
 - `python3 tools/checar_comece.py docs/como-jogar/<...>/tutorial.md` precisa passar (tamanho, ordem, blocos, resposta separada, termos, etapas citadas que existem, travessão, vícios).
 - **Teste de execução:** um subagente que não escreveu a seção recebe só ela e tenta montar a mesa para o mínimo e o máximo de jogadores e jogar o primeiro turno com três mãos diferentes. Cada ponto em que ele precisou adivinhar vira correção. É sinal de lacuna, não prova de que pessoas aprendem.
 - **Teste com pessoas** (quando houver leitores): a pessoa lê só a seção e joga o primeiro turno sem ajuda; conta-se tempo, erros de regra e onde travou.
+
+## Como Jogar: essencial à vista, o resto a um toque (31/10/2026)
+
+Pedido do usuário: separar com clareza o que é fundamental para jogar das informações adicionais, e deixar o texto à vista curto. O conversor (`tools/como_jogar_md.py`) aplica a regra sozinho; quem escreve só precisa marcar certo.
+
+- **À vista (essencial):** a seção "Comece a jogar em N minutos" inteira; em cada etapa, os blocos `[!passos]` (a regra que se usa sempre) e `[!atencao]` (o erro caro); tabelas de referência; a folha "Para consultar durante a partida" e as fontes.
+- **Abre com um toque:** `[!entender]` ("Por que funciona assim"), `[!resolvido]` ("Ver um exemplo resolvido"), `[!edicao]`, `[!dica]` e `[!mais]` ("Regra adicional: <título>"). As tarefas (`[!complete]`, `[!suavez]`, `[!treino]`) e as respostas de cada etapa vão juntas para o fim dela, em "Pratique esta etapa". As seções "Antes de tudo", "Como este guia ensina", "Situações especiais" e "Avaliação final" ficam inteiras recolhidas, com a etiqueta Opcional.
+- **O que é `[!mais]`:** regra verdadeira e necessária quando a situação aparece, mas que não acontece em toda partida ou em todo turno: sala especial (Portal, Caverna), exceção (dano por escolha sem cubos), fim antecipado, efeito de ficha. Um bloco por regra, com título curto em negrito ("> [!mais] **Portal.** ..."), para o leitor achar pelo nome quando a peça aparecer na mesa. Nunca apagar regra para encurtar: mover para `[!mais]`.
+- **Teste do essencial:** um bloco `[!passos]` só tem o que o jogador usa sempre ou quase sempre. Se a regra começa com "se", "quando", "exceto" ou cita um componente que só aparece em parte das partidas, ela é candidata a `[!mais]`.
+- **Leitura:** o tempo do topo ("Leitura do essencial") conta só o que fica à vista, a 200 palavras por minuto.
