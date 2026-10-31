@@ -34,11 +34,22 @@ No seu turno, faça **uma** destas três ações, e só uma:
 
 > [!resolvido] **Exemplo resolvido.** Você recebeu Azul, Azul, Verde e Locomotiva. A rota de Montréal a New York é azul e tem 3 espaços (p. 3). Você joga Azul, Azul e Locomotiva, põe 3 trens nela e avança 4 pontos. Ficam 42 trens no seu estoque e 1 carta na mão, a Verde.
 
-> [!complete] **Complete.** As cartas abertas são Vermelho, Locomotiva, Amarelo, Preto e Branco. Bruno pega a Locomotiva aberta e vira uma carta da pilha para o lugar dela. Ele pode pegar mais uma carta neste turno?
+> [!complete] **Complete.** As cartas abertas são Vermelho, Locomotiva, Amarelo, Preto e Branco. Bruno pega a Locomotiva aberta e vira uma carta da pilha para o lugar dela.
+>
+> ?? Ele pode pegar mais uma carta neste turno?
+> - ( ) Sim, qualquer uma das abertas ou a do topo da pilha
+> - ( ) Sim, mas só a do topo da pilha, no escuro
+> - (x) Não, a Locomotiva aberta é a única carta dele neste turno
+> = Não. Quem pega uma Locomotiva aberta pega só ela naquele turno (p. 3).
 
-> [!suavez] **Agora a sua mão.** Antes de agir: quantas cartas você tem de cada cor? Há alguma rota no mapa que você pague agora, contando as Locomotivas como qualquer cor? Se não houver, qual carta aberta ajuda a juntar a cor de que você precisa?
-
-**Resposta do Complete:** não. Quem pega uma Locomotiva aberta pega só ela naquele turno (p. 3).
+> [!suavez] **Agora a sua mão.** Antes de agir, conte quantas cartas você tem de cada cor e veja se alguma rota do mapa se paga agora, contando as Locomotivas como qualquer cor. Treine com esta mão: Vermelho, Vermelho, Amarelo e Locomotiva.
+>
+> ?? Qual destas rotas você pode conquistar agora?
+> - (x) Uma rota vermelha de 3 espaços
+> - ( ) Uma rota amarela de 3 espaços
+> - ( ) Uma rota cinza de 4 espaços
+> - ( ) Uma rota vermelha de 4 espaços
+> = A rota vermelha de 3 espaços: 2 Vermelhos e a Locomotiva, que substitui qualquer cor (p. 3). A amarela de 3 pede três cartas e você só tem Amarelo e Locomotiva para ela. As de 4 espaços pedem 4 cartas de uma cor só, e o Amarelo não entra num conjunto vermelho: uma rota se paga com uma cor só, mais Locomotivas.
 
 ### Ainda não precisa saber
 
@@ -69,7 +80,7 @@ Os blocos se repetem em cada etapa:
 - **Tarefas**, com ajuda que diminui: um **exemplo resolvido**, uma tarefa para **completar** e uma tarefa **sua vez**, sem ajuda.
 - **Treino rápido:** exercícios curtos para o que precisa ficar automático, como a tabela de pontos.
 
-As respostas ficam escondidas no fim de cada etapa. Tente antes de abrir. No final há uma avaliação curta e uma folha de consulta para deixar ao lado do tabuleiro.
+Cada pergunta tem opções: escolha uma e a resposta aparece, com a explicação. No final há uma avaliação curta e uma folha de consulta para deixar ao lado do tabuleiro.
 
 ## 2. Etapa 1: montar a mesa e escolher os primeiros Bilhetes
 
@@ -100,22 +111,46 @@ As respostas ficam escondidas no fim de cada etapa. Tente antes de abrir. No fin
 >
 > Por que essa escolha: Bilhetes que usam as mesmas rotas pagam duas vezes pelo mesmo trabalho. Um Bilhete longo vale mais, mas só se for completado; o incompleto tira os mesmos pontos que daria.
 
-> [!complete] **Complete.** Bruno recebe três Bilhetes e gosta de todos. Já sabemos que ele pode ficar com os três. Complete: onde ficam esses Bilhetes durante a partida, e quem pode vê-los?
-
-> [!suavez] **Sua vez.** Você vai montar uma partida de 4 jogadores. Responda olhando só o passo a passo:
+> [!complete] **Complete.** Bruno recebe três Bilhetes e gosta de todos. Já sabemos que ele pode ficar com os três.
 >
-> 1. Quantas Cartas de Vagão cada um tem na mão antes do primeiro turno, e quantas ficam abertas na mesa?
-> 2. Ao virar as cartas abertas, saem Locomotiva, Azul, Locomotiva, Locomotiva e Preto. O que você faz?
-> 3. Cada jogador recebeu 3 Bilhetes. Qual é o menor número de Bilhetes que pode voltar à pilha, somando os quatro jogadores? E o maior?
-> 4. Quantos trens cada jogador põe à sua frente?
+> ?? Onde ficam esses Bilhetes durante a partida, e quem pode vê-los?
+> - ( ) Na mesa, virados para cima, à vista de todos
+> - (x) Na mão dele, em segredo; ninguém mais os vê até a contagem final
+> - ( ) Na mão dele, mas ele mostra cada um à mesa quando o completa
+> = Na mão dele, em segredo. Ninguém mais vê os Bilhetes até a contagem final, quando todos os revelam (p. 2 e 4).
 
-### Respostas da etapa 1
-
-- **Complete:** na mão dele, em segredo. Ninguém mais vê os Bilhetes até a contagem final (p. 2 e 4).
-- **Sua vez 1:** 4 na mão de cada um e 5 abertas (passos 4 e 5).
-- **Sua vez 2:** há 3 Locomotivas entre as 5 abertas: descarte as 5 e vire outras 5. Se de novo saírem 3 Locomotivas, repita (passo 6; p. 3).
-- **Sua vez 3:** nenhum, se todos ficarem com os 3. No máximo 4, um por jogador, porque cada um fica com pelo menos 2 (passo 8).
-- **Sua vez 4:** 45 (passo 2).
+> [!suavez] **Sua vez.** Você vai montar uma partida de 4 jogadores. Responda olhando só o passo a passo.
+>
+> ?? 1. Quantas Cartas de Vagão cada um tem na mão antes do primeiro turno, e quantas ficam abertas na mesa?
+> - ( ) 3 na mão e 5 abertas
+> - ( ) 4 na mão e 4 abertas
+> - (x) 4 na mão e 5 abertas
+> - ( ) 5 na mão e 5 abertas
+> = 4 na mão de cada um e 5 abertas (passos 4 e 5; p. 2).
+>
+> ?? 2. Ao virar as cartas abertas, saem Locomotiva, Azul, Locomotiva, Locomotiva e Preto. O que você faz?
+> - (x) Descarta as 5 e vira outras 5; se de novo saírem 3 Locomotivas, repete
+> - ( ) Deixa como está: essa regra só vale depois que a partida começa
+> - ( ) Descarta só as 3 Locomotivas e vira 3 cartas no lugar delas
+> = Há 3 Locomotivas entre as 5 abertas: descarte as 5 e vire outras 5. A regra vale "a qualquer momento", inclusive na preparação. Se de novo saírem 3 Locomotivas, repita (passo 6; p. 3).
+>
+> ?? 3. Cada jogador recebeu 3 Bilhetes. Qual é o menor número de Bilhetes que pode voltar à pilha, somando os quatro jogadores?
+> - ( ) 4
+> - (x) Nenhum
+> - ( ) 1
+> = Nenhum, se todos ficarem com os 3. Ninguém é obrigado a devolver (passo 8; p. 2).
+>
+> ?? 4. E o maior número de Bilhetes que pode voltar à pilha, somando os quatro?
+> - ( ) 8
+> - ( ) 12
+> - (x) 4
+> = No máximo 4, um por jogador, porque na preparação cada um fica com pelo menos 2 (passo 8; p. 2). Ficar com só 1 é a regra da compra de Bilhetes no meio da partida, não da preparação.
+>
+> ?? 5. Quantos trens cada jogador põe à sua frente?
+> - ( ) 40
+> - (x) 45
+> - ( ) 35
+> = 45, em qualquer número de jogadores (passo 2; p. 2).
 
 ## 3. Etapa 2: comprar Cartas de Vagão
 
@@ -142,31 +177,73 @@ As respostas ficam escondidas no fim de cada etapa. Tente antes de abrir. No fin
 >
 > A mesa agora mostra Locomotiva, Amarelo, Branco, Laranja e Preto. A Locomotiva continua lá para o próximo jogador, que pode pegá-la como primeira e única carta.
 
-> [!complete] **Complete.** Ana pega a primeira carta no escuro, do topo da pilha, e sai uma Locomotiva. Já sabemos que ela conta como carta comum. Complete: Ana pode pegar uma segunda carta? Ela pode pegar a Locomotiva que está entre as abertas?
-
-> [!suavez] **Sua vez.** Três situações:
+> [!complete] **Complete.** Ana pega a primeira carta no escuro, do topo da pilha, e sai uma Locomotiva. Já sabemos que ela conta como carta comum.
 >
-> 1. As abertas são Locomotiva, Locomotiva, Azul, Vermelho e Rosa. Você pega o Azul e, ao repor, sai outra Locomotiva. O que acontece com as cartas abertas, e o que você pode pegar como segunda carta?
-> 2. Você tem 14 cartas na mão. Precisa descartar alguma?
-> 3. A pilha de compras está vazia e o descarte tem 20 cartas. Você quer comprar. O que faz primeiro?
+> ?? Ana pode pegar uma segunda carta?
+> - ( ) Não, Locomotiva é sempre a única carta do turno
+> - (x) Sim, aberta ou do topo da pilha
+> - ( ) Sim, mas só do topo da pilha, no escuro
+> = Sim. Locomotiva tirada no escuro conta como carta comum, e ela pega a segunda, aberta ou do topo (p. 3).
+>
+> ?? Ela pode pegar a Locomotiva que está entre as abertas?
+> - ( ) Sim, porque a primeira carta veio do escuro
+> - ( ) Sim, porque a Locomotiva tirada no escuro não conta como carta
+> - (x) Não, a Locomotiva aberta não pode ser a segunda carta
+> = Não. Pela leitura explicada no bloco "Sobre a edição" acima, nenhuma Locomotiva aberta pode ser a segunda carta: quem a compra "só poderá comprar uma carta ao invés de duas" (p. 3).
+
+> [!suavez] **Sua vez.** Três situações.
+>
+> 1. As abertas são Locomotiva, Locomotiva, Azul, Vermelho e Rosa. Você pega o Azul e, ao repor, sai outra Locomotiva.
+>
+> ?? O que acontece com as cartas abertas?
+> - ( ) Nada: a Locomotiva nova fica na mesa e o turno segue
+> - ( ) Só a Locomotiva nova vai para o descarte, e outra carta é virada no lugar dela
+> - (x) Com 3 Locomotivas abertas, as 5 vão para o descarte e 5 novas são viradas na hora
+> = Com a nova Locomotiva, há 3 Locomotivas abertas. As 5 cartas vão para o descarte e 5 novas são viradas na hora (passo 7; p. 3).
+>
+> ?? E o que você pode pegar como segunda carta?
+> - (x) Uma das 5 novas abertas, menos Locomotiva, ou a do topo da pilha
+> - ( ) Uma das Locomotivas, porque elas estavam abertas antes da sua primeira carta
+> - ( ) Nada: quando as abertas são trocadas, o seu turno acaba
+> = Você pega a segunda carta entre as novas ou do topo da pilha, mas não uma Locomotiva aberta (passos 5 e 7; p. 3).
+>
+> ?? 2. Você tem 14 cartas na mão. Precisa descartar alguma?
+> - ( ) Sim, até ficar com 10
+> - (x) Não, não há limite de cartas na mão
+> - ( ) Sim, até ficar com 12
+> = Não. Não há limite de mão (p. 3).
+>
+> ?? 3. A pilha de compras está vazia e o descarte tem 20 cartas. Você quer comprar. O que faz primeiro?
+> - ( ) Nada: sem pilha de compras, você não pode comprar e escolhe outra ação
+> - ( ) Compra as 2 cartas do topo do descarte
+> - (x) Embaralha bem o descarte, faz dele a nova pilha e compra normalmente
+> = Embaralha bem o descarte e faz dele a nova pilha; depois compra normalmente (p. 3). Só se pilha e descarte estiverem vazios é que não se compra.
 
 > [!treino] **Treino rápido: quantas cartas você leva neste turno?**
 >
-> a) Primeira carta: Locomotiva aberta.
+> ?? a) Primeira carta: Locomotiva aberta. Quantas cartas você leva?
+> - (x) 1
+> - ( ) 2
+> - ( ) 2, se a segunda vier do topo da pilha
+> = 1. Locomotiva aberta é a única carta do turno (p. 3).
 >
-> b) Primeira carta: Vermelho aberto. Segunda: topo da pilha, que é uma Locomotiva.
+> ?? b) Primeira carta: Vermelho aberto. Segunda: topo da pilha, que é uma Locomotiva. Quantas cartas você leva?
+> - ( ) 1, porque a Locomotiva cancela a segunda carta
+> - (x) 2
+> - ( ) 1, porque a Locomotiva volta para a pilha
+> = 2. Locomotiva no escuro é carta comum (p. 3).
 >
-> c) Primeira carta: topo da pilha. Segunda: a única Locomotiva aberta, que estava lá desde o turno anterior.
+> ?? c) Primeira carta: topo da pilha. Segunda: você quer a única Locomotiva aberta, que estava lá desde o turno anterior. O que acontece?
+> - ( ) Você pega a Locomotiva e leva 2 cartas
+> - (x) Não pode pegá-la: pega outra carta aberta ou a do topo e leva 2
+> - ( ) Pega a Locomotiva e devolve a primeira carta, levando só 1
+> = A segunda escolha não é permitida: a Locomotiva aberta não pode ser a segunda carta (leitura explicada no bloco "Sobre a edição"; p. 3). Você pega outra carta aberta ou a do topo e leva 2.
 >
-> d) Primeira carta: Preto aberto. Segunda: Branco aberto.
-
-### Respostas da etapa 2
-
-- **Complete:** sim, ela pega a segunda carta, aberta ou do topo (p. 3). Mas não pode pegar a Locomotiva aberta como segunda carta, pela leitura explicada no bloco "Sobre a edição" acima.
-- **Sua vez 1:** com a nova Locomotiva, há 3 Locomotivas abertas. As 5 cartas vão para o descarte e 5 novas são viradas na hora. Você pega a segunda carta entre as novas ou do topo da pilha, mas não uma Locomotiva aberta (passos 5 e 7).
-- **Sua vez 2:** não. Não há limite de mão (p. 3).
-- **Sua vez 3:** embaralha bem o descarte e faz dele a nova pilha; depois compra normalmente (p. 3).
-- **Treino a:** 1. **b:** 2; Locomotiva no escuro é carta comum. **c:** a segunda escolha não é permitida: a Locomotiva aberta não pode ser a segunda carta. Você pega outra carta aberta ou a do topo e leva 2. **d:** 2.
+> ?? d) Primeira carta: Preto aberto. Segunda: Branco aberto. Quantas cartas você leva?
+> - ( ) 1, porque só a primeira carta pode ser aberta
+> - ( ) 1, porque as duas precisam ser da mesma cor
+> - (x) 2
+> = 2. As duas cartas podem ser abertas, de qualquer cor, desde que nenhuma seja Locomotiva (p. 2 e 3).
 
 ## 4. Etapa 3: conquistar rotas e marcar pontos
 
@@ -205,25 +282,73 @@ As respostas ficam escondidas no fim de cada etapa. Tente antes de abrir. No fin
 >
 > Por que essa escolha: a Locomotiva serve para qualquer cor. Gastá-la quando há outra forma de pagar é desperdiçar a carta mais flexível da mão.
 
-> [!complete] **Complete.** Partida de 3 jogadores. Entre duas cidades há uma Rota Dupla. Ana conquista uma das duas rotas. Já sabemos que, com 3 jogadores, só uma das duas pode ser usada. Complete: Bruno pode conquistar a outra? E se fossem 4 jogadores?
-
-> [!suavez] **Sua vez.** Três situações:
+> [!complete] **Complete.** Partida de 3 jogadores. Entre duas cidades há uma Rota Dupla. Ana conquista uma das duas rotas. Já sabemos que, com 3 jogadores, só uma das duas pode ser usada.
 >
-> 1. Você tem 4 Azuis e 2 Locomotivas e só 5 trens no estoque. A rota que você quer é azul e tem 6 espaços. Pode conquistá-la?
-> 2. Em um turno, você quer conquistar uma rota de 2 espaços e outra de 1, porque tem as cartas. Pode?
-> 3. Ao longo da partida você conquistou rotas de 4, 3, 2 e 1 espaços. Quantos pontos elas deram, e quantos trens você usou?
+> ?? Bruno pode conquistar a outra rota?
+> - (x) Não: a outra rota fica interditada para todos
+> - ( ) Sim, porque só Ana não pode ter as duas
+> - ( ) Sim, mas só a partir do turno seguinte ao de Ana
+> = Não. Com 2 ou 3 jogadores, a outra rota fica interditada para todos até o fim da partida (p. 3).
+>
+> ?? E se fossem 4 jogadores?
+> - ( ) Também não: a outra rota fica interditada para todos
+> - ( ) Sim, e Ana também poderia conquistar a outra num turno seguinte
+> - (x) Sim, Bruno pode; só Ana não pode ter as duas
+> = Com 4 jogadores, sim, Bruno pode; só Ana não pode ter as duas (p. 3).
+
+> [!suavez] **Sua vez.** Três situações.
+>
+> ?? 1. Você tem 4 Azuis e 2 Locomotivas e só 5 trens no estoque. A rota que você quer é azul e tem 6 espaços. Pode conquistá-la?
+> - ( ) Sim: as cartas pagam a rota e os trens não importam
+> - ( ) Sim, pondo os 5 trens e deixando um espaço vazio
+> - ( ) Não, porque um conjunto não pode ter 2 Locomotivas
+> - (x) Não: com 5 trens não há como pôr um trem em cada um dos 6 espaços
+> = Não. A rota tem 6 espaços e você só tem 5 trens; não há como pôr um trem em cada espaço (p. 3; leitura explicada no bloco "Sobre a edição"). As cartas dariam: 4 Azuis e 2 Locomotivas são 6 cartas da cor certa.
+>
+> ?? 2. Em um turno, você quer conquistar uma rota de 2 espaços e outra de 1, porque tem as cartas. Pode?
+> - ( ) Sim, se tiver as cartas para as duas
+> - (x) Não: no máximo uma rota por turno
+> - ( ) Sim, desde que as duas rotas estejam ligadas uma à outra
+> = Não. No máximo uma rota por turno, e conquistar uma rota é a única ação do turno (p. 2 e 3).
+>
+> ?? 3. Ao longo da partida você conquistou rotas de 4, 3, 2 e 1 espaços. Quantos pontos elas deram, e quantos trens você usou?
+> - ( ) 10 pontos, com 10 trens
+> - (x) 14 pontos, com 10 trens
+> - ( ) 14 pontos, com 14 trens
+> - ( ) 13 pontos, com 10 trens
+> = 7 + 4 + 2 + 1 = **14 pontos**, com 4 + 3 + 2 + 1 = 10 trens, um por espaço (p. 3 e 4).
 
 > [!treino] **Treino rápido: a Tabela de Pontuação.** Diga os pontos de cada rota sem olhar.
 >
-> a) 2 espaços. b) 4 espaços. c) 5 espaços. d) 6 espaços. e) Três rotas de 2 espaços, somadas.
-
-### Respostas da etapa 3
-
-- **Complete:** com 3 jogadores, não: a outra rota fica interditada para todos. Com 4 jogadores, sim, Bruno pode; só Ana não pode ter as duas (p. 3).
-- **Sua vez 1:** não. A rota tem 6 espaços e você só tem 5 trens; não há como pôr um trem em cada espaço (leitura explicada no bloco "Sobre a edição"). As cartas dariam: 4 Azuis e 2 Locomotivas são 6 cartas da cor certa.
-- **Sua vez 2:** não. No máximo uma rota por turno, e conquistar uma rota é a única ação do turno (p. 2 e 3).
-- **Sua vez 3:** 7 + 4 + 2 + 1 = **14 pontos**, com 10 trens.
-- **Treino a:** 2. **b:** 7. **c:** 10. **d:** 15. **e:** 6.
+> ?? a) Rota de 2 espaços.
+> - ( ) 3 pontos
+> - (x) 2 pontos
+> - ( ) 4 pontos
+> = 2 pontos (p. 4).
+>
+> ?? b) Rota de 4 espaços.
+> - ( ) 4 pontos
+> - ( ) 6 pontos
+> - (x) 7 pontos
+> = 7 pontos (p. 4).
+>
+> ?? c) Rota de 5 espaços.
+> - (x) 10 pontos
+> - ( ) 8 pontos
+> - ( ) 15 pontos
+> = 10 pontos (p. 4).
+>
+> ?? d) Rota de 6 espaços.
+> - ( ) 10 pontos
+> - ( ) 12 pontos
+> - (x) 15 pontos
+> = 15 pontos (p. 4).
+>
+> ?? e) Três rotas de 2 espaços, somadas.
+> - ( ) 15 pontos, como uma rota de 6
+> - (x) 6 pontos
+> - ( ) 12 pontos
+> = 6 pontos: cada rota de 2 espaços vale 2, e as três somam 2 + 2 + 2 (p. 4). Os pontos são por rota; 6 espaços em rotas separadas não valem como uma rota de 6.
 
 ## 5. Etapa 4: Bilhetes de Destino, fim da partida e contagem
 
@@ -268,21 +393,38 @@ As respostas ficam escondidas no fim de cada etapa. Tente antes de abrir. No fin
 >
 > Por que importa: Bruno completou mais Bilhetes, mas Ana ganhou nas rotas longas. Os 7 pontos que ela perdeu no Bilhete incompleto não mudaram o resultado; com uma diferença menor, mudariam.
 
-> [!complete] **Complete.** Numa partida de 3 jogadores, Carla tem 52 pontos de rotas na Trilha. Ela completou dois Bilhetes, de 8 e de 5 pontos, e não completou um de 10. Não tem o Maior Caminho Contínuo. Já somamos os Bilhetes completos: 52 + 8 + 5 = 65. Termine a conta.
-
-> [!suavez] **Sua vez.** Duas situações:
+> [!complete] **Complete.** Numa partida de 3 jogadores, Carla tem 52 pontos de rotas na Trilha. Ela completou dois Bilhetes, de 8 e de 5 pontos, e não completou um de 10. Não tem o Maior Caminho Contínuo. Já somamos os Bilhetes completos: 52 + 8 + 5 = 65.
 >
-> 1. Você terminou com 60 pontos de rotas, um Bilhete completo de 9 pontos e dois incompletos, de 6 e de 4. Você e outro jogador empataram no caminho contínuo mais longo. Quanto você faz?
-> 2. No fim do seu turno, você tem 3 trens no estoque. A partida entra na última volta?
+> ?? Termine a conta: quantos pontos Carla faz?
+> - ( ) 65 pontos
+> - (x) 55 pontos
+> - ( ) 75 pontos
+> - ( ) 45 pontos
+> = 65 - 10 = **55 pontos**. O Bilhete incompleto subtrai o valor dele (p. 4).
 
-> [!treino] **Treino rápido: o caminho mais longo.** Os seus trens formam este esquema (letras, não cidades do mapa): A ligado a B por uma rota de 4 espaços; B a C, 3 espaços; C a D, 2 espaços; e B a E, 5 espaços. Qual é o seu caminho contínuo mais longo, em trens?
+> [!suavez] **Sua vez.** Duas situações.
+>
+> ?? 1. Você terminou com 60 pontos de rotas, um Bilhete completo de 9 pontos e dois incompletos, de 6 e de 4. Você e outro jogador empataram no caminho contínuo mais longo. Quanto você faz?
+> - ( ) 59 pontos
+> - ( ) 64 pontos
+> - (x) 69 pontos
+> - ( ) 79 pontos
+> = 60 + 9 - 6 - 4 + 10 = **69 pontos**. No empate, os dois marcam os 10 (p. 4).
+>
+> ?? 2. No fim do seu turno, você tem 3 trens no estoque. A partida entra na última volta?
+> - (x) Não: só com 0, 1 ou 2 trens no fim do turno
+> - ( ) Sim: com 3 trens ou menos começa a última volta
+> - ( ) Sim, mas só os outros jogadores fazem mais um turno
+> = Não. Só com 0, 1 ou 2 trens no fim do turno (p. 4).
 
-### Respostas da etapa 4
-
-- **Complete:** 65 - 10 = **55 pontos**.
-- **Sua vez 1:** 60 + 9 - 6 - 4 + 10 = **69 pontos**. No empate, os dois marcam os 10 (p. 4).
-- **Sua vez 2:** não. Só com 0, 1 ou 2 trens no fim do turno (p. 4).
-- **Treino:** **10 trens**, pelo caminho E, B, C, D (5 + 3 + 2). A, B, C, D dá 9 e A, B, E também dá 9. Não dá para somar as quatro rotas: B é um entroncamento, e quem chega a B por um ramo só pode seguir por um dos outros dois. Voltar pelo ramo de onde veio contaria os mesmos trens duas vezes.
+> [!treino] **Treino rápido: o caminho mais longo.** Os seus trens formam este esquema (letras, não cidades do mapa): A ligado a B por uma rota de 4 espaços; B a C, 3 espaços; C a D, 2 espaços; e B a E, 5 espaços.
+>
+> ?? Qual é o seu caminho contínuo mais longo, em trens?
+> - ( ) 14 trens
+> - ( ) 9 trens
+> - ( ) 12 trens
+> - (x) 10 trens
+> = **10 trens**, pelo caminho E, B, C, D (5 + 3 + 2). A, B, C, D dá 9 e A, B, E também dá 9. Não dá para somar as quatro rotas: B é um entroncamento, e quem chega a B por um ramo só pode seguir por um dos outros dois. Voltar pelo ramo de onde veio contaria os mesmos trens duas vezes (p. 4).
 
 ## 6. Situações especiais
 
@@ -304,25 +446,54 @@ As respostas ficam escondidas no fim de cada etapa. Tente antes de abrir. No fin
 
 Responda sem consultar. Depois confira e veja o que reler.
 
-1. Você pega uma carta aberta e, ao repor, aparece uma Locomotiva. Pode pegá-la?
-2. Você tira uma Locomotiva do topo da pilha. Quantas cartas ainda pode pegar neste turno?
-3. Uma rota cinza tem 4 espaços. Você tem 2 Pretos, 1 Branco e 1 Locomotiva. Pode conquistá-la?
-4. Partida de 2 jogadores, Rota Dupla: Bruno conquistou uma das rotas. Você pode conquistar a outra?
-5. Quantos pontos vale uma rota de 5 espaços? E uma de 3?
-6. Você compra Bilhetes de Destino e não gosta de nenhum dos três. Pode devolver todos?
-7. No fim do turno de Ana, ela tem 2 trens. Quantos turnos ainda acontecem numa partida de 4 jogadores?
-8. Você completou um Bilhete de 11 pontos e falhou num de 7. Quanto os dois somam na contagem?
+?? 1. Você pega uma carta aberta e, ao repor, aparece uma Locomotiva. Pode pegá-la?
+- ( ) Sim, como segunda carta
+- (x) Não
+- ( ) Sim, mas devolve a primeira e leva só a Locomotiva
+= **Não.** Locomotiva que aparece na reposição não pode ser a segunda carta (p. 3). Se errou, releia a etapa 2.
 
-### Respostas da avaliação
+?? 2. Você tira uma Locomotiva do topo da pilha. Quantas cartas ainda pode pegar neste turno?
+- ( ) Nenhuma
+- ( ) Duas
+- (x) Mais uma
+= **Mais uma.** No escuro ela conta como carta comum (p. 3). Se errou, releia a etapa 2.
 
-1. **Não.** Locomotiva que aparece na reposição não pode ser a segunda carta (etapa 2).
-2. **Mais uma.** No escuro ela conta como carta comum (etapa 2).
-3. **Não.** Só 2 Pretos e a Locomotiva são da mesma cor; o Branco não entra. Faltaria uma carta (etapa 3).
-4. **Não.** Com 2 ou 3 jogadores, a outra rota fica interditada (etapa 3).
-5. **10 e 4** (etapa 3).
-6. **Não.** Você fica com pelo menos 1 (etapa 4).
-7. **Quatro:** um de cada jogador, incluindo Ana (etapa 4).
-8. **+4.** Soma 11 e subtrai 7 (etapa 4).
+?? 3. Uma rota cinza tem 4 espaços. Você tem 2 Pretos, 1 Branco e 1 Locomotiva. Pode conquistá-la?
+- ( ) Sim, porque rota cinza aceita qualquer cor
+- ( ) Sim, porque a Locomotiva cobre a diferença de cor
+- (x) Não
+= **Não.** Só 2 Pretos e a Locomotiva são da mesma cor; o Branco não entra. Faltaria uma carta (p. 3). Se errou, releia a etapa 3.
+
+?? 4. Partida de 2 jogadores, Rota Dupla: Bruno conquistou uma das rotas. Você pode conquistar a outra?
+- (x) Não
+- ( ) Sim, porque só Bruno não pode ter as duas
+- ( ) Sim, se pagar com cartas da cor da outra rota
+= **Não.** Com 2 ou 3 jogadores, a outra rota fica interditada (p. 3). Se errou, releia a etapa 3.
+
+?? 5. Quantos pontos vale uma rota de 5 espaços? E uma de 3?
+- ( ) 5 e 3
+- ( ) 15 e 4
+- (x) 10 e 4
+- ( ) 10 e 3
+= **10 e 4**, pela Tabela de Pontuação (p. 4). Se errou, releia a etapa 3.
+
+?? 6. Você compra Bilhetes de Destino e não gosta de nenhum dos três. Pode devolver todos?
+- ( ) Sim, os três voltam para o fundo da pilha
+- (x) Não, você fica com pelo menos 1
+- ( ) Não, você fica com pelo menos 2
+= **Não.** Você fica com pelo menos 1 (p. 3 e 4). Ficar com pelo menos 2 é a regra da preparação. Se errou, releia a etapa 4.
+
+?? 7. No fim do turno de Ana, ela tem 2 trens. Quantos turnos ainda acontecem numa partida de 4 jogadores?
+- ( ) Nenhum: a partida acaba na hora
+- ( ) Três: um de cada outro jogador
+- (x) Quatro: um de cada jogador, incluindo Ana
+= **Quatro:** um de cada jogador, incluindo Ana (p. 4). Se errou, releia a etapa 4.
+
+?? 8. Você completou um Bilhete de 11 pontos e falhou num de 7. Quanto os dois somam na contagem?
+- ( ) +11
+- (x) +4
+- ( ) +18
+= **+4.** Soma 11 e subtrai 7 (p. 4). Se errou, releia a etapa 4.
 
 > [!atencao] **Critério para começar a jogar.** Acertou 7 ou 8? Monte a mesa e jogue, com a folha de consulta ao lado. Errou a 1 ou a 2, releia a etapa 2. Errou a 3, a 4 ou a 5, a etapa 3. Errou a 6, a 7 ou a 8, a etapa 4. Depois refaça só as perguntas que errou.
 

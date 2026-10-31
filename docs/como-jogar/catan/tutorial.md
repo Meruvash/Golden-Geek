@@ -46,11 +46,42 @@ Na primeira partida, use a montagem para principiantes desenhada na p. 1 do manu
 
 > [!resolvido] **Exemplo resolvido.** O jogador azul começou com 1 madeira, 1 minério e 1 argila (p. 2). Ele rola os dados e o número não toca nenhuma aldeia dele. Sem trocar, paga 1 argila e 1 madeira e põe uma estrada encostada a uma das suas estradas. Fica com 1 minério e passa os dados.
 
-> [!complete] **Complete.** O jogador laranja começou com 1 minério e 2 cereais (p. 2). O dado não lhe dá nada. Ele oferece 1 cereais por 1 lã e o jogador branco aceita. Que mão ele tem agora, e o que pode comprar com ela?
+> [!complete] **Complete.** O jogador laranja começou com 1 minério e 2 cereais (p. 2). O dado não lhe dá nada. Ele oferece 1 cereais por 1 lã e o jogador branco aceita.
+>
+> ?? Que mão ele tem agora?
+> - ( ) 1 minério, 2 cereais e 1 lã
+> - ( ) 1 minério e 1 lã
+> - (x) 1 minério, 1 cereais e 1 lã
+> - ( ) 2 cereais e 1 lã
+> = 1 minério, 1 cereais e 1 lã: ele entregou 1 dos 2 cereais e recebeu 1 lã (p. 2).
+>
+> ?? O que ele pode comprar com essa mão?
+> - ( ) Uma estrada
+> - (x) Uma carta de desenvolvimento
+> - ( ) Uma aldeia
+> - ( ) Uma cidade
+> = Uma carta de desenvolvimento. Minério, lã e cereais é exatamente o custo dela: ele a compra, tirando a carta do topo do monte, e a guarda escondida (p. 4).
 
-> [!suavez] **Agora a sua mão.** Antes de rolar: que cartas você tem? Que número de dado lhe daria mais uma carta? Com o que tem, dá para fazer uma estrada? Se não, que troca resolveria?
-
-**Resposta do Complete:** 1 minério, 1 cereais e 1 lã. É exatamente o custo de uma carta de desenvolvimento: ele a compra, tirando a carta do topo do monte, e a guarda escondida.
+> [!suavez] **Agora a sua mão.** Antes de rolar, olhe as suas cartas e as suas aldeias no tabuleiro.
+>
+> ?? Que número de dado lhe daria mais uma carta?
+> - (x) O número da ficha de qualquer terreno encostado numa aldeia sua
+> - ( ) O 7, o resultado mais comum
+> - ( ) Qualquer número, porque quem rola sempre recebe 1 carta
+> = O número de qualquer terreno encostado numa aldeia sua: o terreno produz para todos que estão encostados nele. Quem rola não ganha nada a mais por isso, e o 7 não produz (p. 2 e 4).
+>
+> ?? Para fazer uma estrada, que cartas você precisa ter?
+> - ( ) Madeira e lã
+> - ( ) Argila, madeira, lã e cereais
+> - (x) Argila e madeira
+> - ( ) Minério e cereais
+> = Argila e madeira. Argila, madeira, lã e cereais é o custo da aldeia (p. 3).
+>
+> ?? Se só faltar a madeira e você tiver 4 lãs, que troca com a reserva resolve, sem porto?
+> - ( ) 1 lã por 1 madeira
+> - ( ) 2 lãs por 1 madeira
+> - (x) 4 lãs por 1 madeira
+> = 4 lãs por 1 madeira: com a reserva, sem porto, são sempre 4 cartas iguais por 1 à sua escolha. Com outro jogador, os termos são os que vocês combinarem (p. 3).
 
 ### Se sair 7
 
@@ -83,7 +114,7 @@ São cinco etapas, cada uma uma parte real da partida e mais completa que a ante
 - **Tarefas**, com ajuda que vai diminuindo: um **exemplo resolvido**, uma tarefa para **completar** e uma tarefa **sua vez**, sem ajuda.
 - **Treino rápido:** exercícios curtos para o que precisa ficar automático.
 
-As respostas ficam escondidas no fim de cada etapa: tente antes de abrir. No fim, situações especiais, uma avaliação curta e uma folha de consulta para a mesa.
+Cada pergunta tem opções: escolha uma, e a resposta certa aparece com a explicação. No fim, situações especiais, uma avaliação curta e uma folha de consulta para a mesa.
 
 ## 2. Etapa 1: montar a ilha
 
@@ -110,18 +141,66 @@ As respostas ficam escondidas no fim de cada etapa: tente antes de abrir. No fim
 
 > [!resolvido] **Exemplo resolvido.** Partida de 4 jogadores. A aldeia com letra do jogador laranja encosta numa montanha e em duas lavouras: ele recebe 1 minério e 2 cereais (p. 2). À sua frente ficam 3 aldeias, 4 cidades e 13 estradas.
 
-> [!complete] **Complete.** Partida de 3 jogadores. Já tiramos as peças vermelhas. Complete: quantas aldeias e estradas sobram no tabuleiro, onde fica o ladrão, e quem começa?
-
-> [!suavez] **Sua vez.** Monte a ilha para a sua mesa e confira: deserto sem ficha e com o ladrão; cada pessoa com as cartas da aldeia marcada com letra, e só delas; peças restantes à frente do dono.
-
-> [!treino] **Treino rápido: onde vai cada peça?** Diga se vai num terreno, numa encruzilhada ou num caminho.
+> [!complete] **Complete.** Partida de 3 jogadores. Já tiramos as peças vermelhas.
 >
-> a) Uma estrada. b) Uma cidade. c) O ladrão. d) Uma ficha numerada. e) Uma aldeia.
+> ?? Quantas aldeias e estradas ficam no tabuleiro?
+> - ( ) 8 aldeias e 8 estradas
+> - (x) 6 aldeias e 6 estradas
+> - ( ) 3 aldeias e 3 estradas
+> = 6 aldeias e 6 estradas, 2 de cada uma das 3 cores (p. 2).
+>
+> ?? Onde fica o ladrão?
+> - ( ) Ao lado do tabuleiro, até sair o primeiro 7
+> - ( ) No terreno que o primeiro jogador escolher
+> - (x) No deserto
+> = No deserto, que fica sem ficha (ilustração da p. 1; manual original, p. 7).
+>
+> ?? Quem começa?
+> - (x) O jogador mais velho
+> - ( ) O jogador mais novo
+> - ( ) Quem tirar mais nos dados
+> = O jogador mais velho, e a vez passa para a esquerda (p. 2). Rolar os dados para ver quem começa é da montagem aleatória, não da montagem para principiantes.
 
-### Respostas da etapa 1
+> [!suavez] **Sua vez.** Monte a ilha para a sua mesa e confira o resultado.
+>
+> ?? Qual destas conferências está certa?
+> - ( ) O deserto tem ficha e o ladrão fica ao lado do tabuleiro
+> - ( ) Cada pessoa recebe as cartas das suas duas aldeias
+> - ( ) As peças que sobram voltam para a caixa
+> - (x) O deserto está sem ficha e com o ladrão, e cada pessoa tem só as cartas da aldeia marcada com letra
+> = Deserto sem ficha e com o ladrão; cada pessoa com as cartas da aldeia marcada com letra, e só delas; peças restantes à frente do dono (p. 2; ilustração da p. 1).
 
-- **Complete:** ficam 6 aldeias e 6 estradas, 2 de cada uma das 3 cores. O ladrão fica no deserto. Começa o jogador mais velho (p. 2).
-- **Treino:** a) caminho; b) encruzilhada, sempre no lugar de uma aldeia sua; c) terreno; d) terreno; e) encruzilhada (p. 3 e 4; manual original, p. 4).
+> [!treino] **Treino rápido: onde vai cada peça?** Num terreno, numa encruzilhada ou num caminho?
+>
+> ?? a) Uma estrada.
+> - ( ) Terreno
+> - ( ) Encruzilhada
+> - (x) Caminho
+> = Num caminho, um lado de terreno (p. 3; manual original, p. 4).
+>
+> ?? b) Uma cidade.
+> - ( ) Terreno
+> - (x) Encruzilhada
+> - ( ) Caminho
+> = Numa encruzilhada, sempre no lugar de uma aldeia sua (p. 4).
+>
+> ?? c) O ladrão.
+> - (x) Terreno
+> - ( ) Encruzilhada
+> - ( ) Caminho
+> = Num terreno (p. 4).
+>
+> ?? d) Uma ficha numerada.
+> - ( ) Encruzilhada
+> - (x) Terreno
+> - ( ) Caminho
+> = Num terreno (p. 2; manual original, p. 4).
+>
+> ?? e) Uma aldeia.
+> - ( ) Terreno
+> - ( ) Caminho
+> - (x) Encruzilhada
+> = Numa encruzilhada (p. 3; manual original, p. 4).
 
 ## 3. Etapa 2: rolar os dados e produzir
 
@@ -144,19 +223,66 @@ As respostas ficam escondidas no fim de cada etapa: tente antes de abrir. No fim
 >
 > Se o ladrão estivesse nessa montanha, o 8 não daria nada a ninguém.
 
-> [!complete] **Complete.** Carla tem uma aldeia encostada numa colina com 6, numa floresta com 3 e num pasto com 9, e uma cidade encostada na mesma floresta com 3, numa lavoura com 11 e numa montanha com 10. Sai 3. Já sabemos que só a floresta produz. Complete: quantas madeiras Carla recebe, e por quê?
+> [!complete] **Complete.** Carla tem uma aldeia encostada numa colina com 6, numa floresta com 3 e num pasto com 9, e uma cidade encostada na mesma floresta com 3, numa lavoura com 11 e numa montanha com 10. Sai 3. Já sabemos que só a floresta produz.
+>
+> ?? Quantas madeiras Carla recebe?
+> - ( ) 1, porque é um terreno só
+> - ( ) 2, uma por construção
+> - (x) 3
+> - ( ) 4, duas por construção
+> = 3 madeiras: 1 pela aldeia e 2 pela cidade, as duas na floresta com 3 (p. 2 e 4).
 
-> [!suavez] **Sua vez.** Volte à mesa de Ana no exemplo resolvido. O que ela recebe se sair 5? E 6? E 10? E 7?
+> [!suavez] **Sua vez.** Volte à mesa de Ana no exemplo resolvido.
+>
+> ?? Sai 5. O que Ana recebe?
+> - (x) 1 cereais
+> - ( ) 2 cereais
+> - ( ) 1 lã
+> = 1 cereais, pela aldeia na lavoura com 5. A cidade não encosta nesse terreno (p. 2 e 4).
+>
+> ?? Sai 6. O que Ana recebe?
+> - ( ) 1 argila
+> - (x) 2 argilas
+> - ( ) 2 madeiras
+> = 2 argilas, pela cidade na colina com 6 (p. 2 e 4).
+>
+> ?? Sai 10. O que Ana recebe?
+> - ( ) 2 lãs
+> - ( ) 1 minério
+> - (x) 1 lã
+> = 1 lã, pela aldeia no pasto com 10 (p. 2 e 4).
+>
+> ?? Sai 7. O que Ana recebe?
+> - ( ) 1 carta de cada terreno encostado nas suas construções
+> - (x) Nada
+> - ( ) 1 carta à escolha da reserva
+> = Nada: o 7 não produz (p. 2 e 4).
 
 > [!treino] **Treino rápido: qual sai mais?**
 >
-> a) 6 ou 9? b) 2 ou 12? c) 4 ou 11? d) Por que nenhuma ficha tem o 7?
-
-### Respostas da etapa 2
-
-- **Complete:** 3 madeiras: 1 pela aldeia e 2 pela cidade, as duas na floresta com 3 (p. 2 e 4).
-- **Sua vez:** 5 dá 1 cereais (aldeia na lavoura). 6 dá 2 argilas (cidade na colina). 10 dá 1 lã (aldeia no pasto). 7 não dá nada (p. 2 e 4).
-- **Treino:** a) 6, que sai de 5 jeitos contra 4 do 9. b) Iguais, 1 jeito cada. c) 4, com 3 jeitos contra 2. d) Porque o 7 não produz: ele aciona o ladrão (p. 4).
+> ?? a) 6 ou 9?
+> - (x) 6
+> - ( ) 9
+> - ( ) Saem igual
+> = 6, que sai de 5 jeitos contra 4 do 9 (p. 1).
+>
+> ?? b) 2 ou 12?
+> - ( ) 2
+> - ( ) 12
+> - (x) Saem igual
+> = Iguais, 1 jeito cada (p. 1).
+>
+> ?? c) 4 ou 11?
+> - ( ) Saem igual
+> - (x) 4
+> - ( ) 11
+> = 4, com 3 jeitos contra 2 (p. 1).
+>
+> ?? d) Por que nenhuma ficha tem o 7?
+> - ( ) Porque o 7 é o resultado mais raro dos dados
+> - ( ) Porque o 7 é o número do deserto
+> - (x) Porque o 7 não produz: ele aciona o ladrão
+> = Porque o 7 não produz: ele aciona o ladrão. Ele é, na verdade, o resultado mais comum, e o deserto fica sem ficha (p. 4).
 
 ## 4. Etapa 3: trocar e construir
 
@@ -188,29 +314,62 @@ As respostas ficam escondidas no fim de cada etapa: tente antes de abrir. No fim
 >
 > Com a reserva, daria 4 lãs pela argila e acabaria sem cartas. Ela oferece a Bruno 1 lã por 1 argila, e ele aceita. Ana constrói a estrada, depois a aldeia, que respeita a regra da distância, e fica com 3 lãs.
 
-> [!complete] **Complete.** Bruno tem uma aldeia no porto especial de minério e, na mão, 5 minérios e 1 cereais. Ele quer uma cidade. Já sabemos que a cidade custa 3 minérios e 2 cereais, então falta 1 cereais. Complete: que troca ele faz com a reserva, e com que cartas termina o turno?
-
-> [!suavez] **Sua vez.** Carla tem uma aldeia num porto 3:1 e a mão: 3 madeiras, 3 argilas, 1 lã, 2 cereais e 1 minério. Responda:
+> [!complete] **Complete.** Bruno tem uma aldeia no porto especial de minério e, na mão, 5 minérios e 1 cereais. Ele quer uma cidade. Já sabemos que a cidade custa 3 minérios e 2 cereais, então falta 1 cereais.
 >
-> 1. Ela consegue fazer uma aldeia e duas estradas? O que sobra?
-> 2. Ela consegue, sem ajuda de outro jogador, fazer uma aldeia, uma estrada e comprar uma carta de desenvolvimento?
+> ?? Que troca ele faz com a reserva?
+> - ( ) 4 minérios por 1 cereais
+> - (x) 2 minérios por 1 cereais
+> - ( ) 3 minérios por 1 cereais
+> = Pelo porto especial de minério, entrega 2 minérios e recebe 1 cereais (p. 3).
+>
+> ?? Com que cartas ele termina o turno, depois de pagar a cidade?
+> - ( ) 1 minério
+> - ( ) 2 minérios
+> - ( ) 1 cereais
+> - (x) Nenhuma
+> = Nenhuma. Depois da troca, fica com 3 minérios e 2 cereais, paga a cidade e termina sem cartas (p. 3 e 4).
+
+> [!suavez] **Sua vez.** Carla tem uma aldeia num porto 3:1 e a mão: 3 madeiras, 3 argilas, 1 lã, 2 cereais e 1 minério.
+>
+> ?? Ela consegue fazer uma aldeia e duas estradas? O que sobra?
+> - ( ) Não: falta 1 argila
+> - ( ) Sim, e sobram 1 lã e 1 minério
+> - (x) Sim, e sobram 1 cereais e 1 minério
+> - ( ) Sim, e não sobra nada
+> = Sim. Aldeia e duas estradas custam 3 argilas, 3 madeiras, 1 lã e 1 cereais. Sobram 1 cereais e 1 minério (p. 3).
+>
+> ?? Ela consegue, sem ajuda de outro jogador, fazer uma aldeia, uma estrada e comprar uma carta de desenvolvimento?
+> - (x) Não: falta 1 lã, e o porto 3:1 não resolve
+> - ( ) Sim: troca 3 madeiras por 1 lã no porto 3:1
+> - ( ) Sim: as cartas que ela tem já bastam
+> - ( ) Sim: troca 1 cereais por 1 lã com a reserva
+> = Não. As três coisas pedem 2 lãs e ela tem 1. Para conseguir a lã no porto 3:1, teria de entregar 3 cartas iguais, e ela só tem 3 de madeira e 3 de argila, das quais precisa de 2 de cada para a aldeia e a estrada. Só uma troca com outro jogador resolve (p. 3 e 4).
 
 > [!treino] **Treino rápido: pode ou não pode?**
 >
-> a) Construir uma aldeia a duas encruzilhadas de distância de outra aldeia, com estrada sua chegando lá.
+> ?? a) Construir uma aldeia a duas encruzilhadas de distância de outra aldeia, com estrada sua chegando lá.
+> - (x) Pode
+> - ( ) Não pode: entre duas aldeias precisa haver três encruzilhadas vazias
+> - ( ) Só pode se a outra aldeia for sua
+> = Pode: a regra da distância exige só as três encruzilhadas vizinhas vazias (p. 3).
 >
-> b) Construir uma aldeia vizinha de uma aldeia sua.
+> ?? b) Construir uma aldeia vizinha de uma aldeia sua.
+> - ( ) Pode: a regra da distância só vale para as aldeias dos outros
+> - ( ) Pode, se tiver estrada sua chegando lá
+> - (x) Não pode
+> = Não pode: a regra da distância vale também para as suas aldeias (p. 3).
 >
-> c) Fora da sua vez, trocar com outro jogador que também não está na vez.
+> ?? c) Fora da sua vez, trocar com outro jogador que também não está na vez.
+> - ( ) Pode, se os dois concordarem
+> - (x) Não pode
+> - ( ) Pode, mas só 1 carta por 1
+> = Não pode: só o jogador da vez troca (p. 3).
 >
-> d) Construir uma cidade numa encruzilhada vazia.
-
-### Respostas da etapa 3
-
-- **Complete:** pelo porto especial, entrega 2 minérios e recebe 1 cereais. Fica com 3 minérios e 2 cereais, paga a cidade e termina sem cartas (p. 3 e 4).
-- **Sua vez 1:** sim. Aldeia e duas estradas custam 3 argilas, 3 madeiras, 1 lã e 1 cereais. Sobram 1 cereais e 1 minério.
-- **Sua vez 2:** não. As três coisas pedem 2 lãs e ela tem 1. Para conseguir a lã no porto 3:1, teria de entregar 3 cartas iguais, e ela só tem 3 de madeira e 3 de argila, das quais precisa de 2 de cada para a aldeia e a estrada. Só uma troca com outro jogador resolve.
-- **Treino:** a) pode: a regra da distância exige só as três encruzilhadas vizinhas vazias. b) não: a regra vale também para as suas aldeias. c) não: só o jogador da vez troca. d) não: cidade só no lugar de aldeia sua (p. 3 e 4).
+> ?? d) Construir uma cidade numa encruzilhada vazia.
+> - ( ) Pode, se tiver estrada sua chegando lá
+> - ( ) Pode, se respeitar a regra da distância
+> - (x) Não pode
+> = Não pode: cidade só no lugar de uma aldeia sua (p. 4).
 
 ## 5. Etapa 4: o 7, o ladrão e as cartas de desenvolvimento
 
@@ -241,25 +400,60 @@ As respostas ficam escondidas no fim de cada etapa: tente antes de abrir. No fim
 >
 > O ladrão está no deserto. Ana o põe na montanha com 8, onde Bruno e Carla têm aldeias e ela não tem nada. Escolhe Bruno, que tem mais cartas, e tira uma das 5 cartas dele, sem ver. Depois segue para o comércio.
 
-> [!complete] **Complete.** No turno seguinte, Bruno rola 7, com 11 cartas na mão; Carla tem 12. O ladrão está na montanha com 8, e Bruno quer tirá-lo de lá. Complete: quantas cartas cada um devolve? E se Bruno preferisse deixar o ladrão onde está, poderia?
-
-> [!suavez] **Sua vez.** Carla tem uma carta de Monopólio comprada no turno anterior e uma de Cavaleiro comprada há tempos. Antes de rolar, joga o Monopólio e escolhe lã. Bruno tem 2 lãs, Diana tem 3 e Ana não tem nenhuma. Quantas lãs Carla ganha? Ela pode, no mesmo turno, jogar também o Cavaleiro?
-
-> [!treino] **Treino rápido.** Responda sim ou não.
+> [!complete] **Complete.** No turno seguinte, Bruno rola 7, com 11 cartas na mão; Carla tem 12. O ladrão está na montanha com 8, e Bruno quer tirá-lo de lá.
 >
-> a) Comprei uma Invenção agora. Posso jogá-la neste turno?
+> ?? Quantas cartas cada um devolve?
+> - ( ) Bruno 6 e Carla 6
+> - ( ) Bruno 4 e Carla 5
+> - (x) Bruno 5 e Carla 6
+> - ( ) Bruno nenhuma, porque foi ele quem rolou, e Carla 6
+> = Bruno devolve 5 (11 dividido por 2, arredondado para baixo) e Carla devolve 6. Quem rolou também descarta (p. 4).
 >
-> b) Comprei uma carta de Ponto de Vitória agora e ela me dá 10 pontos. Posso mostrá-la e vencer?
->
-> c) Joguei um Cavaleiro. Quem tem mais de 7 cartas descarta?
->
-> d) Posso mover o ladrão para o deserto?
+> ?? Se Bruno preferisse deixar o ladrão onde está, poderia?
+> - (x) Não
+> - ( ) Sim: mover o ladrão é opcional
+> - ( ) Sim, desde que não roube ninguém
+> = Não. Bruno é obrigado a mover o ladrão para outro terreno; não pode deixá-lo na montanha (p. 4; manual original, p. 11).
 
-### Respostas da etapa 4
+> [!suavez] **Sua vez.** Carla tem uma carta de Monopólio comprada no turno anterior e uma de Cavaleiro comprada há tempos. Antes de rolar, joga o Monopólio e escolhe lã. Bruno tem 2 lãs, Diana tem 3 e Ana não tem nenhuma.
+>
+> ?? Quantas lãs Carla ganha?
+> - ( ) 2, uma de cada jogador que tem lã
+> - ( ) 3, só do jogador que tem mais
+> - (x) 5
+> = 5 lãs, 2 de Bruno e 3 de Diana: todos os outros entregam todas as cartas de lã que tiverem (p. 2; manual original, p. 10).
+>
+> ?? Ela pode, no mesmo turno, jogar também o Cavaleiro?
+> - ( ) Sim, porque o Cavaleiro foi comprado há tempos
+> - ( ) Sim, desde que jogue um antes dos dados e o outro depois
+> - (x) Não
+> = Não pode jogar o Cavaleiro: só uma carta de desenvolvimento por turno (p. 4; manual original, p. 7 e 10).
 
-- **Complete:** Bruno devolve 5 (11 dividido por 2, arredondado para baixo) e Carla devolve 6. Bruno é obrigado a mover o ladrão para outro terreno; não pode deixá-lo na montanha (p. 4; manual original, p. 11).
-- **Sua vez:** 5 lãs, 2 de Bruno e 3 de Diana. Não pode jogar o Cavaleiro: só uma carta de desenvolvimento por turno (p. 4; manual original, p. 7 e 10).
-- **Treino:** a) não. b) sim, é a exceção da carta de Ponto de Vitória. c) não, o descarte é só no 7. d) sim (p. 4; manual original, p. 5, 7 e 11).
+> [!treino] **Treino rápido.** Escolha a resposta.
+>
+> ?? a) Comprei uma Invenção agora. Posso jogá-la neste turno?
+> - ( ) Sim: cartas de Progresso valem na hora
+> - (x) Não
+> - ( ) Sim, mas só depois da fase de construção
+> = Não: carta de desenvolvimento não se joga no turno em que foi comprada, e a Invenção não é exceção (p. 4; manual original, p. 7).
+>
+> ?? b) Comprei uma carta de Ponto de Vitória agora e ela me dá 10 pontos. Posso mostrá-la e vencer?
+> - (x) Sim
+> - ( ) Não: tenho de esperar o próximo turno
+> - ( ) Não: carta de Ponto de Vitória só conta quando o monte acaba
+> = Sim, é a exceção da carta de Ponto de Vitória (p. 4; manual original, p. 5 e 7).
+>
+> ?? c) Joguei um Cavaleiro. Quem tem mais de 7 cartas descarta?
+> - ( ) Sim, como no 7
+> - ( ) Só quem está encostado no novo terreno do ladrão
+> - (x) Não
+> = Não, o descarte é só no 7 (p. 4).
+>
+> ?? d) Posso mover o ladrão para o deserto?
+> - ( ) Não: o ladrão só sai do deserto, nunca volta
+> - (x) Sim
+> - ( ) Só com o Cavaleiro, não quando sai 7
+> = Sim: o deserto conta como outro terreno (p. 4; manual original, p. 5 e 11).
 
 ## 6. Etapa 5: a corrida até os 10 pontos
 

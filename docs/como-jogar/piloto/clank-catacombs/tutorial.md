@@ -41,11 +41,51 @@ Na ordem. O marcado *(depois)* se monta já e se usa mais tarde.
 
 > [!resolvido] **Exemplo resolvido.** Roubar, Roubar, Roubar, Tropeçar e Contornar: 3 Habilidades, 1 Bota e 1 cubo na área de Clank!. Adquire um Explorar da Reserva (custo 3), que vai para o descarte, e sai da Cripta por um túnel sem desenhos. No fim, compra as outras 5; Fileira intacta, sem ataque.
 
-> [!complete] **Complete.** O Jogador 2 tem Roubar, Roubar, Roubar, Tropeçar e Tropeçar. Quantos cubos ele põe na área de Clank!? Consegue adquirir um Explorar? Consegue sair da Cripta?
+> [!complete] **Complete.** O Jogador 2 tem Roubar, Roubar, Roubar, Tropeçar e Tropeçar.
+>
+> ?? Quantos cubos ele põe na área de Clank!?
+> - ( ) 1
+> - (x) 2
+> - ( ) 3
+> = 2 cubos, um por Tropeçar. Cada +1 Clank! põe na hora 1 cubo seu na área de Clank! (p. 6).
+>
+> ?? Ele consegue adquirir um Explorar?
+> - (x) Sim: tem 3 Habilidades, e o Explorar custa 3
+> - ( ) Não: o Explorar custa 4
+> - ( ) Não: cada Tropeçar anula uma Habilidade
+> = Com 3 Habilidades, adquire o Explorar, que custa 3 e vai para o descarte (p. 7).
+>
+> ?? Ele consegue sair da Cripta?
+> - ( ) Sim, pagando o túnel com 1 Habilidade
+> - ( ) Sim: o primeiro túnel não custa Bota
+> - (x) Não: ele não tem Bota
+> = Não sai da Cripta: não tem Bota, e cada túnel custa pelo menos 1 Bota (p. 7).
 
-> [!suavez] **Agora a sua mão.** Antes de jogar: quanto tem de Habilidade e de Botas? Quantos cubos vai pôr? Que carta cabe na sua Habilidade? Dá para sair da Cripta?
-
-**Resposta do Complete:** 2 cubos, um por Tropeçar. Com 3 Habilidades, adquire o Explorar. Não sai da Cripta: não tem Bota.
+> [!suavez] **Agora a sua mão.** Olhe as suas 5 cartas antes de jogar.
+>
+> ?? Como contar a Habilidade e as Botas da sua mão?
+> - ( ) 1 Habilidade por carta na mão, qualquer que seja
+> - ( ) 1 Bota por Roubar e 1 Habilidade por Contornar
+> - (x) 1 Habilidade por Roubar e 1 Bota por Contornar, mais o que o Rastejar imprime
+> = Roubar dá 1 Habilidade, Contornar dá 1 Bota, Tropeçar não dá nada e o Rastejar dá o efeito impresso nele (p. 2).
+>
+> ?? Quantos cubos você vai pôr na área de Clank!?
+> - (x) Um para cada Tropeçar da mão
+> - ( ) Um para cada carta jogada
+> - ( ) Nenhum agora: o cubo do Tropeçar só entra no ataque
+> = Cada Tropeçar faz +1 Clank!, e o cubo vai para a área de Clank! na hora, sem escolha (p. 6).
+>
+> ?? Que carta cabe na sua Habilidade?
+> - ( ) Só cartas da Reserva, no primeiro turno
+> - (x) Uma carta da Fileira ou da Reserva com custo até a sua Habilidade
+> - ( ) Qualquer carta, completando o custo com Botas
+> = O custo, no canto inferior direito, é pago em Habilidade, numa carta da Fileira ou da Reserva (p. 7).
+>
+> ?? Dá para sair da Cripta?
+> - ( ) Sempre: sair da Cripta é de graça
+> - ( ) Só com 3 Habilidades ou mais
+> - (x) Só se a mão tiver pelo menos 1 Bota
+> = Andar custa 1 Bota por túnel, e na mão inicial só o Contornar dá Bota, além do que o Rastejar imprimir (p. 7).
 
 ### O ataque do dragão
 
@@ -132,19 +172,34 @@ As respostas de cada etapa ficam escondidas no fim dela. Tente antes de abrir. N
 
 > [!atencao] O peão começa na Cripta, que fica na Peça Inicial mas fora da masmorra. A Cripta é também a única saída.
 
-> [!suavez] **Sua vez.** Você vai montar uma partida de 3 jogadores: o Jogador 1 começa, depois o Jogador 2, depois o Jogador 3. Responda olhando só o passo a passo:
+> [!suavez] **Sua vez.** Você vai montar uma partida de 3 jogadores: o Jogador 1 começa, depois o Jogador 2, depois o Jogador 3. Responda olhando só o passo a passo.
 >
-> 1. Em que casa da Trilha de Fúria fica o Marcador do Dragão, e quantos cubos sairão no primeiro ataque se nada mudar?
-> 2. Quantas fichas de Maestria ficam perto da Cripta?
-> 3. Quantos cubos cada um põe na área de Clank! antes de começar?
-> 4. Na Fileira aparece uma carta com o símbolo de Ataque do Dragão. O que você faz?
-
-### Respostas da etapa 1
-
-1. Na segunda casa de baixo para cima, a do peão com o número 3. Ela mostra 2, então saem 2 cubos (passo 1).
-2. Três, uma por jogador (passo 7).
-3. Jogador 1: 3; Jogador 2: 2; Jogador 3: 1 (passo 11).
-4. Troca por outra carta do Baralho da Masmorra até haver 6 cartas sem o símbolo, e embaralha a trocada de volta (passo 9).
+> ?? Em que casa da Trilha de Fúria fica o Marcador do Dragão, e quantos cubos sairão no primeiro ataque se nada mudar?
+> - ( ) Na terceira casa de baixo para cima; saem 3 cubos
+> - (x) Na segunda casa de baixo para cima; saem 2 cubos
+> - ( ) Na primeira casa de baixo para cima; saem 2 cubos
+> - ( ) Na casa que mostra 3; saem 3 cubos
+> = Na segunda casa de baixo para cima, a do peão com o número 3. Ela mostra 2, então saem 2 cubos (passo 1; p. 4).
+>
+> ?? Quantas fichas de Maestria ficam perto da Cripta?
+> - ( ) Uma só, para quem escapar primeiro
+> - ( ) Todas as da caixa
+> - (x) Três, uma por jogador
+> = Três, uma por jogador; as outras voltam à caixa (passo 7; p. 4).
+>
+> ?? Quantos cubos cada um põe na área de Clank! antes de começar?
+> - (x) Jogador 1: 3; Jogador 2: 2; Jogador 3: 1
+> - ( ) Jogador 1: 1; Jogador 2: 2; Jogador 3: 3
+> - ( ) 3 cubos cada um
+> - ( ) Nenhum: a área de Clank! começa vazia
+> = Jogador 1: 3; Jogador 2: 2; Jogador 3: 1. Quem começa põe mais (passo 11; p. 5).
+>
+> ?? Na Fileira aparece uma carta com o símbolo de Ataque do Dragão. O que você faz?
+> - ( ) Deixa a carta: o dragão ataca antes do primeiro turno
+> - ( ) Troca por outra e põe a trocada no descarte da Masmorra
+> - ( ) Deixa a carta: ela só ataca quando alguém a adquirir
+> - (x) Troca por outra até haver 6 cartas sem o símbolo, e embaralha a trocada de volta no Baralho da Masmorra
+> = Troca por outra carta do Baralho da Masmorra até haver 6 cartas sem o símbolo, e embaralha a trocada de volta (passo 9; p. 5).
 
 ## 3. Etapa 2: jogar o primeiro turno
 
@@ -172,28 +227,74 @@ As respostas de cada etapa ficam escondidas no fim dela. Tente antes de abrir. N
 >
 > Por que essa escolha: o Explorar (2 Habilidades e 1 Bota) é melhor que qualquer carta inicial, mas o Jogador 1 só vai usá-lo depois de embaralhar o descarte, no terceiro turno dele ou mais tarde.
 
-> [!complete] **Complete.** O Jogador 2 tem Roubar, Roubar, Tropeçar, Tropeçar e Contornar. Já somamos: 2 Habilidades e 1 Bota. Falta você dizer: quantos cubos ele põe na área de Clank!, se ele consegue adquirir um Explorar e se consegue combater o Goblin.
+> [!complete] **Complete.** O Jogador 2 tem Roubar, Roubar, Tropeçar, Tropeçar e Contornar. Já somamos: 2 Habilidades e 1 Bota. Falta o resto.
+>
+> ?? Quantos cubos ele põe na área de Clank!?
+> - ( ) 1
+> - ( ) Nenhum: o cubo só entra no ataque
+> - (x) 2
+> = 2 cubos, um por Tropeçar (p. 6).
+>
+> ?? Ele consegue adquirir um Explorar?
+> - (x) Não: o Explorar custa 3, e ele tem 2 Habilidades
+> - ( ) Sim: o Explorar custa 2
+> - ( ) Sim, usando a Bota no lugar da Habilidade que falta
+> = Não adquire o Explorar, que custa 3. Com 2 Habilidades, pode adquirir uma carta ou usar um Dispositivo de custo até 2, se houver na Fileira, e andar um túnel sem ícones (p. 6 e 7).
+>
+> ?? Ele consegue combater o Goblin?
+> - ( ) Sim: o Goblin custa 2 Habilidades
+> - (x) Não: o Goblin exige 2 Espadas, e ele não tem nenhuma
+> - ( ) Sim, aceitando 1 de dano no lugar das Espadas
+> = Não combate o Goblin, que exige 2 Espadas; as cartas iniciais não dão Espada (p. 7).
 
-> [!suavez] **Sua vez.** O Jogador 3 tem Roubar, Roubar, Roubar, Roubar e Tropeçar, e está na Cripta. O que ele pode fazer neste turno, e o que não pode?
+> [!suavez] **Sua vez.** O Jogador 3 tem Roubar, Roubar, Roubar, Roubar e Tropeçar, e está na Cripta.
+>
+> ?? O que ele pode fazer com a Habilidade?
+> - ( ) Adquirir um Explorar e guardar a Habilidade que sobra para o próximo turno
+> - ( ) Adquirir dois Explorar
+> - (x) Adquirir um Explorar e perder a Habilidade que sobra, ou adquirir outra carta de custo até 4
+> = Ele tem 4 Habilidades. Pode adquirir um Explorar (3) e perde a Habilidade que sobra, ou adquirir outra carta de custo até 4 (p. 6 e 7).
+>
+> ?? Ele pode sair da Cripta?
+> - (x) Não: ele não tem Bota
+> - ( ) Sim, pagando o túnel com 1 Habilidade
+> - ( ) Sim, se deixar o Tropeçar na mão
+> = Ele não pode sair da Cripta, porque não tem Bota (p. 7).
+>
+> ?? E o Tropeçar?
+> - ( ) Ele pode deixar o Tropeçar na mão e evitar o cubo
+> - (x) O cubo do Tropeçar vai para a área de Clank! de qualquer jeito
+> - ( ) O cubo só entra se ele adquirir alguma carta
+> = Todas as 5 cartas são jogadas, e o +1 Clank! do Tropeçar põe o cubo na área de Clank! de qualquer jeito (p. 6).
 
 > [!treino] **Treino rápido: recursos e barulho.** Para cada mão, diga quantas Habilidades, Espadas e Botas ela gera e quantos cubos o dono deixa na área de Clank! no fim do turno (comece com nenhum cubo dele lá).
 >
-> a) Roubar, Roubar, Tropeçar, Tropeçar, Explorar
+> ?? a) Roubar, Roubar, Tropeçar, Tropeçar, Explorar
+> - ( ) 3 Habilidades, 0 Espadas, 1 Bota, 2 cubos
+> - (x) 4 Habilidades, 0 Espadas, 1 Bota, 2 cubos
+> - ( ) 4 Habilidades, 0 Espadas, 1 Bota, 1 cubo
+> - ( ) 4 Habilidades, 0 Espadas, 2 Botas, 2 cubos
+> = 4 Habilidades (1 de cada Roubar e 2 do Explorar), 0 Espadas, 1 Bota, 2 cubos (p. 6).
 >
-> b) Ataque Surpresa (3 Espadas e -2 Clank!), Tropeçar, Roubar, Roubar, Contornar
+> ?? b) Ataque Surpresa (3 Espadas e -2 Clank!), Tropeçar, Roubar, Roubar, Contornar
+> - ( ) 2 Habilidades, 3 Espadas, 1 Bota, 1 cubo
+> - ( ) 2 Habilidades, 3 Espadas, 1 Bota, nenhum cubo e um desconto de 1 guardado para o próximo turno
+> - ( ) 3 Habilidades, 3 Espadas, 1 Bota, nenhum cubo
+> - (x) 2 Habilidades, 3 Espadas, 1 Bota, nenhum cubo
+> = 2 Habilidades, 3 Espadas, 1 Bota, nenhum cubo. O Tropeçar põe 1 cubo e o Ataque Surpresa tira esse cubo; sobra um desconto de 1 que se perde no fim do turno (p. 6).
 >
-> c) Mercenário, Mercenário, Explorar, Roubar, Tropeçar
+> ?? c) Mercenário, Mercenário, Explorar, Roubar, Tropeçar
+> - (x) 5 Habilidades, 4 Espadas, 1 Bota, 1 cubo
+> - ( ) 4 Habilidades, 4 Espadas, 1 Bota, 1 cubo
+> - ( ) 5 Habilidades, 2 Espadas, 1 Bota, 1 cubo
+> - ( ) 5 Habilidades, 4 Espadas, 2 Botas, 1 cubo
+> = 5 Habilidades (1 de cada Mercenário, 2 do Explorar, 1 do Roubar), 4 Espadas, 1 Bota, 1 cubo (p. 6).
 >
-> d) A mesma mão de b, mas jogando o Tropeçar antes do Ataque Surpresa. Muda alguma coisa?
-
-### Respostas da etapa 2
-
-- **Complete (Jogador 2):** 2 cubos. Não adquire o Explorar, que custa 3. Não combate o Goblin, que exige 2 Espadas. Com 2 Habilidades, pode adquirir uma carta ou usar um Dispositivo de custo até 2, se houver na Fileira, e andar um túnel sem ícones (p. 6 e 7).
-- **Sua vez (Jogador 3):** 4 Habilidades, nenhuma Bota e +1 Clank!. Ele pode adquirir um Explorar (3) e perde a Habilidade que sobra, ou adquirir outra carta de custo até 4. Ele não pode sair da Cripta, porque não tem Bota. O cubo do Tropeçar vai para a área de Clank! de qualquer jeito.
-- **Treino a:** 4 Habilidades, 0 Espadas, 1 Bota, 2 cubos.
-- **Treino b:** 2 Habilidades, 3 Espadas, 1 Bota, nenhum cubo. O Tropeçar põe 1 cubo e o Ataque Surpresa tira esse cubo; sobra um desconto de 1 que se perde no fim do turno.
-- **Treino c:** 5 Habilidades, 4 Espadas, 1 Bota, 1 cubo.
-- **Treino d:** não muda nada. A ordem não altera o resultado (p. 6; é a situação do exemplo da p. 13).
+> ?? d) A mesma mão de b, mas jogando o Tropeçar antes do Ataque Surpresa. Muda alguma coisa?
+> - ( ) Sim: fica 1 cubo, porque o desconto só vale para barulho feito depois dele
+> - (x) Não muda nada
+> - ( ) Sim: o desconto que sobra tira um cubo de outro jogador
+> = Não muda nada. A ordem não altera o resultado (p. 6; é a situação do exemplo da p. 13).
 
 ## 4. Etapa 3: fechar o turno e enfrentar o dragão
 
@@ -230,23 +331,54 @@ As respostas de cada etapa ficam escondidas no fim dela. Tente antes de abrir. N
 >
 > Por que importa: os cubos que ficaram vão disputar o próximo sorteio junto com o barulho novo.
 
-> [!complete] **Complete.** Partida de 3 jogadores: Jogador 1 (vermelho), Jogador 2 (azul) e Jogador 3 (verde). O Marcador está na quarta casa, que mostra 3, e há uma carta de Perigo na Fileira, então saem 4 cubos. Saem: azul, Fantasma, verde e preto. O preto vai para o Banco e o azul é 1 de dano para o Jogador 2. Termine: quanto dano cada um sofre no total, e para onde vai o Fantasma?
+> [!complete] **Complete.** Partida de 3 jogadores: Jogador 1 (vermelho), Jogador 2 (azul) e Jogador 3 (verde). O Marcador está na quarta casa, que mostra 3, e há uma carta de Perigo na Fileira, então saem 4 cubos. Saem: azul, Fantasma, verde e preto. O preto vai para o Banco e o azul é 1 de dano para o Jogador 2. Termine.
+>
+> ?? Quanto dano cada um sofre no total?
+> - ( ) Jogador 1: 0; Jogador 2: 1; Jogador 3: 1
+> - ( ) Jogador 1: 0; Jogador 2: 2; Jogador 3: 2
+> - (x) Jogador 1: 1; Jogador 2: 2; Jogador 3: 2
+> = Jogador 1: 1 (o Fantasma); Jogador 2: 2 (azul e Fantasma); Jogador 3: 2 (verde e Fantasma). O Fantasma fere todos os jogadores, mesmo quem não tem cubo sorteado (p. 12).
+>
+> ?? Para onde vai o Fantasma?
+> - ( ) Para o Banco, como o cubo preto
+> - (x) Volta para a área de Clank!
+> - ( ) Fica na Bolsa do Dragão
+> = O Fantasma volta para a área de Clank! depois do ataque (p. 12).
 
-> [!suavez] **Sua vez.** No fim do turno do Jogador 2, entram duas cartas novas na Fileira, as duas com o símbolo de Ataque do Dragão. Uma terceira carta com o símbolo já estava lá desde o turno anterior. Uma das novas tem um texto Revelar. Em que ordem as coisas acontecem, e quantos ataques há?
+> [!suavez] **Sua vez.** No fim do turno do Jogador 2, entram duas cartas novas na Fileira, as duas com o símbolo de Ataque do Dragão. Uma terceira carta com o símbolo já estava lá desde o turno anterior. Uma das novas tem um texto Revelar.
+>
+> ?? Em que ordem as coisas acontecem?
+> - ( ) Primeiro o ataque; depois o texto Revelar
+> - ( ) O ataque acontece, e o texto Revelar só vale quando alguém adquirir a carta
+> - (x) Primeiro o texto Revelar, assim que a carta aparece; depois o ataque
+> = Primeiro o texto Revelar é executado, assim que a carta aparece. Depois vem o ataque (p. 11 e 12).
+>
+> ?? Quantos ataques há?
+> - (x) Um
+> - ( ) Dois, um por carta nova com o símbolo
+> - ( ) Três, um por carta com o símbolo na Fileira
+> = Há **um** ataque, porque entraram cartas novas com o símbolo; vários símbolos não fazem mais de um. A carta antiga não conta (p. 11 e 12).
 
 > [!treino] **Treino rápido: quantos cubos saem?**
 >
-> a) Marcador na terceira casa, nenhuma carta de Perigo.
+> ?? a) Marcador na terceira casa, nenhuma carta de Perigo.
+> - ( ) 2
+> - (x) 3
+> - ( ) 4
+> = 3, o número da terceira casa da Trilha de Fúria (2, 2, 3, 3, 4, 4, 5, de baixo para cima) (p. 4 e 12).
 >
-> b) Marcador na sexta casa, duas cartas de Perigo.
+> ?? b) Marcador na sexta casa, duas cartas de Perigo.
+> - ( ) 4
+> - ( ) 5
+> - (x) 6
+> - ( ) 7
+> = 4 da casa mais 2 de Perigo, 6 (p. 11 e 12).
 >
-> c) Marcador na quinta casa e uma carta de Perigo, mas o ataque é no turno de um jogador que já escapou, numa partida de 3 jogadores (veja a etapa 5).
-
-### Respostas da etapa 3
-
-- **Complete:** Jogador 1: 1 (o Fantasma); Jogador 2: 2 (azul e Fantasma); Jogador 3: 2 (verde e Fantasma). O Fantasma volta para a área de Clank! depois do ataque.
-- **Sua vez:** primeiro o texto Revelar é executado, assim que a carta aparece. Depois há **um** ataque, porque entraram cartas novas com o símbolo. A carta antiga não conta (p. 11 e 12).
-- **Treino a:** 3. **Treino b:** 4 da casa mais 2 de Perigo, 6. **Treino c:** 4, porque no turno de quem saiu do jogo a trilha e o Perigo são ignorados; numa partida de 2 seriam 6 (p. 14).
+> ?? c) Marcador na quinta casa e uma carta de Perigo, mas o ataque é no turno de um jogador que já escapou, numa partida de 3 jogadores (veja a etapa 5).
+> - ( ) 5
+> - (x) 4
+> - ( ) 6
+> = 4, porque no turno de quem saiu do jogo a trilha e o Perigo são ignorados; numa partida de 2 seriam 6 (p. 14).
 
 ## 5. Etapa 4: explorar a masmorra
 
@@ -300,31 +432,64 @@ As respostas de cada etapa ficam escondidas no fim dela. Tente antes de abrir. N
 >
 > Ele pode gastar as 2 Espadas nos ícones e chegar inteiro, ou guardá-las para o Goblin, que dá 1 de Ouro, e aceitar 2 de dano: 2 cubos do suprimento no Contador. O Jogador 1 prefere chegar inteiro: 1 de Ouro não paga dois ferimentos tão cedo. As 6 Habilidades viram dois Explorar da Reserva (3 cada). Nenhum recurso se perdeu.
 
-> [!complete] **Complete.** O Jogador 2 está numa sala na borda da masmorra e ainda tem 1 Bota. Ele atravessa o túnel que leva à borda e revela a peça nova. Na posição em que ele a encaixaria, o túnel ganha um ícone de Pegada. O que ele pode fazer? Já sabemos que, nessa posição, o túnel custaria 2 Botas. Complete com as duas saídas que a regra permite.
-
-> [!suavez] **Sua vez.** Três situações:
+> [!complete] **Complete.** O Jogador 2 está numa sala na borda da masmorra e ainda tem 1 Bota. Ele atravessa o túnel que leva à borda e revela a peça nova. Na posição em que ele a encaixaria, o túnel ganha um ícone de Pegada. Já sabemos que, nessa posição, o túnel custaria 2 Botas.
 >
-> 1. O Jogador 3 entra numa sala que dá 2 de Ouro, sai e volta a ela no mesmo turno. Quanto Ouro ganha?
-> 2. O Jogador 1 entra numa Caverna de Cristal com 2 Botas ainda não gastas e uma carta que permite se teletransportar para uma sala vizinha. O que ele pode fazer?
-> 3. O Jogador 2 quer ir de uma sala a outra por um portal. O túnel até o portal de saída tem um ícone de Monstro, e ele não tem Espadas. Quanto custa a viagem?
+> ?? Quais são as duas saídas que a regra permite?
+> - ( ) Atravessar com a Bota que tem e sofrer 1 de dano no lugar da segunda Bota; ou devolver a peça à pilha e revelar a próxima
+> - (x) Girar a peça, no mesmo lugar, para uma orientação em que o túnel não tenha Pegada; ou parar o movimento e conseguir mais uma Bota antes de continuar
+> - ( ) Encaixar a peça em outro espaço vazio da borda; ou adquirir uma carta que dê Bota e usá-la na hora
+> = Ele pode girar a peça para outra orientação, no mesmo lugar, em que o túnel não tenha Pegada. Ou pode interromper o movimento e conseguir mais uma Bota antes de continuar, por exemplo com um Dispositivo ou um monstro cuja recompensa dê Bota, se houver na Fileira. Adquirir uma carta não serve aqui: ela vai para o descarte, não para a mão (p. 7 e 9).
+
+> [!suavez] **Sua vez.** Três situações.
+>
+> ?? 1. O Jogador 3 entra numa sala que dá 2 de Ouro, sai e volta a ela no mesmo turno. Quanto Ouro ganha?
+> - ( ) 4
+> - (x) 2
+> - ( ) Nenhum: a recompensa só vem no fim do turno
+> = 2 de Ouro, só uma vez. Cada sala dá a recompensa uma vez por turno (p. 10).
+>
+> ?? 2. O Jogador 1 entra numa Caverna de Cristal com 2 Botas ainda não gastas e uma carta que permite se teletransportar para uma sala vizinha. O que ele pode fazer?
+> - ( ) Gastar as 2 Botas, mas não se teletransportar
+> - ( ) Se teletransportar; o Teletransporte tira a exaustão e libera as 2 Botas
+> - ( ) Nada até o fim do turno
+> - (x) Se teletransportar, sem gastar as Botas, e continuar exausto
+> = Pode se teletransportar, mas não pode gastar as Botas. Continua exausto depois (p. 10 e 11).
+>
+> ?? 3. O Jogador 2 quer ir de uma sala a outra por um portal. O túnel até o portal de saída tem um ícone de Monstro, e ele não tem Espadas. Quanto custa a viagem?
+> - (x) 1 Bota pelo percurso inteiro e 1 de dano pelo Monstro
+> - ( ) 2 Botas, uma por túnel, e 1 de dano pelo Monstro
+> - ( ) 1 Bota e nenhum dano: o portal ignora os ícones
+> - ( ) Ele não pode passar sem Espada
+> = 1 Bota pelo percurso inteiro e 1 de dano pelo Monstro, com um cubo do suprimento, desde que ele tenha cubos e que isso não encha o Contador (p. 10 e 12).
 
 > [!treino] **Treino rápido: quanto custa este túnel?** Diga as Botas, as Gazuas e o dano.
 >
-> a) Um túnel sem ícones.
+> ?? a) Um túnel sem ícones.
+> - ( ) Nenhuma Bota, nenhuma Gazua, nenhum dano
+> - ( ) 2 Botas, nenhuma Gazua, nenhum dano
+> - (x) 1 Bota, nenhuma Gazua, nenhum dano
+> = 1 Bota: todo túnel custa pelo menos 1 (p. 7).
 >
-> b) Pegada e um Monstro, gastando 1 Espada.
+> ?? b) Pegada e um Monstro, gastando 1 Espada.
+> - (x) 2 Botas, nenhuma Gazua, nenhum dano
+> - ( ) 2 Botas, nenhuma Gazua, 1 de dano
+> - ( ) 3 Botas, nenhuma Gazua, nenhum dano
+> - ( ) 1 Bota, nenhuma Gazua, nenhum dano
+> = 2 Botas, nenhum dano: a Pegada dobra o custo, e a Espada evita o dano do Monstro (p. 7).
 >
-> c) Cadeado e dois Monstros, sem gastar Espadas.
+> ?? c) Cadeado e dois Monstros, sem gastar Espadas.
+> - ( ) 1 Bota, 2 Gazuas, 2 de dano
+> - ( ) 1 Bota, 1 Gazua, 1 de dano
+> - ( ) 2 Botas, 1 Gazua, 2 de dano
+> - (x) 1 Bota, 1 Gazua, 2 de dano
+> = 1 Bota, 1 Gazua, 2 de dano, um por ícone de Monstro (p. 7).
 >
-> d) Um túnel de sentido único, andando contra a seta, com 3 Botas.
-
-### Respostas da etapa 4
-
-- **Complete:** ele pode girar a peça para outra orientação, no mesmo lugar, em que o túnel não tenha Pegada. Ou pode interromper o movimento e conseguir mais uma Bota antes de continuar, por exemplo com um Dispositivo ou um monstro cuja recompensa dê Bota, se houver na Fileira. Adquirir uma carta não serve aqui: ela vai para o descarte, não para a mão (p. 7 e 9).
-- **Sua vez 1:** 2 de Ouro, só uma vez. Cada sala dá a recompensa uma vez por turno (p. 10).
-- **Sua vez 2:** pode se teletransportar, mas não pode gastar as Botas. Continua exausto depois (p. 10 e 11).
-- **Sua vez 3:** 1 Bota pelo percurso inteiro e 1 de dano pelo Monstro, com um cubo do suprimento, desde que ele tenha cubos e que isso não encha o Contador (p. 10 e 12).
-- **Treino a:** 1 Bota. **b:** 2 Botas, nenhum dano. **c:** 1 Bota, 1 Gazua, 2 de dano. **d:** não pode passar, com qualquer número de Botas. Só Teletransporte ou um Grande Segredo específico permitem ir contra a seta (p. 7, 11 e Guia de Fichas).
+> ?? d) Um túnel de sentido único, andando contra a seta, com 3 Botas.
+> - ( ) 2 Botas
+> - (x) Não pode passar, com qualquer número de Botas
+> - ( ) As 3 Botas
+> - ( ) 1 Bota e 1 de dano
+> = Não pode passar, com qualquer número de Botas. Só Teletransporte ou um Grande Segredo específico permitem ir contra a seta (p. 7, 11 e Guia de Fichas).
 
 ## 6. Etapa 5: a partida inteira, do Artefato aos pontos
 
