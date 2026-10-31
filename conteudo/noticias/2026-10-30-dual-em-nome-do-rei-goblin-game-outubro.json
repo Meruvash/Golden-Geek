@@ -25,8 +25,8 @@
   ]
  ],
  "corpo": [
-  "Dual, de Gustavo Lira, é um abstrato de 10 minutos num grid de cartas 5x5, em que os jogadores formam pares de símbolos e bloqueiam o caminho do outro. Em Nome do Rei, de Ramsés Sohn, é um jogo de cartas medieval em que cada general precisa chegar a uma força exata para resgatar a princesa, e todos perdem se o Necromante ficar forte demais.",
-  "Goblin Game, de Kupka David, é um jogo de cartas e dados para 3 a 6 pessoas em que o eliminado volta como fantasma. 5 Pares e X-Fominha, versão nacional de Burger Slam, são jogos rápidos de reflexo da PaperGames."
+  "Dual, de Gustavo Lira, é um abstrato de 10 minutos num grid de cartas 5x5, em que os jogadores formam pares de cartas e bloqueiam o caminho do outro. Em Nome do Rei, de Ramsés Sohn, é um jogo de cartas medieval em que cada general precisa chegar a uma força exata para resgatar a princesa, e todos perdem se o Necromante ficar forte demais.",
+  "Goblin Game, de Kupka David, é um jogo de cartas e dados para 3 a 6 pessoas em que o eliminado volta como fantasma. Da PaperGames, 5 Pares, de Danijel Pošta, é uma corrida de 25 minutos para formar cinco pares de cartas, e X-Fominha, versão nacional de Burger Slam, de Christoph Behre, mistura blefe e memória na montagem de hambúrgueres."
  ],
  "no_brasil": "Os cinco aparecem como lançados em outubro no nosso calendário de lançamentos. Em 30/10/2026, Em Nome do Rei custava R$ 124,90 (R$ 118,66 no Pix) na loja da CapyCat, e 5 Pares, R$ 65,90 em loja parceira. Não encontramos preço em loja de Dual, Goblin Game e X-Fominha.",
  "critica": [],
@@ -78,6 +78,11 @@
   {
    "nome": "Playeasy: 5 Pares",
    "url": "https://www.playeasy.com.br/",
+   "data": "30/10/2026"
+  },
+  {
+   "nome": "IndieBrasilis: Goblin Game",
+   "url": "https://indiebrasilis.com.br/?p=3303",
    "data": "30/10/2026"
   }
  ],
