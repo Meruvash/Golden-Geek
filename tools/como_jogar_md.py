@@ -13,6 +13,10 @@ atencao, tabelas e listas; explicação (entender), exemplo (resolvido), ediçã
 um toque; as tarefas e respostas de cada etapa vão juntas para "Pratique esta etapa"; as seções de apoio (OPCIONAIS)
 ficam inteiras recolhidas. O tempo de leitura do topo conta só o que fica à vista.
   (p. 7)               página do manual, vira a etiqueta "p. 7"
+  ?? Pergunta          exercício de múltipla escolha (pedido do editor em 31/10/2026), em qualquer bloco ou seção:
+  - ( ) opção          opção errada
+  - (x) opção          a certa (uma só)
+  = explicação         aparece quando o leitor escolhe uma opção, com a certa marcada
 Só gera página com "publicar": true no JSON, marcado depois da auditoria independente; rascunho não vai ao ar.
 Uma página escrita à mão (sem tutorial.md) não é tocada: o JSON dela só alimenta a lista em /como-jogar/.
 """
@@ -91,6 +95,28 @@ def blocos(linhas, dobrar=False):
             bq[0] = re.sub(r"^\*\*" + re.escape(rot) + r"\.\*\*\s*", "", bq[0], flags=re.I)
             out.append(f'<aside class="call {tipo}"><p class="rot">{rot}</p>{blocos(bq)}</aside>')
             continue
+        if l.startswith("?? "):
+            # pergunta de múltipla escolha: "?? pergunta", "- ( ) opção", "- (x) opção certa", "= explicação"
+            perg, ops, expl = [l[3:].strip()], [], []
+            i += 1
+            while i < len(linhas) and linhas[i].strip() and not linhas[i].startswith("?? "):
+                x = linhas[i].strip()
+                m = re.match(r"[-*] \((x| )\) (.*)", x, re.I)
+                if m:
+                    ops.append((m.group(1).lower() == "x", m.group(2)))
+                elif x.startswith("= "):
+                    expl.append(x[2:])
+                elif expl:
+                    expl.append(x)
+                elif ops:
+                    ops[-1] = (ops[-1][0], ops[-1][1] + " " + x)
+                else:
+                    perg.append(x)
+                i += 1
+            botoes = "".join(f'<button type="button" class="q-op"{" data-ok" if ok else ""}>{inline(t)}</button>' for ok, t in ops)
+            out.append(f'<div class="quiz"><p class="q-p">{inline(" ".join(perg))}</p><div class="q-ops">{botoes}</div>'
+                       f'<div class="q-exp" role="status" hidden><p><b class="q-res"></b> {inline(" ".join(expl))}</p></div></div>')
+            continue
         if l.startswith("|"):
             tab = []
             while i < len(linhas) and linhas[i].startswith("|"):
@@ -117,7 +143,7 @@ def blocos(linhas, dobrar=False):
             i += 1
             continue
         par = []
-        while i < len(linhas) and linhas[i].strip() and not re.match(r"(>|\||#{2,3} |(\d+\.|[-*]) )", linhas[i]):
+        while i < len(linhas) and linhas[i].strip() and not re.match(r"(>|\||#{2,3} |(\d+\.|[-*]) |\?\? )", linhas[i]):
             par.append(linhas[i].strip())
             i += 1
         texto = " ".join(par)

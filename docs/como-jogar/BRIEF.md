@@ -21,6 +21,13 @@ FORMATO DO tutorial.md (o conversor do site depende disso; siga à risca, igual 
 - Respostas sempre em "### Respostas da etapa X" (ou "### Respostas da avaliação", "### Resposta do Complete") logo depois do bloco que pergunta, e só respostas dentro dela até o próximo ## ou ###.
 - Blocos (blockquote com marcador, uma ou várias linhas começando com "> "): [!entender] Para entender; [!passos] Passo a passo (abra com **Título** (p. N) e depois lista numerada); [!resolvido] exemplo resolvido; [!complete] tarefa para completar; [!suavez] tarefa sem ajuda; [!treino] treino rápido; [!atencao] erro comum; [!edicao] diferença entre edições ou ambiguidade do manual; [!dica] estratégia (sempre como sugestão).
 - Citação de página: "(p. 7)" ou "(p. 4 e 5)" logo depois da frase, como em Clank!.
+- EXERCÍCIOS SÃO DE MÚLTIPLA ESCOLHA (decisão do editor em 31/10/2026): toda pergunta de [!complete], [!suavez], [!treino], da "Avaliação final" e do "Comece em 4 minutos" usa a marcação abaixo; o leitor toca numa opção e vê a certa e a explicação. Não há mais seções "### Respostas": a resposta fica na linha "= ".
+  ?? Pergunta curta e clara?
+  - ( ) opção errada
+  - (x) opção certa (uma só)
+  - ( ) opção errada
+  = Explicação com a página (p. 7); na avaliação final, qual etapa reler.
+  3 ou 4 opções; as erradas são enganos plausíveis e precisam estar erradas pelo manual; varie a posição da certa. Dentro de bloco, cada linha leva "> " na frente.
 - Tabelas em markdown simples (| a | b |), só quando ajudam.
 - Negrito com **...**, itálico com *...*. Sem HTML. Zero travessão (— e –) no texto. Rode python3 /home/user/Golden-Geek/tools/vicios.py se ele aceitar um arquivo (veja o uso no próprio arquivo) e corrija os avisos.
 

@@ -21,6 +21,7 @@ Linha editorial de ensino de regras, separada das resenhas. Voz neutra e exata d
 - Regra só do manual oficial (português da edição brasileira; sem ele, o oficial em inglês), com a página. Resenha, vídeo e fórum servem só para levantar dúvidas.
 - Termos exatamente como impressos na edição brasileira; com manual em inglês, tradução clara e sempre a mesma, e o aviso ao leitor.
 - Toda conta de exemplo refeita em script.
+- Exercícios em múltipla escolha (marcação ?? no BRIEF), com as opções erradas conferidas contra o manual.
 - Manual e PDFs ficam no scratchpad, nunca no repositório.
 - Nunca explicar o método de ensino ao leitor (pedido do editor em 31/10/2026).
 

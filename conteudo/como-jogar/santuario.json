@@ -19,5 +19,6 @@
  "etapas": 5,
  "resenha": "santuario",
  "chamada": "Pegue uma peça, use uma carta de ação e encaixe Animais, Prédios e Projetos no seu zoológico. Começa com um resumo para jogar em 4 minutos e segue em cinco etapas, da mesa montada à contagem de pontos.",
- "md": "docs/como-jogar/santuario/tutorial.md"
+ "md": "docs/como-jogar/santuario/tutorial.md",
+ "publicar": true
 }
