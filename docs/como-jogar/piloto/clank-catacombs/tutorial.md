@@ -2,8 +2,6 @@
 
 *Rascunho experimental da linha COMO JOGAR do Elite Boardgamers. Não publicado. Regras conferidas no manual da edição brasileira (Galápagos, v1.0) e no manual original em inglês (Dire Wolf Digital, 2022). As páginas citadas são as do manual brasileiro, que tem a mesma paginação do original.*
 
-> [!edicao] Este guia usa os nomes impressos na edição brasileira da Galápagos (2025): Habilidade, Espadas, Botas, Gazua, Fileira da Masmorra, Trilha de Fúria. Se a sua caixa for a original em inglês, a seção 9 traz a correspondência dos termos.
-
 ## 0. Antes de tudo: o que é este jogo
 
 Você é um ladrão que desce às catacumbas de um dragão. O plano tem três partes: entrar, pegar um **Artefato** e sair vivo pela **Cripta**, o lugar de onde todos partem. Quem sai ganha um bônus de 20 pontos. No fim, vence quem tiver mais pontos somando o Artefato, o ouro, as fichas e as cartas que juntou (p. 3 e 14).
