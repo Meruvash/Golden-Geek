@@ -125,7 +125,7 @@ Dentro de cada etapa, os blocos aparecem sempre na mesma ordem:
 - **Tarefas**, com ajuda que vai diminuindo: primeiro um **exemplo resolvido**, depois uma tarefa para **completar** (o começo já está feito) e, por fim, uma tarefa **sua vez**, sem ajuda.
 - **Treino rápido:** exercícios curtos para o que precisa ficar automático, como somar recursos ou resolver um ataque.
 
-As respostas de cada etapa ficam escondidas no fim dela. Tente antes de abrir. No final há uma avaliação curta, com a indicação de qual etapa reler se algo não ficou claro, e uma folha de consulta para levar à mesa.
+Os exercícios são de múltipla escolha: toque numa opção e aparece a resposta certa, com a explicação. Pense antes de tocar. No final há uma avaliação curta, com a indicação de qual etapa reler se algo não ficou claro, e uma folha de consulta para levar à mesa.
 
 
 ## 2. Etapa 1: montar a mesa
@@ -582,27 +582,60 @@ As respostas de cada etapa ficam escondidas no fim dela. Tente antes de abrir. N
 
 ## 8. Avaliação final
 
-Responda sem consultar. Depois confira e veja o que reler.
+Responda sem consultar. Cada explicação diz o que reler se você errar.
 
-1. Você joga Tropeçar e depois Ataque Surpresa, sem cubos seus na área de Clank!. Mais tarde, joga outro Tropeçar. Quantos cubos seus ficam lá no fim do turno?
-2. Você tem 2 Botas e 1 Espada. O túnel tem Pegada e um Monstro. Pode atravessar? O que acontece?
-3. Você adquiriu uma carta da Fileira e derrotou um monstro dela. Quando os espaços são repostos? Se as duas cartas novas tiverem o símbolo de ataque, quantos ataques acontecem?
-4. Marcador numa casa que mostra 3 e uma carta de Perigo na Fileira. Quantos cubos saem? E no turno de um jogador que já escapou, numa partida de 4?
-5. Você está numa sala com o Artefato de 15 e já carrega o de 10, sem Mochila. Pode trocar?
-6. Um cubo de Fantasma sai da bolsa num ataque com 3 jogadores. Quem sofre dano?
-7. Você foi nocauteado nas Profundezas com o Artefato de 20 e 40 de Ouro. Quanto faz?
-8. Qual é a ordem do fim do turno?
+?? 1. Você joga Tropeçar e depois Ataque Surpresa, sem cubos seus na área de Clank!. Mais tarde, joga outro Tropeçar. Quantos cubos seus ficam lá no fim do turno?
+- ( ) 1
+- (x) Nenhum
+- ( ) 2
+= **Nenhum.** O Ataque Surpresa tira o cubo do primeiro Tropeçar, e o desconto que sobra cobre o segundo Tropeçar (p. 6). Errou: releia a etapa 2.
 
-### Respostas da avaliação
+?? 2. Você tem 2 Botas e 1 Espada. O túnel tem Pegada e um Monstro. Pode atravessar? O que acontece?
+- ( ) Não: Pegada e Monstro juntos custam 3 Botas
+- ( ) Sim, gastando 1 Bota e a Espada
+- ( ) Sim, mas sofre 1 de dano mesmo gastando a Espada
+- (x) Sim: gasta as 2 Botas; a Espada evita o dano, ou você sofre 1 com um cubo do suprimento
+= **Sim.** Gasta as 2 Botas; a Espada evita o dano, ou você sofre 1 com um cubo do suprimento (p. 7). Errou: releia a etapa 4.
 
-1. **Nenhum.** O desconto do Ataque Surpresa cobre o segundo Tropeçar (etapa 2).
-2. **Sim.** Gasta as 2 Botas; a Espada evita o dano, ou você sofre 1 com um cubo do suprimento (etapa 4).
-3. **No fim do turno**, no passo 2. **Um ataque** (etapa 3).
-4. **4 cubos.** No turno de quem escapou, **4**, ignorando trilha e Perigo (etapas 3 e 5).
-5. **Não.** Depois de pegar um Artefato, você não pode trocar nem devolver (p. 8; etapa 5).
-6. **Os três jogadores**, 1 de dano cada (etapa 3).
-7. **Zero** (etapa 5).
-8. Descarte e compre 5; reponha a Fileira (e execute os Revelar); verifique o ataque (etapa 3).
+?? 3. Você adquiriu uma carta da Fileira e derrotou um monstro dela. Quando os espaços são repostos? Se as duas cartas novas tiverem o símbolo de ataque, quantos ataques acontecem?
+- (x) No fim do turno, depois de comprar as 5 cartas; um ataque
+- ( ) Na hora, a cada carta tirada; dois ataques
+- ( ) No fim do turno; dois ataques, um por símbolo
+- ( ) No começo do turno do próximo jogador; um ataque
+= **No fim do turno**, no passo 2, depois de descartar e comprar 5. **Um ataque**, mesmo com dois símbolos (p. 7 e 12). Errou: releia a etapa 3.
+
+?? 4. Marcador numa casa que mostra 3 e uma carta de Perigo na Fileira. Quantos cubos saem? E no turno de um jogador que já escapou, numa partida de 4?
+- ( ) 3; e 4 no turno de quem escapou
+- ( ) 4; e 5 no turno de quem escapou
+- (x) 4; e 4 no turno de quem escapou
+- ( ) 4; e 6 no turno de quem escapou
+= **4 cubos**, 3 da casa mais 1 de Perigo. No turno de quem escapou, **4**, ignorando trilha e Perigo; 6 é só numa partida de 2 (p. 11, 12 e 14). Errou: releia as etapas 3 e 5.
+
+?? 5. Você está numa sala com o Artefato de 15 e já carrega o de 10, sem Mochila. Pode trocar?
+- ( ) Sim: devolve o de 10 à sala e pega o de 15
+- (x) Não
+- ( ) Não troca, mas pode pegar o de 15 e ficar com os dois
+= **Não.** Depois de pegar um Artefato, você não pode trocar nem devolver, e sem Mochila não carrega um segundo (p. 8). Errou: releia a etapa 5.
+
+?? 6. Um cubo de Fantasma sai da bolsa num ataque com 3 jogadores. Quem sofre dano?
+- ( ) Ninguém: o Fantasma é como um cubo preto
+- ( ) Só o jogador da vez
+- ( ) Quem tem mais cubos na bolsa
+- (x) Os três jogadores, 1 de dano cada
+= **Os três jogadores**, 1 de dano cada, com um cubo do próprio suprimento (p. 12). Errou: releia a etapa 3.
+
+?? 7. Você foi nocauteado nas Profundezas com o Artefato de 20 e 40 de Ouro. Quanto faz?
+- (x) Zero
+- ( ) 60
+- ( ) 40, só o Ouro
+- ( ) 80, com a ficha de Maestria
+= **Zero.** Nocaute nas Profundezas zera a pontuação, com qualquer Artefato (p. 14). Errou: releia a etapa 5.
+
+?? 8. Qual é a ordem do fim do turno?
+- ( ) Reponha a Fileira; verifique o ataque; descarte e compre 5
+- ( ) Descarte e compre 5; verifique o ataque; reponha a Fileira e execute os Revelar
+- (x) Descarte e compre 5; reponha a Fileira e execute os Revelar; verifique o ataque
+= Descarte e compre 5; reponha a Fileira (e execute os Revelar); verifique o ataque (p. 12). Errou: releia a etapa 3.
 
 > [!atencao] **Critério para começar a jogar.** Acertou 7 ou 8? Monte a mesa e jogue, com a folha de consulta ao lado. Errou a 1, releia a etapa 2. Errou a 2, a etapa 4. Errou a 3, a 4, a 6 ou a 8, a etapa 3. Errou a 5 ou a 7, a etapa 5. Depois refaça só as perguntas que errou.
 

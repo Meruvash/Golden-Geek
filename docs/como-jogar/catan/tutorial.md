@@ -571,27 +571,57 @@ Cada pergunta tem opções: escolha uma, e a resposta certa aparece com a explic
 
 ## 8. Avaliação final
 
-Responda sem consultar. Depois confira e veja o que reler.
+Responda sem consultar. Cada resposta diz o que reler se você errar.
 
-1. Bruno rola 6. Você tem uma cidade encostada numa colina com 6. O que recebe?
-2. O ladrão está na sua floresta com 4. Sai 4. O que recebe?
-3. Você tem 4 argilas, 1 madeira, 1 lã e 1 cereais e um porto especial de argila. Consegue fazer uma estrada e uma aldeia sem ajuda de outro jogador?
-4. Você quer pôr uma aldeia numa encruzilhada vizinha de uma aldeia sua. Pode?
-5. Sai 7 e você tem 10 cartas. O que acontece com você?
-6. No mesmo turno, você pode jogar um Cavaleiro e uma Construção de Estradas?
-7. Você tem a Maior Estrada Comercial com 6 peças, e outro jogador faz uma de 6. Quem fica com a carta?
-8. Você chega a 10 pontos no turno de outra pessoa. Venceu?
+?? 1. Bruno rola 6. Você tem uma cidade encostada numa colina com 6. O que recebe?
+- ( ) Nada, porque quem rolou foi Bruno
+- ( ) 1 argila
+- (x) 2 argilas
+= **2 argilas.** O lançamento vale para todos, e cidade recebe 2 (p. 2). Errou: releia a etapa 2.
 
-### Respostas da avaliação
+?? 2. O ladrão está na sua floresta com 4. Sai 4. O que recebe?
+- (x) Nada daquele terreno
+- ( ) 1 madeira normalmente, porque o ladrão só age quando sai 7
+- ( ) 1 madeira, e o ladrão volta para o deserto
+= **Nada** daquele terreno, enquanto o ladrão estiver lá (p. 4). Errou: releia a etapa 2.
 
-1. **2 argilas.** O lançamento vale para todos, e cidade recebe 2 (etapa 2).
-2. **Nada** daquele terreno, enquanto o ladrão estiver lá (etapa 2).
-3. **Sim.** No porto especial, 2 argilas valem 1 madeira. Fica com 2 argilas, 2 madeiras, 1 lã e 1 cereais: o custo exato da estrada e da aldeia (etapa 3).
-4. **Não.** A regra da distância vale também para as suas aldeias (etapa 3).
-5. **Devolve 5**, à sua escolha, e não recebe nada (etapa 4).
-6. **Não.** Uma carta de desenvolvimento por turno (etapa 4).
-7. **Você.** Para tomar a carta, é preciso uma estrada maior; empate não basta (etapa 5).
-8. **Ainda não.** Só vence se tiver os 10 no seu turno (etapa 5).
+?? 3. Você tem 4 argilas, 1 madeira, 1 lã e 1 cereais e um porto especial de argila. Consegue fazer uma estrada e uma aldeia sem ajuda de outro jogador?
+- ( ) Não: o porto especial de argila só serve para receber argila
+- ( ) Sim, e ainda sobra 1 argila
+- (x) Sim, com o custo exato
+- ( ) Não: com a reserva, a troca é sempre 4 por 1, e faltaria argila
+= **Sim.** No porto especial, 2 argilas valem 1 madeira. Fica com 2 argilas, 2 madeiras, 1 lã e 1 cereais: o custo exato da estrada e da aldeia (p. 3). Errou: releia a etapa 3.
+
+?? 4. Você quer pôr uma aldeia numa encruzilhada vizinha de uma aldeia sua. Pode?
+- ( ) Sim: a regra da distância só vale para as aldeias dos outros
+- (x) Não
+- ( ) Sim, se tiver estrada sua chegando lá
+= **Não.** A regra da distância vale também para as suas aldeias (p. 3). Errou: releia a etapa 3.
+
+?? 5. Sai 7 e você tem 10 cartas. O que acontece com você?
+- ( ) Devolve 3, as que passam de 7
+- ( ) Nada, se não foi você quem rolou
+- (x) Devolve 5, à sua escolha, e não recebe nada
+- ( ) Devolve 5, escolhidas por quem rolou
+= **Devolve 5**, à sua escolha, e não recebe nada (p. 4). Errou: releia a etapa 4.
+
+?? 6. No mesmo turno, você pode jogar um Cavaleiro e uma Construção de Estradas?
+- ( ) Sim, porque são cartas de tipos diferentes
+- ( ) Sim, se jogar uma antes dos dados e a outra depois
+- (x) Não
+= **Não.** Uma carta de desenvolvimento por turno (p. 4; manual original, p. 7). Errou: releia a etapa 4.
+
+?? 7. Você tem a Maior Estrada Comercial com 6 peças, e outro jogador faz uma de 6. Quem fica com a carta?
+- (x) Você
+- ( ) O outro jogador, que fez a estrada mais recente
+- ( ) Ninguém: com empate, a carta fica de lado
+= **Você.** Para tomar a carta, é preciso uma estrada maior; empate não basta (p. 3). Errou: releia a etapa 5.
+
+?? 8. Você chega a 10 pontos no turno de outra pessoa. Venceu?
+- ( ) Sim, na hora
+- (x) Ainda não
+- ( ) Sim, se for o primeiro a chegar a 10
+= **Ainda não.** Só vence se tiver os 10 no seu turno (p. 4; manual original, p. 5). Errou: releia a etapa 5.
 
 > [!atencao] **Critério para começar a jogar.** Acertou 7 ou 8? Monte a ilha e jogue, com a folha de consulta ao lado. Errou a 1 ou a 2, releia a etapa 2. Errou a 3 ou a 4, a etapa 3. Errou a 5 ou a 6, a etapa 4. Errou a 7 ou a 8, a etapa 5. Depois refaça só as perguntas que errou.
 
