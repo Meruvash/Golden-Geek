@@ -1,0 +1,22 @@
+{
+ "slug": "azul",
+ "titulo": "Como jogar Azul",
+ "jogo": "Azul",
+ "genero": "Abstrato · Família",
+ "jogadores": "2 a 4 jogadores",
+ "duracao": "30 a 45 min",
+ "idade": "14+",
+ "edicao": "Edição Galápagos",
+ "data": "2026-10-31",
+ "descricao": "Regras de Azul passo a passo, conferidas no manual da Galápagos: preparação, como pegar azulejos, a pontuação da parede, o chão e os bônus finais.",
+ "resumo": "Você pega azulejos de uma cor nos expositores, completa as fileiras de modelo do seu tabuleiro para levá-los à parede e vence quem somar mais pontos quando alguém fechar uma linha horizontal.",
+ "pontos": [
+  "Na sua vez, você leva todos os azulejos de uma cor de um expositor ou do centro, e tudo vai para uma única fileira de modelo.",
+  "O que não cabe cai na fileira do chão, que tira de 1 a 14 pontos no fim da rodada.",
+  "Cada azulejo na parede vale 1 ponto sozinho ou o tamanho das sequências que forma; no fim, linhas, colunas e cores completas dão 2, 7 e 10 pontos."
+ ],
+ "leitura_min": 29,
+ "etapas": 4,
+ "resenha": "azul",
+ "chamada": "Pegue azulejos de uma cor, encha as fileiras de modelo e decore a parede sem deixar nada cair no chão. Começa com um resumo para jogar em 4 minutos e segue em quatro etapas, da mesa montada aos bônus finais."
+}
