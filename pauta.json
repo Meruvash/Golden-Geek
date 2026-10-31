@@ -203,6 +203,11 @@
    "jogo": "Luz Final",
    "url": "https://eliteboardgamers.com.br/last-light/",
    "data": "2026-10-30"
+  },
+  {
+   "jogo": "Great Western Trail",
+   "url": "https://eliteboardgamers.com.br/great-western-trail/",
+   "data": "2026-10-31"
   }
  ],
  "jogos": [
@@ -4946,7 +4951,7 @@
      "fonte": "https://eliteboardgamers.com.br/"
     }
    ],
-   "status": "na_fila",
+   "status": "publicado",
    "prioridade": 145,
    "premios_distintos": 3,
    "carro_chefe": false,
