@@ -1,0 +1,23 @@
+{
+ "slug": "dice-throne",
+ "titulo": "Como jogar Dice Throne",
+ "jogo": "Dice Throne",
+ "genero": "Duelo de dados · Cartas",
+ "jogadores": "2 a 6 jogadores",
+ "duracao": "30 min",
+ "idade": "8+",
+ "edicao": "Manual oficial em inglês",
+ "data": "2026-10-31",
+ "descricao": "Regras de Dice Throne conferidas no manual oficial: preparação, as três rolagens, defesa, cartas e CP, fichas, tipos de dano e partidas de 3 e 4.",
+ "resumo": "Você rola os dados do seu herói até três vezes para formar a combinação de uma habilidade, ataca com ela e vence quando a Vida do adversário chega a 0.",
+ "pontos": [
+  "Cada turno tem uma rolagem ofensiva de até três tentativas, e só uma habilidade é ativada, mesmo que os dados mostrem várias.",
+  "O defensor rola uma vez com a habilidade defensiva, mas só contra dano normal: dano indefensável e supremo não admitem defesa.",
+  "Você começa com 2 CP, ganha 1 por turno e paga as cartas com eles; qualquer carta vendida vale 1 CP."
+ ],
+ "leitura_min": 14,
+ "etapas": 4,
+ "resenha": null,
+ "chamada": "Monte o duelo, role os dados do seu herói até três vezes e escolha a habilidade que vai disparar. Começa com um resumo para jogar em 4 minutos e segue em quatro etapas, do tabuleiro do herói aos tipos de dano.",
+ "publicar": false
+}
