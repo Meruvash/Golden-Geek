@@ -49,7 +49,8 @@ def inline(t):
     t = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", t)
     t = re.sub(r"(?<![*\w])\*(?!\s)(.+?)(?<!\s)\*(?![*\w])", r"<em>\1</em>", t)
     # (p. 7), (p. 4 e 5), (p. 2, 8 e 13): etiqueta de página
-    t = re.sub(r"\s?\(p\.\s*([^)]+)\)", lambda m: f' <span class="pg">p.&nbsp;{m.group(1).strip()}</span>', t)
+    # só quando o parêntese tem apenas páginas; "(p. 14, que o manual diz ...)" fica como texto
+    t = re.sub(r"\s?\(p\.\s*(\d[\d ,e–-]*?)\s*\)", lambda m: f' <span class="pg">p.&nbsp;{m.group(1).strip()}</span>', t)
     return t
 
 

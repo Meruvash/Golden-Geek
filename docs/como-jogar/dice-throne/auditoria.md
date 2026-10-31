@@ -115,3 +115,24 @@ Igual ao protocolo da seção 10 do `PROMPT_PILOTO.md`: 5 a 8 adultos que nunca 
 ## 8. Ligação com a resenha
 
 Não há resenha de Dice Throne no site. Se houver uma no futuro, o JSON do tutorial recebe o slug em `resenha`.
+
+## Auditoria independente
+
+Feita em 31/10/2026 por agente que não escreveu o texto.
+
+**O que conferi.** Baixei eu mesmo os dois manuais pelos links do dossiê (v2.3.2 pela CDN da Shopify, 20,5 MB; v2.4.1 pelo Google Drive público para onde rules.dicethrone.com aponta, 38,1 MB), extraí o texto com `pdftotext` (com e sem `-layout`) e, como os números do manual são ícones, li como imagem as páginas 2 a 4, 7 a 9, 11 e 14 da v2.3.2 (tabuleiro e folheto da Pistoleira em recorte a 300 dpi) e a capa da v2.4.1. Comparei por script as frases das duas versões: as únicas diferenças de regra são as duas já registradas (nota da p. 11 sobre Modificadores de Ataque só no seu turno; quadro "Roll Phase" da p. 12). Conferi cada afirmação normativa do tutorial contra a página citada, os textos e custos das cartas de exemplo (Revolver II, Transference!, Samesies!, Getting Paid!, Buh, Bye!, Eat Lead!), os nove espaços do tabuleiro e as quatro fichas da Pistoleira, o JSON (2 a 6 jogadores, 30 min, 8+ conferidos nos ícones da capa da v2.4.1) e os três pontos do resumo. Refiz todos os resultados de dados e contas num script próprio (`<scratchpad>/dtaud/s/contas.py`), que testa cada requisito do tabuleiro: todos os exemplos são jogadas legais e todas as contas batem (45, 46, 44, 43, 7, 6, 4, 15 CP, 17 e 9 do exemplo Bárbaro x Paladino).
+
+**Problemas achados e corrigidos.**
+1. Linha 3: o aviso dava a v2.3.2 como base e a v2.4.1 como comparação, ao contrário da decisão do editor. Invertido: v2.4.1 (atual) comparada com a v2.3.2. O restante do aviso (sem manual em português; nomes da caixa brasileira podem mudar) está claro.
+2. Seção 0: "as combinações mais difíceis, como as 5 Moscas, são as que dão mais dano" não se sustenta no tabuleiro (p. 2 e 3): o Deadeye, com 4 Moscas, dá 6, menos que o Showdown (sequência pequena), que dá até 7. Trocado pelo fato verificável: a suprema, com 5 Moscas, é a que dá mais dano (10).
+3. Tabela do tabuleiro, Fill'em with Lead! (p. 3, 5 e 10): faltava a linha impressa "If you spend a Reload, you may re-roll that die one time". Acrescentada.
+4. Terminologia: o dossiê manda dar o inglês na primeira menção de faces e fichas, mas Bala, Arrancada, Mosca, Evasiva, Recarga, Derrubada e Recompensa só tinham o inglês na etapa 4 ou na consulta. Acrescentado na primeira menção (4 min e tabela da etapa 1). Fora isso, os termos são usados de forma igual do começo ao fim.
+5. Situações, 3 e 4 jogadores (p. 11): faltava dizer que o resto da preparação (CP 2, 4 cartas) segue igual, e a ordem em zigue-zague só remetia ao desenho. Acrescentado "o resto da preparação é igual ao duelo" e a ordem A, B, A, B, como mostra o desenho.
+
+Nenhum erro de regra, de conta ou de exemplo com a Pistoleira: dados, símbolos (1 a 3 Bala, 4 e 5 Arrancada, 6 Mosca), requisitos, valores de dano, limites de pilha e custos das cartas conferem com o manual.
+
+**Em aberto (já sinalizados no texto em [!edicao] ou na seção 4 acima).** Requisito como "pelo menos" e linhas do Revolver (interpretações razoáveis, o manual não explica); tipo do dano do Duel (círculo vermelho sem nome; o texto não classifica); empate na rolagem inicial; se a Recompensa dada no mesmo Ataque já soma +1 (o texto evita o caso); presença de Getting Paid! no baralho da Pistoleira. Não há manual em português, então os nomes adotados são do site.
+
+**Teste de execução.** Preparação para 2: feita só com o tutorial, sem adivinhar nada. Para o máximo coberto (4, em duplas): antes da correção 5 foi preciso supor que CP e mão inicial seguem iguais e decifrar a ordem dos turnos sem o desenho; depois da correção, nada a adivinhar. 5 e 6 jogadores ficam fora, como o manual recomenda; o JSON diz "2 a 6", que é o que a caixa informa. Rodada completa (Manutenção com Quick Draw, Renda pulada pelo jogador inicial, Principal com Revolver II, rolagem ofensiva em três tentativas, anúncio, Duel do adversário, Principal (2), Descarte): executada sem lacunas. Avaliação final respondida antes de olhar as respostas: 8 de 8, iguais às do tutorial.
+
+**Portões.** Travessão e meia-risca: 0. `vicios.avisos` no tutorial e no JSON: 0. `checar_comece.py`: ✅.

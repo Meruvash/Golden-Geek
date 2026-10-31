@@ -59,6 +59,7 @@ html{scroll-padding-top:calc(var(--nav-h,45px) + 56px)}
 @media (min-width:601px){.sec{padding:24px 28px}}
 /* tabelas: fichas no celular (menos as grades de células curtas, que ficam tabela e centralizadas) */
 .tab table.grade th,.tab table.grade td{text-align:center;padding:7px 6px}
+.tab table.grade th{white-space:normal;overflow-wrap:anywhere;hyphens:auto}
 @media (max-width:600px){
  .tab:not(:has(.grade)){border:0;background:none;overflow:visible;border-radius:0}
  .tab:not(:has(.grade)) table,.tab:not(:has(.grade)) tbody,.tab:not(:has(.grade)) tr,.tab:not(:has(.grade)) td{display:block}

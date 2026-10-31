@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Como jogar Dice Throne: regras passo a passo | Elite Boardgamers</title>
+<meta name="description" content="Regras de Dice Throne conferidas no manual oficial: preparação, as três rolagens, defesa, cartas e CP, fichas, tipos de dano e partidas de 3 e 4.">
+<link rel="canonical" href="https://eliteboardgamers.com.br/como-jogar/dice-throne/">
+<meta name="robots" content="max-image-preview:large">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Como jogar Dice Throne">
+<meta property="og:description" content="Regras de Dice Throne conferidas no manual oficial: preparação, as três rolagens, defesa, cartas e CP, fichas, tipos de dano e partidas de 3 e 4.">
+<meta property="og:url" content="https://eliteboardgamers.com.br/como-jogar/dice-throne/">
+<meta property="og:image" content="https://eliteboardgamers.com.br/marca/banner-1200.webp">
+<link rel="icon" href="../../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32.png">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<link rel="preload" href="../../fontes/public-sans.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:"Public Sans";src:url(../../fontes/public-sans.woff2) format("woff2");font-weight:400 800;font-style:normal;font-display:swap}
+@font-face{font-family:"Public Sans";src:url(../../fontes/public-sans-italic.woff2) format("woff2");font-weight:400;font-style:italic;font-display:swap}
+/* Layout: o mesmo da página de lição do Discipulado (O Paladino): fundo preto (pedido do editor: preto no lugar do azul), faixa do banner, navegação fixa, coluna central de 760px com cartões claros de papel, filete dourado sobre os títulos de seção. Visual único (o site não tem tema claro). */
+:root{
+  color-scheme:dark;
+  --ground:#000; --panel:#0f1115; --panel2:#171a20; --line:#262a32; --line2:#2e333c;
+  --ink:#eceff3; --muted:#a1a9b5; --gold:#e3b23c;
+  --paper:#f4f5f7; --paper-ink:#14171c; --paper-muted:#5a6270; --paper-line:#dde1e7; --paper-text:#3a414c;
+  --link:#1f5fae; --ok:#1b7a45; --ok-bg:#e3f4ea; --cinza-bg:#eceef1; --ouro-bg:#fff4d1; --ouro-ink:#8a5f00;
+  --erro:#b3263e; --faixa-ouro:#1d1606; --ouro-claro:#f1ead6; --check:#4cc38a;
+  --f-body:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box}
+html{scroll-padding-top:64px}
+body{margin:0;background:var(--ground);color:var(--ink);font:16px/1.55 var(--f-body)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--panel)}
+h1,h2,h3,p,ul,ol,figure{margin:0}
+a{color:var(--link);text-underline-offset:.18em}
+::selection{background:var(--gold);color:#000}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px;border-radius:3px}
+.gut{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+
+.skip{position:absolute;left:-999px}.skip:focus{left:12px;top:8px;z-index:40;background:var(--gold);color:#000;padding:6px 10px}
+.aviso{background:var(--gold);color:#000;font-weight:800;font-size:.8rem;text-align:center}
+.aviso .gut{padding-block:6px}
+.topo{background:var(--ground)}
+.topo img{display:block;width:100%;max-width:640px;height:auto;margin:0 auto}
+.nav{background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line);position:sticky;top:env(safe-area-inset-top,0px);z-index:20}
+.nav ul{max-width:1120px;margin:0 auto;list-style:none;display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;padding-block:0}
+.nav a{display:block;padding:11px 12px;white-space:nowrap;color:var(--ink);text-decoration:none;font-weight:700;font-size:.92rem;border-bottom:3px solid transparent}
+.nav a[aria-current]{color:var(--gold);border-bottom-color:var(--gold)}
+
+.nota{max-width:760px;margin:0 auto;padding-block:20px 56px;display:grid;gap:16px}
+.trilha ol{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:4px 8px;font-size:.85rem;color:var(--muted)}
+.trilha li+li::before{content:"›";margin-right:8px;color:var(--muted)}
+.trilha a{color:var(--gold);font-weight:700;text-decoration:none}
+
+.bloco{background:var(--paper);color:var(--paper-ink);border-radius:10px;padding:20px;min-width:0;display:grid;gap:14px}
+.num-l{font-size:.8rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--paper-muted)}
+h1{font-size:clamp(1.7rem,5vw,2.4rem);line-height:1.12;font-weight:800;letter-spacing:-.015em;text-wrap:balance}
+.meta-e{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:.88rem;color:var(--paper-muted)}
+.meta{font-family:var(--mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.05em;color:var(--paper-muted)}
+
+.r1{background:var(--panel2);color:var(--ink);border:1px solid var(--line2);border-left:4px solid var(--gold)}
+.kick{font-size:.75rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--gold)}
+.r1 .resp{font-size:1.12rem;font-weight:600;line-height:1.45}
+.r1 ul{list-style:none;padding:0;display:grid;gap:8px}
+.r1 li{display:flex;gap:8px;align-items:flex-start;color:#dfe4ea}
+.r1 li svg{flex:none;width:20px;height:20px;margin-top:2px;stroke:var(--check);fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.r1 .pe{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:.88rem;color:var(--muted)}
+.r1 .pe b{color:var(--ink)}
+.legenda{display:flex;flex-wrap:wrap;gap:8px}
+.legenda span{font-size:.74rem;font-weight:800;letter-spacing:.04em;border-radius:999px;padding:3px 10px 3px 14px;background:var(--paper);color:var(--paper-ink)}
+.legenda .l1{box-shadow:inset 5px 0 0 var(--paper-ink)}.legenda .l2{box-shadow:inset 5px 0 0 var(--ok)}
+.legenda .l3{box-shadow:inset 5px 0 0 var(--gold)}.legenda .l4{box-shadow:inset 5px 0 0 var(--ouro-ink)}
+
+.indice h2,.sec>h2{font-size:1.15rem;font-weight:800;line-height:1.3;color:var(--paper-ink);border-top:3px solid var(--gold);padding-top:12px;text-wrap:balance;display:flex;gap:10px;align-items:baseline}
+.indice ol{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:2px 16px}
+.indice a{display:block;padding:6px 0;color:var(--paper-ink);text-decoration:none;font-weight:600;font-size:.94rem;border-bottom:1px solid var(--paper-line)}
+.indice a:hover{color:var(--link)}
+
+.sec>h2 .num{display:none}
+.sec h3{font-size:1.05rem;font-weight:800;margin-top:6px}
+.sec p{color:var(--paper-text);max-width:66ch}
+.sec ul,.sec ol{padding-left:1.3em;display:grid;gap:6px;color:var(--paper-text)}
+.sec ul{list-style:disc}
+.sec li::marker{color:var(--ouro-ink);font-weight:800}
+strong{font-weight:700;color:var(--paper-ink)}
+.pg{white-space:nowrap;font-size:.76em;color:var(--paper-muted);border:1px solid var(--paper-line);background:#fff;border-radius:4px;padding:0 5px;vertical-align:.08em;font-variant-numeric:tabular-nums}
+code{font-size:.9em;background:#fff;padding:1px 5px;border-radius:4px}
+
+.tab{overflow-x:auto;border:1px solid var(--paper-line);border-radius:8px;background:#fff}
+table{border-collapse:collapse;width:100%;font-size:.92rem;color:var(--paper-text)}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--paper-line);vertical-align:top}
+th{font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--paper-muted);background:var(--paper)}
+tr:last-child td{border-bottom:0}
+
+.call{border-radius:8px;padding:14px 16px;display:grid;gap:10px;min-width:0;background:#fff;border:1px solid var(--paper-line);border-left:4px solid var(--paper-muted)}
+.call .rot{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;font-weight:800;color:var(--paper-muted)}
+.call.entender{background:var(--cinza-bg);border-color:#d5d9df;border-left-color:var(--paper-ink)}
+.call.entender .rot{color:var(--paper-ink)}
+.call.passos{border-left-color:var(--ok)}
+.call.passos .rot{color:var(--ok)}
+.call.resolvido{background:var(--panel2);border-color:var(--line2);border-left-color:var(--gold)}
+.call.resolvido .rot{color:var(--gold)}
+.call.resolvido p,.call.resolvido li{color:#dfe4ea}
+.call.resolvido strong{color:#fff}
+.call.resolvido .pg{color:#c8ccd2;border-color:var(--line2)}
+.call.complete{border-left:4px dashed var(--gold)}
+.call.complete .rot{color:var(--ouro-ink)}
+.call.suavez{background:var(--faixa-ouro);border-color:#3a2e10;border-left-color:var(--gold)}
+.call.suavez .rot{color:var(--gold)}
+.call.suavez p,.call.suavez li{color:var(--ouro-claro)}
+.call.suavez strong{color:#fff}
+.call.suavez li::marker{color:var(--gold)}
+.call.suavez .pg{color:var(--ouro-claro);border-color:#3a2e10}
+.call.treino{background:var(--ouro-bg);border-color:#f0dfa6;border-left-color:var(--ouro-ink)}
+.call.treino .rot{color:var(--ouro-ink)}
+.call.atencao{border-left-color:var(--erro)}
+.call.atencao .rot{color:var(--erro)}
+.call.edicao{background:var(--paper);border-left-color:var(--paper-ink)}
+.call.edicao .rot{color:var(--paper-ink)}
+.call.dica{background:var(--ouro-bg);border-left-color:var(--gold)}
+.call.dica .rot{color:var(--ouro-ink)}
+.call ol,.call ul{padding-left:1.3em}
+.call .pg{background:transparent}
+
+.respostas{border:1px solid var(--paper-line);border-left:4px solid var(--ok);border-radius:8px;background:#fff}
+.respostas summary{cursor:pointer;padding:12px 16px;font-weight:800;color:var(--ok);list-style:none;min-height:44px;display:flex;align-items:center}
+.respostas summary::-webkit-details-marker{display:none}
+.respostas summary::before{content:"+";display:inline-grid;place-items:center;width:1.4em;height:1.4em;margin-right:8px;border-radius:50%;background:var(--ok-bg)}
+.respostas[open] summary::before{content:"−"}
+.respostas>div{padding:0 16px 16px;display:grid;gap:12px}
+
+.sec.rapido{outline:2px solid var(--gold);outline-offset:-2px}
+.sec.rapido>h2::after{content:"4 min de leitura";margin-left:auto;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:#000;background:var(--gold);border-radius:3px;padding:3px 8px;white-space:nowrap}
+.sec.rapido>p:first-of-type{font-size:1.02rem}
+.sec.ref{outline:2px solid var(--gold);outline-offset:-2px}
+.sec.ref>h2::after{content:"Leve para a mesa";margin-left:auto;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:#000;background:var(--gold);border-radius:3px;padding:3px 8px;white-space:nowrap}
+
+footer{border-top:1px solid var(--line);background:var(--panel);color:var(--muted);font-size:.85rem}
+footer .in{max-width:760px;margin:0 auto;padding-block:20px}
+@media (max-width:600px){
+  .bloco{padding:16px;border-radius:8px}
+  .sec.ref>h2::after{display:none}
+}
+/* essencial x opcional: o que não é essencial abre com um toque */
+.dobra{border:1px solid var(--paper-line);border-radius:8px;background:#fff}
+.dobra>summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:10px;padding:11px 14px;font-weight:700;font-size:.92rem;color:var(--paper-ink);min-height:44px}
+.dobra>summary::-webkit-details-marker{display:none}
+.dobra>summary::before{content:"+";flex:none;display:grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--paper-line);color:var(--paper-ink);font-weight:800;line-height:1}
+.dobra[open]>summary::before{content:"−"}
+.dobra>.call,.dobra>details,.dobra>aside{margin:0 12px 12px}
+.dobra.pratica>summary{color:var(--ouro-ink)}
+.dobra.pratica[open]{display:grid;gap:10px;padding-bottom:12px}
+.dobra.pratica>*:not(summary){margin:0 12px}
+.dobra.sec-opc{border-style:dashed}
+.dobra.sec-opc[open]{padding-bottom:12px}
+.dobra.sec-opc>*:not(summary){margin-left:14px;margin-right:14px}
+.tag-opc{margin-left:10px;font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;font-weight:800;color:var(--paper-muted);border:1px solid var(--paper-line);border-radius:3px;padding:2px 6px;vertical-align:middle}
+.legenda-f{font-size:.88rem;color:var(--muted)}.legenda-f b{color:var(--ink)}
+.mais-i{display:inline-grid;place-items:center;width:18px;height:18px;border-radius:50%;background:var(--paper-line);color:var(--paper-ink);font-weight:800;font-size:.8rem}
+.indice small{color:var(--muted);font-weight:400}
+.sec p,.sec li,.sec a{overflow-wrap:anywhere}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://eliteboardgamers.com.br/#organizacao", "name": "Elite Boardgamers", "url": "https://eliteboardgamers.com.br/", "logo": {"@type": "ImageObject", "url": "https://eliteboardgamers.com.br/marca/elite-boardgamers.webp", "width": 318, "height": 254}, "sameAs": ["https://www.instagram.com/eliteboardgamers/"]}, {"@type": "Article", "@id": "https://eliteboardgamers.com.br/como-jogar/dice-throne/#artigo", "mainEntityOfPage": "https://eliteboardgamers.com.br/como-jogar/dice-throne/", "headline": "Como jogar Dice Throne", "description": "Regras de Dice Throne conferidas no manual oficial: preparação, as três rolagens, defesa, cartas e CP, fichas, tipos de dano e partidas de 3 e 4.", "image": ["https://eliteboardgamers.com.br/marca/banner-1200.webp"], "datePublished": "2026-10-31", "author": {"@type": "Organization", "name": "Redação Elite Boardgamers", "url": "https://eliteboardgamers.com.br/politica-editorial/"}, "publisher": {"@id": "https://eliteboardgamers.com.br/#organizacao"}, "inLanguage": "pt-BR"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Início", "item": "https://eliteboardgamers.com.br/"}, {"@type": "ListItem", "position": 2, "name": "Como jogar", "item": "https://eliteboardgamers.com.br/como-jogar/"}, {"@type": "ListItem", "position": 3, "name": "Como jogar Dice Throne", "item": "https://eliteboardgamers.com.br/como-jogar/dice-throne/"}]}]}</script>
+<style id="moldura">.busca-btn{display:grid;place-items:center;flex:none;width:44px;height:44px;padding:0;border:1px solid #3a3f48;border-radius:8px;background:none;color:#e9ecf1;cursor:pointer}.busca-btn:hover{border-color:#e3b23c;color:#e3b23c}.busca-btn[hidden]{display:none}footer .in a{display:inline-flex;align-items:center;min-height:24px}.cpw{position:relative;display:inline-block}.cp{display:inline-flex;align-items:center;justify-content:center;gap:8px;box-sizing:border-box;line-height:1.2;min-height:44px;margin:0;padding:10px 20px;border-radius:999px;border:0;background:#157a43;color:#fff;font:inherit;font-size:.95rem;font-weight:800;text-decoration:none;cursor:pointer}.cp:hover{background:#11683a;color:#fff}.cp .ic{width:19px;height:19px}.cp[hidden]{display:none}.cpw.mini .cp{min-height:40px;padding:8px 14px;font-size:.88rem}.cp-menu{position:absolute;z-index:30;top:calc(100% + 8px);left:0;min-width:200px;display:grid;gap:2px;padding:6px;border-radius:12px;background:#fff;border:1px solid #dde1e7;box-shadow:0 10px 30px rgba(0,0,0,.25)}.cp-menu[hidden]{display:none}.cp-menu.sobe{top:auto;bottom:calc(100% + 8px)}.cp-menu.dir{left:auto;right:0}.cp-op{display:flex;align-items:center;gap:10px;min-height:44px;padding:8px 12px;border:0;border-radius:8px;background:none;color:#14171c;font:inherit;font-size:.95rem;font-weight:700;text-align:left;text-decoration:none;cursor:pointer}.cp-op:hover,.cp-op:focus-visible{background:#eef1f4;color:#14171c}.cp-op .ic{width:20px;height:20px}.cp-op.zap-op .ic{color:#157a43}.cp-st{position:absolute;z-index:30;top:calc(100% + 8px);left:0;white-space:nowrap;margin:0;padding:6px 12px;border-radius:8px;background:#14171c;color:#fff;font-size:.85rem;font-weight:700}.cp-st:empty{display:none}.barra-lt .cp-st{top:auto;bottom:calc(100% + 8px)}.convite{display:flex;align-items:center;justify-content:space-between;gap:12px 20px;flex-wrap:wrap}.convite .cv-t{margin:0;font-weight:800;font-size:1.1rem}.convite .cv-s{margin:2px 0 0;font-size:.92rem;opacity:.8}.barra-lt>*{flex:none}.barra-lt{width:max-content;max-width:calc(100vw - 12px);box-sizing:border-box;position:fixed;z-index:25;left:50%;bottom:calc(12px + env(safe-area-inset-bottom));display:flex;align-items:center;gap:4px;padding:5px;border-radius:999px;background:#14171c;border:1px solid #3a3f48;box-shadow:0 8px 24px rgba(0,0,0,.35);transform:translate(-50%,0);transition:transform .25s ease,opacity .25s ease}.barra-lt.fora{transform:translate(-50%,calc(100% + 24px));opacity:0;pointer-events:none}.lt-b{display:inline-flex;align-items:center;gap:7px;min-height:44px;padding:8px 14px;border:0;border-radius:999px;background:none;color:#e9ecf1;font:inherit;font-size:.9rem;font-weight:700;text-decoration:none;cursor:pointer}.lt-b:hover{background:#262a31;color:#fff}.lt-b .ic{width:20px;height:20px}.barra-lt .lt-b.curtir{background:none;border:0;color:#e9ecf1;padding:8px 14px}.barra-lt .lt-b.curtir[aria-pressed=true]{color:#ff6b81;background:none}@media (max-width:479px){.lt-b span{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}}.lt-b.curtir[aria-pressed=true] .ic{fill:currentColor}.lt-grupo{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:44px;padding:0 14px 0 6px;border-radius:999px;background:#e3b23c;color:#14171c;font-size:.9rem;font-weight:800;text-decoration:none;white-space:nowrap}.lt-grupo:hover{background:#f0c44f;color:#14171c}.lt-grupo img{width:32px;height:32px;border-radius:8px;display:block}@media (max-width:479px){.barra-lt{gap:2px}.barra-lt .lt-b{padding:8px 10px}.barra-lt .cp{padding:8px 12px}.lt-grupo{padding:0 12px 0 6px}}@media (max-width:399px){.barra-lt:has(.curtir) .cp span{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}.barra-lt:has(.curtir) .cp{padding:8px 14px}}.barra-lt .cp{min-height:44px;padding:8px 16px;font-size:.9rem}body.lt-on .voltar-topo,body.lt-on button.sobe{bottom:calc(76px + env(safe-area-inset-bottom))}@media print{.barra-lt{display:none}}.interacoes{display:grid;gap:14px}.interacoes[hidden]{display:none}.curtir-l{display:flex;align-items:center;gap:12px;flex-wrap:wrap}.curtir{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:8px 18px;border-radius:999px;border:2px solid #b3263e;background:#fff;color:#b3263e;font:inherit;font-weight:800;cursor:pointer}.curtir .ic{width:22px;height:22px}.curtir[aria-pressed=true]{background:#b3263e;color:#fff}.curtir[aria-pressed=true] .ic{fill:currentColor}.curtir .n{font-variant-numeric:tabular-nums}.curtir-dica{font-size:.9rem;color:#5a6270}.interacoes h2{margin:4px 0 0}.coms{list-style:none;margin:0;padding:0;display:grid;gap:10px}.coms li{background:#fff;border:1px solid #dde1e7;border-radius:10px;padding:12px 14px}.com-quem{margin:0;font-size:.92rem}.com-quem time{color:#5a6270;font-size:.8rem;margin-left:6px}.com-txt{margin:4px 0 0;white-space:pre-wrap;color:#14171c}.coms-vazio{margin:0;color:#5a6270}.com-form{display:grid;gap:10px;border-top:1px solid #dde1e7;padding-top:14px}.com-form label{display:grid;gap:4px;font-weight:700;font-size:.9rem;color:#14171c}.com-form small{font-weight:600;color:#5a6270}.com-form input,.com-form textarea{font:inherit;font-size:16px;font-weight:400;padding:10px 12px;border:1px solid #c8cdd5;border-radius:8px;background:#fff;color:#14171c}.com-form textarea{resize:vertical;min-height:110px}.com-form .isca{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}.com-form button{justify-self:start;min-height:44px;padding:10px 20px;border-radius:999px;border:0;background:#14171c;color:#fff;font:inherit;font-weight:800;cursor:pointer}.com-form button:disabled{opacity:.6}.com-aviso{margin:0;font-size:.82rem;color:#5a6270}.com-aviso a{color:#1f5fae}.com-st{margin:0;font-weight:700;font-size:.92rem}.com-st:empty{display:none}.com-st.ok{color:#1b7a45}.com-st.erro{color:#a3223a}:where(html){scroll-padding-top:calc(var(--nav-h,49px) + 12px)}.nav{position:sticky;top:0;z-index:20}body .abas,body .barra-f,body .ctrl{top:var(--nav-h,49px)}.marca img.logo{width:auto;height:48px;border-radius:0}@media (max-width:480px){.marca img.logo{height:40px}}.nav .casa{display:flex;align-items:center;justify-content:center;min-width:44px}.nav .casa .ic{width:20px;height:20px}@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.card:hover,.jogo:hover .capa img,.jogo:active .capa,.zap:active,.post-btn:active,.btn-filtro:hover,.btn-filtro:active,.ver:active{transform:none!important}}.in{max-width:1180px;margin:0 auto;padding-left:16px;padding-right:16px}.ic{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round;flex:none}.bar{border-bottom:1px solid var(--line);background:#000;color:var(--ink)}.bar .in{display:flex;align-items:center;gap:12px;padding-top:8px;padding-bottom:8px}.bar a{color:inherit;text-decoration:none;font-weight:600;font-size:.95rem}.marca img{display:block;width:84px;border-radius:6px}.bar .ig{margin-left:auto;display:flex;align-items:center;gap:6px;padding:6px 10px;border-radius:6px}.bar .ig:hover{color:var(--gold)}.bar .zap-mini{display:flex;align-items:center;gap:6px;padding:6px 10px;border-radius:6px;background:#157a43;color:#fff}.nav ul{padding-left:16px;padding-right:16px}.nav ul li{list-style:none}@media (max-width:700px){.bar .ig span,.bar .zap-mini span{display:none}}footer{font-size:.9rem}footer .in{max-width:1180px;display:flex;flex-wrap:wrap;gap:6px 16px;padding-top:20px;padding-bottom:28px}footer a{color:var(--muted);text-decoration:none}footer a:hover{color:var(--gold)}</style>
+<style id="guia-extra">
+/* faixa de progresso, presa logo abaixo do menu */
+.guia-prog{position:sticky;top:var(--nav-h,45px);z-index:15;background:var(--panel);border-bottom:1px solid var(--line)}
+.guia-prog a{display:flex;align-items:center;gap:10px;max-width:760px;margin:0 auto;padding:9px 16px;color:var(--ink);text-decoration:none;font-size:.86rem;font-weight:700;min-height:40px}
+.guia-prog .gp-r{flex:none;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--gold)}
+.guia-prog .gp-t{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.guia-prog .gp-i{margin-left:auto;flex:none;font-size:.78rem;color:var(--muted);font-weight:600}
+.guia-prog .gp-b{position:absolute;left:0;right:0;bottom:-1px;height:3px;background:var(--gold);transform-origin:0 50%;transform:scaleX(0)}
+html{scroll-padding-top:calc(var(--nav-h,45px) + 56px)}
+/* legenda dos blocos: pontos de cor em vez de pílulas */
+.legenda{gap:6px 16px}
+.legenda span{position:relative;background:none;color:var(--muted);box-shadow:none!important;padding:0 0 0 16px;font-size:.8rem;letter-spacing:0}
+.legenda span::before{content:"";position:absolute;left:0;top:.32em;width:10px;height:10px;border-radius:3px;background:var(--paper)}
+.legenda .l2::before{background:var(--ok)}.legenda .l3::before{background:var(--gold)}.legenda .l4::before{background:var(--ouro-ink)}
+/* índice numerado */
+.indice ol{counter-reset:it}.indice li{counter-increment:it}
+.indice a{display:flex;gap:10px;align-items:baseline;min-height:40px;padding:9px 0}
+.indice a::before{content:counter(it);flex:none;width:1.6em;font-size:.8rem;font-weight:800;color:var(--ouro-ink);font-variant-numeric:tabular-nums}
+.nota-pe{color:var(--muted);font-size:.85rem;padding:4px 2px 0}
+/* endereços longos (fontes) quebram em vez de alargar a página */
+.sec a,.sec li,.sec p{overflow-wrap:anywhere}
+/* títulos das etapas com mais respiro */
+.sec{scroll-margin-top:calc(var(--nav-h,45px) + 56px)}
+@media (min-width:601px){.sec{padding:24px 28px}}
+/* tabelas: fichas no celular (menos as grades de células curtas, que ficam tabela e centralizadas) */
+.tab table.grade th,.tab table.grade td{text-align:center;padding:7px 6px}
+.tab table.grade th{white-space:normal;overflow-wrap:anywhere;hyphens:auto}
+@media (max-width:600px){
+ .tab:not(:has(.grade)){border:0;background:none;overflow:visible;border-radius:0}
+ .tab:not(:has(.grade)) table,.tab:not(:has(.grade)) tbody,.tab:not(:has(.grade)) tr,.tab:not(:has(.grade)) td{display:block}
+ .tab:not(:has(.grade)) thead{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+ .tab:not(:has(.grade)) tr{background:#fff;border:1px solid var(--paper-line);border-radius:8px;padding:10px 12px;margin-bottom:8px}
+ .tab:not(:has(.grade)) td{border:0;padding:3px 0;display:grid;grid-template-columns:6.5em minmax(0,1fr);gap:8px}
+ .tab:not(:has(.grade)) td::before{content:attr(data-label);font-size:.7rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--paper-muted);padding-top:3px}
+ .tab:not(:has(.grade)) td:empty{display:none}
+ .tab:not(:has(.grade)) td:first-child{display:block;font-weight:800;color:var(--paper-ink);padding-bottom:4px}
+ .tab:not(:has(.grade)) td:first-child::before{display:none}
+}
+</style>
+</head>
+<body>
+<!--moldura--><a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<header class="bar" id="topo"><div class="in">
+ <a class="marca" href="../../"><img class="logo" src="../../marca/logo-eb-104.webp" srcset="../../marca/logo-eb-52.webp 157w, ../../marca/logo-eb-104.webp 314w, ../../marca/logo-eb-156.webp 472w" sizes="(max-width: 480px) 121px, 145px" width="157" height="52" alt="Elite Board Gamers: página inicial"></a>
+ <a class="ig" href="https://www.instagram.com/eliteboardgamers/" target="_blank" rel="noopener" aria-label="Instagram @eliteboardgamers"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6" fill="currentColor"/></svg><span>@eliteboardgamers</span></a>
+ <a class="zap-mini" href="https://chat.whatsapp.com/IgQQkJdSkzHBaEq3UwFeAo" target="_blank" rel="noopener" aria-label="Grupo do WhatsApp"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8.4 19l-4.4 1Z"/><path d="M9.2 8.6c.3-.5.8-.5 1-.1l.7 1.5c.1.3 0 .6-.2.8l-.4.4c.5 1.1 1.4 2 2.5 2.5l.4-.4c.2-.2.5-.3.8-.2l1.5.7c.4.2.4.7-.1 1-.7.5-1.6.6-2.4.3a7 7 0 0 1-4.2-4.2c-.3-.8-.2-1.7.4-2.3Z"/></svg><span>Grupo do WhatsApp</span></a>
+ <button type="button" class="busca-btn" aria-label="Buscar no site" aria-haspopup="dialog" aria-keyshortcuts="/ Control+K" hidden><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></button>
+</div></header>
+<script>(()=>{const b=document.querySelector('.busca-btn');let c;b.hidden=false;const a=()=>{c=c||new Promise((r,j)=>{const s=document.createElement('script');s.src='../../busca.js';s.onload=r;s.onerror=()=>{c=null;j()};document.head.append(s)});c.then(()=>abrirBusca('../../'),()=>{})};b.addEventListener('click',a);addEventListener('keydown',e=>{const t=e.target,ed=t.isContentEditable||/^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName);if((e.key==='/'&&!ed&&!e.ctrlKey&&!e.metaKey)||((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k')){e.preventDefault();a()}})})()</script>
+<nav class="nav" aria-label="Seções do site"><ul class="in"><li><a class="casa" href="../../" aria-label="Página inicial"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 9.5V20h13V9.5"/><path d="M10 20v-5.5h4V20"/></svg></a></li><li><a href="../../noticias/">Notícias</a></li><li><a href="../../resenhas/">Resenhas</a></li><li><a href="../../como-jogar/" aria-current="true">Como jogar</a></li><li><a href="../../lancamentos/">Lançamentos</a></li><li><a href="../../consulta/">Consulta Golden Geek</a></li></ul></nav>
+<script>(()=>{const n=document.querySelector('.nav'),h=()=>document.documentElement.style.setProperty('--nav-h',n.offsetHeight+'px');h();addEventListener('resize',h);addEventListener('load',h)})()</script>
+<div class="guia-prog"><a href="#neste-guia"><span class="gp-r">Guia</span><span class="gp-t">Neste guia</span><span class="gp-i">Índice</span></a><span class="gp-b" aria-hidden="true"></span></div><!--/moldura-->
+
+<main id="conteudo" class="gut"><div class="nota">
+  <nav class="trilha" aria-label="Trilha de navegação"><ol><li><a href="../../">Início</a></li><li><a href="../">Como jogar</a></li><li aria-current="page">Dice Throne</li></ol></nav>
+
+  <article class="bloco">
+    <span class="num-l">Duelo de dados · Cartas</span>
+    <h1>Como jogar Dice Throne</h1>
+    <p class="meta-e"><span>Para quem nunca jogou</span><span>2 a 6 jogadores</span><span>30 min</span><span>8+</span><span>Manual oficial em inglês</span></p>
+    <p class="meta"><time datetime="2026-10-31">31 de outubro de 2026</time> · Redação Elite Boardgamers</p>
+  </article>
+
+  <section class="bloco r1" aria-label="Resumo em 1 minuto">
+    <span class="kick">Resumo em 1 minuto</span>
+    <p class="resp">Você rola os dados do seu herói até três vezes para formar a combinação de uma habilidade, ataca com ela e vence quando a Vida do adversário chega a 0.</p>
+    <ul><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.5l4.5 4.5L19.5 6.5"/></svg><span>Cada turno tem uma rolagem ofensiva de até três tentativas, e só uma habilidade é ativada, mesmo que os dados mostrem várias.</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.5l4.5 4.5L19.5 6.5"/></svg><span>O defensor rola uma vez com a habilidade defensiva, mas só contra dano normal: dano indefensável e supremo não admitem defesa.</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.5l4.5 4.5L19.5 6.5"/></svg><span>Você começa com 2 CP, ganha 1 por turno e paga as cartas com eles; qualquer carta vendida vale 1 CP.</span></li></ul>
+    <p class="pe"><span><b>Como você aprende:</b> 4 etapas, da mesa montada à contagem de pontos</span><span><b>Leitura do essencial:</b> cerca de 12 min</span></p>
+    <p class="legenda-f"><b>À vista, só o essencial para jogar.</b> O que abre com <span class="mais-i">+</span> é explicação, exemplo, exercício ou regra de caso especial: abra quando precisar.</p>
+  </section>
+
+<section class="bloco sec rapido" id="comece-a-jogar-em-4-minutos"><h2><span class="num"></span>Comece a jogar em 4 minutos</h2>
+<p><strong>Meta:</strong> em 4 minutos de leitura, montar um duelo e jogar o seu primeiro ataque sem abrir o manual.</p>
+<h3>A ideia do jogo</h3>
+<p>Cada jogador é um <strong>herói</strong> com seu próprio tabuleiro, cinco dados e um baralho. Você vence quando a <strong>Vida</strong> do adversário chega a 0. No seu turno, você rola os dados até três vezes, como no Yahtzee, atrás de uma combinação impressa no seu tabuleiro; a combinação ativa uma <strong>habilidade</strong>, que causa dano. As cartas, pagas com <strong>Pontos de Combate</strong> (CP), mexem nos dados e melhoram o herói.</p>
+<h3>Monte a mesa</h3>
+<p>Cada jogador, com o seu herói <span class="pg">p.&nbsp;3</span>:</p>
+<ol><li>Ponha à sua frente o tabuleiro do herói, o folheto do herói e as fichas dele, empilhadas nos lugares marcados no folheto.</li><li>Marcador de Vida em 50 (duelo de 2 jogadores) e marcador de CP em 2.</li><li>Embaralhe as suas cartas e compre 4: é a sua mão. Deixe espaço para a sua pilha de descarte, virada para cima.</li><li>Se o verso do folheto tiver uma preparação própria do herói, faça agora.</li><li>Cada um rola 1 dado; o maior resultado começa. Esse é o jogador inicial.</li></ol>
+<h3>Seu primeiro turno</h3>
+<p>O turno tem fases, sempre nesta ordem <span class="pg">p.&nbsp;4</span>. No primeiro turno do jogo, quase tudo se resume à fase 4.</p>
+<ol><li><strong>Manutenção:</strong> resolva o que o herói ou as fichas mandam fazer nesta fase.</li><li><strong>Renda:</strong> ganhe 1 CP e compre 1 carta. O jogador inicial pula a Renda no primeiro turno dele.</li><li><strong>Principal (1):</strong> pague CP para jogar cartas, ou venda cartas por 1 CP cada.</li><li><strong>Rolagem ofensiva:</strong> role os 5 dados. Pode rolar de novo quantos dados quiser, e ainda uma terceira vez. No fim, escolha <strong>uma</strong> habilidade do tabuleiro cuja combinação os dados mostrem, ou nenhuma.</li><li><strong>Rolagem de alvo:</strong> pule; só existe com mais de 2 jogadores.</li><li><strong>Rolagem defensiva:</strong> se você atacou, o adversário rola os dados de defesa dele uma vez e usa a habilidade defensiva. Depois o dano entra na Vida.</li><li><strong>Principal (2):</strong> igual à 3.</li><li><strong>Descarte:</strong> quem tem mais de 6 cartas vende até ficar com 6.</li></ol>
+<p>Os dados da Pistoleira têm Bala (Bullet) nas faces 1, 2 e 3, Arrancada (Dash) nas faces 4 e 5 e Mosca (Bullseye, o alvo) na face 6 <span class="pg">p.&nbsp;2</span>. Duas habilidades dela <span class="pg">p.&nbsp;2 e 3</span>:</p>
+<div class="tab"><table><thead><tr><th>Habilidade</th><th>Combinação</th><th>Efeito</th></tr></thead><tbody><tr><td data-label="Habilidade">Take Cover (Proteger-se)</td><td data-label="Combinação">2 Balas e 3 Arrancadas</td><td data-label="Efeito">ganha 1 ficha de Evasiva (Evasive); 5 de dano</td></tr><tr><td data-label="Habilidade">Fan the Hammer (Leque de tiros)</td><td data-label="Combinação">sequência grande: 5 números seguidos</td><td data-label="Efeito">ganha 2 fichas de Evasiva; 7 de dano</td></tr></tbody></table></div>
+<aside class="call resolvido"><p class="rot">Tarefa · exemplo resolvido</p><p><strong>Exemplo resolvido.</strong> A Pistoleira rola 1, 4, 4, 6 e 3: duas Balas (1 e 3), duas Arrancadas (4 e 4) e uma Mosca. Para o Take Cover falta uma Arrancada. Ela guarda os outros quatro dados e rola de novo só o 6. Sai 5: agora tem 1, 4, 4, 5 e 3, com 2 Balas e 3 Arrancadas. Ela para, sem usar a terceira rolagem, e ativa o Take Cover: põe uma ficha de Evasiva no próprio tabuleiro e causa 5 de dano. O adversário rola a defesa; se ela não reduzir nada, ele vai de 50 para 45 de Vida.</p></aside>
+<aside class="call complete"><p class="rot">Tarefa · complete</p><p><strong>Complete.</strong> Na primeira rolagem, a Pistoleira tira 2, 3, 5, 6 e 6. Ela quer a sequência grande do Fan the Hammer. Que dado ela rola de novo, e que número precisa sair?</p></aside>
+<aside class="call suavez"><p class="rot">Tarefa · sua vez</p><p><strong>Agora os seus dados.</strong> Antes de rolar: quais combinações do seu tabuleiro estão mais perto? Depois de cada rolagem, que dados você guarda? Quantas rolagens ainda tem? No fim, qual habilidade você anuncia?</p></aside>
+<details class="respostas"><summary>Resposta do Complete: mostrar</summary><div><p>um dos dois 6. Se sair 4, os dados ficam 2, 3, 4, 5 e 6, uma sequência grande. Ela ainda tem uma terceira rolagem se não sair.</p></div></details>
+<h3>Ainda não precisa saber</h3>
+<p>Cartas e CP em detalhe: <a href="#etapa-3-cartas-e-cp">etapa 3</a>. Fichas como Evasiva, os tipos de dano e a habilidade suprema: <a href="#etapa-4-fichas-tipos-de-dano-e-a-habilidade-suprema">etapa 4</a>. Partidas de 3 e 4 jogadores: Situações especiais.</p>
+<h3>Como a partida acaba</h3>
+<p>No duelo, quem leva a Vida do adversário a 0 vence. Se os dois chegarem a 0 ao mesmo tempo, é empate <span class="pg">p.&nbsp;4</span>.</p>
+<aside class="call atencao"><p class="rot">Atenção</p><p><strong>Os três erros mais caros.</strong> Só uma habilidade por turno, mesmo que os dados mostrem várias combinações. O jogador inicial não ganha CP nem compra carta no primeiro turno. A defesa não acontece se o ataque não deu dano normal (<a href="#etapa-4-fichas-tipos-de-dano-e-a-habilidade-suprema">etapa 4</a>).</p></aside>
+</section>
+  <nav class="bloco indice" id="neste-guia" aria-label="Neste guia"><h2>Neste guia</h2><ol><li><a href="#comece-a-jogar-em-4-minutos">Comece a jogar em 4 minutos</a></li><li><a href="#antes-de-tudo-o-que-e-este-jogo">Antes de tudo: o que é este jogo</a> <small>(opcional)</small></li><li><a href="#como-este-guia-ensina">Como este guia ensina</a> <small>(opcional)</small></li><li><a href="#etapa-1-montar-a-mesa-e-ler-o-seu-heroi">Etapa 1: montar a mesa e ler o seu herói</a></li><li><a href="#etapa-2-rolar-atacar-e-defender">Etapa 2: rolar, atacar e defender</a></li><li><a href="#etapa-3-cartas-e-cp">Etapa 3: cartas e CP</a></li><li><a href="#etapa-4-fichas-tipos-de-dano-e-a-habilidade-suprema">Etapa 4: fichas, tipos de dano e a habilidade suprema</a></li><li><a href="#situacoes-especiais">Situações especiais</a> <small>(opcional)</small></li><li><a href="#avaliacao-final">Avaliação final</a> <small>(opcional)</small></li><li><a href="#para-consultar-durante-a-partida">Para consultar durante a partida</a></li><li><a href="#fontes">Fontes</a></li></ol></nav>
+
+<section class="bloco sec opc" id="antes-de-tudo-o-que-e-este-jogo"><h2><span class="num">0</span>Antes de tudo: o que é este jogo<span class="tag-opc">Opcional</span></h2>
+<details class="dobra sec-opc"><summary>Abrir esta seção</summary><p>Dice Throne é um duelo. Cada herói tem dados com símbolos próprios, um tabuleiro com as habilidades dele, fichas e um baralho. Este guia ensina as regras que todos compartilham; o que muda de herói para herói está impresso no tabuleiro e no folheto dele <span class="pg">p.&nbsp;2, 5 e 6</span>.</p>
+<p>Você vence quando reduz a Vida do adversário a 0 <span class="pg">p.&nbsp;2</span>. Ataca no seu turno, com até três tentativas de rolagem para chegar a uma combinação, e se defende no turno do outro, com uma rolagem única. No tabuleiro da Pistoleira, a habilidade suprema, que pede 5 Moscas, é a que dá mais dano: 10 <span class="pg">p.&nbsp;2 e 3</span>.</p>
+<p>Duas ideias sustentam o resto:</p>
+<ul><li><strong>As cartas mexem nos dados.</strong> Muitas cartas mudam o valor de um dado, mandam rolar de novo ou somam dano. Elas custam CP, e você ganha CP aos poucos, um por turno, ou vendendo cartas <span class="pg">p.&nbsp;4, 7 e 9</span>.</li><li><strong>O adversário também age no seu turno.</strong> Cartas de certos tipos podem ser jogadas na vez de qualquer jogador, inclusive para atrapalhar o seu ataque <span class="pg">p.&nbsp;8 e 9</span>.</li></ul></details>
+</section>
+<section class="bloco sec opc" id="como-este-guia-ensina"><h2><span class="num">1</span>Como este guia ensina<span class="tag-opc">Opcional</span></h2>
+<details class="dobra sec-opc"><summary>Abrir esta seção</summary><p>O guia tem quatro etapas: montar a mesa e ler o tabuleiro do herói; rolar, atacar e defender; usar cartas e CP; e lidar com fichas e tipos de dano. Em cada etapa vêm, nesta ordem: <strong>Para entender</strong> (como aquela parte funciona e por quê), <strong>Passo a passo</strong> (as regras exatas), três tarefas com ajuda decrescente (um <strong>exemplo resolvido</strong>, uma tarefa para <strong>completar</strong> e uma <strong>sua vez</strong>, sem ajuda) e um <strong>treino rápido</strong> para o que precisa ficar automático. As respostas ficam escondidas no fim de cada etapa: tente antes de abrir. No final, uma avaliação curta diz o que reler, e uma folha de consulta vai para a mesa.</p></details>
+</section>
+<section class="bloco sec" id="etapa-1-montar-a-mesa-e-ler-o-seu-heroi"><h2><span class="num">2</span>Etapa 1: montar a mesa e ler o seu herói</h2>
+<details class="dobra entender"><summary>Por que funciona assim</summary><aside class="call entender"><p>O <strong>tabuleiro do herói</strong> mostra as habilidades, cada uma num espaço com nome. O <strong>folheto do herói</strong> explica as fichas, mostra o que há em cada face dos dados e, no verso, traz a dificuldade do herói (de 1 a 6), a preparação própria e perguntas frequentes <span class="pg">p.&nbsp;5 e 6</span>.</p>
+<p>Num espaço de habilidade ofensiva, os dados desenhados no alto são o <strong>requisito de ativação</strong>, a combinação que os seus dados precisam mostrar no fim da rolagem; embaixo vem o efeito <span class="pg">p.&nbsp;4 e 5</span>. Há quatro tipos de espaço:</p>
+<ul><li><strong>Habilidade ofensiva:</strong> a que você ativa no seu turno, com os dados <span class="pg">p.&nbsp;4</span>.</li><li><strong>Habilidade defensiva:</strong> a de borda verde, ativada quando você é atacado. Ela diz quantos dados de defesa você rola, por exemplo "Defense Roll 1" (rolagem de defesa 1), e esses dados são rolados uma vez só <span class="pg">p.&nbsp;5</span>.</li><li><strong>Habilidade passiva:</strong> a de borda roxa, sempre ativa ou disponível <span class="pg">p.&nbsp;5</span>.</li><li><strong>Habilidade suprema</strong> (Ultimate): a faixa larga embaixo, o ataque mais forte, que o adversário não pode impedir depois de ativado <span class="pg">p.&nbsp;5</span>.</li></ul>
+<p>Completam o herói dois marcadores giratórios, o de <strong>Vida</strong> e o de <strong>CP</strong> <span class="pg">p.&nbsp;3 e 4</span>.</p></aside></details>
+<p><strong>O tabuleiro da Pistoleira</strong>, como o manual o mostra <span class="pg">p.&nbsp;2, 3 e 5</span>. Os números de dano têm um círculo: preto é dano normal; vermelho é outro tipo de dano, explicado na etapa 4.</p>
+<div class="tab"><table><thead><tr><th>Habilidade</th><th>Tipo</th><th>Combinação</th><th>Efeito</th></tr></thead><tbody><tr><td data-label="Habilidade">Revolver (Revólver)</td><td data-label="Tipo">ofensiva</td><td data-label="Combinação">3, 4 ou 5 Balas</td><td data-label="Efeito">3, 4 ou 5 de dano</td></tr><tr><td data-label="Habilidade">Bounty Hunter (Caçadora de recompensas)</td><td data-label="Tipo">ofensiva</td><td data-label="Combinação">2 Balas e 2 Moscas</td><td data-label="Efeito">dá a ficha Recompensa (Bounty) ao adversário; então 1 de dano indefensável</td></tr><tr><td data-label="Habilidade">Take Cover (Proteger-se)</td><td data-label="Tipo">ofensiva</td><td data-label="Combinação">2 Balas e 3 Arrancadas</td><td data-label="Efeito">ganha 1 Evasiva; 5 de dano</td></tr><tr><td data-label="Habilidade">Showdown (Duelo ao sol)</td><td data-label="Tipo">ofensiva</td><td data-label="Combinação">sequência pequena</td><td data-label="Efeito">depois de escolher o alvo, cada um rola 1 dado; se o seu for igual ou maior, 7 de dano; senão, 5</td></tr><tr><td data-label="Habilidade">Deadeye (Tiro certeiro)</td><td data-label="Tipo">ofensiva</td><td data-label="Combinação">4 Moscas</td><td data-label="Efeito">dá a ficha Derrubada (Knockdown) ao adversário; 6 de dano indefensável</td></tr><tr><td data-label="Habilidade">Fan the Hammer (Leque de tiros)</td><td data-label="Tipo">ofensiva</td><td data-label="Combinação">sequência grande</td><td data-label="Efeito">ganha 2 Evasivas; 7 de dano</td></tr><tr><td data-label="Habilidade">Quick Draw (Saque rápido)</td><td data-label="Tipo">passiva</td><td data-label="Combinação">nenhuma</td><td data-label="Efeito">na sua fase de Manutenção, ganha 1 Recarga (Reload)</td></tr><tr><td data-label="Habilidade">Duel (Duelo)</td><td data-label="Tipo">defensiva, 1 dado</td><td data-label="Combinação">1 dado</td><td data-label="Efeito">você e o atacante rolam 1 dado cada; se o seu for maior, escolha: 3 de dano no atacante, ou prevenir metade do dano (arredondada para cima); se não for maior, 1 de dano no atacante</td></tr><tr><td data-label="Habilidade">Fill'em with Lead! (Encha de chumbo)</td><td data-label="Tipo">suprema</td><td data-label="Combinação">5 Moscas</td><td data-label="Efeito">ganha 1 Evasiva; dá Recompensa e Derrubada; então 10 de dano. Se gastar uma Recarga, pode rolar de novo, uma vez, o dado dela</td></tr></tbody></table></div>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Preparação</strong> <span class="pg">p.&nbsp;3</span>. Cada jogador faz o mesmo, com o próprio herói.</p>
+<ol><li>Ponha à sua frente o tabuleiro do herói, o folheto e as fichas. As fichas de efeito de status e de companheiro ficam empilhadas no folheto, cada uma no seu lugar.</li><li>Gire o marcador de Vida até 50. Esse é o valor do duelo de 2 jogadores.</li><li>Gire o marcador de CP até 2.</li><li>Embaralhe as suas cartas para formar o seu baralho e compre as 4 de cima. Essa é a sua mão inicial.</li><li>Cada jogador rola 1 dado. Quem tirar o maior número é o jogador inicial e começa.</li><li>Alguns heróis têm passos próprios de preparação, impressos no verso do folheto. Faça-os.</li></ol></aside>
+<details class="dobra mais"><summary>Regra adicional: Vida máxima</summary><aside class="call mais"><p>Você pode se curar até 10 pontos acima da Vida inicial. Num duelo, o teto é 60 <span class="pg">p.&nbsp;4</span>.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Teto de CP</summary><aside class="call mais"><p>O máximo é 15 CP. Se você ganhar CP com o marcador em 15, ele não sobe <span class="pg">p.&nbsp;4</span>.</p></aside></details>
+<details class="dobra edicao"><summary>Sobre a edição</summary><aside class="call edicao"><p>O manual não diz o que fazer se a rolagem para decidir quem começa empatar. Rolar de novo entre os empatados é a solução natural; combine com a mesa.</p></aside></details>
+
+
+<details class="dobra pratica"><summary>Pratique esta etapa: exercícios com respostas</summary><aside class="call suavez"><p class="rot">Tarefa · sua vez</p><p><strong>Sua vez.</strong> Você vai montar um duelo com a Pistoleira. Responda olhando só o passo a passo e a tabela:</p>
+<ol><li>Com quanto de Vida e de CP ela começa, e com quantas cartas na mão?</li><li>Onde ficam as fichas de Evasiva antes de ela ganhar alguma?</li><li>Que habilidade ela usa quando é atacada, e quantos dados rola?</li><li>Qual habilidade dela não precisa de dados para funcionar?</li></ol></aside>
+<details class="respostas"><summary>Respostas da etapa 1: mostrar</summary><div><ol><li>50 de Vida, 2 CP e 4 cartas (passos 2 a 4).</li><li>Empilhadas no folheto, no lugar da Evasiva (passo 1).</li><li>Duel, com 1 dado <span class="pg">p.&nbsp;3 e 5</span>.</li><li>Quick Draw, a passiva: dá 1 Recarga em toda fase de Manutenção dela <span class="pg">p.&nbsp;2 e 5</span>.</li></ol></div></details></details>
+</section>
+<section class="bloco sec" id="etapa-2-rolar-atacar-e-defender"><h2><span class="num">3</span>Etapa 2: rolar, atacar e defender</h2>
+<details class="dobra entender"><summary>Por que funciona assim</summary><aside class="call entender"><p>A rolagem ofensiva é uma aposta em etapas: você guarda os dados que servem, rola de novo os outros e pode mudar de plano até a última tentativa.</p>
+<p>Os dados se leem de dois jeitos. Pelo <strong>símbolo</strong> (Bala, Arrancada, Mosca, no caso da Pistoleira), para as habilidades com símbolos desenhados. Pelo <strong>número</strong> da face, para as sequências e para os "iguais". Sequência pequena são 4 números seguidos, como 2, 3, 4 e 5; grande, 5 seguidos, como 1, 2, 3, 4 e 5 <span class="pg">p.&nbsp;4 e 16</span>.</p>
+<p>Você ativa no máximo uma habilidade por turno, mesmo que os dados mostrem várias combinações <span class="pg">p.&nbsp;4</span>.</p></aside></details>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>A fase de rolagem ofensiva</strong> <span class="pg">p.&nbsp;4 e 12</span></p>
+<ol><li>Faça até 3 tentativas de rolagem: role os 5 dados; se quiser, role de novo quantos dados quiser; se quiser, faça isso uma segunda vez.</li><li>Quando estiver satisfeito, anuncie a habilidade ofensiva que pretende ativar. O resultado final dos dados precisa atender ao requisito de ativação dela. Ou anuncie que não vai ativar nenhuma.</li><li>Pergunte ao adversário se ele quer alterar os seus dados com uma carta ou deixar a habilidade ser ativada.</li><li>Se alguém alterou os seus dados nesse momento, você pode anunciar outra habilidade com o novo resultado, ou voltar ao passo 1 e usar as rolagens que sobraram.</li><li>Ative a habilidade: descubra os efeitos variáveis dela (alguns pedem rolagens extras) e resolva os que não precisam de alvo, como ganhar uma ficha.</li></ol>
+<p>Qualquer jogador pode jogar cartas de Ação de Fase de Rolagem depois de qualquer um desses passos <span class="pg">p.&nbsp;12</span>.</p></aside>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>A fase de rolagem defensiva</strong> <span class="pg">p.&nbsp;4 e 13</span>. Só acontece se a habilidade que você ativou é um <strong>Ataque</strong>: uma habilidade ofensiva que causa pelo menos 1 de dano a um adversário <span class="pg">p.&nbsp;16</span>.</p>
+<ol><li>Resolva os efeitos da habilidade ofensiva que precisam de alvo e não são dano, como dar uma ficha ao adversário.</li><li>Se o dano do Ataque é do tipo que admite defesa, o defensor pode ativar a habilidade defensiva dele.</li><li>O defensor faz uma tentativa de rolagem com o número de dados indicado.</li><li>O defensor resolve os efeitos que não são dano.</li><li>Há uma última chance para qualquer jogador gastar fichas ou jogar cartas.</li><li>Todo o dano, a prevenção e a cura se somam e são aplicados ao mesmo tempo, no fim da fase de rolagem. Gire os marcadores de Vida.</li></ol></aside>
+<details class="dobra mais"><summary>Regra adicional: Herói com duas defesas</summary><aside class="call mais"><p>A maioria dos heróis tem uma habilidade defensiva. Quem tem duas escolhe uma antes de rolar os dados <span class="pg">p.&nbsp;5 e 13</span>.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Dados rolados por uma habilidade</summary><aside class="call mais"><p>Quando a descrição manda rolar dados ("roll 1", por exemplo), você rola os dados indicados uma vez e resolve o efeito; dados rolados antes não servem para isso <span class="pg">p.&nbsp;9</span>. Esses dados podem valer mais de uma vez dentro da mesma habilidade <span class="pg">p.&nbsp;5</span>.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Empate na derrota</summary><aside class="call mais"><p>Se todos os jogadores que restam chegam a 0 de Vida ao mesmo tempo, a partida empata <span class="pg">p.&nbsp;4 e 13</span>.</p></aside></details>
+<details class="dobra edicao"><summary>Sobre a edição</summary><aside class="call edicao"><p>O manual diz que o resultado final precisa "atender" ao requisito, sem dizer se dados a mais atrapalham. Lemos como "pelo menos": 3 Balas e 2 Moscas atendem ao Bounty Hunter, que pede 2 Balas e 2 Moscas. Ele também não explica as linhas do Revolver (3, 4 ou 5 Balas). Lemos que vale a linha do número de Balas que você tem: com 4 Balas, 4 de dano. Confira o folheto do seu herói, que tem perguntas frequentes.</p></aside></details>
+<details class="dobra resolvido"><summary>Ver um exemplo resolvido</summary><aside class="call resolvido"><p>A Pistoleira ataca. Primeira rolagem: 1, 2, 6, 6 e 5. Ela já tem o Bounty Hunter (Balas no 1 e no 2, Moscas nos dois 6), mas quer a sequência grande do Fan the Hammer, que dá 7 de dano. Guarda 1, 2 e 5 e rola de novo os dois 6.</p>
+<p>Segunda rolagem: saem 3 e 3. Os dados ficam 1, 2, 3, 3 e 5. Falta um 4. Ela guarda 1, 2, 3 e 5 e rola um dos 3.</p>
+<p>Terceira rolagem: sai 4. Resultado final: 1, 2, 3, 4 e 5, uma sequência grande. Os dados também atendem ao Revolver (3 Balas) e ao Showdown (a sequência grande contém uma pequena), mas ela só ativa uma habilidade. Anuncia o Fan the Hammer, pergunta ao adversário se ele quer mexer nos dados, ele diz que não, e ela ganha 2 fichas de Evasiva. Os 7 de dano vão para a defesa do adversário.</p>
+<p>Agora os papéis se invertem. No turno seguinte, o adversário ataca a Pistoleira com uma habilidade de 8 de dano normal. Ela ativa o Duel: os dois rolam 1 dado. Ela tira 5, ele tira 2. Como o dela é maior, ela escolhe prevenir metade do dano: 4. Recebe 4, e a Vida dela vai de 50 para 46. A outra escolha seria causar 3 de dano no atacante e receber os 8 inteiros.</p></aside></details>
+
+
+
+
+<details class="dobra pratica"><summary>Pratique esta etapa: exercícios com respostas</summary><aside class="call complete"><p class="rot">Tarefa · complete</p><p><strong>Complete.</strong> Outro ataque de 6 de dano normal contra a Pistoleira, com 50 de Vida. No Duel, os dois tiram 4. Já sabemos: o dela não é maior, então ela não previne nada. Termine: com quanto de Vida ela fica, e o que acontece com o atacante?</p></aside>
+<aside class="call suavez"><p class="rot">Tarefa · sua vez</p><p><strong>Sua vez.</strong> A Pistoleira tem 2, 2, 4, 6 e 6 depois da primeira rolagem. Que habilidade ela já pode ativar? Se quiser tentar o Deadeye, que dados rola de novo? E se, depois da terceira rolagem, ela tiver 6, 6, 6, 2 e 4, o que pode ativar?</p></aside>
+<aside class="call treino"><p class="rot">Treino rápido</p><p><strong>O que estes dados ativam?</strong> Para cada resultado final da Pistoleira, diga todas as habilidades cujo requisito foi atendido.</p>
+<p>a) 1, 2, 3, 4, 6</p>
+<p>b) 6, 6, 6, 6, 2</p>
+<p>c) 2, 3, 4, 5, 6</p>
+<p>d) 1, 1, 4, 4, 5</p>
+<p>e) 3, 3, 6, 6, 1</p></aside>
+<details class="respostas"><summary>Respostas da etapa 2: mostrar</summary><div><ul><li><strong>Complete:</strong> fica com 44 de Vida (50 menos 6). O atacante sofre 1 de dano, pela última linha do Duel <span class="pg">p.&nbsp;3</span>.</li><li><strong>Sua vez:</strong> já tem o Bounty Hunter (2 Balas e 2 Moscas). Para o Deadeye (4 Moscas), guarda os dois 6 e rola de novo os outros três. Com 6, 6, 6, 2 e 4, só 3 Moscas, 1 Bala e 1 Arrancada: nenhuma habilidade. Uma carta que mude o 2 ou o 4 para 6 resolveria (etapa 3).</li><li><strong>Treino a:</strong> Revolver (3 Balas: 1, 2, 3) e Showdown (1, 2, 3, 4). <strong>b:</strong> Deadeye (4 Moscas). <strong>c:</strong> Showdown e Fan the Hammer. <strong>d:</strong> Take Cover (Balas: 1 e 1; Arrancadas: 4, 4 e 5). <strong>e:</strong> Revolver (3 Balas: 3, 3 e 1) e Bounty Hunter. Em todos os casos, só uma é ativada.</li></ul></div></details></details>
+</section>
+<section class="bloco sec" id="etapa-3-cartas-e-cp"><h2><span class="num">4</span>Etapa 3: cartas e CP</h2>
+<details class="dobra entender"><summary>Por que funciona assim</summary><aside class="call entender"><p>O CP é a moeda do jogo. Você começa com 2, ganha 1 por turno na fase de Renda e pode chegar a 15 <span class="pg">p.&nbsp;3 e 4</span>. Quase tudo o que custa CP é carta <span class="pg">p.&nbsp;4</span>.</p>
+<p>Vender é descartar uma carta da mão e ganhar 1 CP, qualquer que seja o custo dela <span class="pg">p.&nbsp;7 e 12</span>: toda carta vale o efeito impresso ou 1 CP.</p>
+<p>Há dois tipos de carta <span class="pg">p.&nbsp;7</span>:</p>
+<ul><li><strong>Melhorias de Herói</strong> (Hero Upgrade), com uma seta para cima: ficam em cima de um espaço do tabuleiro e melhoram aquela habilidade até o fim da partida <span class="pg">p.&nbsp;8</span>.</li><li><strong>Cartas de Ação</strong>, com uma estrela: usadas uma vez e descartadas. A cor da borda diz quando podem ser jogadas <span class="pg">p.&nbsp;8 e 9</span>.</li></ul>
+<p>O custo fica no lado esquerdo da carta, junto com o ícone da fase em que ela pode ser jogada <span class="pg">p.&nbsp;7</span>.</p></aside></details>
+<div class="tab"><table><thead><tr><th>Carta</th><th>Borda</th><th>Quando</th><th>Exemplo do manual</th></tr></thead><tbody><tr><td data-label="Carta">Melhoria de Herói</td><td data-label="Borda">branca (ofensiva), verde (defensiva) ou roxa (passiva)</td><td data-label="Quando">só nas suas fases Principais</td><td data-label="Exemplo do manual">Revolver II, 2 CP <span class="pg">p.&nbsp;8</span></td></tr><tr><td data-label="Carta">Ação de Fase Principal</td><td data-label="Borda">azul</td><td data-label="Quando">só no seu turno, nas fases Principais</td><td data-label="Exemplo do manual">Transference!, 2 CP: passe 1 ficha de efeito de status de um jogador para outro <span class="pg">p.&nbsp;9</span></td></tr><tr><td data-label="Carta">Ação de Fase de Rolagem</td><td data-label="Borda">laranja</td><td data-label="Quando">nas fases de rolagem ofensiva, de alvo ou defensiva, no turno de qualquer jogador</td><td data-label="Exemplo do manual">Samesies!, 1 CP: um dos seus dados passa a ter o valor de outro dos seus dados da mesma rolagem <span class="pg">p.&nbsp;9</span></td></tr><tr><td data-label="Carta">Ação Instantânea</td><td data-label="Borda">vermelha, com um ponto de exclamação</td><td data-label="Quando">a qualquer momento, no turno de qualquer jogador</td><td data-label="Exemplo do manual">Getting Paid!, 0 CP: ganhe 2 CP <span class="pg">p.&nbsp;8</span>; Buh, Bye!, 2 CP: tire uma ficha de efeito de status de um jogador <span class="pg">p.&nbsp;7</span></td></tr></tbody></table></div>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Renda, fases Principais e Descarte</strong> <span class="pg">p.&nbsp;7, 8, 12 e 13</span></p>
+<ol><li><strong>Renda:</strong> ganhe 1 CP (se já estiver em 15, não ganha) e compre a carta de cima do seu baralho. Baralho vazio: embaralhe a sua pilha de descarte para formar um novo. O jogador inicial pula a Renda do primeiro turno dele.</li><li><strong>Fase Principal (1):</strong> em qualquer ordem, quantas vezes quiser: venda cartas (1 CP cada), jogue Ações de Fase Principal (pague, faça o efeito, descarte a carta) e jogue Melhorias de Herói (pague e ponha a carta no espaço de mesmo nome do tabuleiro).</li><li><strong>Fase Principal (2)</strong>, depois da rolagem defensiva: igual à primeira.</li><li><strong>Descarte:</strong> se tiver mais de 6 cartas na mão, venda até ficar com 6, ganhando 1 CP por carta. As vendidas vão para a sua pilha de descarte.</li></ol>
+<p>Cartas que custam 0 CP são jogadas de graça <span class="pg">p.&nbsp;7</span>.</p></aside>
+<details class="dobra mais"><summary>Regra adicional: Melhoria sobre melhoria</summary><aside class="call mais"><p>Você pode ir direto do nível I para o III. Para subir de II para III, ponha a carta nova sobre a anterior e pague só a diferença de custo entre as duas <span class="pg">p.&nbsp;8 e 12</span>.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Melhoria jogada não se vende</summary><aside class="call mais"><p>Uma vez no tabuleiro, a Melhoria de Herói fica lá: não pode ser vendida <span class="pg">p.&nbsp;8</span>.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Ação Instantânea interrompe</summary><aside class="call mais"><p>Ela pode ser jogada para interromper ações ou habilidades, menos outra Ação Instantânea, e se resolve na hora. O que foi interrompido termina depois. Uma Ação Instantânea não pode ser interrompida <span class="pg">p.&nbsp;8</span>. Quem tem prioridade quando várias se cruzam está em Situações especiais.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Textos que aparecem nas cartas</summary><aside class="call mais"><p> <span class="pg">p.&nbsp;9 e 16</span>. "On" seguido de um símbolo: se a rolagem tiver o símbolo, você ganha o efeito uma vez só, mesmo que o símbolo apareça várias vezes. Um número vezes um símbolo: multiplique o número pela quantidade de dados com aquele símbolo. "Or": escolha só uma das opções. "Steal" (roubar): tire o recurso do adversário e dê a você; se ele não tiver tudo, roube o que ele tem. "Then" (então): antes do que vem depois do "then", os jogadores podem gastar fichas e jogar Ações Instantâneas ou de Fase de Rolagem. "Additionally" (além disso): resolve depois dos outros efeitos.</p></aside></details>
+<details class="dobra resolvido"><summary>Ver um exemplo resolvido</summary><aside class="call resolvido"><p>A Pistoleira é a jogadora inicial. No primeiro turno, ela pula a Renda: tem 2 CP e 4 cartas, Revolver II, Eat Lead!, Samesies! e Getting Paid!.</p>
+<p>Na fase Principal, joga o Revolver II por 2 CP e o põe sobre o espaço Revolver. Agora 3 Balas dão 4 de dano, 4 dão 5 e 5 dão 6, e 4 iguais (pelo número) dão também a ficha Derrubada <span class="pg">p.&nbsp;8</span>. Ela fica com 0 CP.</p>
+<p>Na rolagem ofensiva, termina com 1, 2, 3, 6 e 5: 3 Balas. Ativa o Revolver: 4 de dano. Quer mais, mas o Eat Lead! custa 1 CP. Ela joga Getting Paid! (0 CP), que dá 2 CP, e então Eat Lead! (1 CP), carta de Ação de Fase de Rolagem que é um Modificador de Ataque: "role 5 dados e some 1 de dano por Bala; se somou pelo menos 4, dê Derrubada" <span class="pg">p.&nbsp;11</span>. Rola 2, 3, 6, 1 e 4: 3 Balas, mais 3 de dano. Total: 7. Sem Derrubada, porque somou menos de 4.</p>
+<p>Se a defesa do adversário não reduzir nada, ele vai de 50 para 43. A Pistoleira termina o turno com 1 CP e o Samesies! na mão, longe do limite de 6 cartas.</p></aside></details>
+
+
+
+
+<details class="dobra pratica"><summary>Pratique esta etapa: exercícios com respostas</summary><aside class="call complete"><p class="rot">Tarefa · complete</p><p><strong>Complete.</strong> Agora é o adversário, no primeiro turno dele. Ele não é o jogador inicial: na Renda, ganha 1 CP e compra 1 carta. Já sabemos: fica com 3 CP e 5 cartas. Ele quer jogar uma Melhoria de 3 CP e o Buh, Bye! (2 CP) neste turno. Termine: como ele consegue o CP que falta, e com quantas cartas fica na mão?</p></aside>
+<aside class="call suavez"><p class="rot">Tarefa · sua vez</p><p><strong>Sua vez.</strong> Chega a fase de Descarte. Você tem 8 cartas na mão e 14 CP. O que é obrigatório fazer, e com quanto CP você termina?</p></aside>
+<aside class="call treino"><p class="rot">Treino rápido</p><p><strong>Pode ou não pode?</strong></p>
+<p>a) Jogar o Transference! (Ação de Fase Principal) durante a rolagem ofensiva do adversário.</p>
+<p>b) Jogar o Eat Lead! (Ação de Fase de Rolagem) na sua própria rolagem ofensiva, depois de ativar o Revolver.</p>
+<p>c) Jogar o Getting Paid! (Ação Instantânea) na fase Principal do adversário.</p>
+<p>d) Vender o Revolver II depois de ele estar no tabuleiro.</p>
+<p>e) Jogar uma Melhoria de Herói na rolagem ofensiva, depois de ver os dados.</p></aside>
+<details class="respostas"><summary>Respostas da etapa 3: mostrar</summary><div><ul><li><strong>Complete:</strong> vendendo 2 cartas (1 CP cada) na fase Principal, chega a 5 CP; paga 3 e 2 e fica com 0. Das 5 cartas, 2 foram vendidas e 2 jogadas: sobra 1 na mão <span class="pg">p.&nbsp;12</span>.</li><li><strong>Sua vez:</strong> vender 2 cartas, até ficar com 6. A primeira leva o CP a 15; a segunda não dá nada, porque 15 é o teto. Termina com 15 CP <span class="pg">p.&nbsp;4 e 13</span>.</li><li><strong>Treino a:</strong> não; só no seu turno, nas fases Principais <span class="pg">p.&nbsp;9</span>. <strong>b:</strong> sim; Ações de Fase de Rolagem valem depois de qualquer passo da rolagem ofensiva <span class="pg">p.&nbsp;9 e 12</span>. <strong>c:</strong> sim, a qualquer momento <span class="pg">p.&nbsp;8</span>. <strong>d:</strong> não <span class="pg">p.&nbsp;8</span>. <strong>e:</strong> não; Melhorias só nas fases Principais <span class="pg">p.&nbsp;8</span>.</li></ul></div></details></details>
+</section>
+<section class="bloco sec" id="etapa-4-fichas-tipos-de-dano-e-a-habilidade-suprema"><h2><span class="num">5</span>Etapa 4: fichas, tipos de dano e a habilidade suprema</h2>
+<details class="dobra entender"><summary>Por que funciona assim</summary><aside class="call entender"><p>Cada herói tem os seus <strong>efeitos de status</strong>, representados por fichas. Os positivos ajudam quem os tem; os negativos atrapalham quem os recebe. Você ganha um efeito positivo ou dá um negativo, quase sempre com cartas ou habilidades ofensivas <span class="pg">p.&nbsp;6</span>.</p>
+<p>Algumas fichas você gasta para ter o efeito, como a Evasiva e a Recarga da Pistoleira. Outras agem sozinhas e ficam até algo as tirar: são as <strong>persistentes</strong>, como a Recompensa <span class="pg">p.&nbsp;2 e 7</span>. O dano também tem tipos, e o tipo diz o que o defensor ainda pode fazer <span class="pg">p.&nbsp;10</span>.</p></aside></details>
+<p><strong>As fichas da Pistoleira</strong> (folheto, p. 2):</p>
+<div class="tab"><table><thead><tr><th>Ficha</th><th>Tipo</th><th>Limite de pilha</th><th>O que faz</th></tr></thead><tbody><tr><td data-label="Ficha">Evasive (Evasiva)</td><td data-label="Tipo">positiva</td><td data-label="Limite de pilha">3</td><td data-label="O que faz">quando você vai receber dano, pode gastá-la e rolar 1 dado: com 1 ou 2, não recebe o dano (outros efeitos ainda valem). Pode gastar várias contra o mesmo dano</td></tr><tr><td data-label="Ficha">Reload (Recarga)</td><td data-label="Tipo">positiva</td><td data-label="Limite de pilha">2</td><td data-label="O que faz">se você termina a rolagem ofensiva com um Ataque, pode gastá-la: role 1 dado e some metade do valor, arredondada para cima, ao dano. É Modificador de Ataque</td></tr><tr><td data-label="Ficha">Knockdown (Derrubada)</td><td data-label="Tipo">negativa</td><td data-label="Limite de pilha">1</td><td data-label="O que faz">quem a tem paga 2 CP antes do começo da própria rolagem ofensiva para tirá-la; se não pagar, pula a rolagem ofensiva e então tira a ficha</td></tr><tr><td data-label="Ficha">Bounty (Recompensa)</td><td data-label="Tipo">negativa</td><td data-label="Limite de pilha">1</td><td data-label="O que faz">quando quem a tem sofre um Ataque de um adversário, o atacante soma 1 ao dano e ganha 1 CP. Persistente</td></tr></tbody></table></div>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Efeitos de status</strong> <span class="pg">p.&nbsp;6 e 7</span></p>
+<ol><li><strong>Dar ou ganhar:</strong> pegue a ficha no folheto do herói e ponha no meio do tabuleiro de quem recebe. Agora ela está em jogo.</li><li><strong>Gastar:</strong> salvo indicação contrária, uma ficha gastável pode ser gasta a qualquer momento, em qualquer fase, no turno de qualquer jogador, e o efeito é imediato. Gastar devolve a ficha ao folheto.</li><li><strong>Limite de pilha:</strong> é o máximo de fichas daquele efeito sobre um mesmo herói ao mesmo tempo.</li><li><strong>Persistente:</strong> fica em jogo até o fim da partida, ou até uma carta ou habilidade tirá-la.</li><li><strong>Tirar:</strong> a ficha volta ao lugar dela no folheto. Se o efeito manda tirar um número de fichas, tire esse número.</li></ol></aside>
+<details class="dobra mais"><summary>Regra adicional: Fichas a mais</summary><aside class="call mais"><p>Se precisar de mais fichas que as da caixa, use qualquer outra coisa para representá-las <span class="pg">p.&nbsp;6</span>.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Efeitos únicos</summary><aside class="call mais"><p>Efeitos marcados como únicos (Unique) seguem as regras da própria descrição, não as normais, e podem ter ficha de formato diferente <span class="pg">p.&nbsp;7</span>.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Limite aumentado</summary><aside class="call mais"><p>Se uma carta aumenta o limite de pilha de um efeito, isso vale só para aquele jogador, até o fim da partida <span class="pg">p.&nbsp;7</span>.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Gasto não se interrompe</summary><aside class="call mais"><p>O efeito de uma ficha gasta não pode ser interrompido <span class="pg">p.&nbsp;7</span>.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Herói derrotado</summary><aside class="call mais"><p>As fichas que ele deu a outros jogadores continuam em jogo <span class="pg">p.&nbsp;6</span>.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Companheiros</summary><aside class="call mais"><p>Alguns heróis têm companheiros (fichas, marcadores ou outras peças). Não são efeitos de status, e cartas que mexem em efeitos não os afetam. Não podem ser tirados, transferidos ou destruídos, salvo regra própria no folheto <span class="pg">p.&nbsp;7</span>.</p></aside></details>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Tipos de dano</strong> <span class="pg">p.&nbsp;10</span>. Um círculo preto com número é dano normal; um círculo vermelho é um dos outros tipos, com o nome escrito depois do número.</p>
+<div class="tab"><table><thead><tr><th>Tipo</th><th>Admite defesa</th><th>Pode ser evitado</th><th>Pode ser modificado</th><th>Regra própria de alvo</th></tr></thead><tbody><tr><td data-label="Tipo">Normal</td><td data-label="Admite defesa">sim</td><td data-label="Pode ser evitado">sim</td><td data-label="Pode ser modificado">sim</td><td data-label="Regra própria de alvo">não</td></tr><tr><td data-label="Tipo">Indefensável</td><td data-label="Admite defesa">não</td><td data-label="Pode ser evitado">sim</td><td data-label="Pode ser modificado">sim</td><td data-label="Regra própria de alvo">não</td></tr><tr><td data-label="Tipo">Puro</td><td data-label="Admite defesa">não</td><td data-label="Pode ser evitado">sim</td><td data-label="Pode ser modificado">não</td><td data-label="Regra própria de alvo">não</td></tr><tr><td data-label="Tipo">Colateral</td><td data-label="Admite defesa">não</td><td data-label="Pode ser evitado">sim</td><td data-label="Pode ser modificado">não</td><td data-label="Regra própria de alvo">sim</td></tr><tr><td data-label="Tipo">Supremo</td><td data-label="Admite defesa">não</td><td data-label="Pode ser evitado">não</td><td data-label="Pode ser modificado">só para aumentar</td><td data-label="Regra própria de alvo">não</td></tr></tbody></table></div>
+<p>Admite defesa: vale a habilidade defensiva. Pode ser evitado: cartas e fichas, como a Evasiva, reduzem ou previnem. Pode ser modificado: Modificadores de Ataque mexem nele. Regra própria de alvo: a descrição diz quem recebe.</p></aside>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Modificadores de Ataque</strong> <span class="pg">p.&nbsp;11</span></p>
+<ol><li>Toda carta ou ficha que modifica um Ataque é um Modificador de Ataque.</li><li>Pode ser jogada antes ou depois de o defensor ativar a habilidade defensiva.</li><li>O dano que ela soma é do mesmo tipo do dano original.</li><li>Só vale em Ataques: habilidade ofensiva contra um adversário, com pelo menos 1 de dano.</li></ol></aside>
+<details class="dobra edicao"><summary>Sobre a edição</summary><aside class="call edicao"><p>A versão 2.4.1 do manual, a atual, acrescenta à p. 11 que Modificadores de Ataque só podem ser jogados num Ataque que você está ativando no seu turno, salvo indicação contrária. A versão 2.3.2 não tem essa frase. Seguimos a versão mais nova, porque o próprio manual se diz um documento vivo <span class="pg">p.&nbsp;1</span>.</p></aside></details>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>A habilidade suprema</strong> <span class="pg">p.&nbsp;5 e 10</span></p>
+<ol><li>O único jeito de impedir uma habilidade suprema é alterar um dado <strong>antes</strong> de ela ser ativada.</li><li>Depois de ativada, os adversários não podem fazer nada até o fim da fase de rolagem: nenhuma carta, ficha ou companheiro.</li><li>O dano e os efeitos dela podem ser aumentados, mas não reduzidos. Ela ignora fichas em jogo que diminuiriam o efeito.</li></ol></aside>
+<details class="dobra resolvido"><summary>Ver um exemplo resolvido</summary><aside class="call resolvido"><p>Na Manutenção, a Pistoleira ganha 1 Recarga pela passiva Quick Draw. O adversário está com a ficha de Recompensa desde um Bounty Hunter anterior. Ela termina a rolagem com 1, 2, 3, 5 e 5: 3 Balas, e o Revolver (sem melhoria) dá 3 de dano normal.</p>
+<p>É um Ataque contra quem tem Recompensa: ela soma 1 ao dano e ganha 1 CP. Gasta a Recarga e rola 5: metade de 5 é 2,5, que arredondada para cima dá 3. Dano total: 3 + 1 + 3 = 7, todo normal. O adversário pode usar a defesa dele e gastar fichas que evitem dano; o que sobrar entra na Vida dele no fim da fase de rolagem.</p></aside></details>
+
+
+
+
+<details class="dobra pratica"><summary>Pratique esta etapa: exercícios com respostas</summary><aside class="call complete"><p class="rot">Tarefa · complete</p><p><strong>Complete.</strong> Mesma situação, mas a Recarga rola 4. Já sabemos: o Revolver dá 3 e a Recompensa soma 1. Termine: quanto a Recarga soma, qual é o dano total, e o que mais a Pistoleira ganha?</p></aside>
+<aside class="call suavez"><p class="rot">Tarefa · sua vez</p><p><strong>Sua vez.</strong> A Pistoleira ativa o Deadeye contra um adversário que tem 1 ficha de Evasiva: Derrubada e 6 de dano indefensável. O adversário pode ativar a habilidade defensiva? Pode gastar a Evasiva? Se a Evasiva rolar 2, o que acontece com o dano e com a Derrubada? E no turno seguinte, o que o adversário precisa decidir?</p></aside>
+<aside class="call treino"><p class="rot">Treino rápido</p><p><strong>O defensor pode...?</strong></p>
+<p>a) Usar a habilidade defensiva contra os 6 de dano indefensável do Deadeye?</p>
+<p>b) Gastar Evasiva contra os 10 de dano da habilidade suprema Fill'em with Lead!?</p>
+<p>c) Gastar Evasiva contra os 5 de dano normal do Take Cover?</p>
+<p>d) Mudar um dado da Pistoleira, com uma carta, quando ela tem 5 Moscas e ainda não anunciou a habilidade suprema?</p></aside>
+<details class="respostas"><summary>Respostas da etapa 4: mostrar</summary><div><ul><li><strong>Complete:</strong> metade de 4 é 2. Total: 3 + 1 + 2 = 6. Ela ganha também 1 CP, pela Recompensa <span class="pg">p.&nbsp;2</span>.</li><li><strong>Sua vez:</strong> não pode usar a defesa, porque o dano é indefensável. Pode gastar a Evasiva, porque o dano indefensável pode ser evitado. Com 2, não recebe os 6 de dano, mas a Derrubada fica, porque "outros efeitos ainda valem". No turno seguinte, antes da rolagem ofensiva, ele paga 2 CP para tirar a Derrubada ou pula a rolagem ofensiva <span class="pg">p.&nbsp;2 e 10</span>.</li><li><strong>Treino a:</strong> não. <strong>b:</strong> não; dano supremo não pode ser evitado. <strong>c:</strong> sim. <strong>d:</strong> sim; é o único jeito de impedir a suprema, e tem de ser antes da ativação <span class="pg">p.&nbsp;5 e 10</span>.</li></ul></div></details></details>
+</section>
+<section class="bloco sec opc" id="situacoes-especiais"><h2><span class="num">6</span>Situações especiais<span class="tag-opc">Opcional</span></h2>
+<details class="dobra sec-opc"><summary>Abrir esta seção</summary><p><strong>Quem resolve primeiro.</strong> Quando várias Ações Instantâneas se cruzam, o jogador da vez tem prioridade, não importa quem começou. Gastar uma ficha também conta como Ação Instantânea. Exemplo do manual: se o adversário gasta Evasiva contra o seu Ataque e você joga Buh, Bye! para tirá-la, a sua carta se resolve primeiro, porque o turno é seu <span class="pg">p.&nbsp;15</span>. Cartas que não são instantâneas podem ser interrompidas: enquanto uma Ação de Fase Principal se resolve, o adversário ainda pode gastar fichas <span class="pg">p.&nbsp;15</span>.</p>
+<details class="dobra mais"><summary>Regra adicional: Prioridade com mais de 2 jogadores</summary><aside class="call mais"><p>Primeiro o jogador da vez, depois os outros na ordem dos turnos. Terminadas as interrupções, o jogo segue na ordem normal <span class="pg">p.&nbsp;15</span>.</p></aside></details>
+<p><strong>Manutenção com vários efeitos.</strong> Se várias coisas acontecem na Manutenção, o jogador da vez escolhe a ordem. Todo dano e cura dessa fase se somam e são aplicados juntos, no fim dela <span class="pg">p.&nbsp;12</span>.</p>
+<p><strong>A conta do dano com muitas cartas</strong> (p. 14, que o manual diz ser para jogadores avançados e torneios). Parta do dano a receber. Some e subtraia o que acrescenta ou previne uma quantidade fixa: é o subtotal. Por último, aplique multiplicações e divisões, cada uma sobre o subtotal, não uma sobre a outra. Toda divisão arredonda para cima.</p>
+<details class="dobra resolvido"><summary>Ver um exemplo resolvido</summary><aside class="call resolvido"><p>O Bárbaro ataca o Paladino com 18 de dano. Durante a rolagem, entram uma prevenção de 3, um acréscimo de 5 e outra prevenção de 3: subtotal 18 − 3 + 5 − 3 = 17. O Paladino também gastou duas fichas que previnem metade do dano e uma que devolve metade ao atacante. Cada metade é 17 ÷ 2 = 8,5, arredondada para 9. O Paladino recebe 17 − 9 − 9, que dá menos de zero: recebe 0. O Bárbaro recebe 9 de volta.</p></aside></details>
+<p><strong>Três jogadores: o Rei da Colina</strong> (King of the Hill, p. 11 e 13). Vida inicial 35; o resto da preparação é igual ao duelo; role para ver quem começa; sentido horário. Num Ataque, você escolhe qualquer adversário, sem rolagem de alvo. Quem tem mais Vida é líder (empatados são todos líderes). Atacar um líder dá 1 carta, comprada logo depois de escolher o alvo, antes de qualquer outro efeito, mesmo se você estiver empatado com ele; o único líder nunca ganha essa carta.</p>
+<p><strong>Quatro jogadores: duplas</strong> <span class="pg">p.&nbsp;11 e 13</span>. Parceiros sentam lado a lado e podem ver a mão um do outro. Role para ver quem começa; a vez alterna entre as duplas em zigue-zague (desenho da p. 11): um jogador da dupla A, um da dupla B, o outro da dupla A, o outro da dupla B. O resto da preparação é igual ao duelo. Cada dupla divide um marcador de Vida, em 50; o jogador inicial pula a primeira Renda. Cada um tem o próprio CP, só para as próprias cartas e habilidades. Ninguém reduz o dano do parceiro, salvo carta ou ficha que permita ("um jogador escolhido" permite), mas dá para alterar dados para poupá-lo ou ajudá-lo.</p>
+<details class="dobra mais"><summary>Regra adicional: Rolagem de alvo nas duplas</summary><aside class="call mais"><p>Com dois adversários, você rola 1 dado na rolagem de alvo: 1 ou 2, o adversário à sua esquerda; 3 ou 4, o da direita; 5, os adversários escolhem; 6, você escolhe. Esse dado pode ser alterado com cartas, menos quando o Ataque é uma habilidade suprema. Mesmo uma habilidade sem dano, mas com efeitos num adversário, passa por essa escolha <span class="pg">p.&nbsp;13</span>.</p></aside></details>
+<p><strong>Cinco ou seis jogadores.</strong> O manual recomenda não tentar até todos conhecerem bem o jogo e manda as regras para variants.dicethrone.com. Este guia não cobre esse modo <span class="pg">p.&nbsp;11</span>.</p></details>
+</section>
+<section class="bloco sec opc" id="avaliacao-final"><h2><span class="num">7</span>Avaliação final<span class="tag-opc">Opcional</span></h2>
+<details class="dobra sec-opc"><summary>Abrir esta seção</summary><p>Responda sem consultar. Depois confira e veja o que reler.</p>
+<ol><li>Você é o jogador inicial. No seu primeiro turno, quanto CP tem na rolagem ofensiva, se não vendeu nem jogou nada?</li><li>A Pistoleira termina com 1, 1, 2, 6, 6. Que habilidade pode ativar? E com 2, 2, 2, 2, 6 e o Revolver II no tabuleiro?</li><li>Os dados mostram combinações para duas habilidades. Quantas você ativa?</li><li>Um Ataque de 9 de dano normal. A Pistoleira ganha o Duel e escolhe prevenir. Quanto recebe?</li><li>A Pistoleira tem 8 cartas e 15 CP na fase de Descarte. Com quanto CP e quantas cartas termina?</li><li>Uma carta de borda azul pode ser jogada no turno do adversário?</li><li>O adversário causa dano indefensável. A Pistoleira pode usar o Duel? E a Evasiva?</li><li>Uma habilidade suprema foi ativada contra você. O que você ainda pode fazer?</li></ol>
+<details class="respostas"><summary>Respostas da avaliação: mostrar</summary><div><ol><li><strong>2 CP</strong>: o jogador inicial pula a Renda no primeiro turno (etapa 3).</li><li><strong>Revolver</strong> (3 Balas: 1, 1 e 2) <strong>ou Bounty Hunter</strong> (2 Balas e 2 Moscas), só uma das duas. Com 2, 2, 2, 2 e 6: <strong>Revolver II</strong> com 4 Balas, 5 de dano, e <strong>Derrubada</strong>, porque são 4 iguais pelo número (etapas 2 e 3).</li><li><strong>Uma</strong> (etapa 2).</li><li><strong>4</strong>: metade de 9 é 4,5, que arredondada para cima dá 5 de prevenção; 9 menos 5 dá 4 (etapa 2).</li><li><strong>15 CP e 6 cartas</strong>: vende 2, mas o CP já está no teto (etapa 3).</li><li><strong>Não</strong>: Ação de Fase Principal só no seu turno (etapa 3).</li><li><strong>Duel, não. Evasiva, sim</strong> (etapa 4).</li><li><strong>Nada</strong> até o fim da fase de rolagem (etapa 4).</li></ol>
+<aside class="call atencao"><p class="rot">Atenção</p><p><strong>Critério para começar a jogar.</strong> Acertou 7 ou 8? Monte a mesa e jogue, com a folha de consulta ao lado. Errou a 2, a 3 ou a 4, releia a etapa 2. Errou a 1, a 5 ou a 6, a etapa 3. Errou a 7 ou a 8, a etapa 4. Depois refaça só as perguntas que errou.</p></aside></div></details></details>
+</section>
+<section class="bloco sec ref" id="para-consultar-durante-a-partida"><h2><span class="num">8</span>Para consultar durante a partida</h2>
+<p><strong>Preparação (duelo):</strong> Vida 50, CP 2, 4 cartas, fichas no folheto, verso do folheto. Maior dado começa. 3 jogadores: Vida 35. 4: duplas, Vida 50 por dupla.</p>
+<p><strong>Turno</strong></p>
+<ol><li>Manutenção: efeitos de fichas e passivas. Dano e cura aplicados juntos no fim.</li><li>Renda: +1 CP e compre 1 (o jogador inicial pula no primeiro turno).</li><li>Principal (1): venda (1 CP cada), Ações de Fase Principal, Melhorias.</li><li>Rolagem ofensiva: até 3 tentativas; anuncie uma habilidade ou nenhuma; o adversário pode mexer nos dados.</li><li>Rolagem de alvo: só com mais de 2 jogadores.</li><li>Rolagem defensiva: se houve Ataque com dano que admite defesa, o defensor rola uma vez. Dano, prevenção e cura aplicados juntos no fim.</li><li>Principal (2): igual à 3.</li><li>Descarte: venda até ter 6 cartas.</li></ol>
+<p><strong>Dados:</strong> sequência pequena = 4 números seguidos; grande = 5. "Iguais" contam o número, não o símbolo.</p>
+<p><strong>CP:</strong> começa em 2, máximo 15. Toda carta vendida vale 1.</p>
+<p><strong>Cartas:</strong> seta para cima = Melhoria (fases Principais; não se vende depois; de II para III paga a diferença). Azul = Ação de Fase Principal (seu turno). Laranja = Ação de Fase de Rolagem (qualquer fase de rolagem, de qualquer jogador). Vermelha com ! = Ação Instantânea (a qualquer momento; interrompe; não é interrompida).</p>
+<p><strong>Dano:</strong> normal admite defesa. Indefensável, puro e colateral não admitem, mas podem ser evitados. Supremo não admite defesa nem pode ser evitado.</p>
+<p><strong>Fichas:</strong> gastáveis a qualquer momento, efeito imediato. Persistentes ficam até algo as tirar. Limite de pilha por herói.</p>
+<p><strong>Prioridade:</strong> o jogador da vez resolve primeiro.</p>
+<p><strong>Fim:</strong> Vida 0 é derrota; todos a 0 ao mesmo tempo, empate. Cura até 10 acima da Vida inicial.</p>
+<p><strong>Caixa em inglês?</strong> Vida = Health; tabuleiro e folheto do herói = Hero Board e Hero Leaflet; Manutenção, Renda, Principal, Descarte = Upkeep, Income, Main, Discard Phase; rolagem ofensiva, de alvo, defensiva = Offensive, Targeting, Defensive Roll Phase; requisito de ativação = Activation Requirement; sequência pequena e grande = Small e Large Straight; habilidade suprema = Ultimate Ability; Melhoria de Herói = Hero Upgrade; Ação de Fase Principal, de Fase de Rolagem, Instantânea = Main Phase, Roll Phase, Instant Action; Modificador de Ataque = Attack Modifier; efeito de status = Status Effect; limite de pilha = Stack Limit; dano indefensável, puro, colateral, supremo = undefendable, pure, collateral, ultimate damage; Bala, Arrancada, Mosca = Bullet, Dash, Bullseye; Evasiva, Recarga, Derrubada, Recompensa = Evasive, Reload, Knockdown, Bounty.</p>
+</section>
+<section class="bloco sec" id="fontes"><h2><span class="num">9</span>Fontes</h2>
+<ul><li>Dice Throne Inc. <em>Dice Throne: Rules of Play</em>, versão 2.3.2 (arquivo de 04/07/2022, 16 páginas). <a href="https://cdn.shopify.com/s/files/1/0045/4013/7562/files/Dice_Throne_Rulebook_-_v2.3.2_-_2022.07.04.pdf">https://cdn.shopify.com/s/files/1/0045/4013/7562/files/Dice_Throne_Rulebook_-_v2.3.2_-_2022.07.04.pdf</a>. Consultado em 31/10/2026.</li><li>Dice Throne Inc. e Roxley. <em>Dice Throne: Rules of Play</em>, versão 2.4.1 (arquivo "Dice Throne Rulebook - v2.4.1 - 2023.05.10", 16 páginas em 9 folhas duplas, copyright 2023), a versão para a qual rules.dicethrone.com aponta em 31/10/2026. Mesma paginação da 2.3.2; usada para conferir mudanças e para os dados da capa (2 a 6 jogadores, 30 minutos, 8 anos ou mais). Consultado em 31/10/2026.</li><li>Não foram encontrados FAQ nem errata separados; as perguntas frequentes ficam no folheto de cada herói. Não foi confirmada edição brasileira com manual público até 31/10/2026.</li></ul>
+</section>
+
+<p class="nota-pe">Regras conferidas no manual oficial em inglês da Dice Throne Inc. (Rules of Play, versão 2.4.1, a atual em rules.dicethrone.com, comparada com a versão 2.3.2, de 2022), porque não encontramos manual em português publicado. Os nomes da caixa brasileira podem ser diferentes dos usados aqui. As páginas citadas são as do manual, iguais nas duas versões. Os exemplos usam a Pistoleira (Gunslinger), a heroína que o manual mostra por inteiro.</p>
+</div></main>
+
+<!--rodape--><footer><div class="in">
+ <span>Elite Boardgamers</span><a href="../../noticias/">Notícias</a><a href="../../resenhas/">Resenhas</a><a href="../../como-jogar/">Como jogar</a><a href="../../lancamentos/">Lançamentos</a><a href="../../consulta/">Consulta Golden Geek</a><a href="../../jogos-de-tabuleiro/">Guia de jogos de tabuleiro</a><a href="../../premios/">Prêmios</a><a href="../../politica-editorial/">Política editorial</a>
+ <a href="https://www.instagram.com/eliteboardgamers/" target="_blank" rel="noopener">Instagram @eliteboardgamers</a><a href="https://chat.whatsapp.com/IgQQkJdSkzHBaEq3UwFeAo" target="_blank" rel="noopener">Grupo do WhatsApp</a>
+</div></footer>
+<div class="barra-lt fora" role="region" aria-label="Ações da página"><div class="cpw" data-texto=""><a class="cp" href="https://wa.me/" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="M8.2 10.8l7.6-4.4M8.2 13.2l7.6 4.4"/></svg><span>Compartilhar</span></a><div class="cp-menu" hidden><a class="cp-op zap-op" href="https://wa.me/" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8.4 19l-4.4 1Z"/><path d="M9.2 8.6c.3-.5.8-.5 1-.1l.7 1.5c.1.3 0 .6-.2.8l-.4.4c.5 1.1 1.4 2 2.5 2.5l.4-.4c.2-.2.5-.3.8-.2l1.5.7c.4.2.4.7-.1 1-.7.5-1.6.6-2.4.3a7 7 0 0 1-4.2-4.2c-.3-.8-.2-1.7.4-2.3Z"/></svg>WhatsApp</a><button type="button" class="cp-op"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h8"/></svg>Copiar link</button></div><p class="cp-st" role="status"></p></div><script>(()=>{const pega=c=>({u:c.dataset.url||location.href,t:c.dataset.texto||document.title});
+document.querySelectorAll('.cpw:not(.ok)').forEach(c=>{c.classList.add('ok');const b=c.querySelector('.cp');
+ const n=document.createElement('button');n.type='button';n.className=b.className;n.innerHTML=b.innerHTML;n.setAttribute('aria-expanded','false');b.replaceWith(n)});
+if(window.__cp)return;window.__cp=1;
+const celular=()=>navigator.share&&matchMedia('(pointer:coarse)').matches;
+const fecha=()=>document.querySelectorAll('.cp-menu:not([hidden])').forEach(m=>{m.hidden=true;m.parentNode.querySelector('.cp').setAttribute('aria-expanded','false')});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')fecha()});
+document.addEventListener('click',async ev=>{const c=ev.target.closest('.cpw');if(!c){fecha();return}
+ const {u,t}=pega(c),m=c.querySelector('.cp-menu'),st=c.querySelector('.cp-st'),el=ev.target.closest('.cp,.cp-op');if(!el)return;
+ if(el.classList.contains('cp')){
+  if(celular()){try{await navigator.share({title:document.title,text:t,url:u})}catch(e){}return}
+  const abre=m.hidden;fecha();if(!abre)return;
+  m.querySelector('.zap-op').href='https://wa.me/?text='+encodeURIComponent(t+' '+u);
+  const r=c.getBoundingClientRect();m.classList.toggle('sobe',!!c.closest('.barra-lt')||r.bottom>innerHeight-140);m.classList.toggle('dir',r.left>innerWidth-220);
+  m.hidden=false;el.setAttribute('aria-expanded','true');m.querySelector('.cp-op').focus();return}
+ if(el.classList.contains('zap-op')){fecha();return}
+ fecha();let ok=false;try{await navigator.clipboard.writeText(u);ok=true}catch(e){
+  const i=document.createElement('input');i.value=u;document.body.append(i);i.select();try{ok=document.execCommand('copy')}catch(e2){}i.remove()}
+ st.textContent=ok?'Link copiado!':'Não deu para copiar o link.';clearTimeout(st._t);st._t=setTimeout(()=>st.textContent='',2500);
+ c.querySelector('.cp').focus()})})()</script><a class="lt-grupo" href="https://chat.whatsapp.com/IgQQkJdSkzHBaEq3UwFeAo" target="_blank" rel="noopener" aria-label="Entrar no grupo do WhatsApp da Elite"><img src="/favicon-48.png" width="48" height="48" alt=""><span>Grupo</span></a></div><script>(()=>{const l=document.querySelector('.barra-lt');if(!l)return;const vis=new Set();
+const poe=()=>{const on=scrollY>500&&!vis.size;l.classList.toggle('fora',!on);l.inert=!on;document.body.classList.toggle('lt-on',on)};
+const io=new IntersectionObserver(es=>{es.forEach(e=>e.isIntersecting?vis.add(e.target):vis.delete(e.target));poe()});
+document.querySelectorAll('.convite,footer').forEach(x=>io.observe(x));addEventListener('scroll',poe,{passive:true});poe()})()</script>
+<script>(()=>{const g=document.querySelector('.guia-prog');if(!g)return;const t=g.querySelector('.gp-t'),b=g.querySelector('.gp-b');
+const secs=[...document.querySelectorAll('.sec[id]')],idx=document.querySelector('.indice');
+const poe=()=>{const y=scrollY+innerHeight*.3;let at=null;for(const s of secs){if(s.offsetTop<=y)at=s}
+ t.textContent=at&&scrollY>idx.offsetTop?at.querySelector('h2').textContent.replace(/^\d+/,'').trim():'Neste guia';
+ const h=document.documentElement.scrollHeight-innerHeight;b.style.transform='scaleX('+(h>0?Math.min(1,scrollY/h):0)+')'};
+addEventListener('scroll',poe,{passive:true});addEventListener('resize',poe);poe()})()</script><!--/rodape-->
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "b37421bd1ade44f1a59e46b96626bf03"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

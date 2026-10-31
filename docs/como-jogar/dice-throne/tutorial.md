@@ -1,6 +1,6 @@
 # Como jogar Dice Throne
 
-*Regras conferidas no manual oficial em inglês da Dice Throne Inc. (Rules of Play, versão 2.3.2, de 2022, comparada com a versão 2.4.1, a atual em rules.dicethrone.com), porque não encontramos manual em português publicado. Os nomes da caixa brasileira podem ser diferentes dos usados aqui. As páginas citadas são as do manual, iguais nas duas versões. Os exemplos usam a Pistoleira (Gunslinger), a heroína que o manual mostra por inteiro.*
+*Regras conferidas no manual oficial em inglês da Dice Throne Inc. (Rules of Play, versão 2.4.1, a atual em rules.dicethrone.com, comparada com a versão 2.3.2, de 2022), porque não encontramos manual em português publicado. Os nomes da caixa brasileira podem ser diferentes dos usados aqui. As páginas citadas são as do manual, iguais nas duas versões. Os exemplos usam a Pistoleira (Gunslinger), a heroína que o manual mostra por inteiro.*
 
 ## 4min. Comece a jogar em 4 minutos
 
@@ -33,11 +33,11 @@ O turno tem fases, sempre nesta ordem (p. 4). No primeiro turno do jogo, quase t
 7. **Principal (2):** igual à 3.
 8. **Descarte:** quem tem mais de 6 cartas vende até ficar com 6.
 
-Os dados da Pistoleira têm Bala nas faces 1, 2 e 3, Arrancada nas faces 4 e 5 e Mosca (o alvo) na face 6 (p. 2). Duas habilidades dela (p. 2 e 3):
+Os dados da Pistoleira têm Bala (Bullet) nas faces 1, 2 e 3, Arrancada (Dash) nas faces 4 e 5 e Mosca (Bullseye, o alvo) na face 6 (p. 2). Duas habilidades dela (p. 2 e 3):
 
 | Habilidade | Combinação | Efeito |
 |---|---|---|
-| Take Cover (Proteger-se) | 2 Balas e 3 Arrancadas | ganha 1 ficha de Evasiva; 5 de dano |
+| Take Cover (Proteger-se) | 2 Balas e 3 Arrancadas | ganha 1 ficha de Evasiva (Evasive); 5 de dano |
 | Fan the Hammer (Leque de tiros) | sequência grande: 5 números seguidos | ganha 2 fichas de Evasiva; 7 de dano |
 
 > [!resolvido] **Exemplo resolvido.** A Pistoleira rola 1, 4, 4, 6 e 3: duas Balas (1 e 3), duas Arrancadas (4 e 4) e uma Mosca. Para o Take Cover falta uma Arrancada. Ela guarda os outros quatro dados e rola de novo só o 6. Sai 5: agora tem 1, 4, 4, 5 e 3, com 2 Balas e 3 Arrancadas. Ela para, sem usar a terceira rolagem, e ativa o Take Cover: põe uma ficha de Evasiva no próprio tabuleiro e causa 5 de dano. O adversário rola a defesa; se ela não reduzir nada, ele vai de 50 para 45 de Vida.
@@ -62,7 +62,7 @@ No duelo, quem leva a Vida do adversário a 0 vence. Se os dois chegarem a 0 ao 
 
 Dice Throne é um duelo. Cada herói tem dados com símbolos próprios, um tabuleiro com as habilidades dele, fichas e um baralho. Este guia ensina as regras que todos compartilham; o que muda de herói para herói está impresso no tabuleiro e no folheto dele (p. 2, 5 e 6).
 
-Você vence quando reduz a Vida do adversário a 0 (p. 2). Ataca no seu turno, com até três tentativas de rolagem para chegar a uma combinação, e se defende no turno do outro, com uma rolagem única. No tabuleiro da Pistoleira, as combinações mais difíceis, como as 5 Moscas da habilidade suprema, são as que dão mais dano (p. 2 e 3).
+Você vence quando reduz a Vida do adversário a 0 (p. 2). Ataca no seu turno, com até três tentativas de rolagem para chegar a uma combinação, e se defende no turno do outro, com uma rolagem única. No tabuleiro da Pistoleira, a habilidade suprema, que pede 5 Moscas, é a que dá mais dano: 10 (p. 2 e 3).
 
 Duas ideias sustentam o resto:
 
@@ -91,14 +91,14 @@ O guia tem quatro etapas: montar a mesa e ler o tabuleiro do herói; rolar, atac
 | Habilidade | Tipo | Combinação | Efeito |
 |---|---|---|---|
 | Revolver (Revólver) | ofensiva | 3, 4 ou 5 Balas | 3, 4 ou 5 de dano |
-| Bounty Hunter (Caçadora de recompensas) | ofensiva | 2 Balas e 2 Moscas | dá a ficha Recompensa ao adversário; então 1 de dano indefensável |
+| Bounty Hunter (Caçadora de recompensas) | ofensiva | 2 Balas e 2 Moscas | dá a ficha Recompensa (Bounty) ao adversário; então 1 de dano indefensável |
 | Take Cover (Proteger-se) | ofensiva | 2 Balas e 3 Arrancadas | ganha 1 Evasiva; 5 de dano |
 | Showdown (Duelo ao sol) | ofensiva | sequência pequena | depois de escolher o alvo, cada um rola 1 dado; se o seu for igual ou maior, 7 de dano; senão, 5 |
-| Deadeye (Tiro certeiro) | ofensiva | 4 Moscas | dá a ficha Derrubada ao adversário; 6 de dano indefensável |
+| Deadeye (Tiro certeiro) | ofensiva | 4 Moscas | dá a ficha Derrubada (Knockdown) ao adversário; 6 de dano indefensável |
 | Fan the Hammer (Leque de tiros) | ofensiva | sequência grande | ganha 2 Evasivas; 7 de dano |
-| Quick Draw (Saque rápido) | passiva | nenhuma | na sua fase de Manutenção, ganha 1 Recarga |
+| Quick Draw (Saque rápido) | passiva | nenhuma | na sua fase de Manutenção, ganha 1 Recarga (Reload) |
 | Duel (Duelo) | defensiva, 1 dado | 1 dado | você e o atacante rolam 1 dado cada; se o seu for maior, escolha: 3 de dano no atacante, ou prevenir metade do dano (arredondada para cima); se não for maior, 1 de dano no atacante |
-| Fill'em with Lead! (Encha de chumbo) | suprema | 5 Moscas | ganha 1 Evasiva; dá Recompensa e Derrubada; então 10 de dano |
+| Fill'em with Lead! (Encha de chumbo) | suprema | 5 Moscas | ganha 1 Evasiva; dá Recompensa e Derrubada; então 10 de dano. Se gastar uma Recarga, pode rolar de novo, uma vez, o dado dela |
 
 > [!passos] **Passo a passo: preparação** (p. 3). Cada jogador faz o mesmo, com o próprio herói.
 >
@@ -359,9 +359,9 @@ O guia tem quatro etapas: montar a mesa e ler o tabuleiro do herói; rolar, atac
 
 > [!resolvido] **O exemplo do manual (p. 14).** O Bárbaro ataca o Paladino com 18 de dano. Durante a rolagem, entram uma prevenção de 3, um acréscimo de 5 e outra prevenção de 3: subtotal 18 − 3 + 5 − 3 = 17. O Paladino também gastou duas fichas que previnem metade do dano e uma que devolve metade ao atacante. Cada metade é 17 ÷ 2 = 8,5, arredondada para 9. O Paladino recebe 17 − 9 − 9, que dá menos de zero: recebe 0. O Bárbaro recebe 9 de volta.
 
-**Três jogadores: o Rei da Colina** (King of the Hill, p. 11 e 13). Vida inicial 35; role para ver quem começa; sentido horário. Num Ataque, você escolhe qualquer adversário, sem rolagem de alvo. Quem tem mais Vida é líder (empatados são todos líderes). Atacar um líder dá 1 carta, comprada logo depois de escolher o alvo, antes de qualquer outro efeito, mesmo se você estiver empatado com ele; o único líder nunca ganha essa carta.
+**Três jogadores: o Rei da Colina** (King of the Hill, p. 11 e 13). Vida inicial 35; o resto da preparação é igual ao duelo; role para ver quem começa; sentido horário. Num Ataque, você escolhe qualquer adversário, sem rolagem de alvo. Quem tem mais Vida é líder (empatados são todos líderes). Atacar um líder dá 1 carta, comprada logo depois de escolher o alvo, antes de qualquer outro efeito, mesmo se você estiver empatado com ele; o único líder nunca ganha essa carta.
 
-**Quatro jogadores: duplas** (p. 11 e 13). Parceiros sentam lado a lado e podem ver a mão um do outro. Role para ver quem começa; a vez alterna entre as duplas em zigue-zague (desenho da p. 11). Cada dupla divide um marcador de Vida, em 50; o jogador inicial pula a primeira Renda. Cada um tem o próprio CP, só para as próprias cartas e habilidades. Ninguém reduz o dano do parceiro, salvo carta ou ficha que permita ("um jogador escolhido" permite), mas dá para alterar dados para poupá-lo ou ajudá-lo.
+**Quatro jogadores: duplas** (p. 11 e 13). Parceiros sentam lado a lado e podem ver a mão um do outro. Role para ver quem começa; a vez alterna entre as duplas em zigue-zague (desenho da p. 11): um jogador da dupla A, um da dupla B, o outro da dupla A, o outro da dupla B. O resto da preparação é igual ao duelo. Cada dupla divide um marcador de Vida, em 50; o jogador inicial pula a primeira Renda. Cada um tem o próprio CP, só para as próprias cartas e habilidades. Ninguém reduz o dano do parceiro, salvo carta ou ficha que permita ("um jogador escolhido" permite), mas dá para alterar dados para poupá-lo ou ajudá-lo.
 
 > [!mais] **Rolagem de alvo nas duplas.** Com dois adversários, você rola 1 dado na rolagem de alvo: 1 ou 2, o adversário à sua esquerda; 3 ou 4, o da direita; 5, os adversários escolhem; 6, você escolhe. Esse dado pode ser alterado com cartas, menos quando o Ataque é uma habilidade suprema. Mesmo uma habilidade sem dano, mas com efeitos num adversário, passa por essa escolha (p. 13).
 
