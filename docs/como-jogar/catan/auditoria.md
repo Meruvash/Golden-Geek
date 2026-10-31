@@ -6,7 +6,7 @@ Entrega 3. Autoverificação feita por quem escreveu o tutorial, em 31/10/2026. 
 
 Usadas: folheto *Catan, o jogo: Regras* da Devir (4 páginas, edição 2015, tradução de 12/2018), manual do *Catan Plus* da Devir (só componentes), *Catan Game Rules & Almanac* da Catan GmbH e Catan Studio (2020), página do produto da 6ª edição na Devir Brasil, catálogo Devir de abril de 2026. Detalhes e links no dossiê, seção 2.
 
-Faltaram: o Almanaque em português (o folheto remete a ele 30 vezes com ➔ e ele não está publicado), o manual da 6ª edição brasileira e qualquer FAQ ou errata oficial. Consequência: 23 das 60 regras da base dependem do manual original em inglês, sempre marcadas "manual original" no tutorial.
+Faltaram: o Almanaque em português (o folheto remete a ele 36 vezes com ➔ e ele não está publicado), o manual da 6ª edição brasileira e qualquer FAQ ou errata oficial. Consequência: 15 das 60 regras da base vêm só do manual original em inglês, e outras 13 usam o original para completar o folheto; todas estão marcadas "manual original" no tutorial.
 
 ## 2. Cobertura, regra por regra
 
@@ -108,7 +108,7 @@ Todas as contas foram refeitas em `<scratchpad>/catan/contas.py` (saídas no dos
 
 - **Sem auditoria independente nem teste de execução nesta entrega.** O briefing proíbe subagentes; a revisão de outro agente é o próximo passo, e ele deve receber o tutorial e os textos extraídos dos dois manuais.
 - **A montagem para principiantes depende do desenho do manual.** O tutorial manda seguir a ilustração da p. 1, que o leitor tem na caixa, mas não descreve a posição de cada terreno e ficha. Quem não tiver o manual em mãos não consegue montar a ilha fixa só com o guia; resta a montagem aleatória, que está em situações especiais.
-- **Dependência do manual em inglês.** Quase 40% das regras da base vêm do original. O texto marca cada uma, mas não há confirmação de que o Almanaque brasileiro diga o mesmo.
+- **Dependência do manual em inglês.** Um quarto das regras da base (15 de 60) vem só do original. O texto marca cada uma, mas não há confirmação de que o Almanaque brasileiro diga o mesmo.
 - **Português de Portugal no glossário.** "Aldeia", "lavoura", "matéria-prima" e "reserva" são os nomes do folheto, que podem não ser os da caixa atual.
 - **Extensão no limite.** Cerca de 5.200 palavras de texto corrido; as tarefas de cada etapa ocupam boa parte. Se o editor quiser encurtar, os candidatos são o "Na caixa" da etapa 1 e o segundo parágrafo do "Para entender" da etapa 3.
 - **Legibilidade não medida.** O script de Flesch citado no prompt não está neste repositório.

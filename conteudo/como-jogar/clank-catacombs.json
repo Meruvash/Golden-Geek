@@ -9,6 +9,16 @@
  "edicao": "Edição Galápagos",
  "data": "2026-10-31",
  "chamada": "Entre nas catacumbas, pegue um Artefato e saia vivo pela Cripta. Começa com um resumo para jogar em 4 minutos e segue em cinco etapas, da mesa montada à contagem de pontos.",
- "html_manual": true,
- "_obs": "página escrita à mão (como-jogar/clank-catacombs/index.html); este arquivo só alimenta a lista em /como-jogar/"
+ "md": "docs/como-jogar/piloto/clank-catacombs/tutorial.md",
+ "descricao": "Aprenda a jogar Clank! Catacombs em cinco etapas: preparação, turno, ataque do dragão, exploração e pontuação, com exemplos resolvidos e folha de consulta.",
+ "resumo": "Você desce às catacumbas de um dragão, pega um Artefato e tenta sair vivo pela Cripta. Vence quem somar mais pontos.",
+ "pontos": [
+  "Suas cartas geram Habilidade, Espadas e Botas. Com elas você adquire cartas melhores, combate monstros e anda pela masmorra.",
+  "Barulho vira cubos numa bolsa. Quando o dragão ataca, cada cubo seu sorteado é um ferimento.",
+  "Cair sem Artefato, ou nas Profundezas, vale zero ponto. Escapar com um Artefato rende mais 20."
+ ],
+ "etapas": 5,
+ "leitura_min": 0,
+ "resenha": null,
+ "publicar": true
 }
