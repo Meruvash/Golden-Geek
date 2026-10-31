@@ -194,3 +194,33 @@ Pedido do usuário em 29/10/2026: chamada com emoção, que faça clicar e comen
 - **Chamada** (até 120 caracteres, 1 emoji no fim): pode usar curiosidade ("mas um deles já atrasou"), contraste ("R$ 118 ou R$ 422,99?"), opinião forte, a dor do leitor ("a caixa assusta?"), número ou prêmio real e urgência real (pré-venda aberta, prazo de campanha).
 - **Pergunta** para puxar comentário: fácil de responder em uma palavra ou escolha ("Looot ou Through the Desert?", "pé embaixo ou freio?"), sobre o gosto do leitor, nunca prova de conhecimento.
 - **A regra que não se quebra:** a página precisa entregar o que a chamada promete. Todo número, prêmio, preço ou data da chamada está no texto publicado. Proibido: fato inventado, urgência falsa, "você não vai acreditar", "chocante", CAIXA ALTA, mistério sobre algo que o texto não revela. Clickbait enganoso derruba a distribuição no Google Discover e no Facebook e queima a confiança do grupo.
+
+# Como Jogar: "Comece a jogar em N minutos" (31/10/2026)
+
+Pedido do usuário: a seção curta do topo de cada tutorial precisa garantir que a pessoa saiba o mínimo suficiente para começar a jogar. A versão do piloto (Clank! Catacombs) era um manual comprimido: 669 palavras sobre o jogo inteiro, dezenas de termos de uma vez, regras do fim da partida misturadas com a montagem e nenhum turno de exemplo. Lida em 4 minutos, mas sem ensinar a jogar o primeiro turno.
+
+**O que a seção promete:** ao fim dela, o leitor monta a mesa e joga o primeiro turno sem abrir o manual. Só isso. A partida inteira é das etapas seguintes. A promessa de minutos é de leitura (200 palavras por minuto), não de mesa.
+
+**Como o 4C/ID se aplica aqui.** A seção é a primeira classe de tarefa do tutorial, na versão mais simples da tarefa inteira:
+
+| Componente do 4C/ID | Na seção | Regra |
+|---|---|---|
+| Tarefa de aprendizagem | **Meta** e **Seu primeiro turno** | A tarefa é real e inteira, na versão mais simples: montar e jogar um turno com as cartas iniciais e um túnel comum. Apoio que diminui: exemplo resolvido, depois tarefa para completar, depois a mão de verdade do leitor (com perguntas de checagem antes de jogar). A resposta da tarefa para completar vem depois, separada. |
+| Informação de apoio | **A ideia do jogo** | O modelo mental em até 3 frases: objetivo, a tensão central, a lógica do jogo. No máximo 4 termos novos em negrito. |
+| Informação procedural | **Monte a mesa**, os passos do turno e a ordem do fim do turno | Lista numerada, conferível na mesa, no ponto de uso. Componente que só serve mais tarde leva a marca *(depois)*: o leitor monta, mas não precisa entender agora. |
+| Prática específica | **Os erros mais caros** | Só os 2 ou 3 erros mais comuns e caros, ditos como regra. O treino em si fica nas etapas. |
+| Redução de carga | **Ainda não precisa saber** | Lista do que foi adiado e em que etapa está. Nada que só aparece depois do primeiro turno entra na seção, exceto como orientação de uma linha (**Como a partida acaba**). |
+
+**Ordem obrigatória:** Meta; A ideia do jogo; Monte a mesa; Seu primeiro turno (tabela das cartas iniciais, passos do turno, exemplo resolvido, complete, a sua mão, resposta do complete); o que for indispensável para fechar o primeiro turno (no Clank!, o ataque do dragão em três linhas); Ainda não precisa saber; Como a partida acaba; Os erros mais caros.
+
+**Regras de conteúdo:**
+1. Toda regra da seção existe na base de regras do dossiê, com página do manual. O exemplo resolvido é uma jogada legal com as cartas iniciais reais, e a conta é refeita.
+2. Toda regra que pode acontecer no primeiro turno está na seção, mesmo rara (no Clank!: carta com Revelar na Fileira inicial, ataque do dragão ao repor a Fileira).
+3. Nenhuma regra que só acontece depois do primeiro turno entra explicada; vai para "Ainda não precisa saber", com a etapa.
+4. Os mesmos nomes do glossário da edição brasileira, sempre iguais.
+5. Voz do Como Jogar (neutra e exata, sem opinião forte), zero travessão, zero vício de `tools/vicios.py`.
+
+**Portões:**
+- `python3 tools/checar_comece.py docs/como-jogar/<...>/tutorial.md` precisa passar (tamanho, ordem, blocos, resposta separada, termos, etapas citadas que existem, travessão, vícios).
+- **Teste de execução:** um subagente que não escreveu a seção recebe só ela e tenta montar a mesa para o mínimo e o máximo de jogadores e jogar o primeiro turno com três mãos diferentes. Cada ponto em que ele precisou adivinhar vira correção. É sinal de lacuna, não prova de que pessoas aprendem.
+- **Teste com pessoas** (quando houver leitores): a pessoa lê só a seção e joga o primeiro turno sem ajuda; conta-se tempo, erros de regra e onde travou.
