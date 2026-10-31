@@ -2,7 +2,7 @@
  "mes": "2026-10",
  "label": "Outubro de 2026",
  "titulo_previstos": "Previstos para outubro",
- "total": 49,
+ "total": 53,
  "lancados": [
   {
    "id_jogo": 66676,
@@ -330,6 +330,69 @@
     "id": 92,
     "nome": "Asmodee (Galápagos)",
     "url": "https://ludopedia.com.br/editora/92/Asmodee (Galápagos)"
+   },
+   "status": {
+    "id": 1,
+    "label": "Lançado",
+    "slug": "lancado"
+   },
+   "comentarios": 0,
+   "url_topico": null,
+   "pode_criar_topico": true
+  },
+  {
+   "id_jogo": 54361,
+   "nome": "Kinfire Delve: A Gruta de Vainglory",
+   "url": "https://ludopedia.com.br/jogo/kinfire-delve-vainglory-s-grotto",
+   "capa": "https://storage.googleapis.com/ludopedia-capas/54361_t.jpg",
+   "fl_jogo_base": 1,
+   "fl_tipo": 1,
+   "editora": {
+    "id": 6011,
+    "nome": "Ludofun",
+    "url": "https://ludopedia.com.br/editora/6011/Ludofun"
+   },
+   "status": {
+    "id": 1,
+    "label": "Lançado",
+    "slug": "lancado"
+   },
+   "comentarios": 0,
+   "url_topico": null,
+   "pode_criar_topico": true
+  },
+  {
+   "id_jogo": 62960,
+   "nome": "Kinfire Delve: O Forte de Scorn",
+   "url": "https://ludopedia.com.br/jogo/kinfire-delve-scorn-s-stockade",
+   "capa": "https://storage.googleapis.com/ludopedia-capas/62960_t.jpg",
+   "fl_jogo_base": 1,
+   "fl_tipo": 1,
+   "editora": {
+    "id": 6011,
+    "nome": "Ludofun",
+    "url": "https://ludopedia.com.br/editora/6011/Ludofun"
+   },
+   "status": {
+    "id": 1,
+    "label": "Lançado",
+    "slug": "lancado"
+   },
+   "comentarios": 0,
+   "url_topico": null,
+   "pode_criar_topico": true
+  },
+  {
+   "id_jogo": 64630,
+   "nome": "Kinfire Delve: O Laboratório de Callous",
+   "url": "https://ludopedia.com.br/jogo/kinfire-delve-callous-lab",
+   "capa": "https://storage.googleapis.com/ludopedia-capas/64630_t.jpg",
+   "fl_jogo_base": 1,
+   "fl_tipo": 1,
+   "editora": {
+    "id": 6011,
+    "nome": "Ludofun",
+    "url": "https://ludopedia.com.br/editora/6011/Ludofun"
    },
    "status": {
     "id": 1,
@@ -878,6 +941,27 @@
     "id": 3183,
     "nome": "New Order Editora",
     "url": "https://ludopedia.com.br/editora/3183/New Order Editora"
+   },
+   "status": {
+    "id": 3,
+    "label": "Anunciado",
+    "slug": "anunciado"
+   },
+   "comentarios": 0,
+   "url_topico": null,
+   "pode_criar_topico": true
+  },
+  {
+   "id_jogo": 89341,
+   "nome": "Matas Expostas",
+   "url": "https://ludopedia.com.br/jogo/matas-expostas",
+   "capa": "https://storage.googleapis.com/ludopedia-capas/89341_t.jpg",
+   "fl_jogo_base": 1,
+   "fl_tipo": 1,
+   "editora": {
+    "id": 86,
+    "nome": "Independente",
+    "url": "https://ludopedia.com.br/editora/86/Independente"
    },
    "status": {
     "id": 3,
