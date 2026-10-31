@@ -1,0 +1,66 @@
+{
+ "slug": "inventors-of-the-south-tigris",
+ "usar_na_pagina": true,
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 1600,
+   "altura": 1600,
+   "editora": "garphill.com",
+   "credito": "Imagem: garphill.com",
+   "pagina": "https://www.garphill.com/products/inventors-of-the-south-tigris",
+   "imagem": "http://www.garphill.com/cdn/shop/files/InventorsOfTheSouthTigris-Boxshot.png",
+   "baixada_em": "2026-10-31",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/mesa-1.webp",
+   "tipo": "mesa",
+   "largura": 960,
+   "altura": 1280,
+   "editora": "Lucas Otniel",
+   "credito": "Foto: Lucas Otniel",
+   "pagina": null,
+   "imagem": null,
+   "baixada_em": "2026-10-31",
+   "aprovada": true,
+   "obs": "foto cedida ao site pelo usuário, edição nacional da Mosaico Jogos",
+   "texto": false,
+   "pessoas": false,
+   "principal": true
+  },
+  {
+   "arquivo": "fotos/jogabilidade-1.webp",
+   "tipo": "jogabilidade",
+   "largura": 960,
+   "altura": 1280,
+   "editora": "Lucas Otniel",
+   "credito": "Foto: Lucas Otniel",
+   "pagina": null,
+   "imagem": null,
+   "baixada_em": "2026-10-31",
+   "aprovada": true,
+   "obs": "foto cedida ao site pelo usuário, edição nacional da Mosaico Jogos",
+   "texto": false,
+   "pessoas": false,
+   "fora": true
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 960,
+   "altura": 1280,
+   "editora": "Lucas Otniel",
+   "credito": "Foto: Lucas Otniel",
+   "pagina": null,
+   "imagem": null,
+   "baixada_em": "2026-10-31",
+   "aprovada": true,
+   "obs": "foto cedida ao site pelo usuário, edição nacional da Mosaico Jogos",
+   "texto": false,
+   "pessoas": false,
+   "jogar": true
+  }
+ ]
+}
