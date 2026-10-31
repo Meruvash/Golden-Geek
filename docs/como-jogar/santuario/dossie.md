@@ -142,7 +142,7 @@ Classificação: `[V]` verificada (lida nesta sessão, no texto ou na ilustraç�
 | R34 | Ordem do turno: sempre 1 (peça) e 2 (ação); talvez 3 (Prédio), 4 (meta), 5 (melhoria); 6 manutenção | p4 HOW TO PLAY A TURN | V | |
 | R35 | Passo 1: pegar 1 peça da vitrine numa posição até a seta branca da carta de Projetos; com 1, obrigatório pegar a posição 1; não move a carta | p4 passo 1 e IMPORTANT | V | R33 |
 | R36 | O alcance vale só no passo 1; efeito ou bônus pega de qualquer posição | p4 "The 'within range' restriction only applies in this step" | V | |
-| R37 | Projetos no lado II: a seta aponta um número acima, então o alcance também sobe 1 | p1/p4 (seta única, ilustração) + p3 (lado II) | I (o manual não fala de alcance no lado II; a seta é a mesma) | R33, R35 |
+| R37 | Projetos no lado II: a seta aponta um número acima, então o alcance também sobe 1 | p1/p4 (seta única, ilustração) + p3 (lado II) | V (reclassificada na rodada 2 de auditoria: decorre direto das p. 3 e 4) | R33, R35 |
 | R38 | Passo 2: escolher 1 carta e fazer uma das duas opções com a força atual: ganhar ou jogar | p4 | V | |
 | R39 | Projetos, ganhar: 1 peça qualquer da vitrine; no lado II, uma 2ª | p4 | V | |
 | R40 | Animais, ganhar: as 2 peças do topo da pilha | p4 | V | |

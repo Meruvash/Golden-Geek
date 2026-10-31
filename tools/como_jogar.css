@@ -142,3 +142,4 @@ footer .in{max-width:760px;margin:0 auto;padding-block:20px}
 .legenda-f{font-size:.88rem;color:var(--muted)}.legenda-f b{color:var(--ink)}
 .mais-i{display:inline-grid;place-items:center;width:18px;height:18px;border-radius:50%;background:var(--paper-line);color:var(--paper-ink);font-weight:800;font-size:.8rem}
 .indice small{color:var(--muted);font-weight:400}
+.sec p,.sec li,.sec a{overflow-wrap:anywhere}

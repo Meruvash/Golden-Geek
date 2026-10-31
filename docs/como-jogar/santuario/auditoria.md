@@ -61,7 +61,7 @@ Cada afirmação normativa do tutorial, com a regra do dossiê e a página confe
 | Força = seta; lado I = número do encaixe; lado II +1 | 4min, Etapa 2 | R33 | 3 | OK (o "número do encaixe" é leitura da ilustração da p. 3: encaixes marcados 1-2, 2-3, 3-4, 4-5) |
 | Passo 1: alcance pela seta da carta de Projetos; com 1, só a posição 1; não move a carta | 4min, Etapa 2 | R35 | 4 | OK |
 | Alcance só no passo 1 | 4min `[!atencao]`, Etapa 2 | R36 | 4 | OK |
-| Projetos lado II aumenta o alcance | Etapa 2 `[!mais]`, treino c | R37 | 3, 4 | **[interpretada]** |
+| Projetos lado II aumenta o alcance | Etapa 2 (lado II), treino c, consulta | R37 | 3, 4 | OK (reclassificada como verificada na rodada 2, seção 8) |
 | Ganhar: Projetos 1 peça qualquer (2ª no lado II); Animais 2 do topo | 4min, Etapa 2 | R39, R40 | 4 | OK |
 | Jogar Projeto: força ≥ nível | 4min, Etapa 2 | R41 | 5 | OK |
 | Jogar Animal: carta do habitat; indefinido com qualquer; força ≥ nível | 4min, Etapa 2 | R42 | 5 | OK |
@@ -103,7 +103,7 @@ Cada afirmação normativa do tutorial, com a regra do dossiê e a página confe
 
 ## 5. Interpretações e lacunas
 
-- **[interpretada] R37, alcance no lado II.** A p. 4 diz que o alcance é a seta branca da carta de Projetos; a p. 3 diz que no lado II a seta aponta o número da direita. Concluí que o alcance sobe 1. O tutorial diz que é leitura deste guia, num `[!mais]`.
+- **R37, alcance no lado II.** Na primeira versão estava como interpretada; o auditor de regras mostrou que sai direto das p. 3 e 4 (a seta é uma só). Agora é afirmação simples no passo a passo do lado II.
 - **[interpretada] R32, espaço livre como vizinho.** A p. 3 só exclui os 2 impressos de contar como peça para a colocação. Concluí que os colocados contam. Dito como leitura do guia.
 - **[interpretada] R24, espaços livres impressos valem 1.** A p. 2 diz que cada espaço livre do zoológico vale 1 e mostra um selo "1"; os impressos no tabuleiro têm o mesmo selo (ilustrações das p. 1 e 3). Dito como leitura do guia.
 - **[lacuna] L1 a L5** (dossiê, 4.8): marcadores de bolsa, Glossário, pilha que acaba antes do disparo, quantidade de marcadores de 5, modo solo.
@@ -124,3 +124,53 @@ Cada afirmação normativa do tutorial, com a regra do dossiê e a página confe
 3. Obter o Glossário e as folhas de ajuda (Capstone ou Feuerland) para um exemplo de pontuação por vizinhança.
 4. Conferir os termos da caixa da Grok.
 5. Corrigir na resenha (decisão do editor): "peças de ação" e o fim pela pilha vazia (dossiê, seção 5).
+
+## 8. Rodada 2: correções das duas auditorias independentes (31/10/2026)
+
+Os achados chegaram pelo coordenador. Cada um foi conferido na página do manual antes de mudar o texto.
+
+### Auditor de regras
+
+| # | Achado | Conferência no manual | O que mudou |
+|---|---|---|---|
+| 1 | Condição do Prédio citada como "vizinho de 2 ícones de Floresta" | p. 6: "next to 2 tiles with a Forest icon" | "vizinho de 2 peças com ícone de Floresta" (etapa 4) |
+| 2 | Seção 0 comparava com Ark Nova sem base no manual | p. 1: só "An Ark Nova Game" na capa | Seção 0 diz só que a capa apresenta o jogo como "um jogo da linha Ark Nova" |
+| 3 | "nunca sai do lugar" / "nunca muda de lugar" | p. 3 só proíbe girar | Ficou só "nunca gira" (4min e etapa 3) |
+| 4 | Prédio: "jogue exatamente 1" soava obrigatório | p. 6: "you may play exactly 1 such tile" | "pode jogar no máximo 1" |
+| 5 | "Apoiar cedo garante a meta" sem base | p. 7: cada cor tem o próprio espaço sob a meta | Trocado por: esperar permite marcador maior; a primeira meta cumpre a melhoria 1 |
+| 6 | Pilha vazia descrita como "na hora" em alguns lugares | p. 8: "the game ends immediately after your turn" | "ao fim daquele turno" no 4min, no Para entender, no passo a passo, no Atenção e na folha de consulta |
+| 7 | Setas no 4min sem o espaço livre já existente | p. 2: setas podem usar espaços livres já no zoológico, inclusive os impressos | Incluído "ou um espaço livre que já esteja no tabuleiro, impresso ou colocado antes" |
+| 8 | Ressalva excessiva sobre alcance no lado II | p. 3 e 4 | `[!mais]` removido; regra dita direto no passo a passo do lado II e na consulta |
+
+### Teste de execução
+
+| # | Achado | Conferência | O que mudou |
+|---|---|---|---|
+| 9 | "Passo 3" com sentidos diferentes | p. 4 (passos 1 a 6) | Uma só numeração em todo o texto: 1 peça, 2 carta, 3 Prédio, 4 meta, 5 melhoria, 6 manutenção. Listas internas das etapas viraram tópicos ("Passo 3, Prédio" etc.); itens da preparação são "item N" |
+| 10 | Uma opção ou as duas na carta? | p. 4: "EITHER to gain tiles OR to play tiles" | "uma das duas opções, nunca as duas" no 4min, na etapa 2 e na consulta |
+| 11 | "Seta" ambígua | p. 2 e 3 | "seta da carta de ação" (força; na de Projetos, também alcance) e "setas na borda da peça" (espaço livre) em todo o texto |
+| 12a | Onde fica a entrada | Ilustrações p. 1 e 3: portão no meio da borda de baixo | "o portão na borda de baixo do tabuleiro" (4min e etapa 3) |
+| 12b | Como reconhecer o habitat indefinido | Ícone na p. 5 (recorte a 300 dpi): círculo com faixas verde, cinza e azul | "ícone verde, cinza e azul" (4min, etapa 2) |
+| 12c | "Apoiar uma meta" sem explicação no 4min | p. 7 | "(põe seus 4 marcadores de conquista sob elas)" |
+| 12d | "(depois)" ambíguo | | Marca removida; o texto diz "Tudo isso fica para depois" e "para depois" junto dos marcadores |
+| 12e | "1 peça qualquer da vitrine" (Projetos) | p. 4: "Take any 1 tile from the display. The position of the tile on the display doesn't matter." | O auditor sugeriu "até o seu alcance", o que contraria a p. 4. Ficou "1 peça de qualquer posição da vitrine (o alcance não vale aqui)" |
+| 12f | Montagem punha as cartas e depois reposicionava | p. 1 B | Um só passo: cartas postas de uma vez, Projetos no encaixe da ordem de jogo, as outras ao acaso (4min item 4, etapa 1 item 6) |
+| 13a | "Ligadas" e Prédio no marcador 3= | p. 7, exemplo: Tree House (Prédio) com as duas peças de Floresta vizinhas = "3 connected tiles with a forest icon" | "vizinhas umas das outras, em cadeia, com o ícone do habitat; um Prédio com o ícone conta" |
+| 13b | Quem escolhe a carta a melhorar e se ela muda de encaixe | p. 7: "Choose 1 of your Action cards"; o exemplo mostra a força subir de 3 para 4 no mesmo encaixe | "escolha uma das suas cartas ainda no lado I, vire-a no mesmo encaixe" |
+| 13c | Quem escolhe as peças descartadas | p. 8 não diz | `[!edicao]` curto: o manual não especifica; o guia supõe que é o dono da mão |
+| 13d | "aquela casa não serve" | p. 2 | "a peça não pode ir naquela casa" (vale também para Prédios com setas, por isso "peça" e não "Animal") |
+| 14 | Sinônimos | | "mão" (o suporte só na montagem, "que guarda a sua mão"); "tabuleiro" para o tabuleiro pessoal e "zoológico" para as peças jogadas nele (definido na seção 0); raio e infinito explicados uma vez, na etapa 3; marcador de conservação x marcador de conquista diferenciados na etapa 4; "Feche o turno" virou "Manutenção" (passo 6); "compre/comprar" virou "pegue as 2 do topo da pilha" |
+| 15 | Pontuação depende do Glossário; marcador de bolsa | p. 2 e 8 | `[!edicao]` único na etapa 5: os pontos de cada peça estão nela e no Glossário da caixa; o manual não diz como se ganha marcador de bolsa. O parágrafo repetido em Situações especiais saiu |
+
+### Não resolvido pelo manual
+
+- Quem escolhe as peças descartadas no limite de mão (13c): o manual não diz; ficou como `[!edicao]`.
+- Como se ganham marcadores de bolsa e quanto vale cada peça (15): continuam dependendo do Glossário, não obtido.
+- Achado 12e não foi aplicado como sugerido, porque contraria a p. 4.
+
+### Portões depois da rodada 2
+
+- `checar_comece.py`: ✅, seção de 4 minutos com 798 palavras.
+- Tutorial: 5.982 palavras (limite 6.000).
+- Travessão e meia-risca: 0. Vícios de `tools/vicios.py`: 0. Exclamação: 0.
+- Contas: `contas.py` rodado de novo, saída idêntica à da rodada 1 (nenhum exemplo numérico mudou).

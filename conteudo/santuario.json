@@ -78,7 +78,7 @@
   ],
   [
    "Componentes",
-   "135 peças de zoológico (animais, prédios e projetos), 10 metas de conservação, 4 peças de ação por jogador"
+   "135 peças de zoológico (animais, prédios e projetos), 10 metas de conservação, 4 cartas de ação por jogador"
   ],
   [
    "Cópias vendidas",
@@ -88,10 +88,10 @@
  "nota_ficha": "Nota e peso do BoardGameGeek obtidos por agregadores (Board Game Bliss, Board Game Oracle e boardmatch.app), porque o BGG bloqueia acesso automatizado.",
  "como_funciona": [
   "Cada jogador monta um zoológico moderno num tabuleiro de casas hexagonais. As 135 peças do jogo são de três tipos: animais (amarelos), prédios (azuis) e projetos (roxos). Quase todas trazem símbolos de habitat, continente ou classe de animal, que ativam efeitos e valem pontos no fim.",
-  "O turno tem dois passos obrigatórios. Primeiro, você pega uma das seis peças da vitrine, mas só até a posição indicada pela sua peça de ação de projetos. Depois, usa uma das suas quatro peças de ação: projetos, animais de rocha, de floresta e de água. Cada uma serve para comprar peças ou para jogar uma peça da mão.",
+  "O turno tem dois passos obrigatórios. Primeiro, você pega uma das seis peças da vitrine, mas só até a posição indicada pela sua carta de ação de projetos. Depois, usa uma das suas quatro cartas de ação: projetos, animais de rocha, de floresta e de água. Cada uma serve para comprar peças ou para jogar uma peça da mão.",
   "A força da ação depende da posição: as quatro ficam em fila embaixo do tabuleiro e a da direita é a mais forte. Um animal de nível 4 só entra com uma ação de força 4 ou mais, e do habitat certo. A ação usada volta para a esquerda e as outras avançam, como em Ark Nova.",
   "As peças entram sempre ao lado de outra ou da entrada, sem girar. Animais grandes pedem espaços livres em volta, feitos com peças viradas da mão, e um casal da mesma espécie lado a lado rende um marcador de conservação. Depois da ação, você pode jogar um prédio, apoiar uma das cinco metas de conservação e melhorar ações, que ganham força e podem jogar dois animais de uma vez.",
-  "O fim é disparado quando alguém apoia quatro metas, enche o tabuleiro ou acaba a pilha de peças; quem dispara ganha 10 pontos e os outros jogam mais uma vez. Pontuam as peças, as vizinhanças entre símbolos, as metas e os marcadores. Mais pontos vence."
+  "O fim é disparado quando alguém apoia quatro metas ou enche o tabuleiro: quem dispara ganha 10 pontos e os outros jogam mais uma vez. Se antes disso a pilha de peças acabar, a partida termina ao fim daquele turno, sem marcador de fim. Pontuam as peças, as vizinhanças entre símbolos, as metas e os marcadores. Mais pontos vence."
  ],
  "experiencia": [
   "A partida é um quebra-cabeça de espaço. Um exemplo das regras: você quer jogar o crocodilo-do-nilo, um animal de água de nível 4, então espera a ação de água chegar à força 4. Ele pede um espaço livre ao lado, e você vira uma peça da mão para criar esse espaço. Se já tiver no zoológico o especialista em répteis, ganha mais uma peça da vitrine na mesma jogada.",
@@ -342,7 +342,7 @@
   "passos": [
    [
     "PEGUE UMA PEÇA",
-    "Escolha uma das seis peças da vitrine, até a posição que a sua peça de ação de projetos alcança naquele momento."
+    "Escolha uma das seis peças da vitrine, até a posição que a sua carta de ação de projetos alcança naquele momento."
    ],
    [
     "USE UMA AÇÃO",
@@ -387,7 +387,7 @@
    "Duração: 20 min por jogador",
    "Idade: 12+",
    "Componentes: 135 peças, 10 metas de conservação",
-   "Ações: 4 peças de ação por jogador",
+   "Ações: 4 cartas de ação por jogador",
    "Preço sugerido na Alemanha: 49,90 €"
   ],
   "premios": [

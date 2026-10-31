@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Como jogar Santuário: regras passo a passo | Elite Boardgamers</title>
+<meta name="description" content="Aprenda a jogar Santuário em cinco etapas: preparação, cartas de ação, colocação no zoológico, metas e pontuação, com exemplos e folha de consulta.">
+<link rel="canonical" href="https://eliteboardgamers.com.br/como-jogar/santuario/">
+<meta name="robots" content="max-image-preview:large">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Como jogar Santuário">
+<meta property="og:description" content="Aprenda a jogar Santuário em cinco etapas: preparação, cartas de ação, colocação no zoológico, metas e pontuação, com exemplos e folha de consulta.">
+<meta property="og:url" content="https://eliteboardgamers.com.br/como-jogar/santuario/">
+<meta property="og:image" content="https://eliteboardgamers.com.br/marca/banner-1200.webp">
+<link rel="icon" href="../../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32.png">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<link rel="preload" href="../../fontes/public-sans.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:"Public Sans";src:url(../../fontes/public-sans.woff2) format("woff2");font-weight:400 800;font-style:normal;font-display:swap}
+@font-face{font-family:"Public Sans";src:url(../../fontes/public-sans-italic.woff2) format("woff2");font-weight:400;font-style:italic;font-display:swap}
+/* Layout: o mesmo da página de lição do Discipulado (O Paladino): fundo preto (pedido do editor: preto no lugar do azul), faixa do banner, navegação fixa, coluna central de 760px com cartões claros de papel, filete dourado sobre os títulos de seção. Visual único (o site não tem tema claro). */
+:root{
+  color-scheme:dark;
+  --ground:#000; --panel:#0f1115; --panel2:#171a20; --line:#262a32; --line2:#2e333c;
+  --ink:#eceff3; --muted:#a1a9b5; --gold:#e3b23c;
+  --paper:#f4f5f7; --paper-ink:#14171c; --paper-muted:#5a6270; --paper-line:#dde1e7; --paper-text:#3a414c;
+  --link:#1f5fae; --ok:#1b7a45; --ok-bg:#e3f4ea; --cinza-bg:#eceef1; --ouro-bg:#fff4d1; --ouro-ink:#8a5f00;
+  --erro:#b3263e; --faixa-ouro:#1d1606; --ouro-claro:#f1ead6; --check:#4cc38a;
+  --f-body:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box}
+html{scroll-padding-top:64px}
+body{margin:0;background:var(--ground);color:var(--ink);font:16px/1.55 var(--f-body)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--panel)}
+h1,h2,h3,p,ul,ol,figure{margin:0}
+a{color:var(--link);text-underline-offset:.18em}
+::selection{background:var(--gold);color:#000}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px;border-radius:3px}
+.gut{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+
+.skip{position:absolute;left:-999px}.skip:focus{left:12px;top:8px;z-index:40;background:var(--gold);color:#000;padding:6px 10px}
+.aviso{background:var(--gold);color:#000;font-weight:800;font-size:.8rem;text-align:center}
+.aviso .gut{padding-block:6px}
+.topo{background:var(--ground)}
+.topo img{display:block;width:100%;max-width:640px;height:auto;margin:0 auto}
+.nav{background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line);position:sticky;top:env(safe-area-inset-top,0px);z-index:20}
+.nav ul{max-width:1120px;margin:0 auto;list-style:none;display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;padding-block:0}
+.nav a{display:block;padding:11px 12px;white-space:nowrap;color:var(--ink);text-decoration:none;font-weight:700;font-size:.92rem;border-bottom:3px solid transparent}
+.nav a[aria-current]{color:var(--gold);border-bottom-color:var(--gold)}
+
+.nota{max-width:760px;margin:0 auto;padding-block:20px 56px;display:grid;gap:16px}
+.trilha ol{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:4px 8px;font-size:.85rem;color:var(--muted)}
+.trilha li+li::before{content:"›";margin-right:8px;color:var(--muted)}
+.trilha a{color:var(--gold);font-weight:700;text-decoration:none}
+
+.bloco{background:var(--paper);color:var(--paper-ink);border-radius:10px;padding:20px;min-width:0;display:grid;gap:14px}
+.num-l{font-size:.8rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--paper-muted)}
+h1{font-size:clamp(1.7rem,5vw,2.4rem);line-height:1.12;font-weight:800;letter-spacing:-.015em;text-wrap:balance}
+.meta-e{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:.88rem;color:var(--paper-muted)}
+.meta{font-family:var(--mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.05em;color:var(--paper-muted)}
+
+.r1{background:var(--panel2);color:var(--ink);border:1px solid var(--line2);border-left:4px solid var(--gold)}
+.kick{font-size:.75rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--gold)}
+.r1 .resp{font-size:1.12rem;font-weight:600;line-height:1.45}
+.r1 ul{list-style:none;padding:0;display:grid;gap:8px}
+.r1 li{display:flex;gap:8px;align-items:flex-start;color:#dfe4ea}
+.r1 li svg{flex:none;width:20px;height:20px;margin-top:2px;stroke:var(--check);fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.r1 .pe{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:.88rem;color:var(--muted)}
+.r1 .pe b{color:var(--ink)}
+.legenda{display:flex;flex-wrap:wrap;gap:8px}
+.legenda span{font-size:.74rem;font-weight:800;letter-spacing:.04em;border-radius:999px;padding:3px 10px 3px 14px;background:var(--paper);color:var(--paper-ink)}
+.legenda .l1{box-shadow:inset 5px 0 0 var(--paper-ink)}.legenda .l2{box-shadow:inset 5px 0 0 var(--ok)}
+.legenda .l3{box-shadow:inset 5px 0 0 var(--gold)}.legenda .l4{box-shadow:inset 5px 0 0 var(--ouro-ink)}
+
+.indice h2,.sec>h2{font-size:1.15rem;font-weight:800;line-height:1.3;color:var(--paper-ink);border-top:3px solid var(--gold);padding-top:12px;text-wrap:balance;display:flex;gap:10px;align-items:baseline}
+.indice ol{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:2px 16px}
+.indice a{display:block;padding:6px 0;color:var(--paper-ink);text-decoration:none;font-weight:600;font-size:.94rem;border-bottom:1px solid var(--paper-line)}
+.indice a:hover{color:var(--link)}
+
+.sec>h2 .num{display:none}
+.sec h3{font-size:1.05rem;font-weight:800;margin-top:6px}
+.sec p{color:var(--paper-text);max-width:66ch}
+.sec ul,.sec ol{padding-left:1.3em;display:grid;gap:6px;color:var(--paper-text)}
+.sec ul{list-style:disc}
+.sec li::marker{color:var(--ouro-ink);font-weight:800}
+strong{font-weight:700;color:var(--paper-ink)}
+.pg{white-space:nowrap;font-size:.76em;color:var(--paper-muted);border:1px solid var(--paper-line);background:#fff;border-radius:4px;padding:0 5px;vertical-align:.08em;font-variant-numeric:tabular-nums}
+code{font-size:.9em;background:#fff;padding:1px 5px;border-radius:4px}
+
+.tab{overflow-x:auto;border:1px solid var(--paper-line);border-radius:8px;background:#fff}
+table{border-collapse:collapse;width:100%;font-size:.92rem;color:var(--paper-text)}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--paper-line);vertical-align:top}
+th{font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--paper-muted);background:var(--paper)}
+tr:last-child td{border-bottom:0}
+
+.call{border-radius:8px;padding:14px 16px;display:grid;gap:10px;min-width:0;background:#fff;border:1px solid var(--paper-line);border-left:4px solid var(--paper-muted)}
+.call .rot{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;font-weight:800;color:var(--paper-muted)}
+.call.entender{background:var(--cinza-bg);border-color:#d5d9df;border-left-color:var(--paper-ink)}
+.call.entender .rot{color:var(--paper-ink)}
+.call.passos{border-left-color:var(--ok)}
+.call.passos .rot{color:var(--ok)}
+.call.resolvido{background:var(--panel2);border-color:var(--line2);border-left-color:var(--gold)}
+.call.resolvido .rot{color:var(--gold)}
+.call.resolvido p,.call.resolvido li{color:#dfe4ea}
+.call.resolvido strong{color:#fff}
+.call.resolvido .pg{color:#c8ccd2;border-color:var(--line2)}
+.call.complete{border-left:4px dashed var(--gold)}
+.call.complete .rot{color:var(--ouro-ink)}
+.call.suavez{background:var(--faixa-ouro);border-color:#3a2e10;border-left-color:var(--gold)}
+.call.suavez .rot{color:var(--gold)}
+.call.suavez p,.call.suavez li{color:var(--ouro-claro)}
+.call.suavez strong{color:#fff}
+.call.suavez li::marker{color:var(--gold)}
+.call.suavez .pg{color:var(--ouro-claro);border-color:#3a2e10}
+.call.treino{background:var(--ouro-bg);border-color:#f0dfa6;border-left-color:var(--ouro-ink)}
+.call.treino .rot{color:var(--ouro-ink)}
+.call.atencao{border-left-color:var(--erro)}
+.call.atencao .rot{color:var(--erro)}
+.call.edicao{background:var(--paper);border-left-color:var(--paper-ink)}
+.call.edicao .rot{color:var(--paper-ink)}
+.call.dica{background:var(--ouro-bg);border-left-color:var(--gold)}
+.call.dica .rot{color:var(--ouro-ink)}
+.call ol,.call ul{padding-left:1.3em}
+.call .pg{background:transparent}
+
+.respostas{border:1px solid var(--paper-line);border-left:4px solid var(--ok);border-radius:8px;background:#fff}
+.respostas summary{cursor:pointer;padding:12px 16px;font-weight:800;color:var(--ok);list-style:none;min-height:44px;display:flex;align-items:center}
+.respostas summary::-webkit-details-marker{display:none}
+.respostas summary::before{content:"+";display:inline-grid;place-items:center;width:1.4em;height:1.4em;margin-right:8px;border-radius:50%;background:var(--ok-bg)}
+.respostas[open] summary::before{content:"−"}
+.respostas>div{padding:0 16px 16px;display:grid;gap:12px}
+
+.sec.rapido{outline:2px solid var(--gold);outline-offset:-2px}
+.sec.rapido>h2::after{content:"4 min de leitura";margin-left:auto;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:#000;background:var(--gold);border-radius:3px;padding:3px 8px;white-space:nowrap}
+.sec.rapido>p:first-of-type{font-size:1.02rem}
+.sec.ref{outline:2px solid var(--gold);outline-offset:-2px}
+.sec.ref>h2::after{content:"Leve para a mesa";margin-left:auto;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:#000;background:var(--gold);border-radius:3px;padding:3px 8px;white-space:nowrap}
+
+footer{border-top:1px solid var(--line);background:var(--panel);color:var(--muted);font-size:.85rem}
+footer .in{max-width:760px;margin:0 auto;padding-block:20px}
+@media (max-width:600px){
+  .bloco{padding:16px;border-radius:8px}
+  .sec.ref>h2::after{display:none}
+}
+/* essencial x opcional: o que não é essencial abre com um toque */
+.dobra{border:1px solid var(--paper-line);border-radius:8px;background:#fff}
+.dobra>summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:10px;padding:11px 14px;font-weight:700;font-size:.92rem;color:var(--paper-ink);min-height:44px}
+.dobra>summary::-webkit-details-marker{display:none}
+.dobra>summary::before{content:"+";flex:none;display:grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--paper-line);color:var(--paper-ink);font-weight:800;line-height:1}
+.dobra[open]>summary::before{content:"−"}
+.dobra>.call,.dobra>details,.dobra>aside{margin:0 12px 12px}
+.dobra.pratica>summary{color:var(--ouro-ink)}
+.dobra.pratica[open]{display:grid;gap:10px;padding-bottom:12px}
+.dobra.pratica>*:not(summary){margin:0 12px}
+.dobra.sec-opc{border-style:dashed}
+.dobra.sec-opc[open]{padding-bottom:12px}
+.dobra.sec-opc>*:not(summary){margin-left:14px;margin-right:14px}
+.tag-opc{margin-left:10px;font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;font-weight:800;color:var(--paper-muted);border:1px solid var(--paper-line);border-radius:3px;padding:2px 6px;vertical-align:middle}
+.legenda-f{font-size:.88rem;color:var(--muted)}.legenda-f b{color:var(--ink)}
+.mais-i{display:inline-grid;place-items:center;width:18px;height:18px;border-radius:50%;background:var(--paper-line);color:var(--paper-ink);font-weight:800;font-size:.8rem}
+.indice small{color:var(--muted);font-weight:400}
+.sec p,.sec li,.sec a{overflow-wrap:anywhere}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://eliteboardgamers.com.br/#organizacao", "name": "Elite Boardgamers", "url": "https://eliteboardgamers.com.br/", "logo": {"@type": "ImageObject", "url": "https://eliteboardgamers.com.br/marca/elite-boardgamers.webp", "width": 318, "height": 254}, "sameAs": ["https://www.instagram.com/eliteboardgamers/"]}, {"@type": "Article", "@id": "https://eliteboardgamers.com.br/como-jogar/santuario/#artigo", "mainEntityOfPage": "https://eliteboardgamers.com.br/como-jogar/santuario/", "headline": "Como jogar Santuário", "description": "Aprenda a jogar Santuário em cinco etapas: preparação, cartas de ação, colocação no zoológico, metas e pontuação, com exemplos e folha de consulta.", "image": ["https://eliteboardgamers.com.br/marca/banner-1200.webp"], "datePublished": "2026-10-31", "author": {"@type": "Organization", "name": "Redação Elite Boardgamers", "url": "https://eliteboardgamers.com.br/politica-editorial/"}, "publisher": {"@id": "https://eliteboardgamers.com.br/#organizacao"}, "inLanguage": "pt-BR"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Início", "item": "https://eliteboardgamers.com.br/"}, {"@type": "ListItem", "position": 2, "name": "Como jogar", "item": "https://eliteboardgamers.com.br/como-jogar/"}, {"@type": "ListItem", "position": 3, "name": "Como jogar Santuário", "item": "https://eliteboardgamers.com.br/como-jogar/santuario/"}]}]}</script>
+<style id="moldura">.busca-btn{display:grid;place-items:center;flex:none;width:44px;height:44px;padding:0;border:1px solid #3a3f48;border-radius:8px;background:none;color:#e9ecf1;cursor:pointer}.busca-btn:hover{border-color:#e3b23c;color:#e3b23c}.busca-btn[hidden]{display:none}footer .in a{display:inline-flex;align-items:center;min-height:24px}.cpw{position:relative;display:inline-block}.cp{display:inline-flex;align-items:center;justify-content:center;gap:8px;box-sizing:border-box;line-height:1.2;min-height:44px;margin:0;padding:10px 20px;border-radius:999px;border:0;background:#157a43;color:#fff;font:inherit;font-size:.95rem;font-weight:800;text-decoration:none;cursor:pointer}.cp:hover{background:#11683a;color:#fff}.cp .ic{width:19px;height:19px}.cp[hidden]{display:none}.cpw.mini .cp{min-height:40px;padding:8px 14px;font-size:.88rem}.cp-menu{position:absolute;z-index:30;top:calc(100% + 8px);left:0;min-width:200px;display:grid;gap:2px;padding:6px;border-radius:12px;background:#fff;border:1px solid #dde1e7;box-shadow:0 10px 30px rgba(0,0,0,.25)}.cp-menu[hidden]{display:none}.cp-menu.sobe{top:auto;bottom:calc(100% + 8px)}.cp-menu.dir{left:auto;right:0}.cp-op{display:flex;align-items:center;gap:10px;min-height:44px;padding:8px 12px;border:0;border-radius:8px;background:none;color:#14171c;font:inherit;font-size:.95rem;font-weight:700;text-align:left;text-decoration:none;cursor:pointer}.cp-op:hover,.cp-op:focus-visible{background:#eef1f4;color:#14171c}.cp-op .ic{width:20px;height:20px}.cp-op.zap-op .ic{color:#157a43}.cp-st{position:absolute;z-index:30;top:calc(100% + 8px);left:0;white-space:nowrap;margin:0;padding:6px 12px;border-radius:8px;background:#14171c;color:#fff;font-size:.85rem;font-weight:700}.cp-st:empty{display:none}.barra-lt .cp-st{top:auto;bottom:calc(100% + 8px)}.convite{display:flex;align-items:center;justify-content:space-between;gap:12px 20px;flex-wrap:wrap}.convite .cv-t{margin:0;font-weight:800;font-size:1.1rem}.convite .cv-s{margin:2px 0 0;font-size:.92rem;opacity:.8}.barra-lt>*{flex:none}.barra-lt{width:max-content;max-width:calc(100vw - 12px);box-sizing:border-box;position:fixed;z-index:25;left:50%;bottom:calc(12px + env(safe-area-inset-bottom));display:flex;align-items:center;gap:4px;padding:5px;border-radius:999px;background:#14171c;border:1px solid #3a3f48;box-shadow:0 8px 24px rgba(0,0,0,.35);transform:translate(-50%,0);transition:transform .25s ease,opacity .25s ease}.barra-lt.fora{transform:translate(-50%,calc(100% + 24px));opacity:0;pointer-events:none}.lt-b{display:inline-flex;align-items:center;gap:7px;min-height:44px;padding:8px 14px;border:0;border-radius:999px;background:none;color:#e9ecf1;font:inherit;font-size:.9rem;font-weight:700;text-decoration:none;cursor:pointer}.lt-b:hover{background:#262a31;color:#fff}.lt-b .ic{width:20px;height:20px}.barra-lt .lt-b.curtir{background:none;border:0;color:#e9ecf1;padding:8px 14px}.barra-lt .lt-b.curtir[aria-pressed=true]{color:#ff6b81;background:none}@media (max-width:479px){.lt-b span{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}}.lt-b.curtir[aria-pressed=true] .ic{fill:currentColor}.lt-grupo{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:44px;padding:0 14px 0 6px;border-radius:999px;background:#e3b23c;color:#14171c;font-size:.9rem;font-weight:800;text-decoration:none;white-space:nowrap}.lt-grupo:hover{background:#f0c44f;color:#14171c}.lt-grupo img{width:32px;height:32px;border-radius:8px;display:block}@media (max-width:479px){.barra-lt{gap:2px}.barra-lt .lt-b{padding:8px 10px}.barra-lt .cp{padding:8px 12px}.lt-grupo{padding:0 12px 0 6px}}@media (max-width:399px){.barra-lt:has(.curtir) .cp span{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}.barra-lt:has(.curtir) .cp{padding:8px 14px}}.barra-lt .cp{min-height:44px;padding:8px 16px;font-size:.9rem}body.lt-on .voltar-topo,body.lt-on button.sobe{bottom:calc(76px + env(safe-area-inset-bottom))}@media print{.barra-lt{display:none}}.interacoes{display:grid;gap:14px}.interacoes[hidden]{display:none}.curtir-l{display:flex;align-items:center;gap:12px;flex-wrap:wrap}.curtir{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:8px 18px;border-radius:999px;border:2px solid #b3263e;background:#fff;color:#b3263e;font:inherit;font-weight:800;cursor:pointer}.curtir .ic{width:22px;height:22px}.curtir[aria-pressed=true]{background:#b3263e;color:#fff}.curtir[aria-pressed=true] .ic{fill:currentColor}.curtir .n{font-variant-numeric:tabular-nums}.curtir-dica{font-size:.9rem;color:#5a6270}.interacoes h2{margin:4px 0 0}.coms{list-style:none;margin:0;padding:0;display:grid;gap:10px}.coms li{background:#fff;border:1px solid #dde1e7;border-radius:10px;padding:12px 14px}.com-quem{margin:0;font-size:.92rem}.com-quem time{color:#5a6270;font-size:.8rem;margin-left:6px}.com-txt{margin:4px 0 0;white-space:pre-wrap;color:#14171c}.coms-vazio{margin:0;color:#5a6270}.com-form{display:grid;gap:10px;border-top:1px solid #dde1e7;padding-top:14px}.com-form label{display:grid;gap:4px;font-weight:700;font-size:.9rem;color:#14171c}.com-form small{font-weight:600;color:#5a6270}.com-form input,.com-form textarea{font:inherit;font-size:16px;font-weight:400;padding:10px 12px;border:1px solid #c8cdd5;border-radius:8px;background:#fff;color:#14171c}.com-form textarea{resize:vertical;min-height:110px}.com-form .isca{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}.com-form button{justify-self:start;min-height:44px;padding:10px 20px;border-radius:999px;border:0;background:#14171c;color:#fff;font:inherit;font-weight:800;cursor:pointer}.com-form button:disabled{opacity:.6}.com-aviso{margin:0;font-size:.82rem;color:#5a6270}.com-aviso a{color:#1f5fae}.com-st{margin:0;font-weight:700;font-size:.92rem}.com-st:empty{display:none}.com-st.ok{color:#1b7a45}.com-st.erro{color:#a3223a}:where(html){scroll-padding-top:calc(var(--nav-h,49px) + 12px)}.nav{position:sticky;top:0;z-index:20}body .abas,body .barra-f,body .ctrl{top:var(--nav-h,49px)}.marca img.logo{width:auto;height:48px;border-radius:0}@media (max-width:480px){.marca img.logo{height:40px}}.nav .casa{display:flex;align-items:center;justify-content:center;min-width:44px}.nav .casa .ic{width:20px;height:20px}@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.card:hover,.jogo:hover .capa img,.jogo:active .capa,.zap:active,.post-btn:active,.btn-filtro:hover,.btn-filtro:active,.ver:active{transform:none!important}}.in{max-width:1180px;margin:0 auto;padding-left:16px;padding-right:16px}.ic{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round;flex:none}.bar{border-bottom:1px solid var(--line);background:#000;color:var(--ink)}.bar .in{display:flex;align-items:center;gap:12px;padding-top:8px;padding-bottom:8px}.bar a{color:inherit;text-decoration:none;font-weight:600;font-size:.95rem}.marca img{display:block;width:84px;border-radius:6px}.bar .ig{margin-left:auto;display:flex;align-items:center;gap:6px;padding:6px 10px;border-radius:6px}.bar .ig:hover{color:var(--gold)}.bar .zap-mini{display:flex;align-items:center;gap:6px;padding:6px 10px;border-radius:6px;background:#157a43;color:#fff}.nav ul{padding-left:16px;padding-right:16px}.nav ul li{list-style:none}@media (max-width:700px){.bar .ig span,.bar .zap-mini span{display:none}}footer{font-size:.9rem}footer .in{max-width:1180px;display:flex;flex-wrap:wrap;gap:6px 16px;padding-top:20px;padding-bottom:28px}footer a{color:var(--muted);text-decoration:none}footer a:hover{color:var(--gold)}</style>
+<style id="guia-extra">
+/* faixa de progresso, presa logo abaixo do menu */
+.guia-prog{position:sticky;top:var(--nav-h,45px);z-index:15;background:var(--panel);border-bottom:1px solid var(--line)}
+.guia-prog a{display:flex;align-items:center;gap:10px;max-width:760px;margin:0 auto;padding:9px 16px;color:var(--ink);text-decoration:none;font-size:.86rem;font-weight:700;min-height:40px}
+.guia-prog .gp-r{flex:none;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--gold)}
+.guia-prog .gp-t{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.guia-prog .gp-i{margin-left:auto;flex:none;font-size:.78rem;color:var(--muted);font-weight:600}
+.guia-prog .gp-b{position:absolute;left:0;right:0;bottom:-1px;height:3px;background:var(--gold);transform-origin:0 50%;transform:scaleX(0)}
+html{scroll-padding-top:calc(var(--nav-h,45px) + 56px)}
+/* legenda dos blocos: pontos de cor em vez de pílulas */
+.legenda{gap:6px 16px}
+.legenda span{position:relative;background:none;color:var(--muted);box-shadow:none!important;padding:0 0 0 16px;font-size:.8rem;letter-spacing:0}
+.legenda span::before{content:"";position:absolute;left:0;top:.32em;width:10px;height:10px;border-radius:3px;background:var(--paper)}
+.legenda .l2::before{background:var(--ok)}.legenda .l3::before{background:var(--gold)}.legenda .l4::before{background:var(--ouro-ink)}
+/* índice numerado */
+.indice ol{counter-reset:it}.indice li{counter-increment:it}
+.indice a{display:flex;gap:10px;align-items:baseline;min-height:40px;padding:9px 0}
+.indice a::before{content:counter(it);flex:none;width:1.6em;font-size:.8rem;font-weight:800;color:var(--ouro-ink);font-variant-numeric:tabular-nums}
+.nota-pe{color:var(--muted);font-size:.85rem;padding:4px 2px 0}
+/* títulos das etapas com mais respiro */
+.sec{scroll-margin-top:calc(var(--nav-h,45px) + 56px)}
+@media (min-width:601px){.sec{padding:24px 28px}}
+/* tabelas: fichas no celular */
+@media (max-width:600px){
+ .tab{border:0;background:none;overflow:visible;border-radius:0}
+ .tab table,.tab tbody,.tab tr,.tab td{display:block}
+ .tab thead{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+ .tab tr{background:#fff;border:1px solid var(--paper-line);border-radius:8px;padding:10px 12px;margin-bottom:8px}
+ .tab td{border:0;padding:3px 0;display:grid;grid-template-columns:6.5em minmax(0,1fr);gap:8px}
+ .tab td::before{content:attr(data-label);font-size:.7rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--paper-muted);padding-top:3px}
+ .tab td:empty{display:none}
+ .tab td:first-child{display:block;font-weight:800;color:var(--paper-ink);padding-bottom:4px}
+ .tab td:first-child::before{display:none}
+}
+</style>
+</head>
+<body>
+<!--moldura--><a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<header class="bar" id="topo"><div class="in">
+ <a class="marca" href="../../"><img class="logo" src="../../marca/logo-eb-104.webp" srcset="../../marca/logo-eb-52.webp 157w, ../../marca/logo-eb-104.webp 314w, ../../marca/logo-eb-156.webp 472w" sizes="(max-width: 480px) 121px, 145px" width="157" height="52" alt="Elite Board Gamers: página inicial"></a>
+ <a class="ig" href="https://www.instagram.com/eliteboardgamers/" target="_blank" rel="noopener" aria-label="Instagram @eliteboardgamers"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6" fill="currentColor"/></svg><span>@eliteboardgamers</span></a>
+ <a class="zap-mini" href="https://chat.whatsapp.com/IgQQkJdSkzHBaEq3UwFeAo" target="_blank" rel="noopener" aria-label="Grupo do WhatsApp"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8.4 19l-4.4 1Z"/><path d="M9.2 8.6c.3-.5.8-.5 1-.1l.7 1.5c.1.3 0 .6-.2.8l-.4.4c.5 1.1 1.4 2 2.5 2.5l.4-.4c.2-.2.5-.3.8-.2l1.5.7c.4.2.4.7-.1 1-.7.5-1.6.6-2.4.3a7 7 0 0 1-4.2-4.2c-.3-.8-.2-1.7.4-2.3Z"/></svg><span>Grupo do WhatsApp</span></a>
+ <button type="button" class="busca-btn" aria-label="Buscar no site" aria-haspopup="dialog" aria-keyshortcuts="/ Control+K" hidden><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></button>
+</div></header>
+<script>(()=>{const b=document.querySelector('.busca-btn');let c;b.hidden=false;const a=()=>{c=c||new Promise((r,j)=>{const s=document.createElement('script');s.src='../../busca.js';s.onload=r;s.onerror=()=>{c=null;j()};document.head.append(s)});c.then(()=>abrirBusca('../../'),()=>{})};b.addEventListener('click',a);addEventListener('keydown',e=>{const t=e.target,ed=t.isContentEditable||/^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName);if((e.key==='/'&&!ed&&!e.ctrlKey&&!e.metaKey)||((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k')){e.preventDefault();a()}})})()</script>
+<nav class="nav" aria-label="Seções do site"><ul class="in"><li><a class="casa" href="../../" aria-label="Página inicial"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 9.5V20h13V9.5"/><path d="M10 20v-5.5h4V20"/></svg></a></li><li><a href="../../noticias/">Notícias</a></li><li><a href="../../resenhas/">Resenhas</a></li><li><a href="../../como-jogar/" aria-current="true">Como jogar</a></li><li><a href="../../lancamentos/">Lançamentos</a></li><li><a href="../../consulta/">Consulta Golden Geek</a></li></ul></nav>
+<script>(()=>{const n=document.querySelector('.nav'),h=()=>document.documentElement.style.setProperty('--nav-h',n.offsetHeight+'px');h();addEventListener('resize',h);addEventListener('load',h)})()</script>
+<div class="guia-prog"><a href="#neste-guia"><span class="gp-r">Guia</span><span class="gp-t">Neste guia</span><span class="gp-i">Índice</span></a><span class="gp-b" aria-hidden="true"></span></div><!--/moldura-->
+
+<main id="conteudo" class="gut"><div class="nota">
+  <nav class="trilha" aria-label="Trilha de navegação"><ol><li><a href="../../">Início</a></li><li><a href="../">Como jogar</a></li><li aria-current="page">Santuário</li></ol></nav>
+
+  <article class="bloco">
+    <span class="num-l">Colocação de peças · Motor</span>
+    <h1>Como jogar Santuário</h1>
+    <p class="meta-e"><span>Para quem nunca jogou</span><span>1 a 5 jogadores</span><span>20 min por jogador</span><span>12+</span><span>Regras do manual em inglês (Capstone)</span></p>
+    <p class="meta"><time datetime="2026-10-31">31 de outubro de 2026</time> · Redação Elite Boardgamers</p>
+  </article>
+
+  <section class="bloco r1" aria-label="Resumo em 1 minuto">
+    <span class="kick">Resumo em 1 minuto</span>
+    <p class="resp">Você monta um zoológico com peças de Animais, Prédios e Projetos, usando quatro cartas de ação que ganham força na fila, e vence quem somar mais pontos.</p>
+    <ul><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.5l4.5 4.5L19.5 6.5"/></svg><span>A cada turno você pega uma peça da vitrine e usa uma carta de ação para ganhar peças ou jogar uma no zoológico.</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.5l4.5 4.5L19.5 6.5"/></svg><span>A carta usada volta ao encaixe 1, o mais fraco, e as outras ficam mais fortes.</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.5l4.5 4.5L19.5 6.5"/></svg><span>Quem apoia 4 metas de conservação ou cobre o tabuleiro dispara o fim e ganha 10 pontos.</span></li></ul>
+    <p class="pe"><span><b>Como você aprende:</b> 5 etapas, da mesa montada à contagem de pontos</span><span><b>Leitura do essencial:</b> cerca de 10 min</span></p>
+    <p class="legenda-f"><b>À vista, só o essencial para jogar.</b> O que abre com <span class="mais-i">+</span> é explicação, exemplo, exercício ou regra de caso especial: abra quando precisar.</p>
+  </section>
+
+<section class="bloco sec rapido" id="comece-a-jogar-em-4-minutos"><h2><span class="num"></span>Comece a jogar em 4 minutos</h2>
+<p><strong>Meta:</strong> em 4 minutos de leitura, montar a mesa e jogar o seu primeiro turno sem abrir o manual.</p>
+<h3>A ideia do jogo</h3>
+<p>Cada jogador monta um zoológico no próprio <strong>tabuleiro</strong>, com peças hexagonais de Animais, Prédios e Projetos. Para jogar uma peça você usa uma de quatro <strong>cartas de ação</strong>, e a <strong>força</strong> de cada carta depende da posição dela na fila: a usada volta para o começo, e as outras ganham força. Vence quem somar mais pontos nas peças e nas <strong>metas de conservação</strong>.</p>
+<h3>Monte a mesa</h3>
+<ol><li>Tabuleiro da vitrine no centro. Embaralhe as peças viradas para baixo: é a pilha. Abra 6 na vitrine, uma em cada número. Lugar para o descarte.</li><li>Tabuleiro de conservação ao lado, com 5 das 10 metas sorteadas; as outras voltam à caixa. Separe os marcadores de conservação, de bolsa e de fim de jogo. Tudo isso fica para depois.</li><li>Cada jogador: tabuleiro (todos do mesmo lado; lado 1 na primeira partida), suporte de peças, que guarda a sua mão, e, da sua cor, 4 marcadores de melhoria e 4 de conquista, para depois. Ninguém começa com peças.</li><li>Sorteie quem começa. Cada jogador põe as 4 cartas de ação, lado I para cima, nos 4 encaixes sob o tabuleiro, numerados de 1 (esquerda) a 4: a de Projetos no encaixe da sua ordem de jogo (o 5º jogador, no 4), as outras 3 ao acaso.</li></ol>
+<h3>Seu primeiro turno</h3>
+<div class="tab"><table><thead><tr><th>Carta de ação</th><th>Ganhar peças</th><th>Jogar peça</th></tr></thead><tbody><tr><td data-label="Carta de ação">Projetos</td><td data-label="Ganhar peças">1 peça de qualquer posição da vitrine</td><td data-label="Jogar peça">1 Projeto</td></tr><tr><td data-label="Carta de ação">Animais de Rocha, Floresta ou Água</td><td data-label="Ganhar peças">as 2 do topo da pilha</td><td data-label="Jogar peça">1 Animal daquele habitat ou de habitat indefinido (ícone verde, cinza e azul)</td></tr></tbody></table></div>
+<p>A força é o número para onde aponta a seta da carta de ação: no lado I, o número do encaixe.</p>
+<ol><li><strong>Pegue 1 peça da vitrine</strong> dentro do alcance, que é a seta da carta de Projetos: com 1, só a posição 1; com 3, qualquer das posições 1 a 3. Ela vai para a sua mão.</li><li><strong>Use 1 carta de ação</strong>: ganhar peças ou jogar peça, nunca as duas. Para jogar, a força precisa ser igual ou maior que o nível, o número à esquerda da peça. Ela vai numa casa vazia vizinha da entrada (o portão na borda de baixo do tabuleiro) ou de outra peça, sem girar. Bônus impresso na casa e efeitos impressos na peça valem na hora. Depois, a carta usada vai para o encaixe 1, e as que estavam à esquerda dela andam um encaixe para a direita.</li><li>Se quiser, jogue 1 Prédio (<a href="#etapa-4-o-resto-do-turno">etapa 4</a>).</li><li>Se quiser, apoie 1 meta (<a href="#etapa-4-o-resto-do-turno">etapa 4</a>).</li><li>Se quiser, melhore cartas (<a href="#etapa-4-o-resto-do-turno">etapa 4</a>).</li><li><strong>Manutenção:</strong> no máximo 6 peças na mão; as peças da vitrine descem e a pilha completa os vazios.</li></ol>
+<aside class="call resolvido"><p class="rot">Tarefa · exemplo resolvido</p><p><strong>Exemplo resolvido.</strong> Você começa: Projetos no 1, Água no 2, Floresta no 3, Rocha no 4. Com alcance 1, pega a peça da posição 1, um Animal de Rocha de nível 3 sem setas. A Rocha tem força 4: o Animal vai numa das 3 casas junto à entrada. Fila nova: Rocha, Projetos, Água, Floresta. A vitrine desce; nova peça na 6.</p></aside>
+<aside class="call complete"><p class="rot">Tarefa · complete</p><p><strong>Complete.</strong> O segundo jogador tem Floresta no 1, Projetos no 2, Rocha no 3 e Água no 4. Pega da posição 2 um Animal de Água de nível 4, sem setas. Pode jogá-lo? Onde ficam as cartas depois?</p></aside>
+<aside class="call suavez"><p class="rot">Tarefa · sua vez</p><p><strong>Agora a sua mesa.</strong> Qual é o seu alcance? Que peça pega? A carta do habitat dela tem força suficiente? Se não, pega 2 da pilha ou outra da vitrine?</p></aside>
+<details class="respostas"><summary>Resposta do Complete: mostrar</summary><div><p>pode: a Água está no encaixe 4, força 4. Depois: Água no 1, Floresta no 2, Projetos no 3, Rocha no 4. Alcance seguinte: 3.</p></div></details>
+<h3>Setas na borda das peças e Prédios</h3>
+<p>Cada seta na borda de uma peça pede um espaço livre na casa apontada: uma peça da mão virada para baixo ali, ou um espaço livre que já esteja no tabuleiro, impresso ou colocado antes. Prédio não se joga com carta de ação: só no passo 3.</p>
+<h3>Ainda não precisa saber</h3>
+<p>Casais e o Rio: <a href="#etapa-3-colocar-pecas-no-zoologico">etapa 3</a>. Metas e melhorias: <a href="#etapa-4-o-resto-do-turno">etapa 4</a>. Pontuação: <a href="#etapa-5-o-fim-da-partida-e-a-pontuacao">etapa 5</a>.</p>
+<h3>Como a partida acaba</h3>
+<p>Quem apoia 4 metas (põe seus 4 marcadores de conquista sob elas) ou cobre o tabuleiro ganha 10 pontos, e os outros jogam mais um turno. Pilha vazia antes disso: a partida acaba ao fim daquele turno. Mais pontos vence.</p>
+<aside class="call atencao"><p class="rot">Atenção</p><p><strong>Os três erros mais caros.</strong> Animal só entra com a carta do habitat dele (o indefinido, com qualquer das três) e com força igual ou maior que o nível. O alcance limita só a peça do passo 1, que não move a carta de Projetos. Peça jogada nunca gira.</p></aside>
+</section>
+  <nav class="bloco indice" id="neste-guia" aria-label="Neste guia"><h2>Neste guia</h2><ol><li><a href="#comece-a-jogar-em-4-minutos">Comece a jogar em 4 minutos</a></li><li><a href="#antes-de-tudo-o-que-e-este-jogo">Antes de tudo: o que é este jogo</a> <small>(opcional)</small></li><li><a href="#como-este-guia-ensina">Como este guia ensina</a> <small>(opcional)</small></li><li><a href="#etapa-1-montar-a-mesa">Etapa 1: montar a mesa</a></li><li><a href="#etapa-2-a-acao-do-turno">Etapa 2: a ação do turno</a></li><li><a href="#etapa-3-colocar-pecas-no-zoologico">Etapa 3: colocar peças no zoológico</a></li><li><a href="#etapa-4-o-resto-do-turno">Etapa 4: o resto do turno</a></li><li><a href="#etapa-5-o-fim-da-partida-e-a-pontuacao">Etapa 5: o fim da partida e a pontuação</a></li><li><a href="#situacoes-especiais">Situações especiais</a> <small>(opcional)</small></li><li><a href="#avaliacao-final">Avaliação final</a> <small>(opcional)</small></li><li><a href="#para-consultar-durante-a-partida">Para consultar durante a partida</a></li><li><a href="#fontes">Fontes</a></li></ol></nav>
+
+<section class="bloco sec opc" id="antes-de-tudo-o-que-e-este-jogo"><h2><span class="num">0</span>Antes de tudo: o que é este jogo<span class="tag-opc">Opcional</span></h2>
+<details class="dobra sec-opc"><summary>Abrir esta seção</summary><p>Santuário se apresenta, na capa do manual, como "um jogo da linha Ark Nova". Cada jogador tem um tabuleiro com casas vazias, a entrada embaixo e um Rio nas bordas. Ao longo da partida, você encaixa peças nessas casas; as peças jogadas formam o seu <strong>zoológico</strong> <span class="pg">p.&nbsp;1 a 3</span>.</p>
+<p>As peças são de três tipos, pela cor da faixa do nome: <strong>Animais</strong> (amarelo), <strong>Prédios</strong> (azul) e <strong>Projetos</strong> (roxo). No alto de cada peça há ícones: habitat (Rocha, Floresta, Água), continente e classe de animal, além dos ícones próprios de Prédio e de Projeto. Depois que a peça entra no zoológico, os ícones dela contam como seus <span class="pg">p.&nbsp;2</span>.</p>
+<p>O turno é curto: você pega uma peça da vitrine e faz uma ação com uma das quatro cartas. A decisão está em qual carta usar, porque ela perde força ao ser usada e as outras ganham <span class="pg">p.&nbsp;2 e 3</span>.</p>
+<p>Os pontos vêm de três lugares: das peças (algumas valem um número fixo, outras dependem dos ícones vizinhos ou do zoológico inteiro), das metas de conservação que você apoiar e de alguns marcadores <span class="pg">p.&nbsp;2 e 8</span>.</p></details>
+</section>
+<section class="bloco sec opc" id="como-este-guia-ensina"><h2><span class="num">1</span>Como este guia ensina<span class="tag-opc">Opcional</span></h2>
+<details class="dobra sec-opc"><summary>Abrir esta seção</summary><p>O guia tem cinco etapas, cada uma uma parte real da partida: montar a mesa, fazer a ação principal do turno, colocar peças no zoológico, cuidar do resto do turno e, por fim, terminar a partida e contar pontos.</p>
+<p>Em cada etapa, o que fica à vista é o essencial: o passo a passo e o erro mais comum. O porquê, os exemplos resolvidos e as regras de casos especiais abrem com um toque. As tarefas vêm com ajuda que diminui (exemplo resolvido, depois uma tarefa para completar, depois uma sem ajuda), e as respostas ficam no fim da etapa. No final há uma avaliação curta e uma folha para consultar na mesa.</p></details>
+</section>
+<section class="bloco sec" id="etapa-1-montar-a-mesa"><h2><span class="num">2</span>Etapa 1: montar a mesa</h2>
+<details class="dobra entender"><summary>Por que funciona assim</summary><aside class="call entender"><p>A mesa tem duas áreas comuns e uma área por jogador. No centro, a <strong>vitrine</strong> mostra 6 peças abertas, numeradas de 1 a 6, que todos disputam, e o <strong>tabuleiro de conservação</strong> mostra as 5 metas da partida. Na frente de cada jogador ficam o tabuleiro, as 4 cartas de ação nos encaixes de baixo, o suporte de peças com a sua mão (só você a vê) e os marcadores da sua cor <span class="pg">p.&nbsp;1</span>.</p>
+<p>A ordem inicial das cartas não é igual para todos. Quem joga primeiro começa com a carta de Projetos no encaixe 1, o mais fraco, e por isso só alcança a peça 1 da vitrine. Quem joga depois começa com ela mais à direita, alcançando mais peças <span class="pg">p.&nbsp;1 e 4</span>.</p></aside></details>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Preparação</strong> <span class="pg">p.&nbsp;1</span></p>
+<ol><li>Tabuleiro da vitrine no centro. Todas as peças embaralhadas viradas para baixo, em uma ou mais pilhas; "a pilha" do jogo são elas.</li><li>6 peças da pilha abertas na vitrine, uma ao lado de cada número. Espaço para a pilha de descarte.</li><li>Marcadores de conservação, de bolsa e de fim de jogo separados como reserva.</li><li>Tabuleiro de conservação ao lado da vitrine. Embaralhe as 10 metas, revele 5 ao acaso e ponha no tabuleiro; as outras 5 voltam à caixa. A ordem não importa; o manual sugere juntar as metas de continente e as de classe de animal.</li><li>Cada jogador pega um tabuleiro. Todos usam o mesmo lado; na primeira partida, o lado 1.</li><li>Sorteie o primeiro jogador. Cada jogador pega as 4 cartas de ação, com o lado I para cima (o número do lado aparece no canto inferior direito), e as põe nos 4 encaixes sob o tabuleiro de uma vez: a carta de Projetos do primeiro jogador no encaixe da esquerda, com a seta no 1; a dos seguintes, em sentido horário, um encaixe mais à direita (seta no 2, no 3, no 4); as outras 3 cartas de cada um, ao acaso nos encaixes que sobraram.</li><li>Cada jogador escolhe uma cor e põe à frente, virados para cima, os 4 marcadores de melhoria e os 4 marcadores de conquista dela.</li><li>Cada jogador pega um suporte de peças, onde fica a sua mão. Ninguém começa com peças.</li></ol></aside>
+<details class="dobra mais"><summary>Regra adicional: 5 jogadores</summary><aside class="call mais"><p>O quarto e o quinto jogador põem a carta de Projetos no encaixe da direita, com a seta no 4 <span class="pg">p.&nbsp;1</span>.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Primeira partida (sugestão do manual)</summary><aside class="call mais"><p>Devolva à caixa o seu marcador de conquista de 4 ícones. Assim, o fim da partida é disparado quando alguém coloca o terceiro marcador de conquista, e não o quarto <span class="pg">p.&nbsp;1</span>.</p></aside></details>
+<details class="dobra edicao"><summary>Sobre a edição: Nomes</summary><aside class="call edicao"><p>A página da Grok Games fala em "edifícios" e "objetivos de conservação". Este guia usa "Prédios" e "metas de conservação", como a nossa resenha. Se a sua caixa usar outros nomes, a regra é a mesma.</p></aside></details>
+
+
+<details class="dobra pratica"><summary>Pratique esta etapa: exercícios com respostas</summary><aside class="call suavez"><p class="rot">Tarefa · sua vez</p><p><strong>Sua vez.</strong> Partida de 4 jogadores. Responda olhando só a preparação:</p>
+<ol><li>Quantas metas de conservação ficam no tabuleiro de conservação?</li><li>Em que encaixe o terceiro jogador põe a carta de Projetos? Que peças da vitrine ele pode pegar no primeiro turno?</li><li>Com quantas peças na mão cada um começa?</li></ol></aside>
+<details class="respostas"><summary>Respostas da etapa 1: mostrar</summary><div><ol><li>Cinco (item 4 da preparação).</li><li>No encaixe 3, com a seta no 3: pode pegar a peça da posição 1, 2 ou 3 (item 6; p. 4).</li><li>Nenhuma (item 8).</li></ol></div></details></details>
+</section>
+<section class="bloco sec" id="etapa-2-a-acao-do-turno"><h2><span class="num">3</span>Etapa 2: a ação do turno</h2>
+<details class="dobra entender"><summary>Por que funciona assim</summary><aside class="call entender"><p>As quatro cartas de ação formam uma fila sob o tabuleiro. Quanto mais à direita a carta, maior a força. Usar uma carta a manda de volta ao encaixe 1, o mais fraco, e empurra para a direita as que estavam antes dela. Por isso a pergunta de cada turno é dupla: o que eu quero fazer agora, e que carta eu aceito enfraquecer <span class="pg">p.&nbsp;3</span>.</p>
+<p>A carta de Projetos tem duas funções. A seta dela é o <strong>alcance</strong> na vitrine no passo 1 e também a força para jogar Projetos <span class="pg">p.&nbsp;4 e 5</span>. Usar Projetos deixa o seu alcance no mínimo no turno seguinte.</p></aside></details>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Passos 1 e 2 do turno</strong> <span class="pg">p.&nbsp;3 a 6</span></p>
+<ul><li><strong>Passo 1, pegue 1 peça da vitrine</strong> de uma posição igual ou menor que o seu alcance. A carta de Projetos fica onde está.</li><li><strong>Passo 2, use 1 carta de ação:</strong> escolha uma carta e faça <strong>uma</strong> das duas opções dela, ganhar peças ou jogar peça, com a força atual. Nunca as duas.</li><li><strong>Ganhar peças.</strong> Carta de Projetos: pegue 1 peça de qualquer posição da vitrine (o alcance não vale aqui). Carta de Animais: pegue as 2 peças do topo da pilha.</li><li><strong>Jogar um Projeto</strong> (carta de Projetos): a força precisa ser igual ou maior que o nível do Projeto.</li><li><strong>Jogar um Animal</strong> (carta de Animais): só com a carta do mesmo habitat do Animal; o Animal de habitat indefinido (ícone verde, cinza e azul) entra com qualquer das três. A força precisa ser igual ou maior que o nível.</li><li><strong>Prédio nunca</strong> se joga com carta de ação; ele tem o passo 3.</li><li><strong>Fim do passo 2:</strong> tire a carta usada do encaixe, deslize as cartas da esquerda dela um encaixe para a direita e ponha a usada no encaixe 1. Se ela já estava no 1, nada se move.</li></ul></aside>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>O lado II</strong> <span class="pg">p.&nbsp;3, 4 e 5</span></p>
+<ul><li>Carta melhorada (lado II): a seta da carta aponta para o número da direita do encaixe, e a força é 1 maior.</li><li>Projetos no lado II: como a seta é a mesma, o alcance do passo 1 também sobe 1. Na opção de ganhar peças, pegue 1 peça de qualquer posição da vitrine e, se quiser, uma 2ª.</li><li>Animais no lado II: jogue 1 ou 2 Animais daquele habitat ou indefinidos. Com 2, a força precisa ser igual ou maior que a <strong>soma</strong> dos níveis. Coloque um, resolva todos os efeitos dele, e só então coloque o outro.</li></ul></aside>
+<aside class="call atencao"><p class="rot">Atenção</p><p>O alcance vale só no passo 1. Quando um efeito, um bônus ou a própria carta de Projetos mandam pegar uma peça da vitrine, ela pode vir de qualquer posição <span class="pg">p.&nbsp;4</span>.</p></aside>
+<details class="dobra resolvido"><summary>Ver um exemplo resolvido</summary><aside class="call resolvido"><p>Sua fila: Rocha no encaixe 1, Floresta no 2, Projetos no 3, Água no 4, todas no lado I. Na mão, um Projeto de nível 4. Com a carta de Projetos (força 3), você não pode jogá-lo.</p>
+<p>Você pega a peça da posição 2 (alcance 3) e usa Projetos para ganhar peças: mais 1 peça da vitrine, desta vez da posição 5. Projetos vai para o encaixe 1; Rocha e Floresta passam para 2 e 3; Água não se move e segue com força 4 (é a situação do exemplo da p. 6).</p>
+<p>Por que essa escolha: com a Água forte, você guarda a carta para um Animal de Água de nível 4. No próximo turno, porém, o seu alcance é 1.</p></aside></details>
+
+
+
+
+<details class="dobra pratica"><summary>Pratique esta etapa: exercícios com respostas</summary><aside class="call complete"><p class="rot">Tarefa · complete</p><p><strong>Complete.</strong> Sua carta de Água está no lado II, no encaixe 3. Já sabemos: força 4. Na mão, dois Animais de nível 2, um de Água e um indefinido, e um Animal de Água de nível 3. Complete: quais pares você pode jogar nesta ação?</p></aside>
+<aside class="call suavez"><p class="rot">Tarefa · sua vez</p><p><strong>Sua vez.</strong> Sua fila: Água no 1, Projetos no 2, Floresta no 3, Rocha no 4, todas no lado I. Na mão: um Animal de Floresta de nível 4 e um Animal indefinido de nível 4. Que carta pode jogar cada um? E onde fica a carta de Projetos se você usar a de Rocha?</p></aside>
+<aside class="call treino"><p class="rot">Treino rápido</p><p><strong>A fila.</strong> Fila inicial: Rocha (1), Floresta (2), Projetos (3), Água (4), lado I.</p>
+<p>a) Você usa Floresta. Como fica a fila?</p>
+<p>b) Você usa Rocha. Como fica?</p>
+<p>c) Projetos no lado II, no encaixe 2. Qual é o alcance?</p></aside>
+<details class="respostas"><summary>Respostas da etapa 2: mostrar</summary><div><ul><li><strong>Complete:</strong> Água 2 com indefinido 2 (soma 4). Água 3 com qualquer dos outros dá soma 5, maior que 4: não pode. Sozinho, qualquer um dos três entra <span class="pg">p.&nbsp;5</span>.</li><li><strong>Sua vez:</strong> o de Floresta só com a carta de Floresta, força 3, menor que 4: não entra. O indefinido pode usar qualquer carta de Animais; só a de Rocha (força 4) basta. Usando Rocha, ela vai ao encaixe 1 e Projetos passa ao 3 <span class="pg">p.&nbsp;5 e 6</span>.</li><li><strong>Treino a:</strong> Floresta (1), Rocha (2), Projetos (3), Água (4). <strong>b:</strong> nada muda: a carta já estava no 1. <strong>c:</strong> 3 (lado II soma 1).</li></ul></div></details></details>
+</section>
+<section class="bloco sec" id="etapa-3-colocar-pecas-no-zoologico"><h2><span class="num">4</span>Etapa 3: colocar peças no zoológico</h2>
+<details class="dobra entender"><summary>Por que funciona assim</summary><aside class="call entender"><p>O zoológico cresce a partir da entrada, como uma mancha. Cada peça precisa encostar em algo que já está lá e nunca gira. Os animais grandes pedem espaço: as setas na borda da peça apontam casas que precisam virar <strong>espaços livres</strong>, peças da sua mão viradas para baixo. Um espaço livre vale 1 ponto no fim, então a peça que você não consegue jogar ainda serve para alguma coisa <span class="pg">p.&nbsp;2 e 3</span>.</p></aside></details>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Colocação</strong> <span class="pg">p.&nbsp;2 e 3</span></p>
+<ul><li>Ponha a peça numa casa vazia (sem peça e sem espaço livre impresso) vizinha da entrada (o portão na borda de baixo) ou de uma peça já no zoológico. Os 2 espaços livres impressos no tabuleiro não contam como peça para isso.</li><li>Ícones para cima, nome embaixo. Não gire a peça.</li><li>Se a casa tem um bônus de colocação impresso, ganhe o bônus na hora. A folha de ajuda e o Glossário explicam cada bônus.</li><li>Se a peça tem setas na borda, primeiro ponha a peça; depois, em cada casa apontada, use o espaço livre que já está lá (impresso ou colocado antes) ou vire uma peça da sua mão para baixo ali. Espaço livre colocado numa casa com bônus também ganha o bônus.</li><li>Uma seta na borda não pode apontar para peça aberta já jogada nem para fora do tabuleiro. Se apontaria, a peça não pode ir naquela casa.</li><li>Efeitos impressos na peça: com o símbolo de raio (faixa amarela clara), valem uma vez, ao jogar; com o símbolo de infinito (faixa verde clara), são contínuos e já valem na hora, inclusive para a própria peça se ela tiver o ícone que o efeito pede.</li><li>Vários efeitos ao mesmo tempo (da peça, de outras peças, do bônus): você escolhe a ordem.</li></ul></aside>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Casal</strong> <span class="pg">p.&nbsp;2 e 5</span></p>
+<p>Algumas espécies têm duas peças com o mesmo nome, um macho e uma fêmea. Ao pôr uma delas vizinha da outra, ganhe 1 marcador de conservação, além dos outros efeitos. Os marcadores de conservação ficam no canto inferior esquerdo do tabuleiro.</p></aside>
+<details class="dobra mais"><summary>Regra adicional: Rio</summary><aside class="call mais"><p>Algumas peças falam do Rio. As 3 casas da borda esquerda e as 3 da borda direita do tabuleiro estão "à beira do Rio" <span class="pg">p.&nbsp;3</span>.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Soltura na natureza</summary><aside class="call mais"><p>Um Projeto desse tipo não vai numa casa vazia: vai em cima de um Animal seu que tenha o ícone indicado. O Animal fica coberto e seus ícones e pontos deixam de contar <span class="pg">p.&nbsp;5</span>.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Espaço livre e vizinhança</summary><aside class="call mais"><p>O manual diz que os 2 espaços livres impressos não contam como peça para a colocação; não fala dos que você coloca. A leitura deste guia: espaço livre colocado por você é peça virada e conta como vizinho <span class="pg">p.&nbsp;3</span>.</p></aside></details>
+<aside class="call atencao"><p class="rot">Atenção</p><p>Peça descartada (pelo limite de mão ou por efeito) vai para a pilha de descarte virada para cima, para não se misturar com a pilha <span class="pg">p.&nbsp;3</span>.</p></aside>
+<details class="dobra resolvido"><summary>Ver um exemplo resolvido</summary><aside class="call resolvido"><p>Você quer jogar um Animal com duas setas na borda, para cima à esquerda e para cima à direita (é a situação da p. 3). Só uma posição no seu tabuleiro deixa as duas casas apontadas livres de peça aberta. Na casa da direita já há um espaço livre impresso. Na da esquerda não há nada: você vira uma peça da mão para baixo ali.</p>
+<p>Conta de peças: o Animal sai da mão, e mais uma peça vira espaço livre. Duas peças da mão para um Animal. No fim, o espaço livre novo vale 1 ponto.</p></aside></details>
+
+
+
+
+<details class="dobra pratica"><summary>Pratique esta etapa: exercícios com respostas</summary><aside class="call complete"><p class="rot">Tarefa · complete</p><p><strong>Complete.</strong> Você joga um Animal de Água de nível 4 que tem uma seta na borda, e já tem no zoológico um Projeto com efeito contínuo: "quando um ícone de réptil entra, pegue 1 peça qualquer da vitrine". O Animal tem ícone de réptil e um efeito com raio que também dá 1 peça da vitrine (é a situação da p. 5). Você já pôs o Animal e virou uma peça para o espaço livre. Complete: quantas peças você pega e em que ordem resolve os efeitos?</p></aside>
+<aside class="call suavez"><p class="rot">Tarefa · sua vez</p><p><strong>Sua vez.</strong> Você tem um Animal macho na casa vizinha de uma casa vazia. A fêmea da mesma espécie está na sua mão. A casa vazia tem um bônus de colocação. O que você ganha ao jogar a fêmea ali?</p></aside>
+<aside class="call treino"><p class="rot">Treino rápido</p><p><strong>Pode pôr aqui?</strong></p>
+<p>a) Casa vazia vizinha só de um espaço livre impresso.</p>
+<p>b) Animal com uma seta que apontaria para um Prédio seu.</p>
+<p>c) Prédio girado para que a seta encaixe num espaço livre.</p></aside>
+<details class="respostas"><summary>Respostas da etapa 3: mostrar</summary><div><ul><li><strong>Complete:</strong> 2 peças, uma de cada efeito. A ordem é você quem escolhe <span class="pg">p.&nbsp;5</span>.</li><li><strong>Sua vez:</strong> 1 marcador de conservação pelo casal e o bônus da casa, mais os efeitos da peça, na ordem que quiser <span class="pg">p.&nbsp;2 e 3</span>.</li><li><strong>Treino a:</strong> não. Espaço livre impresso não conta como peça; a casa precisa ser vizinha da entrada ou de outra peça. <strong>b:</strong> não: a seta na borda não pode apontar para peça aberta, e a peça não pode ir naquela casa. <strong>c:</strong> não: nenhuma peça gira <span class="pg">p.&nbsp;3</span>.</li></ul></div></details></details>
+</section>
+<section class="bloco sec" id="etapa-4-o-resto-do-turno"><h2><span class="num">5</span>Etapa 4: o resto do turno</h2>
+<details class="dobra entender"><summary>Por que funciona assim</summary><aside class="call entender"><p>Depois do passo 2 vêm três passos opcionais, nesta ordem: 3, jogar um Prédio; 4, apoiar uma meta de conservação; 5, melhorar cartas. Eles não gastam carta de ação. Por fim, o passo 6, a manutenção, que é obrigatória <span class="pg">p.&nbsp;4</span>.</p>
+<p>As metas são o motor do fim da partida. Cada meta pede um tipo de ícone (um continente ou uma classe de animal). Você tem 4 marcadores de conquista, de 2, 3, 4 e 5 ícones; quanto maior o marcador, mais pontos, mas cada marcador só se usa uma vez e cada meta só se apoia uma vez. Esperar mais ícones permite um marcador maior; apoiar a primeira meta cumpre a condição do marcador de melhoria 1 <span class="pg">p.&nbsp;7</span>.</p>
+<p>Não confunda os dois marcadores: o <strong>marcador de conservação</strong> se ganha durante a partida (por exemplo, com um casal) e vale 1 ícone ao apoiar uma meta, ou 2 pontos no fim; o <strong>marcador de conquista</strong> é um dos 4 da sua cor, que você põe sob a meta apoiada <span class="pg">p.&nbsp;2 e 7</span>.</p></aside></details>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Passo 3, Prédio</strong> <span class="pg">p.&nbsp;6</span></p>
+<ul><li>Se você tem na mão um Prédio cuja condição você cumpre, ou pode cumprir com a colocação, pode jogar no máximo 1.</li><li>A condição fica à esquerda da peça (por exemplo, "vizinho de 2 peças com ícone de Floresta").</li><li>Mesma colocação da etapa 3: casa vazia vizinha da entrada ou de outra peça, e que satisfaça a condição. Efeitos e bônus na ordem que quiser.</li></ul></aside>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Passo 4, apoiar 1 meta de conservação</strong> <span class="pg">p.&nbsp;7</span></p>
+<ul><li>Escolha 1 meta que você ainda não apoiou e conte os ícones dela no seu zoológico.</li><li>Você pode somar: cada marcador de conservação devolvido à reserva vale 1 ícone. Mas é preciso ter pelo menos 1 ícone de verdade.</li><li>Ponha um marcador de conquista não usado, de número igual ou menor que o total, virado para baixo, no espaço da sua cor sob a meta.</li></ul></aside>
+<div class="tab"><table><thead><tr><th>Marcador de conquista</th><th>Ícones exigidos</th><th>Pontos no fim</th></tr></thead><tbody><tr><td data-label="Marcador de conquista">2×</td><td data-label="Ícones exigidos">2 ou mais</td><td data-label="Pontos no fim">5</td></tr><tr><td data-label="Marcador de conquista">3×</td><td data-label="Ícones exigidos">3 ou mais</td><td data-label="Pontos no fim">7</td></tr><tr><td data-label="Marcador de conquista">4×</td><td data-label="Ícones exigidos">4 ou mais</td><td data-label="Pontos no fim">10</td></tr><tr><td data-label="Marcador de conquista">5×</td><td data-label="Ícones exigidos">5 ou mais</td><td data-label="Pontos no fim">14</td></tr></tbody></table></div>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Passo 5, melhorar cartas</strong> <span class="pg">p.&nbsp;7</span></p>
+<p>Cada marcador de melhoria tem uma condição. Para cada marcador não usado cuja condição você cumpre, escolha uma das suas cartas ainda no lado I, vire-a para o lado II no mesmo encaixe e vire o marcador para baixo. Pode usar vários no mesmo turno.</p></aside>
+<div class="tab"><table><thead><tr><th>Marcador de melhoria</th><th>Condição</th></tr></thead><tbody><tr><td data-label="Marcador de melhoria">1</td><td data-label="Condição">apoiou pelo menos 1 meta</td></tr><tr><td data-label="Marcador de melhoria">2</td><td data-label="Condição">tem pelo menos 2 Projetos no zoológico</td></tr><tr><td data-label="Marcador de melhoria">3=</td><td data-label="Condição">tem pelo menos 3 peças ligadas (vizinhas umas das outras, em cadeia) com o ícone de um mesmo habitat (Rocha, Floresta ou Água); um Prédio com o ícone conta</td></tr><tr><td data-label="Marcador de melhoria">4≠</td><td data-label="Condição">tem pelo menos 4 ícones de classe de animal diferentes</td></tr></tbody></table></div>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Passo 6, manutenção</strong> <span class="pg">p.&nbsp;8</span></p>
+<ul><li><strong>Limite de mão:</strong> com mais de 6 peças, descarte peças da mão até ficar com 6, viradas para cima no descarte. Durante o turno pode passar de 6.</li><li><strong>Reponha a vitrine:</strong> desça as peças para os números menores até não haver buracos; depois, peças da pilha nos números vazios, até 6.</li><li><strong>Fim?</strong> Confira se alguma condição de fim foi cumprida (etapa 5). Se não, joga o próximo, em sentido horário.</li></ul></aside>
+<details class="dobra edicao"><summary>Sobre a edição: O que o manual não especifica</summary><aside class="call edicao"><p>Quem escolhe as peças descartadas no limite de mão (este guia supõe que é o dono da mão) <span class="pg">p.&nbsp;8</span>.</p></aside></details>
+<aside class="call atencao"><p class="rot">Atenção</p><p>Uma meta por turno, um marcador de conquista por meta. Ícones a mais depois de apoiar não mudam o marcador já posto <span class="pg">p.&nbsp;7</span>.</p></aside>
+<details class="dobra resolvido"><summary>Ver um exemplo resolvido</summary><aside class="call resolvido"><p>Você tem 3 ícones de ave e 1 marcador de conservação, e quer apoiar a meta de aves. Duas escolhas:</p>
+<ul><li>Devolver o marcador de conservação: 4 ícones, marcador de conquista 4×, 10 pontos.</li><li>Guardar o marcador (2 pontos no fim) e usar o 3×: 7 + 2 = 9 pontos.</li></ul>
+<p>Você devolve e põe o 4×: 10 contra 9. Como apoiou a primeira meta, o marcador de melhoria 1 está cumprido no mesmo turno: você vira uma carta para o lado II.</p></aside></details>
+<details class="dobra dica"><summary>Dica</summary><aside class="call dica"><p>O 4× usado agora não volta. Se outra meta prometer 4 ícones mais tarde, talvez valha guardar o 4× e usar o 3× aqui. Conte antes.</p></aside></details>
+
+
+
+<details class="dobra pratica"><summary>Pratique esta etapa: exercícios com respostas</summary><aside class="call complete"><p class="rot">Tarefa · complete</p><p><strong>Complete.</strong> Você tem 5 ícones da Ásia e 2 marcadores de conservação. Seus marcadores 5× e 4× ainda estão livres. Para o 5×, já sabemos: 5 ícones bastam, sem devolver nada. Complete: quantos pontos você soma no fim, entre o marcador e os 2 de conservação guardados?</p></aside>
+<aside class="call suavez"><p class="rot">Tarefa · sua vez</p><p><strong>Sua vez.</strong> No passo 3 você jogou um Prédio, e agora tem 3 peças de Floresta ligadas e 2 Projetos no zoológico. Nenhum marcador de melhoria foi usado e você ainda não apoiou meta. Quantas cartas pode melhorar neste turno?</p></aside>
+<details class="respostas"><summary>Respostas da etapa 4: mostrar</summary><div><ul><li><strong>Complete:</strong> 14 do 5× mais 2 × 2 = 4 dos marcadores de conservação: 18 pontos <span class="pg">p.&nbsp;7 e 8</span>.</li><li><strong>Sua vez:</strong> duas: uma pelo marcador 3= (3 peças ligadas de Floresta) e uma pelo 2 (2 Projetos). Se apoiar uma meta no passo 4, que vem antes, o marcador 1 também conta: três <span class="pg">p.&nbsp;7</span>.</li></ul></div></details></details>
+</section>
+<section class="bloco sec" id="etapa-5-o-fim-da-partida-e-a-pontuacao"><h2><span class="num">6</span>Etapa 5: o fim da partida e a pontuação</h2>
+<details class="dobra entender"><summary>Por que funciona assim</summary><aside class="call entender"><p>Há três condições de fim, e duas delas recompensam quem as cumpre: completar as metas ou encher o tabuleiro. Quem dispara o fim ganha 10 pontos, mas os outros ainda jogam um turno, e quem também cumprir uma das duas nesse turno ganha 5. A terceira condição, a pilha vazia, não dá prêmio a ninguém e encerra a partida ao fim daquele turno <span class="pg">p.&nbsp;8</span>.</p></aside></details>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>O fim</strong> <span class="pg">p.&nbsp;8</span></p>
+<ul><li>O fim é conferido no fim de cada turno. As três condições: (1) você pôs os 4 marcadores de conquista; (2) o seu tabuleiro não tem nenhuma casa vazia; (3) a pilha está vazia.</li><li>Cumpriu (1) ou (2) no fim do seu turno: pegue o marcador de fim de jogo de 10 pontos. Cada um dos outros joga mais 1 turno; você não joga. Depois, pontuação.</li><li>Nesses últimos turnos, quem cumprir (1) ou (2) pega um marcador de fim de jogo de 5 pontos.</li><li>A pilha acabou depois de o fim ter sido disparado: embaralhe o descarte e forme uma pilha nova.</li><li>A pilha acabou antes de alguém cumprir (1) ou (2): a partida acaba ao fim daquele turno. Pontuação direto.</li></ul></aside>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Pontuação</strong> <span class="pg">p.&nbsp;2 e 8</span></p>
+<ol><li>Pontos das peças do zoológico, nesta ordem: Animais, Prédios, Projetos, espaços livres (1 cada).</li><li>Pontos dos marcadores de conquista no tabuleiro de conservação.</li><li>2 pontos por marcador de bolsa e por marcador de conservação que sobrou.</li><li>O marcador de fim de jogo (10 ou 5), se tiver.</li><li>Mais pontos vence. Empate: vence quem tem mais peças de Animal no zoológico. Persistindo, a vitória é dividida.</li></ol></aside>
+<details class="dobra edicao"><summary>Sobre a edição: Pontos de cada peça e marcadores de bolsa</summary><aside class="call edicao"><p>Os pontos de cada peça estão impressos nela: algumas têm valor fixo, outras pontuam pelos ícones vizinhos ou do zoológico inteiro, como explica o Glossário da caixa, que este guia não usou. O manual não diz como se ganham marcadores de bolsa; só que valem 2 pontos <span class="pg">p.&nbsp;2 e 8</span>.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Espaços livres impressos</summary><aside class="call mais"><p>A ilustração dos espaços livres impressos no tabuleiro mostra o mesmo "1" das peças viradas; este guia os conta como 1 ponto cada <span class="pg">p.&nbsp;1 e 2</span>.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Primeira partida sem o 4×</summary><aside class="call mais"><p>Se vocês seguiram a sugestão da preparação, a condição (1) passa a ser pôr o terceiro marcador de conquista <span class="pg">p.&nbsp;1</span>.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Solo</summary><aside class="call mais"><p>A pontuação do manual cita 5 pontos por marcador solo virado para baixo. As regras do modo solo não estão neste manual, e este guia não as cobre <span class="pg">p.&nbsp;8</span>.</p></aside></details>
+<aside class="call atencao"><p class="rot">Atenção</p><p>Quem dispara o fim não joga outra vez. E pilha vazia antes de qualquer outra condição encerra a partida ao fim daquele turno, sem marcador de fim para ninguém <span class="pg">p.&nbsp;8</span>.</p></aside>
+<details class="dobra resolvido"><summary>Ver um exemplo resolvido</summary><aside class="call resolvido"><p>Você disparou o fim ao cobrir o tabuleiro. Suas peças valem 21 (Animais), 9 (Prédios), 7 (Projetos) e 4 espaços livres. No tabuleiro de conservação estão seus marcadores 2×, 3× e 4×. Sobraram 1 marcador de bolsa e 2 de conservação.</p>
+<p>Conta: 21 + 9 + 7 + 4 = 41 das peças; 5 + 7 + 10 = 22 das metas; 3 marcadores × 2 = 6; 10 do fim. Total: <strong>79 pontos</strong>.</p></aside></details>
+
+
+
+<details class="dobra pratica"><summary>Pratique esta etapa: exercícios com respostas</summary><aside class="call complete"><p class="rot">Tarefa · complete</p><p><strong>Complete.</strong> O jogador seguinte cobriu o próprio tabuleiro no último turno dele. Peças: 25, 6, 11 e 6 espaços livres. No tabuleiro de conservação, os marcadores 3× e 5×. Sobrou 1 marcador de conservação. Já somamos as peças: 48. Complete a conta.</p></aside>
+<aside class="call suavez"><p class="rot">Tarefa · sua vez</p><p><strong>Sua vez.</strong> O terceiro jogador não cumpriu nenhuma condição. Peças: 30, 12, 4 e 3 espaços livres. Marcadores de conquista: 2× e 3×. Sobraram 2 marcadores de bolsa. Quanto ele faz, e quem vence entre os três?</p></aside>
+<details class="respostas"><summary>Respostas da etapa 5: mostrar</summary><div><ul><li><strong>Complete:</strong> 48 + 7 + 14 = 69, mais 2 do marcador de conservação, mais 5 do marcador de fim de jogo: <strong>76 pontos</strong> <span class="pg">p.&nbsp;8</span>.</li><li><strong>Sua vez:</strong> 30 + 12 + 4 + 3 = 49; 5 + 7 = 12; 2 × 2 = 4; sem marcador de fim. Total <strong>65</strong>. Vence o primeiro, com 79 <span class="pg">p.&nbsp;8</span>.</li></ul></div></details></details>
+</section>
+<section class="bloco sec opc" id="situacoes-especiais"><h2><span class="num">7</span>Situações especiais<span class="tag-opc">Opcional</span></h2>
+<details class="dobra sec-opc"><summary>Abrir esta seção</summary><p><strong>Bônus e efeitos de peças.</strong> O manual explica a estrutura das peças e remete os bônus de colocação e as pontuações de cada peça ao Glossário e às folhas de ajuda, que não fazem parte do livro de regras. Leia o texto da peça e a folha de ajuda quando aparecer um ícone novo <span class="pg">p.&nbsp;2 e 3</span>.</p>
+<p><strong>Ganhar uma peça fora do passo 1.</strong> Efeito ou bônus que manda pegar peça da vitrine ignora o alcance <span class="pg">p.&nbsp;4</span>.</p>
+<p><strong>Dois Animais na mesma ação.</strong> Resolva tudo o que o primeiro dispara (casal, bônus, efeitos) antes de colocar o segundo. Um efeito ganho com o primeiro pode mudar o melhor lugar para o segundo <span class="pg">p.&nbsp;5</span>.</p>
+<p><strong>A pilha acaba no meio de um turno.</strong> O manual não diz o que fazer se faltar peça para pegar as 2 do topo ou para repor a vitrine. Combine com a mesa antes de jogar.</p>
+<p><strong>Mais de 6 peças na mão.</strong> O limite só vale no fim do seu turno; durante o turno, pode ter quantas quiser <span class="pg">p.&nbsp;8</span>.</p></details>
+</section>
+<section class="bloco sec opc" id="avaliacao-final"><h2><span class="num">8</span>Avaliação final<span class="tag-opc">Opcional</span></h2>
+<details class="dobra sec-opc"><summary>Abrir esta seção</summary><p>Responda sem consultar. Depois confira e veja o que reler.</p>
+<ol><li>Sua carta de Projetos está no encaixe 2, lado I. No passo 1, de quais posições pode vir a peça?</li><li>Você tem um Animal de Água de nível 3 e a carta de Água no encaixe 2, lado I. Pode jogá-lo? E com a carta de Rocha no encaixe 4?</li><li>Você quer jogar um Prédio com a carta de Projetos. Pode?</li><li>Uma seta do Animal que você quer jogar apontaria para fora do tabuleiro. O que acontece?</li><li>Você tem 1 ícone de felino e 3 marcadores de conservação. Pode apoiar a meta de felinos com o 4×? E com 0 ícones e 4 marcadores?</li><li>No fim do seu turno, você tem 8 peças na mão. O que faz?</li><li>Você cobriu o tabuleiro inteiro no fim do seu turno. O que acontece com você e com os outros?</li><li>Dois jogadores empatam com 70 pontos. Um tem 9 Animais no zoológico; o outro, 11. Quem vence?</li></ol>
+<details class="respostas"><summary>Respostas da avaliação: mostrar</summary><div><ol><li><strong>Posição 1 ou 2</strong> (etapa 2).</li><li><strong>Não</strong>, força 2 é menor que o nível 3. <strong>Também não</strong> com Rocha: o habitat tem de ser o mesmo (etapa 2).</li><li><strong>Não.</strong> Prédio entra só no passo 3, sem carta (etapas 2 e 4).</li><li>A peça <strong>não pode ir</strong> naquela casa (etapa 3).</li><li><strong>Sim</strong>: 1 + 3 = 4. <strong>Não</strong> com 0 ícones: é preciso pelo menos 1 de verdade (etapa 4).</li><li><strong>Descarta 2</strong> no passo 6, viradas para cima, e fica com 6 (etapa 4).</li><li>Você pega o <strong>marcador de 10</strong> e não joga mais; cada outro joga <strong>1 turno</strong> (etapa 5).</li><li><strong>O de 11 Animais</strong> (etapa 5).</li></ol>
+<aside class="call atencao"><p class="rot">Atenção</p><p><strong>Critério para começar a jogar.</strong> Acertou 7 ou 8? Monte a mesa e jogue, com a folha de consulta ao lado. Errou a 1 ou a 2, releia a etapa 2. Errou a 3, a 4, a 5 ou a 6, as etapas 3 e 4. Errou a 7 ou a 8, a etapa 5.</p></aside></div></details></details>
+</section>
+<section class="bloco sec ref" id="para-consultar-durante-a-partida"><h2><span class="num">9</span>Para consultar durante a partida</h2>
+<p><strong>Seu turno</strong></p>
+<ol><li>Pegue 1 peça da vitrine dentro do alcance (seta da carta de Projetos).</li><li>Use 1 carta de ação, uma das duas opções; a usada vai para o encaixe 1.</li><li>Se quiser: jogue 1 Prédio.</li><li>Se quiser: apoie 1 meta de conservação.</li><li>Se quiser: melhore cartas cujas condições cumpriu.</li><li>Manutenção: mão até 6, reponha a vitrine, confira o fim.</li></ol>
+<p><strong>Cartas de ação</strong></p>
+<div class="tab"><table><thead><tr><th>Carta</th><th>Ganhar peças</th><th>Jogar peça</th><th>No lado II</th></tr></thead><tbody><tr><td data-label="Carta">Projetos</td><td data-label="Ganhar peças">1 peça de qualquer posição da vitrine</td><td data-label="Jogar peça">1 Projeto, nível até a força</td><td data-label="No lado II">uma 2ª peça da vitrine; alcance +1</td></tr><tr><td data-label="Carta">Animais de Rocha, Floresta, Água</td><td data-label="Ganhar peças">2 peças do topo da pilha</td><td data-label="Jogar peça">1 Animal do habitat ou indefinido, nível até a força</td><td data-label="No lado II">1 ou 2 Animais, soma dos níveis até a força</td></tr></tbody></table></div>
+<p><strong>Força:</strong> número do encaixe (1 a 4); lado II, mais 1.</p>
+<p><strong>Colocação:</strong> casa vazia vizinha da entrada ou de peça; sem girar; bônus da casa na hora; setas na borda da peça pedem espaço livre (peça da mão virada ou espaço livre já no tabuleiro); seta na borda nunca aponta para peça aberta nem para fora. Casal vizinho: 1 marcador de conservação.</p>
+<p><strong>Metas:</strong> 1 por turno; 1 ícone real no mínimo; cada marcador de conservação devolvido vale 1 ícone. Marcadores de conquista: 2× (5), 3× (7), 4× (10), 5× (14).</p>
+<p><strong>Melhorias:</strong> 1 = uma meta apoiada; 2 = 2 Projetos; 3= = 3 peças ligadas com ícone do mesmo habitat; 4≠ = 4 classes de animal diferentes.</p>
+<p><strong>Fim:</strong> 4 metas apoiadas ou tabuleiro cheio: 10 pontos e os outros jogam 1 turno (quem cumprir nele: 5). Pilha vazia antes: acaba ao fim daquele turno.</p>
+<p><strong>Pontos:</strong> peças (Animais, Prédios, Projetos, espaços livres a 1); marcadores de conquista; 2 por marcador de bolsa e de conservação; marcador de fim. Empate: mais Animais.</p>
+<p><strong>Caixa em inglês?</strong> vitrine = display; pilha = pile; carta de ação = Action card; encaixe = slot; força = strength; alcance = tile range; nível = level; espaço livre = Open Area; casa vazia = empty space; bônus de colocação = placement bonus; meta de conservação = Conservation objective; marcador de conservação = Conservation marker; marcador de conquista = Conservation Achievement marker; marcador de melhoria = Upgrade marker; marcador de bolsa = Pouch marker; marcador de fim de jogo = End-of-game marker; Prédio = Building; Projeto = Project; habitat indefinido = undefined; Rocha = Rock; Floresta = Forest; Água = Water.</p>
+</section>
+<section class="bloco sec" id="fontes"><h2><span class="num">10</span>Fontes</h2>
+<ul><li>Capstone Games. <em>Sanctuary: Rulebook</em> ("Sanctuary Rules Print Capstone EN V1", 8 páginas, PDF criado em 08/12/2025). <a href="https://www.feuerland-spiele.de/fileadmin/game/Artengarten/Sanctuary_Rules_Print_Capstone_EN_V1_Web.pdf">https://www.feuerland-spiele.de/fileadmin/game/Artengarten/Sanctuary_Rules_Print_Capstone_EN_V1_Web.pdf</a>. Consultado em 31/10/2026.</li><li>Não usados por não estarem no arquivo: o Glossário das peças, as folhas de ajuda e as regras do modo solo.</li><li>Não foram procurados FAQ nem errata; o manual remete a atualizações em <a href="https://capstone-games.com/board-games/sanctuary/">https://capstone-games.com/board-games/sanctuary/</a>.</li><li>Nomes em português: tradução do Elite Boardgamers, alinhada com a nossa resenha de Santuário.</li></ul>
+</section>
+<section class="bloco"><p class="sec-intro">Quer saber se vale a pena antes de jogar? <a href="../../santuario/">Leia a nossa resenha de Santuário</a>.</p></section>
+<p class="nota-pe">Regras tiradas do manual oficial em inglês da Capstone Games (Sanctuary Rulebook, v1, 8 páginas), porque a Grok Games não publica o manual em português. Os nomes dos componentes são tradução nossa e podem ser diferentes dos impressos na caixa brasileira. As páginas citadas são as do manual em inglês.</p>
+</div></main>
+
+<!--rodape--><footer><div class="in">
+ <span>Elite Boardgamers</span><a href="../../noticias/">Notícias</a><a href="../../resenhas/">Resenhas</a><a href="../../como-jogar/">Como jogar</a><a href="../../lancamentos/">Lançamentos</a><a href="../../consulta/">Consulta Golden Geek</a><a href="../../jogos-de-tabuleiro/">Guia de jogos de tabuleiro</a><a href="../../premios/">Prêmios</a><a href="../../politica-editorial/">Política editorial</a>
+ <a href="https://www.instagram.com/eliteboardgamers/" target="_blank" rel="noopener">Instagram @eliteboardgamers</a><a href="https://chat.whatsapp.com/IgQQkJdSkzHBaEq3UwFeAo" target="_blank" rel="noopener">Grupo do WhatsApp</a>
+</div></footer>
+<div class="barra-lt fora" role="region" aria-label="Ações da página"><div class="cpw" data-texto=""><a class="cp" href="https://wa.me/" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="M8.2 10.8l7.6-4.4M8.2 13.2l7.6 4.4"/></svg><span>Compartilhar</span></a><div class="cp-menu" hidden><a class="cp-op zap-op" href="https://wa.me/" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8.4 19l-4.4 1Z"/><path d="M9.2 8.6c.3-.5.8-.5 1-.1l.7 1.5c.1.3 0 .6-.2.8l-.4.4c.5 1.1 1.4 2 2.5 2.5l.4-.4c.2-.2.5-.3.8-.2l1.5.7c.4.2.4.7-.1 1-.7.5-1.6.6-2.4.3a7 7 0 0 1-4.2-4.2c-.3-.8-.2-1.7.4-2.3Z"/></svg>WhatsApp</a><button type="button" class="cp-op"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h8"/></svg>Copiar link</button></div><p class="cp-st" role="status"></p></div><script>(()=>{const pega=c=>({u:c.dataset.url||location.href,t:c.dataset.texto||document.title});
+document.querySelectorAll('.cpw:not(.ok)').forEach(c=>{c.classList.add('ok');const b=c.querySelector('.cp');
+ const n=document.createElement('button');n.type='button';n.className=b.className;n.innerHTML=b.innerHTML;n.setAttribute('aria-expanded','false');b.replaceWith(n)});
+if(window.__cp)return;window.__cp=1;
+const celular=()=>navigator.share&&matchMedia('(pointer:coarse)').matches;
+const fecha=()=>document.querySelectorAll('.cp-menu:not([hidden])').forEach(m=>{m.hidden=true;m.parentNode.querySelector('.cp').setAttribute('aria-expanded','false')});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')fecha()});
+document.addEventListener('click',async ev=>{const c=ev.target.closest('.cpw');if(!c){fecha();return}
+ const {u,t}=pega(c),m=c.querySelector('.cp-menu'),st=c.querySelector('.cp-st'),el=ev.target.closest('.cp,.cp-op');if(!el)return;
+ if(el.classList.contains('cp')){
+  if(celular()){try{await navigator.share({title:document.title,text:t,url:u})}catch(e){}return}
+  const abre=m.hidden;fecha();if(!abre)return;
+  m.querySelector('.zap-op').href='https://wa.me/?text='+encodeURIComponent(t+' '+u);
+  const r=c.getBoundingClientRect();m.classList.toggle('sobe',!!c.closest('.barra-lt')||r.bottom>innerHeight-140);m.classList.toggle('dir',r.left>innerWidth-220);
+  m.hidden=false;el.setAttribute('aria-expanded','true');m.querySelector('.cp-op').focus();return}
+ if(el.classList.contains('zap-op')){fecha();return}
+ fecha();let ok=false;try{await navigator.clipboard.writeText(u);ok=true}catch(e){
+  const i=document.createElement('input');i.value=u;document.body.append(i);i.select();try{ok=document.execCommand('copy')}catch(e2){}i.remove()}
+ st.textContent=ok?'Link copiado!':'Não deu para copiar o link.';clearTimeout(st._t);st._t=setTimeout(()=>st.textContent='',2500);
+ c.querySelector('.cp').focus()})})()</script><a class="lt-grupo" href="https://chat.whatsapp.com/IgQQkJdSkzHBaEq3UwFeAo" target="_blank" rel="noopener" aria-label="Entrar no grupo do WhatsApp da Elite"><img src="/favicon-48.png" width="48" height="48" alt=""><span>Grupo</span></a></div><script>(()=>{const l=document.querySelector('.barra-lt');if(!l)return;const vis=new Set();
+const poe=()=>{const on=scrollY>500&&!vis.size;l.classList.toggle('fora',!on);l.inert=!on;document.body.classList.toggle('lt-on',on)};
+const io=new IntersectionObserver(es=>{es.forEach(e=>e.isIntersecting?vis.add(e.target):vis.delete(e.target));poe()});
+document.querySelectorAll('.convite,footer').forEach(x=>io.observe(x));addEventListener('scroll',poe,{passive:true});poe()})()</script>
+<script>(()=>{const g=document.querySelector('.guia-prog');if(!g)return;const t=g.querySelector('.gp-t'),b=g.querySelector('.gp-b');
+const secs=[...document.querySelectorAll('.sec[id]')],idx=document.querySelector('.indice');
+const poe=()=>{const y=scrollY+innerHeight*.3;let at=null;for(const s of secs){if(s.offsetTop<=y)at=s}
+ t.textContent=at&&scrollY>idx.offsetTop?at.querySelector('h2').textContent.replace(/^\d+/,'').trim():'Neste guia';
+ const h=document.documentElement.scrollHeight-innerHeight;b.style.transform='scaleX('+(h>0?Math.min(1,scrollY/h):0)+')'};
+addEventListener('scroll',poe,{passive:true});addEventListener('resize',poe);poe()})()</script><!--/rodape-->
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "b37421bd1ade44f1a59e46b96626bf03"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
