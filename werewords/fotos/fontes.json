@@ -1,0 +1,57 @@
+{
+ "slug": "werewords",
+ "usar_na_pagina": true,
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 1500,
+   "altura": 1500,
+   "editora": "Bezier Games",
+   "credito": "Imagem: Bezier Games",
+   "pagina": "https://beziergames.com/products/werewords",
+   "imagem": "https://cdn.shopify.com/s/files/1/0740/4855/products/WWRD_eb9b39ac-2539-4223-836f-1c79f71f8495.png",
+   "baixada_em": "2026-10-31",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/jogabilidade-1.webp",
+   "tipo": "jogabilidade",
+   "largura": 1080,
+   "altura": 864,
+   "editora": "Bezier Games",
+   "credito": "Imagem: Bezier Games",
+   "pagina": "https://beziergames.com/products/werewords-deluxe-edition",
+   "imagem": "https://cdn.shopify.com/s/files/1/0740/4855/products/MG_5855.jpg",
+   "baixada_em": "2026-10-31",
+   "aprovada": true,
+   "principal": true
+  },
+  {
+   "arquivo": "fotos/jogabilidade-2.webp",
+   "tipo": "jogabilidade",
+   "largura": 864,
+   "altura": 1080,
+   "editora": "Bezier Games",
+   "credito": "Imagem: Bezier Games",
+   "pagina": "https://beziergames.com/products/werewords-deluxe-edition",
+   "imagem": "https://cdn.shopify.com/s/files/1/0740/4855/products/MG_7798.jpg",
+   "baixada_em": "2026-10-31",
+   "aprovada": true,
+   "jogar": true
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 1600,
+   "altura": 1436,
+   "editora": "Bezier Games",
+   "credito": "Imagem: Bezier Games",
+   "pagina": "https://beziergames.com/products/werewords",
+   "imagem": "https://cdn.shopify.com/s/files/1/0740/4855/products/WWRDCardsAndTokens.jpg",
+   "baixada_em": "2026-10-31",
+   "aprovada": true,
+   "fora": true
+  }
+ ]
+}

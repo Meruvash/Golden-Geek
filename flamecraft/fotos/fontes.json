@@ -1,0 +1,58 @@
+{
+ "slug": "flamecraft",
+ "usar_na_pagina": true,
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 800,
+   "altura": 800,
+   "editora": "Lucky Duck Games",
+   "credito": "Imagem: Lucky Duck Games",
+   "pagina": "https://luckyduckgames.com/usa/game/317-1467-flamecraft-standard-edition-en",
+   "imagem": "https://shop.cdn77.luckyduckgames.com/usa/9878-large_default/flamecraft-standard-edition-en.jpg",
+   "baixada_em": "2026-10-31",
+   "aprovada": true,
+   "fora": true
+  },
+  {
+   "arquivo": "fotos/mesa-1.webp",
+   "tipo": "mesa",
+   "largura": 800,
+   "altura": 800,
+   "editora": "Lucky Duck Games",
+   "credito": "Imagem: Lucky Duck Games",
+   "pagina": "https://luckyduckgames.com/usa/game/317-1467-flamecraft-standard-edition-en",
+   "imagem": "https://shop.cdn77.luckyduckgames.com/usa/9879-large_default/flamecraft-standard-edition-en.jpg",
+   "baixada_em": "2026-10-31",
+   "aprovada": true,
+   "fora": true
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 800,
+   "altura": 800,
+   "editora": "Lucky Duck Games",
+   "credito": "Imagem: Lucky Duck Games",
+   "pagina": "https://luckyduckgames.com/usa/game/317-1467-flamecraft-standard-edition-en",
+   "imagem": "https://shop.cdn77.luckyduckgames.com/usa/14221-large_default/flamecraft-standard-edition-en.jpg",
+   "baixada_em": "2026-10-31",
+   "aprovada": true,
+   "principal": true
+  },
+  {
+   "arquivo": "fotos/componentes-2.webp",
+   "tipo": "componentes",
+   "largura": 800,
+   "altura": 800,
+   "editora": "Lucky Duck Games",
+   "credito": "Imagem: Lucky Duck Games",
+   "pagina": "https://luckyduckgames.com/usa/game/317-1467-flamecraft-standard-edition-en",
+   "imagem": "https://shop.cdn77.luckyduckgames.com/usa/14222-large_default/flamecraft-standard-edition-en.jpg",
+   "baixada_em": "2026-10-31",
+   "aprovada": true,
+   "jogar": true
+  }
+ ]
+}

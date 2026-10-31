@@ -2002,10 +2002,14 @@
      "fonte": "https://eliteboardgamers.com.br/"
     }
    ],
-   "status": "na_fila",
+   "status": "sem_fotos",
    "prioridade": 45,
    "premios_distintos": 2,
-   "carro_chefe": true
+   "carro_chefe": true,
+   "fotos": {
+    "verificado_em": "2026-10-31",
+    "obs": "Ravensburger DE (fotos da galeria até 820x600, abaixo do mínimo), Ravensburger Austrália (ravensburger.com.au: só caixas e catálogo em fundo branco); pedido: Bente.Weber@ravensburger.de (PR Manager Games)"
+   }
   },
   {
    "jogo": "7 Wonders: Architects",
@@ -2173,7 +2177,8 @@
    "status": "na_fila",
    "prioridade": 55,
    "premios_distintos": 2,
-   "carro_chefe": true
+   "carro_chefe": true,
+   "slug": "werewords"
   },
   {
    "jogo": "That’s Pretty Clever",
@@ -2802,7 +2807,8 @@
    "status": "na_fila",
    "prioridade": 54,
    "premios_distintos": 1,
-   "carro_chefe": true
+   "carro_chefe": true,
+   "slug": "brass-birmingham"
   },
   {
    "jogo": "KeyForge: Call of the Archons",
@@ -3043,7 +3049,8 @@
    "status": "na_fila",
    "prioridade": 70,
    "premios_distintos": 1,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "slug": "flamecraft"
   },
   {
    "jogo": "Splendor Duel",
@@ -3724,10 +3731,14 @@
      "fonte": "https://eliteboardgamers.com.br/"
     }
    ],
-   "status": "na_fila",
+   "status": "sem_fotos",
    "prioridade": 44,
    "premios_distintos": 1,
-   "carro_chefe": true
+   "carro_chefe": true,
+   "fotos": {
+    "verificado_em": "2026-10-31",
+    "obs": "Office Dog (officedoggames.com: página do jogo e notícia de pré-lançamento, só renders e caixas), TLAMA games (edição tcheca, só caixa), Galápagos (bloqueado); contato: formulário em officedoggames.com/contact"
+   }
   },
   {
    "jogo": "Trio",

@@ -1115,5 +1115,244 @@
    ],
    "verificado_em": "2026-10-31"
   }
+ },
+ "officedoggames.com": {
+  "nome": "Office Dog",
+  "apelidos": [
+   "Office Dog"
+  ],
+  "site": "https://www.officedoggames.com",
+  "plataforma": "wordpress",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.officedoggames.com/sitemap_index.xml"
+   ],
+   "verificado_em": "2026-10-31"
+  }
+ },
+ "ravensburger.com.au": {
+  "nome": "Ravensburger Australia",
+  "apelidos": [
+   "Ravensburger Australia"
+  ],
+  "site": "https://ravensburger.com.au",
+  "plataforma": "shopify",
+  "estrategia": "sitemap+shopify_json",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://ravensburger.com.au/sitemap.xml"
+   ],
+   "verificado_em": "2026-10-31"
+  }
+ },
+ "gf9games.com": {
+  "nome": "Gale Force Nine",
+  "apelidos": [
+   "Gale Force Nine"
+  ],
+  "site": "https://gf9games.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "bloqueado",
+  "obs": "403 em https://gf9games.com"
+ },
+ "northstargames.com": {
+  "nome": "North Star Games",
+  "apelidos": [
+   "North Star Games"
+  ],
+  "site": "https://www.northstargames.com",
+  "plataforma": "shopify",
+  "estrategia": "sitemap+shopify_json",
+  "press_kit": "https://www.northstargames.com/pages/press-content-creators",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.northstargames.com/sitemap.xml"
+   ],
+   "verificado_em": "2026-10-31"
+  }
+ },
+ "schmidtspiele.de": {
+  "nome": "Schmidt Spiele",
+  "apelidos": [
+   "Schmidt Spiele"
+  ],
+  "site": "https://www.schmidtspiele.de",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://www.b2k-media.de",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.schmidtspiele.de/sitemap.xml"
+   ],
+   "verificado_em": "2026-10-31"
+  }
+ },
+ "spiel-des-jahres.de": {
+  "nome": "Spiel des Jahres",
+  "apelidos": [
+   "Spiel des Jahres"
+  ],
+  "site": "https://www.spiel-des-jahres.de",
+  "plataforma": "wordpress",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://www.spiel-des-jahres.de/presseservice-informationen-2026/",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.spiel-des-jahres.de/sitemap_index.xml"
+   ],
+   "verificado_em": "2026-10-31"
+  }
+ },
+ "roxley.com": {
+  "nome": "Roxley Games",
+  "apelidos": [
+   "Roxley Games"
+  ],
+  "site": "https://roxley.com",
+  "plataforma": "shopify",
+  "estrategia": "sitemap+shopify_json",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://roxley.com/sitemap.xml"
+   ],
+   "verificado_em": "2026-10-31"
+  }
+ },
+ "beziergames.com": {
+  "nome": "Bezier Games",
+  "apelidos": [
+   "Bezier Games"
+  ],
+  "site": "https://beziergames.com",
+  "plataforma": "shopify",
+  "estrategia": "sitemap+shopify_json",
+  "press_kit": "https://beziergames.com/pages/press-reviewers-clubs-inquiries",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://beziergames.com/sitemap.xml"
+   ],
+   "verificado_em": "2026-10-31"
+  }
+ },
+ "mechsvsminions.com": {
+  "nome": "Riot Games",
+  "apelidos": [
+   "Riot Games"
+  ],
+  "site": "https://mechsvsminions.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "erro",
+  "obs": "robots.txt de https://mechsvsminions.com inacessível (erro de rede); tente mais tarde"
+ },
+ "ledergames.com": {
+  "nome": "Leder Games",
+  "apelidos": [
+   "Leder Games"
+  ],
+  "site": "https://ledergames.com",
+  "plataforma": "shopify",
+  "estrategia": "sitemap+shopify_json",
+  "press_kit": "https://ledergames.com/a/wsg/proxy/login",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://ledergames.com/sitemap.xml"
+   ],
+   "verificado_em": "2026-10-31"
+  }
+ },
+ "contentiongames.com": {
+  "nome": "Contention Games",
+  "apelidos": [
+   "Contention Games"
+  ],
+  "site": "https://contentiongames.com",
+  "plataforma": "woocommerce",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://contentiongames.com/wp-sitemap.xml"
+   ],
+   "verificado_em": "2026-10-31"
+  }
+ },
+ "luckyduckgames.com": {
+  "nome": "Lucky Duck Games",
+  "apelidos": [
+   "Lucky Duck Games"
+  ],
+  "site": "https://luckyduckgames.com:443",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://luckyduckgames.com/usa/1_index_sitemap.xml",
+    "https://luckyduckgames.com/polska/2_index_sitemap.xml",
+    "https://luckyduckgames.com/france/3_index_sitemap.xml",
+    "https://luckyduckgames.com/global/4_index_sitemap.xml"
+   ],
+   "verificado_em": "2026-10-31"
+  }
  }
 }

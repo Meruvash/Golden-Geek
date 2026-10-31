@@ -1,0 +1,57 @@
+{
+ "slug": "brass-birmingham",
+ "usar_na_pagina": true,
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 1000,
+   "altura": 1000,
+   "editora": "Roxley Games",
+   "credito": "Imagem: Roxley Games",
+   "pagina": "https://roxley.com/products/brass-birmingham",
+   "imagem": "https://cdn.shopify.com/s/files/1/0246/2190/8043/products/top-section-product-image-alt.png",
+   "baixada_em": "2026-10-31",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/mesa-1.webp",
+   "tipo": "mesa",
+   "largura": 1600,
+   "altura": 1068,
+   "editora": "Roxley Games",
+   "credito": "Imagem: Roxley Games",
+   "pagina": "https://roxley.com/products/brass-birmingham",
+   "imagem": "https://cdn.shopify.com/s/files/1/0246/2190/8043/t/5/assets/0f96a108ffe6--DS8-0621-45011b.jpg",
+   "baixada_em": "2026-10-31",
+   "aprovada": true,
+   "principal": true
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 1600,
+   "altura": 1067,
+   "editora": "Roxley Games",
+   "credito": "Imagem: Roxley Games",
+   "pagina": "https://roxley.com/products/brass-birmingham",
+   "imagem": "https://cdn.shopify.com/s/files/1/0246/2190/8043/t/5/assets/0f96a108ffe6--DS8-17-d12235.jpg",
+   "baixada_em": "2026-10-31",
+   "aprovada": true,
+   "jogar": true
+  },
+  {
+   "arquivo": "fotos/componentes-2.webp",
+   "tipo": "componentes",
+   "largura": 1600,
+   "altura": 1064,
+   "editora": "Roxley Games",
+   "credito": "Imagem: Roxley Games",
+   "pagina": "https://roxley.com/products/brass-birmingham",
+   "imagem": "https://cdn.shopify.com/s/files/1/0246/2190/8043/t/5/assets/0f96a108ffe6--DSC-2298-b25429.jpg",
+   "baixada_em": "2026-10-31",
+   "aprovada": true,
+   "fora": true
+  }
+ ]
+}
