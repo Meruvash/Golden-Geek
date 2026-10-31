@@ -2,7 +2,64 @@
 
 *Rascunho experimental da linha COMO JOGAR do Elite Boardgamers. Não publicado. Regras conferidas no manual da edição brasileira (Galápagos, v1.0) e no manual original em inglês (Dire Wolf Digital, 2022). As páginas citadas são as do manual brasileiro, que tem a mesma paginação do original.*
 
-> [!edicao] Este guia usa os nomes impressos na edição brasileira da Galápagos (2025): Habilidade, Espadas, Botas, Gazua, Fileira da Masmorra, Trilha de Fúria. Se a sua caixa for a original em inglês, a seção 9 traz a correspondência dos termos.
+## 4min. Comece a jogar em 4 minutos
+
+**Meta:** em 4 minutos de leitura, montar a mesa e jogar o seu primeiro turno sem abrir o manual.
+
+### A ideia do jogo
+
+Você é um ladrão: pega um **Artefato** nas catacumbas do dragão e volta à **Cripta**, de onde todos partem. O que é forte faz barulho, o **Clank!**, e cada Clank! vira um cubo seu que o dragão pode transformar em dano. Seu baralho começa fraco e melhora com as cartas adquiridas.
+
+### Monte a mesa
+
+Na ordem. O marcado *(depois)* se monta já e se usa mais tarde.
+
+1. Tabuleiro de Clank! num canto: ele tem a área de Clank! e a Trilha de Fúria. Marcador do Dragão na casa da Trilha marcada com o número de jogadores (a 3ª de baixo com 2, a 2ª com 3, a 1ª com 4).
+2. Peça Inicial, com a Cripta, no centro. 3 Ídolos de Macaco no Altar dos Macacos; uma ficha de Maestria por jogador perto da Cripta.
+3. Banco: Ouro, Gazuas, Bolsa do Dragão com 24 cubos pretos. *(depois)* 5 cubos de Fantasma, Artefatos empilhados (5 pontos em cima, 20 embaixo), segredos, prisioneiros, Mercado.
+4. Peças da masmorra *(depois)*: embaralhe as 22 das Profundezas; das 6 outras, devolva 2 à caixa sem olhar e ponha 4 em cima da pilha.
+5. Reserva: o Goblin e as pilhas de Mercenário, Explorar e Tomo Secreto.
+6. Fileira da Masmorra: embaralhe o Baralho da Masmorra e abra 6 cartas, trocando as que têm o símbolo de Ataque do Dragão na borda direita; as trocadas voltam ao baralho embaralhado. Carta com o texto Revelar: faça o que ela diz agora.
+7. Cada jogador: 30 cubos de uma cor, peão na Cripta, 3 Gazuas do Banco e as 10 cartas iniciais. Embaralhe e compre 5 (comprar, no jogo, é puxar do seu baralho).
+8. Começa o mais furtivo (ou um sorteado); a vez segue no sentido horário. Na área de Clank!, ele põe 3 cubos, o segundo 2, o terceiro 1, o quarto nenhum.
+
+### Seu primeiro turno
+
+| Carta inicial | Quantas | O que dá |
+|---|---|---|
+| Roubar | 6 | 1 Habilidade |
+| Tropeçar | 2 | +1 Clank!, nada em troca |
+| Contornar | 1 | 1 Bota |
+| Rastejar | 1 | o efeito impresso na carta |
+
+1. **Jogue as 5 cartas**, todas, em qualquer ordem, e some: **Habilidade** adquire cartas, **Espadas** combatem monstros (as cartas iniciais não dão nenhuma), **Botas** andam. Cada +1 Clank! põe na hora 1 cubo seu na área de Clank!, sem escolha.
+2. **Gaste**, se quiser, quantas vezes puder pagar:
+   - Adquirir carta da Fileira ou da Reserva: custo em Habilidade no canto inferior direito. Ela vai para o descarte, não para a mão.
+   - Andar: 1 Bota por túnel. Por enquanto, só túneis sem desenhos.
+   - Sobra se perde no fim do turno.
+3. **Feche o turno**, nesta ordem: cartas jogadas para o descarte e compre 5 (baralho vazio: embaralhe o descarte); reponha a Fileira até 6 (Revelar age na hora); carta nova com o símbolo de Ataque do Dragão faz o dragão atacar, uma vez só.
+
+> [!resolvido] **Exemplo resolvido.** Roubar, Roubar, Roubar, Tropeçar e Contornar: 3 Habilidades, 1 Bota e 1 cubo na área de Clank!. Adquire um Explorar da Reserva (custo 3), que vai para o descarte, e sai da Cripta por um túnel sem desenhos. No fim, compra as outras 5; Fileira intacta, sem ataque.
+
+> [!complete] **Complete.** O Jogador 2 tem Roubar, Roubar, Roubar, Tropeçar e Tropeçar. Quantos cubos ele põe na área de Clank!? Consegue adquirir um Explorar? Consegue sair da Cripta?
+
+> [!suavez] **Agora a sua mão.** Antes de jogar: quanto tem de Habilidade e de Botas? Quantos cubos vai pôr? Que carta cabe na sua Habilidade? Dá para sair da Cripta?
+
+**Resposta do Complete:** 2 cubos, um por Tropeçar. Com 3 Habilidades, adquire o Explorar. Não sai da Cripta: não tem Bota.
+
+### O ataque do dragão
+
+Os cubos da área de Clank! vão para a Bolsa do Dragão, e saem dela tantos quanto o número grande da casa do Marcador (não é o número de jogadores). Preto volta ao Banco; cubo da sua cor vai para o seu Contador de Pontos de Vida, 1 de dano cada. Os não sorteados continuam na Bolsa. No décimo dano, você é nocauteado.
+
+### Ainda não precisa saber
+
+Desenhos nos túneis, peças novas e salas especiais: etapa 4. Fantasma e Perigo: etapa 3. Artefato, Profundezas, fuga e pontos: etapa 5. Abra a etapa quando aparecerem.
+
+### Como a partida acaba
+
+Voltar à Cripta com um Artefato é escapar: ganha a ficha de Maestria (20 pontos). Quando todos escaparam ou foram nocauteados, vence quem tem mais pontos. Nocauteado sem Artefato ou nas Profundezas faz zero.
+
+> [!atencao] **Os três erros mais caros.** Carta adquirida vai para o descarte, não para a mão. Pegar o Artefato sobe o Marcador uma casa: ataques piores para todos, você inclusive. Nocaute nas Profundezas zera a pontuação, com qualquer Artefato.
 
 ## 0. Antes de tudo: o que é este jogo
 
