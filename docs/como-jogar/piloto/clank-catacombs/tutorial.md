@@ -4,43 +4,62 @@
 
 ## 4min. Comece a jogar em 4 minutos
 
-O essencial para a primeira partida. O resto do guia explica cada ponto com exemplos.
+**Meta:** em 4 minutos de leitura, montar a mesa e jogar o seu primeiro turno sem abrir o manual.
 
-**O objetivo.** Entre na masmorra, pegue um Artefato e volte à Cripta. Quem escapa ganha 20 pontos de bônus. No fim, vence quem soma mais pontos: Artefato, Ouro, fichas e cartas. Quem cai sem Artefato, ou cai nas Profundezas, faz zero.
+### A ideia do jogo
 
-**Monte a mesa.**
+Você é um ladrão: pega um **Artefato** nas catacumbas do dragão e volta à **Cripta**, de onde todos partem. O que é forte faz barulho, o **Clank!**, e cada Clank! vira um cubo seu que o dragão pode transformar em dano. Seu baralho começa fraco e melhora com as cartas adquiridas.
 
-1. Tabuleiro de Clank! num canto. Marcador do Dragão na casa da Trilha de Fúria com o número de jogadores.
-2. Peças: embaralhe as 22 das Profundezas; das 6 outras, tire 2 sem olhar e ponha 4 em cima da pilha.
-3. Banco: Ouro, Gazuas, 5 cubos de Fantasma, Bolsa do Dragão com os 24 cubos pretos, Artefatos empilhados (5 pontos no topo, 20 na base), segredos e prisioneiros embaralhados, Mercado.
-4. Peça Inicial no centro; Ídolos de Macaco no Altar dos Macacos; uma ficha de Maestria por jogador perto da Cripta.
-5. Reserva: Goblin, Mercenário, Explorar, Tomo Secreto. Fileira da Masmorra: 6 cartas sem o símbolo de Ataque do Dragão.
-6. Cada jogador: 30 cubos, peão na Cripta, 3 Gazuas, baralho de 10 cartas embaralhado, 5 na mão.
-7. O Jogador 1 põe 3 cubos na área de Clank!, o 2 põe 2, o 3 põe 1, o 4 nenhum.
+### Monte a mesa
 
-**Seu turno.** Jogue as 5 cartas da mão, todas, na ordem que quiser. Elas dão três recursos: **Habilidade** (adquirir cartas e usar Dispositivos), **Espadas** (combater monstros) e **Botas** (andar). Os recursos se somam, podem ser divididos e o que sobrar se perde no fim do turno. Faça as ações que quiser, quantas vezes puder pagar:
+Na ordem. O marcado *(depois)* se monta já e se usa mais tarde.
 
-- **Adquirir uma Carta:** pague o custo (canto inferior direito) em Habilidade. A carta vai para o seu descarte e volta à mão quando o baralho acabar e você embaralhar o descarte.
-- **Combater um Monstro:** pague em Espadas e ganhe a recompensa. O Goblin da Reserva pode ser combatido várias vezes.
-- **Andar:** cada túnel custa 1 Bota. Pegada: 2 Botas. Monstro: 1 de dano por ícone, que cada Espada evita. Cadeado: gaste 1 Gazua. Seta: só nesse sentido.
-- **Pegar um Artefato:** um por jogador (dois com Mochila), sem troca. A fúria do dragão sobe 1 casa.
-- **Na sala certa:** comprar no Mercado (7 de Ouro), abrir Baú, Biblioteca ou Prisão (1 Gazua), marcar um Santuário de Passagem (1 cubo, rende Ouro).
+1. Tabuleiro de Clank! num canto: ele tem a área de Clank! e a Trilha de Fúria. Marcador do Dragão na casa da Trilha marcada com o número de jogadores (a 3ª de baixo com 2, a 2ª com 3, a 1ª com 4).
+2. Peça Inicial, com a Cripta, no centro. 3 Ídolos de Macaco no Altar dos Macacos; uma ficha de Maestria por jogador perto da Cripta.
+3. Banco: Ouro, Gazuas, Bolsa do Dragão com 24 cubos pretos. *(depois)* 5 cubos de Fantasma, Artefatos empilhados (5 pontos em cima, 20 embaixo), segredos, prisioneiros, Mercado.
+4. Peças da masmorra *(depois)*: embaralhe as 22 das Profundezas; das 6 outras, devolva 2 à caixa sem olhar e ponha 4 em cima da pilha.
+5. Reserva: o Goblin e as pilhas de Mercenário, Explorar e Tomo Secreto.
+6. Fileira da Masmorra: embaralhe o Baralho da Masmorra e abra 6 cartas, trocando as que têm o símbolo de Ataque do Dragão na borda direita; as trocadas voltam ao baralho embaralhado. Carta com o texto Revelar: faça o que ela diz agora.
+7. Cada jogador: 30 cubos de uma cor, peão na Cripta, 3 Gazuas do Banco e as 10 cartas iniciais. Embaralhe e compre 5 (comprar, no jogo, é puxar do seu baralho).
+8. Começa o mais furtivo (ou um sorteado); a vez segue no sentido horário. Na área de Clank!, ele põe 3 cubos, o segundo 2, o terceiro 1, o quarto nenhum.
 
-**O barulho.** "+1 Clank!" põe um cubo seu na área de Clank!. "-1 Clank!" tira um. Esses cubos são o seu risco: no ataque, eles vão para a bolsa do dragão.
+### Seu primeiro turno
 
-**A borda do mapa.** Atravessar um túnel que termina no vazio revela uma peça nova: encaixe-a ali, girando como quiser. As quatro primeiras são seguras; depois começam as Profundezas, onde ficam os Artefatos mais valiosos.
+| Carta inicial | Quantas | O que dá |
+|---|---|---|
+| Roubar | 6 | 1 Habilidade |
+| Tropeçar | 2 | +1 Clank!, nada em troca |
+| Contornar | 1 | 1 Bota |
+| Rastejar | 1 | o efeito impresso na carta |
 
-**Fim do turno, sempre nesta ordem.**
+1. **Jogue as 5 cartas**, todas, em qualquer ordem, e some: **Habilidade** adquire cartas, **Espadas** combatem monstros (as cartas iniciais não dão nenhuma), **Botas** andam. Cada +1 Clank! põe na hora 1 cubo seu na área de Clank!, sem escolha.
+2. **Gaste**, se quiser, quantas vezes puder pagar:
+   - Adquirir carta da Fileira ou da Reserva: custo em Habilidade no canto inferior direito. Ela vai para o descarte, não para a mão.
+   - Andar: 1 Bota por túnel. Por enquanto, só túneis sem desenhos.
+   - Sobra se perde no fim do turno.
+3. **Feche o turno**, nesta ordem: cartas jogadas para o descarte e compre 5 (baralho vazio: embaralhe o descarte); reponha a Fileira até 6 (Revelar age na hora); carta nova com o símbolo de Ataque do Dragão faz o dragão atacar, uma vez só.
 
-1. Cartas jogadas para o descarte; compre 5 novas.
-2. Reponha a Fileira da Masmorra até 6 cartas. Carta nova com texto Revelar: execute-o na hora.
-3. Se alguma carta nova tiver o símbolo de Ataque do Dragão, ele ataca uma vez: todos os cubos da área de Clank! vão para a bolsa e saem tantos quanto a Trilha de Fúria mostra, mais 1 por carta de Perigo. Cubo preto não fere. Cubo colorido é 1 de dano ao dono. Fantasma fere todos.
+> [!resolvido] **Exemplo resolvido.** Roubar, Roubar, Roubar, Tropeçar e Contornar: 3 Habilidades, 1 Bota e 1 cubo na área de Clank!. Adquire um Explorar da Reserva (custo 3), que vai para o descarte, e sai da Cripta por um túnel sem desenhos. No fim, compra as outras 5; Fileira intacta, sem ataque.
 
-**Vida.** O Contador de Pontos de Vida tem 10 casas. No décimo dano, você está nocauteado.
+> [!complete] **Complete.** O Jogador 2 tem Roubar, Roubar, Roubar, Tropeçar e Tropeçar. Quantos cubos ele põe na área de Clank!? Consegue adquirir um Explorar? Consegue sair da Cripta?
 
-**O fim.** Escapar é chegar à Cripta com um Artefato: você sai do jogo e pega a ficha de Maestria. Quem saiu passa, no próprio turno, a sortear 4 cubos da bolsa contra quem ficou (6 com 2 jogadores). A partida acaba quando todos escaparam ou caíram. Conte Artefato, fichas, Ouro e pontos das cartas. Empate: vence o Artefato mais valioso.
+> [!suavez] **Agora a sua mão.** Antes de jogar: quanto tem de Habilidade e de Botas? Quantos cubos vai pôr? Que carta cabe na sua Habilidade? Dá para sair da Cripta?
 
-> [!atencao] **Os três erros mais caros.** Adquirir carta não a põe na mão: ela vai para o descarte. Pegar o Artefato deixa o dragão mais forte para todos, inclusive você. Cair nas Profundezas zera a pontuação, mesmo com o melhor Artefato do jogo.
+**Resposta do Complete:** 2 cubos, um por Tropeçar. Com 3 Habilidades, adquire o Explorar. Não sai da Cripta: não tem Bota.
+
+### O ataque do dragão
+
+Os cubos da área de Clank! vão para a Bolsa do Dragão, e saem dela tantos quanto o número grande da casa do Marcador (não é o número de jogadores). Preto volta ao Banco; cubo da sua cor vai para o seu Contador de Pontos de Vida, 1 de dano cada. Os não sorteados continuam na Bolsa. No décimo dano, você é nocauteado.
+
+### Ainda não precisa saber
+
+Desenhos nos túneis, peças novas e salas especiais: etapa 4. Fantasma e Perigo: etapa 3. Artefato, Profundezas, fuga e pontos: etapa 5. Abra a etapa quando aparecerem.
+
+### Como a partida acaba
+
+Voltar à Cripta com um Artefato é escapar: ganha a ficha de Maestria (20 pontos). Quando todos escaparam ou foram nocauteados, vence quem tem mais pontos. Nocauteado sem Artefato ou nas Profundezas faz zero.
+
+> [!atencao] **Os três erros mais caros.** Carta adquirida vai para o descarte, não para a mão. Pegar o Artefato sobe o Marcador uma casa: ataques piores para todos, você inclusive. Nocaute nas Profundezas zera a pontuação, com qualquer Artefato.
 
 ## 0. Antes de tudo: o que é este jogo
 
