@@ -52,20 +52,23 @@ html{scroll-padding-top:calc(var(--nav-h,45px) + 56px)}
 .indice a{display:flex;gap:10px;align-items:baseline;min-height:40px;padding:9px 0}
 .indice a::before{content:counter(it);flex:none;width:1.6em;font-size:.8rem;font-weight:800;color:var(--ouro-ink);font-variant-numeric:tabular-nums}
 .nota-pe{color:var(--muted);font-size:.85rem;padding:4px 2px 0}
+/* endereços longos (fontes) quebram em vez de alargar a página */
+.sec a,.sec li,.sec p{overflow-wrap:anywhere}
 /* títulos das etapas com mais respiro */
 .sec{scroll-margin-top:calc(var(--nav-h,45px) + 56px)}
 @media (min-width:601px){.sec{padding:24px 28px}}
-/* tabelas: fichas no celular */
+/* tabelas: fichas no celular (menos as grades de células curtas, que ficam tabela e centralizadas) */
+.tab table.grade th,.tab table.grade td{text-align:center;padding:7px 6px}
 @media (max-width:600px){
- .tab{border:0;background:none;overflow:visible;border-radius:0}
- .tab table,.tab tbody,.tab tr,.tab td{display:block}
- .tab thead{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
- .tab tr{background:#fff;border:1px solid var(--paper-line);border-radius:8px;padding:10px 12px;margin-bottom:8px}
- .tab td{border:0;padding:3px 0;display:grid;grid-template-columns:6.5em minmax(0,1fr);gap:8px}
- .tab td::before{content:attr(data-label);font-size:.7rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--paper-muted);padding-top:3px}
- .tab td:empty{display:none}
- .tab td:first-child{display:block;font-weight:800;color:var(--paper-ink);padding-bottom:4px}
- .tab td:first-child::before{display:none}
+ .tab:not(:has(.grade)){border:0;background:none;overflow:visible;border-radius:0}
+ .tab:not(:has(.grade)) table,.tab:not(:has(.grade)) tbody,.tab:not(:has(.grade)) tr,.tab:not(:has(.grade)) td{display:block}
+ .tab:not(:has(.grade)) thead{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+ .tab:not(:has(.grade)) tr{background:#fff;border:1px solid var(--paper-line);border-radius:8px;padding:10px 12px;margin-bottom:8px}
+ .tab:not(:has(.grade)) td{border:0;padding:3px 0;display:grid;grid-template-columns:6.5em minmax(0,1fr);gap:8px}
+ .tab:not(:has(.grade)) td::before{content:attr(data-label);font-size:.7rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--paper-muted);padding-top:3px}
+ .tab:not(:has(.grade)) td:empty{display:none}
+ .tab:not(:has(.grade)) td:first-child{display:block;font-weight:800;color:var(--paper-ink);padding-bottom:4px}
+ .tab:not(:has(.grade)) td:first-child::before{display:none}
 }
 """
 
@@ -81,8 +84,12 @@ def rotular_tabelas(html):
     """Põe em cada célula o nome da coluna (data-label), para a ficha do celular."""
     def tabela(m):
         t = m.group(0)
-        if "data-label" in t:
+        if "data-label" in t or 'class="grade"' in t:
             return t
+        # grade (parede do Azul, linha de valores): células curtas continuam tabela no celular
+        celulas = [re.sub(r"<[^>]+>", "", c).strip() for c in re.findall(r"<td[^>]*>(.*?)</td>", t, re.S)]
+        if celulas and max(len(c) for c in celulas) <= 4:
+            return t.replace("<table>", '<table class="grade">', 1)
         cab = [re.sub(r"<[^>]+>", "", h).replace('"', "") for h in re.findall(r"<th[^>]*>(.*?)</th>", t, re.S)]
         def linha(r):
             n = iter(range(10 ** 6))

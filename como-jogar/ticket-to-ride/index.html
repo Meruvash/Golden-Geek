@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Como jogar Ticket to Ride: regras passo a passo | Elite Boardgamers</title>
+<meta name="description" content="Regras de Ticket to Ride passo a passo, conferidas no manual da Galápagos: preparação, as três ações, Locomotivas, Bilhetes de Destino e contagem.">
+<link rel="canonical" href="https://eliteboardgamers.com.br/como-jogar/ticket-to-ride/">
+<meta name="robots" content="max-image-preview:large">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Como jogar Ticket to Ride">
+<meta property="og:description" content="Regras de Ticket to Ride passo a passo, conferidas no manual da Galápagos: preparação, as três ações, Locomotivas, Bilhetes de Destino e contagem.">
+<meta property="og:url" content="https://eliteboardgamers.com.br/como-jogar/ticket-to-ride/">
+<meta property="og:image" content="https://eliteboardgamers.com.br/marca/banner-1200.webp">
+<link rel="icon" href="../../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32.png">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<link rel="preload" href="../../fontes/public-sans.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:"Public Sans";src:url(../../fontes/public-sans.woff2) format("woff2");font-weight:400 800;font-style:normal;font-display:swap}
+@font-face{font-family:"Public Sans";src:url(../../fontes/public-sans-italic.woff2) format("woff2");font-weight:400;font-style:italic;font-display:swap}
+/* Layout: o mesmo da página de lição do Discipulado (O Paladino): fundo preto (pedido do editor: preto no lugar do azul), faixa do banner, navegação fixa, coluna central de 760px com cartões claros de papel, filete dourado sobre os títulos de seção. Visual único (o site não tem tema claro). */
+:root{
+  color-scheme:dark;
+  --ground:#000; --panel:#0f1115; --panel2:#171a20; --line:#262a32; --line2:#2e333c;
+  --ink:#eceff3; --muted:#a1a9b5; --gold:#e3b23c;
+  --paper:#f4f5f7; --paper-ink:#14171c; --paper-muted:#5a6270; --paper-line:#dde1e7; --paper-text:#3a414c;
+  --link:#1f5fae; --ok:#1b7a45; --ok-bg:#e3f4ea; --cinza-bg:#eceef1; --ouro-bg:#fff4d1; --ouro-ink:#8a5f00;
+  --erro:#b3263e; --faixa-ouro:#1d1606; --ouro-claro:#f1ead6; --check:#4cc38a;
+  --f-body:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box}
+html{scroll-padding-top:64px}
+body{margin:0;background:var(--ground);color:var(--ink);font:16px/1.55 var(--f-body)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--panel)}
+h1,h2,h3,p,ul,ol,figure{margin:0}
+a{color:var(--link);text-underline-offset:.18em}
+::selection{background:var(--gold);color:#000}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px;border-radius:3px}
+.gut{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+
+.skip{position:absolute;left:-999px}.skip:focus{left:12px;top:8px;z-index:40;background:var(--gold);color:#000;padding:6px 10px}
+.aviso{background:var(--gold);color:#000;font-weight:800;font-size:.8rem;text-align:center}
+.aviso .gut{padding-block:6px}
+.topo{background:var(--ground)}
+.topo img{display:block;width:100%;max-width:640px;height:auto;margin:0 auto}
+.nav{background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line);position:sticky;top:env(safe-area-inset-top,0px);z-index:20}
+.nav ul{max-width:1120px;margin:0 auto;list-style:none;display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;padding-block:0}
+.nav a{display:block;padding:11px 12px;white-space:nowrap;color:var(--ink);text-decoration:none;font-weight:700;font-size:.92rem;border-bottom:3px solid transparent}
+.nav a[aria-current]{color:var(--gold);border-bottom-color:var(--gold)}
+
+.nota{max-width:760px;margin:0 auto;padding-block:20px 56px;display:grid;gap:16px}
+.trilha ol{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:4px 8px;font-size:.85rem;color:var(--muted)}
+.trilha li+li::before{content:"›";margin-right:8px;color:var(--muted)}
+.trilha a{color:var(--gold);font-weight:700;text-decoration:none}
+
+.bloco{background:var(--paper);color:var(--paper-ink);border-radius:10px;padding:20px;min-width:0;display:grid;gap:14px}
+.num-l{font-size:.8rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--paper-muted)}
+h1{font-size:clamp(1.7rem,5vw,2.4rem);line-height:1.12;font-weight:800;letter-spacing:-.015em;text-wrap:balance}
+.meta-e{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:.88rem;color:var(--paper-muted)}
+.meta{font-family:var(--mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.05em;color:var(--paper-muted)}
+
+.r1{background:var(--panel2);color:var(--ink);border:1px solid var(--line2);border-left:4px solid var(--gold)}
+.kick{font-size:.75rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--gold)}
+.r1 .resp{font-size:1.12rem;font-weight:600;line-height:1.45}
+.r1 ul{list-style:none;padding:0;display:grid;gap:8px}
+.r1 li{display:flex;gap:8px;align-items:flex-start;color:#dfe4ea}
+.r1 li svg{flex:none;width:20px;height:20px;margin-top:2px;stroke:var(--check);fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.r1 .pe{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:.88rem;color:var(--muted)}
+.r1 .pe b{color:var(--ink)}
+.legenda{display:flex;flex-wrap:wrap;gap:8px}
+.legenda span{font-size:.74rem;font-weight:800;letter-spacing:.04em;border-radius:999px;padding:3px 10px 3px 14px;background:var(--paper);color:var(--paper-ink)}
+.legenda .l1{box-shadow:inset 5px 0 0 var(--paper-ink)}.legenda .l2{box-shadow:inset 5px 0 0 var(--ok)}
+.legenda .l3{box-shadow:inset 5px 0 0 var(--gold)}.legenda .l4{box-shadow:inset 5px 0 0 var(--ouro-ink)}
+
+.indice h2,.sec>h2{font-size:1.15rem;font-weight:800;line-height:1.3;color:var(--paper-ink);border-top:3px solid var(--gold);padding-top:12px;text-wrap:balance;display:flex;gap:10px;align-items:baseline}
+.indice ol{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:2px 16px}
+.indice a{display:block;padding:6px 0;color:var(--paper-ink);text-decoration:none;font-weight:600;font-size:.94rem;border-bottom:1px solid var(--paper-line)}
+.indice a:hover{color:var(--link)}
+
+.sec>h2 .num{display:none}
+.sec h3{font-size:1.05rem;font-weight:800;margin-top:6px}
+.sec p{color:var(--paper-text);max-width:66ch}
+.sec ul,.sec ol{padding-left:1.3em;display:grid;gap:6px;color:var(--paper-text)}
+.sec ul{list-style:disc}
+.sec li::marker{color:var(--ouro-ink);font-weight:800}
+strong{font-weight:700;color:var(--paper-ink)}
+.pg{white-space:nowrap;font-size:.76em;color:var(--paper-muted);border:1px solid var(--paper-line);background:#fff;border-radius:4px;padding:0 5px;vertical-align:.08em;font-variant-numeric:tabular-nums}
+code{font-size:.9em;background:#fff;padding:1px 5px;border-radius:4px}
+
+.tab{overflow-x:auto;border:1px solid var(--paper-line);border-radius:8px;background:#fff}
+table{border-collapse:collapse;width:100%;font-size:.92rem;color:var(--paper-text)}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--paper-line);vertical-align:top}
+th{font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--paper-muted);background:var(--paper)}
+tr:last-child td{border-bottom:0}
+
+.call{border-radius:8px;padding:14px 16px;display:grid;gap:10px;min-width:0;background:#fff;border:1px solid var(--paper-line);border-left:4px solid var(--paper-muted)}
+.call .rot{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;font-weight:800;color:var(--paper-muted)}
+.call.entender{background:var(--cinza-bg);border-color:#d5d9df;border-left-color:var(--paper-ink)}
+.call.entender .rot{color:var(--paper-ink)}
+.call.passos{border-left-color:var(--ok)}
+.call.passos .rot{color:var(--ok)}
+.call.resolvido{background:var(--panel2);border-color:var(--line2);border-left-color:var(--gold)}
+.call.resolvido .rot{color:var(--gold)}
+.call.resolvido p,.call.resolvido li{color:#dfe4ea}
+.call.resolvido strong{color:#fff}
+.call.resolvido .pg{color:#c8ccd2;border-color:var(--line2)}
+.call.complete{border-left:4px dashed var(--gold)}
+.call.complete .rot{color:var(--ouro-ink)}
+.call.suavez{background:var(--faixa-ouro);border-color:#3a2e10;border-left-color:var(--gold)}
+.call.suavez .rot{color:var(--gold)}
+.call.suavez p,.call.suavez li{color:var(--ouro-claro)}
+.call.suavez strong{color:#fff}
+.call.suavez li::marker{color:var(--gold)}
+.call.suavez .pg{color:var(--ouro-claro);border-color:#3a2e10}
+.call.treino{background:var(--ouro-bg);border-color:#f0dfa6;border-left-color:var(--ouro-ink)}
+.call.treino .rot{color:var(--ouro-ink)}
+.call.atencao{border-left-color:var(--erro)}
+.call.atencao .rot{color:var(--erro)}
+.call.edicao{background:var(--paper);border-left-color:var(--paper-ink)}
+.call.edicao .rot{color:var(--paper-ink)}
+.call.dica{background:var(--ouro-bg);border-left-color:var(--gold)}
+.call.dica .rot{color:var(--ouro-ink)}
+.call ol,.call ul{padding-left:1.3em}
+.call .pg{background:transparent}
+
+.respostas{border:1px solid var(--paper-line);border-left:4px solid var(--ok);border-radius:8px;background:#fff}
+.respostas summary{cursor:pointer;padding:12px 16px;font-weight:800;color:var(--ok);list-style:none;min-height:44px;display:flex;align-items:center}
+.respostas summary::-webkit-details-marker{display:none}
+.respostas summary::before{content:"+";display:inline-grid;place-items:center;width:1.4em;height:1.4em;margin-right:8px;border-radius:50%;background:var(--ok-bg)}
+.respostas[open] summary::before{content:"−"}
+.respostas>div{padding:0 16px 16px;display:grid;gap:12px}
+
+.sec.rapido{outline:2px solid var(--gold);outline-offset:-2px}
+.sec.rapido>h2::after{content:"4 min de leitura";margin-left:auto;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:#000;background:var(--gold);border-radius:3px;padding:3px 8px;white-space:nowrap}
+.sec.rapido>p:first-of-type{font-size:1.02rem}
+.sec.ref{outline:2px solid var(--gold);outline-offset:-2px}
+.sec.ref>h2::after{content:"Leve para a mesa";margin-left:auto;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:#000;background:var(--gold);border-radius:3px;padding:3px 8px;white-space:nowrap}
+
+footer{border-top:1px solid var(--line);background:var(--panel);color:var(--muted);font-size:.85rem}
+footer .in{max-width:760px;margin:0 auto;padding-block:20px}
+@media (max-width:600px){
+  .bloco{padding:16px;border-radius:8px}
+  .sec.ref>h2::after{display:none}
+}
+/* essencial x opcional: o que não é essencial abre com um toque */
+.dobra{border:1px solid var(--paper-line);border-radius:8px;background:#fff}
+.dobra>summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:10px;padding:11px 14px;font-weight:700;font-size:.92rem;color:var(--paper-ink);min-height:44px}
+.dobra>summary::-webkit-details-marker{display:none}
+.dobra>summary::before{content:"+";flex:none;display:grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--paper-line);color:var(--paper-ink);font-weight:800;line-height:1}
+.dobra[open]>summary::before{content:"−"}
+.dobra>.call,.dobra>details,.dobra>aside{margin:0 12px 12px}
+.dobra.pratica>summary{color:var(--ouro-ink)}
+.dobra.pratica[open]{display:grid;gap:10px;padding-bottom:12px}
+.dobra.pratica>*:not(summary){margin:0 12px}
+.dobra.sec-opc{border-style:dashed}
+.dobra.sec-opc[open]{padding-bottom:12px}
+.dobra.sec-opc>*:not(summary){margin-left:14px;margin-right:14px}
+.tag-opc{margin-left:10px;font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;font-weight:800;color:var(--paper-muted);border:1px solid var(--paper-line);border-radius:3px;padding:2px 6px;vertical-align:middle}
+.legenda-f{font-size:.88rem;color:var(--muted)}.legenda-f b{color:var(--ink)}
+.mais-i{display:inline-grid;place-items:center;width:18px;height:18px;border-radius:50%;background:var(--paper-line);color:var(--paper-ink);font-weight:800;font-size:.8rem}
+.indice small{color:var(--muted);font-weight:400}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://eliteboardgamers.com.br/#organizacao", "name": "Elite Boardgamers", "url": "https://eliteboardgamers.com.br/", "logo": {"@type": "ImageObject", "url": "https://eliteboardgamers.com.br/marca/elite-boardgamers.webp", "width": 318, "height": 254}, "sameAs": ["https://www.instagram.com/eliteboardgamers/"]}, {"@type": "Article", "@id": "https://eliteboardgamers.com.br/como-jogar/ticket-to-ride/#artigo", "mainEntityOfPage": "https://eliteboardgamers.com.br/como-jogar/ticket-to-ride/", "headline": "Como jogar Ticket to Ride", "description": "Regras de Ticket to Ride passo a passo, conferidas no manual da Galápagos: preparação, as três ações, Locomotivas, Bilhetes de Destino e contagem.", "image": ["https://eliteboardgamers.com.br/marca/banner-1200.webp"], "datePublished": "2026-10-31", "author": {"@type": "Organization", "name": "Redação Elite Boardgamers", "url": "https://eliteboardgamers.com.br/politica-editorial/"}, "publisher": {"@id": "https://eliteboardgamers.com.br/#organizacao"}, "inLanguage": "pt-BR"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Início", "item": "https://eliteboardgamers.com.br/"}, {"@type": "ListItem", "position": 2, "name": "Como jogar", "item": "https://eliteboardgamers.com.br/como-jogar/"}, {"@type": "ListItem", "position": 3, "name": "Como jogar Ticket to Ride", "item": "https://eliteboardgamers.com.br/como-jogar/ticket-to-ride/"}]}]}</script>
+<style id="moldura">.busca-btn{display:grid;place-items:center;flex:none;width:44px;height:44px;padding:0;border:1px solid #3a3f48;border-radius:8px;background:none;color:#e9ecf1;cursor:pointer}.busca-btn:hover{border-color:#e3b23c;color:#e3b23c}.busca-btn[hidden]{display:none}footer .in a{display:inline-flex;align-items:center;min-height:24px}.cpw{position:relative;display:inline-block}.cp{display:inline-flex;align-items:center;justify-content:center;gap:8px;box-sizing:border-box;line-height:1.2;min-height:44px;margin:0;padding:10px 20px;border-radius:999px;border:0;background:#157a43;color:#fff;font:inherit;font-size:.95rem;font-weight:800;text-decoration:none;cursor:pointer}.cp:hover{background:#11683a;color:#fff}.cp .ic{width:19px;height:19px}.cp[hidden]{display:none}.cpw.mini .cp{min-height:40px;padding:8px 14px;font-size:.88rem}.cp-menu{position:absolute;z-index:30;top:calc(100% + 8px);left:0;min-width:200px;display:grid;gap:2px;padding:6px;border-radius:12px;background:#fff;border:1px solid #dde1e7;box-shadow:0 10px 30px rgba(0,0,0,.25)}.cp-menu[hidden]{display:none}.cp-menu.sobe{top:auto;bottom:calc(100% + 8px)}.cp-menu.dir{left:auto;right:0}.cp-op{display:flex;align-items:center;gap:10px;min-height:44px;padding:8px 12px;border:0;border-radius:8px;background:none;color:#14171c;font:inherit;font-size:.95rem;font-weight:700;text-align:left;text-decoration:none;cursor:pointer}.cp-op:hover,.cp-op:focus-visible{background:#eef1f4;color:#14171c}.cp-op .ic{width:20px;height:20px}.cp-op.zap-op .ic{color:#157a43}.cp-st{position:absolute;z-index:30;top:calc(100% + 8px);left:0;white-space:nowrap;margin:0;padding:6px 12px;border-radius:8px;background:#14171c;color:#fff;font-size:.85rem;font-weight:700}.cp-st:empty{display:none}.barra-lt .cp-st{top:auto;bottom:calc(100% + 8px)}.convite{display:flex;align-items:center;justify-content:space-between;gap:12px 20px;flex-wrap:wrap}.convite .cv-t{margin:0;font-weight:800;font-size:1.1rem}.convite .cv-s{margin:2px 0 0;font-size:.92rem;opacity:.8}.barra-lt>*{flex:none}.barra-lt{width:max-content;max-width:calc(100vw - 12px);box-sizing:border-box;position:fixed;z-index:25;left:50%;bottom:calc(12px + env(safe-area-inset-bottom));display:flex;align-items:center;gap:4px;padding:5px;border-radius:999px;background:#14171c;border:1px solid #3a3f48;box-shadow:0 8px 24px rgba(0,0,0,.35);transform:translate(-50%,0);transition:transform .25s ease,opacity .25s ease}.barra-lt.fora{transform:translate(-50%,calc(100% + 24px));opacity:0;pointer-events:none}.lt-b{display:inline-flex;align-items:center;gap:7px;min-height:44px;padding:8px 14px;border:0;border-radius:999px;background:none;color:#e9ecf1;font:inherit;font-size:.9rem;font-weight:700;text-decoration:none;cursor:pointer}.lt-b:hover{background:#262a31;color:#fff}.lt-b .ic{width:20px;height:20px}.barra-lt .lt-b.curtir{background:none;border:0;color:#e9ecf1;padding:8px 14px}.barra-lt .lt-b.curtir[aria-pressed=true]{color:#ff6b81;background:none}@media (max-width:479px){.lt-b span{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}}.lt-b.curtir[aria-pressed=true] .ic{fill:currentColor}.lt-grupo{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:44px;padding:0 14px 0 6px;border-radius:999px;background:#e3b23c;color:#14171c;font-size:.9rem;font-weight:800;text-decoration:none;white-space:nowrap}.lt-grupo:hover{background:#f0c44f;color:#14171c}.lt-grupo img{width:32px;height:32px;border-radius:8px;display:block}@media (max-width:479px){.barra-lt{gap:2px}.barra-lt .lt-b{padding:8px 10px}.barra-lt .cp{padding:8px 12px}.lt-grupo{padding:0 12px 0 6px}}@media (max-width:399px){.barra-lt:has(.curtir) .cp span{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}.barra-lt:has(.curtir) .cp{padding:8px 14px}}.barra-lt .cp{min-height:44px;padding:8px 16px;font-size:.9rem}body.lt-on .voltar-topo,body.lt-on button.sobe{bottom:calc(76px + env(safe-area-inset-bottom))}@media print{.barra-lt{display:none}}.interacoes{display:grid;gap:14px}.interacoes[hidden]{display:none}.curtir-l{display:flex;align-items:center;gap:12px;flex-wrap:wrap}.curtir{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:8px 18px;border-radius:999px;border:2px solid #b3263e;background:#fff;color:#b3263e;font:inherit;font-weight:800;cursor:pointer}.curtir .ic{width:22px;height:22px}.curtir[aria-pressed=true]{background:#b3263e;color:#fff}.curtir[aria-pressed=true] .ic{fill:currentColor}.curtir .n{font-variant-numeric:tabular-nums}.curtir-dica{font-size:.9rem;color:#5a6270}.interacoes h2{margin:4px 0 0}.coms{list-style:none;margin:0;padding:0;display:grid;gap:10px}.coms li{background:#fff;border:1px solid #dde1e7;border-radius:10px;padding:12px 14px}.com-quem{margin:0;font-size:.92rem}.com-quem time{color:#5a6270;font-size:.8rem;margin-left:6px}.com-txt{margin:4px 0 0;white-space:pre-wrap;color:#14171c}.coms-vazio{margin:0;color:#5a6270}.com-form{display:grid;gap:10px;border-top:1px solid #dde1e7;padding-top:14px}.com-form label{display:grid;gap:4px;font-weight:700;font-size:.9rem;color:#14171c}.com-form small{font-weight:600;color:#5a6270}.com-form input,.com-form textarea{font:inherit;font-size:16px;font-weight:400;padding:10px 12px;border:1px solid #c8cdd5;border-radius:8px;background:#fff;color:#14171c}.com-form textarea{resize:vertical;min-height:110px}.com-form .isca{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}.com-form button{justify-self:start;min-height:44px;padding:10px 20px;border-radius:999px;border:0;background:#14171c;color:#fff;font:inherit;font-weight:800;cursor:pointer}.com-form button:disabled{opacity:.6}.com-aviso{margin:0;font-size:.82rem;color:#5a6270}.com-aviso a{color:#1f5fae}.com-st{margin:0;font-weight:700;font-size:.92rem}.com-st:empty{display:none}.com-st.ok{color:#1b7a45}.com-st.erro{color:#a3223a}:where(html){scroll-padding-top:calc(var(--nav-h,49px) + 12px)}.nav{position:sticky;top:0;z-index:20}body .abas,body .barra-f,body .ctrl{top:var(--nav-h,49px)}.marca img.logo{width:auto;height:48px;border-radius:0}@media (max-width:480px){.marca img.logo{height:40px}}.nav .casa{display:flex;align-items:center;justify-content:center;min-width:44px}.nav .casa .ic{width:20px;height:20px}@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.card:hover,.jogo:hover .capa img,.jogo:active .capa,.zap:active,.post-btn:active,.btn-filtro:hover,.btn-filtro:active,.ver:active{transform:none!important}}.in{max-width:1180px;margin:0 auto;padding-left:16px;padding-right:16px}.ic{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round;flex:none}.bar{border-bottom:1px solid var(--line);background:#000;color:var(--ink)}.bar .in{display:flex;align-items:center;gap:12px;padding-top:8px;padding-bottom:8px}.bar a{color:inherit;text-decoration:none;font-weight:600;font-size:.95rem}.marca img{display:block;width:84px;border-radius:6px}.bar .ig{margin-left:auto;display:flex;align-items:center;gap:6px;padding:6px 10px;border-radius:6px}.bar .ig:hover{color:var(--gold)}.bar .zap-mini{display:flex;align-items:center;gap:6px;padding:6px 10px;border-radius:6px;background:#157a43;color:#fff}.nav ul{padding-left:16px;padding-right:16px}.nav ul li{list-style:none}@media (max-width:700px){.bar .ig span,.bar .zap-mini span{display:none}}footer{font-size:.9rem}footer .in{max-width:1180px;display:flex;flex-wrap:wrap;gap:6px 16px;padding-top:20px;padding-bottom:28px}footer a{color:var(--muted);text-decoration:none}footer a:hover{color:var(--gold)}</style>
+<style id="guia-extra">
+/* faixa de progresso, presa logo abaixo do menu */
+.guia-prog{position:sticky;top:var(--nav-h,45px);z-index:15;background:var(--panel);border-bottom:1px solid var(--line)}
+.guia-prog a{display:flex;align-items:center;gap:10px;max-width:760px;margin:0 auto;padding:9px 16px;color:var(--ink);text-decoration:none;font-size:.86rem;font-weight:700;min-height:40px}
+.guia-prog .gp-r{flex:none;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--gold)}
+.guia-prog .gp-t{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.guia-prog .gp-i{margin-left:auto;flex:none;font-size:.78rem;color:var(--muted);font-weight:600}
+.guia-prog .gp-b{position:absolute;left:0;right:0;bottom:-1px;height:3px;background:var(--gold);transform-origin:0 50%;transform:scaleX(0)}
+html{scroll-padding-top:calc(var(--nav-h,45px) + 56px)}
+/* legenda dos blocos: pontos de cor em vez de pílulas */
+.legenda{gap:6px 16px}
+.legenda span{position:relative;background:none;color:var(--muted);box-shadow:none!important;padding:0 0 0 16px;font-size:.8rem;letter-spacing:0}
+.legenda span::before{content:"";position:absolute;left:0;top:.32em;width:10px;height:10px;border-radius:3px;background:var(--paper)}
+.legenda .l2::before{background:var(--ok)}.legenda .l3::before{background:var(--gold)}.legenda .l4::before{background:var(--ouro-ink)}
+/* índice numerado */
+.indice ol{counter-reset:it}.indice li{counter-increment:it}
+.indice a{display:flex;gap:10px;align-items:baseline;min-height:40px;padding:9px 0}
+.indice a::before{content:counter(it);flex:none;width:1.6em;font-size:.8rem;font-weight:800;color:var(--ouro-ink);font-variant-numeric:tabular-nums}
+.nota-pe{color:var(--muted);font-size:.85rem;padding:4px 2px 0}
+/* endereços longos (fontes) quebram em vez de alargar a página */
+.sec a,.sec li,.sec p{overflow-wrap:anywhere}
+/* títulos das etapas com mais respiro */
+.sec{scroll-margin-top:calc(var(--nav-h,45px) + 56px)}
+@media (min-width:601px){.sec{padding:24px 28px}}
+/* tabelas: fichas no celular (menos as grades de células curtas, que ficam tabela e centralizadas) */
+.tab table.grade th,.tab table.grade td{text-align:center;padding:7px 6px}
+@media (max-width:600px){
+ .tab:not(:has(.grade)){border:0;background:none;overflow:visible;border-radius:0}
+ .tab:not(:has(.grade)) table,.tab:not(:has(.grade)) tbody,.tab:not(:has(.grade)) tr,.tab:not(:has(.grade)) td{display:block}
+ .tab:not(:has(.grade)) thead{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+ .tab:not(:has(.grade)) tr{background:#fff;border:1px solid var(--paper-line);border-radius:8px;padding:10px 12px;margin-bottom:8px}
+ .tab:not(:has(.grade)) td{border:0;padding:3px 0;display:grid;grid-template-columns:6.5em minmax(0,1fr);gap:8px}
+ .tab:not(:has(.grade)) td::before{content:attr(data-label);font-size:.7rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--paper-muted);padding-top:3px}
+ .tab:not(:has(.grade)) td:empty{display:none}
+ .tab:not(:has(.grade)) td:first-child{display:block;font-weight:800;color:var(--paper-ink);padding-bottom:4px}
+ .tab:not(:has(.grade)) td:first-child::before{display:none}
+}
+</style>
+</head>
+<body>
+<!--moldura--><a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<header class="bar" id="topo"><div class="in">
+ <a class="marca" href="../../"><img class="logo" src="../../marca/logo-eb-104.webp" srcset="../../marca/logo-eb-52.webp 157w, ../../marca/logo-eb-104.webp 314w, ../../marca/logo-eb-156.webp 472w" sizes="(max-width: 480px) 121px, 145px" width="157" height="52" alt="Elite Board Gamers: página inicial"></a>
+ <a class="ig" href="https://www.instagram.com/eliteboardgamers/" target="_blank" rel="noopener" aria-label="Instagram @eliteboardgamers"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6" fill="currentColor"/></svg><span>@eliteboardgamers</span></a>
+ <a class="zap-mini" href="https://chat.whatsapp.com/IgQQkJdSkzHBaEq3UwFeAo" target="_blank" rel="noopener" aria-label="Grupo do WhatsApp"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8.4 19l-4.4 1Z"/><path d="M9.2 8.6c.3-.5.8-.5 1-.1l.7 1.5c.1.3 0 .6-.2.8l-.4.4c.5 1.1 1.4 2 2.5 2.5l.4-.4c.2-.2.5-.3.8-.2l1.5.7c.4.2.4.7-.1 1-.7.5-1.6.6-2.4.3a7 7 0 0 1-4.2-4.2c-.3-.8-.2-1.7.4-2.3Z"/></svg><span>Grupo do WhatsApp</span></a>
+ <button type="button" class="busca-btn" aria-label="Buscar no site" aria-haspopup="dialog" aria-keyshortcuts="/ Control+K" hidden><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></button>
+</div></header>
+<script>(()=>{const b=document.querySelector('.busca-btn');let c;b.hidden=false;const a=()=>{c=c||new Promise((r,j)=>{const s=document.createElement('script');s.src='../../busca.js';s.onload=r;s.onerror=()=>{c=null;j()};document.head.append(s)});c.then(()=>abrirBusca('../../'),()=>{})};b.addEventListener('click',a);addEventListener('keydown',e=>{const t=e.target,ed=t.isContentEditable||/^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName);if((e.key==='/'&&!ed&&!e.ctrlKey&&!e.metaKey)||((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k')){e.preventDefault();a()}})})()</script>
+<nav class="nav" aria-label="Seções do site"><ul class="in"><li><a class="casa" href="../../" aria-label="Página inicial"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 9.5V20h13V9.5"/><path d="M10 20v-5.5h4V20"/></svg></a></li><li><a href="../../noticias/">Notícias</a></li><li><a href="../../resenhas/">Resenhas</a></li><li><a href="../../como-jogar/" aria-current="true">Como jogar</a></li><li><a href="../../lancamentos/">Lançamentos</a></li><li><a href="../../consulta/">Consulta Golden Geek</a></li></ul></nav>
+<script>(()=>{const n=document.querySelector('.nav'),h=()=>document.documentElement.style.setProperty('--nav-h',n.offsetHeight+'px');h();addEventListener('resize',h);addEventListener('load',h)})()</script>
+<div class="guia-prog"><a href="#neste-guia"><span class="gp-r">Guia</span><span class="gp-t">Neste guia</span><span class="gp-i">Índice</span></a><span class="gp-b" aria-hidden="true"></span></div><!--/moldura-->
+
+<main id="conteudo" class="gut"><div class="nota">
+  <nav class="trilha" aria-label="Trilha de navegação"><ol><li><a href="../../">Início</a></li><li><a href="../">Como jogar</a></li><li aria-current="page">Ticket to Ride</li></ol></nav>
+
+  <article class="bloco">
+    <span class="num-l">Coleção de conjuntos · Família</span>
+    <h1>Como jogar Ticket to Ride</h1>
+    <p class="meta-e"><span>Para quem nunca jogou</span><span>2 a 5 jogadores</span><span>30 a 60 min</span><span>8+</span><span>Edição Asmodee (Galápagos)</span></p>
+    <p class="meta"><time datetime="2026-10-31">31 de outubro de 2026</time> · Redação Elite Boardgamers</p>
+  </article>
+
+  <section class="bloco r1" aria-label="Resumo em 1 minuto">
+    <span class="kick">Resumo em 1 minuto</span>
+    <p class="resp">Você junta Cartas de Vagão da mesma cor para ocupar rotas no mapa dos Estados Unidos e ligar as cidades dos seus Bilhetes de Destino; vence quem somar mais pontos no fim, que chega quando alguém fica com 2 trens ou menos.</p>
+    <ul><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.5l4.5 4.5L19.5 6.5"/></svg><span>Em cada turno, uma ação só: comprar 2 Cartas de Vagão, conquistar uma rota ou comprar Bilhetes de Destino.</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.5l4.5 4.5L19.5 6.5"/></svg><span>Rotas pontuam na hora, e as longas valem muito mais: 6 espaços dão 15 pontos.</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.5l4.5 4.5L19.5 6.5"/></svg><span>Bilhete completo soma no fim, incompleto subtrai, e o maior caminho contínuo ganha 10 pontos.</span></li></ul>
+    <p class="pe"><span><b>Como você aprende:</b> 4 etapas, da mesa montada à contagem de pontos</span><span><b>Leitura do essencial:</b> cerca de 7 min</span></p>
+    <p class="legenda-f"><b>À vista, só o essencial para jogar.</b> O que abre com <span class="mais-i">+</span> é explicação, exemplo, exercício ou regra de caso especial: abra quando precisar.</p>
+  </section>
+
+<section class="bloco sec rapido" id="comece-a-jogar-em-4-minutos"><h2><span class="num"></span>Comece a jogar em 4 minutos</h2>
+<p><strong>Meta:</strong> em 4 minutos de leitura, montar a mesa e jogar o seu primeiro turno sem abrir o manual.</p>
+<h3>A ideia do jogo</h3>
+<p>Você coleciona <strong>Cartas de Vagão</strong> de uma cor e as troca por <strong>rotas</strong> no mapa, pondo seus trens de plástico nelas e marcando pontos na hora. Em segredo, você tem <strong>Bilhetes de Destino</strong>: cada um pede que você ligue duas cidades com uma linha contínua dos seus trens, e vale pontos a mais se você conseguir ou a menos se falhar. Vence quem tiver mais pontos quando os trens de alguém estiverem acabando.</p>
+<h3>Monte a mesa</h3>
+<ol><li>Tabuleiro no centro. Cada jogador pega 45 trens de uma cor e o marcador de pontos da mesma cor, e põe o marcador no Início da Trilha de Pontos, que contorna o mapa.</li><li>Embaralhe as Cartas de Vagão e dê 4 a cada jogador. Ponha o resto perto do tabuleiro, como pilha de compras, e vire 5 cartas para cima ao lado dela. Se 3 dessas 5 forem Locomotivas (as cartas multicoloridas), descarte as 5 e vire outras 5.</li><li><em>(depois)</em> A carta de Maior Caminho Contínuo fica virada para cima ao lado do tabuleiro.</li><li>Embaralhe os Bilhetes de Destino e dê 3 a cada jogador. Cada um olha os seus e fica com 2 ou com os 3. Os devolvidos vão para o fundo da pilha de Bilhetes, que fica ao lado do tabuleiro. Seus Bilhetes ficam em segredo até o fim.</li><li>Começa o viajante mais experiente da mesa; a vez segue no sentido horário.</li></ol>
+<h3>Seu primeiro turno</h3>
+<p>No seu turno, faça <strong>uma</strong> destas três ações, e só uma:</p>
+<div class="tab"><table><thead><tr><th>Ação</th><th>O que você faz</th></tr></thead><tbody><tr><td data-label="Ação">Comprar Cartas de Vagão</td><td data-label="O que você faz">Pega 2 cartas, cada uma das 5 abertas ou do topo da pilha (no escuro)</td></tr><tr><td data-label="Ação">Conquistar uma Rota</td><td data-label="O que você faz">Joga cartas iguais em número e cor à rota e põe 1 trem em cada espaço</td></tr><tr><td data-label="Ação">Comprar Bilhetes de Destino</td><td data-label="O que você faz">Pega 3 Bilhetes e fica com pelo menos 1</td></tr></tbody></table></div>
+<ol><li><strong>Comprar Cartas de Vagão.</strong> Ao pegar uma carta aberta, vire na hora outra da pilha para o lugar dela. Locomotiva aberta tem regra própria: se pegar uma, ela é a única carta do turno; se a carta virada para repor for uma Locomotiva, você não pode pegá-la como segunda carta. Locomotiva tirada no escuro conta como uma carta comum, e você ainda pega a segunda.</li><li><strong>Conquistar uma Rota.</strong> Uma rota azul de 3 espaços pede 3 cartas azuis. Uma rota cinza aceita qualquer cor, desde que todas as cartas sejam da mesma cor. A Locomotiva substitui qualquer cor. As cartas usadas vão para o descarte, e você avança o marcador na hora: 1 espaço vale 1 ponto, 2 valem 2, 3 valem 4, 4 valem 7, 5 valem 10 e 6 valem 15. A rota não precisa se ligar às suas outras. Onde duas rotas correm lado a lado entre as mesmas cidades (Rota Dupla), você nunca fica com as duas; com 2 ou 3 jogadores, depois que alguém ocupa uma, a outra fecha para todos.</li><li><strong>Comprar Bilhetes de Destino.</strong> Os que você não quiser voltam para o fundo da pilha.</li></ol>
+<aside class="call resolvido"><p class="rot">Tarefa · exemplo resolvido</p><p><strong>Exemplo resolvido.</strong> Você recebeu Azul, Azul, Verde e Locomotiva. A rota de Montréal a New York é azul e tem 3 espaços <span class="pg">p.&nbsp;3</span>. Você joga Azul, Azul e Locomotiva, põe 3 trens nela e avança 4 pontos. Ficam 42 trens no seu estoque e 1 carta na mão, a Verde.</p></aside>
+<aside class="call complete"><p class="rot">Tarefa · complete</p><p><strong>Complete.</strong> As cartas abertas são Vermelho, Locomotiva, Amarelo, Preto e Branco. Bruno pega a Locomotiva aberta e vira uma carta da pilha para o lugar dela. Ele pode pegar mais uma carta neste turno?</p></aside>
+<aside class="call suavez"><p class="rot">Tarefa · sua vez</p><p><strong>Agora a sua mão.</strong> Antes de agir: quantas cartas você tem de cada cor? Há alguma rota no mapa que você pague agora, contando as Locomotivas como qualquer cor? Se não houver, qual carta aberta ajuda a juntar a cor de que você precisa?</p></aside>
+<details class="respostas"><summary>Resposta do Complete: mostrar</summary><div><p>não. Quem pega uma Locomotiva aberta pega só ela naquele turno <span class="pg">p.&nbsp;3</span>.</p></div></details>
+<h3>Ainda não precisa saber</h3>
+<p>Pilha de compras vazia: <a href="#etapa-2-comprar-cartas-de-vagao">etapa 2</a>. Trens insuficientes e rota paga só com Locomotivas: <a href="#etapa-3-conquistar-rotas-e-marcar-pontos">etapa 3</a>. Comprar Bilhetes no meio da partida, fim da partida, contagem dos Bilhetes e Maior Caminho Contínuo: <a href="#etapa-4-bilhetes-de-destino-fim-da-partida-e-contagem">etapa 4</a>.</p>
+<h3>Como a partida acaba</h3>
+<p>Quando alguém termina o turno com 0, 1 ou 2 trens no estoque, cada jogador, inclusive ele, joga mais um turno. Aí cada um revela os Bilhetes: soma os completos, subtrai os incompletos. O dono do caminho contínuo mais longo ganha 10 pontos.</p>
+<aside class="call atencao"><p class="rot">Atenção</p><p><strong>Os três erros mais caros.</strong> Locomotiva aberta é a única carta do turno. Uma rota se paga com uma cor só (mais Locomotivas), nunca misturando cores. Bilhete que não foi completado tira os pontos dele no fim.</p></aside>
+</section>
+  <nav class="bloco indice" id="neste-guia" aria-label="Neste guia"><h2>Neste guia</h2><ol><li><a href="#comece-a-jogar-em-4-minutos">Comece a jogar em 4 minutos</a></li><li><a href="#antes-de-tudo-o-que-e-este-jogo">Antes de tudo: o que é este jogo</a> <small>(opcional)</small></li><li><a href="#como-este-guia-ensina">Como este guia ensina</a> <small>(opcional)</small></li><li><a href="#etapa-1-montar-a-mesa-e-escolher-os-primeiros-bilhetes">Etapa 1: montar a mesa e escolher os primeiros Bilhetes</a></li><li><a href="#etapa-2-comprar-cartas-de-vagao">Etapa 2: comprar Cartas de Vagão</a></li><li><a href="#etapa-3-conquistar-rotas-e-marcar-pontos">Etapa 3: conquistar rotas e marcar pontos</a></li><li><a href="#etapa-4-bilhetes-de-destino-fim-da-partida-e-contagem">Etapa 4: Bilhetes de Destino, fim da partida e contagem</a></li><li><a href="#situacoes-especiais">Situações especiais</a> <small>(opcional)</small></li><li><a href="#avaliacao-final">Avaliação final</a> <small>(opcional)</small></li><li><a href="#para-consultar-durante-a-partida">Para consultar durante a partida</a></li><li><a href="#fontes">Fontes</a></li></ol></nav>
+
+<section class="bloco sec opc" id="antes-de-tudo-o-que-e-este-jogo"><h2><span class="num">0</span>Antes de tudo: o que é este jogo<span class="tag-opc">Opcional</span></h2>
+<details class="dobra sec-opc"><summary>Abrir esta seção</summary><p>Ticket to Ride é uma disputa por espaço num mapa ferroviário dos Estados Unidos, com um pedaço do Canadá. As cidades estão ligadas por <strong>rotas</strong>, filas de espaços retangulares de uma cor ou cinza. Quem conquista uma rota põe nela um trem de plástico em cada espaço, e a partir daí ela é só sua <span class="pg">p.&nbsp;1 e 3</span>.</p>
+<p>Os pontos vêm de três lugares. As rotas pontuam no momento em que você as conquista, e as longas valem muito mais que as curtas. Os <strong>Bilhetes de Destino</strong> pontuam no fim: cada um traz duas cidades e um valor, e você soma o valor se tiver ligado as duas com uma linha contínua dos seus trens, ou subtrai se não tiver. E quem tiver o caminho contínuo mais longo ganha um bônus de 10 pontos <span class="pg">p.&nbsp;2 e 4</span>.</p>
+<p>O jogo inteiro gira em torno de uma escolha repetida a cada turno: juntar mais cartas ou gastar as que tem. Juntar dá opções, mas enquanto você junta, outro jogador pode ocupar a rota de que você precisava. Como os Bilhetes são secretos, ninguém sabe ao certo para onde os outros vão <span class="pg">p.&nbsp;2</span>.</p></details>
+</section>
+<section class="bloco sec opc" id="como-este-guia-ensina"><h2><span class="num">1</span>Como este guia ensina<span class="tag-opc">Opcional</span></h2>
+<details class="dobra sec-opc"><summary>Abrir esta seção</summary><p>O guia segue a partida em quatro etapas: montar a mesa e escolher os primeiros Bilhetes, comprar Cartas de Vagão, conquistar rotas e marcar pontos e, por fim, Bilhetes de Destino, fim da partida e contagem. Cada etapa usa só o que as anteriores já ensinaram.</p>
+<p>Os blocos se repetem em cada etapa:</p>
+<ul><li><strong>Para entender:</strong> como aquela parte do jogo funciona e por quê.</li><li><strong>Passo a passo:</strong> as regras exatas, com a página do manual.</li><li><strong>Tarefas</strong>, com ajuda que diminui: um <strong>exemplo resolvido</strong>, uma tarefa para <strong>completar</strong> e uma tarefa <strong>sua vez</strong>, sem ajuda.</li><li><strong>Treino rápido:</strong> exercícios curtos para o que precisa ficar automático, como a tabela de pontos.</li></ul>
+<p>As respostas ficam escondidas no fim de cada etapa. Tente antes de abrir. No final há uma avaliação curta e uma folha de consulta para deixar ao lado do tabuleiro.</p></details>
+</section>
+<section class="bloco sec" id="etapa-1-montar-a-mesa-e-escolher-os-primeiros-bilhetes"><h2><span class="num">2</span>Etapa 1: montar a mesa e escolher os primeiros Bilhetes</h2>
+<details class="dobra entender"><summary>Por que funciona assim</summary><aside class="call entender"><p>Quase tudo na caixa serve a uma de três coisas.</p>
+<p><strong>Os trens e o marcador de pontos</strong> são seus. Os 45 trens são ao mesmo tempo o que você coloca no mapa e o relógio da partida: quando o estoque de alguém chega a 2 ou menos, o jogo está terminando. O marcador anda na <strong>Trilha de Pontos</strong>, a faixa numerada em volta do mapa <span class="pg">p.&nbsp;2 e 4</span>.</p>
+<p><strong>As Cartas de Vagão</strong> são o dinheiro do jogo. São 110: 12 de cada uma de oito cores (rosa, azul, laranja, branco, verde, amarelo, preto e vermelho), que são as cores das rotas, mais 14 <strong>Locomotivas</strong>, multicoloridas, que valem como qualquer cor. Cada cor tem um tipo de vagão desenhado; o manual cita, por exemplo, o Vagão de Passageiro, que é o azul. Na mesa ficam a <strong>pilha de compras</strong>, virada para baixo, as <strong>5 cartas abertas</strong> ao lado dela e uma pilha de descarte <span class="pg">p.&nbsp;2 e 3</span>.</p>
+<p><strong>Os Bilhetes de Destino</strong> são os seus objetivos secretos. São 30. Cada um tem duas cidades e um valor em pontos <span class="pg">p.&nbsp;2 e 4</span>. A carta de <strong>Maior Caminho Contínuo</strong> é o prêmio de 10 pontos do fim da partida. A <strong>Carta de Ajuda</strong> é um resumo para consulta.</p></aside></details>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Preparação</strong> <span class="pg">p.&nbsp;2 e 3</span>. É a mesma para 2 a 5 jogadores; o número de jogadores só muda uma regra de rotas, vista na etapa 3.</p>
+<ol><li>Ponha o tabuleiro no centro da mesa.</li><li>Cada jogador pega um conjunto de 45 trens de uma cor e o marcador de pontos da mesma cor. Os trens que sobram na caixa são reposição.</li><li>Cada marcador vai para o Início da Trilha de Pontos.</li><li>Embaralhe as Cartas de Vagão e dê 4 a cada jogador, como mão inicial.</li><li>Ponha o resto das Cartas de Vagão perto do tabuleiro, viradas para baixo, e vire as 5 primeiras para cima, ao lado.</li><li>Se 3 das 5 cartas abertas forem Locomotivas, descarte as 5 e vire 5 novas. A regra vale "a qualquer momento", inclusive agora <span class="pg">p.&nbsp;3</span>.</li><li>Ponha a carta de Maior Caminho Contínuo virada para cima perto do tabuleiro.</li><li>Embaralhe os Bilhetes de Destino e dê 3 a cada jogador. Cada um olha os seus e decide com quais fica: pelo menos 2, ou os 3.</li><li>Os Bilhetes devolvidos vão para o fundo da pilha de Bilhetes de Destino, que fica perto do tabuleiro.</li><li>Começa o viajante mais experiente. A vez segue no sentido horário <span class="pg">p.&nbsp;2</span>.</li></ol></aside>
+<details class="dobra edicao"><summary>Sobre a edição: Qual é a sua caixa?</summary><aside class="call edicao"><p>Em 2025 a Days of Wonder lançou uma edição nova do jogo, com manual em português traduzido pela Galápagos. Nela há 33 Bilhetes, cada jogador recebe 4 no começo (e fica com pelo menos 2), a cor que o manual de 2016 chama de rosa aparece como roxo e a ação se chama "Controlar uma Rota". Este guia segue a caixa com 30 Bilhetes de Destino, que é a que a página do produto na loja da Galápagos descreve. Se a sua tiver 33 Bilhetes, prepare com 4 e veja as outras diferenças na seção 6.</p></aside></details>
+<details class="dobra resolvido"><summary>Ver um exemplo resolvido</summary><aside class="call resolvido"><p>Ana recebe três Bilhetes. Dois deles têm cidades no leste do mapa, perto uma da outra; o terceiro liga o extremo oeste ao extremo leste. Ela olha o mapa e vê que os dois do leste podem compartilhar trechos. Fica com esses dois e devolve o terceiro ao fundo da pilha. Ela não poderia devolver dois: o mínimo na preparação é 2.</p>
+<p>Por que essa escolha: Bilhetes que usam as mesmas rotas pagam duas vezes pelo mesmo trabalho. Um Bilhete longo vale mais, mas só se for completado; o incompleto tira os mesmos pontos que daria.</p></aside></details>
+
+
+
+<details class="dobra pratica"><summary>Pratique esta etapa: exercícios com respostas</summary><aside class="call complete"><p class="rot">Tarefa · complete</p><p><strong>Complete.</strong> Bruno recebe três Bilhetes e gosta de todos. Já sabemos que ele pode ficar com os três. Complete: onde ficam esses Bilhetes durante a partida, e quem pode vê-los?</p></aside>
+<aside class="call suavez"><p class="rot">Tarefa · sua vez</p><p><strong>Sua vez.</strong> Você vai montar uma partida de 4 jogadores. Responda olhando só o passo a passo:</p>
+<ol><li>Quantas Cartas de Vagão cada um tem na mão antes do primeiro turno, e quantas ficam abertas na mesa?</li><li>Ao virar as cartas abertas, saem Locomotiva, Azul, Locomotiva, Locomotiva e Preto. O que você faz?</li><li>Cada jogador recebeu 3 Bilhetes. Qual é o menor número de Bilhetes que pode voltar à pilha, somando os quatro jogadores? E o maior?</li><li>Quantos trens cada jogador põe à sua frente?</li></ol></aside>
+<details class="respostas"><summary>Respostas da etapa 1: mostrar</summary><div><ul><li><strong>Complete:</strong> na mão dele, em segredo. Ninguém mais vê os Bilhetes até a contagem final <span class="pg">p.&nbsp;2 e 4</span>.</li><li><strong>Sua vez 1:</strong> 4 na mão de cada um e 5 abertas (passos 4 e 5).</li><li><strong>Sua vez 2:</strong> há 3 Locomotivas entre as 5 abertas: descarte as 5 e vire outras 5. Se de novo saírem 3 Locomotivas, repita (passo 6; p. 3).</li><li><strong>Sua vez 3:</strong> nenhum, se todos ficarem com os 3. No máximo 4, um por jogador, porque cada um fica com pelo menos 2 (passo 8).</li><li><strong>Sua vez 4:</strong> 45 (passo 2).</li></ul></div></details></details>
+</section>
+<section class="bloco sec" id="etapa-2-comprar-cartas-de-vagao"><h2><span class="num">3</span>Etapa 2: comprar Cartas de Vagão</h2>
+<details class="dobra entender"><summary>Por que funciona assim</summary><aside class="call entender"><p>Comprar cartas é a ação mais comum da partida. Você pega duas por turno, e a escolha é entre ver o que leva ou arriscar. As 5 cartas abertas mostram exatamente o que está disponível, mas todos veem o que você pega e podem adivinhar a cor que você junta. A carta do topo da pilha é surpresa para você e para os outros.</p>
+<p>A Locomotiva é a carta mais útil do jogo, porque completa qualquer conjunto. Por isso o jogo cobra por ela quando está à vista: pegar uma Locomotiva aberta custa a sua segunda carta. No escuro, ela sai de graça, por sorte <span class="pg">p.&nbsp;3</span>.</p></aside></details>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Comprar Cartas de Vagão</strong> <span class="pg">p.&nbsp;2 e 3</span></p>
+<ol><li>Pegue a primeira carta: uma das 5 abertas ou a do topo da pilha de compras, no escuro.</li><li>Se pegou uma carta aberta, vire na hora a carta do topo da pilha para o lugar dela, antes de qualquer outra coisa.</li><li>Pegue a segunda carta, de novo aberta ou do topo da pilha.</li><li><strong>Locomotiva aberta:</strong> se você pegar uma Locomotiva entre as abertas, ela é a sua única carta neste turno.</li><li><strong>Locomotiva que aparece na reposição:</strong> se, depois da sua primeira carta, a carta virada para repor for uma Locomotiva, você não pode pegá-la como segunda carta.</li><li><strong>Locomotiva no escuro:</strong> conta como uma carta comum. Você ainda pega a segunda.</li><li><strong>Três Locomotivas abertas:</strong> sempre que 3 das 5 cartas abertas forem Locomotivas, descarte as 5 e vire 5 novas.</li><li>Não há limite de cartas na mão.</li><li><strong>Pilha vazia:</strong> quando a pilha de compras acabar, embaralhe bem o descarte e faça dele a nova pilha. As cartas descartadas estão em grupos da mesma cor, por isso o embaralhamento precisa ser caprichado.</li><li><strong>Sem pilha e sem descarte:</strong> se não houver carta na pilha nem no descarte, porque os jogadores seguram muitas cartas, você não pode comprar Cartas de Vagão e escolhe outra ação.</li></ol></aside>
+<details class="dobra edicao"><summary>Sobre a edição: Locomotiva aberta como segunda carta</summary><aside class="call edicao"><p>O manual brasileiro, como o original em inglês, proíbe pegar a Locomotiva que acabou de aparecer na reposição. Ele não fala de uma Locomotiva que já estava aberta desde antes. Como "quem a comprar só poderá comprar uma carta ao invés de duas" <span class="pg">p.&nbsp;3</span>, pegar uma Locomotiva aberta depois de já ter pego outra carta daria duas cartas no turno. Este guia lê assim: <strong>nenhuma Locomotiva aberta pode ser a segunda carta</strong>. O manual da edição de 2025 diz isso com todas as letras: a Locomotiva aberta tem de ser a primeira carta do turno.</p></aside></details>
+<details class="dobra resolvido"><summary>Ver um exemplo resolvido</summary><aside class="call resolvido"><p>As cartas abertas são Verde, Verde, Branco, Laranja e Preto. Você junta verdes. Pega um Verde aberto e vira a carta do topo da pilha para o lugar dele: sai uma Locomotiva. Você não pode pegá-la agora, porque ela apareceu na reposição. Para a segunda carta, você pega o outro Verde aberto e repõe de novo: sai um Amarelo. Fim do turno, com 2 Verdes a mais na mão.</p>
+<p>A mesa agora mostra Locomotiva, Amarelo, Branco, Laranja e Preto. A Locomotiva continua lá para o próximo jogador, que pode pegá-la como primeira e única carta.</p></aside></details>
+
+
+
+
+<details class="dobra pratica"><summary>Pratique esta etapa: exercícios com respostas</summary><aside class="call complete"><p class="rot">Tarefa · complete</p><p><strong>Complete.</strong> Ana pega a primeira carta no escuro, do topo da pilha, e sai uma Locomotiva. Já sabemos que ela conta como carta comum. Complete: Ana pode pegar uma segunda carta? Ela pode pegar a Locomotiva que está entre as abertas?</p></aside>
+<aside class="call suavez"><p class="rot">Tarefa · sua vez</p><p><strong>Sua vez.</strong> Três situações:</p>
+<ol><li>As abertas são Locomotiva, Locomotiva, Azul, Vermelho e Rosa. Você pega o Azul e, ao repor, sai outra Locomotiva. O que acontece com as cartas abertas, e o que você pode pegar como segunda carta?</li><li>Você tem 14 cartas na mão. Precisa descartar alguma?</li><li>A pilha de compras está vazia e o descarte tem 20 cartas. Você quer comprar. O que faz primeiro?</li></ol></aside>
+<aside class="call treino"><p class="rot">Treino rápido</p><p><strong>Quantas cartas você leva neste turno?</strong></p>
+<p>a) Primeira carta: Locomotiva aberta.</p>
+<p>b) Primeira carta: Vermelho aberto. Segunda: topo da pilha, que é uma Locomotiva.</p>
+<p>c) Primeira carta: topo da pilha. Segunda: a única Locomotiva aberta, que estava lá desde o turno anterior.</p>
+<p>d) Primeira carta: Preto aberto. Segunda: Branco aberto.</p></aside>
+<details class="respostas"><summary>Respostas da etapa 2: mostrar</summary><div><ul><li><strong>Complete:</strong> sim, ela pega a segunda carta, aberta ou do topo <span class="pg">p.&nbsp;3</span>. Mas não pode pegar a Locomotiva aberta como segunda carta, pela leitura explicada no bloco "Sobre a edição" acima.</li><li><strong>Sua vez 1:</strong> com a nova Locomotiva, há 3 Locomotivas abertas. As 5 cartas vão para o descarte e 5 novas são viradas na hora. Você pega a segunda carta entre as novas ou do topo da pilha, mas não uma Locomotiva aberta (passos 5 e 7).</li><li><strong>Sua vez 2:</strong> não. Não há limite de mão <span class="pg">p.&nbsp;3</span>.</li><li><strong>Sua vez 3:</strong> embaralha bem o descarte e faz dele a nova pilha; depois compra normalmente <span class="pg">p.&nbsp;3</span>.</li><li><strong>Treino a:</strong> 1. <strong>b:</strong> 2; Locomotiva no escuro é carta comum. <strong>c:</strong> a segunda escolha não é permitida: a Locomotiva aberta não pode ser a segunda carta. Você pega outra carta aberta ou a do topo e leva 2. <strong>d:</strong> 2.</li></ul></div></details></details>
+</section>
+<section class="bloco sec" id="etapa-3-conquistar-rotas-e-marcar-pontos"><h2><span class="num">4</span>Etapa 3: conquistar rotas e marcar pontos</h2>
+<details class="dobra entender"><summary>Por que funciona assim</summary><aside class="call entender"><p>Uma rota é a fila de espaços entre duas cidades vizinhas no mapa. Para ocupá-la, você paga com cartas: tantas quanto os espaços, todas da cor da rota. Rota cinza aceita qualquer cor, mas sempre uma cor só por vez. A Locomotiva entra em qualquer conjunto <span class="pg">p.&nbsp;3</span>.</p>
+<p>A tabela de pontos cresce mais rápido que o tamanho da rota. Uma rota de 6 espaços vale 15 pontos; duas rotas de 3 espaços, com os mesmos 6 trens, valem 8 no total. Rotas longas pagam melhor o trem e a carta, mas pedem muitas cartas de uma mesma cor e um turno inteiro para conquistar <span class="pg">p.&nbsp;4</span>.</p></aside></details>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Conquistar uma Rota</strong> <span class="pg">p.&nbsp;3 e 4</span></p>
+<ol><li>Escolha uma rota livre no mapa. Ela não precisa se ligar a nenhuma rota sua.</li><li>Jogue da mão um conjunto de Cartas de Vagão com tantas cartas quanto os espaços da rota. Rota colorida: todas da cor dela. Rota cinza: todas de uma mesma cor, qualquer uma. Locomotivas podem entrar no lugar de qualquer carta do conjunto.</li><li>Ponha um trem seu em cada espaço da rota.</li><li>Descarte as cartas usadas.</li><li>Avance o seu marcador na Trilha de Pontos, na hora, pela Tabela de Pontuação: 1 espaço, 1 ponto; 2, 2 pontos; 3, 4 pontos; 4, 7 pontos; 5, 10 pontos; 6, 15 pontos.</li><li>No máximo uma rota por turno, ligando duas cidades vizinhas.</li></ol></aside>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Rotas Duplas</strong> <span class="pg">p.&nbsp;3</span></p>
+<ul><li>Algumas cidades vizinhas são ligadas por duas rotas lado a lado: as <strong>Rotas Duplas</strong>.</li><li>O mesmo jogador não pode conquistar as duas rotas de um mesmo par de cidades.</li><li><strong>Com 2 ou 3 jogadores</strong>, só uma das duas pode ser usada. Quem conquistar uma delas escolhe qual, e a outra fica interditada para todos até o fim da partida.</li><li>Com 4 ou 5 jogadores, as duas podem ser usadas, por jogadores diferentes.</li></ul></aside>
+<aside class="call atencao"><p class="rot">Atenção</p><p>Não se mistura cor. Duas cartas vermelhas e uma amarela não pagam uma rota cinza de 3 espaços, mesmo que a rota aceite qualquer cor: aceita qualquer cor, mas uma só. Duas vermelhas e uma Locomotiva pagam.</p></aside>
+<details class="dobra edicao"><summary>Sobre a edição: Pontos que o manual não diz com todas as letras</summary><aside class="call edicao"><ul><li><strong>Trens suficientes.</strong> O manual manda pôr um trem em cada espaço da rota <span class="pg">p.&nbsp;3</span>; com menos trens que espaços no estoque, não há como cumprir isso. Este guia lê que você não pode conquistar uma rota maior que o seu estoque. O manual de 2025 confirma: a rota inteira tem de ser conquistada num turno só.</li><li><strong>Só Locomotivas.</strong> O manual diz que a Locomotiva vale em qualquer conjunto, mas não diz se um conjunto pode ser feito só de Locomotivas. Pelo texto, nada proíbe. Combine com a mesa antes de começar.</li></ul></aside></details>
+<details class="dobra resolvido"><summary>Ver um exemplo resolvido</summary><aside class="call resolvido"><p>Você tem na mão 3 Verdes, 2 Vermelhos e 1 Locomotiva. A rota de Montréal a Toronto é cinza e tem 3 espaços (no exemplo do manual, ela é paga com 3 cartas verdes).</p>
+<p>Você tem três jeitos legais de pagá-la: 3 Verdes; 2 Vermelhos e a Locomotiva; ou 2 Verdes e a Locomotiva. Não dá para usar 2 Vermelhos e 1 Verde.</p>
+<p>Você paga com os 3 Verdes, põe 3 trens e avança 4 pontos. Ficam 2 Vermelhos e a Locomotiva, que juntos ainda pagam uma rota vermelha ou cinza de 3 espaços num turno futuro.</p>
+<p>Por que essa escolha: a Locomotiva serve para qualquer cor. Gastá-la quando há outra forma de pagar é desperdiçar a carta mais flexível da mão.</p></aside></details>
+
+
+
+
+<details class="dobra pratica"><summary>Pratique esta etapa: exercícios com respostas</summary><aside class="call complete"><p class="rot">Tarefa · complete</p><p><strong>Complete.</strong> Partida de 3 jogadores. Entre duas cidades há uma Rota Dupla. Ana conquista uma das duas rotas. Já sabemos que, com 3 jogadores, só uma das duas pode ser usada. Complete: Bruno pode conquistar a outra? E se fossem 4 jogadores?</p></aside>
+<aside class="call suavez"><p class="rot">Tarefa · sua vez</p><p><strong>Sua vez.</strong> Três situações:</p>
+<ol><li>Você tem 4 Azuis e 2 Locomotivas e só 5 trens no estoque. A rota que você quer é azul e tem 6 espaços. Pode conquistá-la?</li><li>Em um turno, você quer conquistar uma rota de 2 espaços e outra de 1, porque tem as cartas. Pode?</li><li>Ao longo da partida você conquistou rotas de 4, 3, 2 e 1 espaços. Quantos pontos elas deram, e quantos trens você usou?</li></ol></aside>
+<aside class="call treino"><p class="rot">Treino rápido</p><p><strong>A Tabela de Pontuação.</strong> Diga os pontos de cada rota sem olhar.</p>
+<p>a) 2 espaços. b) 4 espaços. c) 5 espaços. d) 6 espaços. e) Três rotas de 2 espaços, somadas.</p></aside>
+<details class="respostas"><summary>Respostas da etapa 3: mostrar</summary><div><ul><li><strong>Complete:</strong> com 3 jogadores, não: a outra rota fica interditada para todos. Com 4 jogadores, sim, Bruno pode; só Ana não pode ter as duas <span class="pg">p.&nbsp;3</span>.</li><li><strong>Sua vez 1:</strong> não. A rota tem 6 espaços e você só tem 5 trens; não há como pôr um trem em cada espaço (leitura explicada no bloco "Sobre a edição"). As cartas dariam: 4 Azuis e 2 Locomotivas são 6 cartas da cor certa.</li><li><strong>Sua vez 2:</strong> não. No máximo uma rota por turno, e conquistar uma rota é a única ação do turno <span class="pg">p.&nbsp;2 e 3</span>.</li><li><strong>Sua vez 3:</strong> 7 + 4 + 2 + 1 = <strong>14 pontos</strong>, com 10 trens.</li><li><strong>Treino a:</strong> 2. <strong>b:</strong> 7. <strong>c:</strong> 10. <strong>d:</strong> 15. <strong>e:</strong> 6.</li></ul></div></details></details>
+</section>
+<section class="bloco sec" id="etapa-4-bilhetes-de-destino-fim-da-partida-e-contagem"><h2><span class="num">5</span>Etapa 4: Bilhetes de Destino, fim da partida e contagem</h2>
+<details class="dobra entender"><summary>Por que funciona assim</summary><aside class="call entender"><p>Os Bilhetes são a parte arriscada do jogo. Um Bilhete completado no fim soma o valor dele; um incompleto subtrai o mesmo valor. Pegar Bilhetes novos no meio da partida gasta um turno inteiro e é uma aposta: você precisa ficar com pelo menos um, e o manual não prevê devolver depois um Bilhete que você manteve <span class="pg">p.&nbsp;3 e 4</span>.</p>
+<p>O fim chega pelo estoque de trens, não por um número de rodadas. Quando alguém está com 2 trens ou menos ao final do turno, todos ganham um último turno, e os Bilhetes que não fecharem até ali descontam <span class="pg">p.&nbsp;4</span>. Acompanhar quantos trens os outros ainda têm é a forma de saber quanto tempo resta.</p></aside></details>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Comprar Bilhetes de Destino</strong> <span class="pg">p.&nbsp;3 e 4</span></p>
+<ol><li>Pegue 3 Bilhetes do topo da pilha. Se houver menos de 3, pegue os que houver.</li><li>Fique com pelo menos 1 deles; pode ficar com 2 ou com os 3.</li><li>Os devolvidos vão para o fundo da pilha.</li><li>Os Bilhetes ficam em segredo até o fim, e não há limite de quantos você pode ter.</li></ol></aside>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>O fim da partida</strong> <span class="pg">p.&nbsp;4</span></p>
+<ol><li>Se, ao final do turno de um jogador, o estoque de trens dele tiver 0, 1 ou 2 trens, começa a última volta.</li><li>Cada jogador, incluindo esse, faz mais um turno, na ordem normal.</li><li>Depois disso a partida acaba e começa a contagem.</li></ol></aside>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>A contagem</strong> <span class="pg">p.&nbsp;4</span></p>
+<ol><li><strong>Rotas:</strong> os pontos já foram marcados durante a partida. Se quiserem, recontem as rotas de cada um pela Tabela de Pontuação para conferir.</li><li><strong>Bilhetes:</strong> todos revelam os seus. Bilhete com as duas cidades ligadas por uma série contínua de rotas suas soma o valor; Bilhete incompleto subtrai o valor.</li><li><strong>Maior Caminho Contínuo:</strong> quem tiver o caminho contínuo mais longo de trens da própria cor recebe a carta e 10 pontos. O caminho pode ter voltas e passar várias vezes pela mesma cidade, mas nenhum trem conta duas vezes. Em caso de empate, todos os empatados marcam os 10 pontos.</li><li><strong>Vencedor:</strong> quem tiver mais pontos. Empate: vence quem completou mais Bilhetes de Destino. Persistindo, vence quem tem a carta de Maior Caminho Contínuo.</li></ol></aside>
+<aside class="call atencao"><p class="rot">Atenção</p><p>Um Bilhete só conta como completo com rotas <strong>suas</strong>. Passar pelas rotas de outro jogador não liga as cidades para você. E o Maior Caminho Contínuo é medido em trens de uma cor só, a sua: não se somam trechos soltos, só uma linha que dá para percorrer sem pular.</p></aside>
+<details class="dobra edicao"><summary>Sobre a edição</summary><aside class="call edicao"><p>Para empate no Maior Caminho Contínuo, o manual brasileiro diz que "ambos os jogadores" marcam os 10 pontos; o original fala em todos os empatados. Com três empatados, os três marcam. E se o desempate da vitória chegar à carta de Maior Caminho Contínuo com os empatados ainda empatados, o manual de 2016 não diz o que fazer; o de 2025 manda os empatados dividirem a vitória.</p></aside></details>
+<details class="dobra resolvido"><summary>Ver um exemplo resolvido</summary><aside class="call resolvido"><p>No fim do turno dela, Ana conquista uma rota e fica com 1 trem no estoque. Começa a última volta: Bruno faz um turno e conquista uma rota de 4 espaços (7 pontos); Ana faz o último turno dela e compra cartas, porque com 1 trem não paga nenhuma rota maior que 1 espaço. A partida acaba.</p>
+<p>Na Trilha de Pontos, as rotas de Ana somam 83 pontos (44 trens usados) e as de Bruno, 65 (40 trens). Eles revelam os Bilhetes:</p>
+<ul><li>Ana: 12 e 9 completos, 7 incompleto. 12 + 9 - 7 = 14.</li><li>Bruno: 13, 8, 11 e 5, todos completos. Soma 37.</li></ul>
+<p>Ana tem o caminho contínuo mais longo e ganha 10 pontos.</p>
+<p>Total: Ana, 83 + 14 + 10 = <strong>107</strong>. Bruno, 65 + 37 = <strong>102</strong>. Ana vence.</p>
+<p>Por que importa: Bruno completou mais Bilhetes, mas Ana ganhou nas rotas longas. Os 7 pontos que ela perdeu no Bilhete incompleto não mudaram o resultado; com uma diferença menor, mudariam.</p></aside></details>
+
+
+
+
+<details class="dobra pratica"><summary>Pratique esta etapa: exercícios com respostas</summary><aside class="call complete"><p class="rot">Tarefa · complete</p><p><strong>Complete.</strong> Numa partida de 3 jogadores, Carla tem 52 pontos de rotas na Trilha. Ela completou dois Bilhetes, de 8 e de 5 pontos, e não completou um de 10. Não tem o Maior Caminho Contínuo. Já somamos os Bilhetes completos: 52 + 8 + 5 = 65. Termine a conta.</p></aside>
+<aside class="call suavez"><p class="rot">Tarefa · sua vez</p><p><strong>Sua vez.</strong> Duas situações:</p>
+<ol><li>Você terminou com 60 pontos de rotas, um Bilhete completo de 9 pontos e dois incompletos, de 6 e de 4. Você e outro jogador empataram no caminho contínuo mais longo. Quanto você faz?</li><li>No fim do seu turno, você tem 3 trens no estoque. A partida entra na última volta?</li></ol></aside>
+<aside class="call treino"><p class="rot">Treino rápido</p><p><strong>O caminho mais longo.</strong> Os seus trens formam este esquema (letras, não cidades do mapa): A ligado a B por uma rota de 4 espaços; B a C, 3 espaços; C a D, 2 espaços; e B a E, 5 espaços. Qual é o seu caminho contínuo mais longo, em trens?</p></aside>
+<details class="respostas"><summary>Respostas da etapa 4: mostrar</summary><div><ul><li><strong>Complete:</strong> 65 - 10 = <strong>55 pontos</strong>.</li><li><strong>Sua vez 1:</strong> 60 + 9 - 6 - 4 + 10 = <strong>69 pontos</strong>. No empate, os dois marcam os 10 <span class="pg">p.&nbsp;4</span>.</li><li><strong>Sua vez 2:</strong> não. Só com 0, 1 ou 2 trens no fim do turno <span class="pg">p.&nbsp;4</span>.</li><li><strong>Treino:</strong> <strong>10 trens</strong>, pelo caminho E, B, C, D (5 + 3 + 2). A, B, C, D dá 9 e A, B, E também dá 9. Não dá para somar as quatro rotas: B é um entroncamento, e quem chega a B por um ramo só pode seguir por um dos outros dois. Voltar pelo ramo de onde veio contaria os mesmos trens duas vezes.</li></ul></div></details></details>
+</section>
+<section class="bloco sec opc" id="situacoes-especiais"><h2><span class="num">6</span>Situações especiais<span class="tag-opc">Opcional</span></h2>
+<details class="dobra sec-opc"><summary>Abrir esta seção</summary><p><strong>Cartas na mão sem limite.</strong> Não há limite de Cartas de Vagão na mão nem de Bilhetes de Destino <span class="pg">p.&nbsp;3 e 4</span>.</p>
+<p><strong>Pilha de Bilhetes curta.</strong> Com menos de 3 Bilhetes na pilha, quem comprar pega os que houver e fica com pelo menos 1 <span class="pg">p.&nbsp;4</span>.</p>
+<p><strong>Bilhetes antigos.</strong> O manual de 2016 diz que você fica com pelo menos um dos Bilhetes que acabou de comprar e devolve os outros <span class="pg">p.&nbsp;3 e 4</span>. Ele não fala em devolver Bilhetes que já estavam na sua mão, e o manual de 2025 diz com todas as letras que não se pode. Este guia segue essa leitura: Bilhete que você manteve fica com você até o fim.</p>
+<p><strong>Rota e Bilhete são coisas diferentes.</strong> Conquistar uma rota não exige ter Bilhete que passe por ela, e a rota pontua mesmo que não ajude nenhum Bilhete <span class="pg">p.&nbsp;3</span>.</p>
+<p><strong>Vagões que voltam.</strong> As cartas usadas numa rota vão para o descarte e voltam ao jogo quando a pilha de compras acabar e o descarte for embaralhado <span class="pg">p.&nbsp;3</span>.</p>
+<p><strong>Ação impossível.</strong> Sem cartas na pilha e no descarte, não se compra Carta de Vagão. Se você também não puder pagar nenhuma rota, resta comprar Bilhetes de Destino <span class="pg">p.&nbsp;3</span>.</p>
+<p><strong>Caixa de 2025.</strong> Se a sua caixa for a edição nova (33 Bilhetes), mudam: a preparação (4 Bilhetes por jogador, fica com pelo menos 2, os devolvidos são embaralhados antes de ir para o fundo); os Bilhetes devolvidos depois de uma compra vão para o fundo na ordem que você quiser; a ação de rota se chama "Controlar uma Rota"; o primeiro jogador é escolhido como a mesa quiser; e um empate que persiste depois da carta de Maior Caminho Contínuo vira vitória dividida. O resto das regras deste guia vale para as duas.</p></details>
+</section>
+<section class="bloco sec opc" id="avaliacao-final"><h2><span class="num">7</span>Avaliação final<span class="tag-opc">Opcional</span></h2>
+<details class="dobra sec-opc"><summary>Abrir esta seção</summary><p>Responda sem consultar. Depois confira e veja o que reler.</p>
+<ol><li>Você pega uma carta aberta e, ao repor, aparece uma Locomotiva. Pode pegá-la?</li><li>Você tira uma Locomotiva do topo da pilha. Quantas cartas ainda pode pegar neste turno?</li><li>Uma rota cinza tem 4 espaços. Você tem 2 Pretos, 1 Branco e 1 Locomotiva. Pode conquistá-la?</li><li>Partida de 2 jogadores, Rota Dupla: Bruno conquistou uma das rotas. Você pode conquistar a outra?</li><li>Quantos pontos vale uma rota de 5 espaços? E uma de 3?</li><li>Você compra Bilhetes de Destino e não gosta de nenhum dos três. Pode devolver todos?</li><li>No fim do turno de Ana, ela tem 2 trens. Quantos turnos ainda acontecem numa partida de 4 jogadores?</li><li>Você completou um Bilhete de 11 pontos e falhou num de 7. Quanto os dois somam na contagem?</li></ol>
+<details class="respostas"><summary>Respostas da avaliação: mostrar</summary><div><ol><li><strong>Não.</strong> Locomotiva que aparece na reposição não pode ser a segunda carta (etapa 2).</li><li><strong>Mais uma.</strong> No escuro ela conta como carta comum (etapa 2).</li><li><strong>Não.</strong> Só 2 Pretos e a Locomotiva são da mesma cor; o Branco não entra. Faltaria uma carta (etapa 3).</li><li><strong>Não.</strong> Com 2 ou 3 jogadores, a outra rota fica interditada (etapa 3).</li><li><strong>10 e 4</strong> (etapa 3).</li><li><strong>Não.</strong> Você fica com pelo menos 1 (etapa 4).</li><li><strong>Quatro:</strong> um de cada jogador, incluindo Ana (etapa 4).</li><li><strong>+4.</strong> Soma 11 e subtrai 7 (etapa 4).</li></ol>
+<aside class="call atencao"><p class="rot">Atenção</p><p><strong>Critério para começar a jogar.</strong> Acertou 7 ou 8? Monte a mesa e jogue, com a folha de consulta ao lado. Errou a 1 ou a 2, releia a etapa 2. Errou a 3, a 4 ou a 5, a etapa 3. Errou a 6, a 7 ou a 8, a etapa 4. Depois refaça só as perguntas que errou.</p></aside></div></details></details>
+</section>
+<section class="bloco sec ref" id="para-consultar-durante-a-partida"><h2><span class="num">8</span>Para consultar durante a partida</h2>
+<p><strong>Seu turno: uma ação, e só uma</strong></p>
+<div class="tab"><table><thead><tr><th>Ação</th><th>Como</th><th>Lembre</th></tr></thead><tbody><tr><td data-label="Ação">Comprar Cartas de Vagão</td><td data-label="Como">2 cartas, abertas ou do topo da pilha</td><td data-label="Lembre">Reponha a aberta na hora. Locomotiva aberta: só ela. Locomotiva no escuro: carta comum. Locomotiva aberta nunca é a segunda carta (leitura explicada na etapa 2)</td></tr><tr><td data-label="Ação">Conquistar uma Rota</td><td data-label="Como">Cartas iguais em número e cor à rota; 1 trem por espaço</td><td data-label="Lembre">Cinza: qualquer cor, uma só. Locomotiva vale qualquer cor. Uma rota por turno. Pontos na hora</td></tr><tr><td data-label="Ação">Comprar Bilhetes de Destino</td><td data-label="Como">3 do topo da pilha</td><td data-label="Lembre">Fique com pelo menos 1; devolvidos vão para o fundo</td></tr></tbody></table></div>
+<p><strong>Tabela de Pontuação</strong></p>
+<div class="tab"><table><thead><tr><th>Espaços</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th></tr></thead><tbody><tr><td data-label="Espaços">Pontos</td><td data-label="1">1</td><td data-label="2">2</td><td data-label="3">4</td><td data-label="4">7</td><td data-label="5">10</td><td data-label="6">15</td></tr></tbody></table></div>
+<p><strong>Cartas abertas:</strong> 3 Locomotivas entre as 5, descarte as 5 e vire novas. Pilha vazia: embaralhe bem o descarte.</p>
+<p><strong>Rotas Duplas:</strong> nunca as duas para o mesmo jogador. Com 2 ou 3 jogadores, só uma das duas é usada.</p>
+<p><strong>Fim:</strong> alguém termina o turno com 0, 1 ou 2 trens; todos, inclusive ele, jogam mais um turno.</p>
+<p><strong>Contagem:</strong> rotas (já marcadas), Bilhetes completos somam, incompletos subtraem, Maior Caminho Contínuo +10 (empate: todos marcam). Desempate: mais Bilhetes completos; depois, a carta de Maior Caminho Contínuo.</p>
+</section>
+<section class="bloco sec" id="fontes"><h2><span class="num">9</span>Fontes</h2>
+<ul><li>Galápagos. <em>Ticket to Ride: regras</em> (edição brasileira, arquivo "T2R rules BR", 4 páginas, criado em abril de 2016, tradução de Luiz Eduardo Ricci Coelho). Biblioteca de Downloads da Galápagos, produto TTR001, <a href="https://www.asmodee.com.br/download-library">https://www.asmodee.com.br/download-library</a>. Consultado em 31/10/2026.</li><li>Days of Wonder. <em>Ticket to Ride: rules</em> (reimpressão de 2015 em inglês, 4 páginas). <a href="https://ncdn0.daysofwonder.com/tickettoride/en/img/tt_rules_2015_en.pdf">https://ncdn0.daysofwonder.com/tickettoride/en/img/tt_rules_2015_en.pdf</a>. Consultado em 31/10/2026. Usado para conferir a tradução.</li><li>Days of Wonder e Galápagos. <em>Ticket to Ride: regras</em> (edição de 2025, em português, 4 páginas), na página oficial do jogo, <a href="https://www.daysofwonder.com/game/ticket-to-ride/">https://www.daysofwonder.com/game/ticket-to-ride/</a>. Consultado em 31/10/2026. Usado só para as diferenças entre edições e para confirmar leituras de pontos que o manual de 2016 deixa em aberto.</li><li>Galápagos. Página do produto TTR001 na loja Asmodee Brasil (jogadores, duração, idade e componentes). Consultada em 31/10/2026.</li><li>Não foram encontrados FAQ nem errata oficiais em português até 31/10/2026.</li></ul>
+</section>
+
+<p class="nota-pe">Regras conferidas no manual da edição brasileira de Ticket to Ride (Galápagos, tradução de Luiz Eduardo Ricci Coelho, arquivo de 2016 da Biblioteca de Downloads), o da caixa com 30 Bilhetes de Destino e mapa dos Estados Unidos. As dúvidas de tradução foram resolvidas com o manual original em inglês (Days of Wonder, reimpressão de 2015). O manual não tem número impresso nas páginas: p. 1 é a capa, p. 2 a 4 são as páginas seguintes.</p>
+</div></main>
+
+<!--rodape--><footer><div class="in">
+ <span>Elite Boardgamers</span><a href="../../noticias/">Notícias</a><a href="../../resenhas/">Resenhas</a><a href="../../como-jogar/">Como jogar</a><a href="../../lancamentos/">Lançamentos</a><a href="../../consulta/">Consulta Golden Geek</a><a href="../../jogos-de-tabuleiro/">Guia de jogos de tabuleiro</a><a href="../../premios/">Prêmios</a><a href="../../politica-editorial/">Política editorial</a>
+ <a href="https://www.instagram.com/eliteboardgamers/" target="_blank" rel="noopener">Instagram @eliteboardgamers</a><a href="https://chat.whatsapp.com/IgQQkJdSkzHBaEq3UwFeAo" target="_blank" rel="noopener">Grupo do WhatsApp</a>
+</div></footer>
+<div class="barra-lt fora" role="region" aria-label="Ações da página"><div class="cpw" data-texto=""><a class="cp" href="https://wa.me/" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="M8.2 10.8l7.6-4.4M8.2 13.2l7.6 4.4"/></svg><span>Compartilhar</span></a><div class="cp-menu" hidden><a class="cp-op zap-op" href="https://wa.me/" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8.4 19l-4.4 1Z"/><path d="M9.2 8.6c.3-.5.8-.5 1-.1l.7 1.5c.1.3 0 .6-.2.8l-.4.4c.5 1.1 1.4 2 2.5 2.5l.4-.4c.2-.2.5-.3.8-.2l1.5.7c.4.2.4.7-.1 1-.7.5-1.6.6-2.4.3a7 7 0 0 1-4.2-4.2c-.3-.8-.2-1.7.4-2.3Z"/></svg>WhatsApp</a><button type="button" class="cp-op"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h8"/></svg>Copiar link</button></div><p class="cp-st" role="status"></p></div><script>(()=>{const pega=c=>({u:c.dataset.url||location.href,t:c.dataset.texto||document.title});
+document.querySelectorAll('.cpw:not(.ok)').forEach(c=>{c.classList.add('ok');const b=c.querySelector('.cp');
+ const n=document.createElement('button');n.type='button';n.className=b.className;n.innerHTML=b.innerHTML;n.setAttribute('aria-expanded','false');b.replaceWith(n)});
+if(window.__cp)return;window.__cp=1;
+const celular=()=>navigator.share&&matchMedia('(pointer:coarse)').matches;
+const fecha=()=>document.querySelectorAll('.cp-menu:not([hidden])').forEach(m=>{m.hidden=true;m.parentNode.querySelector('.cp').setAttribute('aria-expanded','false')});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')fecha()});
+document.addEventListener('click',async ev=>{const c=ev.target.closest('.cpw');if(!c){fecha();return}
+ const {u,t}=pega(c),m=c.querySelector('.cp-menu'),st=c.querySelector('.cp-st'),el=ev.target.closest('.cp,.cp-op');if(!el)return;
+ if(el.classList.contains('cp')){
+  if(celular()){try{await navigator.share({title:document.title,text:t,url:u})}catch(e){}return}
+  const abre=m.hidden;fecha();if(!abre)return;
+  m.querySelector('.zap-op').href='https://wa.me/?text='+encodeURIComponent(t+' '+u);
+  const r=c.getBoundingClientRect();m.classList.toggle('sobe',!!c.closest('.barra-lt')||r.bottom>innerHeight-140);m.classList.toggle('dir',r.left>innerWidth-220);
+  m.hidden=false;el.setAttribute('aria-expanded','true');m.querySelector('.cp-op').focus();return}
+ if(el.classList.contains('zap-op')){fecha();return}
+ fecha();let ok=false;try{await navigator.clipboard.writeText(u);ok=true}catch(e){
+  const i=document.createElement('input');i.value=u;document.body.append(i);i.select();try{ok=document.execCommand('copy')}catch(e2){}i.remove()}
+ st.textContent=ok?'Link copiado!':'Não deu para copiar o link.';clearTimeout(st._t);st._t=setTimeout(()=>st.textContent='',2500);
+ c.querySelector('.cp').focus()})})()</script><a class="lt-grupo" href="https://chat.whatsapp.com/IgQQkJdSkzHBaEq3UwFeAo" target="_blank" rel="noopener" aria-label="Entrar no grupo do WhatsApp da Elite"><img src="/favicon-48.png" width="48" height="48" alt=""><span>Grupo</span></a></div><script>(()=>{const l=document.querySelector('.barra-lt');if(!l)return;const vis=new Set();
+const poe=()=>{const on=scrollY>500&&!vis.size;l.classList.toggle('fora',!on);l.inert=!on;document.body.classList.toggle('lt-on',on)};
+const io=new IntersectionObserver(es=>{es.forEach(e=>e.isIntersecting?vis.add(e.target):vis.delete(e.target));poe()});
+document.querySelectorAll('.convite,footer').forEach(x=>io.observe(x));addEventListener('scroll',poe,{passive:true});poe()})()</script>
+<script>(()=>{const g=document.querySelector('.guia-prog');if(!g)return;const t=g.querySelector('.gp-t'),b=g.querySelector('.gp-b');
+const secs=[...document.querySelectorAll('.sec[id]')],idx=document.querySelector('.indice');
+const poe=()=>{const y=scrollY+innerHeight*.3;let at=null;for(const s of secs){if(s.offsetTop<=y)at=s}
+ t.textContent=at&&scrollY>idx.offsetTop?at.querySelector('h2').textContent.replace(/^\d+/,'').trim():'Neste guia';
+ const h=document.documentElement.scrollHeight-innerHeight;b.style.transform='scaleX('+(h>0?Math.min(1,scrollY/h):0)+')'};
+addEventListener('scroll',poe,{passive:true});addEventListener('resize',poe);poe()})()</script><!--/rodape-->
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "b37421bd1ade44f1a59e46b96626bf03"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

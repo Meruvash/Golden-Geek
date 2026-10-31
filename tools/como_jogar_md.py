@@ -13,6 +13,7 @@ atencao, tabelas e listas; explicação (entender), exemplo (resolvido), ediçã
 um toque; as tarefas e respostas de cada etapa vão juntas para "Pratique esta etapa"; as seções de apoio (OPCIONAIS)
 ficam inteiras recolhidas. O tempo de leitura do topo conta só o que fica à vista.
   (p. 7)               página do manual, vira a etiqueta "p. 7"
+Só gera página com "publicar": true no JSON, marcado depois da auditoria independente; rascunho não vai ao ar.
 Uma página escrita à mão (sem tutorial.md) não é tocada: o JSON dela só alimenta a lista em /como-jogar/.
 """
 import html
@@ -85,6 +86,8 @@ def blocos(linhas, dobrar=False):
                 out.append(f'<details class="dobra {tipo}"><summary>{inline(rotulo)}</summary>'
                            f'<aside class="call {tipo}">{blocos(bq)}</aside></details>')
                 continue
+            # "**Para entender.**" no começo repete o rótulo do bloco
+            bq[0] = re.sub(r"^\*\*" + re.escape(rot) + r"\.\*\*\s*", "", bq[0], flags=re.I)
             out.append(f'<aside class="call {tipo}"><p class="rot">{rot}</p>{blocos(bq)}</aside>')
             continue
         if l.startswith("|"):
@@ -265,7 +268,8 @@ def build():
     feitos = []
     for meta in metas():
         md = ROOT / (meta.get("md") or f"docs/como-jogar/{meta['slug']}/tutorial.md")
-        if meta.get("html_manual") or not md.exists():
+        # só vira página o tutorial conferido pela auditoria independente ("publicar": true no JSON)
+        if meta.get("html_manual") or not meta.get("publicar") or not md.exists():
             continue
         destino = ROOT / "como-jogar" / meta["slug"] / "index.html"
         destino.parent.mkdir(parents=True, exist_ok=True)
@@ -277,4 +281,7 @@ def build():
 
 
 if __name__ == "__main__":
+    import sys
+    if len(sys.argv) > 1:
+        sys.exit(__doc__)
     print("ok", build())

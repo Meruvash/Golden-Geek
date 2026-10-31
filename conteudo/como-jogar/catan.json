@@ -1,0 +1,23 @@
+{
+ "slug": "catan",
+ "titulo": "Como jogar Catan",
+ "jogo": "Catan",
+ "genero": "Troca e construção · Família",
+ "jogadores": "3 a 4 jogadores",
+ "duracao": "75 min",
+ "idade": "10+",
+ "edicao": "Edição Devir",
+ "data": "2026-10-31",
+ "descricao": "Aprenda a jogar Catan: montagem, dados, trocas, ladrão, cartas de desenvolvimento e pontos, com exemplos e regras do manual em português da Devir.",
+ "resumo": "Você produz matérias-primas com os dados, troca o que falta e constrói estradas, aldeias e cidades até chegar a 10 pontos de vitória no seu turno.",
+ "pontos": [
+  "O dado de quem está na vez produz para todos: aldeia recebe 1 carta, cidade recebe 2.",
+  "Só o jogador da vez troca, com os outros ou com a reserva a 4 por 1, ou menos num porto.",
+  "No 7, quem tem mais de 7 cartas devolve metade e o ladrão bloqueia um terreno."
+ ],
+ "leitura_min": 28,
+ "etapas": 5,
+ "resenha": null,
+ "chamada": "Dados, trocas e o ladrão: monte a ilha de Catan e jogue o primeiro turno em 4 minutos, depois siga em cinco etapas até os 10 pontos.",
+ "publicar": true
+}
