@@ -2,37 +2,61 @@
  "edicao": "2026-10-30",
  "em_alta": [
   {
+   "nome": "Toy Battle",
+   "id_ludopedia": 76515,
+   "motivo": "Vencedor do As d'Or 2026, anunciado pela Asmodee",
+   "link": "noticias/asmodee-essen-toy-battle-too-many-bones-nemesis-lockdown/"
+  },
+  {
+   "nome": "Spellrift Legends",
+   "id_ludopedia": 86556,
+   "motivo": "Passa de R$ 120 mil no MeepleStarter",
+   "link": "noticias/spellrift-legends-financiamento-meeplestarter/"
+  },
+  {
+   "nome": "Rebirth",
+   "id_ludopedia": 64409,
+   "motivo": "Gioco dell'Anno 2026 depois do Kennerspiel",
+   "link": "noticias/rebirth-vence-gioco-dell-anno-lucca/"
+  },
+  {
+   "nome": "DC Super Heroes United",
+   "id_ludopedia": 64685,
+   "motivo": "Em preparação pela Devir",
+   "link": "noticias/devir-dc-super-heroes-united-e-one-round/"
+  },
+  {
    "nome": "Money!",
    "id_ludopedia": 4897,
    "motivo": "Knizia anunciado pela Ludofun",
    "link": "noticias/ludofun-money-reiner-knizia/"
-  },
-  {
-   "nome": "Looot",
-   "id_ludopedia": 61866,
-   "motivo": "Indicado ao Kennerspiel 2025, anunciado pela Devir",
-   "link": "noticias/devir-looot-e-through-the-desert/"
-  },
-  {
-   "nome": "Civolution",
-   "id_ludopedia": 57677,
-   "motivo": "Vencedor do As d'Or Expert, em pré-venda pela Devir",
-   "link": "noticias/devir-civolution-e-formigas-pre-venda/"
-  },
-  {
-   "nome": "Caper: Europe",
-   "id_ludopedia": 30558,
-   "motivo": "Chegou às lojas pela Asmodee",
-   "link": "noticias/galapagos-azul-kids-caper-europe-nas-lojas/"
-  },
-  {
-   "nome": "Vantage",
-   "id_ludopedia": 66676,
-   "motivo": "Chegou ao Brasil depois de dois Golden Geek",
-   "link": "noticias/vantage-chega-ao-brasil/"
   }
  ],
  "financiamentos": [
+  {
+   "nome": "Spellrift Legends",
+   "editora": "Ludens Spirit",
+   "onde": "Brasil · aberto",
+   "situacao": "R$ 121 mil (610% da meta); termina em 20/11",
+   "fonte": "MeepleStarter, 31/10/2026",
+   "noticia": "spellrift-legends-financiamento-meeplestarter"
+  },
+  {
+   "nome": "Nemesis Legacy",
+   "editora": "Awaken Realms",
+   "onde": "Gamefound · encerrado",
+   "situacao": "€12,58 milhões de 33 mil apoiadores",
+   "fonte": "Tabletop Analytics, 31/10/2026",
+   "noticia": "nemesis-legacy-fecha-com-12-milhoes-de-euros"
+  },
+  {
+   "nome": "Arkham Horror Remastered",
+   "editora": "Fantasy Flight Games",
+   "onde": "Gamefound · aberto",
+   "situacao": "US$ 2,96 milhões; termina em 05/11",
+   "fonte": "Tabletop Analytics, 31/10/2026",
+   "noticia": "arkham-horror-remastered-gamefound"
+  },
   {
    "nome": "Eleição",
    "editora": "Independente",
@@ -60,8 +84,8 @@
   {
    "nome": "Excursions – a Galactic Cruise Game",
    "editora": "Kinson Key Games",
-   "onde": "Kickstarter · aberto",
-   "situacao": "US$ 544 mil; termina em 30/10",
+   "onde": "Kickstarter · encerrado",
+   "situacao": "US$ 544 mil em 28/10; campanha terminou em 30/10",
    "fonte": "Tabletop Analytics, 28/10/2026",
    "noticia": "excursions-galactic-cruise-campanha-termina"
   },
