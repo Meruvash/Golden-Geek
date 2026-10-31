@@ -1,0 +1,23 @@
+{
+ "slug": "santuario",
+ "titulo": "Como jogar Santuário",
+ "jogo": "Santuário",
+ "genero": "Colocação de peças · Motor",
+ "jogadores": "1 a 5 jogadores",
+ "duracao": "20 min por jogador",
+ "idade": "12+",
+ "edicao": "Regras do manual em inglês (Capstone)",
+ "data": "2026-10-31",
+ "descricao": "Aprenda a jogar Santuário em cinco etapas: preparação, cartas de ação, colocação no zoológico, metas e pontuação, com exemplos e folha de consulta.",
+ "resumo": "Você monta um zoológico com peças de Animais, Prédios e Projetos, usando quatro cartas de ação que ganham força na fila, e vence quem somar mais pontos.",
+ "pontos": [
+  "A cada turno você pega uma peça da vitrine e usa uma carta de ação para ganhar peças ou jogar uma no zoológico.",
+  "A carta usada volta ao encaixe 1, o mais fraco, e as outras ficam mais fortes.",
+  "Quem apoia 4 metas de conservação ou cobre o tabuleiro dispara o fim e ganha 10 pontos."
+ ],
+ "leitura_min": 0,
+ "etapas": 5,
+ "resenha": "santuario",
+ "chamada": "Pegue uma peça, use uma carta de ação e encaixe Animais, Prédios e Projetos no seu zoológico. Começa com um resumo para jogar em 4 minutos e segue em cinco etapas, da mesa montada à contagem de pontos.",
+ "md": "docs/como-jogar/santuario/tutorial.md"
+}
