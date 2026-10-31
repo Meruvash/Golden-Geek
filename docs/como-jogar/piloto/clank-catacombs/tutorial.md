@@ -1,334 +1,353 @@
 # Como jogar Clank! Catacombs
 
-*Rascunho experimental da linha COMO JOGAR do Elite Boardgamers. Não publicado. Regras conferidas no manual oficial em inglês da Dire Wolf Digital (2022); as páginas citadas são as desse manual.*
+*Rascunho experimental da linha COMO JOGAR do Elite Boardgamers. Não publicado. Regras conferidas no manual da edição brasileira (Galápagos, v1.0) e no manual original em inglês (Dire Wolf Digital, 2022). As páginas citadas são as do manual brasileiro, que tem a mesma paginação do original.*
 
-> [!edicao] A Galápagos lançou Clank! Catacombs em português em 2025 (CLK101). Esta versão do tutorial ainda segue o manual oficial em inglês, porque o manual em português não foi obtido a tempo. Por isso, nomes de cartas, fichas e ícones aparecem como no original. Nomes de cartas, fichas e ícones aparecem como estão impressos (Burgle, Artifact, Skill). As áreas da mesa ganham nome em português, com o termo do manual entre parênteses na primeira vez.
+> [!edicao] Este guia usa os nomes impressos na edição brasileira da Galápagos (2025): Habilidade, Espadas, Botas, Gazua, Fileira da Masmorra, Trilha de Fúria. Se a sua caixa for a original em inglês, a seção 9 traz a correspondência dos termos.
 
-## 1. O que você está tentando fazer
+## 0. Antes de tudo: o que é este jogo
 
-Você é um ladrão que desce às catacumbas onde dorme um dragão. Lá embaixo há Artifacts, tesouros de 5 a 20 pontos. O plano tem três partes: entrar, pegar um Artifact e sair vivo pela Cripta, o lugar de onde todos partiram. Quem consegue sair ganha ainda um bônus de 20 pontos. No fim, vence quem tiver mais pontos somando o Artifact, o ouro, as fichas e as cartas que juntou pelo caminho (p. 3 e 14).
+Você é um ladrão que desce às catacumbas de um dragão. O plano tem três partes: entrar, pegar um **Artefato** e sair vivo pela **Cripta**, o lugar de onde todos partem. Quem sai ganha um bônus de 20 pontos. No fim, vence quem tiver mais pontos somando o Artefato, o ouro, as fichas e as cartas que juntou (p. 3 e 14).
 
-O que torna isso difícil é o barulho. Quase tudo o que você faz de mais forte faz barulho, e o jogo chama barulho de **Clank!**. Cada Clank! que você faz vira um cubo da sua cor numa área do tabuleiro. De tempos em tempos o dragão acorda: todos esses cubos vão para um saco, alguns são sorteados, e cada cubo sorteado é um ferimento para o dono. Quem fez mais barulho tem mais cubos no saco e mais chance de se machucar. E os cubos que não saem continuam no saco, então o barulho de hoje fica lá dentro, esperando o próximo ataque.
+O que torna isso difícil é o barulho, que o jogo chama de **Clank!**. Quase tudo o que você faz de mais forte faz barulho, e cada Clank! vira um cubo da sua cor numa área do tabuleiro. De tempos em tempos o dragão ataca: esses cubos vão para uma bolsa, alguns são sorteados, e cada cubo sorteado é um ferimento para o dono. Quem fez mais barulho tem mais cubos na bolsa e mais chance de se ferir. Os cubos que não saem continuam na bolsa, esperando o próximo ataque (p. 12).
 
-Há ainda uma escolha que atravessa a partida inteira. Os Artifacts mais valiosos ficam longe, nas Profundezas da masmorra. Se você for nocauteado lá embaixo, ou se cair sem ter pego um Artifact, termina a partida com zero ponto, não importa o que tenha juntado (p. 14). Ir fundo paga mais, e cobra mais.
+Há ainda uma aposta que atravessa a partida. Os Artefatos mais valiosos aparecem longe, nas **Profundezas**. Se você cair lá embaixo, ou cair sem ter pego um Artefato, termina com zero ponto, não importa o que tenha juntado (p. 14).
 
-Duas ideias sustentam o resto do jogo:
+Duas ideias sustentam o resto:
 
-- **Seu baralho é seu personagem.** Cada pessoa começa com as mesmas 10 cartas fracas. Ao longo da partida, você compra cartas melhores, que entram no seu baralho e voltam para a sua mão mais adiante. O baralho de cada um vai ficando diferente, e é isso que define o que você consegue fazer em cada turno (p. 3). Esse tipo de jogo se chama construção de baralho, e Clank! Catacombs o mistura com um mapa.
-- **O mapa nasce durante a partida.** A masmorra começa com uma única peça. Quando alguém caminha até a borda, revela uma peça nova e a encaixa ali. Cada partida tem um mapa diferente (p. 9).
+- **Seu baralho é o seu personagem.** Todos começam com as mesmas 10 cartas fracas. Durante a partida, você adquire cartas melhores, que entram no seu baralho e voltam para a sua mão mais adiante. Esse tipo de jogo se chama construção de baralho (p. 3).
+- **O mapa nasce durante a partida.** A masmorra começa com uma única peça. Quem anda até a borda revela uma peça nova e a encaixa ali (p. 9).
 
-> [!dica] Se você já jogou o Clank! original, o manual marca as diferenças com um quadro com a palavra CLANK!. As principais: o tabuleiro fixo virou peças, existe Lockpick e não existe Master Key, prisioneiros são novos e não há trilha de contagem regressiva (p. 5, 7, 8, 14 e 18).
+## 1. Como este guia ensina
 
-## 2. O que importa para começar
+Você vai aprender jogando, em cinco etapas. Cada etapa é uma parte real da partida, e cada uma é mais completa que a anterior: montar a mesa, jogar um turno, fechar o turno e sobreviver ao dragão, explorar a masmorra e, por fim, jogar a partida inteira até a contagem de pontos.
 
-Você não precisa decorar a caixa. Precisa saber para que serve cada grupo de peças.
+Dentro de cada etapa, os blocos aparecem sempre na mesma ordem:
 
-**Suas cartas e os três recursos.** Quase toda carta produz um ou mais destes recursos, mostrados por ícones no canto superior esquerdo (p. 6):
+- **Para entender:** como aquela parte do jogo funciona e por quê.
+- **Passo a passo:** as regras exatas, na ordem em que você vai usá-las.
+- **Tarefas**, com ajuda que vai diminuindo: primeiro um **exemplo resolvido**, depois uma tarefa para **completar** (o começo já está feito) e, por fim, uma tarefa **sua vez**, sem ajuda.
+- **Treino rápido:** exercícios curtos para o que precisa ficar automático, como somar recursos ou resolver um ataque.
 
-- **Skill** (losango azul) compra cartas e ativa um tipo de carta chamado Device.
-- **Swords** (círculo vermelho com espada) enfrentam monstros e protegem você em certos túneis.
-- **Boots** (quadrado amarelo com bota) movem seu peão.
+As respostas de cada etapa ficam escondidas no fim dela. Tente antes de abrir. No final há uma avaliação curta, com a indicação de qual etapa reler se algo não ficou claro, e uma folha de consulta para levar à mesa.
 
-Além disso, cartas podem dar ouro, fazer Clank! (ou tirar Clank!, quando o número é negativo) e mandar comprar mais cartas. O custo de uma carta fica no canto inferior direito; os pontos que ela vale no fim, quando vale algum, ficam no canto superior direito, num hexágono verde (p. 7 e 14).
+> [!entender] Este formato segue o modelo de ensino de habilidades complexas chamado 4C/ID (van Merriënboer e Kirschner, *Ten Steps to Complex Learning*): tarefas reais em ordem de dificuldade, explicação de apoio antes delas, regras exatas no momento do uso e treino só onde o erro é comum. O modelo é usado em cursos; aqui ele foi adaptado para um texto, e ainda não foi testado com jogadores.
 
-**As cartas que todo mundo usa.** Estas são as cartas do baralho inicial e da reserva, com os valores impressos nas ilustrações do manual (p. 2, 8 e 13). As demais cartas vêm da fileira da masmorra e trazem o efeito escrito nelas.
+## 2. Etapa 1: montar a mesa
+
+> [!entender] **Para entender.** Você não precisa decorar a caixa. Precisa saber para que serve cada grupo de peças.
+>
+> **Suas cartas e os três recursos.** Quase toda carta produz recursos, mostrados por ícones no canto superior esquerdo: **Habilidade** adquire cartas e usa Dispositivos; **Espadas** combatem monstros e protegem você em certos túneis; **Botas** movem seu peão (p. 6). Cartas também podem dar Ouro, fazer Clank! (ou tirar Clank!, quando o número é negativo) e mandar comprar cartas. O custo fica no canto inferior direito; os pontos que a carta vale no fim, quando vale, ficam no canto superior direito (p. 7 e 14).
+>
+> **O tabuleiro de Clank!** não é um mapa. Ele guarda a **área de Clank!**, onde os cubos de barulho esperam o próximo ataque; a **Trilha de Fúria**, onde anda o **Marcador do Dragão** e que diz quantos cubos saem da bolsa em cada ataque; e um **Contador de Pontos de Vida** de cada cor, onde você marca seus ferimentos (p. 4 e 12).
+>
+> **A Bolsa do Dragão** começa com 24 cubos pretos, que não ferem ninguém. Durante a partida, seus cubos de barulho também entram nela (p. 12).
+>
+> **As cartas à venda** ficam em dois lugares. A **Fileira da Masmorra** tem seis cartas abertas, tiradas do **Baralho da Masmorra**, e muda o tempo todo. A **Reserva** tem sempre as mesmas pilhas: Mercenário, Explorar e Tomo Secreto, mais o Goblin (p. 5 e 7). A cor da faixa no alto da carta diz o que ela é: azul é carta para o seu baralho, amarela é carta da Reserva, roxa é Dispositivo (você paga, usa na hora e ela vai embora) e vermelha é monstro (p. 7).
+>
+> **A masmorra** é feita de **peças**. Cada peça tem **salas** ligadas por **túneis**. **Seu suprimento pessoal** é o que fica à sua frente: 30 cubos da sua cor, Gazuas, Ouro e fichas. Os cubos servem para duas coisas: são o seu barulho e também os seus ferimentos. **O Banco** é o estoque comum (p. 4, 5 e 12).
+
+**As cartas que todo mundo usa.** Valores lidos nas ilustrações do manual (p. 2, 8 e 13). As outras cartas trazem o efeito escrito nelas.
 
 | Carta | Onde | Dá | Custo | Pontos |
 |---|---|---|---|---|
-| Burgle (6 no baralho inicial) | inicial | 1 Skill | | |
-| Stumble (2) | inicial | +1 Clank! | | |
-| Sidestep (1) | inicial | 1 Boot | | |
-| Scramble (1) | inicial | leia o efeito na carta (o manual em inglês não o mostra) | | |
-| Explore | reserva | 2 Skill e 1 Boot | 3 | |
-| Mercenary | reserva | 1 Skill e 2 Swords | impresso na carta | |
-| Secret Tome | reserva | nada ao ser jogada | 7 | 7 |
-| Goblin (monstro) | reserva | ao ser vencido, 1 de ouro | 2 Swords | |
+| Roubar (6 no baralho inicial) | inicial | 1 Habilidade | | |
+| Tropeçar (2) | inicial | +1 Clank! | | |
+| Contornar (1) | inicial | 1 Bota | | |
+| Rastejar (1) | inicial | leia o efeito na carta (nenhum dos dois manuais o mostra) | | |
+| Explorar | Reserva | 2 Habilidades e 1 Bota | 3 | |
+| Mercenário | Reserva | 1 Habilidade e 2 Espadas | impresso na carta | |
+| Tomo Secreto | Reserva | nada ao ser jogada | 7 | 7 |
+| Goblin (monstro) | Reserva | ao ser derrotado, 1 de Ouro | 2 Espadas | |
 
-**Danger e Arrive.** Algumas cartas da fileira têm uma faixa com a palavra Danger: enquanto estiverem na fileira, cada ataque tira 1 cubo a mais do saco. Outras têm um texto Arrive, que acontece uma vez, quando a carta aparece na fileira (p. 11).
-
-**O tabuleiro Clank!** não é um mapa. Ele guarda três coisas. A **área de Clank!** é onde os cubos de barulho esperam o próximo ataque. Na **trilha de fúria** (Rage Track) anda o **marcador do dragão**, e a casa onde ele está diz quantos cubos saem do saco em cada ataque. E cada cor tem um **medidor de vida** (Health Meter), onde você marca seus ferimentos com cubos (p. 4 e 12).
-
-**O saco do dragão** (Dragon Bag) começa com 24 cubos pretos. Cubos pretos sorteados não ferem ninguém. Durante a partida, os seus cubos de barulho também entram nele (p. 12).
-
-**As cartas à venda** ficam em dois lugares. A **fileira da masmorra** (Dungeon Row) tem seis cartas abertas tiradas do **baralho da masmorra** (Dungeon Deck) e muda o tempo todo. A **reserva** (Reserve) tem sempre as mesmas pilhas: Mercenary, Explore e Secret Tome, mais o Goblin, um monstro que pode ser enfrentado de novo e de novo (p. 5 e 7). A cor da faixa no alto da carta diz o que ela é. Azul é carta que você compra para o seu baralho; amarela é carta da reserva. Roxa é Device: você paga, usa na hora e ela vai embora. Vermelha é monstro (p. 7).
-
-**A masmorra** é feita de **peças** (tiles). Cada peça tem **salas** ligadas por **túneis**. Você se move de sala em sala pelos túneis.
-
-**Seu suprimento pessoal** é o que fica à sua frente: 30 cubos da sua cor, Lockpicks, ouro e as fichas que você ganhar. Os cubos têm dupla função: são o seu barulho e também os seus ferimentos (p. 5 e 12).
-
-**O banco** (Bank) é o estoque comum: ouro, Lockpicks, os Artifacts empilhados, as fichas de segredo e de prisioneiro, o mercado e as peças ainda não reveladas (p. 4).
-
-## 3. Prepare a partida
-
-Siga a ordem e confira cada passo na mesa (p. 4 e 5). A preparação é igual para 2, 3 ou 4 jogadores, exceto nos passos 1, 7 e 11.
-
-1. Ponha o tabuleiro Clank! num canto da mesa. A trilha de fúria é a coluna de pedras à direita, lida de baixo para cima; cada casa mostra quantos cubos saem do saco num ataque: 2, 2, 3, 3, 4, 4 e 5. As três casas de baixo têm um peão com um número. Ponha o marcador do dragão na casa com o número de jogadores: com 4 jogadores, na primeira casa (2 cubos); com 3, na segunda (2 cubos); com 2, na terceira (3 cubos) (ilustrações das p. 2 e 4).
-2. Separe as 28 peças quadradas pelo verso. Embaralhe as 22 das Profundezas e faça com elas uma pilha virada para baixo. Embaralhe as 6 outras, devolva 2 à caixa sem olhar e ponha as 4 restantes em cima da pilha. Assim, as quatro primeiras peças descobertas na partida serão sempre seguras.
-3. Monte o banco: ouro (moedas de 1, 5 e 10) e Lockpicks, que não acabam (se faltar, substitua por qualquer coisa); os 5 cubos fantasma brancos; o saco do dragão com os 24 cubos pretos dentro.
-4. Empilhe os 7 Artifacts virados para cima, em ordem de valor: o de 5 pontos em cima, o de 20 embaixo.
-5. Separe segredos maiores, segredos menores e prisioneiros, e embaralhe cada tipo virado para baixo, em pilhas separadas.
-6. Ponha o tabuleiro do mercado no banco e empilhe nele: 2 Backpacks, 2 Blood Amulets, 3 Burglar's Kits e 3 Crowns (a de 10 pontos em cima, a de 8 embaixo).
-7. Ponha a peça inicial no centro da mesa, com qualquer face para cima, deixando espaço ao redor. Ponha os 3 Monkey Idols na sala Monkey Shrine dela. Perto da Cripta, empilhe um Mastery token por jogador e devolva os outros à caixa.
-8. Monte a reserva longe da peça inicial: o Goblin e três pilhas, uma de Mercenary, uma de Explore, uma de Secret Tome.
-9. Embaralhe o baralho da masmorra e abra 6 cartas: essa é a fileira da masmorra. Toda carta com o símbolo de ataque do dragão na borda direita é trocada por outra, até que as 6 cartas abertas não tenham o símbolo. Embaralhe as trocadas de volta no baralho. Deixe espaço para o descarte da masmorra.
-10. Cada jogador escolhe uma cor, pega os 30 cubos dela, põe o peão na Cripta (fora da masmorra), pega 3 Lockpicks do banco e o baralho inicial de 10 cartas (6 Burgle, 2 Stumble, 1 Sidestep, 1 Scramble), embaralha e compra 5.
-11. Escolham quem começa (o manual sugere o jogador mais sorrateiro). A ordem segue no sentido horário. O primeiro põe 3 cubos seus na área de Clank!, o segundo põe 2, o terceiro 1 e o quarto nenhum.
-12. Se alguma carta da fileira tiver um texto marcado **Arrive**, resolva esse texto antes do primeiro turno (p. 11).
-
-> [!atencao] O peão começa na Cripta, que fica na peça inicial mas fora da masmorra. A Cripta é também a única saída: é para lá que você precisa voltar.
-
-## 4. Como funciona um turno
-
-A partida não tem rodadas com fases. Cada pessoa joga o seu turno inteiro, e o jogo segue no sentido horário. Um turno tem duas partes: o que você faz e o fechamento.
-
-**O que você faz.** Você começa com 5 cartas na mão. A única obrigação é jogar todas antes de encerrar, na ordem que quiser. Cada carta jogada vai para a sua **área de jogo**, à sua frente, e fica lá até o fim do turno (p. 6).
-
-Os recursos se acumulam num caixa comum: se você joga duas cartas com 1 Skill cada, tem 2 Skill para gastar. Você também pode dividir o que uma carta deu entre ações diferentes. E pode agir a qualquer momento: jogar as cinco cartas e só então agir, ou jogar uma, agir, jogar outra. Cada ação pode ser repetida quantas vezes você puder pagar. O que sobrar no fim do turno se perde (p. 6).
-
-O efeito de uma carta não depende da ordem. Se uma carta diz "para cada Clank! que você fizer neste turno, ganhe 1 de ouro", ela conta também o barulho feito antes de ela ser jogada (p. 6).
-
-**O barulho na prática.** "+1 Clank!" quer dizer: tire 1 cubo do seu suprimento e ponha na área de Clank!. Se o seu suprimento estiver vazio, você não põe nada. "-2 Clank!" quer dizer: tire 2 cubos seus da área de Clank!. Se você não tiver cubos lá, guarde o desconto: ele vale para barulho que você fizer mais tarde no mesmo turno. No fim do turno, desconto não usado se perde (p. 6).
-
-**Puxar cartas** para a mão, quando uma carta manda, é sempre do seu baralho, nunca do baralho da masmorra. Se o seu baralho acabar, embaralhe o seu descarte para formar um novo. As cartas da área de jogo não entram nesse embaralhamento (p. 6).
-
-**O fechamento**, quando você declara o fim do turno, segue esta ordem (p. 12):
-
-1. Todas as cartas da área de jogo vão para o seu descarte, que fica virado para cima. Você puxa 5 cartas novas do seu baralho para o próximo turno.
-2. A fileira da masmorra é completada até ter 6 cartas, com cartas do baralho da masmorra.
-3. Se alguma carta nova tiver um texto **Arrive**, ele é resolvido assim que ela aparece. Depois, se alguma das cartas que acabaram de entrar tiver o símbolo de ataque do dragão (um dragão roxo na borda direita da carta), o dragão ataca. É um ataque só, mesmo que tenham entrado vários símbolos. Cartas que já estavam na fileira não atacam de novo.
-
-Por isso a fileira não é reposta no meio do turno: quando você compra uma carta, vence um monstro ou usa um Device, o espaço fica vazio até o fechamento (p. 7). Cada carta que você tira da fileira é uma carta nova que entra no fim do turno, e uma chance a mais de aparecer o símbolo do dragão.
-
-## 5. As ações
-
-São oito ações. As quatro primeiras gastam recursos de carta; as outras dependem da sala onde você está.
-
-### Comprar uma carta (Skill)
-
-Pague em Skill o custo do canto inferior direito. Pode ser uma carta de faixa azul da fileira da masmorra ou uma carta de faixa amarela da reserva. A carta comprada vai para o seu **descarte**, não para a mão: ela só vai ser útil quando você embaralhar o descarte e ela voltar à sua mão em outro turno. A reserva tem estoque limitado e pode acabar (p. 7).
-
-Algumas cartas têm um texto **Acquire**. Ele vale uma vez só, na hora em que você compra a carta da fileira, não quando você a joga depois (p. 11).
-
-### Usar um Device (Skill)
-
-Device é a carta de faixa roxa da fileira. Pague o custo em Skill e faça na hora o que está escrito em USE. Depois ela vai para o descarte da masmorra, não para o seu (p. 7).
-
-### Enfrentar um monstro (Swords)
-
-Monstro é a carta de faixa vermelha. O canto inferior direito mostra quantas Swords ele exige. Pague e ganhe o que está escrito em DEFEAT; o monstro vai para o descarte da masmorra (p. 7).
-
-O Goblin, na reserva, é uma exceção: ele não é descartado quando vencido. Qualquer pessoa pode enfrentá-lo várias vezes no mesmo turno, e ganha a recompensa a cada vez. Ele pede 2 Swords e dá 1 de ouro (p. 7; valores impressos na carta mostrada na p. 2).
-
-### Mover-se (Boots)
-
-Mover-se é atravessar um túnel de uma sala até a sala vizinha. Todo túnel custa pelo menos 1 Boot. Alguns túneis têm ícones que mudam o preço (p. 7):
-
-- **Pegadas:** o túnel custa 2 Boots em vez de 1.
-- **Monstro:** cada ícone de monstro causa 1 dano em você ao atravessar. Cada Sword gasto evita o dano de um ícone. Gastar Swords aqui é opcional.
-- **Cadeado:** você só passa gastando um Lockpick do seu suprimento, que fica em cima do cadeado. A partir daí o túnel está destrancado para todo mundo, até o fim da partida. Se o mesmo túnel tiver dois cadeados (um de cada peça), é um Lockpick para cada.
-- **Seta:** o túnel tem mão única. Só se anda no sentido da seta.
-
-Os ícones somam. Um túnel com pegadas e um monstro custa 2 Boots e causa 1 dano, que você pode evitar com 1 Sword.
-
-### Comprar no mercado (ouro)
-
-Numa sala de mercado, você pode comprar qualquer item do tabuleiro do mercado por 7 de ouro, pagos ao banco. Pode comprar mais de um, inclusive repetidos (p. 8). Os itens (p. 18):
-
-- **Backpack:** permite carregar um segundo Artifact. Vale 5 pontos.
-- **Blood Amulet:** só pode ser comprado por quem tem pelo menos 5 de dano. Cura 2 na hora e vale 7 pontos.
-- **Burglar's Kit:** dá 2 Lockpicks na hora. Vale 2 pontos.
-- **Crown:** vale os pontos impressos. Quem compra leva sempre a mais valiosa que sobrou.
-
-### Pegar um Artifact
-
-Numa sala com Artifact, você pode pegá-lo a qualquer momento do seu turno. Não é obrigatório pegar ao chegar. Mas, uma vez pego, ele é seu: você não pode pegar outro se já tem um, a menos que tenha um Backpack. Ao pegar um Artifact, o marcador do dragão sobe 1 casa na trilha de fúria, o que deixa todos os ataques seguintes maiores (p. 8 e 18).
-
-### Abrir um baú, uma biblioteca ou uma prisão (Lockpick)
-
-Algumas salas têm um desses recursos trancados. Estando na sala, você pode gastar 1 Lockpick e cobri-lo com ele: ninguém mais o abre nesta partida (p. 8).
-
-- **Baú:** pegue um segredo maior sorteado e revele.
-- **Biblioteca:** pegue um Secret Tome da reserva, de graça, e ponha no seu descarte.
-- **Prisão:** liberte dois prisioneiros: pegue duas fichas de prisioneiro sorteadas e deixe-as abertas no seu suprimento. Algumas têm efeito imediato: o Adventurer faz a fúria subir 1 casa, o Barbarian dá 2 Swords neste turno, o Cleric cura 1 e o Haunted Prisoner põe um cubo fantasma na área de Clank! (p. 17). Depois, elas ficam com você e valem pontos no fim.
-
-Você não pode gastar o Lockpick se não houver mais o que pegar: segredos maiores esgotados, Secret Tomes esgotados ou prisioneiros esgotados. Se só restar um prisioneiro, você pode libertá-lo (p. 8).
-
-### Marcar um Santuário (cubo)
-
-Num Santuário (Wayshrine), você pode pôr um cubo do seu suprimento num espaço vazio ao redor dele e ganhar 1 de ouro por Santuário que você já marcou na partida, contando este: o primeiro vale 1, o segundo 2, o terceiro 3. Não se marca o mesmo Santuário duas vezes, e é preciso ter cubo no suprimento. Os cubos usados aqui nunca viram barulho (p. 11).
-
-> [!exemplo] **Um turno de abertura.** Ana começa com Burgle, Burgle, Burgle, Stumble e Sidestep. Ela joga as cinco. Os três Burgle dão 3 Skill; o Sidestep dá 1 Boot; o Stumble faz +1 Clank!, e Ana põe 1 cubo vermelho na área de Clank!.
+> [!passos] **Passo a passo: preparação** (p. 4 e 5). É igual para 2, 3 ou 4 jogadores, salvo nos passos 1, 7 e 11.
 >
-> Com 3 Skill, ela não alcança um Secret Tome da reserva, que custa 7. Mas um Explore, também da reserva, custa 3. Ela compra o Explore e o põe no seu descarte. Com o Boot, ela sai da Cripta por um túnel sem ícones e chega à primeira sala da masmorra.
+> 1. Ponha o tabuleiro de Clank! num canto da mesa. A Trilha de Fúria é a coluna de pedras à direita, lida de baixo para cima; cada casa mostra quantos cubos saem da bolsa num ataque: 2, 2, 3, 3, 4, 4 e 5. As três casas de baixo têm um peão com um número. Ponha o Marcador do Dragão na casa com o número de jogadores: com 4, na primeira casa (2 cubos); com 3, na segunda (2 cubos); com 2, na terceira (3 cubos) (ilustração da p. 4).
+> 2. Separe as 28 peças quadradas pelo verso. Embaralhe as 22 das Profundezas e faça uma pilha virada para baixo no Banco. Embaralhe as 6 outras, devolva 2 à caixa sem olhar e ponha as 4 restantes em cima da pilha. Assim, as quatro primeiras peças descobertas serão sempre seguras.
+> 3. Monte o Banco: Ouro (moedas de 1, 5 e 10) e Gazuas, que não acabam (se faltar, substitua por qualquer coisa); os 5 cubos brancos de Fantasma; a Bolsa do Dragão com os 24 cubos pretos dentro.
+> 4. Empilhe os 7 Artefatos virados para cima, em ordem de valor: o de 5 pontos no topo, o de 20 na base.
+> 5. Separe Grandes Segredos, Pequenos Segredos e Prisioneiros, e embaralhe cada tipo virado para baixo.
+> 6. Ponha o Tabuleiro do Mercado no Banco e empilhe nele 2 Mochilas, 2 Amuletos de Sangue, 3 Kits de Ladrão e 3 Coroas (a de 10 pontos no topo, a de 8 na base).
+> 7. Ponha a Peça Inicial no centro da mesa, com qualquer lado para cima, deixando espaço ao redor. Ponha os 3 Ídolos de Macaco na sala do Altar dos Macacos. Perto da Cripta, empilhe uma ficha de Maestria por jogador e devolva as outras à caixa.
+> 8. Monte a Reserva longe da Peça Inicial: o Goblin e três pilhas, de Mercenário, Explorar e Tomo Secreto.
+> 9. Embaralhe o Baralho da Masmorra e abra 6 cartas: é a Fileira da Masmorra. Troque toda carta com o símbolo de Ataque do Dragão no canto direito, até haver 6 cartas sem o símbolo, e embaralhe as trocadas de volta. Deixe espaço para a pilha de descarte da Masmorra.
+> 10. Cada jogador escolhe uma cor, pega os 30 cubos dela, põe o peão na Cripta (fora da masmorra), pega 3 Gazuas do Banco e o baralho inicial de 10 cartas (6 Roubar, 2 Tropeçar, 1 Contornar, 1 Rastejar), embaralha e compra 5.
+> 11. Começa o jogador mais furtivo (ou alguém sorteado), e a ordem segue no sentido horário. O primeiro põe 3 cubos seus na área de Clank!, o segundo 2, o terceiro 1 e o quarto nenhum.
+> 12. Se alguma carta da Fileira tiver um texto **Revelar**, execute-o antes do primeiro turno (p. 11).
+
+> [!atencao] O peão começa na Cripta, que fica na Peça Inicial mas fora da masmorra. A Cripta é também a única saída.
+
+> [!suavez] **Sua vez.** Você vai montar uma partida de 3 jogadores: Ana começa, depois Bruno, depois Carla. Responda olhando só o passo a passo:
 >
-> Ela declara o fim do turno: as cinco cartas vão para o descarte, junto com o Explore, e ela compra as 5 cartas que restam no baralho inicial. Ninguém tirou carta da fileira, então nada entra e o dragão não ataca.
+> 1. Em que casa da Trilha de Fúria fica o Marcador do Dragão, e quantos cubos sairão no primeiro ataque se nada mudar?
+> 2. Quantas fichas de Maestria ficam perto da Cripta?
+> 3. Quantos cubos cada um põe na área de Clank! antes de começar?
+> 4. Na Fileira aparece uma carta com o símbolo de Ataque do Dragão. O que você faz?
+
+### Respostas da etapa 1
+
+1. Na segunda casa de baixo para cima, a do peão com o número 3. Ela mostra 2, então saem 2 cubos (passo 1).
+2. Três, uma por jogador (passo 7).
+3. Ana 3, Bruno 2, Carla 1 (passo 11).
+4. Troca por outra carta do Baralho da Masmorra até haver 6 cartas sem o símbolo, e embaralha a trocada de volta (passo 9).
+
+## 3. Etapa 2: jogar o primeiro turno
+
+> [!entender] **Para entender.** Um turno é o momento de transformar cinco cartas em ações. Os recursos se acumulam num caixa comum: duas cartas com 1 Habilidade cada dão 2 Habilidades para gastar. O que sobrar no fim do turno se perde, então o turno é um pequeno problema de orçamento (p. 6).
 >
-> O que vale observar: o Explore (2 Skill e 1 Boot) é melhor que qualquer carta inicial, mas Ana só vai usá-lo depois de embaralhar o descarte, no terceiro turno dela ou mais tarde.
-
-> [!exemplo] **Agora complete você.** Bruno tem Burgle, Burgle, Stumble, Stumble e Sidestep. Quanto de cada recurso ele tem? Quantos cubos ele põe na área de Clank!? Ele consegue comprar um Explore? Consegue enfrentar o Goblin? A resposta está na seção 10, pergunta 1.
-
-## 6. Atravessar a masmorra
-
-### Descobrir uma peça nova
-
-Quando um túnel termina na borda da masmorra e não há peça do outro lado, atravessá-lo revela o que existe além. Pegue a peça do topo da pilha no banco, vire-a e encaixe-a ao lado da peça que você está deixando (p. 9). As regras de encaixe:
-
-- A peça nova ocupa um espaço vazio. Peças nunca se empilham.
-- Você pode girá-la como quiser antes de encaixar.
-- Ela precisa encostar um lado inteiro em outra peça. A exceção é ao lado dos lados longos da peça inicial: ali, a peça nova se alinha com a metade de cima ou com a de baixo.
-- A peça nova completa o túnel por onde você saiu, e isso pode acrescentar ícones ao caminho. Se você não tiver Boots para pegadas ou Lockpick para um cadeado que apareceu, gire a peça para outra orientação (ela continua no mesmo lugar). Você também pode parar o movimento no meio para buscar ajuda: comprar uma carta, usar um Device ou vencer um monstro que lhe dê o que falta (p. 9).
-
-Se a pilha de peças acabar, ninguém mais sai pela borda (p. 9).
-
-**As Profundezas.** As quatro primeiras peças descobertas são seguras. As outras 22, mais escuras, e a metade de cima da peça inicial são as Profundezas (p. 9 e 14). Ser nocauteado nas Profundezas zera a sua pontuação, mesmo com um Artifact.
-
-**Onde os Artifacts aparecem.** Quando uma peça com sala de Artifact entra no mapa, o Artifact do topo da pilha vai para essa sala. Algumas salas de Artifact mostram um ou dois sinais de "+": nelas vai o Artifact uma ou duas posições abaixo do topo. Se a pilha tiver menos Artifacts do que os "+" pedem, vai o mais valioso que restar. Com a pilha vazia, a sala fica vazia (p. 10). Como a pilha começa com o de 5 pontos em cima e o de 20 embaixo, os Artifacts descobertos mais tarde valem mais.
-
-### Salas que dão algo ao entrar
-
-Algumas salas dão uma recompensa quando você entra: um segredo menor sorteado, um Monkey Idol (5 pontos, que não é Artifact), ouro ou a cura de 1 dano. Você não precisa terminar o turno nela, mas cada sala só dá a recompensa uma vez por turno: para ganhar de novo, é preciso sair e voltar em outro turno. Entrar em duas salas diferentes do mesmo tipo, no mesmo turno, dá as duas recompensas (p. 10 e 11).
-
-### Salas com regra própria
-
-- **Caverna de Cristal.** Ao entrar, você fica exausto: não pode gastar mais Boots neste turno. Ainda pode se teleportar, mas continua exausto (p. 10).
-- **Portal.** Você não para no portal: entra por ele e sai por qualquer outro portal de qualquer peça. O percurso inteiro, da sala de origem até a sala de chegada, custa 1 Boot só. Os ícones dos túneis ligados aos portais continuam valendo. Cartas de teleporte também passam por portais, como se as salas dos dois lados fossem vizinhas. Depois, você pode seguir andando se tiver mais Boots (p. 10).
-- **Peça assombrada.** Quatro das peças das Profundezas são assombradas. Quando uma delas entra no mapa, um cubo fantasma do banco vai para a área de Clank! (p. 10). O efeito dele aparece no ataque.
-- **Cripta.** Só se volta com um Artifact (p. 10).
-
-### Teleporte
-
-Algumas cartas mandam você se teleportar, quase sempre para uma sala vizinha. Teleporte não custa Boots, ignora os ícones do túnel, permite ir contra a seta e permite sair pela borda e descobrir peça nova (p. 11).
-
-> [!exemplo] **Gastar Swords no túnel ou no Goblin.** Alguns turnos depois, Ana tem na mão Explore, Explore, Mercenary, Sidestep e Burgle: 6 Skill, 2 Swords e 3 Boots. Para chegar à sala que ela quer, precisa atravessar um túnel com pegadas e depois um túnel com dois ícones de monstro.
+> As cartas que você adquire não vão para a mão: vão para a sua pilha de descarte. Elas só voltam quando o seu baralho acaba e você embaralha o descarte. Por isso uma carta boa adquirida hoje rende daqui a alguns turnos, e o jogo recompensa quem melhora o baralho cedo (p. 7).
 >
-> O primeiro túnel custa 2 Boots. O segundo custa 1 Boot, e os três Boots acabam ali. Os dois ícones de monstro causam 2 danos, a menos que ela gaste Swords.
+> O barulho é o preço de várias cartas. Cartas como Tropeçar fazem barulho sem dar nada em troca; outras tiram barulho. O que conta é quantos cubos seus estão na área de Clank! quando o dragão atacar.
+
+> [!passos] **Passo a passo: o turno e as primeiras ações** (p. 6 e 7)
 >
-> Ela tem duas escolhas. Gastar as 2 Swords nos ícones e chegar sem dano nenhum. Ou guardar as Swords para enfrentar o Goblin, que dá 1 de ouro, e aceitar 2 danos: 2 cubos do suprimento dela vão para o medidor de vida. Ana prefere chegar inteira: 1 de ouro não paga dois cubos no medidor tão cedo.
+> 1. Você começa com 5 cartas na mão e é obrigado a jogar todas antes de encerrar, na ordem que quiser. Cada carta jogada fica na sua área de jogo até o fim do turno.
+> 2. Pode agir a qualquer momento: antes, entre ou depois das cartas. Cada ação pode ser repetida quantas vezes você puder pagar. Os recursos de uma carta podem ser divididos entre ações.
+> 3. O efeito de uma carta não depende da ordem em que você joga. Uma carta que dá Ouro "para cada Clank! que você fizer neste turno" conta também o barulho feito antes dela (p. 6).
+> 4. **+1 Clank!:** ponha 1 cubo do seu suprimento na área de Clank!. Com o suprimento vazio, não põe nada. **-2 Clank!:** tire 2 cubos seus da área de Clank!. Se não houver cubos seus lá, o desconto fica guardado para barulho que você fizer mais tarde no mesmo turno. No fim do turno, desconto não usado se perde.
+> 5. **Comprar cartas**, no manual brasileiro, é puxar do seu próprio baralho para a mão, nunca do Baralho da Masmorra. Se o seu baralho acabar, embaralhe o seu descarte, sem as cartas da área de jogo.
+> 6. **Adquirir uma Carta:** pague em Habilidade o custo do canto inferior direito. Pode ser uma carta de faixa azul da Fileira ou uma de faixa amarela da Reserva. Ela vai para o seu descarte. Não reponha a Fileira agora. A Reserva tem estoque limitado. O texto **Adquirir** de uma carta, se houver, acontece uma vez, na hora da aquisição na Fileira (p. 11).
+> 7. **Movimentação:** cada túnel custa pelo menos 1 Bota. Nesta etapa, use só túneis sem ícones; os ícones ficam para a etapa 4.
+
+> [!resolvido] **Exemplo resolvido.** Ana começa com Roubar, Roubar, Roubar, Tropeçar e Contornar. Ela joga as cinco. Os três Roubar dão 3 Habilidades; o Contornar dá 1 Bota; o Tropeçar faz +1 Clank!, e ela põe 1 cubo vermelho na área de Clank!.
 >
-> Sobram 6 Skill, que ela usa em dois Explores da reserva (3 cada). Nenhum dos dois recursos se perdeu.
-
-> [!dica] Os Lockpicks iniciais são poucos (3) e servem a duas coisas: abrir túneis trancados e abrir baús, bibliotecas e prisões. Pense antes de gastar o último. Dá para conseguir mais com o Burglar's Kit do mercado e com o segredo menor Lockpick (p. 18).
-
-## 7. O fim do turno e o dragão
-
-Quando o fechamento põe na fileira uma carta com o símbolo de ataque, o dragão ataca (p. 12):
-
-1. Todos os cubos da área de Clank! vão para o saco do dragão.
-2. Sacuda o saco e tire tantos cubos quanto o número da casa onde está o marcador do dragão na trilha de fúria. Para cada carta com **Danger** na fileira, tire 1 cubo a mais (p. 11).
-3. Cubo preto vai para o banco e não fere ninguém. Cubo colorido é 1 dano para o dono da cor, e vai para o medidor de vida dele.
-4. Cubo fantasma: **todos** os jogadores tomam 1 dano, cada um com um cubo do próprio suprimento. Quem não tiver cubo no suprimento usa um cubo preto separado no banco. Terminado o ataque, os fantasmas sorteados voltam para a área de Clank! e entram no saco de novo no próximo ataque.
-5. Os cubos não sorteados ficam no saco.
-
-O último ponto é o mais importante. O barulho não desaparece: ele se acumula no saco, ataque após ataque, e cada novo cubo seu aumenta a chance de você se ferir na próxima vez.
-
-Se uma carta nova trouxer um texto **Arrive**, ele é resolvido assim que a carta aparece, antes do ataque (p. 11).
-
-Nas regras do manual, a fúria do dragão só aumenta. O marcador avança 1 casa sempre que alguém pega um Artifact e também com alguns segredos e prisioneiros (o Dragon Egg e o Adventurer, por exemplo). Quanto mais alta a casa, mais cubos por ataque (p. 12, 17 e 18).
-
-> [!exemplo] **Um ataque.** Numa partida de 2 jogadores, na área de Clank! estão 2 cubos vermelhos (Ana), 3 azuis (Bruno) e 1 cubo fantasma, que entrou quando alguém descobriu uma peça assombrada. O marcador do dragão está na quinta casa da trilha de fúria, que mostra 4 (é a situação do exemplo da p. 13). A fileira não tem nenhuma carta Danger.
+> Com 3 Habilidades, ela não alcança um Tomo Secreto, que custa 7. Um Explorar custa 3: ela o adquire e o põe no descarte. Com a Bota, sai da Cripta por um túnel sem ícones e chega à primeira sala da masmorra.
 >
-> Os seis cubos vão para o saco, que ainda tem cubos pretos e cubos de ataques anteriores. Saem 4: um preto, um azul, o fantasma e um vermelho.
+> Ela encerra o turno: as cinco cartas vão para o descarte, onde já está o Explorar, e ela compra as 5 cartas que restam no baralho inicial. Ninguém tirou carta da Fileira, então nada entra e o dragão não ataca.
 >
-> O preto vai para o banco. O azul é 1 dano para Bruno. O vermelho é 1 dano para Ana. O fantasma é 1 dano para os dois, cada um com um cubo do próprio suprimento. Resultado: Ana toma 2 danos, Bruno também. O fantasma volta para a área de Clank!. Os outros cubos coloridos (1 vermelho e 2 azuis) continuam no saco.
+> Por que essa escolha: o Explorar (2 Habilidades e 1 Bota) é melhor que qualquer carta inicial, mas Ana só vai usá-lo depois de embaralhar o descarte, no terceiro turno dela ou mais tarde.
 
-### Vida, dano e cura
+> [!complete] **Complete.** Bruno tem Roubar, Roubar, Tropeçar, Tropeçar e Contornar. Já somamos: 2 Habilidades e 1 Bota. Falta você dizer: quantos cubos ele põe na área de Clank!, se ele consegue adquirir um Explorar e se consegue combater o Goblin.
 
-Cada dano é um cubo da sua cor no seu medidor de vida, a partir da casa mais à esquerda. No ataque, o cubo é o que saiu do saco. Fora do ataque (um túnel com monstro, por exemplo), o cubo sai do seu suprimento (p. 12).
+> [!suavez] **Sua vez.** Carla tem Roubar, Roubar, Roubar, Roubar e Tropeçar, e está na Cripta. O que ela pode fazer neste turno, e o que não pode?
 
-Você não pode escolher tomar dano fora do ataque, como atravessar um monstro sem gastar Sword, se não tiver cubos no suprimento ou se esse dano encheria o seu medidor (p. 12).
-
-Curar é devolver um cubo do medidor para o suprimento. Ele volta a servir de barulho mais tarde (p. 12).
-
-O medidor tem 10 casas, do coração até a caveira (ilustração da p. 12). Se ele encher, ou seja, no décimo dano, você está **nocauteado** (p. 12).
-
-## 8. O fim da partida e a pontuação
-
-### Fugir
-
-Você **foge** quando chega à Cripta com um Artifact. Termine o resto do turno; depois, antes de completar a fileira, tire o seu peão do tabuleiro e pegue um Mastery token, que vale 20 pontos (p. 14).
-
-### Ser nocauteado
-
-Com o medidor de vida cheio, deite o seu peão. Se você não tem Artifact, ou se o peão está nas Profundezas, sua pontuação é zero (p. 14). Se você tem Artifact e caiu fora das Profundezas, conta os pontos normalmente, mas sem o Mastery token, que é só de quem foge.
-
-### Depois de sair do jogo
-
-Quem fugiu ou foi nocauteado não joga mais turnos normais: não compra nem joga cartas, não faz barulho, não é afetado por cartas que atingem "todos os jogadores" e não toma dano do saco. Mas o turno dessa pessoa continua existindo, e nele ela faz o papel do dragão. Ela pega todos os cubos da área de Clank!, põe no saco e tira exatamente 4 cubos (6 numa partida de 2 jogadores), ignorando a trilha de fúria e as cartas Danger. Os ferimentos são aplicados como num ataque (p. 14).
-
-Ou seja: quem foge primeiro aumenta a pressão sobre quem ficou.
-
-A partida termina quando todos fugiram ou foram nocauteados (p. 14). Há dois casos raros em que ela termina na hora, e todos os que ainda estão na masmorra são nocauteados: quando o baralho da masmorra não tem cartas para completar a fileira, e quando o saco do dragão fica vazio depois de um ataque (p. 12).
-
-### Contar os pontos
-
-Só pontua quem tem um Artifact e não foi nocauteado nas Profundezas. Essa pessoa soma (p. 14):
-
-- o valor do Artifact;
-- os pontos das outras fichas: Mastery token, Monkey Idols, prisioneiros, itens do mercado e segredos que valem pontos;
-- 1 ponto por ouro. As fichas Treasure e Greater Treasure contam como 2 e 5 de ouro (p. 18);
-- os pontos das cartas do baralho inteiro: o que está no baralho, na mão e no descarte (canto superior direito de cada carta).
-
-Vence quem tiver mais pontos. Em caso de empate, vence quem tiver o Artifact mais valioso (p. 14).
-
-> [!edicao] O Backpack permite carregar um segundo Artifact (p. 18). A regra de pontuação fala em "o valor do Artifact", no singular, mas também manda somar as outras fichas que você pegou, e um segundo Artifact é uma ficha (p. 14). O manual não resolve o caso de forma explícita; a leitura mais provável é que os dois contam. Combine com a mesa antes da partida.
-
-> [!exemplo] **Três finais.** Numa partida de 3 jogadores:
+> [!treino] **Treino rápido: recursos e barulho.** Para cada mão, diga quantas Habilidades, Espadas e Botas ela gera e quantos cubos o dono deixa na área de Clank! no fim do turno (comece com nenhum cubo dele lá).
 >
-> Ana foge com o Artifact de 15 pontos. Ela tem o Mastery token (20), um Monkey Idol (5), 9 de ouro, um Secret Tome no baralho (7 pontos), um Sneak Attack (1 ponto) e um prisioneiro Peasant (2). Total: 15 + 20 + 5 + 9 + 7 + 1 + 2 = **59 pontos**.
+> a) Roubar, Roubar, Tropeçar, Tropeçar, Explorar
 >
-> Bruno pegou o Artifact de 20, o melhor da partida, mas foi nocauteado numa peça escura, nas Profundezas: **0 ponto**.
+> b) Ataque Surpresa (3 Espadas e -2 Clank!), Tropeçar, Roubar, Roubar, Contornar
 >
-> Carla foi nocauteada numa das quatro peças seguras, com o Artifact de 10, 12 de ouro e 3 pontos em cartas. Ela pontua, mas sem Mastery token: 10 + 12 + 3 = **25 pontos**.
+> c) Mercenário, Mercenário, Explorar, Roubar, Tropeçar
 >
-> Ana vence. O Artifact de Bruno não conta para nada, nem para desempate.
+> d) A mesma mão de b, mas jogando o Tropeçar antes do Ataque Surpresa. Muda alguma coisa?
 
-## 9. Situações especiais
+### Respostas da etapa 2
 
-**Descartar uma carta.** Algumas cartas pedem que você descarte outra. Só vale para carta que ainda está na mão, sem ter sido jogada, e ela vai para o descarte sem produzir efeito. É um jeito de se livrar de um Stumble sem fazer barulho. Se o descarte é o preço de alguma coisa, sem carta para descartar você não ganha a coisa (p. 11).
+- **Complete (Bruno):** 2 cubos. Não adquire o Explorar, que custa 3. Não combate o Goblin, que exige 2 Espadas. Com 2 Habilidades, pode adquirir uma carta ou usar um Dispositivo de custo até 2, se houver na Fileira, e andar um túnel sem ícones (p. 6 e 7).
+- **Sua vez (Carla):** 4 Habilidades, nenhuma Bota e +1 Clank!. Ela pode adquirir um Explorar (3) e perde a Habilidade que sobra, ou adquirir outra carta de custo até 4. Ela não pode sair da Cripta, porque não tem Bota. O cubo do Tropeçar vai para a área de Clank! de qualquer jeito.
+- **Treino a:** 4 Habilidades, 0 Espadas, 1 Bota, 2 cubos.
+- **Treino b:** 2 Habilidades, 3 Espadas, 1 Bota, nenhum cubo. O Tropeçar põe 1 cubo e o Ataque Surpresa tira esse cubo; sobra um desconto de 1 que se perde no fim do turno.
+- **Treino c:** 5 Habilidades, 4 Espadas, 1 Bota, 1 cubo.
+- **Treino d:** não muda nada. A ordem não altera o resultado (p. 6; é a situação do exemplo da p. 13).
 
-**Trash.** Algumas cartas e fichas mandam eliminar ("trash") uma carta. Ela sai do jogo e vai para a caixa. É o melhor destino para as cartas fracas do baralho inicial (p. 11).
+## 4. Etapa 3: fechar o turno e enfrentar o dragão
 
-**Quando "cada jogador" faz algo** e a ordem importa (girar uma peça, por exemplo), começa quem está jogando ou terminando o turno, e segue no sentido horário. Quem fugiu ou foi nocauteado fica de fora (p. 11).
+> [!entender] **Para entender.** O dragão não ataca em turnos fixos. Ele ataca quando uma carta nova com o símbolo de Ataque do Dragão entra na Fileira. Cada carta que alguém tira da Fileira abre um espaço, e cada espaço é uma carta nova no fim do turno: é assim que a pressão cresce.
+>
+> O ataque é um sorteio. Quanto mais cubos seus estiverem na bolsa, maior a chance de um deles sair. E a fúria do dragão aumenta durante a partida: cada Artefato pego faz o Marcador subir uma casa, e casas mais altas tiram mais cubos (p. 12). No começo, o barulho custa pouco; perto do fim, custa caro.
 
-**Segredos e prisioneiros.** As fichas estão descritas na folha de referência, nas páginas 17 e 18 do manual. Algumas fazem efeito na hora e saem do jogo: Greater Skill Boost dá 5 Skill (p. 18). Outras ficam com você até serem usadas: Potion of Swiftness dá 1 Boot quando você quiser, no seu turno. E algumas só valem pontos no fim, às vezes com condição: o Mayor vale 5 se você tiver um Mastery token. As fichas de uso único voltam para a caixa depois de usadas. O Discount Coupon desconta 5 de ouro uma vez no mercado e não é prisioneiro para nenhum efeito (p. 17 e 18).
+> [!passos] **Passo a passo: fim do turno** (p. 12)
+>
+> 1. Ponha todas as cartas da área de jogo no seu descarte, virado para cima, e compre 5 cartas do seu baralho.
+> 2. Reponha a Fileira da Masmorra até ter 6 cartas. Se uma carta nova tiver texto **Revelar**, execute-o assim que ela aparecer, antes de qualquer ataque (p. 11).
+> 3. Se alguma das cartas novas tiver o símbolo de Ataque do Dragão (um dragão na borda direita), o dragão ataca. É um ataque só, mesmo que entrem vários símbolos. Cartas que já estavam na Fileira não atacam de novo.
 
-**Golden Monkey Bot.** Esse prisioneiro conta como Monkey Idol para tudo, mas vale 3 pontos em vez de 5 (p. 17).
+> [!passos] **Passo a passo: Ataque do Dragão** (p. 11 e 12)
+>
+> 1. Todos os cubos da área de Clank! vão para a Bolsa do Dragão.
+> 2. Tire tantos cubos quanto o número da casa do Marcador na Trilha de Fúria, mais 1 para cada carta de **Perigo** na Fileira.
+> 3. Cubo preto: vai para o Banco e não fere ninguém. Cubo colorido: 1 de dano para o dono, e o cubo vai para o Contador de Pontos de Vida dele.
+> 4. Cubo de Fantasma: **todos** os jogadores sofrem 1 de dano, cada um com um cubo do próprio suprimento (quem não tiver usa um cubo preto separado no Banco). Depois do ataque, os Fantasmas voltam para a área de Clank!.
+> 5. Os cubos não sorteados ficam na bolsa.
 
-**Catacombs Map.** Esse segredo maior deixa você andar em túneis de mão única no sentido contrário (p. 18).
+> [!passos] **Passo a passo: vida, dano e cura** (p. 12)
+>
+> - O Contador de Pontos de Vida tem 10 casas, do coração à caveira (ilustração da p. 12). O dano entra da esquerda para a direita.
+> - No ataque, o cubo do dano é o que saiu da bolsa. Fora do ataque (um túnel com Monstro, por exemplo), o cubo sai do seu suprimento.
+> - Você não pode escolher sofrer dano fora do ataque se não tiver cubos no suprimento ou se isso fosse encher o seu Contador.
+> - Curar é devolver um cubo do Contador ao suprimento.
+> - Contador cheio, no décimo dano: você está **nocauteado**.
 
-**Recursos que acabam.** Ouro e Lockpicks não acabam. A reserva acaba, e os itens do mercado também. Os Artifacts acabam (sala de Artifact descoberta depois disso fica vazia). Segredos maiores, Secret Tomes e prisioneiros acabam, e com eles a possibilidade de gastar Lockpick em baú, biblioteca e prisão. Segredos menores acabam, e a sala que os dava deixa de dar (p. 4, 7, 8 e 10).
+> [!resolvido] **Exemplo resolvido.** Partida de 2 jogadores. Na área de Clank! estão 2 cubos vermelhos (Ana), 3 azuis (Bruno) e 1 de Fantasma, que entrou quando alguém revelou uma peça assombrada. O Marcador está na quinta casa, que mostra 4; não há carta de Perigo na Fileira.
+>
+> Os seis cubos vão para a bolsa. Saem 4: um preto, um azul, o Fantasma e um vermelho. O preto vai para o Banco. O azul é 1 de dano para Bruno; o vermelho, 1 para Ana; o Fantasma, 1 para cada um, com cubos do próprio suprimento. Resultado: 2 de dano para cada. O Fantasma volta para a área de Clank!, e 1 vermelho e 2 azuis continuam na bolsa.
+>
+> Por que importa: os cubos que ficaram vão disputar o próximo sorteio junto com o barulho novo.
 
-**Suprimento sem cubos.** Sem cubos no suprimento, você não faz barulho (o "+Clank!" é ignorado), não marca Santuário e não pode escolher tomar dano fora do ataque (p. 6, 11 e 12).
+> [!complete] **Complete.** Partida de 3 jogadores: Ana (vermelho), Bruno (azul) e Carla (verde). O Marcador está na quarta casa, que mostra 3, e há uma carta de Perigo na Fileira, então saem 4 cubos. Saem: azul, Fantasma, verde e preto. O preto vai para o Banco e o azul é 1 de dano para Bruno. Termine: quanto dano cada um sofre no total, e para onde vai o Fantasma?
 
-**Cinco ou seis jogadores.** A página 15 do manual explica como misturar Catacombs com a expansão *Adventuring Party*. Este tutorial não cobre esse modo.
+> [!suavez] **Sua vez.** No fim do turno de Bruno, entram duas cartas novas na Fileira, as duas com o símbolo de Ataque do Dragão. Uma terceira carta com o símbolo já estava lá desde o turno anterior. Uma das novas tem um texto Revelar. Em que ordem as coisas acontecem, e quantos ataques há?
 
-## 10. Verifique se você aprendeu
+> [!treino] **Treino rápido: quantos cubos saem?**
+>
+> a) Marcador na terceira casa, nenhuma carta de Perigo.
+>
+> b) Marcador na sexta casa, duas cartas de Perigo.
+>
+> c) Marcador na quinta casa e uma carta de Perigo, mas o ataque é no turno de um jogador que já escapou, numa partida de 3 jogadores (veja a etapa 5).
 
-Responda antes de olhar as respostas, que vêm logo depois.
+### Respostas da etapa 3
 
-1. Bruno tem Burgle, Burgle, Stumble, Stumble e Sidestep (exemplo da seção 5). Quanto de cada recurso ele tem, quantos cubos põe na área de Clank!, e ele consegue comprar um Explore ou enfrentar o Goblin?
-2. Ana joga um Stumble (+1 Clank!) e depois um Sneak Attack (-2 Clank!). Não havia cubo dela na área de Clank! antes. Mais tarde no mesmo turno, ela joga outro Stumble. Quantos cubos dela estão na área de Clank! no fim do turno?
-3. Você tem 2 Boots e 1 Sword. O túnel à frente tem pegadas e um ícone de monstro. Você pode atravessar? O que acontece?
-4. Você comprou uma carta da fileira e venceu um monstro da fileira. Quando os espaços vazios são preenchidos? Se as duas cartas novas tiverem o símbolo de ataque, quantos ataques acontecem?
-5. O marcador do dragão está numa casa que mostra 3, e a fileira tem uma carta Danger. Quantos cubos saem do saco no ataque? E se, em vez de um ataque normal, for o turno de um jogador que já fugiu, numa partida de 4?
-6. Você está numa sala com um Artifact de 15 pontos e já carrega o de 10. Você não tem Backpack. Pode trocar?
-7. Você entra numa sala que dá 1 de ouro, sai e volta a ela no mesmo turno. Quanto de ouro ganha?
-8. Você chega a uma Caverna de Cristal com 2 Boots ainda não gastos e uma carta que permite se teleportar para uma sala vizinha. O que você pode fazer?
+- **Complete:** Ana 1 (o Fantasma), Bruno 2 (azul e Fantasma), Carla 2 (verde e Fantasma). O Fantasma volta para a área de Clank! depois do ataque.
+- **Sua vez:** primeiro o texto Revelar é executado, assim que a carta aparece. Depois há **um** ataque, porque entraram cartas novas com o símbolo. A carta antiga não conta (p. 11 e 12).
+- **Treino a:** 3. **Treino b:** 4 da casa mais 2 de Perigo, 6. **Treino c:** 4, porque no turno de quem saiu do jogo a trilha e o Perigo são ignorados; numa partida de 2 seriam 6 (p. 14).
 
-### Respostas
+## 5. Etapa 4: explorar a masmorra
 
-1. **2 Skill, 1 Boot, 2 cubos.** Ele não compra o Explore, que custa 3. Não enfrenta o Goblin, que exige 2 Swords, porque não tem nenhuma. O que ele pode fazer: andar um túnel sem pegadas e comprar uma carta ou usar um Device de custo 2 ou menos, se houver na fileira. (Regras de recurso e de custo: p. 6 e 7.)
-2. **Nenhum.** O Stumble põe 1 cubo; o Sneak Attack tira esse cubo e deixa um desconto de 1, que vale para barulho feito depois no mesmo turno. O segundo Stumble seria 1 cubo, anulado pelo desconto. (p. 6; o começo é a situação do exemplo da p. 13.)
-3. **Sim.** As pegadas custam os 2 Boots. O ícone de monstro causa 1 dano, que você pode evitar gastando a Sword. Se não gastar, 1 cubo do seu suprimento vai para o medidor, desde que você tenha cubo e que isso não encha o medidor. (p. 7 e 12.)
-4. **No fechamento do turno**, no passo 2, depois de você descartar e comprar a mão nova. Com dois símbolos novos, **um ataque só**. (p. 7 e 12.)
-5. **4 cubos** no ataque: 3 da casa mais 1 da carta Danger. No turno de quem fugiu, **4 cubos**, porque a trilha e as cartas Danger são ignoradas; numa partida de 2 seriam 6. (p. 11, 12 e 14.)
-6. **Não.** Você não pode pegar um Artifact se já tem um, e não existe regra de troca: o primeiro Artifact pego é o seu. Por isso o manual recomenda escolher com cuidado. (p. 8.)
-7. **1.** Cada sala dá a recompensa uma vez por turno; é preciso voltar em outro turno. Duas salas diferentes que dão ouro dariam as duas. (p. 10 e 11.)
-8. **Pode se teleportar, mas não pode gastar os Boots.** A Caverna deixa você exausto até o fim do turno; o teleporte não usa Boots e continua permitido, e você segue exausto. (p. 10 e 11.)
+> [!entender] **Para entender.** Andar custa Botas, e o caminho tem obstáculos que custam mais: Botas extras, ferimentos, Gazuas. A masmorra também paga: salas que dão Ouro, cura ou segredos, mercados, prisões, e os Artefatos.
+>
+> Como a pilha de Artefatos começa com o de 5 pontos no topo e o de 20 na base, os Artefatos encontrados mais tarde valem mais. Mas as peças descobertas depois das quatro primeiras são as Profundezas, onde cair custa a partida inteira (p. 4, 10 e 14). Explorar é decidir até onde ir.
 
-Se você errou a 2, a 5 ou a 8, releia as seções 4 e 7: são os pontos que mais pesam numa partida.
+> [!passos] **Passo a passo: túneis** (p. 7)
+>
+> - **Pegada:** o túnel custa 2 Botas em vez de 1.
+> - **Monstro:** cada ícone causa 1 de dano ao atravessar. Cada Espada gasta evita o dano de um ícone. Gastar Espadas aqui não é obrigatório.
+> - **Cadeado:** só passa quem gasta uma Gazua do suprimento, que fica sobre o ícone. O túnel fica destrancado para todos até o fim da partida. Dois cadeados no mesmo túnel (um de cada peça) pedem uma Gazua cada.
+> - **Sentido único:** o túnel em forma de seta só pode ser usado no sentido da seta.
+>
+> Os ícones somam: um túnel com Pegada e um Monstro custa 2 Botas e causa 1 de dano, que 1 Espada evita.
 
-## 11. Para consultar durante a partida
+> [!passos] **Passo a passo: descobrir uma nova peça** (p. 9)
+>
+> 1. Um túnel que termina na borda, sem peça do outro lado, leva ao desconhecido. Ao atravessá-lo, pegue a peça do topo da pilha, revele e encaixe ao lado da peça que você está deixando.
+> 2. A peça vai num espaço vazio (nunca empilhada), pode ser girada à vontade e precisa encostar uma borda inteira em outra peça. A exceção são as bordas longas da Peça Inicial: ali a nova peça se alinha com a metade de cima ou com a de baixo.
+> 3. A peça nova completa o túnel por onde você saiu e pode acrescentar ícones a ele. Se você não tiver Botas para uma Pegada ou Gazua para um Cadeado, gire a peça para outra orientação, no mesmo lugar. Você também pode parar o movimento para buscar ajuda: adquirir uma carta, usar um Dispositivo ou combater um monstro.
+> 4. Se a peça trouxer uma sala de Artefato, o Artefato do topo da pilha vai para ela. Com um ou dois sinais de "mais" na sala, vai o Artefato uma ou duas posições abaixo do topo; se não houver tantos, o mais valioso que restar; se a pilha estiver vazia, nada (p. 10).
+> 5. Se a peça for assombrada (quatro das Profundezas são), um cubo de Fantasma do Banco vai para a área de Clank! (p. 10).
+> 6. Com a pilha de peças vazia, ninguém mais sai pela borda.
+
+> [!passos] **Passo a passo: as salas e as outras ações** (p. 7, 8, 10 e 11)
+>
+> - **Recompensas ao entrar** (Pequeno Segredo, Ídolo de Macaco, Ouro, Cura): uma vez por turno por sala. Para ganhar de novo, volte em outro turno. Duas salas diferentes do mesmo tipo valem no mesmo turno. O Ídolo de Macaco vale 5 pontos e não é Artefato.
+> - **Caverna de Cristal:** ao entrar, você fica exausto e não gasta mais Botas neste turno. O Teletransporte continua permitido, e você continua exausto.
+> - **Portal:** você não para nele. Entra e sai por qualquer outro portal da masmorra. O percurso inteiro, de sala a sala, custa 1 Bota; os ícones dos túneis ligados continuam valendo. Teletransporte também passa por portais.
+> - **Santuário de Passagem:** ação especial. Ponha um cubo do suprimento num espaço vazio e ganhe 1 de Ouro por Santuário que você já marcou, contando este (1, depois 2, depois 3). Não se marca o mesmo duas vezes, e esses cubos nunca viram barulho.
+> - **Abrir um Baú, Biblioteca ou Prisão:** gaste 1 Gazua e cubra o atributo; ninguém mais o abre. Baú: um Grande Segredo sorteado. Biblioteca: um Tomo Secreto da Reserva, de graça, no seu descarte. Prisão: dois Prisioneiros sorteados, abertos no seu suprimento; alguns têm efeito imediato, como a Aventureira (fúria sobe 1 casa), a Bárbara (2 Espadas neste turno), o Clérigo (cura 1) e o Prisioneiro Assombrado (um Fantasma na área de Clank!), e todos ficam com você para a pontuação (Guia de Fichas). Não gaste a Gazua se não houver o que pegar; o último Prisioneiro sozinho pode ser libertado.
+> - **Comprar do Mercado:** numa sala de Mercado, cada item custa 7 de Ouro. Pode repetir e comprar itens iguais. Mochila: permite carregar um segundo Artefato; vale 5 pontos. Amuleto de Sangue: só para quem tem pelo menos 5 de dano; cura 2 na hora; vale 7. Kit de Ladrão: 2 Gazuas na hora; vale 2. Coroa: vale o número impresso; quem compra leva a mais valiosa que sobrou (Guia de Fichas, p. 18 do manual original).
+> - **Usar um Dispositivo** (faixa roxa): pague em Habilidade, faça o texto USE na hora; a carta vai para o descarte da Masmorra.
+> - **Combater um Monstro** (faixa vermelha): pague em Espadas o número do canto inferior direito e ganhe a recompensa de DERROTA; a carta vai para o descarte da Masmorra. O Goblin da Reserva não vai embora: pode ser combatido várias vezes no mesmo turno.
+> - **Teletransporte:** leva a uma sala, quase sempre vizinha, sem gastar Botas, ignorando os ícones do túnel e até contra a seta. Também pode sair pela borda e descobrir peça.
+
+> [!resolvido] **Exemplo resolvido: Espadas no túnel ou no Goblin.** Ana tem Explorar, Explorar, Mercenário, Contornar e Roubar: 6 Habilidades, 2 Espadas e 3 Botas. Para chegar à sala que ela quer, precisa atravessar um túnel com Pegada e depois um túnel com dois ícones de Monstro.
+>
+> O primeiro túnel custa 2 Botas; o segundo, 1. As três Botas acabam ali. Os dois Monstros causam 2 de dano, a menos que ela gaste Espadas.
+>
+> Ela pode gastar as 2 Espadas nos ícones e chegar inteira, ou guardá-las para o Goblin, que dá 1 de Ouro, e aceitar 2 de dano: 2 cubos do suprimento no Contador. Ana prefere chegar inteira: 1 de Ouro não paga dois ferimentos tão cedo. As 6 Habilidades viram dois Explorar da Reserva (3 cada). Nenhum recurso se perdeu.
+
+> [!complete] **Complete.** Bruno está numa sala na borda da masmorra e ainda tem 1 Bota. Ele atravessa o túnel que leva à borda e revela a peça nova. Na posição em que ele a encaixaria, o túnel ganha um ícone de Pegada. O que ele pode fazer? Já sabemos que, nessa posição, o túnel custaria 2 Botas. Complete com as duas saídas que a regra permite.
+
+> [!suavez] **Sua vez.** Três situações:
+>
+> 1. Carla entra numa sala que dá 2 de Ouro, sai e volta a ela no mesmo turno. Quanto Ouro ganha?
+> 2. Ana entra numa Caverna de Cristal com 2 Botas ainda não gastas e uma carta que permite se teletransportar para uma sala vizinha. O que ela pode fazer?
+> 3. Bruno quer ir de uma sala a outra por um portal. O túnel até o portal de saída tem um ícone de Monstro, e ele não tem Espadas. Quanto custa a viagem?
+
+> [!treino] **Treino rápido: quanto custa este túnel?** Diga as Botas, as Gazuas e o dano.
+>
+> a) Um túnel sem ícones.
+>
+> b) Pegada e um Monstro, gastando 1 Espada.
+>
+> c) Cadeado e dois Monstros, sem gastar Espadas.
+>
+> d) Um túnel de sentido único, andando contra a seta, com 3 Botas.
+
+### Respostas da etapa 4
+
+- **Complete:** ele pode girar a peça para outra orientação, no mesmo lugar, em que o túnel não tenha Pegada. Ou pode interromper o movimento e conseguir mais uma Bota antes de continuar, por exemplo com um Dispositivo ou um monstro cuja recompensa dê Bota, se houver na Fileira. Adquirir uma carta não serve aqui: ela vai para o descarte, não para a mão (p. 7 e 9).
+- **Sua vez 1:** 2 de Ouro, só uma vez. Cada sala dá a recompensa uma vez por turno (p. 10).
+- **Sua vez 2:** pode se teletransportar, mas não pode gastar as Botas. Continua exausta depois (p. 10 e 11).
+- **Sua vez 3:** 1 Bota pelo percurso inteiro e 1 de dano pelo Monstro, com um cubo do suprimento, desde que ele tenha cubos e que isso não encha o Contador (p. 10 e 12).
+- **Treino a:** 1 Bota. **b:** 2 Botas, nenhum dano. **c:** 1 Bota, 1 Gazua, 2 de dano. **d:** não pode passar, com qualquer número de Botas. Só Teletransporte ou um Grande Segredo específico permitem ir contra a seta (p. 7, 11 e Guia de Fichas).
+
+## 6. Etapa 5: a partida inteira, do Artefato aos pontos
+
+> [!entender] **Para entender.** A partida termina para cada pessoa de um de dois jeitos: ela escapa ou cai. Quem escapa primeiro não sai de cena: no turno dela, ela passa a sortear cubos da bolsa contra quem ficou. Por isso a corrida pela saída aperta quem demora (p. 14).
+>
+> O Artefato é ao mesmo tempo o prêmio e o bilhete de saída. Sem ele, você não pode voltar à Cripta, e cair sem ele vale zero ponto. Pegar um Artefato também deixa o dragão mais furioso para todos.
+
+> [!passos] **Passo a passo: o fim da partida** (p. 8 e 14)
+>
+> 1. **Pegar um Artefato:** numa sala com Artefato, a qualquer momento do turno, sem obrigação de pegar ao chegar. Você não pode pegar outro se já tem um (a Mochila permite um segundo). Depois de pegar, não pode trocar nem devolver. O Marcador do Dragão sobe 1 casa.
+> 2. **Escapar:** chegue à Cripta com um Artefato. Termine o resto do turno; antes de repor a Fileira, tire o peão do tabuleiro e pegue uma ficha de Maestria (20 pontos).
+> 3. **Ser nocauteado:** Contador cheio, deite o peão. Sem Artefato, ou com o peão nas Profundezas, você faz 0 ponto. Com Artefato e fora das Profundezas, você pontua, mas sem a ficha de Maestria.
+> 4. **Quem saiu do jogo** não joga cartas, não faz barulho, não é afetado por cartas que atingem todos os jogadores e não sofre dano. No turno dessa pessoa, todos os cubos da área de Clank! vão para a bolsa e saem exatamente 4 (6 numa partida de 2 jogadores), ignorando a Trilha de Fúria e o Perigo. O dano é aplicado como num ataque.
+> 5. A partida termina quando todos escaparam ou foram nocauteados. Ela também termina na hora, com todos os que ainda estão na masmorra nocauteados, se o Baralho da Masmorra não tiver cartas para repor a Fileira, ou se a Bolsa do Dragão ficar vazia depois de um ataque (p. 12).
+> 6. **Pontos**, só para quem tem Artefato e não caiu nas Profundezas: o valor do Artefato; os pontos das outras fichas (Maestria, Ídolos de Macaco, Prisioneiros, itens do Mercado, segredos que valem pontos); 1 ponto por Ouro; os pontos das cartas do baralho inteiro, contando mão e descarte.
+> 7. **Empate:** vence quem tem o Artefato mais valioso.
+
+> [!edicao] A Mochila permite carregar um segundo Artefato, mas a pontuação fala em "o valor do próprio Artefato", no singular, e também manda somar "quaisquer outras fichas adquiridas" (p. 14). O manual não resolve o caso de forma explícita; a leitura mais provável é que os dois contam. Combine com a mesa antes de jogar.
+
+> [!resolvido] **Exemplo resolvido: três finais.** Partida de 3 jogadores.
+>
+> Ana escapa com o Artefato de 15 pontos. Tem a ficha de Maestria (20), um Ídolo de Macaco (5), 9 de Ouro, um Tomo Secreto no baralho (7), um Ataque Surpresa (1) e um Prisioneiro Aldeão (2). Total: 15 + 20 + 5 + 9 + 7 + 1 + 2 = **59 pontos**.
+>
+> Bruno pegou o Artefato de 20, o melhor da partida, mas foi nocauteado numa peça escura, nas Profundezas: **0 ponto**.
+>
+> Carla foi nocauteada numa das quatro peças seguras, com o Artefato de 10, 12 de Ouro e 3 pontos em cartas: 10 + 12 + 3 = **25 pontos**, sem ficha de Maestria.
+>
+> Ana vence. O Artefato de Bruno não conta para nada, nem para desempate.
+
+> [!complete] **Complete.** Bruno escapa com o Artefato de 12 pontos. Ele tem 6 de Ouro, uma Coroa de 10 pontos e um Tomo Secreto no baralho. Já somamos o Artefato e o Ouro: 18. Termine a conta.
+
+> [!suavez] **Sua vez.** Carla foi nocauteada numa peça segura, com o Artefato de 10, um Ídolo de Macaco, um Kit de Ladrão, 4 de Ouro e uma carta que vale 1 ponto. Diego foi nocauteado numa peça segura sem Artefato, com 30 de Ouro. Quanto cada um faz?
+
+> [!treino] **Treino rápido: pontua ou zera?**
+>
+> a) Nocauteado na metade de cima da Peça Inicial, com Artefato.
+>
+> b) Nocauteado na metade de baixo da Peça Inicial, com Artefato.
+>
+> c) Escapou com Artefato, mas sem nenhuma outra ficha nem Ouro.
+
+### Respostas da etapa 5
+
+- **Complete:** 18 + 20 (Maestria) + 10 (Coroa) + 7 (Tomo Secreto) = **55 pontos**.
+- **Sua vez:** Carla faz 10 + 5 + 2 + 4 + 1 = **22**. Diego faz **0**: sem Artefato, nada conta.
+- **Treino a:** zera. A metade de cima da Peça Inicial faz parte das Profundezas. **b:** pontua, sem a ficha de Maestria. **c:** pontua: o Artefato, a ficha de Maestria (20) e os pontos das cartas, se houver (p. 14).
+
+## 7. Situações especiais
+
+**Descartar.** Algumas cartas pedem que você descarte outra. Só vale carta na mão, ainda não jogada, e ela vai para o descarte sem efeito. É um jeito de se livrar de um Tropeçar sem fazer barulho. Se o descarte é o preço de algo, sem carta para descartar você não ganha a coisa (p. 11).
+
+**Eliminar.** Algumas cartas e fichas mandam eliminar uma carta: ela sai do jogo e vai para a caixa. É o melhor destino para as cartas fracas do baralho inicial (p. 11).
+
+**Cada Jogador.** Quando a ordem importa (girar uma peça, por exemplo), começa quem está jogando ou terminando o turno, em sentido horário, ignorando quem escapou ou foi nocauteado (p. 11).
+
+**Fichas.** O Guia de Referência de Fichas descreve segredos e prisioneiros. Algumas fichas fazem efeito na hora e voltam para a caixa; outras ficam com você até serem usadas; outras só valem pontos no fim, às vezes com condição (o Prefeito vale pontos se você tiver uma ficha de Maestria). O Cupom de Desconto tira 5 de Ouro de uma compra no Mercado e não é Prisioneiro para nenhum efeito. O Macaco Robô Dourado conta como Ídolo de Macaco para tudo, mas vale menos pontos.
+
+**O que acaba.** Ouro e Gazuas não acabam. Acabam a Reserva, os itens do Mercado, os Artefatos, os Grandes e Pequenos Segredos, os Tomos Secretos e os Prisioneiros. Sem eles, a ação ou a recompensa correspondente deixa de existir (p. 4, 7, 8 e 10). Mais Gazuas vêm do Kit de Ladrão e de um dos Pequenos Segredos.
+
+**Suprimento sem cubos.** Você não faz barulho (o "+Clank!" é ignorado), não marca Santuário e não pode escolher sofrer dano fora do ataque (p. 6, 11 e 12).
+
+**Cinco ou seis jogadores.** A p. 15 explica como misturar Catacombs com a expansão Bando de Aventureiros. Este guia não cobre esse modo.
+
+## 8. Avaliação final
+
+Responda sem consultar. Depois confira e veja o que reler.
+
+1. Você joga Tropeçar e depois Ataque Surpresa, sem cubos seus na área de Clank!. Mais tarde, joga outro Tropeçar. Quantos cubos seus ficam lá no fim do turno?
+2. Você tem 2 Botas e 1 Espada. O túnel tem Pegada e um Monstro. Pode atravessar? O que acontece?
+3. Você adquiriu uma carta da Fileira e derrotou um monstro dela. Quando os espaços são repostos? Se as duas cartas novas tiverem o símbolo de ataque, quantos ataques acontecem?
+4. Marcador numa casa que mostra 3 e uma carta de Perigo na Fileira. Quantos cubos saem? E no turno de um jogador que já escapou, numa partida de 4?
+5. Você está numa sala com o Artefato de 15 e já carrega o de 10, sem Mochila. Pode trocar?
+6. Um cubo de Fantasma sai da bolsa num ataque com 3 jogadores. Quem sofre dano?
+7. Você foi nocauteado nas Profundezas com o Artefato de 20 e 40 de Ouro. Quanto faz?
+8. Qual é a ordem do fim do turno?
+
+### Respostas da avaliação
+
+1. **Nenhum.** O desconto do Ataque Surpresa cobre o segundo Tropeçar (etapa 2).
+2. **Sim.** Gasta as 2 Botas; a Espada evita o dano, ou você sofre 1 com um cubo do suprimento (etapa 4).
+3. **No fim do turno**, no passo 2. **Um ataque** (etapa 3).
+4. **4 cubos.** No turno de quem escapou, **4**, ignorando trilha e Perigo (etapas 3 e 5).
+5. **Não.** Depois de pegar um Artefato, você não pode trocar nem devolver (p. 8; etapa 5).
+6. **Os três jogadores**, 1 de dano cada (etapa 3).
+7. **Zero** (etapa 5).
+8. Descarte e compre 5; reponha a Fileira (e execute os Revelar); verifique o ataque (etapa 3).
+
+> [!atencao] **Critério para começar a jogar.** Acertou 7 ou 8? Monte a mesa e jogue, com a folha de consulta ao lado. Errou a 1, releia a etapa 2. Errou a 2, a etapa 4. Errou a 3, a 4, a 6 ou a 8, a etapa 3. Errou a 5 ou a 7, a etapa 5. Depois refaça só as perguntas que errou.
+
+## 9. Para consultar durante a partida
 
 **Seu turno**
 1. Jogue as 5 cartas, em qualquer ordem. Todas são obrigatórias.
@@ -339,36 +358,31 @@ Se você errou a 2, a 5 ou a 8, releia as seções 4 e 7: são os pontos que mai
 
 | Ação | Paga com | Onde | Nota |
 |---|---|---|---|
-| Comprar carta | Skill | Fileira (azul) ou reserva (amarela) | Vai para o seu descarte. Acquire vale na compra |
-| Usar Device | Skill | Fileira (roxa) | Efeito na hora; carta vai para o descarte da masmorra |
-| Enfrentar monstro | Swords | Fileira (vermelha) ou Goblin | Goblin fica e pode ser enfrentado de novo |
-| Mover | Boots | Túneis | Pegadas: 2 Boots. Monstro: 1 dano por ícone, 1 Sword evita 1. Cadeado: 1 Lockpick. Seta: mão única |
-| Mercado | 7 de ouro | Sala de mercado | Pode repetir |
-| Pegar Artifact | nada | Sala com Artifact | Só um (dois com Backpack). Fúria +1 |
-| Baú, biblioteca, prisão | 1 Lockpick | Sala com o recurso | Baú: segredo maior. Biblioteca: Secret Tome. Prisão: 2 prisioneiros |
-| Santuário | 1 cubo | Santuário | Ouro = número de Santuários que você marcou |
+| Adquirir uma Carta | Habilidade | Fileira (azul) ou Reserva (amarela) | Vai para o seu descarte |
+| Usar um Dispositivo | Habilidade | Fileira (roxa) | Efeito na hora; carta vai para o descarte da Masmorra |
+| Combater um Monstro | Espadas | Fileira (vermelha) ou Goblin | O Goblin fica e pode ser combatido de novo |
+| Movimentação | Botas | Túneis | Pegada: 2 Botas. Monstro: 1 dano por ícone, 1 Espada evita 1. Cadeado: 1 Gazua. Seta: sentido único |
+| Comprar do Mercado | 7 de Ouro | Sala de Mercado | Pode repetir |
+| Pegar um Artefato | nada | Sala com Artefato | Um só (dois com Mochila); sem troca. Fúria +1 |
+| Abrir Baú, Biblioteca ou Prisão | 1 Gazua | Sala com o atributo | Grande Segredo, Tomo Secreto ou 2 Prisioneiros |
+| Marcar Santuário de Passagem | 1 cubo | Santuário | Ouro = Santuários que você já marcou |
 
-**Salas**
-- Recompensa ao entrar: uma vez por turno por sala.
-- Caverna de Cristal: sem Boots até o fim do turno; teleporte permitido.
-- Portal: 1 Boot do começo ao fim.
-- Peça assombrada: cubo fantasma na área de Clank!.
+**Salas:** recompensa ao entrar, uma vez por turno por sala. Caverna de Cristal: sem Botas até o fim do turno. Portal: 1 Bota de sala a sala. Peça assombrada: Fantasma na área de Clank!.
 
-**Fim do turno**
-1. Área de jogo para o descarte; compre 5.
-2. Complete a fileira até 6. Resolva os textos Arrive das cartas novas.
-3. Carta nova com símbolo de ataque: um ataque.
+**Fim do turno:** (1) área de jogo para o descarte, compre 5; (2) reponha a Fileira e execute os Revelar; (3) carta nova com símbolo: um ataque.
 
-**Ataque**
-Área de Clank! para o saco. Tire o número da trilha de fúria, mais 1 por Danger. Preto: banco. Colorido: 1 dano ao dono. Fantasma: 1 dano a todos e volta para a área de Clank!.
+**Ataque:** área de Clank! para a bolsa; tire o número da Trilha de Fúria, mais 1 por Perigo. Preto: Banco. Colorido: 1 de dano ao dono. Fantasma: 1 de dano a todos e volta para a área de Clank!.
 
-**Fim da partida**
-- Fugir: Cripta com Artifact; Mastery token de 20.
-- Nocaute sem Artifact ou nas Profundezas: 0 ponto.
-- Quem saiu: no turno dela, a área de Clank! vai para o saco e saem 4 cubos (6 com 2 jogadores).
-- Pontos: Artifact, fichas, ouro, cartas. Empate: Artifact mais valioso.
+**Trilha de Fúria** (de baixo para cima): 2, 2, 3, 3, 4, 4, 5. **Contador de Pontos de Vida:** 10 casas.
 
-## 12. Fontes
+**Fim:** escapar = Cripta com Artefato, ficha de Maestria de 20. Nocaute sem Artefato ou nas Profundezas = 0. Quem saiu: área de Clank! para a bolsa e saem 4 cubos (6 com 2 jogadores). Pontos: Artefato, fichas, Ouro, cartas. Empate: Artefato mais valioso.
 
-- Dire Wolf Digital. *CLANK! Catacombs Rulebook and Token Reference Guide*. PDF de 18 páginas, © 2022 Dire Wolf Digital, LLC. Disponível na página oficial do jogo, https://www.direwolfdigital.com/clank-catacombs/ (arquivo em https://d19y2ttatozxjp.cloudfront.net/pdfs/CLANK_CATACOMBS_Rulebook_and_Token_Reference_Guide.pdf). Consultado em 31/10/2026.
-- Não foram encontrados FAQ nem errata oficiais em 31/10/2026.
+**Caixa em inglês?** Habilidade = Skill; Espadas = Swords; Botas = Boots; Gazua = Lockpick; Fileira da Masmorra = Dungeon Row; Trilha de Fúria = Rage Track; Contador de Pontos de Vida = Health Meter; Santuário de Passagem = Wayshrine; Ídolo de Macaco = Monkey Idol; ficha de Maestria = Mastery token; Revelar = Arrive; Perigo = Danger; Eliminar = Trash; Roubar = Burgle; Tropeçar = Stumble; Contornar = Sidestep; Rastejar = Scramble.
+
+## 10. Fontes
+
+- Galápagos. *CLANK! Catacombs: regras* (edição brasileira, arquivo CLK101_regras_v1.0.pdf, 16 páginas, tradução de Fernanda Di Costanzo). Biblioteca de Downloads da Galápagos, https://www.asmodee.com.br/download-library. Consultado em 31/10/2026.
+- Dire Wolf Digital. *CLANK! Catacombs Rulebook and Token Reference Guide* (2022, 18 páginas). https://www.direwolfdigital.com/clank-catacombs/. Consultado em 31/10/2026. Usado para o Guia de Fichas (segredos e itens do Mercado), que não veio no arquivo brasileiro.
+- Galápagos. Página do produto CLK101, https://www.asmodee.com.br/clank-catacombs/produto/CLK101 (jogadores, duração e idade). Consultado em 31/10/2026.
+- Não foram encontrados FAQ nem errata oficiais até 31/10/2026.
+- Sobre o método: Jeroen J. G. van Merriënboer e Paul A. Kirschner, *Ten Steps to Complex Learning* (3ª ed., Routledge, 2018).
