@@ -3,7 +3,7 @@
  "jogo": "Great Western Trail",
  "cor": "#b5652b",
  "kicker": "Resenha · Série Great Western Trail",
- "og_titulo": "Great Western Trail ou El Paso: qual vale a pena? Resenha Elite Boardgamers",
+ "og_titulo": "Great Western Trail vale a pena? Resenha Elite Boardgamers",
  "titulo_busca": "Great Western Trail e El Paso: resenha comparativa",
  "descricao": "Resenha comparativa de Great Western Trail e Great Western Trail: El Paso: como funcionam, o que muda entre eles, edição nacional, preço e qual comprar.",
  "titulo_html": "O prêmio ficou com o original. A sua mesa fica com o <span>El Paso</span>",
@@ -83,7 +83,7 @@
   "No original, os trabalhadores são fichas contratadas num mercado de trabalho: vaqueiros compram gado, artesãos erguem construções próprias na trilha e engenheiros movem o seu trem pela ferrovia, que define até onde o gado pode ser enviado. O mercado de trabalho também é o relógio do jogo: quando ele enche, a partida termina.",
   "A 2ª edição, de 2021, manteve as regras centrais e trouxe arte nova, tabuleiros pessoais de duas camadas, modo solo, a raça Simmental, duas construções novas e bandidos no lugar das tendas indígenas da 1ª edição.",
   "El Paso mantém a trilha, o baralho de gado e a entrega, mas encurta tudo. A trilha é circular e termina sempre em El Paso, onde a entrega é obrigatória, e cada raça na mão conta uma única vez. Os trabalhadores viram cartas do baralho, que voltam a ser usadas e podem ser descartadas por um bônus. O trem vira cartas pagas com engenheiros, no lugar da ferrovia com estações. A partida acaba quando sai a última vaca Simmental, e o modo solo é contra o robô Sue.",
-  "A Lookout publicou uma regra que ficou fora do manual impresso de El Paso: cada jogador pode remover no máximo cinco cartas de gado do baralho. Os componentes também mudaram: tapete de tecido no lugar do tabuleiro e fichas de papelão no lugar das peças de madeira."
+  "A Lookout publicou uma regra que ficou fora do manual impresso de El Paso: cada jogador pode remover no máximo cinco cartas de gado do baralho. Os componentes também mudaram: tapete de tecido no lugar do tabuleiro e fichas de papelão no lugar dos discos e cubos de madeira."
  ],
  "passos": [
   [
@@ -188,12 +188,12 @@
   [
    "Moderado",
    "Leve demais para quem já tem o original",
-   "A Punchboard avisa que veteranos podem achar El Paso leve e que novatos ainda o acham exigente. A Zatu deu 70% e disse que, com tempo, preferiria outra versão da série. Se você já tem o original e gosta dele, El Paso é o mesmo filme na versão de avião."
+   "A Punchboard avisa que quem quer a profundidade inteira do original pode se decepcionar e que veteranos talvez joguem pouco. A Zatu deu 70% e disse que, com tempo, preferiria outra versão da série. Se você já tem o original e gosta dele, El Paso é o mesmo filme na versão de avião."
   ],
   [
    "Leve",
    "Errata logo de saída",
-   "El Paso saiu com uma regra fora do manual impresso, o limite de cinco cartas de gado removidas por jogador, que a Lookout publicou depois no site. A Punchboard e a Zatu também citam a correção de um ícone na construção 2a. Leia a errata antes da primeira partida."
+   "El Paso saiu com uma regra fora do manual impresso, o limite de cinco cartas de gado removidas por jogador, que a Lookout publicou depois no site. A Punchboard e a Zatu também citam uma segunda correção, numa construção que o manual impresso deixou forte demais (a 2a, segundo a Punchboard). Leia a errata antes da primeira partida."
   ],
   [
    "Moderado",
@@ -224,13 +224,13 @@
   ]
  ],
  "primeira_partida": "Se for o original, jogue a primeira partida com dois, como recomenda a Board Game Quest, e reserve o dobro do tempo da caixa. Se for o El Paso, leia antes a errata no site da Lookout: cada jogador remove no máximo cinco cartas de gado do baralho. Nos dois, explique logo de início que a entrega soma raças diferentes, porque é isso que orienta todas as compras de gado. Separe também as construções neutras e confira os ícones com calma, já que no El Paso eles são pequenos.",
- "edicao_nacional": "No Brasil, a 1ª edição do original saiu pela Conclave Editora, e a 2ª edição e El Paso saíram pela Galápagos, hoje Asmodee. Os três jogos não dependem do idioma, segundo o ComparaJogos. Em 31/10/2026, a 2ª edição estava esgotada no site da Asmodee, com preço de tabela de R$ 549,99, e o ComparaJogos mostrava uma oferta nova a R$ 911; a 1ª edição tinha uma oferta nova a R$ 706. El Paso estava em estoque na Asmodee por R$ 329,99 e tinha 16 ofertas novas no ComparaJogos, de R$ 121 a R$ 306.",
+ "edicao_nacional": "No Brasil, a 1ª edição do original saiu pela Conclave Editora, e a 2ª edição e El Paso saíram pela Asmodee. Os três jogos não dependem do idioma, segundo o ComparaJogos. Em 31/10/2026, a 2ª edição estava esgotada no site da Asmodee, com preço de tabela de R$ 549,99, e o ComparaJogos mostrava uma oferta nova a R$ 911; a 1ª edição tinha uma oferta nova a R$ 706. El Paso estava em estoque na Asmodee por R$ 329,99 e tinha 16 ofertas novas no ComparaJogos, de R$ 121 a R$ 306.",
  "preco_ref": {
   "faixa": "El Paso de R$ 121 a R$ 306; original a partir de R$ 706",
   "data": "31/10/2026",
   "obs": "ofertas de jogo novo em lojas brasileiras segundo o ComparaJogos; 2ª edição esgotada no site da Asmodee"
  },
- "versoes": "A 2ª edição do original, de 2021, trocou a arte por Chris Quilliams, ganhou tabuleiros de duas camadas, modo solo, a raça Simmental, duas construções novas e bandidos no lugar das tendas indígenas; para a Nerdly, os problemas centrais da 1ª edição foram tratados de forma basicamente cosmética. A expansão Rails to the North existe para as duas edições e é vendida à parte. Na mesma família, Argentina e Nova Zelândia são jogos independentes e mais pesados, com complexidade 3,9 e 4,0 no ComparaJogos. El Paso é o mais leve da série, com 2,8.",
+ "versoes": "A 2ª edição do original, de 2021, trocou a arte por Chris Quilliams, ganhou tabuleiros de duas camadas, modo solo, a raça Simmental, duas construções novas e bandidos no lugar das tendas indígenas; para a Nerdly, as mudanças são em grande parte cosméticas, e a complexidade continua a mesma. A expansão Rails to the North existe para as duas edições e é vendida à parte. Na mesma família, Argentina e Nova Zelândia são jogos independentes e mais pesados, com complexidade 3,9 e 4,0 no ComparaJogos. El Paso é o mais leve da série, com 2,8.",
  "comparacoes": [
   [
    "Terraforming Mars",
@@ -288,6 +288,11 @@
    "ICv2 – Plan B e eggertspiele relançam Great Western Trail (16/02/2021)",
    "https://icv2.com/articles/news/view/47610/plan-b-eggertspiele-return-great-western-trail",
    "2ª edição"
+  ],
+  [
+   "Tlama Games – Great Western Trail 2nd ed. (descrição da editora)",
+   "https://www.tlamagames.com/en/board-games/great-western-trail-2nd-ed-en/",
+   "mudanças da 2ª edição: duas construções novas (11 e 12), Simmental, solo, tabuleiros de duas camadas"
   ],
   [
    "boardmatch.app – Great Western Trail (dados do BGG)",
