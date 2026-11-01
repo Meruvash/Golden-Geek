@@ -184,6 +184,18 @@ html{scroll-padding-top:calc(var(--nav-h,45px) + 56px)}
 .indice a{display:flex;gap:10px;align-items:baseline;min-height:40px;padding:9px 0}
 .indice a::before{content:counter(it);flex:none;width:1.6em;font-size:.8rem;font-weight:800;color:var(--ouro-ink);font-variant-numeric:tabular-nums}
 .nota-pe{color:var(--muted);font-size:.85rem;padding:4px 2px 0}
+/* exercícios de múltipla escolha: tocou numa opção, aparece a certa e a explicação */
+.quiz{display:grid;gap:8px;padding:12px 0;border-top:1px solid var(--paper-line)}.quiz:first-of-type{border-top:0}
+.q-p{font-weight:700;color:inherit}
+.q-ops{display:grid;gap:6px}
+.q-op{display:block;width:100%;text-align:left;font:inherit;font-size:.95rem;line-height:1.35;min-height:44px;padding:10px 12px;border-radius:8px;
+ border:1px solid #c8cdd5;background:#fff;color:#14171c;cursor:pointer}
+.q-op:hover{border-color:var(--gold)}.q-op:disabled{cursor:default}
+.q-op.ok{background:#e3f4ea;border-color:#1b7a45;color:#0f4d2b;font-weight:700}.q-op.ok::before{content:"✓ ";font-weight:800}
+.q-op.erro{background:#fbe6e9;border-color:#b3263e;color:#7d1a2b}.q-op.erro::before{content:"✗ ";font-weight:800}
+.q-exp{border-left:4px solid var(--ok);background:#f2faf5;color:#14171c;border-radius:6px;padding:8px 12px}
+.q-exp .q-res{color:var(--ok)}.q-exp.mal{border-left-color:#b3263e;background:#fdf3f4}.q-exp.mal .q-res{color:#b3263e}
+.call.suavez .q-op,.call.resolvido .q-op{border-color:#3a2e10}
 /* endereços longos (fontes) quebram em vez de alargar a página */
 .sec a,.sec li,.sec p{overflow-wrap:anywhere}
 /* títulos das etapas com mais respiro */
@@ -261,7 +273,7 @@ html{scroll-padding-top:calc(var(--nav-h,45px) + 56px)}
   <nav class="bloco indice" id="neste-guia" aria-label="Neste guia"><h2>Neste guia</h2><ol><li><a href="#comece-a-jogar-em-4-minutos">Comece a jogar em 4 minutos</a></li><li><a href="#antes-de-tudo-o-que-e-este-jogo">Antes de tudo: o que é este jogo</a> <small>(opcional)</small></li><li><a href="#como-este-guia-ensina">Como este guia ensina</a> <small>(opcional)</small></li><li><a href="#etapa-1-montar-a-mesa">Etapa 1: montar a mesa</a></li><li><a href="#etapa-2-a-acao-do-turno">Etapa 2: a ação do turno</a></li><li><a href="#etapa-3-colocar-pecas-no-zoologico">Etapa 3: colocar peças no zoológico</a></li><li><a href="#etapa-4-o-resto-do-turno">Etapa 4: o resto do turno</a></li><li><a href="#etapa-5-o-fim-da-partida-e-a-pontuacao">Etapa 5: o fim da partida e a pontuação</a></li><li><a href="#situacoes-especiais">Situações especiais</a> <small>(opcional)</small></li><li><a href="#avaliacao-final">Avaliação final</a> <small>(opcional)</small></li><li><a href="#para-consultar-durante-a-partida">Para consultar durante a partida</a></li><li><a href="#fontes">Fontes</a></li></ol></nav>
 
 <section class="bloco sec opc" id="antes-de-tudo-o-que-e-este-jogo"><h2><span class="num">0</span>Antes de tudo: o que é este jogo<span class="tag-opc">Opcional</span></h2>
-<details class="dobra sec-opc"><summary>Abrir esta seção</summary><p>Santuário se apresenta, na capa do manual, como "um jogo da linha Ark Nova". Cada jogador tem um tabuleiro com casas vazias, a entrada embaixo e um Rio nas bordas. Ao longo da partida, você encaixa peças nessas casas; as peças jogadas formam o seu <strong>zoológico</strong> <span class="pg">p.&nbsp;1 a 3</span>.</p>
+<details class="dobra sec-opc"><summary>Abrir esta seção</summary><p>Santuário se apresenta, na capa do manual, como "um jogo da linha Ark Nova". Cada jogador tem um tabuleiro com casas vazias, a entrada embaixo e um Rio nas bordas. Ao longo da partida, você encaixa peças nessas casas; as peças jogadas formam o seu <strong>zoológico</strong> (p. 1 a 3).</p>
 <p>As peças são de três tipos, pela cor da faixa do nome: <strong>Animais</strong> (amarelo), <strong>Prédios</strong> (azul) e <strong>Projetos</strong> (roxo). No alto de cada peça há ícones: habitat (Rocha, Floresta, Água), continente e classe de animal, além dos ícones próprios de Prédio e de Projeto. Depois que a peça entra no zoológico, os ícones dela contam como seus <span class="pg">p.&nbsp;2</span>.</p>
 <p>O turno é curto: você pega uma peça da vitrine e faz uma ação com uma das quatro cartas. A decisão está em qual carta usar, porque ela perde força ao ser usada e as outras ganham <span class="pg">p.&nbsp;2 e 3</span>.</p>
 <p>Os pontos vêm de três lugares: das peças (algumas valem um número fixo, outras dependem dos ícones vizinhos ou do zoológico inteiro), das metas de conservação que você apoiar e de alguns marcadores <span class="pg">p.&nbsp;2 e 8</span>.</p></details>
@@ -287,7 +299,7 @@ html{scroll-padding-top:calc(var(--nav-h,45px) + 56px)}
 <section class="bloco sec" id="etapa-2-a-acao-do-turno"><h2><span class="num">3</span>Etapa 2: a ação do turno</h2>
 <details class="dobra entender"><summary>Por que funciona assim</summary><aside class="call entender"><p>As quatro cartas de ação formam uma fila sob o tabuleiro. Quanto mais à direita a carta, maior a força. Usar uma carta a manda de volta ao encaixe 1, o mais fraco, e empurra para a direita as que estavam antes dela. Por isso a pergunta de cada turno é dupla: o que eu quero fazer agora, e que carta eu aceito enfraquecer <span class="pg">p.&nbsp;3</span>.</p>
 <p>A carta de Projetos tem duas funções. A seta dela é o <strong>alcance</strong> na vitrine no passo 1 e também a força para jogar Projetos <span class="pg">p.&nbsp;4 e 5</span>. Usar Projetos deixa o seu alcance no mínimo no turno seguinte.</p></aside></details>
-<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Passos 1 e 2 do turno</strong> <span class="pg">p.&nbsp;3 a 6</span></p>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Passos 1 e 2 do turno</strong> (p. 3 a 6)</p>
 <ul><li><strong>Passo 1, pegue 1 peça da vitrine</strong> de uma posição igual ou menor que o seu alcance. A carta de Projetos fica onde está.</li><li><strong>Passo 2, use 1 carta de ação:</strong> escolha uma carta e faça <strong>uma</strong> das duas opções dela, ganhar peças ou jogar peça, com a força atual. Nunca as duas.</li><li><strong>Ganhar peças.</strong> Carta de Projetos: pegue 1 peça de qualquer posição da vitrine (o alcance não vale aqui). Carta de Animais: pegue as 2 peças do topo da pilha.</li><li><strong>Jogar um Projeto</strong> (carta de Projetos): a força precisa ser igual ou maior que o nível do Projeto.</li><li><strong>Jogar um Animal</strong> (carta de Animais): só com a carta do mesmo habitat do Animal; o Animal de habitat indefinido (ícone verde, cinza e azul) entra com qualquer das três. A força precisa ser igual ou maior que o nível.</li><li><strong>Prédio nunca</strong> se joga com carta de ação; ele tem o passo 3.</li><li><strong>Fim do passo 2:</strong> tire a carta usada do encaixe, deslize as cartas da esquerda dela um encaixe para a direita e ponha a usada no encaixe 1. Se ela já estava no 1, nada se move.</li></ul></aside>
 <aside class="call passos"><p class="rot">Passo a passo</p><p><strong>O lado II</strong> <span class="pg">p.&nbsp;3, 4 e 5</span></p>
 <ul><li>Carta melhorada (lado II): a seta da carta aponta para o número da direita do encaixe, e a força é 1 maior.</li><li>Projetos no lado II: como a seta é a mesma, o alcance do passo 1 também sobe 1. Na opção de ganhar peças, pegue 1 peça de qualquer posição da vitrine e, se quiser, uma 2ª.</li><li>Animais no lado II: jogue 1 ou 2 Animais daquele habitat ou indefinidos. Com 2, a força precisa ser igual ou maior que a <strong>soma</strong> dos níveis. Coloque um, resolva todos os efeitos dele, e só então coloque o outro.</li></ul></aside>
@@ -438,7 +450,10 @@ document.addEventListener('click',async ev=>{const c=ev.target.closest('.cpw');i
 const poe=()=>{const on=scrollY>500&&!vis.size;l.classList.toggle('fora',!on);l.inert=!on;document.body.classList.toggle('lt-on',on)};
 const io=new IntersectionObserver(es=>{es.forEach(e=>e.isIntersecting?vis.add(e.target):vis.delete(e.target));poe()});
 document.querySelectorAll('.convite,footer').forEach(x=>io.observe(x));addEventListener('scroll',poe,{passive:true});poe()})()</script>
-<script>(()=>{const g=document.querySelector('.guia-prog');if(!g)return;const t=g.querySelector('.gp-t'),b=g.querySelector('.gp-b');
+<script>document.addEventListener('click',e=>{const b=e.target.closest('.q-op');if(!b||b.disabled)return;const q=b.closest('.quiz');
+q.querySelectorAll('.q-op').forEach(o=>{o.disabled=true;if(o.hasAttribute('data-ok'))o.classList.add('ok')});const ok=b.hasAttribute('data-ok');
+if(!ok)b.classList.add('erro');const x=q.querySelector('.q-exp');x.hidden=false;x.classList.toggle('mal',!ok);x.querySelector('.q-res').textContent=ok?'Isso!':'Não é essa.';});
+(()=>{const g=document.querySelector('.guia-prog');if(!g)return;const t=g.querySelector('.gp-t'),b=g.querySelector('.gp-b');
 const secs=[...document.querySelectorAll('.sec[id]')],idx=document.querySelector('.indice');
 const poe=()=>{const y=scrollY+innerHeight*.3;let at=null;for(const s of secs){if(s.offsetTop<=y)at=s}
  t.textContent=at&&scrollY>idx.offsetTop?at.querySelector('h2').textContent.replace(/^\d+/,'').trim():'Neste guia';

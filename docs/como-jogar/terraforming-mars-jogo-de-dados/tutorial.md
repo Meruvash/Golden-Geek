@@ -20,7 +20,7 @@ Cada jogador comanda uma **corporação** que terraforma Marte. Os seus recursos
 6. **Marcos:** sorteie 3 e ponha no tabuleiro.
 7. Cada jogador recebe 5 cartas de projeto e 2 de corporação; fica com 1 corporação e devolve a outra.
 8. Na ordem de jogo, cada um revela a corporação, pega o bônus da **caixa vermelha** e a cobre com a peça da sua cor. Depois pega os dados da **caixa marrom**, rola e deixa à frente: são os seus primeiros recursos.
-9. O primeiro jogador dá 1 dos seus recursos ao último. Então começa a partida.
+9. Começa quem venceu mais recentemente uma partida de Terraforming Mars, de qualquer versão, e o jogo segue no sentido horário. O primeiro jogador dá 1 dos seus recursos ao último. Então começa a partida.
 
 ### Seu turno: produzir ou agir
 
@@ -35,10 +35,10 @@ A cada turno você escolhe **uma** das duas coisas (p. 4):
 
 **Ações principais** (escolha 1): jogar uma carta da mão pagando o custo; fazer mais uma ação de suporte; 3 calor sobe a temperatura; 3 água põe 1 oceano; 4 plantas põem 1 floresta (e sobem o oxigênio); 3 cidade põem 1 cidade; 3 megacréditos dão 2 PVs; ou usar uma ação principal de uma carta azul sua.
 
-?? O Jogador 1 tem 3 calor e quer subir a temperatura. Pode fazer isso logo no início do turno de ação?
-- ( ) Sim, a ação principal pode vir antes da de suporte.
-- (x) Sim, desde que faça antes uma ação de suporte e depois use o calor como ação principal.
-- ( ) Não, subir a temperatura só acontece no turno de produção.
+?? O Jogador 1 tem 3 calor e quer subir a temperatura num turno de ação. Em que momento do turno ele usa o calor?
+- ( ) Logo no começo, antes de qualquer outra ação.
+- (x) Depois da ação de suporte, como a ação principal do turno.
+- ( ) Só no turno de produção.
 = O turno de ação é sempre 1 ação de suporte e depois 1 ação principal (p. 4). Pagar 3 calor para subir a temperatura é uma ação principal.
 
 ### Os dados
@@ -51,13 +51,13 @@ A cada turno você escolhe **uma** das duas coisas (p. 4):
 | Cinza | aço | titânio | cidade |
 | Vermelho | calor | evento | nuclear |
 
-Você **nunca** rola de novo um dado que já está à sua frente. Para mudar a face, só com ação de suporte ou efeito de carta (p. 6 e 7).
+Você **nunca** rola de novo um dado que já está à sua frente. Para mudar a face (sempre para outra face daquele mesmo dado), só com ação de suporte, efeito de carta ou bônus do tabuleiro que mande girar um dado (p. 4, 6 e 7).
 
 ### Como a partida acaba
 
 Quando o segundo dos três parâmetros fica completo, todos jogam mais um turno, inclusive quem o completou. Depois somam PVs da trilha, de prêmios, de marcos e das cartas (p. 6 e 8).
 
-> [!atencao] **Os três erros mais caros.** Não existe rolar de novo os seus dados. No turno de ação, a ação de suporte vem antes da principal, e jogar carta é ação principal. No turno de produção você fica com no máximo 3 dados: os outros voltam ao estoque.
+> [!atencao] **Os três erros mais caros.** Não existe rolar de novo os seus dados. No turno de ação, a ação de suporte vem antes da principal, e jogar carta é ação principal. No turno de produção você fica com no máximo 3 dados, salvo carta que diga outra coisa: os outros voltam ao estoque.
 
 ## 0. Antes de tudo: o que é este jogo
 
@@ -75,7 +75,9 @@ O guia tem quatro etapas: montar a mesa e ler os dados; jogar um turno de ação
 
 > [!entender] **Para entender.** Um dado aqui não é um número: é um recurso. Quando uma carta ou ação manda "receber e rolar" um dado, a face que sair é o recurso que você ganhou, e ele fica parado à sua frente até ser gasto (p. 7). Cada cor tem um recurso comum, em 3 faces, um incomum, em 2, e um raro, em 1. Por isso calor e planta saem com frequência, e cidade e oxigênio, que também ficam nos dados, são raros.
 >
-> A sua corporação dá o ponto de partida: um bônus inicial e uma produção, que você recebe agora e de novo a cada turno de produção (p. 3 e 4).
+> A sua corporação dá o ponto de partida: um bônus inicial, recebido uma vez só, e uma produção, que você recebe agora e de novo a cada turno de produção (p. 3 e 4).
+>
+> Só alguns recursos têm ação própria no tabuleiro: calor, água, planta, cidade e megacrédito (etapa 2). Todos os recursos, inclusive ciência, energia, aço ou evento, servem para pagar o custo das cartas e as ações das cartas azuis, sempre com o ícone exato pedido (p. 4 e 5).
 
 > [!passos] **Preparação** (p. 3)
 >
@@ -85,7 +87,7 @@ O guia tem quatro etapas: montar a mesa e ler os dados; jogar um turno de ação
 > 4. Cartas bônus: sorteie, sem olhar, 4 (1 ou 2 jogadores), 6 (3 jogadores) ou 8 (4 jogadores). Viradas para baixo ao lado do tabuleiro; as outras voltam à caixa sem serem vistas.
 > 5. Prêmios: pegue 1 dado de cada cor do estoque, sorteie 3 deles, role-os e ponha um em cada espaço de prêmio.
 > 6. Marcos: sorteie 3 e ponha no tabuleiro; os outros voltam à caixa.
-> 7. Começa quem venceu mais recentemente uma partida de qualquer versão de Terraforming Mars. A ordem segue no sentido horário.
+> 7. Começa quem venceu mais recentemente uma partida de qualquer versão de Terraforming Mars. A ordem segue no sentido horário. O manual não diz o que fazer se ninguém jogou: combinem.
 > 8. Cada jogador recebe 5 cartas de projeto. Embaralhe as corporações e dê 2 a cada um; cada jogador escolhe 1, e as não usadas voltam à caixa.
 > 9. Na ordem de jogo, cada um revela a corporação, recebe o bônus da caixa vermelha e cobre essa caixa com a peça da sua cor.
 > 10. Cada jogador recebe os dados da caixa marrom da corporação, rola e os deixa à frente: são os seus recursos.
@@ -117,7 +119,7 @@ O guia tem quatro etapas: montar a mesa e ler os dados; jogar um turno de ação
 > - ( ) 4
 > - ( ) 6
 > - (x) 8
-> = São 8 cartas para 4 jogadores, 6 para 3 e 4 para 1 ou 2 (p. 3). Cada jogador recebe uma ao passar pelos 5 PVs e outra ao passar pelos 12 PVs.
+> = São 8 cartas para 4 jogadores, 6 para 3 e 4 para 1 ou 2 (p. 3). Cada jogador recebe uma ao alcançar 5 PVs e outra ao alcançar 12 PVs.
 
 > [!treino] **Treino rápido: as cores dos dados.**
 >
@@ -128,7 +130,7 @@ O guia tem quatro etapas: montar a mesa e ler os dados; jogar um turno de ação
 > - ( ) Vermelho
 > = A água é o recurso incomum do dado azul, com 2 faces (p. 7).
 >
-> ?? Qual destes recursos aparece em 3 faces do seu dado?
+> ?? Qual destes recursos aparece em 3 faces de um mesmo dado?
 > - ( ) Cidade
 > - ( ) Titânio
 > - (x) Calor
@@ -137,7 +139,7 @@ O guia tem quatro etapas: montar a mesa e ler os dados; jogar um turno de ação
 >
 > ?? A primeira rolagem do seu dado vermelho deu evento, mas você queria calor. O que pode fazer?
 > - ( ) Rolar o dado de novo como ação de suporte.
-> - (x) Pagar 1 recurso qualquer, como ação de suporte, para virá-lo na face de calor.
+> - (x) Pagar 1 recurso qualquer, como ação de suporte, para virá-lo na face de calor, que é uma das faces dele.
 > - ( ) Nada: a face de um dado nunca muda.
 > = Rolar de novo nunca é permitido (p. 6). Uma das ações de suporte é pagar 1 recurso qualquer para mudar outro dado para qualquer lado (p. 4).
 
@@ -175,7 +177,7 @@ O guia tem quatro etapas: montar a mesa e ler os dados; jogar um turno de ação
 >
 > Ação de suporte: ele recebe e rola 1 dado vermelho; sai calor. Ação principal: joga a carta verde, pagando com os 2 megacréditos e a planta, que voltam ao estoque. Nada acontece agora: a carta vai para a pilha das verdes, com o custo e a caixa marrom à vista. Sobram 2 calor e o curinga.
 >
-> Por que essa ordem: se tivesse jogado a carta sem antes fazer a de suporte, perderia a ação de suporte, que é sempre a primeira do turno (p. 4 e 5).
+> Por que essa ordem: no turno de ação, a ação de suporte vem antes da principal, e jogar carta é ação principal (p. 4 e 5).
 
 > [!complete] **Complete.** O Jogador 3 tem 2 calor e 1 marcador curinga. Ele quer subir a temperatura.
 >
@@ -187,7 +189,7 @@ O guia tem quatro etapas: montar a mesa e ler os dados; jogar um turno de ação
 
 > [!suavez] **Sua vez.**
 >
-> ?? Você tem 1 aço e uma carta azul em jogo com a ação principal "pague 1 aço para colocar 1 oceano", do exemplo do manual. Neste turno de ação, você já usou essa carta. Pode usá-la de novo como a ação principal do próximo turno de ação?
+> ?? Você tem 1 aço e uma carta azul em jogo com a ação principal "pague 1 aço para colocar 1 oceano", do exemplo do manual. Neste turno de ação, você já usou essa carta. No seu turno seguinte, você faz de novo um turno de ação. Pode usá-la?
 > - ( ) Sim, cartas azuis podem ser usadas uma vez por turno.
 > - (x) Não, ela só volta a funcionar depois de um turno de produção seu.
 > - ( ) Sim, se pagar 2 aços em vez de 1.
@@ -201,10 +203,10 @@ O guia tem quatro etapas: montar a mesa e ler os dados; jogar um turno de ação
 
 > [!treino] **Treino rápido: suporte ou principal?**
 >
-> ?? Pagar 1 recurso qualquer para comprar 2 cartas é que tipo de ação?
-> - (x) De suporte.
-> - ( ) Principal.
-> - ( ) Livre.
+> ?? Em que lista do manual está "pagar 1 recurso qualquer para comprar 2 cartas"?
+> - (x) Ações de suporte.
+> - ( ) Ações principais, e só nelas.
+> - ( ) Ações livres.
 > = É uma das ações de suporte (p. 4). Você também pode fazê-la como ação principal, porque fazer outra ação de suporte é uma das ações principais.
 >
 > ?? Pagar 3 megacréditos para ganhar 2 PVs é que tipo de ação?
@@ -221,7 +223,7 @@ O guia tem quatro etapas: montar a mesa e ler os dados; jogar um turno de ação
 
 ## 4. Etapa 3: escolher a hora de produzir
 
-> [!entender] **Para entender.** O turno de produção é o seu reabastecimento: você recebe os dados de todas as caixas marrons (corporação e cartas verdes), completa a mão e desvira as cartas azuis. O preço é ficar no máximo com 3 dos dados que tinha. Produzir com a mesa cheia de recursos desperdiça o que sobrar; produzir quando quase não resta nada é o momento mais eficiente (p. 4).
+> [!entender] **Para entender.** O turno de produção é o seu reabastecimento: você recebe os dados de todas as caixas marrons (corporação e cartas verdes), completa a mão e desvira as cartas azuis. O preço é ficar no máximo com 3 dos dados que tinha. Produzir com a mesa cheia de recursos desperdiça o que sobrar; produzir quando quase não resta nada aproveita melhor o turno.
 >
 > As cartas verdes não fazem nada quando entram: o valor delas aparece em cada turno de produção dali em diante. Por isso uma carta verde jogada cedo rende mais vezes.
 
@@ -241,7 +243,7 @@ O guia tem quatro etapas: montar a mesa e ler os dados; jogar um turno de ação
 >
 > Ele faz um turno de produção. Fica com calor, calor e planta, e devolve megacrédito e aço ao estoque. O curinga fica. Não descarta nada e compra 2 cartas, ficando com 5. Recebe e rola 2 amarelos, 1 vermelho e 1 verde: saem megacrédito, ciência, calor e planta. Agora tem 3 calor e 2 plantas, mais o resto. No próximo turno de ação, os 3 calor podem subir a temperatura.
 
-> [!complete] **Complete.** O Jogador 2 tem 6 dados à frente e 1 carta na mão. Ele faz um turno de produção.
+> [!complete] **Complete.** O Jogador 2 tem 6 dados à frente e 1 carta na mão. Ele faz um turno de produção e não descarta nenhuma carta.
 >
 > ?? Com quantos dos dados antigos ele pode ficar, e quantas cartas compra?
 > - ( ) Com todos os 6, e compra 5 cartas.
@@ -255,7 +257,7 @@ O guia tem quatro etapas: montar a mesa e ler os dados; jogar um turno de ação
 > - ( ) Ação, para comprar 2 PVs com megacréditos.
 > - (x) Produção: você não perde nada ao ficar com até 3 dados, recebe dados novos e desvira as azuis.
 > - ( ) Ação, para subir a temperatura com o calor.
-> = Com 2 dados, a produção não descarta nenhum; subir a temperatura pede 3 calor e comprar 2 PVs pede 3 megacréditos (p. 4). É uma escolha de estratégia, mas as outras duas opções nem são possíveis.
+> = Com 2 dados, a produção não descarta nenhum (p. 4). As outras opções não podem ser feitas: subir a temperatura pede 3 calor e comprar 2 PVs pede 3 megacréditos (p. 4).
 
 > [!treino] **Treino rápido: o que acontece na produção?**
 >
@@ -264,12 +266,7 @@ O guia tem quatro etapas: montar a mesa e ler os dados; jogar um turno de ação
 > - (x) No seu próximo turno de produção, e em todos os seguintes.
 > - ( ) Só no fim da partida.
 > = Nada acontece ao jogar uma carta verde; os dados da caixa marrom são recebidos e rolados a cada turno de produção (p. 5).
->
-> ?? Você tem 3 curingas e 5 dados ao produzir. Com o que fica?
-> - ( ) Com 3 itens no total, entre dados e curingas.
-> - (x) Com até 3 dos dados e com os curingas.
-> - ( ) Com os 5 dados, porque tem curingas.
-> = O limite é de 3 dados, e curingas não são dados (p. 4).
+
 
 ## 5. Etapa 4: terraformar, pôr peças e pontuar
 
@@ -281,20 +278,20 @@ O guia tem quatro etapas: montar a mesa e ler os dados; jogar um turno de ação
 >
 > 1. Terraformar é subir a temperatura, subir o oxigênio ou pôr um oceano. Quem faz isso ganha 2 PVs na hora e anda o cubo na trilha de PVs.
 > 2. A temperatura vai de -32 °C a +8 °C, de 4 em 4 graus. O oxigênio vai de 0% a 16%, de 2 em 2. São 7 oceanos.
-> 3. Quem leva um marcador até um nível com bônus na trilha de temperatura ou de oxigênio recebe esse bônus.
+> 3. Quem leva um marcador até um nível com bônus recebe o bônus impresso ali. Os níveis com bônus são 4% e 10% de oxigênio e -24 °C, -16 °C e 0 °C de temperatura (p. 6 e 11).
 
 > [!passos] **Pôr peças** (p. 6)
 >
 > 1. Só 1 peça por área. Ao pôr a peça, receba os bônus impressos naquela área.
 > 2. **Oceano:** só numa área reservada para oceanos (as azuis), e nenhuma outra peça pode ir nelas. Dá 2 PVs, porque é terraformação.
-> 3. **Floresta:** 1 PV por cidade vizinha. Sobe o oxigênio 1 nível e dá os 2 PVs dessa terraformação.
+> 3. **Floresta:** em qualquer área livre que não seja reservada para oceanos. 1 PV por cidade vizinha. Sobe o oxigênio 1 nível e dá os 2 PVs dessa terraformação.
 > 4. **Cidade:** numa área que não seja vizinha de outra cidade. Dá 2 PVs, mais 1 PV por floresta vizinha.
 > 5. **Peças especiais:** a peça marrom com o símbolo pedido, numa área.
 
 > [!passos] **PVs na hora, cartas bônus e marcos** (p. 3, 6 e 7)
 >
 > 1. PVs com fita verde numa carta contam na hora; com fita vermelha, só no fim.
-> 2. Ao chegar a 5 e a 12 PVs na trilha, você recebe uma carta bônus no fim do seu turno: olhe em segredo todas as disponíveis, escolha uma e jogue de graça na hora. As outras voltam viradas para baixo.
+> 2. Ao alcançar 5 e 12 PVs na trilha, você recebe uma carta bônus no fim do seu turno: olhe em segredo todas as disponíveis, escolha uma e jogue de graça na hora. As outras voltam viradas para baixo.
 > 3. O primeiro a cumprir o objetivo de um marco pega o marco na hora, de graça. Cada marco vale 4 PVs no fim.
 
 > [!passos] **Fim da partida** (p. 6 e 8)
@@ -305,7 +302,7 @@ O guia tem quatro etapas: montar a mesa e ler os dados; jogar um turno de ação
 > 4. Some os 4 PVs de cada marco seu e os PVs de fita vermelha das cartas jogadas.
 > 5. Vence quem tiver mais PVs.
 
-> [!mais] **Terraformar o que já está completo.** Mesmo com um parâmetro completo, você ainda pode terraformá-lo: nada muda no tabuleiro, mas você ganha 1 PV em vez de 2 (p. 6 e 8). Completar o terceiro parâmetro no último turno ainda dá os 2 PVs normais.
+> [!mais] **Terraformar o que já está completo.** Mesmo com um parâmetro completo, você ainda pode terraformá-lo: nada muda no tabuleiro, mas você ganha 1 PV em vez de 2 (p. 6 e 8). Subir o terceiro parâmetro, enquanto ele não estiver completo, continua dando os 2 PVs normais, também no último turno.
 
 > [!mais] **Empates nos prêmios.** Empate pelo primeiro lugar: todos os empatados ganham 5 PVs, e ninguém ganha o segundo lugar. Empate pelo segundo: todos ganham 3 PVs. Numa partida de 2 jogadores, não existe segundo lugar (p. 8).
 
@@ -323,13 +320,13 @@ O guia tem quatro etapas: montar a mesa e ler os dados; jogar um turno de ação
 | Generalista | ter produção de pelo menos 1 dado de cada cor |
 | Cientista | ter 3 cartas azuis em jogo |
 | Filantropo | ter 4 cartas jogadas com PVs de fim de partida (PVs negativos não contam) |
-| Magnata | ter 12 cartas em jogo, das três cores; corporação não conta |
+| Magnata | ter 12 cartas em jogo, de qualquer cor; corporação não conta |
 | Terraformador | ter 16 pontos na trilha de PVs |
-| Bilionário (Era das Corporações) | ter 13 recursos de dados de todas as cores; curingas não contam |
+| Bilionário (Era das Corporações) | ter 13 recursos de dados, de qualquer cor; curingas não contam |
 | Celebridade (Era das Corporações) | ter 3 cartas em jogo com custo de 5 ou mais recursos |
 | Indicado a Prêmio (Era das Corporações) | ter, nas cartas em jogo, 5 ícones de custo de um dos 3 prêmios |
 
-> [!resolvido] **Exemplo resolvido.** O Jogador 1 paga 3 cidade e põe uma cidade numa área sem bônus impresso, vizinha de 2 florestas e longe de outras cidades: ganha 2 + 2 = 4 PVs. No turno seguinte, paga 4 plantas e põe uma floresta vizinha dessa cidade: ganha 1 PV pela cidade vizinha e 2 PVs pela subida do oxigênio, 3 PVs ao todo.
+> [!resolvido] **Exemplo resolvido.** Partida de 3 jogadores. O Jogador 1 paga 3 cidade e põe uma cidade numa área sem bônus impresso, vizinha de 2 florestas e longe de outras cidades: ganha 2 + 2 = 4 PVs. No turno seguinte, paga 4 plantas e põe uma floresta vizinha só dessa cidade, numa área sem bônus impresso; o oxigênio ainda não está completo e a subida não cai num nível com bônus. Ele ganha 1 PV pela cidade vizinha e 2 PVs pela subida do oxigênio, 3 PVs ao todo.
 >
 > No fim da partida, ele tem 31 PVs na trilha. Num prêmio, tem a maior contagem (5 PVs); noutro, a segunda (3 PVs). Tem 1 marco (4 PVs) e 6 PVs de fita vermelha nas cartas. Total: 31 + 5 + 3 + 4 + 6 = **49 PVs**.
 
@@ -357,17 +354,17 @@ O guia tem quatro etapas: montar a mesa e ler os dados; jogar um turno de ação
 
 > [!treino] **Treino rápido: quantos PVs?**
 >
-> ?? Uma floresta vizinha de 2 cidades, com o oxigênio ainda subindo, dá quantos PVs?
+> ?? Uma floresta vizinha de 2 cidades, numa área sem bônus impresso, com o oxigênio ainda incompleto e sem cair num nível com bônus, dá quantos PVs?
 > - ( ) 2
 > - ( ) 3
 > - (x) 4
 > = 1 PV por cidade vizinha (2) mais 2 PVs pela subida do oxigênio (p. 6).
 >
-> ?? Um oceano posto com os oceanos já completos dá quantos PVs?
-> - (x) 1
-> - ( ) 2
-> - ( ) Nenhum: não se pode mais pôr oceano.
-> = Terraformar um parâmetro completo dá 1 PV em vez de 2 (p. 6).
+> ?? Com os 7 oceanos já no tabuleiro, você paga 3 água pela ação de oceano. Quantos PVs ganha?
+> - (x) 1, e nada muda no tabuleiro.
+> - ( ) 2, como sempre.
+> - ( ) Nenhum: a ação não é permitida.
+> = Você ainda pode terraformar um parâmetro completo: nada acontece no tabuleiro, mas você ganha 1 PV em vez de 2 (p. 6).
 >
 > ?? Numa partida de 2 jogadores, você fica em segundo num prêmio. Quantos PVs ganha?
 > - (x) Nenhum.
@@ -377,7 +374,7 @@ O guia tem quatro etapas: montar a mesa e ler os dados; jogar um turno de ação
 
 ## 6. Situações especiais
 
-> [!mais] **Era das Corporações.** A caixa já traz essa expansão: as cartas dela têm um pequeno traço amarelo no canto inferior esquerdo. Ela acrescenta descontos, efeitos e três marcos (p. 10 e 12).
+> [!mais] **Era das Corporações.** A caixa já traz essa expansão: as cartas dela têm um pequeno traço amarelo no canto inferior esquerdo. Junto com o pacote promocional, ela acrescenta descontos, efeitos, peças com borda vermelha, produção de curingas e PVs, estoque maior e três marcos (p. 10 e 12).
 
 > [!mais] **Desconto.** Uma carta com desconto deixa você pagar 1 a menos daquele recurso sempre que jogar uma carta. Cartas com desconto e com efeito não são giradas: ficam sempre ativas (p. 10).
 
@@ -385,7 +382,7 @@ O guia tem quatro etapas: montar a mesa e ler os dados; jogar um turno de ação
 
 > [!mais] **Produção de curingas e PVs.** Algumas cartas produzem marcadores curinga ou PVs, que você recebe a cada turno de produção (p. 10).
 
-> [!mais] **Estoque maior.** Algumas cartas deixam você ficar com mais de 3 dados no turno de produção: um a mais por símbolo de caixa na carta (p. 10).
+> [!mais] **Estoque maior.** Algumas cartas, como Logística e Armazenamento Efetivo, deixam você manter mais dados no turno de produção, de acordo com a quantidade de símbolos de caixa mostrados na carta (p. 10).
 
 > [!mais] **Pacote promocional.** É vendido à parte; as cartas dele têm dois quadrados roxos (p. 10).
 
@@ -401,7 +398,7 @@ Responda sem consultar. Cada resposta diz o que reler se errar.
 - ( ) Um turno de produção e um turno de ação.
 - (x) Um turno de produção ou um turno de ação, à sua escolha.
 - ( ) Duas ações principais.
-= Em cada turno você escolhe produzir ou agir (p. 4). Se errou, releia a etapa 2.
+= Em cada turno você escolhe produzir ou agir (p. 4). Se errou, releia as etapas 2 e 3.
 
 ?? Você tem 2 plantas e 2 curingas. Pode pôr uma floresta?
 - (x) Sim, pagando 2 plantas e os 2 curingas como plantas.
@@ -425,13 +422,13 @@ Responda sem consultar. Cada resposta diz o que reler se errar.
 - ( ) No seu próximo turno de ação.
 - (x) No seu próximo turno de produção.
 - ( ) Nunca: carta azul se usa uma vez.
-= As azuis usadas voltam à posição original no turno de produção (p. 4 e 5). Se errou, releia a etapa 2.
+= As azuis usadas voltam à posição original no turno de produção (p. 4 e 5). Se errou, releia as etapas 2 e 3.
 
 ?? Quando você recebe a carta bônus dos 5 PVs?
-- ( ) Na hora em que o cubo passa pelos 5 PVs, no meio da ação.
+- ( ) Na hora em que o cubo alcança os 5 PVs, no meio da ação.
 - (x) No fim do seu turno, escolhendo entre todas as disponíveis e jogando de graça.
 - ( ) No seu próximo turno de produção.
-= A carta bônus é recebida no fim do turno em que você chega a 5 ou a 12 PVs (p. 7). Se errou, releia a etapa 4.
+= A carta bônus é recebida no fim do turno em que você alcança 5 ou 12 PVs (p. 7). Se errou, releia a etapa 4.
 
 ?? A partida acaba quando:
 - ( ) os 3 parâmetros ficam completos.
