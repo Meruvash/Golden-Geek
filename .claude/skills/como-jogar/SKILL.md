@@ -26,3 +26,11 @@ Linha editorial de ensino de regras, separada das resenhas. Voz neutra e exata d
 - Nunca explicar o método de ensino ao leitor (pedido do editor em 31/10/2026).
 
 - Essencial à vista, o resto a um toque: regra de caso especial vai em `> [!mais] **Título.** texto`, nunca no passo a passo (PADRAO_EDITORIAL.md, "Como Jogar: essencial à vista").
+
+## Rotina diária: no mínimo 8 tutoriais por dia (pedido do editor em 01/11/2026)
+
+A tarefa agendada diária publica **pelo menos 8 tutoriais novos por dia**, direto no ar, **sem revisão humana**: a auditoria independente do passo 3 (feita por subagentes) é a única revisão. Sem limite máximo.
+
+1. `python3 tools/como_jogar_pauta.py --top 25` e escolha os 8 primeiros (ou mais) que ainda não têm tutorial e têm manual oficial acessível (português da edição brasileira; sem ele, o oficial em inglês com o aviso ao leitor). Jogo sem manual acessível fica de fora e entra o próximo da lista. Só jogos de tabuleiro e cartas; nada de jogo eletrônico.
+2. Um subagente redator por jogo, todos na mesma mensagem, cada um com o BRIEF preenchido. Depois, para cada tutorial, os dois auditores do passo 3 (conferência contra o manual e partida simulada), também em paralelo. Regra que o auditor não confirmar no manual sai do texto.
+3. Marque `"publicar": true` só nos tutoriais que passaram na auditoria e publique todos num único commit (passos 4 e 5). Se menos de 8 passarem, publique os que passaram e diga no relato quantos faltaram e por quê; nunca publique tutorial sem auditoria para cumprir a meta.
