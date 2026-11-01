@@ -34,11 +34,36 @@ Pegar é obrigatório: ninguém passa a vez. A rodada continua até não sobrar 
 
 > [!resolvido] **Exemplo resolvido.** Partida de 2 jogadores. Ana começa. Um expositor tem 2 azuis, 1 amarelo e 1 preto. Ana pega os 2 azuis e manda o amarelo e o preto para o centro. Ela guarda os azuis na segunda fileira de modelo, que tem 2 espaços: a fileira fica cheia e nada cai no chão.
 
-> [!complete] **Complete.** Agora é Bruno. Outro expositor tem 3 vermelhos e 1 branco. Ele pega os 3 vermelhos; o branco vai para o centro. Em quais fileiras de modelo os 3 cabem sem nada cair no chão? E se ele escolher a primeira fileira?
+> [!complete] **Complete.** Agora é Bruno. Outro expositor tem 3 vermelhos e 1 branco. Ele pega os 3 vermelhos; o branco vai para o centro.
+>
+> ?? Em quais fileiras de modelo os 3 vermelhos cabem sem nada cair no chão?
+> - ( ) Só na terceira
+> - ( ) Na primeira, na segunda ou na terceira
+> - (x) Na terceira, na quarta ou na quinta
+> = Na terceira (que fica cheia), na quarta ou na quinta, que têm 3, 4 e 5 espaços. Na primeira e na segunda, sobra azulejo para o chão (p. 3).
+>
+> ?? E se ele escolher a primeira fileira?
+> - (x) Entra 1 vermelho, e os outros 2 vão para o chão
+> - ( ) Entra 1 vermelho, e os outros 2 voltam para o centro da mesa
+> - ( ) Não pode: 3 azulejos não cabem numa fileira de 1 espaço
+> - ( ) Entra 1 vermelho, e os outros 2 vão para a segunda fileira
+> = Na primeira, entra 1 vermelho e os outros 2 vão para o chão. Tudo vai para uma só fileira de modelo, e o excesso cai no chão (p. 3).
 
-> [!suavez] **Agora a sua mesa.** Antes de pegar: que cor você quer, e de onde? Quantos azulejos vêm? Em que fileira de modelo cabem todos? O que vai para o centro? Se pegar do centro, você é o primeiro a fazer isso nesta rodada?
-
-**Resposta do Complete:** cabem na terceira (que fica cheia), na quarta ou na quinta. Na primeira, entra 1 vermelho e os outros 2 vão para o chão.
+> [!suavez] **Agora a sua mesa.** Antes de pegar, pense: que cor você quer, e de onde? Quantos azulejos vêm? Em que fileira de modelo cabem todos? Confira as regras que valem para qualquer mesa:
+>
+> ?? Você pega de um expositor todos os azulejos de uma cor. O que acontece com os outros azulejos desse expositor?
+> - ( ) Ficam no expositor para o próximo jogador
+> - (x) Vão para o centro da mesa
+> - ( ) Voltam para o saco
+> = Os que sobram no expositor vão para o centro da mesa (p. 3).
+>
+> ?? Você é o primeiro da rodada a pegar do centro da mesa. O que leva junto?
+> - ( ) Nada: o marcador de primeiro jogador fica no centro até o fim da rodada
+> - ( ) O marcador de primeiro jogador, que fica à sua frente sem custar pontos
+> - ( ) Um azulejo de cada cor que estiver no centro
+> - (x) O marcador de primeiro jogador, que vai para o espaço livre mais à esquerda da sua fileira do chão
+> = Quem pega do centro primeiro leva o marcador de primeiro jogador e o põe no espaço livre mais à esquerda da fileira do chão, onde ele conta como penalidade (p. 3).
+>
 
 ### Ainda não precisa saber
 
@@ -65,7 +90,7 @@ Duas ideias sustentam o resto:
 
 ## 1. Como este guia ensina
 
-O guia tem quatro etapas, cada uma uma parte real da partida: montar a mesa, pegar azulejos, revestir a parede e pontuar, e fechar a partida com os bônus. Em cada etapa vêm, nesta ordem: **Para entender** (como aquela parte funciona e por quê), **Passo a passo** (as regras exatas), três tarefas com ajuda decrescente (um **exemplo resolvido**, uma tarefa para **completar** e uma **sua vez**, sem ajuda) e um **treino rápido** para o que precisa ficar automático. As respostas ficam escondidas no fim de cada etapa: tente antes de abrir. No final, uma avaliação curta diz o que reler, e uma folha de consulta vai para a mesa.
+O guia tem quatro etapas, cada uma uma parte real da partida: montar a mesa, pegar azulejos, revestir a parede e pontuar, e fechar a partida com os bônus. Em cada etapa vêm, nesta ordem: **Para entender** (como aquela parte funciona e por quê), **Passo a passo** (as regras exatas), três tarefas com ajuda decrescente (um **exemplo resolvido**, uma tarefa para **completar** e uma **sua vez**, sem ajuda) e um **treino rápido** para o que precisa ficar automático. Cada pergunta tem opções: escolha uma, e aparecem a resposta certa e a explicação. No final, uma avaliação curta diz o que reler, e uma folha de consulta vai para a mesa.
 
 ## 2. Etapa 1: montar a mesa
 
@@ -92,17 +117,29 @@ O guia tem quatro etapas, cada uma uma parte real da partida: montar a mesa, peg
 
 > [!suavez] **Sua vez.** Você vai montar uma partida de 3 jogadores. Responda olhando só o passo a passo:
 >
-> 1. Quantos expositores de fábrica vão para a mesa, e quantos voltam para a caixa?
-> 2. Quantos azulejos saem do saco na preparação?
-> 3. Quem enche os expositores?
-> 4. Em que espaço da trilha de pontuação fica cada marcador?
-
-### Respostas da etapa 1
-
-1. Sete na mesa; dois voltam para a caixa, junto com 1 tabuleiro e 1 marcador de pontuação (passos 3 e 6).
-2. 28: 4 em cada um dos 7 expositores (passo 5).
-3. Quem pegou o marcador de primeiro jogador (passo 5).
-4. No 0 (passo 2).
+> ?? Quantos expositores de fábrica vão para a mesa, e quantos voltam para a caixa?
+> - ( ) 5 na mesa; 4 voltam
+> - ( ) 9 na mesa; nenhum volta
+> - (x) 7 na mesa; 2 voltam
+> = Sete na mesa; dois voltam para a caixa, junto com 1 tabuleiro e 1 marcador de pontuação. São os passos 3 e 6 da preparação (p. 2).
+>
+> ?? Quantos azulejos saem do saco na preparação?
+> - ( ) 20
+> - (x) 28
+> - ( ) 36
+> = 28: 4 em cada um dos 7 expositores. É o passo 5 da preparação (p. 2).
+>
+> ?? Quem enche os expositores?
+> - ( ) O jogador à esquerda de quem vai começar
+> - ( ) Cada jogador enche os expositores mais perto dele
+> - (x) Quem pegou o marcador de primeiro jogador
+> = Quem pegou o marcador de primeiro jogador. É o passo 5 da preparação (p. 2).
+>
+> ?? Em que espaço da trilha de pontuação fica cada marcador?
+> - (x) No 0
+> - ( ) No 1
+> - ( ) No número da ordem de jogo (1, 2 ou 3)
+> = No 0. É o passo 2 da preparação (p. 2).
 
 ## 3. Etapa 2: pegar azulejos
 
@@ -135,31 +172,77 @@ O guia tem quatro etapas, cada uma uma parte real da partida: montar a mesa, peg
 >
 > Ana escolhe a terceira fileira, que fica completa sem perder nada. A quinta também não perderia nada agora, mas ainda precisaria de 2 amarelos.
 
-> [!complete] **Complete.** Na mesma rodada, Bruno é o primeiro a pegar do centro: leva os 4 pretos que estão lá. A quarta fileira de modelo dele já tem 1 preto, e a quarta linha da parede não tem preto. A fileira do chão dele está vazia. O marcador de primeiro jogador já foi para o primeiro espaço da fileira do chão. Termine: se Bruno usar a quarta fileira, quantos pretos entram nela, para onde vai o resto e em que espaço do chão ele fica?
+> [!complete] **Complete.** Na mesma rodada, Bruno é o primeiro a pegar do centro: leva os 4 pretos que estão lá. A quarta fileira de modelo dele já tem 1 preto, e a quarta linha da parede não tem preto. A fileira do chão dele está vazia. O marcador de primeiro jogador já foi para o primeiro espaço da fileira do chão. Termine: Bruno usa a quarta fileira.
+>
+> ?? Quantos pretos entram na quarta fileira de modelo?
+> - ( ) Nenhum: a fileira já tem um preto
+> - (x) 3, que a completam
+> - ( ) Os 4, que a completam
+> = Entram 3 pretos, que completam a quarta fileira: 1 que já estava mais 3. Uma fileira com azulejos aceita mais da mesma cor (p. 3).
+>
+> ?? Para onde vai o quarto preto?
+> - ( ) Para o centro da mesa
+> - ( ) Para a fileira do chão, no primeiro espaço; o marcador passa para o segundo
+> - ( ) Para a tampa da caixa
+> - (x) Para a fileira do chão, no segundo espaço, logo depois do marcador de primeiro jogador
+> = O quarto preto vai para a fileira do chão, no segundo espaço, logo depois do marcador de primeiro jogador. O chão é ocupado da esquerda para a direita (p. 3 e 4).
 
-> [!suavez] **Sua vez.** Três situações:
+> [!suavez] **Sua vez.** Três situações. Primeira: você pega 2 vermelhos. Sua terceira fileira de modelo tem 1 amarelo, e a primeira linha da sua parede já tem vermelho.
 >
-> 1. Você pega 2 vermelhos. Sua terceira fileira de modelo tem 1 amarelo, e a primeira linha da sua parede já tem vermelho. Pode pôr os vermelhos na terceira fileira? E na primeira?
-> 2. Sua fileira do chão já tem 6 azulejos, e você manda mais 3 para ela. Onde ficam?
-> 3. Todos os expositores estão vazios, mas há 1 azulejo no centro da mesa. A Oferta da fábrica acabou?
+> ?? Pode pôr os vermelhos na terceira fileira?
+> - ( ) Sim, porque os 2 cabem nos espaços livres
+> - (x) Não: ela já tem amarelo
+> - ( ) Sim, e o amarelo vai para o chão para dar lugar a eles
+> = Na terceira, não: ela já tem amarelo, e uma fileira de modelo só aceita uma cor. Sobram as outras fileiras de modelo ou o chão (p. 3 e 4).
+>
+> ?? E na primeira fileira?
+> - ( ) Sim: entra 1, e o outro vai para o chão
+> - ( ) Sim: a parede só importa no Revestimento de parede
+> - (x) Não: a primeira linha da parede já tem vermelho
+> = Na primeira, também não: a linha correspondente da parede já tem vermelho. Sobram as outras fileiras de modelo ou o chão (p. 4).
+>
+> Segunda: sua fileira do chão já tem 6 azulejos, e você manda mais 3 para ela.
+>
+> ?? Onde ficam os 3 azulejos?
+> - (x) O primeiro ocupa o sétimo espaço; os outros 2 vão para a tampa da caixa
+> - ( ) O primeiro ocupa o sétimo espaço; os outros 2 voltam para o centro da mesa
+> - ( ) Os 3 vão para a tampa, porque não cabem todos no chão
+> - ( ) Os 3 ficam no chão, depois do sétimo espaço
+> = O primeiro ocupa o sétimo espaço; os outros 2 vão para a tampa da caixa (p. 4).
+>
+> Terceira: todos os expositores estão vazios, mas há 1 azulejo no centro da mesa.
+>
+> ?? A Oferta da fábrica acabou?
+> - ( ) Sim: com os expositores vazios, a fase acaba
+> - ( ) Sim: o azulejo do centro vai para a tampa da caixa
+> - (x) Não: alguém ainda tem de pegar aquele azulejo
+> = Não. A fase só termina quando não há azulejos nos expositores **nem** no centro. Alguém ainda tem de pegar aquele azulejo (p. 4).
 
-> [!treino] **Treino rápido: pode ou não pode?** Para cada caso, diga se os azulejos podem entrar na fileira de modelo citada.
+> [!treino] **Treino rápido: pode ou não pode?** Para cada caso: os azulejos podem entrar na fileira de modelo citada?
 >
-> a) 2 azuis na segunda fileira, que está vazia; a segunda linha da parede não tem azul.
+> ?? a) 2 azuis na segunda fileira, que está vazia; a segunda linha da parede não tem azul.
+> - ( ) Podem, mas 1 cai no chão
+> - (x) Podem, e a fileira fica completa
+> - ( ) Não podem: a segunda fileira só recebe azulejos depois que a primeira estiver cheia
+> = Pode, e a fileira fica completa: são 2 azulejos numa fileira de 2 espaços (p. 3).
 >
-> b) 1 preto na quinta fileira, que já tem 2 pretos; a quinta linha da parede tem preto.
+> ?? b) 1 preto na quinta fileira, que já tem 2 pretos; a quinta linha da parede tem preto.
+> - (x) Não pode: a quinta linha da parede já tem preto
+> - ( ) Pode: a fileira já tem a mesma cor
+> - ( ) Pode, e a fileira fica com 3 dos 5 espaços ocupados
+> = Não pode: a quinta linha da parede já tem preto. Aliás, a situação nem deveria existir, porque os 2 pretos também não poderiam ter entrado ali (p. 4).
 >
-> c) 3 brancos na quarta fileira, que tem 1 amarelo.
+> ?? c) 3 brancos na quarta fileira, que tem 1 amarelo.
+> - ( ) Pode: entram os 3, e a fileira fica completa
+> - ( ) Pode: o amarelo vai para o chão, e os brancos entram
+> - (x) Não pode: a fileira já tem outra cor
+> = Não pode: a fileira já tem outra cor, e uma fileira de modelo só aceita uma cor (p. 3).
 >
-> d) 4 vermelhos na primeira fileira, que está vazia; a primeira linha da parede não tem vermelho.
-
-### Respostas da etapa 2
-
-- **Complete:** entram 3 pretos, que completam a quarta fileira (1 que já estava mais 3). O quarto preto vai para a fileira do chão, no segundo espaço, logo depois do marcador de primeiro jogador (p. 3 e 4).
-- **Sua vez 1:** na terceira, não: ela já tem amarelo. Na primeira, também não: a linha da parede já tem vermelho. Sobram as outras fileiras de modelo ou o chão (p. 3 e 4).
-- **Sua vez 2:** o primeiro ocupa o sétimo espaço; os outros 2 vão para a tampa da caixa (p. 4).
-- **Sua vez 3:** não. A fase só termina quando não há azulejos nos expositores **nem** no centro. Alguém ainda tem de pegar aquele azulejo (p. 4).
-- **Treino a:** pode, e a fileira fica completa. **b:** não pode: a quinta linha da parede já tem preto. Aliás, a situação nem deveria existir, porque os 2 pretos também não poderiam ter entrado ali. **c:** não pode: a fileira já tem outra cor. **d:** pode escolher a primeira fileira, mas só 1 vermelho cabe; os outros 3 vão para o chão.
+> ?? d) 4 vermelhos na primeira fileira, que está vazia; a primeira linha da parede não tem vermelho.
+> - ( ) Não pode: 4 azulejos não cabem numa fileira de 1 espaço
+> - (x) Pode, mas só 1 cabe; os outros 3 vão para o chão
+> - ( ) Pode: 1 entra, e os outros 3 vão para a segunda fileira
+> = Pode escolher a primeira fileira, mas só 1 vermelho cabe; os outros 3 vão para o chão (p. 3).
 
 ## 4. Etapa 3: revestir a parede e pontuar
 
@@ -210,35 +293,91 @@ O guia tem quatro etapas, cada uma uma parte real da partida: montar a mesa, peg
 >
 > Saldo da rodada: 5 + 1 - 2 = **4 pontos**.
 
-> [!complete] **Complete.** Bruno tem 10 pontos. A parede dele tem só o azul da segunda linha (coluna 2). Nesta rodada, a primeira fileira de modelo dele está completa com 1 azul, e a segunda está completa com 2 brancos. No chão, estão o marcador de primeiro jogador e mais 1 azulejo. O azul vai para a primeira linha, coluna 1, e não encosta em nada: 1 ponto. Termine: o branco vai para a segunda linha, coluna 1. Quantos pontos ele faz? Quanto Bruno perde no chão, e com quantos pontos fica?
+> [!complete] **Complete.** Bruno tem 10 pontos. A parede dele tem só o azul da segunda linha (coluna 2). Nesta rodada, a primeira fileira de modelo dele está completa com 1 azul, e a segunda está completa com 2 brancos. No chão, estão o marcador de primeiro jogador e mais 1 azulejo. O azul vai para a primeira linha, coluna 1, e não encosta em nada: 1 ponto. Termine: o branco vai para a segunda linha, coluna 1.
+>
+> ?? Quantos pontos faz o branco?
+> - ( ) 2
+> - ( ) 3
+> - (x) 4
+> - ( ) 1
+> = O branco encosta no azul de cima (vertical: 2) e no azul da direita (horizontal: 2): **4 pontos**. Ele conta a si mesmo nas duas direções (p. 5).
+>
+> ?? Quanto Bruno perde no chão?
+> - (x) 2
+> - ( ) 1, porque o marcador de primeiro jogador não conta como penalidade
+> - ( ) 4, porque cada um tira 2
+> = No chão, marcador e azulejo ocupam os dois primeiros espaços: 1 + 1 = **2**. O marcador conta como um azulejo de penalidade (p. 5).
+>
+> ?? Com quantos pontos Bruno fica?
+> - ( ) 12
+> - ( ) 15
+> - (x) 13
+> = Bruno fica com 10 + 1 + 4 - 2 = **13**. O marcador vai para a frente dele, e ele começa a próxima rodada (p. 4 e 5).
 
-> [!suavez] **Sua vez.** Três situações:
+> [!suavez] **Sua vez.** Três situações.
 >
-> 1. No exemplo do Complete, o que mudaria se Bruno movesse primeiro o branco e depois o azul? Por que a ordem importa?
-> 2. Você tem 3 pontos. Nesta rodada, move um azulejo que não encosta em nada e tem 4 azulejos no chão. Com quantos pontos fica?
-> 3. O marcador de primeiro jogador estava no seu chão. Para onde ele vai no fim da fase, e o que isso muda?
+> ?? No exemplo do Complete, o que mudaria se Bruno movesse primeiro o branco e depois o azul?
+> - ( ) Nada: os pontos são os mesmos em qualquer ordem
+> - (x) Faria 4 em vez de 5: o branco 2 e o azul 2
+> - ( ) Faria 3 em vez de 5: o branco 2 e o azul 1
+> = O branco faria só 2 (horizontal com o azul da coluna 2, sem ninguém em cima) e o azul depois faria 2 (vertical com o branco): 4 em vez de 5. A ordem muda os pontos, e o manual manda seguir de cima para baixo (p. 4).
+>
+> ?? Você tem 3 pontos. Nesta rodada, move um azulejo que não encosta em nada e tem 4 azulejos no chão. Com quantos pontos fica?
+> - ( ) -2
+> - ( ) 4, porque o chão só é contado na rodada seguinte
+> - (x) 0
+> = 3 + 1 = 4; o chão tira 1 + 1 + 2 + 2 = 6. A conta daria -2, mas a pontuação nunca fica abaixo de 0: você fica com **0** (p. 5).
+>
+> ?? O marcador de primeiro jogador estava no seu chão. O que acontece com ele no fim da fase?
+> - ( ) Vai para a tampa da caixa, com os outros azulejos do chão
+> - ( ) Volta para o centro da mesa e não tira pontos
+> - ( ) Fica à sua frente, sem tirar pontos
+> - (x) Conta como penalidade, fica à sua frente, e você começa a próxima rodada
+> = Ele conta como penalidade, mas não vai para a tampa. Fica à sua frente, e você enche os expositores e começa a próxima rodada (p. 5).
 
-> [!treino] **Treino rápido: quantos pontos?** Diga os pontos do azulejo novo.
+> [!treino] **Treino rápido: quantos pontos?** Quantos pontos faz o azulejo novo?
 >
-> a) Nenhum vizinho.
+> ?? a) Nenhum vizinho.
+> - ( ) 0
+> - (x) 1
+> - ( ) 2
+> = 1. Azulejo sem vizinhos vale 1 ponto (p. 5).
 >
-> b) Dois azulejos seguidos à esquerda dele, na mesma linha; nada em cima nem embaixo.
+> ?? b) Dois azulejos seguidos à esquerda dele, na mesma linha; nada em cima nem embaixo.
+> - ( ) 2
+> - ( ) 4
+> - (x) 3
+> = 3: os dois e ele (p. 5).
 >
-> c) Um azulejo à esquerda, um em cima e um embaixo.
+> ?? c) Um azulejo à esquerda, um em cima e um embaixo.
+> - (x) 5
+> - ( ) 4
+> - ( ) 3
+> = 2 na horizontal e 3 na vertical: 5. O azulejo novo entra nas duas contas (p. 5).
 >
-> d) Na mesma linha, um azulejo dois espaços à esquerda, com um espaço vazio entre eles.
+> ?? d) Na mesma linha, um azulejo dois espaços à esquerda, com um espaço vazio entre eles.
+> - ( ) 2
+> - ( ) 3
+> - (x) 1
+> = 1; o espaço vazio quebra a sequência (p. 5).
 >
-> e) Um azulejo à esquerda, um à direita, um embaixo e dois em cima, em sequência.
+> ?? e) Um azulejo à esquerda, um à direita, um embaixo e dois em cima, em sequência.
+> - ( ) 6
+> - (x) 7
+> - ( ) 4
+> = 3 na horizontal e 4 na vertical: 7 (p. 5).
 >
-> f) Quanto se perde com 5 azulejos no chão? E com 9 azulejos caídos na mesma rodada?
-
-### Respostas da etapa 3
-
-- **Complete:** o branco encosta no azul de cima (vertical: 2) e no azul da direita (horizontal: 2): **4 pontos**. No chão, marcador e azulejo ocupam os dois primeiros espaços: 1 + 1 = **2**. Bruno fica com 10 + 1 + 4 - 2 = **13**. O marcador vai para a frente dele, e ele começa a próxima rodada (p. 4 e 5).
-- **Sua vez 1:** o branco faria só 2 (horizontal com o azul da coluna 2, sem ninguém em cima) e o azul depois faria 2 (vertical com o branco): 4 em vez de 5. A ordem muda os pontos, e o manual manda seguir de cima para baixo (p. 4).
-- **Sua vez 2:** 3 + 1 = 4; o chão tira 1 + 1 + 2 + 2 = 6. A conta daria -2, mas a pontuação nunca fica abaixo de 0: você fica com **0** (p. 5).
-- **Sua vez 3:** ele conta como penalidade, mas não vai para a tampa. Fica à sua frente, e você enche os expositores e começa a próxima rodada (p. 5).
-- **Treino a:** 1. **b:** 3 (os dois e ele). **c:** 2 na horizontal e 3 na vertical: 5. **d:** 1; o espaço vazio quebra a sequência. **e:** 3 na horizontal e 4 na vertical: 7. **f:** 1 + 1 + 2 + 2 + 2 = 8. Com 9, só 7 cabem no chão: 14 pontos, e os 2 restantes vão para a tampa sem custo extra (p. 4 e 5).
+> ?? f) Quanto se perde com 5 azulejos no chão?
+> - ( ) 5
+> - ( ) 10
+> - (x) 8
+> = 1 + 1 + 2 + 2 + 2 = 8 (p. 5).
+>
+> ?? E com 9 azulejos caídos na mesma rodada?
+> - (x) 14, e os 2 que não cabem vão para a tampa sem custo extra
+> - ( ) 20, porque os 2 que não cabem tiram 3 cada
+> - ( ) 11, porque só os 6 primeiros espaços tiram pontos
+> = Com 9, só 7 cabem no chão: 14 pontos, e os 2 restantes vão para a tampa sem custo extra (p. 4 e 5).
 
 ## 5. Etapa 4: o fim da partida e os bônus
 
@@ -275,27 +414,53 @@ O guia tem quatro etapas, cada uma uma parte real da partida: montar a mesa, peg
 >
 > Ana termina com 58 + 11 = **69 pontos**.
 
-> [!complete] **Complete.** Bruno termina o Revestimento com 48 pontos. A parede dele tem 1 fileira horizontal completa, nenhuma vertical, e os 5 pretos e os 5 vermelhos colocados. Já somamos a linha: 48 + 2 = 50. Termine a conta e diga quem vence.
-
-> [!suavez] **Sua vez.** Duas situações:
+> [!complete] **Complete.** Bruno termina o Revestimento com 48 pontos. A parede dele tem 1 fileira horizontal completa, nenhuma vertical, e os 5 pretos e os 5 vermelhos colocados. Já somamos a linha: 48 + 2 = 50.
 >
-> 1. Na última rodada, você tem 3 pontos depois de mover os azulejos e 3 azulejos no chão. Sua parede tem 1 fileira horizontal e 1 vertical completas. Com quantos pontos termina?
-> 2. Ana e Bruno terminam com 60 pontos. Ana tem 2 fileiras horizontais completas; Bruno, 1. Quem vence? E se os dois tivessem 1?
+> ?? Com quantos pontos Bruno termina, e quem vence?
+> - ( ) 60, e Ana vence
+> - ( ) 64, e Ana vence
+> - (x) 70, e Bruno vence
+> = Duas cores completas valem 2 x 10 = 20. Bruno termina com 50 + 20 = **70** e vence Ana, que fez 69 (p. 6).
+
+> [!suavez] **Sua vez.** Duas situações.
+>
+> ?? Na última rodada, você tem 3 pontos depois de mover os azulejos e 3 azulejos no chão. Sua parede tem 1 fileira horizontal e 1 vertical completas. Com quantos pontos termina?
+> - ( ) 8
+> - (x) 9
+> - ( ) 12, porque o chão não conta na última rodada
+> = O chão tira 1 + 1 + 2 = 4, mas a pontuação para em 0. Depois vêm os bônus: 2 + 7 = 9. Você termina com **9** (p. 5 e 6).
+>
+> ?? Ana e Bruno terminam com 60 pontos. Ana tem 2 fileiras horizontais completas; Bruno, 1. Quem vence?
+> - (x) Ana
+> - ( ) Bruno
+> - ( ) Ninguém: a vitória é dividida
+> = Ana vence, com mais fileiras horizontais completas (p. 6).
+>
+> ?? E se os dois tivessem 1 fileira horizontal completa?
+> - ( ) Vence quem tem mais fileiras verticais completas
+> - (x) A vitória é dividida
+> - ( ) Vence quem está com o marcador de primeiro jogador
+> = Com 1 cada, a vitória é dividida (p. 6).
 
 > [!treino] **Treino rápido: quanto de bônus?**
 >
-> a) 1 fileira horizontal completa e nada mais.
+> ?? a) 1 fileira horizontal completa e nada mais.
+> - (x) 2
+> - ( ) 7
+> - ( ) 10
+> = 2. Cada fileira horizontal completa vale 2 (p. 6).
 >
-> b) 2 fileiras horizontais e 2 verticais.
+> ?? b) 2 fileiras horizontais e 2 verticais.
+> - ( ) 9
+> - ( ) 28
+> - (x) 18
+> = 4 + 14 = 18 (p. 6).
 >
-> c) 1 fileira horizontal e 1 cor completa.
-
-### Respostas da etapa 4
-
-- **Complete:** duas cores completas valem 2 x 10 = 20. Bruno termina com 50 + 20 = **70** e vence Ana, que fez 69 (p. 6).
-- **Sua vez 1:** o chão tira 1 + 1 + 2 = 4, mas a pontuação para em 0. Depois vêm os bônus: 2 + 7 = 9. Você termina com **9** (p. 5 e 6).
-- **Sua vez 2:** Ana vence, com mais fileiras horizontais completas. Com 1 cada, a vitória é dividida (p. 6).
-- **Treino a:** 2. **b:** 4 + 14 = 18. **c:** 2 + 10 = 12.
+> ?? c) 1 fileira horizontal e 1 cor completa.
+> - ( ) 9
+> - (x) 12
+> - ( ) 10, porque a fileira horizontal não dá bônus
+> = 2 + 10 = 12 (p. 6).
 
 ## 6. Situações especiais
 
@@ -317,27 +482,59 @@ O guia tem quatro etapas, cada uma uma parte real da partida: montar a mesa, peg
 
 ## 7. Avaliação final
 
-Responda sem consultar. Depois confira e veja o que reler.
+Responda sem consultar. Cada resposta diz o que reler.
 
-1. Um expositor tem 2 amarelos, 1 preto e 1 branco. Você quer só 1 amarelo. Pode?
-2. Você é o primeiro a pegar do centro, e sua fileira do chão já tem 2 azulejos. Em que espaço fica o marcador de primeiro jogador, e quanto ele custa?
-3. Sua quinta fileira de modelo tem 3 azuis, e a quinta linha da parede já tem azul. Como isso pode estar errado?
-4. Sua terceira fileira de modelo tem 2 de 3 espaços ocupados no fim da rodada. O que acontece com esses azulejos?
-5. O azulejo novo tem um vizinho à esquerda, um à direita e um em cima. Quantos pontos faz?
-6. Você tem 4 pontos e 5 azulejos no chão, e não moveu nenhum azulejo para a parede. Com quanto fica?
-7. Alguém completou uma fileira horizontal da parede durante o Revestimento. Você ainda conta a sua fileira do chão? Há uma nova rodada?
-8. Qual bônus vale mais: uma fileira vertical completa ou uma cor completa?
+?? 1. Um expositor tem 2 amarelos, 1 preto e 1 branco. Você quer só 1 amarelo. Pode?
+- ( ) Sim, e o outro amarelo fica no expositor
+- (x) Não: você leva os 2 amarelos
+- ( ) Sim, e o outro amarelo vai para o centro
+= **Não.** Você leva todos os azulejos da cor escolhida; os outros 2 do expositor vão para o centro (p. 3). Releia a etapa 2.
 
-### Respostas da avaliação
+?? 2. Você é o primeiro a pegar do centro, e sua fileira do chão já tem 2 azulejos. Em que espaço fica o marcador de primeiro jogador, e quanto ele custa?
+- ( ) No primeiro espaço, e custa 1 ponto
+- ( ) No terceiro espaço, e custa 1 ponto, como sempre
+- (x) No terceiro espaço, e custa 2 pontos
+- ( ) Fica à sua frente, e não custa pontos
+= **No terceiro espaço**, o mais à esquerda que está livre. Ele tira **2 pontos**, como um azulejo naquele espaço (p. 3 e 5). Releia as etapas 2 e 3.
 
-1. **Não.** Você leva todos os azulejos da cor escolhida; os outros 2 do expositor vão para o centro (etapa 2).
-2. **No terceiro espaço**, o mais à esquerda que está livre. Ele tira **2 pontos**, como um azulejo naquele espaço (etapas 2 e 3).
-3. **A regra proíbe** pôr na fileira de modelo uma cor que a linha correspondente da parede já tem. Os azuis nunca poderiam ter entrado ali (etapa 2).
-4. **Ficam** no tabuleiro para a próxima rodada; fileira incompleta não perde nada (etapa 3).
-5. **5 pontos**: 3 na horizontal e 2 na vertical (etapa 3).
-6. **0.** O chão tira 8, e a pontuação não fica negativa (etapa 3).
-7. **Sim**, o chão é contado, porque faz parte do Revestimento. **Não** há nova rodada: vêm os bônus (etapa 4).
-8. **A cor completa**, 10 pontos, contra 7 da fileira vertical (etapa 4).
+?? 3. Sua quinta fileira de modelo tem 3 azuis, e a quinta linha da parede já tem azul. O que isso mostra?
+- ( ) Nada de errado: a fileira só precisa ter uma cor
+- ( ) Nada de errado: quando a fileira completar, o azul vai para outra linha da parede
+- (x) Um erro: os azuis nunca poderiam ter entrado nessa fileira
+= **A regra proíbe** pôr na fileira de modelo uma cor que a linha correspondente da parede já tem. Os azuis nunca poderiam ter entrado ali (p. 4). Releia a etapa 2.
+
+?? 4. Sua terceira fileira de modelo tem 2 de 3 espaços ocupados no fim da rodada. O que acontece com esses azulejos?
+- ( ) Vão para a fileira do chão
+- (x) Ficam no tabuleiro para a próxima rodada
+- ( ) Vão para a tampa da caixa
+- ( ) Um vai para a parede, e o outro para a tampa
+= **Ficam** no tabuleiro para a próxima rodada; fileira incompleta não perde nada (p. 4). Releia a etapa 3.
+
+?? 5. O azulejo novo tem um vizinho à esquerda, um à direita e um em cima. Quantos pontos faz?
+- ( ) 4
+- ( ) 3
+- (x) 5
+- ( ) 6
+= **5 pontos**: 3 na horizontal e 2 na vertical (p. 5). Releia a etapa 3.
+
+?? 6. Você tem 4 pontos e 5 azulejos no chão, e não moveu nenhum azulejo para a parede. Com quanto fica?
+- (x) 0
+- ( ) -4
+- ( ) 4, porque sem azulejo novo na parede o chão não conta
+= **0.** O chão tira 8, e a pontuação não fica negativa (p. 5). Releia a etapa 3.
+
+?? 7. Alguém completou uma fileira horizontal da parede durante o Revestimento. Você ainda conta a sua fileira do chão? Há uma nova rodada?
+- ( ) Não conta o chão; vêm direto os bônus
+- ( ) Conta o chão, e joga-se mais uma rodada inteira
+- (x) Conta o chão; não há nova rodada, vêm os bônus
+- ( ) Não conta o chão, e joga-se mais uma rodada inteira
+= **Sim**, o chão é contado, porque faz parte do Revestimento. **Não** há nova rodada: vêm os bônus (p. 5 e 6). Releia a etapa 4.
+
+?? 8. Qual bônus vale mais: uma fileira vertical completa ou uma cor completa?
+- ( ) A fileira vertical, 10 pontos, contra 7 da cor
+- ( ) Valem o mesmo, 7 pontos cada
+- (x) A cor completa, 10 pontos, contra 7 da fileira vertical
+= **A cor completa**, 10 pontos, contra 7 da fileira vertical (p. 6). Releia a etapa 4.
 
 > [!atencao] **Critério para começar a jogar.** Acertou 7 ou 8? Monte a mesa e jogue, com a folha de consulta ao lado. Errou a 1, a 2 ou a 3, releia a etapa 2. Errou a 4, a 5 ou a 6, a etapa 3. Errou a 7 ou a 8, a etapa 4. Depois refaça só as perguntas que errou.
 

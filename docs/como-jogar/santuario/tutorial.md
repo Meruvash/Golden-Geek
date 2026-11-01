@@ -35,11 +35,31 @@ A força é o número para onde aponta a seta da carta de ação: no lado I, o n
 
 > [!resolvido] **Exemplo resolvido.** Você começa: Projetos no 1, Água no 2, Floresta no 3, Rocha no 4. Com alcance 1, pega a peça da posição 1, um Animal de Rocha de nível 3 sem setas. A Rocha tem força 4: o Animal vai numa das 3 casas junto à entrada. Fila nova: Rocha, Projetos, Água, Floresta. A vitrine desce; nova peça na 6.
 
-> [!complete] **Complete.** O segundo jogador tem Floresta no 1, Projetos no 2, Rocha no 3 e Água no 4. Pega da posição 2 um Animal de Água de nível 4, sem setas. Pode jogá-lo? Onde ficam as cartas depois?
+> [!complete] **Complete.** O segundo jogador tem Floresta no 1, Projetos no 2, Rocha no 3 e Água no 4. Pega da posição 2 um Animal de Água de nível 4, sem setas.
+>
+> ?? Ele pode jogar o Animal de Água de nível 4?
+> - ( ) Não: a força precisa ser maior que o nível, e a carta de Água tem força 4.
+> - (x) Sim, com a carta de Água, no encaixe 4: força 4, igual ao nível.
+> - ( ) Sim, com qualquer carta de Animais, porque ele já pegou a peça no passo 1.
+> - ( ) Não: no primeiro turno só se jogam Projetos.
+> = Pode: a Água está no encaixe 4, força 4, e a força precisa ser igual ou maior que o nível, com a carta do habitat do Animal (p. 3 e 5).
+>
+> ?? Onde ficam as cartas depois de usar a de Água?
+> - ( ) Floresta no 1, Projetos no 2, Rocha no 3, Água no 4: nada se move.
+> - ( ) Floresta no 1, Projetos no 2, Água no 3, Rocha no 4.
+> - ( ) Água no 1, Rocha no 2, Projetos no 3, Floresta no 4.
+> - (x) Água no 1, Floresta no 2, Projetos no 3, Rocha no 4.
+> = A usada vai para o encaixe 1, e as que estavam à esquerda dela andam um encaixe para a direita: Água no 1, Floresta no 2, Projetos no 3, Rocha no 4 (p. 6).
+>
+> ?? Qual é o alcance dele no turno seguinte?
+> - ( ) 2
+> - (x) 3
+> - ( ) 1
+> - ( ) 4
+> = 3: a carta de Projetos foi empurrada para o encaixe 3, e o alcance é o número da seta dela (p. 4 e 6).
 
-> [!suavez] **Agora a sua mesa.** Qual é o seu alcance? Que peça pega? A carta do habitat dela tem força suficiente? Se não, pega 2 da pilha ou outra da vitrine?
-
-**Resposta do Complete:** pode: a Água está no encaixe 4, força 4. Depois: Água no 1, Floresta no 2, Projetos no 3, Rocha no 4. Alcance seguinte: 3.
+> [!suavez] **Agora a sua mesa.** Veja o seu alcance, pegue a peça e confira se a carta do habitat dela tem força suficiente.
+>
 
 ### Setas na borda das peças e Prédios
 
@@ -69,7 +89,7 @@ Os pontos vêm de três lugares: das peças (algumas valem um número fixo, outr
 
 O guia tem cinco etapas, cada uma uma parte real da partida: montar a mesa, fazer a ação principal do turno, colocar peças no zoológico, cuidar do resto do turno e, por fim, terminar a partida e contar pontos.
 
-Em cada etapa, o que fica à vista é o essencial: o passo a passo e o erro mais comum. O porquê, os exemplos resolvidos e as regras de casos especiais abrem com um toque. As tarefas vêm com ajuda que diminui (exemplo resolvido, depois uma tarefa para completar, depois uma sem ajuda), e as respostas ficam no fim da etapa. No final há uma avaliação curta e uma folha para consultar na mesa.
+Em cada etapa, o que fica à vista é o essencial: o passo a passo e o erro mais comum. O porquê, os exemplos resolvidos e as regras de casos especiais abrem com um toque. As tarefas vêm com ajuda que diminui (exemplo resolvido, depois uma tarefa para completar, depois uma sem ajuda), e a resposta aparece quando você toca numa opção. No final há uma avaliação curta e uma folha para consultar na mesa.
 
 ## 2. Etapa 1: montar a mesa
 
@@ -96,15 +116,31 @@ Em cada etapa, o que fica à vista é o essencial: o passo a passo e o erro mais
 
 > [!suavez] **Sua vez.** Partida de 4 jogadores. Responda olhando só a preparação:
 >
-> 1. Quantas metas de conservação ficam no tabuleiro de conservação?
-> 2. Em que encaixe o terceiro jogador põe a carta de Projetos? Que peças da vitrine ele pode pegar no primeiro turno?
-> 3. Com quantas peças na mão cada um começa?
-
-### Respostas da etapa 1
-
-1. Cinco (item 4 da preparação).
-2. No encaixe 3, com a seta no 3: pode pegar a peça da posição 1, 2 ou 3 (item 6; p. 4).
-3. Nenhuma (item 8).
+> ?? Quantas metas de conservação ficam no tabuleiro de conservação?
+> - ( ) 10
+> - ( ) 4, uma por jogador
+> - (x) 5
+> = Cinco: das 10 metas, 5 são reveladas e as outras 5 voltam à caixa (item 4 da preparação; p. 1).
+>
+> ?? Em que encaixe o terceiro jogador põe a carta de Projetos?
+> - ( ) No encaixe 1
+> - (x) No encaixe 3
+> - ( ) No encaixe 4
+> - ( ) No encaixe 2
+> = No encaixe 3, com a seta no 3: o primeiro põe no 1, e cada seguinte, em sentido horário, um encaixe mais à direita (item 6; p. 1).
+>
+> ?? Que peças da vitrine o terceiro jogador pode pegar no primeiro turno?
+> - (x) A da posição 1, 2 ou 3.
+> - ( ) Só a da posição 3.
+> - ( ) A de qualquer posição, de 1 a 6.
+> - ( ) Só a da posição 1, como todos no primeiro turno.
+> = Com a seta no 3, o alcance é 3: pode pegar a peça da posição 1, 2 ou 3 (item 6; p. 4).
+>
+> ?? Com quantas peças na mão cada um começa?
+> - ( ) 6
+> - ( ) 2, tiradas do topo da pilha
+> - (x) Nenhuma
+> = Nenhuma: o suporte de peças começa vazio (item 8; p. 1).
 
 ## 3. Etapa 2: a ação do turno
 
@@ -136,23 +172,56 @@ Em cada etapa, o que fica à vista é o essencial: o passo a passo e o erro mais
 >
 > Por que essa escolha: com a Água forte, você guarda a carta para um Animal de Água de nível 4. No próximo turno, porém, o seu alcance é 1.
 
-> [!complete] **Complete.** Sua carta de Água está no lado II, no encaixe 3. Já sabemos: força 4. Na mão, dois Animais de nível 2, um de Água e um indefinido, e um Animal de Água de nível 3. Complete: quais pares você pode jogar nesta ação?
+> [!complete] **Complete.** Sua carta de Água está no lado II, no encaixe 3. Já sabemos: força 4. Na mão, dois Animais de nível 2, um de Água e um indefinido, e um Animal de Água de nível 3.
+>
+> ?? Complete: quais pares você pode jogar nesta ação?
+> - ( ) Nenhum: no lado II o indefinido não entra junto com um Animal de Água.
+> - ( ) Água 2 com indefinido 2, e também Água 3 com qualquer um dos de nível 2.
+> - ( ) Água 3 com Água 2: a força só precisa cobrir cada Animal separado.
+> - (x) Só Água 2 com indefinido 2 (soma 4).
+> = Água 2 com indefinido 2 (soma 4). Água 3 com qualquer dos outros dá soma 5, maior que 4: não pode. Sozinho, qualquer um dos três entra (p. 5).
 
-> [!suavez] **Sua vez.** Sua fila: Água no 1, Projetos no 2, Floresta no 3, Rocha no 4, todas no lado I. Na mão: um Animal de Floresta de nível 4 e um Animal indefinido de nível 4. Que carta pode jogar cada um? E onde fica a carta de Projetos se você usar a de Rocha?
+> [!suavez] **Sua vez.** Sua fila: Água no 1, Projetos no 2, Floresta no 3, Rocha no 4, todas no lado I. Na mão: um Animal de Floresta de nível 4 e um Animal indefinido de nível 4.
+>
+> ?? Com que carta você pode jogar o Animal de Floresta de nível 4?
+> - (x) Com nenhuma nesta ação: só a carta de Floresta serve, e ela tem força 3.
+> - ( ) Com a carta de Rocha, que tem força 4.
+> - ( ) Com a carta de Floresta: força 3 basta, porque o Animal não tem setas.
+> = O de Floresta só entra com a carta de Floresta, força 3, menor que 4: não entra (p. 5).
+>
+> ?? Com que carta você pode jogar o Animal indefinido de nível 4?
+> - ( ) Com qualquer das três cartas de Animais.
+> - ( ) Com a de Floresta ou a de Rocha.
+> - (x) Só com a de Rocha.
+> - ( ) Só com a de Projetos.
+> = O indefinido pode usar qualquer carta de Animais, mas só a de Rocha (força 4) tem força igual ou maior que o nível 4 (p. 5).
+>
+> ?? Onde fica a carta de Projetos se você usar a de Rocha?
+> - ( ) No encaixe 2: ela não foi usada, então não se move.
+> - (x) No encaixe 3.
+> - ( ) No encaixe 1.
+> - ( ) No encaixe 4.
+> = Usando Rocha, ela vai ao encaixe 1, e as cartas que estavam à esquerda dela andam um encaixe: Projetos passa ao 3 (p. 6).
 
 > [!treino] **Treino rápido: a fila.** Fila inicial: Rocha (1), Floresta (2), Projetos (3), Água (4), lado I.
 >
-> a) Você usa Floresta. Como fica a fila?
+> ?? a) Você usa Floresta. Como fica a fila?
+> - ( ) Rocha (1), Projetos (2), Água (3), Floresta (4).
+> - (x) Floresta (1), Rocha (2), Projetos (3), Água (4).
+> - ( ) Floresta (1), Projetos (2), Água (3), Rocha (4).
+> = Floresta vai ao encaixe 1 e Rocha, que estava à esquerda dela, anda para o 2; Projetos e Água não se movem (p. 6).
 >
-> b) Você usa Rocha. Como fica?
+> ?? b) Você usa Rocha. Como fica?
+> - ( ) Floresta (1), Projetos (2), Água (3), Rocha (4).
+> - ( ) Floresta (1), Rocha (2), Projetos (3), Água (4).
+> - (x) Nada muda: Rocha (1), Floresta (2), Projetos (3), Água (4).
+> = Nada muda: a carta já estava no 1 (p. 6).
 >
-> c) Projetos no lado II, no encaixe 2. Qual é o alcance?
-
-### Respostas da etapa 2
-
-- **Complete:** Água 2 com indefinido 2 (soma 4). Água 3 com qualquer dos outros dá soma 5, maior que 4: não pode. Sozinho, qualquer um dos três entra (p. 5).
-- **Sua vez:** o de Floresta só com a carta de Floresta, força 3, menor que 4: não entra. O indefinido pode usar qualquer carta de Animais; só a de Rocha (força 4) basta. Usando Rocha, ela vai ao encaixe 1 e Projetos passa ao 3 (p. 5 e 6).
-- **Treino a:** Floresta (1), Rocha (2), Projetos (3), Água (4). **b:** nada muda: a carta já estava no 1. **c:** 3 (lado II soma 1).
+> ?? c) Projetos no lado II, no encaixe 2. Qual é o alcance?
+> - ( ) 2
+> - ( ) 4
+> - (x) 3
+> = 3: no lado II a seta aponta um número acima, e o lado II soma 1 (p. 3 e 4).
 
 ## 4. Etapa 3: colocar peças no zoológico
 
@@ -184,23 +253,48 @@ Em cada etapa, o que fica à vista é o essencial: o passo a passo e o erro mais
 >
 > Conta de peças: o Animal sai da mão, e mais uma peça vira espaço livre. Duas peças da mão para um Animal. No fim, o espaço livre novo vale 1 ponto.
 
-> [!complete] **Complete.** Você joga um Animal de Água de nível 4 que tem uma seta na borda, e já tem no zoológico um Projeto com efeito contínuo: "quando um ícone de réptil entra, pegue 1 peça qualquer da vitrine". O Animal tem ícone de réptil e um efeito com raio que também dá 1 peça da vitrine (é a situação da p. 5). Você já pôs o Animal e virou uma peça para o espaço livre. Complete: quantas peças você pega e em que ordem resolve os efeitos?
+> [!complete] **Complete.** Você joga um Animal de Água de nível 4 que tem uma seta na borda, e já tem no zoológico um Projeto com efeito contínuo: "quando um ícone de réptil entra, pegue 1 peça qualquer da vitrine". O Animal tem ícone de réptil e um efeito com raio que também dá 1 peça da vitrine (é a situação da p. 5). Você já pôs o Animal e virou uma peça para o espaço livre.
+>
+> ?? Complete: quantas peças da vitrine você pega?
+> - ( ) 1: os dois efeitos pedem a mesma coisa e contam uma vez só.
+> - ( ) 3: uma de cada efeito e mais uma pelo espaço livre.
+> - (x) 2, uma de cada efeito.
+> = 2 peças, uma de cada efeito: o do Projeto, contínuo, e o do Animal, com raio (p. 5).
+>
+> ?? Em que ordem você resolve os dois efeitos?
+> - (x) Na ordem que você escolher.
+> - ( ) Primeiro o do Projeto, que já estava no zoológico.
+> - ( ) Primeiro o do Animal, que acabou de entrar.
+> = A ordem é você quem escolhe: vários efeitos ao mesmo tempo se resolvem na ordem que o jogador quiser (p. 5).
 
-> [!suavez] **Sua vez.** Você tem um Animal macho na casa vizinha de uma casa vazia. A fêmea da mesma espécie está na sua mão. A casa vazia tem um bônus de colocação. O que você ganha ao jogar a fêmea ali?
+> [!suavez] **Sua vez.** Você tem um Animal macho na casa vizinha de uma casa vazia. A fêmea da mesma espécie está na sua mão. A casa vazia tem um bônus de colocação.
+>
+> ?? O que você ganha ao jogar a fêmea ali?
+> - ( ) Só o bônus da casa: o casal não dá nada na hora.
+> - ( ) 1 marcador de conservação pelo casal, mas o bônus da casa se perde.
+> - ( ) 2 marcadores de conservação, um por peça do casal, e o bônus da casa.
+> - (x) 1 marcador de conservação pelo casal e o bônus da casa, mais os efeitos da peça.
+> = 1 marcador de conservação pelo casal e o bônus da casa, mais os efeitos da peça, na ordem que quiser (p. 2 e 3).
 
 > [!treino] **Treino rápido: pode pôr aqui?**
 >
-> a) Casa vazia vizinha só de um espaço livre impresso.
+> ?? a) Casa vazia vizinha só de um espaço livre impresso. Pode pôr a peça ali?
+> - ( ) Sim: espaço livre impresso conta como peça vizinha.
+> - (x) Não.
+> - ( ) Sim, desde que a casa tenha um bônus de colocação.
+> = Não. Espaço livre impresso não conta como peça; a casa precisa ser vizinha da entrada ou de outra peça (p. 3).
 >
-> b) Animal com uma seta que apontaria para um Prédio seu.
+> ?? b) Animal com uma seta que apontaria para um Prédio seu. Pode pôr o Animal ali?
+> - ( ) Sim: a seta só não pode apontar para outro Animal.
+> - ( ) Sim, virando uma peça da mão para baixo em cima do Prédio.
+> - (x) Não.
+> = Não: a seta na borda não pode apontar para peça aberta, e a peça não pode ir naquela casa (p. 2 e 3).
 >
-> c) Prédio girado para que a seta encaixe num espaço livre.
-
-### Respostas da etapa 3
-
-- **Complete:** 2 peças, uma de cada efeito. A ordem é você quem escolhe (p. 5).
-- **Sua vez:** 1 marcador de conservação pelo casal e o bônus da casa, mais os efeitos da peça, na ordem que quiser (p. 2 e 3).
-- **Treino a:** não. Espaço livre impresso não conta como peça; a casa precisa ser vizinha da entrada ou de outra peça. **b:** não: a seta na borda não pode apontar para peça aberta, e a peça não pode ir naquela casa. **c:** não: nenhuma peça gira (p. 3).
+> ?? c) Prédio girado para que a seta encaixe num espaço livre. Pode?
+> - (x) Não.
+> - ( ) Sim: só Animais não podem girar.
+> - ( ) Sim, se o Prédio for jogado no passo 3.
+> = Não: nenhuma peça gira (p. 3).
 
 ## 5. Etapa 4: o resto do turno
 
@@ -259,14 +353,23 @@ Em cada etapa, o que fica à vista é o essencial: o passo a passo e o erro mais
 
 > [!dica] O 4× usado agora não volta. Se outra meta prometer 4 ícones mais tarde, talvez valha guardar o 4× e usar o 3× aqui. Conte antes.
 
-> [!complete] **Complete.** Você tem 5 ícones da Ásia e 2 marcadores de conservação. Seus marcadores 5× e 4× ainda estão livres. Para o 5×, já sabemos: 5 ícones bastam, sem devolver nada. Complete: quantos pontos você soma no fim, entre o marcador e os 2 de conservação guardados?
+> [!complete] **Complete.** Você tem 5 ícones da Ásia e 2 marcadores de conservação. Seus marcadores 5× e 4× ainda estão livres. Para o 5×, já sabemos: 5 ícones bastam, sem devolver nada.
+>
+> ?? Complete: quantos pontos você soma no fim, entre o marcador e os 2 de conservação guardados?
+> - ( ) 16
+> - (x) 18
+> - ( ) 14
+> - ( ) 20
+> = 14 do 5× mais 2 × 2 = 4 dos marcadores de conservação: 18 pontos (p. 7 e 8).
 
-> [!suavez] **Sua vez.** No passo 3 você jogou um Prédio, e agora tem 3 peças de Floresta ligadas e 2 Projetos no zoológico. Nenhum marcador de melhoria foi usado e você ainda não apoiou meta. Quantas cartas pode melhorar neste turno?
-
-### Respostas da etapa 4
-
-- **Complete:** 14 do 5× mais 2 × 2 = 4 dos marcadores de conservação: 18 pontos (p. 7 e 8).
-- **Sua vez:** duas: uma pelo marcador 3= (3 peças ligadas de Floresta) e uma pelo 2 (2 Projetos). Se apoiar uma meta no passo 4, que vem antes, o marcador 1 também conta: três (p. 7).
+> [!suavez] **Sua vez.** No passo 3 você jogou um Prédio, e agora tem 3 peças de Floresta ligadas e 2 Projetos no zoológico. Nenhum marcador de melhoria foi usado e você ainda não apoiou meta.
+>
+> ?? Se não apoiar meta no passo 4, quantas cartas pode melhorar neste turno?
+> - ( ) Uma: só um marcador de melhoria por turno.
+> - ( ) Nenhuma: melhorar exige ter apoiado uma meta antes.
+> - (x) Duas.
+> - ( ) Três, contando o marcador 4≠.
+> = Duas: uma pelo marcador 3= (3 peças ligadas de Floresta) e uma pelo 2 (2 Projetos). Se apoiar uma meta no passo 4, que vem antes, o marcador 1 também conta: três (p. 7).
 
 ## 6. Etapa 5: o fim da partida e a pontuação
 
@@ -302,14 +405,29 @@ Em cada etapa, o que fica à vista é o essencial: o passo a passo e o erro mais
 >
 > Conta: 21 + 9 + 7 + 4 = 41 das peças; 5 + 7 + 10 = 22 das metas; 3 marcadores × 2 = 6; 10 do fim. Total: **79 pontos**.
 
-> [!complete] **Complete.** O jogador seguinte cobriu o próprio tabuleiro no último turno dele. Peças: 25, 6, 11 e 6 espaços livres. No tabuleiro de conservação, os marcadores 3× e 5×. Sobrou 1 marcador de conservação. Já somamos as peças: 48. Complete a conta.
+> [!complete] **Complete.** O jogador seguinte cobriu o próprio tabuleiro no último turno dele. Peças: 25, 6, 11 e 6 espaços livres. No tabuleiro de conservação, os marcadores 3× e 5×. Sobrou 1 marcador de conservação. Já somamos as peças: 48.
+>
+> ?? Complete a conta: quantos pontos ele faz?
+> - ( ) 81
+> - ( ) 74
+> - ( ) 71
+> - (x) 76
+> = 48 + 7 + 14 = 69, mais 2 do marcador de conservação, mais 5 do marcador de fim de jogo: **76 pontos**. O de 10 é só de quem disparou o fim (p. 8).
 
-> [!suavez] **Sua vez.** O terceiro jogador não cumpriu nenhuma condição. Peças: 30, 12, 4 e 3 espaços livres. Marcadores de conquista: 2× e 3×. Sobraram 2 marcadores de bolsa. Quanto ele faz, e quem vence entre os três?
-
-### Respostas da etapa 5
-
-- **Complete:** 48 + 7 + 14 = 69, mais 2 do marcador de conservação, mais 5 do marcador de fim de jogo: **76 pontos** (p. 8).
-- **Sua vez:** 30 + 12 + 4 + 3 = 49; 5 + 7 = 12; 2 × 2 = 4; sem marcador de fim. Total **65**. Vence o primeiro, com 79 (p. 8).
+> [!suavez] **Sua vez.** O terceiro jogador não cumpriu nenhuma condição. Peças: 30, 12, 4 e 3 espaços livres. Marcadores de conquista: 2× e 3×. Sobraram 2 marcadores de bolsa.
+>
+> ?? Quanto ele faz?
+> - (x) 65
+> - ( ) 70
+> - ( ) 62
+> - ( ) 61
+> = 30 + 12 + 4 + 3 = 49; 5 + 7 = 12; 2 × 2 = 4; sem marcador de fim. Total **65** (p. 8).
+>
+> ?? Quem vence entre os três?
+> - ( ) O segundo, com 76: quem dispara o fim não joga outra vez.
+> - (x) O primeiro, com 79.
+> - ( ) O terceiro, com 65, porque tem mais pontos em peças.
+> = Vence o primeiro, com 79; o segundo faz 76 e o terceiro, 65. Mais pontos vence (p. 8).
 
 ## 7. Situações especiais
 
@@ -325,29 +443,73 @@ Em cada etapa, o que fica à vista é o essencial: o passo a passo e o erro mais
 
 ## 8. Avaliação final
 
-Responda sem consultar. Depois confira e veja o que reler.
+Responda sem consultar. Ao tocar numa opção, aparecem a resposta certa e a etapa a reler.
 
-1. Sua carta de Projetos está no encaixe 2, lado I. No passo 1, de quais posições pode vir a peça?
-2. Você tem um Animal de Água de nível 3 e a carta de Água no encaixe 2, lado I. Pode jogá-lo? E com a carta de Rocha no encaixe 4?
-3. Você quer jogar um Prédio com a carta de Projetos. Pode?
-4. Uma seta do Animal que você quer jogar apontaria para fora do tabuleiro. O que acontece?
-5. Você tem 1 ícone de felino e 3 marcadores de conservação. Pode apoiar a meta de felinos com o 4×? E com 0 ícones e 4 marcadores?
-6. No fim do seu turno, você tem 8 peças na mão. O que faz?
-7. Você cobriu o tabuleiro inteiro no fim do seu turno. O que acontece com você e com os outros?
-8. Dois jogadores empatam com 70 pontos. Um tem 9 Animais no zoológico; o outro, 11. Quem vence?
+?? 1. Sua carta de Projetos está no encaixe 2, lado I. No passo 1, de quais posições pode vir a peça?
+- ( ) Só da posição 2.
+- (x) Da posição 1 ou 2.
+- ( ) Das posições 1 a 3.
+- ( ) De qualquer posição, de 1 a 6.
+= **Posição 1 ou 2**: o alcance é a seta da carta de Projetos, no lado I o número do encaixe (p. 4). Se errou, releia a etapa 2.
 
-### Respostas da avaliação
+?? 2. Você tem um Animal de Água de nível 3 e a carta de Água no encaixe 2, lado I. Pode jogá-lo?
+- ( ) Sim: o habitat bate, e o nível só limita Projetos.
+- ( ) Sim: no lado I a força é o encaixe mais 1, e dá 3.
+- (x) Não.
+= **Não**, força 2 é menor que o nível 3 (p. 3 e 5). Se errou, releia a etapa 2.
 
-1. **Posição 1 ou 2** (etapa 2).
-2. **Não**, força 2 é menor que o nível 3. **Também não** com Rocha: o habitat tem de ser o mesmo (etapa 2).
-3. **Não.** Prédio entra só no passo 3, sem carta (etapas 2 e 4).
-4. A peça **não pode ir** naquela casa (etapa 3).
-5. **Sim**: 1 + 3 = 4. **Não** com 0 ícones: é preciso pelo menos 1 de verdade (etapa 4).
-6. **Descarta 2** no passo 6, viradas para cima, e fica com 6 (etapa 4).
-7. Você pega o **marcador de 10** e não joga mais; cada outro joga **1 turno** (etapa 5).
-8. **O de 11 Animais** (etapa 5).
+?? 3. E com a carta de Rocha no encaixe 4, pode jogar o mesmo Animal de Água de nível 3?
+- (x) Não.
+- ( ) Sim: força 4 basta para o nível 3.
+- ( ) Sim, se a carta de Rocha estiver no lado II.
+= **Também não** com Rocha: o habitat tem de ser o mesmo; só o Animal indefinido entra com qualquer carta de Animais (p. 5). Se errou, releia a etapa 2.
 
-> [!atencao] **Critério para começar a jogar.** Acertou 7 ou 8? Monte a mesa e jogue, com a folha de consulta ao lado. Errou a 1 ou a 2, releia a etapa 2. Errou a 3, a 4, a 5 ou a 6, as etapas 3 e 4. Errou a 7 ou a 8, a etapa 5.
+?? 4. Você quer jogar um Prédio com a carta de Projetos. Pode?
+- ( ) Sim, se a força for igual ou maior que a condição do Prédio.
+- (x) Não.
+- ( ) Sim, mas só com a carta de Projetos no lado II.
+= **Não.** Prédio entra só no passo 3, sem carta (p. 6). Se errou, releia as etapas 2 e 4.
+
+?? 5. Uma seta do Animal que você quer jogar apontaria para fora do tabuleiro. O que acontece?
+- ( ) Você gira a peça para a seta apontar para dentro.
+- ( ) A seta é ignorada e a peça entra assim mesmo.
+- ( ) Você vira uma peça da mão como espaço livre na casa mais próxima.
+- (x) A peça não pode ir naquela casa.
+= A peça **não pode ir** naquela casa: a seta não pode apontar para fora do tabuleiro, e nenhuma peça gira (p. 2 e 3). Se errou, releia a etapa 3.
+
+?? 6. Você tem 1 ícone de felino e 3 marcadores de conservação. Pode apoiar a meta de felinos com o 4×?
+- ( ) Não: marcadores de conservação só valem 2 pontos no fim.
+- (x) Sim.
+- ( ) Não: é preciso ter pelo menos 2 ícones de verdade.
+= **Sim**: 1 + 3 = 4, porque cada marcador de conservação devolvido vale 1 ícone (p. 7). Se errou, releia a etapa 4.
+
+?? 7. E com 0 ícones de felino e 4 marcadores de conservação, pode apoiar a meta com o 4×?
+- ( ) Sim: os 4 marcadores valem 4 ícones.
+- ( ) Sim, mas só com o marcador 2×.
+- (x) Não.
+= **Não** com 0 ícones: é preciso pelo menos 1 de verdade (p. 7). Se errou, releia a etapa 4.
+
+?? 8. No fim do seu turno, você tem 8 peças na mão. O que faz?
+- (x) Descarta 2 no passo 6, viradas para cima, e fica com 6.
+- ( ) Descarta 2 viradas para baixo, embaixo da pilha.
+- ( ) Vira 2 como espaços livres no seu zoológico.
+- ( ) Nada: o limite só vale quando você pega peças.
+= **Descarta 2** no passo 6, viradas para cima, e fica com 6 (p. 3 e 8). Se errou, releia a etapa 4.
+
+?? 9. Você cobriu o tabuleiro inteiro no fim do seu turno. O que acontece com você e com os outros?
+- ( ) A partida acaba na hora, sem turno extra para ninguém.
+- ( ) Você pega o marcador de 10, e todos, inclusive você, jogam mais 1 turno.
+- (x) Você pega o marcador de 10 e não joga mais; cada outro joga 1 turno.
+- ( ) Você pega o marcador de 5, e os outros jogam até a pilha acabar.
+= Você pega o **marcador de 10** e não joga mais; cada outro joga **1 turno** (p. 8). Se errou, releia a etapa 5.
+
+?? 10. Dois jogadores empatam com 70 pontos. Um tem 9 Animais no zoológico; o outro, 11. Quem vence?
+- ( ) O de 9 Animais.
+- (x) O de 11 Animais.
+- ( ) Ninguém desempata: os dois dividem a vitória.
+= **O de 11 Animais**: no empate vence quem tem mais peças de Animal no zoológico; a vitória só é dividida se persistir (p. 8). Se errou, releia a etapa 5.
+
+> [!atencao] **Critério para começar a jogar.** Acertou 9 ou 10? Monte a mesa e jogue, com a folha de consulta ao lado. Errou da 1 à 3, releia a etapa 2. Errou da 4 à 8, as etapas 3 e 4. Errou a 9 ou a 10, a etapa 5.
 
 ## 9. Para consultar durante a partida
 

@@ -136,3 +136,25 @@ Nenhum erro de regra, de conta ou de exemplo com a Pistoleira: dados, símbolos 
 **Teste de execução.** Preparação para 2: feita só com o tutorial, sem adivinhar nada. Para o máximo coberto (4, em duplas): antes da correção 5 foi preciso supor que CP e mão inicial seguem iguais e decifrar a ordem dos turnos sem o desenho; depois da correção, nada a adivinhar. 5 e 6 jogadores ficam fora, como o manual recomenda; o JSON diz "2 a 6", que é o que a caixa informa. Rodada completa (Manutenção com Quick Draw, Renda pulada pelo jogador inicial, Principal com Revolver II, rolagem ofensiva em três tentativas, anúncio, Duel do adversário, Principal (2), Descarte): executada sem lacunas. Avaliação final respondida antes de olhar as respostas: 8 de 8, iguais às do tutorial.
 
 **Portões.** Travessão e meia-risca: 0. `vicios.avisos` no tutorial e no JSON: 0. `checar_comece.py`: ✅.
+
+## Revisão de 01/11/2026: múltipla escolha e heróis das caixas brasileiras
+
+Pedido do editor: exercícios em múltipla escolha e exemplos com os heróis vendidos no Brasil (Monge vs Paladino, Feiticeira da Lua vs Bárbaro).
+
+**Fontes novas** (registradas no dossiê, seções 2 e 5.8): imagens oficiais dos componentes do *Season One Battle Chest* na loja oficial (shop.dicethrone.com), linkada pelas páginas dos heróis em dicethrone.com/heroes; Dice Throne Rulepop, que se declara "official rules reference" e é linkado na página FAQ/Downloads da loja. Nada de wiki, fórum ou vídeo. Nenhum bloqueio foi contornado. As páginas dos heróis em dicethrone.com não trazem as habilidades em texto, e o Rulepop traz fichas e esclarecimentos, mas não os tabuleiros; por isso as habilidades vêm das fotos oficiais, lidas em recortes ampliados.
+
+**Mudanças no tutorial.**
+1. Linha 3 e o primeiro [!edicao] (etapa 1): dizem que no Brasil saíram as caixas Monge vs Paladino e Feiticeira da Lua vs Bárbaro e que as regras foram conferidas no manual oficial em inglês.
+2. Etapa 2: exemplo resolvido "Monge contra Paladino" (Fist of Harmony contra Divine Defense) e treino de 2 perguntas.
+3. Etapa 4: exemplo resolvido "Feiticeira da Lua contra Bárbaro" (Covered Shot contra Thick Skin; Sturdy Blow, indefensável, contra Evasiva), treino de 3 perguntas (Missed Me, "On" uma vez só, indefensável) e treino de 2 perguntas sobre o Chi do Monge.
+4. Todos os exercícios (Complete, Sua vez, treinos, Comece em 4 minutos, avaliação final) viraram múltipla escolha: 48 perguntas, 3 ou 4 opções, uma certa, com explicação e página; na avaliação, a explicação diz o que reler. A pergunta 2 da avaliação virou 2a e 2b, e o critério passou a "8 ou 9 perguntas". As seções "### Respostas ..." (etapas 1 a 4 e avaliação) e o "**Resposta do Complete:**" foram apagados. "Como este guia ensina" passou a explicar o formato.
+5. Fontes: as duas novas.
+6. JSON: "chamada" e "pontos" não citam a Pistoleira; não foram mexidos.
+
+**Contas refeitas** em `<scratchpad>/dt2/calc/contas.py`, com o mapa de faces de cada herói: 1, 1, 4, 5, 6 não tem sequência pequena; 1, 3, 4, 5, 6 tem só a pequena; Divine Defense 1, 4, 5 contra 5: previne 3, Paladino 48, Monge 49; 2, 5, 6: recebe 3, Monge 1, +1 CP; Fist Strike 1, 2, 1, 2, 6: 4 Punhos, 6, com 2 Chi 8; Covered Shot 1, 2, 4, 4, 5: 2 Flechas e 3 Pés; Thick Skin 4, 6, 1: cura 2, 50 − 7 + 2 = 45; Sturdy Blow 1, 2, 6, 6, 4: 2 Espadas e 2 Estrelas; Smack 1, 2, 1, 2, 5: 4 Espadas, 6; Missed Me 4, 5, 1, 2, 6: previne 3, devolve 1; 4, 5, 4, 5, 1: previne 3 (uma vez), devolve 0.
+
+**Opções erradas.** Cada uma foi conferida contra a base de regras: números trocados (35 de Vida, 16 CP acima do teto, metade arredondada para baixo), regras de outro momento (Melhoria na rolagem, Ação de Fase Principal no turno do adversário, venda pelo custo), combinações quase atendidas (Revolver com 2 Balas, Take Cover com 2 Arrancadas). Cuidado especial: no Complete do "4 minutos", "rolar os dois 6 atrás de 1 e 4" também daria sequência grande e por isso não entrou como opção errada; no Sua vez da etapa 2, a pergunta sobre o Deadeye foi escrita como "para ainda poder completar na próxima rolagem", porque rolar só o 4 não é ilegal, só não chega a 4 Moscas; na suprema, "mudar o dado depois de anunciada" não entrou, porque o manual permite alterar dados entre o anúncio e a ativação (p. 12).
+
+**Limites.** A face 3 do Paladino (Elmo) é dedução pela legenda parcial e não aparece em nenhum exemplo; as faces 3 do Bárbaro e da Feiticeira não foram lidas e também não aparecem. Os nomes dos símbolos que a legenda não mostra (Palma, Yin-yang, Lótus, Elmo, Coração, Prece, Pé, Lua, Estrela) descrevem o desenho, e as cartas desses heróis não estão legíveis nas fotos: os exemplos de cartas e das fichas Recompensa, Recarga e Derrubada seguem com a Pistoleira. A loja oficial lista agora um manual v2.4.3 (2025), baixado mas não comparado com a 2.4.1: fica como pendência.
+
+**Portões.** `checar_quiz.py`: 48 perguntas, nenhuma resposta antiga, ok. Travessão e meia-risca: 0.

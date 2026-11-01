@@ -23,6 +23,10 @@ def secao(texto):
 
 
 def palavras(t):
+    # a explicação de um exercício de múltipla escolha ("= ...") só aparece depois do toque: não entra no tempo de leitura
+    t = re.sub(r"^(?:> ?)?= .*$", "", t, flags=re.M)
+    # as opções são lidas de relance, como numa prova: conta só o enunciado da pergunta
+    t = re.sub(r"^(?:> ?)?[-*] \((?:x| )\) .*$", "", t, flags=re.M | re.I)
     return len(re.findall(r"\w+", re.sub(r"\|[-| ]+\|", "", t)))
 
 
@@ -50,7 +54,8 @@ def checar(texto):
     pos = [turno.find(b) for b in BLOCOS]
     if all(p >= 0 for p in pos) and pos != sorted(pos):
         erros.append("os blocos do primeiro turno precisam vir na ordem: resolvido, complete, sua vez (o apoio diminui)")
-    if "[!complete]" in turno and not re.search(r"\*\*Resposta do Complete:?\*\*", turno):
+    # com múltipla escolha (decisão do editor em 31/10/2026) a resposta é a explicação da própria pergunta
+    if "[!complete]" in turno and not re.search(r"\*\*Resposta do Complete:?\*\*|^(?:> ?)?\?\? ", turno, re.M):
         erros.append("falta a **Resposta do Complete:**, depois da tarefa sem apoio (a resposta não fica junto da pergunta)")
     monte = s[s.find("### Monte a mesa"):s.find("### Seu primeiro turno")]
     if not re.search(r"^1\. ", monte, re.M):
