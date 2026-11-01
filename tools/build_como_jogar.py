@@ -93,7 +93,10 @@ const secs=[...document.querySelectorAll('.sec[id]')],idx=document.querySelector
 const poe=()=>{const y=scrollY+innerHeight*.3;let at=null;for(const s of secs){if(s.offsetTop<=y)at=s}
  t.textContent=at&&scrollY>idx.offsetTop?at.querySelector('h2').textContent.replace(/^\\d+/,'').trim():'Neste guia';
  const h=document.documentElement.scrollHeight-innerHeight;b.style.transform='scaleX('+(h>0?Math.min(1,scrollY/h):0)+')'};
-addEventListener('scroll',poe,{passive:true});addEventListener('resize',poe);poe()})()"""
+addEventListener('scroll',poe,{passive:true});addEventListener('resize',poe);poe()})();
+document.addEventListener('click',e=>{const y=e.target.closest('.yt');if(!y)return;const f=document.createElement('iframe');
+f.src='https://www.youtube-nocookie.com/embed/'+y.dataset.id+'?start='+y.dataset.t+'&autoplay=1&rel=0';f.title=y.getAttribute('aria-label');
+f.allow='autoplay; encrypted-media; picture-in-picture';f.allowFullscreen=true;y.replaceWith(f)});"""
 
 
 def rotular_tabelas(html):

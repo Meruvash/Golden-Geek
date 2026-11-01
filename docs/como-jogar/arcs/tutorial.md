@@ -46,6 +46,10 @@ Uma rodada é uma volta na mesa: em geral, cada jogador joga **1 carta de ação
 
 No fim do capítulo, quando ninguém tem mais cartas, pontuam as ambições **declaradas**. Quem estiver em primeiro numa ambição ganha o valor maior dos marcadores dela; o segundo, o valor menor (p. 18). As ambições são: **Magnata** (Matéria-Prima e Combustível), **Tirano** (Prisioneiros), **Senhor da Guerra** (Troféus), **Guardião** (Relíquia) e **Empata** (Psiônico).
 
+**Prefere ver?** O vídeo abaixo explica o jogo base do começo ao fim, com as peças na mesa. Ele complementa este guia; em caso de diferença, vale o manual.
+
+!video[Arcs: Como Jogar, com Romir G. E. Paulino, tradutor do manual brasileiro (canal Romir Play House)](https://www.youtube.com/watch?v=g3zrC-k9UYI&t=0s)
+
 > [!atencao] **Os três erros mais caros.** Ambição que ninguém declarou não pontua, por mais que você a cumpra. Superar exige o naipe da carta líder: número alto de outro naipe é Pivotar e dá só 1 ação. Destruir uma cidade provoca Ultraje em você, quem destrói, e faz você descartar recursos e cartas daquele tipo (etapa 4).
 
 ## 0. Antes de tudo: o que é este jogo
@@ -90,6 +94,8 @@ O guia tem cinco etapas: montar a mesa e ler o mapa; jogar uma rodada; fazer as 
 > 3. Peças começam **inteiras**: nave em pé, construção com o lado colorido para cima. Um dano deita a nave ou vira a construção: ela fica **danificada**. Um segundo dano a **destrói**, e ela sai do mapa.
 > 4. Você **controla** um sistema se tiver lá mais naves inteiras que qualquer outro jogador. Empate: ninguém controla.
 > 5. **Leal** é o que tem a sua cor; **Oponente**, o que tem a cor de outro jogador.
+
+!fig[O mapa preparado para 3 jogadores: a carta de preparação mostra os aglomerados fora de jogo e os sistemas iniciais de cada jogador (1A, 1B, 1C e assim por diante). Ilustração: manual Meeple BR (p. 4)](figuras/preparacao.webp)
 
 > [!mais] **Preparação para 2 jogadores.** Ponha as 6 fichas de recurso dos 6 planetas cobertos por marcadores fora de jogo nas seções de ambição do mapa: Matéria-Prima e Combustível em Magnata, Armas em Senhor da Guerra, Relíquias em Guardião e Psiônicos em Empata. Na pontuação, elas contam como se fossem de um terceiro jogador; as Armas em Senhor da Guerra contam como Troféus (p. 4 e 19).
 
@@ -154,6 +160,8 @@ O guia tem cinco etapas: montar a mesa e ler o mapa; jogar uma rodada; fazer as 
 > 3. **Pivotar:** carta de outro naipe, virada para cima, de qualquer número. Faça 1 ação da sua carta.
 >
 > Superar exige só um número maior que o da carta líder, não maior que todas as cartas jogadas. Pivotar não muda o naipe líder.
+
+!fig[Com a carta líder de Construção na mesa, uma carta de Agressão Pivota e dá 1 ação; a Construção "5" Supera e dá as 2 ações da carta. Os pontos de ação são as estrelinhas abaixo do número. Ilustração: manual Meeple BR (p. 10)](figuras/rodada.webp)
 
 > [!passos] **Passos 3 e 4: fechar a rodada** (p. 11)
 >
@@ -261,6 +269,8 @@ O guia tem cinco etapas: montar a mesa e ler o mapa; jogar uma rodada; fazer as 
 
 > [!mais] **Movimento Estilingue.** Se as naves saem de um sistema com espaçoporto Leal, você pode continuar movendo, deixando naves pelo caminho, até entrar num portal controlado por outro jogador ou em qualquer planeta. O controle é conferido antes de mover. Não se faz Estilingue a partir de espaçoporto Oponente que você controla (p. 13).
 
+!fig[Movimento Estilingue: duas naves saem de um planeta com espaçoporto Leal, passam pelo portal 4 e param no portal 5, controlado por outro jogador. Ilustração: manual Meeple BR (p. 13)](figuras/estilingue.webp)
+
 > [!mais] **Prelúdio: quando não dá.** Você não gasta recursos se passou a iniciativa ou se não tem cartas. Não usa ações de Prelúdio de uma carta da Corte assegurada no mesmo Prelúdio. Antes do Prelúdio, você decide se declara ambição e se toma a iniciativa (p. 17 e 20).
 
 > [!mais] **Cartas de Guilda.** Você as pega da Corte (Influenciar e depois Assegurar). Cada uma tem um naipe, que é um dos 5 recursos e conta para as ambições como um recurso (Armas não contam para nenhuma), regras e um custo de saque. Ações que começam com "Prelúdio:" se usam no Prelúdio. "Nova ação (Ação básica)" pode substituir a ação básica entre parênteses quando você a faria gastando um ponto de ação ou um recurso que não esteja em Ultraje. Modificadores em negrito alteram as ações básicas (p. 17 e 20).
@@ -341,6 +351,8 @@ O guia tem cinco etapas: montar a mesa e ler o mapa; jogar uma rodada; fazer as 
 >    4. Cada explosão com triângulo danifica uma construção defensora.
 >    5. Se sobrou alguma nave atacante, gaste chaves para saquear (abaixo).
 > 5. Peças destruídas viram Troféus de quem as destruiu: o atacante pega as defensoras, o defensor pega as atacantes. Elas vão para a seção de Troféus do tabuleiro.
+
+!fig[O exemplo de batalha do manual, passo a passo: 4 naves atacantes contra 1 nave inteira, 2 danificadas e 1 cidade; os dados rolados; os 2 danos sofridos (chama e interceptação); a nave defensora deitada e a cidade destruída, que vai para os Troféus. Ilustração: manual Meeple BR (p. 15)](figuras/batalha.webp)
 
 > [!passos] **Saquear** (p. 16 e 17)
 >
@@ -435,6 +447,8 @@ O guia tem cinco etapas: montar a mesa e ler o mapa; jogar uma rodada; fazer as 
 | menor | 2 | 0 |
 
 *Valores lidos na ilustração das p. 5 e 18. O outro lado dos marcadores vale mais.*
+
+!fig[Magnata com os marcadores 5/3 e 2/0: os dois jogadores empatam em primeiro, cada um leva 3 de Poder, e o bônus de cidade "+2" não vale. Ilustração: manual Meeple BR (p. 18)](figuras/pontuacao.webp)
 
 > [!mais] **Empates na ambição.** Empate no primeiro lugar: todos os empatados ganham o valor do segundo lugar, e ninguém ganha o segundo lugar de verdade. Empate no segundo lugar: os empatados não ganham nada (p. 18).
 

@@ -13,6 +13,8 @@ atencao, tabelas e listas; explicação (entender), exemplo (resolvido), ediçã
 um toque; as tarefas e respostas de cada etapa vão juntas para "Pratique esta etapa"; as seções de apoio (OPCIONAIS)
 ficam inteiras recolhidas. O tempo de leitura do topo conta só o que fica à vista.
   (p. 7)               página do manual, vira a etiqueta "p. 7"
+  !fig[legenda](figuras/x.webp)  figura grande (recorte do manual, crédito na legenda)
+  !video[legenda](https://www.youtube.com/watch?v=ID&t=135s)  vídeo aberto no segundo da ação (carrega só ao tocar)
   ![nome](icones/x.webp)  ícone pequeno (imagem na pasta da página, como-jogar/<slug>/icones/)
   ?? Pergunta          exercício de múltipla escolha (pedido do editor em 31/10/2026), em qualquer bloco ou seção:
   - ( ) opção          opção errada
@@ -108,6 +110,27 @@ def blocos(linhas, dobrar=False):
             bq[0] = re.sub(r"^\*\*" + re.escape(rot) + r"\.\*\*\s*", "", bq[0], flags=re.I)
             out.append(f'<aside class="call {tipo}"><p class="rot">{rot}</p>{blocos(bq)}</aside>')
             continue
+        if l.startswith("!fig[") or l.startswith("!video["):
+            # referência visual (decisão do editor de 01/11/2026): figura recortada do manual, com crédito na legenda,
+            # ou vídeo do YouTube aberto no segundo exato da ação (nada do vídeo é baixado; o player só carrega ao tocar)
+            m = re.match(r"!(fig|video)\[(.+?)\]\((\S+?)\)\s*$", l.strip())
+            if m and m.group(1) == "fig":
+                out.append(f'<figure class="fig"><img src="{html.escape(m.group(3))}" alt="{html.escape(re.sub(r"[*]", "", m.group(2)))}" loading="lazy" decoding="async">'
+                           f'<figcaption>{inline(m.group(2))}</figcaption></figure>')
+            elif m:
+                v = re.search(r"(?:v=|youtu\.be/)([\w-]{11})", m.group(3))
+                seg = re.search(r"[?&]t=(\d+)", m.group(3))
+                if v:
+                    vid, t0 = v.group(1), int(seg.group(1)) if seg else 0
+                    mm = f"{t0 // 60}:{t0 % 60:02d}"
+                    chamada = f"▶ Ver este momento no vídeo ({mm})" if t0 else "▶ Assistir ao vídeo"
+                    rot_aria = f"Ver este momento no vídeo, a partir de {mm}" if t0 else "Assistir ao vídeo"
+                    out.append(f'<figure class="video"><button type="button" class="yt" data-id="{vid}" data-t="{t0}" aria-label="{rot_aria}">'
+                               f'<img src="https://i.ytimg.com/vi/{vid}/hqdefault.jpg" alt="" loading="lazy" decoding="async" width="480" height="360">'
+                               f'<span class="yt-play">{chamada}</span></button>'
+                               f'<figcaption>{inline(m.group(2))} · <a href="https://www.youtube.com/watch?v={vid}&amp;t={t0}s" rel="noopener">abrir no YouTube</a></figcaption></figure>')
+            i += 1
+            continue
         if l.startswith("?? "):
             # pergunta de múltipla escolha: "?? pergunta", "- ( ) opção", "- (x) opção certa", "= explicação"
             perg, ops, expl = [l[3:].strip()], [], []
@@ -156,7 +179,7 @@ def blocos(linhas, dobrar=False):
             i += 1
             continue
         par = []
-        while i < len(linhas) and linhas[i].strip() and not re.match(r"(>|\||#{2,3} |(\d+\.|[-*]) |\?\? )", linhas[i]):
+        while i < len(linhas) and linhas[i].strip() and not re.match(r"(>|\||#{2,3} |(\d+\.|[-*]) |\?\? |!fig\[|!video\[)", linhas[i]):
             par.append(linhas[i].strip())
             i += 1
         texto = " ".join(par)
