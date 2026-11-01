@@ -53,6 +53,8 @@ A cada turno você escolhe **uma** das duas coisas (p. 4):
 
 *Ícones reproduzidos do livro de regras da Meeple BR (p. 7).*
 
+**Para que serve cada um:** só 5 recursos têm ação própria no tabuleiro: 3 megacréditos dão 2 PVs, 3 calores sobem a temperatura, 3 águas põem 1 oceano, 4 plantas põem 1 floresta e 3 cidades põem 1 cidade. Os outros 10 (terra, ciência, micróbio, animal, energia, oxigênio, aço, titânio, evento e nuclear) servem para pagar o custo das cartas que mostram aquele ícone e contam nos prêmios. A tabela completa está na etapa 1 (p. 4, 5 e 8).
+
 Você **nunca** rola de novo um dado que já está à sua frente. Para mudar a face (sempre para outra face daquele mesmo dado), só com ação de suporte, efeito de carta ou bônus do tabuleiro que mande girar um dado (p. 4, 6 e 7).
 
 ### Como a partida acaba
@@ -104,6 +106,32 @@ O guia tem quatro etapas: montar a mesa e ler os dados; jogar um turno de ação
 | Vermelho | ![calor](icones/calor.webp) calor | ![evento](icones/evento.webp) evento | ![nuclear](icones/nuclear.webp) nuclear |
 
 *Ícones reproduzidos do livro de regras da Meeple BR (p. 7).*
+
+### Para que serve cada recurso
+
+Todo recurso, de qualquer cor, serve para **pagar o custo das cartas** que mostram aquele ícone no canto superior esquerdo: o ícone pago precisa ser o mesmo do custo (p. 5). Além disso, cinco recursos têm uma **ação própria** no tabuleiro, que você pode fazer sem carta nenhuma, como ação principal (p. 4). Os outros dez não têm ação própria: valem pelo que as cartas pedem.
+
+| Recurso | Ação própria (sem carta) | Outros usos que o manual cita |
+|---|---|---|
+| ![megacrédito](icones/megacredito.webp) megacrédito | 3 megacréditos: ganhe 2 PVs (p. 4) | por ser amarelo, paga a carta Lobby, que pede um recurso amarelo qualquer (p. 11) |
+| ![ciência](icones/ciencia.webp) ciência | nenhuma | a carta Centro de Desenvolvimento troca ciências por outros recursos, um por um; paga Lobby (p. 11) |
+| ![terra](icones/terra.webp) terra | nenhuma | paga custos de cartas com o ícone de terra; paga Lobby (p. 11) |
+| ![planta](icones/planta.webp) planta | 4 plantas: 1 floresta, que sobe o oxigênio (p. 4) | por ser verde, paga a carta Decompositores, que pede um recurso verde qualquer (p. 11) |
+| ![micróbio](icones/microbio.webp) micróbio | nenhuma | paga custos de cartas com o ícone de micróbio; paga Decompositores (p. 11) |
+| ![animal](icones/animal.webp) animal | nenhuma | paga custos de cartas com o ícone de animal; paga Decompositores (p. 11) |
+| ![energia](icones/energia.webp) energia | nenhuma | paga custos de cartas com o ícone de energia |
+| ![água](icones/agua.webp) água | 3 águas: 1 oceano (p. 4) | paga custos de cartas com o ícone de água |
+| ![oxigênio](icones/oxigenio.webp) oxigênio | nenhuma: não há ação que troque o recurso oxigênio pelo parâmetro de oxigênio, que sobe com florestas e efeitos de cartas (p. 4 e 6) | paga custos de cartas com o ícone de oxigênio |
+| ![aço](icones/aco.webp) aço | nenhuma | paga a carta azul do exemplo do manual (1 aço: 1 oceano) e a Força de Trabalho Robótica (1 aço: mais uma ação principal) (p. 5 e 11) |
+| ![titânio](icones/titanio.webp) titânio | nenhuma | paga custos de cartas com o ícone de titânio |
+| ![cidade](icones/cidade.webp) cidade | 3 cidades: 1 cidade no tabuleiro (p. 4) | paga custos de cartas com o ícone de cidade |
+| ![calor](icones/calor.webp) calor | 3 calores: temperatura +1 nível (p. 4) | paga custos de cartas com o ícone de calor |
+| ![evento](icones/evento.webp) evento | nenhuma | paga custos de cartas com o ícone de evento |
+| ![nuclear](icones/nuclear.webp) nuclear | nenhuma | paga custos de cartas com o ícone de nuclear |
+
+Qualquer recurso também serve para as ações de suporte que pedem "1 recurso qualquer": virar outro dado ou comprar 2 cartas (p. 4).
+
+> [!entender] **Por que os recursos sem ação própria importam.** Os três prêmios são sorteados rolando dados, e cada um vale para um recurso: quem tiver mais daquele ícone nos custos das cartas jogadas ganha 5 PVs no fim (p. 3 e 8). Se o dado de um prêmio mostrar terra, por exemplo, contam as cartas jogadas que têm o ícone de terra no custo. Os marcos Monopólio (7 recursos de dados da mesma cor) e Bilionário (13 recursos de dados) contam recursos à sua frente, sejam quais forem (p. 12).
 
 > [!passos] **Como ler os ícones** (p. 7)
 >

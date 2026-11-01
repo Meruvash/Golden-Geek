@@ -147,3 +147,4 @@ footer .in{max-width:760px;margin:0 auto;padding-block:20px}
 .ico{display:inline-block;width:28px;height:28px;vertical-align:middle;border-radius:5px;margin-right:6px}
 td .ico{margin-right:6px}
 .rec{display:inline-flex;align-items:center;gap:0;white-space:nowrap}
+.cel{display:block;min-width:0}

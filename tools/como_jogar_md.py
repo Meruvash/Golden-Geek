@@ -63,9 +63,12 @@ def inline(t):
 
 
 def celula(c):
-    """Célula de tabela; com ícone, ícone e texto ficam num só elemento (não se separam na ficha do celular)."""
+    """Célula de tabela num só elemento quando tem ícone ou marcação (não se separa na ficha do celular)."""
     h = inline(c)
-    return f'<span class="rec">{h}</span>' if "<img" in h else h
+    if "<img" in h and len(re.sub(r"<[^>]+>", "", h)) <= 24:
+        return f'<span class="rec">{h}</span>'
+    # célula com etiqueta de página, negrito etc.: um elemento só, para não quebrar na ficha do celular
+    return f'<span class="cel">{h}</span>' if "<" in h else h
 
 
 def blocos(linhas, dobrar=False):
