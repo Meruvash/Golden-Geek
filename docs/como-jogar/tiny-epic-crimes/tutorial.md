@@ -31,7 +31,7 @@ Joga o Indicador de Tempo mais atrás; empatados, o do topo. No começo, o do ma
 1. **Dirigir** (opcional): mova o Carro quantos quarteirões quiser, sem diagonal; 1 hora cada.
 2. **Realizar 1 Ação** (obrigatória). Avance o indicador as horas da ação mais as da direção; sobre outro indicador, o seu fica por cima.
 3. **Comprar um Evento**: só se você for o primeiro a cruzar uma linha vermelha da trilha (etapa 4).
-4. **Rolagem de Mafioso**: role os dois dados; o branco dá a coluna, o preto a linha. Quarteirão vazio: ponha lá um mafioso da Bolsa. Ocupado: compre um Evento. Um 6, ou 3 e 3: nada. Dois números iguais (1, 2, 4 ou 5): ponha o mafioso e role de novo.
+4. **Rolagem de Mafioso**: role os dois dados; o branco dá a coluna, o preto a linha. Quarteirão vazio: ponha lá um mafioso da Bolsa. Ocupado: compre um Evento. Um 6, ou 3 e 3: nada. Dois números iguais (1, 2, 4 ou 5): aplique o resultado e role de novo.
 
 Ações do primeiro turno, tratado aqui como diurno (etapa 2) (p. 11 e 12):
 
@@ -257,13 +257,13 @@ São quatro etapas, cada uma uma parte real da partida, com **Para entender** (c
 
 > [!resolvido] **Exemplo resolvido.** Partida de 4. Ana tem 2 Fichas de Informante; Bruno, 1; Carla e Davi, nenhuma. Carla pega as duas que restam, em dois turnos diurnos: são 5. Ela pega a Ficha de Evidência de Cargo e vê pelo envelope o símbolo de Subchefe. Ana, Bruno e Carla ganham 1 Carta de Suspeito cada; Davi, sem Ficha de Informante, não.
 
-> [!complete] **Complete.** De noite, Bruno está no 20, a 3 quarteirões de um mafioso cuja coluna ainda tem Ficha de Testemunha. Ele dirige até lá e faz Pegar Testemunha.
+> [!complete] **Complete.** Bruno está no 14, um espaço de lua, a 3 quarteirões de um mafioso cuja coluna ainda tem Ficha de Testemunha. Ele dirige até lá e faz Pegar Testemunha.
 >
 > ?? Onde termina o indicador?
-> - ( ) 22
-> - ( ) 23
-> - (x) 25
-> = 3 horas de direção e 2 da ação: 20 + 5 = 25 (p. 11 e 12).
+> - ( ) 16
+> - ( ) 17
+> - (x) 19
+> = 3 horas de direção e 2 da ação: 14 + 5 = 19 (p. 11 e 12).
 
 > [!suavez] **Sua vez.**
 >
@@ -271,7 +271,7 @@ São quatro etapas, cada uma uma parte real da partida, com **Para entender** (c
 > - (x) Falha: a ficha volta virada para baixo, e você não diz o número
 > - ( ) Sucesso: mostre a ficha e avance o Distintivo
 > - ( ) Falha: mostre a ficha a todos e devolva-a
-> = 4 é maior que 3: falha. A ficha volta escondida e o Distintivo não anda; as 3 horas arriscadas contam como o custo da ação (p. 11 e 13).
+> = 4 é maior que 3: falha. A ficha volta escondida e o Distintivo não anda (p. 13). Quantas horas a falha custa, o manual não diz; veja a nota nas Situações especiais.
 >
 > ?? Você vira uma Ficha de Investigação com falha. Avança o Distintivo?
 > - (x) Sim
@@ -342,11 +342,11 @@ São quatro etapas, cada uma uma parte real da partida, com **Para entender** (c
 
 > [!edicao] **Pontos em que o manual deixa dúvida.** O guia escolheu uma leitura em cada um; combine com a mesa.
 >
-> - **Vizinhos em Chamar Reforços:** sem diagonal, como em Dirigir e no exemplo da p. 12 (p. 11 e 12).
+> - **Vizinhos em Chamar Reforços:** a p. 12 diz só "quarteirões adjacentes", e o exemplo dela não tem mafioso na diagonal. O guia lê sem diagonal, como em Dirigir (p. 11) e no Evento da p. 14, que fala nos "4 quarteirões adjacentes à Delegacia"; mas o mesmo Evento escreve "ortogonalmente adjacente", o que deixa a dúvida (p. 11, 12 e 14).
 > - **Horas da Tocaia com falha:** só Chamar Reforços diz com todas as letras que as horas arriscadas se gastam na falha; o guia aplica à Tocaia a regra geral do custo da ação (p. 11 a 13).
 > - **Coordenadas:** o texto da p. 16 cita "preto-2 e branco-4" como "coluna-linha", mas a preparação e a ilustração põem as brancas nas colunas e as pretas nas linhas; o guia segue a ilustração (p. 5 e 16).
-> - **Investigação com falha:** pela letra da p. 10 ("pelo menos uma Ficha de Pista daquele tipo"), quem só tem uma falha também ganha a Carta de Suspeito (p. 10 e 12).
-> - **Álibis:** das duas maneiras da p. 8, olhar a carta de outro jogador só vale com o baralho vazio.
+> - **Investigação com falha:** a p. 10 dá a carta a quem "contribuiu", "ou seja", a quem tem "pelo menos uma Ficha de Pista daquele tipo". A falha não conta para os 3 sucessos, mas é uma Ficha de Investigação no tabuleiro; o guia segue a letra e dá a carta também a quem só tem falha (p. 10 e 12).
+> - **Álibis:** a p. 8 lista duas maneiras, mas a primeira (comprar do baralho) manda usar a segunda (olhar a carta de outro jogador, escolhida por você) só quando o baralho está vazio; é assim que o guia aplica o "ganhe uma Carta de Suspeito". Interrogar (p. 14) é outra coisa: a carta do outro jogador sai ao acaso.
 > - **Encerrar Seu Caso:** listado entre as ações, mas descrito como escolha ao fim do turno; o guia segue a descrição (p. 14).
 > - **Parado no 48 sem encerrar:** o manual não diz o que acontece. Como nenhuma ação cabe sem passar do 48 (p. 14), na prática o guia trata o caso como encerrado.
 

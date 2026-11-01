@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Como jogar Tiny Epic Crimes: regras passo a passo | Elite Boardgamers</title>
+<meta name="description" content="Regras de Tiny Epic Crimes passo a passo, conferidas no manual da Asmodee: a cidade, a Trilha de Tempo, pistas, evidências, Eventos e a acusação.">
+<link rel="canonical" href="https://eliteboardgamers.com.br/como-jogar/tiny-epic-crimes/">
+<meta name="robots" content="max-image-preview:large">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Como jogar Tiny Epic Crimes">
+<meta property="og:description" content="Regras de Tiny Epic Crimes passo a passo, conferidas no manual da Asmodee: a cidade, a Trilha de Tempo, pistas, evidências, Eventos e a acusação.">
+<meta property="og:url" content="https://eliteboardgamers.com.br/como-jogar/tiny-epic-crimes/">
+<meta property="og:image" content="https://eliteboardgamers.com.br/marca/banner-1200.webp">
+<link rel="icon" href="../../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32.png">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<link rel="preload" href="../../fontes/public-sans.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:"Public Sans";src:url(../../fontes/public-sans.woff2) format("woff2");font-weight:400 800;font-style:normal;font-display:swap}
+@font-face{font-family:"Public Sans";src:url(../../fontes/public-sans-italic.woff2) format("woff2");font-weight:400;font-style:italic;font-display:swap}
+/* Layout: o mesmo da página de lição do Discipulado (O Paladino): fundo preto (pedido do editor: preto no lugar do azul), faixa do banner, navegação fixa, coluna central de 760px com cartões claros de papel, filete dourado sobre os títulos de seção. Visual único (o site não tem tema claro). */
+:root{
+  color-scheme:dark;
+  --ground:#000; --panel:#0f1115; --panel2:#171a20; --line:#262a32; --line2:#2e333c;
+  --ink:#eceff3; --muted:#a1a9b5; --gold:#e3b23c;
+  --paper:#f4f5f7; --paper-ink:#14171c; --paper-muted:#5a6270; --paper-line:#dde1e7; --paper-text:#3a414c;
+  --link:#1f5fae; --ok:#1b7a45; --ok-bg:#e3f4ea; --cinza-bg:#eceef1; --ouro-bg:#fff4d1; --ouro-ink:#8a5f00;
+  --erro:#b3263e; --faixa-ouro:#1d1606; --ouro-claro:#f1ead6; --check:#4cc38a;
+  --f-body:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box}
+html{scroll-padding-top:64px}
+body{margin:0;background:var(--ground);color:var(--ink);font:16px/1.55 var(--f-body)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--panel)}
+h1,h2,h3,p,ul,ol,figure{margin:0}
+a{color:var(--link);text-underline-offset:.18em}
+::selection{background:var(--gold);color:#000}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px;border-radius:3px}
+.gut{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+
+.skip{position:absolute;left:-999px}.skip:focus{left:12px;top:8px;z-index:40;background:var(--gold);color:#000;padding:6px 10px}
+.aviso{background:var(--gold);color:#000;font-weight:800;font-size:.8rem;text-align:center}
+.aviso .gut{padding-block:6px}
+.topo{background:var(--ground)}
+.topo img{display:block;width:100%;max-width:640px;height:auto;margin:0 auto}
+.nav{background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line);position:sticky;top:env(safe-area-inset-top,0px);z-index:20}
+.nav ul{max-width:1120px;margin:0 auto;list-style:none;display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;padding-block:0}
+.nav a{display:block;padding:11px 12px;white-space:nowrap;color:var(--ink);text-decoration:none;font-weight:700;font-size:.92rem;border-bottom:3px solid transparent}
+.nav a[aria-current]{color:var(--gold);border-bottom-color:var(--gold)}
+
+.nota{max-width:760px;margin:0 auto;padding-block:20px 56px;display:grid;gap:16px}
+.trilha ol{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:4px 8px;font-size:.85rem;color:var(--muted)}
+.trilha li+li::before{content:"›";margin-right:8px;color:var(--muted)}
+.trilha a{color:var(--gold);font-weight:700;text-decoration:none}
+
+.bloco{background:var(--paper);color:var(--paper-ink);border-radius:10px;padding:20px;min-width:0;display:grid;gap:14px}
+.num-l{font-size:.8rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--paper-muted)}
+h1{font-size:clamp(1.7rem,5vw,2.4rem);line-height:1.12;font-weight:800;letter-spacing:-.015em;text-wrap:balance}
+.meta-e{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:.88rem;color:var(--paper-muted)}
+.meta{font-family:var(--mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.05em;color:var(--paper-muted)}
+
+.r1{background:var(--panel2);color:var(--ink);border:1px solid var(--line2);border-left:4px solid var(--gold)}
+.kick{font-size:.75rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--gold)}
+.r1 .resp{font-size:1.12rem;font-weight:600;line-height:1.45}
+.r1 ul{list-style:none;padding:0;display:grid;gap:8px}
+.r1 li{display:flex;gap:8px;align-items:flex-start;color:#dfe4ea}
+.r1 li svg{flex:none;width:20px;height:20px;margin-top:2px;stroke:var(--check);fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.r1 .pe{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:.88rem;color:var(--muted)}
+.r1 .pe b{color:var(--ink)}
+.legenda{display:flex;flex-wrap:wrap;gap:8px}
+.legenda span{font-size:.74rem;font-weight:800;letter-spacing:.04em;border-radius:999px;padding:3px 10px 3px 14px;background:var(--paper);color:var(--paper-ink)}
+.legenda .l1{box-shadow:inset 5px 0 0 var(--paper-ink)}.legenda .l2{box-shadow:inset 5px 0 0 var(--ok)}
+.legenda .l3{box-shadow:inset 5px 0 0 var(--gold)}.legenda .l4{box-shadow:inset 5px 0 0 var(--ouro-ink)}
+
+.indice h2,.sec>h2{font-size:1.15rem;font-weight:800;line-height:1.3;color:var(--paper-ink);border-top:3px solid var(--gold);padding-top:12px;text-wrap:balance;display:flex;gap:10px;align-items:baseline}
+.indice ol{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:2px 16px}
+.indice a{display:block;padding:6px 0;color:var(--paper-ink);text-decoration:none;font-weight:600;font-size:.94rem;border-bottom:1px solid var(--paper-line)}
+.indice a:hover{color:var(--link)}
+
+.sec>h2 .num{display:none}
+.sec h3{font-size:1.05rem;font-weight:800;margin-top:6px}
+.sec p{color:var(--paper-text);max-width:66ch}
+.sec ul,.sec ol{padding-left:1.3em;display:grid;gap:6px;color:var(--paper-text)}
+.sec ul{list-style:disc}
+.sec li::marker{color:var(--ouro-ink);font-weight:800}
+strong{font-weight:700;color:var(--paper-ink)}
+.pg{white-space:nowrap;font-size:.76em;color:var(--paper-muted);border:1px solid var(--paper-line);background:#fff;border-radius:4px;padding:0 5px;vertical-align:.08em;font-variant-numeric:tabular-nums}
+code{font-size:.9em;background:#fff;padding:1px 5px;border-radius:4px}
+
+.tab{overflow-x:auto;border:1px solid var(--paper-line);border-radius:8px;background:#fff}
+table{border-collapse:collapse;width:100%;font-size:.92rem;color:var(--paper-text)}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--paper-line);vertical-align:top}
+th{font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--paper-muted);background:var(--paper)}
+tr:last-child td{border-bottom:0}
+
+.call{border-radius:8px;padding:14px 16px;display:grid;gap:10px;min-width:0;background:#fff;border:1px solid var(--paper-line);border-left:4px solid var(--paper-muted)}
+.call .rot{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;font-weight:800;color:var(--paper-muted)}
+.call.entender{background:var(--cinza-bg);border-color:#d5d9df;border-left-color:var(--paper-ink)}
+.call.entender .rot{color:var(--paper-ink)}
+.call.passos{border-left-color:var(--ok)}
+.call.passos .rot{color:var(--ok)}
+.call.resolvido{background:var(--panel2);border-color:var(--line2);border-left-color:var(--gold)}
+.call.resolvido .rot{color:var(--gold)}
+.call.resolvido p,.call.resolvido li{color:#dfe4ea}
+.call.resolvido strong{color:#fff}
+.call.resolvido .pg{color:#c8ccd2;border-color:var(--line2)}
+.call.complete{border-left:4px dashed var(--gold)}
+.call.complete .rot{color:var(--ouro-ink)}
+.call.suavez{background:var(--faixa-ouro);border-color:#3a2e10;border-left-color:var(--gold)}
+.call.suavez .rot{color:var(--gold)}
+.call.suavez p,.call.suavez li{color:var(--ouro-claro)}
+.call.suavez strong{color:#fff}
+.call.suavez li::marker{color:var(--gold)}
+.call.suavez .pg{color:var(--ouro-claro);border-color:#3a2e10}
+.call.treino{background:var(--ouro-bg);border-color:#f0dfa6;border-left-color:var(--ouro-ink)}
+.call.treino .rot{color:var(--ouro-ink)}
+.call.atencao{border-left-color:var(--erro)}
+.call.atencao .rot{color:var(--erro)}
+.call.edicao{background:var(--paper);border-left-color:var(--paper-ink)}
+.call.edicao .rot{color:var(--paper-ink)}
+.call.dica{background:var(--ouro-bg);border-left-color:var(--gold)}
+.call.dica .rot{color:var(--ouro-ink)}
+.call ol,.call ul{padding-left:1.3em}
+.call .pg{background:transparent}
+
+.respostas{border:1px solid var(--paper-line);border-left:4px solid var(--ok);border-radius:8px;background:#fff}
+.respostas summary{cursor:pointer;padding:12px 16px;font-weight:800;color:var(--ok);list-style:none;min-height:44px;display:flex;align-items:center}
+.respostas summary::-webkit-details-marker{display:none}
+.respostas summary::before{content:"+";display:inline-grid;place-items:center;width:1.4em;height:1.4em;margin-right:8px;border-radius:50%;background:var(--ok-bg)}
+.respostas[open] summary::before{content:"−"}
+.respostas>div{padding:0 16px 16px;display:grid;gap:12px}
+
+.sec.rapido{outline:2px solid var(--gold);outline-offset:-2px}
+.sec.rapido>h2::after{content:"4 min de leitura";margin-left:auto;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:#000;background:var(--gold);border-radius:3px;padding:3px 8px;white-space:nowrap}
+.sec.rapido>p:first-of-type{font-size:1.02rem}
+.sec.ref{outline:2px solid var(--gold);outline-offset:-2px}
+.sec.ref>h2::after{content:"Leve para a mesa";margin-left:auto;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:#000;background:var(--gold);border-radius:3px;padding:3px 8px;white-space:nowrap}
+
+footer{border-top:1px solid var(--line);background:var(--panel);color:var(--muted);font-size:.85rem}
+footer .in{max-width:760px;margin:0 auto;padding-block:20px}
+@media (max-width:600px){
+  .bloco{padding:16px;border-radius:8px}
+  .sec.ref>h2::after{display:none}
+}
+/* essencial x opcional: o que não é essencial abre com um toque */
+.dobra{border:1px solid var(--paper-line);border-radius:8px;background:#fff}
+.dobra>summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:10px;padding:11px 14px;font-weight:700;font-size:.92rem;color:var(--paper-ink);min-height:44px}
+.dobra>summary::-webkit-details-marker{display:none}
+.dobra>summary::before{content:"+";flex:none;display:grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--paper-line);color:var(--paper-ink);font-weight:800;line-height:1}
+.dobra[open]>summary::before{content:"−"}
+.dobra>.call,.dobra>details,.dobra>aside{margin:0 12px 12px}
+.dobra.pratica>summary{color:var(--ouro-ink)}
+.dobra.pratica[open]{display:grid;gap:10px;padding-bottom:12px}
+.dobra.pratica>*:not(summary){margin:0 12px}
+.dobra.sec-opc{border-style:dashed}
+.dobra.sec-opc[open]{padding-bottom:12px}
+.dobra.sec-opc>*:not(summary){margin-left:14px;margin-right:14px}
+.tag-opc{margin-left:10px;font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;font-weight:800;color:var(--paper-muted);border:1px solid var(--paper-line);border-radius:3px;padding:2px 6px;vertical-align:middle}
+.legenda-f{font-size:.88rem;color:var(--muted)}.legenda-f b{color:var(--ink)}
+.mais-i{display:inline-grid;place-items:center;width:18px;height:18px;border-radius:50%;background:var(--paper-line);color:var(--paper-ink);font-weight:800;font-size:.8rem}
+.indice small{color:var(--muted);font-weight:400}
+.sec p,.sec li,.sec a{overflow-wrap:anywhere}
+
+.ico{display:inline-block;width:28px;height:28px;vertical-align:middle;border-radius:5px;margin-right:6px}
+td .ico{margin-right:6px}
+.rec{display:inline-flex;align-items:center;gap:0;white-space:nowrap}
+.cel{display:block;min-width:0}
+
+/* referências visuais (01/11/2026): figura do manual e vídeo no ponto da ação */
+.fig,.video{margin:4px 0;display:grid;gap:6px;min-width:0}
+.fig img{width:100%;height:auto;border-radius:8px;border:1px solid var(--paper-line);background:#fff}
+.fig figcaption,.video figcaption{font-size:.82rem;color:var(--paper-muted);line-height:1.45}
+.yt{position:relative;display:block;width:100%;padding:0;border:0;border-radius:8px;overflow:hidden;cursor:pointer;background:#000;aspect-ratio:16/9}
+.yt img{width:100%;height:100%;object-fit:cover;opacity:.85;display:block}
+.yt-play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:#c4302b;color:#fff;font-weight:800;font-size:.95rem;padding:10px 16px;border-radius:999px;white-space:nowrap;box-shadow:0 2px 10px rgba(0,0,0,.4)}
+.yt:hover .yt-play,.yt:focus-visible .yt-play{background:#e03a33}
+.video iframe{width:100%;aspect-ratio:16/9;border:0;border-radius:8px;display:block}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://eliteboardgamers.com.br/#organizacao", "name": "Elite Boardgamers", "url": "https://eliteboardgamers.com.br/", "logo": {"@type": "ImageObject", "url": "https://eliteboardgamers.com.br/marca/elite-boardgamers.webp", "width": 318, "height": 254}, "sameAs": ["https://www.instagram.com/eliteboardgamers/"]}, {"@type": "Article", "@id": "https://eliteboardgamers.com.br/como-jogar/tiny-epic-crimes/#artigo", "mainEntityOfPage": "https://eliteboardgamers.com.br/como-jogar/tiny-epic-crimes/", "headline": "Como jogar Tiny Epic Crimes", "description": "Regras de Tiny Epic Crimes passo a passo, conferidas no manual da Asmodee: a cidade, a Trilha de Tempo, pistas, evidências, Eventos e a acusação.", "image": ["https://eliteboardgamers.com.br/marca/banner-1200.webp"], "datePublished": "2026-11-01", "author": {"@type": "Organization", "name": "Redação Elite Boardgamers", "url": "https://eliteboardgamers.com.br/politica-editorial/"}, "publisher": {"@id": "https://eliteboardgamers.com.br/#organizacao"}, "inLanguage": "pt-BR"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Início", "item": "https://eliteboardgamers.com.br/"}, {"@type": "ListItem", "position": 2, "name": "Como jogar", "item": "https://eliteboardgamers.com.br/como-jogar/"}, {"@type": "ListItem", "position": 3, "name": "Como jogar Tiny Epic Crimes", "item": "https://eliteboardgamers.com.br/como-jogar/tiny-epic-crimes/"}]}]}</script>
+<style id="moldura">.busca-btn{display:grid;place-items:center;flex:none;width:44px;height:44px;padding:0;border:1px solid #3a3f48;border-radius:8px;background:none;color:#e9ecf1;cursor:pointer}.busca-btn:hover{border-color:#e3b23c;color:#e3b23c}.busca-btn[hidden]{display:none}footer .in a{display:inline-flex;align-items:center;min-height:24px}.cpw{position:relative;display:inline-block}.cp{display:inline-flex;align-items:center;justify-content:center;gap:8px;box-sizing:border-box;line-height:1.2;min-height:44px;margin:0;padding:10px 20px;border-radius:999px;border:0;background:#157a43;color:#fff;font:inherit;font-size:.95rem;font-weight:800;text-decoration:none;cursor:pointer}.cp:hover{background:#11683a;color:#fff}.cp .ic{width:19px;height:19px}.cp[hidden]{display:none}.cpw.mini .cp{min-height:40px;padding:8px 14px;font-size:.88rem}.cp-menu{position:absolute;z-index:30;top:calc(100% + 8px);left:0;min-width:200px;display:grid;gap:2px;padding:6px;border-radius:12px;background:#fff;border:1px solid #dde1e7;box-shadow:0 10px 30px rgba(0,0,0,.25)}.cp-menu[hidden]{display:none}.cp-menu.sobe{top:auto;bottom:calc(100% + 8px)}.cp-menu.dir{left:auto;right:0}.cp-op{display:flex;align-items:center;gap:10px;min-height:44px;padding:8px 12px;border:0;border-radius:8px;background:none;color:#14171c;font:inherit;font-size:.95rem;font-weight:700;text-align:left;text-decoration:none;cursor:pointer}.cp-op:hover,.cp-op:focus-visible{background:#eef1f4;color:#14171c}.cp-op .ic{width:20px;height:20px}.cp-op.zap-op .ic{color:#157a43}.cp-st{position:absolute;z-index:30;top:calc(100% + 8px);left:0;white-space:nowrap;margin:0;padding:6px 12px;border-radius:8px;background:#14171c;color:#fff;font-size:.85rem;font-weight:700}.cp-st:empty{display:none}.barra-lt .cp-st{top:auto;bottom:calc(100% + 8px)}.convite{display:flex;align-items:center;justify-content:space-between;gap:12px 20px;flex-wrap:wrap}.convite .cv-t{margin:0;font-weight:800;font-size:1.1rem}.convite .cv-s{margin:2px 0 0;font-size:.92rem;opacity:.8}.barra-lt>*{flex:none}.barra-lt{width:max-content;max-width:calc(100vw - 12px);box-sizing:border-box;position:fixed;z-index:25;left:50%;bottom:calc(12px + env(safe-area-inset-bottom));display:flex;align-items:center;gap:4px;padding:5px;border-radius:999px;background:#14171c;border:1px solid #3a3f48;box-shadow:0 8px 24px rgba(0,0,0,.35);transform:translate(-50%,0);transition:transform .25s ease,opacity .25s ease}.barra-lt.fora{transform:translate(-50%,calc(100% + 24px));opacity:0;pointer-events:none}.lt-b{display:inline-flex;align-items:center;gap:7px;min-height:44px;padding:8px 14px;border:0;border-radius:999px;background:none;color:#e9ecf1;font:inherit;font-size:.9rem;font-weight:700;text-decoration:none;cursor:pointer}.lt-b:hover{background:#262a31;color:#fff}.lt-b .ic{width:20px;height:20px}.barra-lt .lt-b.curtir{background:none;border:0;color:#e9ecf1;padding:8px 14px}.barra-lt .lt-b.curtir[aria-pressed=true]{color:#ff6b81;background:none}@media (max-width:479px){.lt-b span{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}}.lt-b.curtir[aria-pressed=true] .ic{fill:currentColor}.lt-grupo{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:44px;padding:0 14px 0 6px;border-radius:999px;background:#e3b23c;color:#14171c;font-size:.9rem;font-weight:800;text-decoration:none;white-space:nowrap}.lt-grupo:hover{background:#f0c44f;color:#14171c}.lt-grupo img{width:32px;height:32px;border-radius:8px;display:block}@media (max-width:479px){.barra-lt{gap:2px}.barra-lt .lt-b{padding:8px 10px}.barra-lt .cp{padding:8px 12px}.lt-grupo{padding:0 12px 0 6px}}@media (max-width:399px){.barra-lt:has(.curtir) .cp span{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}.barra-lt:has(.curtir) .cp{padding:8px 14px}}.barra-lt .cp{min-height:44px;padding:8px 16px;font-size:.9rem}body.lt-on .voltar-topo,body.lt-on button.sobe{bottom:calc(76px + env(safe-area-inset-bottom))}@media print{.barra-lt{display:none}}.interacoes{display:grid;gap:14px}.interacoes[hidden]{display:none}.curtir-l{display:flex;align-items:center;gap:12px;flex-wrap:wrap}.curtir{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:8px 18px;border-radius:999px;border:2px solid #b3263e;background:#fff;color:#b3263e;font:inherit;font-weight:800;cursor:pointer}.curtir .ic{width:22px;height:22px}.curtir[aria-pressed=true]{background:#b3263e;color:#fff}.curtir[aria-pressed=true] .ic{fill:currentColor}.curtir .n{font-variant-numeric:tabular-nums}.curtir-dica{font-size:.9rem;color:#5a6270}.interacoes h2{margin:4px 0 0}.coms{list-style:none;margin:0;padding:0;display:grid;gap:10px}.coms li{background:#fff;border:1px solid #dde1e7;border-radius:10px;padding:12px 14px}.com-quem{margin:0;font-size:.92rem}.com-quem time{color:#5a6270;font-size:.8rem;margin-left:6px}.com-txt{margin:4px 0 0;white-space:pre-wrap;color:#14171c}.coms-vazio{margin:0;color:#5a6270}.com-form{display:grid;gap:10px;border-top:1px solid #dde1e7;padding-top:14px}.com-form label{display:grid;gap:4px;font-weight:700;font-size:.9rem;color:#14171c}.com-form small{font-weight:600;color:#5a6270}.com-form input,.com-form textarea{font:inherit;font-size:16px;font-weight:400;padding:10px 12px;border:1px solid #c8cdd5;border-radius:8px;background:#fff;color:#14171c}.com-form textarea{resize:vertical;min-height:110px}.com-form .isca{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}.com-form button{justify-self:start;min-height:44px;padding:10px 20px;border-radius:999px;border:0;background:#14171c;color:#fff;font:inherit;font-weight:800;cursor:pointer}.com-form button:disabled{opacity:.6}.com-aviso{margin:0;font-size:.82rem;color:#5a6270}.com-aviso a{color:#1f5fae}.com-st{margin:0;font-weight:700;font-size:.92rem}.com-st:empty{display:none}.com-st.ok{color:#1b7a45}.com-st.erro{color:#a3223a}:where(html){scroll-padding-top:calc(var(--nav-h,49px) + 12px)}.nav{position:sticky;top:0;z-index:20}body .abas,body .barra-f,body .ctrl{top:var(--nav-h,49px)}.marca img.logo{width:auto;height:48px;border-radius:0}@media (max-width:480px){.marca img.logo{height:40px}}.nav .casa{display:flex;align-items:center;justify-content:center;min-width:44px}.nav .casa .ic{width:20px;height:20px}@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.card:hover,.jogo:hover .capa img,.jogo:active .capa,.zap:active,.post-btn:active,.btn-filtro:hover,.btn-filtro:active,.ver:active{transform:none!important}}.in{max-width:1180px;margin:0 auto;padding-left:16px;padding-right:16px}.ic{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round;flex:none}.bar{border-bottom:1px solid var(--line);background:#000;color:var(--ink)}.bar .in{display:flex;align-items:center;gap:12px;padding-top:8px;padding-bottom:8px}.bar a{color:inherit;text-decoration:none;font-weight:600;font-size:.95rem}.marca img{display:block;width:84px;border-radius:6px}.bar .ig{margin-left:auto;display:flex;align-items:center;gap:6px;padding:6px 10px;border-radius:6px}.bar .ig:hover{color:var(--gold)}.bar .zap-mini{display:flex;align-items:center;gap:6px;padding:6px 10px;border-radius:6px;background:#157a43;color:#fff}.nav ul{padding-left:16px;padding-right:16px}.nav ul li{list-style:none}@media (max-width:700px){.bar .ig span,.bar .zap-mini span{display:none}}footer{font-size:.9rem}footer .in{max-width:1180px;display:flex;flex-wrap:wrap;gap:6px 16px;padding-top:20px;padding-bottom:28px}footer a{color:var(--muted);text-decoration:none}footer a:hover{color:var(--gold)}</style>
+<style id="guia-extra">
+/* faixa de progresso, presa logo abaixo do menu */
+.guia-prog{position:sticky;top:var(--nav-h,45px);z-index:15;background:var(--panel);border-bottom:1px solid var(--line)}
+.guia-prog a{display:flex;align-items:center;gap:10px;max-width:760px;margin:0 auto;padding:9px 16px;color:var(--ink);text-decoration:none;font-size:.86rem;font-weight:700;min-height:40px}
+.guia-prog .gp-r{flex:none;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--gold)}
+.guia-prog .gp-t{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.guia-prog .gp-i{margin-left:auto;flex:none;font-size:.78rem;color:var(--muted);font-weight:600}
+.guia-prog .gp-b{position:absolute;left:0;right:0;bottom:-1px;height:3px;background:var(--gold);transform-origin:0 50%;transform:scaleX(0)}
+html{scroll-padding-top:calc(var(--nav-h,45px) + 56px)}
+/* legenda dos blocos: pontos de cor em vez de pílulas */
+.legenda{gap:6px 16px}
+.legenda span{position:relative;background:none;color:var(--muted);box-shadow:none!important;padding:0 0 0 16px;font-size:.8rem;letter-spacing:0}
+.legenda span::before{content:"";position:absolute;left:0;top:.32em;width:10px;height:10px;border-radius:3px;background:var(--paper)}
+.legenda .l2::before{background:var(--ok)}.legenda .l3::before{background:var(--gold)}.legenda .l4::before{background:var(--ouro-ink)}
+/* índice numerado */
+.indice ol{counter-reset:it}.indice li{counter-increment:it}
+.indice a{display:flex;gap:10px;align-items:baseline;min-height:40px;padding:9px 0}
+.indice a::before{content:counter(it);flex:none;width:1.6em;font-size:.8rem;font-weight:800;color:var(--ouro-ink);font-variant-numeric:tabular-nums}
+.nota-pe{color:var(--muted);font-size:.85rem;padding:4px 2px 0}
+/* exercícios de múltipla escolha: tocou numa opção, aparece a certa e a explicação */
+.quiz{display:grid;gap:8px;padding:12px 0;border-top:1px solid var(--paper-line)}.quiz:first-of-type{border-top:0}
+.q-p{font-weight:700;color:inherit}
+.q-ops{display:grid;gap:6px}
+.q-op{display:block;width:100%;text-align:left;font:inherit;font-size:.95rem;line-height:1.35;min-height:44px;padding:10px 12px;border-radius:8px;
+ border:1px solid #c8cdd5;background:#fff;color:#14171c;cursor:pointer}
+.q-op:hover{border-color:var(--gold)}.q-op:disabled{cursor:default}
+.q-op.ok{background:#e3f4ea;border-color:#1b7a45;color:#0f4d2b;font-weight:700}.q-op.ok::before{content:"✓ ";font-weight:800}
+.q-op.erro{background:#fbe6e9;border-color:#b3263e;color:#7d1a2b}.q-op.erro::before{content:"✗ ";font-weight:800}
+.q-exp{border-left:4px solid var(--ok);background:#f2faf5;color:#14171c;border-radius:6px;padding:8px 12px}
+.q-exp .q-res{color:var(--ok)}.q-exp.mal{border-left-color:#b3263e;background:#fdf3f4}.q-exp.mal .q-res{color:#b3263e}
+.call.suavez .q-op,.call.resolvido .q-op{border-color:#3a2e10}
+/* endereços longos (fontes) quebram em vez de alargar a página */
+.sec a,.sec li,.sec p{overflow-wrap:anywhere}
+/* títulos das etapas com mais respiro */
+.sec{scroll-margin-top:calc(var(--nav-h,45px) + 56px)}
+@media (min-width:601px){.sec{padding:24px 28px}}
+/* tabelas: fichas no celular (menos as grades de células curtas, que ficam tabela e centralizadas) */
+.tab table.grade th,.tab table.grade td{text-align:center;padding:7px 6px}
+.tab table.grade th{white-space:normal;overflow-wrap:anywhere;hyphens:auto}
+@media (max-width:600px){
+ .tab:not(:has(.grade)){border:0;background:none;overflow:visible;border-radius:0}
+ .tab:not(:has(.grade)) table,.tab:not(:has(.grade)) tbody,.tab:not(:has(.grade)) tr,.tab:not(:has(.grade)) td{display:block}
+ .tab:not(:has(.grade)) thead{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+ .tab:not(:has(.grade)) tr{background:#fff;border:1px solid var(--paper-line);border-radius:8px;padding:10px 12px;margin-bottom:8px}
+ .tab:not(:has(.grade)) td{border:0;padding:3px 0;display:grid;grid-template-columns:6.5em minmax(0,1fr);gap:8px}
+ .tab:not(:has(.grade)) td::before{content:attr(data-label);font-size:.7rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--paper-muted);padding-top:3px}
+ .tab:not(:has(.grade)) td:empty{display:none}
+ .tab:not(:has(.grade)) td:first-child{display:block;font-weight:800;color:var(--paper-ink);padding-bottom:4px}
+ .tab:not(:has(.grade)) td:first-child::before{display:none}
+}
+</style>
+</head>
+<body>
+<!--moldura--><a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<header class="bar" id="topo"><div class="in">
+ <a class="marca" href="../../"><img class="logo" src="../../marca/logo-eb-104.webp" srcset="../../marca/logo-eb-52.webp 157w, ../../marca/logo-eb-104.webp 314w, ../../marca/logo-eb-156.webp 472w" sizes="(max-width: 480px) 121px, 145px" width="157" height="52" alt="Elite Board Gamers: página inicial"></a>
+ <a class="ig" href="https://www.instagram.com/eliteboardgamers/" target="_blank" rel="noopener" aria-label="Instagram @eliteboardgamers"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6" fill="currentColor"/></svg><span>@eliteboardgamers</span></a>
+ <a class="zap-mini" href="https://chat.whatsapp.com/IgQQkJdSkzHBaEq3UwFeAo" target="_blank" rel="noopener" aria-label="Grupo do WhatsApp"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8.4 19l-4.4 1Z"/><path d="M9.2 8.6c.3-.5.8-.5 1-.1l.7 1.5c.1.3 0 .6-.2.8l-.4.4c.5 1.1 1.4 2 2.5 2.5l.4-.4c.2-.2.5-.3.8-.2l1.5.7c.4.2.4.7-.1 1-.7.5-1.6.6-2.4.3a7 7 0 0 1-4.2-4.2c-.3-.8-.2-1.7.4-2.3Z"/></svg><span>Grupo do WhatsApp</span></a>
+ <button type="button" class="busca-btn" aria-label="Buscar no site" aria-haspopup="dialog" aria-keyshortcuts="/ Control+K" hidden><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></button>
+</div></header>
+<script>(()=>{const b=document.querySelector('.busca-btn');let c;b.hidden=false;const a=()=>{c=c||new Promise((r,j)=>{const s=document.createElement('script');s.src='../../busca.js';s.onload=r;s.onerror=()=>{c=null;j()};document.head.append(s)});c.then(()=>abrirBusca('../../'),()=>{})};b.addEventListener('click',a);addEventListener('keydown',e=>{const t=e.target,ed=t.isContentEditable||/^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName);if((e.key==='/'&&!ed&&!e.ctrlKey&&!e.metaKey)||((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k')){e.preventDefault();a()}})})()</script>
+<nav class="nav" aria-label="Seções do site"><ul class="in"><li><a class="casa" href="../../" aria-label="Página inicial"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 9.5V20h13V9.5"/><path d="M10 20v-5.5h4V20"/></svg></a></li><li><a href="../../noticias/">Notícias</a></li><li><a href="../../resenhas/">Resenhas</a></li><li><a href="../../como-jogar/" aria-current="true">Como jogar</a></li><li><a href="../../lancamentos/">Lançamentos</a></li><li><a href="../../consulta/">Consulta Golden Geek</a></li></ul></nav>
+<script>(()=>{const n=document.querySelector('.nav'),h=()=>document.documentElement.style.setProperty('--nav-h',n.offsetHeight+'px');h();addEventListener('resize',h);addEventListener('load',h)})()</script>
+<div class="guia-prog"><a href="#neste-guia"><span class="gp-r">Guia</span><span class="gp-t">Neste guia</span><span class="gp-i">Índice</span></a><span class="gp-b" aria-hidden="true"></span></div><!--/moldura-->
+
+<main id="conteudo" class="gut"><div class="nota">
+  <nav class="trilha" aria-label="Trilha de navegação"><ol><li><a href="../../">Início</a></li><li><a href="../">Como jogar</a></li><li aria-current="page">Tiny Epic Crimes</li></ol></nav>
+
+  <article class="bloco">
+    <span class="num-l">Dedução · Competitivo</span>
+    <h1>Como jogar Tiny Epic Crimes</h1>
+    <p class="meta-e"><span>Para quem nunca jogou</span><span>1 a 4 jogadores</span><span>30 a 60 min</span><span>14+</span><span>Edição Asmodee</span></p>
+    <p class="meta"><time datetime="2026-11-01">1 de novembro de 2026</time> · Redação Elite Boardgamers</p>
+  </article>
+
+  <section class="bloco r1" aria-label="Resumo em 1 minuto">
+    <span class="kick">Resumo em 1 minuto</span>
+    <p class="resp">Você gasta horas dirigindo pela cidade, prendendo mafiosos e juntando pistas e álibis, e vence quem acusar o assassino certo com a patente mais alta.</p>
+    <ul><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.5l4.5 4.5L19.5 6.5"/></svg><span>Joga sempre quem gastou menos horas na Trilha de Tempo, e algumas ações só valem de dia, outras só de noite.</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.5l4.5 4.5L19.5 6.5"/></svg><span>As Fichas de Pista de todos os jogadores decifram juntas os cinco traços do assassino, mas só quem pega a última vê o resultado.</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.5l4.5 4.5L19.5 6.5"/></svg><span>No fim, cada um faz uma única acusação secreta; entre quem acertou, vence o Nível de Distintivo mais alto.</span></li></ul>
+    <p class="pe"><span><b>Como você aprende:</b> 4 etapas, da mesa montada à contagem de pontos</span><span><b>Leitura do essencial:</b> cerca de 10 min</span></p>
+    <p class="legenda-f"><b>À vista, só o essencial para jogar.</b> O que abre com <span class="mais-i">+</span> é explicação, exemplo, exercício ou regra de caso especial: abra quando precisar.</p>
+  </section>
+
+<section class="bloco sec rapido" id="comece-a-jogar-em-4-minutos"><h2><span class="num"></span>Comece a jogar em 4 minutos</h2>
+<p><strong>Meta:</strong> em 4 minutos de leitura, montar a cidade e jogar o seu primeiro turno sem abrir o manual.</p>
+<h3>A ideia do jogo</h3>
+<p>Um assassino está escondido num envelope, e cada jogador é um agente atrás dele. Você dirige pela cidade prendendo <strong>mafiosos</strong> e juntando <strong>Fichas de Pista</strong>, que revelam traços do assassino, e coleciona <strong>Cartas de Suspeito</strong>, os inocentes que pode riscar da lista. Tudo gasta horas na <strong>Trilha de Tempo</strong>; quando o tempo de todos acaba, cada um faz uma única acusação.</p>
+<h3>Monte a mesa</h3>
+<p>Na ordem. O marcado <em>(depois)</em> se monta já e se usa mais tarde <span class="pg">p.&nbsp;5 e 6</span>.</p>
+<ol><li>A Carta de Delegacia no centro e as 24 Cartas de Quarteirão em volta, ao acaso, num quadrado de 5 por 5: a cidade.</li><li>Fichas de Dado brancas no alto, uma por coluna, e pretas à esquerda, uma por linha, de 1 a 5. Uma Ficha de Testemunha ao lado de cada branca; uma de Informante ao lado de cada preta.</li><li>Fichas de Investigação e de Tocaia viradas para baixo nos quarteirões marcados; as de Custódia na Delegacia <em>(depois)</em>.</li><li>Os 2 Tabuleiros de Tempo lado a lado, lado Padrão para cima: a Trilha de Tempo.</li><li>Mafiosos na Bolsa. Tire 3 e role os dados para cada um (Rolagem de Mafioso, abaixo); 6, 3 e 3 ou quarteirão ocupado: role de novo.</li><li>Cada jogador: Tabuleiro de Agente (lado Padrão), Ajuda ao Jogador, Carro na Delegacia, Distintivo no desenho grande do tabuleiro, 1 Carta de Habilidade (de 2 recebidas) e 1 de Corporação <em>(depois)</em>.</li><li>Indicadores de Tempo empilhados ao lado da trilha: o do mais velho embaixo, o do mais novo no topo.</li><li>Uma Carta de Suspeito, sem ninguém ver, no Envelope de Assassino. As outras formam o baralho.</li><li>Uma Carta de Evento virada no espaço "1" abaixo da trilha, preparada como ela manda <em>(depois)</em>.</li></ol>
+<h3>Seu primeiro turno</h3>
+<p>Joga o Indicador de Tempo mais atrás; empatados, o do topo. No começo, o do mais novo <span class="pg">p.&nbsp;5 e 8</span>. O turno <span class="pg">p.&nbsp;8, 11, 15 e 16</span>:</p>
+<ol><li><strong>Dirigir</strong> (opcional): mova o Carro quantos quarteirões quiser, sem diagonal; 1 hora cada.</li><li><strong>Realizar 1 Ação</strong> (obrigatória). Avance o indicador as horas da ação mais as da direção; sobre outro indicador, o seu fica por cima.</li><li><strong>Comprar um Evento</strong>: só se você for o primeiro a cruzar uma linha vermelha da trilha (<a href="#etapa-4-eventos-cartas-de-corporacao-e-a-acusacao">etapa 4</a>).</li><li><strong>Rolagem de Mafioso</strong>: role os dois dados; o branco dá a coluna, o preto a linha. Quarteirão vazio: ponha lá um mafioso da Bolsa. Ocupado: compre um Evento. Um 6, ou 3 e 3: nada. Dois números iguais (1, 2, 4 ou 5): aplique o resultado e role de novo.</li></ol>
+<p>Ações do primeiro turno, tratado aqui como diurno (<a href="#etapa-2-o-tempo-o-turno-e-os-mafiosos">etapa 2</a>) <span class="pg">p.&nbsp;11 e 12</span>:</p>
+<div class="tab"><table><thead><tr><th>Ação</th><th>Custo</th><th>Requisito</th></tr></thead><tbody><tr><td data-label="Ação">Prender</td><td data-label="Custo">1 hora</td><td data-label="Requisito">Mafioso no seu quarteirão</td></tr><tr><td data-label="Ação">Pegar Informante</td><td data-label="Custo">2 horas</td><td data-label="Requisito">Mafioso no seu quarteirão; Informante na sua linha</td></tr><tr><td data-label="Ação">Investigar Cena</td><td data-label="Custo">2 horas</td><td data-label="Requisito">Ficha de Investigação no seu quarteirão</td></tr><tr><td data-label="Ação">Chamar Reforços</td><td data-label="Custo">Arrisque de 1 a 6 horas</td><td data-label="Requisito">Mafiosos no seu quarteirão ou nos vizinhos</td></tr><tr><td data-label="Ação">Pausa para o Café</td><td data-label="Custo">1 hora</td><td data-label="Requisito">Nenhum</td></tr></tbody></table></div>
+<aside class="call resolvido"><p class="rot">Tarefa · exemplo resolvido</p><p><strong>Exemplo resolvido.</strong> Partida de 4 (com 2 jogadores não há Ficha de Informante na linha 2; veja as Situações especiais). Ana, a mais nova, começa na Delegacia (coluna 3, linha 3). Há um mafioso logo acima, na linha 2. Ela dirige 1 quarteirão (1 hora) e faz Pegar Informante (2 horas): o mafioso vai para a Bolsa, a Ficha de Informante da linha 2 vai para o tabuleiro dela e o Distintivo avança 1 espaço. O indicador anda 3 espaços. Na Rolagem de Mafioso, branco 5 e preto 1: a coluna 5, linha 1, vazia, recebe um mafioso.</p></aside>
+<aside class="call complete"><p class="rot">Tarefa · complete</p><p><strong>Complete.</strong> Bruno quer a Ficha de Investigação da coluna 4, linha 2, na diagonal da Delegacia.</p>
+<div class="quiz"><p class="q-p">Quantas horas, no mínimo, ele gasta para chegar e Investigar Cena?</p><div class="q-ops"><button type="button" class="q-op">3</button><button type="button" class="q-op">2</button><button type="button" class="q-op" data-ok>4</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Sem diagonal, são 2 quarteirões (2 horas), mais 2 de Investigar Cena <span class="pg">p.&nbsp;11 e 12</span>.</p></div></div></aside>
+<aside class="call suavez"><p class="rot">Tarefa · sua vez</p><p><strong>Sua vez.</strong></p>
+<div class="quiz"><p class="q-p">Ana está no 3 e Bruno no 4. Carla, mais nova que Davi, ainda está na pilha. Quem joga?</p><div class="q-ops"><button type="button" class="q-op" data-ok>Carla</button><button type="button" class="q-op">Ana</button><button type="button" class="q-op">Davi</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Quem está na pilha está mais atrás que todos; entre eles, joga o do topo, o do mais novo <span class="pg">p.&nbsp;5 e 8</span>.</p></div></div>
+<div class="quiz"><p class="q-p">Você arrisca 5 horas em Chamar Reforços e o dado mostra 6. Quantas horas gasta na ação?</p><div class="q-ops"><button type="button" class="q-op">Nenhuma</button><button type="button" class="q-op">6</button><button type="button" class="q-op" data-ok>5</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> As horas arriscadas, com sucesso ou falha <span class="pg">p.&nbsp;12</span>.</p></div></div></aside>
+<h3>Ainda não precisa saber</h3>
+<p>Ações noturnas e evidências: <a href="#etapa-3-pistas-evidencias-e-suspeitos">etapa 3</a>. Eventos e Cartas de Corporação: <a href="#etapa-4-eventos-cartas-de-corporacao-e-a-acusacao">etapa 4</a>.</p>
+<h3>Como a partida acaba</h3>
+<p>Com o indicador nas horas 43 a 48, você pode encerrar o seu caso. Com todos encerrados, cada um põe o Carro, em segredo, sobre o suspeito que acusa. Entre quem acertou, vence o Distintivo mais alto; se ninguém acertar, todos perdem <span class="pg">p.&nbsp;14 e 17</span>.</p>
+<p><strong>Prefere ver?</strong> Uma partida em vídeo. Ele complementa este guia; em caso de diferença, vale o manual.</p>
+<figure class="video"><button type="button" class="yt" data-id="BEcs4ub4O3U" data-t="0" aria-label="Assistir ao vídeo"><img src="https://i.ytimg.com/vi/BEcs4ub4O3U/hqdefault.jpg" alt="" loading="lazy" decoding="async" width="480" height="360"><span class="yt-play">▶ Assistir ao vídeo</span></button><figcaption>TINY EPIC CRIMES - Gameplay resumida, canal Duque Board Games · <a href="https://www.youtube.com/watch?v=BEcs4ub4O3U&amp;t=0s" rel="noopener">abrir no YouTube</a></figcaption></figure>
+<aside class="call atencao"><p class="rot">Atenção</p><p><strong>Os três erros mais caros.</strong> A hora do dia é a do começo do turno. Horas arriscadas são gastas mesmo na falha. Nome de Cartas de Suspeito não se lê em voz alta.</p></aside>
+</section>
+  <nav class="bloco indice" id="neste-guia" aria-label="Neste guia"><h2>Neste guia</h2><ol><li><a href="#comece-a-jogar-em-4-minutos">Comece a jogar em 4 minutos</a></li><li><a href="#antes-de-tudo-o-que-e-este-jogo">Antes de tudo: o que é este jogo</a> <small>(opcional)</small></li><li><a href="#como-este-guia-ensina">Como este guia ensina</a> <small>(opcional)</small></li><li><a href="#etapa-1-montar-a-cidade">Etapa 1: montar a cidade</a></li><li><a href="#etapa-2-o-tempo-o-turno-e-os-mafiosos">Etapa 2: o tempo, o turno e os mafiosos</a></li><li><a href="#etapa-3-pistas-evidencias-e-suspeitos">Etapa 3: pistas, evidências e suspeitos</a></li><li><a href="#etapa-4-eventos-cartas-de-corporacao-e-a-acusacao">Etapa 4: Eventos, Cartas de Corporação e a acusação</a></li><li><a href="#situacoes-especiais">Situações especiais</a> <small>(opcional)</small></li><li><a href="#avaliacao-final">Avaliação final</a> <small>(opcional)</small></li><li><a href="#para-consultar-durante-a-partida">Para consultar durante a partida</a></li><li><a href="#fontes">Fontes</a></li></ol></nav>
+
+<section class="bloco sec opc" id="antes-de-tudo-o-que-e-este-jogo"><h2><span class="num">0</span>Antes de tudo: o que é este jogo<span class="tag-opc">Opcional</span></h2>
+<details class="dobra sec-opc"><summary>Abrir esta seção</summary><p>Em Echo Ridge, o produtor de cinema Donny Mureti foi assassinado, e os agentes da lei têm 48 horas para achar o culpado <span class="pg">p.&nbsp;2</span>. No Modo Padrão, cada um joga por si: vence quem acusar o assassino certo e tiver a patente mais alta; se ninguém acertar, todos perdem <span class="pg">p.&nbsp;4</span>.</p>
+<p>O assassino é uma das 16 Cartas de Suspeito. Há dois caminhos até ele, e o jogo pede os dois <span class="pg">p.&nbsp;8 e 9</span>:</p>
+<ul><li><strong>Riscar inocentes.</strong> As outras Cartas de Suspeito têm álibi: cada uma que você vê sai da lista.</li><li><strong>Decifrar evidências.</strong> O assassino tem cinco traços, cada um com duas possibilidades, revelados quando os jogadores, somados, juntam fichas suficientes de um tipo.</li></ul>
+<p>Só quem pega a última ficha vê o traço; quem ajudou ganha uma Carta de Suspeito. Todos colaboram para decifrar, mas cada um guarda o que sabe <span class="pg">p.&nbsp;4, 9 e 10</span>.</p></details>
+</section>
+<section class="bloco sec opc" id="como-este-guia-ensina"><h2><span class="num">1</span>Como este guia ensina<span class="tag-opc">Opcional</span></h2>
+<details class="dobra sec-opc"><summary>Abrir esta seção</summary><p>São quatro etapas, cada uma uma parte real da partida, com <strong>Para entender</strong> (como funciona e por quê), <strong>Passo a passo</strong> (as regras de sempre), regras adicionais para casos menos frequentes e tarefas com ajuda decrescente: <strong>exemplo resolvido</strong>, tarefa para <strong>completar</strong> e <strong>sua vez</strong>. Escolha uma opção em cada pergunta para ver a certa e a explicação. No fim, uma avaliação diz o que reler, e a folha de consulta vai para a mesa.</p></details>
+</section>
+<section class="bloco sec" id="etapa-1-montar-a-cidade"><h2><span class="num">2</span>Etapa 1: montar a cidade</h2>
+<details class="dobra entender"><summary>Por que funciona assim</summary><aside class="call entender"><p>A mesa tem três partes. <strong>A cidade</strong>, 5 por 5 quarteirões com a Delegacia no meio; as Fichas de Dado numeram colunas (brancas) e linhas (pretas), e é por elas que os dados dizem onde surge cada mafioso. <strong>A Trilha de Tempo</strong>, de 1 a 48 horas: cada espaço tem sol (dia) ou lua (noite), linhas vermelhas trazem Eventos, e abaixo dela cabem 3 Eventos ativos <span class="pg">p.&nbsp;8 e 15</span>. <strong>O seu Tabuleiro de Agente</strong>, com as ações, a trilha de Nível de Distintivo, três espaços para mafiosos presos e o Espaço de Custódia <span class="pg">p.&nbsp;7, 11 e 13</span>.</p></aside></details>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Preparação Padrão da Partida</strong> <span class="pg">p.&nbsp;5 e 6</span>. Com 2 jogadores, veja também as Situações especiais.</p>
+<ol><li>Carta de Delegacia no centro. As 24 Cartas de Quarteirão, embaralhadas e viradas para cima, formam com ela um quadrado de 5 por 5.</li><li>As 10 Fichas de Dado em ordem numérica: as 5 brancas no topo, as 5 pretas à esquerda.</li><li>As 5 Fichas de Informante, uma ao lado de cada Ficha de Dado preta; as 5 Fichas de Testemunha, uma ao lado de cada branca.</li><li>As 7 Fichas de Investigação e as 5 de Tocaia, embaralhadas e viradas para baixo, nos quarteirões com o marcador de cada uma.</li><li>As 3 Fichas de Custódia nos 3 marcadores da Delegacia.</li><li>Os 2 Tabuleiros de Tempo lado a lado, lado Padrão para cima. Ao alcance de todos: Fichas de Evidência, Dados-Projéteis, Envelopes de Evidência, Lupa e Fichas de Evento.</li><li>Todos os mafiosos na Bolsa. Tire 3, um de cada vez, e role os dois dados para achar o quarteirão de cada um. Um 6, um 3 e 3 ou um quarteirão já ocupado: role de novo.</li><li>Cada jogador recebe Tabuleiro de Agente (lado Padrão), Ajuda ao Jogador e Indicador de Tempo, Carro e Distintivo da sua cor. Carro na Delegacia; Distintivo, com o lado 10+ para baixo, no desenho grande do distintivo.</li><li>Indicadores de Tempo empilhados ao lado da trilha por idade: o mais jovem no topo.</li><li>Cada um recebe 2 Cartas de Habilidade, fica com uma, virada para cima, e devolve a outra à caixa.</li><li>Cartas de Corporação embaralhadas num baralho virado para baixo; cada um recebe uma e pode olhá-la sem mostrar.</li><li>Cartas de Suspeito embaralhadas; uma, sem ser revelada, entra no Envelope de Assassino com a seta do verso visível na fenda.</li><li>Cartas de Evento embaralhadas. Vire uma no espaço "1" abaixo da trilha, leia em voz alta a preparação dela e cumpra.</li></ol></aside>
+<figure class="fig"><img src="figuras/preparacao.webp" alt="A cidade montada, com a Trilha de Tempo e o primeiro Evento no alto, as fichas nas bordas e nos quarteirões, os carros na Delegacia e os 3 primeiros mafiosos. Ilustração: manual Asmodee (p. 7)" loading="lazy" decoding="async"><figcaption>A cidade montada, com a Trilha de Tempo e o primeiro Evento no alto, as fichas nas bordas e nos quarteirões, os carros na Delegacia e os 3 primeiros mafiosos. Ilustração: manual Asmodee <span class="pg">p.&nbsp;7</span></figcaption></figure>
+<details class="dobra mais"><summary>Regra adicional: Anotações</summary><aside class="call mais"><p>Papel e lápis são permitidos, em segredo, e ninguém é obrigado a mostrar o que anotou <span class="pg">p.&nbsp;6</span>.</p></aside></details>
+
+<details class="dobra pratica"><summary>Pratique esta etapa: exercícios com respostas</summary><aside class="call suavez"><p class="rot">Tarefa · sua vez</p><p><strong>Sua vez.</strong> Use só o passo a passo.</p>
+<div class="quiz"><p class="q-p">Onde ficam as Fichas de Testemunha?</p><div class="q-ops"><button type="button" class="q-op">Uma ao lado de cada Ficha de Dado preta</button><button type="button" class="q-op" data-ok>Uma ao lado de cada Ficha de Dado branca</button><button type="button" class="q-op">Viradas para baixo, nos quarteirões marcados</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Ao lado das brancas, no topo, uma por coluna; as de Informante ficam ao lado das pretas, uma por linha <span class="pg">p.&nbsp;5</span>.</p></div></div></aside></details>
+</section>
+<section class="bloco sec" id="etapa-2-o-tempo-o-turno-e-os-mafiosos"><h2><span class="num">3</span>Etapa 2: o tempo, o turno e os mafiosos</h2>
+<details class="dobra entender"><summary>Por que funciona assim</summary><aside class="call entender"><p>O relógio substitui a rodada. Toda escolha custa horas, e joga sempre quem está mais atrás <span class="pg">p.&nbsp;8</span>: um turno caro adia o seu próximo turno, enquanto os outros jogam. As horas também decidem o que você pode fazer: há ações só de dia e só de noite <span class="pg">p.&nbsp;15</span>.</p></aside></details>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>O seu turno</strong> <span class="pg">p.&nbsp;8, 11 e 16</span></p>
+<ol><li><strong>Quem joga:</strong> o Indicador de Tempo mais atrás na trilha; vários no mesmo espaço, o do topo.</li><li><strong>Dirigir</strong> (opcional): quantos quarteirões quiser, sem diagonal, 1 hora cada; ficar parado custa 0.</li><li><strong>Realizar 1 Ação</strong> (obrigatória), que a hora do dia permita. Avance o indicador as horas da ação mais as da direção; num espaço ocupado, o seu vai para o topo.</li><li><strong>Comprar um Evento</strong> (condicional): só se o seu indicador for o primeiro a cruzar uma linha vermelha (etapa 4).</li><li><strong>Rolagem de Mafioso</strong> (obrigatória): branco dá a coluna (fichas do topo), preto dá a linha (fichas da esquerda). Quarteirão vazio: ponha um mafioso da Bolsa. Ocupado: compre uma nova Carta de Evento.</li></ol></aside>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>A hora do dia</strong> <span class="pg">p.&nbsp;15</span></p>
+<ol><li>Vale o espaço do seu indicador no começo do turno: sol é dia, lua é noite.</li><li>Dirigir, Prender e Pausa para o Café: a qualquer hora.</li><li>Diurnas: Pegar Informante, Investigar Cena, Chamar Reforços. Noturnas: Pegar Testemunha, Ficar de Tocaia, Levar sob Custódia.</li></ol></aside>
+<details class="dobra edicao"><summary>Sobre a edição</summary><aside class="call edicao"><p>O manual não diz se a pilha inicial, fora da trilha, é dia ou noite. Como os primeiros espaços são diurnos, o guia trata o primeiro turno como diurno.</p></aside></details>
+<figure class="fig"><img src="figuras/dirigir.webp" alt="Dirigir: 3 quarteirões sem diagonal, por 3 horas. Ilustração: manual Asmodee (p. 11)" loading="lazy" decoding="async"><figcaption>Dirigir: 3 quarteirões sem diagonal, por 3 horas. Ilustração: manual Asmodee <span class="pg">p.&nbsp;11</span></figcaption></figure>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Prender, Pausa para o Café e Chamar Reforços</strong> <span class="pg">p.&nbsp;11 e 12</span></p>
+<ol><li><strong>Prender</strong> (1 hora): ponha o mafioso do seu quarteirão no espaço da cor dele, no lado direito do seu tabuleiro; se já houver um daquela cor, o novo volta para a Bolsa. Com os 3 espaços ocupados, avance 1 Nível de Distintivo e devolva os 3 para a Bolsa.</li><li><strong>Pausa para o Café</strong> (1 hora): você não faz nada.</li><li><strong>Chamar Reforços</strong> (diurna): com mafiosos no seu quarteirão e/ou nos vizinhos, anuncie quantas horas arrisca, de 1 a 6, e role um dado. Igual ou menor: sucesso; detenha todos os mafiosos do seu quarteirão e dos vizinhos (para a Bolsa) e ganhe uma Carta de Corporação. Maior: falha; detenha só o mafioso do seu quarteirão, se houver. Nos dois casos, gaste as horas arriscadas.</li></ol></aside>
+<figure class="fig"><img src="figuras/prender.webp" alt="Prender: por 1 hora, o mafioso azul vai para o espaço azul do tabuleiro (A); com as três cores, +1 Nível de Distintivo e os três voltam para a Bolsa (B). Ilustração: manual Asmodee (p. 11)" loading="lazy" decoding="async"><figcaption>Prender: por 1 hora, o mafioso azul vai para o espaço azul do tabuleiro (A); com as três cores, +1 Nível de Distintivo e os três voltam para a Bolsa (B). Ilustração: manual Asmodee <span class="pg">p.&nbsp;11</span></figcaption></figure>
+<aside class="call atencao"><p class="rot">Atenção</p><p>"Deter" é tirar mafiosos da cidade por qualquer ação; o mafioso detido volta para a Bolsa, salvo quando a ação diz outra coisa, como Prender <span class="pg">p.&nbsp;11</span>.</p></aside>
+<figure class="fig"><img src="figuras/chamar-reforcos.webp" alt="Chamar Reforços: arriscou 4, rolou 3; os 4 mafiosos saem da cidade. Ilustração: manual Asmodee (p. 12)" loading="lazy" decoding="async"><figcaption>Chamar Reforços: arriscou 4, rolou 3; os 4 mafiosos saem da cidade. Ilustração: manual Asmodee <span class="pg">p.&nbsp;12</span></figcaption></figure>
+<figure class="fig"><img src="figuras/rolagem.webp" alt="Rolagem de Mafioso: preto 2 e branco 4 levam o mafioso para a linha 2, coluna 4. Ilustração: manual Asmodee (p. 16)" loading="lazy" decoding="async"><figcaption>Rolagem de Mafioso: preto 2 e branco 4 levam o mafioso para a linha 2, coluna 4. Ilustração: manual Asmodee <span class="pg">p.&nbsp;16</span></figcaption></figure>
+<details class="dobra mais"><summary>Regra adicional: Atenuação</summary><aside class="call mais"><p>Um 6 em qualquer dado, ou 3 e 3 (a Delegacia): não se adiciona mafioso <span class="pg">p.&nbsp;16</span>.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Onda de Crimes</summary><aside class="call mais"><p>Dois 1, dois 2, dois 4 ou dois 5: aplique o resultado e faça outra Rolagem de Mafioso. Dois 3 e dois 6 não contam, e pode haver várias ondas seguidas <span class="pg">p.&nbsp;16</span>.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Um mafioso por quarteirão</summary><aside class="call mais"><p>Vale sempre, mesmo contra cartas. Bolsa vazia na hora de tirar mafioso: Penalidade por Excesso de Eventos, da etapa 4 <span class="pg">p.&nbsp;16</span>.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: O limite de 48 horas</summary><aside class="call mais"><p>O indicador não passa do 48. Se a ação o levaria além, escolha outra <span class="pg">p.&nbsp;14</span>.</p></aside></details>
+<details class="dobra resolvido"><summary>Ver um exemplo resolvido</summary><aside class="call resolvido"><p>Ana e Carla estão no 3, de dia, com Carla por cima; Bruno, no 5. Joga Carla, que faz Prender sem dirigir e vai para o 4. Agora joga Ana. Ela dirige 2 quarteirões até um mafioso cinza, que tem um vermelho no quarteirão vizinho, e chama reforços arriscando 4. O dado mostra 3: os dois mafiosos voltam para a Bolsa e ela ganha uma Carta de Corporação. Avança 2 + 4 = 6, até o 9. Com um 5, deteria só o cinza, sem carta, e iria igualmente para o 9.</p></aside></details>
+
+
+
+<details class="dobra pratica"><summary>Pratique esta etapa: exercícios com respostas</summary><aside class="call complete"><p class="rot">Tarefa · complete</p><p><strong>Complete.</strong> Bruno, no 5, está no quarteirão de um mafioso azul e já tem um azul e um vermelho no tabuleiro. Ele faz Prender, sem dirigir.</p>
+<div class="quiz"><p class="q-p">Para onde vai o mafioso azul?</p><div class="q-ops"><button type="button" class="q-op">Para o espaço cinza, que está livre</button><button type="button" class="q-op">Para o Espaço de Custódia</button><button type="button" class="q-op" data-ok>Para a Bolsa</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Bruno já tem um azul, então o novo volta para a Bolsa, e o Distintivo não avança <span class="pg">p.&nbsp;11</span>.</p></div></div></aside>
+<aside class="call suavez"><p class="rot">Tarefa · sua vez</p><p><strong>Sua vez.</strong></p>
+<div class="quiz"><p class="q-p">O seu turno começa num espaço de lua. Você pode Investigar Cena?</p><div class="q-ops"><button type="button" class="q-op" data-ok>Não: é noite, e Investigar Cena é diurna</button><button type="button" class="q-op">Sim, se dirigir antes</button><button type="button" class="q-op">Sim, se arriscar horas</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Vale o espaço do começo do turno <span class="pg">p.&nbsp;15</span>.</p></div></div>
+<div class="quiz"><p class="q-p">Seu quarteirão não tem mafioso; o vizinho tem. Você arrisca 2 em Chamar Reforços e rola 4. O que acontece?</p><div class="q-ops"><button type="button" class="q-op">Você detém o vizinho mesmo assim</button><button type="button" class="q-op">Nada, e você não gasta horas</button><button type="button" class="q-op" data-ok>Falha: ninguém é detido, e você gasta 2 horas</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Na falha, só se detém o mafioso do seu quarteirão, e não há nenhum <span class="pg">p.&nbsp;12</span>.</p></div></div></aside>
+<aside class="call treino"><p class="rot">Treino rápido</p><p><strong>Onde cai o mafioso?</strong> Os quarteirões estão vazios.</p>
+<div class="quiz"><p class="q-p">a) Branco 2, preto 5.</p><div class="q-ops"><button type="button" class="q-op" data-ok>Coluna 2, linha 5</button><button type="button" class="q-op">Coluna 5, linha 2</button><button type="button" class="q-op">Lugar nenhum</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Branco é coluna; preto é linha <span class="pg">p.&nbsp;5 e 16</span>.</p></div></div>
+<div class="quiz"><p class="q-p">b) Branco 4, preto 4.</p><div class="q-ops"><button type="button" class="q-op">Coluna 4, linha 4, e o turno acaba</button><button type="button" class="q-op" data-ok>Coluna 4, linha 4, e outra Rolagem de Mafioso</button><button type="button" class="q-op">Lugar nenhum</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Dois 4 são Onda de Crimes <span class="pg">p.&nbsp;16</span>.</p></div></div></aside></details>
+</section>
+<section class="bloco sec" id="etapa-3-pistas-evidencias-e-suspeitos"><h2><span class="num">4</span>Etapa 3: pistas, evidências e suspeitos</h2>
+<details class="dobra entender"><summary>Por que funciona assim</summary><aside class="call entender"><p>O assassino tem cinco traços, e cada um tem duas possibilidades <span class="pg">p.&nbsp;9 e 20</span>:</p>
+<div class="tab"><table><thead><tr><th>Evidência</th><th>Possibilidades</th><th>Decifrada por</th></tr></thead><tbody><tr><td data-label="Evidência">Gangue</td><td data-label="Possibilidades">Rinocerontes Rubros ou Abelhas Azuis</td><td data-label="Decifrada por">5 Fichas de Testemunha</td></tr><tr><td data-label="Evidência">Cargo</td><td data-label="Possibilidades">Chefe ou Subchefe</td><td data-label="Decifrada por">5 Fichas de Informante</td></tr><tr><td data-label="Evidência">Perícia</td><td data-label="Possibilidades">Impressões digitais ou Pegadas</td><td data-label="Decifrada por">3 Fichas de Investigação com sucesso</td></tr><tr><td data-label="Evidência">Fuga</td><td data-label="Possibilidades">Carro ou Moto</td><td data-label="Decifrada por">3 Fichas de Tocaia com sucesso</td></tr><tr><td data-label="Evidência">Arma</td><td data-label="Possibilidades">Pistola ou Faca</td><td data-label="Decifrada por">3 Fichas de Custódia</td></tr></tbody></table></div>
+<p>A soma das fichas de todos decifra a evidência, mas só quem coleta a última a vê <span class="pg">p.&nbsp;9 e 10</span>. Com os traços, você restringe os suspeitos; com as Cartas de Suspeito, risca inocentes.</p></aside></details>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>As ações de pista</strong> <span class="pg">p.&nbsp;12 e 13</span></p>
+<ol><li><strong>Pegar Informante</strong> (diurna, 2 horas) e <strong>Pegar Testemunha</strong> (noturna, 2 horas): no quarteirão de um mafioso, com a Ficha de Informante na sua linha ou a de Testemunha na sua coluna. Mafioso para a Bolsa, ficha para o seu tabuleiro, +1 Nível de Distintivo.</li><li><strong>Investigar Cena</strong> (diurna, 2 horas): vire a Ficha de Investigação do seu quarteirão. Sucesso ou falha, ela vai para o seu tabuleiro com o resultado para cima, e você avança 1 Nível de Distintivo.</li><li><strong>Ficar de Tocaia</strong> (noturna, arrisque de 1 a 5 horas): anuncie as horas e olhe em segredo a Ficha de Tocaia do seu quarteirão. Número igual ou menor: sucesso; mostre-a, ponha-a no tabuleiro, +1 Nível de Distintivo. Maior: falha; devolva-a virada para baixo, sem dizer o número.</li><li><strong>Levar sob Custódia</strong> (noturna, 2 + 2 horas): no quarteirão de um mafioso, gaste 2 horas e ponha-o no Espaço de Custódia. Num turno noturno posterior, na Delegacia, gaste 2 horas: o mafioso volta para a Bolsa, e você pega a Ficha de Custódia da cor dele e avança 1 Nível de Distintivo.</li></ol></aside>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Decifre Evidências</strong> <span class="pg">p.&nbsp;9 e 10</span>. Quando a soma de fichas de um tipo se completa:</p>
+<ol><li>Quem coletou a última pega a Ficha de Evidência daquele tipo.</li><li>Ela passa a carta do assassino, sem revelá-la, para o Envelope de Evidência do mesmo tipo, com a seta branca visível, vira o envelope e vê o símbolo pelo orifício, em segredo. Depois, devolve a carta ao Envelope de Assassino.</li><li>Cada jogador com pelo menos uma ficha daquele tipo ganha 1 Carta de Suspeito, uma só, por mais fichas que tenha.</li></ol></aside>
+<figure class="fig"><img src="figuras/evidencia.webp" alt="Decifrar o Cargo: a Ficha de Evidência vai para o tabuleiro (1), e o Envelope de Evidência, virado, mostra o símbolo, aqui o de Chefe (2A e 2B). Ilustração: manual Asmodee (p. 9)" loading="lazy" decoding="async"><figcaption>Decifrar o Cargo: a Ficha de Evidência vai para o tabuleiro (1), e o Envelope de Evidência, virado, mostra o símbolo, aqui o de Chefe (2A e 2B). Ilustração: manual Asmodee <span class="pg">p.&nbsp;9</span></figcaption></figure>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Cartas de Suspeito e Nível de Distintivo</strong> <span class="pg">p.&nbsp;8 e 10</span></p>
+<ol><li><strong>Ganhar uma Carta de Suspeito:</strong> compre a do topo do baralho de suspeitos. Baralho vazio: olhe uma carta de outro jogador, escolhida por você entre as que ele segura com o verso para você.</li><li>Leia o nome com a Lupa, sem dizê-lo. Guarde as suas cartas viradas para baixo; você pode consultá-las a qualquer momento.</li><li><strong>Avançar 1 Nível de Distintivo:</strong> ao coletar qualquer Ficha de Pista e quando um Evento dá essa recompensa. Se o Distintivo cair num espaço com ícone, ganhe o bônus na hora: uma Carta de Suspeito ou Interrogar. Passou de 9: vire o Distintivo para o lado 10+.</li></ol></aside>
+<details class="dobra mais"><summary>Regra adicional: Investigação e Tocaia se esgotam</summary><aside class="call mais"><p>Quando a terceira Ficha de Investigação com sucesso for revelada, descarte as que restarem na cidade; o mesmo vale para a terceira Ficha de Tocaia <span class="pg">p.&nbsp;12 e 13</span>.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Levar sob Custódia, regras finas</summary><aside class="call mais"><p>Só cabe 1 mafioso no Espaço de Custódia. Se amanhecer antes da segunda parte, espere a próxima noite. Ficha daquela cor já pega, ou Arma já decifrada: você ganha 1 Carta de Corporação em vez da ficha, sem avançar o Distintivo, e a ação segue custando 4 horas <span class="pg">p.&nbsp;13</span>.</p></aside></details>
+<figure class="fig"><img src="figuras/custodia.webp" alt="Levar sob Custódia: 2 horas para o Espaço de Custódia; depois, na Delegacia, mais 2 pela Ficha de Custódia azul. Ilustração: manual Asmodee (p. 13)" loading="lazy" decoding="async"><figcaption>Levar sob Custódia: 2 horas para o Espaço de Custódia; depois, na Delegacia, mais 2 pela Ficha de Custódia azul. Ilustração: manual Asmodee <span class="pg">p.&nbsp;13</span></figcaption></figure>
+<details class="dobra mais"><summary>Regra adicional: Interrogar</summary><aside class="call mais"><p>Bônus da trilha de Nível de Distintivo. Outro jogador, à sua escolha, segura as Cartas de Suspeito dele com o verso para você; você pega uma ao acaso, olha e devolve. Se já a tinha visto, não pega outra <span class="pg">p.&nbsp;14</span>.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Consultar uma Evidência Decifrada</summary><aside class="call mais"><p>O detentor da Ficha de Evidência olha a sua quando quiser. Os outros, só por recompensa de Evento: você olha a evidência no envelope dele, e ele olha uma Carta de Suspeito sua, ao acaso. Você precisa ter uma; ele não pode recusar; se ele tiver várias, você escolhe qual <span class="pg">p.&nbsp;10</span>.</p></aside></details>
+<details class="dobra resolvido"><summary>Ver um exemplo resolvido</summary><aside class="call resolvido"><p>Partida de 4. Ana tem 2 Fichas de Informante; Bruno, 1; Carla e Davi, nenhuma. Carla pega as duas que restam, em dois turnos diurnos: são 5. Ela pega a Ficha de Evidência de Cargo e vê pelo envelope o símbolo de Subchefe. Ana, Bruno e Carla ganham 1 Carta de Suspeito cada; Davi, sem Ficha de Informante, não.</p></aside></details>
+
+
+<details class="dobra pratica"><summary>Pratique esta etapa: exercícios com respostas</summary><aside class="call complete"><p class="rot">Tarefa · complete</p><p><strong>Complete.</strong> Bruno está no 14, um espaço de lua, a 3 quarteirões de um mafioso cuja coluna ainda tem Ficha de Testemunha. Ele dirige até lá e faz Pegar Testemunha.</p>
+<div class="quiz"><p class="q-p">Onde termina o indicador?</p><div class="q-ops"><button type="button" class="q-op">16</button><button type="button" class="q-op">17</button><button type="button" class="q-op" data-ok>19</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> 3 horas de direção e 2 da ação: 14 + 5 = 19 <span class="pg">p.&nbsp;11 e 12</span>.</p></div></div></aside>
+<aside class="call suavez"><p class="rot">Tarefa · sua vez</p><p><strong>Sua vez.</strong></p>
+<div class="quiz"><p class="q-p">De noite, você arrisca 3 em Ficar de Tocaia e a ficha mostra 4. O que acontece?</p><div class="q-ops"><button type="button" class="q-op" data-ok>Falha: a ficha volta virada para baixo, e você não diz o número</button><button type="button" class="q-op">Sucesso: mostre a ficha e avance o Distintivo</button><button type="button" class="q-op">Falha: mostre a ficha a todos e devolva-a</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> 4 é maior que 3: falha. A ficha volta escondida e o Distintivo não anda <span class="pg">p.&nbsp;13</span>. Quantas horas a falha custa, o manual não diz; veja a nota nas Situações especiais.</p></div></div>
+<div class="quiz"><p class="q-p">Você vira uma Ficha de Investigação com falha. Avança o Distintivo?</p><div class="q-ops"><button type="button" class="q-op" data-ok>Sim</button><button type="button" class="q-op">Não: só o sucesso avança</button><button type="button" class="q-op">Não, e a ficha volta ao quarteirão</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Em Investigar Cena, a ficha vai para o tabuleiro e o Distintivo avança com sucesso ou falha <span class="pg">p.&nbsp;12</span>.</p></div></div></aside></details>
+</section>
+<section class="bloco sec" id="etapa-4-eventos-cartas-de-corporacao-e-a-acusacao"><h2><span class="num">5</span>Etapa 4: Eventos, Cartas de Corporação e a acusação</h2>
+<details class="dobra entender"><summary>Por que funciona assim</summary><aside class="call entender"><p>Os Eventos são problemas da cidade: até 3 ativos, cada um com preparação, efeito negativo e exigência <span class="pg">p.&nbsp;14</span>. Resolvê-los rende recompensas, inclusive a única forma de ver uma evidência decifrada por outro jogador. Quando não cabem mais Eventos, uma Carta de Suspeito some sem ninguém ver <span class="pg">p.&nbsp;16</span>.</p></aside></details>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Comprar um Evento</strong> <span class="pg">p.&nbsp;15</span>. Se o seu indicador for o primeiro de todos a cruzar uma linha vermelha:</p>
+<ol><li>Com espaço livre abaixo da trilha (são 3), compre o Evento do topo, leia-o em voz alta, ponha-o no espaço livre de menor número e cumpra a preparação dele.</li><li>Sem espaço livre: Penalidade por Excesso de Eventos.</li></ol></aside>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Resolver Evento</strong> <span class="pg">p.&nbsp;14</span></p>
+<ol><li>Cumpra a exigência da carta, em geral uma ação ou ir a um quarteirão no seu turno.</li><li>Ganhe a recompensa. Ícone de uma pessoa: só quem resolveu. Ícone de duas: também quem contribuiu com uma ação ou está num quarteirão necessário. Seja honesto.</li><li>Descarte a carta e as fichas que ela pedia; mafiosos sobre a carta voltam para a Bolsa.</li></ol>
+<p>Recompensas: Carta de Suspeito, Carta de Corporação, +1 Nível de Distintivo, consultar 1 Evidência Decifrada <span class="pg">p.&nbsp;14 e 20</span>.</p></aside>
+<details class="dobra mais"><summary>Regra adicional: Habilidade e Corporação</summary><aside class="call mais"><p>A Carta de Habilidade diz o efeito e quando usá-lo. Carta de Corporação usada vai para um descarte aberto, reembaralhado quando o baralho acaba. Você tem no máximo 2: ganhou a terceira, descarte a nova ou uma das suas <span class="pg">p.&nbsp;15</span>.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Penalidade por Excesso de Eventos</summary><aside class="call mais"><p>Com 3 Eventos ativos, o quarto não entra: descarte a carta do topo do baralho de suspeitos sem revelá-la. Baralho de suspeitos vazio: cada indicador avança 1 hora, menos os que estão no 48 <span class="pg">p.&nbsp;16</span>.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Evento Cronometrado</summary><aside class="call mais"><p>Evento com ícone de relógio revelado com algum indicador nas horas 39 a 48: descarte-o e compre outro <span class="pg">p.&nbsp;15</span>.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Rolagens na preparação de Evento</summary><aside class="call mais"><p>Role de novo qualquer 6, qualquer quarteirão com mafioso e a Delegacia (salvo se a carta a indicar). Não há atenuação, Evento extra nem mafioso extra por números iguais <span class="pg">p.&nbsp;15</span>.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Recompensas Limitadas</summary><aside class="call mais"><p>Se não der para todos, escolhe primeiro quem está mais atrás na Trilha de Tempo <span class="pg">p.&nbsp;14</span>.</p></aside></details>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Encerrar Seu Caso e a acusação</strong> <span class="pg">p.&nbsp;14 e 17</span></p>
+<ol><li><strong>Encerrar Seu Caso:</strong> ao terminar o turno num espaço vermelho (43 a 48), você pode deitar o Carro. Não joga mais turnos, mas segue nas trocas de informação e nas recompensas de Eventos de que participou.</li><li>Todos com o Carro deitado: cada um vira a Ajuda ao Jogador para o lado dos suspeitos, tira o Carro da cidade e, escondendo com a mão, põe o Carro sobre o suspeito que acusa.</li><li>Todos revelam ao mesmo tempo, e a carta do assassino é lida com a Lupa.</li><li>Só um acertou: vence. Ninguém acertou: todos perdem.</li><li><strong>Empate entre quem acertou:</strong> Nível de Distintivo mais alto; depois, mais tempo restante (menos horas gastas); depois, mais Fichas de Evidência; persistindo, vitória dividida.</li></ol></aside>
+<details class="dobra resolvido"><summary>Ver um exemplo resolvido</summary><aside class="call resolvido"><p>Ana e Bruno acusam o suspeito certo; Carla erra e, mesmo com Distintivo 9, fica fora. Ana e Bruno têm Distintivo 7. Ana terminou no 46, Bruno no 45: Bruno gastou menos horas e vence.</p></aside></details>
+
+
+<details class="dobra pratica"><summary>Pratique esta etapa: exercícios com respostas</summary><aside class="call complete"><p class="rot">Tarefa · complete</p><p><strong>Complete.</strong> Há 3 Eventos ativos, e a Rolagem de Mafioso de Davi cai num quarteirão ocupado.</p>
+<div class="quiz"><p class="q-p">O que acontece?</p><div class="q-ops"><button type="button" class="q-op">Davi rola de novo</button><button type="button" class="q-op" data-ok>A carta do topo do baralho de suspeitos é descartada sem ser revelada</button><button type="button" class="q-op">O Evento mais antigo sai, e entra o novo</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Quarteirão ocupado manda comprar Evento; com 3 ativos, vem a Penalidade por Excesso de Eventos <span class="pg">p.&nbsp;16</span>.</p></div></div></aside>
+<aside class="call suavez"><p class="rot">Tarefa · sua vez</p><p><strong>Sua vez.</strong></p>
+<div class="quiz"><p class="q-p">Você estava no 41, fez uma ação de 2 horas e terminou o turno no 43. Pode Encerrar Seu Caso?</p><div class="q-ops"><button type="button" class="q-op" data-ok>Sim</button><button type="button" class="q-op">Não: só no 48</button><button type="button" class="q-op">Não: é preciso começar o turno no vermelho</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Basta terminar o turno com o indicador nas horas 43 a 48 <span class="pg">p.&nbsp;14</span>.</p></div></div></aside></details>
+</section>
+<section class="bloco sec opc" id="situacoes-especiais"><h2><span class="num">6</span>Situações especiais<span class="tag-opc">Opcional</span></h2>
+<details class="dobra sec-opc"><summary>Abrir esta seção</summary><p><strong>Partida de 2 jogadores.</strong> Use 3 Fichas de Informante, ao lado das Fichas de Dado pretas 1, 3 e 5, e 3 Fichas de Testemunha, ao lado das brancas 2, 3 e 4; bastam 3 para decifrar o Cargo e 3 para a Gangue. As fichas que sobram voltam para a caixa. Vale para os Modos Padrão e Cooperativo. No Modo Padrão, separe também 4 Cartas de Suspeito viradas para baixo, sob um Carro não usado: os álibis de um "agente fantasma". Ao Interrogar, você pode embaralhá-las e comprar uma em vez de pegar do outro jogador, devolvendo-a depois <span class="pg">p.&nbsp;17</span>.</p>
+<details class="dobra mais"><summary>Regra adicional: Modo Cooperativo</summary><aside class="call mais"><p>Tabuleiros de Agente e de Tempo no lado Cooperativo. Com 2 jogadores, Detetive e Patrulheira, e tire 1 Gângster Cinza da Bolsa; com 3, mais a Analista, e tire 1 mafioso de cada cor; com 4, os quatro agentes, e tire 2 de cada cor. Um Gângster Cinza removido, ao lado das 48 horas, marca a hora final (Marcador de Tempo Esgotado). Cada agente faz só as ações do seu tabuleiro, além de Dirigir, Prender, Chamar Reforços e Pausa para o Café, de dia ou de noite. Presos vão para a Bolsa. Cartas de Suspeito ficam abertas, evidências são de todos, e ninguém ganha Carta de Suspeito por ter fichas. Na Penalidade por Excesso de Eventos, ou com a Bolsa sem mafiosos, o Gângster Cinza da trilha recua 1 espaço. Com 2 jogadores, as Cartas de Corporação formam um conjunto comum de até 4. Detetive e Analista podem trocar uma Carta de Corporação ganha por uma Carta de Suspeito, gastando 3 horas. Quando todos os Carros estiverem deitados, a equipe escolhe um único suspeito: acertou, todos vencem; errou, todos perdem <span class="pg">p.&nbsp;10, 18 e 19</span>.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Modo Solo</summary><aside class="call mais"><p>Uma partida Cooperativa para 2, com você nos dois agentes; ou 3 ou 4 agentes, para mais desafio <span class="pg">p.&nbsp;19</span>.</p></aside></details>
+<details class="dobra edicao"><summary>Sobre a edição: Pontos em que o manual deixa dúvida</summary><aside class="call edicao"><p>O guia escolheu uma leitura em cada um; combine com a mesa.</p>
+<ul><li><strong>Vizinhos em Chamar Reforços:</strong> a p. 12 diz só "quarteirões adjacentes", e o exemplo dela não tem mafioso na diagonal. O guia lê sem diagonal, como em Dirigir <span class="pg">p.&nbsp;11</span> e no Evento da p. 14, que fala nos "4 quarteirões adjacentes à Delegacia"; mas o mesmo Evento escreve "ortogonalmente adjacente", o que deixa a dúvida <span class="pg">p.&nbsp;11, 12 e 14</span>.</li><li><strong>Horas da Tocaia com falha:</strong> só Chamar Reforços diz com todas as letras que as horas arriscadas se gastam na falha; o guia aplica à Tocaia a regra geral do custo da ação (p. 11 a 13).</li><li><strong>Coordenadas:</strong> o texto da p. 16 cita "preto-2 e branco-4" como "coluna-linha", mas a preparação e a ilustração põem as brancas nas colunas e as pretas nas linhas; o guia segue a ilustração <span class="pg">p.&nbsp;5 e 16</span>.</li><li><strong>Investigação com falha:</strong> a p. 10 dá a carta a quem "contribuiu", "ou seja", a quem tem "pelo menos uma Ficha de Pista daquele tipo". A falha não conta para os 3 sucessos, mas é uma Ficha de Investigação no tabuleiro; o guia segue a letra e dá a carta também a quem só tem falha <span class="pg">p.&nbsp;10 e 12</span>.</li><li><strong>Álibis:</strong> a p. 8 lista duas maneiras, mas a primeira (comprar do baralho) manda usar a segunda (olhar a carta de outro jogador, escolhida por você) só quando o baralho está vazio; é assim que o guia aplica o "ganhe uma Carta de Suspeito". Interrogar <span class="pg">p.&nbsp;14</span> é outra coisa: a carta do outro jogador sai ao acaso.</li><li><strong>Encerrar Seu Caso:</strong> listado entre as ações, mas descrito como escolha ao fim do turno; o guia segue a descrição <span class="pg">p.&nbsp;14</span>.</li><li><strong>Parado no 48 sem encerrar:</strong> o manual não diz o que acontece. Como nenhuma ação cabe sem passar do 48 <span class="pg">p.&nbsp;14</span>, na prática o guia trata o caso como encerrado.</li></ul></aside></details></details>
+</section>
+<section class="bloco sec opc" id="avaliacao-final"><h2><span class="num">7</span>Avaliação final<span class="tag-opc">Opcional</span></h2>
+<details class="dobra sec-opc"><summary>Abrir esta seção</summary><p>Responda sem consultar. Cada resposta diz o que reler.</p>
+<div class="quiz"><p class="q-p">1. Três indicadores estão no espaço 12. Quem joga?</p><div class="q-ops"><button type="button" class="q-op">O que chegou primeiro</button><button type="button" class="q-op">O do jogador mais novo</button><button type="button" class="q-op" data-ok>O do topo, o último a chegar</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Quem chega a um espaço ocupado fica por cima, e joga o do topo <span class="pg">p.&nbsp;11 e 16</span>. Releia a etapa 2.</p></div></div>
+<div class="quiz"><p class="q-p">2. É noite. Qual ação você pode fazer?</p><div class="q-ops"><button type="button" class="q-op">Investigar Cena</button><button type="button" class="q-op">Chamar Reforços</button><button type="button" class="q-op" data-ok>Ficar de Tocaia</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Noturnas: Pegar Testemunha, Ficar de Tocaia e Levar sob Custódia <span class="pg">p.&nbsp;15</span>. Releia a etapa 2.</p></div></div>
+<div class="quiz"><p class="q-p">3. Você pegou a quinta e última Ficha de Informante. O que só você faz?</p><div class="q-ops"><button type="button" class="q-op" data-ok>Pega a Ficha de Evidência e vê o Cargo pelo envelope</button><button type="button" class="q-op">Ganha 2 Cartas de Suspeito</button><button type="button" class="q-op">Lê o cargo do assassino em voz alta</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Só quem coleta a última vê, em segredo; todos com Ficha de Informante ganham 1 Carta de Suspeito <span class="pg">p.&nbsp;9 e 10</span>. Releia a etapa 3.</p></div></div>
+<div class="quiz"><p class="q-p">4. Seu mafioso está no Espaço de Custódia, e o próximo turno começa de dia. Pode concluir na Delegacia?</p><div class="q-ops"><button type="button" class="q-op" data-ok>Não: espere um turno noturno</button><button type="button" class="q-op">Sim: a segunda parte vale a qualquer hora</button><button type="button" class="q-op">Não, e o mafioso volta para a cidade</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> As duas partes são noturnas <span class="pg">p.&nbsp;13</span>. Releia a etapa 3.</p></div></div>
+<div class="quiz"><p class="q-p">5. Há 3 Eventos ativos e um quarto deveria entrar. O que acontece?</p><div class="q-ops"><button type="button" class="q-op">Ele entra no lugar do mais antigo</button><button type="button" class="q-op">Nada</button><button type="button" class="q-op" data-ok>Sai a carta do topo do baralho de suspeitos, sem ser vista</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Penalidade por Excesso de Eventos <span class="pg">p.&nbsp;16</span>. Releia a etapa 4.</p></div></div>
+<div class="quiz"><p class="q-p">6. Ana acerta a acusação com Distintivo 5; Bruno erra com 8. Quem vence?</p><div class="q-ops"><button type="button" class="q-op">Bruno</button><button type="button" class="q-op" data-ok>Ana</button><button type="button" class="q-op">Ninguém</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> O desempate só vale entre quem acertou <span class="pg">p.&nbsp;17</span>. Releia a etapa 4.</p></div></div>
+<aside class="call atencao"><p class="rot">Atenção</p><p><strong>Critério para começar a jogar.</strong> Acertou 5 ou 6? Monte a cidade e jogue, com a folha de consulta ao lado. Errou a 1 ou a 2, releia a etapa 2; a 3 ou a 4, a etapa 3; a 5 ou a 6, a etapa 4. Depois refaça só as que errou.</p></aside></details>
+</section>
+<section class="bloco sec ref" id="para-consultar-durante-a-partida"><h2><span class="num">8</span>Para consultar durante a partida</h2>
+<p><strong>Seu turno</strong> (joga o indicador mais atrás; empatados, o do topo)</p>
+<ol><li>Dirigir (opcional): 1 hora por quarteirão, sem diagonal.</li><li>Realizar 1 Ação. Avance: direção + ação. Nunca além do 48.</li><li>Comprar um Evento: se for o primeiro a cruzar uma linha vermelha.</li><li>Rolagem de Mafioso: branco = coluna, preto = linha. Vazio: mafioso. Ocupado: Evento. 6 ou 3 e 3: nada. Iguais (1, 2, 4, 5): rola de novo.</li></ol>
+<div class="tab"><table><thead><tr><th>Ação</th><th>Quando</th><th>Horas</th><th>Efeito</th></tr></thead><tbody><tr><td data-label="Ação">Prender</td><td data-label="Quando">Sempre</td><td data-label="Horas">1</td><td data-label="Efeito">Mafioso no tabuleiro, um por cor; 3 cores: +1 Distintivo</td></tr><tr><td data-label="Ação">Pausa para o Café</td><td data-label="Quando">Sempre</td><td data-label="Horas">1</td><td data-label="Efeito">Nada</td></tr><tr><td data-label="Ação">Chamar Reforços</td><td data-label="Quando">Dia</td><td data-label="Horas">1 a 6, arriscadas</td><td data-label="Efeito">Dado igual ou menor: detém o seu quarteirão e os vizinhos, +1 Corporação</td></tr><tr><td data-label="Ação">Pegar Informante</td><td data-label="Quando">Dia</td><td data-label="Horas">2</td><td data-label="Efeito">Mafioso + Informante da linha, +1 Distintivo</td></tr><tr><td data-label="Ação">Investigar Cena</td><td data-label="Quando">Dia</td><td data-label="Horas">2</td><td data-label="Efeito">Vira a ficha, +1 Distintivo</td></tr><tr><td data-label="Ação">Pegar Testemunha</td><td data-label="Quando">Noite</td><td data-label="Horas">2</td><td data-label="Efeito">Mafioso + Testemunha da coluna, +1 Distintivo</td></tr><tr><td data-label="Ação">Ficar de Tocaia</td><td data-label="Quando">Noite</td><td data-label="Horas">1 a 5, arriscadas</td><td data-label="Efeito">Ficha igual ou menor: sucesso, +1 Distintivo</td></tr><tr><td data-label="Ação">Levar sob Custódia</td><td data-label="Quando">Noite</td><td data-label="Horas">2 + 2</td><td data-label="Efeito">Custódia; depois, na Delegacia, Ficha de Custódia, +1 Distintivo</td></tr></tbody></table></div>
+<p><strong>Evidências:</strong> Testemunha, Gangue (5); Informante, Cargo (5); Investigação, Perícia (3 sucessos); Tocaia, Fuga (3); Custódia, Arma (3). Com 2 jogadores, Gangue e Cargo com 3. Quem pega a última vê; quem tem ficha do tipo ganha 1 Carta de Suspeito.</p>
+<p><strong>Eventos:</strong> até 3. O quarto: descarte o suspeito do topo, sem ver; sem baralho, todos avançam 1 hora. <strong>Corporação:</strong> no máximo 2.</p>
+<p><strong>Fim:</strong> nas horas 43 a 48, deite o Carro. Acusação secreta e simultânea. Desempate entre quem acertou: Distintivo, menos horas, mais Fichas de Evidência, vitória dividida.</p>
+</section>
+<section class="bloco sec" id="fontes"><h2><span class="num">9</span>Fontes</h2>
+<ul><li>Asmodee. <em>Tiny Epic Crimes: livro de regras</em> (edição brasileira, v1.0, 20 páginas, PDF de 07/11/2023; tradução de Fernanda Rocha). Biblioteca de downloads da Asmodee Brasil, <a href="https://www.asmodee.com.br/download-library">https://www.asmodee.com.br/download-library</a>. Consultado em 01/11/2026.</li><li>Asmodee Brasil. Página do produto TNE101, <a href="https://www.asmodee.com.br/tiny-epic-crimes/produto/TNE101">https://www.asmodee.com.br/tiny-epic-crimes/produto/TNE101</a> (1 a 4 participantes, 30 a 60 minutos, 14+). Consultado em 01/11/2026.</li><li>Não foram consultados FAQ, errata ou o manual original em inglês.</li></ul>
+</section>
+
+<p class="nota-pe">Regras conferidas no livro de regras da edição brasileira de Tiny Epic Crimes (Asmodee, versão v1.0, 2023, tradução de Fernanda Rocha), baixado da biblioteca de downloads da Asmodee Brasil. O guia ensina o Modo Padrão, o competitivo; os modos Cooperativo e Solo estão nas Situações especiais.</p>
+</div></main>
+
+<!--rodape--><footer><div class="in">
+ <span>Elite Boardgamers</span><a href="../../noticias/">Notícias</a><a href="../../resenhas/">Resenhas</a><a href="../../como-jogar/">Como jogar</a><a href="../../lancamentos/">Lançamentos</a><a href="../../consulta/">Consulta Golden Geek</a><a href="../../jogos-de-tabuleiro/">Guia de jogos de tabuleiro</a><a href="../../premios/">Prêmios</a><a href="../../politica-editorial/">Política editorial</a>
+ <a href="https://www.instagram.com/eliteboardgamers/" target="_blank" rel="noopener">Instagram @eliteboardgamers</a><a href="https://chat.whatsapp.com/IgQQkJdSkzHBaEq3UwFeAo" target="_blank" rel="noopener">Grupo do WhatsApp</a>
+</div></footer>
+<div class="barra-lt fora" role="region" aria-label="Ações da página"><div class="cpw" data-texto=""><a class="cp" href="https://wa.me/" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="M8.2 10.8l7.6-4.4M8.2 13.2l7.6 4.4"/></svg><span>Compartilhar</span></a><div class="cp-menu" hidden><a class="cp-op zap-op" href="https://wa.me/" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8.4 19l-4.4 1Z"/><path d="M9.2 8.6c.3-.5.8-.5 1-.1l.7 1.5c.1.3 0 .6-.2.8l-.4.4c.5 1.1 1.4 2 2.5 2.5l.4-.4c.2-.2.5-.3.8-.2l1.5.7c.4.2.4.7-.1 1-.7.5-1.6.6-2.4.3a7 7 0 0 1-4.2-4.2c-.3-.8-.2-1.7.4-2.3Z"/></svg>WhatsApp</a><button type="button" class="cp-op"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h8"/></svg>Copiar link</button></div><p class="cp-st" role="status"></p></div><script>(()=>{const pega=c=>({u:c.dataset.url||location.href,t:c.dataset.texto||document.title});
+document.querySelectorAll('.cpw:not(.ok)').forEach(c=>{c.classList.add('ok');const b=c.querySelector('.cp');
+ const n=document.createElement('button');n.type='button';n.className=b.className;n.innerHTML=b.innerHTML;n.setAttribute('aria-expanded','false');b.replaceWith(n)});
+if(window.__cp)return;window.__cp=1;
+const celular=()=>navigator.share&&matchMedia('(pointer:coarse)').matches;
+const fecha=()=>document.querySelectorAll('.cp-menu:not([hidden])').forEach(m=>{m.hidden=true;m.parentNode.querySelector('.cp').setAttribute('aria-expanded','false')});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')fecha()});
+document.addEventListener('click',async ev=>{const c=ev.target.closest('.cpw');if(!c){fecha();return}
+ const {u,t}=pega(c),m=c.querySelector('.cp-menu'),st=c.querySelector('.cp-st'),el=ev.target.closest('.cp,.cp-op');if(!el)return;
+ if(el.classList.contains('cp')){
+  if(celular()){try{await navigator.share({title:document.title,text:t,url:u})}catch(e){}return}
+  const abre=m.hidden;fecha();if(!abre)return;
+  m.querySelector('.zap-op').href='https://wa.me/?text='+encodeURIComponent(t+' '+u);
+  const r=c.getBoundingClientRect();m.classList.toggle('sobe',!!c.closest('.barra-lt')||r.bottom>innerHeight-140);m.classList.toggle('dir',r.left>innerWidth-220);
+  m.hidden=false;el.setAttribute('aria-expanded','true');m.querySelector('.cp-op').focus();return}
+ if(el.classList.contains('zap-op')){fecha();return}
+ fecha();let ok=false;try{await navigator.clipboard.writeText(u);ok=true}catch(e){
+  const i=document.createElement('input');i.value=u;document.body.append(i);i.select();try{ok=document.execCommand('copy')}catch(e2){}i.remove()}
+ st.textContent=ok?'Link copiado!':'Não deu para copiar o link.';clearTimeout(st._t);st._t=setTimeout(()=>st.textContent='',2500);
+ c.querySelector('.cp').focus()})})()</script><a class="lt-grupo" href="https://chat.whatsapp.com/IgQQkJdSkzHBaEq3UwFeAo" target="_blank" rel="noopener" aria-label="Entrar no grupo do WhatsApp da Elite"><img src="/favicon-48.png" width="48" height="48" alt=""><span>Grupo</span></a></div><script>(()=>{const l=document.querySelector('.barra-lt');if(!l)return;const vis=new Set();
+const poe=()=>{const on=scrollY>500&&!vis.size;l.classList.toggle('fora',!on);l.inert=!on;document.body.classList.toggle('lt-on',on)};
+const io=new IntersectionObserver(es=>{es.forEach(e=>e.isIntersecting?vis.add(e.target):vis.delete(e.target));poe()});
+document.querySelectorAll('.convite,footer').forEach(x=>io.observe(x));addEventListener('scroll',poe,{passive:true});poe()})()</script>
+<script>document.addEventListener('click',e=>{const b=e.target.closest('.q-op');if(!b||b.disabled)return;const q=b.closest('.quiz');
+q.querySelectorAll('.q-op').forEach(o=>{o.disabled=true;if(o.hasAttribute('data-ok'))o.classList.add('ok')});const ok=b.hasAttribute('data-ok');
+if(!ok)b.classList.add('erro');const x=q.querySelector('.q-exp');x.hidden=false;x.classList.toggle('mal',!ok);x.querySelector('.q-res').textContent=ok?'Isso!':'Não é essa.';});
+(()=>{const g=document.querySelector('.guia-prog');if(!g)return;const t=g.querySelector('.gp-t'),b=g.querySelector('.gp-b');
+const secs=[...document.querySelectorAll('.sec[id]')],idx=document.querySelector('.indice');
+const poe=()=>{const y=scrollY+innerHeight*.3;let at=null;for(const s of secs){if(s.offsetTop<=y)at=s}
+ t.textContent=at&&scrollY>idx.offsetTop?at.querySelector('h2').textContent.replace(/^\d+/,'').trim():'Neste guia';
+ const h=document.documentElement.scrollHeight-innerHeight;b.style.transform='scaleX('+(h>0?Math.min(1,scrollY/h):0)+')'};
+addEventListener('scroll',poe,{passive:true});addEventListener('resize',poe);poe()})();
+document.addEventListener('click',e=>{const y=e.target.closest('.yt');if(!y)return;const f=document.createElement('iframe');
+f.src='https://www.youtube-nocookie.com/embed/'+y.dataset.id+'?start='+y.dataset.t+'&autoplay=1&rel=0';f.title=y.getAttribute('aria-label');
+f.allow='autoplay; encrypted-media; picture-in-picture';f.allowFullscreen=true;y.replaceWith(f)});</script><!--/rodape-->
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "b37421bd1ade44f1a59e46b96626bf03"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

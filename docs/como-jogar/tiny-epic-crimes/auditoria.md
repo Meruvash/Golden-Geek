@@ -127,3 +127,41 @@ Veredito: dá para jogar só com o tutorial, com as correções abaixo.
 | Primeiro turno, fora da trilha: dia ou noite? | O manual não diz (p. 15 fala só do espaço do indicador). | Mantida a nota `[!edicao]` existente. |
 
 Conferidos sem divergência: ordem de turno e pilha inicial (p. 5 e 8), custos e requisitos das ações (p. 11 a 13), horas arriscadas em Chamar Reforços (p. 12), Tocaia com falha (p. 13), Comprar Evento e rolagens de preparação (p. 15), Encerrar Seu Caso e desempate (p. 14 e 17), agente fantasma (p. 17).
+
+## Auditoria independente: regras
+
+Manual conferido em texto (pdftotext, por página) e nas ilustrações renderizadas (p. 5, 7, 8, 11 a 16). Trilha de Tempo lida na ilustração da p. 7: sol em 1 a 6, 19 a 30 e 43 a 48; lua em 7 a 18 e 31 a 42. Contas refeitas em script.
+
+**Leituras do redator, uma a uma**
+
+| Item | Resultado | Página |
+|---|---|---|
+| Primeiro turno, fora da trilha, como dia | Mantido como `[!edicao]`: o manual não diz; a p. 15 fala só do espaço do indicador. Os espaços iniciais são de sol, o que sustenta a leitura. | p. 7, 8, 15 |
+| Dados coluna-linha | Ok, `[!edicao]` mantido. Ilustração da p. 16: Fichas brancas no topo (colunas), pretas à esquerda (linhas); preto 2 e branco 4 dão linha 2, coluna 4. O texto diz "coluna-linha" mas cita o preto primeiro. Preparação (p. 5) confirma brancas no topo. | p. 5, 16 |
+| Diagonal em Chamar Reforços | Corrigido o `[!edicao]`: antes "sem diagonal, como em Dirigir e no exemplo da p. 12" → agora diz que a p. 12 só fala em "adjacentes", que o exemplo não tem mafioso na diagonal (não decide), e cita os dois lados: o Evento "Fuga da Prisão" fala dos "4 quarteirões adjacentes à Delegacia" (a favor), mas também escreve "ortogonalmente adjacente" (contra). Leitura do guia mantida, como dúvida explícita. | p. 11, 12, 14 |
+| Horas gastas na Tocaia com falha | Não confirmado no manual (só Chamar Reforços tem a observação). `[!edicao]` mantido; corrigida a explicação do exercício da etapa 3, que afirmava "as 3 horas arriscadas contam como o custo da ação (p. 11 e 13)" → agora remete à nota. | p. 12, 13 |
+| Ficha de Investigação com falha dá Carta de Suspeito | `[!edicao]` reescrito: a p. 10 diz "contribuíram ... ou seja, que tenham pelo menos uma Ficha de Pista daquele tipo"; a falha não conta para os 3 sucessos (p. 12, ícone de sucesso na observação). As duas palavras puxam para lados diferentes; o guia segue a letra. Avanço de Distintivo com falha: ok, explícito na p. 12. | p. 10, 12 |
+| Olhar a carta de outro jogador | `[!edicao]` reescrito: a p. 8 lista duas maneiras, mas a primeira diz "(se não houver cartas no baralho, faça da maneira 2)"; na maneira 2 você escolhe a carta. Antes o texto dizia que olhar a carta de outro "só vale com o baralho vazio", o que confundia com Interrogar (p. 14), em que a carta sai ao acaso. | p. 8, 14 |
+| Encerrar Seu Caso | Ok, `[!edicao]` mantido: o índice (p. 2) diz "Ação: Encerrar Seu Caso" e o texto "Esta é sua ação final", mas a regra é "Quando você terminar o seu turno e o seu Indicador ... estiver em um espaço vermelho (horas 43-48)", e o título da p. 14 não tem "Ação:". | p. 2, 14 |
+
+**Correções no texto**
+
+- Etapa 3, Complete: "De noite, Bruno está no 20" era impossível (o 20 é espaço de sol) → "Bruno está no 14, um espaço de lua"; opções 22/23/25 → 16/17/19; conta 14 + 3 + 2 = 19 (p. 7, 11, 12).
+- Comece, Rolagem de Mafioso: "Dois números iguais (1, 2, 4 ou 5): ponha o mafioso e role de novo" → "aplique o resultado e role de novo" (se o quarteirão estiver ocupado, compra-se Evento, não se põe mafioso) (p. 16).
+
+**Conferidos sem divergência**
+
+- Preparação, passos 1 a 19, quantidades (24 quarteirões, 10 Fichas de Dado, 5 Informante, 5 Testemunha, 7 Investigação, 5 Tocaia, 3 Custódia, 2 Tabuleiros de Tempo, 16 Cartas de Suspeito), Distintivo com 10+ para baixo, pilha com o mais jovem no topo, seta do envelope (p. 3, 5, 6).
+- Ordem de turno, pilha, empate no mesmo espaço (p. 8, 11, 16); Dirigir ortogonal, 1 hora por quarteirão, 0 parado (p. 11).
+- Prender, cor repetida volta para a Bolsa, 3 cores = +1 Distintivo; Pausa para o Café; "deter" (p. 11).
+- Chamar Reforços: 1 a 6, dado igual ou menor = sucesso, falha detém só o do seu quarteirão, horas gastas nos dois casos (p. 12).
+- Pegar Informante (linha, dia) e Pegar Testemunha (coluna, noite), 2 horas, +1 Distintivo (p. 12); Investigar Cena (p. 12); Ficar de Tocaia 1 a 5, olhar em segredo, falha volta virada para baixo sem dizer o número (p. 13); Levar sob Custódia 2 + 2, ambas à noite, 1 mafioso no espaço, cor já pega ou Arma decifrada dá Carta de Corporação sem Distintivo, custo 4 (p. 13).
+- Hora do dia no início do turno; ações a qualquer hora (p. 15).
+- Rolagem de Mafioso, Atenuação, Onda de Crimes, um mafioso por quarteirão, Bolsa vazia = Penalidade (p. 16).
+- Tabela de evidências e fichas (p. 9, 12, 13, 17); Decifre Evidências, envelope e devolução da carta (p. 9); 1 Carta de Suspeito por jogador com ficha (p. 10); Consultar Evidência Decifrada (p. 10); Nível de Distintivo, bônus, lado 10+ (p. 10); Interrogar (p. 14).
+- Comprar Evento, rolagens na preparação, Evento Cronometrado 39 a 48 (p. 15); Penalidade por Excesso de Eventos (p. 16); Resolver Evento, ícones de recompensa, Recompensas Limitadas (p. 14); Corporação, máximo 2 (p. 15).
+- Limite de 48 horas, Encerrar Seu Caso, acusação e desempate (p. 14, 17); variante para 2 e agente fantasma (p. 17); Cooperativo e Solo (p. 18, 19).
+- Contas: exemplo do Comece 1 + 2 = 3; Complete do Comece, distância de (3,3) a (4,2) = 2, + 2 = 4; exemplo da etapa 2, Carla 3 + 1 = 4, Ana 3 + 2 + 4 = 9 (espaço 3 é de sol); exemplo de Cargo 2 + 1 + 2 = 5; Encerrar 41 + 2 = 43; desempate por menos horas (45 < 46).
+- Exercícios de múltipla escolha: todas as respostas certas confirmadas e todas as erradas desmentidas pelo manual, com as duas correções acima.
+
+**Incerto:** créditos da edição: o livro traz Galápagos (www.mundogalapagos.com.br) e tradução de Fernanda Rocha; o guia diz "Asmodee", dona da marca e da biblioteca de downloads. Não alterado.
