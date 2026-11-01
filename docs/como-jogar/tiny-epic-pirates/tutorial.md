@@ -46,7 +46,7 @@ O turno tem cinco passos, sempre nesta ordem (p. 6 e 16):
 > - ( ) 0
 > = Só 1: a da Lenda. O Marujo saiu do Cordame (p. 7 e 8).
 >
-> ?? Ele para numa carta cujo Assentamento mostra 2 caixotes. Quantos cubos fica no navio?
+> ?? Ele para numa carta cujo Assentamento mostra 2 caixotes. Com quantos cubos fica o navio?
 > - ( ) 2, e o inicial volta para a Bolsa
 > - (x) 3
 > - ( ) 4
@@ -74,7 +74,7 @@ Marujos que voltam do Timão: etapa 2. Ordens em detalhe: etapa 3. Atacar e Lend
 
 Quando alguém enterra o terceiro Tesouro, a rodada se completa até todos terem jogado o mesmo número de turnos. Vence quem enterrou os 3 (p. 16).
 
-**Prefere ver?** Ele complementa este guia; em caso de diferença, vale o manual.
+**Prefere ver?** O vídeo abaixo resume uma partida. Ele complementa este guia; em caso de diferença, vale o manual.
 
 !video[TINY EPIC PIRATES, Gameplay resumida em 10 minutos, canal Duque Board Games](https://www.youtube.com/watch?v=xTkpXj1B01c&t=0s)
 
@@ -92,7 +92,7 @@ De fora pressionam a **Fragata**, que persegue quem completa uma volta no Timão
 
 ## 1. Como este guia ensina
 
-O guia tem cinco etapas, cada uma uma parte real da partida: montar a mesa; mover o Capitão e os Marujos no Timão; navegar e cumprir as Ordens do dia a dia; atacar e subir de Lenda; e fechar o turno com Ações Bônus, Tesouros e a Fragata. Em cada etapa vêm **Para entender** (como funciona e por quê), **Passo a passo** (a regra exata), **Regras adicionais** para casos que não acontecem em todo turno, e tarefas com ajuda decrescente: exemplo resolvido, tarefa para completar, sua vez e treino rápido. Cada pergunta tem opções; ao escolher uma, aparecem a certa e a explicação. No fim, uma avaliação diz o que reler, e uma folha de consulta vai para a mesa.
+Cinco etapas, cada uma uma parte real da partida: montar a mesa; o Timão e os Marujos; navegar e as Ordens do dia a dia; atacar e subir de Lenda; Ações Bônus, Tesouros e a Fragata. Em cada etapa: **Para entender** (o porquê), **Passo a passo** (a regra exata), **Regras adicionais** para casos que não acontecem em todo turno, e tarefas com ajuda decrescente (exemplo resolvido, complete, sua vez, treino rápido). Escolha uma opção e aparecem a certa e a explicação. No fim, uma avaliação diz o que reler, e uma folha de consulta vai para a mesa.
 
 ## 2. Etapa 1: montar a mesa
 
@@ -146,7 +146,7 @@ O guia tem cinco etapas, cada uma uma parte real da partida: montar a mesa; move
 
 > [!entender] **Para entender.** O Timão tem 6 espaços: o 0, Esconderijo, e os 5 Marcadores de Ordem. Entre o 5 e o 0 fica a **Linha de Navios**: quando o Capitão a cruza, você recebe a Extorsão e a Fragata e os Navios Mercantes se movem (p. 7, 12 e 15).
 >
-> Andar um espaço é de graça. Ir mais longe custa Marujos, e o Marujo que fica no Timão não trabalha numa Missão. Ele volta ao trabalho quando o Capitão passa por cima dele ou para sobre ele num turno seguinte (p. 7). Assim, pular hoje é caro, e o mesmo caminho fica barato na próxima volta.
+> Andar um espaço é de graça; ir mais longe custa Marujos, que ficam no Timão sem trabalhar numa Missão até o Capitão passar por eles ou parar sobre eles num turno seguinte (p. 7). Pular hoje é caro, e o mesmo caminho fica barato na próxima volta.
 
 > [!passos] **Passo a passo: escolher a Ordem do Capitão** (p. 7)
 >
@@ -205,11 +205,6 @@ O guia tem cinco etapas, cada uma uma parte real da partida: montar a mesa; move
 > - ( ) Nada: o Marujo volta para os Canhões no fim do turno
 > - ( ) Você não pode atacar sem Marujo nos Canhões
 > = Cada Marujo nos Canhões vale +1 de dano; ele agora está no Timão (p. 7 e 11).
->
-> ?? Capitão no 1. Você tem Marujos para pular os espaços 2, 3, 4, 5 e 0. Pode voltar a parar no 1?
-> - ( ) Pode, se tiver Marujos para pular todos
-> - (x) Não: ele não termina no espaço de onde saiu
-> = O Capitão não pode se mover para o mesmo espaço do qual saiu (p. 7).
 
 > [!treino] **Treino rápido: quantos Marujos para pular?** Nenhum Marujo no Timão.
 >
@@ -258,15 +253,13 @@ O guia tem cinco etapas, cada uma uma parte real da partida: montar a mesa; move
 > [!passos] **Passo a passo: as Ordens Pilhar, Negociar, Buscar e Recrutar** (p. 9 e 10)
 >
 > 1. **Pilhar.** Numa carta com Assentamento (espadas cruzadas), tire da Bolsa 1 ou 2 cubos, conforme o ícone, e ponha no navio. O Navio Pirata leva até 3 cubos. Sem espaço, descarte o novo ou troque por um que já estava; o descartado volta para a Bolsa.
-> 2. **Negociar.** Numa carta com Mercado, venda até 3 cubos do tipo daquele Mercado. Receba cubos vendidos vezes o valor atual do tipo no Tabuleiro de Mercado. Os cubos voltam para a Bolsa. O tipo vendido desce para o valor 2, e os que estavam abaixo dele sobem um degrau.
+> 2. **Negociar.** Numa carta com Mercado, venda até 3 cubos do tipo daquele Mercado. Receba cubos vendidos vezes o valor atual do tipo no Tabuleiro de Mercado. Os cubos voltam para a Bolsa. O tipo vendido desce para o valor 2, e os que estavam abaixo dele sobem um degrau; se ele já valia 2, nada se move.
 > 3. **Buscar.** Numa carta com Marcador de Busca fechado, vire-o. Com o símbolo de exclamação, use na hora e descarte: 2 ou 3 Ouros, 1 Marcador de Tiro Certeiro ou 1 cubo da Bolsa. Com o símbolo de relógio, guarde para usar uma vez, neste turno ou depois, até vários no mesmo turno: 2 de movimento a mais, ou entrar numa Tempestade sem ser Empurrado.
 > 4. **Recrutar.** Pegue uma das 3 Cartas de Tripulação reveladas e ponha à direita da Carta de Capitão. Reponha a fila na hora. Máximo de 4 Cartas de Tripulação (o Capitão não conta).
 
 !fig[A tabela do Mercado: alguém vende Cana-de-açúcar, que valia 4; ela desce para 2, e os dois cubos que estavam abaixo sobem um valor cada. Ilustração: manual Meeple BR (p. 9)](figuras/negociar.webp)
 
 > [!mais] **Limites de Ouro e de Tiro Certeiro.** O Ouro vai de 0 a 13; o que passar de 13 se perde, e você não gasta o que não tem (p. 3). Ao Buscar, quem já tem 13 Ouros ou 3 Marcadores de Tiro Certeiro não recebe mais (p. 10).
-
-> [!mais] **Mercado já no fundo.** Se o tipo vendido já vale 2, nada se move na tabela. Nenhum Espólio vale menos de 2 nem mais de 5 (p. 9).
 
 > [!mais] **Trocar a fila de Tripulação.** Ao Recrutar, antes de escolher, você pode pagar 1 Ouro para pôr as 3 cartas reveladas no fundo da pilha e revelar 3 novas, uma vez por turno. Mesmo depois de pagar, não é obrigado a pegar nenhuma (p. 10).
 
@@ -285,10 +278,10 @@ O guia tem cinco etapas, cada uma uma parte real da partida: montar a mesa; move
 
 > [!edicao] Ao Esconder-se, o manual diz que cada Marujo posto na Extorsão recebe 1 Ouro na hora, "já que você acaba de cruzar a linha de navios" (p. 12), e o passo da Linha de Navios também paga a Extorsão (p. 15). O manual não diz se o mesmo Marujo recebe duas vezes. Este guia lê como um só pagamento por volta no Timão; combine com a mesa antes de jogar. O manual também chama a linha de "Linha do Navio" (p. 6 e 7) e "Linha de Navios" (p. 15); é a mesma.
 
-> [!resolvido] **Exemplo resolvido.** Ana é Pirata no nível de Lenda (2 de movimento) e tem 2 Marujos no Cordame: 4 de movimento. O Mercado de Cana-de-açúcar está a 3 cartas, mas a primeira carta do caminho tem Tempestade.
+> [!resolvido] **Exemplo resolvido.** Ana está no nível Pirata da Lenda (2 de movimento) e tem 2 Marujos no Cordame: 4 de movimento. O Mercado de Cana-de-açúcar está a 3 cartas, mas a primeira carta do caminho tem Tempestade.
 >
 > 1. Ao entrar na Tempestade, ela é Empurrada. Escolhe tirar o Marujo da Extorsão, e não do Cordame: o movimento continua 4.
-> 2. Chega ao Mercado com 2 Ouros de sobra no movimento. A tabela está: Rum 5, Cana-de-açúcar 4, Pólvora 3, Café 2.
+> 2. Chega ao Mercado, e ainda sobra 1 de movimento. A tabela está: Rum 5, Cana-de-açúcar 4, Pólvora 3, Café 2.
 > 3. Ela vende 2 Cana-de-açúcar: 2 vezes 4, 8 Ouros. Tinha 7; iria a 15, mas para em 13.
 > 4. A tabela fica: Rum 5, Pólvora 4, Café 3, Cana-de-açúcar 2.
 
@@ -307,12 +300,6 @@ O guia tem cinco etapas, cada uma uma parte real da partida: montar a mesa; move
 > = O Café passou a valer 3: 3 vezes 3, 9 Ouros (p. 9).
 
 > [!suavez] **Sua vez.**
->
-> ?? Seu navio tem 2 cubos. Você Pilha um Assentamento de 2 caixotes. O que acontece?
-> - ( ) Você só pode tirar 1
-> - (x) Tira 2; um entra, e o outro você descarta ou troca por um que já estava
-> - ( ) O navio passa a levar 4
-> = O navio leva até 3. O cubo que não cabe é descartado, ou entra no lugar de outro, que volta para a Bolsa (p. 9).
 >
 > ?? Você está num Mercado de Rum com 1 Rum e 2 Café no navio. O que pode vender ali?
 > - ( ) Os 3 cubos, cada um pelo seu preço
@@ -424,13 +411,7 @@ O guia tem cinco etapas, cada uma uma parte real da partida: montar a mesa; move
 > - ( ) 12
 > = Cada 6 bate com dois símbolos: 2 mais 2, 4 (p. 11).
 >
-> ?? b) Você rola 5 e 1.
-> - (x) 1
-> - ( ) 6
-> - ( ) 2
-> = O 5 bate com um símbolo; o 1, com nenhum (p. 11).
->
-> ?? c) Você rola 3 e 4, e tem 2 Marujos nos Canhões.
+> ?? b) Você rola 3 e 4, e tem 2 Marujos nos Canhões.
 > - ( ) 0
 > - (x) 2
 > - ( ) 9
@@ -438,7 +419,7 @@ O guia tem cinco etapas, cada uma uma parte real da partida: montar a mesa; move
 
 ## 6. Etapa 5: Ações Bônus, Tesouros e a Fragata
 
-> [!entender] **Para entender.** As cartas dão força extra quando a Ordem do turno combina com elas. A Carta de Capitão é a mais importante, porque tem a Ação Bônus que vence o jogo: **Enterrar**. Os Capitães têm "Enterrar, depois Atacar" ou "Enterrar, depois Pilhar" (p. 13). Para enterrar, então, você precisa do Capitão no marcador certo do Timão, do navio na carta certa e do Ouro na mão, no mesmo turno.
+> [!entender] **Para entender.** As cartas dão força extra quando a Ordem do turno combina com elas. A Carta de Capitão tem a Ação Bônus que vence o jogo, **Enterrar**: os Capitães têm "Enterrar, depois Atacar" ou "Enterrar, depois Pilhar" (p. 13). Para enterrar, você precisa, no mesmo turno, do Capitão no marcador certo, do navio na carta certa e do Ouro.
 >
 > A Fragata é o preço de dar a volta no Timão. Sempre que o Capitão cruza a Linha de Navios, ela anda na direção do seu navio, e mais rápido para quem já enterrou Tesouros (p. 15).
 

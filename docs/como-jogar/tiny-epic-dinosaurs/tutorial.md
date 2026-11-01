@@ -194,7 +194,7 @@ Valores lidos nos quadros do Tabuleiro de Jogador, na ilustração da p. 5.
 > 1. Coletar: dos 9 símbolos (5 plantas, 3 carnes, 1 suprimento), estão descobertos 3 de planta, 3 de carne e 1 de suprimento. Você fica com 4 plantas, 3 carnes e 3 suprimentos.
 > 2. A linha tem um Contrato Público que pede 3 Estegossauros e vale 7 pontos. Com 2 na Fazenda, você ainda não pode alocar em Contratos.
 > 3. Você caça no espaço do Estegossauro e rola Rede: o terceiro está na Zona de Contenção.
-> 4. Na vez seguinte, usa a ação Mova um Dinossauro de sua Zona de Contenção. Com os 3 na Fazenda e um Dinofazendeiro sobrando, pode ir a Contratos e cumprir a carta de 7.
+> 4. Na vez seguinte, usa a ação Mova um Dinossauro de sua Zona de Contenção. Com os 3 na Fazenda, se ainda tiver peças, pode ir a Contratos e cumprir a carta de 7.
 
 > [!complete] **Complete.** Bruno pôs o Capataz no espaço de Pesquisa, e você quer esse espaço.
 >
@@ -232,7 +232,7 @@ Valores lidos nos quadros do Tabuleiro de Jogador, na ilustração da p. 5.
 >
 > Barreira posta não muda de lugar nas rodadas seguintes, a não ser por Redistribuir Barreiras ou por uma fuga. Dinossauros, ao contrário, podem ser rearrumados à vontade ao adaptar a Fazenda (p. 9 a 11). A forma dos Cercados se planeja; a ocupação se ajusta.
 >
-> Quem não come foge, e cada tipo de fuga traz uma penalidade. Quem come se reproduz: cada 2 da mesma espécie no mesmo Cercado geram 1 filhote (p. 11 e 12).
+> Quem não come foge, com penalidade; quem come se reproduz (p. 11 e 12).
 
 > [!passos] **Passo a passo: Reaver Dinofazendeiros** (p. 10)
 >

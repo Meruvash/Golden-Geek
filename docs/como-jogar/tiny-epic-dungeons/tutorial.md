@@ -23,8 +23,8 @@ Jogo cooperativo em dois atos. No Ato 1, os heróis exploram a **masmorra** cart
 No seu turno, em qualquer ordem e sem obrigação: **Mover**, fazer **1 Ação Heroica** (placa azul) e quantas **Ações Livres** (placa laranja) quiser e puder pagar. A Ação Heroica encerra o movimento (p. 6 e 7).
 
 1. **Mover.** Cada sala custa 1 de Velocidade, sempre por um corredor. Para entrar numa carta virada ao lado da sua sala, vire-a e gire-a até um corredor dela ligar com a sua sala. Ponha cartas novas viradas para baixo em cada corredor aberto dela que dê num espaço vazio da grade. Entre e resolva o ícone da sala (p. 7 e 8).
-2. **Encontro com Goblin:** receba 1 dano e pare. A carta de Goblin vai, aberta, no espaço livre mais baixo do Tabuleiro de Tocha; o Marcador de Goblin daquele número vai para a sala (p. 8).
-3. **Ação Heroica**, por exemplo **Atacar**: role tantos Dados de Herói quantos cubos a Habilidade tem, mais o Dado de Inimigo. Escolha 1 dado como resultado; os dados +1 e +2 podem somar a ele. Passou da Defesa do inimigo: o dano é a diferença. Inimigo vivo contra-ataca com o Dado de Inimigo (p. 9, 11 e 12).
+2. **Encontro com Goblin:** receba 1 dano e pare. A carta de Goblin vai, aberta, no espaço livre mais baixo do Tabuleiro de Tocha; o Marcador de Goblin daquele número vai para a sala. **Armadilha:** faça o teste do lado esquerdo da carta; no fracasso, receba o dano da caixa vermelha, e siga andando (p. 8).
+3. **Ação Heroica**, por exemplo **Atacar**: role tantos Dados de Herói quantos cubos a Habilidade tem, mais o Dado de Inimigo. Escolha 1 dado como resultado; os dados +1 e +2 podem somar a ele. Passou da Defesa do inimigo: o dano é a diferença. Inimigo vivo contra-ataca com o Dado de Inimigo (etapa 4) (p. 9, 11 e 12).
 4. **Depois de um teste com sucesso**, cada raio nos dados que você não usou dá 1 Foco (p. 9).
 5. **Fim do turno:** a tocha desce 1 espaço. Ícone onde ela parar: resolva (p. 6 e 15).
 
@@ -50,7 +50,7 @@ No seu turno, em qualquer ordem e sem obrigação: **Mover**, fazer **1 Ação H
 
 ### Ainda não precisa saber
 
-Lacaios e armadilhas: etapa 2. Procurar, Descansar, feitiços e espólios: etapa 3. Contra-ataque completo e o que acontece quando a tocha aciona os inimigos: etapa 4. Covil e Chefe: etapa 5.
+Lacaios, Portal e Desarmar: etapas 2 e 3. Procurar, Descansar, feitiços e espólios: etapa 3. Contra-ataque completo e o que acontece quando a tocha aciona os inimigos: etapa 4. Covil e Chefe: etapa 5.
 
 ### Como a partida acaba
 
@@ -163,7 +163,7 @@ Em cada etapa fica à vista o essencial: o passo a passo e o erro mais comum. O 
 
 > [!atencao] Um quinto Goblin que precise entrar com os 4 já na masmorra encerra a partida: os heróis perdem (p. 6 e 8).
 
-> [!resolvido] **Exemplo resolvido.** Seu herói tem Velocidade 4 e está na Entrada. Gasta 1 e revela a carta ao norte: uma sala vazia. Gira para ligar o corredor de baixo dela com a Entrada; a sala tem corredores a leste e ao norte, e você põe uma carta virada em cada espaço vazio. Entra: nenhum ícone. Gasta mais 1 e revela a carta ao norte: Encontro com Lacaio. Recebe 2 danos, a carta de Lacaio vai à direita do Tabuleiro de Tocha com o Marcador de Vida no topo da trilha, o Marcador de Lacaio vai para a sala, e o seu movimento acaba, com 2 de Velocidade sobrando.
+> [!resolvido] **Exemplo resolvido.** Meio da partida: seu herói tem Velocidade 4. Gasta 1 e revela a carta ao norte da sala dele: uma sala sem ícone. Gira para ligar o corredor de baixo dela com a sala de onde saiu; ela tem corredores a leste e ao norte, e você põe uma carta virada em cada espaço vazio da grade. Entra: nada acontece. Gasta mais 1 e revela a carta ao norte: Encontro com Lacaio. Recebe 2 danos, a carta de Lacaio vai à direita do Tabuleiro de Tocha com o Marcador de Vida no topo da trilha, o Marcador de Lacaio vai para a sala, e o seu movimento acaba, com 2 de Velocidade sobrando.
 
 > [!complete] **Complete.** Você está numa sala revelada com Velocidade 3 sobrando. A sala vizinha, já revelada, tem um Goblin. Depois dela há uma carta virada para baixo.
 >
@@ -301,7 +301,7 @@ Em cada etapa fica à vista o essencial: o passo a passo e o erro mais comum. O 
 > [!passos] **Passo a passo: matar** (p. 13)
 >
 > - **Goblin** tem 1 de Vida. Morto: marcador de volta ao número dele no Tabuleiro de Tocha, carta no Monte de Descarte de Goblins. Recompensa da carta, opcional: "/" é "ou", "+" é "e".
-> - **Lacaio:** o dano desce o Marcador de Vida na carta; no zero, morre. Carta e marcador voltam à caixa. O Marcador de Vida vai para um coração do Tabuleiro do Chefe, na seção do número de heróis. Recompensa: pegue 1 espólio ou 1 feitiço duas vezes, e a tocha sobe 6, nunca além do espaço inicial.
+> - **Lacaio:** o dano desce o Marcador de Vida na carta; no zero, morre. Carta e marcador voltam à caixa. O Marcador de Vida vai para um coração do Tabuleiro do Chefe, na seção do número de heróis. Recompensa, no Tabuleiro de Tocha: descubra 1 espólio ou 1 feitiço, duas vezes, e a tocha sobe 6, nunca além do espaço inicial.
 > - Inimigo morto não contra-ataca: ignore o Dado de Inimigo.
 
 > [!passos] **Passo a passo: a tocha** (p. 6 e 15)
@@ -410,7 +410,7 @@ Em cada etapa fica à vista o essencial: o passo a passo e o erro mais comum. O 
 
 > [!mais] **Ataques dentro e fora do Covil.** Com o Chefe no Covil, os ataques dele e dos Goblins no Tabuleiro do Chefe só atingem heróis no Tabuleiro do Chefe, e vice-versa. Quem está fora, inclusive na Carta da Porta do Covil, não usa Ataque à Distância nem Feitiço contra ele, nem lança Feitiço que afete quem está dentro (p. 20).
 
-> [!mais] **Goblins no Covil.** Goblins seguem aparecendo e agindo. Podem entrar no Tabuleiro do Chefe se o herói mais próximo estiver lá, e entram com certeza se todos os heróis estiverem lá. Ficam no centro do tabuleiro, atacam todos os heróis no Covil e podem ser atacados por eles; você escolhe se ataca um Goblin ou o Chefe (p. 18 e 20).
+> [!mais] **Goblins no Covil.** Goblins seguem aparecendo e agindo. Podem entrar no Tabuleiro do Chefe se o herói mais próximo estiver lá; com todos os heróis lá, os Goblins da masmorra andam na direção dele. Ficam no centro do tabuleiro, atacam todos os heróis no Covil e podem ser atacados por eles; você escolhe se ataca um Goblin ou o Chefe (p. 18 e 20).
 
 > [!mais] **Tocha do Chefe.** Quando o Chefe rola a Tocha no contra-ataque, além de a tocha descer 1, vale o efeito de Tocha do tabuleiro dele. Se essa descida também acionar Ação do Inimigo, resolva o efeito da Tocha primeiro (p. 19 e 20).
 
@@ -485,11 +485,12 @@ Responda sem consultar. Ao tocar numa opção, aparecem a resposta certa e a eta
 - ( ) Não recebe dano até o Lacaio atacar.
 = **2 danos e o movimento acaba** (p. 8). Se errou, releia a etapa 2.
 
-?? 3. Num teste de Intelecto 5 você tira 3, +2 e 6. Qual é a melhor escolha?
-- ( ) 3 + 2 = 5, e o 6 dá 1 de Vida.
-- ( ) 6, e o +2 fica sem efeito.
-- (x) 6 como resultado; o +2 dá 3 de Foco e o 3 dá 1.
-= Usando só o 6, os dados que sobram rendem 3 + 1 = **4 de Foco**; usando 3 + 2, sobra o 6, que dá 1 de Vida. Os dois passam; a escolha depende do que você precisa mais (p. 9). Se errou, releia a etapa 3.
+?? 3. Num teste de Intelecto 5 você tira 3, +2 e 6 e usa só o 6 como resultado. Quanto Foco ganha com os outros dois dados?
+- ( ) Nenhum: o Foco vem só da caixa verde.
+- ( ) 1
+- ( ) 3
+- (x) 4
+= O +2 tem 3 raios e o 3 tem 1: **4 de Foco**, porque o teste deu certo (p. 9). Se errou, releia a etapa 3.
 
 ?? 4. Seu ataque Corpo-a-Corpo dá 6 contra um inimigo de Defesa 6. Quanto dano causa?
 - (x) Nenhum.
