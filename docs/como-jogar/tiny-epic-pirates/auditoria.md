@@ -136,6 +136,8 @@ Auditor independente (não escreveu o texto), 01/11/2026. Manual: PDF Meeple BR 
 
 Todos refeitos em script; certas e erradas conferidas: Comece (Buscar 1→4 Ouros; 1 de movimento; 3 cubos; 3 Marujos para o 4), Etapa 1 (Rum ao 3º; Fragata; Marujos), Etapa 2 (2→5 com Marujo no 3: 1; 5→1: 0 e cruza; 4→2: 2; 3→0: 2; 5→2: 1; 0→5: 4), Etapa 3 (4 de movimento; 7+8 → 13; tabela Rum 5, Pólvora 4, Café 3, Cana 2; Café 3×3 = 9), Etapa 4 (6 e 2 com símbolos 5, 6, 6 e 1 Canhão: 3, com Tiro Certeiro 5; trocando para 5: 4, empate; 6 e 6: 4; 3 e 4 com 2 Canhões: 2), Etapa 5 (9−8 = 1; Fragata 4), fim de partida e avaliação final (2; 4; 15 e Rum a 2; 4 cartas da Fragata): ok.
 
+- Correção feita pelo auditor de partida (Carta de Mercador do Laranja à esquerda e do Verde à direita, na base do Tabuleiro de Mercado): conferida na ilustração da p. 5 a 1000 dpi; os desenhos laranja e verde estão nessa posição. ok.
+
 ### Veredito
 
 APROVADO COM CORREÇÕES: nenhuma regra errada nos passos, exemplos ou exercícios; três avisos [!edicao] reescritos ou acrescentados (nível "Lenda", Extorsão ao Esconder-se, limite de Tiro Certeiro) e um ajuste na folha de consulta.
