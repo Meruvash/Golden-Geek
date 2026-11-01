@@ -79,3 +79,44 @@ Lacunas encontradas e como foram resolvidas (manual Meeple BR):
 Pontos verificados sem correção: preparação para 2 (p. 3), ordem e fim do turno com seguir a última ação (p. 4 e 9), rerrolagem, Conversor, coleta, colonização, custo de nível em um recurso só, fim de jogo e desempate (p. 4 a 9), preparação e turno solo (p. 10 e 11). Lacunas que o manual também não resolve continuam declaradas no tutorial: pilha de planetas vazia, excedente acima de 7 e o texto das cartas (remetido ao interior da caixa, p. 8).
 
 Veredito: dá para jogar a partida de 2 a 5 só com o tutorial; o solo, depois destas correções.
+
+## Auditoria independente: regras
+
+Conferência item a item do tutorial.md contra o Manual de Regras Meeple BR (PDF de 12 páginas, 15/11/2017), com texto extraído por pdftotext e figuras renderizadas (p. 3 a 9; p. 4, 8 e 9 a 600 dpi). Contas refeitas em script.
+
+**Trilha de Império (foco desta auditoria).** P. 8 renderizada a 600 dpi e recortada por coluna; p. 4 também, porque a ilustração dela mostra o começo da trilha.
+- Custo: estrela, 2, 3, 4, 5, 6. O "2" fica escondido sob o Marcador de Império na p. 8, mas aparece no hexágono da p. 4. ok.
+- Dados: 4, 5, 5, 6, 6, 7. Níveis 2 a 6 legíveis na p. 8 (os aumentos vêm circulados: 5, 6, 7); o 4 do nível 1 está na p. 4 (figura e texto). ok.
+- Naves: 2, 2, 3, 3, 4, 4. Legíveis na p. 8 (aumentos em quadrado: 3 e 4); o 2 do nível 1 também na p. 4 e no passo 3 da p. 3. ok.
+- Pontos: 0, 1, 2, 3, 5, 8. Níveis 2 a 6 (1, 2, 3, 5, 8) legíveis na p. 8. No nível 1 não há número: na p. 4, o lugar dele na coluna é ocupado pelo rótulo "VICTORY POINTS"; ler como 0 é defensável. ok, com ressalva no bloco [!edicao].
+- Alinhamento das linhas conferido pelas faixas radiais e pelo padrão alternado (dado a mais nos níveis 2, 4 e 6; Nave a mais nos níveis 3 e 5), que bate com "alternadamente" no "Para entender" da etapa 3. ok.
+- corrigido: a frase de origem da tabela dizia que o primeiro espaço "vem do texto da p. 3 e 4" → agora diz que vem da ilustração da p. 4 (níveis 2 a 6 da p. 8). O [!edicao] passou a dizer que o custo do nível 2 está sob o marcador na p. 8 e que o nível 1 sai da p. 4, sem número de pontos (p. 4 e 8).
+
+**Demais itens**
+- Créditos e dados do manual (12 p., tradução Guilherme Duque, 2017) (p. 12): ok.
+- Preparação, passos 1 a 9: painéis, 4 Naves e marcadores, 2 Naves de pé no centro e 2 na trilha de Naves, 1 Cultura e 2 Energias, Império na estrela, jogadores + 2 planetas (5 jogadores: 6; 3 jogadores: 5), Painel de Controle e 7 dados, 2 Missões e fica com 1, o resto volta à caixa sem ser olhado (p. 3); o mais novo começa (p. 4): ok. Legenda da figura de preparação (3 jogadores, 5 planetas) (p. 3): ok.
+- Turno: dados pelo Nível de Império, 4 no início, Área de Ativação, uso único, ordem livre, não é preciso usar todos (p. 4); fim do turno, seguir a última ação, tirar os dados, sentido horário (p. 9): ok. Legenda da figura (4 dados na Área de Ativação, 3 fora) (p. 4): ok.
+- Rerrolagem: primeira grátis, adicionais 1 Energia, só dados não ativados (p. 4): ok; leitura "por rerrolagem" já declarada em [!edicao].
+- Seguir: 1 Cultura, uma vez por dado, sentido horário a partir do jogador da vez, "alguns segundos" (p. 4): ok. "Com as próprias peças" é leitura de "faz imediatamente a ação daquele dado": ok.
+- Mover Nave: para outro planeta; pousar (ação opcional, "pode") ou orbitar no primeiro espaço; não trocar de posição no mesmo planeta; 1 Nave sua por trilha e por superfície; jogadores diferentes dividem espaços; Nave removida volta ao painel; voltar ao painel; nunca a painel alheio nem planeta colonizado por outro (p. 5): ok. A obrigatoriedade da ação ao pousar já tinha sido corrigida pelo outro auditor; conferido.
+- Coletar Recursos: 1 por Nave em órbita ou na superfície de planeta do recurso; Energia também 1 por Nave no painel; máximo 7; marcador sai ao zerar (p. 6): ok. Legenda da figura (2 Culturas) (p. 6): ok.
+- Conversor: 2 dados não ativados, terceiro vira qualquer face, uma vez por turno, os 2 contam como usados, não se segue (p. 9): ok.
+- Colonização: símbolo do fim da trilha decide; 1 espaço por dado; todas as Naves da carta voltam; carta sob o painel com texto e pontos à mostra; anunciar pontuação; repor carta (p. 5 e 7): ok.
+- Utilize uma Colônia: ação do painel ou de planeta colonizado; custo do próximo espaço, um recurso só (exemplo 2º→3º = 3) ; Nave nova usável no mesmo turno; dado novo só no próximo; anunciar pontuação (p. 8): ok. Figura da p. 8 (marcador do 2º para o 3º espaço): ok. Textos das ilustrações em inglês ("Activation Bay", "Converter", "Upgrade your empire") (p. 4, 8 e 9): ok.
+- Fim de jogo: 21+ anuncia, missões não contam, rodada até a vez de quem começou, que não joga (p. 4 e 9); revelar missões, somar; desempate planetas → Nível de Império → Energia + Cultura → vitória compartilhada (p. 9): ok.
+- Missão da ilustração da p. 9 ("Conqueror": 3 pontos por ter mais planetas; empatado, 2, com 3+ jogadores): exemplo com Carla 5 × 4 × 4 → 3 pontos: ok.
+- Solo (p. 10 e 11): preparação como 2 jogadores, Piratas com 0/0 e 4 Naves, sem missões, você começa; dados um a um; rerrolagem forçada por 1 Energia + 1 Cultura; ação impossível rerrola 1 vez e depois descarta; seguir por 1 Cultura, não descartados; Piratas nunca seguem; Mover para o planeta mais à esquerda sem Nave pirata, nunca pousam; avançam todas as Naves do tipo; coleta com painel produzindo os dois recursos; ataque só do nível atual; máximos de Energia/Cultura, Energia primeiro, turno extra com 3 dados; vitória instantânea em 21 ou caveira: ok. Acréscimos do outro auditor (dados pela regra geral, declarado como leitura; "uma vez por turno"; planetas piratas) conferidos: ok.
+- Situações especiais: pilha vazia e excedente acima de 7 não tratados no manual, declarados como tal: ok.
+
+**Contas e exercícios (refeitos em script)**
+- Comece: Ana 2 → 4 Energias (1 painel + 1 planeta); Bruno segue Energia com 2 Naves no painel → 2; Cultura 1 → 0; Utilize uma Colônia no nível 1 = 2 Energias; segunda rerrolagem = 1 Energia: ok.
+- Etapa 1: 4 jogadores → 6 planetas; 5 → 6; 1 Cultura e 2 Energias; 2 Naves: ok.
+- Etapa 2: exemplo da ordem (Cultura 1 → 2; Energia 2 → 4; com a ordem inversa, só +1): ok. Completar (primeira rerrolagem grátis, segunda 1 Energia, Conversor): ok. Sua vez (não troca de posição; divide espaço; 6 + 3 → 7; Conversor 1×): ok. Treino a) 3, b) 0, c) 2, d) 1: ok.
+- Etapa 3: Ana nível 2 (1) + planeta 5 = 6; Bruno 2 → 3 paga 3 Culturas e ganha Nave usável já, 2 pontos; Diplomacia × Economia; dado novo no próximo turno; não mistura. Treino 2; 5; 2 + 3 = 5: ok.
+- Etapa 4: Bruno 5 + 16 = 21; Carla 3 + 18 = 21 (+3 = 24); Ana 3 + 17 = 20; com missão de 4, 24 = 24, desempate por planetas (5 × 4) para Carla. Sua vez (seguir Mover com escolhas próprias; missão fora dos 21; sem Cultura não segue): ok.
+- Avaliação final 1 a 8 (4; 3; 2 Energias; volta ao painel; 4 Energias; neste turno; não; ninguém): ok. As alternativas erradas são todas erradas pelo manual.
+- Termos conferidos com a edição brasileira: Painel Galáctico, Painel de Controle, Área de Ativação, Conversor, Dados de Ação, Naves, trilha de recursos, trilha de Naves, trilha de Império, trilha de colonização, Nível de Império, Mover Nave, Coletar Recursos, Colonização, Utilize uma Colônia, Seguir outro jogador, Cartas de Planeta, Cartas de Missão Secreta, Frota de Piratas, Piratas Galácticos: ok.
+
+**Fora do escopo de regras, para o editor:** as figuras citadas (figuras/*.webp) não existem ainda em docs/como-jogar/tiny-epic-galaxies/.
+
+Veredito (regras): APROVADO COM CORREÇÕES. Uma correção de fonte na tabela da trilha de Império; nenhum valor da tabela estava errado.

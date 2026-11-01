@@ -96,3 +96,21 @@ Igual ao protocolo do `PROMPT_PILOTO.md`, seção 10: 5 a 8 adultos que nunca jo
 ## 7. Ligação com a resenha
 
 Não há resenha de Tiny Epic Vikings no site. Se houver, o card do tutorial pode apontar para ela pelo campo `resenha` do JSON.
+
+## Auditoria independente: partida simulada
+
+Teste de execução feito por um agente que não escreveu o texto: primeiro montei mentalmente uma partida de 2 jogadores (Ana e Bruno, com o inimigo) e joguei a Era 1 só com o tutorial; depois abri o manual (TNE051_regras_v1.0) apenas para resolver as lacunas anotadas. O modo solo não foi simulado, porque o tutorial avisa que não o cobre (p. 16 a 23).
+
+Simulação resumida da Era 1: preparação com o inimigo nas 3 Ilhas Periféricas; seleção com 4 cartas por jogador e 3 para o inimigo; Ana (Chefe) joga para cima um Velejar e atraca numa Ilha central vazia, envia Colonos e pega a Runa (Fúria +1); Bruno joga para baixo e começa uma batalha; Ana joga Colher; no turno seguinte de Bruno a batalha se resolve contra os Invasores; nos turnos 3 e 4, Construir e uma tentativa de tomar uma Ilha do inimigo (Influência 6); Fase de Limpeza e Chefe para quem tem mais Runas de Ilha. A ordem do turno, a batalha, a Influência, o fim da era e a pontuação final seguem sem adivinhação.
+
+| # | Lacuna na partida simulada | Resolução (manual) |
+|---|---|---|
+| 1 | O "Comece em 4 minutos" não mencionava o inimigo: quem joga a 2 montava a mesa errada. | Passo 7 incluído na lista "Monte a mesa", com remissão às Situações especiais (p. 16). |
+| 2 | "Passa o resto para a esquerda" no Comece; o resto do guia fala em sentido horário. | Trocado por "no sentido horário" (p. 7). |
+| 3 | Seleção a 2: "passam cartas para ele e pegam as dele" não dizia quem passa para quem. | Acrescentado o exemplo do manual: A passa ao inimigo e pega de B; B passa a A e pega do inimigo; embaralha e descarta 1 da mão do inimigo (p. 16). |
+| 4 | O inimigo joga turnos? Como se toma uma Ilha dele, e a Fúria sobe? | O manual só descreve preparação e seleção para o inimigo; acrescentado que ele não tem turnos, que cada Ilha dele começa com Influência 6, que a regra de controle é a normal e que, com a Runa na Ilha, quem a toma a pega "diretamente da Ilha" e sobe a Fúria (p. 13 e 16). |
+| 5 | Enviar Colonos: o Barco precisa atracar com esse Velejar? Os movimentos gastos reduzem o limite? | Esclarecido no passo 4: ao atracar com o Velejar, até o número da ação (p. 11). |
+| 6 | A Runa de uma carta jogada para baixo, depois de revelada, conta como Runa Ativa? | O manual não resolve (p. 6 só diz "ao jogar"); acrescentado ao aviso [!edicao] da etapa 4. |
+| 7 | Construir Barco "num Fiorde adjacente a qualquer região que você ocupe": um Fiorde com Barco seu conta? | Não alterado. A p. 10 chama de "região" cada Ilha, e o guia já reproduz o texto da p. 12; fica como ponto de leitura. |
+
+Veredito: dá para jogar só com o tutorial, com as correções acima. Restam como pontos do manual sem resposta os já listados na seção 4 e o item 6 desta tabela.

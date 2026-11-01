@@ -22,7 +22,7 @@ Na ordem. O marcado *(depois)* se monta já e se usa mais tarde (p. 4 e 5).
 6. Acima dos Tabuleiros de Ação, o Tabuleiro de Contrato, com uma linha de Cartas de Contrato Público abertas: número de jogadores mais 1. Cada um recebe 2 Cartas de Contrato Privado, fica com 1 em segredo e devolve a outra *(depois)*.
 7. Abaixo, o Tabuleiro de Pesquisa, com 3 Cartas de Pesquisa abertas *(depois)*.
 8. Dinossauros e Barreiras ao alcance de todos; o Dado de Caça perto do Tabuleiro de Ação A.
-9. Quem visitou por último um museu de história natural pega o Marcador de Primeiro Jogador. Em sentido horário a partir dele, o segundo jogador põe a Planta no 1; o terceiro, a Carne; o quarto, o Suprimento.
+9. Quem visitou por último um museu de história natural pega o Marcador de Primeiro Jogador. Em sentido horário a partir dele, o segundo jogador põe o Marcador de Planta no 1; o terceiro, o de Carne; o quarto, o de Suprimento.
 
 ### Seu primeiro turno
 
@@ -148,7 +148,7 @@ Valores lidos nos quadros do Tabuleiro de Jogador, na ilustração da p. 5.
 >
 > Em **Alocar Dinofazendeiros**, os jogadores se revezam pondo peças nos espaços de ação (p. 7). Ser o primeiro num espaço custa 1 Dinofazendeiro; quem chega depois precisa de mais peças que o dono atual. O **Capataz** vale por 2, para entrar e para segurar um espaço. Por isso o Marcador de Primeiro Jogador conta: quem começa escolhe primeiro.
 >
-> Plantas e carnes alimentam os dinossauros no fim da rodada, e qualquer recurso pode ser custo de um espaço de ação ou de uma habilidade de Carta de Pesquisa (p. 7, 11 e 12).
+> Plantas e carnes alimentam os dinossauros no fim da rodada, e os recursos também pagam o custo de alguns espaços de ação e de habilidades de Cartas de Pesquisa (p. 7, 11 e 12).
 
 > [!passos] **Passo a passo: Coletar Recursos** (p. 6)
 >

@@ -73,3 +73,21 @@ Script `tez-scripts/contas.py` (scratchpad), todas as asserções passam: trilha
 - As habilidades de cada Loja, Carta de Jogador, Carta de Zumbi e Carta de Objetivo não são listadas: o manual não as reúne em texto, e o tutorial manda ler a carta. Só aparecem as que o manual mostra nas ilustrações.
 - Os exemplos usam Lojas genéricas ("uma Loja de Corredor") porque a montagem é sorteada; o leitor não pode conferir o exemplo num mapa fixo.
 - Teste de execução e auditoria independente ainda não foram feitos.
+
+## Auditoria independente: partida simulada
+
+**Método.** Só com o tutorial, montei uma partida para 2 jogadores (Cooperativo sem Jogador Zumbi, dificuldade normal) e o Solo, e joguei a primeira volta: Jogador 1 (Pátio → Sala de uma Loja de Corredor vizinha ao Pátio, tiro no Zumbi da Sala 1 por 1 munição, munição 8 → Sala 1 → Sala 2 de Loja vizinha com Zumbi, corpo a corpo, 1 dano), Procura revelada sem Barulho, turno da IA com 1 Zumbi em cada uma das 2 Lojas do símbolo, nova Carta de Procura comprada; Jogador 2 (Pátio → Loja vazia de Zumbi depois de matar o da entrada, coleta a carta aberta ao lado dela, Procura com Barulho, IA põe 2 + 2 Zumbis, um deles na Sala do jogador: Cercado, 1 dano). Depois conferi as lacunas no manual (p. 4, 7, 10, 12, 13, 16, 18 e 19).
+
+**Lacunas encontradas e como foram resolvidas.**
+
+1. **Que modo jogar com 2.** O "Comece em 4 minutos" ensina só o modo de 3 a 5 com Jogador Zumbi; quem tem 2 jogadores só descobre o modo com IA no fim da etapa 4. Corrigido: nota em "Ainda não precisa saber" mandando os grupos de 2 (e o Solo) ao bloco Cooperativo sem Jogador Zumbi e ao turno da IA (p. 16 e 18).
+2. **Quantas Lojas recebem Zumbis.** "As Lojas com aquele símbolo" não dizia quantas são. O manual: "uma ou ambas as Lojas que possuem um Símbolo igual" e "cada uma das 2 Lojas" (p. 12 e 16). Corrigido no "Comece" e no passo 2 do Turno do Zumbi ("nas 2 Lojas").
+3. **Onde fica o ITEMeeple no início.** O tutorial dizia "no Pátio"; o manual diz "na sala central do Pátio" (p. 4). Corrigido nas duas preparações. O manual não descreve as Salas do Pátio além disso; o movimento a partir dele segue a regra geral de Salas encostadas (p. 8).
+4. **Quem escolhe a Carta de Procura inicial.** O "Comece" dizia que o Jogador Zumbi "põe 1"; o manual diz que ele **escolhe** 1 da mão de 8 (p. 4, item N). Corrigido no "Comece" e na etapa 1.
+5. **Atleta.** O tutorial dizia que ela "pode andar 2 Salas no primeiro movimento", sem a condição. O manual: só se começar o turno numa Sala sem Zumbi (p. 10). Corrigido.
+6. **Comido Vivo sem Jogador Zumbi.** A p. 7 manda entregar a Carta de Jogador ao Jogador Zumbi, que não existe no modo com IA, e a p. 16 não trata o caso; o estoque de Zumbis também só é definido para o Jogador Zumbi (p. 4). **[lacuna do manual]**: novo bloco [!edicao] após o Cooperativo sem Jogador Zumbi, aplicando a p. 7 no que não depende do Jogador Zumbi e pedindo que o grupo combine o destino da carta.
+7. **Barulho no Pátio.** Já sinalizado pela auditoria anterior com [!edicao]; confirmado que p. 12 não trata o caso. Sem mudança.
+
+**Pontos testados sem problema:** ordem do turno humano (3 movimentos, A/B/C, Procura), Regra de Ouro, corpo a corpo obrigatório e a distância só a partir de Sala vazia, trilha de dano e munição, coleta só com a Loja vazia e não da carta recém-revelada, colocação de Zumbis da Sala 1 à 3 e transbordo, Barricada, ordem de jogo e as três condições de fim de jogo. Não existe "fim de rodada" no jogo: cada turno humano é seguido de um turno do Zumbi (p. 8 e 19), e o tutorial diz isso.
+
+**Veredito:** dá para jogar só com o tutorial, com as correções acima.

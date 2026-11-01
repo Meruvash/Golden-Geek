@@ -23,7 +23,7 @@ Jogo cooperativo em dois atos. No Ato 1, os heróis exploram a **masmorra** cart
 Em qualquer ordem, nada obrigatório: **Mover**, **1 Ação Heroica** (placa azul) e **Ações Livres** (placa laranja). A Ação Heroica encerra o movimento (p. 6 e 7).
 
 1. **Mover.** Cada sala custa 1 de Velocidade, por corredor. Carta virada vizinha: vire, gire até um corredor ligar com a sua sala, ponha cartas viradas nos corredores abertos dela dentro da grade, entre e resolva o ícone (p. 7 e 8).
-2. **Encontro com Goblin:** 1 dano e pare. Carta de Goblin no espaço livre mais baixo do Tabuleiro de Tocha; o marcador daquele número vai para a sala. **Armadilha:** teste do lado esquerdo da carta; fracasso, dano da caixa vermelha (p. 8).
+2. **Encontro com Goblin:** 1 dano e pare. Carta de Goblin no espaço livre mais baixo do Tabuleiro de Tocha; o marcador daquele número vai para a sala. **Encontro com Lacaio:** 2 danos e pare; carta à direita do Tabuleiro de Tocha, Marcador de Vida no topo da trilha dela, Marcador de Lacaio na sala. **Armadilha:** teste do lado esquerdo da carta; fracasso, dano da caixa vermelha (p. 8).
 3. **Atacar** (Ação Heroica): Dados de Herói conforme os cubos da Habilidade, mais o Dado de Inimigo. 1 dado é o resultado; +1 e +2 somam a ele. Acima da Defesa: dano = diferença. Inimigo vivo contra-ataca (etapa 4) (p. 9, 11 e 12).
 4. **Teste com sucesso:** cada raio nos dados não usados dá 1 Foco (p. 9).
 5. **Fim do turno:** a tocha desce 1 espaço. Ícone onde ela parar: resolva (p. 6 e 15).
@@ -48,7 +48,7 @@ Em qualquer ordem, nada obrigatório: **Mover**, **1 Ação Heroica** (placa azu
 
 ### Ainda não precisa saber
 
-Lacaios, Portal e Desarmar: etapas 2 e 3. Procurar, Descansar, feitiços e espólios: etapa 3. Contra-ataque completo e o que acontece quando a tocha aciona os inimigos: etapa 4. Covil e Chefe: etapa 5.
+Portal: etapa 2. Desarmar: etapa 3. Procurar, Descansar, feitiços e espólios: etapa 3. Contra-ataque completo e o que acontece quando a tocha aciona os inimigos: etapa 4. Covil e Chefe: etapa 5.
 
 ### Como a partida acaba
 

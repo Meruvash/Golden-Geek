@@ -17,9 +17,9 @@ O marcado *(depois)* se monta já e se usa mais tarde.
 1. Pátio no centro, lado "Pátio Cooperativo" para cima; as 8 Lojas em volta, em posição e lado sorteados, Símbolos de Entrada para fora; 1 Zumbi em cada Símbolo de Entrada (p. 4).
 2. Barricada no espaço 2 do Pátio e 2 Marcadores de Sobrevivente no Estoque dele.
 3. O Jogador Zumbi sorteia 3 Cartas de Jogador e fica com 1, lado Zumbi, com o Indicador de Horda no espaço 1. Os outros Zumbis são o estoque.
-4. Cada humano sorteia 3 Cartas de Jogador e fica com 1, lado Humano: ITEMeeple no Pátio, Marcador de Dano no 0 e de Munição no 9.
+4. Cada humano sorteia 3 Cartas de Jogador e fica com 1, lado Humano: ITEMeeple na sala central do Pátio, Marcador de Dano no 0 e de Munição no 9.
 5. 3 Cartas de Objetivo sorteadas, lado cooperativo, com a preparação de cada uma *(depois)*.
-6. Monte de Procura (24 cartas) e Monte de Suprimento, como na etapa 1. O Jogador Zumbi compra 8 Cartas de Procura e põe 1 fechada na frente de cada humano (p. 4 e 6).
+6. Monte de Procura (24 cartas) e Monte de Suprimento, como na etapa 1. O Jogador Zumbi compra 8 Cartas de Procura, escolhe 1 e a põe fechada na frente de cada humano (p. 4 e 6).
 7. Dado de Luta e 12 Itens à mão. Veículo, Armadilhas e Marcadores de Suprimento nos seus lugares *(depois)* (p. 5).
 8. Começa quem esteve num shopping mais recentemente (p. 6).
 
@@ -64,11 +64,11 @@ A sua Carta de Jogador traz uma Faca para o Ataque Corpo a Corpo e uma Pistola p
 
 ### O turno do Zumbi
 
-Depois da sua Procura (p. 12 a 14): se o símbolo da carta revelada for o da entrada da Loja onde você está, você fez Barulho, e o Jogador Zumbi faz uma ação da Carta de Zumbi. Depois ele põe 2 Zumbis nas Lojas com aquele símbolo (Zumbi na sua Sala: você está Cercado e leva 1 dano) e lhe entrega uma Carta de Procura fechada. Joga o humano da esquerda.
+Depois da sua Procura (p. 12 a 14): se o símbolo da carta revelada for o da entrada da Loja onde você está, você fez Barulho, e o Jogador Zumbi faz uma ação da Carta de Zumbi. Depois ele põe 2 Zumbis nas 2 Lojas com aquele símbolo, juntos numa delas ou 1 em cada (Zumbi na sua Sala: você está Cercado e leva 1 dano) e lhe entrega uma Carta de Procura fechada. Joga o humano da esquerda.
 
 ### Ainda não precisa saber
 
-Comido Vivo: etapa 1. Cercado em detalhe: etapa 2. Salas, Itens e Objetivos: etapa 3. Barricada e jogo sem Jogador Zumbi: etapa 4.
+Comido Vivo: etapa 1. Cercado em detalhe: etapa 2. Salas, Itens e Objetivos: etapa 3. Barricada e jogo sem Jogador Zumbi: etapa 4. **Com 2 jogadores** (ou sozinho), não há Jogador Zumbi: monte a mesa como acima, troque o que o bloco "Cooperativo sem Jogador Zumbi" da etapa 4 indica e use o turno da IA no lugar do turno do Zumbi (p. 16 e 18).
 
 ### Como a partida acaba
 
@@ -101,9 +101,9 @@ São quatro etapas: montar a mesa e ler dano e munição; mover e matar Zumbis; 
 > 1. Pátio no centro, lado "Pátio Cooperativo" para cima. As outras 8 Lojas ao redor, em posição e lado aleatórios, com os Símbolos de Entrada para fora do shopping (algumas ficam de cabeça para baixo). 1 Zumbi em cada Símbolo de Entrada: 8 Zumbis.
 > 2. Barricada no espaço 2 do Contador de Barricada; 2 Marcadores de Sobrevivente na área de Estoque do Pátio.
 > 3. O Jogador Zumbi embaralha as Cartas de Jogador embaixo da mesa, compra 3 e fica com 1, lado Zumbi para cima; as outras voltam ao baralho. Põe 1 Indicador de Horda (cubo verde) no espaço 1 do Contador de Horda e deixa os outros 2 ao alcance. Os Zumbis restantes formam o estoque, ao lado dele.
-> 4. Cada humano recebe 3 Cartas de Jogador ao acaso e fica com 1, lado Humano. Põe o ITEMeeple no Pátio, o Marcador de Dano da cor dele no 0 da trilha e um Marcador de Munição no 9. O que sobrou volta à caixa.
+> 4. Cada humano recebe 3 Cartas de Jogador ao acaso e fica com 1, lado Humano. Põe o ITEMeeple na sala central do Pátio (p. 4), o Marcador de Dano da cor dele no 0 da trilha e um Marcador de Munição no 9. O que sobrou volta à caixa.
 > 5. 3 Cartas de Objetivo sorteadas embaixo da mesa, lado "Objetivo Cooperativo" para cima. Siga a preparação de cada uma; se pedir um Indicador de Objetivo (cubo colorido), use qualquer cor de jogador.
-> 6. Monte o Monte de Procura e o Monte de Suprimento (abaixo). Suprimento perto das Cartas de Objetivo; Procura perto do Jogador Zumbi, que compra 8 cartas, põe 1 fechada na frente de cada humano (que ainda não olha) e fica com o resto na mão.
+> 6. Monte o Monte de Procura e o Monte de Suprimento (abaixo). Suprimento perto das Cartas de Objetivo; Procura perto do Jogador Zumbi, que compra 8 cartas, escolhe e põe 1 fechada na frente de cada humano (que ainda não olha) e fica com o resto na mão.
 > 7. Dado de Luta e os 12 Itens perto do Monte de Suprimento. O Veículo (Moto ou Carro de Polícia, conforme as Lojas na mesa) na sua marcação; 2 Marcadores de Armadilha, lado cinza para cima, ao lado da Loja que os usa; os 2 Marcadores de Suprimento nos locais com os seus números.
 > 8. Começa quem esteve num shopping mais recentemente, ou escolham outro jeito.
 
@@ -178,7 +178,7 @@ São quatro etapas: montar a mesa e ler dano e munição; mover e matar Zumbis; 
 >
 > 1. **Ataque Corpo a Corpo:** obrigatório ao entrar numa Sala com Zumbi. Role o Dado de Luta; o Zumbi morre seja qual for o resultado.
 > 2. **Ataque a Distância:** só ao entrar numa Sala sem Zumbi. Pague 1 munição e mate um Zumbi numa Sala vizinha, nunca na sua.
-> 3. O Zumbi morto volta ao estoque. A habilidade da sua Arma e a da sua Carta de Jogador (como a da Atleta, que pode andar 2 Salas no primeiro movimento) podem mudar essas regras (p. 10).
+> 3. O Zumbi morto volta ao estoque. A habilidade da sua Arma e a da sua Carta de Jogador (como a da Atleta: se começa o turno numa Sala sem Zumbi, o primeiro movimento pode levá-la até 2 Salas) podem mudar essas regras (p. 10).
 
 | Dado de Luta | Efeito (p. 9) |
 |---|---|
@@ -317,7 +317,7 @@ São quatro etapas: montar a mesa e ler dano e munição; mover e matar Zumbis; 
 > [!passos] **Turno do Zumbi**, depois de cada turno humano (p. 12 a 14)
 >
 > 1. **Verificar Ruídos:** compare o símbolo da Carta de Procura revelada com o Símbolo de Entrada da Loja onde está o ITEMeeple do humano. Diferente: sem Barulho. Igual: Barulho; o Jogador Zumbi faz a ação marcada pelo Indicador de Horda numa Carta de Zumbi sua (uma só por turno, mesmo com várias cartas) e sobe esse Indicador 1 espaço (no quinto, ele para).
-> 2. **Adicionar Zumbis:** 2 Zumbis do estoque nas Lojas com aquele símbolo; o Jogador Zumbi escolhe os 2 na mesma Loja ou 1 em cada.
+> 2. **Adicionar Zumbis:** 2 Zumbis do estoque nas 2 Lojas com aquele símbolo; o Jogador Zumbi escolhe os 2 na mesma Loja ou 1 em cada.
 > 3. Cada Zumbi vai para a Sala de menor número sem Zumbi. Nunca 2 Zumbis na mesma Sala.
 > 4. **Entregar/Comprar novas Cartas de Procura:** 1 carta da mão, fechada, para o humano que acabou de revelar; ele não a olha até o fim do seu próximo turno. Mão vazia: o Jogador Zumbi compra 4.
 > 5. Joga o humano à esquerda do último que jogou.
@@ -344,6 +344,8 @@ São quatro etapas: montar a mesa e ler dano e munição; mover e matar Zumbis; 
 > [!mais] **Sangrando.** Zumbi que deveria entrar com o estoque vazio: para cada um, o humano com menos dano recebe 1 dano. Empate: quem tem mais munição; persistindo, os empatados decidem (p. 14).
 
 > [!mais] **Cooperativo sem Jogador Zumbi (2 a 4 jogadores).** Marcadores de Sobrevivente pela dificuldade: 3 fácil, 2 normal, 1 difícil, 0 épico. Sorteie 1 Carta de Zumbi; só vale a habilidade do topo, sem Indicador de Horda. Cada jogador compra 1 Carta de Procura ao acaso e a deixa fechada junto da Carta de Jogador. Turno da IA: símbolo diferente, 1 Zumbi em cada uma das 2 Lojas com o símbolo; igual, 2 em cada (4 no total). Depois o jogador ativo compra uma carta nova do Monte de Procura, fechada. O turno humano não muda (p. 16).
+
+> [!edicao] **Sem Jogador Zumbi, o que muda no resto.** A p. 16 só lista essas trocas. Ela não diz quem recebe a Carta de Jogador de quem é Comido Vivo (no modo com Jogador Zumbi, ela vira uma Carta de Zumbi, p. 7). A leitura adotada aqui: os Zumbis que não estão no shopping são o estoque, como na p. 4; o humano Comido Vivo segue a p. 7 no que não depende do Jogador Zumbi (cartas e Itens na Loja, 1 Marcador de Sobrevivente sai, ou derrota se não houver, e nova Carta de Jogador com dano 0 e munição 9). O destino da carta antiga fica sem regra: combinem antes de jogar.
 
 > [!edicao] **Barulho no Pátio.** O Barulho compara o símbolo da carta com a entrada da Loja onde o humano está (p. 12), e o Pátio não tem Símbolo de Entrada. O manual não trata o caso; a leitura mais direta é que não há Barulho, mas os Zumbis entram do mesmo jeito. Combinem antes de jogar.
 

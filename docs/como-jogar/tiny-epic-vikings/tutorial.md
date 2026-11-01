@@ -115,7 +115,7 @@ Cinco etapas, na ordem em que você precisa delas: mesa; cartas e turno; mapa; b
 
 !fig[A mesa de uma partida de 4 jogadores: os 3 deuses com o Marcador de Fúria no 0, o Tabuleiro de Era com o Corvo na Era 1, o Baralho Viking, 7 Cartas de Benefício acima e 7 abaixo do mapa, uma Runa em cada Ilha, as Vilas nos seus espaços e o Barco separado indo para um Fiorde da borda. Ilustração: manual Asmodee (p. 5)](figuras/preparacao.webp)
 
-> [!mais] **Partida de 2 jogadores: o inimigo.** Com 2 jogadores entra um terceiro clã, o inimigo, com as peças de duas cores que ninguém usa. Ponha 1 Templo e 2 Colonos em cada uma das 3 Ilhas Periféricas, as que tocam a borda do mapa. O inimigo começa controlando essas Ilhas, mas as Runas ficam nelas e nenhuma Fúria sobe. Um Colono do inimigo removido de uma Ilha volta para a caixa (p. 16).
+> [!mais] **Partida de 2 jogadores: o inimigo.** Com 2 jogadores entra um terceiro clã, o inimigo, com as peças de duas cores que ninguém usa. Ponha 1 Templo e 2 Colonos em cada uma das 3 Ilhas Periféricas, as que tocam a borda do mapa. O inimigo começa controlando essas Ilhas, mas as Runas ficam nelas e nenhuma Fúria sobe. Um Colono do inimigo removido de uma Ilha volta para a caixa (p. 16). O manual não dá turnos ao inimigo: ele só ocupa as Ilhas e entra na seleção de cartas. Cada Ilha dele começa com Influência 6 (Templo 4 e 2 Colonos), e para tomá-la vale a regra normal: mais Influência que ele e pés no chão. Como a Runa está na Ilha, quem a toma a pega "diretamente da Ilha", e a Fúria do deus dela sobe 1 (p. 13 e 16).
 
 > [!atencao] Os recursos começam no 2, não no 0, e o Barco inicial vai para um Fiorde da borda, nunca para uma Doca (p. 4).
 
@@ -233,7 +233,7 @@ As quatro Ações de Líder principais são Velejar um Barco, Explorar com um Co
 > 1. **Movimentos:** o número ao lado do ícone de Velejar é o máximo de movimentos. Cada um custa 1: da Doca para um Fiorde vizinho, de um Fiorde para outro vizinho ou de um Fiorde para uma Doca vizinha. Todos os movimentos vão para um só Barco.
 > 2. **Ocupação:** vários Barcos cabem num Fiorde; numa Doca, só um.
 > 3. **Ao atracar:** se havia um Barco de outro jogador na Doca, o dono o move na hora para um Fiorde vizinho.
-> 4. **Enviar Colonos:** pague 1 Alimento por Colono, até o número do Velejar, e ponha os Colonos do seu Tabuleiro de Clã nessa Ilha.
+> 4. **Enviar Colonos:** logo que o Barco atraca com esse Velejar, pague 1 Alimento por Colono, até o número do Velejar, e ponha os Colonos do seu Tabuleiro de Clã nessa Ilha. Os movimentos gastos não reduzem esse limite (p. 11).
 > 5. **Atacar Colonos:** se agora você tem mais Colonos na Ilha que cada um dos outros, cada oponente com Colonos ali remove 1 e o devolve ao próprio Tabuleiro de Clã (p. 12 e 24).
 > 6. **Controle:** se agora você tem a maior Influência e pés no chão, pegue a Runa (p. 11 e 13).
 
@@ -352,7 +352,7 @@ As quatro Ações de Líder principais são Velejar um Barco, Explorar com um Co
 
 > [!mais] **Entrar em uma Batalha (Ação Rúnica).** Vire a carta na hora: ela entra na batalha aberta, ou começa uma se não houver, com a Força à vista de todos (p. 14).
 
-> [!edicao] Dois casos que o manual não resolve: quando a carta entra pela Ação Rúnica, ela fica virada para cima, e o gatilho de resolução da p. 8 é a carta "virada para baixo"; e não está dito o que acontece se, na resolução, só um jogador puder pagar o Aço da sua carta. Combine com a mesa antes de jogar.
+> [!edicao] Dois casos que o manual não resolve: quando a carta entra pela Ação Rúnica, ela fica virada para cima, e o gatilho de resolução da p. 8 é a carta "virada para baixo"; e não está dito o que acontece se, na resolução, só um jogador puder pagar o Aço da sua carta. Também não está dito se a Runa de uma carta jogada para baixo conta como Runa Ativa depois de revelada; a p. 6 só diz que a Runa Ativa vem "ao jogar" a carta. Combine com a mesa antes de jogar.
 
 **As Bênçãos de Valhala** estão impressas em cada Tabuleiro de Deus (p. 2):
 
@@ -499,7 +499,7 @@ As quatro Ações de Líder principais são Velejar um Barco, Explorar com um Co
 
 ## 7. Situações especiais
 
-**A seleção de cartas com 2 jogadores.** O inimigo recebe uma mão virada para baixo com uma carta a menos que a da era e fica "sentado" entre os dois jogadores. Vocês passam cartas para ele e pegam as dele, na direção da era. Depois de cada passada, embaralhe a mão do inimigo e descarte 1 carta dela; no fim, descarte a última (p. 16). Na Era 1, por exemplo, cada jogador recebe 4 cartas e o inimigo, 3.
+**A seleção de cartas com 2 jogadores.** O inimigo recebe uma mão virada para baixo com uma carta a menos que a da era e fica "sentado" entre os dois jogadores. Vocês passam cartas para ele e pegam as dele, na direção da era. Depois de cada passada, embaralhe a mão do inimigo e descarte 1 carta dela; no fim, descarte a última (p. 16). Na Era 1, por exemplo, cada jogador recebe 4 cartas e o inimigo, 3. O exemplo do manual (p. 16): o Jogador A guarda 1, passa 3 ao inimigo e pega as 3 que o Jogador B passou; o Jogador B guarda 1, passa 3 ao Jogador A e pega as 3 do inimigo. Embaralhe a mão do inimigo (as 3 que vieram de A), descarte 1 e repita até que os dois estejam passando só uma carta.
 
 > [!edicao] O limite de cada Ação de Consagração é "a quantidade de jogadores" (p. 14). Com 2 jogadores e o inimigo, este guia conta 2, porque o inimigo não joga turnos. O manual não trata disso no jogo de 2.
 
