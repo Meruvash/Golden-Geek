@@ -90,6 +90,10 @@ Portos e trocas melhores: etapa 3. Cidades: etapa 3. O ladrão em detalhe e as c
 
 Aldeia vale 1 ponto, cidade 2, as duas cartas especiais 2 cada, e algumas cartas de desenvolvimento valem 1. Quem tiver 10 pontos ou mais durante o próprio turno vence na hora (p. 4).
 
+**Prefere ver?** O vídeo abaixo explica o jogo do começo ao fim, com as peças na mesa. Ele complementa este guia; em caso de diferença, vale o manual.
+
+!video[Catan: O Jogo - Como Jogar, canal Romir Play House](https://www.youtube.com/watch?v=3YuoRbFPLqQ&t=0s)
+
 > [!atencao] **Os três erros mais caros.** O dado produz para todos, não só para quem rolou. Aldeia nova precisa de uma estrada sua chegando nela e de três encruzilhadas vizinhas vazias, inclusive de aldeias suas. Só o jogador da vez troca: os outros não podem trocar entre si.
 
 ## 0. Antes de tudo: o que é este jogo
@@ -131,6 +135,8 @@ Cada pergunta tem opções: escolha uma, e a resposta certa aparece com a explic
 > 6. Embaralhe as cartas de desenvolvimento e ponha o monte virado para baixo no compartimento livre de um suporte.
 > 7. Cada jogador recebe da reserva uma carta de cada terreno vizinho da sua aldeia marcada com letra no desenho. Pelo exemplo do manual, o azul recebe 1 madeira, 1 minério e 1 argila. As cartas ficam escondidas na mão a partida toda.
 > 8. O jogador mais velho começa. Depois, a vez passa sempre para o jogador à esquerda.
+
+!fig[A montagem para principiantes: a ilha com o ladrão no deserto, os portos na moldura e as aldeias com letra de cada cor (A vermelho, B azul, C laranja, D branco). Ilustração: manual Devir (p. 1)](figuras/preparacao.webp)
 
 > [!atencao] As cartas iniciais vêm só da aldeia marcada com letra. A outra aldeia produz a partir do primeiro lançamento.
 
@@ -211,6 +217,8 @@ Cada pergunta tem opções: escolha uma, e a resposta certa aparece com a explic
 > 4. Para cada cidade encostada num terreno que produziu, o dono recebe 2 cartas.
 > 5. O terreno onde está o ladrão não produz nada, para ninguém, enquanto o ladrão estiver lá.
 > 6. Saiu 7: ninguém produz (etapa 4).
+
+!fig[Saiu 8: o vermelho tem duas aldeias encostadas na montanha e recebe 2 minérios; o branco tem uma e recebe 1. Se saísse 10, o branco receberia 1 lã pelo pasto. Ilustração: manual Devir (p. 2)](figuras/producao.webp)
 
 > [!resolvido] **Exemplo resolvido.** Ana tem uma aldeia que encosta numa montanha com 8, numa lavoura com 5 e num pasto com 10, e uma cidade que encosta na mesma montanha com 8, numa floresta com 3 e numa colina com 6. Bruno tem uma aldeia na costa que encosta na mesma montanha com 8 e numa floresta com 4.
 >
@@ -294,6 +302,8 @@ Cada pergunta tem opções: escolha uma, e a resposta certa aparece com a explic
 > 5. Com uma aldeia ou cidade num **porto 3:1**, você troca 3 cartas iguais por 1 à escolha. Num **porto especial**, que mostra uma matéria-prima, você troca 2 cartas daquela matéria-prima por 1 à escolha (p. 3; manual original, p. 8).
 > 6. O porto especial só melhora a troca da matéria-prima dele; para as outras, vale o 4:1 ou o seu porto 3:1. Com a reserva, só se troca no próprio turno (manual original, p. 9 e 14).
 
+!fig[Comércio Marítimo com madeira: 4 por 1 minério sem porto, 3 por 1 num porto 3:1 e 2 por 1 no porto especial de madeira. Ilustração: manual Devir (p. 3)](figuras/comercio-maritimo.webp)
+
 > [!passos] **Passo a passo: construção** (p. 3 e 4)
 >
 > 1. Pague o custo da tabela, devolvendo as cartas à reserva, e ponha a peça no tabuleiro. Construa quanto puder pagar.
@@ -304,6 +314,10 @@ Cada pergunta tem opções: escolha uma, e a resposta certa aparece com a explic
 > 6. **Carta de desenvolvimento** (minério, lã e cereais): pegue a carta do topo do monte e guarde escondida. Para que serve, etapa 4.
 > 7. Você só tem 5 aldeias, 4 cidades e 15 estradas (p. 2). Com as 5 aldeias no tabuleiro, outra só depois de transformar uma em cidade (manual original, p. 12).
 > 8. Terminou, passe os dados para a esquerda.
+
+!fig[O laranja pode pôr a próxima estrada nos caminhos marcados em azul, que saem das suas estradas, mas não no caminho marcado em vermelho, depois da aldeia vermelha. Ilustração: manual Devir (p. 3)](figuras/estrada.webp)
+
+!fig[Regra da distância: o laranja pode fundar uma aldeia na encruzilhada marcada em azul, mas não nas marcadas em vermelho, vizinhas de uma aldeia. Ilustração: manual Devir (p. 3)](figuras/distancia.webp)
 
 > [!resolvido] **Exemplo resolvido.** Ana tem 2 madeiras, 1 argila, 5 lãs e 1 cereais e quer uma estrada até uma encruzilhada livre e uma aldeia lá. Juntas, custam 2 argilas, 2 madeiras, 1 lã e 1 cereais: falta 1 argila.
 >
@@ -461,6 +475,8 @@ Cada pergunta tem opções: escolha uma, e a resposta certa aparece com a explic
 > 3. Quem fizer uma estrada **maior** que a do dono atual toma a carta na hora. Empatar não basta.
 > 4. **Maior Exército de Cavalaria:** o primeiro a ter 3 cartas de Cavaleiro jogadas à sua frente pega a carta. Quem passar a ter **mais** Cavaleiros jogados que o dono atual toma a carta na hora (p. 4).
 > 5. **Fim:** vence quem tiver 10 pontos ou mais durante o próprio turno, alcançados nele ou já presentes quando ele começou (p. 4). Chegou a 10 fora da sua vez? A partida segue até alguém ter 10 no próprio turno, e esse alguém pode ser você (manual original, p. 5 e 7).
+
+!fig[O vermelho tem 6 estradas seguidas (o ramo da bifurcação não conta) e fica com a Maior Estrada Comercial. As 7 estradas do laranja estão partidas pela aldeia vermelha em dois trechos, de 2 e de 5. Ilustração: manual Devir (p. 3)](figuras/maior-estrada.webp)
 
 > [!passos] **Passo a passo: estrada interrompida** (manual original, p. 9)
 >

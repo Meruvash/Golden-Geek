@@ -61,6 +61,10 @@ Você **nunca** rola de novo um dado que já está à sua frente. Para mudar a f
 
 Quando o segundo dos três parâmetros fica completo, todos jogam mais um turno, inclusive quem o completou. Depois somam PVs da trilha, de prêmios, de marcos e das cartas (p. 6 e 8).
 
+**Prefere ver?** O vídeo abaixo explica o jogo do começo ao fim, com as peças na mesa. Ele complementa este guia; em caso de diferença, vale o manual.
+
+!video[TERRAFORMING MARS: o Jogo de Dados - Regras, canal Duque Board Games](https://www.youtube.com/watch?v=I4ArV1_5BDs&t=0s)
+
 > [!atencao] **Os três erros mais caros.** Não existe rolar de novo os seus dados. No turno de ação, a ação de suporte vem antes da principal, e jogar carta é ação principal. No turno de produção você fica com no máximo 3 dados, salvo carta que diga outra coisa: os outros voltam ao estoque.
 
 ## 0. Antes de tudo: o que é este jogo
@@ -96,6 +100,8 @@ O guia tem quatro etapas: montar a mesa e ler os dados; jogar um turno de ação
 > 9. Na ordem de jogo, cada um revela a corporação, recebe o bônus da caixa vermelha e cobre essa caixa com a peça da sua cor. A caixa vermelha é o quadro de baixo, à esquerda, na carta de corporação (na carta do exemplo, Credicor, ela mostra 3 marcadores curinga).
 > 10. Cada jogador recebe os dados da caixa marrom da corporação, rola e os deixa à frente: são os seus recursos. A caixa marrom é o quadro de baixo, à direita, na carta de corporação; nas cartas verdes de projeto, ela fica no canto superior direito (ilustração da p. 3; p. 5).
 > 11. O primeiro jogador escolhe 1 dos seus recursos e o entrega ao último jogador (pule numa partida solo). Então começa.
+
+!fig[A mesa montada: tabuleiro de Marte com as trilhas de temperatura, oxigênio e PVs, os 3 prêmios e os 3 marcos sorteados, e em volta o estoque de dados, os curingas, as peças, as cartas bônus e o baralho de projetos. Ilustração: manual Meeple BR (p. 2)](figuras/tabuleiro.webp)
 
 | Cor do dado | Comum (3 faces) | Incomum (2 faces) | Raro (1 face) |
 |---|---|---|---|
@@ -145,6 +151,8 @@ Qualquer recurso também serve para as ações de suporte que pedem "1 recurso q
 
 > [!resolvido] **Exemplo resolvido.** O Jogador 1 escolhe a corporação do exemplo do manual: a caixa vermelha dá 3 marcadores curinga, e a caixa marrom, 2 dados amarelos e 1 vermelho (p. 3). Ele pega os 3 curingas e cobre a caixa vermelha com a peça da sua cor. Depois pega os 3 dados, rola e saem megacrédito, ciência e calor. Esses são os recursos dele no primeiro turno, ao lado dos 3 curingas. Como é o primeiro jogador e a partida tem 3 pessoas, ele entrega 1 recurso ao Jogador 3: escolhe a ciência.
 
+!fig[A corporação Credicor: a caixa vermelha dá 3 marcadores curinga e é coberta pela peça do jogador; a caixa marrom produz 2 dados amarelos e 1 vermelho. Ilustração: manual Meeple BR (p. 3)](figuras/corporacao.webp)
+
 > [!complete] **Complete.** Numa partida de 4 jogadores, faltam as cartas bônus.
 >
 > ?? Quantas cartas bônus ficam ao lado do tabuleiro?
@@ -184,6 +192,8 @@ Qualquer recurso também serve para as ações de suporte que pedem "1 recurso q
 > 1. Faça **1 ação de suporte**: receber e rolar 1 dado à sua escolha do estoque; ou pagar 1 recurso qualquer para mudar outro dado para qualquer lado; ou pagar 1 recurso qualquer para comprar 2 cartas; ou usar a ação de suporte de uma carta azul sua ainda não usada, e girá-la.
 > 2. Faça **1 ação principal**: jogar uma carta da mão; ou fazer outra ação de suporte; ou pagar 3 calor para subir a temperatura 1 nível; ou 3 água para pôr 1 oceano; ou 4 plantas para pôr 1 floresta (e subir o oxigênio 1 nível); ou 3 cidade para pôr 1 cidade; ou 3 megacréditos para ganhar 2 PVs; ou usar a ação principal de uma carta azul sua ainda não usada, e girá-la.
 
+!fig[No alto, as 3 ações de suporte: receber 1 dado, pagar 1 recurso para girar um dado, pagar 1 recurso para comprar 2 cartas. Embaixo, as ações principais: jogar carta, fazer outra de suporte, e trocar calor, água, planta, cidade ou megacrédito por temperatura, oceano, floresta, cidade ou 2 PVs. Ilustração: manual Meeple BR (p. 4)](figuras/acoes.webp)
+
 > [!passos] **Jogar uma carta** (p. 5)
 >
 > 1. É uma ação principal: faça a de suporte antes.
@@ -198,6 +208,8 @@ Qualquer recurso também serve para as ações de suporte que pedem "1 recurso q
 >
 > 1. Pague o custo à esquerda da seta, se houver, e receba o que está à direita.
 > 2. Gire a carta para marcar que foi usada. Ela só volta a ser usada depois do seu próximo turno de produção.
+
+!fig[À esquerda, uma carta vermelha de exemplo, cujo efeito acontece na hora e sobe a temperatura. À direita, a carta azul Bombeamento de Aquífero: paga 1 aço para pôr 1 oceano e depois é girada, para marcar que foi usada. Ilustração: manual Meeple BR (p. 5)](figuras/cartas-vermelha-azul.webp)
 
 > [!mais] **Ação livre.** Algumas cartas azuis têm uma ação livre: pode ser usada a qualquer momento do seu turno, antes ou depois da ação de suporte ou da principal, e até no começo ou no fim de um turno de produção. Use e gire a carta (p. 5).
 
@@ -267,6 +279,8 @@ Qualquer recurso também serve para as ações de suporte que pedem "1 recurso q
 > 4. Receba e role todos os dados das caixas marrons da sua corporação e das suas cartas verdes em jogo.
 > 5. Desvire as cartas azuis usadas: elas podem ser usadas de novo.
 
+!fig[No turno de produção contam todas as caixas marrons: a corporação Credicor e as cartas verdes Espelho Espacial e Zepelins dão 3 dados amarelos, 2 azuis e 1 vermelho para rolar. Ilustração: manual Meeple BR (p. 5)](figuras/carta-verde-producao.webp)
+
 > [!edicao] **Curingas no turno de produção.** O manual manda manter até 3 dados e lembra que "marcadores curinga não são dados" (p. 4). A leitura adotada aqui é que os curingas não entram no limite de 3 e ficam com você.
 
 > [!mais] **Estoque sem dados suficientes.** Se no turno de produção faltarem dados no estoque, você recebe os que houver e mais 1 marcador curinga, e só 1, não importa quantos faltaram. Em qualquer outra situação, dado ou recurso que falta no estoque é simplesmente perdido (p. 4 e 7).
@@ -320,6 +334,8 @@ Qualquer recurso também serve para as ações de suporte que pedem "1 recurso q
 > 4. **Cidade:** numa área que não seja vizinha de outra cidade. Dá 2 PVs, mais 1 PV por floresta vizinha.
 > 5. **Peças especiais:** a peça marrom com o símbolo pedido, numa área.
 
+!fig[Pôr uma floresta é também terraformar: o oxigênio sobe 1 nível. Ilustração: manual Meeple BR (p. 6)](figuras/floresta-oxigenio.webp)
+
 > [!passos] **PVs na hora, cartas bônus e marcos** (p. 3, 6 e 7)
 >
 > 1. PVs com fita verde numa carta contam na hora; com fita vermelha, só no fim.
@@ -333,6 +349,8 @@ Qualquer recurso também serve para as ações de suporte que pedem "1 recurso q
 > 3. **Prêmios:** em cada um, conte o símbolo dele nos custos de todas as suas cartas jogadas. O maior ganha 5 PVs; o segundo, 3.
 > 4. Some os 4 PVs de cada marco seu e os PVs de fita vermelha das cartas jogadas.
 > 5. Vence quem tiver mais PVs.
+
+!fig[Os prêmios no canto do tabuleiro, de 5 e 3 PVs: os ícones de estrela e de calor no custo da carta Cometa contam para os prêmios desses símbolos. Ilustração: manual Meeple BR (p. 8)](figuras/premios.webp)
 
 > [!mais] **Terraformar o que já está completo.** Mesmo com um parâmetro completo, você ainda pode terraformá-lo: nada muda no tabuleiro, mas você ganha 1 PV em vez de 2 (p. 6 e 8). Subir o terceiro parâmetro, enquanto ele não estiver completo, continua dando os 2 PVs normais, também no último turno.
 

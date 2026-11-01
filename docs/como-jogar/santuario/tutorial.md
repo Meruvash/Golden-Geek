@@ -73,6 +73,10 @@ Casais e o Rio: etapa 3. Metas e melhorias: etapa 4. Pontuação: etapa 5.
 
 Quem apoia 4 metas (põe seus 4 marcadores de conquista sob elas) ou cobre o tabuleiro ganha 10 pontos, e os outros jogam mais um turno. Pilha vazia antes disso: a partida acaba ao fim daquele turno. Mais pontos vence.
 
+**Prefere ver?** No vídeo abaixo, o canal Duque Board Games joga uma partida resumida. Ele complementa este guia; em caso de diferença, vale o manual.
+
+!video[SANTUARIO - Gameplay resumida, canal Duque Board Games](https://www.youtube.com/watch?v=edGRTyy6D64&t=0s)
+
 > [!atencao] **Os três erros mais caros.** Animal só entra com a carta do habitat dele (o indefinido, com qualquer das três) e com força igual ou maior que o nível. O alcance limita só a peça do passo 1, que não move a carta de Projetos. Peça jogada nunca gira.
 
 ## 0. Antes de tudo: o que é este jogo
@@ -107,6 +111,8 @@ Em cada etapa, o que fica à vista é o essencial: o passo a passo e o erro mais
 > 6. Sorteie o primeiro jogador. Cada jogador pega as 4 cartas de ação, com o lado I para cima (o número do lado aparece no canto inferior direito), e as põe nos 4 encaixes sob o tabuleiro de uma vez: a carta de Projetos do primeiro jogador no encaixe da esquerda, com a seta no 1; a dos seguintes, em sentido horário, um encaixe mais à direita (seta no 2, no 3, no 4); as outras 3 cartas de cada um, ao acaso nos encaixes que sobraram.
 > 7. Cada jogador escolhe uma cor e põe à frente, virados para cima, os 4 marcadores de melhoria e os 4 marcadores de conquista dela.
 > 8. Cada jogador pega um suporte de peças, onde fica a sua mão. Ninguém começa com peças.
+
+!fig[A mesa de um jogador: o tabuleiro do zoológico (A), as 4 cartas de ação nos encaixes de baixo (B), os marcadores de melhoria e de conquista da cor dele (C) e o suporte de peças (D). Ilustração: manual oficial Capstone (p. 1)](figuras/preparacao.webp)
 
 > [!mais] **5 jogadores.** O quarto e o quinto jogador põem a carta de Projetos no encaixe da direita, com a seta no 4 (p. 1).
 
@@ -171,6 +177,8 @@ Em cada etapa, o que fica à vista é o essencial: o passo a passo e o erro mais
 > Você pega a peça da posição 2 (alcance 3) e usa Projetos para ganhar peças: mais 1 peça da vitrine, desta vez da posição 5. Projetos vai para o encaixe 1; Rocha e Floresta passam para 2 e 3; Água não se move e segue com força 4 (é a situação do exemplo da p. 6).
 >
 > Por que essa escolha: com a Água forte, você guarda a carta para um Animal de Água de nível 4. No próximo turno, porém, o seu alcance é 1.
+
+!fig[Em cima, a carta de Projetos usada no encaixe 3 volta para o encaixe 1, e Rocha e Floresta andam um encaixe para a direita. Embaixo, a fila nova: Projetos com força 1 e Água parada, com força 4. Ilustração: manual oficial Capstone (p. 6)](figuras/fila.webp)
 
 > [!complete] **Complete.** Sua carta de Água está no lado II, no encaixe 3. Já sabemos: força 4. Na mão, dois Animais de nível 2, um de Água e um indefinido, e um Animal de Água de nível 3.
 >
@@ -253,6 +261,8 @@ Em cada etapa, o que fica à vista é o essencial: o passo a passo e o erro mais
 >
 > Conta de peças: o Animal sai da mão, e mais uma peça vira espaço livre. Duas peças da mão para um Animal. No fim, o espaço livre novo vale 1 ponto.
 
+!fig[O Tigre-de-sumatra tem setas para cima à esquerda e à direita, e só a casa marcada com o visto verde serve. Ali, a casa A recebe uma peça da mão virada para baixo, e a casa B já tem um espaço livre impresso. Ilustração: manual oficial Capstone (p. 3)](figuras/setas.webp)
+
 > [!complete] **Complete.** Você joga um Animal de Água de nível 4 que tem uma seta na borda, e já tem no zoológico um Projeto com efeito contínuo: "quando um ícone de réptil entra, pegue 1 peça qualquer da vitrine". O Animal tem ícone de réptil e um efeito com raio que também dá 1 peça da vitrine (é a situação da p. 5). Você já pôs o Animal e virou uma peça para o espaço livre.
 >
 > ?? Complete: quantas peças da vitrine você pega?
@@ -266,6 +276,8 @@ Em cada etapa, o que fica à vista é o essencial: o passo a passo e o erro mais
 > - ( ) Primeiro o do Projeto, que já estava no zoológico.
 > - ( ) Primeiro o do Animal, que acabou de entrar.
 > = A ordem é você quem escolhe: vários efeitos ao mesmo tempo se resolvem na ordem que o jogador quiser (p. 5).
+
+!fig[O Crocodilo-do-nilo, Animal de Água de nível 4, entra com a carta de Água no encaixe 4, e a seta dele pede um espaço livre (C). O efeito com raio do Crocodilo (D) e o efeito contínuo do Herpetologista (E) dão 1 peça da vitrine cada. Ilustração: manual oficial Capstone (p. 5)](figuras/crocodilo.webp)
 
 > [!suavez] **Sua vez.** Você tem um Animal macho na casa vizinha de uma casa vazia. A fêmea da mesma espécie está na sua mão. A casa vazia tem um bônus de colocação.
 >
@@ -323,6 +335,8 @@ Em cada etapa, o que fica à vista é o essencial: o passo a passo e o erro mais
 | 4× | 4 ou mais | 10 |
 | 5× | 5 ou mais | 14 |
 
+!fig[Com 3 ícones de ave no zoológico (A) e os 2 marcadores de conservação devolvidos, o jogador põe o marcador de conquista 5× sob a meta das aves (B). Ilustração: manual oficial Capstone (p. 7)](figuras/meta.webp)
+
 > [!passos] **Passo a passo: passo 5, melhorar cartas** (p. 7)
 >
 > Cada marcador de melhoria tem uma condição. Para cada marcador não usado cuja condição você cumpre, escolha uma das suas cartas ainda no lado I, vire-a para o lado II no mesmo encaixe e vire o marcador para baixo. Pode usar vários no mesmo turno.
@@ -339,6 +353,8 @@ Em cada etapa, o que fica à vista é o essencial: o passo a passo e o erro mais
 > - **Limite de mão:** com mais de 6 peças, descarte peças da mão até ficar com 6, viradas para cima no descarte. Durante o turno pode passar de 6.
 > - **Reponha a vitrine:** desça as peças para os números menores até não haver buracos; depois, peças da pilha nos números vazios, até 6.
 > - **Fim?** Confira se alguma condição de fim foi cumprida (etapa 5). Se não, joga o próximo, em sentido horário.
+
+!fig[Reposição da vitrine: o jogador levou as peças das posições 2 e 5; as peças de cima descem para fechar os buracos, e a pilha completa as posições 5 e 6. Ilustração: manual oficial Capstone (p. 8)](figuras/vitrine.webp)
 
 > [!edicao] **O que o manual não especifica.** Quem escolhe as peças descartadas no limite de mão (este guia supõe que é o dono da mão) (p. 8).
 

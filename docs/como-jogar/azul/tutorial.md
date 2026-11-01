@@ -73,6 +73,10 @@ Quando os azulejos acabam, a rodada passa para o revestimento da parede, com a p
 
 A partida termina no fim da rodada em que alguém completa uma fileira horizontal de 5 azulejos na parede. Aí entram bônus por fileira horizontal, fileira vertical e cor completas, e vence quem tiver mais pontos (p. 6).
 
+**Prefere ver?** O vídeo abaixo explica o jogo do começo ao fim, com as peças na mesa. Ele complementa este guia; em caso de diferença, vale o manual.
+
+!video[Azul - Como Jogar, canal Romir Play House](https://www.youtube.com/watch?v=B0VT8juzbwY&t=0s)
+
 > [!atencao] **Os três erros mais caros.** Todos os azulejos da cor escolhida vêm juntos: não dá para pegar só uma parte. Tudo o que você pegou vai para uma única fileira de modelo, e o excesso cai no chão. O marcador de primeiro jogador também conta como penalidade na fileira do chão.
 
 ## 0. Antes de tudo: o que é este jogo
@@ -112,6 +116,8 @@ O guia tem quatro etapas, cada uma uma parte real da partida: montar a mesa, peg
 > 4. Ponha os 100 azulejos no saco.
 > 5. O jogador que visitou Portugal mais recentemente pega o marcador de primeiro jogador e enche cada expositor com exatamente 4 azulejos tirados do saco ao acaso.
 > 6. Devolva à caixa os tabuleiros, marcadores de pontuação e expositores que não serão usados.
+
+!fig[A mesa de uma partida de 3 jogadores: 7 expositores de fábrica em círculo, cada um com 4 azulejos tirados do saco, o centro da mesa vazio e o marcador de primeiro jogador ao lado. Ilustração: manual Galápagos (p. 2)](figuras/preparacao.webp)
 
 > [!atencao] O marcador de primeiro jogador não fica com quem começa. No início da primeira jogada, essa pessoa o põe no centro da mesa, e ele fica lá até alguém pegar azulejos do centro (p. 3).
 
@@ -159,6 +165,8 @@ O guia tem quatro etapas, cada uma uma parte real da partida: montar a mesa, peg
 > 6. **Excesso.** Com todos os espaços ocupados, a fileira de modelo está completa. O que não coube, e o que você não pode ou não quer pôr numa fileira de modelo, vai para a fileira do chão, da esquerda para a direita. Com os 7 espaços do chão ocupados, os azulejos que ainda caírem vão para a tampa da caixa.
 > 7. **Fim da fase.** A Oferta da fábrica termina quando não há mais azulejos no centro da mesa nem em nenhum expositor.
 
+!fig[Os primeiros turnos do exemplo do manual: Peter pega 2 pretos de um expositor e as sobras vão para o centro; Martin pega o amarelo de outro expositor e manda 3 vermelhos para o centro; Andrea pega os 3 vermelhos do centro e leva o marcador de primeiro jogador para o primeiro espaço da sua fileira do chão. Ilustração: manual Galápagos (p. 3)](figuras/primeiros-turnos.webp)
+
 > [!edicao] No passo 5, o manual brasileiro diz "em todos os turnos subsequentes"; o original diz *in all later rounds*, "nas rodadas seguintes" (p. 4). O resultado é o mesmo: a parede começa vazia e só muda no fim de cada rodada.
 
 > [!resolvido] **Exemplo resolvido.** Segunda rodada. A parede de Ana tem um amarelo na primeira linha e um preto na terceira. Na quarta fileira de modelo, ela guardou 2 vermelhos na rodada anterior; as outras fileiras de modelo estão vazias. Ana pega 3 amarelos de um expositor. Onde eles podem entrar?
@@ -171,6 +179,8 @@ O guia tem quatro etapas, cada uma uma parte real da partida: montar a mesa, peg
 > - Fileira do chão: sim, por escolha, os 3.
 >
 > Ana escolhe a terceira fileira, que fica completa sem perder nada. A quinta também não perderia nada agora, mas ainda precisaria de 2 amarelos.
+
+!fig[Andrea pega 2 amarelos. A segunda e a terceira linhas da parede já têm amarelo, e a quarta fileira de modelo tem azul. Ela pode pôr 1 na primeira fileira e o outro no chão (A), os 2 na quinta fileira (B) ou os 2 no chão (C). Ilustração: manual Galápagos (p. 4)](figuras/fileiras.webp)
 
 > [!complete] **Complete.** Na mesma rodada, Bruno é o primeiro a pegar do centro: leva os 4 pretos que estão lá. A quarta fileira de modelo dele já tem 1 preto, e a quarta linha da parede não tem preto. A fileira do chão dele está vazia. O marcador de primeiro jogador já foi para o primeiro espaço da fileira do chão. Termine: Bruno usa a quarta fileira.
 >
@@ -261,6 +271,8 @@ O guia tem quatro etapas, cada uma uma parte real da partida: montar a mesa, peg
 > 5. Por fim, conte a fileira do chão: cada azulejo tira os pontos impressos logo acima do espaço dele. Ajuste o marcador de pontuação. A pontuação nunca fica abaixo de 0.
 > 6. Ponha os azulejos da fileira do chão na tampa da caixa. Se o marcador de primeiro jogador estiver no seu chão, ele conta como um azulejo de penalidade, mas não vai para a tampa: fica à sua frente, e você começa a próxima rodada.
 
+!fig[O Revestimento de Peter: a segunda e a quarta fileiras de modelo estão completas, e o azulejo da extrema direita de cada uma vai para o espaço da sua cor na parede; os riscados vão para a tampa. A terceira e a quinta, incompletas, ficam como estão. Ilustração: manual Galápagos (p. 4)](figuras/revestimento.webp)
+
 > [!passos] **Passo a passo: quantos pontos vale um azulejo** (p. 5)
 >
 > 1. Se nenhum azulejo encosta nele, na horizontal ou na vertical: **1 ponto**.
@@ -268,12 +280,16 @@ O guia tem quatro etapas, cada uma uma parte real da partida: montar a mesa, peg
 > 3. Se há azulejos ligados a ele na vertical: faça a mesma conta na coluna e some.
 > 4. Diagonal não conta. Um azulejo separado por um espaço vazio também não.
 
+!fig[Três exemplos de pontuação: o amarelo novo forma uma sequência horizontal de 3 e vale 3; o azul novo forma uma sequência vertical de 3 e vale 3; o último amarelo encosta nas duas direções e vale 4 mais 3, ou seja, 7. Ilustração: manual Galápagos (p. 5)](figuras/pontuacao.webp)
+
 **A fileira do chão.** Valores impressos nos 7 espaços, da esquerda para a direita (ilustração da p. 5):
 
 | Espaço | 1º | 2º | 3º | 4º | 5º | 6º | 7º |
 |---|---|---|---|---|---|---|---|
 | Perde | 1 | 1 | 2 | 2 | 2 | 3 | 3 |
 | Total acumulado | 1 | 2 | 4 | 6 | 8 | 11 | 14 |
+
+!fig[A fileira do chão de Peter com 1 azul, o marcador de primeiro jogador e mais 3 azulejos: os cinco primeiros espaços tiram 1, 1, 2, 2 e 2, ou seja, 8 pontos. Ilustração: manual Galápagos (p. 5)](figuras/chao.webp)
 
 > [!passos] **Passo a passo: Preparação para a próxima rodada** (p. 5)
 >
@@ -394,6 +410,8 @@ O guia tem quatro etapas, cada uma uma parte real da partida: montar a mesa, peg
 > 3. Cada jogador ganha os bônus: **2 pontos** por fileira horizontal completa da parede, **7 pontos** por fileira vertical completa da parede e **10 pontos** por cor com os 5 azulejos na parede.
 > 4. Vence quem tem mais pontos na trilha de pontuação.
 > 5. **Empate:** vence quem tem mais fileiras horizontais completas. Se continuar empatado, a vitória é dividida.
+
+!fig[Os bônus impressos no tabuleiro: +2 por fileira horizontal completa da parede, +7 por fileira vertical completa e +10 por cor com os 5 azulejos. Ilustração: manual Galápagos (p. 6)](figuras/bonus.webp)
 
 > [!resolvido] **Exemplo resolvido.** Última rodada. Ana tem 52 pontos. A parede dela está assim antes do Revestimento (X é azulejo):
 >
