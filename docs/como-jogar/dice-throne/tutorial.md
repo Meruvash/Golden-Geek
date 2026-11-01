@@ -1,6 +1,6 @@
 # Como jogar Dice Throne
 
-*No Brasil saíram as caixas Monge vs Paladino e Feiticeira da Lua vs Bárbaro (Season One Rerolled). As regras foram conferidas no manual oficial em inglês da Dice Throne Inc. (Rules of Play, versão 2.4.1, a de rules.dicethrone.com, comparada com a versão 2.3.2, de 2022); as páginas citadas são as do manual, iguais nas duas versões. Os duelos Monge contra Paladino (etapa 2) e Feiticeira da Lua contra Bárbaro (etapa 4) usam os tabuleiros desses heróis nas imagens oficiais dos componentes; os exemplos que dependem das cartas e fichas mostradas no manual usam a Pistoleira (Gunslinger), a heroína que ele mostra por inteiro. Os nomes impressos na caixa brasileira podem ser diferentes dos usados aqui.*
+*No Brasil saíram as caixas Monge vs Paladino e Feiticeira da Lua vs Bárbaro (Season One Rerolled). As regras foram conferidas no manual oficial em inglês da Dice Throne Inc. (Rules of Play, versão 2.4.3, de 2025, a da página FAQ/Downloads da loja oficial, comparada com as versões 2.4.1 e 2.3.2); as páginas citadas são as da versão 2.4.3, com a mesma paginação das anteriores. Os duelos Monge contra Paladino (etapa 2) e Feiticeira da Lua contra Bárbaro (etapa 4) usam os tabuleiros desses heróis nas imagens oficiais dos componentes; os exemplos que dependem das cartas e fichas mostradas no manual usam a Pistoleira (Gunslinger), a heroína que ele mostra por inteiro. Os nomes impressos na caixa brasileira podem ser diferentes dos usados aqui.*
 
 ## 4min. Comece a jogar em 4 minutos
 
@@ -17,7 +17,7 @@ Cada jogador, com o seu herói (p. 3):
 1. Ponha à sua frente o tabuleiro do herói, o folheto do herói e as fichas dele, empilhadas nos lugares marcados no folheto.
 2. Marcador de Vida em 50 (duelo de 2 jogadores) e marcador de CP em 2.
 3. Embaralhe as suas cartas e compre 4: é a sua mão. Deixe espaço para a sua pilha de descarte, virada para cima.
-4. Se o verso do folheto tiver uma preparação própria do herói, faça agora.
+4. Se o folheto tiver uma preparação própria do herói (quadro Hero Setup), faça agora.
 5. Cada um rola 1 dado; o maior resultado começa. Esse é o jogador inicial.
 
 ### Seu primeiro turno
@@ -93,7 +93,7 @@ O guia tem quatro etapas: montar a mesa e ler o tabuleiro do herói; rolar, atac
 
 ## 2. Etapa 1: montar a mesa e ler o seu herói
 
-> [!entender] **Para entender.** O **tabuleiro do herói** mostra as habilidades, cada uma num espaço com nome. O **folheto do herói** explica as fichas, mostra o que há em cada face dos dados e, no verso, traz a dificuldade do herói (de 1 a 6), a preparação própria e perguntas frequentes (p. 5 e 6).
+> [!entender] **Para entender.** O **tabuleiro do herói** mostra as habilidades, cada uma num espaço com nome. O **folheto do herói** explica as fichas, mostra o que há em cada face dos dados e traz a preparação própria do herói (Hero Setup), a dificuldade dele (de 1 a 6) e esclarecimentos de regras (Rules Clarifications) (p. 5 e 6).
 >
 > Num espaço de habilidade ofensiva, os dados desenhados no alto são o **requisito de ativação**, a combinação que os seus dados precisam mostrar no fim da rolagem; embaixo vem o efeito (p. 4 e 5). Há quatro tipos de espaço:
 >
@@ -125,13 +125,13 @@ O guia tem quatro etapas: montar a mesa e ler o tabuleiro do herói; rolar, atac
 > 3. Gire o marcador de CP até 2.
 > 4. Embaralhe as suas cartas para formar o seu baralho e compre as 4 de cima. Essa é a sua mão inicial.
 > 5. Cada jogador rola 1 dado. Quem tirar o maior número é o jogador inicial e começa.
-> 6. Alguns heróis têm passos próprios de preparação, impressos no verso do folheto. Faça-os.
+> 6. Alguns heróis têm passos próprios de preparação, impressos no folheto, no quadro Hero Setup. Faça-os.
 
 > [!mais] **Vida máxima.** Você pode se curar até 10 pontos acima da Vida inicial. Num duelo, o teto é 60 (p. 4).
 
 > [!mais] **Teto de CP.** O máximo é 15 CP. Se você ganhar CP com o marcador em 15, ele não sobe (p. 4).
 
-> [!edicao] No Brasil saíram as caixas Monge vs Paladino e Feiticeira da Lua vs Bárbaro, da linha Season One Rerolled. As regras deste guia foram conferidas no manual oficial em inglês (versão 2.4.1, comparada com a 2.3.2); as habilidades desses quatro heróis, nas imagens oficiais dos tabuleiros publicadas pela Dice Throne. Os nomes impressos na sua caixa podem ser diferentes; os números e os símbolos são os mesmos. O manual também não diz o que fazer se a rolagem para decidir quem começa empatar. Rolar de novo entre os empatados é a solução natural; combine com a mesa.
+> [!edicao] No Brasil saíram as caixas Monge vs Paladino e Feiticeira da Lua vs Bárbaro, da linha Season One Rerolled. As regras deste guia foram conferidas no manual oficial em inglês (versão 2.4.3, comparada com a 2.4.1 e a 2.3.2); as habilidades desses quatro heróis, nas imagens oficiais dos tabuleiros publicadas pela Dice Throne. Os nomes impressos na sua caixa podem ser diferentes; os números e os símbolos são os mesmos. Se o seu manual for de uma versão anterior, ele pode mandar procurar a preparação própria no verso do folheto e chamar os esclarecimentos de "perguntas frequentes"; a regra é a mesma. A capa da versão 2.4.3 indica 14 anos ou mais; a da 2.4.1 indicava 8 ou mais. O manual também não diz o que fazer se a rolagem para decidir quem começa empatar. Rolar de novo entre os empatados é a solução natural; combine com a mesa.
 
 > [!suavez] **Sua vez.** Você vai montar um duelo com a Pistoleira. Responda olhando só o passo a passo e a tabela.
 >
@@ -175,18 +175,19 @@ O guia tem quatro etapas: montar a mesa e ler o tabuleiro do herói; rolar, atac
 > 2. Quando estiver satisfeito, anuncie a habilidade ofensiva que pretende ativar. O resultado final dos dados precisa atender ao requisito de ativação dela. Ou anuncie que não vai ativar nenhuma.
 > 3. Pergunte ao adversário se ele quer alterar os seus dados com uma carta ou deixar a habilidade ser ativada.
 > 4. Se alguém alterou os seus dados nesse momento, você pode anunciar outra habilidade com o novo resultado, ou voltar ao passo 1 e usar as rolagens que sobraram.
-> 5. Ative a habilidade: descubra os efeitos variáveis dela (alguns pedem rolagens extras) e resolva os que não precisam de alvo, como ganhar uma ficha.
+> 5. Ative a habilidade: descubra os efeitos variáveis dela (alguns pedem rolagens extras) e resolva os que não precisam de alvo, como ganhar uma ficha, ganhar CP ou curar.
 >
-> Qualquer jogador pode jogar cartas de Ação de Fase de Rolagem depois de qualquer um desses passos (p. 12).
+> Enquanto você rola, o adversário não interrompe: você pode usar as suas cartas, fichas e habilidades nos seus dados. Depois que você anuncia a habilidade, ele pode alterar os seus dados, você pode responder, e assim por diante até todos aceitarem o resultado (p. 15).
 
 > [!passos] **Passo a passo: a fase de rolagem defensiva** (p. 4 e 13). Só acontece se a habilidade que você ativou é um **Ataque**: uma habilidade ofensiva que causa pelo menos 1 de dano a um adversário (p. 16).
 >
 > 1. Resolva os efeitos da habilidade ofensiva que precisam de alvo e não são dano, como dar uma ficha ao adversário.
-> 2. Se o dano do Ataque é do tipo que admite defesa, o defensor pode ativar a habilidade defensiva dele.
+> 2. Se o dano do Ataque é do tipo que admite defesa, o defensor pode ativar a habilidade defensiva dele. Se não admite, pule para o passo 5.
 > 3. O defensor faz uma tentativa de rolagem com o número de dados indicado.
-> 4. O defensor resolve os efeitos que não são dano.
-> 5. Há uma última chance para qualquer jogador gastar fichas ou jogar cartas.
-> 6. Todo o dano, a prevenção e a cura se somam e são aplicados ao mesmo tempo, no fim da fase de rolagem. Gire os marcadores de Vida.
+> 4. O defensor resolve os efeitos que não são dano, como ganhar CP ou curar.
+> 5. Há uma última chance, na ordem dos turnos, para qualquer jogador gastar fichas ou jogar cartas.
+> 6. Todo o dano e toda a prevenção se somam e são aplicados ao mesmo tempo. Gire os marcadores de Vida.
+> 7. Por fim, resolva o que depende do dano já causado, as fichas que saem no fim da fase de rolagem e os efeitos que vêm depois de um "then" (então), como ganhar uma ficha depois de causar o dano.
 
 > [!mais] **Herói com duas defesas.** A maioria dos heróis tem uma habilidade defensiva. Quem tem duas escolhe uma antes de rolar os dados (p. 5 e 13).
 
@@ -194,7 +195,7 @@ O guia tem quatro etapas: montar a mesa e ler o tabuleiro do herói; rolar, atac
 
 > [!mais] **Empate na derrota.** Se todos os jogadores que restam chegam a 0 de Vida ao mesmo tempo, a partida empata (p. 4 e 13).
 
-> [!edicao] O manual diz que o resultado final precisa "atender" ao requisito, sem dizer se dados a mais atrapalham. Lemos como "pelo menos": 3 Balas e 2 Moscas atendem ao Bounty Hunter, que pede 2 Balas e 2 Moscas. Ele também não explica as linhas do Revolver (3, 4 ou 5 Balas). Lemos que vale a linha do número de Balas que você tem: com 4 Balas, 4 de dano. Confira o folheto do seu herói, que tem perguntas frequentes.
+> [!edicao] O manual diz que o resultado final precisa "atender" ao requisito, sem dizer se dados a mais atrapalham. Lemos como "pelo menos": 3 Balas e 2 Moscas atendem ao Bounty Hunter, que pede 2 Balas e 2 Moscas. Ele também não explica as linhas do Revolver (3, 4 ou 5 Balas). Lemos que vale a linha do número de Balas que você tem: com 4 Balas, 4 de dano. Confira o folheto do seu herói, que tem esclarecimentos de regras.
 
 > [!resolvido] **Exemplo resolvido.** A Pistoleira ataca. Primeira rolagem: 1, 2, 6, 6 e 5. Ela já tem o Bounty Hunter (Balas no 1 e no 2, Moscas nos dois 6), mas quer a sequência grande do Fan the Hammer, que dá 7 de dano. Guarda 1, 2 e 5 e rola de novo os dois 6.
 >
@@ -272,11 +273,11 @@ O guia tem quatro etapas: montar a mesa e ler o tabuleiro do herói; rolar, atac
 > - ( ) Bounty Hunter e Take Cover
 > = Revolver (3 Balas: 3, 3 e 1) e Bounty Hunter (2 Balas e 2 Moscas). Moscas são só duas, e não há Arrancada (p. 2).
 
-> [!resolvido] **Exemplo resolvido: Monge contra Paladino**, da caixa brasileira. Os dados do Monge (Monk) têm Punho (Fist) nas faces 1 e 2, Palma na 3, Yin-yang nas 4 e 5 e Lótus na 6. Os do Paladino (Paladin) têm Espada (Sword) nas faces 1 e 2, Elmo na 4, Coração na 5 e Prece (mãos juntas) na 6. Vêm ao caso duas habilidades do Monge: Fist of Harmony (Punho da harmonia), sequência pequena, 5 de dano e então ganha 2 fichas de Chi; e Fist of Tranquility (Punho da tranquilidade), sequência grande, 7 de dano e então ganha 2 Chi e 1 Evasiva. A defesa do Paladino é a Divine Defense (Defesa divina), com 3 dados: com Espada, causa 1 de dano no atacante; previne 1 de dano por Elmo e 2 por Coração; e ganha 1 CP por Prece.
+> [!resolvido] **Exemplo resolvido: Monge contra Paladino**, da caixa brasileira. Os dados do Monge (Monk) têm Punho (Fist) nas faces 1 e 2; nas outras, a foto oficial não mostra o nome impresso, e chamamos os símbolos pelo desenho: uma mão espalmada na 3, um yin-yang nas 4 e 5 e uma flor de lótus na 6. Os do Paladino (Paladin) têm Espada (Sword) nas faces 1 e 2 e, pelo desenho, um elmo na 4, um coração na 5 e mãos juntas em prece na 6; aqui, Elmo, Coração e Prece. Vêm ao caso duas habilidades do Monge: Fist of Harmony (Punho da harmonia), sequência pequena, 5 de dano e então ganha 2 fichas de Chi; e Fist of Tranquility (Punho da tranquilidade), sequência grande, 7 de dano e então ganha 2 Chi e 1 Evasiva. A defesa do Paladino é a Divine Defense (Defesa divina), com 3 dados: com Espada ("On", uma vez só, mesmo com duas), causa 1 de dano no atacante; previne 1 de dano por Elmo e 2 por Coração; e ganha 1 CP por Prece.
 >
-> O Monge rola 1, 1, 4, 5 e 6. Tem 4, 5 e 6 seguidos; falta um 3 para a sequência pequena 3, 4, 5, 6. Rola de novo um dos 1 e sai 3: agora 1, 3, 4, 5 e 6. Para a sequência grande faltaria um 2 no lugar do 1. Ele ainda tem uma rolagem, mas para: anuncia o Fist of Harmony, o Paladino não mexe nos dados, e o Monge ganha também as 2 fichas de Chi.
+> O Monge rola 1, 1, 4, 5 e 6. Tem 4, 5 e 6 seguidos; falta um 3 para a sequência pequena 3, 4, 5, 6. Rola de novo um dos 1 e sai 3: agora 1, 3, 4, 5 e 6. Para a sequência grande faltaria um 2 no lugar do 1. Ele ainda tem uma rolagem, mas para: anuncia o Fist of Harmony e o Paladino não mexe nos dados.
 >
-> O Paladino rola a defesa: 1, 4 e 5. A Espada causa 1 de dano no Monge; o Elmo previne 1 e o Coração previne 2, 3 ao todo. Tudo é aplicado junto, no fim da fase de rolagem (p. 13): o Paladino recebe 5 menos 3, 2, e vai de 50 para 48; o Monge recebe 1 e vai para 49.
+> O Paladino rola a defesa: 1, 4 e 5. A Espada causa 1 de dano no Monge; o Elmo previne 1 e o Coração previne 2, 3 ao todo. Dano e prevenção são aplicados juntos (p. 13): o Paladino recebe 5 menos 3, 2, e vai de 50 para 48; o Monge recebe 1 e vai para 49. Só então, pelo "then" do texto, o Monge ganha as 2 fichas de Chi (p. 9 e 13).
 
 > [!treino] **Treino: Monge contra Paladino.**
 >
@@ -369,7 +370,7 @@ O guia tem quatro etapas: montar a mesa e ler o tabuleiro do herói; rolar, atac
 > - (x) Pode
 > - ( ) Não pode; Ação de Fase de Rolagem só no turno do adversário
 > - ( ) Não pode depois de ativar; só antes de anunciar a habilidade
-> = Pode: Ações de Fase de Rolagem valem no turno de qualquer jogador, depois de qualquer passo da rolagem ofensiva (p. 9 e 12).
+> = Pode: Ações de Fase de Rolagem valem nas fases de rolagem do turno de qualquer jogador (p. 9), e um Modificador de Ataque pode ser jogado antes ou depois de o defensor ativar a defesa (p. 11).
 >
 > ?? c) Jogar o Getting Paid! (Ação Instantânea) na fase Principal do adversário.
 > - ( ) Não pode; fora do seu turno, só cartas de borda laranja
@@ -399,17 +400,17 @@ O guia tem quatro etapas: montar a mesa e ler o tabuleiro do herói; rolar, atac
 
 | Ficha | Tipo | Limite de pilha | O que faz |
 |---|---|---|---|
-| Evasive (Evasiva) | positiva | 3 | quando você vai receber dano, pode gastá-la e rolar 1 dado: com 1 ou 2, não recebe o dano (outros efeitos ainda valem). Pode gastar várias contra o mesmo dano |
-| Reload (Recarga) | positiva | 2 | se você termina a rolagem ofensiva com um Ataque, pode gastá-la: role 1 dado e some metade do valor, arredondada para cima, ao dano. É Modificador de Ataque |
+| Evasive (Evasiva) | positiva | 3 | quando você tem dano a receber, de qualquer origem, pode gastá-la e rolar 1 dado: com 1 ou 2, não recebe o dano (outros efeitos ainda valem). Pode gastar várias contra o mesmo dano |
+| Reload (Recarga) | positiva | 2 | depois de atacar, você pode gastá-la: role 1 dado e some metade do valor, arredondada para cima, ao dano. É Modificador de Ataque |
 | Knockdown (Derrubada) | negativa | 1 | quem a tem paga 2 CP antes do começo da própria rolagem ofensiva para tirá-la; se não pagar, pula a rolagem ofensiva e então tira a ficha |
-| Bounty (Recompensa) | negativa | 1 | quando quem a tem sofre um Ataque de um adversário, o atacante soma 1 ao dano e ganha 1 CP. Persistente |
+| Bounty (Recompensa) | negativa | 1 | quando quem a tem sofre um Ataque de um adversário, o atacante soma 1 ao dano e ganha 1 CP. Modificador de Ataque. Persistente |
 
 > [!passos] **Passo a passo: efeitos de status** (p. 6 e 7)
 >
 > 1. **Dar ou ganhar:** pegue a ficha no folheto do herói e ponha no meio do tabuleiro de quem recebe. Agora ela está em jogo.
 > 2. **Gastar:** salvo indicação contrária, uma ficha gastável pode ser gasta a qualquer momento, em qualquer fase, no turno de qualquer jogador, e o efeito é imediato. Gastar devolve a ficha ao folheto.
 > 3. **Limite de pilha:** é o máximo de fichas daquele efeito sobre um mesmo herói ao mesmo tempo.
-> 4. **Persistente:** fica em jogo até o fim da partida, ou até uma carta ou habilidade tirá-la.
+> 4. **Persistente:** fica em jogo até uma carta, um efeito de status ou uma habilidade tirá-la.
 > 5. **Tirar:** a ficha volta ao lugar dela no folheto. Se o efeito manda tirar um número de fichas, tire esse número.
 
 > [!mais] **Fichas a mais.** Se precisar de mais fichas que as da caixa, use qualquer outra coisa para representá-las (p. 6).
@@ -443,7 +444,7 @@ O guia tem quatro etapas: montar a mesa e ler o tabuleiro do herói; rolar, atac
 > 3. O dano que ela soma é do mesmo tipo do dano original.
 > 4. Só vale em Ataques: habilidade ofensiva contra um adversário, com pelo menos 1 de dano.
 
-> [!edicao] A versão 2.4.1 do manual, a atual, acrescenta à p. 11 que Modificadores de Ataque só podem ser jogados num Ataque que você está ativando no seu turno, salvo indicação contrária. A versão 2.3.2 não tem essa frase. Seguimos a versão mais nova, porque o próprio manual se diz um documento vivo (p. 1).
+> [!edicao] As versões 2.4.1 e 2.4.3 do manual dizem na p. 11 que Modificadores de Ataque só podem ser jogados num Ataque que você está ativando no seu turno, salvo indicação contrária. A versão 2.3.2 não tem essa frase. Seguimos a versão mais nova, porque o próprio manual se diz um documento vivo (p. 1).
 
 > [!passos] **Passo a passo: a habilidade suprema** (p. 5 e 10)
 >
@@ -510,15 +511,15 @@ O guia tem quatro etapas: montar a mesa e ler o tabuleiro do herói; rolar, atac
 > - ( ) Não; ficha só se gasta no próprio turno
 > = Sim: dano normal pode ser evitado, e fichas gastáveis se gastam no turno de qualquer jogador (p. 7 e 10).
 >
-> ?? d) Mudar um dado da Pistoleira, com uma carta, quando ela tem 5 Moscas e ainda não anunciou a habilidade suprema?
+> ?? d) Mudar um dado da Pistoleira, com uma carta, quando ela anuncia a suprema com 5 Moscas, antes de a habilidade ser ativada?
 > - ( ) Não; a suprema não pode ser impedida de jeito nenhum
 > - (x) Sim
 > - ( ) Só gastando uma ficha, não com carta
-> = Sim: é o único jeito de impedir a suprema, e tem de ser antes da ativação (p. 5 e 10).
+> = Sim: depois do anúncio, ela pergunta se o adversário quer alterar os dados (p. 12), e alterar um dado antes da ativação é o único jeito de impedir a suprema (p. 5 e 10). Enquanto ela ainda rola, o adversário espera o anúncio (p. 15).
 
-> [!resolvido] **Exemplo resolvido: Feiticeira da Lua contra Bárbaro**, da caixa brasileira. Os dados da Feiticeira da Lua (Moon Elf) têm Flecha (Arrow) nas faces 1 e 2, Pé nas 4 e 5 e Lua na 6. Os do Bárbaro (Barbarian) têm Espada (Sword) nas faces 1 e 2, Coração nas 4 e 5 e Estrela na 6.
+> [!resolvido] **Exemplo resolvido: Feiticeira da Lua contra Bárbaro**, da caixa brasileira. Os dados da Feiticeira da Lua (Moon Elf) têm Flecha (Arrow) nas faces 1 e 2 e, pelo desenho, um pé nas 4 e 5 e uma lua na 6; aqui, Pé e Lua. Os do Bárbaro (Barbarian) têm Espada (Sword) nas faces 1 e 2 e, pelo desenho, um coração nas 4 e 5 e uma estrela na 6; aqui, Coração e Estrela. A foto oficial não mostra o nome impresso desses símbolos.
 >
-> A Feiticeira termina a rolagem com 1, 2, 4, 4 e 5: 2 Flechas e 3 Pés, o requisito do Covered Shot (Tiro protegido), que dá 1 Evasiva a ela e causa 7 de dano normal. O Bárbaro defende com o Thick Skin (Pele grossa): rola 3 dados e cura 2 por Coração. Tira 4, 6 e 1: um Coração, cura 2. Ele vai de 50 para 50 menos 7 mais 2, 45.
+> A Feiticeira termina a rolagem com 1, 2, 4, 4 e 5: 2 Flechas e 3 Pés, o requisito do Covered Shot (Tiro protegido), que dá 1 Evasiva a ela e causa 7 de dano normal. O Bárbaro defende com o Thick Skin (Pele grossa): rola 3 dados e cura 2 por Coração. Tira 4, 6 e 1: um Coração. A cura entra logo, com os efeitos da defesa que não são dano, e os 7 de dano no fim (p. 13): ele vai de 50 para 52 e depois para 45.
 >
 > No turno do Bárbaro, ele termina com 1, 2, 6, 6 e 4: 2 Espadas e 2 Estrelas, o Sturdy Blow (Golpe firme), 4 de dano **indefensável**. A defesa da Feiticeira, o Missed Me (Errou), não pode ser ativada. Mas ela pode gastar a Evasiva que ganhou: rola 1 dado e, com 1 ou 2, não recebe os 4 de dano.
 
@@ -529,7 +530,7 @@ O guia tem quatro etapas: montar a mesa e ler o tabuleiro do herói; rolar, atac
 > - ( ) Ela recebe 4 e ele 2
 > - (x) Ela recebe 3 e ele 1
 > - ( ) Ela recebe 0 e ele 0
-> = Os 2 Pés previnem metade de 6, 3: ela recebe 3. Um par de Flechas causa 1 de dano no Bárbaro. O Smack dá 4, 6 ou 8 de dano com 3, 4 ou 5 Espadas.
+> = Os 2 Pés previnem metade de 6, 3: ela recebe 3. Um par de Flechas causa 1 de dano no Bárbaro ("For every", para cada: o efeito vale uma vez por par; p. 9). O Smack dá 4, 6 ou 8 de dano com 3, 4 ou 5 Espadas.
 >
 > ?? Mesmo Smack, mas a Feiticeira tira 4, 5, 4, 5 e 1: 4 Pés e 1 Flecha. Quanto ela recebe?
 > - ( ) 0, porque 4 Pés previnem metade duas vezes
@@ -565,13 +566,13 @@ O guia tem quatro etapas: montar a mesa e ler o tabuleiro do herói; rolar, atac
 
 > [!mais] **Prioridade com mais de 2 jogadores.** Primeiro o jogador da vez, depois os outros na ordem dos turnos. Terminadas as interrupções, o jogo segue na ordem normal (p. 15).
 
-**Manutenção com vários efeitos.** Se várias coisas acontecem na Manutenção, o jogador da vez escolhe a ordem. Todo dano e cura dessa fase se somam e são aplicados juntos, no fim dela (p. 12).
+**Manutenção com vários efeitos.** Se várias coisas acontecem na Manutenção, o jogador da vez escolhe a ordem. Todo o dano dessa fase se soma e é aplicado junto, no fim dela (p. 12).
 
 **A conta do dano com muitas cartas** (p. 14, que o manual diz ser para jogadores avançados e torneios). Parta do dano a receber. Some e subtraia o que acrescenta ou previne uma quantidade fixa: é o subtotal. Por último, aplique multiplicações e divisões, cada uma sobre o subtotal, não uma sobre a outra. Toda divisão arredonda para cima.
 
 > [!resolvido] **O exemplo do manual (p. 14).** O Bárbaro ataca o Paladino com 18 de dano. Durante a rolagem, entram uma prevenção de 3, um acréscimo de 5 e outra prevenção de 3: subtotal 18 − 3 + 5 − 3 = 17. O Paladino também gastou duas fichas que previnem metade do dano e uma que devolve metade ao atacante. Cada metade é 17 ÷ 2 = 8,5, arredondada para 9. O Paladino recebe 17 − 9 − 9, que dá menos de zero: recebe 0. O Bárbaro recebe 9 de volta.
 
-**Três jogadores: o Rei da Colina** (King of the Hill, p. 11 e 13). Vida inicial 35; o resto da preparação é igual ao duelo; role para ver quem começa; sentido horário. Num Ataque, você escolhe qualquer adversário, sem rolagem de alvo. Quem tem mais Vida é líder (empatados são todos líderes). Atacar um líder dá 1 carta, comprada logo depois de escolher o alvo, antes de qualquer outro efeito, mesmo se você estiver empatado com ele; o único líder nunca ganha essa carta.
+**Três jogadores: o Rei da Colina** (King of the Hill, p. 11 e 13). Vida inicial 35; o resto da preparação é igual ao duelo; role para ver quem começa; sentido horário. Num Ataque, você escolhe qualquer adversário, sem rolagem de alvo. Quem tem mais Vida é líder (empatados são todos líderes). Atacar um líder dá 1 carta, comprada logo depois de escolher o alvo, antes de qualquer outro efeito, mesmo se você estiver empatado com ele; o único líder nunca ganha essa carta. O jogador inicial pula a primeira Renda, e essas regras continuam valendo quando sobram só 2 jogadores.
 
 **Quatro jogadores: duplas** (p. 11 e 13). Parceiros sentam lado a lado e podem ver a mão um do outro. Role para ver quem começa; a vez alterna entre as duplas em zigue-zague (desenho da p. 11): um jogador da dupla A, um da dupla B, o outro da dupla A, o outro da dupla B. O resto da preparação é igual ao duelo. Cada dupla divide um marcador de Vida, em 50; o jogador inicial pula a primeira Renda. Cada um tem o próprio CP, só para as próprias cartas e habilidades. Ninguém reduz o dano do parceiro, salvo carta ou ficha que permita ("um jogador escolhido" permite), mas dá para alterar dados para poupá-lo ou ajudá-lo.
 
@@ -647,15 +648,15 @@ Responda sem consultar. Depois confira e veja o que reler.
 
 ## 8. Para consultar durante a partida
 
-**Preparação (duelo):** Vida 50, CP 2, 4 cartas, fichas no folheto, verso do folheto. Maior dado começa. 3 jogadores: Vida 35. 4: duplas, Vida 50 por dupla.
+**Preparação (duelo):** Vida 50, CP 2, 4 cartas, fichas no folheto, preparação própria do folheto (Hero Setup). Maior dado começa. 3 jogadores: Vida 35. 4: duplas, Vida 50 por dupla.
 
 **Turno**
-1. Manutenção: efeitos de fichas e passivas. Dano e cura aplicados juntos no fim.
+1. Manutenção: efeitos de fichas e passivas. Dano aplicado todo junto no fim.
 2. Renda: +1 CP e compre 1 (o jogador inicial pula no primeiro turno).
 3. Principal (1): venda (1 CP cada), Ações de Fase Principal, Melhorias.
 4. Rolagem ofensiva: até 3 tentativas; anuncie uma habilidade ou nenhuma; o adversário pode mexer nos dados.
 5. Rolagem de alvo: só com mais de 2 jogadores.
-6. Rolagem defensiva: se houve Ataque com dano que admite defesa, o defensor rola uma vez. Dano, prevenção e cura aplicados juntos no fim.
+6. Rolagem defensiva: se houve Ataque com dano que admite defesa, o defensor rola uma vez. Cura e ganho de CP na hora; dano e prevenção aplicados juntos no fim; depois, o que vem após um "then".
 7. Principal (2): igual à 3.
 8. Descarte: venda até ter 6 cartas.
 
@@ -678,7 +679,8 @@ Responda sem consultar. Depois confira e veja o que reler.
 ## 9. Fontes
 
 - Dice Throne Inc. *Dice Throne: Rules of Play*, versão 2.3.2 (arquivo de 04/07/2022, 16 páginas). https://cdn.shopify.com/s/files/1/0045/4013/7562/files/Dice_Throne_Rulebook_-_v2.3.2_-_2022.07.04.pdf. Consultado em 31/10/2026.
-- Dice Throne Inc. e Roxley. *Dice Throne: Rules of Play*, versão 2.4.1 (arquivo "Dice Throne Rulebook - v2.4.1 - 2023.05.10", 16 páginas em 9 folhas duplas, copyright 2023), a versão para a qual rules.dicethrone.com aponta em 31/10/2026. Mesma paginação da 2.3.2; usada para conferir mudanças e para os dados da capa (2 a 6 jogadores, 30 minutos, 8 anos ou mais). Consultado em 31/10/2026.
+- Dice Throne Inc. *Dice Throne: Rules of Play*, versão 2.4.3 (2025; arquivo de 14/11/2025, copyright 2024, 16 páginas em 9 folhas duplas), listada como "Dice Throne Rulebook Version 2.4.3 (2025)" na página FAQ/Downloads da loja oficial: https://shop.dicethrone.com/pages/faq (Google Drive público, https://drive.google.com/file/d/1srf7KTQMhkGoYf27wZ4kQyCM2AwIrBiG/view). Versão de referência deste guia; páginas citadas e dados da capa (2 a 6 jogadores, 30 minutos, 14 anos ou mais). Consultado em 01/11/2026.
+- Dice Throne Inc. e Roxley. *Dice Throne: Rules of Play*, versão 2.4.1 (arquivo "Dice Throne Rulebook - v2.4.1 - 2023.05.10", 16 páginas em 9 folhas duplas, copyright 2023), a versão para a qual rules.dicethrone.com aponta em 31/10/2026. Mesma paginação da 2.3.2 e da 2.4.3; usada para conferir mudanças. Consultado em 31/10/2026.
 - Dice Throne Inc. Imagens oficiais dos componentes do Season One Battle Chest (tabuleiros, folhetos e dados do Monge, do Paladino, da Feiticeira da Lua e do Bárbaro), na página do produto da loja oficial: https://shop.dicethrone.com/products/dice-throne-br-season-one-battle-chest-1 (linkada nas páginas dos heróis em dicethrone.com/heroes). Fonte das habilidades e dos dados desses quatro heróis. Consultado em 01/11/2026.
 - Dice Throne Rulepop, "an official rules reference for Dice Throne", linkado na página FAQ/Downloads da loja oficial: https://dice-throne.rulepop.com/ (fichas e esclarecimentos de regra de cada herói). Consultado em 01/11/2026.
-- Não foram encontrados FAQ nem errata separados; as perguntas frequentes ficam no folheto de cada herói. Não foi encontrado manual em português público até 01/11/2026; no Brasil saíram as caixas Monge vs Paladino e Feiticeira da Lua vs Bárbaro (informação do editor).
+- Não foram encontrados FAQ nem errata separados; os esclarecimentos de regras ficam no folheto de cada herói. Não foi encontrado manual em português público até 01/11/2026; no Brasil saíram as caixas Monge vs Paladino e Feiticeira da Lua vs Bárbaro (informação do editor).

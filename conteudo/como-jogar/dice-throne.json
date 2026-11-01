@@ -5,7 +5,7 @@
  "genero": "Duelo de dados · Cartas",
  "jogadores": "2 a 6 jogadores",
  "duracao": "30 min",
- "idade": "8+",
+ "idade": "14+",
  "edicao": "Manual oficial em inglês",
  "data": "2026-10-31",
  "descricao": "Regras de Dice Throne conferidas no manual oficial: preparação, as três rolagens, defesa, cartas e CP, fichas, tipos de dano e partidas de 3 e 4.",
@@ -19,5 +19,5 @@
  "etapas": 4,
  "resenha": null,
  "chamada": "Monte o duelo, role os dados do seu herói até três vezes e escolha a habilidade que vai disparar. Começa com um resumo para jogar em 4 minutos e segue em quatro etapas, do tabuleiro do herói aos tipos de dano.",
- "publicar": false
+ "publicar": true
 }
