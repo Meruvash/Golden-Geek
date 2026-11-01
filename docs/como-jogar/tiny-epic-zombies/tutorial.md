@@ -78,8 +78,6 @@ Os humanos vencem ao completar os 3 Objetivos. O Zumbi vence se, sem Marcador de
 
 !video[Tiny Epic Zombies - Como Jogar, canal Romir Play House](https://www.youtube.com/watch?v=ryZFAnc7lhc&t=0s)
 
-> [!atencao] **Os três erros mais caros.** Nada antes do primeiro movimento. Em Sala com Zumbi se luta corpo a corpo, não se atira. Habilidade de Sala e coleta exigem a Loja inteira sem Zumbis.
-
 ## 0. Antes de tudo: o que é este jogo
 
 Tiny Epic Zombies é um jogo de sobrevivência num shopping tomado por mortos-vivos, com cinco modos: Cooperativo vs. Zumbi (3 a 5 jogadores, um deles o Jogador Zumbi), Cooperativo contra uma Inteligência Artificial (2 a 4), dois competitivos e o Solo (p. 3). O manual ensina primeiro o Cooperativo vs. Zumbi, e os outros mudam poucas regras (p. 16 a 18); este guia segue a mesma ordem.
@@ -88,19 +86,19 @@ Os humanos correm contra dois relógios: o Monte de Procura, que perde uma carta
 
 ## 1. Como este guia ensina
 
-São quatro etapas: montar a mesa e ler dano e munição; mover e matar Zumbis; usar as Lojas vazias; o turno do Zumbi e o fim da partida. Cada etapa traz a explicação, o passo a passo, as regras de caso especial em blocos que se abrem com um toque, e exercícios: toque numa opção para ver a resposta certa e a explicação. No final, uma avaliação curta indica o que reler, e uma folha de consulta vai para a mesa.
+São quatro etapas: mesa, dano e munição; mover e matar Zumbis; usar as Lojas vazias; turno do Zumbi e fim da partida. Cada uma traz explicação, passo a passo, casos especiais em blocos que se abrem com um toque e exercícios (toque numa opção para ver a certa). No final, uma avaliação indica o que reler, e uma folha de consulta vai para a mesa.
 
 ## 2. Etapa 1: montar a mesa e ler dano e munição
 
 > [!entender] **Para entender.** As 8 Lojas se dividem pela posição: **Lojas de Corredor**, que encostam no Pátio por um lado, e **Lojas de Esquina**, nas diagonais (p. 13). Cada Loja tem 3 Salas numeradas; a Sala 1 é a da entrada, com o Símbolo de Entrada virado para fora, e é por ali que os Zumbis chegam.
 >
-> As Cartas de Procura dão o ritmo. Trazem os Itens (Armas, Mochila, Pegar) e os Eventos, e cada uma mostra um símbolo que decide onde os novos Zumbis aparecem (p. 6 e 12). O Jogador Zumbi escolhe qual carta cada humano vai revelar.
+> As Cartas de Procura dão o ritmo: trazem Itens (Arma, Mochila, Pegar) e Eventos, e o símbolo de cada uma decide onde entram os novos Zumbis (p. 6 e 12).
 
 > [!passos] **Preparação** (p. 4 a 6)
 >
 > 1. Pátio no centro, lado "Pátio Cooperativo" para cima. As outras 8 Lojas ao redor, em posição e lado aleatórios, com os Símbolos de Entrada para fora do shopping (algumas ficam de cabeça para baixo). 1 Zumbi em cada Símbolo de Entrada: 8 Zumbis.
 > 2. Barricada no espaço 2 do Contador de Barricada; 2 Marcadores de Sobrevivente na área de Estoque do Pátio.
-> 3. O Jogador Zumbi embaralha as Cartas de Jogador embaixo da mesa, compra 3 e fica com 1, lado Zumbi para cima; as outras voltam ao baralho. Põe 1 Indicador de Horda (cubo verde) no espaço 1 do Contador de Horda e deixa os outros 2 ao alcance. Os Zumbis restantes formam o estoque, ao lado dele.
+> 3. O Jogador Zumbi embaralha as Cartas de Jogador embaixo da mesa, compra 3 e fica com 1, lado Zumbi para cima; as outras voltam ao baralho. 1 Indicador de Horda (cubo verde) no espaço 1 do Contador de Horda, os outros 2 ao alcance. Os Zumbis restantes são o estoque, ao lado dele.
 > 4. Cada humano recebe 3 Cartas de Jogador ao acaso e fica com 1, lado Humano. Põe o ITEMeeple na sala central do Pátio (p. 4), o Marcador de Dano da cor dele no 0 da trilha e um Marcador de Munição no 9. O que sobrou volta à caixa.
 > 5. 3 Cartas de Objetivo sorteadas embaixo da mesa, lado "Objetivo Cooperativo" para cima. Siga a preparação de cada uma; se pedir um Indicador de Objetivo (cubo colorido), use qualquer cor de jogador.
 > 6. Monte o Monte de Procura e o Monte de Suprimento (abaixo). Suprimento perto das Cartas de Objetivo; Procura perto do Jogador Zumbi, que compra 8 cartas, escolhe e põe 1 fechada na frente de cada humano (que ainda não olha) e fica com o resto na mão.
@@ -160,9 +158,7 @@ São quatro etapas: montar a mesa e ler dano e munição; mover e matar Zumbis; 
 
 ## 3. Etapa 2: mover e matar Zumbis
 
-> [!entender] **Para entender.** Cada um dos três movimentos é uma pequena chance de agir. A Regra de Ouro diz que nada acontece antes de um movimento: os Zumbis são lentos, mas não deixam ninguém esperar parado (p. 8).
->
-> As duas formas de matar cobram preços diferentes. O Ataque Corpo a Corpo é de graça e sempre mata, mas o Dado de Luta pode dar dano. O Ataque a Distância nunca dá dano, mas gasta munição, que anda na mesma trilha (p. 7 e 9).
+> [!entender] **Para entender.** Cada um dos três movimentos é uma chance de agir, e a Regra de Ouro diz que nada acontece antes de um movimento (p. 8). As duas formas de matar cobram preços diferentes: o Ataque Corpo a Corpo é de graça e sempre mata, mas o Dado de Luta pode dar dano; o Ataque a Distância não usa o dado, mas gasta munição, que anda na mesma trilha (p. 7 e 9).
 
 > [!passos] **Turno Humano** (p. 8)
 >
@@ -229,9 +225,7 @@ São quatro etapas: montar a mesa e ler dano e munição; mover e matar Zumbis; 
 
 ## 4. Etapa 3: Lojas vazias, Itens e Objetivos
 
-> [!entender] **Para entender.** Matar Zumbis é o que abre as Lojas. Enquanto houver um Zumbi em qualquer das 3 Salas de uma Loja, nada nela pode ser usado: nem a habilidade da Sala, nem os Marcadores de Objetivo, nem as cartas abertas ao lado dela (p. 10 e 11).
->
-> As Cartas de Procura reveladas ficam abertas ao lado das Lojas. É assim que os Itens chegam aos humanos: quem revela não pega a carta no mesmo turno, e quem passar depois por aquela Loja vazia pode levá-la (p. 11).
+> [!entender] **Para entender.** Matar Zumbis é o que abre as Lojas: com um Zumbi em qualquer das 3 Salas, nada na Loja se usa, nem habilidade de Sala, nem Marcadores, nem as cartas abertas ao lado dela (p. 10 e 11). É assim que os Itens chegam aos humanos: a Carta de Procura revelada fica aberta ao lado da Loja, e quem passar depois por ela vazia pode levá-la (p. 11).
 
 > [!passos] **Usar a Sala** (p. 10)
 >
@@ -264,9 +258,9 @@ São quatro etapas: montar a mesa e ler dano e munição; mover e matar Zumbis; 
 
 > [!mais] **Largar e trocar Itens.** A qualquer momento do seu turno você pode largar uma carta: ela fica aberta ao lado da Loja onde está (no Pátio, de qualquer Loja vizinha, salvo Objetivo que diga outra coisa). É o único jeito de passar Itens: um larga, outro coleta (p. 11).
 
-> [!mais] **Salas do exemplo do manual.** O Pátio cura 2 danos (Habilidade Contínua). Na Praça de Alimentação, Restos: role o Dado de Luta; Acerto Crítico ou sem efeito curam 1 dano, e os resultados de dano são recebidos. Cada Sala imprime a sua habilidade: leia a placa ao entrar (p. 5, 9 e 13).
+> [!mais] **Salas do exemplo do manual.** Cada Sala imprime a sua habilidade: leia a placa ao entrar. O Pátio cura 2 danos (Habilidade Contínua). Na Praça de Alimentação, Restos: role o Dado de Luta; Acerto Crítico ou sem efeito curam 1 dano, e os resultados de dano são recebidos (p. 5, 9 e 13).
 
-> [!mais] **Objetivo de exemplo: Consertar o Helicóptero.** São 4 Peças levadas ao Pátio, uma de cada vez. A Peça começa na Sala com o ícone 1; com a Loja vazia, você a pega. Ao entrar no Pátio com ela, o Marcador de Objetivo avança 1 espaço e a Peça vai ao próximo espaço da trilha da carta. Quem carrega pode deixá-la numa Sala ou entregá-la a outro jogador na mesma Sala, pedindo permissão; se morrer, ela fica no chão da Sala (p. 5).
+> [!mais] **Objetivo de exemplo: Consertar o Helicóptero.** 4 Peças levadas ao Pátio, uma por vez. A Peça começa na Sala com o ícone 1 e se pega com a Loja vazia. Ao entrar no Pátio com ela, o Marcador de Objetivo avança 1 e a Peça vai ao próximo espaço da trilha da carta. Ela pode ser deixada numa Sala ou entregue a quem está na mesma Sala, com permissão; quem morre a deixa no chão da Sala (p. 5).
 
 > [!edicao] **Faca e Pistola.** O texto do manual não diz com que armas o humano começa, mas a Carta de Jogador ilustrada traz, embaixo, "Ataque Corpo a Corpo: Faca" e "Ataque a Distância: Pistola" (p. 5 e 11). A leitura adotada aqui: todo humano começa com essas duas, e uma Arma coletada ocupa o espaço correspondente.
 
@@ -310,9 +304,7 @@ São quatro etapas: montar a mesa e ler dano e munição; mover e matar Zumbis; 
 
 ## 5. Etapa 4: o turno do Zumbi e o fim da partida
 
-> [!entender] **Para entender.** O Jogador Zumbi não move peças: decide onde a pressão cai. Escolhe que Carta de Procura cada humano vai revelar, e a carta diz em que Lojas entram os Zumbis. Se o humano terminou o turno numa Loja com o mesmo símbolo, fez Barulho, e o Jogador Zumbi ganha uma ação da Carta de Zumbi (p. 12).
->
-> Os Zumbis enchem as Lojas da Sala 1 para a 3. Quando uma Loja enche, o excesso transborda: das Lojas de Esquina para a vizinha, das Lojas de Corredor direto para a Barricada (p. 13).
+> [!entender] **Para entender.** O Jogador Zumbi não move peças: escolhe que Carta de Procura cada humano vai revelar, e o símbolo dela diz em que Lojas entram os Zumbis; se o humano está numa Loja com esse símbolo, fez Barulho, e o Jogador Zumbi ganha uma ação (p. 12). Os Zumbis enchem as Lojas da Sala 1 para a 3; Loja cheia transborda, da Esquina para a seguinte e do Corredor para a Barricada (p. 13).
 
 > [!passos] **Turno do Zumbi**, depois de cada turno humano (p. 12 a 14)
 >
@@ -337,7 +329,7 @@ São quatro etapas: montar a mesa e ler dano e munição; mover e matar Zumbis; 
 >
 > 1. Humanos vencem na hora em que completam os 3 Objetivos.
 > 2. O Jogador Zumbi vence se, sem Marcador de Sobrevivente no Pátio, um humano for Comido Vivo ou a Barricada chegar a 0.
-> 3. Também vence quando todas as Cartas de Procura foram reveladas e cada humano jogou um último turno. Com o Monte de Procura vazio, o jogo segue até a última carta ser revelada; então cada humano tem mais 1 turno.
+> 3. Também vence quando todas as Cartas de Procura foram reveladas e cada humano jogou um último turno: com o Monte de Procura vazio, o jogo segue até a última carta revelada, e então cada humano joga mais 1 turno.
 
 > [!mais] **Habilidades dos Zumbis.** O topo de cada Carta de Zumbi traz uma habilidade sempre ativa. A do Adolescente Zumbi: quem estiver Cercado numa Sala com Símbolo de Entrada recebe 1 dano adicional. Abaixo dela ficam as ações que o Indicador de Horda marca (p. 5, 12 e 14).
 
@@ -383,11 +375,11 @@ São quatro etapas: montar a mesa e ler dano e munição; mover e matar Zumbis; 
 
 ## 6. Situações especiais
 
-> [!mais] **Competitivo vs. Zumbi (3 a 5 jogadores).** Cada humano corre para completar sozinho os 3 Objetivos. Use o lado "Objetivo Competitivo" das cartas e o "Pátio Competitivo"; 1 Marcador de Sobrevivente no símbolo colorido de cada jogador (2 empilhados se houver só 2 humanos); cada um marca o progresso com o Marcador de Objetivo da sua cor. Comido Vivo: o humano entrega ao Jogador Zumbi a Carta de Jogador e 1 Marcador de Sobrevivente seu. Barricada em 0: o Marcador sai do jogador com menos dano que ainda tenha um; empate, do que tem mais munição; depois, do que joga primeiro (p. 17).
+> [!mais] **Competitivo vs. Zumbi (3 a 5 jogadores).** Cada humano corre para completar sozinho os 3 Objetivos. Lado "Objetivo Competitivo" das cartas e "Pátio Competitivo"; 1 Marcador de Sobrevivente no símbolo colorido de cada jogador (2 empilhados se houver só 2 humanos); cada um marca o progresso com o Marcador de Objetivo da sua cor. Comido Vivo: entregue ao Jogador Zumbi a Carta de Jogador e 1 Marcador de Sobrevivente seu. Barricada em 0: o Marcador sai do jogador com menos dano que ainda tenha um; empate, do que tem mais munição; depois, do que joga primeiro (p. 17).
 
-> [!mais] **Fim do Competitivo.** Vence na hora quem completar os 3 Objetivos. O Zumbi vence se um humano morrer sem Marcador para entregar, se pegar 1 Marcador de cada humano (2 de cada, com 2 humanos) ou se o Monte de Procura for todo revelado e cada humano tiver jogado o último turno (p. 17).
+> [!mais] **Fim do Competitivo.** Vence na hora quem completar os 3 Objetivos. O Zumbi vence se um humano morrer sem Marcador para entregar, se pegar 1 Marcador de cada humano (2 de cada, com 2 humanos) ou com o Monte de Procura revelado e o último turno jogado (p. 17).
 
-> [!mais] **Competitivo sem Jogador Zumbi (2 a 4) e Solo.** No Competitivo sem Jogador Zumbi, os humanos seguem o Competitivo vs. Zumbi e os Zumbis seguem a IA do Cooperativo, com a mesma regra da Barricada em 0. No Solo, prepare como no Cooperativo com IA e controle 2 Cartas de Jogador, cada uma com um ITEMeeple, em turnos alternados (p. 18).
+> [!mais] **Competitivo sem Jogador Zumbi (2 a 4) e Solo.** Humanos como no Competitivo vs. Zumbi; Zumbis como na IA do Cooperativo, com a mesma regra da Barricada em 0. No Solo, prepare como no Cooperativo com IA e controle 2 Cartas de Jogador, cada uma com um ITEMeeple, em turnos alternados (p. 18).
 
 > [!mais] **Veículo e Armadilhas.** A Moto dá mais 3 Movimentos e encerra o turno; ela volta à sua Sala, e o ITEMeeple fica onde parou. Montar Armadilha põe um Marcador de Armadilha, lado colorido para cima, numa Sala da mesma Loja ou de uma vizinha; Zumbi que entra ali morre na hora. Usado, o Marcador volta à Sala, lado cinza para cima; nunca mais de 2 armados (p. 5).
 

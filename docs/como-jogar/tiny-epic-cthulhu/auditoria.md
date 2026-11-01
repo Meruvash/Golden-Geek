@@ -73,3 +73,33 @@ Partida de 2 jogadores montada e jogada só com o tutorial (preparação, 1ª ro
 | 4 | "Passe a bolsa para a esquerda": direção não citada com página | p. 17: ao próximo jogador em sentido horário | Passo 5 do primeiro turno e passo 6 da folha de consulta |
 
 Sem lacuna na simulação: ordem do 1º Passo, contagem de tentáculos pela Trilha de Força, destino de cada tipo de tentáculo, maldições, ações e seus valores, Ação da Cidade 1 vez por turno (p. 15), fim da partida. Seguem em aberto as lacunas [L] já listadas acima (o manual não as resolve); acrescento uma: o manual não diz se, num mesmo Mover-se, o jogador pode mudar de direção.
+
+## Auditoria independente: regras
+
+Manual conferido: PDF da edição brasileira v1.0 (pdftotext -layout; p. 5, 8 e 9 renderizadas para as figuras: Trilha de Energia com 2 espaços, Trilhas de Loucura com 3, faces dos dados cabeça = 0, um tentáculo = 1, dois = 2, Trilha de Força 3 3 3 4 4 4 5 5 e, no verso, 4 4 4 4 5 5 6 6; Portais 3 e 4 por cor).
+
+**As três contradições do manual (confirmadas):**
+- Tentáculos por giro: p. 10 diz "compre dois tentáculos"; p. 11 manda o número à direita do Meeple de Força, com exemplo (último 3 → compre 4). ok: o [!edicao] segue a p. 11; o espaço inicial dá 3.
+- Ancestrais da Trilha de Energia Amaldiçoada: p. 8 manda "para o Tabuleiro de Descarte"; p. 10 (Realocação: Ancestrais para a bolsa) e p. 11 (todos os Ancestrais + Descarte para a bolsa). ok.
+- Alcance dos Poderes: p. 8 fala da "Carta de Cidade indicada pela Roleta"; p. 23 fala da carta "em que o Grande Antigo está", e o texto de cada Poder diz "a até um espaço/uma Carta de Cidade de" o Grande Antigo. ok.
+
+**As três interpretações do redator:**
+- Um giro por Rastejador na preparação: não está confirmado. A p. 4 diz "Gire a Roleta da Loucura uma vez para cada um dos seguintes meeples" e "Coloque 1 Rastejador por jogador", e as duas leituras cabem (a figura da p. 5 não decide). Fica como leitura do guia. Corrigido: o [!edicao] agora cita as duas frases e as duas leituras ("O manual manda girar 'uma vez para cada um' dos meeples. Este guia lê…" → "...sem dizer se os Rastejadores saem de um giro só, todos na mesma carta, ou de um giro cada. Este guia lê um giro para cada Rastejador, porque cada um é um meeple.").
+- Só se traduz página virada para cima: a p. 15 diz só "no seu local atual". O apoio está na regra do Assistente, que só traduz página "virada para cima" (p. 20), e nas regras de virar páginas (p. 13 e p. 5). Já estava num [!edicao] explícito, e o passo a passo de Traduzir não afirma a regra como certa. ok, mantido.
+- Maldição da Trilha de Rastejadores tira um Ancestral: a p. 12 diz no singular "Mova o Tentáculo Ancestral da Carta de Cidade para o Tabuleiro de Descarte. Então pegue um novo Tentáculo Ancestral do estoque geral e coloque-o na Carta de Cidade. Se não houver mais... deixe-o vazio". O fluxograma da p. 22 também traz as duas setas (Carta de Cidade > Descarte; Estoque geral > Carta de Cidade). ok: é a letra do manual, e não precisa de [!edicao].
+
+**Demais itens** (todos ok, salvo o indicado):
+- Preparação p. 4 e 5: Roleta, Cidades de lado sorteado, Nyarlathotep, Força no espaço sem número, Cérebro embaixo, Necronomicon, 5 Páginas viradas para baixo, 15 Rastejadores, Grande Antigo com a Página virada para cima, jogadores no Ponteiro Frontal, 3 Ancestrais + 9 de cada cor na bolsa, Ancestral volta para a bolsa no passo 12. ok.
+- Contas de componentes refeitas: Loucura 9+3+3 = 15 por cor (45 no total); Ancestrais 3 + 5×3 + estoque 5 = 23; Caos 2p 2×2+10+3 = 17, 3p 3+1+10+3 = 17, 4p 4+10+3 = 17. ok.
+- Corrigido (passo 6 de "Monte a mesa", p. 4): "3 no Tabuleiro de Descarte" → "3 de cada cor no Tabuleiro de Descarte".
+- 1º Passo (p. 10 a 12): duas voltas, linha = próximo local em sentido horário, os 4 ícones das Ações do Ponteiro, destino de cada tentáculo, surgir na cor da borda interna, ordem azul → vermelho → verde → azul, bolsa vazia, Grande Antigo vai para a carta do Rastejador. ok.
+- Tabela de maldições (p. 9 a 12), incluindo sobra para a trilha recém-esvaziada e "só uma trilha, não as três". ok.
+- Poderes (p. 23), texto de cada Grande Antigo e ordem de dificuldade (p. 3 e 23); Modo Difícil +1, Loucura +2. ok.
+- Ações (p. 12 a 17): Medo 1/2/3, Ganância 1/2/3, máximo 2 por Trilha de Temperamento, coletar não amaldiçoa, parar em carta com Rastejadores tira 1 por Rastejador, Banir (maior dado, sem somar, tudo zero grátis, Caos como curinga ao estoque geral, Fúria no começo do banimento dá 1/2/3), Ação da Cidade uma vez por turno, Traduzir (passos A a E, bônus de Caos), última página, Grande Antigo no seu local no início do turno, Habilidades das 6 personagens (p. 3 e 5), habilidade sem ação. ok.
+- Segunda Fase e fim (p. 16 a 18): atravessar o Grande Antigo, condição de tentar, 1 local por ação, até 3 dados, soma ≥ número, tentáculo da cor ou Caos, todas as ações menos Traduzir, Selar uma Cor, três derrotas e uma vitória. ok.
+- "Passe a bolsa" (p. 17): já estava "ao próximo jogador, em sentido horário" quando conferi. ok.
+- Exemplos refeitos: 1º turno (2 Medo + 1 da preparação = 3, trilha cheia; no turno seguinte 3+1 = 4 ao Tabuleiro de Rastejadores); 4 tentáculos com "mais 1"; 2 Ancestrais enchem a Energia, o 3º amaldiçoa; Banir 1 e 2 → custo 2, move 2 Fúria; Selar 1+2+2 = 5 ≥ 4; 1+2 = 3 ≥ 3; 0+2+1 = 3 < 4; 2,1,0 → custo 2. ok.
+- Exercícios: em todos os 22 itens de múltipla escolha a opção certa está certa pelo manual e as erradas estão erradas. ok.
+- Solo e variantes (p. 18 a 21), resumo. ok. Termos impressos (Ponteiro Frontal, Ponteiro de Tentáculo, Tabuleiro de Rastejadores, Tabuleiro de Descarte, Trilha de Delírio, Trilhas de Temperamento, Bolsa de Compra de Tentáculos, Selar um Portal, Selar uma Cor). ok.
+
+**Veredito:** APROVADO COM CORREÇÕES (uma contagem ambígua na preparação e um [!edicao] reescrito para mostrar as duas leituras).

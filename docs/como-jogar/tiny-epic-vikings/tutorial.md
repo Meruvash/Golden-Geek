@@ -262,7 +262,7 @@ As quatro Ações de Líder principais são Velejar um Barco, Explorar com um Co
 > 3. **Limite:** cada Ação de Consagração aceita tantas Vilas quanto o número de jogadores. Empilhe as novas sobre as antigas; com a pilha cheia, a ação fecha.
 > 4. Só 1 Vila por turno.
 
-> [!edicao] O texto do manual dá só o custo de invasão da Era 1 (1 Aço, p. 12). Na ilustração do Tabuleiro de Era (p. 5), os custos aparecem como 1, 2 e 3 Aço para as Eras 1, 2 e 3; confira no seu tabuleiro. O manual também não descreve em texto as 4 ações do Tabuleiro de Era: faça a que estiver impressa no espaço.
+> [!edicao] O texto do manual dá só o custo de invasão da Era 1 (1 Aço, p. 12). A ilustração do Tabuleiro de Era (p. 5) é pequena e parece mostrar 1, 2 e 3 Aço para as Eras 1, 2 e 3; é leitura de figura, não regra escrita: confira no seu tabuleiro. O manual também não descreve em texto as 4 ações do Tabuleiro de Era: faça a que estiver impressa no espaço.
 
 > [!mais] **Devolver Colonos.** No seu turno, você pode tirar Colonos seus das Ilhas e devolvê-los ao Tabuleiro de Clã, para ter Colonos disponíveis para enviar (p. 11).
 
@@ -352,7 +352,7 @@ As quatro Ações de Líder principais são Velejar um Barco, Explorar com um Co
 
 > [!mais] **Entrar em uma Batalha (Ação Rúnica).** Vire a carta na hora: ela entra na batalha aberta, ou começa uma se não houver, com a Força à vista de todos (p. 14).
 
-> [!edicao] Dois casos que o manual não resolve: quando a carta entra pela Ação Rúnica, ela fica virada para cima, e o gatilho de resolução da p. 8 é a carta "virada para baixo"; e não está dito o que acontece se, na resolução, só um jogador puder pagar o Aço da sua carta. Também não está dito se a Runa de uma carta jogada para baixo conta como Runa Ativa depois de revelada; a p. 6 só diz que a Runa Ativa vem "ao jogar" a carta. Combine com a mesa antes de jogar.
+> [!edicao] Casos que o manual não resolve: para a carta que entra pela Ação Rúnica, a p. 14 diz "Vire imediatamente a carta" e que "a Força dessa carta não é uma informação escondida", e a p. 24 diz "Revele a carta"; o manual não diz se ela fica virada para cima ou para baixo, e o gatilho de resolução da p. 8 é a carta "virada para baixo"; e não está dito o que acontece se, na resolução, só um jogador puder pagar o Aço da sua carta. Também não está dito se a Runa de uma carta jogada para baixo conta como Runa Ativa depois de revelada; a p. 6 só diz que a Runa Ativa vem "ao jogar" a carta. Combine com a mesa antes de jogar.
 
 **As Bênçãos de Valhala** estão impressas em cada Tabuleiro de Deus (p. 2):
 
@@ -501,7 +501,7 @@ As quatro Ações de Líder principais são Velejar um Barco, Explorar com um Co
 
 **A seleção de cartas com 2 jogadores.** O inimigo recebe uma mão virada para baixo com uma carta a menos que a da era e fica "sentado" entre os dois jogadores. Vocês passam cartas para ele e pegam as dele, na direção da era. Depois de cada passada, embaralhe a mão do inimigo e descarte 1 carta dela; no fim, descarte a última (p. 16). Na Era 1, por exemplo, cada jogador recebe 4 cartas e o inimigo, 3. O exemplo do manual (p. 16): o Jogador A guarda 1, passa 3 ao inimigo e pega as 3 que o Jogador B passou; o Jogador B guarda 1, passa 3 ao Jogador A e pega as 3 do inimigo. Embaralhe a mão do inimigo (as 3 que vieram de A), descarte 1 e repita até que os dois estejam passando só uma carta.
 
-> [!edicao] O limite de cada Ação de Consagração é "a quantidade de jogadores" (p. 14). Com 2 jogadores e o inimigo, este guia conta 2, porque o inimigo não joga turnos. O manual não trata disso no jogo de 2.
+> [!edicao] O limite de cada Ação de Consagração é "a quantidade de jogadores" (p. 14). O manual não diz se, no jogo de 2, o inimigo entra nessa conta: ele não joga turnos, mas a p. 16 o chama de "um terceiro jogador". O limite pode ser 2 ou 3; combine com a mesa antes de jogar.
 
 **Modo solo.** O jogo tem um modo para 1 jogador contra o Clã Inimigo, com preparação e ações próprias (p. 16 a 23). Este guia não o cobre.
 

@@ -114,3 +114,62 @@ Simulação resumida da Era 1: preparação com o inimigo nas 3 Ilhas Periféric
 | 7 | Construir Barco "num Fiorde adjacente a qualquer região que você ocupe": um Fiorde com Barco seu conta? | Não alterado. A p. 10 chama de "região" cada Ilha, e o guia já reproduz o texto da p. 12; fica como ponto de leitura. |
 
 Veredito: dá para jogar só com o tutorial, com as correções acima. Restam como pontos do manual sem resposta os já listados na seção 4 e o item 6 desta tabela.
+
+## Auditoria independente: regras
+
+Feita por um agente que não escreveu o texto (01/11/2026). Manual `TNE051_regras_v1.0.pdf` extraído com `pdftotext` e páginas 2 a 16 renderizadas a 300 dpi (p. 4 e 5 também a 600 e 900 dpi) para ler ícones e figuras. Todas as contas de exemplo refeitas em script.
+
+| Item | Situação |
+|---|---|
+| Linha de abertura (24 p., solo nas p. 16 a 23) | ok (p. 3, 16) |
+| Comece: montagem 1 a 7 | ok (p. 4, 16); item 2: citação ampliada, "(p. 4)" → "(p. 4; o vínculo aparece nas figuras das p. 5, 13 e 15)": o texto da p. 4 só manda sortear o marcador; o símbolo da Runa no marcador e a ligação com o deus se veem nas figuras (Frigga com o marcador "F" na p. 5; Ilha "F" → Fúria de Frigga na p. 13; marcadores ao lado de Odin, Frigga e Thor na p. 15) |
+| Seleção: 4/5/6 cartas; horário, anti-horário, horário; não trocar | ok (p. 7) |
+| Turno em 3 etapas; ordem a partir do Chefe | ok (p. 8) |
+| Jogar é obrigatório, ação não | ok (p. 10) |
+| Ações de Líder: Velejar, Explorar, Colher, Construir | ok (p. 11, 12) |
+| Exemplo do Comece (Velejar x2, Influência 4, Fúria +1) | ok (p. 11, 13) |
+| Exercícios do Comece (2 Colonos; só Ação de Líder; Barco no Fiorde = 0) | ok (p. 11, 13 "Um Barco em um Fiorde fornece 0") |
+| Pontuação 6/5/4 e 5/4/3 | ok (ícones da p. 15) |
+| Etapa 0: Fúria sobe ao tomar Runa, perder batalha, consagrar | ok (p. 9, 13, 14) |
+| Etapa 0: Bênção do perdedor | corrigido: "Quem perde ganha a Bênção" → "Quem perde pode fazer a Bênção" (p. 9: "Você pode receber") |
+| Etapa 1: mapa, Docas, Rotas de Balsa | ok (p. 10, 11) |
+| Etapa 1: nomes das Runas | ok, "Prosperidade", "Mistérios", "Ímpeto da Natureza" (p. 6; a p. 24 grafa "Mistério") |
+| Etapa 1: Tabuleiro de Era (cartas, direção, custo de invasão, 4 Ações de Consagração, verso de pontuação) | ok (p. 7, 12, 14, 15) |
+| Etapa 1, passo 3 (Vilas) | corrigido: faltava a exceção da p. 4, "exceto nos espaços [ícone de barco]"; a p. 11 mostra que esses espaços são Docas sem Vila → "exceto nos espaços marcados com um barco" |
+| Etapa 1: demais passos (deuses, Fúria no 0, Benefício 4/5/7, Era, baralho, peças, recursos no 2, Chefe, Barco inicial) | ok (p. 4, 5) |
+| Etapa 1: inimigo no jogo de 2 (peças, Ilhas Periféricas, Runas ficam, Colono vai para a caixa; Influência 6) | ok (p. 13, 16; 4 + 2 × 1 = 6) |
+| Etapa 1, exercícios (10 cartas; jogador à direita; 3 Barcos) | ok (p. 4) |
+| Etapa 2: anatomia da carta e figura (Hilda, Força 10, custo 1 Aço, Construir, Ação Rúnica com 1 Runa) | ok (p. 7, 14) |
+| Etapa 2: Runa Ativa não se gasta; perde-se com a Ilha ou no fim da era | ok (p. 6) |
+| Etapa 2: Colher, bônus (Barco = 1 Alimento; Templo = 1 qualquer), teto 7 | ok (p. 6, 12) |
+| Etapa 2: custos de Construir 2/3/4 e 5/7; onde construir | ok (ilustração da p. 5, legível a 300 dpi; texto da p. 12) |
+| Etapa 2: Ação Rúnica e as 6 ações extras | ok (p. 14) |
+| [!edicao] Runa da carta recém-jogada conta para a sua Ação Rúnica | mantido como ambiguidade; o manual diz só "ao jogar" (p. 6, 7) e "Cartas Viking que você jogou" (p. 14) |
+| Etapa 2, exemplo de Colher (6/1/2 → 7/3/3, 4 recursos) | ok, refeito |
+| Etapa 2, exercícios (Templo 5; Ilha com Colono; Era 2 = 5 anti-horário; 6 de Alimento + Colher x3 → 1) | ok (p. 7, 12, 6) |
+| Etapa 3: Influência 1/4/2/0; pés no chão; Fúria +1 por Runa tomada | ok (p. 13) |
+| Etapa 3: Velejar, ocupação, Barco alheio sai, Enviar Colonos, Atacar Colonos, controle | ok (p. 11, 12, 24) |
+| Etapa 3: Explorar com um Colono | ok (p. 12) |
+| Etapa 3: roubar Runa após resolver a ação | ok (p. 13) |
+| [!edicao] "Se você não tiver mais Influência" | mantido como ambiguidade (p. 13; o ícone de Influência riscado na figura não desfaz a dúvida) |
+| Etapa 3: Invadir e Consagrar, limite, 1 Vila por turno | ok (p. 12, 14) |
+| [!edicao] Custos de invasão das Eras 2 e 3 | reescrito: "os custos aparecem como 1, 2 e 3" → "a ilustração (p. 5) é pequena e parece mostrar 1, 2 e 3 [...] é leitura de figura, não regra escrita". A 900 dpi a figura do Tabuleiro de Era continua pixelada; os números da coluna de invasão são legíveis como 1, 2 e 3, mas o ícone do topo da coluna não é identificável com segurança |
+| [!edicao] 4 Ações de Consagração do Tabuleiro de Era | ok como está: o tutorial não descreve as ações (a figura da p. 5 e a miniatura da p. 14 não permitem lê-las) e manda fazer a que estiver impressa |
+| Etapa 3, exemplo de roubo (Bruno 3 Colonos, Alimento 4 → 1; Ana 2 → 1; 5 contra 1) e exercícios (5 contra 4; Velejar num só Barco; sem Aço não invade; Deus +2; Influência 6 e 0) | ok, refeitos (p. 11 a 14) |
+| Etapa 4: começar/entrar, 4 pontas, resolução, Aço, Força, vitória, Bolsa, máximo 3, derrota, empate | ok (p. 8, 9) |
+| Etapa 4: Invasores, último turno, Fúria acima de 20 | ok (p. 9, 10) |
+| [!mais] Entrar em uma Batalha (Ação Rúnica) | ok, "Vire a carta na hora" reproduz a p. 14 |
+| [!edicao] da etapa 4 | corrigido: "quando a carta entra pela Ação Rúnica, ela fica virada para cima" não tem apoio no manual → cita a p. 14 ("Vire imediatamente a carta"; "a Força dessa carta não é uma informação escondida") e a p. 24 ("Revele a carta") e diz que o manual não define o lado da carta; o resto do aviso (só um jogador paga o Aço; Runa da carta de batalha revelada) mantido |
+| Tabela das Bênçãos (6 deuses) | ok, texto dos tabuleiros na p. 2 (e p. 5 e 9) |
+| Etapa 4, exemplo (10 contra 8) e exercícios (empate devolve a carta; os dois perdem, a partir de quem começou; Invasores 8 contra 6; entrar não escolhe carta; sem Aço não compete) | ok (p. 8 a 10) |
+| Etapa 5: Limpeza, Chefe, baralho esgotado | ok (p. 15) |
+| Etapa 5: Pontuação Final, empate de Fúria, trilha até 40, desempate | ok (p. 15; o exemplo do manual, Odin e Frigga 15 e Thor 13, confere com a legenda da figura) |
+| Etapa 5, contas: Ana 2×6+1×4=16, 2×5+1×3=13, total 29; Bruno 2×4+1×4=12, 5+3+3=11, total 23; variante 2×5+1×4=14, 5+4+3=12, total 26; treino 18, 6, 9; avaliação 8 = 5 | ok, refeitas em script |
+| Etapa 5, exercícios do Chefe e do desempate | ok (p. 15) |
+| Situações especiais: seleção com 2 jogadores e exemplo A/B | ok (p. 16) |
+| [!edicao] Limite de consagração no jogo de 2 | corrigido: o guia escolhia 2 "porque o inimigo não joga turnos", o que o manual não sustenta (a p. 16 chama o inimigo de "um terceiro jogador") → fica só como ambiguidade, 2 ou 3, a combinar |
+| Avaliação final, 8 questões | ok; certas e erradas conferidas (p. 4, 7, 12, 13, 14, 9, 9, 15) |
+| Folha de consulta | ok |
+| Termos | ok, conforme a edição brasileira (Cartas Viking, Cartas de Benefício, Ação de Líder, Ação Rúnica, Velejar, Explorar com um Colono, Colher, Construir, Doca, Fiorde, Rota de Balsa, pés no chão, Bênção de Valhala, Fúria, Ações de Consagração, Marcador de Chefe, Corvo, Invasores) |
+
+Veredito: APROVADO COM CORREÇÕES. Ficam como ambiguidades declaradas no texto: Runa da carta recém-jogada; "não tiver mais Influência"; custos de invasão das Eras 2 e 3 (figura); ações do Tabuleiro de Era; lado e gatilho da carta que entra pela Ação Rúnica e batalha em que só um paga o Aço; limite de consagração no jogo de 2.

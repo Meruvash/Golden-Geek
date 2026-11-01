@@ -124,7 +124,7 @@ Valores lidos nos quadros do Tabuleiro de Jogador, na ilustração da p. 5.
 
 !fig[A mesa montada: os 4 Tabuleiros de Ação no centro, o Tabuleiro de Rodada à esquerda, o de Contrato em cima, com a linha de Contratos Públicos, e o de Pesquisa embaixo; à direita, a Fazenda e o Tabuleiro de Jogador, com os Dinofazendeiros e o quadro de cada dinossauro. Ilustração: manual Meeple BR (p. 5)](figuras/preparacao.webp)
 
-> [!atencao] O quarto Dinofazendeiro espera no espaço 4 do Tabuleiro de Rodada e só entra na quarta rodada (p. 4 e 13). Até lá, cada um aloca 3 Dinofazendeiros e o Capataz.
+> [!atencao] O quarto Dinofazendeiro espera no espaço 4 do Tabuleiro de Rodada e só entra na quarta rodada (p. 4 e 13). Até lá, cada um aloca 3 Dinofazendeiros e o Capataz. Ninguém começa com dinossauros nem com Barreiras: a preparação não entrega nenhum, e por isso a primeira coleta rende a Fazenda inteira (p. 4 a 6).
 
 > [!resolvido] **Exemplo resolvido.** Partida de 4: a linha tem 5 Contratos Públicos (4 mais 1). Ana tem o Marcador de Primeiro Jogador e não ganha bônus; à esquerda dela, Bruno começa com 1 planta, o terceiro com 1 carne e o quarto com 1 suprimento.
 
@@ -164,13 +164,13 @@ Valores lidos nos quadros do Tabuleiro de Jogador, na ilustração da p. 5.
 > 4. Não aloque num espaço onde já tem Dinofazendeiro.
 > 5. Espaço com círculo preto tem custo: pague na hora e faça pelo menos parte da ação.
 > 6. Só aloque num espaço cuja ação você consegue fazer.
-> 7. Quem não tem mais Dinofazendeiros é pulado. A fase acaba quando todos alocaram todos.
+> 7. Alocar é obrigatório: na sua vez você deve pôr uma peça; não há passar. Quem não tem mais Dinofazendeiros é pulado. A fase acaba quando todos alocaram todos (p. 7).
 
 !fig[Dois espaços ocupados: à esquerda, o laranja tem 2 Dinofazendeiros, e o azul entra com 3, usando o Capataz e um Dinofazendeiro normal; à direita, o laranja tem 1, e o azul entra com 2. Ilustração: manual Meeple BR (p. 7)](figuras/espacos-ocupados.webp)
 
 > [!passos] **Passo a passo: as ações** (p. 8 e 9)
 >
-> 1. **Caçar Dinossauros.** Receba o Dinossauro comum do espaço na Zona de Contenção e role o Dado de Caça. Rede: nada a mais. Ovo: mais 1 da mesma espécie. Dano: seus Dinofazendeiros desse espaço e o dinossauro vão para o Afastamento Médico da sua cor. A caça sempre dá pelo menos 1 dinossauro.
+> 1. **Caçar Dinossauros.** Receba o Dinossauro comum mostrado no espaço, tirado do estoque comum, na Zona de Contenção e role o Dado de Caça. Rede: nada a mais. Ovo: mais 1 da mesma espécie. Dano: seus Dinofazendeiros desse espaço, inclusive o Capataz, que é um Dinofazendeiro especial, e o dinossauro vão para o Afastamento Médico da sua cor. A caça sempre dá pelo menos 1 dinossauro (p. 4, 8 e 19).
 > 2. **Mercado de Dinossauros.** Pague o custo e receba 1 Dinossauro comum qualquer, ou um dos mostrados, na Zona de Contenção. Sem dado.
 > 3. **Recursos.** Receba os recursos mostrados.
 > 4. **Barreiras e Marcador de Primeiro Jogador.** Receba as Barreiras mostradas na Zona de Contenção. Se o espaço der o Marcador de Primeiro Jogador, pegue-o de quem o tem.
@@ -179,9 +179,9 @@ Valores lidos nos quadros do Tabuleiro de Jogador, na ilustração da p. 5.
 
 > [!mais] **Contrato Privado.** Logo depois de cumprir um Contrato Público, se tiver na Fazenda os dinossauros do seu Contrato Privado, você pode descartá-los e cumpri-lo também. Sem um Público antes, não há Privado (p. 9 e 19).
 
-> [!mais] **Mova um Dinossauro de sua Zona de Contenção.** Passe 1 dinossauro da Zona de Contenção para a Fazenda na hora. Nesse momento, não importa se ele fica fora de Cercado ou junto de outra espécie (p. 9).
+> [!mais] **Mova um Dinossauro de sua Zona de Contenção.** É ação de alguns espaços dos Tabuleiros de Ação, como as seis acima. Passe 1 dinossauro da Zona de Contenção para a Fazenda na hora. Nesse momento, não importa se ele fica fora de Cercado ou junto de outra espécie (p. 9).
 
-> [!mais] **Redistribuir Barreiras.** Tire 1 ou mais Barreiras da Fazenda e ponha-as na Zona de Contenção, mesmo que algum dinossauro fique fora de Cercado nesse momento (p. 9).
+> [!mais] **Redistribuir Barreiras.** Também é ação de espaço. Tire 1 ou mais Barreiras da Fazenda e ponha-as na Zona de Contenção, mesmo que algum dinossauro fique fora de Cercado nesse momento (p. 9).
 
 > [!mais] **Espaço com duas ações.** Faça pelo menos uma; pode fazer as duas, na ordem que quiser (p. 9).
 
@@ -413,7 +413,7 @@ Valores lidos nos quadros do Tabuleiro de Jogador, na ilustração da p. 5.
 
 **Montanhas, Água e o Cercado permanente** contam como Barreiras para fechar um Cercado (p. 19).
 
-> [!edicao] **Pontos que o manual deixa abertos.** (1) A p. 10 diz que Dinossauros Únicos "não podem" ficar em Cercado com comuns; a p. 12 diz "normalmente não podem". Siga a regra geral e só faça diferente se uma carta mandar. (2) O manual não diz se a Penalidade de Fuga dos Herbívoros pode tirar parte do Cercado permanente, nem para onde vai a Barreira tirada. A leitura mais natural: sai uma peça de Barreira, que volta ao estoque. Combine com a mesa.
+> [!edicao] **Pontos que o manual deixa abertos.** (1) A p. 10 diz que Dinossauros Únicos "não podem" ficar em Cercado com comuns; a p. 12 diz "normalmente não podem". Siga a regra geral e só faça diferente se uma carta mandar. (2) O manual não diz se a Penalidade de Fuga dos Herbívoros pode tirar parte do Cercado permanente, nem para onde vai a Barreira tirada. A leitura mais natural: sai uma peça de Barreira, que volta ao estoque. Combine com a mesa. (3) O manual não diz o que fazer se, na sua vez de alocar, nenhum espaço vazio ou alcançável tiver ação que você consiga fazer, nem se uma Barreira da Zona de Contenção pode ficar lá para a rodada seguinte (a p. 10 manda pôr "suas Barreiras e Dinossauros" na Fazenda). Combine com a mesa.
 
 > [!edicao] **Duas frases que parecem se contradizer.** (1) A p. 7 diz que na sua vez você posiciona "um único Dinofazendeiro", mas manda pôr 2 ou 3 para entrar num espaço ocupado, e a ilustração mostra isso. Este guia lê: num espaço ocupado, você põe todas as peças necessárias na mesma vez. (2) Num espaço com duas ações, a p. 9 manda fazer pelo menos uma e permite as duas; o FAQ da p. 19 diz "você pode realizar apenas uma delas". Lido com a pergunta do FAQ, o sentido é: basta poder fazer uma para alocar ali.
 
