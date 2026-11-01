@@ -75,7 +75,7 @@ Ações noturnas e evidências: etapa 3. Eventos e Cartas de Corporação: etapa
 
 Com o indicador nas horas 43 a 48, você pode encerrar o seu caso. Com todos encerrados, cada um põe o Carro, em segredo, sobre o suspeito que acusa. Entre quem acertou, vence o Distintivo mais alto; se ninguém acertar, todos perdem (p. 14 e 17).
 
-**Prefere ver?** Uma partida resumida em vídeo. Ele complementa este guia; em caso de diferença, vale o manual.
+**Prefere ver?** Uma partida em vídeo. Ele complementa este guia; em caso de diferença, vale o manual.
 
 !video[TINY EPIC CRIMES - Gameplay resumida, canal Duque Board Games](https://www.youtube.com/watch?v=BEcs4ub4O3U&t=0s)
 
