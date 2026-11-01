@@ -1,6 +1,6 @@
 # Como jogar Dice Throne
 
-*Regras conferidas no manual oficial em inglês da Dice Throne Inc. (Rules of Play, versão 2.4.1, a atual em rules.dicethrone.com, comparada com a versão 2.3.2, de 2022), porque não encontramos manual em português publicado. Os nomes da caixa brasileira podem ser diferentes dos usados aqui. As páginas citadas são as do manual, iguais nas duas versões. Os exemplos usam a Pistoleira (Gunslinger), a heroína que o manual mostra por inteiro.*
+*No Brasil saíram as caixas Monge vs Paladino e Feiticeira da Lua vs Bárbaro (Season One Rerolled). As regras foram conferidas no manual oficial em inglês da Dice Throne Inc. (Rules of Play, versão 2.4.1, a de rules.dicethrone.com, comparada com a versão 2.3.2, de 2022); as páginas citadas são as do manual, iguais nas duas versões. Os duelos Monge contra Paladino (etapa 2) e Feiticeira da Lua contra Bárbaro (etapa 4) usam os tabuleiros desses heróis nas imagens oficiais dos componentes; os exemplos que dependem das cartas e fichas mostradas no manual usam a Pistoleira (Gunslinger), a heroína que ele mostra por inteiro. Os nomes impressos na caixa brasileira podem ser diferentes dos usados aqui.*
 
 ## 4min. Comece a jogar em 4 minutos
 
@@ -42,11 +42,29 @@ Os dados da Pistoleira têm Bala (Bullet) nas faces 1, 2 e 3, Arrancada (Dash) n
 
 > [!resolvido] **Exemplo resolvido.** A Pistoleira rola 1, 4, 4, 6 e 3: duas Balas (1 e 3), duas Arrancadas (4 e 4) e uma Mosca. Para o Take Cover falta uma Arrancada. Ela guarda os outros quatro dados e rola de novo só o 6. Sai 5: agora tem 1, 4, 4, 5 e 3, com 2 Balas e 3 Arrancadas. Ela para, sem usar a terceira rolagem, e ativa o Take Cover: põe uma ficha de Evasiva no próprio tabuleiro e causa 5 de dano. O adversário rola a defesa; se ela não reduzir nada, ele vai de 50 para 45 de Vida.
 
-> [!complete] **Complete.** Na primeira rolagem, a Pistoleira tira 2, 3, 5, 6 e 6. Ela quer a sequência grande do Fan the Hammer. Que dado ela rola de novo, e que número precisa sair?
+> [!complete] **Complete.** Na primeira rolagem, a Pistoleira tira 2, 3, 5, 6 e 6. Ela quer a sequência grande do Fan the Hammer.
+>
+> ?? Que dado ela rola de novo, e que número precisa sair?
+> - ( ) O 2, e precisa sair 4
+> - (x) Um dos dois 6, e precisa sair 4
+> - ( ) Um dos dois 6, e precisa sair 1
+> - ( ) O 5, e precisa sair 4
+> = Um dos dois 6, atrás de um 4. Se sair 4, os dados ficam 2, 3, 4, 5 e 6, uma sequência grande. Ela ainda tem uma terceira rolagem se não sair (p. 4 e 12).
 
-> [!suavez] **Agora os seus dados.** Antes de rolar: quais combinações do seu tabuleiro estão mais perto? Depois de cada rolagem, que dados você guarda? Quantas rolagens ainda tem? No fim, qual habilidade você anuncia?
-
-**Resposta do Complete:** um dos dois 6. Se sair 4, os dados ficam 2, 3, 4, 5 e 6, uma sequência grande. Ela ainda tem uma terceira rolagem se não sair.
+> [!suavez] **Agora os seus dados.** Antes de rolar, veja quais combinações do seu tabuleiro estão mais perto. Depois de cada rolagem, guarde os dados que servem e role de novo os outros.
+>
+> ?? Você acabou de fazer a primeira rolagem do turno. Quantas tentativas de rolagem ainda tem?
+> - ( ) Nenhuma; a primeira é a única
+> - ( ) Uma
+> - (x) Duas
+> - ( ) Três
+> = Duas. A rolagem ofensiva tem até 3 tentativas: a primeira com os 5 dados e mais duas, com os dados que você quiser rolar de novo (p. 4 e 12).
+>
+> ?? No fim, os seus dados mostram as combinações de duas habilidades. O que você anuncia?
+> - ( ) As duas, uma depois da outra
+> - (x) Uma só, a que escolher, ou nenhuma
+> - ( ) A que estiver mais à esquerda no tabuleiro
+> = Uma só, à sua escolha, ou nenhuma: só uma habilidade é ativada por turno, mesmo que os dados mostrem várias combinações (p. 4).
 
 ### Ainda não precisa saber
 
@@ -71,7 +89,7 @@ Duas ideias sustentam o resto:
 
 ## 1. Como este guia ensina
 
-O guia tem quatro etapas: montar a mesa e ler o tabuleiro do herói; rolar, atacar e defender; usar cartas e CP; e lidar com fichas e tipos de dano. Em cada etapa vêm, nesta ordem: **Para entender** (como aquela parte funciona e por quê), **Passo a passo** (as regras exatas), três tarefas com ajuda decrescente (um **exemplo resolvido**, uma tarefa para **completar** e uma **sua vez**, sem ajuda) e um **treino rápido** para o que precisa ficar automático. As respostas ficam escondidas no fim de cada etapa: tente antes de abrir. No final, uma avaliação curta diz o que reler, e uma folha de consulta vai para a mesa.
+O guia tem quatro etapas: montar a mesa e ler o tabuleiro do herói; rolar, atacar e defender; usar cartas e CP; e lidar com fichas e tipos de dano. Em cada etapa vêm, nesta ordem: **Para entender** (como aquela parte funciona e por quê), **Passo a passo** (as regras exatas), três tarefas com ajuda decrescente (um **exemplo resolvido**, uma tarefa para **completar** e uma **sua vez**, sem ajuda) e um **treino rápido** para o que precisa ficar automático. As tarefas são de múltipla escolha: toque numa opção para ver a resposta certa e a explicação. Tente antes de tocar. No final, uma avaliação curta diz o que reler, e uma folha de consulta vai para a mesa.
 
 ## 2. Etapa 1: montar a mesa e ler o seu herói
 
@@ -113,21 +131,35 @@ O guia tem quatro etapas: montar a mesa e ler o tabuleiro do herói; rolar, atac
 
 > [!mais] **Teto de CP.** O máximo é 15 CP. Se você ganhar CP com o marcador em 15, ele não sobe (p. 4).
 
-> [!edicao] O manual não diz o que fazer se a rolagem para decidir quem começa empatar. Rolar de novo entre os empatados é a solução natural; combine com a mesa.
+> [!edicao] No Brasil saíram as caixas Monge vs Paladino e Feiticeira da Lua vs Bárbaro, da linha Season One Rerolled. As regras deste guia foram conferidas no manual oficial em inglês (versão 2.4.1, comparada com a 2.3.2); as habilidades desses quatro heróis, nas imagens oficiais dos tabuleiros publicadas pela Dice Throne. Os nomes impressos na sua caixa podem ser diferentes; os números e os símbolos são os mesmos. O manual também não diz o que fazer se a rolagem para decidir quem começa empatar. Rolar de novo entre os empatados é a solução natural; combine com a mesa.
 
-> [!suavez] **Sua vez.** Você vai montar um duelo com a Pistoleira. Responda olhando só o passo a passo e a tabela:
+> [!suavez] **Sua vez.** Você vai montar um duelo com a Pistoleira. Responda olhando só o passo a passo e a tabela.
 >
-> 1. Com quanto de Vida e de CP ela começa, e com quantas cartas na mão?
-> 2. Onde ficam as fichas de Evasiva antes de ela ganhar alguma?
-> 3. Que habilidade ela usa quando é atacada, e quantos dados rola?
-> 4. Qual habilidade dela não precisa de dados para funcionar?
-
-### Respostas da etapa 1
-
-1. 50 de Vida, 2 CP e 4 cartas (passos 2 a 4).
-2. Empilhadas no folheto, no lugar da Evasiva (passo 1).
-3. Duel, com 1 dado (p. 3 e 5).
-4. Quick Draw, a passiva: dá 1 Recarga em toda fase de Manutenção dela (p. 2 e 5).
+> ?? Com quanto de Vida e de CP ela começa, e com quantas cartas na mão?
+> - ( ) 50 de Vida, 3 CP e 5 cartas
+> - ( ) 35 de Vida, 2 CP e 4 cartas
+> - (x) 50 de Vida, 2 CP e 4 cartas
+> - ( ) 50 de Vida, 0 CP e 4 cartas
+> = 50 de Vida, 2 CP e 4 cartas (passos 2 a 4, p. 3). A Vida 35 é a da partida de 3 jogadores.
+>
+> ?? Onde ficam as fichas de Evasiva antes de ela ganhar alguma?
+> - (x) Empilhadas no folheto, no lugar da Evasiva
+> - ( ) No meio do tabuleiro dela
+> - ( ) Na caixa, até ela ganhar a primeira
+> = Empilhadas no folheto, no lugar da Evasiva (passo 1, p. 3). Uma ficha só vai para o meio do tabuleiro quando é ganha (p. 6).
+>
+> ?? Que habilidade ela usa quando é atacada, e quantos dados rola?
+> - ( ) Take Cover, com 5 dados
+> - ( ) Duel, com 3 dados
+> - (x) Duel, com 1 dado
+> = Duel, com 1 dado, rolado uma vez só (p. 3 e 5).
+>
+> ?? Qual habilidade dela não precisa de dados para funcionar?
+> - ( ) Duel
+> - ( ) Bounty Hunter
+> - ( ) Fill'em with Lead!
+> - (x) Quick Draw
+> = Quick Draw, a passiva: dá 1 Recarga em toda fase de Manutenção dela (p. 2 e 5).
 
 ## 3. Etapa 2: rolar, atacar e defender
 
@@ -172,27 +204,95 @@ O guia tem quatro etapas: montar a mesa e ler o tabuleiro do herói; rolar, atac
 >
 > Agora os papéis se invertem. No turno seguinte, o adversário ataca a Pistoleira com uma habilidade de 8 de dano normal. Ela ativa o Duel: os dois rolam 1 dado. Ela tira 5, ele tira 2. Como o dela é maior, ela escolhe prevenir metade do dano: 4. Recebe 4, e a Vida dela vai de 50 para 46. A outra escolha seria causar 3 de dano no atacante e receber os 8 inteiros.
 
-> [!complete] **Complete.** Outro ataque de 6 de dano normal contra a Pistoleira, com 50 de Vida. No Duel, os dois tiram 4. Já sabemos: o dela não é maior, então ela não previne nada. Termine: com quanto de Vida ela fica, e o que acontece com o atacante?
+> [!complete] **Complete.** Outro ataque de 6 de dano normal contra a Pistoleira, com 50 de Vida. No Duel, os dois tiram 4. Já sabemos: o dela não é maior, então ela não previne nada.
+>
+> ?? Com quanto de Vida ela fica, e o que acontece com o atacante?
+> - ( ) 47 de Vida; o atacante não sofre nada
+> - ( ) 44 de Vida; o atacante sofre 3 de dano
+> - ( ) 50 de Vida; o empate no Duel anula o ataque
+> - (x) 44 de Vida; o atacante sofre 1 de dano
+> = Fica com 44 de Vida (50 menos 6). O atacante sofre 1 de dano, pela última linha do Duel: o dado dela não foi maior (p. 3).
 
-> [!suavez] **Sua vez.** A Pistoleira tem 2, 2, 4, 6 e 6 depois da primeira rolagem. Que habilidade ela já pode ativar? Se quiser tentar o Deadeye, que dados rola de novo? E se, depois da terceira rolagem, ela tiver 6, 6, 6, 2 e 4, o que pode ativar?
+> [!suavez] **Sua vez.** A Pistoleira tem 2, 2, 4, 6 e 6 depois da primeira rolagem.
+>
+> ?? Que habilidade ela já pode ativar?
+> - ( ) Revolver
+> - (x) Bounty Hunter
+> - ( ) Take Cover
+> - ( ) Deadeye
+> = Bounty Hunter: 2 Balas (os dois 2) e 2 Moscas (os dois 6). O Revolver pede 3 Balas, o Take Cover 3 Arrancadas e o Deadeye 4 Moscas (p. 2).
+>
+> ?? Para ainda poder completar o Deadeye na próxima rolagem, que dados ela rola de novo?
+> - ( ) Só o 4
+> - ( ) Os dois 6
+> - (x) Os três que não são 6: 2, 2 e 4
+> = Ela guarda os dois 6 e rola de novo os outros três: o Deadeye pede 4 Moscas, e rolando só o 4 ela chegaria no máximo a 3 (p. 2 e 12).
+>
+> ?? Depois da terceira rolagem, ela tem 6, 6, 6, 2 e 4. O que pode ativar?
+> - ( ) Deadeye
+> - ( ) Bounty Hunter
+> - (x) Nenhuma habilidade
+> - ( ) Revolver
+> = Nenhuma: são só 3 Moscas, 1 Bala e 1 Arrancada. Uma carta que mude o 2 ou o 4 para 6 resolveria (etapa 3).
 
-> [!treino] **Treino rápido: o que estes dados ativam?** Para cada resultado final da Pistoleira, diga todas as habilidades cujo requisito foi atendido.
+> [!treino] **Treino rápido: o que estes dados ativam?** Para cada resultado final da Pistoleira, escolha todas as habilidades cujo requisito foi atendido. Em todos os casos, só uma delas é ativada.
 >
-> a) 1, 2, 3, 4, 6
+> ?? a) 1, 2, 3, 4, 6
+> - ( ) Só Showdown
+> - (x) Revolver e Showdown
+> - ( ) Showdown e Fan the Hammer
+> - ( ) Revolver e Bounty Hunter
+> = Revolver (3 Balas: 1, 2, 3) e Showdown (1, 2, 3, 4). Falta o 5 para a sequência grande, e há só 1 Mosca (p. 2 e 16).
 >
-> b) 6, 6, 6, 6, 2
+> ?? b) 6, 6, 6, 6, 2
+> - (x) Só Deadeye
+> - ( ) Deadeye e Bounty Hunter
+> - ( ) Fill'em with Lead!
+> - ( ) Nenhuma; falta a quinta Mosca
+> = Deadeye (4 Moscas). O Bounty Hunter pede 2 Balas, e aqui só há uma; a suprema pede 5 Moscas (p. 2 e 3).
 >
-> c) 2, 3, 4, 5, 6
+> ?? c) 2, 3, 4, 5, 6
+> - ( ) Só Fan the Hammer
+> - ( ) Fan the Hammer e Take Cover
+> - ( ) Showdown e Revolver
+> - (x) Showdown e Fan the Hammer
+> = Showdown e Fan the Hammer: 2 a 6 é sequência grande e contém uma pequena. Balas são só duas (2 e 3) e Arrancadas também (4 e 5) (p. 2 e 16).
 >
-> d) 1, 1, 4, 4, 5
+> ?? d) 1, 1, 4, 4, 5
+> - ( ) Take Cover e Revolver
+> - (x) Só Take Cover
+> - ( ) Showdown
+> - ( ) Nenhuma
+> = Take Cover (Balas: 1 e 1; Arrancadas: 4, 4 e 5). O Revolver pede 3 Balas, e não há 4 números seguidos (p. 2).
 >
-> e) 3, 3, 6, 6, 1
+> ?? e) 3, 3, 6, 6, 1
+> - ( ) Só Bounty Hunter
+> - ( ) Revolver e Deadeye
+> - (x) Revolver e Bounty Hunter
+> - ( ) Bounty Hunter e Take Cover
+> = Revolver (3 Balas: 3, 3 e 1) e Bounty Hunter (2 Balas e 2 Moscas). Moscas são só duas, e não há Arrancada (p. 2).
 
-### Respostas da etapa 2
+> [!resolvido] **Exemplo resolvido: Monge contra Paladino**, da caixa brasileira. Os dados do Monge (Monk) têm Punho (Fist) nas faces 1 e 2, Palma na 3, Yin-yang nas 4 e 5 e Lótus na 6. Os do Paladino (Paladin) têm Espada (Sword) nas faces 1 e 2, Elmo na 4, Coração na 5 e Prece (mãos juntas) na 6. Vêm ao caso duas habilidades do Monge: Fist of Harmony (Punho da harmonia), sequência pequena, 5 de dano e então ganha 2 fichas de Chi; e Fist of Tranquility (Punho da tranquilidade), sequência grande, 7 de dano e então ganha 2 Chi e 1 Evasiva. A defesa do Paladino é a Divine Defense (Defesa divina), com 3 dados: com Espada, causa 1 de dano no atacante; previne 1 de dano por Elmo e 2 por Coração; e ganha 1 CP por Prece.
+>
+> O Monge rola 1, 1, 4, 5 e 6. Tem 4, 5 e 6 seguidos; falta um 3 para a sequência pequena 3, 4, 5, 6. Rola de novo um dos 1 e sai 3: agora 1, 3, 4, 5 e 6. Para a sequência grande faltaria um 2 no lugar do 1. Ele ainda tem uma rolagem, mas para: anuncia o Fist of Harmony, o Paladino não mexe nos dados, e o Monge ganha também as 2 fichas de Chi.
+>
+> O Paladino rola a defesa: 1, 4 e 5. A Espada causa 1 de dano no Monge; o Elmo previne 1 e o Coração previne 2, 3 ao todo. Tudo é aplicado junto, no fim da fase de rolagem (p. 13): o Paladino recebe 5 menos 3, 2, e vai de 50 para 48; o Monge recebe 1 e vai para 49.
 
-- **Complete:** fica com 44 de Vida (50 menos 6). O atacante sofre 1 de dano, pela última linha do Duel (p. 3).
-- **Sua vez:** já tem o Bounty Hunter (2 Balas e 2 Moscas). Para o Deadeye (4 Moscas), guarda os dois 6 e rola de novo os outros três. Com 6, 6, 6, 2 e 4, só 3 Moscas, 1 Bala e 1 Arrancada: nenhuma habilidade. Uma carta que mude o 2 ou o 4 para 6 resolveria (etapa 3).
-- **Treino a:** Revolver (3 Balas: 1, 2, 3) e Showdown (1, 2, 3, 4). **b:** Deadeye (4 Moscas). **c:** Showdown e Fan the Hammer. **d:** Take Cover (Balas: 1 e 1; Arrancadas: 4, 4 e 5). **e:** Revolver (3 Balas: 3, 3 e 1) e Bounty Hunter. Em todos os casos, só uma é ativada.
+> [!treino] **Treino: Monge contra Paladino.**
+>
+> ?? Mesmo Fist of Harmony, 5 de dano. Agora o Paladino tira 2, 5 e 6 na Divine Defense. Quanto ele recebe, e o que mais acontece?
+> - ( ) Recebe 0; a Prece anula o ataque
+> - ( ) Recebe 4; o Monge sofre 1 de dano
+> - (x) Recebe 3; o Monge sofre 1 de dano e o Paladino ganha 1 CP
+> - ( ) Recebe 3; ninguém sofre dano extra e o Paladino não ganha CP
+> = A Espada (2) causa 1 de dano no Monge. O Coração (5) previne 2: o Paladino recebe 5 menos 2, 3. A Prece (6) dá 1 CP. O dano entra no fim da fase de rolagem (Divine Defense; p. 13).
+>
+> ?? Com 1, 3, 4, 5 e 6, o Monge ainda tem a terceira rolagem. Se rolar de novo o 1, que número dá a sequência grande do Fist of Tranquility?
+> - ( ) 1
+> - (x) 2
+> - ( ) 3
+> - ( ) 6
+> = O 2: os dados ficam 2, 3, 4, 5 e 6, sequência grande, e ele causa 7 de dano e ganha 2 Chi e 1 Evasiva. Com qualquer outro número, 3, 4, 5 e 6 continuam na mesa, e a sequência pequena do Fist of Harmony não se perde (p. 4 e 16).
 
 ## 4. Etapa 3: cartas e CP
 
@@ -239,27 +339,55 @@ O guia tem quatro etapas: montar a mesa e ler o tabuleiro do herói; rolar, atac
 >
 > Se a defesa do adversário não reduzir nada, ele vai de 50 para 43. A Pistoleira termina o turno com 1 CP e o Samesies! na mão, longe do limite de 6 cartas.
 
-> [!complete] **Complete.** Agora é o adversário, no primeiro turno dele. Ele não é o jogador inicial: na Renda, ganha 1 CP e compra 1 carta. Já sabemos: fica com 3 CP e 5 cartas. Ele quer jogar uma Melhoria de 3 CP e o Buh, Bye! (2 CP) neste turno. Termine: como ele consegue o CP que falta, e com quantas cartas fica na mão?
+> [!complete] **Complete.** Agora é o adversário, no primeiro turno dele. Ele não é o jogador inicial: na Renda, ganha 1 CP e compra 1 carta. Já sabemos: fica com 3 CP e 5 cartas. Ele quer jogar uma Melhoria de 3 CP e o Buh, Bye! (2 CP) neste turno.
+>
+> ?? Como ele consegue o CP que falta, e com quantas cartas fica na mão?
+> - ( ) Vende 2 cartas e fica com 3 na mão
+> - (x) Vende 2 cartas, a 1 CP cada, e fica com 1 na mão
+> - ( ) Vende 1 carta de 3 CP pelo custo dela e fica com 2 na mão
+> - ( ) Não consegue: só se vende carta na fase de Descarte
+> = Vendendo 2 cartas (1 CP cada, qualquer que seja o custo) na fase Principal, chega a 5 CP; paga 3 e 2 e fica com 0. Das 5 cartas, 2 foram vendidas e 2 jogadas: sobra 1 na mão (p. 12).
 
-> [!suavez] **Sua vez.** Chega a fase de Descarte. Você tem 8 cartas na mão e 14 CP. O que é obrigatório fazer, e com quanto CP você termina?
+> [!suavez] **Sua vez.** Chega a fase de Descarte. Você tem 8 cartas na mão e 14 CP.
+>
+> ?? O que é obrigatório fazer, e com quanto CP você termina?
+> - ( ) Vender 2 cartas e terminar com 16 CP
+> - ( ) Vender 1 carta e terminar com 15 CP
+> - (x) Vender 2 cartas e terminar com 15 CP
+> - ( ) Descartar 2 cartas sem ganhar CP e terminar com 14 CP
+> = Vender 2 cartas, até ficar com 6. A primeira leva o CP a 15; a segunda não dá nada, porque 15 é o teto. Termina com 15 CP (p. 4 e 13).
 
 > [!treino] **Treino rápido: pode ou não pode?**
 >
-> a) Jogar o Transference! (Ação de Fase Principal) durante a rolagem ofensiva do adversário.
+> ?? a) Jogar o Transference! (Ação de Fase Principal) durante a rolagem ofensiva do adversário.
+> - ( ) Pode, como qualquer carta de Ação
+> - (x) Não pode
+> - ( ) Pode, desde que o adversário ainda não tenha anunciado a habilidade
+> = Não pode: Ação de Fase Principal só no seu turno, nas fases Principais (p. 9).
 >
-> b) Jogar o Eat Lead! (Ação de Fase de Rolagem) na sua própria rolagem ofensiva, depois de ativar o Revolver.
+> ?? b) Jogar o Eat Lead! (Ação de Fase de Rolagem) na sua própria rolagem ofensiva, depois de ativar o Revolver.
+> - (x) Pode
+> - ( ) Não pode; Ação de Fase de Rolagem só no turno do adversário
+> - ( ) Não pode depois de ativar; só antes de anunciar a habilidade
+> = Pode: Ações de Fase de Rolagem valem no turno de qualquer jogador, depois de qualquer passo da rolagem ofensiva (p. 9 e 12).
 >
-> c) Jogar o Getting Paid! (Ação Instantânea) na fase Principal do adversário.
+> ?? c) Jogar o Getting Paid! (Ação Instantânea) na fase Principal do adversário.
+> - ( ) Não pode; fora do seu turno, só cartas de borda laranja
+> - ( ) Só pode na rolagem defensiva
+> - (x) Pode
+> = Pode: a Ação Instantânea vale a qualquer momento, no turno de qualquer jogador (p. 8).
 >
-> d) Vender o Revolver II depois de ele estar no tabuleiro.
+> ?? d) Vender o Revolver II depois de ele estar no tabuleiro.
+> - ( ) Pode, por 1 CP
+> - ( ) Pode, pelo custo dele, 2 CP
+> - (x) Não pode
+> = Não pode: uma Melhoria de Herói jogada fica no tabuleiro e não se vende (p. 8).
 >
-> e) Jogar uma Melhoria de Herói na rolagem ofensiva, depois de ver os dados.
-
-### Respostas da etapa 3
-
-- **Complete:** vendendo 2 cartas (1 CP cada) na fase Principal, chega a 5 CP; paga 3 e 2 e fica com 0. Das 5 cartas, 2 foram vendidas e 2 jogadas: sobra 1 na mão (p. 12).
-- **Sua vez:** vender 2 cartas, até ficar com 6. A primeira leva o CP a 15; a segunda não dá nada, porque 15 é o teto. Termina com 15 CP (p. 4 e 13).
-- **Treino a:** não; só no seu turno, nas fases Principais (p. 9). **b:** sim; Ações de Fase de Rolagem valem depois de qualquer passo da rolagem ofensiva (p. 9 e 12). **c:** sim, a qualquer momento (p. 8). **d:** não (p. 8). **e:** não; Melhorias só nas fases Principais (p. 8).
+> ?? e) Jogar uma Melhoria de Herói na rolagem ofensiva, depois de ver os dados.
+> - (x) Não pode
+> - ( ) Pode, se pagar o custo
+> - ( ) Pode, mas só para subir de II para III
+> = Não pode: Melhorias só nas fases Principais (p. 8).
 
 ## 5. Etapa 4: fichas, tipos de dano e a habilidade suprema
 
@@ -327,25 +455,109 @@ O guia tem quatro etapas: montar a mesa e ler o tabuleiro do herói; rolar, atac
 >
 > É um Ataque contra quem tem Recompensa: ela soma 1 ao dano e ganha 1 CP. Gasta a Recarga e rola 5: metade de 5 é 2,5, que arredondada para cima dá 3. Dano total: 3 + 1 + 3 = 7, todo normal. O adversário pode usar a defesa dele e gastar fichas que evitem dano; o que sobrar entra na Vida dele no fim da fase de rolagem.
 
-> [!complete] **Complete.** Mesma situação, mas a Recarga rola 4. Já sabemos: o Revolver dá 3 e a Recompensa soma 1. Termine: quanto a Recarga soma, qual é o dano total, e o que mais a Pistoleira ganha?
+> [!complete] **Complete.** Mesma situação, mas a Recarga rola 4. Já sabemos: o Revolver dá 3 e a Recompensa soma 1.
+>
+> ?? Quanto a Recarga soma, qual é o dano total, e o que mais a Pistoleira ganha?
+> - ( ) Soma 4; total 8; ganha 1 CP
+> - ( ) Soma 2; total 6; não ganha mais nada
+> - (x) Soma 2; total 6; ganha 1 CP
+> - ( ) Soma 2; total 5; ganha 1 CP
+> = Metade de 4 é 2. Total: 3 + 1 + 2 = 6. Ela ganha também 1 CP, pela Recompensa (p. 2).
 
-> [!suavez] **Sua vez.** A Pistoleira ativa o Deadeye contra um adversário que tem 1 ficha de Evasiva: Derrubada e 6 de dano indefensável. O adversário pode ativar a habilidade defensiva? Pode gastar a Evasiva? Se a Evasiva rolar 2, o que acontece com o dano e com a Derrubada? E no turno seguinte, o que o adversário precisa decidir?
+> [!suavez] **Sua vez.** A Pistoleira ativa o Deadeye contra um adversário que tem 1 ficha de Evasiva: Derrubada e 6 de dano indefensável.
+>
+> ?? O adversário pode ativar a habilidade defensiva?
+> - ( ) Sim, como contra qualquer Ataque
+> - (x) Não
+> - ( ) Sim, mas só se gastar a Evasiva antes
+> = Não pode usar a defesa, porque o dano é indefensável (p. 5 e 10).
+>
+> ?? Ele pode gastar a Evasiva?
+> - (x) Sim
+> - ( ) Não; a Evasiva só vale contra dano normal
+> - ( ) Não; nada evita dano indefensável
+> = Pode, porque o dano indefensável pode ser evitado (p. 2 e 10).
+>
+> ?? A Evasiva rola 2. O que acontece com o dano e com a Derrubada?
+> - ( ) Ele não recebe o dano, e a Derrubada também é anulada
+> - (x) Ele não recebe os 6 de dano, mas a Derrubada fica
+> - ( ) Ele recebe o dano, porque só o 1 evita
+> = Com 1 ou 2, não recebe os 6 de dano, mas a Derrubada fica, porque "outros efeitos ainda valem" (p. 2).
+>
+> ?? No turno seguinte, o que o adversário precisa decidir?
+> - ( ) Se pula o turno inteiro ou paga 2 CP na Renda
+> - ( ) Nada: a Derrubada sai no fim do turno da Pistoleira
+> - (x) Antes da rolagem ofensiva, pagar 2 CP para tirar a Derrubada ou pular a rolagem ofensiva
+> = Antes da rolagem ofensiva, ele paga 2 CP para tirar a Derrubada ou pula a rolagem ofensiva e então tira a ficha (p. 2).
 
 > [!treino] **Treino rápido: o defensor pode...?**
 >
-> a) Usar a habilidade defensiva contra os 6 de dano indefensável do Deadeye?
+> ?? a) Usar a habilidade defensiva contra os 6 de dano indefensável do Deadeye?
+> - ( ) Sim
+> - (x) Não
+> - ( ) Só depois de gastar uma Evasiva
+> = Não: dano indefensável não admite defesa (p. 5 e 10).
 >
-> b) Gastar Evasiva contra os 10 de dano da habilidade suprema Fill'em with Lead!?
+> ?? b) Gastar Evasiva contra os 10 de dano da habilidade suprema Fill'em with Lead!?
+> - ( ) Sim, e com 1 ou 2 no dado não recebe nada
+> - ( ) Sim, mas só previne metade
+> - (x) Não
+> = Não: dano supremo não pode ser evitado, e depois da ativação os adversários não fazem nada até o fim da fase de rolagem (p. 5 e 10).
 >
-> c) Gastar Evasiva contra os 5 de dano normal do Take Cover?
+> ?? c) Gastar Evasiva contra os 5 de dano normal do Take Cover?
+> - (x) Sim
+> - ( ) Não; a Evasiva só vale contra dano indefensável
+> - ( ) Não; ficha só se gasta no próprio turno
+> = Sim: dano normal pode ser evitado, e fichas gastáveis se gastam no turno de qualquer jogador (p. 7 e 10).
 >
-> d) Mudar um dado da Pistoleira, com uma carta, quando ela tem 5 Moscas e ainda não anunciou a habilidade suprema?
+> ?? d) Mudar um dado da Pistoleira, com uma carta, quando ela tem 5 Moscas e ainda não anunciou a habilidade suprema?
+> - ( ) Não; a suprema não pode ser impedida de jeito nenhum
+> - (x) Sim
+> - ( ) Só gastando uma ficha, não com carta
+> = Sim: é o único jeito de impedir a suprema, e tem de ser antes da ativação (p. 5 e 10).
 
-### Respostas da etapa 4
+> [!resolvido] **Exemplo resolvido: Feiticeira da Lua contra Bárbaro**, da caixa brasileira. Os dados da Feiticeira da Lua (Moon Elf) têm Flecha (Arrow) nas faces 1 e 2, Pé nas 4 e 5 e Lua na 6. Os do Bárbaro (Barbarian) têm Espada (Sword) nas faces 1 e 2, Coração nas 4 e 5 e Estrela na 6.
+>
+> A Feiticeira termina a rolagem com 1, 2, 4, 4 e 5: 2 Flechas e 3 Pés, o requisito do Covered Shot (Tiro protegido), que dá 1 Evasiva a ela e causa 7 de dano normal. O Bárbaro defende com o Thick Skin (Pele grossa): rola 3 dados e cura 2 por Coração. Tira 4, 6 e 1: um Coração, cura 2. Ele vai de 50 para 50 menos 7 mais 2, 45.
+>
+> No turno do Bárbaro, ele termina com 1, 2, 6, 6 e 4: 2 Espadas e 2 Estrelas, o Sturdy Blow (Golpe firme), 4 de dano **indefensável**. A defesa da Feiticeira, o Missed Me (Errou), não pode ser ativada. Mas ela pode gastar a Evasiva que ganhou: rola 1 dado e, com 1 ou 2, não recebe os 4 de dano.
 
-- **Complete:** metade de 4 é 2. Total: 3 + 1 + 2 = 6. Ela ganha também 1 CP, pela Recompensa (p. 2).
-- **Sua vez:** não pode usar a defesa, porque o dano é indefensável. Pode gastar a Evasiva, porque o dano indefensável pode ser evitado. Com 2, não recebe os 6 de dano, mas a Derrubada fica, porque "outros efeitos ainda valem". No turno seguinte, antes da rolagem ofensiva, ele paga 2 CP para tirar a Derrubada ou pula a rolagem ofensiva (p. 2 e 10).
-- **Treino a:** não. **b:** não; dano supremo não pode ser evitado. **c:** sim. **d:** sim; é o único jeito de impedir a suprema, e tem de ser antes da ativação (p. 5 e 10).
+> [!treino] **Treino: Feiticeira da Lua contra Bárbaro.** O Missed Me rola 5 dados: com pelo menos 2 Pés, previne metade do dano, arredondada para cima; e, para cada par de Flechas, causa 1 de dano no atacante.
+>
+> ?? O Bárbaro ativa o Smack (Tapa) com 1, 2, 1, 2 e 5: 4 Espadas, 6 de dano normal. A Feiticeira tira 4, 5, 1, 2 e 6 no Missed Me. Quanto cada um recebe?
+> - ( ) Ela recebe 6 e ele 1
+> - ( ) Ela recebe 4 e ele 2
+> - (x) Ela recebe 3 e ele 1
+> - ( ) Ela recebe 0 e ele 0
+> = Os 2 Pés previnem metade de 6, 3: ela recebe 3. Um par de Flechas causa 1 de dano no Bárbaro. O Smack dá 4, 6 ou 8 de dano com 3, 4 ou 5 Espadas.
+>
+> ?? Mesmo Smack, mas a Feiticeira tira 4, 5, 4, 5 e 1: 4 Pés e 1 Flecha. Quanto ela recebe?
+> - ( ) 0, porque 4 Pés previnem metade duas vezes
+> - (x) 3
+> - ( ) 6, porque com uma Flecha sozinha a defesa falha
+> = 3. "On" vale uma vez só, mesmo que o símbolo apareça mais vezes (p. 9 e 16): metade de 6 uma vez. A Flecha sozinha não forma par e não causa dano.
+>
+> ?? Contra os 4 de dano indefensável do Sturdy Blow, o que a Feiticeira pode fazer?
+> - ( ) Ativar o Missed Me e também gastar a Evasiva
+> - ( ) Ativar o Missed Me, mas não gastar a Evasiva
+> - (x) Gastar a Evasiva, mas não ativar o Missed Me
+> - ( ) Nada; dano indefensável não pode ser evitado
+> = Dano indefensável não admite defesa, mas pode ser evitado, por exemplo com a Evasiva (p. 10).
+
+> [!treino] **Treino: as fichas de Chi do Monge.** O Chi é um efeito positivo do Monge, com limite de pilha 5. Pode ser gasto a qualquer momento para prevenir 1 de dano por ficha; ou, como Modificador de Ataque, para somar 1 de dano por ficha a um Ataque dele. Chi não pode aumentar dano no turno em que foi ganho.
+>
+> ?? O Monge ganhou 2 Chi com o Fist of Harmony no turno passado (etapa 2). Agora ativa o Fist Strike (Golpe de punho) com 1, 2, 1, 2 e 6: 4 Punhos, 6 de dano. Ele gasta as 2 Chi para aumentar o dano. Quanto o Ataque causa antes da defesa?
+> - ( ) 6, porque Chi só serve para prevenir
+> - (x) 8
+> - ( ) 10, porque cada Chi soma 2
+> - ( ) 12, porque o Chi dobra o dano
+> = 6 mais 1 por Chi gasto: 8. As fichas vieram do turno anterior, então podem aumentar o dano. O Fist Strike dá 4, 6 ou 8 de dano com 3, 4 ou 5 Punhos.
+>
+> ?? E se o Monge quisesse gastar, para aumentar o dano do Fist of Harmony, as 2 Chi que esse mesmo ataque acabou de dar?
+> - ( ) Pode, desde que gaste antes da defesa
+> - (x) Não pode
+> - ( ) Pode, mas cada Chi soma só metade
+> = Não pode: Chi não aumenta dano no turno em que foi ganho. Para prevenir dano, ela pode ser gasta a qualquer momento.
 
 ## 6. Situações especiais
 
@@ -371,27 +583,67 @@ O guia tem quatro etapas: montar a mesa e ler o tabuleiro do herói; rolar, atac
 
 Responda sem consultar. Depois confira e veja o que reler.
 
-1. Você é o jogador inicial. No seu primeiro turno, quanto CP tem na rolagem ofensiva, se não vendeu nem jogou nada?
-2. A Pistoleira termina com 1, 1, 2, 6, 6. Que habilidade pode ativar? E com 2, 2, 2, 2, 6 e o Revolver II no tabuleiro?
-3. Os dados mostram combinações para duas habilidades. Quantas você ativa?
-4. Um Ataque de 9 de dano normal. A Pistoleira ganha o Duel e escolhe prevenir. Quanto recebe?
-5. A Pistoleira tem 8 cartas e 15 CP na fase de Descarte. Com quanto CP e quantas cartas termina?
-6. Uma carta de borda azul pode ser jogada no turno do adversário?
-7. O adversário causa dano indefensável. A Pistoleira pode usar o Duel? E a Evasiva?
-8. Uma habilidade suprema foi ativada contra você. O que você ainda pode fazer?
+?? **1.** Você é o jogador inicial. No seu primeiro turno, quanto CP tem na rolagem ofensiva, se não vendeu nem jogou nada?
+- ( ) 3 CP
+- ( ) 0 CP
+- (x) 2 CP
+- ( ) 1 CP
+= 2 CP: o jogador inicial começa com 2 e pula a Renda no primeiro turno (p. 3 e 4). Errou? Releia a etapa 3.
 
-### Respostas da avaliação
+?? **2a.** A Pistoleira termina com 1, 1, 2, 6, 6. Que habilidade pode ativar?
+- (x) Revolver ou Bounty Hunter, só uma das duas
+- ( ) Revolver e Bounty Hunter, as duas
+- ( ) Só o Bounty Hunter
+- ( ) Deadeye
+= Revolver (3 Balas: 1, 1 e 2) ou Bounty Hunter (2 Balas e 2 Moscas), só uma das duas (p. 2 e 4). Errou? Releia a etapa 2.
 
-1. **2 CP**: o jogador inicial pula a Renda no primeiro turno (etapa 3).
-2. **Revolver** (3 Balas: 1, 1 e 2) **ou Bounty Hunter** (2 Balas e 2 Moscas), só uma das duas. Com 2, 2, 2, 2 e 6: **Revolver II** com 4 Balas, 5 de dano, e **Derrubada**, porque são 4 iguais pelo número (etapas 2 e 3).
-3. **Uma** (etapa 2).
-4. **4**: metade de 9 é 4,5, que arredondada para cima dá 5 de prevenção; 9 menos 5 dá 4 (etapa 2).
-5. **15 CP e 6 cartas**: vende 2, mas o CP já está no teto (etapa 3).
-6. **Não**: Ação de Fase Principal só no seu turno (etapa 3).
-7. **Duel, não. Evasiva, sim** (etapa 4).
-8. **Nada** até o fim da fase de rolagem (etapa 4).
+?? **2b.** E com 2, 2, 2, 2, 6 e o Revolver II no tabuleiro?
+- ( ) Revolver II com 4 de dano, sem Derrubada
+- ( ) Revolver II com 5 de dano, sem Derrubada, porque iguais contam o símbolo
+- (x) Revolver II com 5 de dano e Derrubada
+- ( ) Revolver II com 6 de dano e Derrubada
+= Revolver II com 4 Balas, 5 de dano, e Derrubada, porque são 4 iguais pelo número (p. 8 e 16). Errou? Releia as etapas 2 e 3.
 
-> [!atencao] **Critério para começar a jogar.** Acertou 7 ou 8? Monte a mesa e jogue, com a folha de consulta ao lado. Errou a 2, a 3 ou a 4, releia a etapa 2. Errou a 1, a 5 ou a 6, a etapa 3. Errou a 7 ou a 8, a etapa 4. Depois refaça só as perguntas que errou.
+?? **3.** Os dados mostram combinações para duas habilidades. Quantas você ativa?
+- (x) Uma
+- ( ) Duas
+- ( ) Duas, se pagar 1 CP pela segunda
+= Uma: só uma habilidade por rolagem ofensiva (p. 4). Errou? Releia a etapa 2.
+
+?? **4.** Um Ataque de 9 de dano normal. A Pistoleira ganha o Duel e escolhe prevenir. Quanto recebe?
+- ( ) 5
+- (x) 4
+- ( ) 9
+- ( ) 0
+= 4: metade de 9 é 4,5, que arredondada para cima dá 5 de prevenção; 9 menos 5 dá 4 (p. 3). Errou? Releia a etapa 2.
+
+?? **5.** A Pistoleira tem 8 cartas e 15 CP na fase de Descarte. Com quanto CP e quantas cartas termina?
+- ( ) 17 CP e 6 cartas
+- (x) 15 CP e 6 cartas
+- ( ) 15 CP e 8 cartas
+= 15 CP e 6 cartas: vende 2, mas o CP já está no teto (p. 4 e 13). Errou? Releia a etapa 3.
+
+?? **6.** Uma carta de borda azul pode ser jogada no turno do adversário?
+- ( ) Sim, a qualquer momento
+- ( ) Sim, mas só na rolagem defensiva
+- (x) Não
+= Não: a borda azul é Ação de Fase Principal, só no seu turno (p. 9). Errou? Releia a etapa 3.
+
+?? **7.** O adversário causa dano indefensável. A Pistoleira pode usar o Duel? E a Evasiva?
+- ( ) Os dois
+- (x) Duel não; Evasiva sim
+- ( ) Duel sim; Evasiva não
+- ( ) Nenhum dos dois
+= Duel, não, porque dano indefensável não admite defesa. Evasiva, sim, porque ele pode ser evitado (p. 10). Errou? Releia a etapa 4.
+
+?? **8.** Uma habilidade suprema foi ativada contra você. O que você ainda pode fazer?
+- ( ) Gastar Evasiva
+- ( ) Jogar uma Ação Instantânea
+- ( ) Usar a habilidade defensiva
+- (x) Nada até o fim da fase de rolagem
+= Nada até o fim da fase de rolagem: nenhuma carta, ficha ou companheiro (p. 5 e 10). Errou? Releia a etapa 4.
+
+> [!atencao] **Critério para começar a jogar.** Acertou 8 ou 9 perguntas? Monte a mesa e jogue, com a folha de consulta ao lado. Errou a 2a, a 2b, a 3 ou a 4, releia a etapa 2. Errou a 1, a 5 ou a 6, a etapa 3. Errou a 7 ou a 8, a etapa 4. Depois refaça só as perguntas que errou.
 
 ## 8. Para consultar durante a partida
 
@@ -427,4 +679,6 @@ Responda sem consultar. Depois confira e veja o que reler.
 
 - Dice Throne Inc. *Dice Throne: Rules of Play*, versão 2.3.2 (arquivo de 04/07/2022, 16 páginas). https://cdn.shopify.com/s/files/1/0045/4013/7562/files/Dice_Throne_Rulebook_-_v2.3.2_-_2022.07.04.pdf. Consultado em 31/10/2026.
 - Dice Throne Inc. e Roxley. *Dice Throne: Rules of Play*, versão 2.4.1 (arquivo "Dice Throne Rulebook - v2.4.1 - 2023.05.10", 16 páginas em 9 folhas duplas, copyright 2023), a versão para a qual rules.dicethrone.com aponta em 31/10/2026. Mesma paginação da 2.3.2; usada para conferir mudanças e para os dados da capa (2 a 6 jogadores, 30 minutos, 8 anos ou mais). Consultado em 31/10/2026.
-- Não foram encontrados FAQ nem errata separados; as perguntas frequentes ficam no folheto de cada herói. Não foi confirmada edição brasileira com manual público até 31/10/2026.
+- Dice Throne Inc. Imagens oficiais dos componentes do Season One Battle Chest (tabuleiros, folhetos e dados do Monge, do Paladino, da Feiticeira da Lua e do Bárbaro), na página do produto da loja oficial: https://shop.dicethrone.com/products/dice-throne-br-season-one-battle-chest-1 (linkada nas páginas dos heróis em dicethrone.com/heroes). Fonte das habilidades e dos dados desses quatro heróis. Consultado em 01/11/2026.
+- Dice Throne Rulepop, "an official rules reference for Dice Throne", linkado na página FAQ/Downloads da loja oficial: https://dice-throne.rulepop.com/ (fichas e esclarecimentos de regra de cada herói). Consultado em 01/11/2026.
+- Não foram encontrados FAQ nem errata separados; as perguntas frequentes ficam no folheto de cada herói. Não foi encontrado manual em português público até 01/11/2026; no Brasil saíram as caixas Monge vs Paladino e Feiticeira da Lua vs Bárbaro (informação do editor).
