@@ -43,7 +43,7 @@ Ações do primeiro turno, tratado aqui como diurno (etapa 2) (p. 11 e 12):
 | Chamar Reforços | Arrisque de 1 a 6 horas | Mafiosos no seu quarteirão ou nos vizinhos |
 | Pausa para o Café | 1 hora | Nenhum |
 
-> [!resolvido] **Exemplo resolvido.** Ana, a mais nova, começa na Delegacia (coluna 3, linha 3). Há um mafioso logo acima, na linha 2. Ela dirige 1 quarteirão (1 hora) e faz Pegar Informante (2 horas): o mafioso vai para a Bolsa, a Ficha de Informante da linha 2 vai para o tabuleiro dela e o Distintivo avança 1 espaço. O indicador anda 3 espaços. Na Rolagem de Mafioso, branco 5 e preto 1: a coluna 5, linha 1, vazia, recebe um mafioso.
+> [!resolvido] **Exemplo resolvido.** Partida de 4 (com 2 jogadores não há Ficha de Informante na linha 2; veja as Situações especiais). Ana, a mais nova, começa na Delegacia (coluna 3, linha 3). Há um mafioso logo acima, na linha 2. Ela dirige 1 quarteirão (1 hora) e faz Pegar Informante (2 horas): o mafioso vai para a Bolsa, a Ficha de Informante da linha 2 vai para o tabuleiro dela e o Distintivo avança 1 espaço. O indicador anda 3 espaços. Na Rolagem de Mafioso, branco 5 e preto 1: a coluna 5, linha 1, vazia, recebe um mafioso.
 
 > [!complete] **Complete.** Bruno quer a Ficha de Investigação da coluna 4, linha 2, na diagonal da Delegacia.
 >
@@ -334,9 +334,9 @@ São quatro etapas, cada uma uma parte real da partida, com **Para entender** (c
 
 ## 6. Situações especiais
 
-**Partida de 2 jogadores.** Use 3 Fichas de Informante, ao lado das Fichas de Dado pretas 1, 3 e 5, e 3 Fichas de Testemunha, ao lado das brancas 2, 3 e 4; bastam 3 para decifrar o Cargo e 3 para a Gangue. No Modo Padrão, separe também 4 Cartas de Suspeito viradas para baixo, sob um Carro não usado: os álibis de um "agente fantasma". Ao Interrogar, você pode embaralhá-las e comprar uma em vez de pegar do outro jogador, devolvendo-a depois (p. 17).
+**Partida de 2 jogadores.** Use 3 Fichas de Informante, ao lado das Fichas de Dado pretas 1, 3 e 5, e 3 Fichas de Testemunha, ao lado das brancas 2, 3 e 4; bastam 3 para decifrar o Cargo e 3 para a Gangue. As fichas que sobram voltam para a caixa. Vale para os Modos Padrão e Cooperativo. No Modo Padrão, separe também 4 Cartas de Suspeito viradas para baixo, sob um Carro não usado: os álibis de um "agente fantasma". Ao Interrogar, você pode embaralhá-las e comprar uma em vez de pegar do outro jogador, devolvendo-a depois (p. 17).
 
-> [!mais] **Modo Cooperativo.** Tabuleiros de Agente e de Tempo no lado Cooperativo. Com 2 jogadores, Detetive e Patrulheira, e tire 1 Gângster Cinza da Bolsa; com 3, mais a Analista, e tire 1 mafioso de cada cor; com 4, os quatro agentes, e tire 2 de cada cor. Um Gângster Cinza removido, ao lado das 48 horas, marca a hora final (Marcador de Tempo Esgotado). Cada agente faz só as ações do seu tabuleiro, além de Dirigir, Prender, Chamar Reforços e Pausa para o Café, de dia ou de noite. Presos vão para a Bolsa. Cartas de Suspeito ficam abertas, evidências são de todos, e ninguém ganha Carta de Suspeito por ter fichas. Na Penalidade por Excesso de Eventos, ou com a Bolsa sem mafiosos, o Gângster Cinza da trilha recua 1 espaço. Com 2 jogadores, as Cartas de Corporação formam um conjunto comum de até 4. Detetive e Analista podem trocar uma Carta de Corporação ganha por uma Carta de Suspeito, gastando 3 horas. A equipe faz uma única acusação (p. 10, 18 e 19).
+> [!mais] **Modo Cooperativo.** Tabuleiros de Agente e de Tempo no lado Cooperativo. Com 2 jogadores, Detetive e Patrulheira, e tire 1 Gângster Cinza da Bolsa; com 3, mais a Analista, e tire 1 mafioso de cada cor; com 4, os quatro agentes, e tire 2 de cada cor. Um Gângster Cinza removido, ao lado das 48 horas, marca a hora final (Marcador de Tempo Esgotado). Cada agente faz só as ações do seu tabuleiro, além de Dirigir, Prender, Chamar Reforços e Pausa para o Café, de dia ou de noite. Presos vão para a Bolsa. Cartas de Suspeito ficam abertas, evidências são de todos, e ninguém ganha Carta de Suspeito por ter fichas. Na Penalidade por Excesso de Eventos, ou com a Bolsa sem mafiosos, o Gângster Cinza da trilha recua 1 espaço. Com 2 jogadores, as Cartas de Corporação formam um conjunto comum de até 4. Detetive e Analista podem trocar uma Carta de Corporação ganha por uma Carta de Suspeito, gastando 3 horas. Quando todos os Carros estiverem deitados, a equipe escolhe um único suspeito: acertou, todos vencem; errou, todos perdem (p. 10, 18 e 19).
 
 > [!mais] **Modo Solo.** Uma partida Cooperativa para 2, com você nos dois agentes; ou 3 ou 4 agentes, para mais desafio (p. 19).
 
@@ -348,6 +348,7 @@ São quatro etapas, cada uma uma parte real da partida, com **Para entender** (c
 > - **Investigação com falha:** pela letra da p. 10 ("pelo menos uma Ficha de Pista daquele tipo"), quem só tem uma falha também ganha a Carta de Suspeito (p. 10 e 12).
 > - **Álibis:** das duas maneiras da p. 8, olhar a carta de outro jogador só vale com o baralho vazio.
 > - **Encerrar Seu Caso:** listado entre as ações, mas descrito como escolha ao fim do turno; o guia segue a descrição (p. 14).
+> - **Parado no 48 sem encerrar:** o manual não diz o que acontece. Como nenhuma ação cabe sem passar do 48 (p. 14), na prática o guia trata o caso como encerrado.
 
 ## 7. Avaliação final
 

@@ -111,3 +111,19 @@ Não há resenha de Tiny Epic Crimes no site; `"resenha": null`. Se uma for publ
 ## Auditoria independente
 
 Pendente. `"publicar": false` até lá.
+
+## Auditoria independente: partida simulada
+
+Partida para 2 jogadores (Modo Padrão) montada e jogada só com o tutorial, até o fim da primeira volta de turnos (Ana, mais nova, joga primeiro da pilha; depois Bruno, ainda na pilha; segue quem está mais atrás). Modo Solo conferido como preparação Cooperativa para 2. Só depois o manual (pdftotext) foi aberto, para resolver cada lacuna.
+
+Veredito: dá para jogar só com o tutorial, com as correções abaixo.
+
+| Lacuna na simulação | Resolução no manual | Correção |
+|---|---|---|
+| O exemplo resolvido do Comece tira a Ficha de Informante da linha 2, que não existe numa partida de 2 (só linhas 1, 3 e 5). | p. 17: com 2 jogadores, Informante só nas pretas 1, 3 e 5. | O exemplo passa a dizer "Partida de 4" e remete às Situações especiais. |
+| Na preparação para 2, não se diz o que fazer com as 2 Fichas de Informante e as 2 de Testemunha que sobram, nem se a variante vale no Cooperativo. | p. 17: "Devolva as fichas não utilizadas para a caixa"; variante "Para os Modos Padrão e Cooperativo". | Acrescentado nas Situações especiais. |
+| Com o indicador no 48 sem ter encerrado, o turno não tem saída: nenhuma ação cabe. | O manual não trata o caso (p. 14 só proíbe passar do 48). | Registrado na lista de dúvidas do `[!edicao]`, com a leitura do guia. |
+| Modo Cooperativo/Solo: o tutorial não dizia quando a partida acaba nem como se vence. | p. 19: com todos os Carros deitados, acusação coletiva; certa, todos vencem; errada, todos perdem. | Frase acrescentada ao `[!mais]` do Modo Cooperativo. |
+| Primeiro turno, fora da trilha: dia ou noite? | O manual não diz (p. 15 fala só do espaço do indicador). | Mantida a nota `[!edicao]` existente. |
+
+Conferidos sem divergência: ordem de turno e pilha inicial (p. 5 e 8), custos e requisitos das ações (p. 11 a 13), horas arriscadas em Chamar Reforços (p. 12), Tocaia com falha (p. 13), Comprar Evento e rolagens de preparação (p. 15), Encerrar Seu Caso e desempate (p. 14 e 17), agente fantasma (p. 17).
