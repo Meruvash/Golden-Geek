@@ -25,7 +25,7 @@ O marcado *(depois)* se monta já e se usa mais tarde.
 
 ### Seu primeiro turno
 
-A sua Carta de Jogador traz uma Faca para o Ataque Corpo a Corpo e uma Pistola para o Ataque a Distância (ilustração da p. 5).
+A sua Carta de Jogador traz uma Faca para o Ataque Corpo a Corpo e uma Pistola para o Ataque a Distância (leitura da ilustração da p. 5; veja a etapa 3).
 
 1. **Mova-se 3 vezes**, sempre para uma Sala vizinha. Salas que se encostam são vizinhas, mesmo em Lojas diferentes (p. 8).
 2. **Depois de cada movimento**, pode matar 1 Zumbi (p. 9). Entrou em Sala **com** Zumbi: Ataque Corpo a Corpo obrigatório; role o Dado de Luta, que mata sempre e pode lhe dar 1 ou 2 danos ou um Acerto Crítico (1 movimento grátis, se quiser). Entrou em Sala **sem** Zumbi: pode atirar num Zumbi de Sala vizinha, por 1 munição.
