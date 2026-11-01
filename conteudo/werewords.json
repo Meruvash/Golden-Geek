@@ -1,0 +1,360 @@
+{
+ "slug": "werewords",
+ "jogo": "Werewords",
+ "cor": "#5b3f9a",
+ "kicker": "Resenha · Jogo de palavras com dedução social",
+ "og_titulo": "Werewords vale a pena? Resenha Elite Boardgamers",
+ "titulo_busca": "Werewords: resenha do Vinte Perguntas com lobisomem",
+ "descricao": "Resenha de Werewords, de Ted Alspach, Golden Geek de jogo de festa de 2017: como funciona, o aplicativo obrigatório, a edição no Brasil e para quem é.",
+ "titulo_html": "O jogo em que saber a resposta é perigoso: <span>Werewords</span>",
+ "lede": "Werewords é Vinte Perguntas com lobisomem: um jogador conhece a palavra secreta e responde só com fichas de sim e não, e a mesa tem quatro minutos para adivinhar. Venceu o Golden Geek de jogo de festa de 2017 e foi indicado ao Spiel des Jahres de 2019. A graça é que o Vidente também sabe a resposta e precisa ajudar sem parecer que ajuda. Saber demais, aqui, dá prejuízo. E sem edição brasileira, a festa chega com sotaque.",
+ "tags": [
+  "4–10 jogadores",
+  "10 min",
+  "8+",
+  "Dedução social",
+  "Jogo de palavras"
+ ],
+ "alt": "Celular com o aplicativo de Werewords mostrando a palavra secreta, cercado de cartas de papel, carta de Prefeito e fichas de sim, não e talvez",
+ "premiacoes": [
+  {
+   "premio": "Spiel des Jahres",
+   "ano": 2019,
+   "categoria": "Spiel des Jahres",
+   "colocacao": null,
+   "resultado": "indicado",
+   "fonte": "https://www.spiel-des-jahres.de/spiele/werwoerter/",
+   "rotulo": "Indicado"
+  },
+  {
+   "premio": "Golden Geek",
+   "ano": 2017,
+   "categoria": "Festa",
+   "colocacao": 1,
+   "resultado": "vencedor",
+   "fonte": "https://boardgamegeek.com/thread/1955324",
+   "rotulo": "Vencedor"
+  }
+ ],
+ "ficha": [
+  [
+   "Ano",
+   "2017"
+  ],
+  [
+   "Designer",
+   "Ted Alspach"
+  ],
+  [
+   "Arte",
+   "Jason Boles e Roland MacDonald, segundo o ComparaJogos"
+  ],
+  [
+   "Editora original",
+   "Bezier Games"
+  ],
+  [
+   "Editora no Brasil",
+   "Sem edição nacional (não confirmada nas fontes consultadas)"
+  ],
+  [
+   "Jogadores",
+   "4 a 10 (a edição Deluxe vai de 2 a 20)"
+  ],
+  [
+   "Duração anunciada",
+   "10 minutos, com 4 minutos de perguntas por rodada"
+  ],
+  [
+   "Idade",
+   "8+ (Tabletop Gaming); 10+ na edição alemã da Ravensburger"
+  ],
+  [
+   "Nota BGG",
+   "7,1 (6.414 avaliações), via boardmatch.app, que reproduz o BGG"
+  ],
+  [
+   "Peso BGG",
+   "1,2 / 5"
+  ],
+  [
+   "Melhor com",
+   "6 jogadores, segundo a enquete do BGG reproduzida pelo boardmatch.app"
+  ],
+  [
+   "Nota Ludopedia",
+   "não confirmada nas fontes consultadas"
+  ],
+  [
+   "Aplicativo",
+   "obrigatório, gratuito para iOS e Android; sem português entre os idiomas da App Store"
+  ],
+  [
+   "Componentes",
+   "cartas de papel, 36 fichas de sim/não, 10 de talvez, 1 de quase lá e 1 de correto"
+  ]
+ ],
+ "nota_ficha": "Ludopedia e BoardGameGeek bloqueiam acesso automatizado: os números do BGG vêm do boardmatch.app, que reproduz o BGG sem informar a data da coleta, e a página do jogo na Ludopedia não foi encontrada. A contagem de fichas vem do resumo de regras do GameRules. As fotos são da Bezier Games e parte delas mostra a edição Deluxe.",
+ "como_funciona": [
+  "Werewords mistura o velho Vinte Perguntas com um jogo de papéis ocultos. Cada jogador recebe uma carta secreta: Vidente, Lobisomem ou Aldeão. Um deles também vira Prefeito, fica com as fichas de resposta e guarda o próprio papel em segredo, então o Prefeito pode ser o Lobisomem.",
+  "A rodada começa com a noite, conduzida pelo aplicativo gratuito, que é obrigatório. Com todos de olhos fechados, o Prefeito escolhe a palavra mágica entre as opções que o celular mostra. Depois, o Vidente e o Lobisomem abrem os olhos, um de cada vez, para ver a palavra. Com 7 jogadores ou mais, entram dois lobisomens.",
+  "Vem o dia: quatro minutos no cronômetro do aplicativo. Todos fazem perguntas de sim ou não ao Prefeito, que responde sem falar, entregando fichas de sim, não ou talvez a quem perguntou. Há ainda uma ficha única de quase lá, para quando alguém chega perto, e a ficha de correto, para o acerto. Palpite também se faz em forma de pergunta: é espátula?",
+  "O dia acaba quando alguém acerta a palavra, quando as fichas de sim e não se esgotam ou quando o tempo zera. Os aldeões e o Vidente querem a palavra adivinhada; o Lobisomem, que também a conhece, quer que ninguém chegue lá, e para isso faz perguntas que desviam o grupo.",
+  "O final decide tudo. Se a palavra saiu, os lobisomens se revelam e têm 15 segundos para apontar quem é o Vidente; se acertarem, roubam a vitória. Se a palavra não saiu, a mesa tem um minuto para discutir e vota em quem acha que é o Lobisomem; achando um, os aldeões ainda vencem."
+ ],
+ "passos": [
+  [
+   "DISTRIBUA OS PAPÉIS",
+   "Cada jogador recebe uma carta secreta de Vidente, Lobisomem ou Aldeão. Um deles vira Prefeito e fica com as fichas, sem revelar o próprio papel."
+  ],
+  [
+   "NOITE NO APLICATIVO",
+   "De olhos fechados, a mesa segue o celular: o Prefeito escolhe a palavra entre as opções, e o Vidente e o Lobisomem abrem os olhos para vê-la."
+  ],
+  [
+   "PERGUNTE SIM OU NÃO",
+   "Começam os quatro minutos. Todos fazem perguntas de sim ou não, e o Prefeito responde só com fichas: sim, não, talvez, quase lá ou correto."
+  ],
+  [
+   "ACERTO OU FIM",
+   "A rodada termina quando alguém acerta a palavra, quando acabam as fichas de sim e não ou quando o cronômetro do aplicativo chega a zero."
+  ],
+  [
+   "A CAÇA FINAL",
+   "Se a palavra saiu, os lobisomens têm 15 segundos para apontar o Vidente. Se não saiu, a mesa discute um minuto e vota em quem é o Lobisomem."
+  ]
+ ],
+ "como_resumo": "Adivinhe a palavra em quatro minutos sem entregar quem já sabia a resposta.",
+ "perfil": [
+  [
+   "Partida curta",
+   5
+  ],
+  [
+   "Facilidade de ensinar",
+   4
+  ],
+  [
+   "Interação entre jogadores",
+   5
+  ],
+  [
+   "Blefe e dedução",
+   4
+  ],
+  [
+   "Profundidade",
+   2
+  ],
+  [
+   "Acesso no Brasil",
+   1
+  ]
+ ],
+ "experiencia": [
+  "Ninguém admite, mas os primeiros trinta segundos parecem brincadeira de viagem de carro. É um animal? Ficha de não. Cabe numa gaveta? Talvez. O Prefeito empurra fichas sem abrir a boca, e a pilha na frente de cada um vira um mapa do que a mesa já descobriu. Aí alguém pergunta, do nada, se é utensílio de cozinha. A mesa congela. Ele deduziu isso ou ele já sabia?",
+  "É aí que o jogo começa de verdade. Digamos que a palavra seja espátula. O Vidente sabe, então faz perguntas com cara de palpite e torce para alguém chegar lá antes que fique óbvio. O Lobisomem também sabe, e gasta fichas perguntando se é algo de praia, com toda a calma de quem está ajudando. Se a palavra sai, os lobisomens têm 15 segundos para apontar o espertinho da cozinha. Se não sai, todo mundo vira promotor por um minuto. A rodada, segundo a Opinionated Gamers, fica abaixo de dez minutos. A discussão sobre aquela pergunta da gaveta dura o resto da noite."
+ ],
+ "funciona": [
+  [
+   "Dois jogos numa rodada só",
+   "Por fora é adivinhação de palavra; por dentro, cada pergunta é uma pista sobre quem perguntou. Chris Wray, da Opinionated Gamers, chama Werewords de um dos melhores jogos de dedução social que já jogou, e o Spiel des Jahres o pôs entre os três indicados de 2019."
+  ],
+  [
+   "O Vidente que não pode brilhar",
+   "O melhor papel da caixa é o de quem sabe tudo e precisa parecer comum. Para a Opinionated Gamers, separar os papéis de Vidente e Lobisomem deixa o jogo mais divertido e eficaz que Insider, com quem a crítica o compara o tempo todo. Cada pergunta do Vidente é um cálculo entre ajudar e se entregar."
+  ],
+  [
+   "Ninguém precisa narrar",
+   "O aplicativo conduz a noite, escolhe as opções de palavra e roda o cronômetro, então ninguém fica de fora para ser mestre de cerimônia. A Meeple Mountain elogia exatamente isso, e a Board Game Barrage diz que, depois de aberto o aplicativo, a rodada se explica sozinha."
+  ],
+  [
+   "Regra em dois minutos",
+   "Pergunta de sim ou não todo mundo já sabe fazer, e o resto se aprende na primeira rodada. A Tabletop Gaming chama o jogo de rápido, simpático e fácil de explicar, uma boa porta de entrada para a dedução social, e o júri do Spiel des Jahres destacou quanta diversão cabe em cinco minutos."
+  ],
+  [
+   "Palavras que não acabam",
+   "Segundo a App Store, o aplicativo traz mais de 40 mil palavras em quatro níveis, de fácil a ridículo, além de listas temáticas e listas próprias. A Opinionated Gamers vê no banco grande e nos níveis ajustáveis a resposta ao ponto fraco de Insider. Para o Brasil, a lista própria é o caminho para jogar com palavras em português."
+  ],
+  [
+   "Lugar para os tímidos",
+   "Em vez de acusar alguém o tempo todo, a mesa passa quatro minutos perguntando sobre uma palavra. A Meeple Mountain nota que esse formato, menos de confronto, abre espaço para quem costuma ficar calado nos jogos de lobisomem, e as perguntas acabam revelando os jogadores do mesmo jeito."
+  ]
+ ],
+ "atencao": [
+  [
+   "Grave",
+   "Um jogo de palavras que não fala português",
+   "Não há edição brasileira nas fontes consultadas, e o ComparaJogos não tinha nenhuma oferta em 01/11/2026. O aplicativo, que é obrigatório, não lista português entre seus idiomas na App Store. É um jogo inteiro sobre palavras. Só não sobre as suas. A saída é montar uma lista própria e importar a caixa, e aí a festa começa na alfândega."
+  ],
+  [
+   "Moderada",
+   "O celular é o jogador principal",
+   "Sem o aplicativo não há jogo: a Tabletop Gaming lamenta que não exista modo sem ele, e a Board Game Barrage admite que precisar de aplicativo já tira parte da animação. Na prática, a festa depende de um telefone com bateria. A gente conhece festas. O telefone com bateria é sempre o dos outros."
+  ],
+  [
+   "Moderada",
+   "Quatro jogadores, só no papel",
+   "A caixa aceita quatro. A Meeple Mountain diz que com quatro não funciona, que cinco é aceitável e que o jogo brilha de seis a oito; acima disso, vira bagunça. Com quatro, sobram tão poucos suspeitos que a votação final é menos dedução e mais par ou ímpar."
+  ],
+  [
+   "Moderada",
+   "A caça chega no último minuto",
+   "Para a Tabletop Gaming, a maior parte da rodada é perguntar sobre a palavra, e a dedução dos papéis fica empurrada para a votação final, o que tira tensão. A revista também acha que ele segura menos partidas que jogos de blefe mais profundos. São quatro minutos de quiz e um minuto de tribunal."
+  ],
+  [
+   "Leve",
+   "Um prefeito que sabota a cidade",
+   "O Prefeito pode ser o Lobisomem, e a Board Game Barrage reclama que isso não faz sentido no tema e que fica difícil saber se ele está sabotando ou só sem jeito para responder. O jogo chama isso de reviravolta. Fora da mesa, isso tem outro nome, mas a gente não fala de política em resenha."
+  ],
+  [
+   "Leve",
+   "O nível se chama ridículo, e é honesto",
+   "As palavras podem ficar difíceis demais, diz a Board Game Barrage, e um dos jogadores da Opinionated Gamers viu rodadas em que todas as opções do Prefeito pareciam desastre. O aplicativo pelo menos avisa: o nível mais alto se chama, literalmente, ridículo."
+  ]
+ ],
+ "jogadores": [
+  [
+   "4 jogadores",
+   "A Meeple Mountain diz que não funciona: sobram poucos suspeitos e a votação final perde a graça.",
+   1
+  ],
+  [
+   "5 jogadores",
+   "Aceitável para a Meeple Mountain, ainda com um lobisomem só.",
+   2
+  ],
+  [
+   "6 a 8 jogadores",
+   "A faixa recomendada pela Meeple Mountain; seis é a melhor contagem na enquete do BGG. A partir de sete entram dois lobisomens.",
+   3
+  ],
+  [
+   "9 ou 10 jogadores",
+   "Funciona, mas a Meeple Mountain avisa que acima de oito a mesa pode virar bagunça.",
+   2
+  ]
+ ],
+ "primeira_partida": "A regra cabe em dois minutos; o que confunde é o final. A Board Game Barrage achou complicado explicar os papéis e as duas votações de redenção, então diga antes: palavra adivinhada, os lobisomens caçam o Vidente; palavra perdida, a mesa caça o Lobisomem. Comece no nível fácil e com um Prefeito que já jogou. Se o grupo não lê inglês com folga, monte antes uma lista própria de palavras em português no aplicativo, e teste o celular com o volume alto.",
+ "edicao_nacional": "Werewords não tem edição brasileira nas fontes consultadas, e em 01/11/2026 o ComparaJogos não mostrava oferta nova nem usada da edição original nem da Deluxe. Lá fora, a Bezier Games vende a caixa por US$ 19,95 e a Deluxe por US$ 29,95. As cartas da edição original trazem os papéis em inglês, e o aplicativo obrigatório não lista português entre seus idiomas; o ComparaJogos classifica o jogo como dependente de idioma.",
+ "preco_ref": {
+  "faixa": "sem oferta no Brasil",
+  "data": "01/11/2026",
+  "obs": "nenhuma oferta no ComparaJogos; US$ 19,95 na loja da Bezier Games (Deluxe por US$ 29,95), sem frete e impostos"
+ },
+ "versoes": "A Werewords Deluxe Edition (2018) foi financiada no Kickstarter com cerca de 2.400 apoiadores, segundo a Wikipedia; vai de 2 a 20 jogadores, traz papéis especiais novos e o modo Speedwords. Lojas também listam uma segunda edição da Bezier, sem mudanças confirmadas nas fontes consultadas. Na Alemanha, saiu pela Ravensburger como Werwörter. Versão digital para jogar sem a caixa: não confirmada nas fontes consultadas.",
+ "comparacoes": [
+  [
+   "Código Secreto (Codenames)",
+   "codenames",
+   "Outro jogo de palavras em que dar a pista certa sem entregar demais é tudo. Mais calmo, em times e sem aplicativo, e com edição em português da Devir."
+  ],
+  [
+   "The Mind",
+   "the-mind",
+   "Venceu o Golden Geek de jogo de festa no ano seguinte. Também cabe em minutos e vive de ler os outros, mas sem palavras, sem traidor e em silêncio total."
+  ],
+  [
+   "Just One",
+   null,
+   "Foi o jogo que bateu Werewords no Spiel des Jahres de 2019: adivinhação de palavra cooperativa, sem papel oculto, para quem quer a parte do quiz e dispensa o tribunal."
+  ]
+ ],
+ "para_quem": [
+  "Junta seis a oito pessoas e só tem meia hora",
+  "Acha que jogo de lobisomem tem gritaria demais",
+  "Sabe fazer cara de quem não sabe nada",
+  "Topa digitar uma lista de palavras em português",
+  "Lê inglês e não se importa de comprar lá fora"
+ ],
+ "nao_e_para": [
+  "Joga sempre em quatro",
+  "Quer a caixa na loja da esquina, em português",
+  "Odeia celular na mesa de jogo",
+  "Procura um jogo de blefe para a noite inteira",
+  "Tem um amigo que sempre esquece o carregador"
+ ],
+ "selo": "Recomendado com ressalva",
+ "ressalva": "sem edição nem aplicativo em português",
+ "melhor_para": "festa",
+ "veredito": "Werewords é o jogo em que saber a resposta é perigoso. O Vidente sabe a palavra, precisa ajudar e não pode parecer que ajuda; o Lobisomem sabe a mesma palavra e finge que tenta. Quatro minutos de perguntas bobas viram um interrogatório, e o Golden Geek de jogo de festa de 2017 e a indicação ao Spiel des Jahres de 2019 não vieram de graça. O que pesa: não funciona bem em quatro, o celular é obrigatório e, para a gente, o problema maior é que não existe edição brasileira nem aplicativo em português. Se você importa a caixa e monta uma lista própria, compre: é a melhor dedução social para quem tem dez minutos. Se não, fique com o conselho do próprio jogo. Quem sabe demais, fica quieto.",
+ "tagline": "Saber a resposta é fácil. Difícil é saber e fingir que não sabe.",
+ "citacao": {
+  "texto": "Um dos melhores jogos de dedução social que já joguei.",
+  "fonte": "Chris Wray, Opinionated Gamers (tradução livre)"
+ },
+ "consulta": "01/11/2026",
+ "fontes": [
+  [
+   "Bezier Games – Werewords",
+   "https://beziergames.com/products/werewords",
+   "descrição, papéis, preço"
+  ],
+  [
+   "Bezier Games – Werewords Deluxe Edition",
+   "https://beziergames.com/products/werewords-deluxe-edition",
+   "jogadores, modo Speedwords, preço, fotos"
+  ],
+  [
+   "App Store – Werewords",
+   "https://apps.apple.com/br/app/werewords/id1243586902",
+   "aplicativo, idiomas, número de palavras"
+  ],
+  [
+   "GameRules – regras de Werewords",
+   "https://gamerules.com/rules/werewords/",
+   "regras, componentes, tempo do dia"
+  ],
+  [
+   "RulesPal – livro de regras",
+   "https://rulespal.com/werewords/rulebook",
+   "lobisomens por contagem, votações finais"
+  ],
+  [
+   "Opinionated Gamers – Werewords",
+   "https://opinionatedgamers.com/2017/05/01/werewords-game-review-by-chris-wray/",
+   "crítica, comparação com Insider, duração"
+  ],
+  [
+   "Meeple Mountain – Werewords",
+   "https://www.meeplemountain.com/reviews/werewords-review-murdering-you-with-20-questions",
+   "crítica, contagem de jogadores"
+  ],
+  [
+   "Tabletop Gaming – Werewords",
+   "https://www.tabletopgaming.co.uk/?p=923",
+   "crítica, aplicativo, idade"
+  ],
+  [
+   "Board Game Barrage – Werewords",
+   "https://boardgamebarrage.com/2019/01/29/werewords-review/",
+   "crítica, aplicativo, Prefeito"
+  ],
+  [
+   "Spiel des Jahres – Werwörter",
+   "https://www.spiel-des-jahres.de/spiele/werwoerter/",
+   "indicação de 2019, edição alemã, idade"
+  ],
+  [
+   "BoardGameGeek – vencedores do Golden Geek 2017",
+   "https://boardgamegeek.com/thread/1955324",
+   "prêmio de jogo de festa"
+  ],
+  [
+   "Wikipedia – Werewords",
+   "https://en.wikipedia.org/wiki/Werewords",
+   "ano, arte, edição Deluxe"
+  ],
+  [
+   "boardmatch.app – Werewords",
+   "https://boardmatch.app/en/game/219215",
+   "nota, peso e melhor contagem do BGG"
+  ],
+  [
+   "ComparaJogos – Werewords",
+   "https://www.comparajogos.com.br/item/werewords",
+   "preço no Brasil, idioma, arte"
+  ]
+ ],
+ "legenda": "Werewords é o jogo em que saber a resposta é perigoso. 🐺\n\nVinte Perguntas com lobisomem: quatro minutos para adivinhar a palavra, e o Vidente que sabe tudo não pode parecer que sabe.\nGolden Geek de jogo de festa de 2017 e indicado ao Spiel des Jahres de 2019.\nVeredito: RECOMENDADO COM RESSALVA. Não tem edição brasileira, e o aplicativo obrigatório não fala português.\n\nNo seu grupo, quem não consegue esconder que sabe a resposta? 👇\nResenha completa no link da bio.\n\n#Werewords #JogosDeTabuleiro #BoardGames #JogoDeFesta #PartyGame #DeducaoSocial #SocialDeduction #BezierGames #GoldenGeek #EliteBoardgamers"
+}

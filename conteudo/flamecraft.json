@@ -1,0 +1,159 @@
+{
+ "slug": "flamecraft",
+ "jogo": "Flamecraft",
+ "cor": "#c8743a",
+ "kicker": "Resenha · Alocação de trabalhadores com dragões",
+ "og_titulo": "Flamecraft vale a pena? Resenha Elite Boardgamers",
+ "titulo_busca": "Flamecraft: resenha do vencedor de arte do Golden Geek 2022",
+ "descricao": "Resenha de Flamecraft, de Manny Vega e Sandara Tang, melhor arte no Golden Geek 2022: como funciona, o que a crítica achou raso e o preço no Brasil.",
+ "titulo_html": "O glacê levou o prêmio; o bolo é de padaria: <span>Flamecraft</span>",
+ "lede": "Flamecraft é um jogo de alocação de trabalhadores em que pequenos dragões trabalham em padarias, ferrarias e lojas de poção, de 1 a 5 jogadores, em cerca de uma hora. A cobertura é o que salta da caixa: venceu o Golden Geek de arte em 2022. O glacê levou o prêmio. Por baixo, o bolo é de padaria: honesto, gostoso e igual toda vez. A gente gosta de bolo de padaria. Só não espere que ele mude de sabor na décima fatia.",
+ "tags": [
+  "1–5 jogadores",
+  "60 min",
+  "10+",
+  "Alocação de trabalhadores",
+  "Família"
+ ],
+ "alt": "Componentes de Flamecraft: cartas de loja e de dragões artesãos com ilustrações de Sandara Tang, fichas de produto e peões de madeira",
+ "premiacoes": [
+  {
+   "premio": "Golden Geek",
+   "ano": 2022,
+   "categoria": "Arte",
+   "colocacao": 1,
+   "resultado": "vencedor",
+   "fonte": "https://boardgamewire.com/index.php/2023/05/09/heat-pedal-to-the-metal-cat-in-the-box-lead-boardgamegeek-golden-geek-award-winners/",
+   "rotulo": "Vencedor"
+  },
+  {
+   "premio": "Golden Geek",
+   "ano": 2022,
+   "categoria": "Jogo do Ano médio",
+   "colocacao": 3,
+   "resultado": "top 3",
+   "fonte": "https://boardgamewire.com/index.php/2023/05/09/heat-pedal-to-the-metal-cat-in-the-box-lead-boardgamegeek-golden-geek-award-winners/",
+   "rotulo": "3º lugar"
+  }
+ ],
+ "ficha": [
+  ["Ano", "2022"],
+  ["Designer", "Manny Vega"],
+  ["Arte", "Sandara Tang"],
+  ["Editora original", "Cardboard Alchemy (financiado no Kickstarter; varejo pela Lucky Duck Games)"],
+  ["Editora no Brasil", "Asmodee (Galápagos)"],
+  ["Jogadores", "1 a 5"],
+  ["Duração anunciada", "60 minutos"],
+  ["Idade", "10+ (edição original; a da edição nacional não foi confirmada nas fontes consultadas)"],
+  ["Nota BGG", "7,4 / 10 (22.146 avaliações, conforme o BoardMatch)"],
+  ["Peso BGG", "2,18 / 5"],
+  ["Melhor com", "3 jogadores (enquete do BGG)"],
+  ["Nota Ludopedia", "não confirmada nas fontes consultadas"],
+  ["Componentes", "tabuleiro da cidade, 34 cartas de loja, 42 Dragões Artesãos, 36 Dragões de Elite, 36 Encantamentos em 2 baralhos, 7 Companheiros, 210 fichas de produto e 24 moedas"]
+ ],
+ "nota_ficha": "Nota, peso e enquete do BGG vêm do BoardMatch, que replica o BoardGameGeek (o BGG bloqueia acesso automatizado), consultado em 01/11/2026. Os nomes das cartas em português seguem a descrição da edição nacional no ComparaJogos.",
+ "como_funciona": [
+  "Os jogadores são Guardachamas, gente que conversa com dragões e os leva para trabalhar nas lojas da cidade. Cada loja produz um ou mais dos seis produtos do jogo (pão, carne, ferro, cristal, planta e poção) e tem vagas para Dragões Artesãos do mesmo tipo. Vence quem terminar com mais reputação, os pontos do jogo.",
+  "No seu turno, você move o seu peão para uma loja diferente da do turno anterior. Se já houver outros jogadores lá, você dá um produto ou uma moeda a cada um deles. Depois, escolhe uma de duas ações: coletar ou encantar.",
+  "Ao coletar, você pega o que a loja oferece e mais um produto por dragão e por Encantamento já instalados nela. Em seguida, pode encaixar um Dragão Artesão da mão numa vaga livre do mesmo tipo e ganhar a recompensa impressa na vaga: reputação, moedas ou cartas. Por fim, ativa a habilidade de um dragão daquela loja e a habilidade da própria loja. Quando a última vaga de uma loja é preenchida, uma loja nova entra na cidade.",
+  "Ao encantar, você paga em produtos o custo de um dos cinco Encantamentos à mostra, desde que combine com o ícone da loja. Ganha a recompensa da carta, prende o Encantamento atrás da loja (no máximo três por loja), e ela passa a produzir mais. Então você ativa todos os dragões daquela loja, na ordem que quiser.",
+  "Os Dragões de Elite são objetivos secretos. Os do sol pontuam durante a partida, assim que você cumpre a meta; os da lua só no fim. Ao fim de cada turno, você descarta até ficar com seis Dragões Artesãos na mão e sete produtos de cada tipo.",
+  "Quando sai a última carta do baralho de Dragões Artesãos ou do de Encantamentos, cada jogador faz mais um turno. Cada moeda vale um ponto, os Dragões de Elite da lua cumpridos pontuam e vence quem tiver mais reputação."
+ ],
+ "passos": [
+  ["ESCOLHA UMA LOJA", "Mova seu peão para uma loja diferente da do turno anterior. Se já houver jogadores lá, dê um produto ou moeda a cada um."],
+  ["COLETE OU ENCANTE", "Decida a ação do turno: coletar os produtos da loja ou pagar um Encantamento à mostra que combine com o ícone dela."],
+  ["ENCAIXE UM DRAGÃO", "Ao coletar, você pode pôr um Dragão Artesão da mão numa vaga do mesmo tipo e ganhar a recompensa impressa na vaga."],
+  ["ATIVE OS DRAGÕES", "Coletando, ative um dragão da loja e a habilidade dela. Encantando, prenda a carta atrás da loja e ative todos os dragões."],
+  ["PONTUE NO FIM", "Acabou o baralho de dragões ou o de Encantamentos, todos jogam mais um turno. Moedas e Dragões de Elite da lua somam reputação."]
+ ],
+ "como_resumo": "Leve dragões artesãos às lojas da cidade e encante cada loja para ativar todos de uma vez.",
+ "perfil": [
+  ["Arte e produção", 5],
+  ["Facilidade de ensinar", 4],
+  ["Partida curta", 4],
+  ["Interação entre jogadores", 3],
+  ["Modo solo", 3],
+  ["Profundidade", 2]
+ ],
+ "experiencia": [
+  "A primeira meia hora é um passeio por uma vitrine. Você entra na confeitaria, pega um pão, encaixa um dragão de pão na vaga certa, ganha um ponto e ativa o dragão vizinho, que te dá uma poção. Tudo rende alguma coisa. Ninguém te ataca. Quer entrar na loja onde já estão dois amigos? Paga um produto a cada um. É o único jogo em que o pedágio chega embrulhado para presente.",
+  "O momento bom é o Encantamento. Você junta os produtos pedidos, prende a carta atrás da padaria e ativa todos os dragões dela de uma vez: pão, ferro, moeda, ponto, uma cascata pequena e muito satisfatória. A Tabletop Gaming explica a agilidade pelo fato de que ativar dragão não custa nada. O problema é que, lá pela terceira partida, a cascata já tem cara de conhecida. A IGN deu 8 e avisou que o jogo pode ficar repetitivo e raso depois de algumas partidas. É a mesma receita, servida com a mesma toalha. E a toalha é linda."
+ ],
+ "funciona": [
+  ["A arte de Sandara Tang", "Venceu o Golden Geek de arte de 2022 e o prêmio de jogo mais bonito do Gra Roku polonês em 2023. Cada loja tem nome de trocadilho e dragões trabalhando no balcão. Iain McAllister, da The Giant Brain, resume bem: entrou pela arte e pela produção, mas ficou pelo jogo."],
+  ["Interação gentil", "Entrar numa loja ocupada custa um presente para quem já está lá, e algumas habilidades pontuam justamente por dar produtos aos outros. Para Oliver Kinne, do Tabletop Games Blog, essa interação positiva é uma bela exceção num hobby competitivo, com o nível de disputa na medida certa."],
+  ["A cascata do Encantamento", "Encantar uma loja ativa todos os dragões dela de uma vez, e cada dragão a mais deixa a loja melhor para todo mundo. Para a Tabletop Gaming, como ativar dragão é de graça, a partida corre rápida; Alana Wren, da Zatu, diz que há sempre algo para fazer no seu turno."],
+  ["Complexidade que chega aos poucos", "O jogo começa com seis lojas iniciais e cresce conforme as vagas se enchem. A The Giant Brain diz que esse arco é perfeito, e a IGN elogia o equilíbrio entre regras simples e profundidade que aumenta ao longo da partida."],
+  ["Um degrau acima da porta de entrada", "Dale Yu, do Opinionated Gamers, encaixa Flamecraft no espaço de quem já passou dos primeiros jogos, e Jeff Lingwall o colocaria na estante ao lado de Ticket to Ride. O peso de 2,18 no BGG confirma: dá para ensinar a quem nunca jogou alocação de trabalhadores."],
+  ["Solo com conquistas", "O modo solo move os peões neutros e põe dragões nas lojas no fim de cada turno, então você ainda paga presentes e disputa vagas. Segundo o Opinionated Gamers, há 11 conquistas para desbloquear, e cada uma muda a preparação das partidas seguintes."]
+ ],
+ "atencao": [
+  ["Moderada", "A terceira partida já viu a primeira", "A IGN acha que o jogo pode ficar repetitivo e raso depois de algumas partidas, e Mark Jackson, do Opinionated Gamers, não viu fôlego no design para querer jogar de novo. Os dragões mudam de nome, as lojas mudam de trocadilho, e você continua fazendo pão. Muito bem feito, é verdade. Mas pão."],
+  ["Moderada", "Caixa grande para um jogo pequeno", "Para a Tabletop Gaming, o jogo caberia numa caixa pequena, com uma fileira de cartas de local e um mercado, e há pouca crocância por baixo da apresentação. A gente concorda com a conta e discorda da conclusão: o tabuleiro da cidade é metade da graça. Só que é a metade que ganhou o prêmio."],
+  ["Leve", "Para atrapalhar, procure outro jogo", "Oliver Kinne, do Tabletop Games Blog, aponta que a interação negativa é bem limitada, e tirar um dragão só para o rival não pegar quase não funciona, porque há cópias repetidas. Quem gosta de travar o vizinho vai passar a noite entregando presente. É Natal, só que com pontuação."],
+  ["Leve", "Uma hora, segundo a caixa", "A Lucky Duck anuncia 60 minutos, o Tabletop Games Blog fala em 60 a 75, e a Wikipedia lista 90. Não é um abismo, mas é a diferença entre jogar mais uma e ir dormir. Com cinco pessoas, cada uma escolhendo com calma qual pão encaixar, a gente aposta na estimativa mais longa."],
+  ["Leve", "Cada loja tem uma regra", "Além das habilidades dos dragões, várias lojas trazem habilidade própria, e o manual dedica quatro páginas, da 14 à 17, a explicar habilidades e Companheiros. Na estreia, alguém vai perguntar o que faz a loja da esquina. Várias vezes. O ComparaJogos classifica o texto do jogo como moderado, que exige consulta."],
+  ["Leve", "Expansões só em inglês", "Edição Deluxe, Dragons & Dragons, Dragons of the Past e o jogo derivado Flamecraft Duals saíram lá fora. Nenhum deles tem edição brasileira confirmada nas fontes consultadas. Para quem cansar da receita, a variedade nova vem com legenda em inglês."]
+ ],
+ "jogadores": [
+  ["Sozinho", "Peões neutros e dragões automáticos mantêm a cidade ocupada, e as 11 conquistas mudam a preparação de uma partida para outra.", 2],
+  ["2 jogadores", "Funciona, com seis Dragões Artesãos a menos no baralho; menos gente nas lojas significa menos presentes trocados.", 2],
+  ["3 jogadores", "A contagem mais votada como ideal na enquete do BGG, segundo os dados replicados pelo BoardMatch.", 3],
+  ["4 ou 5 jogadores", "O quarto e o quinto começam com um produto extra. Com mais gente, as lojas lotam e você paga mais presentes para entrar.", 2]
+ ],
+ "primeira_partida": "A Tabletop Gaming considera Flamecraft fácil de ensinar, e o manual ajuda: use o baralho roxo de Encantamentos, que a própria editora recomenda para a estreia, e deixe os Companheiros na caixa. O que mais confunde é a diferença entre as ações: ao coletar, você ativa um dragão da loja; ao encantar, todos. Repita isso antes de começar. Avise também que moeda vale um ponto no fim, mas não serve para cumprir o objetivo de um Dragão de Elite.",
+ "edicao_nacional": "A edição em português saiu pela Galápagos, hoje Asmodee, em 2022, segundo o ComparaJogos, com os mesmos componentes da original: tabuleiro da cidade, 34 cartas de loja e 210 fichas de produto. As cartas têm texto moderado, então a edição nacional faz diferença. Em 01/11/2026, o ComparaJogos listava 15 ofertas novas, de R$ 270 a R$ 328, a menor por R$ 269,99 no Pix. A idade indicada na edição nacional não foi confirmada nas fontes consultadas; a original indica 10+.",
+ "preco_ref": {
+  "faixa": "a partir de R$ 269,99",
+  "data": "01/11/2026",
+  "obs": "menor preço no Pix entre 15 ofertas novas, segundo o ComparaJogos"
+ },
+ "versoes": "Lá fora, a Cardboard Alchemy lançou a Edição Deluxe, a expansão Dragons & Dragons, o pacote Dragons of the Past e Flamecraft Duals, um jogo para dois de combinar padrões, lançado em janeiro de 2026. Nenhum deles tem edição brasileira confirmada nas fontes consultadas. A versão digital, da Monster Couch, saiu em 17/09/2026 para PC, Switch, PlayStation 5 e Xbox; na Steam custa US$ 19,99 e tem português do Brasil.",
+ "comparacoes": [
+  ["Wingspan", "wingspan", "Outro jogo em que a arte vende a caixa e o motor de cartas segura a mesa. Wingspan pede mais planejamento a longo prazo; Flamecraft é mais leve e tem mais contato entre jogadores."],
+  ["Cascadia", "cascadia", "Para a mesma turma que quer regra curta e partida de menos de uma hora. Cascadia é quebra-cabeça de peças e animais; Flamecraft troca o encaixe por lojas, dragões e presentes."],
+  ["Harmonies", "harmonies", "Também bonito, também acessível, também sobre montar um lugar agradável. Harmonies é mais seco e espacial; Flamecraft tem mais história nas cartas e mais conversa na mesa."]
+ ],
+ "para_quem": [
+  "Quer apresentar alocação de trabalhadores a quem só jogou Ticket to Ride",
+  "Prefere dar presente a roubar ponto",
+  "Escolhe jogo pela capa e não tem vergonha disso",
+  "Joga com a família e quer partida de cerca de uma hora",
+  "Gosta de combo pequeno e certeiro, sem planilha"
+ ],
+ "nao_e_para": [
+  "Quer uma partida diferente a cada vez",
+  "Joga para travar o vizinho",
+  "Acha que dragão bom é dragão que queima a vila",
+  "Já tem Wingspan e só queria outro motor de cartas"
+ ],
+ "selo": "Recomendado",
+ "melhor_para": "proximo",
+ "veredito": "Em Flamecraft, o glacê levou o prêmio e o bolo é de padaria. E a gente gosta de bolo de padaria. A arte de Sandara Tang ganhou o Golden Geek de arte, e o jogo por baixo é um jogo de alocação de trabalhadores simples, gentil e bem azeitado: entrar numa loja custa um presente, encantar ativa todos os dragões e a partida acaba em cerca de uma hora. O que pesa é o que a IGN e a Tabletop Gaming já disseram: depois de algumas partidas, a receita não muda, e quem quer atrapalhar o vizinho vai se entediar. Por R$ 269,99, compre para a família ou para o amigo que ainda acha que eurogame é planilha. Só não prometa surpresa na décima partida. Ninguém compra bolo de padaria esperando um suflê.",
+ "tagline": "Ninguém compra bolo de padaria esperando surpresa. Compra porque é bom toda vez.",
+ "citacao": {
+  "texto": "Um deleite do começo ao fim.",
+  "fonte": "Dicebreaker, melhor jogo de tabuleiro de 2022 (tradução livre)"
+ },
+ "consulta": "01/11/2026",
+ "fontes": [
+  ["Lucky Duck Games – Flamecraft (fotos, ficha e componentes)", "https://luckyduckgames.com/usa/game/317-1467-flamecraft-standard-edition-en", "fotos oficiais, jogadores, duração, idade, componentes"],
+  ["Cardboard Alchemy – Flamecraft Rules of Play", "https://cardboardalchemy.com/wp-content/uploads/FC_EN_Rulebook_sm.pdf", "regras, fim de jogo, solo, primeira partida"],
+  ["BoardGameWire – Golden Geek 2022", "https://boardgamewire.com/index.php/2023/05/09/heat-pedal-to-the-metal-cat-in-the-box-lead-boardgamegeek-golden-geek-award-winners/", "prêmios"],
+  ["ComparaJogos – Flamecraft", "https://www.comparajogos.com.br/item/flamecraft", "edição nacional, preço, componentes, idioma"],
+  ["BoardMatch – Flamecraft", "https://boardmatch.app/en/game/336986", "nota, peso e enquete do BGG"],
+  ["IGN – Flamecraft Board Game Review", "https://www.ign.com/articles/flamecraft-board-game-review", "crítica, repetição"],
+  ["Tabletop Gaming – Flamecraft Review", "https://www.tabletopgaming.co.uk/reviews/flamecraft-review/", "crítica, profundidade, ensino"],
+  ["Opinionated Gamers – Dale Yu, Review of Flamecraft", "https://opinionatedgamers.com/2023/02/19/dale-yu-review-of-flamecraft/", "crítica, solo, conquistas"],
+  ["Tabletop Games Blog – Flamecraft", "https://tabletopgamesblog.com/2024/02/24/flamecraft-saturday-review", "crítica, interação, duração"],
+  ["Zatu – Flamecraft Review", "https://zatu.com/flamecraft-review/", "crítica, ritmo"],
+  ["The Giant Brain – Flamecraft Review", "https://giantbrain.co.uk/2023/01/19/flamecraft-review/", "crítica, arte, progressão"],
+  ["Dicebreaker – Tabletop Awards 2022", "https://www.dicebreaker.com/events/tabletop-awards-2022/news/tabletop-awards-2022-winners", "citação, prêmio"],
+  ["Wikipedia – Flamecraft", "https://en.wikipedia.org/wiki/Flamecraft", "conferência de prêmios, duração, Duals"],
+  ["Steam – Flamecraft (versão digital)", "https://store.steampowered.com/app/3201730/Flamecraft/", "versão digital, preço, idiomas"],
+  ["Gematsu – Flamecraft launches September 17", "https://www.gematsu.com/2026/08/flamecraft-launches-september-17", "plataformas da versão digital"],
+  ["PHD Games – Flamecraft: Dragons & Dragons, Dragons of the Past & Duals", "https://www.phdgames.com/2025/10/28/flamecraft-dragons-dragons-dragons-of-the-past-duals-cardboard-alchemy/", "expansões"]
+ ],
+ "legenda": "Flamecraft: o glacê levou o prêmio, o bolo é de padaria. 🐉\n\nMelhor arte do Golden Geek 2022, e Sandara Tang mereceu cada voto.\nPor baixo, um jogo de trabalhadores gentil: entrar na loja do amigo custa um presente.\nVeredito: RECOMENDADO. Uma hora, a partir de R$ 269,99, só não espere surpresa na décima partida.\n\nVocê joga para dar presente ou para travar o vizinho? 👇\nResenha completa no link da bio.\n\n#Flamecraft #JogosDeTabuleiro #BoardGames #Boardgamer #JogoDeFamilia #AlocacaoDeTrabalhadores #WorkerPlacement #GoldenGeek #Asmodee #EliteBoardgamers"
+}
