@@ -106,3 +106,36 @@ Teste feito lendo só o tutorial.md, montando uma partida de 2 jogadores (Ana, p
 Pontos que travariam a mesa mas já estavam sinalizados e o manual não fecha: caminho da Fragata, navegar até a carta da Fragata, Marujo do Corsário, nível Lenda, Extorsão dobrada ao Esconder-se.
 
 **Veredito:** dá para jogar a partida de 2 a 4 jogadores só com o tutorial, com as correções acima (a principal é a ligação Carta de Mercador / Navio Mercante, sem a qual não se resolve o primeiro ataque a um Mercante nem o movimento dos Mercantes). O modo solo não.
+
+## Auditoria independente: regras
+
+Auditor independente (não escreveu o texto), 01/11/2026. Manual: PDF Meeple BR de 20 p. (TEP_rulebook PT-BR, 16/05/2022), texto extraído página a página com pdftotext e figuras renderizadas a 300 a 1200 dpi (p. 2, 3, 4, 7, 9, 15, 16). Contas e exercícios refeitos em script (Timão: espaços pulados e cruzamento da Linha; tabela do Mercado; dano; Ouro com teto de 13).
+
+### Pontos indicados para conferência
+
+| Item | Resultado | Página |
+|---|---|---|
+| Tabela da Trilha de Lenda (movimento, dados, prêmios) | ok nos valores. Em alta resolução (p. 16 a 1000 dpi, p. 2 a 1200 dpi), as células claras não estão vazias: trazem impresso, esmaecido, o mesmo número do nível de baixo (Pirata: dados 2; Corsário: dados 2; Espadachim: mov. 3; Bucaneiro: dados 3; Pirata Terrível: mov. 4, dados 3). Prêmios: +2 Ouros, +Marujo, +4 Ouros, +ícone de canhão (= Marcador de Tiro Certeiro, conforme p. 3), +8 Ouros. O Marujo da p. 4 (item F) fica na 3ª linha = Corsário. | 2, 3, 4, 16 |
+| Nível "Lenda" acima de Pirata Terrível | corrigido. Antes: "a ilustração corta o nível mais alto, Lenda". A palavra "Lenda" está na linha dos ícones de cabeçalho das colunas, sem números, com o ícone Ganhar Lenda; na p. 2 e na p. 4 a trilha aparece inteira e não há sétimo nível. Depois: [!edicao] dizendo que "Lenda" parece ser o título da trilha e que Pirata Terrível é o último nível pela ilustração, com pedido de conferir no tabuleiro. | 2, 4, 16 |
+| Extorsão ao Esconder-se (p. 12 × p. 15) | corrigido. A ambiguidade existe (p. 12: "cada Marujo posicionado em Extorsão recebe 1 Ouro imediatamente (já que você acaba de cruzar a linha de navios)"; p. 15: "Receba 1 Ouro para cada Marujo alocado em Extorsão"). Antes: o [!edicao] escolhia "um só pagamento por volta", leitura que o manual não sustenta. Depois: [!edicao] neutro, com as duas leituras e "combine com a mesa". | 12, 15 |
+| Fragata | ok. Canto sem Navio Mercante (p. 5); move-a o jogador à direita, depois dos Mercantes; vai em direção ao jogador ativo mesmo escondido; para na carta dele; 2/3/4/5 por 0/1/2/3 Tesouros (figura da p. 15 nítida); ignora Tempestades e outros Piratas; ataque: todos os Marujos das Missões e do Timão ao Reparo, sem Tiro Certeiro; não ataca escondido; bloqueia Enterrar na mesma carta (p. 13); não pode ser atacada (p. 11). Os pontos em aberto (caminho da Fragata, navegar até ela) continuam em [!edicao], corretamente. | 5, 11, 12, 13, 15 |
+| Limite de 3 Tiro Certeiro | corrigido em parte. O manual só o cita em Buscar: "Caso já possua o máximo de Ouro (13) ou de Marcadores de Tiro Certeiro (3), você não poderá receber mais." O [!mais] estava certo; acrescentado [!edicao] sobre o caso não coberto (ganhar o 4º num combate). Folha de consulta: "Tiro Certeiro 3" → "Tiro Certeiro 3 (citado ao Buscar)". | 10 |
+
+### Demais regras, termos e páginas
+
+- Preparação (11 passos), lado sem sangue para cima, Dobrão no 1, Marujo na 3ª linha, Ordens nos espaços 1 a 5, Capitão no 0, Marujos nas Missões menos o Reparo, Mercado, Portos e Mercantes apontados na diagonal, pilha de Mercador 8-6-4-2, 3 de Tripulação, Fragata, Enseadas, Espólio inicial por valor: ok (p. 4, 5).
+- Turno em 5 passos: ok (p. 6, 16). Timão: avanço mínimo, próximo grátis, pular com Marujo de qualquer Missão inclusive Reparo, não voltar ao espaço de origem, 0 grátis, Marujos de turno anterior voltam a uma Missão e não pulam de novo: ok (p. 7, 12).
+- Missões e Reparo: ok (p. 7). Navegar, Tempestade (uma vez por Tempestade), Empurrado em 3 casos: ok (p. 8).
+- Pilhar, Negociar (tabela 5 a 2 de cima para baixo, conferida na figura), Buscar (! e relógio), Recrutar, troca da fila por 1 Ouro, Tripulação cheia, Motim: ok (p. 9, 10). Esconder-se: ok (p. 12).
+- Atacar: alvos, dano por símbolo, Tiro Certeiro, Canhões, dano automático, Mercante (mais dano afunda, empate, derrota, carta 8, Ganhar Lenda "1-2"), Pirata contra Pirata: ok (p. 11, 12).
+- Ações Bônus (condição, sem executar a Ordem, ordem Capitão e Tripulação, pular Enterrar, duplicadas não acionam outras), Enterrar, as 8 da p. 14: ok (p. 13, 14).
+- Fim e desempate: ok (p. 16). Ouro 0 a 13: ok (p. 3).
+- Termos conferidos como impressos: Timão, Esconderijo, Esconder-se, Cordame, Canhões, Extorsão, Reparo (a p. 4 e a p. 14 dizem "Reparar"), Marujo, Capitão, Marcador de Ordem, Assentamento, Enseada, Tempestade, Local de Tesouro, Espólio, Caixote, Bolsa de Espólios, Marcador de Busca, Marcador de Tiro Certeiro, Carta de Mercador, Navio Mercante Laranja/Verde, Fragata, Linha do Navio (p. 6, 7) / linha de navios (p. 12) / Linha de Navios (p. 15, 16), Lobo do Mar, Pirata, Corsário, Espadachim, Bucaneiro, Pirata Terrível, Motim, Realocar, Rerrolar.
+
+### Exemplos e exercícios
+
+Todos refeitos em script; certas e erradas conferidas: Comece (Buscar 1→4 Ouros; 1 de movimento; 3 cubos; 3 Marujos para o 4), Etapa 1 (Rum ao 3º; Fragata; Marujos), Etapa 2 (2→5 com Marujo no 3: 1; 5→1: 0 e cruza; 4→2: 2; 3→0: 2; 5→2: 1; 0→5: 4), Etapa 3 (4 de movimento; 7+8 → 13; tabela Rum 5, Pólvora 4, Café 3, Cana 2; Café 3×3 = 9), Etapa 4 (6 e 2 com símbolos 5, 6, 6 e 1 Canhão: 3, com Tiro Certeiro 5; trocando para 5: 4, empate; 6 e 6: 4; 3 e 4 com 2 Canhões: 2), Etapa 5 (9−8 = 1; Fragata 4), fim de partida e avaliação final (2; 4; 15 e Rum a 2; 4 cartas da Fragata): ok.
+
+### Veredito
+
+APROVADO COM CORREÇÕES: nenhuma regra errada nos passos, exemplos ou exercícios; três avisos [!edicao] reescritos ou acrescentados (nível "Lenda", Extorsão ao Esconder-se, limite de Tiro Certeiro) e um ajuste na folha de consulta.

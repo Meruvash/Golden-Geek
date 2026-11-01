@@ -144,3 +144,54 @@ Teste feito só com o tutorial.md, sem abrir o manual antes do fim da simulaçã
 | Marcadores de Lacaio não aparecem na preparação | p. 2 lista 8 Marcadores de Lacaio; p. 4 e 5 não dizem onde ficam | Sem correção: o manual também omite. Só registrado aqui |
 
 **Veredito:** dá para jogar só com o tutorial, com as correções acima. As duas lacunas de movimento (sair de sala com inimigo, reentrar em sala de Encontro) não têm resposta no manual e ficaram declaradas no guia.
+
+## Auditoria independente: regras
+
+Conferência do tutorial.md contra o PDF da Meeple BR (texto extraído com pdftotext e páginas 8 a 13, 15 e 18 renderizadas e lidas como imagem, para os ícones). A p. 19 do PDF junta as páginas impressas 19 (Atacar o Chefe, Dano na Trilha, Mover o Chefe sobre Altares) e 20 (Contra-Ataque do Chefe, Ato 2: Tabuleiro de Tocha, Regras Adicionais do Covil); as citações foram conferidas pela página impressa. Contas refeitas em script (Python): todas batem.
+
+| Item | Resultado |
+|---|---|
+| Título, edição, tradutor (p. 1 e 17) | ok |
+| "Comece": turno, Mover, encontros, armadilha, ataque, Foco, tocha (p. 6 a 9, 11, 12, 15) | ok |
+| Exemplo do "Comece": Defesa 4 do Goblin | corrigido: "Defesa 4" sem fonte → "a carta comprada é o Goblin Esfaqueador (Defesa 4, como na carta da figura da p. 13)". A carta do Goblin Esfaqueador aparece nas figuras das p. 8, 13 e 15 com Velocidade 4 e Defesa 4 (mesma disposição do Minotauro, cuja Defesa 4 o texto da p. 11 confirma) e modificador +1 por Goblin |
+| Complete do "Comece" (4+1 = 5 > 4; contra-ataque 3+1 = 4, sem dano) | ok; "mesmo Goblin" → "mesmo Goblin Esfaqueador (Defesa 4)" |
+| Vitória e derrota (p. 6, 8, 15) | ok |
+| Atributos, Habilidades, 1 a 3 dados (p. 6, 9) | ok |
+| Preparação A a V; 23 cartas com 3 heróis; 4 Altares; tocha no 3 (p. 4 e 5) | ok |
+| Mover, revelar, girar, cartas novas, grade 7x7, inimigo para o movimento, Furtividade (p. 7 e 8) | ok |
+| Verificar Perigos: Goblin 1 dano, Lacaio 2 danos, Armadilha a cada entrada (p. 8) | ok |
+| Portal 2 Foco, limites (p. 7) | ok; [!mais] "Portal e Covil" da etapa 5 removido por repetir o da etapa 2 |
+| Teste de Habilidade, faces "+", raios, 6 dá Vida (p. 9) | ok; raios conferidos na figura: +2 tem 3, 3 tem 1 |
+| Dois dados "+" somados | corrigido: era leitura do redator em "Situações especiais"; a figura da p. 11 mostra 5, +2 e +1 = 8. Agora está no passo 2 do Teste de Habilidade com a página, e o parágrafo de "Situações especiais" saiu |
+| Descansar 3 Vida e 5 Foco; Procurar; Desarmar; Lançar Feitiço (Foco antes do efeito) (p. 10) | ok |
+| Desarmar "ou" (p. 10) × "e" (verso) | ok como [!edicao]: o texto e o ícone da figura da p. 10 ("+" espólio "/" feitiço) dizem "ou"; o verso diz "1 Espólio e 1 Feitiço" |
+| Momento do Desarmar | mantido em "Situações especiais" como lacuna; texto reescrito para citar p. 8 e 10 e não afirmar regra: "Na dúvida, tente logo depois do teste" |
+| Ações Livres: Modificar dado (2 Foco), Revelar Salas Adjacentes, Pesquisa (4 Foco), Acionar Habilidades (p. 14) | ok |
+| Espólios e feitiços: Descobrir, Pegar, limites, Conjuntos Lendários (p. 16) | ok; corrigido "Espólio de Mão cobre um equipamento" → "Espólio equipado cobre" (p. 16 fala de espólio em geral) |
+| Exemplo da p. 9 (4 + 1 = 5; 2 Foco + 1 do 3) | ok |
+| Complete do feitiço (Intelecto 7, custa 6 Foco, 4 danos; 4 + 3 = 7, sobra 1) (p. 9 e 10) | ok |
+| Exercícios da etapa 3 (Agilidade 6 com 2 Foco; 6 não usado dá Vida) | ok |
+| Ataques, alcance, Defesa "maior que" (p. 11) | ok |
+| Contra-ataque 2 a 5, Escudo, Tocha, modificadores (p. 12) | ok |
+| Exemplo do Minotauro (8 − 6 = 2; 5 + 3 = 8 contra 6: 2) (p. 11 e 12) e legenda da figura | ok (conferido na figura) |
+| Complete: Escudo dá 3; Tocha sem dano e tocha desce 1 | ok |
+| Sua vez: ataque à distância contra Goblin (6 − 4 = 2; contra-ataque 4 + 3 − 4 = 3) | corrigido: "um deles, com Defesa 4" → "um Goblin Esfaqueador (Defesa 4), em linha de visão" |
+| Ação do Inimigo, Goblin "total de Goblins +1" com 2 Goblins = 3 (p. 15) | ok (é o exemplo da p. 15) |
+| Lacaio morto: tocha sobe 6 até o espaço inicial (4 abaixo → sobe 4) (p. 13 e 15) | ok |
+| Matar Goblin e Lacaio, recompensas "/" e "+" (p. 13) | ok |
+| Herói inconsciente (p. 10, 13, 15, 20) | ok |
+| Tabuleiro de Tocha, ordem das ações, Mover ou Atacar, Mover e Atacar, movimento inimigo (p. 15) | ok |
+| Entrar no Covil, 4 passos, 1 de Velocidade (p. 14 e 17) | ok |
+| Tabuleiro do Chefe, entrada ocupada, efeitos ao terminar o movimento (p. 18) | corrigido: "ganhar ou perder Vida, Foco, Velocidade, ou um Goblin" → "ganhar ou perder Vida ou Foco, ganhar Velocidade ou um Goblin" (ícones da p. 18: +/− Vida/Foco, + Velocidade, + Goblin) |
+| Trilha do Chefe, Altares, dano perdido, Provocar o Chefe (p. 19) | ok; exemplo de 3 heróis (absorve 3, perde 2) e exercício 8/5 com 4 de dano refeitos: ok |
+| Para entender da etapa 5 | corrigido: citação "(p. 18 e 19)" → "(p. 18 a 20)" (quem fica fora do Covil está na p. 20 impressa) |
+| Tocha do Chefe | corrigido: citação "(p. 19 e 20)" → "(p. 12 e 20)" |
+| Regras adicionais do Covil, Goblins no Covil (p. 18 e 20) | ok |
+| Avaliação final, 10 questões: certas e erradas conferidas | ok |
+| Folha de consulta | ok |
+| Termos (Ação Heroica, Ação Livre, Verificar Perigos, Carta da Porta do Covil, Monte de Descarte de Goblins, Provocar o Chefe, Revelar Salas Adjacentes Não Exploradas, Modificar o Dado de Herói em 1 etc.) | ok, como impressos |
+| "Como este guia ensina" | enxugado: saiu a frase sobre "ajuda que diminui (exemplo resolvido, tarefa para completar, tarefa sem ajuda)", que descrevia o método |
+
+**Incerto (fica como está, declarado no texto):** orientação das salas na Ação Livre Revelar Salas Adjacentes; limite de cartas cheio; Desarmar em turno posterior; Desarmar "ou"/"e". O exemplo do "Comece" supõe uma Sala do Baralho A com Encontro com Goblin; a figura da p. 8 mostra uma Carta de Sala com esse ícone, mas o manual não diz quantas existem.
+
+**Veredito:** APROVADO COM CORREÇÕES.

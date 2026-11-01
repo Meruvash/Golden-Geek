@@ -100,7 +100,7 @@ Classificação: V = verificada (lida nesta sessão), I = interpretada (motivo d
 | R24 | Dirigir: quarteirões adjacentes, ortogonal, 1 hora por quarteirão; parado custa 0 | p. 11 | V |
 | R25 | Hora do Dia: ação diurna exige indicador em espaço diurno no início do turno; idem noturna; Dirigir, Prender e Pausa a qualquer hora | p. 15 | V |
 | R26 | Diurnas: Pegar Informante, Investigar Cena, Chamar Reforços; noturnas: Pegar Testemunha, Ficar de Tocaia, Levar sob Custódia | p. 11 a 13 (títulos) e Tabuleiro de Agente (ilustração p. 7) | V |
-| R27 | Primeiro turno: o indicador ainda está fora da trilha; o manual não diz se é dia ou noite | — | L; o guia trata como dia (seção 5) |
+| R27 | Primeiro turno: o indicador ainda está fora da trilha; o manual não diz se é dia ou noite | sem página | L; o guia trata como dia (seção 5) |
 
 ### 4.4 Ações gerais
 
