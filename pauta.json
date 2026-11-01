@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-31",
+ "atualizado_em": "2026-11-01",
  "regras": {
   "premios": [
    "Golden Geek",
@@ -233,6 +233,26 @@
    "jogo": "Return to Dark Tower",
    "url": "https://eliteboardgamers.com.br/return-to-dark-tower/",
    "data": "2026-10-31"
+  },
+  {
+   "jogo": "Brass: Birmingham",
+   "url": "https://eliteboardgamers.com.br/brass-birmingham/",
+   "data": "2026-11-01"
+  },
+  {
+   "jogo": "Sintonia",
+   "url": "https://eliteboardgamers.com.br/wavelength/",
+   "data": "2026-11-01"
+  },
+  {
+   "jogo": "Werewords",
+   "url": "https://eliteboardgamers.com.br/werewords/",
+   "data": "2026-11-01"
+  },
+  {
+   "jogo": "Flamecraft",
+   "url": "https://eliteboardgamers.com.br/flamecraft/",
+   "data": "2026-11-01"
   }
  ],
  "jogos": [
@@ -414,7 +434,7 @@
      "categoria": "Inovação",
      "colocacao": 2,
      "resultado": "top 3",
-     "fonte": "https://eliteboardgamers.com.br/"
+     "fonte": "https://engagedfamilygaming.com/2019-golden-geek-awards-winners-announced/"
     }
    ],
    "status": "publicado",
@@ -642,7 +662,7 @@
      "categoria": "Inovação",
      "colocacao": 1,
      "resultado": "vencedor",
-     "fonte": "https://eliteboardgamers.com.br/"
+     "fonte": "https://engagedfamilygaming.com/2019-golden-geek-awards-winners-announced/"
     },
     {
      "premio": "Golden Geek",
@@ -1351,7 +1371,7 @@
      "categoria": "Jogo do Ano",
      "colocacao": 1,
      "resultado": "vencedor",
-     "fonte": "https://eliteboardgamers.com.br/"
+     "fonte": "https://brettspielbox.de/13th-annual-golden-geek-awards-winners-2018/"
     },
     {
      "premio": "Golden Geek",
@@ -1359,7 +1379,7 @@
      "categoria": "Arte",
      "colocacao": 1,
      "resultado": "vencedor",
-     "fonte": "https://eliteboardgamers.com.br/"
+     "fonte": "https://brettspielbox.de/13th-annual-golden-geek-awards-winners-2018/"
     },
     {
      "premio": "Golden Geek",
@@ -1383,7 +1403,7 @@
      "categoria": "Estratégia",
      "colocacao": 2,
      "resultado": "top 3",
-     "fonte": "https://eliteboardgamers.com.br/"
+     "fonte": "https://brettspielbox.de/13th-annual-golden-geek-awards-winners-2018/"
     }
    ],
    "status": "publicado",
@@ -1659,7 +1679,7 @@
      "categoria": "Jogo do Ano médio",
      "colocacao": 1,
      "resultado": "vencedor",
-     "fonte": "https://eliteboardgamers.com.br/"
+     "fonte": "https://boardgamewire.com/index.php/2023/05/09/heat-pedal-to-the-metal-cat-in-the-box-lead-boardgamegeek-golden-geek-award-winners/"
     },
     {
      "premio": "Golden Geek",
@@ -2171,10 +2191,10 @@
      "categoria": "Festa",
      "colocacao": 1,
      "resultado": "vencedor",
-     "fonte": "https://eliteboardgamers.com.br/"
+     "fonte": "https://boardgamegeek.com/thread/1955324"
     }
    ],
-   "status": "na_fila",
+   "status": "publicado",
    "prioridade": 55,
    "premios_distintos": 2,
    "carro_chefe": true,
@@ -2785,7 +2805,7 @@
      "categoria": "Estratégia",
      "colocacao": 1,
      "resultado": "vencedor",
-     "fonte": "https://eliteboardgamers.com.br/"
+     "fonte": "https://brettspielbox.de/13th-annual-golden-geek-awards-winners-2018/"
     },
     {
      "premio": "Golden Geek",
@@ -2793,7 +2813,7 @@
      "categoria": "Jogo do Ano",
      "colocacao": 2,
      "resultado": "top 3",
-     "fonte": "https://eliteboardgamers.com.br/"
+     "fonte": "https://brettspielbox.de/13th-annual-golden-geek-awards-winners-2018/"
     },
     {
      "premio": "Golden Geek",
@@ -2801,10 +2821,10 @@
      "categoria": "Arte",
      "colocacao": 3,
      "resultado": "top 3",
-     "fonte": "https://eliteboardgamers.com.br/"
+     "fonte": "https://brettspielbox.de/13th-annual-golden-geek-awards-winners-2018/"
     }
    ],
-   "status": "na_fila",
+   "status": "publicado",
    "prioridade": 54,
    "premios_distintos": 1,
    "carro_chefe": true,
@@ -3035,7 +3055,7 @@
      "categoria": "Arte",
      "colocacao": 1,
      "resultado": "vencedor",
-     "fonte": "https://eliteboardgamers.com.br/"
+     "fonte": "https://boardgamewire.com/index.php/2023/05/09/heat-pedal-to-the-metal-cat-in-the-box-lead-boardgamegeek-golden-geek-award-winners/"
     },
     {
      "premio": "Golden Geek",
@@ -3043,10 +3063,10 @@
      "categoria": "Jogo do Ano médio",
      "colocacao": 3,
      "resultado": "top 3",
-     "fonte": "https://eliteboardgamers.com.br/"
+     "fonte": "https://boardgamewire.com/index.php/2023/05/09/heat-pedal-to-the-metal-cat-in-the-box-lead-boardgamegeek-golden-geek-award-winners/"
     }
    ],
-   "status": "na_fila",
+   "status": "publicado",
    "prioridade": 70,
    "premios_distintos": 1,
    "carro_chefe": false,
@@ -3288,7 +3308,7 @@
      "categoria": "Festa",
      "colocacao": 1,
      "resultado": "vencedor",
-     "fonte": "https://eliteboardgamers.com.br/"
+     "fonte": "https://engagedfamilygaming.com/2019-golden-geek-awards-winners-announced/"
     },
     {
      "premio": "Golden Geek",
@@ -3296,10 +3316,10 @@
      "categoria": "Inovação",
      "colocacao": 3,
      "resultado": "top 3",
-     "fonte": "https://eliteboardgamers.com.br/"
+     "fonte": "https://engagedfamilygaming.com/2019-golden-geek-awards-winners-announced/"
     }
    ],
-   "status": "na_fila",
+   "status": "publicado",
    "prioridade": 49,
    "premios_distintos": 1,
    "carro_chefe": true,
@@ -5514,7 +5534,7 @@
      "categoria": "Jogo do Ano médio",
      "colocacao": 2,
      "resultado": "top 3",
-     "fonte": "https://eliteboardgamers.com.br/"
+     "fonte": "https://boardgamewire.com/index.php/2023/05/09/heat-pedal-to-the-metal-cat-in-the-box-lead-boardgamegeek-golden-geek-award-winners/"
     },
     {
      "premio": "Golden Geek",
@@ -5530,7 +5550,7 @@
      "categoria": "Arte",
      "colocacao": 3,
      "resultado": "top 3",
-     "fonte": "https://eliteboardgamers.com.br/"
+     "fonte": "https://boardgamewire.com/index.php/2023/05/09/heat-pedal-to-the-metal-cat-in-the-box-lead-boardgamegeek-golden-geek-award-winners/"
     }
    ],
    "status": "na_fila",
@@ -7394,7 +7414,7 @@
      "categoria": "Arte",
      "colocacao": 2,
      "resultado": "top 3",
-     "fonte": "https://eliteboardgamers.com.br/"
+     "fonte": "https://boardgamewire.com/index.php/2023/05/09/heat-pedal-to-the-metal-cat-in-the-box-lead-boardgamegeek-golden-geek-award-winners/"
     }
    ],
    "status": "na_fila",
@@ -8594,7 +8614,7 @@
      "categoria": "Festa",
      "colocacao": 2,
      "resultado": "top 3",
-     "fonte": "https://eliteboardgamers.com.br/"
+     "fonte": "https://engagedfamilygaming.com/2019-golden-geek-awards-winners-announced/"
     }
    ],
    "status": "na_fila",
@@ -8614,7 +8634,7 @@
      "categoria": "Festa",
      "colocacao": 3,
      "resultado": "top 3",
-     "fonte": "https://eliteboardgamers.com.br/"
+     "fonte": "https://engagedfamilygaming.com/2019-golden-geek-awards-winners-announced/"
     }
    ],
    "status": "na_fila",
@@ -8874,7 +8894,7 @@
      "categoria": "Jogo do Ano",
      "colocacao": 3,
      "resultado": "top 3",
-     "fonte": "https://eliteboardgamers.com.br/"
+     "fonte": "https://brettspielbox.de/13th-annual-golden-geek-awards-winners-2018/"
     }
    ],
    "status": "na_fila",
@@ -9014,7 +9034,7 @@
      "categoria": "Arte",
      "colocacao": 2,
      "resultado": "top 3",
-     "fonte": "https://eliteboardgamers.com.br/"
+     "fonte": "https://brettspielbox.de/13th-annual-golden-geek-awards-winners-2018/"
     }
    ],
    "status": "na_fila",
@@ -9194,7 +9214,7 @@
      "categoria": "Estratégia",
      "colocacao": 3,
      "resultado": "top 3",
-     "fonte": "https://eliteboardgamers.com.br/"
+     "fonte": "https://brettspielbox.de/13th-annual-golden-geek-awards-winners-2018/"
     }
    ],
    "status": "na_fila",
@@ -9574,7 +9594,7 @@
      "categoria": "Festa",
      "colocacao": 2,
      "resultado": "top 3",
-     "fonte": "https://eliteboardgamers.com.br/"
+     "fonte": "https://boardgamegeek.com/thread/1955324"
     }
    ],
    "status": "na_fila",
@@ -9714,7 +9734,7 @@
      "categoria": "Festa",
      "colocacao": 3,
      "resultado": "top 3",
-     "fonte": "https://eliteboardgamers.com.br/"
+     "fonte": "https://boardgamegeek.com/thread/1955324"
     }
    ],
    "status": "na_fila",

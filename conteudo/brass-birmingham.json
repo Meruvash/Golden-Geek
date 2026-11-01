@@ -1,0 +1,379 @@
+{
+ "slug": "brass-birmingham",
+ "jogo": "Brass: Birmingham",
+ "cor": "#9c5a2e",
+ "kicker": "Resenha · Eurogame pesado de indústria e rotas",
+ "og_titulo": "Brass: Birmingham vale a pena? Resenha Elite Boardgamers",
+ "titulo_busca": "Brass: Birmingham: resenha do nº 1 do BGG e Golden Geek 2018",
+ "descricao": "Resenha de Brass: Birmingham, Golden Geek de estratégia 2018 e nº 1 do BGG: como funciona, o que pesa, a edição da Conclave e o preço no Brasil.",
+ "titulo_html": "O jogo em que explorar o rival deixa o rival mais rico: <span>Brass: Birmingham</span>",
+ "lede": "Brass: Birmingham é um eurogame de economia na Revolução Industrial inglesa, de Martin Wallace, Gavan Brown e Matt Tolman, que venceu o Golden Geek de estratégia de 2018 e hoje é o número 1 do BoardGameGeek. A gente entende o posto. É o único mercado em que usar o carvão do concorrente de graça deixa o concorrente mais rico. Para quem aguenta duas horas de planilha a vapor, é obrigatório. Para quem esperava um jogo de trem, é uma aula de logística.",
+ "tags": [
+  "2–4 jogadores",
+  "60–120 min",
+  "14+",
+  "Economia",
+  "Eurogame pesado"
+ ],
+ "alt": "Detalhe do tabuleiro noturno de Brass: Birmingham, com Redditch, Birmingham e Oxford, peças de indústria e uma ligação de canal",
+ "premiacoes": [
+  {
+   "premio": "Golden Geek",
+   "ano": 2018,
+   "categoria": "Estratégia",
+   "colocacao": 1,
+   "resultado": "vencedor",
+   "fonte": "https://brettspielbox.de/13th-annual-golden-geek-awards-winners-2018/",
+   "rotulo": "Vencedor"
+  },
+  {
+   "premio": "Golden Geek",
+   "ano": 2018,
+   "categoria": "Jogo do Ano",
+   "colocacao": 2,
+   "resultado": "top 3",
+   "fonte": "https://brettspielbox.de/13th-annual-golden-geek-awards-winners-2018/",
+   "rotulo": "2º lugar"
+  },
+  {
+   "premio": "Golden Geek",
+   "ano": 2018,
+   "categoria": "Arte",
+   "colocacao": 3,
+   "resultado": "top 3",
+   "fonte": "https://brettspielbox.de/13th-annual-golden-geek-awards-winners-2018/",
+   "rotulo": "3º lugar"
+  }
+ ],
+ "ficha": [
+  [
+   "Ano",
+   "2018"
+  ],
+  [
+   "Designers",
+   "Martin Wallace, Gavan Brown e Matt Tolman"
+  ],
+  [
+   "Arte",
+   "Damien Mammoliti e Mr. Cuddington (Roxley)"
+  ],
+  [
+   "Editora original",
+   "Roxley Games"
+  ],
+  [
+   "Editora no Brasil",
+   "Conclave Editora (padrão em 09/2019; Deluxe em 09/2021, segundo a Ludopedia)"
+  ],
+  [
+   "Jogadores",
+   "2 a 4"
+  ],
+  [
+   "Duração anunciada",
+   "60 a 120 minutos (Roxley)"
+  ],
+  [
+   "Duração relatada",
+   "sessão de quatro horas na estreia, segundo o What Board Game"
+  ],
+  [
+   "Idade",
+   "14+ (Roxley)"
+  ],
+  [
+   "Nota BGG",
+   "8,6 (60.796 avaliações), via boardmatch.app, que reproduz o BGG"
+  ],
+  [
+   "Peso BGG",
+   "3,86 / 5"
+  ],
+  [
+   "Ranking BGG",
+   "1º lugar; chegou ao topo em fevereiro de 2023, segundo o BoardGameWire"
+  ],
+  [
+   "Melhor com",
+   "4 jogadores, segundo a enquete do BGG (757 votos de \"melhor\")"
+  ],
+  [
+   "Nota Ludopedia",
+   "Nota Rank 9,03 e média 9,12, com 1.690 notas numa captura do ranking (via busca)"
+  ],
+  [
+   "Componentes (edição padrão)",
+   "180 peças de indústria, 56 de ligação, 9 de mercador, 76 cartas, 30 cubos de carvão, 18 de ferro, 15 barris de cerveja e 77 fichas de dinheiro"
+  ]
+ ],
+ "nota_ficha": "Ludopedia e BoardGameGeek bloqueiam acesso automatizado: os números do BGG vêm do boardmatch.app, consultado em 01/11/2026, e os da Ludopedia, de trechos da busca, que variam entre capturas (1.655 a 1.690 notas). O BoardGameWire não tem artigo sobre o Golden Geek de 2018; os prêmios vêm da lista publicada pelo Brettspielbox em 04/04/2019 e do LiveWire Calgary. Fotos: Roxley Games.",
+ "como_funciona": [
+  "De 2 a 4 jogadores são empresários nas Midlands inglesas entre 1770 e 1870. O objetivo é ter mais pontos de vitória ao fim de duas eras: a dos canais e a das ferrovias. Dinheiro não vale ponto; serve para construir e só desempata depois da renda.",
+  "Cada jogador tem 8 cartas na mão, de local (uma cidade) ou de indústria. No turno, você faz duas ações, e cada uma custa o descarte de uma carta; na primeira rodada do jogo, só uma. As ações são construir indústria, construir ligação (canal ou trilho), desenvolver (tirar peças fracas do seu tabuleiro gastando ferro), vender, pegar empréstimo (£30, com perda de três níveis de renda) e explorar (descartar 3 cartas para pegar dois coringas). Na rodada seguinte, começa quem gastou menos dinheiro.",
+  "As indústrias são minas de carvão, siderúrgicas, cervejarias, tecelagens de algodão, manufaturas e olarias. O carvão precisa chegar pela rede de ligações; o ferro não exige conexão; a cerveja da cervejaria de outro jogador exige. Usar o recurso de qualquer jogador é de graça, e quando a última unidade de uma peça é consumida, ela vira, e o dono ganha renda. Tecelagens, manufaturas e olarias viram ao vender para um mercador conectado, gastando cerveja.",
+  "No fim da era dos canais, todos pontuam ligações e indústrias viradas; depois saem do tabuleiro todos os canais e as indústrias de nível 1. Na era das ferrovias, um trilho custa £5 e um carvão; dois trilhos na mesma ação custam £15, dois carvões e uma cerveja. Cada era tem 10 rodadas com 2 jogadores, 9 com 3 e 8 com 4.",
+  "A partida termina com a pontuação da era das ferrovias: cada ligação vale um ponto por ícone nas cidades vizinhas, e cada indústria virada vale o número impresso nela. Vence quem tiver mais pontos; no empate, decide a maior renda e depois o dinheiro."
+ ],
+ "passos": [
+  [
+   "DESCARTE PARA AGIR",
+   "Faça duas ações no turno, cada uma paga com uma carta da mão: a de local vale para a cidade nomeada, a de indústria vale dentro da sua rede."
+  ],
+  [
+   "CONSTRUA E LIGUE",
+   "Ponha indústrias nas cidades e ligue-as com canais, na primeira era, ou trilhos, na segunda. O carvão só chega por ligação."
+  ],
+  [
+   "USE O RECURSO ALHEIO",
+   "Carvão, ferro e cerveja de qualquer jogador saem de graça. Quando a última unidade sai, a peça vira e o dono ganha renda."
+  ],
+  [
+   "VENDA COM CERVEJA",
+   "Tecelagens, manufaturas e olarias viram ao vender para um mercador conectado, gastando a cerveja indicada na peça."
+  ],
+  [
+   "PONTUE DUAS VEZES",
+   "No fim de cada era, ligações e indústrias viradas dão pontos. Depois dos canais, saem as indústrias de nível 1 e todas as ligações."
+  ]
+ ],
+ "como_resumo": "Monte indústrias e rotas na Inglaterra da Revolução Industrial e pontue duas vezes, usando o carvão e a cerveja dos rivais.",
+ "perfil": [
+  [
+   "Profundidade estratégica",
+   5
+  ],
+  [
+   "Interação entre jogadores",
+   4
+  ],
+  [
+   "Facilidade de ensinar",
+   1
+  ],
+  [
+   "Componentes e visual",
+   4
+  ],
+  [
+   "Partida curta",
+   2
+  ],
+  [
+   "Rejogabilidade",
+   5
+  ]
+ ],
+ "experiencia": [
+  "Vamos ser honestos sobre a primeira hora: alguém vai tentar levar carvão para uma cidade que não está ligada a nada. A Punchboard avisa que a diferença entre rede e conexão é mais difícil de ensinar do que deveria. Depois o clique vem, e o jogo vira outro.",
+  "Um turno típico: você tem uma tecelagem em Birmingham e quer vendê-la a um mercador ligado por canal. Falta cerveja. A cervejaria conectada mais perto é da Ana. Você usa o último barril dela de graça, vende o algodão e sobe a sua renda. A peça da Ana vira, e ela sobe a renda também e ainda marca pontos no fim da era. Você acabou de explorar o mercado e pagou o décimo terceiro da concorrente.",
+  "No intervalo, o jogo demole tudo o que era nível 1 e arranca os canais: Revolução Industrial com obra no meio do expediente. E a ordem da rodada premia quem gastou menos. Quem investe joga por último. A gente achou que era um jogo sobre o século 19, mas parece bem atual."
+ ],
+ "citacao": {
+  "texto": "Os fãs acham que este é o melhor jogo de estratégia já feito, e tenho de admitir que eles têm razão.",
+  "fonte": "GamesRadar+ (tradução livre)"
+ },
+ "funciona": [
+  [
+   "Concorrência que depende do concorrente",
+   "Para a Punchboard, o coração do jogo é a competição e a codependência ao mesmo tempo: você disputa espaço com os outros e precisa das ligações, do carvão e da cerveja deles. Cada recurso usado de graça vira renda para o dono, então toda jogada boa é também um presente calculado ao rival."
+  ],
+  [
+   "Seis ações, decisões sem fim",
+   "São seis ações e cartas que só dizem onde ou o que construir. A Punchboard resume como muita jogabilidade para um conceito tão simples. O What Board Game diz que o manual é simples e muito bom, e que o difícil é dominar a estratégia, que melhora partida após partida."
+  ],
+  [
+   "Duas eras, dois jogos",
+   "A virada dos canais para as ferrovias tira do tabuleiro as ligações e as indústrias de nível 1 e muda o custo de tudo: trilho pede carvão, trilho duplo pede cerveja. Quem planejou a primeira era pensando na segunda colhe ali. A Zatu, que deu 92%, põe a profundidade estratégica no topo dos pontos fortes."
+  ],
+  [
+   "Rejogabilidade de primeiro lugar",
+   "O BGG tem o jogo em 1º no ranking, com nota 8,6 em 60.796 avaliações, segundo o boardmatch.app. A Punchboard diz que cada partida parece diferente e revela camadas novas, e a Zatu lista a rejogabilidade entre os três pontos fortes. O mapa é o mesmo; as cartas e os rivais mudam tudo."
+  ],
+  [
+   "Também funciona a dois",
+   "Com 2 jogadores, as cartas de algumas cidades saem do baralho e cada era ganha 10 rodadas. A Punchboard diz que o jogo funciona bem a dois, porque as áreas fora de uso deixam a disputa concentrada. A enquete do BGG prefere quatro, mas a dupla não é castigo."
+  ],
+  [
+   "Produção caprichada",
+   "A Zatu elogia a arte tematicamente coerente e diz que todos os componentes têm qualidade excepcional. O tabuleiro de Damien Mammoliti e Mr. Cuddington ficou em 3º no Golden Geek de arte de 2018, atrás de Root e Everdell, o que para um mapa de olarias e siderúrgicas não é pouco."
+  ]
+ ],
+ "atencao": [
+  [
+   "Moderada",
+   "Fácil de jogar, difícil de explicar",
+   "A Punchboard diz que o conceito é mais difícil de ensinar do que deveria, e a Zatu põe as regras de rede e ligações no primeiro contra. Na prática, alguém explica o carvão com calma, e no turno seguinte outra pessoa pergunta do carvão. O ferro, que não precisa de ligação, é a pegadinha que sobra."
+  ],
+  [
+   "Moderada",
+   "Duas horas, se tudo correr bem",
+   "A Roxley anuncia de 60 a 120 minutos. O What Board Game conta uma sessão de quatro horas em que só deu tempo de Brass, e a Zatu fala em experiência longa e árdua. A caixa calcula a partida. A mesa calcula a partida mais o jogador que está pensando desde o café."
+  ],
+  [
+   "Moderada",
+   "Paralisia de análise",
+   "A Zatu lista a paralisia de análise entre os contras, e o What Board Game admite que ela vem mais de não entender a estratégia do que do excesso de opções. Ou seja, o remédio para a demora é jogar mais vezes. Poucos jogos conseguem vender o problema e a cura na mesma caixa."
+  ],
+  [
+   "Moderada",
+   "O tema é carvão e cerveja",
+   "A própria Punchboard lista o tema industrial como possível motivo de rejeição. Não há dragão nem bicho fofo: há olarias, siderúrgicas e um mercador em Gloucester. Se a sua mesa precisa de um castelo para se animar, o número 1 do mundo vai parecer uma reunião de compras de insumos."
+  ],
+  [
+   "Leve",
+   "Montar e guardar",
+   "A Zatu põe a preparação e o tempo de guardar entre os contras, e a conta da caixa explica: 180 peças de indústria, 56 ligações, 76 cartas, cubos de carvão e ferro e barris de cerveja para separar por jogador. Um organizador de caixa ajuda, e é vendido à parte."
+  ],
+  [
+   "Moderada",
+   "A Deluxe virou a única porta",
+   "Em 01/11/2026, as ofertas novas identificadas no ComparaJogos eram da Edição Deluxe, a partir de R$ 836,91 no Pix, além de uma cópia avariada por R$ 743,91. A Roxley vende a versão comum por US$ 79,98. As fichas de cerâmica são lindas. A gente só gostaria de ter tido a opção de não pagar por elas."
+  ]
+ ],
+ "jogadores": [
+  [
+   "2 jogadores",
+   "Funciona bem, segundo a Punchboard: algumas cidades saem do baralho e cada era tem 10 rodadas, o que mantém a disputa concentrada.",
+   2
+  ],
+  [
+   "3 jogadores",
+   "Usa quase todo o mapa e tem 9 rodadas por era. A avaliação da crítica para três não foi confirmada nas fontes consultadas.",
+   2
+  ],
+  [
+   "4 jogadores",
+   "A melhor contagem na enquete do BGG, com 757 votos de melhor, segundo o boardmatch.app. Mapa completo, 8 rodadas por era e a maior disputa por cerveja.",
+   3
+  ]
+ ],
+ "primeira_partida": "Reserve a tarde: a Roxley anuncia até 120 minutos, e o What Board Game relata uma sessão de quatro horas. Antes do primeiro turno, mostre no tabuleiro montado a diferença entre carvão, que precisa de ligação, e ferro, que não precisa: é o ponto que a Punchboard e a Zatu apontam como o mais confuso. Avise também que dinheiro não vale ponto e que, na virada de era, saem os canais e as indústrias de nível 1. Avisado antes, é regra; avisado no intervalo, é briga.",
+ "edicao_nacional": "A edição em português é da Conclave Editora: a versão padrão chegou em setembro de 2019 e a Deluxe, com fichas de dinheiro de cerâmica, em setembro de 2021, segundo a Ludopedia. O ComparaJogos classifica o jogo como sem dependência de idioma. Em 01/11/2026, ele listava 6 ofertas novas, de R$ 743,91 (cópia avariada) a R$ 969,03 no Pix, identificadas como Deluxe ou sem edição informada, e uma usada por R$ 679. A edição padrão nova não apareceu nas ofertas.",
+ "preco_ref": {
+  "faixa": "a partir de R$ 836,91 no Pix",
+  "data": "01/11/2026",
+  "obs": "menor preço de exemplar novo sem avaria no ComparaJogos, na Edição Deluxe; cópia avariada por R$ 743,91 e usada por R$ 679. A loja da Conclave não abriu para consulta."
+ },
+ "versoes": "Brass: Birmingham é a continuação de Brass: Lancashire, a nova edição do Brass de 2007, e as duas saíram da mesma campanha da Roxley em 2017. Há a Edição Deluxe, com fichas de cerâmica, e a sequência Brass: Pittsburgh, que arrecadou mais de US$ 9,1 milhões no Gamefound em 2026. A versão digital, da Cublo com a Phalanx, saiu na Steam em dezembro de 2021, sem português, e em 01/11/2026 não estava mais à venda lá.",
+ "comparacoes": [
+  [
+   "Carnegie",
+   "carnegie",
+   "Outro eurogame pesado de indústria e rotas no mapa, mas centrado na engrenagem da sua própria empresa. Menos dependência dos rivais que em Brass e mais planejamento solitário."
+  ],
+  [
+   "Ark Nova",
+   "ark-nova",
+   "Também mora no topo do BGG e também pede duas horas ou mais, só que a interação é indireta. Quem prefere montar o próprio zoológico a disputar a cerveja do vizinho fica melhor lá."
+  ],
+  [
+   "Great Western Trail",
+   "great-western-trail",
+   "Uma estrada que todos percorrem e entregas para pontuar: a mesma sensação de construir algo que os outros vão atravessar, com gado no lugar do carvão."
+  ]
+ ],
+ "para_quem": [
+  "Joga eurogame pesado e quer conhecer o que está no topo do ranking",
+  "Gosta de ganhar usando o que o outro construiu",
+  "Tem um grupo fixo disposto a uma segunda e uma terceira partida",
+  "Acha logística de carvão mais emocionante que dragão",
+  "Joga a dois e a quatro com a mesma frequência"
+ ],
+ "nao_e_para": [
+  "Precisa de fantasia ou bichos na caixa para se animar",
+  "Tem uma hora livre e amigos que nunca jogaram eurogame",
+  "Sofre ao ver o rival lucrar com a sua jogada",
+  "Não pretende passar de R$ 800 num jogo",
+  "Explica regras em cinco minutos ou desiste"
+ ],
+ "selo": "Recomendado com ressalva",
+ "ressalva": "preço acima de R$ 800",
+ "melhor_para": "estrategia",
+ "veredito": "Brass: Birmingham é o capitalismo como ele nunca foi: explorar o concorrente deixa o concorrente mais rico. E é exatamente por isso que o número 1 do BGG merece o posto. Seis ações, cartas que só dizem onde construir, e cada barril de cerveja alheia que você usa é renda que você entrega. O Golden Geek de estratégia de 2018 foi justo. O que pesa: a explicação trava no carvão, a partida passa de duas horas e, em 01/11/2026, a cópia nova sem avaria começava em R$ 836,91, só na Edição Deluxe. Com grupo fixo e paciência para a segunda partida, compre. Só não chame ninguém dizendo que é um jogo de trem.",
+ "tagline": "O número 1 do mundo é um mercado em que cada favor que você pega vira lucro do concorrente.",
+ "consulta": "01/11/2026",
+ "fontes": [
+  [
+   "Roxley Games – Brass: Birmingham (fotos oficiais)",
+   "https://roxley.com/products/brass-birmingham",
+   "ficha, componentes, duração, idade, preço nos EUA, fotos"
+  ],
+  [
+   "Brass: Birmingham – resumo de regras",
+   "https://lehi-innovation.github.io/boardgame-rules/rules/brass-birmingham/",
+   "regras, ações, eras, pontuação"
+  ],
+  [
+   "Brettspielbox – 13th Annual Golden Geek Awards Winners 2018",
+   "https://brettspielbox.de/13th-annual-golden-geek-awards-winners-2018/",
+   "prêmios"
+  ],
+  [
+   "LiveWire Calgary – Roxley nos Golden Geek Awards",
+   "https://livewirecalgary.com/2019/04/10/calgary-board-game-company-wins-top-honors-in-the-golden-geek-awards/",
+   "prêmios"
+  ],
+  [
+   "boardmatch.app – Brass: Birmingham",
+   "https://boardmatch.app/en/game/224517",
+   "nota, avaliações, peso, ranking e enquete do BGG"
+  ],
+  [
+   "BoardGameWire – Brass: Birmingham ganha sequência",
+   "https://boardgamewire.com/index.php/2024/01/17/boardgamegeeks-top-ranked-game-brass-birmingham-is-getting-a-sequel-this-year/",
+   "1º lugar no BGG, campanha de 2017"
+  ],
+  [
+   "BoardGameWire – Gavan Brown e Brass: Pittsburgh",
+   "https://boardgamewire.com/index.php/2026/04/27/deluxe-editions-have-become-sort-of-an-arms-race-we-often-do-the-opposite-roxley-ceo-gavan-brown-on-the-stellar-success-of-brass-pittsburghs-9-1m-crowdfund/",
+   "sequência, financiamento"
+  ],
+  [
+   "Wikipedia – Brass (board game)",
+   "https://en.wikipedia.org/wiki/Brass_(board_game)",
+   "histórico, Lancashire, prêmios"
+  ],
+  [
+   "Punchboard – Brass: Birmingham review",
+   "https://punchboard.co.uk/brass-birmingham-review/",
+   "crítica, ensino, interação, dois jogadores, tema"
+  ],
+  [
+   "Zatu – Brass: Birmingham review",
+   "https://zatu.com/brass-birmingham-review/",
+   "crítica, nota 92%, prós e contras"
+  ],
+  [
+   "What Board Game – Brass: Birmingham review",
+   "https://www.whatboardgame.com/amp/brass-birmingham-review",
+   "crítica, duração, paralisia de análise"
+  ],
+  [
+   "GamesRadar+ – Brass: Birmingham review",
+   "https://www.gamesradar.com/games/board-games/brass-birmingham-review",
+   "citação"
+  ],
+  [
+   "Tábula Quadrada – Tabulaview #34",
+   "https://tabulaquadrada.com.br/tabulaview-34-brass-lancashire-e-birmingham/",
+   "edição da Conclave, crítica nacional"
+  ],
+  [
+   "Ludopedia – Brass: Birmingham",
+   "https://ludopedia.com.br/jogo/brass-birmingham",
+   "edição nacional, nota (via busca)"
+  ],
+  [
+   "ComparaJogos – Brass: Birmingham",
+   "https://www.comparajogos.com.br/item/brass-birmingham",
+   "preço no Brasil, idioma"
+  ],
+  [
+   "Steam – Brass: Birmingham",
+   "https://store.steampowered.com/app/1287920/Brass_Birmingham/",
+   "versão digital, idiomas"
+  ]
+ ],
+ "legenda": "O número 1 do BoardGameGeek é um jogo em que usar o carvão do rival deixa o rival mais rico. ⚙️\n\nBrass: Birmingham venceu o Golden Geek de estratégia de 2018 e ficou em 2º no Jogo do Ano.\nSeis ações, duas eras e um intervalo em que o jogo demole metade do que você construiu.\nO que pesa: explicar o carvão, partidas de duas horas ou mais e Deluxe a partir de R$ 836,91 no Pix (01/11/2026).\nVeredito: RECOMENDADO COM RESSALVA.\n\nVocê usaria a cerveja do rival sabendo que ele ganha com isso?\n\nResenha completa no link da bio.\n📸 Fotos: Roxley Games\n\n#BrassBirmingham #Brass #JogosDeTabuleiro #BoardGames #Boardgamer #Eurogame #HeavyEuro #RoxleyGames #ConclaveEditora #GoldenGeek #EliteBoardgamers"
+}
