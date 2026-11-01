@@ -1354,5 +1354,26 @@
    ],
    "verificado_em": "2026-10-31"
   }
+ },
+ "wehrlegig.com": {
+  "nome": "Wehrlegig Games",
+  "apelidos": [
+   "Wehrlegig Games"
+  ],
+  "site": "https://wehrlegig.com",
+  "plataforma": "shopify",
+  "estrategia": "sitemap+shopify_json",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://wehrlegig.com/sitemap.xml"
+   ],
+   "verificado_em": "2026-11-01"
+  }
  }
 }

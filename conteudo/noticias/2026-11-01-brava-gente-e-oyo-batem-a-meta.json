@@ -1,0 +1,101 @@
+{
+ "slug": "brava-gente-e-oyo-batem-a-meta",
+ "data": "2026-11-01",
+ "categoria": "Financiamento",
+ "titulo": "Brava Gente e Oyó, jogos brasileiros de tema histórico, batem a meta no MeepleStarter",
+ "titulo_seo": "Brava Gente e Oyó batem a meta no MeepleStarter",
+ "editora": "Luz Negra Editora",
+ "selo": "Informativo",
+ "lide": "Dois jogos de autores brasileiros com tema histórico bateram a meta no MeepleStarter. Brava Gente, da Luz Negra Editora, sobre famílias imigrantes em São Paulo, chegou a R$ 30.126 de R$ 30 mil e vai até 10/12/2026. Oyó, wargame do historiador Eliseu Silva sobre o império iorubá, soma R$ 34.571 e termina em 09/11.",
+ "por_que_importa": "Num calendário de financiamentos cheio de miniatura de monstro, dois jogos nacionais bancados pelo público contam história do Brasil e da África. A gente aplaude. E repara que os dois custam exatamente R$ 369 na caixa base, o que prova que a história, pelo menos, tem preço tabelado.",
+ "numeros": [
+  [
+   "R$ 30.126",
+   "arrecadados por Brava Gente, 100% da meta de R$ 30 mil, com 76 apoiadores",
+   "MeepleStarter, 01/11/2026"
+  ],
+  [
+   "R$ 34.571",
+   "arrecadados por Oyó, 115% da meta de R$ 30 mil, com 83 apoiadores",
+   "MeepleStarter, 01/11/2026"
+  ],
+  [
+   "R$ 369",
+   "preço da caixa base nos dois financiamentos",
+   "MeepleStarter, 01/11/2026"
+  ]
+ ],
+ "corpo": [
+  "Brava Gente é um eurogame de alocação de trabalhadores e coleção de conjuntos, de Gabriel Rossi, que também assina a arte. Cada jogador comanda uma família de imigrantes em São Paulo entre o fim do século 19 e o começo do 20. São de 2 a 4 jogadores e cerca de 90 minutos. A campanha oferece dois complementos de R$ 20: objetivos secretos (Legado) e poderes diferentes para cada jogador (Novos Rumos).",
+  "Oyó é um wargame de 2 a 4 jogadores inspirado na cultura iorubá: cada jogador lidera um Ilê e disputa as províncias do Império de Oyó com cartas de guerra e búzios como moeda. O autor, Eliseu Silva, é professor e doutor em História. A campanha tem expansão (Mistério e Poder), quinto jogador e miniaturas de acrílico."
+ ],
+ "no_brasil": "Brava Gente está no MeepleStarter até 10/12/2026, com caixa base a R$ 369 e entrega prevista para 30/04/2027. Oyó vai até 09/11/2026, com apoios de R$ 369 (base) a R$ 499 (tudo, com búzios dourados e miniaturas de acrílico) e entrega prevista para 27/01/2027. Valores vistos em 01/11/2026.",
+ "critica": [],
+ "para_quem": [
+  "Quer jogo brasileiro com tema que não seja zumbi, dragão ou espaço",
+  "Gosta de alocação de trabalhadores (Brava Gente) ou de disputa de território com cartas (Oyó)"
+ ],
+ "nao_e_para": [
+  "Só apoia financiamento depois de ler três resenhas: ainda não há nenhuma publicada"
+ ],
+ "veredito": "Informativo, com torcida. Os dois bateram a meta, então os jogos saem; a dúvida agora é só se as mecânicas estão à altura dos temas. Sem resenha publicada, a gente acompanha de perto antes de recomendar compra às cegas por R$ 369.",
+ "fontes": [
+  {
+   "nome": "MeepleStarter: Brava Gente",
+   "url": "https://meeplestarter.com.br/bravagente",
+   "data": "01/11/2026"
+  },
+  {
+   "nome": "MeepleStarter: Oyó",
+   "url": "https://meeplestarter.com.br/oyo",
+   "data": "01/11/2026"
+  },
+  {
+   "nome": "Ludopedia: Brava Gente",
+   "url": "https://ludopedia.com.br/jogo/brava-gente",
+   "data": "01/11/2026"
+  },
+  {
+   "nome": "Ludopedia: Oyó",
+   "url": "https://ludopedia.com.br/jogo/oyo",
+   "data": "01/11/2026"
+  }
+ ],
+ "imagem": {
+  "arquivo": "capas/21167.jpg",
+  "credito": "Capa via Ludopedia"
+ },
+ "jogos": [],
+ "crivo": {
+  "pontos": 4,
+  "criterios": [
+   "Financiamentos brasileiros abertos, com meta batida e entrega prevista no Brasil (4)"
+  ]
+ },
+ "ids_ludopedia": [
+  21167,
+  84338
+ ],
+ "verificacao_nacional": [
+  {
+   "jogo": "Brava Gente",
+   "resultado": "edição nacional",
+   "data": "01/11/2026",
+   "fontes": [
+    "https://meeplestarter.com.br/bravagente",
+    "https://ludopedia.com.br/jogo/brava-gente"
+   ],
+   "obs": "jogo brasileiro em financiamento pela Luz Negra Editora"
+  },
+  {
+   "jogo": "Oyó",
+   "resultado": "edição nacional",
+   "data": "01/11/2026",
+   "fontes": [
+    "https://meeplestarter.com.br/oyo",
+    "https://ludopedia.com.br/jogo/oyo"
+   ],
+   "obs": "jogo brasileiro em financiamento pelo autor, Eliseu Silva"
+  }
+ ]
+}
