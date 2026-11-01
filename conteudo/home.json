@@ -2,6 +2,12 @@
  "edicao": "2026-10-30",
  "em_alta": [
   {
+   "nome": "Night at the Zoo",
+   "id_ludopedia": 85328,
+   "motivo": "Do autor de SETI, passa de R$ 286 mil no MeepleStarter",
+   "link": "noticias/night-at-the-zoo-pondscape-bucaneiros/"
+  },
+  {
    "nome": "Toy Battle",
    "id_ludopedia": 76515,
    "motivo": "Vencedor do As d'Or 2026, anunciado pela Asmodee",
@@ -24,15 +30,41 @@
    "id_ludopedia": 64685,
    "motivo": "Em preparação pela Devir",
    "link": "noticias/devir-dc-super-heroes-united-e-one-round/"
-  },
-  {
-   "nome": "Money!",
-   "id_ludopedia": 4897,
-   "motivo": "Knizia anunciado pela Ludofun",
-   "link": "noticias/ludofun-money-reiner-knizia/"
   }
  ],
  "financiamentos": [
+  {
+   "nome": "Night at the Zoo e Pondscape",
+   "editora": "Bucaneiros Jogos",
+   "onde": "Brasil · aberto",
+   "situacao": "R$ 286 mil (1.146% da meta); termina em 10/11",
+   "fonte": "MeepleStarter, 01/11/2026",
+   "noticia": "night-at-the-zoo-pondscape-bucaneiros"
+  },
+  {
+   "nome": "Oceanos",
+   "editora": "Ace Studios",
+   "onde": "Brasil · abre em 10/11",
+   "situacao": "Pré-campanha no MeepleStarter",
+   "fonte": "MeepleStarter, 01/11/2026",
+   "noticia": "oceanos-ace-studios-meeplestarter"
+  },
+  {
+   "nome": "Brava Gente e Oyó",
+   "editora": "Independente",
+   "onde": "Brasil · aberto",
+   "situacao": "Metas batidas; Oyó até 09/11, Brava Gente até 10/12",
+   "fonte": "MeepleStarter, 01/11/2026",
+   "noticia": "brava-gente-e-oyo-batem-a-meta"
+  },
+  {
+   "nome": "An Infamous Traffic",
+   "editora": "Wehrlegig Games",
+   "onde": "Kickstarter · encerrado",
+   "situacao": "US$ 726 mil de 7.877 apoiadores",
+   "fonte": "Kicktraq, 01/11/2026",
+   "noticia": "an-infamous-traffic-cole-wehrle-fecha-kickstarter"
+  },
   {
    "nome": "Spellrift Legends",
    "editora": "Ludens Spirit",
@@ -85,9 +117,9 @@
    "nome": "Excursions – a Galactic Cruise Game",
    "editora": "Kinson Key Games",
    "onde": "Kickstarter · encerrado",
-   "situacao": "US$ 544 mil em 28/10; campanha terminou em 30/10",
-   "fonte": "Tabletop Analytics, 28/10/2026",
-   "noticia": "excursions-galactic-cruise-campanha-termina"
+   "situacao": "US$ 660 mil de 6.229 apoiadores",
+   "fonte": "Kicktraq, 01/11/2026",
+   "noticia": "excursions-fecha-kickstarter-660-mil"
   },
   {
    "nome": "The Lord of the Rings: The King's Gambit",

@@ -7,7 +7,7 @@
  "titulo": "An Infamous Traffic, do criador de Root, fecha Kickstarter com US$ 726 mil",
  "titulo_seo": "An Infamous Traffic, de Cole Wehrle, fecha com US$ 726 mil",
  "selo": "Vale acompanhar",
- "lide": "A segunda edição de An Infamous Traffic, jogo econômico de Cole Wehrle, designer de Root, encerrou a campanha no Kickstarter em 30 de outubro com US$ 726.269 de 7.877 apoiadores, 14 vezes a meta. O jogo, para 1 a 5 pessoas, trata do comércio de ópio na China da dinastia Qing. Root saiu em português pela MeepleBR.",
+ "lide": "A segunda edição de An Infamous Traffic, jogo econômico de Cole Wehrle, designer de Root, encerrou a campanha no Kickstarter em 30 de outubro com US$ 726.269 de 7.877 apoiadores, mais de 14 vezes a meta. O jogo, para 1 a 5 pessoas, trata do comércio de ópio na China da dinastia Qing. Root saiu em português pela MeepleBR.",
  "por_que_importa": "O homem que fez a gente brigar por uma floresta de bichinhos fofos agora quer que a gente brigue por um mercado de ópio, e quase oito mil pessoas acharam a ideia ótima. Faz sentido: Wehrle escreve jogo histórico que não pede desculpa pela história. Só que este não tem bichinho nenhum para suavizar a conversa.",
  "numeros": [
   [
@@ -27,7 +27,7 @@
   ]
  ],
  "corpo": [
-  "A primeira edição saiu em 2016. Ao anunciar a nova, em julho, Wehrle a descreveu como uma reconstrução completa, com componentes novos, regras revistas e mais caminhos de estratégia, além de um modo solo de Richard Wilkins. Cada jogador comanda uma firma comercial que explora as falhas de fiscalização do governo Qing, e a ação agora passa também por Londres e pela Índia.",
+  "A primeira edição saiu em 2016 pela Hollandspiele. Ao anunciar a nova, em julho, Wehrle a descreveu como uma reconstrução completa, com componentes novos, regras revistas e mais caminhos de estratégia, além de um modo solo de Richard Wilkins. Cada jogador comanda uma firma comercial que explora as falhas de fiscalização do governo Qing, e a ação agora passa também por Londres e pela Índia.",
   "Em janeiro de 2026, Wehrle e o ilustrador Kyle Ferrin deixaram a Leder Games, que ficou com Root, e fundaram a Buried Giant Studios. A Wehrlegig, selo dos jogos históricos de Wehrle, como Pax Pamir e John Company, virou um braço semi-independente do novo estúdio, segundo o BoardGameWire."
  ],
  "no_brasil": "Não encontramos edição nacional de An Infamous Traffic até 01/11/2026, no ComparaJogos e em buscas por lojas brasileiras. Quem apoiou recebe a caixa em inglês, com frete e impostos de importação à parte. Root, o jogo mais conhecido do designer, tem edição em português da MeepleBR.",
@@ -45,13 +45,13 @@
  ],
  "para_quem": [
   "Gosta de Root pela briga e de Pax Pamir pela aula de história",
-  "Quer um jogo econômico em que o lucro dos outros é, literalmente, o seu problema"
+  "Acha que jogo econômico bom é aquele em que o lucro dos outros vira, literalmente, o seu problema"
  ],
  "nao_e_para": [
   "Prefere tema histórico com verniz de livro infantil",
   "Precisa do jogo em português para levar à mesa da família"
  ],
- "veredito": "Vale acompanhar. A crítica que jogou gostou mais da segunda edição que da primeira, e o designer tem histórico para isso. Em português, porém, ainda não há editora anunciada, e a gente desconfia que o tema assusta mais o departamento comercial do que o jogador.",
+ "veredito": "Vale acompanhar. A crítica que jogou gostou mais da segunda edição que da primeira, e o designer tem histórico para isso. Editora brasileira, nenhuma anunciada até agora, e a gente desconfia que o tema assusta mais o departamento comercial do que o jogador.",
  "fontes": [
   {
    "nome": "Kickstarter: An Infamous Traffic: Second Edition",
@@ -92,9 +92,19 @@
    "nome": "ComparaJogos: An Infamous Traffic",
    "url": "https://www.comparajogos.com.br/item/an-infamous-traffic",
    "data": "01/11/2026"
+  },
+  {
+   "nome": "Wehrlegig Games: An Infamous Production (foto)",
+   "url": "https://wehrlegig.com/blogs/essays/an-infamous-production",
+   "data": "01/11/2026"
   }
  ],
- "imagem": null,
+ "imagem": {
+  "arquivo": "capas/an-infamous-traffic-cole-wehrle-fecha-kickstarter.jpg",
+  "credito": "Imagem: Wehrlegig Games",
+  "origem": "https://cdn.shopify.com/s/files/1/0220/5073/4144/files/woodentiles.webp",
+  "pagina": "https://wehrlegig.com/blogs/essays/an-infamous-production"
+ },
  "jogos": [
   {
    "nome": "Root",
@@ -130,5 +140,6 @@
    ],
    "obs": "MeepleBR, segundo a nossa resenha"
   }
- ]
+ ],
+ "publicado_em": "2026-11-01T10:02:56+00:00"
 }
