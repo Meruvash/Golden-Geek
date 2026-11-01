@@ -8,27 +8,27 @@
 
 ### A ideia do jogo
 
-Jogo cooperativo em dois atos. No Ato 1, os heróis exploram a **masmorra** carta a carta, enfrentam Goblins e Lacaios e procuram a Porta do Covil. No Ato 2, enfrentam o **Chefe**. O tempo todo a **tocha** desce um espaço ao fim de cada turno: se ela chegar à caveira, todos perdem. Quase toda ação pede um **Teste de Habilidade** com os Dados de Herói (p. 3 e 6).
+Jogo cooperativo em dois atos. No Ato 1, os heróis exploram a **masmorra** carta a carta, enfrentam Goblins e Lacaios e procuram a Porta do Covil; no Ato 2, enfrentam o **Chefe**. A **tocha** desce um espaço ao fim de cada turno: na caveira, todos perdem. Quase toda ação é um **Teste de Habilidade** com os Dados de Herói (p. 3 e 6).
 
 ### Monte a mesa
 
-1. Baralho da Masmorra: separe Entrada, Salas, Encontros e Porta do Covil. Monte 3 montes e empilhe, de cima para baixo: A, Salas (2 heróis: 9; 3 heróis: 7; 4 heróis: 5); B, 1 Encontro e 3 Salas por herói, embaralhados; C, 3 Salas e a Porta do Covil, embaralhadas. O resto volta à caixa.
-2. Carta de Entrada aberta no centro, com 1 Marcador de Altar no símbolo dela. Em cada um dos 4 lados, 1 carta do Baralho da Masmorra virada para baixo. Deixe espaço para uma grade de 7 por 7 cartas.
-3. Tabuleiro de Tocha, lado Ato 1, com o Marcador de Tocha no espaço do número de heróis. Ao lado: baralhos de Goblin e de Lacaio, os 4 Marcadores de Goblin nos números, 1 Marcador de Vida e 1 Marcador de Altar por herói *(depois)*.
-4. Um Tabuleiro de Chefe sorteado sem olhar, lado Ato 1, com o Marcador do Chefe *(depois)*. Baralhos de Espólio e de Feitiço, com espaço para uma linha de cartas ao lado de cada um. Os 7 Marcadores de Desarme ao alcance.
-5. Cada jogador: um Tabuleiro de Herói, a miniatura na Entrada, os marcadores de Vida e de Foco no valor mais alto das trilhas. O mais novo recebe os 3 Dados de Herói e o Dado de Inimigo e começa.
+1. Baralho da Masmorra, virado para baixo, de cima para baixo: A, Salas (2 heróis: 9; 3: 7; 4: 5); B, 1 Encontro e 3 Salas por herói, embaralhados; C, 3 Salas e a Porta do Covil, embaralhadas.
+2. Carta de Entrada aberta no centro, com 1 Marcador de Altar. Em cada lado dela, 1 carta do Baralho da Masmorra virada. Espaço para uma grade de 7 por 7 cartas.
+3. Tabuleiro de Tocha, lado Ato 1, tocha no espaço do número de heróis; baralhos de Goblin e de Lacaio; Marcadores de Goblin nos números; 1 Marcador de Vida e 1 de Altar por herói *(depois)*.
+4. Tabuleiro de Chefe sorteado, lado Ato 1, e Marcador do Chefe *(depois)*. Baralhos de Espólio e de Feitiço. Marcadores de Desarme.
+5. Cada jogador: Tabuleiro de Herói, miniatura na Entrada, Vida e Foco no topo das trilhas. O mais novo pega os dados e começa.
 
 ### Seu primeiro turno
 
-No seu turno, em qualquer ordem e sem obrigação: **Mover**, fazer **1 Ação Heroica** (placa azul) e quantas **Ações Livres** (placa laranja) quiser e puder pagar. A Ação Heroica encerra o movimento (p. 6 e 7).
+Em qualquer ordem, nada obrigatório: **Mover**, **1 Ação Heroica** (placa azul) e **Ações Livres** (placa laranja). A Ação Heroica encerra o movimento (p. 6 e 7).
 
-1. **Mover.** Cada sala custa 1 de Velocidade, sempre por um corredor. Para entrar numa carta virada ao lado da sua sala, vire-a e gire-a até um corredor dela ligar com a sua sala. Ponha cartas novas viradas para baixo em cada corredor aberto dela que dê num espaço vazio da grade. Entre e resolva o ícone da sala (p. 7 e 8).
-2. **Encontro com Goblin:** receba 1 dano e pare. A carta de Goblin vai, aberta, no espaço livre mais baixo do Tabuleiro de Tocha; o Marcador de Goblin daquele número vai para a sala. **Armadilha:** faça o teste do lado esquerdo da carta; no fracasso, receba o dano da caixa vermelha, e siga andando (p. 8).
-3. **Ação Heroica**, por exemplo **Atacar**: role tantos Dados de Herói quantos cubos a Habilidade tem, mais o Dado de Inimigo. Escolha 1 dado como resultado; os dados +1 e +2 podem somar a ele. Passou da Defesa do inimigo: o dano é a diferença. Inimigo vivo contra-ataca com o Dado de Inimigo (etapa 4) (p. 9, 11 e 12).
-4. **Depois de um teste com sucesso**, cada raio nos dados que você não usou dá 1 Foco (p. 9).
+1. **Mover.** Cada sala custa 1 de Velocidade, por corredor. Carta virada vizinha: vire, gire até um corredor ligar com a sua sala, ponha cartas viradas nos corredores abertos dela dentro da grade, entre e resolva o ícone (p. 7 e 8).
+2. **Encontro com Goblin:** 1 dano e pare. Carta de Goblin no espaço livre mais baixo do Tabuleiro de Tocha; o marcador daquele número vai para a sala. **Armadilha:** teste do lado esquerdo da carta; fracasso, dano da caixa vermelha (p. 8).
+3. **Atacar** (Ação Heroica): Dados de Herói conforme os cubos da Habilidade, mais o Dado de Inimigo. 1 dado é o resultado; +1 e +2 somam a ele. Acima da Defesa: dano = diferença. Inimigo vivo contra-ataca (etapa 4) (p. 9, 11 e 12).
+4. **Teste com sucesso:** cada raio nos dados não usados dá 1 Foco (p. 9).
 5. **Fim do turno:** a tocha desce 1 espaço. Ícone onde ela parar: resolva (p. 6 e 15).
 
-> [!resolvido] **Exemplo resolvido.** Você joga com Thordin, que ataca com o Martelo (Força, 3 dados). Vira a carta ao lado da Entrada: Encontro com Goblin. Recebe 1 dano, para, e o Goblin 1 entra na sala. Ataca: sai 5, +2 e 3 nos Dados de Herói e 4 no Dado de Inimigo. Resultado 5 + 2 = 7 contra Defesa 4: 3 de dano. O Goblin tem 1 de Vida e morre, sem contra-ataque. O 3 não usado dá 1 Foco. Fim do turno: a tocha desce 1.
+> [!resolvido] **Exemplo resolvido.** Thordin ataca com o Martelo (Força, 3 dados). Vira a carta ao lado da Entrada: Encontro com Goblin. Recebe 1 dano, para; o Goblin 1 entra na sala. Ataca: 5, +2 e 3, e 4 no Dado de Inimigo. 5 + 2 = 7 contra Defesa 4: 3 de dano. O Goblin tem 1 de Vida e morre sem contra-atacar. O 3 não usado dá 1 Foco. A tocha desce 1.
 
 > [!complete] **Complete.** Mesma sala, mesmo Goblin de Defesa 4, 1 Goblin na masmorra, Thordin com Defesa 4.
 >
@@ -44,9 +44,7 @@ No seu turno, em qualquer ordem e sem obrigação: **Mover**, fazer **1 Ação H
 > - (x) O Goblin não sofre dano e contra-ataca com 3 + 1 = 4, que não passa da sua Defesa 4: você não recebe dano.
 > = 4 não é maior que 4: sem dano. O contra-ataque soma o dado ao modificador do Goblin, que é o número de Goblins na masmorra (1): 4, igual à sua Defesa, sem dano (p. 11 e 12).
 
-> [!suavez] **Agora a sua mesa.** Veja a Velocidade, as Habilidades e o Foco no seu Tabuleiro de Herói, escolha que carta virar e jogue o turno. No fim, desça a tocha.
-
-!fig[A mesa montada: Carta de Entrada no centro da grade de 7 por 7, com 4 cartas viradas e as miniaturas; acima, Tabuleiro de Chefe, Tabuleiro de Tocha e os baralhos de Goblin e de Lacaio; à esquerda, Espólio, Feitiço e o Baralho da Masmorra; embaixo, um Tabuleiro de Herói com os marcadores de Vida e de Foco. Ilustração: manual Meeple BR (p. 5)](figuras/preparacao.webp)
+> [!suavez] **Agora a sua mesa.** Confira Velocidade e Habilidades no seu Tabuleiro de Herói, escolha que carta virar e jogue. No fim, desça a tocha.
 
 ### Ainda não precisa saber
 
@@ -54,13 +52,13 @@ Lacaios, Portal e Desarmar: etapas 2 e 3. Procurar, Descansar, feitiços e espó
 
 ### Como a partida acaba
 
-Quando todos os Lacaios morreram e a Porta do Covil está aberta, vocês entram no Covil e vencem se zerarem a Vida do Chefe. Perdem se a tocha chegar à caveira, se um quinto Goblin precisar entrar ou se não houver mais corredor aberto sem a Porta do Covil revelada (p. 6).
+Com todos os Lacaios mortos e a Porta do Covil revelada, vocês entram no Covil; zerar a Vida do Chefe vence. Perdem com a tocha na caveira, um quinto Goblin ou nenhum corredor aberto sem a Porta do Covil revelada (p. 6).
 
 **Prefere ver?** Partida resumida em vídeo. Ele complementa este guia; em caso de diferença, vale o manual.
 
 !video[TINY EPIC DUNGEONS - Gameplay resumida em 10 minutos, canal Duque Board Games](https://www.youtube.com/watch?v=NXVZinKgee0&t=0s)
 
-> [!atencao] **Os três erros mais caros.** A tocha desce no fim de todo turno, mesmo que você não faça nada. Dano só sai se o resultado for **maior** que a Defesa; igual não fere. A Ação Heroica encerra o seu movimento (p. 6, 7 e 11).
+> [!atencao] **Os três erros mais caros.** A tocha desce no fim de todo turno, mesmo sem você fazer nada. Dano só se o resultado for **maior** que a Defesa. A Ação Heroica encerra o movimento (p. 6, 7 e 11).
 
 ## 0. Antes de tudo: o que é este jogo
 
@@ -100,7 +98,7 @@ Em cada etapa fica à vista o essencial: o passo a passo e o erro mais comum. O 
 > 12. Cada jogador: Tabuleiro de Herói (escolhido, sorteado ou escolhido entre alguns sorteados), miniatura na Carta de Entrada, Marcador de Vida e Marcador de Foco nos valores mais altos das trilhas.
 > 13. 7 Marcadores de Desarme ao alcance. Os 3 Dados de Herói e o Dado de Inimigo para o jogador mais novo, que começa.
 
-!fig[A mesa pronta para 4 heróis: as letras seguem os itens da preparação do manual, da montagem do Baralho da Masmorra (D) às miniaturas na Entrada (S) e aos dados com o primeiro jogador (V). Ilustração: manual Meeple BR (p. 5)](figuras/preparacao.webp)
+!fig[A mesa montada: Carta de Entrada no centro da grade de 7 por 7, com 4 cartas viradas e as miniaturas; acima, Tabuleiro de Chefe, Tabuleiro de Tocha e os baralhos de Goblin e de Lacaio; à esquerda, Espólio, Feitiço e o Baralho da Masmorra; embaixo, um Tabuleiro de Herói com os marcadores de Vida e de Foco. As letras seguem os itens da preparação. Ilustração: manual Meeple BR (p. 5)](figuras/preparacao.webp)
 
 > [!mais] **Partida solo.** Use pelo menos 2 heróis e controle cada um em separado: atributos, espólios, feitiços e lugar na masmorra. Para todas as regras, o número de heróis é o número de jogadores (p. 17).
 
@@ -181,12 +179,6 @@ Em cada etapa fica à vista o essencial: o passo a passo e o erro mais comum. O 
 > - ( ) Só tentar Desarmar, que é obrigatório.
 > = Depois do teste, com qualquer resultado, você segue o movimento ou tenta Desarmar (p. 8).
 >
-> ?? Um herói revela uma sala com Encontro com Goblin. Quem recebe o 1 dano?
-> - ( ) Todos os heróis vizinhos da sala.
-> - ( ) Ninguém: o dano só vem quando o Goblin ataca.
-> - (x) O herói que está na sala.
-> = O dano do encontro é de quem está na sala (p. 8).
->
 > ?? A sala nova tem um corredor apontando para fora da grade de 7 por 7. O que vai ali?
 > - (x) Nada: nenhuma carta pode ficar fora da grade.
 > - ( ) Uma carta virada, como em qualquer corredor aberto.
@@ -257,12 +249,6 @@ Em cada etapa fica à vista o essencial: o passo a passo e o erro mais comum. O 
 > - (x) Gaste 2 de Foco e mude o 5 para 6.
 > - ( ) Some os dois 3 ao 5.
 > = A Ação Livre Modificar o Dado de Herói em 1 custa 2 de Foco por ponto. Só os dados "+" somam; o 3 não (p. 9 e 14).
->
-> ?? O seu herói tem Força com 1 cubo e um espólio que dá -1 dado em Força. Quantos dados rola num teste de Força?
-> - ( ) Nenhum.
-> - (x) 1.
-> - ( ) 2.
-> = Nunca menos de 1 dado nem mais de 3 (p. 6 e 9).
 >
 > ?? Você fracassou num teste, mas um dado não usado mostra 6. O que ganha?
 > - (x) 1 de Vida.
@@ -387,7 +373,7 @@ Em cada etapa fica à vista o essencial: o passo a passo e o erro mais comum. O 
 >
 > - O Tabuleiro do Chefe é uma sala grande: todos ali estão na mesma sala e em linha de visão, e todo ataque está no alcance.
 > - Entre pelo Espaço da Entrada (flechas pretas). Com Velocidade sobrando, passe aos Espaços de Herói vizinhos como se fossem salas ligadas. Pode atravessar outros heróis, mas não terminar no mesmo espaço.
-> - Para atacar o Chefe, esteja num Espaço de Herói. Os modificadores e efeitos do espaço valem quando você **termina** o movimento nele.
+> - Para atacar o Chefe, esteja num Espaço de Herói. Os modificadores do espaço valem para as ações feitas dali; os efeitos adicionais (ganhar ou perder Vida, Foco, Velocidade, ou um Goblin) valem quando você **termina** o movimento nele, não quando começa.
 > - Ali você pode Atacar, Lançar Feitiço ou Descansar.
 > - Teste contra a Defesa do Chefe, no tabuleiro dele. O contra-ataque usa os modificadores do Chefe; perda de Foco ou de Vida indicada ali vem depois do seu ataque.
 > - Para sair, ande pelo Espaço da Entrada até a Carta da Porta do Covil.
@@ -439,12 +425,6 @@ Em cada etapa fica à vista o essencial: o passo a passo e o erro mais comum. O 
 > - (x) Não: com o Chefe no Covil, todo ataque é feito de dentro do Tabuleiro do Chefe.
 > - ( ) Sim, se o feitiço tiver alcance de 2 salas.
 > = Fora do Covil, nada de Ataque à Distância nem Feitiço contra o Chefe no Covil (p. 20).
->
-> ?? Quando um efeito de Espaço de Herói vale?
-> - ( ) Quando você começa o turno nele.
-> - ( ) Sempre que você passa por ele.
-> - (x) Quando você termina o movimento nele.
-> = Os efeitos dos espaços valem ao terminar o movimento ali, não ao começar (p. 18).
 >
 > ?? 2 heróis, marcadores no 8 e no 5, sem Altar descoberto no caminho. Você causa 4 de dano. Pode deixar os dois no 5 e no 4?
 > - ( ) Não: o dano vai inteiro para um só marcador.

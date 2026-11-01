@@ -1,0 +1,24 @@
+{
+ "slug": "tiny-epic-pirates",
+ "titulo": "Como jogar Tiny Epic Pirates",
+ "jogo": "Tiny Epic Pirates",
+ "genero": "Seleção de ações · Coleta e entrega",
+ "jogadores": "1 a 4 jogadores",
+ "duracao": "30 a 45 min",
+ "idade": "14+",
+ "edicao": "Edição Meeple BR",
+ "data": "2026-11-01",
+ "descricao": "Aprenda a jogar Tiny Epic Pirates em cinco etapas: preparação, Timão e Marujos, navegação e Ordens, ataque e Lenda, Tesouros e Fragata.",
+ "resumo": "Você move o Capitão no Timão para escolher a Ordem do turno, navega, pilha, vende Espólios e ataca navios para juntar Ouro, e vence quem enterrar primeiro 3 Tesouros.",
+ "pontos": [
+  "A cada turno o Capitão avança no Timão; pular espaços custa Marujos, que saem do Cordame, dos Canhões ou da Extorsão.",
+  "Ouro vem de pilhar, vender Espólios no Mercado, buscar no mar e afundar Navios Mercantes; o máximo é 13.",
+  "Enterrar Tesouro é uma Ação Bônus da Carta de Capitão; o terceiro dispara o fim, e a Fragata persegue quem dá a volta no Timão."
+ ],
+ "leitura_min": 0,
+ "etapas": 5,
+ "resenha": null,
+ "chamada": "Escolha a Ordem no Timão, gaste Marujos para pular espaços e corra para enterrar 3 Tesouros antes da Fragata. Começa com um resumo para jogar em 4 minutos e segue em cinco etapas.",
+ "md": "docs/como-jogar/tiny-epic-pirates/tutorial.md",
+ "publicar": false
+}

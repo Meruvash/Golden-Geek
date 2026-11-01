@@ -8,7 +8,7 @@
 
 ### A ideia do jogo
 
-Você comanda um navio pirata. Vence quem primeiro **enterrar 3 tesouros**, o que custa Ouro: ele vem de pilhar vilas, vender Espólios, buscar no mar e atacar navios. A cada turno, o **Capitão** anda no **Timão** e escolhe a Ordem do turno. **Marujos** o fazem pular espaços, mas cada um que sai do trabalho deixa o navio mais lento ou mais fraco.
+Você comanda um navio pirata. Vence quem primeiro **enterrar 3 tesouros**, o que custa Ouro, ganho pilhando vilas, vendendo Espólios, buscando no mar e atacando. A cada turno, o **Capitão** anda no **Timão** e escolhe a Ordem do turno. **Marujos** o fazem pular espaços, mas cada um que sai do trabalho deixa o navio mais lento ou mais fraco.
 
 ### Monte a mesa
 
@@ -52,7 +52,7 @@ O turno tem cinco passos, sempre nesta ordem (p. 6 e 16):
 > - ( ) 4
 > = 3: o inicial e os 2 da Bolsa. O navio leva até 3 (p. 9).
 
-> [!suavez] **Agora a sua mesa.** Decida a sua Ordem. Confira antes:
+> [!suavez] **Agora a sua mesa.** Confira antes de decidir:
 >
 > ?? O Capitão pode ficar no Esconderijo no primeiro turno?
 > - ( ) Pode, se você não quiser fazer nada
@@ -68,7 +68,7 @@ O turno tem cinco passos, sempre nesta ordem (p. 6 e 16):
 
 ### Ainda não precisa saber
 
-Marujos que voltam do Timão: etapa 2. Ordens em detalhe: etapa 3. Atacar e Lenda: etapa 4. Tesouros, Fragata e Navios Mercantes: etapa 5.
+Marujos que voltam do Timão: etapa 2. Ordens: etapa 3. Atacar e Lenda: etapa 4. Tesouros e Fragata: etapa 5.
 
 ### Como a partida acaba
 
