@@ -19,7 +19,12 @@ TERMOS_IDEIA = 4  # termos novos em negrito no modelo mental: o resto do vocabul
 
 def secao(texto):
     m = re.search(r"^## \S*\s*Comece a jogar em (\d+) minutos?\n(.*?)(?=^## )", texto, re.S | re.M)
-    return (int(m.group(1)), m.group(2)) if m else (None, None)
+    if not m:
+        return (None, None)
+    # figuras e vídeos (!fig[...], !video[...], decisão de 01/11/2026) viram imagem e player na página: não são texto
+    # de leitura, não contam no tempo nem nos outros portões
+    corpo = re.sub(r"^(?:> ?)?!(?:fig|video)\[.*$", "", m.group(2), flags=re.M)
+    return (int(m.group(1)), corpo)
 
 
 def palavras(t):

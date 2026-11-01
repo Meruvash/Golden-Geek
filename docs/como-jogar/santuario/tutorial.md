@@ -73,7 +73,7 @@ Casais e o Rio: etapa 3. Metas e melhorias: etapa 4. Pontuação: etapa 5.
 
 Quem apoia 4 metas (põe seus 4 marcadores de conquista sob elas) ou cobre o tabuleiro ganha 10 pontos, e os outros jogam mais um turno. Pilha vazia antes disso: a partida acaba ao fim daquele turno. Mais pontos vence.
 
-**Prefere ver?** No vídeo abaixo, o canal Duque Board Games joga uma partida resumida. Ele complementa este guia; em caso de diferença, vale o manual.
+**Prefere ver?** Partida resumida em vídeo; em caso de diferença, vale o manual.
 
 !video[SANTUARIO - Gameplay resumida, canal Duque Board Games](https://www.youtube.com/watch?v=edGRTyy6D64&t=0s)
 

@@ -74,7 +74,7 @@ Cartas e CP em detalhe: etapa 3. Fichas como Evasiva, os tipos de dano e a habil
 
 No duelo, quem leva a Vida do adversário a 0 vence. Se os dois chegarem a 0 ao mesmo tempo, é empate (p. 4).
 
-**Prefere ver?** O vídeo abaixo explica o jogo do começo ao fim, com as peças na mesa. Ele complementa este guia; em caso de diferença, vale o manual.
+**Prefere ver?** Regras em vídeo; em caso de diferença, vale o manual.
 
 !video[Dice Throne: Season 1 Rerolled (Conclave Editora) - Regras, canal Casa NERD lol | Casa NERD](https://www.youtube.com/watch?v=HcubuukAhIc&t=0s)
 

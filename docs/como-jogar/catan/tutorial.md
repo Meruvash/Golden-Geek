@@ -90,7 +90,7 @@ Portos e trocas melhores: etapa 3. Cidades: etapa 3. O ladrão em detalhe e as c
 
 Aldeia vale 1 ponto, cidade 2, as duas cartas especiais 2 cada, e algumas cartas de desenvolvimento valem 1. Quem tiver 10 pontos ou mais durante o próprio turno vence na hora (p. 4).
 
-**Prefere ver?** O vídeo abaixo explica o jogo do começo ao fim, com as peças na mesa. Ele complementa este guia; em caso de diferença, vale o manual.
+**Prefere ver?** Regras em vídeo; em caso de diferença, vale o manual.
 
 !video[Catan: O Jogo - Como Jogar, canal Romir Play House](https://www.youtube.com/watch?v=3YuoRbFPLqQ&t=0s)
 

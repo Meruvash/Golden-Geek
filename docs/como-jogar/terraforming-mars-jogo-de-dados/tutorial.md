@@ -61,7 +61,7 @@ Você **nunca** rola de novo um dado que já está à sua frente. Para mudar a f
 
 Quando o segundo dos três parâmetros fica completo, todos jogam mais um turno, inclusive quem o completou. Depois somam PVs da trilha, de prêmios, de marcos e das cartas (p. 6 e 8).
 
-**Prefere ver?** O vídeo abaixo explica o jogo do começo ao fim, com as peças na mesa. Ele complementa este guia; em caso de diferença, vale o manual.
+**Prefere ver?** Regras em vídeo; em caso de diferença, vale o manual.
 
 !video[TERRAFORMING MARS: o Jogo de Dados - Regras, canal Duque Board Games](https://www.youtube.com/watch?v=I4ArV1_5BDs&t=0s)
 

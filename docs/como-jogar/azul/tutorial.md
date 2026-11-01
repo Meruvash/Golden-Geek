@@ -73,7 +73,7 @@ Quando os azulejos acabam, a rodada passa para o revestimento da parede, com a p
 
 A partida termina no fim da rodada em que alguém completa uma fileira horizontal de 5 azulejos na parede. Aí entram bônus por fileira horizontal, fileira vertical e cor completas, e vence quem tiver mais pontos (p. 6).
 
-**Prefere ver?** O vídeo abaixo explica o jogo do começo ao fim, com as peças na mesa. Ele complementa este guia; em caso de diferença, vale o manual.
+**Prefere ver?** Regras em vídeo; em caso de diferença, vale o manual.
 
 !video[Azul - Como Jogar, canal Romir Play House](https://www.youtube.com/watch?v=B0VT8juzbwY&t=0s)
 

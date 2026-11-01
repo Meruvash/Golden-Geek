@@ -87,7 +87,7 @@ Desenhos nos túneis, peças novas e salas especiais: etapa 4. Fantasma e Perigo
 
 Voltar à Cripta com um Artefato é escapar: ganha a ficha de Maestria (20 pontos). Quando todos escaparam ou foram nocauteados, vence quem tem mais pontos. Nocauteado sem Artefato ou nas Profundezas faz zero.
 
-**Prefere ver?** No vídeo abaixo, o canal Duque Board Games joga uma partida resumida. Ele complementa este guia; em caso de diferença, vale o manual.
+**Prefere ver?** Partida resumida em vídeo; em caso de diferença, vale o manual.
 
 !video[CLANK! CATACOMBS - Gameplay resumida, canal Duque Board Games](https://www.youtube.com/watch?v=xKw1CC_aZHU&t=0s)
 

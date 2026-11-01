@@ -46,7 +46,7 @@ Uma rodada é uma volta na mesa: em geral, cada jogador joga **1 carta de ação
 
 No fim do capítulo, quando ninguém tem mais cartas, pontuam as ambições **declaradas**. Quem estiver em primeiro numa ambição ganha o valor maior dos marcadores dela; o segundo, o valor menor (p. 18). As ambições são: **Magnata** (Matéria-Prima e Combustível), **Tirano** (Prisioneiros), **Senhor da Guerra** (Troféus), **Guardião** (Relíquia) e **Empata** (Psiônico).
 
-**Prefere ver?** No primeiro vídeo, o canal Duque Board Games joga uma partida resumida; no segundo, o tradutor do manual brasileiro explica as regras do jogo base. Os vídeos complementam este guia; em caso de diferença, vale o manual.
+**Prefere ver?** Uma partida resumida e as regras em vídeo; em caso de diferença, vale o manual.
 
 !video[ARCS: Gameplay resumida, canal Duque Board Games](https://www.youtube.com/watch?v=slAp_hxHuB8&t=0s)
 

@@ -59,7 +59,7 @@ Pilha de compras vazia: etapa 2. Trens insuficientes e rota paga só com Locomot
 
 Quando alguém termina o turno com 0, 1 ou 2 trens no estoque, cada jogador, inclusive ele, joga mais um turno. Aí cada um revela os Bilhetes: soma os completos, subtrai os incompletos. O dono do caminho contínuo mais longo ganha 10 pontos.
 
-**Prefere ver?** O vídeo abaixo explica o jogo do começo ao fim, com as peças na mesa. Ele complementa este guia; em caso de diferença, vale o manual.
+**Prefere ver?** Regras em vídeo; em caso de diferença, vale o manual.
 
 !video[Ticket to Ride - Como Jogar (Acione Legendas Klingon), canal Romir Play House](https://www.youtube.com/watch?v=pmHGhJdeHsA&t=0s)
 
