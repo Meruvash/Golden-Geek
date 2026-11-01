@@ -322,7 +322,7 @@ O guia tem quatro etapas, cada uma uma parte real da partida: montar a mesa; rol
 
 !fig[A trilha de Império: o Marcador de Império sobe do segundo para o terceiro espaço, que custa 3. As colunas à esquerda mostram os pontos de vitória, os dados e as Naves de cada nível. Ilustração: manual Meeple BR (p. 8)](figuras/imperio.webp)
 
-A trilha de Império, lida na ilustração da p. 8 (o primeiro espaço vem do texto da p. 3 e 4):
+A trilha de Império, lida nas ilustrações das p. 8 (níveis 2 a 6) e 4 (nível 1 e custo do nível 2):
 
 | Nível | Custo para chegar | Dados | Naves | Pontos de vitória |
 |---|---|---|---|---|
@@ -333,7 +333,7 @@ A trilha de Império, lida na ilustração da p. 8 (o primeiro espaço vem do te
 | 5 | 5 | 6 | 4 | 5 |
 | 6 | 6 | 7 | 4 | 8 |
 
-> [!edicao] O manual não traz essa tabela em texto: ela está impressa no Painel Galáctico e aparece, em parte apagada, na ilustração da p. 8. O texto confirma o custo do terceiro nível (3) e os 4 dados do começo (p. 4 e 8). Confira os números no seu painel; se houver diferença, vale o painel.
+> [!edicao] O manual não traz essa tabela em texto: ela está impressa no Painel Galáctico. A ilustração da p. 8 mostra os níveis 2 a 6, mas o custo do nível 2 fica escondido sob o Marcador de Império e o nível 1 aparece apagado; esses valores vêm da ilustração da p. 4, que mostra o começo da trilha (custo 2; no nível 1, 4 dados, 2 Naves e nenhum número de pontos, só o rótulo da coluna). O texto confirma o custo do terceiro nível (3) e os 4 dados do começo (p. 4 e 8). Confira os números no seu painel; se houver diferença, vale o painel.
 
 > [!mais] **Ação de um planeta colonizado.** Com o dado Utilize uma Colônia, você pode fazer a ação escrita num planeta que está embaixo do seu painel, em vez da ação do painel. É uma ação por dado (p. 8).
 

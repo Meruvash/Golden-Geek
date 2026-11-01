@@ -20,10 +20,11 @@ Na ordem. O marcado *(depois)* se monta já e se usa mais tarde.
 4. Cartas de Benefício viradas para cima em duas fileiras, acima e abaixo do mapa: 4 por fileira com 2 jogadores, 5 com 3, 7 com 4 *(depois)* (p. 4).
 5. Cada jogador: Tabuleiro de Clã com 6 Colonos, 3 Barcos e 2 Templos nos espaços; 1 Barco separado; Madeira, Alimento e Aço no 2 (p. 4).
 6. Quem esteve numa ilha mais recentemente pega o Marcador de Chefe. A partir do jogador à direita dele, no sentido anti-horário, cada um põe o Barco separado num Fiorde vazio na borda do mapa (p. 4).
+7. **Com 2 jogadores:** com peças das 2 cores que sobraram, o inimigo põe 1 Templo e 2 Colonos em cada uma das 3 Ilhas que tocam a borda do mapa. As Runas ficam nas Ilhas, e a Fúria não sobe (p. 16). A seleção de cartas também muda: veja "Situações especiais".
 
 ### Seu primeiro turno
 
-Antes, a **Fase de Seleção de Cartas**: na Era 1, cada um recebe 4 Cartas Viking, guarda 1 virada para baixo e passa o resto para a esquerda, até todos terem 4 (p. 7). Depois, a partir do Chefe e no sentido horário, cada um joga uma carta por turno, à direita das que já jogou (p. 8):
+Antes, a **Fase de Seleção de Cartas**: na Era 1, cada um recebe 4 Cartas Viking, guarda 1 virada para baixo e passa o resto ao jogador seguinte no sentido horário, até todos terem 4 (p. 7). Depois, a partir do Chefe e no sentido horário, cada um joga uma carta por turno, à direita das que já jogou (p. 8):
 
 1. **Virada para cima:** faça a Ação de Líder e, se tiver as Runas pedidas, a Ação Rúnica (p. 10).
 2. **Ou virada para baixo:** você começa uma batalha ou entra na que está aberta (etapa 4).

@@ -76,7 +76,7 @@ Dependências e ordem do tutorial: componentes e trilhas, depois o 1º Passo (qu
 
 ## 4. Plano
 
-Quatro etapas: (1) montar a mesa; (2) Roleta e maldições; (3) ações; (4) Segunda Fase e fim. Casos especiais em `[!mais]`; contradições e lacunas em `[!edicao]`. Exercícios de múltipla escolha; exemplos adaptados das p. 9, 14 e 17. Contas em `tec-scripts/contas.py` no scratchpad: totais de componentes (17 Caos em 2, 3 e 4 jogadores; 23 Ancestrais; 45 Loucura), compra pela Trilha de Força (3 no início, 4 com "mais 1", 4 no último 3 como no exemplo da p. 11), valores 0/1/2 → 1/2/3, custos de banimento ([1,2]=2, [2,1,0]=2, [0,0]=0), selos ([1,2,2]=5 >= 4, [1,2]=3 >= 3, [0,2,1]=3 < 4), maldição com 3+1 tentáculos.
+Quatro etapas: (1) montar a mesa; (2) Roleta e maldições; (3) ações; (4) Segunda Fase e fim. Casos especiais em `[!mais]`; contradições e lacunas em `[!edicao]`. Exercícios de múltipla escolha; exemplos adaptados das p. 9, 14 e 17. Contas em `tec-scripts/contas.py` no scratchpad: totais de componentes (17 Caos em 2, 3 e 4 jogadores; 23 Ancestrais; 45 Loucura), compra pela Trilha de Força (3 no início, 4 com "mais 1", 4 no último 3 como no exemplo da p. 11), valores 0/1/2 viram 1/2/3, custos de banimento ([1,2]=2, [2,1,0]=2, [0,0]=0), selos ([1,2,2]=5 >= 4, [1,2]=3 >= 3, [0,2,1]=3 < 4), maldição com 3+1 tentáculos.
 
 Extensão: cerca de 5.900 palavras de texto (6.400 com a marcação), dentro do alvo do BRIEF.
 
