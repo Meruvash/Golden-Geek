@@ -36,3 +36,4 @@ A tarefa agendada diária publica **pelo menos 8 tutoriais novos por dia**, dire
 3. Marque `"publicar": true` só nos tutoriais que passaram na auditoria e publique todos num único commit (passos 4 e 5). Se menos de 8 passarem, publique os que passaram e diga no relato quantos faltaram e por quê; nunca publique tutorial sem auditoria para cumprir a meta.
 
 - Referências visuais: figuras dos exemplos ilustrados do manual (`!fig`, com crédito e página) e um vídeo de regras em português incorporado (`!video`), sem baixar nada do vídeo (PADRAO_EDITORIAL.md, "Como Jogar: referências visuais"). No passo 4, confira que as figuras aparecem e que o vídeo abre ao tocar.
+- Vídeo: de preferência do canal Duque Board Games (@DuqueBoardgames; busca do próprio canal + oEmbed), conforme PADRAO_EDITORIAL.md, "Como Jogar: referências visuais".
