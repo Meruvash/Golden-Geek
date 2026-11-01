@@ -1,6 +1,6 @@
 # Como jogar Arcs: Conflito e Colapso no Vértice
 
-*Regras conferidas no manual oficial da edição brasileira, publicado pela Meeple BR (Arcs, livro de regras de 24 páginas, tradução de Romir G. E. Paulino, arquivo de agosto de 2025). Os nomes são os impressos nesse manual, e as páginas citadas são as dele. Este guia cobre o jogo base; o modo Líderes e Conhecimento fica para depois da primeira partida, como o próprio manual recomenda.*
+*Regras conferidas no manual oficial da edição brasileira, publicado pela Meeple BR (Arcs, livro de regras de 24 páginas, tradução de Romir G. E. Paulino, arquivo de agosto de 2025). Os nomes são os impressos nesse manual (o subtítulo vem da página do produto da Meeple BR), e as páginas citadas são as do manual. Este guia cobre o jogo base; o modo Líderes e Conhecimento fica para depois da primeira partida, como o próprio manual recomenda.*
 
 ## 4min. Comece a jogar em 4 minutos
 
@@ -8,7 +8,7 @@
 
 ### A ideia do jogo
 
-Cada jogador comanda naves, cidades e agentes no **Vértice**, um mapa de planetas e portais. Você ganha **Poder** (os pontos do jogo) completando **ambições**: ter mais recursos de certo tipo, mais prisioneiros ou mais troféus. A partida tem de 3 a 5 **capítulos**. Ela acaba no fim do capítulo em que alguém chega a 27 de Poder (4 jogadores), 30 (3 jogadores) ou 33 (2 jogadores), ou no fim do capítulo 5. Vence quem tiver mais Poder (p. 2 e 19).
+Cada jogador comanda naves, cidades e agentes no **Vértice**, um mapa de planetas e portais. Você ganha **Poder** (os pontos do jogo) completando **ambições**: ter mais recursos de certo tipo, mais prisioneiros ou mais troféus. A partida costuma ter de 3 a 5 **capítulos**, no máximo 5. Ela acaba no fim do capítulo em que alguém chega a 27 de Poder (4 jogadores), 30 (3 jogadores) ou 33 (2 jogadores), ou no fim do capítulo 5. Vence quem tiver mais Poder (p. 2 e 19).
 
 ### Monte a mesa
 
@@ -23,7 +23,7 @@ Cada jogador comanda naves, cidades e agentes no **Vértice**, um mapa de planet
 
 ### Sua primeira rodada
 
-Uma rodada é uma volta na mesa: cada jogador joga **1 carta de ação** (p. 8 e 10).
+Uma rodada é uma volta na mesa: em geral, cada jogador joga **1 carta de ação**. Quem não tem cartas é pulado (p. 8 e 10).
 
 - **Quem tem a iniciativa** joga a carta líder, virada para cima, e faz uma ação por ponto de ação da carta, conforme o **naipe**. Antes, pode declarar a ambição mostrada na carta.
 - **Os outros**, em sentido horário, escolhem uma de três formas: **Superar** (mesmo naipe e número maior que o da líder: faz ações até os pontos da carta), **Copiar** (carta virada para baixo: faz 1 ação da carta líder) ou **Pivotar** (outro naipe, qualquer número: faz 1 ação da própria carta).
@@ -40,7 +40,7 @@ Uma rodada é uma volta na mesa: cada jogador joga **1 carta de ação** (p. 8 e
 - ( ) Nada: precisa passar a vez.
 - (x) Pivotar com uma carta de outro naipe e fazer 1 ação dela, ou Copiar com uma carta virada para baixo e fazer 1 ação da líder.
 - ( ) Superar com qualquer carta de número maior.
-= Superar exige o mesmo naipe da líder; Copiar e Pivotar aceitam qualquer carta e dão 1 ação (p. 10).
+= Superar exige o mesmo naipe da líder. Copiar aceita qualquer carta, virada para baixo, e Pivotar exige carta de outro naipe; os dois dão 1 ação (p. 10).
 
 ### Como se ganha Poder
 
@@ -50,7 +50,7 @@ No fim do capítulo, quando ninguém tem mais cartas, pontuam as ambições **de
 
 ## 0. Antes de tudo: o que é este jogo
 
-Arcs é um jogo de conflito no espaço para 2 a 4 pessoas. Você lidera uma sociedade de viajantes espaciais no Vértice, a borda da galáxia, e disputa Poder com os outros (p. 2). A primeira partida leva cerca de 45 minutos por jogador; depois, cerca de 30 (p. 2).
+Arcs é um jogo de conflito no espaço para 2 a 4 pessoas (p. 3 e 4). Você lidera uma sociedade de viajantes espaciais no Vértice, a borda da galáxia, e disputa Poder com os outros (p. 2). A primeira partida leva cerca de 45 minutos por jogador; depois, cerca de 30 (p. 2).
 
 O jogo lembra jogos de vaza, como os de baralho: alguém lidera um naipe, os outros seguem, superam ou fogem dele. Só que cada carta não ganha uma vaza: ela vira ações no mapa. Por isso a decisão de cada turno é dupla: que ações você quer e o que a sua carta deixa os outros fazerem.
 
@@ -152,6 +152,8 @@ O guia tem cinco etapas: montar a mesa e ler o mapa; jogar uma rodada; fazer as 
 > 1. **Superar:** carta do mesmo naipe da líder, virada para cima, com número maior que o da líder. Faça ações até os pontos de ação da sua carta.
 > 2. **Copiar:** qualquer carta, virada para baixo. Faça 1 ação da carta líder.
 > 3. **Pivotar:** carta de outro naipe, virada para cima, de qualquer número. Faça 1 ação da sua carta.
+>
+> Superar exige só um número maior que o da carta líder, não maior que todas as cartas jogadas. Pivotar não muda o naipe líder.
 
 > [!passos] **Passos 3 e 4: fechar a rodada** (p. 11)
 >
@@ -159,7 +161,7 @@ O guia tem cinco etapas: montar a mesa e ler o mapa; jogar uma rodada; fazer as 
 > 2. Todas as cartas jogadas, inclusive as usadas para tomar a iniciativa, vão para o descarte, viradas para baixo.
 > 3. Se alguém ainda tem cartas, nova rodada. Se não, o capítulo termina (etapa 5).
 
-> [!mais] **Tomar a iniciativa.** Ao jogar sua carta, antes de qualquer ação, você pode tomar a iniciativa de quem a tem: jogando uma carta de ação a mais, virada para baixo, que não dá ação nenhuma; ou Superando com uma carta "7". Deite o marcador de iniciativa à sua frente. Nesta rodada, ninguém mais pode tomá-la, e quem já tinha o marcador não pode tomá-lo (p. 10).
+> [!mais] **Tomar a iniciativa.** Ao jogar sua carta, antes de qualquer ação, você pode tomar a iniciativa de quem a tem: jogando uma carta de ação a mais, virada para baixo, que não dá ação nenhuma; ou Superando com uma carta "7" (só existe com 4 jogadores), que ainda dá as ações dela. Deite o marcador de iniciativa à sua frente. Nesta rodada, ninguém mais pode tomá-la, e quem já tinha o marcador não pode tomá-lo. Ainda dá para Superar com "7" depois que a iniciativa foi tomada; só não se toma a iniciativa (p. 10).
 
 > [!mais] **Passar a iniciativa.** Quem tem a iniciativa e não tem cartas, ou prefere não jogar, passa o marcador para o próximo jogador em sentido horário que ainda tem cartas, e a rodada acaba na hora. Se todos com cartas abrirem mão do turno em sequência, descarte todas as cartas de ação e termine o capítulo (p. 8).
 
@@ -179,10 +181,10 @@ O guia tem cinco etapas: montar a mesa e ler o mapa; jogar uma rodada; fazer as 
 
 > [!suavez] **Sua vez.**
 >
-> ?? Você tem a iniciativa e joga uma carta "4" com 2 pontos de ação. Declara Senhor da Guerra. Quantas ações faz?
+> ?? Você tem a iniciativa e joga uma carta "4" com 3 pontos de ação. Declara Senhor da Guerra. Quantas ações faz?
 > - ( ) Nenhuma: declarar gasta a carta.
-> - ( ) 1, porque declarar gasta um ponto.
-> - (x) 2.
+> - ( ) 2, porque declarar gasta um ponto.
+> - (x) 3.
 > = Declarar não altera os pontos de ação da carta (p. 9).
 >
 > ?? A carta líder é de Agressão e foi declarada uma ambição com ela. Você joga uma Agressão "2". Isso é Superar?
@@ -251,7 +253,7 @@ O guia tem cinco etapas: montar a mesa e ler o mapa; jogar uma rodada; fazer as 
 > 1. O **Prelúdio** começa quando você joga a carta e acaba quando você gasta o primeiro ponto de ação dela. Nele, você pode gastar quantos recursos quiser, cada um por uma ação:
 >    - **Matéria-Prima:** Construir ou Reparar.
 >    - **Combustível:** Mover.
->    - **Arma:** neste turno, qualquer ponto de ação da sua carta pode virar Batalhar.
+>    - **Arma:** neste turno, qualquer ponto de ação da sua carta pode virar Batalhar. Armas não transformam em Batalhar as ações de outros recursos.
 >    - **Relíquia:** Assegurar.
 >    - **Psiônico:** uma ação da carta líder.
 > 2. Recursos ficam nos espaços de recurso do tabuleiro. Ao receber um, ponha num espaço vazio; você pode reorganizar, mas recurso sem espaço é descartado.
@@ -261,7 +263,7 @@ O guia tem cinco etapas: montar a mesa e ler o mapa; jogar uma rodada; fazer as 
 
 > [!mais] **Prelúdio: quando não dá.** Você não gasta recursos se passou a iniciativa ou se não tem cartas. Não usa ações de Prelúdio de uma carta da Corte assegurada no mesmo Prelúdio. Antes do Prelúdio, você decide se declara ambição e se toma a iniciativa (p. 17 e 20).
 
-> [!mais] **Cartas de Guilda.** Você as pega da Corte (Influenciar e depois Assegurar). Cada uma tem um naipe, que é um dos 5 recursos e conta para as ambições como um recurso (Armas não contam para nenhuma), regras e um custo de saque. Ações que começam com "Prelúdio:" se usam no Prelúdio. "Nova ação (Ação básica)" pode substituir a ação básica entre parênteses quando você a faria. Modificadores em negrito alteram as ações básicas (p. 17 e 20).
+> [!mais] **Cartas de Guilda.** Você as pega da Corte (Influenciar e depois Assegurar). Cada uma tem um naipe, que é um dos 5 recursos e conta para as ambições como um recurso (Armas não contam para nenhuma), regras e um custo de saque. Ações que começam com "Prelúdio:" se usam no Prelúdio. "Nova ação (Ação básica)" pode substituir a ação básica entre parênteses quando você a faria gastando um ponto de ação ou um recurso que não esteja em Ultraje. Modificadores em negrito alteram as ações básicas (p. 17 e 20).
 
 > [!mais] **Cartas de Vox.** Representam incidentes no Vértice: você as ganha da Corte e as resolve na hora (p. 3).
 
@@ -269,9 +271,9 @@ O guia tem cinco etapas: montar a mesa e ler o mapa; jogar uma rodada; fazer as 
 
 > [!resolvido] **Exemplo resolvido** (adaptado do manual, p. 12). O Jogador 1 joga uma carta de Administração com 2 pontos de ação e Taxa duas vezes: uma cidade Leal num planeta de Matéria-Prima e uma cidade do Jogador 2 num planeta Psiônico, sistema que ele controla. Recebe 1 Matéria-Prima e 1 Psiônico. Como taxou a cidade do Jogador 2, também tira 1 agente do suprimento do Jogador 2 e o põe na sua seção de Prisioneiros.
 
-> [!complete] **Complete.** O Jogador 2 tem 1 Combustível e joga uma carta de Construção com 1 ponto de ação. No Prelúdio, gasta o Combustível para Mover 3 naves de um planeta com espaçoporto Leal até um planeta vizinho.
+> [!complete] **Complete.** O Jogador 2 tem 1 Combustível e a iniciativa. Joga como líder uma carta de Construção com 2 pontos de ação. No Prelúdio, gasta o Combustível para Mover 3 naves de um planeta com espaçoporto Leal até um planeta vizinho.
 >
-> ?? Depois do Prelúdio, o que ele pode fazer com o ponto de ação da carta?
+> ?? Depois do Prelúdio, o que ele pode fazer com os pontos de ação da carta?
 > - ( ) Mover de novo, porque o Prelúdio era Mover.
 > - (x) Construir ou Reparar, as ações do naipe Construção.
 > - ( ) Nada: gastar recurso consome a ação da carta.
@@ -360,11 +362,13 @@ O guia tem cinco etapas: montar a mesa e ler o mapa; jogar uma rodada; fazer as 
 
 > [!resolvido] **Exemplo resolvido** (adaptado do manual, p. 15 e 16). O Jogador 1 ataca o Jogador 2 num planeta de Relíquia. Tem 4 naves inteiras; o Jogador 2 tem 1 nave inteira, 2 danificadas e 1 cidade danificada. O Jogador 1 pega 4 dados: 2 de Assalto e 2 de Saque.
 >
-> Saem, entre outros símbolos, uma chama e um círculo. Primeiro ele sofre os danos: 1 pela chama e 1 pela interceptação, porque o Jogador 2 tem 1 nave inteira. Ele escolhe danificar 2 naves diferentes em vez de destruir uma. Depois causa dano: uma explosão deita a nave inteira do Jogador 2; uma explosão com triângulo atinge a cidade, que já estava danificada e é destruída. A cidade vai para os Troféus do Jogador 1. Com as chaves, ele saqueia 1 Matéria-Prima e 1 Arma do Jogador 2.
+> Saem, entre outros símbolos, uma chama e um círculo. Primeiro ele sofre os danos: 1 pela chama e 1 pela interceptação, porque o Jogador 2 tem 1 nave inteira. Ele escolhe danificar 2 naves diferentes em vez de destruir uma. Depois causa dano: uma explosão deita a nave inteira do Jogador 2; uma explosão com triângulo atinge a cidade, que já estava danificada e é destruída. A cidade vai para os Troféus do Jogador 1.
 >
-> Como destruiu uma cidade num planeta de Relíquia, o Jogador 1 descarta todas as suas Relíquias e cartas de Guilda de Relíquia e cobre o ícone de Relíquia do seu tabuleiro com um agente. Depois pega da Corte uma carta onde o Jogador 2 tinha agentes, leva os agentes Oponentes dela como Troféus e revela uma carta nova na Corte.
+> Na hora em que destrói a cidade, num planeta de Relíquia, o Jogador 1 provoca Ultraje: descarta todas as suas Relíquias e cartas de Guilda de Relíquia e cobre o ícone de Relíquia do seu tabuleiro com um agente. E despoja a Corte: pega uma carta onde o Jogador 2 tinha agentes, leva os agentes Oponentes dela como Troféus e revela uma carta nova na Corte.
+>
+> Por último, como ainda tem naves, ele gasta as chaves e saqueia 1 Matéria-Prima e 1 Arma do Jogador 2.
 
-> [!complete] **Complete.** O Jogador 3 ataca com 3 naves e rola 3 dados de Escaramuça. Sai um círculo. O defensor tem 2 naves inteiras e 1 danificada.
+> [!complete] **Complete.** O Jogador 3 ataca com 3 naves e rola 3 dados de Assalto. Sai um círculo. O defensor tem 2 naves inteiras e 1 danificada.
 >
 > ?? Quantos danos as naves do Jogador 3 sofrem pela interceptação?
 > - ( ) 1
@@ -419,7 +423,7 @@ O guia tem cinco etapas: montar a mesa e ler o mapa; jogar uma rodada; fazer as 
 
 > [!passos] **Passos 2 a 4: limpar e seguir** (p. 19)
 >
-> 1. Se Senhor da Guerra pontuou, todos os Troféus voltam aos donos. Se Tirano pontuou, todos os Prisioneiros voltam. Naves, agentes e espaçoportos voltam ao suprimento do dono; cidades, ao espaço vazio mais à direita do tabuleiro do dono.
+> 1. Se Senhor da Guerra pontuou, todos os Troféus voltam aos donos. Se Tirano pontuou, todos os Prisioneiros voltam. Naves, agentes e espaçoportos voltam ao suprimento do dono; cidades, ao espaço vazio mais à direita do tabuleiro do dono. Se uma cidade cobrir um espaço de recurso ocupado, reorganize os recursos e descarte os que ficarem sem espaço (p. 17).
 > 2. Os marcadores de ambição voltam para Marcadores Disponíveis. Vire, para o lado de mais Poder, o marcador de menor valor que ainda não foi virado.
 > 3. A partida acaba se alguém tem pelo menos 27 de Poder (4 jogadores), 30 (3 jogadores) ou 33 (2 jogadores), ou se o marcador do capítulo está no 5. Vence quem tem mais Poder; empate, vence quem estiver antes na ordem de turno. Se não acabou, avance o marcador do capítulo.
 > 4. Embaralhe todas as cartas de ação e cada jogador compra 6. As que sobram vão para o descarte, viradas para baixo. Quem tem a iniciativa começa o capítulo.
@@ -496,7 +500,7 @@ O guia tem cinco etapas: montar a mesa e ler o mapa; jogar uma rodada; fazer as 
 
 > [!mais] **Cartas na mão.** Ninguém mostra as suas cartas de ação aos outros (p. 22).
 
-> [!mais] **Dois montes de descarte.** Para uma partida mais estratégica, separe as cartas de ação descartadas viradas para cima das viradas para baixo (p. 22).
+> [!mais] **Dois montes de descarte (variante).** Normalmente todas as cartas de ação vão para o descarte viradas para baixo. Para uma partida mais estratégica, faça dois montes: um com as cartas que foram jogadas viradas para cima e outro com as jogadas viradas para baixo. Se uma regra mandar comprar do descarte, compre do monte das jogadas viradas para cima; se ele não bastar, junte e embaralhe os dois (p. 22).
 
 ## 8. Avaliação final
 
@@ -515,9 +519,10 @@ Responda sem consultar. Cada resposta diz o que reler se errar.
 = Pivotar é jogar outro naipe virado para cima, com 1 ação (p. 10). Se errou, releia a etapa 2.
 
 ?? Quantos recursos você recebe ao Taxar uma cidade Oponente que você controla?
-- ( ) Nenhum, só o agente.
+- ( ) 2 recursos, e nenhum agente.
 - (x) 1 recurso do tipo do planeta e 1 agente do Oponente como Prisioneiro.
-- ( ) 2 recursos.
+- ( ) 1 recurso, e o agente só se você tiver Troféus.
+
 = Taxar dá 1 recurso; cidade Oponente também dá um Prisioneiro (p. 12). Se errou, releia a etapa 3.
 
 ?? Sua nave entra num sistema controlado por outro jogador e você constrói um espaçoporto lá. Como ele entra?
@@ -576,7 +581,9 @@ Responda sem consultar. Cada resposta diz o que reler se errar.
 | Relíquia | Assegurar |
 | Psiônico | 1 ação da carta líder |
 
-**Batalha:** até 1 dado por nave (máximo 6 de cada tipo). Ordem: chamas e interceptação nas suas naves; explosões nas naves defensoras, depois construções; explosões com triângulo nas construções; chaves para saquear.
+**Iniciativa:** tome-a jogando 1 carta a mais virada para baixo, ou Superando com "7" (4 jogadores); uma vez por rodada.
+
+**Batalha:** até 1 dado por nave (máximo 6 de cada tipo); dados de Saque só se houver construções defensoras no sistema ou se o defensor não tiver construções no mapa. Ordem: chamas e interceptação nas suas naves; explosões nas naves defensoras, depois construções; explosões com triângulo nas construções; chaves para saquear.
 
 **Ambições:** 2 Magnata (Matéria-Prima e Combustível), 3 Tirano (Prisioneiros), 4 Senhor da Guerra (Troféus), 5 Guardião (Relíquia), 6 Empata (Psiônico). Primeiro: soma dos valores maiores; segundo: dos menores. Empate em primeiro: todos levam o segundo.
 
