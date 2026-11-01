@@ -30,7 +30,7 @@ Role 4 dados. Use-os um de cada vez, na ordem que quiser, e pare quando quiser. 
 
 | Símbolo | Ação |
 |---|---|
-| Mover Nave | Uma Nave do painel vai a um planeta: **pousa** (de pé; faça já a ação da carta) ou **orbita** (deitada no primeiro espaço da trilha de colonização) (p. 5) |
+| Mover Nave | Uma Nave do painel vai a um planeta: **pousa** (de pé; pode fazer na hora a ação da carta) ou **orbita** (deitada no primeiro espaço da trilha de colonização) (p. 5) |
 | Energia | 1 Energia por Nave no painel e por Nave em planeta de Energia (p. 6) |
 | Cultura | 1 Cultura por Nave em planeta de Cultura (p. 6) |
 | Diplomacia ou Economia | Uma Nave sua em órbita anda 1 espaço, se a trilha termina nesse símbolo (p. 7) |
@@ -160,7 +160,7 @@ O guia tem quatro etapas, cada uma uma parte real da partida: montar a mesa; rol
 
 > [!entender] **Para entender.** Cada dado é uma ação. O Nível de Império decide quantos dados você rola, e você decide a ordem em que eles viram ações (p. 4). A ordem importa: uma Nave que você leva de volta para o painel antes de usar o dado de Energia rende Energia ali; um planeta onde você acabou de pousar já produz na coleta seguinte.
 >
-> Uma Nave num planeta tem duas posições, com funções diferentes. **Na superfície**, de pé, ela fez a ação escrita na carta no momento em que pousou. **Em órbita**, deitada na trilha de colonização, ela disputa o planeta. Nas duas posições, ela produz o recurso do planeta quando você coleta (p. 5 e 6).
+> Uma Nave num planeta tem duas posições, com funções diferentes. **Na superfície**, de pé, ela pôde fazer a ação escrita na carta no momento em que pousou, se você quis. **Em órbita**, deitada na trilha de colonização, ela disputa o planeta. Nas duas posições, ela produz o recurso do planeta quando você coleta (p. 5 e 6).
 >
 > Os recursos têm usos próprios. A Energia paga as rerrolagens depois da primeira; a Cultura paga a ação de seguir; e as duas, uma de cada vez, pagam a subida de Nível de Império. Você nunca tem mais que 7 de cada (p. 4, 6 e 8).
 
@@ -178,7 +178,7 @@ O guia tem quatro etapas, cada uma uma parte real da partida: montar a mesa; rol
 > [!passos] **Passo a passo: Mover Nave** (p. 5)
 >
 > 1. Pegue uma Nave sua, do Painel Galáctico ou de um planeta, e leve-a a **outro** planeta.
-> 2. Escolha: **pousar**, com a Nave de pé na carta, e fazer na hora a ação escrita nela; ou **orbitar**, com a Nave deitada no primeiro espaço da trilha de colonização.
+> 2. Escolha: **pousar**, com a Nave de pé na carta, e, se quiser, fazer na hora a ação escrita nela (é opcional: o manual diz que você "pode"); ou **orbitar**, com a Nave deitada no primeiro espaço da trilha de colonização.
 > 3. Ou, em vez de ir a um planeta, traga a Nave de um planeta de volta para o seu painel. Várias Naves podem ficar no painel.
 
 !fig[As duas formas de chegar a um planeta: em cima, a Nave pousada de pé na superfície; embaixo, a Nave deitada no primeiro espaço da trilha de colonização, que termina no símbolo de Economia. Ilustração: manual Meeple BR (p. 5)](figuras/mover.webp)
@@ -337,7 +337,7 @@ A trilha de Império, lida na ilustração da p. 8 (o primeiro espaço vem do te
 
 > [!mais] **Ação de um planeta colonizado.** Com o dado Utilize uma Colônia, você pode fazer a ação escrita num planeta que está embaixo do seu painel, em vez da ação do painel. É uma ação por dado (p. 8).
 
-> [!mais] **Ação de um planeta ao pousar.** Pousar na superfície de um planeta que ainda está na mesa já faz a ação dele na hora, sem dado de Utilize uma Colônia (p. 5).
+> [!mais] **Ação de um planeta ao pousar.** Pousar na superfície de um planeta que ainda está na mesa permite fazer a ação dele na hora, sem dado de Utilize uma Colônia. É opcional: você pode pousar e não fazer a ação (p. 5).
 
 > [!resolvido] **Exemplo resolvido.** Ana está no Nível de Império 2, que vale 1 ponto, e ainda não colonizou nada. A Nave dela orbita um planeta de 5 pontos cuja trilha termina em Economia, e está no último espaço antes do símbolo. A Nave de Bruno orbita o mesmo planeta, dois espaços atrás, e outra Nave de Bruno está na superfície. Ana usa um dado de Economia.
 >
@@ -480,11 +480,11 @@ A trilha de Império, lida na ilustração da p. 8 (o primeiro espaço vem do te
 
 > [!mais] **Preparação solo.** Como numa partida de 2 jogadores. A Frota de Piratas começa com 0 de Energia e 0 de Cultura e com as 4 Naves no centro do painel. Ninguém pega Missão Secreta. Você começa (p. 10).
 
-> [!mais] **O turno dos Piratas.** Os dados deles são rolados um de cada vez, e cada um vai direto para a Área de Ativação e faz a ação. Antes de um dado ser usado, você pode obrigar os Piratas a rerrolá-lo pagando 1 Energia e 1 Cultura, quantas vezes puder pagar. Se a ação não puder ser feita, o dado é rerrolado uma vez; se de novo não puder, é descartado. Você pode seguir os Piratas pagando 1 Cultura, mas não um dado descartado. Os Piratas nunca seguem você (p. 10).
+> [!mais] **O turno dos Piratas.** Quantos dados: o manual não repete isso nas regras solo; este guia aplica a regra geral, o número que a trilha de Império do painel pirata indica (p. 4 e 10). Os dados são rolados um de cada vez, e cada um vai direto para a Área de Ativação e faz a ação. Antes de um dado ser usado, você pode obrigar os Piratas a rerrolá-lo pagando 1 Energia e 1 Cultura, quantas vezes puder pagar. Se a ação não puder ser feita, o dado é rerrolado uma vez; se de novo não puder, é descartado. Você pode seguir os Piratas pagando 1 Cultura, mas não um dado descartado. Os Piratas nunca seguem você (p. 10).
 
-> [!mais] **Ações dos Piratas.** Mover: uma Nave do painel deles vai para a trilha de colonização do planeta mais à esquerda que ainda não tem Nave pirata; eles nunca pousam. Diplomacia ou Economia: avançam todas as Naves deles em trilhas desse tipo. Coleta: como um jogador, mas o painel deles produz Energia e Cultura. Utilize uma Colônia é um ataque: a ação do nível atual impressa no painel dos Piratas (p. 11).
+> [!mais] **Ações dos Piratas.** Mover: uma Nave do painel deles vai para a trilha de colonização do planeta mais à esquerda que ainda não tem Nave pirata; eles nunca pousam. Diplomacia ou Economia: avançam 1 espaço todas as Naves deles em trilhas desse tipo; planeta que eles colonizam vai para baixo do painel pirata, como na partida normal, e soma os pontos dele. Coleta: como um jogador, mas as Naves no painel deles rendem tanto Energia quanto Cultura. Utilize uma Colônia é um ataque contra você: só a ação do nível atual impressa no painel dos Piratas; as ações dos planetas que eles colonizaram nunca são usadas. Se essa ação diz "uma vez por turno", outro dado de Utilize uma Colônia no mesmo turno conta como ação que não pode ser feita: rerrola-se uma vez, ou descarta-se se já era rerrolagem (p. 11).
 
-> [!mais] **Recursos no máximo, no fim do turno pirata.** Energia no máximo: os Piratas sobem 1 Nível de Império e a Energia deles volta a 0. Cultura no máximo: eles jogam na hora um turno extra com só 3 dados, e a Cultura volta a 0. Se as duas acontecerem, resolva a Energia primeiro. Nenhuma das duas acontece no turno extra (p. 11).
+> [!mais] **Recursos no máximo, no fim do turno pirata.** Energia no máximo: os Piratas sobem 1 Nível de Império e a Energia deles volta a 0. Cultura no máximo: eles jogam na hora um turno extra com só 3 dados, e a Cultura volta a 0. Se as duas acontecerem, resolva a Energia primeiro. Nenhuma das duas acontece no turno extra; elas só voltam a acontecer no fim do próximo turno pirata, e os Piratas sobem de nível no máximo uma vez por turno (p. 11).
 
 > [!mais] **Fim da partida solo.** Os Piratas vencem na hora se chegarem a 21 pontos ou se o Marcador de Império deles chegar ao espaço da caveira. Você vence na hora ao chegar a 21 pontos (p. 11).
 
@@ -554,7 +554,7 @@ Responda sem consultar. Cada resposta diz o que reler.
 5. Fim: tire os dados do Painel de Controle e passe a vez.
 
 **Os símbolos**
-- **Mover Nave:** do painel ou de um planeta para outro planeta; pousar (faz a ação da carta) ou orbitar (primeiro espaço da trilha). Ou de volta para o painel.
+- **Mover Nave:** do painel ou de um planeta para outro planeta; pousar (pode fazer a ação da carta) ou orbitar (primeiro espaço da trilha). Ou de volta para o painel.
 - **Energia:** 1 por Nave em planeta de Energia, mais 1 por Nave no painel.
 - **Cultura:** 1 por Nave em planeta de Cultura.
 - **Diplomacia ou Economia:** 1 espaço numa trilha que termina nesse símbolo. Chegou ao símbolo: colonizou; todas as Naves da carta voltam; nova carta na mesa.

@@ -63,3 +63,19 @@ O mesmo protocolo do piloto: 5 a 8 adultos que nunca jogaram; tarefas: montar pa
 ## 7. Ligação com a resenha
 
 Não há resenha de Tiny Epic Galaxies no site. Se uma for escrita, o campo `resenha` do JSON passa a apontar para ela.
+
+## Auditoria independente: partida simulada
+
+Partida simulada só com o tutorial, para 2 jogadores (Ana começa, Bruno segue) e no modo solo. Preparação: 4 planetas abertos (2 + 2), 2 Naves no centro de cada painel, 1 Cultura e 2 Energias, Império na estrela, 1 Missão Secreta cada. Rodada 1: Ana rola 4 dados (Mover, Energia, Economia, Utilize uma Colônia); orbita um planeta de Economia, avança com Economia, coleta 2 Energias (1 do painel, 1 do planeta) e Bruno segue a Energia pagando 1 Cultura (ganha 2); Ana sobe ao nível 2 pagando 2 Energias (1 ponto; dado extra só no próximo turno). Bruno rola 4, rerrola de graça, usa o Conversor uma vez, pousa num planeta e orbita outro; Ana não segue por falta de Cultura. Fim da rodada: dados saem do Painel de Controle. Pontuação, fim (21, rodada completa, missões) e desempate saíram sem adivinhar. No solo, o primeiro turno pirata travou em dois pontos (abaixo).
+
+Lacunas encontradas e como foram resolvidas (manual Meeple BR):
+
+1. **Ação da carta ao pousar: obrigatória ou opcional?** O tutorial dizia "faça já a ação da carta" / "já faz a ação dele". O manual diz que você "pode imediatamente realizar a ação descrita na carta" (p. 5). Corrigido para opcional na tabela do Comece, no "Para entender" e no passo a passo de Mover Nave da etapa 2, no bloco "Ação de um planeta ao pousar" e na folha de consulta.
+2. **Quantos dados os Piratas rolam?** O tutorial não dizia. O manual também não diz nas regras solo; só dá a regra geral (dados conforme o Nível de Império, p. 4) e põe o Marcador de Império na trilha do painel pirata (p. 10). Acrescentado como leitura declarada da regra geral.
+3. **O que acontece quando os Piratas colonizam?** O tutorial só dizia que as Naves avançam. Acrescentado: o planeta vai para baixo do painel pirata, como na partida normal (p. 11), e soma pontos para os 21.
+4. **Ataque pirata.** Faltavam duas regras: as ações dos planetas colonizados pelos Piratas nunca são usadas, e, se a ação do nível diz "uma vez por turno", outro dado de ataque no mesmo turno é inadequado e é rerrolado (ou descartado se já era rerrolagem) (p. 11). Acrescentadas.
+5. **Recursos no máximo (Piratas).** Faltava que essas ações só voltam no fim do próximo turno pirata e que os Piratas sobem de nível no máximo uma vez por turno (p. 11). Acrescentado. Também se explicitou que as Naves no painel pirata rendem Energia e Cultura na coleta ("seu Painel Galáctico produz tanto Energia quanto Cultura", p. 11).
+
+Pontos verificados sem correção: preparação para 2 (p. 3), ordem e fim do turno com seguir a última ação (p. 4 e 9), rerrolagem, Conversor, coleta, colonização, custo de nível em um recurso só, fim de jogo e desempate (p. 4 a 9), preparação e turno solo (p. 10 e 11). Lacunas que o manual também não resolve continuam declaradas no tutorial: pilha de planetas vazia, excedente acima de 7 e o texto das cartas (remetido ao interior da caixa, p. 8).
+
+Veredito: dá para jogar a partida de 2 a 5 só com o tutorial; o solo, depois destas correções.

@@ -8,18 +8,18 @@
 
 ### A ideia do jogo
 
-Você comanda um navio pirata num mar de 16 cartas. Vence quem primeiro conseguir **enterrar 3 tesouros**, e enterrar custa Ouro, que vem de pilhar vilas, vender Espólios, buscar no mar e atacar navios. A cada turno, o **Capitão** anda no **Timão** do seu tabuleiro e escolhe a Ordem do turno. Os **Marujos** fazem o Capitão pular espaços, mas cada um que sai do trabalho deixa o navio mais lento ou mais fraco.
+Você comanda um navio pirata. Vence quem primeiro **enterrar 3 tesouros**, o que custa Ouro: ele vem de pilhar vilas, vender Espólios, buscar no mar e atacar navios. A cada turno, o **Capitão** anda no **Timão** e escolhe a Ordem do turno. **Marujos** o fazem pular espaços, mas cada um que sai do trabalho deixa o navio mais lento ou mais fraco.
 
 ### Monte a mesa
 
 Na ordem. O marcado *(depois)* se monta já e se usa mais tarde.
 
-1. Embaralhe as 16 Cartas de Mapa numa grade de 4 por 4, viradas para cima: é o Mar. Um Marcador de Busca virado para baixo no centro de cada carta; os 4 que sobram voltam fechados para a caixa (p. 4).
-2. Cada jogador escolhe uma cor e monta o Tabuleiro de Lenda: Marcador de Lenda na casa de baixo da Trilha de Lenda, lado sem sangue para cima; Dobrão de Ouro no 1 da Trilha de Ouro; 3 Tesouros na base; 1 Marujo no ícone da terceira linha *(depois)* (p. 4).
+1. As 16 Cartas de Mapa embaralhadas numa grade de 4 por 4: é o Mar. Um Marcador de Busca virado para baixo em cada carta; os que sobram voltam fechados para a caixa (p. 4).
+2. Cada jogador escolhe uma cor. Tabuleiro de Lenda: Marcador de Lenda na casa de baixo, lado sem sangue para cima; Dobrão de Ouro no 1; 3 Tesouros na base; 1 Marujo no ícone da terceira linha *(depois)* (p. 4).
 3. Tabuleiro de Timão: os 5 Marcadores de Ordem embaralhados, um em cada espaço de 1 a 5; o Capitão no 0, o Esconderijo; 1 Marujo em cada Missão: Cordame, Canhões e Extorsão. O Reparo fica vazio (p. 4).
 4. Cada um recebe 1 Carta de Capitão sorteada *(depois)* (p. 4).
 5. Tabuleiro de Mercado: 1 cubo de cada cor, ao acaso, nos 4 espaços da esquerda. Os outros vão para a Bolsa de Espólios (p. 4).
-6. Os 2 Marcadores de Porto em cantos opostos do Mar, com 1 Navio Mercante em cada um, apontado na diagonal para o outro Porto e com 1 cubo da Bolsa *(depois)* (p. 4).
+6. Os 2 Portos em cantos opostos, com 1 Navio Mercante em cada um, apontado para o outro Porto, com 1 cubo da Bolsa *(depois)* (p. 4).
 7. Cartas de Mercador em 4 grupos (2, 4, 6, 8), cada um embaralhado: 8 embaixo e 2 no topo. Vire as 2 de cima abaixo do Mercado *(depois)* (p. 5).
 8. Cartas de Tripulação embaralhadas; vire 3 numa fila (p. 5).
 9. O primeiro jogador põe a Fragata num canto sem Navio Mercante. Em sentido horário, cada um põe o Navio Pirata numa carta com Enseada (âncora) livre, onde começa escondido, e escolhe o lado da Carta de Capitão (p. 5).
@@ -31,12 +31,12 @@ Na ordem. O marcado *(depois)* se monta já e se usa mais tarde.
 O turno tem cinco passos, sempre nesta ordem (p. 6 e 16):
 
 1. **Ordem.** Avance o Capitão no sentido horário, pelo menos 1 espaço. O espaço seguinte é de graça; para pular um espaço, ponha nele um Marujo tirado de uma Missão. A Ordem do turno é o marcador onde o Capitão parou (p. 7).
-2. **Navegue**, se quiser: 1 carta (nível de Lenda inicial) mais 1 por Marujo no Cordame, só entre cartas vizinhas pelos lados. Entrar ou passar numa carta com Tempestade (nuvem) faz o navio ser Empurrado: 1 Marujo de Cordame, Canhões ou Extorsão vai para o Reparo (p. 8 e 16).
+2. **Navegue**, se quiser: 1 carta (Lenda inicial) mais 1 por Marujo no Cordame, só pelos lados. Entrar ou passar numa carta com Tempestade (nuvem) empurra o navio: 1 Marujo de Cordame, Canhões ou Extorsão vai para o Reparo (p. 8 e 16).
 3. **Execute a Ordem**, se quiser, na carta onde parou: Pilhar, Negociar, Recrutar, Buscar ou Atacar (p. 9 a 12).
 4. **Ações Bônus**, se quiser: se o ícone mais à esquerda da Carta de Capitão é a Ordem do turno, faça as ações do canto de baixo dela (p. 13).
 5. **Linha de Navios:** só se o Capitão passou do 5 para o 0. Saindo do 0, isso não acontece no primeiro turno (p. 7 e 15).
 
-> [!resolvido] **Exemplo resolvido.** O Timão de Ana tem Buscar no espaço 1. Ela avança de graça para o 1. Pode navegar 2 cartas (1 da Lenda e 1 do Cordame) e para numa carta com Marcador de Busca. Vira o marcador: "3 Ouros". O Dobrão vai do 1 para o 4 (p. 10).
+> [!resolvido] **Exemplo resolvido.** Ana tem Buscar no espaço 1 e avança de graça. Navega até 2 cartas (Lenda e Cordame) e para numa com Marcador de Busca: "3 Ouros". O Dobrão vai do 1 ao 4 (p. 10).
 
 > [!complete] **Complete.** Bruno tem Pilhar no espaço 2. Ele pula o 1 pondo ali o Marujo do Cordame.
 >
@@ -52,7 +52,7 @@ O turno tem cinco passos, sempre nesta ordem (p. 6 e 16):
 > - ( ) 4
 > = 3: o inicial e os 2 da Bolsa. O navio leva até 3 (p. 9).
 
-> [!suavez] **Agora a sua mesa.** Olhe o seu Timão e decida a Ordem. Confira antes:
+> [!suavez] **Agora a sua mesa.** Decida a sua Ordem. Confira antes:
 >
 > ?? O Capitão pode ficar no Esconderijo no primeiro turno?
 > - ( ) Pode, se você não quiser fazer nada
@@ -68,27 +68,27 @@ O turno tem cinco passos, sempre nesta ordem (p. 6 e 16):
 
 ### Ainda não precisa saber
 
-Como os Marujos voltam do Timão: etapa 2. Negociar, Recrutar, Buscar e Esconder-se em detalhe: etapa 3. Atacar e subir de Lenda: etapa 4. Ações Bônus, enterrar Tesouros, Fragata e Navios Mercantes: etapa 5.
+Marujos que voltam do Timão: etapa 2. Ordens em detalhe: etapa 3. Atacar e Lenda: etapa 4. Tesouros, Fragata e Navios Mercantes: etapa 5.
 
 ### Como a partida acaba
 
 Quando alguém enterra o terceiro Tesouro, a rodada se completa até todos terem jogado o mesmo número de turnos. Vence quem enterrou os 3 (p. 16).
 
-**Prefere ver?** O vídeo abaixo resume uma partida. Ele complementa este guia; em caso de diferença, vale o manual.
+**Prefere ver?** Ele complementa este guia; em caso de diferença, vale o manual.
 
 !video[TINY EPIC PIRATES, Gameplay resumida em 10 minutos, canal Duque Board Games](https://www.youtube.com/watch?v=xTkpXj1B01c&t=0s)
 
-> [!atencao] **Os três erros mais caros.** O Marujo que pula espaço sai da Missão: menos movimento, menos dano ou menos Ouro. Navegar e executar a Ordem são opcionais, mas a Ordem é a do espaço onde o Capitão parou. Tempestade empurra ao entrar ou atravessar, uma vez por carta.
+> [!atencao] **Os três erros mais caros.** O Marujo que pula espaço sai da Missão: menos movimento, dano ou Ouro. A Ordem é a do espaço onde o Capitão parou. Tempestade empurra ao entrar ou atravessar, uma vez por carta.
 
 ## 0. Antes de tudo: o que é este jogo
 
 Cada jogador é um capitão pirata. O mar é uma grade de 16 Cartas de Mapa, com ilhas que têm Assentamentos para pilhar, Mercados para vender, Enseadas para se esconder, Locais de Tesouro e Tempestades. Vence quem primeiro enterrar os 3 Tesouros (p. 3 e 6).
 
-Enterrar exige estar na carta do Local de Tesouro com Ouro suficiente para o preço impresso ali. O Ouro vai de 0 a 13 na Trilha de Ouro, e o que passar de 13 se perde (p. 3 e 13). Por isso o jogo é um ciclo: juntar Espólios, vender, juntar Ouro, enterrar.
+Enterrar exige estar na carta do Local de Tesouro e pagar o Ouro impresso ali, e o Ouro não passa de 13 (p. 3 e 13). O jogo é um ciclo: juntar Espólios, vender, juntar Ouro, enterrar.
 
-O coração do jogo é o **Timão**. Cada jogador tem os mesmos 5 Marcadores de Ordem, em ordem sorteada. O Capitão só anda para a frente, e cada espaço pulado custa um Marujo. Os Marujos, por outro lado, trabalham nas **Missões**: no Cordame dão movimento, nos Canhões dão dano, na Extorsão dão Ouro (p. 7). A pergunta de cada turno é qual Ordem você quer e quanto do seu navio aceita sacrificar para chegar nela.
+O coração do jogo é o **Timão**: 5 Marcadores de Ordem em ordem sorteada, um Capitão que só anda para a frente e um Marujo por espaço pulado. Os Marujos também trabalham nas **Missões**: no Cordame dão movimento, nos Canhões dão dano, na Extorsão dão Ouro (p. 7). A pergunta de cada turno é qual Ordem você quer e quanto do navio aceita sacrificar por ela.
 
-Três coisas pressionam de fora: a **Fragata Real**, que persegue quem completa uma volta no Timão; os outros piratas, que podem atacar o seu navio; e as Tempestades, que tiram Marujos do trabalho (p. 8, 12 e 15).
+De fora pressionam a **Fragata**, que persegue quem completa uma volta no Timão, os outros piratas e as Tempestades (p. 8, 12 e 15).
 
 ## 1. Como este guia ensina
 
@@ -98,23 +98,23 @@ O guia tem cinco etapas, cada uma uma parte real da partida: montar a mesa; move
 
 > [!entender] **Para entender.** Cada jogador tem dois tabuleiros. O **Tabuleiro de Lenda**, à esquerda, guarda o Ouro (Trilha de Ouro, com o Dobrão), os 3 Tesouros e o nível de fama (Trilha de Lenda, com o Marcador de Lenda). O **Tabuleiro de Timão**, à direita, tem o Timão com 6 espaços (o 0, Esconderijo, e os 5 Marcadores de Ordem), as 4 Missões na base e o lugar dos Marcadores de Tiro Certeiro (p. 4 e 7).
 >
-> No centro ficam o **Tabuleiro de Mercado**, que mostra quanto vale cada tipo de Espólio (de 5 a 2 Ouros, de cima para baixo), e as Cartas de Mercador, que dizem quanto dano cada Navio Mercante causa e quanto Ouro paga quando afunda (p. 9 e 11). Os cubos são os **Espólios**: bege é Cana-de-açúcar, roxo é Rum, marrom é Café e cinza é Pólvora (p. 9).
+> No centro, o **Tabuleiro de Mercado** mostra quanto vale cada Espólio (de 5 a 2 Ouros, de cima para baixo), e as Cartas de Mercador dizem quanto dano cada Navio Mercante causa e quanto Ouro paga ao afundar (p. 9 e 11). Os cubos são os **Espólios**: bege é Cana-de-açúcar, roxo é Rum, marrom é Café, cinza é Pólvora (p. 9).
 >
 > O quarto Marujo começa fora do jogo, na terceira linha da Trilha de Lenda: você o ganha ao subir até ali (p. 4 e 16).
 
 > [!passos] **Passo a passo: preparação** (p. 4 e 5)
 >
-> 1. **Mar.** Embaralhe as 16 Cartas de Mapa e forme uma grade de 4 por 4, viradas para cima. Embaralhe os Marcadores de Busca e ponha um, virado para baixo, no centro de cada carta. Os que sobram voltam para a caixa sem ser revelados.
-> 2. **Material de cada jogador.** Tabuleiro de Lenda (à esquerda), Tabuleiro de Timão (à direita), e na cor escolhida: 1 Navio Pirata, 1 Marcador de Lenda, 3 Tesouros, 1 Capitão, 4 Marujos e 5 Marcadores de Ordem. Mais 1 Carta de Capitão sorteada e 1 Dobrão de Ouro. O que não for entregue volta para a caixa.
-> 3. **Tabuleiro de Lenda.** Marcador de Lenda com o lado ensanguentado para baixo, no espaço inferior da Trilha de Lenda. Dobrão no espaço 1 da Trilha de Ouro. Os 3 Tesouros na base. 1 Marujo no ícone da terceira linha da Trilha de Lenda.
-> 4. **Tabuleiro de Timão.** Embaralhe os 5 Marcadores de Ordem virados para baixo e ponha um, virado para cima, em cada espaço de 1 a 5, em sentido horário. Capitão no Esconderijo (0). Os outros 3 Marujos, um em cada Missão, menos o Reparo.
-> 5. **Mercado.** Tabuleiro de Mercado ao alcance de todos. 1 cubo de cada cor, ao acaso, nos 4 espaços da esquerda. O resto dos cubos na Bolsa de Espólios.
-> 6. **Navios Mercantes.** Os 2 Portos em cantos opostos do Mar. Um Navio Mercante em cada carta com Porto (qualquer cor), apontado na diagonal para o Porto oposto, com 1 cubo sorteado da Bolsa.
-> 7. **Cartas de Mercador.** Separe por valor (2, 4, 6 e 8, no canto de cima), embaralhe cada grupo e empilhe: 8 embaixo, 6, 4 e 2 no topo. Vire as 2 de cima, uma em cada lugar abaixo do Tabuleiro de Mercado.
-> 8. **Tripulação.** Embaralhe as Cartas de Tripulação viradas para baixo e vire as 3 primeiras numa fila.
-> 9. **Primeiro jogador** (o mais novo, ou como preferirem). Ele põe a Fragata numa carta de canto sem Navio Mercante. Depois, a partir dele e em sentido horário, cada um põe o Navio Pirata numa carta com Enseada desocupada: o navio começa escondido. Na mesma ordem, cada um escolhe o lado da Carta de Capitão e a põe à direita do Timão.
+> 1. **Mar.** 16 Cartas de Mapa embaralhadas, viradas para cima, em grade de 4 por 4. Um Marcador de Busca virado para baixo no centro de cada uma; os que sobram voltam para a caixa sem ser revelados.
+> 2. **Material de cada jogador.** Tabuleiro de Lenda (à esquerda) e de Timão (à direita); na sua cor, Navio Pirata, Marcador de Lenda, 3 Tesouros, Capitão, 4 Marujos e 5 Marcadores de Ordem; 1 Carta de Capitão sorteada e 1 Dobrão de Ouro. O resto volta para a caixa.
+> 3. **Tabuleiro de Lenda.** Marcador de Lenda no espaço inferior da Trilha de Lenda, lado ensanguentado para baixo. Dobrão no 1 da Trilha de Ouro. Tesouros na base. 1 Marujo no ícone da terceira linha da Trilha de Lenda.
+> 4. **Tabuleiro de Timão.** Marcadores de Ordem embaralhados virados para baixo e postos, virados para cima, nos espaços 1 a 5. Capitão no Esconderijo (0). Os outros 3 Marujos, um em cada Missão, menos o Reparo.
+> 5. **Mercado.** 1 cubo de cada cor, ao acaso, nos 4 espaços da esquerda do Tabuleiro de Mercado. O resto na Bolsa de Espólios.
+> 6. **Navios Mercantes.** Portos em cantos opostos; um Navio Mercante em cada carta com Porto, apontado na diagonal para o Porto oposto, com 1 cubo sorteado.
+> 7. **Cartas de Mercador.** Separe por valor (2, 4, 6, 8), embaralhe cada grupo e empilhe com o 8 embaixo e o 2 no topo. Vire as 2 de cima abaixo do Mercado.
+> 8. **Tripulação.** Pilha embaralhada; vire 3 numa fila.
+> 9. **Primeiro jogador** (o mais novo, ou como preferirem). Ele põe a Fragata num canto sem Navio Mercante. A partir dele, em sentido horário, cada um põe o Navio Pirata numa carta com Enseada desocupada, onde começa escondido. Na mesma ordem, cada um escolhe o lado da Carta de Capitão e a põe à direita do Timão.
 > 10. **Dados e Marcadores de Tiro Certeiro** ao alcance.
-> 11. **Espólio inicial.** O primeiro jogador tira da Bolsa um cubo da cor que vale 2 Ouros no Mercado e o põe no navio; o segundo, a cor de 3; e assim por diante.
+> 11. **Espólio inicial.** O primeiro jogador põe no navio um cubo da Bolsa da cor que vale 2 no Mercado; o segundo, a de 3; e assim por diante.
 
 !fig[A mesa montada para 4 jogadores: o Mar de 16 Cartas de Mapa com os Marcadores de Busca, os dois Navios Mercantes nos Portos de cantos opostos, a Fragata num dos outros cantos, os Navios Piratas nas Enseadas, o Tabuleiro de Mercado com as duas Cartas de Mercador e a fila de 3 Cartas de Tripulação. Ilustração: manual Meeple BR (p. 5)](figuras/preparacao.webp)
 
@@ -123,12 +123,6 @@ O guia tem cinco etapas, cada uma uma parte real da partida: montar a mesa; move
 > [!mais] **Partida solo.** O manual tem um modo solo contra o Pirata Lendário, com tabuleiros do lado Solo e regras próprias (p. 17 a 20). Este guia não o cobre.
 
 > [!suavez] **Sua vez.** Você vai montar uma partida de 3 jogadores.
->
-> ?? Quantos Marcadores de Busca ficam no Mar?
-> - ( ) 20
-> - (x) 16
-> - ( ) 12
-> = 16, um por Carta de Mapa. Os outros 4 voltam para a caixa sem ser vistos (p. 4).
 >
 > ?? No Mercado, o Café vale 2, a Pólvora 3, o Rum 4 e a Cana-de-açúcar 5. Que cubo recebe o terceiro jogador?
 > - ( ) Café
@@ -150,7 +144,7 @@ O guia tem cinco etapas, cada uma uma parte real da partida: montar a mesa; move
 
 ## 3. Etapa 2: o Timão e os Marujos
 
-> [!entender] **Para entender.** O Timão é uma roda de 6 espaços. O 0 é o Esconderijo; os espaços 1 a 5 têm os seus Marcadores de Ordem. Entre o 5 e o 0 fica a **Linha de Navios**: quando o Capitão a cruza, você recebe a Extorsão e a Fragata e os Navios Mercantes se movem (p. 7, 12 e 15).
+> [!entender] **Para entender.** O Timão tem 6 espaços: o 0, Esconderijo, e os 5 Marcadores de Ordem. Entre o 5 e o 0 fica a **Linha de Navios**: quando o Capitão a cruza, você recebe a Extorsão e a Fragata e os Navios Mercantes se movem (p. 7, 12 e 15).
 >
 > Andar um espaço é de graça. Ir mais longe custa Marujos, e o Marujo que fica no Timão não trabalha numa Missão. Ele volta ao trabalho quando o Capitão passa por cima dele ou para sobre ele num turno seguinte (p. 7). Assim, pular hoje é caro, e o mesmo caminho fica barato na próxima volta.
 
@@ -219,25 +213,19 @@ O guia tem cinco etapas, cada uma uma parte real da partida: montar a mesa; move
 
 > [!treino] **Treino rápido: quantos Marujos para pular?** Nenhum Marujo no Timão.
 >
-> ?? a) Do 1 ao 4.
-> - ( ) 3
-> - (x) 2
-> - ( ) 1
-> = 2: os espaços 2 e 3 (p. 7).
->
-> ?? b) Do 3 ao 0.
+> ?? a) Do 3 ao 0.
 > - (x) 2
 > - ( ) 3
 > - ( ) 0
 > = 2: os espaços 4 e 5. Parar no 0 é a Ordem Esconder-se (p. 7 e 12).
 >
-> ?? c) Do 5 ao 2.
+> ?? b) Do 5 ao 2.
 > - ( ) 2
 > - ( ) 0
 > - (x) 1
 > = 1, no espaço 1. O 0 é de graça (p. 7).
 >
-> ?? d) Do 0 ao 5, no primeiro turno.
+> ?? c) Do 0 ao 5, no primeiro turno.
 > - (x) 4, mais do que você tem nas Missões no começo
 > - ( ) 5
 > - ( ) 0: do Esconderijo se vai a qualquer espaço
@@ -271,7 +259,7 @@ O guia tem cinco etapas, cada uma uma parte real da partida: montar a mesa; move
 >
 > 1. **Pilhar.** Numa carta com Assentamento (espadas cruzadas), tire da Bolsa 1 ou 2 cubos, conforme o ícone, e ponha no navio. O Navio Pirata leva até 3 cubos. Sem espaço, descarte o novo ou troque por um que já estava; o descartado volta para a Bolsa.
 > 2. **Negociar.** Numa carta com Mercado, venda até 3 cubos do tipo daquele Mercado. Receba cubos vendidos vezes o valor atual do tipo no Tabuleiro de Mercado. Os cubos voltam para a Bolsa. O tipo vendido desce para o valor 2, e os que estavam abaixo dele sobem um degrau.
-> 3. **Buscar.** Numa carta com Marcador de Busca fechado, vire-o. Com o símbolo de exclamação, use na hora e descarte: 2 ou 3 Ouros, 1 Marcador de Tiro Certeiro ou 1 cubo da Bolsa. Com o símbolo de relógio, guarde para usar uma vez, neste turno ou depois: 2 de movimento a mais, ou entrar numa Tempestade sem ser Empurrado.
+> 3. **Buscar.** Numa carta com Marcador de Busca fechado, vire-o. Com o símbolo de exclamação, use na hora e descarte: 2 ou 3 Ouros, 1 Marcador de Tiro Certeiro ou 1 cubo da Bolsa. Com o símbolo de relógio, guarde para usar uma vez, neste turno ou depois, até vários no mesmo turno: 2 de movimento a mais, ou entrar numa Tempestade sem ser Empurrado.
 > 4. **Recrutar.** Pegue uma das 3 Cartas de Tripulação reveladas e ponha à direita da Carta de Capitão. Reponha a fila na hora. Máximo de 4 Cartas de Tripulação (o Capitão não conta).
 
 !fig[A tabela do Mercado: alguém vende Cana-de-açúcar, que valia 4; ela desce para 2, e os dois cubos que estavam abaixo sobem um valor cada. Ilustração: manual Meeple BR (p. 9)](figuras/negociar.webp)
@@ -285,8 +273,6 @@ O guia tem cinco etapas, cada uma uma parte real da partida: montar a mesa; move
 > [!mais] **Tripulação completa.** Com 4 Cartas de Tripulação, você pode descartar uma (para o fundo da pilha) e pegar a nova no lugar. O Capitão nunca é descartado (p. 10).
 
 > [!mais] **Motim.** Uma vez por partida, ao Recrutar, pegando carta ou não, você pode virar a Carta de Capitão para o outro lado, com outros símbolos de dado e outras Ações Bônus. Vire o Marcador de Lenda para o lado ensanguentado, para marcar que o Motim já foi feito (p. 10).
-
-> [!mais] **Marcadores de Busca guardados.** Você pode usar vários no mesmo turno. O de movimento é descartado depois do uso (p. 8 e 10).
 
 > [!passos] **Passo a passo: Esconder-se** (p. 12)
 >
@@ -350,7 +336,7 @@ O guia tem cinco etapas, cada uma uma parte real da partida: montar a mesa; move
 
 > [!entender] **Para entender.** Ataque decide fama. Afundar alguns Navios Mercantes e vencer outros piratas sobe o seu nível de Lenda, e cada nível novo dá um prêmio único e, em alguns níveis, mais movimento ou um terceiro dado (p. 12 e 16).
 >
-> O dano não depende do número tirado, mas de quantos símbolos de dado iguais a ele há no topo das suas cartas. Por isso Tripulação com símbolos repetidos ou com dano automático faz diferença, e o Marcador de Tiro Certeiro, que muda um dado para o número que você quiser, vale muito (p. 11).
+> O dano não depende do número tirado, mas de quantos símbolos iguais a ele há no topo das suas cartas. Por isso a Tripulação conta, e o Marcador de Tiro Certeiro, que muda um dado para o número que você quiser, vale muito (p. 11).
 
 > [!passos] **Passo a passo: o seu dano** (p. 11)
 >
@@ -363,7 +349,7 @@ O guia tem cinco etapas, cada uma uma parte real da partida: montar a mesa; move
 > [!passos] **Passo a passo: contra um Navio Mercante** (p. 11 e 12)
 >
 > 1. O dano do Navio Mercante é o número da Carta de Mercador abaixo do Mercado.
-> 2. **Mais dano que ele:** você afunda o navio. Pegue o cubo dele (abra espaço se precisar) e o Ouro da Carta de Mercador. Descarte a carta e vire outra no lugar. Leve o Navio Mercante para a carta com Porto mais distante do seu navio, apontado para o outro Porto, com um cubo novo da Bolsa.
+> 2. **Mais dano que ele:** você afunda o navio. Pegue o cubo dele (abra espaço se precisar) e o Ouro da Carta de Mercador. Descarte a carta e vire outra no lugar. Leve o Navio Mercante para a carta com Porto mais distante do seu navio, contando pelos lados (empate: você escolhe), apontado para o outro Porto, com um cubo novo da Bolsa.
 > 3. **Empate:** nada afunda; você ganha 1 Marcador de Tiro Certeiro e não é Empurrado.
 > 4. **Menos dano:** você é Empurrado e ganha 1 Marcador de Tiro Certeiro.
 > 5. **Lenda:** se a carta afundada tem o ícone Ganhar Lenda com o número de jogadores da partida, suba 1 nível. "1-2" vale para partidas de 1 ou 2 jogadores.
@@ -395,8 +381,6 @@ O guia tem cinco etapas, cada uma uma parte real da partida: montar a mesa; move
 > [!edicao] A tabela acima foi lida na ilustração da p. 16, que corta o nível mais alto, Lenda. O manual não descreve esse nível em texto: confira no seu Tabuleiro de Lenda. Ele também não diz onde entra o Marujo ganho no Corsário; combine com a mesa.
 
 > [!mais] **Navio Mercante de 8.** Ao afundar o Navio Mercante cuja carta é de 8, você não troca a carta: o navio volta ao Porto do jeito normal, e a mesma carta continua (p. 11).
-
-> [!mais] **Portos à mesma distância.** Se os dois Portos estão à mesma distância do seu navio, contando pelos lados, você escolhe para qual o Navio Mercante afundado vai (p. 11).
 
 > [!resolvido] **Exemplo resolvido.** Você é Lobo do Mar (2 dados), tem 1 Marujo nos Canhões e 1 Marcador de Tiro Certeiro. Suponha que o topo da sua Carta de Capitão mostre os símbolos 5 e 6, e a sua Tripulação mais um 6. Você ataca o Navio Mercante de 4 e rola 6 e 2.
 >
@@ -490,11 +474,9 @@ O guia tem cinco etapas, cada uma uma parte real da partida: montar a mesa; move
 
 > [!mais] **Negociar Espólio Especial.** Troque a combinação de Espólios mostrada pelo Ouro mostrado. Precisa estar num Mercado de um dos tipos da combinação. Não mexe na tabela do Mercado (p. 14).
 
-> [!mais] **Trocar.** Devolva 1 cubo do navio para a Bolsa e pegue da Bolsa 1 cubo do tipo que quiser (p. 14).
+> [!mais] **Trocar e Receber Ouro.** Trocar: devolva 1 cubo do navio para a Bolsa e pegue dela 1 cubo do tipo que quiser. Receber Ouro: receba o Ouro mostrado, na hora (p. 14).
 
 > [!mais] **Navegue a Fragata ou o Navio Mercante.** Mova o navio indicado o número de cartas mostrado, sem seguir as regras normais dele. O Navio Mercante continua apontado para o Porto de destino. Nesse movimento, a Fragata ignora os Navios Piratas (p. 14).
-
-> [!mais] **Receber Ouro.** Receba o Ouro mostrado, na hora (p. 14).
 
 > [!mais] **Rerrolar.** Se um dado mostrar um dos números da base da Carta de Tripulação, role esse dado de novo, uma vez. Só na Ordem Atacar, não numa Ação Bônus de Atacar nem quando você é atacado. Com várias cartas assim, resolva uma de cada vez (p. 14).
 
@@ -504,10 +486,9 @@ O guia tem cinco etapas, cada uma uma parte real da partida: montar a mesa; move
 
 > [!resolvido] **Exemplo resolvido.** A Carta de Capitão de Ana tem Pilhar à esquerda e, embaixo, Enterrar e Atacar. Ana tem 9 Ouros e já enterrou 1 Tesouro. O Capitão dela vai do 4 ao 1, onde está Pilhar, pulando o 5 com 1 Marujo; o 0 é de graça. Ela navega até uma carta com Assentamento e Local de Tesouro de 8 Ouros, sem a Fragata.
 >
-> 1. **Ordem:** Pilha e tira 1 cubo.
-> 2. **Ação Bônus do Capitão:** Enterra. Paga 8 Ouros e fica com 1. Segundo Tesouro enterrado.
-> 3. **Atacar:** não há outro navio na carta; ela pula.
-> 4. **Linha de Navios:** ela cruzou. Recebe 1 Ouro por Marujo na Extorsão. Depois os Navios Mercantes andam, e a Fragata anda 4 cartas na direção dela, porque ela já tem 2 Tesouros enterrados.
+> 1. **Ordem:** Pilha 1 cubo.
+> 2. **Ação Bônus:** Enterra, paga 8 e fica com 1 Ouro. Segundo Tesouro. Atacar: não há alvo; ela pula.
+> 3. **Linha de Navios:** ela cruzou. Recebe a Extorsão; os Navios Mercantes andam; a Fragata anda 4 na direção dela, porque agora há 2 Tesouros enterrados.
 
 > [!complete] **Complete.** Mesmo turno, mas a Fragata estava na carta do Local de Tesouro quando Ana chegou.
 >
@@ -568,15 +549,11 @@ O guia tem cinco etapas, cada uma uma parte real da partida: montar a mesa; move
 
 **Navios escondidos no começo.** Todos começam numa Enseada, escondidos, e por isso não podem ser atacados pelos outros nem pela Fragata enquanto estiverem lá (p. 5 e 12).
 
-**Dois Navios Piratas na mesma carta.** Navegar por cartas com outros navios é livre; atacar é uma escolha da Ordem Atacar, não uma obrigação (p. 8 e 11).
-
 **Ouro acima de 13.** O excesso se perde, inclusive o de prêmio de Lenda ou de Extorsão (p. 3).
 
 > [!edicao] **Pontos que o manual não fecha.** Quem escolhe o caminho da Fragata: o manual diz que o jogador à direita a move, e só fala em escolha para os Navios Mercantes (p. 15). Se você navega para a carta em que a Fragata já está, o manual não fala em ataque: ele só descreve o ataque quando ela entra na sua carta (p. 15). Ao Esconder-se sem Enseada livre, ele não diz se você ainda realoca os Marujos (p. 12). Combine essas leituras com a mesa antes da partida.
 
 > [!edicao] Na p. 12, o manual diz que, no empate com um Navio Mercante, os dois navios ficam na "mesma Carta de Navio"; é a mesma Carta de Mapa.
-
-> [!dica] Como o Marujo que fica no Timão volta ao trabalho na próxima volta, pular espaços cedo deixa o caminho pronto para depois. Compare com o que você perde agora em movimento ou dano. É uma leitura da regra, não uma obrigação.
 
 ## 8. Avaliação final
 

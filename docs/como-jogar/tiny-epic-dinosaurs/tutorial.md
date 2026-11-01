@@ -8,114 +8,95 @@
 
 ### A ideia do jogo
 
-Você cuida de uma fazenda de dinossauros durante 6 rodadas. Em cada rodada, manda os seus **Dinofazendeiros** para os **espaços de ação** no centro da mesa, onde caça dinossauros, ganha recursos, pega cartas e cumpre contratos. Depois, cada um arruma a sua **Fazenda**: dinossauro comum precisa estar num **Cercado** e precisa comer, senão foge. Vence quem tiver mais pontos no fim (p. 6 e 13).
+Você cuida de uma fazenda de dinossauros durante 6 rodadas. Em cada rodada, manda os seus **Dinofazendeiros** para os **espaços de ação** no centro da mesa, onde caça dinossauros, ganha recursos, pega cartas e cumpre contratos. Depois, cada um arruma a sua **Fazenda**: dinossauro comum precisa estar num **Cercado** e precisa comer, senão foge. Vence quem tiver mais pontos (p. 6 e 13).
 
 ### Monte a mesa
 
 Na ordem. O marcado *(depois)* se monta já e se usa mais tarde (p. 4 e 5).
 
-1. No centro da mesa, ponha os 4 Tabuleiros de Ação em fila, de A a D, com o lado que mostra o seu número de jogadores (está no canto superior esquerdo de cada um).
-2. À esquerda deles, o Tabuleiro de Rodada, com o Marcador de Rodada (a caneca de café) no espaço 1.
-3. Cada jogador pega um Tabuleiro de Fazenda, com o lado que preferir, e um Tabuleiro de Jogador, com o lado normal para cima. O verso é do modo solo.
-4. Cada jogador pega as peças da sua cor: 3 Dinofazendeiros e o Capataz vão para o campo de Dinofazendeiros do Tabuleiro de Jogador; o quarto Dinofazendeiro vai para o espaço 4 do Tabuleiro de Rodada *(depois)*.
-5. Cada um põe o Marcador de Planta, o de Carne e o de Suprimento à esquerda da trilha de recursos do Tabuleiro de Jogador. Fora da trilha, o marcador vale 0.
-6. Acima dos Tabuleiros de Ação, o Tabuleiro de Contrato. Embaralhe as Cartas de Contrato Público e abra uma linha com o número de jogadores mais 1. Dê 2 Cartas de Contrato Privado a cada um: cada jogador fica com 1, em segredo, e devolve a outra; embaralhe esse baralho de novo *(depois)*.
-7. Abaixo dos Tabuleiros de Ação, o Tabuleiro de Pesquisa. Embaralhe as Cartas de Pesquisa e abra 3 numa linha *(depois)*.
-8. Deixe os dinossauros e as Barreiras ao alcance de todos, e o Dado de Caça perto do Tabuleiro de Ação A.
-9. Quem visitou por último um museu de história natural recebe o Marcador de Primeiro Jogador. Em sentido horário a partir dele, o segundo jogador põe o Marcador de Planta no 1; o terceiro, o de Carne no 1; o quarto, o de Suprimento no 1.
+1. No centro, os 4 Tabuleiros de Ação em fila, de A a D, com o lado que mostra o seu número de jogadores.
+2. À esquerda deles, o Tabuleiro de Rodada, com o Marcador de Rodada (a caneca) no espaço 1.
+3. Cada jogador pega um Tabuleiro de Fazenda, no lado que preferir, e um Tabuleiro de Jogador, no lado normal.
+4. Cada jogador põe 3 Dinofazendeiros e o Capataz da sua cor no Tabuleiro de Jogador, e o quarto Dinofazendeiro no espaço 4 do Tabuleiro de Rodada *(depois)*.
+5. Os Marcadores de Planta, Carne e Suprimento ficam à esquerda da trilha de recursos: valem 0.
+6. Acima dos Tabuleiros de Ação, o Tabuleiro de Contrato, com uma linha de Cartas de Contrato Público abertas: número de jogadores mais 1. Cada um recebe 2 Cartas de Contrato Privado, fica com 1 em segredo e devolve a outra *(depois)*.
+7. Abaixo, o Tabuleiro de Pesquisa, com 3 Cartas de Pesquisa abertas *(depois)*.
+8. Dinossauros e Barreiras ao alcance de todos; o Dado de Caça perto do Tabuleiro de Ação A.
+9. Quem visitou por último um museu de história natural pega o Marcador de Primeiro Jogador. Em sentido horário a partir dele, o segundo jogador põe a Planta no 1; o terceiro, a Carne; o quarto, o Suprimento.
 
 ### Seu primeiro turno
 
-A rodada começa com **Coletar Recursos**: cada um ganha 1 recurso por símbolo da Fazenda que não está coberto por um dinossauro. Na primeira rodada, a Fazenda está vazia, e todos ganham 5 plantas, 3 carnes e 1 suprimento (p. 6). Depois vem **Alocar Dinofazendeiros**, a partir de quem tem o Marcador de Primeiro Jogador e em sentido horário (p. 7 e 8):
+A rodada começa com **Coletar Recursos**: 1 recurso por símbolo da Fazenda não coberto por dinossauro. Na primeira rodada, todos ganham 5 plantas, 3 carnes e 1 suprimento (p. 6). Depois vem **Alocar Dinofazendeiros**, a partir de quem tem o Marcador de Primeiro Jogador (p. 7 e 8):
 
 1. **Ponha 1 Dinofazendeiro**, ou o Capataz, num espaço de ação vazio e faça a ação na hora.
-2. **Espaço ocupado** por adversário: só entra quem põe 1 Dinofazendeiro a mais que o jogador que tem mais ali. O Capataz conta como 2.
+2. **Espaço ocupado:** entra quem põe 1 Dinofazendeiro a mais que o jogador que tem mais ali. O Capataz conta como 2.
 3. **Onde você já tem Dinofazendeiro**, não pode pôr outro.
-4. **Espaço com círculo preto** tem custo: pague na hora, antes de fazer a ação.
-5. A vez passa em sentido horário. Quem não tem mais Dinofazendeiros é pulado; a fase acaba quando todos alocaram todos.
+4. **Círculo preto** no espaço é custo: pague na hora.
+5. A vez passa em sentido horário até todos alocarem todos.
 
-A ação mais comum no começo é **Caçar Dinossauros** (p. 8). Você recebe o Dinossauro comum mostrado no espaço e o põe na **Zona de Contenção** do seu Tabuleiro de Jogador. Depois rola o Dado de Caça: **Rede**, nada a mais; **Ovo**, mais um dinossauro da mesma espécie; **Dano**, os seus Dinofazendeiros desse espaço e o dinossauro recebido vão para o Afastamento Médico da sua cor, no Tabuleiro de Rodada. Com qualquer face, o dinossauro é seu.
+A ação mais comum no começo é **Caçar Dinossauros**: você recebe o Dinossauro comum do espaço na **Zona de Contenção** do Tabuleiro de Jogador e rola o Dado de Caça. **Rede**: nada a mais. **Ovo**: mais um da mesma espécie. **Dano**: seus Dinofazendeiros desse espaço e o dinossauro vão para o Afastamento Médico, no Tabuleiro de Rodada, mas o dinossauro continua seu (p. 8).
 
-> [!resolvido] **Exemplo resolvido.** Partida de 3. Você é o segundo jogador: começou com 1 planta e coletou 5 plantas, 3 carnes e 1 suprimento; agora tem 6, 3 e 1. O primeiro jogador pôs 1 Dinofazendeiro no espaço de caça do Alossauro. Você põe 1 Dinofazendeiro no espaço de caça do Estegossauro, que está vazio, recebe 1 Estegossauro na Zona de Contenção e rola o dado: Ovo. Você recebe mais 1 Estegossauro.
+> [!resolvido] **Exemplo resolvido.** Partida de 3. Você é o segundo jogador: tinha 1 planta, coletou 5 plantas, 3 carnes e 1 suprimento, e tem 6, 3 e 1. O primeiro jogador caçou no espaço do Alossauro. Você põe 1 Dinofazendeiro no espaço de caça do Estegossauro, vazio, recebe 1 Estegossauro e rola Ovo: recebe mais 1.
 
-> [!complete] **Complete.** Na sua próxima vez, você quer o espaço de caça do Alossauro, onde o primeiro jogador tem 1 Dinofazendeiro.
+> [!complete] **Complete.** Na sua próxima vez, você quer o espaço do Alossauro, onde o primeiro jogador tem 1 Dinofazendeiro.
 >
-> ?? Com o que você entra nesse espaço?
+> ?? Com o que você entra?
 > - ( ) Com 1 Dinofazendeiro, como em qualquer espaço
 > - (x) Com 2 Dinofazendeiros, ou só com o Capataz
 > - ( ) Com 3 Dinofazendeiros
-> = Ele tem 1; você precisa de 1 a mais, ou seja, 2. O Capataz sozinho conta como 2 (p. 7).
+> = Ele tem 1; você precisa de 2. O Capataz sozinho conta como 2 (p. 7).
 >
 > ?? Você entra e rola Dano. O que acontece?
-> - ( ) Você perde o Alossauro, que volta para o estoque comum
-> - ( ) Nada: Dano só vale para quem já tem um Alossauro
-> - (x) Seus Dinofazendeiros desse espaço e o Alossauro vão para o Afastamento Médico, e o Alossauro continua seu
-> = A caça sempre traz pelo menos 1 dinossauro, seja qual for a face. Com Dano, os Dinofazendeiros e o dinossauro saem do espaço e esperam no Afastamento Médico até o fim da fase (p. 8 e 19).
+> - ( ) O Alossauro volta para o estoque
+> - (x) Seus Dinofazendeiros desse espaço e o Alossauro vão para o Afastamento Médico, e o Alossauro é seu
+> - ( ) Nada: Dano só vale para quem já tem Alossauro
+> = A caça sempre traz pelo menos 1 dinossauro. Com Dano, as peças e o dinossauro esperam no Afastamento Médico (p. 8 e 19).
 
-> [!suavez] **Agora a sua mesa.** Antes de pôr cada Dinofazendeiro, pergunte: o espaço está vazio? Se não, de quantos preciso? Ele tem custo, e eu tenho com que pagar? Confira as regras que valem para qualquer mesa:
+> [!suavez] **Agora a sua mesa.** Antes de cada peça, pergunte: o espaço está vazio? Se não, de quantos preciso? Tem custo? Confira:
 >
-> ?? Você já tem 1 Dinofazendeiro no espaço de caça do Braquiossauro. Pode pôr outro ali para caçar de novo?
-> - ( ) Sim, se ainda tiver Dinofazendeiros no tabuleiro
-> - (x) Não: você não pode alocar num espaço onde já tem Dinofazendeiro
+> ?? Você já tem 1 Dinofazendeiro no espaço de caça do Braquiossauro. Pode pôr outro ali?
+> - ( ) Sim, se ainda tiver Dinofazendeiros
+> - (x) Não
 > - ( ) Sim, mas só o Capataz
-> = Não. Ninguém aloca num espaço de ação onde já tem Dinofazendeiro (p. 7).
+> = Ninguém aloca num espaço onde já tem Dinofazendeiro (p. 7).
 >
-> ?? Seu Estegossauro acabou de chegar à Zona de Contenção. Você pode alocar no espaço de Contratos para entregá-lo agora?
+> ?? Seu Estegossauro acabou de chegar à Zona de Contenção. Você pode alocar em Contratos para entregá-lo?
 > - ( ) Sim: o dinossauro já é seu
-> - (x) Não: Contratos só aceitam dinossauros da Fazenda, e você não pode alocar onde não consegue fazer a ação
+> - (x) Não
 > - ( ) Sim, se pagar 1 suprimento
-> = Não. Os dinossauros do contrato precisam estar na Fazenda, não na Zona de Contenção (p. 9), e ninguém aloca num espaço cuja ação não pode fazer (p. 19).
+> = Contratos só aceitam dinossauros da Fazenda (p. 9), e ninguém aloca onde não pode fazer a ação (p. 19).
 
 ### Ainda não precisa saber
 
-As outras ações (Mercado de Dinossauros, Recursos, Barreiras, Contratos, Pesquisa): etapa 2. O que acontece depois que todos alocam (Cercados, comida, fuga e reprodução): etapa 3. A quarta rodada e a pontuação: etapa 4.
+As outras ações: etapa 2. Cercados, comida, fuga e reprodução, depois que todos alocam: etapa 3. A quarta rodada e a pontuação: etapa 4.
 
 ### Como a partida acaba
 
-A partida dura 6 rodadas. No fim da sexta, cada um soma os pontos dos contratos cumpridos, das Cartas de Pesquisa e de cada Dinossauro comum na Fazenda; vence quem tiver mais (p. 13).
+No fim da sexta rodada, cada um soma os pontos dos contratos cumpridos, das Cartas de Pesquisa e dos Dinossauros comuns na Fazenda. Vence quem tiver mais (p. 13).
 
-**Prefere ver?** Um vídeo de regras em português, indicado na página do jogo da Meeple BR. Ele complementa este guia; em caso de diferença, vale o manual.
+**Prefere ver?** Vídeo de regras indicado na página do jogo da Meeple BR. Ele complementa este guia; em caso de diferença, vale o manual.
 
 !video[TINY EPIC DINOSAURS - Regras + Review, canal Boards & Burgers](https://www.youtube.com/watch?v=osld7UVfRVE&t=0s)
 
-> [!atencao] **Os três erros mais caros.** Dinossauro novo vai para a Zona de Contenção, não direto para a Fazenda, e contrato só aceita dinossauro da Fazenda. Em espaço ocupado, você entra com 1 Dinofazendeiro a mais que quem tem mais ali, e o Capataz conta como 2. Dinossauro comum fora de Cercado, ou sem comida, foge.
+> [!atencao] **Os três erros mais caros.** Dinossauro novo vai para a Zona de Contenção, e contrato só aceita dinossauro da Fazenda. Em espaço ocupado, você entra com 1 a mais que quem tem mais ali, e o Capataz conta como 2. Dinossauro comum fora de Cercado, ou sem comida, foge.
 
 ## 0. Antes de tudo: o que é este jogo
 
-Você é um Dinofazendeiro: cria dinossauros numa ilha e os vende para quem paga mais (p. 3). Cada jogador tem a sua **Fazenda**, um tabuleiro com espaços que produzem plantas, carnes e suprimentos, e uma **Zona de Contenção**, onde chegam os dinossauros e as Barreiras novos antes de entrar na Fazenda (p. 6 e 10).
+Você cria dinossauros numa ilha e os vende para quem paga mais (p. 3). Cada jogador tem a sua **Fazenda**, um tabuleiro com espaços que produzem plantas, carnes e suprimentos, e uma **Zona de Contenção**, onde dinossauros e Barreiras novos esperam antes de entrar na Fazenda (p. 6 e 10).
 
-A partida tem 6 rodadas, e cada rodada tem 7 fases, quase todas jogadas ao mesmo tempo por todos (p. 6):
+São 6 rodadas, cada uma com 7 fases: Coletar Recursos; Alocar Dinofazendeiros; Reaver Dinofazendeiros; Adaptar a Fazenda; Alimentar os Dinossauros; Reprodução; Preparação para Próxima Rodada (p. 6). Só a segunda é jogada em turnos, disputando os espaços de ação; nas outras, todos cuidam da própria Fazenda ao mesmo tempo.
 
-1. Coletar Recursos
-2. Alocar Dinofazendeiros
-3. Reaver Dinofazendeiros
-4. Adaptar a Fazenda
-5. Alimentar os Dinossauros
-6. Reprodução
-7. Preparação para Próxima Rodada
-
-Só a fase 2 é jogada em turnos. É nela que você disputa os espaços de ação com os outros jogadores. O resto é cuidar da sua Fazenda.
-
-O jogo vive de uma tensão. Dinossauro dá ponto no fim e é o que os contratos pedem, mas ocupa espaço na Fazenda, cobre o símbolo que produziria recurso e come todo fim de rodada. Fazenda cheia produz menos comida justamente quando precisa de mais (p. 6 e 11).
-
-Duas ideias sustentam o resto:
-
-- **Cercado é tudo.** Dinossauro comum só fica na Fazenda dentro de um Cercado, e cada Cercado guarda uma única espécie (p. 10).
-- **Fuga custa caro.** Quem não come ou não cabe foge, e a fuga traz uma penalidade: herbívoro derruba uma Barreira, carnívoro leva outro dinossauro junto (p. 11).
+A tensão do jogo: dinossauro dá pontos e é o que os contratos pedem, mas cobre um símbolo que produziria recurso e come todo fim de rodada. A Fazenda cheia produz menos comida justamente quando precisa de mais (p. 6 e 11).
 
 ## 1. Como este guia ensina
 
-O guia tem quatro etapas, cada uma uma parte real da partida: montar a mesa; coletar e alocar Dinofazendeiros; cuidar da Fazenda (Cercados, comida, fuga e reprodução); e fechar rodadas e a partida. Em cada etapa vêm, nesta ordem: **Para entender** (como aquela parte funciona e por quê), **Passo a passo** (as regras exatas, com a página do manual), **Regra adicional** (casos que não acontecem em toda partida), um **exemplo resolvido**, uma tarefa para **completar**, uma **sua vez** sem ajuda e, quando a regra precisa virar automática, um **treino rápido**. Cada pergunta tem opções: escolha uma, e aparecem a resposta certa e a explicação. No final, uma avaliação curta diz o que reler, e uma folha de consulta vai para a mesa.
+São quatro etapas, cada uma uma parte real da partida: montar a mesa; coletar e alocar; cuidar da Fazenda; fechar rodadas e a partida. Cada etapa tem **Para entender** (por que funciona assim), **Passo a passo** (a regra exata, com a página do manual), **Regra adicional** (casos que não acontecem sempre) e tarefas com ajuda decrescente: um exemplo resolvido, uma tarefa para completar e uma sem ajuda. Cada pergunta tem opções: escolha uma, e aparecem a resposta certa e a explicação. No final, uma avaliação diz o que reler, e uma folha de consulta vai para a mesa.
 
 ## 2. Etapa 1: montar a mesa
 
-> [!entender] **Para entender.** A mesa tem duas partes: o centro, que todos dividem, e a área de cada jogador.
+> [!entender] **Para entender.** No centro, os 4 **Tabuleiros de Ação** têm os espaços de ação; o lado de cada um depende do número de jogadores (p. 4). Em volta, o **Tabuleiro de Rodada** (rodadas, resumo das fases e o **Afastamento Médico**), o **Tabuleiro de Contrato** e o **Tabuleiro de Pesquisa** (p. 2 e 5).
 >
-> **No centro**, os 4 **Tabuleiros de Ação**, de A a D, têm os espaços de ação. Cada tabuleiro tem dois lados, e o lado certo depende do número de jogadores: menos jogadores, menos espaços para disputar (p. 4). Em volta deles ficam três **Tabuleiros de Jogo**: o **Tabuleiro de Rodada**, com as 6 rodadas, o resumo das 7 fases e o **Afastamento Médico**; o **Tabuleiro de Contrato**, com os dois baralhos de contrato; e o **Tabuleiro de Pesquisa**, com o baralho e o monte de descarte das Cartas de Pesquisa (p. 2, 4 e 5).
->
-> **Na sua frente**, o **Tabuleiro de Fazenda** é o terreno: espaços com símbolos de recurso, linhas pontilhadas onde as Barreiras entram, **Montanhas** e **Água** nas bordas e um **Cercado permanente** já fechado (p. 10). O **Tabuleiro de Jogador** tem a trilha de recursos (de 1 a 13), o campo de Dinofazendeiros, a Zona de Contenção e um quadro de cada Dinossauro comum, com o que ele come e quantos pontos vale (p. 5 e 6).
->
-> **Os dinossauros** são de 5 cores. Quatro são os Dinossauros comuns; o quinto, roxo, são os **Dinossauros Únicos**, que só chegam por Cartas de Pesquisa (p. 3, 10 e 12). Os quadros do Tabuleiro de Jogador mostram (p. 5):
+> Na sua frente, o **Tabuleiro de Fazenda** tem espaços com símbolos de recurso, linhas pontilhadas para as Barreiras, **Montanhas** e **Água** nas bordas e um **Cercado permanente** já fechado (p. 10). O **Tabuleiro de Jogador** tem a trilha de recursos, de 1 a 13, a Zona de Contenção e um quadro de cada Dinossauro comum, com o que ele come e quanto vale (p. 5 e 6). Os dinossauros roxos são os **Dinossauros Únicos**, que só chegam por Cartas de Pesquisa (p. 3 e 12).
 
 | Dinossauro comum | Tipo | Come por rodada | Pontos no fim |
 |---|---|---|---|
@@ -124,290 +105,231 @@ O guia tem quatro etapas, cada uma uma parte real da partida: montar a mesa; col
 | Braquiossauro | Herbívoro | 2 plantas | 3 |
 | Alossauro | Carnívoro | 2 carnes | 4 |
 
+Valores lidos nos quadros do Tabuleiro de Jogador, na ilustração da p. 5.
+
 > [!passos] **Passo a passo: preparação** (p. 4 e 5)
 >
-> 1. Ponha os 4 Tabuleiros de Ação em fila no centro da mesa, em ordem alfabética de A a D, com o lado que mostra o número de jogadores da partida.
-> 2. Ponha o Tabuleiro de Rodada à esquerda dos Tabuleiros de Ação e o Marcador de Rodada no espaço 1 da trilha de rodadas.
-> 3. Cada jogador recebe 1 Tabuleiro de Fazenda (escolhe o lado e o põe na sua frente) e 1 Tabuleiro de Jogador, com o lado normal para cima, ao lado da Fazenda.
-> 4. Cada jogador recebe 4 Dinofazendeiros e 1 Capataz da sua cor. O Capataz e 3 Dinofazendeiros vão para o campo de Dinofazendeiros do Tabuleiro de Jogador. O último Dinofazendeiro vai para o espaço 4 da trilha do Tabuleiro de Rodada.
-> 5. Cada jogador recebe 1 Marcador de Planta, 1 de Carne e 1 de Suprimento e os põe à esquerda da trilha de recursos. Enquanto estiver fora da trilha, o marcador vale 0.
+> 1. Ponha os 4 Tabuleiros de Ação em fila no centro, de A a D, com o lado que mostra o número de jogadores (no canto superior esquerdo).
+> 2. Ponha o Tabuleiro de Rodada à esquerda deles e o Marcador de Rodada no espaço 1.
+> 3. Cada jogador recebe 1 Tabuleiro de Fazenda, no lado que escolher, e 1 Tabuleiro de Jogador, no lado normal.
+> 4. Cada jogador recebe 4 Dinofazendeiros e 1 Capataz da sua cor. O Capataz e 3 Dinofazendeiros vão para o campo de Dinofazendeiros do Tabuleiro de Jogador; o último vai para o espaço 4 da trilha do Tabuleiro de Rodada.
+> 5. Cada jogador põe 1 Marcador de Planta, 1 de Carne e 1 de Suprimento à esquerda da trilha de recursos. Fora da trilha, o marcador vale 0.
 > 6. Ponha o Tabuleiro de Contrato acima dos Tabuleiros de Ação. Separe as Cartas de Contrato Público e as de Contrato Privado pelo verso.
-> 7. Embaralhe o baralho de Contrato Público, ponha-o virado para baixo no Tabuleiro de Contrato e revele uma linha de cartas igual ao número de jogadores mais 1.
-> 8. Dê 2 Cartas de Contrato Privado a cada jogador. Cada um fica com 1 e devolve a outra ao baralho, que é embaralhado de novo e posto no Tabuleiro de Contrato. Os Contratos Privados ficam em segredo até serem cumpridos.
-> 9. Ponha o Tabuleiro de Pesquisa abaixo dos Tabuleiros de Ação, com o baralho de Pesquisa embaralhado e 3 cartas reveladas em linha.
-> 10. Deixe os dinossauros, separados por cor, e as Barreiras ao alcance de todos. O Dado de Caça fica perto do Tabuleiro de Ação A.
-> 11. Entregue o Marcador de Primeiro Jogador à última pessoa que visitou um museu de história natural, ou escolha de outro jeito.
-> 12. Bônus iniciais, em sentido horário a partir do primeiro jogador: o segundo põe o Marcador de Planta no 1, o terceiro põe o de Carne no 1 e o quarto põe o de Suprimento no 1. Com menos jogadores, os bônus param no último jogador.
+> 7. Embaralhe as de Contrato Público, ponha o baralho no Tabuleiro de Contrato e revele uma linha com o número de jogadores mais 1.
+> 8. Dê 2 Cartas de Contrato Privado a cada jogador. Cada um fica com 1, em segredo até cumpri-la, e devolve a outra ao baralho, que é embaralhado de novo.
+> 9. Ponha o Tabuleiro de Pesquisa abaixo dos Tabuleiros de Ação, com o baralho de Pesquisa embaralhado e 3 cartas abertas em linha.
+> 10. Dinossauros, separados por cor, e Barreiras ao alcance de todos; o Dado de Caça perto do Tabuleiro de Ação A.
+> 11. O Marcador de Primeiro Jogador vai para a última pessoa que visitou um museu de história natural, ou para quem a mesa escolher.
+> 12. Bônus iniciais, em sentido horário a partir do primeiro jogador: o segundo põe o Marcador de Planta no 1, o terceiro, o de Carne, e o quarto, o de Suprimento. Com menos jogadores, os bônus param no último.
 
-!fig[A mesa montada: os 4 Tabuleiros de Ação no centro, o Tabuleiro de Rodada à esquerda, o Tabuleiro de Contrato com a linha de Contratos Públicos em cima e o de Pesquisa embaixo; à direita, a Fazenda e o Tabuleiro de Jogador, com os Dinofazendeiros e o quadro de cada dinossauro. Ilustração: manual Meeple BR (p. 5)](figuras/preparacao.webp)
+!fig[A mesa montada: os 4 Tabuleiros de Ação no centro, o Tabuleiro de Rodada à esquerda, o de Contrato em cima, com a linha de Contratos Públicos, e o de Pesquisa embaixo; à direita, a Fazenda e o Tabuleiro de Jogador, com os Dinofazendeiros e o quadro de cada dinossauro. Ilustração: manual Meeple BR (p. 5)](figuras/preparacao.webp)
 
-> [!atencao] O quarto Dinofazendeiro não começa com você. Ele espera no espaço 4 do Tabuleiro de Rodada e só entra na quarta rodada (p. 4 e 13). Nas três primeiras rodadas, cada jogador tem 3 Dinofazendeiros e o Capataz.
+> [!atencao] O quarto Dinofazendeiro espera no espaço 4 do Tabuleiro de Rodada e só entra na quarta rodada (p. 4 e 13). Até lá, cada um aloca 3 Dinofazendeiros e o Capataz.
 
-> [!resolvido] **Exemplo resolvido.** Partida de 4 jogadores. A linha de Contratos Públicos tem 5 cartas (4 mais 1). Cada jogador fica com 1 Contrato Privado, e 4 voltam ao baralho. Ana tem o Marcador de Primeiro Jogador e não ganha bônus. Bruno, à esquerda dela, começa com 1 planta; o terceiro, com 1 carne; o quarto, com 1 suprimento.
+> [!resolvido] **Exemplo resolvido.** Partida de 4: a linha tem 5 Contratos Públicos (4 mais 1). Ana tem o Marcador de Primeiro Jogador e não ganha bônus; à esquerda dela, Bruno começa com 1 planta, o terceiro com 1 carne e o quarto com 1 suprimento.
 
 > [!suavez] **Sua vez.** Você vai montar uma partida de 2 jogadores.
 >
-> ?? Quantas Cartas de Contrato Público ficam abertas na linha?
+> ?? Quantas Cartas de Contrato Público ficam abertas?
 > - ( ) 2
 > - (x) 3
 > - ( ) 5
-> = Número de jogadores mais 1: 3 (p. 4).
+> = Número de jogadores mais 1 (p. 4).
 >
 > ?? Que bônus inicial cada jogador recebe?
 > - ( ) Os dois começam com 1 planta
-> - ( ) O primeiro jogador ganha 1 planta, e o segundo, 1 carne
-> - (x) Só o segundo jogador, que põe o Marcador de Planta no 1
-> = Os bônus começam no segundo jogador e param no último. Com 2, só o segundo ganha, e ganha 1 planta (p. 5).
->
-> ?? Quantas peças cada jogador pode alocar na primeira rodada?
-> - (x) 4: 3 Dinofazendeiros e o Capataz
-> - ( ) 5: os 4 Dinofazendeiros e o Capataz
-> - ( ) 3: o Capataz não é alocado
-> = Quatro. O quarto Dinofazendeiro está no espaço 4 do Tabuleiro de Rodada (p. 4).
+> - ( ) O primeiro ganha 1 planta, e o segundo, 1 carne
+> - (x) Só o segundo, que põe o Marcador de Planta no 1
+> = Os bônus começam no segundo jogador e param no último (p. 5).
 
 ## 3. Etapa 2: coletar e alocar Dinofazendeiros
 
-> [!entender] **Para entender.** As duas primeiras fases são a parte de "fazer coisas" da rodada.
+> [!entender] **Para entender.** Em **Coletar Recursos**, cada símbolo descoberto da Fazenda rende 1 recurso (p. 6). Cada dinossauro que entra na Fazenda cobre um símbolo, e a renda cai.
 >
-> Em **Coletar Recursos**, a Fazenda trabalha por você: cada símbolo descoberto rende 1 recurso daquele tipo (p. 6). Cada dinossauro que você põe na Fazenda cobre um símbolo, então a renda cai à medida que a Fazenda enche.
+> Em **Alocar Dinofazendeiros**, os jogadores se revezam pondo peças nos espaços de ação (p. 7). Ser o primeiro num espaço custa 1 Dinofazendeiro; quem chega depois precisa de mais peças que o dono atual. O **Capataz** vale por 2, para entrar e para segurar um espaço. Por isso o Marcador de Primeiro Jogador conta: quem começa escolhe primeiro.
 >
-> Em **Alocar Dinofazendeiros**, os jogadores se revezam pondo uma peça de cada vez nos espaços de ação (p. 7). Ser o primeiro num espaço é barato: basta 1 Dinofazendeiro. Quem chega depois precisa de mais peças que o dono atual. O **Capataz** vale por 2 nessa disputa, tanto para entrar quanto para segurar um espaço (p. 7). Por isso o Marcador de Primeiro Jogador vale alguma coisa: quem começa escolhe primeiro.
->
-> Recursos servem para duas coisas: plantas e carnes alimentam os dinossauros no fim da rodada, e qualquer recurso pode ser o custo de um espaço de ação ou de uma habilidade de Carta de Pesquisa (p. 7, 11 e 12).
+> Plantas e carnes alimentam os dinossauros no fim da rodada, e qualquer recurso pode ser custo de um espaço de ação ou de uma habilidade de Carta de Pesquisa (p. 7, 11 e 12).
 
 > [!passos] **Passo a passo: Coletar Recursos** (p. 6)
 >
-> 1. Todos ao mesmo tempo: para cada símbolo da sua Fazenda não coberto por dinossauro, ganhe 1 recurso daquele tipo (planta, carne ou suprimento).
-> 2. Avance o marcador do recurso na trilha do Tabuleiro de Jogador.
-> 3. Ninguém passa de 13 de cada recurso, e nenhum recurso fica abaixo de 0.
-> 4. Na primeira rodada, a Fazenda está vazia: todos ganham 5 plantas, 3 carnes e 1 suprimento.
+> 1. Todos ao mesmo tempo: para cada símbolo da sua Fazenda não coberto por dinossauro, ganhe 1 recurso daquele tipo e avance o marcador na trilha.
+> 2. Máximo de 13 de cada recurso; nenhum fica abaixo de 0.
+> 3. Na primeira rodada, todos ganham 5 plantas, 3 carnes e 1 suprimento.
 
 > [!passos] **Passo a passo: o turno em Alocar Dinofazendeiros** (p. 7, 8 e 19)
 >
 > 1. Quem tem o Marcador de Primeiro Jogador começa; a vez segue em sentido horário.
-> 2. Na sua vez, ponha 1 Dinofazendeiro, ou o Capataz, num espaço de ação vazio, e faça a ação daquele espaço na hora.
-> 3. Num espaço com Dinofazendeiros de adversários, você entra pondo 1 Dinofazendeiro a mais que o jogador que tem mais ali. O Capataz conta como 2 para entrar e para bloquear.
-> 4. Você não pode alocar num espaço onde já tem Dinofazendeiro.
-> 5. Espaço com círculo preto tem custo, impresso ao lado: pague na hora e depois faça pelo menos parte da ação.
-> 6. Você só pode alocar num espaço cuja ação consegue fazer.
+> 2. Ponha 1 Dinofazendeiro, ou o Capataz, num espaço de ação vazio e faça a ação na hora.
+> 3. Num espaço com Dinofazendeiros de adversários, entre com 1 Dinofazendeiro a mais que o jogador que tem mais ali. O Capataz conta como 2.
+> 4. Não aloque num espaço onde já tem Dinofazendeiro.
+> 5. Espaço com círculo preto tem custo: pague na hora e faça pelo menos parte da ação.
+> 6. Só aloque num espaço cuja ação você consegue fazer.
 > 7. Quem não tem mais Dinofazendeiros é pulado. A fase acaba quando todos alocaram todos.
 
-!fig[Dois exemplos de espaço ocupado: à esquerda, o laranja tem 2 Dinofazendeiros, e o azul entra com 3, usando o Capataz e um Dinofazendeiro normal; à direita, o laranja tem 1, e o azul entra com 2. Ilustração: manual Meeple BR (p. 7)](figuras/espacos-ocupados.webp)
-
-As ações dos espaços estão nas p. 8 e 9. O símbolo de adição (+) ao lado de um espaço indica o que você recebe ali (p. 8).
+!fig[Dois espaços ocupados: à esquerda, o laranja tem 2 Dinofazendeiros, e o azul entra com 3, usando o Capataz e um Dinofazendeiro normal; à direita, o laranja tem 1, e o azul entra com 2. Ilustração: manual Meeple BR (p. 7)](figuras/espacos-ocupados.webp)
 
 > [!passos] **Passo a passo: as ações** (p. 8 e 9)
 >
-> 1. **Caçar Dinossauros.** Receba o Dinossauro comum do espaço e ponha-o na Zona de Contenção. Role o Dado de Caça. Rede: nada a mais. Ovo: receba mais 1 da mesma espécie. Dano: mova os seus Dinofazendeiros desse espaço e o dinossauro recebido para o Afastamento Médico da sua cor, no Tabuleiro de Rodada. A caça sempre dá pelo menos 1 dinossauro.
-> 2. **Mercado de Dinossauros.** Pague o custo e receba 1 Dinossauro comum qualquer, ou um dos mostrados no espaço; ele vai para a Zona de Contenção. Não se rola o dado.
-> 3. **Recursos.** Receba os recursos mostrados no espaço e avance os marcadores.
-> 4. **Barreiras e Marcador de Primeiro Jogador.** Receba as Barreiras mostradas, na Zona de Contenção. Se o espaço der o Marcador de Primeiro Jogador, pegue-o de quem o tem; se já for seu, fica com você.
-> 5. **Contratos.** Descarte os dinossauros mostrados numa Carta de Contrato Público da linha e fique com a carta, aberta na sua frente. Os dinossauros saem da sua Fazenda, nunca da Zona de Contenção, e voltam ao estoque comum. A linha não é reposta agora.
-> 6. **Pesquisa.** Pegue 1 Carta de Pesquisa: uma da linha aberta, ou compre 3 do baralho e fique com 1, pondo as outras 2 abertas na linha. Linha vazia: compre 3 e fique com 1.
+> 1. **Caçar Dinossauros.** Receba o Dinossauro comum do espaço na Zona de Contenção e role o Dado de Caça. Rede: nada a mais. Ovo: mais 1 da mesma espécie. Dano: seus Dinofazendeiros desse espaço e o dinossauro vão para o Afastamento Médico da sua cor. A caça sempre dá pelo menos 1 dinossauro.
+> 2. **Mercado de Dinossauros.** Pague o custo e receba 1 Dinossauro comum qualquer, ou um dos mostrados, na Zona de Contenção. Sem dado.
+> 3. **Recursos.** Receba os recursos mostrados.
+> 4. **Barreiras e Marcador de Primeiro Jogador.** Receba as Barreiras mostradas na Zona de Contenção. Se o espaço der o Marcador de Primeiro Jogador, pegue-o de quem o tem.
+> 5. **Contratos.** Descarte os dinossauros pedidos numa Carta de Contrato Público da linha e fique com a carta, aberta. Os dinossauros saem da Fazenda, nunca da Zona de Contenção, e voltam ao estoque comum. A linha não é reposta agora.
+> 6. **Pesquisa.** Pegue 1 Carta de Pesquisa da linha, ou compre 3 do baralho, fique com 1 e ponha as outras 2 abertas na linha. Linha vazia: compre 3.
 
-> [!mais] **Contrato Privado.** Logo depois de cumprir um Contrato Público, se você tiver na Fazenda os dinossauros do seu Contrato Privado, pode descartá-los e cumpri-lo também, na mesma ação. Sem cumprir antes um Contrato Público, não há como cumprir o Privado (p. 9 e 19).
+> [!mais] **Contrato Privado.** Logo depois de cumprir um Contrato Público, se tiver na Fazenda os dinossauros do seu Contrato Privado, você pode descartá-los e cumpri-lo também. Sem um Público antes, não há Privado (p. 9 e 19).
 
-> [!mais] **Mova um Dinossauro de sua Zona de Contenção.** Passe 1 dinossauro da Zona de Contenção para a Fazenda na hora. Nesse momento, não importa se ele fica fora de Cercado ou junto de outra espécie; isso só será cobrado na fase Adaptar a Fazenda (p. 9).
+> [!mais] **Mova um Dinossauro de sua Zona de Contenção.** Passe 1 dinossauro da Zona de Contenção para a Fazenda na hora. Nesse momento, não importa se ele fica fora de Cercado ou junto de outra espécie (p. 9).
 
-> [!mais] **Redistribuir Barreiras.** Tire 1 ou mais Barreiras da Fazenda e ponha-as na Zona de Contenção. Nesse momento, também não importa se algum dinossauro fica fora de Cercado (p. 9).
+> [!mais] **Redistribuir Barreiras.** Tire 1 ou mais Barreiras da Fazenda e ponha-as na Zona de Contenção, mesmo que algum dinossauro fique fora de Cercado nesse momento (p. 9).
 
-> [!mais] **Espaço com duas ações.** Você faz pelo menos uma, e pode fazer as duas, na ordem que quiser (p. 9).
+> [!mais] **Espaço com duas ações.** Faça pelo menos uma; pode fazer as duas, na ordem que quiser (p. 9).
 
-> [!mais] **Contrato com Dinossauro Único.** Algumas cartas aceitam "qualquer Dinossauro Único". Quando você descarta um Dinossauro Único, a Carta de Pesquisa dele vai para o monte de descarte do Tabuleiro de Pesquisa (p. 9).
+> [!mais] **Contrato com Dinossauro Único.** Algumas cartas aceitam "qualquer Dinossauro Único". A Carta de Pesquisa do Único descartado vai para o monte de descarte do Tabuleiro de Pesquisa (p. 9).
 
-> [!atencao] Dinossauro caçado nesta rodada está na Zona de Contenção, e contrato só aceita dinossauro da Fazenda. Para usar na mesma rodada um dinossauro recém-chegado, só com a ação Mova um Dinossauro de sua Zona de Contenção antes (p. 9).
+> [!atencao] Dinossauro caçado nesta rodada está na Zona de Contenção. Para usá-lo num contrato na mesma rodada, só passando-o antes para a Fazenda com a ação Mova um Dinossauro de sua Zona de Contenção (p. 9).
 
 > [!resolvido] **Exemplo resolvido.** Segunda rodada. Sua Fazenda tem 2 Estegossauros num Cercado, cobrindo 2 símbolos de planta. Você tinha 1 planta, 0 carne e 2 suprimentos.
 >
-> 1. Coletar Recursos: dos 9 símbolos da Fazenda (5 plantas, 3 carnes, 1 suprimento), sobram 3 plantas, 3 carnes e 1 suprimento. Você fica com 4 plantas, 3 carnes e 3 suprimentos.
-> 2. Na sua vez, a linha tem um Contrato Público que pede 3 Estegossauros e vale 7 pontos. Você só tem 2 na Fazenda: não pode alocar em Contratos.
-> 3. Você aloca no espaço de caça do Estegossauro e rola Rede. O terceiro Estegossauro está na Zona de Contenção.
-> 4. Na próxima vez, aloca num espaço com a ação Mova um Dinossauro de sua Zona de Contenção e passa o Estegossauro para a Fazenda. Agora, se ainda tiver Dinofazendeiros, pode ir a Contratos e cumprir a carta de 7 pontos.
+> 1. Coletar: dos 9 símbolos (5 plantas, 3 carnes, 1 suprimento), estão descobertos 3 de planta, 3 de carne e 1 de suprimento. Você fica com 4 plantas, 3 carnes e 3 suprimentos.
+> 2. A linha tem um Contrato Público que pede 3 Estegossauros e vale 7 pontos. Com 2 na Fazenda, você ainda não pode alocar em Contratos.
+> 3. Você caça no espaço do Estegossauro e rola Rede: o terceiro está na Zona de Contenção.
+> 4. Na vez seguinte, usa a ação Mova um Dinossauro de sua Zona de Contenção. Com os 3 na Fazenda e um Dinofazendeiro sobrando, pode ir a Contratos e cumprir a carta de 7.
 
-> [!complete] **Complete.** Bruno pôs o Capataz no espaço de Pesquisa. Você quer esse espaço.
+> [!complete] **Complete.** Bruno pôs o Capataz no espaço de Pesquisa, e você quer esse espaço.
 >
 > ?? Quantos Dinofazendeiros você precisa pôr ali?
 > - ( ) 2
 > - (x) 3, ou o seu Capataz e mais 1 Dinofazendeiro
 > - ( ) Nenhum: espaço com Capataz fica fechado
-> = O Capataz de Bruno conta como 2; você precisa de 1 a mais, ou seja, 3. O seu Capataz e 1 Dinofazendeiro somam 3 (p. 7).
+> = O Capataz de Bruno conta como 2; você precisa de 3 (p. 7).
 >
-> ?? Você entra e não gosta de nenhuma das 3 cartas da linha. O que pode fazer?
+> ?? Você entra e não gosta das 3 cartas da linha. O que pode fazer?
 > - ( ) Descartar a linha e revelar 3 novas
-> - (x) Comprar 3 do baralho, ficar com 1 e pôr as outras 2 abertas na linha
-> - ( ) Comprar 1 carta do topo do baralho
-> = Comprar 3 e escolher 1. As 2 que sobram vão para a linha, abertas (p. 9).
+> - (x) Comprar 3 do baralho, ficar com 1 e pôr as outras 2 na linha
+> - ( ) Comprar 1 carta do topo
+> = Compre 3 e escolha 1; as outras 2 vão para a linha, abertas (p. 9).
 
-> [!suavez] **Sua vez.** Três situações.
+> [!suavez] **Sua vez.** Duas situações.
 >
 > ?? Num espaço, Ana tem 1 Dinofazendeiro e Bruno tem o Capataz. Quantos você precisa para entrar?
 > - ( ) 2, um a mais que Ana
 > - ( ) 4, a soma dos dois mais 1
 > - (x) 3, um a mais que Bruno
-> = Conta só o jogador com mais Dinofazendeiros ali: Bruno, com o Capataz, tem 2. Você precisa de 3 (p. 7).
+> = Conta só o jogador com mais ali: Bruno, com o Capataz, tem 2 (p. 7).
 >
-> ?? Você tem 11 plantas, e a sua Fazenda tem 5 símbolos de planta descobertos. Com quantas plantas fica depois de Coletar Recursos?
+> ?? Você tem 11 plantas, e a Fazenda tem 5 símbolos de planta descobertos. Com quantas fica depois de Coletar Recursos?
 > - ( ) 16
 > - (x) 13
-> - ( ) 11, porque com mais de 10 não se coleta
-> = O teto é 13 de cada recurso; o que passa disso se perde (p. 6).
->
-> ?? Você cumpre um Contrato Público e tem na Fazenda os dinossauros do seu Contrato Privado. O que pode fazer?
-> - (x) Cumprir também o Privado, na mesma ação
-> - ( ) Nada: o Privado só pode ser cumprido no fim da partida
-> - ( ) Cumprir o Privado no lugar do Público
-> = Depois de cumprir o Público, você pode cumprir o Privado, descartando os dinossauros dele (p. 9).
-
-> [!treino] **Treino rápido: pode alocar?** Para cada caso, você pode pôr Dinofazendeiro ali?
->
-> ?? a) Contratos, com os dinossauros da carta todos na Zona de Contenção.
-> - ( ) Pode, e os dinossauros saem da Zona de Contenção
-> - ( ) Pode, se pagar 1 suprimento por dinossauro
-> - (x) Não pode
-> = Não. Os dinossauros precisam estar na Fazenda, e você só aloca onde pode fazer a ação (p. 9 e 19).
->
-> ?? b) Um espaço de caça vazio, com Dinofazendeiros seus em outro espaço de caça.
-> - ( ) Não pode: um jogador só caça uma vez por rodada
-> - (x) Pode
-> - ( ) Só pode com o Capataz
-> = Pode. A proibição vale só para o mesmo espaço (p. 7).
->
-> ?? c) Um espaço com custo, sem o recurso para pagar.
-> - ( ) Pode, e paga na próxima rodada
-> - (x) Não pode
-> = Não. O custo é pago na hora (p. 8), e você não pode alocar onde não consegue fazer a ação (p. 19).
->
-> ?? d) Pesquisa, com a linha de Cartas de Pesquisa vazia.
-> - ( ) Não pode: não há carta para pegar
-> - ( ) Pode: você compra 1 carta do topo do baralho
-> - (x) Pode: você compra 3 e fica com 1
-> = Pode. Com a linha vazia, a única opção é comprar 3 e escolher 1 (p. 9).
+> - ( ) 11
+> = O teto é 13 de cada recurso (p. 6).
 
 ## 4. Etapa 3: cuidar da Fazenda
 
-> [!entender] **Para entender.** Depois que todos alocam, ninguém mais disputa nada: cada um cuida da própria Fazenda, ao mesmo tempo (p. 10 a 12). É aqui que se ganha ou se perde dinossauro.
+> [!entender] **Para entender.** Depois que todos alocam, cada um cuida da própria Fazenda, ao mesmo tempo (p. 10 a 12). É aqui que se ganha ou se perde dinossauro.
 >
-> **Cercado** é qualquer grupo de espaços da Fazenda fechado por todos os lados, numa combinação de Barreiras, Montanhas e Água. Pode ter 1 espaço ou vários, desde que sejam vizinhos e estejam fechados (p. 10). Um Cercado com 3 espaços guarda até 3 dinossauros de **uma única espécie**, 1 por espaço. Toda Fazenda começa com um Cercado permanente.
+> **Cercado** é um grupo de espaços vizinhos fechado por todos os lados, com qualquer combinação de Barreiras, Montanhas e Água. Pode ter 1 espaço ou vários (p. 10). Um Cercado de 3 espaços guarda até 3 dinossauros de **uma única espécie**, 1 por espaço.
 >
-> Barreira posta não sai do lugar nas rodadas seguintes, a não ser pela ação Redistribuir Barreiras ou por uma fuga (p. 9, 10 e 11). Dinossauros, ao contrário, podem ser rearrumados à vontade na fase Adaptar a Fazenda. Por isso, a forma dos Cercados se planeja; a ocupação, não.
+> Barreira posta não muda de lugar nas rodadas seguintes, a não ser por Redistribuir Barreiras ou por uma fuga. Dinossauros, ao contrário, podem ser rearrumados à vontade ao adaptar a Fazenda (p. 9 a 11). A forma dos Cercados se planeja; a ocupação se ajusta.
 >
-> A comida vem dos recursos que você coletou e não gastou. Herbívoros comem plantas; carnívoros, carnes (p. 11). Quem fica sem comida foge, e cada tipo de fuga tem a sua penalidade. Quem come se reproduz: cada 2 da mesma espécie no mesmo Cercado geram 1 filhote (p. 12).
+> Quem não come foge, e cada tipo de fuga traz uma penalidade. Quem come se reproduz: cada 2 da mesma espécie no mesmo Cercado geram 1 filhote (p. 11 e 12).
 
 > [!passos] **Passo a passo: Reaver Dinofazendeiros** (p. 10)
 >
-> 1. Todos ao mesmo tempo: recolha todos os seus Dinofazendeiros, incluindo os do Afastamento Médico, para o Tabuleiro de Jogador.
-> 2. Os dinossauros do seu Afastamento Médico vão para a sua Zona de Contenção.
+> 1. Todos recolhem todos os seus Dinofazendeiros, inclusive os do Afastamento Médico, para o Tabuleiro de Jogador.
+> 2. Os dinossauros do Afastamento Médico vão para a Zona de Contenção do dono.
 
 > [!passos] **Passo a passo: Adaptar a Fazenda** (p. 10)
 >
-> 1. Todos ao mesmo tempo: ponha na Fazenda as Barreiras e os dinossauros da sua Zona de Contenção.
-> 2. Barreiras só entram nas linhas pontilhadas. As postas em rodadas anteriores não podem ser movidas.
+> 1. Todos ao mesmo tempo: ponham na Fazenda as Barreiras e os dinossauros da Zona de Contenção.
+> 2. Barreiras só entram nas linhas pontilhadas. As postas em rodadas anteriores não se movem.
 > 3. Todos os dinossauros da Fazenda podem ser movidos à vontade.
-> 4. Cada Cercado guarda uma só espécie de Dinossauro comum, até 1 por espaço.
-> 5. Dinossauro comum que não ficar dentro de um Cercado foge.
+> 4. Cada Cercado guarda uma só espécie de Dinossauro comum, 1 por espaço.
+> 5. Dinossauro comum que não ficar num Cercado foge.
 
-!fig[Uma Fazenda arrumada: Estegossauros num Cercado fechado por Barreiras, Água e Montanha, um Alossauro no Cercado permanente e dois Dinossauros Únicos, em roxo, nas áreas abertas. Ilustração: manual Meeple BR (p. 10)](figuras/cercados.webp)
+!fig[Uma Fazenda arrumada: Estegossauros num Cercado fechado por Barreiras, Água e Montanha, um Alossauro no Cercado permanente e Dinossauros Únicos, em roxo, nas áreas abertas. Ilustração: manual Meeple BR (p. 10)](figuras/cercados.webp)
 
 > [!passos] **Passo a passo: Alimentar os Dinossauros** (p. 11)
 >
-> 1. Todos ao mesmo tempo: alimente os dinossauros da Fazenda, incluindo os Dinossauros Únicos, com o que está indicado para cada um, baixando o marcador do recurso.
-> 2. Herbívoros comem plantas; carnívoros comem carnes.
-> 3. Alimente na ordem que quiser, até acabarem os recursos ou todos estarem alimentados. Deitar o dinossauro já alimentado ajuda a não se perder.
-> 4. Sem recursos para todos, os não alimentados fogem.
+> 1. Todos ao mesmo tempo: alimentem os dinossauros da Fazenda, inclusive os Únicos, com o que está indicado para cada um, baixando o marcador do recurso.
+> 2. Herbívoros comem plantas; carnívoros, carnes.
+> 3. Alimente na ordem que quiser, até acabarem os recursos ou todos estarem alimentados. Deitar quem já comeu ajuda a não se perder.
+> 4. Os não alimentados fogem.
 
 > [!passos] **Passo a passo: Fuga de Dinossauros** (p. 11)
 >
-> 1. Dinossauros podem fugir em Adaptar a Fazenda, Alimentar os Dinossauros e Reprodução.
-> 2. Cada penalidade acontece **uma vez por rodada**, mesmo que fujam vários do mesmo tipo. Resolva as penalidades na ordem que quiser.
-> 3. **Penalidade de Fuga dos Herbívoros:** tire da Fazenda 1 Barreira à sua escolha, se houver. Se isso abrir um Cercado, os dinossauros alimentados que estão nele não fogem, mas não se reproduzem nesta rodada.
+> 1. Dinossauros fogem em Adaptar a Fazenda, Alimentar os Dinossauros e Reprodução.
+> 2. Cada penalidade acontece **uma vez por rodada**, mesmo que fujam vários do mesmo tipo, na ordem que você quiser.
+> 3. **Penalidade de Fuga dos Herbívoros:** tire da Fazenda 1 Barreira à sua escolha, se houver. Se isso abrir um Cercado, os dinossauros alimentados nele não fogem, mas não se reproduzem nesta rodada.
 > 4. **Penalidade de Fuga dos Carnívoros:** descarte qualquer outro dinossauro seu, se houver, junto com o que fugiu. Pode ser um que também ia fugir.
-> 5. Depois, todos os dinossauros que fugiram voltam ao estoque comum.
+> 5. Os que fugiram voltam ao estoque comum.
 
 > [!mais] **Carnívoro come quem ia fugir.** Se a Penalidade de Fuga dos Carnívoros descartar um herbívoro que ia fugir, antes da fuga dele, esse herbívoro não causa a Penalidade de Fuga dos Herbívoros (p. 11).
 
-> [!mais] **Dinossauro Único que foge.** Ele volta ao estoque comum, e a Carta de Pesquisa dele vai para o monte de descarte do Tabuleiro de Pesquisa (p. 11).
+> [!mais] **Dinossauro Único que foge.** Ele volta ao estoque comum, e a Carta de Pesquisa dele vai para o monte de descarte (p. 11).
 
 > [!passos] **Passo a passo: Reprodução** (p. 12 e 19)
 >
-> 1. Só se reproduzem os dinossauros alimentados nesta rodada, e só dentro de um Cercado totalmente fechado.
-> 2. Cada 2 Dinossauros comuns da mesma espécie no mesmo Cercado geram 1 Dinossauro recém-nascido da mesma espécie, tirado do estoque comum.
-> 3. Ponha cada recém-nascido na hora num Cercado, que não precisa ser o dos pais, na ordem que quiser.
-> 4. Recém-nascido sem lugar na Fazenda foge na hora.
-> 5. Recém-nascidos não se reproduzem na rodada em que nasceram.
+> 1. Só se reproduzem os dinossauros alimentados nesta rodada, num Cercado totalmente fechado.
+> 2. Cada 2 Dinossauros comuns da mesma espécie no mesmo Cercado geram 1 Dinossauro recém-nascido da espécie, do estoque comum.
+> 3. Ponha cada recém-nascido na hora num Cercado, que não precisa ser o dos pais. Sem lugar, ele foge na hora.
+> 4. Recém-nascidos não se reproduzem na rodada em que nasceram.
 
-!fig[A Reprodução: o Cercado tem 3 Estegossauros, que geram só 1 filhote; ele é posto no espaço livre. Ilustração: manual Meeple BR (p. 12)](figuras/reproducao.webp)
+!fig[Reprodução: 3 Estegossauros no mesmo Cercado geram só 1 filhote, posto no espaço livre. Ilustração: manual Meeple BR (p. 12)](figuras/reproducao.webp)
 
-> [!mais] **Estoque acabou.** Se o estoque de uma espécie de Dinossauro comum acabar, ninguém recebe mais essa espécie, e o efeito que a daria é cancelado. Se faltar na Reprodução, os jogadores afetados recebem um de cada vez, a partir do primeiro jogador, até o estoque acabar (p. 12).
+> [!mais] **Estoque acabou.** Se uma espécie de Dinossauro comum acabar no estoque, ninguém a recebe mais, e o efeito que a daria é cancelado. Se faltar na Reprodução, os afetados recebem um de cada vez, a partir do primeiro jogador, até acabar (p. 12).
 
 > [!resolvido] **Exemplo resolvido.** Fim da segunda rodada. Sua Fazenda tem um Cercado de 3 espaços com 2 Estegossauros, e o Cercado permanente, de 1 espaço, está vazio. Na Zona de Contenção há 1 Braquiossauro. Você tem 4 plantas e nenhuma carne.
 >
-> 1. Adaptar a Fazenda: o Braquiossauro não pode entrar no Cercado dos Estegossauros, que é de outra espécie. Ele vai para o Cercado permanente.
-> 2. Alimentar: os 2 Estegossauros comem 1 planta cada, e o Braquiossauro come 2. São 4 plantas; você fica com 0.
-> 3. Reprodução: os 2 Estegossauros geram 1 filhote, que ocupa o terceiro espaço do Cercado deles. O Braquiossauro está sozinho e não se reproduz.
+> 1. Adaptar: o Braquiossauro não pode entrar no Cercado dos Estegossauros. Vai para o Cercado permanente.
+> 2. Alimentar: 1 planta para cada Estegossauro e 2 para o Braquiossauro. São 4; sobra 0.
+> 3. Reprodução: os 2 Estegossauros geram 1 filhote, que ocupa o terceiro espaço do Cercado deles. O Braquiossauro, sozinho, não se reproduz.
 >
-> Agora você tem 3 Estegossauros e 1 Braquiossauro: 9 pontos, se ficarem até o fim.
+> Você termina com 3 Estegossauros e 1 Braquiossauro: 9 pontos, se ficarem até o fim.
 
-> [!complete] **Complete.** A mesma situação, mas você tem só 3 plantas. Você alimenta primeiro os 2 Estegossauros.
+> [!complete] **Complete.** A mesma situação, mas com só 3 plantas. Você alimenta primeiro os 2 Estegossauros.
 >
 > ?? E o Braquiossauro?
 > - ( ) Come a planta que sobrou e fica alimentado
 > - (x) Foge: sobra 1 planta, e ele precisa de 2
 > - ( ) Fica com fome, mas não foge, porque está num Cercado
-> = Ele come 2 plantas; com 1, não é alimentado e foge (p. 11).
+> = Com 1 planta, ele não é alimentado e foge (p. 11).
 >
 > ?? Que penalidade isso causa?
 > - (x) Você tira 1 Barreira da Fazenda
 > - ( ) Você descarta outro dinossauro
-> - ( ) Nenhuma: só carnívoros causam penalidade
-> = É a Penalidade de Fuga dos Herbívoros: tire 1 Barreira à sua escolha (p. 11).
+> - ( ) Nenhuma
+> = Penalidade de Fuga dos Herbívoros (p. 11).
 >
-> ?? Se a Barreira tirada abrir o Cercado dos Estegossauros, o que acontece com eles?
-> - ( ) Fogem os dois
+> ?? Se a Barreira tirada abrir o Cercado dos Estegossauros?
+> - ( ) Os dois fogem
 > - ( ) Ficam e se reproduzem normalmente
 > - (x) Ficam, mas não se reproduzem nesta rodada
-> = Alimentados, eles não fogem, mas Cercado aberto não reproduz (p. 11 e 19).
+> = Alimentados, não fogem; Cercado aberto não reproduz (p. 11 e 19).
 
 > [!suavez] **Sua vez.** Três situações.
 >
-> ?? Na mesma rodada fogem 2 Estegossauros e 1 Braquiossauro. Quantas Barreiras você tira?
+> ?? Na mesma rodada, fogem 2 Estegossauros e 1 Braquiossauro. Quantas Barreiras você tira?
 > - ( ) 3
 > - ( ) 2
 > - (x) 1
-> = Cada penalidade acontece uma vez por rodada, mesmo com vários herbívoros fugindo (p. 11 e 19).
+> = Cada penalidade acontece uma vez por rodada (p. 11 e 19).
 >
-> ?? Um Velociraptor foge por falta de carne. Você tem 2 Estegossauros alimentados e 1 Alossauro. O que acontece?
+> ?? Um Velociraptor foge por falta de carne. Você tem 2 Estegossauros e 1 Alossauro. O que acontece?
 > - ( ) Só o Velociraptor sai
 > - (x) Sai o Velociraptor e mais 1 dinossauro seu, à sua escolha
 > - ( ) Você tira 1 Barreira
-> = Penalidade de Fuga dos Carnívoros: descarte qualquer outro dinossauro junto com o que fugiu (p. 11).
+> = Penalidade de Fuga dos Carnívoros (p. 11).
 >
-> ?? Um Cercado de 5 espaços tem 4 Velociraptores alimentados. Quantos filhotes nascem, e onde podem ficar?
-> - ( ) 4, e o que não couber foge
-> - ( ) 2, ambos obrigatoriamente no mesmo Cercado
-> - (x) 2: um no espaço livre desse Cercado e o outro em outro Cercado com lugar, ou foge
-> = Cada 2 geram 1: 2 filhotes. Eles vão para qualquer Cercado com lugar; o que não couber foge (p. 12).
-
-> [!treino] **Treino rápido: quantos filhotes?** Todos alimentados, no mesmo Cercado fechado.
->
-> ?? a) 3 Alossauros.
-> - (x) 1
-> - ( ) 2
-> - ( ) 3
-> = Cada 2 geram 1; o terceiro não tem par (p. 12).
->
-> ?? b) 5 Braquiossauros.
-> - ( ) 3
+> ?? Um Cercado de 5 espaços tem 4 Velociraptores alimentados. Quantos filhotes nascem?
+> - ( ) 4
 > - (x) 2
 > - ( ) 1
-> = Dois pares: 2 filhotes (p. 12).
+> = Cada 2 geram 1. Um filhote cabe no espaço livre; o outro vai para outro Cercado com lugar ou foge (p. 12).
+
+> [!treino] **Treino rápido: a conta da comida.**
 >
-> ?? c) 2 Estegossauros alimentados num Cercado que ficou aberto porque uma Barreira saiu numa fuga desta rodada.
-> - ( ) 1
-> - (x) Nenhum
-> - ( ) 2
-> = Nenhum. Eles não fogem, mas Cercado aberto não reproduz (p. 11 e 19).
->
-> ?? d) Quanta comida pedem 3 Estegossauros, 1 Braquiossauro, 2 Alossauros e 1 Velociraptor?
+> ?? Quanta comida pedem 3 Estegossauros, 1 Braquiossauro, 2 Alossauros e 1 Velociraptor?
 > - ( ) 4 plantas e 3 carnes
 > - (x) 5 plantas e 5 carnes
 > - ( ) 7 plantas e 7 carnes
@@ -415,54 +337,51 @@ As ações dos espaços estão nas p. 8 e 9. O símbolo de adição (+) ao lado 
 
 ## 5. Etapa 4: fechar a rodada e a partida
 
-> [!entender] **Para entender.** A última fase de cada rodada só repõe as cartas e avança o relógio. A partida tem duração fixa: 6 rodadas (p. 6 e 13).
+> [!entender] **Para entender.** A última fase de cada rodada repõe as cartas e avança o relógio; a partida tem sempre 6 rodadas (p. 6 e 13). Na quarta, todos ganham o quarto Dinofazendeiro e mais um Contrato Privado.
 >
-> No meio da partida, na quarta rodada, todos ganham o quarto Dinofazendeiro e mais um Contrato Privado (p. 13). A partir daí, cada um tem 5 peças para alocar.
->
-> Pontos vêm de três fontes: os contratos cumpridos, as Cartas de Pesquisa e os Dinossauros comuns que estão na Fazenda no fim (p. 13). Um contrato troca dinossauros por pontos; um dinossauro que fica na Fazenda também vale pontos, mas come todo fim de rodada.
+> Os pontos vêm de três fontes: contratos cumpridos, Cartas de Pesquisa e Dinossauros comuns na Fazenda no fim (p. 13). Contrato troca dinossauros por pontos; dinossauro que fica também vale pontos, mas come todo fim de rodada.
 
 > [!passos] **Passo a passo: Preparação para Próxima Rodada** (p. 13)
 >
-> 1. Compre Cartas de Contrato Público até a linha voltar ao número de jogadores mais 1.
-> 2. Descarte todas as Cartas de Pesquisa abertas no monte de descarte do Tabuleiro de Pesquisa e revele 3 novas em linha. Se o baralho acabar, embaralhe o descarte para formar um novo.
-> 3. Avance o Marcador de Rodada um espaço. A nova rodada começa com Coletar Recursos, e em Alocar Dinofazendeiros quem tem o Marcador de Primeiro Jogador começa.
+> 1. Complete a linha de Contratos Públicos até o número de jogadores mais 1.
+> 2. Descarte as Cartas de Pesquisa abertas no monte de descarte e revele 3 novas. Baralho vazio: embaralhe o descarte.
+> 3. Avance o Marcador de Rodada. A nova rodada começa com Coletar Recursos, e quem tem o Marcador de Primeiro Jogador aloca primeiro.
 
 > [!passos] **Passo a passo: a quarta rodada** (p. 13)
 >
-> 1. Quando o Marcador de Rodada chega ao espaço 4, cada jogador pega o seu Dinofazendeiro que estava ali e o junta aos outros no Tabuleiro de Jogador.
-> 2. Cada jogador compra 1 Carta de Contrato Privado e fica com ela, em segredo.
+> 1. Quando o Marcador de Rodada chega ao espaço 4, cada jogador junta aos outros o Dinofazendeiro que estava ali.
+> 2. Cada jogador compra 1 Carta de Contrato Privado e fica com ela.
 
 > [!passos] **Passo a passo: fim da partida e pontuação** (p. 13)
 >
-> 1. No fim da sexta rodada, a partida termina.
-> 2. Vire o Tabuleiro de Rodada; cada jogador usa um Dinofazendeiro para marcar os pontos na trilha.
-> 3. Cada um soma: os pontos de cada Carta de Contrato cumprida, Pública ou Privada; os pontos de cada Carta de Pesquisa; os pontos de cada Dinossauro comum na Fazenda, pelo valor do Tabuleiro de Jogador.
-> 4. Vence quem tem mais pontos.
-> 5. Empate: entre os empatados, vence quem joga primeiro na ordem de turno, a partir de quem tem o Marcador de Primeiro Jogador e em sentido horário.
+> 1. No fim da sexta rodada, a partida termina. Vire o Tabuleiro de Rodada; cada um marca os pontos com um Dinofazendeiro.
+> 2. Cada um soma: cada Carta de Contrato cumprida, Pública ou Privada; cada Carta de Pesquisa; cada Dinossauro comum na Fazenda, pelo valor do Tabuleiro de Jogador.
+> 3. Vence quem tem mais pontos.
+> 4. Empate: entre os empatados, vence quem joga primeiro na ordem de turno, a partir de quem tem o Marcador de Primeiro Jogador.
 
-!fig[A trilha de pontuação no verso do Tabuleiro de Rodada, com uma faixa de 1 a 10 e outra de 10 a 100, mais o espaço 100/200; cada jogador marca os pontos com Dinofazendeiros. Ilustração: manual Meeple BR (p. 13)](figuras/pontuacao.webp)
+!fig[A trilha de pontuação no verso do Tabuleiro de Rodada, com uma faixa de 1 a 10 e outra de 10 a 100, mais o espaço 100/200; os pontos são marcados com Dinofazendeiros. Ilustração: manual Meeple BR (p. 13)](figuras/pontuacao.webp)
 
-> [!mais] **Cartas de Pesquisa e Onívoros.** Na pontuação, um dinossauro Onívoro pode ser contado como Herbívoro ou como Carnívoro (p. 13).
+> [!mais] **Onívoros na pontuação.** Na contagem das Cartas de Pesquisa, um Onívoro pode valer como Herbívoro ou como Carnívoro (p. 13).
 
-> [!atencao] Dinossauro Único não entra no item 3 da pontuação: os pontos dele estão na Carta de Pesquisa (p. 12 e 13). Se ele fugir, a carta vai para o descarte e você perde esses pontos (p. 11).
+> [!atencao] Dinossauro Único não conta como Dinossauro comum: os pontos dele estão na Carta de Pesquisa (p. 12 e 13). Se ele fugir, a carta vai para o descarte, e esses pontos se perdem (p. 11).
 
-> [!resolvido] **Exemplo resolvido.** Fim da partida. Ana cumpriu dois Contratos Públicos, de 7 e 10 pontos, e um Privado, de 15. Tem duas Cartas de Pesquisa, de 1 e 2 pontos. Na Fazenda, tem 3 Estegossauros, 2 Velociraptores e 1 Alossauro.
+> [!resolvido] **Exemplo resolvido.** Ana cumpriu Contratos Públicos de 7 e 10 pontos e um Privado de 15. Tem Cartas de Pesquisa de 1 e 2 pontos. Na Fazenda, 3 Estegossauros, 2 Velociraptores e 1 Alossauro.
 >
 > 1. Contratos: 7 + 10 + 15 = **32**.
 > 2. Pesquisa: 1 + 2 = **3**.
 > 3. Dinossauros: 3 x 2 + 2 x 3 + 1 x 4 = **16**.
 >
-> Ana termina com 32 + 3 + 16 = **51 pontos**.
+> Total: **51 pontos**.
 
-> [!complete] **Complete.** Bruno cumpriu dois Contratos Públicos, de 11 e 13 pontos (24 no total), e tem três Cartas de Pesquisa, de 2, 2 e 1 ponto (5 no total). Na Fazenda, tem 3 Braquiossauros, 2 Alossauros e 1 Estegossauro.
+> [!complete] **Complete.** Bruno tem 24 pontos de contratos e 5 de Cartas de Pesquisa. Na Fazenda, 3 Braquiossauros, 2 Alossauros e 1 Estegossauro.
 >
-> ?? Quantos pontos valem os dinossauros de Bruno?
+> ?? Quanto valem os dinossauros de Bruno?
 > - ( ) 14
 > - (x) 19
 > - ( ) 6
 > = 3 x 3 + 2 x 4 + 1 x 2 = 19 (p. 5 e 13).
 >
-> ?? Quem vence, Ana ou Bruno?
+> ?? Quem vence?
 > - (x) Ana, 51 a 48
 > - ( ) Bruno, 53 a 51
 > - ( ) Empate
@@ -470,79 +389,69 @@ As ações dos espaços estão nas p. 8 e 9. O símbolo de adição (+) ao lado 
 
 > [!suavez] **Sua vez.** Duas situações.
 >
-> ?? Na terceira rodada, você tem na Fazenda 3 Estegossauros, e a linha tem um Contrato Público que pede 3 Estegossauros e vale 7. Se os 3 ficassem até o fim, quanto valeriam?
+> ?? Você tem 3 Estegossauros na Fazenda, e a linha tem um Contrato Público de 3 Estegossauros que vale 7. Quanto valeriam os 3 se ficassem até o fim?
 > - ( ) 9
-> - ( ) 7, o mesmo que o contrato
-> - (x) 6, contra os 7 do contrato
-> = 3 x 2 = 6. O contrato paga 7 agora; os Estegossauros na Fazenda pagariam 6 no fim e ainda comeriam plantas a cada rodada (p. 5, 11 e 13).
+> - ( ) 7
+> - (x) 6
+> = 3 x 2 = 6, contra os 7 do contrato (p. 5 e 13).
 >
 > ?? Ana e Bruno empatam. Bruno tem o Marcador de Primeiro Jogador, e Ana está à esquerda dele. Quem vence?
 > - (x) Bruno
 > - ( ) Ana
 > - ( ) Ninguém: a vitória é dividida
-> = A ordem de turno começa em quem tem o Marcador de Primeiro Jogador. Bruno joga antes de Ana e vence (p. 13).
+> = A ordem de turno começa em quem tem o Marcador de Primeiro Jogador (p. 13).
 
-> [!dica] Um contrato que paga mais que os próprios dinossauros valeriam no fim, como o do exemplo acima, costuma ser bom negócio: libera espaço no Cercado e corta despesa de comida. É uma leitura dos números, não uma regra; os Contratos Privados, que valem mais, podem pedir que você guarde certas espécies.
+> [!dica] Um contrato que paga mais do que os dinossauros valeriam no fim costuma compensar: libera Cercado e corta comida. É leitura dos números, não regra; o seu Contrato Privado pode pedir que você guarde certas espécies.
 
 ## 6. Situações especiais
 
-**Afastamento Médico.** Com Dano no Dado de Caça, os seus Dinofazendeiros saem do espaço de ação e vão, com o dinossauro, para o Afastamento Médico da sua cor. Eles só voltam em Reaver Dinofazendeiros, e o dinossauro então vai para a Zona de Contenção (p. 8 e 10).
+**Cartas de Pesquisa.** Há dois tipos, Ciência e Genética, e as duas dão uma habilidade e pontos no fim. A de Genética também traz um Dinossauro Único, que precisa ser alimentado (p. 12). A habilidade de Ciência funciona já na rodada em que você pegou a carta; a de Genética, só enquanto o Dinossauro Único estiver na Fazenda, não na Zona de Contenção (p. 12 e 19). Exemplos da p. 12: a Incubadora de Ovos deixa pagar 2 suprimentos na Reprodução para pôr 1 Dinossauro comum qualquer na Zona de Contenção; o Anquilossauro faz quem tomar de você o Marcador de Primeiro Jogador pagar 2 carnes.
 
-**Cartas de Pesquisa.** Há dois tipos: Ciência e Genética. As duas trazem uma habilidade e pontos no fim. A Carta de Genética também traz um Dinossauro Único, que precisa ser alimentado como os outros (p. 12). Muitas habilidades mostram o número da fase em que funcionam. A Incubadora de Ovos, por exemplo, deixa pagar 2 suprimentos na Reprodução para pôr 1 Dinossauro comum qualquer na Zona de Contenção; o Anquilossauro faz quem tomar de você o Marcador de Primeiro Jogador pagar 2 carnes (ilustrações da p. 12).
+**Dinossauros Únicos na Fazenda.** Não precisam de Cercado e podem ficar nas áreas abertas, junto de outros Únicos. Não ficam em Cercado com Dinossauros comuns e, em geral, não se reproduzem (p. 10 e 12).
 
-**Quando a habilidade funciona.** A de uma Carta de Ciência pode ser usada já na rodada em que você a pegou. A de uma Carta de Genética só funciona enquanto o Dinossauro Único estiver na Fazenda: não na Zona de Contenção, e não depois de fugir (p. 12 e 19).
-
-**Dinossauros Únicos na Fazenda.** Eles não precisam de Cercado e podem ficar nas áreas abertas, junto de outros Dinossauros Únicos. Em geral não se reproduzem e não ficam em Cercado com Dinossauros comuns (p. 10 e 12).
-
-> [!edicao] A p. 10 diz que Dinossauros Únicos "não podem" ficar em Cercado com Dinossauros comuns; a p. 12 diz "normalmente não podem", e também que eles "usualmente" não se reproduzem. A leitura mais segura: siga a regra geral, e só faça diferente quando uma Carta de Pesquisa disser.
-
-**Onívoros.** Um Onívoro come planta **ou** carne, à sua escolha, e não as duas (p. 11 e 19). Se ele fugir, você escolhe se a penalidade é a dos Herbívoros ou a dos Carnívoros (p. 11).
+**Onívoros** comem planta **ou** carne, à sua escolha. Se um fugir, você escolhe qual penalidade ele causa (p. 11 e 19).
 
 **Montanhas, Água e o Cercado permanente** contam como Barreiras para fechar um Cercado (p. 19).
 
-> [!edicao] O manual não diz se a Penalidade de Fuga dos Herbívoros pode ser paga com uma parte do Cercado permanente, que o FAQ manda contar "como uma Barreira" (p. 19), nem para onde vai a Barreira tirada. A leitura mais natural é que só sai uma peça de Barreira posta por você e que ela volta ao estoque; combine com a mesa antes de jogar.
+> [!edicao] **Pontos que o manual deixa abertos.** (1) A p. 10 diz que Dinossauros Únicos "não podem" ficar em Cercado com comuns; a p. 12 diz "normalmente não podem". Siga a regra geral e só faça diferente se uma carta mandar. (2) O manual não diz se a Penalidade de Fuga dos Herbívoros pode tirar parte do Cercado permanente, nem para onde vai a Barreira tirada. A leitura mais natural: sai uma peça de Barreira, que volta ao estoque. Combine com a mesa.
 
-> [!edicao] Na p. 7, o manual diz que na sua vez você posiciona "um único Dinofazendeiro"; logo abaixo, manda pôr 2 ou 3 de uma vez para entrar num espaço ocupado, e as ilustrações mostram isso. A leitura deste guia: num espaço vazio, 1 peça por vez; num espaço ocupado, todas as peças necessárias de uma vez, na mesma vez.
+> [!edicao] **Duas frases que parecem se contradizer.** (1) A p. 7 diz que na sua vez você posiciona "um único Dinofazendeiro", mas manda pôr 2 ou 3 para entrar num espaço ocupado, e a ilustração mostra isso. Este guia lê: num espaço ocupado, você põe todas as peças necessárias na mesma vez. (2) Num espaço com duas ações, a p. 9 manda fazer pelo menos uma e permite as duas; o FAQ da p. 19 diz "você pode realizar apenas uma delas". Lido com a pergunta do FAQ, o sentido é: basta poder fazer uma para alocar ali.
 
-> [!edicao] Na p. 9, num espaço com duas ações, você faz "pelo menos uma delas", e pode fazer as duas. O FAQ da p. 19 diz, entre parênteses, "você pode realizar apenas uma delas". Lido junto com a pergunta, o sentido é: basta poder fazer uma delas para alocar ali. A regra da p. 9 vale para o que você faz depois.
-
-> [!edicao] O nome da última fase aparece de dois jeitos: "Preparação da Próxima Rodada" na lista da p. 6 e "Preparação para Próxima Rodada" na p. 13 e no Tabuleiro de Rodada. É a mesma fase.
-
-**Modo solo.** O verso do Tabuleiro de Jogador e as 8 Cartas de Fazenda Rival servem para jogar sozinho contra uma Fazenda Rival, com regras próprias nas p. 14 a 19. Este guia cobre a partida de 2 a 4 jogadores.
+**Modo solo.** O verso do Tabuleiro de Jogador e as 8 Cartas de Fazenda Rival servem para jogar sozinho, com regras próprias nas p. 14 a 19. Este guia cobre a partida de 2 a 4 jogadores.
 
 ## 7. Avaliação final
 
 Responda sem consultar. Cada resposta diz o que reler.
 
-?? 1. Partida de 3. Quantas Cartas de Contrato Público ficam abertas, e quem ganha bônus inicial?
-- ( ) 3 cartas; o segundo e o terceiro ganham 1 planta cada
-- (x) 4 cartas; o segundo ganha 1 planta, e o terceiro, 1 carne
-- ( ) 4 cartas; todos ganham 1 suprimento
-= **4 cartas** (3 mais 1). Bônus: segundo jogador, planta no 1; terceiro, carne no 1 (p. 4 e 5). Releia a etapa 1.
+?? 1. Partida de 3. Quantos Contratos Públicos ficam abertos, e quem ganha bônus inicial?
+- ( ) 3; o segundo e o terceiro ganham 1 planta cada
+- (x) 4; o segundo ganha 1 planta, e o terceiro, 1 carne
+- ( ) 4; todos ganham 1 suprimento
+= **4** (3 mais 1). Segundo jogador, planta no 1; terceiro, carne no 1 (p. 4 e 5). Releia a etapa 1.
 
 ?? 2. Um adversário tem o Capataz e 1 Dinofazendeiro num espaço. De quantos você precisa para entrar?
 - ( ) 3
 - (x) 4
 - ( ) 2
-= O Capataz vale 2, mais 1: ele tem 3. Você precisa de **4**, por exemplo o seu Capataz e 2 Dinofazendeiros (p. 7). Releia a etapa 2.
+= O Capataz vale 2, mais 1: ele tem 3. Você precisa de **4** (p. 7). Releia a etapa 2.
 
 ?? 3. Você rolou Dano ao caçar um Velociraptor. Com o que fica?
-- ( ) Com nada: o Velociraptor volta ao estoque
-- (x) Com o Velociraptor, que volta do Afastamento Médico para a Zona de Contenção em Reaver Dinofazendeiros
-- ( ) Com o Velociraptor e mais um, como no Ovo
-= A caça sempre dá pelo menos 1 dinossauro. Ele espera no Afastamento Médico e vai para a Zona de Contenção na fase 3 (p. 8, 10 e 19). Releia a etapa 2.
+- ( ) Com nada
+- (x) Com o Velociraptor, que chega à Zona de Contenção em Reaver Dinofazendeiros
+- ( ) Com dois Velociraptores
+= A caça sempre dá pelo menos 1 dinossauro; ele espera no Afastamento Médico (p. 8, 10 e 19). Releia a etapa 2.
 
-?? 4. Você pode cumprir só o seu Contrato Privado, sem cumprir um Público?
+?? 4. Você pode cumprir só o seu Contrato Privado, sem um Público?
 - (x) Não
 - ( ) Sim, se tiver os dinossauros na Fazenda
 - ( ) Sim, mas só na última rodada
 = **Não.** O Privado só vem logo depois de um Público (p. 9 e 19). Releia a etapa 2.
 
-?? 5. Um Cercado de 2 espaços tem 1 Estegossauro. Um Velociraptor pode entrar no espaço livre?
+?? 5. Um Cercado de 2 espaços tem 1 Estegossauro. Um Velociraptor pode ocupar o espaço livre?
 - ( ) Sim: há lugar
-- (x) Não: cada Cercado guarda uma só espécie
-- ( ) Sim, se o Velociraptor for alimentado
-= **Não.** Um Cercado guarda dinossauros de uma única espécie (p. 10). Releia a etapa 3.
+- (x) Não
+- ( ) Sim, se for alimentado
+= **Não.** Cada Cercado guarda uma única espécie (p. 10). Releia a etapa 3.
 
 ?? 6. Na mesma rodada, fogem 2 Alossauros. Quantos outros dinossauros você descarta?
 - ( ) 2
@@ -553,33 +462,33 @@ Responda sem consultar. Cada resposta diz o que reler.
 ?? 7. Um Cercado fechado tem 3 Braquiossauros alimentados, e não há lugar em nenhum Cercado. O que acontece na Reprodução?
 - ( ) Nada nasce, porque não há lugar
 - ( ) Nasce 1 filhote, que fica na Zona de Contenção
-- (x) Nasce 1 filhote, que foge na hora e causa a Penalidade de Fuga dos Herbívoros
-= Cada 2 geram 1. Sem lugar, o recém-nascido foge na hora (p. 12), e fuga de herbívoro tira 1 Barreira, se ainda não tiver acontecido nesta rodada (p. 11). Releia a etapa 3.
+- (x) Nasce 1 filhote, que foge na hora
+= Cada 2 geram 1; sem lugar, o recém-nascido foge, e a fuga de herbívoro tira 1 Barreira se essa penalidade ainda não aconteceu na rodada (p. 11 e 12). Releia a etapa 3.
 
-?? 8. No fim, um jogador tem 2 Velociraptores e 1 Braquiossauro na Fazenda e um Dinossauro Único. Quanto valem esses dinossauros na contagem dos Dinossauros comuns?
+?? 8. No fim, um jogador tem na Fazenda 2 Velociraptores, 1 Braquiossauro e 1 Dinossauro Único. Quanto valem pela contagem dos Dinossauros comuns?
 - ( ) 11
 - ( ) 6
 - (x) 9
-= 2 x 3 + 3 = **9**. O Dinossauro Único conta pela Carta de Pesquisa, não nessa conta (p. 13). Releia a etapa 4.
+= 2 x 3 + 3 = **9**. O Único conta pela Carta de Pesquisa (p. 13). Releia a etapa 4.
 
-> [!atencao] **Critério para começar a jogar.** Acertou 7 ou 8? Monte a mesa e jogue, com a folha de consulta ao lado. Errou a 1, releia a etapa 1. Errou a 2, a 3 ou a 4, a etapa 2. Errou a 5, a 6 ou a 7, a etapa 3. Errou a 8, a etapa 4. Depois refaça só as perguntas que errou.
+> [!atencao] **Critério para começar a jogar.** Acertou 7 ou 8? Monte a mesa e jogue, com a folha de consulta ao lado. Errou a 1, releia a etapa 1. Errou a 2, a 3 ou a 4, a etapa 2. Errou a 5, a 6 ou a 7, a etapa 3. Errou a 8, a etapa 4. Depois refaça só as que errou.
 
 ## 8. Para consultar durante a partida
 
-**Preparação:** Tabuleiros de Ação de A a D, lado do número de jogadores. Contratos Públicos abertos: jogadores mais 1. Cada um: 1 Contrato Privado secreto, Capataz e 3 Dinofazendeiros no tabuleiro, o quarto no espaço 4 do Tabuleiro de Rodada. Bônus: 2º jogador planta no 1, 3º carne no 1, 4º suprimento no 1.
+**Preparação:** Tabuleiros de Ação de A a D, no lado do número de jogadores. Contratos Públicos abertos: jogadores mais 1. Cada um: 1 Contrato Privado secreto; Capataz e 3 Dinofazendeiros no tabuleiro; o quarto no espaço 4 do Tabuleiro de Rodada. Bônus: 2º jogador planta no 1, 3º carne no 1, 4º suprimento no 1.
 
 **A rodada (6 rodadas)**
-1. Coletar Recursos: 1 por símbolo descoberto. Máximo 13 de cada. Rodada 1: 5 plantas, 3 carnes, 1 suprimento.
-2. Alocar Dinofazendeiros: 1 por vez, a partir do primeiro jogador. Espaço ocupado: 1 a mais que quem tem mais. Capataz = 2. Nunca onde já tem peça sua. Custo pago na hora. Só onde consegue fazer a ação.
-3. Reaver Dinofazendeiros: tudo volta; Afastamento Médico vai para a Zona de Contenção.
-4. Adaptar a Fazenda: tudo da Zona de Contenção para a Fazenda. Barreiras nas linhas pontilhadas, as antigas não se movem. Uma espécie por Cercado, 1 por espaço. Comum fora de Cercado foge.
-5. Alimentar os Dinossauros: Estegossauro 1 planta, Braquiossauro 2 plantas, Velociraptor 1 carne, Alossauro 2 carnes, Únicos conforme a carta. Sem comida, foge.
-6. Reprodução: cada 2 iguais alimentados no mesmo Cercado fechado = 1 filhote, posto num Cercado. Sem lugar, foge.
+1. Coletar Recursos: 1 por símbolo descoberto, até 13 de cada. Rodada 1: 5 plantas, 3 carnes, 1 suprimento.
+2. Alocar Dinofazendeiros: 1 por vez, do primeiro jogador em sentido horário. Ocupado: 1 a mais que quem tem mais; Capataz = 2. Nunca onde já tem peça sua. Custo na hora. Só onde consegue fazer a ação.
+3. Reaver Dinofazendeiros: tudo volta; dinossauro do Afastamento Médico vai para a Zona de Contenção.
+4. Adaptar a Fazenda: tudo da Zona de Contenção para a Fazenda. Barreiras nas linhas pontilhadas; as antigas não se movem. Uma espécie por Cercado, 1 por espaço. Comum fora de Cercado foge.
+5. Alimentar os Dinossauros: Estegossauro 1 planta, Braquiossauro 2 plantas, Velociraptor 1 carne, Alossauro 2 carnes, Únicos pela carta. Sem comida, foge.
+6. Reprodução: cada 2 iguais alimentados no mesmo Cercado fechado = 1 filhote, posto num Cercado; sem lugar, foge.
 7. Preparação para Próxima Rodada: completar Contratos Públicos, trocar as 3 Cartas de Pesquisa, avançar a rodada. Rodada 4: quarto Dinofazendeiro e 1 Contrato Privado.
 
 **Ações:** Caçar (dinossauro e dado: Rede nada, Ovo mais um, Dano Afastamento Médico). Mercado (paga, escolhe, sem dado). Recursos. Barreiras e Marcador de Primeiro Jogador. Mova um Dinossauro de sua Zona de Contenção. Redistribuir Barreiras. Contratos (só da Fazenda; Privado logo depois de um Público). Pesquisa (da linha, ou 3 do baralho e fica com 1).
 
-**Fuga (uma vez por rodada cada):** herbívoro, tira 1 Barreira (Cercado aberto não reproduz); carnívoro, descarta outro dinossauro.
+**Fuga (cada penalidade uma vez por rodada):** herbívoro, tira 1 Barreira (Cercado aberto não reproduz); carnívoro, descarta outro dinossauro.
 
 **Fim:** depois da 6ª rodada. Pontos: contratos, Cartas de Pesquisa, Dinossauros comuns na Fazenda (Estegossauro 2, Velociraptor 3, Braquiossauro 3, Alossauro 4). Empate: quem joga primeiro a partir do Marcador de Primeiro Jogador.
 
