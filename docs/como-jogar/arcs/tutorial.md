@@ -134,7 +134,7 @@ O guia tem cinco etapas: montar a mesa e ler o mapa; jogar uma rodada; fazer as 
 > [!passos] **Passo 1: o jogador com a iniciativa** (p. 8 e 9)
 >
 > 1. Jogue 1 carta de ação virada para cima: é a carta líder. Ponha-a no espaço "Líder" do mapa.
-> 2. Se quiser, antes de qualquer ação, declare a ambição mostrada na carta líder: cartas "2" a "6" mostram uma ambição cada; "7" deixa declarar qualquer uma; "1" não tem ambição. Pegue o marcador de ambição de maior valor entre os disponíveis e ponha na seção da ambição. Cubra o número da carta com o marcador zero: ela passa a valer 0.
+> 2. Se quiser, antes de qualquer ação, declare a ambição mostrada na carta líder (o número da carta fica no canto superior esquerdo): cartas "2" a "6" mostram uma ambição cada; "7" deixa declarar qualquer uma; "1" não tem ambição. Pegue o marcador de ambição de maior valor entre os disponíveis e ponha na seção da ambição. Cubra o número da carta com o marcador zero: ela passa a valer 0.
 > 3. Faça 1 ação para cada ponto de ação da carta, entre as ações do naipe dela.
 
 | Número da carta | Ambição |
@@ -305,7 +305,7 @@ O guia tem cinco etapas: montar a mesa e ler o mapa; jogar uma rodada; fazer as 
 > - ( ) Psiônico, sempre.
 > - (x) Relíquia, que dá uma ação Assegurar.
 > - ( ) Arma.
-> = Relíquia dá uma ação Assegurar (p. 17). Psiônico dá uma ação da carta líder, que só serve se a líder for de Agressão.
+> = Relíquia dá uma ação Assegurar (p. 17). Psiônico dá uma ação da carta líder; nesse caso, só daria Assegurar se a líder fosse de Agressão.
 >
 > ?? Você gasta 1 Arma no Prelúdio. O que ganha?
 > - ( ) 1 ação Batalhar extra.
@@ -388,7 +388,7 @@ O guia tem cinco etapas: montar a mesa e ler o mapa; jogar uma rodada; fazer as 
 > - ( ) Você ganha 1 Combustível.
 > - (x) Descarta seus Combustíveis e cartas de Guilda de Combustível e fica em Ultraje de Combustível.
 > - ( ) Nada: o Ultraje é do dono da cidade.
-> = Quem destrói a cidade provoca Ultraje em si mesmo (p. 16).
+> = Quem destrói a cidade provoca Ultraje em si mesmo e, além disso, despoja a Corte (p. 16).
 
 > [!treino] **Treino rápido: ordem dos dados.**
 >
@@ -472,7 +472,7 @@ O guia tem cinco etapas: montar a mesa e ler o mapa; jogar uma rodada; fazer as 
 > - ( ) Senhor da Guerra.
 > - ( ) Magnata.
 > - (x) Nenhuma.
-> = Cartas de Armas não contam para nenhuma ambição (p. 17).
+> = Cartas de Armas não contam para nenhuma ambição (p. 17). A única Arma que conta é a ficha posta em Senhor da Guerra na preparação de 2 jogadores, como Troféu de um terceiro jogador (p. 19).
 >
 > ?? O que conta para Tirano?
 > - (x) Prisioneiros, ganhos ao Taxar cidades Oponentes e ao Assegurar.
@@ -525,7 +525,7 @@ Responda sem consultar. Cada resposta diz o que reler se errar.
 
 = Taxar dá 1 recurso; cidade Oponente também dá um Prisioneiro (p. 12). Se errou, releia a etapa 3.
 
-?? Sua nave entra num sistema controlado por outro jogador e você constrói um espaçoporto lá. Como ele entra?
+?? Você tem uma nave num sistema que outro jogador continua controlando e constrói um espaçoporto lá. Como ele entra?
 - ( ) Inteiro.
 - (x) Danificado.
 - ( ) Não pode construir lá.
@@ -558,6 +558,8 @@ Responda sem consultar. Cada resposta diz o que reler se errar.
 > [!atencao] **Para começar a jogar.** Acertou 7 ou 8? Monte a mesa e jogue com a folha de consulta ao lado. Se errou mais, releia as etapas indicadas e refaça só essas perguntas.
 
 ## 9. Para consultar durante a partida
+
+**Seu turno, nesta ordem** (p. 9, 10 e 20): declarar ambição (só com a iniciativa) e tomar a iniciativa; Prelúdio (gastar recursos); ações da carta.
 
 **A rodada** (p. 8 a 11):
 
