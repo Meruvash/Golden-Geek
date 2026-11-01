@@ -19,7 +19,7 @@ O marcado *(depois)* se monta já e se usa mais tarde (p. 4 e 5).
 3. Cada jogador: Tabuleiro de Jogador, meeple e Ficha de Cérebro embaixo na Trilha de Delírio.
 4. Necronomicon com as Fichas de Página. Uma Carta de Página virada para baixo ao lado de cada Carta de Cidade.
 5. Tabuleiro de Rastejadores com os 15 Rastejadores; Tabuleiro de Descarte; dados.
-6. Bolsa de Compra de Tentáculos: 3 Tentáculos Ancestrais (pretos) e 9 de cada Tentáculo da Loucura: Medo (azul), Fúria (vermelho), Ganância (verde). Mais 3 de cada cor no Tabuleiro de Rastejadores e 3 no Tabuleiro de Descarte.
+6. Bolsa de Compra de Tentáculos: 3 Tentáculos Ancestrais (pretos) e 9 de cada Tentáculo da Loucura: Medo (azul), Fúria (vermelho), Ganância (verde). Mais 3 de cada cor no Tabuleiro de Rastejadores e 3 de cada cor no Tabuleiro de Descarte.
 7. 3 Ancestrais em cada Carta de Cidade; o resto no estoque geral *(depois)*.
 8. Tentáculos do Caos (roxos): 2 jogadores, 2 na Trilha de Caos de cada um; 3 jogadores, 1 em cada e 1 no Tabuleiro de Descarte; 4 jogadores, 4 no Tabuleiro de Descarte. Mais 10 no Necronomicon *(depois)* e 3 no estoque geral.
 9. Gire a Roleta: o Grande Antigo vai para a carta do Ponteiro Frontal (a ponta da frente), e a Carta de Página dali é virada para cima.
@@ -35,11 +35,11 @@ Começa o mais jovem; depois, sentido horário (p. 6).
 2. **Tire tentáculos da bolsa**, um por vez, tantos quanto o número à direita do Meeple de Força: no começo, 3. Tentáculo da Loucura vai para a trilha da sua cor na carta do Ponteiro Frontal; Ancestral, para a Trilha de Energia do Grande Antigo; do Caos, para a sua Trilha de Caos (p. 11).
 3. **Faça surgir um Rastejador** na carta do Ponteiro de Tentáculo, na cor indicada. O Grande Antigo vai para essa carta (p. 12).
 4. **Faça até 3 ações**: Mover-se, Coletar Tentáculos da Loucura da sua carta, Banir um Rastejador, Ação da Cidade, Traduzir uma Carta de Página. Cada Tentáculo do Caos gasto dá uma ação a mais (p. 12).
-5. Passe a bolsa para a esquerda.
+5. Passe a bolsa ao próximo jogador, em sentido horário (p. 17).
 
 Sem tentáculos nas suas trilhas, mover anda 1 carta, e coletar pega 1 tentáculo. Na Primeira Fase, ninguém passa nem para na carta do Grande Antigo (p. 13).
 
-> [!resolvido] **Exemplo resolvido.** O Ponteiro Frontal aponta a carta A e o ícone do Tentáculo do Caos: um sai do estoque geral para o Tabuleiro de Descarte. Saem 2 de Medo, que enchem a trilha azul de A, e 1 Ancestral, que vai para a Trilha de Energia. O Ponteiro de Tentáculo aponta C, em vermelho: surge ali um Rastejador vermelho, e o Grande Antigo vai para C. Você anda 1 carta, até uma sem Rastejadores, e coleta 1 Tentáculo da Fúria.
+> [!resolvido] **Exemplo resolvido.** O Ponteiro Frontal aponta a carta A e o ícone do Tentáculo do Caos: um sai do estoque geral para o Tabuleiro de Descarte. Saem 2 de Medo, que enchem a trilha azul de A (ela já tinha 1 da preparação), e 1 Ancestral, que vai para a Trilha de Energia. O Ponteiro de Tentáculo aponta C, em vermelho: surge ali um Rastejador vermelho, e o Grande Antigo vai para C. Você anda 1 carta, até uma sem Rastejadores, e coleta 1 Tentáculo da Fúria.
 
 > [!complete] **Complete.** No turno seguinte, a Roleta aponta de novo a carta A, com a trilha azul cheia, e sai 1 Tentáculo do Medo.
 >
@@ -89,7 +89,7 @@ O guia tem quatro etapas, na ordem em que a partida acontece: montar a mesa; gir
 
 > [!entender] **Para entender.** O centro da mesa é a cidade: a Roleta da Loucura cercada pelas 5 Cartas de Cidade. Em volta ficam três reservas de peças: a Bolsa de Compra de Tentáculos (de onde sai o perigo), o Tabuleiro de Rastejadores (a reserva de Rastejadores e de tentáculos) e o Tabuleiro de Descarte (o que já foi usado) (p. 4, 9 e 22).
 >
-> **A Carta de Cidade** tem três Trilhas de Loucura, uma por cor, preenchidas da esquerda para a direita; a Trilha de Rastejadores, de baixo para cima, com 3 espaços de Tentáculos Ancestrais ao lado; a Habilidade do Local da Cidade, no alto; e, na borda de dentro, o Indicador de Surgimento de Rastejador, com cores (p. 7).
+> **A Carta de Cidade** tem três Trilhas de Loucura, uma por cor, preenchidas da esquerda para a direita; a Trilha de Rastejadores, de baixo para cima, com 3 espaços de Tentáculos Ancestrais ao lado; a Habilidade do Local da Cidade, no alto; e, na borda de dentro, o Indicador de Surgimento de Rastejador, com cores (p. 7). Pela figura da p. 7, cada Trilha de Loucura e a Trilha de Rastejadores têm 3 espaços.
 >
 > **O Tabuleiro de Jogador** tem a Trilha de Delírio, com a Ficha de Cérebro, e quatro Trilhas de Temperamento de 2 espaços: Medo, Fúria, Ganância e Caos. Embaixo, a habilidade do personagem (p. 6).
 >
@@ -103,7 +103,7 @@ O guia tem quatro etapas, na ordem em que a partida acontece: montar a mesa; gir
 > 4. Tabuleiro do Necronomicon abaixo do Tabuleiro do Grande Antigo, com as Fichas de Página ao lado.
 > 5. Embaralhe as Cartas de Página e ponha uma, virada para baixo, ao lado de cada Carta de Cidade.
 > 6. Tabuleiro de Rastejadores com os 15 Rastejadores nas suas cores; Tabuleiro de Descarte abaixo dele; Dados de Cthulhu à mão.
-> 7. Gire a Roleta uma vez para cada meeple, nesta ordem: **Grande Antigo** na carta do Ponteiro Frontal, com a Carta de Página dali virada para cima; **Rastejadores**, 1 por jogador, na carta do Ponteiro de Tentáculo, na cor que ele aponta na borda de dentro, no espaço mais baixo livre; **jogadores**, cada meeple na carta do Ponteiro Frontal.
+> 7. Gire a Roleta uma vez para cada meeple, nesta ordem: **Grande Antigo** na carta do Ponteiro Frontal, com a Carta de Página dali virada para cima; **Rastejadores**, 1 por jogador, na carta do Ponteiro de Tentáculo, na cor que ele aponta na borda de dentro, no espaço mais baixo livre; **jogadores**, cada meeple na carta do Ponteiro Frontal. A proibição de parar na carta do Grande Antigo vale para a ação Mover-se (p. 13); a preparação não impede que um meeple comece ali (p. 4), e, se ele ainda estiver lá no início do turno, a primeira ação é sair.
 > 8. Tentáculos: na bolsa, 3 Ancestrais e 9 de cada cor de Tentáculo da Loucura; 3 de cada cor no Tabuleiro de Rastejadores e 3 de cada no Tabuleiro de Descarte; 3 Ancestrais em cada Carta de Cidade e o resto deles no estoque geral.
 > 9. Tentáculos do Caos: 2 jogadores, 2 na Trilha de Caos de cada um; 3 jogadores, 1 em cada Trilha de Caos e 1 no Tabuleiro de Descarte; 4 jogadores, 4 no Tabuleiro de Descarte. Mais 10 nos espaços do Necronomicon e 3 no estoque geral.
 > 10. Tire da bolsa, um por vez, 2 Tentáculos da Loucura para cada Carta de Cidade, no espaço vazio mais à esquerda da trilha da cor. Se sair um Ancestral, ele volta para a bolsa, e você tira outro.
@@ -351,7 +351,11 @@ O guia tem quatro etapas, na ordem em que a partida acontece: montar a mesa; gir
 
 ## 6. Situações especiais
 
-> [!mais] **Modo de Partida Solo.** Prepare como para 2 jogadores, com o segundo Tabuleiro de Jogador no lado de Assistente e a Carta de Referência para Partida Solo. Você alterna: gira a Roleta e resolve o Assistente; gira de novo e joga você. O Assistente segue uma ordem fixa de ações; você pode gastar os tentáculos dele quando estiverem no mesmo local e gastar Tentáculos do Caos para dar ações a ele. Se ele enlouquecer, você perde (p. 18 a 20).
+> [!mais] **Modo de Partida Solo.** Prepare como para 2 jogadores, com o segundo Tabuleiro de Jogador no lado de Assistente, o meeple e a Ficha de Cérebro dele, e a Carta de Referência do Assistente no lado da Primeira Fase. A ordem é: gire a Roleta e resolva o Assistente; gire de novo e jogue você; repita. Na Roleta, o Assistente conta como outro jogador (p. 18 e 19).
+>
+> **O turno do Assistente, nesta ordem** (p. 19 e 20): (1) **Mover-se:** pelo caminho mais curto até a carta do Ponteiro Frontal, tantas cartas quanto o Medo dele permite (como um jogador), parando ao chegar; ele pode atravessar e ocupar a carta do Grande Antigo. Na Segunda Fase, vai até a carta do Ponteiro de Tentáculo e para no Grande Antigo. (2) **Comprar tentáculos:** 1 da bolsa por Rastejador na carta onde parou, como um jogador. (3) **Revelar** a Carta de Página dali, se virada para baixo. (4) **Selar um Portal** (só na Segunda Fase): o Portal aberto da cor de runa que ele mais tem; empate, o mais à esquerda no Tabuleiro do Grande Antigo. (5) **Traduzir** a página virada para cima do local, se tiver os tentáculos. (6) **Banir:** tenta sempre, mesmo sem tentáculos (pode rolar zero), o Rastejador para o qual tem mais tentáculos da cor; empate, o de cima na carta. Se falhar ao Banir ou Selar, rerrola todos os dados rolados quantas vezes indicar o espaço da Ficha de Cérebro dele na Trilha de Delírio.
+>
+> **Os tentáculos do Assistente** entram da esquerda para a direita e de baixo para cima nas trilhas dele, na ordem Ganância, Fúria, Medo; ao coletar, ele nunca se amaldiçoa (p. 19). **No seu turno**, no mesmo local que ele, você gasta os Tentáculos da Loucura dele como seus, sem gastar ação; e cada Tentáculo do Caos seu dá a ele uma ação extra (Mover-se 1 carta mais o Medo dele, na direção que você escolher; Traduzir; Banir; Selar), sem gastar ação sua. Se ele enlouquecer, você perde (p. 20).
 
 > [!mais] **Variantes com Assistentes.** Dois Assistentes no solo; um Assistente por jogador com 2 jogadores; um Assistente compartilhado com 3; ou só Assistentes, para ver o jogo andar sozinho (p. 21).
 
@@ -408,7 +412,7 @@ Responda sem consultar. Cada resposta diz o que reler se errar.
 3. Tire da bolsa o número à direita do Meeple de Força, um por vez. Loucura: carta do Ponteiro Frontal. Ancestral: Trilha de Energia. Caos: a sua Trilha de Caos.
 4. Rastejador na carta do Ponteiro de Tentáculo, na cor indicada; o Grande Antigo vai para lá.
 5. Até 3 ações (mais 1 por Tentáculo do Caos gasto). Habilidade do personagem: sem custo de ação.
-6. Passe a bolsa para a esquerda.
+6. Passe a bolsa ao próximo jogador, em sentido horário (p. 17).
 
 | Trilha de Temperamento | 0 tentáculos | 1 | 2 | Também serve para |
 |---|---|---|---|---|

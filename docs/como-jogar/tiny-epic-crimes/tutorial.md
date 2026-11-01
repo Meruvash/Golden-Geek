@@ -16,7 +16,7 @@ Na ordem. O marcado *(depois)* se monta já e se usa mais tarde (p. 5 e 6).
 
 1. A Carta de Delegacia no centro e as 24 Cartas de Quarteirão em volta, ao acaso, num quadrado de 5 por 5: a cidade.
 2. Fichas de Dado brancas no alto, uma por coluna, e pretas à esquerda, uma por linha, de 1 a 5. Uma Ficha de Testemunha ao lado de cada branca; uma de Informante ao lado de cada preta.
-3. Fichas de Investigação e de Tocaia viradas para baixo nos quarteirões com o marcador delas; as 3 Fichas de Custódia na Delegacia *(depois)*.
+3. Fichas de Investigação e de Tocaia viradas para baixo nos quarteirões marcados; as de Custódia na Delegacia *(depois)*.
 4. Os 2 Tabuleiros de Tempo lado a lado, lado Padrão para cima: a Trilha de Tempo.
 5. Mafiosos na Bolsa. Tire 3 e role os dados para cada um (veja a Rolagem de Mafioso, abaixo); um 6, um 3 e 3 ou um quarteirão ocupado pedem nova rolagem.
 6. Cada jogador: Tabuleiro de Agente (lado Padrão), Ajuda ao Jogador, Carro na Delegacia, Distintivo no desenho grande do tabuleiro, 1 Carta de Habilidade (de 2 recebidas) e 1 de Corporação *(depois)*.
@@ -29,7 +29,7 @@ Na ordem. O marcado *(depois)* se monta já e se usa mais tarde (p. 5 e 6).
 Joga o Indicador de Tempo mais atrás; empatados, o do topo. No começo, o do mais novo (p. 5 e 8). O turno (p. 8, 11, 15 e 16):
 
 1. **Dirigir** (opcional): mova o Carro quantos quarteirões quiser, sem diagonal; 1 hora cada.
-2. **Realizar 1 Ação** (obrigatória). Avance o seu indicador as horas da ação mais as da direção. Parou sobre outro indicador: o seu fica por cima.
+2. **Realizar 1 Ação** (obrigatória). Avance o indicador as horas da ação mais as da direção; sobre outro indicador, o seu fica por cima.
 3. **Comprar um Evento**: só se você for o primeiro a cruzar uma linha vermelha da trilha (etapa 4).
 4. **Rolagem de Mafioso**: role os dois dados; o branco dá a coluna, o preto a linha. Quarteirão vazio: ponha lá um mafioso da Bolsa. Ocupado: compre um Evento. Um 6, ou 3 e 3: nada. Dois números iguais (1, 2, 4 ou 5): ponha o mafioso e role de novo.
 
@@ -43,7 +43,7 @@ Ações do primeiro turno, que este guia trata como diurno (etapa 2) (p. 11 e 12
 | Chamar Reforços | Arrisque de 1 a 6 horas | Mafiosos no seu quarteirão ou nos vizinhos |
 | Pausa para o Café | 1 hora | Nenhum |
 
-> [!resolvido] **Exemplo resolvido.** Ana, a mais nova, começa na Delegacia (coluna 3, linha 3). Há um mafioso logo acima, na linha 2. Ela dirige 1 quarteirão (1 hora) e faz Pegar Informante (2 horas): o mafioso volta para a Bolsa, a Ficha de Informante da linha 2 vai para o tabuleiro dela e o Distintivo avança 1 espaço. O indicador anda 3 espaços. Na Rolagem de Mafioso, branco 5 e preto 1: a coluna 5, linha 1 está vazia e recebe um mafioso.
+> [!resolvido] **Exemplo resolvido.** Ana, a mais nova, começa na Delegacia (coluna 3, linha 3). Há um mafioso logo acima, na linha 2. Ela dirige 1 quarteirão (1 hora) e faz Pegar Informante (2 horas): o mafioso volta para a Bolsa, a Ficha de Informante da linha 2 vai para o tabuleiro dela e o Distintivo avança 1 espaço. O indicador anda 3 espaços. Na Rolagem de Mafioso, branco 5 e preto 1: a coluna 5, linha 1, vazia, recebe um mafioso.
 
 > [!complete] **Complete.** Bruno quer a Ficha de Investigação da coluna 4, linha 2, na diagonal da Delegacia.
 >
@@ -69,7 +69,7 @@ Ações do primeiro turno, que este guia trata como diurno (etapa 2) (p. 11 e 12
 
 ### Ainda não precisa saber
 
-Ações noturnas: etapa 2 e etapa 3. Como as fichas revelam o assassino: etapa 3. Eventos e Cartas de Corporação: etapa 4.
+Ações noturnas e evidências: etapa 3. Eventos e Cartas de Corporação: etapa 4.
 
 ### Como a partida acaba
 
@@ -98,9 +98,7 @@ São quatro etapas, cada uma uma parte real da partida: montar a cidade; o tempo
 
 ## 2. Etapa 1: montar a cidade
 
-> [!entender] **Para entender.** A mesa tem três partes. **A cidade**, uma grade de 5 por 5 quarteirões com a Delegacia no meio: as Fichas de Dado numeram colunas (brancas) e linhas (pretas), e é por elas que os dados dizem onde surge cada mafioso. **A Trilha de Tempo**, de 1 a 48 horas, em que cada espaço tem sol (dia) ou lua (noite) e linhas vermelhas marcam a chegada de Eventos; abaixo dela, 3 espaços para Eventos ativos (p. 8 e 15). **O seu Tabuleiro de Agente**, com as ações de qualquer hora, as de dia e as de noite, a trilha de Nível de Distintivo, três espaços para mafiosos presos, um por cor, e o Espaço de Custódia (p. 7, 11 e 13).
->
-> O mistério fica no Envelope de Assassino. Os 5 Envelopes de Evidência servem para espiar um traço do assassino sem mostrar a carta (p. 6 e 9).
+> [!entender] **Para entender.** A mesa tem três partes. **A cidade**, 5 por 5 quarteirões com a Delegacia no meio; as Fichas de Dado numeram colunas (brancas) e linhas (pretas), e é por elas que os dados dizem onde surge cada mafioso. **A Trilha de Tempo**, de 1 a 48 horas: cada espaço tem sol (dia) ou lua (noite), linhas vermelhas trazem Eventos, e abaixo dela cabem 3 Eventos ativos (p. 8 e 15). **O seu Tabuleiro de Agente**, com as ações, a trilha de Nível de Distintivo, três espaços para mafiosos presos e o Espaço de Custódia (p. 7, 11 e 13).
 
 > [!passos] **Passo a passo: Preparação Padrão da Partida** (p. 5 e 6). Com 2 jogadores, veja também as Situações especiais.
 >
@@ -109,7 +107,7 @@ São quatro etapas, cada uma uma parte real da partida: montar a cidade; o tempo
 > 3. As 5 Fichas de Informante, uma ao lado de cada Ficha de Dado preta; as 5 Fichas de Testemunha, uma ao lado de cada branca.
 > 4. As 7 Fichas de Investigação, embaralhadas e viradas para baixo, nos 7 quarteirões com o marcador de Investigação; as 5 Fichas de Tocaia, do mesmo jeito, nos 5 quarteirões com o marcador de Tocaia.
 > 5. As 3 Fichas de Custódia nos 3 marcadores da Delegacia.
-> 6. Os 2 Tabuleiros de Tempo lado a lado, lado Padrão para cima. Ao alcance de todos: 5 Fichas de Evidência, 2 Dados-Projéteis, 5 Envelopes de Evidência, a Lupa e as Fichas de Evento.
+> 6. Os 2 Tabuleiros de Tempo lado a lado, lado Padrão para cima. Ao alcance de todos: Fichas de Evidência, Dados-Projéteis, Envelopes de Evidência, Lupa e Fichas de Evento.
 > 7. Todos os mafiosos na Bolsa. Tire 3, um de cada vez, e role os dois dados para achar o quarteirão de cada um. Um 6, um 3 e 3 ou um quarteirão já ocupado: role de novo.
 > 8. Cada jogador recebe Tabuleiro de Agente (lado Padrão), Ajuda ao Jogador e o Indicador de Tempo, o Carro e o Distintivo da sua cor. O Carro vai para a Delegacia; o Distintivo, com o lado 10+ para baixo, para o desenho grande do distintivo no tabuleiro.
 > 9. Indicadores de Tempo empilhados ao lado da trilha por idade: o mais jovem no topo.
@@ -118,7 +116,7 @@ São quatro etapas, cada uma uma parte real da partida: montar a cidade; o tempo
 > 12. Cartas de Suspeito embaralhadas. Uma, sem ser revelada, entra no Envelope de Assassino com a seta do verso visível na fenda. O resto é o baralho de suspeitos.
 > 13. Cartas de Evento embaralhadas. Vire uma no espaço "1" abaixo da trilha, leia em voz alta a preparação dela e cumpra.
 
-!fig[A cidade montada: Trilha de Tempo e primeiro Evento no alto, Fichas de Dado brancas com as de Testemunha no topo, pretas com as de Informante à esquerda, Fichas de Investigação e de Tocaia nos quarteirões marcados, Custódia e carros na Delegacia e os 3 primeiros mafiosos. Ilustração: manual Asmodee (p. 7)](figuras/preparacao.webp)
+!fig[A cidade montada: Trilha de Tempo e primeiro Evento no alto, Fichas de Dado e de Testemunha no topo, de Dado e de Informante à esquerda, fichas nos quarteirões marcados, carros na Delegacia e os 3 primeiros mafiosos. Ilustração: manual Asmodee (p. 7)](figuras/preparacao.webp)
 
 > [!mais] **O assassino é intocável.** Ninguém tira a carta do Envelope de Assassino para olhá-la, salvo quando uma regra manda (p. 6).
 
@@ -138,11 +136,11 @@ São quatro etapas, cada uma uma parte real da partida: montar a cidade; o tempo
 
 > [!passos] **Passo a passo: o seu turno** (p. 8, 11 e 16)
 >
-> 1. **Quem joga:** o Indicador de Tempo mais atrás na trilha. Vários no mesmo espaço: o do topo.
-> 2. **Dirigir** (opcional): mova o Carro quantos quarteirões quiser, um vizinho por vez, sem diagonal. Cada quarteirão custa 1 hora; ficar parado custa 0.
-> 3. **Realizar 1 Ação** (obrigatória): uma ação que a hora do dia permita. Depois, avance o indicador as horas da ação mais as da direção. Se ele parar num espaço com outro indicador, ponha o seu no topo.
+> 1. **Quem joga:** o Indicador de Tempo mais atrás na trilha; vários no mesmo espaço, o do topo.
+> 2. **Dirigir** (opcional): quantos quarteirões quiser, sem diagonal, 1 hora cada; ficar parado custa 0.
+> 3. **Realizar 1 Ação** (obrigatória), que a hora do dia permita. Avance o indicador as horas da ação mais as da direção; num espaço ocupado, o seu vai para o topo.
 > 4. **Comprar um Evento** (condicional): só se o seu indicador for o primeiro a cruzar uma linha vermelha (etapa 4).
-> 5. **Rolagem de Mafioso** (obrigatória): role os dois dados. O branco dá a coluna, pelas fichas do topo; o preto dá a linha, pelas da esquerda. Quarteirão sem mafioso: ponha lá um da Bolsa. Com mafioso: não ponha; compre uma nova Carta de Evento.
+> 5. **Rolagem de Mafioso** (obrigatória): branco dá a coluna (fichas do topo), preto dá a linha (fichas da esquerda). Quarteirão vazio: ponha um mafioso da Bolsa. Ocupado: compre uma nova Carta de Evento.
 
 > [!passos] **Passo a passo: a hora do dia** (p. 15)
 >
@@ -152,7 +150,7 @@ São quatro etapas, cada uma uma parte real da partida: montar a cidade; o tempo
 
 > [!edicao] O manual não diz se a posição inicial, na pilha ao lado da trilha, é dia ou noite. Os primeiros espaços da trilha são diurnos, e este guia trata o primeiro turno de cada jogador como diurno. Combine com a mesa.
 
-!fig[Dirigir: o carro sobe dois quarteirões e vira à direita, 3 quarteirões sem diagonal, por 3 horas. Ilustração: manual Asmodee (p. 11)](figuras/dirigir.webp)
+!fig[Dirigir: 3 quarteirões sem diagonal, por 3 horas. Ilustração: manual Asmodee (p. 11)](figuras/dirigir.webp)
 
 > [!passos] **Passo a passo: Prender, Pausa para o Café e Chamar Reforços** (p. 11 e 12)
 >
@@ -160,11 +158,11 @@ São quatro etapas, cada uma uma parte real da partida: montar a cidade; o tempo
 > 2. **Pausa para o Café** (1 hora): você não faz nada.
 > 3. **Chamar Reforços** (diurna): com mafiosos no seu quarteirão e/ou nos vizinhos, anuncie quantas horas arrisca, de 1 a 6, e role um dado. Igual ou menor: sucesso; detenha todos os mafiosos do seu quarteirão e dos vizinhos, devolva-os para a Bolsa e ganhe uma Carta de Corporação. Maior: falha; detenha só o mafioso do seu quarteirão, se houver. Nos dois casos, gaste as horas arriscadas.
 
-!fig[Prender: por 1 hora, o mafioso azul vai para o espaço azul do tabuleiro (A); com as três cores, o jogador avança 1 Nível de Distintivo e os três voltam para a Bolsa (B). Ilustração: manual Asmodee (p. 11)](figuras/prender.webp)
+!fig[Prender: por 1 hora, o mafioso azul vai para o espaço azul do tabuleiro (A); com as três cores, +1 Nível de Distintivo e os três voltam para a Bolsa (B). Ilustração: manual Asmodee (p. 11)](figuras/prender.webp)
 
 > [!atencao] "Prender" é uma ação; "deter" é qualquer forma de tirar mafiosos da cidade. Mafioso detido volta para a Bolsa, a não ser que a ação diga outra coisa, como Prender (p. 11).
 
-!fig[Chamar Reforços: o jogador arrisca 4 horas e rola 3; sucesso, e os 4 mafiosos do quarteirão do carro e dos vizinhos voltam para a Bolsa. Ilustração: manual Asmodee (p. 12)](figuras/chamar-reforcos.webp)
+!fig[Chamar Reforços: arriscou 4 horas e rolou 3; os 4 mafiosos do quarteirão e dos vizinhos voltam para a Bolsa. Ilustração: manual Asmodee (p. 12)](figuras/chamar-reforcos.webp)
 
 !fig[Rolagem de Mafioso: preto 2 e branco 4 levam o mafioso para a linha 2, coluna 4. Ilustração: manual Asmodee (p. 16)](figuras/rolagem.webp)
 
@@ -172,11 +170,11 @@ São quatro etapas, cada uma uma parte real da partida: montar a cidade; o tempo
 
 > [!mais] **Onda de Crimes.** Dois 1, dois 2, dois 4 ou dois 5: aplique o resultado e faça outra Rolagem de Mafioso. Dois 3 e dois 6 não contam, e pode haver várias ondas seguidas (p. 16).
 
-> [!mais] **Um mafioso por quarteirão.** Só pode haver um mafioso não detido em cada quarteirão, e nenhuma carta muda isso. Se faltar mafioso na Bolsa, aplique a Penalidade por Excesso de Eventos, explicada na etapa 4 (p. 16).
+> [!mais] **Um mafioso por quarteirão.** Nunca há dois mafiosos não detidos num quarteirão, nem por efeito de carta. Bolsa vazia na hora de tirar mafioso: Penalidade por Excesso de Eventos (etapa 4) (p. 16).
 
 > [!mais] **O limite de 48 horas.** O indicador não passa do 48. Se a ação o levaria além, escolha outra (p. 14).
 
-> [!resolvido] **Exemplo resolvido.** Ana e Carla estão no espaço 3, de dia, com Carla por cima; Bruno está no 5. Joga Carla, que faz Prender sem dirigir e vai para o 4. Agora a mais atrás é Ana. A 2 quarteirões dela há um mafioso cinza com um mafioso vermelho no quarteirão vizinho. Ana dirige até o cinza (2 horas) e chama reforços arriscando 4. O dado mostra 3: sucesso; os dois mafiosos voltam para a Bolsa e ela ganha uma Carta de Corporação. Ela avança 2 + 4 = 6 espaços, até o 9. Com um 5 no dado, deteria só o cinza, sem carta, e iria para o 9 do mesmo jeito.
+> [!resolvido] **Exemplo resolvido.** Ana e Carla estão no espaço 3, de dia, com Carla por cima; Bruno está no 5. Joga Carla, que faz Prender sem dirigir e vai para o 4. Agora a mais atrás é Ana. Ela dirige 2 quarteirões até um mafioso cinza, que tem um vermelho no quarteirão vizinho, e chama reforços arriscando 4. O dado mostra 3: os dois mafiosos voltam para a Bolsa e ela ganha uma Carta de Corporação. Avança 2 + 4 = 6, até o 9. Com um 5, deteria só o cinza, sem carta, e iria igualmente para o 9.
 
 > [!complete] **Complete.** Bruno, no 5, está no quarteirão de um mafioso azul e já tem um azul e um vermelho no tabuleiro. Ele faz Prender, sem dirigir.
 >
@@ -234,13 +232,12 @@ São quatro etapas, cada uma uma parte real da partida: montar a cidade; o tempo
 >
 > A soma das fichas de todos decifra a evidência, mas só quem coleta a última a vê (p. 9 e 10). Com os traços, você restringe os suspeitos; com as Cartas de Suspeito, risca inocentes.
 
-> [!passos] **Passo a passo: as ações de pista** (p. 12 e 13). O Carro precisa estar no quarteirão indicado.
+> [!passos] **Passo a passo: as ações de pista** (p. 12 e 13)
 >
-> 1. **Pegar Informante** (diurna, 2 horas): quarteirão com mafioso e Ficha de Informante na sua linha. Mafioso para a Bolsa, ficha para o seu tabuleiro, +1 Nível de Distintivo.
-> 2. **Pegar Testemunha** (noturna, 2 horas): quarteirão com mafioso e Ficha de Testemunha na sua coluna. Mafioso para a Bolsa, ficha para o seu tabuleiro, +1 Nível de Distintivo.
-> 3. **Investigar Cena** (diurna, 2 horas): quarteirão com Ficha de Investigação. Vire-a. Sucesso ou falha, ela vai para o seu tabuleiro com o resultado para cima, e você avança 1 Nível de Distintivo.
-> 4. **Ficar de Tocaia** (noturna, arrisque de 1 a 5 horas): quarteirão com Ficha de Tocaia. Anuncie as horas e olhe a ficha em segredo. Número igual ou menor: sucesso; mostre-a, ponha-a no tabuleiro, +1 Nível de Distintivo. Maior: falha; devolva-a virada para baixo, sem dizer o número.
-> 5. **Levar sob Custódia** (noturna, 2 + 2 horas): no quarteirão de um mafioso, gaste 2 horas e ponha-o no Espaço de Custódia do tabuleiro. Num turno noturno posterior, na Delegacia, gaste 2 horas: o mafioso volta para a Bolsa, você pega a Ficha de Custódia da cor dele e avança 1 Nível de Distintivo.
+> 1. **Pegar Informante** (diurna, 2 horas) e **Pegar Testemunha** (noturna, 2 horas): no quarteirão de um mafioso, com a Ficha de Informante na sua linha ou a de Testemunha na sua coluna. Mafioso para a Bolsa, ficha para o seu tabuleiro, +1 Nível de Distintivo.
+> 2. **Investigar Cena** (diurna, 2 horas): vire a Ficha de Investigação do seu quarteirão. Sucesso ou falha, ela vai para o seu tabuleiro com o resultado para cima, e você avança 1 Nível de Distintivo.
+> 3. **Ficar de Tocaia** (noturna, arrisque de 1 a 5 horas): anuncie as horas e olhe em segredo a Ficha de Tocaia do seu quarteirão. Número igual ou menor: sucesso; mostre-a, ponha-a no tabuleiro, +1 Nível de Distintivo. Maior: falha; devolva-a virada para baixo, sem dizer o número.
+> 4. **Levar sob Custódia** (noturna, 2 + 2 horas): no quarteirão de um mafioso, gaste 2 horas e ponha-o no Espaço de Custódia. Num turno noturno posterior, na Delegacia, gaste 2 horas: o mafioso volta para a Bolsa, e você pega a Ficha de Custódia da cor dele e avança 1 Nível de Distintivo.
 
 > [!passos] **Passo a passo: Decifre Evidências** (p. 9 e 10). Quando a soma de fichas de um tipo se completa:
 >
@@ -248,7 +245,7 @@ São quatro etapas, cada uma uma parte real da partida: montar a cidade; o tempo
 > 2. Essa pessoa tira a carta do Envelope de Assassino sem revelá-la, desliza-a no Envelope de Evidência do mesmo tipo com a seta branca visível, vira o envelope e vê o símbolo pelo orifício, em segredo. Depois, devolve a carta ao Envelope de Assassino.
 > 3. Cada jogador com pelo menos uma ficha daquele tipo ganha 1 Carta de Suspeito, uma só, por mais fichas que tenha.
 
-!fig[Decifrar o Cargo: quem pegou a última Ficha de Informante pega a Ficha de Evidência (1), põe a carta do assassino no Envelope de Evidência e o vira para ver o símbolo, aqui o de Chefe (2A e 2B). Ilustração: manual Asmodee (p. 9)](figuras/evidencia.webp)
+!fig[Decifrar o Cargo: a Ficha de Evidência vai para o tabuleiro (1), e o Envelope de Evidência, virado, mostra o símbolo, aqui o de Chefe (2A e 2B). Ilustração: manual Asmodee (p. 9)](figuras/evidencia.webp)
 
 > [!passos] **Passo a passo: Cartas de Suspeito e Nível de Distintivo** (p. 8 e 10)
 >
@@ -260,13 +257,13 @@ São quatro etapas, cada uma uma parte real da partida: montar a cidade; o tempo
 
 > [!mais] **Levar sob Custódia, regras finas.** Só cabe 1 mafioso no Espaço de Custódia por vez. Se amanhecer antes da segunda parte, espere a próxima noite. Se a Ficha de Custódia daquela cor já foi pega, você ganha 1 Carta de Corporação em vez dela, sem avançar o Distintivo; com a Arma decifrada, a ação continua custando 4 horas e dá uma Carta de Corporação (p. 13).
 
-!fig[Levar sob Custódia: por 2 horas, o mafioso azul vai para o Espaço de Custódia; num turno noturno posterior, na Delegacia, mais 2 horas o devolvem à Bolsa e dão a Ficha de Custódia azul. Ilustração: manual Asmodee (p. 13)](figuras/custodia.webp)
+!fig[Levar sob Custódia: 2 horas para pôr o mafioso azul no Espaço de Custódia; depois, na Delegacia, mais 2 horas pela Ficha de Custódia azul. Ilustração: manual Asmodee (p. 13)](figuras/custodia.webp)
 
 > [!mais] **Interrogar.** Bônus da trilha de Nível de Distintivo. Outro jogador, à sua escolha, segura todas as Cartas de Suspeito com o verso para você; você pega uma ao acaso, olha com a Lupa e devolve. Se for uma que você já viu, não pode pegar outra (p. 14).
 
-> [!mais] **Consultar uma Evidência Decifrada.** Quem tem a Ficha de Evidência pode olhar aquela evidência a qualquer momento. Os outros, só como recompensa de Evento: você olha a carta do assassino no Envelope de Evidência do detentor, e ele, em troca, olha uma das suas Cartas de Suspeito, tirada ao acaso. Você precisa ter pelo menos uma; ele não pode recusar; se ele tiver várias Fichas de Evidência, você escolhe qual (p. 10).
+> [!mais] **Consultar uma Evidência Decifrada.** O detentor da Ficha de Evidência olha a sua quando quiser. Os outros, só por recompensa de Evento: você olha a evidência no envelope dele, e ele olha uma Carta de Suspeito sua, ao acaso. Você precisa ter uma; ele não pode recusar; se ele tiver várias, você escolhe qual (p. 10).
 
-> [!resolvido] **Exemplo resolvido.** Partida de 4. Restam Fichas de Informante nas linhas 1 e 4. Ana tem 2 no tabuleiro; Bruno, 1; Carla e Davi, nenhuma. De dia, Carla pega a da linha 4 e, num turno diurno seguinte, a da linha 1: são 5, e o Cargo está decifrado. Carla pega a Ficha de Evidência de Cargo e vê pelo envelope o símbolo de Subchefe. Ana, Bruno e Carla ganham 1 Carta de Suspeito cada; Davi, sem Ficha de Informante, não.
+> [!resolvido] **Exemplo resolvido.** Partida de 4. Ana tem 2 Fichas de Informante; Bruno, 1; Carla e Davi, nenhuma. Carla pega as duas que restam, em dois turnos diurnos: são 5, e o Cargo está decifrado. Carla pega a Ficha de Evidência de Cargo e vê pelo envelope o símbolo de Subchefe. Ana, Bruno e Carla ganham 1 Carta de Suspeito cada; Davi, sem Ficha de Informante, não.
 
 > [!complete] **Complete.** De noite, Bruno está no 20, a 3 quarteirões de um mafioso cuja coluna ainda tem Ficha de Testemunha. Ele dirige até lá e faz Pegar Testemunha.
 >
@@ -303,8 +300,8 @@ São quatro etapas, cada uma uma parte real da partida: montar a cidade; o tempo
 
 > [!passos] **Passo a passo: Resolver Evento** (p. 14)
 >
-> 1. Cumpra a exigência da carta, em geral uma ação ou ir a um quarteirão específico no seu turno.
-> 2. Ganhe a recompensa da parte de baixo. O ícone de uma pessoa é só de quem resolveu; o de duas pessoas vale também para cada outro jogador que contribuiu com uma ação ou está num quarteirão necessário. Seja honesto.
+> 1. Cumpra a exigência da carta, em geral uma ação ou ir a um quarteirão no seu turno.
+> 2. Ganhe a recompensa. Ícone de uma pessoa: só quem resolveu. Ícone de duas: também quem contribuiu com uma ação ou está num quarteirão necessário. Seja honesto.
 > 3. Descarte a carta e as fichas que ela pedia; mafiosos sobre a carta voltam para a Bolsa.
 >
 > Recompensas: Carta de Suspeito, Carta de Corporação, +1 Nível de Distintivo, consultar 1 Evidência Decifrada (p. 14 e 20).
@@ -327,7 +324,7 @@ São quatro etapas, cada uma uma parte real da partida: montar a cidade; o tempo
 > 4. Só um acertou: vence. Ninguém acertou: todos perdem.
 > 5. **Empate entre quem acertou:** Nível de Distintivo mais alto; depois, mais tempo restante (menos horas gastas); depois, mais Fichas de Evidência; persistindo, vitória dividida.
 
-> [!dica] Antes de acusar, cruze as duas listas: os traços eliminam pela aparência, as Cartas de Suspeito pelo álibi. Se faltar uma evidência, a recompensa que a deixa consultar pode valer mais que um ponto de Distintivo. É uma sugestão, não uma regra.
+> [!dica] Antes de acusar, cruze as duas listas: os traços eliminam pela aparência, as Cartas de Suspeito pelo álibi. É uma sugestão, não uma regra.
 
 > [!resolvido] **Exemplo resolvido.** Ana e Bruno acusam o suspeito certo; Carla erra, embora tenha o Distintivo mais alto, 9, e fica fora do desempate. Ana e Bruno têm Distintivo 7. Ana terminou no 46, Bruno no 45: Bruno gastou menos horas e vence.
 
@@ -364,12 +361,12 @@ São quatro etapas, cada uma uma parte real da partida: montar a cidade; o tempo
 
 > [!edicao] **Pontos em que o manual deixa dúvida.** O guia escolheu uma leitura em cada um; combine com a mesa.
 >
-> - **Vizinhos em Chamar Reforços:** o manual não diz se a diagonal conta. Em Dirigir, não conta, e o exemplo da p. 12 só tem vizinhos em linha reta; o guia segue isso (p. 11 e 12).
-> - **Coordenadas:** a p. 16 fala em "coluna-linha" e cita "preto-2 e branco-4", mas a preparação e a ilustração põem as brancas no topo (colunas) e as pretas à esquerda (linhas). O guia segue a ilustração (p. 5 e 16).
-> - **Investigação com falha:** a ficha fica no tabuleiro, e a recompensa vale para quem tem "pelo menos uma Ficha de Pista daquele tipo". Pela letra, quem só tem falha também ganha a Carta de Suspeito (p. 10 e 12).
-> - **Álibis:** a p. 8 dá duas maneiras, comprar do baralho e, se ele estiver vazio, olhar a carta de outro jogador. O guia lê a segunda só como alternativa ao baralho vazio.
+> - **Vizinhos em Chamar Reforços:** a diagonal conta? O guia diz que não, como em Dirigir e no exemplo da p. 12 (p. 11 e 12).
+> - **Coordenadas:** o texto da p. 16 cita "preto-2 e branco-4" como "coluna-linha", mas a preparação e a ilustração põem as brancas nas colunas e as pretas nas linhas; o guia segue a ilustração (p. 5 e 16).
+> - **Investigação com falha:** pela letra da p. 10 ("pelo menos uma Ficha de Pista daquele tipo"), quem só tem uma falha também ganha a Carta de Suspeito (p. 10 e 12).
+> - **Álibis:** das duas maneiras da p. 8, o guia usa olhar a carta de outro jogador só quando o baralho está vazio.
 > - **Encerrar Seu Caso:** listado entre as ações, mas descrito como escolha ao fim do turno; o guia segue a descrição (p. 14).
-> - **Patente:** o manual usa "patente" e "Nível de Distintivo" para a mesma trilha (p. 4 e 10).
+> - **Patente** e **Nível de Distintivo** são a mesma trilha (p. 4 e 10).
 
 ## 7. Avaliação final
 
