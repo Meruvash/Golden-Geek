@@ -49,15 +49,15 @@ Ações do primeiro turno, tratado aqui como diurno (etapa 2) (p. 11 e 12):
 >
 > ?? Quantas horas, no mínimo, ele gasta para chegar e Investigar Cena?
 > - ( ) 3
-> - (x) 4
 > - ( ) 2
+> - (x) 4
 > = Sem diagonal, são 2 quarteirões (2 horas), mais 2 de Investigar Cena (p. 11 e 12).
 
 > [!suavez] **Sua vez.**
 >
 > ?? Ana está no 3 e Bruno no 4. Carla, mais nova que Davi, ainda está na pilha. Quem joga?
-> - ( ) Ana
 > - (x) Carla
+> - ( ) Ana
 > - ( ) Davi
 > = Quem está na pilha está mais atrás que todos; entre eles, joga o do topo, o do mais novo (p. 5 e 8).
 >
@@ -160,7 +160,7 @@ São quatro etapas, cada uma uma parte real da partida, com **Para entender** (c
 
 > [!atencao] "Deter" é tirar mafiosos da cidade por qualquer ação; o mafioso detido volta para a Bolsa, salvo quando a ação diz outra coisa, como Prender (p. 11).
 
-!fig[Chamar Reforços: arriscou 4 horas e rolou 3; os 4 mafiosos do quarteirão e dos vizinhos voltam para a Bolsa. Ilustração: manual Asmodee (p. 12)](figuras/chamar-reforcos.webp)
+!fig[Chamar Reforços: arriscou 4, rolou 3; os 4 mafiosos saem da cidade. Ilustração: manual Asmodee (p. 12)](figuras/chamar-reforcos.webp)
 
 !fig[Rolagem de Mafioso: preto 2 e branco 4 levam o mafioso para a linha 2, coluna 4. Ilustração: manual Asmodee (p. 16)](figuras/rolagem.webp)
 
@@ -178,17 +178,17 @@ São quatro etapas, cada uma uma parte real da partida, com **Para entender** (c
 >
 > ?? Para onde vai o mafioso azul?
 > - ( ) Para o espaço cinza, que está livre
-> - (x) Para a Bolsa
 > - ( ) Para o Espaço de Custódia
+> - (x) Para a Bolsa
 > = Bruno já tem um azul, então o novo volta para a Bolsa, e o Distintivo não avança (p. 11).
 
 > [!suavez] **Sua vez.**
 >
 > ?? O seu turno começa num espaço de lua. Você pode Investigar Cena?
-> - ( ) Sim, se dirigir antes
 > - (x) Não: é noite, e Investigar Cena é diurna
+> - ( ) Sim, se dirigir antes
 > - ( ) Sim, se arriscar horas
-> = Vale o espaço do começo do turno, e o indicador só avança depois da ação (p. 11 e 15).
+> = Vale o espaço do começo do turno (p. 15).
 >
 > ?? Seu quarteirão não tem mafioso; o vizinho tem. Você arrisca 2 em Chamar Reforços e rola 4. O que acontece?
 > - ( ) Você detém o vizinho mesmo assim
@@ -249,7 +249,7 @@ São quatro etapas, cada uma uma parte real da partida, com **Para entender** (c
 
 > [!mais] **Levar sob Custódia, regras finas.** Só cabe 1 mafioso no Espaço de Custódia. Se amanhecer antes da segunda parte, espere a próxima noite. Ficha daquela cor já pega, ou Arma já decifrada: você ganha 1 Carta de Corporação em vez da ficha, sem avançar o Distintivo, e a ação segue custando 4 horas (p. 13).
 
-!fig[Levar sob Custódia: 2 horas para pôr o mafioso azul no Espaço de Custódia; depois, na Delegacia, mais 2 horas pela Ficha de Custódia azul. Ilustração: manual Asmodee (p. 13)](figuras/custodia.webp)
+!fig[Levar sob Custódia: 2 horas para o Espaço de Custódia; depois, na Delegacia, mais 2 pela Ficha de Custódia azul. Ilustração: manual Asmodee (p. 13)](figuras/custodia.webp)
 
 > [!mais] **Interrogar.** Bônus da trilha de Nível de Distintivo. Outro jogador, à sua escolha, segura as Cartas de Suspeito dele com o verso para você; você pega uma ao acaso, olha e devolve. Se já a tinha visto, não pega outra (p. 14).
 
@@ -261,17 +261,17 @@ São quatro etapas, cada uma uma parte real da partida, com **Para entender** (c
 >
 > ?? Onde termina o indicador?
 > - ( ) 22
-> - (x) 25
 > - ( ) 23
+> - (x) 25
 > = 3 horas de direção e 2 da ação: 20 + 5 = 25 (p. 11 e 12).
 
 > [!suavez] **Sua vez.**
 >
 > ?? De noite, você arrisca 3 em Ficar de Tocaia e a ficha mostra 4. O que acontece?
+> - (x) Falha: a ficha volta virada para baixo, e você não diz o número
 > - ( ) Sucesso: mostre a ficha e avance o Distintivo
-> - (x) Falha: a ficha volta escondida e você gasta 3 horas
-> - ( ) Falha, sem gastar horas
-> = 4 é maior que 3: a ficha volta escondida, o Distintivo não anda e as horas arriscadas são gastas (p. 11 e 13).
+> - ( ) Falha: mostre a ficha a todos e devolva-a
+> = 4 é maior que 3: falha. A ficha volta escondida e o Distintivo não anda; as 3 horas arriscadas contam como o custo da ação (p. 11 e 13).
 >
 > ?? Você vira uma Ficha de Investigação com falha. Avança o Distintivo?
 > - (x) Sim
@@ -355,8 +355,8 @@ Responda sem consultar. Cada resposta diz o que reler.
 
 ?? 1. Três indicadores estão no espaço 12. Quem joga?
 - ( ) O que chegou primeiro
-- (x) O do topo, o último a chegar
 - ( ) O do jogador mais novo
+- (x) O do topo, o último a chegar
 = Quem chega a um espaço ocupado fica por cima, e joga o do topo (p. 11 e 16). Releia a etapa 2.
 
 ?? 2. É noite. Qual ação você pode fazer?
@@ -366,8 +366,8 @@ Responda sem consultar. Cada resposta diz o que reler.
 = Noturnas: Pegar Testemunha, Ficar de Tocaia e Levar sob Custódia (p. 15). Releia a etapa 2.
 
 ?? 3. Você pegou a quinta e última Ficha de Informante. O que só você faz?
-- ( ) Ganha 2 Cartas de Suspeito
 - (x) Pega a Ficha de Evidência e vê o Cargo pelo envelope
+- ( ) Ganha 2 Cartas de Suspeito
 - ( ) Lê o cargo do assassino em voz alta
 = Só quem coleta a última vê, em segredo; todos com Ficha de Informante ganham 1 Carta de Suspeito (p. 9 e 10). Releia a etapa 3.
 

@@ -111,3 +111,40 @@ Simulação feita só com o tutorial: preparação para 2 jogadores e primeira r
 Sem lacuna: preparação para 2 (3 Contratos Públicos, bônus só para o segundo), ordem das fases, espaço ocupado e Capataz, custo, Contratos só da Fazenda, Cercados, comida, fuga, reprodução, quarta rodada, pontuação e desempate.
 
 Veredito: dá para jogar a partida de 2 a 4 só com o tutorial, com as correções acima; o solo passou a ser jogável, com consulta à p. 17 para os dois ícones citados.
+
+## Auditoria independente: regras
+
+Conferência de cada regra, número, termo e citação contra o manual Meeple BR (pdftotext página a página; figuras das p. 2, 5, 7, 8, 10 a 13 e 17 renderizadas e ampliadas). Contas refeitas em script: todas batem (coleta 1+3=4 plantas, 0+3, 2+1; comida 3x1+2=5 plantas e 2x2+1=5 carnes; 2 Est + Braq = 4 plantas; 3x2+3=9; Ana 7+10+15=32, 1+2=3, 3x2+2x3+4=16, total 51; Bruno 3x3+2x4+2=19, 24+5+19=48; 3x2=6; 2x3+3=9; teto 11+5 limitado a 13; Capataz+1=3, precisa de 4).
+
+**Leituras pedidas pelo editor**
+
+| Ponto | Manual | Resultado |
+|---|---|---|
+| Vários Dinofazendeiros no mesmo turno (espaço ocupado) | p. 7: "deve posicionar um único Dinofazendeiro" num espaço vazio; em espaço ocupado, "posicionando 1 Dinofazendeiro a mais"; exemplo: "o azul deve alocar 3 Dinofazendeiros, e ele o faz usando um Capataz e um Dinofazendeiro normal"; figura mostra as peças entrando juntas; e "Você NÃO PODE alocar ... onde já possui". | Confirmado: só é possível entrar pondo todas de uma vez. Corrigido: "de uma vez" no 4min (passo 2) e no passo 3 do turno; [!edicao] (1) reforçado com a figura e a regra do espaço próprio. |
+| Espaço com duas ações (p. 9 x FAQ p. 19) | p. 9: "deve realizar pelo menos uma delas, mas você poderá realizar ambas, na ordem que quiser". FAQ p. 19, na pergunta "Posso alocar ... que eu não possa realizar?": "(Caso um espaço possua várias ações, então você pode realizar apenas uma delas.)". | Contradição literal real; a leitura "basta poder fazer uma para alocar" é a única que concilia com o contexto da pergunta. Mantido como [!edicao] (2); o [!mais] segue a p. 9. ok. |
+| Únicos x comuns no Cercado (p. 10 x p. 12) | p. 10: "Dinossauros Únicos não podem estar em Cercados com outros Dinossauros comuns"; p. 12: "normalmente não podem estar em um cercado com Dinossauros normais"; p. 12: "usualmente não se reproduzem". | Confirmado; mantido como [!edicao] (1) de "Pontos que o manual deixa abertos". ok. |
+| Caça: "o Dinossauro do espaço" | p. 8: "receba 1 dos Dinossauros comuns (veja lista)"; FAQ p. 19: "você ainda recebe o Dinossauro mostrado"; figura da p. 5: cada espaço de Caçar do Tabuleiro A mostra 1 espécie (Estegossauro, Braquiossauro, Velociraptor, Alossauro), e o Mercado mostra opções com "ou". | Confirmado. ok. |
+
+**Demais itens**
+
+- Preparação, 12 passos e bônus (p. 4 e 5): ok. Quarto Dinofazendeiro no espaço 4 (p. 4 e 13): ok. Contratos Públicos = jogadores + 1 (p. 4 e 13): ok.
+- Tabela dos Dinossauros comuns (figura do Tabuleiro de Jogador, p. 5): Estegossauro 1 planta/2, Velociraptor 1 carne/3, Braquiossauro 2 plantas/3, Alossauro 2 carnes/4: ok. Trilha de 1 a 13: ok.
+- Coletar Recursos, teto 13, mínimo 0, 5/3/1 na primeira rodada (p. 6): ok.
+- Alocar: ordem, espaço vazio, Capataz = 2 para entrar e bloquear, proibição de espaço próprio, círculo preto, pagar e fazer pelo menos parte, jogador sem peças pulado (p. 7 e 8); FAQ "deve ser capaz de realizar" (p. 19): ok.
+- Ações: Caçar e Dado (Rede, Ovo, Dano; "sempre lhe traz pelo menos 1"), Mercado ("comum (não único) QUALQUER ou um dos listados"; sem dado), Recursos, Barreiras e Marcador de Primeiro Jogador, Mova um Dinossauro, Redistribuir Barreiras, Contratos (Fazenda, não Zona; estoque comum; sem repor), Privado só após Público, "QUALQUER DINOSSAURO ÚNICO" e carta ao descarte, Pesquisa (p. 8, 9 e 19): ok.
+- Reaver, Adaptar, Cercados (p. 10): ok. Corrigido: "Montanhas e Água nas bordas" → "Montanhas, Água" (a figura da p. 10 mostra Montanha no meio da Fazenda, não só na borda).
+- Alimentar, Onívoros, deitar os alimentados (p. 11): ok. Fuga nas fases 4, 5 e 6 (ícones da p. 11): ok. Penalidades e "uma vez por rodada" (p. 11 e 19): ok. Carnívoro come quem ia fugir; Único que foge leva a carta ao descarte (p. 11): ok.
+- Reprodução, recém-nascido em qualquer Cercado, foge sem lugar, não se reproduz na rodada, Cercado aberto não reproduz (p. 12 e 19): ok. Limite do estoque (p. 12): ok.
+- Cartas de Pesquisa: Ciência/Genética, habilidade de Ciência na mesma rodada, Genética só com o Único na Fazenda (p. 12 e 19): ok. Incubadora de Ovos (ícone da fase 6, 2 suprimentos): ok. Anquilossauro: corrigido "pagar 2 carnes" → "pagar a você 2 carnes" (carta, p. 12).
+- Preparação para Próxima Rodada, 4ª rodada, pontuação, Onívoros na pontuação, desempate, trilha 1 a 10 / 10 a 100 / 100-200 (p. 13): ok.
+- Montanhas, Água e Cercados permanentes contam como Barreira (FAQ p. 19): ok; frase solta da seção 6 fundida no [!entender] da etapa 3 ("o Cercado permanente também conta como Barreira", p. 10 e 19).
+- Citações: seção 0, Zona de Contenção (p. 6 e 10) → (p. 6 e 8 a 10); Únicos só por Pesquisa (p. 3 e 12) → (p. 3, 10 e 12).
+- Modo solo (acrescentado pela outra auditoria), conferido nas p. 14 a 19: ok. Completados os dois itens remetidos à p. 17, lidos na figura ampliada: o Rival nunca pega cartas com a estrela de pontos com asterisco; Ações de Recurso Máximo na ordem planta, carne, suprimento.
+- Exercícios de múltipla escolha (4min, etapas 1 a 4, avaliação 1 a 8): em todos, a certa é certa e as erradas são erradas pelo manual. ok.
+- Termos conferidos com a grafia do manual: Dinofazendeiro, Capataz, Zona de Contenção, Afastamento Médico, Dado de Caça (Rede, Ovo, Dano), Mercado de Dinossauros, Mova um Dinossauro de sua Zona de Contenção, Redistribuir Barreiras, Cercado permanente, Dinossauros Únicos, Dinossauro recém-nascido, Penalidade de Fuga dos Herbívoros/Carnívoros, Preparação para Próxima Rodada (título da p. 13; a p. 6 diz "Preparação da Próxima Rodada"), Cartas de Fazendeiro Rival.
+
+**Redundâncias cortadas:** [!atencao] da etapa 2 sobre dinossauro caçado e contratos (já dito nos "três erros", no exercício do 4min e no exemplo resolvido logo abaixo); frase da quarta rodada no [!entender] da etapa 4 (repetida no passo a passo seguinte); linha solta "Montanhas, Água e o Cercado permanente" na seção 6. Folha de consulta: "1 por vez" → "um espaço por vez", para não contradizer a entrada com várias peças.
+
+**Extensão:** 7.367 palavras por `wc` depois das correções. O aumento sobre as 6.606 vem da seção de modo solo, acrescentada pela auditoria de partida; sem as 736 palavras dela, o texto fica em cerca de 6.630. Ficou acima do alvo de 6.000; cortar mais exigiria tirar conteúdo, decisão do editor (por exemplo, encurtar o solo).
+
+Veredito: APROVADO COM CORREÇÕES.

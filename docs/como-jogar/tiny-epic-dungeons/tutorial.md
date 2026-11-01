@@ -28,9 +28,9 @@ Em qualquer ordem, nada obrigatório: **Mover**, **1 Ação Heroica** (placa azu
 4. **Teste com sucesso:** cada raio nos dados não usados dá 1 Foco (p. 9).
 5. **Fim do turno:** a tocha desce 1 espaço. Ícone onde ela parar: resolva. Depois joga o próximo jogador, em sentido horário (p. 6 e 15).
 
-> [!resolvido] **Exemplo resolvido.** Thordin ataca com o Martelo (Força, 3 dados). Vira a carta ao lado da Entrada: Encontro com Goblin. Recebe 1 dano, para; o Goblin 1 entra na sala. Ataca: 5, +2 e 3, e 4 no Dado de Inimigo. 5 + 2 = 7 contra Defesa 4: 3 de dano. O Goblin tem 1 de Vida e morre sem contra-atacar. O 3 não usado dá 1 Foco. A tocha desce 1.
+> [!resolvido] **Exemplo resolvido.** Thordin ataca com o Martelo (Força, 3 dados). Vira a carta ao lado da Entrada: Encontro com Goblin. Recebe 1 dano, para; a carta comprada é o Goblin Esfaqueador (Defesa 4, como na carta da figura da p. 13), e o Marcador de Goblin 1 entra na sala. Ataca: 5, +2 e 3, e 4 no Dado de Inimigo. 5 + 2 = 7 contra Defesa 4: 3 de dano. O Goblin tem 1 de Vida e morre sem contra-atacar. O 3 não usado dá 1 Foco. A tocha desce 1.
 
-> [!complete] **Complete.** Mesma sala, mesmo Goblin de Defesa 4, 1 Goblin na masmorra, Thordin com Defesa 4.
+> [!complete] **Complete.** Mesma sala, mesmo Goblin Esfaqueador (Defesa 4), 1 Goblin na masmorra, Thordin com Defesa 4.
 >
 > ?? Você rola 4, 3 e +1. O Goblin morre?
 > - ( ) Não: 4 é igual à Defesa, e o +1 só vale para Foco.
@@ -74,7 +74,7 @@ Cada herói tem quatro atributos: **Vida** (o dano que aguenta), **Foco** (paga 
 
 O guia tem cinco etapas, na ordem em que a partida acontece: montar a mesa, mover e explorar, fazer testes e ações, lutar e sobreviver à tocha, e entrar no Covil para enfrentar o Chefe.
 
-Em cada etapa fica à vista o essencial: o passo a passo e o erro mais comum. O porquê, os exemplos resolvidos e as regras de casos que nem sempre aparecem abrem com um toque. As tarefas vêm com ajuda que diminui (exemplo resolvido, tarefa para completar, tarefa sem ajuda), e a resposta aparece quando você toca numa opção. No fim há uma avaliação curta e uma folha para consultar na mesa.
+Em cada etapa fica à vista o essencial: o passo a passo e o erro mais comum. O porquê, os exemplos resolvidos e as regras de casos que nem sempre aparecem abrem com um toque. Nas tarefas, a resposta aparece quando você toca numa opção. No fim há uma avaliação curta e uma folha para consultar na mesa.
 
 ## 2. Etapa 1: montar a mesa
 
@@ -192,7 +192,7 @@ Em cada etapa fica à vista o essencial: o passo a passo e o erro mais comum. O 
 > [!passos] **Passo a passo: Teste de Habilidade** (p. 9 e 14)
 >
 > 1. O ícone de Habilidade apontando para um número diz o teste e a meta. Role tantos Dados de Herói quantos cubos você tem nessa Habilidade: nunca mais de 3, nunca menos de 1.
-> 2. Escolha 1 dado como resultado. Os dados com "+" (as faces 1 e 2) podem ser somados a ele; um dado "+" também pode ser o resultado, valendo 1 ou 2. Some os modificadores (+1, -1) que você tiver.
+> 2. Escolha 1 dado como resultado. Os dados com "+" (as faces 1 e 2) podem ser somados a ele, os dois juntos se quiser (no exemplo da p. 11, 5 com +2 e +1 dá 8); um dado "+" também pode ser o resultado, valendo 1 ou 2. Some os modificadores (+1, -1) que você tiver.
 > 3. Resultado igual ou maior que o número: sucesso, e vale a caixa verde. Menor: fracasso, e vale a caixa vermelha, se houver.
 > 4. Caixa verde com custo (Foco, por exemplo): pague para ter o efeito. Sem pagar, sem efeito.
 > 5. Depois de um sucesso, cada raio nos dados não usados dá 1 Foco. Depois de qualquer teste, cada 6 não usado dá 1 Vida.
@@ -218,7 +218,7 @@ Em cada etapa fica à vista o essencial: o passo a passo e o erro mais comum. O 
 > - **Descobrir** (ícone colorido): compre a carta do topo do baralho ou pegue uma da linha de descarte. Fique com ela ou descarte.
 > - **Pegar** (ícone cinza com seta verde): só da linha de descarte.
 > - Equipar só acontece ao Descobrir ou Pegar. Não se passa carta a outro herói.
-> - Limites no Tabuleiro de Herói: 2 de Mão, 1 Vestimenta, 2 Joias, 2 Feitiços. Espólio de Mão cobre um equipamento ou habilidade da base do tabuleiro, que volta a valer quando ele sai.
+> - Limites no Tabuleiro de Herói: 2 de Mão, 1 Vestimenta, 2 Joias, 2 Feitiços. Espólio equipado cobre um equipamento ou habilidade da base do tabuleiro, que volta a valer quando ele sai.
 
 > [!mais] **Procurar e Desarmar com inimigo na sala.** Não pode, a não ser que haja outro herói consciente na sala (p. 10).
 
@@ -328,7 +328,7 @@ Em cada etapa fica à vista o essencial: o passo a passo e o erro mais comum. O 
 > - ( ) A tocha sobe 1.
 > = Tocha é erro do inimigo: nenhum dano, e a tocha desce 1 espaço (p. 12).
 
-> [!suavez] **Sua vez.** Há 3 Goblins na masmorra. Você faz um Ataque à Distância contra um deles, com Defesa 4, e tira resultado 6. O Dado de Inimigo mostra 4. Sua Defesa é 4.
+> [!suavez] **Sua vez.** Há 3 Goblins na masmorra. Você faz um Ataque à Distância contra um Goblin Esfaqueador (Defesa 4), em linha de visão, e tira resultado 6. O Dado de Inimigo mostra 4. Sua Defesa é 4.
 >
 > ?? O que acontece com o Goblin?
 > - ( ) Sobrevive com 1 de Vida e contra-ataca.
@@ -357,7 +357,7 @@ Em cada etapa fica à vista o essencial: o passo a passo e o erro mais comum. O 
 
 ## 6. Etapa 5: o Covil e a Batalha Final
 
-> [!entender] **Para entender.** O Chefe não morre só na pancada. A Trilha de Vida dele tem um marcador por Lacaio morto, e os espaços com o ícone de Altar seguram esses marcadores. Para liberar a trilha, os heróis precisam fazer o Chefe andar pela masmorra até as salas com Marcador de Altar. Enquanto ele está no Covil, só quem está no Tabuleiro do Chefe o enfrenta, e só esses heróis sofrem os ataques dele (p. 18 e 19).
+> [!entender] **Para entender.** O Chefe não morre só na pancada. A Trilha de Vida dele tem um marcador por Lacaio morto, e os espaços com o ícone de Altar seguram esses marcadores. Para liberar a trilha, os heróis precisam fazer o Chefe andar pela masmorra até as salas com Marcador de Altar. Enquanto ele está no Covil, só quem está no Tabuleiro do Chefe o enfrenta, e só esses heróis sofrem os ataques dele (p. 18 a 20).
 
 > [!passos] **Passo a passo: entrar no Covil** (p. 14 e 17)
 >
@@ -373,7 +373,7 @@ Em cada etapa fica à vista o essencial: o passo a passo e o erro mais comum. O 
 >
 > - O Tabuleiro do Chefe é uma sala grande: todos ali estão na mesma sala e em linha de visão, e todo ataque está no alcance.
 > - Entre pelo Espaço da Entrada (flechas pretas). Com Velocidade sobrando, passe aos Espaços de Herói vizinhos como se fossem salas ligadas. Pode atravessar outros heróis, mas não terminar no mesmo espaço.
-> - Para atacar o Chefe, esteja num Espaço de Herói. Os modificadores do espaço valem para as ações feitas dali; os efeitos adicionais (ganhar ou perder Vida, Foco, Velocidade, ou um Goblin) valem quando você **termina** o movimento nele, não quando começa.
+> - Para atacar o Chefe, esteja num Espaço de Herói. Os modificadores do espaço valem para as ações feitas dali; os efeitos adicionais (ganhar ou perder Vida ou Foco, ganhar Velocidade ou um Goblin) valem quando você **termina** o movimento nele, não quando começa.
 > - Ali você pode Atacar, Lançar Feitiço ou Descansar.
 > - Teste contra a Defesa do Chefe, no tabuleiro dele. O contra-ataque usa os modificadores do Chefe; perda de Foco ou de Vida indicada ali vem depois do seu ataque.
 > - Para sair, ande pelo Espaço da Entrada até a Carta da Porta do Covil.
@@ -398,13 +398,11 @@ Em cada etapa fica à vista o essencial: o passo a passo e o erro mais comum. O 
 
 > [!mais] **Goblins no Covil.** Goblins seguem aparecendo e agindo. Podem entrar no Tabuleiro do Chefe se o herói mais próximo estiver lá; com todos os heróis lá, os Goblins da masmorra andam na direção dele. Ficam no centro do tabuleiro, atacam todos os heróis no Covil e podem ser atacados por eles; você escolhe se ataca um Goblin ou o Chefe (p. 18 e 20).
 
-> [!mais] **Tocha do Chefe.** Quando o Chefe rola a Tocha no contra-ataque, além de a tocha descer 1, vale o efeito de Tocha do tabuleiro dele. Se essa descida também acionar Ação do Inimigo, resolva o efeito da Tocha primeiro (p. 19 e 20).
+> [!mais] **Tocha do Chefe.** Quando o Chefe rola a Tocha no contra-ataque, além de a tocha descer 1, vale o efeito de Tocha do tabuleiro dele. Se essa descida também acionar Ação do Inimigo, resolva o efeito da Tocha primeiro (p. 12 e 20).
 
 > [!mais] **Entrada ocupada.** Quem tem só 1 de Velocidade para entrar no Tabuleiro do Chefe não entra se outro herói ocupa o Espaço da Entrada (p. 18).
 
 > [!mais] **Inconsciente no Covil.** Quem começa o turno inconsciente no Tabuleiro do Chefe precisa Descansar (p. 20).
-
-> [!mais] **Portal e Covil.** O Portal leva à Carta da Porta do Covil, nunca ao Tabuleiro do Chefe (p. 7).
 
 > [!atencao] A tocha continua descendo no Ato 2, e a caveira ainda encerra a partida com a derrota (p. 20).
 
@@ -446,12 +444,9 @@ Em cada etapa fica à vista o essencial: o passo a passo e o erro mais comum. O 
 
 **Encontro já resolvido.** O manual manda resolver os ícones "imediatamente quando um herói entra neste local" (p. 8), mas o Encontro com Goblin e o com Lacaio falam da sala "que acaba de ser revelada", e só a Armadilha diz "cada vez que um herói entra" (p. 8). Este guia trata os Encontros como efeito da revelação, não de cada entrada.
 
-**Desarmar mais tarde.** O manual descreve Desarmar logo depois do teste de escapar. Não diz se dá para tentar num turno seguinte, já na sala; este guia trata como tentativa daquele momento.
+**Desarmar mais tarde.** O manual só descreve Desarmar depois do teste de escapar (p. 8 e 10) e não diz se dá para tentar num turno seguinte, já na sala. Na dúvida, tente logo depois do teste.
 
 **Limite de cartas cheio.** O manual dá os limites, mas não diz o que fazer ao descobrir uma carta com o limite cheio. Como descartar é Ação Livre, uma leitura é descartar uma das suas para abrir espaço.
-
-**Dois dados "+".** O manual diz que as faces 1 e 2 podem modificar o dado escolhido, e o exemplo usa um só. Este guia entende que os dois podem somar.
-
 ## 8. Avaliação final
 
 Responda sem consultar. Ao tocar numa opção, aparecem a resposta certa e a etapa a reler.

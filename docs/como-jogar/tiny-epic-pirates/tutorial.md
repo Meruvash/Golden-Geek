@@ -259,7 +259,9 @@ Cinco etapas, cada uma uma parte real da partida: montar a mesa; o Timão e os M
 
 !fig[A tabela do Mercado: alguém vende Cana-de-açúcar, que valia 4; ela desce para 2, e os dois cubos que estavam abaixo sobem um valor cada. Ilustração: manual Meeple BR (p. 9)](figuras/negociar.webp)
 
-> [!mais] **Limites de Ouro e de Tiro Certeiro.** O Ouro vai de 0 a 13; o que passar de 13 se perde, e você não gasta o que não tem (p. 3). Ao Buscar, quem já tem 13 Ouros ou 3 Marcadores de Tiro Certeiro não recebe mais (p. 10).
+> [!mais] **Limites de Ouro e de Tiro Certeiro.** O Ouro vai de 0 a 13; o que passar de 13 se perde, e você não gasta o que não tem (p. 3). Ao Buscar, quem já tem 13 Ouros ou 3 Marcadores de Tiro Certeiro não recebe mais: o manual chama 3 de "o máximo" de Marcadores de Tiro Certeiro (p. 10).
+
+> [!edicao] O limite de 3 Marcadores de Tiro Certeiro só aparece na regra de Buscar (p. 10). O manual não diz o que acontece quando, já com 3, você ganharia outro ao perder ou empatar um combate; a leitura mais próxima do texto é que você não recebe mais. Combine com a mesa.
 
 > [!mais] **Trocar a fila de Tripulação.** Ao Recrutar, antes de escolher, você pode pagar 1 Ouro para descartar as 3 cartas reveladas e revelar 3 novas, uma vez por turno. Mesmo depois de pagar, não é obrigado a pegar nenhuma (p. 10).
 
@@ -276,7 +278,7 @@ Cinco etapas, cada uma uma parte real da partida: montar a mesa; o Timão e os M
 
 !fig[Esconder-se: o Capitão para no Esconderijo, e o navio entra na Enseada da carta. Ilustração: manual Meeple BR (p. 12)](figuras/esconder.webp)
 
-> [!edicao] Ao Esconder-se, o manual diz que cada Marujo posto na Extorsão recebe 1 Ouro na hora, "já que você acaba de cruzar a linha de navios" (p. 12), e o passo da Linha de Navios também paga a Extorsão (p. 15). O manual não diz se o mesmo Marujo recebe duas vezes. Este guia lê como um só pagamento por volta no Timão; combine com a mesa antes de jogar. O manual também chama a linha de "Linha do Navio" (p. 6 e 7) e "Linha de Navios" (p. 15); é a mesma.
+> [!edicao] Ao Esconder-se, o manual diz que cada Marujo posto na Extorsão recebe 1 Ouro na hora, "já que você acaba de cruzar a linha de navios" (p. 12), e o passo da Linha de Navios também paga a Extorsão (p. 15). O manual não diz se um Marujo posto na Extorsão ao se esconder recebe de novo no passo da Linha de Navios, no mesmo turno. Há duas leituras: pagar só uma vez por Marujo nesse turno, ou pagar nas duas ocasiões. O manual não decide; combine com a mesa antes de jogar. O manual também chama a linha de "Linha do Navio" (p. 6 e 7) e "Linha de Navios" (p. 15); é a mesma.
 
 > [!resolvido] **Exemplo resolvido.** Ana está no nível Pirata da Lenda (2 de movimento) e tem 2 Marujos no Cordame: 4 de movimento. O Mercado de Cana-de-açúcar está a 3 cartas, mas a primeira carta do caminho tem Tempestade.
 >
@@ -365,7 +367,7 @@ Cinco etapas, cada uma uma parte real da partida: montar a mesa; o Timão e os M
 
 !fig[A Trilha de Lenda: cada nível mostra o movimento, os dados e o prêmio. O Marcador de Lenda sobe do Lobo do Mar para Pirata e ganha 2 Ouros. No alto, o ícone Ganhar Lenda. Ilustração: manual Meeple BR (p. 16)](figuras/lenda.webp)
 
-> [!edicao] A tabela acima foi lida na ilustração da p. 16, que corta o nível mais alto, Lenda. O manual não descreve esse nível em texto: confira no seu Tabuleiro de Lenda. Ele também não diz onde entra o Marujo ganho no Corsário; combine com a mesa.
+> [!edicao] O manual não traz a Trilha de Lenda em texto: a tabela acima foi lida nas ilustrações do Tabuleiro de Lenda (p. 2, 4 e 16), que no PDF têm baixa resolução. Nelas, as células claras repetem, impresso, o mesmo número do nível de baixo; as escuras marcam onde o valor muda. A palavra "Lenda" no alto da trilha aparece na linha dos ícones das colunas, sem números, e parece ser o título da trilha, não um sétimo nível: pela ilustração, Pirata Terrível é o último nível. Confira no seu Tabuleiro de Lenda. O manual também não diz em que Missão entra o Marujo ganho no Corsário; combine com a mesa.
 
 > [!mais] **Navio Mercante de 8.** Ao afundar o Navio Mercante cuja carta é de 8, você não troca a carta: o navio volta ao Porto do jeito normal, e a mesma carta continua (p. 11).
 
@@ -607,7 +609,7 @@ Responda sem consultar. Cada resposta diz o que reler.
 
 **Enterrar:** carta do Local de Tesouro, Ouro do preço, sem Fragata, Local livre.
 
-**Limites:** Ouro 0 a 13. Navio Pirata 3 cubos. Tiro Certeiro 3. Tripulação 4.
+**Limites:** Ouro 0 a 13. Navio Pirata 3 cubos. Tiro Certeiro 3 (citado ao Buscar). Tripulação 4.
 
 **Fim:** terceiro Tesouro; completar a rodada. Desempate: Lenda, Ouro, Espólio, vitória dividida.
 
