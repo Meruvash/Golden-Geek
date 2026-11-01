@@ -8,7 +8,7 @@
 
 ### A ideia do jogo
 
-Um assassino está escondido num envelope, e cada jogador é um agente da lei atrás dele. Você dirige pela cidade prendendo **mafiosos** e juntando **Fichas de Pista**, que revelam traços do assassino, e coleciona **Cartas de Suspeito**, os inocentes que pode riscar da lista. Tudo gasta horas na **Trilha de Tempo**; quando o tempo de todos acaba, cada um faz uma única acusação.
+Um assassino está escondido num envelope, e cada jogador é um agente atrás dele. Você dirige pela cidade prendendo **mafiosos** e juntando **Fichas de Pista**, que revelam traços do assassino, e coleciona **Cartas de Suspeito**, os inocentes que pode riscar da lista. Tudo gasta horas na **Trilha de Tempo**; quando o tempo de todos acaba, cada um faz uma única acusação.
 
 ### Monte a mesa
 
@@ -38,7 +38,7 @@ Ações do primeiro turno, que este guia trata como diurno (etapa 2) (p. 11 e 12
 | Ação | Custo | Requisito |
 |---|---|---|
 | Prender | 1 hora | Mafioso no seu quarteirão |
-| Pegar Informante | 2 horas | Mafioso no seu quarteirão e Ficha de Informante na sua linha |
+| Pegar Informante | 2 horas | Mafioso no seu quarteirão; Informante na sua linha |
 | Investigar Cena | 2 horas | Ficha de Investigação no seu quarteirão |
 | Chamar Reforços | Arrisque de 1 a 6 horas | Mafiosos no seu quarteirão ou nos vizinhos |
 | Pausa para o Café | 1 hora | Nenhum |
@@ -79,11 +79,11 @@ Com o indicador nas horas 43 a 48, você pode encerrar o seu caso. Com todos enc
 
 !video[TINY EPIC CRIMES - Gameplay resumida, canal Duque Board Games](https://www.youtube.com/watch?v=BEcs4ub4O3U&t=0s)
 
-> [!atencao] **Os três erros mais caros.** A hora do dia vale pelo espaço do seu indicador no começo do turno. Horas arriscadas são gastas mesmo na falha. E não leia em voz alta o nome das Cartas de Suspeito que vê.
+> [!atencao] **Os três erros mais caros.** A hora do dia é a do começo do turno. Horas arriscadas são gastas mesmo na falha. Nome de Cartas de Suspeito não se lê em voz alta.
 
 ## 0. Antes de tudo: o que é este jogo
 
-Na cidade de Echo Ridge, o produtor de cinema Donny Mureti foi assassinado, e os jogadores são agentes da lei com 48 horas para achar o culpado (p. 2). No Modo Padrão, cada um trabalha para si: vence quem acusar o assassino certo e tiver a patente mais alta; se ninguém acertar, todos perdem (p. 4).
+Em Echo Ridge, o produtor de cinema Donny Mureti foi assassinado, e os agentes da lei têm 48 horas para achar o culpado (p. 2). No Modo Padrão, cada um joga por si: vence quem acusar o assassino certo e tiver a patente mais alta; se ninguém acertar, todos perdem (p. 4).
 
 O assassino é uma das 16 Cartas de Suspeito. Há dois caminhos até ele, e o jogo pede os dois (p. 8 e 9):
 
@@ -94,7 +94,7 @@ Só quem pega a última ficha vê o traço; quem ajudou ganha uma Carta de Suspe
 
 ## 1. Como este guia ensina
 
-São quatro etapas, cada uma uma parte real da partida: montar a cidade; o tempo, o turno e os mafiosos; pistas, evidências e suspeitos; Eventos e acusação. Em cada etapa vêm **Para entender** (como funciona e por quê), **Passo a passo** (as regras de sempre), regras adicionais para casos menos frequentes e tarefas com ajuda decrescente: **exemplo resolvido**, tarefa para **completar** e **sua vez**, às vezes com um **treino rápido**. Cada pergunta tem opções; ao escolher uma, aparecem a certa e a explicação. No final, uma avaliação curta diz o que reler, e uma folha de consulta vai para a mesa.
+São quatro etapas, cada uma uma parte real da partida. Cada etapa tem **Para entender** (como funciona e por quê), **Passo a passo** (as regras de sempre), regras adicionais para casos menos frequentes e tarefas com ajuda decrescente: **exemplo resolvido**, tarefa para **completar** e **sua vez**. Escolha uma opção em cada pergunta para ver a certa e a explicação. No fim, uma avaliação diz o que reler, e uma folha de consulta vai para a mesa.
 
 ## 2. Etapa 1: montar a cidade
 
@@ -105,15 +105,15 @@ São quatro etapas, cada uma uma parte real da partida: montar a cidade; o tempo
 > 1. Carta de Delegacia no centro. As 24 Cartas de Quarteirão, embaralhadas e viradas para cima, formam com ela um quadrado de 5 por 5.
 > 2. As 10 Fichas de Dado em ordem numérica: as 5 brancas no topo, as 5 pretas à esquerda.
 > 3. As 5 Fichas de Informante, uma ao lado de cada Ficha de Dado preta; as 5 Fichas de Testemunha, uma ao lado de cada branca.
-> 4. As 7 Fichas de Investigação, embaralhadas e viradas para baixo, nos 7 quarteirões com o marcador de Investigação; as 5 Fichas de Tocaia, do mesmo jeito, nos 5 quarteirões com o marcador de Tocaia.
+> 4. As 7 Fichas de Investigação e as 5 de Tocaia, embaralhadas e viradas para baixo, nos quarteirões com o marcador de cada uma.
 > 5. As 3 Fichas de Custódia nos 3 marcadores da Delegacia.
 > 6. Os 2 Tabuleiros de Tempo lado a lado, lado Padrão para cima. Ao alcance de todos: Fichas de Evidência, Dados-Projéteis, Envelopes de Evidência, Lupa e Fichas de Evento.
 > 7. Todos os mafiosos na Bolsa. Tire 3, um de cada vez, e role os dois dados para achar o quarteirão de cada um. Um 6, um 3 e 3 ou um quarteirão já ocupado: role de novo.
-> 8. Cada jogador recebe Tabuleiro de Agente (lado Padrão), Ajuda ao Jogador e o Indicador de Tempo, o Carro e o Distintivo da sua cor. O Carro vai para a Delegacia; o Distintivo, com o lado 10+ para baixo, para o desenho grande do distintivo no tabuleiro.
+> 8. Cada jogador recebe Tabuleiro de Agente (lado Padrão), Ajuda ao Jogador e Indicador de Tempo, Carro e Distintivo da sua cor. Carro na Delegacia; Distintivo, com o lado 10+ para baixo, no desenho grande do distintivo.
 > 9. Indicadores de Tempo empilhados ao lado da trilha por idade: o mais jovem no topo.
 > 10. Cada um recebe 2 Cartas de Habilidade, fica com uma, virada para cima, e devolve a outra à caixa.
 > 11. Cartas de Corporação embaralhadas num baralho virado para baixo; cada um recebe uma e pode olhá-la sem mostrar.
-> 12. Cartas de Suspeito embaralhadas. Uma, sem ser revelada, entra no Envelope de Assassino com a seta do verso visível na fenda. O resto é o baralho de suspeitos.
+> 12. Cartas de Suspeito embaralhadas; uma, sem ser revelada, entra no Envelope de Assassino com a seta do verso visível na fenda.
 > 13. Cartas de Evento embaralhadas. Vire uma no espaço "1" abaixo da trilha, leia em voz alta a preparação dela e cumpra.
 
 !fig[A cidade montada: Trilha de Tempo e primeiro Evento no alto, Fichas de Dado e de Testemunha no topo, de Dado e de Informante à esquerda, fichas nos quarteirões marcados, carros na Delegacia e os 3 primeiros mafiosos. Ilustração: manual Asmodee (p. 7)](figuras/preparacao.webp)
@@ -148,7 +148,7 @@ São quatro etapas, cada uma uma parte real da partida: montar a cidade; o tempo
 > 2. Dirigir, Prender e Pausa para o Café: a qualquer hora.
 > 3. Diurnas: Pegar Informante, Investigar Cena, Chamar Reforços. Noturnas: Pegar Testemunha, Ficar de Tocaia, Levar sob Custódia.
 
-> [!edicao] O manual não diz se a posição inicial, na pilha ao lado da trilha, é dia ou noite. Os primeiros espaços da trilha são diurnos, e este guia trata o primeiro turno de cada jogador como diurno. Combine com a mesa.
+> [!edicao] O manual não diz se a pilha inicial, fora da trilha, é dia ou noite. Como os primeiros espaços são diurnos, o guia trata o primeiro turno como diurno.
 
 !fig[Dirigir: 3 quarteirões sem diagonal, por 3 horas. Ilustração: manual Asmodee (p. 11)](figuras/dirigir.webp)
 
@@ -160,7 +160,7 @@ São quatro etapas, cada uma uma parte real da partida: montar a cidade; o tempo
 
 !fig[Prender: por 1 hora, o mafioso azul vai para o espaço azul do tabuleiro (A); com as três cores, +1 Nível de Distintivo e os três voltam para a Bolsa (B). Ilustração: manual Asmodee (p. 11)](figuras/prender.webp)
 
-> [!atencao] "Prender" é uma ação; "deter" é qualquer forma de tirar mafiosos da cidade. Mafioso detido volta para a Bolsa, a não ser que a ação diga outra coisa, como Prender (p. 11).
+> [!atencao] "Deter" é tirar mafiosos da cidade por qualquer ação; o mafioso detido volta para a Bolsa, salvo quando a ação diz outra coisa, como Prender (p. 11).
 
 !fig[Chamar Reforços: arriscou 4 horas e rolou 3; os 4 mafiosos do quarteirão e dos vizinhos voltam para a Bolsa. Ilustração: manual Asmodee (p. 12)](figuras/chamar-reforcos.webp)
 
@@ -170,7 +170,7 @@ São quatro etapas, cada uma uma parte real da partida: montar a cidade; o tempo
 
 > [!mais] **Onda de Crimes.** Dois 1, dois 2, dois 4 ou dois 5: aplique o resultado e faça outra Rolagem de Mafioso. Dois 3 e dois 6 não contam, e pode haver várias ondas seguidas (p. 16).
 
-> [!mais] **Um mafioso por quarteirão.** Nunca há dois mafiosos não detidos num quarteirão, nem por efeito de carta. Bolsa vazia na hora de tirar mafioso: Penalidade por Excesso de Eventos (etapa 4) (p. 16).
+> [!mais] **Um mafioso por quarteirão.** Nunca há dois mafiosos não detidos num quarteirão, nem por efeito de carta. Bolsa vazia na hora de tirar mafioso: Penalidade por Excesso de Eventos, da etapa 4 (p. 16).
 
 > [!mais] **O limite de 48 horas.** O indicador não passa do 48. Se a ação o levaria além, escolha outra (p. 14).
 
@@ -255,7 +255,7 @@ São quatro etapas, cada uma uma parte real da partida: montar a cidade; o tempo
 
 > [!mais] **Investigação e Tocaia se esgotam.** Quando a terceira Ficha de Investigação com sucesso for revelada, descarte as que restarem na cidade; o mesmo vale para a terceira Ficha de Tocaia (p. 12 e 13).
 
-> [!mais] **Levar sob Custódia, regras finas.** Só cabe 1 mafioso no Espaço de Custódia por vez. Se amanhecer antes da segunda parte, espere a próxima noite. Se a Ficha de Custódia daquela cor já foi pega, você ganha 1 Carta de Corporação em vez dela, sem avançar o Distintivo; com a Arma decifrada, a ação continua custando 4 horas e dá uma Carta de Corporação (p. 13).
+> [!mais] **Levar sob Custódia, regras finas.** Só cabe 1 mafioso no Espaço de Custódia. Se amanhecer antes da segunda parte, espere a próxima noite. Ficha daquela cor já pega, ou Arma já decifrada: você ganha 1 Carta de Corporação em vez da ficha, sem avançar o Distintivo, e a ação segue custando 4 horas (p. 13).
 
 !fig[Levar sob Custódia: 2 horas para pôr o mafioso azul no Espaço de Custódia; depois, na Delegacia, mais 2 horas pela Ficha de Custódia azul. Ilustração: manual Asmodee (p. 13)](figuras/custodia.webp)
 
@@ -318,7 +318,7 @@ São quatro etapas, cada uma uma parte real da partida: montar a cidade; o tempo
 
 > [!passos] **Passo a passo: Encerrar Seu Caso e a acusação** (p. 14 e 17)
 >
-> 1. **Encerrar Seu Caso:** se, ao terminar o turno, o seu indicador estiver num espaço vermelho (43 a 48), você pode deitar o Carro. Não joga mais turnos, mas segue nas trocas de informação e recebe recompensas de Eventos para os quais contribuiu.
+> 1. **Encerrar Seu Caso:** ao terminar o turno num espaço vermelho (43 a 48), você pode deitar o Carro. Não joga mais turnos, mas segue nas trocas de informação e nas recompensas de Eventos de que participou.
 > 2. Todos com o Carro deitado: cada um vira a Ajuda ao Jogador para o lado dos suspeitos, tira o Carro da cidade e, escondendo com a mão, põe o Carro sobre o suspeito que acusa.
 > 3. Todos revelam ao mesmo tempo, e a carta do assassino é lida com a Lupa.
 > 4. Só um acertou: vence. Ninguém acertou: todos perdem.
@@ -355,7 +355,7 @@ São quatro etapas, cada uma uma parte real da partida: montar a cidade; o tempo
 
 **Partida de 2 jogadores.** Use 3 Fichas de Informante, ao lado das Fichas de Dado pretas 1, 3 e 5, e 3 Fichas de Testemunha, ao lado das brancas 2, 3 e 4; bastam 3 para decifrar o Cargo e 3 para a Gangue. No Modo Padrão, separe também 4 Cartas de Suspeito viradas para baixo entre os dois, sob um Carro não usado: os álibis de um "agente fantasma". Ao Interrogar, você pode embaralhá-las e comprar uma em vez de escolher entre as do outro jogador; depois, devolva-a à pilha (p. 17).
 
-> [!mais] **Modo Cooperativo.** Tabuleiros de Agente e de Tempo no lado Cooperativo. Com 2, Detetive e Patrulheira; com 3, mais a Analista; com 4, os quatro. Antes de encher a Bolsa, tire 1 Gângster Cinza (2 jogadores), 1 mafioso de cada cor (3) ou 2 de cada cor (4); um Gângster Cinza removido, ao lado das 48 horas, marca a hora final (Marcador de Tempo Esgotado). Cada agente faz só as ações do seu tabuleiro, mas todos podem Dirigir, Prender, Chamar Reforços e fazer Pausa para o Café, sem restrição de dia e noite. Presos vão direto para a Bolsa. Cartas de Suspeito ficam abertas, evidências são de todos, e não se ganha Carta de Suspeito por ter fichas. Em vez de descartar suspeito na Penalidade por Excesso de Eventos, ou quando faltam mafiosos na Bolsa, o Gângster Cinza da trilha recua 1 espaço. Com 2 jogadores, as Cartas de Corporação formam um conjunto comum de até 4. Detetive e Analista podem gastar 3 horas para trocar uma Carta de Corporação ganha por uma Carta de Suspeito (Trabalho de Campo). No fim, a equipe faz uma única acusação (p. 10, 18 e 19).
+> [!mais] **Modo Cooperativo.** Tabuleiros de Agente e de Tempo no lado Cooperativo. Com 2, Detetive e Patrulheira; com 3, mais a Analista; com 4, os quatro. Antes de encher a Bolsa, tire 1 Gângster Cinza (2 jogadores), 1 mafioso de cada cor (3) ou 2 de cada cor (4); um Gângster Cinza removido, ao lado das 48 horas, marca a hora final (Marcador de Tempo Esgotado). Cada agente faz só as ações do seu tabuleiro, além de Dirigir, Prender, Chamar Reforços e Pausa para o Café, sem restrição de dia e noite. Presos vão para a Bolsa. Cartas de Suspeito ficam abertas, evidências são de todos, e ninguém ganha Carta de Suspeito por ter fichas. Na Penalidade por Excesso de Eventos, ou com a Bolsa sem mafiosos, o Gângster Cinza da trilha recua 1 espaço. Com 2 jogadores, as Cartas de Corporação formam um conjunto comum de até 4. Detetive e Analista podem gastar 3 horas para trocar uma Carta de Corporação ganha por uma Carta de Suspeito (Trabalho de Campo). No fim, a equipe faz uma única acusação (p. 10, 18 e 19).
 
 > [!mais] **Modo Solo.** Uma partida Cooperativa para 2, com você controlando os dois agentes; para mais desafio, 3 ou 4 agentes (p. 19).
 

@@ -15,7 +15,7 @@ Você comanda um clã viking por 3 eras. Em cada era, monta uma mão de **Cartas
 Na ordem. O marcado *(depois)* se monta já e se usa mais tarde.
 
 1. Tabuleiro de Mapa no centro, no lado com o ícone do seu número de jogadores; 1 Runa em cada Ilha, no tipo do ícone; 1 Vila em cada espaço de Vila *(depois)* (p. 4).
-2. 3 Tabuleiros de Deus sorteados acima do mapa, cada um com 1 Marcador de Fúria sorteado no 0. O símbolo do marcador diz qual Runa é daquele deus (p. 4).
+2. 3 Tabuleiros de Deus sorteados acima do mapa, cada um com 1 Marcador de Fúria sorteado no 0. O símbolo do marcador diz qual Runa é daquele deus (p. 4; o vínculo aparece nas figuras das p. 5, 13 e 15).
 3. Tabuleiro de Era, lado do Corvo para cima, com o Corvo no 1; Cartas Viking embaralhadas num baralho (p. 4).
 4. Cartas de Benefício viradas para cima em duas fileiras, acima e abaixo do mapa: 4 por fileira com 2 jogadores, 5 com 3, 7 com 4 *(depois)* (p. 4).
 5. Cada jogador: Tabuleiro de Clã com 6 Colonos, 3 Barcos e 2 Templos nos espaços; 1 Barco separado; Madeira, Alimento e Aço no 2 (p. 4).
@@ -81,7 +81,7 @@ Tiny Epic Vikings é um jogo de controle de ilhas com seleção de cartas. A par
 Duas ideias sustentam o resto:
 
 - **Os pontos dependem dos deuses.** Cada Runa pertence a um deus. Na contagem final, o deus com mais Fúria faz as suas Runas valerem mais (p. 15). A Fúria sobe quando alguém toma uma Runa de Ilha, quando alguém perde uma batalha e quando alguém consagra uma Vila a um deus (p. 9, 13 e 14).
-- **Perder uma batalha também rende.** Quem perde ganha a Bênção de Valhala do deus da sua carta e aumenta a Fúria dele (p. 9).
+- **Perder uma batalha também rende.** Quem perde pode fazer a Bênção de Valhala do deus da sua carta e aumenta a Fúria dele (p. 9).
 
 ## 1. Como este guia ensina
 
@@ -103,7 +103,7 @@ Cinco etapas, na ordem em que você precisa delas: mesa; cartas e turno; mapa; b
 >
 > 1. Tabuleiro de Mapa no centro, no lado do ícone do número de jogadores.
 > 2. 1 Runa em cada Ilha, conforme o ícone; Runas que sobram voltam à caixa.
-> 3. 1 Vila em cada espaço de Vila do mapa; as que sobram voltam à caixa.
+> 3. 1 Vila em cada espaço de Vila do mapa, exceto nos espaços marcados com um barco; as que sobram voltam à caixa.
 > 4. 3 Tabuleiros de Deus sorteados, virados para cima, em fileira acima do mapa; os outros voltam à caixa.
 > 5. 1 Marcador de Fúria sorteado em cada deus, no espaço 0 da Trilha de Fúria.
 > 6. Cartas de Benefício embaralhadas, viradas para cima, em duas fileiras, acima e abaixo do mapa: 4 por fileira (2 jogadores), 5 (3 jogadores) ou 7 (4 jogadores). As que sobram voltam à caixa.

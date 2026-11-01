@@ -112,7 +112,7 @@ O guia tem quatro etapas, na ordem em que a partida acontece: montar a mesa; gir
 
 > [!mais] **Dificuldade.** Ponha mais Tentáculos Ancestrais na bolsa: 1 no Modo Difícil, 2 no Modo Loucura. Do Grande Antigo mais fácil ao mais difícil: Nyarlathotep, Yog-Sothoth, Yig e Cthulhu (p. 3).
 
-> [!edicao] **Giros dos Rastejadores.** O manual manda girar "uma vez para cada um" dos meeples (p. 4). Este guia lê um giro para cada Rastejador da preparação.
+> [!edicao] **Giros dos Rastejadores.** O manual manda girar a Roleta "uma vez para cada um dos seguintes meeples" e pôr "1 Rastejador por jogador" (p. 4), sem dizer se os Rastejadores saem de um giro só, todos na mesma carta, ou de um giro cada. Este guia lê um giro para cada Rastejador, porque cada um é um meeple.
 
 ### Pratique esta etapa
 

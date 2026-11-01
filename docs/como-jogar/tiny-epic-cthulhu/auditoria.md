@@ -60,3 +60,16 @@ Contas refeitas em `contas.py` (scratchpad): todas as do texto batem.
 - O exemplo resolvido do primeiro turno usa cartas A a D sem nomes reais.
 - As figuras mantêm rótulos curtos do manual dentro do diagrama (setup, banimento); conferir se o editor aceita.
 - Sem teste de execução e sem auditor de regras independente ainda: as contradições internas do manual (p. 8 x p. 10/11/23) merecem segunda leitura, de preferência com o manual original em inglês.
+
+## Auditoria independente: partida simulada
+
+Partida de 2 jogadores montada e jogada só com o tutorial (preparação, 1ª rodada completa: giro, Ação do Ponteiro, compra de 3 tentáculos, surgimento, movimento do Grande Antigo, 3 ações por jogador, passagem da bolsa), e depois o Modo Solo. Manual consultado só depois, para cada lacuna. Veredito: dá para jogar a partida de 2 a 4 com o tutorial; o solo só ficou jogável depois da correção abaixo.
+
+| # | Lacuna na simulação | Resolução no manual | Correção no tutorial |
+|---|---|---|---|
+| 1 | Modo Solo: o texto dizia que o Assistente "segue uma ordem fixa de ações", sem dizer qual; impossível jogar o turno dele | p. 18 a 20: ordem Mover-se (caminho mais curto ao Ponteiro Frontal; na Segunda Fase, ao Ponteiro de Tentáculo), Comprar 1 por Rastejador, Revelar página, Selar (2ª fase), Traduzir, Banir (sempre tenta); coleta Ganância > Fúria > Medo, sem maldição; rerrola tudo ao falhar; ações extras via Caos | Bloco "Modo de Partida Solo" reescrito com o turno do Assistente e as ações extras |
+| 2 | Tamanho das Trilhas de Loucura e de Rastejadores não informado; o exemplo do 1º turno ("2 de Medo enchem a trilha") e o exercício ("os 4 Tentáculos do Medo") dependiam disso | Figura da p. 7: 3 espaços em cada Trilha de Loucura e na Trilha de Rastejadores (o texto não dá número) | Frase na descrição da Carta de Cidade; exemplo do 1º turno explica que a trilha azul já tinha 1 da preparação |
+| 3 | Na preparação, o giro de um jogador pode cair na carta do Grande Antigo, e o tutorial proíbe parar ali na Primeira Fase | p. 4 não restringe a colocação; a proibição é da ação Mover-se (p. 13), e quem começa o turno com o GA no local sai com a 1ª ação | Nota no passo 7 da preparação |
+| 4 | "Passe a bolsa para a esquerda": direção não citada com página | p. 17: ao próximo jogador em sentido horário | Passo 5 do primeiro turno e passo 6 da folha de consulta |
+
+Sem lacuna na simulação: ordem do 1º Passo, contagem de tentáculos pela Trilha de Força, destino de cada tipo de tentáculo, maldições, ações e seus valores, Ação da Cidade 1 vez por turno (p. 15), fim da partida. Seguem em aberto as lacunas [L] já listadas acima (o manual não as resolve); acrescento uma: o manual não diz se, num mesmo Mover-se, o jogador pode mudar de direção.

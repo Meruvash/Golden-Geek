@@ -82,9 +82,9 @@ Os humanos vencem ao completar os 3 Objetivos. O Zumbi vence se, sem Marcador de
 
 ## 0. Antes de tudo: o que é este jogo
 
-Tiny Epic Zombies é um jogo de sobrevivência num shopping tomado por mortos-vivos. O manual traz cinco modos: Cooperativo vs. Zumbi (3 a 5 jogadores, um deles no papel do Jogador Zumbi), Cooperativo contra uma Inteligência Artificial do jogo (2 a 4), dois modos competitivos e o Solo (p. 3). Ele ensina primeiro o Cooperativo vs. Zumbi; os outros mudam poucas regras (p. 16 a 18). Este guia segue a mesma ordem.
+Tiny Epic Zombies é um jogo de sobrevivência num shopping tomado por mortos-vivos, com cinco modos: Cooperativo vs. Zumbi (3 a 5 jogadores, um deles o Jogador Zumbi), Cooperativo contra uma Inteligência Artificial (2 a 4), dois competitivos e o Solo (p. 3). O manual ensina primeiro o Cooperativo vs. Zumbi, e os outros mudam poucas regras (p. 16 a 18); este guia segue a mesma ordem.
 
-Os humanos correm contra dois relógios. Um é o Monte de Procura: cada turno humano revela uma carta, e quando todas saíram e cada humano jogou mais uma vez, os Zumbis vencem. O outro é o Pátio: Zumbis que não cabem nas Lojas batem na Barricada, e cada vez que ela cai um Marcador de Sobrevivente sai do jogo (p. 6 e 13). No meio disso, cada humano cuida de uma trilha em que dano e munição andam um na direção do outro (p. 7).
+Os humanos correm contra dois relógios: o Monte de Procura, que perde uma carta a cada turno humano, e a Barricada do Pátio, que cai com os Zumbis que não cabem nas Lojas e, a cada queda, leva um Marcador de Sobrevivente (p. 6 e 13). E cada humano cuida de uma trilha em que dano e munição andam um na direção do outro (p. 7).
 
 ## 1. Como este guia ensina
 
@@ -134,7 +134,7 @@ São quatro etapas: montar a mesa e ler dano e munição; mover e matar Zumbis; 
 
 > [!atencao] Munição e dano dividem a mesma trilha. Atirar aproxima a morte tanto quanto apanhar: com dano 4 e munição 5, um tiro só faz você ser Comido Vivo (p. 7).
 
-> [!resolvido] **Exemplo resolvido.** A Jogadora 3 tem dano 2 e munição 7. Atira duas vezes: munição 5. Entra numa Sala com Zumbi e o Dado de Luta dá 2 danos: dano 4. Os marcadores estão em 4 e 5, separados por um espaço. Mais um dano ou mais um tiro e ela é Comida Viva.
+> [!resolvido] **Exemplo resolvido.** A Jogadora 3 tem dano 2 e munição 7. Atira duas vezes: munição 5. Entra numa Sala com Zumbi e o Dado de Luta dá 2 danos: dano 4. Os marcadores estão em 4 e 5, em espaços vizinhos. Mais um dano ou mais um tiro e ela é Comida Viva.
 
 > [!complete] **Complete.** O Jogador 1 tem dano 3 e munição 5. Entra numa Sala com Zumbi e o dado dá 2 danos.
 >
