@@ -91,3 +91,41 @@ Script `tez-scripts/contas.py` (scratchpad), todas as asserções passam: trilha
 **Pontos testados sem problema:** ordem do turno humano (3 movimentos, A/B/C, Procura), Regra de Ouro, corpo a corpo obrigatório e a distância só a partir de Sala vazia, trilha de dano e munição, coleta só com a Loja vazia e não da carta recém-revelada, colocação de Zumbis da Sala 1 à 3 e transbordo, Barricada, ordem de jogo e as três condições de fim de jogo. Não existe "fim de rodada" no jogo: cada turno humano é seguido de um turno do Zumbi (p. 8 e 19), e o tutorial diz isso.
 
 **Veredito:** dá para jogar só com o tutorial, com as correções acima.
+
+## Auditoria independente: regras
+
+**Método.** Texto do manual extraído com pdftotext (20 páginas, versão 2.0, PDF de 19/11/2020); figuras das p. 5, 8, 9, 10, 13 e 14 renderizadas e conferidas (placas das Salas, ícone do Adolescente Zumbi, cores do diagrama de Esquina e Corredor). Cada regra, número, termo e página do tutorial foi conferida; contas refeitas em script.
+
+**Contas refeitas.** Exemplo do "Comece" (munição 9 → 8, dano 0 → 1): ok. Exemplo etapa 1 (dano 2, munição 7; 2 tiros → 5; 2 danos → 4): ok. Atenção (dano 4, munição 5, 1 tiro → 4 = 4, Comido Vivo): ok. Complete etapa 1 (3 + 2 = 5 = munição): ok. Sua vez (6 + 1 = 7 = munição): ok. Suprimento (Barricada 3 + 2 = 5; 5 + 2 = 7, teto 6): ok. Barricada (2 → 1 → 0, sai 1 Marcador, volta a 2, fica 1 Marcador): ok. IA (2 Lojas × 1 = 2; 2 × 2 = 4): ok. Avaliação (dano 4, munição 6, 2 tiros → 4 = 4): ok. Colocação na Loja com Zumbi só na Sala 2 → Salas 1 e 3 (p. 13): ok.
+
+**Itens conferidos.**
+- Modos e jogadores (p. 3), preparação inteira (p. 4 e 5: Pátio Cooperativo, 8 Lojas sorteadas, 8 Zumbis, Barricada no 2, 2 Marcadores de Sobrevivente, 3 Cartas de Jogador e 1 escolhida, Indicador de Horda no 1, ITEMeeple na sala central do Pátio, dano 0, munição 9, Objetivos, 8 Cartas de Procura, 12 Itens, Veículo, Armadilhas, Marcadores de Suprimento): ok.
+- 32 Cartas de Procura (p. 2), Montes A, B e de Suprimento, 24 cartas (p. 6): ok. Jogador inicial (p. 6): ok.
+- Dano, Munição e Comido Vivo, incluindo o que acontece no meio do turno (p. 7): ok.
+- Turno Humano, A/B/C, Regra de Ouro, Movimento por paredes, sair primeiro da Sala com Zumbi (p. 8): ok.
+- Matar 1 Zumbi, Dado de Luta, Acerto Crítico, Ataque a Distância só a partir de Sala sem Zumbi e nunca na própria (p. 9 e 19): ok. Atleta com a condição de começar em Sala sem Zumbi (p. 10): ok (já corrigido pela outra auditoria).
+- Usar a Sala, Habilidade Contínua (placa amarela) e Terminal (placa vermelha), conferidas na figura da p. 10; Passagem Secreta; Marcadores de Suprimento com teto 6 e recusa da Arma (p. 10): ok.
+- Coletar Itens, Armas 1 + 1, Mochila, Pegar, largar e trocar, Procura e coleta proibida no mesmo turno, no Pátio ao lado de uma das 4 Lojas (p. 11): ok.
+- Pátio "Cure 2" e Restos como Habilidade Contínua (ícone amarelo conferido nas figuras das p. 9 e 13): ok.
+- Consertar o Helicóptero (p. 5): ok. A carta impressa diz "entrar na Praça"; o tutorial usa Pátio, que é o que o título "Retornando para o Pátio" e o objetivo dizem. Mantido.
+- Turno do Zumbi: Verificar Ruídos, uma ação de Horda por turno, Indicador para no quinto espaço, 2 Zumbis em uma ou nas duas Lojas, Sala de menor número livre, entregar carta e comprar 4 (p. 12 a 14): ok.
+- Esquina e Corredor, Barricada, Barricada em 0 (p. 13); legenda da figura (Esquina em azul, Corredor em amarelo): ok.
+- Habilidade do Adolescente Zumbi: o ícone da carta é o de dano (figura da p. 14), então "recebe 1 dano adicional" está certo. Sangrando, Cercado (p. 14 e 19): ok.
+- Final do Jogo (p. 14 e 15), Cooperativo com IA (p. 16), Competitivo vs. Zumbi (p. 17), Competitivo e Solo (p. 18), Moto e Armadilhas (p. 5): ok.
+- Todos os exercícios de múltipla escolha: a opção certa é certa pelo manual e as erradas estão erradas pelo manual. Ok.
+
+**Interpretações marcadas pelo redator.**
+- *Armas iniciais (Faca e Pistola).* O texto não diz; as Cartas de Jogador ilustradas nas p. 5, 7, 10, 11 e 14 trazem "Faca" e "Pistola" sob os ataques, e a p. 9 diz que o corpo a corpo usa "arma corpo a corpo" e o tiro "arma de longo alcance". Leitura defensável; mantida no [!edicao]. Corrigido no "Comece": antes "(ilustração da p. 5)" → depois "(leitura da ilustração da p. 5; veja a etapa 3)", para o leitor saber que é leitura de figura.
+- *Barulho no Pátio.* A p. 12 compara com a "Entrada da Loja"; o Pátio não tem Símbolo de Entrada e o glossário (p. 19) reserva os símbolos às 8 Lojas. A leitura "sem Barulho, Zumbis entram normalmente" é a única compatível com o texto; [!edicao] mantido.
+- *Loja de Esquina cheia.* A p. 13 diz "Se todas as 3 Salas desta Loja já contiverem Zumbis, então ele danifica a Barricada", com "desta Loja" referindo-se à próxima no sentido horário. Como a seguinte a uma Esquina no sentido horário é sempre uma Loja de Corredor, que, cheia, manda o Zumbi à Barricada, as duas leituras dão o mesmo resultado. Ok.
+- *"Pode" × "deve" matar.* A p. 9 diz "você pode matar 1 Zumbi" e, no caso específico, "você deve matá-lo usando um ataque corpo a corpo"; Cercado (p. 14 e 19) só faz sentido se entrar em Sala com Zumbi obrigar ao ataque. Tutorial correto.
+- *Fim da partida, p. 6 × p. 15.* A p. 6 fala em "antes do Monte de Procura acabar", mas no mesmo parágrafo do Zumbi, e nas p. 8, 14 e 15, o fim é "todas as cartas reveladas e um último turno de cada humano". Sem contradição; tutorial correto.
+
+**Correções feitas.**
+1. Etapa 1, exemplo resolvido: "em 4 e 5, separados por um espaço" → "em 4 e 5, em espaços vizinhos" (p. 7; 4 e 5 são espaços adjacentes, nada os separa).
+2. Etapa 2, [!entender]: "O Ataque a Distância nunca dá dano" → "não usa o dado" (o manual não afirma "nunca"; Eventos e habilidades podem dar dano) (p. 9).
+3. "Comece", Faca e Pistola: aviso de leitura de figura (acima).
+
+**Enxugamento (pedido de tamanho).** Sem tirar regra: seções 0 e 1 condensadas; os [!entender] das etapas 2, 3 e 4 reduzidos a um parágrafo (o que repetiam já está nos passo a passo); retirado o [!atencao] "Os três erros mais caros" do "Comece", que repetia os três exercícios logo acima; textos de Salas do exemplo, Consertar o Helicóptero, Final do Jogo item 3 e modos competitivos condensados. Resultado: 6.844 (depois das inclusões da partida simulada) → cerca de 6.690 palavras. Abaixo disso só cortando exercícios, o passo a passo da preparação (que o formato exige junto do "Comece") ou a folha de consulta.
+
+**Veredito: APROVADO COM CORREÇÕES.** Nenhuma regra errada; três ajustes de precisão e o enxugamento acima.

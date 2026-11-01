@@ -93,3 +93,21 @@ Mesma proposta do piloto (PROMPT_PILOTO, seção 10): 5 a 8 adultos que nunca jo
 ## 8. Ligação com a resenha
 
 Não há resenha de Tiny Epic Dinosaurs no site. Se houver, o card de "Como jogar" e o campo `resenha` do JSON fazem a ligação.
+
+## Auditoria independente: partida simulada
+
+Simulação feita só com o tutorial: preparação para 2 jogadores e primeira rodada completa (Ana primeira jogadora; Bruno ganha 1 planta e começa com 6 plantas, 3 carnes e 1 suprimento após a coleta; alternância de 4 alocações cada, 3 Dinofazendeiros e o Capataz; caçadas na Zona de Contenção; Reaver, Adaptar com o Cercado permanente, Alimentar, Reprodução e Preparação). O manual (pdftotext) só foi aberto depois, para resolver as lacunas abaixo.
+
+| # | Lacuna na simulação | Resolução no manual | Correção no tutorial |
+|---|---|---|---|
+| 1 | Não estava dito se cada jogador começa com dinossauros ou Barreiras (precisei deduzir pelo "5 plantas, 3 carnes, 1 suprimento"). | A preparação não entrega nenhum (p. 4 e 5); "não existe nenhum Dinossauro em sua Fazenda" na primeira rodada (p. 6). | Frase no aviso do quarto Dinofazendeiro (etapa 1). |
+| 2 | "O Dinossauro comum do espaço": de onde sai a peça, e se o estoque pode acabar. | Recebe-se o dinossauro mostrado, do estoque comum (p. 8 e 19); estoque esgotado está na p. 12. | Caçar: "mostrado no espaço, tirado do estoque comum". |
+| 3 | Com Dano, o Capataz também vai para o Afastamento Médico? | Capataz é "um Dinofazendeiro especial" (p. 4); Dano move "seu(s) Dinofazendeiro(s)" (p. 8). | Caçar: "inclusive o Capataz". |
+| 4 | Mova um Dinossauro e Redistribuir Barreiras apareciam só como "Regra adicional", sem dizer que são ações de espaço. | Estão na lista de ações dos espaços (p. 9). | Os dois quadros dizem que são ações de espaço. |
+| 5 | Posso passar a vez e não alocar todas as peças? | "Você deve posicionar um único Dinofazendeiro"; a fase vai até todos terem posicionado todos (p. 7). | Passo 7 do turno: alocar é obrigatório. |
+| 6 | Sem espaço legal na sua vez; Barreira que não se quer pôr na Fazenda. | Manual não trata. A p. 10 manda pôr "suas Barreiras e Dinossauros" na Fazenda. | Item (3) no quadro "Pontos que o manual deixa abertos". |
+| 7 | Modo solo: o tutorial só dizia que existe; impossível jogar sozinho com ele. E chamava as cartas de "Cartas de Fazenda Rival". | Regras completas nas p. 14 a 19; o nome é "Cartas de Fazendeiro Rival" (p. 14). | Seção Modo solo reescrita: preparação, turno do Rival, ações, resto da rodada e fim. Ficam remetidos à p. 17 dois itens que o pdftotext não lê (símbolo das cartas que o Rival nunca pega e ordem das Ações de Recurso Máximo). |
+
+Sem lacuna: preparação para 2 (3 Contratos Públicos, bônus só para o segundo), ordem das fases, espaço ocupado e Capataz, custo, Contratos só da Fazenda, Cercados, comida, fuga, reprodução, quarta rodada, pontuação e desempate.
+
+Veredito: dá para jogar a partida de 2 a 4 só com o tutorial, com as correções acima; o solo passou a ser jogável, com consulta à p. 17 para os dois ícones citados.

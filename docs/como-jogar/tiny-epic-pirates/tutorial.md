@@ -20,7 +20,7 @@ Na ordem. O marcado *(depois)* se monta já e se usa mais tarde.
 4. Cada um recebe 1 Carta de Capitão sorteada *(depois)* (p. 4).
 5. Tabuleiro de Mercado: 1 cubo de cada cor, ao acaso, nos 4 espaços da esquerda. Os outros vão para a Bolsa de Espólios (p. 4).
 6. Os 2 Portos em cantos opostos, com 1 Navio Mercante em cada um, apontado para o outro Porto, com 1 cubo da Bolsa *(depois)* (p. 4).
-7. Cartas de Mercador em 4 grupos (2, 4, 6, 8), cada um embaralhado: 8 embaixo e 2 no topo. Vire as 2 de cima abaixo do Mercado *(depois)* (p. 5).
+7. Cartas de Mercador em 4 grupos (2, 4, 6, 8), cada um embaralhado: 8 embaixo e 2 no topo. Vire as 2 de cima nos 2 espaços da base do Mercado: a da esquerda é do Navio Mercante Laranja, a da direita do Verde *(depois)* (p. 5).
 8. Cartas de Tripulação embaralhadas; vire 3 numa fila (p. 5).
 9. O primeiro jogador põe a Fragata num canto sem Navio Mercante. Em sentido horário, cada um põe o Navio Pirata numa carta com Enseada (âncora) livre, onde começa escondido, e escolhe o lado da Carta de Capitão (p. 5).
 10. Dados e Marcadores de Tiro Certeiro ao alcance *(depois)* (p. 5).
@@ -110,7 +110,7 @@ Cinco etapas, cada uma uma parte real da partida: montar a mesa; o Timão e os M
 > 4. **Tabuleiro de Timão.** Marcadores de Ordem embaralhados virados para baixo e postos, virados para cima, nos espaços 1 a 5. Capitão no Esconderijo (0). Os outros 3 Marujos, um em cada Missão, menos o Reparo.
 > 5. **Mercado.** 1 cubo de cada cor, ao acaso, nos 4 espaços da esquerda do Tabuleiro de Mercado. O resto na Bolsa de Espólios.
 > 6. **Navios Mercantes.** Portos em cantos opostos; um Navio Mercante em cada carta com Porto, apontado na diagonal para o Porto oposto, com 1 cubo sorteado.
-> 7. **Cartas de Mercador.** Separe por valor (2, 4, 6, 8), embaralhe cada grupo e empilhe com o 8 embaixo e o 2 no topo. Vire as 2 de cima abaixo do Mercado.
+> 7. **Cartas de Mercador.** Separe por valor (2, 4, 6, 8), embaralhe cada grupo e empilhe com o 8 embaixo e o 2 no topo. Vire as 2 de cima, uma em cada espaço da base do Tabuleiro de Mercado. Cada espaço tem o desenho de um Navio Mercante: o Laranja à esquerda e o Verde à direita, como na ilustração da p. 5. A carta embaixo de cada desenho dá o dano e o Ouro daquele navio.
 > 8. **Tripulação.** Pilha embaralhada; vire 3 numa fila.
 > 9. **Primeiro jogador** (o mais novo, ou como preferirem). Ele põe a Fragata num canto sem Navio Mercante. A partir dele, em sentido horário, cada um põe o Navio Pirata numa carta com Enseada desocupada, onde começa escondido. Na mesma ordem, cada um escolhe o lado da Carta de Capitão e a põe à direita do Timão.
 > 10. **Dados e Marcadores de Tiro Certeiro** ao alcance.
@@ -261,7 +261,7 @@ Cinco etapas, cada uma uma parte real da partida: montar a mesa; o Timão e os M
 
 > [!mais] **Limites de Ouro e de Tiro Certeiro.** O Ouro vai de 0 a 13; o que passar de 13 se perde, e você não gasta o que não tem (p. 3). Ao Buscar, quem já tem 13 Ouros ou 3 Marcadores de Tiro Certeiro não recebe mais (p. 10).
 
-> [!mais] **Trocar a fila de Tripulação.** Ao Recrutar, antes de escolher, você pode pagar 1 Ouro para pôr as 3 cartas reveladas no fundo da pilha e revelar 3 novas, uma vez por turno. Mesmo depois de pagar, não é obrigado a pegar nenhuma (p. 10).
+> [!mais] **Trocar a fila de Tripulação.** Ao Recrutar, antes de escolher, você pode pagar 1 Ouro para descartar as 3 cartas reveladas e revelar 3 novas, uma vez por turno. Mesmo depois de pagar, não é obrigado a pegar nenhuma (p. 10).
 
 > [!mais] **Tripulação completa.** Com 4 Cartas de Tripulação, você pode descartar uma (para o fundo da pilha) e pegar a nova no lugar. O Capitão nunca é descartado (p. 10).
 
@@ -335,7 +335,7 @@ Cinco etapas, cada uma uma parte real da partida: montar a mesa; o Timão e os M
 
 > [!passos] **Passo a passo: contra um Navio Mercante** (p. 11 e 12)
 >
-> 1. O dano do Navio Mercante é o número da Carta de Mercador abaixo do Mercado.
+> 1. O dano do Navio Mercante é o número da Carta de Mercador que está embaixo do desenho dele, na base do Tabuleiro de Mercado (Laranja à esquerda, Verde à direita; p. 5 e 11).
 > 2. **Mais dano que ele:** você afunda o navio. Pegue o cubo dele (abra espaço se precisar) e o Ouro da Carta de Mercador. Descarte a carta e vire outra no lugar. Leve o Navio Mercante para a carta com Porto mais distante do seu navio, contando pelos lados (empate: você escolhe), apontado para o outro Porto, com um cubo novo da Bolsa.
 > 3. **Empate:** nada afunda; você ganha 1 Marcador de Tiro Certeiro e não é Empurrado.
 > 4. **Menos dano:** você é Empurrado e ganha 1 Marcador de Tiro Certeiro.
@@ -528,11 +528,11 @@ Cinco etapas, cada uma uma parte real da partida: montar a mesa; o Timão e os M
 
 ## 7. Situações especiais
 
-**Navios escondidos no começo.** Todos começam numa Enseada, escondidos, e por isso não podem ser atacados pelos outros nem pela Fragata enquanto estiverem lá (p. 5 e 12).
+**Navios escondidos no começo.** Todos começam numa Enseada, escondidos, e por isso não podem ser atacados pelos outros nem pela Fragata enquanto estiverem lá (p. 5 e 12). O manual não diz em palavras quando o navio deixa de estar escondido. Ele se esconde ao ser posto sobre a Enseada (p. 12), e quem navega termina no centro da carta (p. 8). Este guia lê assim: o navio que navega sai da Enseada e deixa de estar escondido; o que não navega continua escondido.
 
 **Ouro acima de 13.** O excesso se perde, inclusive o de prêmio de Lenda ou de Extorsão (p. 3).
 
-> [!edicao] **Pontos que o manual não fecha.** Quem escolhe o caminho da Fragata: o manual diz que o jogador à direita a move, e só fala em escolha para os Navios Mercantes (p. 15). Se você navega para a carta em que a Fragata já está, o manual não fala em ataque: ele só descreve o ataque quando ela entra na sua carta (p. 15). Ao Esconder-se sem Enseada livre, ele não diz se você ainda realoca os Marujos (p. 12). Combine essas leituras com a mesa antes da partida.
+> [!edicao] **Pontos que o manual não fecha.** Quem escolhe o caminho da Fragata: o manual diz que o jogador à direita a move, e só fala em escolha para os Navios Mercantes (p. 15). Se você navega para a carta em que a Fragata já está, o manual não fala em ataque: ele só descreve o ataque quando ela entra na sua carta (p. 15). Ao Esconder-se sem Enseada livre, a p. 12 não diz se você ainda realoca os Marujos; a p. 7 dá uma pista: os Marujos saem do Reparo com "uma Ordem Esconderijo enquanto estiver em uma Enseada", o que sugere que a realocação exige a Enseada. Combine essas leituras com a mesa antes da partida.
 
 > [!edicao] Na p. 12, o manual diz que, no empate com um Navio Mercante, os dois navios ficam na "mesma Carta de Navio"; é a mesma Carta de Mapa.
 

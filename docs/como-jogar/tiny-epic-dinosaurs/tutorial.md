@@ -417,7 +417,40 @@ Valores lidos nos quadros do Tabuleiro de Jogador, na ilustração da p. 5.
 
 > [!edicao] **Duas frases que parecem se contradizer.** (1) A p. 7 diz que na sua vez você posiciona "um único Dinofazendeiro", mas manda pôr 2 ou 3 para entrar num espaço ocupado, e a ilustração mostra isso. Este guia lê: num espaço ocupado, você põe todas as peças necessárias na mesma vez. (2) Num espaço com duas ações, a p. 9 manda fazer pelo menos uma e permite as duas; o FAQ da p. 19 diz "você pode realizar apenas uma delas". Lido com a pergunta do FAQ, o sentido é: basta poder fazer uma para alocar ali.
 
-**Modo solo.** O verso do Tabuleiro de Jogador e as 8 Cartas de Fazenda Rival servem para jogar sozinho, com regras próprias nas p. 14 a 19. Este guia cobre a partida de 2 a 4 jogadores.
+**Modo solo.** Você joga contra uma Fazenda Rival automática, que usa o verso de um Tabuleiro de Jogador e as 8 Cartas de Fazendeiro Rival (p. 14 a 19). O resto do guia vale para você; o Rival só segue o que está abaixo.
+
+> [!passos] **Passo a passo: preparação solo** (p. 14)
+>
+> 1. Monte uma partida de 2 jogadores, com estas mudanças.
+> 2. Escolha 1 Tabuleiro de Jogador para o Rival e vire-o no lado da Fazenda Rival; cada um oferece um desafio diferente.
+> 3. Ponha 3 Marcadores de Recurso ao lado da trilha do Rival, valendo 0.
+> 4. Embaralhe as 8 Cartas de Fazendeiro Rival num baralho virado para baixo.
+> 5. O Capataz do Rival vai para o espaço 4 do Tabuleiro de Rodada, ao lado do seu Dinofazendeiro extra. Guarde 2 Dinofazendeiros normais do Rival para marcar a pontuação final e devolva o resto à caixa.
+> 6. O Rival recebe o Marcador de Primeiro Jogador. Você pega 1 Carta de Contrato Privado; o Rival não recebe nenhuma.
+
+> [!passos] **Passo a passo: o Rival em Alocar Dinofazendeiros** (p. 15 a 18)
+>
+> 1. O Rival só joga nesta fase. No início dela, embaralhe as Cartas de Fazendeiro Rival e separe 4, viradas para baixo. Quem tem o Marcador de Primeiro Jogador começa; vocês alternam até você alocar todas as suas peças e o Rival usar as 4 cartas.
+> 2. **Revele** 1 das cartas separadas. Ela mostra um Dinofazendeiro com uma letra: ponha a carta acima do Tabuleiro de Ação dessa letra.
+> 3. **Dinossauros ou ação.** Se esse Tabuleiro de Ação não tinha peça sua nem outra Carta de Fazendeiro Rival, o Rival recebe os dinossauros da carta, na coluna da espécie da Fazenda Rival, enchendo os Cercados de baixo para cima. Se o tabuleiro já estava ocupado, o Rival faz a ação mostrada no Cercado vazio mais baixo da coluna da espécie da carta. Coluna cheia (cabem 3), em qualquer dos casos: ele faz a Ação Especial do topo da Fazenda Rival.
+> 4. **Contratos.** Da esquerda para a direita, se o Rival tem os dinossauros de um Contrato Público da linha, descarte-os de cima para baixo da coluna e dê a carta a ele. No máximo 1 contrato por rodada.
+> 5. **Para você:** cada Carta de Fazendeiro Rival acima de um Tabuleiro de Ação conta como 1 Dinofazendeiro do Rival em cada espaço desse tabuleiro. Valem as regras de espaço ocupado.
+
+> [!passos] **Passo a passo: as ações do Rival** (p. 17)
+>
+> 1. **Recursos:** ele recebe os recursos mostrados.
+> 2. **Dinossauros:** ele recebe os mostrados, em Cercados livres da coluna da espécie; sem espaço, faz a Ação Especial.
+> 3. **Roubar:** ele tira de você o item mostrado, recurso ou dinossauro da sua Fazenda. Se você não tem, ele não ganha nada; se o dinossauro não cabe na coluna, ele faz a Ação Especial.
+> 4. **Marcador de Primeiro Jogador:** ele o pega de você; se já tem, nada acontece.
+> 5. **Carta de Pesquisa:** compre 3 e ponha na linha. O Rival pega a de mais pontos da linha inteira; no empate, a revelada há mais tempo, a mais perto do baralho. Ele só ganha os pontos, nunca a habilidade nem o Dinossauro Único, e nunca pega as cartas com o símbolo indicado na p. 17.
+> 6. **Recurso Máximo:** quando um recurso do Rival chega a 13, ele faz a Ação de Recurso Máximo desse recurso; com vários, na ordem mostrada na p. 17. Depois, o marcador volta a 0 e o que passou de 13 se perde.
+
+> [!passos] **Passo a passo: resto da rodada e fim, no solo** (p. 18 e 19)
+>
+> 1. O Rival não coleta recursos, não adapta a Fazenda, não alimenta nem reproduz.
+> 2. Em Preparação para Próxima Rodada, empurre os Contratos Públicos para a esquerda, fechando os vazios, e revele os novos à direita. Pesquisa como no jogo normal. Recolha todas as Cartas de Fazendeiro Rival no baralho.
+> 3. Na quarta rodada, o Rival recebe o Capataz: passa a separar 5 cartas e jogar 5 turnos. Não recebe Contrato Privado.
+> 4. No fim, pontue a Fazenda Rival como a sua, com os Dinofazendeiros dele marcando os pontos. As Cartas de Pesquisa dele valem só os pontos impressos, sem habilidades que gerariam mais pontos.
 
 ## 7. Avaliação final
 

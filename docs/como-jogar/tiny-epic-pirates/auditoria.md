@@ -88,3 +88,21 @@ Mesmo protocolo do piloto (PROMPT_PILOTO, seção 10): 5 a 8 adultos que nunca j
 ## 8. Ligação com a resenha
 
 Não há resenha de Tiny Epic Pirates no site. Se vier a existir, o "como_funciona" dela pode linkar para o "Comece a jogar em 4 minutos".
+
+## Auditoria independente: partida simulada
+
+Teste feito lendo só o tutorial.md, montando uma partida de 2 jogadores (Ana, primeira, e Bruno) e jogando a primeira rodada; o manual (PDF Meeple BR) foi aberto só depois, para fechar as lacunas.
+
+**Simulação.** Preparação seguida passo a passo: Mar 4x4 com Marcadores de Busca, Lenda e Timão de cada um, Mercado, Portos em cantos opostos com os Mercantes, pilha de Mercador (2 no topo), fila de 3 Tripulações; Ana põe a Fragata no canto livre, os dois põem os navios em Enseadas e escolhem o lado do Capitão; Ana recebe o cubo de valor 2 e Bruno o de 3. Turno de Ana: Buscar está no espaço 1, o Capitão avança de graça; navega 2 cartas (Lenda 1 + Cordame 1) até um Marcador de Busca e o revela; confere a Ação Bônus do Capitão; não cruzou a Linha. Turno de Bruno: Pilhar no 2, pula o 1 com o Marujo do Cordame, navega 1 carta até um Assentamento e pilha; sem Linha. A rodada fecha sem outra regra além de passar a vez em sentido horário. Deu para jogar.
+
+**Lacunas encontradas e como foram resolvidas**
+
+1. **Qual Carta de Mercador é de qual Navio Mercante, e qual navio é o Laranja e qual o Verde.** O tutorial dizia "vire as 2 de cima abaixo do Mercado" e, no ataque, "o dano é o número da Carta de Mercador abaixo do Mercado", sem dizer qual das duas vale para cada navio; a Linha de Navios move "o Laranja, depois o Verde". O texto do manual também não diz; a ilustração da p. 5 mostra, na base do Tabuleiro de Mercado, o desenho do navio laranja sobre o espaço da esquerda e o do verde sobre o da direita. Corrigido no "Monte a mesa" (passo 7), no passo a passo da preparação (passo 7) e no passo a passo contra Navio Mercante (passo 1).
+2. **Quando o navio deixa de estar escondido.** Todos começam escondidos numa Enseada (p. 5), mas nem o tutorial nem o manual dizem em palavras se navegar desfaz o esconderijo. O manual põe o navio escondido "sobre o local da Enseada" (p. 12) e o navio que navega "no centro da Carta de Mapa" (p. 8). Acrescentada em "Situações especiais" a leitura explícita: navegar tira da Enseada; quem não navega continua escondido.
+3. **Trocar a fila de Tripulação.** O tutorial mandava pôr as 3 cartas "no fundo da pilha"; o manual diz "descartar todas as 3 Cartas de Tripulação reveladas" (p. 10), sem dizer onde. Corrigido para "descartar".
+4. **Esconder-se sem Enseada livre.** O aviso dizia que o manual não fala nada; a p. 7 diz que os Marujos saem do Reparo com "uma Ordem Esconderijo enquanto estiver em uma Enseada". A pista foi acrescentada ao aviso de "Pontos que o manual não fecha", que continua pedindo combinar com a mesa.
+5. **Modo solo.** O tutorial não cobre o modo solo (p. 17 a 20) e diz isso; com o tutorial não se joga solo. Não corrigido: fora do escopo do guia, já sinalizado.
+
+Pontos que travariam a mesa mas já estavam sinalizados e o manual não fecha: caminho da Fragata, navegar até a carta da Fragata, Marujo do Corsário, nível Lenda, Extorsão dobrada ao Esconder-se.
+
+**Veredito:** dá para jogar a partida de 2 a 4 jogadores só com o tutorial, com as correções acima (a principal é a ligação Carta de Mercador / Navio Mercante, sem a qual não se resolve o primeiro ataque a um Mercante nem o movimento dos Mercantes). O modo solo não.

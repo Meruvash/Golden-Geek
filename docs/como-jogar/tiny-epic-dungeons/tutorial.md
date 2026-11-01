@@ -13,7 +13,7 @@ Jogo cooperativo em dois atos. No Ato 1, os heróis exploram a **masmorra** cart
 ### Monte a mesa
 
 1. Baralho da Masmorra, virado para baixo, de cima para baixo: A, Salas (2 heróis: 9; 3: 7; 4: 5); B, 1 Encontro e 3 Salas por herói, embaralhados; C, 3 Salas e a Porta do Covil, embaralhadas.
-2. Carta de Entrada aberta no centro, com 1 Marcador de Altar. Em cada lado dela, 1 carta do Baralho da Masmorra virada. Espaço para uma grade de 7 por 7 cartas.
+2. Carta de Entrada aberta no centro, com 1 Marcador de Altar. Em cada um dos 4 lados dela, 1 carta do topo do Baralho da Masmorra virada para baixo. Espaço para uma grade de 7 por 7 cartas.
 3. Tabuleiro de Tocha, lado Ato 1, tocha no espaço do número de heróis; baralhos de Goblin e de Lacaio; Marcadores de Goblin nos números; 1 Marcador de Vida e 1 de Altar por herói *(depois)*.
 4. Tabuleiro de Chefe sorteado, lado Ato 1, e Marcador do Chefe *(depois)*. Baralhos de Espólio e de Feitiço. Marcadores de Desarme.
 5. Cada jogador: Tabuleiro de Herói, miniatura na Entrada, Vida e Foco no topo das trilhas. O mais novo pega os dados e começa.
@@ -26,7 +26,7 @@ Em qualquer ordem, nada obrigatório: **Mover**, **1 Ação Heroica** (placa azu
 2. **Encontro com Goblin:** 1 dano e pare. Carta de Goblin no espaço livre mais baixo do Tabuleiro de Tocha; o marcador daquele número vai para a sala. **Encontro com Lacaio:** 2 danos e pare; carta à direita do Tabuleiro de Tocha, Marcador de Vida no topo da trilha dela, Marcador de Lacaio na sala. **Armadilha:** teste do lado esquerdo da carta; fracasso, dano da caixa vermelha (p. 8).
 3. **Atacar** (Ação Heroica): Dados de Herói conforme os cubos da Habilidade, mais o Dado de Inimigo. 1 dado é o resultado; +1 e +2 somam a ele. Acima da Defesa: dano = diferença. Inimigo vivo contra-ataca (etapa 4) (p. 9, 11 e 12).
 4. **Teste com sucesso:** cada raio nos dados não usados dá 1 Foco (p. 9).
-5. **Fim do turno:** a tocha desce 1 espaço. Ícone onde ela parar: resolva (p. 6 e 15).
+5. **Fim do turno:** a tocha desce 1 espaço. Ícone onde ela parar: resolva. Depois joga o próximo jogador, em sentido horário (p. 6 e 15).
 
 > [!resolvido] **Exemplo resolvido.** Thordin ataca com o Martelo (Força, 3 dados). Vira a carta ao lado da Entrada: Encontro com Goblin. Recebe 1 dano, para; o Goblin 1 entra na sala. Ataca: 5, +2 e 3, e 4 no Dado de Inimigo. 5 + 2 = 7 contra Defesa 4: 3 de dano. O Goblin tem 1 de Vida e morre sem contra-atacar. O 3 não usado dá 1 Foco. A tocha desce 1.
 
@@ -442,6 +442,10 @@ Em cada etapa fica à vista o essencial: o passo a passo e o erro mais comum. O 
 
 **Revelar com a Ação Livre.** O manual não diz como orientar as salas reveladas pela Ação Livre Revelar Salas Adjacentes Não Exploradas, nem se cartas novas entram nos corredores abertos delas. Combinem antes; uma leitura possível é seguir a regra de revelar ao andar.
 
+**Sair de uma sala com inimigo.** O manual diz que, ao entrar numa sala com inimigo, você não se move mais naquele turno, e que só a Furtividade deixa "passar" por inimigos (p. 7). Não diz se quem começa o turno numa sala com inimigo pode sair dela; a regra do Portal fala em salas "caso inimigos impeçam que você saia dela normalmente", sem definir quando isso acontece (p. 7). Combinem antes.
+
+**Encontro já resolvido.** O manual manda resolver os ícones "imediatamente quando um herói entra neste local" (p. 8), mas o Encontro com Goblin e o com Lacaio falam da sala "que acaba de ser revelada", e só a Armadilha diz "cada vez que um herói entra" (p. 8). Este guia trata os Encontros como efeito da revelação, não de cada entrada.
+
 **Desarmar mais tarde.** O manual descreve Desarmar logo depois do teste de escapar. Não diz se dá para tentar num turno seguinte, já na sala; este guia trata como tentativa daquele momento.
 
 **Limite de cartas cheio.** O manual dá os limites, mas não diz o que fazer ao descobrir uma carta com o limite cheio. Como descartar é Ação Livre, uma leitura é descartar uma das suas para abrir espaço.
@@ -523,7 +527,7 @@ Responda sem consultar. Ao tocar numa opção, aparecem a resposta certa e a eta
 1. Mover: 1 de Velocidade por sala; revelar custa 1 e pede corredor ligado.
 2. 1 Ação Heroica (placa azul): Atacar, Lançar Feitiço, Procurar, Desarmar Armadilha, Descansar. Encerra o movimento.
 3. Ações Livres (placa laranja), quantas puder pagar.
-4. Fim: a tocha desce 1; resolva o ícone onde parar ou por onde passar.
+4. Fim: a tocha desce 1; resolva o ícone onde parar ou por onde passar. Passa a vez em sentido horário.
 
 **Perigos ao entrar:** Goblin, 1 dano e para; Lacaio, 2 danos e para; Armadilha, teste a cada entrada; sala com inimigo, para.
 

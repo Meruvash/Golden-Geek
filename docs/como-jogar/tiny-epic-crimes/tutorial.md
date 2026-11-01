@@ -90,11 +90,11 @@ O assassino é uma das 16 Cartas de Suspeito. Há dois caminhos até ele, e o jo
 - **Riscar inocentes.** As outras Cartas de Suspeito têm álibi: cada uma que você vê sai da lista.
 - **Decifrar evidências.** O assassino tem cinco traços, cada um com duas possibilidades, revelados quando os jogadores, somados, juntam fichas suficientes de um tipo.
 
-Só quem pega a última ficha vê o traço; quem ajudou ganha uma Carta de Suspeito. Todos colaboram para decifrar, mas cada um guarda o que sabe (p. 4, 9 e 10). E o tempo é a moeda: joga sempre quem gastou menos horas (p. 8).
+Só quem pega a última ficha vê o traço; quem ajudou ganha uma Carta de Suspeito. Todos colaboram para decifrar, mas cada um guarda o que sabe (p. 4, 9 e 10).
 
 ## 1. Como este guia ensina
 
-São quatro etapas, cada uma uma parte real da partida. Cada etapa tem **Para entender** (como funciona e por quê), **Passo a passo** (as regras de sempre), regras adicionais para casos menos frequentes e tarefas com ajuda decrescente: **exemplo resolvido**, tarefa para **completar** e **sua vez**. Escolha uma opção em cada pergunta para ver a certa e a explicação. No fim, uma avaliação diz o que reler, e uma folha de consulta vai para a mesa.
+São quatro etapas, cada uma uma parte real da partida, com **Para entender** (como funciona e por quê), **Passo a passo** (as regras de sempre), regras adicionais para casos menos frequentes e tarefas com ajuda decrescente: **exemplo resolvido**, tarefa para **completar** e **sua vez**. Escolha uma opção em cada pergunta para ver a certa e a explicação. No fim, uma avaliação diz o que reler, e a folha de consulta vai para a mesa.
 
 ## 2. Etapa 1: montar a cidade
 
@@ -116,11 +116,11 @@ São quatro etapas, cada uma uma parte real da partida. Cada etapa tem **Para en
 > 12. Cartas de Suspeito embaralhadas; uma, sem ser revelada, entra no Envelope de Assassino com a seta do verso visível na fenda.
 > 13. Cartas de Evento embaralhadas. Vire uma no espaço "1" abaixo da trilha, leia em voz alta a preparação dela e cumpra.
 
-!fig[A cidade montada: Trilha de Tempo e primeiro Evento no alto, Fichas de Dado e de Testemunha no topo, de Dado e de Informante à esquerda, fichas nos quarteirões marcados, carros na Delegacia e os 3 primeiros mafiosos. Ilustração: manual Asmodee (p. 7)](figuras/preparacao.webp)
+!fig[A cidade montada, com a Trilha de Tempo e o primeiro Evento no alto, as fichas nas bordas e nos quarteirões, os carros na Delegacia e os 3 primeiros mafiosos. Ilustração: manual Asmodee (p. 7)](figuras/preparacao.webp)
 
-> [!mais] **Anotações.** Papel e lápis são permitidos, em segredo; ninguém é obrigado a mostrar o que anotou. O manual sugere anotar os 5 formatos de evidência e as letras de A a P, uma por suspeito (p. 6).
+> [!mais] **Anotações.** Papel e lápis são permitidos, em segredo, e ninguém é obrigado a mostrar o que anotou (p. 6).
 
-> [!suavez] **Sua vez.** Responda olhando só o passo a passo.
+> [!suavez] **Sua vez.** Use só o passo a passo.
 >
 > ?? Onde ficam as Fichas de Testemunha?
 > - ( ) Uma ao lado de cada Ficha de Dado preta
@@ -130,7 +130,7 @@ São quatro etapas, cada uma uma parte real da partida. Cada etapa tem **Para en
 
 ## 3. Etapa 2: o tempo, o turno e os mafiosos
 
-> [!entender] **Para entender.** O relógio substitui a rodada. Toda escolha custa horas, e joga sempre quem está mais atrás (p. 8): um turno caro só adia o seu próximo turno, enquanto os outros jogam duas ou três vezes. As horas também decidem o que você pode fazer, porque algumas ações só valem de dia e outras só de noite (p. 15).
+> [!entender] **Para entender.** O relógio substitui a rodada. Toda escolha custa horas, e joga sempre quem está mais atrás (p. 8): um turno caro adia o seu próximo turno, enquanto os outros jogam. As horas também decidem o que você pode fazer: há ações só de dia e só de noite (p. 15).
 
 > [!passos] **Passo a passo: o seu turno** (p. 8, 11 e 16)
 >
@@ -152,9 +152,9 @@ São quatro etapas, cada uma uma parte real da partida. Cada etapa tem **Para en
 
 > [!passos] **Passo a passo: Prender, Pausa para o Café e Chamar Reforços** (p. 11 e 12)
 >
-> 1. **Prender** (1 hora): no quarteirão de um mafioso, ponha-o no espaço livre da cor dele, no lado direito do seu tabuleiro. Já tem um daquela cor: o novo volta para a Bolsa. Com os 3 espaços ocupados (azul, vermelho e cinza), avance 1 Nível de Distintivo e devolva os 3 para a Bolsa.
+> 1. **Prender** (1 hora): ponha o mafioso do seu quarteirão no espaço da cor dele, no lado direito do seu tabuleiro; se já houver um daquela cor, o novo volta para a Bolsa. Com os 3 espaços ocupados, avance 1 Nível de Distintivo e devolva os 3 para a Bolsa.
 > 2. **Pausa para o Café** (1 hora): você não faz nada.
-> 3. **Chamar Reforços** (diurna): com mafiosos no seu quarteirão e/ou nos vizinhos, anuncie quantas horas arrisca, de 1 a 6, e role um dado. Igual ou menor: sucesso; detenha todos os mafiosos do seu quarteirão e dos vizinhos, devolva-os para a Bolsa e ganhe uma Carta de Corporação. Maior: falha; detenha só o mafioso do seu quarteirão, se houver. Nos dois casos, gaste as horas arriscadas.
+> 3. **Chamar Reforços** (diurna): com mafiosos no seu quarteirão e/ou nos vizinhos, anuncie quantas horas arrisca, de 1 a 6, e role um dado. Igual ou menor: sucesso; detenha todos os mafiosos do seu quarteirão e dos vizinhos (para a Bolsa) e ganhe uma Carta de Corporação. Maior: falha; detenha só o mafioso do seu quarteirão, se houver. Nos dois casos, gaste as horas arriscadas.
 
 !fig[Prender: por 1 hora, o mafioso azul vai para o espaço azul do tabuleiro (A); com as três cores, +1 Nível de Distintivo e os três voltam para a Bolsa (B). Ilustração: manual Asmodee (p. 11)](figuras/prender.webp)
 
@@ -168,7 +168,7 @@ São quatro etapas, cada uma uma parte real da partida. Cada etapa tem **Para en
 
 > [!mais] **Onda de Crimes.** Dois 1, dois 2, dois 4 ou dois 5: aplique o resultado e faça outra Rolagem de Mafioso. Dois 3 e dois 6 não contam, e pode haver várias ondas seguidas (p. 16).
 
-> [!mais] **Um mafioso por quarteirão.** Nunca há dois mafiosos não detidos num quarteirão, nem por efeito de carta. Bolsa vazia na hora de tirar mafioso: Penalidade por Excesso de Eventos, da etapa 4 (p. 16).
+> [!mais] **Um mafioso por quarteirão.** Vale sempre, mesmo contra cartas. Bolsa vazia na hora de tirar mafioso: Penalidade por Excesso de Eventos, da etapa 4 (p. 16).
 
 > [!mais] **O limite de 48 horas.** O indicador não passa do 48. Se a ação o levaria além, escolha outra (p. 14).
 
@@ -219,7 +219,7 @@ São quatro etapas, cada uma uma parte real da partida. Cada etapa tem **Para en
 > | Gangue | Rinocerontes Rubros ou Abelhas Azuis | 5 Fichas de Testemunha |
 > | Cargo | Chefe ou Subchefe | 5 Fichas de Informante |
 > | Perícia | Impressões digitais ou Pegadas | 3 Fichas de Investigação com sucesso |
-> | Fuga | Carro ou Moto | 3 Fichas de Tocaia |
+> | Fuga | Carro ou Moto | 3 Fichas de Tocaia com sucesso |
 > | Arma | Pistola ou Faca | 3 Fichas de Custódia |
 >
 > A soma das fichas de todos decifra a evidência, mas só quem coleta a última a vê (p. 9 e 10). Com os traços, você restringe os suspeitos; com as Cartas de Suspeito, risca inocentes.
@@ -234,7 +234,7 @@ São quatro etapas, cada uma uma parte real da partida. Cada etapa tem **Para en
 > [!passos] **Passo a passo: Decifre Evidências** (p. 9 e 10). Quando a soma de fichas de um tipo se completa:
 >
 > 1. Quem coletou a última pega a Ficha de Evidência daquele tipo.
-> 2. Essa pessoa tira a carta do Envelope de Assassino sem revelá-la, desliza-a no Envelope de Evidência do mesmo tipo com a seta branca visível, vira o envelope e vê o símbolo pelo orifício, em segredo. Depois, devolve a carta ao Envelope de Assassino.
+> 2. Ela passa a carta do assassino, sem revelá-la, para o Envelope de Evidência do mesmo tipo, com a seta branca visível, vira o envelope e vê o símbolo pelo orifício, em segredo. Depois, devolve a carta ao Envelope de Assassino.
 > 3. Cada jogador com pelo menos uma ficha daquele tipo ganha 1 Carta de Suspeito, uma só, por mais fichas que tenha.
 
 !fig[Decifrar o Cargo: a Ficha de Evidência vai para o tabuleiro (1), e o Envelope de Evidência, virado, mostra o símbolo, aqui o de Chefe (2A e 2B). Ilustração: manual Asmodee (p. 9)](figuras/evidencia.webp)
@@ -255,7 +255,7 @@ São quatro etapas, cada uma uma parte real da partida. Cada etapa tem **Para en
 
 > [!mais] **Consultar uma Evidência Decifrada.** O detentor da Ficha de Evidência olha a sua quando quiser. Os outros, só por recompensa de Evento: você olha a evidência no envelope dele, e ele olha uma Carta de Suspeito sua, ao acaso. Você precisa ter uma; ele não pode recusar; se ele tiver várias, você escolhe qual (p. 10).
 
-> [!resolvido] **Exemplo resolvido.** Partida de 4. Ana tem 2 Fichas de Informante; Bruno, 1; Carla e Davi, nenhuma. Carla pega as duas que restam, em dois turnos diurnos: são 5, e o Cargo está decifrado. Carla pega a Ficha de Evidência de Cargo e vê pelo envelope o símbolo de Subchefe. Ana, Bruno e Carla ganham 1 Carta de Suspeito cada; Davi, sem Ficha de Informante, não.
+> [!resolvido] **Exemplo resolvido.** Partida de 4. Ana tem 2 Fichas de Informante; Bruno, 1; Carla e Davi, nenhuma. Carla pega as duas que restam, em dois turnos diurnos: são 5. Ela pega a Ficha de Evidência de Cargo e vê pelo envelope o símbolo de Subchefe. Ana, Bruno e Carla ganham 1 Carta de Suspeito cada; Davi, sem Ficha de Informante, não.
 
 > [!complete] **Complete.** De noite, Bruno está no 20, a 3 quarteirões de um mafioso cuja coluna ainda tem Ficha de Testemunha. Ele dirige até lá e faz Pegar Testemunha.
 >
@@ -271,7 +271,7 @@ São quatro etapas, cada uma uma parte real da partida. Cada etapa tem **Para en
 > - ( ) Sucesso: mostre a ficha e avance o Distintivo
 > - (x) Falha: a ficha volta escondida e você gasta 3 horas
 > - ( ) Falha, sem gastar horas
-> = 4 é maior que 3. A ficha volta virada para baixo, o número fica em segredo, o Distintivo não anda e as horas arriscadas são gastas (p. 11 e 13).
+> = 4 é maior que 3: a ficha volta escondida, o Distintivo não anda e as horas arriscadas são gastas (p. 11 e 13).
 >
 > ?? Você vira uma Ficha de Investigação com falha. Avança o Distintivo?
 > - (x) Sim
@@ -279,10 +279,9 @@ São quatro etapas, cada uma uma parte real da partida. Cada etapa tem **Para en
 > - ( ) Não, e a ficha volta ao quarteirão
 > = Em Investigar Cena, a ficha vai para o tabuleiro e o Distintivo avança com sucesso ou falha (p. 12).
 
-
 ## 5. Etapa 4: Eventos, Cartas de Corporação e a acusação
 
-> [!entender] **Para entender.** Os Eventos são problemas da cidade: até 3 ficam ativos, cada um com preparação, efeito negativo e exigência (p. 14). Resolvê-los rende recompensas, e uma delas é a única forma de ver uma evidência decifrada por outro jogador. Quando não cabem mais Eventos, uma Carta de Suspeito some sem ninguém ver (p. 16).
+> [!entender] **Para entender.** Os Eventos são problemas da cidade: até 3 ativos, cada um com preparação, efeito negativo e exigência (p. 14). Resolvê-los rende recompensas, inclusive a única forma de ver uma evidência decifrada por outro jogador. Quando não cabem mais Eventos, uma Carta de Suspeito some sem ninguém ver (p. 16).
 
 > [!passos] **Passo a passo: Comprar um Evento** (p. 15). Se o seu indicador for o primeiro de todos a cruzar uma linha vermelha:
 >
@@ -297,7 +296,7 @@ São quatro etapas, cada uma uma parte real da partida. Cada etapa tem **Para en
 >
 > Recompensas: Carta de Suspeito, Carta de Corporação, +1 Nível de Distintivo, consultar 1 Evidência Decifrada (p. 14 e 20).
 
-> [!mais] **Habilidade e Corporação.** A Carta de Habilidade diz o efeito e quando usá-lo. Carta de Corporação usada vai para um descarte aberto, que é embaralhado quando o baralho acaba. Você tem no máximo 2: ganhou a terceira, descarte a nova ou uma das suas (p. 15).
+> [!mais] **Habilidade e Corporação.** A Carta de Habilidade diz o efeito e quando usá-lo. Carta de Corporação usada vai para um descarte aberto, reembaralhado quando o baralho acaba. Você tem no máximo 2: ganhou a terceira, descarte a nova ou uma das suas (p. 15).
 
 > [!mais] **Penalidade por Excesso de Eventos.** Com 3 Eventos ativos, o quarto não entra: descarte a carta do topo do baralho de suspeitos sem revelá-la. Baralho de suspeitos vazio: cada indicador avança 1 hora, menos os que estão no 48 (p. 16).
 
@@ -305,7 +304,7 @@ São quatro etapas, cada uma uma parte real da partida. Cada etapa tem **Para en
 
 > [!mais] **Rolagens na preparação de Evento.** Role de novo qualquer 6, qualquer quarteirão com mafioso e a Delegacia (salvo se a carta a indicar). Não há atenuação, Evento extra nem mafioso extra por números iguais (p. 15).
 
-> [!mais] **Recompensas Limitadas.** Se a recompensa não der para todos, cada um escolhe pela ordem da Trilha de Tempo, a partir de quem está mais atrás (p. 14).
+> [!mais] **Recompensas Limitadas.** Se não der para todos, escolhe primeiro quem está mais atrás na Trilha de Tempo (p. 14).
 
 > [!passos] **Passo a passo: Encerrar Seu Caso e a acusação** (p. 14 e 17)
 >
@@ -315,7 +314,7 @@ São quatro etapas, cada uma uma parte real da partida. Cada etapa tem **Para en
 > 4. Só um acertou: vence. Ninguém acertou: todos perdem.
 > 5. **Empate entre quem acertou:** Nível de Distintivo mais alto; depois, mais tempo restante (menos horas gastas); depois, mais Fichas de Evidência; persistindo, vitória dividida.
 
-> [!resolvido] **Exemplo resolvido.** Ana e Bruno acusam o suspeito certo; Carla erra, embora tenha o Distintivo mais alto, 9, e fica fora do desempate. Ana e Bruno têm Distintivo 7. Ana terminou no 46, Bruno no 45: Bruno gastou menos horas e vence.
+> [!resolvido] **Exemplo resolvido.** Ana e Bruno acusam o suspeito certo; Carla erra e, mesmo com Distintivo 9, fica fora. Ana e Bruno têm Distintivo 7. Ana terminou no 46, Bruno no 45: Bruno gastou menos horas e vence.
 
 > [!complete] **Complete.** Há 3 Eventos ativos, e a Rolagem de Mafioso de Davi cai num quarteirão ocupado.
 >
@@ -325,7 +324,6 @@ São quatro etapas, cada uma uma parte real da partida. Cada etapa tem **Para en
 > - ( ) O Evento mais antigo sai, e entra o novo
 > = Quarteirão ocupado manda comprar Evento; com 3 ativos, vem a Penalidade por Excesso de Eventos (p. 16).
 
-
 > [!suavez] **Sua vez.**
 >
 > ?? Você estava no 41, fez uma ação de 2 horas e terminou o turno no 43. Pode Encerrar Seu Caso?
@@ -334,23 +332,22 @@ São quatro etapas, cada uma uma parte real da partida. Cada etapa tem **Para en
 > - ( ) Não: é preciso começar o turno no vermelho
 > = Basta terminar o turno com o indicador nas horas 43 a 48 (p. 14).
 
-
 ## 6. Situações especiais
 
-**Partida de 2 jogadores.** Use 3 Fichas de Informante, ao lado das Fichas de Dado pretas 1, 3 e 5, e 3 Fichas de Testemunha, ao lado das brancas 2, 3 e 4; bastam 3 para decifrar o Cargo e 3 para a Gangue. No Modo Padrão, separe também 4 Cartas de Suspeito viradas para baixo entre os dois, sob um Carro não usado: os álibis de um "agente fantasma". Ao Interrogar, você pode comprar uma delas, depois de embaralhá-las, em vez de pegar do outro jogador, e devolvê-la em seguida (p. 17).
+**Partida de 2 jogadores.** Use 3 Fichas de Informante, ao lado das Fichas de Dado pretas 1, 3 e 5, e 3 Fichas de Testemunha, ao lado das brancas 2, 3 e 4; bastam 3 para decifrar o Cargo e 3 para a Gangue. No Modo Padrão, separe também 4 Cartas de Suspeito viradas para baixo, sob um Carro não usado: os álibis de um "agente fantasma". Ao Interrogar, você pode embaralhá-las e comprar uma em vez de pegar do outro jogador, devolvendo-a depois (p. 17).
 
-> [!mais] **Modo Cooperativo.** Tabuleiros de Agente e de Tempo no lado Cooperativo; agentes: Detetive e Patrulheira (2 jogadores), mais Analista (3), os quatro (4). Antes de encher a Bolsa, tire 1 Gângster Cinza (2 jogadores), 1 mafioso de cada cor (3) ou 2 de cada cor (4); um Gângster Cinza removido, ao lado das 48 horas, marca a hora final (Marcador de Tempo Esgotado). Cada agente faz só as ações do seu tabuleiro, além de Dirigir, Prender, Chamar Reforços e Pausa para o Café, sem restrição de dia e noite. Presos vão para a Bolsa. Cartas de Suspeito ficam abertas, evidências são de todos, e ninguém ganha Carta de Suspeito por ter fichas. Na Penalidade por Excesso de Eventos, ou com a Bolsa sem mafiosos, o Gângster Cinza da trilha recua 1 espaço. Com 2 jogadores, as Cartas de Corporação formam um conjunto comum de até 4. Detetive e Analista podem trocar uma Carta de Corporação ganha por uma Carta de Suspeito, gastando 3 horas. A equipe faz uma única acusação (p. 10, 18 e 19).
+> [!mais] **Modo Cooperativo.** Tabuleiros de Agente e de Tempo no lado Cooperativo. Com 2 jogadores, Detetive e Patrulheira, e tire 1 Gângster Cinza da Bolsa; com 3, mais a Analista, e tire 1 mafioso de cada cor; com 4, os quatro agentes, e tire 2 de cada cor. Um Gângster Cinza removido, ao lado das 48 horas, marca a hora final (Marcador de Tempo Esgotado). Cada agente faz só as ações do seu tabuleiro, além de Dirigir, Prender, Chamar Reforços e Pausa para o Café, de dia ou de noite. Presos vão para a Bolsa. Cartas de Suspeito ficam abertas, evidências são de todos, e ninguém ganha Carta de Suspeito por ter fichas. Na Penalidade por Excesso de Eventos, ou com a Bolsa sem mafiosos, o Gângster Cinza da trilha recua 1 espaço. Com 2 jogadores, as Cartas de Corporação formam um conjunto comum de até 4. Detetive e Analista podem trocar uma Carta de Corporação ganha por uma Carta de Suspeito, gastando 3 horas. A equipe faz uma única acusação (p. 10, 18 e 19).
 
-> [!mais] **Modo Solo.** Uma partida Cooperativa para 2, com você controlando os dois agentes; para mais desafio, 3 ou 4 agentes (p. 19).
+> [!mais] **Modo Solo.** Uma partida Cooperativa para 2, com você nos dois agentes; ou 3 ou 4 agentes, para mais desafio (p. 19).
 
 > [!edicao] **Pontos em que o manual deixa dúvida.** O guia escolheu uma leitura em cada um; combine com a mesa.
 >
-> - **Vizinhos em Chamar Reforços:** a diagonal conta? O guia diz que não, como em Dirigir e no exemplo da p. 12 (p. 11 e 12).
+> - **Vizinhos em Chamar Reforços:** sem diagonal, como em Dirigir e no exemplo da p. 12 (p. 11 e 12).
+> - **Horas da Tocaia com falha:** só Chamar Reforços diz com todas as letras que as horas arriscadas se gastam na falha; o guia aplica à Tocaia a regra geral do custo da ação (p. 11 a 13).
 > - **Coordenadas:** o texto da p. 16 cita "preto-2 e branco-4" como "coluna-linha", mas a preparação e a ilustração põem as brancas nas colunas e as pretas nas linhas; o guia segue a ilustração (p. 5 e 16).
 > - **Investigação com falha:** pela letra da p. 10 ("pelo menos uma Ficha de Pista daquele tipo"), quem só tem uma falha também ganha a Carta de Suspeito (p. 10 e 12).
-> - **Álibis:** das duas maneiras da p. 8, o guia usa olhar a carta de outro jogador só quando o baralho está vazio.
+> - **Álibis:** das duas maneiras da p. 8, olhar a carta de outro jogador só vale com o baralho vazio.
 > - **Encerrar Seu Caso:** listado entre as ações, mas descrito como escolha ao fim do turno; o guia segue a descrição (p. 14).
-> - **Patente** e **Nível de Distintivo** são a mesma trilha (p. 4 e 10).
 
 ## 7. Avaliação final
 
@@ -360,7 +357,7 @@ Responda sem consultar. Cada resposta diz o que reler.
 - ( ) O que chegou primeiro
 - (x) O do topo, o último a chegar
 - ( ) O do jogador mais novo
-= Quem chega a um espaço ocupado põe o seu por cima, e empatados joga o do topo (p. 11 e 16). Releia a etapa 2.
+= Quem chega a um espaço ocupado fica por cima, e joga o do topo (p. 11 e 16). Releia a etapa 2.
 
 ?? 2. É noite. Qual ação você pode fazer?
 - ( ) Investigar Cena
@@ -372,7 +369,7 @@ Responda sem consultar. Cada resposta diz o que reler.
 - ( ) Ganha 2 Cartas de Suspeito
 - (x) Pega a Ficha de Evidência e vê o Cargo pelo envelope
 - ( ) Lê o cargo do assassino em voz alta
-= Só quem coleta a última vê, em segredo; todos com Ficha de Informante, você inclusive, ganham 1 Carta de Suspeito (p. 9 e 10). Releia a etapa 3.
+= Só quem coleta a última vê, em segredo; todos com Ficha de Informante ganham 1 Carta de Suspeito (p. 9 e 10). Releia a etapa 3.
 
 ?? 4. Seu mafioso está no Espaço de Custódia, e o próximo turno começa de dia. Pode concluir na Delegacia?
 - (x) Não: espere um turno noturno
@@ -400,7 +397,7 @@ Responda sem consultar. Cada resposta diz o que reler.
 1. Dirigir (opcional): 1 hora por quarteirão, sem diagonal.
 2. Realizar 1 Ação. Avance: direção + ação. Nunca além do 48.
 3. Comprar um Evento: se for o primeiro a cruzar uma linha vermelha.
-4. Rolagem de Mafioso: branco = coluna, preto = linha. Vazio: mafioso. Ocupado: Evento. 6 ou 3 e 3: nada. Iguais (1, 2, 4, 5): põe e rola de novo.
+4. Rolagem de Mafioso: branco = coluna, preto = linha. Vazio: mafioso. Ocupado: Evento. 6 ou 3 e 3: nada. Iguais (1, 2, 4, 5): rola de novo.
 
 | Ação | Quando | Horas | Efeito |
 |---|---|---|---|
@@ -421,6 +418,6 @@ Responda sem consultar. Cada resposta diz o que reler.
 
 ## 9. Fontes
 
-- Asmodee. *Tiny Epic Crimes: livro de regras* (edição brasileira, v1.0, 20 páginas, PDF de 07/11/2023; tradução de Fernanda Rocha, revisão de Gabriel Novaes e Luis Perdomo). Biblioteca de downloads da Asmodee Brasil, https://www.asmodee.com.br/download-library. Consultado em 01/11/2026.
+- Asmodee. *Tiny Epic Crimes: livro de regras* (edição brasileira, v1.0, 20 páginas, PDF de 07/11/2023; tradução de Fernanda Rocha). Biblioteca de downloads da Asmodee Brasil, https://www.asmodee.com.br/download-library. Consultado em 01/11/2026.
 - Asmodee Brasil. Página do produto TNE101, https://www.asmodee.com.br/tiny-epic-crimes/produto/TNE101 (1 a 4 participantes, 30 a 60 minutos, 14+). Consultado em 01/11/2026.
 - Não foram consultados FAQ, errata ou o manual original em inglês.

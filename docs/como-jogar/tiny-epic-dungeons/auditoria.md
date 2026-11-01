@@ -124,3 +124,23 @@ Reli o trecho de cada afirmação normativa no PDF depois de escrever. "OK" = co
 2. Teste de execução da seção "Comece" com 2 e 4 heróis.
 3. Baixar o manual da Galápagos/Asmodee (TNE001) e comparar a terminologia; se mudar, acrescentar a tabela de correspondência à folha de consulta.
 4. Procurar FAQ ou errata da Gamelyn sobre Desarmar ("ou" / "e") e sobre a Ação Livre de revelar salas.
+
+## Auditoria independente: partida simulada
+
+Teste feito só com o tutorial.md, sem abrir o manual antes do fim da simulação. Partida para 2 heróis (Ana com Thordin, Bruno com um segundo herói) e conferência do modo solo.
+
+**Preparação.** Baralho A com 9 Salas, B com 2 Encontros e 6 Salas, C com 3 Salas e a Porta do Covil: 19 cartas. Entrada no centro com 1 Altar e 4 cartas viradas para baixo nos lados; mais 2 Altares separados; tocha no espaço "2"; 2 Marcadores de Vida perto do Baralho de Lacaio. Montou sem travar. O resumo do "Comece" dizia "1 carta do Baralho da Masmorra virada", o que pode ser lido como virada para cima.
+
+**Rodada 1.** Ana (mais nova) gasta 1 de Velocidade, revela a carta ao norte, gira para ligar à Entrada, põe cartas viradas para baixo nos corredores abertos, entra: sala vazia. Revela a próxima: Encontro com Goblin, 1 dano, para; carta de Goblin no espaço 1, marcador 1 na sala. Ataca com o Martelo (Força 3 dados + Dado de Inimigo), mata o Goblin, ganha Foco pelos raios. Tocha desce 1. Aqui faltou dizer quem joga depois. Bruno anda até a sala do Goblin morto e revela outra. Ficou a dúvida se reentrar na sala do Encontro com Goblin dispara outro Goblin, e se um herói que começa o turno numa sala com inimigo pode sair dela (a nota do Portal sugere uma regra que o tutorial não dá). Tocha desce 1. Fim de rodada, de jogo e pontuação: claros (não há pontuação; vitória e derrota bem definidas).
+
+**Solo.** Claro: pelo menos 2 heróis, número de heróis vale como número de jogadores.
+
+| Lacuna | Resolução no manual | Correção |
+|---|---|---|
+| Ordem dos turnos não dita | p. 6: turnos em sentido horário; depois da tocha, "a vez do próximo jogador em sentido horário" | Acrescentado ao passo 5 do "Seu primeiro turno" e à folha de consulta |
+| "1 carta ... virada" no resumo da preparação | p. 4: cartas viradas para baixo nos 4 lados da Entrada | Resumo do "Comece" agora diz "do topo ... virada para baixo" |
+| Sair de uma sala com inimigo no começo do turno | p. 7 só trata de entrar numa sala com inimigo; a nota do Portal cita salas "caso inimigos impeçam que você saia" sem definir | Manual não resolve. Nova entrada em "Situações especiais", declarada como lacuna |
+| Reentrar em sala de Encontro com Goblin ou Lacaio | p. 8: Encontros falam da sala "que acaba de ser revelada"; só a Armadilha diz "cada vez que um herói entra" | Nova entrada em "Situações especiais", como leitura do texto da p. 8 |
+| Marcadores de Lacaio não aparecem na preparação | p. 2 lista 8 Marcadores de Lacaio; p. 4 e 5 não dizem onde ficam | Sem correção: o manual também omite. Só registrado aqui |
+
+**Veredito:** dá para jogar só com o tutorial, com as correções acima. As duas lacunas de movimento (sair de sala com inimigo, reentrar em sala de Encontro) não têm resposta no manual e ficaram declaradas no guia.
