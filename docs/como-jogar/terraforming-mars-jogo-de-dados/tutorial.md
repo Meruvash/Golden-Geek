@@ -19,7 +19,7 @@ Cada jogador comanda uma **corporação** que terraforma Marte. Os seus recursos
 5. **Prêmios:** pegue 1 dado de cada cor, sorteie 3 desses dados, role e ponha um em cada espaço de prêmio.
 6. **Marcos:** sorteie 3 e ponha no tabuleiro.
 7. Cada jogador recebe 5 cartas de projeto e 2 de corporação; fica com 1 corporação e devolve a outra.
-8. Na ordem de jogo, cada um revela a corporação, pega o bônus da **caixa vermelha** e a cobre com a peça da sua cor. Depois pega os dados da **caixa marrom**, rola e deixa à frente: são os seus primeiros recursos.
+8. Na ordem de jogo, cada um revela a corporação. Na parte de baixo da carta há dois quadros, que o manual chama de caixas: à esquerda, a **caixa vermelha**, com o bônus inicial; à direita, a **caixa marrom**, com os dados de produção (ilustração da p. 3). Pegue o bônus da caixa vermelha e cubra essa caixa com a peça da sua cor. Depois pegue os dados da caixa marrom, role e deixe à frente: são os seus primeiros recursos.
 9. Começa quem venceu mais recentemente uma partida de Terraforming Mars, de qualquer versão, e o jogo segue no sentido horário. O primeiro jogador dá 1 dos seus recursos ao último. Então começa a partida.
 
 ### Seu turno: produzir ou agir
@@ -89,8 +89,8 @@ O guia tem quatro etapas: montar a mesa e ler os dados; jogar um turno de ação
 > 6. Marcos: sorteie 3 e ponha no tabuleiro; os outros voltam à caixa.
 > 7. Começa quem venceu mais recentemente uma partida de qualquer versão de Terraforming Mars. A ordem segue no sentido horário. O manual não diz o que fazer se ninguém jogou: combinem.
 > 8. Cada jogador recebe 5 cartas de projeto. Embaralhe as corporações e dê 2 a cada um; cada jogador escolhe 1, e as não usadas voltam à caixa.
-> 9. Na ordem de jogo, cada um revela a corporação, recebe o bônus da caixa vermelha e cobre essa caixa com a peça da sua cor.
-> 10. Cada jogador recebe os dados da caixa marrom da corporação, rola e os deixa à frente: são os seus recursos.
+> 9. Na ordem de jogo, cada um revela a corporação, recebe o bônus da caixa vermelha e cobre essa caixa com a peça da sua cor. A caixa vermelha é o quadro de baixo, à esquerda, na carta de corporação (na carta do exemplo, Credicor, ela mostra 3 marcadores curinga).
+> 10. Cada jogador recebe os dados da caixa marrom da corporação, rola e os deixa à frente: são os seus recursos. A caixa marrom é o quadro de baixo, à direita, na carta de corporação; nas cartas verdes de projeto, ela fica no canto superior direito (ilustração da p. 3; p. 5).
 > 11. O primeiro jogador escolhe 1 dos seus recursos e o entrega ao último jogador (pule numa partida solo). Então começa.
 
 | Cor do dado | Comum (3 faces) | Incomum (2 faces) | Raro (1 face) |
