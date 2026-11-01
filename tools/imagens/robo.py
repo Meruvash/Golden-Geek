@@ -421,7 +421,8 @@ def original(url):
     """Pede a maior versão da imagem: tira sufixos de miniatura do Shopify e do WordPress."""
     p = urlsplit(url)
     caminho = re.sub(r"_(\d+x\d*|\d*x\d+|small|medium|large|grande|compact|thumb)(?=(@\dx)?\.\w+$)", "", p.path)
-    caminho = re.sub(r"-\d{2,4}x\d{2,4}(?=\.\w+$)", "", caminho)
+    if "cdn.sanity.io" not in p.netloc:  # no Sanity o tamanho faz parte do nome do arquivo
+        caminho = re.sub(r"-\d{2,4}x\d{2,4}(?=\.\w+$)", "", caminho)
     query = "&".join(q for q in p.query.split("&") if q and not re.match(r"(width|height|w|h|crop|v)=", q))
     return urlunsplit((p.scheme, p.netloc, caminho, query, ""))
 
@@ -432,6 +433,9 @@ def imagens_da_pagina(cli, url, rec):
     def add(u, alt=""):
         if u and not u.startswith("data:"):
             u = urljoin(url, u.strip())
+            if "/_next/image" in u and "url=" in u:  # Next.js: a imagem de verdade vem no parâmetro url
+                from urllib.parse import parse_qs
+                u = urljoin(url, parse_qs(urlsplit(u).query).get("url", [u])[0])
             if re.search(r"\.(jpe?g|png|webp)(\?|$)", u, re.I) or "/cdn/shop/" in u or "cdn.shopify.com" in u:
                 achadas.append((original(u), alt))
 

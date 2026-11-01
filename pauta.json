@@ -2254,7 +2254,8 @@
    "status": "na_fila",
    "prioridade": 53,
    "premios_distintos": 2,
-   "carro_chefe": true
+   "carro_chefe": true,
+   "slug": "the-quacks-of-quedlinburg"
   },
   {
    "jogo": "Kingdomino",
@@ -2562,7 +2563,8 @@
    "status": "na_fila",
    "prioridade": 62,
    "premios_distintos": 1,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "slug": "oath"
   },
   {
    "jogo": "Gloomhaven: Jaws of the Lion",
@@ -2640,10 +2642,14 @@
      "fonte": "https://eliteboardgamers.com.br/"
     }
    ],
-   "status": "na_fila",
+   "status": "sem_fotos",
    "prioridade": 26,
    "premios_distintos": 1,
-   "carro_chefe": true
+   "carro_chefe": true,
+   "fotos": {
+    "verificado_em": "2026-11-01",
+    "obs": "CMYK (só estúdio, crivo reprova topo), Asmodee Canada (mesmas fotos menores), Spiel des Jahres (só caixa), Strohmann Games (403), Korea Boardgames (sem página)"
+   }
   },
   {
    "jogo": "The Lord of the Rings: Duel for Middle-earth",
@@ -3098,7 +3104,8 @@
    "status": "na_fila",
    "prioridade": 71,
    "premios_distintos": 1,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "slug": "splendor-duel"
   },
   {
    "jogo": "Undaunted: Stalingrad",
@@ -3435,7 +3442,8 @@
    "status": "na_fila",
    "prioridade": 56,
    "premios_distintos": 1,
-   "carro_chefe": true
+   "carro_chefe": true,
+   "slug": "mechs-vs-minions"
   },
   {
    "jogo": "Santuário",
@@ -4156,10 +4164,14 @@
      "fonte": "https://eliteboardgamers.com.br/"
     }
    ],
-   "status": "na_fila",
+   "status": "sem_fotos",
    "prioridade": 52,
    "premios_distintos": 1,
-   "carro_chefe": true
+   "carro_chefe": true,
+   "fotos": {
+    "verificado_em": "2026-11-01",
+    "obs": "Gale Force Nine (gf9games.com e subdomínios: 403), Asmodee Canada (sem página), Wikimedia Commons (nada)"
+   }
   },
   {
    "jogo": "Mr Wolf",

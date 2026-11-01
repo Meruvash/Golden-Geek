@@ -1,0 +1,44 @@
+{
+ "slug": "the-quacks-of-quedlinburg",
+ "usar_na_pagina": true,
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 1428,
+   "altura": 1428,
+   "editora": "CMYK",
+   "credito": "Imagem: CMYK · edição dos EUA (CMYK)",
+   "pagina": "https://www.cmyk.games/products/quacks",
+   "imagem": "https://cdn.shopify.com/s/files/1/0473/5562/5629/files/Group25.png",
+   "baixada_em": "2026-11-01",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/jogabilidade-1.webp",
+   "tipo": "jogabilidade",
+   "largura": 1600,
+   "altura": 975,
+   "editora": "CMYK",
+   "credito": "Imagem: CMYK · edição dos EUA (CMYK)",
+   "pagina": "https://www.cmyk.games/products/quacks",
+   "imagem": "https://cdn.shopify.com/s/files/1/0473/5562/5629/files/Quackssmoke_1.jpg",
+   "baixada_em": "2026-11-01",
+   "aprovada": true,
+   "principal": true
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 1600,
+   "altura": 1067,
+   "editora": "CMYK",
+   "credito": "Imagem: CMYK · edição dos EUA (CMYK)",
+   "pagina": "https://www.cmyk.games/products/quacks",
+   "imagem": "https://cdn.shopify.com/s/files/1/0473/5562/5629/files/Quacks_tokens.jpg",
+   "baixada_em": "2026-11-01",
+   "aprovada": true,
+   "jogar": true
+  }
+ ]
+}

@@ -1,0 +1,57 @@
+{
+ "slug": "mechs-vs-minions",
+ "usar_na_pagina": true,
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 1000,
+   "altura": 1000,
+   "editora": "Riot Games",
+   "credito": "Imagem: Riot Games",
+   "pagina": "https://merch.riotgames.com/en-us/product/mechs-v-s-minions-wave-3/",
+   "imagem": "https://cdn.sanity.io/images/dsfx7636/consumer_products/655edd6c6f096fd6f837ce9a5440a4ae43c2e791-1000x1000.png?accountingTag=consumer_products",
+   "baixada_em": "2026-11-01",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/mesa-1.webp",
+   "tipo": "mesa",
+   "largura": 1000,
+   "altura": 1000,
+   "editora": "Riot Games",
+   "credito": "Imagem: Riot Games",
+   "pagina": "https://merch.riotgames.com/en-us/product/mechs-v-s-minions-wave-3/",
+   "imagem": "https://cdn.sanity.io/images/dsfx7636/consumer_products/7cfc9d6a11d8f4e98d845e9c93f8cd77544e4b4b-1000x1000.jpg?accountingTag=consumer_products",
+   "baixada_em": "2026-11-01",
+   "aprovada": true,
+   "principal": true
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 1000,
+   "altura": 1000,
+   "editora": "Riot Games",
+   "credito": "Imagem: Riot Games",
+   "pagina": "https://merch.riotgames.com/en-us/product/mechs-v-s-minions-wave-3/",
+   "imagem": "https://cdn.sanity.io/images/dsfx7636/consumer_products/639777f691be13dc73b8be87ffe20c26394f803e-1000x1000.jpg?accountingTag=consumer_products",
+   "baixada_em": "2026-11-01",
+   "aprovada": true,
+   "fora": true
+  },
+  {
+   "arquivo": "fotos/componentes-2.webp",
+   "tipo": "componentes",
+   "largura": 1000,
+   "altura": 1000,
+   "editora": "Riot Games",
+   "credito": "Imagem: Riot Games",
+   "pagina": "https://merch.riotgames.com/en-us/product/mechs-v-s-minions-wave-3/",
+   "imagem": "https://cdn.sanity.io/images/dsfx7636/consumer_products/bcf65a9cd739211569d501ea3e3159de04724b59-1000x1000.jpg?accountingTag=consumer_products",
+   "baixada_em": "2026-11-01",
+   "aprovada": true,
+   "jogar": true
+  }
+ ]
+}

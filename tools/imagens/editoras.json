@@ -1375,5 +1375,127 @@
    ],
    "verificado_em": "2026-11-01"
   }
+ },
+ "merch.riotgames.com": {
+  "nome": "Riot Games (loja oficial)",
+  "apelidos": [
+   "Riot Games Merch",
+   "Riot Games"
+  ],
+  "site": "https://merch.riotgames.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {
+   "mechs-vs-minions": "https://merch.riotgames.com/en-us/product/mechs-v-s-minions-wave-3/"
+  },
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://merch.riotgames.com/sitemap.xml"
+   ],
+   "verificado_em": "2026-11-01"
+  },
+  "js": true
+ },
+ "asmodee.ca": {
+  "nome": "Asmodee Canada",
+  "apelidos": [
+   "Asmodee Canada"
+  ],
+  "site": "https://www.asmodee.ca",
+  "plataforma": "wordpress",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.asmodee.ca/sitemap_index.xml"
+   ],
+   "verificado_em": "2026-11-01"
+  }
+ },
+ "strohmann-games.de": {
+  "nome": "Strohmann Games",
+  "apelidos": [
+   "Strohmann Games"
+  ],
+  "site": "https://strohmann-games.de",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "bloqueado",
+  "obs": "403 em https://strohmann-games.de"
+ },
+ "koreaboardgames.com": {
+  "nome": "Korea Boardgames",
+  "apelidos": [
+   "Korea Boardgames"
+  ],
+  "site": "https://www.koreaboardgames.com:443",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [],
+   "verificado_em": "2026-11-01"
+  }
+ },
+ "eaglegames.net": {
+  "nome": "Eagle-Gryphon Games",
+  "apelidos": [
+   "Eagle-Gryphon Games",
+   "Eagle-Gryphon",
+   "Eagle Games"
+  ],
+  "site": "https://www.eagle-gryphon.com",
+  "plataforma": "shopify",
+  "estrategia": "sitemap+shopify_json",
+  "press_kit": "https://www.eagle-gryphon.com/pages/store-locator",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.eagle-gryphon.com/sitemap.xml"
+   ],
+   "verificado_em": "2026-11-01"
+  }
+ },
+ "spacecowboys.fr": {
+  "nome": "Space Cowboys",
+  "apelidos": [
+   "Space Cowboys"
+  ],
+  "site": "https://www.spacecowboys-games.com:443",
+  "plataforma": "wordpress",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.spacecowboys-games.com/sitemap_index.xml"
+   ],
+   "verificado_em": "2026-11-01"
+  }
  }
 }
