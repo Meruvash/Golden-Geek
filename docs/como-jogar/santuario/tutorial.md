@@ -60,11 +60,6 @@ A força é o número para onde aponta a seta da carta de ação: no lado I, o n
 
 > [!suavez] **Agora a sua mesa.** Veja o seu alcance, pegue a peça e confira se a carta do habitat dela tem força suficiente.
 >
-> ?? A peça que você pegou é um Animal de Floresta, e a carta de Floresta tem força menor que o nível dele. O que você pode fazer no passo 2?
-> - ( ) Jogá-lo com a carta de Rocha ou de Água, se uma delas tiver força suficiente.
-> - ( ) Pegar mais 1 peça da vitrine dentro do alcance e depois jogá-lo.
-> - (x) Usar uma carta para ganhar peças: 2 do topo da pilha com uma carta de Animais, ou 1 de qualquer posição da vitrine com a de Projetos.
-> = Sem força na carta do habitat, o Animal não entra nesta ação (só o de habitat indefinido aceita qualquer das três). Resta ganhar peças: 2 do topo da pilha com uma carta de Animais, ou 1 de qualquer posição da vitrine com a de Projetos (p. 4 e 5).
 
 ### Setas na borda das peças e Prédios
 

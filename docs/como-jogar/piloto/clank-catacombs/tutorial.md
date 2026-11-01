@@ -63,23 +63,11 @@ Na ordem. O marcado *(depois)* se monta já e se usa mais tarde.
 
 > [!suavez] **Agora a sua mão.** Olhe as suas 5 cartas antes de jogar.
 >
-> ?? Como contar a Habilidade e as Botas da sua mão?
-> - ( ) 1 Habilidade por carta na mão, qualquer que seja
-> - ( ) 1 Bota por Roubar e 1 Habilidade por Contornar
-> - (x) 1 Habilidade por Roubar e 1 Bota por Contornar, mais o que o Rastejar imprime
-> = Roubar dá 1 Habilidade, Contornar dá 1 Bota, Tropeçar não dá nada e o Rastejar dá o efeito impresso nele (p. 2).
->
 > ?? Quantos cubos você vai pôr na área de Clank!?
 > - (x) Um para cada Tropeçar da mão
 > - ( ) Um para cada carta jogada
 > - ( ) Nenhum agora: o cubo do Tropeçar só entra no ataque
 > = Cada Tropeçar faz +1 Clank!, e o cubo vai para a área de Clank! na hora, sem escolha (p. 6).
->
-> ?? Que carta cabe na sua Habilidade?
-> - ( ) Só cartas da Reserva, no primeiro turno
-> - (x) Uma carta da Fileira ou da Reserva com custo até a sua Habilidade
-> - ( ) Qualquer carta, completando o custo com Botas
-> = O custo, no canto inferior direito, é pago em Habilidade, numa carta da Fileira ou da Reserva (p. 7).
 >
 > ?? Dá para sair da Cripta?
 > - ( ) Sempre: sair da Cripta é de graça

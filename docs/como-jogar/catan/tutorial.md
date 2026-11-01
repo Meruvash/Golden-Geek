@@ -77,11 +77,6 @@ Na primeira partida, use a montagem para principiantes desenhada na p. 1 do manu
 > - ( ) Minério e cereais
 > = Argila e madeira. Argila, madeira, lã e cereais é o custo da aldeia (p. 3).
 >
-> ?? Se só faltar a madeira e você tiver 4 lãs, que troca com a reserva resolve, sem porto?
-> - ( ) 1 lã por 1 madeira
-> - ( ) 2 lãs por 1 madeira
-> - (x) 4 lãs por 1 madeira
-> = 4 lãs por 1 madeira: com a reserva, sem porto, são sempre 4 cartas iguais por 1 à sua escolha. Com outro jogador, os termos são os que vocês combinarem (p. 3).
 
 ### Se sair 7
 

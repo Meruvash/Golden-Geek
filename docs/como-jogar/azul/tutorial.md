@@ -64,11 +64,6 @@ Pegar é obrigatório: ninguém passa a vez. A rodada continua até não sobrar 
 > - (x) O marcador de primeiro jogador, que vai para o espaço livre mais à esquerda da sua fileira do chão
 > = Quem pega do centro primeiro leva o marcador de primeiro jogador e o põe no espaço livre mais à esquerda da fileira do chão, onde ele conta como penalidade (p. 3).
 >
-> ?? Onde você guarda os azulejos que pegou?
-> - ( ) Divididos entre duas fileiras de modelo, para nada cair no chão
-> - (x) Todos numa só fileira de modelo, da direita para a esquerda; o que não couber vai para o chão
-> - ( ) Direto na parede, no espaço da cor deles
-> = Todos vão para uma só fileira de modelo, da direita para a esquerda, e o excesso cai na fileira do chão. A parede só recebe azulejos no fim da rodada (p. 3 e 4).
 
 ### Ainda não precisa saber
 
