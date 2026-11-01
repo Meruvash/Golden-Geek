@@ -74,6 +74,10 @@ Cartas e CP em detalhe: etapa 3. Fichas como Evasiva, os tipos de dano e a habil
 
 No duelo, quem leva a Vida do adversário a 0 vence. Se os dois chegarem a 0 ao mesmo tempo, é empate (p. 4).
 
+**Prefere ver?** O vídeo abaixo explica o jogo do começo ao fim, com as peças na mesa. Ele complementa este guia; em caso de diferença, vale o manual.
+
+!video[Dice Throne: Season 1 Rerolled (Conclave Editora) - Regras, canal Casa NERD lol | Casa NERD](https://www.youtube.com/watch?v=HcubuukAhIc&t=0s)
+
 > [!atencao] **Os três erros mais caros.** Só uma habilidade por turno, mesmo que os dados mostrem várias combinações. O jogador inicial não ganha CP nem compra carta no primeiro turno. A defesa não acontece se o ataque não deu dano normal (etapa 4).
 
 ## 0. Antes de tudo: o que é este jogo
@@ -127,6 +131,8 @@ O guia tem quatro etapas: montar a mesa e ler o tabuleiro do herói; rolar, atac
 > 5. Cada jogador rola 1 dado. Quem tirar o maior número é o jogador inicial e começa.
 > 6. Alguns heróis têm passos próprios de preparação, impressos no folheto, no quadro Hero Setup. Faça-os.
 
+!fig[A mesa de um jogador montada com a Pistoleira: o folheto com as fichas empilhadas (2 e 3), o tabuleiro do herói (1), o marcador de Vida em 50 (4), o de CP em 2 (5), o baralho (6), os dados (7) e o lugar da pilha de descarte. Ilustração: manual oficial Dice Throne (p. 2 e 3)](figuras/preparacao.webp)
+
 > [!mais] **Vida máxima.** Você pode se curar até 10 pontos acima da Vida inicial. Num duelo, o teto é 60 (p. 4).
 
 > [!mais] **Teto de CP.** O máximo é 15 CP. Se você ganhar CP com o marcador em 15, ele não sobe (p. 4).
@@ -178,6 +184,8 @@ O guia tem quatro etapas: montar a mesa e ler o tabuleiro do herói; rolar, atac
 > 5. Ative a habilidade: descubra os efeitos variáveis dela (alguns pedem rolagens extras) e resolva os que não precisam de alvo, como ganhar uma ficha, ganhar CP ou curar.
 >
 > Enquanto você rola, o adversário não interrompe: você pode usar as suas cartas, fichas e habilidades nos seus dados. Depois que você anuncia a habilidade, ele pode alterar os seus dados, você pode responder, e assim por diante até todos aceitarem o resultado (p. 15).
+
+!fig[O tabuleiro da Pistoleira: o requisito de cada habilidade aparece como dados desenhados no alto do espaço (o Take Cover, em B, pede 2 Balas e 3 Arrancadas). A defensiva Duel fica no espaço verde, e a suprema Fill'em with Lead!, embaixo, no meio. Ilustração: manual oficial Dice Throne (p. 5)](figuras/tabuleiro.webp)
 
 > [!passos] **Passo a passo: a fase de rolagem defensiva** (p. 4 e 13). Só acontece se a habilidade que você ativou é um **Ataque**: uma habilidade ofensiva que causa pelo menos 1 de dano a um adversário (p. 16).
 >
@@ -324,6 +332,8 @@ O guia tem quatro etapas: montar a mesa e ler o tabuleiro do herói; rolar, atac
 >
 > Cartas que custam 0 CP são jogadas de graça (p. 7).
 
+!fig[Uma Melhoria de Herói no lugar: a carta Take Cover II, de 2 CP (o custo fica à esquerda da carta), cobre o espaço Take Cover do tabuleiro e ainda traz uma habilidade nova, Mark the Target. Ilustração: manual oficial Dice Throne (p. 8)](figuras/melhoria.webp)
+
 > [!mais] **Melhoria sobre melhoria.** Você pode ir direto do nível I para o III. Para subir de II para III, ponha a carta nova sobre a anterior e pague só a diferença de custo entre as duas (p. 8 e 12).
 
 > [!mais] **Melhoria jogada não se vende.** Uma vez no tabuleiro, a Melhoria de Herói fica lá: não pode ser vendida (p. 8).
@@ -413,6 +423,8 @@ O guia tem quatro etapas: montar a mesa e ler o tabuleiro do herói; rolar, atac
 > 4. **Persistente:** fica em jogo até uma carta, um efeito de status ou uma habilidade tirá-la.
 > 5. **Tirar:** a ficha volta ao lugar dela no folheto. Se o efeito manda tirar um número de fichas, tire esse número.
 
+!fig[O exemplo do manual: um adversário deu à Pistoleira 1 ficha de Powder Keg e 2 de Wither, e as três ficam no meio do tabuleiro dela, que foi quem as recebeu. Ilustração: manual oficial Dice Throne (p. 6)](figuras/efeitos.webp)
+
 > [!mais] **Fichas a mais.** Se precisar de mais fichas que as da caixa, use qualquer outra coisa para representá-las (p. 6).
 
 > [!mais] **Efeitos únicos.** Efeitos marcados como únicos (Unique) seguem as regras da própria descrição, não as normais, e podem ter ficha de formato diferente (p. 7).
@@ -443,6 +455,8 @@ O guia tem quatro etapas: montar a mesa e ler o tabuleiro do herói; rolar, atac
 > 2. Pode ser jogada antes ou depois de o defensor ativar a habilidade defensiva.
 > 3. O dano que ela soma é do mesmo tipo do dano original.
 > 4. Só vale em Ataques: habilidade ofensiva contra um adversário, com pelo menos 1 de dano.
+
+!fig[A carta Eat Lead!, um Modificador de Ataque da Pistoleira que custa 1 CP: rola 5 dados e soma 1 de dano por Bala; se somou pelo menos 4, dá a ficha Derrubada. Ilustração: manual oficial Dice Throne (p. 11)](figuras/modificador.webp)
 
 > [!edicao] As versões 2.4.1 e 2.4.3 do manual dizem na p. 11 que Modificadores de Ataque só podem ser jogados num Ataque que você está ativando no seu turno, salvo indicação contrária. A versão 2.3.2 não tem essa frase. Seguimos a versão mais nova, porque o próprio manual se diz um documento vivo (p. 1).
 

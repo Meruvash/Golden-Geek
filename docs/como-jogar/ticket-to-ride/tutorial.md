@@ -59,6 +59,10 @@ Pilha de compras vazia: etapa 2. Trens insuficientes e rota paga só com Locomot
 
 Quando alguém termina o turno com 0, 1 ou 2 trens no estoque, cada jogador, inclusive ele, joga mais um turno. Aí cada um revela os Bilhetes: soma os completos, subtrai os incompletos. O dono do caminho contínuo mais longo ganha 10 pontos.
 
+**Prefere ver?** O vídeo abaixo explica o jogo do começo ao fim, com as peças na mesa. Ele complementa este guia; em caso de diferença, vale o manual.
+
+!video[Ticket to Ride - Como Jogar (Acione Legendas Klingon), canal Romir Play House](https://www.youtube.com/watch?v=pmHGhJdeHsA&t=0s)
+
 > [!atencao] **Os três erros mais caros.** Locomotiva aberta é a única carta do turno. Uma rota se paga com uma cor só (mais Locomotivas), nunca misturando cores. Bilhete que não foi completado tira os pontos dele no fim.
 
 ## 0. Antes de tudo: o que é este jogo
@@ -104,6 +108,8 @@ Cada pergunta tem opções: escolha uma e a resposta aparece, com a explicação
 > 8. Embaralhe os Bilhetes de Destino e dê 3 a cada jogador. Cada um olha os seus e decide com quais fica: pelo menos 2, ou os 3.
 > 9. Os Bilhetes devolvidos vão para o fundo da pilha de Bilhetes de Destino, que fica perto do tabuleiro.
 > 10. Começa o viajante mais experiente. A vez segue no sentido horário (p. 2).
+
+!fig[A mesa montada para 5 jogadores: o marcador de cada um no Início da Trilha de Pontos (1), a mão de 4 Cartas de Vagão (2), as 5 cartas abertas ao lado da pilha de compras (3), a carta de Maior Caminho Contínuo (4), os 3 Bilhetes de cada jogador (5) e a pilha de Bilhetes de Destino (6). Ilustração: manual Galápagos (p. 2 e 3)](figuras/preparacao.webp)
 
 > [!edicao] **Qual é a sua caixa?** Em 2025 a Days of Wonder lançou uma edição nova do jogo, com manual em português traduzido pela Galápagos. Nela há 33 Bilhetes, cada jogador recebe 4 no começo (e fica com pelo menos 2), a cor que o manual de 2016 chama de rosa aparece como roxo e a ação se chama "Controlar uma Rota". Este guia segue a caixa com 30 Bilhetes de Destino, que é a que a página do produto na loja da Galápagos descreve. Se a sua tiver 33 Bilhetes, prepare com 4 e veja as outras diferenças na seção 6.
 
@@ -170,6 +176,8 @@ Cada pergunta tem opções: escolha uma e a resposta aparece, com a explicação
 > 8. Não há limite de cartas na mão.
 > 9. **Pilha vazia:** quando a pilha de compras acabar, embaralhe bem o descarte e faça dele a nova pilha. As cartas descartadas estão em grupos da mesma cor, por isso o embaralhamento precisa ser caprichado.
 > 10. **Sem pilha e sem descarte:** se não houver carta na pilha nem no descarte, porque os jogadores seguram muitas cartas, você não pode comprar Cartas de Vagão e escolhe outra ação.
+
+!fig[As 5 cartas abertas, com uma Locomotiva entre elas, ao lado da pilha de compras virada para baixo e da pilha de Bilhetes de Destino. Ilustração: manual Galápagos (p. 3)](figuras/cartas-abertas.webp)
 
 > [!edicao] **Locomotiva aberta como segunda carta.** O manual brasileiro, como o original em inglês, proíbe pegar a Locomotiva que acabou de aparecer na reposição. Ele não fala de uma Locomotiva que já estava aberta desde antes. Como "quem a comprar só poderá comprar uma carta ao invés de duas" (p. 3), pegar uma Locomotiva aberta depois de já ter pego outra carta daria duas cartas no turno. Este guia lê assim: **nenhuma Locomotiva aberta pode ser a segunda carta**. O manual da edição de 2025 diz isso com todas as letras: a Locomotiva aberta tem de ser a primeira carta do turno.
 
@@ -251,6 +259,8 @@ Cada pergunta tem opções: escolha uma e a resposta aparece, com a explicação
 >
 > A tabela de pontos cresce mais rápido que o tamanho da rota. Uma rota de 6 espaços vale 15 pontos; duas rotas de 3 espaços, com os mesmos 6 trens, valem 8 no total. Rotas longas pagam melhor o trem e a carta, mas pedem muitas cartas de uma mesma cor e um turno inteiro para conquistar (p. 4).
 
+!fig[A Tabela de Pontuação: rotas de 1 a 6 espaços valem 1, 2, 4, 7, 10 e 15 pontos. Ilustração: manual Galápagos (p. 4)](figuras/tabela-pontos.webp)
+
 > [!passos] **Passo a passo: Conquistar uma Rota** (p. 3 e 4)
 >
 > 1. Escolha uma rota livre no mapa. Ela não precisa se ligar a nenhuma rota sua.
@@ -259,6 +269,8 @@ Cada pergunta tem opções: escolha uma e a resposta aparece, com a explicação
 > 4. Descarte as cartas usadas.
 > 5. Avance o seu marcador na Trilha de Pontos, na hora, pela Tabela de Pontuação: 1 espaço, 1 ponto; 2, 2 pontos; 3, 4 pontos; 4, 7 pontos; 5, 10 pontos; 6, 15 pontos.
 > 6. No máximo uma rota por turno, ligando duas cidades vizinhas.
+
+!fig[Dois exemplos de conquista. À esquerda, a rota azul de Montréal a New York se paga com 3 cartas azuis e recebe 3 trens do jogador verde; à direita, a rota cinza de Montréal a Toronto se paga com 3 cartas verdes e recebe 3 trens do jogador azul. Ilustração: manual Galápagos (p. 3)](figuras/conquistar-rota.webp)
 
 > [!passos] **Passo a passo: Rotas Duplas** (p. 3)
 >
@@ -375,6 +387,8 @@ Cada pergunta tem opções: escolha uma e a resposta aparece, com a explicação
 > 2. **Bilhetes:** todos revelam os seus. Bilhete com as duas cidades ligadas por uma série contínua de rotas suas soma o valor; Bilhete incompleto subtrai o valor.
 > 3. **Maior Caminho Contínuo:** quem tiver o caminho contínuo mais longo de trens da própria cor recebe a carta e 10 pontos. O caminho pode ter voltas e passar várias vezes pela mesma cidade, mas nenhum trem conta duas vezes. Em caso de empate, todos os empatados marcam os 10 pontos.
 > 4. **Vencedor:** quem tiver mais pontos. Empate: vence quem completou mais Bilhetes de Destino. Persistindo, vence quem tem a carta de Maior Caminho Contínuo.
+
+!fig[Um Bilhete de Destino (Chicago a New Orleans, 7 pontos) e a carta de Maior Caminho Contínuo, que vale 10 pontos na contagem. Ilustração: manual Galápagos (p. 2)](figuras/bilhete-e-bonus.webp)
 
 > [!atencao] Um Bilhete só conta como completo com rotas **suas**. Passar pelas rotas de outro jogador não liga as cidades para você. E o Maior Caminho Contínuo é medido em trens de uma cor só, a sua: não se somam trechos soltos, só uma linha que dá para percorrer sem pular.
 

@@ -87,6 +87,10 @@ Desenhos nos túneis, peças novas e salas especiais: etapa 4. Fantasma e Perigo
 
 Voltar à Cripta com um Artefato é escapar: ganha a ficha de Maestria (20 pontos). Quando todos escaparam ou foram nocauteados, vence quem tem mais pontos. Nocauteado sem Artefato ou nas Profundezas faz zero.
 
+**Prefere ver?** No vídeo abaixo, o canal Duque Board Games joga uma partida resumida. Ele complementa este guia; em caso de diferença, vale o manual.
+
+!video[CLANK! CATACOMBS - Gameplay resumida, canal Duque Board Games](https://www.youtube.com/watch?v=xKw1CC_aZHU&t=0s)
+
 > [!atencao] **Os três erros mais caros.** Carta adquirida vai para o descarte, não para a mão. Pegar o Artefato sobe o Marcador uma casa: ataques piores para todos, você inclusive. Nocaute nas Profundezas zera a pontuação, com qualquer Artefato.
 
 ## 0. Antes de tudo: o que é este jogo
@@ -158,6 +162,10 @@ Os exercícios são de múltipla escolha: toque numa opção e aparece a respost
 > 11. Começa o jogador mais furtivo (ou alguém sorteado), e a ordem segue no sentido horário. O primeiro põe 3 cubos seus na área de Clank!, o segundo 2, o terceiro 1 e o quarto nenhum.
 > 12. Se alguma carta da Fileira tiver um texto **Revelar**, execute-o antes do primeiro turno (p. 11).
 
+!fig[A mesa montada: o tabuleiro de Clank! com o Marcador do Dragão na Trilha de Fúria (A), a pilha de peças da masmorra (B) e o Banco com Ouro, Gazuas, Artefatos, fichas, Tabuleiro do Mercado e Bolsa do Dragão (C). Ilustração: manual Galápagos (p. 4)](figuras/preparacao.webp)
+
+!fig[A Reserva (Goblin, Mercenário, Explorar e Tomo Secreto) em cima e, embaixo, o Baralho da Masmorra ao lado das 6 cartas abertas da Fileira da Masmorra. Ilustração: manual Galápagos (p. 5)](figuras/fileira.webp)
+
 > [!atencao] O peão começa na Cripta, que fica na Peça Inicial mas fora da masmorra. A Cripta é também a única saída.
 
 > [!suavez] **Sua vez.** Você vai montar uma partida de 3 jogadores: o Jogador 1 começa, depois o Jogador 2, depois o Jogador 3. Responda olhando só o passo a passo.
@@ -206,6 +214,8 @@ Os exercícios são de múltipla escolha: toque numa opção e aparece a respost
 > 5. **Comprar cartas**, no manual brasileiro, é puxar do seu próprio baralho para a mão, nunca do Baralho da Masmorra. Se o seu baralho acabar, embaralhe o seu descarte, sem as cartas da área de jogo.
 > 6. **Adquirir uma Carta:** pague em Habilidade o custo do canto inferior direito. Pode ser uma carta de faixa azul da Fileira ou uma de faixa amarela da Reserva. Ela vai para o seu descarte. Não reponha a Fileira agora. A Reserva tem estoque limitado. O texto **Adquirir** de uma carta, se houver, acontece uma vez, na hora da aquisição na Fileira (p. 11).
 > 7. **Movimentação:** cada túnel custa pelo menos 1 Bota. Nesta etapa, use só túneis sem ícones; os ícones ficam para a etapa 4.
+
+!fig[O exemplo de turno do manual: a jogadora verde joga as cinco cartas de cima, gasta Espadas para derrotar o Kobold de Cristal e, com a Habilidade somada, adquire o Guia Especialista, que vai para o descarte. Ilustração: manual Galápagos (p. 13)](figuras/turno.webp)
 
 > [!resolvido] **Exemplo resolvido.** O Jogador 1 começa com Roubar, Roubar, Roubar, Tropeçar e Contornar. Ele joga as cinco. Os três Roubar dão 3 Habilidades; o Contornar dá 1 Bota; o Tropeçar faz +1 Clank!, e ele põe 1 cubo vermelho na área de Clank!.
 >
@@ -304,6 +314,8 @@ Os exercícios são de múltipla escolha: toque numa opção e aparece a respost
 > 4. Cubo de Fantasma: **todos** os jogadores sofrem 1 de dano, cada um com um cubo do próprio suprimento (quem não tiver usa um cubo preto separado no Banco). Depois do ataque, os Fantasmas voltam para a área de Clank!.
 > 5. Os cubos não sorteados ficam na bolsa.
 
+!fig[O ataque do exemplo do manual: com o Marcador na quinta casa da Trilha de Fúria, saem 4 cubos. O preto vai para o Banco, o verde dá 1 de dano à jogadora verde e os dois amarelos dão 2 ao amarelo, marcados no Contador de Pontos de Vida. Ilustração: manual Galápagos (p. 13)](figuras/ataque.webp)
+
 > [!passos] **Passo a passo: vida, dano e cura** (p. 12)
 >
 > - O Contador de Pontos de Vida tem 10 casas, do coração à caveira (ilustração da p. 12). O dano entra da esquerda para a direita.
@@ -389,6 +401,8 @@ Os exercícios são de múltipla escolha: toque numa opção e aparece a respost
 > 2. A peça vai num espaço vazio (nunca empilhada), pode ser girada à vontade e precisa encostar uma borda inteira em outra peça. A exceção são as bordas longas da Peça Inicial: ali a nova peça se alinha com a metade de cima ou com a de baixo.
 > 3. A peça nova completa o túnel por onde você saiu e pode acrescentar ícones a ele. Se você não tiver Botas para uma Pegada ou Gazua para um Cadeado, gire a peça para outra orientação, no mesmo lugar. Você também pode parar o movimento para buscar ajuda: adquirir uma carta, usar um Dispositivo ou combater um monstro.
 > 4. Se a peça trouxer uma sala de Artefato, o Artefato do topo da pilha vai para ela. Com um ou dois sinais de "mais" na sala, vai o Artefato uma ou duas posições abaixo do topo; se não houver tantos, o mais valioso que restar; se a pilha estiver vazia, nada (p. 10).
+
+!fig[A masmorra crescendo: o peão verde sai pela borda e a peça nova é posta encostando uma borda inteira em outra. A peça marcada com X está fora do lugar. Ilustração: manual Galápagos (p. 9)](figuras/nova-peca.webp)
 
 > [!mais] **Peça assombrada.** Se a peça revelada for assombrada (quatro das Profundezas são), um cubo de Fantasma do Banco vai para a área de Clank! (p. 10).
 
@@ -494,6 +508,8 @@ Os exercícios são de múltipla escolha: toque numa opção e aparece a respost
 > 5. A partida termina quando todos escaparam ou foram nocauteados.
 > 6. **Pontos**, só para quem tem Artefato e não caiu nas Profundezas: o valor do Artefato; os pontos das outras fichas (Maestria, Ídolos de Macaco, Prisioneiros, itens do Mercado, segredos que valem pontos); 1 ponto por Ouro; os pontos das cartas do baralho inteiro, contando mão e descarte.
 > 7. **Empate:** vence quem tem o Artefato mais valioso.
+
+!fig[O que soma pontos no fim: o valor do Artefato, as outras fichas (como o Ídolo de Macaco, de 5 pontos), o Ouro e os pontos impressos nas cartas do seu baralho. Ilustração: manual Galápagos (p. 14)](figuras/pontuacao.webp)
 
 > [!mais] **Fim antecipado.** Ela também termina na hora, com todos os que ainda estão na masmorra nocauteados, se o Baralho da Masmorra não tiver cartas para repor a Fileira, ou se a Bolsa do Dragão ficar vazia depois de um ataque (p. 12).
 
