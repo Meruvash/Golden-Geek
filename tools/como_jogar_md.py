@@ -13,6 +13,7 @@ atencao, tabelas e listas; explicação (entender), exemplo (resolvido), ediçã
 um toque; as tarefas e respostas de cada etapa vão juntas para "Pratique esta etapa"; as seções de apoio (OPCIONAIS)
 ficam inteiras recolhidas. O tempo de leitura do topo conta só o que fica à vista.
   (p. 7)               página do manual, vira a etiqueta "p. 7"
+  ![nome](icones/x.webp)  ícone pequeno (imagem na pasta da página, como-jogar/<slug>/icones/)
   ?? Pergunta          exercício de múltipla escolha (pedido do editor em 31/10/2026), em qualquer bloco ou seção:
   - ( ) opção          opção errada
   - (x) opção          a certa (uma só)
@@ -48,6 +49,9 @@ def slugify(t):
 
 def inline(t):
     t = html.escape(t, quote=False)
+    # ![nome](icones/x.webp): ícone pequeno no texto ou na tabela (ex.: recursos dos dados), com o nome como alt
+    t = re.sub(r"!\[([^\]]*)\]\(([\w./-]+\.(?:webp|png|jpg|svg))\)",
+               r'<img class="ico" src="\2" alt="\1" width="28" height="28" loading="lazy" decoding="async">', t)
     t = re.sub(r"\[([^\]]+)\]\((https?://[^)\s]+)\)", r'<a href="\2">\1</a>', t)
     t = re.sub(r"(?<![\"'>=])(https?://[^\s<)]+[^\s<).,;:])", r'<a href="\1">\1</a>', t)
     t = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", t)
@@ -56,6 +60,12 @@ def inline(t):
     # só quando o parêntese tem apenas páginas; "(p. 14, que o manual diz ...)" fica como texto
     t = re.sub(r"\s?\(p\.\s*(\d[\d ,e–-]*?)\s*\)", lambda m: f' <span class="pg">p.&nbsp;{m.group(1).strip()}</span>', t)
     return t
+
+
+def celula(c):
+    """Célula de tabela; com ícone, ícone e texto ficam num só elemento (não se separam na ficha do celular)."""
+    h = inline(c)
+    return f'<span class="rec">{h}</span>' if "<img" in h else h
 
 
 def blocos(linhas, dobrar=False):
@@ -124,7 +134,7 @@ def blocos(linhas, dobrar=False):
                 i += 1
             cab, corpo = tab[0], [r for r in tab[1:] if not all(re.fullmatch(r":?-+:?", c) for c in r)]
             out.append('<div class="tab"><table><thead><tr>' + "".join(f"<th>{inline(c)}</th>" for c in cab) + "</tr></thead><tbody>"
-                       + "".join("<tr>" + "".join(f"<td>{inline(c)}</td>" for c in r) + "</tr>" for r in corpo) + "</tbody></table></div>")
+                       + "".join("<tr>" + "".join(f"<td>{celula(c)}</td>" for c in r) + "</tr>" for r in corpo) + "</tbody></table></div>")
             continue
         if re.match(r"(\d+)\. |[-*] ", l):
             ordenada = bool(re.match(r"\d+\. ", l))

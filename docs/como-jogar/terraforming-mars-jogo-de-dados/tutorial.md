@@ -45,11 +45,13 @@ A cada turno você escolhe **uma** das duas coisas (p. 4):
 
 | Cor | Comum (3 faces) | Incomum (2 faces) | Raro (1 face) |
 |---|---|---|---|
-| Amarelo | megacrédito | ciência | terra |
-| Verde | planta | micróbio | animal |
-| Azul | energia | água | oxigênio |
-| Cinza | aço | titânio | cidade |
-| Vermelho | calor | evento | nuclear |
+| Amarelo | ![megacrédito](icones/megacredito.webp) megacrédito | ![ciência](icones/ciencia.webp) ciência | ![terra](icones/terra.webp) terra |
+| Verde | ![planta](icones/planta.webp) planta | ![micróbio](icones/microbio.webp) micróbio | ![animal](icones/animal.webp) animal |
+| Azul | ![energia](icones/energia.webp) energia | ![água](icones/agua.webp) água | ![oxigênio](icones/oxigenio.webp) oxigênio |
+| Cinza | ![aço](icones/aco.webp) aço | ![titânio](icones/titanio.webp) titânio | ![cidade](icones/cidade.webp) cidade |
+| Vermelho | ![calor](icones/calor.webp) calor | ![evento](icones/evento.webp) evento | ![nuclear](icones/nuclear.webp) nuclear |
+
+*Ícones reproduzidos do livro de regras da Meeple BR (p. 7).*
 
 Você **nunca** rola de novo um dado que já está à sua frente. Para mudar a face (sempre para outra face daquele mesmo dado), só com ação de suporte, efeito de carta ou bônus do tabuleiro que mande girar um dado (p. 4, 6 e 7).
 
@@ -95,11 +97,13 @@ O guia tem quatro etapas: montar a mesa e ler os dados; jogar um turno de ação
 
 | Cor do dado | Comum (3 faces) | Incomum (2 faces) | Raro (1 face) |
 |---|---|---|---|
-| Amarelo | megacrédito | ciência | terra |
-| Verde | planta | micróbio | animal |
-| Azul | energia | água | oxigênio |
-| Cinza | aço | titânio | cidade |
-| Vermelho | calor | evento | nuclear |
+| Amarelo | ![megacrédito](icones/megacredito.webp) megacrédito | ![ciência](icones/ciencia.webp) ciência | ![terra](icones/terra.webp) terra |
+| Verde | ![planta](icones/planta.webp) planta | ![micróbio](icones/microbio.webp) micróbio | ![animal](icones/animal.webp) animal |
+| Azul | ![energia](icones/energia.webp) energia | ![água](icones/agua.webp) água | ![oxigênio](icones/oxigenio.webp) oxigênio |
+| Cinza | ![aço](icones/aco.webp) aço | ![titânio](icones/titanio.webp) titânio | ![cidade](icones/cidade.webp) cidade |
+| Vermelho | ![calor](icones/calor.webp) calor | ![evento](icones/evento.webp) evento | ![nuclear](icones/nuclear.webp) nuclear |
+
+*Ícones reproduzidos do livro de regras da Meeple BR (p. 7).*
 
 > [!passos] **Como ler os ícones** (p. 7)
 >
@@ -468,7 +472,17 @@ Responda sem consultar. Cada resposta diz o que reler se errar.
 | 3 megacréditos | 2 PVs |
 | custo da carta azul | ação principal da carta azul |
 
-**Dados:** amarelo (megacrédito, ciência, terra); verde (planta, micróbio, animal); azul (energia, água, oxigênio); cinza (aço, titânio, cidade); vermelho (calor, evento, nuclear). Comum em 3 faces, incomum em 2, raro em 1. Nunca role de novo.
+**Dados** (comum em 3 faces, incomum em 2, raro em 1; nunca role de novo):
+
+| Cor | Comum | Incomum | Raro |
+|---|---|---|---|
+| Amarelo | ![megacrédito](icones/megacredito.webp) megacrédito | ![ciência](icones/ciencia.webp) ciência | ![terra](icones/terra.webp) terra |
+| Verde | ![planta](icones/planta.webp) planta | ![micróbio](icones/microbio.webp) micróbio | ![animal](icones/animal.webp) animal |
+| Azul | ![energia](icones/energia.webp) energia | ![água](icones/agua.webp) água | ![oxigênio](icones/oxigenio.webp) oxigênio |
+| Cinza | ![aço](icones/aco.webp) aço | ![titânio](icones/titanio.webp) titânio | ![cidade](icones/cidade.webp) cidade |
+| Vermelho | ![calor](icones/calor.webp) calor | ![evento](icones/evento.webp) evento | ![nuclear](icones/nuclear.webp) nuclear |
+
+*Ícones reproduzidos do livro de regras da Meeple BR (p. 7).*
 
 **Cartas:** verde produz a cada turno de produção; vermelha age na hora; azul dá uma ação por ciclo de produção (gire ao usar).
 
