@@ -1497,5 +1497,67 @@
    ],
    "verificado_em": "2026-11-01"
   }
+ },
+ "buriedgiant.com": {
+  "nome": "Buried Giant Studios",
+  "apelidos": [
+   "Buried Giant Studios"
+  ],
+  "site": "https://buriedgiant.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://buriedgiant.com/media",
+  "paginas": {},
+  "status": "ok",
+  "obs": "site montado com JavaScript: o robô abre as páginas no navegador",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [],
+   "verificado_em": "2026-11-02"
+  },
+  "js": true
+ },
+ "vanrydergames.com": {
+  "nome": "Van Ryder Games",
+  "apelidos": [
+   "Van Ryder Games"
+  ],
+  "site": "https://vanrydergames.com",
+  "plataforma": "shopify",
+  "estrategia": "sitemap+shopify_json",
+  "press_kit": "https://vanrydergames.com/pages/press-kits",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://vanrydergames.com/sitemap.xml"
+   ],
+   "verificado_em": "2026-11-02"
+  }
+ },
+ "eerieidolgames.com": {
+  "nome": "Eerie Idol Games",
+  "apelidos": [
+   "Eerie Idol Games"
+  ],
+  "site": "https://www.eerieidolgames.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://www.dropbox.com/scl/fo/st2zoegtbn2iso1q2fjwe/AGE_DD2vV4fQS9xVNWathQs?rlkey=v5gar5zid7u27s2xoba85uyl0&dl=0",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.eerieidolgames.com/sitemap.xml"
+   ],
+   "verificado_em": "2026-11-02"
+  }
  }
 }

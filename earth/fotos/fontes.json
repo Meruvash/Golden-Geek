@@ -1,0 +1,70 @@
+{
+ "slug": "earth",
+ "usar_na_pagina": true,
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 900,
+   "altura": 900,
+   "editora": "Inside Up Games",
+   "credito": "Imagem: Inside Up Games",
+   "pagina": "https://insideupgames.com/our-games/earth-board-game/",
+   "imagem": "https://insideupgames.com/wp-content/uploads/2023/02/Earth-product-image.jpg",
+   "baixada_em": "2026-11-02",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/mesa-1.webp",
+   "tipo": "mesa",
+   "largura": 1000,
+   "altura": 667,
+   "editora": "Inside Up Games",
+   "credito": "Imagem: Inside Up Games",
+   "pagina": "https://insideupgames.com/our-games/earth-board-game/",
+   "imagem": "https://insideupgames.com/wp-content/uploads/2023/02/InsideUpGames-Earth-ProductShot02.jpg",
+   "baixada_em": "2026-11-02",
+   "aprovada": true,
+   "principal": true
+  },
+  {
+   "arquivo": "fotos/mesa-2.webp",
+   "tipo": "mesa",
+   "largura": 1000,
+   "altura": 667,
+   "editora": "Inside Up Games",
+   "credito": "Imagem: Inside Up Games",
+   "pagina": "https://insideupgames.com/our-games/earth-board-game/",
+   "imagem": "https://insideupgames.com/wp-content/uploads/2023/02/InsideUpGames-Earth-ProductShot07.jpg",
+   "baixada_em": "2026-11-02",
+   "aprovada": true,
+   "fora": true
+  },
+  {
+   "arquivo": "fotos/jogabilidade-1.webp",
+   "tipo": "jogabilidade",
+   "largura": 667,
+   "altura": 1000,
+   "editora": "Inside Up Games",
+   "credito": "Imagem: Inside Up Games",
+   "pagina": "https://insideupgames.com/our-games/earth-board-game/",
+   "imagem": "https://insideupgames.com/wp-content/uploads/2023/02/InsideUpGames-Earth-ProductShot04.jpg",
+   "baixada_em": "2026-11-02",
+   "aprovada": true,
+   "fora": true
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 1000,
+   "altura": 667,
+   "editora": "Inside Up Games",
+   "credito": "Imagem: Inside Up Games",
+   "pagina": "https://insideupgames.com/our-games/earth-board-game/",
+   "imagem": "https://insideupgames.com/wp-content/uploads/2023/02/InsideUpGames-Earth-ProductShot03.jpg",
+   "baixada_em": "2026-11-02",
+   "aprovada": true,
+   "jogar": true
+  }
+ ]
+}

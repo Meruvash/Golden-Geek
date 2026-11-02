@@ -1,0 +1,46 @@
+{
+ "slug": "arcs",
+ "usar_na_pagina": true,
+ "fotos": [
+  {
+   "arquivo": "fotos/mesa-1.webp",
+   "tipo": "mesa",
+   "largura": 1200,
+   "altura": 628,
+   "editora": "Buried Giant Studios",
+   "credito": "Imagem: Buried Giant Studios",
+   "pagina": "https://buriedgiant.com/blog/gencon2026",
+   "imagem": "https://cdn.sanity.io/images/oje975tf/production/1542cc42916b0843e4444d5afca9709cbeea2452-1200x628.png",
+   "baixada_em": "2026-11-02",
+   "aprovada": true,
+   "jogar": true
+  },
+  {
+   "arquivo": "fotos/jogabilidade-1.webp",
+   "tipo": "jogabilidade",
+   "largura": 1280,
+   "altura": 960,
+   "editora": "Buried Giant Studios",
+   "credito": "Imagem: Buried Giant Studios",
+   "pagina": "https://buriedgiant.com/blog/Arcs-beyond-diary-6",
+   "imagem": "https://cdn.sanity.io/images/oje975tf/production/4e7c82528feacc3a4e4fe446efd62034450fbfb3-1280x960.jpg",
+   "baixada_em": "2026-11-02",
+   "aprovada": true,
+   "pessoas": true,
+   "fora": true
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 1280,
+   "altura": 960,
+   "editora": "Buried Giant Studios",
+   "credito": "Imagem: Buried Giant Studios",
+   "pagina": "https://buriedgiant.com/blog/Arcs-beyond-diary-3",
+   "imagem": "https://cdn.sanity.io/images/oje975tf/production/6b68464f5e1afd0c83a884d9e4c83e8d67b49845-1280x960.jpg",
+   "baixada_em": "2026-11-02",
+   "aprovada": true,
+   "principal": true
+  }
+ ]
+}

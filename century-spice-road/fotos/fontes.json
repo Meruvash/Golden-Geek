@@ -1,0 +1,31 @@
+{
+ "slug": "century-spice-road",
+ "usar_na_pagina": true,
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 1440,
+   "altura": 1080,
+   "editora": "Next Move Games (Plan B Games)",
+   "credito": "Imagem: Next Move Games (Plan B Games)",
+   "pagina": "https://www.nextmove-games.com/century/century-la-route-des-epices/",
+   "imagem": "https://cdn.svc.asmodee.net/production-nextmove/uploads/2024/05/Century1_comp_slider1.jpg",
+   "baixada_em": "2026-11-02",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 1440,
+   "altura": 1080,
+   "editora": "Next Move Games (Plan B Games)",
+   "credito": "Imagem: Next Move Games (Plan B Games)",
+   "pagina": "https://www.nextmove-games.com/century/century-la-route-des-epices/",
+   "imagem": "https://cdn.svc.asmodee.net/production-nextmove/uploads/2024/05/Century1_comp_slider2.jpg",
+   "baixada_em": "2026-11-02",
+   "aprovada": true,
+   "principal": true
+  }
+ ]
+}

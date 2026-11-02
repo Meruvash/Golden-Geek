@@ -388,14 +388,21 @@ def renderizar(cli, url):
         for linha in proc.stdout:
             msg = json.loads(linha)
             if "id" in msg:  # o navegador pergunta se pode pedir esta URL
-                try:
-                    ok = cli.pode(msg["url"])
-                except Exception:
-                    ok = False
+                if re.search(r"cloudflareinsights\.com|google-analytics\.com|googletagmanager\.com|/cdn-cgi/rum",
+                             msg["url"]):
+                    ok = False  # estatística de visitas: não serve para montar a página e o robots dela pode travar
+                else:
+                    try:
+                        ok = cli.pode(msg["url"])
+                    except Exception:
+                        ok = False
                 if not ok:
                     cancelados.append(msg["url"])
-                proc.stdin.write(f"{msg['id']} {1 if ok else 0}\n")
-                proc.stdin.flush()
+                try:
+                    proc.stdin.write(f"{msg['id']} {1 if ok else 0}\n")
+                    proc.stdin.flush()
+                except BrokenPipeError:
+                    pass  # o navegador já terminou a página; a linha final ainda vem no stdout
             else:
                 fim = msg
                 break

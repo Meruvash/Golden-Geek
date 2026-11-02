@@ -2539,7 +2539,8 @@
    "status": "na_fila",
    "prioridade": 37,
    "premios_distintos": 1,
-   "carro_chefe": true
+   "carro_chefe": true,
+   "slug": "arcs"
   },
   {
    "jogo": "Oath: Chronicles of Empire and Exile",
@@ -2741,7 +2742,8 @@
    "status": "na_fila",
    "prioridade": 42,
    "premios_distintos": 1,
-   "carro_chefe": true
+   "carro_chefe": true,
+   "slug": "earth"
   },
   {
    "jogo": "Hegemony: Lead Your Class to Victory",
@@ -3178,10 +3180,14 @@
      "fonte": "https://www.tabletopgaming.co.uk/news/golden-geek-winners-announced-for-2021-radlands-arnak-and-sleeping-gods-amongst-the-winners/"
     }
    ],
-   "status": "na_fila",
+   "status": "sem_fotos",
    "prioridade": 73,
    "premios_distintos": 1,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "fotos": {
+    "verificado_em": "2026-11-02",
+    "obs": "Van Ryder Games: loja (só caixas e arte); kit de imprensa no Dropbox (robots.txt do Dropbox proíbe /scl/; o usuário pode baixar à mão e rodar robo.py kit)"
+   }
   },
   {
    "jogo": "The Crew: Mission Deep Sea",
@@ -3378,7 +3384,8 @@
    "status": "na_fila",
    "prioridade": 78,
    "premios_distintos": 1,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "slug": "century-spice-road"
   },
   {
    "jogo": "Captain Sonar",
@@ -3679,10 +3686,14 @@
      "fonte": "https://eliteboardgamers.com.br/"
     }
    ],
-   "status": "na_fila",
+   "status": "sem_fotos",
    "prioridade": 41,
    "premios_distintos": 1,
-   "carro_chefe": true
+   "carro_chefe": true,
+   "fotos": {
+    "verificado_em": "2026-11-02",
+    "obs": "Catch Up Games; Kosmos (edição alemã: só renders e banner); Spiel des Jahres (Empfehlungsliste 2025: só caixa)"
+   }
   },
   {
    "jogo": "Forest Shuffle",
@@ -3923,10 +3934,14 @@
      "fonte": "https://eliteboardgamers.com.br/"
     }
    ],
-   "status": "na_fila",
+   "status": "sem_fotos",
    "prioridade": 43,
    "premios_distintos": 1,
-   "carro_chefe": true
+   "carro_chefe": true,
+   "fotos": {
+    "verificado_em": "2026-11-02",
+    "obs": "Restoration Games: página do jogo, lojas Deluxe e Maximum Chrome (só renders), blog (Origins 2024, Origins 2025, Gen Con Blueprints, tag Thunder Road Vendetta): única foto de partida do jogo base tem rosto de frente; sem licenciada nem premiação com fotos"
+   }
   },
   {
    "jogo": "Bubble Stories",
@@ -4027,7 +4042,8 @@
    "status": "na_fila",
    "prioridade": 85,
    "premios_distintos": 1,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "slug": "radlands"
   },
   {
    "jogo": "Undaunted: Reinforcements",
