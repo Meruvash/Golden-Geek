@@ -7,7 +7,7 @@
  "titulo_busca": "Sintonia (Wavelength): resenha do jogo de festa premiado",
  "descricao": "Resenha de Sintonia (Wavelength), melhor jogo de festa do Golden Geek 2019: como funciona, o que a crítica diz, preço no Brasil e para quem é.",
  "titulo_html": "O único jogo em que acertar estraga a festa: <span>Sintonia</span>",
- "lede": "Sintonia é a edição brasileira de Wavelength, o jogo de festa em que uma pessoa dá uma dica e o resto da equipe gira um ponteiro tentando ler a mente dela. Venceu o Golden Geek de jogo de festa de 2019 e ficou em 3º lugar em inovação. A regra cabe num guardanapo. O problema é outro, e a crítica já percebeu: quando o grupo começa a acertar, a graça vai embora. É o único jogo em que ficar bom estraga a festa.",
+ "lede": "Sintonia é a edição brasileira de Wavelength, o jogo de festa em que uma pessoa dá uma dica e o resto da equipe gira um ponteiro tentando ler a mente dela. Venceu o Golden Geek de jogo de festa de 2019 e foi finalista em inovação, categoria vencida por Wingspan. A regra cabe num guardanapo. O problema é outro, e a crítica já percebeu: quando o grupo começa a acertar, a graça vai embora. É o único jogo em que ficar bom estraga a festa.",
  "tags": [
   "2–12 jogadores",
   "30–45 min",
@@ -30,10 +30,10 @@
    "premio": "Golden Geek",
    "ano": 2019,
    "categoria": "Inovação",
-   "colocacao": 3,
+   "colocacao": null,
    "resultado": "top 3",
    "fonte": "https://engagedfamilygaming.com/2019-golden-geek-awards-winners-announced/",
-   "rotulo": "3º lugar"
+   "rotulo": "Top 3"
   }
  ],
  "ficha": [
@@ -94,7 +94,7 @@
    "mais de um milhão de cópias, segundo a BoardGameWire (28/03/2025)"
   ]
  ],
- "nota_ficha": "Ludopedia e BoardGameGeek bloqueiam acesso automatizado: os números do BGG vêm do boardmatch.app, que reproduz o BGG sem informar a data da coleta, e os da Ludopedia vêm de resultados de busca. A contagem de cartas é a da Ludopedia; o ComparaJogos conta os lados (168 e 84). O site oficial do jogo fala em mais de 150 mil cópias; a BoardGameWire, em 2025, em mais de um milhão. As fotos são da edição em inglês, da CMYK.",
+ "nota_ficha": "Ludopedia e BoardGameGeek bloqueiam acesso automatizado: os números do BGG vêm do boardmatch.app, que reproduz o BGG sem informar a data da coleta, e os da Ludopedia vêm de resultados de busca. A contagem de cartas é a da Ludopedia; o ComparaJogos conta os lados (168 e 84). O site oficial do jogo fala em mais de 150 mil cópias; a BoardGameWire, em 2025, em mais de um milhão. As fotos são da edição em inglês, da CMYK. Correção em 01/11/2026: a resenha dizia que o aplicativo gratuito só existia em inglês; a nota da versão 1.6.0 na App Store informa tradução para o português do Brasil, embora a ficha da loja ainda liste só o inglês. Também dizia que o jogo ficou em 3º em inovação no Golden Geek 2019; a lista da Engaged Family Gaming o põe entre os finalistas (runner-up), com The Crew, sem ordem de colocação.",
  "como_funciona": [
   "Duas equipes disputam quem chega primeiro a 10 pontos. No centro da mesa fica o dispositivo: uma roda de plástico com um alvo colorido escondido atrás de uma cobertura azul e um ponteiro vermelho que qualquer pessoa pode girar. O alvo tem faixas de 2, 3 e 4 pontos, e a de 4 fica no meio.",
   "A cada rodada, uma pessoa da equipe ativa é o Psíquico. Ela gira a roda com a cobertura fechada, compra uma carta de frequência, escolhe um dos dois lados e lê em voz alta os dois extremos, como Quente – Frio. Depois abre a cobertura em segredo, vê onde caiu o alvo e dá uma dica de onde ele fica entre os dois conceitos. O exemplo do manual é “café”: quente, mas não a coisa mais quente do universo.",
@@ -182,7 +182,7 @@
   ],
   [
    "De 2 a 12 sem regra nova",
-   "Com mais gente, as equipes só ficam maiores; não há regra extra nem peça a mais. A enquete do BGG aponta 6 jogadores como a melhor contagem, e a Polygon disse que Wavelength pode ser um dos melhores jogos de festa que já jogou, citando a rejogabilidade."
+   "Com mais gente, as equipes só ficam maiores; não há regra extra nem peça a mais. A enquete do BGG aponta 6 jogadores como a melhor contagem, e a Polygon disse que Wavelength pode ser um dos melhores jogos de festa que a equipe já jogou."
   ]
  ],
  "atencao": [
@@ -214,7 +214,7 @@
   [
    "Leve",
    "O aplicativo é de graça",
-   "A versão digital oficial, para iOS e Android, é gratuita, sem anúncios e tem mais de 610 cartas, segundo a CMYK. Em 01/11/2026, a App Store listava o aplicativo só em inglês. Resumindo: a versão de graça não fala português, e a que fala custa a partir de R$ 237,99. Escolha o seu idioma."
+   "A versão digital oficial, para iOS e Android, é gratuita, sem anúncios e tem mais de 610 cartas, segundo a CMYK. A nota da versão 1.6.0 na App Store diz que ela ganhou tradução para o português do Brasil. Resumindo: a roda de plástico custa a partir de R$ 237,99, e o celular que você já tem no bolso joga de graça."
   ]
  ],
  "jogadores": [
@@ -241,7 +241,7 @@
   "data": "01/11/2026",
   "obs": "menor preço de jogo novo segundo o ComparaJogos (4 ofertas, até R$ 289,90); R$ 299,99 e sem estoque na loja oficial da Asmodee"
  },
- "versoes": "O aplicativo oficial Wavelength saiu em fevereiro de 2022 para iOS e Android: é gratuito, cooperativo, para 2 a 10 pessoas, com pacotes extras de US$ 0,99 a US$ 4,99, segundo a CMYK. Em 01/11/2026, a App Store o listava só em inglês. Nas fontes consultadas não aparece expansão para o jogo de tabuleiro. Na Alemanha, o jogo sai pela Schmidt Spiele com o nome Perfect Match.",
+ "versoes": "O aplicativo oficial Wavelength saiu em fevereiro de 2022 para iOS e Android: é gratuito, cooperativo, para 2 a 10 pessoas, com pacotes extras de US$ 0,99 a US$ 4,99, segundo a CMYK. A ficha da App Store lista só o inglês, mas a nota da versão 1.6.0 diz que o aplicativo foi traduzido para nove idiomas, entre eles o português do Brasil. Nas fontes consultadas não aparece expansão para o jogo de tabuleiro. Na Alemanha, o jogo sai pela Schmidt Spiele com o nome Perfect Match.",
  "comparacoes": [
   [
    "Codenames",
@@ -271,7 +271,7 @@
   "Precisa de uma resposta certa para dormir em paz",
   "Tem um grupo que já termina as frases uns dos outros",
   "Odeia esperar a outra equipe decidir",
-  "Lê inglês e se contenta com o aplicativo gratuito"
+  "Se contenta com o aplicativo gratuito no celular"
  ],
  "selo": "Recomendado",
  "melhor_para": "festa",
@@ -357,7 +357,7 @@
   [
    "App Store – Wavelength",
    "https://apps.apple.com/us/app/wavelength-a-party-game/id1512834505",
-   "idiomas do aplicativo (01/11/2026)"
+   "idiomas e notas de versão do aplicativo (consulta em 02/11/2026)"
   ]
  ],
  "legenda": "Sintonia é o único jogo em que acertar estraga a festa. 🎯\n\nUma pessoa dá a dica, a equipe gira o ponteiro e todo mundo descobre que ninguém pensa igual. Venceu o Golden Geek de jogo de festa de 2019.\nA crítica avisa: quanto mais o grupo acerta, menos ele ri. A gente avisa: a outra equipe espera, e a dois o jogo vira outra coisa.\nVeredito: RECOMENDADO, de 6 pessoas para cima.\n\nTitanic: obra-prima ou fracasso? Responde aqui embaixo. 👇\n\nResenha completa no link da bio.\n\n#Sintonia #Wavelength #JogosDeTabuleiro #BoardGames #PartyGame #JogoDeFesta #GoldenGeek #Asmodee #Boardgamer #EliteBoardgamers"
