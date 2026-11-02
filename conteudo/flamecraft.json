@@ -5,7 +5,7 @@
  "kicker": "Resenha · Alocação de trabalhadores com dragões",
  "og_titulo": "Flamecraft vale a pena? Resenha Elite Boardgamers",
  "titulo_busca": "Flamecraft: resenha do vencedor de arte do Golden Geek 2022",
- "descricao": "Resenha de Flamecraft, de Manny Vega e Sandara Tang, melhor arte no Golden Geek 2022: como funciona, o que a crítica achou raso e o preço no Brasil.",
+ "descricao": "Resenha de Flamecraft, de Manny Vega, arte de Sandara Tang, Golden Geek de arte 2022: como funciona, o que a crítica achou raso e o preço no Brasil.",
  "titulo_html": "O glacê levou o prêmio; o bolo é de padaria: <span>Flamecraft</span>",
  "lede": "Flamecraft é um jogo de alocação de trabalhadores em que pequenos dragões trabalham em padarias, ferrarias e lojas de poção, de 1 a 5 jogadores, em cerca de uma hora. A cobertura é o que salta da caixa: venceu o Golden Geek de arte em 2022. O glacê levou o prêmio. Por baixo, o bolo é de padaria: honesto, gostoso e igual toda vez. A gente gosta de bolo de padaria. Só não espere que ele mude de sabor na décima fatia.",
  "tags": [
@@ -51,7 +51,7 @@
   ["Nota Ludopedia", "não confirmada nas fontes consultadas"],
   ["Componentes", "tabuleiro da cidade, 34 cartas de loja, 42 Dragões Artesãos, 36 Dragões de Elite, 36 Encantamentos em 2 baralhos, 7 Companheiros, 210 fichas de produto e 24 moedas"]
  ],
- "nota_ficha": "Nota, peso e enquete do BGG vêm do BoardMatch, que replica o BoardGameGeek (o BGG bloqueia acesso automatizado), consultado em 01/11/2026. Os nomes das cartas em português seguem a descrição da edição nacional no ComparaJogos.",
+ "nota_ficha": "Nota, peso e enquete do BGG vêm do BoardMatch, que replica o BoardGameGeek (o BGG bloqueia acesso automatizado), consultado em 01/11/2026. Os nomes das cartas em português seguem a descrição da edição nacional no ComparaJogos. Correção em 01/11/2026: a citação em destaque era atribuída à Dicebreaker com uma redação que não se confirmou e foi trocada por uma frase de Iain McAllister (The Giant Brain); o veredito atribuía à Tabletop Gaming a crítica de repetição, que é da IGN e de Mark Jackson (Opinionated Gamers); e com 2 jogadores saem 12 Dragões Artesãos do baralho, não 6.",
  "como_funciona": [
   "Os jogadores são Guardachamas, gente que conversa com dragões e os leva para trabalhar nas lojas da cidade. Cada loja produz um ou mais dos seis produtos do jogo (pão, carne, ferro, cristal, planta e poção) e tem vagas para Dragões Artesãos do mesmo tipo. Vence quem terminar com mais reputação, os pontos do jogo.",
   "No seu turno, você move o seu peão para uma loja diferente da do turno anterior. Se já houver outros jogadores lá, você dá um produto ou uma moeda a cada um deles. Depois, escolhe uma de duas ações: coletar ou encantar.",
@@ -81,7 +81,7 @@
   "O momento bom é o Encantamento. Você junta os produtos pedidos, prende a carta atrás da padaria e ativa todos os dragões dela de uma vez: pão, ferro, moeda, ponto, uma cascata pequena e muito satisfatória. A Tabletop Gaming explica a agilidade pelo fato de que ativar dragão não custa nada. O problema é que, lá pela terceira partida, a cascata já tem cara de conhecida. A IGN deu 8 e avisou que o jogo pode ficar repetitivo e raso depois de algumas partidas. É a mesma receita, servida com a mesma toalha. E a toalha é linda."
  ],
  "funciona": [
-  ["A arte de Sandara Tang", "Venceu o Golden Geek de arte de 2022 e o prêmio de jogo mais bonito do Gra Roku polonês em 2023. Cada loja tem nome de trocadilho e dragões trabalhando no balcão. Iain McAllister, da The Giant Brain, resume bem: entrou pela arte e pela produção, mas ficou pelo jogo."],
+  ["A arte de Sandara Tang", "Venceu o Golden Geek de arte de 2022 e o prêmio de jogo mais bonito do Gra Roku polonês em 2023. Cada loja tem nome de trocadilho e dragões trabalhando no balcão. O tabuleiro da cidade parece vitrine de confeitaria, e é a primeira coisa que faz alguém parar na mesa para perguntar o que é."],
   ["Interação gentil", "Entrar numa loja ocupada custa um presente para quem já está lá, e algumas habilidades pontuam justamente por dar produtos aos outros. Para Oliver Kinne, do Tabletop Games Blog, essa interação positiva é uma bela exceção num hobby competitivo, com o nível de disputa na medida certa."],
   ["A cascata do Encantamento", "Encantar uma loja ativa todos os dragões dela de uma vez, e cada dragão a mais deixa a loja melhor para todo mundo. Para a Tabletop Gaming, como ativar dragão é de graça, a partida corre rápida; Alana Wren, da Zatu, diz que há sempre algo para fazer no seu turno."],
   ["Complexidade que chega aos poucos", "O jogo começa com seis lojas iniciais e cresce conforme as vagas se enchem. A The Giant Brain diz que esse arco é perfeito, e a IGN elogia o equilíbrio entre regras simples e profundidade que aumenta ao longo da partida."],
@@ -98,8 +98,8 @@
  ],
  "jogadores": [
   ["Sozinho", "Peões neutros e dragões automáticos mantêm a cidade ocupada, e as 11 conquistas mudam a preparação de uma partida para outra.", 2],
-  ["2 jogadores", "Funciona, com seis Dragões Artesãos a menos no baralho; menos gente nas lojas significa menos presentes trocados.", 2],
-  ["3 jogadores", "A contagem mais votada como ideal na enquete do BGG, segundo os dados replicados pelo BoardMatch.", 3],
+  ["2 jogadores", "Funciona, com doze Dragões Artesãos a menos no baralho (dois de cada tipo); menos gente nas lojas significa menos presentes trocados.", 2],
+  ["3 jogadores", "A contagem mais votada como ideal na enquete do BGG, segundo os dados replicados pelo BoardMatch; saem seis Dragões Artesãos do baralho.", 3],
   ["4 ou 5 jogadores", "O quarto e o quinto começam com um produto extra. Com mais gente, as lojas lotam e você paga mais presentes para entrar.", 2]
  ],
  "primeira_partida": "A Tabletop Gaming considera Flamecraft fácil de ensinar, e o manual ajuda: use o baralho roxo de Encantamentos, que a própria editora recomenda para a estreia, e deixe os Companheiros na caixa. O que mais confunde é a diferença entre as ações: ao coletar, você ativa um dragão da loja; ao encantar, todos. Repita isso antes de começar. Avise também que moeda vale um ponto no fim, mas não serve para cumprir o objetivo de um Dragão de Elite.",
@@ -130,11 +130,11 @@
  ],
  "selo": "Recomendado",
  "melhor_para": "proximo",
- "veredito": "Em Flamecraft, o glacê levou o prêmio e o bolo é de padaria. E a gente gosta de bolo de padaria. A arte de Sandara Tang ganhou o Golden Geek de arte, e o jogo por baixo é um jogo de alocação de trabalhadores simples, gentil e bem azeitado: entrar numa loja custa um presente, encantar ativa todos os dragões e a partida acaba em cerca de uma hora. O que pesa é o que a IGN e a Tabletop Gaming já disseram: depois de algumas partidas, a receita não muda, e quem quer atrapalhar o vizinho vai se entediar. Por R$ 269,99, compre para a família ou para o amigo que ainda acha que eurogame é planilha. Só não prometa surpresa na décima partida. Ninguém compra bolo de padaria esperando um suflê.",
+ "veredito": "Em Flamecraft, o glacê levou o prêmio e o bolo é de padaria. E a gente gosta de bolo de padaria. A arte de Sandara Tang ganhou o Golden Geek de arte, e o jogo por baixo é um jogo de alocação de trabalhadores simples, gentil e bem azeitado: entrar numa loja custa um presente, encantar ativa todos os dragões e a partida acaba em cerca de uma hora. O que pesa é o que a IGN e Mark Jackson, do Opinionated Gamers, já disseram: depois de algumas partidas, a receita não muda. E quem quer atrapalhar o vizinho vai se entediar. Por R$ 269,99, compre para a família ou para o amigo que ainda acha que eurogame é planilha. Só não prometa surpresa na décima partida. Ninguém compra bolo de padaria esperando um suflê.",
  "tagline": "Ninguém compra bolo de padaria esperando surpresa. Compra porque é bom toda vez.",
  "citacao": {
-  "texto": "Um deleite do começo ao fim.",
-  "fonte": "Dicebreaker, melhor jogo de tabuleiro de 2022 (tradução livre)"
+  "texto": "Fui atraído pela arte e pela produção, mas fiquei pela jogabilidade.",
+  "fonte": "Iain McAllister, The Giant Brain (tradução livre)"
  },
  "consulta": "01/11/2026",
  "fontes": [
@@ -143,14 +143,13 @@
   ["BoardGameWire – Golden Geek 2022", "https://boardgamewire.com/index.php/2023/05/09/heat-pedal-to-the-metal-cat-in-the-box-lead-boardgamegeek-golden-geek-award-winners/", "prêmios"],
   ["ComparaJogos – Flamecraft", "https://www.comparajogos.com.br/item/flamecraft", "edição nacional, preço, componentes, idioma"],
   ["BoardMatch – Flamecraft", "https://boardmatch.app/en/game/336986", "nota, peso e enquete do BGG"],
-  ["IGN – Flamecraft Board Game Review", "https://www.ign.com/articles/flamecraft-board-game-review", "crítica, repetição"],
+  ["IGN – Flamecraft Board Game Review", "https://www.ign.com/articles/flamecraft-board-game-review", "crítica, nota 8, repetição (conferidas via Wikipedia e página da Steam; o site da IGN não pôde ser aberto)"],
   ["Tabletop Gaming – Flamecraft Review", "https://www.tabletopgaming.co.uk/reviews/flamecraft-review/", "crítica, profundidade, ensino"],
   ["Opinionated Gamers – Dale Yu, Review of Flamecraft", "https://opinionatedgamers.com/2023/02/19/dale-yu-review-of-flamecraft/", "crítica, solo, conquistas"],
   ["Tabletop Games Blog – Flamecraft", "https://tabletopgamesblog.com/2024/02/24/flamecraft-saturday-review", "crítica, interação, duração"],
-  ["Zatu – Flamecraft Review", "https://zatu.com/flamecraft-review/", "crítica, ritmo"],
-  ["The Giant Brain – Flamecraft Review", "https://giantbrain.co.uk/2023/01/19/flamecraft-review/", "crítica, arte, progressão"],
-  ["Dicebreaker – Tabletop Awards 2022", "https://www.dicebreaker.com/events/tabletop-awards-2022/news/tabletop-awards-2022-winners", "citação, prêmio"],
-  ["Wikipedia – Flamecraft", "https://en.wikipedia.org/wiki/Flamecraft", "conferência de prêmios, duração, Duals"],
+  ["Zatu – Flamecraft Review", "https://zatu.com/blogs/reviews/flamecraft-review", "crítica, ritmo"],
+  ["The Giant Brain – Flamecraft Review", "https://giantbrain.co.uk/2023/01/19/flamecraft-review/", "crítica, arte, progressão, citação"],
+  ["Wikipedia – Flamecraft", "https://en.wikipedia.org/wiki/Flamecraft", "conferência de prêmios (Gra Roku), nota e crítica da IGN, duração, Duals"],
   ["Steam – Flamecraft (versão digital)", "https://store.steampowered.com/app/3201730/Flamecraft/", "versão digital, preço, idiomas"],
   ["Gematsu – Flamecraft launches September 17", "https://www.gematsu.com/2026/08/flamecraft-launches-september-17", "plataformas da versão digital"],
   ["PHD Games – Flamecraft: Dragons & Dragons, Dragons of the Past & Duals", "https://www.phdgames.com/2025/10/28/flamecraft-dragons-dragons-dragons-of-the-past-duals-cardboard-alchemy/", "expansões"]
