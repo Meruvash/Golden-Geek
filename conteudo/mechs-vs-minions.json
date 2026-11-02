@@ -1,0 +1,346 @@
+{
+ "slug": "mechs-vs-minions",
+ "jogo": "Mechs vs. Minions",
+ "cor": "#2f86b8",
+ "kicker": "Resenha · Cooperativo de campanha",
+ "og_titulo": "Mechs vs. Minions vale a pena? Resenha Elite Boardgamers",
+ "titulo_busca": "Mechs vs. Minions: resenha do cooperativo de robôs com bug",
+ "descricao": "Resenha de Mechs vs. Minions, da Riot Games, melhor cooperativo no Golden Geek 2016: como funciona, o que divide a crítica e como comprar no Brasil.",
+ "titulo_html": "O código sempre dá bug, e o bug é a graça: <span>Mechs vs. Minions</span>",
+ "lede": "Mechs vs. Minions é o cooperativo de tabuleiro da Riot Games, a dona de League of Legends: de 2 a 4 jogadores programam robôs com cartas numa campanha de dez missões contra cem lacaios. Venceu o Golden Geek de cooperativo de 2016. A graça é que o programa nunca roda como foi escrito. Cada golpe sofrido reescreve um comando, e o robô obedece à versão nova até a lava, com toda a confiança. É um jogo sobre bug. E o bug é a melhor parte.",
+ "tags": [
+  "2–4 jogadores",
+  "60–120 min",
+  "14+",
+  "Cooperativo",
+  "Campanha"
+ ],
+ "alt": "Mesa de Mechs vs. Minions montada, com quatro robôs pintados, a bomba, cristais roxos e dezenas de lacaios em miniatura sobre o tabuleiro",
+ "premiacoes": [
+  {
+   "premio": "Golden Geek",
+   "ano": 2016,
+   "categoria": "Cooperativo",
+   "colocacao": 1,
+   "resultado": "vencedor",
+   "fonte": "https://brettspielbox.de/11th-annual-golden-geek-awards-winners-2016/",
+   "rotulo": "Vencedor"
+  },
+  {
+   "premio": "Golden Geek",
+   "ano": 2016,
+   "categoria": "Arte",
+   "colocacao": null,
+   "resultado": "top 3",
+   "fonte": "https://brettspielbox.de/11th-annual-golden-geek-awards-winners-2016/",
+   "rotulo": "Finalista"
+  }
+ ],
+ "ficha": [
+  [
+   "Ano",
+   "2016"
+  ],
+  [
+   "Design",
+   "Chris Cantrell, Rick Ernst, Stone Librande, Prashant Saraswat e Nathan Tiras"
+  ],
+  [
+   "Editora original",
+   "Riot Games"
+  ],
+  [
+   "Reimpressão de 2026",
+   "Incredible Dream, em parceria com a Riot Games"
+  ],
+  [
+   "Editora no Brasil",
+   "não há edição nacional até 02/11/2026; a Devir vai distribuir a edição em português em 2027, segundo o ICv2"
+  ],
+  [
+   "Jogadores",
+   "2 a 4"
+  ],
+  [
+   "Duração anunciada",
+   "60 a 120 minutos (Wikipedia e BGG)"
+  ],
+  [
+   "Idade",
+   "14+ (BGG, via boardmatch.app)"
+  ],
+  [
+   "Nota BGG",
+   "7,9 (18.571 avaliações), via boardmatch.app"
+  ],
+  [
+   "Peso BGG",
+   "2,46 / 5"
+  ],
+  [
+   "Ranking BGG",
+   "94º"
+  ],
+  [
+   "Melhor com",
+   "4 jogadores, segundo a enquete do BGG reproduzida pelo boardmatch.app"
+  ],
+  [
+   "Nota Ludopedia",
+   "não confirmada nas fontes consultadas"
+  ],
+  [
+   "Componentes",
+   "4 robôs pintados, 100 lacaios em miniatura, bomba em miniatura, 5 tabuleiros dupla face, 4 linhas de comando, ampulheta, 6 marcadores de metal, 4 cristais de acrílico e 4 dados"
+  ]
+ ],
+ "nota_ficha": "Ludopedia e BoardGameGeek bloqueiam acesso automatizado: os números do BGG vêm do boardmatch.app, consultado em 02/11/2026, e a página do jogo na Ludopedia não foi encontrada. Os componentes são os da página da Riot Games. O BoardGameWire não tem artigo sobre o Golden Geek de 2016; os prêmios vêm da lista publicada pelo Brettspielbox em 07/03/2017, que põe Mechs vs. Minions entre os finalistas (runner-up) de arte, com Inis, sem ordem de colocação. Fotos: Riot Games.",
+ "como_funciona": [
+  "Mechs vs. Minions é um cooperativo de campanha para 2 a 4 jogadores, no universo de League of Legends. Cada jogador pilota o robô de um yordle (Corki, Heimerdinger, Tristana ou Ziggs), e o grupo enfrenta dez missões em sequência, cada uma num envelope próprio, com objetivo próprio: proteger uma bomba, fugir de um muro de lava ou derrubar um chefe.",
+  "A rodada começa com a escolha das cartas de comando. O primeiro jogador revela cinco cartas e vira a ampulheta; em ordem, cada um pega uma até que quatro tenham saído. Se a areia acabar, o resto é distribuído ao acaso. Cada carta é um movimento, um giro ou um ataque, numa de quatro cores: fogo, elétrica, metal e computação.",
+  "A carta escolhida vai para a linha de comando, uma régua de seis espaços na frente de cada jogador. Depois, cada robô executa os seis espaços da esquerda para a direita, e toda instrução precisa ser cumprida. Cartas da mesma cor empilhadas no mesmo espaço sobem de nível, até o 3, e ficam mais fortes; uma carta de outra cor descarta a pilha. Em vez de programar, dá para descartar a carta para consertar um dano ou trocar dois espaços de lugar.",
+  "Depois dos jogadores, os lacaios (os minions do título) andam, surgem e atacam. Cada ataque vira uma carta de dano: algumas têm efeito imediato, outras ocupam um espaço da linha de comando e fazem o robô girar ou andar por conta própria. O robô nunca é destruído; ele só fica mais difícil de controlar.",
+  "Lacaios derrotados enchem um contador de engrenagens do time, que ativa melhorias chamadas esquemas, destravadas ao longo da campanha. Cada missão traz um dossiê com as condições de vitória e de derrota, como a bomba explodir ou o chefe completar o ataque. A campanha termina na décima missão."
+ ],
+ "passos": [
+  [
+   "ESCOLHA COM PRAZO",
+   "O primeiro jogador revela cinco cartas e vira a ampulheta. Cada um pega uma carta de comando antes que a areia acabe."
+  ],
+  [
+   "PROGRAME A LINHA",
+   "Ponha a carta num dos seis espaços da sua linha de comando. Mesma cor no mesmo espaço sobe de nível; outra cor apaga a pilha."
+  ],
+  [
+   "EXECUTE TUDO",
+   "Cada robô cumpre os seis espaços da esquerda para a direita, andando, girando e atacando, mesmo quando o plano já não faz sentido."
+  ],
+  [
+   "AGUENTE OS LACAIOS",
+   "Os lacaios andam, surgem e atacam. Cada golpe é uma carta de dano que pode ocupar um espaço e reescrever o seu programa."
+  ],
+  [
+   "CUMPRA A MISSÃO",
+   "Proteja a bomba, fuja da lava ou derrube o chefe. Engrenagens do time ativam melhorias, e a campanha segue até a décima missão."
+  ]
+ ],
+ "como_resumo": "Programe seu robô com cartas e veja os lacaios reescreverem o plano no meio do caminho.",
+ "perfil": [
+  [
+   "Produção e componentes",
+   5
+  ],
+  [
+   "Caos que vira piada",
+   5
+  ],
+  [
+   "Facilidade de ensinar",
+   4
+  ],
+  [
+   "Controle e planejamento",
+   2
+  ],
+  [
+   "Vida depois da campanha",
+   2
+  ],
+  [
+   "Acesso no Brasil",
+   1
+  ]
+ ],
+ "experiencia": [
+  "O exemplo que toda mesa vive: você monta, com calma, a linha perfeita. Anda dois, gira à direita, solta um raio no corredor de lacaios. Aí um lacaio acerta você, o dado manda a carta de dano para o espaço 3, e agora o robô gira para a esquerda no meio do plano. Ele anda dois, de cara para a lava. E entra. Ninguém morre, porque robô aqui não morre. Só passa vergonha na frente dos amigos.",
+  "É nesse ponto que a crítica se divide, e a gente sabe de que lado fica. Michael Heron, do Meeple Like Us, achou o jogo muito engraçado e pouco divertido, e o comparou a golfe projetado por um psicopata. Pip, do Shut Up & Sit Down, comparou a campanha a maratonar uma série que revida. Os dois descrevem a mesma coisa. A diferença é se você ri quando o próprio código trai você.",
+  "E tem a ampulheta. A escolha das cartas é com tempo contado, e quem pensa demais recebe o que sobrou. Programação com prazo de entrega e cliente furioso batendo na porta. Igual ao trabalho, só que aqui a lava é literal."
+ ],
+ "citacao": {
+  "texto": "É como maratonar uma série que revida.",
+  "fonte": "Pip, Shut Up & Sit Down (tradução livre)"
+ },
+ "funciona": [
+  [
+   "Produção que ninguém repetiu pelo preço",
+   "Robôs pintados, engrenagens de metal, tabuleiros laminados e cem lacaios esculpidos. A Tabletop Gaming elogia o pacote para o preço, e até Michael Heron, do Meeple Like Us, que não gostou do jogo, diz que é a relação mais refinada entre preço e produção que já viu. O jogo levou o prêmio de produção da Board Game Quest em 2016."
+  ],
+  [
+   "Uma campanha que ensina jogando",
+   "As dez missões vêm em envelopes, e cada uma acrescenta uma regra nova, segundo a GamingTrend: uma pede para proteger a bomba, outra para fugir da lava, outra para derrubar um chefe. A Tabletop Gaming elogia o texto bem-humorado entre as missões, e terminar a campanha libera um modo difícil para a segunda volta."
+  ],
+  [
+   "Difícil sem ser cruel",
+   "Para Pip, do Shut Up & Sit Down, o desafio dá trabalho, mas raramente esmaga. A Tabletop Gaming lembra o motivo: o robô não pode ser destruído. Você perde controle, não o personagem, então ninguém fica de fora assistindo os outros jogarem pelo resto da noite."
+  ],
+  [
+   "Programar em grupo",
+   "A escolha de cartas é coletiva e com tempo, e a carta que você pega pode ser a que o vizinho precisava. A Tabletop Gaming destaca a variedade e a profundidade tática da programação herdada de Robo Rally, aqui com conversa obrigatória: o plano de um robô quase sempre depende de onde o outro vai parar."
+  ],
+  [
+   "Não precisa conhecer League of Legends",
+   "Os yordles e as piadas vêm do videogame, mas o tabuleiro se explica sozinho. Pip, do Shut Up & Sit Down, diz que o jogo foi feito para um público maior que o dos fãs, e a Tabletop Gaming afirma que ele se sustenta com ou sem o League of Legends."
+  ],
+  [
+   "Uma fábrica de histórias de mesa",
+   "Michael Heron, do Meeple Like Us, que fez a crítica mais dura entre as consultadas, admite que o caos funciona muito bem como gerador de comédia. É o robô rebocando a bomba na direção errada, o raio que acerta o nada e a mesa inteira gritando ao mesmo tempo para o espaço 4."
+  ]
+ ],
+ "atencao": [
+  [
+   "Grave",
+   "Hoje, não tem onde comprar no Brasil",
+   "Em 02/11/2026, o ComparaJogos não mostrava nenhuma oferta, nova ou usada. A reimpressão em inglês sai em novembro de 2026 lá fora, e o português, pela Devir, fica para 2027, sem data nem preço. O melhor cooperativo de 2016 chega à nossa língua onze anos depois. Os robôs são pequenos; o prazo é de obra pública."
+  ],
+  [
+   "Moderada",
+   "O caos não é para todo mundo",
+   "Michael Heron, do Meeple Like Us, viu quebra-cabeças de posição que talvez nem tenham solução e um tabuleiro que muda demais para objetivos tão exigentes. Se o seu grupo gosta de calcular três turnos à frente, a carta de dano vai parecer sabotagem. E é. Só que é sabotagem com regra."
+  ],
+  [
+   "Moderada",
+   "Dois jogadores, meia força",
+   "Pip, do Shut Up & Sit Down, achou uma das missões arrastada a dois e trocou para o modo fácil. Heron, do Meeple Like Us, foi além: com dois, o time fica com metade da força e coisa demais para fazer. A enquete do BGG aponta quatro como a melhor contagem. Dois robôs dão conta. Dão conta como dois garçons num casamento."
+  ],
+  [
+   "Moderada",
+   "Manual com buracos",
+   "Pip, do Shut Up & Sit Down, conta que o livro de regras não respondeu a algumas dúvidas e que o texto de um comando do chefe deu margem a duas leituras na mesma mesa. Num jogo em que o robô cumpre tudo o que está escrito, ambiguidade no que está escrito é um bug que não tem graça nenhuma."
+  ],
+  [
+   "Moderada",
+   "Dez missões e depois?",
+   "A Wikipedia resume a crítica: a rejogabilidade cai quando a campanha acaba. Sobram o modo difícil e o criador de cenários que a Riot abriu para os fãs. A Tabletop Gaming estima de 10 a 20 horas de campanha. É uma temporada boa. Só não espere a segunda."
+  ],
+  [
+   "Leve",
+   "A caixa pede academia",
+   "Pip, do Shut Up & Sit Down, diz que é o jogo de tabuleiro mais pesado que tem, e Heron, do Meeple Like Us, reclama da caixa difícil de guardar e dos encaixes de plástico que dão trabalho para devolver cada lacaio ao lugar. Cem lacaios na mesa são festa. Cem lacaios de volta na bandeja são dever de casa."
+  ]
+ ],
+ "jogadores": [
+  [
+   "2 jogadores",
+   "O Shut Up & Sit Down achou uma missão arrastada e o Meeple Like Us viu o time com metade da força.",
+   1
+  ],
+  [
+   "3 jogadores",
+   "Funciona dentro da faixa oficial, mas as críticas consultadas não avaliam três jogadores em separado.",
+   2
+  ],
+  [
+   "4 jogadores",
+   "A melhor contagem na enquete do BGG reproduzida pelo boardmatch.app: cada robô pode se especializar e o grupo tem força para cobrir o tabuleiro.",
+   3
+  ]
+ ],
+ "primeira_partida": "A caixa ensina por você: a primeira missão funciona como tutorial, e cada missão seguinte acrescenta uma regra. Matt Jarvis, da Tabletop Gaming, avisa que o começo parece caótico e que a confusão some em poucos minutos. A dica prática: jogue a estreia com quatro, deixe a ampulheta para quando todos já conhecerem as cartas e não leia o envelope seguinte antes da hora.",
+ "edicao_nacional": "Mechs vs. Minions nunca teve edição brasileira. Em 02/11/2026, o ComparaJogos não mostrava nenhuma oferta, nova ou usada, e classifica a dependência de idioma como moderada. A reimpressão de dez anos, da Incredible Dream com a Riot Games, chega às lojas dos EUA em novembro de 2026, em inglês. Segundo o ICv2, a Devir vai distribuir a edição em português, para Europa e América Latina, em 2027, ainda sem data nem preço confirmados.",
+ "preco_ref": {
+  "faixa": "sem oferta no Brasil",
+  "data": "02/11/2026",
+  "obs": "nenhuma oferta nova ou usada no ComparaJogos; lá fora, a reimpressão sai por US$ 74,99 (Bandle City Edition) e US$ 199,99 (Classic Edition), sem frete e impostos; edição em português pela Devir prevista para 2027, sem preço"
+ },
+ "versoes": "A reimpressão de 2026 tem duas caixas. A Classic Edition (US$ 199,99) reproduz a de 2016, com miniaturas pintadas, e também é vendida na loja da Riot enquanto houver estoque. A Bandle City Edition (US$ 74,99) vem numa caixa menor, com robôs de acrílico, lacaios de papelão e 10 desafios solo novos; um conjunto de miniaturas sem pintura sai por US$ 39,99. A Riot também abriu um criador de cenários para fãs. Expansões oficiais e versão digital: não confirmadas nas fontes consultadas.",
+ "comparacoes": [
+  [
+   "Colt Express",
+   "colt-express",
+   "A mesma ideia de programar ações às cegas e ver o plano desandar, só que competitivo, mais curto e com bandidos num trem. Bom teste para saber se o seu grupo ri ou sofre com o caos."
+  ],
+  [
+   "Gloomhaven: Presas do Leão",
+   "gloomhaven-jaws-of-the-lion",
+   "Outro cooperativo de campanha que ensina as regras missão a missão, com combate tático e muito mais controle sobre cada jogada. Mais pesado, e com edição em português."
+  ],
+  [
+   "Pandemic Legacy: Season 1",
+   "pandemic-legacy",
+   "Cooperativo de campanha em que cada sessão muda o jogo para sempre. Menos caos de mesa e mais tensão de história, para o grupo que quer uma temporada com começo, meio e fim."
+  ]
+ ],
+ "para_quem": [
+  "Ri quando o plano dá errado, inclusive o próprio",
+  "Tem um grupo fixo de quatro para umas dez noites",
+  "Quer miniatura pintada sem precisar pintar",
+  "Lê inglês sem esforço ou aguenta esperar 2027",
+  "Gosta de discutir estratégia aos gritos com ampulheta correndo"
+ ],
+ "nao_e_para": [
+  "Quer controle total sobre cada jogada",
+  "Joga quase sempre a dois",
+  "Quer comprar hoje, no Brasil, em português",
+  "Tem estante pequena e paciência curta para bandeja de plástico",
+  "Fica nervoso com cronômetro na mesa"
+ ],
+ "selo": "Recomendado com ressalva",
+ "ressalva": "português só previsto para 2027",
+ "melhor_para": "cooperativo",
+ "veredito": "Mechs vs. Minions é um jogo de programação em que o código sempre tem bug, e é por isso que ele funciona. Você planeja seis comandos, um lacaio acerta você, a carta de dano reescreve o espaço 3 e o robô entra na lava com toda a convicção. Para o Meeple Like Us, isso é defeito. Para a gente, é o jogo, e o Golden Geek de cooperativo de 2016 concordou. A produção continua entre as melhores pelo preço, e a campanha de dez missões ensina sem manual pesado. O que pesa: o caos não agrada a todo grupo, a dois o time fica fraco e, hoje, não há onde comprar no Brasil. Se você lê inglês, importe a reimpressão. Se não, espere a Devir em 2027. Os robôs já passaram seis anos fora de catálogo. Você aguenta mais um.",
+ "tagline": "Você escreve o programa. O lacaio reescreve. O bug é a melhor parte.",
+ "consulta": "02/11/2026",
+ "fontes": [
+  [
+   "Riot Games – Mechs vs. Minions (Wave 3), fotos oficiais",
+   "https://merch.riotgames.com/en-us/product/mechs-v-s-minions-wave-3/",
+   "componentes, jogadores, fotos"
+  ],
+  [
+   "Brettspielbox – 11th Annual Golden Geek Awards Winners 2016",
+   "https://brettspielbox.de/11th-annual-golden-geek-awards-winners-2016/",
+   "prêmios"
+  ],
+  [
+   "Wikipedia – Mechs vs. Minions",
+   "https://en.wikipedia.org/wiki/Mechs_vs._Minions",
+   "designers, duração, recepção, criador de cenários"
+  ],
+  [
+   "boardmatch.app – Mechs vs. Minions",
+   "https://boardmatch.app/en/game/209010",
+   "nota, avaliações, peso, ranking, idade e enquete do BGG"
+  ],
+  [
+   "UltraBoardGames – regras de Mechs vs. Minions",
+   "https://ultraboardgames.com/mechs-vs-minions/game-rules.php",
+   "regras, rodada, cartas, dano"
+  ],
+  [
+   "Shut Up & Sit Down – Review: Mechs vs. Minions",
+   "https://www.shutupandsitdown.com/review-mechs-vs-minions",
+   "crítica, citação, dois jogadores, manual"
+  ],
+  [
+   "Tabletop Gaming – Mechs vs Minions review",
+   "https://tabletopgaming.co.uk/reviews/mechs-vs-minions-review",
+   "crítica, produção, duração da campanha"
+  ],
+  [
+   "Meeple Like Us – Mechs vs Minions",
+   "https://www.meeplelikeus.co.uk/mechs-vs-minions-2016/",
+   "crítica, caos, dois jogadores, caixa"
+  ],
+  [
+   "ICv2 – distribuidores de Mechs vs. Minions",
+   "https://icv2.com/articles/news/view/63680/",
+   "reimpressão, preços, edição em português pela Devir"
+  ],
+  [
+   "Insider Gaming – Bandle City Edition",
+   "https://insider-gaming.com/lol-board-game-mechs-vs-minions-bandle-city-edition-reveal/",
+   "edição menor, yordles, desafios solo"
+  ],
+  [
+   "GamingTrend – Mechs vs. Minions volta para os 10 anos",
+   "https://gamingtrend.com/news/mechs-vs-minions-returns-to-print-for-its-10th-anniversary/",
+   "fora de catálogo desde 2020, Incredible Dream, missões"
+  ],
+  [
+   "ComparaJogos – Mechs vs. Minions",
+   "https://www.comparajogos.com.br/item/mechs-vs-minions",
+   "ofertas no Brasil, dependência de idioma"
+  ]
+ ],
+ "legenda": "Mechs vs. Minions: um jogo de programação em que o código sempre dá bug. E o bug é a graça. 🤖\n\nMelhor cooperativo do Golden Geek 2016, feito pela Riot Games, a dona de League of Legends.\nVocê programa seis comandos. O lacaio acerta, a carta de dano reescreve o plano e o robô entra na lava com toda a convicção.\nVeredito: RECOMENDADO COM RESSALVA. Hoje não há oferta no Brasil, e o português pela Devir só está previsto para 2027.\n\nNo seu grupo, plano que dá errado vira risada ou briga? 👇\nResenha completa no link da bio.\n\n#MechsVsMinions #JogosDeTabuleiro #BoardGames #RiotGames #LeagueOfLegends #JogoCooperativo #Cooperative #GoldenGeek #EliteBoardgamers #Boardgamer"
+}
