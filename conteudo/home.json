@@ -2,6 +2,18 @@
  "edicao": "2026-10-30",
  "em_alta": [
   {
+   "nome": "Caminhos Tortuosos",
+   "id_ludopedia": 81879,
+   "motivo": "Caminhos Tortuosos ganha preço na pré-venda da Devir",
+   "link": "noticias/arnak-caminhos-tortuosos-e-gaudi-ganham-preco/"
+  },
+  {
+   "nome": "Cubaneo",
+   "id_ludopedia": 87034,
+   "motivo": "Na lista de em breve da Ludofun",
+   "link": "noticias/ludofun-cubaneo-innovation-ultimate-em-breve/"
+  },
+  {
    "nome": "Night at the Zoo",
    "id_ludopedia": 85328,
    "motivo": "Do autor de SETI, passa de R$ 286 mil no MeepleStarter",
@@ -18,21 +30,17 @@
    "id_ludopedia": 86556,
    "motivo": "Passa de R$ 120 mil no MeepleStarter",
    "link": "noticias/spellrift-legends-financiamento-meeplestarter/"
-  },
-  {
-   "nome": "Rebirth",
-   "id_ludopedia": 64409,
-   "motivo": "Gioco dell'Anno 2026 depois do Kennerspiel",
-   "link": "noticias/rebirth-vence-gioco-dell-anno-lucca/"
-  },
-  {
-   "nome": "DC Super Heroes United",
-   "id_ludopedia": 64685,
-   "motivo": "Em preparação pela Devir",
-   "link": "noticias/devir-dc-super-heroes-united-e-one-round/"
   }
  ],
  "financiamentos": [
+  {
+   "nome": "Through the Mountains",
+   "editora": "Allplay",
+   "onde": "Kickstarter · aberto",
+   "situacao": "US$ 251 mil; termina em 12/11",
+   "fonte": "Kicktraq, 02/11/2026",
+   "noticia": "through-the-mountains-knizia-kickstarter"
+  },
   {
    "nome": "Night at the Zoo e Pondscape",
    "editora": "Bucaneiros Jogos",
