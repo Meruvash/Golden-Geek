@@ -98,7 +98,7 @@
  "como_funciona": [
   "Cada jogador é um charlatão numa feira de nove dias na cidade alemã de Quedlinburg, preparando poções num caldeirão próprio. Vence quem tiver mais pontos de vitória depois de nove rodadas. Todos começam com o mesmo saco de fichas de ingredientes, a maioria brancas, com valores de 1 a 3. As brancas são as perigosas.",
   "A rodada começa com uma carta da vidente, que muda uma regra ou dá um bônus a todos. Depois vêm os ratos: quem está atrás no placar conta as caudas de rato impressas na trilha entre ele e o líder e começa a poção essa mesma quantidade de casas à frente.",
-  "Então todos tiram fichas do próprio saco ao mesmo tempo, uma de cada vez, e as colocam no caldeirão, avançando quantas casas a ficha indicar. Você pode parar quando quiser. Se as brancas somarem mais de 7, o caldeirão explode e você para na hora. Uma vez por rodada, o frasco permite devolver ao saco uma branca recém-tirada, desde que ela não tenha causado a explosão.",
+  "Então todos tiram fichas do próprio saco ao mesmo tempo, uma de cada vez, e as colocam no caldeirão, avançando quantas casas a ficha indicar. Você pode parar quando quiser. Se as brancas somarem mais de 7, o caldeirão explode e você para na hora. O frasco permite devolver ao saco uma branca recém-tirada, desde que ela não tenha feito o caldeirão explodir; depois de usado, só volta a funcionar se for recarregado com rubis.",
   "Na apuração, a casa logo depois da última ficha mostra pontos, dinheiro e, às vezes, um rubi. Quem chegou mais longe sem explodir rola o dado de bônus. Quem não explodiu marca os pontos e usa o dinheiro para comprar até duas fichas de cores diferentes; quem explodiu escolhe só uma das duas coisas. Dois rubis recarregam o frasco ou adiantam a gota, a casa onde a sua poção começa.",
   "O que cada cor faz depende do livro de ingredientes escolhido na preparação: há vários por cor, e a caixa sugere combinações para as primeiras partidas. Na nona rodada, cada 5 moedas viram 1 ponto e cada par de rubis também. Em caso de empate, vence quem colocou a ficha mais longe na última poção."
  ],
@@ -153,7 +153,7 @@
  ],
  "experiencia": [
   "Vamos começar pela cena que vende o jogo. Rodada quatro. No seu caldeirão há uma branca de 3 e duas de 2: soma 7. No saco, sobraram as quatro brancas de 1 do começo e as coloridas que você comprou com sacrifício. Qualquer branca agora explode tudo. A mesa inteira já parou de tirar e está olhando para você. Ninguém fala. Você enfia a mão no saco. É exatamente a mesma decisão que leva gente ao cassino, só que aqui o prêmio é uma ficha de abóbora.",
-  "O curioso é o que acontece depois. Explodiu? Você ainda escolhe entre pontos e compras. Ficou para trás? Na rodada seguinte os ratos te empurram casas à frente. Nenhum cassino de verdade funciona assim, e é por isso que ninguém sai da mesa emburrado. O Shut Up & Sit Down chamou o jogo de um antro de apostas particular, e o júri do Kennerspiel fez questão de perguntar se era só um jogo de azar. Respondeu que não. A gente concorda, com uma ressalva: a ficha que salva a sua poção também vem do saco."
+  "O curioso é o que acontece depois. Explodiu? Você ainda escolhe entre pontos e compras. Ficou para trás? Na rodada seguinte os ratos te dão casas de vantagem. Nenhum cassino de verdade funciona assim, e é por isso que ninguém sai da mesa emburrado. O Shut Up & Sit Down chamou o jogo de um antro de apostas particular, e o júri do Kennerspiel fez questão de perguntar se era só um jogo de azar. Respondeu que não. A gente concorda, com uma ressalva: a ficha que salva a sua poção também vem do saco."
  ],
  "citacao": {
   "texto": "Um puro jogo de azar? Não.",
@@ -170,7 +170,7 @@
   ],
   [
    "Ratos que seguram o líder",
-   "As caudas de rato na trilha de pontos dão a quem está atrás uma vantagem de saída na rodada seguinte, proporcional à distância. Ashley Gariepy, da Meeple Mountain, conta que as partidas do grupo dela costumam terminar com placares entre os 40 e os 50 e poucos pontos, e que o mecanismo funciona muito bem para conter o líder disparado."
+   "As caudas de rato na trilha de pontos dão a quem está atrás uma vantagem de saída na rodada seguinte, proporcional à distância. Ashley Gariepy, da Meeple Mountain, conta que as partidas do grupo dela costumam terminar com placares entre 40 e quase 60 pontos, e que o mecanismo funciona muito bem para conter o líder disparado."
   ],
   [
    "Livros que mudam o jogo",
@@ -189,7 +189,7 @@
   [
    "Grave",
    "Edição brasileira: lugar nenhum",
-   "Oito anos depois do Kennerspiel, não encontramos edição nacional até 02/11/2026. O que se vende aqui é a caixa americana da CMYK, em inglês, e o ComparaJogos classifica o texto como moderado, com consulta. Os livros e as cartas da vidente têm regra escrita. Existe tradução para colar, vendida à parte. É o kit faça você mesmo de um jogo premiado."
+   "Desde o Kennerspiel de 2018, e até 02/11/2026, não encontramos edição nacional. O que se vende aqui é a caixa americana da CMYK, em inglês, e o ComparaJogos classifica o texto como moderado, com consulta. Os livros e as cartas da vidente têm regra escrita. Existe tradução para colar, vendida à parte. É o kit faça você mesmo de um jogo premiado."
   ],
   [
    "Moderada",
@@ -240,7 +240,7 @@
   ]
  ],
  "primeira_partida": "Na estreia, use a combinação de livros que a própria caixa recomenda para a primeira partida e o lado simples do caldeirão; o lado avançado fica para depois. O que mais confunde é a apuração, que tem ordem fixa: dado de bônus, efeitos dos ingredientes, rubi, pontos e compras. Deixe essa sequência à vista. Peça a cada jogador que anuncie em voz alta quando parar ou explodir, e reserve mais que os 45 minutos da caixa se forem três ou quatro pessoas.",
- "edicao_nacional": "Não encontramos edição nacional até 02/11/2026: a Ludopedia não registra edição brasileira, e o nome Os Charlatães de Quedlinburg não aparece em editora ou loja consultada. O que se vende no Brasil é a edição americana da CMYK, em inglês. Em 02/11/2026, o ComparaJogos listava três ofertas novas, de R$ 436,90 no Pix a R$ 513,90. Os livros de ingredientes e as cartas da vidente têm texto; uma tradução para colar é vendida à parte, a partir de R$ 78,20 no Pix.",
+ "edicao_nacional": "Não encontramos edição nacional até 02/11/2026: a Ludopedia não registra edição brasileira, e o nome Os Charlatães de Quedlinburg não aparece em editora ou loja consultada. O que se vende no Brasil é a edição americana da CMYK, em inglês. Em 02/11/2026, o ComparaJogos listava três ofertas novas, de R$ 436,90 no Pix a R$ 513,90. Os livros de ingredientes e as cartas da vidente têm texto; uma tradução para colar é vendida à parte, por R$ 78,20 no Pix.",
  "preco_ref": {
   "faixa": "de R$ 436,90 a R$ 513,90",
   "data": "02/11/2026",
@@ -351,5 +351,5 @@
    "edição nacional (via busca)"
   ]
  ],
- "legenda": "O único cassino em que a casa banca quem está perdendo. 🧪\n\nThe Quacks of Quedlinburg venceu o Kennerspiel e o Golden Geek de família de 2018.\nVocê tira ingredientes do saco até parar ou explodir o caldeirão. Explodiu? Ainda compra. Ficou para trás? Os ratos te empurram.\nVeredito: RECOMENDADO COM RESSALVA. Oito anos depois, só importado e em inglês.\n\nVocê para no 6 ou tira mais uma? 👇\nResenha completa no link da bio.\n\n#QuacksOfQuedlinburg #Quacks #JogosDeTabuleiro #BoardGames #WolfgangWarsch #Kennerspiel #GoldenGeek #PushYourLuck #EliteBoardgamers #Boardgamer"
+ "legenda": "O único cassino em que a casa banca quem está perdendo. 🧪\n\nThe Quacks of Quedlinburg venceu o Kennerspiel e o Golden Geek de família de 2018.\nVocê tira ingredientes do saco até parar ou explodir o caldeirão. Explodiu? Ainda compra. Ficou para trás? Os ratos te empurram.\nVeredito: RECOMENDADO COM RESSALVA. Oito anos depois, só importado e em inglês.\n\nBrancas somando 7: você para ou tira mais uma? 👇\nResenha completa no link da bio.\n\n#QuacksOfQuedlinburg #Quacks #JogosDeTabuleiro #BoardGames #WolfgangWarsch #Kennerspiel #GoldenGeek #PushYourLuck #EliteBoardgamers #Boardgamer"
 }

@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-11-01",
+ "atualizado_em": "2026-11-02",
  "regras": {
   "premios": [
    "Golden Geek",
@@ -253,6 +253,26 @@
    "jogo": "Flamecraft",
    "url": "https://eliteboardgamers.com.br/flamecraft/",
    "data": "2026-11-01"
+  },
+  {
+   "jogo": "Mechs vs. Minions",
+   "url": "https://eliteboardgamers.com.br/mechs-vs-minions/",
+   "data": "2026-11-02"
+  },
+  {
+   "jogo": "The Quacks of Quedlinburg",
+   "url": "https://eliteboardgamers.com.br/the-quacks-of-quedlinburg/",
+   "data": "2026-11-02"
+  },
+  {
+   "jogo": "Oath: Crônicas de Império e Exílio",
+   "url": "https://eliteboardgamers.com.br/oath/",
+   "data": "2026-11-02"
+  },
+  {
+   "jogo": "Splendor Duel",
+   "url": "https://eliteboardgamers.com.br/splendor-duel/",
+   "data": "2026-11-02"
   }
  ],
  "jogos": [
@@ -796,7 +816,7 @@
      "categoria": "Família",
      "colocacao": 3,
      "resultado": "top 3",
-     "fonte": "https://eliteboardgamers.com.br/"
+     "fonte": "https://brettspielbox.de/13th-annual-golden-geek-awards-winners-2018/"
     },
     {
      "premio": "Spiel des Jahres",
@@ -992,7 +1012,7 @@
      "categoria": "Jogo do Ano pesado",
      "colocacao": 1,
      "resultado": "vencedor",
-     "fonte": "https://eliteboardgamers.com.br/"
+     "fonte": "https://www.tabletopgaming.co.uk/news/golden-geek-winners-announced-for-2021-radlands-arnak-and-sleeping-gods-amongst-the-winners/"
     },
     {
      "premio": "Golden Geek",
@@ -1312,7 +1332,7 @@
      "categoria": "Arte",
      "colocacao": 1,
      "resultado": "vencedor",
-     "fonte": "https://eliteboardgamers.com.br/"
+     "fonte": "https://brettspielbox.de/11th-annual-golden-geek-awards-winners-2016/"
     },
     {
      "premio": "Golden Geek",
@@ -1446,7 +1466,7 @@
      "categoria": "Cooperativo",
      "colocacao": 3,
      "resultado": "top 3",
-     "fonte": "https://eliteboardgamers.com.br/"
+     "fonte": "https://brettspielbox.de/11th-annual-golden-geek-awards-winners-2016/"
     },
     {
      "premio": "Golden Geek",
@@ -2240,7 +2260,7 @@
      "categoria": "Família",
      "colocacao": 1,
      "resultado": "vencedor",
-     "fonte": "https://eliteboardgamers.com.br/"
+     "fonte": "https://brettspielbox.de/13th-annual-golden-geek-awards-winners-2018/"
     },
     {
      "premio": "Kennerspiel des Jahres",
@@ -2251,7 +2271,7 @@
      "fonte": "https://en.wikipedia.org/wiki/Spiel_des_Jahres"
     }
    ],
-   "status": "na_fila",
+   "status": "publicado",
    "prioridade": 53,
    "premios_distintos": 2,
    "carro_chefe": true,
@@ -2541,7 +2561,7 @@
      "categoria": "Jogo do Ano pesado",
      "colocacao": 2,
      "resultado": "top 3",
-     "fonte": "https://eliteboardgamers.com.br/"
+     "fonte": "https://www.tabletopgaming.co.uk/news/golden-geek-winners-announced-for-2021-radlands-arnak-and-sleeping-gods-amongst-the-winners/"
     },
     {
      "premio": "Golden Geek",
@@ -2560,7 +2580,7 @@
      "fonte": "https://www.tabletopgaming.co.uk/news/golden-geek-winners-announced-for-2021-radlands-arnak-and-sleeping-gods-amongst-the-winners/"
     }
    ],
-   "status": "na_fila",
+   "status": "publicado",
    "prioridade": 62,
    "premios_distintos": 1,
    "carro_chefe": false,
@@ -3090,7 +3110,7 @@
      "categoria": "2 jogadores",
      "colocacao": 1,
      "resultado": "vencedor",
-     "fonte": "https://eliteboardgamers.com.br/"
+     "fonte": "https://boardgamewire.com/index.php/2023/05/09/heat-pedal-to-the-metal-cat-in-the-box-lead-boardgamegeek-golden-geek-award-winners/"
     },
     {
      "premio": "Golden Geek",
@@ -3101,7 +3121,7 @@
      "fonte": "https://boardgamewire.com/index.php/2023/05/09/heat-pedal-to-the-metal-cat-in-the-box-lead-boardgamegeek-golden-geek-award-winners/"
     }
    ],
-   "status": "na_fila",
+   "status": "publicado",
    "prioridade": 71,
    "premios_distintos": 1,
    "carro_chefe": false,
@@ -3127,7 +3147,7 @@
      "categoria": "2 jogadores",
      "colocacao": 3,
      "resultado": "top 3",
-     "fonte": "https://eliteboardgamers.com.br/"
+     "fonte": "https://boardgamewire.com/index.php/2023/05/09/heat-pedal-to-the-metal-cat-in-the-box-lead-boardgamegeek-golden-geek-award-winners/"
     }
    ],
    "status": "na_fila",
@@ -3428,7 +3448,7 @@
      "categoria": "Cooperativo",
      "colocacao": 1,
      "resultado": "vencedor",
-     "fonte": "https://eliteboardgamers.com.br/"
+     "fonte": "https://brettspielbox.de/11th-annual-golden-geek-awards-winners-2016/"
     },
     {
      "premio": "Golden Geek",
@@ -3436,10 +3456,10 @@
      "categoria": "Arte",
      "colocacao": 2,
      "resultado": "top 3",
-     "fonte": "https://eliteboardgamers.com.br/"
+     "fonte": "https://brettspielbox.de/11th-annual-golden-geek-awards-winners-2016/"
     }
    ],
-   "status": "na_fila",
+   "status": "publicado",
    "prioridade": 56,
    "premios_distintos": 1,
    "carro_chefe": true,
@@ -5914,7 +5934,7 @@
      "categoria": "2 jogadores",
      "colocacao": 2,
      "resultado": "top 3",
-     "fonte": "https://eliteboardgamers.com.br/"
+     "fonte": "https://boardgamewire.com/index.php/2023/05/09/heat-pedal-to-the-metal-cat-in-the-box-lead-boardgamegeek-golden-geek-award-winners/"
     },
     {
      "premio": "Golden Geek",
@@ -6110,7 +6130,7 @@
      "categoria": "Família",
      "colocacao": 2,
      "resultado": "top 3",
-     "fonte": "https://eliteboardgamers.com.br/"
+     "fonte": "https://brettspielbox.de/13th-annual-golden-geek-awards-winners-2018/"
     },
     {
      "premio": "Golden Geek",
@@ -6166,7 +6186,7 @@
      "categoria": "Cooperativo",
      "colocacao": 2,
      "resultado": "top 3",
-     "fonte": "https://eliteboardgamers.com.br/"
+     "fonte": "https://brettspielbox.de/11th-annual-golden-geek-awards-winners-2016/"
     },
     {
      "premio": "Golden Geek",
@@ -7806,7 +7826,7 @@
      "categoria": "Jogo do Ano pesado",
      "colocacao": 3,
      "resultado": "top 3",
-     "fonte": "https://eliteboardgamers.com.br/"
+     "fonte": "https://www.tabletopgaming.co.uk/news/golden-geek-winners-announced-for-2021-radlands-arnak-and-sleeping-gods-amongst-the-winners/"
     }
    ],
    "status": "na_fila",
@@ -9846,7 +9866,7 @@
      "categoria": "Arte",
      "colocacao": 3,
      "resultado": "top 3",
-     "fonte": "https://eliteboardgamers.com.br/"
+     "fonte": "https://brettspielbox.de/11th-annual-golden-geek-awards-winners-2016/"
     }
    ],
    "status": "na_fila",
@@ -10789,10 +10809,12 @@
      "fonte": "https://eliteboardgamers.com.br/"
     }
    ],
-   "status": "na_fila",
+   "status": "publicado",
    "prioridade": 425,
    "premios_distintos": 1,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "slug": "the-quacks-of-quedlinburg",
+   "obs_publicacao": "coberto na resenha de the-quacks-of-quedlinburg"
   },
   {
    "jogo": "Root: The Riverfolk Expansion",
