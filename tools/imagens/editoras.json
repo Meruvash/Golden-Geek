@@ -371,7 +371,9 @@
   "plataforma": "shopify",
   "estrategia": "sitemap+shopify_json",
   "press_kit": "https://kosmos-verlag.myshopify.com/pages/apps/apps",
-  "paginas": {},
+  "paginas": {
+   "the-crew-mission-deep-sea": "https://www.kosmos.de/products/die-crew-mission-tiefsee"
+  },
   "status": "ok",
   "obs": "",
   "robots": {
