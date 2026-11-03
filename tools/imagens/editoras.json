@@ -1624,5 +1624,39 @@
    ],
    "verificado_em": "2026-11-03"
   }
+ },
+ "999games.com": {
+  "nome": "999 Games",
+  "apelidos": [
+   "999 Games"
+  ],
+  "site": "https://999games.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "erro",
+  "obs": "robots.txt de https://999games.com inacessível (erro de rede); tente mais tarde"
+ },
+ "999games.nl": {
+  "nome": "999 Games",
+  "apelidos": [
+   "999 Games"
+  ],
+  "site": "https://www.999games.nl",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": 10.0,
+   "sitemaps": [
+    "https://www.999games.nl/sitemap.xml"
+   ],
+   "verificado_em": "2026-11-03"
+  }
  }
 }
