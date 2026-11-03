@@ -15,6 +15,9 @@ from pathlib import Path
 
 from PIL import Image, ImageFilter, ImageStat
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from rostos import rostos  # noqa: E402
+
 ROOT = Path(__file__).resolve().parent.parent.parent
 
 # Limites calibrados com as fotos já aprovadas (Terraforming Mars, Flip 7, Faraway, Wingspan, Arnak, Codenames, Nemesis...).
@@ -106,6 +109,9 @@ def crivo(slug, aplicar=False):
         uso = "topo" if f is topo else "como é jogar" if f is jogar else "preço" if f is caixa else "-"
         motivo = ", ".join(f["_fora"]) or ("pode: " + ", ".join(f["_lugares"]))
         print(f"  {f['arquivo']:28} {uso:13} {motivo}  {f['_m']}")
+        n = rostos(ROOT / slug / f["arquivo"])
+        if n and not f.get("pessoas"):
+            print(f"    ⚠️  o detector viu {n} rosto(s) de frente nesta foto: olhe de novo e marque \"pessoas\": true se for gente de verdade")
     if aplicar and topo:
         for f in d["fotos"]:
             for k in ("principal", "jogar", "fora", "_m", "_fora", "_lugares"):

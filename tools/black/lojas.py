@@ -15,7 +15,8 @@ import json
 import re
 import time
 from pathlib import Path
-import urllib.robotparser as rp
+from price_parser import Price
+from protego import Protego  # robots.txt pela RFC 9309 (com * e $), da Zyte: o urllib do Python não entende curingas
 from urllib.parse import urlparse
 
 import requests
@@ -109,34 +110,29 @@ def _pode(url):
     if MODO == "educado" and _loja(dom)["paginas"] >= LIMITE_ESPECIAL.get(dom, LIMITE_DIA):
         return False
     if dom not in _robots:
-        p = rp.RobotFileParser()
         try:
             r = _sessao.get(f"https://{dom}/robots.txt", timeout=20)
             if r.status_code in (401, 403, 429):
                 _bloquear(dom, f"robots.txt respondeu {r.status_code}")
                 return False
-            p.parse(r.text.splitlines() if r.status_code == 200 else [])
+            _robots[dom] = Protego.parse(r.text if r.status_code == 200 else "")
         except requests.RequestException:
             _bloqueadas.add(dom)
             return False
-        _robots[dom] = p
-    return all(_robots[dom].can_fetch(a, url) for a in AGENTES)
+    return all(_robots[dom].can_fetch(url, a) for a in AGENTES)
 
 
 def _numero(v):
+    """Preço em número a partir de 199.9, "199,90", "R$ 1.299,90" ou "1,299.90" (price-parser, da Zyte)."""
     if v is None:
         return None
     if isinstance(v, (int, float)):
         return float(v)
-    s = str(v).strip().replace("R$", "").replace(" ", "")
-    if "," in s and "." in s:
-        s = s.replace(".", "").replace(",", ".")
-    elif "," in s:
-        s = s.replace(",", ".")
-    try:
+    s = str(v).strip()
+    if re.fullmatch(r"\d+(\.\d+)?", s):  # número de máquina, como o JSON-LD costuma trazer
         return float(s)
-    except ValueError:
-        return None
+    p = Price.fromstring(s, decimal_separator="," if re.search(r",\d{1,2}$", s) else None)
+    return float(p.amount) if p.amount is not None else None
 
 
 def _produtos(dado):
@@ -239,7 +235,8 @@ def pagina(url):
     espera = PAUSA_LOJA - (time.time() - _ultimo.get(dom, 0))
     if espera > 0:
         time.sleep(espera)
-    _loja(dom)["paginas"] += 1
+    if MODO == "educado":
+        _loja(dom)["paginas"] += 1  # a cota diária é só do robô educado: o normal não gasta a cota dele
     try:
         r = _sessao.get(url, timeout=30)
     except requests.RequestException:
