@@ -1,12 +1,24 @@
 {
  "lojas": {
-  "bravojogos.com.br": {
+  "azuosmetal.com.br": {
    "dia": "2026-11-03",
    "paginas": 5
   },
+  "bravojogos.com.br": {
+   "dia": "2026-11-03",
+   "paginas": 6
+  },
+  "brecholudico.com.br": {
+   "dia": "2026-11-03",
+   "paginas": 5
+  },
+  "brinkashop.commercesuite.com.br": {
+   "dia": "2026-11-03",
+   "paginas": 1
+  },
   "loja.frodosbg.com.br": {
    "dia": "2026-11-03",
-   "paginas": 3
+   "paginas": 4
   },
   "loja.joyjoycafe.com.br": {
    "descanso_ate": "2026-11-05T17:41+00:00",
@@ -14,13 +26,33 @@
    "motivo": "página respondeu 403",
    "paginas": 1
   },
+  "loja.orcspace.com.br": {
+   "dia": "2026-11-03",
+   "paginas": 5
+  },
   "ludostation.com.br": {
    "dia": "2026-11-03",
-   "paginas": 3
+   "paginas": 8
+  },
+  "overrungeek.com.br": {
+   "dia": "2026-11-03",
+   "paginas": 5
+  },
+  "paladinsgames.com.br": {
+   "dia": "2026-11-03",
+   "paginas": 1
+  },
+  "piranoboardgame.com.br": {
+   "dia": "2026-11-03",
+   "paginas": 1
+  },
+  "tubaleria.store": {
+   "dia": "2026-11-03",
+   "paginas": 1
   },
   "www.alquimistasdosjogos.com.br": {
    "dia": "2026-11-03",
-   "paginas": 4
+   "paginas": 5
   },
   "www.animusludere.com.br": {
    "dia": "2026-11-03",
@@ -28,15 +60,39 @@
   },
   "www.boardgamebarato.com.br": {
    "dia": "2026-11-03",
-   "paginas": 5
+   "paginas": 6
+  },
+  "www.boargames.com.br": {
+   "dia": "2026-11-03",
+   "paginas": 1
+  },
+  "www.borbagames.com.br": {
+   "dia": "2026-11-03",
+   "paginas": 1
+  },
+  "www.borderjogos.com.br": {
+   "dia": "2026-11-03",
+   "paginas": 1
+  },
+  "www.botanamesa.com.br": {
+   "dia": "2026-11-03",
+   "paginas": 1
   },
   "www.caixinhaboardgames.com.br": {
    "dia": "2026-11-03",
-   "paginas": 34
+   "paginas": 39
+  },
+  "www.caldeiraojogos.com.br": {
+   "dia": "2026-11-03",
+   "paginas": 5
   },
   "www.cangaiajogos.com.br": {
    "dia": "2026-11-03",
-   "paginas": 0
+   "paginas": 1
+  },
+  "www.dalaran.com.br": {
+   "dia": "2026-11-03",
+   "paginas": 1
   },
   "www.elfosecia.com.br": {
    "descanso_ate": "2026-11-05T17:41+00:00",
@@ -46,19 +102,35 @@
   },
   "www.espacoarcs.com.br": {
    "dia": "2026-11-03",
-   "paginas": 3
+   "paginas": 4
   },
   "www.facilshopping.com.br": {
    "dia": "2026-11-03",
-   "paginas": 15
+   "paginas": 16
+  },
+  "www.guildadosjogos.com.br": {
+   "dia": "2026-11-03",
+   "paginas": 1
+  },
+  "www.javalijogos.com.br": {
+   "dia": "2026-11-03",
+   "paginas": 1
+  },
+  "www.jogasampa.com.br": {
+   "dia": "2026-11-03",
+   "paginas": 1
   },
   "www.leaolivros.com.br": {
    "dia": "2026-11-03",
-   "paginas": 3
+   "paginas": 4
+  },
+  "www.livtoys.com.br": {
+   "dia": "2026-11-03",
+   "paginas": 1
   },
   "www.masmorra.com.br": {
    "dia": "2026-11-03",
-   "paginas": 5
+   "paginas": 6
   },
   "www.mecadosjogos.com.br": {
    "dia": "2026-11-03",
@@ -70,31 +142,67 @@
    "motivo": "robots.txt respondeu 403",
    "paginas": 0
   },
+  "www.nerdev.com.br": {
+   "dia": "2026-11-03",
+   "paginas": 5
+  },
+  "www.odisseiajogos.com.br": {
+   "dia": "2026-11-03",
+   "paginas": 1
+  },
+  "www.omniverse.com.br": {
+   "dia": "2026-11-03",
+   "paginas": 1
+  },
+  "www.pandaboardgames.com.br": {
+   "dia": "2026-11-03",
+   "paginas": 1
+  },
+  "www.pittasboardgames.com.br": {
+   "dia": "2026-11-03",
+   "paginas": 5
+  },
   "www.placegames.com.br": {
    "dia": "2026-11-03",
-   "paginas": 9
+   "paginas": 10
   },
   "www.playeasy.com.br": {
    "dia": "2026-11-03",
-   "paginas": 7
+   "paginas": 8
+  },
+  "www.pousocultural.com.br": {
+   "dia": "2026-11-03",
+   "paginas": 1
   },
   "www.promobit.com.br": {
    "dia": "2026-11-03",
    "paginas": 12
   },
+  "www.riodemeepeiro.com.br": {
+   "dia": "2026-11-03",
+   "paginas": 5
+  },
+  "www.spaceboardgames.com.br": {
+   "dia": "2026-11-03",
+   "paginas": 1
+  },
   "www.tabuloja.com": {
    "dia": "2026-11-03",
-   "paginas": 6
+   "paginas": 7
   },
   "www.tavernareal.com": {
    "dia": "2026-11-03",
-   "paginas": 6
+   "paginas": 7
   },
   "www.tocadotabuleiro.com": {
    "descanso_ate": "2026-11-05T17:41+00:00",
    "dia": "2026-11-03",
    "motivo": "robots.txt respondeu 403",
    "paginas": 0
+  },
+  "www.tschuss.com.br": {
+   "dia": "2026-11-03",
+   "paginas": 1
   }
  },
  "precos": {
