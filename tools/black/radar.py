@@ -49,7 +49,7 @@ MIN_DIAS = 28        # abaixo disso o item fica fora (usuário aceitou base curt
 CORTE = 0.20         # desconto real mínimo
 NOTA_MIN = 7.0
 SUSPEITO = 0.45      # oferta abaixo de 45% da referência: provável anúncio de outro produto; fica fora
-FORA = re.compile(r"amazon|mercado ?livre|shopee|magalu|magazine|americanas|casas ?bahia|aliexpress|shein", re.I)
+FORA = re.compile(r"amazon|mercado ?livre|shopee|magalu|magazine|americanas|casas ?bahia|aliexpress|shein|brech[oó]|usad|seminov", re.I)
 PREMIOS_OK = ("Golden Geek", "Spiel des Jahres", "Kennerspiel des Jahres")
 
 

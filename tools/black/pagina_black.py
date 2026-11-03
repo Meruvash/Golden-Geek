@@ -5,6 +5,7 @@ vez e guardadas em img/black/<slug>.webp (240 px), com crédito na página.
 """
 import datetime as dt
 import html
+import re
 import io
 import sys
 from pathlib import Path
@@ -48,6 +49,11 @@ CSS = """<style>
 .bk .credito{font-size:.8rem;color:var(--paper-muted);margin-top:8px}
 .bk h3{margin:18px 0 8px;font-size:1.05rem}
 </style>"""
+
+
+def nome(x):
+    """Nome do jogo sem travessão (regra do usuário: nada de travessão no texto)."""
+    return re.sub(r"\s*[–—]\s*", ": ", x["nome"] or "")
 
 
 def brl(v):
@@ -100,7 +106,7 @@ def tabela(itens, pre):
         img = capa(x, pre)
         tags = '<span class="tag rec">menor preço do período</span>' if x["recorde"] else ""
         linhas += (f'<tr><td class="j"><div>{f"<img src=\"{img}\" alt=\"\" loading=\"lazy\" width=\"48\" height=\"48\">" if img else ""}'
-                   f'<span><b>{e(x["nome"])}</b><br>{tags}</span></div></td>'
+                   f'<span><b>{e(nome(x))}</b><br>{tags}</span></div></td>'
                    f'<td>{e(x["editora"] or "não informada")}</td><td>{e(x["loja"])}</td>'
                    f'<td class="n"><b>{brl(x["por"])}</b></td><td class="n">{brl(x["ref"])}</td>'
                    f'<td class="n desc">{pct(x["desc"])}</td><td class="n">{brl(x["menor"])}</td>'
@@ -126,13 +132,13 @@ def build(radar_itens, armadilhas):
     top = sorted(melhor.values(), key=lambda x: -((x["bgg"] or 7.0) * x["desc"]))[:5]
     top_html = "".join(
         f'<li>{f"<img src=\"{capa(x, pre)}\" alt=\"\" loading=\"lazy\" width=\"72\" height=\"72\">" if capa(x, pre) else "<span></span>"}'
-        f'<div><b><a href="{e(x["url"])}" target="_blank" rel="noopener nofollow sponsored">{e(x["nome"])}</a>: {brl(x["por"])} em {e(x["loja"])}</b>'
+        f'<div><b><a href="{e(x["url"])}" target="_blank" rel="noopener nofollow sponsored">{e(nome(x))}</a>: {brl(x["por"])} em {e(x["loja"])}</b>'
         f'<p>{pct(x["desc"])} abaixo da média de {brl(x["ref"])}'
         f'{f", nota {x["bgg"]:.1f} no BGG".replace(".", ",", 1) if x["bgg"] else ""}'
         f'{", e no menor preço do período" if x["recorde"] else ""}.</p></div></li>' for x in top)
     recordes = [x for x in melhor.values() if x["recorde"]]
-    rec_html = "".join(f'<li><b>{e(x["nome"])}</b>: {brl(x["por"])} em {e(x["loja"])} (menor do período até ontem: {brl(x["menor"])})</li>' for x in recordes)
-    arm_html = "".join(f'<li><b>{e(x["nome"])}</b> em {e(x["loja"])}: anunciado de {brl(x["de"])} por {brl(x["por"])} '
+    rec_html = "".join(f'<li><b>{e(nome(x))}</b>: {brl(x["por"])} em {e(x["loja"])} (menor do período até ontem: {brl(x["menor"])})</li>' for x in recordes)
+    arm_html = "".join(f'<li><b>{e(nome(x))}</b> em {e(x["loja"])}: anunciado de {brl(x["de"])} por {brl(x["por"])} '
                        f'({pct((x["de"] - x["por"]) / x["de"])} de "desconto"), mas a média real do período é {brl(x["ref"])}: '
                        f'desconto real de {pct(max(x["desc"], 0))}.</li>' for x in armadilhas)
     curta = min((x["dias"] for x in radar_itens), default=None)
@@ -148,8 +154,8 @@ def build(radar_itens, armadilhas):
   <div class="aviso">
    <p><b>Base curta.</b> O histórico vem das páginas públicas do Compara Jogos, que mostram 30 dias. Gravamos um ponto por
    dia desde 03/11/2026 até completar 180 dias; até lá, cada linha mostra quantos dias de base a conta usou{f" (hoje, a partir de {curta} dias)" if curta else ""}.</p>
-   <p><b>Fora do radar.</b> Amazon, Mercado Livre, Magalu, Americanas e Casas Bahia não deixam robôs conferirem o vendedor
-   e a edição, então as ofertas deles não entram. Shopee e vendedores avulsos também ficam de fora.</p>
+   <p><b>Fora do radar.</b> Amazon, Mercado Livre, Magalu e Casas Bahia proíbem ou bloqueiam robôs, e na Americanas o robô não
+   consegue conferir quem é o vendedor; por isso as ofertas deles não entram. Shopee e vendedores avulsos também ficam de fora.</p>
    <p><b>Preço conferido na loja.</b> Antes de publicar, o robô abre a página do produto na própria loja e lê o preço e o
    estoque (coluna "Fonte do preço"). Esse é o preço de tabela da página: no Pix costuma sair um pouco mais barato. Lojas que
    bloqueiam robôs ficam com o preço informado ao Compara Jogos.</p>

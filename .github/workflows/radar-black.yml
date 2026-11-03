@@ -1,0 +1,60 @@
+# Radar Black de Verdade (eliteboardgamers.com.br/black/): leitura de preços do Compara Jogos.
+# Pedido do usuário em 03/11/2026: leitura nova de 30 em 30 minutos.
+#  - a cada 30 min: "rapida" (quedas de preço + jogos no radar e perto do corte)
+#  - uma vez por dia (14h UTC, 11h de Brasília): "coletar" (lista de acompanhamento inteira)
+#  - domingo, 14h UTC: "varrer" (todos os jogos com preço, renova a lista)
+# Este workflow é o único que grava conteudo/black/, black/ e img/black/ (evita conflito com as rotinas do Claude).
+name: Radar Black de Verdade
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+    inputs:
+      acao:
+        description: "rapida, coletar ou varrer"
+        default: rapida
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: radar-black
+  cancel-in-progress: false
+
+jobs:
+  radar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - run: pip install requests Pillow beautifulsoup4 lxml feedparser
+      - name: Escolhe a leitura
+        id: acao
+        run: |
+          A="${{ github.event.inputs.acao }}"
+          if [ -z "$A" ]; then
+            H=$(date -u +%H); M=$(date -u +%M); D=$(date -u +%u)
+            if [ "$H" = "14" ] && [ "$M" -lt 30 ]; then
+              if [ "$D" = "7" ]; then A=varrer; else A=coletar; fi
+            else
+              A=rapida
+            fi
+          fi
+          echo "acao=$A" >> "$GITHUB_OUTPUT"
+      - name: Lê os preços
+        run: python3 tools/black/radar.py ${{ steps.acao.outputs.acao }}
+      - name: Publica
+        run: |
+          git config user.name "Radar Black (Elite Boardgamers)"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add conteudo/black black img/black
+          if git diff --cached --quiet; then echo "nada mudou"; exit 0; fi
+          git commit -m "Radar Black: leitura ${{ steps.acao.outputs.acao }} de $(TZ=America/Sao_Paulo date +'%d/%m/%Y %Hh%M')"
+          for i in 1 2 3 4; do git pull --rebase -X theirs origin main && git push origin HEAD:main && break; sleep $((i*5)); done
+          curl -s -X POST -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/${{ github.repository }}/pages/builds" || true
