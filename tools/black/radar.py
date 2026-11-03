@@ -175,6 +175,7 @@ def ler_item(slug):
         ofertas.append({
             "loja": loja.get("full_name") or loja.get("name") or "",
             "loja_id": loja.get("name") or "",
+            "titulo": o.get("name"),
             "tipo": o.get("type"),
             "vendedor": (o.get("seller") or {}).get("name") if isinstance(o.get("seller"), dict) else None,
             "de": o.get("price_from"),
@@ -323,6 +324,26 @@ def conferir_lojas(margem=0.15):
     print(f"ok lojas: {lidas} páginas tentadas, {ok} conferidas; bloqueadas: {', '.join(lojas.bloqueadas()) or 'nenhuma'}")
 
 
+EXCLUIR = DADOS / "excluir.json"  # ofertas conferidas a olho que são outro produto ligado ao jogo por engano
+# marcas de brinquedo que lançam jogos com o mesmo nome de jogos de tabuleiro conhecidos (ex.: "Código Secreto Pakitoys")
+MARCAS_OUTRAS = re.compile(r"(?i)\b(pakitoys|paki toys|uniplac|nig brinquedos|toyster|xalingo|pais ?& ?filhos|pais e filhos|"
+                           r"brincadeira de crian[cç]a|elka|big star|zoop toys|lugo|junges|ggb plast)\b")
+
+
+def outro_produto(o, h):
+    """A oferta é de outro produto que o Compara Jogos ligou ao jogo? Pela lista de exclusão ou pela marca no
+    título do anúncio (quando a marca não é a editora do jogo)."""
+    try:
+        excl = set(json.loads(EXCLUIR.read_text(encoding="utf-8")))
+    except FileNotFoundError:
+        excl = set()
+    if o.get("url") in excl:
+        return True
+    texto = f'{o.get("titulo") or ""} {o.get("url") or ""}'
+    m = MARCAS_OUTRAS.search(texto)
+    return bool(m and m.group(1).lower() not in (h.get("editora") or "").lower())
+
+
 def calcular():
     """Itens do radar, armadilhas e itens no menor preço, a partir do histórico e das ofertas de hoje."""
     hist, hoje_d = ler(HIST, {}), ler(HOJE, {})
@@ -344,6 +365,8 @@ def calcular():
         antes = [p for d, p in janela.items() if d < hoje.isoformat()]
         menor_antes = min(antes) if antes else menor
         for o in of["ofertas"]:
+            if outro_produto(o, h):
+                continue
             api = o.get("api") if (o.get("api") or {}).get("vendedor_ok") else None
             if o["tipo"] != "LINK" or not o["por"] or (FORA.search(o["loja"] + o["loja_id"]) and not api):
                 continue  # marketplace só entra com vendedor conferido pela API (Amazon pelo Keepa, Mercado Livre pela API)
