@@ -30,7 +30,9 @@
   "plataforma": "html",
   "estrategia": "sitemap+html",
   "press_kit": "https://www.czechgames.com/for-press-games",
-  "paginas": {},
+  "paginas": {
+   "codenames-pictures": "https://www.czechgames.com/games/codenames-pictures"
+  },
   "status": "ok",
   "obs": "",
   "robots": {
