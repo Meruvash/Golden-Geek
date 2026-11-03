@@ -352,6 +352,8 @@ def main():
     sys.path.insert(0, str(Path(__file__).resolve().parent))
     if a.acao != "pagina":
         conferir_lojas()
+        import cupons
+        cupons.ler()
     import pagina_black
     pagina_black.build(*calcular())
 

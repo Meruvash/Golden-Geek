@@ -155,5 +155,30 @@ def conferir(url, esperado=None):
     return {"preco": preco, "estoque": estoque}
 
 
+def permitido(url):
+    """O robots.txt da loja permite este endereço para o nosso robô e para os da Anthropic?"""
+    return _pode(url)
+
+
+def pagina(url):
+    """HTML de uma página da loja, respeitando robots.txt e a pausa por loja; None se não pôde ou falhou."""
+    if not _pode(url):
+        return None
+    dom = urlparse(url).netloc.lower()
+    espera = PAUSA_LOJA - (time.time() - _ultimo.get(dom, 0))
+    if espera > 0:
+        time.sleep(espera)
+    try:
+        r = _sessao.get(url, timeout=30)
+    except requests.RequestException:
+        return None
+    finally:
+        _ultimo[dom] = time.time()
+    if r.status_code in (401, 403, 429):
+        _bloqueadas.add(dom)
+        return None
+    return r.text if r.status_code == 200 else None
+
+
 def bloqueadas():
     return sorted(_bloqueadas)

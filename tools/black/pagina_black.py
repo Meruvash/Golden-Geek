@@ -9,6 +9,8 @@ import re
 import io
 import sys
 from pathlib import Path
+from urllib.parse import urlparse
+import json
 from zoneinfo import ZoneInfo
 
 import requests
@@ -25,6 +27,7 @@ import radar  # noqa: E402
 e = html.escape
 BR = ZoneInfo("America/Sao_Paulo")
 IMG = ROOT / "img" / "black"
+TESTAVEIS = set()  # domínios com teste no carrinho ligado (tools/black/cupons.py TESTE_APROVADAS)
 
 CSS = """<style>
 .bk .lide{max-width:70ch}
@@ -47,6 +50,7 @@ CSS = """<style>
 .bk .top5 b{display:block}.bk .top5 p{font-size:.9rem;color:var(--paper-muted);margin-top:3px}
 .bk .lista li{padding:8px 0;border-top:1px solid var(--paper-line)}.bk .lista li:first-child{border-top:0}
 .bk .credito{font-size:.8rem;color:var(--paper-muted);margin-top:8px}
+.bk table.cupons-t{min-width:900px}.bk table.cupons-t td:nth-child(3){min-width:320px;font-size:.82rem;color:var(--paper-muted)}
 .bk h3{margin:18px 0 8px;font-size:1.05rem}
 </style>"""
 
@@ -98,7 +102,29 @@ def base_txt(x):
     return "Compara Jogos" + (f" · BASE CURTA ({x['dias']} dias)" if x["dias"] < radar.JANELA else "")
 
 
-def tabela(itens, pre):
+def cupons():
+    arq = ROOT / "conteudo" / "black" / "cupons.json"
+    return json.loads(arq.read_text(encoding="utf-8")) if arq.exists() else {}
+
+
+def limpa(s):
+    return re.sub(r"\s*[–—]\s*", ", ", s or "")
+
+
+def cupom_da_loja(url, cps):
+    reg = cps.get(urlparse(url or "").netloc.lower())
+    if not reg or not reg["cupons"]:
+        return "nenhum anunciado"
+    partes = []
+    for c in reg["cupons"].values():
+        t = c.get("teste")
+        sit = (f"testado {quando(t['hora'])}: {'aplicou' if t['ok'] else 'recusado'}" if t else f"anunciado, visto {quando(c['visto'])}")
+        partes.append(f"<b>{e(c['codigo'])}</b> ({e(sit)})")
+    return "<br>".join(partes)
+
+
+def tabela(itens, pre, cps=None):
+    cps = cps or {}
     if not itens:
         return '<p class="criterio">Nenhum item passou no corte de hoje.</p>'
     linhas = ""
@@ -111,7 +137,7 @@ def tabela(itens, pre):
                    f'<td class="n"><b>{brl(x["por"])}</b></td><td class="n">{brl(x["ref"])}</td>'
                    f'<td class="n desc">{pct(x["desc"])}</td><td class="n">{brl(x["menor"])}</td>'
                    f'<td class="n">{f"{x["bgg"]:.1f}".replace(".", ",") if x["bgg"] else "sem nota"} BGG</td>'
-                   f'<td>não verificado</td>'
+                   f'<td>{cupom_da_loja(x["url"], cps)}</td>'
                    f'<td><a class="ir" href="{e(x["url"])}" target="_blank" rel="noopener nofollow sponsored">Ver oferta</a></td>'
                    f'<td>{e(x.get("fonte_preco", "Compara Jogos"))}</td><td>{e(base_txt(x))}</td><td class="n">{quando(x["verificado"])}</td></tr>')
     return (f'<div class="tab"><table><thead><tr><th>Jogo</th><th>Editora</th><th>Loja</th><th>Preço hoje</th>'
@@ -123,6 +149,19 @@ def build(radar_itens, armadilhas):
     pre = "../"
     url = f"{SITE}/black/"
     agora = radar.agora()
+    cps = cupons()
+    linhas_cp = ""
+    for dom, reg in sorted(cps.items(), key=lambda kv: kv[1]["loja"].lower()):
+        for c in reg["cupons"].values():
+            t = c.get("teste")
+            teste = (f"{quando(t['hora'])}: {'aplicou' if t['ok'] else 'recusado'}{', ' + e(t['detalhe']) if t.get('detalhe') else ''}" if t
+                     else "não testado (o robots.txt da loja proíbe robôs no carrinho)" if dom not in TESTAVEIS else "aguardando teste")
+            linhas_cp += (f'<tr><td>{e(reg["loja"])}</td><td><b>{e(c["codigo"])}</b></td><td>{e(limpa(c["texto"]))}</td>'
+                          f'<td class="n">{quando(c["visto"])}</td><td>{teste}</td>'
+                          f'<td><a class="ir" href="{e(c["pagina"])}" target="_blank" rel="noopener nofollow">Ver na loja</a></td></tr>')
+    cupons_html = (f'<div class="tab"><table class="cupons-t"><thead><tr><th>Loja</th><th>Cupom</th><th>O que a página da loja diz</th>'
+                   f'<th>Visto na loja em</th><th>Testado no carrinho</th><th>Link</th></tr></thead><tbody>{linhas_cp}</tbody></table></div>'
+                   if linhas_cp else '<p class="criterio">Nenhum cupom anunciado nas lojas do radar nesta leitura.</p>')
     titulo = "Black de Verdade: ofertas de jogos de tabuleiro com desconto real"
     melhor = {}
     for x in radar_itens:  # a melhor oferta de cada jogo
@@ -159,17 +198,21 @@ def build(radar_itens, armadilhas):
    <p><b>Preço conferido na loja.</b> Antes de publicar, o robô abre a página do produto na própria loja e lê o preço e o
    estoque (coluna "Fonte do preço"). Esse é o preço de tabela da página: no Pix costuma sair um pouco mais barato. Lojas que
    bloqueiam robôs ficam com o preço informado ao Compara Jogos.</p>
-   <p><b>Confira antes de pagar.</b> Cupom e frete não são verificados pelo robô. Preço muda rápido: cada linha mostra a hora
+   <p><b>Confira antes de pagar.</b> Frete não é verificado pelo robô, e cupom só é testado onde a loja permite (veja a seção de cupons). Preço muda rápido: cada linha mostra a hora
    em que a loja informou o valor ao Compara Jogos.</p>
   </div>
  </article>
  <section class="bloco"><h2>Top 5: compra sem pensar</h2><p class="criterio">A melhor combinação de nota no BGG e desconto real.</p>
   {f'<ol class="top5">{top_html}</ol>' if top_html else '<p class="criterio">Nenhum item passou no corte de hoje.</p>'}</section>
  <section class="bloco"><h2>Todas as ofertas do radar</h2><p class="criterio">Ordenadas pelo desconto real. Role a tabela para o lado no celular.</p>
-  <h3>Jogos base ({len({x["slug"] for x in jogos})})</h3>{tabela(jogos, pre)}
-  <h3>Expansões ({len({x["slug"] for x in exps})})</h3>{tabela(exps, pre)}
+  <h3>Jogos base ({len({x["slug"] for x in jogos})})</h3>{tabela(jogos, pre, cps)}
+  <h3>Expansões ({len({x["slug"] for x in exps})})</h3>{tabela(exps, pre, cps)}
   <p class="credito">Preços, histórico, nota BGG e imagens das caixas: Compara Jogos (comparajogos.com.br). Links levam à loja; não ganhamos comissão.</p>
  </section>
+ <section class="bloco"><h2>Cupons anunciados pelas lojas</h2><p class="criterio">Códigos que as lojas do radar publicam na
+  própria página, com a hora em que o robô viu cada um. Só entra código escrito pela loja; cupom que some da página sai daqui em até 36 horas.
+  O teste no carrinho só roda nas lojas cujo robots.txt permite robôs no carrinho e no checkout.</p>
+  {cupons_html}</section>
  <section class="bloco"><h2>Menor preço do período</h2><p class="criterio">Itens do radar que hoje igualaram ou bateram o menor preço registrado na base.</p>
   {f'<ul class="lista">{rec_html}</ul>' if rec_html else '<p class="criterio">Nenhum hoje.</p>'}</section>
  <section class="bloco"><h2>Armadilhas detectadas</h2><p class="criterio">Ofertas com 20% ou mais de diferença entre o preço "de" e o "por" informados pela loja, mas com desconto real abaixo de 20% sobre a média do período.</p>
