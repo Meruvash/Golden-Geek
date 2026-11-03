@@ -94,7 +94,7 @@
    "caldeirões individuais, sacos, fichas de ingredientes, livros de ingredientes e cartas da vidente (quantidades não confirmadas nas fontes consultadas)"
   ]
  ],
- "nota_ficha": "Nota, número de avaliações, peso e melhor contagem do BGG vêm do boardmatch.app, que replica o BoardGameGeek (o BGG bloqueia acesso automatizado), consultado em 02/11/2026.",
+ "nota_ficha": "Nota, número de avaliações, peso e melhor contagem do BGG vêm do boardmatch.app, que replica o BoardGameGeek (o BGG bloqueia acesso automatizado), consultado em 02/11/2026. Correção em 02/11/2026: The Mind aparecia em 3º no Golden Geek de família de 2018; a lista do Brettspielbox traz The Mind e Welcome To… como finalistas (runner-up), sem ordem de colocação.",
  "como_funciona": [
   "Cada jogador é um charlatão numa feira de nove dias na cidade alemã de Quedlinburg, preparando poções num caldeirão próprio. Vence quem tiver mais pontos de vitória depois de nove rodadas. Todos começam com o mesmo saco de fichas de ingredientes, a maioria brancas, com valores de 1 a 3. As brancas são as perigosas.",
   "A rodada começa com uma carta da vidente, que muda uma regra ou dá um bônus a todos. Depois vêm os ratos: quem está atrás no placar conta as caudas de rato impressas na trilha entre ele e o líder e começa a poção essa mesma quantidade de casas à frente.",
@@ -166,7 +166,7 @@
   ],
   [
    "Explodir não tira você da partida",
-   "Quem explode perde metade da apuração, não a rodada inteira: ainda escolhe entre marcar pontos ou comprar ingredientes. Para a Wargamer, que deu nota 9, o jogo é notavelmente generoso, com mecanismos de recuperação que impedem alguém de ficar para trás demais. Uma rodada ruim dói, mas não decide a noite."
+   "Quem explode perde metade da apuração, não a rodada inteira: ainda escolhe entre marcar pontos ou comprar ingredientes. Para a Wargamer, que deu nota 9, o jogo é notavelmente tolerante, com mecanismos de recuperação que impedem alguém de ficar para trás demais. Uma rodada ruim dói, mas não decide a noite."
   ],
   [
    "Ratos que seguram o líder",
@@ -240,7 +240,7 @@
   ]
  ],
  "primeira_partida": "Na estreia, use a combinação de livros que a própria caixa recomenda para a primeira partida e o lado simples do caldeirão; o lado avançado fica para depois. O que mais confunde é a apuração, que tem ordem fixa: dado de bônus, efeitos dos ingredientes, rubi, pontos e compras. Deixe essa sequência à vista. Peça a cada jogador que anuncie em voz alta quando parar ou explodir, e reserve mais que os 45 minutos da caixa se forem três ou quatro pessoas.",
- "edicao_nacional": "Não encontramos edição nacional até 02/11/2026: a Ludopedia não registra edição brasileira, e o nome Os Charlatães de Quedlinburg não aparece em editora ou loja consultada. O que se vende no Brasil é a edição americana da CMYK, em inglês. Em 02/11/2026, o ComparaJogos listava três ofertas novas, de R$ 436,90 no Pix a R$ 513,90. Os livros de ingredientes e as cartas da vidente têm texto; uma tradução para colar é vendida à parte, por R$ 78,20 no Pix.",
+ "edicao_nacional": "Não encontramos edição nacional até 02/11/2026: no site da Devir Brasil só aparece o infantil Quacks & Co. (2023), os nomes Os Charlatães e Charlatões de Quedlinburg não aparecem em editora ou loja consultada, e um tópico de abril de 2026 na Ludopedia ainda pergunta se o jogo virá. O que se vende no Brasil é a edição americana da CMYK, em inglês. Em 02/11/2026, o ComparaJogos listava três ofertas novas, de R$ 436,90 no Pix a R$ 513,90. Livros de ingredientes e cartas da vidente têm texto; a tradução para colar sai à parte, por R$ 78,20 no Pix.",
  "preco_ref": {
   "faixa": "de R$ 436,90 a R$ 513,90",
   "data": "02/11/2026",
@@ -256,7 +256,7 @@
   [
    "The Mind",
    "the-mind",
-   "Do mesmo Wolfgang Warsch e da mesma safra de 2018: ficou em 3º no Golden Geek de família vencido por Quacks. Cooperativo e silencioso, o oposto de um caldeirão explodindo na mesa."
+   "Do mesmo Wolfgang Warsch e da mesma safra de 2018: foi finalista do Golden Geek de família vencido por Quacks. Cooperativo e silencioso, o oposto de um caldeirão explodindo na mesa."
   ],
   [
    "Azul",
@@ -348,7 +348,12 @@
   [
    "Ludopedia – Quacks",
    "https://ludopedia.com.br/jogo/quacks",
-   "edição nacional (via busca)"
+   "edição nacional (via busca; tópico de 04/2026 sobre versão em português)"
+  ],
+  [
+   "Devir Brasil – Quacks & Co.",
+   "https://devir.com.br/quacks-co/",
+   "edição nacional do infantil derivado (2023)"
   ]
  ],
  "legenda": "O único cassino em que a casa banca quem está perdendo. 🧪\n\nThe Quacks of Quedlinburg venceu o Kennerspiel e o Golden Geek de família de 2018.\nVocê tira ingredientes do saco até parar ou explodir o caldeirão. Explodiu? Ainda compra. Ficou para trás? Os ratos te empurram.\nVeredito: RECOMENDADO COM RESSALVA. Oito anos depois, só importado e em inglês.\n\nBrancas somando 7: você para ou tira mais uma? 👇\nResenha completa no link da bio.\n\n#QuacksOfQuedlinburg #Quacks #JogosDeTabuleiro #BoardGames #WolfgangWarsch #Kennerspiel #GoldenGeek #PushYourLuck #EliteBoardgamers #Boardgamer"
