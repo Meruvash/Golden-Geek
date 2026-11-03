@@ -30,28 +30,28 @@
    "premio": "Golden Geek",
    "ano": 2021,
    "categoria": "Jogo do Ano pesado",
-   "colocacao": 2,
-   "resultado": "top 3",
+   "colocacao": null,
+   "resultado": "finalista",
    "fonte": "https://www.tabletopgaming.co.uk/news/golden-geek-winners-announced-for-2021-radlands-arnak-and-sleeping-gods-amongst-the-winners/",
-   "rotulo": "2º lugar"
+   "rotulo": "Finalista"
   },
   {
    "premio": "Golden Geek",
    "ano": 2021,
    "categoria": "Temático",
-   "colocacao": 2,
-   "resultado": "top 3",
+   "colocacao": null,
+   "resultado": "finalista",
    "fonte": "https://www.tabletopgaming.co.uk/news/golden-geek-winners-announced-for-2021-radlands-arnak-and-sleeping-gods-amongst-the-winners/",
-   "rotulo": "2º lugar"
+   "rotulo": "Finalista"
   },
   {
    "premio": "Golden Geek",
    "ano": 2021,
    "categoria": "Arte",
-   "colocacao": 3,
-   "resultado": "top 3",
+   "colocacao": null,
+   "resultado": "finalista",
    "fonte": "https://www.tabletopgaming.co.uk/news/golden-geek-winners-announced-for-2021-radlands-arnak-and-sleeping-gods-amongst-the-winners/",
-   "rotulo": "3º lugar"
+   "rotulo": "Finalista"
   }
  ],
  "ficha": [
@@ -69,7 +69,7 @@
   ],
   [
    "Editora original",
-   "Leder Games; os direitos passaram à Buried Giant Studios em janeiro de 2026"
+   "Leder Games; em janeiro de 2026, a Leder fechou acordo para vender os direitos à Buried Giant Studios"
   ],
   [
    "Editora no Brasil",
@@ -112,7 +112,7 @@
    "mapa de neoprene, 198 cartas de habitantes, 23 cartas de local, 21 relíquias, 94 tropas, 17 dados e organizador plástico"
   ]
  ],
- "nota_ficha": "Ludopedia e BoardGameGeek bloqueiam acesso automatizado: os números do BGG vêm do boardmatch.app, consultado em 02/11/2026, e a nota da Ludopedia ficou sem confirmação. Componentes, idade e duração da edição brasileira vêm da página da MeepleBR. A foto do topo, da Leder Games, mostra o primeiro exemplar de produção em massa (o \"MPC\", mass produced copy) que a editora recebeu em janeiro de 2021 para conferir a fabricação antes do envio; é o mesmo jogo da edição comercial, não uma versão diferente.",
+ "nota_ficha": "Ludopedia e BoardGameGeek bloqueiam acesso automatizado: os números do BGG vêm do boardmatch.app, consultado em 02/11/2026, e a nota da Ludopedia ficou sem confirmação. Componentes, idade e duração da edição brasileira vêm da página da MeepleBR. A foto do topo, da Leder Games, mostra o primeiro exemplar de produção em massa (o \"MPC\", mass produced copy) que a editora recebeu em janeiro de 2021 para conferir a fabricação antes do envio; é o mesmo jogo da edição comercial, não uma versão diferente. Correção em 02/11/2026: a Tabletop Gaming lista os finalistas do Golden Geek 2021 sem numerar; Oath aparece como finalista (não 2º ou 3º lugar) em Jogo do Ano pesado, Temático e Arte.",
  "como_funciona": [
   "Oath se passa numa terra de fantasia dividida em três regiões, com oito locais no mapa de neoprene. Um jogador é o Chanceler, que governa o império e começa com vários locais. Os outros começam como Exilados, que querem derrubá-lo. Ao longo da partida, um Exilado pode aceitar a cidadania oferecida pelo Chanceler e virar Cidadão, aliado do império.",
   "Todos usam as mesmas ações: viajar entre locais, buscar cartas no baralho, reunir tropas, negociar influência e segredos (as duas moedas do jogo), recuperar relíquias e estandartes e fazer campanha militar contra inimigos. Cada ação gasta suprimento, e quanto mais tropas você tem espalhadas pelo mapa, menos suprimento recupera no fim do turno.",
@@ -180,7 +180,7 @@
  "funciona": [
   [
    "Legado sem rasgar carta",
-   "Oath lembra das partidas anteriores sem adesivo, envelope lacrado ou carta destruída: o mapa fica como terminou, os habitantes do vencedor voltam e os dos perdedores somem. A Tabletop Gaming chama de jogo sobre legado, não jogo de legado, e o Golden Geek de inovação de 2021 premiou exatamente isso. A caixa pode ser zerada a qualquer momento."
+   "Oath lembra das partidas anteriores sem adesivo, envelope lacrado ou carta destruída: o mapa fica como terminou, os habitantes do vencedor voltam e os dos perdedores somem. Cole Wehrle, segundo a Tabletop Gaming, o descreve como um jogo sobre legado, não um jogo de legado, e o Golden Geek de inovação de 2021 premiou exatamente isso. A caixa pode ser zerada a qualquer momento."
   ],
   [
    "Turno simples, cabeça cheia",
@@ -196,7 +196,7 @@
   ],
   [
    "Arte e mesa de Kyle Ferrin",
-   "Mais de 200 cartas com ilustração própria, mapa de neoprene costurado, peças de madeira e 17 dados com faces em relevo. A Game Informer descreve a arte como algo entre o desenho animado e um manuscrito medieval iluminado, e o jogo ficou em terceiro no Golden Geek de arte."
+   "Mais de 200 cartas com ilustração própria, mapa de neoprene, peças de madeira e 17 dados próprios. A Game Informer descreve a arte como algo entre o desenho animado e um manuscrito medieval iluminado, e o jogo foi finalista no Golden Geek de arte."
   ],
   [
    "Livro que ensina jogando",
@@ -264,7 +264,7 @@
   "data": "02/11/2026",
   "obs": "menor preço no Pix entre as duas ofertas novas em lojas brasileiras, segundo o ComparaJogos; estoque escasso"
  },
- "versoes": "A expansão Oath: New Foundations, financiada no Kickstarter em 2024 com mais de US$ 900 mil, muda a forma como as regras evoluem entre partidas e exige o jogo base; ela está com a Buried Giant Studios, empresa que Cole Wehrle e Kyle Ferrin fundaram em 2026 e que comprou da Leder os direitos de Oath. Não encontramos edição brasileira da expansão até 02/11/2026. A campanha original vendeu à parte moedas de metal e fichas de resina. Não encontramos versão digital oficial nas fontes consultadas.",
+ "versoes": "A expansão Oath: New Foundations, financiada no Kickstarter em 2024 com mais de US$ 900 mil, deixa os jogadores mudarem as regras-base de uma partida para a outra e exige o jogo base; ela ficou com a Buried Giant Studios, estúdio de Cole Wehrle e Kyle Ferrin anunciado em janeiro de 2026, com quem a Leder fechou acordo para vender os direitos de Oath. Não encontramos edição brasileira da expansão até 02/11/2026. A campanha original vendeu à parte moedas de metal e fichas de resina. Não encontramos versão digital oficial nas fontes consultadas.",
  "comparacoes": [
   [
    "Root",
@@ -367,6 +367,11 @@
    "MeepleBR – Oath: primeira partida",
    "https://meeplebr.com/opiniao/oath-primeira-partida/",
    "nomes da edição brasileira"
+  ],
+  [
+   "Frogames – Oath: New Foundations",
+   "https://frogames.it/en/products/oath-new-foundations",
+   "expansão: exige o jogo base, regras que mudam entre partidas"
   ]
  ],
  "legenda": "A peça mais cara de Oath não vem na caixa: é o mesmo grupo, toda semana. 👑\n\nGolden Geek de inovação 2021, de Cole Wehrle, o autor de Root.\nO império lembra quem venceu a partida anterior. O seu grupo precisa lembrar de aparecer.\nO perdedor muitas vezes escolhe o rei, e um dado pode acabar com tudo.\nVeredito: RECOMENDADO COM RESSALVA. Só com grupo fixo, a partir de R$ 790,41.\n\nSeu grupo aguentaria dez partidas seguidas? Sim ou nunca? 👇\nResenha completa no link da bio.\n\n#Oath #JogosDeTabuleiro #BoardGames #ColeWehrle #KyleFerrin #MeepleBR #LederGames #GoldenGeek #JogoDeEstrategia #EliteBoardgamers #Boardgamer"

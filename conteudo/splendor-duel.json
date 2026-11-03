@@ -30,10 +30,10 @@
    "premio": "Golden Geek",
    "ano": 2022,
    "categoria": "Jogo do Ano leve",
-   "colocacao": 2,
-   "resultado": "top 3",
+   "colocacao": null,
+   "resultado": "finalista",
    "fonte": "https://boardgamewire.com/index.php/2023/05/09/heat-pedal-to-the-metal-cat-in-the-box-lead-boardgamegeek-golden-geek-award-winners/",
-   "rotulo": "2º lugar"
+   "rotulo": "Finalista"
   }
  ],
  "ficha": [
@@ -94,7 +94,7 @@
    "Board Game Arena, com 1.146.324 partidas registradas"
   ]
  ],
- "nota_ficha": "Consulta em 02/11/2026. Ludopedia e BoardGameGeek bloqueiam acesso automatizado: os números do BGG vêm do boardmatch.app, que reproduz o BGG sem informar a data da coleta, e a nota da Ludopedia ficou sem confirmação. As fotos são da Space Cowboys.",
+ "nota_ficha": "Consulta em 02/11/2026. Ludopedia e BoardGameGeek bloqueiam acesso automatizado: os números do BGG vêm do boardmatch.app, que reproduz o BGG sem informar a data da coleta, e a nota da Ludopedia ficou sem confirmação. As fotos são da Space Cowboys. Correção em 02/11/2026: a expansão The Counterfeiters já foi anunciada pela Asmodee no Brasil (Spoilerboard, sem data nem preço), e a BoardGameWire lista Splendor Duel como finalista, sem numerar, em Jogo do Ano leve do Golden Geek 2022 (não 2º lugar).",
  "como_funciona": [
   "Splendor Duel é um jogo só para duas pessoas. Cada jogador é um joalheiro que compra cartas de joia com fichas de gema, e vence quem atingir primeiro uma de três metas: 20 pontos de prestígio, 10 coroas, ou 10 pontos de prestígio em cartas de uma mesma cor.",
   "As fichas ficam num tabuleiro em grade, colocadas a partir da sacola em espiral, do centro para fora. São cinco cores de gema, duas pérolas, mais raras, e três ouros, que valem como qualquer cor. As cartas ficam numa pirâmide de três níveis: as de baixo são baratas, as de cima valem mais pontos.",
@@ -154,7 +154,7 @@
  "experiencia": [
   "O começo parece Splendor. Pega ficha, compra carta, ganha desconto. Aí você olha o tabuleiro e percebe que o rival está olhando a mesma diagonal. Toda ficha que você pega é ficha que ele não pega, e todo turno vira uma conta de dois lados: o que eu preciso e o que ele precisa mais.",
   "Um exemplo. Restam quatro fichas na grade, e você precisa de uma pérola. Dá para reabastecer, mas o rival ganha um pergaminho. Dá para pegar três azuis em diagonal, mas ele ganha outro. Dá para reservar uma carta, levar o ouro e torcer. Você escolhe o ouro. Ele compra a carta de turno extra e leva a pérola com o seu ouro ainda na mão. Trinta minutos disso e vocês jogam de novo, só para provar que foi sorte.",
-  "Não foi sorte. É informação aberta, como lembra a resenha do Cheddarface: não há segredo nem surpresa, e quem perde sabe exatamente onde errou. É a parte boa. É também a parte que dói."
+  "Não foi sorte. É informação aberta, como lembra a resenha do Cheddarface: não há segredo nem surpresa. Quem perde sabe exatamente onde errou. É a parte boa. É também a parte que dói."
  ],
  "citacao": {
   "texto": "Bem mais competitivo, de forma direta, que o próprio Splendor.",
@@ -200,7 +200,7 @@
   [
    "Moderada",
    "Dois, e acabou",
-   "Não há variante para três. A Meeple Mountain lembra que, com a mesa cheia de quatro, o Splendor original continua sendo a escolha, e a Tabletop Gaming lamenta não existir versão para mais gente. Se o seu grupo cresce no fim de semana, a caixa fica na estante esperando a segunda-feira."
+   "Não há variante para três. A Meeple Mountain lembra que, com a mesa cheia de quatro, o Splendor original continua sendo a escolha, e a Tabletop Gaming fica imaginando uma versão para mais gente. Se o seu grupo cresce no fim de semana, a caixa fica na estante esperando a segunda-feira."
   ],
   [
    "Leve",
@@ -237,7 +237,7 @@
   "data": "02/11/2026",
   "obs": "menor preço no Pix segundo o ComparaJogos (11 ofertas); R$ 229,99 na loja da Asmodee, em estoque"
  },
- "versoes": "A primeira expansão, The Counterfeiters (Os Falsificadores), traz cartas de falsificador, fichas roxas de vidro e oito cartas reais novas. Dale Yu, do Opinionated Gamers, prefere a simplicidade do jogo base. Em 02/11/2026, o ComparaJogos listava a expansão como indisponível no Brasil. A versão digital está na Board Game Arena; um aplicativo oficial do Duel não foi confirmado nas fontes consultadas.",
+ "versoes": "A primeira expansão, The Counterfeiters, traz cartas de falsificador, quatro fichas roxas de vidro e oito cartas reais novas, segundo Dale Yu, do Opinionated Gamers, que prefere a simplicidade do jogo base. A Asmodee a anunciou para o Brasil no Spoilerboard, entre os lançamentos de Essen, sem data nem preço; em 02/11/2026, o ComparaJogos ainda a listava como indisponível. A versão digital está na Board Game Arena; um aplicativo oficial do Duel não foi confirmado nas fontes consultadas.",
  "comparacoes": [
   [
    "7 Wonders Duel",
@@ -334,6 +334,11 @@
    "Asmodee Brasil – Splendor Duel",
    "https://www.asmodee.com.br/splendor-duel/produto/SPL201",
    "edição nacional, preço, estoque"
+  ],
+  [
+   "Asmodee Brasil – Spoilerboard",
+   "https://www.portal.asmodee.com.br/spoilerboard",
+   "anúncio da expansão no Brasil"
   ]
  ],
  "legenda": "Splendor Duel é o jogo que não precisava existir e ficou melhor que o original. 💎\n\nMelhor jogo para dois no Golden Geek 2022.\nTrinta minutos de briga por cada ficha: pérola escassa, tabuleiro que ninguém quer repor e três jeitos de ganhar.\nVeredito: RECOMENDADO. A partir de R$ 185,07, para quem joga a dois toda semana.\n\nSplendor original ou Splendor Duel? 👇\nResenha completa no link da bio.\n\n#SplendorDuel #Splendor #JogosDeTabuleiro #BoardGames #JogosParaDois #TwoPlayerGames #BrunoCathala #GoldenGeek #Asmodee #EliteBoardgamers #Boardgamer"
