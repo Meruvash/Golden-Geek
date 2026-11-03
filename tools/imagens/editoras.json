@@ -1561,5 +1561,68 @@
    ],
    "verificado_em": "2026-11-02"
   }
+ },
+ "thamesandkosmos.com": {
+  "nome": "Thames & Kosmos",
+  "apelidos": [
+   "Thames & Kosmos"
+  ],
+  "site": "https://thamesandkosmos.com",
+  "plataforma": "shopify",
+  "estrategia": "sitemap+shopify_json",
+  "press_kit": "https://docs.google.com/forms/d/e/1FAIpQLSf2fZVuZANsB3WwWbB5vaBvGfPCswDTp0UzSWB9TKEhQdkguQ/viewform",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://thamesandkosmos.com/sitemap.xml"
+   ],
+   "verificado_em": "2026-11-03"
+  }
+ },
+ "store.thamesandkosmos.com": {
+  "nome": "Thames & Kosmos",
+  "apelidos": [
+   "Thames & Kosmos"
+  ],
+  "site": "https://thamesandkosmos.com",
+  "plataforma": "shopify",
+  "estrategia": "sitemap+shopify_json",
+  "press_kit": "https://docs.google.com/forms/d/e/1FAIpQLSf2fZVuZANsB3WwWbB5vaBvGfPCswDTp0UzSWB9TKEhQdkguQ/viewform",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://thamesandkosmos.com/sitemap.xml"
+   ],
+   "verificado_em": "2026-11-03"
+  }
+ },
+ "iello.fr": {
+  "nome": "IELLO",
+  "apelidos": [
+   "IELLO"
+  ],
+  "site": "https://iello.fr",
+  "plataforma": "wordpress",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://iello.fr/presse/",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://iello.fr/sitemap_index.xml"
+   ],
+   "verificado_em": "2026-11-03"
+  }
  }
 }

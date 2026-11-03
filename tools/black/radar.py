@@ -47,6 +47,7 @@ PAUSA = 1.0          # segundos entre páginas (educação com o site)
 JANELA = 180         # dias da referência
 MIN_DIAS = 28        # abaixo disso o item fica fora (usuário aceitou base curta de ~30 dias em 03/11/2026)
 CORTE = 0.20         # desconto real mínimo
+QUASE = 0.15         # "Quase Black": de 15% a menos de 20% (seção à parte, pedida pelo usuário em 03/11/2026)
 NOTA_MIN = 7.0
 SUSPEITO = 0.45      # oferta abaixo de 45% da referência: provável anúncio de outro produto; fica fora
 FORA = re.compile(r"amazon|mercado ?livre|shopee|magalu|magazine|americanas|casas ?bahia|aliexpress|shein|brech[oó]|usad|seminov", re.I)
@@ -261,7 +262,7 @@ def calcular():
     """Itens do radar, armadilhas e itens no menor preço, a partir do histórico e das ofertas de hoje."""
     hist, hoje_d = ler(HIST, {}), ler(HOJE, {})
     hoje = agora().date()
-    radar, armadilhas = [], []
+    radar, armadilhas, quase = [], [], []
     for s, h in hist.items():
         of = hoje_d.get(s)
         if not of:
@@ -297,6 +298,8 @@ def calcular():
                     "verificado": (api or la or {}).get("hora") or o.get("atualizado") or of["verificado"], "editora_br": h.get("editora_br")}
             if desc >= CORTE:
                 radar.append(base)
+            elif desc >= QUASE:
+                quase.append(base)
             elif o["de"] and o["por"] and (o["de"] - o["por"]) / o["de"] >= CORTE:
                 armadilhas.append(base)
     # uma linha por jogo e loja; no radar, a melhor oferta de cada jogo vem primeiro
@@ -307,7 +310,15 @@ def calcular():
             vistos.add((x["slug"], x["loja"]))
             unicos.append(x)
     armadilhas.sort(key=lambda x: -((x["de"] - x["por"]) / x["de"]))
-    return unicos, armadilhas[:30]
+    # Quase Black: um por jogo (a melhor loja) e só jogos que não estão no radar principal
+    no_radar = {x["slug"] for x in unicos}
+    quase.sort(key=lambda x: -x["desc"])
+    vq, quase_u = set(), []
+    for x in quase:
+        if x["slug"] not in no_radar and (x["slug"], x["loja"]) not in vq:
+            vq.add((x["slug"], x["loja"]))
+            quase_u.append(x)
+    return unicos, armadilhas[:30], quase_u
 
 
 def perto_do_corte(maximo=350):
@@ -342,9 +353,13 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("acao", choices=["varrer", "coletar", "rapida", "pagina"])
     ap.add_argument("--limite", type=int)
+    ap.add_argument("--modo", choices=["normal", "educado"], help="ritmo do robô de conferência nas lojas (padrão: normal na leitura rápida, educado nas outras)")
     ap.add_argument("--desde", type=int, default=0, help="retoma a varredura a partir desta posição do sitemap")
     a = ap.parse_args()
     _t = trava() if a.acao != "pagina" else None  # noqa: F841
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    import lojas
+    lojas.modo(a.modo or ("normal" if a.acao == "rapida" else "educado"))
     if a.acao == "varrer":
         coletar(slugs_sitemap()[a.desde:], registrar_lista=True, limite=a.limite)
     elif a.acao == "coletar":

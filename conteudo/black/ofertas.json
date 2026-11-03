@@ -47,7 +47,7 @@
  "12-rivers-2025": {
   "ofertas": [
    {
-    "atualizado": "2026-11-03T05:26:21.146+00:00",
+    "atualizado": "2026-11-03T13:26:19.169+00:00",
     "de": 540.7,
     "loja": "Amazon",
     "loja_id": "amazon",
@@ -57,12 +57,12 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T10:48-03:00"
+  "verificado": "2026-11-03T14:56-03:00"
  },
  "1830-railways-robber-barons": {
   "ofertas": [
    {
-    "atualizado": "2026-11-03T09:08:45.086+00:00",
+    "atualizado": "2026-11-03T13:11:00.503+00:00",
     "de": 479.48,
     "loja": "Amazon",
     "loja_id": "amazon",
@@ -72,37 +72,37 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T09:20-03:00"
+  "verificado": "2026-11-03T14:56-03:00"
  },
  "1846-the-race-for-the-midwest": {
   "ofertas": [
    {
-    "atualizado": "2026-11-02T21:07:24.461+00:00",
-    "de": 650.87,
+    "atualizado": "2026-11-03T13:07:38.061+00:00",
+    "de": 650.84,
     "loja": "Amazon",
     "loja_id": "amazon",
-    "por": 650.87,
+    "por": 650.84,
     "tipo": "LINK",
     "url": "https://www.amazon.com.br/dp/B01MG5ZJWK",
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T09:15-03:00"
+  "verificado": "2026-11-03T14:56-03:00"
  },
  "1989-dawn-of-freedom": {
   "ofertas": [
    {
-    "atualizado": "2026-11-02T21:05:45.676+00:00",
-    "de": 658.89,
+    "atualizado": "2026-11-03T09:12:25.035+00:00",
+    "de": 668.57,
     "loja": "Amazon",
     "loja_id": "amazon",
-    "por": 658.89,
+    "por": 668.57,
     "tipo": "LINK",
     "url": "https://www.amazon.com.br/dp/B007PJFJMI",
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T09:20-03:00"
+  "verificado": "2026-11-03T14:56-03:00"
  },
  "20-strong-tanglewoods-gold": {
   "ofertas": [
@@ -117,7 +117,7 @@
     "vendedor": "RafB"
    }
   ],
-  "verificado": "2026-11-03T10:45-03:00"
+  "verificado": "2026-11-03T14:56-03:00"
  },
  "20-strong-tanglewoods-red": {
   "ofertas": [
@@ -132,7 +132,7 @@
     "vendedor": "RafB"
    }
   ],
-  "verificado": "2026-11-03T10:45-03:00"
+  "verificado": "2026-11-03T14:56-03:00"
  },
  "20-strong-tanglewoods-white": {
   "ofertas": [
@@ -147,7 +147,7 @@
     "vendedor": "RafB"
    }
   ],
-  "verificado": "2026-11-03T10:45-03:00"
+  "verificado": "2026-11-03T14:56-03:00"
  },
  "20-strong-too-many-bones": {
   "ofertas": [
@@ -162,19 +162,14 @@
     "vendedor": "RafB"
    }
   ],
-  "verificado": "2026-11-03T10:45-03:00"
+  "verificado": "2026-11-03T14:56-03:00"
  },
  "3-capitulos": {
   "ofertas": [
    {
-    "atualizado": "2026-11-03T13:33:55.102+00:00",
+    "atualizado": "2026-11-03T17:03:56.956+00:00",
     "de": 50,
     "loja": "Caixinha Boardgames",
-    "loja_agora": {
-     "estoque": true,
-     "hora": "2026-11-03T14:37-03:00",
-     "preco": 50.0
-    },
     "loja_id": "caixinhaboardgames",
     "por": 46.5,
     "tipo": "LINK",
@@ -182,7 +177,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T13:33:48.565+00:00",
+    "atualizado": "2026-11-03T17:03:49.486+00:00",
     "de": 51.99,
     "loja": "Cangaia Jogos",
     "loja_id": "cangaiajogos",
@@ -192,7 +187,17 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T13:12:18.799+00:00",
+    "atualizado": "2026-11-03T17:18:00.415+00:00",
+    "de": 99.96,
+    "loja": "TabuLoja",
+    "loja_id": "tabuloja",
+    "por": 89.96,
+    "tipo": "LINK",
+    "url": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/3-capitulos",
+    "vendedor": null
+   },
+   {
+    "atualizado": "2026-11-03T17:12:15.14+00:00",
     "de": 109,
     "loja": "Livtoys",
     "loja_id": "livtoys",
@@ -202,7 +207,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T13:08:30.243+00:00",
+    "atualizado": "2026-11-03T17:08:24.94+00:00",
     "de": 114.9,
     "loja": "Facil Shopping",
     "loja_id": "facilshopping",
@@ -212,17 +217,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T13:18:05.134+00:00",
-    "de": 119,
-    "loja": "TabuLoja",
-    "loja_id": "tabuloja",
-    "por": 107.1,
-    "tipo": "LINK",
-    "url": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/3-capitulos",
-    "vendedor": null
-   },
-   {
-    "atualizado": "2026-11-03T13:31:06.694+00:00",
+    "atualizado": "2026-11-03T17:01:05.853+00:00",
     "de": 119.99,
     "loja": "Border Jogos",
     "loja_id": "borderjogos",
@@ -232,7 +227,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T13:57-03:00"
+  "verificado": "2026-11-03T14:56-03:00"
  },
  "3-ring-circus": {
   "ofertas": [
@@ -247,7 +242,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T12:31:05.717+00:00",
+    "atualizado": "2026-11-03T13:01:09.994+00:00",
     "de": 355,
     "loja": "Boar Games",
     "loja_id": "boargames",
@@ -267,7 +262,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T12:41:58.168+00:00",
+    "atualizado": "2026-11-03T13:12:18.799+00:00",
     "de": 359,
     "loja": "Livtoys",
     "loja_id": "livtoys",
@@ -277,7 +272,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T12:32:08.016+00:00",
+    "atualizado": "2026-11-03T13:02:03.361+00:00",
     "de": 359,
     "loja": "Brinka Brinquedos",
     "loja_id": "brinka",
@@ -287,7 +282,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T12:30:54.627+00:00",
+    "atualizado": "2026-11-03T13:00:59.473+00:00",
     "de": 345,
     "loja": "Board Game Play Store",
     "loja_id": "boardgameplaystore",
@@ -297,59 +292,79 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T10:16-03:00"
+  "verificado": "2026-11-03T14:56-03:00"
  },
  "300-la-terre-et-leau": {
   "ofertas": [],
-  "verificado": "2026-11-03T09:25-03:00"
+  "verificado": "2026-11-03T14:56-03:00"
  },
  "51st-state-ultimate-edition": {
   "ofertas": [],
-  "verificado": "2026-11-03T10:35-03:00"
+  "verificado": "2026-11-03T14:56-03:00"
  },
  "7-empires": {
   "ofertas": [
    {
-    "atualizado": "2026-11-03T05:35:46.695+00:00",
-    "de": 738.3,
+    "atualizado": "2026-11-03T13:35:37.844+00:00",
+    "de": 737.11,
     "loja": "Amazon",
     "loja_id": "amazon",
-    "por": 738.3,
+    "por": 737.11,
     "tipo": "LINK",
     "url": "https://www.amazon.com.br/dp/B0DNZVCCG3",
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T10:53-03:00"
+  "verificado": "2026-11-03T14:56-03:00"
  },
  "7-wonders": {
   "ofertas": [],
-  "verificado": "2026-11-03T08:39-03:00"
+  "verificado": "2026-11-03T14:57-03:00"
  },
  "7-wonders-2a-edicao": {
   "ofertas": [
    {
-    "atualizado": "2026-11-03T09:07:06.947+00:00",
-    "de": 274.89,
+    "atualizado": "2026-11-03T17:07:03.882+00:00",
+    "de": 289.79,
     "loja": "Amazon",
     "loja_id": "amazon",
-    "por": 274.89,
+    "por": 289.79,
     "tipo": "LINK",
     "url": "https://www.amazon.com.br/dp/B09B46HCY8",
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T11:30:34.716+00:00",
-    "de": 459.71,
+    "atualizado": "2026-11-03T17:33:03.03+00:00",
+    "de": 465.61,
     "loja": "Mercado Livre",
     "loja_id": "mercadolivre",
-    "por": 459.71,
+    "por": 465.61,
     "tipo": "LINK",
     "url": "https://www.mercadolivre.com.br/p/MLB22798422",
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T12:00:47.83+00:00",
+    "atualizado": "2026-11-03T17:49:39.067+00:00",
+    "de": 249.88,
+    "loja": "Place Games",
+    "loja_id": "placegames",
+    "por": 232.39,
+    "tipo": "LINK",
+    "url": "https://www.placegames.com.br/7-wonders-2a-ed",
+    "vendedor": null
+   },
+   {
+    "atualizado": "2026-11-03T17:50:53.723+00:00",
+    "de": 259,
+    "loja": "TabuLoja",
+    "loja_id": "tabuloja",
+    "por": 233.1,
+    "tipo": "LINK",
+    "url": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/7-wonders",
+    "vendedor": null
+   },
+   {
+    "atualizado": "2026-11-03T17:30:49.035+00:00",
     "de": 269.79,
     "loja": "Alquimistas dos Jogos",
     "loja_id": "alquimistasdosjogos",
@@ -359,7 +374,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T12:13:05.104+00:00",
+    "atualizado": "2026-11-03T17:48:23.096+00:00",
     "de": 269.99,
     "loja": "Ludostation",
     "loja_id": "ludostation",
@@ -367,34 +382,14 @@
     "tipo": "LINK",
     "url": "https://ludostation.com.br/produtos/7-wonders-2-edicao-1a9ef/",
     "vendedor": null
-   },
-   {
-    "atualizado": "2026-11-03T12:17:31.934+00:00",
-    "de": 254.95,
-    "loja": "Tubaleria",
-    "loja_id": "tubaleria",
-    "por": 244.75,
-    "tipo": "LINK",
-    "url": "https://tubaleria.store/produtos/7-wonders-2-edicao-e4n60/",
-    "vendedor": null
-   },
-   {
-    "atualizado": "2026-11-03T12:14:57.932+00:00",
-    "de": 279.88,
-    "loja": "Place Games",
-    "loja_id": "placegames",
-    "por": 260.29,
-    "tipo": "LINK",
-    "url": "https://www.placegames.com.br/7-wonders-2a-ed",
-    "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T09:38-03:00"
+  "verificado": "2026-11-03T14:57-03:00"
  },
  "7-wonders-2a-edicao-cidades": {
   "ofertas": [
    {
-    "atualizado": "2026-11-03T09:23:14.7+00:00",
+    "atualizado": "2026-11-03T13:22:35.792+00:00",
     "de": 199.93,
     "loja": "Amazon",
     "loja_id": "amazon",
@@ -404,7 +399,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T11:30:33.297+00:00",
+    "atualizado": "2026-11-03T15:30:32.56+00:00",
     "de": 191.75,
     "loja": "Mercado Livre",
     "loja_id": "mercadolivre",
@@ -414,7 +409,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T11:34:53.14+00:00",
+    "atualizado": "2026-11-03T17:03:56.956+00:00",
     "de": 154,
     "loja": "Caixinha Boardgames",
     "loja_id": "caixinhaboardgames",
@@ -424,7 +419,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T11:30:49.27+00:00",
+    "atualizado": "2026-11-03T17:00:46.935+00:00",
     "de": 159.79,
     "loja": "Alquimistas dos Jogos",
     "loja_id": "alquimistasdosjogos",
@@ -434,7 +429,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T11:47:40.474+00:00",
+    "atualizado": "2026-11-03T16:51:04.459+00:00",
     "de": 159.88,
     "loja": "Place Games",
     "loja_id": "placegames",
@@ -444,7 +439,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T11:47:16.784+00:00",
+    "atualizado": "2026-11-03T16:49:15.571+00:00",
     "de": 194.9,
     "loja": "PandaBoardGames",
     "loja_id": "pandaboardgames",
@@ -454,7 +449,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T09:45-03:00"
+  "verificado": "2026-11-03T14:57-03:00"
  },
  "7-wonders-armada": {
   "ofertas": [
@@ -469,17 +464,17 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T07:30:32.562+00:00",
-    "de": 163.38,
+    "atualizado": "2026-11-03T11:30:34.716+00:00",
+    "de": 227.75,
     "loja": "Mercado Livre",
     "loja_id": "mercadolivre",
-    "por": 163.38,
+    "por": 227.75,
     "tipo": "LINK",
     "url": "https://www.mercadolivre.com.br/p/MLB21944577",
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T07:30:36.223+00:00",
+    "atualizado": "2026-11-03T11:30:38.15+00:00",
     "de": 274.88,
     "loja": "Mercado Livre",
     "loja_id": "mercadolivre",
@@ -489,7 +484,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T11:16:36.177+00:00",
+    "atualizado": "2026-11-03T11:49:18.128+00:00",
     "de": 169.9,
     "loja": "Tschüss",
     "loja_id": "tschuss",
@@ -499,7 +494,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T11:13:14.931+00:00",
+    "atualizado": "2026-11-03T11:46:05.19+00:00",
     "de": 199.99,
     "loja": "Ludostation",
     "loja_id": "ludostation",
@@ -509,7 +504,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T11:03:27.855+00:00",
+    "atualizado": "2026-11-03T12:03:27.801+00:00",
     "de": 213.99,
     "loja": "Cangaia Jogos",
     "loja_id": "cangaiajogos",
@@ -519,12 +514,12 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T09:08-03:00"
+  "verificado": "2026-11-03T14:57-03:00"
  },
  "7-wonders-arquitetos": {
   "ofertas": [
    {
-    "atualizado": "2026-11-03T09:07:06.947+00:00",
+    "atualizado": "2026-11-03T17:14:39.955+00:00",
     "de": 250.7,
     "loja": "Amazon",
     "loja_id": "amazon",
@@ -534,7 +529,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T11:30:37.516+00:00",
+    "atualizado": "2026-11-03T17:33:08.493+00:00",
     "de": 299.75,
     "loja": "Mercado Livre",
     "loja_id": "mercadolivre",
@@ -544,7 +539,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T12:03:36.56+00:00",
+    "atualizado": "2026-11-03T17:34:46.369+00:00",
     "de": 229,
     "loja": "Caixinha Boardgames",
     "loja_id": "caixinhaboardgames",
@@ -554,7 +549,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T12:13:05.104+00:00",
+    "atualizado": "2026-11-03T17:48:23.096+00:00",
     "de": 239.99,
     "loja": "Ludostation",
     "loja_id": "ludostation",
@@ -564,7 +559,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T12:00:47.83+00:00",
+    "atualizado": "2026-11-03T17:30:49.035+00:00",
     "de": 249.79,
     "loja": "Alquimistas dos Jogos",
     "loja_id": "alquimistasdosjogos",
@@ -574,7 +569,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T11:47:40.474+00:00",
+    "atualizado": "2026-11-03T17:49:39.067+00:00",
     "de": 249.88,
     "loja": "Place Games",
     "loja_id": "placegames",
@@ -584,16 +579,16 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T09:55-03:00"
+  "verificado": "2026-11-03T14:57-03:00"
  },
  "7-wonders-catan": {
   "ofertas": [],
-  "verificado": "2026-11-03T08:59-03:00"
+  "verificado": "2026-11-03T14:57-03:00"
  },
  "7-wonders-cidades": {
   "ofertas": [
    {
-    "atualizado": "2026-11-03T08:42:16.136+00:00",
+    "atualizado": "2026-11-03T16:17:14.034+00:00",
     "de": 159.99,
     "loja": "Ludostation",
     "loja_id": "ludostation",
@@ -603,7 +598,17 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T09:03:47.499+00:00",
+    "atualizado": "2026-11-03T16:20:15.26+00:00",
+    "de": 167.92,
+    "loja": "TabuLoja",
+    "loja_id": "tabuloja",
+    "por": 151.13,
+    "tipo": "LINK",
+    "url": "https://www.tabuloja.com/jogos-de-tabuleiro/expansoes/7-wonders-2a-edicao-cidades-expansao",
+    "vendedor": null
+   },
+   {
+    "atualizado": "2026-11-03T16:06:03.908+00:00",
     "de": 172.99,
     "loja": "Cangaia Jogos",
     "loja_id": "cangaiajogos",
@@ -613,17 +618,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T08:46:02.847+00:00",
-    "de": 199.9,
-    "loja": "TabuLoja",
-    "loja_id": "tabuloja",
-    "por": 179.91,
-    "tipo": "LINK",
-    "url": "https://www.tabuloja.com/jogos-de-tabuleiro/expansoes/7-wonders-2a-edicao-cidades-expansao",
-    "vendedor": null
-   },
-   {
-    "atualizado": "2026-11-03T08:43:32.638+00:00",
+    "atualizado": "2026-11-03T16:17:25.225+00:00",
     "de": 229.9,
     "loja": "Loja Nerdz",
     "loja_id": "nerdz",
@@ -633,7 +628,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T09:04:46.426+00:00",
+    "atualizado": "2026-11-03T16:07:13.31+00:00",
     "de": 249.9,
     "loja": "Dalaran Games",
     "loja_id": "dalaran",
@@ -643,7 +638,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T08:48-03:00"
+  "verificado": "2026-11-03T14:57-03:00"
  },
  "7-wonders-duel": {
   "ofertas": [
@@ -658,27 +653,27 @@
     "vendedor": "Magic_Tower"
    },
    {
-    "atualizado": "2026-11-03T09:17:22.213+00:00",
-    "de": 153.04,
+    "atualizado": "2026-11-03T13:05:32.797+00:00",
+    "de": 184.79,
     "loja": "Amazon",
     "loja_id": "amazon",
-    "por": 153.04,
+    "por": 184.79,
     "tipo": "LINK",
     "url": "https://www.amazon.com.br/dp/B0779L912B",
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T11:30:34.026+00:00",
-    "de": 203.75,
+    "atualizado": "2026-11-03T15:30:33.312+00:00",
+    "de": 235.62,
     "loja": "Mercado Livre",
     "loja_id": "mercadolivre",
-    "por": 203.75,
+    "por": 235.62,
     "tipo": "LINK",
     "url": "https://www.mercadolivre.com.br/p/MLB16193245",
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T11:13:14.931+00:00",
+    "atualizado": "2026-11-03T16:46:11.365+00:00",
     "de": 165.99,
     "loja": "Ludostation",
     "loja_id": "ludostation",
@@ -688,7 +683,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T11:30:49.27+00:00",
+    "atualizado": "2026-11-03T16:30:43.118+00:00",
     "de": 169.79,
     "loja": "Alquimistas dos Jogos",
     "loja_id": "alquimistasdosjogos",
@@ -698,7 +693,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T11:34:53.14+00:00",
+    "atualizado": "2026-11-03T16:34:40.103+00:00",
     "de": 169,
     "loja": "Caixinha Boardgames",
     "loja_id": "caixinhaboardgames",
@@ -708,7 +703,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T08:39-03:00"
+  "verificado": "2026-11-03T14:57-03:00"
  },
  "7-wonders-duel-agora": {
   "ofertas": [
@@ -733,7 +728,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T16:00:47.686+00:00",
+    "atualizado": "2026-11-03T16:30:43.118+00:00",
     "de": 129.79,
     "loja": "Alquimistas dos Jogos",
     "loja_id": "alquimistasdosjogos",
@@ -743,7 +738,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T15:33:51.986+00:00",
+    "atualizado": "2026-11-03T16:34:40.103+00:00",
     "de": 129,
     "loja": "Caixinha Boardgames",
     "loja_id": "caixinhaboardgames",
@@ -753,7 +748,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T15:44:00.941+00:00",
+    "atualizado": "2026-11-03T16:46:11.365+00:00",
     "de": 139.99,
     "loja": "Ludostation",
     "loja_id": "ludostation",
@@ -763,7 +758,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T15:46:44.338+00:00",
+    "atualizado": "2026-11-03T16:51:04.459+00:00",
     "de": 139.88,
     "loja": "Place Games",
     "loja_id": "placegames",
@@ -773,12 +768,12 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T13:58-03:00"
+  "verificado": "2026-11-03T14:57-03:00"
  },
  "7-wonders-duel-panteao": {
   "ofertas": [
    {
-    "atualizado": "2026-11-03T09:33:21.63+00:00",
+    "atualizado": "2026-11-03T13:32:42.909+00:00",
     "de": 144.79,
     "loja": "Amazon",
     "loja_id": "amazon",
@@ -788,7 +783,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T11:00:44.051+00:00",
+    "atualizado": "2026-11-03T17:30:49.035+00:00",
     "de": 129.79,
     "loja": "Alquimistas dos Jogos",
     "loja_id": "alquimistasdosjogos",
@@ -798,7 +793,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T11:03:27.855+00:00",
+    "atualizado": "2026-11-03T17:36:04.226+00:00",
     "de": 131.99,
     "loja": "Cangaia Jogos",
     "loja_id": "cangaiajogos",
@@ -808,7 +803,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T11:13:14.931+00:00",
+    "atualizado": "2026-11-03T17:14:09.186+00:00",
     "de": 139.99,
     "loja": "Ludostation",
     "loja_id": "ludostation",
@@ -818,7 +813,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T11:03:53.591+00:00",
+    "atualizado": "2026-11-03T17:34:46.369+00:00",
     "de": 139,
     "loja": "Caixinha Boardgames",
     "loja_id": "caixinhaboardgames",
@@ -828,7 +823,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T11:01:38.165+00:00",
+    "atualizado": "2026-11-03T17:39:30.529+00:00",
     "de": 149.99,
     "loja": "Brechó Lúdico",
     "loja_id": "brecholudico",
@@ -838,7 +833,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T09:12-03:00"
+  "verificado": "2026-11-03T14:57-03:00"
  },
  "7-wonders-edifice": {
   "ofertas": [
@@ -853,7 +848,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T11:30:34.716+00:00",
+    "atualizado": "2026-11-03T15:30:34.066+00:00",
     "de": 151.56,
     "loja": "Mercado Livre",
     "loja_id": "mercadolivre",
@@ -863,29 +858,9 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T13:47:51.99+00:00",
-    "de": 129,
-    "loja": "TabuLoja",
-    "loja_agora": {
-     "estoque": false,
-     "hora": "2026-11-03T14:37-03:00",
-     "preco": 167.92
-    },
-    "loja_id": "tabuloja",
-    "por": 116.1,
-    "tipo": "LINK",
-    "url": "https://www.tabuloja.com/jogos-de-tabuleiro/expansoes/7-wonders-2a-edicao-edificios",
-    "vendedor": null
-   },
-   {
-    "atualizado": "2026-11-03T14:05:15.406+00:00",
+    "atualizado": "2026-11-03T16:38:24.038+00:00",
     "de": 130,
     "loja": "ARCS Livros e Jogos",
-    "loja_agora": {
-     "estoque": true,
-     "hora": "2026-11-03T14:37-03:00",
-     "preco": 130.0
-    },
     "loja_id": "espacoarcs",
     "por": 117,
     "tipo": "LINK",
@@ -893,7 +868,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T14:00:47.672+00:00",
+    "atualizado": "2026-11-03T16:30:43.118+00:00",
     "de": 159.79,
     "loja": "Alquimistas dos Jogos",
     "loja_id": "alquimistasdosjogos",
@@ -903,7 +878,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T13:43:37.768+00:00",
+    "atualizado": "2026-11-03T16:46:11.365+00:00",
     "de": 159.99,
     "loja": "Ludostation",
     "loja_id": "ludostation",
@@ -911,18 +886,28 @@
     "tipo": "LINK",
     "url": "https://ludostation.com.br/produtos/7-wonders-2-edicao-edificios-1k10q/",
     "vendedor": null
+   },
+   {
+    "atualizado": "2026-11-03T16:51:04.459+00:00",
+    "de": 154.88,
+    "loja": "Place Games",
+    "loja_id": "placegames",
+    "por": 144.04,
+    "tipo": "LINK",
+    "url": "https://www.placegames.com.br/7-wonders-edificios",
+    "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T13:59-03:00"
+  "verificado": "2026-11-03T14:57-03:00"
  },
  "7-wonders-leaders-anniversary-pack": {
   "ofertas": [],
-  "verificado": "2026-11-03T09:13-03:00"
+  "verificado": "2026-11-03T14:57-03:00"
  },
  "7-wonders-lideres": {
   "ofertas": [
    {
-    "atualizado": "2026-11-02T21:16:04.62+00:00",
+    "atualizado": "2026-11-03T15:17:15.065+00:00",
     "de": 159.99,
     "loja": "Ludostation",
     "loja_id": "ludostation",
@@ -932,7 +917,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-02T21:16:46.005+00:00",
+    "atualizado": "2026-11-03T15:18:30.225+00:00",
     "de": 169.9,
     "loja": "Paladins Games",
     "loja_id": "paladinsgames",
@@ -942,7 +927,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-02T21:05:55.355+00:00",
+    "atualizado": "2026-11-03T15:33:54.003+00:00",
     "de": 172.99,
     "loja": "Cangaia Jogos",
     "loja_id": "cangaiajogos",
@@ -950,24 +935,14 @@
     "tipo": "LINK",
     "url": "https://www.cangaiajogos.com.br/todos-os-jogos/jogos-para-familia/7-wonders-lideres",
     "vendedor": null
-   },
-   {
-    "atualizado": "2026-11-02T21:18:39.778+00:00",
-    "de": 249.9,
-    "loja": "TabuLoja",
-    "loja_id": "tabuloja",
-    "por": 224.91,
-    "tipo": "LINK",
-    "url": "https://www.tabuloja.com/board-games/expansoes/7-wonders-2a-edicao-lideres",
-    "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T08:54-03:00"
+  "verificado": "2026-11-03T14:57-03:00"
  },
  "7-wonders-second-edition-armada": {
   "ofertas": [
    {
-    "atualizado": "2026-11-03T09:13:04.461+00:00",
+    "atualizado": "2026-11-03T13:14:15.758+00:00",
     "de": 204.79,
     "loja": "Amazon",
     "loja_id": "amazon",
@@ -977,7 +952,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T12:00:47.83+00:00",
+    "atualizado": "2026-11-03T15:30:48.309+00:00",
     "de": 189.79,
     "loja": "Alquimistas dos Jogos",
     "loja_id": "alquimistasdosjogos",
@@ -987,7 +962,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T12:03:36.56+00:00",
+    "atualizado": "2026-11-03T15:33:51.986+00:00",
     "de": 189,
     "loja": "Caixinha Boardgames",
     "loja_id": "caixinhaboardgames",
@@ -997,7 +972,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T12:14:57.932+00:00",
+    "atualizado": "2026-11-03T15:46:44.338+00:00",
     "de": 194.88,
     "loja": "Place Games",
     "loja_id": "placegames",
@@ -1007,7 +982,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T12:02:04.159+00:00",
+    "atualizado": "2026-11-03T15:32:40.964+00:00",
     "de": 199.9,
     "loja": "Bravo Jogos",
     "loja_id": "bravojogos",
@@ -1017,7 +992,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T12:16:31.685+00:00",
+    "atualizado": "2026-11-03T15:48:23.829+00:00",
     "de": 249.99,
     "loja": "Taverna Real",
     "loja_id": "tavernareal",
@@ -1027,12 +1002,12 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T09:45-03:00"
+  "verificado": "2026-11-03T14:57-03:00"
  },
  "7-wonders-segunda-edicao-lideres": {
   "ofertas": [
    {
-    "atualizado": "2026-11-03T09:05:28.449+00:00",
+    "atualizado": "2026-11-03T13:08:26.326+00:00",
     "de": 199.99,
     "loja": "Amazon",
     "loja_id": "amazon",
@@ -1042,7 +1017,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T09:00:48.319+00:00",
+    "atualizado": "2026-11-03T14:00:47.672+00:00",
     "de": 179.79,
     "loja": "Alquimistas dos Jogos",
     "loja_id": "alquimistasdosjogos",
@@ -1052,7 +1027,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T09:03:49.525+00:00",
+    "atualizado": "2026-11-03T14:03:47.392+00:00",
     "de": 179,
     "loja": "Caixinha Boardgames",
     "loja_id": "caixinhaboardgames",
@@ -1062,7 +1037,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T09:10:57.526+00:00",
+    "atualizado": "2026-11-03T13:41:19.495+00:00",
     "de": 199.9,
     "loja": "JOY JOY STORE",
     "loja_id": "joyjoycafe",
@@ -1072,7 +1047,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T09:01:44.241+00:00",
+    "atualizado": "2026-11-03T14:01:39.706+00:00",
     "de": 238.9,
     "loja": "Brechó Lúdico",
     "loja_id": "brecholudico",
@@ -1082,7 +1057,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T09:02:40.211+00:00",
+    "atualizado": "2026-11-03T14:02:39.739+00:00",
     "de": 249.99,
     "loja": "Bravo Jogos",
     "loja_id": "bravojogos",
@@ -1092,16 +1067,26 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T09:45-03:00"
+  "verificado": "2026-11-03T14:57-03:00"
  },
  "7-wonders-wonder-pack": {
   "ofertas": [],
-  "verificado": "2026-11-03T09:02-03:00"
+  "verificado": "2026-11-03T14:57-03:00"
  },
  "7th-seal": {
   "ofertas": [
    {
-    "atualizado": "2026-11-03T10:42:06.882+00:00",
+    "atualizado": "2026-11-03T17:18:00.415+00:00",
+    "de": 183.96,
+    "loja": "TabuLoja",
+    "loja_id": "tabuloja",
+    "por": 165.56,
+    "tipo": "LINK",
+    "url": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/7th-seal",
+    "vendedor": null
+   },
+   {
+    "atualizado": "2026-11-03T17:13:09.147+00:00",
     "de": 204.9,
     "loja": "Masmorra",
     "loja_id": "masmorra",
@@ -1111,7 +1096,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T10:44:35.394+00:00",
+    "atualizado": "2026-11-03T17:15:56.638+00:00",
     "de": 209.9,
     "loja": "Paladins Games",
     "loja_id": "paladinsgames",
@@ -1121,17 +1106,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T10:46:18.327+00:00",
-    "de": 219,
-    "loja": "TabuLoja",
-    "loja_id": "tabuloja",
-    "por": 197.1,
-    "tipo": "LINK",
-    "url": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/7th-seal",
-    "vendedor": null
-   },
-   {
-    "atualizado": "2026-11-03T10:30:44.417+00:00",
+    "atualizado": "2026-11-03T17:30:49.035+00:00",
     "de": 219.79,
     "loja": "Alquimistas dos Jogos",
     "loja_id": "alquimistasdosjogos",
@@ -1141,7 +1116,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T10:46:06.153+00:00",
+    "atualizado": "2026-11-03T17:17:48.375+00:00",
     "de": 219.99,
     "loja": "Space Board Games",
     "loja_id": "spaceboardgames",
@@ -1151,7 +1126,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T10:35:04.729+00:00",
+    "atualizado": "2026-11-03T17:05:30.349+00:00",
     "de": 229.99,
     "loja": "Elfos & Cia",
     "loja_id": "elfosecia",
@@ -1161,12 +1136,12 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T11:11-03:00"
+  "verificado": "2026-11-03T14:57-03:00"
  },
  "9-lives": {
   "ofertas": [
    {
-    "atualizado": "2026-11-03T09:33:40.456+00:00",
+    "atualizado": "2026-11-03T13:33:01.687+00:00",
     "de": 161.29,
     "loja": "Amazon",
     "loja_id": "amazon",
@@ -1176,7 +1151,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T07:30:34.208+00:00",
+    "atualizado": "2026-11-03T15:30:35.695+00:00",
     "de": 157.13,
     "loja": "Mercado Livre",
     "loja_id": "mercadolivre",
@@ -1186,7 +1161,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T11:00:44.051+00:00",
+    "atualizado": "2026-11-03T16:00:47.686+00:00",
     "de": 139.79,
     "loja": "Alquimistas dos Jogos",
     "loja_id": "alquimistasdosjogos",
@@ -1196,7 +1171,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T11:02:19.418+00:00",
+    "atualizado": "2026-11-03T16:02:38.261+00:00",
     "de": 139.9,
     "loja": "Bravo Jogos",
     "loja_id": "bravojogos",
@@ -1206,7 +1181,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T11:03:27.855+00:00",
+    "atualizado": "2026-11-03T16:06:03.908+00:00",
     "de": 144.99,
     "loja": "Cangaia Jogos",
     "loja_id": "cangaiajogos",
@@ -1216,7 +1191,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T11:09:10.336+00:00",
+    "atualizado": "2026-11-03T15:39:15.968+00:00",
     "de": 149.9,
     "loja": "Guilda dos Jogos",
     "loja_id": "guildadosjogos",
@@ -1226,20 +1201,20 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T10:16-03:00"
+  "verificado": "2026-11-03T14:57-03:00"
  },
  "a-batalha-dos-cinco-exercitos": {
   "ofertas": [],
-  "verificado": "2026-11-03T09:15-03:00"
+  "verificado": "2026-11-03T14:57-03:00"
  },
  "a-distant-plain": {
   "ofertas": [],
-  "verificado": "2026-11-03T09:18-03:00"
+  "verificado": "2026-11-03T14:57-03:00"
  },
  "a-elegia-do-passaro-da-morte": {
   "ofertas": [
    {
-    "atualizado": "2026-11-03T01:31:03.791+00:00",
+    "atualizado": "2026-11-03T09:30:31.025+00:00",
     "de": 60.25,
     "loja": "Amazon",
     "loja_id": "amazon",
@@ -1249,12 +1224,12 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T09:37-03:00"
+  "verificado": "2026-11-03T14:57-03:00"
  },
  "a-fake-artist-goes-to-new-york": {
   "ofertas": [
    {
-    "atualizado": "2026-11-03T13:14:05.984+00:00",
+    "atualizado": "2026-11-03T17:16:17.485+00:00",
     "de": 179.99,
     "loja": "Amazon",
     "loja_id": "amazon",
@@ -1264,14 +1239,9 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T15:47:03.495+00:00",
+    "atualizado": "2026-11-03T17:17:13.394+00:00",
     "de": 79.99,
     "loja": "PlayEasy",
-    "loja_agora": {
-     "estoque": true,
-     "hora": "2026-11-03T14:37-03:00",
-     "preco": 79.99
-    },
     "loja_id": "playeasy",
     "por": 74.39,
     "tipo": "LINK",
@@ -1279,14 +1249,9 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T15:33:51.986+00:00",
+    "atualizado": "2026-11-03T17:34:46.369+00:00",
     "de": 85,
     "loja": "Caixinha Boardgames",
-    "loja_agora": {
-     "estoque": true,
-     "hora": "2026-11-03T14:37-03:00",
-     "preco": 85.0
-    },
     "loja_id": "caixinhaboardgames",
     "por": 79.05,
     "tipo": "LINK",
@@ -1294,7 +1259,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T15:33:54.003+00:00",
+    "atualizado": "2026-11-03T17:36:04.226+00:00",
     "de": 124.99,
     "loja": "Cangaia Jogos",
     "loja_id": "cangaiajogos",
@@ -1304,7 +1269,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T15:47:06.006+00:00",
+    "atualizado": "2026-11-03T17:17:05.07+00:00",
     "de": 159.9,
     "loja": "Pittas Board Games",
     "loja_id": "pittasstore",
@@ -1314,22 +1279,22 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T15:49:12.505+00:00",
-    "de": 155,
-    "loja": "Tubaleria",
-    "loja_id": "tubaleria",
-    "por": 148.8,
+    "atualizado": "2026-11-03T17:32:42.961+00:00",
+    "de": 169.9,
+    "loja": "Bravo Jogos",
+    "loja_id": "bravojogos",
+    "por": 158.01,
     "tipo": "LINK",
-    "url": "https://tubaleria.store/produtos/a-fake-artist-goes-to-new-york/",
+    "url": "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-a-fake-artist-goes-to-ny-p",
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T13:58-03:00"
+  "verificado": "2026-11-03T14:57-03:00"
  },
  "a-feast-for-odin-mini-expansion-1": {
   "ofertas": [
    {
-    "atualizado": "2026-11-03T09:44:52.054+00:00",
+    "atualizado": "2026-11-03T11:47:16.784+00:00",
     "de": 14.9,
     "loja": "PandaBoardGames",
     "loja_id": "pandaboardgames",
@@ -1339,7 +1304,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T09:33:38.97+00:00",
+    "atualizado": "2026-11-03T11:34:53.14+00:00",
     "de": 24,
     "loja": "Caixinha Boardgames",
     "loja_id": "caixinhaboardgames",
@@ -1349,7 +1314,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T09:41:03.023+00:00",
+    "atualizado": "2026-11-03T11:44:09.959+00:00",
     "de": 24.9,
     "loja": "Leão Livros",
     "loja_id": "leaolivros",
@@ -1359,104 +1324,104 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T08:52-03:00"
+  "verificado": "2026-11-03T14:57-03:00"
  },
  "a-game-of-thrones": {
   "ofertas": [],
-  "verificado": "2026-11-03T10:24-03:00"
+  "verificado": "2026-11-03T14:57-03:00"
  },
  "a-game-of-thrones-catan-brotherhood-of-the-watch": {
   "ofertas": [],
-  "verificado": "2026-11-03T09:03-03:00"
+  "verificado": "2026-11-03T14:57-03:00"
  },
  "a-game-of-thrones-the-card-game-second-edition": {
   "ofertas": [],
-  "verificado": "2026-11-03T09:37-03:00"
+  "verificado": "2026-11-03T14:57-03:00"
  },
  "a-gentle-rain": {
   "ofertas": [],
-  "verificado": "2026-11-03T10:07-03:00"
+  "verificado": "2026-11-03T14:57-03:00"
  },
  "a-gest-of-robin-hood": {
   "ofertas": [],
-  "verificado": "2026-11-03T10:31-03:00"
+  "verificado": "2026-11-03T14:57-03:00"
  },
  "a-guerra-do-anel": {
   "ofertas": [],
-  "verificado": "2026-11-03T09:12-03:00"
+  "verificado": "2026-11-03T14:57-03:00"
  },
  "a-guerra-dos-tronos": {
   "ofertas": [],
-  "verificado": "2026-11-03T08:50-03:00"
+  "verificado": "2026-11-03T14:57-03:00"
  },
  "a-guerra-dos-tronos-board-game-a-danca-dos-dragoes": {
   "ofertas": [],
-  "verificado": "2026-11-03T08:45-03:00"
+  "verificado": "2026-11-03T14:57-03:00"
  },
  "a-guerra-dos-tronos-board-game-mae-de-dragoes": {
   "ofertas": [],
-  "verificado": "2026-11-03T09:01-03:00"
+  "verificado": "2026-11-03T14:57-03:00"
  },
  "a-guerra-dos-tronos-board-game-o-festim-dos-corvos": {
   "ofertas": [],
-  "verificado": "2026-11-03T08:53-03:00"
+  "verificado": "2026-11-03T14:57-03:00"
  },
  "a-guerra-dos-tronos-card-game-a-batalha-de-vau-rubi": {
   "ofertas": [],
-  "verificado": "2026-11-03T08:56-03:00"
+  "verificado": "2026-11-03T14:57-03:00"
  },
  "a-guerra-dos-tronos-card-game-a-guerra-dos-cinco-reis": {
   "ofertas": [],
-  "verificado": "2026-11-03T08:56-03:00"
+  "verificado": "2026-11-03T14:57-03:00"
  },
  "a-guerra-dos-tronos-card-game-antigos-inimigos": {
   "ofertas": [],
-  "verificado": "2026-11-03T08:56-03:00"
+  "verificado": "2026-11-03T14:57-03:00"
  },
  "a-guerra-dos-tronos-card-game-batalhas-epicas": {
   "ofertas": [],
-  "verificado": "2026-11-03T08:46-03:00"
+  "verificado": "2026-11-03T14:57-03:00"
  },
  "a-guerra-dos-tronos-card-game-leoes-do-rochedo": {
   "ofertas": [],
-  "verificado": "2026-11-03T09:05-03:00"
+  "verificado": "2026-11-03T14:57-03:00"
  },
  "a-guerra-dos-tronos-card-game-o-tempo-para-corvos-parte-12-do-ciclo": {
   "ofertas": [],
-  "verificado": "2026-11-03T08:58-03:00"
+  "verificado": "2026-11-03T14:57-03:00"
  },
  "a-guerra-dos-tronos-card-game-o-tempo-para-corvos-parte-22-do-ciclo": {
   "ofertas": [],
-  "verificado": "2026-11-03T08:58-03:00"
+  "verificado": "2026-11-03T14:57-03:00"
  },
  "a-guerra-dos-tronos-card-game-principes-do-sol": {
   "ofertas": [],
-  "verificado": "2026-11-03T09:12-03:00"
+  "verificado": "2026-11-03T14:57-03:00"
  },
  "a-guerra-dos-tronos-card-game-rainha-dos-dragoes": {
   "ofertas": [],
-  "verificado": "2026-11-03T09:13-03:00"
+  "verificado": "2026-11-03T14:57-03:00"
  },
  "a-guerra-dos-tronos-card-game-reis-da-tempestade": {
   "ofertas": [],
-  "verificado": "2026-11-03T08:58-03:00"
+  "verificado": "2026-11-03T14:57-03:00"
  },
  "a-guerra-dos-tronos-card-game-reis-dos-mares": {
   "ofertas": [],
-  "verificado": "2026-11-03T08:58-03:00"
+  "verificado": "2026-11-03T14:57-03:00"
  },
  "a-guerra-dos-tronos-card-game-senhores-do-inverno": {
   "ofertas": [],
-  "verificado": "2026-11-03T08:58-03:00"
+  "verificado": "2026-11-03T14:57-03:00"
  },
  "a-guerra-dos-tronos-card-game-vinculos-sagrados": {
   "ofertas": [],
-  "verificado": "2026-11-03T08:58-03:00"
+  "verificado": "2026-11-03T14:57-03:00"
  },
  "a-ilha-do-tesouro": {
   "ofertas": [
    {
-    "atualizado": "2026-11-03T08:45:15.812+00:00",
+    "atualizado": "2026-11-03T12:15:22.524+00:00",
     "de": 359.9,
     "loja": "Pittas Board Games",
     "loja_id": "pittasstore",
@@ -1466,7 +1431,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T08:46:35.258+00:00",
+    "atualizado": "2026-11-03T12:16:41.058+00:00",
     "de": 359.9,
     "loja": "Tschüss",
     "loja_id": "tschuss",
@@ -1476,12 +1441,12 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T09:22-03:00"
+  "verificado": "2026-11-03T14:57-03:00"
  },
  "a-ilha-dos-gatos": {
   "ofertas": [
    {
-    "atualizado": "2026-11-03T05:26:59.52+00:00",
+    "atualizado": "2026-11-03T09:27:38.696+00:00",
     "de": 548.41,
     "loja": "Amazon",
     "loja_id": "amazon",
@@ -1491,7 +1456,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T09:30-03:00"
+  "verificado": "2026-11-03T14:57-03:00"
  },
  "a-iniciativa": {
   "ofertas": [
@@ -1506,7 +1471,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T14:39:27.57+00:00",
+    "atualizado": "2026-11-03T16:37:57.468+00:00",
     "de": 499.99,
     "loja": "Brechó Lúdico",
     "loja_id": "brecholudico",
@@ -1516,7 +1481,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T14:45:16.354+00:00",
+    "atualizado": "2026-11-03T16:43:56.984+00:00",
     "de": 499.9,
     "loja": "JOY JOY STORE",
     "loja_id": "joyjoycafe",
@@ -1526,7 +1491,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T15:00:58.317+00:00",
+    "atualizado": "2026-11-03T16:30:48.454+00:00",
     "de": 469,
     "loja": "Board Game Play Store",
     "loja_id": "boardgameplaystore",
@@ -1536,7 +1501,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T14:37:08.027+00:00",
+    "atualizado": "2026-11-03T16:37:07.478+00:00",
     "de": 499.9,
     "loja": "Dalaran Games",
     "loja_id": "dalaran",
@@ -1546,7 +1511,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T14:47:54.993+00:00",
+    "atualizado": "2026-11-03T16:46:42.737+00:00",
     "de": 549.9,
     "loja": "Loja Nerdz",
     "loja_id": "nerdz",
@@ -1556,12 +1521,12 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T13:57-03:00"
+  "verificado": "2026-11-03T14:57-03:00"
  },
  "a-saga-do-tomo-do-reino-ocidental": {
   "ofertas": [
    {
-    "atualizado": "2026-11-02T21:16:11.227+00:00",
+    "atualizado": "2026-11-03T09:17:22.213+00:00",
     "de": 386.29,
     "loja": "Amazon",
     "loja_id": "amazon",
@@ -1571,7 +1536,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T00:41:53.746+00:00",
+    "atualizado": "2026-11-03T12:11:21.885+00:00",
     "de": 48,
     "loja": "Leão Livros",
     "loja_id": "leaolivros",
@@ -1581,7 +1546,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T00:42:55.286+00:00",
+    "atualizado": "2026-11-03T12:12:06.735+00:00",
     "de": 49.9,
     "loja": "Masmorra",
     "loja_id": "masmorra",
@@ -1591,7 +1556,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T00:43:52.778+00:00",
+    "atualizado": "2026-11-03T12:12:54.679+00:00",
     "de": 100,
     "loja": "Mosaico Jogos",
     "loja_id": "mosaico",
@@ -1601,7 +1566,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T00:46:08.39+00:00",
+    "atualizado": "2026-11-03T12:15:22.524+00:00",
     "de": 99.9,
     "loja": "Pittas Board Games",
     "loja_id": "pittasstore",
@@ -1611,7 +1576,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T00:47:16.137+00:00",
+    "atualizado": "2026-11-03T12:16:31.685+00:00",
     "de": 139.99,
     "loja": "Taverna Real",
     "loja_id": "tavernareal",
@@ -1621,36 +1586,36 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T09:35-03:00"
+  "verificado": "2026-11-03T14:58-03:00"
  },
  "a-song-of-ice-and-fire-campaign-guide": {
   "ofertas": [],
-  "verificado": "2026-11-03T09:38-03:00"
+  "verificado": "2026-11-03T14:58-03:00"
  },
  "a-song-of-ice-fire-assassinos-bolton": {
   "ofertas": [],
-  "verificado": "2026-11-03T09:05-03:00"
+  "verificado": "2026-11-03T14:58-03:00"
  },
  "a-song-of-ice-fire-garotas-do-bastardo": {
   "ofertas": [],
-  "verificado": "2026-11-03T09:05-03:00"
+  "verificado": "2026-11-03T14:58-03:00"
  },
  "a-song-of-ice-fire-jogo-de-miniaturas": {
   "ofertas": [],
-  "verificado": "2026-11-03T09:05-03:00"
+  "verificado": "2026-11-03T14:58-03:00"
  },
  "a-song-of-ice-fire-os-homens-esfolados": {
   "ofertas": [],
-  "verificado": "2026-11-03T09:05-03:00"
+  "verificado": "2026-11-03T14:58-03:00"
  },
  "a-song-of-ice-fire-tabletop-miniatures-game-baratheon-heroes-i": {
   "ofertas": [],
-  "verificado": "2026-11-03T09:44-03:00"
+  "verificado": "2026-11-03T14:58-03:00"
  },
  "a-song-of-ice-fire-tabletop-miniatures-game-baratheon-wardens": {
   "ofertas": [
    {
-    "atualizado": "2026-11-02T21:23:54.189+00:00",
+    "atualizado": "2026-11-03T09:23:43.712+00:00",
     "de": 184.64,
     "loja": "Amazon",
     "loja_id": "amazon",
@@ -1660,20 +1625,20 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T09:40-03:00"
+  "verificado": "2026-11-03T14:58-03:00"
  },
  "a-song-of-ice-fire-tabletop-miniatures-game-builder-scorpion-crew": {
   "ofertas": [],
-  "verificado": "2026-11-03T10:02-03:00"
+  "verificado": "2026-11-03T14:58-03:00"
  },
  "a-song-of-ice-fire-tabletop-miniatures-game-crannogman-trackers": {
   "ofertas": [],
-  "verificado": "2026-11-03T09:06-03:00"
+  "verificado": "2026-11-03T14:58-03:00"
  },
  "a-song-of-ice-fire-tabletop-miniatures-game-free-folk-heroes-i": {
   "ofertas": [
    {
-    "atualizado": "2026-11-03T09:33:01.763+00:00",
+    "atualizado": "2026-11-03T13:32:23.338+00:00",
     "de": 261.07,
     "loja": "Amazon",
     "loja_id": "amazon",
@@ -1683,16 +1648,16 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T10:43-03:00"
+  "verificado": "2026-11-03T14:58-03:00"
  },
  "a-song-of-ice-fire-tabletop-miniatures-game-knights-of-casterly-rock": {
   "ofertas": [],
-  "verificado": "2026-11-03T09:05-03:00"
+  "verificado": "2026-11-03T14:58-03:00"
  },
  "a-song-of-ice-fire-tabletop-miniatures-game-lannister-crossbowmen": {
   "ofertas": [
    {
-    "atualizado": "2026-11-03T05:32:20.852+00:00",
+    "atualizado": "2026-11-03T09:32:52.334+00:00",
     "de": 257.23,
     "loja": "Amazon",
     "loja_id": "amazon",
@@ -1702,56 +1667,56 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T09:05-03:00"
+  "verificado": "2026-11-03T14:58-03:00"
  },
  "a-song-of-ice-fire-tabletop-miniatures-game-lannister-guardsmen": {
   "ofertas": [],
-  "verificado": "2026-11-03T09:05-03:00"
+  "verificado": "2026-11-03T14:58-03:00"
  },
  "a-song-of-ice-fire-tabletop-miniatures-game-lannister-halberdiers": {
   "ofertas": [],
-  "verificado": "2026-11-03T09:06-03:00"
+  "verificado": "2026-11-03T14:58-03:00"
  },
  "a-song-of-ice-fire-tabletop-miniatures-game-stark-bowmen": {
   "ofertas": [],
-  "verificado": "2026-11-03T09:05-03:00"
+  "verificado": "2026-11-03T14:58-03:00"
  },
  "a-song-of-ice-fire-tabletop-miniatures-game-stark-outriders": {
   "ofertas": [],
-  "verificado": "2026-11-03T09:05-03:00"
+  "verificado": "2026-11-03T14:58-03:00"
  },
  "a-song-of-ice-fire-tabletop-miniatures-game-stark-sworn-swords": {
   "ofertas": [],
-  "verificado": "2026-11-03T09:05-03:00"
+  "verificado": "2026-11-03T14:58-03:00"
  },
  "a-song-of-ice-fire-tabletop-miniatures-game-the-mountains-men": {
   "ofertas": [],
-  "verificado": "2026-11-03T09:05-03:00"
+  "verificado": "2026-11-03T14:58-03:00"
  },
  "a-song-of-ice-fire-tabletop-miniatures-game-the-warriors-sons": {
   "ofertas": [],
-  "verificado": "2026-11-03T09:05-03:00"
+  "verificado": "2026-11-03T14:58-03:00"
  },
  "a-song-of-ice-fire-tabletop-miniatures-game-tully-sworn-shields": {
   "ofertas": [],
-  "verificado": "2026-11-03T09:05-03:00"
+  "verificado": "2026-11-03T14:58-03:00"
  },
  "a-song-of-ice-fire-tabletop-miniatures-game-umber-berserkers": {
   "ofertas": [],
-  "verificado": "2026-11-03T09:05-03:00"
+  "verificado": "2026-11-03T14:58-03:00"
  },
  "a-song-of-ice-fire-tabletop-miniatures-game-umber-greataxes": {
   "ofertas": [],
-  "verificado": "2026-11-03T09:05-03:00"
+  "verificado": "2026-11-03T14:58-03:00"
  },
  "a-song-of-ice-fire-tabletop-miniatures-game-winterfell-guards": {
   "ofertas": [],
-  "verificado": "2026-11-03T10:43-03:00"
+  "verificado": "2026-11-03T14:58-03:00"
  },
  "a-tale-of-pirates": {
   "ofertas": [
    {
-    "atualizado": "2026-11-03T05:24:43.594+00:00",
+    "atualizado": "2026-11-03T09:25:20.921+00:00",
     "de": 369.84,
     "loja": "Amazon",
     "loja_id": "amazon",
@@ -1761,7 +1726,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T09:17:17.571+00:00",
+    "atualizado": "2026-11-03T11:49:13.438+00:00",
     "de": 199.99,
     "loja": "Taverna Real",
     "loja_id": "tavernareal",
@@ -1771,7 +1736,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T09:11:18.785+00:00",
+    "atualizado": "2026-11-03T11:44:09.959+00:00",
     "de": 239.9,
     "loja": "Leão Livros",
     "loja_id": "leaolivros",
@@ -1781,7 +1746,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T09:15:26.084+00:00",
+    "atualizado": "2026-11-03T11:47:16.784+00:00",
     "de": 249.9,
     "loja": "PandaBoardGames",
     "loja_id": "pandaboardgames",
@@ -1791,7 +1756,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T09:17:22.479+00:00",
+    "atualizado": "2026-11-03T11:49:18.128+00:00",
     "de": 319.9,
     "loja": "Tschüss",
     "loja_id": "tschuss",
@@ -1801,12 +1766,12 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T08:51-03:00"
+  "verificado": "2026-11-03T14:58-03:00"
  },
  "a-todo-vapor": {
   "ofertas": [
    {
-    "atualizado": "2026-11-03T10:01:34.095+00:00",
+    "atualizado": "2026-11-03T12:31:39.827+00:00",
     "de": 60.9,
     "loja": "Brechó Lúdico",
     "loja_id": "brecholudico",
@@ -1816,11 +1781,11 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T09:37-03:00"
+  "verificado": "2026-11-03T14:58-03:00"
  },
  "a-touch-of-evil-something-wicked-expansion": {
   "ofertas": [],
-  "verificado": "2026-11-03T09:47-03:00"
+  "verificado": "2026-11-03T14:58-03:00"
  },
  "a-tripulacao-em-busca-do-nono-planeta": {
   "ofertas": [
@@ -1855,7 +1820,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T16:11:37.572+00:00",
+    "atualizado": "2026-11-03T17:08:24.94+00:00",
     "de": 109.9,
     "loja": "Facil Shopping",
     "loja_id": "facilshopping",
@@ -1865,7 +1830,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T15:47:42.598+00:00",
+    "atualizado": "2026-11-03T16:51:56.624+00:00",
     "de": 120,
     "loja": "Space Board Games",
     "loja_id": "spaceboardgames",
@@ -1875,7 +1840,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T15:46:31.699+00:00",
+    "atualizado": "2026-11-03T16:50:10.704+00:00",
     "de": 125,
     "loja": "Pira no Boardgame",
     "loja_id": "piranoboardgame",
@@ -1885,19 +1850,14 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T14:00-03:00"
+  "verificado": "2026-11-03T14:58-03:00"
  },
  "a-tripulacao-missao-no-mar-profundo": {
   "ofertas": [
    {
-    "atualizado": "2026-11-03T15:38:20.348+00:00",
+    "atualizado": "2026-11-03T17:42:06.071+00:00",
     "de": 109.9,
     "loja": "Facil Shopping",
-    "loja_agora": {
-     "estoque": true,
-     "hora": "2026-11-03T14:37-03:00",
-     "preco": 109.9
-    },
     "loja_id": "facilshopping",
     "por": 102.21,
     "tipo": "LINK",
@@ -1905,7 +1865,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T15:46:20.122+00:00",
+    "atualizado": "2026-11-03T17:46:17.394+00:00",
     "de": 142,
     "loja": "Bota na Mesa",
     "loja_id": "botanamesa",
@@ -1915,7 +1875,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T15:34:55.503+00:00",
+    "atualizado": "2026-11-03T17:37:21.294+00:00",
     "de": 175.9,
     "loja": "Dalaran Games",
     "loja_id": "dalaran",
@@ -1925,28 +1885,38 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T13:58-03:00"
+  "verificado": "2026-11-03T14:58-03:00"
  },
  "a-war-of-whispers": {
   "ofertas": [],
-  "verificado": "2026-11-03T09:16-03:00"
+  "verificado": "2026-11-03T14:58-03:00"
  },
  "abduction": {
   "ofertas": [],
-  "verificado": "2026-11-03T10:26-03:00"
+  "verificado": "2026-11-03T14:58-03:00"
  },
  "abomination-the-heir-of-frankenstein": {
   "ofertas": [],
-  "verificado": "2026-11-03T09:19-03:00"
+  "verificado": "2026-11-03T14:58-03:00"
  },
  "above-and-below": {
   "ofertas": [],
-  "verificado": "2026-11-03T08:39-03:00"
+  "verificado": "2026-11-03T14:58-03:00"
  },
  "abroad": {
   "ofertas": [
    {
-    "atualizado": "2026-11-03T13:13:30.269+00:00",
+    "atualizado": "2026-11-03T17:50:53.723+00:00",
+    "de": 335.16,
+    "loja": "TabuLoja",
+    "loja_id": "tabuloja",
+    "por": 301.64,
+    "tipo": "LINK",
+    "url": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/abroad",
+    "vendedor": null
+   },
+   {
+    "atualizado": "2026-11-03T17:46:40.606+00:00",
     "de": 386,
     "loja": "Meca dos Jogos",
     "loja_id": "mecadosjogos",
@@ -1956,7 +1926,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T13:13:17.179+00:00",
+    "atualizado": "2026-11-03T17:46:38.54+00:00",
     "de": 389.9,
     "loja": "Masmorra",
     "loja_id": "masmorra",
@@ -1966,17 +1936,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T13:18:05.134+00:00",
-    "de": 399,
-    "loja": "TabuLoja",
-    "loja_id": "tabuloja",
-    "por": 359.1,
-    "tipo": "LINK",
-    "url": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/abroad",
-    "vendedor": null
-   },
-   {
-    "atualizado": "2026-11-03T13:14:11.999+00:00",
+    "atualizado": "2026-11-03T17:48:23.096+00:00",
     "de": 399,
     "loja": "Ludostation",
     "loja_id": "ludostation",
@@ -1986,7 +1946,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T13:00:47.187+00:00",
+    "atualizado": "2026-11-03T17:30:49.035+00:00",
     "de": 399.79,
     "loja": "Alquimistas dos Jogos",
     "loja_id": "alquimistasdosjogos",
@@ -1996,7 +1956,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T13:01:40.694+00:00",
+    "atualizado": "2026-11-03T17:39:30.529+00:00",
     "de": 399.9,
     "loja": "Brechó Lúdico",
     "loja_id": "brecholudico",
@@ -2006,12 +1966,12 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T10:34-03:00"
+  "verificado": "2026-11-03T14:58-03:00"
  },
  "abstratus": {
   "ofertas": [
    {
-    "atualizado": "2026-11-03T06:31:33.515+00:00",
+    "atualizado": "2026-11-03T14:01:39.706+00:00",
     "de": 99.99,
     "loja": "Brechó Lúdico",
     "loja_id": "brecholudico",
@@ -2021,12 +1981,12 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T08:53-03:00"
+  "verificado": "2026-11-03T14:58-03:00"
  },
  "abstratus-kit-expansao": {
   "ofertas": [
    {
-    "atualizado": "2026-11-02T21:18:52.753+00:00",
+    "atualizado": "2026-11-03T13:18:54.983+00:00",
     "de": 209.9,
     "loja": "Amazon",
     "loja_id": "amazon",
@@ -2036,7 +1996,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-02T21:03:27.863+00:00",
+    "atualizado": "2026-11-03T13:11:10.217+00:00",
     "de": 228.85,
     "loja": "Amazon",
     "loja_id": "amazon",
@@ -2046,7 +2006,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-02T22:41:27.129+00:00",
+    "atualizado": "2026-11-03T14:08:19.807+00:00",
     "de": 99.99,
     "loja": "Facil Shopping",
     "loja_id": "facilshopping",
@@ -2056,7 +2016,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-02T22:41:27.129+00:00",
+    "atualizado": "2026-11-03T14:08:19.807+00:00",
     "de": 113.99,
     "loja": "Facil Shopping",
     "loja_id": "facilshopping",
@@ -2066,7 +2026,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-02T22:41:27.129+00:00",
+    "atualizado": "2026-11-03T14:08:19.807+00:00",
     "de": 152.99,
     "loja": "Facil Shopping",
     "loja_id": "facilshopping",
@@ -2076,12 +2036,12 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T09:04-03:00"
+  "verificado": "2026-11-03T14:58-03:00"
  },
  "abstratus-pop": {
   "ofertas": [
    {
-    "atualizado": "2026-11-02T22:01:37.91+00:00",
+    "atualizado": "2026-11-03T14:01:39.706+00:00",
     "de": 354.99,
     "loja": "Brechó Lúdico",
     "loja_id": "brecholudico",
@@ -2091,7 +2051,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-02T21:46:44.18+00:00",
+    "atualizado": "2026-11-03T14:17:19.424+00:00",
     "de": 389.9,
     "loja": "Pittas Board Games",
     "loja_id": "pittasstore",
@@ -2101,7 +2061,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-02T21:39:15.343+00:00",
+    "atualizado": "2026-11-03T14:08:19.807+00:00",
     "de": 399.99,
     "loja": "Facil Shopping",
     "loja_id": "facilshopping",
@@ -2111,24 +2071,24 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T10:27-03:00"
+  "verificado": "2026-11-03T14:58-03:00"
  },
  "abyss": {
   "ofertas": [],
-  "verificado": "2026-11-03T08:39-03:00"
+  "verificado": "2026-11-03T14:58-03:00"
  },
  "abyss-kraken": {
   "ofertas": [],
-  "verificado": "2026-11-03T08:47-03:00"
+  "verificado": "2026-11-03T14:58-03:00"
  },
  "abyss-leviathan": {
   "ofertas": [],
-  "verificado": "2026-11-03T09:17-03:00"
+  "verificado": "2026-11-03T14:58-03:00"
  },
  "ace-of-spades": {
   "ofertas": [
    {
-    "atualizado": "2026-11-03T12:14:40.011+00:00",
+    "atualizado": "2026-11-03T15:46:31.699+00:00",
     "de": 149,
     "loja": "Pira no Boardgame",
     "loja_id": "piranoboardgame",
@@ -2138,7 +2098,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T12:43:21.116+00:00",
+    "atualizado": "2026-11-03T15:43:07.115+00:00",
     "de": 149.9,
     "loja": "Masmorra",
     "loja_id": "masmorra",
@@ -2148,7 +2108,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T12:15:56.501+00:00",
+    "atualizado": "2026-11-03T15:47:42.598+00:00",
     "de": 149.99,
     "loja": "Space Board Games",
     "loja_id": "spaceboardgames",
@@ -2158,7 +2118,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T12:33:42.177+00:00",
+    "atualizado": "2026-11-03T16:04:46.889+00:00",
     "de": 155,
     "loja": "Caixinha Boardgames",
     "loja_id": "caixinhaboardgames",
@@ -2168,7 +2128,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T12:14:14.091+00:00",
+    "atualizado": "2026-11-03T15:45:55.609+00:00",
     "de": 159.9,
     "loja": "Paladins Games",
     "loja_id": "paladinsgames",
@@ -2178,7 +2138,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T12:31:39.827+00:00",
+    "atualizado": "2026-11-03T15:31:41.967+00:00",
     "de": 178.99,
     "loja": "Brechó Lúdico",
     "loja_id": "brecholudico",
@@ -2188,12 +2148,12 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T10:43-03:00"
+  "verificado": "2026-11-03T14:58-03:00"
  },
  "ace-of-spades-call-of-the-zombie": {
   "ofertas": [
    {
-    "atualizado": "2026-11-03T09:15:37.284+00:00",
+    "atualizado": "2026-11-03T13:46:27.486+00:00",
     "de": 39.5,
     "loja": "Pira no Boardgame",
     "loja_id": "piranoboardgame",
@@ -2203,7 +2163,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T09:13:22.703+00:00",
+    "atualizado": "2026-11-03T13:43:07.396+00:00",
     "de": 39.9,
     "loja": "Masmorra",
     "loja_id": "masmorra",
@@ -2213,7 +2173,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T09:03:49.525+00:00",
+    "atualizado": "2026-11-03T13:33:55.102+00:00",
     "de": 39,
     "loja": "Caixinha Boardgames",
     "loja_id": "caixinhaboardgames",
@@ -2223,7 +2183,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T09:16:42.032+00:00",
+    "atualizado": "2026-11-03T13:47:37.375+00:00",
     "de": 39.9,
     "loja": "Space Board Games",
     "loja_id": "spaceboardgames",
@@ -2233,7 +2193,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T09:15:15.471+00:00",
+    "atualizado": "2026-11-03T13:45:40.653+00:00",
     "de": 39.9,
     "loja": "Paladins Games",
     "loja_id": "paladinsgames",
@@ -2243,7 +2203,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T09:13:08.28+00:00",
+    "atualizado": "2026-11-03T13:43:37.768+00:00",
     "de": 42.9,
     "loja": "Ludostation",
     "loja_id": "ludostation",
@@ -2253,11 +2213,11 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T10:55-03:00"
+  "verificado": "2026-11-03T14:58-03:00"
  },
  "acho": {
   "ofertas": [],
-  "verificado": "2026-11-03T10:10-03:00"
+  "verificado": "2026-11-03T14:58-03:00"
  },
  "acquire": {
   "ofertas": [
@@ -2272,7 +2232,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T15:38:20.348+00:00",
+    "atualizado": "2026-11-03T16:41:23.606+00:00",
     "de": 199.9,
     "loja": "Facil Shopping",
     "loja_id": "facilshopping",
@@ -2282,7 +2242,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T15:47:03.495+00:00",
+    "atualizado": "2026-11-03T16:51:11.235+00:00",
     "de": 199.9,
     "loja": "PlayEasy",
     "loja_id": "playeasy",
@@ -2292,7 +2252,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T15:33:51.986+00:00",
+    "atualizado": "2026-11-03T16:34:40.103+00:00",
     "de": 214,
     "loja": "Caixinha Boardgames",
     "loja_id": "caixinhaboardgames",
@@ -2302,7 +2262,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T15:47:06.006+00:00",
+    "atualizado": "2026-11-03T16:51:33.571+00:00",
     "de": 239.9,
     "loja": "Pittas Board Games",
     "loja_id": "pittasstore",
@@ -2312,7 +2272,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T15:33:54.003+00:00",
+    "atualizado": "2026-11-03T16:35:57.407+00:00",
     "de": 239.99,
     "loja": "Cangaia Jogos",
     "loja_id": "cangaiajogos",
@@ -2322,16 +2282,16 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T13:59-03:00"
+  "verificado": "2026-11-03T14:58-03:00"
  },
  "add-to-playlist": {
   "ofertas": [],
-  "verificado": "2026-11-03T10:41-03:00"
+  "verificado": "2026-11-03T14:58-03:00"
  },
  "aeons-end": {
   "ofertas": [
    {
-    "atualizado": "2026-11-03T09:25:20.921+00:00",
+    "atualizado": "2026-11-03T13:24:41.753+00:00",
     "de": 540.7,
     "loja": "Amazon",
     "loja_id": "amazon",
@@ -2341,7 +2301,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T09:16-03:00"
+  "verificado": "2026-11-03T14:58-03:00"
  },
  "aeons-end-buried-secrets": {
   "ofertas": [
@@ -2356,7 +2316,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T14:39:27.57+00:00",
+    "atualizado": "2026-11-03T16:37:57.468+00:00",
     "de": 299.99,
     "loja": "Brechó Lúdico",
     "loja_id": "brecholudico",
@@ -2366,12 +2326,12 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T13:57-03:00"
+  "verificado": "2026-11-03T14:58-03:00"
  },
  "aeons-end-legacy": {
   "ofertas": [
    {
-    "atualizado": "2026-11-02T17:29:03.222+00:00",
+    "atualizado": "2026-11-03T09:29:33.556+00:00",
     "de": 988.43,
     "loja": "Amazon",
     "loja_id": "amazon",
@@ -2381,7 +2341,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T09:15-03:00"
+  "verificado": "2026-11-03T14:58-03:00"
  },
  "aeons-end-shattered-dreams": {
   "ofertas": [
@@ -2396,7 +2356,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T14:01:39.706+00:00",
+    "atualizado": "2026-11-03T17:01:38.282+00:00",
     "de": 199.99,
     "loja": "Brechó Lúdico",
     "loja_id": "brecholudico",
@@ -2406,12 +2366,12 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T13:57-03:00"
+  "verificado": "2026-11-03T14:59-03:00"
  },
  "aeons-end-the-depths": {
   "ofertas": [
    {
-    "atualizado": "2026-11-03T09:25:20.921+00:00",
+    "atualizado": "2026-11-03T13:24:41.753+00:00",
     "de": 271.32,
     "loja": "Amazon",
     "loja_id": "amazon",
@@ -2421,27 +2381,27 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T09:22-03:00"
+  "verificado": "2026-11-03T14:59-03:00"
  },
  "aeons-end-the-new-age": {
   "ofertas": [
    {
-    "atualizado": "2026-11-02T17:25:56.384+00:00",
-    "de": 499.1,
+    "atualizado": "2026-11-03T09:26:30.638+00:00",
+    "de": 519.35,
     "loja": "Amazon",
     "loja_id": "amazon",
-    "por": 499.1,
+    "por": 519.35,
     "tipo": "LINK",
     "url": "https://www.amazon.com.br/dp/B07T2FRHD8",
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T09:25-03:00"
+  "verificado": "2026-11-03T14:59-03:00"
  },
  "aeons-end-the-void": {
   "ofertas": [
    {
-    "atualizado": "2026-11-03T05:32:20.852+00:00",
+    "atualizado": "2026-11-03T09:32:52.334+00:00",
     "de": 231.89,
     "loja": "Amazon",
     "loja_id": "amazon",
@@ -2451,12 +2411,12 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T09:22-03:00"
+  "verificado": "2026-11-03T14:59-03:00"
  },
  "aerion": {
   "ofertas": [
    {
-    "atualizado": "2026-11-02T21:22:34.066+00:00",
+    "atualizado": "2026-11-03T09:22:25.081+00:00",
     "de": 212.75,
     "loja": "Amazon",
     "loja_id": "amazon",
@@ -2466,19 +2426,19 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T09:17-03:00"
+  "verificado": "2026-11-03T14:59-03:00"
  },
  "aetherspire": {
   "ofertas": [],
-  "verificado": "2026-11-03T11:10-03:00"
+  "verificado": "2026-11-03T14:59-03:00"
  },
  "after-the-empire": {
   "ofertas": [],
-  "verificado": "2026-11-03T09:44-03:00"
+  "verificado": "2026-11-03T14:59-03:00"
  },
  "aftermath": {
   "ofertas": [],
-  "verificado": "2026-11-03T09:58-03:00"
+  "verificado": "2026-11-03T14:59-03:00"
  },
  "age-of-galaxy-second-edition": {
   "ofertas": [
@@ -2493,91 +2453,80 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T10:53-03:00"
+  "verificado": "2026-11-03T14:59-03:00"
  },
  "age-of-industry": {
   "ofertas": [],
-  "verificado": "2026-11-03T08:57-03:00"
+  "verificado": "2026-11-03T14:59-03:00"
  },
  "age-of-steam": {
   "ofertas": [],
-  "verificado": "2026-11-03T09:13-03:00"
+  "verificado": "2026-11-03T14:59-03:00"
  },
  "age-of-steam-expansion-southern-us-western-us": {
   "ofertas": [],
-  "verificado": "2026-11-03T10:40-03:00"
+  "verificado": "2026-11-03T14:59-03:00"
  },
  "agra": {
   "ofertas": [],
-  "verificado": "2026-11-03T09:06-03:00"
+  "verificado": "2026-11-03T14:59-03:00"
  },
  "agricola": {
   "ofertas": [],
-  "verificado": "2026-11-03T09:12-03:00"
+  "verificado": "2026-11-03T14:59-03:00"
  },
  "agricola-all-creatures-big-and-small": {
   "ofertas": [],
-  "verificado": "2026-11-03T09:22-03:00"
+  "verificado": "2026-11-03T14:59-03:00"
  },
  "agricola-all-creatures-big-and-small-the-big-box": {
   "ofertas": [],
-  "verificado": "2026-11-03T09:16-03:00"
+  "verificado": "2026-11-03T14:59-03:00"
  },
  "agricola-art-sleeves": {
   "ofertas": [],
-  "verificado": "2026-11-03T09:45-03:00"
+  "verificado": "2026-11-03T14:59-03:00"
  },
  "agricola-artifex-deck": {
-  "ofertas": [
-   {
-    "atualizado": "2026-11-02T21:05:55.588+00:00",
-    "de": 156.65,
-    "loja": "Amazon",
-    "loja_id": "amazon",
-    "por": 156.65,
-    "tipo": "LINK",
-    "url": "https://www.amazon.com.br/dp/B0784KP7Y4",
-    "vendedor": null
-   }
-  ],
-  "verificado": "2026-11-03T09:18-03:00"
+  "ofertas": [],
+  "verificado": "2026-11-03T14:59-03:00"
  },
  "agricola-consul-dirigens-deck": {
   "ofertas": [],
-  "verificado": "2026-11-03T10:00-03:00"
+  "verificado": "2026-11-03T14:59-03:00"
  },
  "agricola-corbarius-deck": {
   "ofertas": [],
-  "verificado": "2026-11-03T09:31-03:00"
+  "verificado": "2026-11-03T14:59-03:00"
  },
  "agricola-dulcinaria-deck": {
   "ofertas": [],
-  "verificado": "2026-11-03T09:55-03:00"
+  "verificado": "2026-11-03T14:59-03:00"
  },
  "agricola-edicao-revisada": {
   "ofertas": [
    {
-    "atualizado": "2026-11-03T13:17:46.989+00:00",
-    "de": 369.9,
+    "atualizado": "2026-11-03T17:19:10.999+00:00",
+    "de": 479,
     "loja": "Amazon",
     "loja_id": "amazon",
-    "por": 369.9,
+    "por": 479,
     "tipo": "LINK",
     "url": "https://www.amazon.com.br/dp/B0BTK7ZQJN",
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T15:30:35.695+00:00",
-    "de": 369.9,
+    "atualizado": "2026-11-03T17:33:06.415+00:00",
+    "de": 479,
     "loja": "Mercado Livre",
     "loja_id": "mercadolivre",
-    "por": 369.9,
+    "por": 479,
     "tipo": "LINK",
     "url": "https://www.mercadolivre.com.br/p/MLB22531218",
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T16:20:15.26+00:00",
+    "atualizado": "2026-11-03T17:18:00.415+00:00",
     "de": 419.16,
     "loja": "TabuLoja",
     "loja_id": "tabuloja",
@@ -2587,7 +2536,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T16:32:36.069+00:00",
+    "atualizado": "2026-11-03T17:32:42.961+00:00",
     "de": 449.99,
     "loja": "Bravo Jogos",
     "loja_id": "bravojogos",
@@ -2597,7 +2546,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T16:45:33.842+00:00",
+    "atualizado": "2026-11-03T17:13:21.493+00:00",
     "de": 481.3,
     "loja": "Meca dos Jogos",
     "loja_id": "mecadosjogos",
@@ -2607,7 +2556,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T16:34:40.103+00:00",
+    "atualizado": "2026-11-03T17:34:46.369+00:00",
     "de": 474,
     "loja": "Caixinha Boardgames",
     "loja_id": "caixinhaboardgames",
@@ -2617,35 +2566,35 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T13:59-03:00"
+  "verificado": "2026-11-03T14:59-03:00"
  },
  "agricola-expansion-for-5-and-6-players": {
   "ofertas": [],
-  "verificado": "2026-11-03T09:18-03:00"
+  "verificado": "2026-11-03T14:59-03:00"
  },
  "agropolis": {
   "ofertas": [],
-  "verificado": "2026-11-03T09:57-03:00"
+  "verificado": "2026-11-03T14:59-03:00"
  },
  "air-land-and-sea-critters-at-war": {
   "ofertas": [
    {
-    "atualizado": "2026-11-02T21:18:32.604+00:00",
-    "de": 198.31,
+    "atualizado": "2026-11-03T09:18:41.433+00:00",
+    "de": 132.3,
     "loja": "Amazon",
     "loja_id": "amazon",
-    "por": 198.31,
+    "por": 132.3,
     "tipo": "LINK",
     "url": "https://www.amazon.com.br/dp/B09JDJP5BQ",
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T10:01-03:00"
+  "verificado": "2026-11-03T14:59-03:00"
  },
  "air-land-sea": {
   "ofertas": [
    {
-    "atualizado": "2026-11-03T01:02:15.983+00:00",
+    "atualizado": "2026-11-03T09:02:10.652+00:00",
     "de": 155.94,
     "loja": "Amazon",
     "loja_id": "amazon",
@@ -2655,12 +2604,12 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T09:25-03:00"
+  "verificado": "2026-11-03T14:59-03:00"
  },
  "airport-rush": {
   "ofertas": [
    {
-    "atualizado": "2026-11-03T04:20:11.82+00:00",
+    "atualizado": "2026-11-03T15:49:12.505+00:00",
     "de": 199,
     "loja": "Tubaleria",
     "loja_id": "tubaleria",
@@ -2670,7 +2619,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T04:18:05.809+00:00",
+    "atualizado": "2026-11-03T15:47:06.006+00:00",
     "de": 259.9,
     "loja": "Pittas Board Games",
     "loja_id": "pittasstore",
@@ -2680,7 +2629,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T04:02:10.235+00:00",
+    "atualizado": "2026-11-03T16:02:38.261+00:00",
     "de": 259.99,
     "loja": "Bravo Jogos",
     "loja_id": "bravojogos",
@@ -2690,7 +2639,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T04:19:29.131+00:00",
+    "atualizado": "2026-11-03T15:48:39.94+00:00",
     "de": 260,
     "loja": "Vem Pra Mesa Jogos",
     "loja_id": "vempramesajogos",
@@ -2700,7 +2649,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T10:02-03:00"
+  "verificado": "2026-11-03T14:59-03:00"
  },
  "akropolis": {
   "ofertas": [
@@ -2725,7 +2674,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T15:38:20.348+00:00",
+    "atualizado": "2026-11-03T16:41:23.606+00:00",
     "de": 235.48,
     "loja": "Facil Shopping",
     "loja_id": "facilshopping",
@@ -2735,7 +2684,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T15:46:20.122+00:00",
+    "atualizado": "2026-11-03T16:46:12.706+00:00",
     "de": 222,
     "loja": "Bota na Mesa",
     "loja_id": "botanamesa",
@@ -2745,7 +2694,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T15:31:41.967+00:00",
+    "atualizado": "2026-11-03T17:01:38.282+00:00",
     "de": 254.9,
     "loja": "Brechó Lúdico",
     "loja_id": "brecholudico",
@@ -2755,7 +2704,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T16:00:47.686+00:00",
+    "atualizado": "2026-11-03T17:00:46.935+00:00",
     "de": 259.79,
     "loja": "Alquimistas dos Jogos",
     "loja_id": "alquimistasdosjogos",
@@ -2765,16 +2714,16 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T13:59-03:00"
+  "verificado": "2026-11-03T14:59-03:00"
  },
  "akropolis-athena": {
   "ofertas": [],
-  "verificado": "2026-11-03T10:42-03:00"
+  "verificado": "2026-11-03T14:59-03:00"
  },
  "algae-inc": {
   "ofertas": [
    {
-    "atualizado": "2026-11-03T09:33:16.623+00:00",
+    "atualizado": "2026-11-03T13:03:44.607+00:00",
     "de": 534.99,
     "loja": "Cangaia Jogos",
     "loja_id": "cangaiajogos",
@@ -2784,7 +2733,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T09:30:48.636+00:00",
+    "atualizado": "2026-11-03T13:30:55.309+00:00",
     "de": 509,
     "loja": "Board Game Play Store",
     "loja_id": "boardgameplaystore",
@@ -2794,7 +2743,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T09:16:12.047+00:00",
+    "atualizado": "2026-11-03T13:17:20.503+00:00",
     "de": 549.9,
     "loja": "Pittas Board Games",
     "loja_id": "pittasstore",
@@ -2804,7 +2753,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T09:13:30.51+00:00",
+    "atualizado": "2026-11-03T13:13:30.269+00:00",
     "de": 577.6,
     "loja": "Meca dos Jogos",
     "loja_id": "mecadosjogos",
@@ -2814,7 +2763,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T09:33:38.97+00:00",
+    "atualizado": "2026-11-03T13:03:56.317+00:00",
     "de": 579,
     "loja": "Caixinha Boardgames",
     "loja_id": "caixinhaboardgames",
@@ -2824,7 +2773,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T09:31:32.387+00:00",
+    "atualizado": "2026-11-03T13:31:39.155+00:00",
     "de": 649.9,
     "loja": "Brechó Lúdico",
     "loja_id": "brecholudico",
@@ -2834,20 +2783,20 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T10:33-03:00"
+  "verificado": "2026-11-03T14:59-03:00"
  },
  "alhambra": {
   "ofertas": [],
-  "verificado": "2026-11-03T08:39-03:00"
+  "verificado": "2026-11-03T14:59-03:00"
  },
  "alhambra-the-magical-buildings": {
   "ofertas": [],
-  "verificado": "2026-11-03T08:59-03:00"
+  "verificado": "2026-11-03T14:59-03:00"
  },
  "alice-no-pais-dos-pesadelos": {
   "ofertas": [
    {
-    "atualizado": "2026-11-03T13:18:37.684+00:00",
+    "atualizado": "2026-11-03T17:18:34.227+00:00",
     "de": 59.9,
     "loja": "Toca do Tabuleiro",
     "loja_id": "tocadotabuleiro",
@@ -2857,19 +2806,24 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T10:57-03:00"
+  "verificado": "2026-11-03T14:59-03:00"
  },
  "alien-attack-usa": {
   "ofertas": [
    {
-    "atualizado": "2026-11-03T16:00:52.112+00:00",
+    "atualizado": "2026-11-03T16:51:11.235+00:00",
+    "de": 129.9,
+    "loja": "PlayEasy",
+    "loja_id": "playeasy",
+    "por": 120.81,
+    "tipo": "LINK",
+    "url": "https://www.playeasy.com.br/alien-attack-usa",
+    "vendedor": null
+   },
+   {
+    "atualizado": "2026-11-03T17:00:53.544+00:00",
     "de": 137.9,
     "loja": "Board Game Barato",
-    "loja_agora": {
-     "estoque": true,
-     "hora": "2026-11-03T14:37-03:00",
-     "preco": 124.11
-    },
     "loja_id": "boardgamebarato",
     "por": 124.11,
     "tipo": "LINK",
@@ -2877,14 +2831,9 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T16:04:46.889+00:00",
+    "atualizado": "2026-11-03T17:03:56.956+00:00",
     "de": 134,
     "loja": "Caixinha Boardgames",
-    "loja_agora": {
-     "estoque": true,
-     "hora": "2026-11-03T14:37-03:00",
-     "preco": 134.0
-    },
     "loja_id": "caixinhaboardgames",
     "por": 124.62,
     "tipo": "LINK",
@@ -2892,14 +2841,9 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T16:16:26.129+00:00",
+    "atualizado": "2026-11-03T17:13:09.147+00:00",
     "de": 145,
     "loja": "Masmorra",
-    "loja_agora": {
-     "estoque": true,
-     "hora": "2026-11-03T14:37-03:00",
-     "preco": 145.0
-    },
     "loja_id": "masmorra",
     "por": 130.5,
     "tipo": "LINK",
@@ -2907,7 +2851,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T16:09:54.547+00:00",
+    "atualizado": "2026-11-03T17:01:38.282+00:00",
     "de": 147.99,
     "loja": "Brechó Lúdico",
     "loja_id": "brecholudico",
@@ -2917,53 +2861,33 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T16:20:37.52+00:00",
+    "atualizado": "2026-11-03T16:52:36.436+00:00",
     "de": 148.99,
     "loja": "Taverna Real",
-    "loja_agora": {
-     "estoque": true,
-     "hora": "2026-11-03T14:37-03:00",
-     "preco": 148.99
-    },
     "loja_id": "tavernareal",
     "por": 134.09,
     "tipo": "LINK",
     "url": "https://www.tavernareal.com/tabuleiro/alien-attack-usa",
     "vendedor": null
-   },
-   {
-    "atualizado": "2026-11-03T16:20:15.26+00:00",
-    "de": 149,
-    "loja": "TabuLoja",
-    "loja_agora": {
-     "estoque": true,
-     "hora": "2026-11-03T14:37-03:00",
-     "preco": 149.0
-    },
-    "loja_id": "tabuloja",
-    "por": 134.1,
-    "tipo": "LINK",
-    "url": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/alien-attack-usa",
-    "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T13:58-03:00"
+  "verificado": "2026-11-03T14:59-03:00"
  },
  "alien-fate-of-the-nostromo": {
   "ofertas": [],
-  "verificado": "2026-11-03T10:05-03:00"
+  "verificado": "2026-11-03T14:59-03:00"
  },
  "alien-vs-predator-the-hunt-begins-second-edition": {
   "ofertas": [],
-  "verificado": "2026-11-03T09:19-03:00"
+  "verificado": "2026-11-03T14:59-03:00"
  },
  "aliens": {
   "ofertas": [],
-  "verificado": "2026-11-03T09:22-03:00"
+  "verificado": "2026-11-03T14:59-03:00"
  },
  "aliens-another-glorious-day-in-the-corps": {
   "ofertas": [],
-  "verificado": "2026-11-03T09:35-03:00"
+  "verificado": "2026-11-03T14:59-03:00"
  },
  "aliens-another-glorious-day-in-the-corps-get-away-from-her-you-bh": {
   "ofertas": [
@@ -2978,7 +2902,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T10:40-03:00"
+  "verificado": "2026-11-03T14:59-03:00"
  },
  "aliens-another-glorious-day-in-the-corps-ultimate-badasses": {
   "ofertas": [
@@ -2993,16 +2917,16 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T10:40-03:00"
+  "verificado": "2026-11-03T14:59-03:00"
  },
  "aliens-another-glorious-day-in-the-corps-were-in-the-pipe-five-by-five": {
   "ofertas": [],
-  "verificado": "2026-11-03T10:40-03:00"
+  "verificado": "2026-11-03T14:59-03:00"
  },
  "all-aboard": {
   "ofertas": [
    {
-    "atualizado": "2026-11-03T09:06:27.611+00:00",
+    "atualizado": "2026-11-03T13:09:23.924+00:00",
     "de": 69.9,
     "loja": "Amazon",
     "loja_id": "amazon",
@@ -3012,7 +2936,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T11:30:36.874+00:00",
+    "atualizado": "2026-11-03T15:30:36.606+00:00",
     "de": 99.9,
     "loja": "Mercado Livre",
     "loja_id": "mercadolivre",
@@ -3022,7 +2946,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T11:34:53.14+00:00",
+    "atualizado": "2026-11-03T16:04:46.889+00:00",
     "de": 54,
     "loja": "Caixinha Boardgames",
     "loja_id": "caixinhaboardgames",
@@ -3032,7 +2956,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T11:36:09.941+00:00",
+    "atualizado": "2026-11-03T16:06:03.908+00:00",
     "de": 54.99,
     "loja": "Cangaia Jogos",
     "loja_id": "cangaiajogos",
@@ -3042,7 +2966,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T11:39:11.802+00:00",
+    "atualizado": "2026-11-03T16:09:54.547+00:00",
     "de": 56.99,
     "loja": "Brechó Lúdico",
     "loja_id": "brecholudico",
@@ -3052,22 +2976,22 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T11:30:49.27+00:00",
-    "de": 69.79,
-    "loja": "Alquimistas dos Jogos",
-    "loja_id": "alquimistasdosjogos",
-    "por": 62.81,
+    "atualizado": "2026-11-03T16:20:15.26+00:00",
+    "de": 66.36,
+    "loja": "TabuLoja",
+    "loja_id": "tabuloja",
+    "por": 59.72,
     "tipo": "LINK",
-    "url": "https://www.alquimistasdosjogos.com.br/jogos/all-aboard",
+    "url": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/all-aboard",
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T10:43-03:00"
+  "verificado": "2026-11-03T14:59-03:00"
  },
  "allumbra-o-duelo": {
   "ofertas": [
    {
-    "atualizado": "2026-11-02T23:47:47.661+00:00",
+    "atualizado": "2026-11-03T11:50:08.934+00:00",
     "de": 69,
     "loja": "Tubaleria",
     "loja_id": "tubaleria",
@@ -3077,7 +3001,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-02T23:45:36.395+00:00",
+    "atualizado": "2026-11-03T11:47:56.66+00:00",
     "de": 84.9,
     "loja": "PlayEasy",
     "loja_id": "playeasy",
@@ -3087,7 +3011,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-02T23:44:41.075+00:00",
+    "atualizado": "2026-11-03T11:47:06.19+00:00",
     "de": 89.9,
     "loja": "Paladins Games",
     "loja_id": "paladinsgames",
@@ -3097,7 +3021,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-02T23:31:50.434+00:00",
+    "atualizado": "2026-11-03T12:01:37.55+00:00",
     "de": 129.99,
     "loja": "Brechó Lúdico",
     "loja_id": "brecholudico",
@@ -3107,12 +3031,12 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T09:07-03:00"
+  "verificado": "2026-11-03T14:59-03:00"
  },
  "alma-mater": {
   "ofertas": [
    {
-    "atualizado": "2026-11-03T09:00:55.263+00:00",
+    "atualizado": "2026-11-03T12:00:53.172+00:00",
     "de": 260,
     "loja": "Board Game Play Store",
     "loja_id": "boardgameplaystore",
@@ -3122,7 +3046,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T09:01:44.241+00:00",
+    "atualizado": "2026-11-03T12:01:37.55+00:00",
     "de": 329.99,
     "loja": "Brechó Lúdico",
     "loja_id": "brecholudico",
@@ -3132,7 +3056,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T09:24-03:00"
+  "verificado": "2026-11-03T14:59-03:00"
  },
  "alquimistas": {
   "ofertas": [
@@ -3157,7 +3081,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T10:39:18.515+00:00",
+    "atualizado": "2026-11-03T11:43:05.909+00:00",
     "de": 537,
     "loja": "Happy Nerd",
     "loja_id": "happynerd",
@@ -3167,7 +3091,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T10:34:42.079+00:00",
+    "atualizado": "2026-11-03T11:37:21.26+00:00",
     "de": 549.9,
     "loja": "Dalaran Games",
     "loja_id": "dalaran",
@@ -3177,16 +3101,16 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T08:53-03:00"
+  "verificado": "2026-11-03T14:59-03:00"
  },
  "alquimistas-o-golem-do-rei": {
   "ofertas": [],
-  "verificado": "2026-11-03T08:52-03:00"
+  "verificado": "2026-11-03T14:59-03:00"
  },
  "altered": {
   "ofertas": [
    {
-    "atualizado": "2026-11-02T21:11:35.495+00:00",
+    "atualizado": "2026-11-03T13:11:00.503+00:00",
     "de": 114.89,
     "loja": "Amazon",
     "loja_id": "amazon",
@@ -3196,7 +3120,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-02T22:34:30.705+00:00",
+    "atualizado": "2026-11-03T13:03:56.317+00:00",
     "de": 19,
     "loja": "Caixinha Boardgames",
     "loja_id": "caixinhaboardgames",
@@ -3206,7 +3130,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-02T22:16:21.117+00:00",
+    "atualizado": "2026-11-03T13:17:57.095+00:00",
     "de": 19.9,
     "loja": "ShopDG",
     "loja_id": "shopdg",
@@ -3216,7 +3140,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-02T22:14:20.211+00:00",
+    "atualizado": "2026-11-03T13:16:05.623+00:00",
     "de": 24.9,
     "loja": "Paladins Games",
     "loja_id": "paladinsgames",
@@ -3226,7 +3150,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-02T22:39:10.798+00:00",
+    "atualizado": "2026-11-03T13:01:40.694+00:00",
     "de": 29.99,
     "loja": "Brechó Lúdico",
     "loja_id": "brecholudico",
@@ -3236,7 +3160,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-02T22:13:53.715+00:00",
+    "atualizado": "2026-11-03T13:15:41.797+00:00",
     "de": 29.9,
     "loja": "Odisseia Jogos",
     "loja_id": "odisseiajogos",
@@ -3246,12 +3170,12 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T10:19-03:00"
+  "verificado": "2026-11-03T14:59-03:00"
  },
  "altered-trial-by-frost": {
   "ofertas": [
    {
-    "atualizado": "2026-11-02T21:07:04.266+00:00",
+    "atualizado": "2026-11-03T13:07:19.29+00:00",
     "de": 799.9,
     "loja": "Amazon",
     "loja_id": "amazon",
@@ -3261,7 +3185,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-02T21:05:16.995+00:00",
+    "atualizado": "2026-11-03T13:12:38.714+00:00",
     "de": 1218.89,
     "loja": "Amazon",
     "loja_id": "amazon",
@@ -3271,7 +3195,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-02T21:34:32.924+00:00",
+    "atualizado": "2026-11-03T13:33:55.102+00:00",
     "de": 19,
     "loja": "Caixinha Boardgames",
     "loja_id": "caixinhaboardgames",
@@ -3281,7 +3205,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-02T21:36:41.503+00:00",
+    "atualizado": "2026-11-03T13:36:13.88+00:00",
     "de": 19.9,
     "loja": "Frodos BG",
     "loja_id": "frodosbg",
@@ -3291,7 +3215,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-02T21:45:45.475+00:00",
+    "atualizado": "2026-11-03T13:16:05.623+00:00",
     "de": 24.9,
     "loja": "Paladins Games",
     "loja_id": "paladinsgames",
@@ -3301,7 +3225,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-02T21:45:31.367+00:00",
+    "atualizado": "2026-11-03T13:15:41.797+00:00",
     "de": 29.9,
     "loja": "Odisseia Jogos",
     "loja_id": "odisseiajogos",
@@ -3311,12 +3235,12 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T10:33-03:00"
+  "verificado": "2026-11-03T14:59-03:00"
  },
  "altered-whispers-from-the-maze": {
   "ofertas": [
    {
-    "atualizado": "2026-11-02T23:34:00.511+00:00",
+    "atualizado": "2026-11-03T13:33:55.102+00:00",
     "de": 19,
     "loja": "Caixinha Boardgames",
     "loja_id": "caixinhaboardgames",
@@ -3326,7 +3250,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-02T23:44:28.748+00:00",
+    "atualizado": "2026-11-03T13:15:41.797+00:00",
     "de": 35,
     "loja": "Odisseia Jogos",
     "loja_id": "odisseiajogos",
@@ -3336,7 +3260,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T00:02:34.56+00:00",
+    "atualizado": "2026-11-03T13:32:34.605+00:00",
     "de": 599,
     "loja": "Bravo Jogos",
     "loja_id": "bravojogos",
@@ -3346,7 +3270,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-02T23:31:50.434+00:00",
+    "atualizado": "2026-11-03T13:31:39.155+00:00",
     "de": 1079.99,
     "loja": "Brechó Lúdico",
     "loja_id": "brecholudico",
@@ -3356,7 +3280,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-02T23:44:28.748+00:00",
+    "atualizado": "2026-11-03T13:15:41.797+00:00",
     "de": 1049,
     "loja": "Odisseia Jogos",
     "loja_id": "odisseiajogos",
@@ -3366,16 +3290,16 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T10:41-03:00"
+  "verificado": "2026-11-03T14:59-03:00"
  },
  "altiplano": {
   "ofertas": [],
-  "verificado": "2026-11-03T08:39-03:00"
+  "verificado": "2026-11-03T15:00-03:00"
  },
  "alubari-a-nice-cup-of-tea": {
   "ofertas": [
    {
-    "atualizado": "2026-11-03T09:07:54.823+00:00",
+    "atualizado": "2026-11-03T13:10:40.339+00:00",
     "de": 349.99,
     "loja": "Amazon",
     "loja_id": "amazon",
@@ -3385,7 +3309,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T11:03:13.426+00:00",
+    "atualizado": "2026-11-03T13:03:26.536+00:00",
     "de": 199,
     "loja": "CaldeirãoJogos",
     "loja_id": "caldeiraojogos",
@@ -3395,7 +3319,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T11:03:53.591+00:00",
+    "atualizado": "2026-11-03T13:03:56.317+00:00",
     "de": 219,
     "loja": "Caixinha Boardgames",
     "loja_id": "caixinhaboardgames",
@@ -3405,7 +3329,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T11:14:21.655+00:00",
+    "atualizado": "2026-11-03T13:16:05.623+00:00",
     "de": 219.9,
     "loja": "Paladins Games",
     "loja_id": "paladinsgames",
@@ -3415,7 +3339,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T11:11:39.093+00:00",
+    "atualizado": "2026-11-03T13:12:18.799+00:00",
     "de": 219.9,
     "loja": "Livtoys",
     "loja_id": "livtoys",
@@ -3425,7 +3349,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T11:04:38.252+00:00",
+    "atualizado": "2026-11-03T13:04:53.353+00:00",
     "de": 249.9,
     "loja": "Dalaran Games",
     "loja_id": "dalaran",
@@ -3435,7 +3359,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T09:13-03:00"
+  "verificado": "2026-11-03T15:00-03:00"
  },
  "amalfi-renaissance": {
   "ofertas": [
@@ -3450,7 +3374,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T13:34:07.749+00:00",
+    "atualizado": "2026-11-03T16:36:14.988+00:00",
     "de": 599,
     "loja": "Capivara Jogos",
     "loja_id": "capivarajogos",
@@ -3460,12 +3384,12 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T13:59-03:00"
+  "verificado": "2026-11-03T15:00-03:00"
  },
  "amazoom": {
   "ofertas": [
    {
-    "atualizado": "2026-11-03T10:42:59.026+00:00",
+    "atualizado": "2026-11-03T14:14:11.029+00:00",
     "de": 45,
     "loja": "Modo Avião Board Games",
     "loja_id": "modoaviaobg",
@@ -3475,7 +3399,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T10:41:28.051+00:00",
+    "atualizado": "2026-11-03T14:12:13.209+00:00",
     "de": 49,
     "loja": "Livtoys",
     "loja_id": "livtoys",
@@ -3485,7 +3409,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T10:45:40.4+00:00",
+    "atualizado": "2026-11-03T14:17:19.424+00:00",
     "de": 49.9,
     "loja": "Pittas Board Games",
     "loja_id": "pittasstore",
@@ -3495,7 +3419,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T10:33:37.355+00:00",
+    "atualizado": "2026-11-03T14:35:57.933+00:00",
     "de": 52.99,
     "loja": "Cangaia Jogos",
     "loja_id": "cangaiajogos",
@@ -3505,7 +3429,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T10:45:04.664+00:00",
+    "atualizado": "2026-11-03T14:16:47.185+00:00",
     "de": 54.8,
     "loja": "Pira no Boardgame",
     "loja_id": "piranoboardgame",
@@ -3515,7 +3439,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T10:45:59.608+00:00",
+    "atualizado": "2026-11-03T14:17:50.164+00:00",
     "de": 54.9,
     "loja": "Rio de Meepeiro Boardgames",
     "loja_id": "riodemeepeiro",
@@ -3525,16 +3449,16 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T10:36-03:00"
+  "verificado": "2026-11-03T15:00-03:00"
  },
  "among-cultists-a-social-deduction-thriller": {
   "ofertas": [],
-  "verificado": "2026-11-03T10:10-03:00"
+  "verificado": "2026-11-03T15:00-03:00"
  },
  "among-the-stars-revival": {
   "ofertas": [
    {
-    "atualizado": "2026-11-03T11:16:23.808+00:00",
+    "atualizado": "2026-11-03T17:18:16.719+00:00",
     "de": 199.99,
     "loja": "Tio Gêra",
     "loja_id": "tiogera",
@@ -3544,20 +3468,20 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T08:39-03:00"
+  "verificado": "2026-11-03T15:00-03:00"
  },
  "amsterdam": {
   "ofertas": [],
-  "verificado": "2026-11-03T09:29-03:00"
+  "verificado": "2026-11-03T15:00-03:00"
  },
  "amun-re": {
   "ofertas": [],
-  "verificado": "2026-11-03T08:39-03:00"
+  "verificado": "2026-11-03T15:00-03:00"
  },
  "anachrony-conjunto-de-miniaturas-de-exoesqueleto": {
   "ofertas": [
    {
-    "atualizado": "2026-11-03T01:00:53.74+00:00",
+    "atualizado": "2026-11-03T09:01:11.441+00:00",
     "de": 399.9,
     "loja": "Amazon",
     "loja_id": "amazon",
@@ -3567,7 +3491,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T03:04:52.117+00:00",
+    "atualizado": "2026-11-03T12:04:29.462+00:00",
     "de": 329.9,
     "loja": "Dalaran Games",
     "loja_id": "dalaran",
@@ -3577,7 +3501,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T03:10:30.259+00:00",
+    "atualizado": "2026-11-03T12:10:29.456+00:00",
     "de": 329.9,
     "loja": "JOGASAMPA",
     "loja_id": "jogasampa",
@@ -3587,12 +3511,12 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T09:11-03:00"
+  "verificado": "2026-11-03T15:00-03:00"
  },
  "anachrony-edicao-essencial": {
   "ofertas": [
    {
-    "atualizado": "2026-11-03T13:06:21.249+00:00",
+    "atualizado": "2026-11-03T17:03:06.73+00:00",
     "de": 348.9,
     "loja": "Amazon",
     "loja_id": "amazon",
@@ -3602,7 +3526,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T15:30:33.312+00:00",
+    "atualizado": "2026-11-03T17:33:03.03+00:00",
     "de": 519.9,
     "loja": "Mercado Livre",
     "loja_id": "mercadolivre",
@@ -3612,7 +3536,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T16:41:23.606+00:00",
+    "atualizado": "2026-11-03T17:08:24.94+00:00",
     "de": 439.8,
     "loja": "Facil Shopping",
     "loja_id": "facilshopping",
@@ -3622,7 +3546,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T16:19:31.375+00:00",
+    "atualizado": "2026-11-03T17:17:05.07+00:00",
     "de": 439.9,
     "loja": "Pittas Board Games",
     "loja_id": "pittasstore",
@@ -3632,7 +3556,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T16:37:07.478+00:00",
+    "atualizado": "2026-11-03T17:37:21.294+00:00",
     "de": 449.9,
     "loja": "Dalaran Games",
     "loja_id": "dalaran",
@@ -3642,7 +3566,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T16:14:14.891+00:00",
+    "atualizado": "2026-11-03T17:10:36.791+00:00",
     "de": 449.9,
     "loja": "JOGASAMPA",
     "loja_id": "jogasampa",
@@ -3652,7 +3576,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T13:59-03:00"
+  "verificado": "2026-11-03T15:00-03:00"
  },
  "anachrony-expansao-classica": {
   "ofertas": [
@@ -3677,7 +3601,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T12:11:21.885+00:00",
+    "atualizado": "2026-11-03T12:41:57.217+00:00",
     "de": 197.9,
     "loja": "Leão Livros",
     "loja_id": "leaolivros",
@@ -3687,7 +3611,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T12:08:05.474+00:00",
+    "atualizado": "2026-11-03T12:38:07.664+00:00",
     "de": 198.9,
     "loja": "Facil Shopping",
     "loja_id": "facilshopping",
@@ -3697,7 +3621,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T12:01:37.55+00:00",
+    "atualizado": "2026-11-03T12:31:39.827+00:00",
     "de": 259.9,
     "loja": "Brechó Lúdico",
     "loja_id": "brecholudico",
@@ -3707,7 +3631,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T11:47:47.159+00:00",
+    "atualizado": "2026-11-03T12:46:32.05+00:00",
     "de": 299.9,
     "loja": "Overrun Geek Store",
     "loja_id": "overrun",
@@ -3717,16 +3641,26 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T09:55-03:00"
+  "verificado": "2026-11-03T15:00-03:00"
  },
  "anachrony-future-imperfect": {
   "ofertas": [],
-  "verificado": "2026-11-03T09:48-03:00"
+  "verificado": "2026-11-03T15:00-03:00"
  },
  "anaphylaxis": {
   "ofertas": [
    {
-    "atualizado": "2026-11-03T07:42:15.857+00:00",
+    "atualizado": "2026-11-03T15:20:20.5+00:00",
+    "de": 29.32,
+    "loja": "TabuLoja",
+    "loja_id": "tabuloja",
+    "por": 26.39,
+    "tipo": "LINK",
+    "url": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/anaphylaxis",
+    "vendedor": null
+   },
+   {
+    "atualizado": "2026-11-03T15:17:15.065+00:00",
     "de": 34.9,
     "loja": "Ludostation",
     "loja_id": "ludostation",
@@ -3736,17 +3670,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T07:45:47.67+00:00",
-    "de": 34.9,
-    "loja": "TabuLoja",
-    "loja_id": "tabuloja",
-    "por": 31.41,
-    "tipo": "LINK",
-    "url": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/anaphylaxis",
-    "vendedor": null
-   },
-   {
-    "atualizado": "2026-11-03T07:42:30.974+00:00",
+    "atualizado": "2026-11-03T15:16:37.009+00:00",
     "de": 34.9,
     "loja": "Masmorra",
     "loja_id": "masmorra",
@@ -3756,7 +3680,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T08:01:36.579+00:00",
+    "atualizado": "2026-11-03T15:06:55.532+00:00",
     "de": 34.9,
     "loja": "Brechó Lúdico",
     "loja_id": "brecholudico",
@@ -3766,7 +3690,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T07:44:59.414+00:00",
+    "atualizado": "2026-11-03T15:19:28.162+00:00",
     "de": 34.8,
     "loja": "PlayEasy",
     "loja_id": "playeasy",
@@ -3776,7 +3700,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T07:44:42.997+00:00",
+    "atualizado": "2026-11-03T15:19:09.202+00:00",
     "de": 34.88,
     "loja": "Place Games",
     "loja_id": "placegames",
@@ -3786,12 +3710,12 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T10:54-03:00"
+  "verificado": "2026-11-03T15:00-03:00"
  },
  "ancient-civilizations-of-the-middle-east": {
   "ofertas": [
    {
-    "atualizado": "2026-11-02T21:05:36.225+00:00",
+    "atualizado": "2026-11-03T13:04:53.469+00:00",
     "de": 752.05,
     "loja": "Amazon",
     "loja_id": "amazon",
@@ -3801,12 +3725,12 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T10:23-03:00"
+  "verificado": "2026-11-03T15:00-03:00"
  },
  "ancient-knowledge": {
   "ofertas": [
    {
-    "atualizado": "2026-11-03T09:12:25.035+00:00",
+    "atualizado": "2026-11-03T13:13:47.039+00:00",
     "de": 363.46,
     "loja": "Amazon",
     "loja_id": "amazon",
@@ -3816,12 +3740,12 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T10:22-03:00"
+  "verificado": "2026-11-03T15:00-03:00"
  },
  "andor-junior": {
   "ofertas": [
    {
-    "atualizado": "2026-11-03T11:30:33.297+00:00",
+    "atualizado": "2026-11-03T15:30:32.56+00:00",
     "de": 400,
     "loja": "Mercado Livre",
     "loja_id": "mercadolivre",
@@ -3831,16 +3755,16 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T09:34-03:00"
+  "verificado": "2026-11-03T15:00-03:00"
  },
  "android-netrunner": {
   "ofertas": [],
-  "verificado": "2026-11-03T09:12-03:00"
+  "verificado": "2026-11-03T15:00-03:00"
  },
  "android-netrunner-terminal-directive": {
   "ofertas": [
    {
-    "atualizado": "2026-11-02T17:29:42.309+00:00",
+    "atualizado": "2026-11-03T13:29:32.098+00:00",
     "de": 840.39,
     "loja": "Amazon",
     "loja_id": "amazon",
@@ -3850,11 +3774,11 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T09:14-03:00"
+  "verificado": "2026-11-03T15:00-03:00"
  },
  "android-netrunner-the-spaces-between": {
   "ofertas": [],
-  "verificado": "2026-11-03T09:12-03:00"
+  "verificado": "2026-11-03T15:00-03:00"
  },
  "andromedas-edge": {
   "ofertas": [
@@ -3889,7 +3813,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T16:41:23.606+00:00",
+    "atualizado": "2026-11-03T17:08:24.94+00:00",
     "de": 519.9,
     "loja": "Facil Shopping",
     "loja_id": "facilshopping",
@@ -3909,7 +3833,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T16:35:57.407+00:00",
+    "atualizado": "2026-11-03T17:03:49.486+00:00",
     "de": 559.99,
     "loja": "Cangaia Jogos",
     "loja_id": "cangaiajogos",
@@ -3919,11 +3843,11 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T13:59-03:00"
+  "verificado": "2026-11-03T15:00-03:00"
  },
  "andromedas-edge-exotic-matter-promo-kit": {
   "ofertas": [],
-  "verificado": "2026-11-03T10:48-03:00"
+  "verificado": "2026-11-03T15:00-03:00"
  },
  "angel-fury": {
   "ofertas": [
@@ -3938,7 +3862,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T11:34:53.14+00:00",
+    "atualizado": "2026-11-03T13:03:56.317+00:00",
     "de": 649,
     "loja": "Caixinha Boardgames",
     "loja_id": "caixinhaboardgames",
@@ -3948,7 +3872,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T12:02:04.159+00:00",
+    "atualizado": "2026-11-03T13:02:32.986+00:00",
     "de": 699.9,
     "loja": "Bravo Jogos",
     "loja_id": "bravojogos",
@@ -3958,16 +3882,16 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T10:07-03:00"
+  "verificado": "2026-11-03T15:00-03:00"
  },
  "ankh-deuses-do-egito": {
   "ofertas": [],
-  "verificado": "2026-11-03T09:23-03:00"
+  "verificado": "2026-11-03T15:00-03:00"
  },
  "ankh-deuses-do-egito-farao": {
   "ofertas": [
    {
-    "atualizado": "2026-11-03T07:30:31.91+00:00",
+    "atualizado": "2026-11-03T11:30:34.026+00:00",
     "de": 686.9,
     "loja": "Mercado Livre",
     "loja_id": "mercadolivre",
@@ -3977,7 +3901,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T10:32:31.899+00:00",
+    "atualizado": "2026-11-03T13:02:32.986+00:00",
     "de": 379.9,
     "loja": "Bravo Jogos",
     "loja_id": "bravojogos",
@@ -3987,12 +3911,12 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T10:06-03:00"
+  "verificado": "2026-11-03T15:00-03:00"
  },
  "ankh-gods-of-egypt-guardians-set": {
   "ofertas": [
    {
-    "atualizado": "2026-11-03T05:19:27.16+00:00",
+    "atualizado": "2026-11-03T09:19:59.216+00:00",
     "de": 440.54,
     "loja": "Amazon",
     "loja_id": "amazon",
@@ -4002,15 +3926,15 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T10:07-03:00"
+  "verificado": "2026-11-03T15:00-03:00"
  },
  "ankh-gods-of-egypt-pantheon": {
   "ofertas": [],
-  "verificado": "2026-11-03T10:05-03:00"
+  "verificado": "2026-11-03T15:00-03:00"
  },
  "anno-domini-1666": {
   "ofertas": [],
-  "verificado": "2026-11-03T11:10-03:00"
+  "verificado": "2026-11-03T15:00-03:00"
  },
  "antiques": {
   "ofertas": [
@@ -4025,7 +3949,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T14:16:47.185+00:00",
+    "atualizado": "2026-11-03T16:50:10.704+00:00",
     "de": 140,
     "loja": "Pira no Boardgame",
     "loja_id": "piranoboardgame",
@@ -4035,17 +3959,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T14:18:08.816+00:00",
-    "de": 159,
-    "loja": "TabuLoja",
-    "loja_id": "tabuloja",
-    "por": 143.1,
-    "tipo": "LINK",
-    "url": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/antiques",
-    "vendedor": null
-   },
-   {
-    "atualizado": "2026-11-03T14:01:39.706+00:00",
+    "atualizado": "2026-11-03T16:37:57.468+00:00",
     "de": 166.99,
     "loja": "Brechó Lúdico",
     "loja_id": "brecholudico",
@@ -4055,7 +3969,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T14:00:47.672+00:00",
+    "atualizado": "2026-11-03T17:00:46.935+00:00",
     "de": 189.79,
     "loja": "Alquimistas dos Jogos",
     "loja_id": "alquimistasdosjogos",
@@ -4065,7 +3979,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T14:13:16.169+00:00",
+    "atualizado": "2026-11-03T16:45:16.114+00:00",
     "de": 189.9,
     "loja": "Masmorra",
     "loja_id": "masmorra",
@@ -4073,37 +3987,47 @@
     "tipo": "LINK",
     "url": "https://www.masmorra.com.br/produtos/atb95432",
     "vendedor": null
+   },
+   {
+    "atualizado": "2026-11-03T16:46:11.365+00:00",
+    "de": 199.99,
+    "loja": "Ludostation",
+    "loja_id": "ludostation",
+    "por": 179.99,
+    "tipo": "LINK",
+    "url": "https://ludostation.com.br/produtos/antiques-promo-xm4kx/",
+    "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T14:00-03:00"
+  "verificado": "2026-11-03T15:00-03:00"
  },
  "antiques-ghost-show": {
   "ofertas": [
    {
-    "atualizado": "2026-11-03T01:31:24.273+00:00",
-    "de": 469.62,
+    "atualizado": "2026-11-03T13:30:10.551+00:00",
+    "de": 467.42,
     "loja": "Amazon",
     "loja_id": "amazon",
-    "por": 469.62,
+    "por": 467.42,
     "tipo": "LINK",
     "url": "https://www.amazon.com.br/dp/B0F76MD5HZ",
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T10:47-03:00"
+  "verificado": "2026-11-03T15:00-03:00"
  },
  "antiquity": {
   "ofertas": [],
-  "verificado": "2026-11-03T08:57-03:00"
+  "verificado": "2026-11-03T15:00-03:00"
  },
  "apex-k-truck-racer": {
   "ofertas": [],
-  "verificado": "2026-11-03T09:39-03:00"
+  "verificado": "2026-11-03T15:00-03:00"
  },
  "apiary": {
   "ofertas": [
    {
-    "atualizado": "2026-11-03T07:30:30.474+00:00",
+    "atualizado": "2026-11-03T17:32:58.596+00:00",
     "de": 399,
     "loja": "Mercado Livre",
     "loja_id": "mercadolivre",
@@ -4113,7 +4037,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T09:10:00.963+00:00",
+    "atualizado": "2026-11-03T17:10:22.593+00:00",
     "de": 329.9,
     "loja": "Javali Jogos",
     "loja_id": "javalijogos",
@@ -4123,7 +4047,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T09:00:48.319+00:00",
+    "atualizado": "2026-11-03T17:30:49.035+00:00",
     "de": 349.79,
     "loja": "Alquimistas dos Jogos",
     "loja_id": "alquimistasdosjogos",
@@ -4133,7 +4057,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T09:13:08.28+00:00",
+    "atualizado": "2026-11-03T17:14:09.186+00:00",
     "de": 349.99,
     "loja": "Ludostation",
     "loja_id": "ludostation",
@@ -4143,7 +4067,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T09:03:47.499+00:00",
+    "atualizado": "2026-11-03T17:36:04.226+00:00",
     "de": 349.99,
     "loja": "Cangaia Jogos",
     "loja_id": "cangaiajogos",
@@ -4153,7 +4077,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T09:16:12.047+00:00",
+    "atualizado": "2026-11-03T17:17:05.07+00:00",
     "de": 379.9,
     "loja": "Pittas Board Games",
     "loja_id": "pittasstore",
@@ -4163,12 +4087,12 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T10:18-03:00"
+  "verificado": "2026-11-03T15:00-03:00"
  },
  "aqua-biodiversity-in-the-oceans": {
   "ofertas": [
    {
-    "atualizado": "2026-11-03T16:18:54.901+00:00",
+    "atualizado": "2026-11-03T16:50:10.704+00:00",
     "de": 170,
     "loja": "Pira no Boardgame",
     "loja_id": "piranoboardgame",
@@ -4178,7 +4102,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T16:34:40.103+00:00",
+    "atualizado": "2026-11-03T17:03:56.956+00:00",
     "de": 169,
     "loja": "Caixinha Boardgames",
     "loja_id": "caixinhaboardgames",
@@ -4188,7 +4112,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T16:37:57.468+00:00",
+    "atualizado": "2026-11-03T17:01:38.282+00:00",
     "de": 178.99,
     "loja": "Brechó Lúdico",
     "loja_id": "brecholudico",
@@ -4198,7 +4122,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T16:17:14.034+00:00",
+    "atualizado": "2026-11-03T16:46:11.365+00:00",
     "de": 185.9,
     "loja": "Ludostation",
     "loja_id": "ludostation",
@@ -4208,7 +4132,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T16:30:43.118+00:00",
+    "atualizado": "2026-11-03T17:00:46.935+00:00",
     "de": 189.79,
     "loja": "Alquimistas dos Jogos",
     "loja_id": "alquimistasdosjogos",
@@ -4228,7 +4152,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T14:00-03:00"
+  "verificado": "2026-11-03T15:00-03:00"
  },
  "aquaria": {
   "ofertas": [
@@ -4253,7 +4177,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T13:16:38.064+00:00",
+    "atualizado": "2026-11-03T14:16:47.185+00:00",
     "de": 315,
     "loja": "Pira no Boardgame",
     "loja_id": "piranoboardgame",
@@ -4263,7 +4187,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T13:12:18.799+00:00",
+    "atualizado": "2026-11-03T14:12:13.209+00:00",
     "de": 319,
     "loja": "Livtoys",
     "loja_id": "livtoys",
@@ -4273,7 +4197,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T13:33:55.102+00:00",
+    "atualizado": "2026-11-03T14:03:47.392+00:00",
     "de": 329,
     "loja": "Caixinha Boardgames",
     "loja_id": "caixinhaboardgames",
@@ -4283,7 +4207,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T13:10:35.818+00:00",
+    "atualizado": "2026-11-03T14:10:30.009+00:00",
     "de": 329.9,
     "loja": "Javali Jogos",
     "loja_id": "javalijogos",
@@ -4293,24 +4217,34 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T10:40-03:00"
+  "verificado": "2026-11-03T15:00-03:00"
  },
  "aquarium": {
   "ofertas": [],
-  "verificado": "2026-11-03T08:39-03:00"
+  "verificado": "2026-11-03T15:00-03:00"
  },
  "aquatica": {
   "ofertas": [],
-  "verificado": "2026-11-03T09:26-03:00"
+  "verificado": "2026-11-03T15:00-03:00"
  },
  "arborea": {
   "ofertas": [],
-  "verificado": "2026-11-03T10:19-03:00"
+  "verificado": "2026-11-03T15:00-03:00"
  },
  "arboretum": {
   "ofertas": [
    {
-    "atualizado": "2026-11-03T11:32:45.529+00:00",
+    "atualizado": "2026-11-03T17:18:00.415+00:00",
+    "de": 77.77,
+    "loja": "TabuLoja",
+    "loja_id": "tabuloja",
+    "por": 69.99,
+    "tipo": "LINK",
+    "url": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/arboretum",
+    "vendedor": null
+   },
+   {
+    "atualizado": "2026-11-03T17:32:42.961+00:00",
     "de": 119.9,
     "loja": "Bravo Jogos",
     "loja_id": "bravojogos",
@@ -4318,24 +4252,14 @@
     "tipo": "LINK",
     "url": "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/arboretum-p",
     "vendedor": null
-   },
-   {
-    "atualizado": "2026-11-03T11:48:50.074+00:00",
-    "de": 129.9,
-    "loja": "TabuLoja",
-    "loja_id": "tabuloja",
-    "por": 116.91,
-    "tipo": "LINK",
-    "url": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/arboretum",
-    "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T09:13-03:00"
+  "verificado": "2026-11-03T15:00-03:00"
  },
  "arcadia-quest": {
   "ofertas": [
    {
-    "atualizado": "2026-11-03T07:30:31.91+00:00",
+    "atualizado": "2026-11-03T11:30:34.716+00:00",
     "de": 900,
     "loja": "Mercado Livre",
     "loja_id": "mercadolivre",
@@ -4345,15 +4269,15 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T08:52-03:00"
+  "verificado": "2026-11-03T15:00-03:00"
  },
  "arcadia-quest-beyond-the-grave": {
   "ofertas": [],
-  "verificado": "2026-11-03T09:01-03:00"
+  "verificado": "2026-11-03T15:00-03:00"
  },
  "arcadia-quest-inferno": {
   "ofertas": [],
-  "verificado": "2026-11-03T08:39-03:00"
+  "verificado": "2026-11-03T15:00-03:00"
  },
  "arcadia-quest-leeroy": {
   "ofertas": [],

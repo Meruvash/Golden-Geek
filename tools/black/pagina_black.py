@@ -303,7 +303,7 @@ document.addEventListener('click',async e=>{const b=e.target.closest('.cup-cod')
 </script>"""
 
 
-def build(radar_itens, armadilhas):
+def build(radar_itens, armadilhas, quase=()):
     pre = "../"
     url = f"{SITE}/black/"
     agora_ = radar.agora()
@@ -323,6 +323,7 @@ def build(radar_itens, armadilhas):
     curta = min((x["dias"] for x in radar_itens), default=None)
     dest_html = "".join(cartao(grupos[x["slug"]], pre, cps, agora_, destaque=True, pos=i) for i, x in enumerate(top, 1))
     lista_html = "".join(cartao(g, pre, cps, agora_) for g in grupos.values())
+    quase_html = "".join(cartao([x], pre, cps, agora_) for x in quase)
     cps_html = ""
     for dom, reg in sorted(cps.items(), key=lambda kv: kv[1]["loja"].lower()):
         for c in reg["cupons"].values():
@@ -373,7 +374,7 @@ def build(radar_itens, armadilhas):
    <li><b>{n_cupons}</b><span>cupom{"s" if n_cupons != 1 else ""} anunciado{"s" if n_cupons != 1 else ""} pelas lojas</span></li>
   </ul>
   <p class="bk-atual">Atualizado em {agora_.strftime("%d/%m/%Y às %Hh%M")} (horário de Brasília). O radar lê os preços de novo a cada 30 minutos.</p>
-  <nav class="bk-pulo" aria-label="Atalhos"><a class="pri" href="#melhores">Ver as melhores ofertas</a><a class="sec" href="#todas">Todas as {len(melhor)}</a>{'<a class="sec" href="#cupons">Cupons</a>' if cps_html else ""}{'<a class="sec" href="#comunidade">Achados da comunidade</a>' if pb_html else ""}</nav>
+  <nav class="bk-pulo" aria-label="Atalhos"><a class="pri" href="#melhores">Ver as melhores ofertas</a><a class="sec" href="#todas">Todas as {len(melhor)}</a>{f'<a class="sec" href="#quase">Quase Black ({len(quase)})</a>' if quase else ""}{'<a class="sec" href="#cupons">Cupons</a>' if cps_html else ""}{'<a class="sec" href="#comunidade">Achados da comunidade</a>' if pb_html else ""}</nav>
  </header>
  <ul class="bk-conf">
   <li>Desconto calculado sobre a média aparada do histórico de preços, não sobre o preço "de" da loja.</li>
@@ -398,6 +399,11 @@ def build(radar_itens, armadilhas):
   {f'<ul class="ofertas">{lista_html}</ul>' if lista_html else ""}
   <p class="vazio ofertas-vazio" hidden>Nenhuma oferta com esses filtros.</p>
   <p class="credito">Preços, histórico, nota BGG e imagens das caixas: Compara Jogos (comparajogos.com.br). Links levam à loja; não ganhamos comissão.</p>
+ </section>
+ <section id="quase" aria-labelledby="h-quase">
+  <h2 id="h-quase">Quase Black: de 15% a 19% abaixo da média</h2>
+  <p class="sub">Jogos que ainda não chegaram aos 20% do Black de Verdade, mas já estão abaixo da média real do período. Mesmo cálculo e mesma conferência na loja. Se o preço cair mais, o jogo sobe para a lista principal.</p>
+  {f'<ul class="ofertas quase">{quase_html}</ul>' if quase_html else '<p class="vazio">Nenhum jogo nessa faixa nesta leitura.</p>'}
  </section>
  <section id="cupons" aria-labelledby="h-cupons">
   <h2 id="h-cupons">Cupons anunciados pelas lojas</h2>
@@ -485,13 +491,13 @@ def robo():
  <section class="bloco"><h2>O que ele faz</h2><ul class="lista" style="display:grid;gap:10px;padding-left:20px;list-style:disc">
   <li>Abre só a página de produtos que já estão no nosso radar, para conferir preço e estoque antes de publicar a oferta.</li>
   <li>Abre a página inicial e a de promoções no máximo 3 vezes por dia, para ver cupons que a loja anuncia.</li>
-  <li>Espera {lojas.PAUSA_LOJA:.0f} segundos entre uma página e outra da mesma loja e não passa de {lojas.LIMITE_DIA} páginas por dia por loja.</li>
-  <li>Reaproveita por 12 horas o preço que já leu, enquanto nada indicar que ele mudou.</li>
+  <li>Na leitura completa, espera 6 segundos entre uma página e outra da mesma loja, não passa de {lojas.LIMITE_DIA} páginas por dia por loja e reaproveita por 12 horas o preço que já leu.</li>
+  <li>Na leitura rápida, que confere ofertas novas, espera 2 segundos entre páginas da mesma loja e abre só as ofertas candidatas do momento.</li>
   <li>Não faz login, não fecha pedido e não preenche formulário.</li>
  </ul></section>
  <section class="bloco"><h2>O que ele respeita</h2><ul class="lista" style="display:grid;gap:10px;padding-left:20px;list-style:disc">
   <li>O seu robots.txt, tanto para <code>EliteBoardgamers</code> quanto para os robôs da Anthropic (<code>ClaudeBot</code>, <code>Claude-User</code>), porque o radar é operado com o Claude.</li>
-  <li>Bloqueio: se a loja responder 401, 403 ou 429, o robô fica 48 horas sem visitar e depois tenta uma vez só. Ele nunca troca de identidade nem de endereço para insistir.</li>
+  <li>Bloqueio: se a loja responder 401, 403 ou 429, o robô para de visitar a loja naquela leitura; na leitura completa, fica 48 horas sem visitar. Ele nunca troca de identidade nem de endereço para insistir.</li>
  </ul></section>
  <section class="bloco"><h2>Quer ajustar ou sair?</h2>
   <p class="criterio">Para o robô não visitar a sua loja, basta pôr no robots.txt:</p>

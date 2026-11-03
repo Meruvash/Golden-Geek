@@ -66,7 +66,23 @@ def _bloquear(dom, motivo):
     _loja(dom).update({"descanso_ate": (dt.datetime.now(dt.timezone.utc) + DESCANSO).isoformat(timespec="minutes"), "motivo": motivo})
 
 
+MODO = "educado"
+
+
+def modo(nome):
+    """'educado': 6 s entre páginas, 60 páginas por dia por loja, 48 h de descanso após bloqueio, reaproveita leituras.
+    'normal' (o ritmo do primeiro robô, pedido do usuário em 03/11/2026): 2 s entre páginas, sem limite diário e sem
+    reaproveitar leituras; um bloqueio vale só até o fim da leitura. Nos dois modos o robô respeita o robots.txt,
+    se identifica com o mesmo nome e para de visitar a loja que bloqueou."""
+    global MODO, PAUSA_LOJA
+    MODO = nome
+    PAUSA_LOJA = 2.0 if nome == "normal" else 6.0
+    print(f"-- robô de conferência no modo {nome}")
+
+
 def em_descanso(dom):
+    if MODO == "normal":
+        return False
     ate = _loja(dom).get("descanso_ate")
     return bool(ate and ate > dt.datetime.now(dt.timezone.utc).isoformat())
 
@@ -75,7 +91,7 @@ def _pode(url):
     dom = urlparse(url).netloc.lower()
     if NUNCA.search(dom) or dom in _bloqueadas or em_descanso(dom):
         return False
-    if _loja(dom)["paginas"] >= LIMITE_ESPECIAL.get(dom, LIMITE_DIA):
+    if MODO == "educado" and _loja(dom)["paginas"] >= LIMITE_ESPECIAL.get(dom, LIMITE_DIA):
         return False
     if dom not in _robots:
         p = rp.RobotFileParser()
@@ -183,7 +199,7 @@ def conferir(url, esperado=None):
         return None
     antes = _estado["precos"].get(url)
     agora = dt.datetime.now(dt.timezone.utc)
-    if antes and antes.get("cj") == esperado and antes.get("hora", "") >= (agora - REUSO).isoformat():
+    if MODO == "educado" and antes and antes.get("cj") == esperado and antes.get("hora", "") >= (agora - REUSO).isoformat():
         return {"preco": antes["preco"], "estoque": antes["estoque"], "reaproveitado": True}
     h = pagina(url)
     if h is None:
