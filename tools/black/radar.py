@@ -232,6 +232,31 @@ def aparada(valores):
     return mean(v)
 
 
+def conferir_lojas(margem=0.15):
+    """Abre na própria loja as ofertas candidatas (desconto real de 15% ou mais pelo Compara Jogos) e grava preço e estoque."""
+    import lojas
+    hist, hoje_d = ler(HIST, {}), ler(HOJE, {})
+    lidas = 0
+    for s, of in hoje_d.items():
+        pts = list(hist.get(s, {}).get("pontos", {}).values())
+        if len(pts) < 5:
+            continue
+        ref = aparada(pts)
+        for o in of["ofertas"]:
+            o.pop("loja_agora", None)
+            if o["tipo"] != "LINK" or not o["por"] or FORA.search(o["loja"] + o["loja_id"]):
+                continue
+            if (ref - o["por"]) / ref < margem or o["por"] < ref * SUSPEITO:
+                continue
+            r = lojas.conferir(o["url"], o["por"])
+            lidas += 1
+            if r:
+                o["loja_agora"] = {**r, "hora": agora().isoformat(timespec="minutes")}
+    gravar(HOJE, hoje_d)
+    ok = sum(1 for of in hoje_d.values() for o in of["ofertas"] if o.get("loja_agora"))
+    print(f"ok lojas: {lidas} páginas tentadas, {ok} conferidas; bloqueadas: {', '.join(lojas.bloqueadas()) or 'nenhuma'}")
+
+
 def calcular():
     """Itens do radar, armadilhas e itens no menor preço, a partir do histórico e das ofertas de hoje."""
     hist, hoje_d = ler(HIST, {}), ler(HOJE, {})
@@ -255,13 +280,19 @@ def calcular():
         for o in of["ofertas"]:
             if o["tipo"] != "LINK" or not o["por"] or FORA.search(o["loja"] + o["loja_id"]):
                 continue
-            desc = (ref - o["por"]) / ref
-            if o["por"] < ref * SUSPEITO:
+            la = o.get("loja_agora")
+            if la and la.get("estoque") is False:
+                continue  # a página da loja diz que acabou
+            # preço lido agora na página da loja, quando deu para ler; senão, o que a loja informou ao Compara Jogos
+            por = la["preco"] if la else o["por"]
+            desc = (ref - por) / ref
+            if por < ref * SUSPEITO:
                 continue
             base = {"slug": s, "nome": h["nome"], "tipo": h["tipo"], "editora": h.get("editora"), "bgg": h.get("bgg"),
-                    "imagem": h.get("imagem"), "loja": o["loja"], "url": o["url"], "por": o["por"], "de": o["de"],
-                    "ref": ref, "desc": desc, "menor": menor, "recorde": o["por"] <= menor_antes, "dias": dias,
-                    "verificado": o.get("atualizado") or of["verificado"], "editora_br": h.get("editora_br")}
+                    "imagem": h.get("imagem"), "loja": o["loja"], "url": o["url"], "por": por, "de": o["de"],
+                    "ref": ref, "desc": desc, "menor": menor, "recorde": por <= menor_antes, "dias": dias,
+                    "fonte_preco": "página da loja" if la else "Compara Jogos",
+                    "verificado": (la or {}).get("hora") or o.get("atualizado") or of["verificado"], "editora_br": h.get("editora_br")}
             if desc >= CORTE:
                 radar.append(base)
             elif o["de"] and o["por"] and (o["de"] - o["por"]) / o["de"] >= CORTE:
@@ -318,6 +349,8 @@ def main():
     elif a.acao == "rapida":
         coletar(list(dict.fromkeys(slugs_quedas() + perto_do_corte())), limite=a.limite)
     sys.path.insert(0, str(Path(__file__).resolve().parent))
+    if a.acao != "pagina":
+        conferir_lojas()
     import pagina_black
     pagina_black.build(*calcular())
 

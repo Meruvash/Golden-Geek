@@ -30,7 +30,7 @@ CSS = """<style>
 .bk .aviso{background:#fff8e1;border:1px solid #e9d58a;border-radius:10px;padding:12px 14px;font-size:.92rem;color:var(--paper-ink)}
 .bk .aviso p+p{margin-top:6px}
 .bk .tab{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--paper-line);border-radius:12px;background:#fff}
-.bk table{border-collapse:collapse;width:100%;min-width:1100px;font-size:.86rem}
+.bk table{border-collapse:collapse;width:100%;min-width:1200px;font-size:.86rem}
 .bk th,.bk td{padding:9px 10px;border-bottom:1px solid var(--paper-line);text-align:left;vertical-align:middle}
 .bk th{background:#f0f2f5;font-weight:700;white-space:nowrap;position:sticky;top:0}
 .bk td.n{white-space:nowrap;font-variant-numeric:tabular-nums}
@@ -107,10 +107,10 @@ def tabela(itens, pre):
                    f'<td class="n">{f"{x["bgg"]:.1f}".replace(".", ",") if x["bgg"] else "sem nota"} BGG</td>'
                    f'<td>não verificado</td>'
                    f'<td><a class="ir" href="{e(x["url"])}" target="_blank" rel="noopener nofollow sponsored">Ver oferta</a></td>'
-                   f'<td>{e(base_txt(x))}</td><td class="n">{quando(x["verificado"])}</td></tr>')
+                   f'<td>{e(x.get("fonte_preco", "Compara Jogos"))}</td><td>{e(base_txt(x))}</td><td class="n">{quando(x["verificado"])}</td></tr>')
     return (f'<div class="tab"><table><thead><tr><th>Jogo</th><th>Editora</th><th>Loja</th><th>Preço hoje</th>'
             f'<th>Média do período (referência)</th><th>Desconto real</th><th>Menor preço no período</th><th>Nota BGG</th>'
-            f'<th>Cupom</th><th>Link</th><th>Fonte do histórico</th><th>Verificado em</th></tr></thead><tbody>{linhas}</tbody></table></div>')
+            f'<th>Cupom</th><th>Link</th><th>Fonte do preço</th><th>Fonte do histórico</th><th>Verificado em</th></tr></thead><tbody>{linhas}</tbody></table></div>')
 
 
 def build(radar_itens, armadilhas):
@@ -150,6 +150,9 @@ def build(radar_itens, armadilhas):
    dia desde 03/11/2026 até completar 180 dias; até lá, cada linha mostra quantos dias de base a conta usou{f" (hoje, a partir de {curta} dias)" if curta else ""}.</p>
    <p><b>Fora do radar.</b> Amazon, Mercado Livre, Magalu, Americanas e Casas Bahia não deixam robôs conferirem o vendedor
    e a edição, então as ofertas deles não entram. Shopee e vendedores avulsos também ficam de fora.</p>
+   <p><b>Preço conferido na loja.</b> Antes de publicar, o robô abre a página do produto na própria loja e lê o preço e o
+   estoque (coluna "Fonte do preço"). Esse é o preço de tabela da página: no Pix costuma sair um pouco mais barato. Lojas que
+   bloqueiam robôs ficam com o preço informado ao Compara Jogos.</p>
    <p><b>Confira antes de pagar.</b> Cupom e frete não são verificados pelo robô. Preço muda rápido: cada linha mostra a hora
    em que a loja informou o valor ao Compara Jogos.</p>
   </div>
