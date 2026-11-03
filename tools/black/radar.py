@@ -4,6 +4,7 @@ Uso:
   python3 tools/black/radar.py varrer          # varre todos os jogos com preço do Compara Jogos (sitemap) e monta a lista
   python3 tools/black/radar.py coletar         # rotina diária: consulta só a lista de acompanhamento + quedas de preço
   python3 tools/black/radar.py coletar --limite 50   # teste rápido
+  python3 tools/black/radar.py rapida          # leitura de 30 em 30 min: quedas de preço + radar + quem está perto do corte
   python3 tools/black/radar.py pagina          # só recalcula e gera /black/ com os dados já coletados
 
 Fonte única: as páginas públicas de produto do Compara Jogos (comparajogos.com.br/item/<slug>), que o robots.txt
@@ -209,7 +210,7 @@ def coletar(slugs, registrar_lista=False, limite=None):
         # ponto de hoje: menor preço de jogo novo entre as lojas, como o histórico do próprio Compara Jogos
         lojas = [o["por"] for o in it["ofertas"] if o["por"] and o["tipo"] == "LINK" and not FORA.search(o["loja"] + o["loja_id"])]
         if lojas:
-            h["pontos"][hoje] = min(lojas)
+            h["pontos"][hoje] = min([*lojas, h["pontos"].get(hoje, 1e9)])
         corte = (agora().date() - dt.timedelta(days=JANELA + 10)).isoformat()
         h["pontos"] = {d: p for d, p in sorted(h["pontos"].items()) if d >= corte}
         hoje_d[s] = {"verificado": agora().isoformat(timespec="minutes"), "ofertas": it["ofertas"]}
@@ -276,16 +277,46 @@ def calcular():
     return unicos, armadilhas[:30]
 
 
+def perto_do_corte(maximo=350):
+    """Jogos acompanhados cuja melhor oferta de loja está a menos de 35% da referência (no radar ou quase)."""
+    hist, hoje_d = ler(HIST, {}), ler(HOJE, {})
+    notas = []
+    for s, h in hist.items():
+        pts = list(h.get("pontos", {}).values())
+        lojas = [o["por"] for o in hoje_d.get(s, {}).get("ofertas", []) if o.get("por") and o["tipo"] == "LINK" and not FORA.search(o["loja"] + o["loja_id"])]
+        if len(pts) >= 5 and lojas:
+            ref = aparada(pts)
+            folga = (min(lojas) - ref * (1 - CORTE)) / ref
+            if folga < 0.15:
+                notas.append((folga, s))
+    return [s for _, s in sorted(notas)[:maximo]]
+
+
+def trava():
+    """Impede duas coletas ao mesmo tempo (a diária e a de 30 em 30 minutos gravam os mesmos arquivos)."""
+    import fcntl
+    DADOS.mkdir(parents=True, exist_ok=True)
+    f = open(DADOS / ".trava", "w")
+    try:
+        fcntl.flock(f, fcntl.LOCK_EX | fcntl.LOCK_NB)
+    except BlockingIOError:
+        sys.exit("outra coleta do radar está em andamento; esta leitura foi pulada")
+    return f
+
+
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("acao", choices=["varrer", "coletar", "pagina"])
+    ap.add_argument("acao", choices=["varrer", "coletar", "rapida", "pagina"])
     ap.add_argument("--limite", type=int)
     a = ap.parse_args()
+    _t = trava() if a.acao != "pagina" else None  # noqa: F841
     if a.acao == "varrer":
         coletar(slugs_sitemap(), registrar_lista=True, limite=a.limite)
     elif a.acao == "coletar":
         alvo = list(dict.fromkeys(ler(LISTA, []) + slugs_quedas()))
         coletar(alvo, registrar_lista=True, limite=a.limite)
+    elif a.acao == "rapida":
+        coletar(list(dict.fromkeys(slugs_quedas() + perto_do_corte())), limite=a.limite)
     sys.path.insert(0, str(Path(__file__).resolve().parent))
     import pagina_black
     pagina_black.build(*calcular())
