@@ -227,8 +227,10 @@ def permitido(url):
     return _pode(url)
 
 
-def pagina(url):
-    """HTML de uma página da loja, respeitando robots.txt e a pausa por loja; None se não pôde ou falhou."""
+def pagina(url, bloquear=True):
+    """HTML de uma página da loja, respeitando robots.txt e a pausa por loja; None se não pôde ou falhou.
+    `bloquear=False` para sondagens (ex.: testar se a loja tem catálogo público): um 403 ali quer dizer "esse
+    endereço não existe para você", não "a loja bloqueou o robô", e não põe a loja em descanso."""
     if not _pode(url):
         return None
     dom = urlparse(url).netloc.lower()
@@ -243,7 +245,7 @@ def pagina(url):
         return None
     finally:
         _ultimo[dom] = time.time()
-    if r.status_code in (401, 403, 429):
+    if r.status_code in (401, 403, 429) and (bloquear or r.status_code == 429):
         _bloquear(dom, f"página respondeu {r.status_code}")
         return None
     return r.text if r.status_code == 200 else None

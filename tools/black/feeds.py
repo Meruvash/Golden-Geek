@@ -78,7 +78,7 @@ def _catalogo_publico(dom):
     if not info.get("testado") or (hoje - dt.date.fromisoformat(info["testado"])).days >= 7:
         info = {"testado": hoje.isoformat(), "tipo": None}
         for tipo, caminho in (("woo", "/wp-json/wc/store/v1/products?per_page=1"), ("shopify", "/products.json?limit=1")):
-            h = lojas.pagina(f"https://{dom}{caminho}")
+            h = lojas.pagina(f"https://{dom}{caminho}", bloquear=False)
             if h and h.strip()[:1] in "[{":
                 try:
                     json.loads(h)
@@ -132,7 +132,7 @@ def juntar(hist, ofertas):
     for of in ofertas.values():
         for o in of.get("ofertas", []):
             d = urlparse(o.get("url") or "").netloc.lower()
-            if d and not lojas.NUNCA.search(d) and o.get("tipo") == "LINK":
+            if d and not lojas.NUNCA.search(d) and o.get("tipo") == "LINK" and not re.search(r"(?i)brech|usad|seminov", d + (o.get("loja") or "")):
                 doms.setdefault(d, o.get("loja") or d)
     fontes = [(f["loja"], lambda f=f: _baixar(f["loja"], f["url"]), "feed da loja") for f in cad]
     fontes += [(nome, lambda d=d: _catalogo_publico(d), "catálogo público da loja") for d, nome in sorted(doms.items())]
