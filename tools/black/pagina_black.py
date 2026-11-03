@@ -123,6 +123,8 @@ CSS = """<style>
 /* cupons */
 .cupons{display:grid;gap:10px;margin:12px 0 0;padding:0;list-style:none}
 @media (min-width:760px){.cupons{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.cup-img{display:block;aspect-ratio:16/9;border-radius:10px;overflow:hidden;background:#fff;margin-bottom:4px}
+.cup-img img{width:100%;height:100%;object-fit:contain;display:block}.cup-img svg,.of-img svg{width:100%;height:100%;display:block}
 .cup-c{display:grid;gap:6px;padding:14px;border-radius:14px;background:#111419;border:1px solid #262a32}
 .cup-loja{margin:0;font-weight:800;color:#fff}
 .cup-cod{justify-self:start;display:inline-flex;align-items:center;gap:10px;min-height:44px;padding:0 6px 0 14px;border-radius:10px;border:2px dashed var(--gold);background:rgba(227,178,60,.08);color:#fff;font:inherit;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:1.05rem;font-weight:800;letter-spacing:.04em;cursor:pointer}
@@ -167,6 +169,33 @@ def quando(iso):
         return t.strftime("%d/%m/%Y %Hh%M")
     except Exception:
         return "não informado"
+
+
+CORES = ["#e3b23c", "#2f7d5b", "#2b5c9e", "#a8432f", "#6b4fa0", "#1f7a85", "#9a6a1f", "#b3386b"]
+
+
+def ilustra(titulo, loja="", selo=""):
+    """Ilustração para promoção sem foto: um cartão desenhado em código (meeple, dado e o nome do jogo), na cor da
+    loja. Nada de imagem gerada por IA (regra do usuário). Volta um <svg> pronto para pôr no lugar da foto."""
+    import hashlib
+    cor = CORES[int(hashlib.md5((loja or titulo).encode()).hexdigest(), 16) % len(CORES)]
+    palavras = [p for p in re.sub(r"[^\wÀ-ú ]", " ", titulo or "").split() if len(p) > 2][:2] or ["?"]
+    sigla = "".join(p[0] for p in palavras).upper()
+    nome_curto = e((titulo or "")[:30] + ("…" if len(titulo or "") > 30 else ""))
+    return (f'<svg viewBox="0 0 320 180" role="img" aria-label="Ilustração: {e(titulo or "")}" xmlns="http://www.w3.org/2000/svg">'
+            f'<rect width="320" height="180" fill="{cor}"/>'
+            f'<g fill="#000" opacity=".12"><circle cx="40" cy="30" r="44"/><circle cx="300" cy="170" r="70"/></g>'
+            # meeple
+            f'<path transform="translate(30 30) scale(.5)" fill="#fff" opacity=".92" d="M80 8c14 0 24 10 24 23 0 7-3 13-8 17l40 12c9 3 14 10 13 19-1 8-8 13-17 13h-14l18 48c3 8-2 16-11 16H85l-5-26-5 26H37c-9 0-14-8-11-16l18-48H30c-9 0-16-5-17-13-1-9 4-16 13-19l40-12c-5-4-8-10-8-17 0-13 10-23 24-23z"/>'
+            # dado
+            f'<g transform="translate(232 26) rotate(12)"><rect width="56" height="56" rx="10" fill="#fff" opacity=".92"/>'
+            f'<g fill="{cor}"><circle cx="14" cy="14" r="5"/><circle cx="28" cy="28" r="5"/><circle cx="42" cy="42" r="5"/></g></g>'
+            f'<text x="180" y="100" text-anchor="middle" font-family="Public Sans,Arial,sans-serif" font-weight="800" font-size="46" fill="#fff">{e(sigla)}</text>'
+            f'<rect x="0" y="122" width="320" height="58" fill="#000" opacity=".28"/>'
+            f'<text x="160" y="146" text-anchor="middle" font-family="Public Sans,Arial,sans-serif" font-weight="700" font-size="14" fill="#fff">{nome_curto}</text>'
+            + (f'<text x="160" y="167" text-anchor="middle" font-family="Public Sans,Arial,sans-serif" font-size="12" fill="#fff" opacity=".85">{e(loja)}</text>' if loja else "")
+            + (f'<rect x="12" y="12" width="74" height="28" rx="8" fill="#0b0d10"/><text x="49" y="31" text-anchor="middle" font-family="Public Sans,Arial,sans-serif" font-weight="800" font-size="15" fill="#e3b23c">{e(selo)}</text>' if selo else "")
+            + "</svg>")
 
 
 def capa(item, pre, lado=240):
@@ -268,7 +297,7 @@ def cartao(grupo, pre, cps, agora_, destaque=False, pos=None):
     dados = (f'data-tipo="{e(x["tipo"])}" data-desc="{x["desc"]:.4f}" data-eco="{eco:.2f}" data-bgg="{x["bgg"] or 0:.2f}" '
              f'data-por="{x["por"]:.2f}" data-rec="{1 if x["recorde"] else 0}" data-busca="{e((nome(x) + " " + " ".join(o["loja"] for o in grupo) + " " + (x["editora"] or "")).lower())}"')
     return f"""<li class="of" {dados}>
- <a class="of-img" href="{e(x["url"])}" {rel} tabindex="-1" aria-hidden="true">{f'<img src="{img}" alt="" loading="lazy" decoding="async" width="{640 if destaque else 240}" height="{640 if destaque else 240}">' if img else ""}<span class="of-pct">−{pct(x["desc"])}</span>{f'<span class="pos">{pos}</span>' if pos else ""}</a>
+ <a class="of-img" href="{e(x["url"])}" {rel} tabindex="-1" aria-hidden="true">{f'<img src="{img}" alt="" loading="lazy" decoding="async" width="{640 if destaque else 240}" height="{640 if destaque else 240}">' if img else ilustra(nome(x), x["loja"])}<span class="of-pct">−{pct(x["desc"])}</span>{f'<span class="pos">{pos}</span>' if pos else ""}</a>
  <div class="of-c">
   {'<span class="of-rec">Menor preço do período</span>' if x["recorde"] else ""}
   <h3 class="of-n">{e(nome(x))}</h3>
@@ -352,7 +381,10 @@ def build(radar_itens, armadilhas, quase=()):
         return None
     # primeiro os achados com desconto real de 15% ou mais sobre a nossa base; depois os mais recentes (até 80)
     ordem = sorted(pbs.values(), key=lambda v: ((_real(v) or -1) >= radar.QUASE, v.get("publicado") or ""), reverse=True)[:80]
+    sem_foto_html = ""
     for v in ordem:
+        h0 = hist.get(v.get("jogo") or "")
+        foto = capa({"slug": v["jogo"], "imagem": h0.get("imagem")}, pre) if h0 and h0.get("imagem") else ""
         real = ""
         h = hist.get(v.get("jogo") or "")
         if h and h.get("pontos") and v.get("preco") and v.get("tipo_preco") != "COUPON":
@@ -361,13 +393,20 @@ def build(radar_itens, armadilhas, quase=()):
                     else f"Acima da média de {brl(ref)}")
         preco = brl(v["preco"]) if v.get("preco") and v.get("tipo_preco") != "COUPON" else "Ver cupom"
         antes = f' <span class="of-ref"><s>{brl(v["preco_antes"])}</s></span>' if v.get("preco_antes") else ""
-        pb_html += (f'<li class="cup-c"><p class="cup-loja">{e(limpa(v["titulo"]))}</p>'
+        selo = f'−{pct((v["preco_antes"] - v["preco"]) / v["preco_antes"])}' if v.get("preco_antes") and v.get("preco") and v["preco_antes"] > v["preco"] else ""
+        topo = (f'<span class="cup-img"><img src="{foto}" alt="" loading="lazy" decoding="async" width="240" height="240"></span>' if foto
+                else f'<span class="cup-img">{ilustra(limpa(v["titulo"]), v.get("loja") or "", selo)}</span>')
+        cartao_c = (f'<li class="cup-c">{topo}<p class="cup-loja">{e(limpa(v["titulo"]))}</p>'
                     f'<p class="of-p" style="margin:0"><b class="of-por" style="font-size:1.2rem">{preco}</b>{antes}</p>'
                     f'<p class="cup-txt">{e(v.get("loja") or "")}{f" · cupom <b>{e(v['cupom'])}</b>" if v.get("cupom") else ""} · '
                     f'{e(real) if real else "jogo fora da nossa base"}</p>'
                     f'<p class="cup-st">Postada {hora(v.get("publicado") or v["visto"], agora_)}. Vendedor e validade não conferidos.</p>'
                     + (f'<a href="{e(v["link_loja"])}" target="_blank" rel="noopener nofollow">Ver na loja ↗</a> ' if v.get("link_loja") else "")
                     + f'<a href="{e(v["link"])}" target="_blank" rel="noopener nofollow">Ver no {e((v.get("fonte") or "Promobit").removeprefix("Telegram: "))} ↗</a></li>')
+        if foto:
+            pb_html += cartao_c
+        else:
+            sem_foto_html += cartao_c
     arm_html = "".join(
         f'<li class="arm"><p style="margin:0"><b>{e(nome(x))}</b> em {e(x["loja"])}</p><div class="arm-n">'
         f'<span class="arm-fake">A loja anuncia <s>−{pct((x["de"] - x["por"]) / x["de"])}</s></span><span class="arm-real">Desconto real: {pct(max(x["desc"], 0))}</span></div>'
@@ -386,7 +425,7 @@ def build(radar_itens, armadilhas, quase=()):
    <li><b>{n_cupons}</b><span>cupom{"s" if n_cupons != 1 else ""} anunciado{"s" if n_cupons != 1 else ""} pelas lojas</span></li>
   </ul>
   <p class="bk-atual">Atualizado em {agora_.strftime("%d/%m/%Y às %Hh%M")} (horário de Brasília). O radar lê os preços de novo a cada 30 minutos.</p>
-  <nav class="bk-pulo" aria-label="Atalhos"><a class="pri" href="#melhores">Ver as melhores ofertas</a><a class="sec" href="#todas">Todas as {len(melhor)}</a>{f'<a class="sec" href="#quase">Quase Black ({len(quase)})</a>' if quase else ""}{'<a class="sec" href="#cupons">Cupons</a>' if cps_html else ""}{'<a class="sec" href="#comunidade">Achados da comunidade</a>' if pb_html else ""}</nav>
+  <nav class="bk-pulo" aria-label="Atalhos"><a class="pri" href="#melhores">Ver as melhores ofertas</a><a class="sec" href="#todas">Todas as {len(melhor)}</a>{f'<a class="sec" href="#quase">Quase Black ({len(quase)})</a>' if quase else ""}{'<a class="sec" href="#cupons">Cupons</a>' if cps_html else ""}{'<a class="sec" href="#comunidade">Achados da comunidade</a>' if pb_html else ""}{'<a class="sec" href="#sem-foto">Achados sem foto</a>' if sem_foto_html else ""}</nav>
  </header>
  <ul class="bk-conf">
   <li>Desconto calculado sobre a média aparada do histórico de preços, não sobre o preço "de" da loja.</li>
@@ -426,6 +465,11 @@ def build(radar_itens, armadilhas, quase=()):
   <h2 id="h-pb">Achados da comunidade</h2>
   <p class="sub">Promoções de jogos de tabuleiro postadas nos últimos 7 dias no Promobit e em canais públicos do Telegram (Compara Jogos, Ludofertas, BG Turbo Ofertas, Board Oferta, GameBox Tabuleiro), inclusive de Amazon, Mercado Livre e Magalu. O robô não confere o vendedor nem se a promoção ainda vale: confira na loja. Quando o jogo está na nossa base, mostramos o desconto real sobre a média.</p>
   {f'<ul class="cupons">{pb_html}</ul>' if pb_html else '<p class="vazio">Nenhuma promoção de jogo de tabuleiro postada nos últimos 7 dias.</p>'}
+ </section>
+ <section id="sem-foto" aria-labelledby="h-sf">
+  <h2 id="h-sf">Achados sem foto</h2>
+  <p class="sub">Promoções que a gente encontrou nos canais da comunidade, mas de jogos que ainda não estão na nossa base de fotos. No lugar da capa, um cartão desenhado pelo site com o nome do jogo e a cor da loja. Confira na loja antes de comprar.</p>
+  {f'<ul class="cupons">{sem_foto_html}</ul>' if sem_foto_html else '<p class="vazio">Nenhuma promoção sem foto nesta leitura.</p>'}
  </section>
  <section aria-labelledby="h-arm">
   <h2 id="h-arm">Desconto de mentira</h2>

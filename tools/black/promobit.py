@@ -97,7 +97,8 @@ def ler_ofertas():
         for o in _ofertas(pp):
             titulo = o.get("offerTitle") or ""
             t = chave(titulo)
-            jogo = next((s for n, s in nomes.items() if f" {n} " in f" {t} "), None)
+            from telegram import casar
+            jogo = casar(titulo, nomes, json.loads(HIST.read_text(encoding="utf-8")) if HIST.exists() else {})
             if o.get("subcategorySlug") != "jogos-tabuleiro" and not jogo and not CHAVES.search(titulo):
                 continue
             k = str(o["offerId"])

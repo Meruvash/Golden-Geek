@@ -129,9 +129,7 @@ def ler():
                 continue
             for n, it in enumerate(_itens(texto)):
                 t = chave(it["nome"])
-                jogo = next((s for nm, s in nomes.items() if f" {nm} " in f" {t} "), None)
-                if jogo and "expans" in t and hist.get(jogo, {}).get("tipo") != "expansion":
-                    jogo = None  # expansão casada com o jogo base: o desconto real seria de outro produto
+                jogo = casar(it["nome"], nomes, hist)
                 loja, dom = _loja([it["url"]], "")
                 if it["vendido"]:
                     loja = it["vendido"]
@@ -152,3 +150,24 @@ def ler():
 if __name__ == "__main__":
     lojas.LIMITE_ESPECIAL["t.me"] = 400
     ler()
+
+
+def casar(titulo, nomes, hist):
+    """Jogo da nossa base que o título da promoção cita, com cuidado para não confundir expansão com jogo base:
+    escolhe o nome mais longo que aparece no título e recusa quando o título continua depois de ":" ou " - "
+    (Carcassonne: O Dragão e a Fada não é Carcassonne) ou fala em expansão e o jogo da base não é expansão."""
+    t = f" {chave(titulo)} "
+    achados = sorted((nm for nm in nomes if f" {nm} " in t), key=len, reverse=True)
+    if not achados:
+        return None
+    nm = achados[0]
+    s = nomes[nm]
+    for sep in (":", " - ", " – "):
+        if sep in titulo:
+            antes, depois = titulo.split(sep, 1)
+            if chave(antes).endswith(nm) and chave(depois) and nm not in chave(depois) and len(chave(depois).split()) >= 2:
+                if not chave(titulo).startswith(nm + " ") or chave(hist.get(s, {}).get("nome", "")) != chave(titulo):
+                    return None
+    if "expans" in t and hist.get(s, {}).get("tipo") != "expansion":
+        return None
+    return s
