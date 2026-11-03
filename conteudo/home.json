@@ -1,194 +1,209 @@
 {
- "edicao": "2026-10-30",
- "em_alta": [
-  {
-   "nome": "Caminhos Tortuosos",
-   "id_ludopedia": 81879,
-   "motivo": "Caminhos Tortuosos ganha preço na pré-venda da Devir",
-   "link": "noticias/arnak-caminhos-tortuosos-e-gaudi-ganham-preco/"
-  },
-  {
-   "nome": "Cubaneo",
-   "id_ludopedia": 87034,
-   "motivo": "Na lista de em breve da Ludofun",
-   "link": "noticias/ludofun-cubaneo-innovation-ultimate-em-breve/"
-  },
-  {
-   "nome": "Night at the Zoo",
-   "id_ludopedia": 85328,
-   "motivo": "Do autor de SETI, passa de R$ 286 mil no MeepleStarter",
-   "link": "noticias/night-at-the-zoo-pondscape-bucaneiros/"
-  },
-  {
-   "nome": "Toy Battle",
-   "id_ludopedia": 76515,
-   "motivo": "Vencedor do As d'Or 2026, anunciado pela Asmodee",
-   "link": "noticias/asmodee-essen-toy-battle-too-many-bones-nemesis-lockdown/"
-  },
-  {
-   "nome": "Spellrift Legends",
-   "id_ludopedia": 86556,
-   "motivo": "Passa de R$ 120 mil no MeepleStarter",
-   "link": "noticias/spellrift-legends-financiamento-meeplestarter/"
-  }
- ],
- "financiamentos": [
-  {
-   "nome": "Through the Mountains",
-   "editora": "Allplay",
-   "onde": "Kickstarter · aberto",
-   "situacao": "US$ 251 mil; termina em 12/11",
-   "fonte": "Kicktraq, 02/11/2026",
-   "noticia": "through-the-mountains-knizia-kickstarter"
-  },
-  {
-   "nome": "Night at the Zoo e Pondscape",
-   "editora": "Bucaneiros Jogos",
-   "onde": "Brasil · aberto",
-   "situacao": "R$ 286 mil (1.146% da meta); termina em 10/11",
-   "fonte": "MeepleStarter, 01/11/2026",
-   "noticia": "night-at-the-zoo-pondscape-bucaneiros"
-  },
-  {
-   "nome": "Oceanos",
-   "editora": "Ace Studios",
-   "onde": "Brasil · abre em 10/11",
-   "situacao": "Pré-campanha no MeepleStarter",
-   "fonte": "MeepleStarter, 01/11/2026",
-   "noticia": "oceanos-ace-studios-meeplestarter"
-  },
-  {
-   "nome": "Brava Gente e Oyó",
-   "editora": "Independente",
-   "onde": "Brasil · aberto",
-   "situacao": "Metas batidas; Oyó até 09/11, Brava Gente até 10/12",
-   "fonte": "MeepleStarter, 01/11/2026",
-   "noticia": "brava-gente-e-oyo-batem-a-meta"
-  },
-  {
-   "nome": "An Infamous Traffic",
-   "editora": "Wehrlegig Games",
-   "onde": "Kickstarter · encerrado",
-   "situacao": "US$ 726 mil de 7.877 apoiadores",
-   "fonte": "Kicktraq, 01/11/2026",
-   "noticia": "an-infamous-traffic-cole-wehrle-fecha-kickstarter"
-  },
-  {
-   "nome": "Spellrift Legends",
-   "editora": "Ludens Spirit",
-   "onde": "Brasil · aberto",
-   "situacao": "R$ 121 mil (610% da meta); termina em 20/11",
-   "fonte": "MeepleStarter, 31/10/2026",
-   "noticia": "spellrift-legends-financiamento-meeplestarter"
-  },
-  {
-   "nome": "Nemesis Legacy",
-   "editora": "Awaken Realms",
-   "onde": "Gamefound · encerrado",
-   "situacao": "€12,58 milhões de 33 mil apoiadores",
-   "fonte": "Tabletop Analytics, 31/10/2026",
-   "noticia": "nemesis-legacy-fecha-com-12-milhoes-de-euros"
-  },
-  {
-   "nome": "Arkham Horror Remastered",
-   "editora": "Fantasy Flight Games",
-   "onde": "Gamefound · aberto",
-   "situacao": "US$ 2,96 milhões; termina em 05/11",
-   "fonte": "Tabletop Analytics, 31/10/2026",
-   "noticia": "arkham-horror-remastered-gamefound"
-  },
-  {
-   "nome": "Eleição",
-   "editora": "Independente",
-   "onde": "Brasil · encerrado",
-   "situacao": "R$ 183 mil no Catarse; previsto para dezembro",
-   "fonte": "Catarse, 30/10/2026",
-   "noticia": "eleicao-e-rogue-duel-independentes-dezembro"
-  },
-  {
-   "nome": "BattleForge: Berserker",
-   "editora": "Calamity Games",
-   "onde": "Brasil · aberto",
-   "situacao": "Pré-venda no MeepleStarter até 15/11",
-   "fonte": "MeepleStarter, 28/10/2026",
-   "noticia": "financiamentos-abertos-battleforge-dia-da-caca"
-  },
-  {
-   "nome": "Dia da Caça",
-   "editora": "Ludovia Estúdio",
-   "onde": "Brasil · aberto",
-   "situacao": "62% da meta, termina em 06/11",
-   "fonte": "MeepleStarter, 28/10/2026",
-   "noticia": "financiamentos-abertos-battleforge-dia-da-caca"
-  },
-  {
-   "nome": "Excursions – a Galactic Cruise Game",
-   "editora": "Kinson Key Games",
-   "onde": "Kickstarter · encerrado",
-   "situacao": "US$ 660 mil de 6.229 apoiadores",
-   "fonte": "Kicktraq, 01/11/2026",
-   "noticia": "excursions-fecha-kickstarter-660-mil"
-  },
-  {
-   "nome": "The Lord of the Rings: The King's Gambit",
-   "editora": "Restoration Games",
-   "onde": "Kickstarter · encerrado",
-   "situacao": "US$ 2,58 milhões; edição de loja em 2027",
-   "fonte": "Kicktraq, 20/10/2026",
-   "noticia": "kings-gambit-fecha-com-2-5-milhoes"
-  },
-  {
-   "nome": "O Senhor dos Anéis: Inimigos da Terra-Média",
-   "editora": "D20 Culture",
-   "onde": "Brasil · encerrado",
-   "situacao": "Entrega prevista para fevereiro de 2027",
-   "fonte": "Catarse, 28/10/2026",
-   "noticia": "inimigos-da-terra-media-entrega-2027"
-  },
-  {
-   "nome": "DANTE: Inferno",
-   "editora": "Across the Board",
-   "onde": "Brasil · encerrado",
-   "situacao": "R$ 425 mil no Catarse; sem pré-venda aberta",
-   "fonte": "Catarse, 28/10/2026",
-   "noticia": "dante-inferno-across-the-board"
-  }
- ],
- "agenda": [
-  {
-   "quando": "Novembro",
-   "titulo": "11 jogos de tabuleiro previstos no Brasil",
-   "detalhe": "Nosso calendário de lançamentos",
-   "previsto": false,
-   "link": "lancamentos/"
-  },
-  {
-   "quando": "26 a 28 fev 2027",
-   "titulo": "Festival International des Jeux, Cannes",
-   "detalhe": "Entrega do As d'Or",
-   "previsto": false,
-   "noticia": "cannes-2027-as-dor"
-  },
-  {
-   "quando": "Abril de 2027",
-   "titulo": "Indicados ao Golden Geek",
-   "detalhe": "Pela data dos anos anteriores",
-   "previsto": true,
-   "noticia": "guia-dos-premios-2027"
-  },
-  {
-   "quando": "Maio de 2027",
-   "titulo": "Indicados ao Spiel des Jahres",
-   "detalhe": "Pela data dos anos anteriores",
-   "previsto": true,
-   "noticia": "guia-dos-premios-2027"
-  },
-  {
-   "quando": "9 a 11 jul 2027",
-   "titulo": "Diversão Offline, São Paulo",
-   "detalhe": "Datas indicadas no site do evento",
-   "previsto": true,
-   "noticia": "diversao-offline-2027"
-  }
- ]
+  "edicao": "2026-11-03",
+  "em_alta": [
+    {
+      "nome": "Harmonies: Crescendo",
+      "id_ludopedia": 86576,
+      "motivo": "Ganha preço sugerido na Asmodee, ainda sem estoque",
+      "link": "noticias/harmonies-crescendo-e-bang-dice-explosion-ganham-preco/"
+    },
+    {
+      "nome": "Magical Athlete",
+      "id_ludopedia": 82348,
+      "motivo": "Corrida de Richard Garfield em pré-venda pela Asmodee",
+      "link": "noticias/magical-athlete-pre-venda-asmodee/"
+    },
+    {
+      "nome": "Caminhos Tortuosos",
+      "id_ludopedia": 81879,
+      "motivo": "Caminhos Tortuosos ganha preço na pré-venda da Devir",
+      "link": "noticias/arnak-caminhos-tortuosos-e-gaudi-ganham-preco/"
+    },
+    {
+      "nome": "Cubaneo",
+      "id_ludopedia": 87034,
+      "motivo": "Na lista de em breve da Ludofun",
+      "link": "noticias/ludofun-cubaneo-innovation-ultimate-em-breve/"
+    },
+    {
+      "nome": "Night at the Zoo",
+      "id_ludopedia": 85328,
+      "motivo": "Do autor de SETI, passa de R$ 286 mil no MeepleStarter",
+      "link": "noticias/night-at-the-zoo-pondscape-bucaneiros/"
+    }
+  ],
+  "financiamentos": [
+    {
+      "nome": "The Danes",
+      "editora": "Feuerland Spiele",
+      "onde": "Gamefound · aberto",
+      "situacao": "€858 mil de 7.844 apoiadores; termina em 05/11",
+      "fonte": "Tabletop Analytics, 03/11/2026",
+      "noticia": "the-danes-rosenberg-gamefound"
+    },
+    {
+      "nome": "Stormlight: War for Roshar",
+      "editora": "Brotherwise Games",
+      "onde": "Kickstarter · aberto",
+      "situacao": "US$ 2,9 milhões de 11.831 apoiadores; termina em 05/11",
+      "fonte": "Kicktraq, 03/11/2026",
+      "noticia": "stormlight-war-for-roshar-kickstarter"
+    },
+    {
+      "nome": "Dice Throne Nexus",
+      "editora": "Dice Throne",
+      "onde": "Kickstarter · encerrado",
+      "situacao": "US$ 2,09 milhões de 14.372 apoiadores",
+      "fonte": "Kicktraq, 03/11/2026",
+      "noticia": "dice-throne-nexus-kickstarter-2-milhoes"
+    },
+    {
+      "nome": "Acelera Bruxa",
+      "editora": "Independente",
+      "onde": "Brasil · encerrado",
+      "situacao": "R$ 48 mil (185% da meta); entrega prevista para 01/02/2027",
+      "fonte": "MeepleStarter, 03/11/2026",
+      "noticia": "acelera-bruxa-fecha-financiamento-meeplestarter"
+    },
+    {
+      "nome": "Through the Mountains",
+      "editora": "Allplay",
+      "onde": "Kickstarter · aberto",
+      "situacao": "US$ 251 mil; termina em 12/11",
+      "fonte": "Kicktraq, 02/11/2026",
+      "noticia": "through-the-mountains-knizia-kickstarter"
+    },
+    {
+      "nome": "Night at the Zoo e Pondscape",
+      "editora": "Bucaneiros Jogos",
+      "onde": "Brasil · aberto",
+      "situacao": "R$ 286 mil (1.146% da meta); termina em 10/11",
+      "fonte": "MeepleStarter, 01/11/2026",
+      "noticia": "night-at-the-zoo-pondscape-bucaneiros"
+    },
+    {
+      "nome": "Oceanos",
+      "editora": "Ace Studios",
+      "onde": "Brasil · abre em 10/11",
+      "situacao": "Pré-campanha no MeepleStarter",
+      "fonte": "MeepleStarter, 01/11/2026",
+      "noticia": "oceanos-ace-studios-meeplestarter"
+    },
+    {
+      "nome": "Brava Gente e Oyó",
+      "editora": "Independente",
+      "onde": "Brasil · aberto",
+      "situacao": "Metas batidas; Oyó até 09/11, Brava Gente até 10/12",
+      "fonte": "MeepleStarter, 01/11/2026",
+      "noticia": "brava-gente-e-oyo-batem-a-meta"
+    },
+    {
+      "nome": "An Infamous Traffic",
+      "editora": "Wehrlegig Games",
+      "onde": "Kickstarter · encerrado",
+      "situacao": "US$ 726 mil de 7.877 apoiadores",
+      "fonte": "Kicktraq, 01/11/2026",
+      "noticia": "an-infamous-traffic-cole-wehrle-fecha-kickstarter"
+    },
+    {
+      "nome": "Spellrift Legends",
+      "editora": "Ludens Spirit",
+      "onde": "Brasil · aberto",
+      "situacao": "R$ 121 mil (610% da meta); termina em 20/11",
+      "fonte": "MeepleStarter, 31/10/2026",
+      "noticia": "spellrift-legends-financiamento-meeplestarter"
+    },
+    {
+      "nome": "Nemesis Legacy",
+      "editora": "Awaken Realms",
+      "onde": "Gamefound · encerrado",
+      "situacao": "€12,58 milhões de 33 mil apoiadores",
+      "fonte": "Tabletop Analytics, 31/10/2026",
+      "noticia": "nemesis-legacy-fecha-com-12-milhoes-de-euros"
+    },
+    {
+      "nome": "Arkham Horror Remastered",
+      "editora": "Fantasy Flight Games",
+      "onde": "Gamefound · aberto",
+      "situacao": "US$ 2,96 milhões; termina em 05/11",
+      "fonte": "Tabletop Analytics, 31/10/2026",
+      "noticia": "arkham-horror-remastered-gamefound"
+    },
+    {
+      "nome": "Eleição",
+      "editora": "Independente",
+      "onde": "Brasil · encerrado",
+      "situacao": "R$ 183 mil no Catarse; previsto para dezembro",
+      "fonte": "Catarse, 30/10/2026",
+      "noticia": "eleicao-e-rogue-duel-independentes-dezembro"
+    },
+    {
+      "nome": "BattleForge: Berserker",
+      "editora": "Calamity Games",
+      "onde": "Brasil · aberto",
+      "situacao": "Pré-venda no MeepleStarter até 15/11",
+      "fonte": "MeepleStarter, 28/10/2026",
+      "noticia": "financiamentos-abertos-battleforge-dia-da-caca"
+    },
+    {
+      "nome": "Dia da Caça",
+      "editora": "Ludovia Estúdio",
+      "onde": "Brasil · aberto",
+      "situacao": "62% da meta, termina em 06/11",
+      "fonte": "MeepleStarter, 28/10/2026",
+      "noticia": "financiamentos-abertos-battleforge-dia-da-caca"
+    },
+    {
+      "nome": "Excursions – a Galactic Cruise Game",
+      "editora": "Kinson Key Games",
+      "onde": "Kickstarter · encerrado",
+      "situacao": "US$ 660 mil de 6.229 apoiadores",
+      "fonte": "Kicktraq, 01/11/2026",
+      "noticia": "excursions-fecha-kickstarter-660-mil"
+    }
+  ],
+  "agenda": [
+    {
+      "quando": "Novembro",
+      "titulo": "11 jogos de tabuleiro previstos no Brasil",
+      "detalhe": "Nosso calendário de lançamentos",
+      "previsto": false,
+      "link": "lancamentos/"
+    },
+    {
+      "quando": "26 a 28 fev 2027",
+      "titulo": "Festival International des Jeux, Cannes",
+      "detalhe": "Entrega do As d'Or",
+      "previsto": false,
+      "noticia": "cannes-2027-as-dor"
+    },
+    {
+      "quando": "Abril de 2027",
+      "titulo": "Indicados ao Golden Geek",
+      "detalhe": "Pela data dos anos anteriores",
+      "previsto": true,
+      "noticia": "guia-dos-premios-2027"
+    },
+    {
+      "quando": "Maio de 2027",
+      "titulo": "Indicados ao Spiel des Jahres",
+      "detalhe": "Pela data dos anos anteriores",
+      "previsto": true,
+      "noticia": "guia-dos-premios-2027"
+    },
+    {
+      "quando": "9 a 11 jul 2027",
+      "titulo": "Diversão Offline, São Paulo",
+      "detalhe": "Datas indicadas no site do evento",
+      "previsto": true,
+      "noticia": "diversao-offline-2027"
+    },
+    {
+      "quando": "21 a 24 out 2027",
+      "titulo": "SPIEL Essen 2027",
+      "detalhe": "Datas anunciadas pela organização",
+      "previsto": false,
+      "noticia": "spiel-essen-2026-recorde-230-mil-visitantes"
+    }
+  ]
 }

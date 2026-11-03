@@ -32,10 +32,10 @@
   ]
  ],
  "corpo": [
-  "Nexus leva Dice Throne para um canto tecnológico do seu universo, com quatro personagens originais de tema ciberpunk. A campanha abriu em 13 de outubro e, além dos duelos de sempre, promete uma experiência cooperativa, segundo a descrição do projeto. O Tabletop Analytics registrava US$ 2.089.923 de 14.374 apoiadores e marca o fim para 4 de novembro, pelo fuso da plataforma.",
+  "Nexus leva Dice Throne para um canto tecnológico do seu universo, com quatro personagens originais de tema ciberpunk. A campanha abriu em 13 de outubro e, além dos duelos de sempre, traz um modo cooperativo, segundo a descrição do projeto. O Tabletop Analytics registrava US$ 2.089.923 de 14.374 apoiadores e marca o fim para 4 de novembro, pelo fuso da plataforma.",
   "Em Dice Throne, cada jogador controla um herói com tabuleiro, cartas e dados próprios e rola até três vezes por turno, no estilo de um jogo de dados de combinação, para disparar habilidades contra o adversário. Os heróis de conjuntos diferentes se enfrentam entre si."
  ],
- "no_brasil": "A Conclave lançou Dice Throne em português em 2022, com caixas como Monge contra Paladino; em 03/11/2026 o ComparaJogos não mostrava oferta de jogo novo dessa caixa. Não encontramos edição nacional de Dice Throne Nexus até 03/11/2026. Quem apoiou recebe a caixa em inglês.",
+ "no_brasil": "A Conclave lançou Dice Throne em português em 2022, com caixas como Monge contra Paladino; em 03/11/2026 o ComparaJogos não mostrava oferta de jogo novo dessa caixa. Nexus não aparece no ComparaJogos nem em buscas por lojas brasileiras até 03/11/2026. Quem apoiou recebe a caixa em inglês.",
  "critica": [
   {
    "fonte": "GameTyrant",
@@ -94,7 +94,12 @@
    "data": "03/11/2026"
   }
  ],
- "imagem": null,
+ "imagem": {
+  "arquivo": "capas/dice-throne-nexus-kickstarter-2-milhoes.jpg",
+  "credito": "Imagem: Dice Throne · arte do anúncio de Nexus no site oficial",
+  "origem": "https://dicethrone.com/wp-content/uploads/2026/10/8eaef5bcec0bf179b34342a73cbb0dfdcd437685.webp",
+  "pagina": "https://www.dicethrone.com/"
+ },
  "jogos": [],
  "crivo": {
   "pontos": 4,
@@ -124,5 +129,6 @@
    ],
    "obs": "Conclave Editora (2022), sem oferta de jogo novo em 03/11/2026"
   }
- ]
+ ],
+ "publicado_em": "2026-11-03T10:06:30+00:00"
 }
