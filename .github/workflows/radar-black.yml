@@ -1,7 +1,7 @@
 # Radar Black de Verdade (eliteboardgamers.com.br/black/): leitura de preços do Compara Jogos.
 # Pedido do usuário em 03/11/2026: leitura nova de 30 em 30 minutos.
 #  - a cada 30 min: "rapida" (quedas de preço + jogos no radar e perto do corte)
-#  - uma vez por dia (14h UTC, 11h de Brasília): "coletar" (lista de acompanhamento inteira)
+#  - a cada 3 horas: "coletar" (lista de acompanhamento inteira)
 #  - domingo, 14h UTC: "varrer" (todos os jogos com preço, renova a lista)
 # Este workflow é o único que grava conteudo/black/, black/ e img/black/ (evita conflito com as rotinas do Claude).
 name: Radar Black de Verdade
@@ -39,8 +39,9 @@ jobs:
           A="${{ github.event.inputs.acao }}"
           if [ -z "$A" ]; then
             H=$(date -u +%H); M=$(date -u +%M); D=$(date -u +%u)
-            if [ "$H" = "14" ] && [ "$M" -lt 30 ]; then
-              if [ "$D" = "7" ]; then A=varrer; else A=coletar; fi
+            # lista inteira a cada 3 horas (5h, 8h, 11h, 14h, 17h, 20h, 23h e 2h UTC); varredura completa no domingo às 14h UTC
+            if [ $((10#$H % 3)) = "2" ] && [ "$M" -lt 30 ]; then
+              if [ "$D" = "7" ] && [ "$H" = "14" ]; then A=varrer; else A=coletar; fi
             else
               A=rapida
             fi
