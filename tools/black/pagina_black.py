@@ -503,7 +503,9 @@ Disallow: /</pre>
  </section>
 </div></main>
 {rodape(pre)}"""
+    ld = seg_ld = seo.script({"@type": "WebPage", "@id": url, "url": url, "name": titulo, "inLanguage": "pt-BR"},
+                             seo.trilha(("Início", f"{SITE}/"), ("Black de Verdade", f"{SITE}/black/"), ("Robô", url)))
     descr = "O que o robô do Black de Verdade lê nas lojas, com que frequência, o que ele respeita e como pedir ajuste ou exclusão."
     (ROOT / "black" / "robo").mkdir(parents=True, exist_ok=True)
     (ROOT / "black" / "robo" / "index.html").write_text(pagina(titulo, descr, url, f"{SITE}/consulta/capa.jpg", pre, corpo,
-                                                               head_extra="\n" + CSS), encoding="utf-8")
+                                                               head_extra="\n" + CSS, jsonld=ld), encoding="utf-8")
