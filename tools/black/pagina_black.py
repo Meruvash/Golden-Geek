@@ -142,7 +142,7 @@ def build(radar_itens, armadilhas):
                        f'({pct((x["de"] - x["por"]) / x["de"])} de "desconto"), mas a média real do período é {brl(x["ref"])}: '
                        f'desconto real de {pct(max(x["desc"], 0))}.</li>' for x in armadilhas)
     curta = min((x["dias"] for x in radar_itens), default=None)
-    corpo = f"""{cabecalho(pre, "", sub=True)}
+    corpo = f"""{cabecalho(pre, "Black de Verdade")}
 <main id="conteudo" class="in"><div class="nota guia bk">
  {trilha(("Início", pre), ("Black de Verdade", ""))}
  <article class="bloco">
