@@ -7,7 +7,7 @@
  "titulo_busca": "Arcs: resenha do wargame de cartas que venceu o Golden Geek",
  "descricao": "Resenha de Arcs, de Cole Wehrle, vencedor do Golden Geek 2024 de wargame e inovação: como funciona, o que divide a crítica, edição MeepleBR e preço.",
  "titulo_html": "O melhor wargame de 2024 é um jogo de cartas em que ninguém ganha a vaza: <span>Arcs</span>",
- "lede": "Arcs é a ópera espacial de Cole Wehrle, o autor de Root e Oath: de 2 a 4 sociedades disputando o Vértice, uma borda decadente da galáxia, com naves, dados e um baralho de 28 cartas. Venceu o Golden Geek 2024 de wargame e de inovação. Repare na ordem dos fatos. O melhor jogo de guerra do ano é decidido por cartas. E a jogada mais forte do jogo é escrever zero na sua própria carta. A gente explica, e recomenda.",
+ "lede": "Arcs é a ópera espacial de Cole Wehrle, o autor de Root e Oath: de 2 a 4 sociedades disputando o Vértice, uma borda decadente da galáxia, com naves, dados e cartas de ação. Venceu o Golden Geek 2024 de wargame e de inovação. Repare na ordem dos fatos. O melhor jogo de guerra do ano é decidido por cartas. E a jogada mais forte do jogo é escrever zero na sua própria carta. A gente explica, e recomenda.",
  "tags": [
   "2–4 jogadores",
   "60–120 min",
@@ -115,10 +115,10 @@
  "nota_ficha": "Ludopedia e BoardGameGeek bloqueiam acesso automatizado: nota, peso, posição 101 no ranking e melhor número vêm do boardmatch.app, que reproduz o BGG, consultado em 03/11/2026. Componentes e idade são da loja oficial da MeepleBR. Os nomes de regras desta resenha são tradução nossa do manual em inglês; a edição brasileira pode usar outros termos.",
  "como_funciona": [
   "Cada jogador lidera uma sociedade espacial no Vértice, um mapa de seis aglomerados com três planetas e um portão cada. O objetivo é juntar Poder, que são os pontos. A partida acaba quando alguém chega a 27 de Poder com quatro jogadores, 30 com três ou 33 com dois, ou ao fim do quinto capítulo.",
-  "Cada capítulo começa com seis cartas de ação na mão. As cartas têm quatro naipes: Administração (taxar, reparar, influenciar), Agressão (batalhar, mover, garantir), Construção (construir, reparar) e Mobilização (mover, influenciar). Cada carta traz um número e de um a quatro pontos de ação.",
+  "Cada capítulo começa com seis cartas de ação na mão. As cartas têm quatro naipes: Administração (taxar, reparar, influenciar), Agressão (batalhar, mover, garantir), Construção (construir, reparar) e Mobilização (mover, influenciar). Cada carta traz um número e um ou mais pontos de ação.",
   "Quem tem a iniciativa abre a rodada com uma carta e faz uma ação por ponto. Os outros respondem em ordem: superam com o mesmo naipe e número maior e fazem todas as ações da carta; copiam, jogando qualquer carta virada para baixo e fazendo uma ação da carta de abertura; ou mudam de naipe e fazem uma ação só. Quem superou com o número mais alto pega a iniciativa, a não ser que alguém a tenha tomado descartando uma carta extra.",
   "Antes de agir, quem abre pode declarar a ambição mostrada na carta. Um marcador de ambição vai para o mapa, e a carta passa a valer zero, o que facilita perder a iniciativa. As ambições pontuam quem tiver mais combustível e material, cativos, troféus, relíquias ou recursos psiônicos.",
-  "Recursos vêm de cidades taxadas e podem ser gastos para ações extras. Na Batalha, cada nave atacante pega um dado de escaramuça, assalto ou saque, cada um com mais dano e mais risco. Destruir uma cidade rival provoca Indignação: você descarta os recursos daquele tipo e não pode mais gastá-los. No fim do capítulo, primeiro e segundo lugar de cada ambição declarada ganham Poder."
+  "Recursos vêm de cidades taxadas e podem ser gastos para ações extras. Na Batalha, cada nave atacante pega um dado de escaramuça, assalto ou saque, do mais seguro ao mais arriscado. Destruir uma cidade rival provoca Indignação: você descarta recursos e cartas de guilda daquele tipo e não pode mais gastá-los em ações extras. No fim do capítulo, primeiro e segundo lugar de cada ambição declarada ganham Poder."
  ],
  "passos": [
   [
@@ -171,7 +171,7 @@
  ],
  "experiencia": [
   "A primeira coisa que Arcs ensina é humildade. Você recebe seis cartas e elas são o seu orçamento do capítulo inteiro. Veio Construção de sobra e nenhuma Agressão? Parabéns, você é um império pacifista. Não por convicção. Por falta de carta.",
-  "Aí vem a jogada que define o jogo. Você tem a iniciativa e uma carta 4 de Construção com três pontos de ação. Declara a ambição de troféus, o marcador mais valioso vai para o mapa e o seu 4 vira zero. Você constrói duas naves e repara uma. O vizinho supera com um 5, constrói duas vezes e leva a iniciativa. Você acabou de anunciar em voz alta que quer guerra e entregou a vez para quem vai fazer guerra com você. E foi a jogada certa.",
+  "Aí vem a jogada que define o jogo. Você tem a iniciativa e uma carta 4 de Construção com três pontos de ação. Declara a ambição de troféus, o marcador mais valioso vai para o mapa e o seu 4 vira zero. Você constrói um espaçoporto, uma nave nele e repara outra. O vizinho supera com um 5, constrói duas vezes e leva a iniciativa. Você acabou de anunciar em voz alta que quer guerra e entregou a vez para quem vai fazer guerra com você. E foi a jogada certa.",
   "É esse o charme. A Punchboard avisa que ninguém ganha a vaza, e é verdade: a carta não vence nada, só compra ações e decide quem fala primeiro. O jogo de guerra mais premiado do ano é, no fundo, uma discussão sobre quem abre a próxima rodada. Igual a qualquer família no fim do almoço, só que com naves."
  ],
  "citacao": {
@@ -254,7 +254,7 @@
   ]
  ],
  "primeira_partida": "Pelo manual, conte 45 minutos por jogador na primeira partida, ou três horas com quatro. Jogue o modo básico, sem os líderes; a Punchboard e a Board Game Quest recomendam deixar Líderes e Conhecimento para depois de uma ou duas partidas. O que mais confunde é a iniciativa: superar dá a vez, declarar ambição zera a carta. Explique isso com uma rodada aberta na mesa, cartas viradas para cima, antes de valer.",
- "edicao_nacional": "A edição em português é da MeepleBR, com o título Arcs: Conflito e Colapso no Vértice, anunciada para o segundo semestre de 2025. O jogo tem muito texto nas cartas, segundo o ComparaJogos, então a edição nacional faz diferença. Em 03/11/2026, a loja oficial da MeepleBR mostrava o jogo indisponível, sem preço, e o ComparaJogos listava ofertas de jogo novo a partir de R$ 306,81 no Pix.",
+ "edicao_nacional": "A edição em português é da MeepleBR, com o título Arcs: Conflito e Colapso no Vértice, anunciada para o segundo semestre de 2025. O jogo tem muito texto e exige tradução, segundo o ComparaJogos, então a edição nacional faz diferença. Em 03/11/2026, a loja oficial da MeepleBR mostrava o jogo indisponível, sem preço, e o ComparaJogos listava ofertas de jogo novo a partir de R$ 306,81 no Pix.",
  "preco_ref": {
   "faixa": "a partir de R$ 306,81 no Pix",
   "data": "03/11/2026",
@@ -265,7 +265,7 @@
   [
    "Oath: Crônicas de Império e Exílio",
    "oath",
-   "Do mesmo autor e com a mesma ideia de mundo que muda de dono, mas mais longo e com crônica que passa de uma partida para outra. Arcs é a versão que cabe numa noite."
+   "Do mesmo autor e com a mesma ideia de império que cai, mas com uma crônica que passa de uma partida para outra. Arcs recomeça do zero, a não ser com a expansão de campanha."
   ],
   [
    "Root",
@@ -275,7 +275,7 @@
   [
    "The Crew: The Quest for Planet Nine",
    "the-crew",
-   "Para quem gosta de jogo de vaza e quer ver a mecânica pura, cooperativa e em 20 minutos. Arcs pega a mesma lógica de seguir naipe e usa para mover naves."
+   "Se a sua mesa joga copas ou truco, aqui está a vaza pura, cooperativa, para 3 a 5 pessoas e em 20 minutos. Arcs pega a mesma lógica de seguir naipe e usa para mover naves."
   ]
  ],
  "para_quem": [
