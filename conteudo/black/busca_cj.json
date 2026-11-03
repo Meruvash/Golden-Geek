@@ -16,6 +16,7 @@
  "adicional ao fechar pedido rebel princess edicao deluxe a mistura definitiva de tematica e estrategia um jogo de cartas rapido viciante": null,
  "adicional ao fechar pedido sherlock files vol 4 fatal frontiers": null,
  "adicional ao fechar pedido suburbia expansions 2a edicao": null,
+ "adicional ao fechar pedido the search for planet x": null,
  "adicional ao fechar pedido unstable games casting shadows the ice storm expansion designed to be added to your casting shadows card gam": null,
  "adventure stories": null,
  "aeons end shattered dreams": null,
@@ -160,6 +161,15 @@
  "dobble princesas": null,
  "dobble stitch": null,
  "dobble super mario": null,
+ "dungeons dragons descida ao avernus": {
+  "imagem": "https://uploads.comparajogos.com.br/img/d91af3845f6dd3872a0d614caf50ac122c95c185.jpg",
+  "menor": 55.71,
+  "nome": "Dungeons & Dragons: Descida ao Avernus",
+  "ref": 185.07,
+  "ref_dias": 32,
+  "slug": "dungeons-dragons-descida-ao-avernus",
+  "tipo": "rpg"
+ },
  "eclipse meeple br": null,
  "enquadrados": {
   "imagem": "https://uploads.comparajogos.com.br/img/c350e0c523600f25073ee091681e363c698ac58d.png",
@@ -264,6 +274,15 @@
   "slug": "homem-batata",
   "tipo": "game"
  },
+ "hungry hungry hippos grab go": {
+  "imagem": "https://uploads.comparajogos.com.br/img/aff180ac395637679115f5e143d8aa69228fee9a.jpg",
+  "menor": 28.99,
+  "nome": "Hungry Hungry Hippos Grab & Go",
+  "ref": 40.98,
+  "ref_dias": 32,
+  "slug": "hungry-hungry-hippos-grab-go",
+  "tipo": "game"
+ },
  "illuminati bavarian fire drill": {
   "imagem": "https://uploads.comparajogos.com.br/img/54b20618048d2d6cbef9dce8b04855bde5134b9a.jpg",
   "menor": null,
@@ -275,6 +294,7 @@
  },
  "jogo de cartas galapagos de 2 jogadores": null,
  "jogo de tabuleiro imagem e acao 1 grow 1708": null,
+ "jogo dorfromantik 1 6 jogadores 8 anos across the board": null,
  "klask": {
   "imagem": "https://uploads.comparajogos.com.br/img/de8411d1101ad154f8ba37a0b88a345c7d1c9c3e.jpg",
   "menor": 381.99,
@@ -333,6 +353,15 @@
   "ref": 163.84,
   "ref_dias": 32,
   "slug": "marrakech",
+  "tipo": "game"
+ },
+ "mazescape kids hipnos": {
+  "imagem": "https://uploads.comparajogos.com.br/img/7902fc8641bf1ab4964115b824ea2c70f7ce3a75.jpg",
+  "menor": 46.49,
+  "nome": "Mazescape Kids: Hipnos",
+  "ref": 74.4,
+  "ref_dias": 32,
+  "slug": "mazescape-kids-hipnos",
   "tipo": "game"
  },
  "meeple br eletrika": {
@@ -498,6 +527,7 @@
   "slug": "papua",
   "tipo": "game"
  },
+ "pass pass jogo de cartas estrategico para 3 a 6 jogadores idade 9 versao original em portugues": null,
  "phebo folhas de menta 200ml": null,
  "piratas 3a edicao 10 anos": {
   "imagem": "https://uploads.comparajogos.com.br/img/ed4bd4d39a033dccc4ee228f156328ce4ed1b71f.jpg",
@@ -516,6 +546,15 @@
   "ref": 67.09,
   "ref_dias": 32,
   "slug": "prey-another-day",
+  "tipo": "game"
+ },
+ "race to pattern palace": {
+  "imagem": "https://uploads.comparajogos.com.br/img/8b5955a2759d8e7d3ae16853584820b4e7095dfd.jpg",
+  "menor": 158.28,
+  "nome": "Race to Pattern Palace!",
+  "ref": 164.59,
+  "ref_dias": 5,
+  "slug": "race-to-pattern-palace",
   "tipo": "game"
  },
  "rio grande games elfenroads game": null,
@@ -598,6 +637,24 @@
   "ref": 137.36,
   "ref_dias": 32,
   "slug": "sound-box",
+  "tipo": "game"
+ },
+ "space aztecs papergames": {
+  "imagem": "https://uploads.comparajogos.com.br/img/d88a3492face2faca0bb3c57e4b958fe95e1b6c7.png",
+  "menor": 99.0,
+  "nome": "Space Aztecs",
+  "ref": 114.25,
+  "ref_dias": 32,
+  "slug": "space-aztecs",
+  "tipo": "game"
+ },
+ "spicy": {
+  "imagem": "https://uploads.comparajogos.com.br/img/b2428074285ec7d47a3bd81b49780b4eb866a2e5.png",
+  "menor": 60.34,
+  "nome": "Spicy",
+  "ref": 70.48,
+  "ref_dias": 32,
+  "slug": "spicy",
   "tipo": "game"
  },
  "spooky stories": null,
