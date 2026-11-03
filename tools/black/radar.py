@@ -339,10 +339,11 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("acao", choices=["varrer", "coletar", "rapida", "pagina"])
     ap.add_argument("--limite", type=int)
+    ap.add_argument("--desde", type=int, default=0, help="retoma a varredura a partir desta posição do sitemap")
     a = ap.parse_args()
     _t = trava() if a.acao != "pagina" else None  # noqa: F841
     if a.acao == "varrer":
-        coletar(slugs_sitemap(), registrar_lista=True, limite=a.limite)
+        coletar(slugs_sitemap()[a.desde:], registrar_lista=True, limite=a.limite)
     elif a.acao == "coletar":
         alvo = list(dict.fromkeys(ler(LISTA, []) + slugs_quedas()))
         coletar(alvo, registrar_lista=True, limite=a.limite)
