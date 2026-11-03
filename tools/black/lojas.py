@@ -46,11 +46,26 @@ _estado = _carregar()
 
 
 def salvar():
-    """Grava contadores, descansos e preços lidos (chamado no fim de cada leitura)."""
+    """Grava contadores, descansos e preços lidos, somando com o que o outro robô gravou enquanto este lia."""
+    import fcntl
     agora = dt.datetime.now(dt.timezone.utc)
-    corte = (agora - REUSO * 4).isoformat()
-    _estado["precos"] = {u: v for u, v in _estado["precos"].items() if v.get("hora", "") >= corte}
-    ESTADO.write_text(json.dumps(_estado, ensure_ascii=False, indent=1, sort_keys=True) + "\n", encoding="utf-8")
+    with open(ESTADO.parent / ".dados_trava", "w") as trava:
+        fcntl.flock(trava, fcntl.LOCK_EX)
+        disco = _carregar()
+        for dom, l in _estado["lojas"].items():
+            d = disco["lojas"].setdefault(dom, {})
+            if d.get("dia") == l.get("dia"):
+                d["paginas"] = max(d.get("paginas", 0), l.get("paginas", 0))
+            elif l.get("dia", "") > d.get("dia", ""):
+                d.update({"dia": l["dia"], "paginas": l.get("paginas", 0)})
+            if l.get("descanso_ate", "") > d.get("descanso_ate", ""):
+                d.update({"descanso_ate": l["descanso_ate"], "motivo": l.get("motivo")})
+        for u, v in _estado["precos"].items():
+            if v.get("hora", "") >= disco["precos"].get(u, {}).get("hora", ""):
+                disco["precos"][u] = v
+        corte = (agora - REUSO * 4).isoformat()
+        disco["precos"] = {u: v for u, v in disco["precos"].items() if v.get("hora", "") >= corte}
+        ESTADO.write_text(json.dumps(disco, ensure_ascii=False, indent=1, sort_keys=True) + "\n", encoding="utf-8")
 
 
 def _loja(dom):

@@ -1,0 +1,43 @@
+# Robô normal do Black de Verdade: leitura rápida a cada 30 minutos (pedido do usuário em 03/11/2026).
+# Este workflow e o do outro robô gravam conteudo/black/, black/ e img/black/ por mescla (cada robô só regrava o que leu).
+name: Radar Black: robô normal
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: radar-black-normal
+  cancel-in-progress: false
+
+jobs:
+  radar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - run: pip install requests Pillow beautifulsoup4 lxml feedparser
+      - name: Lê os preços
+        env:
+          KEEPA_KEY: ${{ secrets.KEEPA_KEY }}
+          ML_CLIENT_ID: ${{ secrets.ML_CLIENT_ID }}
+          ML_CLIENT_SECRET: ${{ secrets.ML_CLIENT_SECRET }}
+        run: python3 tools/black/robo_normal.py
+      - name: Publica
+        run: |
+          git config user.name "Radar Black (Elite Boardgamers)"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add conteudo/black black img/black
+          if git diff --cached --quiet; then echo "nada mudou"; exit 0; fi
+          git commit -m "Radar Black: robô normal de $(TZ=America/Sao_Paulo date +'%d/%m/%Y %Hh%M')"
+          for i in 1 2 3 4; do git pull --rebase -X theirs origin main && git push origin HEAD:main && break; sleep $((i*5)); done
+          curl -s -X POST -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/${{ github.repository }}/pages/builds" || true

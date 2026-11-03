@@ -79,6 +79,65 @@ def gravar(p, d):
     p.write_text(json.dumps(d, ensure_ascii=False, indent=1, sort_keys=True) + "\n", encoding="utf-8")
 
 
+class _TravaDados:
+    """Trava curta em volta de cada leitura-e-gravação dos arquivos compartilhados pelos dois robôs."""
+    def __enter__(self):
+        import fcntl
+        DADOS.mkdir(parents=True, exist_ok=True)
+        self.f = open(DADOS / ".dados_trava", "w")
+        fcntl.flock(self.f, fcntl.LOCK_EX)
+        return self
+
+    def __exit__(self, *a):
+        self.f.close()
+
+
+def _hora(of):
+    return max([of.get("verificado", "")] + [x.get("hora", "") for o in of.get("ofertas", []) for x in (o.get("loja_agora") or {}, o.get("api") or {})])
+
+
+def _juntar_oferta(nova, velha):
+    """Duas versões do mesmo jogo em ofertas.json: fica a leitura mais nova do Compara Jogos, com a conferência
+    na loja (loja_agora) e a das APIs (api) mais recentes de cada link."""
+    base, outra = (nova, velha) if nova.get("verificado", "") >= velha.get("verificado", "") else (velha, nova)
+    extra = {o.get("url"): o for o in outra.get("ofertas", [])}
+    for o in base.get("ofertas", []):
+        e = extra.get(o.get("url"))
+        if not e:
+            continue
+        for k in ("loja_agora", "api"):
+            if e.get(k) and (not o.get(k) or e[k].get("hora", "") > o[k].get("hora", "")):
+                o[k] = e[k]
+    return base
+
+
+def mesclar(p, mudou, apagar=()):
+    """Grava só os jogos que este robô mexeu, por cima da versão que está no disco agora (o outro robô pode ter gravado)."""
+    with _TravaDados():
+        atual = ler(p, {})
+        for k, v in mudou.items():
+            if k in atual and p == HIST:
+                pts = dict(atual[k].get("pontos", {}))
+                for d, preco in v.get("pontos", {}).items():
+                    pts[d] = min(preco, pts.get(d, 1e9))
+                v = {**v, "pontos": dict(sorted(pts.items()))}
+            elif k in atual and p == HOJE:
+                v = _juntar_oferta(v, atual[k])
+            atual[k] = v
+        for k in apagar:
+            atual.pop(k, None)
+        gravar(p, atual)
+        return atual
+
+
+def mesclar_lista(entra, sai):
+    with _TravaDados():
+        atual = set(ler(LISTA, []))
+        atual |= set(entra)
+        atual -= set(sai)
+        gravar(LISTA, sorted(atual))
+
+
 SESSAO = requests.Session()
 SESSAO.headers.update(HEADERS)
 
@@ -180,10 +239,17 @@ def slugs_quedas():
 def coletar(slugs, registrar_lista=False, limite=None):
     hist = ler(HIST, {})
     hoje_d = ler(HOJE, {})
-    lista = set(ler(LISTA, []))
     prem = premiados()
     hoje = agora().date().isoformat()
     vistos = erros = 0
+    mh, mo, sai_o, entra_l, sai_l = {}, {}, set(), set(), set()
+
+    def salvar():
+        mesclar(HIST, mh), mesclar(HOJE, mo, sai_o)
+        if registrar_lista:
+            mesclar_lista(entra_l, sai_l)
+        mh.clear(), mo.clear(), sai_o.clear(), entra_l.clear(), sai_l.clear()
+
     for i, s in enumerate(slugs[:limite] if limite else slugs):
         try:
             it = ler_item(s)
@@ -201,9 +267,9 @@ def coletar(slugs, registrar_lista=False, limite=None):
         vistos += 1
         ok = qualifica(it, prem)
         if registrar_lista:
-            (lista.add if ok else lista.discard)(s)
+            (entra_l if ok else sai_l).add(s)
         if not ok:
-            hoje_d.pop(s, None)
+            sai_o.add(s)
             continue
         h = hist.setdefault(s, {"pontos": {}})
         h.update({k: it[k] for k in ("nome", "tipo", "ano", "bgg", "bgg_id", "editora", "editora_br", "imagem")})
@@ -214,16 +280,13 @@ def coletar(slugs, registrar_lista=False, limite=None):
             h["pontos"][hoje] = min([*lojas, h["pontos"].get(hoje, 1e9)])
         corte = (agora().date() - dt.timedelta(days=JANELA + 10)).isoformat()
         h["pontos"] = {d: p for d, p in sorted(h["pontos"].items()) if d >= corte}
-        hoje_d[s] = {"verificado": agora().isoformat(timespec="minutes"), "ofertas": it["ofertas"]}
+        mh[s] = h
+        mo[s] = hoje_d[s] = {"verificado": agora().isoformat(timespec="minutes"), "ofertas": it["ofertas"]}
         if i % 100 == 0:
-            print(f"  {i} páginas, {vistos} produtos, {len(hoje_d)} acompanhados")
-            gravar(HIST, hist), gravar(HOJE, hoje_d)
-            if registrar_lista:
-                gravar(LISTA, sorted(lista))
-    gravar(HIST, hist), gravar(HOJE, hoje_d)
-    if registrar_lista:
-        gravar(LISTA, sorted(lista))
-    print(f"ok {vistos} produtos lidos, {erros} erros, {len(hoje_d)} jogos acompanhados")
+            print(f"  {i} páginas, {vistos} produtos")
+            salvar()
+    salvar()
+    print(f"ok {vistos} produtos lidos, {erros} erros, {len(ler(HOJE, {}))} jogos acompanhados")
 
 
 def aparada(valores):
@@ -238,6 +301,7 @@ def conferir_lojas(margem=0.15):
     import lojas
     hist, hoje_d = ler(HIST, {}), ler(HOJE, {})
     lidas = 0
+    mexidos = set()
     for s, of in hoje_d.items():
         pts = list(hist.get(s, {}).get("pontos", {}).values())
         if len(pts) < 5:
@@ -253,7 +317,8 @@ def conferir_lojas(margem=0.15):
             lidas += 1
             if r:
                 o["loja_agora"] = {**r, "hora": agora().isoformat(timespec="minutes")}
-    gravar(HOJE, hoje_d)
+                mexidos.add(s)
+    hoje_d = mesclar(HOJE, {s: hoje_d[s] for s in mexidos})
     ok = sum(1 for of in hoje_d.values() for o in of["ofertas"] if o.get("loja_agora"))
     print(f"ok lojas: {lidas} páginas tentadas, {ok} conferidas; bloqueadas: {', '.join(lojas.bloqueadas()) or 'nenhuma'}")
 
@@ -337,29 +402,39 @@ def perto_do_corte(maximo=350):
     return [s for _, s in sorted(notas)[:maximo]]
 
 
-def trava():
-    """Impede duas coletas ao mesmo tempo (a diária e a de 30 em 30 minutos gravam os mesmos arquivos)."""
+def trava(robo):
+    """Cada robô tem a sua trava: o mesmo robô não roda duas vezes ao mesmo tempo, mas o normal e o educado rodam juntos."""
     import fcntl
     DADOS.mkdir(parents=True, exist_ok=True)
-    f = open(DADOS / ".trava", "w")
+    f = open(DADOS / f".trava_{robo}", "w")
     try:
         fcntl.flock(f, fcntl.LOCK_EX | fcntl.LOCK_NB)
     except BlockingIOError:
-        sys.exit("outra coleta do radar está em andamento; esta leitura foi pulada")
+        sys.exit(f"o robô {robo} ainda está na leitura anterior; esta foi pulada")
     return f
 
 
-def main():
+def main(robo=None, acao=None):
+    """Dois robôs independentes, cada um com a sua agenda e a sua trava (pedido do usuário em 03/11/2026):
+      robô normal  (tools/black/robo_normal.py):  leitura rápida de quedas e candidatos, conferência nas lojas no
+                    ritmo do primeiro robô e promoções do Promobit; feito para pegar oferta nova cedo.
+      robô educado (tools/black/robo_educado.py): lista inteira (ou varredura do sitemap), conferência educada nas
+                    lojas, Keepa e Mercado Livre, feeds e cupons.
+    Os dois gravam os mesmos arquivos por mescla (cada um só regrava os jogos que leu)."""
     ap = argparse.ArgumentParser()
-    ap.add_argument("acao", choices=["varrer", "coletar", "rapida", "pagina"])
+    ap.add_argument("acao", nargs="?", choices=["varrer", "coletar", "rapida", "pagina"], default=acao)
+    ap.add_argument("--robo", choices=["normal", "educado"], default=robo)
     ap.add_argument("--limite", type=int)
-    ap.add_argument("--modo", choices=["normal", "educado"], help="ritmo do robô de conferência nas lojas (padrão: normal na leitura rápida, educado nas outras)")
     ap.add_argument("--desde", type=int, default=0, help="retoma a varredura a partir desta posição do sitemap")
     a = ap.parse_args()
-    _t = trava() if a.acao != "pagina" else None  # noqa: F841
+    if not a.acao:
+        ap.error("diga a leitura (rapida, coletar, varrer ou pagina)")
+    robo = a.robo or ("normal" if a.acao == "rapida" else "educado")
+    _t = trava(robo) if a.acao != "pagina" else None  # noqa: F841
     sys.path.insert(0, str(Path(__file__).resolve().parent))
     import lojas
-    lojas.modo(a.modo or ("normal" if a.acao == "rapida" else "educado"))
+    lojas.modo(robo)
+    print(f"-- robô {robo}, leitura {a.acao}")
     if a.acao == "varrer":
         coletar(slugs_sitemap()[a.desde:], registrar_lista=True, limite=a.limite)
     elif a.acao == "coletar":
@@ -367,24 +442,28 @@ def main():
         coletar(alvo, registrar_lista=True, limite=a.limite)
     elif a.acao == "rapida":
         coletar(list(dict.fromkeys(slugs_quedas() + perto_do_corte())), limite=a.limite)
-    sys.path.insert(0, str(Path(__file__).resolve().parent))
     if a.acao != "pagina":
-        import apis
-        ofertas = ler(HOJE, {})
-        apis.enriquecer(ofertas, so=set(perto_do_corte(1200 if a.acao != "rapida" else 400)))
-        import feeds
-        feeds.juntar(ler(HIST, {}), ofertas)
-        gravar(HOJE, ofertas)
+        if robo == "educado":
+            import apis
+            import feeds
+            ofertas = ler(HOJE, {})
+            alvo = set(perto_do_corte(1200))
+            apis.enriquecer(ofertas, so=alvo)
+            feeds.juntar(ler(HIST, {}), ofertas)
+            mesclar(HOJE, {s: ofertas[s] for s in ofertas if s in alvo or any(o.get("fonte") == "feed da loja" for o in ofertas[s]["ofertas"])})
         conferir_lojas()
-        import cupons
         import promobit
-        cupons.ler()
-        promobit.ler()
-    if a.acao != "pagina":
-        import lojas
+        if robo == "educado":
+            import cupons
+            cupons.ler()
+            promobit.ler_cupons()
+        else:
+            promobit.ler_ofertas()
         lojas.salvar()
     import pagina_black
-    pagina_black.build(*calcular())
+    with _TravaDados():
+        r = calcular()
+    pagina_black.build(*r)
     pagina_black.robo()
 
 

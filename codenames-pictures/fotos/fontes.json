@@ -1,0 +1,57 @@
+{
+ "slug": "codenames-pictures",
+ "usar_na_pagina": true,
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 1054,
+   "altura": 1600,
+   "editora": "IELLO",
+   "credito": "Imagem: IELLO · edição francesa (IELLO)",
+   "pagina": "https://iello.fr/jeux/codenames-images-nouvelle-edition/",
+   "imagem": "https://iello.fr/wp-content/uploads/2025/11/Codenames_Images_Nouvelle_Edition_3701551705112_1_Mockup_FR_Light-1.jpg",
+   "baixada_em": "2026-11-03",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/mesa-1.webp",
+   "tipo": "mesa",
+   "largura": 1600,
+   "altura": 1200,
+   "editora": "IELLO",
+   "credito": "Imagem: IELLO · edição francesa (IELLO)",
+   "pagina": "https://iello.fr/jeux/codenames-images-nouvelle-edition/",
+   "imagem": "https://iello.fr/wp-content/uploads/2025/11/Codenames-Images-13.jpg",
+   "baixada_em": "2026-11-03",
+   "aprovada": true,
+   "fora": true
+  },
+  {
+   "arquivo": "fotos/mesa-2.webp",
+   "tipo": "mesa",
+   "largura": 1600,
+   "altura": 1200,
+   "editora": "IELLO",
+   "credito": "Imagem: IELLO · edição francesa (IELLO)",
+   "pagina": "https://iello.fr/jeux/codenames-images-nouvelle-edition/",
+   "imagem": "https://iello.fr/wp-content/uploads/2025/11/Codenames-Images-8.jpg",
+   "baixada_em": "2026-11-03",
+   "aprovada": true,
+   "principal": true
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 1600,
+   "altura": 1200,
+   "editora": "IELLO",
+   "credito": "Imagem: IELLO · edição francesa (IELLO)",
+   "pagina": "https://iello.fr/jeux/codenames-images-nouvelle-edition/",
+   "imagem": "https://iello.fr/wp-content/uploads/2025/11/Codenames-Images-19.jpg",
+   "baixada_em": "2026-11-03",
+   "aprovada": true,
+   "jogar": true
+  }
+ ]
+}

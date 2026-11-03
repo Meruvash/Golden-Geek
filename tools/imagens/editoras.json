@@ -655,7 +655,10 @@
   "plataforma": "html",
   "estrategia": "sitemap+html",
   "press_kit": null,
-  "paginas": {},
+  "paginas": {
+   "so-clover": "https://www.rprod.com/en/games/so-clover",
+   "the-lord-of-the-rings": "https://www.rprod.com/en/press/duel-for-middle-earth"
+  },
   "status": "ok",
   "obs": "",
   "robots": {
@@ -1006,7 +1009,9 @@
   "plataforma": "html",
   "estrategia": "sitemap+html",
   "press_kit": null,
-  "paginas": {},
+  "paginas": {
+   "ready-set-bet": "https://www.tlamagames.com/en/board-games/sazky--prosim--herni-podlozka--playmat"
+  },
   "status": "ok",
   "obs": "",
   "robots": {
@@ -1205,7 +1210,9 @@
   "plataforma": "html",
   "estrategia": "sitemap+html",
   "press_kit": "https://www.b2k-media.de",
-  "paginas": {},
+  "paginas": {
+   "thats-pretty-clever": "https://www.schmidtspiele.de/details-93/fruehjahrsneuheit-ganz-schoen-clever.html"
+  },
   "status": "ok",
   "obs": "",
   "robots": {
@@ -1226,7 +1233,10 @@
   "plataforma": "wordpress",
   "estrategia": "sitemap+html",
   "press_kit": "https://www.spiel-des-jahres.de/presseservice-informationen-2026/",
-  "paginas": {},
+  "paginas": {
+   "so-clover": "https://www.spiel-des-jahres.de/empfehlungsliste-spiel-des-jahres-so-kleever/",
+   "thats-pretty-clever": "https://www.spiel-des-jahres.de/spiele/ganz-schoen-clever/"
+  },
   "status": "ok",
   "obs": "",
   "robots": {
@@ -1615,7 +1625,9 @@
   "plataforma": "wordpress",
   "estrategia": "sitemap+html",
   "press_kit": "https://iello.fr/presse/",
-  "paginas": {},
+  "paginas": {
+   "codenames-pictures": "https://iello.fr/jeux/codenames-images-nouvelle-edition/"
+  },
   "status": "ok",
   "obs": "",
   "robots": {
@@ -1658,6 +1670,25 @@
    "sitemaps": [
     "https://www.999games.nl/sitemap.xml"
    ],
+   "verificado_em": "2026-11-03"
+  }
+ },
+ "skellig-games.de": {
+  "nome": "Skellig Games",
+  "apelidos": [
+   "Skellig Games"
+  ],
+  "site": "https://www.skellig-games.de",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [],
    "verificado_em": "2026-11-03"
   }
  }

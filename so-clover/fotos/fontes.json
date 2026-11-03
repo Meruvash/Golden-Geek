@@ -1,0 +1,44 @@
+{
+ "slug": "so-clover",
+ "usar_na_pagina": true,
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 800,
+   "altura": 1072,
+   "editora": "Repos Production",
+   "credito": "Imagem: Repos Production",
+   "pagina": "https://www.rprod.com/en/games/so-clover",
+   "imagem": "https://cdn.svc.asmodee.net/production-rprod/storage/games/So-Clover/sc-box-en-left-1613725975wK8yr-large.png",
+   "baixada_em": "2026-11-03",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/mesa-1.webp",
+   "tipo": "mesa",
+   "largura": 1600,
+   "altura": 1200,
+   "editora": "Spiel des Jahres",
+   "credito": "Imagem: Spiel des Jahres · edição alemã (So Kleever!), foto do Spiel des Jahres",
+   "pagina": "https://www.spiel-des-jahres.de/empfehlungsliste-spiel-des-jahres-so-kleever/",
+   "imagem": "https://www.spiel-des-jahres.de/wp-content/uploads/2022/09/image4.jpeg",
+   "baixada_em": "2026-11-03",
+   "aprovada": true,
+   "jogar": true
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 1600,
+   "altura": 1200,
+   "editora": "Spiel des Jahres",
+   "credito": "Imagem: Spiel des Jahres · edição alemã (So Kleever!), foto do Spiel des Jahres",
+   "pagina": "https://www.spiel-des-jahres.de/empfehlungsliste-spiel-des-jahres-so-kleever/",
+   "imagem": "https://www.spiel-des-jahres.de/wp-content/uploads/2022/09/image3.jpeg",
+   "baixada_em": "2026-11-03",
+   "aprovada": true,
+   "principal": true
+  }
+ ]
+}

@@ -2263,10 +2263,14 @@
      "fonte": "https://en.wikipedia.org/wiki/Spiel_des_Jahres"
     }
    ],
-   "status": "na_fila",
+   "status": "sem_fotos",
    "prioridade": 61,
    "premios_distintos": 2,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "fotos": {
+    "verificado_em": "2026-11-03",
+    "obs": "Schmidt Spiele (schmidtspiele.de, notícia da Frühjahrsneuheit Ganz schön clever: só caixa), Stronghold Games EUA (sem página do jogo no site), Spiel des Jahres (página do jogo, indicado ao Kennerspiel 2018: só caixa e selo)"
+   }
   },
   {
    "jogo": "The Quacks of Quedlinburg",
@@ -2723,10 +2727,14 @@
      "fonte": "https://eliteboardgamers.com.br/"
     }
    ],
-   "status": "na_fila",
+   "status": "sem_fotos",
    "prioridade": 63,
    "premios_distintos": 1,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "fotos": {
+    "verificado_em": "2026-11-03",
+    "obs": "Repos Production (página do jogo e página de imprensa com kit em ZIP: só renders recortados, arte e caixa), Galápagos (bloqueia robôs); sem página no Spiel des Jahres"
+   }
   },
   {
    "jogo": "Earth",
@@ -3004,7 +3012,8 @@
    "status": "na_fila",
    "prioridade": 48,
    "premios_distintos": 1,
-   "carro_chefe": true
+   "carro_chefe": true,
+   "slug": "so-clover"
   },
   {
    "jogo": "The Castles of Burgundy: Special Edition",
@@ -3465,7 +3474,8 @@
    "status": "na_fila",
    "prioridade": 39,
    "premios_distintos": 1,
-   "carro_chefe": true
+   "carro_chefe": true,
+   "slug": "codenames-pictures"
   },
   {
    "jogo": "Mechs vs. Minions",
@@ -4022,10 +4032,14 @@
      "fonte": "https://eliteboardgamers.com.br/"
     }
    ],
-   "status": "na_fila",
+   "status": "sem_fotos",
    "prioridade": 46,
    "premios_distintos": 1,
-   "carro_chefe": true
+   "carro_chefe": true,
+   "fotos": {
+    "verificado_em": "2026-11-03",
+    "obs": "AEG (alderac.com: página do jogo, tag e press release da High Roller Edition: só caixas e renders), TLAMA games (edição tcheca: só caixa), Strohmann Games (edição alemã: 403), Spiel des Jahres (sem página); sem edição nacional localizada"
+   }
   },
   {
    "jogo": "Return to Dark Tower",
