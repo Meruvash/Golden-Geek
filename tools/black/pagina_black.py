@@ -123,6 +123,8 @@ CSS = """<style>
 /* cupons */
 .cupons{display:grid;gap:10px;margin:12px 0 0;padding:0;list-style:none}
 @media (min-width:760px){.cupons{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.of-com{display:inline-block;font-size:.72rem;font-weight:800;padding:3px 8px;border-radius:999px;background:#2b2f3a;color:#e3b23c;margin:0 6px 6px 0}
+.of-post{display:inline-block;font-size:.85rem;font-weight:700;color:#e3b23c;margin:2px 0 6px}
 .cup-img{display:block;aspect-ratio:16/9;border-radius:10px;overflow:hidden;background:#fff;margin-bottom:4px}
 .cup-img img{width:100%;height:100%;object-fit:contain;display:block}.cup-img svg,.of-img svg{width:100%;height:100%;display:block}
 .cup-ref{margin:0;font-size:.86rem;color:#c9ced8}.cup-ref .real-ok{color:#5fd38d}.cup-ref .real-no{color:#ff8a7a}
@@ -294,23 +296,26 @@ def cartao(grupo, pre, cps, agora_, destaque=False, pos=None):
     outras = "".join(f'<li><span>{e(o["loja"])}: <b>{brl(o["por"])}</b> ({pct(o["desc"])} abaixo da média)</span>'
                      f'<a href="{e(o["url"])}" {rel}>Ver</a></li>' for o in grupo[1:])
     calc = (f'<p class="calc">Média do período: {brl(x["ref"])} ({x["dias"]} dias de histórico{", base curta" if x["dias"] < radar.JANELA else ""}). '
-            f'Menor preço do período: {brl(x["menor"])}. Preço lido na {e(x.get("fonte_preco", "Compara Jogos"))}, {hora(x["verificado"], agora_)}.</p>')
+            f'Menor preço do período: {brl(x["menor"])}. '
+            + (f'Preço postado no {e(x["fonte_preco"].removeprefix("achado da comunidade (").rstrip(")"))} {hora(x["verificado"], agora_)}; vendedor e validade não conferidos pelo robô.</p>'
+               if x.get("comunidade") else f'Preço lido na {e(x.get("fonte_preco", "Compara Jogos"))}, {hora(x["verificado"], agora_)}.</p>'))
     dados = (f'data-tipo="{e(x["tipo"])}" data-desc="{x["desc"]:.4f}" data-eco="{eco:.2f}" data-bgg="{x["bgg"] or 0:.2f}" '
              f'data-por="{x["por"]:.2f}" data-rec="{1 if x["recorde"] else 0}" data-busca="{e((nome(x) + " " + " ".join(o["loja"] for o in grupo) + " " + (x["editora"] or "")).lower())}"')
     return f"""<li class="of" {dados}>
  <a class="of-img" href="{e(x["url"])}" {rel} tabindex="-1" aria-hidden="true">{f'<img src="{img}" alt="" loading="lazy" decoding="async" width="{640 if destaque else 240}" height="{640 if destaque else 240}">' if img else ilustra(nome(x), x["loja"])}<span class="of-pct">−{pct(x["desc"])}</span>{f'<span class="pos">{pos}</span>' if pos else ""}</a>
  <div class="of-c">
-  {'<span class="of-rec">Menor preço do período</span>' if x["recorde"] else ""}
+  {'<span class="of-rec">Menor preço do período</span>' if x["recorde"] else ""}{f'<span class="of-com">Achado da comunidade · vendedor não conferido</span>' if x.get("comunidade") else ""}
   <h3 class="of-n">{e(nome(x))}</h3>
   <p class="of-m">{e(x["editora"] or "Editora não informada")} · {"Expansão · " if x["tipo"] == "expansion" else ""}{nota_txt(x)}</p>
   <p class="of-p"><b class="of-por">{brl(x["por"])}</b><span class="of-ref">média <s>{brl(x["ref"])}</s></span></p>
   <div class="of-bar" role="img" aria-label="Preço de hoje é {pct(1 - x["desc"])} da média"><span style="width:{max(4, min(100, (1 - x["desc"]) * 100)):.0f}%"></span></div>
   <p class="of-eco">{brl(eco)} abaixo da média ({pct(x["desc"])})</p>
-  <p class="of-loja">na <b>{loja}</b>{f" (vendido por {e(x['vendedor'])})" if x.get("vendedor") else ""} · preço visto {hora(x["verificado"], agora_)}{"".join(f' <span class="of-cp">cupom {e(c)}</span>' for c in cods)}</p>
+  <p class="of-loja">na <b>{loja}</b>{f" (vendido por {e(x['vendedor'])})" if x.get("vendedor") else ""} · {"postado" if x.get("comunidade") else "preço visto"} {hora(x["verificado"], agora_)}{"".join(f' <span class="of-cp">cupom {e(c)}</span>' for c in cods)}</p>
  </div>
  <div class="of-acao">
   <a class="of-btn" href="{e(x["url"])}" {rel}>Ver na {loja} ↗</a>
   {f'<details class="of-mais"><summary>Mais {len(grupo) - 1} loja{"s" if len(grupo) > 2 else ""} com desconto real</summary><ul>{outras}</ul></details>' if outras else ""}
+  {f'<a class="of-post" href="{e(x["post"])}" target="_blank" rel="noopener nofollow">Ver o post original ↗</a>' if x.get("post") else ""}
   <details class="of-mais"><summary>Como chegamos a esse desconto</summary>{calc}</details>
  </div>
 </li>"""
@@ -455,7 +460,7 @@ def build(radar_itens, armadilhas, quase=()):
  </header>
  <ul class="bk-conf">
   <li>Desconto calculado sobre a média aparada do histórico de preços, não sobre o preço "de" da loja.</li>
-  <li>Preço conferido na página da própria loja, com o horário da leitura em cada oferta.</li>
+  <li>Preço conferido na página da própria loja, com o horário da leitura em cada oferta. Promoções postadas pela comunidade (Telegram e Promobit) também entram na conta, com o selo "achado da comunidade" e link para o post.</li>
   <li>Só jogo bem avaliado: nota 7 ou mais no BGG, ou premiado. Links sem comissão.</li>
  </ul>
  <section id="melhores" aria-labelledby="h-melhores">

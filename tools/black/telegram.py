@@ -50,6 +50,27 @@ def _num(s):
     return float(s.replace(".", "").replace(",", "."))
 
 
+ENCURTADORES = re.compile(r"(?i)ccnl\.app|bit\.ly|tinyurl|cutt\.ly|is\.gd|t\.co\b|encurtador|linktr\.ee|go\.ludofertas")
+
+
+def _lojas_conhecidas():
+    try:
+        of = json.loads((ROOT / "conteudo" / "black" / "ofertas.json").read_text(encoding="utf-8"))
+    except FileNotFoundError:
+        return []
+    nomes = {o.get("loja") for v in of.values() for o in v.get("ofertas", []) if o.get("loja")}
+    return sorted(nomes, key=len, reverse=True)
+
+
+def _loja_no_texto(texto):
+    compacto = re.sub(r"[^a-z0-9]", "", chave(texto))
+    for n in _lojas_conhecidas():
+        k = re.sub(r"[^a-z0-9]", "", chave(n))
+        if len(k) >= 5 and k in compacto:
+            return n
+    return None
+
+
 def _loja(links, texto):
     for u in links:
         d = urlparse(u).netloc.lower()
@@ -134,6 +155,8 @@ def ler():
                 loja, dom = _loja([it["url"]], "")
                 if it["vendido"]:
                     loja = it["vendido"]
+                elif ENCURTADORES.search(it["url"]):
+                    loja = _loja_no_texto(texto) or "loja não identificada (link encurtado)"
                 k = f"tg:{pid}:{n}"
                 novos += k not in dados
                 dados[k] = {"titulo": it["nome"], "preco": it["preco"], "preco_antes": it["antes"] if it["antes"] and it["antes"] > it["preco"] else None,
@@ -168,6 +191,12 @@ def casar(titulo, nomes, hist):
                 if not chave(titulo).startswith(nm + " ") or chave(hist.get(s, {}).get("nome", "")) != chave(titulo):
                     return None
     if "expans" in t and hist.get(s, {}).get("tipo") != "expansion":
+        return None
+    # sobra do título depois de tirar o nome do jogo e o ruído de anúncio (marca, "jogo de tabuleiro", número de
+    # jogadores...): duas palavras ou mais quer dizer outro produto ("Pacote de Cenário", "O Dragão e a Fada")
+    sobra = f" {chave(RUIDO_BUSCA.sub(' ', titulo))} ".replace(f" {nm} ", " ", 1)
+    sobra = [w for w in sobra.split() if len(w) > 2 and w not in nm.split() and w not in ("com", "para", "dos", "das", "the", "and")]
+    if len(sobra) >= 2 and chave(hist.get(s, {}).get("nome", "")) != chave(titulo):
         return None
     return s
 
@@ -227,6 +256,7 @@ def referencia(dados, limite=60):
                     if it and it.get("nome") and casar(v["titulo"], {chave(it["nome"]): s}, {s: {"nome": it["nome"], "tipo": it["tipo"]}}):
                         pts = it["hist30"]
                         achado = {"slug": s, "nome": it["nome"], "imagem": it.get("imagem"), "tipo": it.get("tipo"),
+                                  "bgg": it.get("bgg"), "editora": it.get("editora"),
                                   "ref": round(radar.aparada(pts.values()), 2) if len(pts) >= 5 else None,
                                   "ref_dias": len(pts), "menor": min(pts.values()) if pts else None}
                         break
@@ -237,7 +267,8 @@ def referencia(dados, limite=60):
         a = cache.get(k)
         if a and a.get("ref"):
             v.update({"ref": a["ref"], "ref_dias": a["ref_dias"], "menor": a["menor"], "slug_cj": a["slug"], "imagem": a.get("imagem"),
-                      "ref_fonte": "Compara Jogos"})
+                      "ref_fonte": "Compara Jogos", "nome_cj": a.get("nome"), "tipo_cj": a.get("tipo"), "bgg": a.get("bgg"),
+                      "editora": a.get("editora")})
         elif a is None:
             v["ref_fonte"] = "sem referência"
     BUSCAS.write_text(json.dumps(cache, ensure_ascii=False, indent=1, sort_keys=True) + "\n", encoding="utf-8")

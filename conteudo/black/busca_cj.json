@@ -2,6 +2,8 @@
  "101 dalmatas ludoteca disney": null,
  "7 conjuntos 49 pecas de dados": null,
  "7 wonders dice": {
+  "bgg": 5.82335,
+  "editora": "Repos Production",
   "imagem": "https://uploads.comparajogos.com.br/img/7fd395125e1a1f565a31c9183515a31e005a7e69.jpg",
   "menor": 130.09,
   "nome": "7 Wonders Dice",
@@ -21,6 +23,8 @@
  "adventure stories": null,
  "aeons end shattered dreams": null,
  "age of galaxy": {
+  "bgg": 7.59415,
+  "editora": "ICE Makes",
   "imagem": "https://uploads.comparajogos.com.br/img/af69beaf66b2fa4f95b448c18ca20560873ea308.jpg",
   "menor": null,
   "nome": "Age of Galaxy",
@@ -30,6 +34,8 @@
   "tipo": "game"
  },
  "age of galaxy second edition": {
+  "bgg": 7.41569,
+  "editora": "Portal Games",
   "imagem": "https://uploads.comparajogos.com.br/img/938c694d95064c44d5042a73976734c968556ad7.jpg",
   "menor": null,
   "nome": "Age of Galaxy (Second Edition)",
@@ -39,6 +45,8 @@
   "tipo": "game"
  },
  "agricola": {
+  "bgg": 7.8613,
+  "editora": "Devir",
   "imagem": "https://uploads.comparajogos.com.br/img/89d454310b043d3115c278fe8cdec4c29616b4ce.png",
   "menor": null,
   "nome": "Agricola",
@@ -49,6 +57,8 @@
  },
  "animais fantasticos e onde habitam": null,
  "animix papergames": {
+  "bgg": 6.36628,
+  "editora": "PaperGames",
   "imagem": "https://uploads.comparajogos.com.br/img/d9f8e6e5cb8727e4dff20edfaa0a358944efd132.png",
   "menor": 46.4,
   "nome": "Animix",
@@ -58,10 +68,13 @@
   "tipo": "game"
  },
  "anunciado considerando o frete gratis e parcelamento flip 7 a vinganca": null,
+ "arkham horror card game asmodee pacote de cenario": null,
  "asmodee 7 wonders expansao": null,
  "astro knights orion board game": null,
  "avalon hill heroquest spirit queen s torment quest pack requires heroquest game system to play dungeon crawler games ages 14 2 5 player": null,
  "azul": {
+  "bgg": 7.75868,
+  "editora": "Galápagos Jogos",
   "imagem": "https://uploads.comparajogos.com.br/img/3a275fa0c97799147f95e27be782fe57a0204d40.png",
   "menor": 264.53,
   "nome": "Azul",
@@ -70,8 +83,22 @@
   "slug": "azul",
   "tipo": "game"
  },
+ "beach bandits": {
+  "bgg": 7.11364,
+  "editora": "Happy Camper",
+  "imagem": "https://uploads.comparajogos.com.br/img/7864d7cd44cd1f8dae3aadadee1f53884ff5171a.png",
+  "menor": null,
+  "nome": "Beach Bandits",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "beach-bandits",
+  "tipo": "game"
+ },
+ "bf ficou tanto tempo sem print que e ate estranho ver a venda e ainda em promocao cascadia": null,
  "bf tacta": null,
  "boreal": {
+  "bgg": 5.69742,
+  "editora": "PaperGames",
   "imagem": "https://uploads.comparajogos.com.br/img/3d1fa373838ea0b4c6d7efebe71f55d0e9319c01.jpg",
   "menor": 120.79,
   "nome": "Boreal",
@@ -80,7 +107,21 @@
   "slug": "boreal",
   "tipo": "game"
  },
+ "boss monster rise of the minibosses": {
+  "bgg": 5.81522,
+  "editora": "Brotherwise Games",
+  "imagem": "https://uploads.comparajogos.com.br/img/0948bb87ee3323fcaa1fb620d2bd811dbcc59021.png",
+  "menor": 343.76,
+  "nome": "Boss Monster: Rise of the Minibosses",
+  "ref": 343.76,
+  "ref_dias": 6,
+  "slug": "boss-monster-rise-of-the-minibosses",
+  "tipo": "game"
+ },
+ "brass iron clays": null,
  "carcassonne o dragao e a fada": {
+  "bgg": 6.51697,
+  "editora": "Devir",
   "imagem": "https://uploads.comparajogos.com.br/img/be91d899157fc6dfb4e69cbfad66123008d3c939.jpg",
   "menor": 113.33,
   "nome": "Carcassonne: O Dragão e a Fada",
@@ -90,6 +131,8 @@
   "tipo": "expansion"
  },
  "cashflow 101": {
+  "bgg": 5.29511,
+  "editora": "Cashflow Technologies, Inc.",
   "imagem": "https://uploads.comparajogos.com.br/img/d908665911c2c26b9e964fb7d7383437b5de84e4.jpg",
   "menor": 11.36,
   "nome": "Cashflow 101",
@@ -100,6 +143,8 @@
  },
  "castles of burgundy": null,
  "catan": {
+  "bgg": 7.09088,
+  "editora": "Devir",
   "imagem": "https://uploads.comparajogos.com.br/img/b575f8ce592189b2decf02a86684300ee47c1790.jpg",
   "menor": 232.49,
   "nome": "CATAN",
@@ -109,6 +154,8 @@
   "tipo": "game"
  },
  "claim edicao limitada": {
+  "bgg": 5.68144,
+  "editora": "PaperGames",
   "imagem": "https://uploads.comparajogos.com.br/img/267f2c367d3faeadf198bc956dd04ff50e4a722a.jpg",
   "menor": 134.1,
   "nome": "Claim: Edição Limitada",
@@ -119,6 +166,8 @@
  },
  "clank uma aventura de construcao de baralho": null,
  "coffee rush grab go": {
+  "bgg": 6.03019,
+  "editora": "Korea Boardgames co., Ltd.",
   "imagem": "https://uploads.comparajogos.com.br/img/c8de0954d71341762f8374212c30cf4d670fa281.jpg",
   "menor": 89.96,
   "nome": "Coffee Rush: Grab & Go",
@@ -128,6 +177,8 @@
   "tipo": "game"
  },
  "compile aux 1": {
+  "bgg": 5.82882,
+  "editora": "Greater Than Games",
   "imagem": "https://uploads.comparajogos.com.br/img/c627fa716724f12a1b65cfe37b38bcd6d45fe35e.jpg",
   "menor": null,
   "nome": "Compile: Aux  1",
@@ -136,7 +187,20 @@
   "slug": "compile-aux-1",
   "tipo": "expansion"
  },
+ "cordoba": {
+  "bgg": 6.87143,
+  "editora": "PaperGames",
+  "imagem": "https://uploads.comparajogos.com.br/img/5f639c6d6686933f3fb919f46dca2a3f16fe05a6.png",
+  "menor": 22.91,
+  "nome": "Córdoba",
+  "ref": 23.11,
+  "ref_dias": 32,
+  "slug": "cordoba",
+  "tipo": "game"
+ },
  "cuco": {
+  "bgg": 9,
+  "editora": "Ludofun",
   "imagem": "https://uploads.comparajogos.com.br/img/b57b7e8beb89baf06c58bf55f9f61ec553702065.jpg",
   "menor": 26.97,
   "nome": "Cuco!",
@@ -148,6 +212,8 @@
  "cupons 15 de desconto em compras acima de r 249 limite": null,
  "dairyman dice": null,
  "dark souls the board game the sunless city core set": {
+  "bgg": 6.32143,
+  "editora": "Steamforged Games Ltd.",
   "imagem": "https://uploads.comparajogos.com.br/img/a4679db0bb576073344783f878fe8ce485f1a99f.png",
   "menor": null,
   "nome": "Dark Souls: The Board Game – The Sunless City Core Set",
@@ -157,6 +223,8 @@
   "tipo": "game"
  },
  "devir jogo de tabuleiro mistureba magica 2 a 4 jogadores idade 6": {
+  "bgg": 3,
+  "editora": "Devir",
   "imagem": "https://uploads.comparajogos.com.br/img/44d48884955d9bb6a35816ef007ca7dd334f48cb.jpg",
   "menor": 40.5,
   "nome": "Mistureba Mágica",
@@ -165,12 +233,15 @@
   "slug": "mistureba-magica",
   "tipo": "game"
  },
+ "devir mistborn jogo de tabuleiro 1 a 4 jogadores idade 14 anos": null,
  "digit cod": null,
  "dobble harry potter": null,
  "dobble princesas": null,
  "dobble stitch": null,
  "dobble super mario": null,
  "dungeons dragons descida ao avernus": {
+  "bgg": 6.86667,
+  "editora": null,
   "imagem": "https://uploads.comparajogos.com.br/img/d91af3845f6dd3872a0d614caf50ac122c95c185.jpg",
   "menor": 55.71,
   "nome": "Dungeons & Dragons: Descida ao Avernus",
@@ -180,7 +251,10 @@
   "tipo": "rpg"
  },
  "eclipse meeple br": null,
+ "edicao essencial sem os recursos premium everdell silverfrost": null,
  "enquadrados": {
+  "bgg": 6.5,
+  "editora": "Copag Cards",
   "imagem": "https://uploads.comparajogos.com.br/img/c350e0c523600f25073ee091681e363c698ac58d.png",
   "menor": 54.86,
   "nome": "Enquadrados",
@@ -190,6 +264,8 @@
   "tipo": "game"
  },
  "eternamente temporario": {
+  "bgg": 9,
+  "editora": "Carteado",
   "imagem": "https://uploads.comparajogos.com.br/img/dfe3ff65e897d9dceb2170bdab828f5e48d5d549.png",
   "menor": 74.84,
   "nome": "Eternamente Temporário",
@@ -202,6 +278,8 @@
  "expansao do jogo que ainda nao foi anunciada no brasil critter kitchen a la carte": null,
  "expansao hellas elysium jogo de tabuleiro terraforming mars meeple br": null,
  "exploding kittens bem vs mal": {
+  "bgg": 6.73928,
+  "editora": "Galápagos Jogos",
   "imagem": "https://uploads.comparajogos.com.br/img/d6f0524dfbc7fd39f463216e55f7e00ec9301ffe.png",
   "menor": 36.08,
   "nome": "Exploding Kittens: Bem vs Mal",
@@ -211,6 +289,8 @@
   "tipo": "game"
  },
  "exploding kittens proibidao": {
+  "bgg": 6.23225,
+  "editora": "Galápagos Jogos",
   "imagem": "https://uploads.comparajogos.com.br/img/e099bd9b59767ed15f44cccc09bebed2ba607eb6.jpg",
   "menor": 80.99,
   "nome": "Exploding Kittens: Proibidão",
@@ -220,6 +300,8 @@
   "tipo": "game"
  },
  "fabulinhas": {
+  "bgg": 6.67849,
+  "editora": "Galápagos Jogos",
   "imagem": "https://uploads.comparajogos.com.br/img/fffe00d97ee1902f193a237aafc4328252d3204e.jpg",
   "menor": 65.01,
   "nome": "Fabulinhas",
@@ -229,6 +311,8 @@
   "tipo": "game"
  },
  "fantasma blitz devir": {
+  "bgg": 6.70577,
+  "editora": "Devir",
   "imagem": "https://uploads.comparajogos.com.br/img/fb1ebace88e1482524683010740396f87732e5d3.jpg",
   "menor": 89.91,
   "nome": "Fantasma Blitz",
@@ -240,20 +324,15 @@
  "far cry escape from rook islands": null,
  "fdp foi de proposito": null,
  "flip 7 with a vengeance": null,
+ "fora de ordem adoleta jogos": null,
  "frete gratis": null,
- "galapagos 50 caes jogo de cartas criancas 1 ou jogadores partidas de 20 min": {
-  "imagem": "https://uploads.comparajogos.com.br/img/28c8e2ad69c2ecfb28dc166e4ad242e1a4f4821d.png",
-  "menor": null,
-  "nome": "50 cães",
-  "ref": null,
-  "ref_dias": 0,
-  "slug": "50-caes",
-  "tipo": "game"
- },
+ "galapagos 50 caes jogo de cartas criancas 1 ou jogadores partidas de 20 min": null,
  "galapagos love letter 2a edicao jogo de cartas para 2 a 6 jogadores": null,
  "granado apotecario 75 ml": null,
  "granado bossa 100ml": null,
  "great western trail el paso": {
+  "bgg": 6.15096,
+  "editora": "Lookout Games",
   "imagem": "https://uploads.comparajogos.com.br/img/51dcb758a6dcd4c1ebeb5820fc8b7e6603d08231.jpg",
   "menor": 117.92,
   "nome": "Great Western Trail: El Paso",
@@ -264,7 +343,20 @@
  },
  "gwent": null,
  "gwent o jogo de tabuleiro lendario": null,
+ "h d p 4 hasta donde puedas": {
+  "bgg": null,
+  "editora": "Buró",
+  "imagem": "https://uploads.comparajogos.com.br/img/ec0d278072361e2305970764b33c6abddde87a23.jpg",
+  "menor": 29.9,
+  "nome": "H.D.P. 4: Hasta Donde Puedas",
+  "ref": 33.4,
+  "ref_dias": 32,
+  "slug": "hdp-4-hasta-donde-puedas",
+  "tipo": "expansion"
+ },
  "happy salmon": {
+  "bgg": 6.64318,
+  "editora": "Exploding Kittens",
   "imagem": "https://uploads.comparajogos.com.br/img/52462ae3f9afbde8dc1d6a5fe5de997b90850cd8.jpg",
   "menor": 52.97,
   "nome": "Happy Salmon",
@@ -274,6 +366,8 @@
   "tipo": "game"
  },
  "hint go": {
+  "bgg": 5.68472,
+  "editora": "Bezzerwizzer ApS (Bezzerwizzer Studio)",
   "imagem": "https://uploads.comparajogos.com.br/img/afd4dc0ca56a006089c7e3609b019d6d7b0a0688.jpg",
   "menor": 120.79,
   "nome": "HINT GO",
@@ -284,6 +378,8 @@
  },
  "historias assustadoras": null,
  "hitster": {
+  "bgg": 7.5811,
+  "editora": "Jumbo",
   "imagem": "https://uploads.comparajogos.com.br/img/ccae8197d017d65ddb9b3ce9bdd91a332685cc0b.png",
   "menor": 148.71,
   "nome": "HITSTER",
@@ -293,6 +389,8 @@
   "tipo": "game"
  },
  "homem batata asmodee galapagos 2 a 5 jogadores idade 8": {
+  "bgg": 6.83268,
+  "editora": "Geeks N' Orcs",
   "imagem": "https://uploads.comparajogos.com.br/img/ec2a86a0818e581d874821bb2fa0c33883a19a57.png",
   "menor": 17.99,
   "nome": "Homem Batata",
@@ -302,6 +400,8 @@
   "tipo": "game"
  },
  "hungry hungry hippos grab go": {
+  "bgg": 4.20465,
+  "editora": "Hasbro",
   "imagem": "https://uploads.comparajogos.com.br/img/aff180ac395637679115f5e143d8aa69228fee9a.jpg",
   "menor": 28.99,
   "nome": "Hungry Hungry Hippos Grab & Go",
@@ -311,6 +411,8 @@
   "tipo": "game"
  },
  "illuminati bavarian fire drill": {
+  "bgg": 7.16182,
+  "editora": "Steve Jackson Games",
   "imagem": "https://uploads.comparajogos.com.br/img/54b20618048d2d6cbef9dce8b04855bde5134b9a.jpg",
   "menor": null,
   "nome": "Illuminati: Bavarian Fire Drill",
@@ -319,10 +421,34 @@
   "slug": "illuminati-bavarian-fire-drill",
   "tipo": "expansion"
  },
+ "imagine": {
+  "bgg": 6.81095,
+  "editora": "Galápagos Jogos",
+  "imagem": "https://uploads.comparajogos.com.br/img/83e9b9d6d5877e579db4827af1ebcd70b5c1dec7.jpg",
+  "menor": 124.62,
+  "nome": "Imagine",
+  "ref": 124.62,
+  "ref_dias": 32,
+  "slug": "imagine",
+  "tipo": "game"
+ },
+ "innovation artifacts of history": {
+  "bgg": 7.44912,
+  "editora": "Asmadi Games",
+  "imagem": "https://uploads.comparajogos.com.br/img/b02c3a8267a004377769439c3231e1a725ee688a.jpg",
+  "menor": null,
+  "nome": "Innovation: Artifacts of History",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "innovation-artifacts-of-history",
+  "tipo": "expansion"
+ },
  "jogo de cartas galapagos de 2 jogadores": null,
  "jogo de tabuleiro imagem e acao 1 grow 1708": null,
  "jogo dorfromantik 1 6 jogadores 8 anos across the board": null,
  "klask": {
+  "bgg": 7.62623,
+  "editora": "MEBO Games",
   "imagem": "https://uploads.comparajogos.com.br/img/de8411d1101ad154f8ba37a0b88a345c7d1c9c3e.jpg",
   "menor": 381.99,
   "nome": "KLASK",
@@ -335,7 +461,20 @@
  "lancou esse ano parece simples de jogar e achei bem bonitinho seashells": null,
  "legendary encounters the matrix deck building game": null,
  "lobisomem o apocalipse 5a edicao": null,
+ "ludo": {
+  "bgg": 4.35876,
+  "editora": "Cayro Juegos",
+  "imagem": "https://uploads.comparajogos.com.br/img/f0547121514e9846172ba09b6e03f30a064cf2fe.jpg",
+  "menor": 19.99,
+  "nome": "Ludo",
+  "ref": 46.59,
+  "ref_dias": 32,
+  "slug": "ludo",
+  "tipo": "game"
+ },
  "ludoteca disney branca de neve": {
+  "bgg": 6.83333,
+  "editora": "Grok Games",
   "imagem": "https://uploads.comparajogos.com.br/img/81549c6a8c8071b1f8834ac013066bf7e0830b5a.png",
   "menor": 26.91,
   "nome": "Ludoteca Disney: Branca de Neve",
@@ -346,6 +485,8 @@
  },
  "ludoteca disney o rei leao": null,
  "ludoteca disney rei leao": {
+  "bgg": 6.07143,
+  "editora": "Grok Games",
   "imagem": "https://uploads.comparajogos.com.br/img/aac4c1a6ae4d4449d9a6dab023b1d458a11a0aeb.png",
   "menor": 26.91,
   "nome": "Ludoteca Disney: Rei Leão",
@@ -355,6 +496,8 @@
   "tipo": "game"
  },
  "luz": {
+  "bgg": 7.05303,
+  "editora": "IELLO",
   "imagem": "https://uploads.comparajogos.com.br/img/1b91dd1670c327c029cd12746ba5935f2c3d284f.jpg",
   "menor": 97.52,
   "nome": "LUZ",
@@ -364,6 +507,8 @@
   "tipo": "game"
  },
  "maestro": {
+  "bgg": null,
+  "editora": "Board&Dice",
   "imagem": "https://uploads.comparajogos.com.br/img/330e481e2c06385bfd8e0a05da6d74575ba0b3e8.jpg",
   "menor": 339.0,
   "nome": "Maestro",
@@ -374,6 +519,8 @@
  },
  "mala cuia": null,
  "marrakech": {
+  "bgg": 6.70585,
+  "editora": "Gigamic",
   "imagem": "https://uploads.comparajogos.com.br/img/5abd896a4a729c7e2a4efc8ababad8cdf2fbcff5.jpg",
   "menor": 151.13,
   "nome": "Marrakech",
@@ -383,6 +530,8 @@
   "tipo": "game"
  },
  "mazescape kids hipnos": {
+  "bgg": 6.7725,
+  "editora": "Devir",
   "imagem": "https://uploads.comparajogos.com.br/img/7902fc8641bf1ab4964115b824ea2c70f7ce3a75.jpg",
   "menor": 46.49,
   "nome": "Mazescape Kids: Hipnos",
@@ -392,6 +541,8 @@
   "tipo": "game"
  },
  "meeple br eletrika": {
+  "bgg": 6.73529,
+  "editora": "Meeple BR Jogos",
   "imagem": "https://uploads.comparajogos.com.br/img/f83d41f6a4615914ffcbf732c65f5c6d79aef4d4.jpg",
   "menor": 63.45,
   "nome": "Eletrika",
@@ -401,6 +552,8 @@
   "tipo": "game"
  },
  "meeplebr asteria jogo de cartas 4x 2 jogadores": {
+  "bgg": 6.21471,
+  "editora": "Meeple BR Jogos",
   "imagem": "https://uploads.comparajogos.com.br/img/82b48ab9814d3f32208ba396b49add50860fb1e9.png",
   "menor": 49.68,
   "nome": "Asteria",
@@ -410,6 +563,8 @@
   "tipo": "game"
  },
  "meeplebr balconia jogo de tabuleiro vertical 2 jogadores": {
+  "bgg": 6.66298,
+  "editora": "Meeple BR Jogos",
   "imagem": "https://uploads.comparajogos.com.br/img/34597c05aa9be954a09cb2cba1580a36e9ba3ad1.jpg",
   "menor": 102.21,
   "nome": "Balconia",
@@ -419,21 +574,14 @@
   "tipo": "game"
  },
  "meeplebr biddle 2 a 5 jogadores jogo de cartas e dados party game": {
+  "bgg": 6.75697,
+  "editora": "Meeple BR Jogos",
   "imagem": "https://uploads.comparajogos.com.br/img/3461d1b5edbf6955cc9c079a0734be45c817a3f0.jpg",
   "menor": 97.52,
   "nome": "Biddle",
   "ref": 115.38,
   "ref_dias": 28,
   "slug": "biddle",
-  "tipo": "game"
- },
- "meeplebr castle builder jogos de tabuleiro familia 2 a 4 jogadores": {
-  "imagem": "https://uploads.comparajogos.com.br/img/2f19a0f3151e3219d9b427624af361459a3403f1.jpg",
-  "menor": 125.1,
-  "nome": "Castle Builder",
-  "ref": 143.68,
-  "ref_dias": 32,
-  "slug": "castle-builder",
   "tipo": "game"
  },
  "meeplebr destemidos reforcos expansao da linha destemidos 1 a 4 jogadores": null,
@@ -443,16 +591,9 @@
  "meeplebr expansao kingdom legacy reino feudal aventuras jogo de cartas familia 1 jogador": null,
  "meeplebr expansao paper dungeons side quest jogo de tabuleiro 1 a 8 jogadores": null,
  "meeplebr fate defensores de grimheim expansao sindra e finkel expansao para jogo de tabuleiro expert 1 a 4 jogadores": null,
- "meeplebr fateflip decretos reais jogo solo jogo de cartas para 1 jogador para maiores de 14 anos": {
-  "imagem": "https://uploads.comparajogos.com.br/img/07bf24d8fa78223473f497eae82f5063df1ee248.png",
-  "menor": 45.09,
-  "nome": "FateFlip: Decretos Reais",
-  "ref": 65.9,
-  "ref_dias": 32,
-  "slug": "fateflip-decretos-reais",
-  "tipo": "game"
- },
  "meeplebr foto perfeita jogo de tabuleiro familia 2 a 4 jogadores": {
+  "bgg": 6.97126,
+  "editora": "Meeple BR Jogos",
   "imagem": "https://uploads.comparajogos.com.br/img/47bf98d7c32d8dc35480307d54ac1f632899d20e.jpg",
   "menor": 91.78,
   "nome": "Foto Perfeita",
@@ -462,6 +603,8 @@
   "tipo": "game"
  },
  "meeplebr imperial miners jogo de tabuleiro familia 1 a 5 jogadores": {
+  "bgg": 6.16119,
+  "editora": "Meeple BR Jogos",
   "imagem": "https://uploads.comparajogos.com.br/img/d9767fd44c13ae02ebf1bef393141333e7f73765.png",
   "menor": 134.1,
   "nome": "Imperial Miners",
@@ -470,8 +613,11 @@
   "slug": "imperial-miners",
   "tipo": "game"
  },
+ "meeplebr imperium classicos jogos de tabuleiro expert 1 a 4 jogadores": null,
  "meeplebr kingdom legacy reino feudal jogo de cartas familia 1 jogador": null,
  "meeplebr nanatoridori jogo de cartas familia party game 2 a 6 jogadores": {
+  "bgg": 6.81009,
+  "editora": "Arclight",
   "imagem": "https://uploads.comparajogos.com.br/img/9832107417d4817b87174f9abcc7663d73b8dbc3.png",
   "menor": 63.45,
   "nome": "Nanatoridori",
@@ -481,20 +627,13 @@
   "tipo": "game"
  },
  "meeplebr neuroshima hex battle policia de aco vs feras jogo de tabuleiro expert 2 jogadores": null,
- "meeplebr os gatos de schrodinger jogos familia jogos de carta 2 a 6 jogadores": {
-  "imagem": "https://uploads.comparajogos.com.br/img/45732bd9ee1f7663475d5acba220547a759d391b.jpg",
-  "menor": 53.1,
-  "nome": "Os Gatos de Schrödinger",
-  "ref": 70.0,
-  "ref_dias": 32,
-  "slug": "os-gatos-de-schrodinger",
-  "tipo": "game"
- },
  "meeplebr paper dungeons jogo de tabuleiro expert 1 a 8 jogadores": null,
  "meeplebr pocket detective caso b jogo de cartas familia 1 a 6 jogadores": null,
  "meeplebr pocket detective caso c jogo de cartas familia 1 a 6 jogadores": null,
  "meeplebr root automata 2 expansao de jogo de tabuleiro expert 1 a 4 jogadores": null,
  "meeplebr superlemming jogo de cartas familia 2 a 5 jogadores": {
+  "bgg": 5.86835,
+  "editora": "Meeple BR Jogos",
   "imagem": "https://uploads.comparajogos.com.br/img/f9a4ea611b997a37a3ddf0a7d064abf114734b21.jpg",
   "menor": 31.23,
   "nome": "Superlemming",
@@ -505,6 +644,8 @@
  },
  "meeplebr virtu a arte de governar jogo de tabuleiro experto 2 a 5 jogadores": null,
  "memoarrr": {
+  "bgg": 6.88579,
+  "editora": "Stronghold Games",
   "imagem": "https://uploads.comparajogos.com.br/img/cf5757d1d6e1e59bd606d38e9097cc294a3db242.jpg",
   "menor": null,
   "nome": "MemoArrr!",
@@ -515,6 +656,8 @@
  },
  "mercadolivre": null,
  "mestre makatsu": {
+  "bgg": 5.69833,
+  "editora": "AMIGO",
   "imagem": "https://uploads.comparajogos.com.br/img/105b3bfac76b1107872fd41caafe86d8f325b8cc.jpg",
   "menor": 41.66,
   "nome": "Mestre Makatsu",
@@ -525,6 +668,8 @@
  },
  "mistborn": null,
  "monster trick": {
+  "bgg": 6.66827,
+  "editora": "Ravensburger Spieleverlag GmbH",
   "imagem": "https://uploads.comparajogos.com.br/img/94fb7386f28b1130a8df26243c4213fe6b32c977.jpg",
   "menor": 55.69,
   "nome": "Monster Trick",
@@ -535,6 +680,8 @@
  },
  "no estilo do jogo scout porem com bastante interacao dnup": null,
  "o jogo dos sons": {
+  "bgg": 6.11571,
+  "editora": "(Independente)",
   "imagem": "https://uploads.comparajogos.com.br/img/9d4d021fa6301663a86b7beb090c3f4517dc33a7.jpg",
   "menor": 176.69,
   "nome": "O Jogo dos Sons",
@@ -546,6 +693,8 @@
  "o preco ja esteve um tanto mais baixo mas atualmente e o menor preco de mercado the castles of burgundy": null,
  "orange stories": null,
  "papua": {
+  "bgg": 6.57198,
+  "editora": "Devir",
   "imagem": "https://uploads.comparajogos.com.br/img/08bb40955ad87ab6d3786fab977b79e7b6dde536.jpg",
   "menor": 116.1,
   "nome": "Papua",
@@ -557,6 +706,8 @@
  "pass pass jogo de cartas estrategico para 3 a 6 jogadores idade 9 versao original em portugues": null,
  "phebo folhas de menta 200ml": null,
  "piratas 3a edicao 10 anos": {
+  "bgg": 6.56616,
+  "editora": "Geeks N' Orcs",
   "imagem": "https://uploads.comparajogos.com.br/img/ed4bd4d39a033dccc4ee228f156328ce4ed1b71f.jpg",
   "menor": 44.81,
   "nome": "Piratas!",
@@ -566,7 +717,20 @@
   "tipo": "game"
  },
  "placegames a cada semana novos jogos adicionados liberado o 1 lote de jogos da black november da nossa loja parceira place games nosso": null,
+ "pocket detective die bombe tickt": {
+  "bgg": 6.16064,
+  "editora": "Schmidt Spiele",
+  "imagem": "https://uploads.comparajogos.com.br/img/267a978df5fb9a6c50cbacd5dd1158b609313b66.jpg",
+  "menor": 35.46,
+  "nome": "Pocket Detective: Die Bombe tickt",
+  "ref": 35.62,
+  "ref_dias": 32,
+  "slug": "pocket-detective-die-bombe-tickt",
+  "tipo": "game"
+ },
  "prey another day": {
+  "bgg": 6.85789,
+  "editora": "Galápagos Jogos",
   "imagem": "https://uploads.comparajogos.com.br/img/c3bbe0211056fda170a0e4bcb352f5a337a95e83.jpg",
   "menor": 46.39,
   "nome": "Prey Another Day",
@@ -575,7 +739,20 @@
   "slug": "prey-another-day",
   "tipo": "game"
  },
+ "quatro casos de sherlock holmes": {
+  "bgg": 6.86716,
+  "editora": "Grok Games",
+  "imagem": "https://uploads.comparajogos.com.br/img/92ec923f541a8416e515df8326ff6ade38dbbc7b.png",
+  "menor": 49.68,
+  "nome": "Quatro Casos de Sherlock Holmes",
+  "ref": 49.7,
+  "ref_dias": 32,
+  "slug": "quatro-casos-de-sherlock-holmes",
+  "tipo": "game"
+ },
  "race to pattern palace": {
+  "bgg": 5.66667,
+  "editora": "hand2mind",
   "imagem": "https://uploads.comparajogos.com.br/img/8b5955a2759d8e7d3ae16853584820b4e7095dfd.jpg",
   "menor": 158.28,
   "nome": "Race to Pattern Palace!",
@@ -587,6 +764,8 @@
  "rio grande games elfenroads game": null,
  "rio grande games space station phoenix rio grande games jogo de tabuleiro de estrategia idades 14 2 4 jogadores 90 120 minutos": null,
  "sagrada": {
+  "bgg": 7.46948,
+  "editora": "Galápagos Jogos",
   "imagem": "https://uploads.comparajogos.com.br/img/85a19554cb38f73d120e6c2853c0c6b186444f5b.png",
   "menor": 226.04,
   "nome": "Sagrada",
@@ -596,6 +775,8 @@
   "tipo": "game"
  },
  "sand": {
+  "bgg": 6.71199,
+  "editora": "Devir",
   "imagem": "https://uploads.comparajogos.com.br/img/8997329df8442d896a9715bf583f8a0671105939.jpg",
   "menor": 184.5,
   "nome": "Sand",
@@ -605,6 +786,8 @@
   "tipo": "game"
  },
  "score cards": {
+  "bgg": 6.76547,
+  "editora": "R&R Games",
   "imagem": "https://uploads.comparajogos.com.br/img/fca84fa56fd06569278da8969fced714471ed79d.jpg",
   "menor": 37.09,
   "nome": "Score Cards",
@@ -614,6 +797,8 @@
   "tipo": "game"
  },
  "setup": {
+  "bgg": 6.12957,
+  "editora": "Bezzerwizzer ApS (Bezzerwizzer Studio)",
   "imagem": "https://uploads.comparajogos.com.br/img/49d0d28dd2e765acf3951f5d31b2a96fd44d8c92.png",
   "menor": 74.29,
   "nome": "SETUP",
@@ -627,6 +812,8 @@
  "shadows of brimstone hero pack gambler": null,
  "shock": null,
  "sleeping gods distant skies": {
+  "bgg": 8.36207,
+  "editora": "Red Raven Games",
   "imagem": "https://uploads.comparajogos.com.br/img/60267e6e900fa7512639517ba025d8cb60778b4f.jpg",
   "menor": null,
   "nome": "Sleeping Gods: Distant Skies",
@@ -649,6 +836,8 @@
  "sleeves yucatan 54 x 80 mm blue core meeple virus": null,
  "so resgatar os dois cupons da pagina klask": null,
  "soda jerk": {
+  "bgg": 6.97336,
+  "editora": "Allplay",
   "imagem": "https://uploads.comparajogos.com.br/img/ad8b1b719365e8a0f34ff712b8b777326f3bcf91.jpg",
   "menor": 55.69,
   "nome": "Soda Jerk",
@@ -658,6 +847,8 @@
   "tipo": "game"
  },
  "sound box": {
+  "bgg": 6.86209,
+  "editora": "Horrible Guild",
   "imagem": "https://uploads.comparajogos.com.br/img/ee0e645b1d4720ff9cdd4cb85857c651df0d0ec0.png",
   "menor": 120.79,
   "nome": "Sound Box",
@@ -667,6 +858,8 @@
   "tipo": "game"
  },
  "space aztecs papergames": {
+  "bgg": 6.65479,
+  "editora": "Lumberjacks Studio",
   "imagem": "https://uploads.comparajogos.com.br/img/d88a3492face2faca0bb3c57e4b958fe95e1b6c7.png",
   "menor": 99.0,
   "nome": "Space Aztecs",
@@ -676,6 +869,8 @@
   "tipo": "game"
  },
  "spicy": {
+  "bgg": 7.15456,
+  "editora": "Ludofun",
   "imagem": "https://uploads.comparajogos.com.br/img/b2428074285ec7d47a3bd81b49780b4eb866a2e5.png",
   "menor": 60.34,
   "nome": "Spicy",
@@ -685,9 +880,23 @@
   "tipo": "game"
  },
  "spooky stories": null,
+ "star wars legion 74 z speeder bikes unit expansion": {
+  "bgg": 7.68696,
+  "editora": "Fantasy Flight Games",
+  "imagem": "https://uploads.comparajogos.com.br/img/3be3d4463f2addc375b225ff565a178b24d5bf29.jpg",
+  "menor": 244.99,
+  "nome": "Star Wars: Legion – 74-Z Speeder Bikes Unit Expansion",
+  "ref": null,
+  "ref_dias": 3,
+  "slug": "star-wars-legion-74-z-speeder-bikes-unit-expansion",
+  "tipo": "expansion"
+ },
  "star wars rebellion rise of the empir": null,
  "stronger with you parfum 100ml": null,
+ "synapses games yokohama jogo de tabuleiro estrategia colocacao trabalhadores no japao 2 a 4 jogadores 90 minutos idades 14": null,
  "taco gato cabra queijo pizza": {
+  "bgg": 6.455,
+  "editora": "PaperGames",
   "imagem": "https://uploads.comparajogos.com.br/img/5c2de7003123fe9fe4dad949d6f93279d451b372.png",
   "menor": 46.4,
   "nome": "Taco Gato Cabra Queijo Pizza",
@@ -697,6 +906,8 @@
   "tipo": "game"
  },
  "tacta": {
+  "bgg": 5.96554,
+  "editora": "The OP",
   "imagem": "https://uploads.comparajogos.com.br/img/d3e62fa2f24084bbd2843210ffc0b05af3928a73.jpg",
   "menor": 92.99,
   "nome": "Tacta",
@@ -706,6 +917,8 @@
   "tipo": "game"
  },
  "te toka tiki tiki": {
+  "bgg": null,
+  "editora": "Falomir Juegos",
   "imagem": "https://uploads.comparajogos.com.br/img/f36e7c267c637e437e8aa4d061c0b0ad9bcbab3b.jpg",
   "menor": 75.14,
   "nome": "Te Toka Tiki Tiki",
@@ -715,6 +928,8 @@
   "tipo": "game"
  },
  "terra a vista": {
+  "bgg": null,
+  "editora": "Game Office",
   "imagem": null,
   "menor": 30.07,
   "nome": "Terra à Vista",
@@ -724,6 +939,8 @@
   "tipo": "game"
  },
  "the colonists": {
+  "bgg": 7.53613,
+  "editora": "Lookout Games",
   "imagem": "https://uploads.comparajogos.com.br/img/5a1fed09c8880433c2dee5eb786c94c48b9019ee.jpg",
   "menor": null,
   "nome": "The Colonists",
@@ -733,7 +950,20 @@
   "tipo": "game"
  },
  "the crew the quest for planet nine e the crew missao deep sea": null,
+ "the night cage shrieking hollow": {
+  "bgg": 7.88333,
+  "editora": "Smirk & Dagger Games",
+  "imagem": "https://uploads.comparajogos.com.br/img/4fd38d553096f61c524604f7ff9179a972a96487.png",
+  "menor": null,
+  "nome": "The Night Cage: Shrieking Hollow",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "the-night-cage-shrieking-hollow",
+  "tipo": "expansion"
+ },
  "tier up": {
+  "bgg": null,
+  "editora": "Samba Estudios",
   "imagem": "https://uploads.comparajogos.com.br/img/4a5a7cdb10cbbf716c7376c1c1ede62cf297ddbd.png",
   "menor": 138.46,
   "nome": "Tier Up",
@@ -743,6 +973,8 @@
   "tipo": "game"
  },
  "tiny epic cthulhu": {
+  "bgg": 5.73254,
+  "editora": "Gamelyn Games",
   "imagem": "https://uploads.comparajogos.com.br/img/4726ca0bbdf30f324483a0df24b56d20071e97c4.jpg",
   "menor": 120.79,
   "nome": "Tiny Epic Cthulhu",
@@ -752,6 +984,8 @@
   "tipo": "game"
  },
  "transgalactica": {
+  "bgg": 6.50981,
+  "editora": "Devir",
   "imagem": "https://uploads.comparajogos.com.br/img/ec9746ef0151d88804857107a99301b9827ea2f7.jpg",
   "menor": 287.1,
   "nome": "Transgalactica",
@@ -762,6 +996,8 @@
  },
  "ubongo classic": null,
  "undaunted stalingrad": {
+  "bgg": 8.57355,
+  "editora": "Osprey Games",
   "imagem": "https://uploads.comparajogos.com.br/img/61f9ebd3be07e194e0047db27c10e35f30e87e96.jpg",
   "menor": null,
   "nome": "Undaunted: Stalingrad",
@@ -771,6 +1007,8 @@
   "tipo": "game"
  },
  "uno stacko": {
+  "bgg": 5.58748,
+  "editora": "Mattel",
   "imagem": "https://uploads.comparajogos.com.br/img/6500f378d2dce55dd971a8016cd008067ac730d7.jpg",
   "menor": 82.26,
   "nome": "UNO Stacko",
@@ -781,6 +1019,8 @@
  },
  "uno toy story metalico": null,
  "up or down": {
+  "bgg": 6.69276,
+  "editora": "ABACUSSPIELE",
   "imagem": "https://uploads.comparajogos.com.br/img/d9ef1c5c351173741db60c51db519fdac8787ac9.png",
   "menor": null,
   "nome": "Up or Down?",
@@ -789,7 +1029,11 @@
   "slug": "up-or-down",
   "tipo": "game"
  },
+ "versao com a arte nova do jogo original resgate o cupom na pagina do jogo ticket to ride": null,
+ "voltou versao retail caro mas nao tem previsao de reprint por aqui nem sei se vai ter o inconsciente": null,
  "vossa excelencia expansao nova era": {
+  "bgg": 10,
+  "editora": "(Independente)",
   "imagem": "https://uploads.comparajogos.com.br/img/87076d74f66a63f498e23bdc0eb1a4cb0954e10b.jpg",
   "menor": 138.6,
   "nome": "Vossa Excelência: Expansão Nova Era",

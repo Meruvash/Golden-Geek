@@ -344,6 +344,58 @@ def outro_produto(o, h):
     return bool(m and m.group(1).lower() not in (h.get("editora") or "").lower())
 
 
+COMUNIDADE_HORAS = 72  # promoção postada em canal costuma acabar rápido: só as dos últimos 3 dias entram na conta geral
+
+
+def achados_comunidade(hist, hoje):
+    """Promoções postadas nos canais públicos (Telegram) e no Promobit, no mesmo formato das ofertas do radar.
+    Só entram com preço de referência confiável (nossa base ou 14+ dias de histórico no Compara Jogos), jogo com
+    nota BGG 7+ ou premiado, preço não suspeito e postagem das últimas 72 horas. O vendedor não é conferido."""
+    prem = premiados()
+    achados = {}
+    for arq in (DADOS / "promobit.json", DADOS / "comunidade.json"):
+        achados.update(ler(arq, {}))
+    limite = (agora() - dt.timedelta(hours=COMUNIDADE_HORAS)).isoformat()
+    saida = []
+    for k, v in achados.items():
+        if not v.get("preco") or v.get("tipo_preco") == "COUPON" or not v.get("link_loja") and not v.get("link"):
+            continue
+        quando = v.get("publicado") or v.get("visto") or ""
+        try:
+            quando_br = dt.datetime.fromisoformat(quando.replace("Z", "+00:00")).astimezone(BR).isoformat()
+        except ValueError:
+            continue
+        if quando_br < limite:
+            continue
+        h = hist.get(v.get("jogo") or "")
+        if h and h.get("pontos"):
+            janela = {d: p for d, p in h["pontos"].items() if d >= (hoje - dt.timedelta(days=JANELA)).isoformat()}
+            if not janela:
+                continue
+            slug, nome, tipo, editora, bgg, img = v["jogo"], h["nome"], h.get("tipo"), h.get("editora"), h.get("bgg"), h.get("imagem")
+            ref, menor = aparada(janela.values()), min(janela.values())
+            dias = (hoje - dt.date.fromisoformat(min(janela))).days + 1
+        elif v.get("ref") and (v.get("ref_dias") or 0) >= 14:
+            slug, nome, tipo, editora, bgg, img = (v.get("slug_cj"), v.get("nome_cj") or v["titulo"], v.get("tipo_cj"),
+                                                   v.get("editora"), v.get("bgg"), v.get("imagem"))
+            ref, menor, dias = v["ref"], v.get("menor") or v["ref"], v["ref_dias"]
+        else:
+            continue
+        if not slug or not ((bgg or 0) >= NOTA_MIN or chave(nome) in prem):
+            continue
+        por = v["preco"]
+        if por < ref * SUSPEITO:
+            continue
+        loja = v.get("loja") or "loja não informada"
+        saida.append({"slug": slug, "nome": nome, "tipo": tipo or "game", "editora": editora, "bgg": bgg, "imagem": img,
+                      "loja": loja, "url": v.get("link_loja") or v["link"], "por": por, "de": v.get("preco_antes"),
+                      "ref": ref, "desc": (ref - por) / ref, "menor": menor, "recorde": por <= menor, "dias": dias,
+                      "fonte_preco": f'achado da comunidade ({(v.get("fonte") or "Promobit").removeprefix("Telegram: ")})',
+                      "vendedor": None, "verificado": quando_br, "editora_br": None, "comunidade": True,
+                      "post": v.get("link")})
+    return saida
+
+
 def calcular():
     """Itens do radar, armadilhas e itens no menor preço, a partir do histórico e das ofertas de hoje."""
     hist, hoje_d = ler(HIST, {}), ler(HOJE, {})
@@ -390,6 +442,12 @@ def calcular():
                 quase.append(base)
             elif o["de"] and o["por"] and (o["de"] - o["por"]) / o["de"] >= CORTE:
                 armadilhas.append(base)
+    # achados da comunidade (Telegram e Promobit) entram na conta geral com a mesma régua (pedido do usuário em 03/11/2026)
+    for base in achados_comunidade(hist, hoje):
+        if base["desc"] >= CORTE:
+            radar.append(base)
+        elif base["desc"] >= QUASE:
+            quase.append(base)
     # uma linha por jogo e loja; no radar, a melhor oferta de cada jogo vem primeiro
     radar.sort(key=lambda x: -x["desc"])
     vistos, unicos = set(), []
