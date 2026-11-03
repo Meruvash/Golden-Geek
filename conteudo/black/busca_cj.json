@@ -14,6 +14,7 @@
  "adicional ao fechar pedido aeon s end into the wild cooperative sci fi fantasy strategy deck building board game for 1 to 4 players ages": null,
  "adicional ao fechar pedido blacklist games street masters the board game utility pack dice and ring": null,
  "adicional ao fechar pedido rebel princess edicao deluxe a mistura definitiva de tematica e estrategia um jogo de cartas rapido viciante": null,
+ "adicional ao fechar pedido sherlock files vol 4 fatal frontiers": null,
  "adicional ao fechar pedido suburbia expansions 2a edicao": null,
  "adicional ao fechar pedido unstable games casting shadows the ice storm expansion designed to be added to your casting shadows card gam": null,
  "adventure stories": null,
@@ -115,6 +116,7 @@
   "slug": "claim-edicao-limitada",
   "tipo": "game"
  },
+ "clank uma aventura de construcao de baralho": null,
  "coffee rush grab go": {
   "imagem": "https://uploads.comparajogos.com.br/img/c8de0954d71341762f8374212c30cf4d670fa281.jpg",
   "menor": 89.96,
@@ -158,6 +160,7 @@
  "dobble princesas": null,
  "dobble stitch": null,
  "dobble super mario": null,
+ "eclipse meeple br": null,
  "enquadrados": {
   "imagem": "https://uploads.comparajogos.com.br/img/c350e0c523600f25073ee091681e363c698ac58d.png",
   "menor": 54.86,
@@ -176,7 +179,9 @@
   "slug": "eternamente-temporario",
   "tipo": "game"
  },
+ "eu vi stitch jogo de cartas a partir de 4 anos copag": null,
  "expansao do jogo que ainda nao foi anunciada no brasil critter kitchen a la carte": null,
+ "expansao hellas elysium jogo de tabuleiro terraforming mars meeple br": null,
  "exploding kittens bem vs mal": {
   "imagem": "https://uploads.comparajogos.com.br/img/d6f0524dfbc7fd39f463216e55f7e00ec9301ffe.png",
   "menor": 36.08,
@@ -198,6 +203,7 @@
  "far cry escape from rook islands": null,
  "fdp foi de proposito": null,
  "flip 7 with a vengeance": null,
+ "frete gratis": null,
  "galapagos 50 caes jogo de cartas criancas 1 ou jogadores partidas de 20 min": {
   "imagem": "https://uploads.comparajogos.com.br/img/28c8e2ad69c2ecfb28dc166e4ad242e1a4f4821d.png",
   "menor": null,
@@ -210,6 +216,15 @@
  "galapagos love letter 2a edicao jogo de cartas para 2 a 6 jogadores": null,
  "granado apotecario 75 ml": null,
  "granado bossa 100ml": null,
+ "great western trail el paso": {
+  "imagem": "https://uploads.comparajogos.com.br/img/51dcb758a6dcd4c1ebeb5820fc8b7e6603d08231.jpg",
+  "menor": 117.92,
+  "nome": "Great Western Trail: El Paso",
+  "ref": 133.82,
+  "ref_dias": 32,
+  "slug": "great-western-trail-el-paso",
+  "tipo": "game"
+ },
  "gwent": null,
  "gwent o jogo de tabuleiro lendario": null,
  "happy salmon": {
@@ -219,6 +234,15 @@
   "ref": 70.48,
   "ref_dias": 32,
   "slug": "happy-salmon",
+  "tipo": "game"
+ },
+ "hint go": {
+  "imagem": "https://uploads.comparajogos.com.br/img/afd4dc0ca56a006089c7e3609b019d6d7b0a0688.jpg",
+  "menor": 120.79,
+  "nome": "HINT GO",
+  "ref": 144.14,
+  "ref_dias": 32,
+  "slug": "hint-go",
   "tipo": "game"
  },
  "historias assustadoras": null,
@@ -231,6 +255,15 @@
   "slug": "hitster",
   "tipo": "game"
  },
+ "homem batata asmodee galapagos 2 a 5 jogadores idade 8": {
+  "imagem": "https://uploads.comparajogos.com.br/img/ec2a86a0818e581d874821bb2fa0c33883a19a57.png",
+  "menor": 17.99,
+  "nome": "Homem Batata",
+  "ref": 17.99,
+  "ref_dias": 32,
+  "slug": "homem-batata",
+  "tipo": "game"
+ },
  "illuminati bavarian fire drill": {
   "imagem": "https://uploads.comparajogos.com.br/img/54b20618048d2d6cbef9dce8b04855bde5134b9a.jpg",
   "menor": null,
@@ -240,6 +273,8 @@
   "slug": "illuminati-bavarian-fire-drill",
   "tipo": "expansion"
  },
+ "jogo de cartas galapagos de 2 jogadores": null,
+ "jogo de tabuleiro imagem e acao 1 grow 1708": null,
  "klask": {
   "imagem": "https://uploads.comparajogos.com.br/img/de8411d1101ad154f8ba37a0b88a345c7d1c9c3e.jpg",
   "menor": 381.99,
@@ -290,6 +325,7 @@
   "slug": "maestro",
   "tipo": "game"
  },
+ "mala cuia": null,
  "marrakech": {
   "imagem": "https://uploads.comparajogos.com.br/img/5abd896a4a729c7e2a4efc8ababad8cdf2fbcff5.jpg",
   "menor": 151.13,
@@ -317,6 +353,15 @@
   "slug": "asteria",
   "tipo": "game"
  },
+ "meeplebr balconia jogo de tabuleiro vertical 2 jogadores": {
+  "imagem": "https://uploads.comparajogos.com.br/img/34597c05aa9be954a09cb2cba1580a36e9ba3ad1.jpg",
+  "menor": 102.21,
+  "nome": "Balconia",
+  "ref": 123.15,
+  "ref_dias": 32,
+  "slug": "balconia",
+  "tipo": "game"
+ },
  "meeplebr biddle 2 a 5 jogadores jogo de cartas e dados party game": {
   "imagem": "https://uploads.comparajogos.com.br/img/3461d1b5edbf6955cc9c079a0734be45c817a3f0.jpg",
   "menor": 97.52,
@@ -336,9 +381,12 @@
   "tipo": "game"
  },
  "meeplebr destemidos reforcos expansao da linha destemidos 1 a 4 jogadores": null,
+ "meeplebr dragon eclipse academia de mystlings peare vs arboro jogo expert 1 a 2 jogadores": null,
  "meeplebr expansao eclipse proscritos expansao para jogo de tabuleiro expert 2 a 6 jogadores": null,
  "meeplebr expansao kingdom legacy mercadores jogos de carta familia 1 jogador": null,
  "meeplebr expansao kingdom legacy reino feudal aventuras jogo de cartas familia 1 jogador": null,
+ "meeplebr expansao paper dungeons side quest jogo de tabuleiro 1 a 8 jogadores": null,
+ "meeplebr fate defensores de grimheim expansao sindra e finkel expansao para jogo de tabuleiro expert 1 a 4 jogadores": null,
  "meeplebr fateflip decretos reais jogo solo jogo de cartas para 1 jogador para maiores de 14 anos": {
   "imagem": "https://uploads.comparajogos.com.br/img/07bf24d8fa78223473f497eae82f5063df1ee248.png",
   "menor": 45.09,
@@ -367,7 +415,28 @@
   "tipo": "game"
  },
  "meeplebr kingdom legacy reino feudal jogo de cartas familia 1 jogador": null,
+ "meeplebr nanatoridori jogo de cartas familia party game 2 a 6 jogadores": {
+  "imagem": "https://uploads.comparajogos.com.br/img/9832107417d4817b87174f9abcc7663d73b8dbc3.png",
+  "menor": 63.45,
+  "nome": "Nanatoridori",
+  "ref": 77.92,
+  "ref_dias": 32,
+  "slug": "nanatoridori",
+  "tipo": "game"
+ },
  "meeplebr neuroshima hex battle policia de aco vs feras jogo de tabuleiro expert 2 jogadores": null,
+ "meeplebr os gatos de schrodinger jogos familia jogos de carta 2 a 6 jogadores": {
+  "imagem": "https://uploads.comparajogos.com.br/img/45732bd9ee1f7663475d5acba220547a759d391b.jpg",
+  "menor": 53.1,
+  "nome": "Os Gatos de Schrödinger",
+  "ref": 70.0,
+  "ref_dias": 32,
+  "slug": "os-gatos-de-schrodinger",
+  "tipo": "game"
+ },
+ "meeplebr paper dungeons jogo de tabuleiro expert 1 a 8 jogadores": null,
+ "meeplebr pocket detective caso b jogo de cartas familia 1 a 6 jogadores": null,
+ "meeplebr pocket detective caso c jogo de cartas familia 1 a 6 jogadores": null,
  "meeplebr root automata 2 expansao de jogo de tabuleiro expert 1 a 4 jogadores": null,
  "meeplebr superlemming jogo de cartas familia 2 a 5 jogadores": {
   "imagem": "https://uploads.comparajogos.com.br/img/f9a4ea611b997a37a3ddf0a7d064abf114734b21.jpg",
@@ -389,7 +458,25 @@
   "tipo": "game"
  },
  "mercadolivre": null,
+ "mestre makatsu": {
+  "imagem": "https://uploads.comparajogos.com.br/img/105b3bfac76b1107872fd41caafe86d8f325b8cc.jpg",
+  "menor": 41.66,
+  "nome": "Mestre Makatsu",
+  "ref": 61.99,
+  "ref_dias": 32,
+  "slug": "mestre-makatsu",
+  "tipo": "game"
+ },
  "mistborn": null,
+ "monster trick": {
+  "imagem": "https://uploads.comparajogos.com.br/img/94fb7386f28b1130a8df26243c4213fe6b32c977.jpg",
+  "menor": 55.69,
+  "nome": "Monster Trick",
+  "ref": 67.13,
+  "ref_dias": 32,
+  "slug": "monster-trick",
+  "tipo": "game"
+ },
  "no estilo do jogo scout porem com bastante interacao dnup": null,
  "o jogo dos sons": {
   "imagem": "https://uploads.comparajogos.com.br/img/9d4d021fa6301663a86b7beb090c3f4517dc33a7.jpg",
@@ -412,6 +499,25 @@
   "tipo": "game"
  },
  "phebo folhas de menta 200ml": null,
+ "piratas 3a edicao 10 anos": {
+  "imagem": "https://uploads.comparajogos.com.br/img/ed4bd4d39a033dccc4ee228f156328ce4ed1b71f.jpg",
+  "menor": 44.81,
+  "nome": "Piratas!",
+  "ref": 44.81,
+  "ref_dias": 32,
+  "slug": "piratas",
+  "tipo": "game"
+ },
+ "placegames a cada semana novos jogos adicionados liberado o 1 lote de jogos da black november da nossa loja parceira place games nosso": null,
+ "prey another day": {
+  "imagem": "https://uploads.comparajogos.com.br/img/c3bbe0211056fda170a0e4bcb352f5a337a95e83.jpg",
+  "menor": 46.39,
+  "nome": "Prey Another Day",
+  "ref": 67.09,
+  "ref_dias": 32,
+  "slug": "prey-another-day",
+  "tipo": "game"
+ },
  "rio grande games elfenroads game": null,
  "rio grande games space station phoenix rio grande games jogo de tabuleiro de estrategia idades 14 2 4 jogadores 90 120 minutos": null,
  "sagrada": {
@@ -439,6 +545,15 @@
   "ref": 49.41,
   "ref_dias": 32,
   "slug": "score-cards",
+  "tipo": "game"
+ },
+ "setup": {
+  "imagem": "https://uploads.comparajogos.com.br/img/49d0d28dd2e765acf3951f5d31b2a96fd44d8c92.png",
+  "menor": 74.29,
+  "nome": "SETUP",
+  "ref": 88.55,
+  "ref_dias": 32,
+  "slug": "setup",
   "tipo": "game"
  },
  "shackleton": null,
@@ -474,6 +589,15 @@
   "ref": 59.51,
   "ref_dias": 32,
   "slug": "soda-jerk",
+  "tipo": "game"
+ },
+ "sound box": {
+  "imagem": "https://uploads.comparajogos.com.br/img/ee0e645b1d4720ff9cdd4cb85857c651df0d0ec0.png",
+  "menor": 120.79,
+  "nome": "Sound Box",
+  "ref": 137.36,
+  "ref_dias": 32,
+  "slug": "sound-box",
   "tipo": "game"
  },
  "spooky stories": null,
@@ -534,6 +658,15 @@
   "slug": "tier-up",
   "tipo": "game"
  },
+ "tiny epic cthulhu": {
+  "imagem": "https://uploads.comparajogos.com.br/img/4726ca0bbdf30f324483a0df24b56d20071e97c4.jpg",
+  "menor": 120.79,
+  "nome": "Tiny Epic Cthulhu",
+  "ref": 134.91,
+  "ref_dias": 32,
+  "slug": "tiny-epic-cthulhu",
+  "tipo": "game"
+ },
  "transgalactica": {
   "imagem": "https://uploads.comparajogos.com.br/img/ec9746ef0151d88804857107a99301b9827ea2f7.jpg",
   "menor": 287.1,
@@ -543,6 +676,7 @@
   "slug": "transgalactica",
   "tipo": "game"
  },
+ "ubongo classic": null,
  "undaunted stalingrad": {
   "imagem": "https://uploads.comparajogos.com.br/img/61f9ebd3be07e194e0047db27c10e35f30e87e96.jpg",
   "menor": null,
@@ -579,5 +713,6 @@
   "ref_dias": 6,
   "slug": "vossa-excelencia-expansao-nova-era",
   "tipo": "expansion"
- }
+ },
+ "wingspan oceania expansao": null
 }

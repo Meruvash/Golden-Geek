@@ -9,6 +9,7 @@
   "preco": 15.5,
   "preco_antes": 49.99,
   "publicado": "2026-11-03T01:39:43-0300",
+  "ref_fonte": "sem referência",
   "slug": "jogo-de-cartas-galapagos-de-2-jogadores-3165634",
   "status": "APPROVED",
   "tipo_preco": "NORMAL",
@@ -25,6 +26,7 @@
   "preco": 14.99,
   "preco_antes": 24.99,
   "publicado": "2026-11-03T09:59:46-0300",
+  "ref_fonte": "sem referência",
   "slug": "eu-vi-stitch-jogo-de-cartas-a-partir-de-4-anos-copag-3166396",
   "status": "TOP_OFFER",
   "tipo_preco": "NORMAL",
@@ -35,17 +37,23 @@
   "cupom": null,
   "dominio": "amazon.com.br",
   "foto": "/667372797317937288697591862724.jpg",
+  "imagem": "https://uploads.comparajogos.com.br/img/ec2a86a0818e581d874821bb2fa0c33883a19a57.png",
   "jogo": null,
   "link": "https://www.promobit.com.br/oferta/homem-batata-asmodee-galapagos-2-a-5-jogadores-idade-8-3167930/",
   "loja": "Amazon",
+  "menor": 17.99,
   "preco": 18,
   "preco_antes": 49.99,
   "publicado": "2026-11-03T14:59:58-0300",
+  "ref": 17.99,
+  "ref_dias": 32,
+  "ref_fonte": "Compara Jogos",
   "slug": "homem-batata-asmodee-galapagos-2-a-5-jogadores-idade-8-3167930",
+  "slug_cj": "homem-batata",
   "status": "APPROVED",
   "tipo_preco": "NORMAL",
   "titulo": "Homem Batata Asmodee Galápagos, 2 A 5 Jogadores, Idade +8",
-  "visto": "2026-11-03T16:34-03:00"
+  "visto": "2026-11-03T17:09-03:00"
  },
  "3168040": {
   "cupom": "ESTOQUE0311",
@@ -57,10 +65,11 @@
   "preco": 59.02,
   "preco_antes": 148.76,
   "publicado": "2026-11-03T15:27:28-0300",
+  "ref_fonte": "sem referência",
   "slug": "jogo-de-tabuleiro-imagem-e-acao-1-grow-1708-3168040",
   "status": "RECENTS",
   "tipo_preco": "NORMAL",
   "titulo": "Jogo De Tabuleiro - Imagem e Ação 1 - Grow - 1708",
-  "visto": "2026-11-03T16:34-03:00"
+  "visto": "2026-11-03T17:09-03:00"
  }
 }
