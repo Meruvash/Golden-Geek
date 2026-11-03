@@ -133,7 +133,7 @@ def tabela(itens, pre, cps=None):
         tags = '<span class="tag rec">menor preço do período</span>' if x["recorde"] else ""
         linhas += (f'<tr><td class="j"><div>{f"<img src=\"{img}\" alt=\"\" loading=\"lazy\" width=\"48\" height=\"48\">" if img else ""}'
                    f'<span><b>{e(nome(x))}</b><br>{tags}</span></div></td>'
-                   f'<td>{e(x["editora"] or "não informada")}</td><td>{e(x["loja"])}</td>'
+                   f'<td>{e(x["editora"] or "não informada")}</td><td>{e(x["loja"])}{f"<br><span class=\"tag\">vendido por {e(x["vendedor"])}</span>" if x.get("vendedor") else ""}</td>'
                    f'<td class="n"><b>{brl(x["por"])}</b></td><td class="n">{brl(x["ref"])}</td>'
                    f'<td class="n desc">{pct(x["desc"])}</td><td class="n">{brl(x["menor"])}</td>'
                    f'<td class="n">{f"{x["bgg"]:.1f}".replace(".", ",") if x["bgg"] else "sem nota"} BGG</td>'
@@ -155,13 +155,33 @@ def build(radar_itens, armadilhas):
         for c in reg["cupons"].values():
             t = c.get("teste")
             teste = (f"{quando(t['hora'])}: {'aplicou' if t['ok'] else 'recusado'}{', ' + e(t['detalhe']) if t.get('detalhe') else ''}" if t
-                     else "não testado (o robots.txt da loja proíbe robôs no carrinho)" if dom not in TESTAVEIS else "aguardando teste")
+                     else ("não testado (fonte: Promobit; a loja não permite robôs)" if c.get("fonte") == "Promobit"
+                           else "não testado (o robots.txt da loja proíbe robôs no carrinho)") if dom not in TESTAVEIS else "aguardando teste")
             linhas_cp += (f'<tr><td>{e(reg["loja"])}</td><td><b>{e(c["codigo"])}</b></td><td>{e(limpa(c["texto"]))}</td>'
                           f'<td class="n">{quando(c["visto"])}</td><td>{teste}</td>'
                           f'<td><a class="ir" href="{e(c["pagina"])}" target="_blank" rel="noopener nofollow">Ver na loja</a></td></tr>')
     cupons_html = (f'<div class="tab"><table class="cupons-t"><thead><tr><th>Loja</th><th>Cupom</th><th>O que a página da loja diz</th>'
                    f'<th>Visto na loja em</th><th>Testado no carrinho</th><th>Link</th></tr></thead><tbody>{linhas_cp}</tbody></table></div>'
                    if linhas_cp else '<p class="criterio">Nenhum cupom anunciado nas lojas do radar nesta leitura.</p>')
+    pb_arq = ROOT / "conteudo" / "black" / "promobit.json"
+    pbs = json.loads(pb_arq.read_text(encoding="utf-8")) if pb_arq.exists() else {}
+    hist = radar.ler(radar.HIST, {})
+    linhas_pb = ""
+    for v in sorted(pbs.values(), key=lambda v: v.get("publicado") or "", reverse=True):
+        real = ""
+        h = hist.get(v.get("jogo") or "")
+        if h and h.get("pontos") and v.get("preco") and v.get("tipo_preco") != "COUPON":
+            ref = radar.aparada(h["pontos"].values())
+            real = f'{pct((ref - v["preco"]) / ref)} sobre a média de {brl(ref)}' if v["preco"] < ref else f"acima da média de {brl(ref)}"
+        antes = f' <s>{brl(v["preco_antes"])}</s>' if v.get("preco_antes") else ""
+        linhas_pb += (f'<tr><td><b>{e(limpa(v["titulo"]))}</b></td><td>{e(v.get("loja") or "")}</td>'
+                      f'<td class="n"><b>{brl(v["preco"]) if v.get("preco") and v.get("tipo_preco") != "COUPON" else "ver cupom"}</b>{antes}</td>'
+                      f'<td>{e(v.get("cupom") or "nenhum")}</td><td>{real or "jogo fora da nossa base"}</td>'
+                      f'<td class="n">{quando(v.get("publicado") or v["visto"])}</td>'
+                      f'<td><a class="ir" href="{e(v["link"])}" target="_blank" rel="noopener nofollow">Ver no Promobit</a></td></tr>')
+    pb_html = (f'<div class="tab"><table class="cupons-t"><thead><tr><th>Promoção</th><th>Loja</th><th>Preço postado</th><th>Cupom</th>'
+               f'<th>Desconto real</th><th>Postada em</th><th>Link</th></tr></thead><tbody>{linhas_pb}</tbody></table></div>'
+               if linhas_pb else '<p class="criterio">Nenhuma promoção de jogo de tabuleiro postada nos últimos 7 dias.</p>')
     titulo = "Black de Verdade: ofertas de jogos de tabuleiro com desconto real"
     melhor = {}
     for x in radar_itens:  # a melhor oferta de cada jogo
@@ -193,8 +213,10 @@ def build(radar_itens, armadilhas):
   <div class="aviso">
    <p><b>Base curta.</b> O histórico vem das páginas públicas do Compara Jogos, que mostram 30 dias. Gravamos um ponto por
    dia desde 03/11/2026 até completar 180 dias; até lá, cada linha mostra quantos dias de base a conta usou{f" (hoje, a partir de {curta} dias)" if curta else ""}.</p>
-   <p><b>Fora do radar.</b> Amazon, Mercado Livre, Magalu e Casas Bahia proíbem ou bloqueiam robôs, e na Americanas o robô não
-   consegue conferir quem é o vendedor; por isso as ofertas deles não entram. Shopee e vendedores avulsos também ficam de fora.</p>
+   <p><b>Amazon e Mercado Livre.</b> Os sites não deixam robôs lerem as páginas. A Amazon entra pelo Keepa, só com produto
+   vendido pela própria Amazon, e o Mercado Livre pela API oficial, só com loja oficial ou MercadoLíder, quando essas fontes
+   estão ligadas. Promoções dessas e de outras grandes lojas postadas no Promobit aparecem numa seção à parte, com o vendedor
+   ainda não conferido. Shopee e vendedores avulsos ficam de fora.</p>
    <p><b>Preço conferido na loja.</b> Antes de publicar, o robô abre a página do produto na própria loja e lê o preço e o
    estoque (coluna "Fonte do preço"). Esse é o preço de tabela da página: no Pix costuma sair um pouco mais barato. Lojas que
    bloqueiam robôs ficam com o preço informado ao Compara Jogos.</p>
@@ -209,8 +231,12 @@ def build(radar_itens, armadilhas):
   <h3>Expansões ({len({x["slug"] for x in exps})})</h3>{tabela(exps, pre, cps)}
   <p class="credito">Preços, histórico, nota BGG e imagens das caixas: Compara Jogos (comparajogos.com.br). Links levam à loja; não ganhamos comissão.</p>
  </section>
+ <section class="bloco"><h2>Achados da comunidade (Promobit)</h2><p class="criterio">Promoções de jogos de tabuleiro postadas
+  por membros do Promobit nos últimos 7 dias, inclusive de Amazon, Mercado Livre, Magalu e Americanas. O robô não confere o vendedor
+  nem se a promoção ainda vale: confira na loja. Quando o jogo está na nossa base, mostramos o desconto real sobre a média.</p>
+  {pb_html}</section>
  <section class="bloco"><h2>Cupons anunciados pelas lojas</h2><p class="criterio">Códigos que as lojas do radar publicam na
-  própria página, com a hora em que o robô viu cada um. Só entra código escrito pela loja; cupom que some da página sai daqui em até 36 horas.
+  própria página e cupons das grandes lojas (Amazon, Mercado Livre, Magalu, Americanas, Casas Bahia) publicados no Promobit, com a hora em que o robô viu cada um. Só entra código escrito pela loja; cupom que some da página sai daqui em até 36 horas.
   O teste no carrinho só roda nas lojas cujo robots.txt permite robôs no carrinho e no checkout.</p>
   {cupons_html}</section>
  <section class="bloco"><h2>Menor preço do período</h2><p class="criterio">Itens do radar que hoje igualaram ou bateram o menor preço registrado na base.</p>

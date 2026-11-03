@@ -278,21 +278,23 @@ def calcular():
         antes = [p for d, p in janela.items() if d < hoje.isoformat()]
         menor_antes = min(antes) if antes else menor
         for o in of["ofertas"]:
-            if o["tipo"] != "LINK" or not o["por"] or FORA.search(o["loja"] + o["loja_id"]):
-                continue
+            api = o.get("api") if (o.get("api") or {}).get("vendedor_ok") else None
+            if o["tipo"] != "LINK" or not o["por"] or (FORA.search(o["loja"] + o["loja_id"]) and not api):
+                continue  # marketplace só entra com vendedor conferido pela API (Amazon pelo Keepa, Mercado Livre pela API)
             la = o.get("loja_agora")
             if la and la.get("estoque") is False:
                 continue  # a página da loja diz que acabou
-            # preço lido agora na página da loja, quando deu para ler; senão, o que a loja informou ao Compara Jogos
-            por = la["preco"] if la else o["por"]
+            # preço da API oficial, ou lido agora na página da loja; senão, o que a loja informou ao Compara Jogos
+            por = api["preco"] if api else (la["preco"] if la else o["por"])
             desc = (ref - por) / ref
             if por < ref * SUSPEITO:
                 continue
             base = {"slug": s, "nome": h["nome"], "tipo": h["tipo"], "editora": h.get("editora"), "bgg": h.get("bgg"),
                     "imagem": h.get("imagem"), "loja": o["loja"], "url": o["url"], "por": por, "de": o["de"],
                     "ref": ref, "desc": desc, "menor": menor, "recorde": por <= menor_antes, "dias": dias,
-                    "fonte_preco": "página da loja" if la else "Compara Jogos",
-                    "verificado": (la or {}).get("hora") or o.get("atualizado") or of["verificado"], "editora_br": h.get("editora_br")}
+                    "fonte_preco": api["fonte"] if api else ("página da loja" if la else "Compara Jogos"),
+                    "vendedor": api.get("vendedor") if api else None,
+                    "verificado": (api or la or {}).get("hora") or o.get("atualizado") or of["verificado"], "editora_br": h.get("editora_br")}
             if desc >= CORTE:
                 radar.append(base)
             elif o["de"] and o["por"] and (o["de"] - o["por"]) / o["de"] >= CORTE:
@@ -314,7 +316,8 @@ def perto_do_corte(maximo=350):
     notas = []
     for s, h in hist.items():
         pts = list(h.get("pontos", {}).values())
-        lojas = [o["por"] for o in hoje_d.get(s, {}).get("ofertas", []) if o.get("por") and o["tipo"] == "LINK" and not FORA.search(o["loja"] + o["loja_id"])]
+        # inclui Amazon e Mercado Livre: aqui é só para escolher quem conferir (o vendedor é checado depois, pela API)
+        lojas = [o["por"] for o in hoje_d.get(s, {}).get("ofertas", []) if o.get("por") and o["tipo"] == "LINK"]
         if len(pts) >= 5 and lojas:
             ref = aparada(pts)
             folga = (min(lojas) - ref * (1 - CORTE)) / ref
@@ -351,9 +354,15 @@ def main():
         coletar(list(dict.fromkeys(slugs_quedas() + perto_do_corte())), limite=a.limite)
     sys.path.insert(0, str(Path(__file__).resolve().parent))
     if a.acao != "pagina":
+        import apis
+        ofertas = ler(HOJE, {})
+        apis.enriquecer(ofertas, so=set(perto_do_corte(1200 if a.acao != "rapida" else 400)))
+        gravar(HOJE, ofertas)
         conferir_lojas()
         import cupons
+        import promobit
         cupons.ler()
+        promobit.ler()
     import pagina_black
     pagina_black.build(*calcular())
 

@@ -47,6 +47,11 @@ jobs:
           fi
           echo "acao=$A" >> "$GITHUB_OUTPUT"
       - name: Lê os preços
+        env:
+          # fontes que ligam sozinhas quando o secret existe (Settings > Secrets and variables > Actions)
+          KEEPA_KEY: ${{ secrets.KEEPA_KEY }}
+          ML_CLIENT_ID: ${{ secrets.ML_CLIENT_ID }}
+          ML_CLIENT_SECRET: ${{ secrets.ML_CLIENT_SECRET }}
         run: python3 tools/black/radar.py ${{ steps.acao.outputs.acao }}
       - name: Publica
         run: |
