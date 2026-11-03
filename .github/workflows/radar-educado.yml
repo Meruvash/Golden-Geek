@@ -1,6 +1,6 @@
 # Robô educado do Black de Verdade: lista inteira a cada 3 horas; varredura completa no domingo às 14h UTC.
 # Este workflow e o do outro robô gravam conteudo/black/, black/ e img/black/ por mescla (cada robô só regrava o que leu).
-name: Radar Black: robô educado
+name: "Radar Black: robô educado"
 
 on:
   schedule:

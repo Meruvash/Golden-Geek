@@ -1,6 +1,6 @@
 # Robô normal do Black de Verdade: leitura rápida a cada 30 minutos (pedido do usuário em 03/11/2026).
 # Este workflow e o do outro robô gravam conteudo/black/, black/ e img/black/ por mescla (cada robô só regrava o que leu).
-name: Radar Black: robô normal
+name: "Radar Black: robô normal"
 
 on:
   schedule:
