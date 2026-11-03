@@ -18,49 +18,122 @@
 <meta property="og:image:height" content="752">
 <meta name="twitter:card" content="summary_large_image">
 <style>
-.guia .lide{max-width:68ch}
-.criterio{font-size:.92rem;color:var(--paper-muted);margin-top:10px}
-.jogos-g{display:grid;gap:12px}
-.jogos-g>li>a{display:grid;grid-template-columns:96px 1fr;gap:14px;align-items:start;text-decoration:none;color:var(--paper-ink);padding:12px;border:1px solid var(--paper-line);border-radius:12px;background:#fff;transition:border-color .15s ease}
-.jogos-g>li>a:hover{border-color:var(--gold)}
-.jogos-g img{width:96px;height:96px;object-fit:cover;border-radius:8px}
-.jogos-g h3{font-size:1.1rem;line-height:1.25;font-weight:800}
-.jogos-g .tg{font-weight:600;margin-top:2px}
-.fx{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
-.fx li{font-size:.8rem;font-weight:700;padding:3px 9px;border-radius:999px;background:var(--paper-line)}
-.pq{font-size:.9rem;color:var(--paper-muted);margin-top:8px}.pq-r{font-weight:800;color:var(--paper-ink)}
-.ress-g{font-size:.82rem;font-weight:700;color:#8a5200;margin-top:4px}
-.perfis{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px}
-.perfis a{display:grid;gap:4px;height:100%;padding:14px 16px;border:1px solid var(--paper-line);border-radius:12px;background:#fff;color:var(--paper-ink);text-decoration:none;transition:border-color .15s ease}
-.perfis a:hover{border-color:var(--gold)}.perfis b{font-size:1.02rem}.perfis span{font-size:.88rem;color:var(--paper-muted)}.perfis small{font-weight:800;color:var(--link)}
-.perguntas{display:grid;gap:10px}.perguntas li{padding-left:14px;border-left:3px solid var(--gold)}
-.mais-g{font-weight:700;color:var(--link)}
-.ranking{counter-reset:pos}.ranking>li{counter-increment:pos;position:relative}
-.ranking>li>a{padding-left:52px}.ranking>li::before{content:counter(pos) "º";position:absolute;left:12px;top:14px;font-weight:800;font-size:1.05rem;color:var(--premios);font-variant-numeric:tabular-nums}
-@media (max-width:480px){.jogos-g>li>a{grid-template-columns:72px 1fr;gap:12px}.jogos-g img{width:72px;height:72px}}
-</style><style>
-.bk .lide{max-width:70ch}
-.bk .aviso{background:#fff8e1;border:1px solid #e9d58a;border-radius:10px;padding:12px 14px;font-size:.92rem;color:var(--paper-ink)}
-.bk .aviso p+p{margin-top:6px}
-.bk .tab{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--paper-line);border-radius:12px;background:#fff}
-.bk table{border-collapse:collapse;width:100%;min-width:1200px;font-size:.86rem}
-.bk th,.bk td{padding:9px 10px;border-bottom:1px solid var(--paper-line);text-align:left;vertical-align:middle}
-.bk th{background:#f0f2f5;font-weight:700;white-space:nowrap;position:sticky;top:0}
-.bk td.n{white-space:nowrap;font-variant-numeric:tabular-nums}
-.bk td.j{min-width:220px}.bk td.j div{display:flex;gap:10px;align-items:center}
-.bk td.j img{width:48px;height:48px;object-fit:contain;flex:none;background:#fff;border-radius:6px}
-.bk .desc{font-weight:800;color:#0b7a3b}
-.bk .tag{display:inline-block;font-size:.72rem;font-weight:700;padding:2px 7px;border-radius:999px;background:#eef1f5;color:var(--paper-muted);margin-top:3px}
-.bk .tag.rec{background:#e3f6ea;color:#0b7a3b}
-.bk a.ir{font-weight:700;color:var(--link);white-space:nowrap}
-.bk .top5{display:grid;gap:12px;counter-reset:t}
-.bk .top5 li{display:grid;grid-template-columns:72px 1fr;gap:12px;align-items:center;padding:12px;border:1px solid var(--paper-line);border-radius:12px;background:#fff}
-.bk .top5 img{width:72px;height:72px;object-fit:contain}
-.bk .top5 b{display:block}.bk .top5 p{font-size:.9rem;color:var(--paper-muted);margin-top:3px}
-.bk .lista li{padding:8px 0;border-top:1px solid var(--paper-line)}.bk .lista li:first-child{border-top:0}
-.bk .credito{font-size:.8rem;color:var(--paper-muted);margin-top:8px}
-.bk table.cupons-t{min-width:900px}.bk table.cupons-t td:nth-child(3){min-width:320px;font-size:.82rem;color:var(--paper-muted)}
-.bk h3{margin:18px 0 8px;font-size:1.05rem}
+/* Black de Verdade: vitrine escura, capa grande, desconto que se lê de longe */
+.bk{padding-top:14px;padding-bottom:40px;display:grid;grid-template-columns:minmax(0,1fr);gap:22px;color:var(--ink)}.bk>*{min-width:0}
+.bk h2{font-size:1.35rem;line-height:1.2;margin:0 0 4px;color:#fff}
+.bk .sub{color:var(--muted);font-size:.95rem;margin:0}
+.bk a{color:inherit}
+/* topo */
+.bk-hero{position:relative;overflow:hidden;border-radius:16px;padding:22px 18px 18px;background:
+ radial-gradient(120% 90% at 100% 0,rgba(227,178,60,.28),transparent 55%),linear-gradient(160deg,#16130a,#000 60%);border:1px solid #3a2f12}
+.bk-kick{display:inline-flex;align-items:center;gap:8px;flex-wrap:wrap;line-height:1.4;font-size:.74rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--gold)}
+.bk-kick::before{content:"";width:8px;height:8px;border-radius:50%;background:#4cc38a;box-shadow:0 0 0 4px rgba(76,195,138,.18)}
+.bk-hero h1{font-size:clamp(2.1rem,8vw,3.6rem);line-height:1;letter-spacing:-.02em;margin:10px 0 10px;color:#fff;font-weight:800}
+.bk-hero h1 span{color:var(--gold)}
+.bk-hero .lide{font-size:1.05rem;line-height:1.5;color:#dfe3ea;max-width:62ch;margin:0}
+.bk-hero .lide b{color:#fff}
+.bk-stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:18px 0 0;padding:0;list-style:none}
+.bk-stats li{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:10px 12px}
+.bk-stats b{display:block;font-size:1.5rem;line-height:1.1;color:#fff;font-variant-numeric:tabular-nums}
+.bk-stats li.ouro b{color:var(--gold)}
+.bk-stats span{font-size:.8rem;color:var(--muted)}
+.bk-atual{margin:12px 0 0;font-size:.82rem;color:var(--muted)}
+.bk-pulo{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.bk-pulo a{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border-radius:999px;font-weight:800;font-size:.92rem;text-decoration:none}
+.bk .bk-pulo a.pri{background:var(--gold);color:#111}.bk-pulo a.sec{border:1px solid #4a4f58;color:#fff}
+@media (min-width:760px){.bk-hero{padding:34px 34px 28px}.bk-stats{grid-template-columns:repeat(4,minmax(0,1fr))}}
+/* faixa de confiança */
+.bk-conf{display:grid;gap:8px;margin:0;padding:0;list-style:none}
+.bk-conf li{display:flex;gap:10px;align-items:flex-start;font-size:.9rem;color:#cfd5de;line-height:1.4}
+.bk-conf li::before{content:"✓";flex:none;width:22px;height:22px;border-radius:50%;display:grid;place-items:center;background:rgba(76,195,138,.15);color:#4cc38a;font-weight:800;font-size:.8rem}
+@media (min-width:760px){.bk-conf{grid-template-columns:repeat(3,1fr)}}
+/* cartão de oferta */
+.of{position:relative;display:grid;grid-template-columns:96px minmax(0,1fr);gap:12px;align-items:start;padding:12px;border-radius:14px;background:#111419;border:1px solid #262a32}
+.of:hover{border-color:#4a3f1c}
+.of-img{position:relative;display:block;aspect-ratio:1;border-radius:10px;background:#fff;overflow:hidden}
+.of-img img{width:100%;height:100%;object-fit:contain;display:block}
+.of-pct{position:absolute;left:6px;top:6px;padding:3px 7px;border-radius:7px;background:var(--gold);color:#111;font-weight:900;font-size:.95rem;line-height:1.1;font-variant-numeric:tabular-nums;box-shadow:0 2px 8px rgba(0,0,0,.35)}
+.of-c{min-width:0;display:grid;gap:4px;align-content:start}
+.of-rec{justify-self:start;font-size:.68rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#4cc38a;background:rgba(76,195,138,.12);border-radius:999px;padding:3px 8px}
+.of-n{font-size:1rem;line-height:1.25;margin:0;color:#fff;font-weight:800;overflow-wrap:anywhere}
+.of-m{margin:0;font-size:.8rem;color:var(--muted)}
+.of-m .of-nota{color:#f0c44f;font-weight:700}
+.of-p{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;margin:4px 0 0}
+.of-por{font-size:1.45rem;font-weight:900;color:#fff;font-variant-numeric:tabular-nums;letter-spacing:-.01em}
+.of-ref{font-size:.85rem;color:var(--muted)}.of-ref s{text-decoration-thickness:1px}
+.of-bar{position:relative;height:6px;border-radius:99px;background:#2a2f38;overflow:hidden;margin:4px 0 2px}
+.of-bar span{position:absolute;inset:0 auto 0 0;background:linear-gradient(90deg,#4cc38a,#9be3bd);border-radius:99px}
+.of-eco{margin:0;font-size:.86rem;font-weight:800;color:#4cc38a}
+.of-loja{margin:2px 0 0;font-size:.82rem;color:#cfd5de}
+.of-loja b{color:#fff}
+.of-cp{display:inline-block;margin-top:2px;font-size:.74rem;font-weight:800;color:var(--gold);border:1px dashed var(--gold);border-radius:6px;padding:1px 6px}
+.of-acao{grid-column:1/-1;display:grid;gap:2px}.dest .of-acao{padding:0 14px 14px}.dest .of-c{padding-bottom:0!important}.of-btn{display:flex;align-items:center;justify-content:center;gap:6px;min-height:46px;margin-top:2px;border-radius:10px;background:var(--gold);color:#111;font-weight:900;text-decoration:none;font-size:.95rem}
+.bk .of-btn,.bk .of-btn:hover{color:#111}.of-btn:hover{background:#f0c44f}
+.of-mais{margin-top:6px;font-size:.84rem}
+.of-mais summary{cursor:pointer;color:#cfd5de;font-weight:700;min-height:32px;display:flex;align-items:center;list-style:none}
+.of-mais summary::-webkit-details-marker{display:none}
+.of-mais summary::after{content:"+";margin-left:6px;color:var(--gold);font-weight:900}.of-mais[open] summary::after{content:"−"}
+.of-mais ul{list-style:none;margin:4px 0 0;padding:0;display:grid;gap:6px}
+.of-mais li{display:flex;justify-content:space-between;gap:8px;align-items:center;border-top:1px solid #262a32;padding-top:6px;color:#cfd5de}
+.of-mais li a{color:var(--gold);font-weight:800;white-space:nowrap}
+.of-mais .calc{color:var(--muted);line-height:1.45}
+/* destaques: o jogo grande */
+.dest{display:grid;gap:12px;margin:0;padding:0;list-style:none}
+.dest .of{grid-template-columns:1fr;padding:0;overflow:hidden}
+.dest .of-img{aspect-ratio:4/3;border-radius:0}
+.dest .of-img img{padding:12px;object-fit:contain}
+.dest .of-pct{left:10px;top:10px;font-size:1.5rem;padding:6px 10px;border-radius:10px}
+.dest .of-c{padding:0 14px 14px}
+.dest .of-n{font-size:1.15rem}
+.dest .of-por{font-size:1.9rem}
+.dest .pos{position:absolute;right:10px;top:10px;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:#111;color:var(--gold);font-weight:900;font-size:.9rem;border:1px solid #4a3f1c}
+@media (max-width:759px){.dest{grid-auto-flow:column;grid-auto-columns:84%;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:6px;margin:0 -16px;padding-left:16px;padding-right:16px;scrollbar-width:none}
+ .dest>li{scroll-snap-align:start}}
+@media (min-width:760px){.dest{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:1080px){.dest{grid-template-columns:repeat(3,minmax(0,1fr))}.dest>li:first-child{grid-column:span 2;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);align-items:stretch}.dest>li:first-child .of-img{aspect-ratio:auto;min-height:100%}.dest>li:first-child .of-c{padding:20px 20px 0 6px;align-content:end}.dest>li:first-child .of-acao{grid-column:2;padding:8px 20px 20px 6px;align-content:start}.dest>li:first-child .of-img{grid-row:span 2}.dest>li:first-child .of-n{font-size:1.5rem}.dest>li:first-child .of-por{font-size:2.4rem}}
+.dica-arrasta{font-size:.8rem;color:var(--muted);margin:6px 0 0}
+@media (min-width:760px){.dica-arrasta{display:none}}
+/* filtros */
+.bk-filtros{position:sticky;top:var(--nav-h,49px);z-index:10;display:grid;gap:8px;padding:10px;margin:0 -6px;border-radius:12px;background:rgba(10,11,14,.94);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid #262a32}
+.bk-filtros[hidden]{display:none}
+.seg{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
+.seg button,.bk-chk{flex:none;display:inline-flex;align-items:center;gap:6px;min-height:40px;padding:0 14px;border-radius:999px;border:1px solid #3a3f48;background:none;color:#e9ecf1;font:inherit;font-size:.88rem;font-weight:700;cursor:pointer}
+.seg button[aria-pressed=true]{background:#fff;color:#111;border-color:#fff}
+.bk-chk input{accent-color:var(--gold);width:16px;height:16px}
+.bk-linha2{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:8px}.bk-linha2>*{min-width:0;max-width:100%}
+.bk-filtros input[type=search],.bk-filtros select{min-height:42px;border-radius:10px;border:1px solid #3a3f48;background:#14171c;color:#fff;font:inherit;font-size:16px;padding:0 12px}
+.bk-cont{margin:0;font-size:.82rem;color:var(--muted)}
+@media (min-width:900px){.bk-filtros{grid-template-columns:auto 1fr auto auto;align-items:center}.bk-linha2{grid-column:2}.bk-cont{text-align:right}}
+.ofertas{display:grid;gap:10px;margin:12px 0 0;padding:0;list-style:none}
+@media (min-width:760px){.ofertas{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:1080px){.ofertas{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.ofertas .of[hidden]{display:none}
+.vazio{padding:20px;border-radius:12px;border:1px dashed #3a3f48;color:var(--muted);text-align:center}
+/* cupons */
+.cupons{display:grid;gap:10px;margin:12px 0 0;padding:0;list-style:none}
+@media (min-width:760px){.cupons{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.cup-c{display:grid;gap:6px;padding:14px;border-radius:14px;background:#111419;border:1px solid #262a32}
+.cup-loja{margin:0;font-weight:800;color:#fff}
+.cup-cod{justify-self:start;display:inline-flex;align-items:center;gap:10px;min-height:44px;padding:0 6px 0 14px;border-radius:10px;border:2px dashed var(--gold);background:rgba(227,178,60,.08);color:#fff;font:inherit;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:1.05rem;font-weight:800;letter-spacing:.04em;cursor:pointer}
+.cup-cod span{font-family:"Public Sans",system-ui,sans-serif;letter-spacing:0;font-size:.78rem;background:var(--gold);color:#111;border-radius:7px;padding:5px 9px}
+.cup-txt{margin:0;font-size:.85rem;color:#cfd5de;line-height:1.45}
+.cup-st{margin:0;font-size:.78rem;color:var(--muted)}
+.cup-c a{font-size:.85rem;font-weight:800;color:var(--gold)}
+/* armadilhas */
+.arms{display:grid;gap:10px;margin:12px 0 0;padding:0;list-style:none}
+.arm{display:grid;gap:6px;padding:14px;border-radius:14px;background:#160c0e;border:1px solid #4a1f27}
+.arm-n{display:flex;flex-wrap:wrap;gap:8px}
+.arm-fake{font-weight:800;color:#ff8a9a}.arm-fake s{text-decoration-thickness:2px}
+.arm-real{font-weight:800;color:#fff}
+/* informações */
+.bk-info{border-radius:14px;background:#111419;border:1px solid #262a32}
+.bk-info summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:10px;min-height:52px;padding:0 16px;font-weight:800;color:#fff}
+.bk-info summary::-webkit-details-marker{display:none}
+.bk-info summary::after{content:"+";margin-left:auto;color:var(--gold);font-size:1.3rem}.bk-info[open] summary::after{content:"−"}
+.bk-info .dentro{padding:0 16px 16px;display:grid;gap:10px;color:#cfd5de;font-size:.92rem;line-height:1.55}
+.bk-info .dentro p,.bk-info .dentro ul{margin:0}.bk-info .dentro ul{padding-left:1.1em;display:grid;gap:6px}
+.bk-info b{color:#fff}
+.bk .credito{font-size:.8rem;color:#a1a9b5;margin:10px 0 0}
 </style>
 <meta name="theme-color" content="#000000">
 <link rel="icon" href="../favicon-48.png" sizes="48x48" type="image/png"><link rel="icon" href="../favicon-32.png" sizes="32x32" type="image/png"><link rel="apple-touch-icon" href="../apple-touch-icon.png"><link rel="manifest" href="../site.webmanifest">
@@ -309,7 +382,7 @@ footer .in{display:flex;flex-wrap:wrap;gap:10px 20px;padding-top:18px;padding-bo
 .nota .crivo{background:var(--faixa-escura);border:1px solid #262a32;--paper-ink:#eceff3;--paper-muted:#a7afbb}
 .nota .crivo p{color:#c9cfd8}
 .trilha{min-width:0;max-width:100%}.trilha ol{display:flex;align-items:center;min-width:0;margin:0;padding:0;list-style:none;font-size:.85rem;color:var(--muted)}.trilha li{display:flex;align-items:center;white-space:nowrap}.trilha li+li::before{content:"›";content:"›" / "";margin:0 8px;color:var(--muted)}.trilha a{color:var(--gold);font-weight:700;text-decoration:none;padding:4px 0}.trilha a:hover{text-decoration:underline}.trilha li:last-child{display:block;min-width:0;overflow:hidden;text-overflow:ellipsis}.trilha li:last-child::before{display:inline}.busca-btn{display:grid;place-items:center;flex:none;width:44px;height:44px;padding:0;border:1px solid #3a3f48;border-radius:8px;background:none;color:#e9ecf1;cursor:pointer}.busca-btn:hover{border-color:#e3b23c;color:#e3b23c}.busca-btn[hidden]{display:none}footer .in a{display:inline-flex;align-items:center;min-height:24px}.cpw{position:relative;display:inline-block}.cp{display:inline-flex;align-items:center;justify-content:center;gap:8px;box-sizing:border-box;line-height:1.2;min-height:44px;margin:0;padding:10px 20px;border-radius:999px;border:0;background:#157a43;color:#fff;font:inherit;font-size:.95rem;font-weight:800;text-decoration:none;cursor:pointer}.cp:hover{background:#11683a;color:#fff}.cp .ic{width:19px;height:19px}.cp[hidden]{display:none}.cpw.mini .cp{min-height:40px;padding:8px 14px;font-size:.88rem}.cp-menu{position:absolute;z-index:30;top:calc(100% + 8px);left:0;min-width:200px;display:grid;gap:2px;padding:6px;border-radius:12px;background:#fff;border:1px solid #dde1e7;box-shadow:0 10px 30px rgba(0,0,0,.25)}.cp-menu[hidden]{display:none}.cp-menu.sobe{top:auto;bottom:calc(100% + 8px)}.cp-menu.dir{left:auto;right:0}.cp-op{display:flex;align-items:center;gap:10px;min-height:44px;padding:8px 12px;border:0;border-radius:8px;background:none;color:#14171c;font:inherit;font-size:.95rem;font-weight:700;text-align:left;text-decoration:none;cursor:pointer}.cp-op:hover,.cp-op:focus-visible{background:#eef1f4;color:#14171c}.cp-op .ic{width:20px;height:20px}.cp-op.zap-op .ic{color:#157a43}.cp-st{position:absolute;z-index:30;top:calc(100% + 8px);left:0;white-space:nowrap;margin:0;padding:6px 12px;border-radius:8px;background:#14171c;color:#fff;font-size:.85rem;font-weight:700}.cp-st:empty{display:none}.barra-lt .cp-st{top:auto;bottom:calc(100% + 8px)}.convite{display:flex;align-items:center;justify-content:space-between;gap:12px 20px;flex-wrap:wrap}.convite .cv-t{margin:0;font-weight:800;font-size:1.1rem}.convite .cv-s{margin:2px 0 0;font-size:.92rem;opacity:.8}.barra-lt>*{flex:none}.barra-lt{width:max-content;max-width:calc(100vw - 12px);box-sizing:border-box;position:fixed;z-index:25;left:50%;bottom:calc(12px + env(safe-area-inset-bottom));display:flex;align-items:center;gap:4px;padding:5px;border-radius:999px;background:#14171c;border:1px solid #3a3f48;box-shadow:0 8px 24px rgba(0,0,0,.35);transform:translate(-50%,0);transition:transform .25s ease,opacity .25s ease}.barra-lt.fora{transform:translate(-50%,calc(100% + 24px));opacity:0;pointer-events:none}.lt-b{display:inline-flex;align-items:center;gap:7px;min-height:44px;padding:8px 14px;border:0;border-radius:999px;background:none;color:#e9ecf1;font:inherit;font-size:.9rem;font-weight:700;text-decoration:none;cursor:pointer}.lt-b:hover{background:#262a31;color:#fff}.lt-b .ic{width:20px;height:20px}.barra-lt .lt-b.curtir{background:none;border:0;color:#e9ecf1;padding:8px 14px}.barra-lt .lt-b.curtir[aria-pressed=true]{color:#ff6b81;background:none}@media (max-width:479px){.lt-b span{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}}.lt-b.curtir[aria-pressed=true] .ic{fill:currentColor}.lt-grupo{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:44px;padding:0 14px 0 6px;border-radius:999px;background:#e3b23c;color:#14171c;font-size:.9rem;font-weight:800;text-decoration:none;white-space:nowrap}.lt-grupo:hover{background:#f0c44f;color:#14171c}.lt-grupo img{width:32px;height:32px;border-radius:8px;display:block}@media (max-width:479px){.barra-lt{gap:2px}.barra-lt .lt-b{padding:8px 10px}.barra-lt .cp{padding:8px 12px}.lt-grupo{padding:0 12px 0 6px}}@media (max-width:399px){.barra-lt:has(.curtir) .cp span{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}.barra-lt:has(.curtir) .cp{padding:8px 14px}}.barra-lt .cp{min-height:44px;padding:8px 16px;font-size:.9rem}body.lt-on .voltar-topo,body.lt-on button.sobe{bottom:calc(76px + env(safe-area-inset-bottom))}@media print{.barra-lt{display:none}}.interacoes{display:grid;gap:14px}.interacoes[hidden]{display:none}.curtir-l{display:flex;align-items:center;gap:12px;flex-wrap:wrap}.curtir{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:8px 18px;border-radius:999px;border:2px solid #b3263e;background:#fff;color:#b3263e;font:inherit;font-weight:800;cursor:pointer}.curtir .ic{width:22px;height:22px}.curtir[aria-pressed=true]{background:#b3263e;color:#fff}.curtir[aria-pressed=true] .ic{fill:currentColor}.curtir .n{font-variant-numeric:tabular-nums}.curtir-dica{font-size:.9rem;color:#5a6270}.interacoes h2{margin:4px 0 0}.coms{list-style:none;margin:0;padding:0;display:grid;gap:10px}.coms li{background:#fff;border:1px solid #dde1e7;border-radius:10px;padding:12px 14px}.com-quem{margin:0;font-size:.92rem}.com-quem time{color:#5a6270;font-size:.8rem;margin-left:6px}.com-txt{margin:4px 0 0;white-space:pre-wrap;color:#14171c}.coms-vazio{margin:0;color:#5a6270}.com-form{display:grid;gap:10px;border-top:1px solid #dde1e7;padding-top:14px}.com-form label{display:grid;gap:4px;font-weight:700;font-size:.9rem;color:#14171c}.com-form small{font-weight:600;color:#5a6270}.com-form input,.com-form textarea{font:inherit;font-size:16px;font-weight:400;padding:10px 12px;border:1px solid #c8cdd5;border-radius:8px;background:#fff;color:#14171c}.com-form textarea{resize:vertical;min-height:110px}.com-form .isca{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}.com-form button{justify-self:start;min-height:44px;padding:10px 20px;border-radius:999px;border:0;background:#14171c;color:#fff;font:inherit;font-weight:800;cursor:pointer}.com-form button:disabled{opacity:.6}.com-aviso{margin:0;font-size:.82rem;color:#5a6270}.com-aviso a{color:#1f5fae}.com-st{margin:0;font-weight:700;font-size:.92rem}.com-st:empty{display:none}.com-st.ok{color:#1b7a45}.com-st.erro{color:#a3223a}:where(html){scroll-padding-top:calc(var(--nav-h,49px) + 12px)}.nav{position:sticky;top:0;z-index:20}body .abas,body .barra-f,body .ctrl{top:var(--nav-h,49px)}.marca img.logo{width:auto;height:48px;border-radius:0}@media (max-width:480px){.marca img.logo{height:40px}}.nav .casa{display:flex;align-items:center;justify-content:center;min-width:44px}.nav .casa .ic{width:20px;height:20px}@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.card:hover,.jogo:hover .capa img,.jogo:active .capa,.zap:active,.post-btn:active,.btn-filtro:hover,.btn-filtro:active,.ver:active{transform:none!important}}</style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://eliteboardgamers.com.br/#organizacao", "name": "Elite Boardgamers", "url": "https://eliteboardgamers.com.br/", "logo": {"@type": "ImageObject", "url": "https://eliteboardgamers.com.br/marca/elite-boardgamers.webp", "width": 318, "height": 254}, "sameAs": ["https://www.instagram.com/eliteboardgamers/"]}, {"@type": "CollectionPage", "@id": "https://eliteboardgamers.com.br/black/", "url": "https://eliteboardgamers.com.br/black/", "name": "Black de Verdade: ofertas de jogos de tabuleiro com desconto real", "inLanguage": "pt-BR", "dateModified": "2026-11-03T12:54-03:00"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Início", "item": "https://eliteboardgamers.com.br/"}, {"@type": "ListItem", "position": 2, "name": "Black de Verdade", "item": "https://eliteboardgamers.com.br/black/"}]}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://eliteboardgamers.com.br/#organizacao", "name": "Elite Boardgamers", "url": "https://eliteboardgamers.com.br/", "logo": {"@type": "ImageObject", "url": "https://eliteboardgamers.com.br/marca/elite-boardgamers.webp", "width": 318, "height": 254}, "sameAs": ["https://www.instagram.com/eliteboardgamers/"]}, {"@type": "CollectionPage", "@id": "https://eliteboardgamers.com.br/black/", "url": "https://eliteboardgamers.com.br/black/", "name": "Black de Verdade: ofertas de jogos de tabuleiro com desconto real", "inLanguage": "pt-BR", "dateModified": "2026-11-03T12:57-03:00"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Início", "item": "https://eliteboardgamers.com.br/"}, {"@type": "ListItem", "position": 2, "name": "Black de Verdade", "item": "https://eliteboardgamers.com.br/black/"}]}]}</script>
 </head>
 <body>
 <header class="bar" id="topo"><div class="in">
@@ -321,56 +394,807 @@ footer .in{display:flex;flex-wrap:wrap;gap:10px 20px;padding-top:18px;padding-bo
 <script>(()=>{const b=document.querySelector('.busca-btn');let c;b.hidden=false;const a=()=>{c=c||new Promise((r,j)=>{const s=document.createElement('script');s.src='../busca.js';s.onload=r;s.onerror=()=>{c=null;j()};document.head.append(s)});c.then(()=>abrirBusca('../'),()=>{})};b.addEventListener('click',a);addEventListener('keydown',e=>{const t=e.target,ed=t.isContentEditable||/^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName);if((e.key==='/'&&!ed&&!e.ctrlKey&&!e.metaKey)||((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k')){e.preventDefault();a()}})})()</script>
 <nav class="nav" aria-label="Seções do site"><ul class="in"><li><a class="casa" href="../" aria-label="Página inicial"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 9.5V20h13V9.5"/><path d="M10 20v-5.5h4V20"/></svg></a></li><li><a href="../noticias/">Notícias</a></li><li><a href="../resenhas/">Resenhas</a></li><li><a href="../como-jogar/">Como jogar</a></li><li><a href="../lancamentos/">Lançamentos</a></li><li><a href="../consulta/">Consulta Golden Geek</a></li><li><a href="../black/" aria-current="page">Black de Verdade</a></li></ul></nav>
 <script>(()=>{const n=document.querySelector('.nav'),h=()=>document.documentElement.style.setProperty('--nav-h',n.offsetHeight+'px');h();addEventListener('resize',h);addEventListener('load',h)})()</script>
-<main id="conteudo" class="in"><div class="nota guia bk">
+<main id="conteudo" class="in bk">
  <nav class="trilha" aria-label="Trilha de navegação"><ol><li><a href="../">Início</a></li><li aria-current="page">Black de Verdade</li></ol></nav>
- <article class="bloco">
-  <h1>Black de Verdade</h1>
-  <p class="lide">Só entra aqui jogo de tabuleiro cujo preço de hoje está pelo menos 20% abaixo da média real do
-  período, e não abaixo de um preço "de" inventado na véspera. A média é aparada: tiramos os 10% de preços mais altos e os
-  10% mais baixos do histórico e fazemos a conta com o resto.</p>
-  <p class="criterio">Atualizado em 03/11/2026 às 12h54 (horário de Brasília). 40 jogos no radar.</p>
-  <div class="aviso">
+ <header class="bk-hero">
+  <span class="bk-kick">Radar de preços · Black Friday 2026</span>
+  <h1>Black de <span>Verdade</span></h1>
+  <p class="lide">Só entra aqui jogo de tabuleiro que está <b>pelo menos 20% abaixo do preço médio real</b> dos últimos meses. Nada de comparar com um preço "de" inventado na véspera.</p>
+  <ul class="bk-stats">
+   <li class="ouro"><b>40</b><span>jogos com desconto real (29 jogos base, 11 expansões)</span></li>
+   <li class="ouro"><b>até 49%</b><span>abaixo da média</span></li>
+   <li><b>9</b><span>no menor preço do período</span></li>
+   <li><b>9</b><span>cupoms anunciados pelas lojas</span></li>
+  </ul>
+  <p class="bk-atual">Atualizado em 03/11/2026 às 12h57 (horário de Brasília). O radar lê os preços de novo a cada 30 minutos.</p>
+  <nav class="bk-pulo" aria-label="Atalhos"><a class="pri" href="#melhores">Ver as melhores ofertas</a><a class="sec" href="#todas">Todas as 40</a><a class="sec" href="#cupons">Cupons</a><a class="sec" href="#comunidade">Achados da comunidade</a></nav>
+ </header>
+ <ul class="bk-conf">
+  <li>Desconto calculado sobre a média aparada do histórico de preços, não sobre o preço "de" da loja.</li>
+  <li>Preço conferido na página da própria loja, com o horário da leitura em cada oferta.</li>
+  <li>Só jogo bem avaliado: nota 7 ou mais no BGG, ou premiado. Links sem comissão.</li>
+ </ul>
+ <section id="melhores" aria-labelledby="h-melhores">
+  <h2 id="h-melhores">As 5 melhores agora</h2>
+  <p class="sub">A melhor combinação de nota no BGG e desconto real.</p>
+  <ol class="dest"><li class="of" data-tipo="game" data-desc="0.4909" data-eco="35.77" data-bgg="8.14" data-por="37.09" data-rec="1" data-busca="the totem game place games (independente)">
+ <a class="of-img" href="https://www.placegames.com.br/boardgames/the-totem-game" target="_blank" rel="noopener nofollow sponsored" tabindex="-1" aria-hidden="true"><img src="../img/black/the-totem-game-g.webp" alt="" loading="lazy" decoding="async" width="640" height="640"><span class="of-pct">−49%</span><span class="pos">1</span></a>
+ <div class="of-c">
+  <span class="of-rec">Menor preço do período</span>
+  <h3 class="of-n">The Totem Game</h3>
+  <p class="of-m">(Independente) · <span class="of-nota">★ 8,1</span> no BGG</p>
+  <p class="of-p"><b class="of-por">R$ 37,09</b><span class="of-ref">média <s>R$ 72,86</s></span></p>
+  <div class="of-bar" role="img" aria-label="Preço de hoje é 51% da média"><span style="width:51%"></span></div>
+  <p class="of-eco">R$ 35,77 abaixo da média (49%)</p>
+  <p class="of-loja">na <b>Place Games</b> · preço visto hoje às 12h47</p>
+ </div>
+ <div class="of-acao">
+  <a class="of-btn" href="https://www.placegames.com.br/boardgames/the-totem-game" target="_blank" rel="noopener nofollow sponsored">Ver na Place Games ↗</a>
+  
+  <details class="of-mais"><summary>Como chegamos a esse desconto</summary><p class="calc">Média do período: R$ 72,86 (32 dias de histórico, base curta). Menor preço do período: R$ 37,09. Preço lido na página da loja, hoje às 12h47.</p></details>
+ </div>
+</li><li class="of" data-tipo="game" data-desc="0.4656" data-eco="92.27" data-bgg="8.41" data-por="105.90" data-rec="0" data-busca="marvel united: multiverse facil shopping cmon limited">
+ <a class="of-img" href="https://www.facilshopping.com.br/produtos/marvel-united-multiverse-jogo-de-tabuleiro-galapagos/" target="_blank" rel="noopener nofollow sponsored" tabindex="-1" aria-hidden="true"><img src="../img/black/marvel-united-multiverse-g.webp" alt="" loading="lazy" decoding="async" width="640" height="640"><span class="of-pct">−47%</span><span class="pos">2</span></a>
+ <div class="of-c">
+  
+  <h3 class="of-n">Marvel United: Multiverse</h3>
+  <p class="of-m">CMON Limited · <span class="of-nota">★ 8,4</span> no BGG</p>
+  <p class="of-p"><b class="of-por">R$ 105,90</b><span class="of-ref">média <s>R$ 198,17</s></span></p>
+  <div class="of-bar" role="img" aria-label="Preço de hoje é 53% da média"><span style="width:53%"></span></div>
+  <p class="of-eco">R$ 92,27 abaixo da média (47%)</p>
+  <p class="of-loja">na <b>Facil Shopping</b> · preço visto hoje às 12h46</p>
+ </div>
+ <div class="of-acao">
+  <a class="of-btn" href="https://www.facilshopping.com.br/produtos/marvel-united-multiverse-jogo-de-tabuleiro-galapagos/" target="_blank" rel="noopener nofollow sponsored">Ver na Facil Shopping ↗</a>
+  
+  <details class="of-mais"><summary>Como chegamos a esse desconto</summary><p class="calc">Média do período: R$ 198,17 (32 dias de histórico, base curta). Menor preço do período: R$ 98,49. Preço lido na página da loja, hoje às 12h46.</p></details>
+ </div>
+</li><li class="of" data-tipo="expansion" data-desc="0.4194" data-eco="79.40" data-bgg="8.72" data-por="109.90" data-rec="0" data-busca="arkham horror: card game - o banquete de hemlock vale (expansão de investigador) facil shopping fantasy flight games">
+ <a class="of-img" href="https://www.facilshopping.com.br/produtos/arkham-horror-card-game-o-banquete-de-hemlock-vale-expansao-investigador-1so3r/" target="_blank" rel="noopener nofollow sponsored" tabindex="-1" aria-hidden="true"><img src="../img/black/arkham-horror-card-game-o-banquete-de-hemlock-vale-expansao-de-investigador-g.webp" alt="" loading="lazy" decoding="async" width="640" height="640"><span class="of-pct">−42%</span><span class="pos">3</span></a>
+ <div class="of-c">
+  
+  <h3 class="of-n">Arkham Horror: Card Game - O Banquete de Hemlock Vale (Expansão de Investigador)</h3>
+  <p class="of-m">Fantasy Flight Games · Expansão · <span class="of-nota">★ 8,7</span> no BGG</p>
+  <p class="of-p"><b class="of-por">R$ 109,90</b><span class="of-ref">média <s>R$ 189,30</s></span></p>
+  <div class="of-bar" role="img" aria-label="Preço de hoje é 58% da média"><span style="width:58%"></span></div>
+  <p class="of-eco">R$ 79,40 abaixo da média (42%)</p>
+  <p class="of-loja">na <b>Facil Shopping</b> · preço visto hoje às 12h45</p>
+ </div>
+ <div class="of-acao">
+  <a class="of-btn" href="https://www.facilshopping.com.br/produtos/arkham-horror-card-game-o-banquete-de-hemlock-vale-expansao-investigador-1so3r/" target="_blank" rel="noopener nofollow sponsored">Ver na Facil Shopping ↗</a>
+  
+  <details class="of-mais"><summary>Como chegamos a esse desconto</summary><p class="calc">Média do período: R$ 189,30 (32 dias de histórico, base curta). Menor preço do período: R$ 102,21. Preço lido na página da loja, hoje às 12h45.</p></details>
+ </div>
+</li><li class="of" data-tipo="game" data-desc="0.4286" data-eco="27.00" data-bgg="8.50" data-por="36.00" data-rec="1" data-busca="zenkai: adventure arcs livros e jogos art ao cubo">
+ <a class="of-img" href="https://www.espacoarcs.com.br/jogos/zenkai-adventure-caverna-glacial" target="_blank" rel="noopener nofollow sponsored" tabindex="-1" aria-hidden="true"><img src="../img/black/zenkai-adventure-g.webp" alt="" loading="lazy" decoding="async" width="640" height="640"><span class="of-pct">−43%</span><span class="pos">4</span></a>
+ <div class="of-c">
+  <span class="of-rec">Menor preço do período</span>
+  <h3 class="of-n">Zenkai: Adventure</h3>
+  <p class="of-m">Art ao Cubo · <span class="of-nota">★ 8,5</span> no BGG</p>
+  <p class="of-p"><b class="of-por">R$ 36,00</b><span class="of-ref">média <s>R$ 63,00</s></span></p>
+  <div class="of-bar" role="img" aria-label="Preço de hoje é 57% da média"><span style="width:57%"></span></div>
+  <p class="of-eco">R$ 27,00 abaixo da média (43%)</p>
+  <p class="of-loja">na <b>ARCS Livros e Jogos</b> · preço visto hoje às 10h35</p>
+ </div>
+ <div class="of-acao">
+  <a class="of-btn" href="https://www.espacoarcs.com.br/jogos/zenkai-adventure-caverna-glacial" target="_blank" rel="noopener nofollow sponsored">Ver na ARCS Livros e Jogos ↗</a>
+  
+  <details class="of-mais"><summary>Como chegamos a esse desconto</summary><p class="calc">Média do período: R$ 63,00 (32 dias de histórico, base curta). Menor preço do período: R$ 36,00. Preço lido na Compara Jogos, hoje às 10h35.</p></details>
+ </div>
+</li><li class="of" data-tipo="expansion" data-desc="0.4643" data-eco="16.46" data-bgg="7.46" data-por="18.99" data-rec="0" data-busca="magic maze: maximum security taverna real caixinha boardgames dude games">
+ <a class="of-img" href="https://www.tavernareal.com/tabuleiro/magic-maze-maximum-security" target="_blank" rel="noopener nofollow sponsored" tabindex="-1" aria-hidden="true"><img src="../img/black/magic-maze-maximum-security-g.webp" alt="" loading="lazy" decoding="async" width="640" height="640"><span class="of-pct">−46%</span><span class="pos">5</span></a>
+ <div class="of-c">
+  
+  <h3 class="of-n">Magic Maze: Maximum Security</h3>
+  <p class="of-m">Dude Games · Expansão · <span class="of-nota">★ 7,5</span> no BGG</p>
+  <p class="of-p"><b class="of-por">R$ 18,99</b><span class="of-ref">média <s>R$ 35,45</s></span></p>
+  <div class="of-bar" role="img" aria-label="Preço de hoje é 54% da média"><span style="width:54%"></span></div>
+  <p class="of-eco">R$ 16,46 abaixo da média (46%)</p>
+  <p class="of-loja">na <b>Taverna Real</b> · preço visto hoje às 12h46</p>
+ </div>
+ <div class="of-acao">
+  <a class="of-btn" href="https://www.tavernareal.com/tabuleiro/magic-maze-maximum-security" target="_blank" rel="noopener nofollow sponsored">Ver na Taverna Real ↗</a>
+  <details class="of-mais"><summary>Mais 1 loja com desconto real</summary><ul><li><span>Caixinha Boardgames: <b>R$ 19,00</b> (46% abaixo da média)</span><a href="https://www.caixinhaboardgames.com.br/produtos/maximum-security-expansao-magic-maze/" target="_blank" rel="noopener nofollow sponsored">Ver</a></li></ul></details>
+  <details class="of-mais"><summary>Como chegamos a esse desconto</summary><p class="calc">Média do período: R$ 35,45 (32 dias de histórico, base curta). Menor preço do período: R$ 13,57. Preço lido na página da loja, hoje às 12h46.</p></details>
+ </div>
+</li></ol><p class="dica-arrasta">Arraste para o lado para ver as cinco.</p>
+ </section>
+ <section id="todas" aria-labelledby="h-todas">
+  <h2 id="h-todas">Todas as ofertas com desconto real</h2>
+  <p class="sub">Um cartão por jogo, com a loja mais barata. Quando outra loja também passou no corte, ela aparece em "Mais lojas".</p>
+  <div class="bk-filtros" role="group" aria-label="Filtrar e ordenar ofertas" hidden>
+   <div class="seg"><button type="button" data-tipo="" aria-pressed="true">Tudo (40)</button><button type="button" data-tipo="game" aria-pressed="false">Jogos base (29)</button><button type="button" data-tipo="expansion" aria-pressed="false">Expansões (11)</button>
+    <label class="bk-chk"><input type="checkbox"> Menor preço do período</label></div>
+   <div class="bk-linha2"><input type="search" placeholder="Buscar jogo, loja ou editora" aria-label="Buscar jogo, loja ou editora">
+    <select aria-label="Ordenar"><option value="desc">Maior desconto</option><option value="eco">Maior economia em R$</option><option value="bgg">Melhor nota BGG</option><option value="por">Menor preço</option></select></div>
+   <p class="bk-cont" aria-live="polite"></p>
+  </div>
+  <ul class="ofertas"><li class="of" data-tipo="game" data-desc="0.4909" data-eco="35.77" data-bgg="8.14" data-por="37.09" data-rec="1" data-busca="the totem game place games (independente)">
+ <a class="of-img" href="https://www.placegames.com.br/boardgames/the-totem-game" target="_blank" rel="noopener nofollow sponsored" tabindex="-1" aria-hidden="true"><img src="../img/black/the-totem-game.webp" alt="" loading="lazy" decoding="async" width="240" height="240"><span class="of-pct">−49%</span></a>
+ <div class="of-c">
+  <span class="of-rec">Menor preço do período</span>
+  <h3 class="of-n">The Totem Game</h3>
+  <p class="of-m">(Independente) · <span class="of-nota">★ 8,1</span> no BGG</p>
+  <p class="of-p"><b class="of-por">R$ 37,09</b><span class="of-ref">média <s>R$ 72,86</s></span></p>
+  <div class="of-bar" role="img" aria-label="Preço de hoje é 51% da média"><span style="width:51%"></span></div>
+  <p class="of-eco">R$ 35,77 abaixo da média (49%)</p>
+  <p class="of-loja">na <b>Place Games</b> · preço visto hoje às 12h47</p>
+ </div>
+ <div class="of-acao">
+  <a class="of-btn" href="https://www.placegames.com.br/boardgames/the-totem-game" target="_blank" rel="noopener nofollow sponsored">Ver na Place Games ↗</a>
+  
+  <details class="of-mais"><summary>Como chegamos a esse desconto</summary><p class="calc">Média do período: R$ 72,86 (32 dias de histórico, base curta). Menor preço do período: R$ 37,09. Preço lido na página da loja, hoje às 12h47.</p></details>
+ </div>
+</li><li class="of" data-tipo="game" data-desc="0.4656" data-eco="92.27" data-bgg="8.41" data-por="105.90" data-rec="0" data-busca="marvel united: multiverse facil shopping cmon limited">
+ <a class="of-img" href="https://www.facilshopping.com.br/produtos/marvel-united-multiverse-jogo-de-tabuleiro-galapagos/" target="_blank" rel="noopener nofollow sponsored" tabindex="-1" aria-hidden="true"><img src="../img/black/marvel-united-multiverse.webp" alt="" loading="lazy" decoding="async" width="240" height="240"><span class="of-pct">−47%</span></a>
+ <div class="of-c">
+  
+  <h3 class="of-n">Marvel United: Multiverse</h3>
+  <p class="of-m">CMON Limited · <span class="of-nota">★ 8,4</span> no BGG</p>
+  <p class="of-p"><b class="of-por">R$ 105,90</b><span class="of-ref">média <s>R$ 198,17</s></span></p>
+  <div class="of-bar" role="img" aria-label="Preço de hoje é 53% da média"><span style="width:53%"></span></div>
+  <p class="of-eco">R$ 92,27 abaixo da média (47%)</p>
+  <p class="of-loja">na <b>Facil Shopping</b> · preço visto hoje às 12h46</p>
+ </div>
+ <div class="of-acao">
+  <a class="of-btn" href="https://www.facilshopping.com.br/produtos/marvel-united-multiverse-jogo-de-tabuleiro-galapagos/" target="_blank" rel="noopener nofollow sponsored">Ver na Facil Shopping ↗</a>
+  
+  <details class="of-mais"><summary>Como chegamos a esse desconto</summary><p class="calc">Média do período: R$ 198,17 (32 dias de histórico, base curta). Menor preço do período: R$ 98,49. Preço lido na página da loja, hoje às 12h46.</p></details>
+ </div>
+</li><li class="of" data-tipo="expansion" data-desc="0.4643" data-eco="16.46" data-bgg="7.46" data-por="18.99" data-rec="0" data-busca="magic maze: maximum security taverna real caixinha boardgames dude games">
+ <a class="of-img" href="https://www.tavernareal.com/tabuleiro/magic-maze-maximum-security" target="_blank" rel="noopener nofollow sponsored" tabindex="-1" aria-hidden="true"><img src="../img/black/magic-maze-maximum-security.webp" alt="" loading="lazy" decoding="async" width="240" height="240"><span class="of-pct">−46%</span></a>
+ <div class="of-c">
+  
+  <h3 class="of-n">Magic Maze: Maximum Security</h3>
+  <p class="of-m">Dude Games · Expansão · <span class="of-nota">★ 7,5</span> no BGG</p>
+  <p class="of-p"><b class="of-por">R$ 18,99</b><span class="of-ref">média <s>R$ 35,45</s></span></p>
+  <div class="of-bar" role="img" aria-label="Preço de hoje é 54% da média"><span style="width:54%"></span></div>
+  <p class="of-eco">R$ 16,46 abaixo da média (46%)</p>
+  <p class="of-loja">na <b>Taverna Real</b> · preço visto hoje às 12h46</p>
+ </div>
+ <div class="of-acao">
+  <a class="of-btn" href="https://www.tavernareal.com/tabuleiro/magic-maze-maximum-security" target="_blank" rel="noopener nofollow sponsored">Ver na Taverna Real ↗</a>
+  <details class="of-mais"><summary>Mais 1 loja com desconto real</summary><ul><li><span>Caixinha Boardgames: <b>R$ 19,00</b> (46% abaixo da média)</span><a href="https://www.caixinhaboardgames.com.br/produtos/maximum-security-expansao-magic-maze/" target="_blank" rel="noopener nofollow sponsored">Ver</a></li></ul></details>
+  <details class="of-mais"><summary>Como chegamos a esse desconto</summary><p class="calc">Média do período: R$ 35,45 (32 dias de histórico, base curta). Menor preço do período: R$ 13,57. Preço lido na página da loja, hoje às 12h46.</p></details>
+ </div>
+</li><li class="of" data-tipo="game" data-desc="0.4477" data-eco="80.97" data-bgg="7.05" data-por="99.90" data-rec="0" data-busca="kokeshi bravo jogos galápagos jogos">
+ <a class="of-img" href="https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-kokeshi-p" target="_blank" rel="noopener nofollow sponsored" tabindex="-1" aria-hidden="true"><img src="../img/black/kokeshi.webp" alt="" loading="lazy" decoding="async" width="240" height="240"><span class="of-pct">−45%</span></a>
+ <div class="of-c">
+  
+  <h3 class="of-n">Kokeshi</h3>
+  <p class="of-m">Galápagos Jogos · <span class="of-nota">★ 7,1</span> no BGG</p>
+  <p class="of-p"><b class="of-por">R$ 99,90</b><span class="of-ref">média <s>R$ 180,87</s></span></p>
+  <div class="of-bar" role="img" aria-label="Preço de hoje é 55% da média"><span style="width:55%"></span></div>
+  <p class="of-eco">R$ 80,97 abaixo da média (45%)</p>
+  <p class="of-loja">na <b>Bravo Jogos</b> · preço visto hoje às 12h46 <span class="of-cp">cupom CARNIVAL</span></p>
+ </div>
+ <div class="of-acao">
+  <a class="of-btn" href="https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-kokeshi-p" target="_blank" rel="noopener nofollow sponsored">Ver na Bravo Jogos ↗</a>
+  
+  <details class="of-mais"><summary>Como chegamos a esse desconto</summary><p class="calc">Média do período: R$ 180,87 (32 dias de histórico, base curta). Menor preço do período: R$ 92,91. Preço lido na página da loja, hoje às 12h46.</p></details>
+ </div>
+</li><li class="of" data-tipo="game" data-desc="0.4286" data-eco="27.00" data-bgg="8.50" data-por="36.00" data-rec="1" data-busca="zenkai: adventure arcs livros e jogos art ao cubo">
+ <a class="of-img" href="https://www.espacoarcs.com.br/jogos/zenkai-adventure-caverna-glacial" target="_blank" rel="noopener nofollow sponsored" tabindex="-1" aria-hidden="true"><img src="../img/black/zenkai-adventure.webp" alt="" loading="lazy" decoding="async" width="240" height="240"><span class="of-pct">−43%</span></a>
+ <div class="of-c">
+  <span class="of-rec">Menor preço do período</span>
+  <h3 class="of-n">Zenkai: Adventure</h3>
+  <p class="of-m">Art ao Cubo · <span class="of-nota">★ 8,5</span> no BGG</p>
+  <p class="of-p"><b class="of-por">R$ 36,00</b><span class="of-ref">média <s>R$ 63,00</s></span></p>
+  <div class="of-bar" role="img" aria-label="Preço de hoje é 57% da média"><span style="width:57%"></span></div>
+  <p class="of-eco">R$ 27,00 abaixo da média (43%)</p>
+  <p class="of-loja">na <b>ARCS Livros e Jogos</b> · preço visto hoje às 10h35</p>
+ </div>
+ <div class="of-acao">
+  <a class="of-btn" href="https://www.espacoarcs.com.br/jogos/zenkai-adventure-caverna-glacial" target="_blank" rel="noopener nofollow sponsored">Ver na ARCS Livros e Jogos ↗</a>
+  
+  <details class="of-mais"><summary>Como chegamos a esse desconto</summary><p class="calc">Média do período: R$ 63,00 (32 dias de histórico, base curta). Menor preço do período: R$ 36,00. Preço lido na Compara Jogos, hoje às 10h35.</p></details>
+ </div>
+</li><li class="of" data-tipo="expansion" data-desc="0.4211" data-eco="52.37" data-bgg="7.82" data-por="72.00" data-rec="0" data-busca="mysterium: secrets &amp; lies caixinha boardgames asmodee">
+ <a class="of-img" href="https://www.caixinhaboardgames.com.br/produtos/secrets-and-lies-expansao-mysterium/" target="_blank" rel="noopener nofollow sponsored" tabindex="-1" aria-hidden="true"><img src="../img/black/mysterium-secrets-lies.webp" alt="" loading="lazy" decoding="async" width="240" height="240"><span class="of-pct">−42%</span></a>
+ <div class="of-c">
+  
+  <h3 class="of-n">Mysterium: Secrets &amp; Lies</h3>
+  <p class="of-m">Asmodee · Expansão · <span class="of-nota">★ 7,8</span> no BGG</p>
+  <p class="of-p"><b class="of-por">R$ 72,00</b><span class="of-ref">média <s>R$ 124,37</s></span></p>
+  <div class="of-bar" role="img" aria-label="Preço de hoje é 58% da média"><span style="width:58%"></span></div>
+  <p class="of-eco">R$ 52,37 abaixo da média (42%)</p>
+  <p class="of-loja">na <b>Caixinha Boardgames</b> · preço visto hoje às 12h46</p>
+ </div>
+ <div class="of-acao">
+  <a class="of-btn" href="https://www.caixinhaboardgames.com.br/produtos/secrets-and-lies-expansao-mysterium/" target="_blank" rel="noopener nofollow sponsored">Ver na Caixinha Boardgames ↗</a>
+  
+  <details class="of-mais"><summary>Como chegamos a esse desconto</summary><p class="calc">Média do período: R$ 124,37 (32 dias de histórico, base curta). Menor preço do período: R$ 66,96. Preço lido na página da loja, hoje às 12h46.</p></details>
+ </div>
+</li><li class="of" data-tipo="expansion" data-desc="0.4194" data-eco="79.40" data-bgg="8.72" data-por="109.90" data-rec="0" data-busca="arkham horror: card game - o banquete de hemlock vale (expansão de investigador) facil shopping fantasy flight games">
+ <a class="of-img" href="https://www.facilshopping.com.br/produtos/arkham-horror-card-game-o-banquete-de-hemlock-vale-expansao-investigador-1so3r/" target="_blank" rel="noopener nofollow sponsored" tabindex="-1" aria-hidden="true"><img src="../img/black/arkham-horror-card-game-o-banquete-de-hemlock-vale-expansao-de-investigador.webp" alt="" loading="lazy" decoding="async" width="240" height="240"><span class="of-pct">−42%</span></a>
+ <div class="of-c">
+  
+  <h3 class="of-n">Arkham Horror: Card Game - O Banquete de Hemlock Vale (Expansão de Investigador)</h3>
+  <p class="of-m">Fantasy Flight Games · Expansão · <span class="of-nota">★ 8,7</span> no BGG</p>
+  <p class="of-p"><b class="of-por">R$ 109,90</b><span class="of-ref">média <s>R$ 189,30</s></span></p>
+  <div class="of-bar" role="img" aria-label="Preço de hoje é 58% da média"><span style="width:58%"></span></div>
+  <p class="of-eco">R$ 79,40 abaixo da média (42%)</p>
+  <p class="of-loja">na <b>Facil Shopping</b> · preço visto hoje às 12h45</p>
+ </div>
+ <div class="of-acao">
+  <a class="of-btn" href="https://www.facilshopping.com.br/produtos/arkham-horror-card-game-o-banquete-de-hemlock-vale-expansao-investigador-1so3r/" target="_blank" rel="noopener nofollow sponsored">Ver na Facil Shopping ↗</a>
+  
+  <details class="of-mais"><summary>Como chegamos a esse desconto</summary><p class="calc">Média do período: R$ 189,30 (32 dias de histórico, base curta). Menor preço do período: R$ 102,21. Preço lido na página da loja, hoje às 12h45.</p></details>
+ </div>
+</li><li class="of" data-tipo="game" data-desc="0.4051" data-eco="49.03" data-bgg="7.30" data-por="72.00" data-rec="0" data-busca="quest caixinha boardgames cangaia jogos galápagos jogos">
+ <a class="of-img" href="https://www.caixinhaboardgames.com.br/produtos/quest/" target="_blank" rel="noopener nofollow sponsored" tabindex="-1" aria-hidden="true"><img src="../img/black/quest.webp" alt="" loading="lazy" decoding="async" width="240" height="240"><span class="of-pct">−41%</span></a>
+ <div class="of-c">
+  
+  <h3 class="of-n">Quest</h3>
+  <p class="of-m">Galápagos Jogos · <span class="of-nota">★ 7,3</span> no BGG</p>
+  <p class="of-p"><b class="of-por">R$ 72,00</b><span class="of-ref">média <s>R$ 121,03</s></span></p>
+  <div class="of-bar" role="img" aria-label="Preço de hoje é 59% da média"><span style="width:59%"></span></div>
+  <p class="of-eco">R$ 49,03 abaixo da média (41%)</p>
+  <p class="of-loja">na <b>Caixinha Boardgames</b> · preço visto hoje às 12h47</p>
+ </div>
+ <div class="of-acao">
+  <a class="of-btn" href="https://www.caixinhaboardgames.com.br/produtos/quest/" target="_blank" rel="noopener nofollow sponsored">Ver na Caixinha Boardgames ↗</a>
+  <details class="of-mais"><summary>Mais 1 loja com desconto real</summary><ul><li><span>Cangaia Jogos: <b>R$ 74,39</b> (39% abaixo da média)</span><a href="https://www.cangaiajogos.com.br/jogos/jogos-para-a-familia/quest" target="_blank" rel="noopener nofollow sponsored">Ver</a></li></ul></details>
+  <details class="of-mais"><summary>Como chegamos a esse desconto</summary><p class="calc">Média do período: R$ 121,03 (32 dias de histórico, base curta). Menor preço do período: R$ 66,87. Preço lido na página da loja, hoje às 12h47.</p></details>
+ </div>
+</li><li class="of" data-tipo="game" data-desc="0.3988" data-eco="42.46" data-bgg="7.47" data-por="64.00" data-rec="0" data-busca="steve jackson&#x27;s munchkin presents batman caixinha boardgames cryptozoic entertainment">
+ <a class="of-img" href="https://www.caixinhaboardgames.com.br/produtos/munchkin-batman/" target="_blank" rel="noopener nofollow sponsored" tabindex="-1" aria-hidden="true"><img src="../img/black/steve-jacksons-munchkin-presents-batman.webp" alt="" loading="lazy" decoding="async" width="240" height="240"><span class="of-pct">−40%</span></a>
+ <div class="of-c">
+  
+  <h3 class="of-n">Steve Jackson&#x27;s Munchkin Presents Batman</h3>
+  <p class="of-m">Cryptozoic Entertainment · <span class="of-nota">★ 7,5</span> no BGG</p>
+  <p class="of-p"><b class="of-por">R$ 64,00</b><span class="of-ref">média <s>R$ 106,46</s></span></p>
+  <div class="of-bar" role="img" aria-label="Preço de hoje é 60% da média"><span style="width:60%"></span></div>
+  <p class="of-eco">R$ 42,46 abaixo da média (40%)</p>
+  <p class="of-loja">na <b>Caixinha Boardgames</b> · preço visto hoje às 12h47</p>
+ </div>
+ <div class="of-acao">
+  <a class="of-btn" href="https://www.caixinhaboardgames.com.br/produtos/munchkin-batman/" target="_blank" rel="noopener nofollow sponsored">Ver na Caixinha Boardgames ↗</a>
+  
+  <details class="of-mais"><summary>Como chegamos a esse desconto</summary><p class="calc">Média do período: R$ 106,46 (32 dias de histórico, base curta). Menor preço do período: R$ 59,52. Preço lido na página da loja, hoje às 12h47.</p></details>
+ </div>
+</li><li class="of" data-tipo="game" data-desc="0.3861" data-eco="122.56" data-bgg="7.35" data-por="194.90" data-rec="0" data-busca="harry potter: batalha de hogwarts facil shopping galápagos jogos">
+ <a class="of-img" href="https://www.facilshopping.com.br/produtos/harry-potter-a-batalha-de-hogwarts-jogo-de-tabuleiro/" target="_blank" rel="noopener nofollow sponsored" tabindex="-1" aria-hidden="true"><img src="../img/black/harry-potter-batalha-de-hogwarts.webp" alt="" loading="lazy" decoding="async" width="240" height="240"><span class="of-pct">−39%</span></a>
+ <div class="of-c">
+  
+  <h3 class="of-n">Harry Potter: Batalha de Hogwarts</h3>
+  <p class="of-m">Galápagos Jogos · <span class="of-nota">★ 7,3</span> no BGG</p>
+  <p class="of-p"><b class="of-por">R$ 194,90</b><span class="of-ref">média <s>R$ 317,46</s></span></p>
+  <div class="of-bar" role="img" aria-label="Preço de hoje é 61% da média"><span style="width:61%"></span></div>
+  <p class="of-eco">R$ 122,56 abaixo da média (39%)</p>
+  <p class="of-loja">na <b>Facil Shopping</b> · preço visto hoje às 12h46</p>
+ </div>
+ <div class="of-acao">
+  <a class="of-btn" href="https://www.facilshopping.com.br/produtos/harry-potter-a-batalha-de-hogwarts-jogo-de-tabuleiro/" target="_blank" rel="noopener nofollow sponsored">Ver na Facil Shopping ↗</a>
+  
+  <details class="of-mais"><summary>Como chegamos a esse desconto</summary><p class="calc">Média do período: R$ 317,46 (32 dias de histórico, base curta). Menor preço do período: R$ 181,26. Preço lido na página da loja, hoje às 12h46.</p></details>
+ </div>
+</li><li class="of" data-tipo="game" data-desc="0.3813" data-eco="29.80" data-bgg="7.04" data-por="48.35" data-rec="0" data-busca="3 capítulos cangaia jogos caixinha boardgames amigo">
+ <a class="of-img" href="https://www.cangaiajogos.com.br/3-capitulos" target="_blank" rel="noopener nofollow sponsored" tabindex="-1" aria-hidden="true"><img src="../img/black/3-capitulos.webp" alt="" loading="lazy" decoding="async" width="240" height="240"><span class="of-pct">−38%</span></a>
+ <div class="of-c">
+  
+  <h3 class="of-n">3 Capítulos</h3>
+  <p class="of-m">AMIGO · <span class="of-nota">★ 7,0</span> no BGG</p>
+  <p class="of-p"><b class="of-por">R$ 48,35</b><span class="of-ref">média <s>R$ 78,15</s></span></p>
+  <div class="of-bar" role="img" aria-label="Preço de hoje é 62% da média"><span style="width:62%"></span></div>
+  <p class="of-eco">R$ 29,80 abaixo da média (38%)</p>
+  <p class="of-loja">na <b>Cangaia Jogos</b> · preço visto hoje às 07h33</p>
+ </div>
+ <div class="of-acao">
+  <a class="of-btn" href="https://www.cangaiajogos.com.br/3-capitulos" target="_blank" rel="noopener nofollow sponsored">Ver na Cangaia Jogos ↗</a>
+  <details class="of-mais"><summary>Mais 1 loja com desconto real</summary><ul><li><span>Caixinha Boardgames: <b>R$ 50,00</b> (36% abaixo da média)</span><a href="https://www.caixinhaboardgames.com.br/produtos/3-capitulos/" target="_blank" rel="noopener nofollow sponsored">Ver</a></li></ul></details>
+  <details class="of-mais"><summary>Como chegamos a esse desconto</summary><p class="calc">Média do período: R$ 78,15 (32 dias de histórico, base curta). Menor preço do período: R$ 41,66. Preço lido na Compara Jogos, hoje às 07h33.</p></details>
+ </div>
+</li><li class="of" data-tipo="game" data-desc="0.3753" data-eco="79.85" data-bgg="7.23" data-por="132.89" data-rec="0" data-busca="citadels frodos bg galápagos jogos">
+ <a class="of-img" href="https://loja.frodosbg.com.br/citadels-2nd-edicao-revisada" target="_blank" rel="noopener nofollow sponsored" tabindex="-1" aria-hidden="true"><img src="../img/black/citadels.webp" alt="" loading="lazy" decoding="async" width="240" height="240"><span class="of-pct">−38%</span></a>
+ <div class="of-c">
+  
+  <h3 class="of-n">Citadels</h3>
+  <p class="of-m">Galápagos Jogos · <span class="of-nota">★ 7,2</span> no BGG</p>
+  <p class="of-p"><b class="of-por">R$ 132,89</b><span class="of-ref">média <s>R$ 212,74</s></span></p>
+  <div class="of-bar" role="img" aria-label="Preço de hoje é 62% da média"><span style="width:62%"></span></div>
+  <p class="of-eco">R$ 79,85 abaixo da média (38%)</p>
+  <p class="of-loja">na <b>Frodos BG</b> · preço visto hoje às 12h45</p>
+ </div>
+ <div class="of-acao">
+  <a class="of-btn" href="https://loja.frodosbg.com.br/citadels-2nd-edicao-revisada" target="_blank" rel="noopener nofollow sponsored">Ver na Frodos BG ↗</a>
+  
+  <details class="of-mais"><summary>Como chegamos a esse desconto</summary><p class="calc">Média do período: R$ 212,74 (32 dias de histórico, base curta). Menor preço do período: R$ 77,00. Preço lido na página da loja, hoje às 12h45.</p></details>
+ </div>
+</li><li class="of" data-tipo="game" data-desc="0.3708" data-eco="62.41" data-bgg="7.53" data-por="105.90" data-rec="0" data-busca="marvel united facil shopping galápagos jogos">
+ <a class="of-img" href="https://www.facilshopping.com.br/produtos/marvel-united-jogo-de-tabuleiro-galapagos/" target="_blank" rel="noopener nofollow sponsored" tabindex="-1" aria-hidden="true"><img src="../img/black/marvel-united.webp" alt="" loading="lazy" decoding="async" width="240" height="240"><span class="of-pct">−37%</span></a>
+ <div class="of-c">
+  
+  <h3 class="of-n">Marvel United</h3>
+  <p class="of-m">Galápagos Jogos · <span class="of-nota">★ 7,5</span> no BGG</p>
+  <p class="of-p"><b class="of-por">R$ 105,90</b><span class="of-ref">média <s>R$ 168,31</s></span></p>
+  <div class="of-bar" role="img" aria-label="Preço de hoje é 63% da média"><span style="width:63%"></span></div>
+  <p class="of-eco">R$ 62,41 abaixo da média (37%)</p>
+  <p class="of-loja">na <b>Facil Shopping</b> · preço visto hoje às 12h46</p>
+ </div>
+ <div class="of-acao">
+  <a class="of-btn" href="https://www.facilshopping.com.br/produtos/marvel-united-jogo-de-tabuleiro-galapagos/" target="_blank" rel="noopener nofollow sponsored">Ver na Facil Shopping ↗</a>
+  
+  <details class="of-mais"><summary>Como chegamos a esse desconto</summary><p class="calc">Média do período: R$ 168,31 (32 dias de histórico, base curta). Menor preço do período: R$ 98,49. Preço lido na página da loja, hoje às 12h46.</p></details>
+ </div>
+</li><li class="of" data-tipo="expansion" data-desc="0.3514" data-eco="39.01" data-bgg="8.07" data-por="72.00" data-rec="0" data-busca="night parade of a hundred yokai: cursed throne expansion caixinha boardgames taverna real brueh games inc.">
+ <a class="of-img" href="https://www.caixinhaboardgames.com.br/produtos/cursed-throne-expansao-night-parade-of-a-hundred-yokai/" target="_blank" rel="noopener nofollow sponsored" tabindex="-1" aria-hidden="true"><img src="../img/black/night-parade-of-a-hundred-yokai-cursed-throne-expansion.webp" alt="" loading="lazy" decoding="async" width="240" height="240"><span class="of-pct">−35%</span></a>
+ <div class="of-c">
+  
+  <h3 class="of-n">Night Parade of a Hundred Yokai: Cursed Throne Expansion</h3>
+  <p class="of-m">Brueh Games Inc. · Expansão · <span class="of-nota">★ 8,1</span> no BGG</p>
+  <p class="of-p"><b class="of-por">R$ 72,00</b><span class="of-ref">média <s>R$ 111,01</s></span></p>
+  <div class="of-bar" role="img" aria-label="Preço de hoje é 65% da média"><span style="width:65%"></span></div>
+  <p class="of-eco">R$ 39,01 abaixo da média (35%)</p>
+  <p class="of-loja">na <b>Caixinha Boardgames</b> · preço visto hoje às 12h46</p>
+ </div>
+ <div class="of-acao">
+  <a class="of-btn" href="https://www.caixinhaboardgames.com.br/produtos/cursed-throne-expansao-night-parade-of-a-hundred-yokai/" target="_blank" rel="noopener nofollow sponsored">Ver na Caixinha Boardgames ↗</a>
+  <details class="of-mais"><summary>Mais 1 loja com desconto real</summary><ul><li><span>Taverna Real: <b>R$ 76,99</b> (31% abaixo da média)</span><a href="https://www.tavernareal.com/tabuleiro/night-parade-cursed-throne-expansao" target="_blank" rel="noopener nofollow sponsored">Ver</a></li></ul></details>
+  <details class="of-mais"><summary>Como chegamos a esse desconto</summary><p class="calc">Média do período: R$ 111,01 (32 dias de histórico, base curta). Menor preço do período: R$ 63,29. Preço lido na página da loja, hoje às 12h46.</p></details>
+ </div>
+</li><li class="of" data-tipo="game" data-desc="0.3512" data-eco="24.25" data-bgg="7.13" data-por="44.81" data-rec="0" data-busca="fateflip: arrastado pelo mar alquimistas dos jogos caixinha boardgames meca dos jogos taverna real meeple br jogos">
+ <a class="of-img" href="https://www.alquimistasdosjogos.com.br/jogos/fateflip-arrastado-pelo-mar" target="_blank" rel="noopener nofollow sponsored" tabindex="-1" aria-hidden="true"><img src="../img/black/fateflip-arrastado-pelo-mar.webp" alt="" loading="lazy" decoding="async" width="240" height="240"><span class="of-pct">−35%</span></a>
+ <div class="of-c">
+  
+  <h3 class="of-n">FateFlip: Arrastado pelo Mar</h3>
+  <p class="of-m">Meeple BR Jogos · <span class="of-nota">★ 7,1</span> no BGG</p>
+  <p class="of-p"><b class="of-por">R$ 44,81</b><span class="of-ref">média <s>R$ 69,06</s></span></p>
+  <div class="of-bar" role="img" aria-label="Preço de hoje é 65% da média"><span style="width:65%"></span></div>
+  <p class="of-eco">R$ 24,25 abaixo da média (35%)</p>
+  <p class="of-loja">na <b>Alquimistas dos Jogos</b> · preço visto hoje às 12h46</p>
+ </div>
+ <div class="of-acao">
+  <a class="of-btn" href="https://www.alquimistasdosjogos.com.br/jogos/fateflip-arrastado-pelo-mar" target="_blank" rel="noopener nofollow sponsored">Ver na Alquimistas dos Jogos ↗</a>
+  <details class="of-mais"><summary>Mais 3 lojas com desconto real</summary><ul><li><span>Caixinha Boardgames: <b>R$ 49,00</b> (29% abaixo da média)</span><a href="https://www.caixinhaboardgames.com.br/produtos/fateflip-arrastado-pelo-mar/" target="_blank" rel="noopener nofollow sponsored">Ver</a></li><li><span>Meca dos Jogos: <b>R$ 49,20</b> (29% abaixo da média)</span><a href="https://www.mecadosjogos.com.br/fateflip-arrastado-pelo-mar-p549" target="_blank" rel="noopener nofollow sponsored">Ver</a></li><li><span>Taverna Real: <b>R$ 52,99</b> (23% abaixo da média)</span><a href="https://www.tavernareal.com/tabuleiro/fateflip-arrastado-pelo-mar" target="_blank" rel="noopener nofollow sponsored">Ver</a></li></ul></details>
+  <details class="of-mais"><summary>Como chegamos a esse desconto</summary><p class="calc">Média do período: R$ 69,06 (32 dias de histórico, base curta). Menor preço do período: R$ 44,28. Preço lido na página da loja, hoje às 12h46.</p></details>
+ </div>
+</li><li class="of" data-tipo="expansion" data-desc="0.3339" data-eco="14.99" data-bgg="7.99" data-por="29.90" data-rec="0" data-busca="viticulture: visitantes do charco facil shopping ludofy creative">
+ <a class="of-img" href="https://www.facilshopping.com.br/produtos/viticulture-visitantes-do-charco-expansao-grok/" target="_blank" rel="noopener nofollow sponsored" tabindex="-1" aria-hidden="true"><img src="../img/black/viticulture-visitantes-do-charco.webp" alt="" loading="lazy" decoding="async" width="240" height="240"><span class="of-pct">−33%</span></a>
+ <div class="of-c">
+  
+  <h3 class="of-n">Viticulture: Visitantes do Charco</h3>
+  <p class="of-m">Ludofy Creative · Expansão · <span class="of-nota">★ 8,0</span> no BGG</p>
+  <p class="of-p"><b class="of-por">R$ 29,90</b><span class="of-ref">média <s>R$ 44,89</s></span></p>
+  <div class="of-bar" role="img" aria-label="Preço de hoje é 67% da média"><span style="width:67%"></span></div>
+  <p class="of-eco">R$ 14,99 abaixo da média (33%)</p>
+  <p class="of-loja">na <b>Facil Shopping</b> · preço visto hoje às 12h47</p>
+ </div>
+ <div class="of-acao">
+  <a class="of-btn" href="https://www.facilshopping.com.br/produtos/viticulture-visitantes-do-charco-expansao-grok/" target="_blank" rel="noopener nofollow sponsored">Ver na Facil Shopping ↗</a>
+  
+  <details class="of-mais"><summary>Como chegamos a esse desconto</summary><p class="calc">Média do período: R$ 44,89 (32 dias de histórico, base curta). Menor preço do período: R$ 27,81. Preço lido na página da loja, hoje às 12h47.</p></details>
+ </div>
+</li><li class="of" data-tipo="game" data-desc="0.3302" data-eco="14.30" data-bgg="9.00" data-por="29.00" data-rec="0" data-busca="cuco! caixinha boardgames ludofun">
+ <a class="of-img" href="https://www.caixinhaboardgames.com.br/produtos/cuco-cuco/" target="_blank" rel="noopener nofollow sponsored" tabindex="-1" aria-hidden="true"><img src="../img/black/cuco.webp" alt="" loading="lazy" decoding="async" width="240" height="240"><span class="of-pct">−33%</span></a>
+ <div class="of-c">
+  
+  <h3 class="of-n">Cuco!</h3>
+  <p class="of-m">Ludofun · <span class="of-nota">★ 9,0</span> no BGG</p>
+  <p class="of-p"><b class="of-por">R$ 29,00</b><span class="of-ref">média <s>R$ 43,30</s></span></p>
+  <div class="of-bar" role="img" aria-label="Preço de hoje é 67% da média"><span style="width:67%"></span></div>
+  <p class="of-eco">R$ 14,30 abaixo da média (33%)</p>
+  <p class="of-loja">na <b>Caixinha Boardgames</b> · preço visto hoje às 12h45</p>
+ </div>
+ <div class="of-acao">
+  <a class="of-btn" href="https://www.caixinhaboardgames.com.br/produtos/cuco-cuco/" target="_blank" rel="noopener nofollow sponsored">Ver na Caixinha Boardgames ↗</a>
+  
+  <details class="of-mais"><summary>Como chegamos a esse desconto</summary><p class="calc">Média do período: R$ 43,30 (32 dias de histórico, base curta). Menor preço do período: R$ 26,97. Preço lido na página da loja, hoje às 12h45.</p></details>
+ </div>
+</li><li class="of" data-tipo="expansion" data-desc="0.3202" data-eco="17.47" data-bgg="7.09" data-por="37.09" data-rec="1" data-busca="roam: gem maps place games red raven games">
+ <a class="of-img" href="https://www.placegames.com.br/boardgames/roam-mapas-de-gemas-expansao" target="_blank" rel="noopener nofollow sponsored" tabindex="-1" aria-hidden="true"><img src="../img/black/roam-gem-maps.webp" alt="" loading="lazy" decoding="async" width="240" height="240"><span class="of-pct">−32%</span></a>
+ <div class="of-c">
+  <span class="of-rec">Menor preço do período</span>
+  <h3 class="of-n">Roam: Gem Maps</h3>
+  <p class="of-m">Red Raven Games · Expansão · <span class="of-nota">★ 7,1</span> no BGG</p>
+  <p class="of-p"><b class="of-por">R$ 37,09</b><span class="of-ref">média <s>R$ 54,56</s></span></p>
+  <div class="of-bar" role="img" aria-label="Preço de hoje é 68% da média"><span style="width:68%"></span></div>
+  <p class="of-eco">R$ 17,47 abaixo da média (32%)</p>
+  <p class="of-loja">na <b>Place Games</b> · preço visto hoje às 12h47</p>
+ </div>
+ <div class="of-acao">
+  <a class="of-btn" href="https://www.placegames.com.br/boardgames/roam-mapas-de-gemas-expansao" target="_blank" rel="noopener nofollow sponsored">Ver na Place Games ↗</a>
+  
+  <details class="of-mais"><summary>Como chegamos a esse desconto</summary><p class="calc">Média do período: R$ 54,56 (32 dias de histórico, base curta). Menor preço do período: R$ 37,09. Preço lido na página da loja, hoje às 12h47.</p></details>
+ </div>
+</li><li class="of" data-tipo="expansion" data-desc="0.3137" data-eco="74.06" data-bgg="8.17" data-por="161.99" data-rec="0" data-busca="destemidos: reforços board game barato leão livros caixinha boardgames meeple br jogos">
+ <a class="of-img" href="https://www.boardgamebarato.com.br/destemidos-reforcos" target="_blank" rel="noopener nofollow sponsored" tabindex="-1" aria-hidden="true"><img src="../img/black/destemidos-reforcos.webp" alt="" loading="lazy" decoding="async" width="240" height="240"><span class="of-pct">−31%</span></a>
+ <div class="of-c">
+  
+  <h3 class="of-n">Destemidos: Reforços</h3>
+  <p class="of-m">Meeple BR Jogos · Expansão · <span class="of-nota">★ 8,2</span> no BGG</p>
+  <p class="of-p"><b class="of-por">R$ 161,99</b><span class="of-ref">média <s>R$ 236,05</s></span></p>
+  <div class="of-bar" role="img" aria-label="Preço de hoje é 69% da média"><span style="width:69%"></span></div>
+  <p class="of-eco">R$ 74,06 abaixo da média (31%)</p>
+  <p class="of-loja">na <b>Board Game Barato</b> · preço visto hoje às 12h46</p>
+ </div>
+ <div class="of-acao">
+  <a class="of-btn" href="https://www.boardgamebarato.com.br/destemidos-reforcos" target="_blank" rel="noopener nofollow sponsored">Ver na Board Game Barato ↗</a>
+  <details class="of-mais"><summary>Mais 2 lojas com desconto real</summary><ul><li><span>Leão Livros: <b>R$ 166,36</b> (30% abaixo da média)</span><a href="https://www.leaolivros.com.br/destemidos-reforcos" target="_blank" rel="noopener nofollow sponsored">Ver</a></li><li><span>Caixinha Boardgames: <b>R$ 179,00</b> (24% abaixo da média)</span><a href="https://www.caixinhaboardgames.com.br/produtos/reforcos-expansao-destemidos/" target="_blank" rel="noopener nofollow sponsored">Ver</a></li></ul></details>
+  <details class="of-mais"><summary>Como chegamos a esse desconto</summary><p class="calc">Média do período: R$ 236,05 (32 dias de histórico, base curta). Menor preço do período: R$ 161,81. Preço lido na página da loja, hoje às 12h46.</p></details>
+ </div>
+</li><li class="of" data-tipo="game" data-desc="0.3128" data-eco="48.69" data-bgg="7.83" data-por="106.94" data-rec="0" data-busca="take time cangaia jogos caixinha boardgames libellud">
+ <a class="of-img" href="https://www.cangaiajogos.com.br/take-time" target="_blank" rel="noopener nofollow sponsored" tabindex="-1" aria-hidden="true"><img src="../img/black/take-time.webp" alt="" loading="lazy" decoding="async" width="240" height="240"><span class="of-pct">−31%</span></a>
+ <div class="of-c">
+  
+  <h3 class="of-n">Take Time</h3>
+  <p class="of-m">Libellud · <span class="of-nota">★ 7,8</span> no BGG</p>
+  <p class="of-p"><b class="of-por">R$ 106,94</b><span class="of-ref">média <s>R$ 155,62</s></span></p>
+  <div class="of-bar" role="img" aria-label="Preço de hoje é 69% da média"><span style="width:69%"></span></div>
+  <p class="of-eco">R$ 48,69 abaixo da média (31%)</p>
+  <p class="of-loja">na <b>Cangaia Jogos</b> · preço visto hoje às 10h03</p>
+ </div>
+ <div class="of-acao">
+  <a class="of-btn" href="https://www.cangaiajogos.com.br/take-time" target="_blank" rel="noopener nofollow sponsored">Ver na Cangaia Jogos ↗</a>
+  <details class="of-mais"><summary>Mais 1 loja com desconto real</summary><ul><li><span>Caixinha Boardgames: <b>R$ 119,00</b> (24% abaixo da média)</span><a href="https://www.caixinhaboardgames.com.br/produtos/take-time/" target="_blank" rel="noopener nofollow sponsored">Ver</a></li></ul></details>
+  <details class="of-mais"><summary>Como chegamos a esse desconto</summary><p class="calc">Média do período: R$ 155,62 (32 dias de histórico, base curta). Menor preço do período: R$ 82,58. Preço lido na Compara Jogos, hoje às 10h03.</p></details>
+ </div>
+</li><li class="of" data-tipo="game" data-desc="0.3066" data-eco="48.93" data-bgg="7.58" data-por="110.66" data-rec="1" data-busca="patchwork cangaia jogos caixinha boardgames ludofy creative">
+ <a class="of-img" href="https://www.cangaiajogos.com.br/patchwork-nova-caixa" target="_blank" rel="noopener nofollow sponsored" tabindex="-1" aria-hidden="true"><img src="../img/black/patchwork.webp" alt="" loading="lazy" decoding="async" width="240" height="240"><span class="of-pct">−31%</span></a>
+ <div class="of-c">
+  <span class="of-rec">Menor preço do período</span>
+  <h3 class="of-n">Patchwork</h3>
+  <p class="of-m">Ludofy Creative · <span class="of-nota">★ 7,6</span> no BGG</p>
+  <p class="of-p"><b class="of-por">R$ 110,66</b><span class="of-ref">média <s>R$ 159,59</s></span></p>
+  <div class="of-bar" role="img" aria-label="Preço de hoje é 69% da média"><span style="width:69%"></span></div>
+  <p class="of-eco">R$ 48,93 abaixo da média (31%)</p>
+  <p class="of-loja">na <b>Cangaia Jogos</b> · preço visto hoje às 08h36</p>
+ </div>
+ <div class="of-acao">
+  <a class="of-btn" href="https://www.cangaiajogos.com.br/patchwork-nova-caixa" target="_blank" rel="noopener nofollow sponsored">Ver na Cangaia Jogos ↗</a>
+  <details class="of-mais"><summary>Mais 1 loja com desconto real</summary><ul><li><span>Caixinha Boardgames: <b>R$ 119,00</b> (25% abaixo da média)</span><a href="https://www.caixinhaboardgames.com.br/produtos/patchwork/" target="_blank" rel="noopener nofollow sponsored">Ver</a></li></ul></details>
+  <details class="of-mais"><summary>Como chegamos a esse desconto</summary><p class="calc">Média do período: R$ 159,59 (32 dias de histórico, base curta). Menor preço do período: R$ 110,66. Preço lido na Compara Jogos, hoje às 08h36.</p></details>
+ </div>
+</li><li class="of" data-tipo="expansion" data-desc="0.2989" data-eco="19.78" data-bgg="7.32" data-por="46.40" data-rec="1" data-busca="fantastic factories: subterfuge leão livros deep water games">
+ <a class="of-img" href="https://www.leaolivros.com.br/fabricas-fantasticas-artimanhas" target="_blank" rel="noopener nofollow sponsored" tabindex="-1" aria-hidden="true"><img src="../img/black/fantastic-factories-subterfuge.webp" alt="" loading="lazy" decoding="async" width="240" height="240"><span class="of-pct">−30%</span></a>
+ <div class="of-c">
+  <span class="of-rec">Menor preço do período</span>
+  <h3 class="of-n">Fantastic Factories: Subterfuge</h3>
+  <p class="of-m">Deep Water Games · Expansão · <span class="of-nota">★ 7,3</span> no BGG</p>
+  <p class="of-p"><b class="of-por">R$ 46,40</b><span class="of-ref">média <s>R$ 66,18</s></span></p>
+  <div class="of-bar" role="img" aria-label="Preço de hoje é 70% da média"><span style="width:70%"></span></div>
+  <p class="of-eco">R$ 19,78 abaixo da média (30%)</p>
+  <p class="of-loja">na <b>Leão Livros</b> · preço visto hoje às 12h46 <span class="of-cp">cupom BEMVINDO</span></p>
+ </div>
+ <div class="of-acao">
+  <a class="of-btn" href="https://www.leaolivros.com.br/fabricas-fantasticas-artimanhas" target="_blank" rel="noopener nofollow sponsored">Ver na Leão Livros ↗</a>
+  
+  <details class="of-mais"><summary>Como chegamos a esse desconto</summary><p class="calc">Média do período: R$ 66,18 (32 dias de histórico, base curta). Menor preço do período: R$ 46,40. Preço lido na página da loja, hoje às 12h46.</p></details>
+ </div>
+</li><li class="of" data-tipo="game" data-desc="0.2981" data-eco="39.92" data-bgg="7.61" data-por="94.00" data-rec="0" data-busca="exit: o jogo: regresso à cabana abandonada caixinha boardgames devir">
+ <a class="of-img" href="https://www.caixinhaboardgames.com.br/produtos/exit-regresso-a-cabana-abandonada/" target="_blank" rel="noopener nofollow sponsored" tabindex="-1" aria-hidden="true"><img src="../img/black/exit-o-jogo-regresso-a-cabana-abandonada.webp" alt="" loading="lazy" decoding="async" width="240" height="240"><span class="of-pct">−30%</span></a>
+ <div class="of-c">
+  
+  <h3 class="of-n">Exit: O Jogo: Regresso à Cabana Abandonada</h3>
+  <p class="of-m">Devir · <span class="of-nota">★ 7,6</span> no BGG</p>
+  <p class="of-p"><b class="of-por">R$ 94,00</b><span class="of-ref">média <s>R$ 133,92</s></span></p>
+  <div class="of-bar" role="img" aria-label="Preço de hoje é 70% da média"><span style="width:70%"></span></div>
+  <p class="of-eco">R$ 39,92 abaixo da média (30%)</p>
+  <p class="of-loja">na <b>Caixinha Boardgames</b> · preço visto hoje às 12h46</p>
+ </div>
+ <div class="of-acao">
+  <a class="of-btn" href="https://www.caixinhaboardgames.com.br/produtos/exit-regresso-a-cabana-abandonada/" target="_blank" rel="noopener nofollow sponsored">Ver na Caixinha Boardgames ↗</a>
+  
+  <details class="of-mais"><summary>Como chegamos a esse desconto</summary><p class="calc">Média do período: R$ 133,92 (32 dias de histórico, base curta). Menor preço do período: R$ 87,42. Preço lido na página da loja, hoje às 12h46.</p></details>
+ </div>
+</li><li class="of" data-tipo="game" data-desc="0.2765" data-eco="58.12" data-bgg="7.68" data-por="152.10" data-rec="0" data-busca="imperium: clássicos board game barato alquimistas dos jogos caixinha boardgames meeple br jogos">
+ <a class="of-img" href="https://www.boardgamebarato.com.br/imperium-classicos" target="_blank" rel="noopener nofollow sponsored" tabindex="-1" aria-hidden="true"><img src="../img/black/imperium-classicos.webp" alt="" loading="lazy" decoding="async" width="240" height="240"><span class="of-pct">−28%</span></a>
+ <div class="of-c">
+  
+  <h3 class="of-n">Imperium: Clássicos</h3>
+  <p class="of-m">Meeple BR Jogos · <span class="of-nota">★ 7,7</span> no BGG</p>
+  <p class="of-p"><b class="of-por">R$ 152,10</b><span class="of-ref">média <s>R$ 210,22</s></span></p>
+  <div class="of-bar" role="img" aria-label="Preço de hoje é 72% da média"><span style="width:72%"></span></div>
+  <p class="of-eco">R$ 58,12 abaixo da média (28%)</p>
+  <p class="of-loja">na <b>Board Game Barato</b> · preço visto hoje às 12h46</p>
+ </div>
+ <div class="of-acao">
+  <a class="of-btn" href="https://www.boardgamebarato.com.br/imperium-classicos" target="_blank" rel="noopener nofollow sponsored">Ver na Board Game Barato ↗</a>
+  <details class="of-mais"><summary>Mais 2 lojas com desconto real</summary><ul><li><span>Alquimistas dos Jogos: <b>R$ 152,81</b> (27% abaixo da média)</span><a href="https://www.alquimistasdosjogos.com.br/imperium-classicos" target="_blank" rel="noopener nofollow sponsored">Ver</a></li><li><span>Caixinha Boardgames: <b>R$ 164,00</b> (22% abaixo da média)</span><a href="https://www.caixinhaboardgames.com.br/produtos/imperium-classicos/" target="_blank" rel="noopener nofollow sponsored">Ver</a></li></ul></details>
+  <details class="of-mais"><summary>Como chegamos a esse desconto</summary><p class="calc">Média do período: R$ 210,22 (32 dias de histórico, base curta). Menor preço do período: R$ 150,84. Preço lido na página da loja, hoje às 12h46.</p></details>
+ </div>
+</li><li class="of" data-tipo="game" data-desc="0.2683" data-eco="17.38" data-bgg="7.24" data-por="47.40" data-rec="0" data-busca="dogs&#x27; day facil shopping geeks n&#x27; orcs">
+ <a class="of-img" href="https://www.facilshopping.com.br/produtos/dogs-day-jogo-de-tabuleiro-galapagos/" target="_blank" rel="noopener nofollow sponsored" tabindex="-1" aria-hidden="true"><img src="../img/black/dogs-day.webp" alt="" loading="lazy" decoding="async" width="240" height="240"><span class="of-pct">−27%</span></a>
+ <div class="of-c">
+  
+  <h3 class="of-n">Dogs&#x27; Day</h3>
+  <p class="of-m">Geeks N&#x27; Orcs · <span class="of-nota">★ 7,2</span> no BGG</p>
+  <p class="of-p"><b class="of-por">R$ 47,40</b><span class="of-ref">média <s>R$ 64,78</s></span></p>
+  <div class="of-bar" role="img" aria-label="Preço de hoje é 73% da média"><span style="width:73%"></span></div>
+  <p class="of-eco">R$ 17,38 abaixo da média (27%)</p>
+  <p class="of-loja">na <b>Facil Shopping</b> · preço visto hoje às 12h46</p>
+ </div>
+ <div class="of-acao">
+  <a class="of-btn" href="https://www.facilshopping.com.br/produtos/dogs-day-jogo-de-tabuleiro-galapagos/" target="_blank" rel="noopener nofollow sponsored">Ver na Facil Shopping ↗</a>
+  
+  <details class="of-mais"><summary>Como chegamos a esse desconto</summary><p class="calc">Média do período: R$ 64,78 (32 dias de histórico, base curta). Menor preço do período: R$ 44,08. Preço lido na página da loja, hoje às 12h46.</p></details>
+ </div>
+</li><li class="of" data-tipo="game" data-desc="0.2651" data-eco="35.21" data-bgg="7.15" data-por="97.64" data-rec="0" data-busca="deep sea adventure boost cangaia jogos oink games">
+ <a class="of-img" href="https://www.cangaiajogos.com.br/deep-sea-adventure-impulso" target="_blank" rel="noopener nofollow sponsored" tabindex="-1" aria-hidden="true"><img src="../img/black/deep-sea-adventure-boost.webp" alt="" loading="lazy" decoding="async" width="240" height="240"><span class="of-pct">−27%</span></a>
+ <div class="of-c">
+  
+  <h3 class="of-n">Deep Sea Adventure Boost</h3>
+  <p class="of-m">Oink Games · <span class="of-nota">★ 7,1</span> no BGG</p>
+  <p class="of-p"><b class="of-por">R$ 97,64</b><span class="of-ref">média <s>R$ 132,85</s></span></p>
+  <div class="of-bar" role="img" aria-label="Preço de hoje é 73% da média"><span style="width:73%"></span></div>
+  <p class="of-eco">R$ 35,21 abaixo da média (27%)</p>
+  <p class="of-loja">na <b>Cangaia Jogos</b> · preço visto hoje às 08h36</p>
+ </div>
+ <div class="of-acao">
+  <a class="of-btn" href="https://www.cangaiajogos.com.br/deep-sea-adventure-impulso" target="_blank" rel="noopener nofollow sponsored">Ver na Cangaia Jogos ↗</a>
+  
+  <details class="of-mais"><summary>Como chegamos a esse desconto</summary><p class="calc">Média do período: R$ 132,85 (32 dias de histórico, base curta). Menor preço do período: R$ 83,61. Preço lido na Compara Jogos, hoje às 08h36.</p></details>
+ </div>
+</li><li class="of" data-tipo="expansion" data-desc="0.2385" data-eco="72.54" data-bgg="7.61" data-por="231.57" data-rec="1" data-busca="everdell: pearlbrook bravo jogos starling games (ii)">
+ <a class="of-img" href="https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/everdell-pearlbrook-expansao-p" target="_blank" rel="noopener nofollow sponsored" tabindex="-1" aria-hidden="true"><img src="../img/black/everdell-pearlbrook.webp" alt="" loading="lazy" decoding="async" width="240" height="240"><span class="of-pct">−24%</span></a>
+ <div class="of-c">
+  <span class="of-rec">Menor preço do período</span>
+  <h3 class="of-n">Everdell: Pearlbrook</h3>
+  <p class="of-m">Starling Games (II) · Expansão · <span class="of-nota">★ 7,6</span> no BGG</p>
+  <p class="of-p"><b class="of-por">R$ 231,57</b><span class="of-ref">média <s>R$ 304,11</s></span></p>
+  <div class="of-bar" role="img" aria-label="Preço de hoje é 76% da média"><span style="width:76%"></span></div>
+  <p class="of-eco">R$ 72,54 abaixo da média (24%)</p>
+  <p class="of-loja">na <b>Bravo Jogos</b> · preço visto hoje às 08h32 <span class="of-cp">cupom CARNIVAL</span></p>
+ </div>
+ <div class="of-acao">
+  <a class="of-btn" href="https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/everdell-pearlbrook-expansao-p" target="_blank" rel="noopener nofollow sponsored">Ver na Bravo Jogos ↗</a>
+  
+  <details class="of-mais"><summary>Como chegamos a esse desconto</summary><p class="calc">Média do período: R$ 304,11 (32 dias de histórico, base curta). Menor preço do período: R$ 231,57. Preço lido na Compara Jogos, hoje às 08h32.</p></details>
+ </div>
+</li><li class="of" data-tipo="game" data-desc="0.2383" data-eco="38.84" data-bgg="8.75" data-por="124.11" data-rec="0" data-busca="alien attack: usa board game barato meeple br jogos">
+ <a class="of-img" href="https://www.boardgamebarato.com.br/alien-attack-usa" target="_blank" rel="noopener nofollow sponsored" tabindex="-1" aria-hidden="true"><img src="../img/black/alien-attack-usa.webp" alt="" loading="lazy" decoding="async" width="240" height="240"><span class="of-pct">−24%</span></a>
+ <div class="of-c">
+  
+  <h3 class="of-n">Alien Attack: USA</h3>
+  <p class="of-m">Meeple BR Jogos · <span class="of-nota">★ 8,8</span> no BGG</p>
+  <p class="of-p"><b class="of-por">R$ 124,11</b><span class="of-ref">média <s>R$ 162,95</s></span></p>
+  <div class="of-bar" role="img" aria-label="Preço de hoje é 76% da média"><span style="width:76%"></span></div>
+  <p class="of-eco">R$ 38,84 abaixo da média (24%)</p>
+  <p class="of-loja">na <b>Board Game Barato</b> · preço visto hoje às 12h45</p>
+ </div>
+ <div class="of-acao">
+  <a class="of-btn" href="https://www.boardgamebarato.com.br/alien-attack-usa" target="_blank" rel="noopener nofollow sponsored">Ver na Board Game Barato ↗</a>
+  
+  <details class="of-mais"><summary>Como chegamos a esse desconto</summary><p class="calc">Média do período: R$ 162,95 (32 dias de histórico, base curta). Menor preço do período: R$ 123,30. Preço lido na página da loja, hoje às 12h45.</p></details>
+ </div>
+</li><li class="of" data-tipo="game" data-desc="0.2373" data-eco="83.64" data-bgg="7.69" data-por="268.76" data-rec="1" data-busca="daybreak cangaia jogos cmyk">
+ <a class="of-img" href="https://www.cangaiajogos.com.br/daybreak" target="_blank" rel="noopener nofollow sponsored" tabindex="-1" aria-hidden="true"><img src="../img/black/daybreak.webp" alt="" loading="lazy" decoding="async" width="240" height="240"><span class="of-pct">−24%</span></a>
+ <div class="of-c">
+  <span class="of-rec">Menor preço do período</span>
+  <h3 class="of-n">Daybreak</h3>
+  <p class="of-m">CMYK · <span class="of-nota">★ 7,7</span> no BGG</p>
+  <p class="of-p"><b class="of-por">R$ 268,76</b><span class="of-ref">média <s>R$ 352,40</s></span></p>
+  <div class="of-bar" role="img" aria-label="Preço de hoje é 76% da média"><span style="width:76%"></span></div>
+  <p class="of-eco">R$ 83,64 abaixo da média (24%)</p>
+  <p class="of-loja">na <b>Cangaia Jogos</b> · preço visto hoje às 12h33</p>
+ </div>
+ <div class="of-acao">
+  <a class="of-btn" href="https://www.cangaiajogos.com.br/daybreak" target="_blank" rel="noopener nofollow sponsored">Ver na Cangaia Jogos ↗</a>
+  
+  <details class="of-mais"><summary>Como chegamos a esse desconto</summary><p class="calc">Média do período: R$ 352,40 (32 dias de histórico, base curta). Menor preço do período: R$ 268,76. Preço lido na Compara Jogos, hoje às 12h33.</p></details>
+ </div>
+</li><li class="of" data-tipo="game" data-desc="0.2336" data-eco="28.04" data-bgg="7.10" data-por="92.00" data-rec="0" data-busca="imagine family caixinha boardgames ghenos games">
+ <a class="of-img" href="https://www.caixinhaboardgames.com.br/produtos/imagine-familiy/" target="_blank" rel="noopener nofollow sponsored" tabindex="-1" aria-hidden="true"><img src="../img/black/imagine-family.webp" alt="" loading="lazy" decoding="async" width="240" height="240"><span class="of-pct">−23%</span></a>
+ <div class="of-c">
+  
+  <h3 class="of-n">Imagine Family</h3>
+  <p class="of-m">Ghenos Games · <span class="of-nota">★ 7,1</span> no BGG</p>
+  <p class="of-p"><b class="of-por">R$ 92,00</b><span class="of-ref">média <s>R$ 120,04</s></span></p>
+  <div class="of-bar" role="img" aria-label="Preço de hoje é 77% da média"><span style="width:77%"></span></div>
+  <p class="of-eco">R$ 28,04 abaixo da média (23%)</p>
+  <p class="of-loja">na <b>Caixinha Boardgames</b> · preço visto hoje às 12h46</p>
+ </div>
+ <div class="of-acao">
+  <a class="of-btn" href="https://www.caixinhaboardgames.com.br/produtos/imagine-familiy/" target="_blank" rel="noopener nofollow sponsored">Ver na Caixinha Boardgames ↗</a>
+  
+  <details class="of-mais"><summary>Como chegamos a esse desconto</summary><p class="calc">Média do período: R$ 120,04 (32 dias de histórico, base curta). Menor preço do período: R$ 77,00. Preço lido na página da loja, hoje às 12h46.</p></details>
+ </div>
+</li><li class="of" data-tipo="expansion" data-desc="0.2325" data-eco="24.21" data-bgg="8.06" data-por="79.90" data-rec="0" data-busca="clank! expeditions: temple of the ape lords bravo jogos dire wolf digital">
+ <a class="of-img" href="https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/expansoes-clank-expedicoes-templo-dos-senhores-dos-macacos-p" target="_blank" rel="noopener nofollow sponsored" tabindex="-1" aria-hidden="true"><img src="../img/black/clank-expeditions-temple-of-the-ape-lords.webp" alt="" loading="lazy" decoding="async" width="240" height="240"><span class="of-pct">−23%</span></a>
+ <div class="of-c">
+  
+  <h3 class="of-n">Clank! Expeditions: Temple of the Ape Lords</h3>
+  <p class="of-m">Dire Wolf Digital · Expansão · <span class="of-nota">★ 8,1</span> no BGG</p>
+  <p class="of-p"><b class="of-por">R$ 79,90</b><span class="of-ref">média <s>R$ 104,11</s></span></p>
+  <div class="of-bar" role="img" aria-label="Preço de hoje é 77% da média"><span style="width:77%"></span></div>
+  <p class="of-eco">R$ 24,21 abaixo da média (23%)</p>
+  <p class="of-loja">na <b>Bravo Jogos</b> · preço visto hoje às 12h45 <span class="of-cp">cupom CARNIVAL</span></p>
+ </div>
+ <div class="of-acao">
+  <a class="of-btn" href="https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/expansoes-clank-expedicoes-templo-dos-senhores-dos-macacos-p" target="_blank" rel="noopener nofollow sponsored">Ver na Bravo Jogos ↗</a>
+  
+  <details class="of-mais"><summary>Como chegamos a esse desconto</summary><p class="calc">Média do período: R$ 104,11 (32 dias de histórico, base curta). Menor preço do período: R$ 74,31. Preço lido na página da loja, hoje às 12h45.</p></details>
+ </div>
+</li><li class="of" data-tipo="game" data-desc="0.2299" data-eco="63.89" data-bgg="7.42" data-por="214.00" data-rec="0" data-busca="galaxy trucker (second edition) caixinha boardgames frodos bg czech games edition">
+ <a class="of-img" href="https://www.caixinhaboardgames.com.br/produtos/galaxy-trucker-2a-edicao/" target="_blank" rel="noopener nofollow sponsored" tabindex="-1" aria-hidden="true"><img src="../img/black/galaxy-trucker-second-edition.webp" alt="" loading="lazy" decoding="async" width="240" height="240"><span class="of-pct">−23%</span></a>
+ <div class="of-c">
+  
+  <h3 class="of-n">Galaxy Trucker (Second Edition)</h3>
+  <p class="of-m">Czech Games Edition · <span class="of-nota">★ 7,4</span> no BGG</p>
+  <p class="of-p"><b class="of-por">R$ 214,00</b><span class="of-ref">média <s>R$ 277,89</s></span></p>
+  <div class="of-bar" role="img" aria-label="Preço de hoje é 77% da média"><span style="width:77%"></span></div>
+  <p class="of-eco">R$ 63,89 abaixo da média (23%)</p>
+  <p class="of-loja">na <b>Caixinha Boardgames</b> · preço visto hoje às 12h46</p>
+ </div>
+ <div class="of-acao">
+  <a class="of-btn" href="https://www.caixinhaboardgames.com.br/produtos/galaxy-trucker-2a-edicao/" target="_blank" rel="noopener nofollow sponsored">Ver na Caixinha Boardgames ↗</a>
+  <details class="of-mais"><summary>Mais 1 loja com desconto real</summary><ul><li><span>Frodos BG: <b>R$ 218,38</b> (21% abaixo da média)</span><a href="https://loja.frodosbg.com.br/galaxy-trucker-2a-edicao" target="_blank" rel="noopener nofollow sponsored">Ver</a></li></ul></details>
+  <details class="of-mais"><summary>Como chegamos a esse desconto</summary><p class="calc">Média do período: R$ 277,89 (32 dias de histórico, base curta). Menor preço do período: R$ 199,02. Preço lido na página da loja, hoje às 12h46.</p></details>
+ </div>
+</li><li class="of" data-tipo="game" data-desc="0.2243" data-eco="23.36" data-bgg="7.25" data-por="80.80" data-rec="1" data-busca="dino parque place games adoleta jogos">
+ <a class="of-img" href="https://www.placegames.com.br/boardgames/dino-parque" target="_blank" rel="noopener nofollow sponsored" tabindex="-1" aria-hidden="true"><img src="../img/black/dino-parque.webp" alt="" loading="lazy" decoding="async" width="240" height="240"><span class="of-pct">−22%</span></a>
+ <div class="of-c">
+  <span class="of-rec">Menor preço do período</span>
+  <h3 class="of-n">Dino Parque</h3>
+  <p class="of-m">Adoleta Jogos · <span class="of-nota">★ 7,2</span> no BGG</p>
+  <p class="of-p"><b class="of-por">R$ 80,80</b><span class="of-ref">média <s>R$ 104,16</s></span></p>
+  <div class="of-bar" role="img" aria-label="Preço de hoje é 78% da média"><span style="width:78%"></span></div>
+  <p class="of-eco">R$ 23,36 abaixo da média (22%)</p>
+  <p class="of-loja">na <b>Place Games</b> · preço visto hoje às 12h46</p>
+ </div>
+ <div class="of-acao">
+  <a class="of-btn" href="https://www.placegames.com.br/boardgames/dino-parque" target="_blank" rel="noopener nofollow sponsored">Ver na Place Games ↗</a>
+  
+  <details class="of-mais"><summary>Como chegamos a esse desconto</summary><p class="calc">Média do período: R$ 104,16 (32 dias de histórico, base curta). Menor preço do período: R$ 80,80. Preço lido na página da loja, hoje às 12h46.</p></details>
+ </div>
+</li><li class="of" data-tipo="game" data-desc="0.2206" data-eco="14.72" data-bgg="8.00" data-por="52.00" data-rec="0" data-busca="funocracy caixinha boardgames meeple br jogos">
+ <a class="of-img" href="https://www.caixinhaboardgames.com.br/produtos/funocracy/" target="_blank" rel="noopener nofollow sponsored" tabindex="-1" aria-hidden="true"><img src="../img/black/funocracy.webp" alt="" loading="lazy" decoding="async" width="240" height="240"><span class="of-pct">−22%</span></a>
+ <div class="of-c">
+  
+  <h3 class="of-n">Funocracy</h3>
+  <p class="of-m">Meeple BR Jogos · <span class="of-nota">★ 8,0</span> no BGG</p>
+  <p class="of-p"><b class="of-por">R$ 52,00</b><span class="of-ref">média <s>R$ 66,72</s></span></p>
+  <div class="of-bar" role="img" aria-label="Preço de hoje é 78% da média"><span style="width:78%"></span></div>
+  <p class="of-eco">R$ 14,72 abaixo da média (22%)</p>
+  <p class="of-loja">na <b>Caixinha Boardgames</b> · preço visto hoje às 12h46</p>
+ </div>
+ <div class="of-acao">
+  <a class="of-btn" href="https://www.caixinhaboardgames.com.br/produtos/funocracy/" target="_blank" rel="noopener nofollow sponsored">Ver na Caixinha Boardgames ↗</a>
+  
+  <details class="of-mais"><summary>Como chegamos a esse desconto</summary><p class="calc">Média do período: R$ 66,72 (32 dias de histórico, base curta). Menor preço do período: R$ 48,36. Preço lido na página da loja, hoje às 12h46.</p></details>
+ </div>
+</li><li class="of" data-tipo="game" data-desc="0.2176" data-eco="30.57" data-bgg="8.06" data-por="109.90" data-rec="0" data-busca="a tripulação: missão no mar profundo facil shopping devir">
+ <a class="of-img" href="https://www.facilshopping.com.br/produtos/a-tripulacao-missao-no-mar-profundo-devir-g8osy/" target="_blank" rel="noopener nofollow sponsored" tabindex="-1" aria-hidden="true"><img src="../img/black/a-tripulacao-missao-no-mar-profundo.webp" alt="" loading="lazy" decoding="async" width="240" height="240"><span class="of-pct">−22%</span></a>
+ <div class="of-c">
+  
+  <h3 class="of-n">A Tripulação: Missão no Mar Profundo</h3>
+  <p class="of-m">Devir · <span class="of-nota">★ 8,1</span> no BGG</p>
+  <p class="of-p"><b class="of-por">R$ 109,90</b><span class="of-ref">média <s>R$ 140,47</s></span></p>
+  <div class="of-bar" role="img" aria-label="Preço de hoje é 78% da média"><span style="width:78%"></span></div>
+  <p class="of-eco">R$ 30,57 abaixo da média (22%)</p>
+  <p class="of-loja">na <b>Facil Shopping</b> · preço visto hoje às 12h45</p>
+ </div>
+ <div class="of-acao">
+  <a class="of-btn" href="https://www.facilshopping.com.br/produtos/a-tripulacao-missao-no-mar-profundo-devir-g8osy/" target="_blank" rel="noopener nofollow sponsored">Ver na Facil Shopping ↗</a>
+  
+  <details class="of-mais"><summary>Como chegamos a esse desconto</summary><p class="calc">Média do período: R$ 140,47 (32 dias de histórico, base curta). Menor preço do período: R$ 102,21. Preço lido na página da loja, hoje às 12h45.</p></details>
+ </div>
+</li><li class="of" data-tipo="game" data-desc="0.2118" data-eco="40.88" data-bgg="7.74" data-por="152.10" data-rec="0" data-busca="destemidos: norte da áfrica board game barato meeple br jogos">
+ <a class="of-img" href="https://www.boardgamebarato.com.br/destemidos-norte-da-africa" target="_blank" rel="noopener nofollow sponsored" tabindex="-1" aria-hidden="true"><img src="../img/black/destemidos-norte-da-africa.webp" alt="" loading="lazy" decoding="async" width="240" height="240"><span class="of-pct">−21%</span></a>
+ <div class="of-c">
+  
+  <h3 class="of-n">Destemidos: Norte da África</h3>
+  <p class="of-m">Meeple BR Jogos · <span class="of-nota">★ 7,7</span> no BGG</p>
+  <p class="of-p"><b class="of-por">R$ 152,10</b><span class="of-ref">média <s>R$ 192,98</s></span></p>
+  <div class="of-bar" role="img" aria-label="Preço de hoje é 79% da média"><span style="width:79%"></span></div>
+  <p class="of-eco">R$ 40,88 abaixo da média (21%)</p>
+  <p class="of-loja">na <b>Board Game Barato</b> · preço visto hoje às 12h46</p>
+ </div>
+ <div class="of-acao">
+  <a class="of-btn" href="https://www.boardgamebarato.com.br/destemidos-norte-da-africa" target="_blank" rel="noopener nofollow sponsored">Ver na Board Game Barato ↗</a>
+  
+  <details class="of-mais"><summary>Como chegamos a esse desconto</summary><p class="calc">Média do período: R$ 192,98 (32 dias de histórico, base curta). Menor preço do período: R$ 150,84. Preço lido na página da loja, hoje às 12h46.</p></details>
+ </div>
+</li><li class="of" data-tipo="game" data-desc="0.2074" data-eco="20.93" data-bgg="7.12" data-por="79.99" data-rec="0" data-busca="a fake artist goes to new york playeasy oink games">
+ <a class="of-img" href="https://www.playeasy.com.br/a-fake-artist-goes-to-new-york" target="_blank" rel="noopener nofollow sponsored" tabindex="-1" aria-hidden="true"><img src="../img/black/a-fake-artist-goes-to-new-york.webp" alt="" loading="lazy" decoding="async" width="240" height="240"><span class="of-pct">−21%</span></a>
+ <div class="of-c">
+  
+  <h3 class="of-n">A Fake Artist Goes to New York</h3>
+  <p class="of-m">Oink Games · <span class="of-nota">★ 7,1</span> no BGG</p>
+  <p class="of-p"><b class="of-por">R$ 79,99</b><span class="of-ref">média <s>R$ 100,92</s></span></p>
+  <div class="of-bar" role="img" aria-label="Preço de hoje é 79% da média"><span style="width:79%"></span></div>
+  <p class="of-eco">R$ 20,93 abaixo da média (21%)</p>
+  <p class="of-loja">na <b>PlayEasy</b> · preço visto hoje às 12h45 <span class="of-cp">cupom PLAYSITE5OFF</span></p>
+ </div>
+ <div class="of-acao">
+  <a class="of-btn" href="https://www.playeasy.com.br/a-fake-artist-goes-to-new-york" target="_blank" rel="noopener nofollow sponsored">Ver na PlayEasy ↗</a>
+  
+  <details class="of-mais"><summary>Como chegamos a esse desconto</summary><p class="calc">Média do período: R$ 100,92 (32 dias de histórico, base curta). Menor preço do período: R$ 71,42. Preço lido na página da loja, hoje às 12h45.</p></details>
+ </div>
+</li><li class="of" data-tipo="game" data-desc="0.2067" data-eco="39.62" data-bgg="7.85" data-por="152.10" data-rec="0" data-busca="imperium: lendas board game barato alquimistas dos jogos meeple br jogos">
+ <a class="of-img" href="https://www.boardgamebarato.com.br/imperium-lendas" target="_blank" rel="noopener nofollow sponsored" tabindex="-1" aria-hidden="true"><img src="../img/black/imperium-lendas.webp" alt="" loading="lazy" decoding="async" width="240" height="240"><span class="of-pct">−21%</span></a>
+ <div class="of-c">
+  
+  <h3 class="of-n">Imperium: Lendas</h3>
+  <p class="of-m">Meeple BR Jogos · <span class="of-nota">★ 7,8</span> no BGG</p>
+  <p class="of-p"><b class="of-por">R$ 152,10</b><span class="of-ref">média <s>R$ 191,72</s></span></p>
+  <div class="of-bar" role="img" aria-label="Preço de hoje é 79% da média"><span style="width:79%"></span></div>
+  <p class="of-eco">R$ 39,62 abaixo da média (21%)</p>
+  <p class="of-loja">na <b>Board Game Barato</b> · preço visto hoje às 12h46</p>
+ </div>
+ <div class="of-acao">
+  <a class="of-btn" href="https://www.boardgamebarato.com.br/imperium-lendas" target="_blank" rel="noopener nofollow sponsored">Ver na Board Game Barato ↗</a>
+  <details class="of-mais"><summary>Mais 1 loja com desconto real</summary><ul><li><span>Alquimistas dos Jogos: <b>R$ 152,81</b> (20% abaixo da média)</span><a href="https://www.alquimistasdosjogos.com.br/imperium-lendas" target="_blank" rel="noopener nofollow sponsored">Ver</a></li></ul></details>
+  <details class="of-mais"><summary>Como chegamos a esse desconto</summary><p class="calc">Média do período: R$ 191,72 (32 dias de histórico, base curta). Menor preço do período: R$ 150,84. Preço lido na página da loja, hoje às 12h46.</p></details>
+ </div>
+</li><li class="of" data-tipo="expansion" data-desc="0.2028" data-eco="55.96" data-bgg="7.89" data-por="219.90" data-rec="0" data-busca="arkham horror: card game - a cidade submersa (expansão de campanha) facil shopping fantasy flight games">
+ <a class="of-img" href="https://www.facilshopping.com.br/produtos/arkham-horror-card-game-a-cidade-submersa-exp-campanha/" target="_blank" rel="noopener nofollow sponsored" tabindex="-1" aria-hidden="true"><img src="../img/black/arkham-horror-card-game-a-cidade-submersa-expansao-de-campanha.webp" alt="" loading="lazy" decoding="async" width="240" height="240"><span class="of-pct">−20%</span></a>
+ <div class="of-c">
+  
+  <h3 class="of-n">Arkham Horror: Card Game - A Cidade Submersa (Expansão de Campanha)</h3>
+  <p class="of-m">Fantasy Flight Games · Expansão · <span class="of-nota">★ 7,9</span> no BGG</p>
+  <p class="of-p"><b class="of-por">R$ 219,90</b><span class="of-ref">média <s>R$ 275,86</s></span></p>
+  <div class="of-bar" role="img" aria-label="Preço de hoje é 80% da média"><span style="width:80%"></span></div>
+  <p class="of-eco">R$ 55,96 abaixo da média (20%)</p>
+  <p class="of-loja">na <b>Facil Shopping</b> · preço visto hoje às 12h45</p>
+ </div>
+ <div class="of-acao">
+  <a class="of-btn" href="https://www.facilshopping.com.br/produtos/arkham-horror-card-game-a-cidade-submersa-exp-campanha/" target="_blank" rel="noopener nofollow sponsored">Ver na Facil Shopping ↗</a>
+  
+  <details class="of-mais"><summary>Como chegamos a esse desconto</summary><p class="calc">Média do período: R$ 275,86 (32 dias de histórico, base curta). Menor preço do período: R$ 204,51. Preço lido na página da loja, hoje às 12h45.</p></details>
+ </div>
+</li><li class="of" data-tipo="game" data-desc="0.2026" data-eco="21.70" data-bgg="8.38" data-por="85.40" data-rec="1" data-busca="parvati animus ludere adoleta jogos">
+ <a class="of-img" href="https://www.animusludere.com.br/parvati_ml" target="_blank" rel="noopener nofollow sponsored" tabindex="-1" aria-hidden="true"><img src="../img/black/parvati.webp" alt="" loading="lazy" decoding="async" width="240" height="240"><span class="of-pct">−20%</span></a>
+ <div class="of-c">
+  <span class="of-rec">Menor preço do período</span>
+  <h3 class="of-n">Parvati</h3>
+  <p class="of-m">Adoleta Jogos · <span class="of-nota">★ 8,4</span> no BGG</p>
+  <p class="of-p"><b class="of-por">R$ 85,40</b><span class="of-ref">média <s>R$ 107,10</s></span></p>
+  <div class="of-bar" role="img" aria-label="Preço de hoje é 80% da média"><span style="width:80%"></span></div>
+  <p class="of-eco">R$ 21,70 abaixo da média (20%)</p>
+  <p class="of-loja">na <b>Animus Ludere</b> · preço visto hoje às 12h47</p>
+ </div>
+ <div class="of-acao">
+  <a class="of-btn" href="https://www.animusludere.com.br/parvati_ml" target="_blank" rel="noopener nofollow sponsored">Ver na Animus Ludere ↗</a>
+  
+  <details class="of-mais"><summary>Como chegamos a esse desconto</summary><p class="calc">Média do período: R$ 107,10 (32 dias de histórico, base curta). Menor preço do período: R$ 85,40. Preço lido na página da loja, hoje às 12h47.</p></details>
+ </div>
+</li></ul>
+  <p class="vazio ofertas-vazio" hidden>Nenhuma oferta com esses filtros.</p>
+  <p class="credito">Preços, histórico, nota BGG e imagens das caixas: Compara Jogos (comparajogos.com.br). Links levam à loja; não ganhamos comissão.</p>
+ </section>
+ <section id="cupons" aria-labelledby="h-cupons">
+  <h2 id="h-cupons">Cupons anunciados pelas lojas</h2>
+  <p class="sub">Códigos que as lojas do radar publicam na própria página e cupons das grandes lojas (Amazon, Mercado Livre, Magalu, Americanas, Casas Bahia) publicados no Promobit, com a hora em que o robô viu cada um. Cupom que some da página sai daqui em até 36 horas. Toque no código para copiar.</p>
+  <ul class="cupons"><li class="cup-c"><p class="cup-loja">Amazon</p><button type="button" class="cup-cod" data-cod="20PAGINA" aria-label="Copiar o cupom 20PAGINA">20PAGINA<span>Copiar</span></button><p class="cup-st">Visto na página da loja hoje às 12h53. Não testado no carrinho: fonte Promobit, a loja não permite robôs.</p><a href="https://www.promobit.com.br/cupons/loja/amazon/" target="_blank" rel="noopener nofollow">Ver na loja ↗</a></li><li class="cup-c"><p class="cup-loja">Amazon</p><button type="button" class="cup-cod" data-cod="CUPOMPRIME10" aria-label="Copiar o cupom CUPOMPRIME10">CUPOMPRIME10<span>Copiar</span></button><p class="cup-st">Visto na página da loja hoje às 12h53. Não testado no carrinho: fonte Promobit, a loja não permite robôs.</p><a href="https://www.promobit.com.br/cupons/loja/amazon/" target="_blank" rel="noopener nofollow">Ver na loja ↗</a></li><li class="cup-c"><p class="cup-loja">Americanas</p><button type="button" class="cup-cod" data-cod="SONO10" aria-label="Copiar o cupom SONO10">SONO10<span>Copiar</span></button><p class="cup-st">Visto na página da loja hoje às 12h53. Não testado no carrinho: fonte Promobit, a loja não permite robôs.</p><a href="https://www.promobit.com.br/cupons/loja/americanas/" target="_blank" rel="noopener nofollow">Ver na loja ↗</a></li><li class="cup-c"><p class="cup-loja">Border Jogos</p><button type="button" class="cup-cod" data-cod="PRIMEIRACOMPRA" aria-label="Copiar o cupom PRIMEIRACOMPRA">PRIMEIRACOMPRA<span>Copiar</span></button><p class="cup-txt">A loja diz: “…em até 3X sem juros Ganhe Desconto - cupom: PRIMEIRACOMPRA FRETE GRÁTIS MG - compras acima de R$400,00…”</p><p class="cup-st">Visto na página da loja hoje às 12h47. Não testado no carrinho: o robots.txt da loja proíbe robôs no carrinho.</p><a href="https://www.borderjogos.com.br/promocoes" target="_blank" rel="noopener nofollow">Ver na loja ↗</a></li><li class="cup-c"><p class="cup-loja">Bravo Jogos</p><button type="button" class="cup-cod" data-cod="CARNIVAL" aria-label="Copiar o cupom CARNIVAL">CARNIVAL<span>Copiar</span></button><p class="cup-txt">A loja diz: “…ciente de que é necessário digitar o cupom CARNIVAL no campo &#x27;Adicionar cupom de desconto para…”</p><p class="cup-st">Visto na página da loja hoje às 12h47. Não testado no carrinho: o robots.txt da loja proíbe robôs no carrinho.</p><a href="https://bravojogos.com.br/" target="_blank" rel="noopener nofollow">Ver na loja ↗</a></li><li class="cup-c"><p class="cup-loja">Casas Bahia</p><button type="button" class="cup-cod" data-cod="DEZ" aria-label="Copiar o cupom DEZ">DEZ<span>Copiar</span></button><p class="cup-st">Visto na página da loja hoje às 12h53. Não testado no carrinho: fonte Promobit, a loja não permite robôs.</p><a href="https://www.promobit.com.br/cupons/loja/casas-bahia/" target="_blank" rel="noopener nofollow">Ver na loja ↗</a></li><li class="cup-c"><p class="cup-loja">Leão Livros</p><button type="button" class="cup-cod" data-cod="BEMVINDO" aria-label="Copiar o cupom BEMVINDO">BEMVINDO<span>Copiar</span></button><p class="cup-txt">A loja diz: “Use o cupom BEMVINDO.”</p><p class="cup-st">Visto na página da loja hoje às 12h47. Não testado no carrinho: o robots.txt da loja proíbe robôs no carrinho.</p><a href="https://www.leaolivros.com.br/promocoes" target="_blank" rel="noopener nofollow">Ver na loja ↗</a></li><li class="cup-c"><p class="cup-loja">Paladins Games</p><button type="button" class="cup-cod" data-cod="TIUSAM" aria-label="Copiar o cupom TIUSAM">TIUSAM<span>Copiar</span></button><p class="cup-txt">A loja diz: “…Progressivo Pré-Venda Frete Grátis CUPOM TIUSAM Fale Conosco Horários Segunda à Sexta das…”</p><p class="cup-st">Visto na página da loja hoje às 12h47. Não testado no carrinho: o robots.txt da loja proíbe robôs no carrinho.</p><a href="https://paladinsgames.com.br/cupons" target="_blank" rel="noopener nofollow">Ver na loja ↗</a></li><li class="cup-c"><p class="cup-loja">PlayEasy</p><button type="button" class="cup-cod" data-cod="PLAYSITE5OFF" aria-label="Copiar o cupom PLAYSITE5OFF">PLAYSITE5OFF<span>Copiar</span></button><p class="cup-txt">A loja diz: “Na sua primeira compra, use o cupom PLAYSITE5OFF e ganhe 5% OFF!”</p><p class="cup-st">Visto na página da loja hoje às 12h47. Não testado no carrinho: o robots.txt da loja proíbe robôs no carrinho.</p><a href="https://www.playeasy.com.br/" target="_blank" rel="noopener nofollow">Ver na loja ↗</a></li></ul>
+ </section>
+ <section id="comunidade" aria-labelledby="h-pb">
+  <h2 id="h-pb">Achados da comunidade (Promobit)</h2>
+  <p class="sub">Promoções de jogos de tabuleiro postadas por membros do Promobit nos últimos 7 dias, inclusive de Amazon, Mercado Livre, Magalu e Americanas. O robô não confere o vendedor nem se a promoção ainda vale: confira na loja. Quando o jogo está na nossa base, mostramos o desconto real sobre a média.</p>
+  <ul class="cupons"><li class="cup-c"><p class="cup-loja">Eu Vi! Stitch Jogo De Cartas A Partir De 4 Anos Copag</p><p class="of-p" style="margin:0"><b class="of-por" style="font-size:1.2rem">R$ 14,99</b> <span class="of-ref"><s>R$ 24,99</s></span></p><p class="cup-txt">Amazon · jogo fora da nossa base</p><p class="cup-st">Postada hoje às 09h59. Vendedor e validade não conferidos.</p><a href="https://www.promobit.com.br/oferta/eu-vi-stitch-jogo-de-cartas-a-partir-de-4-anos-copag-3166396/" target="_blank" rel="noopener nofollow">Ver no Promobit ↗</a></li><li class="cup-c"><p class="cup-loja">Jogo de Cartas Galápagos, + de 2 jogadores</p><p class="of-p" style="margin:0"><b class="of-por" style="font-size:1.2rem">R$ 15,50</b> <span class="of-ref"><s>R$ 49,99</s></span></p><p class="cup-txt">Amazon · jogo fora da nossa base</p><p class="cup-st">Postada hoje às 01h39. Vendedor e validade não conferidos.</p><a href="https://www.promobit.com.br/oferta/jogo-de-cartas-galapagos-de-2-jogadores-3165634/" target="_blank" rel="noopener nofollow">Ver no Promobit ↗</a></li></ul>
+ </section>
+ <section aria-labelledby="h-arm">
+  <h2 id="h-arm">Desconto de mentira</h2>
+  <p class="sub">Ofertas em que a loja anuncia 20% ou mais de desconto entre o preço "de" e o "por", mas o preço de hoje está menos de 20% abaixo da média real.</p>
+  <p class="vazio">Nenhuma armadilha nesta leitura.</p>
+ </section>
+ <details class="bk-info">
+  <summary>Como calculamos o desconto</summary>
+  <div class="dentro"><ul>
+   <li><b>Referência:</b> média aparada dos pontos diários de menor preço de jogo novo dos últimos 180 dias (ou do período disponível, marcado como base curta). A média é aparada: tiramos os 10% de preços mais altos e os 10% mais baixos do histórico e fazemos a conta com o resto.</li>
+   <li><b>Desconto real:</b> (referência menos preço de hoje) dividido pela referência. Entra com 20% ou mais.</li>
+   <li><b>Qualidade:</b> nota 7,0 ou mais no BGG, ou jogo premiado no Golden Geek, Spiel des Jahres ou Kennerspiel.</li>
+   <li><b>Lojas:</b> só jogo novo de loja que anuncia no Compara Jogos. Oferta abaixo de 45% da referência é descartada como provável anúncio de outro produto.</li>
+   <li><b>Jogo base e expansão</b> aparecem separados.</li>
+  </ul></div>
+ </details>
+ <details class="bk-info">
+  <summary>Antes de comprar: limites do radar</summary>
+  <div class="dentro">
    <p><b>Base curta.</b> O histórico vem das páginas públicas do Compara Jogos, que mostram 30 dias. Gravamos um ponto por
-   dia desde 03/11/2026 até completar 180 dias; até lá, cada linha mostra quantos dias de base a conta usou (hoje, a partir de 32 dias).</p>
+   dia desde 03/11/2026 até completar 180 dias; até lá, cada oferta mostra quantos dias de base a conta usou (hoje, a partir de 32 dias).</p>
    <p><b>Amazon e Mercado Livre.</b> Os sites não deixam robôs lerem as páginas. A Amazon entra pelo Keepa, só com produto
    vendido pela própria Amazon, e o Mercado Livre pela API oficial, só com loja oficial ou MercadoLíder, quando essas fontes
    estão ligadas. Promoções dessas e de outras grandes lojas postadas no Promobit aparecem numa seção à parte, com o vendedor
    ainda não conferido. Shopee e vendedores avulsos ficam de fora.</p>
    <p><b>Preço conferido na loja.</b> Antes de publicar, o robô abre a página do produto na própria loja e lê o preço e o
-   estoque (coluna "Fonte do preço"). Esse é o preço de tabela da página: no Pix costuma sair um pouco mais barato. Lojas que
+   estoque. Esse é o preço de tabela da página: no Pix costuma sair um pouco mais barato. Lojas que
    bloqueiam robôs ficam com o preço informado ao Compara Jogos.</p>
-   <p><b>Confira antes de pagar.</b> Frete não é verificado pelo robô, e cupom só é testado onde a loja permite (veja a seção de cupons). Preço muda rápido: cada linha mostra a hora
-   em que a loja informou o valor ao Compara Jogos.</p>
+   <p><b>Confira antes de pagar.</b> Frete não é verificado pelo robô, e cupom só é testado onde a loja permite. Preço muda rápido: cada oferta mostra a hora
+   em que o preço foi lido.</p>
   </div>
- </article>
- <section class="bloco"><h2>Top 5: compra sem pensar</h2><p class="criterio">A melhor combinação de nota no BGG e desconto real.</p>
-  <ol class="top5"><li><img src="../img/black/the-totem-game.webp" alt="" loading="lazy" width="72" height="72"><div><b><a href="https://www.placegames.com.br/boardgames/the-totem-game" target="_blank" rel="noopener nofollow sponsored">The Totem Game</a>: R$ 37,09 em Place Games</b><p>49% abaixo da média de R$ 72,86, nota 8,1 no BGG, e no menor preço do período.</p></div></li><li><img src="../img/black/marvel-united-multiverse.webp" alt="" loading="lazy" width="72" height="72"><div><b><a href="https://www.facilshopping.com.br/produtos/marvel-united-multiverse-jogo-de-tabuleiro-galapagos/" target="_blank" rel="noopener nofollow sponsored">Marvel United: Multiverse</a>: R$ 105,90 em Facil Shopping</b><p>47% abaixo da média de R$ 198,17, nota 8,4 no BGG.</p></div></li><li><img src="../img/black/arkham-horror-card-game-o-banquete-de-hemlock-vale-expansao-de-investigador.webp" alt="" loading="lazy" width="72" height="72"><div><b><a href="https://www.facilshopping.com.br/produtos/arkham-horror-card-game-o-banquete-de-hemlock-vale-expansao-investigador-1so3r/" target="_blank" rel="noopener nofollow sponsored">Arkham Horror: Card Game - O Banquete de Hemlock Vale (Expansão de Investigador)</a>: R$ 109,90 em Facil Shopping</b><p>42% abaixo da média de R$ 189,30, nota 8,7 no BGG.</p></div></li><li><img src="../img/black/zenkai-adventure.webp" alt="" loading="lazy" width="72" height="72"><div><b><a href="https://www.espacoarcs.com.br/jogos/zenkai-adventure-caverna-glacial" target="_blank" rel="noopener nofollow sponsored">Zenkai: Adventure</a>: R$ 36,00 em ARCS Livros e Jogos</b><p>43% abaixo da média de R$ 63,00, nota 8,5 no BGG, e no menor preço do período.</p></div></li><li><img src="../img/black/magic-maze-maximum-security.webp" alt="" loading="lazy" width="72" height="72"><div><b><a href="https://www.tavernareal.com/tabuleiro/magic-maze-maximum-security" target="_blank" rel="noopener nofollow sponsored">Magic Maze: Maximum Security</a>: R$ 18,99 em Taverna Real</b><p>46% abaixo da média de R$ 35,45, nota 7,5 no BGG.</p></div></li></ol></section>
- <section class="bloco"><h2>Todas as ofertas do radar</h2><p class="criterio">Ordenadas pelo desconto real. Role a tabela para o lado no celular.</p>
-  <h3>Jogos base (29)</h3><div class="tab"><table><thead><tr><th>Jogo</th><th>Editora</th><th>Loja</th><th>Preço hoje</th><th>Média do período (referência)</th><th>Desconto real</th><th>Menor preço no período</th><th>Nota BGG</th><th>Cupom</th><th>Link</th><th>Fonte do preço</th><th>Fonte do histórico</th><th>Verificado em</th></tr></thead><tbody><tr><td class="j"><div><img src="../img/black/the-totem-game.webp" alt="" loading="lazy" width="48" height="48"><span><b>The Totem Game</b><br><span class="tag rec">menor preço do período</span></span></div></td><td>(Independente)</td><td>Place Games</td><td class="n"><b>R$ 37,09</b></td><td class="n">R$ 72,86</td><td class="n desc">49%</td><td class="n">R$ 37,09</td><td class="n">8,1 BGG</td><td>nenhum anunciado</td><td><a class="ir" href="https://www.placegames.com.br/boardgames/the-totem-game" target="_blank" rel="noopener nofollow sponsored">Ver oferta</a></td><td>página da loja</td><td>Compara Jogos · BASE CURTA (32 dias)</td><td class="n">03/11/2026 12h47</td></tr><tr><td class="j"><div><img src="../img/black/marvel-united-multiverse.webp" alt="" loading="lazy" width="48" height="48"><span><b>Marvel United: Multiverse</b><br></span></div></td><td>CMON Limited</td><td>Facil Shopping</td><td class="n"><b>R$ 105,90</b></td><td class="n">R$ 198,17</td><td class="n desc">47%</td><td class="n">R$ 98,49</td><td class="n">8,4 BGG</td><td>nenhum anunciado</td><td><a class="ir" href="https://www.facilshopping.com.br/produtos/marvel-united-multiverse-jogo-de-tabuleiro-galapagos/" target="_blank" rel="noopener nofollow sponsored">Ver oferta</a></td><td>página da loja</td><td>Compara Jogos · BASE CURTA (32 dias)</td><td class="n">03/11/2026 12h46</td></tr><tr><td class="j"><div><img src="../img/black/kokeshi.webp" alt="" loading="lazy" width="48" height="48"><span><b>Kokeshi</b><br></span></div></td><td>Galápagos Jogos</td><td>Bravo Jogos</td><td class="n"><b>R$ 99,90</b></td><td class="n">R$ 180,87</td><td class="n desc">45%</td><td class="n">R$ 92,91</td><td class="n">7,1 BGG</td><td><b>CARNIVAL</b> (anunciado, visto 03/11/2026 12h47)</td><td><a class="ir" href="https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-kokeshi-p" target="_blank" rel="noopener nofollow sponsored">Ver oferta</a></td><td>página da loja</td><td>Compara Jogos · BASE CURTA (32 dias)</td><td class="n">03/11/2026 12h46</td></tr><tr><td class="j"><div><img src="../img/black/zenkai-adventure.webp" alt="" loading="lazy" width="48" height="48"><span><b>Zenkai: Adventure</b><br><span class="tag rec">menor preço do período</span></span></div></td><td>Art ao Cubo</td><td>ARCS Livros e Jogos</td><td class="n"><b>R$ 36,00</b></td><td class="n">R$ 63,00</td><td class="n desc">43%</td><td class="n">R$ 36,00</td><td class="n">8,5 BGG</td><td>nenhum anunciado</td><td><a class="ir" href="https://www.espacoarcs.com.br/jogos/zenkai-adventure-caverna-glacial" target="_blank" rel="noopener nofollow sponsored">Ver oferta</a></td><td>Compara Jogos</td><td>Compara Jogos · BASE CURTA (32 dias)</td><td class="n">03/11/2026 10h35</td></tr><tr><td class="j"><div><img src="../img/black/quest.webp" alt="" loading="lazy" width="48" height="48"><span><b>Quest</b><br></span></div></td><td>Galápagos Jogos</td><td>Caixinha Boardgames</td><td class="n"><b>R$ 72,00</b></td><td class="n">R$ 121,03</td><td class="n desc">41%</td><td class="n">R$ 66,87</td><td class="n">7,3 BGG</td><td>nenhum anunciado</td><td><a class="ir" href="https://www.caixinhaboardgames.com.br/produtos/quest/" target="_blank" rel="noopener nofollow sponsored">Ver oferta</a></td><td>página da loja</td><td>Compara Jogos · BASE CURTA (32 dias)</td><td class="n">03/11/2026 12h47</td></tr><tr><td class="j"><div><img src="../img/black/steve-jacksons-munchkin-presents-batman.webp" alt="" loading="lazy" width="48" height="48"><span><b>Steve Jackson&#x27;s Munchkin Presents Batman</b><br></span></div></td><td>Cryptozoic Entertainment</td><td>Caixinha Boardgames</td><td class="n"><b>R$ 64,00</b></td><td class="n">R$ 106,46</td><td class="n desc">40%</td><td class="n">R$ 59,52</td><td class="n">7,5 BGG</td><td>nenhum anunciado</td><td><a class="ir" href="https://www.caixinhaboardgames.com.br/produtos/munchkin-batman/" target="_blank" rel="noopener nofollow sponsored">Ver oferta</a></td><td>página da loja</td><td>Compara Jogos · BASE CURTA (32 dias)</td><td class="n">03/11/2026 12h47</td></tr><tr><td class="j"><div><img src="../img/black/harry-potter-batalha-de-hogwarts.webp" alt="" loading="lazy" width="48" height="48"><span><b>Harry Potter: Batalha de Hogwarts</b><br></span></div></td><td>Galápagos Jogos</td><td>Facil Shopping</td><td class="n"><b>R$ 194,90</b></td><td class="n">R$ 317,46</td><td class="n desc">39%</td><td class="n">R$ 181,26</td><td class="n">7,3 BGG</td><td>nenhum anunciado</td><td><a class="ir" href="https://www.facilshopping.com.br/produtos/harry-potter-a-batalha-de-hogwarts-jogo-de-tabuleiro/" target="_blank" rel="noopener nofollow sponsored">Ver oferta</a></td><td>página da loja</td><td>Compara Jogos · BASE CURTA (32 dias)</td><td class="n">03/11/2026 12h46</td></tr><tr><td class="j"><div><img src="../img/black/quest.webp" alt="" loading="lazy" width="48" height="48"><span><b>Quest</b><br></span></div></td><td>Galápagos Jogos</td><td>Cangaia Jogos</td><td class="n"><b>R$ 74,39</b></td><td class="n">R$ 121,03</td><td class="n desc">39%</td><td class="n">R$ 66,87</td><td class="n">7,3 BGG</td><td>nenhum anunciado</td><td><a class="ir" href="https://www.cangaiajogos.com.br/jogos/jogos-para-a-familia/quest" target="_blank" rel="noopener nofollow sponsored">Ver oferta</a></td><td>Compara Jogos</td><td>Compara Jogos · BASE CURTA (32 dias)</td><td class="n">03/11/2026 09h03</td></tr><tr><td class="j"><div><img src="../img/black/3-capitulos.webp" alt="" loading="lazy" width="48" height="48"><span><b>3 Capítulos</b><br></span></div></td><td>AMIGO</td><td>Cangaia Jogos</td><td class="n"><b>R$ 48,35</b></td><td class="n">R$ 78,15</td><td class="n desc">38%</td><td class="n">R$ 41,66</td><td class="n">7,0 BGG</td><td>nenhum anunciado</td><td><a class="ir" href="https://www.cangaiajogos.com.br/3-capitulos" target="_blank" rel="noopener nofollow sponsored">Ver oferta</a></td><td>Compara Jogos</td><td>Compara Jogos · BASE CURTA (32 dias)</td><td class="n">03/11/2026 07h33</td></tr><tr><td class="j"><div><img src="../img/black/citadels.webp" alt="" loading="lazy" width="48" height="48"><span><b>Citadels</b><br></span></div></td><td>Galápagos Jogos</td><td>Frodos BG</td><td class="n"><b>R$ 132,89</b></td><td class="n">R$ 212,74</td><td class="n desc">38%</td><td class="n">R$ 77,00</td><td class="n">7,2 BGG</td><td>nenhum anunciado</td><td><a class="ir" href="https://loja.frodosbg.com.br/citadels-2nd-edicao-revisada" target="_blank" rel="noopener nofollow sponsored">Ver oferta</a></td><td>página da loja</td><td>Compara Jogos · BASE CURTA (32 dias)</td><td class="n">03/11/2026 12h45</td></tr><tr><td class="j"><div><img src="../img/black/marvel-united.webp" alt="" loading="lazy" width="48" height="48"><span><b>Marvel United</b><br></span></div></td><td>Galápagos Jogos</td><td>Facil Shopping</td><td class="n"><b>R$ 105,90</b></td><td class="n">R$ 168,31</td><td class="n desc">37%</td><td class="n">R$ 98,49</td><td class="n">7,5 BGG</td><td>nenhum anunciado</td><td><a class="ir" href="https://www.facilshopping.com.br/produtos/marvel-united-jogo-de-tabuleiro-galapagos/" target="_blank" rel="noopener nofollow sponsored">Ver oferta</a></td><td>página da loja</td><td>Compara Jogos · BASE CURTA (32 dias)</td><td class="n">03/11/2026 12h46</td></tr><tr><td class="j"><div><img src="../img/black/3-capitulos.webp" alt="" loading="lazy" width="48" height="48"><span><b>3 Capítulos</b><br></span></div></td><td>AMIGO</td><td>Caixinha Boardgames</td><td class="n"><b>R$ 50,00</b></td><td class="n">R$ 78,15</td><td class="n desc">36%</td><td class="n">R$ 41,66</td><td class="n">7,0 BGG</td><td>nenhum anunciado</td><td><a class="ir" href="https://www.caixinhaboardgames.com.br/produtos/3-capitulos/" target="_blank" rel="noopener nofollow sponsored">Ver oferta</a></td><td>página da loja</td><td>Compara Jogos · BASE CURTA (32 dias)</td><td class="n">03/11/2026 12h45</td></tr><tr><td class="j"><div><img src="../img/black/fateflip-arrastado-pelo-mar.webp" alt="" loading="lazy" width="48" height="48"><span><b>FateFlip: Arrastado pelo Mar</b><br></span></div></td><td>Meeple BR Jogos</td><td>Alquimistas dos Jogos</td><td class="n"><b>R$ 44,81</b></td><td class="n">R$ 69,06</td><td class="n desc">35%</td><td class="n">R$ 44,28</td><td class="n">7,1 BGG</td><td>nenhum anunciado</td><td><a class="ir" href="https://www.alquimistasdosjogos.com.br/jogos/fateflip-arrastado-pelo-mar" target="_blank" rel="noopener nofollow sponsored">Ver oferta</a></td><td>página da loja</td><td>Compara Jogos · BASE CURTA (32 dias)</td><td class="n">03/11/2026 12h46</td></tr><tr><td class="j"><div><img src="../img/black/cuco.webp" alt="" loading="lazy" width="48" height="48"><span><b>Cuco!</b><br></span></div></td><td>Ludofun</td><td>Caixinha Boardgames</td><td class="n"><b>R$ 29,00</b></td><td class="n">R$ 43,30</td><td class="n desc">33%</td><td class="n">R$ 26,97</td><td class="n">9,0 BGG</td><td>nenhum anunciado</td><td><a class="ir" href="https://www.caixinhaboardgames.com.br/produtos/cuco-cuco/" target="_blank" rel="noopener nofollow sponsored">Ver oferta</a></td><td>página da loja</td><td>Compara Jogos · BASE CURTA (32 dias)</td><td class="n">03/11/2026 12h45</td></tr><tr><td class="j"><div><img src="../img/black/take-time.webp" alt="" loading="lazy" width="48" height="48"><span><b>Take Time</b><br></span></div></td><td>Libellud</td><td>Cangaia Jogos</td><td class="n"><b>R$ 106,94</b></td><td class="n">R$ 155,62</td><td class="n desc">31%</td><td class="n">R$ 82,58</td><td class="n">7,8 BGG</td><td>nenhum anunciado</td><td><a class="ir" href="https://www.cangaiajogos.com.br/take-time" target="_blank" rel="noopener nofollow sponsored">Ver oferta</a></td><td>Compara Jogos</td><td>Compara Jogos · BASE CURTA (32 dias)</td><td class="n">03/11/2026 10h03</td></tr><tr><td class="j"><div><img src="../img/black/patchwork.webp" alt="" loading="lazy" width="48" height="48"><span><b>Patchwork</b><br><span class="tag rec">menor preço do período</span></span></div></td><td>Ludofy Creative</td><td>Cangaia Jogos</td><td class="n"><b>R$ 110,66</b></td><td class="n">R$ 159,59</td><td class="n desc">31%</td><td class="n">R$ 110,66</td><td class="n">7,6 BGG</td><td>nenhum anunciado</td><td><a class="ir" href="https://www.cangaiajogos.com.br/patchwork-nova-caixa" target="_blank" rel="noopener nofollow sponsored">Ver oferta</a></td><td>Compara Jogos</td><td>Compara Jogos · BASE CURTA (32 dias)</td><td class="n">03/11/2026 08h36</td></tr><tr><td class="j"><div><img src="../img/black/exit-o-jogo-regresso-a-cabana-abandonada.webp" alt="" loading="lazy" width="48" height="48"><span><b>Exit: O Jogo: Regresso à Cabana Abandonada</b><br></span></div></td><td>Devir</td><td>Caixinha Boardgames</td><td class="n"><b>R$ 94,00</b></td><td class="n">R$ 133,92</td><td class="n desc">30%</td><td class="n">R$ 87,42</td><td class="n">7,6 BGG</td><td>nenhum anunciado</td><td><a class="ir" href="https://www.caixinhaboardgames.com.br/produtos/exit-regresso-a-cabana-abandonada/" target="_blank" rel="noopener nofollow sponsored">Ver oferta</a></td><td>página da loja</td><td>Compara Jogos · BASE CURTA (32 dias)</td><td class="n">03/11/2026 12h46</td></tr><tr><td class="j"><div><img src="../img/black/fateflip-arrastado-pelo-mar.webp" alt="" loading="lazy" width="48" height="48"><span><b>FateFlip: Arrastado pelo Mar</b><br></span></div></td><td>Meeple BR Jogos</td><td>Caixinha Boardgames</td><td class="n"><b>R$ 49,00</b></td><td class="n">R$ 69,06</td><td class="n desc">29%</td><td class="n">R$ 44,28</td><td class="n">7,1 BGG</td><td>nenhum anunciado</td><td><a class="ir" href="https://www.caixinhaboardgames.com.br/produtos/fateflip-arrastado-pelo-mar/" target="_blank" rel="noopener nofollow sponsored">Ver oferta</a></td><td>página da loja</td><td>Compara Jogos · BASE CURTA (32 dias)</td><td class="n">03/11/2026 12h46</td></tr><tr><td class="j"><div><img src="../img/black/fateflip-arrastado-pelo-mar.webp" alt="" loading="lazy" width="48" height="48"><span><b>FateFlip: Arrastado pelo Mar</b><br></span></div></td><td>Meeple BR Jogos</td><td>Meca dos Jogos</td><td class="n"><b>R$ 49,20</b></td><td class="n">R$ 69,06</td><td class="n desc">29%</td><td class="n">R$ 44,28</td><td class="n">7,1 BGG</td><td>nenhum anunciado</td><td><a class="ir" href="https://www.mecadosjogos.com.br/fateflip-arrastado-pelo-mar-p549" target="_blank" rel="noopener nofollow sponsored">Ver oferta</a></td><td>página da loja</td><td>Compara Jogos · BASE CURTA (32 dias)</td><td class="n">03/11/2026 12h46</td></tr><tr><td class="j"><div><img src="../img/black/imperium-classicos.webp" alt="" loading="lazy" width="48" height="48"><span><b>Imperium: Clássicos</b><br></span></div></td><td>Meeple BR Jogos</td><td>Board Game Barato</td><td class="n"><b>R$ 152,10</b></td><td class="n">R$ 210,22</td><td class="n desc">28%</td><td class="n">R$ 150,84</td><td class="n">7,7 BGG</td><td>nenhum anunciado</td><td><a class="ir" href="https://www.boardgamebarato.com.br/imperium-classicos" target="_blank" rel="noopener nofollow sponsored">Ver oferta</a></td><td>página da loja</td><td>Compara Jogos · BASE CURTA (32 dias)</td><td class="n">03/11/2026 12h46</td></tr><tr><td class="j"><div><img src="../img/black/imperium-classicos.webp" alt="" loading="lazy" width="48" height="48"><span><b>Imperium: Clássicos</b><br></span></div></td><td>Meeple BR Jogos</td><td>Alquimistas dos Jogos</td><td class="n"><b>R$ 152,81</b></td><td class="n">R$ 210,22</td><td class="n desc">27%</td><td class="n">R$ 150,84</td><td class="n">7,7 BGG</td><td>nenhum anunciado</td><td><a class="ir" href="https://www.alquimistasdosjogos.com.br/imperium-classicos" target="_blank" rel="noopener nofollow sponsored">Ver oferta</a></td><td>página da loja</td><td>Compara Jogos · BASE CURTA (32 dias)</td><td class="n">03/11/2026 12h46</td></tr><tr><td class="j"><div><img src="../img/black/dogs-day.webp" alt="" loading="lazy" width="48" height="48"><span><b>Dogs&#x27; Day</b><br></span></div></td><td>Geeks N&#x27; Orcs</td><td>Facil Shopping</td><td class="n"><b>R$ 47,40</b></td><td class="n">R$ 64,78</td><td class="n desc">27%</td><td class="n">R$ 44,08</td><td class="n">7,2 BGG</td><td>nenhum anunciado</td><td><a class="ir" href="https://www.facilshopping.com.br/produtos/dogs-day-jogo-de-tabuleiro-galapagos/" target="_blank" rel="noopener nofollow sponsored">Ver oferta</a></td><td>página da loja</td><td>Compara Jogos · BASE CURTA (32 dias)</td><td class="n">03/11/2026 12h46</td></tr><tr><td class="j"><div><img src="../img/black/deep-sea-adventure-boost.webp" alt="" loading="lazy" width="48" height="48"><span><b>Deep Sea Adventure Boost</b><br></span></div></td><td>Oink Games</td><td>Cangaia Jogos</td><td class="n"><b>R$ 97,64</b></td><td class="n">R$ 132,85</td><td class="n desc">27%</td><td class="n">R$ 83,61</td><td class="n">7,1 BGG</td><td>nenhum anunciado</td><td><a class="ir" href="https://www.cangaiajogos.com.br/deep-sea-adventure-impulso" target="_blank" rel="noopener nofollow sponsored">Ver oferta</a></td><td>Compara Jogos</td><td>Compara Jogos · BASE CURTA (32 dias)</td><td class="n">03/11/2026 08h36</td></tr><tr><td class="j"><div><img src="../img/black/patchwork.webp" alt="" loading="lazy" width="48" height="48"><span><b>Patchwork</b><br></span></div></td><td>Ludofy Creative</td><td>Caixinha Boardgames</td><td class="n"><b>R$ 119,00</b></td><td class="n">R$ 159,59</td><td class="n desc">25%</td><td class="n">R$ 110,66</td><td class="n">7,6 BGG</td><td>nenhum anunciado</td><td><a class="ir" href="https://www.caixinhaboardgames.com.br/produtos/patchwork/" target="_blank" rel="noopener nofollow sponsored">Ver oferta</a></td><td>página da loja</td><td>Compara Jogos · BASE CURTA (32 dias)</td><td class="n">03/11/2026 12h47</td></tr><tr><td class="j"><div><img src="../img/black/alien-attack-usa.webp" alt="" loading="lazy" width="48" height="48"><span><b>Alien Attack: USA</b><br></span></div></td><td>Meeple BR Jogos</td><td>Board Game Barato</td><td class="n"><b>R$ 124,11</b></td><td class="n">R$ 162,95</td><td class="n desc">24%</td><td class="n">R$ 123,30</td><td class="n">8,8 BGG</td><td>nenhum anunciado</td><td><a class="ir" href="https://www.boardgamebarato.com.br/alien-attack-usa" target="_blank" rel="noopener nofollow sponsored">Ver oferta</a></td><td>página da loja</td><td>Compara Jogos · BASE CURTA (32 dias)</td><td class="n">03/11/2026 12h45</td></tr><tr><td class="j"><div><img src="../img/black/daybreak.webp" alt="" loading="lazy" width="48" height="48"><span><b>Daybreak</b><br><span class="tag rec">menor preço do período</span></span></div></td><td>CMYK</td><td>Cangaia Jogos</td><td class="n"><b>R$ 268,76</b></td><td class="n">R$ 352,40</td><td class="n desc">24%</td><td class="n">R$ 268,76</td><td class="n">7,7 BGG</td><td>nenhum anunciado</td><td><a class="ir" href="https://www.cangaiajogos.com.br/daybreak" target="_blank" rel="noopener nofollow sponsored">Ver oferta</a></td><td>Compara Jogos</td><td>Compara Jogos · BASE CURTA (32 dias)</td><td class="n">03/11/2026 12h33</td></tr><tr><td class="j"><div><img src="../img/black/take-time.webp" alt="" loading="lazy" width="48" height="48"><span><b>Take Time</b><br></span></div></td><td>Libellud</td><td>Caixinha Boardgames</td><td class="n"><b>R$ 119,00</b></td><td class="n">R$ 155,62</td><td class="n desc">24%</td><td class="n">R$ 82,58</td><td class="n">7,8 BGG</td><td>nenhum anunciado</td><td><a class="ir" href="https://www.caixinhaboardgames.com.br/produtos/take-time/" target="_blank" rel="noopener nofollow sponsored">Ver oferta</a></td><td>página da loja</td><td>Compara Jogos · BASE CURTA (32 dias)</td><td class="n">03/11/2026 12h47</td></tr><tr><td class="j"><div><img src="../img/black/imagine-family.webp" alt="" loading="lazy" width="48" height="48"><span><b>Imagine Family</b><br></span></div></td><td>Ghenos Games</td><td>Caixinha Boardgames</td><td class="n"><b>R$ 92,00</b></td><td class="n">R$ 120,04</td><td class="n desc">23%</td><td class="n">R$ 77,00</td><td class="n">7,1 BGG</td><td>nenhum anunciado</td><td><a class="ir" href="https://www.caixinhaboardgames.com.br/produtos/imagine-familiy/" target="_blank" rel="noopener nofollow sponsored">Ver oferta</a></td><td>página da loja</td><td>Compara Jogos · BASE CURTA (32 dias)</td><td class="n">03/11/2026 12h46</td></tr><tr><td class="j"><div><img src="../img/black/fateflip-arrastado-pelo-mar.webp" alt="" loading="lazy" width="48" height="48"><span><b>FateFlip: Arrastado pelo Mar</b><br></span></div></td><td>Meeple BR Jogos</td><td>Taverna Real</td><td class="n"><b>R$ 52,99</b></td><td class="n">R$ 69,06</td><td class="n desc">23%</td><td class="n">R$ 44,28</td><td class="n">7,1 BGG</td><td>nenhum anunciado</td><td><a class="ir" href="https://www.tavernareal.com/tabuleiro/fateflip-arrastado-pelo-mar" target="_blank" rel="noopener nofollow sponsored">Ver oferta</a></td><td>página da loja</td><td>Compara Jogos · BASE CURTA (32 dias)</td><td class="n">03/11/2026 12h46</td></tr><tr><td class="j"><div><img src="../img/black/galaxy-trucker-second-edition.webp" alt="" loading="lazy" width="48" height="48"><span><b>Galaxy Trucker (Second Edition)</b><br></span></div></td><td>Czech Games Edition</td><td>Caixinha Boardgames</td><td class="n"><b>R$ 214,00</b></td><td class="n">R$ 277,89</td><td class="n desc">23%</td><td class="n">R$ 199,02</td><td class="n">7,4 BGG</td><td>nenhum anunciado</td><td><a class="ir" href="https://www.caixinhaboardgames.com.br/produtos/galaxy-trucker-2a-edicao/" target="_blank" rel="noopener nofollow sponsored">Ver oferta</a></td><td>página da loja</td><td>Compara Jogos · BASE CURTA (32 dias)</td><td class="n">03/11/2026 12h46</td></tr><tr><td class="j"><div><img src="../img/black/dino-parque.webp" alt="" loading="lazy" width="48" height="48"><span><b>Dino Parque</b><br><span class="tag rec">menor preço do período</span></span></div></td><td>Adoleta Jogos</td><td>Place Games</td><td class="n"><b>R$ 80,80</b></td><td class="n">R$ 104,16</td><td class="n desc">22%</td><td class="n">R$ 80,80</td><td class="n">7,2 BGG</td><td>nenhum anunciado</td><td><a class="ir" href="https://www.placegames.com.br/boardgames/dino-parque" target="_blank" rel="noopener nofollow sponsored">Ver oferta</a></td><td>página da loja</td><td>Compara Jogos · BASE CURTA (32 dias)</td><td class="n">03/11/2026 12h46</td></tr><tr><td class="j"><div><img src="../img/black/funocracy.webp" alt="" loading="lazy" width="48" height="48"><span><b>Funocracy</b><br></span></div></td><td>Meeple BR Jogos</td><td>Caixinha Boardgames</td><td class="n"><b>R$ 52,00</b></td><td class="n">R$ 66,72</td><td class="n desc">22%</td><td class="n">R$ 48,36</td><td class="n">8,0 BGG</td><td>nenhum anunciado</td><td><a class="ir" href="https://www.caixinhaboardgames.com.br/produtos/funocracy/" target="_blank" rel="noopener nofollow sponsored">Ver oferta</a></td><td>página da loja</td><td>Compara Jogos · BASE CURTA (32 dias)</td><td class="n">03/11/2026 12h46</td></tr><tr><td class="j"><div><img src="../img/black/imperium-classicos.webp" alt="" loading="lazy" width="48" height="48"><span><b>Imperium: Clássicos</b><br></span></div></td><td>Meeple BR Jogos</td><td>Caixinha Boardgames</td><td class="n"><b>R$ 164,00</b></td><td class="n">R$ 210,22</td><td class="n desc">22%</td><td class="n">R$ 150,84</td><td class="n">7,7 BGG</td><td>nenhum anunciado</td><td><a class="ir" href="https://www.caixinhaboardgames.com.br/produtos/imperium-classicos/" target="_blank" rel="noopener nofollow sponsored">Ver oferta</a></td><td>página da loja</td><td>Compara Jogos · BASE CURTA (32 dias)</td><td class="n">03/11/2026 12h46</td></tr><tr><td class="j"><div><img src="../img/black/a-tripulacao-missao-no-mar-profundo.webp" alt="" loading="lazy" width="48" height="48"><span><b>A Tripulação: Missão no Mar Profundo</b><br></span></div></td><td>Devir</td><td>Facil Shopping</td><td class="n"><b>R$ 109,90</b></td><td class="n">R$ 140,47</td><td class="n desc">22%</td><td class="n">R$ 102,21</td><td class="n">8,1 BGG</td><td>nenhum anunciado</td><td><a class="ir" href="https://www.facilshopping.com.br/produtos/a-tripulacao-missao-no-mar-profundo-devir-g8osy/" target="_blank" rel="noopener nofollow sponsored">Ver oferta</a></td><td>página da loja</td><td>Compara Jogos · BASE CURTA (32 dias)</td><td class="n">03/11/2026 12h45</td></tr><tr><td class="j"><div><img src="../img/black/galaxy-trucker-second-edition.webp" alt="" loading="lazy" width="48" height="48"><span><b>Galaxy Trucker (Second Edition)</b><br></span></div></td><td>Czech Games Edition</td><td>Frodos BG</td><td class="n"><b>R$ 218,38</b></td><td class="n">R$ 277,89</td><td class="n desc">21%</td><td class="n">R$ 199,02</td><td class="n">7,4 BGG</td><td>nenhum anunciado</td><td><a class="ir" href="https://loja.frodosbg.com.br/galaxy-trucker-2a-edicao" target="_blank" rel="noopener nofollow sponsored">Ver oferta</a></td><td>página da loja</td><td>Compara Jogos · BASE CURTA (32 dias)</td><td class="n">03/11/2026 12h46</td></tr><tr><td class="j"><div><img src="../img/black/destemidos-norte-da-africa.webp" alt="" loading="lazy" width="48" height="48"><span><b>Destemidos: Norte da África</b><br></span></div></td><td>Meeple BR Jogos</td><td>Board Game Barato</td><td class="n"><b>R$ 152,10</b></td><td class="n">R$ 192,98</td><td class="n desc">21%</td><td class="n">R$ 150,84</td><td class="n">7,7 BGG</td><td>nenhum anunciado</td><td><a class="ir" href="https://www.boardgamebarato.com.br/destemidos-norte-da-africa" target="_blank" rel="noopener nofollow sponsored">Ver oferta</a></td><td>página da loja</td><td>Compara Jogos · BASE CURTA (32 dias)</td><td class="n">03/11/2026 12h46</td></tr><tr><td class="j"><div><img src="../img/black/a-fake-artist-goes-to-new-york.webp" alt="" loading="lazy" width="48" height="48"><span><b>A Fake Artist Goes to New York</b><br></span></div></td><td>Oink Games</td><td>PlayEasy</td><td class="n"><b>R$ 79,99</b></td><td class="n">R$ 100,92</td><td class="n desc">21%</td><td class="n">R$ 71,42</td><td class="n">7,1 BGG</td><td><b>PLAYSITE5OFF</b> (anunciado, visto 03/11/2026 12h47)</td><td><a class="ir" href="https://www.playeasy.com.br/a-fake-artist-goes-to-new-york" target="_blank" rel="noopener nofollow sponsored">Ver oferta</a></td><td>página da loja</td><td>Compara Jogos · BASE CURTA (32 dias)</td><td class="n">03/11/2026 12h45</td></tr><tr><td class="j"><div><img src="../img/black/imperium-lendas.webp" alt="" loading="lazy" width="48" height="48"><span><b>Imperium: Lendas</b><br></span></div></td><td>Meeple BR Jogos</td><td>Board Game Barato</td><td class="n"><b>R$ 152,10</b></td><td class="n">R$ 191,72</td><td class="n desc">21%</td><td class="n">R$ 150,84</td><td class="n">7,8 BGG</td><td>nenhum anunciado</td><td><a class="ir" href="https://www.boardgamebarato.com.br/imperium-lendas" target="_blank" rel="noopener nofollow sponsored">Ver oferta</a></td><td>página da loja</td><td>Compara Jogos · BASE CURTA (32 dias)</td><td class="n">03/11/2026 12h46</td></tr><tr><td class="j"><div><img src="../img/black/imperium-lendas.webp" alt="" loading="lazy" width="48" height="48"><span><b>Imperium: Lendas</b><br></span></div></td><td>Meeple BR Jogos</td><td>Alquimistas dos Jogos</td><td class="n"><b>R$ 152,81</b></td><td class="n">R$ 191,72</td><td class="n desc">20%</td><td class="n">R$ 150,84</td><td class="n">7,8 BGG</td><td>nenhum anunciado</td><td><a class="ir" href="https://www.alquimistasdosjogos.com.br/imperium-lendas" target="_blank" rel="noopener nofollow sponsored">Ver oferta</a></td><td>página da loja</td><td>Compara Jogos · BASE CURTA (32 dias)</td><td class="n">03/11/2026 12h46</td></tr><tr><td class="j"><div><img src="../img/black/parvati.webp" alt="" loading="lazy" width="48" height="48"><span><b>Parvati</b><br><span class="tag rec">menor preço do período</span></span></div></td><td>Adoleta Jogos</td><td>Animus Ludere</td><td class="n"><b>R$ 85,40</b></td><td class="n">R$ 107,10</td><td class="n desc">20%</td><td class="n">R$ 85,40</td><td class="n">8,4 BGG</td><td>nenhum anunciado</td><td><a class="ir" href="https://www.animusludere.com.br/parvati_ml" target="_blank" rel="noopener nofollow sponsored">Ver oferta</a></td><td>página da loja</td><td>Compara Jogos · BASE CURTA (32 dias)</td><td class="n">03/11/2026 12h47</td></tr></tbody></table></div>
-  <h3>Expansões (11)</h3><div class="tab"><table><thead><tr><th>Jogo</th><th>Editora</th><th>Loja</th><th>Preço hoje</th><th>Média do período (referência)</th><th>Desconto real</th><th>Menor preço no período</th><th>Nota BGG</th><th>Cupom</th><th>Link</th><th>Fonte do preço</th><th>Fonte do histórico</th><th>Verificado em</th></tr></thead><tbody><tr><td class="j"><div><img src="../img/black/magic-maze-maximum-security.webp" alt="" loading="lazy" width="48" height="48"><span><b>Magic Maze: Maximum Security</b><br></span></div></td><td>Dude Games</td><td>Taverna Real</td><td class="n"><b>R$ 18,99</b></td><td class="n">R$ 35,45</td><td class="n desc">46%</td><td class="n">R$ 13,57</td><td class="n">7,5 BGG</td><td>nenhum anunciado</td><td><a class="ir" href="https://www.tavernareal.com/tabuleiro/magic-maze-maximum-security" target="_blank" rel="noopener nofollow sponsored">Ver oferta</a></td><td>página da loja</td><td>Compara Jogos · BASE CURTA (32 dias)</td><td class="n">03/11/2026 12h46</td></tr><tr><td class="j"><div><img src="../img/black/magic-maze-maximum-security.webp" alt="" loading="lazy" width="48" height="48"><span><b>Magic Maze: Maximum Security</b><br></span></div></td><td>Dude Games</td><td>Caixinha Boardgames</td><td class="n"><b>R$ 19,00</b></td><td class="n">R$ 35,45</td><td class="n desc">46%</td><td class="n">R$ 13,57</td><td class="n">7,5 BGG</td><td>nenhum anunciado</td><td><a class="ir" href="https://www.caixinhaboardgames.com.br/produtos/maximum-security-expansao-magic-maze/" target="_blank" rel="noopener nofollow sponsored">Ver oferta</a></td><td>página da loja</td><td>Compara Jogos · BASE CURTA (32 dias)</td><td class="n">03/11/2026 12h46</td></tr><tr><td class="j"><div><img src="../img/black/mysterium-secrets-lies.webp" alt="" loading="lazy" width="48" height="48"><span><b>Mysterium: Secrets &amp; Lies</b><br></span></div></td><td>Asmodee</td><td>Caixinha Boardgames</td><td class="n"><b>R$ 72,00</b></td><td class="n">R$ 124,37</td><td class="n desc">42%</td><td class="n">R$ 66,96</td><td class="n">7,8 BGG</td><td>nenhum anunciado</td><td><a class="ir" href="https://www.caixinhaboardgames.com.br/produtos/secrets-and-lies-expansao-mysterium/" target="_blank" rel="noopener nofollow sponsored">Ver oferta</a></td><td>página da loja</td><td>Compara Jogos · BASE CURTA (32 dias)</td><td class="n">03/11/2026 12h46</td></tr><tr><td class="j"><div><img src="../img/black/arkham-horror-card-game-o-banquete-de-hemlock-vale-expansao-de-investigador.webp" alt="" loading="lazy" width="48" height="48"><span><b>Arkham Horror: Card Game - O Banquete de Hemlock Vale (Expansão de Investigador)</b><br></span></div></td><td>Fantasy Flight Games</td><td>Facil Shopping</td><td class="n"><b>R$ 109,90</b></td><td class="n">R$ 189,30</td><td class="n desc">42%</td><td class="n">R$ 102,21</td><td class="n">8,7 BGG</td><td>nenhum anunciado</td><td><a class="ir" href="https://www.facilshopping.com.br/produtos/arkham-horror-card-game-o-banquete-de-hemlock-vale-expansao-investigador-1so3r/" target="_blank" rel="noopener nofollow sponsored">Ver oferta</a></td><td>página da loja</td><td>Compara Jogos · BASE CURTA (32 dias)</td><td class="n">03/11/2026 12h45</td></tr><tr><td class="j"><div><img src="../img/black/night-parade-of-a-hundred-yokai-cursed-throne-expansion.webp" alt="" loading="lazy" width="48" height="48"><span><b>Night Parade of a Hundred Yokai: Cursed Throne Expansion</b><br></span></div></td><td>Brueh Games Inc.</td><td>Caixinha Boardgames</td><td class="n"><b>R$ 72,00</b></td><td class="n">R$ 111,01</td><td class="n desc">35%</td><td class="n">R$ 63,29</td><td class="n">8,1 BGG</td><td>nenhum anunciado</td><td><a class="ir" href="https://www.caixinhaboardgames.com.br/produtos/cursed-throne-expansao-night-parade-of-a-hundred-yokai/" target="_blank" rel="noopener nofollow sponsored">Ver oferta</a></td><td>página da loja</td><td>Compara Jogos · BASE CURTA (32 dias)</td><td class="n">03/11/2026 12h46</td></tr><tr><td class="j"><div><img src="../img/black/viticulture-visitantes-do-charco.webp" alt="" loading="lazy" width="48" height="48"><span><b>Viticulture: Visitantes do Charco</b><br></span></div></td><td>Ludofy Creative</td><td>Facil Shopping</td><td class="n"><b>R$ 29,90</b></td><td class="n">R$ 44,89</td><td class="n desc">33%</td><td class="n">R$ 27,81</td><td class="n">8,0 BGG</td><td>nenhum anunciado</td><td><a class="ir" href="https://www.facilshopping.com.br/produtos/viticulture-visitantes-do-charco-expansao-grok/" target="_blank" rel="noopener nofollow sponsored">Ver oferta</a></td><td>página da loja</td><td>Compara Jogos · BASE CURTA (32 dias)</td><td class="n">03/11/2026 12h47</td></tr><tr><td class="j"><div><img src="../img/black/roam-gem-maps.webp" alt="" loading="lazy" width="48" height="48"><span><b>Roam: Gem Maps</b><br><span class="tag rec">menor preço do período</span></span></div></td><td>Red Raven Games</td><td>Place Games</td><td class="n"><b>R$ 37,09</b></td><td class="n">R$ 54,56</td><td class="n desc">32%</td><td class="n">R$ 37,09</td><td class="n">7,1 BGG</td><td>nenhum anunciado</td><td><a class="ir" href="https://www.placegames.com.br/boardgames/roam-mapas-de-gemas-expansao" target="_blank" rel="noopener nofollow sponsored">Ver oferta</a></td><td>página da loja</td><td>Compara Jogos · BASE CURTA (32 dias)</td><td class="n">03/11/2026 12h47</td></tr><tr><td class="j"><div><img src="../img/black/destemidos-reforcos.webp" alt="" loading="lazy" width="48" height="48"><span><b>Destemidos: Reforços</b><br></span></div></td><td>Meeple BR Jogos</td><td>Board Game Barato</td><td class="n"><b>R$ 161,99</b></td><td class="n">R$ 236,05</td><td class="n desc">31%</td><td class="n">R$ 161,81</td><td class="n">8,2 BGG</td><td>nenhum anunciado</td><td><a class="ir" href="https://www.boardgamebarato.com.br/destemidos-reforcos" target="_blank" rel="noopener nofollow sponsored">Ver oferta</a></td><td>página da loja</td><td>Compara Jogos · BASE CURTA (32 dias)</td><td class="n">03/11/2026 12h46</td></tr><tr><td class="j"><div><img src="../img/black/night-parade-of-a-hundred-yokai-cursed-throne-expansion.webp" alt="" loading="lazy" width="48" height="48"><span><b>Night Parade of a Hundred Yokai: Cursed Throne Expansion</b><br></span></div></td><td>Brueh Games Inc.</td><td>Taverna Real</td><td class="n"><b>R$ 76,99</b></td><td class="n">R$ 111,01</td><td class="n desc">31%</td><td class="n">R$ 63,29</td><td class="n">8,1 BGG</td><td>nenhum anunciado</td><td><a class="ir" href="https://www.tavernareal.com/tabuleiro/night-parade-cursed-throne-expansao" target="_blank" rel="noopener nofollow sponsored">Ver oferta</a></td><td>página da loja</td><td>Compara Jogos · BASE CURTA (32 dias)</td><td class="n">03/11/2026 12h46</td></tr><tr><td class="j"><div><img src="../img/black/fantastic-factories-subterfuge.webp" alt="" loading="lazy" width="48" height="48"><span><b>Fantastic Factories: Subterfuge</b><br><span class="tag rec">menor preço do período</span></span></div></td><td>Deep Water Games</td><td>Leão Livros</td><td class="n"><b>R$ 46,40</b></td><td class="n">R$ 66,18</td><td class="n desc">30%</td><td class="n">R$ 46,40</td><td class="n">7,3 BGG</td><td><b>BEMVINDO</b> (anunciado, visto 03/11/2026 12h47)</td><td><a class="ir" href="https://www.leaolivros.com.br/fabricas-fantasticas-artimanhas" target="_blank" rel="noopener nofollow sponsored">Ver oferta</a></td><td>página da loja</td><td>Compara Jogos · BASE CURTA (32 dias)</td><td class="n">03/11/2026 12h46</td></tr><tr><td class="j"><div><img src="../img/black/destemidos-reforcos.webp" alt="" loading="lazy" width="48" height="48"><span><b>Destemidos: Reforços</b><br></span></div></td><td>Meeple BR Jogos</td><td>Leão Livros</td><td class="n"><b>R$ 166,36</b></td><td class="n">R$ 236,05</td><td class="n desc">30%</td><td class="n">R$ 161,81</td><td class="n">8,2 BGG</td><td><b>BEMVINDO</b> (anunciado, visto 03/11/2026 12h47)</td><td><a class="ir" href="https://www.leaolivros.com.br/destemidos-reforcos" target="_blank" rel="noopener nofollow sponsored">Ver oferta</a></td><td>página da loja</td><td>Compara Jogos · BASE CURTA (32 dias)</td><td class="n">03/11/2026 12h46</td></tr><tr><td class="j"><div><img src="../img/black/destemidos-reforcos.webp" alt="" loading="lazy" width="48" height="48"><span><b>Destemidos: Reforços</b><br></span></div></td><td>Meeple BR Jogos</td><td>Caixinha Boardgames</td><td class="n"><b>R$ 179,00</b></td><td class="n">R$ 236,05</td><td class="n desc">24%</td><td class="n">R$ 161,81</td><td class="n">8,2 BGG</td><td>nenhum anunciado</td><td><a class="ir" href="https://www.caixinhaboardgames.com.br/produtos/reforcos-expansao-destemidos/" target="_blank" rel="noopener nofollow sponsored">Ver oferta</a></td><td>página da loja</td><td>Compara Jogos · BASE CURTA (32 dias)</td><td class="n">03/11/2026 12h46</td></tr><tr><td class="j"><div><img src="../img/black/everdell-pearlbrook.webp" alt="" loading="lazy" width="48" height="48"><span><b>Everdell: Pearlbrook</b><br><span class="tag rec">menor preço do período</span></span></div></td><td>Starling Games (II)</td><td>Bravo Jogos</td><td class="n"><b>R$ 231,57</b></td><td class="n">R$ 304,11</td><td class="n desc">24%</td><td class="n">R$ 231,57</td><td class="n">7,6 BGG</td><td><b>CARNIVAL</b> (anunciado, visto 03/11/2026 12h47)</td><td><a class="ir" href="https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/everdell-pearlbrook-expansao-p" target="_blank" rel="noopener nofollow sponsored">Ver oferta</a></td><td>Compara Jogos</td><td>Compara Jogos · BASE CURTA (32 dias)</td><td class="n">03/11/2026 08h32</td></tr><tr><td class="j"><div><img src="../img/black/clank-expeditions-temple-of-the-ape-lords.webp" alt="" loading="lazy" width="48" height="48"><span><b>Clank! Expeditions: Temple of the Ape Lords</b><br></span></div></td><td>Dire Wolf Digital</td><td>Bravo Jogos</td><td class="n"><b>R$ 79,90</b></td><td class="n">R$ 104,11</td><td class="n desc">23%</td><td class="n">R$ 74,31</td><td class="n">8,1 BGG</td><td><b>CARNIVAL</b> (anunciado, visto 03/11/2026 12h47)</td><td><a class="ir" href="https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/expansoes-clank-expedicoes-templo-dos-senhores-dos-macacos-p" target="_blank" rel="noopener nofollow sponsored">Ver oferta</a></td><td>página da loja</td><td>Compara Jogos · BASE CURTA (32 dias)</td><td class="n">03/11/2026 12h45</td></tr><tr><td class="j"><div><img src="../img/black/arkham-horror-card-game-a-cidade-submersa-expansao-de-campanha.webp" alt="" loading="lazy" width="48" height="48"><span><b>Arkham Horror: Card Game - A Cidade Submersa (Expansão de Campanha)</b><br></span></div></td><td>Fantasy Flight Games</td><td>Facil Shopping</td><td class="n"><b>R$ 219,90</b></td><td class="n">R$ 275,86</td><td class="n desc">20%</td><td class="n">R$ 204,51</td><td class="n">7,9 BGG</td><td>nenhum anunciado</td><td><a class="ir" href="https://www.facilshopping.com.br/produtos/arkham-horror-card-game-a-cidade-submersa-exp-campanha/" target="_blank" rel="noopener nofollow sponsored">Ver oferta</a></td><td>página da loja</td><td>Compara Jogos · BASE CURTA (32 dias)</td><td class="n">03/11/2026 12h45</td></tr></tbody></table></div>
-  <p class="credito">Preços, histórico, nota BGG e imagens das caixas: Compara Jogos (comparajogos.com.br). Links levam à loja; não ganhamos comissão.</p>
- </section>
- <section class="bloco"><h2>Achados da comunidade (Promobit)</h2><p class="criterio">Promoções de jogos de tabuleiro postadas
-  por membros do Promobit nos últimos 7 dias, inclusive de Amazon, Mercado Livre, Magalu e Americanas. O robô não confere o vendedor
-  nem se a promoção ainda vale: confira na loja. Quando o jogo está na nossa base, mostramos o desconto real sobre a média.</p>
-  <div class="tab"><table class="cupons-t"><thead><tr><th>Promoção</th><th>Loja</th><th>Preço postado</th><th>Cupom</th><th>Desconto real</th><th>Postada em</th><th>Link</th></tr></thead><tbody><tr><td><b>Eu Vi! Stitch Jogo De Cartas A Partir De 4 Anos Copag</b></td><td>Amazon</td><td class="n"><b>R$ 14,99</b> <s>R$ 24,99</s></td><td>nenhum</td><td>jogo fora da nossa base</td><td class="n">03/11/2026 09h59</td><td><a class="ir" href="https://www.promobit.com.br/oferta/eu-vi-stitch-jogo-de-cartas-a-partir-de-4-anos-copag-3166396/" target="_blank" rel="noopener nofollow">Ver no Promobit</a></td></tr><tr><td><b>Jogo de Cartas Galápagos, + de 2 jogadores</b></td><td>Amazon</td><td class="n"><b>R$ 15,50</b> <s>R$ 49,99</s></td><td>nenhum</td><td>jogo fora da nossa base</td><td class="n">03/11/2026 01h39</td><td><a class="ir" href="https://www.promobit.com.br/oferta/jogo-de-cartas-galapagos-de-2-jogadores-3165634/" target="_blank" rel="noopener nofollow">Ver no Promobit</a></td></tr></tbody></table></div></section>
- <section class="bloco"><h2>Cupons anunciados pelas lojas</h2><p class="criterio">Códigos que as lojas do radar publicam na
-  própria página e cupons das grandes lojas (Amazon, Mercado Livre, Magalu, Americanas, Casas Bahia) publicados no Promobit, com a hora em que o robô viu cada um. Só entra código escrito pela loja; cupom que some da página sai daqui em até 36 horas.
-  O teste no carrinho só roda nas lojas cujo robots.txt permite robôs no carrinho e no checkout.</p>
-  <div class="tab"><table class="cupons-t"><thead><tr><th>Loja</th><th>Cupom</th><th>O que a página da loja diz</th><th>Visto na loja em</th><th>Testado no carrinho</th><th>Link</th></tr></thead><tbody><tr><td>Amazon</td><td><b>20PAGINA</b></td><td>Obtenha 20% de economia em suas compras com o cupom de desconto Amazon 20% OFF em produtos Amazon PARA A SUA PRIMEIRA COMPRA DE LIVROS NO SITE, DESCONTO MÁXIMO LIMITADO A R$10</td><td class="n">03/11/2026 12h53</td><td>não testado (fonte: Promobit; a loja não permite robôs)</td><td><a class="ir" href="https://www.promobit.com.br/cupons/loja/amazon/" target="_blank" rel="noopener nofollow">Ver na loja</a></td></tr><tr><td>Amazon</td><td><b>CUPOMPRIME10</b></td><td>Todo o site com 10% OFF aplicando o cupom Amazon 10% OFF em produtos Amazon INSIRA O CUPOM NO CARRINHO E GARANTA 10% OFF EM PEDIDOS A PARTIR DE R$100. O DESCONTO CHEGA A NO MÁXIMO R$20</td><td class="n">03/11/2026 12h53</td><td>não testado (fonte: Promobit; a loja não permite robôs)</td><td><a class="ir" href="https://www.promobit.com.br/cupons/loja/amazon/" target="_blank" rel="noopener nofollow">Ver na loja</a></td></tr><tr><td>Americanas</td><td><b>SONO10</b></td><td>Desconto de 10% em suas compras com o cupom Americanas 10% OFF em produtos Americanas VÁLIDO EM MÓVEIS, SOFÁS, CAMAS E COLCHÕES SELECIONADOS. SEM VALOR MÍNIMO DE COMPRA. SUJEITO À DISPONIBILIDADE</td><td class="n">03/11/2026 12h53</td><td>não testado (fonte: Promobit; a loja não permite robôs)</td><td><a class="ir" href="https://www.promobit.com.br/cupons/loja/americanas/" target="_blank" rel="noopener nofollow">Ver na loja</a></td></tr><tr><td>Border Jogos</td><td><b>PRIMEIRACOMPRA</b></td><td>.com Rastrear pedido Rastrear PARCELE SUAS COMPRAS - em até 3X sem juros Ganhe Desconto - cupom: PRIMEIRACOMPRA FRETE GRÁTIS MG - compras acima de R$400,00 PARCELE SUAS COMPRAS - em até 3X sem juros Ga</td><td class="n">03/11/2026 12h47</td><td>não testado (o robots.txt da loja proíbe robôs no carrinho)</td><td><a class="ir" href="https://www.borderjogos.com.br/promocoes" target="_blank" rel="noopener nofollow">Ver na loja</a></td></tr><tr><td>Bravo Jogos</td><td><b>CARNIVAL</b></td><td>ando o Cupom Declaro estar ciente de que é necessário digitar o cupom CARNIVAL no campo &#x27;Adicionar cupom de desconto para que a promoção seja ativada. data-btn-contin</td><td class="n">03/11/2026 12h47</td><td>não testado (o robots.txt da loja proíbe robôs no carrinho)</td><td><a class="ir" href="https://bravojogos.com.br/" target="_blank" rel="noopener nofollow">Ver na loja</a></td></tr><tr><td>Casas Bahia</td><td><b>DEZ</b></td><td>Cupom Casas Bahia oferece 10% de desconto em todo o site 10% OFF em produtos Casas Bahia CUPOM SEM RESTRIÇÕES, COMPRE E RETIRE EM ATÉ DUAS HORAS!</td><td class="n">03/11/2026 12h53</td><td>não testado (fonte: Promobit; a loja não permite robôs)</td><td><a class="ir" href="https://www.promobit.com.br/cupons/loja/casas-bahia/" target="_blank" rel="noopener nofollow">Ver na loja</a></td></tr><tr><td>Leão Livros</td><td><b>BEMVINDO</b></td><td>o Preencha o formulário abaixo. 🦁 Receba as novidades, cupons e mais! Novo cliente? Use o cupom BEMVINDO. Receba a newsletter para mais cupons: 🦁 Obrigado por se inscrever! Favorito adicionado O</td><td class="n">03/11/2026 12h47</td><td>não testado (o robots.txt da loja proíbe robôs no carrinho)</td><td><a class="ir" href="https://www.leaolivros.com.br/promocoes" target="_blank" rel="noopener nofollow">Ver na loja</a></td></tr><tr><td>Paladins Games</td><td><b>TIUSAM</b></td><td>Devolução Política de Privacidade Política de Desconto Progressivo Pré-Venda Frete Grátis CUPOM TIUSAM Fale Conosco Horários Segunda à Sexta das 8h às 18h Exceto Feriados. Fale Conosco (62) 98</td><td class="n">03/11/2026 12h47</td><td>não testado (o robots.txt da loja proíbe robôs no carrinho)</td><td><a class="ir" href="https://paladinsgames.com.br/cupons" target="_blank" rel="noopener nofollow">Ver na loja</a></td></tr><tr><td>PlayEasy</td><td><b>PLAYSITE5OFF</b></td><td>rtas! Ver todos os produtos Aproveite um Desconto Especial! Na sua primeira compra, use o cupom PLAYSITE5OFF e ganhe 5% OFF! PLAYSITE5OFF Copiar Copiado! Parcelamento Em até 12x sem juros Envios Fre</td><td class="n">03/11/2026 12h47</td><td>não testado (o robots.txt da loja proíbe robôs no carrinho)</td><td><a class="ir" href="https://www.playeasy.com.br/" target="_blank" rel="noopener nofollow">Ver na loja</a></td></tr></tbody></table></div></section>
- <section class="bloco"><h2>Menor preço do período</h2><p class="criterio">Itens do radar que hoje igualaram ou bateram o menor preço registrado na base.</p>
-  <ul class="lista"><li><b>The Totem Game</b>: R$ 37,09 em Place Games (menor do período até ontem: R$ 37,09)</li><li><b>Zenkai: Adventure</b>: R$ 36,00 em ARCS Livros e Jogos (menor do período até ontem: R$ 36,00)</li><li><b>Roam: Gem Maps</b>: R$ 37,09 em Place Games (menor do período até ontem: R$ 37,09)</li><li><b>Patchwork</b>: R$ 110,66 em Cangaia Jogos (menor do período até ontem: R$ 110,66)</li><li><b>Fantastic Factories: Subterfuge</b>: R$ 46,40 em Leão Livros (menor do período até ontem: R$ 46,40)</li><li><b>Everdell: Pearlbrook</b>: R$ 231,57 em Bravo Jogos (menor do período até ontem: R$ 231,57)</li><li><b>Daybreak</b>: R$ 268,76 em Cangaia Jogos (menor do período até ontem: R$ 268,76)</li><li><b>Dino Parque</b>: R$ 80,80 em Place Games (menor do período até ontem: R$ 80,80)</li><li><b>Parvati</b>: R$ 85,40 em Animus Ludere (menor do período até ontem: R$ 85,40)</li></ul></section>
- <section class="bloco"><h2>Armadilhas detectadas</h2><p class="criterio">Ofertas com 20% ou mais de diferença entre o preço "de" e o "por" informados pela loja, mas com desconto real abaixo de 20% sobre a média do período.</p>
-  <p class="criterio">Nenhuma hoje.</p></section>
- <section class="bloco"><h2>Como calculamos</h2>
-  <ul class="lista">
-   <li><b>Referência:</b> média aparada dos pontos diários de menor preço de jogo novo dos últimos 180 dias (ou do período disponível, marcado como base curta).</li>
-   <li><b>Desconto real:</b> (referência menos preço de hoje) dividido pela referência. Entra com 20% ou mais.</li>
-   <li><b>Qualidade:</b> nota 7,0 ou mais no BGG, ou jogo premiado no Golden Geek, Spiel des Jahres ou Kennerspiel.</li>
-   <li><b>Lojas:</b> só jogo novo de loja que anuncia no Compara Jogos. Oferta abaixo de 45% da referência é descartada como provável anúncio de outro produto.</li>
-   <li><b>Jogo base e expansão</b> aparecem separados.</li>
-  </ul></section>
-</div></main>
+ </details>
+</main>
 <footer><div class="in">
  <span>Elite Boardgamers</span><a href="../noticias/">Notícias</a><a href="../resenhas/">Resenhas</a><a href="../como-jogar/">Como jogar</a><a href="../lancamentos/">Lançamentos</a><a href="../consulta/">Consulta Golden Geek</a><a href="../black/">Black de Verdade</a><a href="../jogos-de-tabuleiro/">Guia de jogos de tabuleiro</a><a href="../premios/">Prêmios</a><a href="../politica-editorial/">Política editorial</a>
  <a href="https://www.instagram.com/eliteboardgamers/" target="_blank" rel="noopener">Instagram @eliteboardgamers</a><a href="https://chat.whatsapp.com/IgQQkJdSkzHBaEq3UwFeAo" target="_blank" rel="noopener">Grupo do WhatsApp</a>
@@ -398,6 +1222,21 @@ document.addEventListener('click',async ev=>{const c=ev.target.closest('.cpw');i
 const poe=()=>{const on=scrollY>500&&!vis.size;l.classList.toggle('fora',!on);l.inert=!on;document.body.classList.toggle('lt-on',on)};
 const io=new IntersectionObserver(es=>{es.forEach(e=>e.isIntersecting?vis.add(e.target):vis.delete(e.target));poe()});
 document.querySelectorAll('.convite,footer').forEach(x=>io.observe(x));addEventListener('scroll',poe,{passive:true});poe()})()</script>
+<script>
+(()=>{const f=document.querySelector('.bk-filtros');if(!f)return;f.hidden=false;
+const ul=document.querySelector('.ofertas'),itens=[...ul.children],cont=f.querySelector('.bk-cont'),vazio=document.querySelector('.ofertas-vazio');
+let tipo='',ord='desc';
+const aplica=()=>{const q=f.querySelector('input[type=search]').value.trim().toLowerCase(),rec=f.querySelector('.bk-chk input').checked;
+ const chave={desc:x=>-x.dataset.desc,eco:x=>-x.dataset.eco,bgg:x=>-x.dataset.bgg,por:x=>+x.dataset.por}[ord];
+ itens.sort((a,b)=>chave(a)-chave(b)).forEach(x=>ul.append(x));let n=0;
+ itens.forEach(x=>{const ok=(!tipo||x.dataset.tipo===tipo)&&(!rec||x.dataset.rec==='1')&&(!q||x.dataset.busca.includes(q));x.hidden=!ok;n+=ok});
+ cont.textContent=n+(n===1?' jogo':' jogos');vazio.hidden=n>0};
+f.querySelectorAll('.seg button').forEach(b=>b.addEventListener('click',()=>{tipo=b.dataset.tipo;f.querySelectorAll('.seg button').forEach(o=>o.setAttribute('aria-pressed',o===b));aplica()}));
+f.querySelector('select').addEventListener('change',e=>{ord=e.target.value;aplica()});
+f.querySelector('.bk-chk input').addEventListener('change',aplica);f.querySelector('input[type=search]').addEventListener('input',aplica);aplica()})();
+document.addEventListener('click',async e=>{const b=e.target.closest('.cup-cod');if(!b)return;const s=b.querySelector('span');
+ try{await navigator.clipboard.writeText(b.dataset.cod);s.textContent='Copiado'}catch(_){s.textContent='Selecione e copie'}setTimeout(()=>s.textContent='Copiar',2200)});
+</script>
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "b37421bd1ade44f1a59e46b96626bf03"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>
