@@ -6,8 +6,8 @@
  "titulo_seo": "Harmonies: Crescendo ganha preço no Brasil",
  "selo": "Para fãs do jogo base",
  "editora": "Asmodee",
- "lide": "A Asmodee incluiu no catálogo do seu site, em 26/10/2026, Harmonies: Crescendo, segunda expansão do vencedor do Golden Geek, por R$ 159,99, e Bang! Dice Explosion, caixa que junta o jogo de dados de Bang! a duas expansões, por R$ 329,99. Em 03/11/2026, as duas páginas apareciam sem estoque e sem data de chegada às lojas.",
- "por_que_importa": "Harmonies saiu no Brasil em 2024 e agora ganha a segunda expansão em menos de um mês, logo depois de Pulsar. É a editora dizendo que o jogo vende. O problema é a conta: R$ 159,99 por três módulos é mais da metade do preço do jogo base, e a única resenha que achamos não quer jogar com dois deles.",
+ "lide": "A Asmodee incluiu no catálogo do seu site, em 26/10/2026, Harmonies: Crescendo, segunda expansão do vencedor do Golden Geek, por R$ 159,99, e Bang! Dice Explosion, caixa que junta o jogo de dados de Bang! a duas expansões, por R$ 329,99. O Spoiler Board da editora previa as duas para outubro; em 03/11/2026, as páginas apareciam sem estoque.",
+ "por_que_importa": "Harmonies saiu no Brasil em 2024 e agora ganha a segunda expansão logo depois de Pulsar, lançada em outubro. É a editora dizendo que o jogo vende. O problema é a conta: R$ 159,99 por três módulos é mais da metade do preço do jogo base, e a única resenha que achamos não quer jogar com dois deles.",
  "numeros": [
   [
    "R$ 159,99",
@@ -32,9 +32,9 @@
  ],
  "corpo": [
   "Crescendo traz três módulos que podem entrar separados ou juntos: Santuários, peças que se completam com pilhas de quatro fichas e pontuam pelas cores ao redor; Sussurros, dez cartas de pontuação fácil com cubos próprios; e quatro tabuleiros pessoais novos, com os lados C e D, que mudam a pontuação de cidades, florestas e campos. Exige o jogo base e funciona com Pulsar. A Asmodee indica de 1 a 4 jogadores e 30 minutos.",
-  "Bang! Dice Explosion, de Michael Palm e Lukas Zach, saiu em 2024 na Itália. A caixa reúne o jogo de dados de Bang!, as expansões Old Saloon e Undead or Alive e quatro personagens novos, segundo a Asmodee."
+  "Bang! Dice Explosion, de Michael Palm e Lukas Zach, saiu em 2024 lá fora. Segundo a Asmodee, a caixa reúne o jogo de dados de Bang!, duas expansões e quatro personagens novos, para 3 a 8 jogadores."
  ],
- "no_brasil": "As duas caixas são edições da Asmodee em português, com preço sugerido no site da editora desde 26/10/2026. Em 03/11/2026, as páginas não tinham estoque nem data de lançamento, e não encontramos oferta em lojas brasileiras no ComparaJogos. O jogo base de Harmonies custava entre R$ 254 e R$ 299 em 29/10/2026.",
+ "no_brasil": "As duas caixas são edições da Asmodee em português, com preço sugerido no site da editora desde 26/10/2026 e previsão de lançamento para outubro no Spoiler Board. Em 03/11/2026, as páginas não tinham estoque, e não encontramos oferta em lojas brasileiras no ComparaJogos. O jogo base de Harmonies custava entre R$ 254 e R$ 299 em 29/10/2026.",
  "critica": [
   {
    "fonte": "Geeks Under Grace",
@@ -61,6 +61,11 @@
   {
    "nome": "Asmodee: Bang! Dice Explosion",
    "url": "https://www.asmodee.com.br/bang-dice-explosion/produto/BGD101",
+   "data": "03/11/2026"
+  },
+  {
+   "nome": "Asmodee: Spoiler Board",
+   "url": "https://www.portal.asmodee.com.br/spoilerboard",
    "data": "03/11/2026"
   },
   {
@@ -105,7 +110,7 @@
    "Lançamento anunciado no Brasil, com preço novo (4)",
    "Jogo que já tem resenha nossa: Harmonies (3)",
    "Jogo de designer premiado: Johan Benvenuto, Golden Geek 2024 com Harmonies (3)",
-   "Confirmada por duas fontes: Asmodee e Poltrona Nerd (2)"
+   "Confirmada por duas fontes: site e Spoiler Board da Asmodee, Poltrona Nerd (2)"
   ]
  },
  "ids_ludopedia": [
