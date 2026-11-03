@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-11-02",
+ "atualizado_em": "2026-11-03",
  "regras": {
   "premios": [
    "Golden Geek",
@@ -273,6 +273,26 @@
    "jogo": "Splendor Duel",
    "url": "https://eliteboardgamers.com.br/splendor-duel/",
    "data": "2026-11-02"
+  },
+  {
+   "jogo": "Arcs: Conflito e Colapso no Vértice",
+   "url": "https://eliteboardgamers.com.br/arcs/",
+   "data": "2026-11-03"
+  },
+  {
+   "jogo": "Earth",
+   "url": "https://eliteboardgamers.com.br/earth/",
+   "data": "2026-11-03"
+  },
+  {
+   "jogo": "Century: Spice Road",
+   "url": "https://eliteboardgamers.com.br/century-spice-road/",
+   "data": "2026-11-03"
+  },
+  {
+   "jogo": "Radlands",
+   "url": "https://eliteboardgamers.com.br/radlands/",
+   "data": "2026-11-03"
   }
  ],
  "jogos": [
@@ -2509,7 +2529,7 @@
      "categoria": "Inovação",
      "colocacao": 1,
      "resultado": "vencedor",
-     "fonte": "https://eliteboardgamers.com.br/"
+     "fonte": "https://boardgamewire.com/index.php/2025/05/08/arcs-wins-big-in-2024-golden-geek-awards-seti-brings-home-pair-of-prizes/"
     },
     {
      "premio": "Golden Geek",
@@ -2517,7 +2537,7 @@
      "categoria": "Wargame",
      "colocacao": 1,
      "resultado": "vencedor",
-     "fonte": "https://eliteboardgamers.com.br/"
+     "fonte": "https://boardgamewire.com/index.php/2025/05/08/arcs-wins-big-in-2024-golden-geek-awards-seti-brings-home-pair-of-prizes/"
     },
     {
      "premio": "Golden Geek",
@@ -2525,7 +2545,7 @@
      "categoria": "Jogo do Ano pesado",
      "colocacao": 2,
      "resultado": "top 3",
-     "fonte": "https://eliteboardgamers.com.br/"
+     "fonte": "https://boardgamewire.com/index.php/2025/05/08/arcs-wins-big-in-2024-golden-geek-awards-seti-brings-home-pair-of-prizes/"
     },
     {
      "premio": "Golden Geek",
@@ -2533,10 +2553,10 @@
      "categoria": "Arte",
      "colocacao": 3,
      "resultado": "top 3",
-     "fonte": "https://eliteboardgamers.com.br/"
+     "fonte": "https://boardgamewire.com/index.php/2025/05/08/arcs-wins-big-in-2024-golden-geek-awards-seti-brings-home-pair-of-prizes/"
     }
    ],
-   "status": "na_fila",
+   "status": "publicado",
    "prioridade": 37,
    "premios_distintos": 1,
    "carro_chefe": true,
@@ -2720,7 +2740,7 @@
      "categoria": "Jogo do Ano médio",
      "colocacao": 1,
      "resultado": "vencedor",
-     "fonte": "https://eliteboardgamers.com.br/"
+     "fonte": "https://boardgamewire.com/index.php/2024/05/15/hegemony-lives-up-to-its-name-by-dominating-latest-golden-geek-awards/"
     },
     {
      "premio": "Golden Geek",
@@ -2728,7 +2748,7 @@
      "categoria": "Arte",
      "colocacao": 2,
      "resultado": "top 3",
-     "fonte": "https://eliteboardgamers.com.br/"
+     "fonte": "https://boardgamewire.com/index.php/2024/05/15/hegemony-lives-up-to-its-name-by-dominating-latest-golden-geek-awards/"
     },
     {
      "premio": "Golden Geek",
@@ -2736,10 +2756,10 @@
      "categoria": "Solo",
      "colocacao": 3,
      "resultado": "top 3",
-     "fonte": "https://eliteboardgamers.com.br/"
+     "fonte": "https://boardgamewire.com/index.php/2024/05/15/hegemony-lives-up-to-its-name-by-dominating-latest-golden-geek-awards/"
     }
    ],
-   "status": "na_fila",
+   "status": "publicado",
    "prioridade": 42,
    "premios_distintos": 1,
    "carro_chefe": true,
@@ -3370,7 +3390,7 @@
      "categoria": "Cartas",
      "colocacao": 1,
      "resultado": "vencedor",
-     "fonte": "https://eliteboardgamers.com.br/"
+     "fonte": "https://brettspielbox.de/12th-annual-golden-geek-awards-winners-2017/"
     },
     {
      "premio": "Golden Geek",
@@ -3378,10 +3398,10 @@
      "categoria": "Família",
      "colocacao": 3,
      "resultado": "top 3",
-     "fonte": "https://eliteboardgamers.com.br/"
+     "fonte": "https://brettspielbox.de/12th-annual-golden-geek-awards-winners-2017/"
     }
    ],
-   "status": "na_fila",
+   "status": "publicado",
    "prioridade": 78,
    "premios_distintos": 1,
    "carro_chefe": false,
@@ -4036,10 +4056,10 @@
      "categoria": "2 jogadores",
      "colocacao": 1,
      "resultado": "vencedor",
-     "fonte": "https://eliteboardgamers.com.br/"
+     "fonte": "https://www.tabletopgaming.co.uk/news/golden-geek-winners-announced-for-2021-radlands-arnak-and-sleeping-gods-amongst-the-winners/"
     }
    ],
-   "status": "na_fila",
+   "status": "publicado",
    "prioridade": 85,
    "premios_distintos": 1,
    "carro_chefe": false,
@@ -6281,10 +6301,11 @@
      "fonte": "https://fr.wikipedia.org/wiki/As_d%27Or"
     }
    ],
-   "status": "na_fila",
+   "status": "publicado",
    "premios_distintos": 1,
    "prioridade": 187,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "slug": "arcs"
   },
   {
    "jogo": "Boss Fighters QR",
