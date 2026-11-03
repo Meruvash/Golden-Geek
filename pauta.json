@@ -3232,10 +3232,14 @@
      "fonte": "https://www.tabletopgaming.co.uk/news/golden-geek-winners-announced-for-2021-radlands-arnak-and-sleeping-gods-amongst-the-winners/"
     }
    ],
-   "status": "na_fila",
+   "status": "sem_fotos",
    "prioridade": 31,
    "premios_distintos": 1,
-   "carro_chefe": true
+   "carro_chefe": true,
+   "fotos": {
+    "verificado_em": "2026-11-03",
+    "obs": "Kosmos (kosmos.de, página Mission Tiefsee: só renders, caixa e catálogo com texto), Thames & Kosmos EUA (store.thamesandkosmos.com: só renders em fundo branco), IELLO França (página Mission sous-marine: só caixa; fotos de mesa são do The Crew original), 999 Games Holanda (só caixa), Galápagos (bloqueia robôs); sem página no Spiel des Jahres"
+   }
   },
   {
    "jogo": "Forgotten Waters",
