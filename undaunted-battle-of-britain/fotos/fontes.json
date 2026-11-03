@@ -1,0 +1,57 @@
+{
+ "slug": "undaunted-battle-of-britain",
+ "usar_na_pagina": true,
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 1263,
+   "altura": 1600,
+   "editora": "Osprey Games",
+   "credito": "Imagem: Osprey Games",
+   "pagina": "https://www.ospreypublishing.com/us/osprey-blog/2023/undaunted-battle-of-britain-design-diary/",
+   "imagem": "https://www.ospreypublishing.com/media/ajolpfab/1-undaunted-bob-box-copy.jpg",
+   "baixada_em": "2026-11-03",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/mesa-1.webp",
+   "tipo": "mesa",
+   "largura": 1600,
+   "altura": 1067,
+   "editora": "Osprey Games",
+   "credito": "Imagem: Osprey Games",
+   "pagina": "https://www.ospreypublishing.com/us/osprey-blog/2023/undaunted-battle-of-britain-design-diary/",
+   "imagem": "https://www.ospreypublishing.com/media/m5bepjgn/5-undaunted-bob-game-spread-copy.jpg",
+   "baixada_em": "2026-11-03",
+   "aprovada": true,
+   "principal": true
+  },
+  {
+   "arquivo": "fotos/jogabilidade-1.webp",
+   "tipo": "jogabilidade",
+   "largura": 1600,
+   "altura": 1067,
+   "editora": "Osprey Games",
+   "credito": "Imagem: Osprey Games",
+   "pagina": "https://www.ospreypublishing.com/us/osprey-blog/2023/undaunted-battle-of-britain-design-diary/",
+   "imagem": "https://www.ospreypublishing.com/media/nvcf0ebz/3-undaunted-bob-gameplay-copy.jpg",
+   "baixada_em": "2026-11-03",
+   "aprovada": true,
+   "jogar": true
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 1600,
+   "altura": 1600,
+   "editora": "Osprey Games",
+   "credito": "Imagem: Osprey Games",
+   "pagina": "https://www.ospreypublishing.com/us/osprey-blog/2023/undaunted-battle-of-britain-design-diary/",
+   "imagem": "https://www.ospreypublishing.com/media/excc5m4w/2-undaunted-bob-box-plus-components-copy.jpg",
+   "baixada_em": "2026-11-03",
+   "aprovada": true,
+   "fora": true
+  }
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "slug": "undaunted-stalingrad",
+ "usar_na_pagina": true,
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 792,
+   "altura": 842,
+   "editora": "Osprey Games",
+   "credito": "Imagem: Osprey Games",
+   "pagina": "https://www.ospreypublishing.com/us/osprey-blog/2022/undaunted-stalingrad-design-diary/",
+   "imagem": "https://www.ospreypublishing.com/media/c4zb3c0f/stalingrad-dev-diary-2.jpg",
+   "baixada_em": "2026-11-03",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/mesa-1.webp",
+   "tipo": "mesa",
+   "largura": 1600,
+   "altura": 1067,
+   "editora": "Osprey Games",
+   "credito": "Imagem: Osprey Games",
+   "pagina": "https://www.ospreypublishing.com/uk/osprey-blog/2022/undaunted-stalingrad-launch-day/",
+   "imagem": "https://www.ospreypublishing.com/media/xdtflefb/7-undaunted-stalingrad-lifestyle-v1-copy.jpg",
+   "baixada_em": "2026-11-03",
+   "aprovada": true,
+   "principal": true
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 1600,
+   "altura": 1600,
+   "editora": "Osprey Games",
+   "credito": "Imagem: Osprey Games",
+   "pagina": "https://www.ospreypublishing.com/us/osprey-blog/2022/undaunted-stalingrad-design-diary/",
+   "imagem": "https://www.ospreypublishing.com/media/kmddd5o0/stalingrad-dev-diary-7.jpg",
+   "baixada_em": "2026-11-03",
+   "aprovada": true,
+   "jogar": true
+  }
+ ]
+}

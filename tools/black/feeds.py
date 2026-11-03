@@ -6,6 +6,7 @@ Cada feed é baixado no máximo uma vez a cada 12 horas (guardado em conteudo/bl
 cujo nome bate com um jogo acompanhado entram como oferta daquela loja, com fonte "feed da loja".
 """
 import datetime as dt
+import html as htmllib
 import json
 import re
 import sys
@@ -65,12 +66,76 @@ def _baixar(loja, url):
     return itens
 
 
+PLATAFORMAS = ROOT / "conteudo" / "black" / "catalogos.json"
+
+
+def _catalogo_publico(dom):
+    """Catálogo que a própria loja publica sem login: WooCommerce (Store API) ou Shopify (products.json).
+    Só lê se o robots.txt permitir; descobre a plataforma uma vez por semana; até 10 páginas de produtos."""
+    reg = json.loads(PLATAFORMAS.read_text(encoding="utf-8")) if PLATAFORMAS.exists() else {}
+    info = reg.get(dom, {})
+    hoje = dt.date.today()
+    if not info.get("testado") or (hoje - dt.date.fromisoformat(info["testado"])).days >= 7:
+        info = {"testado": hoje.isoformat(), "tipo": None}
+        for tipo, caminho in (("woo", "/wp-json/wc/store/v1/products?per_page=1"), ("shopify", "/products.json?limit=1")):
+            h = lojas.pagina(f"https://{dom}{caminho}")
+            if h and h.strip()[:1] in "[{":
+                try:
+                    json.loads(h)
+                    info["tipo"] = tipo
+                    break
+                except ValueError:
+                    pass
+        reg[dom] = info
+        PLATAFORMAS.write_text(json.dumps(reg, ensure_ascii=False, indent=1, sort_keys=True) + "\n", encoding="utf-8")
+    if not info.get("tipo"):
+        return []
+    arq = CACHE / f"{dom}.json"
+    if arq.exists():
+        d = json.loads(arq.read_text(encoding="utf-8"))
+        if d.get("hora", "") >= (dt.datetime.now(dt.timezone.utc) - VALIDADE).isoformat():
+            return d["itens"]
+    itens = []
+    for pg in range(1, 11):
+        if info["tipo"] == "woo":
+            h = lojas.pagina(f"https://{dom}/wp-json/wc/store/v1/products?per_page=100&page={pg}")
+            lote = json.loads(h) if h and h.strip()[:1] == "[" else []
+            for p in lote:
+                pr = p.get("prices") or {}
+                dec = 10 ** int(pr.get("currency_minor_unit", 2))
+                por = int(pr.get("price") or 0) / dec
+                de = int(pr.get("regular_price") or 0) / dec
+                itens.append({"titulo": htmllib.unescape(p.get("name", "")), "url": p.get("permalink"), "de": de or por, "por": por,
+                              "estoque": bool(p.get("is_in_stock")), "gtin": None})
+        else:
+            h = lojas.pagina(f"https://{dom}/products.json?limit=250&page={pg}")
+            lote = (json.loads(h).get("products") or []) if h and h.strip()[:1] == "{" else []
+            for p in lote:
+                v = (p.get("variants") or [{}])[0]
+                por = float(v.get("price") or 0)
+                itens.append({"titulo": p.get("title", ""), "url": f"https://{dom}/products/{p.get('handle')}",
+                              "de": float(v.get("compare_at_price") or 0) or por, "por": por, "estoque": bool(v.get("available")), "gtin": v.get("barcode")})
+        if len(lote) < (100 if info["tipo"] == "woo" else 250):
+            break
+    CACHE.mkdir(parents=True, exist_ok=True)
+    arq.write_text(json.dumps({"loja": dom, "hora": dt.datetime.now(dt.timezone.utc).isoformat(timespec="minutes"), "itens": itens},
+                              ensure_ascii=False) + "\n", encoding="utf-8")
+    print(f"   catálogo público de {dom} ({info['tipo']}): {len(itens)} produtos")
+    return itens
+
+
 def juntar(hist, ofertas):
     """Acrescenta às ofertas de hoje os produtos dos feeds que batem com jogos acompanhados."""
     cad = json.loads(CADASTRO.read_text(encoding="utf-8")) if CADASTRO.exists() else []
-    if not cad:
-        print("-- feeds: nenhum feed de loja cadastrado ainda")
-        return
+    # lojas que já aparecem no radar: testa se publicam o catálogo sem login (uma vez por semana)
+    doms = {}
+    for of in ofertas.values():
+        for o in of.get("ofertas", []):
+            d = urlparse(o.get("url") or "").netloc.lower()
+            if d and not lojas.NUNCA.search(d) and o.get("tipo") == "LINK":
+                doms.setdefault(d, o.get("loja") or d)
+    fontes = [(f["loja"], lambda f=f: _baixar(f["loja"], f["url"]), "feed da loja") for f in cad]
+    fontes += [(nome, lambda d=d: _catalogo_publico(d), "catálogo público da loja") for d, nome in sorted(doms.items())]
     nomes = {}
     for s, h in hist.items():
         k = chave(h.get("nome"))
@@ -78,8 +143,8 @@ def juntar(hist, ofertas):
             nomes.setdefault(k, s)
     agora = dt.datetime.now(dt.timezone.utc).isoformat(timespec="minutes")
     total = 0
-    for f in cad:
-        for it in _baixar(f["loja"], f["url"]):
+    for loja_nome, pegar, fonte in fontes:
+        for it in pegar():
             if not it["estoque"] or not it["por"]:
                 continue
             s = nomes.get(chave(it["titulo"]))
@@ -87,7 +152,7 @@ def juntar(hist, ofertas):
                 continue
             lista = ofertas[s]["ofertas"]
             lista[:] = [o for o in lista if o.get("url") != it["url"]]
-            lista.append({"loja": f["loja"], "loja_id": urlparse(it["url"]).netloc, "tipo": "LINK", "vendedor": None,
+            lista.append({"loja": loja_nome, "loja_id": urlparse(it["url"]).netloc, "tipo": "LINK", "vendedor": None,
                           "de": it["de"], "por": it["por"], "url": it["url"], "atualizado": agora, "fonte": "feed da loja"})
             total += 1
-    print(f"ok feeds: {len(cad)} lojas, {total} ofertas casadas com jogos acompanhados")
+    print(f"ok feeds e catálogos: {len(cad)} feeds cadastrados, {len(doms)} lojas testadas, {total} ofertas casadas com jogos acompanhados")

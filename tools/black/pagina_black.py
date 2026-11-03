@@ -339,9 +339,20 @@ def build(radar_itens, armadilhas, quase=()):
                          f'<a href="{e(c["pagina"])}" target="_blank" rel="noopener nofollow">Ver na loja ↗</a></li>')
     pb_arq = ROOT / "conteudo" / "black" / "promobit.json"
     pbs = json.loads(pb_arq.read_text(encoding="utf-8")) if pb_arq.exists() else {}
+    cm_arq = ROOT / "conteudo" / "black" / "comunidade.json"  # canais públicos do Telegram
+    if cm_arq.exists():
+        pbs.update(json.loads(cm_arq.read_text(encoding="utf-8")))
     hist = radar.ler(radar.HIST, {})
     pb_html = ""
-    for v in sorted(pbs.values(), key=lambda v: v.get("publicado") or "", reverse=True):
+    def _real(v):
+        h = hist.get(v.get("jogo") or "")
+        if h and h.get("pontos") and v.get("preco") and v.get("tipo_preco") != "COUPON":
+            ref = radar.aparada(h["pontos"].values())
+            return (ref - v["preco"]) / ref
+        return None
+    # primeiro os achados com desconto real de 15% ou mais sobre a nossa base; depois os mais recentes (até 80)
+    ordem = sorted(pbs.values(), key=lambda v: ((_real(v) or -1) >= radar.QUASE, v.get("publicado") or ""), reverse=True)[:80]
+    for v in ordem:
         real = ""
         h = hist.get(v.get("jogo") or "")
         if h and h.get("pontos") and v.get("preco") and v.get("tipo_preco") != "COUPON":
@@ -355,7 +366,8 @@ def build(radar_itens, armadilhas, quase=()):
                     f'<p class="cup-txt">{e(v.get("loja") or "")}{f" · cupom <b>{e(v['cupom'])}</b>" if v.get("cupom") else ""} · '
                     f'{e(real) if real else "jogo fora da nossa base"}</p>'
                     f'<p class="cup-st">Postada {hora(v.get("publicado") or v["visto"], agora_)}. Vendedor e validade não conferidos.</p>'
-                    f'<a href="{e(v["link"])}" target="_blank" rel="noopener nofollow">Ver no Promobit ↗</a></li>')
+                    + (f'<a href="{e(v["link_loja"])}" target="_blank" rel="noopener nofollow">Ver na loja ↗</a> ' if v.get("link_loja") else "")
+                    + f'<a href="{e(v["link"])}" target="_blank" rel="noopener nofollow">Ver no {e((v.get("fonte") or "Promobit").removeprefix("Telegram: "))} ↗</a></li>')
     arm_html = "".join(
         f'<li class="arm"><p style="margin:0"><b>{e(nome(x))}</b> em {e(x["loja"])}</p><div class="arm-n">'
         f'<span class="arm-fake">A loja anuncia <s>−{pct((x["de"] - x["por"]) / x["de"])}</s></span><span class="arm-real">Desconto real: {pct(max(x["desc"], 0))}</span></div>'
@@ -411,8 +423,8 @@ def build(radar_itens, armadilhas, quase=()):
   {f'<ul class="cupons">{cps_html}</ul>' if cps_html else '<p class="vazio">Nenhum cupom anunciado nas lojas do radar nesta leitura.</p>'}
  </section>
  <section id="comunidade" aria-labelledby="h-pb">
-  <h2 id="h-pb">Achados da comunidade (Promobit)</h2>
-  <p class="sub">Promoções de jogos de tabuleiro postadas por membros do Promobit nos últimos 7 dias, inclusive de Amazon, Mercado Livre, Magalu e Americanas. O robô não confere o vendedor nem se a promoção ainda vale: confira na loja. Quando o jogo está na nossa base, mostramos o desconto real sobre a média.</p>
+  <h2 id="h-pb">Achados da comunidade</h2>
+  <p class="sub">Promoções de jogos de tabuleiro postadas nos últimos 7 dias no Promobit e em canais públicos do Telegram (Compara Jogos, Ludofertas, BG Turbo Ofertas, Board Oferta, GameBox Tabuleiro), inclusive de Amazon, Mercado Livre e Magalu. O robô não confere o vendedor nem se a promoção ainda vale: confira na loja. Quando o jogo está na nossa base, mostramos o desconto real sobre a média.</p>
   {f'<ul class="cupons">{pb_html}</ul>' if pb_html else '<p class="vazio">Nenhuma promoção de jogo de tabuleiro postada nos últimos 7 dias.</p>'}
  </section>
  <section aria-labelledby="h-arm">

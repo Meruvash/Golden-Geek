@@ -2844,10 +2844,14 @@
      "fonte": "https://brettspielbox.de/15th-annual-golden-geek-awards-sieger/"
     }
    ],
-   "status": "na_fila",
+   "status": "sem_fotos",
    "prioridade": 64,
    "premios_distintos": 1,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "fotos": {
+    "verificado_em": "2026-11-03",
+    "obs": "Eagle-Gryphon Games (eagle-gryphon.com: só caixas e renders 3D em fundo branco), Skellig Games (edição alemã: site sem sitemap e sem página do jogo localizada); sem edição nacional confirmada"
+   }
   },
   {
    "jogo": "Brass: Birmingham",
@@ -2917,10 +2921,14 @@
      "fonte": "https://eliteboardgamers.com.br/"
     }
    ],
-   "status": "na_fila",
+   "status": "sem_fotos",
    "prioridade": 65,
    "premios_distintos": 1,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "fotos": {
+    "verificado_em": "2026-11-03",
+    "obs": "Fantasy Flight Games (sem página do jogo no sitemap; KeyForge passou para a Ghost Galaxy), Ghost Galaxy (keyforging.com, página do Starter Set de Call of the Archons: nenhuma imagem utilizável), Galápagos (bloqueia robôs)"
+   }
   },
   {
    "jogo": "Star Wars: Rebellion",
@@ -2953,10 +2961,14 @@
      "fonte": "https://eliteboardgamers.com.br/"
     }
    ],
-   "status": "na_fila",
+   "status": "sem_fotos",
    "prioridade": 66,
    "premios_distintos": 1,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "fotos": {
+    "verificado_em": "2026-11-03",
+    "obs": "Fantasy Flight Games (só caixas), Asmodee UK (página FFGSW03: só renders em fundo branco), Asmodee Canada (sem página do jogo), Galápagos (bloqueia robôs)"
+   }
   },
   {
    "jogo": "Slay the Spire: The Board Game",
@@ -2981,10 +2993,14 @@
      "fonte": "https://eliteboardgamers.com.br/"
     }
    ],
-   "status": "na_fila",
+   "status": "sem_fotos",
    "prioridade": 67,
    "premios_distintos": 1,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "fotos": {
+    "verificado_em": "2026-11-03",
+    "obs": "Contention Games (contentiongames.com, páginas /games/slay/ e /slay/: só caixa), Pegasus/Nice Games (edição alemã: sem página no site da Pegasus); sem edição nacional localizada"
+   }
   },
   {
    "jogo": "So Clover!",
@@ -3038,10 +3054,14 @@
      "fonte": "https://eliteboardgamers.com.br/"
     }
    ],
-   "status": "na_fila",
+   "status": "sem_fotos",
    "prioridade": 68,
    "premios_distintos": 1,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "fotos": {
+    "verificado_em": "2026-11-03",
+    "obs": "Awaken Realms (awakenrealms.com, página do jogo: só arte), Ravensburger (ravensburger.de, Special Edition 27564: só foto de catálogo em fundo branco, 609 px); sem página no Spiel des Jahres para a Special Edition"
+   }
   },
   {
    "jogo": "Undaunted: Battle of Britain",
@@ -3069,7 +3089,8 @@
    "status": "na_fila",
    "prioridade": 69,
    "premios_distintos": 1,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "slug": "undaunted-battle-of-britain"
   },
   {
    "jogo": "Cat in the Box: Deluxe Edition",
@@ -3184,7 +3205,8 @@
    "status": "na_fila",
    "prioridade": 72,
    "premios_distintos": 1,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "slug": "undaunted-stalingrad"
   },
   {
    "jogo": "Final Girl",

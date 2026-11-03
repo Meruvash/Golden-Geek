@@ -24,7 +24,7 @@ UA = "EliteBoardgamers/1.0 (+https://eliteboardgamers.com.br/black/robo/)"
 AGENTES = ("EliteBoardgamers", "ClaudeBot", "Claude-User")
 PAUSA_LOJA = 6.0
 LIMITE_DIA = 60          # páginas por loja por dia, somando todas as leituras
-LIMITE_ESPECIAL = {"www.promobit.com.br": 400}  # agregador grande: ~12 páginas por leitura, de hora em hora
+LIMITE_ESPECIAL = {"www.promobit.com.br": 400, "t.me": 400}  # agregador grande: ~12 páginas por leitura, de hora em hora
 DESCANSO = dt.timedelta(hours=48)
 REUSO = dt.timedelta(hours=12)
 ESTADO = Path(__file__).resolve().parents[2] / "conteudo" / "black" / "lojas_estado.json"

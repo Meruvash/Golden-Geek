@@ -270,7 +270,8 @@
   "estrategia": "sitemap+html",
   "press_kit": "https://awakenrealms.com/download",
   "paginas": {
-   "nemesis": "https://awakenrealms.com/games/awaken-realms/nemesis"
+   "nemesis": "https://awakenrealms.com/games/awaken-realms/nemesis",
+   "the-castles-of-burgundy": "https://awakenrealms.com/games/awaken-realms/castles-of-burgundy"
   },
   "status": "ok",
   "obs": "site montado com JavaScript: o robô abre as páginas no navegador",
@@ -950,7 +951,9 @@
   "plataforma": "html",
   "estrategia": "sitemap+html",
   "press_kit": "https://www.ravensburger-gruppe.de/de/presse/index.html",
-  "paginas": {},
+  "paginas": {
+   "the-castles-of-burgundy": "https://www.ravensburger.de/de-DE/produkte/spiele/spiele-fuer-erwachsene/the-castles-of-burgundy-special-edition-27564"
+  },
   "status": "ok",
   "obs": "",
   "robots": {
@@ -1209,12 +1212,12 @@
   "site": "https://www.schmidtspiele.de",
   "plataforma": "html",
   "estrategia": "sitemap+html",
-  "press_kit": "https://www.b2k-media.de",
+  "press_kit": null,
   "paginas": {
    "thats-pretty-clever": "https://www.schmidtspiele.de/details-93/fruehjahrsneuheit-ganz-schoen-clever.html"
   },
   "status": "ok",
-  "obs": "",
+  "obs": "b2k-media.de (antigo press_kit) é uma agência de sites de Berlim, não a imprensa da Schmidt; contato do impressum: info@schmidtspiele.de.",
   "robots": {
    "status": 200,
    "crawl_delay": null,
@@ -1333,7 +1336,9 @@
   "plataforma": "woocommerce",
   "estrategia": "sitemap+html",
   "press_kit": null,
-  "paginas": {},
+  "paginas": {
+   "slay-the-spire-the-board-game": "https://contentiongames.com/slay/"
+  },
   "status": "ok",
   "obs": "",
   "robots": {
@@ -1689,6 +1694,55 @@
    "status": 200,
    "crawl_delay": null,
    "sitemaps": [],
+   "verificado_em": "2026-11-03"
+  }
+ },
+ "keyforging.com": {
+  "nome": "Ghost Galaxy (KeyForge)",
+  "apelidos": [
+   "Ghost Galaxy (KeyForge)"
+  ],
+  "site": "https://keyforging.com",
+  "plataforma": "wordpress",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {
+   "keyforge-call-of-the-archons": "https://keyforging.com/products/keyforge-call-of-the-archons-starter-set/"
+  },
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://keyforging.com/wp-sitemap.xml"
+   ],
+   "verificado_em": "2026-11-03"
+  }
+ },
+ "ospreypublishing.com": {
+  "nome": "Osprey Games",
+  "apelidos": [
+   "Osprey Games"
+  ],
+  "site": "https://www.ospreypublishing.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://www.ospreypublishing.com/media/p00nx5vg/modern-slavery-statement-2026.pdf",
+  "paginas": {
+   "undaunted-battle-of-britain": "https://www.ospreypublishing.com/us/osprey-blog/2023/undaunted-battle-of-britain-design-diary/",
+   "undaunted-stalingrad": "https://www.ospreypublishing.com/uk/osprey-blog/2022/undaunted-stalingrad-launch-day/"
+  },
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://ospreypublishing.com/uk/sitemap/",
+    "https://ospreypublishing.com/ca/sitemap/",
+    "https://ospreypublishing.com/us/sitemap/"
+   ],
    "verificado_em": "2026-11-03"
   }
  }

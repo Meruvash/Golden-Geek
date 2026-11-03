@@ -459,6 +459,8 @@ def main(robo=None, acao=None):
             promobit.ler_cupons()
         else:
             promobit.ler_ofertas()
+            import telegram
+            telegram.ler()
         lojas.salvar()
     import pagina_black
     with _TravaDados():

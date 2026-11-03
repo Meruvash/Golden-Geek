@@ -504,7 +504,16 @@ def baixar_candidatas(cli, candidatas, pasta, lado_min=LADO_MIN, piso=LADO_PISO)
     boas, hashes, avisos = [], [], []
     for c in candidatas[:MAX_CANDIDATAS]:
         try:
-            dados = c.pop("_dados", None) or cli.get(c["url"], binario=True)[1]
+            try:
+                dados = c.pop("_dados", None) or cli.get(c["url"], binario=True)[1]
+            except Bloqueado:
+                # robots.txt que proíbe só a variante com parâmetros (ex.: Osprey, "?rmode=max"): tenta a URL limpa,
+                # que o próprio cli.get confere de novo no robots.txt
+                limpa = c["url"].split("?", 1)[0]
+                if limpa == c["url"]:
+                    raise
+                dados = cli.get(limpa, binario=True)[1]
+                c["url"] = limpa
             im = Image.open(io.BytesIO(dados))
             im.load()
         except Bloqueado as e:
