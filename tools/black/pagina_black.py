@@ -446,10 +446,22 @@ def build(radar_itens, armadilhas):
     ld = seo.script({"@type": "CollectionPage", "@id": url, "url": url, "name": titulo, "inLanguage": "pt-BR",
                      "dateModified": agora_.isoformat(timespec="minutes")},
                     seo.trilha(("Início", f"{SITE}/"), ("Black de Verdade", url)))
-    descr = ("Radar de ofertas de jogos de tabuleiro com desconto real de 20% ou mais sobre a média aparada do histórico "
+    descr_curta = (f"{len(melhor)} jogos de tabuleiro até {pct(maior)} abaixo do preço médio real. Desconto calculado sobre o histórico, "
+                   "não sobre o preço \"de\" da loja. Atualizado a cada 30 minutos.") if melhor else None
+    descr = descr_curta or ("Radar de ofertas de jogos de tabuleiro com desconto real de 20% ou mais sobre a média aparada do histórico "
              "de preços, com nota BGG, loja, link e horário da verificação.")
+    # cartão de prévia do WhatsApp com os números e as capas das três melhores ofertas (tools/black/cartao_black.py);
+    # o ?v= muda quando o cartão muda, para o WhatsApp e as redes buscarem a imagem nova
+    og_img = f"{SITE}/consulta/capa.jpg"
+    try:
+        import hashlib
+        import cartao_black
+        arq = cartao_black.gerar(top, len(melhor), maior, agora_.strftime("%d/%m"))
+        og_img = f"{SITE}/img/black/{arq.name}?v={hashlib.md5(arq.read_bytes()).hexdigest()[:8]}"
+    except Exception as ex:  # sem o cartão, a página segue com a imagem antiga
+        print("aviso: cartão da Black não gerado:", ex)
     (ROOT / "black").mkdir(exist_ok=True)
-    (ROOT / "black" / "index.html").write_text(pagina(titulo, descr, url, f"{SITE}/consulta/capa.jpg", pre, corpo,
+    (ROOT / "black" / "index.html").write_text(pagina(titulo, descr, url, og_img, pre, corpo,
                                                       head_extra="\n" + CSS, jsonld=ld), encoding="utf-8")
     print(f"ok black/index.html: {len(melhor)} jogos no radar, {len(armadilhas)} armadilhas")
 
