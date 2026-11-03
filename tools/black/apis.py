@@ -21,7 +21,7 @@ from zoneinfo import ZoneInfo
 import requests
 
 BR = ZoneInfo("America/Sao_Paulo")
-UA = {"User-Agent": "EliteBoardgamers/1.0 (+https://eliteboardgamers.com.br)"}
+UA = {"User-Agent": "EliteBoardgamers/1.0 (+https://eliteboardgamers.com.br/black/robo/)"}
 ASIN = re.compile(r"amazon\.com\.br/(?:[^/]+/)?dp/([A-Z0-9]{10})")
 ML_PROD = re.compile(r"mercadolivre\.com\.br/(?:[^/]+/)?p/(MLB\d+)")
 LIDER = {"silver", "gold", "platinum"}  # níveis do MercadoLíder

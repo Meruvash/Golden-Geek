@@ -5,21 +5,29 @@ e lê o preço e o estoque que a loja declara nos dados estruturados da página 
 Nuvemshop, Tray, WooCommerce, VTEX e Shopify publicam), ou nas metas product:price:amount.
 
 Regras: respeita o robots.txt de cada loja para o nosso robô E para os robôs da Anthropic (se qualquer um for
-proibido, não lê); 401, 403 ou 429 marca a loja como bloqueada até o fim da leitura; no máximo uma página a cada
-2 segundos por loja. Nunca troca o User-Agent nem contorna bloqueio. Amazon, Mercado Livre, Magalu, Americanas e
+proibido, não lê); 401, 403 ou 429 deixa a loja 48 horas sem visita (depois, uma tentativa só); no máximo uma página
+a cada 6 segundos e LIMITE_DIA páginas por dia por loja; o preço lido é reaproveitado por 12 horas enquanto o preço
+informado ao Compara Jogos não muda. O robô se identifica e aponta para eliteboardgamers.com.br/black/robo/. Nunca troca o User-Agent nem contorna bloqueio. Amazon, Mercado Livre, Magalu, Americanas e
 Casas Bahia não são lidos (robots.txt proíbe ou o site bloqueia; e não dá para conferir o vendedor).
 """
+import datetime as dt
 import json
 import re
 import time
+from pathlib import Path
 import urllib.robotparser as rp
 from urllib.parse import urlparse
 
 import requests
 
-UA = "EliteBoardgamers/1.0 (+https://eliteboardgamers.com.br)"
+UA = "EliteBoardgamers/1.0 (+https://eliteboardgamers.com.br/black/robo/)"
 AGENTES = ("EliteBoardgamers", "ClaudeBot", "Claude-User")
-PAUSA_LOJA = 2.0
+PAUSA_LOJA = 6.0
+LIMITE_DIA = 60          # páginas por loja por dia, somando todas as leituras
+LIMITE_ESPECIAL = {"www.promobit.com.br": 400}  # agregador grande: ~12 páginas por leitura, de hora em hora
+DESCANSO = dt.timedelta(hours=48)
+REUSO = dt.timedelta(hours=12)
+ESTADO = Path(__file__).resolve().parents[2] / "conteudo" / "black" / "lojas_estado.json"
 NUNCA = re.compile(r"amazon\.|mercadolivre|mercadolibre|magazineluiza|magalu|americanas|casasbahia|shopee|aliexpress", re.I)
 
 _sessao = requests.Session()
@@ -27,16 +35,54 @@ _sessao.headers.update({"User-Agent": UA})
 _robots, _ultimo, _bloqueadas = {}, {}, set()
 
 
+def _carregar():
+    try:
+        return json.loads(ESTADO.read_text(encoding="utf-8"))
+    except (FileNotFoundError, ValueError):
+        return {"lojas": {}, "precos": {}}
+
+
+_estado = _carregar()
+
+
+def salvar():
+    """Grava contadores, descansos e preços lidos (chamado no fim de cada leitura)."""
+    agora = dt.datetime.now(dt.timezone.utc)
+    corte = (agora - REUSO * 4).isoformat()
+    _estado["precos"] = {u: v for u, v in _estado["precos"].items() if v.get("hora", "") >= corte}
+    ESTADO.write_text(json.dumps(_estado, ensure_ascii=False, indent=1, sort_keys=True) + "\n", encoding="utf-8")
+
+
+def _loja(dom):
+    hoje = dt.date.today().isoformat()
+    l = _estado["lojas"].setdefault(dom, {})
+    if l.get("dia") != hoje:
+        l.update({"dia": hoje, "paginas": 0})
+    return l
+
+
+def _bloquear(dom, motivo):
+    _bloqueadas.add(dom)
+    _loja(dom).update({"descanso_ate": (dt.datetime.now(dt.timezone.utc) + DESCANSO).isoformat(timespec="minutes"), "motivo": motivo})
+
+
+def em_descanso(dom):
+    ate = _loja(dom).get("descanso_ate")
+    return bool(ate and ate > dt.datetime.now(dt.timezone.utc).isoformat())
+
+
 def _pode(url):
     dom = urlparse(url).netloc.lower()
-    if NUNCA.search(dom) or dom in _bloqueadas:
+    if NUNCA.search(dom) or dom in _bloqueadas or em_descanso(dom):
+        return False
+    if _loja(dom)["paginas"] >= LIMITE_ESPECIAL.get(dom, LIMITE_DIA):
         return False
     if dom not in _robots:
         p = rp.RobotFileParser()
         try:
             r = _sessao.get(f"https://{dom}/robots.txt", timeout=20)
-            if r.status_code in (401, 403):
-                _bloqueadas.add(dom)
+            if r.status_code in (401, 403, 429):
+                _bloquear(dom, f"robots.txt respondeu {r.status_code}")
                 return False
             p.parse(r.text.splitlines() if r.status_code == 200 else [])
         except requests.RequestException:
@@ -131,27 +177,21 @@ def conferir(url, esperado=None):
     """Preço e estoque na página da loja. Devolve dict ou None quando não pôde ou não conseguiu ler.
 
     `esperado` é o preço informado ao Compara Jogos: leitura muito distante dele (menos da metade ou mais de 60%
-    acima) é tratada como erro de leitura, não como preço."""
-    if not url or not _pode(url):
+    acima) é tratada como erro de leitura, não como preço. Se a mesma página foi lida há menos de 12 horas e o preço
+    informado ao Compara Jogos não mudou, devolve a leitura anterior sem visitar a loja de novo."""
+    if not url:
         return None
-    dom = urlparse(url).netloc.lower()
-    espera = PAUSA_LOJA - (time.time() - _ultimo.get(dom, 0))
-    if espera > 0:
-        time.sleep(espera)
-    try:
-        r = _sessao.get(url, timeout=30)
-    except requests.RequestException:
+    antes = _estado["precos"].get(url)
+    agora = dt.datetime.now(dt.timezone.utc)
+    if antes and antes.get("cj") == esperado and antes.get("hora", "") >= (agora - REUSO).isoformat():
+        return {"preco": antes["preco"], "estoque": antes["estoque"], "reaproveitado": True}
+    h = pagina(url)
+    if h is None:
         return None
-    finally:
-        _ultimo[dom] = time.time()
-    if r.status_code in (401, 403, 429):
-        _bloqueadas.add(dom)
-        return None
-    if r.status_code != 200:
-        return None
-    preco, estoque = _ler_pagina(r.text, url)
+    preco, estoque = _ler_pagina(h, url)
     if preco is None or (esperado and not (esperado * 0.5 <= preco <= esperado * 1.6)):
         return None
+    _estado["precos"][url] = {"preco": preco, "estoque": estoque, "cj": esperado, "hora": agora.isoformat(timespec="minutes")}
     return {"preco": preco, "estoque": estoque}
 
 
@@ -168,6 +208,7 @@ def pagina(url):
     espera = PAUSA_LOJA - (time.time() - _ultimo.get(dom, 0))
     if espera > 0:
         time.sleep(espera)
+    _loja(dom)["paginas"] += 1
     try:
         r = _sessao.get(url, timeout=30)
     except requests.RequestException:
@@ -175,10 +216,10 @@ def pagina(url):
     finally:
         _ultimo[dom] = time.time()
     if r.status_code in (401, 403, 429):
-        _bloqueadas.add(dom)
+        _bloquear(dom, f"página respondeu {r.status_code}")
         return None
     return r.text if r.status_code == 200 else None
 
 
 def bloqueadas():
-    return sorted(_bloqueadas)
+    return sorted(_bloqueadas | {d for d in _estado["lojas"] if em_descanso(d)})

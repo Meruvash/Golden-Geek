@@ -465,3 +465,45 @@ def build(radar_itens, armadilhas):
                                                       head_extra="\n" + CSS, jsonld=ld), encoding="utf-8")
     print(f"ok black/index.html: {len(melhor)} jogos no radar, {len(armadilhas)} armadilhas")
 
+
+
+def robo():
+    """Página /black/robo/: quem é o robô do Black de Verdade, o que ele lê e como a loja pede ajuste ou exclusão."""
+    import lojas
+    pre = "../../"
+    url = f"{SITE}/black/robo/"
+    titulo = "Robô do Black de Verdade: o que ele lê e como falar com a gente"
+    corpo = f"""{cabecalho(pre, "Black de Verdade", sub=True)}
+<main id="conteudo" class="in"><div class="nota guia bk">
+ {trilha(("Início", pre), ("Black de Verdade", f"{pre}black/"), ("Robô", ""))}
+ <article class="bloco">
+  <h1>Robô do Black de Verdade</h1>
+  <p class="lide">Se você tem uma loja e viu <b>EliteBoardgamers/1.0</b> no registro do seu servidor, é o robô do
+  <a class="mais-g" href="{pre}black/">Black de Verdade</a>, o radar de ofertas de jogos de tabuleiro da Elite Boardgamers.
+  Ele leva gente para a sua loja: cada oferta do radar tem link direto para a página do produto.</p>
+ </article>
+ <section class="bloco"><h2>O que ele faz</h2><ul class="lista" style="display:grid;gap:10px;padding-left:20px;list-style:disc">
+  <li>Abre só a página de produtos que já estão no nosso radar, para conferir preço e estoque antes de publicar a oferta.</li>
+  <li>Abre a página inicial e a de promoções no máximo 3 vezes por dia, para ver cupons que a loja anuncia.</li>
+  <li>Espera {lojas.PAUSA_LOJA:.0f} segundos entre uma página e outra da mesma loja e não passa de {lojas.LIMITE_DIA} páginas por dia por loja.</li>
+  <li>Reaproveita por 12 horas o preço que já leu, enquanto nada indicar que ele mudou.</li>
+  <li>Não faz login, não fecha pedido e não preenche formulário.</li>
+ </ul></section>
+ <section class="bloco"><h2>O que ele respeita</h2><ul class="lista" style="display:grid;gap:10px;padding-left:20px;list-style:disc">
+  <li>O seu robots.txt, tanto para <code>EliteBoardgamers</code> quanto para os robôs da Anthropic (<code>ClaudeBot</code>, <code>Claude-User</code>), porque o radar é operado com o Claude.</li>
+  <li>Bloqueio: se a loja responder 401, 403 ou 429, o robô fica 48 horas sem visitar e depois tenta uma vez só. Ele nunca troca de identidade nem de endereço para insistir.</li>
+ </ul></section>
+ <section class="bloco"><h2>Quer ajustar ou sair?</h2>
+  <p class="criterio">Para o robô não visitar a sua loja, basta pôr no robots.txt:</p>
+  <pre style="background:#fff;border:1px solid var(--paper-line);border-radius:8px;padding:12px;overflow-x:auto">User-agent: EliteBoardgamers
+Disallow: /</pre>
+  <p class="criterio">Prefere que a gente leia um arquivo só, uma vez por dia, em vez das páginas? Mande o link do seu feed de produtos
+  (o mesmo do Google Shopping) pelo Instagram <a class="mais-g" href="https://www.instagram.com/eliteboardgamers/">@eliteboardgamers</a>
+  ou responda ao nosso e-mail. Com o feed, todos os seus jogos entram no radar e a sua loja recebe menos visitas do robô.</p>
+ </section>
+</div></main>
+{rodape(pre)}"""
+    descr = "O que o robô do Black de Verdade lê nas lojas, com que frequência, o que ele respeita e como pedir ajuste ou exclusão."
+    (ROOT / "black" / "robo").mkdir(parents=True, exist_ok=True)
+    (ROOT / "black" / "robo" / "index.html").write_text(pagina(titulo, descr, url, f"{SITE}/consulta/capa.jpg", pre, corpo,
+                                                               head_extra="\n" + CSS), encoding="utf-8")

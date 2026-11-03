@@ -92,6 +92,8 @@ def ler():
     for dom, loja in sorted(dominios_do_radar().items()):
         reg = dados.setdefault(dom, {"loja": loja, "cupons": {}})
         reg["loja"] = loja
+        if reg.get("lido", "") > (agora() - dt.timedelta(hours=8)).isoformat(timespec="minutes"):
+            continue  # cupons da loja lidos há menos de 8 horas: 3 visitas por dia bastam
         for caminho in ("/", "/promocoes", "/cupons"):
             url = f"https://{dom}{caminho}"
             h = lojas.pagina(url)

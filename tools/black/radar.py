@@ -41,7 +41,7 @@ HIST = DADOS / "historico.json"
 LISTA = DADOS / "lista.json"
 HOJE = DADOS / "ofertas.json"
 BASE = "https://www.comparajogos.com.br"
-HEADERS = {"User-Agent": "EliteBoardgamers/1.0 (+https://eliteboardgamers.com.br)"}
+HEADERS = {"User-Agent": "EliteBoardgamers/1.0 (+https://eliteboardgamers.com.br/black/robo/)"}
 BR = ZoneInfo("America/Sao_Paulo")
 PAUSA = 1.0          # segundos entre páginas (educação com o site)
 JANELA = 180         # dias da referência
@@ -246,8 +246,8 @@ def conferir_lojas(margem=0.15):
             o.pop("loja_agora", None)
             if o["tipo"] != "LINK" or not o["por"] or FORA.search(o["loja"] + o["loja_id"]):
                 continue
-            if (ref - o["por"]) / ref < margem or o["por"] < ref * SUSPEITO:
-                continue
+            if (ref - o["por"]) / ref < margem or o["por"] < ref * SUSPEITO or o.get("fonte") == "feed da loja":
+                continue  # o feed é a própria loja informando: não precisa abrir a página
             r = lojas.conferir(o["url"], o["por"])
             lidas += 1
             if r:
@@ -292,7 +292,7 @@ def calcular():
             base = {"slug": s, "nome": h["nome"], "tipo": h["tipo"], "editora": h.get("editora"), "bgg": h.get("bgg"),
                     "imagem": h.get("imagem"), "loja": o["loja"], "url": o["url"], "por": por, "de": o["de"],
                     "ref": ref, "desc": desc, "menor": menor, "recorde": por <= menor_antes, "dias": dias,
-                    "fonte_preco": api["fonte"] if api else ("página da loja" if la else "Compara Jogos"),
+                    "fonte_preco": api["fonte"] if api else ("página da loja" if la else ("feed da loja" if o.get("fonte") == "feed da loja" else "Compara Jogos")),
                     "vendedor": api.get("vendedor") if api else None,
                     "verificado": (api or la or {}).get("hora") or o.get("atualizado") or of["verificado"], "editora_br": h.get("editora_br")}
             if desc >= CORTE:
@@ -357,14 +357,20 @@ def main():
         import apis
         ofertas = ler(HOJE, {})
         apis.enriquecer(ofertas, so=set(perto_do_corte(1200 if a.acao != "rapida" else 400)))
+        import feeds
+        feeds.juntar(ler(HIST, {}), ofertas)
         gravar(HOJE, ofertas)
         conferir_lojas()
         import cupons
         import promobit
         cupons.ler()
         promobit.ler()
+    if a.acao != "pagina":
+        import lojas
+        lojas.salvar()
     import pagina_black
     pagina_black.build(*calcular())
+    pagina_black.robo()
 
 
 if __name__ == "__main__":
