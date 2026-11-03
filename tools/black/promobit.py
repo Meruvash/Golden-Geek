@@ -112,6 +112,8 @@ def ler_ofertas():
             }
     limite = (agora() - GUARDA).isoformat()
     dados = {k: v for k, v in dados.items() if (v.get("publicado") or v["visto"]) >= limite[:16]}
+    from telegram import referencia
+    referencia(dados, limite=20)
     ARQ.parent.mkdir(parents=True, exist_ok=True)
     ARQ.write_text(json.dumps(dados, ensure_ascii=False, indent=1, sort_keys=True) + "\n", encoding="utf-8")
     print(f"ok promobit: {len(dados)} promoções de jogos guardadas ({novas} novas)")

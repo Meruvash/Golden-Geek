@@ -11,6 +11,7 @@ Canais (listados publicamente no tópico "Grupos de WhatsApp e Telegram" do fór
 página do Ludofertas). Vendas de usados (bazar) ficam de fora.
 """
 import datetime as dt
+import time
 import html as htmllib
 import json
 import re
@@ -141,15 +142,13 @@ def ler():
                             "fonte": f"Telegram: {nome_canal}", "visto": hora}
     limite = (agora() - GUARDA).isoformat()[:16]
     dados = {k: v for k, v in dados.items() if (v.get("publicado") or v["visto"])[:16] >= limite}
+    referencia(dados)
     ARQ.parent.mkdir(parents=True, exist_ok=True)
     ARQ.write_text(json.dumps(dados, ensure_ascii=False, indent=1, sort_keys=True) + "\n", encoding="utf-8")
     print(f"ok telegram: {len(dados)} achados de {len(CANAIS)} canais ({novos} novos)")
     return dados
 
 
-if __name__ == "__main__":
-    lojas.LIMITE_ESPECIAL["t.me"] = 400
-    ler()
 
 
 def casar(titulo, nomes, hist):
@@ -171,3 +170,81 @@ def casar(titulo, nomes, hist):
     if "expans" in t and hist.get(s, {}).get("tipo") != "expansion":
         return None
     return s
+
+
+BUSCAS = ROOT / "conteudo" / "black" / "busca_cj.json"  # título da promoção -> produto do Compara Jogos (ou nada)
+
+
+RUIDO_BUSCA = re.compile(r"(?i)\b(jogo de tabuleiro|jogo de cartas|jogo de dados|board ?game|card game|party game|para fam[ií]lia|"
+                         r"nacional|importado|lacrado|original|novo|expans[aã]o|asmodee|gal[aá]pagos|devir|conclave|meeple ?br|grok( games)?|"
+                         r"papergames|copag|estrela|hasbro|mattel|ludofun|mosaico|marca|modelo|idades?|anos|jogadores?|\d+\s*(a|-)\s*\d+|"
+                         r"\d+\+?|edi[cç][aã]o|portugu[eê]s|pt-?br|minutos?|estrat[eé]gia|fam[ií]lia)\b")
+
+
+def limpar_busca(titulo):
+    """Título de anúncio ("Asmodee, Asteria, Jogo de Cartas 4X, 2 a 4 jogadores") vira busca curta ("Asteria")."""
+    s = re.split(r"[,(|]", RUIDO_BUSCA.sub(" ", titulo or ""))
+    partes = [re.sub(r"\s+", " ", p).strip(" -:.") for p in s]
+    partes = [p for p in partes if len(p) >= 3]
+    return partes[0][:60] if partes else ""
+
+
+def referencia(dados, limite=60):
+    """Para cada achado sem preço de referência, procura o jogo no Compara Jogos (busca pública /all?q=, que o
+    robots.txt permite) e lê a ficha: 30 dias de histórico de menor preço (média aparada = referência, como no
+    radar), menor preço do período e capa. Guarda o que achou (e o que não achou) para não buscar de novo."""
+    import radar
+    from urllib.parse import quote
+    cache = json.loads(BUSCAS.read_text(encoding="utf-8")) if BUSCAS.exists() else {}
+    hist = json.loads(HIST.read_text(encoding="utf-8")) if HIST.exists() else {}
+    feitos = 0
+    for v in sorted(dados.values(), key=lambda v: v.get("publicado") or "", reverse=True):
+        if feitos >= limite:
+            break
+        if v.get("ref") or v.get("tipo_preco") == "COUPON" or not v.get("preco"):
+            continue
+        if v.get("jogo") and v["jogo"] in hist and hist[v["jogo"]].get("pontos"):
+            h = hist[v["jogo"]]
+            v.update({"ref": round(radar.aparada(h["pontos"].values()), 2), "ref_dias": len(h["pontos"]), "menor": min(h["pontos"].values()),
+                      "slug_cj": v["jogo"], "imagem": h.get("imagem"), "ref_fonte": "nossa base (Compara Jogos)"})
+            continue
+        k = chave(v["titulo"])
+        if k not in cache:
+            feitos += 1
+            achado = None
+            try:
+                slugs = []
+                for q in dict.fromkeys([v["titulo"][:80], limpar_busca(v["titulo"])]):
+                    if not q or len(slugs) >= 4:
+                        continue
+                    html = radar.baixar(f"{radar.BASE}/all?q={quote(q)}")
+                    slugs += [s for s in dict.fromkeys(re.findall(r'href="/item/([a-z0-9-]+)"', html)) if s not in slugs][:3]
+                    time.sleep(radar.PAUSA)
+                for s in slugs:
+                    it = radar.ler_item(s)
+                    time.sleep(radar.PAUSA)
+                    # só aceita se o nome do produto do Compara Jogos aparece inteiro no título da promoção
+                    if it and it.get("nome") and casar(v["titulo"], {chave(it["nome"]): s}, {s: {"nome": it["nome"], "tipo": it["tipo"]}}):
+                        pts = it["hist30"]
+                        achado = {"slug": s, "nome": it["nome"], "imagem": it.get("imagem"), "tipo": it.get("tipo"),
+                                  "ref": round(radar.aparada(pts.values()), 2) if len(pts) >= 5 else None,
+                                  "ref_dias": len(pts), "menor": min(pts.values()) if pts else None}
+                        break
+            except Exception as ex:  # bloqueio ou rede: tenta de novo na próxima leitura
+                print(f"   busca no Compara Jogos falhou ({ex}); fica para a próxima")
+                break
+            cache[k] = achado
+        a = cache.get(k)
+        if a and a.get("ref"):
+            v.update({"ref": a["ref"], "ref_dias": a["ref_dias"], "menor": a["menor"], "slug_cj": a["slug"], "imagem": a.get("imagem"),
+                      "ref_fonte": "Compara Jogos"})
+        elif a is None:
+            v["ref_fonte"] = "sem referência"
+    BUSCAS.write_text(json.dumps(cache, ensure_ascii=False, indent=1, sort_keys=True) + "\n", encoding="utf-8")
+    com = sum(1 for v in dados.values() if v.get("ref"))
+    print(f"ok referência de preço: {com} de {len(dados)} achados com média do Compara Jogos ({feitos} buscas novas)")
+
+
+if __name__ == "__main__":
+    lojas.LIMITE_ESPECIAL["t.me"] = 400
+    ler()

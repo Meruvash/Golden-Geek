@@ -125,6 +125,7 @@ CSS = """<style>
 @media (min-width:760px){.cupons{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .cup-img{display:block;aspect-ratio:16/9;border-radius:10px;overflow:hidden;background:#fff;margin-bottom:4px}
 .cup-img img{width:100%;height:100%;object-fit:contain;display:block}.cup-img svg,.of-img svg{width:100%;height:100%;display:block}
+.cup-ref{margin:0;font-size:.86rem;color:#c9ced8}.cup-ref .real-ok{color:#5fd38d}.cup-ref .real-no{color:#ff8a7a}
 .cup-c{display:grid;gap:6px;padding:14px;border-radius:14px;background:#111419;border:1px solid #262a32}
 .cup-loja{margin:0;font-weight:800;color:#fff}
 .cup-cod{justify-self:start;display:inline-flex;align-items:center;gap:10px;min-height:44px;padding:0 6px 0 14px;border-radius:10px;border:2px dashed var(--gold);background:rgba(227,178,60,.08);color:#fff;font:inherit;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:1.05rem;font-weight:800;letter-spacing:.04em;cursor:pointer}
@@ -373,24 +374,49 @@ def build(radar_itens, armadilhas, quase=()):
         pbs.update(json.loads(cm_arq.read_text(encoding="utf-8")))
     hist = radar.ler(radar.HIST, {})
     pb_html = ""
-    def _real(v):
+    def _ref(v):
+        """Preço de referência do achado: média aparada da nossa base ou do Compara Jogos (buscado pelo robô)."""
         h = hist.get(v.get("jogo") or "")
-        if h and h.get("pontos") and v.get("preco") and v.get("tipo_preco") != "COUPON":
-            ref = radar.aparada(h["pontos"].values())
-            return (ref - v["preco"]) / ref
+        if h and h.get("pontos"):
+            return radar.aparada(h["pontos"].values()), len(h["pontos"]), min(h["pontos"].values())
+        if v.get("ref") and (v.get("ref_dias") or 0) >= 14:  # menos de 14 dias de histórico não vale como referência
+            return v["ref"], v.get("ref_dias") or 0, v.get("menor")
+        return None
+
+    def _real(v):
+        r = _ref(v)
+        if r and v.get("preco") and v.get("tipo_preco") != "COUPON":
+            return (r[0] - v["preco"]) / r[0]
         return None
     # primeiro os achados com desconto real de 15% ou mais sobre a nossa base; depois os mais recentes (até 80)
     ordem = sorted(pbs.values(), key=lambda v: ((_real(v) or -1) >= radar.QUASE, v.get("publicado") or ""), reverse=True)[:80]
     sem_foto_html = ""
     for v in ordem:
         h0 = hist.get(v.get("jogo") or "")
-        foto = capa({"slug": v["jogo"], "imagem": h0.get("imagem")}, pre) if h0 and h0.get("imagem") else ""
-        real = ""
-        h = hist.get(v.get("jogo") or "")
-        if h and h.get("pontos") and v.get("preco") and v.get("tipo_preco") != "COUPON":
-            ref = radar.aparada(h["pontos"].values())
-            real = (f'Desconto real: {pct((ref - v["preco"]) / ref)} sobre a média de {brl(ref)}' if v["preco"] < ref
-                    else f"Acima da média de {brl(ref)}")
+        img_slug, img_url = (v["jogo"], h0.get("imagem")) if h0 and h0.get("imagem") else (v.get("slug_cj"), v.get("imagem"))
+        foto = capa({"slug": img_slug, "imagem": img_url}, pre) if img_slug and img_url else ""
+        r = _ref(v)
+        tem_preco = v.get("preco") and v.get("tipo_preco") != "COUPON"
+        if r and tem_preco:
+            ref, dias, menor = r
+            d = (ref - v["preco"]) / ref
+            real = (f'<b class="real-ok">Desconto real: {pct(d)}</b> sobre a média de {brl(ref)} ({dias} dias no Compara Jogos)' if d > 0
+                    else f'<b class="real-no">Sem desconto real:</b> {pct(-d)} acima da média de {brl(ref)} ({dias} dias no Compara Jogos)')
+            if dias < radar.MIN_DIAS:
+                real += " (base curta)"
+            if menor:
+                real += f' · menor preço do período {brl(menor)}'
+            if v["preco"] < ref * radar.SUSPEITO:
+                real += ". Atenção: preço muito abaixo da média, pode ser outro produto ou outra edição; confira na loja"
+        elif tem_preco and v.get("preco_antes"):
+            real = (f'Preço anterior informado no post: {brl(v["preco_antes"])} '
+                    f'(−{pct((v["preco_antes"] - v["preco"]) / v["preco_antes"])}). Jogo não encontrado no Compara Jogos para conferir a média.')
+        elif tem_preco and v.get("ref"):
+            real = f"Sem preço de referência confiável: o Compara Jogos só tem {v.get('ref_dias') or 0} dias de histórico deste jogo."
+        elif tem_preco:
+            real = "Sem preço de referência: o post não informa o preço anterior e o jogo não foi encontrado no Compara Jogos."
+        else:
+            real = ""
         preco = brl(v["preco"]) if v.get("preco") and v.get("tipo_preco") != "COUPON" else "Ver cupom"
         antes = f' <span class="of-ref"><s>{brl(v["preco_antes"])}</s></span>' if v.get("preco_antes") else ""
         selo = f'−{pct((v["preco_antes"] - v["preco"]) / v["preco_antes"])}' if v.get("preco_antes") and v.get("preco") and v["preco_antes"] > v["preco"] else ""
@@ -398,9 +424,9 @@ def build(radar_itens, armadilhas, quase=()):
                 else f'<span class="cup-img">{ilustra(limpa(v["titulo"]), v.get("loja") or "", selo)}</span>')
         cartao_c = (f'<li class="cup-c">{topo}<p class="cup-loja">{e(limpa(v["titulo"]))}</p>'
                     f'<p class="of-p" style="margin:0"><b class="of-por" style="font-size:1.2rem">{preco}</b>{antes}</p>'
-                    f'<p class="cup-txt">{e(v.get("loja") or "")}{f" · cupom <b>{e(v['cupom'])}</b>" if v.get("cupom") else ""} · '
-                    f'{e(real) if real else "jogo fora da nossa base"}</p>'
-                    f'<p class="cup-st">Postada {hora(v.get("publicado") or v["visto"], agora_)}. Vendedor e validade não conferidos.</p>'
+                    f'<p class="cup-txt">{e(v.get("loja") or "")}{f" · cupom <b>{e(v['cupom'])}</b>" if v.get("cupom") else ""}</p>'
+                    + (f'<p class="cup-ref">{real}</p>' if real else "")
+                    + f'<p class="cup-st">Postada {hora(v.get("publicado") or v["visto"], agora_)}. Vendedor e validade não conferidos.</p>'
                     + (f'<a href="{e(v["link_loja"])}" target="_blank" rel="noopener nofollow">Ver na loja ↗</a> ' if v.get("link_loja") else "")
                     + f'<a href="{e(v["link"])}" target="_blank" rel="noopener nofollow">Ver no {e((v.get("fonte") or "Promobit").removeprefix("Telegram: "))} ↗</a></li>')
         if foto:
