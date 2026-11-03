@@ -2,47 +2,40 @@
  "1-2-3-lucha": {
   "ofertas": [
    {
-    "atualizado": "2026-11-03T13:28:54.843+00:00",
-    "de": 38.9,
-    "loja": "Amazon",
-    "loja_id": "amazon",
-    "por": 38.9,
-    "tipo": "LINK",
-    "url": "https://www.amazon.com.br/dp/B0CNH5TXD2",
-    "vendedor": null
-   },
-   {
-    "atualizado": "2026-11-03T17:48:30.877+00:00",
+    "atualizado": "2026-11-03T19:45:37.693+00:00",
     "de": 39,
     "loja": "Omniverse",
     "loja_id": "omniverse",
     "por": 36.27,
     "tipo": "LINK",
+    "titulo": "1, 2, 3, Lucha!",
     "url": "https://www.omniverse.com.br/1-2-3-lucha-pre-venda",
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T17:49:57.627+00:00",
+    "atualizado": "2026-11-03T19:47:20.121+00:00",
     "de": 39.9,
     "loja": "Pittas Board Games",
     "loja_id": "pittasstore",
     "por": 37.11,
     "tipo": "LINK",
+    "titulo": "JOGO 1,2,3 LUCHA!",
     "url": "https://www.pittasboardgames.com.br/produtos/jogo-123-lucha/",
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-03T17:42:30.559+00:00",
+    "atualizado": "2026-11-03T20:12:34.339+00:00",
     "de": 39,
     "loja": "Loja Editora Gamehives",
     "loja_id": "gamehives",
     "por": 39,
     "tipo": "LINK",
+    "titulo": "1, 2, 3, Lucha!",
     "url": "https://loja.gamehives.com.br/123lucha",
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-03T17:14-03:00"
+  "verificado": "2026-11-03T20:13-03:00"
  },
  "12-rivers-2025": {
   "ofertas": [],
