@@ -1,0 +1,157 @@
+{
+ "slug": "century-spice-road",
+ "jogo": "Century: Spice Road",
+ "cor": "#b5562b",
+ "kicker": "Resenha · Cartas e troca de recursos",
+ "og_titulo": "Century: Rota das Especiarias vale a pena? Resenha Elite Boardgamers",
+ "titulo_busca": "Century: Rota das Especiarias: resenha do rival do Splendor",
+ "descricao": "Resenha de Century: Rota das Especiarias, melhor jogo de cartas no Golden Geek 2017: como funciona, onde ainda dá para achar e para quem é.",
+ "titulo_html": "Trocaram a canela por golens e as regras nem perceberam: <span>Century: Rota das Especiarias</span>",
+ "lede": "Century: Rota das Especiarias, o Century: Spice Road de Emerson Matsuuchi, é um jogo de cartas de 2 a 5 pessoas sobre comprar, trocar e vender especiarias. Venceu o Golden Geek de melhor jogo de cartas de 2017. A especiaria, porém, é a única peça que dá para tirar sem quebrar nada: a Plan B lançou o mesmo jogo com cristais e golens, e as regras continuaram iguais. Sobra uma casa de câmbio muito bem feita. A gente recomenda. Mas não pela canela.",
+ "tags": [
+  "2–5 jogadores",
+  "30–45 min",
+  "8+",
+  "Cartas",
+  "Construção de baralho"
+ ],
+ "alt": "Componentes de Century: Spice Road: cartas de mercador e de pontos, tigelas com cubos coloridos de especiarias e fichas de metal",
+ "premiacoes": [
+  {
+   "premio": "Golden Geek",
+   "ano": 2017,
+   "categoria": "Cartas",
+   "colocacao": 1,
+   "resultado": "vencedor",
+   "fonte": "https://brettspielbox.de/12th-annual-golden-geek-awards-winners-2017/",
+   "rotulo": "Vencedor"
+  },
+  {
+   "premio": "Golden Geek",
+   "ano": 2017,
+   "categoria": "Família",
+   "colocacao": 3,
+   "resultado": "top 3",
+   "fonte": "https://brettspielbox.de/12th-annual-golden-geek-awards-winners-2017/",
+   "rotulo": "Finalista"
+  }
+ ],
+ "ficha": [
+  ["Ano", "2017"],
+  ["Designer", "Emerson Matsuuchi"],
+  ["Ilustração", "Fernanda Suárez"],
+  ["Editora original", "Plan B Games"],
+  ["Editora no Brasil", "Devir (Century: Rota das Especiarias)"],
+  ["Jogadores", "2 a 5"],
+  ["Melhor com", "3 (enquete do BoardMatch)"],
+  ["Duração anunciada", "30 a 45 minutos"],
+  ["Duração relatada", "não confirmado nas fontes consultadas"],
+  ["Idade", "8+"],
+  ["Nota BGG", "7,3 / 10, com 27.925 avaliações (via BoardMatch, 03/11/2026)"],
+  ["Peso BGG", "1,8 / 5"],
+  ["Nota Ludopedia", "não confirmado nas fontes consultadas"],
+  ["Dependência de idioma", "nenhuma (cartas sem texto)"],
+  ["Componentes", "53 cartas de mercador, 36 cartas de pontos, 5 cartas de caravana, 105 cubos de madeira, 4 tigelas e 20 fichas de metal"]
+ ],
+ "nota_ficha": "Nota, número de avaliações, peso e melhor número de jogadores vêm do BoardMatch, que replica o BoardGameGeek (o BGG e a Ludopedia bloqueiam acesso automatizado). Componentes e regras vêm do manual da Devir e da página da Next Move, selo da Plan B. Consulta em 03/11/2026.",
+ "como_funciona": [
+  "Cada jogador lidera uma caravana na rota das especiarias. As especiarias são cubos de quatro cores, do menos ao mais valioso: amarelo (cúrcuma), vermelho (açafrão), verde (cardamomo) e castanho (canela). O objetivo é juntar os cubos pedidos pelas cartas de ponto e trocá-los por pontos. Todos começam com duas cartas na mão, Criação 2 e Melhoria 2, e alguns cubos na caravana, que variam conforme a ordem de jogo.",
+  "No seu turno, você faz uma única ação entre quatro: jogar uma carta da mão, adquirir uma carta de mercador, descansar ou reivindicar uma carta de ponto.",
+  "As cartas de mercador são de três tipos. As de especiaria dão cubos da tigela. As de melhoria sobem cubos um nível na escala de cores (a Melhoria 2 faz isso duas vezes). As de troca devolvem certos cubos e dão outros, quantas vezes você puder pagar. Carta jogada fica na mesa até você descansar, ação que devolve todas para a mão. É uma construção de baralho: a sua mão cresce a cada compra.",
+  "O mercado é uma fila de seis cartas. A primeira é de graça; para pegar outra, você deixa um cubo qualquer em cada carta à esquerda dela, e quem levar uma carta com cubos fica com eles. A caravana comporta no máximo dez cubos: o excesso volta para as tigelas no fim do turno.",
+  "Para reivindicar uma carta de ponto, você devolve os cubos que ela pede. Há cinco à vista, e as duas primeiras levam fichas de ouro (3 pontos) e de prata (1 ponto) enquanto durarem. Quando alguém pega a quinta carta de ponto (a sexta, com 2 ou 3 jogadores), a rodada termina e a partida acaba. Somam-se cartas, fichas e 1 ponto por cubo que não seja amarelo. No empate, vence quem jogou por último."
+ ],
+ "passos": [
+  ["JOGUE UMA CARTA", "Use uma carta da mão para ganhar cubos, subir a cor de cubos que já tem ou trocar um grupo de cubos por outro."],
+  ["COMPRE NO MERCADO", "Pegue uma das seis cartas da fila, deixando um cubo em cada carta à esquerda dela. A primeira carta sai de graça."],
+  ["DESCANSE NA HORA", "Gaste um turno para recolher todas as cartas jogadas. Sem descansar, a mão acaba e você fica sem o que fazer."],
+  ["CUMPRA UM PEDIDO", "Devolva os cubos pedidos por uma carta de ponto e fique com ela. As duas primeiras da fila ainda dão ouro ou prata."],
+  ["FECHE A RODADA", "Na quinta carta de ponto de alguém (sexta com 2 ou 3), termina a rodada. Cubos não amarelos valem 1 ponto."]
+ ],
+ "como_resumo": "Transforme cubos amarelos em canela com as cartas certas e entregue os pedidos antes dos rivais.",
+ "perfil": [
+  ["Facilidade de ensinar", 5],
+  ["Componentes", 5],
+  ["Partida curta", 4],
+  ["Profundidade", 3],
+  ["Interação entre jogadores", 1],
+  ["Tema", 1]
+ ],
+ "experiencia": [
+  "Vamos ser francos: depois de dez minutos, ninguém mais fala de açafrão. A mesa fala em cores. Você tem três amarelos. Joga a troca que vira dois amarelos num verde. Joga a melhoria e o último amarelo vira vermelho. Faltam dois turnos para a carta de 14 pontos. O vizinho da esquerda pega a carta de 14 pontos. Você descansa, que é o nome bonito para recolher os cacos.",
+  "E é bom. Muito bom. Cada turno é uma única ação, então a vez gira rápido, e o cérebro faz conta o tempo todo: compro a carta de troca agora, pagando três cubos de pedágio, ou espero alguém deixar cubos em cima dela? A graça é a corrida, não a rota da seda. A Plan B sabe disso: lançou o Century: Golem Edition com cristais no lugar das especiarias, e a Zatu conferiu que ele se joga exatamente igual. Um jogo de comércio que sobrevive ao transplante do próprio tema. Poucos sobrevivem."
+ ],
+ "funciona": [
+  ["Ensina antes do café esfriar", "O manual da Devir tem duas páginas, e a ação do turno é uma só. Martyn Poole, da Zatu, conta que aprendeu as regras em cerca de dez minutos e que a parceira, que normalmente não gosta de jogos, se divertiu. É um dos raros jogos premiados que dá para explicar enquanto alguém embaralha."],
+  ["Mais caminhos que o Splendor", "A comparação é inevitável, e a crítica a fez. Para Matt Jarvis, da Tabletop Gaming, Century é um sucessor superior ao Splendor, com mais opções interessantes no turno. Pauline Belford, do Meeple Like Us, vê estratégias mais flexíveis e variadas: dá para apostar em cartas de troca, em melhorias ou numa mão curta que descansa pouco."],
+  ["O pedágio do mercado", "Pegar a quarta carta da fila custa três cubos, um em cada carta à esquerda, e esses cubos viram isca para o próximo jogador. É a principal fonte de tensão do jogo: a Tabletop Gaming lembra que os rivais podem lucrar com as cartas que você deixa, e o Meeple Like Us conta que as boas cartas de produção somem rápido."],
+  ["Descansar é uma decisão", "Recolher a mão custa um turno inteiro, então montar uma sequência de cartas que se encaixam antes de descansar é onde mora a habilidade. Para o Guardian, a velocidade e a simplicidade escondem uma profundidade real. A Tabletop Gaming fala no fluxo satisfatório de trocar cubos e cartas, que aparece justamente nesse ritmo de jogar, jogar e recolher."],
+  ["Produção acima do preço", "Tigelas para os cubos, fichas de metal para ouro e prata e cartas grossas. A Zatu deu nota máxima à qualidade dos componentes e chamou as moedas de metal de joia escondida; o Meeple Like Us também destaca as cartas e as fichas. Pouca coisa na caixa é papelão comum."],
+  ["Nenhuma palavra nas cartas", "Tudo se lê por ícones e cores, e o ComparaJogos classifica o jogo como sem dependência de idioma. Na prática, qualquer edição serve, inclusive a importada, e dá para jogar com quem ainda não lê, desde que saiba contar cubos."]
+ ],
+ "atencao": [
+  ["Grave", "A loja tem o volume dois", "Em 03/11/2026, o ComparaJogos não mostrava nenhuma oferta, nova ou usada, da edição da Devir. A sequência, Maravilhas do Oriente, saía a partir de R$ 307,10 no Pix. É como a livraria ter o segundo livro da trilogia e jurar que você não precisa do primeiro."],
+  ["Moderada", "Especiaria de enfeite", "O Meeple Like Us diz que o tema é em grande parte colado por cima, como no Splendor, e a Zatu afirma que em nenhum momento você se sente um comerciante de especiarias. A prova é a Golem Edition: trocaram canela por cristais e ninguém precisou mudar uma regra. O tempero é opcional. A receita é que salva."],
+  ["Moderada", "Cada um no seu extrato", "A Zatu aponta que não há interação de verdade entre jogadores e que a partida pode parecer um jogo solo. O contato com o rival se resume a roubar a carta que ele queria. Quatro pessoas na mesa, cada uma conferindo os próprios cubos como quem confere o saldo no caixa eletrônico."],
+  ["Moderada", "Cinco é gente demais", "Para o Meeple Like Us, com cinco jogadores há muita espera entre turnos, e é preciso ser bem mais flexível, porque as boas cartas de produção somem antes de voltar a sua vez. A caixa diz cinco. A conta de quanto tempo você fica olhando para o teto também."],
+  ["Leve", "Motor que engasga", "Pauline Belford, do Meeple Like Us, considera Century inferior ao Splendor como jogo de construir motor: o progresso vem aos trancos, e não naquela aceleração em que cada compra deixa a próxima mais barata. Quem joga pela sensação de bola de neve vai sentir falta dela aqui."],
+  ["Leve", "Mercado de pouca escolha", "A Zatu observa que a falta de opções de cartas pode deixar a partida desequilibrada: se a fila não oferece nada útil para você e entrega uma carta ótima ao vizinho, a sorte da reposição pesa. Com seis cartas à vista, às vezes a melhor jogada é torcer."]
+ ],
+ "jogadores": [
+  ["2 jogadores", "Partidas rápidas, segundo o Meeple Like Us, com o mercado mudando devagar e mais tempo para planejar a sequência de cartas.", 2],
+  ["3 ou 4 jogadores", "O melhor jeito: 3 lidera a enquete do BoardMatch, e a Tabletop Gaming recomenda 3 ou 4 para a interação mais interessante na fila do mercado.", 3],
+  ["5 jogadores", "Funciona, mas o Meeple Like Us relata muita espera entre turnos e cartas boas sumindo antes da sua vez.", 1]
+ ],
+ "primeira_partida": "A explicação leva cerca de dez minutos, segundo a Zatu, e o BoardMatch fala em ensino de quinze. O que mais confunde é o pedágio do mercado: lembre que a primeira carta da fila é grátis e que os cubos deixados nas cartas vão para quem as pegar. Outro tropeço comum é esquecer que descansar ocupa o turno inteiro. Dica: na estreia, compre duas ou três cartas de troca baratas logo cedo e só depois corra atrás das cartas de ponto, de olho no limite de dez cubos.",
+ "edicao_nacional": "A edição em português, Century: Rota das Especiarias, é da Devir, que anunciou o lançamento em 29/08/2017 e diz que o jogo foi indicado ao Prêmio Ludopedia 2017 de jogo família. Em 03/11/2026, o ComparaJogos não listava nenhuma oferta, nova ou usada, e o site da Devir não mostra preço nem venda direta. As cartas não têm texto, então a edição importada funciona igual. A sequência, Century: Maravilhas do Oriente, também da Devir, saía a partir de R$ 307,10 no Pix.",
+ "preco_ref": {
+  "faixa": "sem oferta no Brasil",
+  "data": "03/11/2026",
+  "obs": "nenhuma oferta nova ou usada da edição da Devir no ComparaJogos; a sequência Century: Maravilhas do Oriente saía a partir de R$ 307,10 no Pix"
+ },
+ "versoes": "Há dois pacotes de cartas bônus (2017 e 2018) e a expansão Golden Deals (2024). A Century: Golem Edition é o mesmo jogo com tema de fantasia, cristais e golens. A trilogia continua em Maravilhas do Oriente e Um Novo Mundo, ambos da Devir no Brasil, que podem ser combinados com o primeiro (a combinação com o segundo se chama From Sand to Sea). Existe ainda a Century: Big Box, e o jogo está no Board Game Arena.",
+ "comparacoes": [
+  ["Splendor Duel", "splendor-duel", "O derivado a dois do Splendor, o jogo com que Century é sempre comparado. Mais briga direta por fichas e cartas, e nenhum cubo de canela para disfarçar que é tudo matemática."],
+  ["Azul", "azul", "Bateu Century no Golden Geek de jogo família de 2017. Tão rápido de ensinar quanto, com mais interação: no Azul, o que você deixa para trás vira castigo para o rival."],
+  ["Wingspan", "wingspan", "Para quem gostou de ver a mão crescer e quer um motor de verdade, com aceleração a cada rodada. Mais longo e mais pesado, mas com cada compra ajudando a próxima."]
+ ],
+ "para_quem": [
+  "Gosta de fazer conta no turno e ver a sequência de cartas fechar",
+  "Precisa de um jogo premiado para ensinar à família em dez minutos",
+  "Achou o Splendor bom, mas curto de escolhas",
+  "Joga em três ou quatro e quer partidas de menos de uma hora",
+  "Não liga se a canela é canela, cristal ou golem"
+ ],
+ "nao_e_para": [
+  "Quer sentir o cheiro do bazar, e não só contar cubos",
+  "Gosta de atrapalhar o rival além de roubar a carta dele",
+  "Joga sempre em cinco e odeia esperar a vez",
+  "Busca aquela aceleração de motor em que cada compra rende mais",
+  "Precisa comprar uma cópia nova amanhã numa loja brasileira"
+ ],
+ "selo": "Recomendado com ressalva",
+ "ressalva": "sem oferta nova no Brasil",
+ "melhor_para": "entrada",
+ "veredito": "Century: Rota das Especiarias é um jogo de comércio de especiarias em que a especiaria é a única peça descartável. A prova está na prateleira: a Golem Edition troca a canela por cristais e se joga exatamente igual. Century é uma casa de câmbio com cheiro de canela, e é por isso que funciona. O que fica quando o tema sai é uma corrida de cubos que se ensina em dez minutos, com um mercado de pedágio esperto, a ação de descansar no centro das decisões e o Golden Geek de jogo de cartas de 2017. O que pesa: pouca interação, espera com cinco e, hoje, nenhuma cópia nova à venda no Brasil. Se você achar uma, usada ou importada, leve. As cartas não têm uma palavra. Nem de especiaria.",
+ "tagline": "Uma casa de câmbio com cheiro de canela. Tire a canela e o câmbio continua ótimo.",
+ "citacao": {
+  "texto": "Spice Road é estilo e substância, combinados à perfeição.",
+  "fonte": "Matt Jarvis, Tabletop Gaming (tradução livre)"
+ },
+ "consulta": "03/11/2026",
+ "fontes": [
+  ["Next Move Games (Plan B Games) – Century: La Route des Épices", "https://www.nextmove-games.com/century/century-la-route-des-epices/", "fotos oficiais, componentes, duração, Board Game Arena, trilogia"],
+  ["Devir – Century: Rota das Especiarias", "https://devir.com.br/century-rota-das-especiarias/", "edição brasileira, data de lançamento, indicação ao Prêmio Ludopedia"],
+  ["Manual de Century: Rota das Especiarias (Devir)", "https://www.comparajogos.com.br/f/uploads/short-url/hDwOJT9FGJNo5Az2vdyXVw8V4T6.pdf", "regras, preparação, fim de jogo, créditos"],
+  ["ComparaJogos – Century: Rota das Especiarias", "https://www.comparajogos.com.br/item/century-rota-das-especiarias", "ofertas no Brasil, dependência de idioma, expansões"],
+  ["ComparaJogos – Century: Maravilhas do Oriente", "https://www.comparajogos.com.br/item/century-maravilhas-do-oriente", "preço da sequência no Brasil"],
+  ["BoardMatch – Century: Spice Road", "https://boardmatch.app/en/game/209685", "nota e avaliações do BGG, peso, melhor número de jogadores, expansões"],
+  ["Brettspielbox – 12th Annual Golden Geek Awards Winners 2017", "https://brettspielbox.de/12th-annual-golden-geek-awards-winners-2017/", "prêmios"],
+  ["Tabletop Gaming – Century: Spice Road review", "https://tabletopgaming.co.uk/reviews/century-spice-road-review", "crítica, comparação com Splendor, número de jogadores"],
+  ["Meeple Like Us – Century: Spice Road review", "https://www.meeplelikeus.co.uk/century-spice-road-2017/", "crítica, tema, espera com cinco, motor"],
+  ["Zatu – Century: Spice Road review", "https://zatu.com/century-spice-road-review", "crítica, tempo para aprender, interação, componentes"],
+  ["Zatu – Century: Golem Edition review", "https://zatu.com/century-golem-edition-review/", "Golem Edition com as mesmas regras"],
+  ["Wikipedia – Century: Spice Road", "https://en.wikipedia.org/wiki/Century:_Spice_Road", "recepção (The Guardian), Golem Edition, cartas bônus"]
+ ],
+ "legenda": "Century é uma casa de câmbio com cheiro de canela. 🌶️\n\nMelhor jogo de cartas do Golden Geek 2017, ensina em dez minutos e cabe em menos de uma hora.\nA prova de que a especiaria é enfeite: a Golem Edition troca canela por cristais e as regras ficam iguais.\nVeredito: RECOMENDADO COM RESSALVA. Em 03/11/2026, nenhuma cópia nova à venda no Brasil; a sequência, sim.\n\nCentury ou Splendor: qual fica na sua estante? 👇\nResenha completa no link da bio.\n\n#Century #CenturySpiceRoad #RotaDasEspeciarias #JogosDeTabuleiro #BoardGames #GoldenGeek #JogoDeCartas #Devir #PlanBGames #EliteBoardgamers #Boardgamer"
+}
