@@ -1,0 +1,34 @@
+# Teste das credenciais de vendas (tools/teste_vendas.py): roda à mão ou quando o script muda na main.
+# Só confere tokens e leituras; não cria preferência, pagamento, envio nem etiqueta. O log nunca mostra as chaves.
+name: "Mercado da Elite: teste das credenciais"
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [tools/teste_vendas.py, .github/workflows/teste-vendas.yml]
+
+permissions:
+  contents: read
+
+jobs:
+  teste:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - run: pip install requests
+      - env:
+          ML_CLIENT_ID: ${{ secrets.ML_CLIENT_ID }}
+          ML_CLIENT_SECRET: ${{ secrets.ML_CLIENT_SECRET }}
+          MP_CLIENT_ID: ${{ secrets.MP_CLIENT_ID }}
+          MP_CLIENT_SECRET: ${{ secrets.MP_CLIENT_SECRET }}
+          MP_CHAVE: ${{ secrets.MP_CHAVE }}
+          ME_CLIENT_ID: ${{ secrets.ME_CLIENT_ID }}
+          ME_CLIENT_SECRET: ${{ secrets.ME_CLIENT_SECRET }}
+          ME_CONTATO: ${{ secrets.ME_CONTATO }}
+          CLOUDFLARE_API_TOKEN_COMENTARIOS: ${{ secrets.CLOUDFLARE_API_TOKEN_COMENTARIOS }}
+        run: python3 tools/teste_vendas.py
