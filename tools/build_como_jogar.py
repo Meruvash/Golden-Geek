@@ -34,6 +34,16 @@ CSS_MOLDURA = (".in{max-width:1180px;margin:0 auto;padding-left:16px;padding-rig
                "footer a{color:var(--muted);text-decoration:none}footer a:hover{color:var(--gold)}")
 
 CSS_GUIA = """
+/* fotos na lista de tutoriais e no topo de /como-jogar/ (04/11/2026) */
+.topo-cj{overflow:hidden}
+.lista-t a.com-foto{grid-template-columns:96px 1fr;column-gap:14px;align-items:start}
+.lista-t a.com-foto>*{grid-column:2}
+.lista-t a.com-foto>img{grid-column:1;grid-row:1/span 4;width:96px;height:96px;object-fit:cover;border-radius:6px;background:#fff}
+.cj-mosaico{display:grid;grid-template-columns:2fr 1fr;grid-template-rows:1fr 1fr;gap:4px;margin:-20px -20px 4px;aspect-ratio:16/9;overflow:hidden}
+.cj-mosaico img{width:100%;height:100%;object-fit:cover;display:block;background:#fff}
+.cj-mosaico img:first-child{grid-row:1/span 2}
+.cj-mosaico-c{font-size:.78rem;color:var(--paper-muted)}
+@media (max-width:600px){.cj-mosaico{margin:-16px -16px 4px}.lista-t a.com-foto{grid-template-columns:72px 1fr}.lista-t a.com-foto>img{width:72px;height:72px}}
 /* faixa de progresso, presa logo abaixo do menu */
 .guia-prog{position:sticky;top:var(--nav-h,45px);z-index:15;background:var(--panel);border-bottom:1px solid var(--line)}
 .guia-prog a{display:flex;align-items:center;gap:10px;max-width:760px;margin:0 auto;padding:9px 16px;color:var(--ink);text-decoration:none;font-size:.86rem;font-weight:700;min-height:40px}
@@ -167,19 +177,45 @@ def montar(arq):
 
 
 def lista_indice():
-    """Lista de tutoriais em /como-jogar/, a partir de conteudo/como-jogar/*.json (mais novos primeiro)."""
+    """Lista de tutoriais em /como-jogar/, a partir de conteudo/como-jogar/*.json (mais novos primeiro), com a foto de
+    cada jogo no cartão e um mosaico de fotos no topo da página (pedido do editor em 04/11/2026)."""
     import como_jogar_md
     arq = ROOT / "como-jogar" / "index.html"
     if not arq.exists():
         return
     e = _html.escape
-    itens = "".join(
-        f'<li><a href="{m["slug"]}/"><span class="num-l">{e(m["genero"])}</span><b>{e(m["titulo"])}</b><span>{e(m["chamada"])}</span>'
-        f'<span class="meta-e"><span>{e(m["jogadores"])}</span><span>{e(m["duracao"])}</span><span>{e(m["edicao"])}</span></span></a></li>'
-        for m in sorted(como_jogar_md.metas(), key=lambda m: (m["data"], m["titulo"]), reverse=True)
-        if (ROOT / "como-jogar" / m["slug"] / "index.html").exists())
+    lista = [m for m in sorted(como_jogar_md.metas(), key=lambda m: (m["data"], m["titulo"]), reverse=True)
+             if (ROOT / "como-jogar" / m["slug"] / "index.html").exists()]
+
+    def foto(m):
+        fs = como_jogar_md.ordem_fotos(como_jogar_md.fotos_jogo(m))
+        if not fs:
+            return None
+        f = dict(fs[0])
+        # caminho visto de /como-jogar/: "../../x/" (resenha) vira "../x/"; "fotos/..." do tutorial vira "<slug>/fotos/..."
+        f["src"] = f["src"][3:] if f["src"].startswith("../../") else f"{m['slug']}/{f['src']}"
+        return f
+
+    itens = ""
+    for m in lista:
+        f = foto(m)
+        img = (f'<img src="{e(f["src"])}" alt="" loading="lazy" decoding="async" width="96" height="96">' if f else "")
+        itens += (f'<li><a href="{m["slug"]}/"{" class=\"com-foto\"" if f else ""}>{img}<span class="num-l">{e(m["genero"])}</span><b>{e(m["titulo"])}</b><span>{e(m["chamada"])}</span>'
+                  f'<span class="meta-e"><span>{e(m["jogadores"])}</span><span>{e(m["duracao"])}</span><span>{e(m["edicao"])}</span></span></a></li>')
     s = arq.read_text(encoding="utf-8")
     novo = re.sub(r'(<ul class="lista-t">).*?(</ul>)', lambda x: f"{x.group(1)}\n      {itens}\n    {x.group(2)}", s, count=1, flags=re.S)
+    # topo da página: mosaico com as fotos dos três tutoriais mais novos que têm foto
+    mos = [(m, f) for m in lista if (f := foto(m))][:3]
+    if len(mos) == 3:
+        imgs = "".join(f'<img src="{e(f["src"])}" alt="{e(f["alt"])}"{"" if i else " fetchpriority=\"high\""} decoding="async">' for i, (m, f) in enumerate(mos))
+        cred = " · ".join(dict.fromkeys(f"{re.sub(r'^(Imagem|Foto): ', '', f['credito'])} ({m['jogo']})" for m, f in mos))
+        bloco = f'<!--mosaico--><div class="cj-mosaico">{imgs}</div><p class="cj-mosaico-c">Fotos: {e(cred)}</p><!--/mosaico-->'
+    else:
+        bloco = "<!--mosaico--><!--/mosaico-->"
+    if "<!--mosaico-->" in novo:
+        novo = re.sub(r"<!--mosaico-->.*?<!--/mosaico-->", lambda _: bloco, novo, count=1, flags=re.S)
+    else:
+        novo = novo.replace('<article class="bloco">\n    <span class="num-l">Tutoriais</span>', f'<article class="bloco topo-cj">\n    {bloco}\n    <span class="num-l">Tutoriais</span>', 1)
     if novo != s:
         arq.write_text(novo, encoding="utf-8")
 

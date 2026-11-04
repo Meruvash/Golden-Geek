@@ -140,6 +140,29 @@ def checar_online(erros, urls):
             erros.append(f"no ar: {url} não respondeu ({ex.__class__.__name__})")
 
 
+def checar_como_jogar(erros):
+    """Como Jogar: foto no topo e imagem em todas as seções (pedido do editor em 04/11/2026)."""
+    import re as _re
+    pasta = ROOT / "conteudo" / "como-jogar"
+    feitos = []
+    for arq in sorted(pasta.glob("*.json")) if pasta.exists() else []:
+        m = json.loads(arq.read_text(encoding="utf-8"))
+        if not m.get("publicar") or m.get("html_manual"):
+            continue
+        pag = ROOT / "como-jogar" / m["slug"] / "index.html"
+        if not pag.exists():
+            erros.append(f"como jogar {m['slug']}: página não gerada (rode tools/build_como_jogar.py)")
+            continue
+        feitos.append(m)
+        h = pag.read_text(encoding="utf-8")
+        if 'class="foto-topo' not in h:
+            erros.append(f"como jogar {m['slug']}: sem foto no topo (rode tools/build_como_jogar.py; fotos em como-jogar/{m['slug']}/fotos/)")
+        sem = [sid for sid, corpo in _re.findall(r'<section class="bloco sec[^"]*" id="([^"]+)">(.*?)</section>', h, _re.S) if "<figure" not in corpo]
+        if sem:
+            erros.append(f"como jogar {m['slug']}: seção sem foto: {', '.join(sem)}")
+    return feitos
+
+
 def main():
     args = sys.argv[1:]
     dia = args[args.index("--data") + 1] if "--data" in args else date.today().isoformat()
@@ -150,6 +173,7 @@ def main():
     checar_links(erros)
     checar_sitemap(erros, ns, publicadas)
     checar_seo.checar(erros)
+    tutoriais = checar_como_jogar(erros)
 
     do_dia_n = [n for n in ns if n["data"] == dia]
     do_dia_r = [(p, c) for p, c in publicadas if p.get("data") == dia]
@@ -170,7 +194,11 @@ def main():
         for f in c.get("fontes", []):
             nome, url = (f.get("nome"), f.get("url")) if isinstance(f, dict) else (f[0], f[1] if len(f) > 1 else "")
             print(f"  - {nome}: {url}")
-    if not (do_dia_n or do_dia_r):
+    do_dia_t = [m for m in tutoriais if m.get("data") == dia]
+    for m in do_dia_t:
+        print(f"- como jogar `conteudo/como-jogar/{m['slug']}.json`: {m['jogo']} ({SITE}/como-jogar/{m['slug']}/)")
+    print(f"\nComo Jogar em {dia}: {len(do_dia_t)} tutorial(is) (meta: pelo menos 5 por dia)")
+    if not (do_dia_n or do_dia_r or do_dia_t):
         print("- nada publicado nesta data")
     sys.exit(1 if erros else 0)
 
