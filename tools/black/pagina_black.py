@@ -372,12 +372,12 @@ const motivo=()=>{if(embutido)return 'Você abriu o site dentro de outro aplicat
  return null};
 if(tem&&!(ios&&!app))navigator.serviceWorker.register('/sw-black.js').then(async r=>{const s=await r.pushManager.getSubscription();if(s&&Notification.permission==='granted')mostra('.wp-ok')}).catch(()=>{});
 btn.addEventListener('click',async()=>{const m=motivo();
- if(m===''){mostra('.wp-ios');const i=document.querySelector('.inst');if(i)i.click();return}
+ if(m===''){mostra('.wp-ios');window.EliteGuia&&EliteGuia.abrir('instalar');return}
  if(m){mostra('.wp-erro',m);return}
  btn.textContent='Ativando…';btn.disabled=true;
- try{if(Notification.permission==='denied'){mostra('.wp-neg');return}
+ try{if(Notification.permission==='denied'){mostra('.wp-neg');window.EliteGuia&&EliteGuia.abrir('permissao');return}
   const p=await prazo(Notification.requestPermission(),60000,'a pergunta de permissão não apareceu');
-  if(p!=='granted'){mostra('.wp-neg');return}
+  if(p!=='granted'){mostra('.wp-neg');window.EliteGuia&&EliteGuia.abrir('permissao');return}
   const r=await prazo(navigator.serviceWorker.register('/sw-black.js'),15000,'o navegador não registrou o serviço de alertas');
   await prazo(navigator.serviceWorker.ready,15000,'o serviço de alertas não ficou pronto');
   const s=(await r.pushManager.getSubscription())||await prazo(r.pushManager.subscribe({userVisibleOnly:true,applicationServerKey:chave(w.dataset.chave)}),20000,'o serviço de push do navegador não respondeu');
@@ -393,30 +393,19 @@ q('.wp-sair').addEventListener('click',async()=>{try{const r=await navigator.ser
 </script>"""
 
 
-JS_INSTALA = """<script>
-(()=>{const ua=navigator.userAgent,ipad=navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1,ios=/iPhone|iPad|iPod/i.test(ua)||ipad;
-const app=window.matchMedia('(display-mode: standalone)').matches||navigator.standalone===true;if(app)return;
-const bts=[...document.querySelectorAll('.inst')];let adiado=null;
-const liga=()=>bts.forEach(b=>b.hidden=false);
+JS_INSTALA = """<script src="/guia-celular.js?v=2" defer></script>
+<script>
+document.addEventListener('DOMContentLoaded',()=>{const ua=navigator.userAgent,ios=/iPhone|iPad|iPod/i.test(ua)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1);
+const app=window.matchMedia('(display-mode: standalone)').matches||navigator.standalone===true;
+const bts=[...document.querySelectorAll('.inst:not(.guia-perm)')];let adiado=null;const liga=()=>{if(!app)bts.forEach(b=>b.hidden=false)};
 window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();adiado=e;liga()});
 window.addEventListener('appinstalled',()=>bts.forEach(b=>b.hidden=true));
-const embutido=/Instagram|FBAN|FBAV|FB_IAB|Line\\/|WhatsApp|Telegram|TikTok/i.test(ua);
-if(ios||('install' in navigator))liga();
-const v=+((ua.match(/OS (\\d+)_/)||[])[1]||0),chrome=/CriOS|EdgiOS|FxiOS/.test(ua);
-const guia=()=>{let onde,passos;
- if(embutido){onde='tr';passos=['Toque nos três pontinhos <b>(⋯)</b> aqui em cima','Escolha <b>Abrir no Safari</b>','No Safari, toque de novo neste botão']}
- else if(chrome){onde='tr';passos=['Toque em <b>Compartilhar</b> <span class="ig">⬆️</span> ao lado do endereço, aqui em cima','Escolha <b>Adicionar à Tela de Início</b>','Toque em <b>Adicionar</b>']}
- else if(ipad){onde='tr';passos=['Toque em <b>Compartilhar</b> <span class="ig">⬆️</span> aqui em cima','Escolha <b>Adicionar à Tela de Início</b>','Toque em <b>Adicionar</b>']}
- else if(v>=26){onde='br';passos=['Toque nos <b>três pontinhos (⋯)</b> aqui embaixo, à direita','Toque em <b>Compartilhar</b> <span class="ig">⬆️</span> e depois em <b>Adicionar à Tela de Início</b>','Toque em <b>Adicionar</b>']}
- else{onde='bc';passos=['Toque em <b>Compartilhar</b> <span class="ig">⬆️</span> aqui embaixo','Role e toque em <b>Adicionar à Tela de Início</b>','Toque em <b>Adicionar</b>']}
- const o=document.createElement('div');o.className='inst-guia inst-'+onde;o.setAttribute('role','dialog');o.setAttribute('aria-label','Como adicionar à Tela de Início');
- o.innerHTML='<div class="inst-caixa"><button type="button" class="inst-x" aria-label="Fechar">✕</button><b class="inst-t">Elite na Tela de Início</b><ol>'+passos.map(x=>'<li>'+x+'</li>').join('')+'</ol><p>Depois, abra pelo ícone novo e toque em <b>Ativar alertas</b>. <button type="button" class="inst" hidden>📲 Adicionar à Tela de Início</button></p></div><div class="inst-seta" aria-hidden="true">'+(onde==='tr'?'⬆':'⬇')+'</div>';
- o.addEventListener('click',e=>{if(e.target===o||e.target.classList.contains('inst-x'))o.remove()});document.body.append(o)};
+if(ios||/Android/i.test(ua))liga();
 bts.forEach(b=>b.addEventListener('click',async()=>{
  if(adiado){adiado.prompt();const r=await adiado.userChoice;adiado=null;if(r.outcome==='accepted')bts.forEach(x=>x.hidden=true);return}
  if('install' in navigator){try{await navigator.install();return}catch(e){}}
- if(ios){guia();return}
- alert('No Chrome: toque nos três pontinhos (⋮) e em "Instalar app" ou "Adicionar à tela inicial".')}))})();
+ window.EliteGuia&&EliteGuia.abrir('instalar')}));
+document.querySelectorAll('.guia-perm').forEach(b=>b.addEventListener('click',()=>window.EliteGuia&&EliteGuia.abrir('permissao')))});
 </script>"""
 
 
@@ -574,7 +563,7 @@ def build(radar_itens, armadilhas, quase=()):
    <button type="button" class="al-btn wp-ativar">🔔 Ativar alertas neste celular</button>
    <p class="wp-ok" hidden>✅ Pronto! Os alertas do Black de Verdade vão chegar neste aparelho. <button type="button" class="al-mini wp-sair">Desativar</button></p>
    <p class="wp-ios" hidden>No iPhone, a Apple só deixa sites mandarem notificação depois de adicionados à tela de início: toque em <b>Compartilhar</b> (o quadrado com a seta ⬆️), depois em <b>Adicionar à Tela de Início</b>. Abra o Elite pelo ícone novo, volte aqui e toque em <b>Ativar alertas</b>.</p>
-   <p class="wp-neg" hidden>As notificações estão bloqueadas para este site. Toque no cadeado ao lado do endereço, em <b>Permissões</b> ou <b>Notificações</b>, escolha <b>Permitir</b> e toque de novo no botão.</p>
+   <p class="wp-neg" hidden>As notificações estão bloqueadas para este site. É preciso liberar no navegador (leva 3 toques). <button type="button" class="inst guia-perm">📍 Me mostre onde tocar</button></p>
    <p class="wp-erro" hidden>Este navegador não aceita notificações de sites. Use o Chrome no Android, o Safari no iPhone (depois de adicionar à tela de início) ou um navegador de computador.</p>
    <p class="al-dica">Sem instalar nada: o próprio navegador mostra o alerta na barra de notificações, com o preço e o desconto real. Para parar, é só tocar em Desativar.</p>
   </div>
