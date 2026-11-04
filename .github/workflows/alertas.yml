@@ -28,6 +28,8 @@ jobs:
       - name: Envia a fila
         env:
           NTFY_TOKEN: ${{ secrets.NTFY_TOKEN }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CANAL: ${{ secrets.TELEGRAM_CANAL }}
         run: python3 tools/black/alertas.py --fila
       - name: Esvazia a fila no repositório
         run: |

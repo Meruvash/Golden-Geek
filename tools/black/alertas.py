@@ -13,6 +13,11 @@ o envio vai autenticado e o limite diário passa a ser da conta, não do endere�
 por IP, e IP compartilhado esgota rápido). Alerta que não sai fica pendente e é tentado de novo nas leituras
 seguintes, por até 6 horas.
 
+Telegram (o caminho de um toque no iPhone, onde o app ntfy não abre por link): com os secrets TELEGRAM_BOT_TOKEN
+(bot criado no @BotFather) e TELEGRAM_CANAL (@nome do canal, com o bot como administrador), cada alerta também é
+publicado no canal do Telegram, com a foto da caixa e um botão "Ver a oferta". O nome público do canal vai em
+conteudo/black/alertas_config.json ({"telegram": "nomedocanal"}) para a página mostrar o botão "Entrar no canal".
+
 Uso manual: python3 tools/black/alertas.py [--teste]   (--teste manda um alerta só para o canal de teste)
 """
 import datetime as dt
@@ -41,7 +46,7 @@ def brl(v):
 
 def enviar(titulo, texto, link=PAGINA, tags="game_die", prioridade="default", topico=TOPICO, imagem=None):
     """Sem NTFY_TOKEN (leitura de reserva fora do GitHub), o alerta vai para a fila e o workflow alertas.yml envia."""
-    if not os.environ.get("NTFY_TOKEN") and topico == TOPICO:
+    if not (os.environ.get("NTFY_TOKEN") or os.environ.get("TELEGRAM_BOT_TOKEN")) and topico == TOPICO:
         fila = json.loads(FILA.read_text(encoding="utf-8")) if FILA.exists() else []
         fila.append({"titulo": titulo, "texto": texto, "link": link, "tags": tags, "prioridade": prioridade, "imagem": imagem,
                      "hora": dt.datetime.now(dt.timezone.utc).isoformat(timespec="minutes")})
@@ -67,7 +72,37 @@ def enviar_fila():
     print(f"ok fila: {len(fila) - len(sobra)} alertas enviados, {len(sobra)} ficaram para a próxima")
 
 
+def _telegram(titulo, texto, link, imagem=None):
+    """Publica no canal do Telegram, se o bot estiver configurado (senão, não faz nada e devolve True)."""
+    token, canal = os.environ.get("TELEGRAM_BOT_TOKEN"), os.environ.get("TELEGRAM_CANAL")
+    if not token or not canal:
+        return True
+    canal = canal if canal.startswith(("@", "-")) else "@" + canal
+    legenda = f"<b>{_esc(titulo)}</b>\n{_esc(texto)}\n\n<a href=\"{PAGINA}\">Black de Verdade</a>"
+    botoes = {"inline_keyboard": [[{"text": "Ver a oferta", "url": link}], [{"text": "Todas as ofertas", "url": PAGINA}]]}
+    base = f"https://api.telegram.org/bot{token}"
+    try:
+        if imagem:
+            r = requests.post(f"{base}/sendPhoto", json={"chat_id": canal, "photo": imagem, "caption": legenda, "parse_mode": "HTML",
+                                                          "reply_markup": botoes}, timeout=30)
+            if r.status_code == 200:
+                return True
+        r = requests.post(f"{base}/sendMessage", json={"chat_id": canal, "text": legenda, "parse_mode": "HTML",
+                                                        "reply_markup": botoes, "disable_web_page_preview": False}, timeout=30)
+        if r.status_code != 200:
+            print(f"   Telegram respondeu {r.status_code}: {r.text[:120]}")
+        return r.status_code == 200
+    except requests.RequestException:
+        return False
+
+
+def _esc(s):
+    return (s or "").replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
+
 def _publicar(titulo, texto, link=PAGINA, tags="game_die", prioridade="default", topico=TOPICO, imagem=None):
+    if topico == TOPICO:
+        _telegram(titulo, texto, link, imagem)
     """Manda um alerta para o canal. Os cabeçalhos do ntfy vão em ASCII; título e texto acentuados vão no corpo JSON."""
     corpo = {"topic": topico, "title": titulo, "message": texto, "click": link, "tags": tags.split(","),
              "priority": {"min": 1, "low": 2, "default": 3, "high": 4, "max": 5}[prioridade], "icon": ICONE,

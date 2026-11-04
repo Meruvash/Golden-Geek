@@ -126,6 +126,7 @@ CSS = """<style>
 .bk-alerta .al-os{margin:12px 0}.al-tag{font-weight:800;margin:0 0 10px}
 .al-btn{display:flex;align-items:center;justify-content:center;width:100%;min-height:56px;padding:14px 18px;border-radius:14px;background:#e3b23c;color:#111;font-weight:900;font-size:1.08rem;text-decoration:none;border:0;cursor:pointer;font-family:inherit;box-sizing:border-box}
 .bk-alerta a.al-btn,.bk-alerta a.al-btn:visited,.bk-alerta a.al-btn:hover{color:#111;text-decoration:none}
+.bk-alerta a.al-tg,.bk-alerta a.al-tg:visited{background:#2aabee;color:#fff}
 .al-btn:active{transform:scale(.98)}.al-dica,.al-ajuda,.al-txt,.al-canal{font-size:.9rem;color:#c9ced8;margin:10px 0 0}.al-dica a,.al-ajuda a{color:#e3b23c;font-weight:700}
 .al-ajuda{background:#2a1f12;border:1px solid #6b5420;border-radius:10px;padding:10px}
 .al-passos{list-style:none;margin:0;padding:0;display:grid;gap:10px}.al-qr{display:block;background:#fff;border-radius:12px;padding:8px;width:180px;height:180px}
@@ -368,6 +369,12 @@ def build(radar_itens, armadilhas, quase=()):
     url = f"{SITE}/black/"
     agora_ = radar.agora()
     cps = cupons()
+    try:
+        tg = json.loads((ROOT / "conteudo" / "black" / "alertas_config.json").read_text(encoding="utf-8")).get("telegram")
+    except (FileNotFoundError, ValueError):
+        tg = None
+    tg_btn = (f'<a class="al-btn al-tg" href="https://t.me/{e(tg.lstrip("@"))}" target="_blank" rel="noopener">'
+              f'Entrar no canal do Telegram (1 toque)</a>') if tg else ""
     titulo = "Black de Verdade: ofertas de jogos de tabuleiro com desconto real"
     # um grupo por jogo, na ordem do maior desconto; a primeira oferta de cada grupo é a melhor
     grupos = {}
@@ -495,10 +502,11 @@ def build(radar_itens, armadilhas, quase=()):
    <p class="al-tag">No seu Android, é um toque só:</p>
    <a class="al-btn" href="intent://ntfy.sh/eliteboardgamers-black?display=Black%20de%20Verdade#Intent;scheme=ntfy;package=io.heckel.ntfy;S.browser_fallback_url=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dio.heckel.ntfy;end" data-al="android">Ativar alertas no celular</a>
    <p class="al-dica">Se o app ntfy ainda não estiver instalado, a Google Play abre: toque em <b>Instalar</b>, volte para esta página e toque de novo no botão. O app abre já no canal do Black de Verdade: toque em <b>Assinar</b> (Subscribe) e pronto.</p>
+   {f'<p class="al-tag" style="margin-top:16px">Ou pelo Telegram, também com um toque:</p>{tg_btn}' if tg else ""}
    <p class="al-ajuda" hidden>Não abriu? <a href="https://play.google.com/store/apps/details?id=io.heckel.ntfy" target="_blank" rel="noopener">Instale o ntfy na Google Play</a> e toque no botão de novo. Ou abra o ntfy, toque em <b>+</b> e digite <b>eliteboardgamers-black</b>.</p>
   </div>
   <div class="al-os" data-os="ios">
-   <p class="al-tag">No iPhone, são 3 passos:</p>
+   {f'<p class="al-tag">No iPhone, é um toque só:</p>{tg_btn}<p class="al-dica">Abre o Telegram no canal do Black de Verdade: toque em <b>Entrar</b> e as promoções chegam como mensagem. Não tem Telegram? <a href="https://apps.apple.com/app/telegram-messenger/id686449807" target="_blank" rel="noopener">Instale aqui</a>.</p><p class="al-tag" style="margin-top:16px">Prefere sem Telegram? Pelo app ntfy, são 3 passos:</p>' if tg else '<p class="al-tag">No iPhone, são 3 passos:</p>'}
    <ol class="al-passos">
     <li><a class="al-btn" href="https://apps.apple.com/app/ntfy/id1625396347" target="_blank" rel="noopener">1. Instalar o ntfy (App Store)</a></li>
     <li><button type="button" class="al-btn al-copia" data-copia="eliteboardgamers-black">2. Copiar o nome do canal</button></li>
@@ -508,6 +516,7 @@ def build(radar_itens, armadilhas, quase=()):
   <div class="al-os" data-os="pc">
    <p class="al-tag">Aponte a câmera do celular para o código: ele abre esta página no celular, com o botão certo para o seu aparelho.</p>
    <img class="al-qr" src="../img/black/qr-alertas.svg" width="180" height="180" alt="QR code que abre a página de alertas do Black de Verdade no celular">
+   {f'<p class="al-tag" style="margin-top:16px">Ou entre no canal do Telegram:</p>{tg_btn}' if tg else ""}
    <p class="al-dica">Prefere receber neste computador? <a href="https://ntfy.sh/eliteboardgamers-black" target="_blank" rel="noopener">Abra o canal no navegador</a>, toque em <b>Subscribe</b> e permita as notificações.</p>
   </div>
   <p class="al-canal">Nome do canal: <b>eliteboardgamers-black</b> <button type="button" class="al-mini al-copia" data-copia="eliteboardgamers-black">Copiar</button> · para parar, é só cancelar a assinatura no app.</p>
