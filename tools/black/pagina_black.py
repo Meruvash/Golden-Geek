@@ -354,6 +354,9 @@ document.addEventListener('click',async e=>{const b=e.target.closest('.cup-cod')
 </script>"""
 
 
+TOP_HORAS = 6  # janela do Top 5 (pedido do usuário em 04/11/2026)
+
+
 JS_PUSH = """<script>
 (()=>{const w=document.querySelector('.wp');if(!w)return;
 const q=s=>w.querySelector(s),btn=q('.wp-ativar'),txt=btn.textContent;
@@ -442,7 +445,20 @@ def build(radar_itens, armadilhas, quase=(), outras=()):
     for x in radar_itens:
         grupos.setdefault(x["slug"], []).append(x)
     melhor = {s: g[0] for s, g in grupos.items()}
-    top = sorted(melhor.values(), key=lambda x: -((x["bgg"] or 7.0) * x["desc"]))[:5]
+    # Top 5 = as melhores das últimas 6 horas (pedido do usuário em 04/11/2026): só ofertas encontradas ou conferidas
+    # desde então; a página é refeita a cada leitura do robô, então o Top 5 muda sozinho quando aparece oferta nova.
+    # Com menos de 5 na janela, completa com as melhores mais antigas (o cartão mostra a hora da conferência).
+    def _hora(x):
+        try:
+            d = dt.datetime.fromisoformat(str(x.get("verificado") or "").replace("Z", "+00:00"))
+            return d if d.tzinfo else d.replace(tzinfo=agora_.tzinfo)
+        except ValueError:
+            return None
+    nota_top = lambda x: -((x["bgg"] or 7.0) * x["desc"])
+    janela_top = agora_ - dt.timedelta(hours=TOP_HORAS)
+    recentes = sorted((x for x in melhor.values() if (_hora(x) or janela_top) > janela_top), key=nota_top)
+    top = recentes[:5] + sorted((x for x in melhor.values() if x not in recentes), key=nota_top)[:max(0, 5 - len(recentes))]
+    n_top_recentes = min(5, len(recentes))
     n_jogos = sum(1 for x in melhor.values() if x["tipo"] != "expansion")
     n_exps = len(melhor) - n_jogos
     maior = max((x["desc"] for x in melhor.values()), default=0)
@@ -605,8 +621,8 @@ def build(radar_itens, armadilhas, quase=(), outras=()):
  {JS_PUSH if push else ""}
  {JS_INSTALA}
  <section id="melhores" aria-labelledby="h-melhores">
-  <h2 id="h-melhores">As 5 melhores agora</h2>
-  <p class="sub">A melhor combinação de nota no BGG e desconto real.</p>
+  <h2 id="h-melhores">As 5 melhores das últimas 6 horas</h2>
+  <p class="sub">A melhor combinação de nota no BGG e desconto real entre as ofertas encontradas ou conferidas desde {(agora_ - dt.timedelta(hours=TOP_HORAS)).strftime("%Hh%M")}. Muda sozinho a cada leitura do radar.{"" if n_top_recentes >= 5 or not top else f" Nas últimas 6 horas apareceram {n_top_recentes}; as outras {len(top) - n_top_recentes} são as melhores de antes, com a hora da conferência no cartão."}</p>
   {f'<ol class="dest">{dest_html}</ol><p class="dica-arrasta">Arraste para o lado para ver as cinco.</p>' if dest_html else '<p class="vazio">Nenhum jogo passou no corte nesta leitura. O radar tenta de novo em 30 minutos.</p>'}
  </section>
  <section id="todas" aria-labelledby="h-todas">
