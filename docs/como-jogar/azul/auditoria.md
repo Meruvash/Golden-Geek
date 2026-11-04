@@ -126,3 +126,46 @@ Feita em 31/10/2026 por um auditor que não escreveu o texto.
 **Em aberto.** As lacunas L1 e L2 continuam no bloco [!edicao] das Situações especiais (o manual de fato não as resolve). "Azulejos da parede nunca voltam ao saco" (Situações especiais) não está escrito no manual, mas decorre da p. 5 (o saco só é reabastecido com a tampa); mantido. A ordem chão antes dos bônus (R5) segue como interpretação bem apoiada nas p. 5 e 6.
 
 **Teste de execução.** Preparação para 2 jogadores (5 expositores, 20 azulejos) e para 4 (9 expositores, 36 azulejos), e uma rodada completa (Oferta até esvaziar mesa e centro, Revestimento de cima para baixo, limpeza, chão, Preparação pelo dono do marcador), feitas só com o texto, sem adivinhar nada essencial. Pontos em que hesitei: o número total de azulejos para 4 jogadores não aparece escrito (conta trivial); no início da 2ª rodada, quem põe o marcador no centro está no passo 5 da Preparação para a próxima rodada, mas não na folha de consulta ("Próxima rodada"), que só diz quem enche os expositores (a Preparação da folha cobre isso). Avaliação final respondida antes de ler as respostas: 8 de 8, iguais às do texto.
+
+## Seção de montagem (04/11/2026)
+
+Pedido do editor de 04/11/2026 (PADRAO_EDITORIAL.md, "Montar a mesa passo a passo"). Nova seção `## setup. Montar a mesa passo a passo`, antes do "Comece a jogar"; o "Monte a mesa" do Comece a jogar virou um resumo de 4 itens que remete a ela.
+
+**Fonte.** Manual brasileiro baixado de novo em 04/11/2026 pelo mesmo endereço do dossiê (`https://api-prd.mundogalapagos.com.br/library-download/store/file?id=1458&tagId=2&group=b2c`, curl com user-agent de robô identificado, resposta 200, .zip de 3.070.068 bytes com `AZU001_regras_v1.0.pdf`, 6 páginas, criado em 27/02/2023). O `robots.txt` do host da API responde 404 (não há restrição publicada). Texto extraído com `pdftotext -layout` em `/tmp/claude-0/-home-user/6a4d6f51-afb4-5576-b0bf-e2035e13b944/scratchpad/setup/azul/manual.txt` (p. 2 sozinha em `p2.txt`, na mesma pasta); p. 2 e p. 6 renderizadas a 600 dpi para os recortes. A preparação inteira está na p. 2, passos 1 a 5 e a frase "Devolva para a caixa".
+
+**Passos e páginas.**
+
+| Passo da seção | Manual | Observação |
+|---|---|---|
+| Lista "O que a preparação usa" | p. 2 | O manual não tem lista de componentes. As quantidades são as da página de preparação: 1 tabuleiro e 1 marcador de pontuação por jogador (passos 1 e 2), 5, 7 ou 9 expositores (passo 3), 100 azulejos, 20 de cada cor, e o saco (passo 4), 1 marcador de primeiro jogador (passo 5; o número 1 lido na ilustração). Não afirmamos quantos tabuleiros e expositores vêm na caixa |
+| 1. Tabuleiro com a parede colorida, todos no mesmo lado | p. 2, passo 1; lado cinza p. 6 | |
+| 2. Marcador de pontuação no 0 | p. 2, passo 2 | "Canto de cima à esquerda" lido na ilustração da p. 2 |
+| 3. Expositores em círculo, 5/7/9; centro vazio | p. 2, passo 3 | "Começa vazio": nada é posto no centro na preparação |
+| 4. 100 azulejos no saco | p. 2, passo 4 | O manual diz "peças" aqui; o tutorial usa "azulejos" (glossário do dossiê) |
+| 5. Marcador de primeiro jogador para quem visitou Portugal mais recentemente | p. 2, passo 5 (primeira metade) | O passo 5 do manual tem duas ações; viraram os passos 5 e 6 |
+| 6. 4 azulejos ao acaso em cada expositor | p. 2, passo 5 (segunda metade) | |
+| 7. Devolver o que não será usado | p. 2, frase final | |
+| 8. Tampa da caixa à mão | p. 4 e 5 | Não está na página de preparação; o tutorial já a citava no Comece a jogar |
+| Tabela por número de jogadores | p. 2, passo 3 | Recalculada em Python: expositores 5/7/9; azulejos tirados 4 por expositor = 20/28/36; ficam no saco 100 menos isso = 80/72/64 |
+| Quem começa | p. 2, passo 5; p. 3, "Oferta da fábrica" | Põe o marcador no centro e joga; sentido horário |
+| Pergunta `??` | p. 2 | Erradas: 9 expositores (é a de 4 jogadores), cores escolhidas (o manual diz "aleatoriamente"), lados diferentes ("todos os jogadores devem usar o mesmo lado") |
+
+**Figuras e páginas.** Recortes só da parte gráfica, sem blocos de texto do manual; as letras A a F e os rótulos "Trilha de pontuação", "Fileiras de modelo", "Parede", "Fileira do chão" e "Centro da mesa" fazem parte do desenho e ficaram (os termos são os do tutorial). Foram cobertos com a cor do fundo só o número de página da p. 2 (perto do tabuleiro e no canto da mesa) e restos da coluna de texto ao lado do círculo de expositores. WebP, qualidade 80.
+
+| Arquivo | Passo | Manual | Tamanho |
+|---|---|---|---|
+| `figuras/setup-tabuleiro.webp` | 1 | p. 2, tabuleiro A | 1000 x 805 |
+| `figuras/setup-lado-cinza.webp` | 1 | p. 6, Partida Alternativa | 780 x 780 (tamanho natural a 600 dpi; não ampliado) |
+| `figuras/setup-marcador.webp` | 2 | p. 2, detalhe do marcador B e da seta para o 0 | 1000 x 365 |
+| `figuras/setup-expositores.webp` | 3 | p. 2, expositores C e centro da mesa | 1000 x 862 |
+| `figuras/setup-saco.webp` | 4 | p. 2, azulejos D e saco E | 1000 x 1030 |
+| `figuras/setup-mesa.webp` | 6 | p. 2, ilustração inteira da mesa (expositores, saco, seta, marcador F) | 900 x 1377 |
+| `../../azul/fotos/componentes-1.webp` | depois da tabela | Foto de Pongrácz Zsolt, CC BY-SA 3.0, Wikimedia Commons (`azul/fotos/fontes.json`) | |
+
+A foto da mesa marcada como principal (`mesa-2.webp`) já abre a página no topo; para não repetir, a seção usa `componentes-1.webp`, e a legenda diz que ela mostra uma partida em andamento, não a montagem.
+
+**Figura existente não reaproveitada.** `figuras/preparacao.webp` (etapa 1) mostra o mesmo desenho, mas com as letras D e E trocadas em relação à p. 2 do manual brasileiro: nela, E está junto dos azulejos e D junto do saco; na p. 2 baixada hoje, D são os azulejos ("100 peças (D)") e E o saco ("saco (E)"). Provavelmente veio de outro arquivo (o manual em inglês). Por isso a seção usa um recorte novo da p. 2 brasileira (`setup-mesa.webp`). A legenda atual de `preparacao.webp` não cita letras, então não há erro no texto; fica a sugestão de trocar o arquivo pelo recorte brasileiro.
+
+**O que o manual não ilustra.** O passo 7 (o que volta para a caixa), o passo 8 (a tampa da caixa) e o centro da mesa vazio antes do passo 6 não têm desenho próprio; o passo 5 (entregar o marcador de primeiro jogador) só aparece como a peça F parada na mesa, dentro de `setup-mesa.webp`. A página de preparação não mostra a mesa com 2 ou com 4 jogadores: o desenho é sempre o de 3 (7 expositores). Nenhuma imagem foi inventada para cobrir essas lacunas.
+
+**Conferências.** `python3 tools/checar_comece.py docs/como-jogar/azul/tutorial.md`: dentro da diretriz. `python3 tools/vicios.py docs/como-jogar/azul/tutorial.md`: limpo. Zero travessões e meias-riscas no tutorial. A página foi gerada em memória com `tools/como_jogar_md.py` (sem gravar HTML) para conferir que as 7 imagens existem e que a lista numerada continua de 1 a 8 entre as figuras.

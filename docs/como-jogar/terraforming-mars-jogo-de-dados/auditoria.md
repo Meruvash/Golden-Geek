@@ -40,3 +40,14 @@ Não tratados, por falta de base no manual ou por serem de outro nível: efeito 
 ## 3. Autoverificação
 
 Contas refeitas em script (`contas.py`, scratchpad). Zero travessões. `tools/vicios.py`: nenhum aviso.
+
+## 4. Seção de montagem (04/11/2026)
+
+Pedido do editor de 04/11/2026 (PADRAO_EDITORIAL.md, "Montar a mesa passo a passo"). O mesmo manual do dossiê foi baixado de novo em 04/11/2026 (https://meeplebr.com/wp-content/uploads/2022/12/TM_DICEGAME_RULES_PT-BR.pdf; robots.txt da Meeple BR libera tudo; user-agent de robô), 12 páginas, arquivo de 27/01/2023, igual ao usado no tutorial. Texto extraído com `pdftotext` e páginas 2, 3 e 9 renderizadas a 300 dpi, no scratchpad da sessão (`setup/tmdg/`).
+
+- Nova seção `## setup. Montar a mesa passo a passo` antes do "Comece a jogar", na ordem dos 11 itens da p. 3, desdobrados em 28 passos de uma ação cada; tabela por número de jogadores (p. 3 e 9); o que volta para a caixa; quem começa; diferenças da partida solo (p. 9); conferência final e uma pergunta.
+- Componentes e quantidades: o manual não tem lista de componentes. As quantidades vêm da página do produto da Meeple BR (consultada em 04/11/2026); a coluna ao lado diz o que o manual fala de cada um. Lacunas: quantidade de cada tipo de carta; o que são os 2 cartões de referência e os 4 tabuleiros de jogador (o manual não os menciona).
+- Figuras novas, recortadas das ilustrações do manual, só a parte gráfica (rótulos amarelos de texto cortados fora ou cobertos; ficam as setas amarelas que apontavam para o estoque, os prêmios e os marcos): `setup-tabuleiro.webp`, `setup-estoque.webp`, `setup-projetos.webp`, `setup-bonus.webp`, `setup-premios.webp`, `setup-marcos.webp`, `setup-mao.webp` (p. 2) e `setup-producao.webp` (p. 3). Reaproveitada: `corporacao.webp` (p. 3). Foto oficial usada uma vez: `fotos/mesa-1.webp` (FryxGames, crédito já em `fontes.json`).
+- Passos sem ilustração no manual (sem figura, nada inventado): 13 (sorteio dos dados de prêmio), 17 (quem começa), 18 e 19 (distribuição das cartas, mostradas só já na mão, figura do passo 21), 27 e 28 (penalidade e início) e toda a preparação solo (a p. 9 não tem ilustração).
+- Lacuna nova: o manual não diz o que fazer com os 2 dados não sorteados para os prêmios (p. 3); o texto diz isso e sugere que voltem ao estoque, de onde saíram.
+- "Comece a jogar" reescrito para a diretriz: "Monte a mesa" virou resumo que remete à nova seção; "Seu primeiro turno" com exemplo resolvido, tarefa para completar e tarefa sem apoio (regras das p. 4, 6 e 7); "Ainda não precisa saber" com as remissões às etapas; a tabela de dados saiu dali (continua na etapa 1 e na folha de consulta). `tools/checar_comece.py`: dentro da diretriz. Zero travessões. `tools/vicios.py`: nenhum aviso.

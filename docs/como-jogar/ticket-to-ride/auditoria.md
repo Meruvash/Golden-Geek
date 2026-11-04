@@ -135,3 +135,30 @@ Feita em 31/10/2026 por um auditor que não escreveu o texto.
 - Avaliação final respondida antes de ler as respostas: não; mais uma; não; não; 10 e 4; não; quatro; +4. As oito batem com as respostas do tutorial.
 
 **Veredito.** Com as duas correções, o tutorial está pronto para publicar.
+
+## Seção de montagem (04/11/2026)
+
+Pedido do editor: seção `## setup. Montar a mesa passo a passo` antes do "Comece a jogar", seguindo a "Preparação do Jogo" do manual Galápagos (p. 2) na mesma ordem, com a ilustração numerada de 1 a 6 que ocupa as p. 2 e 3.
+
+- **Manual rebaixado nesta data** da mesma origem do dossiê (API da Biblioteca de Downloads da Galápagos, `id=2280&tagId=2`; HTTP 200, sem login; robots.txt do host responde 404, sem restrição), com user-agent de robô. ZIP com "T2R rules BR-compressed.pdf", sha256 78280479e66844936657cf13c7527e50ba445a9412cbe932b7ea80307c101c8c, o mesmo arquivo de 31/10/2026.
+- **Conteúdo e fonte:** componentes e quantidades, inclusive a conta 110 + 30 + 1 + 1 + 2 = 144 cartas (p. 2); tabuleiro no centro, 45 trens e marcador no Início (1), 4 Cartas de Vagão (2), resto perto do tabuleiro e 5 reveladas (3), carta de Maior Caminho Contínuo virada para cima (4), 3 Bilhetes (5), ficar com 2 ou 3, devolvidos ao final da pilha (6), segredo até o fim (p. 2); troca das 5 abertas com 3 Locomotivas "a qualquer momento" (p. 3); o viajante mais experiente começa, sentido horário (p. 2); Rotas Duplas com 2 ou 3 jogadores e com 4 ou 5 (p. 3). A tabela por número de jogadores mostra que só as Rotas Duplas mudam; trens, mão e Bilhetes são iguais de 2 a 5.
+- **Interpretado (dito como tal ou com base declarada):** a pilha de compras "virada para baixo" (o texto só diz "coloque o restante"; a ilustração mostra o verso); a escolha da cor como ação separada; o que fica na caixa: trens extras ("para reposição", p. 2), cores sem jogador e as 2 cartas promocionais, que nenhuma regra usa (p. 2 a 4). A Carta de Ajuda não aparece no texto da preparação, só na ilustração ao lado do tabuleiro (p. 2).
+- **Figuras novas** (recortes só da parte gráfica, renderizadas a 600 dpi, as p. 2 e 3 emendadas pela marca de corte, sem legendas do manual): `setup-componentes.webp` (p. 2: as nove Cartas de Vagão, Carta de Ajuda, Bilhete e carta bônus, recompostas sem os textos), `setup-tabuleiro.webp` (p. 2 e 3: o tabuleiro da ilustração de preparação), `setup-trens.webp` (p. 2 e 3: os cinco conjuntos de trens, recompostos lado a lado), `setup-inicio.webp` (p. 2: o canto do Início com o número 1), `setup-mao.webp` (p. 2: a mão do número 2), `setup-bonus.webp` (p. 3: a carta do número 4), `setup-bilhetes.webp` (p. 2: os Bilhetes do número 5 e um Bilhete de frente, do quadro de componentes). Reaproveitadas: `cartas-abertas.webp` (p. 3) no passo 5 e `preparacao.webp` (p. 2 e 3) depois do passo 10, que saiu da etapa 1 para não repetir a mesma figura. Foto oficial `fotos/mesa-1.webp` uma vez, crédito "Imagem: Days of Wonder" conforme `fotos/fontes.json`; a legenda avisa que as cartas da foto têm outra arte que a do manual de 2016. `setup-mao`, `setup-bonus` e `setup-inicio` ficam menores que 800 px de largura porque o detalhe no manual é pequeno; não foram ampliadas além da resolução de origem.
+- **Passos sem ilustração no manual:** a troca das 5 cartas abertas com 3 Locomotivas (passo 6); a escolha dos Bilhetes que ficam (passo 9); quem começa e o sentido da vez (passo 11); a tabela de 2 ou 3 jogadores contra 4 ou 5 (as Rotas Duplas interditadas não aparecem na ilustração de preparação); o que volta para a caixa. Ficam só com texto; nada foi desenhado. O marcador de pontos aparece só como um detalhe minúsculo dentro do círculo do Início, sem desenho próprio. A pilha de Bilhetes (6) não tem recorte separado: aparece em `cartas-abertas.webp` e em `preparacao.webp`.
+- **Comece a jogar:** "Monte a mesa" virou um resumo de 5 itens que remete à nova seção; `checar_comece.py` aprovado; `vicios.py` sem aviso; zero travessão. Conversor testado em memória (sem gravar HTML): 10 imagens na seção e numeração contínua de 1 a 11. `publicar` não foi alterado.
+
+## Auditoria independente da montagem (04/11/2026)
+
+Veredito do auditor: aprovado com correções. Aplicadas no tutorial:
+
+1. Legenda da foto `fotos/mesa-1.webp` reescrita: edição de 2024 da Days of Wonder, arte nova, partida em andamento, não a mesa recém-montada.
+2. "O que fica na caixa" marcado como leitura do guia ("o manual não diz o que fica na caixa; pela nossa leitura"); só a frase da Carta de Ajuda segue com fonte (p. 2).
+3. Tabela, linha de 4 ou 5 jogadores: "(a restrição do manual é só para 2 ou 3)".
+4. Citação da tabela por número de jogadores passou a "(p. 2 e 3)"; as cores das Cartas de Vagão também levam "p. 2 e 3".
+5. Lista de componentes completada com "Regra do jogo" e "Número de acesso online da Days of Wonder" (p. 2).
+6. `figuras/preparacao.webp` refeita da emenda das p. 2 e 3 pelas marcas de corte, sem a mira de registro de impressão que ficava no meio do mapa e sem texto do manual nas bordas (1000 × 799, webp q80).
+7. Um termo só: "final da pilha" no passo 10 e no resumo do "Comece a jogar", como no manual (p. 2).
+8. Passo 6: "(forme a pilha de descarte ao lado da pilha de compras)". O manual cita a pilha de descarte (p. 3), mas não diz onde ela fica; o lugar é indicação prática do guia.
+9. Passo 2: "conta 45 trens dessa cor; os que sobrarem voltam para a caixa (leitura nossa)".
+
+`checar_comece.py` aprovado; `vicios.py` sem aviso; zero travessão.

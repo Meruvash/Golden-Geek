@@ -2,6 +2,70 @@
 
 *Regras conferidas no manual da edição brasileira (Galápagos, arquivo AZU001_regras_v1.0, de 2023, tradução de Bárbara Coelho) e no manual original em inglês (Next Move e Plan B Games, 2018). As páginas citadas são as do manual brasileiro, que tem a mesma paginação do original.*
 
+## setup. Montar a mesa passo a passo
+
+A montagem segue a página de preparação do manual (p. 2), na mesma ordem. É igual para 2, 3 ou 4 jogadores, salvo no passo 3.
+
+**O que a preparação usa** (p. 2). O manual não traz uma lista de componentes; as quantidades abaixo são as que a página de preparação manda pôr na mesa.
+
+| Componente | Quantidade |
+|---|---|
+| Tabuleiro de jogador, com o lado da parede colorida e o lado cinza | 1 por jogador |
+| Marcador de pontuação | 1 por jogador |
+| Expositores de fábrica | 5, 7 ou 9, conforme o número de jogadores |
+| Azulejos | 100, 20 de cada uma das 5 cores |
+| Saco | 1 |
+| Marcador de primeiro jogador, a peça com o número 1 | 1 |
+
+1. **Dê a cada jogador um tabuleiro de jogador, com o lado da parede colorida para cima.** Todos usam o mesmo lado. O lado cinza é a Partida Alternativa, explicada nas Situações especiais (p. 2 e 6).
+
+!fig[O tabuleiro de jogador com a parede colorida para cima (letra A no manual): no alto, a trilha de pontuação; à esquerda, as fileiras de modelo; à direita, a parede, com o lugar de cada cor desenhado; embaixo, a fileira do chão. Ilustração: manual Galápagos (p. 2)](figuras/setup-tabuleiro.webp)
+
+!fig[O outro lado do mesmo tabuleiro: a parede é cinza, sem cores. É o lado da Partida Alternativa; não o use na primeira partida. Ilustração: manual Galápagos (p. 6)](figuras/setup-lado-cinza.webp)
+
+2. **Cada jogador põe 1 marcador de pontuação no espaço 0 da sua trilha de pontuação**, o primeiro espaço, no canto de cima à esquerda (p. 2).
+
+!fig[O marcador de pontuação (letra B no manual) vai para o espaço 0, no canto de cima à esquerda da trilha de pontuação. Ilustração: manual Galápagos (p. 2)](figuras/setup-marcador.webp)
+
+3. **Arrume os expositores de fábrica em círculo no meio da mesa:** 5 numa partida de 2 jogadores, 7 numa de 3 e 9 numa de 4. O espaço dentro do círculo é o centro da mesa, e ele começa vazio (p. 2).
+
+!fig[Os expositores de fábrica (letra C no manual) em círculo ao redor do centro da mesa. O desenho já os mostra com azulejos, como ficam depois do passo 6; neste passo eles ainda estão vazios. Ilustração: manual Galápagos (p. 2)](figuras/setup-expositores.webp)
+
+4. **Ponha os 100 azulejos no saco**, 20 de cada cor (p. 2).
+
+!fig[Os azulejos (letra D no manual) vão todos para o saco (letra E). Ilustração: manual Galápagos (p. 2)](figuras/setup-saco.webp)
+
+5. **Dê o marcador de primeiro jogador a quem visitou Portugal mais recentemente.** É essa pessoa que começa a partida (p. 2).
+6. **Quem pegou o marcador de primeiro jogador enche cada expositor de fábrica com exatamente 4 azulejos tirados do saco ao acaso**, sem olhar (p. 2).
+
+!fig[A mesa pronta de 3 jogadores: 7 expositores de fábrica, cada um com 4 azulejos, o centro da mesa vazio e o saco embaixo, à direita; a seta mostra azulejos saindo do saco para um expositor. À esquerda, o marcador de primeiro jogador (letra F no manual), a peça com o número 1. Ilustração: manual Galápagos (p. 2)](figuras/setup-mesa.webp)
+
+7. **Devolva à caixa os tabuleiros de jogador, os marcadores de pontuação e os expositores de fábrica que não serão usados** (p. 2).
+8. **Deixe a tampa da caixa à mão, vazia.** Ela guarda os azulejos descartados durante a partida, até o saco esvaziar (p. 4 e 5).
+
+**O que muda com o número de jogadores** (p. 2). Só o número de expositores de fábrica; as outras colunas são a conta de 4 azulejos por expositor.
+
+| Jogadores | Tabuleiros e marcadores de pontuação | Expositores de fábrica | Azulejos tirados do saco | Azulejos que ficam no saco |
+|---|---|---|---|---|
+| 2 | 2 | 5 | 20 | 80 |
+| 3 | 3 | 7 | 28 | 72 |
+| 4 | 4 | 9 | 36 | 64 |
+
+**O que volta para a caixa** (p. 2): os tabuleiros de jogador, os marcadores de pontuação e os expositores de fábrica que sobraram. Os 100 azulejos ficam todos em jogo: os que não foram para os expositores continuam no saco.
+
+**Quem começa** (p. 2 e 3): quem pegou o marcador de primeiro jogador. Na primeira jogada, essa pessoa põe o marcador no centro da mesa e faz o seu turno; a vez segue no sentido horário.
+
+!fig[Expositores de fábrica numa mesa de verdade, com a partida já em andamento: um expositor ficou vazio e há azulejos no centro da mesa, o que só acontece depois dos primeiros turnos. Na montagem, todos os expositores têm 4 azulejos e o centro está vazio. Foto: Pongrácz Zsolt · CC BY-SA 3.0 · Wikimedia Commons](../../azul/fotos/componentes-1.webp)
+
+**Antes de começar, confira:** cada jogador com o tabuleiro de jogador do lado da parede colorida e o marcador de pontuação no 0; expositores de fábrica em círculo, 5, 7 ou 9 conforme a tabela; cada expositor com exatamente 4 azulejos; o centro da mesa vazio; o resto dos azulejos no saco; o marcador de primeiro jogador com quem começa; a tampa da caixa à mão.
+
+?? Partida de 2 jogadores. Qual mesa está certa?
+- ( ) 9 expositores de fábrica com 4 azulejos cada
+- ( ) 5 expositores de fábrica, e quem tem o marcador de primeiro jogador escolhe as cores de cada um
+- (x) 5 expositores de fábrica com 4 azulejos tirados do saco ao acaso, e os dois tabuleiros com a parede colorida para cima
+- ( ) 5 expositores de fábrica, um tabuleiro com a parede colorida e o outro com o lado cinza
+= Com 2 jogadores vão 5 expositores, cada um com exatamente 4 azulejos tirados do saco ao acaso, e todos usam o mesmo lado do tabuleiro, o da parede colorida. Os 9 expositores são da partida de 4 jogadores (p. 2).
+
 ## 4min. Comece a jogar em 4 minutos
 
 **Meta:** em 4 minutos de leitura, montar a mesa e jogar o seu primeiro turno sem abrir o manual.
@@ -12,14 +76,12 @@ Você decora uma parede com **azulejos**. Na sua vez, pega todos os azulejos de 
 
 ### Monte a mesa
 
-Na ordem. O marcado *(depois)* se monta já e se usa mais tarde.
+A montagem completa, com figuras, está na seção "Montar a mesa passo a passo", logo acima. O essencial (p. 2):
 
-1. Cada jogador pega um tabuleiro de jogador, todos com a parede colorida para cima. O lado cinza é uma variante *(depois)*.
-2. Cada um põe o seu marcador de pontuação no espaço 0 da trilha de pontuação, a grade numerada no alto do tabuleiro.
-3. Ponha expositores de fábrica em círculo no meio da mesa: 5 com 2 jogadores, 7 com 3, 9 com 4. O espaço vazio no meio do círculo é o centro da mesa.
-4. Ponha os 100 azulejos (20 de cada uma das 5 cores) no saco.
-5. Quem visitou Portugal mais recentemente pega o marcador de primeiro jogador e enche cada expositor com exatamente 4 azulejos tirados do saco sem olhar.
-6. O que sobrou (tabuleiros, marcadores, expositores) volta para a caixa. A tampa da caixa fica à mão: ela guarda os azulejos descartados *(depois)*.
+1. Cada jogador: um tabuleiro de jogador com a parede colorida para cima e o marcador de pontuação no 0 da trilha de pontuação.
+2. Expositores de fábrica em círculo: 5 com 2 jogadores, 7 com 3, 9 com 4. O meio do círculo é o centro da mesa.
+3. Os 100 azulejos no saco. Quem visitou Portugal mais recentemente pega o marcador de primeiro jogador e põe 4 azulejos tirados do saco ao acaso em cada expositor.
+4. O que sobrou volta para a caixa; a tampa da caixa fica à mão para os descartes.
 
 ### Seu primeiro turno
 

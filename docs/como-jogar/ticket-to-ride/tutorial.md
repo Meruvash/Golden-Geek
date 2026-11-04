@@ -13,11 +13,13 @@ A montagem segue a seção "Preparação do Jogo" do manual (p. 2), na mesma ord
 | Tabuleiro com o mapa das rotas ferroviárias dos EUA, com a Trilha de Pontos em volta | 1 |
 | Trens de plástico, nas cores Azul, Vermelho, Verde, Amarelo e Preto | 240: 45 de cada cor, mais alguns extras de cada cor para reposição |
 | Marcadores de pontos de madeira, um de cada cor | 5 |
-| Cartas de Vagão: 12 de cada uma das oito cores (rosa, branco, azul, amarelo, laranja, preto, vermelho e verde) e 14 Locomotivas | 110 |
+| Cartas de Vagão: 12 de cada uma das oito cores (rosa, branco, azul, amarelo, laranja, preto, vermelho e verde; p. 2 e 3) e 14 Locomotivas | 110 |
 | Bilhetes de Destino | 30 |
 | Carta de Ajuda | 1 |
 | Carta Bônus de Maior Caminho Contínuo | 1 |
 | Cartas promocionais (uma para mapas adicionais e uma da Days of Wonder) | 2 |
+| Regra do jogo | 1 |
+| Número de acesso online da Days of Wonder | 1 |
 
 As cartas somam 144, como diz o manual: 110, 30, 1, 1 e as 2 promocionais (p. 2).
 
@@ -27,7 +29,7 @@ As cartas somam 144, como diz o manual: 110, 30, 1, 1 e as 2 promocionais (p. 2)
 
 !fig[O tabuleiro montado no centro da mesa: o mapa com as rotas e, em volta, a Trilha de Pontos numerada; no canto de baixo, à esquerda, o Início (1). Ilustração: manual Galápagos (p. 2 e 3)](figuras/setup-tabuleiro.webp)
 
-2. **Cada jogador escolhe uma cor e pega um conjunto de 45 trens dessa cor**, que fica à sua frente como estoque (p. 2).
+2. **Cada jogador escolhe uma cor e conta 45 trens dessa cor**, que ficam à sua frente como estoque (p. 2); os que sobrarem voltam para a caixa (leitura nossa).
 
 !fig[Os conjuntos de trens dos cinco jogadores da ilustração, um de cada cor: azul, verde, preto, amarelo e vermelho. Ilustração: manual Galápagos (p. 2 e 3)](figuras/setup-trens.webp)
 
@@ -43,7 +45,7 @@ As cartas somam 144, como diz o manual: 110, 30, 1, 1 e as 2 promocionais (p. 2)
 
 !fig[As 5 cartas abertas (3), com uma Locomotiva entre elas, ao lado da pilha de compras virada para baixo; à direita, a pilha de Bilhetes de Destino (6), do passo 10. Ilustração: manual Galápagos (p. 3)](figuras/cartas-abertas.webp)
 
-6. **Confira as 5 cartas abertas.** Se 3 delas forem Locomotivas, descarte as 5 e revele outras até formar 5 cartas abertas novas. A regra vale "a qualquer momento", inclusive agora (p. 3).
+6. **Confira as 5 cartas abertas.** Se 3 delas forem Locomotivas, descarte as 5 (forme a pilha de descarte ao lado da pilha de compras) e revele outras até formar 5 cartas abertas novas. A regra vale "a qualquer momento", inclusive agora (p. 3).
 7. **Ponha a carta de Maior Caminho Contínuo virada para cima perto do tabuleiro** (4) (p. 2).
 
 !fig[A carta de Maior Caminho Contínuo (4), virada para cima ao lado do tabuleiro; ela vale 10 pontos na contagem. Ilustração: manual Galápagos (p. 3)](figuras/setup-bonus.webp)
@@ -59,16 +61,16 @@ As cartas somam 144, como diz o manual: 110, 30, 1, 1 e as 2 promocionais (p. 2)
 
 11. **Começa o viajante mais experiente da mesa.** Cada um faz uma ação por turno, e a vez passa no sentido horário (p. 2).
 
-**O que muda com o número de jogadores** (p. 3):
+**O que muda com o número de jogadores** (p. 2 e 3):
 
 | Jogadores | Trens de cada um | Cartas de Vagão na mão | Bilhetes recebidos | Rotas Duplas |
 |---|---|---|---|---|
 | 2 ou 3 | 45 | 4 | 3 | Só uma das duas rotas pode ser usada; depois que alguém conquista uma, a outra fica interditada |
-| 4 ou 5 | 45 | 4 | 3 | As duas podem ser usadas, mas nunca pelo mesmo jogador |
+| 4 ou 5 | 45 | 4 | 3 | As duas podem ser usadas (a restrição do manual é só para 2 ou 3), mas nunca pelo mesmo jogador |
 
-**O que fica na caixa:** os trens extras, que o manual chama de reposição (p. 2). As cores que ninguém escolheu também ficam guardadas, com os seus trens e o seu marcador, e as 2 cartas promocionais não entram no jogo, porque as regras não as usam (p. 2 a 4). A Carta de Ajuda aparece na ilustração ao lado do tabuleiro, para consulta (p. 2).
+**O que fica na caixa:** o manual não diz o que fica na caixa; pela nossa leitura, ficam os trens que sobram de cada cor (o manual os chama de reposição), as cores que ninguém escolheu, com os seus trens e o seu marcador, e as 2 cartas promocionais, que nenhuma regra usa. A Carta de Ajuda aparece na ilustração ao lado do tabuleiro, para consulta (p. 2).
 
-!fig[Ticket to Ride montado na mesa, na foto da editora, com cartas de arte diferente da do manual de 2016. Imagem: Days of Wonder](fotos/mesa-1.webp)
+!fig[Ticket to Ride na edição de 2024 da Days of Wonder, com tabuleiro e cartas de arte nova, diferentes dos do manual de 2016; a foto mostra uma partida em andamento, não a mesa recém-montada. Imagem: Days of Wonder](fotos/mesa-1.webp)
 
 **Antes de começar, confira:** tabuleiro no centro; cada jogador com 45 trens e o marcador no Início; 4 Cartas de Vagão na mão de cada um; pilha de compras e 5 cartas abertas, sem 3 Locomotivas entre elas; carta de Maior Caminho Contínuo virada para cima; cada jogador com 2 ou 3 Bilhetes, em segredo; pilha de Bilhetes ao lado do tabuleiro; quem começa definido.
 
@@ -94,7 +96,7 @@ A montagem completa, com figuras, está na seção "Montar a mesa passo a passo"
 1. Tabuleiro no centro; cada jogador com 45 trens de uma cor e o marcador no Início da Trilha de Pontos.
 2. 4 Cartas de Vagão para cada um; o resto vira pilha de compras, com 5 cartas abertas ao lado (3 Locomotivas entre elas: troque as 5).
 3. Carta de Maior Caminho Contínuo virada para cima ao lado do tabuleiro.
-4. 3 Bilhetes de Destino para cada um, que fica com 2 ou 3, em segredo; os devolvidos vão para o fundo da pilha.
+4. 3 Bilhetes de Destino para cada um, que fica com 2 ou 3, em segredo; os devolvidos vão para o final da pilha.
 5. Começa o viajante mais experiente; a vez segue no sentido horário.
 
 ### Seu primeiro turno
