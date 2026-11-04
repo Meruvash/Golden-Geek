@@ -1,247 +1,263 @@
 {
-  "_regras": "Chamadas para redes (PADRAO_EDITORIAL.md, 'Chamadas para redes'): emoção e curiosidade, sempre cumpridas pelo texto. Fica fora da página, então não mexe na data de modificação.",
-  "devir-looot-e-through-the-desert": {
-    "chamada": "Um finalista do Kennerspiel vai sair em português. E vem com um clássico do Knizia junto 👀",
-    "pergunta": "Looot ou Through the Desert: qual entra primeiro na sua estante?"
-  },
-  "dezembro-earthborne-rangers-santorini-agent-avenue": {
-    "chamada": "Três jogos que a gringa adora estão marcados para dezembro. Mas um deles já atrasou uma vez… ⏳",
-    "pergunta": "Qual desses três você quer debaixo da árvore de Natal?"
-  },
-  "galapagos-azul-kids-caper-europe-nas-lojas": {
-    "chamada": "Um dos jogos para dois mais elogiados dos últimos anos chegou às lojas por menos de R$ 200 💸",
-    "pergunta": "Na sua casa, joga-se mais a dois ou em grupo?"
-  },
-  "horizontes-de-spirit-island-pre-venda-ace-studios": {
-    "chamada": "Sempre quis jogar Spirit Island, mas a caixa assusta? Agora tem um jeito mais barato de começar 🌋",
-    "pergunta": "Já jogou Spirit Island? Valeu o esforço de aprender?"
-  },
-  "kinfire-delve-pre-venda-ludofun": {
-    "chamada": "Cooperativo bem avaliado lá fora, R$ 198 a caixa, dá para jogar sozinho. Chegou ao Brasil 🔥",
-    "pergunta": "Qual foi o último jogo que te prendeu jogando sozinho?"
-  },
-  "ruins-alebrijes-protocolo-scintilla-outubro": {
-    "chamada": "R$ 118 ou R$ 422,99? Três lançamentos de outubro, e só um tem a crítica do lado dele 🤔",
-    "pergunta": "Você compra jogo sem ler resenha antes?"
-  },
-  "seti": {
-    "chamada": "Caçar vida fora da Terra virou um euro pesado de primeira. E os alienígenas aparecem no meio da partida 👽",
-    "pergunta": "Jogo pesado de duas horas: você encara ou foge?"
-  },
-  "heat-pedal-to-the-metal": {
-    "chamada": "Acelerar esquenta o motor. Frear perde a corrida. O que você faz na última curva? 🏎️🔥",
-    "pergunta": "Na última curva: pé embaixo ou freio?"
-  },
-  "harmonies": {
-    "chamada": "Meia hora, três fichas por turno e uma paisagem que vira casa de bicho. Simples, bonito e difícil de largar 🦊",
-    "pergunta": "Você prefere jogo tranquilo e bonito ou jogo de briga na mesa?"
-  },
-  "civolution": {
-    "chamada": "Venceu o As d'Or e levou 9,0 da Dice Tower. Dois dados decidem tudo… ou quase 🎲",
-    "pergunta": "Dado em jogo pesado: tempero ou pecado?"
-  },
-  "vantage": {
-    "chamada": "O melhor jogo solo do ano tem um problema: as outras cinco cadeiras da mesa 🪑",
-    "pergunta": "Você joga solo ou só joga com a galera?"
-  },
-  "last-light": {
-    "chamada": "A caixa promete um 4X em uma hora. Na crítica, só deu uma hora com o autor na mesa 🪐",
-    "pergunta": "Guerra espacial: uma hora ou uma tarde inteira?"
-  },
-  "great-western-trail": {
-    "chamada": "O original ganhou os troféus. O El Paso ganhou a quarta-feira à noite 🐄",
-    "pergunta": "Jogo completo numa tarde ou versão destilada numa noite de semana?"
-  },
-  "rebirth-vence-gioco-dell-anno-lucca": {
-    "chamada": "Kennerspiel em julho, Gioco dell'Anno em Lucca: o Rebirth de Knizia já está em português 🏆",
-    "pergunta": "Já jogou Rebirth: merece os dois prêmios, sim ou não?"
-  },
-  "asmodee-essen-toy-battle-too-many-bones-nemesis-lockdown": {
-    "chamada": "16 jogos de Essen a caminho do Brasil: Toy Battle, Too Many Bones, Nemesis: Lockdown... e nenhuma data 👀",
-    "pergunta": "Qual dos 16 vai primeiro para a sua estante: Toy Battle, Too Many Bones ou Nemesis: Lockdown?"
-  },
-  "devir-dc-super-heroes-united-e-one-round": {
-    "chamada": "A campanha de 2024 não entregava no Brasil. Agora a Devir traz DC Super Heroes United, com Batman em caixa própria 🦇",
-    "pergunta": "Salvar Gotham em 30 minutos ou jogo de palavras para 12 pessoas?"
-  },
-  "arkham-horror-remastered-gamefound": {
-    "chamada": "O jogo de 2005 voltou: Arkham Horror Remastered passou de US$ 2,9 milhões em dez dias 🐙",
-    "pergunta": "Segunda ou terceira edição de Arkham Horror?"
-  },
-  "spellrift-legends-financiamento-meeplestarter": {
-    "chamada": "64 apoiadores, R$ 121 mil e uma caixa de R$ 1.999,99: Spellrift Legends já pagou a meta seis vezes 💸",
-    "pergunta": "Caixa base de R$ 889 ou pacote completo de R$ 1.999,99?"
-  },
-  "nemesis-legacy-fecha-com-12-milhoes-de-euros": {
-    "chamada": "€ 12,58 milhões e 33 mil apoiadores: Nemesis Legacy virou cooperativo e sumiu com o traidor 👽",
-    "pergunta": "Nemesis sem traidor: melhora ou estraga?"
-  },
-  "inventors-of-the-south-tigris": {
-    "chamada": "Você termina a invenção do vizinho e ainda ganha ponto. Na vida real, isso se chama estágio 🛠️",
-    "pergunta": "Uma hora de explicação por um jogo tão bom: você encara?"
-  },
-  "cat-in-the-box-deluxe-edition": {
-    "chamada": "Você escolhe a cor de cada carta e mesmo assim fica sem saída. Venceu 2 Golden Geek por R$ 158 🐈‍⬛",
-    "pergunta": "Na mesa, você joga para ganhar vaza ou para ver o vizinho cair no paradoxo?"
-  },
-  "sleeping-gods": {
-    "chamada": "Venceu o Golden Geek de temático e de arte, mas pede a mesa de jantar inteira e 20 horas 🌊",
-    "pergunta": "Campanha longa: toda semana ou nunca mais?"
-  },
-  "gloomhaven-jaws-of-the-lion": {
-    "chamada": "Três Golden Geek, 25 cenários e menos da metade do preço do Gloomhaven grande. Este você termina 🦁",
-    "pergunta": "Gloomhaven grande ou Presas do Leão: qual entra na sua estante?"
-  },
-  "return-to-dark-tower": {
-    "chamada": "Melhor cooperativo de 2022, uma torre que cospe caveiras e nenhuma edição no Brasil. Vale caçar? 🗼",
-    "pergunta": "Torre com pilha ou saquinho de pano?"
-  },
-  "night-at-the-zoo-pondscape-bucaneiros": {
-    "chamada": "O autor de SETI trocou alienígena por pinguim e sapo, e o Brasil já pôs R$ 286 mil na mesa 🐸",
-    "pergunta": "Zoológico ou lagoa de sapos?"
-  },
-  "an-infamous-traffic-cole-wehrle-fecha-kickstarter": {
-    "chamada": "O criador de Root trocou os bichinhos pelo comércio de ópio e arrecadou US$ 726 mil 🚢",
-    "pergunta": "Tema histórico pesado: topa ou passa?"
-  },
-  "heat-ganha-versao-digital-mipmap": {
-    "chamada": "Heat vai virar videogame, com a expansão Lendas de graça. Só falta o português 🏎️",
-    "pergunta": "Heat na mesa ou na tela?"
-  },
-  "brava-gente-e-oyo-batem-a-meta": {
-    "chamada": "Imigrantes em São Paulo e o império iorubá de Oyó: dois jogos brasileiros bateram a meta, e custam o mesmo 🎲",
-    "pergunta": "Brava Gente ou Oyó?"
-  },
-  "oceanos-ace-studios-meeplestarter": {
-    "chamada": "O jogo em que seu peixe é comida, ponto e moeda chega ao Brasil: campanha abre em 10/11 🐟",
-    "pergunta": "Você seria predador ou presa?"
-  },
-  "excursions-fecha-kickstarter-660-mil": {
-    "chamada": "Galactic Cruise na metade do tempo: Excursions fechou com US$ 660 mil. Vem para o Brasil? 🚀",
-    "pergunta": "Versão curta ou o jogo pesado original?"
-  },
-  "werewords": {
-    "chamada": "Golden Geek de festa, Vinte Perguntas com lobisomem: aqui, quem sabe a resposta corre perigo 🐺",
-    "pergunta": "Na sua mesa, quem entrega a resposta primeiro: o Vidente ou o Lobisomem?"
-  },
-  "brass-birmingham": {
-    "chamada": "O nº 1 do BoardGameGeek é um jogo em que usar o carvão do rival deixa o rival mais rico ⚙️",
-    "pergunta": "Brass ou Ark Nova?"
-  },
-  "wavelength": {
-    "chamada": "O único jogo de festa em que acertar estraga a festa. Venceu o Golden Geek 2019 e sai a partir de R$ 237,99 🎯",
-    "pergunta": "Titanic: obra-prima ou fracasso?"
-  },
-  "flamecraft": {
-    "chamada": "Flamecraft ganhou o Golden Geek pela arte. E o jogo por baixo do glacê, segura? 🐉",
-    "pergunta": "Na mesa, você dá presente ou trava o vizinho?"
-  },
-  "arnak-caminhos-tortuosos-e-gaudi-ganham-preco": {
-    "chamada": "Expansão de Arnak sai por R$ 297,60 no Pix: mais da metade do preço do jogo base 🗺️",
-    "pergunta": "Templo da Coruja ou Templo da Aranha?"
-  },
-  "ludofun-cubaneo-innovation-ultimate-em-breve": {
-    "chamada": "15 jogos em breve na Ludofun, e Cubaneo tem previsão quase junto com a Alemanha 🇨🇺",
-    "pergunta": "Cubaneo ou Innovation Ultimate: qual você quer primeiro?"
-  },
-  "through-the-mountains-knizia-kickstarter": {
-    "chamada": "Knizia trocou camelos por iaques: a sequência de Through the Desert passou de US$ 250 mil no Kickstarter 🐫",
-    "pergunta": "Deserto ou montanha?"
-  },
-  "wavelength-1-10-cmyk-versao-de-bolso": {
-    "chamada": "Sintonia sem a roda, por US$ 9,99: a versão de bolso chegou, e a primeira crítica achou mediana 🎯",
-    "pergunta": "Sintonia com roda ou de bolso?"
-  },
-  "grok-propolis-colegas-blind-jack-em-breve": {
-    "chamada": "Própolis, do estúdio de Cascadia, vem pela Grok. Lá fora levou de ótimo a 2 estrelas 🐝",
-    "pergunta": "Abelhas medievais ou fugir do trabalho em Colegas?"
-  },
-  "carcassonne-labyrinth-chega-aos-eua": {
-    "chamada": "Carcassonne + Labirinto na mesma caixa: o crossover chega aos EUA em dezembro por US$ 39,99 🏰",
-    "pergunta": "Carcassonne raiz ou Labirinto com tempero?"
-  },
-  "the-quacks-of-quedlinburg": {
-    "chamada": "Kennerspiel de 2018, e até hoje sem edição brasileira: o jogo do caldeirão que explode chega só importado 🧪",
-    "pergunta": "Brancas somando 7: você para ou tira mais uma?"
-  },
-  "splendor-duel": {
-    "chamada": "Dois críticos disseram que Splendor Duel não precisava existir. Ganhou o Golden Geek de jogo para dois 💎",
-    "pergunta": "Splendor original ou Splendor Duel?"
-  },
-  "oath": {
-    "chamada": "Golden Geek de inovação, do autor de Root, a partir de R$ 790,41. A peça mais cara não vem na caixa 👑",
-    "pergunta": "Seu grupo aguentaria dez partidas seguidas: sim ou nunca?"
-  },
-  "mechs-vs-minions": {
-    "chamada": "O robô obedece ao código até a lava. Melhor cooperativo do Golden Geek 2016, sem venda no Brasil hoje 🤖",
-    "pergunta": "Plano que dá errado na mesa: risada ou briga?"
-  },
-  "spiel-essen-2026-recorde-230-mil-visitantes": {
-    "chamada": "230 mil pessoas, 2.012 lançamentos e nem um pavilhão sobrando: Essen 2026 bateu todos os recordes 🎲",
-    "pergunta": "Você iria a Essen ou prefere esperar os jogos chegarem aqui?"
-  },
-  "harmonies-crescendo-e-bang-dice-explosion-ganham-preco": {
-    "chamada": "R$ 159,99 por três módulos de Harmonies, e a crítica só quer um deles 🌿",
-    "pergunta": "Expansão logo ou jogo base até cansar?"
-  },
-  "magical-athlete-pre-venda-asmodee": {
-    "chamada": "Rolar o dado e andar voltou, com nota 10 da crítica e o criador de Magic por trás 🎲",
-    "pergunta": "Corrida no dado: diversão pura ou sorte demais?"
-  },
-  "the-danes-rosenberg-gamefound": {
-    "chamada": "Meta de 100 mil euros batida em 23 minutos: o novo Rosenberg de vikings já passa de 850 mil 🪓",
-    "pergunta": "Eurogame de três horas: encara ou passa?"
-  },
-  "acelera-bruxa-fecha-financiamento-meeplestarter": {
-    "chamada": "Corrida de bruxas de vassoura quase dobrou a meta: R$ 48 mil e 103 apoiadores 🧹",
-    "pergunta": "Corrida com baralho: Heat ou bruxa de vassoura?"
-  },
-  "stormlight-war-for-roshar-kickstarter": {
-    "chamada": "Fãs de Sanderson já puseram US$ 2,9 milhões num jogo de guerra que só chega às lojas no fim de 2027 ⚡",
-    "pergunta": "Coalizão da Honra ou Odium?"
-  },
-  "dice-throne-nexus-kickstarter-2-milhoes": {
-    "chamada": "Um robô chamado Punch-a-Tron 3000 ajudou Dice Throne a passar de US$ 2 milhões no Kickstarter 🎲",
-    "pergunta": "Duelo de dados: sorte ou estratégia?"
-  },
-  "arcs": {
-    "chamada": "O melhor wargame de 2024 é um jogo de cartas, e sai por menos de R$ 310 em português 🚀",
-    "pergunta": "Guerra se decide nos dados ou nas cartas?"
-  },
-  "earth": {
-    "chamada": "O Jogo do Ano médio do Golden Geek 2023 é uma floresta que se joga como planilha 🌱",
-    "pergunta": "Jogo bom tem briga ou tem conta?"
-  },
-  "century-spice-road": {
-    "chamada": "Trocaram a canela por golens e as regras ficaram iguais. Century venceu o Golden Geek mesmo assim 🌶️",
-    "pergunta": "Century ou Splendor?"
-  },
-  "radlands": {
-    "chamada": "Golden Geek de melhor jogo para dois: um Mad Max em que você ganha economizando água, a partir de R$ 172,70 💧",
-    "pergunta": "Gasta a água toda ou guarda para o próximo turno?"
-  },
-  "civolution-e-horizontes-de-spirit-island-chegam-as-lojas": {
-    "chamada": "Acabou a pré-venda: o vencedor do As d'Or e a porta de entrada de Spirit Island já estão nas lojas, a partir de R$ 213,78 🎲",
-    "pergunta": "Tarde inteira com Civolution ou uma hora apanhando de Horizontes?"
-  },
-  "plants-vs-zombies-tabuleiro-passa-de-1-milhao-de-libras": {
-    "chamada": "O jardim do celular virou tabuleiro cooperativo e passou de 1 milhão de libras no Kickstarter 🌻",
-    "pergunta": "Você pagaria em libra pelo jogo que jogava de graça?"
-  },
-  "satisfactory-tabuleiro-passa-de-2-milhoes-gamefound": {
-    "chamada": "Mais de 8 mil pessoas deram 254 euros, em média, para otimizar esteira de papelão 🏭",
-    "pergunta": "Fábrica no tabuleiro: descanso ou planilha?"
-  },
-  "too-little-time-chip-theory-gamefound": {
-    "chamada": "O novo jogo do universo de Too Many Bones bateu a meta em seis minutos e só chega em 2028 ⏳",
-    "pergunta": "Você financiaria um jogo com entrega em 2028?"
-  },
-  "origins-of-light-final-fantasy-tabuleiro-kickstarter": {
-    "chamada": "Final Fantasy virou jogo de tabuleiro oficial, com peças de Chocobo, e já passa de US$ 1,1 milhão ⚔️",
-    "pergunta": "Licença famosa basta para apoiar sem ver resenha?"
-  },
-  "spiel-essen-seis-furtos-montagem-desmontagem": {
-    "chamada": "Recorde de público na maior feira do mundo, e seis furtos nos bastidores: um estande perdeu 14 mil euros 🕵️",
-    "pergunta": "Feira desse tamanho sem câmera nos estandes faz sentido?"
-  }
+ "_regras": "Chamadas para redes (PADRAO_EDITORIAL.md, 'Chamadas para redes'): emoção e curiosidade, sempre cumpridas pelo texto. Fica fora da página, então não mexe na data de modificação.",
+ "devir-looot-e-through-the-desert": {
+  "chamada": "Um finalista do Kennerspiel vai sair em português. E vem com um clássico do Knizia junto 👀",
+  "pergunta": "Looot ou Through the Desert: qual entra primeiro na sua estante?"
+ },
+ "dezembro-earthborne-rangers-santorini-agent-avenue": {
+  "chamada": "Três jogos que a gringa adora estão marcados para dezembro. Mas um deles já atrasou uma vez… ⏳",
+  "pergunta": "Qual desses três você quer debaixo da árvore de Natal?"
+ },
+ "galapagos-azul-kids-caper-europe-nas-lojas": {
+  "chamada": "Um dos jogos para dois mais elogiados dos últimos anos chegou às lojas por menos de R$ 200 💸",
+  "pergunta": "Na sua casa, joga-se mais a dois ou em grupo?"
+ },
+ "horizontes-de-spirit-island-pre-venda-ace-studios": {
+  "chamada": "Sempre quis jogar Spirit Island, mas a caixa assusta? Agora tem um jeito mais barato de começar 🌋",
+  "pergunta": "Já jogou Spirit Island? Valeu o esforço de aprender?"
+ },
+ "kinfire-delve-pre-venda-ludofun": {
+  "chamada": "Cooperativo bem avaliado lá fora, R$ 198 a caixa, dá para jogar sozinho. Chegou ao Brasil 🔥",
+  "pergunta": "Qual foi o último jogo que te prendeu jogando sozinho?"
+ },
+ "ruins-alebrijes-protocolo-scintilla-outubro": {
+  "chamada": "R$ 118 ou R$ 422,99? Três lançamentos de outubro, e só um tem a crítica do lado dele 🤔",
+  "pergunta": "Você compra jogo sem ler resenha antes?"
+ },
+ "seti": {
+  "chamada": "Caçar vida fora da Terra virou um euro pesado de primeira. E os alienígenas aparecem no meio da partida 👽",
+  "pergunta": "Jogo pesado de duas horas: você encara ou foge?"
+ },
+ "heat-pedal-to-the-metal": {
+  "chamada": "Acelerar esquenta o motor. Frear perde a corrida. O que você faz na última curva? 🏎️🔥",
+  "pergunta": "Na última curva: pé embaixo ou freio?"
+ },
+ "harmonies": {
+  "chamada": "Meia hora, três fichas por turno e uma paisagem que vira casa de bicho. Simples, bonito e difícil de largar 🦊",
+  "pergunta": "Você prefere jogo tranquilo e bonito ou jogo de briga na mesa?"
+ },
+ "civolution": {
+  "chamada": "Venceu o As d'Or e levou 9,0 da Dice Tower. Dois dados decidem tudo… ou quase 🎲",
+  "pergunta": "Dado em jogo pesado: tempero ou pecado?"
+ },
+ "vantage": {
+  "chamada": "O melhor jogo solo do ano tem um problema: as outras cinco cadeiras da mesa 🪑",
+  "pergunta": "Você joga solo ou só joga com a galera?"
+ },
+ "last-light": {
+  "chamada": "A caixa promete um 4X em uma hora. Na crítica, só deu uma hora com o autor na mesa 🪐",
+  "pergunta": "Guerra espacial: uma hora ou uma tarde inteira?"
+ },
+ "great-western-trail": {
+  "chamada": "O original ganhou os troféus. O El Paso ganhou a quarta-feira à noite 🐄",
+  "pergunta": "Jogo completo numa tarde ou versão destilada numa noite de semana?"
+ },
+ "rebirth-vence-gioco-dell-anno-lucca": {
+  "chamada": "Kennerspiel em julho, Gioco dell'Anno em Lucca: o Rebirth de Knizia já está em português 🏆",
+  "pergunta": "Já jogou Rebirth: merece os dois prêmios, sim ou não?"
+ },
+ "asmodee-essen-toy-battle-too-many-bones-nemesis-lockdown": {
+  "chamada": "16 jogos de Essen a caminho do Brasil: Toy Battle, Too Many Bones, Nemesis: Lockdown... e nenhuma data 👀",
+  "pergunta": "Qual dos 16 vai primeiro para a sua estante: Toy Battle, Too Many Bones ou Nemesis: Lockdown?"
+ },
+ "devir-dc-super-heroes-united-e-one-round": {
+  "chamada": "A campanha de 2024 não entregava no Brasil. Agora a Devir traz DC Super Heroes United, com Batman em caixa própria 🦇",
+  "pergunta": "Salvar Gotham em 30 minutos ou jogo de palavras para 12 pessoas?"
+ },
+ "arkham-horror-remastered-gamefound": {
+  "chamada": "O jogo de 2005 voltou: Arkham Horror Remastered passou de US$ 2,9 milhões em dez dias 🐙",
+  "pergunta": "Segunda ou terceira edição de Arkham Horror?"
+ },
+ "spellrift-legends-financiamento-meeplestarter": {
+  "chamada": "64 apoiadores, R$ 121 mil e uma caixa de R$ 1.999,99: Spellrift Legends já pagou a meta seis vezes 💸",
+  "pergunta": "Caixa base de R$ 889 ou pacote completo de R$ 1.999,99?"
+ },
+ "nemesis-legacy-fecha-com-12-milhoes-de-euros": {
+  "chamada": "€ 12,58 milhões e 33 mil apoiadores: Nemesis Legacy virou cooperativo e sumiu com o traidor 👽",
+  "pergunta": "Nemesis sem traidor: melhora ou estraga?"
+ },
+ "inventors-of-the-south-tigris": {
+  "chamada": "Você termina a invenção do vizinho e ainda ganha ponto. Na vida real, isso se chama estágio 🛠️",
+  "pergunta": "Uma hora de explicação por um jogo tão bom: você encara?"
+ },
+ "cat-in-the-box-deluxe-edition": {
+  "chamada": "Você escolhe a cor de cada carta e mesmo assim fica sem saída. Venceu 2 Golden Geek por R$ 158 🐈‍⬛",
+  "pergunta": "Na mesa, você joga para ganhar vaza ou para ver o vizinho cair no paradoxo?"
+ },
+ "sleeping-gods": {
+  "chamada": "Venceu o Golden Geek de temático e de arte, mas pede a mesa de jantar inteira e 20 horas 🌊",
+  "pergunta": "Campanha longa: toda semana ou nunca mais?"
+ },
+ "gloomhaven-jaws-of-the-lion": {
+  "chamada": "Três Golden Geek, 25 cenários e menos da metade do preço do Gloomhaven grande. Este você termina 🦁",
+  "pergunta": "Gloomhaven grande ou Presas do Leão: qual entra na sua estante?"
+ },
+ "return-to-dark-tower": {
+  "chamada": "Melhor cooperativo de 2022, uma torre que cospe caveiras e nenhuma edição no Brasil. Vale caçar? 🗼",
+  "pergunta": "Torre com pilha ou saquinho de pano?"
+ },
+ "night-at-the-zoo-pondscape-bucaneiros": {
+  "chamada": "O autor de SETI trocou alienígena por pinguim e sapo, e o Brasil já pôs R$ 286 mil na mesa 🐸",
+  "pergunta": "Zoológico ou lagoa de sapos?"
+ },
+ "an-infamous-traffic-cole-wehrle-fecha-kickstarter": {
+  "chamada": "O criador de Root trocou os bichinhos pelo comércio de ópio e arrecadou US$ 726 mil 🚢",
+  "pergunta": "Tema histórico pesado: topa ou passa?"
+ },
+ "heat-ganha-versao-digital-mipmap": {
+  "chamada": "Heat vai virar videogame, com a expansão Lendas de graça. Só falta o português 🏎️",
+  "pergunta": "Heat na mesa ou na tela?"
+ },
+ "brava-gente-e-oyo-batem-a-meta": {
+  "chamada": "Imigrantes em São Paulo e o império iorubá de Oyó: dois jogos brasileiros bateram a meta, e custam o mesmo 🎲",
+  "pergunta": "Brava Gente ou Oyó?"
+ },
+ "oceanos-ace-studios-meeplestarter": {
+  "chamada": "O jogo em que seu peixe é comida, ponto e moeda chega ao Brasil: campanha abre em 10/11 🐟",
+  "pergunta": "Você seria predador ou presa?"
+ },
+ "excursions-fecha-kickstarter-660-mil": {
+  "chamada": "Galactic Cruise na metade do tempo: Excursions fechou com US$ 660 mil. Vem para o Brasil? 🚀",
+  "pergunta": "Versão curta ou o jogo pesado original?"
+ },
+ "werewords": {
+  "chamada": "Golden Geek de festa, Vinte Perguntas com lobisomem: aqui, quem sabe a resposta corre perigo 🐺",
+  "pergunta": "Na sua mesa, quem entrega a resposta primeiro: o Vidente ou o Lobisomem?"
+ },
+ "brass-birmingham": {
+  "chamada": "O nº 1 do BoardGameGeek é um jogo em que usar o carvão do rival deixa o rival mais rico ⚙️",
+  "pergunta": "Brass ou Ark Nova?"
+ },
+ "wavelength": {
+  "chamada": "O único jogo de festa em que acertar estraga a festa. Venceu o Golden Geek 2019 e sai a partir de R$ 237,99 🎯",
+  "pergunta": "Titanic: obra-prima ou fracasso?"
+ },
+ "flamecraft": {
+  "chamada": "Flamecraft ganhou o Golden Geek pela arte. E o jogo por baixo do glacê, segura? 🐉",
+  "pergunta": "Na mesa, você dá presente ou trava o vizinho?"
+ },
+ "arnak-caminhos-tortuosos-e-gaudi-ganham-preco": {
+  "chamada": "Expansão de Arnak sai por R$ 297,60 no Pix: mais da metade do preço do jogo base 🗺️",
+  "pergunta": "Templo da Coruja ou Templo da Aranha?"
+ },
+ "ludofun-cubaneo-innovation-ultimate-em-breve": {
+  "chamada": "15 jogos em breve na Ludofun, e Cubaneo tem previsão quase junto com a Alemanha 🇨🇺",
+  "pergunta": "Cubaneo ou Innovation Ultimate: qual você quer primeiro?"
+ },
+ "through-the-mountains-knizia-kickstarter": {
+  "chamada": "Knizia trocou camelos por iaques: a sequência de Through the Desert passou de US$ 250 mil no Kickstarter 🐫",
+  "pergunta": "Deserto ou montanha?"
+ },
+ "wavelength-1-10-cmyk-versao-de-bolso": {
+  "chamada": "Sintonia sem a roda, por US$ 9,99: a versão de bolso chegou, e a primeira crítica achou mediana 🎯",
+  "pergunta": "Sintonia com roda ou de bolso?"
+ },
+ "grok-propolis-colegas-blind-jack-em-breve": {
+  "chamada": "Própolis, do estúdio de Cascadia, vem pela Grok. Lá fora levou de ótimo a 2 estrelas 🐝",
+  "pergunta": "Abelhas medievais ou fugir do trabalho em Colegas?"
+ },
+ "carcassonne-labyrinth-chega-aos-eua": {
+  "chamada": "Carcassonne + Labirinto na mesma caixa: o crossover chega aos EUA em dezembro por US$ 39,99 🏰",
+  "pergunta": "Carcassonne raiz ou Labirinto com tempero?"
+ },
+ "the-quacks-of-quedlinburg": {
+  "chamada": "Kennerspiel de 2018, e até hoje sem edição brasileira: o jogo do caldeirão que explode chega só importado 🧪",
+  "pergunta": "Brancas somando 7: você para ou tira mais uma?"
+ },
+ "splendor-duel": {
+  "chamada": "Dois críticos disseram que Splendor Duel não precisava existir. Ganhou o Golden Geek de jogo para dois 💎",
+  "pergunta": "Splendor original ou Splendor Duel?"
+ },
+ "oath": {
+  "chamada": "Golden Geek de inovação, do autor de Root, a partir de R$ 790,41. A peça mais cara não vem na caixa 👑",
+  "pergunta": "Seu grupo aguentaria dez partidas seguidas: sim ou nunca?"
+ },
+ "mechs-vs-minions": {
+  "chamada": "O robô obedece ao código até a lava. Melhor cooperativo do Golden Geek 2016, sem venda no Brasil hoje 🤖",
+  "pergunta": "Plano que dá errado na mesa: risada ou briga?"
+ },
+ "spiel-essen-2026-recorde-230-mil-visitantes": {
+  "chamada": "230 mil pessoas, 2.012 lançamentos e nem um pavilhão sobrando: Essen 2026 bateu todos os recordes 🎲",
+  "pergunta": "Você iria a Essen ou prefere esperar os jogos chegarem aqui?"
+ },
+ "harmonies-crescendo-e-bang-dice-explosion-ganham-preco": {
+  "chamada": "R$ 159,99 por três módulos de Harmonies, e a crítica só quer um deles 🌿",
+  "pergunta": "Expansão logo ou jogo base até cansar?"
+ },
+ "magical-athlete-pre-venda-asmodee": {
+  "chamada": "Rolar o dado e andar voltou, com nota 10 da crítica e o criador de Magic por trás 🎲",
+  "pergunta": "Corrida no dado: diversão pura ou sorte demais?"
+ },
+ "the-danes-rosenberg-gamefound": {
+  "chamada": "Meta de 100 mil euros batida em 23 minutos: o novo Rosenberg de vikings já passa de 850 mil 🪓",
+  "pergunta": "Eurogame de três horas: encara ou passa?"
+ },
+ "acelera-bruxa-fecha-financiamento-meeplestarter": {
+  "chamada": "Corrida de bruxas de vassoura quase dobrou a meta: R$ 48 mil e 103 apoiadores 🧹",
+  "pergunta": "Corrida com baralho: Heat ou bruxa de vassoura?"
+ },
+ "stormlight-war-for-roshar-kickstarter": {
+  "chamada": "Fãs de Sanderson já puseram US$ 2,9 milhões num jogo de guerra que só chega às lojas no fim de 2027 ⚡",
+  "pergunta": "Coalizão da Honra ou Odium?"
+ },
+ "dice-throne-nexus-kickstarter-2-milhoes": {
+  "chamada": "Um robô chamado Punch-a-Tron 3000 ajudou Dice Throne a passar de US$ 2 milhões no Kickstarter 🎲",
+  "pergunta": "Duelo de dados: sorte ou estratégia?"
+ },
+ "arcs": {
+  "chamada": "O melhor wargame de 2024 é um jogo de cartas, e sai por menos de R$ 310 em português 🚀",
+  "pergunta": "Guerra se decide nos dados ou nas cartas?"
+ },
+ "earth": {
+  "chamada": "O Jogo do Ano médio do Golden Geek 2023 é uma floresta que se joga como planilha 🌱",
+  "pergunta": "Jogo bom tem briga ou tem conta?"
+ },
+ "century-spice-road": {
+  "chamada": "Trocaram a canela por golens e as regras ficaram iguais. Century venceu o Golden Geek mesmo assim 🌶️",
+  "pergunta": "Century ou Splendor?"
+ },
+ "radlands": {
+  "chamada": "Golden Geek de melhor jogo para dois: um Mad Max em que você ganha economizando água, a partir de R$ 172,70 💧",
+  "pergunta": "Gasta a água toda ou guarda para o próximo turno?"
+ },
+ "civolution-e-horizontes-de-spirit-island-chegam-as-lojas": {
+  "chamada": "Acabou a pré-venda: o vencedor do As d'Or e a porta de entrada de Spirit Island já estão nas lojas, a partir de R$ 213,78 🎲",
+  "pergunta": "Tarde inteira com Civolution ou uma hora apanhando de Horizontes?"
+ },
+ "plants-vs-zombies-tabuleiro-passa-de-1-milhao-de-libras": {
+  "chamada": "O jardim do celular virou tabuleiro cooperativo e passou de 1 milhão de libras no Kickstarter 🌻",
+  "pergunta": "Você pagaria em libra pelo jogo que jogava de graça?"
+ },
+ "satisfactory-tabuleiro-passa-de-2-milhoes-gamefound": {
+  "chamada": "Mais de 8 mil pessoas deram 254 euros, em média, para otimizar esteira de papelão 🏭",
+  "pergunta": "Fábrica no tabuleiro: descanso ou planilha?"
+ },
+ "too-little-time-chip-theory-gamefound": {
+  "chamada": "O novo jogo do universo de Too Many Bones bateu a meta em seis minutos e só chega em 2028 ⏳",
+  "pergunta": "Você financiaria um jogo com entrega em 2028?"
+ },
+ "origins-of-light-final-fantasy-tabuleiro-kickstarter": {
+  "chamada": "Final Fantasy virou jogo de tabuleiro oficial, com peças de Chocobo, e já passa de US$ 1,1 milhão ⚔️",
+  "pergunta": "Licença famosa basta para apoiar sem ver resenha?"
+ },
+ "spiel-essen-seis-furtos-montagem-desmontagem": {
+  "chamada": "Recorde de público na maior feira do mundo, e seis furtos nos bastidores: um estande perdeu 14 mil euros 🕵️",
+  "pergunta": "Feira desse tamanho sem câmera nos estandes faz sentido?"
+ },
+ "codenames-pictures": {
+  "chamada": "Tiraram cinco cartas do Codenames e ele ficou mais difícil. Dois Golden Geek em 2016 🕵️",
+  "pergunta": "Palavras ou desenhos?"
+ },
+ "so-clover": {
+  "chamada": "Venceu o Golden Geek de jogo de festa, e a crítica diz que ele nem é jogo de festa 🍀",
+  "pergunta": "Dica óbvia ou dica genial?"
+ },
+ "undaunted-stalingrad": {
+  "chamada": "15 batalhas, soldados com nome e baixas que não voltam. Mas a caixa tem botão de reiniciar 🎖️",
+  "pergunta": "Você desiste de uma batalha para salvar a tropa?"
+ },
+ "undaunted-battle-of-britain": {
+  "chamada": "O wargame em que o avião é proibido de frear, em português, a partir de R$ 181 ✈️",
+  "pergunta": "RAF ou Luftwaffe?"
+ }
 }

@@ -126,42 +126,6 @@
   "imagem": "https://eliteboardgamers.com.br/noticias/capas/acelera-bruxa-fecha-financiamento-meeplestarter.jpg"
  },
  {
-  "id": "r-dorfromantik-the-board-game",
-  "tema": "resenhas",
-  "hora": "2026-11-04T02:06:53Z",
-  "titulo": "⭐ Resenha: Dorfromantik: The Board Game",
-  "texto": "Paz no campo, com meta de produtividade. E a meta é a melhor parte.",
-  "url": "https://eliteboardgamers.com.br/dorfromantik-the-board-game/",
-  "imagem": "https://eliteboardgamers.com.br/dorfromantik-the-board-game/capa.jpg"
- },
- {
-  "id": "r-last-light",
-  "tema": "resenhas",
-  "hora": "2026-11-04T02:06:53Z",
-  "titulo": "⭐ Resenha: Luz Final",
-  "texto": "O 4X de uma hora existe. Ele só pede o autor junto e um X a menos.",
-  "url": "https://eliteboardgamers.com.br/last-light/",
-  "imagem": "https://eliteboardgamers.com.br/last-light/capa.jpg"
- },
- {
-  "id": "r-great-western-trail",
-  "tema": "resenhas",
-  "hora": "2026-11-04T02:06:53Z",
-  "titulo": "⭐ Resenha: Great Western Trail",
-  "texto": "O original ganhou os troféus. O El Paso ganhou a quarta-feira à noite.",
-  "url": "https://eliteboardgamers.com.br/great-western-trail/",
-  "imagem": "https://eliteboardgamers.com.br/great-western-trail/capa.jpg"
- },
- {
-  "id": "r-inventors-of-the-south-tigris",
-  "tema": "resenhas",
-  "hora": "2026-11-04T02:06:53Z",
-  "titulo": "⭐ Resenha: Inventores do Sul do Tigre",
-  "texto": "Na vida real isso se chama estágio. Aqui, estratégia.",
-  "url": "https://eliteboardgamers.com.br/inventors-of-the-south-tigris/",
-  "imagem": "https://eliteboardgamers.com.br/inventors-of-the-south-tigris/capa.jpg"
- },
- {
   "id": "r-gloomhaven-jaws-of-the-lion",
   "tema": "resenhas",
   "hora": "2026-11-04T02:06:53Z",
@@ -358,5 +322,41 @@
   "texto": "Final Fantasy tem mais de trinta jogos e uma regra de ouro: o primeiro nunca é o último. A KessCo já avisou que este é o começo de uma série, e o apoio médio de US$ 310…",
   "url": "https://eliteboardgamers.com.br/noticias/origins-of-light-final-fantasy-tabuleiro-kickstarter/",
   "imagem": "https://eliteboardgamers.com.br/noticias/capas/origins-of-light-final-fantasy-tabuleiro-kickstarter.jpg"
+ },
+ {
+  "id": "r-codenames-pictures",
+  "tema": "resenhas",
+  "hora": "2026-11-04T11:18:34Z",
+  "titulo": "⭐ Resenha: Codenames: Pictures",
+  "texto": "Um desenho vale mil palavras. O problema é que o seu time vai discutir todas.",
+  "url": "https://eliteboardgamers.com.br/codenames-pictures/",
+  "imagem": "https://eliteboardgamers.com.br/codenames-pictures/capa.jpg"
+ },
+ {
+  "id": "r-so-clover",
+  "tema": "resenhas",
+  "hora": "2026-11-04T11:18:34Z",
+  "titulo": "⭐ Resenha: So Clover!",
+  "texto": "Seis trevos na caixa, três pessoas na mesa e uma carta mentindo para todo mundo.",
+  "url": "https://eliteboardgamers.com.br/so-clover/",
+  "imagem": "https://eliteboardgamers.com.br/so-clover/capa.jpg"
+ },
+ {
+  "id": "r-undaunted-stalingrad",
+  "tema": "resenhas",
+  "hora": "2026-11-04T11:18:34Z",
+  "titulo": "⭐ Resenha: Undaunted: Stalingrad",
+  "texto": "Quinze batalhas, soldados com nome e um botão de desfazer que não desfaz a culpa.",
+  "url": "https://eliteboardgamers.com.br/undaunted-stalingrad/",
+  "imagem": "https://eliteboardgamers.com.br/undaunted-stalingrad/capa.jpg"
+ },
+ {
+  "id": "r-undaunted-battle-of-britain",
+  "tema": "resenhas",
+  "hora": "2026-11-04T11:18:34Z",
+  "titulo": "⭐ Resenha: Undaunted: Battle of Britain",
+  "texto": "Nenhum avião fica parado. Quem tenta frear vira a próxima ficha no descarte.",
+  "url": "https://eliteboardgamers.com.br/undaunted-battle-of-britain/",
+  "imagem": "https://eliteboardgamers.com.br/undaunted-battle-of-britain/capa.jpg"
  }
 ]

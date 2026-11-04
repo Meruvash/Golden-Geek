@@ -1,0 +1,341 @@
+{
+ "slug": "undaunted-stalingrad",
+ "jogo": "Undaunted: Stalingrad",
+ "cor": "#8a3b2e",
+ "kicker": "Resenha · Wargame de campanha para dois",
+ "og_titulo": "Undaunted: Stalingrad vale a pena? Resenha Elite Boardgamers",
+ "titulo_busca": "Undaunted: Stalingrad: resenha da campanha de 15 batalhas",
+ "descricao": "Resenha de Undaunted: Stalingrad, campanha para dois da Osprey e Golden Geek de wargame de 2022: regras, baixas permanentes, preço e edição nacional.",
+ "titulo_html": "A batalha mais cruel da série vem com botão de reiniciar: <span>Undaunted: Stalingrad</span>",
+ "lede": "Undaunted: Stalingrad é o capítulo de campanha da série de David Thompson e Trevor Benjamin, publicado pela Osprey Games em 2022: até 15 batalhas encadeadas para duas pessoas, com soldados que morrem de vez e prédios que caem. Venceu o Golden Geek de wargame de 2022. Toda baixa pesa por várias partidas, e no fim da campanha dá para guardar tudo e começar de novo. É a guerra com desfazer. E, mesmo assim, dói.",
+ "tags": [
+  "2 jogadores",
+  "45–75 min por cenário",
+  "14+",
+  "Wargame",
+  "Campanha"
+ ],
+ "alt": "Caixa de Undaunted: Stalingrad sobre uma mesa com o mapa de peças quadradas da cidade montado, fichas de soldados soviéticos e alemães, cartas e dados pretos",
+ "premiacoes": [
+  {
+   "premio": "Golden Geek",
+   "ano": 2022,
+   "categoria": "Wargame",
+   "colocacao": 1,
+   "resultado": "vencedor",
+   "fonte": "https://boardgamewire.com/index.php/2023/05/09/heat-pedal-to-the-metal-cat-in-the-box-lead-boardgamegeek-golden-geek-award-winners/",
+   "rotulo": "Vencedor"
+  },
+  {
+   "premio": "Golden Geek",
+   "ano": 2022,
+   "categoria": "2 jogadores",
+   "colocacao": 3,
+   "resultado": "top 3",
+   "fonte": "https://boardgamewire.com/index.php/2023/05/09/heat-pedal-to-the-metal-cat-in-the-box-lead-boardgamegeek-golden-geek-award-winners/",
+   "rotulo": "Finalista"
+  }
+ ],
+ "ficha": [
+  [
+   "Ano",
+   "2022 (Reino Unido em 24/11; EUA em 13/12, segundo a Osprey)"
+  ],
+  [
+   "Designers",
+   "David Thompson e Trevor Benjamin"
+  ],
+  [
+   "Arte e texto",
+   "mais de 300 ilustrações de Roland MacDonald; 150 relatórios de missão escritos por Robbie MacNiven"
+  ],
+  [
+   "Editora original",
+   "Osprey Games"
+  ],
+  [
+   "Editora no Brasil",
+   "não encontramos edição nacional até 04/11/2026; a série sai no Brasil pela MeepleBR, como Destemidos"
+  ],
+  [
+   "Jogadores",
+   "2"
+  ],
+  [
+   "Duração anunciada",
+   "45 a 75 minutos por cenário (Osprey); campanha de até 15 cenários"
+  ],
+  [
+   "Idade",
+   "14+ (Osprey)"
+  ],
+  [
+   "Nota BGG",
+   "não confirmado nas fontes consultadas"
+  ],
+  [
+   "Nota ComparaJogos",
+   "8,6, com complexidade 2,6"
+  ],
+  [
+   "Nota Ludopedia",
+   "não confirmado nas fontes consultadas"
+  ],
+  [
+   "Idioma",
+   "texto moderado, exige consulta, segundo o ComparaJogos"
+  ],
+  [
+   "Componentes",
+   "375 cartas, 129 peças de mapa, 204 fichas, 4 dados e 4 livretos (Osprey)"
+  ],
+  [
+   "Prêmios",
+   "Golden Geek 2022 de wargame (finalistas: Resist! e Votes for Women) e finalista de jogo para dois, prêmio vencido por Splendor Duel"
+  ]
+ ],
+ "nota_ficha": "Ludopedia e BoardGameGeek bloqueiam acesso automatizado: a nota do BGG e a da Ludopedia ficaram sem confirmação. Ficha e componentes segundo a Osprey; regras segundo o resumo do livro de regras no RulesPal. Consulta em 04/11/2026.",
+ "como_funciona": [
+  "Um jogador comanda os soviéticos e o outro, os alemães, numa campanha de até 15 cenários pela cidade de Stalingrado. Cada cenário tem objetivo próprio, como controlar pontos do mapa ou derrotar unidades específicas. O baralho de cada lado é o exército: cada carta é um soldado com nome e rosto, ligado a uma ficha no mapa.",
+  "Toda rodada começa igual. Os dois compram 4 cartas e escolhem uma em segredo para disputar a iniciativa: quem revelar o número maior joga primeiro. As 3 cartas que sobram são jogadas uma a uma, cada uma com uma ação: mover, explorar, atacar, tomar controle de uma peça do mapa ou reforçar, que é pôr cartas novas da reserva no baralho.",
+  "Para atacar, você soma a defesa do alvo, a cobertura do terreno e a distância, e rola tantos dados quanto o ataque da carta. Um dado igual ou maior que a defesa acerta, e o zero sempre acerta. O defensor tira uma carta daquele soldado da área de jogo, da mão, do descarte ou do baralho e põe na pilha de baixas. Sem carta para tirar, a unidade foge em debandada.",
+  "Explorar com batedores põe marcadores no mapa e enche o próprio baralho de cartas de neblina de guerra, que só servem para disputar iniciativa. Só fuzileiros tomam controle de uma peça. O cenário acaba quando alguém cumpre o objetivo, põe todos os fuzileiros rivais em debandada ou desiste, entregando a vitória para poupar soldados.",
+  "Entre um cenário e outro, parte das baixas vira perda permanente, sorteada conforme o tamanho da pilha; fuzileiros, batedores e metralhadores perdidos são trocados por reservas mais fracas. Duas cartas sorteadas ganham versão melhorada. Prédios destruídos trocam de peça, e o vencedor decide qual cenário vem a seguir. No fim, tudo pode ser reiniciado."
+ ],
+ "passos": [
+  [
+   "DISPUTE A INICIATIVA",
+   "Compre 4 cartas e revele uma ao mesmo tempo que o rival. O número maior joga primeiro; a carta usada vai para o descarte."
+  ],
+  [
+   "JOGUE TRÊS ORDENS",
+   "Cada carta restante ativa o soldado dela: mover, explorar, atacar, tomar controle ou reforçar o baralho com cartas da reserva."
+  ],
+  [
+   "ROLE CONTRA A DEFESA",
+   "Some defesa, cobertura e distância. Role os dados do ataque: um resultado igual ou maior acerta, e o zero sempre acerta."
+  ],
+  [
+   "TIRE A BAIXA",
+   "Quem leva o tiro tira uma carta daquele soldado e põe na pilha de baixas. Sem carta disponível, a unidade debanda."
+  ],
+  [
+   "LEVE AS CICATRIZES",
+   "Depois do cenário, sorteie as perdas permanentes, melhore duas cartas e troque os prédios destruídos. O vencedor escolhe o próximo cenário."
+  ]
+ ],
+ "como_resumo": "Gaste três ordens por rodada e carregue cada baixa para as próximas batalhas.",
+ "perfil": [
+  [
+   "Peso das consequências",
+   5
+  ],
+  [
+   "Interação direta",
+   5
+  ],
+  [
+   "Variedade entre partidas",
+   4
+  ],
+  [
+   "Facilidade de ensinar",
+   3
+  ],
+  [
+   "Preparação rápida",
+   2
+  ],
+  [
+   "Controle sobre a sorte",
+   3
+  ]
+ ],
+ "experiencia": [
+  "No primeiro cenário, um fuzileiro é só uma carta. No quinto, é o soldado que sobreviveu a quatro batalhas, ganhou versão melhorada e que você não quer perder de jeito nenhum. A Space-Biff conta que o rosto e o nome de cada soldado mudaram o jeito de jogar do crítico. É o efeito de dar nome ao peixe do aquário. Depois disso, ninguém quer comer o peixe.",
+  "Um turno típico: você tem 3 cartas e o rival tem um metralhador no prédio do canto. Dá para avançar o fuzileiro e tomar a peça, usar o batedor para revelar o caminho e encher o baralho de neblina, ou reforçar o pelotão pensando no próximo cenário. Às vezes a melhor jogada é desistir. A regra permite, e a Board Game Quest elogia: perder uma batalha para não perder a guerra.",
+  "E a guerra é longa. São até 15 cenários de 45 a 75 minutos cada. A Board Game Quest terminou a primeira campanha com 9 vitórias soviéticas contra 6 alemãs, um cabo de guerra até o fim."
+ ],
+ "citacao": {
+  "texto": "Uma obra-prima, que eu chamaria de encerramento perfeito da série.",
+  "fonte": "Space-Biff (tradução livre)"
+ },
+ "funciona": [
+  [
+   "Baixa que dura várias partidas",
+   "A pilha de baixas vira perda permanente entre um cenário e outro, e fuzileiro perdido volta como reserva mais fraca. Para a WhatBoardGame, cada tiro levado é um golpe no cenário e na campanha. A Board Game Quest descreve as baixas como emocionalmente pesadas, e a Tabletop Gaming diz que elas doem."
+  ],
+  [
+   "O baralho que vira exército",
+   "Reforçar põe soldados no baralho, a neblina de guerra entope a mão e cada tiro tira cartas: o deck é a tropa. A Board Game Quest coloca o sistema entre os melhores do gênero, e a Tabletop Gaming fala em construção de baralho leve, fácil de aprender e de ritmo rápido."
+  ],
+  [
+   "Cidade que desmorona",
+   "Prédio destruído troca de peça e continua assim nos cenários seguintes. A Space-Biff diz que ver a cidade e os soldados se deteriorarem dá peso emocional à campanha. A partida número dez acontece num mapa diferente da primeira porque vocês dois o destruíram."
+  ],
+  [
+   "Legado sem tesoura",
+   "Nada é rasgado nem colado. A campanha pode ser reiniciada no fim para explorar os outros ramos e finais, segundo a Osprey e a Board Game Quest. A Space-Biff chama de legado mais gentil que outros do gênero. Os 15 cenários se ramificam conforme quem vence, então a segunda campanha não repete a primeira."
+  ],
+  [
+   "Equilíbrio de cabo de guerra",
+   "A Board Game Quest fechou a primeira campanha em 9 a 6 para os soviéticos e descreve o equilíbrio como um cabo de guerra. A Tabletop Gaming fala em jogo bem afinado e equilibrado. A regra de desistir ajuda quem está perdendo a salvar a tropa para a próxima."
+  ],
+  [
+   "Começa pequeno",
+   "A WhatBoardGame elogia a campanha por começar em escala pequena e crescer aos poucos, com regras novas entrando em doses. A Tabletop Gaming diz que não é preciso saber nada de wargame para jogar. Quem nunca jogou a série aprende no primeiro cenário."
+  ]
+ ],
+ "atencao": [
+  [
+   "Moderada",
+   "Sem edição em português",
+   "Não encontramos edição nacional até 04/11/2026, e o ComparaJogos classifica o texto como moderado, que exige consulta. A MeepleBR lançou a série como Destemidos, inclusive a Batalha da Grã-Bretanha em abril de 2026. Stalingrado não veio. A batalha mais famosa da série é justamente a que ficou no porto."
+  ],
+  [
+   "Moderada",
+   "Dois jogadores, quinze encontros",
+   "A Tabletop Gaming só reclama de uma coisa: por ser para dois e ter campanha longa, o jogo é difícil de dividir com mais gente. São até 15 cenários com a mesma dupla. É um casamento com cláusula de fidelidade. Se o seu parceiro de jogo sumir no cenário sete, Stalingrado fica sitiada na estante."
+  ],
+  [
+   "Moderada",
+   "Cenário bom, cenário torto",
+   "A Space-Biff diz que os cenários são irregulares, alguns desequilibrados e outros complicados de administrar em várias frentes. A WhatBoardGame também achou cenários tortos, embora com finais apertados. Numa campanha, perder um cenário injusto não acaba ali: a baixa vai junto para o próximo."
+  ],
+  [
+   "Leve",
+   "Montagem de fichas",
+   "Para a Board Game Quest, o único momento assustador é espalhar todas as fichas pelo mapa conforme o livreto. São 129 peças de mapa e 204 fichas na caixa. Dividir a montagem entre os dois encurta a espera, mas o soldado chega à guerra depois de meia hora de logística."
+  ],
+  [
+   "Leve",
+   "Regra espalhada e erro de impressão",
+   "A WhatBoardGame conta que palavras-chave e regras de ataque estão espalhadas pelo livro, obrigando a folhear o tempo todo, e cita erros de impressão, um deles escondendo um final antecipado da campanha. Quem está perdendo a guerra no tabuleiro também pode estar perdendo para o índice."
+  ],
+  [
+   "Leve",
+   "História que se perde",
+   "A Board Game Quest diz que o texto entre missões não teve tempo de crescer e pensa em pular a narração numa segunda campanha. A WhatBoardGame acha que a história se perde nos intervalos longos entre partidas. São 150 relatórios escritos para quem lembra o que aconteceu há três semanas."
+  ]
+ ],
+ "jogadores": [
+  [
+   "2 jogadores",
+   "É a única contagem: um lado soviético, outro alemão, e a campanha inteira com a mesma dupla.",
+   3
+  ],
+  [
+   "Sozinho",
+   "Modo solo oficial não confirmado nas fontes consultadas. A Osprey anuncia o jogo só para dois.",
+   1
+  ],
+  [
+   "3 ou mais",
+   "Não há regra para mais jogadores. A Tabletop Gaming lamenta justamente a dificuldade de dividir o jogo com mais gente.",
+   1
+  ]
+ ],
+ "primeira_partida": "A WhatBoardGame elogia a campanha por começar pequena e introduzir regras novas aos poucos. O que confunde no começo é a diferença entre explorar e controlar: batedor só abre caminho, e só fuzileiro toma a peça que vale ponto. Dica prática: separem as fichas do primeiro mapa antes de abrir as regras, como sugere a montagem dividida da Board Game Quest, e combinem desde já o dia do segundo cenário.",
+ "edicao_nacional": "Não encontramos edição nacional até 04/11/2026. O ComparaJogos não tinha oferta de jogo novo em loja brasileira, e a busca em português achou só a edição em inglês. A MeepleBR publica a série como Destemidos, com Normandia, Norte da África e Batalha da Grã-Bretanha, de abril de 2026. Na loja da Osprey nos EUA, em 04/11/2026, o jogo custava US$ 120, em estoque.",
+ "preco_ref": {
+  "faixa": "US$ 120 na loja da Osprey nos EUA",
+  "data": "04/11/2026",
+  "obs": "sem oferta de jogo novo em lojas brasileiras no ComparaJogos; edição nacional não encontrada"
+ },
+ "versoes": "A série Undaunted começou com Normandy, de 2019, e segue com North Africa, a expansão Reinforcements e Battle of Britain. No Brasil, a MeepleBR lançou Destemidos: Normandia, Norte da África e Batalha da Grã-Bretanha. Stalingrad é o único da série com campanha de baixas permanentes e mapa que muda, e se joga sem os outros. Versão digital oficial não confirmada nas fontes consultadas.",
+ "comparacoes": [
+  [
+   "Undaunted: Battle of Britain",
+   "undaunted-battle-of-britain",
+   "O irmão aéreo, de 2023, com o mesmo baralho de ordens e a mesma disputa de iniciativa. Cenários soltos, sem campanha de baixas, e edição em português da MeepleBR."
+  ],
+  [
+   "Pandemic Legacy",
+   "pandemic-legacy",
+   "A outra campanha famosa em que cada partida muda a seguinte. Lá se rasga carta e se cola adesivo de vez; aqui, a caixa volta ao começo no fim."
+  ],
+  [
+   "Arcs",
+   "arcs",
+   "Golden Geek de wargame de 2024, também com cartas no centro das decisões. Aceita até quatro jogadores e troca soldados com nome por impérios galácticos."
+  ]
+ ],
+ "para_quem": [
+  "Tem um parceiro fixo de jogo e quinze noites para combinar",
+  "Gostou de Destemidos: Normandia e quer a versão que dói",
+  "Lê regra em inglês sem sofrer",
+  "Gosta de ver o mapa mudar porque vocês dois o destruíram",
+  "Prefere campanha que dá para recomeçar"
+ ],
+ "nao_e_para": [
+  "Muda de parceiro de jogo a cada semana",
+  "Precisa de regra e carta em português",
+  "Não suporta perder um soldado querido para um dado",
+  "Odeia montar mapa com dezenas de fichas",
+  "Quer um wargame para três ou quatro pessoas"
+ ],
+ "selo": "Recomendado com ressalva",
+ "ressalva": "sem edição em português",
+ "melhor_para": "campanha",
+ "veredito": "Undaunted: Stalingrad é a batalha mais cruel da série e vem com botão de reiniciar. Cada baixa atravessa vários cenários, cada prédio derrubado fica derrubado, e o soldado com nome que sobreviveu a quatro batalhas pesa na mão como nenhuma ficha pesa. A Space-Biff chama de obra-prima, a Tabletop Gaming de melhor da série, e o Golden Geek de wargame de 2022 concorda. O que pesa: precisa da mesma dupla por até 15 cenários, alguns deles tortos, e não encontramos edição em português; a MeepleBR trouxe o irmão aéreo e deixou este. Com US$ 120 na loja da Osprey e inglês na mesa, compre se você tem parceiro fixo. A guerra acaba. A dupla precisa durar.",
+ "tagline": "Quinze batalhas, soldados com nome e um botão de desfazer que não desfaz a culpa.",
+ "consulta": "04/11/2026",
+ "fontes": [
+  [
+   "Osprey Games – Undaunted: Stalingrad (loja dos EUA)",
+   "https://www.ospreypublishing.com/us/undaunted-stalingrad-9781472852670/",
+   "preço, ficha, componentes"
+  ],
+  [
+   "Osprey Games – lançamento de Undaunted: Stalingrad",
+   "https://www.ospreypublishing.com/uk/osprey-blog/2022/undaunted-stalingrad-launch-day/",
+   "datas, arte, relatórios, campanha, fotos"
+  ],
+  [
+   "Osprey Games – diário de criação",
+   "https://www.ospreypublishing.com/us/osprey-blog/2022/undaunted-stalingrad-design-diary/",
+   "fotos"
+  ],
+  [
+   "Undaunted: Stalingrad – regras (RulesPal)",
+   "https://rulespal.com/undaunted-stalingrad/rulebook",
+   "regras, ataque, baixas, campanha"
+  ],
+  [
+   "BoardGameWire – Golden Geek 2022",
+   "https://boardgamewire.com/index.php/2023/05/09/heat-pedal-to-the-metal-cat-in-the-box-lead-boardgamegeek-golden-geek-award-winners/",
+   "prêmios e finalistas"
+  ],
+  [
+   "Board Game Quest – Undaunted: Stalingrad review",
+   "https://www.boardgamequest.com/undaunted-stalingrad-review/",
+   "crítica, equilíbrio, montagem, narração"
+  ],
+  [
+   "Tabletop Gaming – Undaunted: Stalingrad review",
+   "https://tabletopgaming.co.uk/reviews/undaunted-stalingrad-review",
+   "crítica, dois jogadores, campanha"
+  ],
+  [
+   "Space-Biff – Legacies of Stalingrad",
+   "https://spacebiff.com/2023/08/07/undaunted-stalingrad",
+   "crítica, cenários, citação"
+  ],
+  [
+   "WhatBoardGame – Undaunted: Stalingrad review",
+   "https://whatboardgame.com/post/undaunted-stalingrad-review",
+   "crítica, livro de regras, campanha"
+  ],
+  [
+   "ComparaJogos – Undaunted: Stalingrad",
+   "https://www.comparajogos.com.br/item/undaunted-stalingrad",
+   "ofertas no Brasil, idioma, nota"
+  ],
+  [
+   "MeepleBR – Destemidos: Batalha da Grã-Bretanha",
+   "https://meeplebr.com/product/destemidos-batalha-da-gra-bretanha/",
+   "série no Brasil"
+  ]
+ ],
+ "legenda": "A batalha mais cruel da série vem com botão de reiniciar. 🎖️\n\nUndaunted: Stalingrad venceu o Golden Geek de wargame de 2022: até 15 cenários para dois, com baixas permanentes e prédios que caem de vez.\nO soldado com nome que sobreviveu a quatro batalhas pesa como nenhuma ficha pesa. No fim, a caixa volta ao começo.\nVeredito: RECOMENDADO COM RESSALVA. Não encontramos edição em português, e a campanha exige a mesma dupla do início ao fim.\n\nVocê desiste de uma batalha para salvar a tropa? 👇\nResenha completa no link da bio.\n\n#Undaunted #UndauntedStalingrad #Destemidos #JogosDeTabuleiro #BoardGames #Wargame #JogoParaDois #TwoPlayerGames #OspreyGames #GoldenGeek #EliteBoardgamers"
+}

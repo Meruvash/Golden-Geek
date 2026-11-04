@@ -1,0 +1,333 @@
+{
+ "slug": "undaunted-battle-of-britain",
+ "jogo": "Undaunted: Battle of Britain",
+ "cor": "#2f6f9b",
+ "kicker": "Resenha · Combate aéreo para dois",
+ "og_titulo": "Destemidos: Batalha da Grã-Bretanha vale a pena? Resenha Elite Boardgamers",
+ "titulo_busca": "Destemidos: Batalha da Grã-Bretanha: resenha do wargame aéreo",
+ "descricao": "Resenha de Destemidos: Batalha da Grã-Bretanha (Undaunted), Golden Geek de wargame de 2023: regras do combate aéreo, cenários, preço e edição da MeepleBR.",
+ "titulo_html": "O wargame em que o avião é proibido de frear: <span>Destemidos: Batalha da Grã-Bretanha</span>",
+ "lede": "Destemidos: Batalha da Grã-Bretanha leva a série Undaunted, de David Thompson e Trevor Benjamin, do chão para o céu de 1940: RAF contra Luftwaffe, para dois jogadores, em 11 cenários. Venceu o Golden Geek de wargame de 2023 e saiu no Brasil pela MeepleBR em abril de 2026. Aqui nenhum avião fica parado: toda carta jogada obriga a voar para frente. A Wargamer disse que às vezes parece mais corrida que guerra. A gente acha que é por isso que funciona.",
+ "tags": [
+  "2 jogadores",
+  "45–60 min",
+  "14+",
+  "Wargame",
+  "Construção de baralho"
+ ],
+ "alt": "Mapa de hexágonos de Undaunted: Battle of Britain com costa, cidade e mar, fichas de aviões da RAF e da Luftwaffe, nuvens e balões de barragem",
+ "premiacoes": [
+  {
+   "premio": "Golden Geek",
+   "ano": 2023,
+   "categoria": "Wargame",
+   "colocacao": 1,
+   "resultado": "vencedor",
+   "fonte": "https://boardgamewire.com/index.php/2024/05/15/hegemony-lives-up-to-its-name-by-dominating-latest-golden-geek-awards/",
+   "rotulo": "Vencedor"
+  },
+  {
+   "premio": "Golden Geek",
+   "ano": 2023,
+   "categoria": "2 jogadores",
+   "colocacao": 3,
+   "resultado": "top 3",
+   "fonte": "https://boardgamewire.com/index.php/2024/05/15/hegemony-lives-up-to-its-name-by-dominating-latest-golden-geek-awards/",
+   "rotulo": "Finalista"
+  }
+ ],
+ "ficha": [
+  [
+   "Ano",
+   "2023; edição brasileira em abril de 2026 (MeepleBR)"
+  ],
+  [
+   "Designers",
+   "David Thompson e Trevor Benjamin"
+  ],
+  [
+   "Arte",
+   "Roland MacDonald"
+  ],
+  [
+   "Editora original",
+   "Osprey Games"
+  ],
+  [
+   "Editora no Brasil",
+   "MeepleBR, como Destemidos: Batalha da Grã-Bretanha"
+  ],
+  [
+   "Jogadores",
+   "2"
+  ],
+  [
+   "Duração anunciada",
+   "45 a 60 minutos (MeepleBR)"
+  ],
+  [
+   "Duração relatada",
+   "cerca de uma hora por cenário, segundo a GamingTrend"
+  ],
+  [
+   "Idade",
+   "14+ (MeepleBR)"
+  ],
+  [
+   "Cenários",
+   "11, segundo a Wargamer e a GamingTrend"
+  ],
+  [
+   "Nota BGG",
+   "não confirmado nas fontes consultadas"
+  ],
+  [
+   "Nota ComparaJogos",
+   "7,9, com complexidade 2,8"
+  ],
+  [
+   "Nota Ludopedia",
+   "não confirmado nas fontes consultadas"
+  ],
+  [
+   "Idioma",
+   "pouco texto, memorizável, segundo o ComparaJogos"
+  ],
+  [
+   "Componentes",
+   "116 cartas (51 da RAF e 65 da Luftwaffe), 30 fichas de aviões (4 delas falsas), 31 peças de tabuleiro, marcadores de artilharia antiaérea, nuvens, instalações, balões de barragem e navios, 4 dados, livro de regras e livro de cenários (MeepleBR)"
+  ],
+  [
+   "Prêmios",
+   "Golden Geek 2023 de wargame (finalistas: Halls of Hegra e The British Way) e finalista de jogo para dois, prêmio vencido por Sky Team"
+  ]
+ ],
+ "nota_ficha": "Ludopedia e BoardGameGeek bloqueiam acesso automatizado: a nota do BGG e a da Ludopedia ficaram sem confirmação. Ficha e componentes segundo a página da MeepleBR; regras segundo o resumo do livro de regras no RulesPal. Consulta em 04/11/2026.",
+ "como_funciona": [
+  "Um jogador comanda a RAF e o outro, a Luftwaffe, num mapa de hexágonos montado com peças de tabuleiro. Cada cenário tem objetivo próprio: derrubar aviões, bombardear navios e instalações, escapar por uma borda do mapa ou somar pontos. Cada ficha é um avião, e cada carta é a tripulação dele.",
+  "A rodada segue a regra da série. Os dois compram 4 cartas e revelam uma ao mesmo tempo para disputar a iniciativa: o número maior joga primeiro. Depois, cada um joga as cartas que sobraram, uma por vez. Nada se guarda para a rodada seguinte.",
+  "A carta de combate obriga o avião a se mover para frente, de 1 até o valor da carta em hexágonos, e permite mais uma ação, como atacar ou bombardear. Para virar, é preciso uma manobra anunciada antes do movimento, e cada curva de 60 graus só vem depois de andar pelo menos um hexágono.",
+  "No ataque, você soma a defesa do alvo, a cobertura, que sobe com outros aviões, nuvens e balões no caminho, e a distância. Rola os dados da carta, e um resultado igual ou maior acerta; atacar pela cauda dá mais dados. Cada acerto tira uma carta daquele avião da mão, do descarte ou do baralho. Sem carta, o avião cai.",
+  "Os caças da RAF voam em seções de dois aviões. Se eles se afastam demais, a seção fica sem comunicação e o jogador põe cartas de discórdia no baralho, que só servem para disputar iniciativa. A carta de comunicação reforça o baralho com cartas da reserva ou remove discórdia. Artilharia antiaérea pode tirar avião de ação."
+ ],
+ "passos": [
+  [
+   "DISPUTE A INICIATIVA",
+   "Compre 4 cartas e revele uma junto com o rival. O número maior joga primeiro; empate fica com quem já tinha a iniciativa."
+  ],
+  [
+   "VOE PARA FRENTE",
+   "Toda carta de combate move o avião de 1 até X hexágonos na direção do nariz. Manobra anunciada antes permite curvas de 60 graus."
+  ],
+  [
+   "ATIRE NA LINHA",
+   "Some defesa, cobertura e distância e role os dados. Pela cauda, role mais dados. Um acerto tira uma carta daquele avião."
+  ],
+  [
+   "MANTENHA A ALA",
+   "Caças da mesma seção precisam voar juntos. Afastados, ficam sem comunicação e enchem o baralho de cartas de discórdia."
+  ],
+  [
+   "CUMPRA A MISSÃO",
+   "Derrube aviões, bombardeie navios e instalações ou escape pela borda, conforme o cenário. Quem cumprir o objetivo primeiro vence."
+  ]
+ ],
+ "como_resumo": "Jogue três cartas por rodada, voe sempre para frente e atire antes de virar alvo.",
+ "perfil": [
+  [
+   "Interação direta",
+   5
+  ],
+  [
+   "Ritmo de partida",
+   5
+  ],
+  [
+   "Facilidade de ensinar",
+   4
+  ],
+  [
+   "Variedade entre partidas",
+   3
+  ],
+  [
+   "Controle sobre a sorte",
+   3
+  ],
+  [
+   "Profundidade de baralho",
+   3
+  ]
+ ],
+ "experiencia": [
+  "O wargame comum tem uma pergunta: atacar ou defender. Este tem outra: para onde o seu avião vai estar apontado depois de voar três hexágonos sem poder parar. A Wargamer resume que às vezes o jogo parece mais corrida que guerra, e a gente assina embaixo. É uma corrida em que o prêmio é ficar atrás do adversário.",
+  "Um turno típico: o seu Hurricane está a dois hexágonos de um bombardeiro, mas virado para o lado errado. Se jogar a carta de combate, ele anda para frente e passa direto. Se gastar a manobra para virar, sobra só o movimento, e o tiro fica para a próxima rodada. Enquanto isso, o caça alemão que escolta o bombardeiro está atrás de você, pela cauda, com dados extras. Ninguém pisa no freio porque não existe freio.",
+  "A GamingTrend fala em cerca de uma hora por cenário, e a Tabletop Gaming diz que o sistema de voo simples dá sensação de velocidade. A sensação confere. A partida acaba antes do café esfriar e com alguém pedindo o cenário seguinte."
+ ],
+ "citacao": {
+  "texto": "O capítulo mais dinâmico da série até agora.",
+  "fonte": "Tabletop Gaming (tradução livre)"
+ },
+ "funciona": [
+  [
+   "Movimento obrigatório",
+   "Toda carta de combate obriga o avião a andar para frente, e virar exige manobra. Essa regra cria a tensão inteira do jogo: cada carta é uma aposta de onde o nariz vai parar. A Tabletop Gaming diz que o voo simples transmite velocidade e torna gostoso repetir os cenários."
+  ],
+  [
+   "A cauda vale ouro",
+   "Atacar pela traseira dá mais dados, e todo mundo sabe disso. A Tabletop Gaming elogia como o jogo recompensa posicionamento e planejamento na escolha entre atirar e manobrar. Na prática, metade da partida é tentar ficar atrás do rival sem deixar ninguém ficar atrás de você."
+  ],
+  [
+   "Ala que precisa voar junta",
+   "Os caças da RAF andam em seções, e a seção que se separa enche o próprio baralho de cartas de discórdia, que não servem para nada além da iniciativa. É a regra que transforma ficar perto do parceiro numa decisão com custo, e o diário de criação da Osprey diz que a ideia é cobrar caro pela falta de coesão."
+  ],
+  [
+   "Cenários com cara própria",
+   "São 11 cenários, segundo a Wargamer e a GamingTrend, com nuvens que dão cobertura, balões de barragem que derrubam quem entra, aviões em pista e navios fugindo pela borda. A Wargamer elogia essa variedade de montagens, e a GamingTrend chama os cenários de equilibrados e bem desenhados."
+  ],
+  [
+   "Entrada para wargame",
+   "A Tabletop Gaming diz que o jogo segue acessível e serve de porta de entrada para quem nunca jogou a série. A Wargamer elogia o livro de regras bem organizado. São 4 cartas por rodada, uma de iniciativa e três de ação: a regra base se explica em poucos minutos."
+  ],
+  [
+   "Edição nacional barata",
+   "Saiu no Brasil pela MeepleBR em abril de 2026, com regras e cartas em português, e o ComparaJogos classifica o texto como pouco e memorizável. Em 04/11/2026, o menor preço de jogo novo era R$ 181,24 no Pix, numa faixa de 19 ofertas."
+  ]
+ ],
+ "atencao": [
+  [
+   "Moderada",
+   "Cenário que pende para um lado",
+   "A Tabletop Gaming diz que alguns cenários parecem montados a favor de um dos lados, o que frustra. Num jogo de 11 cenários, alguém sempre vai pegar o lado errado do sorteio. A solução é velha e funciona: jogar de novo trocando de lado. A RAF de um é a Luftwaffe do outro."
+  ],
+  [
+   "Moderada",
+   "Menos baralho que a série",
+   "A Tabletop Gaming avisa que sumiu a escolha de unidades e que a gestão do baralho ficou mais estreita, e a Wargamer diz que o avião só move, vira, atira ou bombardeia. Quem amou montar o pelotão em Normandia vai achar o cardápio curto. É um caça, não um canivete suíço."
+  ],
+  [
+   "Leve",
+   "Avião estacionado",
+   "A GamingTrend reclama dos aviões parados na pista, que ficam sem fazer nada por vários turnos. Num jogo cuja graça é estar em movimento, o avião em solo é o único integrante da mesa mais entediado que o jogador esperando a vez."
+  ],
+  [
+   "Leve",
+   "Erro no livro de regras",
+   "A Wargamer aponta que a seção sobre ataque pelo flanco parece dizer o contrário do que pretende. Quem aprende pelo livro precisa conferir essa regra antes da primeira partida, ou o primeiro combate vira discussão de tribunal. A edição brasileira não foi conferida neste ponto."
+  ],
+  [
+   "Leve",
+   "Campanha só no placar",
+   "A Wargamer diz que a regra de campanha basicamente soma pontos sem mudar o jogo. Quem espera a cidade em ruínas e os soldados com cicatriz de Stalingrad encontra aqui um placar. É campanha no sentido de planilha."
+  ],
+  [
+   "Leve",
+   "Caixa que não aceita protetor",
+   "A GamingTrend avisa que o organizador da caixa não comporta as cartas com protetor. São 116 cartas que vão ser embaralhadas a cada rodada. Ou você protege as cartas, ou usa a bandeja. As duas coisas ao mesmo tempo, não."
+  ]
+ ],
+ "jogadores": [
+  [
+   "2 jogadores",
+   "É a única contagem: RAF de um lado, Luftwaffe do outro, e cada carta jogada responde à do rival.",
+   3
+  ],
+  [
+   "Sozinho",
+   "Modo solo oficial não confirmado nas fontes consultadas. A MeepleBR anuncia o jogo só para dois.",
+   1
+  ],
+  [
+   "3 ou mais",
+   "Não há regra para mais jogadores. Com três em casa, o terceiro vira árbitro da regra do flanco.",
+   1
+  ]
+ ],
+ "primeira_partida": "A regra base é a da série e se ensina rápido, segundo a Tabletop Gaming e a Wargamer. O que confunde no começo é a manobra: ela precisa ser anunciada antes do movimento, e a curva só vem depois de andar pelo menos um hexágono. Dica prática: no primeiro cenário, conte os hexágonos até o alvo antes de escolher a carta, e confira a regra de ataque pelo flanco, que a Wargamer achou escrita ao contrário no livro original.",
+ "edicao_nacional": "A MeepleBR lançou o jogo em abril de 2026 como Destemidos: Batalha da Grã-Bretanha, com 116 cartas, livro de regras e livro de cenários em português, 14 anos e 45 a 60 minutos. Em 04/11/2026, o ComparaJogos listava 19 ofertas de jogo novo, de R$ 181,24 no Pix a R$ 280, e classificava o idioma como pouco texto, memorizável.",
+ "preco_ref": {
+  "faixa": "a partir de R$ 181,24 no Pix",
+  "data": "04/11/2026",
+  "obs": "menor preço de jogo novo em lojas brasileiras segundo o ComparaJogos; 19 ofertas entre R$ 181 e R$ 280"
+ },
+ "versoes": "É um título independente da série Undaunted: não precisa de outra caixa. No Brasil, a MeepleBR também publicou Destemidos: Normandia e Norte da África. Undaunted: Stalingrad, a campanha com baixas permanentes, não encontramos em português até 04/11/2026. Expansão e versão digital oficial não foram confirmadas nas fontes consultadas.",
+ "comparacoes": [
+  [
+   "Undaunted: Stalingrad",
+   "undaunted-stalingrad",
+   "O irmão de 2022, também Golden Geek de wargame: mesma disputa de iniciativa, mas no chão, com campanha de 15 cenários e baixas permanentes. Mais peso, mais compromisso e sem edição em português."
+  ],
+  [
+   "Radlands",
+   "radlands",
+   "Outro duelo para dois com edição nacional, de cartas e sem mapa. Troca a aposta de posição no céu pela conta de três águas por turno."
+  ],
+  [
+   "Heat: Pedal to the Metal",
+   "heat-pedal-to-the-metal",
+   "Se a Wargamer tem razão e isto é meio corrida, Heat é a corrida inteira: cartas de marcha, curvas e motor esquentando, para até seis pessoas."
+  ]
+ ],
+ "para_quem": [
+  "Joga a dois e quer um wargame que acaba em uma hora",
+  "Já jogou Destemidos: Normandia e quer a versão no céu",
+  "Gosta de calcular onde a peça vai estar daqui a dois turnos",
+  "Quer entrar em wargame sem livro de cem páginas",
+  "Prefere caixa em português a preço de jogo médio"
+ ],
+ "nao_e_para": [
+  "Ama montar pelotão e escolher unidades",
+  "Quer campanha que muda o mapa de vez",
+  "Reúne três ou quatro pessoas na mesa",
+  "Não perdoa cenário desequilibrado",
+  "Odeia depender do dado na hora do tiro"
+ ],
+ "selo": "Recomendado",
+ "melhor_para": "dupla",
+ "veredito": "Destemidos: Batalha da Grã-Bretanha é o wargame em que o avião é proibido de frear, e essa proibição é a melhor regra da caixa. Cada carta obriga a voar para frente, cada curva custa uma manobra, e a partida vira uma disputa para ficar atrás do rival sem deixar ninguém ficar atrás de você. A Tabletop Gaming chama de capítulo mais dinâmico da série, e o Golden Geek de wargame de 2023 concorda. O que pesa: o baralho tem menos escolha que o de Normandia, alguns cenários pendem para um lado e a campanha é só placar. A partir de R$ 181,24 no Pix, em português pela MeepleBR, compre se você joga a dois. Na guerra aérea, quem para é alvo.",
+ "tagline": "Nenhum avião fica parado. Quem tenta frear vira a próxima ficha no descarte.",
+ "consulta": "04/11/2026",
+ "fontes": [
+  [
+   "MeepleBR – Destemidos: Batalha da Grã-Bretanha",
+   "https://meeplebr.com/product/destemidos-batalha-da-gra-bretanha/",
+   "edição nacional, componentes, ficha, foto"
+  ],
+  [
+   "Osprey Games – diário de criação de Undaunted: Battle of Britain",
+   "https://www.ospreypublishing.com/us/osprey-blog/2023/undaunted-battle-of-britain-design-diary/",
+   "escala, seções, discórdia, fotos"
+  ],
+  [
+   "Undaunted: Battle of Britain – regras (RulesPal)",
+   "https://rulespal.com/undaunted-battle-of-britain/rulebook",
+   "regras, movimento, ataque, comunicação"
+  ],
+  [
+   "BoardGameWire – Golden Geek 2023",
+   "https://boardgamewire.com/index.php/2024/05/15/hegemony-lives-up-to-its-name-by-dominating-latest-golden-geek-awards/",
+   "prêmios e finalistas"
+  ],
+  [
+   "Tabletop Gaming – Undaunted: Battle of Britain review",
+   "https://tabletopgaming.co.uk/reviews/undaunted-battle-of-britain-review",
+   "crítica, voo, cenários, citação"
+  ],
+  [
+   "Wargamer – Undaunted: Battle of Britain review",
+   "https://www.wargamer.com/undaunted-battle-of-britain/review",
+   "crítica, cenários, livro de regras, campanha"
+  ],
+  [
+   "GamingTrend – Undaunted: Battle of Britain review",
+   "https://gamingtrend.com/reviews/undaunted-battle-of-britain-review-a-brilliant-dogfighting-experience-that-soars/",
+   "crítica, duração, organizador"
+  ],
+  [
+   "ComparaJogos – Destemidos: Batalha da Grã-Bretanha",
+   "https://www.comparajogos.com.br/item/destemidos-batalha-da-gra-bretanha",
+   "preço no Brasil, idioma, nota"
+  ]
+ ],
+ "legenda": "O wargame em que o avião é proibido de frear. ✈️\n\nDestemidos: Batalha da Grã-Bretanha venceu o Golden Geek de wargame de 2023: RAF contra Luftwaffe, para dois, em 11 cenários.\nToda carta obriga a voar para frente, e a partida vira uma disputa para ficar atrás do rival. O baralho tem menos escolha que o de Normandia.\nVeredito: RECOMENDADO. A partir de R$ 181,24 no Pix, em português pela MeepleBR.\n\nNa sua mesa: RAF ou Luftwaffe? 👇\nResenha completa no link da bio.\n\n#Destemidos #Undaunted #BattleOfBritain #JogosDeTabuleiro #BoardGames #Wargame #JogoParaDois #TwoPlayerGames #MeepleBR #GoldenGeek #EliteBoardgamers"
+}

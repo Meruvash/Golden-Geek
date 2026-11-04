@@ -12,7 +12,8 @@
    "pagina": "https://www.ospreypublishing.com/us/osprey-blog/2023/undaunted-battle-of-britain-design-diary/",
    "imagem": "https://www.ospreypublishing.com/media/ajolpfab/1-undaunted-bob-box-copy.jpg",
    "baixada_em": "2026-11-03",
-   "aprovada": true
+   "aprovada": false,
+   "motivo": "04/11/2026: caixa da edição em inglês (Osprey); a resenha mostra o preço da edição brasileira da MeepleBR"
   },
   {
    "arquivo": "fotos/mesa-1.webp",
@@ -37,21 +38,20 @@
    "pagina": "https://www.ospreypublishing.com/us/osprey-blog/2023/undaunted-battle-of-britain-design-diary/",
    "imagem": "https://www.ospreypublishing.com/media/nvcf0ebz/3-undaunted-bob-gameplay-copy.jpg",
    "baixada_em": "2026-11-03",
-   "aprovada": true,
-   "jogar": true
+   "aprovada": true
   },
   {
    "arquivo": "fotos/componentes-1.webp",
    "tipo": "componentes",
    "largura": 1600,
    "altura": 1600,
-   "editora": "Osprey Games",
-   "credito": "Imagem: Osprey Games",
-   "pagina": "https://www.ospreypublishing.com/us/osprey-blog/2023/undaunted-battle-of-britain-design-diary/",
-   "imagem": "https://www.ospreypublishing.com/media/excc5m4w/2-undaunted-bob-box-plus-components-copy.jpg",
-   "baixada_em": "2026-11-03",
+   "editora": "MeepleBR",
+   "credito": "Imagem: MeepleBR · edição brasileira (MeepleBR)",
+   "pagina": "https://meeplebr.com/product/destemidos-batalha-da-gra-bretanha/",
+   "imagem": "https://meeplebr.com/wp-content/uploads/2026/03/Componentes-Batalha-da-Gra-Bretanha-Destemidos-2.jpg",
+   "baixada_em": "2026-11-04",
    "aprovada": true,
-   "fora": true
+   "jogar": true
   }
  ]
 }
