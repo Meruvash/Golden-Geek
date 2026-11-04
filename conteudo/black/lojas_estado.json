@@ -10,7 +10,7 @@
   },
   "bravojogos.com.br": {
    "dia": "2026-11-04",
-   "paginas": 11
+   "paginas": 12
   },
   "brecholudico.com.br": {
    "dia": "2026-11-04",
@@ -90,7 +90,7 @@
   },
   "www.alquimistasdosjogos.com.br": {
    "dia": "2026-11-04",
-   "paginas": 6
+   "paginas": 8
   },
   "www.animusludere.com.br": {
    "dia": "2026-11-04",
@@ -126,7 +126,7 @@
   },
   "www.caixinhaboardgames.com.br": {
    "dia": "2026-11-04",
-   "paginas": 3
+   "paginas": 11
   },
   "www.caldeiraojogos.com.br": {
    "dia": "2026-11-04",
@@ -134,7 +134,7 @@
   },
   "www.cangaiajogos.com.br": {
    "dia": "2026-11-04",
-   "paginas": 3
+   "paginas": 6
   },
   "www.capivarajogos.com.br": {
    "dia": "2026-11-04",
@@ -210,7 +210,7 @@
   },
   "www.mecadosjogos.com.br": {
    "dia": "2026-11-04",
-   "paginas": 3
+   "paginas": 7
   },
   "www.mosaicoloja.com.br": {
    "dia": "2026-11-04",
@@ -244,7 +244,7 @@
   },
   "www.placegames.com.br": {
    "dia": "2026-11-04",
-   "paginas": 6
+   "paginas": 9
   },
   "www.playeasy.com.br": {
    "dia": "2026-11-04",
@@ -256,7 +256,7 @@
   },
   "www.promobit.com.br": {
    "dia": "2026-11-04",
-   "paginas": 40
+   "paginas": 50
   },
   "www.reunionjogos.com.br": {
    "dia": "2026-11-04",
@@ -276,7 +276,7 @@
   },
   "www.tabuloja.com": {
    "dia": "2026-11-04",
-   "paginas": 9
+   "paginas": 13
   },
   "www.tavernareal.com": {
    "dia": "2026-11-04",
@@ -419,7 +419,7 @@
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-patchwork-nova-edicao-p": {
    "cj": 102.21,
    "estoque": true,
-   "hora": "2026-11-04T00:04+00:00",
+   "hora": "2026-11-04T19:12+00:00",
    "preco": 109.9
   },
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-quest-p": {
@@ -605,8 +605,14 @@
   "https://www.alquimistasdosjogos.com.br/jogos/imperium-horizontes": {
    "cj": 296.81,
    "estoque": true,
-   "hora": "2026-11-04T18:54+00:00",
+   "hora": "2026-11-04T19:12+00:00",
    "preco": 296.81
+  },
+  "https://www.alquimistasdosjogos.com.br/jogos/the-mandalorian-adventures-cla-de-dois": {
+   "cj": 139.3,
+   "estoque": true,
+   "hora": "2026-11-04T19:12+00:00",
+   "preco": 139.3
   },
   "https://www.animusludere.com.br/dp6": {
    "cj": 94.9,
@@ -685,6 +691,12 @@
    "estoque": true,
    "hora": "2026-11-04T18:52+00:00",
    "preco": 134.0
+  },
+  "https://www.caixinhaboardgames.com.br/produtos/as-grandes-fachadas-paixao-expansao-sagrada/": {
+   "cj": 92.07,
+   "estoque": true,
+   "hora": "2026-11-04T19:12+00:00",
+   "preco": 99.0
   },
   "https://www.caixinhaboardgames.com.br/produtos/azul-pavilhao-de-verao-mini/": {
    "cj": 106.95,
@@ -950,6 +962,12 @@
    "hora": "2026-11-04T18:53+00:00",
    "preco": 349.0
   },
+  "https://www.caixinhaboardgames.com.br/produtos/pets-expansao-piratas/": {
+   "cj": 22.32,
+   "estoque": true,
+   "hora": "2026-11-04T19:12+00:00",
+   "preco": 24.0
+  },
   "https://www.caixinhaboardgames.com.br/produtos/piles/": {
    "cj": 79.05,
    "estoque": true,
@@ -1022,6 +1040,12 @@
    "hora": "2026-11-04T18:56+00:00",
    "preco": 49.0
   },
+  "https://www.caixinhaboardgames.com.br/produtos/sagrada-expansao-5-6-jogadores/": {
+   "cj": 138.57,
+   "estoque": true,
+   "hora": "2026-11-04T19:12+00:00",
+   "preco": 149.0
+  },
   "https://www.caixinhaboardgames.com.br/produtos/secrets-and-lies-expansao-mysterium/": {
    "cj": 66.96,
    "estoque": true,
@@ -1031,7 +1055,7 @@
   "https://www.caixinhaboardgames.com.br/produtos/star-wars-super-teams/": {
    "cj": 92.07,
    "estoque": true,
-   "hora": "2026-11-04T18:56+00:00",
+   "hora": "2026-11-04T19:12+00:00",
    "preco": 99.0
   },
   "https://www.caixinhaboardgames.com.br/produtos/superlemming/": {
@@ -1057,6 +1081,12 @@
    "estoque": true,
    "hora": "2026-11-04T18:56+00:00",
    "preco": 179.0
+  },
+  "https://www.caixinhaboardgames.com.br/produtos/the-game/": {
+   "cj": 36.27,
+   "estoque": true,
+   "hora": "2026-11-04T19:12+00:00",
+   "preco": 39.0
   },
   "https://www.caixinhaboardgames.com.br/produtos/timeline-twist/": {
    "cj": 33.48,
@@ -1682,16 +1712,10 @@
    "hora": "2026-11-04T18:54+00:00",
    "preco": 157.99
   },
-  "https://www.placegames.com.br/magic-maze-maximum-security": {
-   "cj": 18.49,
-   "estoque": true,
-   "hora": "2026-11-04T18:55+00:00",
-   "preco": 18.49
-  },
   "https://www.placegames.com.br/night-parade-cursed-throne": {
    "cj": 64.99,
    "estoque": true,
-   "hora": "2026-11-04T18:55+00:00",
+   "hora": "2026-11-04T19:12+00:00",
    "preco": 64.99
   },
   "https://www.placegames.com.br/orange-stories": {
@@ -1721,7 +1745,7 @@
   "https://www.placegames.com.br/van-gogh": {
    "cj": 134.74,
    "estoque": true,
-   "hora": "2026-11-04T18:57+00:00",
+   "hora": "2026-11-04T19:12+00:00",
    "preco": 134.74
   },
   "https://www.placegames.com.br/wingspan-oceania": {
@@ -2204,6 +2228,12 @@
    "hora": "2026-11-04T18:54+00:00",
    "preco": 239.0
   },
+  "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/king-of-tokyo-monster-box": {
+   "cj": 351,
+   "estoque": true,
+   "hora": "2026-11-04T19:12+00:00",
+   "preco": 390.0
+  },
   "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/kronologic-paris-1920": {
    "cj": 107.91,
    "estoque": true,
@@ -2337,10 +2367,10 @@
    "preco": 67.12
   },
   "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/quack-quack-patota-corrupta": {
-   "cj": 67.97,
+   "cj": 62.1,
    "estoque": true,
-   "hora": "2026-11-04T18:56+00:00",
-   "preco": 75.52
+   "hora": "2026-11-04T19:12+00:00",
+   "preco": 69.0
   },
   "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/rolima": {
    "cj": 57.6,
@@ -2366,6 +2396,12 @@
    "hora": "2026-11-04T18:56+00:00",
    "preco": 39.0
   },
+  "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/sky-towers": {
+   "cj": 53.1,
+   "estoque": true,
+   "hora": "2026-11-04T19:12+00:00",
+   "preco": 59.0
+  },
   "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/solstis": {
    "cj": 49.07,
    "estoque": true,
@@ -2380,9 +2416,9 @@
   },
   "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/tacta": {
    "cj": 71.1,
-   "estoque": false,
-   "hora": "2026-11-04T18:56+00:00",
-   "preco": 67.12
+   "estoque": true,
+   "hora": "2026-11-04T19:12+00:00",
+   "preco": 79.0
   },
   "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/take-time": {
    "cj": 129.96,
