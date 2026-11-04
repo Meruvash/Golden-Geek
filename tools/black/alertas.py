@@ -25,6 +25,7 @@ import requests
 
 ROOT = Path(__file__).resolve().parents[2]
 ESTADO = ROOT / "conteudo" / "black" / "alertas_estado.json"
+FILA = ROOT / "conteudo" / "black" / "alertas_fila.json"  # alertas esperando envio pelo GitHub Actions (que tem o token)
 SERVIDOR = "https://ntfy.sh"
 TOPICO = "eliteboardgamers-black"
 TOPICO_TESTE = "eliteboardgamers-black-teste"
@@ -39,6 +40,34 @@ def brl(v):
 
 
 def enviar(titulo, texto, link=PAGINA, tags="game_die", prioridade="default", topico=TOPICO, imagem=None):
+    """Sem NTFY_TOKEN (leitura de reserva fora do GitHub), o alerta vai para a fila e o workflow alertas.yml envia."""
+    if not os.environ.get("NTFY_TOKEN") and topico == TOPICO:
+        fila = json.loads(FILA.read_text(encoding="utf-8")) if FILA.exists() else []
+        fila.append({"titulo": titulo, "texto": texto, "link": link, "tags": tags, "prioridade": prioridade, "imagem": imagem,
+                     "hora": dt.datetime.now(dt.timezone.utc).isoformat(timespec="minutes")})
+        FILA.write_text(json.dumps(fila, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+        return True
+    return _publicar(titulo, texto, link, tags, prioridade, topico, imagem)
+
+
+def enviar_fila():
+    """Envia o que a leitura de reserva deixou na fila (só no GitHub Actions, com NTFY_TOKEN) e esvazia a fila."""
+    if not FILA.exists():
+        print("fila vazia")
+        return
+    fila = json.loads(FILA.read_text(encoding="utf-8"))
+    limite = (dt.datetime.now(dt.timezone.utc) - dt.timedelta(hours=6)).isoformat()
+    sobra = []
+    for a in fila:
+        if a["hora"] < limite:
+            continue  # promoção de mais de 6 horas atrás: não vale mais o alerta
+        if not _publicar(a["titulo"], a["texto"], a["link"], a["tags"], a["prioridade"], TOPICO, a.get("imagem")):
+            sobra.append(a)
+    FILA.write_text(json.dumps(sobra, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    print(f"ok fila: {len(fila) - len(sobra)} alertas enviados, {len(sobra)} ficaram para a próxima")
+
+
+def _publicar(titulo, texto, link=PAGINA, tags="game_die", prioridade="default", topico=TOPICO, imagem=None):
     """Manda um alerta para o canal. Os cabeçalhos do ntfy vão em ASCII; título e texto acentuados vão no corpo JSON."""
     corpo = {"topic": topico, "title": titulo, "message": texto, "click": link, "tags": tags.split(","),
              "priority": {"min": 1, "low": 2, "default": 3, "high": 4, "max": 5}[prioridade], "icon": ICONE,
@@ -104,7 +133,9 @@ def avisar(radar_itens):
 
 
 if __name__ == "__main__":
-    if "--teste" in sys.argv:
+    if "--fila" in sys.argv:
+        enviar_fila()
+    elif "--teste" in sys.argv:
         print(enviar("−30% Jogo de teste", "R$ 99,90 na Loja Exemplo, 30% abaixo da média real. Alerta de teste.", topico=TOPICO_TESTE))
     else:
         sys.path.insert(0, str(Path(__file__).resolve().parent))
