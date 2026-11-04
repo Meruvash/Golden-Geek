@@ -194,3 +194,36 @@ Nova seção `## setup. Montar a mesa passo a passo`, antes do "Comece a jogar",
 - A Presença inicial do Relâmpago no tabuleiro e as trilhas já cobertas: não desenhadas. As figuras mostram o texto da montagem e as trilhas descobertas.
 
 **Portões:** zero travessão; `tools/vicios.py` sem aviso (um "em resumo" foi trocado); `tools/checar_comece.py` passa; o conversor gera a seção com o selo "Comece por aqui" e todos os arquivos de figura e foto existem.
+
+## Auditoria independente da montagem (04/11/2026)
+
+Veredito: aprovado com correções. O que foi feito, ponto por ponto:
+
+1. **ERRO, passo 4:** agora a divisória III fica "em cima das 3 cartas do fundo (ficam 3 cartas embaixo dela)", como na p. 6. A pergunta ?? (II com 3 cartas em cima e 6 embaixo) foi conferida e bate.
+2. **ERRO, exemplo do Comece:** "(passo 9 da montagem)" virou "(passo 18 da montagem; item 4 acima)".
+3. **`preparacao.webp`:** recortado de novo da p. 7.
+   - Cobertos de branco, a cor do fundo: os quadros tracejados com "Play Area", "Player's Discard" e "Major/Minor Power Discard", o pedaço de título verde do alto e uma linha tracejada solta embaixo.
+   - A legenda descreve só o que se vê e avisa que a carta de Praga do desenho fica na caixa na primeira partida.
+   - A figura saiu do fim da seção de montagem e foi para o passo 9 (encaixe com 4 jogadores). A legenda da mesma figura na etapa 1 também ganhou o aviso.
+4. **Foto `mesa-1.webp`:** a legenda agora é "Uma partida em andamento com 3 Espíritos, na foto da editora".
+5. **`solo-tabuleiro.webp`:**
+   - Os rótulos em inglês da p. 13 ficavam sobre o próprio tabuleiro ("Coastal/Inland lands") e não dava para cobri-los sem estragar o desenho. Por isso o arquivo passou a ser o mesmo tabuleiro desenhado sem rótulos na p. 4, sem as flores do lado.
+   - As legendas da montagem e do solo agora citam a p. 4 e dizem os terrenos pelas cores, as terras costeiras (1, 2 e 3) e as Areias (2 e 6). A frase do exemplo solo também passou a citar a p. 4.
+6. **`explorar.webp`:** "No Explore" foi coberto com a textura verde da própria terra, e a figura foi para logo depois do passo 17.
+7. **`setup-cartas.webp`:** dividido em dois e o arquivo antigo apagado.
+   - `setup-cartas-invasor.webp` vai no passo 6, com a legenda "verso e uma carta de Estágio I".
+   - `setup-cartas-poder.webp` vai no passo 11, com a legenda "o verso de cada baralho de Poder".
+8. **Repetições com a seção 7:** saíram do solo `solo-invasores.webp` e `solo-baralho-medo.webp`, trocados por uma frase que remete aos passos 1 e 4 da montagem. Ficaram no solo só o tabuleiro, o painel e Construir/Explorar/Devastar, porque o exemplo solo usa essas figuras ali mesmo.
+9. **Divisórias:** os nomes estão em algarismo romano em todo o texto ("Nível de Terror III/II" na etapa 1 e na pergunta da etapa 5).
+10. **SEM APOIO:**
+    - Passo 3: "viradas para baixo" ficou, apoiado na p. 12 ("move the top card of the Fear Deck face-down"). "As outras 6 voltam à caixa" virou "não entram nesta partida", porque a p. 6 só diz para usar 9.
+    - Passo 10: as peças agora vêm "da caixa" (p. 6, "from the box").
+    - Passo 11: tirei "viradas para baixo" dos baralhos de Poder, que o manual não diz.
+11. **4 jogadores:** o passo 9 descreve o encaixe da p. 7 (dois em cima, dois embaixo, Oceano à esquerda e à direita), com a figura ali.
+12. **2 jogadores:** o passo 9 diz que os tabuleiros ficam um em cima do outro, unidos pela borda sem Oceano, com o Oceano de um à esquerda e o do outro à direita (desenho da p. 6).
+13. **Frente e verso do tabuleiro:** sem pista visual. Ficou "o lado da frente, o equilibrado; o verso traz o mapa temático" (p. 13 e 23, texto do manual).
+14. **Resumo do Comece:** "cobrindo 1, 2, 2, 3, 4, 4, 5 (o primeiro 1 fica à mostra)" e "cobrindo 3, 4, 5, 6 (o 2 fica à mostra)".
+15. **Marcadores de lembrete e cartas de ajuda:** os marcadores são opcionais, para marcar terra com efeito de um turno (p. 17). As cartas de ajuda: "o manual só as lista entre os componentes e não diz onde ficam" (p. 4).
+16. **Energia inicial:** nada acrescentado, porque o manual não diz.
+
+Portões: zero travessão; `tools/vicios.py` sem aviso; `tools/checar_comece.py` passa. Todas as figuras citadas existem e não sobrou arquivo sem uso em `figuras/`. O conversor gera a página sem marcação crua, com os passos numerados continuando depois das figuras (`<ol start>`).

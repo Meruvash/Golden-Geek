@@ -2,6 +2,83 @@
 
 *Regras conferidas no manual da edição brasileira de Ticket to Ride (Galápagos, tradução de Luiz Eduardo Ricci Coelho, arquivo de 2016 da Biblioteca de Downloads), o da caixa com 30 Bilhetes de Destino e mapa dos Estados Unidos. As dúvidas de tradução foram resolvidas com o manual original em inglês (Days of Wonder, reimpressão de 2015). O manual não tem número impresso nas páginas: p. 1 é a capa, p. 2 a 4 são as páginas seguintes.*
 
+## setup. Montar a mesa passo a passo
+
+A montagem segue a seção "Preparação do Jogo" do manual (p. 2), na mesma ordem, com a ilustração numerada que ocupa as páginas 2 e 3. Ela é igual de 2 a 5 jogadores; o número de jogadores só muda o uso das Rotas Duplas (p. 3).
+
+**O que vem na caixa** (p. 2):
+
+| Componente | Quantidade |
+|---|---|
+| Tabuleiro com o mapa das rotas ferroviárias dos EUA, com a Trilha de Pontos em volta | 1 |
+| Trens de plástico, nas cores Azul, Vermelho, Verde, Amarelo e Preto | 240: 45 de cada cor, mais alguns extras de cada cor para reposição |
+| Marcadores de pontos de madeira, um de cada cor | 5 |
+| Cartas de Vagão: 12 de cada uma das oito cores (rosa, branco, azul, amarelo, laranja, preto, vermelho e verde) e 14 Locomotivas | 110 |
+| Bilhetes de Destino | 30 |
+| Carta de Ajuda | 1 |
+| Carta Bônus de Maior Caminho Contínuo | 1 |
+| Cartas promocionais (uma para mapas adicionais e uma da Days of Wonder) | 2 |
+
+As cartas somam 144, como diz o manual: 110, 30, 1, 1 e as 2 promocionais (p. 2).
+
+!fig[Em cima, as Cartas de Vagão: uma de cada cor e, na ponta direita, a Locomotiva multicolorida. Embaixo, a Carta de Ajuda (frente e verso), um Bilhete de Destino (frente e verso) e a carta de Maior Caminho Contínuo (frente e verso). Ilustração: manual Galápagos (p. 2)](figuras/setup-componentes.webp)
+
+1. **Ponha o tabuleiro no centro da mesa** (p. 2).
+
+!fig[O tabuleiro montado no centro da mesa: o mapa com as rotas e, em volta, a Trilha de Pontos numerada; no canto de baixo, à esquerda, o Início (1). Ilustração: manual Galápagos (p. 2 e 3)](figuras/setup-tabuleiro.webp)
+
+2. **Cada jogador escolhe uma cor e pega um conjunto de 45 trens dessa cor**, que fica à sua frente como estoque (p. 2).
+
+!fig[Os conjuntos de trens dos cinco jogadores da ilustração, um de cada cor: azul, verde, preto, amarelo e vermelho. Ilustração: manual Galápagos (p. 2 e 3)](figuras/setup-trens.webp)
+
+3. **Cada jogador pega o marcador de pontos da sua cor e o põe no Início da Trilha de Pontos** (1), que contorna o mapa. Durante a partida, quem pontua avança o seu marcador (p. 2).
+
+!fig[O Início da Trilha de Pontos (1), no canto de baixo, à esquerda, do tabuleiro, onde ficam os marcadores no começo da partida. Ilustração: manual Galápagos (p. 2)](figuras/setup-inicio.webp)
+
+4. **Embaralhe as Cartas de Vagão e dê 4 a cada jogador**: é a mão inicial (2) (p. 2).
+
+!fig[A mão inicial de um jogador (2): 4 Cartas de Vagão. Ilustração: manual Galápagos (p. 2)](figuras/setup-mao.webp)
+
+5. **Ponha o resto das Cartas de Vagão perto do tabuleiro, viradas para baixo, e revele as cinco primeiras** ao lado (3): são a pilha de compras e as 5 cartas abertas (p. 2).
+
+!fig[As 5 cartas abertas (3), com uma Locomotiva entre elas, ao lado da pilha de compras virada para baixo; à direita, a pilha de Bilhetes de Destino (6), do passo 10. Ilustração: manual Galápagos (p. 3)](figuras/cartas-abertas.webp)
+
+6. **Confira as 5 cartas abertas.** Se 3 delas forem Locomotivas, descarte as 5 e revele outras até formar 5 cartas abertas novas. A regra vale "a qualquer momento", inclusive agora (p. 3).
+7. **Ponha a carta de Maior Caminho Contínuo virada para cima perto do tabuleiro** (4) (p. 2).
+
+!fig[A carta de Maior Caminho Contínuo (4), virada para cima ao lado do tabuleiro; ela vale 10 pontos na contagem. Ilustração: manual Galápagos (p. 3)](figuras/setup-bonus.webp)
+
+8. **Embaralhe os Bilhetes de Destino e dê 3 a cada jogador** (5) (p. 2).
+
+!fig[Os 3 Bilhetes de Destino de um jogador (5), virados para baixo, e um Bilhete visto de frente: Chicago a New Orleans, 7 pontos. Ilustração: manual Galápagos (p. 2)](figuras/setup-bilhetes.webp)
+
+9. **Cada jogador olha os seus Bilhetes e fica com pelo menos 2, ou com os 3.** Os que ficam são segredo dele até o fim da partida (p. 2).
+10. **Os Bilhetes devolvidos vão para o final da pilha de Bilhetes de Destino**, e essa pilha fica perto do tabuleiro (6) (p. 2).
+
+!fig[A mesa montada para 5 jogadores, com os números do manual: o marcador de cada um no Início da Trilha de Pontos (1), a mão de 4 Cartas de Vagão (2), as 5 cartas abertas ao lado da pilha de compras (3), a carta de Maior Caminho Contínuo (4), os 3 Bilhetes de cada jogador (5) e a pilha de Bilhetes de Destino (6). Ilustração: manual Galápagos (p. 2 e 3)](figuras/preparacao.webp)
+
+11. **Começa o viajante mais experiente da mesa.** Cada um faz uma ação por turno, e a vez passa no sentido horário (p. 2).
+
+**O que muda com o número de jogadores** (p. 3):
+
+| Jogadores | Trens de cada um | Cartas de Vagão na mão | Bilhetes recebidos | Rotas Duplas |
+|---|---|---|---|---|
+| 2 ou 3 | 45 | 4 | 3 | Só uma das duas rotas pode ser usada; depois que alguém conquista uma, a outra fica interditada |
+| 4 ou 5 | 45 | 4 | 3 | As duas podem ser usadas, mas nunca pelo mesmo jogador |
+
+**O que fica na caixa:** os trens extras, que o manual chama de reposição (p. 2). As cores que ninguém escolheu também ficam guardadas, com os seus trens e o seu marcador, e as 2 cartas promocionais não entram no jogo, porque as regras não as usam (p. 2 a 4). A Carta de Ajuda aparece na ilustração ao lado do tabuleiro, para consulta (p. 2).
+
+!fig[Ticket to Ride montado na mesa, na foto da editora, com cartas de arte diferente da do manual de 2016. Imagem: Days of Wonder](fotos/mesa-1.webp)
+
+**Antes de começar, confira:** tabuleiro no centro; cada jogador com 45 trens e o marcador no Início; 4 Cartas de Vagão na mão de cada um; pilha de compras e 5 cartas abertas, sem 3 Locomotivas entre elas; carta de Maior Caminho Contínuo virada para cima; cada jogador com 2 ou 3 Bilhetes, em segredo; pilha de Bilhetes ao lado do tabuleiro; quem começa definido.
+
+?? Partida de 3 jogadores, mesa montada. O que está certo?
+- ( ) Cada jogador tem 45 trens, 4 Cartas de Vagão e pode ter ficado com 1 só Bilhete
+- (x) Cada jogador tem 45 trens, 4 Cartas de Vagão e 2 ou 3 Bilhetes
+- ( ) Cada jogador tem 45 trens, 5 Cartas de Vagão e 2 ou 3 Bilhetes
+- ( ) Por serem só 3, cada jogador tem 35 trens, 4 Cartas de Vagão e 2 ou 3 Bilhetes
+= Em qualquer número de jogadores, cada um tem 45 trens, recebe 4 Cartas de Vagão e fica com pelo menos 2 dos 3 Bilhetes (p. 2). Ficar com 1 só Bilhete é regra da compra no meio da partida, não da montagem (p. 3); com 3 jogadores, o que muda são as Rotas Duplas (p. 3).
+
 ## 4min. Comece a jogar em 4 minutos
 
 **Meta:** em 4 minutos de leitura, montar a mesa e jogar o seu primeiro turno sem abrir o manual.
@@ -12,11 +89,13 @@ Você coleciona **Cartas de Vagão** de uma cor e as troca por **rotas** no mapa
 
 ### Monte a mesa
 
-1. Tabuleiro no centro. Cada jogador pega 45 trens de uma cor e o marcador de pontos da mesma cor, e põe o marcador no Início da Trilha de Pontos, que contorna o mapa.
-2. Embaralhe as Cartas de Vagão e dê 4 a cada jogador. Ponha o resto perto do tabuleiro, como pilha de compras, e vire 5 cartas para cima ao lado dela. Se 3 dessas 5 forem Locomotivas (as cartas multicoloridas), descarte as 5 e vire outras 5.
-3. *(depois)* A carta de Maior Caminho Contínuo fica virada para cima ao lado do tabuleiro.
-4. Embaralhe os Bilhetes de Destino e dê 3 a cada jogador. Cada um olha os seus e fica com 2 ou com os 3. Os devolvidos vão para o fundo da pilha de Bilhetes, que fica ao lado do tabuleiro. Seus Bilhetes ficam em segredo até o fim.
-5. Começa o viajante mais experiente da mesa; a vez segue no sentido horário.
+A montagem completa, com figuras, está na seção "Montar a mesa passo a passo", logo acima. O essencial (p. 2 e 3):
+
+1. Tabuleiro no centro; cada jogador com 45 trens de uma cor e o marcador no Início da Trilha de Pontos.
+2. 4 Cartas de Vagão para cada um; o resto vira pilha de compras, com 5 cartas abertas ao lado (3 Locomotivas entre elas: troque as 5).
+3. Carta de Maior Caminho Contínuo virada para cima ao lado do tabuleiro.
+4. 3 Bilhetes de Destino para cada um, que fica com 2 ou 3, em segredo; os devolvidos vão para o fundo da pilha.
+5. Começa o viajante mais experiente; a vez segue no sentido horário.
 
 ### Seu primeiro turno
 
@@ -108,8 +187,6 @@ Cada pergunta tem opções: escolha uma e a resposta aparece, com a explicação
 > 8. Embaralhe os Bilhetes de Destino e dê 3 a cada jogador. Cada um olha os seus e decide com quais fica: pelo menos 2, ou os 3.
 > 9. Os Bilhetes devolvidos vão para o fundo da pilha de Bilhetes de Destino, que fica perto do tabuleiro.
 > 10. Começa o viajante mais experiente. A vez segue no sentido horário (p. 2).
-
-!fig[A mesa montada para 5 jogadores: o marcador de cada um no Início da Trilha de Pontos (1), a mão de 4 Cartas de Vagão (2), as 5 cartas abertas ao lado da pilha de compras (3), a carta de Maior Caminho Contínuo (4), os 3 Bilhetes de cada jogador (5) e a pilha de Bilhetes de Destino (6). Ilustração: manual Galápagos (p. 2 e 3)](figuras/preparacao.webp)
 
 > [!edicao] **Qual é a sua caixa?** Em 2025 a Days of Wonder lançou uma edição nova do jogo, com manual em português traduzido pela Galápagos. Nela há 33 Bilhetes, cada jogador recebe 4 no começo (e fica com pelo menos 2), a cor que o manual de 2016 chama de rosa aparece como roxo e a ação se chama "Controlar uma Rota". Este guia segue a caixa com 30 Bilhetes de Destino, que é a que a página do produto na loja da Galápagos descreve. Se a sua tiver 33 Bilhetes, prepare com 4 e veja as outras diferenças na seção 6.
 

@@ -2,6 +2,76 @@
 
 *No Brasil saíram as caixas Monge vs Paladino e Feiticeira da Lua vs Bárbaro (Season One Rerolled). As regras foram conferidas no manual oficial em inglês da Dice Throne Inc. (Rules of Play, versão 2.4.3, de 2025, a da página FAQ/Downloads da loja oficial, comparada com as versões 2.4.1 e 2.3.2); as páginas citadas são as da versão 2.4.3, com a mesma paginação das anteriores. Os duelos Monge contra Paladino (etapa 2) e Feiticeira da Lua contra Bárbaro (etapa 4) usam os tabuleiros desses heróis nas imagens oficiais dos componentes; os exemplos que dependem das cartas e fichas mostradas no manual usam a Pistoleira (Gunslinger), a heroína que ele mostra por inteiro. Os nomes impressos na caixa brasileira podem ser diferentes dos usados aqui.*
 
+## setup. Montar a mesa passo a passo
+
+A montagem segue o quadro de preparação do manual (Game Setup, p. 3), na mesma ordem dos 8 itens dele, e a ilustração das p. 2 e 3, que mostra a mesa de um jogador com a Pistoleira e os mesmos números. Cada jogador monta o próprio herói à sua frente; não há tabuleiro central nem nada em comum no meio da mesa (p. 3).
+
+**O que cada herói traz** (p. 3; quantidades do folheto de exemplo da p. 6):
+
+| Componente | Quantidade |
+|---|---|
+| Tabuleiro do herói (dobrável) | 1 |
+| Folheto do herói | 1 |
+| Fichas de efeito de status e de companheiro | varia por herói; o folheto mostra o lugar de cada uma |
+| Marcador de Vida | 1 |
+| Marcador de CP | 1 |
+| Cartas do herói, que formam o baralho | 33 no herói do exemplo; o número exato está no folheto de cada herói |
+| Dados | 5 |
+
+1. **Ponha à sua frente o tabuleiro do herói**, aberto, com as habilidades à vista (item 1, p. 3).
+
+!fig[O tabuleiro do herói aberto, o item 1 da preparação: as habilidades da Pistoleira em volta da figura dela e, embaixo, a suprema. Ilustração: manual Dice Throne (p. 2 e 3)](figuras/setup-tabuleiro.webp)
+
+2. **Ponha o folheto do herói ao lado do tabuleiro** (item 2, p. 3).
+3. **Empilhe as fichas no folheto**: cada pilha de efeito de status ou de companheiro vai no lugar dela, ao lado da regra da ficha. Ninguém começa com ficha no tabuleiro (item 3, p. 3; p. 6).
+
+!fig[O folheto da Pistoleira (2) com as fichas empilhadas (3): Evasiva, Recarga, Derrubada e Recompensa, cada pilha ao lado da sua regra; embaixo, à direita, a legenda das faces dos dados. Ilustração: manual Dice Throne (p. 2)](figuras/setup-folheto.webp)
+
+4. **Gire o marcador de Vida até 50**, o valor do duelo de 2 jogadores (item 4, p. 3).
+5. **Gire o marcador de CP até 2** (item 5, p. 3).
+
+!fig[Os dois marcadores giratórios já acertados: Vida em 50 (4) e CP em 2 (5). Ilustração: manual Dice Throne (p. 2 e 3)](figuras/setup-marcadores.webp)
+
+6. **Embaralhe as suas cartas, ponha o baralho virado para baixo e compre as 4 de cima**: é a sua mão inicial. Deixe ao lado o espaço da pilha de descarte, que fica virada para cima (item 6, p. 3).
+
+!fig[O baralho virado para baixo (6) e, embaixo, o espaço da pilha de descarte, com as cartas viradas para cima. Ilustração: manual Dice Throne (p. 3)](figuras/setup-baralho.webp)
+
+7. **Pegue os seus 5 dados e role 1.** Quem tirar o maior número é o jogador inicial e começa (item 7, p. 3).
+
+!fig[Os 5 dados da Pistoleira (7), com Bala nas faces 1 a 3, Arrancada na 4 e na 5 e Mosca na 6. Ilustração: manual Dice Throne (p. 3)](figuras/setup-dados.webp)
+
+8. **Faça a preparação própria do herói, se houver**: alguns heróis têm passos a mais, impressos no folheto, no quadro Hero Setup. Faça-os antes de começar (item 8, p. 3; p. 6).
+
+!fig[A mesa de um jogador montada com a Pistoleira: o folheto com as fichas empilhadas (2 e 3) e, nele, o lugar da preparação própria (8), o tabuleiro do herói (1), o marcador de Vida em 50 (4), o de CP em 2 (5), o baralho (6), os dados (7) e o lugar da pilha de descarte. Ilustração: manual Dice Throne (p. 2 e 3)](figuras/preparacao.webp)
+
+9. **Lembre a regra do primeiro turno:** o jogador inicial pula a fase de Renda do primeiro turno dele, sem ganhar CP nem comprar carta. Depois a vez segue normalmente (p. 4 e 12).
+
+!fig[Os componentes do Bárbaro, um dos heróis da caixa Feiticeira da Lua vs Bárbaro, na foto da editora: folheto, baralho, tabuleiro, marcadores de CP e de Vida, cartas na mão e os dados. A foto mostra uma partida já em andamento (Vida em 18 e 5 cartas na mão); na montagem a Vida começa em 50 e a mão em 4. Imagem: Dice Throne · Season One](fotos/mesa-1.webp)
+
+**O que muda com o número de jogadores** (p. 3 e 11):
+
+| Jogadores | Modo | Vida inicial | Marcador de Vida | Quem começa e ordem |
+|---|---|---|---|---|
+| 2 | duelo | 50 | um por jogador | rolagem de 1 dado; alternam |
+| 3 | Rei da Colina | 35 | um por jogador | rolagem de 1 dado; sentido horário |
+| 4 | duplas (2 contra 2) | 50 por dupla | um por dupla, dividido entre os parceiros | rolagem de 1 dado; zigue-zague entre as duplas |
+| 5 ou 6 | variantes | o manual manda para variants.dicethrone.com | | |
+
+O resto da montagem é igual em todos os modos: cada um tem o próprio CP em 2, as próprias 4 cartas e o próprio herói (p. 3 e 11). Nas duplas, os parceiros sentam lado a lado e podem ver a mão um do outro (p. 11).
+
+!fig[A ordem dos turnos em duplas: a vez passa do 1 (dupla vermelha) para o 2 (dupla azul), depois para o 3 e o 4, em zigue-zague; parceiros sentam lado a lado. Ilustração: manual Dice Throne (p. 11)](figuras/setup-duplas.webp)
+
+**O que volta para a caixa.** O manual não traz uma lista: cada jogador põe à sua frente todos os componentes do herói escolhido (p. 3), e os heróis que ninguém escolheu ficam guardados.
+
+**Antes de começar, confira:** tabuleiro, folheto e fichas empilhadas à frente de cada um; Vida em 50 no duelo; CP em 2; baralho embaralhado e 4 cartas na mão; espaço da pilha de descarte; 5 dados; preparação própria do herói feita; jogador inicial escolhido e avisado de que pula a primeira Renda.
+
+?? Duelo de 2 jogadores, mesa montada. O que vale para o jogador inicial?
+- ( ) Vida em 50, CP em 2 e 4 cartas; no primeiro turno ganha 1 CP e compra 1 carta na Renda, como todos
+- ( ) Vida em 35, CP em 2 e 4 cartas; pula a primeira Renda
+- (x) Vida em 50, CP em 2 e 4 cartas; pula a primeira Renda
+- ( ) Vida em 50, CP em 0 e 5 cartas; pula a primeira Renda
+= Vida em 50 no duelo, CP em 2 e 4 cartas na mão (p. 3); o jogador inicial pula a fase de Renda do primeiro turno (p. 4 e 12). A Vida 35 é a do Rei da Colina, com 3 jogadores (p. 11).
+
 ## 4min. Comece a jogar em 4 minutos
 
 **Meta:** em 4 minutos de leitura, montar um duelo e jogar o seu primeiro ataque sem abrir o manual.
@@ -12,13 +82,12 @@ Cada jogador é um **herói** com seu próprio tabuleiro, cinco dados e um baral
 
 ### Monte a mesa
 
-Cada jogador, com o seu herói (p. 3):
+Resumo da seção "Montar a mesa passo a passo", acima, que tem cada passo com figura (p. 3):
 
-1. Ponha à sua frente o tabuleiro do herói, o folheto do herói e as fichas dele, empilhadas nos lugares marcados no folheto.
-2. Marcador de Vida em 50 (duelo de 2 jogadores) e marcador de CP em 2.
-3. Embaralhe as suas cartas e compre 4: é a sua mão. Deixe espaço para a sua pilha de descarte, virada para cima.
-4. Se o folheto tiver uma preparação própria do herói (quadro Hero Setup), faça agora.
-5. Cada um rola 1 dado; o maior resultado começa. Esse é o jogador inicial.
+1. Tabuleiro, folheto e fichas empilhadas à sua frente.
+2. Vida em 50 no duelo e CP em 2.
+3. Baralho embaralhado e 4 cartas na mão; preparação própria do herói, se houver.
+4. Cada um rola 1 dado; o maior resultado é o jogador inicial.
 
 ### Seu primeiro turno
 
@@ -130,8 +199,6 @@ O guia tem quatro etapas: montar a mesa e ler o tabuleiro do herói; rolar, atac
 > 4. Embaralhe as suas cartas para formar o seu baralho e compre as 4 de cima. Essa é a sua mão inicial.
 > 5. Cada jogador rola 1 dado. Quem tirar o maior número é o jogador inicial e começa.
 > 6. Alguns heróis têm passos próprios de preparação, impressos no folheto, no quadro Hero Setup. Faça-os.
-
-!fig[A mesa de um jogador montada com a Pistoleira: o folheto com as fichas empilhadas (2 e 3), o tabuleiro do herói (1), o marcador de Vida em 50 (4), o de CP em 2 (5), o baralho (6), os dados (7) e o lugar da pilha de descarte. Ilustração: manual oficial Dice Throne (p. 2 e 3)](figuras/preparacao.webp)
 
 > [!mais] **Vida máxima.** Você pode se curar até 10 pontos acima da Vida inicial. Num duelo, o teto é 60 (p. 4).
 

@@ -2,27 +2,158 @@
 
 *Regras conferidas no manual oficial da edição brasileira, publicado pela Meeple BR (Terraforming Mars: O Jogo de Dados, livro de regras de 12 páginas, tradução de Romir G. Paulino, arquivo de janeiro de 2023). Os nomes são os impressos nesse manual, e as páginas citadas são as dele.*
 
+## setup. Montar a mesa passo a passo
+
+A montagem segue a página de preparação do manual (p. 3), na mesma ordem dos 11 itens dele; a mesa montada aparece na ilustração da p. 2. É igual para 2, 3 ou 4 jogadores, salvo no número de cartas bônus. A partida solo muda o tabuleiro e as cartas bônus e acrescenta um cubo de tempo (p. 9), no fim desta seção.
+
+**O que vem na caixa** (página do produto da Meeple BR; o manual não traz lista de componentes):
+
+| Componente | Quantidade | O que o manual diz |
+|---|---|---|
+| Tabuleiro | 1 | dupla face: use qualquer um dos lados (p. 3) |
+| Dados | 60 | 5 cores: amarelo, verde, azul, cinza e vermelho (p. 7) |
+| Cubos | 6 | 2 transparentes, para oxigênio e temperatura, e 1 da cor de cada jogador (p. 3) |
+| Peças | 42 | entre elas os 7 oceanos (p. 3), florestas, cidades e peças especiais (p. 6) |
+| Marcos | 11 | 8 do jogo básico e 3 da Era das Corporações (p. 12) |
+| Cartas | 159 | cartas de projeto, de corporação e bônus (p. 3); o manual não dá a quantidade de cada tipo |
+| Marcadores | 23 | o manual só fala em marcadores curinga (p. 3 e 7) |
+| Cartas de referência | 2 | o manual não as menciona |
+| Tabuleiros de jogador | 4 | o manual não os menciona nem os usa na preparação |
+| Livro de regras | 1 | 12 páginas |
+
+!fig[Os componentes fora da caixa, na foto da editora (edição em inglês): o tabuleiro, os dados, as peças hexagonais e os cubos. Imagem: FryxGames](fotos/mesa-1.webp)
+
+**Tabuleiro** (item 1, p. 3)
+
+1. **Abra o tabuleiro no centro da mesa**, com qualquer um dos dois lados para cima (p. 3).
+2. **Ponha um cubo transparente no 0% da trilha de oxigênio**, o arco numerado de 0 a 16 sobre o planeta (p. 3; ilustração da p. 2).
+3. **Ponha o outro cubo transparente no -32 °C da trilha de temperatura**, o termômetro à direita (p. 3; ilustração da p. 2).
+4. **Empilhe os 7 oceanos sobre o símbolo de oceano** do tabuleiro (p. 3).
+5. **Cada jogador escolhe uma cor e põe o cubo dessa cor no 0 da trilha de PVs**, a numeração que contorna o tabuleiro (p. 3).
+
+!fig[O tabuleiro pronto: um cubo transparente no começo da trilha de oxigênio (o arco de cima), o outro no -32 °C do termômetro, a pilha de oceanos no hexágono azul e os cubos dos jogadores no começo da trilha de PVs, no alto à direita. Ilustração: manual Meeple BR (p. 2)](figuras/setup-tabuleiro.webp)
+
+**Estoque de dados** (item 2, p. 3)
+
+6. **Ponha todos os dados ao lado do tabuleiro, ao alcance de todos**: é o estoque de dados (p. 3).
+7. **Ponha todos os marcadores curinga e todas as peças perto do estoque** (p. 3).
+
+!fig[O estoque: em cima, os marcadores curinga (fichas redondas com ponto de interrogação); no meio, os dados de cinco cores; embaixo, as peças hexagonais. Ilustração: manual Meeple BR (p. 2)](figuras/setup-estoque.webp)
+
+**Baralho de projetos** (item 3, p. 3)
+
+8. **Embaralhe todas as cartas de projeto e ponha o baralho virado para baixo ao lado do tabuleiro**, com espaço ao lado para a pilha de descarte (p. 3).
+
+!fig[O baralho de projetos, virado para baixo. Ilustração: manual Meeple BR (p. 2)](figuras/setup-projetos.webp)
+
+**Cartas bônus** (item 4, p. 3)
+
+9. **Embaralhe todas as cartas bônus e tire 4, 6 ou 8 sem revelar**, conforme o número de jogadores (tabela abaixo) (p. 3).
+10. **Deixe as cartas tiradas viradas para baixo ao lado do tabuleiro** (p. 3).
+11. **Devolva as outras cartas bônus à caixa sem ver quais são** (p. 3). Quem alcançar 5 e 12 PVs na trilha recebe uma carta bônus (p. 3 e 7).
+
+!fig[As cartas bônus, viradas para baixo, ao lado da trilha de PVs. Ilustração: manual Meeple BR (p. 2)](figuras/setup-bonus.webp)
+
+**Prêmios** (item 5, p. 3)
+
+12. **Pegue do estoque 1 dado de cada cor**: são 5 dados (p. 3).
+13. **Sorteie 3 desses 5 dados.** O manual não diz o que fazer com os 2 que sobram; eles saíram do estoque e podem voltar para ele (p. 3).
+14. **Role os 3 dados sorteados e ponha um em cada espaço de prêmio** do tabuleiro, com a face que saiu para cima. No fim, os jogadores disputam quem tem mais desses ícones no custo das cartas jogadas (p. 3 e 8).
+
+!fig[Os 3 espaços de prêmio, no canto de cima à esquerda do tabuleiro, cada um com um dado rolado; embaixo, os valores do primeiro e do segundo lugar, 5 e 3 PVs. Ilustração: manual Meeple BR (p. 2)](figuras/setup-premios.webp)
+
+**Marcos** (item 6, p. 3)
+
+15. **Sorteie 3 marcos e ponha cada um num espaço de marco** do tabuleiro, na lateral esquerda (p. 3; ilustração da p. 2).
+16. **Devolva os outros marcos à caixa** (p. 3).
+
+!fig[Os 3 marcos sorteados na lateral esquerda do tabuleiro; na ilustração eles estão em inglês: Legend, Terraformer e Philanthrope, que o manual chama de Lenda, Terraformador e Filantropo (p. 12). Ilustração: manual Meeple BR (p. 2)](figuras/setup-marcos.webp)
+
+**Ordem de jogadores** (item 7, p. 3)
+
+17. **Defina quem começa:** o jogador que venceu mais recentemente uma partida de qualquer versão de Terraforming Mars. A vez segue no sentido horário (p. 3). O manual não diz o que fazer se ninguém jogou: combinem.
+
+**Projetos e corporações** (item 8, p. 3)
+
+18. **Dê 5 cartas de projeto a cada jogador**: é a mão inicial (p. 3).
+19. **Embaralhe as cartas de corporação e dê 2 a cada jogador** (p. 3).
+20. **Cada jogador escolhe 1 das suas 2 corporações** (p. 3).
+21. **Devolva à caixa as corporações não escolhidas** (p. 3).
+
+!fig[O que cada jogador recebe: 2 cartas de corporação, para escolher uma, e 5 cartas de projeto. Ilustração: manual Meeple BR (p. 2)](figuras/setup-mao.webp)
+
+**Revelar corporações** (item 9, p. 3)
+
+22. **Na ordem de jogo, cada jogador põe a corporação escolhida à sua frente, virada para cima** (p. 3).
+23. **Pegue o bônus inicial da caixa vermelha**, o quadro de baixo, à esquerda, na carta (na Credicor, 3 marcadores curinga) (p. 3).
+24. **Cubra a caixa vermelha com a peça da sua cor** (p. 3).
+
+!fig[A corporação Credicor: a caixa vermelha dá 3 marcadores curinga e é coberta pela peça do jogador, como mostra a seta; a caixa marrom produz 2 dados amarelos e 1 vermelho. Ilustração: manual Meeple BR (p. 3)](figuras/corporacao.webp)
+
+**Produção inicial** (item 10, p. 3)
+
+25. **Pegue do estoque os dados mostrados na caixa marrom**, o quadro de baixo, à direita, na carta (na Credicor, 2 dados amarelos e 1 vermelho) (p. 3).
+26. **Role esses dados e deixe-os à sua frente com a face que saiu para cima**: são os seus recursos (p. 3).
+
+!fig[A caixa marrom da Credicor: 2 dados amarelos e 1 vermelho, recebidos e rolados na preparação e de novo a cada turno de produção. Ilustração: manual Meeple BR (p. 3)](figuras/setup-producao.webp)
+
+**Penalidade do primeiro jogador** (item 11, p. 3)
+
+27. **O primeiro jogador escolhe 1 dos seus recursos e o entrega ao último jogador** (p. 3). Na partida solo, pule este passo.
+28. **O primeiro jogador começa a partida** (p. 3).
+
+**O que muda com o número de jogadores** (p. 3 e 9):
+
+| Jogadores | Cartas bônus tiradas | Prêmios | Marcos | Penalidade do primeiro jogador |
+|---|---|---|---|---|
+| 1 (solo) | 4 | 3 | 3 | não há |
+| 2 | 4 | 3 | 3 | sim |
+| 3 | 6 | 3 | 3 | sim |
+| 4 | 8 | 3 | 3 | sim |
+
+**Voltam para a caixa** (p. 3): as cartas bônus não tiradas, sem que ninguém as veja; os marcos não sorteados; as corporações não escolhidas.
+
+**Partida solo** (p. 9). Monte a mesa como acima, com estas mudanças:
+
+1. **Ponha 1 cidade numa das 3 áreas com bônus de colocação de PV** do tabuleiro (p. 9).
+2. **Ponha 1 oceano ao lado dessa cidade** (p. 9).
+3. **Ponha 1 floresta numa área vizinha da cidade e do oceano ao mesmo tempo** (p. 9). Você não recebe bônus nem PVs por essas três peças (p. 9).
+4. **Ponha o cubo do oxigênio em 2% e o da temperatura em -28 °C**, em vez de 0% e -32 °C (p. 9).
+5. **Tire 4 cartas bônus**, como na partida de 2 jogadores (p. 3 e 9).
+6. **Pegue outro cubo de jogador para marcar o tempo, no 0**; ele passa para 1 antes do seu primeiro turno (p. 9).
+7. **Depois da produção inicial, olhe as 4 cartas bônus e jogue 1 delas na hora** (p. 9).
+8. **Pule a penalidade do primeiro jogador** (p. 3).
+
+Os prêmios e os marcos são sorteados como sempre; o que muda é como você os ganha, explicado em "Situações especiais" (p. 9).
+
+**Antes de começar, confira:** cubos transparentes em 0% e -32 °C (2% e -28 °C no solo); 7 oceanos na pilha; cubos dos jogadores no 0 da trilha de PVs; estoque com todos os dados, curingas e peças; baralho de projetos virado para baixo com espaço para descarte; 4, 6 ou 8 cartas bônus viradas para baixo; 3 dados rolados nos prêmios; 3 marcos; cada jogador com 5 cartas na mão, a corporação à frente com a caixa vermelha coberta e os dados da caixa marrom rolados; 1 recurso entregue ao último jogador.
+
+?? Partida de 3 jogadores. Qual mesa está pronta para começar?
+- ( ) 8 cartas bônus viradas para baixo, 3 dados rolados nos prêmios e 3 marcos
+- (x) 6 cartas bônus viradas para baixo, 3 dados rolados nos prêmios e 3 marcos
+- ( ) 6 cartas bônus viradas para cima, 3 dados rolados nos prêmios e 3 marcos
+- ( ) 6 cartas bônus viradas para baixo, oxigênio em 2% e temperatura em -28 °C
+= Com 3 jogadores tiram-se 6 cartas bônus, sem revelar, viradas para baixo; prêmios e marcos são sempre 3 (p. 3). Oxigênio em 2% e temperatura em -28 °C é só na partida solo (p. 9).
+
 ## 4min. Comece a jogar em 4 minutos
 
 **Meta:** em 4 minutos de leitura, montar a mesa e jogar os seus primeiros turnos sem abrir o manual.
 
 ### A ideia do jogo
 
-Cada jogador comanda uma **corporação** que terraforma Marte. Os seus recursos são **dados**: cada face mostra um recurso, como planta, calor ou megacrédito. Você gasta esses recursos para jogar cartas e para mudar o planeta: subir a **temperatura**, subir o **oxigênio** e colocar **oceanos**. Cada passo de terraformação dá 2 Pontos de Vitória (PVs) na hora. A partida acaba quando 2 desses 3 parâmetros chegam ao fim da trilha, e vence quem tiver mais PVs (p. 2).
+Cada jogador comanda uma **corporação** que terraforma Marte. Os seus recursos são dados: cada face mostra um recurso, como planta, calor ou megacrédito. Você gasta esses recursos para jogar cartas e para mudar o planeta: subir a **temperatura**, subir o **oxigênio** e colocar **oceanos**. Cada passo de terraformação dá 2 Pontos de Vitória (PVs) na hora. A partida acaba quando 2 desses 3 parâmetros chegam ao fim da trilha, e vence quem tiver mais PVs (p. 2).
 
 ### Monte a mesa
 
-1. Tabuleiro no centro. Um cubo transparente em 0% de oxigênio, outro em -32 °C. Os 7 oceanos empilhados no símbolo de oceano. O cubo de cada jogador no 0 da trilha de PVs (p. 3).
-2. Todos os dados ao lado: é o **estoque de dados**. Marcadores curinga e peças perto dele.
-3. Cartas de projeto embaralhadas, viradas para baixo, com lugar para o descarte.
-4. Cartas bônus: sorteie 4 (1 ou 2 jogadores), 6 (3 jogadores) ou 8 (4 jogadores) sem olhar e deixe viradas para baixo. As outras voltam à caixa.
-5. **Prêmios:** pegue 1 dado de cada cor, sorteie 3 desses dados, role e ponha um em cada espaço de prêmio.
-6. **Marcos:** sorteie 3 e ponha no tabuleiro.
-7. Cada jogador recebe 5 cartas de projeto e 2 de corporação; fica com 1 corporação e devolve a outra.
-8. Na ordem de jogo, cada um revela a corporação. Na parte de baixo da carta há dois quadros, que o manual chama de caixas: à esquerda, a **caixa vermelha**, com o bônus inicial; à direita, a **caixa marrom**, com os dados de produção (ilustração da p. 3). Pegue o bônus da caixa vermelha e cubra essa caixa com a peça da sua cor. Depois pegue os dados da caixa marrom, role e deixe à frente: são os seus primeiros recursos.
-9. Começa quem venceu mais recentemente uma partida de Terraforming Mars, de qualquer versão, e o jogo segue no sentido horário. O primeiro jogador dá 1 dos seus recursos ao último. Então começa a partida.
+A montagem completa, com figuras, está na seção "Montar a mesa passo a passo", logo acima. O essencial (p. 3):
 
-### Seu turno: produzir ou agir
+1. Tabuleiro no centro; cubos transparentes em 0% de oxigênio e -32 °C; 7 oceanos na pilha; cubo de cada jogador no 0 da trilha de PVs.
+2. Estoque de dados, curingas e peças ao lado; baralho de projetos virado para baixo; 4, 6 ou 8 cartas bônus viradas para baixo.
+3. 3 dados rolados nos prêmios e 3 marcos sorteados.
+4. Cada jogador fica com 5 cartas de projeto e 1 de 2 corporações, pega o bônus da caixa vermelha, cobre a caixa com a sua peça e rola os dados da caixa marrom.
+5. Começa quem venceu mais recentemente uma partida de Terraforming Mars; ele entrega 1 recurso ao último jogador.
+
+### Seu primeiro turno
 
 A cada turno você escolhe **uma** das duas coisas (p. 4):
 
@@ -31,37 +162,39 @@ A cada turno você escolhe **uma** das duas coisas (p. 4):
 | **Ação** | 1 ação de suporte e depois 1 ação principal |
 | **Produção** | fica com até 3 dados, completa a mão até 5 cartas, recebe e rola os dados das caixas marrons, desvira as cartas azuis usadas |
 
-**Ações de suporte** (escolha 1): receber e rolar 1 dado à sua escolha do estoque; pagar 1 recurso qualquer para virar outro dado na face que quiser; pagar 1 recurso qualquer para comprar 2 cartas; ou usar uma ação de suporte de uma carta azul sua.
+**Ações de suporte** (escolha 1): receber e rolar 1 dado à sua escolha do estoque; pagar 1 recurso qualquer para virar outro dado em qualquer uma das faces dele; pagar 1 recurso qualquer para comprar 2 cartas; ou usar uma ação de suporte de uma carta azul sua.
 
 **Ações principais** (escolha 1): jogar uma carta da mão pagando o custo; fazer mais uma ação de suporte; 3 calor sobe a temperatura; 3 água põe 1 oceano; 4 plantas põem 1 floresta (e sobem o oxigênio); 3 cidade põem 1 cidade; 3 megacréditos dão 2 PVs; ou usar uma ação principal de uma carta azul sua.
 
-?? O Jogador 1 tem 3 calor e quer subir a temperatura num turno de ação. Em que momento do turno ele usa o calor?
-- ( ) Logo no começo, antes de qualquer outra ação.
-- (x) Depois da ação de suporte, como a ação principal do turno.
-- ( ) Só no turno de produção.
-= O turno de ação é sempre 1 ação de suporte e depois 1 ação principal (p. 4). Pagar 3 calor para subir a temperatura é uma ação principal.
+Marcador curinga paga como qualquer recurso, e você **nunca** rola de novo um dado que já está à sua frente (p. 6 e 7). As cores e as faces dos dados estão na etapa 1.
 
-### Os dados
+> [!resolvido] **Exemplo resolvido.** O Jogador 1 tem 1 megacrédito, 1 calor e 3 curingas. Ele escolhe o turno de ação. Suporte: recebe e rola 1 dado vermelho do estoque, e sai calor. Principal: paga os 2 calores e 1 curinga, que vale como o terceiro calor; a temperatura sobe 1 nível e ele ganha 2 PVs (p. 4 e 7).
 
-| Cor | Comum (3 faces) | Incomum (2 faces) | Raro (1 face) |
-|---|---|---|---|
-| Amarelo | ![megacrédito](icones/megacredito.webp) megacrédito | ![ciência](icones/ciencia.webp) ciência | ![terra](icones/terra.webp) terra |
-| Verde | ![planta](icones/planta.webp) planta | ![micróbio](icones/microbio.webp) micróbio | ![animal](icones/animal.webp) animal |
-| Azul | ![energia](icones/energia.webp) energia | ![água](icones/agua.webp) água | ![oxigênio](icones/oxigenio.webp) oxigênio |
-| Cinza | ![aço](icones/aco.webp) aço | ![titânio](icones/titanio.webp) titânio | ![cidade](icones/cidade.webp) cidade |
-| Vermelho | ![calor](icones/calor.webp) calor | ![evento](icones/evento.webp) evento | ![nuclear](icones/nuclear.webp) nuclear |
+> [!complete] **Complete.** O Jogador 2 tem 2 águas, 1 planta e 1 energia, e quer pôr um oceano neste turno.
+>
+> ?? Qual turno funciona?
+> - ( ) Pagar a energia para virar o dado verde da planta na face de água; depois pagar 3 águas.
+> - (x) Pagar a planta para virar o dado azul da energia na face de água; depois pagar 3 águas.
+> - ( ) Pagar 2 águas e a energia como ação principal e depois fazer a de suporte.
+> = Água é face do dado azul, não do verde, e girar só muda para outra face do mesmo dado. A de suporte vem primeiro, e o oceano custa 3 águas exatas (p. 4 e 7).
 
-*Ícones reproduzidos do livro de regras da Meeple BR (p. 7).*
+> [!suavez] **Agora a sua mesa.** Olhe os seus dados antes de escolher.
+>
+> ?? Você tem 5 dados e escolhe o turno de produção. Com quantos dados fica antes de receber os novos?
+> - ( ) Com os 5
+> - (x) Com até 3; os outros voltam ao estoque
+> - ( ) Com nenhum
+> = O primeiro passo da produção é manter até 3 dados e devolver os demais ao estoque; curingas não são dados (p. 4).
 
-**Para que serve cada um:** só 5 recursos têm ação própria no tabuleiro: 3 megacréditos dão 2 PVs, 3 calores sobem a temperatura, 3 águas põem 1 oceano, 4 plantas põem 1 floresta e 3 cidades põem 1 cidade. Os outros 10 (terra, ciência, micróbio, animal, energia, oxigênio, aço, titânio, evento e nuclear) servem para pagar o custo das cartas que mostram aquele ícone e contam nos prêmios. A tabela completa está na etapa 1 (p. 4, 5 e 8).
+### Ainda não precisa saber
 
-Você **nunca** rola de novo um dado que já está à sua frente. Para mudar a face (sempre para outra face daquele mesmo dado), só com ação de suporte, efeito de carta ou bônus do tabuleiro que mande girar um dado (p. 4, 6 e 7).
+Para que serve cada recurso: etapa 1. Cartas verdes, vermelhas e azuis: etapa 2. A hora certa de produzir: etapa 3. Peças, cartas bônus, marcos e prêmios: etapa 4. Abra a etapa quando chegar a hora.
 
 ### Como a partida acaba
 
 Quando o segundo dos três parâmetros fica completo, todos jogam mais um turno, inclusive quem o completou. Depois somam PVs da trilha, de prêmios, de marcos e das cartas (p. 6 e 8).
 
-**Prefere ver?** Regras em vídeo; em caso de diferença, vale o manual.
+**Prefere ver?** Regras em vídeo. Ele complementa este guia; em caso de diferença, vale o manual.
 
 !video[TERRAFORMING MARS: o Jogo de Dados - Regras, canal Duque Board Games](https://www.youtube.com/watch?v=I4ArV1_5BDs&t=0s)
 
