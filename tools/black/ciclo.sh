@@ -14,6 +14,8 @@ ROBO="$1"; INTERVALO="$2"; CICLO_MAX="$3"; WORKFLOW="$4"
 LIMITE=$((320 * 60))   # o trabalho tem 330 min; a folga cobre a publicação e o disparo do próximo
 
 publicar() {
+  # batimento: prova de vida para o vigia da reserva (tools/black/vigia_radar.py), um commit por ciclo
+  date -u +%Y-%m-%dT%H:%M:%S+00:00 > "conteudo/black/batimento_$ROBO.txt"
   git add conteudo/black black img/black
   if git diff --cached --quiet; then echo "nada mudou"; return 0; fi
   git commit -q -m "Radar Black: robô $ROBO de $(TZ=America/Sao_Paulo date +'%d/%m/%Y %Hh%M')"

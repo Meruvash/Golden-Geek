@@ -21,7 +21,9 @@ conteudo/black/alertas_config.json ({"telegram": "nomedocanal"}) para a página 
 Uso manual: python3 tools/black/alertas.py [--teste]   (--teste manda um alerta só para o canal de teste)
 """
 import datetime as dt
+import hashlib
 import json
+import subprocess
 import os
 import sys
 from pathlib import Path
@@ -54,7 +56,11 @@ def no_feed(titulo, texto, link, imagem=None):
     except (FileNotFoundError, ValueError):
         feed = []
     agora = dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds")
-    ident = f"{agora}-{abs(hash(titulo)) % 100000}"
+    # id fixo por alerta e por dia: se dois robôs (ou o principal e a reserva) mandarem o mesmo alerta, o serviço de
+    # notificações guarda um só (INSERT OR IGNORE pelo id)
+    ident = hashlib.sha1(f"{agora[:10]}|{titulo}".encode()).hexdigest()[:16]
+    if any(x.get("id") == ident for x in feed):
+        return
     feed.append({"id": ident, "hora": agora, "titulo": titulo, "texto": texto, "url": link, "imagem": imagem})
     FEED.parent.mkdir(parents=True, exist_ok=True)
     FEED.write_text(json.dumps(feed[-30:], ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
@@ -143,6 +149,26 @@ def _publicar(titulo, texto, link=PAGINA, tags="game_die", prioridade="default",
         return False
 
 
+def _juntar_remoto(est):
+    """Sem duplicata entre robôs: antes de avisar, soma ao estado local o que já foi avisado na main por outro robô
+    (o outro robô, ou o principal e a reserva, rodam em máquinas diferentes). Sem rede ou fora de um git, segue só
+    com o estado local."""
+    try:
+        raiz = Path(__file__).resolve().parents[2]
+        subprocess.run(["git", "fetch", "-q", "origin", "main"], cwd=raiz, capture_output=True, timeout=60)
+        r = subprocess.run(["git", "show", "origin/main:conteudo/black/alertas_estado.json"], cwd=raiz, capture_output=True,
+                           text=True, timeout=30)
+        if r.returncode:
+            return
+        rem = json.loads(r.stdout)
+    except (OSError, ValueError, subprocess.SubprocessError):
+        return
+    av = est.setdefault("avisados", {})
+    for s, d in (rem.get("avisados") or {}).items():
+        if d > av.get(s, ""):
+            av[s] = d
+
+
 def avisar(radar_itens):
     """Alerta os jogos que entraram no radar desde a última leitura."""
     melhor = {}
@@ -159,6 +185,7 @@ def avisar(radar_itens):
                           encoding="utf-8")
         print(f"ok alertas: estado inicial gravado com {len(melhor)} jogos (nenhum alerta enviado)")
         return
+    _juntar_remoto(est)
     antes = set(est.get("no_radar", []))
     avisados = {s: d for s, d in est.get("avisados", {}).items() if d >= (dt.date.today() - dt.timedelta(days=7)).isoformat()}
     limite = (dt.datetime.now(dt.timezone.utc) - dt.timedelta(hours=6)).isoformat()
