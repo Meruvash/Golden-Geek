@@ -9,7 +9,7 @@ const { chromium } = require("playwright");
 
 const BASE = process.env.BASE || "http://localhost:8080";
 const SAIDA = process.argv[2];
-const PAGINAS = ["/", "/noticias/", "/resenhas/", "/root/", "/consulta/", "/lancamentos/", "/noticias/vantage-chega-ao-brasil/", "/politica-editorial/"];
+const PAGINAS = ["/", "/noticias/", "/resenhas/", "/root/", "/lancamentos/", "/noticias/vantage-chega-ao-brasil/", "/politica-editorial/"];
 const LARGURAS = [320, 375, 390, 768, 1024, 1440];
 const TABS = 25;
 

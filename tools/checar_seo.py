@@ -27,6 +27,9 @@ def tipos(no):
 
 
 def problemas(url, s):
+    # página que só redireciona (endereço antigo, fora do Google) não tem SEO próprio
+    if re.search(r'<meta http-equiv="refresh"', s) and 'content="noindex' in s:
+        return []
     erros = []
     canon = re.search(r'<link rel="canonical" href="([^"]+)">', s)
     og = re.search(r'<meta property="og:url" content="([^"]+)">', s)

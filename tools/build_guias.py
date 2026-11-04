@@ -275,8 +275,7 @@ def build_hub(todas):
  <section class="bloco"><h2>Prêmios que ajudam a escolher</h2><div class="corpo">
   <p>Quase todos os jogos resenhados aqui venceram ou foram finalistas de prêmios importantes: o Spiel des Jahres (Alemanha,
   jogos de família) e o Kennerspiel des Jahres (para quem já joga), o As d'Or (França), o Deutscher Spiele Preis
-  (votado pelo público) e o Golden Geek (votado pela comunidade do BoardGameGeek). Para ver todos os premiados do
-  Golden Geek desde 2015, use a <a href="{pre}consulta/">Consulta Golden Geek</a>; para os vencedores de cada prêmio
+  (votado pelo público) e o Golden Geek (votado pela comunidade do BoardGameGeek). Para os vencedores de cada prêmio
   que já resenhamos, veja a <a href="{pre}premios/">página de prêmios</a>.</p>
  </div></section>
  {faq_html}

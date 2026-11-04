@@ -50,7 +50,6 @@ def build():
                f"- [Todas as resenhas, com filtros]({SITE}/resenhas/)",
                f"- [Arquivo de notícias]({SITE}/noticias/)",
                f"- [Calendário de lançamentos no Brasil]({SITE}/lancamentos/)",
-               f"- [Consulta Golden Geek]({SITE}/consulta/): os três primeiros de cada categoria desde 2015",
                f"- [Política editorial]({SITE}/politica-editorial/): como pesquisamos, escolhemos e corrigimos", ""]
     (ROOT / "llms.txt").write_text("\n".join(linhas), encoding="utf-8")
     return f"{SITE}/llms.txt"

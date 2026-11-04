@@ -373,7 +373,7 @@ def build(ano=None):
   <p class="fonte">Dados e capas do <a href="https://ludopedia.com.br/lancamentos" target="_blank" rel="noopener">calendário da Ludopedia</a>, consultado em {atualizado:%d/%m/%Y}. Datas previstas pelas editoras podem mudar.</p>
  </div>
  <div class="ctrl">
-  <nav class="atalhos" aria-label="Seções do site"><a href="{pre}">Início</a><a href="{pre}noticias/">Notícias</a><a href="{pre}resenhas/">Resenhas</a><a href="{pre}consulta/">Consulta Golden Geek</a></nav>
+  <nav class="atalhos" aria-label="Seções do site"><a href="{pre}">Início</a><a href="{pre}noticias/">Notícias</a><a href="{pre}resenhas/">Resenhas</a><a href="{pre}premios/">Prêmios</a></nav>
   <div class="busca"><input id="busca" type="search" placeholder="Buscar jogo ou editora" aria-label="Buscar jogo ou editora" autocomplete="off" enterkeyhint="search"><button type="button" class="limpa" aria-label="Limpar busca">×</button></div>
   <div class="trilho" role="group" aria-label="Mês">{"".join(chips)}</div>
   <div class="filtros" role="group" aria-label="Filtros">{filtros}</div>

@@ -677,7 +677,7 @@ def build(radar_itens, armadilhas, quase=()):
              "de preços, com nota BGG, loja, link e horário da verificação.")
     # cartão de prévia do WhatsApp com os números e as capas das três melhores ofertas (tools/black/cartao_black.py);
     # o ?v= muda quando o cartão muda, para o WhatsApp e as redes buscarem a imagem nova
-    og_img = f"{SITE}/consulta/capa.jpg"
+    og_img = f"{SITE}/img/og/capa-premios.jpg"
     try:
         import hashlib
         import cartao_black
@@ -732,5 +732,5 @@ Disallow: /</pre>
                              seo.trilha(("Início", f"{SITE}/"), ("Black de Verdade", f"{SITE}/black/"), ("Robô", url)))
     descr = "O que o robô do Black de Verdade lê nas lojas, com que frequência, o que ele respeita e como pedir ajuste ou exclusão."
     (ROOT / "black" / "robo").mkdir(parents=True, exist_ok=True)
-    (ROOT / "black" / "robo" / "index.html").write_text(pagina(titulo, descr, url, f"{SITE}/consulta/capa.jpg", pre, corpo,
+    (ROOT / "black" / "robo" / "index.html").write_text(pagina(titulo, descr, url, f"{SITE}/img/og/capa-premios.jpg", pre, corpo,
                                                                head_extra="\n" + CSS, jsonld=ld), encoding="utf-8")

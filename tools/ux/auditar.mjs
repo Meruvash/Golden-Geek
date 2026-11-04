@@ -18,7 +18,7 @@ const lighthouse = require("lighthouse").default ?? require("lighthouse");
 
 const BASE = process.env.BASE || "http://localhost:8080";
 const SAIDA = process.argv[2] || "docs/ux-baseline";
-const PAGINAS = (process.env.PAGINAS || "/,/noticias/,/resenhas/,/root/,/consulta/,/lancamentos/,/noticias/vantage-chega-ao-brasil/").split(",");
+const PAGINAS = (process.env.PAGINAS || "/,/noticias/,/resenhas/,/root/,/lancamentos/,/noticias/vantage-chega-ao-brasil/").split(",");
 const LARGURAS = (process.env.LARGURAS || "320,375,768,1440").split(",").map(Number);
 const CHROME = process.env.CHROME || "/opt/pw-browsers/chromium-1243/chrome-linux64/chrome";
 // o medidor da Cloudflare não roda no servidor local; bloqueado para não poluir a medição

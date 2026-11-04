@@ -49,7 +49,6 @@ const casos = [
 for (const [termo, nome] of casos) ok(temResenha(await resultados(termo), nome), `"${termo}" encontra a resenha ${nome}`);
 let r = await resultados("root");
 ok(r.map(g => g.grupo.split(" (")[0]).join(",").startsWith("Resenhas"), "resultados agrupados por tipo, resenhas primeiro");
-ok(r.some(g => g.grupo.startsWith("Consulta Golden Geek")), "Golden Geek aparece como grupo próprio");
 r = await resultados("xyzxyz");
 ok(/Nada encontrado/.test(await page.locator(".bq-st").textContent()), "estado vazio com sugestão");
 
@@ -67,14 +66,7 @@ ok(await page.getAttribute("#bq-q", "aria-activedescendant") === "bq-o0", "seta 
 await Promise.all([page.waitForURL(/fate-of-the-fellowship\/$/), page.keyboard.press("Enter")]);
 ok(true, "Enter leva à resenha /fate-of-the-fellowship/");
 
-// 6. Golden Geek leva à Consulta já filtrada pelo jogo
-await page.keyboard.press("Control+k");
-await dlg.waitFor({ state: "visible" });
-await resultados("wingspan");
-await Promise.all([page.waitForURL(/consulta\/\?jogo=/), page.locator("#bq-lista [data-u^='consulta/']").first().click()]);
-ok(/Jogo: Wingspan/.test(await page.locator("#chipbox").textContent()), "Consulta abre filtrada em Wingspan");
-
-// 7. Lançamento leva à âncora e abre a ficha
+// 6. Lançamento leva à âncora e abre a ficha
 await page.keyboard.press("Control+k");
 await dlg.waitFor({ state: "visible" });
 await resultados("linhagens");

@@ -58,29 +58,6 @@ def lastmod_registrado(url, dados):
     return reg["lastmod"] if reg and reg["hash"] == assinatura(dados) else None
 
 
-def lista_consulta(texto):
-    raw = re.search(r"const RAW = `(.*?)`", texto, re.S)
-    return raw.group(1) if raw else ""
-
-
-def data_lista_consulta(arq):
-    """Data do último commit que mudou a lista de vencedores da consulta (mudança de template não conta)."""
-    rasos = (ROOT / ".git" / "shallow").read_text().split() if (ROOT / ".git" / "shallow").exists() else []
-    rel = str(arq.relative_to(ROOT))
-    r = subprocess.run(["git", "log", "--format=%H %cI", "--", rel], cwd=ROOT, capture_output=True, text=True)
-    atual = lista_consulta(arq.read_text(encoding="utf-8"))
-    for linha in r.stdout.split("\n"):
-        if not linha:
-            continue
-        h, quando = linha.split()
-        if h in rasos:
-            return None
-        pai = subprocess.run(["git", "show", f"{h}^:{rel}"], cwd=ROOT, capture_output=True, text=True)
-        if pai.returncode or lista_consulta(pai.stdout) != atual:
-            return quando
-    return None
-
-
 def fontes():
     """(url, caminho do HTML, assinatura do conteúdo, data inicial) de cada página do site."""
     pauta = json.loads((ROOT / "pauta.json").read_text(encoding="utf-8"))
@@ -117,8 +94,6 @@ def fontes():
         # muda quando a lista de jogos muda (a contagem e os ids dos lançamentos)
         ids = re.findall(r'<li id="j(\d+)"', calendario.read_text(encoding="utf-8"))
         paginas.append(("calendario", f"{SITE}/lancamentos/", calendario, assinatura(ids), None))
-    consulta = ROOT / "consulta" / "index.html"
-    paginas.append(("consulta", f"{SITE}/consulta/", consulta, assinatura(lista_consulta(consulta.read_text(encoding="utf-8"))), data_lista_consulta(consulta)))
     return paginas
 
 

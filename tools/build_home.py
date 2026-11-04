@@ -667,7 +667,7 @@ def build_home():
 <main id="conteudo" class="in"><div class="nota"><section class="bloco">
  <h1>Página não encontrada</h1>
  <p class="lide">O endereço pode ter mudado ou sido digitado errado. Veja o que há de novo:</p>
- <div class="jogos"><a href="/">Notícias de hoje</a><a href="/resenhas/">Resenhas de jogos premiados</a><a href="/consulta/">Consulta Golden Geek</a></div>
+ <div class="jogos"><a href="/">Notícias de hoje</a><a href="/resenhas/">Resenhas de jogos premiados</a><a href="/premios/">Jogos premiados</a></div>
 </section></div></main>
 {rodape("/", "")}"""
     (ROOT / "404.html").write_text(pagina("Página não encontrada | Elite Boardgamers", "Página não encontrada.", "", capa_secao("noticias"), "/", corpo_404), encoding="utf-8")
@@ -807,8 +807,6 @@ if __name__ == "__main__":
     import build_lista
     (ROOT / "resenhas" / "index.html").write_text(build_lista.build(), encoding="utf-8")
     print("ok resenhas/index.html")
-    import build_consulta
-    print("ok consulta/index.html:", build_consulta.build())
     import build_como_jogar
     print("ok como-jogar:", len(build_como_jogar.build()), "páginas")
     import build_calendario

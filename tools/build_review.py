@@ -129,9 +129,10 @@ def primeira_frase(t):
 
 
 def url_fonte(nome, url):
-    """A Consulta Golden Geek morava na raiz do site e hoje fica em /consulta/: as fontes antigas ainda apontam para a raiz."""
-    if url.rstrip("/") == SITE and "consulta" in nome.lower():
-        return f"{SITE}/consulta/"
+    """A antiga Consulta Golden Geek (na raiz e depois em /consulta/) saiu do site em 04/11/2026: fontes que apontam
+    para ela levam à página de prêmios."""
+    if "consulta" in nome.lower() and url.rstrip("/") in (SITE, f"{SITE}/consulta"):
+        return f"{SITE}/premios/"
     return url
 
 

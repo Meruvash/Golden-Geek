@@ -22,7 +22,7 @@ Leitura principalmente em celular, vinda do Instagram e de links compartilhados 
 - Site estático (HTML/CSS) no GitHub Pages; sem build step nem framework. Páginas geradas por scripts Python; não editar HTML à mão.
 - Conteúdo em português do Brasil.
 - Cada resenha tem um infográfico quadrado (`infografico.webp`, 1600 px) e uma capa 800×800 (`capa.jpg`).
-- Tipos de página: consulta Golden Geek (`index.html`), lista de resenhas (`resenhas/`), resenha individual (`<slug>/`), comparativo de série (`nemesis/`).
+- Tipos de página: lista de resenhas (`resenhas/`), resenha individual (`<slug>/`), comparativo de série (`nemesis/`).
 
 ## Brand Commitments
 - Nome: Elite Boardgamers.

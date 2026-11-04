@@ -58,8 +58,7 @@ def build():
             # "Jogo do Ano 2019, Arte 2019" (no Golden Geek); nos outros a categoria repete o nome do prêmio
             txt = ", ".join(f"{cat} {ano}" if cat != chave else str(ano) for ano, cat in vit)
             itens += cartao(c, d, pre).replace("</div></a></li>", f'<p class="vits">Venceu: {e(txt)}</p></div></a></li>')
-        extra = (f' <p class="criterio">A lista completa, com os três primeiros de cada categoria desde 2015, está na '
-                 f'<a class="mais-g" href="{pre}consulta/">Consulta Golden Geek</a>.</p>') if chave == "Golden Geek" else ""
+        extra = ""
         secoes += (f'<section class="bloco" id="{ancora}"><h2>{e(nome)}</h2><p class="criterio">{e(quem)} '
                    f'{len(jogos)} vencedor{"es" if len(jogos) > 1 else ""} com resenha no site.</p><ol class="jogos-g">{itens}</ol>{extra}</section>\n ')
     notas = sorted((json.loads(p.read_text(encoding="utf-8")) for p in (ROOT / "conteudo" / "noticias").glob("*.json")),
@@ -86,7 +85,7 @@ def build():
     descr = ("Spiel des Jahres, Kennerspiel, As d'Or, Deutscher Spiele Preis e Golden Geek: o que cada prêmio de jogos de "
              "tabuleiro avalia e os vencedores com resenha completa no site.")
     (ROOT / "premios").mkdir(exist_ok=True)
-    (ROOT / "premios" / "index.html").write_text(pagina(titulo, descr, url, f"{SITE}/consulta/capa.jpg", pre, corpo,
+    (ROOT / "premios" / "index.html").write_text(pagina(titulo, descr, url, f"{SITE}/img/og/capa-premios.jpg", pre, corpo,
                                                         head_extra="\n" + CSS_GUIA + CSS_PREMIOS, jsonld=ld), encoding="utf-8")
     return url
 

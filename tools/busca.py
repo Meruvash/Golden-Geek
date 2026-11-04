@@ -88,18 +88,6 @@ def build():
         d = datetime.fromisoformat(n["data"])
         regs.append(reg("n", n["titulo"], f'{d.day} de {MESES[d.month - 1]} · {n["categoria"]}', f'noticias/{n["slug"]}/', extra))
 
-    # Golden Geek: um registro por jogo, com as aparições na linha de contexto
-    raw = re.search(r"const RAW = `(.*?)`", (ROOT / "consulta" / "index.html").read_text(encoding="utf-8"), re.S).group(1)
-    gg = {}
-    for linha in raw.strip().split("\n"):
-        y, cat, nomes = linha.strip().split(" | ")
-        for i, nome in enumerate(nomes.split("; ")):
-            gg.setdefault(nome, []).append(f"{cat} {y} ({PLACE[i]})")
-    for nome, ap in gg.items():
-        slug, nomes = cruza(nome)
-        s = ap[0] + (f" e mais {len(ap) - 1}" if len(ap) > 1 else "")
-        regs.append(reg("g", nome, s, "consulta/?jogo=" + nome, nomes, slug))
-
     # lançamentos do ano, como no calendário (mesmo jogo em dois meses fica no mais recente)
     from build_calendario import carregar, situacao, tipo
     hoje = datetime.now(timezone(timedelta(hours=-3))).date()
