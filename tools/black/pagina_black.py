@@ -528,13 +528,16 @@ def build(radar_itens, armadilhas, quase=(), outras=()):
                          f'<button type="button" class="cup-cod" data-cod="{e(c["codigo"])}" aria-label="Copiar o cupom {e(c["codigo"])}">{e(c["codigo"])}<span>Copiar</span></button>'
                          + (f'<p class="cup-txt">A loja diz: “{e(dito)}”</p>' if dito else "")
                          + f'<p class="cup-st">Visto na página da loja {hora(c["visto"], agora_)}. {teste}.</p>'
-                         f'<a href="{e(c["pagina"])}" target="_blank" rel="noopener nofollow">Ver na loja ↗</a></li>')
+                         + (f'<a href="{e(c["pagina"])}" target="_blank" rel="noopener nofollow">Ver no Promobit ↗</a></li>'  # cupom lido no Promobit: o link é a fonte, não a loja
+                            if "promobit.com.br" in c["pagina"] else
+                            f'<a href="{e(c["pagina"])}" target="_blank" rel="noopener nofollow">Ver na loja ↗</a></li>' if not radar.INDIRETO.search(c["pagina"]) else "</li>"))
     pb_arq = ROOT / "conteudo" / "black" / "promobit.json"
     pbs = json.loads(pb_arq.read_text(encoding="utf-8")) if pb_arq.exists() else {}
     cm_arq = ROOT / "conteudo" / "black" / "comunidade.json"  # canais públicos do Telegram
     if cm_arq.exists():
         pbs.update(json.loads(cm_arq.read_text(encoding="utf-8")))
     hist = radar.ler(radar.HIST, {})
+    hoje_d = radar.ler(radar.HOJE, {})
     pb_html = ""
     def _ref(v):
         """Preço de referência do achado: média aparada da nossa base ou do Compara Jogos (buscado pelo robô)."""
@@ -559,6 +562,12 @@ def build(radar_itens, armadilhas, quase=(), outras=()):
         foto = capa({"slug": img_slug, "imagem": img_url}, pre) if img_slug and img_url else ""
         r = _ref(v)
         tem_preco = v.get("preco") and v.get("tipo_preco") != "COUPON"
+        # "Ver na loja" só com link direto da página do produto (sem encurtador, Compara Jogos nem rastreio; pedido do
+        # usuário em 04/11/2026); sem ele, o cartão fica só com o link do post original
+        sl = v.get("jogo") or v.get("slug_cj")
+        loja_url = radar.link_direto(v.get("link_loja") or v.get("link"), v.get("loja") or "",
+                                     (hoje_d.get(sl) or {}).get("ofertas"), None, hoje_d, sl)
+        loja_url = radar.link_oferta(loja_url) if loja_url else None
         if r and tem_preco:
             ref, dias, menor = r
             d = (ref - v["preco"]) / ref
@@ -589,7 +598,7 @@ def build(radar_itens, armadilhas, quase=(), outras=()):
                     f'<p class="cup-txt">{e(v.get("loja") or "")}{f" · cupom <b>{e(v['cupom'])}</b>" if v.get("cupom") else ""}</p>'
                     + (f'<p class="cup-ref">{real}</p>' if real else "")
                     + f'<p class="cup-st">Postada {hora(v.get("publicado") or v["visto"], agora_)}. Vendedor e validade não conferidos.</p>'
-                    + (f'<a href="{e(v["link_loja"])}" target="_blank" rel="noopener nofollow">Ver na loja ↗</a> ' if v.get("link_loja") else "")
+                    + (f'<a href="{e(loja_url)}" target="_blank" rel="noopener nofollow">Ver na loja ↗</a> ' if loja_url else "")
                     + f'<a href="{e(v["link"])}" target="_blank" rel="noopener nofollow">Ver no {e((v.get("fonte") or "Promobit").removeprefix("Telegram: "))} ↗</a></li>')
         if foto:
             pb_html += cartao_c

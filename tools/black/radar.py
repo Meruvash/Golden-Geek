@@ -341,6 +341,34 @@ MARCAS_OUTRAS = re.compile(r"(?i)\b(pakitoys|paki toys|uniplac|nig brinquedos|to
                            r"brincadeira de crian[cç]a|elka|big star|zoop toys|lugo|junges|ggb plast)\b")
 
 
+AUDITORIA = ROOT / "conteudo" / "auditoria_links.json"  # tools/auditoria_links.py (a cada 6 h no GitHub Actions)
+_LINKS_RUINS = None
+
+
+def links_ruins():
+    """Links de oferta que a última auditoria abriu e achou com ERRO (página inicial, busca, 404, sem produto, outro
+    jogo, intermediário ou rastreio). Regra do usuário (04/11/2026): link que não leva à oferta de verdade não vai
+    para o site; a oferta sai. A auditoria seguinte confere de novo esses links e devolve os que ficarem certos."""
+    global _LINKS_RUINS
+    if _LINKS_RUINS is None:
+        try:
+            rel = json.loads(AUDITORIA.read_text(encoding="utf-8"))
+            _LINKS_RUINS = {v["url"] for v in rel.get("links", []) if v.get("status") == "ERRO"}
+        except (FileNotFoundError, ValueError):
+            _LINKS_RUINS = set()
+    return _LINKS_RUINS
+
+
+def link_oferta(url):
+    """Link de oferta pronto para o site, ou None quando ele não leva direto à página do produto."""
+    if not url or not url.startswith("http") or INDIRETO.search(url):
+        return None
+    limpo = _sem_rastreio(url)
+    if url in links_ruins() or limpo in links_ruins():
+        return None
+    return limpo
+
+
 def outro_produto(o, h):
     """A oferta é de outro produto que o Compara Jogos ligou ao jogo? Pela lista de exclusão ou pela marca no
     título do anúncio (quando a marca não é a editora do jogo)."""
@@ -362,9 +390,11 @@ COMUNIDADE_HORAS = 72  # promoção postada em canal costuma acabar rápido: só
 # para a página do jogo no Compara Jogos, e outros canais usam encurtadores (amzn.to, meli.la...) que podem levar
 # afiliado de quem postou. Trocamos pelo link da própria loja que o Compara Jogos já lista para o jogo (sem abrir o
 # encurtador) e tiramos parâmetros de rastreio e de afiliado.
-INDIRETO = re.compile(r"(comparajogos\.com\.br|amzn\.to|a\.co/|link\.amazon|amzlinks|meli\.la|bit\.ly|tinyurl|cutt\.ly|"
-                      r"encurtador|t\.me/|s\.click|shope\.ee|tidd\.ly|lmd\.ink|onelink)", re.I)
-RASTREIO = re.compile(r"^(utm_.*|tag|ref|ref_|linkcode|ascsubtag|camp.*|creative.*|afil.*|aff.*|partner.*|matt_.*|"
+INDIRETO = re.compile(r"(comparajogos\.com\.br|amzn\.to|a\.co/|link\.amazon|amzlinks|amzlink\.to|meli\.la|bit\.ly|tinyurl|cutt\.ly|"
+                      r"encurtador|t\.me/|telegram\.me|s\.click|shope\.ee|tidd\.ly|lmd\.ink|onelink|ccnl\.app|is\.gd|ow\.ly|"
+                      r"buff\.ly|rebrand\.ly|rb\.gy|shorturl\.at|//t\.co/|goo\.gl|l\.ead\.me|compre\.vc|promobit\.com\.br|"
+                      r"pelando\.com\.br|linktr\.ee|hotm\.art)", re.I)
+RASTREIO = re.compile(r"^(utm_.*|tag|ref|ref_|linkcode|ascsubtag|camp.*|creative.*|afil.*|aff.*|partner.*|parceiro.*|matt_.*|"
                       r"source|fbclid|gclid|psc|smid|th|sr|qid|keywords|pd_rd_.*|pf_rd_.*|content-id|spm|clickid)$", re.I)
 
 
@@ -400,25 +430,62 @@ def _dominios_lojas(hoje_d):
     return _DOMINIOS
 
 
-def link_direto(url, loja, ofertas_jogo, nome=None, hoje_d=None):
+def link_direto(url, loja, ofertas_jogo, nome=None, hoje_d=None, slug_cache=None):
     """Link da loja para o achado: o da própria loja na lista do Compara Jogos quando o post aponta para página
     intermediária; sempre sem rastreio. Sem link da loja na lista, fica o do post."""
     if url and not INDIRETO.search(url):
         return _sem_rastreio(url)
     alvo = _norm_loja(loja)
+    if alvo and slug_cache:
+        for k, u in (_links_cj().get(slug_cache) or {}).items():
+            if not k.startswith("_") and (k == alvo or alvo in k or k in alvo):
+                return _sem_rastreio(u)
     for o in ofertas_jogo or []:
         u = o.get("url") or ""
         if u and not INDIRETO.search(u) and alvo and (_norm_loja(o.get("loja")) == alvo or alvo in _norm_loja(o.get("loja"))
                                                       or _norm_loja(o.get("loja")) in alvo):
             return _sem_rastreio(u)
-    # o jogo não está mais na lista dessa loja no Compara Jogos: abre o site da loja (Amazon e Mercado Livre na busca
-    # pelo nome do jogo), nunca a página intermediária
-    from urllib.parse import quote_plus
-    if "amazon" in alvo and nome:
-        return f"https://www.amazon.com.br/s?k={quote_plus(nome)}"
-    if "mercadolivre" in alvo and nome:
-        return f"https://lista.mercadolivre.com.br/{quote_plus(nome)}"
-    return _dominios_lojas(hoje_d).get(alvo) or url
+    # sem página do produto dessa loja: não há link direto (o robô relê a página do jogo no Compara Jogos antes,
+    # em atualizar_links_comunidade; se nem assim, o achado fica fora: link tem que levar à oferta de verdade)
+    return None
+
+
+SEM_LINK = set()  # achados da comunidade sem página do produto na loja (o robô relê a página do jogo)
+
+
+LINKS_CJ = DADOS / "links_cj.json"  # slug → {loja normalizada: link do produto, "_hora": quando leu}, vale 24 h
+
+
+def _links_cj():
+    try:
+        return json.loads(LINKS_CJ.read_text(encoding="utf-8"))
+    except (FileNotFoundError, ValueError):
+        return {}
+
+
+def atualizar_links_comunidade(maximo=40):
+    """Relê no Compara Jogos a página dos jogos de achados da comunidade cujo link da loja não está nos dados (a lista
+    de ofertas guardada pode estar velha): a página traz o link do produto em cada loja (04/11/2026, links da Bravo).
+    Guarda em links_cj.json; não mexe na lista de jogos acompanhados."""
+    SEM_LINK.clear()
+    achados_comunidade(ler(HIST, {}), dt.date.today(), ler(HOJE, {}))
+    cache = _links_cj()
+    limite = (agora() - dt.timedelta(hours=24)).isoformat(timespec="minutes")
+    faltam = [sl for sl in sorted(SEM_LINK) if (cache.get(sl) or {}).get("_hora", "") < limite][:maximo]
+    for sl in faltam:
+        try:
+            it = ler_item(sl)
+        except Exception as ex:  # noqa: BLE001 — sem rede ou página fora: tenta na próxima leitura
+            print(f"aviso: {sl}: {ex.__class__.__name__}")
+            continue
+        time.sleep(2)
+        cache[sl] = {"_hora": agora().isoformat(timespec="minutes"),
+                     **{_norm_loja(o["loja"]): o["url"] for o in (it or {}).get("ofertas", []) if o.get("url") and not INDIRETO.search(o["url"])}}
+    if faltam:
+        gravar(LINKS_CJ, cache)
+    SEM_LINK.clear()
+    achados_comunidade(ler(HIST, {}), dt.date.today(), ler(HOJE, {}))
+    print(f"ok links da comunidade: {len(faltam)} jogos relidos no Compara Jogos; {len(SEM_LINK)} achados ficam fora por não ter página do produto na loja")
 
 
 def achados_comunidade(hist, hoje, hoje_d=None):
@@ -462,8 +529,14 @@ def achados_comunidade(hist, hoje, hoje_d=None):
         if por < ref * SUSPEITO:
             continue
         loja = v.get("loja") or "loja não informada"
+        link = link_direto(v.get("link_loja") or v["link"], loja, ((hoje_d or {}).get(slug) or {}).get("ofertas"), nome, hoje_d, slug)
+        if not link:
+            SEM_LINK.add(slug)
+            continue
+        if not link_oferta(link):
+            continue  # a auditoria de links abriu este link e ele não leva à página do produto
         saida.append({"slug": slug, "nome": nome, "tipo": tipo or "game", "editora": editora, "bgg": bgg, "imagem": img,
-                      "loja": loja, "url": link_direto(v.get("link_loja") or v["link"], loja, ((hoje_d or {}).get(slug) or {}).get("ofertas"), nome, hoje_d),
+                      "loja": loja, "url": link,
                       "por": por, "de": v.get("preco_antes"),
                       "ref": ref, "desc": (ref - por) / ref, "menor": menor, "recorde": por <= menor, "dias": dias,
                       "fonte_preco": f'achado da comunidade ({(v.get("fonte") or "Promobit").removeprefix("Telegram: ")})',
@@ -501,13 +574,16 @@ def calcular():
             la = o.get("loja_agora")
             if la and la.get("estoque") is False:
                 continue  # a página da loja diz que acabou
+            url = link_oferta(o.get("url"))
+            if not url:
+                continue  # sem link direto para a página do produto (intermediário ou ERRO na auditoria de links)
             # preço da API oficial, ou lido agora na página da loja; senão, o que a loja informou ao Compara Jogos
             por = api["preco"] if api else (la["preco"] if la else o["por"])
             desc = (ref - por) / ref
             if por < ref * SUSPEITO:
                 continue
             base = {"slug": s, "nome": h["nome"], "tipo": h["tipo"], "editora": h.get("editora"), "bgg": h.get("bgg"),
-                    "imagem": h.get("imagem"), "loja": o["loja"], "url": o["url"], "por": por, "de": o["de"],
+                    "imagem": h.get("imagem"), "loja": o["loja"], "url": url, "por": por, "de": o["de"],
                     "ref": ref, "desc": desc, "menor": menor, "recorde": por <= menor_antes, "dias": dias,
                     "fonte_preco": api["fonte"] if api else ("página da loja" if la else ("feed da loja" if o.get("fonte") == "feed da loja" else "Compara Jogos")),
                     "vendedor": api.get("vendedor") if api else None,
@@ -630,6 +706,16 @@ def main(robo=None, acao=None):
             apis.enriquecer(ofertas, so=alvo)
             feeds.juntar(ler(HIST, {}), ofertas)
             mesclar(HOJE, {s: ofertas[s] for s in ofertas if s in alvo or any(o.get("fonte") == "feed da loja" for o in ofertas[s]["ofertas"])})
+        if robo == "normal":
+            # Mercado Livre a cada ciclo do robô normal (pedido do usuário em 04/11/2026: os jogos do Mercado Livre
+            # precisam aparecer): até 400 produtos com preço de mais de 4 h, então a lista inteira roda em ~1h30
+            import apis
+            ofertas = ler(HOJE, {})
+            antes = {s: json.dumps([o.get("api") for o in of["ofertas"]], sort_keys=True) for s, of in ofertas.items()}
+            apis.mercado_livre(ofertas, limite=400, idade_h=4)
+            mexidos = {s: of for s, of in ofertas.items() if json.dumps([o.get("api") for o in of["ofertas"]], sort_keys=True) != antes[s]}
+            if mexidos:
+                mesclar(HOJE, mexidos)
         conferir_lojas()
         import promobit
         if robo == "educado":
@@ -640,6 +726,7 @@ def main(robo=None, acao=None):
             promobit.ler_ofertas()
             import telegram
             telegram.ler()
+        atualizar_links_comunidade()
         lojas.salvar()
     import pagina_black
     with _TravaDados():
