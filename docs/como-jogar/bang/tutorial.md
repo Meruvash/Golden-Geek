@@ -111,7 +111,7 @@ Três etapas: montar e jogar um turno; atirar e se defender; sorte, eliminação
 > 3. **Fase 2:** jogue quantas cartas quiser, inclusive nenhuma. Limites: 1 carta BANG! por turno; 1 cópia de cada carta à sua frente (mesmo nome é cópia); 1 arma à sua frente. Ao pôr uma arma nova, descarte a antiga.
 > 4. **Fase 3:** descarte da mão o que passar do seu limite, igual às balas que você tem agora. Passe a vez.
 
-> [!entender] **Para entender: marrom e azul.** A **borda marrom** quer dizer "jogue e descarte": a carta vai para a pilha de descarte e faz o efeito escrito ou desenhado nela. A **borda azul** são armas e objetos: ficam viradas para cima à sua frente, "em jogo", até serem descartadas, tiradas por outra carta (uma Cat Balou, por exemplo) ou até um evento próprio, como a explosão da Dinamite. Não há limite de cartas azuis à sua frente, desde que nenhuma repita o nome de outra (p. 3).
+> [!entender] **Para entender: marrom e azul.** A **borda marrom** quer dizer "jogue e descarte": a carta vai para a pilha de descarte e faz o efeito escrito ou desenhado nela. A **borda azul** são armas e objetos: ficam viradas para cima à sua frente (a Prisão, na frente de outro jogador), "em jogo", até serem descartadas, tiradas por outra carta (uma Cat Balou, por exemplo) ou até um evento próprio, como a explosão da Dinamite. Não há limite de cartas azuis à sua frente, desde que nenhuma repita o nome de outra (p. 3).
 
 !fig[Um Duelo, carta de borda marrom, e um Barril, carta de borda azul. Ilustração: manual Galápagos (p. 3)](figuras/tipos-de-carta.webp)
 
