@@ -60,6 +60,7 @@
  "adicional ao fechar pedido stronghold games flamme rouge peloton expansion": null,
  "adicional ao fechar pedido stronghold games nations the dice game board games": null,
  "adicional ao fechar pedido suburbia expansions 2a edicao": null,
+ "adicional ao fechar pedido sushi go the pick and pass card game": null,
  "adicional ao fechar pedido swindler edition spielwiese english edition": null,
  "adicional ao fechar pedido talisman kit do mestre do jogo de papel e caneta para adultos": null,
  "adicional ao fechar pedido the search for planet x": null,
@@ -135,6 +136,17 @@
   "slug": "concept",
   "tipo": "game"
  },
+ "asmodee hitster jogo de cartas para 2 a 10 jogadores": {
+  "bgg": 7.5811,
+  "editora": "Jumbo",
+  "imagem": "https://uploads.comparajogos.com.br/img/ccae8197d017d65ddb9b3ce9bdd91a332685cc0b.png",
+  "menor": 148.71,
+  "nome": "HITSTER",
+  "ref": 153.34,
+  "ref_dias": 32,
+  "slug": "hitster",
+  "tipo": "game"
+ },
  "asmodee imagine jogo de cartas casual 3 a 8 jogadores idade 10": null,
  "asmodee mass effect the board game priority hagalaz jogo de tabuleiro idade 14 1 4 jogadores partidas de ate 90 min": null,
  "asmodee star wars the mandalorian adventures 1 a 4 jogadores idade 14": null,
@@ -208,6 +220,7 @@
  },
  "blacklist games jogo de tabuleiro street masters mare do dragao": null,
  "blacklist games street masters the board game legend of oni expansion": null,
+ "blacklist games street masters the board game tide of the dragon": null,
  "blurgh": {
   "bgg": 6.5,
   "editora": "Inkster Games",
@@ -525,6 +538,17 @@
   "slug": "dont-mess-with-cthulhu-deluxe",
   "tipo": "game"
  },
+ "dragon island": {
+  "bgg": 6.18912,
+  "editora": "R&R Games",
+  "imagem": "https://uploads.comparajogos.com.br/img/8c45f61c0ff9b2c09c0c4a3ddbae2c9fb6d368dd.jpg",
+  "menor": null,
+  "nome": "Dragon Island",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "dragon-island",
+  "tipo": "game"
+ },
  "dungeons dragons attack wing bronze dragon expansion pack": {
   "bgg": 7.63158,
   "editora": "WizKids",
@@ -714,6 +738,7 @@
  "flamecraft dragons and dragons": null,
  "flip 7 with a vengeance": null,
  "fora de ordem adoleta jogos": null,
+ "franco german rails expansion for gulf mobile ohio": null,
  "frete gratis": null,
  "fugitive second edition": {
   "bgg": 7.42449,
@@ -760,6 +785,7 @@
  "gloomhaven 2nd edition mercenary pack anaphi fallen lion preorder": null,
  "gloomhaven 2nd edition mercenary pack cassandra forgotten diviner preorder": null,
  "gloomhaven 2nd edition mercenary pack hail irritable enchanter preorder": null,
+ "gmt games north africa 40": null,
  "godtear kailinn the fury of the forest": {
   "bgg": 8.66667,
   "editora": "Steamforged Games Ltd.",
@@ -971,6 +997,7 @@
   "slug": "innovation-artifacts-of-history",
   "tipo": "expansion"
  },
+ "invincible superhero roleplaying starter set": null,
  "jogo de cartas asmodee duplo risco 2 a 8 jogadores idade 8": {
   "bgg": 5.5249,
   "editora": "Galápagos Jogos",
@@ -1000,6 +1027,17 @@
   "ref": null,
   "ref_dias": 0,
   "slug": "keyside",
+  "tipo": "game"
+ },
+ "kitchen rush": {
+  "bgg": 7.21392,
+  "editora": "Artipia Games",
+  "imagem": "https://uploads.comparajogos.com.br/img/6d0a9578c45f258005daff8f8f4c89b70751b77f.jpg",
+  "menor": null,
+  "nome": "Kitchen Rush",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "kitchen-rush",
   "tipo": "game"
  },
  "klask": {
@@ -1432,6 +1470,7 @@
   "tipo": "game"
  },
  "origem first builders": null,
+ "pagan fate of roanoke beyond the palisades expansion": null,
  "pandemic reign of cthulhu board game for adults and family cooperative ages 14 2 to 4 players average playtime 40 minutes made by z man gam": null,
  "papua": {
   "bgg": 6.57198,
@@ -1552,6 +1591,7 @@
   "tipo": "game"
  },
  "ratjack bunny business expansao jogo de cartas across the board": null,
+ "rebel princess standard edition": null,
  "rebel princess standard edition ultimate blend of theme and strategy fast paced addictive card game perfect for game nights 3 players": null,
  "renegade game studios axis allies norte da africa 2 a 4 jogadores com 12 anos ou mais 3 horas de jogo novo cenario para aliados 250 m": null,
  "renegade game studios the vale of eternity artifacts expansion drafting collection card game tame hunt monsters creatures age 14 2": null,
@@ -2269,6 +2309,7 @@
  },
  "witchcraft fast playing solitaire card game to lead a coven of witches and save the village 25th century games": null,
  "zombicide toxic city mall double sided game tiles": null,
+ "zombie teenz": null,
  "zombie teenz evolution": {
   "bgg": 7.61448,
   "editora": "Le Scorpion Masqué",
