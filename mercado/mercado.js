@@ -1,6 +1,7 @@
 // Mercado da Elite (serviço em worker/src/mercado.js, na Cloudflare). Escrito à mão, como o interacoes.js;
 // as páginas que o carregam são geradas por tools/build_mercado.py e dizem qual parte rodar em data-pagina.
-// Páginas: lista (vitrine com busca e filtros), anuncio (?id=N), anunciar (formulário) e meu (gerenciar pelo link secreto).
+// Páginas: lista (vitrine com busca e filtros), anuncio (?id=N, com o botão Comprar), anunciar (formulário),
+// meu (gerenciar pelo link secreto, conectar o Mercado Pago, ver vendas e compras) e pedido (?p=N&k=..., depois do pagamento).
 (() => {
   const raiz = document.querySelector("[data-mercado]");
   if (!raiz) return;
@@ -62,15 +63,30 @@
   // preço de novo só vale se a leitura for recente (até 4 dias)
   const precoNovo = j => j && j.preco && j.dia && (Date.now() - Date.parse(j.dia + "T12:00:00-03:00")) < 4 * 864e5 ? Math.round(j.preco * 100) : null;
 
+  const textoFrete = a => a.entrega === "retirada" ? "Só retirada" : (a.frete === 0 ? "Frete grátis" : a.frete ? `Frete ${reais(a.frete)}` : "Envia") + (a.entrega === "ambos" ? " ou retirada" : "");
+  const compras = { ler: () => guarda.get("eb-mercado-compras", []), poe(c) { const l = this.ler().filter(x => x.p !== c.p); l.unshift(c); guarda.set("eb-mercado-compras", l.slice(0, 50)); } };
+
+  // anti-robô: o Turnstile da Cloudflare só é baixado quando a pessoa começa a preencher um formulário
+  const turnstiles = new Map();
+  let tsP;
+  function turnstile(alvo) {
+    if (!TS) return Promise.resolve(null);
+    tsP ||= new Promise(ok => { window.__ebTsM = ok; const s = document.createElement("script");
+      s.src = "https://challenges.cloudflare.com/turnstile/v0/api.js?onload=__ebTsM&render=explicit"; s.async = true; document.head.append(s); });
+    return tsP.then(() => { if (!turnstiles.has(alvo)) turnstiles.set(alvo, window.turnstile.render(alvo, { sitekey: TS, language: "pt-br", theme: "light" })); return turnstiles.get(alvo); });
+  }
+  const tokenTs = alvo => (turnstiles.has(alvo) && window.turnstile ? window.turnstile.getResponse(turnstiles.get(alvo)) : "") || "";
+  const resetTs = alvo => { if (turnstiles.has(alvo) && window.turnstile) window.turnstile.reset(turnstiles.get(alvo)); };
+
   function cartao(a, { link = true, novo = null } = {}) {
     const capa = a.fotos && a.fotos[0];
-    const selos = `<span class="mc-selos"><span class="mc-selo ${esc(a.condicao)}">${esc(COND_CURTO[a.condicao] || "")}</span>${a.troca ? '<span class="mc-selo troca">Troca</span>' : ""}${a.estado === "vendido" ? '<span class="mc-selo vendido">Vendido</span>' : ""}</span>`;
+    const selos = `<span class="mc-selos"><span class="mc-selo ${esc(a.condicao)}">${esc(COND_CURTO[a.condicao] || "")}</span>${a.troca ? '<span class="mc-selo troca">Troca</span>' : ""}${a.estado === "vendido" ? '<span class="mc-selo vendido">Vendido</span>' : ""}${a.reservado ? '<span class="mc-selo reservado">Reservado</span>' : ""}</span>`;
     const img = a._previa ? (a._previa[0] ? `<img src="${a._previa[0]}" alt="">` : `<span class="sem">${ic("camera")}</span>`)
       : capa ? `<img src="${foto(capa)}" alt="Foto de ${esc(a.jogo)} anunciado por ${esc(a.vendedor)}" loading="lazy" decoding="async">` : "";
     const eco = novo && a.preco < novo ? `<span class="mc-eco">${reais(novo - a.preco)} abaixo do novo</span>` : "";
     const corpo = `<span class="mc-foto">${img}${selos}</span><span class="mc-txt"><b class="mc-nome">${esc(a.jogo || "Nome do jogo")}</b>${a.edicao ? `<span class="mc-ed">${esc(a.edicao)}</span>` : ""}`
       + `<span class="mc-preco">${a.preco ? reais(a.preco) : "R$ –"}</span>${eco}`
-      + `<span class="mc-onde">${ic("pino")}${esc(a.cidade || "Cidade")}${a.uf ? "/" + esc(a.uf) : ""} · ${esc(a.entrega === "retirada" ? "Retirada" : a.entrega === "envio" ? "Envia" : "Envia ou entrega")}</span>`
+      + `<span class="mc-onde">${ic("pino")}${esc(a.cidade || "Cidade")}${a.uf ? "/" + esc(a.uf) : ""} · ${esc(textoFrete(a))}</span>`
       + `<span class="mc-quem"><i class="mc-av">${esc((a.vendedor || "?").trim()[0] || "?")}</i><span>${esc(a.vendedor || "Seu nome")}${a.aprovado_em ? " · " + quando(a.aprovado_em) : ""}</span></span></span>`;
     return `<li class="mc-card">${link ? `<a href="${RAIZ}anuncio/?id=${a.id}">${corpo}</a>` : `<div>${corpo}</div>`}</li>`;
   }
@@ -141,15 +157,15 @@
     if (a.edicao) { $(".mc-ed", art).hidden = false; $(".mc-ed", art).textContent = a.edicao; }
     $(".mc-preco", art).textContent = reais(a.preco);
     $(".mc-selos-l").innerHTML = `<span class="mc-selo ${esc(a.condicao)}">${esc(COND[a.condicao])}</span>${a.troca ? '<span class="mc-selo troca">Aceita troca</span>' : ""}`;
-    $(".mc-fatos").innerHTML = [["estado", "Estado", COND[a.condicao]], ["idioma", "Idioma", IDI[a.idioma]], ["caixa", "Entrega", ENT[a.entrega]], ["pino", "Onde", `${a.cidade}/${a.uf}`]]
+    $(".mc-fatos").innerHTML = [["estado", "Estado", COND[a.condicao]], ["idioma", "Idioma", IDI[a.idioma]], ["caixa", "Entrega", textoFrete(a)], ["pino", "Onde", `${a.cidade}/${a.uf}`]]
       .map(([i, t, v]) => `<div><dt>${ic(i)}${t}</dt><dd>${esc(v)}</dd></div>`).join("");
     $(".mc-vend").innerHTML = `<i class="mc-av">${esc(a.vendedor.trim()[0])}</i><div><b>${esc(a.vendedor)}</b><small>${esc(a.cidade)}/${esc(a.uf)} · anunciou ${quando(a.aprovado_em)}</small></div>`;
     if (a.estado === "vendido") {
       $(".mc-vendido").hidden = false; $(".mc-denuncia").hidden = true;
-    } else {
-      const msg = `Olá, ${a.vendedor}! Vi no Mercado da Elite o seu anúncio de ${a.jogo} por ${reais(a.preco)}. Ainda está disponível? ${location.href}`;
-      $(".mc-contato").innerHTML = (a.whatsapp ? `<a class="mc-btn zap" href="https://wa.me/${esc(a.whatsapp)}?text=${encodeURIComponent(msg)}" target="_blank" rel="noopener nofollow">${ic("zap")}Chamar no WhatsApp</a>` : "")
-        + (a.instagram ? `<a class="mc-btn ig" href="https://www.instagram.com/${esc(a.instagram)}/" target="_blank" rel="noopener nofollow">${ic("insta")}@${esc(a.instagram)} no Instagram</a>` : "");
+    } else if (a.reservado) {
+      $(".mc-reservado").hidden = false;
+    } else if (a.compra) {
+      compraAnuncio(a);
     }
     if (novo) {
       const dif = novo - a.preco, dia = new Date(jogo.dia + "T12:00:00-03:00").toLocaleDateString("pt-BR", { day: "2-digit", month: "2-digit" });
@@ -192,6 +208,54 @@
     art.removeAttribute("aria-busy");
   }
 
+  // caixa de compra do anúncio: escolha da entrega, total e a janela com os dados do comprador
+  function compraAnuncio(a) {
+    const box = $(".mc-compra"), ent = $(".mc-ent"), total = $(".mc-total"), dlg = $(".mc-compra-dlg"), form = $("form", dlg), st = $(".mc-st", dlg);
+    box.hidden = false;
+    if (a.entrega === "ambos") {
+      ent.hidden = false;
+      ent.innerHTML = `<label class="mc-op"><input type="radio" name="receber" value="envio" checked>Receber pelo correio<small>${a.frete ? "+ " + reais(a.frete) : "Frete grátis"}</small></label>`
+        + `<label class="mc-op"><input type="radio" name="receber" value="retirada">Retirar em mãos<small>${esc(a.cidade)}/${esc(a.uf)}</small></label>`;
+    }
+    const escolha = () => a.entrega === "ambos" ? $("[name=receber]:checked", ent).value : a.entrega;
+    const valor = () => a.preco + (escolha() === "envio" ? (a.frete || 0) : 0);
+    const mostra = () => {
+      const e = escolha();
+      total.innerHTML = `Total: <b>${reais(valor())}</b>${e === "envio" ? (a.frete ? ` (jogo ${reais(a.preco)} + envio ${reais(a.frete)})` : " com frete grátis") : " · retirada em mãos"}`;
+      $(".mc-comprar").lastChild.textContent = `Comprar por ${reais(valor())}`;
+    };
+    ent.addEventListener("change", mostra); mostra();
+    const dados = guarda.get("eb-mercado-comprador", {});
+    for (const k of ["nome", "email", "whatsapp"]) if (dados[k]) form.elements[k].value = dados[k];
+    form.elements.whatsapp.addEventListener("input", ev => { ev.target.value = mascaraZap(ev.target.value); });
+    $(".mc-comprar").addEventListener("click", () => {
+      st.textContent = ""; st.className = "mc-st";
+      $(".mc-resumo", dlg).innerHTML = `<b>${esc(a.jogo)}</b> · ${reais(valor())} · ${escolha() === "envio" ? "receber pelo correio" : "retirar em " + esc(a.cidade) + "/" + esc(a.uf)}`;
+      if (!dlg.showModal) return alert("Seu navegador não abre a janela de compra. Atualize o navegador para comprar.");
+      dlg.showModal(); turnstile($(".mc-ts", dlg));
+    });
+    form.addEventListener("submit", async ev => {
+      if (ev.submitter && ev.submitter.value === "cancelar") return;
+      ev.preventDefault();
+      const f = form.elements, erro = m => { st.className = "mc-st erro"; st.textContent = m; };
+      if (f.nome.value.trim().length < 2) return erro("Escreva seu nome.");
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(f.email.value.trim())) return erro("Informe um e-mail válido.");
+      if (f.whatsapp.value.replace(/\D/g, "").length < 10) return erro("Informe seu WhatsApp com DDD.");
+      if (!f.aceite.checked) return erro("Aceite as regras do Mercado para continuar.");
+      const token = tokenTs($(".mc-ts", dlg));
+      if (TS && !token) return erro("Confirme que você não é um robô (quadrinho acima).");
+      guarda.set("eb-mercado-comprador", { nome: f.nome.value.trim(), email: f.email.value.trim(), whatsapp: f.whatsapp.value });
+      const botao = ev.submitter || $("button[value=pagar]", form); botao.disabled = true;
+      st.className = "mc-st"; st.textContent = "Abrindo o pagamento…";
+      try {
+        const r = await postJSON("/v1/mercado/comprar", { id: a.id, nome: f.nome.value.trim(), email: f.email.value.trim(), whatsapp: f.whatsapp.value,
+          entrega: escolha(), aceite: "1", isca: f.site.value, turnstile: token });
+        compras.poe({ p: r.pedido, k: r.chave, jogo: a.jogo, criado: new Date().toISOString() });
+        location.href = r.url;
+      } catch (ex) { erro(ex.message); resetTs($(".mc-ts", dlg)); botao.disabled = false; }
+    });
+  }
+
   /* ---------- reduzir foto no aparelho: lado maior de até 1600 px, webp (ou jpeg) de até ~650 KB ---------- */
   async function reduz(arquivo) {
     let fonte;
@@ -231,6 +295,13 @@
     return `(${d.slice(0, 2)}) ${d.slice(2, meio)}-${d.slice(meio)}`;
   };
 
+  // leva o vendedor para a página do Mercado Pago autorizar a conta dele; a volta cai em /mercado/meu/?mp=...
+  async function conectaMP(id, t, st) {
+    st.className = st.className.replace(/ ?(erro|ok)/g, ""); st.textContent = "Abrindo o Mercado Pago…";
+    try { const { url } = await postJSON("/v1/mercado/mp/conectar", { id, t }); location.href = url; }
+    catch (ex) { st.className += " erro"; st.textContent = ex.message; }
+  }
+
   /* ---------- anunciar ---------- */
   function anunciar() {
     const form = $(".mc-form"), prev = $(".mc-prev .mc-grade"), stEnvio = $(".mc-st-envio"), stFotos = $(".mc-st-fotos");
@@ -240,7 +311,7 @@
     let processando = 0;
 
     // rascunho dos campos de texto neste aparelho (fotos não)
-    const CAMPOS_RASCUNHO = ["jogo", "jogo_slug", "edicao", "preco_txt", "idioma", "descricao", "vendedor", "cidade", "uf", "whatsapp", "instagram", "email"];
+    const CAMPOS_RASCUNHO = ["jogo", "jogo_slug", "edicao", "preco_txt", "frete_txt", "idioma", "descricao", "vendedor", "cidade", "uf", "whatsapp", "instagram", "email"];
     const rasc = guarda.get("eb-mercado-rascunho", {});
     for (const k of CAMPOS_RASCUNHO) if (rasc[k] && form.elements[k]) form.elements[k].value = rasc[k];
     if (rasc.condicao) { const r = form.querySelector(`[name=condicao][value="${rasc.condicao}"]`); if (r) r.checked = true; }
@@ -258,7 +329,14 @@
         preco: centavos(f.preco_txt.value) || 0, troca: f.troca.checked, entrega: (form.querySelector("[name=entrega]:checked") || {}).value,
         cidade: f.cidade.value.trim(), uf: f.uf.value, vendedor: f.vendedor.value.trim(), _previa: fotos.map(x => x.url) };
     }
-    const atualizaPrevia = () => { prev.innerHTML = cartao(dados(), { link: false }); };
+    const campoFrete = $(".mc-frete", form), liquido = $(".mc-liquido", form);
+    const atualizaPrevia = () => {
+      const d = dados();
+      campoFrete.hidden = d.entrega === "retirada";
+      d.frete = d.entrega === "retirada" ? null : (form.elements.frete_txt.value.trim() === "" ? undefined : centavos(form.elements.frete_txt.value) || 0);
+      prev.innerHTML = cartao(d, { link: false });
+      liquido.textContent = d.preco >= 100 ? `Neste anúncio: você recebe ${reais(d.preco - Math.round(d.preco * 0.05))} pelo jogo${d.frete ? ` + ${reais(d.frete)} do envio` : ""}, antes da tarifa do Mercado Pago.` : "";
+    };
     const contDesc = () => { $(".mc-cont-t").textContent = `${form.elements.descricao.value.length.toLocaleString("pt-BR")}/1.500`; };
 
     // busca do jogo na nossa base
@@ -333,16 +411,8 @@
     form.addEventListener("input", ev => { if (ev.target.name === "descricao") contDesc(); if (ev.target.type !== "file") { atualizaPrevia(); salvaRascunho(); } });
     form.addEventListener("change", () => { atualizaPrevia(); salvaRascunho(); });
 
-    // anti-robô: o Turnstile da Cloudflare só é baixado quando a pessoa começa a preencher
-    let widget = null, carregado = false;
-    const turnstile = () => {
-      if (!TS || carregado) return;
-      carregado = true;
-      window.__ebTsM = () => { widget = window.turnstile.render($(".mc-ts"), { sitekey: TS, language: "pt-br", theme: "light" }); };
-      const s = document.createElement("script");
-      s.src = "https://challenges.cloudflare.com/turnstile/v0/api.js?onload=__ebTsM&render=explicit"; s.async = true; document.head.append(s);
-    };
-    form.addEventListener("focusin", turnstile, { once: true });
+    const alvoTs = $(".mc-ts", form);
+    form.addEventListener("focusin", () => turnstile(alvoTs), { once: true });
 
     const erro = (msg, campo) => {
       stEnvio.className = "mc-st mc-st-envio erro"; stEnvio.textContent = msg;
@@ -357,18 +427,21 @@
       if (!fotos.length) { add.scrollIntoView({ block: "center" }); return erro("Coloque pelo menos uma foto do jogo."); }
       if (!form.querySelector("[name=condicao]:checked")) { form.querySelector("[name=condicao]").scrollIntoView({ block: "center" }); return erro("Escolha o estado do jogo."); }
       if (!(preco >= 100 && preco <= 10000000)) return erro("Informe um preço entre R$ 1 e R$ 100.000.", "preco_txt");
+      const entrega = form.querySelector("[name=entrega]:checked").value, freteTxt = f.frete_txt.value.trim(), frete = freteTxt === "" ? NaN : centavos(freteTxt);
+      if (entrega !== "retirada" && !(frete >= 0 && frete <= 50000)) return erro("Informe o valor do envio (0 para frete grátis, até R$ 500).", "frete_txt");
       if (f.vendedor.value.trim().length < 2) return erro("Escreva seu nome ou apelido.", "vendedor");
       if (f.cidade.value.trim().length < 2) return erro("Informe a cidade.", "cidade");
       if (!f.uf.value) return erro("Escolha o estado (UF).", "uf");
       if (zapD && (zapD.length < 10 || zapD.length > 13)) return erro("Esse WhatsApp não parece válido. Use DDD + número.", "whatsapp");
       if (!zapD && !f.instagram.value.trim()) return erro("Deixe pelo menos um contato: WhatsApp ou Instagram.", "whatsapp");
       if (!f.aceite.checked) return erro("Para anunciar, aceite as regras do Mercado.", "aceite");
-      const token = widget !== null && window.turnstile ? window.turnstile.getResponse(widget) : "";
-      if (TS && !token) { turnstile(); return erro("Confirme que você não é um robô (quadrinho acima do botão)."); }
+      const token = tokenTs(alvoTs);
+      if (TS && !token) { turnstile(alvoTs); return erro("Confirme que você não é um robô (quadrinho acima do botão)."); }
       const fd = new FormData();
       for (const k of ["jogo", "jogo_slug", "edicao", "idioma", "descricao", "vendedor", "cidade", "uf", "whatsapp", "instagram", "email"]) fd.append(k, f[k].value.trim());
       fd.append("condicao", form.querySelector("[name=condicao]:checked").value);
-      fd.append("entrega", form.querySelector("[name=entrega]:checked").value);
+      fd.append("entrega", entrega);
+      if (entrega !== "retirada") fd.append("frete", String(frete));
       fd.append("preco", String(preco)); fd.append("troca", f.troca.checked ? "1" : "0"); fd.append("aceite", "1");
       fd.append("isca", f.site.value); fd.append("turnstile", token);
       fotos.forEach((x, i) => fd.append("foto", x.blob, `foto-${i + 1}.${x.blob.type === "image/webp" ? "webp" : "jpg"}`));
@@ -384,10 +457,11 @@
         const ok = $(".mc-ok");
         $("input", ok).value = link;
         $(".mc-zap-eu", ok).href = "https://wa.me/?text=" + encodeURIComponent(`Meu link para gerenciar o anúncio de ${f.jogo.value.trim()} no Mercado da Elite (não compartilhe): ${link}`);
+        $(".mc-conectar", ok).onclick = () => conectaMP(r.id, r.token, $(".mc-st-con", ok));
         $(".mc-form-l").hidden = true; ok.hidden = false; ok.scrollIntoView({ block: "start" }); $("h2", ok).setAttribute("tabindex", "-1"); $("h2", ok).focus();
       } catch (ex) {
         erro(ex.message || "Não deu para enviar agora. Tente de novo.");
-        if (window.turnstile && widget !== null) window.turnstile.reset(widget);
+        resetTs(alvoTs);
       } finally { botao.disabled = false; }
     });
     $(".mc-copiar").addEventListener("click", async ev => {
@@ -405,13 +479,19 @@
     const m = location.hash.match(/^#(\d+)\.([A-Za-z0-9_-]{20,64})$/);
     if (m && !meus.some(x => String(x.id) === m[1])) { meus.unshift({ id: +m[1], t: m[2], jogo: "", criado: new Date().toISOString() }); }
     if (m && guarda.set("eb-mercado-meus", meus)) history.replaceState(null, "", location.pathname);  // guardado no aparelho: tira o segredo do endereço
+    const mpVolta = new URLSearchParams(location.search).get("mp");
+    const AVISO_MP = { ok: ["ok", "Conta do Mercado Pago conectada! Assim que o anúncio for aprovado, ele aparece no Mercado."],
+      recusado: ["erro", "A conexão com o Mercado Pago foi cancelada. Sem ela o anúncio não aparece no Mercado."],
+      expirou: ["erro", "A conexão demorou demais e expirou. Tente conectar de novo."], erro: ["erro", "Não conseguimos conectar a conta do Mercado Pago. Tente de novo."] };
+    if (AVISO_MP[mpVolta]) { st.className = `mc-st mc-st-meu ${AVISO_MP[mpVolta][0]}`; st.textContent = AVISO_MP[mpVolta][1]; history.replaceState(null, "", location.pathname); }
     const ESTADO = { pendente: "Em análise", duvidoso: "Em análise", aprovado: "No ar", vendido: "Vendido", reprovado: "Não aprovado", removido: "Removido", vencido: "Vencido" };
     async function desenha() {
       if (!meus.length) { ul.innerHTML = ""; vazio.hidden = false; return; }
-      vazio.hidden = true; st.className = "mc-st mc-st-meu"; st.textContent = "Carregando…";
-      const res = await Promise.all(meus.map(x => postJSON("/v1/mercado/meu", { id: x.id, t: x.t }).then(d => ({ x, a: d.anuncio, prazo: d.prazo_dias })).catch(ex => ({ x, erro: ex }))));
-      st.textContent = "";
-      ul.innerHTML = res.map(({ x, a, erro }) => {
+      vazio.hidden = true;
+      const aviso = st.textContent; if (!aviso) { st.className = "mc-st mc-st-meu"; st.textContent = "Carregando…"; }
+      const res = await Promise.all(meus.map(x => postJSON("/v1/mercado/meu", { id: x.id, t: x.t }).then(d => ({ x, a: d.anuncio, vendas: d.vendas || [], pagamento: d.pagamento })).catch(ex => ({ x, erro: ex }))));
+      if (!aviso) st.textContent = "";
+      ul.innerHTML = res.map(({ x, a, erro, vendas, pagamento }) => {
         if (erro) return `<li class="mc-meu" data-id="${x.id}"><span class="sem"></span><div><h3>${esc(x.jogo || "Anúncio nº " + x.id)}</h3><span class="est removido">${erro.status === 404 ? "Removido" : "Sem conexão"}</span><p>${erro.status === 404 ? "Este anúncio foi removido ou o link não vale mais." : "Não conseguimos falar com o serviço agora."}</p></div><div class="acs"><button type="button" data-acao="esquecer">${ic("nao")}Tirar desta lista</button></div></li>`;
         const vencido = a.estado === "aprovado" && a.expira && Date.parse(a.expira.replace(" ", "T") + "Z") < Date.now();
         const est = vencido ? "vencido" : a.estado;
@@ -420,21 +500,29 @@
         else if (est === "pendente" || est === "duvidoso") info = "Esperando a moderação. Ele aparece no Mercado assim que for aprovado.";
         else if (est === "reprovado") info = a.motivo ? `Motivo: ${a.motivo}` : "O anúncio não seguiu as regras do Mercado.";
         else if (est === "vencido") info = "Passou o prazo de 60 dias. Renove para ele voltar ao ar.";
-        else if (est === "vendido") info = "Marcado como vendido. O contato não aparece mais.";
+        else if (est === "vendido") info = vendas.some(v => v.estado === "pago") ? "Vendido pelo site. Combine a entrega com o comprador." : "Marcado como vendido.";
         const acs = [];
         if (est === "aprovado") acs.push(`<a href="${RAIZ}anuncio/?id=${a.id}">${ic("ver")}Ver anúncio</a>`);
         if (["aprovado", "pendente", "duvidoso", "vencido"].includes(est)) acs.push(`<button type="button" data-acao="editar-preco">${ic("lapis")}Mudar preço</button>`);
         if (est === "aprovado" || est === "vencido") acs.push(`<button type="button" data-acao="renovar">${ic("relogio")}Renovar por mais 60 dias</button>`);
-        if (est === "aprovado") acs.push(`<button type="button" data-acao="vendido">${ic("vendido")}Marcar como vendido</button>`);
         acs.push(`<button type="button" class="perigo" data-acao="remover">${ic("lixo")}Remover</button>`);
+        const ativo = ["aprovado", "pendente", "duvidoso", "vencido"].includes(est);
+        const mpb = !ativo ? "" : a.mp_conectado ? `<div class="mc-mp ok">${ic("estado")}Mercado Pago conectado: você recebe as vendas na sua conta.</div>`
+          : `<div class="mc-mp">${pagamento === false ? "Os pagamentos do Mercado ainda estão sendo ligados. Volte em breve para conectar sua conta." : `Conecte sua conta do Mercado Pago para o anúncio aparecer. <button type="button" data-acao="conectar">Conectar Mercado Pago</button>`}</div>`;
+        const ESTV = { processando: "pagamento em análise", pago: "pago", devolvido: "devolvido ao comprador" };
+        const vendasH = vendas.length ? `<ul class="mc-vendas">${vendas.map(v => `<li><b>Venda nº ${v.id}: ${ESTV[v.estado]}</b> · ${reais(v.valor + v.frete)} (${v.entrega === "envio" ? "envio" : "retirada"})<br>`
+          + (v.estado === "pago" ? `Comprador: ${esc(v.comprador)} · <a href="https://wa.me/${esc(v.whatsapp)}?text=${encodeURIComponent(`Olá, ${v.comprador}! Aqui é ${a.vendedor}, do Mercado da Elite. Recebi o pagamento de ${a.jogo}. Vamos combinar a ${v.entrega === "envio" ? "entrega" : "retirada"}?`)}" target="_blank" rel="noopener">chamar no WhatsApp</a><br>`
+             + `Você recebe ${reais(v.valor - v.taxa + v.frete)} no Mercado Pago (comissão da Elite ${reais(v.taxa)}), menos a tarifa do Mercado Pago.` : `Comprador: ${esc(v.comprador)}. O contato aparece quando o pagamento for aprovado.`)
+          + `</li>`).join("")}</ul>` : "";
         return `<li class="mc-meu" data-id="${a.id}">${a.fotos[0] ? `<img src="${foto(a.fotos[0])}" alt="">` : '<span class="sem"></span>'}<div><h3>${esc(a.jogo)}</h3><span class="est ${est}">${ESTADO[est]}</span><p><b>${reais(a.preco)}</b> · ${esc(COND[a.condicao])} · ${esc(a.cidade)}/${esc(a.uf)}</p><p>${esc(info)}</p></div>`
-          + `<div class="acs">${acs.join("")}</div><div class="preco-ed" hidden><label>Novo preço R$ <input inputmode="decimal" value="${(a.preco / 100).toLocaleString("pt-BR", { minimumFractionDigits: 2 })}"></label><button type="button" class="mc-btn pri" data-acao="preco" style="min-height:40px">Salvar</button></div></li>`;
+          + mpb + vendasH + `<div class="acs">${acs.join("")}</div><div class="preco-ed" hidden><label>Novo preço R$ <input inputmode="decimal" value="${(a.preco / 100).toLocaleString("pt-BR", { minimumFractionDigits: 2 })}"></label><button type="button" class="mc-btn pri" data-acao="preco" style="min-height:40px">Salvar</button></div></li>`;
       }).join("");
     }
     ul.addEventListener("click", async ev => {
       const b = ev.target.closest("[data-acao]"); if (!b) return;
       const li = b.closest(".mc-meu"), id = +li.dataset.id, x = meus.find(y => y.id === id), acao = b.dataset.acao;
       if (acao === "esquecer") { meus = meus.filter(y => y.id !== id); guarda.set("eb-mercado-meus", meus); return desenha(); }
+      if (acao === "conectar") return conectaMP(id, x.t, st);
       if (acao === "editar-preco") { const p = $(".preco-ed", li); p.hidden = !p.hidden; if (!p.hidden) $("input", p).focus(); return; }
       if (acao === "remover" && !confirm("Remover o anúncio de vez? As fotos são apagadas e não dá para desfazer.")) return;
       if (acao === "vendido" && !confirm("Marcar como vendido? O contato deixa de aparecer no anúncio.")) return;
@@ -449,7 +537,55 @@
       } catch (e2) { st.className = "mc-st mc-st-meu erro"; st.textContent = e2.message; b.disabled = false; }
     });
     desenha();
+    // compras feitas neste aparelho
+    const cs = compras.ler();
+    if (cs.length) {
+      $(".mc-compras").hidden = false;
+      $(".mc-compras-l").innerHTML = cs.map(c => `<li class="mc-meu"><span class="sem"></span><div><h3>${esc(c.jogo)}</h3><p>Pedido nº ${c.p} · ${quando(c.criado.replace("T", " ").slice(0, 19))}</p></div><div class="acs"><a href="${RAIZ}pedido/?p=${c.p}&k=${encodeURIComponent(c.k)}">${ic("ver")}Ver pedido</a></div></li>`).join("");
+    }
   }
 
-  ({ lista, anuncio, anunciar, meu })[raiz.dataset.pagina]?.();
+  /* ---------- pedido (volta do Mercado Pago) ---------- */
+  async function pedido() {
+    const q = new URLSearchParams(location.search), p = Number(q.get("p")), k = q.get("k") || "";
+    const pagamento = q.get("payment_id") || q.get("collection_id") || "";
+    const sec = $(".mc-pedido"), erro = $(".mc-erro");
+    const ESTP = { aguardando: "Aguardando pagamento", processando: "Pagamento em análise", pago: "Pago", cancelado: "Não concluído", devolvido: "Devolvido" };
+    if (!p || !k) { sec.hidden = true; erro.hidden = false; return; }
+    let voltas = 0;
+    async function carrega() {
+      let d;
+      try { d = (await postJSON("/v1/mercado/pedido", { p, k, pagamento })).pedido; }
+      catch (ex) { if (ex.status === 404) { sec.hidden = true; erro.hidden = false; } return; }
+      const a = d.anuncio, total = d.valor + d.frete;
+      compras.poe({ p, k, jogo: a.jogo, criado: compras.ler().find(c => c.p === p)?.criado || new Date().toISOString() });
+      document.title = `${ESTP[d.estado]}: ${a.jogo} · Mercado da Elite`;
+      $(".mc-ped-foto").innerHTML = a.foto ? `<img src="${foto(a.foto)}" alt="">` : "";
+      const est = $(".est", sec); est.className = `est ${d.estado}`; est.textContent = ESTP[d.estado];
+      $(".mc-tit", sec).textContent = a.jogo;
+      $(".mc-ped-sub").textContent = `Pedido nº ${d.id} · vendido por ${a.vendedor}, ${a.cidade}/${a.uf}`;
+      $(".mc-ped-val").innerHTML = [["vendido", "Jogo", reais(d.valor)], ["caixa", d.entrega === "envio" ? "Envio" : "Retirada", d.entrega === "envio" ? (d.frete ? reais(d.frete) : "grátis") : `${a.cidade}/${a.uf}`],
+        ["estado", "Total", reais(total)], ["relogio", "Pedido em", dataLonga(d.criado)]].map(([i, t, v]) => `<div><dt>${ic(i)}${t}</dt><dd>${esc(v)}</dd></div>`).join("");
+      const msg = $(".mc-ped-msg"), cont = $(".mc-contato", sec);
+      cont.innerHTML = "";
+      if (d.estado === "pago") {
+        msg.innerHTML = `<p><b>Pagamento aprovado!</b> O dinheiro foi para o vendedor pelo Mercado Pago e ele recebeu o seu WhatsApp. Se quiser, chame ${esc(a.vendedor)} agora para combinar ${d.entrega === "envio" ? "o envio" : "a retirada"}.</p>`;
+        const texto = `Olá, ${a.vendedor}! Comprei o ${a.jogo} no Mercado da Elite (pedido nº ${d.id}). Vamos combinar ${d.entrega === "envio" ? "o envio" : "a retirada"}?`;
+        cont.innerHTML = (a.whatsapp ? `<a class="mc-btn zap" href="https://wa.me/${esc(a.whatsapp)}?text=${encodeURIComponent(texto)}" target="_blank" rel="noopener">${ic("zap")}Chamar ${esc(a.vendedor)} no WhatsApp</a>` : "")
+          + (a.instagram ? `<a class="mc-btn ig" href="https://www.instagram.com/${esc(a.instagram)}/" target="_blank" rel="noopener">${ic("insta")}@${esc(a.instagram)} no Instagram</a>` : "");
+      } else if (d.estado === "aguardando" || d.estado === "processando") {
+        msg.innerHTML = `<p>${d.estado === "processando" ? "O Mercado Pago está confirmando o pagamento. Isso costuma levar poucos minutos." : "Ainda não recebemos a confirmação do pagamento. Se você já pagou, espere um pouco: esta página atualiza sozinha."} O contato do vendedor aparece aqui assim que o pagamento for aprovado.</p>`;
+        if (voltas++ < 40) setTimeout(carrega, 8000);
+      } else if (d.estado === "devolvido") {
+        msg.innerHTML = "<p>O pagamento deste pedido foi devolvido pelo Mercado Pago.</p>";
+      } else {
+        msg.innerHTML = `<p>O pagamento não foi concluído e nada foi cobrado por este pedido. Se ainda quiser o jogo, volte ao anúncio e tente de novo.</p>`;
+        cont.innerHTML = `<a class="mc-btn pri" href="${RAIZ}anuncio/?id=${a.id}">Voltar ao anúncio</a>`;
+      }
+      sec.removeAttribute("aria-busy");
+    }
+    carrega();
+  }
+
+  ({ lista, anuncio, anunciar, meu, pedido })[raiz.dataset.pagina]?.();
 })();

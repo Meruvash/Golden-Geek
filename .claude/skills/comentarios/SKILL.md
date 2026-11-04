@@ -39,9 +39,11 @@ Os anúncios do Mercado (`/mercado/`, código em `worker/src/mercado.js`) entram
 
 **Aprovar** (todas): é jogo de tabuleiro, card game, expansão ou acessório de jogo; as fotos mostram o item de verdade (não só a imagem da caixa copiada da internet); o preço é coerente com o jogo; nome, descrição e contato não trazem propaganda, link, ofensa nem dado de terceiros.
 
-**Reprovar**: pirataria, falsificação ou "print and play" vendido como original; produto que não é jogo; rifa, sorteio, pedido de doação; loja ou revendedor com vários itens disfarçado de pessoa física; link para loja ou site; fotos sem relação com o anúncio; ofensa ou conteúdo sexual.
+**Reprovar**: pedido de pagamento por fora do site (Pix, depósito, "chama no zap para fechar") na descrição, no nome ou na edição; pirataria, falsificação ou "print and play" vendido como original; produto que não é jogo; rifa, sorteio, pedido de doação; loja ou revendedor com vários itens disfarçado de pessoa física; link para loja ou site; fotos sem relação com o anúncio; ofensa ou conteúdo sexual.
 
 **Duvidoso**: só imagem oficial da caixa (pode ser lacrado, mas pede conferência), preço muito abaixo do normal (possível golpe), descrição que menciona Pix antecipado ou pressa, vários anúncios iguais do mesmo vendedor, qualquer hesitação.
+
+A venda é paga pelo site, pelo Mercado Pago, direto na conta do vendedor; a Elite fica com 5% do preço do jogo (`worker/src/mercadopago.js`). Anúncio aprovado só aparece depois que o vendedor conecta a conta do Mercado Pago (o painel mostra "não conectado"). A aba **Vendas** do painel lista os pedidos (comprador, valor, comissão, estado do pagamento); denúncias de pedido de pagamento por fora vão para duvidoso e o editor decide.
 
 ## Instalação (uma vez)
 

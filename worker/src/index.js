@@ -152,7 +152,7 @@ input{font:inherit;padding:10px 12px;border-radius:8px;border:1px solid #3a3f48;
 .vazio{color:#a7afbb;padding:20px 0}.abas{flex-wrap:wrap}.fts{display:flex;gap:6px;overflow-x:auto;margin:8px 0}.fts a{flex:none}.fts img{width:120px;height:120px;object-fit:cover;border-radius:8px;background:#222;display:block}.ft{display:grid;grid-template-columns:max-content 1fr;gap:2px 12px;font-size:.92rem;margin:6px 0}.ft dt{color:#a7afbb}.ft dd{margin:0}.ft a{color:#e3b23c}.preco{font-size:1.3rem;font-weight:800;color:#e3b23c}.den{color:#ff8094;font-weight:700}.b.duv{background:#5a3d00;border-color:#5a3d00}</style></head><body><main>
 <h1>Moderação</h1><p class="sub">Elite Boardgamers · comentários e Mercado: nada aparece no site sem estar aprovado.</p>
 <form id="login" hidden><p>Senha de moderação:</p><input id="senha" type="password" autocomplete="current-password"> <button class="b">Entrar</button></form>
-<div id="app" hidden><div class="abas"><button data-aba="fila" aria-pressed="true">Comentários esperando</button><button data-aba="recentes" aria-pressed="false">Comentários recentes</button><button data-aba="mercado/fila" aria-pressed="false">Mercado esperando</button><button data-aba="mercado/recentes" aria-pressed="false">Mercado recentes</button><button class="b" id="sair" type="button">Sair</button></div><div id="lista"></div></div>
+<div id="app" hidden><div class="abas"><button data-aba="fila" aria-pressed="true">Comentários esperando</button><button data-aba="recentes" aria-pressed="false">Comentários recentes</button><button data-aba="mercado/fila" aria-pressed="false">Mercado esperando</button><button data-aba="mercado/recentes" aria-pressed="false">Mercado recentes</button><button data-aba="mercado/pedidos" aria-pressed="false">Vendas</button><button class="b" id="sair" type="button">Sair</button></div><div id="lista"></div></div>
 <script>
 const $=s=>document.querySelector(s),esc=t=>String(t??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'})[c]);
 let aba='fila';const tok=()=>sessionStorage.getItem('mod');
@@ -166,6 +166,8 @@ function cartaoAnuncio(a){const fts=a.fotos.map(k=>'<a href="/v1/mercado/foto/'+
  +'<div><b>'+esc(a.jogo)+'</b>'+(a.edicao?' · '+esc(a.edicao):'')+' <span class="preco">'+reais(a.preco)+'</span></div><div class="fts">'+fts+'</div>'
  +'<dl class="ft"><dt>Estado</dt><dd>'+esc(COND[a.condicao]||a.condicao)+' · '+esc(IDI[a.idioma]||a.idioma)+'</dd><dt>Entrega</dt><dd>'+esc(ENT[a.entrega]||a.entrega)+(a.troca?' · aceita troca':'')+'</dd>'
  +'<dt>Onde</dt><dd>'+esc(a.cidade)+'/'+esc(a.uf)+'</dd><dt>Vendedor</dt><dd>'+esc(a.vendedor)+(a.email?' · '+esc(a.email):'')+'</dd>'
+ +'<dt>Mercado Pago</dt><dd>'+(a.mp_usuario?'conectado (conta '+esc(a.mp_usuario)+')':'<b style="color:#ff8094">não conectado: não aparece no site</b>')+'</dd>'
+ +'<dt>Frete</dt><dd>'+(a.frete==null?'só retirada':a.frete?reais(a.frete):'grátis')+'</dd>'
  +'<dt>Contato</dt><dd>'+(a.whatsapp?'<a href="https://wa.me/'+esc(a.whatsapp)+'" target="_blank">WhatsApp '+esc(a.whatsapp)+'</a> ':'')+(a.instagram?'<a href="https://instagram.com/'+esc(a.instagram)+'" target="_blank">@'+esc(a.instagram)+'</a>':'')+'</dd></dl>'
  +(a.descricao?'<div class="txt">'+esc(a.descricao)+'</div>':'')+(a.denuncias?'<div class="den">'+a.denuncias+' denúncia(s): '+esc(a.motivos)+'</div>':'')
  +(a.parecer?'<div class="parecer">Parecer: '+esc(a.parecer)+(a.decidido_por?' ('+esc(a.decidido_por)+')':'')+'</div>':'')
@@ -173,9 +175,13 @@ function cartaoAnuncio(a){const fts=a.fotos.map(k=>'<a href="/v1/mercado/foto/'+
 function cartaoComentario(c){return '<div class="c '+c.estado+'" data-id="'+c.id+'"><div class="meta">'+esc(c.estado)+' · '+esc(c.criado)+' UTC · <a href="https://eliteboardgamers.com.br'+esc(c.pagina)+'" target="_blank">'+esc(c.pagina)+'</a></div>'
  +'<div><b>'+esc(c.nome)+'</b>'+(c.email?' · '+esc(c.email):'')+'</div><div class="txt">'+esc(c.texto)+'</div>'+(c.parecer?'<div class="parecer">Parecer: '+esc(c.parecer)+(c.decidido_por?' ('+esc(c.decidido_por)+')':'')+'</div>':'')
  +'<div class="acoes"><button class="b ok" data-e="aprovado">Aprovar</button><button class="b no" data-e="reprovado">Reprovar</button></div></div>'}
+const EP={aguardando:'aguardando pagamento',processando:'pagamento em análise',pago:'pago',cancelado:'cancelado',devolvido:'devolvido'};
+function cartaoPedido(p){return '<div class="c '+(p.estado==='pago'?'aprovado':p.estado==='cancelado'?'reprovado':'pendente')+'"><div class="meta">pedido #'+p.id+' · '+esc(EP[p.estado]||p.estado)+' · '+esc(p.criado)+' UTC'+(p.pagamento?' · pagamento MP '+esc(p.pagamento):'')+'</div>'
+ +'<div><b>'+esc(p.jogo)+'</b> <span class="preco">'+reais(p.valor+p.frete)+'</span></div><dl class="ft"><dt>Comissão</dt><dd>'+reais(p.taxa)+' (5% de '+reais(p.valor)+')</dd>'
+ +'<dt>Vendedor</dt><dd>'+esc(p.vendedor)+' · anúncio #'+p.anuncio+'</dd><dt>Comprador</dt><dd>'+esc(p.comprador)+' · '+esc(p.email)+(p.whatsapp?' · '+esc(p.whatsapp):'')+'</dd><dt>Entrega</dt><dd>'+esc(p.entrega)+(p.frete?' ('+reais(p.frete)+')':'')+'</dd></dl></div>'}
 async function carrega(){const r=await api(aba);if(r.status===401){sessionStorage.removeItem('mod');return entrar()}
- const d=await r.json();$('#app').hidden=false;$('#login').hidden=true;const merc=aba.startsWith('mercado/');const itens=merc?d.anuncios:d.comentarios;
- $('#lista').innerHTML=itens.length?itens.map(merc?cartaoAnuncio:cartaoComentario).join(''):'<p class="vazio">Nada esperando decisão.</p>'}
+ const d=await r.json();$('#app').hidden=false;$('#login').hidden=true;const ped=aba==='mercado/pedidos',merc=aba.startsWith('mercado/');const itens=ped?d.pedidos:merc?d.anuncios:d.comentarios;
+ $('#lista').innerHTML=itens.length?itens.map(ped?cartaoPedido:merc?cartaoAnuncio:cartaoComentario).join(''):'<p class="vazio">'+(ped?'Nenhuma venda ainda.':'Nada esperando decisão.')+'</p>'}
 function entrar(){$('#app').hidden=true;$('#login').hidden=false;$('#senha').focus()}
 $('#login').addEventListener('submit',e=>{e.preventDefault();sessionStorage.setItem('mod',$('#senha').value);carrega()});
 $('#sair').addEventListener('click',()=>{sessionStorage.removeItem('mod');entrar()});

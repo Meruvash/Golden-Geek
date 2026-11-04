@@ -5,6 +5,10 @@ Precisa de duas variáveis no ambiente (nunca no código nem no chat):
   CLOUDFLARE_API_TOKEN_COMENTARIOS  chave com Workers Scripts, D1 e Turnstile (editar) na conta e
                                     Workers Routes e DNS (editar) na zona eliteboardgamers.com.br
   MODERACAO_SENHA                   senha do painel (24+ caracteres); sem ela, o instalador gera uma e a mostra uma vez
+Para o pagamento do Mercado da Elite (opcional; sem elas o Mercado funciona, mas o botão Comprar não aparece):
+  MP_CLIENT_ID e MP_CLIENT_SECRET   credenciais de produção da aplicação no Mercado Pago Developers, com o fluxo
+                                    PKCE ligado e a URL de redirecionamento https://api.eliteboardgamers.com.br/v1/mercado/mp/retorno
+  (a chave que cifra os tokens dos vendedores, MP_CHAVE, é gerada uma vez só e nunca é trocada: trocar desconectaria todos)
 Passos (pode rodar de novo sem estragar nada): banco D1 + tabelas, verificador anti-robô (Turnstile),
 publicação do worker em api.eliteboardgamers.com.br, segredos, conteudo/interacoes.json e um teste no ar.
 Depois: python3 tools/build_home.py para as páginas ganharem a seção e o Mercado (/mercado/).
@@ -76,6 +80,16 @@ def main():
     wrangler("deploy", token=token)
     wrangler("secret", "put", "TURNSTILE_SECRET", token=token, entrada=detalhe["secret"])
     wrangler("secret", "put", "MODERACAO_TOKEN", token=token, entrada=senha)
+    mp_id, mp_segredo = os.environ.get("MP_CLIENT_ID"), os.environ.get("MP_CLIENT_SECRET")
+    if mp_id and mp_segredo:
+        wrangler("secret", "put", "MP_CLIENT_ID", token=token, entrada=mp_id)
+        wrangler("secret", "put", "MP_CLIENT_SECRET", token=token, entrada=mp_segredo)
+        if '"MP_CHAVE"' not in wrangler("secret", "list", token=token):  # a lista sai em JSON, com os nomes entre aspas
+            import secrets
+            wrangler("secret", "put", "MP_CHAVE", token=token, entrada=secrets.token_urlsafe(32))
+        print("ok pagamento do Mercado (Mercado Pago) ligado")
+    else:
+        print("⚠️ sem MP_CLIENT_ID/MP_CLIENT_SECRET: o Mercado abre sem o botão Comprar até as credenciais serem gravadas")
     print("ok worker publicado em", API)
 
     # 4. liga a seção nas páginas
