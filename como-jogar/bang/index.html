@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Como jogar BANG!: regras passo a passo | Elite Boardgamers</title>
+<meta name="description" content="Regras de BANG! passo a passo, conferidas no manual da Galápagos: identidades, turno, distância e armas, Barril, Prisão, Dinamite e fim da partida.">
+<link rel="canonical" href="https://eliteboardgamers.com.br/como-jogar/bang/">
+<meta name="robots" content="max-image-preview:large">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Como jogar BANG!">
+<meta property="og:description" content="Regras de BANG! passo a passo, conferidas no manual da Galápagos: identidades, turno, distância e armas, Barril, Prisão, Dinamite e fim da partida.">
+<meta property="og:url" content="https://eliteboardgamers.com.br/como-jogar/bang/">
+<meta property="og:image" content="https://eliteboardgamers.com.br/como-jogar/bang/fotos/capa-1.webp">
+<link rel="icon" href="../../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32.png">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<link rel="preload" href="../../fontes/public-sans.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:"Public Sans";src:url(../../fontes/public-sans.woff2) format("woff2");font-weight:400 800;font-style:normal;font-display:swap}
+@font-face{font-family:"Public Sans";src:url(../../fontes/public-sans-italic.woff2) format("woff2");font-weight:400;font-style:italic;font-display:swap}
+/* Layout: o mesmo da página de lição do Discipulado (O Paladino): fundo preto (pedido do editor: preto no lugar do azul), faixa do banner, navegação fixa, coluna central de 760px com cartões claros de papel, filete dourado sobre os títulos de seção. Visual único (o site não tem tema claro). */
+:root{
+  color-scheme:dark;
+  --ground:#000; --panel:#0f1115; --panel2:#171a20; --line:#262a32; --line2:#2e333c;
+  --ink:#eceff3; --muted:#a1a9b5; --gold:#e3b23c;
+  --paper:#f4f5f7; --paper-ink:#14171c; --paper-muted:#5a6270; --paper-line:#dde1e7; --paper-text:#3a414c;
+  --link:#1f5fae; --ok:#1b7a45; --ok-bg:#e3f4ea; --cinza-bg:#eceef1; --ouro-bg:#fff4d1; --ouro-ink:#8a5f00;
+  --erro:#b3263e; --faixa-ouro:#1d1606; --ouro-claro:#f1ead6; --check:#4cc38a;
+  --f-body:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box}
+html{scroll-padding-top:64px}
+body{margin:0;background:var(--ground);color:var(--ink);font:16px/1.55 var(--f-body)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--panel)}
+h1,h2,h3,p,ul,ol,figure{margin:0}
+a{color:var(--link);text-underline-offset:.18em}
+::selection{background:var(--gold);color:#000}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px;border-radius:3px}
+.gut{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+
+.skip{position:absolute;left:-999px}.skip:focus{left:12px;top:8px;z-index:40;background:var(--gold);color:#000;padding:6px 10px}
+.aviso{background:var(--gold);color:#000;font-weight:800;font-size:.8rem;text-align:center}
+.aviso .gut{padding-block:6px}
+.topo{background:var(--ground)}
+.topo img{display:block;width:100%;max-width:640px;height:auto;margin:0 auto}
+.nav{background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line);position:sticky;top:env(safe-area-inset-top,0px);z-index:20}
+.nav ul{max-width:1120px;margin:0 auto;list-style:none;display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;padding-block:0}
+.nav a{display:block;padding:11px 12px;white-space:nowrap;color:var(--ink);text-decoration:none;font-weight:700;font-size:.92rem;border-bottom:3px solid transparent}
+.nav a[aria-current]{color:var(--gold);border-bottom-color:var(--gold)}
+
+.nota{max-width:760px;margin:0 auto;padding-block:20px 56px;display:grid;gap:16px}
+.trilha ol{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:4px 8px;font-size:.85rem;color:var(--muted)}
+.trilha li+li::before{content:"›";margin-right:8px;color:var(--muted)}
+.trilha a{color:var(--gold);font-weight:700;text-decoration:none}
+
+.bloco{background:var(--paper);color:var(--paper-ink);border-radius:10px;padding:20px;min-width:0;display:grid;gap:14px}
+.num-l{font-size:.8rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--paper-muted)}
+h1{font-size:clamp(1.7rem,5vw,2.4rem);line-height:1.12;font-weight:800;letter-spacing:-.015em;text-wrap:balance}
+.meta-e{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:.88rem;color:var(--paper-muted)}
+.meta{font-family:var(--mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.05em;color:var(--paper-muted)}
+
+.r1{background:var(--panel2);color:var(--ink);border:1px solid var(--line2);border-left:4px solid var(--gold)}
+.kick{font-size:.75rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--gold)}
+.r1 .resp{font-size:1.12rem;font-weight:600;line-height:1.45}
+.r1 ul{list-style:none;padding:0;display:grid;gap:8px}
+.r1 li{display:flex;gap:8px;align-items:flex-start;color:#dfe4ea}
+.r1 li svg{flex:none;width:20px;height:20px;margin-top:2px;stroke:var(--check);fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.r1 .pe{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:.88rem;color:var(--muted)}
+.r1 .pe b{color:var(--ink)}
+.legenda{display:flex;flex-wrap:wrap;gap:8px}
+.legenda span{font-size:.74rem;font-weight:800;letter-spacing:.04em;border-radius:999px;padding:3px 10px 3px 14px;background:var(--paper);color:var(--paper-ink)}
+.legenda .l1{box-shadow:inset 5px 0 0 var(--paper-ink)}.legenda .l2{box-shadow:inset 5px 0 0 var(--ok)}
+.legenda .l3{box-shadow:inset 5px 0 0 var(--gold)}.legenda .l4{box-shadow:inset 5px 0 0 var(--ouro-ink)}
+
+.indice h2,.sec>h2{font-size:1.15rem;font-weight:800;line-height:1.3;color:var(--paper-ink);border-top:3px solid var(--gold);padding-top:12px;text-wrap:balance;display:flex;gap:10px;align-items:baseline}
+.indice ol{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:2px 16px}
+.indice a{display:block;padding:6px 0;color:var(--paper-ink);text-decoration:none;font-weight:600;font-size:.94rem;border-bottom:1px solid var(--paper-line)}
+.indice a:hover{color:var(--link)}
+
+.sec>h2 .num{display:none}
+.sec h3{font-size:1.05rem;font-weight:800;margin-top:6px}
+.sec p{color:var(--paper-text);max-width:66ch}
+.sec ul,.sec ol{padding-left:1.3em;display:grid;gap:6px;color:var(--paper-text)}
+.sec ul{list-style:disc}
+.sec li::marker{color:var(--ouro-ink);font-weight:800}
+strong{font-weight:700;color:var(--paper-ink)}
+.pg{white-space:nowrap;font-size:.76em;color:var(--paper-muted);border:1px solid var(--paper-line);background:#fff;border-radius:4px;padding:0 5px;vertical-align:.08em;font-variant-numeric:tabular-nums}
+code{font-size:.9em;background:#fff;padding:1px 5px;border-radius:4px}
+
+.tab{overflow-x:auto;border:1px solid var(--paper-line);border-radius:8px;background:#fff}
+table{border-collapse:collapse;width:100%;font-size:.92rem;color:var(--paper-text)}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--paper-line);vertical-align:top}
+th{font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--paper-muted);background:var(--paper)}
+tr:last-child td{border-bottom:0}
+
+.call{border-radius:8px;padding:14px 16px;display:grid;gap:10px;min-width:0;background:#fff;border:1px solid var(--paper-line);border-left:4px solid var(--paper-muted)}
+.call .rot{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;font-weight:800;color:var(--paper-muted)}
+.call.entender{background:var(--cinza-bg);border-color:#d5d9df;border-left-color:var(--paper-ink)}
+.call.entender .rot{color:var(--paper-ink)}
+.call.passos{border-left-color:var(--ok)}
+.call.passos .rot{color:var(--ok)}
+.call.resolvido{background:var(--panel2);border-color:var(--line2);border-left-color:var(--gold)}
+.call.resolvido .rot{color:var(--gold)}
+.call.resolvido p,.call.resolvido li{color:#dfe4ea}
+.call.resolvido strong{color:#fff}
+.call.resolvido .pg{color:#c8ccd2;border-color:var(--line2)}
+.call.complete{border-left:4px dashed var(--gold)}
+.call.complete .rot{color:var(--ouro-ink)}
+.call.suavez{background:var(--faixa-ouro);border-color:#3a2e10;border-left-color:var(--gold)}
+.call.suavez .rot{color:var(--gold)}
+.call.suavez p,.call.suavez li{color:var(--ouro-claro)}
+.call.suavez strong{color:#fff}
+.call.suavez li::marker{color:var(--gold)}
+.call.suavez .pg{color:var(--ouro-claro);border-color:#3a2e10}
+.call.treino{background:var(--ouro-bg);border-color:#f0dfa6;border-left-color:var(--ouro-ink)}
+.call.treino .rot{color:var(--ouro-ink)}
+.call.atencao{border-left-color:var(--erro)}
+.call.atencao .rot{color:var(--erro)}
+.call.edicao{background:var(--paper);border-left-color:var(--paper-ink)}
+.call.edicao .rot{color:var(--paper-ink)}
+.call.dica{background:var(--ouro-bg);border-left-color:var(--gold)}
+.call.dica .rot{color:var(--ouro-ink)}
+.call ol,.call ul{padding-left:1.3em}
+.call .pg{background:transparent}
+
+.respostas{border:1px solid var(--paper-line);border-left:4px solid var(--ok);border-radius:8px;background:#fff}
+.respostas summary{cursor:pointer;padding:12px 16px;font-weight:800;color:var(--ok);list-style:none;min-height:44px;display:flex;align-items:center}
+.respostas summary::-webkit-details-marker{display:none}
+.respostas summary::before{content:"+";display:inline-grid;place-items:center;width:1.4em;height:1.4em;margin-right:8px;border-radius:50%;background:var(--ok-bg)}
+.respostas[open] summary::before{content:"−"}
+.respostas>div{padding:0 16px 16px;display:grid;gap:12px}
+
+.sec.rapido{outline:2px solid var(--gold);outline-offset:-2px}
+.sec.rapido>h2::after{content:"4 min de leitura";margin-left:auto;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:#000;background:var(--gold);border-radius:3px;padding:3px 8px;white-space:nowrap}
+.sec.rapido>p:first-of-type{font-size:1.02rem}
+.sec.ref{outline:2px solid var(--gold);outline-offset:-2px}
+.sec.ref>h2::after{content:"Leve para a mesa";margin-left:auto;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:#000;background:var(--gold);border-radius:3px;padding:3px 8px;white-space:nowrap}
+
+footer{border-top:1px solid var(--line);background:var(--panel);color:var(--muted);font-size:.85rem}
+footer .in{max-width:760px;margin:0 auto;padding-block:20px}
+@media (max-width:600px){
+  .bloco{padding:16px;border-radius:8px}
+  .sec.ref>h2::after{display:none}
+}
+/* essencial x opcional: o que não é essencial abre com um toque */
+.dobra{border:1px solid var(--paper-line);border-radius:8px;background:#fff}
+.dobra>summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:10px;padding:11px 14px;font-weight:700;font-size:.92rem;color:var(--paper-ink);min-height:44px}
+.dobra>summary::-webkit-details-marker{display:none}
+.dobra>summary::before{content:"+";flex:none;display:grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--paper-line);color:var(--paper-ink);font-weight:800;line-height:1}
+.dobra[open]>summary::before{content:"−"}
+.dobra>.call,.dobra>details,.dobra>aside{margin:0 12px 12px}
+.dobra.pratica>summary{color:var(--ouro-ink)}
+.dobra.pratica[open]{display:grid;gap:10px;padding-bottom:12px}
+.dobra.pratica>*:not(summary){margin:0 12px}
+.dobra.sec-opc{border-style:dashed}
+.dobra.sec-opc[open]{padding-bottom:12px}
+.dobra.sec-opc>*:not(summary){margin-left:14px;margin-right:14px}
+.tag-opc{margin-left:10px;font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;font-weight:800;color:var(--paper-muted);border:1px solid var(--paper-line);border-radius:3px;padding:2px 6px;vertical-align:middle}
+.legenda-f{font-size:.88rem;color:var(--muted)}.legenda-f b{color:var(--ink)}
+.mais-i{display:inline-grid;place-items:center;width:18px;height:18px;border-radius:50%;background:var(--paper-line);color:var(--paper-ink);font-weight:800;font-size:.8rem}
+.indice small{color:var(--muted);font-weight:400}
+.sec p,.sec li,.sec a{overflow-wrap:anywhere}
+
+.ico{display:inline-block;width:28px;height:28px;vertical-align:middle;border-radius:5px;margin-right:6px}
+td .ico{margin-right:6px}
+.rec{display:inline-flex;align-items:center;gap:0;white-space:nowrap}
+.cel{display:block;min-width:0}
+
+/* referências visuais (01/11/2026): figura do manual e vídeo no ponto da ação */
+.fig,.video{margin:4px 0;display:grid;gap:6px;min-width:0}
+.fig img{width:100%;height:auto;border-radius:8px;border:1px solid var(--paper-line);background:#fff}
+.fig figcaption,.video figcaption{font-size:.82rem;color:var(--paper-muted);line-height:1.45}
+.yt{position:relative;display:block;width:100%;padding:0;border:0;border-radius:8px;overflow:hidden;cursor:pointer;background:#000;aspect-ratio:16/9}
+.yt img{width:100%;height:100%;object-fit:cover;opacity:.85;display:block}
+.yt-play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:#c4302b;color:#fff;font-weight:800;font-size:.95rem;padding:10px 16px;border-radius:999px;white-space:nowrap;box-shadow:0 2px 10px rgba(0,0,0,.4)}
+.yt:hover .yt-play,.yt:focus-visible .yt-play{background:#e03a33}
+.video iframe{width:100%;aspect-ratio:16/9;border:0;border-radius:8px;display:block}
+/* fotos em todas as seções (04/11/2026): foto do jogo no topo e em cada seção sem figura do manual */
+.topo-cj{overflow:hidden}
+.foto-topo{margin:-20px -20px 4px;display:grid;gap:0}
+.foto-topo img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;background:#fff}
+.foto-topo figcaption{font-size:.78rem;color:var(--paper-muted);padding:6px 20px 0}
+.foto-topo.caixa img,.foto-sec.caixa img{object-fit:contain}
+.foto-sec img{aspect-ratio:16/9;object-fit:cover}
+@media (max-width:600px){.foto-topo{margin:-16px -16px 4px}.foto-topo figcaption{padding:6px 16px 0}}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://eliteboardgamers.com.br/#organizacao", "name": "Elite Boardgamers", "url": "https://eliteboardgamers.com.br/", "logo": {"@type": "ImageObject", "url": "https://eliteboardgamers.com.br/marca/elite-boardgamers.webp", "width": 318, "height": 254}, "sameAs": ["https://www.instagram.com/eliteboardgamers/"]}, {"@type": "Article", "@id": "https://eliteboardgamers.com.br/como-jogar/bang/#artigo", "mainEntityOfPage": "https://eliteboardgamers.com.br/como-jogar/bang/", "headline": "Como jogar BANG!", "description": "Regras de BANG! passo a passo, conferidas no manual da Galápagos: identidades, turno, distância e armas, Barril, Prisão, Dinamite e fim da partida.", "image": ["https://eliteboardgamers.com.br/como-jogar/bang/fotos/capa-1.webp"], "datePublished": "2026-11-04", "author": {"@type": "Organization", "name": "Redação Elite Boardgamers", "url": "https://eliteboardgamers.com.br/politica-editorial/"}, "publisher": {"@id": "https://eliteboardgamers.com.br/#organizacao"}, "inLanguage": "pt-BR"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Início", "item": "https://eliteboardgamers.com.br/"}, {"@type": "ListItem", "position": 2, "name": "Como jogar", "item": "https://eliteboardgamers.com.br/como-jogar/"}, {"@type": "ListItem", "position": 3, "name": "Como jogar BANG!", "item": "https://eliteboardgamers.com.br/como-jogar/bang/"}]}]}</script>
+<style id="moldura">.busca-btn{display:grid;place-items:center;flex:none;width:44px;height:44px;padding:0;border:1px solid #3a3f48;border-radius:8px;background:none;color:#e9ecf1;cursor:pointer}.busca-btn:hover{border-color:#e3b23c;color:#e3b23c}.busca-btn[hidden]{display:none}.sino-btn{position:relative;display:grid;place-items:center;flex:none;width:44px;height:44px;padding:0;border:1px solid #3a3f48;border-radius:8px;background:none;color:#e9ecf1;cursor:pointer}.sino-btn:hover,.sino-btn.on{border-color:#e3b23c;color:#e3b23c}.sino-btn[hidden]{display:none}.sino-btn.on::after{content:"";position:absolute;right:7px;top:7px;width:8px;height:8px;border-radius:50%;background:#5fd38d;box-shadow:0 0 0 2px #111}footer .in a{display:inline-flex;align-items:center;min-height:24px}.cpw{position:relative;display:inline-block}.cp{display:inline-flex;align-items:center;justify-content:center;gap:8px;box-sizing:border-box;line-height:1.2;min-height:44px;margin:0;padding:10px 20px;border-radius:999px;border:0;background:#157a43;color:#fff;font:inherit;font-size:.95rem;font-weight:800;text-decoration:none;cursor:pointer}.cp:hover{background:#11683a;color:#fff}.cp .ic{width:19px;height:19px}.cp[hidden]{display:none}.cpw.mini .cp{min-height:40px;padding:8px 14px;font-size:.88rem}.cp-menu{position:absolute;z-index:30;top:calc(100% + 8px);left:0;min-width:200px;display:grid;gap:2px;padding:6px;border-radius:12px;background:#fff;border:1px solid #dde1e7;box-shadow:0 10px 30px rgba(0,0,0,.25)}.cp-menu[hidden]{display:none}.cp-menu.sobe{top:auto;bottom:calc(100% + 8px)}.cp-menu.dir{left:auto;right:0}.cp-op{display:flex;align-items:center;gap:10px;min-height:44px;padding:8px 12px;border:0;border-radius:8px;background:none;color:#14171c;font:inherit;font-size:.95rem;font-weight:700;text-align:left;text-decoration:none;cursor:pointer}.cp-op:hover,.cp-op:focus-visible{background:#eef1f4;color:#14171c}.cp-op .ic{width:20px;height:20px}.cp-op.zap-op .ic{color:#157a43}.cp-st{position:absolute;z-index:30;top:calc(100% + 8px);left:0;white-space:nowrap;margin:0;padding:6px 12px;border-radius:8px;background:#14171c;color:#fff;font-size:.85rem;font-weight:700}.cp-st:empty{display:none}.barra-lt .cp-st{top:auto;bottom:calc(100% + 8px)}.convite{display:flex;align-items:center;justify-content:space-between;gap:12px 20px;flex-wrap:wrap}.convite .cv-t{margin:0;font-weight:800;font-size:1.1rem}.convite .cv-s{margin:2px 0 0;font-size:.92rem;opacity:.8}.barra-lt>*{flex:none}.barra-lt{width:max-content;max-width:calc(100vw - 12px);box-sizing:border-box;position:fixed;z-index:25;left:50%;bottom:calc(12px + env(safe-area-inset-bottom));display:flex;align-items:center;gap:4px;padding:5px;border-radius:999px;background:#14171c;border:1px solid #3a3f48;box-shadow:0 8px 24px rgba(0,0,0,.35);transform:translate(-50%,0);transition:transform .25s ease,opacity .25s ease}.barra-lt.fora{transform:translate(-50%,calc(100% + 24px));opacity:0;pointer-events:none}.lt-b{display:inline-flex;align-items:center;gap:7px;min-height:44px;padding:8px 14px;border:0;border-radius:999px;background:none;color:#e9ecf1;font:inherit;font-size:.9rem;font-weight:700;text-decoration:none;cursor:pointer}.lt-b:hover{background:#262a31;color:#fff}.lt-b .ic{width:20px;height:20px}.barra-lt .lt-b.curtir{background:none;border:0;color:#e9ecf1;padding:8px 14px}.barra-lt .lt-b.curtir[aria-pressed=true]{color:#ff6b81;background:none}@media (max-width:479px){.lt-b span{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}}.lt-b.curtir[aria-pressed=true] .ic{fill:currentColor}.lt-grupo{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:44px;padding:0 14px 0 6px;border-radius:999px;background:#e3b23c;color:#14171c;font-size:.9rem;font-weight:800;text-decoration:none;white-space:nowrap}.lt-grupo:hover{background:#f0c44f;color:#14171c}.lt-grupo img{width:32px;height:32px;border-radius:8px;display:block}@media (max-width:479px){.barra-lt{gap:2px}.barra-lt .lt-b{padding:8px 10px}.barra-lt .cp{padding:8px 12px}.lt-grupo{padding:0 12px 0 6px}}@media (max-width:399px){.barra-lt:has(.curtir) .cp span{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}.barra-lt:has(.curtir) .cp{padding:8px 14px}}.barra-lt .cp{min-height:44px;padding:8px 16px;font-size:.9rem}body.lt-on .voltar-topo,body.lt-on button.sobe{bottom:calc(76px + env(safe-area-inset-bottom))}@media print{.barra-lt{display:none}}.interacoes{display:grid;gap:14px}.interacoes[hidden]{display:none}.curtir-l{display:flex;align-items:center;gap:12px;flex-wrap:wrap}.curtir{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:8px 18px;border-radius:999px;border:2px solid #b3263e;background:#fff;color:#b3263e;font:inherit;font-weight:800;cursor:pointer}.curtir .ic{width:22px;height:22px}.curtir[aria-pressed=true]{background:#b3263e;color:#fff}.curtir[aria-pressed=true] .ic{fill:currentColor}.curtir .n{font-variant-numeric:tabular-nums}.curtir-dica{font-size:.9rem;color:#5a6270}.interacoes h2{margin:4px 0 0}.coms{list-style:none;margin:0;padding:0;display:grid;gap:10px}.coms li{background:#fff;border:1px solid #dde1e7;border-radius:10px;padding:12px 14px}.com-quem{margin:0;font-size:.92rem}.com-quem time{color:#5a6270;font-size:.8rem;margin-left:6px}.com-txt{margin:4px 0 0;white-space:pre-wrap;color:#14171c}.coms-vazio{margin:0;color:#5a6270}.com-form{display:grid;gap:10px;border-top:1px solid #dde1e7;padding-top:14px}.com-form label{display:grid;gap:4px;font-weight:700;font-size:.9rem;color:#14171c}.com-form small{font-weight:600;color:#5a6270}.com-form input,.com-form textarea{font:inherit;font-size:16px;font-weight:400;padding:10px 12px;border:1px solid #c8cdd5;border-radius:8px;background:#fff;color:#14171c}.com-form textarea{resize:vertical;min-height:110px}.com-form .isca{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}.com-form button{justify-self:start;min-height:44px;padding:10px 20px;border-radius:999px;border:0;background:#14171c;color:#fff;font:inherit;font-weight:800;cursor:pointer}.com-form button:disabled{opacity:.6}.com-aviso{margin:0;font-size:.82rem;color:#5a6270}.com-aviso a{color:#1f5fae}.com-st{margin:0;font-weight:700;font-size:.92rem}.com-st:empty{display:none}.com-st.ok{color:#1b7a45}.com-st.erro{color:#a3223a}:where(html){scroll-padding-top:calc(var(--nav-h,49px) + 12px)}.nav{position:sticky;top:0;z-index:20}body .abas,body .barra-f,body .ctrl{top:var(--nav-h,49px)}.marca img.logo{width:auto;height:48px;border-radius:0}@media (max-width:480px){.marca img.logo{height:40px}}.nav .casa{display:flex;align-items:center;justify-content:center;min-width:44px}.nav .casa .ic{width:20px;height:20px}@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.card:hover,.jogo:hover .capa img,.jogo:active .capa,.zap:active,.post-btn:active,.btn-filtro:hover,.btn-filtro:active,.ver:active{transform:none!important}}.in{max-width:1180px;margin:0 auto;padding-left:16px;padding-right:16px}.ic{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round;flex:none}.bar{border-bottom:1px solid var(--line);background:#000;color:var(--ink)}.bar .in{display:flex;align-items:center;gap:12px;padding-top:8px;padding-bottom:8px}.bar a{color:inherit;text-decoration:none;font-weight:600;font-size:.95rem}.marca img{display:block;width:84px;border-radius:6px}.bar .ig{margin-left:auto;display:flex;align-items:center;gap:6px;padding:6px 10px;border-radius:6px}.bar .ig:hover{color:var(--gold)}.bar .zap-mini{display:flex;align-items:center;gap:6px;padding:6px 10px;border-radius:6px;background:#157a43;color:#fff}.nav ul{padding-left:16px;padding-right:16px}.nav ul li{list-style:none}@media (max-width:700px){.bar .ig span,.bar .zap-mini span{display:none}}footer{font-size:.9rem}footer .in{max-width:1180px;display:flex;flex-wrap:wrap;gap:6px 16px;padding-top:20px;padding-bottom:28px}footer a{color:var(--muted);text-decoration:none}footer a:hover{color:var(--gold)}</style>
+<style id="guia-extra">
+/* fotos na lista de tutoriais e no topo de /como-jogar/ (04/11/2026) */
+.topo-cj{overflow:hidden}
+.lista-t a.com-foto{grid-template-columns:96px 1fr;column-gap:14px;align-items:start}
+.lista-t a.com-foto>*{grid-column:2}
+.lista-t a.com-foto>img{grid-column:1;grid-row:1/span 4;width:96px;height:96px;object-fit:cover;border-radius:6px;background:#fff}
+.cj-mosaico{display:grid;grid-template-columns:2fr 1fr;grid-template-rows:1fr 1fr;gap:4px;margin:-20px -20px 4px;aspect-ratio:16/9;overflow:hidden}
+.cj-mosaico img{width:100%;height:100%;object-fit:cover;display:block;background:#fff}
+.cj-mosaico img:first-child{grid-row:1/span 2}
+.cj-mosaico-c{font-size:.78rem;color:var(--paper-muted)}
+@media (max-width:600px){.cj-mosaico{margin:-16px -16px 4px}.lista-t a.com-foto{grid-template-columns:72px 1fr}.lista-t a.com-foto>img{width:72px;height:72px}}
+/* faixa de progresso, presa logo abaixo do menu */
+.guia-prog{position:sticky;top:var(--nav-h,45px);z-index:15;background:var(--panel);border-bottom:1px solid var(--line)}
+.guia-prog a{display:flex;align-items:center;gap:10px;max-width:760px;margin:0 auto;padding:9px 16px;color:var(--ink);text-decoration:none;font-size:.86rem;font-weight:700;min-height:40px}
+.guia-prog .gp-r{flex:none;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--gold)}
+.guia-prog .gp-t{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.guia-prog .gp-i{margin-left:auto;flex:none;font-size:.78rem;color:var(--muted);font-weight:600}
+.guia-prog .gp-b{position:absolute;left:0;right:0;bottom:-1px;height:3px;background:var(--gold);transform-origin:0 50%;transform:scaleX(0)}
+html{scroll-padding-top:calc(var(--nav-h,45px) + 56px)}
+/* legenda dos blocos: pontos de cor em vez de pílulas */
+.legenda{gap:6px 16px}
+.legenda span{position:relative;background:none;color:var(--muted);box-shadow:none!important;padding:0 0 0 16px;font-size:.8rem;letter-spacing:0}
+.legenda span::before{content:"";position:absolute;left:0;top:.32em;width:10px;height:10px;border-radius:3px;background:var(--paper)}
+.legenda .l2::before{background:var(--ok)}.legenda .l3::before{background:var(--gold)}.legenda .l4::before{background:var(--ouro-ink)}
+/* índice numerado */
+.indice ol{counter-reset:it}.indice li{counter-increment:it}
+.indice a{display:flex;gap:10px;align-items:baseline;min-height:40px;padding:9px 0}
+.indice a::before{content:counter(it);flex:none;width:1.6em;font-size:.8rem;font-weight:800;color:var(--ouro-ink);font-variant-numeric:tabular-nums}
+.nota-pe{color:var(--muted);font-size:.85rem;padding:4px 2px 0}
+/* exercícios de múltipla escolha: tocou numa opção, aparece a certa e a explicação */
+.quiz{display:grid;gap:8px;padding:12px 0;border-top:1px solid var(--paper-line)}.quiz:first-of-type{border-top:0}
+.q-p{font-weight:700;color:inherit}
+.q-ops{display:grid;gap:6px}
+.q-op{display:block;width:100%;text-align:left;font:inherit;font-size:.95rem;line-height:1.35;min-height:44px;padding:10px 12px;border-radius:8px;
+ border:1px solid #c8cdd5;background:#fff;color:#14171c;cursor:pointer}
+.q-op:hover{border-color:var(--gold)}.q-op:disabled{cursor:default}
+.q-op.ok{background:#e3f4ea;border-color:#1b7a45;color:#0f4d2b;font-weight:700}.q-op.ok::before{content:"✓ ";font-weight:800}
+.q-op.erro{background:#fbe6e9;border-color:#b3263e;color:#7d1a2b}.q-op.erro::before{content:"✗ ";font-weight:800}
+.q-exp{border-left:4px solid var(--ok);background:#f2faf5;color:#14171c;border-radius:6px;padding:8px 12px}
+.q-exp .q-res{color:var(--ok)}.q-exp.mal{border-left-color:#b3263e;background:#fdf3f4}.q-exp.mal .q-res{color:#b3263e}
+.call.suavez .q-op,.call.resolvido .q-op{border-color:#3a2e10}
+/* endereços longos (fontes) quebram em vez de alargar a página */
+.sec a,.sec li,.sec p{overflow-wrap:anywhere}
+/* títulos das etapas com mais respiro */
+.sec{scroll-margin-top:calc(var(--nav-h,45px) + 56px)}
+@media (min-width:601px){.sec{padding:24px 28px}}
+/* tabelas: fichas no celular (menos as grades de células curtas, que ficam tabela e centralizadas) */
+.tab table.grade th,.tab table.grade td{text-align:center;padding:7px 6px}
+.tab table.grade th{white-space:normal;overflow-wrap:anywhere;hyphens:auto}
+@media (max-width:600px){
+ .tab:not(:has(.grade)){border:0;background:none;overflow:visible;border-radius:0}
+ .tab:not(:has(.grade)) table,.tab:not(:has(.grade)) tbody,.tab:not(:has(.grade)) tr,.tab:not(:has(.grade)) td{display:block}
+ .tab:not(:has(.grade)) thead{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+ .tab:not(:has(.grade)) tr{background:#fff;border:1px solid var(--paper-line);border-radius:8px;padding:10px 12px;margin-bottom:8px}
+ .tab:not(:has(.grade)) td{border:0;padding:3px 0;display:grid;grid-template-columns:6.5em minmax(0,1fr);gap:8px}
+ .tab:not(:has(.grade)) td::before{content:attr(data-label);font-size:.7rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--paper-muted);padding-top:3px}
+ .tab:not(:has(.grade)) td:empty{display:none}
+ .tab:not(:has(.grade)) td:first-child{display:block;font-weight:800;color:var(--paper-ink);padding-bottom:4px}
+ .tab:not(:has(.grade)) td:first-child::before{display:none}
+}
+</style>
+</head>
+<body>
+<!--moldura--><a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<header class="bar" id="topo"><div class="in">
+ <a class="marca" href="../../"><img class="logo" src="../../marca/logo-eb-104.webp" srcset="../../marca/logo-eb-52.webp 157w, ../../marca/logo-eb-104.webp 314w, ../../marca/logo-eb-156.webp 472w" sizes="(max-width: 480px) 121px, 145px" width="157" height="52" alt="Elite Board Gamers: página inicial"></a>
+ <a class="ig" href="https://www.instagram.com/eliteboardgamers/" target="_blank" rel="noopener" aria-label="Instagram @eliteboardgamers"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6" fill="currentColor"/></svg><span>@eliteboardgamers</span></a>
+ <a class="zap-mini" href="https://chat.whatsapp.com/IgQQkJdSkzHBaEq3UwFeAo" target="_blank" rel="noopener" aria-label="Grupo do WhatsApp"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8.4 19l-4.4 1Z"/><path d="M9.2 8.6c.3-.5.8-.5 1-.1l.7 1.5c.1.3 0 .6-.2.8l-.4.4c.5 1.1 1.4 2 2.5 2.5l.4-.4c.2-.2.5-.3.8-.2l1.5.7c.4.2.4.7-.1 1-.7.5-1.6.6-2.4.3a7 7 0 0 1-4.2-4.2c-.3-.8-.2-1.7.4-2.3Z"/></svg><span>Grupo do WhatsApp</span></a>
+ <button type="button" class="busca-btn" aria-label="Buscar no site" aria-haspopup="dialog" aria-keyshortcuts="/ Control+K" hidden><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></button>
+ <button type="button" class="sino-btn" aria-label="Receber notificações" aria-haspopup="dialog" aria-expanded="false" hidden><svg class="ic" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 3a6 6 0 0 0-6 6v3.6L4.3 15.5A1 1 0 0 0 5.2 17h13.6a1 1 0 0 0 .9-1.5L18 12.6V9a6 6 0 0 0-6-6z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M9.5 19.5a2.6 2.6 0 0 0 5 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+</div></header>
+<script src="/sino.js?v=2" defer></script>
+<script>(()=>{const b=document.querySelector('.busca-btn');let c;b.hidden=false;const a=()=>{c=c||new Promise((r,j)=>{const s=document.createElement('script');s.src='../../busca.js';s.onload=r;s.onerror=()=>{c=null;j()};document.head.append(s)});c.then(()=>abrirBusca('../../'),()=>{})};b.addEventListener('click',a);addEventListener('keydown',e=>{const t=e.target,ed=t.isContentEditable||/^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName);if((e.key==='/'&&!ed&&!e.ctrlKey&&!e.metaKey)||((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k')){e.preventDefault();a()}})})()</script>
+<nav class="nav" aria-label="Seções do site"><ul class="in"><li><a class="casa" href="../../" aria-label="Página inicial"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 9.5V20h13V9.5"/><path d="M10 20v-5.5h4V20"/></svg></a></li><li><a href="../../noticias/">Notícias</a></li><li><a href="../../resenhas/">Resenhas</a></li><li><a href="../../como-jogar/" aria-current="true">Como jogar</a></li><li><a href="../../lancamentos/">Lançamentos</a></li><li><a href="../../black/">Black de Verdade</a></li></ul></nav>
+<script>(()=>{const n=document.querySelector('.nav'),h=()=>document.documentElement.style.setProperty('--nav-h',n.offsetHeight+'px');h();addEventListener('resize',h);addEventListener('load',h)})()</script>
+<div class="guia-prog"><a href="#neste-guia"><span class="gp-r">Guia</span><span class="gp-t">Neste guia</span><span class="gp-i">Índice</span></a><span class="gp-b" aria-hidden="true"></span></div><!--/moldura-->
+
+<main id="conteudo" class="gut"><div class="nota">
+  <nav class="trilha" aria-label="Trilha de navegação"><ol><li><a href="../../">Início</a></li><li><a href="../">Como jogar</a></li><li aria-current="page">BANG!</li></ol></nav>
+
+  <article class="bloco topo-cj">
+    <figure class="foto-topo caixa"><img src="fotos/capa-1.webp" alt="BANG!: a caixa" width="1600" height="1600" fetchpriority="high" decoding="async"><figcaption>Imagem: Asmodee UK · 4ª edição, Reino Unido</figcaption></figure>
+    <span class="num-l">Papéis ocultos · Jogo de cartas</span>
+    <h1>Como jogar BANG!</h1>
+    <p class="meta-e"><span>Para quem nunca jogou</span><span>4 a 7 jogadores</span><span>20 a 40 min</span><span>8+</span><span>Edição Asmodee (Galápagos)</span></p>
+    <p class="meta"><time datetime="2026-11-04">4 de novembro de 2026</time> · Redação Elite Boardgamers</p>
+  </article>
+
+  <section class="bloco r1" aria-label="Resumo em 1 minuto">
+    <span class="kick">Resumo em 1 minuto</span>
+    <p class="resp">Com uma identidade secreta (Xerife, Assistente, Fora da lei ou Renegado), você joga cartas para atirar, se esquivar e se curar; vence o lado que cumprir o objetivo: matar o Xerife, proteger a lei ou ser o último vivo.</p>
+    <ul><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.5l4.5 4.5L19.5 6.5"/></svg><span>No turno, compre 2 cartas, jogue quantas quiser (só 1 carta BANG!) e fique com tantas cartas quantas balas tiver.</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.5l4.5 4.5L19.5 6.5"/></svg><span>A distância é o menor número de lugares até o alvo; a arma só diz até onde o BANG! alcança, quem muda a distância são Mustang e Escopo.</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.5l4.5 4.5L19.5 6.5"/></svg><span>Se o Xerife morre, vencem os Fora da lei, a não ser que o Renegado seja o último vivo; mortos os Fora da lei e o Renegado, vence a lei.</span></li></ul>
+    <p class="pe"><span><b>Como você aprende:</b> 3 etapas, da mesa montada à contagem de pontos</span><span><b>Leitura do essencial:</b> cerca de 7 min</span></p>
+    <p class="legenda-f"><b>À vista, só o essencial para jogar.</b> O que abre com <span class="mais-i">+</span> é explicação, exemplo, exercício ou regra de caso especial: abra quando precisar.</p>
+  </section>
+
+<section class="bloco sec rapido" id="comece-a-jogar-em-4-minutos"><h2><span class="num"></span>Comece a jogar em 4 minutos</h2>
+<figure class="fig foto-sec"><img src="fotos/componentes-1.webp" alt="BANG!: os componentes" width="800" height="800" loading="lazy" decoding="async"><figcaption>Imagem: Abacusspiele · edição alemã</figcaption></figure>
+<p><strong>Meta:</strong> em 4 minutos de leitura, montar a mesa e jogar o primeiro turno sem abrir o manual.</p>
+<h3>A ideia do jogo</h3>
+<p>Cada jogador recebe em segredo uma <strong>identidade</strong>. Só o <strong>Xerife</strong> se mostra; os outros podem ser Assistentes (do lado dele), Fora da lei (querem matá-lo) ou o Renegado (quer ser o último vivo). Você joga cartas para atirar, se esquivar e se curar, e cada tiro custa <strong>pontos de vida</strong>, marcados com balas. Como as identidades são secretas <span class="pg">p.&nbsp;2</span>, boa parte da partida é descobrir quem é quem.</p>
+<h3>Monte a mesa</h3>
+<p>Para 4 a 7 jogadores <span class="pg">p.&nbsp;1</span>.</p>
+<ol><li>Cada jogador pega um tabuleiro e o põe à sua frente <span class="pg">p.&nbsp;2</span>.</li><li>Separe as identidades: com 4, Xerife, Renegado e 2 Fora da lei; com 5, mais 1 Assistente; com 6, Xerife, Renegado, 3 Fora da lei e 1 Assistente; com 7, Xerife, Renegado, 3 Fora da lei e 2 Assistentes. Dê uma a cada um, virada para baixo. O Xerife vira a dele; os outros guardam segredo <span class="pg">p.&nbsp;2</span>.</li><li>Embaralhe os personagens e dê um a cada jogador, virado para cima. Cada um lê a habilidade em voz alta e pega tantas balas quantas o personagem mostra. O Xerife pega uma bala a mais <span class="pg">p.&nbsp;2</span>.</li><li>Sobras de identidades, personagens e tabuleiros voltam para a caixa <span class="pg">p.&nbsp;2</span>.</li><li>Embaralhe as 80 cartas de jogo e dê a cada um tantas cartas quantas balas ele tem. O resto é a pilha de compra, com espaço ao lado para o descarte <span class="pg">p.&nbsp;1 e 2</span>.</li></ol>
+<h3>Seu primeiro turno</h3>
+<p>O Xerife começa, e a vez segue no sentido horário, ou seja, passa para o jogador à esquerda. O turno tem três fases <span class="pg">p.&nbsp;3</span>:</p>
+<ol><li><strong>Compre duas cartas</strong> do topo da pilha.</li><li><strong>Jogue quantas cartas quiser</strong>, com três limites: só 1 carta BANG! por turno; nunca duas cartas com o mesmo nome à sua frente; só 1 arma à sua frente.</li><li><strong>Descarte</strong> o que passar do seu limite: no fim do turno, a mão pode ter no máximo tantas cartas quantas balas você tem.</li></ol>
+<p>Carta de <strong>borda marrom</strong> vai para o descarte e faz efeito na hora. Carta de <strong>borda azul</strong> (armas, Mustang, Barril e outras) fica à sua frente e vale até sair de lá <span class="pg">p.&nbsp;3</span>. Você começa com o Colt. 45 impresso no tabuleiro, que alcança só os vizinhos; cada arma tem na mira o número do alcance dela <span class="pg">p.&nbsp;5</span>.</p>
+<p>Um <strong>BANG!</strong> num jogador ao seu alcance tira 1 ponto de vida dele: ele descarta uma bala na pilha do meio da mesa. Ele pode evitar o tiro na hora, mesmo fora da vez, jogando um <strong>Errou!</strong>; o BANG! vai para o descarte de qualquer jeito <span class="pg">p.&nbsp;6</span>.</p>
+<aside class="call resolvido"><p class="rot">Tarefa · exemplo resolvido</p><p><strong>Exemplo resolvido.</strong> Você é o Xerife, com um personagem de 4 balas: joga com 5 e recebeu 5 cartas. Compra 2 e fica com 7: BANG!, BANG!, Errou!, Cerveja, Schofield, Mustang e Pânico!. Põe à sua frente a Schofield (arma de alcance 2) e o Mustang (cavalo que deixa você 1 lugar mais longe para os outros). Atira com um BANG! num jogador a 2 lugares; ele joga Errou!, e as duas cartas vão para o descarte. O segundo BANG! fica na mão. Joga Pânico! (pega uma carta de um jogador à distância 1) no vizinho da esquerda e tira, sem olhar, uma carta da mão dele. Mão final: 4 cartas, para um limite de 5. Não descarta nada (p. 3, 5 a 7).</p></aside>
+<aside class="call complete"><p class="rot">Tarefa · complete</p><p><strong>Complete.</strong></p>
+<div class="quiz"><p class="q-p">No exemplo, o tiro foi cancelado. Você pode jogar o segundo BANG! nesse turno?</p><div class="q-ops"><button type="button" class="q-op">Sim, porque o primeiro não acertou</button><button type="button" class="q-op" data-ok>Não, só uma carta BANG! por turno</button><button type="button" class="q-op">Sim, se for em outro jogador</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> O limite é de uma carta BANG! jogada por turno, acertando ou não <span class="pg">p.&nbsp;3 e 6</span>.</p></div></div></aside>
+<aside class="call suavez"><p class="rot">Tarefa · sua vez</p><p><strong>Sua vez.</strong></p>
+<div class="quiz"><p class="q-p">Você termina a fase 2 com 6 cartas na mão e 3 balas. Quantas descarta?</p><div class="q-ops"><button type="button" class="q-op">Nenhuma</button><button type="button" class="q-op">2</button><button type="button" class="q-op" data-ok>3</button><button type="button" class="q-op">4</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> O limite no fim do turno é igual às balas que você tem agora: 3 <span class="pg">p.&nbsp;3</span>.</p></div></div></aside>
+<h3>Ainda não precisa saber</h3>
+<p>Distância com mais jogadores, Mustang e Escopo, Cerveja e as cartas de ataque: <a href="#etapa-2-atirar-e-se-defender">etapa 2</a>. Barril, Prisão, Dinamite, eliminação e recompensa: <a href="#etapa-3-sorte-eliminacao-e-fim">etapa 3</a>. Habilidade de cada personagem: Situações especiais.</p>
+<h3>Como a partida acaba</h3>
+<p>Se o Xerife morre, vencem os Fora da lei, a menos que o Renegado seja o único vivo: aí ele vence. Se morrem o Renegado e todos os Fora da lei, vencem o Xerife e os Assistentes <span class="pg">p.&nbsp;4</span>.</p>
+<p><strong>Prefere ver?</strong> Uma partida resumida em vídeo. Ele complementa este guia; em caso de diferença, vale o manual.</p>
+<figure class="video"><button type="button" class="yt" data-id="BzlSuctYPgM" data-t="0" aria-label="Assistir ao vídeo"><img src="https://i.ytimg.com/vi/BzlSuctYPgM/hqdefault.jpg" alt="" loading="lazy" decoding="async" width="480" height="360"><span class="yt-play">▶ Assistir ao vídeo</span></button><figcaption>BANG! - Gameplay resumida, canal Duque Board Games · <a href="https://www.youtube.com/watch?v=BzlSuctYPgM&amp;t=0s" rel="noopener">abrir no YouTube</a></figcaption></figure>
+<aside class="call atencao"><p class="rot">Atenção</p><p><strong>Os três erros mais caros.</strong> Só uma carta BANG! por turno, mesmo que o tiro erre. Arma não muda a distância: só diz até onde o BANG! alcança. O limite de mão é o das balas que você tem agora, não o do começo.</p></aside>
+</section>
+  <nav class="bloco indice" id="neste-guia" aria-label="Neste guia"><h2>Neste guia</h2><ol><li><a href="#comece-a-jogar-em-4-minutos">Comece a jogar em 4 minutos</a></li><li><a href="#antes-de-tudo-o-que-e-este-jogo">Antes de tudo: o que é este jogo</a> <small>(opcional)</small></li><li><a href="#como-este-guia-ensina">Como este guia ensina</a> <small>(opcional)</small></li><li><a href="#etapa-1-montar-a-mesa-e-jogar-um-turno">Etapa 1: montar a mesa e jogar um turno</a></li><li><a href="#etapa-2-atirar-e-se-defender">Etapa 2: atirar e se defender</a></li><li><a href="#etapa-3-sorte-eliminacao-e-fim">Etapa 3: sorte, eliminação e fim</a></li><li><a href="#situacoes-especiais">Situações especiais</a> <small>(opcional)</small></li><li><a href="#avaliacao-final">Avaliação final</a> <small>(opcional)</small></li><li><a href="#para-consultar-durante-a-partida">Para consultar durante a partida</a></li><li><a href="#fontes">Fontes</a></li></ol></nav>
+
+<section class="bloco sec opc" id="antes-de-tudo-o-que-e-este-jogo"><h2><span class="num">0</span>Antes de tudo: o que é este jogo<span class="tag-opc">Opcional</span></h2>
+<figure class="fig foto-sec"><img src="fotos/componentes-1.webp" alt="BANG!: os componentes" width="800" height="800" loading="lazy" decoding="async"><figcaption>Imagem: Abacusspiele · edição alemã</figcaption></figure>
+<details class="dobra sec-opc"><summary>Abrir esta seção</summary><p>BANG! é um jogo de cartas de faroeste, de Emiliano Sciarra, para 4 a 7 jogadores a partir de 8 anos <span class="pg">p.&nbsp;1 e 12</span>; a página oficial da dV Giochi indica partidas de 20 a 40 minutos. Cada jogador é um personagem do Velho Oeste com uma identidade secreta que define o lado dele: a lei (Xerife e Assistentes), os Fora da lei ou o Renegado, sozinho <span class="pg">p.&nbsp;1</span>.</p>
+<p>Não há pontos: a partida acaba quando um lado cumpre o objetivo <span class="pg">p.&nbsp;4</span>. Três ideias pedem atenção: a <strong>distância</strong>, que decide quem você alcança; o <strong>limite de mão</strong>, que encolhe com os tiros; e o <strong>"comprar!"</strong>, o teste de sorte de algumas cartas.</p>
+<p>Não confunda com <strong>BANG! O Jogo de Dados</strong>, outra caixa, com regras próprias.</p></details>
+</section>
+<section class="bloco sec opc" id="como-este-guia-ensina"><h2><span class="num">1</span>Como este guia ensina<span class="tag-opc">Opcional</span></h2>
+<figure class="fig foto-sec"><img src="fotos/componentes-1.webp" alt="BANG!: os componentes" width="800" height="800" loading="lazy" decoding="async"><figcaption>Imagem: Abacusspiele · edição alemã</figcaption></figure>
+<details class="dobra sec-opc"><summary>Abrir esta seção</summary><p>Três etapas: montar e jogar um turno; atirar e se defender; sorte, eliminação e fim. Cada uma tem <strong>Para entender</strong> (o porquê), <strong>Passo a passo</strong> (a regra de sempre), regras adicionais em blocos à parte e tarefas com ajuda decrescente: <strong>exemplo resolvido</strong>, tarefa para <strong>completar</strong> e <strong>sua vez</strong>. Escolha uma opção em cada pergunta para ver a certa e a explicação. No fim, uma avaliação diz o que reler, e a folha de consulta vai para a mesa.</p></details>
+</section>
+<section class="bloco sec" id="etapa-1-montar-a-mesa-e-jogar-um-turno"><h2><span class="num">2</span>Etapa 1: montar a mesa e jogar um turno</h2>
+<details class="dobra entender"><summary>Por que funciona assim</summary><aside class="call entender"><p>O <strong>Xerife</strong> quer eliminar os Fora da lei e o Renegado; os <strong>Assistentes</strong> vencem com ele; os <strong>Fora da lei</strong> querem matá-lo, mesmo eliminando uns aos outros no caminho; o <strong>Renegado</strong> quer ser o último em jogo <span class="pg">p.&nbsp;1</span>. A identidade é secreta <span class="pg">p.&nbsp;2</span>; o lado aparece pelo que cada um faz.</p></aside></details>
+<figure class="fig"><img src="figuras/identidades.webp" alt="As cartas de identidade: Xerife, Fora da lei e, atrás, o verso das cartas. Ilustração: manual Galápagos (p. 1)" loading="lazy" decoding="async"><figcaption>As cartas de identidade: Xerife, Fora da lei e, atrás, o verso das cartas. Ilustração: manual Galápagos <span class="pg">p.&nbsp;1</span></figcaption></figure>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Preparação</strong> <span class="pg">p.&nbsp;2</span></p>
+<ol><li>Cada jogador pega um tabuleiro, para identidade, personagem, arma e balas.</li><li>Identidades pela tabela abaixo, uma para cada, virada para baixo. O Xerife vira a dele; os outros guardam segredo.</li><li>Personagens embaralhados, um para cada, virado para cima; cada um lê a habilidade em voz alta. O manual não define os lugares à mesa.</li><li>Balas iguais às do personagem; o Xerife pega uma a mais. Sobras de identidades, personagens e tabuleiros voltam para a caixa. As balas que alguém perde vão para uma pilha no meio da mesa <span class="pg">p.&nbsp;6</span>.</li><li>Cartas de jogo iguais às balas, viradas para baixo. O resto é a pilha de compra.</li></ol></aside>
+<div class="tab"><table class="grade"><thead><tr><th>Jogadores</th><th>Xerife</th><th>Renegado</th><th>Fora da lei</th><th>Assistentes</th></tr></thead><tbody><tr><td>4</td><td>1</td><td>1</td><td>2</td><td>0</td></tr><tr><td>5</td><td>1</td><td>1</td><td>2</td><td>1</td></tr><tr><td>6</td><td>1</td><td>1</td><td>3</td><td>1</td></tr><tr><td>7</td><td>1</td><td>1</td><td>3</td><td>2</td></tr></tbody></table></div>
+<figure class="fig"><img src="figuras/personagem.webp" alt="Uma carta de personagem, Jesse Jones; o círculo vermelho marca as balas impressas, os pontos de vida com que ele começa. Ilustração: manual Galápagos (p. 2)" loading="lazy" decoding="async"><figcaption>Uma carta de personagem, Jesse Jones; o círculo vermelho marca as balas impressas, os pontos de vida com que ele começa. Ilustração: manual Galápagos <span class="pg">p.&nbsp;2</span></figcaption></figure>
+<details class="dobra entender"><summary>Por que funciona assim</summary><aside class="call entender"><p>As balas são os seus <strong>pontos de vida</strong> e também o seu <strong>limite de mão</strong> no fim do turno <span class="pg">p.&nbsp;2</span>: cada tiro dói duas vezes. Jesse Jones, com 4 pontos de vida, guarda até 4 cartas; com 3, guarda 3 <span class="pg">p.&nbsp;2</span>.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Primeiras partidas</summary><aside class="call mais"><p>O manual sugere tirar do baralho as cartas com o símbolo de livro, para uma versão mais simples <span class="pg">p.&nbsp;2</span>. Pela lista oficial de cartas da dV Giochi, são Duelo, Indígenas!, Empório, Prisão e Dinamite; confira o livrinho impresso na carta.</p></aside></details>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>O turno</strong> <span class="pg">p.&nbsp;3</span></p>
+<ol><li>O Xerife começa. A vez segue no sentido horário.</li><li><strong>Fase 1:</strong> compre as duas cartas do topo da pilha de compra.</li><li><strong>Fase 2:</strong> jogue quantas cartas quiser, inclusive nenhuma. Limites: 1 carta BANG! por turno; 1 cópia de cada carta à sua frente (mesmo nome é cópia); 1 arma à sua frente. Ao pôr uma arma nova, descarte a antiga.</li><li><strong>Fase 3:</strong> descarte da mão o que passar do seu limite, igual às balas que você tem agora. Passe a vez.</li></ol></aside>
+<details class="dobra entender"><summary>Por que funciona assim</summary><aside class="call entender"><p>A <strong>borda marrom</strong> quer dizer "jogue e descarte": a carta vai para o descarte e faz o efeito nela. A <strong>borda azul</strong> são armas e objetos: ficam à sua frente (a Prisão, na de outro jogador), "em jogo", até serem descartadas, tiradas por outra carta (uma Cat Balou) ou até um evento próprio, como a explosão da Dinamite. Não há limite de cartas azuis à sua frente, desde que nenhuma repita o nome de outra <span class="pg">p.&nbsp;3</span>.</p></aside></details>
+<figure class="fig"><img src="figuras/tipos-de-carta.webp" alt="Um Duelo, carta de borda marrom, e um Barril, carta de borda azul. Ilustração: manual Galápagos (p. 3)" loading="lazy" decoding="async"><figcaption>Um Duelo, carta de borda marrom, e um Barril, carta de borda azul. Ilustração: manual Galápagos <span class="pg">p.&nbsp;3</span></figcaption></figure>
+<details class="dobra mais"><summary>Regra adicional: Pilha de compra vazia</summary><aside class="call mais"><p>Embaralhe o descarte e forme uma nova <span class="pg">p.&nbsp;3</span>.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Diligência e Wells Fargo</summary><aside class="call mais"><p>Compre 2 cartas do topo da pilha com a Diligência, 3 com a Wells Fargo <span class="pg">p.&nbsp;7</span>.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Empório</summary><aside class="call mais"><p>Vire do baralho tantas cartas quantos jogadores ainda estão na partida. Começando por você, no sentido horário, cada um escolhe uma para a mão <span class="pg">p.&nbsp;7</span>.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Descartar por vontade própria</summary><aside class="call mais"><p>Não pode, nem da mão nem da sua frente; a única exceção é a habilidade de Sid Ketchum (FAQ oficial). E não se joga carta enquanto o efeito da anterior não terminou: ninguém joga Pânico! no meio de um Empório (FAQ oficial).</p></aside></details>
+<aside class="call atencao"><p class="rot">Atenção</p><p><strong>O limite de mão é o de agora.</strong> O Xerife que começou com 5 balas e está com 2 guarda 2 cartas no fim do turno <span class="pg">p.&nbsp;2 e 3</span>.</p></aside>
+<details class="dobra resolvido"><summary>Ver um exemplo resolvido</summary><aside class="call resolvido"><p>Partida de 4. O Xerife tirou Paul Regret, de 3 balas, e joga com 4; os outros têm 4, 4 e 3 balas. As mãos iniciais somam 15 cartas, e ficam 65 na pilha <span class="pg">p.&nbsp;1, 2 e 10</span>. Num turno, um jogador com 4 balas compra 2 (6 na mão), joga a Wells Fargo e compra 3 (8), põe uma Volcanic e um Barril à frente (6) e, na fase 3, descarta 2 <span class="pg">p.&nbsp;3 e 7</span>.</p></aside></details>
+
+
+<details class="dobra pratica"><summary>Pratique esta etapa: exercícios com respostas</summary><aside class="call complete"><p class="rot">Tarefa · complete</p><p><strong>Complete.</strong> Você tem uma Schofield à sua frente e joga uma Winchester.</p>
+<div class="quiz"><p class="q-p">O que acontece com a Schofield?</p><div class="q-ops"><button type="button" class="q-op">Fica, e você escolhe qual usar em cada tiro</button><button type="button" class="q-op" data-ok>Vai para o descarte</button><button type="button" class="q-op">Volta para a sua mão</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Só se pode ter uma arma em jogo; ao jogar uma nova, descarte a antiga <span class="pg">p.&nbsp;3 e 5</span>.</p></div></div></aside>
+<aside class="call suavez"><p class="rot">Tarefa · sua vez</p><p><strong>Sua vez.</strong></p>
+<div class="quiz"><p class="q-p">Você tem um Barril à sua frente e compra outro. Pode pôr o segundo em jogo?</p><div class="q-ops"><button type="button" class="q-op">Sim, cartas azuis não têm limite</button><button type="button" class="q-op" data-ok>Não, seriam duas cartas com o mesmo nome à sua frente</button><button type="button" class="q-op">Sim, se descartar o primeiro de propósito</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> É o próprio exemplo do manual <span class="pg">p.&nbsp;3</span>; e descartar o primeiro por vontade própria não pode (FAQ oficial).</p></div></div></aside></details>
+</section>
+<section class="bloco sec" id="etapa-2-atirar-e-se-defender"><h2><span class="num">3</span>Etapa 2: atirar e se defender</h2>
+<details class="dobra entender"><summary>Por que funciona assim</summary><aside class="call entender"><p>É o menor número de lugares entre dois jogadores, contando pela direita ou pela esquerda <span class="pg">p.&nbsp;4</span>. Numa mesa de 6, o vizinho está a 1, o seguinte a 2, e quem está do outro lado, a 3. Quem foi eliminado não conta mais, e os que ficam se aproximam <span class="pg">p.&nbsp;4</span>. Toda carta com mira usa a distância.</p></aside></details>
+<figure class="fig"><img src="figuras/distancia.webp" alt="A distância numa mesa de 6: de A até B e até F é 1; até C e até E, 2; até D, 3, pelos dois lados. Ilustração: manual Galápagos (p. 4)" loading="lazy" decoding="async"><figcaption>A distância numa mesa de 6: de A até B e até F é 1; até C e até E, 2; até D, 3, pelos dois lados. Ilustração: manual Galápagos <span class="pg">p.&nbsp;4</span></figcaption></figure>
+<details class="dobra entender"><summary>Por que funciona assim</summary><aside class="call entender"><p>O Colt. 45 do tabuleiro alcança a distância 1. Uma arma fica sobre ele e o substitui até sair; pode ser roubada com Pânico! ou descartada com Cat Balou, mas o Colt. 45 nunca se perde <span class="pg">p.&nbsp;5</span>. E <strong>as armas não alteram a distância</strong> entre os jogadores <span class="pg">p.&nbsp;5 e 11</span>: quem muda a distância são o Mustang e o Escopo.</p></aside></details>
+<div class="tab"><table><thead><tr><th>Arma</th><th>Alcance</th></tr></thead><tbody><tr><td data-label="Arma">Colt. 45 (tabuleiro)</td><td data-label="Alcance">1</td></tr><tr><td data-label="Arma">Volcanic</td><td data-label="Alcance">1, com quantos BANG! quiser no turno</td></tr><tr><td data-label="Arma">Schofield</td><td data-label="Alcance">2</td></tr><tr><td data-label="Arma">Remington</td><td data-label="Alcance">3</td></tr><tr><td data-label="Arma">Rev. Carabine</td><td data-label="Alcance">4</td></tr><tr><td data-label="Arma">Winchester</td><td data-label="Alcance">5</td></tr></tbody></table></div>
+<p>Remington e Volcanic aparecem no manual <span class="pg">p.&nbsp;5</span>; os outros alcances vêm da lista oficial de cartas da dV Giochi.</p>
+<figure class="fig"><img src="figuras/remington.webp" alt="A Remington: borda azul, ilustração em preto e branco e o número 3 na mira, o alcance dela. Ilustração: manual Galápagos (p. 5)" loading="lazy" decoding="async"><figcaption>A Remington: borda azul, ilustração em preto e branco e o número 3 na mira, o alcance dela. Ilustração: manual Galápagos <span class="pg">p.&nbsp;5</span></figcaption></figure>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Atirar com BANG!</strong> <span class="pg">p.&nbsp;5 e 6</span></p>
+<ol><li>Escolha o alvo e conte a distância até ele, já com Mustang e Escopo.</li><li>Confira se a sua arma alcança essa distância.</li><li>Jogue o BANG! no descarte.</li><li>O alvo pode jogar na hora um Errou!, mesmo fora da vez dele, e cancelar o tiro. Se não jogar, perde 1 ponto de vida e põe uma bala na pilha do meio da mesa.</li></ol></aside>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Mustang e Escopo</strong> <span class="pg">p.&nbsp;8</span></p>
+<ol><li><strong>Mustang</strong> à sua frente: os outros veem você a distância +1. Você vê os outros normalmente.</li><li><strong>Escopo</strong> à sua frente: você vê os outros a distância -1. Eles veem você normalmente.</li><li>Distância menor que 1 conta como 1.</li></ol></aside>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Cerveja</strong> <span class="pg">p.&nbsp;6</span></p>
+<ol><li>Recupere 1 ponto de vida: pegue uma bala da pilha. Nunca passe das balas com que você começou (para o Xerife, contando a extra) <span class="pg">p.&nbsp;2 e 6</span>; ela só cura quem a joga.</li><li>Jogue-a no seu turno, ou fora dele só quando acabou de levar o golpe que tira o seu último ponto.</li><li>Com só 2 jogadores restantes, ela não tem efeito.</li></ol></aside>
+<aside class="call atencao"><p class="rot">Atenção</p><p><strong>Errou! só protege você.</strong> Ele cancela tiros dirigidos a você, nunca a outro jogador <span class="pg">p.&nbsp;6</span>. Qualquer carta com o símbolo de Errou! cancela o efeito de uma carta com o símbolo de BANG! <span class="pg">p.&nbsp;11</span>. Os símbolos ficam no pé das cartas e nas cartas de resumo <span class="pg">p.&nbsp;1, 6 e 7</span>: o de BANG! está na carta BANG! e na Gatling; o de Errou!, no Errou! e no Barril (lista oficial de cartas).</p></aside>
+<details class="dobra mais"><summary>Regra adicional: Volcanic</summary><aside class="call mais"><p>Com ela, você joga quantos BANG! quiser no turno, no mesmo alvo ou em outros, todos à distância 1 <span class="pg">p.&nbsp;5</span>.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Saloon</summary><aside class="call mais"><p>Todos os jogadores em jogo recuperam 1 ponto, você também. Não é uma Cerveja: não salva do último ponto fora do turno <span class="pg">p.&nbsp;6 e 11</span>.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Gatling</summary><aside class="call mais"><p>Um BANG! em todos os outros, a qualquer distância. Não é uma carta BANG!: você pode jogar Gatlings e ainda uma carta BANG! no mesmo turno <span class="pg">p.&nbsp;7</span>. Cada alvo pode cancelar com um Errou! <span class="pg">p.&nbsp;11</span>.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Indígenas!</summary><aside class="call mais"><p>Cada outro jogador pode descartar uma carta BANG!; quem não descarta perde 1 ponto. Errou! e Barril não servem <span class="pg">p.&nbsp;8</span>.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Duelo</summary><aside class="call mais"><p>Desafie qualquer jogador, a qualquer distância. O desafiado pode descartar um BANG!; depois você; e assim por diante. O primeiro jogador que não conseguir descartar perde 1 ponto, e o duelo acaba. Sem Errou! nem Barril. Os BANG! descartados no Duelo não contam para o limite do turno <span class="pg">p.&nbsp;8</span>.</p></aside></details>
+<details class="dobra edicao"><summary>Sobre a edição: "Pode descartar"</summary><aside class="call edicao"><p>No Indígenas! e no Duelo, o manual diz que o jogador "pode" descartar um BANG! <span class="pg">p.&nbsp;8</span>, mas, no Duelo, também diz que perde "o primeiro jogador que não conseguir descartar" <span class="pg">p.&nbsp;8</span>. O texto não decide se quem tem BANG! pode guardá-lo e aceitar a perda; combine na mesa antes da partida.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Pânico!</summary><aside class="call mais"><p>Pegue uma carta de um jogador à distância 1: aleatória da mão dele ou uma da frente dele, à sua escolha. A arma não muda esse alcance; Mustang e Escopo mudam <span class="pg">p.&nbsp;6 e 7</span>.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Cat Balou</summary><aside class="call mais"><p>Faça qualquer jogador, a qualquer distância, descartar uma carta: aleatória da mão ou uma da frente dele, à sua escolha <span class="pg">p.&nbsp;6 e 7</span>.</p></aside></details>
+<details class="dobra edicao"><summary>Sobre a edição: Barril contra Gatling</summary><aside class="call edicao"><p>O manual não trata do caso diretamente, mas o Barril dá o efeito de Errou! (símbolo na carta, p. 9), e qualquer efeito de Errou! cancela um símbolo de BANG!, como o da Gatling <span class="pg">p.&nbsp;7 e 11</span>. O guia lê que o Barril vale contra a Gatling.</p></aside></details>
+<details class="dobra resolvido"><summary>Ver um exemplo resolvido</summary><aside class="call resolvido"><p> <span class="pg">p.&nbsp;4, 5 e 8</span>. Seis jogadores: Ana, Bruno, Carlos, Denis, Elza e Fiona, nessa ordem. Ana tem uma Remington, alcance 3. Denis, em frente, está a 3, mas tem um Mustang: Ana o vê a 4, e a Remington não chega. Carlos e Elza estão a 2, ao alcance. Se Ana puser um Escopo, passa a ver Denis a 3, e a Remington alcança.</p></aside></details>
+<details class="dobra resolvido"><summary>Ver um exemplo resolvido</summary><aside class="call resolvido"><p>Ana desafia Carlos. Carlos tem 2 BANG!; Ana tem 1. Carlos descarta um, Ana descarta o dela, Carlos descarta o segundo. Ana não tem mais BANG! e perde 1 ponto: quem desafia também pode perder <span class="pg">p.&nbsp;8</span>.</p></aside></details>
+
+
+
+<details class="dobra pratica"><summary>Pratique esta etapa: exercícios com respostas</summary><aside class="call complete"><p class="rot">Tarefa · complete</p><p><strong>Complete.</strong> Na mesa do manual, Bruno, sentado entre Ana e Carlos, é eliminado.</p>
+<div class="quiz"><p class="q-p">A que distância Ana vê Carlos agora?</p><div class="q-ops"><button type="button" class="q-op" data-ok>1</button><button type="button" class="q-op">2</button><button type="button" class="q-op">3</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> O eliminado não conta mais: Carlos passa a ser vizinho de Ana <span class="pg">p.&nbsp;4</span>.</p></div></div></aside>
+<aside class="call suavez"><p class="rot">Tarefa · sua vez</p><p><strong>Sua vez.</strong></p>
+<div class="quiz"><p class="q-p">Ana tem uma Winchester e quer jogar Pânico! em Carlos, que está a 2. Pode?</p><div class="q-ops"><button type="button" class="q-op">Sim, a Winchester alcança 5</button><button type="button" class="q-op" data-ok>Não, o Pânico! alcança só a distância 1, e arma não muda distância</button><button type="button" class="q-op">Sim, se Carlos não tiver Mustang</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> O Pânico! vale para um jogador à distância 1, que só Mustang e Escopo modificam (p. 7; FAQ oficial).</p></div></div></aside>
+<aside class="call treino"><p class="rot">Treino rápido</p><p><strong>A distância.</strong> Mesa de 5: Ana, Bruno, Carlos, Denis e Elza, nessa ordem.</p>
+<div class="quiz"><p class="q-p">a) Elza, vizinha de Ana, põe um Mustang. A que distância Ana vê Elza?</p><div class="q-ops"><button type="button" class="q-op">1</button><button type="button" class="q-op" data-ok>2</button><button type="button" class="q-op">3</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> O Mustang soma 1 à distância com que os outros veem Elza: 1 + 1 <span class="pg">p.&nbsp;8</span>.</p></div></div>
+<div class="quiz"><p class="q-p">b) Ana então põe um Escopo. A que distância vê Elza?</p><div class="q-ops"><button type="button" class="q-op" data-ok>1</button><button type="button" class="q-op">0</button><button type="button" class="q-op">2</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> As duas cartas se combinam: 1 + 1 - 1 = 1 <span class="pg">p.&nbsp;5 e 8</span>.</p></div></div></aside></details>
+</section>
+<section class="bloco sec" id="etapa-3-sorte-eliminacao-e-fim"><h2><span class="num">4</span>Etapa 3: sorte, eliminação e fim</h2>
+<details class="dobra entender"><summary>Por que funciona assim</summary><aside class="call entender"><p>Barril, Prisão e Dinamite pedem um teste de sorte com o próprio baralho: mostram um naipe pequeno (às vezes com valores), um sinal de igual e o efeito <span class="pg">p.&nbsp;8</span>. Quem faz o "comprar!" vira a carta do topo da pilha, põe essa carta no descarte e olha o naipe no canto inferior esquerdo. Se bate, o efeito acontece; se não, nada. A carta virada nunca faz o próprio efeito <span class="pg">p.&nbsp;8 e 9</span>. A ordem dos valores é 2, 3, 4, 5, 6, 7, 8, 9, 10, J, Q, K, A <span class="pg">p.&nbsp;9</span>.</p></aside></details>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Barril</strong> <span class="pg">p.&nbsp;9</span></p>
+<ol><li>Você é alvo de um BANG! e tem um Barril à frente: faça "comprar!" antes de decidir se joga Errou!.</li><li>Copas: o tiro errou, como se você tivesse jogado Errou!.</li><li>Outro naipe: nada acontece, e você ainda pode jogar um Errou! da mão.</li></ol></aside>
+<figure class="fig"><img src="figuras/barril-comprar.webp" alt="O &quot;comprar!&quot; do Barril: a carta do topo vai para o descarte e mostra Copas, e o tiro é cancelado. Ilustração: manual Galápagos (p. 9)" loading="lazy" decoding="async"><figcaption>O "comprar!" do Barril: a carta do topo vai para o descarte e mostra Copas, e o tiro é cancelado. Ilustração: manual Galápagos <span class="pg">p.&nbsp;9</span></figcaption></figure>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Prisão</strong> <span class="pg">p.&nbsp;9</span></p>
+<ol><li>Jogue a Prisão à frente de qualquer jogador, a qualquer distância, menos o Xerife.</li><li>O preso faz "comprar!" antes de começar o turno.</li><li>Copas: descarta a Prisão e joga normalmente. Outro naipe: descarta a Prisão e pula o turno.</li></ol></aside>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Dinamite</strong> <span class="pg">p.&nbsp;9</span></p>
+<ol><li>Jogue a Dinamite à sua frente.</li><li>No começo do seu próximo turno, antes da fase 1, faça "comprar!".</li><li>Espadas de 2 a 9: ela explode. Descarte-a e perca 3 pontos de vida.</li><li>Outra carta: passe a Dinamite para o jogador à sua esquerda, que fará o teste no turno dele.</li></ol></aside>
+<details class="dobra mais"><summary>Regra adicional: Depois da explosão</summary><aside class="call mais"><p>O teste acontece antes da fase 1, e a regra da Dinamite, ao contrário da Prisão, não manda pular o turno <span class="pg">p.&nbsp;9</span>: quem sobrevive segue para a fase 1. Se os 3 pontos passam do que você tem, só escapa quem jogar Cervejas suficientes para ficar acima de zero; com 2 de vida, são 2 Cervejas (exemplo da p. 6).</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Preso continua no jogo</summary><aside class="call mais"><p>Quem está na Prisão continua sendo alvo de BANG! e pode jogar Errou! e Cerveja fora do turno <span class="pg">p.&nbsp;9</span>.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Dinamite e Prisão juntas</summary><aside class="call mais"><p>Teste a Dinamite primeiro <span class="pg">p.&nbsp;9</span>.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: A Dinamite circula</summary><aside class="call mais"><p>Ela passa de jogador em jogador até explodir ou até alguém tirá-la com Pânico! ou Cat Balou <span class="pg">p.&nbsp;9</span>.</p></aside></details>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Eliminação</strong> <span class="pg">p.&nbsp;4</span></p>
+<ol><li>Perdeu o último ponto de vida: você está eliminado, a menos que jogue na hora uma Cerveja.</li><li>Mostre a sua identidade e descarte todas as cartas da mão e da sua frente.</li><li>Era Fora da lei: quem o eliminou compra 3 cartas de recompensa, mesmo que seja outro Fora da lei.</li><li>Era Assistente e quem o eliminou foi o Xerife: o Xerife descarta todas as cartas da mão e da frente dele.</li></ol></aside>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Fim da partida</strong> <span class="pg">p.&nbsp;4</span></p>
+<ol><li>O Xerife morreu: se o Renegado é o único vivo, ele vence; senão, vencem os Fora da lei, vivos ou mortos.</li><li>O Renegado e todos os Fora da lei morreram: vencem o Xerife e os Assistentes.</li></ol></aside>
+<details class="dobra mais"><summary>Regra adicional: Quem leva a recompensa</summary><aside class="call mais"><p>Quem jogou a Gatling ou o Indígenas! responde pela eliminação que eles causam e leva a recompensa. O Fora da lei que joga um Duelo e morre nele não dá recompensa a ninguém (FAQ oficial). Morte por Dinamite também não, porque o dano não é de jogador nenhum <span class="pg">p.&nbsp;9</span>.</p></aside></details>
+<aside class="call atencao"><p class="rot">Atenção</p><p><strong>O Renegado precisa ser o último.</strong> Se o Xerife morre com outros vivos além do Renegado, vencem os Fora da lei, mesmo que todos os Fora da lei já tenham sido eliminados <span class="pg">p.&nbsp;4</span>.</p></aside>
+<details class="dobra resolvido"><summary>Ver um exemplo resolvido</summary><aside class="call resolvido"><p>Bruno, Fora da lei, tem 1 ponto. Elza joga BANG! nele, ele não tem Errou! nem Cerveja e sai do jogo. Bruno mostra a identidade e descarta tudo; Elza compra 3 cartas, seja qual for a identidade dela. Se Bruno fosse Assistente e Elza, o Xerife, ela descartaria todas as cartas dela <span class="pg">p.&nbsp;4</span>.</p></aside></details>
+
+
+<details class="dobra dica"><summary>Dica: Sugestão</summary><aside class="call dica"><p>O que cada um faz é a única pista da identidade: atirar no Xerife costuma denunciar um Fora da lei. O Renegado precisa do Xerife vivo até o fim, por isso costuma ajudá-lo no começo.</p></aside></details>
+<details class="dobra pratica"><summary>Pratique esta etapa: exercícios com respostas</summary><aside class="call complete"><p class="rot">Tarefa · complete</p><p><strong>Complete.</strong> Você está na Prisão e tem a Dinamite à sua frente.</p>
+<div class="quiz"><p class="q-p">Qual teste faz primeiro?</p><div class="q-ops"><button type="button" class="q-op" data-ok>O da Dinamite</button><button type="button" class="q-op">O da Prisão</button><button type="button" class="q-op">Você escolhe</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Com as duas em jogo, verifique a Dinamite primeiro <span class="pg">p.&nbsp;9</span>.</p></div></div></aside>
+<aside class="call suavez"><p class="rot">Tarefa · sua vez</p><p><strong>Sua vez.</strong></p>
+<div class="quiz"><p class="q-p">Vivos: Xerife, um Assistente, o Renegado e um Fora da lei. O Fora da lei morre. A partida acaba?</p><div class="q-ops"><button type="button" class="q-op">Sim, vencem o Xerife e o Assistente</button><button type="button" class="q-op" data-ok>Não, o Renegado ainda está vivo</button><button type="button" class="q-op">Sim, vence o Renegado</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Xerife e Assistentes só vencem com o Renegado e todos os Fora da lei mortos <span class="pg">p.&nbsp;4</span>.</p></div></div>
+<div class="quiz"><p class="q-p">Você tem um Barril e é alvo de um BANG!. O "comprar!" vira um Ás de Ouros. E agora?</p><div class="q-ops"><button type="button" class="q-op">O tiro errou, porque o Ás é a carta mais alta</button><button type="button" class="q-op">Você perde 1 ponto, sem defesa</button><button type="button" class="q-op" data-ok>O Barril falhou, mas você ainda pode jogar um Errou!</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> O Barril só funciona com Copas; se falhar, ainda vale o Errou! <span class="pg">p.&nbsp;9</span>.</p></div></div></aside></details>
+</section>
+<section class="bloco sec opc" id="situacoes-especiais"><h2><span class="num">5</span>Situações especiais<span class="tag-opc">Opcional</span></h2>
+<figure class="fig foto-sec"><img src="fotos/componentes-1.webp" alt="BANG!: os componentes" width="800" height="800" loading="lazy" decoding="async"><figcaption>Imagem: Abacusspiele · edição alemã</figcaption></figure>
+<details class="dobra sec-opc"><summary>Abrir esta seção</summary><p><strong>Os 16 personagens</strong> <span class="pg">p.&nbsp;10 e 11</span>. Cada jogador só precisa ler o seu; os outros ouvem as habilidades na preparação.</p>
+<div class="tab"><table><thead><tr><th>Personagem</th><th>Balas</th><th>Habilidade</th></tr></thead><tbody><tr><td data-label="Personagem">Bart Cassidy</td><td data-label="Balas">4</td><td data-label="Habilidade">Cada vez que perde pelo menos 1 ponto, compra 1 carta do baralho</td></tr><tr><td data-label="Personagem">Black Jack</td><td data-label="Balas">4</td><td data-label="Habilidade">Na fase 1, mostra a segunda carta; Copas ou Ouros, compra mais 1</td></tr><tr><td data-label="Personagem">Jane Calamidade</td><td data-label="Balas">4</td><td data-label="Habilidade">Usa BANG! como Errou! e vice-versa; o Errou! usado como BANG! conta como o BANG! do turno, salvo com Volcanic</td></tr><tr><td data-label="Personagem">El Gringo</td><td data-label="Balas">3</td><td data-label="Habilidade">Cada ponto que perde por carta de outro jogador lhe dá uma carta aleatória da mão desse jogador</td></tr><tr><td data-label="Personagem">Jesse Jones</td><td data-label="Balas">4</td><td data-label="Habilidade">Na fase 1, a primeira carta pode vir, aleatória, da mão de outro jogador</td></tr><tr><td data-label="Personagem">Jourdonnais</td><td data-label="Balas">4</td><td data-label="Habilidade">Tem um Barril o tempo todo; com um Barril de verdade, tenta duas vezes</td></tr><tr><td data-label="Personagem">Kit Carlson</td><td data-label="Balas">4</td><td data-label="Habilidade">Na fase 1, olha 3 cartas, fica com 2 e devolve 1 ao topo</td></tr><tr><td data-label="Personagem">Duke Sortudo</td><td data-label="Balas">4</td><td data-label="Habilidade">Em todo "comprar!", vira 2 cartas e escolhe; as duas vão para o descarte</td></tr><tr><td data-label="Personagem">Paul Regret</td><td data-label="Balas">3</td><td data-label="Habilidade">Tem um Mustang o tempo todo; com um de verdade, soma 2</td></tr><tr><td data-label="Personagem">Pedro Ramirez</td><td data-label="Balas">4</td><td data-label="Habilidade">Na fase 1, a primeira carta pode vir do topo do descarte</td></tr><tr><td data-label="Personagem">Rose Doolan</td><td data-label="Balas">4</td><td data-label="Habilidade">Tem um Escopo o tempo todo; com um de verdade, vê os outros a -2</td></tr><tr><td data-label="Personagem">Sid Ketchum</td><td data-label="Balas">4</td><td data-label="Habilidade">A qualquer momento, descarta 2 cartas da mão por 1 ponto de vida</td></tr><tr><td data-label="Personagem">Slab, o Assassino</td><td data-label="Balas">4</td><td data-label="Habilidade">Cancelar o BANG! dele exige 2 Errou!; o Barril bem-sucedido conta como 1</td></tr><tr><td data-label="Personagem">Suzy Lafayette</td><td data-label="Balas">4</td><td data-label="Habilidade">Assim que fica sem cartas na mão, compra 1</td></tr><tr><td data-label="Personagem">Sam, o Abutre</td><td data-label="Balas">4</td><td data-label="Habilidade">Pega para a mão todas as cartas de quem for eliminado</td></tr><tr><td data-label="Personagem">Willy the Kid</td><td data-label="Balas">4</td><td data-label="Habilidade">Joga quantos BANG! quiser no turno</td></tr></tbody></table></div>
+<details class="dobra mais"><summary>Regra adicional: Dúvidas de personagem (FAQ oficial)</summary><aside class="call mais"><p>Contra Slab, o Barril dá um só "comprar!"; a Gatling dele se cancela com um Errou!. Bart Cassidy e El Gringo que perdem o último ponto sem Cerveja morrem antes de comprar. Rose Doolan e Paul Regret mudam a distância também para o Pânico!. Sid Ketchum usa a habilidade fora do turno. Jane pode usar Errou! como BANG! num Duelo.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Na mesa</summary><aside class="call mais"><p>Nenhuma carta afeta as cartas de identidade e de personagem: não dá para roubá-las nem descartá-las. Pode conversar e blefar, mas não perguntar algo ligado à jogada de uma carta, como perguntar ao Xerife se pode jogar uma Gatling (FAQ oficial).</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Cerveja sem efeito</summary><aside class="call mais"><p>Pode jogar Cerveja com a vida cheia ou com só 2 jogadores; ela não faz nada (p. 6; FAQ oficial). O Saloon não cura quem já saiu (FAQ oficial).</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Várias partidas seguidas</summary><aside class="call mais"><p>Quem terminou vivo pode manter o personagem, sem as cartas; os eliminados sorteiam outro <span class="pg">p.&nbsp;4</span>.</p></aside></details></details>
+</section>
+<section class="bloco sec opc" id="avaliacao-final"><h2><span class="num">6</span>Avaliação final<span class="tag-opc">Opcional</span></h2>
+<figure class="fig foto-sec"><img src="fotos/componentes-1.webp" alt="BANG!: os componentes" width="800" height="800" loading="lazy" decoding="async"><figcaption>Imagem: Abacusspiele · edição alemã</figcaption></figure>
+<details class="dobra sec-opc"><summary>Abrir esta seção</summary><p>Responda sem consultar. Cada resposta diz o que reler.</p>
+<div class="quiz"><p class="q-p">1. O Xerife tirou um personagem de 3 balas. Com quantas cartas começa?</p><div class="q-ops"><button type="button" class="q-op">3</button><button type="button" class="q-op" data-ok>4</button><button type="button" class="q-op">5</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Uma bala a mais, e cartas iguais às balas <span class="pg">p.&nbsp;2</span>. Releia a etapa 1.</p></div></div>
+<div class="quiz"><p class="q-p">2. Mesa de 6. Denis está a 3 e tem um Mustang. Você tem uma Remington. Pode atirar nele?</p><div class="q-ops"><button type="button" class="q-op">Sim, a Remington alcança 3</button><button type="button" class="q-op" data-ok>Não, você o vê a 4</button><button type="button" class="q-op">Sim, se jogar dois BANG!</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> O Mustang soma 1, e a Remington alcança 3 <span class="pg">p.&nbsp;5 e 8</span>. Releia a etapa 2.</p></div></div>
+<div class="quiz"><p class="q-p">3. Num Duelo, você pode jogar Errou! para não perder o ponto?</p><div class="q-ops"><button type="button" class="q-op">Sim, como contra um BANG!</button><button type="button" class="q-op" data-ok>Não</button><button type="button" class="q-op">Só se tiver um Barril</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Errou! e Barril não valem no Duelo <span class="pg">p.&nbsp;8</span>; só Jane Calamidade pode descartar um Errou! como se fosse BANG! (p. 10; FAQ oficial). Releia a etapa 2.</p></div></div>
+<div class="quiz"><p class="q-p">4. Fora do seu turno, você leva o tiro que tira o seu último ponto. Tem um Saloon e uma Cerveja. O que salva você?</p><div class="q-ops"><button type="button" class="q-op">Qualquer um dos dois</button><button type="button" class="q-op">O Saloon, porque cura todos</button><button type="button" class="q-op" data-ok>Só a Cerveja</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> O Saloon não é uma Cerveja <span class="pg">p.&nbsp;6 e 11</span>. Releia a etapa 2.</p></div></div>
+<div class="quiz"><p class="q-p">5. No "comprar!" da Dinamite sai um Valete de Espadas. O que acontece?</p><div class="q-ops"><button type="button" class="q-op" data-ok>A Dinamite passa para a esquerda</button><button type="button" class="q-op">Explode: você perde 3 pontos</button><button type="button" class="q-op">Você a descarta sem dano</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Explode só com Espadas de 2 a 9 <span class="pg">p.&nbsp;9</span>. Releia a etapa 3.</p></div></div>
+<div class="quiz"><p class="q-p">6. O Renegado mata o Xerife, e ainda há um Fora da lei vivo. Quem vence?</p><div class="q-ops"><button type="button" class="q-op">O Renegado</button><button type="button" class="q-op" data-ok>Os Fora da lei</button><button type="button" class="q-op">Ninguém; a partida continua</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> O Renegado não é o único vivo <span class="pg">p.&nbsp;4</span>. Releia a etapa 3.</p></div></div>
+<aside class="call atencao"><p class="rot">Atenção</p><p><strong>Critério para começar a jogar.</strong> Acertou 5 ou 6? Monte a mesa e jogue, com a folha de consulta ao lado. Errou a 1, releia a etapa 1; de 2 a 4, a etapa 2; a 5 ou a 6, a etapa 3.</p></aside></details>
+</section>
+<section class="bloco sec ref" id="para-consultar-durante-a-partida"><h2><span class="num">7</span>Para consultar durante a partida</h2>
+<figure class="fig foto-sec"><img src="fotos/componentes-1.webp" alt="BANG!: os componentes" width="800" height="800" loading="lazy" decoding="async"><figcaption>Imagem: Abacusspiele · edição alemã</figcaption></figure>
+<p><strong>O turno</strong> (começa o Xerife, sentido horário). Antes da fase 1, teste a Dinamite e depois a Prisão, se estiverem à sua frente.</p>
+<ol><li>Compre 2 cartas.</li><li>Jogue o que quiser: 1 carta BANG!; nada com nome repetido à sua frente; 1 arma.</li><li>Descarte até ficar com tantas cartas quantas balas tem agora.</li></ol>
+<p><strong>Fora do seu turno:</strong> Errou! (tiro em você), Cerveja (só no golpe do último ponto) e BANG! descartado em resposta a Indígenas! ou Duelo <span class="pg">p.&nbsp;3, 6 e 8</span>.</p>
+<div class="tab"><table><thead><tr><th>Carta</th><th>Efeito</th><th>Alcance</th></tr></thead><tbody><tr><td data-label="Carta">BANG!</td><td data-label="Efeito">Alvo perde 1 ponto, se não cancelar</td><td data-label="Alcance">Sua arma</td></tr><tr><td data-label="Carta">Gatling</td><td data-label="Efeito">BANG! em todos; não é carta BANG!</td><td data-label="Alcance">Todos os outros</td></tr><tr><td data-label="Carta">Indígenas!</td><td data-label="Efeito">Cada um descarta um BANG! ou perde 1</td><td data-label="Alcance">Todos os outros</td></tr><tr><td data-label="Carta">Duelo</td><td data-label="Efeito">Descarte alternado de BANG!; perde 1 quem parar</td><td data-label="Alcance">Qualquer jogador</td></tr><tr><td data-label="Carta">Pânico!</td><td data-label="Efeito">Pegue uma carta</td><td data-label="Alcance">Distância 1</td></tr><tr><td data-label="Carta">Cat Balou</td><td data-label="Efeito">Faça descartar uma carta</td><td data-label="Alcance">Qualquer jogador</td></tr><tr><td data-label="Carta">Cerveja / Saloon</td><td data-label="Efeito">+1 ponto para você / para todos</td><td data-label="Alcance"></td></tr><tr><td data-label="Carta">Diligência / Wells Fargo / Empório</td><td data-label="Efeito">Compre 2 / 3 / 1 de várias abertas</td><td data-label="Alcance"></td></tr><tr><td data-label="Carta">Mustang / Escopo</td><td data-label="Efeito">Os outros veem você a +1 / você vê a -1</td><td data-label="Alcance"></td></tr><tr><td data-label="Carta">Barril</td><td data-label="Efeito">"comprar!": Copas = Errou!</td><td data-label="Alcance"></td></tr><tr><td data-label="Carta">Prisão</td><td data-label="Efeito">"comprar!": Copas joga, senão pula; nunca no Xerife</td><td data-label="Alcance">Qualquer jogador</td></tr><tr><td data-label="Carta">Dinamite</td><td data-label="Efeito">"comprar!": Espadas 2 a 9, perde 3; senão, à esquerda</td><td data-label="Alcance"></td></tr></tbody></table></div>
+<p><strong>Armas:</strong> Colt. 45 e Volcanic 1; Schofield 2; Remington 3; Rev. Carabine 4; Winchester 5.</p>
+<p><strong>Eliminação:</strong> mostre a identidade e descarte tudo. Matou Fora da lei: compre 3. Xerife matou Assistente: descarta tudo.</p>
+<p><strong>Fim:</strong> Xerife morto: vence o Renegado se for o único vivo; senão, os Fora da lei. Renegado e Fora da lei mortos: vencem Xerife e Assistentes.</p>
+</section>
+<section class="bloco sec" id="fontes"><h2><span class="num">8</span>Fontes</h2>
+<figure class="fig foto-sec"><img src="fotos/componentes-1.webp" alt="BANG!: os componentes" width="800" height="800" loading="lazy" decoding="async"><figcaption>Imagem: Abacusspiele · edição alemã</figcaption></figure>
+<ul><li>Galápagos. <em>BANG!: livro de regras</em> (edição brasileira, BNG001, "v1.0", 12 páginas, 2025; tradução de Karen Nakaoka; jogo de Emiliano Sciarra). Biblioteca de downloads da Asmodee Brasil, <a href="https://www.asmodee.com.br/download-library">https://www.asmodee.com.br/download-library</a>. Consultado em 04/11/2026.</li><li>dV Giochi. <em>BANG!: F.A.Q.</em> (© MMX daVinci Editrice), <a href="https://www.dvgiochi.com/giochi/bang/download/Bang!_FAQ_ENG.pdf">https://www.dvgiochi.com/giochi/bang/download/Bang!_FAQ_ENG.pdf</a>, e <em>BANG! Card List</em> (lista oficial das cartas), na página oficial do jogo, <a href="https://www.dvgiochi.com/catalogo/bang/">https://www.dvgiochi.com/catalogo/bang/</a> (4 a 7 jogadores, 8+, 20 a 40 min). Consultados em 04/11/2026.</li><li>dV Giochi. <em>BANG!: rules</em> (manual oficial em inglês, 2020), <a href="https://www.dvgiochi.com/giochi/bang/download/Bang_rules_ENG.pdf">https://www.dvgiochi.com/giochi/bang/download/Bang_rules_ENG.pdf</a>, para conferir a tradução. Consultado em 04/11/2026.</li></ul>
+</section>
+
+<p class="nota-pe">Regras conferidas no livro de regras da edição brasileira de BANG! (Galápagos, código BNG001, versão 1.0, tradução de Karen Nakaoka), baixado da biblioteca de downloads da Asmodee Brasil, com a FAQ oficial da dV Giochi, a editora italiana, para as dúvidas que o manual não resolve. Este guia é do jogo de cartas base; o BANG! O Jogo de Dados e as expansões têm regras próprias.</p>
+</div></main>
+
+<!--rodape--><footer><div class="in">
+ <span>Elite Boardgamers</span><a href="../../noticias/">Notícias</a><a href="../../resenhas/">Resenhas</a><a href="../../como-jogar/">Como jogar</a><a href="../../lancamentos/">Lançamentos</a><a href="../../black/">Black de Verdade</a><a href="../../jogos-de-tabuleiro/">Guia de jogos de tabuleiro</a><a href="../../premios/">Prêmios</a><a href="../../politica-editorial/">Política editorial</a>
+ <a href="https://www.instagram.com/eliteboardgamers/" target="_blank" rel="noopener">Instagram @eliteboardgamers</a><a href="https://chat.whatsapp.com/IgQQkJdSkzHBaEq3UwFeAo" target="_blank" rel="noopener">Grupo do WhatsApp</a>
+</div></footer>
+<div class="barra-lt fora" role="region" aria-label="Ações da página"><div class="cpw" data-texto=""><a class="cp" href="https://wa.me/" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="M8.2 10.8l7.6-4.4M8.2 13.2l7.6 4.4"/></svg><span>Compartilhar</span></a><div class="cp-menu" hidden><a class="cp-op zap-op" href="https://wa.me/" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8.4 19l-4.4 1Z"/><path d="M9.2 8.6c.3-.5.8-.5 1-.1l.7 1.5c.1.3 0 .6-.2.8l-.4.4c.5 1.1 1.4 2 2.5 2.5l.4-.4c.2-.2.5-.3.8-.2l1.5.7c.4.2.4.7-.1 1-.7.5-1.6.6-2.4.3a7 7 0 0 1-4.2-4.2c-.3-.8-.2-1.7.4-2.3Z"/></svg>WhatsApp</a><button type="button" class="cp-op"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h8"/></svg>Copiar link</button></div><p class="cp-st" role="status"></p></div><script>(()=>{const pega=c=>({u:c.dataset.url||location.href,t:c.dataset.texto||document.title});
+document.querySelectorAll('.cpw:not(.ok)').forEach(c=>{c.classList.add('ok');const b=c.querySelector('.cp');
+ const n=document.createElement('button');n.type='button';n.className=b.className;n.innerHTML=b.innerHTML;n.setAttribute('aria-expanded','false');b.replaceWith(n)});
+if(window.__cp)return;window.__cp=1;
+const celular=()=>navigator.share&&matchMedia('(pointer:coarse)').matches;
+const fecha=()=>document.querySelectorAll('.cp-menu:not([hidden])').forEach(m=>{m.hidden=true;m.parentNode.querySelector('.cp').setAttribute('aria-expanded','false')});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')fecha()});
+document.addEventListener('click',async ev=>{const c=ev.target.closest('.cpw');if(!c){fecha();return}
+ const {u,t}=pega(c),m=c.querySelector('.cp-menu'),st=c.querySelector('.cp-st'),el=ev.target.closest('.cp,.cp-op');if(!el)return;
+ if(el.classList.contains('cp')){
+  if(celular()){try{await navigator.share({title:document.title,text:t,url:u})}catch(e){}return}
+  const abre=m.hidden;fecha();if(!abre)return;
+  m.querySelector('.zap-op').href='https://wa.me/?text='+encodeURIComponent(t+' '+u);
+  const r=c.getBoundingClientRect();m.classList.toggle('sobe',!!c.closest('.barra-lt')||r.bottom>innerHeight-140);m.classList.toggle('dir',r.left>innerWidth-220);
+  m.hidden=false;el.setAttribute('aria-expanded','true');m.querySelector('.cp-op').focus();return}
+ if(el.classList.contains('zap-op')){fecha();return}
+ fecha();let ok=false;try{await navigator.clipboard.writeText(u);ok=true}catch(e){
+  const i=document.createElement('input');i.value=u;document.body.append(i);i.select();try{ok=document.execCommand('copy')}catch(e2){}i.remove()}
+ st.textContent=ok?'Link copiado!':'Não deu para copiar o link.';clearTimeout(st._t);st._t=setTimeout(()=>st.textContent='',2500);
+ c.querySelector('.cp').focus()})})()</script><a class="lt-grupo" href="https://chat.whatsapp.com/IgQQkJdSkzHBaEq3UwFeAo" target="_blank" rel="noopener" aria-label="Entrar no grupo do WhatsApp da Elite"><img src="/favicon-48.png" width="48" height="48" alt=""><span>Grupo</span></a></div><script>(()=>{const l=document.querySelector('.barra-lt');if(!l)return;const vis=new Set();
+const poe=()=>{const on=scrollY>500&&!vis.size;l.classList.toggle('fora',!on);l.inert=!on;document.body.classList.toggle('lt-on',on)};
+const io=new IntersectionObserver(es=>{es.forEach(e=>e.isIntersecting?vis.add(e.target):vis.delete(e.target));poe()});
+document.querySelectorAll('.convite,footer').forEach(x=>io.observe(x));addEventListener('scroll',poe,{passive:true});poe()})()</script>
+<script>document.addEventListener('click',e=>{const b=e.target.closest('.q-op');if(!b||b.disabled)return;const q=b.closest('.quiz');
+q.querySelectorAll('.q-op').forEach(o=>{o.disabled=true;if(o.hasAttribute('data-ok'))o.classList.add('ok')});const ok=b.hasAttribute('data-ok');
+if(!ok)b.classList.add('erro');const x=q.querySelector('.q-exp');x.hidden=false;x.classList.toggle('mal',!ok);x.querySelector('.q-res').textContent=ok?'Isso!':'Não é essa.';});
+(()=>{const g=document.querySelector('.guia-prog');if(!g)return;const t=g.querySelector('.gp-t'),b=g.querySelector('.gp-b');
+const secs=[...document.querySelectorAll('.sec[id]')],idx=document.querySelector('.indice');
+const poe=()=>{const y=scrollY+innerHeight*.3;let at=null;for(const s of secs){if(s.offsetTop<=y)at=s}
+ t.textContent=at&&scrollY>idx.offsetTop?at.querySelector('h2').textContent.replace(/^\d+/,'').trim():'Neste guia';
+ const h=document.documentElement.scrollHeight-innerHeight;b.style.transform='scaleX('+(h>0?Math.min(1,scrollY/h):0)+')'};
+addEventListener('scroll',poe,{passive:true});addEventListener('resize',poe);poe()})();
+document.addEventListener('click',e=>{const y=e.target.closest('.yt');if(!y)return;const f=document.createElement('iframe');
+f.src='https://www.youtube-nocookie.com/embed/'+y.dataset.id+'?start='+y.dataset.t+'&autoplay=1&rel=0';f.title=y.getAttribute('aria-label');
+f.allow='autoplay; encrypted-media; picture-in-picture';f.allowFullscreen=true;y.replaceWith(f)});</script><!--/rodape-->
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "b37421bd1ade44f1a59e46b96626bf03"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

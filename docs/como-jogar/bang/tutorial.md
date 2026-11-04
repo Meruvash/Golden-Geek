@@ -8,7 +8,7 @@
 
 ### A ideia do jogo
 
-Cada jogador recebe em segredo uma **identidade**. Só o **Xerife** se mostra; os outros podem ser Assistentes (do lado dele), Fora da lei (querem matá-lo) ou o Renegado (quer ser o último vivo). Você joga cartas para atirar, se esquivar e se curar, e cada tiro custa **pontos de vida**, marcados com balas. Como as identidades são secretas, metade do jogo é descobrir em quem atirar (p. 1).
+Cada jogador recebe em segredo uma **identidade**. Só o **Xerife** se mostra; os outros podem ser Assistentes (do lado dele), Fora da lei (querem matá-lo) ou o Renegado (quer ser o último vivo). Você joga cartas para atirar, se esquivar e se curar, e cada tiro custa **pontos de vida**, marcados com balas. Como as identidades são secretas (p. 2), boa parte da partida é descobrir quem é quem.
 
 ### Monte a mesa
 
@@ -16,13 +16,13 @@ Para 4 a 7 jogadores (p. 1).
 
 1. Cada jogador pega um tabuleiro e o põe à sua frente (p. 2).
 2. Separe as identidades: com 4, Xerife, Renegado e 2 Fora da lei; com 5, mais 1 Assistente; com 6, Xerife, Renegado, 3 Fora da lei e 1 Assistente; com 7, Xerife, Renegado, 3 Fora da lei e 2 Assistentes. Dê uma a cada um, virada para baixo. O Xerife vira a dele; os outros guardam segredo (p. 2).
-3. Dê um personagem a cada jogador, virado para cima. Cada um lê a habilidade em voz alta e pega tantas balas quantas o personagem mostra. O Xerife pega uma bala a mais (p. 2).
+3. Embaralhe os personagens e dê um a cada jogador, virado para cima. Cada um lê a habilidade em voz alta e pega tantas balas quantas o personagem mostra. O Xerife pega uma bala a mais (p. 2).
 4. Sobras de identidades, personagens e tabuleiros voltam para a caixa (p. 2).
-5. Embaralhe as 80 cartas de jogo e dê a cada um tantas cartas quantas balas ele tem. O resto é a pilha de compra, com espaço ao lado para o descarte (p. 2).
+5. Embaralhe as 80 cartas de jogo e dê a cada um tantas cartas quantas balas ele tem. O resto é a pilha de compra, com espaço ao lado para o descarte (p. 1 e 2).
 
 ### Seu primeiro turno
 
-O Xerife começa, e a vez segue no sentido horário. O turno tem três fases (p. 3):
+O Xerife começa, e a vez segue no sentido horário, ou seja, passa para o jogador à esquerda. O turno tem três fases (p. 3):
 
 1. **Compre duas cartas** do topo da pilha.
 2. **Jogue quantas cartas quiser**, com três limites: só 1 carta BANG! por turno; nunca duas cartas com o mesmo nome à sua frente; só 1 arma à sua frente.
@@ -30,9 +30,9 @@ O Xerife começa, e a vez segue no sentido horário. O turno tem três fases (p.
 
 Carta de **borda marrom** vai para o descarte e faz efeito na hora. Carta de **borda azul** (armas, Mustang, Barril e outras) fica à sua frente e vale até sair de lá (p. 3). Você começa com o Colt. 45 impresso no tabuleiro, que alcança só os vizinhos; cada arma tem na mira o número do alcance dela (p. 5).
 
-Um **BANG!** num jogador ao seu alcance tira 1 ponto de vida dele: ele descarta uma bala. Ele pode evitar o tiro na hora, mesmo fora da vez, jogando um **Errou!**; o BANG! vai para o descarte de qualquer jeito (p. 6).
+Um **BANG!** num jogador ao seu alcance tira 1 ponto de vida dele: ele descarta uma bala na pilha do meio da mesa. Ele pode evitar o tiro na hora, mesmo fora da vez, jogando um **Errou!**; o BANG! vai para o descarte de qualquer jeito (p. 6).
 
-> [!resolvido] **Exemplo resolvido.** Você é o Xerife, com um personagem de 4 balas: joga com 5 e recebeu 5 cartas. Compra 2 e fica com 7: BANG!, BANG!, Errou!, Cerveja, Schofield, Mustang e Pânico!. Põe a Schofield (alcance 2) e o Mustang à sua frente. Atira com um BANG! num jogador a 2 lugares; ele joga Errou!, e as duas cartas vão para o descarte. O segundo BANG! fica na mão. Joga Pânico! no vizinho da esquerda e tira, sem olhar, uma carta da mão dele. Mão final: 4 cartas, para um limite de 5. Não descarta nada (p. 3, 5 a 7).
+> [!resolvido] **Exemplo resolvido.** Você é o Xerife, com um personagem de 4 balas: joga com 5 e recebeu 5 cartas. Compra 2 e fica com 7: BANG!, BANG!, Errou!, Cerveja, Schofield, Mustang e Pânico!. Põe à sua frente a Schofield (arma de alcance 2) e o Mustang (cavalo que deixa você 1 lugar mais longe para os outros). Atira com um BANG! num jogador a 2 lugares; ele joga Errou!, e as duas cartas vão para o descarte. O segundo BANG! fica na mão. Joga Pânico! (pega uma carta de um jogador à distância 1) no vizinho da esquerda e tira, sem olhar, uma carta da mão dele. Mão final: 4 cartas, para um limite de 5. Não descarta nada (p. 3, 5 a 7).
 
 > [!complete] **Complete.**
 >
@@ -69,7 +69,7 @@ Se o Xerife morre, vencem os Fora da lei, a menos que o Renegado seja o único v
 
 BANG! é um jogo de cartas de faroeste, de Emiliano Sciarra, para 4 a 7 jogadores a partir de 8 anos (p. 1 e 12); a página oficial da dV Giochi indica partidas de 20 a 40 minutos. Cada jogador é um personagem do Velho Oeste com uma identidade secreta que define o lado dele: a lei (Xerife e Assistentes), os Fora da lei ou o Renegado, sozinho (p. 1).
 
-Não há pontos: a partida acaba quando um lado cumpre o objetivo (p. 4). O turno é simples; o que pede atenção são três ideias: a **distância**, que decide quem você alcança; o **limite de mão**, que encolhe com os tiros; e o **"comprar!"**, o teste de sorte de algumas cartas.
+Não há pontos: a partida acaba quando um lado cumpre o objetivo (p. 4). Três ideias pedem atenção: a **distância**, que decide quem você alcança; o **limite de mão**, que encolhe com os tiros; e o **"comprar!"**, o teste de sorte de algumas cartas.
 
 Não confunda com **BANG! O Jogo de Dados**, outra caixa, com regras próprias.
 
@@ -79,7 +79,7 @@ Três etapas: montar e jogar um turno; atirar e se defender; sorte, eliminação
 
 ## 2. Etapa 1: montar a mesa e jogar um turno
 
-> [!entender] **Para entender.** O **Xerife** quer eliminar os Fora da lei e o Renegado; os **Assistentes** vencem com ele; os **Fora da lei** querem matá-lo, mesmo eliminando uns aos outros no caminho; o **Renegado** quer ser o último em jogo (p. 1). Um Assistente não tem como provar quem é: mostra o lado pelo que faz.
+> [!entender] **Para entender.** O **Xerife** quer eliminar os Fora da lei e o Renegado; os **Assistentes** vencem com ele; os **Fora da lei** querem matá-lo, mesmo eliminando uns aos outros no caminho; o **Renegado** quer ser o último em jogo (p. 1). A identidade é secreta (p. 2); o lado aparece pelo que cada um faz.
 
 !fig[As cartas de identidade: Xerife, Fora da lei e, atrás, o verso das cartas. Ilustração: manual Galápagos (p. 1)](figuras/identidades.webp)
 
@@ -87,8 +87,8 @@ Três etapas: montar e jogar um turno; atirar e se defender; sorte, eliminação
 >
 > 1. Cada jogador pega um tabuleiro, para identidade, personagem, arma e balas.
 > 2. Identidades pela tabela abaixo, uma para cada, virada para baixo. O Xerife vira a dele; os outros guardam segredo.
-> 3. Um personagem para cada, virado para cima; cada um lê a habilidade em voz alta.
-> 4. Balas iguais às do personagem; o Xerife pega uma a mais. As sobras voltam para a caixa.
+> 3. Personagens embaralhados, um para cada, virado para cima; cada um lê a habilidade em voz alta. O manual não define os lugares à mesa.
+> 4. Balas iguais às do personagem; o Xerife pega uma a mais. Sobras de identidades, personagens e tabuleiros voltam para a caixa. As balas que alguém perde vão para uma pilha no meio da mesa (p. 6).
 > 5. Cartas de jogo iguais às balas, viradas para baixo. O resto é a pilha de compra.
 
 | Jogadores | Xerife | Renegado | Fora da lei | Assistentes |
@@ -100,7 +100,7 @@ Três etapas: montar e jogar um turno; atirar e se defender; sorte, eliminação
 
 !fig[Uma carta de personagem, Jesse Jones; o círculo vermelho marca as balas impressas, os pontos de vida com que ele começa. Ilustração: manual Galápagos (p. 2)](figuras/personagem.webp)
 
-> [!entender] **Para entender: a bala faz duas coisas.** As balas são os seus **pontos de vida**, quantas vezes você aguenta ser atingido, e são também o seu **limite de mão**: no fim do turno, você só fica com tantas cartas quantas balas tiver naquele momento (p. 2). Cada tiro dói duas vezes. No exemplo do manual, Jesse Jones tem 4 pontos de vida e guarda até 4 cartas; com 3, guarda 3 (p. 2).
+> [!entender] **Para entender: a bala faz duas coisas.** As balas são os seus **pontos de vida** e também o seu **limite de mão** no fim do turno (p. 2): cada tiro dói duas vezes. Jesse Jones, com 4 pontos de vida, guarda até 4 cartas; com 3, guarda 3 (p. 2).
 
 > [!mais] **Primeiras partidas.** O manual sugere tirar do baralho as cartas com o símbolo de livro, para uma versão mais simples (p. 2). Pela lista oficial de cartas da dV Giochi, são Duelo, Indígenas!, Empório, Prisão e Dinamite; confira o livrinho impresso na carta.
 
@@ -111,7 +111,7 @@ Três etapas: montar e jogar um turno; atirar e se defender; sorte, eliminação
 > 3. **Fase 2:** jogue quantas cartas quiser, inclusive nenhuma. Limites: 1 carta BANG! por turno; 1 cópia de cada carta à sua frente (mesmo nome é cópia); 1 arma à sua frente. Ao pôr uma arma nova, descarte a antiga.
 > 4. **Fase 3:** descarte da mão o que passar do seu limite, igual às balas que você tem agora. Passe a vez.
 
-> [!entender] **Para entender: marrom e azul.** A **borda marrom** quer dizer "jogue e descarte": a carta vai para a pilha de descarte e faz o efeito escrito ou desenhado nela. A **borda azul** são armas e objetos: ficam viradas para cima à sua frente (a Prisão, na frente de outro jogador), "em jogo", até serem descartadas, tiradas por outra carta (uma Cat Balou, por exemplo) ou até um evento próprio, como a explosão da Dinamite. Não há limite de cartas azuis à sua frente, desde que nenhuma repita o nome de outra (p. 3).
+> [!entender] **Para entender: marrom e azul.** A **borda marrom** quer dizer "jogue e descarte": a carta vai para o descarte e faz o efeito nela. A **borda azul** são armas e objetos: ficam à sua frente (a Prisão, na de outro jogador), "em jogo", até serem descartadas, tiradas por outra carta (uma Cat Balou) ou até um evento próprio, como a explosão da Dinamite. Não há limite de cartas azuis à sua frente, desde que nenhuma repita o nome de outra (p. 3).
 
 !fig[Um Duelo, carta de borda marrom, e um Barril, carta de borda azul. Ilustração: manual Galápagos (p. 3)](figuras/tipos-de-carta.webp)
 
@@ -125,7 +125,7 @@ Três etapas: montar e jogar um turno; atirar e se defender; sorte, eliminação
 
 > [!atencao] **O limite de mão é o de agora.** O Xerife que começou com 5 balas e está com 2 guarda 2 cartas no fim do turno (p. 2 e 3).
 
-> [!resolvido] **Exemplo resolvido.** Partida de 4. O Xerife tirou Paul Regret, de 3 balas, e joga com 4; os outros têm 4, 4 e 3 balas. As mãos iniciais somam 15 cartas, e ficam 65 na pilha (p. 2 e 10). Num turno, um jogador com 4 balas e 4 cartas compra 2 (6 na mão), joga a Wells Fargo (5) e compra 3 (8). Põe uma Volcanic e um Barril à frente dele (6 na mão) e, na fase 3, descarta 2 (p. 3 e 7).
+> [!resolvido] **Exemplo resolvido.** Partida de 4. O Xerife tirou Paul Regret, de 3 balas, e joga com 4; os outros têm 4, 4 e 3 balas. As mãos iniciais somam 15 cartas, e ficam 65 na pilha (p. 1, 2 e 10). Num turno, um jogador com 4 balas compra 2 (6 na mão), joga a Wells Fargo e compra 3 (8), põe uma Volcanic e um Barril à frente (6) e, na fase 3, descarta 2 (p. 3 e 7).
 
 > [!complete] **Complete.** Você tem uma Schofield à sua frente e joga uma Winchester.
 >
@@ -179,11 +179,11 @@ Remington e Volcanic aparecem no manual (p. 5); os outros alcances vêm da lista
 
 > [!passos] **Passo a passo: Cerveja** (p. 6)
 >
-> 1. Recupere 1 ponto de vida: pegue uma bala da pilha. Nunca passe das balas iniciais; ela só cura quem a joga.
+> 1. Recupere 1 ponto de vida: pegue uma bala da pilha. Nunca passe das balas com que você começou (para o Xerife, contando a extra) (p. 2 e 6); ela só cura quem a joga.
 > 2. Jogue-a no seu turno, ou fora dele só quando acabou de levar o golpe que tira o seu último ponto.
 > 3. Com só 2 jogadores restantes, ela não tem efeito.
 
-> [!atencao] **Errou! só protege você.** Ele cancela tiros dirigidos a você, nunca a outro jogador (p. 6). Qualquer carta com o símbolo de Errou! cancela o efeito de uma carta com o símbolo de BANG! (p. 11).
+> [!atencao] **Errou! só protege você.** Ele cancela tiros dirigidos a você, nunca a outro jogador (p. 6). Qualquer carta com o símbolo de Errou! cancela o efeito de uma carta com o símbolo de BANG! (p. 11). Os símbolos ficam no pé das cartas e nas cartas de resumo (p. 1, 6 e 7): o de BANG! está na carta BANG! e na Gatling; o de Errou!, no Errou! e no Barril (lista oficial de cartas).
 
 > [!mais] **Volcanic.** Com ela, você joga quantos BANG! quiser no turno, no mesmo alvo ou em outros, todos à distância 1 (p. 5).
 
@@ -193,15 +193,15 @@ Remington e Volcanic aparecem no manual (p. 5); os outros alcances vêm da lista
 
 > [!mais] **Indígenas!** Cada outro jogador pode descartar uma carta BANG!; quem não descarta perde 1 ponto. Errou! e Barril não servem (p. 8).
 
-> [!mais] **Duelo.** Desafie qualquer jogador, a qualquer distância. O desafiado pode descartar um BANG!; depois você; e assim por diante. O primeiro que não descartar perde 1 ponto, e o duelo acaba. Sem Errou! nem Barril. Os BANG! descartados no Duelo não contam para o limite do turno (p. 8).
+> [!mais] **Duelo.** Desafie qualquer jogador, a qualquer distância. O desafiado pode descartar um BANG!; depois você; e assim por diante. O primeiro jogador que não conseguir descartar perde 1 ponto, e o duelo acaba. Sem Errou! nem Barril. Os BANG! descartados no Duelo não contam para o limite do turno (p. 8).
 
-> [!edicao] **"Pode descartar".** No Indígenas! e no Duelo, o manual diz que o jogador "pode" descartar um BANG! (p. 8). O guia lê ao pé da letra: quem tem BANG! pode guardá-lo e perder o ponto.
+> [!edicao] **"Pode descartar".** No Indígenas! e no Duelo, o manual diz que o jogador "pode" descartar um BANG! (p. 8), mas, no Duelo, também diz que perde "o primeiro jogador que não conseguir descartar" (p. 8). O texto não decide se quem tem BANG! pode guardá-lo e aceitar a perda; combine na mesa antes da partida.
 
 > [!mais] **Pânico!** Pegue uma carta de um jogador à distância 1: aleatória da mão dele ou uma da frente dele, à sua escolha. A arma não muda esse alcance; Mustang e Escopo mudam (p. 6 e 7).
 
 > [!mais] **Cat Balou.** Faça qualquer jogador, a qualquer distância, descartar uma carta: aleatória da mão ou uma da frente dele, à sua escolha (p. 6 e 7).
 
-> [!edicao] **Barril contra Gatling.** O Barril funciona quando você é alvo de um BANG! (p. 9), e a Gatling atira "um BANG!" em todos (p. 7), mas o manual não fala dos dois juntos. O guia lê que o Barril vale contra a Gatling; combine na mesa se preferir outra leitura.
+> [!edicao] **Barril contra Gatling.** O manual não trata do caso diretamente, mas o Barril dá o efeito de Errou! (símbolo na carta, p. 9), e qualquer efeito de Errou! cancela um símbolo de BANG!, como o da Gatling (p. 7 e 11). O guia lê que o Barril vale contra a Gatling.
 
 > [!resolvido] **Exemplo resolvido: a mesa do manual** (p. 4, 5 e 8). Seis jogadores: Ana, Bruno, Carlos, Denis, Elza e Fiona, nessa ordem. Ana tem uma Remington, alcance 3. Denis, em frente, está a 3, mas tem um Mustang: Ana o vê a 4, e a Remington não chega. Carlos e Elza estão a 2, ao alcance. Se Ana puser um Escopo, passa a ver Denis a 3, e a Remington alcança.
 
@@ -243,7 +243,7 @@ Remington e Volcanic aparecem no manual (p. 5); os outros alcances vêm da lista
 
 > [!passos] **Passo a passo: Barril** (p. 9)
 >
-> 1. Você é alvo de um BANG! e tem um Barril à frente: faça "comprar!".
+> 1. Você é alvo de um BANG! e tem um Barril à frente: faça "comprar!" antes de decidir se joga Errou!.
 > 2. Copas: o tiro errou, como se você tivesse jogado Errou!.
 > 3. Outro naipe: nada acontece, e você ainda pode jogar um Errou! da mão.
 
@@ -261,6 +261,8 @@ Remington e Volcanic aparecem no manual (p. 5); os outros alcances vêm da lista
 > 2. No começo do seu próximo turno, antes da fase 1, faça "comprar!".
 > 3. Espadas de 2 a 9: ela explode. Descarte-a e perca 3 pontos de vida.
 > 4. Outra carta: passe a Dinamite para o jogador à sua esquerda, que fará o teste no turno dele.
+
+> [!mais] **Depois da explosão.** O teste acontece antes da fase 1, e a regra da Dinamite, ao contrário da Prisão, não manda pular o turno (p. 9): quem sobrevive segue para a fase 1. Se os 3 pontos passam do que você tem, só escapa quem jogar Cervejas suficientes para ficar acima de zero; com 2 de vida, são 2 Cervejas (exemplo da p. 6).
 
 > [!mais] **Preso continua no jogo.** Quem está na Prisão continua sendo alvo de BANG! e pode jogar Errou! e Cerveja fora do turno (p. 9).
 
@@ -282,9 +284,7 @@ Remington e Volcanic aparecem no manual (p. 5); os outros alcances vêm da lista
 
 > [!mais] **Quem leva a recompensa.** Quem jogou a Gatling ou o Indígenas! responde pela eliminação que eles causam e leva a recompensa. O Fora da lei que joga um Duelo e morre nele não dá recompensa a ninguém (FAQ oficial). Morte por Dinamite também não, porque o dano não é de jogador nenhum (p. 9).
 
-> [!atencao] **O Renegado precisa ser o último.** Se o Xerife morre com outros vivos além do Renegado, vencem os Fora da lei, mesmo que todos já tenham sido eliminados (p. 4).
-
-> [!resolvido] **Exemplo resolvido: três testes de Dinamite.** No começo do seu turno, o "comprar!" vira um 7 de Espadas: a Dinamite explode, e você perde 3 pontos. Com um 10 de Espadas, ou um 5 de Copas, você a passaria para a esquerda e seguiria o turno (p. 9).
+> [!atencao] **O Renegado precisa ser o último.** Se o Xerife morre com outros vivos além do Renegado, vencem os Fora da lei, mesmo que todos os Fora da lei já tenham sido eliminados (p. 4).
 
 > [!resolvido] **Exemplo resolvido: uma eliminação.** Bruno, Fora da lei, tem 1 ponto. Elza joga BANG! nele, ele não tem Errou! nem Cerveja e sai do jogo. Bruno mostra a identidade e descarta tudo; Elza compra 3 cartas, seja qual for a identidade dela. Se Bruno fosse Assistente e Elza, o Xerife, ela descartaria todas as cartas dela (p. 4).
 
@@ -310,7 +310,7 @@ Remington e Volcanic aparecem no manual (p. 5); os outros alcances vêm da lista
 > - (x) O Barril falhou, mas você ainda pode jogar um Errou!
 > = O Barril só funciona com Copas; se falhar, ainda vale o Errou! (p. 9).
 
-> [!dica] **Sugestão.** O que cada um faz é a única pista da identidade: atirar no Xerife denuncia um Fora da lei. O Renegado precisa do Xerife vivo até o fim, por isso costuma ajudá-lo no começo.
+> [!dica] **Sugestão.** O que cada um faz é a única pista da identidade: atirar no Xerife costuma denunciar um Fora da lei. O Renegado precisa do Xerife vivo até o fim, por isso costuma ajudá-lo no começo.
 
 ## 5. Situações especiais
 
@@ -320,7 +320,7 @@ Remington e Volcanic aparecem no manual (p. 5); os outros alcances vêm da lista
 |---|---|---|
 | Bart Cassidy | 4 | Cada vez que perde pelo menos 1 ponto, compra 1 carta do baralho |
 | Black Jack | 4 | Na fase 1, mostra a segunda carta; Copas ou Ouros, compra mais 1 |
-| Jane Calamidade | 4 | Usa BANG! como Errou! e vice-versa; o Errou! usado como BANG! conta como o BANG! do turno |
+| Jane Calamidade | 4 | Usa BANG! como Errou! e vice-versa; o Errou! usado como BANG! conta como o BANG! do turno, salvo com Volcanic |
 | El Gringo | 3 | Cada ponto que perde por carta de outro jogador lhe dá uma carta aleatória da mão desse jogador |
 | Jesse Jones | 4 | Na fase 1, a primeira carta pode vir, aleatória, da mão de outro jogador |
 | Jourdonnais | 4 | Tem um Barril o tempo todo; com um Barril de verdade, tenta duas vezes |
@@ -335,11 +335,9 @@ Remington e Volcanic aparecem no manual (p. 5); os outros alcances vêm da lista
 | Sam, o Abutre | 4 | Pega para a mão todas as cartas de quem for eliminado |
 | Willy the Kid | 4 | Joga quantos BANG! quiser no turno |
 
-> [!mais] **Dúvidas de personagem (FAQ oficial).** Contra Slab, o Barril dá um só "comprar!"; a Gatling dele se cancela com um Errou!. Bart Cassidy e El Gringo que perdem o último ponto sem Cerveja morrem antes de comprar. Rose Doolan e Paul Regret mudam a distância também para o Pânico!. Sid Ketchum usa a habilidade fora do turno.
+> [!mais] **Dúvidas de personagem (FAQ oficial).** Contra Slab, o Barril dá um só "comprar!"; a Gatling dele se cancela com um Errou!. Bart Cassidy e El Gringo que perdem o último ponto sem Cerveja morrem antes de comprar. Rose Doolan e Paul Regret mudam a distância também para o Pânico!. Sid Ketchum usa a habilidade fora do turno. Jane pode usar Errou! como BANG! num Duelo.
 
-> [!mais] **Identidade e personagem não se tocam.** Nenhuma carta afeta essas cartas: não dá para roubá-las nem descartá-las (FAQ oficial).
-
-> [!mais] **Conversa na mesa.** Pode conversar e blefar; só não vale perguntar algo ligado à jogada de uma carta, como perguntar ao Xerife se pode jogar uma Gatling (FAQ oficial).
+> [!mais] **Na mesa.** Nenhuma carta afeta as cartas de identidade e de personagem: não dá para roubá-las nem descartá-las. Pode conversar e blefar, mas não perguntar algo ligado à jogada de uma carta, como perguntar ao Xerife se pode jogar uma Gatling (FAQ oficial).
 
 > [!mais] **Cerveja sem efeito.** Pode jogar Cerveja com a vida cheia ou com só 2 jogadores; ela não faz nada (p. 6; FAQ oficial). O Saloon não cura quem já saiu (FAQ oficial).
 
@@ -355,43 +353,37 @@ Responda sem consultar. Cada resposta diz o que reler.
 - ( ) 5
 = Uma bala a mais, e cartas iguais às balas (p. 2). Releia a etapa 1.
 
-?? 2. Você está com 2 balas e termina a fase 2 com 5 cartas. Quantas descarta?
-- ( ) 0
-- ( ) 2
-- (x) 3
-= O limite é igual às balas que você tem agora (p. 3). Releia a etapa 1.
-
-?? 3. Mesa de 6. Denis está a 3 e tem um Mustang. Você tem uma Remington. Pode atirar nele?
+?? 2. Mesa de 6. Denis está a 3 e tem um Mustang. Você tem uma Remington. Pode atirar nele?
 - ( ) Sim, a Remington alcança 3
 - (x) Não, você o vê a 4
 - ( ) Sim, se jogar dois BANG!
 = O Mustang soma 1, e a Remington alcança 3 (p. 5 e 8). Releia a etapa 2.
 
-?? 4. Num Duelo, você pode jogar Errou! para não perder o ponto?
+?? 3. Num Duelo, você pode jogar Errou! para não perder o ponto?
 - ( ) Sim, como contra um BANG!
 - (x) Não
 - ( ) Só se tiver um Barril
-= Errou! e Barril não valem no Duelo (p. 8). Releia a etapa 2.
+= Errou! e Barril não valem no Duelo (p. 8); só Jane Calamidade pode descartar um Errou! como se fosse BANG! (p. 10; FAQ oficial). Releia a etapa 2.
 
-?? 5. Fora do seu turno, você leva o tiro que tira o seu último ponto. Tem um Saloon e uma Cerveja. O que salva você?
+?? 4. Fora do seu turno, você leva o tiro que tira o seu último ponto. Tem um Saloon e uma Cerveja. O que salva você?
 - ( ) Qualquer um dos dois
 - ( ) O Saloon, porque cura todos
 - (x) Só a Cerveja
 = O Saloon não é uma Cerveja (p. 6 e 11). Releia a etapa 2.
 
-?? 6. No "comprar!" da Dinamite sai um Valete de Espadas. O que acontece?
+?? 5. No "comprar!" da Dinamite sai um Valete de Espadas. O que acontece?
 - (x) A Dinamite passa para a esquerda
 - ( ) Explode: você perde 3 pontos
 - ( ) Você a descarta sem dano
 = Explode só com Espadas de 2 a 9 (p. 9). Releia a etapa 3.
 
-?? 7. O Renegado mata o Xerife, e ainda há um Fora da lei vivo. Quem vence?
+?? 6. O Renegado mata o Xerife, e ainda há um Fora da lei vivo. Quem vence?
 - ( ) O Renegado
 - (x) Os Fora da lei
 - ( ) Ninguém; a partida continua
 = O Renegado não é o único vivo (p. 4). Releia a etapa 3.
 
-> [!atencao] **Critério para começar a jogar.** Acertou 6 ou 7? Monte a mesa e jogue, com a folha de consulta ao lado. Errou a 1 ou a 2, releia a etapa 1; de 3 a 5, a etapa 2; a 6 ou a 7, a etapa 3.
+> [!atencao] **Critério para começar a jogar.** Acertou 5 ou 6? Monte a mesa e jogue, com a folha de consulta ao lado. Errou a 1, releia a etapa 1; de 2 a 4, a etapa 2; a 5 ou a 6, a etapa 3.
 
 ## 7. Para consultar durante a partida
 
@@ -401,7 +393,7 @@ Responda sem consultar. Cada resposta diz o que reler.
 2. Jogue o que quiser: 1 carta BANG!; nada com nome repetido à sua frente; 1 arma.
 3. Descarte até ficar com tantas cartas quantas balas tem agora.
 
-**Fora do seu turno:** só Errou! (tiro em você) e Cerveja (no golpe do último ponto).
+**Fora do seu turno:** Errou! (tiro em você), Cerveja (só no golpe do último ponto) e BANG! descartado em resposta a Indígenas! ou Duelo (p. 3, 6 e 8).
 
 | Carta | Efeito | Alcance |
 |---|---|---|
@@ -426,6 +418,6 @@ Responda sem consultar. Cada resposta diz o que reler.
 
 ## 8. Fontes
 
-- Galápagos. *BANG!: livro de regras* (edição brasileira, código BNG001, "v1.0", 12 páginas, PDF de 27/03/2025; tradução de Karen Nakaoka, revisão de Camila Loricchio e Gabriel Novaes; © MMII-MMXII daVinci Editrice; jogo de Emiliano Sciarra). Biblioteca de downloads da Asmodee Brasil, https://www.asmodee.com.br/download-library. Consultado em 04/11/2026.
+- Galápagos. *BANG!: livro de regras* (edição brasileira, BNG001, "v1.0", 12 páginas, 2025; tradução de Karen Nakaoka; jogo de Emiliano Sciarra). Biblioteca de downloads da Asmodee Brasil, https://www.asmodee.com.br/download-library. Consultado em 04/11/2026.
 - dV Giochi. *BANG!: F.A.Q.* (© MMX daVinci Editrice), https://www.dvgiochi.com/giochi/bang/download/Bang!_FAQ_ENG.pdf, e *BANG! Card List* (lista oficial das cartas), na página oficial do jogo, https://www.dvgiochi.com/catalogo/bang/ (4 a 7 jogadores, 8+, 20 a 40 min). Consultados em 04/11/2026.
 - dV Giochi. *BANG!: rules* (manual oficial em inglês, 2020), https://www.dvgiochi.com/giochi/bang/download/Bang_rules_ENG.pdf, para conferir a tradução. Consultado em 04/11/2026.

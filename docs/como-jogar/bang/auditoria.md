@@ -101,3 +101,34 @@ Texto extraído do manual (fora do repositório): `/tmp/claude-0/-home-user/6a4d
 - **Extensão** acima de 5.000 no `wc` por causa das opções de múltipla escolha; sem elas, 4.889.
 - **Figuras pequenas.** As ilustrações do manual são pequenas; os recortes a 300 dpi ficam entre 234 e 559 px. O diagrama de distância e a carta de personagem são legíveis; o recorte do Barril (311 px) é o mais fraco.
 - **Teste com pessoas:** não feito. A autoverificação é sinal de fidelidade ao manual, não prova de que o texto ensina.
+
+## Auditoria independente (04/11/2026)
+
+Duas auditorias independentes: de regras (aprovada com correções, sem erro de regra) e de partida simulada (jogável com ajustes). O que mudou no tutorial:
+
+**Regras**
+1. Citações: "80 cartas" passou a (p. 1 e 2); "65 na pilha", a (p. 1, 2 e 10).
+2. "metade do jogo é descobrir em quem atirar (p. 1)" virou "Como as identidades são secretas (p. 2), boa parte da partida é descobrir quem é quem", sem citar a frase de efeito.
+3. "Um Assistente não tem como provar quem é" (sem apoio no manual) virou "A identidade é secreta (p. 2); o lado aparece pelo que cada um faz".
+4. Dica: "atirar no Xerife costuma denunciar um Fora da lei".
+5. Barril contra Gatling: reescrito; o manual não trata do caso, mas o Barril dá o efeito de Errou! (p. 9) e o efeito de Errou! cancela um símbolo de BANG! (p. 7 e 11).
+6. Duelo: o passo diz "o primeiro jogador que não conseguir descartar" (p. 8); o bloco [!edicao] cita as duas frases ("pode descartar" e "não conseguir descartar") e admite que o texto não decide; a mesa combina.
+7. Jane Calamidade: "salvo com Volcanic" de volta na tabela (p. 10); nas dúvidas de personagem, "Jane pode usar Errou! como BANG! num Duelo" (FAQ Q20); a explicação da avaliação sobre o Duelo cita a exceção de Jane.
+8. Figuras: `tipos-de-carta.webp` refeita com o símbolo do Barril inteiro (475 x 360); `distancia.webp` com o círculo A inteiro (559 x 458); `barril-comprar.webp` renderizada a 600 dpi (620 x 354; a imagem embutida no PDF é de baixa resolução, então o ganho é de tamanho, não de nitidez).
+
+**Partida simulada**
+- a. Folha de consulta: fora do turno valem Errou!, Cerveja (só no golpe do último ponto) e BANG! descartado em resposta a Indígenas! ou Duelo ("mesmo que não seja a vez dele", p. 8) (p. 3, 6 e 8).
+- b. Balas: a preparação diz que as balas perdidas vão para uma pilha no meio da mesa (p. 6), e o BANG! do "Comece" usa a mesma frase. O manual não diz onde ficam as balas que sobram na caixa no começo; o guia não inventa.
+- c. Vida máxima da Cerveja: "as balas com que você começou (para o Xerife, contando a extra)" (p. 2 e 6).
+- d. Personagens embaralhados (p. 2) nos dois passos de preparação; "O manual não define os lugares à mesa".
+- e. Dinamite: novo [!mais] "Depois da explosão": o teste é antes da fase 1 e a regra não manda pular o turno, ao contrário da Prisão (p. 9); 3 pontos além da vida só se salvam com Cervejas suficientes (exemplo da p. 6). [interpretada] quanto a seguir o turno: dedução da ordem descrita na p. 9.
+- f. "mesmo que todos os Fora da lei já tenham sido eliminados".
+- g. "sentido horário, ou seja, passa para o jogador à esquerda" uma vez, no "Comece".
+- h. Símbolos: ficam no pé das cartas e nas cartas de resumo (p. 1, 6 e 7); BANG! na carta BANG! e na Gatling, Errou! no Errou! e no Barril (lista oficial de cartas).
+- i. "Comece": glosas curtas da Schofield (arma de alcance 2), do Mustang e do Pânico!; a Volcanic não aparece no "Comece".
+- j. Barril: "faça \"comprar!\" antes de decidir se joga Errou!" (p. 9: "você ainda poderia ter tentado cancelar o BANG! com um Errou!").
+- k. Recompensa e limite de mão: o manual não diz nada específico; não entrou.
+
+**Cortes para compensar** (nenhuma regra perdida): exemplo resolvido dos três testes de Dinamite (o passo a passo e a avaliação cobrem), pergunta 2 da avaliação (repetia o "Sua vez" do "Comece"; critério refeito para 6 perguntas), textos mais curtos em "Para entender", fontes e dois blocos da FAQ fundidos em "Na mesa".
+
+**Portões depois das correções:** `checar_comece.py` ✅ (aviso só pelas exclamações dos nomes das cartas); `vicios.py` 0 avisos no tutorial e no JSON; travessão e meia-risca no tutorial: 0. Extensão: 5.636 palavras (`wc -w`), 5.004 sem as linhas de opção e explicação. `"publicar"` segue false.
