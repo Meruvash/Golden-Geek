@@ -2,6 +2,67 @@
 
 *Regras conferidas no livro de regras da edição brasileira atual de Dixit (Asmodee, código DIX601, versão 1.0, 2026, tradução de Paula Pizauro), baixado da biblioteca de downloads da Asmodee Brasil. O manual não tem número impresso nas páginas: o guia conta a capa como p. 1, e as regras ficam nas p. 2 e 3.*
 
+## setup. Montar a mesa passo a passo
+
+A montagem segue o quadro de preparação do manual, na p. 3, na mesma ordem: quatro passos, de 1 a 4. A lista de componentes está na p. 2.
+
+**Componentes da caixa** (p. 2)
+
+| Componente | Quantidade | Para que serve |
+|---|---|---|
+| Tabuleiro de jogo | 1 | Junta a trilha de pontuação (A), os 8 espaços de cartas (B) e a referência para os jogadores, o lembrete de como pontuar (C) |
+| Cartas Dixit | 84 | As cartas ilustradas da mão e da votação |
+| Discos de votação | 8 | Um por jogador; gira até mostrar o número da carta votada |
+| Coelhos de madeira | 8 | Um por jogador; marca os pontos na trilha |
+| Livreto de regras | 1 | |
+
+!fig[Uma partida montada, com o tabuleiro, os coelhos na trilha, a pilha de compra, cartas e discos de votação. Imagem: Asmodee UK · edição do Reino Unido](fotos/componentes-1.webp)
+
+**Os passos** (p. 3)
+
+**1. Cor de cada jogador.** Cada jogador escolhe uma cor e pega o coelho e o disco de votação dessa cor: 1 coelho e 1 disco por pessoa (p. 3).
+
+!fig[Passo 1: o disco de votação, um por jogador, na cor escolhida. Ilustração: manual Asmodee (p. 3)](figuras/setup-1-disco.webp)
+
+**2. Coelhos na trilha.** Cada jogador põe o seu coelho no início da trilha de pontuação do tabuleiro. O coelho mostra quantos pontos o jogador recebeu na partida inteira (p. 3). O tabuleiro precisa ficar ao alcance de todos, porque nele andam os coelhos e nos espaços das bordas ficam as cartas do turno (p. 2).
+
+!fig[Passo 2: o coelho no início da trilha de pontuação; A é a trilha, B um dos espaços de cartas e C a referência para os jogadores. Ilustração: manual Asmodee (p. 3)](figuras/setup-2-tabuleiro.webp)
+
+**3. Mãos.** Embaralhe as 84 cartas e dê 6 a cada jogador, viradas para baixo (p. 3).
+
+!fig[Passo 3: a mão de 6 cartas de um jogador. Ilustração: manual Asmodee (p. 3)](figuras/setup-3-cartas.webp)
+
+**4. Pilha de compra.** As cartas que sobram formam a pilha de compra (p. 3). Na ilustração do manual, ela fica com o verso para cima.
+
+!fig[Passo 4: a pilha de compra, com o verso para cima. Ilustração: manual Asmodee (p. 3)](figuras/setup-4-pilha.webp)
+
+!fig[Os quatro passos juntos, como no quadro de preparação do manual. Ilustração: manual Asmodee (p. 3)](figuras/preparacao.webp)
+
+**O que muda com o número de jogadores** (p. 2 e 3; pilha contada só com o jogo base)
+
+| Jogadores | Cartas na mão | Cartas no tabuleiro por turno | Espaços usados | Pilha depois de dar as cartas |
+|---|---|---|---|---|
+| 3 | 7 | 5 (cada não narrador entrega 2) | 1 a 5 | 63 |
+| 4 | 6 | 4 | 1 a 4 | 60 |
+| 5 | 6 | 5 | 1 a 5 | 54 |
+| 6 | 6 | 6 | 1 a 6 | 48 |
+| 7 | 6 | 7 | 1 a 7 | 42 |
+| 8 | 6 | 8 | 1 a 8 | 36 |
+
+> [!mais] **Com 3 jogadores.** Todos completam a mão com 7 cartas em vez de 6; cada jogador que não é o narrador entrega 2 cartas, e ficam 5 no tabuleiro, incluindo a do narrador (p. 3). As outras regras da variante estão nas Situações especiais.
+
+**O que volta para a caixa.** O manual não diz. Coelhos e discos das cores que ninguém escolheu não têm função na partida (p. 2 e 3).
+
+**Quem começa.** Depois da preparação, o primeiro jogador que pensar numa dica é o narrador do primeiro turno (p. 2).
+
+**Antes de começar, confira:** um coelho de cada jogador no início da trilha; um disco de votação na mão de cada jogador, da mesma cor do coelho; 6 cartas na mão de cada um (7 com 3 jogadores); o resto das cartas numa pilha de compra.
+
+?? Partida de 5 jogadores, só com o jogo base. Quantas cartas ficam na pilha de compra depois da preparação?
+- ( ) 59
+- (x) 54
+- ( ) 48
+= 5 jogadores com 6 cartas cada usam 30 das 84 cartas; sobram 54 (p. 3).
+
 ## 4min. Comece a jogar em 4 minutos
 
 **Meta:** em 4 minutos de leitura, montar a mesa e jogar o primeiro turno sem abrir o manual.
@@ -12,12 +73,12 @@ A cada turno, um jogador é o **narrador**. Ele olha as cartas da mão, escolhe 
 
 ### Monte a mesa
 
-Na caixa: 1 tabuleiro, 84 cartas Dixit, 8 discos de votação e 8 coelhos de madeira (p. 2). O tabuleiro tem a **trilha de pontuação**, por onde os coelhos andam um espaço por ponto, e 8 **espaços de carta** numerados nas bordas, onde as cartas do turno ficam expostas (p. 2). O **disco de votação** é girado até mostrar o número da carta em que você vota (p. 2). Estas regras valem de 4 a 8 jogadores; com 3, veja as Situações especiais (p. 3).
+Resumo da seção "Montar a mesa passo a passo", acima. O tabuleiro tem a **trilha de pontuação**, onde o coelho anda um espaço por ponto, e 8 **espaços de carta** numerados; o **disco de votação** gira até o número da carta votada (p. 2). Com 3 jogadores, veja as Situações especiais (p. 3).
 
-1. Cada jogador escolhe uma cor e pega o coelho e o disco de votação dessa cor.
-2. Os coelhos vão para o início da trilha de pontuação do tabuleiro.
-3. Embaralhe as 84 cartas e dê 6 a cada jogador, viradas para baixo.
-4. O resto vira a pilha de compra.
+1. Cada jogador: coelho e disco da sua cor.
+2. Coelhos no início da trilha.
+3. 6 cartas para cada um, viradas para baixo.
+4. O resto é a pilha de compra.
 
 ### Seu primeiro turno
 

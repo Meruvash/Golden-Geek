@@ -23,7 +23,9 @@
    "pagina": "https://www.explodingkittens.com/products/exploding-kittens-original-edition",
    "imagem": "https://www.explodingkittens.com/cdn/shop/products/EKG-2EXP_PDPContent_DTC_1400x1400InTheBox.png",
    "baixada_em": "2026-11-04",
-   "aprovada": true
+   "aprovada": true,
+   "fora": true,
+   "nota_fora": "mostra cartas de expansão em inglês que não vêm na Edição Original (04/11/2026)"
   }
  ]
 }

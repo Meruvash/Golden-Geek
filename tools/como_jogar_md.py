@@ -179,7 +179,9 @@ def blocos(linhas, dobrar=False):
                     itens[-1] += " " + linhas[i].strip()
                 i += 1
             tag = "ol" if ordenada else "ul"
-            out.append(f"<{tag}>" + "".join(f"<li>{inline(x)}</li>" for x in itens) + f"</{tag}>")
+            # lista numerada que recomeça depois de uma figura (passo 3, figura, passo 4...) continua a contagem
+            inicio = int(re.match(r"\d+", l).group(0)) if ordenada else 1
+            out.append(f"<{tag}" + (f' start="{inicio}"' if inicio != 1 else "") + ">" + "".join(f"<li>{inline(x)}</li>" for x in itens) + f"</{tag}>")
             continue
         if l.startswith("### "):
             out.append(f"<h3>{inline(l[4:].strip())}</h3>")

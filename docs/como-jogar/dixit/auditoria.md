@@ -120,3 +120,43 @@ j. Linha "Bônus, nos dois casos" acrescentada à tabela do Comece.
 k. "(só o jogo base)" nos dois exercícios com contagem da pilha (Complete da etapa 1 e exemplo resolvido da etapa 1).
 
 **Portões depois das correções:** `checar_comece.py` passa; `vicios.py` com 0 avisos no tutorial e no JSON; 0 travessão e meia-risca no tutorial. O JSON não precisou de mudança ("publicar" continua false).
+
+## Seção de montagem (04/11/2026)
+
+Pedido do editor: seção `## setup. Montar a mesa passo a passo` antes do "Comece a jogar", seguindo o quadro de preparação do manual (DIX601 p. 3) na mesma ordem. O "Monte a mesa" do Comece virou um resumo que remete a ela (`checar_comece.py` passa).
+
+**Passo → página**
+
+| Item da seção | Página |
+|---|---|
+| Componentes com quantidades (tabuleiro com A, B, C; 84 cartas; 8 discos; 8 coelhos; livreto) | 2 |
+| 1. Cada jogador escolhe uma cor e pega coelho e disco | 3 |
+| 2. Coelho no início da trilha; o coelho marca os pontos | 3 |
+| 2. Tabuleiro ao alcance de todos | consequência das p. 2 e 3 (coelhos andam na trilha; cartas vão para os espaços); o manual não tem passo próprio para o tabuleiro |
+| 3. Embaralhar as 84 e dar 6 a cada um, viradas para baixo | 3 |
+| 4. O resto forma a pilha de compra | 3; "verso para cima" é só o que a ilustração mostra, e o texto diz isso |
+| Tabela por número de jogadores: mão, cartas por turno, espaços usados | 2 e 3; espaços "de 1 até o número de cartas", como no exemplo de 6 (p. 2) |
+| Coluna "Pilha depois de dar as cartas" | conta: 84 menos jogadores x mão, só o jogo base (script `<scratchpad>/dixit/scripts/contas.py`) |
+| `[!mais]` de 3 jogadores | 3 |
+| O que volta para a caixa | o manual não diz; o texto diz isso |
+| Quem começa | 2 |
+| Pergunta final (5 jogadores, 54 na pilha) | 3; 84 - 30 = 54, conferido no script |
+
+**Figura → página**
+
+| Figura | Origem |
+|---|---|
+| `fotos/componentes-1.webp` | foto oficial, crédito de `como-jogar/dixit/fotos/fontes.json` ("Imagem: Asmodee UK · edição do Reino Unido"), usada uma vez |
+| `figuras/setup-1-disco.webp` (420 px de largura) | manual p. 3, passo 1 |
+| `figuras/setup-2-tabuleiro.webp` (1000 px) | manual p. 3, passo 2, com A, B e C |
+| `figuras/setup-3-cartas.webp` (800 px) | manual p. 3, passo 3 |
+| `figuras/setup-4-pilha.webp` (500 px) | manual p. 3, passo 4 |
+| `figuras/preparacao.webp` | reaproveitada: o quadro inteiro da p. 3 |
+
+Os recortes foram renderizados direto do PDF, só da parte gráfica, sem o texto dos passos. Os marcadores numerados (1 a 4) e as letras A, B e C da ilustração ficaram visíveis, sem máscara, porque correspondem aos números dos passos e às letras citadas nas legendas.
+
+**Passos sem ilustração no manual:** a ilustração da p. 3 mostra o disco, mas não mostra o coelho do passo 1 ao lado do disco; o coelho aparece só no passo 2, no início da trilha. O manual também não ilustra a escolha de cor nem o embaralhamento. Nada foi inventado para cobrir isso.
+
+**Formato:** o conversor (`tools/como_jogar_md.py`) fecha a lista numerada quando há uma figura entre os itens, e cada passo aparecia como "1.". Por isso os passos viraram parágrafos com o número em negrito ("**1. Cor de cada jogador.**"). Não mexi no conversor.
+
+**Portões:** `checar_comece.py` passa; `vicios.py` com 0 avisos; 0 travessão e meia-risca no tutorial; a conversão em memória mostra a seção antes do Comece, com as 6 imagens. O "publicar" do JSON não foi alterado.
