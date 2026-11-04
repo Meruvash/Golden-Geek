@@ -123,6 +123,14 @@ CSS = """<style>
 /* cupons */
 .cupons{display:grid;gap:10px;margin:12px 0 0;padding:0;list-style:none}
 @media (min-width:760px){.cupons{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.bk-alerta .al-os{margin:12px 0}.al-tag{font-weight:800;margin:0 0 10px}
+.al-btn{display:flex;align-items:center;justify-content:center;width:100%;min-height:56px;padding:14px 18px;border-radius:14px;background:#e3b23c;color:#111;font-weight:900;font-size:1.08rem;text-decoration:none;border:0;cursor:pointer;font-family:inherit;box-sizing:border-box}
+.bk-alerta a.al-btn,.bk-alerta a.al-btn:visited,.bk-alerta a.al-btn:hover{color:#111;text-decoration:none}
+.al-btn:active{transform:scale(.98)}.al-dica,.al-ajuda,.al-txt,.al-canal{font-size:.9rem;color:#c9ced8;margin:10px 0 0}.al-dica a,.al-ajuda a{color:#e3b23c;font-weight:700}
+.al-ajuda{background:#2a1f12;border:1px solid #6b5420;border-radius:10px;padding:10px}
+.al-passos{list-style:none;margin:0;padding:0;display:grid;gap:10px}.al-qr{display:block;background:#fff;border-radius:12px;padding:8px;width:180px;height:180px}
+.al-mini{background:transparent;border:1px solid #e3b23c;color:#e3b23c;border-radius:8px;padding:4px 10px;font-weight:700;cursor:pointer;font-family:inherit}
+@media (min-width:760px){.al-btn{width:auto;min-width:340px}}
 .bk-alerta{border:1px solid #3a3320;background:linear-gradient(180deg,#1a1710,#111419);border-radius:16px;padding:18px}
 .bk-passos{margin:10px 0 12px;padding-left:20px;display:grid;gap:6px;color:#c9ced8}.bk-passos a{color:#e3b23c;font-weight:700}
 .bk-passos code{background:#0b0d10;padding:2px 6px;border-radius:6px;color:#fff}
@@ -343,6 +351,18 @@ document.addEventListener('click',async e=>{const b=e.target.closest('.cup-cod')
 </script>"""
 
 
+JS_ALERTA = """ <script>
+ (()=>{const ua=navigator.userAgent,and=/Android/i.test(ua),ios=/iPhone|iPad|iPod/i.test(ua)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1);
+ const os=and?'android':ios?'ios':'pc';document.querySelectorAll('.al-os').forEach(b=>b.hidden=b.dataset.os!==os);
+ const a=document.querySelector('[data-al=android]');if(a)a.addEventListener('click',()=>{const t=setTimeout(()=>{if(!document.hidden)document.querySelector('.al-ajuda').hidden=false},2500);
+  document.addEventListener('visibilitychange',()=>{if(document.hidden)clearTimeout(t)},{once:true})});
+ document.querySelectorAll('.al-copia').forEach(b=>b.addEventListener('click',async()=>{const v=b.dataset.copia,o=b.textContent;
+  try{await navigator.clipboard.writeText(v)}catch(e){const i=document.createElement('input');i.value=v;document.body.append(i);i.select();document.execCommand('copy');i.remove()}
+  b.textContent='Copiado ✓';setTimeout(()=>b.textContent=o,2500)}))})();
+ </script>
+"""
+
+
 def build(radar_itens, armadilhas, quase=()):
     pre = "../"
     url = f"{SITE}/black/"
@@ -469,15 +489,30 @@ def build(radar_itens, armadilhas, quase=()):
   <li>Só jogo bem avaliado: nota 7 ou mais no BGG, ou premiado. Links sem comissão.</li>
  </ul>
  <section id="alertas" aria-labelledby="h-alertas" class="bk-alerta">
-  <h2 id="h-alertas">Receba as promoções no celular</h2>
-  <p class="sub">Quando um jogo entra no Black de Verdade, o alerta chega na barra de notificações do seu celular, como uma mensagem, com o preço, a loja e o desconto real. Tocou, abriu a oferta. É de graça, sem cadastro e sem e-mail: usamos o ntfy, um aplicativo de notificações gratuito e de código aberto.</p>
-  <ol class="bk-passos">
-   <li><b>Instale o ntfy</b>: <a href="https://play.google.com/store/apps/details?id=io.heckel.ntfy" target="_blank" rel="noopener">Android (Google Play)</a> ou <a href="https://apps.apple.com/app/ntfy/id1625396347" target="_blank" rel="noopener">iPhone (App Store)</a>.</li>
-   <li><b>Assine o canal</b> <code>eliteboardgamers-black</code>: no app, toque em <b>+</b> e digite o nome; ou toque no botão abaixo com o app instalado.</li>
-  </ol>
-  <p class="bk-alerta-b"><a class="pri" href="ntfy://ntfy.sh/eliteboardgamers-black">Assinar no app ntfy</a><a class="sec" href="https://ntfy.sh/eliteboardgamers-black" target="_blank" rel="noopener">Assinar pelo navegador</a></p>
-  <p class="sub" style="font-size:.82rem">No máximo alguns alertas por leitura (o radar lê os preços de hora em hora). Para parar, é só cancelar a assinatura no app.</p>
+  <h2 id="h-alertas">🔔 Receba as promoções no celular</h2>
+  <p class="sub">Quando um jogo entra no Black de Verdade, chega uma notificação no seu celular, como mensagem, com o preço, a loja e o desconto real. Grátis, sem cadastro e sem e-mail, pelo app ntfy (gratuito e de código aberto).</p>
+  <div class="al-os" data-os="android">
+   <p class="al-tag">No seu Android, é um toque só:</p>
+   <a class="al-btn" href="intent://ntfy.sh/eliteboardgamers-black?display=Black%20de%20Verdade#Intent;scheme=ntfy;package=io.heckel.ntfy;S.browser_fallback_url=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dio.heckel.ntfy;end" data-al="android">Ativar alertas no celular</a>
+   <p class="al-dica">Se o app ntfy ainda não estiver instalado, a Google Play abre: toque em <b>Instalar</b>, volte para esta página e toque de novo no botão. O app abre já no canal do Black de Verdade: toque em <b>Assinar</b> (Subscribe) e pronto.</p>
+   <p class="al-ajuda" hidden>Não abriu? <a href="https://play.google.com/store/apps/details?id=io.heckel.ntfy" target="_blank" rel="noopener">Instale o ntfy na Google Play</a> e toque no botão de novo. Ou abra o ntfy, toque em <b>+</b> e digite <b>eliteboardgamers-black</b>.</p>
+  </div>
+  <div class="al-os" data-os="ios">
+   <p class="al-tag">No iPhone, são 3 passos:</p>
+   <ol class="al-passos">
+    <li><a class="al-btn" href="https://apps.apple.com/app/ntfy/id1625396347" target="_blank" rel="noopener">1. Instalar o ntfy (App Store)</a></li>
+    <li><button type="button" class="al-btn al-copia" data-copia="eliteboardgamers-black">2. Copiar o nome do canal</button></li>
+    <li class="al-txt">3. Abra o ntfy, toque em <b>+</b> no canto de cima, cole o nome e toque em <b>Subscribe</b>. Na primeira vez, toque em <b>Permitir</b> notificações.</li>
+   </ol>
+  </div>
+  <div class="al-os" data-os="pc">
+   <p class="al-tag">Aponte a câmera do celular para o código: ele abre esta página no celular, com o botão certo para o seu aparelho.</p>
+   <img class="al-qr" src="../img/black/qr-alertas.svg" width="180" height="180" alt="QR code que abre a página de alertas do Black de Verdade no celular">
+   <p class="al-dica">Prefere receber neste computador? <a href="https://ntfy.sh/eliteboardgamers-black" target="_blank" rel="noopener">Abra o canal no navegador</a>, toque em <b>Subscribe</b> e permita as notificações.</p>
+  </div>
+  <p class="al-canal">Nome do canal: <b>eliteboardgamers-black</b> <button type="button" class="al-mini al-copia" data-copia="eliteboardgamers-black">Copiar</button> · para parar, é só cancelar a assinatura no app.</p>
  </section>
+ {JS_ALERTA}
  <section id="melhores" aria-labelledby="h-melhores">
   <h2 id="h-melhores">As 5 melhores agora</h2>
   <p class="sub">A melhor combinação de nota no BGG e desconto real.</p>
