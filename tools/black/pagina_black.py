@@ -97,7 +97,7 @@ CSS = """<style>
 .dest .of-c{padding:0 14px 14px}
 .dest .of-n{font-size:1.15rem}
 .dest .of-por{font-size:1.9rem}
-.dest .pos{position:absolute;right:10px;top:10px;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:#111;color:var(--gold);font-weight:900;font-size:.9rem;border:1px solid #4a3f1c}
+.of-novo{position:absolute;left:10px;bottom:10px;padding:4px 9px;border-radius:999px;background:#111;color:#5fd38d;font-weight:800;font-size:.78rem;border:1px solid #2f6e4a}.dest .pos{position:absolute;right:10px;top:10px;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:#111;color:var(--gold);font-weight:900;font-size:.9rem;border:1px solid #4a3f1c}
 @media (max-width:759px){.dest{grid-auto-flow:column;grid-auto-columns:84%;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:6px;margin:0 -16px;padding-left:16px;padding-right:16px;scrollbar-width:none}
  .dest>li{scroll-snap-align:start}}
 @media (min-width:760px){.dest{grid-template-columns:repeat(2,minmax(0,1fr))}}
@@ -301,7 +301,7 @@ def nota_txt(x):
     return f'<span class="of-nota">★ {x["bgg"]:.1f}</span> no BGG'.replace(".", ",", 1) if x["bgg"] else "sem nota no BGG"
 
 
-def cartao(grupo, pre, cps, agora_, destaque=False, pos=None):
+def cartao(grupo, pre, cps, agora_, destaque=False, pos=None, novo=None):
     """Um jogo: a melhor oferta em destaque e, se houver, as outras lojas que também passaram no corte."""
     x = grupo[0]
     img = capa(x, pre, 640 if destaque else 240)
@@ -318,7 +318,7 @@ def cartao(grupo, pre, cps, agora_, destaque=False, pos=None):
     dados = (f'data-tipo="{e(x["tipo"])}" data-desc="{x["desc"]:.4f}" data-eco="{eco:.2f}" data-bgg="{x["bgg"] or 0:.2f}" '
              f'data-por="{x["por"]:.2f}" data-rec="{1 if x["recorde"] else 0}" data-busca="{e((nome(x) + " " + " ".join(o["loja"] for o in grupo) + " " + (x["editora"] or "")).lower())}"')
     return f"""<li class="of" {dados}>
- <a class="of-img" href="{e(x["url"])}" {rel} tabindex="-1" aria-hidden="true">{f'<img src="{img}" alt="" loading="lazy" decoding="async" width="{640 if destaque else 240}" height="{640 if destaque else 240}">' if img else ilustra(nome(x), x["loja"])}<span class="of-pct">−{pct(x["desc"])}</span>{f'<span class="pos">{pos}</span>' if pos else ""}</a>
+ <a class="of-img" href="{e(x["url"])}" {rel} tabindex="-1" aria-hidden="true">{f'<img src="{img}" alt="" loading="lazy" decoding="async" width="{640 if destaque else 240}" height="{640 if destaque else 240}">' if img else ilustra(nome(x), x["loja"])}<span class="of-pct">−{pct(x["desc"])}</span>{f'<span class="pos">{pos}</span>' if pos else ""}{f'<span class="of-novo">🆕 entrou {e(novo)}</span>' if novo else ""}</a>
  <div class="of-c">
   {'<span class="of-rec">Menor preço do período</span>' if x["recorde"] else ""}{f'<span class="of-com">Achado da comunidade · vendedor não conferido</span>' if x.get("comunidade") else ""}
   <h3 class="of-n">{e(nome(x))}</h3>
@@ -354,7 +354,8 @@ document.addEventListener('click',async e=>{const b=e.target.closest('.cup-cod')
 </script>"""
 
 
-TOP_HORAS = 6  # janela do Top 5 (pedido do usuário em 04/11/2026)
+N_NOVIDADES = 8  # cartões em "Últimas novidades" (pedido do usuário em 04/11/2026)
+NOVIDADES = Path(__file__).resolve().parents[2] / "conteudo" / "black" / "novidades.json"
 
 
 JS_PUSH = """<script>
@@ -445,27 +446,12 @@ def build(radar_itens, armadilhas, quase=(), outras=()):
     for x in radar_itens:
         grupos.setdefault(x["slug"], []).append(x)
     melhor = {s: g[0] for s, g in grupos.items()}
-    # Top 5 = as melhores das últimas 6 horas (pedido do usuário em 04/11/2026): só ofertas encontradas ou conferidas
-    # desde então; a página é refeita a cada leitura do robô, então o Top 5 muda sozinho quando aparece oferta nova.
-    # Com menos de 5 na janela, completa com as melhores mais antigas (o cartão mostra a hora da conferência).
-    def _hora(x):
-        try:
-            d = dt.datetime.fromisoformat(str(x.get("verificado") or "").replace("Z", "+00:00"))
-            return d if d.tzinfo else d.replace(tzinfo=agora_.tzinfo)
-        except ValueError:
-            return None
-    nota_top = lambda x: -((x["bgg"] or 7.0) * x["desc"])
-    janela_top = agora_ - dt.timedelta(hours=TOP_HORAS)
-    recentes = sorted((x for x in melhor.values() if (_hora(x) or janela_top) > janela_top), key=nota_top)
-    top = recentes[:5] + sorted((x for x in melhor.values() if x not in recentes), key=nota_top)[:max(0, 5 - len(recentes))]
-    n_top_recentes = min(5, len(recentes))
     n_jogos = sum(1 for x in melhor.values() if x["tipo"] != "expansion")
     n_exps = len(melhor) - n_jogos
     maior = max((x["desc"] for x in melhor.values()), default=0)
     recordes = sum(1 for x in melhor.values() if x["recorde"])
     n_cupons = sum(len(r["cupons"]) for r in cps.values())
     curta = min((x["dias"] for x in radar_itens), default=None)
-    dest_html = "".join(cartao(grupos[x["slug"]], pre, cps, agora_, destaque=True, pos=i) for i, x in enumerate(top, 1))
     lista_html = "".join(cartao(g, pre, cps, agora_) for g in grupos.values())
     quase_html = "".join(cartao([x], pre, cps, agora_) for x in quase)
     # Outras promoções: jogos sem nota 7 no BGG nem prêmio, com o mesmo corte de 20% (pedido do usuário em 04/11/2026);
@@ -474,6 +460,36 @@ def build(radar_itens, armadilhas, quase=(), outras=()):
     for x in outras:
         g_outras.setdefault(x["slug"], []).append(x)
     outras_html = "".join(cartao(g, pre, cps, agora_) for g in g_outras.values())
+    # Últimas novidades (pedido do usuário em 04/11/2026, no lugar do Top 5 parado): as ofertas que entraram por
+    # último no radar (bem avaliados e outras promoções), a mais nova primeiro. A hora de entrada de cada jogo fica em
+    # conteudo/black/novidades.json; jogo que sai do radar e volta conta como novidade de novo.
+    todos_g = {**{x["slug"]: grupos[x["slug"]] for x in melhor.values()}, **{sl: g for sl, g in g_outras.items() if sl not in grupos}}
+    try:
+        entrou, primeira = json.loads(NOVIDADES.read_text(encoding="utf-8")), False
+    except (FileNotFoundError, ValueError):
+        entrou, primeira = {}, True
+        # primeira vez: o dia em que cada jogo entrou no radar e gerou alerta (alertas_estado.json); sem ele, fica vazio
+        try:
+            entrou = dict(json.loads((NOVIDADES.parent / "alertas_estado.json").read_text(encoding="utf-8")).get("avisados") or {})
+        except (FileNotFoundError, ValueError):
+            pass
+    marca = "" if primeira else agora_.isoformat(timespec="minutes")
+    entrou = {sl: (entrou[sl] if sl in entrou else marca) for sl in todos_g}
+    def quando(v):  # data sozinha (vinda dos alertas) mostra só o dia
+        if not v:
+            return None
+        if len(v) == 10:
+            return None  # só o dia (dos alertas): sem selo, o cartão já mostra a hora em que o preço foi visto
+        return hora(v, agora_)
+    try:
+        NOVIDADES.write_text(json.dumps(entrou, ensure_ascii=False, indent=1, sort_keys=True) + "\n", encoding="utf-8")
+    except OSError:
+        pass
+    # primeiro quem tem hora exata de entrada (mais nova primeiro); depois, o preço conferido mais recentemente
+    exata = lambda v: v if v and len(v) > 10 else ""
+    ordem = sorted(todos_g, key=lambda sl: (exata(entrou[sl]), str(todos_g[sl][0].get("verificado") or "")), reverse=True)
+    top = [todos_g[sl][0] for sl in ordem[:N_NOVIDADES]]
+    dest_html = "".join(cartao(todos_g[sl], pre, cps, agora_, destaque=True, novo=quando(entrou[sl])) for sl in ordem[:N_NOVIDADES])
     n_outras = len(g_outras)
     total = len(melhor) + n_outras
     maior = max([maior, *(x["desc"] for x in outras)], default=maior)
@@ -574,7 +590,7 @@ def build(radar_itens, armadilhas, quase=(), outras=()):
    <li><b>{n_cupons}</b><span>cupom{"s" if n_cupons != 1 else ""} anunciado{"s" if n_cupons != 1 else ""} pelas lojas</span></li>
   </ul>
   <p class="bk-atual">Atualizado em {agora_.strftime("%d/%m/%Y às %Hh%M")} (horário de Brasília). O radar lê os preços de novo a cada 30 minutos.</p>
-  <nav class="bk-pulo" aria-label="Atalhos"><a class="pri" href="#melhores">Ver as melhores ofertas</a><a class="sec" href="#alertas">🔔 Alertas no celular</a><button type="button" class="inst" hidden>📲 Tela de Início</button><a class="sec" href="#todas">Bem avaliados ({len(melhor)})</a>{f'<a class="sec" href="#outras">Outras promoções ({n_outras})</a>' if n_outras else ""}{f'<a class="sec" href="#quase">Quase Black ({len(quase)})</a>' if quase else ""}{'<a class="sec" href="#cupons">Cupons</a>' if cps_html else ""}{'<a class="sec" href="#comunidade">Achados da comunidade</a>' if pb_html else ""}{'<a class="sec" href="#sem-foto">Achados sem foto</a>' if sem_foto_html else ""}</nav>
+  <nav class="bk-pulo" aria-label="Atalhos"><a class="pri" href="#melhores">Ver as novidades</a><a class="sec" href="#alertas">🔔 Alertas no celular</a><button type="button" class="inst" hidden>📲 Tela de Início</button><a class="sec" href="#todas">Bem avaliados ({len(melhor)})</a>{f'<a class="sec" href="#outras">Outras promoções ({n_outras})</a>' if n_outras else ""}{f'<a class="sec" href="#quase">Quase Black ({len(quase)})</a>' if quase else ""}{'<a class="sec" href="#cupons">Cupons</a>' if cps_html else ""}{'<a class="sec" href="#comunidade">Achados da comunidade</a>' if pb_html else ""}{'<a class="sec" href="#sem-foto">Achados sem foto</a>' if sem_foto_html else ""}</nav>
  </header>
  <ul class="bk-conf">
   <li>Desconto calculado sobre a média aparada do histórico de preços, não sobre o preço "de" da loja.</li>
@@ -621,9 +637,9 @@ def build(radar_itens, armadilhas, quase=(), outras=()):
  {JS_PUSH if push else ""}
  {JS_INSTALA}
  <section id="melhores" aria-labelledby="h-melhores">
-  <h2 id="h-melhores">As 5 melhores das últimas 6 horas</h2>
-  <p class="sub">A melhor combinação de nota no BGG e desconto real entre as ofertas encontradas ou conferidas desde {(agora_ - dt.timedelta(hours=TOP_HORAS)).strftime("%Hh%M")}. Muda sozinho a cada leitura do radar.{"" if n_top_recentes >= 5 or not top else f" Nas últimas 6 horas apareceram {n_top_recentes}; as outras {len(top) - n_top_recentes} são as melhores de antes, com a hora da conferência no cartão."}</p>
-  {f'<ol class="dest">{dest_html}</ol><p class="dica-arrasta">Arraste para o lado para ver as cinco.</p>' if dest_html else '<p class="vazio">Nenhum jogo passou no corte nesta leitura. O radar tenta de novo em 30 minutos.</p>'}
+  <h2 id="h-melhores">Últimas novidades</h2>
+  <p class="sub">As ofertas que acabaram de entrar no radar, a mais nova primeiro. Muda a cada leitura, de 30 em 30 minutos.</p>
+  {f'<ol class="dest">{dest_html}</ol><p class="dica-arrasta">Arraste para o lado para ver as outras.</p>' if dest_html else '<p class="vazio">Nenhum jogo passou no corte nesta leitura. O radar tenta de novo em 30 minutos.</p>'}
  </section>
  <section id="todas" aria-labelledby="h-todas">
   <h2 id="h-todas">Todas as ofertas com desconto real</h2>
@@ -711,7 +727,7 @@ def build(radar_itens, armadilhas, quase=(), outras=()):
     try:
         import hashlib
         import cartao_black
-        arq = cartao_black.gerar(top, total, maior, agora_.strftime("%d/%m"))
+        arq = cartao_black.gerar(top[:5], total, maior, agora_.strftime("%d/%m"))
         og_img = f"{SITE}/img/black/{arq.name}?v={hashlib.md5(arq.read_bytes()).hexdigest()[:8]}"
     except Exception as ex:  # sem o cartão, a página segue com a imagem antiga
         print("aviso: cartão da Black não gerado:", ex)
