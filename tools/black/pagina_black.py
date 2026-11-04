@@ -360,7 +360,7 @@ const q=s=>w.querySelector(s),btn=q('.wp-ativar'),txt=btn.textContent;
 const mostra=(s,m)=>{['.wp-ok','.wp-ios','.wp-neg','.wp-erro'].forEach(x=>q(x).hidden=x!==s);if(s&&m)q(s).textContent=m;btn.hidden=s==='.wp-ok';
  if(s&&s!=='.wp-ok'){const el=q(s);el.scrollIntoView({behavior:'smooth',block:'center'});el.classList.remove('wp-pisca');void el.offsetWidth;el.classList.add('wp-pisca')}};
 const ua=navigator.userAgent,ios=/iPhone|iPad|iPod/i.test(ua)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1);
-const embutido=/Instagram|FBAN|FBAV|FB_IAB|Line\/|WhatsApp|Telegram|TikTok|musical_ly|; wv\)/i.test(ua);
+const embutido=/Instagram|FBAN|FBAV|FB_IAB|Line\\/|WhatsApp|Telegram|TikTok|musical_ly|; wv\\)/i.test(ua);
 const app=window.matchMedia('(display-mode: standalone)').matches||navigator.standalone===true;
 const tem='serviceWorker' in navigator&&'PushManager' in window&&'Notification' in window;
 const chave=s=>{const p='='.repeat((4-s.length%4)%4),b=atob((s+p).replace(/-/g,'+').replace(/_/g,'/'));return Uint8Array.from(b,c=>c.charCodeAt(0))};
