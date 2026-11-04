@@ -4,6 +4,8 @@ Uso:
   python3 tools/comentarios/moderar.py fila                      # JSON com pendentes e duvidosos
   python3 tools/comentarios/moderar.py decidir <id> <estado> "<parecer>"
       estado: aprovado | reprovado | duvidoso   (a IA usa 'duvidoso' para deixar com o editor)
+  python3 tools/comentarios/moderar.py mercado-fila              # anúncios do Mercado pendentes e duvidosos
+  python3 tools/comentarios/moderar.py mercado-decidir <id> <estado> "<parecer>"
 Precisa de MODERACAO_SENHA no ambiente; o endereço da API vem de conteudo/interacoes.json.
 """
 import json
@@ -34,5 +36,9 @@ if __name__ == "__main__":
         print(json.dumps(chamar("fila"), ensure_ascii=False, indent=1))
     elif len(sys.argv) == 5 and sys.argv[1] == "decidir" and sys.argv[3] in ("aprovado", "reprovado", "duvidoso"):
         print(chamar("decidir", {"id": int(sys.argv[2]), "estado": sys.argv[3], "parecer": sys.argv[4], "por": "ia"}))
+    elif len(sys.argv) >= 2 and sys.argv[1] == "mercado-fila":
+        print(json.dumps(chamar("mercado/fila"), ensure_ascii=False, indent=1))
+    elif len(sys.argv) == 5 and sys.argv[1] == "mercado-decidir" and sys.argv[3] in ("aprovado", "reprovado", "duvidoso"):
+        print(chamar("mercado/decidir", {"id": int(sys.argv[2]), "estado": sys.argv[3], "parecer": sys.argv[4], "por": "ia"}))
     else:
         sys.exit(__doc__)

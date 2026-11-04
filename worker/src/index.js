@@ -10,10 +10,12 @@
 //   POST /v1/moderacao/decidir {id, estado, parecer, por}
 //   GET  /painel                       painel de moderação (pede a senha no navegador)
 // Notificações do Black de Verdade: /v1/push/* e o cron, em src/push.js
+// Mercado da Elite (anúncios dos vendedores): /v1/mercado/* e /v1/moderacao/mercado/*, em src/mercado.js
 //
 // Variáveis: DB (D1), MODERACAO_TOKEN e TURNSTILE_SECRET (segredos), ORIGEM (site), DEV=1 só no teste local.
 
 import { rotasPush, agendado } from "./push.js";
+import { rotasMercado } from "./mercado.js";
 
 const MAX_POR_HORA = 5;
 const PAGINA = /^\/[a-z0-9\-/]{1,180}\/$/;
@@ -115,11 +117,13 @@ export default {
   async scheduled(evento, env, ctx) {
     ctx.waitUntil(agendado(env));  // notificações do Black de Verdade (worker/src/push.js)
   },
-  async fetch(req, env) {
+  async fetch(req, env, ctx) {
     const url = new URL(req.url), h = cors(req, env);
     try {
       if (req.method === "OPTIONS") return new Response(null, { status: 204, headers: h });
       if (url.pathname === "/painel") return new Response(PAINEL, { headers: { "content-type": "text/html; charset=utf-8", "x-robots-tag": "noindex" } });
+      if (url.pathname.startsWith("/v1/mercado/") || url.pathname.startsWith("/v1/moderacao/mercado/"))
+        return rotasMercado(req, url, env, h, { json, turnstileOk, ipHash, autorizado }, ctx);
       if (url.pathname.startsWith("/v1/moderacao/")) return moderacao(req, url, env);
       if (url.pathname === "/v1/pagina" && req.method === "GET") return pagina(url, env, h);
       if (url.pathname === "/v1/curtir" && req.method === "POST") return curtir(req, env, h);
@@ -134,7 +138,7 @@ export default {
 
 // Painel de moderação: página única que guarda a senha só nesta aba (sessionStorage) e conversa com a API acima.
 const PAINEL = `<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="robots" content="noindex"><title>Moderação de comentários · Elite Boardgamers</title><style>
+<meta name="robots" content="noindex"><title>Moderação · Elite Boardgamers</title><style>
 *{box-sizing:border-box}body{margin:0;background:#000;color:#eceff3;font:15px/1.5 system-ui,sans-serif}main{max-width:900px;margin:0 auto;padding:20px 16px 60px}
 h1{font-size:1.5rem;margin:0 0 4px;border-top:3px solid #e3b23c;padding-top:10px}p.sub{color:#a7afbb;margin:0 0 16px}
 .abas{display:flex;gap:8px;margin:12px 0}.abas button,.b{font:inherit;font-weight:700;min-height:40px;padding:6px 14px;border-radius:999px;border:1px solid #3a3f48;background:#14171c;color:#fff;cursor:pointer}
@@ -145,24 +149,38 @@ h1{font-size:1.5rem;margin:0 0 4px;border-top:3px solid #e3b23c;padding-top:10px
 .txt{white-space:pre-wrap;margin:8px 0;font-size:1rem}.parecer{font-size:.9rem;color:#c9b3ff;margin:6px 0}
 .acoes{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}.b.ok{background:#157a43;border-color:#157a43}.b.no{background:#7a1f2e;border-color:#7a1f2e}
 input{font:inherit;padding:10px 12px;border-radius:8px;border:1px solid #3a3f48;background:#000;color:#fff;width:min(420px,100%)}
-.vazio{color:#a7afbb;padding:20px 0}</style></head><body><main>
-<h1>Moderação de comentários</h1><p class="sub">Elite Boardgamers · nada aparece no site sem estar aprovado.</p>
+.vazio{color:#a7afbb;padding:20px 0}.abas{flex-wrap:wrap}.fts{display:flex;gap:6px;overflow-x:auto;margin:8px 0}.fts a{flex:none}.fts img{width:120px;height:120px;object-fit:cover;border-radius:8px;background:#222;display:block}.ft{display:grid;grid-template-columns:max-content 1fr;gap:2px 12px;font-size:.92rem;margin:6px 0}.ft dt{color:#a7afbb}.ft dd{margin:0}.ft a{color:#e3b23c}.preco{font-size:1.3rem;font-weight:800;color:#e3b23c}.den{color:#ff8094;font-weight:700}.b.duv{background:#5a3d00;border-color:#5a3d00}</style></head><body><main>
+<h1>Moderação</h1><p class="sub">Elite Boardgamers · comentários e Mercado: nada aparece no site sem estar aprovado.</p>
 <form id="login" hidden><p>Senha de moderação:</p><input id="senha" type="password" autocomplete="current-password"> <button class="b">Entrar</button></form>
-<div id="app" hidden><div class="abas"><button data-aba="fila" aria-pressed="true">Esperando decisão</button><button data-aba="recentes" aria-pressed="false">Todos os recentes</button><button class="b" id="sair" type="button">Sair</button></div><div id="lista"></div></div>
+<div id="app" hidden><div class="abas"><button data-aba="fila" aria-pressed="true">Comentários esperando</button><button data-aba="recentes" aria-pressed="false">Comentários recentes</button><button data-aba="mercado/fila" aria-pressed="false">Mercado esperando</button><button data-aba="mercado/recentes" aria-pressed="false">Mercado recentes</button><button class="b" id="sair" type="button">Sair</button></div><div id="lista"></div></div>
 <script>
 const $=s=>document.querySelector(s),esc=t=>String(t??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'})[c]);
 let aba='fila';const tok=()=>sessionStorage.getItem('mod');
 const api=(c,o={})=>fetch('/v1/moderacao/'+c,{...o,headers:{'authorization':'Bearer '+tok(),'content-type':'application/json'}});
-async function carrega(){const r=await api(aba);if(r.status===401){sessionStorage.removeItem('mod');return entrar()}
- const {comentarios}=await r.json();$('#app').hidden=false;$('#login').hidden=true;
- $('#lista').innerHTML=comentarios.length?comentarios.map(c=>'<div class="c '+c.estado+'" data-id="'+c.id+'"><div class="meta">'+esc(c.estado)+' · '+esc(c.criado)+' UTC · <a href="https://eliteboardgamers.com.br'+esc(c.pagina)+'" target="_blank">'+esc(c.pagina)+'</a></div>'
+const reais=c=>(c/100).toLocaleString('pt-BR',{style:'currency',currency:'BRL'});
+const COND={lacrado:'Lacrado','como-novo':'Como novo','usado-otimo':'Usado, ótimo estado','usado-bom':'Usado, bom estado','usado-marcas':'Usado, com marcas de uso'};
+const ENT={ambos:'Envio ou retirada',envio:'Só envio',retirada:'Só retirada'},IDI={pt:'Português',en:'Inglês',independente:'Independente de idioma',outro:'Outro idioma'};
+function cartaoAnuncio(a){const fts=a.fotos.map(k=>'<a href="/v1/mercado/foto/'+esc(k)+'" target="_blank"><img src="/v1/mercado/foto/'+esc(k)+'" alt="" loading="lazy"></a>').join('');
+ const link=a.estado==='aprovado'?' · <a href="https://eliteboardgamers.com.br/mercado/anuncio/?id='+a.id+'" target="_blank">ver no site</a>':'';
+ return '<div class="c '+esc(a.estado)+'" data-id="'+a.id+'" data-tipo="mercado"><div class="meta">anúncio #'+a.id+' · '+esc(a.estado)+' · '+esc(a.criado)+' UTC'+link+'</div>'
+ +'<div><b>'+esc(a.jogo)+'</b>'+(a.edicao?' · '+esc(a.edicao):'')+' <span class="preco">'+reais(a.preco)+'</span></div><div class="fts">'+fts+'</div>'
+ +'<dl class="ft"><dt>Estado</dt><dd>'+esc(COND[a.condicao]||a.condicao)+' · '+esc(IDI[a.idioma]||a.idioma)+'</dd><dt>Entrega</dt><dd>'+esc(ENT[a.entrega]||a.entrega)+(a.troca?' · aceita troca':'')+'</dd>'
+ +'<dt>Onde</dt><dd>'+esc(a.cidade)+'/'+esc(a.uf)+'</dd><dt>Vendedor</dt><dd>'+esc(a.vendedor)+(a.email?' · '+esc(a.email):'')+'</dd>'
+ +'<dt>Contato</dt><dd>'+(a.whatsapp?'<a href="https://wa.me/'+esc(a.whatsapp)+'" target="_blank">WhatsApp '+esc(a.whatsapp)+'</a> ':'')+(a.instagram?'<a href="https://instagram.com/'+esc(a.instagram)+'" target="_blank">@'+esc(a.instagram)+'</a>':'')+'</dd></dl>'
+ +(a.descricao?'<div class="txt">'+esc(a.descricao)+'</div>':'')+(a.denuncias?'<div class="den">'+a.denuncias+' denúncia(s): '+esc(a.motivos)+'</div>':'')
+ +(a.parecer?'<div class="parecer">Parecer: '+esc(a.parecer)+(a.decidido_por?' ('+esc(a.decidido_por)+')':'')+'</div>':'')
+ +(['removido','vendido'].includes(a.estado)?'':'<div class="acoes"><button class="b ok" data-e="aprovado">Aprovar</button><button class="b no" data-e="reprovado">Reprovar</button><button class="b duv" data-e="duvidoso">Deixar em dúvida</button></div>')+'</div>'}
+function cartaoComentario(c){return '<div class="c '+c.estado+'" data-id="'+c.id+'"><div class="meta">'+esc(c.estado)+' · '+esc(c.criado)+' UTC · <a href="https://eliteboardgamers.com.br'+esc(c.pagina)+'" target="_blank">'+esc(c.pagina)+'</a></div>'
  +'<div><b>'+esc(c.nome)+'</b>'+(c.email?' · '+esc(c.email):'')+'</div><div class="txt">'+esc(c.texto)+'</div>'+(c.parecer?'<div class="parecer">Parecer: '+esc(c.parecer)+(c.decidido_por?' ('+esc(c.decidido_por)+')':'')+'</div>':'')
- +'<div class="acoes"><button class="b ok" data-e="aprovado">Aprovar</button><button class="b no" data-e="reprovado">Reprovar</button></div></div>').join(''):'<p class="vazio">Nenhum comentário esperando decisão.</p>'}
+ +'<div class="acoes"><button class="b ok" data-e="aprovado">Aprovar</button><button class="b no" data-e="reprovado">Reprovar</button></div></div>'}
+async function carrega(){const r=await api(aba);if(r.status===401){sessionStorage.removeItem('mod');return entrar()}
+ const d=await r.json();$('#app').hidden=false;$('#login').hidden=true;const merc=aba.startsWith('mercado/');const itens=merc?d.anuncios:d.comentarios;
+ $('#lista').innerHTML=itens.length?itens.map(merc?cartaoAnuncio:cartaoComentario).join(''):'<p class="vazio">Nada esperando decisão.</p>'}
 function entrar(){$('#app').hidden=true;$('#login').hidden=false;$('#senha').focus()}
 $('#login').addEventListener('submit',e=>{e.preventDefault();sessionStorage.setItem('mod',$('#senha').value);carrega()});
 $('#sair').addEventListener('click',()=>{sessionStorage.removeItem('mod');entrar()});
 document.querySelectorAll('[data-aba]').forEach(b=>b.addEventListener('click',()=>{aba=b.dataset.aba;document.querySelectorAll('[data-aba]').forEach(x=>x.setAttribute('aria-pressed',x===b));carrega()}));
 $('#lista').addEventListener('click',async e=>{const b=e.target.closest('[data-e]');if(!b)return;const id=+b.closest('.c').dataset.id;
- b.disabled=true;await api('decidir',{method:'POST',body:JSON.stringify({id,estado:b.dataset.e,por:'editor'})});carrega()});
+ b.disabled=true;const merc=b.closest('.c').dataset.tipo==='mercado';await api((merc?'mercado/':'')+'decidir',{method:'POST',body:JSON.stringify({id,estado:b.dataset.e,por:'editor'})});carrega()});
 tok()?carrega():entrar();
 </script></main></body></html>`;

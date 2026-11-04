@@ -29,6 +29,20 @@ Comentários de notícias e resenhas entram numa fila no serviço `api.eliteboar
 
 Na dúvida entre aprovar e duvidoso, escolha **duvidoso**. Nunca edite o texto de um comentário: ou ele sai como está, ou não sai. O e-mail nunca é publicado e não deve aparecer no resumo além do necessário para o editor.
 
+## Mercado da Elite (anúncios dos vendedores)
+
+Os anúncios do Mercado (`/mercado/`, código em `worker/src/mercado.js`) entram na mesma fila de moderação, em separado, e **nada aparece sem estar aprovado**. Mesma regra de decisão: a IA aprova os claramente bons, reprova o proibido óbvio e marca **duvidoso** o resto, que fica para o editor no painel (abas "Mercado esperando" e "Mercado recentes", onde estão as fotos).
+
+1. `python3 tools/comentarios/moderar.py mercado-fila` — anúncios pendentes e duvidosos, com jogo, edição, estado, preço em centavos, cidade, vendedor, contato, descrição, chaves das fotos e denúncias. Duvidosos já são do editor (inclusive os que saíram do ar por denúncia): não decida de novo.
+2. Veja as fotos em `https://api.eliteboardgamers.com.br/v1/mercado/foto/<chave>`.
+3. `python3 tools/comentarios/moderar.py mercado-decidir <id> aprovado|reprovado|duvidoso "<parecer>"` (o parecer da reprovação aparece para o vendedor na página Meus anúncios: escreva com educação e diga o que corrigir).
+
+**Aprovar** (todas): é jogo de tabuleiro, card game, expansão ou acessório de jogo; as fotos mostram o item de verdade (não só a imagem da caixa copiada da internet); o preço é coerente com o jogo; nome, descrição e contato não trazem propaganda, link, ofensa nem dado de terceiros.
+
+**Reprovar**: pirataria, falsificação ou "print and play" vendido como original; produto que não é jogo; rifa, sorteio, pedido de doação; loja ou revendedor com vários itens disfarçado de pessoa física; link para loja ou site; fotos sem relação com o anúncio; ofensa ou conteúdo sexual.
+
+**Duvidoso**: só imagem oficial da caixa (pode ser lacrado, mas pede conferência), preço muito abaixo do normal (possível golpe), descrição que menciona Pix antecipado ou pressa, vários anúncios iguais do mesmo vendedor, qualquer hesitação.
+
 ## Instalação (uma vez)
 
-Com `CLOUDFLARE_API_TOKEN_COMENTARIOS` e `MODERACAO_SENHA` no ambiente: `python3 tools/comentarios/instalar.py`, depois `python3 tools/build_home.py`, commit e push. Enquanto `conteudo/interacoes.json` não tiver `api`, o site não mostra curtidas nem comentários.
+Com `CLOUDFLARE_API_TOKEN_COMENTARIOS` e `MODERACAO_SENHA` no ambiente: `python3 tools/comentarios/instalar.py`, depois `python3 tools/build_home.py`, commit e push. Enquanto `conteudo/interacoes.json` não tiver `api`, o site não mostra curtidas nem comentários; enquanto não tiver `"mercado": true` (o instalador grava), o Mercado não é gerado e o botão não aparece no menu.

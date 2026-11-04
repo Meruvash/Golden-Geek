@@ -1,6 +1,6 @@
 // Gera as imagens de prévia (og:image, 1200×630) do arquivo de notícias e do calendário de lançamentos,
 // no mesmo molde de tools/capa_resenhas.js: mosaico de capas à direita, nome da seção à esquerda.
-// Uso: node tools/capa_secoes.js   -> noticias/capa.jpg e lancamentos/capa.jpg
+// Uso: node tools/capa_secoes.js   -> noticias/capa.jpg, lancamentos/capa.jpg e mercado/capa.jpg
 const { chromium } = require('playwright');
 const fs = require('fs');
 const path = require('path');
@@ -23,6 +23,10 @@ const cal = JSON.parse(fs.readFileSync(path.join(ROOT, 'conteudo', 'lancamentos'
 const capasCal = [...cal.previstos, ...cal.lancados].filter(j => j.fl_tipo === 1)
   .map(j => path.join(ROOT, 'lancamentos', 'capas', `${j.id_jogo}.webp`)).filter(fs.existsSync).slice(0, 8);
 const ano = mes.slice(0, 4);
+
+// mercado: capas das resenhas publicadas (jogos que o público conhece), só como vitrine da seção
+const pauta = JSON.parse(fs.readFileSync(path.join(ROOT, 'pauta.json'), 'utf8'));
+const capasMercado = pauta.publicadas.map(p => path.join(ROOT, p.url.replace(/\/$/, '').split('/').pop(), 'capa.jpg')).filter(fs.existsSync).slice(0, 8);
 
 const pagina = (titulo, texto, selo, imgs, tipo) => `<!doctype html><html><head><meta charset="utf-8"><style>
 @font-face{font-family:PS;src:url(data:font/woff2;base64,${fonte}) format("woff2");font-weight:400 800}
@@ -48,7 +52,9 @@ p{font-size:25px;line-height:1.35;color:#cdd3de}
   for (const [saida, html] of [
     ['noticias/capa.jpg', pagina('Notícias', 'Jogos de tabuleiro com fonte, data e opinião separada do fato.', 'Todos os dias', fotosNotas, 'foto')],
     ['lancamentos/capa.jpg', pagina(`Lançamentos ${ano}`, 'O calendário das editoras brasileiras, mês a mês.', 'Jogos, expansões e RPGs', capasCal, 'capa')],
+    ['mercado/capa.jpg', pagina('Mercado', 'Compre e venda jogos de tabuleiro direto com quem joga.', 'Anuncie grátis', capasMercado, 'capa')],
   ]) {
+    fs.mkdirSync(path.dirname(path.join(ROOT, saida)), { recursive: true });
     await pg.setContent(html, { waitUntil: 'load' });
     await pg.evaluate(() => document.fonts.ready);
     await pg.screenshot({ path: path.join(ROOT, saida), type: 'jpeg', quality: 85 });

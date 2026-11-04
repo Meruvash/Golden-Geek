@@ -405,6 +405,14 @@ SECAO_COMENTARIOS = """ <section class="bloco" id="comentarios"><h2>Comentários
  </div></section>"""
 
 
+# entra na política editorial quando o Mercado estiver instalado (conteudo/interacoes.json com "mercado": true)
+SECAO_MERCADO = """ <section class="bloco" id="mercado"><h2>Mercado da Elite</h2><div class="corpo">
+  <p>No Mercado, os próprios jogadores anunciam jogos para vender ou trocar. A Elite Boardgamers não vende, não recebe pagamentos, não cobra comissão e não garante as negociações: a conversa e o pagamento ficam entre quem compra e quem vende.</p>
+  <p>Todo anúncio passa por moderação antes de aparecer. Ficam de fora cópias piratas, falsificações, fotos tiradas da internet, rifas, lojas disfarçadas de pessoa física, links para outros sites e linguagem ofensiva. Qualquer pessoa pode denunciar um anúncio; com três denúncias ele sai do ar até a moderação conferir.</p>
+  <p>Ao anunciar, o vendedor autoriza a publicação do nome ou apelido, da cidade, das fotos e do contato (WhatsApp ou Instagram) que escolheu deixar. O e-mail é opcional e nunca é publicado. Não guardamos o endereço IP: usamos só uma assinatura dele, que muda todo dia, para limitar abusos. O anúncio fica no ar por 60 dias, renováveis, e o vendedor pode mudar o preço, marcar como vendido ou remover a qualquer momento pelo link de gerenciamento que recebe ao anunciar. Ao remover, as fotos e o contato são apagados. Perdeu o link? Peça a remoção pelo Instagram.</p>
+ </div></section>"""
+
+
 def build_politica():
     """Página de política editorial: quem responde pelo site e como notícias e resenhas são feitas."""
     pre = "../"
@@ -440,6 +448,7 @@ def build_politica():
   <p>Contamos as visitas com o Cloudflare Web Analytics, que não usa cookies e não identifica quem visita o site. Os números servem só para saber quais páginas são lidas e melhorar o conteúdo.</p>
  </div></section>
 {SECAO_COMENTARIOS if _config_interacoes().get("api") else ""}
+{SECAO_MERCADO if _config_interacoes().get("mercado") else ""}
  <section class="bloco"><h2>Correções</h2><div class="corpo">
   <p>Encontrou um erro? Mande uma mensagem no Instagram <a href="{INSTAGRAM}" target="_blank" rel="noopener">@eliteboardgamers</a> com o link da página e a fonte da informação correta. Erros confirmados são corrigidos na própria página.</p>
  </div></section>
@@ -804,6 +813,8 @@ if __name__ == "__main__":
     for pub in json.loads((ROOT / "pauta.json").read_text(encoding="utf-8"))["publicadas"]:
         slug = pub["url"].rstrip("/").split("/")[-1]
         (ROOT / slug / "index.html").write_text(build_review.build(json.loads((ROOT / "conteudo" / f"{slug}.json").read_text(encoding="utf-8"))), encoding="utf-8")
+    import build_mercado
+    print("ok mercado:", build_mercado.build(), "páginas")
     import build_lista
     (ROOT / "resenhas" / "index.html").write_text(build_lista.build(), encoding="utf-8")
     print("ok resenhas/index.html")

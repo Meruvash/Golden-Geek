@@ -7,7 +7,7 @@ Precisa de duas variáveis no ambiente (nunca no código nem no chat):
   MODERACAO_SENHA                   senha do painel (24+ caracteres); sem ela, o instalador gera uma e a mostra uma vez
 Passos (pode rodar de novo sem estragar nada): banco D1 + tabelas, verificador anti-robô (Turnstile),
 publicação do worker em api.eliteboardgamers.com.br, segredos, conteudo/interacoes.json e um teste no ar.
-Depois: python3 tools/build_home.py para as páginas ganharem a seção.
+Depois: python3 tools/build_home.py para as páginas ganharem a seção e o Mercado (/mercado/).
 """
 import json
 import os
@@ -79,7 +79,8 @@ def main():
     print("ok worker publicado em", API)
 
     # 4. liga a seção nas páginas
-    (ROOT / "conteudo" / "interacoes.json").write_text(json.dumps({"api": API, "turnstile": w["sitekey"]}, indent=1) + "\n", encoding="utf-8")
+    # o Mercado da Elite (worker/src/mercado.js) usa o mesmo serviço e o mesmo banco: com o worker no ar, liga o menu e as páginas
+    (ROOT / "conteudo" / "interacoes.json").write_text(json.dumps({"api": API, "turnstile": w["sitekey"], "mercado": True}, indent=1) + "\n", encoding="utf-8")
 
     # 5. teste no ar (o certificado do domínio novo pode levar alguns minutos)
     for _ in range(20):
@@ -94,7 +95,7 @@ def main():
             time.sleep(15)
     else:
         print("⚠️ o serviço ainda não respondeu (", ultimo, "). Espere alguns minutos e teste", f"{API}/v1/pagina?p=/root/")
-    print("Painel de moderação:", f"{API}/painel")
+    print("Painel de moderação (comentários e Mercado):", f"{API}/painel")
     if gerada:
         print("SENHA GERADA (mostre ao editor uma vez; ele deve guardá-la como MODERACAO_SENHA nos segredos do ambiente):", senha)
 

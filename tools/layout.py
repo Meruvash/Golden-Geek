@@ -26,6 +26,7 @@ ICONES = {
     "coracao": '<path d="M12 20s-7.5-4.6-9.3-9.2C1.4 7.4 3.6 4 7 4c2 0 3.6 1.1 5 3 1.4-1.9 3-3 5-3 3.4 0 5.6 3.4 4.3 6.8C19.5 15.4 12 20 12 20Z"/>',
     "busca": '<circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/>',
     "balao": '<path d="M4 5h16v11H9l-5 4V5Z"/>',
+    "sacola": '<path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8L5 8Z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/>',
     "compartilhar": '<circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="M8.2 10.8l7.6-4.4M8.2 13.2l7.6 4.4"/>',
 }
 
@@ -119,6 +120,13 @@ CSS_BUSCA = (".busca-btn{display:grid;place-items:center;flex:none;width:44px;he
              # logo horizontal do cabeçalho (dado EB + ELITE BOARD GAMERS), pela altura
              ".marca img.logo{width:auto;height:48px;border-radius:0}@media (max-width:480px){.marca img.logo{height:40px}}"
              ".nav .casa{display:flex;align-items:center;justify-content:center;min-width:44px}.nav .casa .ic{width:20px;height:20px}"
+             # botão do Mercado: pílula dourada no menu; no celular logo depois da casinha, no computador na ponta direita
+             ".nav li:first-child{order:-2}.nav .mc-li{order:-1;display:flex;align-items:center;flex:none}"
+             ".nav a.mercado-btn.mercado-btn{display:inline-flex;align-items:center;gap:6px;margin:6px 4px;padding:6px 14px 6px 10px;border:1.5px solid #e3b23c;"
+             "border-radius:999px;color:#e3b23c;font-weight:800;line-height:1.2;border-bottom-width:1.5px}"
+             ".nav a.mercado-btn.mercado-btn .ic{width:18px;height:18px}"
+             ".nav a.mercado-btn.mercado-btn:hover,.nav a.mercado-btn.mercado-btn[aria-current]{background:#e3b23c;color:#111;border-color:#e3b23c}"
+             "@media (min-width:900px){.nav .mc-li{order:0;margin-left:auto}}"
              "@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;"
              "transition-duration:.01ms!important;scroll-behavior:auto!important}"
              ".card:hover,.jogo:hover .capa img,.jogo:active .capa,.zap:active,.post-btn:active,.btn-filtro:hover,.btn-filtro:active,.ver:active{transform:none!important}}")
@@ -140,6 +148,9 @@ def cabecalho(pre, atual="", sub=False):
     # primeiro item: a casinha, que volta à página inicial (marcada como página atual na própria home)
     casa = f'<li><a class="casa" href="{pre or './'}" aria-label="Página inicial"{" aria-current=\"page\"" if atual == "Início" else ""}>{icone("casa")}</a></li>'
     nav = casa + "".join(f'<li><a href="{pre}{h}"{f" aria-current=\"{marca}\"" if t == atual else ""}>{t}</a></li>' for h, t in SECOES)
+    if _config_interacoes().get("mercado"):
+        nav += (f'<li class="mc-li"><a class="mercado-btn" href="{pre}mercado/"{f" aria-current=\"{marca}\"" if atual == "Mercado" else ""}>'
+                f'{icone("sacola")}Mercado</a></li>')
     return f"""<header class="bar" id="topo"><div class="in">
  <a class="marca" href="{pre or './'}"><img class="logo" src="{pre}marca/logo-eb-104.webp" srcset="{pre}marca/logo-eb-52.webp 157w, {pre}marca/logo-eb-104.webp 314w, {pre}marca/logo-eb-156.webp 472w" sizes="(max-width: 480px) 121px, 145px" width="157" height="52" alt="Elite Board Gamers: página inicial"></a>
  <a class="ig" href="{INSTAGRAM}" target="_blank" rel="noopener" aria-label="Instagram @eliteboardgamers">{icone("insta")}<span>@eliteboardgamers</span></a>
@@ -269,8 +280,9 @@ def rodape(pre, barra=None):
     """Rodapé comum. `barra` é a barra fixa do pé da tela: por padrão, só Compartilhar; "" para nenhuma."""
     if barra is None:
         barra = barra_leitura(interacao=False)
+    mercado = f'<a href="{pre}mercado/">Mercado</a>' if _config_interacoes().get("mercado") else ""
     return f"""<footer><div class="in">
- <span>Elite Boardgamers</span><a href="{pre}noticias/">Notícias</a><a href="{pre}resenhas/">Resenhas</a><a href="{pre}como-jogar/">Como jogar</a><a href="{pre}lancamentos/">Lançamentos</a><a href="{pre}black/">Black de Verdade</a><a href="{pre}jogos-de-tabuleiro/">Guia de jogos de tabuleiro</a><a href="{pre}premios/">Prêmios</a><a href="{pre}politica-editorial/">Política editorial</a>
+ <span>Elite Boardgamers</span><a href="{pre}noticias/">Notícias</a><a href="{pre}resenhas/">Resenhas</a><a href="{pre}como-jogar/">Como jogar</a><a href="{pre}lancamentos/">Lançamentos</a><a href="{pre}black/">Black de Verdade</a>{mercado}<a href="{pre}jogos-de-tabuleiro/">Guia de jogos de tabuleiro</a><a href="{pre}premios/">Prêmios</a><a href="{pre}politica-editorial/">Política editorial</a>
  <a href="{INSTAGRAM}" target="_blank" rel="noopener">Instagram @eliteboardgamers</a><a href="{WHATSAPP}" target="_blank" rel="noopener">Grupo do WhatsApp</a>
 </div></footer>
 {barra}"""
