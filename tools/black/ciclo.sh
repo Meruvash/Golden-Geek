@@ -7,6 +7,7 @@
 # (workflow_dispatch com o GITHUB_TOKEN, que o GitHub permite), e o ciclo continua sem buraco. O agendamento antigo
 # fica como rede de segurança: se a corrente quebrar, ele religa o ciclo.
 #
+# Mudar este arquivo na main liga os dois robôs na hora (gatilho push dos workflows).
 # Uso (dentro do workflow): bash tools/black/ciclo.sh <normal|educado> <intervalo_s> <ciclo_max_s> <arquivo.yml>
 set -u
 ROBO="$1"; INTERVALO="$2"; CICLO_MAX="$3"; WORKFLOW="$4"

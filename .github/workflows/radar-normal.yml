@@ -6,6 +6,9 @@ on:
   schedule:
     - cron: "*/30 * * * *"
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [tools/black/ciclo.sh]   # mudou o ciclo: liga (ou religa) a corrente na hora
 
 permissions:
   contents: write
