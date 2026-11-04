@@ -53,7 +53,11 @@ E, além disso, cada jogador que não é o narrador ganha 1 ponto por voto que *
 > - (x) 4
 > = Ninguém acertou: você ganha 2, mais 1 por voto na sua carta (p. 2).
 
-### Fim do turno e da partida
+### Ainda não precisa saber
+
+O que fazer quando a pilha de compra acaba: etapa 3. A partida com 3 jogadores: Situações especiais.
+
+### Como a partida acaba
 
 As cartas do turno vão para o descarte, cada um compra até ter 6 de novo e o jogador à esquerda do narrador vira o novo narrador. Se, no fim de um turno, alguém chegou a 30 pontos ou mais, a partida acaba: vence quem tem mais pontos; empate divide a vitória (p. 2).
 

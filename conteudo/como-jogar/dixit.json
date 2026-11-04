@@ -1,0 +1,23 @@
+{
+ "slug": "dixit",
+ "titulo": "Como jogar Dixit",
+ "jogo": "Dixit",
+ "genero": "Dedução com imagens · Família",
+ "jogadores": "3 a 8 jogadores",
+ "duracao": "30 min",
+ "idade": "8+",
+ "edicao": "Edição Asmodee (Galápagos)",
+ "data": "2026-11-04",
+ "descricao": "Regras de Dixit passo a passo, conferidas no manual da Asmodee: preparação, a dica do narrador, a votação, a pontuação com bônus e a partida com 3.",
+ "resumo": "A cada turno um narrador dá uma dica sobre uma carta secreta, os outros misturam cartas parecidas e votam, e vence quem tiver mais pontos quando alguém chegar a 30.",
+ "pontos": [
+  "O narrador escolhe uma carta, diz uma dica, e cada jogador entrega a carta da mão que melhor combina com ela.",
+  "Se todos ou ninguém acharem a carta do narrador, ele fica com 0 e os outros ganham 2; se só alguns acharem, ele e quem acertou ganham 3.",
+  "Cada voto que a sua carta recebe vale 1 ponto de bônus, e a partida acaba no fim do turno em que alguém chega a 30."
+ ],
+ "leitura_min": 16,
+ "etapas": 3,
+ "resenha": null,
+ "chamada": "Dê uma dica nem fácil nem difícil demais, engane os outros com a sua carta e ache a do narrador. Começa com um resumo para jogar em 4 minutos e segue em três etapas, da mesa montada ao fim da partida.",
+ "publicar": false
+}
