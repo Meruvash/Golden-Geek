@@ -1,0 +1,23 @@
+{
+ "slug": "bang",
+ "titulo": "Como jogar BANG!",
+ "jogo": "BANG!",
+ "genero": "Papéis ocultos · Jogo de cartas",
+ "jogadores": "4 a 7 jogadores",
+ "duracao": "20 a 40 min",
+ "idade": "8+",
+ "edicao": "Edição Asmodee (Galápagos)",
+ "data": "2026-11-04",
+ "descricao": "Regras de BANG! passo a passo, conferidas no manual da Galápagos: identidades, turno, distância e armas, Barril, Prisão, Dinamite e fim da partida.",
+ "resumo": "Com uma identidade secreta (Xerife, Assistente, Fora da lei ou Renegado), você joga cartas para atirar, se esquivar e se curar; vence o lado que cumprir o objetivo: matar o Xerife, proteger a lei ou ser o último vivo.",
+ "pontos": [
+  "No turno, compre 2 cartas, jogue quantas quiser (só 1 carta BANG!) e fique com tantas cartas quantas balas tiver.",
+  "A distância é o menor número de lugares até o alvo; a arma só diz até onde o BANG! alcança, quem muda a distância são Mustang e Escopo.",
+  "Se o Xerife morre, vencem os Fora da lei, a não ser que o Renegado seja o último vivo; mortos os Fora da lei e o Renegado, vence a lei."
+ ],
+ "leitura_min": 24,
+ "etapas": 3,
+ "resenha": null,
+ "chamada": "Xerife revelado, todo o resto em segredo: descubra em quem atirar antes que atirem em você. Começa com um resumo para jogar em 4 minutos e segue em três etapas, do primeiro turno ao último tiro.",
+ "publicar": false
+}

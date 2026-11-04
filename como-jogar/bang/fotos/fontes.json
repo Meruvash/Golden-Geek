@@ -1,0 +1,30 @@
+{
+ "slug": "bang",
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 1600,
+   "altura": 1600,
+   "editora": "Asmodee UK",
+   "credito": "Imagem: Asmodee UK · 4ª edição, Reino Unido",
+   "pagina": "https://www.asmodee.co.uk/products/dvg9100-bang-4th-edition",
+   "imagem": "https://cdn.shopify.com/s/files/1/0572/1076/5512/files/DVG9100_1.jpg",
+   "baixada_em": "2026-11-04",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 800,
+   "altura": 800,
+   "editora": "Abacusspiele",
+   "credito": "Imagem: Abacusspiele · edição alemã",
+   "pagina": "https://abacusspiele.de/produkt/bang-4-edition/",
+   "imagem": "https://abacusspiele.de/wp-content/uploads/2020/03/BANG_Bild04_Material_2024.jpg",
+   "baixada_em": "2026-11-04",
+   "aprovada": true,
+   "texto": true
+  }
+ ]
+}
