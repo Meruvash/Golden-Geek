@@ -400,25 +400,62 @@ def _dominios_lojas(hoje_d):
     return _DOMINIOS
 
 
-def link_direto(url, loja, ofertas_jogo, nome=None, hoje_d=None):
+def link_direto(url, loja, ofertas_jogo, nome=None, hoje_d=None, slug_cache=None):
     """Link da loja para o achado: o da própria loja na lista do Compara Jogos quando o post aponta para página
     intermediária; sempre sem rastreio. Sem link da loja na lista, fica o do post."""
     if url and not INDIRETO.search(url):
         return _sem_rastreio(url)
     alvo = _norm_loja(loja)
+    if alvo and slug_cache:
+        for k, u in (_links_cj().get(slug_cache) or {}).items():
+            if not k.startswith("_") and (k == alvo or alvo in k or k in alvo):
+                return _sem_rastreio(u)
     for o in ofertas_jogo or []:
         u = o.get("url") or ""
         if u and not INDIRETO.search(u) and alvo and (_norm_loja(o.get("loja")) == alvo or alvo in _norm_loja(o.get("loja"))
                                                       or _norm_loja(o.get("loja")) in alvo):
             return _sem_rastreio(u)
-    # o jogo não está mais na lista dessa loja no Compara Jogos: abre o site da loja (Amazon e Mercado Livre na busca
-    # pelo nome do jogo), nunca a página intermediária
-    from urllib.parse import quote_plus
-    if "amazon" in alvo and nome:
-        return f"https://www.amazon.com.br/s?k={quote_plus(nome)}"
-    if "mercadolivre" in alvo and nome:
-        return f"https://lista.mercadolivre.com.br/{quote_plus(nome)}"
-    return _dominios_lojas(hoje_d).get(alvo) or url
+    # sem página do produto dessa loja: não há link direto (o robô relê a página do jogo no Compara Jogos antes,
+    # em atualizar_links_comunidade; se nem assim, o achado fica fora: link tem que levar à oferta de verdade)
+    return None
+
+
+SEM_LINK = set()  # achados da comunidade sem página do produto na loja (o robô relê a página do jogo)
+
+
+LINKS_CJ = DADOS / "links_cj.json"  # slug → {loja normalizada: link do produto, "_hora": quando leu}, vale 24 h
+
+
+def _links_cj():
+    try:
+        return json.loads(LINKS_CJ.read_text(encoding="utf-8"))
+    except (FileNotFoundError, ValueError):
+        return {}
+
+
+def atualizar_links_comunidade(maximo=40):
+    """Relê no Compara Jogos a página dos jogos de achados da comunidade cujo link da loja não está nos dados (a lista
+    de ofertas guardada pode estar velha): a página traz o link do produto em cada loja (04/11/2026, links da Bravo).
+    Guarda em links_cj.json; não mexe na lista de jogos acompanhados."""
+    SEM_LINK.clear()
+    achados_comunidade(ler(HIST, {}), dt.date.today(), ler(HOJE, {}))
+    cache = _links_cj()
+    limite = (agora() - dt.timedelta(hours=24)).isoformat(timespec="minutes")
+    faltam = [sl for sl in sorted(SEM_LINK) if (cache.get(sl) or {}).get("_hora", "") < limite][:maximo]
+    for sl in faltam:
+        try:
+            it = ler_item(sl)
+        except Exception as ex:  # noqa: BLE001 — sem rede ou página fora: tenta na próxima leitura
+            print(f"aviso: {sl}: {ex.__class__.__name__}")
+            continue
+        time.sleep(2)
+        cache[sl] = {"_hora": agora().isoformat(timespec="minutes"),
+                     **{_norm_loja(o["loja"]): o["url"] for o in (it or {}).get("ofertas", []) if o.get("url") and not INDIRETO.search(o["url"])}}
+    if faltam:
+        gravar(LINKS_CJ, cache)
+    SEM_LINK.clear()
+    achados_comunidade(ler(HIST, {}), dt.date.today(), ler(HOJE, {}))
+    print(f"ok links da comunidade: {len(faltam)} jogos relidos no Compara Jogos; {len(SEM_LINK)} achados ficam fora por não ter página do produto na loja")
 
 
 def achados_comunidade(hist, hoje, hoje_d=None):
@@ -462,8 +499,12 @@ def achados_comunidade(hist, hoje, hoje_d=None):
         if por < ref * SUSPEITO:
             continue
         loja = v.get("loja") or "loja não informada"
+        link = link_direto(v.get("link_loja") or v["link"], loja, ((hoje_d or {}).get(slug) or {}).get("ofertas"), nome, hoje_d, slug)
+        if not link:
+            SEM_LINK.add(slug)
+            continue
         saida.append({"slug": slug, "nome": nome, "tipo": tipo or "game", "editora": editora, "bgg": bgg, "imagem": img,
-                      "loja": loja, "url": link_direto(v.get("link_loja") or v["link"], loja, ((hoje_d or {}).get(slug) or {}).get("ofertas"), nome, hoje_d),
+                      "loja": loja, "url": link,
                       "por": por, "de": v.get("preco_antes"),
                       "ref": ref, "desc": (ref - por) / ref, "menor": menor, "recorde": por <= menor, "dias": dias,
                       "fonte_preco": f'achado da comunidade ({(v.get("fonte") or "Promobit").removeprefix("Telegram: ")})',
@@ -650,6 +691,7 @@ def main(robo=None, acao=None):
             promobit.ler_ofertas()
             import telegram
             telegram.ler()
+        atualizar_links_comunidade()
         lojas.salvar()
     import pagina_black
     with _TravaDados():
