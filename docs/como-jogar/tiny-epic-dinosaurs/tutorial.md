@@ -2,6 +2,102 @@
 
 *Regras conferidas no manual da edição brasileira, "Regras da Fazenda" (Meeple BR, arquivo TEDinos_rulebook-PT-BR-2.01, de novembro de 2020, revisão de Leandro R. Fernandes, Márcio Botelho e Thiago Leite). As páginas citadas são as desse manual.*
 
+## setup. Montar a mesa passo a passo
+
+A montagem segue a página "Preparação" do manual (p. 4 e 5), na mesma ordem dos 7 passos e das partes A a E, e o diagrama da mesa montada (p. 5). O que muda com o número de jogadores e no modo solo está na tabela do fim (p. 4, 5 e 14).
+
+**O que vem na caixa** (p. 2 e 3):
+
+| Componente | Quantidade |
+|---|---|
+| Tabuleiros de Ação (frente e verso) | 4 |
+| Tabuleiros de jogo: Rodada, Contrato e Pesquisa | 3, um de cada |
+| Tabuleiros de Jogador (o verso tem o modo solo) | 4 |
+| Tabuleiros de Fazenda (frente e verso) | 4 |
+| Cartas de Pesquisa | 30 |
+| Cartas de Contrato Público | 28 |
+| Cartas de Contrato Privado | 8 |
+| Cartas de Fazendeiro Rival, só para o modo solo | 8 |
+| Capatazes, um de cada cor de jogador | 4 |
+| Dinofazendeiros, 4 de cada cor de jogador | 16 |
+| Estegossauros, Velociraptores, Braquiossauros e Alossauros | 15 de cada |
+| Dinossauros Únicos | 15 |
+| Barreiras | 26 |
+| Marcadores de Planta, de Carne e de Suprimento | 4 de cada |
+| Dado de Caça, Marcador de Rodada e Marcador de Primeiro Jogador | 1 de cada |
+
+1. **Ponha os 4 Tabuleiros de Ação em fila no centro da mesa, em ordem alfabética, de A a D.** Cada um tem frente e verso: deixe para cima o lado marcado com o seu número de jogadores, no canto superior esquerdo (p. 4).
+
+!fig[Os 4 Tabuleiros de Ação; o número de jogadores de cada lado está no canto superior esquerdo. Ilustração: manual Meeple BR (p. 2)](figuras/setup-acao.webp)
+
+2. **Ponha o Tabuleiro de Rodada à esquerda da fila de Tabuleiros de Ação e o Marcador de Rodada, a caneca de café, no espaço "1" da trilha de rodadas** (p. 4).
+
+!fig[O Tabuleiro de Rodada, com o Marcador de Rodada no alto da trilha, e a caneca à parte. Ilustração: manual Meeple BR (p. 3 e 5)](figuras/setup-rodada.webp)
+
+3. **Dê a cada jogador 1 Tabuleiro de Fazenda e 1 Tabuleiro de Jogador.** Cada um escolhe o lado da sua Fazenda e a põe à sua frente; o Tabuleiro de Jogador fica ao lado, com o lado normal para cima (p. 4, passo 3A).
+
+!fig[À esquerda, os 4 Tabuleiros de Jogador; à direita, os 4 Tabuleiros de Fazenda. Ilustração: manual Meeple BR (p. 2)](figuras/setup-fazenda-jogador.webp)
+
+4. **Dê a cada jogador 4 Dinofazendeiros e 1 Capataz da sua cor.** O Capataz e 3 Dinofazendeiros vão para o campo de Dinofazendeiros do Tabuleiro de Jogador; o último Dinofazendeiro vai para o espaço "4" da trilha do Tabuleiro de Rodada, o de "Receba um novo Dinofazendeiro" (p. 4, passo 3B).
+
+!fig[Os 4 Capatazes e os 16 Dinofazendeiros, nas quatro cores de jogador. Ilustração: manual Meeple BR (p. 2)](figuras/setup-meeples.webp)
+
+5. **Dê a cada jogador 1 Marcador de Planta, 1 de Carne e 1 de Suprimento, à esquerda da trilha de recursos do Tabuleiro de Jogador.** Fora da trilha, o marcador vale 0 (p. 4, passo 3C).
+
+!fig[Os Marcadores de Planta, de Carne e de Suprimento. Ilustração: manual Meeple BR (p. 3)](figuras/setup-marcadores.webp)
+
+6. **Ponha o Tabuleiro de Contrato acima dos Tabuleiros de Ação e separe as Cartas de Contrato Público e as de Contrato Privado em dois baralhos**, pelo verso (p. 4, passo 4).
+7. **Embaralhe o baralho de Contrato Público e ponha-o, com o verso para cima, no espaço "Contratos Públicos" do Tabuleiro de Contrato. Revele cartas em número igual ao de jogadores mais 1, numa linha virada para cima à direita do tabuleiro** (p. 4, passo 4D).
+8. **Embaralhe as Cartas de Contrato Privado e dê 2 a cada jogador, com o verso para cima.** Cada um olha as suas, fica com 1 e devolve a outra ao baralho. Embaralhe-o de novo e ponha-o, com o verso para cima, no espaço "Contratos Privados" do Tabuleiro de Contrato. O seu Contrato Privado fica em segredo até você cumpri-lo (p. 4, passo 4E).
+
+!fig[O Tabuleiro de Contrato com os baralhos de Contrato Privado e de Contrato Público e uma linha de 5 Contratos Públicos abertos, como numa partida de 4 jogadores. Ilustração: manual Meeple BR (p. 5)](figuras/setup-contrato.webp)
+
+9. **Ponha o Tabuleiro de Pesquisa abaixo dos Tabuleiros de Ação. Embaralhe as Cartas de Pesquisa num baralho com o verso para cima, no espaço "Pesquisa" do tabuleiro, e revele 3 cartas, viradas para cima, numa linha à direita** (p. 4, passo 5).
+
+!fig[O Tabuleiro de Pesquisa com o baralho e as 3 Cartas de Pesquisa abertas. Ilustração: manual Meeple BR (p. 5)](figuras/setup-pesquisa.webp)
+
+10. **Ponha os 5 tipos de dinossauros, separados por cor, e as Barreiras ao alcance de todos. Deixe o Dado de Caça perto do Tabuleiro de Ação "A"** (p. 5, passo 6).
+
+!fig[Os dinossauros separados por cor (Únicos, Estegossauros, Velociraptores, Braquiossauros e Alossauros), as Barreiras e, embaixo, o Dado de Caça. Ilustração: manual Meeple BR (p. 3 e 5)](figuras/setup-dinos.webp)
+
+11. **Dê o Marcador de Primeiro Jogador à última pessoa que visitou um museu de história natural**, ou escolha o primeiro jogador do jeito que preferirem (p. 5, passo 7).
+
+!fig[O Marcador de Primeiro Jogador. Ilustração: manual Meeple BR (p. 3)](figuras/setup-primeiro.webp)
+
+12. **Dê os bônus iniciais, em sentido horário a partir do primeiro jogador:** o segundo jogador põe o Marcador de Planta no "1"; o terceiro, o de Carne; o quarto, o de Suprimento. Com menos jogadores, os bônus param no último (p. 5, passo 7).
+
+!fig[A mesa montada: os 4 Tabuleiros de Ação no centro, o Tabuleiro de Rodada à esquerda, o de Contrato em cima e o de Pesquisa embaixo; à direita, a Fazenda e o Tabuleiro de Jogador, com os Dinofazendeiros. Ilustração: manual Meeple BR (p. 5)](figuras/preparacao.webp)
+
+**Quem começa.** Quem tem o Marcador de Primeiro Jogador (p. 5, passo 7).
+
+**O que muda com o número de jogadores** (p. 4, 5 e 14):
+
+| Jogadores | Lado dos Tabuleiros de Ação | Contratos Públicos abertos | Contratos Privados guardados / no baralho | Bônus iniciais |
+|---|---|---|---|---|
+| Solo (você e o Rival) | o de 2 jogadores (a partida solo se prepara como a de 2) | 3 | 1 seu, o Rival não recebe / 7 | veja o bloco do solo |
+| 2 | o marcado para 2 jogadores | 3 | 2 / 6 | 2º jogador: Planta no 1 |
+| 3 | o marcado para 3 jogadores | 4 | 3 / 5 | 2º: Planta no 1; 3º: Carne no 1 |
+| 4 | o marcado para 4 jogadores | 5 | 4 / 4 | 2º: Planta; 3º: Carne; 4º: Suprimento, cada um no 1 |
+
+No diagrama (p. 5), os Tabuleiros A e B aparecem no lado "1-3 JOGADORES" e os C e D no lado "1-2 JOGADORES"; os lados das outras contagens não estão desenhados no manual, por isso vale o que está impresso no canto de cada tabuleiro (p. 4).
+
+> [!mais] **Modo solo.** Prepare uma partida de 2 jogadores, com estas mudanças (p. 14): (A) escolha 1 Tabuleiro de Jogador para o Rival e vire-o no lado da Fazenda Rival, perto do seu; (B) 3 Marcadores de Recurso ao lado da trilha de recursos do Rival, valendo 0; (C) as 8 Cartas de Fazendeiro Rival embaralhadas num baralho com o verso para cima, ao lado da Fazenda Rival; (D) o Capataz do Rival no espaço da 4ª rodada do Tabuleiro de Rodada, ao lado do seu Dinofazendeiro extra, 2 Dinofazendeiros normais do Rival separados para a pontuação final e o resto dele de volta à caixa; (E) o Marcador de Primeiro Jogador fica com o Rival, e você pega 1 Carta de Contrato Privado, sem dar nenhuma ao Rival. O manual não diz se o bônus de segundo jogador (Planta no 1) vale para você no solo.
+
+!fig[Preparação do modo solo, com as letras dos passos do manual: A, a Fazenda Rival; B, os 3 marcadores do Rival; C, o baralho de Fazendeiro Rival; D, o Capataz do Rival no espaço da 4ª rodada; E, o Marcador de Primeiro Jogador com o Rival. Ilustração: manual Meeple BR (p. 14)](figuras/setup-solo.webp)
+
+**O que volta para a caixa:** no modo solo, os Dinofazendeiros do Rival que não foram separados para a pontuação (p. 14). Nas outras contagens, o manual não manda devolver nada; as peças das cores sem jogador ficam fora da partida.
+
+!fig[Tiny Epic Dinosaurs montado, na foto da editora (edição Deluxe, com peças diferentes das da caixa comum). Imagem: Gamelyn Games · edição Deluxe](fotos/mesa-1.webp)
+
+**Antes de começar, confira:** Tabuleiros de Ação de A a D no lado do seu número de jogadores; caneca no espaço 1; cada um com Fazenda, Tabuleiro de Jogador, Capataz e 3 Dinofazendeiros no tabuleiro e o quarto no espaço 4 do Tabuleiro de Rodada; marcadores de recurso fora da trilha; Contratos Públicos abertos em número de jogadores mais 1; 1 Contrato Privado secreto para cada um; 3 Cartas de Pesquisa abertas; dinossauros e Barreiras à mão; Dado de Caça perto do Tabuleiro A; primeiro jogador definido e bônus dados.
+
+?? Partida de 3 jogadores. Qual mesa está certa?
+- ( ) 3 Contratos Públicos abertos, e o primeiro jogador com a Planta no 1
+- (x) 4 Contratos Públicos abertos, o segundo jogador com a Planta no 1 e o terceiro com a Carne no 1
+- ( ) 4 Contratos Públicos abertos, e todos com os 4 Dinofazendeiros no Tabuleiro de Jogador
+- ( ) 4 Contratos Públicos abertos, e cada jogador com 2 Contratos Privados
+= Com 3 jogadores, abrem-se 3 + 1 = 4 Contratos Públicos (p. 4); os bônus começam no segundo jogador, Planta, e seguem com o terceiro, Carne (p. 5). O quarto Dinofazendeiro de cada um vai para o espaço 4 do Tabuleiro de Rodada, e cada um guarda só 1 Contrato Privado (p. 4).
+
 ## 4min. Comece a jogar em 4 minutos
 
 **Meta:** em 4 minutos de leitura, montar a mesa e alocar o seu primeiro Dinofazendeiro sem abrir o manual.
@@ -12,17 +108,13 @@ Você cuida de uma fazenda de dinossauros durante 6 rodadas. Em cada rodada, man
 
 ### Monte a mesa
 
-Na ordem. O marcado *(depois)* se monta já e se usa mais tarde (p. 4 e 5).
+A montagem completa, com figuras, está na seção "Montar a mesa passo a passo", logo acima. O essencial (p. 4 e 5):
 
-1. No centro, os 4 Tabuleiros de Ação em fila, de A a D, com o lado que mostra o seu número de jogadores.
-2. À esquerda deles, o Tabuleiro de Rodada, com o Marcador de Rodada (a caneca) no espaço 1.
-3. Cada jogador pega um Tabuleiro de Fazenda, no lado que preferir, e um Tabuleiro de Jogador, no lado normal.
-4. Cada jogador põe 3 Dinofazendeiros e o Capataz da sua cor no Tabuleiro de Jogador, e o quarto Dinofazendeiro no espaço 4 do Tabuleiro de Rodada *(depois)*.
-5. Os Marcadores de Planta, Carne e Suprimento ficam à esquerda da trilha de recursos: valem 0.
-6. Acima dos Tabuleiros de Ação, o Tabuleiro de Contrato, com uma linha de Cartas de Contrato Público abertas: número de jogadores mais 1. Cada um recebe 2 Cartas de Contrato Privado, fica com 1 em segredo e devolve a outra *(depois)*.
-7. Abaixo, o Tabuleiro de Pesquisa, com 3 Cartas de Pesquisa abertas *(depois)*.
-8. Dinossauros e Barreiras ao alcance de todos; o Dado de Caça perto do Tabuleiro de Ação A.
-9. Quem visitou por último um museu de história natural pega o Marcador de Primeiro Jogador. Em sentido horário a partir dele, o segundo jogador põe o Marcador de Planta no 1; o terceiro, o de Carne; o quarto, o de Suprimento.
+1. Os 4 Tabuleiros de Ação em fila, de A a D, no lado do seu número de jogadores; à esquerda, o Tabuleiro de Rodada, com a caneca no espaço 1.
+2. Cada jogador: Fazenda, Tabuleiro de Jogador, Capataz e 3 Dinofazendeiros no tabuleiro, o quarto no espaço 4 do Tabuleiro de Rodada *(depois)*; marcadores de recurso fora da trilha, valendo 0.
+3. Contratos Públicos abertos: número de jogadores mais 1; cada um guarda 1 Contrato Privado em segredo *(depois)*. 3 Cartas de Pesquisa abertas *(depois)*.
+4. Dinossauros e Barreiras à mão; o Dado de Caça perto do Tabuleiro A.
+5. Quem visitou por último um museu de história natural pega o Marcador de Primeiro Jogador. Em sentido horário a partir dele, o segundo põe a Planta no 1; o terceiro, a Carne; o quarto, o Suprimento.
 
 ### Seu primeiro turno
 
