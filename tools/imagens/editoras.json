@@ -1842,5 +1842,26 @@
    ],
    "verificado_em": "2026-11-04"
   }
+ },
+ "dicethrone.com": {
+  "nome": "Dice Throne",
+  "apelidos": [
+   "Dice Throne",
+   "Dice Throne Inc.",
+   "Roxley Games"
+  ],
+  "site": "https://dicethrone.com",
+  "plataforma": "woocommerce",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://shop.dicethrone.com/pages/retailer-portal",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": 10.0,
+   "sitemaps": [],
+   "verificado_em": "2026-11-04"
+  }
  }
 }
