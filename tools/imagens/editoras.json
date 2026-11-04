@@ -2181,5 +2181,24 @@
    ],
    "verificado_em": "2026-11-04"
   }
+ },
+ "dvgiochi.com": {
+  "nome": "dV Giochi",
+  "apelidos": [
+   "dV Giochi"
+  ],
+  "site": "https://www.dvgiochi.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://www.dvgiochi.com/area-download/",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [],
+   "verificado_em": "2026-11-04"
+  }
  }
 }
