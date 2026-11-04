@@ -1,5 +1,5 @@
 {
- "data": "2026-11-01",
+ "data": "2026-11-04",
  "trends": {
   "relacionadas": [],
   "subindo": [],
@@ -49,20 +49,6 @@
    ]
   },
   {
-   "jogo": "dixit",
-   "nota": 11.5,
-   "google": 9,
-   "youtube": 5,
-   "trends": null,
-   "subindo": false,
-   "exemplos": [
-    "como jogar dixit",
-    "como jogar dixit odyssey",
-    "como jogar dixit de 2",
-    "como jogar dixit disney"
-   ]
-  },
-  {
    "jogo": "war",
    "nota": 11.5,
    "google": 7,
@@ -77,10 +63,24 @@
    ]
   },
   {
+   "jogo": "dixit",
+   "nota": 11.0,
+   "google": 9,
+   "youtube": 4,
+   "trends": null,
+   "subindo": false,
+   "exemplos": [
+    "como jogar dixit",
+    "como jogar dixit odyssey",
+    "como jogar dixit de 2",
+    "como jogar dixit disney"
+   ]
+  },
+  {
    "jogo": "codenames",
-   "nota": 8.0,
+   "nota": 8.5,
    "google": 7,
-   "youtube": 2,
+   "youtube": 3,
    "trends": null,
    "subindo": false,
    "exemplos": [
@@ -99,16 +99,16 @@
    "subindo": false,
    "exemplos": [
     "como jogar exploding kittens",
-    "como jogar exploding kittens tabuleiro",
     "como jogar exploding kittens bem vs mal",
+    "como jogar exploding kittens tabuleiro",
     "como jogar exploding kittens zombie"
    ]
   },
   {
    "jogo": "uno flip",
-   "nota": 7.0,
+   "nota": 6.5,
    "google": 5,
-   "youtube": 4,
+   "youtube": 3,
    "trends": null,
    "subindo": false,
    "exemplos": [
@@ -116,20 +116,6 @@
     "como jogar uno flip attack",
     "como jogar uno flip regras",
     "como jogar uno flip ataque"
-   ]
-  },
-  {
-   "jogo": "7 wonders",
-   "nota": 6.5,
-   "google": 4,
-   "youtube": 5,
-   "trends": null,
-   "subindo": false,
-   "exemplos": [
-    "como jogar 7 wonders",
-    "como jogar 7 wonders duel",
-    "como jogar 7 wonders arquitetos",
-    "como jogar 7 wonders dice"
    ]
   },
   {
@@ -144,6 +130,201 @@
     "como jogar splendor duel",
     "como jogar splendor marvel",
     "como jogar splendor pokemon"
+   ]
+  },
+  {
+   "jogo": "bang",
+   "nota": 6.0,
+   "google": 3,
+   "youtube": 6,
+   "trends": null,
+   "subindo": false,
+   "exemplos": [
+    "como jogar bang",
+    "como jogar bang dice game",
+    "como jogar bang drive"
+   ]
+  },
+  {
+   "jogo": "7 wonders",
+   "nota": 5.5,
+   "google": 3,
+   "youtube": 5,
+   "trends": null,
+   "subindo": false,
+   "exemplos": [
+    "como jogar 7 wonders",
+    "como jogar 7 wonders duel",
+    "como jogar 7 wonders dice"
+   ]
+  },
+  {
+   "jogo": "the mind",
+   "nota": 5.0,
+   "google": 4,
+   "youtube": 2,
+   "trends": null,
+   "subindo": false,
+   "exemplos": [
+    "como jogar the mind",
+    "como jogar the mind cartas",
+    "como jogar the mind extreme",
+    "como jogar the mind galapagos"
+   ]
+  },
+  {
+   "jogo": "everdell",
+   "nota": 5.0,
+   "google": 3,
+   "youtube": 4,
+   "trends": null,
+   "subindo": false,
+   "exemplos": [
+    "como jogar everdell",
+    "como jogar everdell duo",
+    "como jogar everdell farshore"
+   ]
+  },
+  {
+   "jogo": "heat",
+   "nota": 4.5,
+   "google": 3,
+   "youtube": 3,
+   "trends": null,
+   "subindo": false,
+   "exemplos": [
+    "como jogar heat",
+    "como jogar heat pedal to the metal",
+    "como jogar heatseeker rocket league"
+   ]
+  },
+  {
+   "jogo": "carcassonne",
+   "nota": 4.0,
+   "google": 3,
+   "youtube": 2,
+   "trends": null,
+   "subindo": false,
+   "exemplos": [
+    "como jogar carcassonne",
+    "como jogar carcassonne tabuleiro",
+    "como jogar carcassonne junior"
+   ]
+  },
+  {
+   "jogo": "harmonies",
+   "nota": 3.5,
+   "google": 3,
+   "youtube": 1,
+   "trends": null,
+   "subindo": false,
+   "exemplos": [
+    "como jogar harmonies",
+    "como jogar harmonies solo",
+    "como jogar harmonies sozinho"
+   ]
+  },
+  {
+   "jogo": "king of tokyo",
+   "nota": 3.0,
+   "google": 2,
+   "youtube": 2,
+   "trends": null,
+   "subindo": false,
+   "exemplos": [
+    "como jogar king of tokyo",
+    "como jogar king of tokyo duel"
+   ]
+  },
+  {
+   "jogo": "pandemic",
+   "nota": 3.0,
+   "google": 2,
+   "youtube": 2,
+   "trends": null,
+   "subindo": false,
+   "exemplos": [
+    "como jogar pandemic",
+    "como jogar pandemic resposta rapida"
+   ]
+  },
+  {
+   "jogo": "sushi go",
+   "nota": 3.0,
+   "google": 2,
+   "youtube": 2,
+   "trends": null,
+   "subindo": false,
+   "exemplos": [
+    "como jogar sushi go",
+    "como jogar sushi go party"
+   ]
+  },
+  {
+   "jogo": "kingdomino",
+   "nota": 3.0,
+   "google": 2,
+   "youtube": 2,
+   "trends": null,
+   "subindo": false,
+   "exemplos": [
+    "como jogar kingdomino",
+    "como jogar kingdomino origins"
+   ]
+  },
+  {
+   "jogo": "wingspan",
+   "nota": 2.5,
+   "google": 1,
+   "youtube": 3,
+   "trends": null,
+   "subindo": false,
+   "exemplos": [
+    "como jogar wingspan"
+   ]
+  },
+  {
+   "jogo": "root",
+   "nota": 2.5,
+   "google": 1,
+   "youtube": 3,
+   "trends": null,
+   "subindo": false,
+   "exemplos": [
+    "como jogar root"
+   ]
+  },
+  {
+   "jogo": "dune imperium",
+   "nota": 2.0,
+   "google": 1,
+   "youtube": 2,
+   "trends": null,
+   "subindo": false,
+   "exemplos": [
+    "como jogar dune imperium"
+   ]
+  },
+  {
+   "jogo": "7 wonders duel",
+   "nota": 1.5,
+   "google": 1,
+   "youtube": 1,
+   "trends": null,
+   "subindo": false,
+   "exemplos": [
+    "como jogar 7 wonders duel"
+   ]
+  },
+  {
+   "jogo": "cascadia",
+   "nota": 1.5,
+   "google": 1,
+   "youtube": 1,
+   "trends": null,
+   "subindo": false,
+   "exemplos": [
+    "como jogar cascadia"
    ]
   }
  ]
