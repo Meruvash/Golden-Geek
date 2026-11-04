@@ -341,6 +341,34 @@ MARCAS_OUTRAS = re.compile(r"(?i)\b(pakitoys|paki toys|uniplac|nig brinquedos|to
                            r"brincadeira de crian[cç]a|elka|big star|zoop toys|lugo|junges|ggb plast)\b")
 
 
+AUDITORIA = ROOT / "conteudo" / "auditoria_links.json"  # tools/auditoria_links.py (a cada 6 h no GitHub Actions)
+_LINKS_RUINS = None
+
+
+def links_ruins():
+    """Links de oferta que a última auditoria abriu e achou com ERRO (página inicial, busca, 404, sem produto, outro
+    jogo, intermediário ou rastreio). Regra do usuário (04/11/2026): link que não leva à oferta de verdade não vai
+    para o site; a oferta sai. A auditoria seguinte confere de novo esses links e devolve os que ficarem certos."""
+    global _LINKS_RUINS
+    if _LINKS_RUINS is None:
+        try:
+            rel = json.loads(AUDITORIA.read_text(encoding="utf-8"))
+            _LINKS_RUINS = {v["url"] for v in rel.get("links", []) if v.get("status") == "ERRO"}
+        except (FileNotFoundError, ValueError):
+            _LINKS_RUINS = set()
+    return _LINKS_RUINS
+
+
+def link_oferta(url):
+    """Link de oferta pronto para o site, ou None quando ele não leva direto à página do produto."""
+    if not url or not url.startswith("http") or INDIRETO.search(url):
+        return None
+    limpo = _sem_rastreio(url)
+    if url in links_ruins() or limpo in links_ruins():
+        return None
+    return limpo
+
+
 def outro_produto(o, h):
     """A oferta é de outro produto que o Compara Jogos ligou ao jogo? Pela lista de exclusão ou pela marca no
     título do anúncio (quando a marca não é a editora do jogo)."""
@@ -362,9 +390,11 @@ COMUNIDADE_HORAS = 72  # promoção postada em canal costuma acabar rápido: só
 # para a página do jogo no Compara Jogos, e outros canais usam encurtadores (amzn.to, meli.la...) que podem levar
 # afiliado de quem postou. Trocamos pelo link da própria loja que o Compara Jogos já lista para o jogo (sem abrir o
 # encurtador) e tiramos parâmetros de rastreio e de afiliado.
-INDIRETO = re.compile(r"(comparajogos\.com\.br|amzn\.to|a\.co/|link\.amazon|amzlinks|meli\.la|bit\.ly|tinyurl|cutt\.ly|"
-                      r"encurtador|t\.me/|s\.click|shope\.ee|tidd\.ly|lmd\.ink|onelink)", re.I)
-RASTREIO = re.compile(r"^(utm_.*|tag|ref|ref_|linkcode|ascsubtag|camp.*|creative.*|afil.*|aff.*|partner.*|matt_.*|"
+INDIRETO = re.compile(r"(comparajogos\.com\.br|amzn\.to|a\.co/|link\.amazon|amzlinks|amzlink\.to|meli\.la|bit\.ly|tinyurl|cutt\.ly|"
+                      r"encurtador|t\.me/|telegram\.me|s\.click|shope\.ee|tidd\.ly|lmd\.ink|onelink|ccnl\.app|is\.gd|ow\.ly|"
+                      r"buff\.ly|rebrand\.ly|rb\.gy|shorturl\.at|//t\.co/|goo\.gl|l\.ead\.me|compre\.vc|promobit\.com\.br|"
+                      r"pelando\.com\.br|linktr\.ee|hotm\.art)", re.I)
+RASTREIO = re.compile(r"^(utm_.*|tag|ref|ref_|linkcode|ascsubtag|camp.*|creative.*|afil.*|aff.*|partner.*|parceiro.*|matt_.*|"
                       r"source|fbclid|gclid|psc|smid|th|sr|qid|keywords|pd_rd_.*|pf_rd_.*|content-id|spm|clickid)$", re.I)
 
 
@@ -503,6 +533,8 @@ def achados_comunidade(hist, hoje, hoje_d=None):
         if not link:
             SEM_LINK.add(slug)
             continue
+        if not link_oferta(link):
+            continue  # a auditoria de links abriu este link e ele não leva à página do produto
         saida.append({"slug": slug, "nome": nome, "tipo": tipo or "game", "editora": editora, "bgg": bgg, "imagem": img,
                       "loja": loja, "url": link,
                       "por": por, "de": v.get("preco_antes"),
@@ -542,13 +574,16 @@ def calcular():
             la = o.get("loja_agora")
             if la and la.get("estoque") is False:
                 continue  # a página da loja diz que acabou
+            url = link_oferta(o.get("url"))
+            if not url:
+                continue  # sem link direto para a página do produto (intermediário ou ERRO na auditoria de links)
             # preço da API oficial, ou lido agora na página da loja; senão, o que a loja informou ao Compara Jogos
             por = api["preco"] if api else (la["preco"] if la else o["por"])
             desc = (ref - por) / ref
             if por < ref * SUSPEITO:
                 continue
             base = {"slug": s, "nome": h["nome"], "tipo": h["tipo"], "editora": h.get("editora"), "bgg": h.get("bgg"),
-                    "imagem": h.get("imagem"), "loja": o["loja"], "url": o["url"], "por": por, "de": o["de"],
+                    "imagem": h.get("imagem"), "loja": o["loja"], "url": url, "por": por, "de": o["de"],
                     "ref": ref, "desc": desc, "menor": menor, "recorde": por <= menor_antes, "dias": dias,
                     "fonte_preco": api["fonte"] if api else ("página da loja" if la else ("feed da loja" if o.get("fonte") == "feed da loja" else "Compara Jogos")),
                     "vendedor": api.get("vendedor") if api else None,
