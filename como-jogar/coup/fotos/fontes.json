@@ -1,0 +1,53 @@
+{
+ "slug": "coup",
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 800,
+   "altura": 800,
+   "editora": "Indie Boards & Cards",
+   "credito": "Imagem: Indie Boards & Cards",
+   "pagina": "https://indieboardsandcards.com/our-games/coup/",
+   "imagem": "https://indieboardsandcards.com/wp-content/uploads/2019/10/Untitled-design-4.png",
+   "baixada_em": "2026-11-04",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/jogabilidade-1.webp",
+   "tipo": "jogabilidade",
+   "largura": 1500,
+   "altura": 1000,
+   "editora": "Indie Boards & Cards",
+   "credito": "Imagem: Indie Boards & Cards",
+   "pagina": "https://indieboardsandcards.com/our-games/coup/",
+   "imagem": "https://indieboardsandcards.com/wp-content/uploads/2019/10/MG_8597.jpg",
+   "baixada_em": "2026-11-04",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/jogabilidade-2.webp",
+   "tipo": "jogabilidade",
+   "largura": 1500,
+   "altura": 1000,
+   "editora": "Indie Boards & Cards",
+   "credito": "Imagem: Indie Boards & Cards",
+   "pagina": "https://indieboardsandcards.com/our-games/coup/",
+   "imagem": "https://indieboardsandcards.com/wp-content/uploads/2019/10/MG_8606.jpg",
+   "baixada_em": "2026-11-04",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 1000,
+   "altura": 1500,
+   "editora": "Indie Boards & Cards",
+   "credito": "Imagem: Indie Boards & Cards",
+   "pagina": "https://indieboardsandcards.com/our-games/coup/",
+   "imagem": "https://indieboardsandcards.com/wp-content/uploads/2019/10/MG_8569.jpg",
+   "baixada_em": "2026-11-04",
+   "aprovada": true
+  }
+ ]
+}

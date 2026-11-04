@@ -1,0 +1,23 @@
+{
+ "slug": "coup",
+ "titulo": "Como jogar Coup",
+ "jogo": "Coup",
+ "genero": "Blefe · Cartas",
+ "jogadores": "2 a 6 jogadores",
+ "duracao": "15 a 20 min",
+ "idade": "14+",
+ "edicao": "Edição brasileira (livreto FunBox Jogos)",
+ "data": "2026-11-04",
+ "descricao": "Regras de Coup passo a passo, conferidas no livreto da edição brasileira: preparação, ações, bloqueios, contestação e a regra das 10 moedas.",
+ "resumo": "Você usa os poderes dos personagens da corte, dizendo a verdade ou blefando, para tirar as duas influências de cada adversário, e vence o último jogador que ainda tiver uma carta virada para baixo.",
+ "pontos": [
+  "Na sua vez, você faz uma só ação: Renda, Ajuda Externa, Golpe de Estado ou a ação de um personagem que diz ter, mesmo sem ter.",
+  "Qualquer jogador pode contestar um personagem anunciado: quem estava errado, o blefador ou quem duvidou, perde uma influência.",
+  "Bloqueio que funciona não devolve as moedas pagas; contestação ganha contra a ação devolve, e quem começa a vez com 10 moedas é obrigado a dar um Golpe."
+ ],
+ "leitura_min": 21,
+ "etapas": 3,
+ "resenha": null,
+ "chamada": "Blefe, dúvida e duas cartas viradas para baixo: aprenda as ações, os bloqueios e a contestação. Começa com um resumo para jogar em 4 minutos e segue em três etapas curtas.",
+ "publicar": false
+}

@@ -1,0 +1,41 @@
+{
+ "slug": "splendor",
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 1093,
+   "altura": 995,
+   "editora": "Space Cowboys",
+   "credito": "Imagem: Space Cowboys",
+   "pagina": "https://www.spacecowboys-games.com/game/splendor/",
+   "imagem": "https://cdn.svc.asmodee.net/production-spacecowboys/uploads/image-converter/2025/10/29052024SCSPLEN-1.webp",
+   "baixada_em": "2026-11-04",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/mesa-1.webp",
+   "tipo": "mesa",
+   "largura": 1500,
+   "altura": 1000,
+   "editora": "Space Cowboys",
+   "credito": "Imagem: Space Cowboys",
+   "pagina": "https://www.spacecowboys-games.com/game/splendor/",
+   "imagem": "https://cdn.svc.asmodee.net/production-spacecowboys/uploads/image-converter/2025/10/02-2-scaled.webp",
+   "baixada_em": "2026-11-04",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 1500,
+   "altura": 1000,
+   "editora": "Space Cowboys",
+   "credito": "Imagem: Space Cowboys",
+   "pagina": "https://www.spacecowboys-games.com/game/splendor/",
+   "imagem": "https://cdn.svc.asmodee.net/production-spacecowboys/uploads/image-converter/2025/10/06-scaled.webp",
+   "baixada_em": "2026-11-04",
+   "aprovada": true
+  }
+ ]
+}

@@ -2200,5 +2200,30 @@
    "sitemaps": [],
    "verificado_em": "2026-11-04"
   }
+ },
+ "abacusspiele.de": {
+  "nome": "Abacusspiele",
+  "apelidos": [
+   "Abacusspiele"
+  ],
+  "site": "https://abacusspiele.de",
+  "plataforma": "woocommerce",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://abacusspiele.de/page-sitemap.xml",
+    "https://abacusspiele.de/post-sitemap.xml",
+    "https://abacusspiele.de/product-sitemap.xml",
+    "https://abacusspiele.de/category-sitemap.xml",
+    "https://abacusspiele.de/product_cat-sitemap.xml"
+   ],
+   "verificado_em": "2026-11-04"
+  }
  }
 }

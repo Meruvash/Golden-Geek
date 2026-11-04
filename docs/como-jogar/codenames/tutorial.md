@@ -8,33 +8,35 @@
 
 ### A ideia do jogo
 
-Duas equipes, Vermelha e Azul, disputam a mesma grade de 25 palavras. Em cada equipe, um **espião mestre** sabe, pela **carta chave**, quais palavras são da equipe dele; os outros jogadores, os **agentes de campo**, não sabem. O espião mestre dá pistas de uma palavra só, e os agentes de campo tentam tocar as palavras certas. Vence a equipe que encontrar todas as suas primeiro, e perde na hora quem tocar o **assassino** (p. 2 e 3).
+Duas equipes, Vermelha e Azul, disputam a mesma grade de 25 palavras. Em cada equipe, um **espião mestre** sabe, pela **carta chave**, quais palavras são da equipe dele; os outros jogadores, os **agentes de campo**, não sabem e tentam tocá-las a partir das pistas dele. Vence a equipe que encontrar todas as suas primeiro, e perde na hora quem tocar o **assassino** (p. 2 e 3).
 
 ### Monte a mesa
 
 São precisos pelo menos 4 jogadores, duas equipes de dois (p. 2). Com 2 ou 3, veja as Situações especiais.
 
+Peças: cartas de codinome (uma palavra cada), cartas chave, o apoio (suporte da carta chave), 8 cartas de agente vermelho, 8 de agente azul, o agente duplo (vermelho de um lado, azul do outro), 7 cartas de civil inocente e 1 do assassino (p. 2 e 3).
+
 1. Divida o grupo em duas equipes de tamanho e habilidade parecidos.
 2. Cada equipe escolhe o seu espião mestre. Os dois sentam do mesmo lado da mesa; os agentes de campo, de frente para eles.
 3. Embaralhe as cartas de codinome e ponha 25 na mesa, numa grade de 5 por 5.
-4. Os espiões mestres sorteiam uma carta chave e a encaixam no apoio entre eles, com qualquer lado para cima. Os agentes de campo não podem vê-la.
+4. Os espiões mestres sorteiam uma carta chave e a encaixam no apoio entre eles, com qualquer lado para cima. Os agentes de campo não podem vê-la. Cada quadrado da chave é a palavra na mesma posição da grade: azul e vermelho, das equipes; sem cor, civil; preto, assassino.
 5. As quatro luzes nas bordas da carta chave mostram a cor da equipe inicial. Ela tem 9 palavras para encontrar; a outra, 8.
 6. Vire o agente duplo para a cor da equipe inicial e junte-o à pilha de cartas de agente dela. Cada pilha fica na frente do seu espião mestre.
-7. As 7 cartas de civil inocente e a carta do assassino ficam entre os espiões mestres, ao alcance dos dois.
+7. As 7 cartas de civil inocente e a carta do assassino ficam entre os jogadores, onde os dois espiões mestres alcançam.
 
 (p. 2 e 3)
 
 ### Seu primeiro turno
 
-A equipe inicial joga primeiro, e depois as equipes se revezam (p. 4).
+A equipe inicial joga primeiro; depois, as equipes se revezam (p. 4).
 
-1. **O espião mestre dá a pista:** uma palavra e um número. A palavra se liga a uma ou mais palavras da equipe; o número diz a quantas (p. 4).
+1. **O espião mestre dá a pista:** uma palavra e um número (ver nota na etapa 2). A palavra se liga a uma ou mais palavras da equipe; o número diz a quantas (p. 4).
 2. **A pista não pode estar na mesa.** Nem uma forma nem um pedaço de palavra visível; pista inválida encerra o turno (p. 4 a 6).
 3. **Os agentes de campo conversam e tocam uma palavra.** O toque é a escolha oficial (p. 4).
-4. **O espião mestre olha a chave e cobre a palavra.** Da equipe: carta de agente da equipe, e os agentes de campo podem tocar outra. Civil inocente: carta de civil, e o turno acaba. Da outra equipe: carta de agente da outra equipe, e o turno acaba. Assassino: a equipe que tocou perde (p. 4).
-5. **Quantos toques.** Pelo menos um, no máximo o número da pista mais um. Depois do primeiro, os agentes de campo podem parar quando quiserem (p. 4 e 5).
+4. **O espião mestre olha a chave e cobre a palavra.** Da equipe: carta de agente da equipe, e os agentes de campo podem tocar outra. Civil inocente: carta de civil, e o turno acaba. Da outra equipe: ele a cobre com uma carta de agente da outra equipe, a cor certa, e o turno acaba. Assassino: a equipe que tocou perde, e a outra vence (p. 4 e 5).
+5. **Quantos toques.** Pelo menos um, no máximo o número da pista mais um. Depois do primeiro, podem parar (p. 4 e 5).
 
-> [!resolvido] **Exemplo resolvido.** A grade é a da ilustração da p. 2 do manual, e a Vermelha começa. O espião mestre vermelho quer LEÃO e MARFIM e diz *África: 2*. Os agentes de campo tocam LEÃO: é vermelha, e ele a cobre com uma carta de agente vermelho. Tocam MARFIM: vermelha também, coberta. Podiam tocar uma terceira, mas preferem parar. A Vermelha fica com 7 palavras por encontrar, e a vez passa para a Azul.
+> [!resolvido] **Exemplo resolvido.** A grade é a da ilustração da p. 2 do manual, e a Vermelha começa. O espião mestre vermelho quer LEÃO e MARFIM e diz *África: 2*. Os agentes de campo tocam LEÃO: vermelha, coberta com uma carta de agente vermelho. Tocam MARFIM: vermelha também, coberta. Podiam tocar uma terceira, mas preferem parar. A Vermelha fica com 7 palavras por encontrar, e a vez passa para a Azul.
 
 > [!complete] **Complete.** O espião mestre azul quer ARRANHA-CÉU e JATO e diz *alto: 2*. Os agentes de campo tocam ARRANHA-CÉU, que é azul. Depois tocam SATÉLITE, que é um civil inocente.
 >
@@ -44,7 +46,7 @@ A equipe inicial joga primeiro, e depois as equipes se revezam (p. 4).
 > - ( ) SATÉLITE fica descoberta, e a vez passa para a Vermelha
 > = Civil inocente é coberto com uma carta de civil e encerra o turno na hora, mesmo que sobrem tentativas (p. 4).
 
-> [!suavez] **Agora a sua mesa.** Antes de tocar, confira:
+> [!suavez] **Agora a sua mesa.**
 >
 > ?? Seu espião mestre disse *água: 2*. Quantas palavras, no máximo, vocês podem tocar neste turno?
 > - ( ) 2
@@ -60,17 +62,17 @@ A equipe inicial joga primeiro, e depois as equipes se revezam (p. 4).
 
 ### Ainda não precisa saber
 
-O que conta como "uma palavra" (homônimos, siglas, nomes próprios, pistas com 0 e ilimitado) e o castigo da pista inválida estão na etapa 3. A cara séria e a ampulheta, na etapa 2. As variantes para 2 e 3 jogadores, nas Situações especiais.
+O que vale como pista e o castigo da pista inválida: etapa 3. Cara séria e ampulheta: etapa 2. Variantes para 2 e 3 jogadores: Situações especiais.
 
 ### Como a partida acaba
 
-Quando uma equipe tem todas as suas palavras cobertas, ela vence, mesmo que a última tenha sido tocada pela adversária. Se alguém tocar o assassino, a equipe dele perde (p. 5).
+Vence a equipe com todas as suas palavras cobertas, mesmo que a última tenha sido tocada pela adversária. Se alguém tocar o assassino, a equipe dele perde (p. 5).
 
-**Prefere ver?** O vídeo de regras da própria Devir. Ele complementa este guia; em caso de diferença, vale o manual.
+**Prefere ver?** Vídeo de regras da Devir. Ele complementa este guia; em caso de diferença, vale o manual.
 
 !video[DEVIR BRASIL I Código Secreto - regras rápidas, canal Devir TV Brasil](https://www.youtube.com/watch?v=3nkyoWDRfrU&t=0s)
 
-> [!atencao] **Os três erros mais caros.** Tocar uma palavra da outra equipe encerra o turno e ainda entrega a palavra a ela. O assassino encerra a partida: o espião mestre confere antes de falar se a pista não puxa para ele. E a pista não pode ser palavra visível na mesa.
+> [!atencao] **Os três erros mais caros.** Palavra da outra equipe encerra o turno e ainda é dela. O assassino encerra a partida: antes de falar, o espião mestre confere se a pista não puxa para ele. E a pista não pode ser palavra visível.
 
 ## 0. Antes de tudo: o que é este jogo
 
@@ -146,7 +148,7 @@ O guia tem três etapas, cada uma uma parte real da partida: montar a mesa, joga
 
 ## 3. Etapa 2: dar a pista e adivinhar
 
-> [!entender] **Para entender.** O espião mestre fala uma vez por turno: uma palavra e um número. Depois só cobre as palavras que os colegas tocam (p. 4 e 5).
+> [!entender] **Para entender.** O espião mestre fala uma vez por turno: uma palavra e um número, além de soletrar a pista se pedirem. Depois só cobre as palavras que os colegas tocam (p. 4 e 5).
 >
 > O número faz duas coisas: diz quantas palavras a pista quer indicar e limita os toques ao número mais um. A tentativa extra existe porque uma pista antiga pode ter deixado palavra para trás (p. 4 e 5). Cada toque é um risco, e por isso parar também é uma jogada.
 
@@ -155,20 +157,24 @@ O guia tem três etapas, cada uma uma parte real da partida: montar a mesa, joga
 > 1. O espião mestre da equipe da vez diz a pista: uma palavra e um número. Nada mais.
 > 2. Os agentes de campo discutem entre si; o espião mestre fica de cara séria.
 > 3. Um agente de campo toca uma palavra. É a escolha oficial da equipe.
-> 4. O espião mestre consulta a chave e cobre a palavra. Da sua equipe: carta de agente da sua equipe, e podem tocar outra, sem nova pista. Civil inocente: carta de civil, e o turno acaba. Da outra equipe: carta de agente da outra equipe, e o turno acaba. Assassino: carta do assassino, e a sua equipe perde.
+> 4. O espião mestre consulta a chave e cobre a palavra. Da sua equipe: carta de agente da sua equipe, e podem tocar outra, sem nova pista. Civil inocente: carta de civil, e o turno acaba. Da outra equipe: carta de agente da outra equipe, e o turno acaba. Assassino: carta do assassino; a sua equipe perde, e a outra vence.
 > 5. Pelo menos um toque por turno; no máximo o número da pista mais um. Depois do primeiro, podem parar quando quiserem.
 > 6. Com um erro, a decisão de parar ou o fim das tentativas, a vez passa para a outra equipe.
 > 7. Vence a equipe que tiver todas as suas palavras cobertas.
 
-> [!edicao] O manual brasileiro diz que o espião mestre "também pode dizer um número" (p. 4), como se fosse opcional. Mas todos os exemplos têm número, o limite de toques depende dele, e as pistas com 0 e ilimitado (p. 7) existem para quando não se quer dar uma contagem. Este guia ensina a dizer sempre o número. A frase não foi conferida no manual original em inglês.
+> [!edicao] O manual brasileiro diz que o espião mestre "também pode dizer um número" (p. 4), como se fosse opcional. Mas todos os exemplos têm número, o limite de toques depende dele, e as pistas 0 e ilimitado (p. 7) cobrem os casos especiais. Este guia ensina a dizer sempre o número. A frase não foi conferida no manual original em inglês.
 
 > [!mais] **Vencer no turno do adversário.** Se a outra equipe tocar a última palavra da sua, ela é coberta com a sua carta de agente, e a sua equipe vence ali mesmo (p. 5).
 
 > [!mais] **Cara séria.** O espião mestre não toca nenhuma carta enquanto os colegas pensam e, quando um deles acerta, age como se fosse exatamente a palavra que queria. Os agentes de campo olham para a mesa, não para ele, para evitar sinais sem palavras (p. 5).
 
-> [!mais] **Ampulheta.** Se alguém demora demais, qualquer jogador pode virar a ampulheta, e o lento decide antes de a areia acabar. O espião mestre sem ideia pode usá-la em si mesmo: dá uma pista para uma palavra só e continua pensando durante o turno do adversário (p. 5).
+> [!mais] **Ampulheta.** O uso é opcional (p. 5).
+>
+> 1. Se um jogador demora demais, qualquer jogador pode virar a ampulheta.
+> 2. O jogador lento precisa decidir antes de a areia acabar.
+> 3. O espião mestre também pode virá-la para si mesmo. Se não achar uma boa pista antes de a areia acabar, dá uma pista só para a sua palavra mais difícil e continua pensando enquanto a outra equipe joga.
 
-> [!resolvido] **Exemplo resolvido.** Grade da p. 2; a Vermelha começa, com 9 palavras. No primeiro turno, a pista foi *África: 2*. Os agentes de campo tocaram LEÃO (vermelha, coberta) e depois GARRA, um civil: carta de civil, fim do turno. MARFIM ficou para trás.
+> [!resolvido] **Exemplo resolvido.** Outra partida, com a mesma grade da p. 2; a Vermelha começa, com 9 palavras. No primeiro turno, a pista foi *África: 2*. Os agentes de campo tocaram LEÃO (vermelha, coberta) e depois GARRA, um civil: carta de civil, fim do turno. MARFIM ficou para trás.
 >
 > No turno seguinte da Vermelha, a pista é *espada: 2*, e eles podem tocar até 3 palavras. Tocam NINJA: vermelha, seguem. CAVALEIRO: vermelha, seguem. Usam a tentativa extra na palavra que faltou da pista anterior, MARFIM: vermelha. Esgotadas as 3 tentativas, a vez passa para a Azul, e a Vermelha tem 5 palavras por encontrar.
 
@@ -210,9 +216,9 @@ O guia tem três etapas, cada uma uma parte real da partida: montar a mesa, joga
 
 ## 4. Etapa 3: o que vale como pista
 
-> [!entender] **Para entender.** O jogo está certo quando a informação passa só pela palavra e pelo número (p. 5). Tudo o que o manual proíbe é um jeito de passar mais que isso: letras, posição na mesa, pedaços de palavras visíveis, explicações. Ele separa as **regras rigorosas**, que valem sempre, das **regras flexíveis**, que cada grupo combina antes de jogar, e pede bom senso: na dúvida, decide o espião mestre adversário (p. 6 e 7).
+> [!entender] **Para entender.** O jogo está certo quando a informação passa só pela palavra e pelo número (p. 5). Tudo o que o manual proíbe é um jeito de passar mais que isso: letras, posição na mesa, pedaços de palavras visíveis, explicações. Ele separa as **regras rigorosas**, que valem sempre, das **regras flexíveis**, que cada grupo combina antes de jogar, (p. 6 e 7). E pede bom senso: na dúvida, decide o espião mestre adversário (p. 6).
 
-> [!passos] **Passo a passo: as regras rigorosas** (p. 4 e 6)
+> [!passos] **Passo a passo: regras rigorosas e de grafia** (p. 4 e 6)
 >
 > 1. **Uma palavra só,** sem explicação nem comentário junto.
 > 2. **Sobre o significado.** Nada de falar das letras de uma palavra ou da posição dela na mesa. Letras e números valem quando o que conta é o significado.
@@ -222,17 +228,17 @@ O guia tem três etapas, cada uma uma parte real da partida: montar a mesa, joga
 > 6. **A grafia decide.** Mesmo som com grafia diferente são palavras diferentes; mesma grafia é a mesma palavra, com todos os sentidos. O acento faz diferença.
 > 7. **Soletrar é permitido,** e obrigatório se alguém pedir.
 
-> [!mais] **Penalidade por pista inválida.** O turno da equipe acaba na hora, e o espião mestre da outra equipe pode cobrir uma das palavras da equipe dele com uma carta de agente antes de dar a próxima pista. Se ninguém perceber, a pista vale (p. 5).
+> [!mais] **Penalidade por pista inválida.** O turno da equipe acaba na hora, e o espião mestre da outra equipe pode cobrir uma palavra da própria equipe com uma carta de agente antes de dar a próxima pista: a equipe que não errou fica uma palavra mais perto de vencer. Se ninguém perceber, a pista vale (p. 5).
 
 > [!mais] **Não seja muito rigoroso.** A origem remota de uma palavra não conta: *anglo* e *terra* valem para INGLATERRA, e *rica* vale com AMÉRICA na mesa. Se o espião mestre adversário deixar, a pista vale; na dúvida, pergunte a ele em voz baixa (p. 6).
 
-> [!mais] **Regras flexíveis.** O grupo combina antes: siglas comuns como *CIA* (palavras como *laser* e *radar* valem sempre); palavras compostas, que a rigor só valem sem hífen e sem espaço, como *aeroespacial*, e nunca inventadas; *sela* como pista para *cela*; rimas soltas, que valem sempre que se referem ao significado; nomes próprios de várias palavras ou só de lugares, como *Nova York*. Nome inventado nunca vale, e nome que serve a várias pessoas exige dizer de quem se fala (p. 7).
+> [!mais] **Regras flexíveis.** O grupo combina antes: siglas comuns como *CIA* (palavras como *laser* e *radar* valem sempre); palavras compostas, que a rigor só valem sem hífen e sem espaço, como *aeroespacial*, e nunca inventadas; *sela* como pista para *cela*; rimas, que valem sempre que se referem ao significado (o grupo pode liberar qualquer rima, mas sem avisar que é rima); nomes próprios de várias palavras ou só de lugares, como *Nova York*. Nome inventado nunca vale, e nome que serve a várias pessoas exige dizer de quem se fala (p. 7). Sem combinação, valem as regras rigorosas e de grafia: compostas só sem hífen e sem espaço, e *sela* não vale para CELA (p. 6 e 7).
 
 > [!mais] **Pista com 0.** O número 0 diz que nenhuma palavra da equipe tem a ver com a pista. Os toques ficam sem limite, mas é preciso tocar pelo menos um (p. 7).
 
 > [!mais] **Pista ilimitada.** Quando há palavras de pistas anteriores por achar, o espião mestre pode dizer *ilimitado* no lugar do número. Os agentes de campo tocam quantas quiserem, sem saber quantas se ligam à pista nova (p. 7).
 
-> [!resolvido] **Exemplo resolvido.** Grade da p. 2, tudo descoberto. O espião mestre azul quer ARRANHA-CÉU e JATO e testa pistas.
+> [!resolvido] **Exemplo resolvido.** Grade da p. 2, tudo descoberto. O espião mestre azul quer ARRANHA-CÉU e JATO e testa pistas. Aqui só importa se a pista é válida.
 >
 > - *céu: 2*: inválida, é parte de ARRANHA-CÉU (p. 6).
 > - *j: 1* para JATO, pela letra inicial: inválida, fala das letras (p. 6).
@@ -269,12 +275,12 @@ O guia tem três etapas, cada uma uma parte real da partida: montar a mesa, joga
 > - ( ) Só vale com regras flexíveis
 > = Letras e números são válidos desde que se refiram a significados (p. 6).
 
-> [!treino] **Treino rápido: vale ou não vale?** Nenhuma palavra citada está coberta.
+> [!treino] **Treino rápido: vale ou não vale?** Nenhuma palavra citada está coberta. As cores não importam aqui; só se a pista é válida.
 >
-> ?? a) *aranha*, com ARRANHA-CÉU na mesa.
-> - ( ) Vale: aranha é outra palavra
-> - (x) Não vale
-> = O manual cita *arranha*, *aranha* e *céu* como proibidas enquanto ARRANHA-CÉU estiver descoberta (p. 6).
+> ?? a) *arranha*, com ARRANHA-CÉU na mesa.
+> - ( ) Vale: é outra palavra, com outro sentido
+> - (x) Não vale: é parte de uma palavra composta visível
+> = Enquanto uma palavra composta está descoberta, nenhuma parte dela pode ser pista (p. 6).
 >
 > ?? b) *planta*, para ALGODÃO (vegetal) e HOTEL (planta do prédio).
 > - (x) Vale: mesma grafia é a mesma palavra, com todos os sentidos
@@ -288,7 +294,7 @@ O guia tem três etapas, cada uma uma parte real da partida: montar a mesa, joga
 
 ## 5. Situações especiais
 
-> [!mais] **Dois jogadores.** Os dois jogam na mesma equipe, contra uma equipe simulada; a variante também serve para grupos que não querem competir. Um é espião mestre, os outros são agentes de campo. A equipe simulada não tem jogadores, mas a pilha de cartas de agente dela fica na mesa. Escolha uma carta chave em que a sua equipe seja a inicial e jogue os seus turnos normalmente. A cada turno da equipe simulada, o seu espião mestre cobre uma palavra dela, à escolha dele (p. 8).
+> [!mais] **Dois jogadores.** Os dois jogam na mesma equipe, contra uma equipe simulada; a variante também serve para grupos que não querem competir. Um é espião mestre; o outro (ou os outros, se forem mais) é agente de campo. A equipe simulada não tem jogadores, mas a pilha de cartas de agente dela fica na mesa. Escolha uma carta chave em que a sua equipe seja a inicial e jogue os seus turnos normalmente. A cada turno da equipe simulada, o seu espião mestre cobre uma palavra dela, à escolha dele (p. 8).
 
 > [!mais] **Resultado com dois jogadores.** Vocês perdem se tocarem o assassino ou se todas as palavras da equipe simulada forem cobertas. Se vencerem, o resultado é o número de cartas que sobraram na pilha dela, de 1 a 8: quanto mais, melhor, e o manual dá um título para cada valor (p. 8).
 
@@ -298,7 +304,7 @@ O guia tem três etapas, cada uma uma parte real da partida: montar a mesa, joga
 
 > [!mais] **Próxima partida.** Tire as cartas que cobrem os codinomes, devolva-as às pilhas e vire 25 codinomes novos (p. 5).
 
-> [!edicao] O manual baixado é o da edição da Devir de 2016, com Codinomes na capa. A caixa vendida hoje se chama Código Secreto, e este guia não conferiu se o manual de reimpressões mais novas mudou alguma regra.
+> [!edicao] O manual baixado (© julho de 2015; PDF de 2016, modificado em 2021) tem Codinomes na capa. A caixa vendida hoje se chama Código Secreto, e este guia não conferiu se o manual de reimpressões mais novas mudou alguma regra.
 
 ## 6. Avaliação final
 
@@ -331,7 +337,7 @@ Responda sem consultar. Cada resposta diz o que reler.
 ?? 5. O espião mestre dá uma pista inválida, e o adversário percebe. O que acontece?
 - ( ) Ele dá outra pista no mesmo turno
 - ( ) A equipe dele perde a partida
-- (x) O turno acaba, e o adversário pode cobrir uma das próprias palavras antes da próxima pista
+- (x) O turno acaba, e o espião mestre adversário pode cobrir uma palavra da própria equipe antes da próxima pista
 = **O turno acaba**, com a penalidade da cobertura (p. 5). Releia a etapa 3.
 
 > [!atencao] **Critério para começar a jogar.** Acertou as 5? Monte a mesa e jogue, com a folha de consulta ao lado. Errou a 1, releia a etapa 1; a 2 ou a 3, a etapa 2; a 4 ou a 5, a etapa 3. Depois refaça só as que errou.
@@ -341,14 +347,14 @@ Responda sem consultar. Cada resposta diz o que reler.
 **Preparação:** duas equipes, pelo menos 4 jogadores. Espiões mestres do mesmo lado; agentes de campo de frente. Grade de 5 por 5 codinomes. Carta chave no apoio, escondida dos agentes de campo. Luzes da chave: equipe inicial, com 9 palavras (8 cartas de agente mais o agente duplo); a outra tem 8. Civis (7) e assassino (1) no meio.
 
 **O turno**
-1. Espião mestre: uma palavra e um número.
+1. Espião mestre: uma palavra e um número (ver nota na etapa 2).
 2. Agentes de campo: discutem e tocam. Pelo menos 1 toque; no máximo o número mais 1.
-3. Da equipe: carta da equipe, continua. Civil: carta de civil, fim do turno. Da outra equipe: carta da outra equipe, fim do turno. Assassino: a equipe perde.
+3. Da equipe: carta da equipe, continua. Civil: carta de civil, fim do turno. Da outra equipe: carta da outra equipe, fim do turno. Assassino: a equipe perde, e a outra vence.
 4. Podem parar depois do primeiro toque.
 
 **Pista válida:** uma palavra; sobre o significado; nunca palavra visível, forma dela ou parte de composta visível; o número não é pista; em português; mesma grafia é a mesma palavra; soletrar se pedirem.
 
-**Pista inválida:** fim do turno, e o adversário cobre uma palavra dele antes da próxima pista. Se ninguém notar, vale.
+**Pista inválida:** fim do turno, e o espião mestre adversário pode cobrir uma palavra da própria equipe antes da próxima pista. Se ninguém notar, vale.
 
 **Combinar antes:** siglas, palavras compostas, homônimos, rimas, nomes próprios de várias palavras.
 

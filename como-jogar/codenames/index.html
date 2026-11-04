@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Como jogar Código Secreto: regras passo a passo | Elite Boardgamers</title>
+<meta name="description" content="Regras de Código Secreto (Codenames) conferidas no manual da Devir: preparação, a pista de uma palavra, os toques, o assassino e o que vale como pista.">
+<link rel="canonical" href="https://eliteboardgamers.com.br/como-jogar/codenames/">
+<meta name="robots" content="max-image-preview:large">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Como jogar Código Secreto">
+<meta property="og:description" content="Regras de Código Secreto (Codenames) conferidas no manual da Devir: preparação, a pista de uma palavra, os toques, o assassino e o que vale como pista.">
+<meta property="og:url" content="https://eliteboardgamers.com.br/como-jogar/codenames/">
+<meta property="og:image" content="https://eliteboardgamers.com.br/codenames/fotos/jogabilidade-1.webp">
+<link rel="icon" href="../../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32.png">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<link rel="preload" href="../../fontes/public-sans.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:"Public Sans";src:url(../../fontes/public-sans.woff2) format("woff2");font-weight:400 800;font-style:normal;font-display:swap}
+@font-face{font-family:"Public Sans";src:url(../../fontes/public-sans-italic.woff2) format("woff2");font-weight:400;font-style:italic;font-display:swap}
+/* Layout: o mesmo da página de lição do Discipulado (O Paladino): fundo preto (pedido do editor: preto no lugar do azul), faixa do banner, navegação fixa, coluna central de 760px com cartões claros de papel, filete dourado sobre os títulos de seção. Visual único (o site não tem tema claro). */
+:root{
+  color-scheme:dark;
+  --ground:#000; --panel:#0f1115; --panel2:#171a20; --line:#262a32; --line2:#2e333c;
+  --ink:#eceff3; --muted:#a1a9b5; --gold:#e3b23c;
+  --paper:#f4f5f7; --paper-ink:#14171c; --paper-muted:#5a6270; --paper-line:#dde1e7; --paper-text:#3a414c;
+  --link:#1f5fae; --ok:#1b7a45; --ok-bg:#e3f4ea; --cinza-bg:#eceef1; --ouro-bg:#fff4d1; --ouro-ink:#8a5f00;
+  --erro:#b3263e; --faixa-ouro:#1d1606; --ouro-claro:#f1ead6; --check:#4cc38a;
+  --f-body:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box}
+html{scroll-padding-top:64px}
+body{margin:0;background:var(--ground);color:var(--ink);font:16px/1.55 var(--f-body)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--panel)}
+h1,h2,h3,p,ul,ol,figure{margin:0}
+a{color:var(--link);text-underline-offset:.18em}
+::selection{background:var(--gold);color:#000}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px;border-radius:3px}
+.gut{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+
+.skip{position:absolute;left:-999px}.skip:focus{left:12px;top:8px;z-index:40;background:var(--gold);color:#000;padding:6px 10px}
+.aviso{background:var(--gold);color:#000;font-weight:800;font-size:.8rem;text-align:center}
+.aviso .gut{padding-block:6px}
+.topo{background:var(--ground)}
+.topo img{display:block;width:100%;max-width:640px;height:auto;margin:0 auto}
+.nav{background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line);position:sticky;top:env(safe-area-inset-top,0px);z-index:20}
+.nav ul{max-width:1120px;margin:0 auto;list-style:none;display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;padding-block:0}
+.nav a{display:block;padding:11px 12px;white-space:nowrap;color:var(--ink);text-decoration:none;font-weight:700;font-size:.92rem;border-bottom:3px solid transparent}
+.nav a[aria-current]{color:var(--gold);border-bottom-color:var(--gold)}
+
+.nota{max-width:760px;margin:0 auto;padding-block:20px 56px;display:grid;gap:16px}
+.trilha ol{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:4px 8px;font-size:.85rem;color:var(--muted)}
+.trilha li+li::before{content:"›";margin-right:8px;color:var(--muted)}
+.trilha a{color:var(--gold);font-weight:700;text-decoration:none}
+
+.bloco{background:var(--paper);color:var(--paper-ink);border-radius:10px;padding:20px;min-width:0;display:grid;gap:14px}
+.num-l{font-size:.8rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--paper-muted)}
+h1{font-size:clamp(1.7rem,5vw,2.4rem);line-height:1.12;font-weight:800;letter-spacing:-.015em;text-wrap:balance}
+.meta-e{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:.88rem;color:var(--paper-muted)}
+.meta{font-family:var(--mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.05em;color:var(--paper-muted)}
+
+.r1{background:var(--panel2);color:var(--ink);border:1px solid var(--line2);border-left:4px solid var(--gold)}
+.kick{font-size:.75rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--gold)}
+.r1 .resp{font-size:1.12rem;font-weight:600;line-height:1.45}
+.r1 ul{list-style:none;padding:0;display:grid;gap:8px}
+.r1 li{display:flex;gap:8px;align-items:flex-start;color:#dfe4ea}
+.r1 li svg{flex:none;width:20px;height:20px;margin-top:2px;stroke:var(--check);fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.r1 .pe{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:.88rem;color:var(--muted)}
+.r1 .pe b{color:var(--ink)}
+.legenda{display:flex;flex-wrap:wrap;gap:8px}
+.legenda span{font-size:.74rem;font-weight:800;letter-spacing:.04em;border-radius:999px;padding:3px 10px 3px 14px;background:var(--paper);color:var(--paper-ink)}
+.legenda .l1{box-shadow:inset 5px 0 0 var(--paper-ink)}.legenda .l2{box-shadow:inset 5px 0 0 var(--ok)}
+.legenda .l3{box-shadow:inset 5px 0 0 var(--gold)}.legenda .l4{box-shadow:inset 5px 0 0 var(--ouro-ink)}
+
+.indice h2,.sec>h2{font-size:1.15rem;font-weight:800;line-height:1.3;color:var(--paper-ink);border-top:3px solid var(--gold);padding-top:12px;text-wrap:balance;display:flex;gap:10px;align-items:baseline}
+.indice ol{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:2px 16px}
+.indice a{display:block;padding:6px 0;color:var(--paper-ink);text-decoration:none;font-weight:600;font-size:.94rem;border-bottom:1px solid var(--paper-line)}
+.indice a:hover{color:var(--link)}
+
+.sec>h2 .num{display:none}
+.sec h3{font-size:1.05rem;font-weight:800;margin-top:6px}
+.sec p{color:var(--paper-text);max-width:66ch}
+.sec ul,.sec ol{padding-left:1.3em;display:grid;gap:6px;color:var(--paper-text)}
+.sec ul{list-style:disc}
+.sec li::marker{color:var(--ouro-ink);font-weight:800}
+strong{font-weight:700;color:var(--paper-ink)}
+.pg{white-space:nowrap;font-size:.76em;color:var(--paper-muted);border:1px solid var(--paper-line);background:#fff;border-radius:4px;padding:0 5px;vertical-align:.08em;font-variant-numeric:tabular-nums}
+code{font-size:.9em;background:#fff;padding:1px 5px;border-radius:4px}
+
+.tab{overflow-x:auto;border:1px solid var(--paper-line);border-radius:8px;background:#fff}
+table{border-collapse:collapse;width:100%;font-size:.92rem;color:var(--paper-text)}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--paper-line);vertical-align:top}
+th{font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--paper-muted);background:var(--paper)}
+tr:last-child td{border-bottom:0}
+
+.call{border-radius:8px;padding:14px 16px;display:grid;gap:10px;min-width:0;background:#fff;border:1px solid var(--paper-line);border-left:4px solid var(--paper-muted)}
+.call .rot{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;font-weight:800;color:var(--paper-muted)}
+.call.entender{background:var(--cinza-bg);border-color:#d5d9df;border-left-color:var(--paper-ink)}
+.call.entender .rot{color:var(--paper-ink)}
+.call.passos{border-left-color:var(--ok)}
+.call.passos .rot{color:var(--ok)}
+.call.resolvido{background:var(--panel2);border-color:var(--line2);border-left-color:var(--gold)}
+.call.resolvido .rot{color:var(--gold)}
+.call.resolvido p,.call.resolvido li{color:#dfe4ea}
+.call.resolvido strong{color:#fff}
+.call.resolvido .pg{color:#c8ccd2;border-color:var(--line2)}
+.call.complete{border-left:4px dashed var(--gold)}
+.call.complete .rot{color:var(--ouro-ink)}
+.call.suavez{background:var(--faixa-ouro);border-color:#3a2e10;border-left-color:var(--gold)}
+.call.suavez .rot{color:var(--gold)}
+.call.suavez p,.call.suavez li{color:var(--ouro-claro)}
+.call.suavez strong{color:#fff}
+.call.suavez li::marker{color:var(--gold)}
+.call.suavez .pg{color:var(--ouro-claro);border-color:#3a2e10}
+.call.treino{background:var(--ouro-bg);border-color:#f0dfa6;border-left-color:var(--ouro-ink)}
+.call.treino .rot{color:var(--ouro-ink)}
+.call.atencao{border-left-color:var(--erro)}
+.call.atencao .rot{color:var(--erro)}
+.call.edicao{background:var(--paper);border-left-color:var(--paper-ink)}
+.call.edicao .rot{color:var(--paper-ink)}
+.call.dica{background:var(--ouro-bg);border-left-color:var(--gold)}
+.call.dica .rot{color:var(--ouro-ink)}
+.call ol,.call ul{padding-left:1.3em}
+.call .pg{background:transparent}
+
+.respostas{border:1px solid var(--paper-line);border-left:4px solid var(--ok);border-radius:8px;background:#fff}
+.respostas summary{cursor:pointer;padding:12px 16px;font-weight:800;color:var(--ok);list-style:none;min-height:44px;display:flex;align-items:center}
+.respostas summary::-webkit-details-marker{display:none}
+.respostas summary::before{content:"+";display:inline-grid;place-items:center;width:1.4em;height:1.4em;margin-right:8px;border-radius:50%;background:var(--ok-bg)}
+.respostas[open] summary::before{content:"−"}
+.respostas>div{padding:0 16px 16px;display:grid;gap:12px}
+
+.sec.rapido{outline:2px solid var(--gold);outline-offset:-2px}
+.sec.rapido>h2::after{content:"4 min de leitura";margin-left:auto;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:#000;background:var(--gold);border-radius:3px;padding:3px 8px;white-space:nowrap}
+.sec.rapido>p:first-of-type{font-size:1.02rem}
+.sec.ref{outline:2px solid var(--gold);outline-offset:-2px}
+.sec.ref>h2::after{content:"Leve para a mesa";margin-left:auto;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:#000;background:var(--gold);border-radius:3px;padding:3px 8px;white-space:nowrap}
+
+footer{border-top:1px solid var(--line);background:var(--panel);color:var(--muted);font-size:.85rem}
+footer .in{max-width:760px;margin:0 auto;padding-block:20px}
+@media (max-width:600px){
+  .bloco{padding:16px;border-radius:8px}
+  .sec.ref>h2::after{display:none}
+}
+/* essencial x opcional: o que não é essencial abre com um toque */
+.dobra{border:1px solid var(--paper-line);border-radius:8px;background:#fff}
+.dobra>summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:10px;padding:11px 14px;font-weight:700;font-size:.92rem;color:var(--paper-ink);min-height:44px}
+.dobra>summary::-webkit-details-marker{display:none}
+.dobra>summary::before{content:"+";flex:none;display:grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--paper-line);color:var(--paper-ink);font-weight:800;line-height:1}
+.dobra[open]>summary::before{content:"−"}
+.dobra>.call,.dobra>details,.dobra>aside{margin:0 12px 12px}
+.dobra.pratica>summary{color:var(--ouro-ink)}
+.dobra.pratica[open]{display:grid;gap:10px;padding-bottom:12px}
+.dobra.pratica>*:not(summary){margin:0 12px}
+.dobra.sec-opc{border-style:dashed}
+.dobra.sec-opc[open]{padding-bottom:12px}
+.dobra.sec-opc>*:not(summary){margin-left:14px;margin-right:14px}
+.tag-opc{margin-left:10px;font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;font-weight:800;color:var(--paper-muted);border:1px solid var(--paper-line);border-radius:3px;padding:2px 6px;vertical-align:middle}
+.legenda-f{font-size:.88rem;color:var(--muted)}.legenda-f b{color:var(--ink)}
+.mais-i{display:inline-grid;place-items:center;width:18px;height:18px;border-radius:50%;background:var(--paper-line);color:var(--paper-ink);font-weight:800;font-size:.8rem}
+.indice small{color:var(--muted);font-weight:400}
+.sec p,.sec li,.sec a{overflow-wrap:anywhere}
+
+.ico{display:inline-block;width:28px;height:28px;vertical-align:middle;border-radius:5px;margin-right:6px}
+td .ico{margin-right:6px}
+.rec{display:inline-flex;align-items:center;gap:0;white-space:nowrap}
+.cel{display:block;min-width:0}
+
+/* referências visuais (01/11/2026): figura do manual e vídeo no ponto da ação */
+.fig,.video{margin:4px 0;display:grid;gap:6px;min-width:0}
+.fig img{width:100%;height:auto;border-radius:8px;border:1px solid var(--paper-line);background:#fff}
+.fig figcaption,.video figcaption{font-size:.82rem;color:var(--paper-muted);line-height:1.45}
+.yt{position:relative;display:block;width:100%;padding:0;border:0;border-radius:8px;overflow:hidden;cursor:pointer;background:#000;aspect-ratio:16/9}
+.yt img{width:100%;height:100%;object-fit:cover;opacity:.85;display:block}
+.yt-play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:#c4302b;color:#fff;font-weight:800;font-size:.95rem;padding:10px 16px;border-radius:999px;white-space:nowrap;box-shadow:0 2px 10px rgba(0,0,0,.4)}
+.yt:hover .yt-play,.yt:focus-visible .yt-play{background:#e03a33}
+.video iframe{width:100%;aspect-ratio:16/9;border:0;border-radius:8px;display:block}
+/* fotos em todas as seções (04/11/2026): foto do jogo no topo e em cada seção sem figura do manual */
+.topo-cj{overflow:hidden}
+.foto-topo{margin:-20px -20px 4px;display:grid;gap:0}
+.foto-topo img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;background:#fff}
+.foto-topo figcaption{font-size:.78rem;color:var(--paper-muted);padding:6px 20px 0}
+.foto-topo.caixa img,.foto-sec.caixa img{object-fit:contain}
+.foto-sec img{aspect-ratio:16/9;object-fit:cover}
+@media (max-width:600px){.foto-topo{margin:-16px -16px 4px}.foto-topo figcaption{padding:6px 16px 0}}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://eliteboardgamers.com.br/#organizacao", "name": "Elite Boardgamers", "url": "https://eliteboardgamers.com.br/", "logo": {"@type": "ImageObject", "url": "https://eliteboardgamers.com.br/marca/elite-boardgamers.webp", "width": 318, "height": 254}, "sameAs": ["https://www.instagram.com/eliteboardgamers/"]}, {"@type": "Article", "@id": "https://eliteboardgamers.com.br/como-jogar/codenames/#artigo", "mainEntityOfPage": "https://eliteboardgamers.com.br/como-jogar/codenames/", "headline": "Como jogar Código Secreto", "description": "Regras de Código Secreto (Codenames) conferidas no manual da Devir: preparação, a pista de uma palavra, os toques, o assassino e o que vale como pista.", "image": ["https://eliteboardgamers.com.br/codenames/fotos/jogabilidade-1.webp"], "datePublished": "2026-11-04", "author": {"@type": "Organization", "name": "Redação Elite Boardgamers", "url": "https://eliteboardgamers.com.br/politica-editorial/"}, "publisher": {"@id": "https://eliteboardgamers.com.br/#organizacao"}, "inLanguage": "pt-BR"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Início", "item": "https://eliteboardgamers.com.br/"}, {"@type": "ListItem", "position": 2, "name": "Como jogar", "item": "https://eliteboardgamers.com.br/como-jogar/"}, {"@type": "ListItem", "position": 3, "name": "Como jogar Código Secreto", "item": "https://eliteboardgamers.com.br/como-jogar/codenames/"}]}]}</script>
+<style id="moldura">.busca-btn{display:grid;place-items:center;flex:none;width:44px;height:44px;padding:0;border:1px solid #3a3f48;border-radius:8px;background:none;color:#e9ecf1;cursor:pointer}.busca-btn:hover{border-color:#e3b23c;color:#e3b23c}.busca-btn[hidden]{display:none}.sino-btn{position:relative;display:grid;place-items:center;flex:none;width:44px;height:44px;padding:0;border:1px solid #3a3f48;border-radius:8px;background:none;color:#e9ecf1;cursor:pointer}.sino-btn:hover,.sino-btn.on{border-color:#e3b23c;color:#e3b23c}.sino-btn[hidden]{display:none}.sino-btn.on::after{content:"";position:absolute;right:7px;top:7px;width:8px;height:8px;border-radius:50%;background:#5fd38d;box-shadow:0 0 0 2px #111}footer .in a{display:inline-flex;align-items:center;min-height:24px}.cpw{position:relative;display:inline-block}.cp{display:inline-flex;align-items:center;justify-content:center;gap:8px;box-sizing:border-box;line-height:1.2;min-height:44px;margin:0;padding:10px 20px;border-radius:999px;border:0;background:#157a43;color:#fff;font:inherit;font-size:.95rem;font-weight:800;text-decoration:none;cursor:pointer}.cp:hover{background:#11683a;color:#fff}.cp .ic{width:19px;height:19px}.cp[hidden]{display:none}.cpw.mini .cp{min-height:40px;padding:8px 14px;font-size:.88rem}.cp-menu{position:absolute;z-index:30;top:calc(100% + 8px);left:0;min-width:200px;display:grid;gap:2px;padding:6px;border-radius:12px;background:#fff;border:1px solid #dde1e7;box-shadow:0 10px 30px rgba(0,0,0,.25)}.cp-menu[hidden]{display:none}.cp-menu.sobe{top:auto;bottom:calc(100% + 8px)}.cp-menu.dir{left:auto;right:0}.cp-op{display:flex;align-items:center;gap:10px;min-height:44px;padding:8px 12px;border:0;border-radius:8px;background:none;color:#14171c;font:inherit;font-size:.95rem;font-weight:700;text-align:left;text-decoration:none;cursor:pointer}.cp-op:hover,.cp-op:focus-visible{background:#eef1f4;color:#14171c}.cp-op .ic{width:20px;height:20px}.cp-op.zap-op .ic{color:#157a43}.cp-st{position:absolute;z-index:30;top:calc(100% + 8px);left:0;white-space:nowrap;margin:0;padding:6px 12px;border-radius:8px;background:#14171c;color:#fff;font-size:.85rem;font-weight:700}.cp-st:empty{display:none}.barra-lt .cp-st{top:auto;bottom:calc(100% + 8px)}.convite{display:flex;align-items:center;justify-content:space-between;gap:12px 20px;flex-wrap:wrap}.convite .cv-t{margin:0;font-weight:800;font-size:1.1rem}.convite .cv-s{margin:2px 0 0;font-size:.92rem;opacity:.8}.barra-lt>*{flex:none}.barra-lt{width:max-content;max-width:calc(100vw - 12px);box-sizing:border-box;position:fixed;z-index:25;left:50%;bottom:calc(12px + env(safe-area-inset-bottom));display:flex;align-items:center;gap:4px;padding:5px;border-radius:999px;background:#14171c;border:1px solid #3a3f48;box-shadow:0 8px 24px rgba(0,0,0,.35);transform:translate(-50%,0);transition:transform .25s ease,opacity .25s ease}.barra-lt.fora{transform:translate(-50%,calc(100% + 24px));opacity:0;pointer-events:none}.lt-b{display:inline-flex;align-items:center;gap:7px;min-height:44px;padding:8px 14px;border:0;border-radius:999px;background:none;color:#e9ecf1;font:inherit;font-size:.9rem;font-weight:700;text-decoration:none;cursor:pointer}.lt-b:hover{background:#262a31;color:#fff}.lt-b .ic{width:20px;height:20px}.barra-lt .lt-b.curtir{background:none;border:0;color:#e9ecf1;padding:8px 14px}.barra-lt .lt-b.curtir[aria-pressed=true]{color:#ff6b81;background:none}@media (max-width:479px){.lt-b span{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}}.lt-b.curtir[aria-pressed=true] .ic{fill:currentColor}.lt-grupo{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:44px;padding:0 14px 0 6px;border-radius:999px;background:#e3b23c;color:#14171c;font-size:.9rem;font-weight:800;text-decoration:none;white-space:nowrap}.lt-grupo:hover{background:#f0c44f;color:#14171c}.lt-grupo img{width:32px;height:32px;border-radius:8px;display:block}@media (max-width:479px){.barra-lt{gap:2px}.barra-lt .lt-b{padding:8px 10px}.barra-lt .cp{padding:8px 12px}.lt-grupo{padding:0 12px 0 6px}}@media (max-width:399px){.barra-lt:has(.curtir) .cp span{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}.barra-lt:has(.curtir) .cp{padding:8px 14px}}.barra-lt .cp{min-height:44px;padding:8px 16px;font-size:.9rem}body.lt-on .voltar-topo,body.lt-on button.sobe{bottom:calc(76px + env(safe-area-inset-bottom))}@media print{.barra-lt{display:none}}.interacoes{display:grid;gap:14px}.interacoes[hidden]{display:none}.curtir-l{display:flex;align-items:center;gap:12px;flex-wrap:wrap}.curtir{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:8px 18px;border-radius:999px;border:2px solid #b3263e;background:#fff;color:#b3263e;font:inherit;font-weight:800;cursor:pointer}.curtir .ic{width:22px;height:22px}.curtir[aria-pressed=true]{background:#b3263e;color:#fff}.curtir[aria-pressed=true] .ic{fill:currentColor}.curtir .n{font-variant-numeric:tabular-nums}.curtir-dica{font-size:.9rem;color:#5a6270}.interacoes h2{margin:4px 0 0}.coms{list-style:none;margin:0;padding:0;display:grid;gap:10px}.coms li{background:#fff;border:1px solid #dde1e7;border-radius:10px;padding:12px 14px}.com-quem{margin:0;font-size:.92rem}.com-quem time{color:#5a6270;font-size:.8rem;margin-left:6px}.com-txt{margin:4px 0 0;white-space:pre-wrap;color:#14171c}.coms-vazio{margin:0;color:#5a6270}.com-form{display:grid;gap:10px;border-top:1px solid #dde1e7;padding-top:14px}.com-form label{display:grid;gap:4px;font-weight:700;font-size:.9rem;color:#14171c}.com-form small{font-weight:600;color:#5a6270}.com-form input,.com-form textarea{font:inherit;font-size:16px;font-weight:400;padding:10px 12px;border:1px solid #c8cdd5;border-radius:8px;background:#fff;color:#14171c}.com-form textarea{resize:vertical;min-height:110px}.com-form .isca{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}.com-form button{justify-self:start;min-height:44px;padding:10px 20px;border-radius:999px;border:0;background:#14171c;color:#fff;font:inherit;font-weight:800;cursor:pointer}.com-form button:disabled{opacity:.6}.com-aviso{margin:0;font-size:.82rem;color:#5a6270}.com-aviso a{color:#1f5fae}.com-st{margin:0;font-weight:700;font-size:.92rem}.com-st:empty{display:none}.com-st.ok{color:#1b7a45}.com-st.erro{color:#a3223a}:where(html){scroll-padding-top:calc(var(--nav-h,49px) + 12px)}.nav{position:sticky;top:0;z-index:20}body .abas,body .barra-f,body .ctrl{top:var(--nav-h,49px)}.marca img.logo{width:auto;height:48px;border-radius:0}@media (max-width:480px){.marca img.logo{height:40px}}.nav .casa{display:flex;align-items:center;justify-content:center;min-width:44px}.nav .casa .ic{width:20px;height:20px}@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.card:hover,.jogo:hover .capa img,.jogo:active .capa,.zap:active,.post-btn:active,.btn-filtro:hover,.btn-filtro:active,.ver:active{transform:none!important}}.in{max-width:1180px;margin:0 auto;padding-left:16px;padding-right:16px}.ic{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round;flex:none}.bar{border-bottom:1px solid var(--line);background:#000;color:var(--ink)}.bar .in{display:flex;align-items:center;gap:12px;padding-top:8px;padding-bottom:8px}.bar a{color:inherit;text-decoration:none;font-weight:600;font-size:.95rem}.marca img{display:block;width:84px;border-radius:6px}.bar .ig{margin-left:auto;display:flex;align-items:center;gap:6px;padding:6px 10px;border-radius:6px}.bar .ig:hover{color:var(--gold)}.bar .zap-mini{display:flex;align-items:center;gap:6px;padding:6px 10px;border-radius:6px;background:#157a43;color:#fff}.nav ul{padding-left:16px;padding-right:16px}.nav ul li{list-style:none}@media (max-width:700px){.bar .ig span,.bar .zap-mini span{display:none}}footer{font-size:.9rem}footer .in{max-width:1180px;display:flex;flex-wrap:wrap;gap:6px 16px;padding-top:20px;padding-bottom:28px}footer a{color:var(--muted);text-decoration:none}footer a:hover{color:var(--gold)}</style>
+<style id="guia-extra">
+/* fotos na lista de tutoriais e no topo de /como-jogar/ (04/11/2026) */
+.topo-cj{overflow:hidden}
+.lista-t a.com-foto{grid-template-columns:96px 1fr;column-gap:14px;align-items:start}
+.lista-t a.com-foto>*{grid-column:2}
+.lista-t a.com-foto>img{grid-column:1;grid-row:1/span 4;width:96px;height:96px;object-fit:cover;border-radius:6px;background:#fff}
+.cj-mosaico{display:grid;grid-template-columns:2fr 1fr;grid-template-rows:1fr 1fr;gap:4px;margin:-20px -20px 4px;aspect-ratio:16/9;overflow:hidden}
+.cj-mosaico img{width:100%;height:100%;object-fit:cover;display:block;background:#fff}
+.cj-mosaico img:first-child{grid-row:1/span 2}
+.cj-mosaico-c{font-size:.78rem;color:var(--paper-muted)}
+@media (max-width:600px){.cj-mosaico{margin:-16px -16px 4px}.lista-t a.com-foto{grid-template-columns:72px 1fr}.lista-t a.com-foto>img{width:72px;height:72px}}
+/* faixa de progresso, presa logo abaixo do menu */
+.guia-prog{position:sticky;top:var(--nav-h,45px);z-index:15;background:var(--panel);border-bottom:1px solid var(--line)}
+.guia-prog a{display:flex;align-items:center;gap:10px;max-width:760px;margin:0 auto;padding:9px 16px;color:var(--ink);text-decoration:none;font-size:.86rem;font-weight:700;min-height:40px}
+.guia-prog .gp-r{flex:none;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--gold)}
+.guia-prog .gp-t{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.guia-prog .gp-i{margin-left:auto;flex:none;font-size:.78rem;color:var(--muted);font-weight:600}
+.guia-prog .gp-b{position:absolute;left:0;right:0;bottom:-1px;height:3px;background:var(--gold);transform-origin:0 50%;transform:scaleX(0)}
+html{scroll-padding-top:calc(var(--nav-h,45px) + 56px)}
+/* legenda dos blocos: pontos de cor em vez de pílulas */
+.legenda{gap:6px 16px}
+.legenda span{position:relative;background:none;color:var(--muted);box-shadow:none!important;padding:0 0 0 16px;font-size:.8rem;letter-spacing:0}
+.legenda span::before{content:"";position:absolute;left:0;top:.32em;width:10px;height:10px;border-radius:3px;background:var(--paper)}
+.legenda .l2::before{background:var(--ok)}.legenda .l3::before{background:var(--gold)}.legenda .l4::before{background:var(--ouro-ink)}
+/* índice numerado */
+.indice ol{counter-reset:it}.indice li{counter-increment:it}
+.indice a{display:flex;gap:10px;align-items:baseline;min-height:40px;padding:9px 0}
+.indice a::before{content:counter(it);flex:none;width:1.6em;font-size:.8rem;font-weight:800;color:var(--ouro-ink);font-variant-numeric:tabular-nums}
+.nota-pe{color:var(--muted);font-size:.85rem;padding:4px 2px 0}
+/* exercícios de múltipla escolha: tocou numa opção, aparece a certa e a explicação */
+.quiz{display:grid;gap:8px;padding:12px 0;border-top:1px solid var(--paper-line)}.quiz:first-of-type{border-top:0}
+.q-p{font-weight:700;color:inherit}
+.q-ops{display:grid;gap:6px}
+.q-op{display:block;width:100%;text-align:left;font:inherit;font-size:.95rem;line-height:1.35;min-height:44px;padding:10px 12px;border-radius:8px;
+ border:1px solid #c8cdd5;background:#fff;color:#14171c;cursor:pointer}
+.q-op:hover{border-color:var(--gold)}.q-op:disabled{cursor:default}
+.q-op.ok{background:#e3f4ea;border-color:#1b7a45;color:#0f4d2b;font-weight:700}.q-op.ok::before{content:"✓ ";font-weight:800}
+.q-op.erro{background:#fbe6e9;border-color:#b3263e;color:#7d1a2b}.q-op.erro::before{content:"✗ ";font-weight:800}
+.q-exp{border-left:4px solid var(--ok);background:#f2faf5;color:#14171c;border-radius:6px;padding:8px 12px}
+.q-exp .q-res{color:var(--ok)}.q-exp.mal{border-left-color:#b3263e;background:#fdf3f4}.q-exp.mal .q-res{color:#b3263e}
+.call.suavez .q-op,.call.resolvido .q-op{border-color:#3a2e10}
+/* endereços longos (fontes) quebram em vez de alargar a página */
+.sec a,.sec li,.sec p{overflow-wrap:anywhere}
+/* títulos das etapas com mais respiro */
+.sec{scroll-margin-top:calc(var(--nav-h,45px) + 56px)}
+@media (min-width:601px){.sec{padding:24px 28px}}
+/* tabelas: fichas no celular (menos as grades de células curtas, que ficam tabela e centralizadas) */
+.tab table.grade th,.tab table.grade td{text-align:center;padding:7px 6px}
+.tab table.grade th{white-space:normal;overflow-wrap:anywhere;hyphens:auto}
+@media (max-width:600px){
+ .tab:not(:has(.grade)){border:0;background:none;overflow:visible;border-radius:0}
+ .tab:not(:has(.grade)) table,.tab:not(:has(.grade)) tbody,.tab:not(:has(.grade)) tr,.tab:not(:has(.grade)) td{display:block}
+ .tab:not(:has(.grade)) thead{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+ .tab:not(:has(.grade)) tr{background:#fff;border:1px solid var(--paper-line);border-radius:8px;padding:10px 12px;margin-bottom:8px}
+ .tab:not(:has(.grade)) td{border:0;padding:3px 0;display:grid;grid-template-columns:6.5em minmax(0,1fr);gap:8px}
+ .tab:not(:has(.grade)) td::before{content:attr(data-label);font-size:.7rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--paper-muted);padding-top:3px}
+ .tab:not(:has(.grade)) td:empty{display:none}
+ .tab:not(:has(.grade)) td:first-child{display:block;font-weight:800;color:var(--paper-ink);padding-bottom:4px}
+ .tab:not(:has(.grade)) td:first-child::before{display:none}
+}
+</style>
+</head>
+<body>
+<!--moldura--><a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<header class="bar" id="topo"><div class="in">
+ <a class="marca" href="../../"><img class="logo" src="../../marca/logo-eb-104.webp" srcset="../../marca/logo-eb-52.webp 157w, ../../marca/logo-eb-104.webp 314w, ../../marca/logo-eb-156.webp 472w" sizes="(max-width: 480px) 121px, 145px" width="157" height="52" alt="Elite Board Gamers: página inicial"></a>
+ <a class="ig" href="https://www.instagram.com/eliteboardgamers/" target="_blank" rel="noopener" aria-label="Instagram @eliteboardgamers"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6" fill="currentColor"/></svg><span>@eliteboardgamers</span></a>
+ <a class="zap-mini" href="https://chat.whatsapp.com/IgQQkJdSkzHBaEq3UwFeAo" target="_blank" rel="noopener" aria-label="Grupo do WhatsApp"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8.4 19l-4.4 1Z"/><path d="M9.2 8.6c.3-.5.8-.5 1-.1l.7 1.5c.1.3 0 .6-.2.8l-.4.4c.5 1.1 1.4 2 2.5 2.5l.4-.4c.2-.2.5-.3.8-.2l1.5.7c.4.2.4.7-.1 1-.7.5-1.6.6-2.4.3a7 7 0 0 1-4.2-4.2c-.3-.8-.2-1.7.4-2.3Z"/></svg><span>Grupo do WhatsApp</span></a>
+ <button type="button" class="busca-btn" aria-label="Buscar no site" aria-haspopup="dialog" aria-keyshortcuts="/ Control+K" hidden><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></button>
+ <button type="button" class="sino-btn" aria-label="Receber notificações" aria-haspopup="dialog" aria-expanded="false" hidden><svg class="ic" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 3a6 6 0 0 0-6 6v3.6L4.3 15.5A1 1 0 0 0 5.2 17h13.6a1 1 0 0 0 .9-1.5L18 12.6V9a6 6 0 0 0-6-6z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M9.5 19.5a2.6 2.6 0 0 0 5 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+</div></header>
+<script src="/sino.js?v=2" defer></script>
+<script>(()=>{const b=document.querySelector('.busca-btn');let c;b.hidden=false;const a=()=>{c=c||new Promise((r,j)=>{const s=document.createElement('script');s.src='../../busca.js';s.onload=r;s.onerror=()=>{c=null;j()};document.head.append(s)});c.then(()=>abrirBusca('../../'),()=>{})};b.addEventListener('click',a);addEventListener('keydown',e=>{const t=e.target,ed=t.isContentEditable||/^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName);if((e.key==='/'&&!ed&&!e.ctrlKey&&!e.metaKey)||((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k')){e.preventDefault();a()}})})()</script>
+<nav class="nav" aria-label="Seções do site"><ul class="in"><li><a class="casa" href="../../" aria-label="Página inicial"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 9.5V20h13V9.5"/><path d="M10 20v-5.5h4V20"/></svg></a></li><li><a href="../../noticias/">Notícias</a></li><li><a href="../../resenhas/">Resenhas</a></li><li><a href="../../como-jogar/" aria-current="true">Como jogar</a></li><li><a href="../../lancamentos/">Lançamentos</a></li><li><a href="../../black/">Black de Verdade</a></li></ul></nav>
+<script>(()=>{const n=document.querySelector('.nav'),h=()=>document.documentElement.style.setProperty('--nav-h',n.offsetHeight+'px');h();addEventListener('resize',h);addEventListener('load',h)})()</script>
+<div class="guia-prog"><a href="#neste-guia"><span class="gp-r">Guia</span><span class="gp-t">Neste guia</span><span class="gp-i">Índice</span></a><span class="gp-b" aria-hidden="true"></span></div><!--/moldura-->
+
+<main id="conteudo" class="gut"><div class="nota">
+  <nav class="trilha" aria-label="Trilha de navegação"><ol><li><a href="../../">Início</a></li><li><a href="../">Como jogar</a></li><li aria-current="page">Código Secreto</li></ol></nav>
+
+  <article class="bloco topo-cj">
+    <figure class="foto-topo"><img src="../../codenames/fotos/jogabilidade-1.webp" alt="Código Secreto: uma partida em andamento" width="1600" height="1067" fetchpriority="high" decoding="async"><figcaption>Imagem: Czech Games Edition</figcaption></figure>
+    <span class="num-l">Palavras · Festa em equipes</span>
+    <h1>Como jogar Código Secreto</h1>
+    <p class="meta-e"><span>Para quem nunca jogou</span><span>2 a 8 jogadores</span><span>15 min</span><span>10+</span><span>Edição Devir</span></p>
+    <p class="meta"><time datetime="2026-11-04">4 de novembro de 2026</time> · Redação Elite Boardgamers</p>
+  </article>
+
+  <section class="bloco r1" aria-label="Resumo em 1 minuto">
+    <span class="kick">Resumo em 1 minuto</span>
+    <p class="resp">O espião mestre da sua equipe dá pistas de uma palavra e um número, vocês tocam as palavras certas na grade, e vence a equipe que encontrar todas as suas primeiro sem tocar o assassino.</p>
+    <ul><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.5l4.5 4.5L19.5 6.5"/></svg><span>Na sua vez, o espião mestre diz uma palavra e um número, e os agentes de campo podem tocar até o número mais um.</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.5l4.5 4.5L19.5 6.5"/></svg><span>Acertou, continua; civil ou palavra da outra equipe encerram o turno, e o assassino faz a sua equipe perder na hora.</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.5l4.5 4.5L19.5 6.5"/></svg><span>A pista é sobre significado: não pode ser palavra visível na mesa, uma forma dela ou um pedaço dela.</span></li></ul>
+    <p class="pe"><span><b>Como você aprende:</b> 3 etapas, da mesa montada à contagem de pontos</span><span><b>Leitura do essencial:</b> cerca de 5 min</span></p>
+    <p class="legenda-f"><b>À vista, só o essencial para jogar.</b> O que abre com <span class="mais-i">+</span> é explicação, exemplo, exercício ou regra de caso especial: abra quando precisar.</p>
+  </section>
+
+<section class="bloco sec rapido" id="comece-a-jogar-em-4-minutos"><h2><span class="num"></span>Comece a jogar em 4 minutos</h2>
+<figure class="fig foto-sec"><img src="../../codenames/fotos/mesa-1.webp" alt="Código Secreto: a mesa montada" width="1600" height="1067" loading="lazy" decoding="async"><figcaption>Imagem: Czech Games Edition</figcaption></figure>
+<p><strong>Meta:</strong> em 4 minutos de leitura, montar a mesa e jogar o primeiro turno da sua equipe sem abrir o manual.</p>
+<h3>A ideia do jogo</h3>
+<p>Duas equipes, Vermelha e Azul, disputam a mesma grade de 25 palavras. Em cada equipe, um <strong>espião mestre</strong> sabe, pela <strong>carta chave</strong>, quais palavras são da equipe dele; os outros jogadores, os <strong>agentes de campo</strong>, não sabem e tentam tocá-las a partir das pistas dele. Vence a equipe que encontrar todas as suas primeiro, e perde na hora quem tocar o <strong>assassino</strong> <span class="pg">p.&nbsp;2 e 3</span>.</p>
+<h3>Monte a mesa</h3>
+<p>São precisos pelo menos 4 jogadores, duas equipes de dois <span class="pg">p.&nbsp;2</span>. Com 2 ou 3, veja as Situações especiais.</p>
+<p>Peças: cartas de codinome (uma palavra cada), cartas chave, o apoio (suporte da carta chave), 8 cartas de agente vermelho, 8 de agente azul, o agente duplo (vermelho de um lado, azul do outro), 7 cartas de civil inocente e 1 do assassino <span class="pg">p.&nbsp;2 e 3</span>.</p>
+<ol><li>Divida o grupo em duas equipes de tamanho e habilidade parecidos.</li><li>Cada equipe escolhe o seu espião mestre. Os dois sentam do mesmo lado da mesa; os agentes de campo, de frente para eles.</li><li>Embaralhe as cartas de codinome e ponha 25 na mesa, numa grade de 5 por 5.</li><li>Os espiões mestres sorteiam uma carta chave e a encaixam no apoio entre eles, com qualquer lado para cima. Os agentes de campo não podem vê-la. Cada quadrado da chave é a palavra na mesma posição da grade: azul e vermelho, das equipes; sem cor, civil; preto, assassino.</li><li>As quatro luzes nas bordas da carta chave mostram a cor da equipe inicial. Ela tem 9 palavras para encontrar; a outra, 8.</li><li>Vire o agente duplo para a cor da equipe inicial e junte-o à pilha de cartas de agente dela. Cada pilha fica na frente do seu espião mestre.</li><li>As 7 cartas de civil inocente e a carta do assassino ficam entre os jogadores, onde os dois espiões mestres alcançam.</li></ol>
+<p> <span class="pg">p.&nbsp;2 e 3</span></p>
+<h3>Seu primeiro turno</h3>
+<p>A equipe inicial joga primeiro; depois, as equipes se revezam <span class="pg">p.&nbsp;4</span>.</p>
+<ol><li><strong>O espião mestre dá a pista:</strong> uma palavra e um número (ver nota na <a href="#etapa-2-dar-a-pista-e-adivinhar">etapa 2</a>). A palavra se liga a uma ou mais palavras da equipe; o número diz a quantas <span class="pg">p.&nbsp;4</span>.</li><li><strong>A pista não pode estar na mesa.</strong> Nem uma forma nem um pedaço de palavra visível; pista inválida encerra o turno (p. 4 a 6).</li><li><strong>Os agentes de campo conversam e tocam uma palavra.</strong> O toque é a escolha oficial <span class="pg">p.&nbsp;4</span>.</li><li><strong>O espião mestre olha a chave e cobre a palavra.</strong> Da equipe: carta de agente da equipe, e os agentes de campo podem tocar outra. Civil inocente: carta de civil, e o turno acaba. Da outra equipe: ele a cobre com uma carta de agente da outra equipe, a cor certa, e o turno acaba. Assassino: a equipe que tocou perde, e a outra vence <span class="pg">p.&nbsp;4 e 5</span>.</li><li><strong>Quantos toques.</strong> Pelo menos um, no máximo o número da pista mais um. Depois do primeiro, podem parar <span class="pg">p.&nbsp;4 e 5</span>.</li></ol>
+<aside class="call resolvido"><p class="rot">Tarefa · exemplo resolvido</p><p><strong>Exemplo resolvido.</strong> A grade é a da ilustração da p. 2 do manual, e a Vermelha começa. O espião mestre vermelho quer LEÃO e MARFIM e diz <em>África: 2</em>. Os agentes de campo tocam LEÃO: vermelha, coberta com uma carta de agente vermelho. Tocam MARFIM: vermelha também, coberta. Podiam tocar uma terceira, mas preferem parar. A Vermelha fica com 7 palavras por encontrar, e a vez passa para a Azul.</p></aside>
+<aside class="call complete"><p class="rot">Tarefa · complete</p><p><strong>Complete.</strong> O espião mestre azul quer ARRANHA-CÉU e JATO e diz <em>alto: 2</em>. Os agentes de campo tocam ARRANHA-CÉU, que é azul. Depois tocam SATÉLITE, que é um civil inocente.</p>
+<div class="quiz"><p class="q-p">O que acontece depois do toque em SATÉLITE?</p><div class="q-ops"><button type="button" class="q-op">Os agentes de campo podem tentar mais uma, porque ainda não tocaram 3 palavras</button><button type="button" class="q-op" data-ok>O espião mestre azul cobre SATÉLITE com uma carta de civil, e a vez passa para a Vermelha</button><button type="button" class="q-op">SATÉLITE fica descoberta, e a vez passa para a Vermelha</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Civil inocente é coberto com uma carta de civil e encerra o turno na hora, mesmo que sobrem tentativas <span class="pg">p.&nbsp;4</span>.</p></div></div></aside>
+<aside class="call suavez"><p class="rot">Tarefa · sua vez</p><p><strong>Agora a sua mesa.</strong></p>
+<div class="quiz"><p class="q-p">Seu espião mestre disse <em>água: 2</em>. Quantas palavras, no máximo, vocês podem tocar neste turno?</p><div class="q-ops"><button type="button" class="q-op">2</button><button type="button" class="q-op" data-ok>3</button><button type="button" class="q-op">Quantas quiserem, enquanto acertarem</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> O número da pista mais um: 3 <span class="pg">p.&nbsp;5</span>.</p></div></div>
+<div class="quiz"><p class="q-p">Vocês tocaram uma palavra da outra equipe. O que acontece?</p><div class="q-ops"><button type="button" class="q-op">Fica descoberta, e vocês tentam de novo</button><button type="button" class="q-op">É coberta com uma carta de agente da sua equipe, e o turno acaba</button><button type="button" class="q-op" data-ok>É coberta com uma carta de agente da outra equipe, e o turno acaba</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Ela é coberta com uma carta de agente da outra equipe, que fica mais perto de vencer, e o turno acaba <span class="pg">p.&nbsp;4</span>.</p></div></div></aside>
+<h3>Ainda não precisa saber</h3>
+<p>O que vale como pista e o castigo da pista inválida: <a href="#etapa-3-o-que-vale-como-pista">etapa 3</a>. Cara séria e ampulheta: <a href="#etapa-2-dar-a-pista-e-adivinhar">etapa 2</a>. Variantes para 2 e 3 jogadores: Situações especiais.</p>
+<h3>Como a partida acaba</h3>
+<p>Vence a equipe com todas as suas palavras cobertas, mesmo que a última tenha sido tocada pela adversária. Se alguém tocar o assassino, a equipe dele perde <span class="pg">p.&nbsp;5</span>.</p>
+<p><strong>Prefere ver?</strong> Vídeo de regras da Devir. Ele complementa este guia; em caso de diferença, vale o manual.</p>
+<figure class="video"><button type="button" class="yt" data-id="3nkyoWDRfrU" data-t="0" aria-label="Assistir ao vídeo"><img src="https://i.ytimg.com/vi/3nkyoWDRfrU/hqdefault.jpg" alt="" loading="lazy" decoding="async" width="480" height="360"><span class="yt-play">▶ Assistir ao vídeo</span></button><figcaption>DEVIR BRASIL I Código Secreto - regras rápidas, canal Devir TV Brasil · <a href="https://www.youtube.com/watch?v=3nkyoWDRfrU&amp;t=0s" rel="noopener">abrir no YouTube</a></figcaption></figure>
+<aside class="call atencao"><p class="rot">Atenção</p><p><strong>Os três erros mais caros.</strong> Palavra da outra equipe encerra o turno e ainda é dela. O assassino encerra a partida: antes de falar, o espião mestre confere se a pista não puxa para ele. E a pista não pode ser palavra visível.</p></aside>
+</section>
+  <nav class="bloco indice" id="neste-guia" aria-label="Neste guia"><h2>Neste guia</h2><ol><li><a href="#comece-a-jogar-em-4-minutos">Comece a jogar em 4 minutos</a></li><li><a href="#antes-de-tudo-o-que-e-este-jogo">Antes de tudo: o que é este jogo</a> <small>(opcional)</small></li><li><a href="#como-este-guia-ensina">Como este guia ensina</a> <small>(opcional)</small></li><li><a href="#etapa-1-montar-a-mesa">Etapa 1: montar a mesa</a></li><li><a href="#etapa-2-dar-a-pista-e-adivinhar">Etapa 2: dar a pista e adivinhar</a></li><li><a href="#etapa-3-o-que-vale-como-pista">Etapa 3: o que vale como pista</a></li><li><a href="#situacoes-especiais">Situações especiais</a> <small>(opcional)</small></li><li><a href="#avaliacao-final">Avaliação final</a> <small>(opcional)</small></li><li><a href="#para-consultar-durante-a-partida">Para consultar durante a partida</a></li><li><a href="#fontes">Fontes</a></li></ol></nav>
+
+<section class="bloco sec opc" id="antes-de-tudo-o-que-e-este-jogo"><h2><span class="num">0</span>Antes de tudo: o que é este jogo<span class="tag-opc">Opcional</span></h2>
+<figure class="fig foto-sec"><img src="../../codenames/fotos/componentes-1.webp" alt="Código Secreto: os componentes" width="1600" height="1067" loading="lazy" decoding="async"><figcaption>Imagem: Czech Games Edition</figcaption></figure>
+<details class="dobra sec-opc"><summary>Abrir esta seção</summary><p>Código Secreto é um jogo de associação de palavras em equipe. As 25 palavras da mesa são os codinomes de 25 agentes, e por trás de cada um há uma identidade: agente vermelho, agente azul, civil inocente ou o assassino. Só os espiões mestres conhecem essas identidades, porque só eles veem a carta chave <span class="pg">p.&nbsp;2 e 3</span>.</p>
+<p>O espião mestre não aponta nem explica: diz uma palavra e um número, e espera. A dificuldade está em achar uma palavra que puxe para várias palavras da equipe e para nenhuma das outras; o manual chama de "grande proeza" ligar quatro com uma pista só <span class="pg">p.&nbsp;4</span>. Cada acerto cobre uma palavra, e a grade fica mais fácil à medida que a partida anda <span class="pg">p.&nbsp;5</span>.</p>
+<p>Duas ideias sustentam o resto:</p>
+<ul><li><strong>Errar custa de três jeitos.</strong> Civil encerra o turno. Palavra da outra equipe encerra o turno e ajuda o adversário. Assassino perde a partida <span class="pg">p.&nbsp;4</span>.</li><li><strong>A pista é sobre significado.</strong> Ela não pode indicar letras, posição na mesa nem pedaços de palavras visíveis. Parte dessas regras vale sempre, e parte cada grupo combina <span class="pg">p.&nbsp;6 e 7</span>.</li></ul></details>
+</section>
+<section class="bloco sec opc" id="como-este-guia-ensina"><h2><span class="num">1</span>Como este guia ensina<span class="tag-opc">Opcional</span></h2>
+<figure class="fig foto-sec caixa"><img src="../../codenames/fotos/capa-1.webp" alt="Código Secreto: a caixa" width="970" height="1500" loading="lazy" decoding="async"><figcaption>Imagem: Czech Games Edition</figcaption></figure>
+<details class="dobra sec-opc"><summary>Abrir esta seção</summary><p>O guia tem três etapas, cada uma uma parte real da partida: montar a mesa, jogar um turno e decidir se uma pista vale. Em cada etapa vêm <strong>Para entender</strong> (como funciona e por quê), <strong>Passo a passo</strong> (as regras exatas), um <strong>exemplo resolvido</strong>, uma tarefa para <strong>completar</strong>, uma <strong>sua vez</strong>, sem ajuda, e, nas etapas 2 e 3, um <strong>treino rápido</strong>. Regras que só aparecem em algumas partidas ficam em blocos de regra adicional, logo depois do passo a passo. Em cada pergunta, escolha uma opção para ver a resposta certa e a explicação. No final, uma avaliação curta diz o que reler, e uma folha de consulta vai para a mesa.</p></details>
+</section>
+<section class="bloco sec" id="etapa-1-montar-a-mesa"><h2><span class="num">2</span>Etapa 1: montar a mesa</h2>
+<details class="dobra entender"><summary>Por que funciona assim</summary><aside class="call entender"><p>A mesa tem dois lados: de um, os espiões mestres, que veem a carta chave; do outro, os agentes de campo, que veem só as palavras <span class="pg">p.&nbsp;2</span>.</p>
+<p><strong>A carta chave</strong> é um mapa da grade. Cada quadrado corresponde à palavra na mesma posição: azul é da Equipe Azul, vermelho é da Vermelha, sem cor é civil inocente, e o quadrado preto é o assassino. As luzes nas bordas dizem qual equipe começa <span class="pg">p.&nbsp;2 e 3</span>.</p>
+<p><strong>As cartas de agente</strong> cobrem as palavras encontradas: 8 vermelhas, 8 azuis e o agente duplo, que tem um lado de cada cor e vai para a equipe inicial. Por isso ela tem 9 palavras para achar, e a outra 8 <span class="pg">p.&nbsp;3</span>. <strong>As cartas de civil inocente</strong> (7) e <strong>a do assassino</strong> (1) cobrem as palavras que não são de ninguém; como as duas equipes podem tocá-las, ficam no meio <span class="pg">p.&nbsp;3</span>.</p></aside></details>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Preparação</strong> <span class="pg">p.&nbsp;2 e 3</span></p>
+<ol><li>Divida os jogadores em duas equipes de tamanho e habilidade parecidos. O jogo padrão pede pelo menos 4 jogadores.</li><li>Cada equipe escolhe um espião mestre. Os dois sentam do mesmo lado da mesa; os agentes de campo, de frente para eles.</li><li>Escolha ao acaso 25 cartas de codinome e ponha-as numa grade de 5 por 5.</li><li>Os espiões mestres sorteiam uma carta chave e a põem no apoio entre eles, com qualquer lado para cima.</li><li>A cor das luzes nas bordas da carta chave é a da equipe inicial.</li><li>Vire o agente duplo para a cor da equipe inicial. Ele passa a ser uma das cartas de agente dessa equipe.</li><li>As cartas de agente vermelho ficam numa pilha na frente do espião mestre vermelho; as de agente azul, na frente do azul.</li><li>As cartas de civil inocente e a do assassino ficam entre os jogadores, ao alcance dos dois espiões mestres.</li></ol></aside>
+<figure class="fig"><img src="figuras/preparacao.webp" alt="A mesa montada: os agentes de campo de um lado, a grade de 25 codinomes no meio, as pilhas de cartas de agente e as de civil e do assassino abaixo dela, e a carta chave no apoio, virada para os dois espiões mestres. Ilustração: manual Devir (p. 2)" loading="lazy" decoding="async"><figcaption>A mesa montada: os agentes de campo de um lado, a grade de 25 codinomes no meio, as pilhas de cartas de agente e as de civil e do assassino abaixo dela, e a carta chave no apoio, virada para os dois espiões mestres. Ilustração: manual Devir <span class="pg">p.&nbsp;2</span></figcaption></figure>
+<figure class="fig"><img src="figuras/chave.webp" alt="A carta chave e a grade que ela descreve: cada quadrado vale para a palavra na mesma posição. As luzes vermelhas mostram que a Vermelha começa, com 9 palavras; o X marca o assassino, FAIXA. Ilustração: manual Devir (p. 2)" loading="lazy" decoding="async"><figcaption>A carta chave e a grade que ela descreve: cada quadrado vale para a palavra na mesma posição. As luzes vermelhas mostram que a Vermelha começa, com 9 palavras; o X marca o assassino, FAIXA. Ilustração: manual Devir <span class="pg">p.&nbsp;2</span></figcaption></figure>
+<details class="dobra mais"><summary>Regra adicional: Embaralhar bem</summary><aside class="call mais"><p>Ao embaralhar as cartas de codinome, vire metade do baralho de vez em quando, para as palavras se misturarem melhor <span class="pg">p.&nbsp;2</span>.</p></aside></details>
+<figure class="fig"><img src="figuras/agentes.webp" alt="As cartas de agente, 8 vermelhas e 8 azuis. Cada pilha fica na frente do seu espião mestre e ajuda a lembrar quem é de qual equipe. Ilustração: manual Devir (p. 3)" loading="lazy" decoding="async"><figcaption>As cartas de agente, 8 vermelhas e 8 azuis. Cada pilha fica na frente do seu espião mestre e ajuda a lembrar quem é de qual equipe. Ilustração: manual Devir <span class="pg">p.&nbsp;3</span></figcaption></figure>
+<figure class="fig"><img src="figuras/agente-duplo.webp" alt="O agente duplo, com uma face vermelha e uma azul, vira para a cor da equipe inicial. Ilustração: manual Devir (p. 3)" loading="lazy" decoding="async"><figcaption>O agente duplo, com uma face vermelha e uma azul, vira para a cor da equipe inicial. Ilustração: manual Devir <span class="pg">p.&nbsp;3</span></figcaption></figure>
+<figure class="fig"><img src="figuras/civis-assassino.webp" alt="As cartas de civil inocente, 7, e a do assassino, 1, que ficam ao alcance dos dois espiões mestres. Ilustração: manual Devir (p. 3)" loading="lazy" decoding="async"><figcaption>As cartas de civil inocente, 7, e a do assassino, 1, que ficam ao alcance dos dois espiões mestres. Ilustração: manual Devir <span class="pg">p.&nbsp;3</span></figcaption></figure>
+<aside class="call atencao"><p class="rot">Atenção</p><p>Os agentes de campo nunca veem a carta chave. É por isso que os espiões mestres sentam juntos, com o apoio entre eles <span class="pg">p.&nbsp;2</span>.</p></aside>
+<details class="dobra resolvido"><summary>Ver um exemplo resolvido</summary><aside class="call resolvido"><p>Seis pessoas. Ana, Bruno e Carla formam a Vermelha; Davi, Eva e Fábio, a Azul. Ana e Davi são os espiões mestres e sentam lado a lado; os outros quatro, do lado oposto. A chave sorteada tem luzes azuis: a Azul começa. Davi vira o agente duplo para o azul e o junta às 8 cartas azuis, que ficam com 9 na frente dele. As 8 vermelhas ficam na frente de Ana.</p></aside></details>
+
+
+<details class="dobra pratica"><summary>Pratique esta etapa: exercícios com respostas</summary><aside class="call complete"><p class="rot">Tarefa · complete</p><p><strong>Complete.</strong> Numa mesa de 4 jogadores, a chave tem luzes vermelhas.</p>
+<div class="quiz"><p class="q-p">Quantas cartas ficam na pilha do espião mestre vermelho?</p><div class="q-ops"><button type="button" class="q-op">8</button><button type="button" class="q-op" data-ok>9</button><button type="button" class="q-op">10</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Nove: as 8 cartas de agente vermelho mais o agente duplo virado para o vermelho, uma para cada palavra que a Vermelha precisa cobrir <span class="pg">p.&nbsp;3</span>.</p></div></div></aside>
+<aside class="call suavez"><p class="rot">Tarefa · sua vez</p><p><strong>Sua vez.</strong> Você vai montar uma partida de 5 jogadores.</p>
+<div class="quiz"><p class="q-p">Como ficam as equipes?</p><div class="q-ops"><button type="button" class="q-op">Uma de 4 e outra de 1, que é só espião mestre</button><button type="button" class="q-op" data-ok>Uma de 3 e outra de 2, cada uma com um espião mestre</button><button type="button" class="q-op">Não dá: o jogo padrão exige número par de jogadores</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Duas equipes de tamanho e habilidade parecidos: 3 e 2. O jogo padrão exige pelo menos 4 jogadores <span class="pg">p.&nbsp;2</span>.</p></div></div>
+<div class="quiz"><p class="q-p">Onde fica a carta chave?</p><div class="q-ops"><button type="button" class="q-op">No meio da grade, virada para baixo</button><button type="button" class="q-op">Com o espião mestre da equipe inicial, que a mostra ao outro quando precisa</button><button type="button" class="q-op" data-ok>No apoio entre os dois espiões mestres, fora da vista dos agentes de campo</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> No apoio entre os espiões mestres, que sentam do mesmo lado <span class="pg">p.&nbsp;2</span>.</p></div></div></aside></details>
+</section>
+<section class="bloco sec" id="etapa-2-dar-a-pista-e-adivinhar"><h2><span class="num">3</span>Etapa 2: dar a pista e adivinhar</h2>
+<figure class="fig foto-sec"><img src="../../codenames/fotos/mesa-1.webp" alt="Código Secreto: a mesa montada" width="1600" height="1067" loading="lazy" decoding="async"><figcaption>Imagem: Czech Games Edition</figcaption></figure>
+<details class="dobra entender"><summary>Por que funciona assim</summary><aside class="call entender"><p>O espião mestre fala uma vez por turno: uma palavra e um número, além de soletrar a pista se pedirem. Depois só cobre as palavras que os colegas tocam <span class="pg">p.&nbsp;4 e 5</span>.</p>
+<p>O número faz duas coisas: diz quantas palavras a pista quer indicar e limita os toques ao número mais um. A tentativa extra existe porque uma pista antiga pode ter deixado palavra para trás <span class="pg">p.&nbsp;4 e 5</span>. Cada toque é um risco, e por isso parar também é uma jogada.</p></aside></details>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>O turno</strong> <span class="pg">p.&nbsp;4 e 5</span></p>
+<ol><li>O espião mestre da equipe da vez diz a pista: uma palavra e um número. Nada mais.</li><li>Os agentes de campo discutem entre si; o espião mestre fica de cara séria.</li><li>Um agente de campo toca uma palavra. É a escolha oficial da equipe.</li><li>O espião mestre consulta a chave e cobre a palavra. Da sua equipe: carta de agente da sua equipe, e podem tocar outra, sem nova pista. Civil inocente: carta de civil, e o turno acaba. Da outra equipe: carta de agente da outra equipe, e o turno acaba. Assassino: carta do assassino; a sua equipe perde, e a outra vence.</li><li>Pelo menos um toque por turno; no máximo o número da pista mais um. Depois do primeiro, podem parar quando quiserem.</li><li>Com um erro, a decisão de parar ou o fim das tentativas, a vez passa para a outra equipe.</li><li>Vence a equipe que tiver todas as suas palavras cobertas.</li></ol></aside>
+<details class="dobra edicao"><summary>Sobre a edição</summary><aside class="call edicao"><p>O manual brasileiro diz que o espião mestre "também pode dizer um número" <span class="pg">p.&nbsp;4</span>, como se fosse opcional. Mas todos os exemplos têm número, o limite de toques depende dele, e as pistas 0 e ilimitado <span class="pg">p.&nbsp;7</span> cobrem os casos especiais. Este guia ensina a dizer sempre o número. A frase não foi conferida no manual original em inglês.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Vencer no turno do adversário</summary><aside class="call mais"><p>Se a outra equipe tocar a última palavra da sua, ela é coberta com a sua carta de agente, e a sua equipe vence ali mesmo <span class="pg">p.&nbsp;5</span>.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Cara séria</summary><aside class="call mais"><p>O espião mestre não toca nenhuma carta enquanto os colegas pensam e, quando um deles acerta, age como se fosse exatamente a palavra que queria. Os agentes de campo olham para a mesa, não para ele, para evitar sinais sem palavras <span class="pg">p.&nbsp;5</span>.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Ampulheta</summary><aside class="call mais"><p>O uso é opcional <span class="pg">p.&nbsp;5</span>.</p>
+<ol><li>Se um jogador demora demais, qualquer jogador pode virar a ampulheta.</li><li>O jogador lento precisa decidir antes de a areia acabar.</li><li>O espião mestre também pode virá-la para si mesmo. Se não achar uma boa pista antes de a areia acabar, dá uma pista só para a sua palavra mais difícil e continua pensando enquanto a outra equipe joga.</li></ol></aside></details>
+<details class="dobra resolvido"><summary>Ver um exemplo resolvido</summary><aside class="call resolvido"><p>Outra partida, com a mesma grade da p. 2; a Vermelha começa, com 9 palavras. No primeiro turno, a pista foi <em>África: 2</em>. Os agentes de campo tocaram LEÃO (vermelha, coberta) e depois GARRA, um civil: carta de civil, fim do turno. MARFIM ficou para trás.</p>
+<p>No turno seguinte da Vermelha, a pista é <em>espada: 2</em>, e eles podem tocar até 3 palavras. Tocam NINJA: vermelha, seguem. CAVALEIRO: vermelha, seguem. Usam a tentativa extra na palavra que faltou da pista anterior, MARFIM: vermelha. Esgotadas as 3 tentativas, a vez passa para a Azul, e a Vermelha tem 5 palavras por encontrar.</p></aside></details>
+
+
+
+<details class="dobra pratica"><summary>Pratique esta etapa: exercícios com respostas</summary><aside class="call complete"><p class="rot">Tarefa · complete</p><p><strong>Complete.</strong> Outra partida com a mesma grade, primeiro turno. O espião mestre vermelho diz <em>oriental: 2</em>. Os agentes de campo tocam NINJA, que é vermelha, e depois FAIXA, o quadrado preto da chave.</p>
+<div class="quiz"><p class="q-p">O que acontece?</p><div class="q-ops"><button type="button" class="q-op">A vez passa para a Azul, que ganha uma palavra</button><button type="button" class="q-op" data-ok>FAIXA é coberta pela carta do assassino, a partida acaba e a Vermelha perde</button><button type="button" class="q-op">A Vermelha perde a tentativa extra, mas continua jogando</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> O assassino encerra a partida, e perde a equipe que o tocou <span class="pg">p.&nbsp;4 e 5</span>. O manual avisa o espião mestre: antes de dizer a pista, confira se ela não se relaciona com o assassino <span class="pg">p.&nbsp;4</span>. <em>Oriental</em> puxa para a faixa das artes marciais.</p></div></div></aside>
+<aside class="call suavez"><p class="rot">Tarefa · sua vez</p><p><strong>Sua vez.</strong></p>
+<div class="quiz"><p class="q-p">Os agentes de campo ouviram a pista e não têm ideia. Podem passar sem tocar?</p><div class="q-ops"><button type="button" class="q-op">Sim, se o espião mestre concordar</button><button type="button" class="q-op">Sim, mas a outra equipe cobre uma palavra deles</button><button type="button" class="q-op" data-ok>Não: precisam tocar pelo menos uma palavra</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Os agentes de campo sempre tentam adivinhar uma vez; só depois podem parar <span class="pg">p.&nbsp;4</span>. E discutir ou apontar não conta: a escolha oficial é o toque na carta <span class="pg">p.&nbsp;4</span>.</p></div></div></aside>
+<aside class="call treino"><p class="rot">Treino rápido</p><p><strong>O que acontece depois do toque?</strong></p>
+<div class="quiz"><p class="q-p">a) A palavra é da sua equipe.</p><div class="q-ops"><button type="button" class="q-op" data-ok>É coberta com sua carta de agente, e vocês podem tocar outra</button><button type="button" class="q-op">É coberta, e o espião mestre dá uma nova pista</button><button type="button" class="q-op">É coberta, e o turno acaba</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Cobre e continua, sem nova pista <span class="pg">p.&nbsp;4</span>.</p></div></div>
+<div class="quiz"><p class="q-p">b) A palavra é da outra equipe, e era a última dela.</p><div class="q-ops"><button type="button" class="q-op">O turno acaba e a partida segue</button><button type="button" class="q-op">A sua equipe vence, porque a outra errou</button><button type="button" class="q-op" data-ok>A outra equipe vence</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> A outra equipe teve todas as palavras cobertas e vence, mesmo no seu turno <span class="pg">p.&nbsp;5</span>.</p></div></div>
+<div class="quiz"><p class="q-p">c) A pista foi <em>neve: 2</em>, e vocês acertaram as duas. E agora?</p><div class="q-ops"><button type="button" class="q-op">O turno acaba</button><button type="button" class="q-op" data-ok>Podem tocar mais uma ou parar</button><button type="button" class="q-op">Podem continuar enquanto acertarem</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> O máximo é o número mais um, 3, e parar é sempre permitido depois do primeiro toque <span class="pg">p.&nbsp;4 e 5</span>.</p></div></div></aside></details>
+</section>
+<section class="bloco sec" id="etapa-3-o-que-vale-como-pista"><h2><span class="num">4</span>Etapa 3: o que vale como pista</h2>
+<figure class="fig foto-sec"><img src="../../codenames/fotos/componentes-1.webp" alt="Código Secreto: os componentes" width="1600" height="1067" loading="lazy" decoding="async"><figcaption>Imagem: Czech Games Edition</figcaption></figure>
+<details class="dobra entender"><summary>Por que funciona assim</summary><aside class="call entender"><p>O jogo está certo quando a informação passa só pela palavra e pelo número <span class="pg">p.&nbsp;5</span>. Tudo o que o manual proíbe é um jeito de passar mais que isso: letras, posição na mesa, pedaços de palavras visíveis, explicações. Ele separa as <strong>regras rigorosas</strong>, que valem sempre, das <strong>regras flexíveis</strong>, que cada grupo combina antes de jogar, <span class="pg">p.&nbsp;6 e 7</span>. E pede bom senso: na dúvida, decide o espião mestre adversário <span class="pg">p.&nbsp;6</span>.</p></aside></details>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Regras rigorosas e de grafia</strong> <span class="pg">p.&nbsp;4 e 6</span></p>
+<ol><li><strong>Uma palavra só,</strong> sem explicação nem comentário junto.</li><li><strong>Sobre o significado.</strong> Nada de falar das letras de uma palavra ou da posição dela na mesa. Letras e números valem quando o que conta é o significado.</li><li><strong>Nada visível na mesa.</strong> Nem a palavra descoberta, nem uma forma dela, nem parte de uma palavra composta da grade. Palavra coberta deixa de contar.</li><li><strong>O número não é pista.</strong> Ele não pode servir para ligar palavras.</li><li><strong>Em português.</strong> Palavra estrangeira só se o grupo a usaria numa frase em português.</li><li><strong>A grafia decide.</strong> Mesmo som com grafia diferente são palavras diferentes; mesma grafia é a mesma palavra, com todos os sentidos. O acento faz diferença.</li><li><strong>Soletrar é permitido,</strong> e obrigatório se alguém pedir.</li></ol></aside>
+<details class="dobra mais"><summary>Regra adicional: Penalidade por pista inválida</summary><aside class="call mais"><p>O turno da equipe acaba na hora, e o espião mestre da outra equipe pode cobrir uma palavra da própria equipe com uma carta de agente antes de dar a próxima pista: a equipe que não errou fica uma palavra mais perto de vencer. Se ninguém perceber, a pista vale <span class="pg">p.&nbsp;5</span>.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Não seja muito rigoroso</summary><aside class="call mais"><p>A origem remota de uma palavra não conta: <em>anglo</em> e <em>terra</em> valem para INGLATERRA, e <em>rica</em> vale com AMÉRICA na mesa. Se o espião mestre adversário deixar, a pista vale; na dúvida, pergunte a ele em voz baixa <span class="pg">p.&nbsp;6</span>.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Regras flexíveis</summary><aside class="call mais"><p>O grupo combina antes: siglas comuns como <em>CIA</em> (palavras como <em>laser</em> e <em>radar</em> valem sempre); palavras compostas, que a rigor só valem sem hífen e sem espaço, como <em>aeroespacial</em>, e nunca inventadas; <em>sela</em> como pista para <em>cela</em>; rimas, que valem sempre que se referem ao significado (o grupo pode liberar qualquer rima, mas sem avisar que é rima); nomes próprios de várias palavras ou só de lugares, como <em>Nova York</em>. Nome inventado nunca vale, e nome que serve a várias pessoas exige dizer de quem se fala <span class="pg">p.&nbsp;7</span>. Sem combinação, valem as regras rigorosas e de grafia: compostas só sem hífen e sem espaço, e <em>sela</em> não vale para CELA <span class="pg">p.&nbsp;6 e 7</span>.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Pista com 0</summary><aside class="call mais"><p>O número 0 diz que nenhuma palavra da equipe tem a ver com a pista. Os toques ficam sem limite, mas é preciso tocar pelo menos um <span class="pg">p.&nbsp;7</span>.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Pista ilimitada</summary><aside class="call mais"><p>Quando há palavras de pistas anteriores por achar, o espião mestre pode dizer <em>ilimitado</em> no lugar do número. Os agentes de campo tocam quantas quiserem, sem saber quantas se ligam à pista nova <span class="pg">p.&nbsp;7</span>.</p></aside></details>
+<details class="dobra resolvido"><summary>Ver um exemplo resolvido</summary><aside class="call resolvido"><p>Grade da p. 2, tudo descoberto. O espião mestre azul quer ARRANHA-CÉU e JATO e testa pistas. Aqui só importa se a pista é válida.</p>
+<ul><li><em>céu: 2</em>: inválida, é parte de ARRANHA-CÉU <span class="pg">p.&nbsp;6</span>.</li><li><em>j: 1</em> para JATO, pela letra inicial: inválida, fala das letras <span class="pg">p.&nbsp;6</span>.</li><li><em>voar: 2</em>: válida, mas puxa também para DRAGÃO e SATÉLITE, dois civis.</li><li><em>prédio: 1</em>: válida.</li></ul>
+<p>Ele escolhe <em>prédio: 1</em>. Se ARRANHA-CÉU já estivesse coberta, <em>céu</em> passaria a valer <span class="pg">p.&nbsp;4</span>.</p></aside></details>
+
+
+
+<details class="dobra pratica"><summary>Pratique esta etapa: exercícios com respostas</summary><aside class="call complete"><p class="rot">Tarefa · complete</p><p><strong>Complete.</strong> O espião mestre vermelho diz <em>cavalo: 1</em> com CAVALEIRO na mesa. O azul acha que é uma forma da mesma palavra; o vermelho discorda.</p>
+<div class="quiz"><p class="q-p">Quem decide, pelo manual?</p><div class="q-ops"><button type="button" class="q-op">O espião mestre vermelho, que deu a pista</button><button type="button" class="q-op" data-ok>O espião mestre azul: se ele deixar, a pista vale</button><button type="button" class="q-op">Os agentes de campo, por votação</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Se o espião mestre oponente deixar, a pista é válida; na dúvida, pergunta-se a ele <span class="pg">p.&nbsp;6</span>.</p></div></div>
+<div class="quiz"><p class="q-p">Se o azul considerar a pista inválida, o que acontece?</p><div class="q-ops"><button type="button" class="q-op">A Vermelha dá outra pista no mesmo turno</button><button type="button" class="q-op" data-ok>O turno da Vermelha acaba, e o espião mestre azul pode cobrir uma palavra azul antes da próxima pista dele</button><button type="button" class="q-op">A Vermelha perde a partida</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Pista inválida encerra o turno, com a penalidade da cobertura <span class="pg">p.&nbsp;5</span>.</p></div></div></aside>
+<aside class="call suavez"><p class="rot">Tarefa · sua vez</p><p><strong>Sua vez.</strong> A pista vale pelas regras rigorosas?</p>
+<div class="quiz"><p class="q-p"><em>Cítrico: 8</em>, para LIMÃO e POLVO (oito tentáculos).</p><div class="q-ops"><button type="button" class="q-op">Vale: o número também é uma pista</button><button type="button" class="q-op" data-ok>Não vale: o número dito depois da pista não pode servir de pista</button><button type="button" class="q-op">Vale, se o grupo combinar</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> O número dito depois da pista não pode ser usado como pista <span class="pg">p.&nbsp;6</span>.</p></div></div>
+<div class="quiz"><p class="q-p"><em>Oito: 2</em>, para BOLA e POLVO.</p><div class="q-ops"><button type="button" class="q-op" data-ok>Vale: números valem quando se referem ao significado</button><button type="button" class="q-op">Não vale: números nunca são pista</button><button type="button" class="q-op">Só vale com regras flexíveis</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Letras e números são válidos desde que se refiram a significados <span class="pg">p.&nbsp;6</span>.</p></div></div></aside>
+<aside class="call treino"><p class="rot">Treino rápido</p><p><strong>Vale ou não vale?</strong> Nenhuma palavra citada está coberta. As cores não importam aqui; só se a pista é válida.</p>
+<div class="quiz"><p class="q-p">a) <em>arranha</em>, com ARRANHA-CÉU na mesa.</p><div class="q-ops"><button type="button" class="q-op">Vale: é outra palavra, com outro sentido</button><button type="button" class="q-op" data-ok>Não vale: é parte de uma palavra composta visível</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Enquanto uma palavra composta está descoberta, nenhuma parte dela pode ser pista <span class="pg">p.&nbsp;6</span>.</p></div></div>
+<div class="quiz"><p class="q-p">b) <em>planta</em>, para ALGODÃO (vegetal) e HOTEL (planta do prédio).</p><div class="q-ops"><button type="button" class="q-op" data-ok>Vale: mesma grafia é a mesma palavra, com todos os sentidos</button><button type="button" class="q-op">Não vale: são dois sentidos diferentes</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Palavras grafadas da mesma maneira são consideradas iguais <span class="pg">p.&nbsp;6</span>.</p></div></div>
+<div class="quiz"><p class="q-p">c) <em>penas: 0</em>.</p><div class="q-ops"><button type="button" class="q-op">Não vale: o número precisa ser pelo menos 1</button><button type="button" class="q-op" data-ok>Vale, e os agentes de campo tocam quantas quiserem, pelo menos uma</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Com 0, o limite de toques não se aplica, mas é preciso tocar uma palavra <span class="pg">p.&nbsp;7</span>.</p></div></div></aside></details>
+</section>
+<section class="bloco sec opc" id="situacoes-especiais"><h2><span class="num">5</span>Situações especiais<span class="tag-opc">Opcional</span></h2>
+<figure class="fig foto-sec caixa"><img src="../../codenames/fotos/capa-1.webp" alt="Código Secreto: a caixa" width="970" height="1500" loading="lazy" decoding="async"><figcaption>Imagem: Czech Games Edition</figcaption></figure>
+<details class="dobra sec-opc"><summary>Abrir esta seção</summary><details class="dobra mais"><summary>Regra adicional: Dois jogadores</summary><aside class="call mais"><p>Os dois jogam na mesma equipe, contra uma equipe simulada; a variante também serve para grupos que não querem competir. Um é espião mestre; o outro (ou os outros, se forem mais) é agente de campo. A equipe simulada não tem jogadores, mas a pilha de cartas de agente dela fica na mesa. Escolha uma carta chave em que a sua equipe seja a inicial e jogue os seus turnos normalmente. A cada turno da equipe simulada, o seu espião mestre cobre uma palavra dela, à escolha dele <span class="pg">p.&nbsp;8</span>.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Resultado com dois jogadores</summary><aside class="call mais"><p>Vocês perdem se tocarem o assassino ou se todas as palavras da equipe simulada forem cobertas. Se vencerem, o resultado é o número de cartas que sobraram na pilha dela, de 1 a 8: quanto mais, melhor, e o manual dá um título para cada valor <span class="pg">p.&nbsp;8</span>.</p></aside></details>
+<details class="dobra edicao"><summary>Sobre a edição</summary><aside class="call edicao"><p>O manual diz que o espião mestre cobre "1 de suas palavras toda a vez que conseguem um turno" <span class="pg">p.&nbsp;8</span>. Este guia lê "suas" como as palavras da equipe simulada, porque é a pilha dela que mede o resultado e a derrota vem quando todas as palavras dela são cobertas.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Três jogadores</summary><aside class="call mais"><p>Se os três quiserem jogar juntos, usem a variante de dois. Se dois quiserem competir, eles são os espiões mestres, e o terceiro é agente de campo das duas equipes <span class="pg">p.&nbsp;8</span>.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Próxima partida</summary><aside class="call mais"><p>Tire as cartas que cobrem os codinomes, devolva-as às pilhas e vire 25 codinomes novos <span class="pg">p.&nbsp;5</span>.</p></aside></details>
+<details class="dobra edicao"><summary>Sobre a edição</summary><aside class="call edicao"><p>O manual baixado (© julho de 2015; PDF de 2016, modificado em 2021) tem Codinomes na capa. A caixa vendida hoje se chama Código Secreto, e este guia não conferiu se o manual de reimpressões mais novas mudou alguma regra.</p></aside></details></details>
+</section>
+<section class="bloco sec opc" id="avaliacao-final"><h2><span class="num">6</span>Avaliação final<span class="tag-opc">Opcional</span></h2>
+<figure class="fig foto-sec"><img src="../../codenames/fotos/mesa-1.webp" alt="Código Secreto: a mesa montada" width="1600" height="1067" loading="lazy" decoding="async"><figcaption>Imagem: Czech Games Edition</figcaption></figure>
+<details class="dobra sec-opc"><summary>Abrir esta seção</summary><p>Responda sem consultar. Cada resposta diz o que reler.</p>
+<div class="quiz"><p class="q-p">1. Quem decide qual equipe começa?</p><div class="q-ops"><button type="button" class="q-op">A equipe com mais jogadores</button><button type="button" class="q-op" data-ok>As luzes nas bordas da carta chave</button><button type="button" class="q-op">O espião mestre mais novo</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> <strong>As luzes</strong> da carta chave mostram a equipe inicial, que tem 9 palavras <span class="pg">p.&nbsp;3</span>. Releia a etapa 1.</p></div></div>
+<div class="quiz"><p class="q-p">2. A pista foi <em>frio: 2</em>, e os agentes de campo acertaram duas. O que podem fazer?</p><div class="q-ops"><button type="button" class="q-op">Precisam parar</button><button type="button" class="q-op" data-ok>Tocar mais uma, ou parar</button><button type="button" class="q-op">Pedir outra pista ao espião mestre</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> <strong>Mais uma, ou parar.</strong> O máximo é o número mais um <span class="pg">p.&nbsp;5</span>. Releia a etapa 2.</p></div></div>
+<div class="quiz"><p class="q-p">3. A Azul tem 1 palavra por achar. No turno da Vermelha, um agente vermelho toca essa palavra. O que acontece?</p><div class="q-ops"><button type="button" class="q-op">O turno da Vermelha acaba, e a partida segue</button><button type="button" class="q-op">A Vermelha vence, porque a Azul não tocou a própria palavra</button><button type="button" class="q-op" data-ok>A Azul vence</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> <strong>A Azul vence</strong>: todas as palavras dela estão cobertas, e é possível vencer no turno da outra equipe <span class="pg">p.&nbsp;5</span>. Releia a etapa 2.</p></div></div>
+<div class="quiz"><p class="q-p">4. CAVALEIRO está descoberta. O espião mestre diz <em>cavaleiros: 2</em>. A pista vale pelas regras rigorosas?</p><div class="q-ops"><button type="button" class="q-op" data-ok>Não: é uma forma de uma palavra visível</button><button type="button" class="q-op">Vale: é uma palavra só</button><button type="button" class="q-op">Vale, porque o plural é outra palavra</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> <strong>Não vale.</strong> Não se pode usar nenhuma forma de uma palavra visível na mesa <span class="pg">p.&nbsp;6</span>. Releia a etapa 3.</p></div></div>
+<div class="quiz"><p class="q-p">5. O espião mestre dá uma pista inválida, e o adversário percebe. O que acontece?</p><div class="q-ops"><button type="button" class="q-op">Ele dá outra pista no mesmo turno</button><button type="button" class="q-op">A equipe dele perde a partida</button><button type="button" class="q-op" data-ok>O turno acaba, e o espião mestre adversário pode cobrir uma palavra da própria equipe antes da próxima pista</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> <strong>O turno acaba</strong>, com a penalidade da cobertura <span class="pg">p.&nbsp;5</span>. Releia a etapa 3.</p></div></div>
+<aside class="call atencao"><p class="rot">Atenção</p><p><strong>Critério para começar a jogar.</strong> Acertou as 5? Monte a mesa e jogue, com a folha de consulta ao lado. Errou a 1, releia a etapa 1; a 2 ou a 3, a etapa 2; a 4 ou a 5, a etapa 3. Depois refaça só as que errou.</p></aside></details>
+</section>
+<section class="bloco sec ref" id="para-consultar-durante-a-partida"><h2><span class="num">7</span>Para consultar durante a partida</h2>
+<figure class="fig foto-sec"><img src="../../codenames/fotos/componentes-1.webp" alt="Código Secreto: os componentes" width="1600" height="1067" loading="lazy" decoding="async"><figcaption>Imagem: Czech Games Edition</figcaption></figure>
+<p><strong>Preparação:</strong> duas equipes, pelo menos 4 jogadores. Espiões mestres do mesmo lado; agentes de campo de frente. Grade de 5 por 5 codinomes. Carta chave no apoio, escondida dos agentes de campo. Luzes da chave: equipe inicial, com 9 palavras (8 cartas de agente mais o agente duplo); a outra tem 8. Civis (7) e assassino (1) no meio.</p>
+<p><strong>O turno</strong></p>
+<ol><li>Espião mestre: uma palavra e um número (ver nota na etapa 2).</li><li>Agentes de campo: discutem e tocam. Pelo menos 1 toque; no máximo o número mais 1.</li><li>Da equipe: carta da equipe, continua. Civil: carta de civil, fim do turno. Da outra equipe: carta da outra equipe, fim do turno. Assassino: a equipe perde, e a outra vence.</li><li>Podem parar depois do primeiro toque.</li></ol>
+<p><strong>Pista válida:</strong> uma palavra; sobre o significado; nunca palavra visível, forma dela ou parte de composta visível; o número não é pista; em português; mesma grafia é a mesma palavra; soletrar se pedirem.</p>
+<p><strong>Pista inválida:</strong> fim do turno, e o espião mestre adversário pode cobrir uma palavra da própria equipe antes da próxima pista. Se ninguém notar, vale.</p>
+<p><strong>Combinar antes:</strong> siglas, palavras compostas, homônimos, rimas, nomes próprios de várias palavras.</p>
+<p><strong>Pistas especiais:</strong> 0 e ilimitado: toques sem limite, pelo menos 1.</p>
+<p><strong>Fim:</strong> vence a equipe com todas as palavras cobertas, mesmo no turno da outra. Tocou o assassino, perdeu.</p>
+</section>
+<section class="bloco sec" id="fontes"><h2><span class="num">8</span>Fontes</h2>
+<figure class="fig foto-sec caixa"><img src="../../codenames/fotos/capa-1.webp" alt="Código Secreto: a caixa" width="970" height="1500" loading="lazy" decoding="async"><figcaption>Imagem: Czech Games Edition</figcaption></figure>
+<ul><li>Devir. <em>Codinomes / Código Secreto: manual de regras</em> (edição brasileira, 8 páginas impressas em 5 folhas de PDF, © Czech Games Edition julho de 2015, tradução de Rodrigo Sponchiado Uemura e Marcelo Fernandes; arquivo criado em 03/08/2016, modificado em 31/05/2021). <a href="https://devir.com.br/wp-content/uploads/2016/06/Código-Secreto-manual-de-regras.pdf">https://devir.com.br/wp-content/uploads/2016/06/Código-Secreto-manual-de-regras.pdf</a>, linkado em <a href="https://devir.com.br/codigo-secreto/">https://devir.com.br/codigo-secreto/</a>. Consultado em 04/11/2026.</li><li>Devir. Página do produto Código Secreto (jogadores, idade, duração). <a href="https://devir.com.br/codigo-secreto/">https://devir.com.br/codigo-secreto/</a>. Consultada em 04/11/2026.</li><li>Vídeo de regras: "DEVIR BRASIL I Código Secreto - regras rápidas", canal Devir TV Brasil, <a href="https://www.youtube.com/watch?v=3nkyoWDRfrU">https://www.youtube.com/watch?v=3nkyoWDRfrU</a>. Consultado em 04/11/2026.</li><li>O manual original em inglês da Czech Games Edition não foi obtido nesta pesquisa. Não foram encontrados FAQ nem errata oficiais em português.</li></ul>
+</section>
+<section class="bloco"><p class="sec-intro">Quer saber se vale a pena antes de jogar? <a href="../../codenames/">Leia a nossa resenha de Código Secreto</a>.</p></section>
+<p class="nota-pe">Regras conferidas no manual da edição brasileira (Devir, tradução de Rodrigo Sponchiado Uemura e Marcelo Fernandes, © Czech Games Edition, julho de 2015), baixado da página do jogo no site da Devir. Na capa desse manual o jogo se chama Codinomes; a caixa à venda se chama Código Secreto. As páginas citadas são os números impressos no manual.</p>
+</div></main>
+
+<!--rodape--><footer><div class="in">
+ <span>Elite Boardgamers</span><a href="../../noticias/">Notícias</a><a href="../../resenhas/">Resenhas</a><a href="../../como-jogar/">Como jogar</a><a href="../../lancamentos/">Lançamentos</a><a href="../../black/">Black de Verdade</a><a href="../../jogos-de-tabuleiro/">Guia de jogos de tabuleiro</a><a href="../../premios/">Prêmios</a><a href="../../politica-editorial/">Política editorial</a>
+ <a href="https://www.instagram.com/eliteboardgamers/" target="_blank" rel="noopener">Instagram @eliteboardgamers</a><a href="https://chat.whatsapp.com/IgQQkJdSkzHBaEq3UwFeAo" target="_blank" rel="noopener">Grupo do WhatsApp</a>
+</div></footer>
+<div class="barra-lt fora" role="region" aria-label="Ações da página"><div class="cpw" data-texto=""><a class="cp" href="https://wa.me/" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="M8.2 10.8l7.6-4.4M8.2 13.2l7.6 4.4"/></svg><span>Compartilhar</span></a><div class="cp-menu" hidden><a class="cp-op zap-op" href="https://wa.me/" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8.4 19l-4.4 1Z"/><path d="M9.2 8.6c.3-.5.8-.5 1-.1l.7 1.5c.1.3 0 .6-.2.8l-.4.4c.5 1.1 1.4 2 2.5 2.5l.4-.4c.2-.2.5-.3.8-.2l1.5.7c.4.2.4.7-.1 1-.7.5-1.6.6-2.4.3a7 7 0 0 1-4.2-4.2c-.3-.8-.2-1.7.4-2.3Z"/></svg>WhatsApp</a><button type="button" class="cp-op"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h8"/></svg>Copiar link</button></div><p class="cp-st" role="status"></p></div><script>(()=>{const pega=c=>({u:c.dataset.url||location.href,t:c.dataset.texto||document.title});
+document.querySelectorAll('.cpw:not(.ok)').forEach(c=>{c.classList.add('ok');const b=c.querySelector('.cp');
+ const n=document.createElement('button');n.type='button';n.className=b.className;n.innerHTML=b.innerHTML;n.setAttribute('aria-expanded','false');b.replaceWith(n)});
+if(window.__cp)return;window.__cp=1;
+const celular=()=>navigator.share&&matchMedia('(pointer:coarse)').matches;
+const fecha=()=>document.querySelectorAll('.cp-menu:not([hidden])').forEach(m=>{m.hidden=true;m.parentNode.querySelector('.cp').setAttribute('aria-expanded','false')});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')fecha()});
+document.addEventListener('click',async ev=>{const c=ev.target.closest('.cpw');if(!c){fecha();return}
+ const {u,t}=pega(c),m=c.querySelector('.cp-menu'),st=c.querySelector('.cp-st'),el=ev.target.closest('.cp,.cp-op');if(!el)return;
+ if(el.classList.contains('cp')){
+  if(celular()){try{await navigator.share({title:document.title,text:t,url:u})}catch(e){}return}
+  const abre=m.hidden;fecha();if(!abre)return;
+  m.querySelector('.zap-op').href='https://wa.me/?text='+encodeURIComponent(t+' '+u);
+  const r=c.getBoundingClientRect();m.classList.toggle('sobe',!!c.closest('.barra-lt')||r.bottom>innerHeight-140);m.classList.toggle('dir',r.left>innerWidth-220);
+  m.hidden=false;el.setAttribute('aria-expanded','true');m.querySelector('.cp-op').focus();return}
+ if(el.classList.contains('zap-op')){fecha();return}
+ fecha();let ok=false;try{await navigator.clipboard.writeText(u);ok=true}catch(e){
+  const i=document.createElement('input');i.value=u;document.body.append(i);i.select();try{ok=document.execCommand('copy')}catch(e2){}i.remove()}
+ st.textContent=ok?'Link copiado!':'Não deu para copiar o link.';clearTimeout(st._t);st._t=setTimeout(()=>st.textContent='',2500);
+ c.querySelector('.cp').focus()})})()</script><a class="lt-grupo" href="https://chat.whatsapp.com/IgQQkJdSkzHBaEq3UwFeAo" target="_blank" rel="noopener" aria-label="Entrar no grupo do WhatsApp da Elite"><img src="/favicon-48.png" width="48" height="48" alt=""><span>Grupo</span></a></div><script>(()=>{const l=document.querySelector('.barra-lt');if(!l)return;const vis=new Set();
+const poe=()=>{const on=scrollY>500&&!vis.size;l.classList.toggle('fora',!on);l.inert=!on;document.body.classList.toggle('lt-on',on)};
+const io=new IntersectionObserver(es=>{es.forEach(e=>e.isIntersecting?vis.add(e.target):vis.delete(e.target));poe()});
+document.querySelectorAll('.convite,footer').forEach(x=>io.observe(x));addEventListener('scroll',poe,{passive:true});poe()})()</script>
+<script>document.addEventListener('click',e=>{const b=e.target.closest('.q-op');if(!b||b.disabled)return;const q=b.closest('.quiz');
+q.querySelectorAll('.q-op').forEach(o=>{o.disabled=true;if(o.hasAttribute('data-ok'))o.classList.add('ok')});const ok=b.hasAttribute('data-ok');
+if(!ok)b.classList.add('erro');const x=q.querySelector('.q-exp');x.hidden=false;x.classList.toggle('mal',!ok);x.querySelector('.q-res').textContent=ok?'Isso!':'Não é essa.';});
+(()=>{const g=document.querySelector('.guia-prog');if(!g)return;const t=g.querySelector('.gp-t'),b=g.querySelector('.gp-b');
+const secs=[...document.querySelectorAll('.sec[id]')],idx=document.querySelector('.indice');
+const poe=()=>{const y=scrollY+innerHeight*.3;let at=null;for(const s of secs){if(s.offsetTop<=y)at=s}
+ t.textContent=at&&scrollY>idx.offsetTop?at.querySelector('h2').textContent.replace(/^\d+/,'').trim():'Neste guia';
+ const h=document.documentElement.scrollHeight-innerHeight;b.style.transform='scaleX('+(h>0?Math.min(1,scrollY/h):0)+')'};
+addEventListener('scroll',poe,{passive:true});addEventListener('resize',poe);poe()})();
+document.addEventListener('click',e=>{const y=e.target.closest('.yt');if(!y)return;const f=document.createElement('iframe');
+f.src='https://www.youtube-nocookie.com/embed/'+y.dataset.id+'?start='+y.dataset.t+'&autoplay=1&rel=0';f.title=y.getAttribute('aria-label');
+f.allow='autoplay; encrypted-media; picture-in-picture';f.allowFullscreen=true;y.replaceWith(f)});</script><!--/rodape-->
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "b37421bd1ade44f1a59e46b96626bf03"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

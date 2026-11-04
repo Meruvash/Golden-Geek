@@ -81,3 +81,31 @@ Script: `/tmp/claude-0/-home-user/6a4d6f51-afb4-5576-b0bf-e2035e13b944/scratchpa
 ## 5. Ligação com a resenha
 
 A resenha `codenames/` pode apontar para `/como-jogar/codenames/` na seção de como funciona, e o tutorial já leva `"resenha": "codenames"` no JSON. A resenha de Código Secreto Imagens não foi ligada ao tutorial: as regras dela não foram conferidas.
+
+## 6. Auditoria independente (04/11/2026)
+
+Dois auditores externos: um de regras (aprovado com ajustes, nenhum erro de regra) e um de partida simulada (jogável com ajustes). Tudo foi corrigido só com base no manual. Os arquivos alterados foram `tutorial.md`, este arquivo e `figuras/preparacao.webp`. O JSON não mudou e segue com `"publicar": false`.
+
+**Auditoria de regras**
+1. Aviso de edição: trocado "edição da Devir de 2016", que não tinha apoio, por "O manual baixado (© julho de 2015; PDF de 2016, modificado em 2021)", dados lidos no PDF.
+2. Rimas: "valem sempre que se referem ao significado; o grupo pode liberar qualquer rima, mas sem avisar que é rima" (p. 7).
+3. Número da pista: "(ver nota na etapa 2)" no Comece e na folha de consulta. O bloco `[!edicao]` agora diz "as pistas 0 e ilimitado (p. 7) cobrem os casos especiais".
+4. Ampulheta: reescrita em três passos, com "dá uma pista só para a sua palavra mais difícil" (p. 5).
+5. Comece, passo 7: civis e assassino "entre os jogadores, onde os dois espiões mestres alcançam" (p. 3).
+6. Bloco renomeado para "regras rigorosas e de grafia". A frase "na dúvida, decide o espião mestre adversário" agora cita só a p. 6.
+7. `preparacao.webp` foi recortada de novo, 6 px abaixo; a borda de cima não tem mais fragmento de título.
+
+**Partida simulada**
+- a. O treino a passou a usar *arranha*, parte de ARRANHA-CÉU. A resposta sai direto da regra da palavra composta (p. 6), sem conflito com *rica*/AMÉRICA.
+- b. Sem combinação prévia, valem as regras rigorosas e de grafia: compostas só sem hífen e sem espaço, e *sela* não vale para CELA (p. 6 e 7). **[interpretada]** O manual não diz "por padrão" com essas palavras. A leitura vem de as flexíveis serem apresentadas como algo que "você pode decidir" permitir (p. 7).
+- c. Palavra da outra equipe: "ele a cobre com uma carta de agente da outra equipe, a cor certa". O manual diz que quem cobre é o espião mestre da equipe que tocou (p. 5: "consulte a carta chave e cubra"). Não diz quem pega a carta da pilha, e o texto não afirma isso.
+- d. Penalidade: no texto, na pergunta 5 e na folha de consulta ficou igual: o espião mestre adversário "pode cobrir uma palavra da própria equipe" (p. 5). **[interpretada]** O "suas palavras" do manual é lido como as palavras da equipe que não errou, porque é ela que se beneficia da penalidade.
+- e. Assassino: "a equipe que tocou perde, e a outra vence" no Comece, na etapa 2 e na folha de consulta (p. 4 e 5; com duas equipes, a derrota de uma é a vitória da outra).
+- f. Lista curta de peças no Comece, antes da montagem, com "apoio", "agente duplo" e "carta de codinome" explicados (p. 2 e 3). A ampulheta não entrou na lista, para caber nos 4 minutos; ela aparece na etapa 2.
+- g. Leitura da chave: "Cada quadrado da chave é a palavra na mesma posição da grade: azul e vermelho, das equipes; sem cor, civil; preto, assassino" (p. 2).
+- h. O exemplo da etapa 2 abre com "Outra partida, com a mesma grade da p. 2".
+- i. Dois jogadores: "o outro (ou os outros, se forem mais) é agente de campo" (p. 8).
+- j. Nos exemplos de validade de pista: "Aqui só importa se a pista é válida" e "As cores não importam aqui; só se a pista é válida".
+- k. Etapa 2: "uma palavra e um número, além de soletrar a pista se pedirem" (p. 6).
+
+**Portões depois das correções:** `checar_comece.py` passa. Com a lista de peças, o Comece chegou a 880 palavras; foi enxugado e voltou a ficar abaixo de 800. Travessão e meia-risca: zero. `vicios.py`: zero aviso. Exclamação: zero. O tutorial tem 5.320 palavras por `wc`.

@@ -81,3 +81,32 @@ O protocolo da seção 10 do PROMPT_PILOTO vale como está: 5 a 8 adultos que nu
 ## 8. Ligação com a resenha
 
 Não há resenha de Exploding Kittens no site. Se houver, o campo `resenha` do JSON passa a apontar para ela.
+
+## Auditoria independente (04/11/2026)
+
+Duas auditorias independentes (regras e partida simulada) devolvidas pelo coordenador. O que foi corrigido no tutorial:
+
+**Regras (aprovado com correções).**
+1. A sugestão sem apoio sobre o jogador eliminado devendo turnos de Ataque saiu; ficou "o folheto não trata [...]; combine com a mesa" (L1).
+2. "Quando jogar o Desarme": o efeito só vale ao comprar um Exploding Kitten (p. 2), e, num Combo Especial, dois ou três Desarmes podem ser jogados como qualquer par ou trio, sem o efeito (p. 2, combos com "QUAISQUER cartas"). Isso fecha a lacuna L2.
+3. Exemplo da etapa 1: "ele gastou o seu Desarme (a não ser que tenha recebido um segundo na distribuição)".
+4. `nao.webp` recortado de novo (p. 2, x 1066 a 1222, y 160 a 393 a 110 dpi): os dois desenhos do quadro inteiros, com os balões "SIM!" e "Droga."; legenda ajustada ("embaixo, ...").
+5. Legenda de `desarme.webp`: "escondendo de todos onde o põe", sem "embaixo da mesa" (o desenho não mostra a mesa).
+6. Folha de consulta, Não!: "a qualquer momento antes de ela acontecer, mesmo fora da sua vez" (p. 2).
+7. Desarme durante um Ataque virou regra direta num `[!mais]` da etapa 2 ("Após jogar esta carta, seu turno acaba" e "A vítima da carta joga seu turno normalmente", p. 2) e saiu da lista de pontos em aberto.
+
+**Partida simulada (jogável com ajustes).**
+- a. Cartas de Gato: "5 tipos com desenhos diferentes, 4 de cada, 20 cartas", e só cartas de mesmo nome formam par. O texto do folheto não imprime os nomes dos tipos (na ilustração só se lê "Barba-Gato" numa carta); o guia não os lista.
+- b. Folha de consulta: linha "Exploding Kitten | 4" e "Total: 56 cartas".
+- c. Ataque em cadeia: "encerra a vez na hora, sem comprar".
+- d. Folha: "os turnos que faltavam, contando o atual, + 2".
+- e. "Sua vez" da etapa 1: a opção que dependia do Não! virou "Sim, se jogar o Pulo antes de mostrar o gatinho" (errada pela p. 2: a carta deve ser mostrada imediatamente, e só o Desarme salva).
+- f. Não! na própria carta: o folheto não trata; nada acrescentado. O tempo do Não! segue a p. 2.
+- g. Presente ou Par contra jogador sem cartas: o folheto não trata; nada acrescentado.
+- h. Desarme em combo e Não!: coerente com o item 2; o tutorial mantém só o que a p. 2 diz (o Não! não para um Desarme; um Combo Especial pode levar Não!).
+- i. Etapa 2: o Par de Cartas de Gato é o caso básico do combo Duas Cartas Iguais (p. 2).
+- j. Critério da avaliação: basta acertar as 4 primeiras para começar; as perguntas 5 e 6 são da etapa 3, que o folheto manda ler depois da primeira partida (p. 2).
+- k. "Ao acaso": o folheto diz só "carta aleatória"; o guia escreve "aleatória, sem ver", sem inventar um modo de sortear.
+- l. "Sentido horário" explicado uma vez no Comece: o próximo é o jogador à esquerda.
+
+**Portões depois das correções:** `checar_comece.py` passa (aviso só pelas exclamações de "Não!" e "Sim!"); `vicios.py` 0 avisos; travessão e meia-risca 0; `wc -w` 4.642 palavras (acima do alvo de 4.500 pelos acréscimos pedidos). JSON segue com `"publicar": false`.

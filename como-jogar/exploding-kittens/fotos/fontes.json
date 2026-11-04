@@ -1,0 +1,29 @@
+{
+ "slug": "exploding-kittens",
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 1400,
+   "altura": 1400,
+   "editora": "Exploding Kittens",
+   "credito": "Imagem: Exploding Kittens",
+   "pagina": "https://www.explodingkittens.com/products/exploding-kittens-original-edition",
+   "imagem": "https://cdn.shopify.com/s/files/1/0345/9180/1483/files/EKOEAngled.png",
+   "baixada_em": "2026-11-04",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 1400,
+   "altura": 1400,
+   "editora": "Exploding Kittens",
+   "credito": "Imagem: Exploding Kittens",
+   "pagina": "https://www.explodingkittens.com/products/exploding-kittens-original-edition",
+   "imagem": "https://www.explodingkittens.com/cdn/shop/products/EKG-2EXP_PDPContent_DTC_1400x1400InTheBox.png",
+   "baixada_em": "2026-11-04",
+   "aprovada": true
+  }
+ ]
+}
