@@ -93,7 +93,7 @@ Duas ideias sustentam o resto:
 
 ## 1. Como este guia ensina
 
-O guia tem três etapas, cada uma uma parte real da partida: montar a mesa e ler as cartas, fazer as quatro ações, e fechar a partida com os nobres e a contagem de pontos. Em cada etapa vêm **Para entender** (como aquela parte funciona e por quê), **Passo a passo** (as regras exatas), regras de casos especiais que abrem com um toque e três tarefas com ajuda que diminui: um **exemplo resolvido**, uma tarefa para **completar** e uma **sua vez**, sem ajuda, com um **treino rápido** onde a conta precisa ficar automática. Cada pergunta tem opções: toque numa e aparecem a resposta certa e a explicação. No final, uma avaliação curta diz o que reler, e uma folha de consulta vai para a mesa.
+O guia tem três etapas, cada uma uma parte real da partida: montar a mesa e ler as cartas, fazer as quatro ações, e fechar a partida com os nobres e os pontos. Em cada etapa vêm **Para entender** (o porquê), **Passo a passo** (as regras exatas), as regras de casos especiais, que abrem com um toque, e tarefas com ajuda que diminui: um **exemplo resolvido**, uma tarefa para **completar** e uma **sua vez**, sem ajuda. Toque numa opção para ver a resposta certa e a explicação. No final, uma avaliação curta diz o que reler, e uma folha de consulta vai para a mesa.
 
 ## 2. Etapa 1: montar a mesa e ler as cartas
 
@@ -104,8 +104,6 @@ O guia tem três etapas, cada uma uma parte real da partida: montar a mesa e ler
 > **As cartas de desenvolvimento** são 90, em três níveis: 40 de nível 1, 30 de nível 2 e 20 de nível 3 (p. 2). O nível aparece no verso. Na frente, cada carta mostra três informações: os pontos de prestígio que ela vale, no canto de cima à esquerda (sem número, não vale ponto); o bônus, a pedra no canto de cima à direita; e o custo, as fichas pedidas no canto de baixo à esquerda. A cor do bônus é a cor da carta (p. 3 e manual de 2025).
 >
 > **Os cartões de nobres** são 10. Cada um vale 3 pontos de prestígio e pede uma combinação de bônus, desenhada no lado esquerdo do cartão: tantas cartas de tal cor, tantas de outra (p. 3).
->
-> Os pontos não são marcados em trilha nenhuma: estão impressos nas cartas e nos nobres que você junta à sua frente (p. 4).
 
 > [!passos] **Passo a passo: preparação** (p. 2). É igual para 2, 3 ou 4 jogadores, salvo nos passos 3 e 4.
 >
@@ -130,12 +128,6 @@ O guia tem três etapas, cada uma uma parte real da partida: montar a mesa e ler
 > - (x) 5
 > - ( ) 7
 > = 5: com 3 jogadores, devolvem-se 2 de cada pedra (p. 2).
->
-> ?? Quantas fichas de ouro?
-> - (x) 5
-> - ( ) 3
-> - ( ) 4
-> = Sempre 5. O número de fichas de ouro não muda com o número de jogadores (p. 2).
 >
 > ?? Quantos nobres ficam revelados?
 > - ( ) 3
@@ -278,19 +270,13 @@ O guia tem três etapas, cada uma uma parte real da partida: montar a mesa e ler
 > - ( ) 6 fichas: 3 azuis, 1 vermelha e 2 pretas
 > = 3 azuis e 2 pretas: 5 fichas. É o exemplo de Giulia no manual de 2025.
 >
-> ?? b) A mesma carta. Seus bônus: 3 azuis, 2 vermelhos e 3 pretos.
-> - (x) Nenhuma ficha
-> - ( ) 1 ficha de qualquer cor
-> - ( ) Não pode comprar: é preciso gastar pelo menos 1 ficha
-> = Nenhuma. Os bônus cobrem o custo inteiro, e a carta sai de graça (p. 4).
->
-> ?? c) Carta de 1 branca, 4 azuis e 2 verdes. Seus bônus: 4 azuis e 1 branco.
+> ?? b) Carta de 1 branca, 4 azuis e 2 verdes. Seus bônus: 4 azuis e 1 branco.
 > - ( ) 7 fichas
 > - ( ) 3 fichas: 1 branca e 2 verdes
 > - (x) 2 fichas verdes
 > = Os bônus cobrem a branca e as 4 azuis; faltam as 2 verdes (p. 4).
 >
-> ?? d) A mesma carta. Seu bônus: 1 azul. Suas fichas: 1 branca, 2 azuis e 2 verdes, sem ouro.
+> ?? c) A mesma carta. Seu bônus: 1 azul. Suas fichas: 1 branca, 2 azuis e 2 verdes, sem ouro.
 > - ( ) Compra, pagando 5 fichas
 > - (x) Não compra: faltam azuis
 > - ( ) Compra, pagando 4 fichas
@@ -323,7 +309,7 @@ O guia tem três etapas, cada uma uma parte real da partida: montar a mesa e ler
 
 > [!mais] **Cartas reservadas no fim.** As cartas que ficaram na mão não valem pontos nem tiram pontos (manual de 2025).
 
-> [!atencao] Os pontos não ficam marcados num tabuleiro: estão nas cartas e nos nobres à sua frente, sempre à vista (p. 4; manual de 2025). Some em voz alta no fim de cada turno quando a partida passar dos 10 pontos, para ninguém ser pego de surpresa pelo 15.
+> [!atencao] Não há trilha de pontos: os pontos estão nas cartas e nos nobres à sua frente, sempre à vista (p. 4; manual de 2025). Confira a soma de cada um quando a partida esquentar, para ninguém ser pego de surpresa pelo 15.
 
 > [!resolvido] **Exemplo resolvido.** Partida de 4 jogadores; Ana começou, e a ordem é Ana, Bruno, Carla e Davi. À frente de Bruno há 3 cartas verdes, 3 azuis e 2 brancas, e um nobre à mostra pede 3 verdes, 3 azuis e 3 brancos. As cartas dele valem 12 pontos.
 >
@@ -367,41 +353,17 @@ O guia tem três etapas, cada uma uma parte real da partida: montar a mesa e ler
 > - (x) Todos os outros jogam mais um turno, e a partida acaba
 > = Os outros completam a rodada, para que todos tenham o mesmo número de turnos; depois, vence quem tiver mais pontos (p. 4).
 
-> [!treino] **Treino rápido: quem vence?**
->
-> ?? a) Ana: cartas de 11 pontos e 1 nobre. Bruno: cartas de 15 pontos, sem nobre.
-> - ( ) Empate em 15
-> - (x) Bruno, 15 a 14
-> - ( ) Ana, porque tem nobre e Bruno não
-> = Ana tem 11 + 3 = 14; Bruno, 15. Bruno vence (p. 4).
->
-> ?? b) Carla: 16 pontos, 12 cartas compradas. Davi: 16 pontos, 10 cartas compradas.
-> - ( ) Carla
-> - (x) Davi
-> - ( ) Empate
-> = Davi, que comprou menos cartas (p. 4).
->
-> ?? c) Ana: 15 pontos, 9 cartas. Bruno: 15 pontos, 9 cartas.
-> - ( ) Ana, que chegou primeiro aos 15
-> - ( ) Bruno, que jogou o último turno
-> - (x) Os dois dividem a vitória
-> = Pontos e cartas iguais: os dois dividem a vitória (manual de 2025).
-
 ## 5. Situações especiais
 
-**Devolver fichas além do limite.** O limite de 10 conta no fim do turno. Durante o turno, você pode passar de 10; no fim, devolve o que passar, escolhendo quais. Pode devolver algumas ou todas as fichas que acabou de pegar (p. 3; manual de 2025).
-
-**Reservar do topo do baralho.** A carta vem sem que os outros a vejam, e a mesa não muda, porque nenhuma carta à mostra saiu (p. 3 e 4).
+**Mais de 10 fichas durante o turno.** O limite conta só no fim do turno. No meio dele, você pode passar de 10 (manual de 2025).
 
 > [!dica] Reservar não serve só para guardar uma carta que você quer. Também tira da mesa a carta de que o adversário precisa, e ainda dá ouro. Mas cada reserva ocupa um dos 3 lugares da mão até você comprá-la, e carta reservada não pode ser descartada.
-
-**Carta reservada só sai comprada.** Não há como descartar uma reserva. Quem enche a mão com 3 cartas caras fica sem a ação de reservar até comprar uma delas (p. 3; manual de 2025).
 
 > [!edicao] O manual de 2015 diz apenas que o jogador pega 3 fichas de cores diferentes, sem dizer o que fazer se faltar cor no estoque. O de 2025 resolve: você pode pegar 2 fichas, ou até 1. Este guia segue o de 2025, que é a versão mais nova da mesma editora.
 
 > [!edicao] O manual de 2015 diz que a rodada se completa "quando um jogador obtiver 15 pontos de prestígio" e não diz o que acontece num empate que persiste. O de 2025 acrescenta "15 ou mais ao final do turno dele", diz que o último turno é do jogador à direita do primeiro jogador e manda dividir a vitória no empate que continua. Nenhum dos dois contradiz o outro.
 
-**Nobre que você cumpre sem comprar.** A verificação é no fim de qualquer turno seu, não só nos turnos de compra. Se num turno você cumpriu o pedido de dois nobres e escolheu um, o outro pode visitar você no fim do turno seguinte, mesmo que nesse turno você só tenha pegado fichas, se ele ainda estiver na mesa (p. 3 e 4).
+**Nobre num turno sem compra.** A verificação é no fim de qualquer turno seu. O nobre que você deixou de escolher pode vir no turno seguinte, mesmo que nele você só pegue fichas (p. 3 e 4).
 
 > [!dica] Os nobres revelados na preparação são os únicos da partida (p. 2). Olhe para eles antes de escolher as primeiras cartas: se uma cor aparece em mais de um nobre, juntar bônus nela pode trazer duas visitas com o mesmo esforço.
 
@@ -421,43 +383,31 @@ Responda sem consultar. Cada resposta diz o que reler.
 - ( ) Sim, se você completar com 1 ficha de ouro
 = **Não.** Duas iguais só com pelo menos 4 na pilha antes de pegar (p. 3). Releia a etapa 2.
 
-?? 3. Como se consegue uma ficha de ouro?
-- ( ) Pegando 3 fichas diferentes, com o ouro como uma delas
-- ( ) Comprando uma carta amarela
-- (x) Reservando uma carta
-= **Reservando.** É a única forma de pegar ouro (p. 3). Releia a etapa 2.
-
-?? 4. Você tem 9 fichas e pega 2 iguais. O que faz no fim do turno?
+?? 3. Você tem 9 fichas e pega 2 iguais. O que faz no fim do turno?
 - ( ) Nada: o limite é 11
 - (x) Devolve 1 ficha à sua escolha
 - ( ) Devolve as 2 que acabou de pegar
 = **Devolve 1**, qualquer uma, e fica com 10, ouro incluído (p. 3). Releia a etapa 2.
 
-?? 5. Carta de 3 azuis, 2 vermelhas e 3 pretas; você tem 2 bônus vermelhos e 1 preto. Quantas fichas paga?
+?? 4. Carta de 3 azuis, 2 vermelhas e 3 pretas; você tem 2 bônus vermelhos e 1 preto. Quantas fichas paga?
 - ( ) 8
 - ( ) 6
 - (x) 5
 = **5**: 3 azuis e 2 pretas (manual de 2025; p. 4). Releia a etapa 2.
 
-?? 6. Um nobre pede 3 verdes, 3 azuis e 3 brancos. Você tem 3 cartas verdes, 3 azuis e 1 branca, mais 2 fichas brancas. Ele visita você?
+?? 5. Um nobre pede 3 verdes, 3 azuis e 3 brancos. Você tem 3 cartas verdes, 3 azuis e 1 branca, mais 2 fichas brancas. Ele visita você?
 - (x) Não: faltam 2 bônus brancos
 - ( ) Sim: as 2 fichas brancas completam o pedido
 - ( ) Sim, se você gastar a sua ação para chamá-lo
 = **Não.** O nobre olha só os bônus, e a visita nunca é uma ação (p. 3). Releia a etapa 3.
 
-?? 7. Bruno chega a 15 pontos. Davi joga depois e chega a 16. Quem vence?
+?? 6. Bruno chega a 15 pontos. Davi joga depois e chega a 16. Quem vence?
 - ( ) Bruno, que chegou a 15 primeiro
 - (x) Davi
 - ( ) Ninguém: a partida acabou no turno de Bruno
 = **Davi.** A rodada é completada, e vence quem tem mais pontos no fim (p. 4). Releia a etapa 3.
 
-?? 8. Empate em 15 pontos; Ana comprou 10 cartas, e Carla, 12. Quem vence?
-- (x) Ana
-- ( ) Carla
-- ( ) As duas dividem a vitória
-= **Ana**, que comprou menos cartas de desenvolvimento (p. 4). Releia a etapa 3.
-
-> [!atencao] **Critério para começar a jogar.** Acertou 7 ou 8? Monte a mesa e jogue, com a folha de consulta ao lado. Errou a 1, releia a etapa 1. Errou da 2 à 5, a etapa 2. Errou da 6 à 8, a etapa 3. Depois refaça só as perguntas que errou.
+> [!atencao] **Critério para começar a jogar.** Acertou 5 ou 6? Monte a mesa e jogue, com a folha de consulta ao lado. Errou a 1, releia a etapa 1. Errou da 2 à 4, a etapa 2. Errou a 5 ou a 6, a etapa 3. Depois refaça só as perguntas que errou.
 
 ## 7. Para consultar durante a partida
 
