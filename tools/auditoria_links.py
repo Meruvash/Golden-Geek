@@ -380,6 +380,8 @@ def verificar(sessao, r):
         return NV, f"resposta {st}", st, url
     if r["categoria"] == "cupom":
         return OK, "loja responde (cupom vale para a loja)", st, url
+    if saltos and re.search(r"(pagenotfound|no_results|404|nao-encontrad|not-found)", (final.path + "?" + final.query).lower()):
+        return ERRO, "redireciona para página de “não encontrado” (produto saiu da loja)", st, url
     if saltos and raiz(final):
         return ERRO, "redireciona para a página inicial da loja", st, url
     if saltos and eh_busca(final) and not eh_busca(origem):
