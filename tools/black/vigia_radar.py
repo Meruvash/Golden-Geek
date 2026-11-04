@@ -10,7 +10,7 @@ Vivo e recente: nada a fazer. Nada vivo: a corrente quebrou, a reserva assume. V
 o trabalho travou; o vigia cancela essas execuções e a reserva assume. O principal e a reserva usam o mesmo grupo de
 concorrência (radar-black-<robô>), então nunca rodam dois do mesmo robô ao mesmo tempo.
 
-Uso (no workflow): python3 tools/black/vigia_radar.py  → grava normal=sim|nao e educado=sim|nao em $GITHUB_OUTPUT.
+Uso (no workflow): python3 tools/black/vigia_radar.py  → grava normal=, educado= e ml=sim|nao em $GITHUB_OUTPUT.
 Sem GITHUB_TOKEN (fora do Actions) só mostra o diagnóstico.
 """
 import datetime as dt
@@ -26,7 +26,7 @@ TOKEN = os.environ.get("GITHUB_TOKEN")
 API = f"https://api.github.com/repos/{REPO}"
 H = {"Accept": "application/vnd.github+json", **({"Authorization": f"Bearer {TOKEN}"} if TOKEN else {})}
 ESTE = os.environ.get("GITHUB_RUN_ID")
-ROBOS = {"normal": ("radar-normal.yml", 90), "educado": ("radar-educado.yml", 300)}
+ROBOS = {"normal": ("radar-normal.yml", 90), "educado": ("radar-educado.yml", 300), "ml": ("radar-ml.yml", 90)}
 VIVOS = ("in_progress", "queued", "waiting", "pending", "requested")
 
 

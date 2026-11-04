@@ -706,16 +706,6 @@ def main(robo=None, acao=None):
             apis.enriquecer(ofertas, so=alvo)
             feeds.juntar(ler(HIST, {}), ofertas)
             mesclar(HOJE, {s: ofertas[s] for s in ofertas if s in alvo or any(o.get("fonte") == "feed da loja" for o in ofertas[s]["ofertas"])})
-        if robo == "normal":
-            # Mercado Livre a cada ciclo do robô normal (pedido do usuário em 04/11/2026: os jogos do Mercado Livre
-            # precisam aparecer): até 400 produtos com preço de mais de 4 h, então a lista inteira roda em ~1h30
-            import apis
-            ofertas = ler(HOJE, {})
-            antes = {s: json.dumps([o.get("api") for o in of["ofertas"]], sort_keys=True) for s, of in ofertas.items()}
-            apis.mercado_livre(ofertas, limite=400, idade_h=4)
-            mexidos = {s: of for s, of in ofertas.items() if json.dumps([o.get("api") for o in of["ofertas"]], sort_keys=True) != antes[s]}
-            if mexidos:
-                mesclar(HOJE, mexidos)
         conferir_lojas()
         import promobit
         if robo == "educado":

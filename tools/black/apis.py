@@ -157,4 +157,4 @@ def mercado_livre(ofertas, so=None, limite=None, idade_h=None):
 def enriquecer(ofertas, so=None):
     """`so`: só estes jogos (os perto do corte), para não gastar tokens com quem está longe de oferta."""
     keepa(ofertas, so)
-    mercado_livre(ofertas, so)
+    # o Mercado Livre tem o seu próprio robô desde 04/11/2026 (tools/black/robo_ml.py, workflow radar-ml.yml)

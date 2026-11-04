@@ -8,7 +8,7 @@
 # fica como rede de segurança: se a corrente quebrar, ele religa o ciclo.
 #
 # Mudar este arquivo na main liga os dois robôs na hora (gatilho push dos workflows).
-# Uso (dentro do workflow): bash tools/black/ciclo.sh <normal|educado> <intervalo_s> <ciclo_max_s> <arquivo.yml>
+# Uso (dentro do workflow): bash tools/black/ciclo.sh <normal|educado|ml> <intervalo_s> <ciclo_max_s> <arquivo.yml>
 set -u
 ROBO="$1"; INTERVALO="$2"; CICLO_MAX="$3"; WORKFLOW="$4"
 LIMITE=$((320 * 60))   # o trabalho tem 330 min; a folga cobre a publicação e o disparo do próximo
@@ -47,6 +47,7 @@ while :; do
   # (04/11/2026: um ciclo do educado foi morto pelo limite do GitHub no meio e 2 h 30 de leitura se perderam)
   prazo=$((LIMITE - SECONDS - 600)); [ $prazo -lt 300 ] && prazo=300
   if [ "$ROBO" = "normal" ]; then timeout --kill-after=60 "$prazo" python3 tools/black/robo_normal.py
+  elif [ "$ROBO" = "ml" ]; then timeout --kill-after=60 "$prazo" python3 tools/black/robo_ml.py
   else timeout --kill-after=60 "$prazo" python3 tools/black/robo_educado.py "$acao"; fi \
     || echo "o robô terminou com erro ou no prazo neste ciclo; publica o que já leu e segue"
   publicar
