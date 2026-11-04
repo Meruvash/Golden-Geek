@@ -3,7 +3,9 @@
 a moldura do site (cabeçalho, menu, rodapé, faixa de progresso, SEO) entra depois, em build_como_jogar.py.
 
 Marcação do tutorial.md (a mesma do de Clank!):
-  ## 4min. Título      seção "comece em 4 minutos" (destacada)
+  ## setup. Título     seção "Montar a mesa passo a passo" (pedido do editor em 04/11/2026): vem antes de tudo, logo
+                       depois do resumo, com uma figura do manual em cada passo; fica toda à vista
+  ## 4min. Título      seção "comece em 4 minutos" (destacada; vale qualquer "Nmin")
   ## N. Título         seção numerada; "Para consultar durante a partida" vira a folha de consulta
   ### Respostas ...    tudo até o próximo ### ou ## fica escondido num "mostrar"
   > [!tipo] ...        bloco: entender, passos, resolvido, complete, suavez, treino, atencao, edicao, dica, mais
@@ -257,7 +259,8 @@ def secao(titulo, num, linhas, foto=None):
         else:
             atual.append(l)
     partes.append(atual)
-    dobrar = num != "4min"
+    rapido_sec = bool(re.fullmatch(r"\d+min", num))
+    dobrar = not rapido_sec and num != "setup"
     corpo = []
     for p in partes:
         if p and re.match(r"### Respostas?\b", p[0]):
@@ -277,13 +280,13 @@ def secao(titulo, num, linhas, foto=None):
                            + "\n".join(pratica) + "</details>")
     if opcional:
         html_corpo = f'<details class="dobra sec-opc"><summary>Abrir esta seção</summary>{html_corpo}</details>'
-    classe = "bloco sec" + (" rapido" if num == "4min" else "") + (" ref" if titulo.lower().startswith("para consultar") else "") + (" opc" if opcional else "")
+    classe = "bloco sec" + (" rapido" if rapido_sec else "") + (" setup" if num == "setup" else "") + (" ref" if titulo.lower().startswith("para consultar") else "") + (" opc" if opcional else "")
     selo = '<span class="tag-opc">Opcional</span>' if opcional else ""
     # foto em toda seção (04/11/2026): a seção que não tem figura do manual à vista abre com uma foto do jogo
     abre = ""
     if foto and not re.search(r'<figure class="fig"', re.sub(r"<details.*?</details>", "", html_corpo, flags=re.S)) and (f := foto()):
         abre = figura_foto(f, "fig foto-sec") + "\n"
-    return (f'<section class="{classe}" id="{slugify(titulo)}"><h2><span class="num">{"" if num == "4min" else num}</span>{inline(titulo)}{selo}</h2>\n'
+    return (f'<section class="{classe}" id="{slugify(titulo)}"><h2><span class="num">{"" if rapido_sec or num == "setup" else num}</span>{inline(titulo)}{selo}</h2>\n'
             + abre + html_corpo + "\n</section>")
 
 
@@ -311,8 +314,9 @@ def pagina(meta, md):
     url = f"{SITE}/como-jogar/{meta['slug']}/"
     d = meta["data"]
     data_longa = f"{int(d[8:10])} de {MESES[int(d[5:7]) - 1]} de {d[:4]}"
-    rapido = [s for s in secoes if s[1] == "4min"]
-    resto = [s for s in secoes if s[1] != "4min"]
+    setup = [s for s in secoes if s[1] == "setup"]
+    rapido = [s for s in secoes if re.fullmatch(r"\d+min", s[1])]
+    resto = [s for s in secoes if s not in setup and s not in rapido]
     # fotos: a primeira abre a página; as outras se revezam nas seções sem figura (sem foto oficial, as figuras do manual)
     fotos = ordem_fotos(fotos_jogo(meta))
     reserva = figuras_md(md)
@@ -321,8 +325,9 @@ def pagina(meta, md):
     contador = iter(range(10 ** 6))
     def prox():
         return roda[next(contador) % len(roda)] if roda else None
-    indice = "".join(f'<li><a href="#{slugify(t)}">{e(t)}</a>{" <small>(opcional)</small>" if any(t.startswith(o) for o in OPCIONAIS) else ""}</li>' for t, _, _ in rapido + resto)
+    indice = "".join(f'<li><a href="#{slugify(t)}">{e(t)}</a>{" <small>(opcional)</small>" if any(t.startswith(o) for o in OPCIONAIS) else ""}</li>' for t, _, _ in setup + rapido + resto)
     og = (topo_f["abs"] or f"{SITE}/como-jogar/{meta['slug']}/{topo_f['src']}") if topo_f else f"{SITE}/marca/banner-1200.webp"
+    setup_html = "\n".join(secao(t, n, c, prox) for t, n, c in setup)
     rapido_secs = [secao(t, n, c, prox) for t, n, c in rapido]
     secs_html = "\n".join(secao(t, n, c, prox) for t, n, c in resto)
     # no "comece em 4 minutos", "etapa 4" vira link para a seção da etapa
@@ -378,6 +383,7 @@ def pagina(meta, md):
     <p class="legenda-f"><b>À vista, só o essencial para jogar.</b> O que abre com <span class="mais-i">+</span> é explicação, exemplo, exercício ou regra de caso especial: abra quando precisar.</p>
   </section>
 
+{setup_html}
 {rapido_html}
   <nav class="bloco indice" aria-label="Neste guia"><h2>Neste guia</h2><ol>{indice}</ol></nav>
 

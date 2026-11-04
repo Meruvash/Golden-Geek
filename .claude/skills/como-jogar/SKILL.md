@@ -26,6 +26,8 @@ Linha editorial de ensino de regras, separada das resenhas. Voz neutra e exata d
 - Manual e PDFs ficam no scratchpad, nunca no repositório.
 - Nunca explicar o método de ensino ao leitor (pedido do editor em 31/10/2026).
 
+- Montar a mesa passo a passo (pedido do editor em 04/11/2026): todo tutorial abre com `## setup. Montar a mesa passo a passo`, antes do "Comece a jogar", seguindo a página de preparação do manual, com uma figura em cada passo (PADRAO_EDITORIAL.md, "Montar a mesa passo a passo"). Os auditores conferem cada passo e cada figura dessa seção.
+
 - Essencial à vista, o resto a um toque: regra de caso especial vai em `> [!mais] **Título.** texto`, nunca no passo a passo (PADRAO_EDITORIAL.md, "Como Jogar: essencial à vista").
 
 ## Rotina diária: no mínimo 5 tutoriais por dia (pedido do editor em 04/11/2026; antes eram 8)

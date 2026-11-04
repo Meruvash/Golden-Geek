@@ -166,3 +166,6 @@ td .ico{margin-right:6px}
 .foto-topo.caixa img,.foto-sec.caixa img{object-fit:contain}
 .foto-sec img{aspect-ratio:16/9;object-fit:cover}
 @media (max-width:600px){.foto-topo{margin:-16px -16px 4px}.foto-topo figcaption{padding:6px 16px 0}}
+.sec.setup{border-top:4px solid var(--ok)}
+.sec.setup>h2::before{content:"Comece por aqui";display:block;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ok);margin-bottom:4px}
+.sec.setup>h2{display:block}
