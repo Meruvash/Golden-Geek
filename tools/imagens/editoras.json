@@ -2088,5 +2088,26 @@
    ],
    "verificado_em": "2026-11-04"
   }
+ },
+ "greaterthangames.com": {
+  "nome": "Greater Than Games",
+  "apelidos": [
+   "Greater Than Games"
+  ],
+  "site": "https://www.greaterthangames.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.greaterthangames.com/sitemap.xml"
+   ],
+   "verificado_em": "2026-11-04"
+  }
  }
 }
