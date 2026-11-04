@@ -94,14 +94,26 @@ def _ml_token():
     return r.json().get("access_token") if r.status_code == 200 else None
 
 
+def _ml_reputacao(h, vendedor, cache):
+    if vendedor not in cache:
+        u = requests.get(f"{ML}/users/{vendedor}", headers=h, timeout=30)
+        time.sleep(0.4)
+        d = u.json() if u.status_code == 200 else {}
+        cache[vendedor] = ((d.get("seller_reputation") or {}).get("power_seller_status"), d.get("nickname"))
+    return cache[vendedor]
+
+
 def mercado_livre(ofertas, so=None):
+    """Para cada produto de catálogo do Mercado Livre que o Compara Jogos liga a um jogo, lê os anúncios do produto
+    (/products/ID/items: o campo buy_box_winner deixou de vir em 2026) e fica com o mais barato, novo, de loja oficial
+    ou MercadoLíder. É esse preço que entra no radar; anúncio de vendedor comum não entra (regra do usuário)."""
     token = _ml_token()
     if not token:
         print("-- Mercado Livre: sem ML_CLIENT_ID/ML_CLIENT_SECRET (ou chave recusada), Mercado Livre fica de fora")
         return
     h = {**UA, "Authorization": f"Bearer {token}"}
-    reputacao = {}
-    lidos = ok = 0
+    reputacao, lidos, ok = {}, 0, 0
+    cache_prod = {}
     for s, of in ofertas.items():
         if so is not None and s not in so:
             continue
@@ -110,28 +122,30 @@ def mercado_livre(ofertas, so=None):
             if not m:
                 continue
             o.pop("api", None)
-            r = requests.get(f"{ML}/products/{m.group(1)}", headers=h, timeout=30)
-            time.sleep(0.5)
-            if r.status_code != 200:
+            pid = m.group(1)
+            if pid not in cache_prod:
+                r = requests.get(f"{ML}/products/{pid}/items", headers=h, timeout=30)
+                time.sleep(0.4)
+                cache_prod[pid] = (r.json().get("results") or []) if r.status_code == 200 else None
+            itens = cache_prod[pid]
+            if itens is None:
                 continue
             lidos += 1
-            bb = r.json().get("buy_box_winner") or {}
-            if not bb.get("price") or (bb.get("condition") and bb["condition"] != "new"):
+            melhor = None
+            for it in sorted((x for x in itens if x.get("price") and x.get("condition", "new") == "new"), key=lambda x: x["price"]):
+                oficial = bool(it.get("official_store_id"))
+                nivel, apelido = _ml_reputacao(h, it.get("seller_id"), reputacao) if it.get("seller_id") else (None, None)
+                if oficial or nivel in LIDER:
+                    melhor = (it, oficial, nivel, apelido)
+                    break
+            if not melhor:
                 continue
-            vend = bb.get("seller_id")
-            if vend and vend not in reputacao:
-                u = requests.get(f"{ML}/users/{vend}", headers=h, timeout=30)
-                time.sleep(0.5)
-                d = u.json() if u.status_code == 200 else {}
-                reputacao[vend] = ((d.get("seller_reputation") or {}).get("power_seller_status"), d.get("nickname"))
-            nivel, apelido = reputacao.get(vend, (None, None))
-            oficial = bool(bb.get("official_store_id"))
-            boa = oficial or nivel in LIDER
-            o["api"] = {"fonte": "API do Mercado Livre", "preco": float(bb["price"]), "vendedor": apelido or str(vend),
-                        "vendedor_ok": boa, "nivel": "loja oficial" if oficial else (f"MercadoLíder {nivel}" if nivel in LIDER else (nivel or "sem medalha")),
-                        "hora": agora()}
-            ok += boa
-    print(f"ok Mercado Livre: {lidos} produtos lidos, {ok} com loja oficial ou MercadoLíder")
+            it, oficial, nivel, apelido = melhor
+            o["api"] = {"fonte": "API do Mercado Livre", "preco": float(it["price"]), "vendedor": apelido or str(it.get("seller_id")),
+                        "vendedor_ok": True, "nivel": "loja oficial" if oficial else f"MercadoLíder {nivel}",
+                        "anuncio": it.get("item_id") or it.get("id"), "hora": agora()}
+            ok += 1
+    print(f"ok Mercado Livre: {lidos} produtos lidos, {ok} com anúncio de loja oficial ou MercadoLíder")
 
 
 def enriquecer(ofertas, so=None):

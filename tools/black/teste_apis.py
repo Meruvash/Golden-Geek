@@ -154,6 +154,38 @@ def mercado_livre_alternativas():
         time.sleep(0.5)
 
 
+def simular_radar():
+    """Roda a leitura nova do Mercado Livre (apis.mercado_livre) em todas as ofertas, numa cópia dos dados, e conta
+    quantas ofertas do Mercado Livre entrariam no radar, no Quase Black e em Outras promoções. Nada é gravado no site."""
+    print("== Simulação do radar com a leitura nova do Mercado Livre")
+    if not os.environ.get("ML_CLIENT_ID"):
+        return
+    import tempfile
+    import shutil
+    import radar
+    tmp = Path(tempfile.mkdtemp())
+    shutil.copy(radar.HOJE, tmp / "ofertas.json")
+    ofertas = json.loads((tmp / "ofertas.json").read_text(encoding="utf-8"))
+    antes = radar.calcular()
+    t0 = time.time()
+    apis.mercado_livre(ofertas)
+    print(f"   leitura levou {time.time() - t0:.0f} s")
+    (tmp / "ofertas.json").write_text(json.dumps(ofertas, ensure_ascii=False), encoding="utf-8")
+    radar.HOJE = tmp / "ofertas.json"
+    depois = radar.calcular()
+    def ml(lista):
+        return [x for x in lista if x.get("fonte_preco") == "API do Mercado Livre"]
+    nomes = ("radar (20% ou mais)", "armadilhas", "Quase Black (15 a 19%)", "Outras promoções")
+    for n, a_, d_ in zip(nomes, antes, depois):
+        print(f"   {n}: antes {len(a_)}, depois {len(d_)}; do Mercado Livre agora: {len(ml(d_))}")
+    jogos_antes = {x["slug"] for x in antes[0]} | {x["slug"] for x in antes[3]}
+    novos = [x for x in ml(depois[0]) + ml(depois[3]) if x["slug"] not in jogos_antes]
+    print(f"   jogos que entram no radar só por causa do Mercado Livre: {len({x['slug'] for x in novos})}")
+    for x in sorted(novos, key=lambda x: -x["desc"])[:15]:
+        print(f"     −{x['desc'] * 100:.0f}% {x['nome']}: R$ {x['por']:.2f} ({x.get('vendedor')}), média real R$ {x['ref']:.2f}")
+
+
 if __name__ == "__main__":
     mercado_livre()
     mercado_livre_alternativas()
+    simular_radar()
