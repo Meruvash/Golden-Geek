@@ -120,6 +120,17 @@
  "asmodee dixit signature viloes expansao jogo de tabuleiro idade 8 3 a 12 jogadores 30 minutos por partida": null,
  "asmodee dobble dinossauros jogo de cartas 2 a 8 jogadores a partir de 6 anos partidas de ate 15 min": null,
  "asmodee duna imperium linhagens expansao jogo de tabuleiro idade 14 1 a 4 jogadores 60 a 120 minutos por partida": null,
+ "asmodee galapagos concept 4 a 12 jogadores idade 10": {
+  "bgg": 6.74664,
+  "editora": "Galápagos Jogos",
+  "imagem": "https://uploads.comparajogos.com.br/img/17af102ab697d1e6554498e82c2017613978764c.png",
+  "menor": 226.73,
+  "nome": "Concept",
+  "ref": 236.55,
+  "ref_dias": 32,
+  "slug": "concept",
+  "tipo": "game"
+ },
  "asmodee imagine jogo de cartas casual 3 a 8 jogadores idade 10": null,
  "asmodee mass effect the board game priority hagalaz jogo de tabuleiro idade 14 1 4 jogadores partidas de ate 90 min": null,
  "astro knights orion board game": null,
@@ -1315,6 +1326,7 @@
   "slug": "race-to-pattern-palace",
   "tipo": "game"
  },
+ "ratjack bunny business expansao jogo de cartas across the board": null,
  "renegade game studios axis allies norte da africa 2 a 4 jogadores com 12 anos ou mais 3 horas de jogo novo cenario para aliados 250 m": null,
  "renegade game studios the vale of eternity artifacts expansion drafting collection card game tame hunt monsters creatures age 14 2": null,
  "resist": {
