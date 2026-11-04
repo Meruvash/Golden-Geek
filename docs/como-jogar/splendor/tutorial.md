@@ -8,13 +8,13 @@
 
 ### A ideia do jogo
 
-Você é um comerciante de joias. Na sua vez, pega **fichas** de pedras preciosas ou usa as que juntou para comprar **cartas de desenvolvimento**. Cada carta comprada dá um **bônus** permanente, um desconto nas compras seguintes, e algumas valem pontos de prestígio; com bônus suficientes, os **nobres** visitam você e dão mais pontos. Quem chega a 15 pontos encerra a partida.
+Você é um comerciante de joias. Na sua vez, pega **fichas** de pedras preciosas ou usa as que juntou para comprar **cartas de desenvolvimento**. Cada carta comprada dá um **bônus** permanente, um desconto nas compras seguintes, e algumas valem pontos de prestígio; com bônus suficientes, os **nobres** visitam você no fim do seu turno e dão mais pontos. Quem chega a 15 pontos encerra a partida.
 
 ### Monte a mesa
 
-1. Separe as cartas de desenvolvimento pelo verso em três baralhos, nível 1, 2 e 3. Embaralhe cada um e empilhe os três virados para baixo, numa coluna: nível 1 embaixo, nível 3 em cima.
+1. Separe as cartas de desenvolvimento pelo verso em três baralhos, nível 1, 2 e 3. Embaralhe cada um e ponha os três virados para baixo, numa coluna: nível 1 na fileira de baixo, nível 3 na de cima, com os nobres acima de todas, como na figura da etapa 1 (p. 2; manual de 2025).
 2. Ao lado de cada baralho, revele 4 cartas em fileira. São 12 cartas à mostra.
-3. Embaralhe os 10 cartões de nobres e revele o número de jogadores mais um: 3 com 2 jogadores, 4 com 3, 5 com 4. Os outros voltam para a caixa. Os nobres só contam a partir da etapa 3.
+3. Embaralhe os 10 cartões de nobres e revele o número de jogadores mais um: 3 com 2 jogadores, 4 com 3, 5 com 4. Os outros voltam para a caixa (o guia explica os nobres na etapa 3).
 4. Separe as fichas por cor em 6 pilhas ao alcance de todos: é o estoque. Fichas de cada pedra: 7 com 4 jogadores, 5 com 3, 4 com 2; as que sobram voltam à caixa. As 5 de ouro ficam sempre.
 5. O jogador mais novo começa; a vez segue no sentido horário. Na caixa de 2025, ele pega o marcador de primeiro jogador.
 
@@ -26,12 +26,12 @@ No seu turno, você faz **exatamente uma** destas quatro ações (p. 3):
 |---|---|
 | 3 fichas diferentes | Pega 1 ficha de 3 pedras de cores diferentes |
 | 2 fichas iguais | Pega 2 fichas da mesma pedra, só se a pilha tiver pelo menos 4 antes de você pegar |
-| Reservar | Pega 1 carta à mostra (ou a do topo de um baralho) para a sua mão e ganha 1 ficha de ouro |
+| Reservar | Pega 1 carta à mostra (ou a do topo de um baralho) para a sua mão e ganha 1 ficha de ouro (máx. 3 reservas; ouro se houver) |
 | Comprar | Paga o custo de uma carta à mostra ou reservada e a põe à sua frente |
 
-1. **Escolha uma ação.** Sem fichas e sem bônus, você ainda não paga nenhuma carta: no primeiro turno, a escolha é entre pegar fichas e reservar.
+1. **Escolha uma ação.** Como toda carta tem custo e você começa sem fichas e sem bônus, no primeiro turno a escolha é entre pegar fichas e reservar (p. 3).
 2. **Ouro só vem da reserva.** As duas ações de pegar fichas nunca dão ouro (p. 3).
-3. **Carta que sai da mesa é reposta na hora** pela do topo do mesmo baralho: ficam sempre 4 de cada nível à mostra (p. 4).
+3. **Carta que sai da mesa é reposta na hora**, logo que é comprada ou reservada, pela do topo do mesmo baralho: ficam sempre 4 de cada nível à mostra (p. 4).
 
 > [!resolvido] **Exemplo resolvido.** Partida de 2 jogadores: 4 fichas de cada pedra no estoque. Ana pega 1 branca, 1 azul e 1 verde. Essas pilhas ficam com 3; a vermelha e a preta, com 4.
 
@@ -59,11 +59,11 @@ No seu turno, você faz **exatamente uma** destas quatro ações (p. 3):
 
 ### Ainda não precisa saber
 
-Como comprar, como o bônus dá desconto, como usar o ouro e o limite de 10 fichas: etapa 2. Nobres, fim da partida e desempate: etapa 3. Abra a etapa quando chegar a hora.
+Como comprar, como o bônus dá desconto, como usar o ouro e o limite de 10 fichas: etapa 2. Como os nobres visitam: etapa 3. Abra a etapa quando chegar a hora.
 
 ### Como a partida acaba
 
-Quando alguém chega a 15 pontos de prestígio, a rodada é completada para que todos tenham jogado o mesmo número de turnos. Vence quem tiver mais pontos, somando cartas e nobres; no empate, quem comprou menos cartas de desenvolvimento (p. 4).
+Uma rodada é cada jogador jogar um turno. Quando alguém chega a 15 pontos de prestígio no fim do turno, a rodada é completada para que todos tenham jogado o mesmo número de turnos. Vence quem tiver mais pontos, somando cartas e nobres; no empate, quem comprou menos cartas de desenvolvimento (p. 4).
 
 **Prefere ver?** Uma partida resumida em vídeo. Ele complementa este guia; em caso de diferença, vale o manual.
 
@@ -92,7 +92,7 @@ Três etapas, cada uma uma parte real da partida: montar a mesa, fazer as quatro
 >
 > **As fichas** são 40: 7 de cada pedra preciosa e 5 de ouro, amarelas. O ouro é curinga: vale como qualquer pedra na hora de pagar (p. 2 e 3).
 >
-> **As cartas de desenvolvimento** são 90, em três níveis: 40 de nível 1, 30 de nível 2 e 20 de nível 3 (p. 2). O nível aparece no verso. Na frente: os pontos de prestígio que ela vale, no canto de cima à esquerda (sem número, não vale ponto); o bônus, a pedra no canto de cima à direita; e o custo, as fichas pedidas no canto de baixo à esquerda. A cor do bônus é a cor da carta (p. 3 e manual de 2025).
+> **As cartas de desenvolvimento** são 90, em três níveis: 40 de nível 1, 30 de nível 2 e 20 de nível 3 (p. 2). O nível aparece no verso. Na frente: os pontos de prestígio que ela vale, no canto de cima à esquerda (sem número, não vale ponto); o bônus, a pedra no canto de cima à direita; e o custo, as fichas pedidas no canto de baixo à esquerda (p. 3). A cor do bônus é a cor da carta (manual de 2025).
 >
 > **Os cartões de nobres** são 10. Cada um vale 3 pontos de prestígio e pede uma combinação de bônus, desenhada no lado esquerdo do cartão (p. 3).
 
@@ -106,11 +106,11 @@ Três etapas, cada uma uma parte real da partida: montar a mesa, fazer as quatro
 
 !fig[A mesa montada para 4 jogadores: 5 nobres no alto, os três baralhos à esquerda com 4 cartas reveladas ao lado de cada um e as seis pilhas de fichas embaixo. Ilustração: manual Galápagos (p. 2)](figuras/preparacao.webp)
 
-> [!edicao] Na caixa de 2025, quem começa pega o **marcador de primeiro jogador**, que mostra quando a rodada termina (manual de 2025). A de 2015 não tem marcador: lembre quem começou.
+> [!edicao] Na caixa de 2025, quem começa pega o **marcador de primeiro jogador**, que ajuda a saber quem joga o último turno (manual de 2025). A de 2015 não tem marcador: lembre quem começou.
 
 !fig[Uma carta de desenvolvimento da edição de 2025: vale 1 ponto de prestígio (canto de cima à esquerda), dá bônus vermelho (canto de cima à direita) e custa 3 fichas azuis, 2 vermelhas e 3 pretas (canto de baixo à esquerda). Ilustração: manual Galápagos de 2025](figuras/anatomia.webp)
 
-!fig[Outra carta, da caixa de 2015: vale 2 pontos, dá bônus vermelho e custa 1 ficha branca, 4 azuis e 2 verdes. Ilustração: manual Galápagos (p. 3)](figuras/compra.webp)
+!fig[Outra carta, da caixa de 2015: vale 2 pontos, dá bônus vermelho (a pedra no canto de cima à direita) e custa 1 ficha branca, 4 azuis e 2 verdes. Ilustração: manual Galápagos (p. 3)](figuras/compra.webp)
 
 > [!resolvido] **Exemplo resolvido.** Partida de 2 jogadores: você devolve à caixa 3 fichas de cada pedra preciosa e fica com 4 de cada, mais as 5 de ouro. Revela 3 nobres e devolve os outros 7. Revela 4 cartas de cada nível.
 
@@ -140,7 +140,7 @@ Três etapas, cada uma uma parte real da partida: montar a mesa, fazer as quatro
 
 > [!passos] **Passo a passo: as quatro ações** (p. 3). No seu turno, faça exatamente uma.
 >
-> 1. **Pegar 3 fichas de pedras preciosas de cores diferentes.** Uma ficha de cada uma de três cores, nunca ouro.
+> 1. **Pegar 3 fichas de pedras preciosas de cores diferentes.** Exatamente 1 ficha de cada uma de três cores, nunca ouro (se faltarem cores no estoque, veja abaixo).
 > 2. **Pegar 2 fichas de pedras preciosas da mesma cor.** Só se houver pelo menos 4 fichas daquela cor no estoque antes de você pegar. Nunca ouro.
 > 3. **Reservar 1 carta de desenvolvimento e pegar 1 ficha de ouro.** Pegue uma carta à mostra ou, sem mostrá-la aos outros, a do topo de um dos três baralhos. Ela vai para a sua mão. Depois pegue 1 ficha de ouro. Você não pode ter mais de 3 cartas reservadas, e carta reservada não pode ser descartada: só sai da mão comprada.
 > 4. **Comprar 1 carta de desenvolvimento.** Uma das cartas à mostra ou uma das suas reservadas. Pague o custo menos os seus bônus (veja abaixo). As fichas gastas, ouro incluído, voltam para o estoque. Ponha a carta à sua frente, com pontos e bônus à vista; o manual sugere colunas por cor, em cascata.
@@ -152,11 +152,11 @@ Três etapas, cada uma uma parte real da partida: montar a mesa, fazer as quatro
 > 3. Faltou ficha de alguma cor? Cada ficha de ouro substitui uma ficha de qualquer cor.
 > 4. Devolva ao estoque todas as fichas usadas, inclusive o ouro.
 
-> [!passos] **Passo a passo: o fim do seu turno** (p. 3 e 4)
+> [!passos] **Passo a passo: reposição e fim do seu turno** (p. 3 e 4)
 >
-> 1. **Reponha a mesa.** Se você comprou ou reservou uma carta à mostra, ponha no lugar a carta do topo do baralho do mesmo nível. Devem ficar sempre 4 cartas de cada nível à mostra.
-> 2. **Conte as fichas.** Se tiver mais de 10, ouro incluído, devolva fichas ao estoque até ficar com 10. Você escolhe quais devolve, e pode devolver as que acabou de pegar.
-> 3. **Veja os nobres.** Esse passo é a etapa 3.
+> 1. **Reponha a mesa na hora.** Assim que uma carta à mostra é comprada ou reservada, ponha no lugar a carta do topo do baralho do mesmo nível. Devem ficar sempre 4 cartas de cada nível à mostra.
+> 2. **No fim do turno, conte as fichas.** Se tiver mais de 10, ouro incluído, devolva fichas ao estoque até ficar com 10. Você escolhe quais devolve, e pode devolver as que acabou de pegar.
+> 3. **No fim do turno, veja os nobres.** Esse passo é a etapa 3.
 
 > [!atencao] O bônus é a carta, não a ficha. Ele não sai da sua frente quando você compra: desconta em toda compra, turno após turno, e nunca é devolvido (p. 4).
 
@@ -234,7 +234,7 @@ Três etapas, cada uma uma parte real da partida: montar a mesa, fazer as quatro
 
 ## 4. Etapa 3: nobres, fim da partida e pontos
 
-> [!entender] **Para entender.** Os nobres premiam quem junta bônus de certas cores. Ninguém gasta ação com eles: no fim de cada turno, se as cartas à sua frente cumprem o pedido de um cartão, o nobre vem sozinho (p. 3 e 4). Cada nobre é de quem chegar primeiro.
+> [!entender] **Para entender.** Os nobres premiam quem junta bônus de certas cores. Cada cartão mostra o seu próprio pedido, que muda de um nobre para outro (p. 4). Ninguém gasta ação com eles: no fim do seu turno, se as cartas à sua frente cumprem o pedido de um cartão, o nobre vem sozinho (p. 3 e 4). Cada nobre é de quem chegar primeiro.
 >
 > A partida não tem número fixo de rodadas. Quando alguém chega a 15 pontos, a rodada é completada para que todos joguem o mesmo número de turnos (p. 4): quem joga depois ainda pode passar à frente.
 
@@ -259,7 +259,7 @@ Três etapas, cada uma uma parte real da partida: montar a mesa, fazer as quatro
 
 > [!mais] **Cartas reservadas no fim.** As cartas que ficaram na mão não valem pontos nem tiram pontos (manual de 2025).
 
-> [!atencao] Não há trilha de pontos: eles estão nas cartas e nos nobres à frente de cada um, sempre à vista (p. 4; manual de 2025). Confira as somas, para o 15 não passar despercebido.
+> [!atencao] Os pontos ficam nas cartas e nos nobres, sempre à vista (p. 4; manual de 2025). Confira as somas, para o 15 não passar despercebido.
 
 > [!resolvido] **Exemplo resolvido.** Partida de 4 jogadores, na ordem Ana (que começou), Bruno, Carla e Davi. Bruno tem 3 cartas verdes, 3 azuis e 2 brancas, que somam 12 pontos; um nobre à mostra pede 3 verdes, 3 azuis e 3 brancos.
 >
@@ -268,7 +268,7 @@ Três etapas, cada uma uma parte real da partida: montar a mesa, fazer as quatro
 > 3. Carla e Davi ainda jogam; Ana não, porque a rodada termina em Davi, à direita dela.
 > 4. Davi termina com 13 pontos de cartas e um nobre: 16. Davi vence.
 
-> [!complete] **Complete.** Mesma partida, mas Davi termina com 15 pontos, empatado com Bruno. Bruno comprou 11 cartas de desenvolvimento; Davi, 9.
+> [!complete] **Complete.** Mesma partida, mas Davi termina com 15 pontos, empatado com Bruno. Bruno comprou 9 cartas de desenvolvimento; Davi, 8.
 >
 > ?? Quem vence?
 > - ( ) Bruno, que chegou a 15 primeiro
@@ -312,7 +312,7 @@ Responda sem consultar. Cada resposta diz o que reler.
 
 ?? 2. A pilha preta tem 3 fichas. Você pode pegar 2 pretas?
 - ( ) Sim, deixando 1 na pilha
-- (x) Não: são precisas 4 fichas na pilha antes de pegar
+- (x) Não: são necessárias 4 fichas na pilha antes de pegar
 - ( ) Sim, se você completar com 1 ficha de ouro
 = **Não.** Duas iguais só com pelo menos 4 na pilha antes de pegar (p. 3). Releia a etapa 2.
 
@@ -326,7 +326,7 @@ Responda sem consultar. Cada resposta diz o que reler.
 - ( ) Nada: nobre só vem no turno em que você compra uma carta
 - (x) Ele visita você, sem custar ação
 - ( ) Você pode chamá-lo, mas gasta a ação do próximo turno
-= **Ele visita você.** A verificação é no fim de qualquer turno, e a visita não é uma ação (p. 3 e 4). Releia a etapa 3.
+= **Ele visita você.** A verificação é no fim de cada turno seu, compre ou não, e a visita não é uma ação (p. 3 e 4). Releia a etapa 3.
 
 ?? 5. Bruno chega a 15 pontos. Davi joga depois e chega a 16. Quem vence?
 - ( ) Bruno, que chegou a 15 primeiro
@@ -346,7 +346,7 @@ Responda sem consultar. Cada resposta diz o que reler.
 3. Reservar 1 carta (à mostra ou topo de baralho, escondida) e pegar 1 ouro, se houver. Máximo 3 na mão; não se descarta.
 4. Comprar 1 carta à mostra ou reservada: custo menos bônus; o resto em fichas; ouro substitui qualquer cor; fichas gastas voltam ao estoque.
 
-**Fim do turno:** repor a carta que saiu da mesa (mesmo nível; baralho vazio, espaço vazio). Mais de 10 fichas: devolva até 10, à sua escolha. Nobre: se os bônus cumprem o pedido, ele vem (3 pontos), um por turno, sem ação, sem recusa.
+**Na hora:** carta à mostra comprada ou reservada é reposta pelo mesmo nível (baralho vazio, espaço vazio). **Fim do turno:** mais de 10 fichas: devolva até 10, à sua escolha. Nobre: se os bônus cumprem o pedido, ele vem (3 pontos), um por turno, sem ação, sem recusa.
 
 **Fim:** alguém com 15 ou mais no fim do turno: completa a rodada (último a jogar é quem está à direita do primeiro). Pontos: cartas e nobres. Empate: menos cartas compradas vence; persistindo, vitória dividida.
 

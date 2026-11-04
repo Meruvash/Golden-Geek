@@ -87,3 +87,13 @@ Critério: uma pessoa que nunca jogou lê só o tutorial, monta uma partida de 2
 ## 8. Ligação com a resenha
 
 Não há resenha de Splendor no site; há de *Splendor Duel*, que é outro jogo, com regras diferentes. Proposta, nada implementado: se a resenha de Duel ganhar um link para cá, que diga "o Splendor original" para não sugerir que as regras valem para o Duel.
+
+## Auditoria independente (04/11/2026)
+
+Duas auditorias independentes: regras (aprovada com correções, nenhum erro de regra) e partida simulada (jogável com ajustes). Correções aplicadas:
+
+- **Figuras:** `compra.webp` recortada mais larga, com a pedra do bônus vermelho visível, e a legenda aponta onde ela está; `anatomia.webp` recortada com a caixa de custo inteira, sem as etiquetas de texto; `preparacao.webp` sem a mancha da borda esquerda.
+- **Contas do fim de partida:** Bruno tem 3 + 3 + 2 + 1 = 9 cartas; o Complete do desempate agora diz Bruno 9 e Davi 8 (antes, 11 e 9). Davi continua vencendo pelo menor número de cartas (p. 4).
+- **Redação:** "Os pontos ficam nas cartas e nos nobres, sempre à vista (p. 4; manual de 2025)"; marcador de primeiro jogador "ajuda a saber quem joga o último turno (manual de 2025)"; "a cor do bônus é a cor da carta" citada só no manual de 2025; "sem número, não vale ponto" com (p. 3); primeiro turno dito como consequência ("como toda carta tem custo", p. 3); "são necessárias 4 fichas".
+- **Partida simulada:** frase de que cada nobre tem o seu pedido, que muda de um para outro (p. 4); "no fim do seu turno" para a visita na ideia do jogo, na etapa 3 e na avaliação; reposição da mesa "na hora", em que a carta é comprada ou reservada, no Comece, na etapa 2 e na folha de consulta (p. 4; manual de 2025); "(o guia explica os nobres na etapa 3)"; "Ainda não precisa saber" sem fim da partida e desempate; "exatamente 1 ficha de cada uma de três cores", com a exceção de 2025; "Uma rodada é cada jogador jogar um turno"; tabela com "(máx. 3 reservas; ouro se houver)"; baralhos com o nível 1 na fileira de baixo e os nobres acima, como na figura da p. 2 (2025: nobres "em uma fileira acima das cartas").
+- **Portões refeitos:** `checar_comece.py` aprovado; `vicios.py` com 0 aviso nos três arquivos; zero travessão. Tutorial: 4.920 palavras (`wc -w`). `publicar` continua `false`.
