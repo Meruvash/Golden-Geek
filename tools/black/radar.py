@@ -358,7 +358,70 @@ def outro_produto(o, h):
 COMUNIDADE_HORAS = 72  # promoção postada em canal costuma acabar rápido: só as dos últimos 3 dias entram na conta geral
 
 
-def achados_comunidade(hist, hoje):
+# Link direto da loja nos achados da comunidade (pedido do usuário em 04/11/2026): post do canal do Compara Jogos aponta
+# para a página do jogo no Compara Jogos, e outros canais usam encurtadores (amzn.to, meli.la...) que podem levar
+# afiliado de quem postou. Trocamos pelo link da própria loja que o Compara Jogos já lista para o jogo (sem abrir o
+# encurtador) e tiramos parâmetros de rastreio e de afiliado.
+INDIRETO = re.compile(r"(comparajogos\.com\.br|amzn\.to|a\.co/|link\.amazon|amzlinks|meli\.la|bit\.ly|tinyurl|cutt\.ly|"
+                      r"encurtador|t\.me/|s\.click|shope\.ee|tidd\.ly|lmd\.ink|onelink)", re.I)
+RASTREIO = re.compile(r"^(utm_.*|tag|ref|ref_|linkcode|ascsubtag|camp.*|creative.*|afil.*|aff.*|partner.*|matt_.*|"
+                      r"source|fbclid|gclid|psc|smid|th|sr|qid|keywords|pd_rd_.*|pf_rd_.*|content-id|spm|clickid)$", re.I)
+
+
+def _sem_rastreio(url):
+    from urllib.parse import urlsplit, urlunsplit, parse_qsl, urlencode
+    try:
+        u = urlsplit(url)
+    except ValueError:
+        return url
+    q = [(k, v) for k, v in parse_qsl(u.query, keep_blank_values=True) if not RASTREIO.match(k)]
+    m = re.search(r"amazon\.com\.br/(?:[^/]+/)?(?:dp|gp/product)/([A-Z0-9]{10})", url)
+    if m:  # Amazon: só o produto
+        return f"https://www.amazon.com.br/dp/{m.group(1)}"
+    return urlunsplit((u.scheme, u.netloc, u.path, urlencode(q), ""))
+
+
+def _norm_loja(t):
+    return re.sub(r"[^a-z0-9]", "", unicodedata.normalize("NFKD", str(t or "")).encode("ascii", "ignore").decode().lower())
+
+
+_DOMINIOS = {}
+
+
+def _dominios_lojas(hoje_d):
+    """loja → endereço do site, a partir de todas as ofertas do Compara Jogos (para o último recurso do link)."""
+    if not _DOMINIOS and hoje_d:
+        from urllib.parse import urlsplit
+        for of in hoje_d.values():
+            for o in of.get("ofertas", []):
+                u = o.get("url") or ""
+                if u.startswith("http") and not INDIRETO.search(u):
+                    _DOMINIOS.setdefault(_norm_loja(o.get("loja")), f"{urlsplit(u).scheme}://{urlsplit(u).netloc}/")
+    return _DOMINIOS
+
+
+def link_direto(url, loja, ofertas_jogo, nome=None, hoje_d=None):
+    """Link da loja para o achado: o da própria loja na lista do Compara Jogos quando o post aponta para página
+    intermediária; sempre sem rastreio. Sem link da loja na lista, fica o do post."""
+    if url and not INDIRETO.search(url):
+        return _sem_rastreio(url)
+    alvo = _norm_loja(loja)
+    for o in ofertas_jogo or []:
+        u = o.get("url") or ""
+        if u and not INDIRETO.search(u) and alvo and (_norm_loja(o.get("loja")) == alvo or alvo in _norm_loja(o.get("loja"))
+                                                      or _norm_loja(o.get("loja")) in alvo):
+            return _sem_rastreio(u)
+    # o jogo não está mais na lista dessa loja no Compara Jogos: abre o site da loja (Amazon e Mercado Livre na busca
+    # pelo nome do jogo), nunca a página intermediária
+    from urllib.parse import quote_plus
+    if "amazon" in alvo and nome:
+        return f"https://www.amazon.com.br/s?k={quote_plus(nome)}"
+    if "mercadolivre" in alvo and nome:
+        return f"https://lista.mercadolivre.com.br/{quote_plus(nome)}"
+    return _dominios_lojas(hoje_d).get(alvo) or url
+
+
+def achados_comunidade(hist, hoje, hoje_d=None):
     """Promoções postadas nos canais públicos (Telegram) e no Promobit, no mesmo formato das ofertas do radar.
     Só entram com preço de referência confiável (nossa base ou 14+ dias de histórico no Compara Jogos), jogo com
     nota BGG 7+ ou premiado, preço não suspeito e postagem das últimas 72 horas. O vendedor não é conferido."""
@@ -400,7 +463,8 @@ def achados_comunidade(hist, hoje):
             continue
         loja = v.get("loja") or "loja não informada"
         saida.append({"slug": slug, "nome": nome, "tipo": tipo or "game", "editora": editora, "bgg": bgg, "imagem": img,
-                      "loja": loja, "url": v.get("link_loja") or v["link"], "por": por, "de": v.get("preco_antes"),
+                      "loja": loja, "url": link_direto(v.get("link_loja") or v["link"], loja, ((hoje_d or {}).get(slug) or {}).get("ofertas"), nome, hoje_d),
+                      "por": por, "de": v.get("preco_antes"),
                       "ref": ref, "desc": (ref - por) / ref, "menor": menor, "recorde": por <= menor, "dias": dias,
                       "fonte_preco": f'achado da comunidade ({(v.get("fonte") or "Promobit").removeprefix("Telegram: ")})',
                       "vendedor": None, "verificado": quando_br, "editora_br": None, "comunidade": True,
@@ -459,7 +523,7 @@ def calcular():
             elif o["de"] and o["por"] and (o["de"] - o["por"]) / o["de"] >= CORTE:
                 armadilhas.append(base)
     # achados da comunidade (Telegram e Promobit) entram na conta geral com a mesma régua (pedido do usuário em 03/11/2026)
-    for base in achados_comunidade(hist, hoje):
+    for base in achados_comunidade(hist, hoje, hoje_d):
         if base.get("principal") is False:
             if base["desc"] >= CORTE:
                 outras.append(base)
