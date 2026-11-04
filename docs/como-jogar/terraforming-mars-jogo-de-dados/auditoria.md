@@ -51,3 +51,16 @@ Pedido do editor de 04/11/2026 (PADRAO_EDITORIAL.md, "Montar a mesa passo a pass
 - Passos sem ilustração no manual (sem figura, nada inventado): 13 (sorteio dos dados de prêmio), 17 (quem começa), 18 e 19 (distribuição das cartas, mostradas só já na mão, figura do passo 21), 27 e 28 (penalidade e início) e toda a preparação solo (a p. 9 não tem ilustração).
 - Lacuna nova: o manual não diz o que fazer com os 2 dados não sorteados para os prêmios (p. 3); o texto diz isso e sugere que voltem ao estoque, de onde saíram.
 - "Comece a jogar" reescrito para a diretriz: "Monte a mesa" virou resumo que remete à nova seção; "Seu primeiro turno" com exemplo resolvido, tarefa para completar e tarefa sem apoio (regras das p. 4, 6 e 7); "Ainda não precisa saber" com as remissões às etapas; a tabela de dados saiu dali (continua na etapa 1 e na folha de consulta). `tools/checar_comece.py`: dentro da diretriz. Zero travessões. `tools/vicios.py`: nenhum aviso.
+
+## 5. Auditoria independente da montagem (04/11/2026)
+
+Resultado: aprovado com correções, nenhum erro. Tudo aplicado:
+
+- Dados de prêmio que sobram: "O manual não diz o que fazer com os 2 dados que sobram (p. 3). Sugestão deste guia: devolva-os ao estoque."
+- Passo 24: "a peça retangular da sua cor (a verde na figura)".
+- Solo: áreas com bônus de PV identificadas pela medalha dourada com "1" sobre fita verde, com remissão à figura do tabuleiro; oceano numa área azul de oceano vizinha da cidade (p. 6 e 9), com a ressalva de que o manual não diz se sai da pilha de 7; cubo de tempo no 0 da trilha de PVs, até o turno 50 (p. 9); linha do solo na conferência final.
+- Cartas bônus: "ao alcançar 5 PVs e de novo ao alcançar 12 PVs, uma carta bônus de cada vez" (p. 3 e 7).
+- "Comece a jogar": fim da partida com "quando 2 desses 3 parâmetros ficam completos (p. 2)"; resumo da montagem remete ao solo no fim da seção de montagem, diz que a partida solo dura 50 turnos (p. 9) e que a penalidade não vale no solo; produção com "pode descartar cartas da mão" (p. 4).
+- Menores: o 0 da trilha de PVs é o espaço sem número antes do 1; cores dos dados com "ilustração da p. 7"; nota sobre Tharsis Republic ao revelar a corporação (p. 11); legenda da foto `mesa-1.webp` cita os cartões de referência em inglês; legenda das cartas bônus sem "ao lado da trilha".
+- Figuras: `setup-tabuleiro.webp` refeito sem as setas e o resto do rótulo "MARCOS" (o trecho da trilha sob o rótulo, números 37 e 38, ficou liso) e com os cubos dos jogadores inteiros no alto; `setup-premios.webp` e `setup-marcos.webp` sem as setas (ficou uma leve mancha no "50" da trilha e na borda do marco Terraformador); `setup-estoque.webp` remontado com três recortes limpos (curingas, dados, peças), sem seta, retângulo branco nem moldura cinza da página; `corporacao.webp` sem o rótulo "CORPORAÇÃO". `setup-bonus.webp` mantido (pilha cortada embaixo, onde estavam as setas).
+- `tools/checar_comece.py`: dentro da diretriz. Zero travessões. `tools/vicios.py`: nenhum aviso.

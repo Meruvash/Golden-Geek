@@ -2,6 +2,117 @@
 
 *Regras conferidas no manual oficial da edição brasileira, publicado pela Asmodee (selo Galápagos, livro de regras v1.0 de 24 páginas, tradução de Fabio Macedo). Os nomes são os impressos nesse manual, e as páginas citadas são as dele. Este guia ensina a partida de 2 a 4 jogadores; o Modo de Partida Solo aparece resumido nas Situações especiais.*
 
+## setup. Montar a mesa passo a passo
+
+A montagem segue a página "Preparação" do manual (p. 4), na mesma ordem dos 12 passos, e o diagrama da mesa montada para 4 jogadores (p. 5). Os passos com letra do manual (3A, 4A, 10A e assim por diante) viram aqui passos próprios. O que muda com o número de jogadores e no Modo de Partida Solo está na tabela do fim (p. 4 e 18).
+
+**O que vem na caixa** (p. 3):
+
+| Componente | Quantidade |
+|---|---|
+| Roleta da Loucura | 1 |
+| Cartas de Cidade | 5 |
+| Tabuleiros do Grande Antigo (dupla-face) e os meeples deles | 4 de cada |
+| Meeple de Força do Grande Antigo | 1 |
+| Tabuleiros de Jogador (dupla-face) e os meeples deles | 6 de cada |
+| Fichas de Cérebro | 4 |
+| Tabuleiro do Necronomicon | 1 |
+| Fichas de Página | 25 |
+| Cartas de Página | 30 |
+| Tabuleiro de Rastejadores | 1 |
+| Tabuleiro de Descarte | 1 |
+| Rastejadores (azuis, vermelhos e verdes) | 5 de cada cor, 15 no total |
+| Bolsa de Compra de Tentáculos | 1 |
+| Tentáculos da Loucura: Medo (azul), Fúria (vermelho), Ganância (verde) | 15 de cada cor, 45 no total |
+| Tentáculos do Caos (roxos) | 17 |
+| Tentáculos Ancestrais (pretos) | 23 |
+| Dados de Cthulhu | 3 |
+| Carta de Referência para Partida Solo | 1 |
+
+1. **Ponha a Roleta da Loucura no centro da mesa** (p. 4).
+2. **Ponha as 5 Cartas de Cidade em volta da Roleta, com a borda menor de cada carta encostada num lado da Roleta.** Sorteie qual lado de cada Carta de Cidade fica para cima (p. 4).
+
+!fig[As 5 Cartas de Cidade e a Roleta da Loucura. Ilustração: manual Asmodee (p. 3)](figuras/setup-roleta-cidades.webp)
+
+3. **Escolha um Tabuleiro do Grande Antigo e ponha-o ao alcance de todos; os outros voltam para a caixa.** Na primeira partida, o manual recomenda Nyarlathotep (p. 4).
+4. **Ponha o Meeple de Força do Grande Antigo no espaço inicial da Trilha de Força**, o espaço sem número (p. 4, passo 3A).
+
+!fig[Os 4 Tabuleiros do Grande Antigo com os seus meeples e, à direita, o Meeple de Força. Ilustração: manual Asmodee (p. 3)](figuras/setup-grande-antigo.webp)
+
+5. **Cada jogador escolhe um Tabuleiro de Jogador e pega o meeple correspondente e uma Ficha de Cérebro.** Os componentes de jogador que sobram voltam para a caixa (p. 4).
+6. **Cada um põe a sua Ficha de Cérebro no espaço de baixo da Trilha de Delírio** do seu tabuleiro (p. 4, passo 4A).
+
+!fig[Quatro Tabuleiros de Jogador (Detetive, Médico, Historiadora e Cientista) e, à direita, as Fichas de Cérebro. Ilustração: manual Asmodee (p. 3 e 5)](figuras/setup-jogadores.webp)
+
+7. **Ponha o Tabuleiro do Necronomicon abaixo do Tabuleiro do Grande Antigo**, ao alcance de todos (p. 4).
+8. **Empilhe as Fichas de Página ao lado do Tabuleiro do Necronomicon** (p. 4, passo 5A).
+
+!fig[O Tabuleiro do Necronomicon, com Tentáculos do Caos do passo 21 nos espaços de tentáculo, e uma Ficha de Página. Ilustração: manual Asmodee (p. 3 e 5)](figuras/setup-necronomicon.webp)
+
+9. **Embaralhe as Cartas de Página num baralho virado para baixo, ao lado do Tabuleiro do Necronomicon** (p. 4).
+10. **Compre 5 Cartas de Página e ponha uma, ainda virada para baixo, ao lado de cada Carta de Cidade** (p. 4, passo 6A).
+
+!fig[Cartas de Página: o verso, à esquerda, e duas frentes. Ilustração: manual Asmodee (p. 3)](figuras/setup-paginas.webp)
+
+11. **Ponha o Tabuleiro de Rastejadores ao alcance de todos, com os 15 Rastejadores nos espaços das suas cores** (p. 4, passos 7 e 7A).
+
+!fig[O Tabuleiro de Rastejadores com os Rastejadores azuis, vermelhos e verdes. Ilustração: manual Asmodee (p. 5)](figuras/setup-rastejadores.webp)
+
+12. **Ponha o Tabuleiro de Descarte abaixo do Tabuleiro de Rastejadores** (p. 4).
+
+!fig[O Tabuleiro de Descarte. Ilustração: manual Asmodee (p. 3)](figuras/setup-descarte.webp)
+
+13. **Deixe os 3 Dados de Cthulhu ao alcance de todos** (p. 4).
+
+!fig[Os 3 Dados de Cthulhu. Ilustração: manual Asmodee (p. 3)](figuras/setup-dados.webp)
+
+14. **Gire a Roleta e ponha o meeple do Grande Antigo no centro da Carta de Cidade indicada pelo Ponteiro Frontal**, a ponta da frente. Vire para cima a Carta de Página dessa Carta de Cidade (p. 4, passos 10 e 10A).
+15. **Gire a Roleta uma vez para cada Rastejador, 1 Rastejador por jogador, tirado do Tabuleiro de Rastejadores.** A cor dele é a da borda de dentro da Carta de Cidade para onde aponta o Ponteiro de Tentáculo, a ponta de trás; ele vai para o espaço mais baixo da Trilha de Rastejadores dessa carta (p. 4, passo 10B; sobre um giro por Rastejador, veja o aviso da Etapa 1).
+16. **Gire a Roleta para cada jogador e ponha o meeple dele no centro da Carta de Cidade indicada pelo Ponteiro Frontal** (p. 4, passo 10C).
+17. **Ponha 3 Tentáculos Ancestrais e 9 de cada Tentáculo da Loucura (Medo, Fúria e Ganância) na Bolsa de Compra de Tentáculos** (p. 4, passos 11A e 11B).
+
+!fig[No alto, os 27 Tentáculos da Loucura que vão para a bolsa, 9 de cada cor; embaixo, a Bolsa de Compra de Tentáculos e um Tentáculo Ancestral. Ilustração: manual Asmodee (p. 3 e 5)](figuras/setup-bolsa.webp)
+
+18. **Ponha 3 Tentáculos do Medo, 3 da Fúria e 3 da Ganância nas áreas das cores no Tabuleiro de Rastejadores** (p. 4, passo 11C).
+19. **Ponha 3 Tentáculos do Medo, 3 da Fúria e 3 da Ganância no Tabuleiro de Descarte** (p. 4, passo 11D).
+20. **Ponha 3 Tentáculos Ancestrais em cada Carta de Cidade, nos espaços pretos quadrados ao lado da Trilha de Rastejadores.** Os Ancestrais que sobram vão para o estoque geral, acima do Tabuleiro do Grande Antigo (p. 4, passo 11E).
+21. **Distribua os Tentáculos do Caos conforme o número de jogadores** (tabela abaixo), **ponha 10 nos espaços de tentáculo do Tabuleiro do Necronomicon e os 3 que restam num estoque geral perto do Tabuleiro do Grande Antigo** (p. 4 e 5, passos 11F a 11H).
+22. **Tire da bolsa, um por vez, 2 Tentáculos da Loucura para cada Carta de Cidade e ponha cada um no espaço vazio mais à esquerda da Trilha de Loucura da cor dele.** Se sair um Tentáculo Ancestral, ele volta para a bolsa, e você tira outro (p. 5, passo 12).
+
+!fig[Passo 22: os tentáculos tirados da bolsa entram nas Trilhas de Loucura de uma Carta de Cidade, cada um na trilha da sua cor. Ilustração: manual Asmodee (p. 5)](figuras/setup-tentaculos-cidade.webp)
+
+!fig[A mesa montada para 4 jogadores: a Roleta da Loucura no centro, cercada pelas Cartas de Cidade com as Cartas de Página ao lado; acima, o Tabuleiro do Grande Antigo, o Necronomicon e os Tabuleiros de Rastejadores e de Descarte. Os números marcam os passos da preparação do manual. Ilustração: manual Asmodee (p. 5)](figuras/preparacao.webp)
+
+**Quem começa.** O jogador mais jovem; depois, a vez segue no sentido horário (p. 6).
+
+**O que muda com o número de jogadores** (p. 4 e 18):
+
+| Jogadores | Tentáculos do Caos na Trilha de Caos de cada Tabuleiro de Jogador | No Tabuleiro de Descarte | Rastejadores na cidade no início | Tabuleiros de Jogador que voltam à caixa |
+|---|---|---|---|---|
+| Solo (você e o Assistente) | 2 | 0 | 2 | 4 |
+| 2 | 2 | 0 | 2 | 4 |
+| 3 | 1 | 1 | 3 | 3 |
+| 4 | 0 | 4 | 4 | 2 |
+
+Em todas as contagens, 4 Tentáculos do Caos saem nessa distribuição, 10 vão para o Necronomicon e 3 para o estoque geral: os 17 da caixa (p. 3 e 4). Os Tentáculos da Loucura não mudam: 27 na bolsa, 9 no Tabuleiro de Rastejadores e 9 no Tabuleiro de Descarte, e depois do passo 22 sobram 17 na bolsa. Dos 23 Tentáculos Ancestrais, 3 vão para a bolsa, 15 para as Cartas de Cidade e 5 para o estoque geral (p. 4).
+
+> [!mais] **Modo de Partida Solo.** Prepare como para 2 jogadores. Depois de pegar o seu Tabuleiro de Jogador, escolha outro, vire-o para o lado de Assistente e dê a ele o meeple correspondente e uma Ficha de Cérebro. Ponha a Carta de Referência de Assistente ao lado do tabuleiro dele, com o lado da Primeira Fase para cima (p. 18).
+
+> [!mais] **Dificuldade.** Para uma partida mais difícil, ponha mais Tentáculos Ancestrais na bolsa no passo 17: 1 a mais no Modo Difícil, 2 a mais no Modo Loucura (p. 3).
+
+**O que volta para a caixa:** os Tabuleiros do Grande Antigo não escolhidos (p. 4, passo 3) e os componentes de jogador que sobram (p. 4, passo 4).
+
+!fig[Tiny Epic Cthulhu montado, na foto da editora (edição Deluxe, com peças diferentes das da caixa comum). Imagem: Gamelyn Games · edição Deluxe](fotos/mesa-1.webp)
+
+**Antes de começar, confira:** Roleta no centro com as 5 Cartas de Cidade; Grande Antigo escolhido e Meeple de Força no espaço sem número; cada um com tabuleiro, meeple e Ficha de Cérebro embaixo na Trilha de Delírio; 5 Cartas de Página viradas para baixo, menos a do local do Grande Antigo; Rastejadores e meeples na cidade; bolsa com 3 Ancestrais e os Tentáculos da Loucura que sobraram; 3 Ancestrais em cada Carta de Cidade; Caos conforme a tabela, 10 no Necronomicon e 3 no estoque; 2 Tentáculos da Loucura em cada Carta de Cidade.
+
+?? Partida de 3 jogadores. Onde ficam os Tentáculos do Caos que não vão para o Necronomicon nem para o estoque geral?
+- ( ) 2 na Trilha de Caos de cada jogador
+- (x) 1 na Trilha de Caos de cada jogador e 1 no Tabuleiro de Descarte
+- ( ) 4 no Tabuleiro de Descarte
+- ( ) 1 em cada Carta de Cidade
+= Com 3 jogadores, 1 Tentáculo do Caos vai para a Trilha de Caos de cada Tabuleiro de Jogador e 1 para o Tabuleiro de Descarte. Os 2 em cada trilha são do solo e de 2 jogadores; os 4 no Descarte, de 4 jogadores (p. 4).
+
 ## 4min. Comece a jogar em 4 minutos
 
 **Meta:** em 4 minutos de leitura, montar a mesa e jogar o seu primeiro turno sem abrir o manual.
@@ -12,20 +123,13 @@ Todos ganham ou perdem juntos (p. 6). Primeiro vocês traduzem as 25 páginas do
 
 ### Monte a mesa
 
-O marcado *(depois)* se monta já e se usa mais tarde (p. 4 e 5).
+A montagem completa, com figuras, está na seção "Montar a mesa passo a passo", logo acima. O essencial (p. 4 e 5):
 
-1. Roleta da Loucura no centro; as 5 Cartas de Cidade em volta, no lado sorteado.
-2. Tabuleiro do Grande Antigo (na primeira partida, Nyarlathotep), lado da Primeira Fase. Meeple de Força no espaço sem número.
+1. Roleta da Loucura no centro, 5 Cartas de Cidade em volta, cada uma com uma Carta de Página virada para baixo ao lado.
+2. Tabuleiro do Grande Antigo (Nyarlathotep na primeira partida) com o Meeple de Força no espaço sem número; Necronomicon, Tabuleiro de Rastejadores e Tabuleiro de Descarte.
 3. Cada jogador: Tabuleiro de Jogador, meeple e Ficha de Cérebro embaixo na Trilha de Delírio.
-4. Necronomicon com as Fichas de Página. Uma Carta de Página virada para baixo ao lado de cada Carta de Cidade.
-5. Tabuleiro de Rastejadores com os 15 Rastejadores; Tabuleiro de Descarte; dados.
-6. Bolsa de Compra de Tentáculos: 3 Tentáculos Ancestrais (pretos) e 9 de cada Tentáculo da Loucura: Medo (azul), Fúria (vermelho), Ganância (verde). Mais 3 de cada cor no Tabuleiro de Rastejadores e 3 de cada cor no Tabuleiro de Descarte.
-7. 3 Ancestrais em cada Carta de Cidade; o resto no estoque geral *(depois)*.
-8. Tentáculos do Caos (roxos): 2 jogadores, 2 na Trilha de Caos de cada um; 3 jogadores, 1 em cada e 1 no Tabuleiro de Descarte; 4 jogadores, 4 no Tabuleiro de Descarte. Mais 10 no Necronomicon *(depois)* e 3 no estoque geral.
-9. Gire a Roleta: o Grande Antigo vai para a carta do Ponteiro Frontal (a ponta da frente), e a Carta de Página dali é virada para cima.
-10. Um giro por jogador: um Rastejador vai para a carta do Ponteiro de Tentáculo (a ponta de trás), na cor que ele aponta na borda de dentro da carta.
-11. Cada jogador gira e põe o seu meeple na carta do Ponteiro Frontal.
-12. Tire da bolsa 2 Tentáculos da Loucura por Carta de Cidade, na trilha da cor, da esquerda para a direita. Ancestral volta para a bolsa.
+4. Giros da Roleta: Grande Antigo (vire a Carta de Página dali), 1 Rastejador por jogador, depois os meeples.
+5. Tentáculos: bolsa com 3 Ancestrais e 9 de cada cor; 3 Ancestrais em cada Carta de Cidade; Caos por número de jogadores; 2 Tentáculos da Loucura em cada Carta de Cidade.
 
 Começa o mais jovem; depois, sentido horário (p. 6).
 
