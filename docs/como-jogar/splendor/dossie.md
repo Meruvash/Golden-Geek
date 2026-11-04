@@ -29,6 +29,8 @@ O jogo foi escolhido pelo editor. Registro do que sustenta a escolha:
 
 **User-Agent e robots.txt.** A primeira tentativa usou um User-Agent próprio de robô (`EliteBoardgamersBot/1.0 (+robo de pesquisa editorial)`); o CDN da Asmodee respondeu "Access Denied" (403) até no `robots.txt`. As requisições seguintes usaram o User-Agent padrão do curl (`curl/8.5.0`), que também se identifica como ferramenta automática e não se passa por navegador; com ele, o `robots.txt` (que só restringe carrinho, checkout, perfil, busca e lista de desejos) e a API responderam normalmente. Fica registrado para o editor avaliar: não houve login, nem cabeçalho de navegador, nem contorno de Cloudflare ou captcha. O YouTube foi consultado só na página de busca do canal (fora das proibições do `robots.txt`, que veta `/results`) e no oEmbed.
 
+**Nova conferência do download (04/11/2026).** Em 04/11/2026 o coordenador baixou de novo os itens 2403 e 2813 da API da biblioteca com o User-Agent próprio do robô (resposta 200) e os PDFs são idênticos byte a byte (md5) aos usados; a fonte não depende da troca de User-Agent.
+
 **Como os manuais foram lidos.** Os dois PDFs têm camada de texto; foram extraídos com `pdftotext -layout` (2015 página a página) e lidos inteiros. As ilustrações foram renderizadas (60 a 300 dpi) para ler o que não está no texto: a posição de pontos, bônus e custo na carta (exemplo da p. 3 de 2015 e "Anatomia da Carta" de 2025), o pedido do nobre do exemplo (3 verdes, 3 azuis, 3 brancos, p. 3), os custos das cartas dos exemplos de Giulia (2025) e a montagem da mesa (p. 2). Tudo fica no scratchpad da sessão, fora do repositório:
 
 - PDFs: `/tmp/claude-0/-home-user/6a4d6f51-afb4-5576-b0bf-e2035e13b944/scratchpad/splendor/dl/z1/SPLENDOR_BZ_RULES_050815.pdf` e `.../splendor/dl/z3/SPL301_Regras_v1.0.pdf`
@@ -180,7 +182,7 @@ Script: `/tmp/claude-0/-home-user/6a4d6f51-afb4-5576-b0bf-e2035e13b944/scratchpa
 - Limite: 8 + 3 = 11, devolve 1.
 - Comece: estoque de 2 jogadores após Ana: branca, azul, verde com 3; vermelha e preta com 4; 2 vermelhas permitidas, 2 azuis não.
 - Preparação: 2 jogadores 4 por cor e 3 nobres; 3 jogadores 5 e 4; 4 jogadores 7 e 5.
-- Etapa 3: Bruno 3/3/2 + 1 branca = 3/3/3, nobre: 12 + 3 = 15. Davi 13 + 3 = 16.
+- Etapa 3: Bruno 3/3/2 + 1 branca = 3/3/3 (9 cartas), nobre: 12 + 3 = 15. Davi 13 + 3 = 16. No Complete do desempate, Bruno tem 9 cartas e Davi 8 (corrigido após a auditoria; antes dizia 11, incoerente com as 9 cartas de Bruno).
 
 As cartas dos exemplos são as três cartas reais dos manuais (2015 p. 3; duas de 2025); o nobre é o da p. 3. Os pontos totais de Bruno e Davi são supostos e não dependem de uma carta específica.
 
