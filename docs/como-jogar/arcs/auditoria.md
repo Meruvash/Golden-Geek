@@ -65,3 +65,18 @@ Pedido do editor de 04/11/2026: nova seção `## setup. Montar a mesa passo a pa
 **Correção de passagem:** a legenda da figura `preparacao.webp` na Etapa 1 dizia "mapa preparado para 3 jogadores"; a carta do desenho é de 4 jogadores (títulos "4 Jogadores", sistemas até 4C e 1 aglomerado fora de jogo, p. 4). Legenda corrigida.
 
 **Portões:** `tools/checar_comece.py` passa; zero travessão e meia-risca no tutorial; `tools/vicios.py` (função `avisos`) sem aviso; a página gerada em memória pelo `como_jogar_md.pagina` (sem gravar HTML) tem a seção com todas as figuras e a foto existentes.
+
+## Auditoria independente da montagem (04/11/2026)
+
+Resultado: aprovado com correções, todas aplicadas no `tutorial.md` e numa figura.
+
+- **Erro 1 (Complete do "Comece a jogar"):** quem lidera a rodada nova é o Jogador 2, que não segue naipe. O enunciado passou a ser o Jogador 3, "numa rodada nova liderada pelo Jogador 2"; as opções e a explicação continuam certas (p. 10).
+- **Menor 1:** `setup-tabuleiro.webp` recortado de novo, com o resto do título "Cada jogador..." coberto pela cor do fundo (p. 5).
+- **Menor 2:** iniciativa: "se ninguém Superou, fica com quem já tem" (p. 11).
+- **Menor 3:** "Como a partida acaba": o capítulo também termina quando todos que têm cartas passam a iniciativa; o primeiro ganha a soma dos valores maiores de todos os marcadores da ambição, o segundo a dos menores; quem não tem nada que conte não pontua (p. 18, "Qualificação").
+- **Menor 4:** resumo do "Monte a mesa": 2 naves em cada um dos dois sistemas C com 2 jogadores, e as 6 fichas nas seções de ambição (p. 4 e 5).
+- **Sem apoio:** "peças das cores que ninguém escolheu" agora diz "implícito no passo L".
+- **Clareza:** "declarar ambição em detalhe: etapa 2"; linha nova "o número no canto decide quem Supera; os pontos de ação dizem quantas ações" (p. 10); legenda da foto `mesa-1.webp` avisa que é partida em andamento, edição em inglês, não a montagem inicial.
+- **Palpites de iniciante:** passo 12 diz que o manual não define o tamanho do marcador de caminho por portal e sugere, como conselho do guia, usar o que se encaixa; passo 18 diz que o tipo do planeta é o do ícone e da cor e que cidades e espaçoportos vão num espaço de construção do planeta (p. 7).
+
+**Portões:** `checar_comece.py` passa; zero travessão; `vicios.py` sem aviso.

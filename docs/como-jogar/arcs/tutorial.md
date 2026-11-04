@@ -19,9 +19,9 @@ Esta é a montagem completa do jogo base, na ordem das p. 4 e 5 do manual (Prepa
 - 4 marcadores de caminho (2 longos e 2 curtos) e 6 marcadores fora de jogo.
 - 4 folhas de ajuda.
 
-**Ficam na caixa nesta partida:** as 8 cartas de líder e as 14 de conhecimento, que são do modo Líderes e Conhecimento (p. 3 e 21); com 2 ou 3 jogadores, as 8 cartas de ação "1" e "7" (p. 3 e 4); as cartas de preparação dos outros números de jogadores (p. 4); as peças das cores que ninguém escolheu (p. 5).
+**Ficam na caixa nesta partida:** as 8 cartas de líder e as 14 de conhecimento, que são do modo Líderes e Conhecimento (p. 3 e 21); com 2 ou 3 jogadores, as 8 cartas de ação "1" e "7" (p. 3 e 4); as cartas de preparação dos outros números de jogadores (p. 4); as peças das cores que ninguém escolheu (implícito no passo L, p. 5).
 
-!fig[Uma partida de Arcs na mesa, em foto da editora original (edição em inglês): o mapa no centro, os tabuleiros dos jogadores nas bordas, os dados de batalha e as fichas de recurso ao lado. Imagem: Buried Giant Studios](../../arcs/fotos/mesa-1.webp)
+!fig[Uma partida de Arcs na mesa, em foto da editora original (edição em inglês): o mapa no centro, os tabuleiros dos jogadores nas bordas, os dados de batalha e as fichas de recurso ao lado (partida em andamento, edição em inglês; não é a montagem inicial). Imagem: Buried Giant Studios](../../arcs/fotos/mesa-1.webp)
 
 **O que muda com o número de jogadores** (p. 2, 4 e 5)
 
@@ -61,7 +61,7 @@ As cartas que sobram são o baralho de ação menos as 6 de cada jogador: 20 men
 
 !fig[Uma carta de preparação de 4 jogadores, revelada (I): ela marca o aglomerado Fora de Jogo e os sistemas iniciais de cada jogador, de 1A a 4C (N). Ilustração: manual Meeple BR (p. 4)](figuras/setup-carta-preparacao.webp)
 
-12. [J] Em cada aglomerado que a carta marca como Fora de Jogo, ponha um marcador de caminho sobre o portal numerado.
+12. [J] Em cada aglomerado que a carta marca como Fora de Jogo, ponha um marcador de caminho sobre o portal numerado. O manual não diz qual dos dois tamanhos vai em cada portal; a sugestão deste guia é usar o que se encaixa no portal coberto.
 13. [J] Nesse mesmo aglomerado, ponha 3 marcadores fora de jogo sobre os 3 planetas que tocam o portal. São 2 aglomerados com 2 ou 3 jogadores e 1 com 4 jogadores.
 
 !fig[Os marcadores de caminho, longo e curto, que cobrem o portal e ligam os portais dos aglomerados vizinhos, e um marcador fora de jogo, que cobre um planeta. Ilustração: manual Meeple BR (p. 3)](figuras/setup-fora-de-jogo.webp)
@@ -79,7 +79,7 @@ As cartas que sobram são o baralho de ação menos as 6 de cada jogador: 20 men
 !fig[O tabuleiro do jogador com as cidades nos espaços triangulares da borda de cima e, à esquerda, os dois primeiros espaços circulares já com as 2 fichas de recurso do passo 22 (O). Embaixo, as áreas de Recursos, Troféus e Prisioneiros. Ilustração: manual Meeple BR (p. 5)](figuras/setup-tabuleiro.webp)
 
 17. [M] Cada jogador põe o seu marcador de Poder no espaço "0" da trilha de Poder, na borda de baixo do mapa.
-18. [N] Todos põem as peças iniciais ao mesmo tempo, com as naves em pé e as construções com o lado colorido para cima, isto é, inteiras (p. 7). Quem tem o marcador de iniciativa é o jogador 1 e põe 3 naves e 1 cidade no sistema 1A da carta de preparação. A cidade é a mais à esquerda do seu tabuleiro.
+18. [N] Cada sistema da carta de preparação é um planeta (o tipo dele é o do ícone e da cor do planeta) ou um portal; cidades e espaçoportos vão num espaço de construção do planeta (p. 7). Todos põem as peças iniciais ao mesmo tempo, com as naves em pé e as construções com o lado colorido para cima, isto é, inteiras (p. 7). Quem tem o marcador de iniciativa é o jogador 1 e põe 3 naves e 1 cidade no sistema 1A da carta de preparação. A cidade é a mais à esquerda do seu tabuleiro.
 19. [N] O jogador 1 põe 3 naves e 1 espaçoporto no sistema 1B.
 20. [N] O jogador 1 põe 2 naves no sistema 1C. Com 2 jogadores, a carta tem dois sistemas 1C, e ele põe 2 naves em cada um.
 21. [N] Seguindo em sentido horário a partir do jogador 1, o 2º, o 3º e o 4º jogadores fazem o mesmo nos sistemas 2A a 2C, 3A a 3C e 4A a 4C.
@@ -126,7 +126,7 @@ A montagem completa, com figuras, está na seção "Montar a mesa passo a passo"
 1. Mapa no centro; marcador de iniciativa para um jogador sorteado.
 2. Baralho de ação com as cartas de "2" a "6" (com 4 jogadores, também "1" e "7"); Corte com 3 cartas (2 jogadores) ou 4.
 3. Uma carta de preparação do seu número de jogadores, revelada: ela marca os aglomerados fora de jogo e os sistemas iniciais.
-4. Cada jogador põe 3 naves e 1 cidade em A, 3 naves e 1 espaçoporto em B, 2 naves em C; recebe as 2 fichas de recurso dos planetas de A e B e compra 6 cartas de ação.
+4. Cada jogador põe 3 naves e 1 cidade em A, 3 naves e 1 espaçoporto em B, 2 naves em C (com 2 jogadores, em cada um dos dois sistemas C); recebe as 2 fichas de recurso dos planetas de A e B e compra 6 cartas de ação. Com 2 jogadores, as 6 fichas dos planetas cobertos vão para as seções de ambição.
 
 ### Seu primeiro turno
 
@@ -134,7 +134,9 @@ Uma rodada é uma volta na mesa: em geral, cada jogador joga **1 carta de ação
 
 - **Quem tem a iniciativa** joga a carta líder, virada para cima, e faz uma ação por ponto de ação da carta, conforme o naipe. Antes, pode declarar a ambição mostrada na carta.
 - **Os outros**, em sentido horário, escolhem uma de três formas: **Superar** (mesmo naipe e número maior que o da líder: faz ações até os pontos da carta), **Copiar** (carta virada para baixo: faz 1 ação da carta líder) ou **Pivotar** (outro naipe, qualquer número: faz 1 ação da própria carta).
-- No fim da rodada, a iniciativa vai para quem Superou com o número mais alto (se ninguém a tomou antes).
+- No fim da rodada, a iniciativa vai para quem Superou com o número mais alto (se ninguém a tomou antes); se ninguém Superou, fica com quem já tem (p. 11).
+
+O número no canto da carta decide quem Supera; os pontos de ação da carta dizem quantas ações você faz (p. 10).
 
 | Naipe | Ações |
 |---|---|
@@ -143,11 +145,11 @@ Uma rodada é uma volta na mesa: em geral, cada jogador joga **1 carta de ação
 | Construção | Construir, Reparar |
 | Mobilização | Mover, Influenciar |
 
-> [!resolvido] **Exemplo resolvido.** O Jogador 1 tem a iniciativa e lidera com uma Agressão "3": faz uma ação de Agressão por ponto de ação da carta. O Jogador 2 joga uma Agressão "5": mesmo naipe e número maior, então Supera e faz ações até os pontos da carta dele. O Jogador 3 guarda as cartas boas e Copia: joga uma carta virada para baixo e faz 1 ação da líder, Mover. Ninguém tomou a iniciativa, e o Jogador 2 Superou: ele lidera a próxima rodada (p. 10 e 11).
+> [!resolvido] **Exemplo resolvido.** O Jogador 1 tem a iniciativa e lidera com uma Agressão "3": faz uma ação de Agressão por ponto de ação da carta. O Jogador 2 joga uma Agressão "5": mesmo naipe e número maior, então Supera e faz ações até os pontos da carta dele. O Jogador 3 Copia: joga uma carta virada para baixo e faz 1 ação da líder, Mover. Ninguém tomou a iniciativa, e o Jogador 2 Superou: ele lidera a próxima rodada (p. 10 e 11).
 
-> [!complete] **Complete.** Agora é o Jogador 2, numa rodada nova.
+> [!complete] **Complete.** Agora é o Jogador 3, numa rodada nova liderada pelo Jogador 2.
 >
-> ?? O Jogador 2 não tem nenhuma carta do naipe da carta líder. O que pode fazer?
+> ?? O Jogador 3 não tem nenhuma carta do naipe da carta líder. O que pode fazer?
 > - ( ) Nada: precisa passar a vez.
 > - (x) Pivotar com uma carta de outro naipe e fazer 1 ação dela, ou Copiar com uma carta virada para baixo e fazer 1 ação da líder.
 > - ( ) Superar com qualquer carta de número maior.
@@ -163,11 +165,11 @@ Uma rodada é uma volta na mesa: em geral, cada jogador joga **1 carta de ação
 
 ### Ainda não precisa saber
 
-Tomar a iniciativa no meio da rodada e declarar ambição: etapa 2. O que cada ação faz e as cartas da Corte: etapa 3. Batalha e dano: etapa 4. Pontuação no detalhe: etapa 5. Abra a etapa quando chegar a hora.
+Tomar a iniciativa no meio da rodada e declarar ambição em detalhe: etapa 2. O que cada ação faz e as cartas da Corte: etapa 3. Batalha e dano: etapa 4. Pontuação no detalhe: etapa 5. Abra a etapa quando chegar a hora.
 
 ### Como a partida acaba
 
-Quando ninguém tem mais cartas, o capítulo termina e pontuam as ambições **declaradas**. Quem estiver em primeiro numa ambição ganha o valor maior dos marcadores dela; o segundo, o valor menor (p. 18). As ambições são: Magnata (Matéria-Prima e Combustível), Tirano (Prisioneiros), Senhor da Guerra (Troféus), Guardião (Relíquia) e Empata (Psiônico). A partida costuma ter de 3 a 5 capítulos. Ela acaba no fim do capítulo em que alguém chega a 27 de Poder (4 jogadores), 30 (3 jogadores) ou 33 (2 jogadores), ou no fim do capítulo 5. Vence quem tiver mais Poder (p. 2 e 19).
+O capítulo termina quando todos ficam sem cartas de ação ou quando todos que ainda têm cartas passam a iniciativa. Então pontuam as ambições **declaradas**: quem estiver em primeiro numa ambição ganha a soma dos valores maiores dos marcadores dela; o segundo, a soma dos menores. Quem não tem nada que conte para a ambição não pontua nela (p. 18). As ambições são: Magnata (Matéria-Prima e Combustível), Tirano (Prisioneiros), Senhor da Guerra (Troféus), Guardião (Relíquia) e Empata (Psiônico). A partida acaba no fim do capítulo em que alguém chega a 27 de Poder (4 jogadores), 30 (3 jogadores) ou 33 (2 jogadores), ou no fim do capítulo 5. Vence quem tiver mais Poder (p. 2 e 19).
 
 **Prefere ver?** Uma partida resumida e as regras em vídeo; em caso de diferença, vale o manual.
 
