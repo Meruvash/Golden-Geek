@@ -198,3 +198,33 @@ Segunda auditoria independente, feita em 01/11/2026 por agente que não escreveu
 - Seguem as lacunas antigas: requisito como "pelo menos", linhas do Revolver, tipo do dano do Duel, empate na rolagem inicial.
 
 **Teste de execução.** Preparação para 2 jogadores, só com o tutorial: feita sem adivinhar nada, depois da correção do "verso do folheto" (antes, quem tem folheto novo procuraria a preparação no lugar errado). Para o máximo coberto (4, em duplas, e 3, Rei da Colina): sem lacunas; 5 e 6 ficam fora, como o manual manda. Rodada completa Monge contra Paladino (Renda pulada pelo jogador inicial, Principal, três rolagens, anúncio, pergunta ao adversário, Divine Defense, dano, Chi depois do dano, Principal (2), Descarte): antes da correção 2 a ordem do Chi ficava errada; depois, sem lacunas. Avaliação final respondida antes de olhar: 9 de 9, iguais às do tutorial.
+
+## Seção de montagem (04/11/2026)
+
+Pedido do editor: seção `## setup. Montar a mesa passo a passo` antes do "Comece a jogar", seguindo o quadro Game Setup do manual (p. 3), na mesma ordem dos itens 1 a 8, com a ilustração numerada das p. 2 e 3.
+
+- **Manual baixado de novo:** a referência do tutorial, a versão 2.4.3, só está no Google Drive (link da página https://shop.dicethrone.com/pages/faq), e o robots.txt de drive.google.com bloqueia `/uc` e o de drive.usercontent.google.com bloqueia tudo; por isso ela não foi baixada. Foi baixada de novo a versão 2.3.2, a primeira do dossiê, no CDN da loja oficial (https://cdn.shopify.com/s/files/1/0045/4013/7562/files/Dice_Throne_Rulebook_-_v2.3.2_-_2022.07.04.pdf, robots.txt permite; 20,5 MB, 16 páginas, mesma paginação), com user-agent de robô. Texto extraído com `pdftotext -layout`; p. 2, 3, 6 e 11 renderizadas a 130 e 300 dpi.
+- **Conteúdo e fonte:** itens 1 a 8 da p. 3, um por passo: tabuleiro, folheto, fichas empilhadas nos lugares do folheto, Vida 50 (1v1), CP 2, baralho embaralhado e 4 cartas, 1 dado para o jogador inicial, preparação própria do herói. O passo 9 (o jogador inicial pula a primeira Renda) vem das p. 4 e 12. Tabela por número de jogadores: p. 3 (duelo) e p. 11 (3 jogadores, 35 de Vida, sentido horário; 4 em duplas, Vida dividida em 50, zigue-zague; 5 e 6 em variants.dicethrone.com). Quantidades da tabela de componentes (5 dados, 1 de cada marcador, tabuleiro e folheto, 33 cartas) tiradas da lista "Components" do folheto de exemplo da p. 6 da 2.3.2, o do Pirata Amaldiçoado; o texto diz que o número de cartas e de fichas está no folheto de cada herói.
+- **Diferença de versão no item 8:** a 2.3.2 diz que a preparação própria fica no verso do folheto; a 2.4.3, segundo a auditoria de 01/11/2026, no quadro Hero Setup da frente. O texto segue a 2.4.3, como o resto do tutorial, e o [!edicao] da etapa 1 já avisa quem tem manual anterior. Na figura do folheto (`setup-folheto.webp`, da 2.3.2) o número 8, com a seta para o verso, foi cortado; a figura do item 8 é a `preparacao.webp`, já existente, que mostra o 8 na frente do folheto.
+- **Interpretado:** "ninguém começa com ficha no tabuleiro" (passo 3) vem de a ficha ir ao meio do tabuleiro só quando é ganha (p. 6). "O que volta para a caixa": o manual não traz lista; o texto diz isso e só registra que cada um usa todos os componentes do herói escolhido (p. 3).
+- **Figuras novas** (recortes da 2.3.2, só parte gráfica, com os números do próprio manual, que batem com os passos): `setup-tabuleiro.webp` (p. 2 e 3, os marcadores que invadiam os cantos de cima foram cobertos com a cor do fundo), `setup-folheto.webp` (p. 2, sem o 8), `setup-marcadores.webp` (Vida e CP lado a lado, p. 2 e 3), `setup-baralho.webp` (p. 3), `setup-dados.webp` (p. 3), `setup-duplas.webp` (diagrama do zigue-zague, p. 11). Reaproveitadas: `preparacao.webp` (saiu da etapa 1 e foi para o passo 8, para não repetir a mesma imagem) e a foto oficial `fotos/mesa-1.webp`, crédito "Imagem: Dice Throne · Season One" conforme `fotos/fontes.json`; a legenda avisa que a foto mostra partida em andamento (Vida 18).
+- **Sem ilustração própria no manual:** o passo 4 (Vida) e o 5 (CP) dividem uma figura, colocada depois do passo 5, porque os dois marcadores são pequenos; o passo 2 (folheto) divide a figura com o 3; o passo 9 (pular a primeira Renda) e os modos de 3 jogadores e de 5 ou 6 não têm desenho de montagem; o quadro Hero Setup do folheto é só texto. Nada foi inventado para esses passos.
+- **Comece a jogar:** "Monte a mesa" virou um resumo de 4 itens que remete à nova seção. `checar_comece.py` aprovado; `vicios.avisos` sem aviso; zero travessão e meia-risca. Página conferida em memória com `como_jogar_md.pagina` (a seção sai com a classe `setup` e as 8 imagens); nenhum HTML gravado; `publicar` não foi alterado.
+
+## Auditoria independente da montagem (04/11/2026)
+
+Parecer do auditor: aprovado com correções. Aplicadas no tutorial:
+
+1. Erro, passo 3: "ninguém começa com ficha" agora ressalva a preparação própria do herói, com o exemplo do Pirata Amaldiçoado, que começa com 3 Dobrões (quadro Hero Setup do folheto de exemplo, p. 6).
+2. Passo 8: dito que na 2.4.3 o quadro Hero Setup fica na frente do folheto e em manuais anteriores, como a 2.3.2, no verso; legenda da `preparacao.webp` passou a "manual Dice Throne v2.4.x (p. 2 e 3)".
+3. Introdução: "o manual não traz tabuleiro central: cada jogador põe à sua frente os componentes do herói (p. 3)", no lugar de "nada em comum no meio da mesa", que o manual não diz.
+4. "Igual em todos os modos" virou "igual nos modos de 2, 3 e 4 jogadores" (5 e 6 ficam nas variantes).
+5. Tabela de componentes: acrescentada a carta de ordem de turno (1, p. 6), com o aviso de que os passos de preparação não a usam.
+6. Passo 6 cita "(item 6 e ilustração, p. 3)", porque baralho virado para baixo e descarte virado para cima vêm da ilustração.
+7. Legenda de `setup-dados.webp`: "(p. 3; faces na legenda do folheto, p. 2)".
+8. Resumo do "Comece a jogar": a rolagem do jogador inicial vem antes da preparação própria do herói, como na seção (agora 5 itens).
+9. Cartas: "33 no Pirata Amaldiçoado, o herói do exemplo da p. 6"; dados: 5, com a p. 12 (a rolagem ofensiva usa os 5).
+10. Duplas: marcador "compartilhado pelos parceiros (o dano de qualquer um sai dele)" (p. 11). A p. 11 não diz qual marcador usar; o texto dá como sugestão do guia usar o de um parceiro e deixar o outro na caixa, e o "O que volta para a caixa" repete isso.
+11. Empate na rolagem inicial: "rolem de novo os empatados (solução da mesa; o manual não diz)".
+
+Nenhuma figura precisou mudar. `checar_comece.py` aprovado; `vicios.avisos` sem aviso; zero travessão e meia-risca. Sem commit; nenhum outro arquivo tocado.
