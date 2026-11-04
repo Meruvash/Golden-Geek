@@ -195,3 +195,32 @@ Conferência do tutorial.md contra o PDF da Meeple BR (texto extraído com pdfto
 **Incerto (fica como está, declarado no texto):** orientação das salas na Ação Livre Revelar Salas Adjacentes; limite de cartas cheio; Desarmar em turno posterior; Desarmar "ou"/"e". O exemplo do "Comece" supõe uma Sala do Baralho A com Encontro com Goblin; a figura da p. 8 mostra uma Carta de Sala com esse ícone, mas o manual não diz quantas existem.
 
 **Veredito:** APROVADO COM CORREÇÕES.
+
+## Seção de montagem (04/11/2026)
+
+Pedido do editor: seção `## setup. Montar a mesa passo a passo` antes do "Comece a jogar", seguindo a "Preparação" (p. 4 e 5) na ordem das letras A a V, com o diagrama da p. 5. Manual baixado de novo do mesmo endereço do dossiê (https://meeplebr.com/wp-content/uploads/2022/02/TEDu_rulebook-PT-BR-1_compressed.pdf, 200, 21.159.299 bytes, igual ao do dossiê; 20 páginas, InDesign 17, criado em 16/05/2022, modificado em 02/02/2023; `robots.txt` da Meeple BR sem bloqueio). Texto em `scratchpad/setup/tiny-epic-dungeons/manual.txt`; p. 2, 4, 5 e 17 lidas também como imagem.
+
+- **Passo a página:** componentes (p. 2); 1, separar e embaralhar (p. 4, abertura); 2 a 5, Baralhos A, B, C e a pilha (p. 4, A a D); 6, sobras para a caixa (p. 4, E); 7 e 8, Entrada e 4 cartas, Grade 7 x 7 (p. 4, F e G); 9 e 10, Altares (p. 4, H e I); 11 e 12, Tocha (p. 4, J e K); 13 a 15, Goblin, Lacaio, Marcadores de Goblin e de Vida (p. 4, L a N); 16 e 17, Chefe (p. 4, O e P); 18, Espólio e Feitiço (p. 4, Q); 19 a 21, heróis (p. 5, R a T); 22 e 23, Desarme e dados, quem começa (p. 5, U e V). Solo (p. 17).
+- **Contas refeitas em Python:** Baralho da Masmorra = A + (1 + 3) x heróis + 4: 9 + 8 + 4 = 21; 7 + 12 + 4 = 23; 5 + 16 + 4 = 25 (o 23 bate com o exercício da Etapa 1). Marcadores de Altar: 1 + heróis = 3, 4, 5; na caixa, 5 - 3 = 2, 5 - 4 = 1, 5 - 5 = 0. Tocha no espaço = heróis. Marcadores de Vida perto do Baralho de Lacaio = heróis.
+- **Interpretado:** nada novo. A frase do solo segue a p. 17 ("a quantidade de heróis usada será a referência para quantidade de jogadores"), aplicada à tabela da montagem.
+- **Figuras novas** (só a parte gráfica; rótulos e letras do manual cortados ou cobertos com a cor do fundo): `setup-masmorra.webp` (28 Cartas de Masmorra, p. 2); `setup-baralhos.webp` (Baralhos A, B e C, p. 4, com os nomes "Baralho A/B/C" e as letras, que fazem parte do diagrama); `setup-entrada.webp` (Entrada com as 4 cartas, Altar e miniaturas, p. 5, sem os rótulos e as letras G, H e S; a letra F ficou, porque está sobre as cartas, e a legenda a explica); `setup-tocha.webp`, `setup-goblin-lacaio.webp`, `setup-chefe.webp`, `setup-espolio-feitico.webp`, `setup-herois.webp`, `setup-marcadores.webp`, `setup-desarme-dados.webp` (p. 2, sem as legendas de quantidade). Reaproveitada: `preparacao.webp` (p. 5). Foto oficial `fotos/mesa-1.webp`, crédito de `fotos/fontes.json` ("Imagem: Gamelyn Games · edição Deluxe"), com aviso de que é a edição Deluxe.
+- **Passos sem ilustração própria no manual:** o separar das Cartas de Masmorra por tipo (passo 1) e a devolução das sobras (passo 6); o Marcador de Tocha no espaço do número de heróis (passo 12), que no diagrama aparece só com a letra K; os Marcadores de Goblin nos números (passo 14) e os Tabuleiros de Chefe não comprados voltando à caixa (passo 16); o Marcador de Vida e o de Foco nas trilhas do herói (passo 21) aparecem só no diagrama geral, com rótulos; o manual não desenha a montagem de 2 ou 3 heróis nem a do solo. Esses passos ficam com texto e com a figura geral.
+- **Comece a jogar:** "Monte a mesa" virou um resumo de 5 itens que aponta para a nova seção; `checar_comece.py` aprovado; `vicios.py` sem aviso; zero travessão. `publicar` não foi alterado.
+
+## Auditoria independente da montagem (04/11/2026)
+
+Resultado: aprovado com correções. O que foi aplicado:
+
+- **Erro 1 (foto mesa-1):** a legenda agora diz "Uma partida em andamento, na foto da editora (edição Deluxe em inglês, com peças diferentes das da caixa comum). Não é a mesa no início.", e a foto foi para depois do "Antes de começar, confira". Crédito conferido em `fotos/fontes.json`: "Imagem: Gamelyn Games · edição Deluxe", página de origem https://tycoongames.com/products/tiny-epic-dungeons-deluxe. O `fontes.json` está fora do escopo desta correção e não foi alterado; se a loja tycoongames.com não for da Gamelyn, a correção do crédito vai para a skill `imagens`.
+- **Erro 2:** `preparacao.webp` saiu da Etapa 1; no lugar, uma frase remete à seção de montagem. A figura aparece agora uma vez só.
+- **Menor 3:** o passo 1 cita "(p. 4, abertura, antes do item A)", e a introdução diz que a montagem segue a frase de abertura e depois as letras A a V.
+- **Menor 4:** `setup-marcadores.webp` foi dividida e apagada. `setup-altares.webp` (p. 2) entra depois do passo 10, e `setup-vida-foco.webp` (p. 2) depois do passo 21.
+- **Menor 5:** `setup-entrada.webp` refeita: o retângulo e o pedaço vermelho do "H" foram cobertos com a cor do fundo, e não sobrou o pontinho. A emenda com a `setup-chefe`, que era opcional, não foi feita.
+- **Menor 6:** as quatro opções da pergunta `??` agora têm o mesmo formato (Baralho A, Baralho B, tocha). Cada errada falha num item só, pelo manual (p. 4).
+- **Menor 7:** no resumo do 4min, o Chefe é "sorteado, sem revelar, no Ato 1" (O), e os Marcadores de Goblin ficam "nos números do Tabuleiro de Tocha" (M).
+- **Clareza 8:** "*(depois)*" trocado por "(separados para usar depois)" e "(para usar depois)".
+- **Clareza 9:** no passo 15 e na legenda de `setup-vida-foco`, os corações cinza (N, na p. 5) vão perto do Baralho de Lacaio, e os vermelhos e os raios vão para os heróis (T, na p. 5). Conferido na p. 2 (4 corações vermelhos, 4 cinza e 4 raios) e na p. 5.
+- **Clareza 10:** no solo, o texto diz "escolha a ordem dos seus heróis e mantenha-a (o manual não define)". A p. 17 não fala de ordem.
+- **Clareza 11:** o passo 12 remete à seta K da figura da mesa montada.
+- **Clareza 12:** nova figura `setup-simbolos.webp`, com os 4 ícones da frase de abertura da p. 4 (Entrada, Sala, Encontro, Porta do Covil) lado a lado, renderizados a 800 dpi, e uma frase que descreve cada ícone.
+- `checar_comece.py` aprovado; `vicios.py` sem aviso; zero travessão.

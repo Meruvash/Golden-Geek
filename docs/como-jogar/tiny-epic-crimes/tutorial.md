@@ -2,6 +2,133 @@
 
 *Regras conferidas no livro de regras da edição brasileira de Tiny Epic Crimes (Asmodee, versão v1.0, 2023, tradução de Fernanda Rocha), baixado da biblioteca de downloads da Asmodee Brasil. O guia ensina o Modo Padrão, o competitivo; os modos Cooperativo e Solo estão nas Situações especiais.*
 
+## setup. Montar a mesa passo a passo
+
+A montagem segue a "Preparação Padrão da Partida" do manual (p. 5 e 6), na mesma ordem dos 19 passos (o passo 13 do manual, com as partes 13A a 13D, vira aqui os passos 13 a 16), e a ilustração da mesa montada (p. 7). É a montagem do Modo Padrão, o competitivo; o que muda com 2 jogadores e nos modos Cooperativo e Solo está na tabela e no quadro do fim (p. 17 a 19).
+
+**O que vem na caixa** (p. 3):
+
+| Componente | Quantidade |
+|---|---|
+| Carta de Delegacia | 1 |
+| Cartas de Quarteirão | 24 |
+| Cartas de Habilidade | 8 |
+| Cartas de Suspeito | 16 |
+| Cartas de Corporação | 12 |
+| Cartas de Evento | 18 |
+| Tabuleiros de Agente | 4 |
+| Ajudas ao Jogador (frente e verso) | 4 |
+| Tabuleiros de Tempo | 2 |
+| Envelope de Assassino | 1 |
+| Lupa | 1 |
+| Envelopes de Evidência | 5 |
+| Bolsa | 1 |
+| Fichas de Pista: Informante, Testemunha, Investigação, Tocaia, Custódia | 5, 5, 7, 5 e 3, 25 no total |
+| Fichas de Evidência | 5 |
+| Fichas de Dado (5 brancas e 5 pretas) | 10 |
+| Indicadores de Tempo, Carros e Distintivos | 4 de cada |
+| Mafiosos: Abelha Azul, Rinoceronte Rubro, Gângster Cinza | 5 de cada cor, 15 no total |
+| Dados-Projéteis | 2 |
+| Fichas de Evento | 20 |
+
+1. **Ponha a Carta de Delegacia no centro da mesa** (p. 5).
+2. **Embaralhe as 24 Cartas de Quarteirão e ponha-as em volta da Delegacia, viradas para cima**, ao acaso, formando um quadrado de 5 por 5 com a Delegacia no meio. Esse quadrado é a cidade, e cada carta é um quarteirão (p. 5).
+
+!fig[A Carta de Delegacia, com os 3 marcadores de Custódia à esquerda, e as Cartas de Quarteirão. Ilustração: manual Asmodee (p. 3)](figuras/setup-cidade.webp)
+
+3. **Ponha as 10 Fichas de Dado em dois lados da cidade, em ordem numérica, uma ao lado de cada quarteirão da borda**: as 5 brancas, de 1 a 5 da esquerda para a direita, no alto, uma por coluna; as 5 pretas, de 1 a 5 de cima para baixo, à esquerda, uma por linha (p. 5).
+4. **Ponha as 5 Fichas de Informante, uma ao lado de cada Ficha de Dado preta** (p. 5).
+5. **Ponha as 5 Fichas de Testemunha, uma ao lado de cada Ficha de Dado branca** (p. 5).
+
+!fig[No alto, as Fichas de Dado brancas de 1 a 5, cada uma com a sua Ficha de Testemunha embaixo; abaixo, as Fichas de Dado pretas de 1 a 5, cada uma com a sua Ficha de Informante, que na mesa ficam em coluna à esquerda da cidade (recomposição lado a lado). Ilustração: manual Asmodee (p. 7)](figuras/setup-fichas-de-dado.webp)
+
+6. **Embaralhe as 7 Fichas de Investigação viradas para baixo e ponha uma em cada um dos 7 quarteirões que mostram o marcador de Investigação**, ainda viradas para baixo (p. 5).
+7. **Embaralhe as 5 Fichas de Tocaia viradas para baixo e ponha uma em cada um dos 5 quarteirões que mostram o marcador de Tocaia**, viradas para baixo (p. 5).
+
+!fig[As cinco Fichas de Pista com as quantidades: Informante (5), Testemunha (5), Investigação (7), Tocaia (5) e Custódia (3). Ilustração: manual Asmodee (p. 3)](figuras/setup-pistas.webp)
+
+8. **Ponha as 3 Fichas de Custódia nos 3 marcadores de Custódia da Delegacia** (p. 5).
+
+!fig[A Delegacia, com Fichas de Custódia sendo colocadas nos 3 marcadores, e os Carros dos jogadores, que entram no passo 15. Ilustração: manual Asmodee (p. 7)](figuras/setup-delegacia.webp)
+
+9. **Monte a Trilha de Tempo: os 2 Tabuleiros de Tempo lado a lado, os dois com o lado "Padrão" para cima** (o nome do lado está no canto superior esquerdo) (p. 5).
+
+!fig[Os 2 Tabuleiros de Tempo lado a lado, de 1 a 48 horas, com as linhas vermelhas de Evento. Ilustração: manual Asmodee (p. 3)](figuras/setup-trilha.webp)
+
+10. **Deixe as 5 Fichas de Evidência ao alcance de todos** (p. 5).
+
+!fig[As 5 Fichas de Evidência: Gangue, Cargo, Perícia, Arma e Fuga. Ilustração: manual Asmodee (p. 6)](figuras/setup-evidencias.webp)
+
+11. **Deixe os 2 Dados-Projéteis ao alcance de todos** (p. 5).
+
+!fig[Os 2 Dados-Projéteis, o branco e o preto. Ilustração: manual Asmodee (p. 3)](figuras/setup-dados.webp)
+
+12. **Ponha todos os mafiosos na Bolsa, agite e tire 3, um de cada vez.** Para cada um, role os dois dados para achar o quarteirão, o branco dando a coluna e o preto a linha (Rolagem de Mafioso; p. 5, passo 12, e a ilustração da p. 16; ver Situações especiais) e ponha o mafioso lá. Se sair um 6, um 3 e 3 ou um quarteirão que já tem mafioso, role de novo, até os 3 estarem na cidade (p. 5).
+
+!fig[Os mafiosos (5 de cada cor) e a Bolsa. Ilustração: manual Asmodee (p. 3)](figuras/setup-mafiosos.webp)
+
+13. **Cada um escolhe uma cor (o manual não diz como) e recebe, nessa cor, um Tabuleiro de Agente com o lado "Padrão" para cima, uma Ajuda ao Jogador, um Indicador de Tempo, um Carro e um Distintivo.** A Ajuda ao Jogador pode ser consultada dos dois lados durante a partida (p. 5).
+14. **Empilhe todos os Indicadores de Tempo ao lado da Trilha de Tempo, por idade: o do mais jovem no topo, o do mais velho na base** (p. 5).
+15. **Cada um põe o seu Carro na Delegacia** (p. 5).
+16. **Cada um põe o seu Distintivo, com o lado 10+ virado para baixo, no desenho grande do distintivo, na parte de baixo do seu Tabuleiro de Agente** (p. 5).
+
+!fig[Os 4 Tabuleiros de Agente e, embaixo, os Indicadores de Tempo, os Carros e os Distintivos. Ilustração: manual Asmodee (p. 3)](figuras/setup-agente.webp)
+
+17. **Embaralhe as Cartas de Habilidade e dê 2 a cada jogador.** Cada um escolhe uma, que fica virada para cima perto do próprio tabuleiro, e devolve a outra à caixa. As cartas que não foram distribuídas também voltam para a caixa (p. 5).
+
+!fig[Cartas de Habilidade. Ilustração: manual Asmodee (p. 3)](figuras/setup-habilidade.webp)
+
+18. **Embaralhe as Cartas de Corporação num baralho virado para baixo e dê uma, virada para baixo, a cada jogador.** Você pode olhar a sua sem mostrar aos outros (p. 5).
+
+!fig[O baralho de Cartas de Corporação. Ilustração: manual Asmodee (p. 3)](figuras/setup-corporacao.webp)
+
+19. **Embaralhe as Cartas de Suspeito num baralho virado para baixo. Compre 1 carta sem revelar e deslize-a para dentro do Envelope de Assassino**, com a seta do verso aparecendo na fenda triangular. Ninguém pode tirar nem ver essa carta, a não ser que uma regra mande (p. 6).
+
+!fig[À esquerda, as Cartas de Suspeito e o baralho virado para baixo; à direita, o Envelope de Assassino. Ilustração: manual Asmodee (p. 3)](figuras/setup-suspeitos.webp)
+
+20. **Deixe os 5 Envelopes de Evidência e a Lupa ao alcance de todos** (p. 6).
+
+!fig[Os 5 Envelopes de Evidência e a Lupa. Ilustração: manual Asmodee (p. 6)](figuras/setup-envelopes.webp)
+
+21. **Deixe todas as Fichas de Evento por perto**, para usar quando for preciso (p. 6).
+
+!fig[As 20 Fichas de Evento. Ilustração: manual Asmodee (p. 3)](figuras/setup-fichas-evento.webp)
+
+22. **Embaralhe as Cartas de Evento num baralho e vire 1 carta para cima no espaço livre "1", na parte de baixo da Trilha de Tempo.** Leia em voz alta as instruções de preparação da carta e faça o que ela pede (p. 6; Eventos nas p. 14 e 15).
+
+!fig[Cartas de Evento e o baralho. Ilustração: manual Asmodee (p. 3)](figuras/setup-eventos.webp)
+
+!fig[A mesa montada: a Trilha de Tempo e o primeiro Evento no alto, as Fichas de Dado, de Testemunha e de Informante nas bordas da cidade, as Fichas de Investigação, Tocaia e Custódia nos quarteirões, os Carros na Delegacia e os 3 primeiros mafiosos (números da ilustração = passos do manual). Ilustração: manual Asmodee (p. 7)](figuras/preparacao.webp)
+
+**Quem começa.** Não há ordem fixa: joga sempre o agente com o Indicador de Tempo mais atrás na trilha e, empatados, o do indicador que estiver no topo. Como todos começam na mesma pilha, com o do mais jovem no topo, o mais jovem joga primeiro (p. 5 e 8).
+
+**O que muda com o número de jogadores** (Modo Padrão; Variante da Partida para 2 Jogadores, p. 17):
+
+| Jogadores | Fichas de Informante | Fichas de Testemunha | Fichas de Pista que voltam à caixa | Cartas de Habilidade em jogo / na caixa | Cartas de Suspeito no baralho |
+|---|---|---|---|---|---|
+| 2 | 3, ao lado das pretas 1, 3 e 5 | 3, ao lado das brancas 2, 3 e 4 | 4 (2 de Informante e 2 de Testemunha) | 2 / 6 | 11 (4 vão para o "agente fantasma") |
+| 3 | 5 | 5 | nenhuma | 3 / 5 | 15 |
+| 4 | 5 | 5 | nenhuma | 4 / 4 | 15 |
+
+Com 2 jogadores, no Modo Padrão, distribua também, "no começo da partida", **4 Cartas de Suspeito viradas para baixo numa pilha entre os dois, com um Carro não usado em cima**: são os álibis de um "agente fantasma", que você pode usar ao Interrogar (p. 17). O manual não diz em que passo; a leitura do guia é tirá-las do baralho de Suspeitos logo depois do passo 19, já com o assassino no envelope. Com 2 jogadores, bastam 3 Fichas de Informante para decifrar o Cargo e 3 de Testemunha para a Gangue (p. 17).
+
+!fig[Variante para 2 jogadores: Fichas de Testemunha só nas brancas 2, 3 e 4, e de Informante só nas pretas 1, 3 e 5. Ilustração: manual Asmodee (p. 17)](figuras/setup-dois-jogadores.webp)
+
+> [!mais] **Modo Cooperativo e Modo Solo.** Tabuleiros de Agente e de Tempo com o lado "Cooperativo" para cima. Agentes: com 2 jogadores, Detetive e Patrulheira; com 3, mais a Analista; com 4, os quatro. Antes de pôr os mafiosos na Bolsa, tire da partida 1 Gângster Cinza com 2 jogadores (ficam 14 na Bolsa), 1 de cada cor com 3 (ficam 12) e 2 de cada cor com 4 (ficam 9); um Gângster Cinza removido vai para o espaço livre ao lado das 48 horas, como Marcador de Tempo Esgotado, e os outros removidos ficam na caixa. A variante de 2 jogadores das Fichas de Informante e de Testemunha também vale no Cooperativo. No Modo Solo, prepare uma partida Cooperativa para 2 jogadores (com a variante das fichas para 2) e conduza os dois agentes; para mais desafio, prepare para 3 ou 4 agentes, e aí a variante das fichas não vale (p. 17 a 19).
+
+**O que volta para a caixa:** a Carta de Habilidade que cada um não escolheu e as que não foram distribuídas (p. 5); com 2 jogadores, as Fichas de Informante e de Testemunha que sobram (p. 17); no Cooperativo, os mafiosos removidos, menos o Marcador de Tempo Esgotado (p. 18); e os kits das cores que ninguém usa (com 2 jogadores, um Carro fica com o agente fantasma, p. 17).
+
+!fig[Partida em andamento, edição Deluxe em inglês (imagem 3D ilustrativa da editora); a disposição difere da preparação, siga os passos acima. Imagem: Gamelyn Games · edição Deluxe](fotos/mesa-1.webp)
+
+**Antes de começar, confira:** cidade de 5 por 5 com a Delegacia no meio; Fichas de Dado brancas no alto e pretas à esquerda, de 1 a 5; Testemunhas nas brancas e Informantes nas pretas; Investigação e Tocaia viradas para baixo nos quarteirões marcados; Custódia na Delegacia; trilha no lado Padrão; 3 mafiosos na cidade; cada um com Carro na Delegacia, Distintivo no lado certo, 1 Habilidade e 1 Corporação; 1 suspeito no envelope; 1 Evento no espaço "1"; Indicadores empilhados com o do mais jovem no topo.
+
+?? Partida de 3 jogadores. Qual destas mesas está certa?
+- ( ) As Fichas de Informante ao lado das Fichas de Dado brancas, no alto
+- ( ) As Fichas de Investigação viradas para cima, para todos verem onde estão
+- (x) O Indicador de Tempo do jogador mais jovem no topo da pilha, ao lado da trilha
+- ( ) Cada jogador com as 2 Cartas de Habilidade que recebeu, para usar as duas
+= Os Indicadores de Tempo se empilham por idade, o do mais jovem no topo, e é ele quem joga primeiro (p. 5 e 8). As Fichas de Informante vão ao lado das pretas, à esquerda; as de Investigação ficam viradas para baixo; e cada um fica com 1 Carta de Habilidade e devolve a outra à caixa (p. 5).
+
 ## 4min. Comece a jogar em 4 minutos
 
 **Meta:** em 4 minutos de leitura, montar a cidade e jogar o seu primeiro turno sem abrir o manual.
@@ -12,17 +139,12 @@ Um assassino está escondido num envelope, e cada jogador é um agente atrás de
 
 ### Monte a mesa
 
-Na ordem. O marcado *(depois)* se monta já e se usa mais tarde (p. 5 e 6).
+A montagem completa, com figuras, está na seção "Montar a mesa passo a passo", logo acima. O essencial, na ordem; o marcado *(depois)* se monta já e se usa mais tarde (p. 5 e 6):
 
-1. A Carta de Delegacia no centro e as 24 Cartas de Quarteirão em volta, ao acaso, num quadrado de 5 por 5: a cidade.
-2. Fichas de Dado brancas no alto, uma por coluna, e pretas à esquerda, uma por linha, de 1 a 5. Uma Ficha de Testemunha ao lado de cada branca; uma de Informante ao lado de cada preta.
-3. Fichas de Investigação e de Tocaia viradas para baixo nos quarteirões marcados; as de Custódia na Delegacia *(depois)*.
-4. Os 2 Tabuleiros de Tempo lado a lado, lado Padrão para cima: a Trilha de Tempo.
-5. Mafiosos na Bolsa. Tire 3 e role os dados para cada um (Rolagem de Mafioso, abaixo); 6, 3 e 3 ou quarteirão ocupado: role de novo.
-6. Cada jogador: Tabuleiro de Agente (lado Padrão), Ajuda ao Jogador, Carro na Delegacia, Distintivo no desenho grande do tabuleiro, 1 Carta de Habilidade (de 2 recebidas) e 1 de Corporação *(depois)*.
-7. Indicadores de Tempo empilhados ao lado da trilha: o do mais velho embaixo, o do mais novo no topo.
-8. Uma Carta de Suspeito, sem ninguém ver, no Envelope de Assassino. As outras formam o baralho.
-9. Uma Carta de Evento virada no espaço "1" abaixo da trilha, preparada como ela manda *(depois)*.
+1. A cidade: Delegacia no centro e 24 quarteirões em volta, 5 por 5; Fichas de Dado brancas no alto com as Testemunhas, pretas à esquerda com os Informantes.
+2. Investigação e Tocaia viradas para baixo nos quarteirões marcados; Custódia na Delegacia *(depois)*; os 2 Tabuleiros de Tempo lado a lado, lado Padrão, formam a trilha; 3 mafiosos sorteados na cidade.
+3. Cada um: Tabuleiro de Agente, Carro na Delegacia, Distintivo, 1 Carta de Habilidade e 1 de Corporação *(depois)*; Indicadores de Tempo empilhados com o do mais novo no topo.
+4. Uma Carta de Suspeito no Envelope de Assassino e um Evento no espaço "1" da trilha *(depois)*.
 
 ### Seu primeiro turno
 
@@ -116,7 +238,7 @@ São quatro etapas, cada uma uma parte real da partida, com **Para entender** (c
 > 12. Cartas de Suspeito embaralhadas; uma, sem ser revelada, entra no Envelope de Assassino com a seta do verso visível na fenda.
 > 13. Cartas de Evento embaralhadas. Vire uma no espaço "1" abaixo da trilha, leia em voz alta a preparação dela e cumpra.
 
-!fig[A cidade montada, com a Trilha de Tempo e o primeiro Evento no alto, as fichas nas bordas e nos quarteirões, os carros na Delegacia e os 3 primeiros mafiosos. Ilustração: manual Asmodee (p. 7)](figuras/preparacao.webp)
+A figura completa da mesa montada está em "Montar a mesa passo a passo", no início do guia.
 
 > [!mais] **Anotações.** Papel e lápis são permitidos, em segredo, e ninguém é obrigado a mostrar o que anotou (p. 6).
 

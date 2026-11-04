@@ -103,3 +103,35 @@ Manual conferido: PDF da edição brasileira v1.0 (pdftotext -layout; p. 5, 8 e 
 - Solo e variantes (p. 18 a 21), resumo. ok. Termos impressos (Ponteiro Frontal, Ponteiro de Tentáculo, Tabuleiro de Rastejadores, Tabuleiro de Descarte, Trilha de Delírio, Trilhas de Temperamento, Bolsa de Compra de Tentáculos, Selar um Portal, Selar uma Cor). ok.
 
 **Veredito:** APROVADO COM CORREÇÕES (uma contagem ambígua na preparação e um [!edicao] reescrito para mostrar as duas leituras).
+
+## Seção de montagem (04/11/2026)
+
+Pedido do editor: seção `## setup. Montar a mesa passo a passo` antes do "Comece a jogar", seguindo a "Preparação" (p. 4) na mesma ordem e o diagrama da p. 5. Manual baixado de novo da biblioteca da Asmodee Brasil (arquivo id 3045; o endereço com `group=b2` do dossiê agora responde 404, o mesmo arquivo veio com `group=b2c`, num zip com `TNE151_regras_v1.0.pdf`, 24 páginas, título interno `TECth_Rulebook Sarah V4 Edit_pt-BR_v1.01.indd`, criado em 24/04/2025, modificado em 08/04/2026, igual ao do dossiê). Texto em `scratchpad/setup/tiny-epic-cthulhu/manual.txt`; p. 3 a 5 e 18 lidas também como imagem.
+
+- **Passo a página:** componentes (p. 3); passos 1 e 2 (p. 4, 1 e 2); 3 e 4, Grande Antigo e Meeple de Força (p. 4, 3 e 3A); 5 e 6, jogadores e Ficha de Cérebro (p. 4, 4 e 4A); 7 e 8, Necronomicon e Fichas de Página (p. 4, 5 e 5A); 9 e 10, Cartas de Página (p. 4, 6 e 6A); 11, Rastejadores (p. 4, 7 e 7A); 12, Descarte (p. 4, 8); 13, dados (p. 4, 9); 14 a 16, os giros (p. 4, 10 e 10A a 10C); 17 a 20, tentáculos (p. 4, 11A a 11E); 21, Caos (p. 4 e 5, 11F a 11H); 22, 2 Tentáculos da Loucura por Carta de Cidade (p. 5, 12). Quem começa (p. 6). Solo (p. 18). Dificuldade (p. 3).
+- **Contas refeitas em Python:** Caos distribuído: 2 x 2 + 0 = 4 (solo e 2), 1 x 3 + 1 = 4 (3), 0 + 4 = 4 (4); com 10 no Necronomicon e 3 no estoque, 17 nas três contagens. Tentáculos da Loucura: 27 + 9 + 9 = 45; na bolsa depois do passo 22, 27 - 10 = 17. Ancestrais: 3 + 15 + 5 = 23. Cartas de Página no baralho: 30 - 5 = 25. Rastejadores na cidade = número de jogadores (2 no solo, que se prepara como para 2, p. 18); Tabuleiros de Jogador na caixa, 6 - 2 = 4, 6 - 3 = 3, 6 - 4 = 2.
+- **Interpretado:** um giro para cada Rastejador (passo 15), como já explicado no `[!edicao]` da Etapa 1 (p. 4). A coluna "Tabuleiros de Jogador que voltam à caixa" lê "Coloque os componentes de jogador restantes na caixa" (p. 4, passo 4) com 6 tabuleiros na caixa (p. 3).
+- **Figuras novas** (só a parte gráfica; rótulos e números de passo do manual cortados ou cobertos com a cor do fundo): `setup-roleta-cidades.webp` (Cartas de Cidade e Roleta, p. 3, com o canto da bolsa e o começo do rótulo "1 Bolsa" cobertos); `setup-grande-antigo.webp` (Tabuleiros e meeples dos Grandes Antigos e Meeple de Força, p. 3); `setup-jogadores.webp` (quatro Tabuleiros de Jogador, p. 5, e as Fichas de Cérebro, p. 3); `setup-necronomicon.webp` (Necronomicon, p. 5, e uma Ficha de Página, p. 3); `setup-paginas.webp` (Cartas de Página, p. 3); `setup-rastejadores.webp` (Tabuleiro de Rastejadores, p. 5, sem o título e o número 11C); `setup-descarte.webp` (p. 3); `setup-dados.webp` (p. 3); `setup-bolsa.webp` (os 27 Tentáculos da Loucura, p. 5, a bolsa e um Ancestral, p. 3); `setup-tentaculos-cidade.webp` (passo 12 do manual, p. 5, sem o rótulo). Reaproveitada: `preparacao.webp` (p. 5). Foto oficial `fotos/mesa-1.webp`, crédito de `fotos/fontes.json` ("Imagem: Gamelyn Games · edição Deluxe"), com aviso de que é a edição Deluxe.
+- **Passos sem ilustração própria no manual:** o Meeple de Força já no espaço sem número (passo 4) e a Ficha de Cérebro na Trilha de Delírio (passo 6) só aparecem na figura geral; as Cartas de Página ao lado das Cartas de Cidade (passo 10) e os três giros da Roleta (passos 14 a 16) aparecem só no diagrama geral da p. 5, com setas e rótulos, e não foram recortados à parte; os tentáculos nos Tabuleiros de Rastejadores e de Descarte (passos 18 e 19), os Ancestrais nas Cartas de Cidade (passo 20) e a distribuição do Caos por número de jogadores (passo 21) estão no diagrama de 4 jogadores, misturados com rótulos; o manual não ilustra a montagem de 2 ou 3 jogadores nem a do Assistente no solo. Esses passos ficam com texto e com a figura geral.
+- **Comece a jogar:** "Monte a mesa" virou um resumo de 5 itens que aponta para a nova seção; `checar_comece.py` aprovado; `vicios.py` sem aviso; zero travessão. `publicar` não foi alterado.
+
+## Auditoria independente da montagem (04/11/2026)
+
+Resultado: aprovado com correções. O que foi aplicado:
+
+- **Erro 1:** a legenda da foto `mesa-1` agora diz "Partida em andamento, na imagem da editora (edição Deluxe em inglês, com peças diferentes das da caixa comum); não mostra a mesa da preparação."
+- **Erro 2:** `setup-necronomicon.webp` refeita a partir da p. 5. Ela mostra os 10 espaços com Tentáculos do Caos, 5 no alto das colunas e 5 à direita das linhas, e a pilha de Fichas de Página. A seta 11G, os rótulos "Coloque 15 Rastejadores", "5A" e "Fichas de Página" e o título "Necronomicon" ficaram fora do recorte ou foram cobertos com o fundo desfocado. O quinto tentáculo da direita já está sob o rótulo no próprio manual, e a legenda avisa.
+- **Erro 3:** `preparacao.webp` saiu da Etapa 1; no lugar ficou "(Diagrama completo na seção "Montar a mesa passo a passo".)".
+- **Menor 1:** os itens 2 e 5 do resumo do 4min foram completados com os 15 Rastejadores, as Fichas de Página, os dados, os 3 tentáculos de cada cor nos Tabuleiros de Rastejadores e de Descarte, o estoque, e o Caos no Necronomicon e no estoque.
+- **Menor 2:** o passo 15 diz "espaço vazio mais baixo" (p. 7: "colocados no espaço vazio mais abaixo").
+- **Menor 3:** a contagem dos Ancestrais diz "No modo normal (p. 3)".
+- **Menor 4:** sobras limpas. Em `setup-roleta-cidades`, o fragmento amarelo e a marca preta saíram, e a máscara ganhou a cor do fundo. Em `setup-jogadores`, a borda esquerda e o traço do alto saíram. Em `setup-rastejadores`, a seta 7A foi coberta.
+- **Menor 5:** o "Antes de começar" inclui os 9 tentáculos no Tabuleiro de Rastejadores, os 9 no de Descarte, as Fichas de Página e os dados.
+- **Clareza 1:** o passo 3 diz "com o lado da Primeira Fase para cima" (p. 8).
+- **Clareza 2:** o passo 5 diz "no lado normal (o outro lado é o do Assistente, da partida solo)" (p. 6 e 18).
+- **Clareza 3:** o quadro do solo dá a ordem da p. 18: girar e resolver o Assistente, girar e jogar você. O Assistente age primeiro.
+- **Clareza 4:** todos os passos citam o passo do manual.
+- **Clareza 5:** o texto explica que a "Carta de Referência para Partida Solo" da lista de componentes (p. 3) e a "Carta de Referência de Assistente" da p. 18 são a mesma carta. É leitura do guia: há uma só carta de referência na lista da p. 3.
+- **Clareza 6:** o passo 16 diz que o meeple pode começar na carta do Grande Antigo e remete à Etapa 1 (p. 4 e 13).
+- **Opcional:** o passo 14 diz "pelo menos duas voltas" (p. 10). A pergunta `??` não foi trocada.
+- `checar_comece.py` aprovado; `vicios.py` sem aviso; zero travessão.
