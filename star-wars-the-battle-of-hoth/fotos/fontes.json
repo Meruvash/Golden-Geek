@@ -1,0 +1,70 @@
+{
+ "slug": "star-wars-the-battle-of-hoth",
+ "usar_na_pagina": true,
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 1080,
+   "altura": 1080,
+   "editora": "Days of Wonder",
+   "credito": "Imagem: Days of Wonder",
+   "pagina": "https://www.daysofwonder.com/de/game/star-wars-battle-of-hoth-das-brettspiel/",
+   "imagem": "https://cdn.svc.asmodee.net/production-daysofwonder/uploads/image-converter/2025/05/BOH_BOX-3D_LEFT_EN-1.webp",
+   "baixada_em": "2026-11-04",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/mesa-1.webp",
+   "tipo": "mesa",
+   "largura": 1500,
+   "altura": 998,
+   "editora": "Days of Wonder",
+   "credito": "Imagem: Days of Wonder",
+   "pagina": "https://www.daysofwonder.com/de/game/star-wars-battle-of-hoth-das-brettspiel/",
+   "imagem": "https://cdn.svc.asmodee.net/production-daysofwonder/uploads/image-converter/2025/05/05-scaled.webp",
+   "baixada_em": "2026-11-04",
+   "aprovada": true,
+   "principal": true
+  },
+  {
+   "arquivo": "fotos/jogabilidade-1.webp",
+   "tipo": "jogabilidade",
+   "largura": 1500,
+   "altura": 1000,
+   "editora": "Days of Wonder",
+   "credito": "Imagem: Days of Wonder",
+   "pagina": "https://www.daysofwonder.com/de/game/star-wars-battle-of-hoth-das-brettspiel/",
+   "imagem": "https://cdn.svc.asmodee.net/production-daysofwonder/uploads/image-converter/2025/05/08-scaled.webp",
+   "baixada_em": "2026-11-04",
+   "aprovada": true,
+   "jogar": true
+  },
+  {
+   "arquivo": "fotos/jogabilidade-2.webp",
+   "tipo": "jogabilidade",
+   "largura": 1600,
+   "altura": 1066,
+   "editora": "Days of Wonder",
+   "credito": "Imagem: Days of Wonder",
+   "pagina": "https://www.daysofwonder.com/de/game/star-wars-battle-of-hoth-das-brettspiel/",
+   "imagem": "https://cdn.svc.asmodee.net/production-daysofwonder/uploads/image-converter/2025/05/27.webp",
+   "baixada_em": "2026-11-04",
+   "aprovada": true,
+   "fora": true
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 1500,
+   "altura": 1000,
+   "editora": "Days of Wonder",
+   "credito": "Imagem: Days of Wonder",
+   "pagina": "https://www.daysofwonder.com/de/game/star-wars-battle-of-hoth-das-brettspiel/",
+   "imagem": "https://cdn.svc.asmodee.net/production-daysofwonder/uploads/image-converter/2025/05/25-scaled.webp",
+   "baixada_em": "2026-11-04",
+   "aprovada": true,
+   "fora": true
+  }
+ ]
+}

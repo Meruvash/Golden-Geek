@@ -428,6 +428,8 @@ def original(url):
     """Pede a maior versão da imagem: tira sufixos de miniatura do Shopify e do WordPress."""
     p = urlsplit(url)
     caminho = re.sub(r"_(\d+x\d*|\d*x\d+|small|medium|large|grande|compact|thumb)(?=(@\dx)?\.\w+$)", "", p.path)
+    # PrestaShop (Lucky Duck, Matagot): a galeria lista miniaturas small/home/medium_default; a grande é large_default
+    caminho = re.sub(r"(/\d+)-(small|home|medium|cart)_default/", r"\1-large_default/", caminho)
     if "cdn.sanity.io" not in p.netloc:  # no Sanity o tamanho faz parte do nome do arquivo
         caminho = re.sub(r"-\d{2,4}x\d{2,4}(?=\.\w+$)", "", caminho)
     query = "&".join(q for q in p.query.split("&") if q and not re.match(r"(width|height|w|h|crop|v)=", q))

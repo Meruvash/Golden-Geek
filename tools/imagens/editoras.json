@@ -1884,5 +1884,209 @@
    ],
    "verificado_em": "2026-11-04"
   }
+ },
+ "plaidhatgames.com": {
+  "nome": "Plaid Hat Games",
+  "apelidos": [
+   "Plaid Hat Games"
+  ],
+  "site": "https://www.plaidhatgames.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://www.plaidhatgames.com/accounts/retailer-redirect/",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 404,
+   "crawl_delay": null,
+   "sitemaps": [],
+   "verificado_em": "2026-11-04"
+  }
+ },
+ "gmtgames.com": {
+  "nome": "GMT Games",
+  "apelidos": [
+   "GMT Games"
+  ],
+  "site": "https://gmtgames.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "bloqueado",
+  "obs": "robots.txt proíbe https://gmtgames.com"
+ },
+ "matagot.com": {
+  "nome": "Matagot",
+  "apelidos": [
+   "Matagot"
+  ],
+  "site": "https://www.matagot.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://www.matagot.com/en/content/13-press",
+  "paginas": {},
+  "status": "ok",
+  "obs": "site montado com JavaScript: o robô abre as páginas no navegador",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [],
+   "verificado_em": "2026-11-04"
+  },
+  "js": true
+ },
+ "garphill.com": {
+  "nome": "Garphill Games",
+  "apelidos": [
+   "Garphill Games"
+  ],
+  "site": "https://www.garphill.com",
+  "plataforma": "shopify",
+  "estrategia": "sitemap+shopify_json",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.garphill.com/sitemap.xml"
+   ],
+   "verificado_em": "2026-11-04"
+  }
+ },
+ "renegadegamestudios.com": {
+  "nome": "Renegade Game Studios",
+  "apelidos": [
+   "Renegade Game Studios"
+  ],
+  "site": "https://renegadegamestudios.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://renegadegamestudios.com/downloads/free-pdf-downloads/",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [],
+   "verificado_em": "2026-11-04"
+  }
+ },
+ "asmodee.de": {
+  "nome": "Asmodee Deutschland",
+  "apelidos": [
+   "Asmodee Deutschland"
+  ],
+  "site": "https://www.asmodee.de",
+  "plataforma": "wordpress",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://archiv.asmodee.de/archiv.php",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [],
+   "verificado_em": "2026-11-04"
+  }
+ },
+ "dontpanicgames.com": {
+  "nome": "Don't Panic Games",
+  "apelidos": [
+   "Don't Panic Games"
+  ],
+  "site": "https://www.dontpanicgames.com",
+  "plataforma": "woocommerce",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [],
+   "verificado_em": "2026-11-04"
+  }
+ },
+ "cmon.com": {
+  "nome": "CMON",
+  "apelidos": [
+   "CMON"
+  ],
+  "site": "https://cmon.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "bloqueado",
+  "obs": "403 em https://cmon.com"
+ },
+ "frostedgames.de": {
+  "nome": "Frosted Games",
+  "apelidos": [
+   "Frosted Games"
+  ],
+  "site": "https://frostedgames.de",
+  "plataforma": "woocommerce",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://frostedgames.de/presse-anmeldung/",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://frostedgames.de/sitemap_index.xml"
+   ],
+   "verificado_em": "2026-11-04"
+  }
+ },
+ "phalanxgames.co.uk": {
+  "nome": "PHALANX",
+  "apelidos": [
+   "PHALANX"
+  ],
+  "site": "https://phalanx.co.uk",
+  "plataforma": "woocommerce",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [],
+   "verificado_em": "2026-11-04"
+  }
+ },
+ "academygames.com": {
+  "nome": "Academy Games",
+  "apelidos": [
+   "Academy Games"
+  ],
+  "site": "https://www.academygames.com",
+  "plataforma": "shopify",
+  "estrategia": "sitemap+shopify_json",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.academygames.com/sitemap.xml"
+   ],
+   "verificado_em": "2026-11-04"
+  }
  }
 }

@@ -1,0 +1,70 @@
+{
+ "slug": "under-falling-skies",
+ "usar_na_pagina": true,
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 927,
+   "altura": 1400,
+   "editora": "Czech Games Edition",
+   "credito": "Imagem: Czech Games Edition",
+   "pagina": "https://www.czechgames.com/games/under-falling-skies",
+   "imagem": "https://cdn.prod.website-files.com/67d17a45b4e1484b40ea8869/67d2acdb8c16b98445f6a2f9_Box%20image.webp",
+   "baixada_em": "2026-11-04",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/mesa-1.webp",
+   "tipo": "mesa",
+   "largura": 1500,
+   "altura": 1000,
+   "editora": "Czech Games Edition",
+   "credito": "Imagem: Czech Games Edition",
+   "pagina": "https://www.czechgames.com/games/under-falling-skies",
+   "imagem": "https://cdn.prod.website-files.com/67d17a45b4e1484b40ea8869/67d2acf03da955d413c57107_Photos%2003.webp",
+   "baixada_em": "2026-11-04",
+   "aprovada": true,
+   "principal": true
+  },
+  {
+   "arquivo": "fotos/mesa-2.webp",
+   "tipo": "mesa",
+   "largura": 1500,
+   "altura": 1000,
+   "editora": "Czech Games Edition",
+   "credito": "Imagem: Czech Games Edition",
+   "pagina": "https://www.czechgames.com/games/under-falling-skies",
+   "imagem": "https://cdn.prod.website-files.com/67d17a45b4e1484b40ea8869/67d2acfd8c16b98445f6d60c_Components%20Photo%2001.webp",
+   "baixada_em": "2026-11-04",
+   "aprovada": true,
+   "fora": true
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 1500,
+   "altura": 1000,
+   "editora": "Czech Games Edition",
+   "credito": "Imagem: Czech Games Edition",
+   "pagina": "https://www.czechgames.com/games/under-falling-skies",
+   "imagem": "https://cdn.prod.website-files.com/67d17a45b4e1484b40ea8869/67d2acf00396d442eae96901_Photos%2002.webp",
+   "baixada_em": "2026-11-04",
+   "aprovada": true,
+   "jogar": true
+  },
+  {
+   "arquivo": "fotos/componentes-2.webp",
+   "tipo": "componentes",
+   "largura": 1500,
+   "altura": 1000,
+   "editora": "Czech Games Edition",
+   "credito": "Imagem: Czech Games Edition",
+   "pagina": "https://www.czechgames.com/games/under-falling-skies",
+   "imagem": "https://cdn.prod.website-files.com/67d17a45b4e1484b40ea8869/67d2acf02bedf9ddf68b4e6e_Photos%2004.webp",
+   "baixada_em": "2026-11-04",
+   "aprovada": true,
+   "fora": true
+  }
+ ]
+}

@@ -1,0 +1,57 @@
+{
+ "slug": "878",
+ "usar_na_pagina": true,
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 1000,
+   "altura": 1000,
+   "editora": "Academy Games",
+   "credito": "Imagem: Academy Games · 2ª edição",
+   "pagina": "https://www.academygames.com/collections/878-vikings",
+   "imagem": "https://www.academygames.com/cdn/shop/files/878VikingsBaseGame@2x.jpg",
+   "baixada_em": "2026-11-04",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/mesa-1.webp",
+   "tipo": "mesa",
+   "largura": 1600,
+   "altura": 1067,
+   "editora": "Academy Games",
+   "credito": "Imagem: Academy Games · 2ª edição",
+   "pagina": "https://www.academygames.com/pages/878-vikings-2nd-edition",
+   "imagem": "https://cdn.shopify.com/s/files/1/1699/1705/files/878-Close1V2.png?14592887347986307028",
+   "baixada_em": "2026-11-04",
+   "aprovada": true,
+   "principal": true
+  },
+  {
+   "arquivo": "fotos/jogabilidade-1.webp",
+   "tipo": "jogabilidade",
+   "largura": 1000,
+   "altura": 1000,
+   "editora": "Academy Games",
+   "credito": "Imagem: Academy Games · 2ª edição",
+   "pagina": "https://www.academygames.com/collections/878-vikings",
+   "imagem": "https://www.academygames.com/cdn/shop/files/Extra878VikingsArmyUnitFigures@2x.jpg",
+   "baixada_em": "2026-11-04",
+   "aprovada": true,
+   "fora": true
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 1600,
+   "altura": 1067,
+   "editora": "Academy Games",
+   "credito": "Imagem: Academy Games · 2ª edição",
+   "pagina": "https://www.academygames.com/pages/878-vikings-2nd-edition",
+   "imagem": "https://cdn.shopify.com/s/files/1/1699/1705/files/4_8c545c59-2d6e-4866-949d-251f81815b78.JPG",
+   "baixada_em": "2026-11-04",
+   "aprovada": true,
+   "jogar": true
+  }
+ ]
+}

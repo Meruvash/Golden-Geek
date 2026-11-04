@@ -3315,10 +3315,14 @@
      "fonte": "https://brettspielbox.de/15th-annual-golden-geek-awards-sieger/"
     }
    ],
-   "status": "na_fila",
+   "status": "sem_fotos",
    "prioridade": 74,
    "premios_distintos": 1,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "fotos": {
+    "verificado_em": "2026-11-04",
+    "obs": "Plaid Hat Games (página do jogo: selos, caixa e render recortado 2,2:1), Asmodee UK (só renders em fundo branco), Portal Games (edição polonesa: sem página no site); sem edição nacional localizada; kit de imprensa público da Plaid Hat (fw_media_kit.zip): só renders, caixa, logotipo e telas do app"
+   }
   },
   {
    "jogo": "Imperial Struggle",
@@ -3343,10 +3347,14 @@
      "fonte": "https://eliteboardgamers.com.br/"
     }
    ],
-   "status": "na_fila",
+   "status": "sem_fotos",
    "prioridade": 75,
    "premios_distintos": 1,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "fotos": {
+    "verificado_em": "2026-11-04",
+    "obs": "GMT Games (gmtgames.com bloqueia robôs no robots.txt), TLAMA games (edição tcheca: só caixa); sem edição nacional localizada"
+   }
   },
   {
    "jogo": "Undaunted: North Africa",
@@ -3371,10 +3379,14 @@
      "fonte": "https://eliteboardgamers.com.br/"
     }
    ],
-   "status": "na_fila",
+   "status": "sem_fotos",
    "prioridade": 76,
    "premios_distintos": 1,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "fotos": {
+    "verificado_em": "2026-11-04",
+    "obs": "Osprey Games (página do produto, anúncio e posts do blog: só caixa e renders em fundo branco), MeepleBR (sem página do jogo); sem edição nacional localizada"
+   }
   },
   {
    "jogo": "Undaunted: Normandy",
@@ -3399,10 +3411,14 @@
      "fonte": "https://eliteboardgamers.com.br/"
     }
    ],
-   "status": "na_fila",
+   "status": "sem_fotos",
    "prioridade": 77,
    "premios_distintos": 1,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "fotos": {
+    "verificado_em": "2026-11-04",
+    "obs": "Osprey Games (página do produto, diário de design e posts do blog: só caixa, render em fundo branco e fotos hospedadas no BGG), Pegasus (sem página), MeepleBR (Destemidos: Normandia, edição nacional: só caixa com logo, arte e render em fundo verde liso)"
+   }
   },
   {
    "jogo": "Wavelength",
@@ -3485,10 +3501,14 @@
      "fonte": "https://eliteboardgamers.com.br/"
     }
    ],
-   "status": "na_fila",
+   "status": "sem_fotos",
    "prioridade": 79,
    "premios_distintos": 1,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "fotos": {
+    "verificado_em": "2026-11-04",
+    "obs": "Matagot (matagot.com, página do jogo: só caixa frente e verso), Asmodee UK (só caixas e logos), Asmodee Canada (sem página), Pegasus (edição alemã: sem página no site), Spiel des Jahres (só caixa); Conclave (edição nacional) não consultada por falta de site localizado"
+   }
   },
   {
    "jogo": "Codenames: Pictures",
@@ -3705,7 +3725,8 @@
    "status": "na_fila",
    "prioridade": 80,
    "premios_distintos": 1,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "slug": "star-wars-the-battle-of-hoth"
   },
   {
    "jogo": "The Old King’s Crown",
@@ -3722,10 +3743,14 @@
      "fonte": "https://eliteboardgamers.com.br/"
     }
    ],
-   "status": "na_fila",
+   "status": "sem_fotos",
    "prioridade": 81,
    "premios_distintos": 1,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "fotos": {
+    "verificado_em": "2026-11-04",
+    "obs": "Eerie Idol Games (site sem página do jogo: só cartas recortadas em fundo preto; kit de imprensa no Dropbox, que o robots.txt proíbe), Asmodee Canada (só caixa e render em fundo branco); sem edição nacional localizada"
+   }
   },
   {
    "jogo": "Topp die Torte",
@@ -3762,14 +3787,11 @@
      "fonte": "https://eliteboardgamers.com.br/"
     }
    ],
-   "status": "sem_fotos",
+   "status": "na_fila",
    "prioridade": 41,
    "premios_distintos": 1,
    "carro_chefe": true,
-   "fotos": {
-    "verificado_em": "2026-11-02",
-    "obs": "Catch Up Games; Kosmos (edição alemã: só renders e banner); Spiel des Jahres (Empfehlungsliste 2025: só caixa)"
-   }
+   "slug": "castle-combo"
   },
   {
    "jogo": "Forest Shuffle",
@@ -3910,10 +3932,14 @@
      "fonte": "https://eliteboardgamers.com.br/"
     }
    ],
-   "status": "na_fila",
+   "status": "sem_fotos",
    "prioridade": 83,
    "premios_distintos": 1,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "fotos": {
+    "verificado_em": "2026-11-04",
+    "obs": "Lucky Duck Games (página do jogo nos EUA: fotos de mesa boas, mas só 800x533 dentro de moldura branca 800x800, abaixo do mínimo do topo; resto é caixa e render), Asmodee UK (distribuidora); sem edição nacional localizada"
+   }
   },
   {
    "jogo": "Akropolis",
@@ -3970,10 +3996,14 @@
      "fonte": "https://eliteboardgamers.com.br/"
     }
    ],
-   "status": "na_fila",
+   "status": "sem_fotos",
    "prioridade": 84,
    "premios_distintos": 1,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "fotos": {
+    "verificado_em": "2026-11-04",
+    "obs": "Garphill Games (garphill.com: só caixas e promos), Renegade Game Studios (página do jogo e post do Origins Award: só caixas, troféu e foto com selo promocional por cima); sem edição nacional localizada"
+   }
   },
   {
    "jogo": "Mysterium Kids",
@@ -4140,10 +4170,14 @@
      "fonte": "https://eliteboardgamers.com.br/"
     }
    ],
-   "status": "na_fila",
+   "status": "sem_fotos",
    "prioridade": 86,
    "premios_distintos": 1,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "fotos": {
+    "verificado_em": "2026-11-04",
+    "obs": "Osprey Games (página da edição revisada, post de lançamento e diário de desenvolvimento: só capa, render em fundo branco e foto hospedada no BGG); sem edição nacional localizada"
+   }
   },
   {
    "jogo": "Attrape-rêves",
@@ -4263,7 +4297,8 @@
    "status": "na_fila",
    "prioridade": 87,
    "premios_distintos": 1,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "slug": "under-falling-skies"
   },
   {
    "jogo": "Dune",
@@ -4344,10 +4379,14 @@
      "fonte": "https://eliteboardgamers.com.br/"
     }
    ],
-   "status": "na_fila",
+   "status": "sem_fotos",
    "prioridade": 88,
    "premios_distintos": 1,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "fotos": {
+    "verificado_em": "2026-11-04",
+    "obs": "Frosted Games (página do jogo e comunicado de imprensa: só caixa e tabuleiro em fundo branco liso), Capstone Games (edição dos EUA: fotos de mesa só até 1000x642, abaixo do mínimo do topo), Pegasus (distribuidora alemã); sem edição nacional localizada"
+   }
   },
   {
    "jogo": "Dragon's Breath",
@@ -4384,10 +4423,14 @@
      "fonte": "https://eliteboardgamers.com.br/"
     }
    ],
-   "status": "na_fila",
+   "status": "sem_fotos",
    "prioridade": 89,
    "premios_distintos": 1,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "fotos": {
+    "verificado_em": "2026-11-04",
+    "obs": "PHALANX (phalanx.co.uk, página do jogo: só caixa, banner e uma foto decorativa em preto e branco); sem edição nacional localizada"
+   }
   },
   {
    "jogo": "Nom d’un renard",
@@ -4427,7 +4470,8 @@
    "status": "na_fila",
    "prioridade": 90,
    "premios_distintos": 1,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "slug": "878"
   },
   {
    "jogo": "Codenames Duet",

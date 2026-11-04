@@ -1,0 +1,83 @@
+{
+ "slug": "castle-combo",
+ "usar_na_pagina": true,
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 1600,
+   "altura": 1600,
+   "editora": "Pandasaurus Games",
+   "credito": "Imagem: Pandasaurus Games · edição dos EUA (Pandasaurus Games)",
+   "pagina": "https://pandasaurusgames.com/products/castle-combo",
+   "imagem": "https://cdn.shopify.com/s/files/1/0064/9972/9490/files/CastleComboWebsiteThumbnail.png",
+   "baixada_em": "2026-11-04",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/mesa-1.webp",
+   "tipo": "mesa",
+   "largura": 1024,
+   "altura": 684,
+   "editora": "Pandasaurus Games",
+   "credito": "Imagem: Pandasaurus Games · edição dos EUA (Pandasaurus Games)",
+   "pagina": "https://pandasaurusgames.com/products/castle-combo",
+   "imagem": "https://pandasaurusgames.com/cdn/shop/files/CastleCombo_PTG24_27.jpg",
+   "baixada_em": "2026-11-04",
+   "aprovada": true,
+   "jogar": true
+  },
+  {
+   "arquivo": "fotos/mesa-2.webp",
+   "tipo": "mesa",
+   "largura": 1024,
+   "altura": 684,
+   "editora": "Pandasaurus Games",
+   "credito": "Imagem: Pandasaurus Games · edição dos EUA (Pandasaurus Games)",
+   "pagina": "https://pandasaurusgames.com/products/castle-combo",
+   "imagem": "https://cdn.shopify.com/s/files/1/0064/9972/9490/files/CastleCombo_PTG24_36.jpg",
+   "baixada_em": "2026-11-04",
+   "aprovada": true,
+   "fora": true
+  },
+  {
+   "arquivo": "fotos/jogabilidade-1.webp",
+   "tipo": "jogabilidade",
+   "largura": 1024,
+   "altura": 684,
+   "editora": "Pandasaurus Games",
+   "credito": "Imagem: Pandasaurus Games · edição dos EUA (Pandasaurus Games)",
+   "pagina": "https://pandasaurusgames.com/products/castle-combo",
+   "imagem": "https://cdn.shopify.com/s/files/1/0064/9972/9490/files/CastleCombo_PTG24_32.jpg",
+   "baixada_em": "2026-11-04",
+   "aprovada": true,
+   "fora": true
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 1600,
+   "altura": 1067,
+   "editora": "Pandasaurus Games",
+   "credito": "Imagem: Pandasaurus Games · edição dos EUA (Pandasaurus Games)",
+   "pagina": "https://pandasaurusgames.com/products/castle-combo",
+   "imagem": "https://pandasaurusgames.com/cdn/shop/files/Castle_Combo_photo_01.jpg",
+   "baixada_em": "2026-11-04",
+   "aprovada": true,
+   "principal": true
+  },
+  {
+   "arquivo": "fotos/componentes-2.webp",
+   "tipo": "componentes",
+   "largura": 1600,
+   "altura": 1067,
+   "editora": "Pandasaurus Games",
+   "credito": "Imagem: Pandasaurus Games · edição dos EUA (Pandasaurus Games)",
+   "pagina": "https://pandasaurusgames.com/products/castle-combo",
+   "imagem": "https://pandasaurusgames.com/cdn/shop/files/Castle_Combo_photo_03.jpg",
+   "baixada_em": "2026-11-04",
+   "aprovada": true,
+   "fora": true
+  }
+ ]
+}
