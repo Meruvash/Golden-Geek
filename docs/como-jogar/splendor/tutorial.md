@@ -4,7 +4,7 @@
 
 ## setup. Montar a mesa passo a passo
 
-A montagem segue a página de preparação do manual de 2015 (p. 2), na mesma ordem, com o que o folheto de 2025 acrescenta. É igual para 2, 3 ou 4 jogadores, salvo nos passos 3 e 4.
+A montagem segue a página de preparação do manual de 2015 (p. 2), na mesma ordem, com o que o folheto de 2025 acrescenta. É igual para 2, 3 ou 4 jogadores, salvo nos passos 4 e 5.
 
 **O que vem na caixa** (p. 2; manual de 2025):
 
@@ -16,24 +16,24 @@ A montagem segue a página de preparação do manual de 2015 (p. 2), na mesma or
 | Cartões de nobres | 10 |
 | Marcador de primeiro jogador | 1, só na caixa de 2025 |
 
-!fig[As 40 fichas, da esquerda para a direita: diamante (branca), safira (azul), rubi (vermelha), esmeralda (verde), ônix (preta) e ouro (amarela). Ilustração: manual Galápagos de 2025](figuras/setup-fichas.webp)
+!fig[Os seis tipos de ficha, da esquerda para a direita: diamante (branca), safira (azul), rubi (vermelha), esmeralda (verde), ônix (preta) e ouro (amarela). Ilustração: manual Galápagos de 2025](figuras/setup-fichas.webp)
 
 1. **Separe as cartas de desenvolvimento em três baralhos pelo verso.** O verso mostra o nível com uma, duas ou três marcas redondas: nível 1, nível 2 e nível 3. Embaralhe cada baralho separadamente (p. 2).
 
 !fig[Os versos dos três níveis, da esquerda para a direita: nível 1 (verde, uma marca), nível 2 (amarelo, duas) e nível 3 (azul, três). Ilustração: manual Galápagos de 2025](figuras/setup-baralhos.webp)
 
 2. **Ponha os três baralhos virados para baixo numa coluna no centro da mesa**, em ordem crescente de baixo para cima: nível 1 embaixo, nível 2 no meio, nível 3 em cima (p. 2; manual de 2025, passo 1).
-3. **Revele 4 cartas de cada nível**, viradas para cima, numa fileira à direita do baralho do mesmo nível. São 12 cartas à mostra (p. 2; manual de 2025, passo 2).
+3. **Revele 4 cartas de cada nível**, tiradas do baralho já embaralhado daquele nível, viradas para cima, numa fileira à direita dele. São 12 cartas à mostra (p. 2; manual de 2025, passo 2).
 4. **Embaralhe os cartões de nobres e revele o número de jogadores mais um**, virados para cima, numa fileira acima das cartas: 3 nobres com 2 jogadores, 4 com 3, 5 com 4. Os outros voltam para a caixa e não são usados nesta partida (p. 2; manual de 2025, passo 3).
 
-!fig[Cartões de nobres (cada um vale 3 pontos e mostra embaixo, à esquerda, o seu pedido de bônus) e, à direita, o marcador de primeiro jogador da caixa de 2025. Ilustração: manual Galápagos de 2025](figuras/setup-nobres.webp)
+!fig[Um cartão de nobre: vale 3 pontos e mostra embaixo, à esquerda, o seu pedido (este pede 3 bônus verdes, 3 azuis e 3 vermelhos). À direita, o marcador de primeiro jogador da caixa de 2025. Ilustração: manual Galápagos de 2025](figuras/setup-nobres.webp)
 
 5. **Separe as fichas por cor em seis pilhas**, ao alcance de todos: é o estoque. Com 4 jogadores, use todas. Com 3, devolva à caixa 2 fichas de cada pedra preciosa; com 2, devolva 3 de cada. As fichas de ouro nunca mudam: são sempre 5 (p. 2; manual de 2025, passo 4).
 
 !fig[A mesa montada para 4 jogadores na caixa de 2015: 5 nobres no alto, os três baralhos à esquerda, nível 3 em cima, com 4 cartas reveladas ao lado de cada um, e as seis pilhas de fichas embaixo. Ilustração: manual Galápagos (p. 2)](figuras/preparacao.webp)
 
 6. **Defina quem começa.** O jogador mais novo começa, e a vez segue no sentido horário (p. 3). Na caixa de 2025, ele pega o marcador de primeiro jogador (manual de 2025, passo 5).
-7. **Ninguém recebe nada na montagem**: os passos do manual não dão fichas nem cartas aos jogadores. Tudo o que cada um vai ter sai do estoque e das cartas à mostra durante a partida (p. 2 e 3).
+7. **Ninguém recebe fichas nem cartas na montagem**: os passos do manual não dão fichas nem cartas aos jogadores. Tudo o que cada um vai ter sai do estoque e das cartas à mostra durante a partida (p. 2 e 3).
 
 !fig[A mesma montagem na caixa de 2025, com os números dos passos do manual: 1, os baralhos; 2, as cartas reveladas; 3, os nobres; 4, as fichas; 5, o marcador de primeiro jogador. Ilustração: manual Galápagos de 2025](figuras/setup-2025.webp)
 
@@ -45,9 +45,7 @@ A montagem segue a página de preparação do manual de 2015 (p. 2), na mesma or
 | 3 | 5 | 10 (2 de cada) | 5 | 4 | 6 |
 | 4 | 7 | nenhuma | 5 | 5 | 5 |
 
-"Não há outras modificações", diz o manual (p. 2). Voltam para a caixa só as fichas de pedra da tabela e os nobres não revelados; as cartas de desenvolvimento ficam todas nos baralhos.
-
-!fig[Splendor montado na mesa, na foto da editora. Imagem: Space Cowboys](fotos/mesa-1.webp)
+"Não há outras modificações", diz o manual (p. 2). Voltam para a caixa só as fichas de pedra da tabela e os nobres não revelados; nenhuma carta de desenvolvimento volta para a caixa.
 
 **Antes de começar, confira:** baralhos em coluna com o nível 3 em cima; 4 cartas abertas em cada nível; nobres em número igual aos jogadores mais um; fichas de pedra conforme a tabela e as 5 de ouro; ninguém com fichas; quem começa definido.
 

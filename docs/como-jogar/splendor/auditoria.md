@@ -107,3 +107,13 @@ Pedido do editor: seção `## setup. Montar a mesa passo a passo` antes do "Come
 - **Figuras novas** (recortes só da parte gráfica, textos do manual retirados): `setup-fichas.webp` (as seis fichas do quadro de componentes de 2025, recompostas lado a lado sem as legendas), `setup-baralhos.webp` (os três versos, sem as legendas), `setup-nobres.webp` (três nobres e o marcador de primeiro jogador, recompostos sem as legendas), `setup-2025.webp` (a ilustração de preparação de 2025 com os números dos passos, sem o texto). `preparacao.webp` (2015 p. 2) saiu da etapa 1 e foi para o passo 5 da montagem. Foto oficial `fotos/mesa-1.webp`, crédito "Imagem: Space Cowboys" conforme `fotos/fontes.json`.
 - **Passos sem ilustração no manual:** a tabela de 2 e 3 jogadores (p. 2) é só texto, sem desenho da mesa com menos fichas ou nobres; o embaralhar e a devolução de fichas e nobres à caixa não são ilustrados; a ordem de jogo (sentido horário) não tem desenho. Nada foi inventado para esses passos: ficam com texto, e a figura mais próxima é a da mesa de 4 jogadores.
 - **Comece a jogar:** "Monte a mesa" virou um resumo de 4 itens que aponta para a nova seção; `checar_comece.py` aprovado; `vicios.py` com 0 aviso; zero travessão. `publicar` não foi alterado.
+
+## Auditoria independente da montagem (04/11/2026)
+
+Resultado: aprovado com correções. Aplicadas:
+
+- Erro 1: a introdução dizia "salvo nos passos 3 e 4"; os passos que mudam com o número de jogadores são o 4 (nobres) e o 5 (fichas). Corrigido.
+- Erro 2: a foto `fotos/mesa-1.webp` mostra os 10 nobres abaixo das cartas, o que contradiz o passo 4. Saiu da seção de montagem e não foi usada em outro lugar do tutorial.
+- Menores: legenda de `setup-fichas.webp` passou a "Os seis tipos de ficha"; título do passo 7 passou a "Ninguém recebe fichas nem cartas na montagem"; "nenhuma carta de desenvolvimento volta para a caixa" no lugar de "ficam todas nos baralhos".
+- Clareza: `setup-nobres.webp` recortada de novo, só com o nobre inteiro (pedido de 3 verdes, 3 azuis e 3 vermelhos, lido na ilustração) e o marcador, sem as linhas cinzas e sem o nobre cortado; legenda ajustada. O passo 3 diz que as 4 cartas são tiradas do baralho embaralhado daquele nível (p. 2; 2025: "Revele 4 cartas de cada nível, colocando-as em uma fileira à direita dos respectivos baralhos").
+- Portões refeitos: `checar_comece.py` aprovado, `vicios.py` 0 aviso, zero travessão.
