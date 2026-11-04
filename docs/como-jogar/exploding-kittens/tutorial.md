@@ -38,7 +38,7 @@ Tudo o que a partida usa é o baralho de 56 cartas; não há tabuleiro nem peça
 
 5. **Ponha os Exploding Kittens de volta no baralho**, em número igual ao de jogadores menos 1: 1 com 2 jogadores, 2 com 3, 3 com 4, 4 com 5. Os que sobram saem da partida e voltam para a caixa. É isso que garante que todos explodam, menos um.
 
-!fig[Passo 5: os Exploding Kittens da partida entram no baralho. Ilustração: manual Galápagos (p. 1)](figuras/setup-gatinhos-de-volta.webp)
+!fig[Passo 5, exemplo com 4 jogadores: 3 Exploding Kittens entram no baralho. Ilustração: manual Galápagos (p. 1)](figuras/setup-gatinhos-de-volta.webp)
 
 6. **Embaralhe e ponha o baralho no centro da mesa**, virado para baixo. Essa é a Pilha de Compra. Deixe ao lado um espaço vazio para a Pilha de Descarte, onde as cartas jogadas ficam viradas para cima.
 
@@ -82,8 +82,8 @@ No baralho há **Exploding Kittens**, gatinhos explosivos. Na sua vez, você jog
 
 A montagem completa, com figuras, está em "Montar a mesa passo a passo", logo acima. Os pontos principais (p. 1):
 
-1. Separe os 4 Exploding Kittens e as 6 Cartas de Desarme; dê 1 Desarme a cada jogador e devolva os outros ao baralho (com 2 ou 3 jogadores, só 2).
-2. Dê 7 cartas a cada um e ponha no baralho Exploding Kittens em número igual ao de jogadores menos 1.
+1. Separe os 4 Exploding Kittens e as 6 Cartas de Desarme; dê 1 Desarme a cada jogador e devolva os outros ao baralho (com 2 ou 3 jogadores, só 2; os demais voltam para a caixa).
+2. Embaralhe e dê 7 cartas a cada um (cada um fica com 8); depois ponha no baralho Exploding Kittens em número igual ao de jogadores menos 1 e devolva à caixa os que sobrarem.
 3. Embaralhe, ponha a Pilha de Compra no centro e escolham quem começa. A vez passa para a esquerda.
 
 ### Seu primeiro turno

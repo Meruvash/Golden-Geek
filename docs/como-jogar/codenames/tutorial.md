@@ -4,7 +4,7 @@
 
 ## setup. Montar a mesa passo a passo
 
-Esta seção segue a página de preparação do manual (p. 2 e 3), na mesma ordem. Leva uns 2 minutos na mesa.
+Esta seção segue a preparação do manual (p. 2 e 3), na mesma ordem, com a ampulheta da p. 5 no fim. Leva uns 2 minutos na mesa.
 
 **Componentes usados na partida**
 
@@ -33,14 +33,16 @@ Esta seção segue a página de preparação do manual (p. 2 e 3), na mesma orde
 2. **Escolha os espiões mestres.** Cada equipe escolhe um jogador para ser o seu espião mestre (p. 2).
 3. **Sente todos no lugar.** Os dois espiões mestres sentam do mesmo lado da mesa. Os outros jogadores, os agentes de campo, sentam do lado oposto, de frente para eles (p. 2).
 
+Assim fica a mesa pronta:
+
 !fig[A mesa montada vista de cima: os agentes de campo das duas equipes no alto, a grade no meio, as pilhas de cartas abaixo dela e os espiões mestres embaixo, lado a lado, com a carta chave no apoio entre eles. Ilustração: manual Devir (p. 2)](figuras/preparacao.webp)
 
-4. **Embaralhe as cartas de codinome.** Enquanto embaralha, vire metade do baralho de vez em quando, para misturar bem as palavras (p. 2).
+4. **Embaralhe as cartas de codinome.** Enquanto embaralha, vire metade do baralho de vez em quando, para misturar bem as palavras (as cartas têm palavras dos dois lados) (p. 2).
 5. **Monte a grade.** Tire ao acaso 25 cartas de codinome e ponha-as na mesa numa grade de 5 por 5, entre as duas fileiras de jogadores (p. 2).
-6. **Sorteie a carta chave e ponha no apoio.** Os espiões mestres tiram uma carta chave ao acaso e a encaixam no apoio, entre eles. Qualquer lado pode ficar para cima. Os agentes de campo não podem ver a carta (p. 2).
+6. **Sorteie a carta chave e ponha no apoio.** Os espiões mestres tiram uma carta chave ao acaso e a encaixam no apoio, entre eles. Qualquer lado pode ficar para cima (p. 2); as luzes que mostram quem começa estão nas quatro bordas (p. 3). Os agentes de campo não podem ver a carta (p. 2).
 7. **Aprenda a ler a chave.** Cada quadrado da carta chave corresponde à palavra na mesma posição da grade. Quadrado azul: palavra da Equipe Azul. Quadrado vermelho: palavra da Equipe Vermelha. Quadrado sem cor: civil inocente. Quadrado preto: o assassino (p. 2).
 
-!fig[A carta chave ao lado da grade que ela descreve: cada quadrado vale para a palavra na mesma posição, e a moldura colorida de cada palavra mostra a cor do quadrado. O X preto marca o assassino. Ilustração: manual Devir (p. 2)](figuras/chave.webp)
+!fig[A carta chave ao lado da grade que ela descreve: cada quadrado vale para a palavra na mesma posição. Na ilustração do manual, a moldura de cada palavra mostra a cor do quadrado; as cartas de verdade não têm moldura colorida. O X preto marca o assassino. Ilustração: manual Devir (p. 2)](figuras/chave.webp)
 
 8. **Veja quem começa.** As quatro luzes nas bordas da carta chave têm a cor da equipe inicial. Ela tem 9 palavras para encontrar, a outra tem 8, e é ela que dá a primeira pista (p. 3). Na figura acima, as luzes são vermelhas: a Vermelha começa.
 9. **Separe as cartas de agente.** As 8 cartas de agente vermelho ficam numa pilha na frente do espião mestre vermelho; as 8 de agente azul, na frente do espião mestre azul (p. 3).
@@ -57,11 +59,11 @@ Esta seção segue a página de preparação do manual (p. 2 e 3), na mesma orde
 
 12. **Deixe a ampulheta à mão, se for usá-la.** Ela é opcional e serve para apressar quem demora a decidir (p. 5).
 
-**O que fica fora da partida.** O manual não traz uma lista do que volta para a caixa. As cartas de codinome e as cartas chave que não foram sorteadas não entram nesta partida; na seguinte, viram-se 25 codinomes novos (p. 5).
+**O que fica fora da partida.** O manual não traz uma lista do que volta para a caixa. Para a próxima partida, retire as cartas que cobrem as palavras, devolva-as às pilhas e vire 25 codinomes (p. 5).
 
 !fig[Uma partida em andamento na edição original em inglês: a grade com palavras já cobertas por cartas de agente e de civil, a carta chave no apoio, as pilhas de cartas e a ampulheta. Imagem: Czech Games Edition](../../codenames/fotos/mesa-1.webp)
 
-**Antes de começar, confira:** 25 palavras na grade; a carta chave no apoio, virada só para os espiões mestres; 9 cartas na pilha da equipe inicial e 8 na outra; 7 civis e o assassino no meio.
+**Antes de começar, confira:** 25 palavras na grade; a carta chave no apoio, virada só para os espiões mestres; 9 cartas na pilha da equipe inicial e 8 na outra; 7 civis e o assassino no meio; e todos sabem qual equipe começa (luzes da chave).
 
 ?? A carta chave tem luzes azuis. Como ficam as pilhas de cartas de agente?
 - ( ) 8 azuis e 8 vermelhas; o agente duplo fica no meio, com os civis

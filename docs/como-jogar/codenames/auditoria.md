@@ -136,3 +136,17 @@ Na etapa 1 elas foram retiradas, para não repetir as mesmas imagens, e o texto 
 **O "Comece a jogar".** A subseção "Monte a mesa" virou um resumo de 4 itens que remete à nova seção.
 
 **Portões.** `checar_comece.py` passa. Travessão e meia-risca: zero. `vicios.py`: zero aviso; uma muleta acusada no resumo foi trocada. A renderização de teste, gravada só no scratchpad, mostra a seção com a classe `setup`, toda à vista, logo depois do resumo. O tutorial tem 6.045 palavras por `wc`.
+
+## 8. Auditoria independente da montagem (04/11/2026)
+
+Resultado do auditor: aprovado com correções, sem erro de regra. As correções:
+
+1. "O que fica fora": agora diz "Para a próxima partida, retire as cartas que cobrem as palavras, devolva-as às pilhas e vire 25 codinomes (p. 5)", sem o "novos".
+2. Introdução: "segue a preparação do manual (p. 2 e 3), na mesma ordem, com a ampulheta da p. 5 no fim".
+3. Passo 4: acrescentado "(as cartas têm palavras dos dois lados)", conforme a figura da p. 2 e a ordem de virar metade do baralho.
+4. Legenda de `chave.webp`: diz que a moldura colorida das palavras existe só na ilustração do manual, não nas cartas de verdade.
+5. `preparacao.webp` passou a ter a frase de entrada "Assim fica a mesa pronta:".
+6. A conferência final ganhou "e todos sabem qual equipe começa (luzes da chave)".
+7. Item opcional, aceito: o passo 6 diz que qualquer lado da chave pode ficar para cima (p. 2) e que as luzes estão nas quatro bordas (p. 3). O manual não liga uma coisa à outra explicitamente, e o texto também não liga.
+
+Portões: `checar_comece.py` passa, travessão e meia-risca zero, `vicios.py` sem aviso.
