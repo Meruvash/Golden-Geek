@@ -93,7 +93,7 @@
       TEMAS.map(([id, nome, desc]) => `<label><input type="checkbox" value="${id}"${novos || atuais.includes(id) ? " checked" : ""}><span>${nome}<small>${desc}</small></span></label>`).join("") +
       `<button type="button" class="sino-ok">${atuais.length ? "Salvar escolha" : "🔔 Ativar avisos"}</button>
 <p class="sino-st" role="status"></p>
-<div class="sino-lk">${app ? "" : '<button type="button" data-a="instalar">📲 Pôr o Elite na tela inicial</button>'}${atuais.length ? '<button type="button" data-a="sair">Desligar tudo</button>' : ""}</div>`;
+<div class="sino-lk">${app ? "" : '<button type="button" data-a="instalar">📲 Pôr o Elite na tela inicial</button>'}${atuais.length ? '<button type="button" data-a="teste">🔔 Enviar teste</button><button type="button" data-a="sair">Desligar tudo</button>' : ""}</div>`;
     document.body.append(painel);
     painel.addEventListener("click", clique);
     setTimeout(() => document.addEventListener("click", fora), 0);
@@ -119,6 +119,17 @@
       if (adiado) { adiado.prompt(); adiado = null; return; }
       if ("install" in navigator) { try { await navigator.install(); return; } catch (err) {} }
       return guia("instalar");
+    }
+    if (b.dataset.a === "teste") { // aviso de teste: prova que a notificação chega neste aparelho
+      const s = await inscricao();
+      if (!s) { status("Este aparelho não está inscrito. Toque em Ativar avisos.", "erro"); return; }
+      status("Enviando o teste…");
+      try {
+        const d = await (await post("/v1/push/teste", { endpoint: s.endpoint })).json();
+        if (d.aceito) status("Teste enviado: a notificação deve aparecer em alguns segundos. Se não aparecer, confira se as notificações do navegador estão ligadas nas configurações do celular.", "ok");
+        else status("O serviço de notificações do seu aparelho recusou o teste" + (d.erro ? ": " + d.erro : d.status ? " (" + d.status + ")" : "") + ". Já estamos avisados.", "erro");
+      } catch (err) { status("Não deu para enviar o teste agora. Tente de novo em 1 minuto.", "erro"); }
+      return;
     }
     if (b.dataset.a === "sair") {
       const s = await inscricao();

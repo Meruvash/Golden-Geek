@@ -95,8 +95,14 @@ def main():
     print("saúde:", json.dumps(saude, ensure_ascii=False))
     if not saude.get("configurado"):
         sys.exit("❌ o worker está sem as chaves VAPID: nada é enviado (rode tools/black/instalar_push.py)")
+    # serviço de push recusando envio (ex.: Apple com BadWebPushTopic em 04/11/2026): alguém deixa de receber em silêncio
+    ruins = [x for x in saude.get("com_falha") or [] if (x.get("falhas") or 0) >= 3]
+    if ruins:
+        print("❌ serviço de push recusando envios: " + "; ".join(f"{x['servico']} ({x['falhas']} falhas): {x.get('erro')}" for x in ruins))
     falta, parado = atrasados(saude, novo), cron_parado(saude)
     if not falta and not parado and not saude.get("fila"):
+        if ruins:
+            sys.exit("❌ o cron processou tudo, mas há aparelho que não recebe (veja acima)")
         print("ok: o cron processou tudo")
         return
     print(f"⚠️ plano B: temas atrasados {falta or '-'}, cron parado: {parado}, fila: {len(saude.get('fila') or [])}")

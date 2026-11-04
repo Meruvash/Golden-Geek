@@ -76,11 +76,20 @@ async function vapid(endpoint, env) {
   return v;
 }
 
+// guarda a última resposta de cada serviço de push (Apple, Google, Mozilla) para o diagnóstico (/v1/push/teste)
+let _resposta = { status: 0, corpo: "" };
 async function empurrar(endpoint, env) {
   const r = await fetch(endpoint, {
     method: "POST",
-    headers: { authorization: await vapid(endpoint, env), ttl: "21600", urgency: "high", topic: "novidades", "content-length": "0" },
+    headers: {
+      authorization: await vapid(endpoint, env), ttl: "21600", urgency: "high", "content-length": "0",
+      // a Apple recusa o cabeçalho Topic com "BadWebPushTopic" (diagnóstico de 04/11/2026): só vai para os outros
+      ...(new URL(endpoint).hostname.endsWith("push.apple.com") ? {} : { topic: "novidades" }),
+    },
   });
+  let corpo = "";
+  if (r.status >= 400) { try { corpo = String(await r.text()).slice(0, 300); } catch { corpo = ""; } }
+  _resposta = { status: r.status, corpo };
   return r.status;
 }
 
@@ -108,7 +117,8 @@ async function avisa(db, endpoint, env) {
   const agora = agoraIso(), aceito = st >= 200 && st < 300 ? 1 : 0;
   const ops = [db.prepare("UPDATE push_entrega SET enviado=?, ok=?, tentativas=COALESCE(tentativas,0)+1 WHERE endpoint=? AND mostrado=0")
     .bind(agora, aceito, endpoint)];
-  if (st >= 400 || st === 0) ops.push(db.prepare("UPDATE push_subs SET falhas=falhas+1 WHERE endpoint=?").bind(endpoint));
+  if (st >= 400 || st === 0) ops.push(db.prepare("UPDATE push_subs SET falhas=falhas+1, ultimo_erro=? WHERE endpoint=?")
+    .bind(`${agora} ${st} ${_resposta.status === st ? _resposta.corpo : ""}`.trim().slice(0, 400), endpoint));
   else ops.push(db.prepare("UPDATE push_subs SET falhas=0, ultimo_ok=? WHERE endpoint=?").bind(agora, endpoint));
   await db.batch(ops);
   return st;
@@ -184,6 +194,22 @@ export async function rotasPush(req, url, env, h) {
       .bind(ep, JSON.stringify(d.sub.keys || {}), agoraIso(), temasTexto(temas)).run();
     return json({ ok: true, temas }, 200, h);
   }
+  if (url.pathname === "/v1/push/teste") {
+    // aviso de teste para um aparelho (botão "Enviar teste" do sininho): devolve o que o serviço de push respondeu
+    const ep = d.endpoint;
+    const linha = ep ? await db.prepare("SELECT temas, teste FROM push_subs WHERE endpoint=?").bind(ep).first() : null;
+    if (!linha) return json({ erro: "este aparelho não está inscrito" }, 404, h);
+    if (linha.teste && Date.now() - Date.parse(linha.teste) < 60000) return json({ erro: "espere 1 minuto entre testes" }, 429, h);
+    const id = `teste:${agoraIso()}`;
+    await db.batch([
+      db.prepare("UPDATE push_subs SET teste=? WHERE endpoint=?").bind(agoraIso(), ep),
+      db.prepare("INSERT OR IGNORE INTO push_alertas (id, lote, tema, titulo, texto, url, imagem, criado) VALUES (?, ?, 'teste', ?, ?, ?, NULL, ?)")
+        .bind(id, id, "🔔 Teste da Elite Boardgamers", "Se você está lendo isto, os avisos chegam neste aparelho.", PADRAO, agoraIso()),
+      db.prepare("INSERT OR IGNORE INTO push_entrega (endpoint, alerta, mostrado) VALUES (?, ?, 0)").bind(ep, id),
+    ]);
+    const st = await avisa(db, ep, env);
+    return json({ status: st, aceito: st >= 200 && st < 300, resposta: _resposta.corpo || null }, 200, h);
+  }
   if (url.pathname === "/v1/push/temas") {
     const linha = d.endpoint ? await db.prepare("SELECT temas FROM push_subs WHERE endpoint=?").bind(d.endpoint).first() : null;
     return json({ inscrito: !!linha, temas: temasDe(linha), todos: TEMAS }, 200, h);
@@ -209,11 +235,14 @@ async function saude(db, env) {
   const fila = ((await db.prepare("SELECT lote, tema, criado FROM push_fila ORDER BY criado").all()).results || []);
   const pend = await db.prepare("SELECT COUNT(*) AS n FROM push_entrega WHERE mostrado=0 AND tentativas < ?").bind(MAX_TENTATIVAS).first("n");
   const subs = ((await db.prepare("SELECT temas FROM push_subs").all()).results || []);
+  // aparelhos cujo serviço de push (Apple, Google, Mozilla) recusou o último envio: o vigia acusa (04/11/2026)
+  const comFalha = ((await db.prepare("SELECT endpoint, falhas, ultimo_erro FROM push_subs WHERE falhas > 0").all()).results || [])
+    .map((x) => ({ servico: new URL(x.endpoint).hostname, falhas: x.falhas, erro: x.ultimo_erro || null }));
   const porTema = Object.fromEntries(TEMAS.map((t) => [t, subs.filter((s) => (s.temas || "").includes(`,${t},`)).length]));
   return {
     configurado: !!(env.VAPID_JWK && env.VAPID_PUBLICA), rodada: est.rodada || null, rodada_por: est.rodada_por || null,
     erro: est.erro || null, ultimo: { black: est.ultimo || null, noticias: est["ultimo:noticias"] || null, resenhas: est["ultimo:resenhas"] || null },
-    fila, entregas_pendentes: pend || 0, inscritos: subs.length, inscritos_por_tema: porTema,
+    fila, entregas_pendentes: pend || 0, inscritos: subs.length, inscritos_por_tema: porTema, com_falha: comFalha,
   };
 }
 

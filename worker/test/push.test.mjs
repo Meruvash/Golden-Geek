@@ -6,7 +6,7 @@ import { DatabaseSync } from "node:sqlite";
 import { rotasPush, agendado } from "../src/push.js";
 
 const ESQUEMA = `
-CREATE TABLE push_subs (endpoint TEXT PRIMARY KEY, chaves TEXT, criado TEXT, falhas INTEGER DEFAULT 0, temas TEXT DEFAULT ',black,', ultimo_ok TEXT, visto TEXT);
+CREATE TABLE push_subs (endpoint TEXT PRIMARY KEY, chaves TEXT, criado TEXT, falhas INTEGER DEFAULT 0, temas TEXT DEFAULT ',black,', ultimo_ok TEXT, visto TEXT, ultimo_erro TEXT, teste TEXT);
 CREATE TABLE push_alertas (id TEXT PRIMARY KEY, lote TEXT, titulo TEXT, texto TEXT, url TEXT, imagem TEXT, criado TEXT, tema TEXT DEFAULT 'black');
 CREATE TABLE push_estado (k TEXT PRIMARY KEY, v TEXT);
 CREATE TABLE push_fila (lote TEXT PRIMARY KEY, tema TEXT, cursor TEXT, criado TEXT);
@@ -173,4 +173,28 @@ test("troca de inscrição pelo navegador herda os temas", async () => {
   const r = await chama(env, "/v1/push/inscrever", { sub: { endpoint: "https://push.teste/nova", keys: {} }, antigo: "https://push.teste/velha", temas: [], juntar: true });
   assert.deepEqual(r.temas.sort(), ["noticias", "resenhas"]);
   assert.equal(env.DB.raw.prepare("SELECT COUNT(*) n FROM push_subs").get().n, 1);
+});
+
+test("teste: aviso para um aparelho devolve a resposta do serviço de push e guarda o erro", async () => {
+  const env = await ambiente();
+  estado.pushes = []; estado.status = { "https://push.teste/apple": 403 };
+  await inscreve(env, "https://push.teste/apple", ["black"]);
+  const r = await chama(env, "/v1/push/teste", { endpoint: "https://push.teste/apple" });
+  assert.equal(r.status, 403);
+  assert.equal(r.aceito, false);
+  assert.match(env.DB.raw.prepare("SELECT ultimo_erro e FROM push_subs").get().e, / 403/);
+  const de_novo = await chama(env, "/v1/push/teste", { endpoint: "https://push.teste/apple" });
+  assert.match(de_novo.erro, /1 minuto/);
+});
+
+test("Apple não recebe o cabeçalho Topic (ela responde BadWebPushTopic)", async () => {
+  const env = await ambiente();
+  estado.pushes = []; estado.status = {};
+  await inscreve(env, "https://web.push.apple.com/abc", ["black"]);
+  await inscreve(env, "https://fcm.googleapis.com/fcm/send/xyz", ["black"]);
+  await chama(env, "/v1/push/teste", { endpoint: "https://web.push.apple.com/abc" });
+  await chama(env, "/v1/push/teste", { endpoint: "https://fcm.googleapis.com/fcm/send/xyz" });
+  const h = Object.fromEntries(estado.pushes.map((p) => [new URL(p.endpoint).hostname, p.headers || {}]));
+  assert.equal(h["web.push.apple.com"].topic, undefined);
+  assert.equal(h["fcm.googleapis.com"].topic, "novidades");
 });

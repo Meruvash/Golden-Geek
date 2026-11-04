@@ -54,7 +54,9 @@ def main():
                 "ALTER TABLE push_entrega ADD COLUMN tentativas INTEGER DEFAULT 0",
                 "ALTER TABLE push_entrega ADD COLUMN ok INTEGER DEFAULT 0",
                 "ALTER TABLE push_subs ADD COLUMN ultimo_ok TEXT",
-                "ALTER TABLE push_subs ADD COLUMN visto TEXT"):
+                "ALTER TABLE push_subs ADD COLUMN visto TEXT",
+                "ALTER TABLE push_subs ADD COLUMN ultimo_erro TEXT",  # resposta do serviço de push na última falha
+                "ALTER TABLE push_subs ADD COLUMN teste TEXT"):  # hora do último aviso de teste (1 por minuto)
         try:
             wrangler("d1", "execute", "elite-interacoes", "--remote", "--command", col, token=token)
         except SystemExit as erro:

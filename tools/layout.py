@@ -147,7 +147,7 @@ def cabecalho(pre, atual="", sub=False):
  <button type="button" class="busca-btn" aria-label="Buscar no site" aria-haspopup="dialog" aria-keyshortcuts="/ Control+K" hidden>{icone("busca")}</button>
  <button type="button" class="sino-btn" aria-label="Receber notificações" aria-haspopup="dialog" aria-expanded="false" hidden><svg class="ic" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 3a6 6 0 0 0-6 6v3.6L4.3 15.5A1 1 0 0 0 5.2 17h13.6a1 1 0 0 0 .9-1.5L18 12.6V9a6 6 0 0 0-6-6z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M9.5 19.5a2.6 2.6 0 0 0 5 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
 </div></header>
-<script src="/sino.js?v=1" defer></script>
+<script src="/sino.js?v=2" defer></script>
 <script>{DISPARADOR.replace("PRE", pre)}</script>
 <nav class="nav" aria-label="Seções do site"><ul class="in">{nav}</ul></nav>
 <script>{JS_MENU}</script>"""
