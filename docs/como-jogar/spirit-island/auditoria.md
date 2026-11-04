@@ -127,3 +127,26 @@ o. Oceano: Comece, passo 5, "a faixa de mar de cada tabuleiro" (p. 13). O manual
 p. Cartas Únicas do Relâmpago: sem fonte citável; nada acrescentado.
 
 **Portões depois das correções:** zero travessão; `tools/vicios.py` sem aviso no tutorial e no JSON; `tools/checar_comece.py` passa (o Comece foi enxugado para caber em 1.000 palavras com os acréscimos). Extensão: cerca de 6.480 palavras de texto, quase igual à anterior, porque os acréscimos pedidos ocuparam o que foi cortado. O JSON não precisou mudar e continua com `"publicar": false`.
+
+## Modo solo (pedido do editor, 04/11/2026)
+
+Nova seção "## 7. Modo solo: jogar sozinho", depois da etapa 5; as seguintes foram renumeradas (8 Situações especiais, 9 Avaliação final, 10 Para consultar, 11 Fontes). O bloco "Jogo solo" de Situações especiais saiu, porque o conteúdo foi para a seção nova. "etapas" no JSON continua 5 e "publicar" não mudou. A seção "Como este guia ensina" passou a citar a seção solo.
+
+**O que o manual diz sobre o solo, e onde foi usado**
+- p. 22, "Solo Player Mode": um tabuleiro só é a ilha inteira; pode mirar em si mesmo Poderes de "outro Espírito", sem os benefícios extras (Gift of Constancy, Elemental Boon); a sorte pesa mais e não há outros Espíritos para compensar. Usado no [!entender], no passo 1 da montagem e no primeiro [!mais].
+- p. 6: tabuleiro da Ilha sorteado por jogador, 4 marcadores de Medo por jogador, 9 cartas de Medo, baralho de Invasores 3/4/5, Praga da errata (+1). p. 4: 5 Pragas por jogador no espaço impresso, 13 Presenças e 3 marcadores de lembrete por cor. Totais solo refeitos em `contas.py`: 4 marcadores, 6 Pragas, 13 = 2 + 7 + 4 Presenças, 11 cartas de Invasor depois da ação inicial.
+- p. 23 e 28: mapa temático com 1 jogador, tabuleiro Northeast; o mapa temático aumenta a dificuldade em 3. Segundo [!mais].
+- p. 3: os Espíritos recomendados valem para qualquer número de jogadores. O manual não indica Espírito nem dificuldade específicos para o solo, e o texto não diz que indica.
+- A "Areia de número mais alto é a terra 6" vale só para o tabuleiro da figura da p. 13 (o rótulo "Sands" aponta para a terra 6; a outra Areia é a 2). O tutorial avisa que é aquele tabuleiro.
+- Exemplos (primeiro turno e Devastação do turno 2) construídos com regras já conferidas (p. 6, 8 a 10, 14 e 15) e contas refeitas: Energia 3 + 1 = 4, 2 jogadas; Construir em Selva com 0 Vila e 0 Cidade põe Vila; Devastar com Vila + Explorador + 1 Dahan = 3 de Dano, 1 Praga (6 para 5), Dahan destruído, sem revide.
+
+**Figuras da seção (8)**
+- Novas: `solo-tabuleiro.webp` (p. 13, terrenos, Oceano, terras costeiras e do interior), `solo-icones.webp` (p. 4, tabuleiro da Ilha com os ícones de montagem), `solo-invasores.webp` (p. 4, tabuleiro dos Invasores), `solo-baralho-medo.webp` (p. 6, baralho de Medo em leque com as divisórias). Só a parte gráfica; os rótulos impressos no desenho (nomes dos terrenos, "Coastal/Inland lands") fazem parte da ilustração.
+- Reaproveitadas, por serem o mesmo desenho: `espirito.webp` (p. 14, trilhas do painel), `construir.webp`, `explorar.webp` e `devastar.webp` (p. 11).
+
+**Sem ilustração no manual**
+- Não há desenho de uma mesa montada para 1 jogador nem do tabuleiro com a Presença inicial do Relâmpago: os mapas da p. 6 são de 2, 3 e 4 jogadores, e a mesa da p. 7 é de 4 (já usada na etapa 1).
+- Não há desenho das trilhas cobertas de Presença: o painel da p. 14 mostra as trilhas descobertas, com os círculos tracejados que recebem a Presença. A legenda diz isso.
+- Não há desenho da Praga entrando num tabuleiro solo; a figura de Devastar (p. 11) mostra a Praga e a cascata.
+
+**Portões:** zero travessão; `tools/vicios.py` sem aviso; `tools/checar_comece.py` passa; o conversor gera a página sem marcação crua. A seção tem cerca de 850 palavras de texto (1.200 com as legendas); o tutorial foi para cerca de 7.300 palavras de texto.

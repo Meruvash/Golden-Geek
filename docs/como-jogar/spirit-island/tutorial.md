@@ -84,7 +84,7 @@ Depois que o grupo conhece o jogo, uma partida leva de 90 a 120 minutos, um pouc
 
 ## 1. Como este guia ensina
 
-O guia tem cinco etapas: montar a mesa e escolher o Espírito; a rodada e as fases; Poderes, Presença e Energia; os Invasores e os Dahan; Praga, Medo, vitória e derrota. Cada etapa traz a explicação, o passo a passo e exercícios de múltipla escolha: toque numa opção para ver a certa e a explicação. No fim vêm uma avaliação curta e uma folha de consulta para a mesa.
+O guia tem cinco etapas: montar a mesa e escolher o Espírito; a rodada e as fases; Poderes, Presença e Energia; os Invasores e os Dahan; Praga, Medo, vitória e derrota. Cada etapa traz a explicação, o passo a passo e exercícios de múltipla escolha: toque numa opção para ver a certa e a explicação. Depois das etapas, uma seção mostra como montar e jogar sozinho; no fim vêm uma avaliação curta e uma folha de consulta para a mesa.
 
 ## 2. Etapa 1: montar a mesa e escolher o Espírito
 
@@ -437,9 +437,77 @@ O guia tem cinco etapas: montar a mesa e escolher o Espírito; a rodada e as fas
 > - ( ) 1
 > = Remover ou Substituir não gera o Medo de destruição (p. 18).
 
-## 7. Situações especiais
+## 7. Modo solo: jogar sozinho
 
-> [!mais] **Jogo solo.** Um tabuleiro só forma a ilha. Você pode mirar em si mesmo os Poderes que pedem "outro Espírito", sem os benefícios extras que eles dão quando usados num outro (p. 22).
+> [!entender] **Para entender.** O jogo solo funciona como o jogo normal, com um tabuleiro da Ilha só como a ilha inteira. O manual avisa que a sorte pesa mais e que não há outros Espíritos para cobrir as fraquezas e limites do seu (p. 22). Todas as quantidades "por jogador" da montagem valem para 1.
+
+> [!passos] **Montar a mesa para 1 jogador** (p. 3, 4, 6, 13 e 22)
+>
+> 1. Ilha: sorteie 1 tabuleiro da Ilha. Ele sozinho é a ilha. Cada tabuleiro tem 8 terras numeradas, duas de cada terreno, e a faixa de Oceano desenhada nele marca as terras costeiras.
+> 2. Ponha em cada terra os Invasores, os Dahan e a Praga dos ícones impressos nela; essa Praga vem da caixa.
+> 3. Tabuleiro dos Invasores ao lado, com 4 marcadores de Medo na reserva de Medo (4 por jogador).
+> 4. Baralho de Medo: 9 cartas de Medo, com a divisória "Nível de Terror 3" a 3 cartas do fundo e a "Nível de Terror 2" 3 cartas acima dela. O número não muda no solo.
+> 5. Baralho de Invasores no espaço Explorar: 3 cartas de Estágio I, 4 de Estágio II e 5 de Estágio III, 12 no total.
+> 6. Praga: na primeira partida, sem carta de Praga; o espaço impresso pede 5 por jogador, mais 1 da errata: 6 Pragas.
+> 7. Baralhos de Poder Menor e Maior embaralhados, com espaço para o descarte; Energia e peças ao alcance.
+> 8. Pegue as 13 Presenças e os 3 marcadores de lembrete de uma cor, o painel do Golpe Veloz do Relâmpago, as 4 cartas Únicas dele (a mão) e a carta de Progressão de Poder, separando as cartas listadas nela.
+> 9. Montagem do Relâmpago: 2 Presenças na Areia de número mais alto do tabuleiro. Vire o painel para o lado das trilhas e cubra os círculos tracejados com as outras 11 Presenças: 7 na trilha de Energia e 4 na de Jogadas.
+> 10. Ação inicial dos Invasores: revele a carta do topo, Explore no tipo dela e ponha a carta em Construir.
+
+!fig[Um tabuleiro da Ilha, que no solo é a ilha inteira: em cima, cada terreno (Selva, Areia, Pântano, Montanha) e o Oceano à esquerda; embaixo, as terras costeiras, que tocam o Oceano, e as do interior. As outras bordas são penhascos. Ilustração: manual oficial Greater Than Games (p. 13)](figuras/solo-tabuleiro.webp)
+
+!fig[O mesmo tipo de tabuleiro com os ícones de montagem impressos ao lado do número de cada terra: eles dizem quais Invasores, Dahan e Praga entram ali no começo. Ilustração: manual oficial Greater Than Games (p. 4)](figuras/solo-icones.webp)
+
+!fig[O tabuleiro dos Invasores: baralho de Medo e Cartas de Medo Conquistadas à esquerda, reserva de Medo e Medo Gerado no centro, Nível de Terror e espaço de Praga à direita, e embaixo os espaços Devastar, Construir e Explorar, este com o baralho de Invasores. Ilustração: manual oficial Greater Than Games (p. 4)](figuras/solo-invasores.webp)
+
+!fig[O baralho de Medo aberto em leque: três grupos de 3 cartas, separados pelas divisórias de Nível de Terror II e III. Ilustração: manual oficial Greater Than Games (p. 6)](figuras/solo-baralho-medo.webp)
+
+!fig[O painel do Relâmpago com as trilhas: na de cima (Energia) e na de baixo (Jogadas), só o primeiro círculo, de linha cheia, fica descoberto no começo. Ilustração: manual oficial Greater Than Games (p. 14)](figuras/espirito.webp)
+
+**Uma rodada sozinho.** Um exemplo construído com as regras do manual, num tabuleiro como o da figura acima, em que a Areia de número mais alto é a terra 6 (p. 13).
+
+> [!resolvido] **Exemplo resolvido: o primeiro turno solo.**
+>
+> 1. Montagem: 2 Presenças na terra 6 (Areia), que já é um Local Sagrado, porque tem 2 Presenças suas (p. 13). A carta da ação inicial mostra Selva: 1 Explorador em cada Selva que tenha Vila ou Cidade ou seja vizinha de Vila, Cidade ou Oceano. A carta vai para Construir (p. 6 e 10).
+> 2. Fase dos Espíritos: você escolhe a opção 3 de Crescimento. Tira a primeira Presença da trilha de Energia (descobre outro "1") e a põe a até 1 terra da sua Presença. Ganha 3 Energia do Crescimento e 1 da trilha: 4. A trilha de Jogadas mostra 2: escolha até 2 das suas 4 cartas, com custo somado de até 4, e pague agora, mesmo as Lentas. Os Elementos delas já valem (p. 8 e 14).
+> 3. Fase dos Poderes Rápidos: use as cartas Rápidas, escolhendo o alvo agora (p. 8 e 16).
+> 4. Fase dos Invasores: se você não conquistou carta de Medo, não há Medo a resolver, e ainda não há carta em Devastar. Construir: numa Selva que recebeu 1 Explorador na montagem, há 0 Vila e 0 Cidade, então entra 1 Vila. Explorar: revele a carta seguinte e ponha 1 Explorador em cada terra daquele tipo que se qualifique. Avance: a carta de Selva vai para Devastar e a nova para Construir (p. 9 e 10).
+> 5. Fase dos Poderes Lentos: use as cartas Lentas (p. 10).
+> 6. O Tempo Passa: as cartas jogadas vão para o seu descarte; Dano e Elementos somem (p. 10).
+
+!fig[Construir em Montanhas: só terras com Invasores recebem peça; entra Cidade onde há mais Vilas que Cidades e Vila nos outros casos. No solo, a regra é a mesma, num tabuleiro só. Ilustração: manual oficial Greater Than Games (p. 11)](figuras/construir.webp)
+
+!fig[Explorar em Selvas: recebe Explorador a terra com Vila ou Cidade, a vizinha de uma delas e a costeira; a terra B, do interior e sem vizinhos com Vila ou Cidade, fica vazia. Ilustração: manual oficial Greater Than Games (p. 11)](figuras/explorar.webp)
+
+> [!resolvido] **Exemplo resolvido: a Devastação do turno 2.** A carta de Selva está em Devastar. Uma Selva tem 1 Vila, 1 Explorador e 1 Dahan, sem Defender: 2 + 1 = 3 de Dano. Entra 1 Praga, e o espaço de Praga cai de 6 para 5. Os 2 primeiros pontos de Dano destroem o Dahan, e não sobra Dahan para revidar. Se você tivesse Presença ali, perderia 1 delas com essa Praga (p. 9 e 15).
+
+!fig[Devastar: em A, a Praga entra e os Dahan sobreviventes revidam; em B, a Praga cai numa terra que já tinha Praga e a extra vai para uma vizinha, com efeitos diferentes conforme a escolha. Ilustração: manual oficial Greater Than Games (p. 11)](figuras/devastar.webp)
+
+> [!passos] **Vencer e perder sozinho** (p. 12)
+>
+> 1. Vitória imediata quando a ilha cumpre a condição do Nível de Terror atual: Nível 1, nenhum Invasor; Nível 2, nenhuma Vila nem Cidade; Nível 3, nenhuma Cidade.
+> 2. Com 4 marcadores na reserva, cada 4 de Medo conquista 1 carta de Medo (destruir 1 Vila dá 1; 1 Cidade, 2).
+> 3. Derrota se sair a última das 6 Pragas, se o seu Espírito ficar sem Presença no tabuleiro ou se for preciso Explorar com o baralho de Invasores vazio (11 cartas depois da ação inicial).
+
+> [!mais] **Poderes que miram "outro Espírito".** No solo, você pode mirar em si mesmo os Poderes que pedem outro Espírito, mas não ganha os benefícios extras que eles dão quando usados num outro, como Gift of Constancy ou Elemental Boon (p. 22).
+
+> [!mais] **Mapa temático com 1 jogador.** Quando já conhecer o jogo, o verso dos tabuleiros traz o mapa temático, mais difícil (aumenta a dificuldade em 3); com 1 jogador, o manual indica o tabuleiro Nordeste (*Northeast*) (p. 23 e 28).
+
+> [!treino] **Treino rápido: montagem solo.**
+>
+> ?? Quantos marcadores de Medo vão para a reserva e quantas Pragas para o espaço impresso no jogo solo?
+> - ( ) 4 marcadores e 5 Pragas.
+> - (x) 4 marcadores e 6 Pragas.
+> - ( ) 8 marcadores e 6 Pragas.
+> = São 4 marcadores e 5 Pragas por jogador, mais 1 Praga da errata (p. 4 e 6).
+>
+> ?? Quantas cartas tem o baralho de Invasores no solo?
+> - ( ) 9: 3 de cada Estágio.
+> - ( ) 6, por ser um tabuleiro só.
+> - (x) 12, como em qualquer número de jogadores.
+> = 3 de Estágio I, 4 de Estágio II e 5 de Estágio III (p. 6).
+
+## 8. Situações especiais
 
 > [!mais] **Adversários, Cenários e mapa temático.** Ficam para depois das primeiras partidas e deixam o jogo mais difícil. Escolha Adversário e Cenário antes da montagem, porque podem mudá-la; o manual indica o Reino de Brandemburgo-Prússia como primeiro Adversário. Se Cenário e Adversário se contradizem, vale o Cenário. O verso dos tabuleiros da Ilha traz um mapa temático, para jogadores experientes (p. 3, 22 e 23).
 
@@ -449,7 +517,7 @@ O guia tem cinco etapas: montar a mesa e escolher o Espírito; a rodada e as fas
 
 > [!edicao] **Expansões.** Alguns tabuleiros temáticos têm ícones de fichas da expansão *Branch & Claw*: ignore-os no jogo base (p. 23). As regras das expansões não estão neste guia.
 
-## 8. Avaliação final
+## 9. Avaliação final
 
 Responda sem consultar. Cada resposta diz o que reler se errar.
 
@@ -503,7 +571,7 @@ Responda sem consultar. Cada resposta diz o que reler se errar.
 
 > [!atencao] **Para começar a jogar.** Acertou 7 ou 8? Monte a mesa e jogue com a folha de consulta ao lado. Se errou mais, releia as etapas indicadas e refaça só essas perguntas.
 
-## 9. Para consultar durante a partida
+## 10. Para consultar durante a partida
 
 **O turno** (todos ao mesmo tempo; p. 8 a 10 e 32):
 
@@ -536,7 +604,7 @@ Responda sem consultar. Cada resposta diz o que reler se errar.
 
 **Nomes em inglês do manual:** Presença (Presence), Local Sagrado (Sacred Site), Crescimento (Growth), Jogadas (Card Plays), Recuperar (Reclaim), Esquecer (Forget), Vila (Town), Devastar (Ravage), Praga (Blight), Medo (Fear), Nível de Terror (Terror Level), Reunir (Gather), Empurrar (Push), Selva (Jungle), Areia (Sands), Pântano (Wetland).
 
-## 10. Fontes
+## 11. Fontes
 
 - Greater Than Games. *Spirit Island*, livro de regras do jogo base em inglês (32 páginas, versão impressa "VER: 23.08", arquivo de 18/09/2023, com a errata de 1 Praga a mais na p. 6). Link "Digital rulebook" em https://greaterthangames.com/pages/spirit-island. Consultado em 04/11/2026.
 - Greater Than Games. *Spirit Island*, livro de regras de 2018, na página do produto, https://greaterthangames.com/products/spirit-island, comparado com o de 2023. Consultado em 04/11/2026.

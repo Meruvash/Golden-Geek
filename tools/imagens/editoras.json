@@ -2109,5 +2109,33 @@
    ],
    "verificado_em": "2026-11-04"
   }
+ },
+ "indieboardsandcards.com": {
+  "nome": "Indie Boards & Cards",
+  "apelidos": [
+   "Indie Boards & Cards"
+  ],
+  "site": "https://indieboardsandcards.com",
+  "plataforma": "woocommerce",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://indieboardsandcards.com/sitemap_index.xml",
+    "https://strongholdgames.com/sitemap_index.xml",
+    "https://boardgame.rustyquill.com/sitemap_index.xml",
+    "https://magnusprotocolmysteries.com/sitemap_index.xml",
+    "https://freeradio.site/sitemap_index.xml",
+    "https://yourchartwellington.com/sitemap_index.xml",
+    "https://magnusarchivesmysteries.com/sitemap_index.xml",
+    "https://indieboardsandcards.com/unrevealingthetruth/sitemap_index.xml"
+   ],
+   "verificado_em": "2026-11-04"
+  }
  }
 }
