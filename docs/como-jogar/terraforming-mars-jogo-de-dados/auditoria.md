@@ -40,3 +40,27 @@ Não tratados, por falta de base no manual ou por serem de outro nível: efeito 
 ## 3. Autoverificação
 
 Contas refeitas em script (`contas.py`, scratchpad). Zero travessões. `tools/vicios.py`: nenhum aviso.
+
+## 4. Seção de montagem (04/11/2026)
+
+Pedido do editor de 04/11/2026 (PADRAO_EDITORIAL.md, "Montar a mesa passo a passo"). O mesmo manual do dossiê foi baixado de novo em 04/11/2026 (https://meeplebr.com/wp-content/uploads/2022/12/TM_DICEGAME_RULES_PT-BR.pdf; robots.txt da Meeple BR libera tudo; user-agent de robô), 12 páginas, arquivo de 27/01/2023, igual ao usado no tutorial. Texto extraído com `pdftotext` e páginas 2, 3 e 9 renderizadas a 300 dpi, no scratchpad da sessão (`setup/tmdg/`).
+
+- Nova seção `## setup. Montar a mesa passo a passo` antes do "Comece a jogar", na ordem dos 11 itens da p. 3, desdobrados em 28 passos de uma ação cada; tabela por número de jogadores (p. 3 e 9); o que volta para a caixa; quem começa; diferenças da partida solo (p. 9); conferência final e uma pergunta.
+- Componentes e quantidades: o manual não tem lista de componentes. As quantidades vêm da página do produto da Meeple BR (consultada em 04/11/2026); a coluna ao lado diz o que o manual fala de cada um. Lacunas: quantidade de cada tipo de carta; o que são os 2 cartões de referência e os 4 tabuleiros de jogador (o manual não os menciona).
+- Figuras novas, recortadas das ilustrações do manual, só a parte gráfica (rótulos amarelos de texto cortados fora ou cobertos; ficam as setas amarelas que apontavam para o estoque, os prêmios e os marcos): `setup-tabuleiro.webp`, `setup-estoque.webp`, `setup-projetos.webp`, `setup-bonus.webp`, `setup-premios.webp`, `setup-marcos.webp`, `setup-mao.webp` (p. 2) e `setup-producao.webp` (p. 3). Reaproveitada: `corporacao.webp` (p. 3). Foto oficial usada uma vez: `fotos/mesa-1.webp` (FryxGames, crédito já em `fontes.json`).
+- Passos sem ilustração no manual (sem figura, nada inventado): 13 (sorteio dos dados de prêmio), 17 (quem começa), 18 e 19 (distribuição das cartas, mostradas só já na mão, figura do passo 21), 27 e 28 (penalidade e início) e toda a preparação solo (a p. 9 não tem ilustração).
+- Lacuna nova: o manual não diz o que fazer com os 2 dados não sorteados para os prêmios (p. 3); o texto diz isso e sugere que voltem ao estoque, de onde saíram.
+- "Comece a jogar" reescrito para a diretriz: "Monte a mesa" virou resumo que remete à nova seção; "Seu primeiro turno" com exemplo resolvido, tarefa para completar e tarefa sem apoio (regras das p. 4, 6 e 7); "Ainda não precisa saber" com as remissões às etapas; a tabela de dados saiu dali (continua na etapa 1 e na folha de consulta). `tools/checar_comece.py`: dentro da diretriz. Zero travessões. `tools/vicios.py`: nenhum aviso.
+
+## 5. Auditoria independente da montagem (04/11/2026)
+
+Resultado: aprovado com correções, nenhum erro. Tudo aplicado:
+
+- Dados de prêmio que sobram: "O manual não diz o que fazer com os 2 dados que sobram (p. 3). Sugestão deste guia: devolva-os ao estoque."
+- Passo 24: "a peça retangular da sua cor (a verde na figura)".
+- Solo: áreas com bônus de PV identificadas pela medalha dourada com "1" sobre fita verde, com remissão à figura do tabuleiro; oceano numa área azul de oceano vizinha da cidade (p. 6 e 9), com a ressalva de que o manual não diz se sai da pilha de 7; cubo de tempo no 0 da trilha de PVs, até o turno 50 (p. 9); linha do solo na conferência final.
+- Cartas bônus: "ao alcançar 5 PVs e de novo ao alcançar 12 PVs, uma carta bônus de cada vez" (p. 3 e 7).
+- "Comece a jogar": fim da partida com "quando 2 desses 3 parâmetros ficam completos (p. 2)"; resumo da montagem remete ao solo no fim da seção de montagem, diz que a partida solo dura 50 turnos (p. 9) e que a penalidade não vale no solo; produção com "pode descartar cartas da mão" (p. 4).
+- Menores: o 0 da trilha de PVs é o espaço sem número antes do 1; cores dos dados com "ilustração da p. 7"; nota sobre Tharsis Republic ao revelar a corporação (p. 11); legenda da foto `mesa-1.webp` cita os cartões de referência em inglês; legenda das cartas bônus sem "ao lado da trilha".
+- Figuras: `setup-tabuleiro.webp` refeito sem as setas e o resto do rótulo "MARCOS" (no manual o rótulo cobre os números 37 e 38 da trilha de PVs; eles foram recompostos com os algarismos impressos na mesma trilha da ilustração, o "3" de 39 e 36, o "8" de 48 e o "7" de 47, para a trilha não parecer pular números; o "50" foi restaurado com os pixels originais) e com os cubos dos jogadores inteiros no alto; `setup-premios.webp` e `setup-marcos.webp` sem as setas (ficou uma leve mancha entre o 49 e o 50, onde passava a seta, e na borda esquerda do marco Terraformador, cujo "6" já está coberto pela seta no manual); `setup-estoque.webp` remontado com três recortes limpos (curingas, dados, peças), sem seta, retângulo branco nem moldura cinza da página; `corporacao.webp` sem o rótulo "CORPORAÇÃO". `setup-bonus.webp` mantido (pilha cortada embaixo, onde estavam as setas).
+- `tools/checar_comece.py`: dentro da diretriz. Zero travessões. `tools/vicios.py`: nenhum aviso.
