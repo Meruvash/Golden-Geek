@@ -105,7 +105,7 @@ O guia tem três etapas, cada uma uma parte real da partida: montar a mesa e ler
 >
 > **Os cartões de nobres** são 10. Cada um vale 3 pontos de prestígio e pede uma combinação de bônus, desenhada no lado esquerdo do cartão: tantas cartas de tal cor, tantas de outra (p. 3).
 >
-> Os três níveis sobem juntos em preço e em recompensa: as cartas de nível 1 são baratas, e as de nível 3 custam mais e valem mais pontos. Por isso a mesa fica em escada, com o nível 1 embaixo.
+> Os pontos não são marcados em trilha nenhuma: estão impressos nas cartas e nos nobres que você junta à sua frente (p. 4).
 
 > [!passos] **Passo a passo: preparação** (p. 2). É igual para 2, 3 ou 4 jogadores, salvo nos passos 3 e 4.
 >
@@ -370,9 +370,9 @@ O guia tem três etapas, cada uma uma parte real da partida: montar a mesa e ler
 > [!treino] **Treino rápido: quem vence?**
 >
 > ?? a) Ana: cartas de 11 pontos e 1 nobre. Bruno: cartas de 15 pontos, sem nobre.
-> - ( ) Bruno, 15 a 11
-> - (x) Ana, 14 a 15? Não: Bruno vence, 15 a 14
-> - ( ) Empate
+> - ( ) Empate em 15
+> - (x) Bruno, 15 a 14
+> - ( ) Ana, porque tem nobre e Bruno não
 > = Ana tem 11 + 3 = 14; Bruno, 15. Bruno vence (p. 4).
 >
 > ?? b) Carla: 16 pontos, 12 cartas compradas. Davi: 16 pontos, 10 cartas compradas.
@@ -403,7 +403,7 @@ O guia tem três etapas, cada uma uma parte real da partida: montar a mesa e ler
 
 **Nobre que você cumpre sem comprar.** A verificação é no fim de qualquer turno seu, não só nos turnos de compra. Se num turno você cumpriu o pedido de dois nobres e escolheu um, o outro pode visitar você no fim do turno seguinte, mesmo que nesse turno você só tenha pegado fichas, se ele ainda estiver na mesa (p. 3 e 4).
 
-> [!dica] Os nobres revelados na preparação são os únicos da partida. Olhe para eles antes de escolher as primeiras cartas: duas ou três cores que aparecem em mais de um nobre costumam render mais que bônus espalhados.
+> [!dica] Os nobres revelados na preparação são os únicos da partida (p. 2). Olhe para eles antes de escolher as primeiras cartas: se uma cor aparece em mais de um nobre, juntar bônus nela pode trazer duas visitas com o mesmo esforço.
 
 ## 6. Avaliação final
 
