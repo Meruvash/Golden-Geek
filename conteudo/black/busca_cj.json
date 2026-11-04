@@ -12,6 +12,17 @@
   "slug": "7-wonders-dice",
   "tipo": "game"
  },
+ "a roda do tarot": {
+  "bgg": null,
+  "editora": "(Independente)",
+  "imagem": null,
+  "menor": 288.79,
+  "nome": "A Roda do Tarot",
+  "ref": 300.95,
+  "ref_dias": 5,
+  "slug": "a-roda-do-tarot",
+  "tipo": "game"
+ },
  "achei turma da monica": {
   "bgg": null,
   "editora": "NIG Brinquedos",
@@ -26,6 +37,7 @@
  "acima de r 249 limitado": null,
  "adicional ao fechar pedido aeon s end into the wild cooperative sci fi fantasy strategy deck building board game for 1 to 4 players ages": null,
  "adicional ao fechar pedido blacklist games street masters the board game utility pack dice and ring": null,
+ "adicional ao fechar pedido mojo luck matching party card game for 3 to 8 players and ages 8": null,
  "adicional ao fechar pedido rebel princess edicao deluxe a mistura definitiva de tematica e estrategia um jogo de cartas rapido viciante": null,
  "adicional ao fechar pedido sherlock files vol 4 fatal frontiers": null,
  "adicional ao fechar pedido suburbia expansions 2a edicao": null,
@@ -81,6 +93,8 @@
  "anunciado considerando o frete gratis e parcelamento flip 7 a vinganca": null,
  "arkham horror card game asmodee pacote de cenario": null,
  "asmodee 7 wonders expansao": null,
+ "asmodee dixit signature viloes expansao jogo de tabuleiro idade 8 3 a 12 jogadores 30 minutos por partida": null,
+ "asmodee duna imperium linhagens expansao jogo de tabuleiro idade 14 1 a 4 jogadores 60 a 120 minutos por partida": null,
  "astro knights orion board game": null,
  "avalon hill heroquest spirit queen s torment quest pack requires heroquest game system to play dungeon crawler games ages 14 2 5 player": null,
  "azul": {
@@ -175,6 +189,7 @@
   "slug": "claim-edicao-limitada",
   "tipo": "game"
  },
+ "clank a deck building adventure master thief edition jogo de construcao de baralhos tema de aventura edicao master thief jogo de tabulei": null,
  "clank uma aventura de construcao de baralho": null,
  "coffee rush grab go": {
   "bgg": 6.03019,
@@ -266,6 +281,17 @@
   "slug": "dc-deck-building-game-crossover-collection-1",
   "tipo": "expansion"
  },
+ "detetive": {
+  "bgg": 5.57432,
+  "editora": "Estrela",
+  "imagem": "https://uploads.comparajogos.com.br/img/8dbc6da372a373779fdba49e549df1a87b19afb8.jpg",
+  "menor": 52.98,
+  "nome": "Detetive",
+  "ref": 82.64,
+  "ref_dias": 32,
+  "slug": "detetive",
+  "tipo": "game"
+ },
  "devir jogo de tabuleiro mistureba magica 2 a 4 jogadores idade 6": {
   "bgg": 3,
   "editora": "Devir",
@@ -279,6 +305,17 @@
  },
  "devir mistborn jogo de tabuleiro 1 a 4 jogadores idade 14 anos": null,
  "digit cod": null,
+ "dixit signature adventure vilains disney edition": {
+  "bgg": null,
+  "editora": "Libellud",
+  "imagem": "https://uploads.comparajogos.com.br/img/4e1e8e13472866ea0ec9163050ba5157f21be429.jpg",
+  "menor": 45.29,
+  "nome": "Dixit: Signature – Adventure Vilains: Disney Edition",
+  "ref": 53.54,
+  "ref_dias": 32,
+  "slug": "dixit-signature-adventure-vilains-disney-edition",
+  "tipo": "expansion"
+ },
  "dobble harry potter": null,
  "dobble princesas": null,
  "dobble stitch": null,
@@ -293,6 +330,17 @@
   "ref_dias": 32,
   "slug": "dungeons-dragons-descida-ao-avernus",
   "tipo": "rpg"
+ },
+ "dungeons drinks": {
+  "bgg": 6.27013,
+  "editora": "Buró",
+  "imagem": "https://uploads.comparajogos.com.br/img/706f0e631059be78148a3a6518a8f96138c92ae1.png",
+  "menor": 99.9,
+  "nome": "Dungeons & Drinks",
+  "ref": 132.0,
+  "ref_dias": 32,
+  "slug": "dungeons-drinks",
+  "tipo": "game"
  },
  "eclipse meeple br": null,
  "edicao essencial sem os recursos premium everdell silverfrost": null,
@@ -420,6 +468,28 @@
   "slug": "hdp-4-hasta-donde-puedas",
   "tipo": "expansion"
  },
+ "h d p 5 hasta donde puedas": {
+  "bgg": null,
+  "editora": "Buró",
+  "imagem": "https://uploads.comparajogos.com.br/img/33920ceac863ddd4fb8cd25dd2e4cc64167b1c52.jpg",
+  "menor": 32.9,
+  "nome": "H.D.P. 5: Hasta Donde Puedas",
+  "ref": 35.81,
+  "ref_dias": 32,
+  "slug": "hdp-5-hasta-donde-puedas",
+  "tipo": "expansion"
+ },
+ "h d p 6 hasta donde puedas": {
+  "bgg": null,
+  "editora": "Buró",
+  "imagem": "https://uploads.comparajogos.com.br/img/d6fb9e6cd1fe5c8c475399ea2c189902550ba992.jpg",
+  "menor": 32.9,
+  "nome": "H.D.P. 6: Hasta Donde Puedas",
+  "ref": 34.32,
+  "ref_dias": 32,
+  "slug": "hdp-6-hasta-donde-puedas",
+  "tipo": "expansion"
+ },
  "h d p 8 hasta donde puedas": {
   "bgg": null,
   "editora": "Buró",
@@ -442,6 +512,7 @@
   "slug": "happy-salmon",
   "tipo": "game"
  },
+ "hellapagos big box versao conclave": null,
  "hint go": {
   "bgg": 5.68472,
   "editora": "Bezzerwizzer ApS (Bezzerwizzer Studio)",
@@ -522,6 +593,7 @@
  },
  "jogo de cartas galapagos de 2 jogadores": null,
  "jogo de tabuleiro imagem e acao 1 grow 1708": null,
+ "jogo detetive com aplicativo estrela": null,
  "jogo dorfromantik 1 6 jogadores 8 anos across the board": null,
  "klask": {
   "bgg": 7.62623,
@@ -537,6 +609,17 @@
  "la habana card game": null,
  "lancou esse ano parece simples de jogar e achei bem bonitinho seashells": null,
  "legendary encounters the matrix deck building game": null,
+ "light speed arena": {
+  "bgg": 6.08341,
+  "editora": "Pegasus Spiele",
+  "imagem": "https://uploads.comparajogos.com.br/img/8bcab8668e10ef3bc5df22c6ab69a2cb6853cf56.jpg",
+  "menor": 173.12,
+  "nome": "Light Speed Arena",
+  "ref": 198.88,
+  "ref_dias": 32,
+  "slug": "light-speed-arena",
+  "tipo": "game"
+ },
  "lobisomem": {
   "bgg": 6.85665,
   "editora": "Grok Games",
@@ -628,6 +711,7 @@
   "slug": "marrakech",
   "tipo": "game"
  },
+ "marvel asmodee manopla do infinito um jogo love letter": null,
  "mazescape kids hipnos": {
   "bgg": 6.7725,
   "editora": "Devir",
@@ -789,6 +873,18 @@
   "tipo": "game"
  },
  "no estilo do jogo scout porem com bastante interacao dnup": null,
+ "no lo testeamos ni un poco picante": {
+  "bgg": 5.75,
+  "editora": "Buró",
+  "imagem": "https://uploads.comparajogos.com.br/img/357a6cdebb03f0555b1ad9083419ee4dee9ca373.png",
+  "menor": 67.97,
+  "nome": "No Lo Testeamos Ni Un Poco: Picante",
+  "ref": 73.47,
+  "ref_dias": 32,
+  "slug": "no-lo-testeamos-ni-un-poco-picante",
+  "tipo": "expansion"
+ },
+ "northgard terras selvagensl": null,
  "o jogo dos sons": {
   "bgg": 6.11571,
   "editora": "(Independente)",
@@ -801,6 +897,28 @@
   "tipo": "game"
  },
  "o preco ja esteve um tanto mais baixo mas atualmente e o menor preco de mercado the castles of burgundy": null,
+ "onboard cinema e tv": {
+  "bgg": null,
+  "editora": "Geeks N' Orcs",
+  "imagem": null,
+  "menor": 35.1,
+  "nome": "OnBoard! Cinema e TV",
+  "ref": 44.91,
+  "ref_dias": 32,
+  "slug": "onboard-cinema-e-tv",
+  "tipo": "game"
+ },
+ "onboard variedades": {
+  "bgg": null,
+  "editora": "Geeks N' Orcs",
+  "imagem": null,
+  "menor": 35.1,
+  "nome": "Onboard! Variedades",
+  "ref": 44.91,
+  "ref_dias": 32,
+  "slug": "onboard-variedades",
+  "tipo": "game"
+ },
  "orange stories": null,
  "papua": {
   "bgg": 6.57198,
@@ -884,6 +1002,17 @@
  },
  "rio grande games elfenroads game": null,
  "rio grande games space station phoenix rio grande games jogo de tabuleiro de estrategia idades 14 2 4 jogadores 90 120 minutos": null,
+ "rolima": {
+  "bgg": 5.4,
+  "editora": "Quero Quero Jogos",
+  "imagem": "https://uploads.comparajogos.com.br/img/d1609645e31645e89d0e500982879cd06dd19d52.jpg",
+  "menor": 57.6,
+  "nome": "Rolimã",
+  "ref": 89.91,
+  "ref_dias": 32,
+  "slug": "rolima",
+  "tipo": "game"
+ },
  "sagrada": {
   "bgg": 7.46948,
   "editora": "Galápagos Jogos",
@@ -1023,6 +1152,17 @@
   "tipo": "game"
  },
  "spooky stories": null,
+ "spyfall": {
+  "bgg": 6.74683,
+  "editora": "PaperGames",
+  "imagem": "https://uploads.comparajogos.com.br/img/159a34605eaee8d2025b7e0ddf5784f8942aefb7.png",
+  "menor": 161.1,
+  "nome": "Spyfall",
+  "ref": 161.1,
+  "ref_dias": 32,
+  "slug": "spyfall",
+  "tipo": "game"
+ },
  "star wars imperial assault hondo ohnaka villain pack": {
   "bgg": 8.19374,
   "editora": "Fantasy Flight Games",
@@ -1057,6 +1197,17 @@
   "slug": "starcadia-quest",
   "tipo": "game"
  },
+ "stitch 626": {
+  "bgg": 7.66667,
+  "editora": "Grok Games",
+  "imagem": "https://uploads.comparajogos.com.br/img/d8973cb2f0014acd5d58de11cd20d9e29dfb1f10.png",
+  "menor": 55.71,
+  "nome": "Stitch 626",
+  "ref": 55.71,
+  "ref_dias": 32,
+  "slug": "stitch-626",
+  "tipo": "game"
+ },
  "stronger with you parfum 100ml": null,
  "synapses games yokohama jogo de tabuleiro estrategia colocacao trabalhadores no japao 2 a 4 jogadores 90 minutos idades 14": null,
  "taco gato cabra queijo pizza": {
@@ -1079,6 +1230,28 @@
   "ref": 137.54,
   "ref_dias": 14,
   "slug": "tacta",
+  "tipo": "game"
+ },
+ "tap bar": {
+  "bgg": null,
+  "editora": "Conclave Editora",
+  "imagem": "https://uploads.comparajogos.com.br/img/5d7e25050d31d3a295b427ade5f592d1cfcbcae9.jpg",
+  "menor": 41.51,
+  "nome": "Tap Bar",
+  "ref": 46.05,
+  "ref_dias": 32,
+  "slug": "tap-bar",
+  "tipo": "game"
+ },
+ "tchuka ruma": {
+  "bgg": 6.08333,
+  "editora": "Mitra",
+  "imagem": "https://uploads.comparajogos.com.br/img/01dedb5048a7f3476df411aa9f33579ec2637f98.jpg",
+  "menor": 53.19,
+  "nome": "Tchuka Ruma",
+  "ref": null,
+  "ref_dias": 3,
+  "slug": "tchuka-ruma",
   "tipo": "game"
  },
  "te toka tiki tiki": {
@@ -1159,6 +1332,17 @@
   "slug": "tiny-epic-cthulhu",
   "tipo": "game"
  },
+ "tixa a lagartixa": {
+  "bgg": 6.55,
+  "editora": "PaperGames",
+  "imagem": "https://uploads.comparajogos.com.br/img/cbddde131bb7b443e4d87855870783f00d5ffdd5.png",
+  "menor": 35.1,
+  "nome": "Tixa, a Lagartixa",
+  "ref": 53.81,
+  "ref_dias": 32,
+  "slug": "tixa-a-lagartixa",
+  "tipo": "game"
+ },
  "transgalactica": {
   "bgg": 6.50981,
   "editora": "Devir",
@@ -1216,6 +1400,17 @@
   "ref": 144.68,
   "ref_dias": 6,
   "slug": "vossa-excelencia-expansao-nova-era",
+  "tipo": "expansion"
+ },
+ "vudu quadrinhos vs mangas": {
+  "bgg": 6.75,
+  "editora": "Red Glove",
+  "imagem": "https://uploads.comparajogos.com.br/img/ac02c8a433ea8dfe867f109e2dad623985f92f13.jpg",
+  "menor": 89.37,
+  "nome": "Vudú: Quadrinhos vs Mangás",
+  "ref": 89.37,
+  "ref_dias": 32,
+  "slug": "vudu-quadrinhos-vs-mangas",
   "tipo": "expansion"
  },
  "wingspan oceania expansao": null

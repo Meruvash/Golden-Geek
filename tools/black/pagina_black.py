@@ -123,6 +123,11 @@ CSS = """<style>
 /* cupons */
 .cupons{display:grid;gap:10px;margin:12px 0 0;padding:0;list-style:none}
 @media (min-width:760px){.cupons{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.bk-alerta{border:1px solid #3a3320;background:linear-gradient(180deg,#1a1710,#111419);border-radius:16px;padding:18px}
+.bk-passos{margin:10px 0 12px;padding-left:20px;display:grid;gap:6px;color:#c9ced8}.bk-passos a{color:#e3b23c;font-weight:700}
+.bk-passos code{background:#0b0d10;padding:2px 6px;border-radius:6px;color:#fff}
+.bk-alerta-b{display:flex;flex-wrap:wrap;gap:10px;margin:6px 0}.bk-alerta-b a{padding:12px 16px;border-radius:12px;font-weight:800;text-decoration:none}
+.bk-alerta-b .pri{background:#e3b23c;color:#111}.bk-alerta-b .sec{border:1px solid #e3b23c;color:#e3b23c}
 .of-com{display:inline-block;font-size:.72rem;font-weight:800;padding:3px 8px;border-radius:999px;background:#2b2f3a;color:#e3b23c;margin:0 6px 6px 0}
 .of-post{display:inline-block;font-size:.85rem;font-weight:700;color:#e3b23c;margin:2px 0 6px}
 .cup-img{display:block;aspect-ratio:16/9;border-radius:10px;overflow:hidden;background:#fff;margin-bottom:4px}
@@ -456,13 +461,23 @@ def build(radar_itens, armadilhas, quase=()):
    <li><b>{n_cupons}</b><span>cupom{"s" if n_cupons != 1 else ""} anunciado{"s" if n_cupons != 1 else ""} pelas lojas</span></li>
   </ul>
   <p class="bk-atual">Atualizado em {agora_.strftime("%d/%m/%Y às %Hh%M")} (horário de Brasília). O radar lê os preços de novo a cada 30 minutos.</p>
-  <nav class="bk-pulo" aria-label="Atalhos"><a class="pri" href="#melhores">Ver as melhores ofertas</a><a class="sec" href="#todas">Todas as {len(melhor)}</a>{f'<a class="sec" href="#quase">Quase Black ({len(quase)})</a>' if quase else ""}{'<a class="sec" href="#cupons">Cupons</a>' if cps_html else ""}{'<a class="sec" href="#comunidade">Achados da comunidade</a>' if pb_html else ""}{'<a class="sec" href="#sem-foto">Achados sem foto</a>' if sem_foto_html else ""}</nav>
+  <nav class="bk-pulo" aria-label="Atalhos"><a class="pri" href="#melhores">Ver as melhores ofertas</a><a class="sec" href="#alertas">🔔 Alertas no celular</a><a class="sec" href="#todas">Todas as {len(melhor)}</a>{f'<a class="sec" href="#quase">Quase Black ({len(quase)})</a>' if quase else ""}{'<a class="sec" href="#cupons">Cupons</a>' if cps_html else ""}{'<a class="sec" href="#comunidade">Achados da comunidade</a>' if pb_html else ""}{'<a class="sec" href="#sem-foto">Achados sem foto</a>' if sem_foto_html else ""}</nav>
  </header>
  <ul class="bk-conf">
   <li>Desconto calculado sobre a média aparada do histórico de preços, não sobre o preço "de" da loja.</li>
   <li>Preço conferido na página da própria loja, com o horário da leitura em cada oferta. Promoções postadas pela comunidade (Telegram e Promobit) também entram na conta, com o selo "achado da comunidade" e link para o post.</li>
   <li>Só jogo bem avaliado: nota 7 ou mais no BGG, ou premiado. Links sem comissão.</li>
  </ul>
+ <section id="alertas" aria-labelledby="h-alertas" class="bk-alerta">
+  <h2 id="h-alertas">Receba as promoções no celular</h2>
+  <p class="sub">Quando um jogo entra no Black de Verdade, o alerta chega na barra de notificações do seu celular, como uma mensagem, com o preço, a loja e o desconto real. Tocou, abriu a oferta. É de graça, sem cadastro e sem e-mail: usamos o ntfy, um aplicativo de notificações gratuito e de código aberto.</p>
+  <ol class="bk-passos">
+   <li><b>Instale o ntfy</b>: <a href="https://play.google.com/store/apps/details?id=io.heckel.ntfy" target="_blank" rel="noopener">Android (Google Play)</a> ou <a href="https://apps.apple.com/app/ntfy/id1625396347" target="_blank" rel="noopener">iPhone (App Store)</a>.</li>
+   <li><b>Assine o canal</b> <code>eliteboardgamers-black</code>: no app, toque em <b>+</b> e digite o nome; ou toque no botão abaixo com o app instalado.</li>
+  </ol>
+  <p class="bk-alerta-b"><a class="pri" href="ntfy://ntfy.sh/eliteboardgamers-black">Assinar no app ntfy</a><a class="sec" href="https://ntfy.sh/eliteboardgamers-black" target="_blank" rel="noopener">Assinar pelo navegador</a></p>
+  <p class="sub" style="font-size:.82rem">No máximo alguns alertas por leitura (o radar lê os preços de hora em hora). Para parar, é só cancelar a assinatura no app.</p>
+ </section>
  <section id="melhores" aria-labelledby="h-melhores">
   <h2 id="h-melhores">As 5 melhores agora</h2>
   <p class="sub">A melhor combinação de nota no BGG e desconto real.</p>

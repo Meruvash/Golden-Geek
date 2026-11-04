@@ -1,0 +1,112 @@
+"""Alertas no celular do Black de Verdade, pelo ntfy (ntfy.sh: serviço open source e gratuito de notificações).
+
+Quem quer receber assina o canal TOPICO no app ntfy (Android ou iPhone) ou no navegador (ntfy.sh/<canal>); o
+alerta chega na barra de notificações do celular, como mensagem, e o toque abre a página do radar.
+
+O robô chama `avisar()` no fim de cada leitura: compara o radar de agora com o da última leitura
+(conteudo/black/alertas_estado.json) e manda um alerta para cada jogo que entrou com desconto real de 20% ou mais
+(no máximo MAX_POR_LEITURA por leitura; o resto vai num alerta-resumo). Jogo que sai e volta no mesmo dia não
+avisa de novo. Na primeira vez só grava o estado, sem disparar nada (para não mandar 60 alertas de uma vez).
+
+Envio com conta: se existir a variável NTFY_TOKEN (token de uma conta gratuita do ntfy.sh, guardado como secret),
+o envio vai autenticado e o limite diário passa a ser da conta, não do endereço de IP (sem conta, o ntfy.sh limita
+por IP, e IP compartilhado esgota rápido). Alerta que não sai fica pendente e é tentado de novo nas leituras
+seguintes, por até 6 horas.
+
+Uso manual: python3 tools/black/alertas.py [--teste]   (--teste manda um alerta só para o canal de teste)
+"""
+import datetime as dt
+import json
+import os
+import sys
+from pathlib import Path
+
+import requests
+
+ROOT = Path(__file__).resolve().parents[2]
+ESTADO = ROOT / "conteudo" / "black" / "alertas_estado.json"
+SERVIDOR = "https://ntfy.sh"
+TOPICO = "eliteboardgamers-black"
+TOPICO_TESTE = "eliteboardgamers-black-teste"
+PAGINA = "https://eliteboardgamers.com.br/black/"
+ICONE = "https://eliteboardgamers.com.br/apple-touch-icon.png"
+MAX_POR_LEITURA = 5
+UA = {"User-Agent": "EliteBoardgamers/1.0 (+https://eliteboardgamers.com.br/black/robo/)"}
+
+
+def brl(v):
+    return "R$ " + f"{v:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")
+
+
+def enviar(titulo, texto, link=PAGINA, tags="game_die", prioridade="default", topico=TOPICO, imagem=None):
+    """Manda um alerta para o canal. Os cabeçalhos do ntfy vão em ASCII; título e texto acentuados vão no corpo JSON."""
+    corpo = {"topic": topico, "title": titulo, "message": texto, "click": link, "tags": tags.split(","),
+             "priority": {"min": 1, "low": 2, "default": 3, "high": 4, "max": 5}[prioridade], "icon": ICONE,
+             "actions": [{"action": "view", "label": "Ver no Black de Verdade", "url": PAGINA}]}
+    if imagem:
+        corpo["attach"] = imagem
+    cab = {**UA, "Content-Type": "application/json"}
+    if os.environ.get("NTFY_TOKEN"):
+        cab["Authorization"] = f"Bearer {os.environ['NTFY_TOKEN']}"
+    try:
+        r = requests.post(SERVIDOR, data=json.dumps(corpo).encode("utf-8"), headers=cab, timeout=20)
+        if r.status_code != 200:
+            print(f"   ntfy respondeu {r.status_code}: {r.text[:120]}")
+        return r.status_code == 200
+    except requests.RequestException:
+        return False
+
+
+def avisar(radar_itens):
+    """Alerta os jogos que entraram no radar desde a última leitura."""
+    melhor = {}
+    for x in radar_itens:
+        if x["slug"] not in melhor or x["desc"] > melhor[x["slug"]]["desc"]:
+            melhor[x["slug"]] = x
+    try:
+        est = json.loads(ESTADO.read_text(encoding="utf-8"))
+    except FileNotFoundError:
+        est = None
+    hoje = dt.date.today().isoformat()
+    if est is None:  # primeira vez: só registra quem já está no radar
+        ESTADO.write_text(json.dumps({"no_radar": sorted(melhor), "avisados": {s: hoje for s in melhor}}, ensure_ascii=False, indent=1) + "\n",
+                          encoding="utf-8")
+        print(f"ok alertas: estado inicial gravado com {len(melhor)} jogos (nenhum alerta enviado)")
+        return
+    antes = set(est.get("no_radar", []))
+    avisados = {s: d for s, d in est.get("avisados", {}).items() if d >= (dt.date.today() - dt.timedelta(days=7)).isoformat()}
+    limite = (dt.datetime.now(dt.timezone.utc) - dt.timedelta(hours=6)).isoformat()
+    pendentes = {s: h for s, h in est.get("pendentes", {}).items() if h >= limite and s in melhor}
+    novos = [x for s, x in melhor.items() if (s not in antes or s in pendentes) and avisados.get(s) != hoje]
+    novos.sort(key=lambda x: -x["desc"])
+    enviados = 0
+    for x in novos[:MAX_POR_LEITURA]:
+        nome = x["nome"].replace("–", "-").replace("—", "-")
+        texto = (f"{brl(x['por'])} na {x['loja']}, {x['desc'] * 100:.0f}% abaixo da média real de {brl(x['ref'])}."
+                 + (" Menor preço do período." if x.get("recorde") else "")
+                 + (" Achado da comunidade, vendedor não conferido." if x.get("comunidade") else ""))
+        if enviar(f"−{x['desc'] * 100:.0f}% {nome}", texto, link=x.get("url") or PAGINA, tags="game_die,moneybag",
+                  prioridade="high" if x["desc"] >= 0.35 else "default", imagem=x.get("imagem")):
+            enviados += 1
+            avisados[x["slug"]] = hoje
+            pendentes.pop(x["slug"], None)
+        else:
+            pendentes.setdefault(x["slug"], dt.datetime.now(dt.timezone.utc).isoformat(timespec="minutes"))
+    resto = novos[MAX_POR_LEITURA:]
+    if resto and enviar(f"+{len(resto)} promoções novas no Black de Verdade",
+                        ", ".join(x["nome"] for x in resto[:6]) + ("…" if len(resto) > 6 else ""), tags="game_die"):
+        for x in resto:
+            avisados[x["slug"]] = hoje
+            pendentes.pop(x["slug"], None)
+    ESTADO.write_text(json.dumps({"no_radar": sorted(melhor), "avisados": avisados, "pendentes": pendentes}, ensure_ascii=False, indent=1, sort_keys=True) + "\n",
+                      encoding="utf-8")
+    print(f"ok alertas: {len(novos)} jogos novos no radar, {enviados} alertas enviados" + (f" e 1 resumo com {len(resto)}" if resto else ""))
+
+
+if __name__ == "__main__":
+    if "--teste" in sys.argv:
+        print(enviar("−30% Jogo de teste", "R$ 99,90 na Loja Exemplo, 30% abaixo da média real. Alerta de teste.", topico=TOPICO_TESTE))
+    else:
+        sys.path.insert(0, str(Path(__file__).resolve().parent))
+        import radar
+        avisar(radar.calcular()[0])

@@ -548,6 +548,10 @@ def main(robo=None, acao=None):
         r = calcular()
     pagina_black.build(*r)
     pagina_black.robo()
+    if a.acao != "pagina":
+        import alertas  # alerta no celular de quem assinou o canal, para cada jogo que entrou no radar
+        with _TravaDados():
+            alertas.avisar(r[0])
 
 
 if __name__ == "__main__":
