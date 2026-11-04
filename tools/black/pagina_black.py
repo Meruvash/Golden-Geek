@@ -123,7 +123,7 @@ CSS = """<style>
 /* cupons */
 .cupons{display:grid;gap:10px;margin:12px 0 0;padding:0;list-style:none}
 @media (min-width:760px){.cupons{grid-template-columns:repeat(2,minmax(0,1fr))}}
-.wp{margin:12px 0 6px}.wp p{font-size:.92rem;color:#c9ced8;margin:10px 0 0}.wp-ok{color:#5fd38d!important;font-weight:700}
+.wp{margin:12px 0 6px}.wp [hidden]{display:none!important}.wp-pisca{animation:wpp 1.2s ease 2}@keyframes wpp{50%{background:#3a3220}}.wp p{border-radius:8px}.wp p{font-size:.92rem;color:#c9ced8;margin:10px 0 0}.wp-ok{color:#5fd38d!important;font-weight:700}
 .wp-mais{margin-top:14px;border-top:1px solid #2a2f3a;padding-top:10px}.wp-mais summary{cursor:pointer;color:#e3b23c;font-weight:700}
 .bk-alerta .al-os{margin:12px 0}.al-tag{font-weight:800;margin:0 0 10px}
 .al-btn{display:flex;align-items:center;justify-content:center;width:100%;min-height:56px;padding:14px 18px;border-radius:14px;background:#e3b23c;color:#111;font-weight:900;font-size:1.08rem;text-decoration:none;border:0;cursor:pointer;font-family:inherit;box-sizing:border-box}
@@ -356,26 +356,40 @@ document.addEventListener('click',async e=>{const b=e.target.closest('.cup-cod')
 
 JS_PUSH = """<script>
 (()=>{const w=document.querySelector('.wp');if(!w)return;
-const q=s=>w.querySelector(s),mostra=s=>{['.wp-ok','.wp-ios','.wp-neg','.wp-erro'].forEach(x=>q(x).hidden=x!==s);q('.wp-ativar').hidden=s==='.wp-ok'};
-const ios=/iPhone|iPad|iPod/i.test(navigator.userAgent)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1);
+const q=s=>w.querySelector(s),btn=q('.wp-ativar'),txt=btn.textContent;
+const mostra=(s,m)=>{['.wp-ok','.wp-ios','.wp-neg','.wp-erro'].forEach(x=>q(x).hidden=x!==s);if(s&&m)q(s).textContent=m;btn.hidden=s==='.wp-ok';
+ if(s&&s!=='.wp-ok'){const el=q(s);el.scrollIntoView({behavior:'smooth',block:'center'});el.classList.remove('wp-pisca');void el.offsetWidth;el.classList.add('wp-pisca')}};
+const ua=navigator.userAgent,ios=/iPhone|iPad|iPod/i.test(ua)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1);
+const embutido=/Instagram|FBAN|FBAV|FB_IAB|Line\/|WhatsApp|Telegram|TikTok|musical_ly|; wv\)/i.test(ua);
 const app=window.matchMedia('(display-mode: standalone)').matches||navigator.standalone===true;
 const tem='serviceWorker' in navigator&&'PushManager' in window&&'Notification' in window;
 const chave=s=>{const p='='.repeat((4-s.length%4)%4),b=atob((s+p).replace(/-/g,'+').replace(/_/g,'/'));return Uint8Array.from(b,c=>c.charCodeAt(0))};
+const prazo=(pr,ms,m)=>Promise.race([pr,new Promise((_,r)=>setTimeout(()=>r(new Error(m)),ms))]);
 const api=w.dataset.api;
-if(ios&&!app){mostra('.wp-ios');q('.wp-ativar').hidden=true;return}
-if(!tem){mostra('.wp-erro');return}
-navigator.serviceWorker.register('/sw-black.js').then(async r=>{const s=await r.pushManager.getSubscription();if(s&&Notification.permission==='granted')mostra('.wp-ok')});
-q('.wp-ativar').addEventListener('click',async()=>{const b=q('.wp-ativar'),o=b.textContent;b.textContent='Ativando…';
- try{const p=await Notification.requestPermission();if(p!=='granted'){mostra('.wp-neg');b.textContent=o;return}
-  const r=await navigator.serviceWorker.register('/sw-black.js');await navigator.serviceWorker.ready;
-  const s=(await r.pushManager.getSubscription())||await r.pushManager.subscribe({userVisibleOnly:true,applicationServerKey:chave(w.dataset.chave)});
-  const x=await fetch(api+'/v1/push/inscrever',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({sub:s.toJSON()})});
-  if(!x.ok)throw new Error('api');mostra('.wp-ok');
+const motivo=()=>{if(embutido)return 'Você abriu o site dentro de outro aplicativo, e ele não deixa ligar notificações. Toque nos três pontinhos (⋮ ou …) e escolha "Abrir no navegador" ou "Abrir no Chrome/Safari"; depois toque de novo em Ativar alertas.';
+ if(ios&&!app)return '';
+ if(!tem)return 'Este navegador não aceita notificações de sites. Abra eliteboardgamers.com.br/black no Chrome (Android) ou no Safari (iPhone, depois de adicionar à Tela de Início).';
+ return null};
+if(tem&&!(ios&&!app))navigator.serviceWorker.register('/sw-black.js').then(async r=>{const s=await r.pushManager.getSubscription();if(s&&Notification.permission==='granted')mostra('.wp-ok')}).catch(()=>{});
+btn.addEventListener('click',async()=>{const m=motivo();
+ if(m===''){mostra('.wp-ios');return}
+ if(m){mostra('.wp-erro',m);return}
+ btn.textContent='Ativando…';btn.disabled=true;
+ try{if(Notification.permission==='denied'){mostra('.wp-neg');return}
+  const p=await prazo(Notification.requestPermission(),60000,'a pergunta de permissão não apareceu');
+  if(p!=='granted'){mostra('.wp-neg');return}
+  const r=await prazo(navigator.serviceWorker.register('/sw-black.js'),15000,'o navegador não registrou o serviço de alertas');
+  await prazo(navigator.serviceWorker.ready,15000,'o serviço de alertas não ficou pronto');
+  const s=(await r.pushManager.getSubscription())||await prazo(r.pushManager.subscribe({userVisibleOnly:true,applicationServerKey:chave(w.dataset.chave)}),20000,'o serviço de push do navegador não respondeu');
+  const x=await prazo(fetch(api+'/v1/push/inscrever',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({sub:s.toJSON()})}),15000,'sem resposta do servidor do Elite');
+  if(!x.ok)throw new Error('o servidor do Elite recusou a inscrição ('+x.status+')');
+  mostra('.wp-ok');
   r.showNotification('Alertas do Black de Verdade ativados',{body:'Quando um jogo entrar no radar com desconto real, o aviso chega aqui.',icon:'/icon-192.png',tag:'ativado'})}
- catch(e){b.textContent=o;mostra('.wp-erro');q('.wp-erro').textContent='Não deu para ativar agora (sem conexão com o serviço de alertas). Tente de novo em alguns minutos.'}});
-q('.wp-sair').addEventListener('click',async()=>{const r=await navigator.serviceWorker.getRegistration('/sw-black.js')||await navigator.serviceWorker.ready;const s=r&&await r.pushManager.getSubscription();
- if(s){await fetch(api+'/v1/push/cancelar',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({endpoint:s.endpoint})}).catch(()=>{});await s.unsubscribe()}
- mostra('');q('.wp-ativar').hidden=false})})();
+ catch(e){mostra('.wp-erro','Não deu para ativar: '+(e&&e.message||e)+'. Confira se está no Chrome (Android) ou no Safari pela Tela de Início (iPhone) e tente de novo.')}
+ finally{btn.textContent=txt;btn.disabled=false}});
+q('.wp-sair').addEventListener('click',async()=>{try{const r=await navigator.serviceWorker.getRegistration('/sw-black.js');const s=r&&await r.pushManager.getSubscription();
+ if(s){await fetch(api+'/v1/push/cancelar',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({endpoint:s.endpoint})}).catch(()=>{});await s.unsubscribe()}}catch(e){}
+ mostra('')})})();
 </script>"""
 
 
