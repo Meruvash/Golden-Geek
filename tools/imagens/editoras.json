@@ -1790,5 +1790,57 @@
    ],
    "verificado_em": "2026-11-04"
   }
+ },
+ "catan.com": {
+  "nome": "Catan GmbH",
+  "apelidos": [
+   "Catan GmbH"
+  ],
+  "site": "https://www.catan.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://www.catan.com/press-inquiries",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [],
+   "verificado_em": "2026-11-04"
+  }
+ },
+ "gamelyngames.com": {
+  "nome": "Gamelyn Games",
+  "apelidos": [
+   "Gamelyn Games",
+   "Gamelyn",
+   "Tycoon Games"
+  ],
+  "site": "https://tycoongames.com",
+  "plataforma": "shopify",
+  "estrategia": "sitemap+shopify_json",
+  "press_kit": "https://tycoongames.com/pages/media-application",
+  "paginas": {
+   "tiny-epic-crimes": "https://tycoongames.com/products/tiny-epic-crimes-deluxe",
+   "tiny-epic-cthulhu": "https://tycoongames.com/products/tiny-epic-cthulhu-deluxe",
+   "tiny-epic-dinosaurs": "https://tycoongames.com/products/tiny-epic-dinosaurs-deluxe",
+   "tiny-epic-dungeons": "https://tycoongames.com/products/tiny-epic-dungeons-deluxe",
+   "tiny-epic-pirates": "https://tycoongames.com/products/tiny-epic-pirates-deluxe",
+   "tiny-epic-vikings": "https://tycoongames.com/products/tiny-epic-vikings-deluxe",
+   "tiny-epic-zombies": "https://tycoongames.com/products/tiny-epic-zombies"
+  },
+  "status": "ok",
+  "obs": "gamelyngames.com redireciona para tycoongames.com (loja oficial da linha Tiny Epic); verificado em 2026-11-04",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://tycoongames.com/sitemap.xml",
+    "https://tycoongames.com/sitemap.xml",
+    "https://tycoongames.com/sitemap.xml"
+   ],
+   "verificado_em": "2026-11-04"
+  }
  }
 }

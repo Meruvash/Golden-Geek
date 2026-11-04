@@ -1,0 +1,41 @@
+{
+ "slug": "catan",
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 800,
+   "altura": 800,
+   "editora": "Catan GmbH",
+   "credito": "Imagem: Catan GmbH · edição internacional de 2025",
+   "pagina": "http://www.catan.com/catan",
+   "imagem": "https://www.catan.com/sites/default/files/2025-04/3DBox_CATAN_BaseGame_NE.png",
+   "baixada_em": "2026-11-04",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/mesa-1.webp",
+   "tipo": "mesa",
+   "largura": 900,
+   "altura": 900,
+   "editora": "Catan GmbH",
+   "credito": "Imagem: Catan GmbH · edição internacional de 2025",
+   "pagina": "http://www.catan.com/catan",
+   "imagem": "http://www.catan.com/sites/default/files/2025-04/CATAN_Boardcloseshot.jpg",
+   "baixada_em": "2026-11-04",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 1000,
+   "altura": 1000,
+   "editora": "Catan GmbH",
+   "credito": "Imagem: Catan GmbH · edição internacional de 2025",
+   "pagina": "http://www.catan.com/catan",
+   "imagem": "http://www.catan.com/sites/default/files/2025-04/CATAN_Board_3DRender.jpg",
+   "baixada_em": "2026-11-04",
+   "aprovada": true
+  }
+ ]
+}
