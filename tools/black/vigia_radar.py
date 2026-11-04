@@ -70,21 +70,34 @@ def reserva_viva(robo):
     return ids
 
 
+def inicio_mais_novo(runs):
+    """Hora em que começou a execução viva mais nova: um ciclo longo (o educado vai até 4 h) só grava o batimento no fim,
+    então execução que começou há pouco não está travada mesmo sem batimento recente (erro corrigido em 04/11/2026)."""
+    horas = []
+    for run in runs:
+        r = requests.get(f"{API}/actions/runs/{run}", headers=H, timeout=30)
+        if r.ok and r.json().get("run_started_at") and r.json().get("status") == "in_progress":
+            horas.append(dt.datetime.fromisoformat(r.json()["run_started_at"].replace("Z", "+00:00")))
+    return max(horas) if horas else None
+
+
 def decidir():
     saida = {}
     for robo, (arquivo, limite) in ROBOS.items():
-        bat = ultimo_batimento(robo)
+        vivos = (execucoes(arquivo) + reserva_viva(robo)) if TOKEN else []
+        # sinal de vida = o mais novo entre o último batimento e o começo da execução viva
+        sinais = [x for x in (ultimo_batimento(robo), inicio_mais_novo(vivos) if vivos else None) if x]
+        bat = max(sinais) if sinais else None
         idade = (agora() - bat).total_seconds() / 60 if bat else None
         recente = idade is not None and idade <= limite
-        vivos = (execucoes(arquivo) + reserva_viva(robo)) if TOKEN else []
         if TOKEN and not vivos:
             rodar, motivo = True, "nenhuma execução viva: a corrente quebrou"
         elif vivos and not recente:
-            rodar, motivo = True, f"execução viva sem batimento há {idade:.0f} min (limite {limite}): travada, cancelando" if idade else "execução viva sem batimento: travada, cancelando"
+            rodar, motivo = True, f"execução viva sem sinal de vida há {idade:.0f} min (limite {limite}): travada, cancelando" if idade else "execução viva sem batimento: travada, cancelando"
             for run in vivos:
                 requests.post(f"{API}/actions/runs/{run}/cancel", headers=H, timeout=30)
         else:
-            rodar, motivo = False, f"ok: {len(vivos)} execução(ões) viva(s), batimento há {idade:.0f} min" if idade is not None else "ok"
+            rodar, motivo = False, f"ok: {len(vivos)} execução(ões) viva(s), último sinal de vida há {idade:.0f} min" if idade is not None else "ok"
         print(f"{robo}: {'ASSUMIR' if rodar else 'seguir'} ({motivo})")
         saida[robo] = "sim" if rodar else "nao"
     if os.environ.get("GITHUB_OUTPUT"):
