@@ -1863,5 +1863,26 @@
    "sitemaps": [],
    "verificado_em": "2026-11-04"
   }
+ },
+ "shop.dicethrone.com": {
+  "nome": "Dice Throne",
+  "apelidos": [
+   "Dice Throne"
+  ],
+  "site": "https://shop.dicethrone.com",
+  "plataforma": "shopify",
+  "estrategia": "sitemap+shopify_json",
+  "press_kit": "https://shop.dicethrone.com/pages/retailer-portal",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://shop.dicethrone.com/sitemap.xml"
+   ],
+   "verificado_em": "2026-11-04"
+  }
  }
 }
