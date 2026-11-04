@@ -143,3 +143,16 @@ Pedido do editor: seção `## setup. Montar a mesa passo a passo` antes do "Come
 - **Passos sem ilustração no manual** (ficaram sem imagem, nada inventado): passo 2 (separar identidades pela tabela), passo 4 (o Xerife vira a carta), passo 7 (bala extra do Xerife), passo 8 (sobras para a caixa), passo 10 (pilha de compra, descarte e pilha de balas), passo 12 (quem começa). O manual não tem ilustração da mesa montada nem de jogadores sentados, e não define os lugares à mesa.
 - **"Comece a jogar".** O "### Monte a mesa" virou um resumo de 3 itens que remete à nova seção; `checar_comece.py` continua passando.
 - **Portões:** `checar_comece.py` ✅ (aviso só das exclamações dos nomes de carta); `vicios.py` 0 avisos; travessão e meia-risca no tutorial: 0. O conversor gera a página sem marcador cru, com 15 referências a figuras. `"publicar"` não foi alterado.
+
+## Auditoria independente da montagem (04/11/2026)
+
+Resultado: aprovado com correções, sem erro de regra. Aplicado:
+
+1. Passo 11: a caixa traz 7 cartas de resumo (p. 1); o manual não manda distribuí-las, e o guia diz que dá para deixar uma com cada jogador como consulta. Passo 8 lembra as cartas de resumo que sobram (o manual não fala delas).
+2. Cartas com livro na montagem: mesma ressalva da etapa 1 ("lista oficial da dV Giochi; confira o livrinho impresso na carta").
+3. `setup-tabuleiros.webp` (320 x 223) e `setup-cartas.webp` (330 x 194) reduzidas para perto do tamanho nativo: as imagens embutidas no PDF têm cerca de 100 ppi (`pdfimages -list`: 261 x 146 e 213 x 166 px na p. 1), e a versão anterior era ampliação. `personagem.webp` mantida.
+4. Balas: "As balas que sobram ficam numa pilha no meio da mesa" marcado como sugestão do guia (o manual não diz); "as que forem perdidas vão para ela, e a Cerveja pega dela" (p. 6).
+5. Lugares: "Sentem-se em roda, em qualquer ordem, antes de distribuir as identidades", marcado como sugestão do guia (o manual não define os lugares). A frase do passo 5 sobre lugares saiu, para não repetir.
+6. Passo 1: a identidade fica no tabuleiro virada para baixo, e a do Xerife, para cima (p. 2).
+
+Portões: `checar_comece.py` ✅ (aviso só das exclamações dos nomes de carta); `vicios.py` 0 avisos; travessão e meia-risca no tutorial: 0.

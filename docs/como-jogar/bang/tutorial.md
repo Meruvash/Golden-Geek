@@ -23,7 +23,7 @@ A montagem segue a seção Preparação do manual (p. 2), com os componentes da 
 
 !fig[As 30 balas, as fichas que marcam os pontos de vida. Ilustração: manual Galápagos (p. 1)](figuras/setup-balas.webp)
 
-1. **Tabuleiros.** Cada jogador pega um tabuleiro e o põe à sua frente. Nele ficam a sua identidade, o seu personagem, a sua arma e as suas balas (p. 2). O tabuleiro traz impresso o Colt. 45, a arma com que todos começam (p. 4 e 5).
+1. **Lugares e tabuleiros.** Sentem-se em roda, em qualquer ordem, antes de distribuir as identidades (sugestão do guia: o manual não define os lugares). Cada jogador pega um tabuleiro e o põe à sua frente. Nele ficam a sua identidade, o seu personagem, a sua arma e as suas balas (p. 2); a identidade fica no tabuleiro virada para baixo, e a do Xerife, para cima (p. 2). O tabuleiro traz impresso o Colt. 45, a arma com que todos começam (p. 4 e 5).
 
 !fig[Um tabuleiro de jogador, a base onde ficam as suas cartas e balas. Ilustração: manual Galápagos (p. 1)](figuras/setup-tabuleiros.webp)
 
@@ -41,7 +41,7 @@ A montagem segue a seção Preparação do manual (p. 2), com os componentes da 
 !fig[As cartas de identidade: Xerife, Fora da lei e, atrás, o verso das cartas. Ilustração: manual Galápagos (p. 1)](figuras/identidades.webp)
 
 4. **O Xerife se revela.** Quem recebeu o Xerife vira a carta para cima. Todos os outros olham a própria identidade e a mantêm em segredo (p. 2).
-5. **Personagens.** Embaralhe as cartas de personagem e dê uma a cada jogador, virada para cima. Cada um anuncia o nome do personagem e lê a habilidade em voz alta (p. 2). O manual não define os lugares à mesa.
+5. **Personagens.** Embaralhe as cartas de personagem e dê uma a cada jogador, virada para cima. Cada um anuncia o nome do personagem e lê a habilidade em voz alta (p. 2).
 
 !fig[Cartas de personagem: Jesse Jones e, atrás, o verso. Ilustração: manual Galápagos (p. 1)](figuras/setup-personagens.webp)
 
@@ -50,19 +50,19 @@ A montagem segue a seção Preparação do manual (p. 2), com os componentes da 
 !fig[Jesse Jones; o círculo vermelho marca as balas impressas na carta: ele começa com 4. Ilustração: manual Galápagos (p. 2)](figuras/personagem.webp)
 
 7. **A bala extra do Xerife.** O Xerife joga com uma bala a mais: personagem de 3 balas joga com 4; de 4, joga com 5 (p. 2).
-8. **De volta para a caixa.** As identidades, os personagens e os tabuleiros que sobraram voltam para a caixa (p. 2). Com 4 jogadores, sobram 3 identidades, 12 personagens e 3 tabuleiros; com 7, nenhuma identidade, 9 personagens e nenhum tabuleiro.
+8. **De volta para a caixa.** As identidades, os personagens e os tabuleiros que sobraram voltam para a caixa (p. 2). Com 4 jogadores, sobram 3 identidades, 12 personagens e 3 tabuleiros; com 7, nenhuma identidade, 9 personagens e nenhum tabuleiro. O manual não fala das cartas de resumo que sobram (veja o passo 11); guarde-as também.
 9. **Mão inicial.** Embaralhe as 80 cartas de jogo e dê a cada jogador, viradas para baixo, tantas cartas quantas balas ele tem (p. 1 e 2). O Xerife de 5 balas recebe 5.
 
 !fig[Cartas de jogo: uma de borda marrom, uma arma de borda azul e o verso. Ilustração: manual Galápagos (p. 1)](figuras/setup-cartas.webp)
 
-10. **Pilha de compra e descarte.** As cartas que sobram ficam viradas para baixo no meio da mesa, como pilha de compra. Deixe espaço ao lado para a pilha de descarte (p. 2). As balas que alguém perder durante a partida vão para uma pilha no meio da mesa (p. 6).
-11. **Cartas de resumo.** A caixa traz 7, uma por jogador, com o significado dos símbolos das cartas (p. 1, 6 e 7).
+10. **Pilha de compra e descarte.** As cartas que sobram ficam viradas para baixo no meio da mesa, como pilha de compra. Deixe espaço ao lado para a pilha de descarte (p. 2). As balas que sobram ficam numa pilha no meio da mesa (sugestão do guia: o manual não diz onde ficam); as que forem perdidas vão para ela, e a Cerveja pega dela (p. 6).
+11. **Cartas de resumo.** A caixa traz 7 cartas de resumo (p. 1), com o significado dos símbolos (p. 6 e 7); o manual não manda distribuí-las, mas dá para deixar uma com cada jogador como consulta.
 
 !fig[Cartas de resumo, com os símbolos das cartas e o que cada um quer dizer. Ilustração: manual Galápagos (p. 1)](figuras/setup-resumo.webp)
 
 12. **Quem começa.** O Xerife joga primeiro, e a vez segue no sentido horário (p. 3).
 
-> [!mais] **Primeiras partidas.** Para uma versão mais simples, tire do baralho, antes de começar, todas as cartas com o símbolo de livro (p. 2). Pela lista oficial de cartas da dV Giochi, são Duelo, Indígenas!, Empório, Prisão e Dinamite.
+> [!mais] **Primeiras partidas.** Para uma versão mais simples, tire do baralho, antes de começar, todas as cartas com o símbolo de livro (p. 2). Pela lista oficial de cartas da dV Giochi, são Duelo, Indígenas!, Empório, Prisão e Dinamite; confira o livrinho impresso na carta.
 
 !fig[O símbolo de livro, que marca as cartas tiradas na versão simplificada. Ilustração: manual Galápagos (p. 2)](figuras/setup-livro.webp)
 

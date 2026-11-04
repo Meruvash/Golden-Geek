@@ -160,3 +160,18 @@ Os recortes foram renderizados direto do PDF, só da parte gráfica, sem o texto
 **Formato:** o conversor (`tools/como_jogar_md.py`) fecha a lista numerada quando há uma figura entre os itens, e cada passo aparecia como "1.". Por isso os passos viraram parágrafos com o número em negrito ("**1. Cor de cada jogador.**"). Não mexi no conversor.
 
 **Portões:** `checar_comece.py` passa; `vicios.py` com 0 avisos; 0 travessão e meia-risca no tutorial; a conversão em memória mostra a seção antes do Comece, com as 6 imagens. O "publicar" do JSON não foi alterado.
+
+## Auditoria independente da montagem (04/11/2026)
+
+Resultado: aprovado com correções, sem erro de regra. O que foi feito em cada ponto:
+
+1. Passo 2: o texto agora diz "Ponha o tabuleiro no meio da mesa (conselho do guia; o manual não diz onde)". A citação (p. 2) ficou só na parte das cartas que vão para os espaços ao redor do tabuleiro.
+2. Título da tabela: "3 a 8 jogadores (página oficial da Libellud; o manual traz 8 discos, 8 coelhos e 8 espaços, p. 2, e regras para 3, p. 3)".
+3. Passo 3 e resumo do Comece: "6 a cada jogador (7 com 3 jogadores)".
+4. Passo 3: "cada um pega as suas e olha sem mostrar aos outros", marcado como conselho do guia. A preparação (p. 3) não diz isso; a p. 2 diz que o narrador escolhe sem revelar e que os outros entregam sem mostrar.
+5. Legenda da foto `componentes-1.webp`: "Uma partida em andamento (não é a mesa no início)".
+6. Passo 4: "Deixe espaço, longe do tabuleiro, para o descarte (p. 2)."
+
+Os passos continuam como parágrafos numerados em negrito. Com o conversor novo, a lista numerada também funcionaria, mas o resultado na página é o mesmo.
+
+Portões: `checar_comece.py` passa; `vicios.py` com 0 avisos; 0 travessão.

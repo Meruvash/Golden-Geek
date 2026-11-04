@@ -16,7 +16,7 @@ A montagem segue o quadro de preparação do manual, na p. 3, na mesma ordem: qu
 | Coelhos de madeira | 8 | Um por jogador; marca os pontos na trilha |
 | Livreto de regras | 1 | |
 
-!fig[Uma partida montada, com o tabuleiro, os coelhos na trilha, a pilha de compra, cartas e discos de votação. Imagem: Asmodee UK · edição do Reino Unido](fotos/componentes-1.webp)
+!fig[Uma partida em andamento (não é a mesa no início): o tabuleiro, os coelhos na trilha, a pilha de compra, cartas e discos de votação. Imagem: Asmodee UK · edição do Reino Unido](fotos/componentes-1.webp)
 
 **Os passos** (p. 3)
 
@@ -24,21 +24,21 @@ A montagem segue o quadro de preparação do manual, na p. 3, na mesma ordem: qu
 
 !fig[Passo 1: o disco de votação, um por jogador, na cor escolhida. Ilustração: manual Asmodee (p. 3)](figuras/setup-1-disco.webp)
 
-**2. Coelhos na trilha.** Cada jogador põe o seu coelho no início da trilha de pontuação do tabuleiro. O coelho mostra quantos pontos o jogador recebeu na partida inteira (p. 3). O tabuleiro precisa ficar ao alcance de todos, porque nele andam os coelhos e nos espaços das bordas ficam as cartas do turno (p. 2).
+**2. Coelhos na trilha.** Cada jogador põe o seu coelho no início da trilha de pontuação do tabuleiro. O coelho mostra quantos pontos o jogador recebeu na partida inteira (p. 3). Ponha o tabuleiro no meio da mesa (conselho do guia; o manual não diz onde), porque as cartas de cada turno vão para os espaços ao redor dele (p. 2).
 
 !fig[Passo 2: o coelho no início da trilha de pontuação; A é a trilha, B um dos espaços de cartas e C a referência para os jogadores. Ilustração: manual Asmodee (p. 3)](figuras/setup-2-tabuleiro.webp)
 
-**3. Mãos.** Embaralhe as 84 cartas e dê 6 a cada jogador, viradas para baixo (p. 3).
+**3. Mãos.** Embaralhe as 84 cartas e dê 6 a cada jogador (7 com 3 jogadores), viradas para baixo (p. 3). Cada um pega as suas e olha sem mostrar aos outros: o manual não escreve isso na preparação, mas o narrador escolhe a carta sem revelá-la e os outros entregam as suas sem mostrá-las (p. 2), então é o conselho do guia.
 
 !fig[Passo 3: a mão de 6 cartas de um jogador. Ilustração: manual Asmodee (p. 3)](figuras/setup-3-cartas.webp)
 
-**4. Pilha de compra.** As cartas que sobram formam a pilha de compra (p. 3). Na ilustração do manual, ela fica com o verso para cima.
+**4. Pilha de compra.** As cartas que sobram formam a pilha de compra (p. 3). Na ilustração do manual, ela fica com o verso para cima. Deixe espaço, longe do tabuleiro, para o descarte (p. 2).
 
 !fig[Passo 4: a pilha de compra, com o verso para cima. Ilustração: manual Asmodee (p. 3)](figuras/setup-4-pilha.webp)
 
 !fig[Os quatro passos juntos, como no quadro de preparação do manual. Ilustração: manual Asmodee (p. 3)](figuras/preparacao.webp)
 
-**O que muda com o número de jogadores** (p. 2 e 3; pilha contada só com o jogo base)
+**O que muda com o número de jogadores: 3 a 8 jogadores** (página oficial da Libellud; o manual traz 8 discos, 8 coelhos e 8 espaços, p. 2, e regras para 3, p. 3; pilha contada só com o jogo base)
 
 | Jogadores | Cartas na mão | Cartas no tabuleiro por turno | Espaços usados | Pilha depois de dar as cartas |
 |---|---|---|---|---|
@@ -77,7 +77,7 @@ Resumo da seção "Montar a mesa passo a passo", acima. O tabuleiro tem a **tril
 
 1. Cada jogador: coelho e disco da sua cor.
 2. Coelhos no início da trilha.
-3. 6 cartas para cada um, viradas para baixo.
+3. 6 cartas para cada um (7 com 3 jogadores), viradas para baixo.
 4. O resto é a pilha de compra.
 
 ### Seu primeiro turno
