@@ -2,6 +2,83 @@
 
 *Regras conferidas no livro de regras da edição brasileira de BANG! (Galápagos, código BNG001, versão 1.0, tradução de Karen Nakaoka), baixado da biblioteca de downloads da Asmodee Brasil, com a FAQ oficial da dV Giochi, a editora italiana, para as dúvidas que o manual não resolve. Este guia é do jogo de cartas base; o BANG! O Jogo de Dados e as expansões têm regras próprias.*
 
+## setup. Montar a mesa passo a passo
+
+!fig[A caixa de BANG!, 4ª edição. Imagem: Asmodee UK · 4ª edição, Reino Unido](fotos/capa-1.webp)
+
+A montagem segue a seção Preparação do manual (p. 2), com os componentes da p. 1. Para 4 a 7 jogadores (p. 1).
+
+**O que vem na caixa** (p. 1)
+
+| Componente | Quantidade |
+|---|---|
+| Identidades: 1 Xerife, 2 Assistentes, 3 Fora da lei, 1 Renegado | 7 |
+| Personagens | 16 |
+| Cartas de jogo | 80 |
+| Cartas de resumo | 7 |
+| Tabuleiros | 7 |
+| Balas | 30 |
+
+**Antes da primeira partida,** destaque com cuidado as fichas de bala das molduras (p. 2).
+
+!fig[As 30 balas, as fichas que marcam os pontos de vida. Ilustração: manual Galápagos (p. 1)](figuras/setup-balas.webp)
+
+1. **Lugares e tabuleiros.** Sentem-se em roda, em qualquer ordem, antes de distribuir as identidades (sugestão do guia: o manual não define os lugares). Cada jogador pega um tabuleiro e o põe à sua frente. Nele ficam a sua identidade, o seu personagem, a sua arma e as suas balas (p. 2); a identidade fica no tabuleiro virada para baixo, e a do Xerife, para cima (p. 2). O tabuleiro traz impresso o Colt. 45, a arma com que todos começam (p. 4 e 5).
+
+!fig[Um tabuleiro de jogador, a base onde ficam as suas cartas e balas. Ilustração: manual Galápagos (p. 1)](figuras/setup-tabuleiros.webp)
+
+2. **Separe as identidades.** Pegue tantas cartas de identidade quantos jogadores, nesta divisão (p. 2):
+
+| Jogadores | Xerife | Renegado | Fora da lei | Assistentes |
+|---|---|---|---|---|
+| 4 | 1 | 1 | 2 | 0 |
+| 5 | 1 | 1 | 2 | 1 |
+| 6 | 1 | 1 | 3 | 1 |
+| 7 | 1 | 1 | 3 | 2 |
+
+3. **Distribua as identidades.** Embaralhe as separadas e dê uma a cada jogador, virada para baixo (p. 2).
+
+!fig[As cartas de identidade: Xerife, Fora da lei e, atrás, o verso das cartas. Ilustração: manual Galápagos (p. 1)](figuras/identidades.webp)
+
+4. **O Xerife se revela.** Quem recebeu o Xerife vira a carta para cima. Todos os outros olham a própria identidade e a mantêm em segredo (p. 2).
+5. **Personagens.** Embaralhe as cartas de personagem e dê uma a cada jogador, virada para cima. Cada um anuncia o nome do personagem e lê a habilidade em voz alta (p. 2).
+
+!fig[Cartas de personagem: Jesse Jones e, atrás, o verso. Ilustração: manual Galápagos (p. 1)](figuras/setup-personagens.webp)
+
+6. **Balas.** Cada jogador pega tantas balas quantas aparecem no próprio personagem e as põe no tabuleiro (p. 2). As balas são os pontos de vida (p. 2).
+
+!fig[Jesse Jones; o círculo vermelho marca as balas impressas na carta: ele começa com 4. Ilustração: manual Galápagos (p. 2)](figuras/personagem.webp)
+
+7. **A bala extra do Xerife.** O Xerife joga com uma bala a mais: personagem de 3 balas joga com 4; de 4, joga com 5 (p. 2).
+8. **De volta para a caixa.** As identidades, os personagens e os tabuleiros que sobraram voltam para a caixa (p. 2). Com 4 jogadores, sobram 3 identidades, 12 personagens e 3 tabuleiros; com 7, nenhuma identidade, 9 personagens e nenhum tabuleiro. O manual não fala das cartas de resumo que sobram (veja o passo 11); guarde-as também.
+9. **Mão inicial.** Embaralhe as 80 cartas de jogo e dê a cada jogador, viradas para baixo, tantas cartas quantas balas ele tem (p. 1 e 2). O Xerife de 5 balas recebe 5.
+
+!fig[Cartas de jogo: uma de borda marrom, uma arma de borda azul e o verso. Ilustração: manual Galápagos (p. 1)](figuras/setup-cartas.webp)
+
+10. **Pilha de compra e descarte.** As cartas que sobram ficam viradas para baixo no meio da mesa, como pilha de compra. Deixe espaço ao lado para a pilha de descarte (p. 2). As balas que sobram ficam numa pilha no meio da mesa (sugestão do guia: o manual não diz onde ficam); as que forem perdidas vão para ela, e a Cerveja pega dela (p. 6).
+11. **Cartas de resumo.** A caixa traz 7 cartas de resumo (p. 1), com o significado dos símbolos (p. 6 e 7); o manual não manda distribuí-las, mas dá para deixar uma com cada jogador como consulta.
+
+!fig[Cartas de resumo, com os símbolos das cartas e o que cada um quer dizer. Ilustração: manual Galápagos (p. 1)](figuras/setup-resumo.webp)
+
+12. **Quem começa.** O Xerife joga primeiro, e a vez segue no sentido horário (p. 3).
+
+> [!mais] **Primeiras partidas.** Para uma versão mais simples, tire do baralho, antes de começar, todas as cartas com o símbolo de livro (p. 2). Pela lista oficial de cartas da dV Giochi, são Duelo, Indígenas!, Empório, Prisão e Dinamite; confira o livrinho impresso na carta.
+
+!fig[O símbolo de livro, que marca as cartas tiradas na versão simplificada. Ilustração: manual Galápagos (p. 2)](figuras/setup-livro.webp)
+
+> [!mais] **Outro jeito de marcar a vida.** Use um personagem que sobrou, virado para baixo, embaixo do seu, e deslize o seu para cobrir ou mostrar as balas impressas no verso da carta de baixo (p. 11).
+
+!fig[O marcador alternativo: Jesse Jones sobre um personagem virado para baixo, com três balas à mostra, ou seja, três pontos de vida. Ilustração: manual Galápagos (p. 11)](figuras/setup-marcador.webp)
+
+**Antes de começar, confira:** cada um tem tabuleiro, identidade virada para baixo (só o Xerife à mostra), personagem aberto, balas iguais às do personagem (mais 1 para o Xerife) e tantas cartas na mão quantas balas; pilha de compra no meio, espaço para o descarte; sobras na caixa.
+
+?? Partida de 6. O Xerife tirou El Gringo, de 3 balas. Com quantas balas e quantas cartas ele começa?
+- ( ) 3 balas e 3 cartas
+- (x) 4 balas e 4 cartas
+- ( ) 4 balas e 3 cartas
+- ( ) 3 balas e 6 cartas
+= O Xerife joga com uma bala a mais, e a mão inicial é igual às balas (p. 2).
+
 ## 4min. Comece a jogar em 4 minutos
 
 **Meta:** em 4 minutos de leitura, montar a mesa e jogar o primeiro turno sem abrir o manual.
@@ -12,13 +89,11 @@ Cada jogador recebe em segredo uma **identidade**. Só o **Xerife** se mostra; o
 
 ### Monte a mesa
 
-Para 4 a 7 jogadores (p. 1).
+Resumo da seção Montar a mesa passo a passo, logo acima:
 
-1. Cada jogador pega um tabuleiro e o põe à sua frente (p. 2).
-2. Separe as identidades: com 4, Xerife, Renegado e 2 Fora da lei; com 5, mais 1 Assistente; com 6, Xerife, Renegado, 3 Fora da lei e 1 Assistente; com 7, Xerife, Renegado, 3 Fora da lei e 2 Assistentes. Dê uma a cada um, virada para baixo. O Xerife vira a dele; os outros guardam segredo (p. 2).
-3. Embaralhe os personagens e dê um a cada jogador, virado para cima. Cada um lê a habilidade em voz alta e pega tantas balas quantas o personagem mostra. O Xerife pega uma bala a mais (p. 2).
-4. Sobras de identidades, personagens e tabuleiros voltam para a caixa (p. 2).
-5. Embaralhe as 80 cartas de jogo e dê a cada um tantas cartas quantas balas ele tem. O resto é a pilha de compra, com espaço ao lado para o descarte (p. 1 e 2).
+1. Tabuleiro para cada um; identidades pela tabela, viradas para baixo; o Xerife se revela (p. 2).
+2. Personagem aberto e balas iguais às dele; o Xerife pega uma a mais (p. 2).
+3. Cartas na mão iguais às balas; o resto é a pilha de compra (p. 2).
 
 ### Seu primeiro turno
 

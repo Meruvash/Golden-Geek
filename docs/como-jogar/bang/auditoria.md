@@ -132,3 +132,27 @@ Duas auditorias independentes: de regras (aprovada com correções, sem erro de 
 **Cortes para compensar** (nenhuma regra perdida): exemplo resolvido dos três testes de Dinamite (o passo a passo e a avaliação cobrem), pergunta 2 da avaliação (repetia o "Sua vez" do "Comece"; critério refeito para 6 perguntas), textos mais curtos em "Para entender", fontes e dois blocos da FAQ fundidos em "Na mesa".
 
 **Portões depois das correções:** `checar_comece.py` ✅ (aviso só pelas exclamações dos nomes das cartas); `vicios.py` 0 avisos no tutorial e no JSON; travessão e meia-risca no tutorial: 0. Extensão: 5.636 palavras (`wc -w`), 5.004 sem as linhas de opção e explicação. `"publicar"` segue false.
+
+## Seção de montagem (04/11/2026)
+
+Pedido do editor: seção `## setup. Montar a mesa passo a passo` antes do "Comece", toda à vista, seguindo a Preparação do manual (p. 2) na ordem, com os componentes da p. 1.
+
+- **Ordem e fontes.** Componentes e quantidades (p. 1); fichas de bala destacadas antes da primeira partida (p. 2); tabuleiro (p. 2; Colt. 45 impresso, p. 4 e 5); identidades por número de jogadores, distribuídas viradas para baixo (p. 2); Xerife se revela, os outros em segredo (p. 2); personagens embaralhados, abertos, lidos em voz alta (p. 2); balas do personagem (p. 2); bala extra do Xerife (p. 2); sobras para a caixa (p. 2); mão inicial igual às balas (p. 1 e 2); pilha de compra e espaço do descarte (p. 2); pilha de balas perdidas no meio da mesa (p. 6); cartas de resumo (p. 1, 6 e 7); quem começa (p. 3); versão simplificada (p. 2, com a lista oficial de cartas para os nomes); marcador de vida alternativo (p. 11). Tudo [verificada].
+- **Tabela recalculada em Python:** 4 = 1+1+2+0; 5 = 1+1+2+1; 6 = 1+1+3+1; 7 = 1+1+3+2 (usa as 7 identidades da caixa). Sobras: 4 jogadores, 3 identidades, 12 personagens, 3 tabuleiros; 5: 2, 11, 2; 6: 1, 10, 1; 7: 0, 9, 0. A pergunta da conferência: Xerife com El Gringo (3 balas, p. 10) joga com 4 e recebe 4 cartas.
+- **Imagens.** Foto oficial `fotos/capa-1.webp` uma vez, no topo da seção, com o crédito de `fotos/fontes.json` ("Imagem: Asmodee UK · 4ª edição, Reino Unido"). Reaproveitadas: `identidades.webp` (passo 3), `personagem.webp` (passo 6). Novos recortes da p. 1, 2 e 11 renderizadas a 600 dpi, só a parte gráfica: `setup-balas` (328 x 193), `setup-tabuleiros` (630 x 439), `setup-personagens` (475 x 393), `setup-cartas` (679 x 400), `setup-resumo` (440 x 414), `setup-livro` (288 x 213), `setup-marcador` (344 x 551). Ficaram abaixo dos 800 px pedidos porque as ilustrações embutidas no PDF são pequenas; ampliar só borraria.
+- **Passos sem ilustração no manual** (ficaram sem imagem, nada inventado): passo 2 (separar identidades pela tabela), passo 4 (o Xerife vira a carta), passo 7 (bala extra do Xerife), passo 8 (sobras para a caixa), passo 10 (pilha de compra, descarte e pilha de balas), passo 12 (quem começa). O manual não tem ilustração da mesa montada nem de jogadores sentados, e não define os lugares à mesa.
+- **"Comece a jogar".** O "### Monte a mesa" virou um resumo de 3 itens que remete à nova seção; `checar_comece.py` continua passando.
+- **Portões:** `checar_comece.py` ✅ (aviso só das exclamações dos nomes de carta); `vicios.py` 0 avisos; travessão e meia-risca no tutorial: 0. O conversor gera a página sem marcador cru, com 15 referências a figuras. `"publicar"` não foi alterado.
+
+## Auditoria independente da montagem (04/11/2026)
+
+Resultado: aprovado com correções, sem erro de regra. Aplicado:
+
+1. Passo 11: a caixa traz 7 cartas de resumo (p. 1); o manual não manda distribuí-las, e o guia diz que dá para deixar uma com cada jogador como consulta. Passo 8 lembra as cartas de resumo que sobram (o manual não fala delas).
+2. Cartas com livro na montagem: mesma ressalva da etapa 1 ("lista oficial da dV Giochi; confira o livrinho impresso na carta").
+3. `setup-tabuleiros.webp` (320 x 223) e `setup-cartas.webp` (330 x 194) reduzidas para perto do tamanho nativo: as imagens embutidas no PDF têm cerca de 100 ppi (`pdfimages -list`: 261 x 146 e 213 x 166 px na p. 1), e a versão anterior era ampliação. `personagem.webp` mantida.
+4. Balas: "As balas que sobram ficam numa pilha no meio da mesa" marcado como sugestão do guia (o manual não diz); "as que forem perdidas vão para ela, e a Cerveja pega dela" (p. 6).
+5. Lugares: "Sentem-se em roda, em qualquer ordem, antes de distribuir as identidades", marcado como sugestão do guia (o manual não define os lugares). A frase do passo 5 sobre lugares saiu, para não repetir.
+6. Passo 1: a identidade fica no tabuleiro virada para baixo, e a do Xerife, para cima (p. 2).
+
+Portões: `checar_comece.py` ✅ (aviso só das exclamações dos nomes de carta); `vicios.py` 0 avisos; travessão e meia-risca no tutorial: 0.
