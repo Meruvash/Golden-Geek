@@ -103,7 +103,7 @@ def _ml_reputacao(h, vendedor, cache):
     return cache[vendedor]
 
 
-def mercado_livre(ofertas, so=None):
+def mercado_livre(ofertas, so=None, limite=None, idade_h=None):
     """Para cada produto de catálogo do Mercado Livre que o Compara Jogos liga a um jogo, lê os anúncios do produto
     (/products/ID/items: o campo buy_box_winner deixou de vir em 2026) e fica com o mais barato, novo, de loja oficial
     ou MercadoLíder. É esse preço que entra no radar; anúncio de vendedor comum não entra (regra do usuário)."""
@@ -120,6 +120,12 @@ def mercado_livre(ofertas, so=None):
         for o in of["ofertas"]:
             m = ML_PROD.search(o.get("url") or "")
             if not m:
+                continue
+            # robô normal: só relê o que está com mais de idade_h horas, até `limite` produtos por ciclo
+            velho = (o.get("api") or {}).get("hora", "")
+            if idade_h and velho and velho > (dt.datetime.now(BR) - dt.timedelta(hours=idade_h)).isoformat(timespec="minutes"):
+                continue
+            if limite is not None and len(cache_prod) >= limite:
                 continue
             o.pop("api", None)
             pid = m.group(1)
