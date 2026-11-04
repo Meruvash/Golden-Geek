@@ -166,3 +166,31 @@ Veredito: aprovado com correções menores. O que foi feito:
 5. O passo 3 do primeiro turno solo traz a regra especial do Relâmpago: para cada Ar que você tiver, pode usar 1 Poder Lento como se fosse Rápido (ilustração da p. 14).
 
 Portões: zero travessão; `tools/vicios.py` sem aviso; `tools/checar_comece.py` passa.
+
+## Seção de montagem (04/11/2026)
+
+Nova seção `## setup. Montar a mesa passo a passo`, antes do "Comece a jogar", seguindo as p. 6 e 7 do manual na mesma ordem (Invader Board, Island and Supply, Player Setup, Invaders' Starting Action). Tem 18 passos numerados, a lista de componentes, o que fica na caixa, a tabela por número de jogadores, a conferência final e uma pergunta. O "Monte a mesa" do Comece virou um resumo de 4 itens que remete à seção nova, e a montagem do modo solo ficou só com o que é próprio do solo. Contas novas em `contas.py` (bloco MONTAGEM): 4, 8, 12 e 16 marcadores; 6, 11, 16 e 21 Pragas; 13, 26, 39 e 52 Presenças; 6 cartas de Medo e 3 de Invasor de volta à caixa; Relâmpago 2 + 7 + 4 = 13. `"publicar"` não foi mexido.
+
+**Passo e página**
+- Componentes e quantidades: p. 4 e 5. O que fica na caixa: p. 3 (sem carta de Praga, Adversário ou Cenário na primeira partida) e p. 6 (cartas de Medo e de Invasor que sobram). Tabela: p. 4, 6, 7 e 22.
+- 1 tabuleiro dos Invasores: p. 6. 2 marcadores de Medo: p. 6 e ilustração da p. 4. 3 e 4 baralho de Medo virado para baixo, com as divisórias: p. 6; "virado para baixo" vem da p. 12 ("move the top card of the Fear Deck face-down"); Nível 1 impresso: p. 12.
+- 5 e 6 baralho de Invasores: p. 6 (quadro "Making the Invader Deck"); "virado para baixo" vem da p. 10 ("Turn the top card... face-up").
+- 7 Praga: p. 4 (ilustração, 5 por jogador) e p. 6 (errata); [!mais] carta de Praga: p. 6.
+- 8 lado do tabuleiro: p. 13 e 23 (o verso é o mapa temático; a frente é o lado "balanced"). 9 encaixes: p. 6 e 7. "O Oceano fica na borda de fora" é leitura dos desenhos, não frase do manual.
+- 10 ícones de montagem e Praga da caixa: p. 6; significado dos ícones: p. 32.
+- 11 baralhos de Poder e 12 suprimento: p. 6. Dica de devolver a Praga à caixa: p. 20.
+- 13 Presenças e marcadores: p. 4 e 6. 14 Espírito, mão inicial, Progressão: p. 3 e 6. 15 tabuleiro inicial e montagem do painel: p. 6, painel na p. 14. 16 trilhas: p. 6 e 14.
+- 17 e 18 ação inicial e Explorar: p. 6 e 10. Quem começa (ninguém, jogo simultâneo): p. 8.
+
+**Figuras e página**
+- Novas: `setup-pecas.webp` (p. 4: Dahan, Cidade, Vila, Explorador, Praga, sem os títulos de quantidade); `setup-cartas.webp` (p. 5: cartas de Invasor, Poder Maior e Poder Menor, sem os títulos); `setup-praga.webp` (p. 4: espaço de Praga impresso, ampliado); `setup-mapas.webp` (p. 6: encaixes para 2 e 3 jogadores, com os rótulos "2-Player Map", "3-Player Map" e "4-player map shown..." cobertos de branco, a cor do fundo); `setup-icones.webp` (p. 32: os 5 ícones de montagem, isolados do texto e montados lado a lado sobre a cor de fundo da página); `setup-painel-frente.webp` (p. 14: lado da história e da montagem do painel do Relâmpago).
+- Reaproveitadas: `solo-invasores.webp` (p. 4), `solo-baralho-medo.webp` (p. 6), `solo-tabuleiro.webp` (p. 13), `espirito.webp` (p. 14), `explorar.webp` (p. 11), `preparacao.webp` (p. 7) e a foto `fotos/mesa-1.webp` (Greater Than Games, crédito da `fontes.json`). São 13 imagens na seção.
+
+**Sem ilustração no manual**
+- Montar o baralho de Invasores (passos 5 e 6): o quadro da p. 6 é só texto. A figura mostra as cartas (p. 5), não a pilha montada.
+- A reserva de Medo com os marcadores postos: só aparece dentro da mesa da p. 7 e da figura do Medo da p. 12.
+- O encaixe para 1 jogador: não há desenho; é o tabuleiro sozinho (p. 22).
+- Separar as cartas da Progressão de Poder: a carta aparece na p. 4 (Vital Strength of the Earth), mas não o ato de separar; não recortei.
+- A Presença inicial do Relâmpago no tabuleiro e as trilhas já cobertas: não desenhadas. As figuras mostram o texto da montagem e as trilhas descobertas.
+
+**Portões:** zero travessão; `tools/vicios.py` sem aviso (um "em resumo" foi trocado); `tools/checar_comece.py` passa; o conversor gera a seção com o selo "Comece por aqui" e todos os arquivos de figura e foto existem.

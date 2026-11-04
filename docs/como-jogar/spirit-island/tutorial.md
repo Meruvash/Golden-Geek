@@ -2,6 +2,119 @@
 
 *Regras conferidas no manual oficial em inglês da Greater Than Games (Spirit Island Rulebook, 32 páginas, versão impressa "VER: 23.08", de setembro de 2023), porque a Ace Studios, que publica o jogo no Brasil, não disponibiliza o manual em português no próprio site. Os nomes dos componentes e das regras são tradução nossa e podem ser diferentes dos impressos na caixa brasileira; na primeira vez, o nome em inglês vem entre parênteses. As páginas citadas são as do manual em inglês. Este guia cobre só o jogo base.*
 
+## setup. Montar a mesa passo a passo
+
+Esta é a montagem completa do jogo base, na ordem das p. 6 e 7 do manual, para a primeira partida: sem Adversário e sem Cenário, que mudam a montagem e por isso seriam escolhidos antes de tudo (p. 3 e 6).
+
+**Componentes que você vai usar** (p. 4 e 5)
+
+- 1 tabuleiro dos Invasores.
+- 4 tabuleiros da Ilha (1 por jogador).
+- 8 painéis de Espírito e 32 cartas de Poder Únicas (4 por Espírito); 4 cartas de Progressão de Poder.
+- 36 cartas de Poder Menor e 22 de Poder Maior.
+- 15 cartas de Invasor (4 de Estágio I, 5 de Estágio II e 6 de Estágio III).
+- 15 cartas de Medo e 2 divisórias de Nível de Terror.
+- 20 marcadores de Medo.
+- 36 Dahan, 20 Cidades, 32 Vilas, 40 Exploradores e 38 Pragas.
+- 52 Presenças (13 de cada uma de 4 cores) e 12 marcadores de lembrete (3 por cor).
+- 32 marcadores de Energia (20 de 1 e 12 de 3) e 8 cartas de ajuda.
+
+**Ficam na caixa nesta partida:** os 3 painéis de Adversário e as 3 peças de lembrete deles, os 4 painéis de Cenário, as 2 cartas de Praga (o manual pede para não usar carta de Praga quando todos são novatos), 6 das 15 cartas de Medo, 3 das 15 cartas de Invasor e os Espíritos que ninguém escolheu (p. 3 e 6).
+
+!fig[As peças do suprimento, da esquerda para a direita: Dahan, Cidade, Vila, Explorador e Praga. Ilustração: manual oficial Greater Than Games (p. 4)](figuras/setup-pecas.webp)
+
+**O que muda com o número de jogadores** (p. 4, 6, 7 e 22)
+
+| Jogadores | Tabuleiros da Ilha | Marcadores de Medo na reserva | Praga no espaço impresso (5 por jogador + 1) | Presenças em jogo |
+|---|---|---|---|---|
+| 1 | 1 | 4 | 6 | 13 |
+| 2 | 2 | 8 | 11 | 26 |
+| 3 | 3 | 12 | 16 | 39 |
+| 4 | 4 | 16 | 21 | 52 |
+
+Não mudam com o número de jogadores: 9 cartas de Medo no baralho de Medo e 12 cartas no baralho de Invasores (p. 6).
+
+**O tabuleiro dos Invasores** (p. 6)
+
+1. Ponha o tabuleiro dos Invasores num lado da mesa.
+
+!fig[O tabuleiro dos Invasores. À esquerda, de cima para baixo: o espaço do baralho de Medo (com "Victory" impresso, que aparece quando o baralho acaba), Cartas de Medo Conquistadas e o descarte de Medo. No centro, a reserva de Medo e a área de Medo Gerado. À direita, o Nível de Terror e o espaço de Praga. Embaixo, o descarte e os espaços Devastar, Construir e Explorar. Ilustração: manual oficial Greater Than Games (p. 4)](figuras/solo-invasores.webp)
+
+2. Ponha na reserva de Medo 4 marcadores de Medo por jogador (tabela acima). Os 4 símbolos com "per player" no alto da reserva lembram a conta.
+3. Embaralhe as 15 cartas de Medo e ponha 9, viradas para baixo, no espaço do baralho de Medo. As outras 6 voltam à caixa.
+4. Ponha a divisória "Nível de Terror III" embaixo das 3 cartas do fundo e a divisória "Nível de Terror II" 3 cartas acima dela. O baralho fica em três grupos de 3: Nível 1 em cima, Nível 2 no meio, Nível 3 no fundo. O Nível 1 já vem impresso no tabuleiro.
+
+!fig[O baralho de Medo aberto em leque, para conferir: três grupos de 3 cartas, separados pelas divisórias de Nível de Terror II e III. Ilustração: manual oficial Greater Than Games (p. 6)](figuras/solo-baralho-medo.webp)
+
+5. Separe as 15 cartas de Invasor pelo Estágio (o número romano). Embaralhe cada Estágio e tire 1 carta de cada sem olhar: elas voltam à caixa. Ficam 3 de Estágio I, 4 de Estágio II e 5 de Estágio III.
+6. Empilhe as 5 de Estágio III, por cima as 4 de Estágio II e por cima as 3 de Estágio I, todas viradas para baixo: são as 12 cartas do baralho de Invasores. Ponha o baralho no espaço Explorar.
+
+!fig[Os versos e as frentes das cartas usadas na montagem: à esquerda, uma carta de Invasor (verso cinza e frente com o número romano do Estágio); no meio, os versos e um exemplo de carta de Poder Maior; à direita, de Poder Menor. Ilustração: manual oficial Greater Than Games (p. 5)](figuras/setup-cartas.webp)
+
+7. Praga: sem carta de Praga, ponha no espaço de Praga impresso no tabuleiro 5 Pragas por jogador e mais 1, pela errata oficial (tabela acima).
+
+!fig[O espaço de Praga impresso no tabuleiro dos Invasores: os 5 ícones de Praga com "per player" dizem quantas Pragas pôr por jogador, e o aviso ao lado diz que, se faltar Praga ali, vocês perdem. Ilustração: manual oficial Greater Than Games (p. 4)](figuras/setup-praga.webp)
+
+> [!mais] **Com carta de Praga.** Nas partidas seguintes, sorteie 1 das 2 cartas de Praga e ponha sobre o espaço de Praga, com o lado "Ilha Saudável" para cima, sem olhar o verso. Ponha nela a Praga que a carta indica, mais 1 pela errata (p. 6).
+
+**A ilha e o suprimento** (p. 6, 7 e 13)
+
+8. Sorteie 1 tabuleiro da Ilha por jogador e use o lado da frente, o equilibrado; o verso traz o mapa temático, para jogadores experientes (p. 13 e 23).
+9. Encaixe os tabuleiros como no desenho do manual para o seu número de jogadores: com 1 jogador, o tabuleiro sozinho é a ilha; com 2 e 3, como na figura abaixo; com 4, como na mesa montada da p. 7. Nos desenhos, a faixa de Oceano de cada tabuleiro fica na borda de fora da ilha.
+
+!fig[Os encaixes da ilha. Em cima, 2 tabuleiros, um embaixo do outro, com o Oceano nas bordas de fora; embaixo, 3 tabuleiros formando uma ilha redonda, com o Oceano em volta. Ilustração: manual oficial Greater Than Games (p. 6)](figuras/setup-mapas.webp)
+
+10. Em cada terra, ao lado do número dela, há ícones de montagem. Ponha ali as peças que os ícones mostram: Explorador, Vila, Cidade, Dahan ou Praga. As peças vêm do suprimento; a Praga desta etapa vem da caixa, não do espaço de Praga (p. 6).
+
+!fig[Os ícones que aparecem nas terras e o que cada um pede, da esquerda para a direita: Explorador, Vila, Cidade, Dahan e Praga. Ilustração: manual oficial Greater Than Games (p. 32)](figuras/setup-icones.webp)
+
+!fig[Um tabuleiro da Ilha com os ícones de montagem ao lado do número de cada terra, os quatro terrenos (Selva, Areia, Pântano, Montanha), o Oceano à esquerda e, embaixo, as terras costeiras e as do interior. Ilustração: manual oficial Greater Than Games (p. 13)](figuras/solo-tabuleiro.webp)
+
+11. Embaralhe as 36 cartas de Poder Menor e as 22 de Poder Maior, em dois baralhos separados, viradas para baixo, perto da ilha, deixando espaço para o descarte de cada um.
+12. Ponha os marcadores de Energia, as Cidades, as Vilas, os Exploradores e os Dahan perto da ilha, onde todos alcancem; se precisar, faça mais de um monte.
+
+> [!dica] **Praga de volta à caixa.** O manual sugere, depois de pôr a Praga no espaço de Praga e na ilha, devolver o resto da Praga à caixa, para ninguém pegar nem devolver Praga no lugar errado (p. 20).
+
+**Os jogadores** (p. 3, 6 e 14)
+
+13. Cada jogador escolhe uma cor e pega as 13 Presenças e os 3 marcadores de lembrete dela.
+14. Cada jogador escolhe um Espírito e pega o painel e as 4 cartas de Poder Únicas dele: essas 4 cartas são a mão inicial. Na primeira partida, escolha um de complexidade baixa (Lightning's Swift Strike, Vital Strength of the Earth, River Surges in Sunlight ou Shadows Flicker Like Flame) e pegue também a carta de Progressão de Poder dele. Separe dos baralhos de Poder Menor e Maior as cartas listadas nela.
+15. Cada jogador fica com um tabuleiro da Ilha diferente, o seu tabuleiro inicial, e segue a montagem impressa no lado do painel com a história do Espírito. Ela sempre põe Presença numa ou mais terras desse tabuleiro. No Golpe Veloz do Relâmpago: 2 Presenças na terra de Areia de número mais alto do seu tabuleiro. Os outros Espíritos seguem o texto do próprio painel.
+
+!fig[O lado do painel com a história: o nome do Espírito (1), a ilustração (2), a história (3), a montagem (4: "Put 2 Presence on your starting board in the highest-numbered Sands", ou seja, 2 Presenças na Areia de número mais alto) e o estilo de jogo, com a complexidade "Low" (5). Ilustração: manual oficial Greater Than Games (p. 14)](figuras/setup-painel-frente.webp)
+
+16. Vire o painel para o outro lado, o do Crescimento e das trilhas de Presença. Ponha uma Presença em cada círculo tracejado das duas trilhas; os números da esquerda, de círculo cheio, ficam descobertos. No Relâmpago: 7 Presenças na trilha de Energia e 4 na de Jogadas; à mostra ficam o 1 de Energia e o 2 de Jogadas (2 + 7 + 4 = 13 Presenças).
+
+!fig[O lado do jogo do painel do Relâmpago: Crescimento no alto (7), as duas trilhas de Presença (8), com o primeiro círculo de cada uma em linha cheia e os outros tracejados, que recebem a Presença, e o Poder Inato (9). Ilustração: manual oficial Greater Than Games (p. 14)](figuras/espirito.webp)
+
+**A ação inicial dos Invasores** (p. 6 e 10)
+
+17. Revele a carta do topo do baralho de Invasores. Os Invasores Exploram no tipo de terra dela: 1 Explorador em cada terra desse tipo que tenha Vila ou Cidade, ou que seja vizinha de uma terra com Vila ou Cidade, ou do Oceano.
+18. Ponha essa carta virada para cima no espaço Construir. A partida começa na fase dos Espíritos.
+
+!fig[Um exemplo de Explorar, numa carta de Selva: as terras A, C e D recebem Explorador (têm Vila ou Cidade, são vizinhas de uma ou são costeiras), e a B não. Ilustração: manual oficial Greater Than Games (p. 11)](figuras/explorar.webp)
+
+**Quem começa.** Ninguém: todos jogam ao mesmo tempo em cada fase, conversando à vontade (p. 8).
+
+!fig[A mesa montada para 4 jogadores: tabuleiro dos Invasores em cima, baralhos de Poder Maior e Menor ao lado, a ilha de 4 tabuleiros no centro e, para cada jogador, painel, mão, área de jogo e descarte. Ilustração: manual oficial Greater Than Games (p. 7)](figuras/preparacao.webp)
+
+!fig[Spirit Island montado, na foto da editora. Imagem: shop.greaterthangames.com · edição em inglês (Greater Than Games)](fotos/mesa-1.webp)
+
+**Antes de começar, confira:**
+
+- Reserva de Medo com 4 marcadores por jogador; baralho de Medo com 9 cartas e as divisórias II e III no lugar.
+- Baralho de Invasores com 12 cartas (3, 4 e 5), Estágio I em cima, no espaço Explorar; 1 carta já em Construir.
+- Espaço de Praga com 5 Pragas por jogador mais 1.
+- Ícones de todas as terras cumpridos, com Praga tirada da caixa.
+- Cada Espírito com Presença na ilha, as trilhas cobertas menos o primeiro número e as 4 cartas Únicas na mão.
+
+?? Numa partida de 3 jogadores, onde fica a divisória "Nível de Terror II" no baralho de Medo?
+- ( ) Em cima de tudo, para começar no Nível 2.
+- (x) Com 3 cartas em cima dela e mais 6 embaixo (3, a divisória III e mais 3).
+- ( ) Embaixo das 9 cartas.
+- ( ) A posição depende do número de jogadores.
+= O baralho de Medo tem sempre 9 cartas em três grupos de 3: a divisória III fica a 3 cartas do fundo e a II, 3 cartas acima dela (p. 6).
+
 ## 5min. Comece a jogar em 5 minutos
 
 **Meta:** em 5 minutos de leitura, montar a mesa para a primeira partida e jogar o primeiro turno sem abrir o manual.
@@ -12,17 +125,12 @@ Spirit Island é cooperativo: todos jogam contra o jogo. Cada pessoa é um **Esp
 
 ### Monte a mesa
 
-Primeira partida, como o manual recomenda (p. 3 e 6):
+A montagem completa, com figuras, está na seção "Montar a mesa passo a passo", logo acima. O essencial (p. 3, 6 e 14):
 
-1. Tabuleiro dos Invasores num canto, com 4 marcadores de Medo por jogador na reserva de Medo.
-2. Baralho de Medo (etapa 5): 9 cartas de Medo, com a divisória "Nível de Terror 3" a 3 cartas do fundo e a "Nível de Terror 2" 3 cartas acima dela.
-3. Baralho de Invasores, no espaço Explorar: 3 cartas de Estágio I por cima, 4 de Estágio II no meio e 5 de Estágio III embaixo, cada grupo embaralhado.
-4. Praga: sem carta de Praga na primeira partida. No espaço de Praga impresso no tabuleiro, ponha 5 Pragas por jogador mais 1 (errata): 6 no solo, 11 com 2.
-5. Um tabuleiro da Ilha por jogador (no solo, um só), montados como nos desenhos das p. 6 e 7. Ponha em cada terra os Invasores, os Dahan (o povo nativo) e a Praga que os ícones dela mostram; essa Praga vem da caixa, não do espaço de Praga. O Oceano é a faixa de mar de cada tabuleiro (p. 13 e 22).
-6. Baralhos de Poder Menor e de Poder Maior embaralhados; Energia, Explorador, Vila, Cidade e Dahan ao alcance de todos.
-7. Cada jogador pega as Presenças de uma cor e um Espírito de complexidade baixa; este guia usa o **Golpe Veloz do Relâmpago** (*Lightning's Swift Strike*): painel, 4 cartas de Poder Únicas (a mão) e carta de Progressão de Poder, com as cartas listadas nela separadas.
-8. Cada jogador começa num tabuleiro da Ilha diferente e segue a montagem do lado do painel com a história. A do Relâmpago: 2 das 13 Presenças na Areia de número mais alto do seu tabuleiro. Vire o painel para o lado das trilhas e cubra os círculos tracejados: 7 Presenças na de Energia (1, 1, 2, 2, 3, 4, 4, 5) e 4 na de Jogadas (2, 3, 4, 5, 6). Ficam à mostra o 1 e o 2 (p. 4, 6 e 14).
-9. Revele a carta do topo do baralho de Invasores: ponha 1 Explorador em cada terra daquele tipo que tenha Vila ou Cidade, ou que seja vizinha de Vila, Cidade ou Oceano. A carta vai para o espaço Construir. No primeiro turno, os Invasores Constroem nas terras desse tipo que tenham Invasor: 1 Cidade se a terra tiver mais Vilas que Cidades, senão 1 Vila (p. 6 e 10).
+1. Tabuleiro dos Invasores: 4 marcadores de Medo por jogador; 9 cartas de Medo com as divisórias; baralho de Invasores (3, 4 e 5 cartas de Estágio I, II e III) no espaço Explorar; 5 Pragas por jogador mais 1 no espaço de Praga.
+2. Um tabuleiro da Ilha por jogador, com as peças dos ícones de cada terra (a Praga vem da caixa).
+3. Golpe Veloz do Relâmpago (*Lightning's Swift Strike*): 2 Presenças na Areia de número mais alto do seu tabuleiro; painel virado para as trilhas, com 7 Presenças na de Energia (1, 1, 2, 2, 3, 4, 4, 5) e 4 na de Jogadas (2, 3, 4, 5, 6), à mostra o 1 e o 2; as 4 cartas Únicas na mão.
+4. Revele a carta do topo do baralho de Invasores, Explore no tipo dela e ponha a carta em Construir. No primeiro turno, os Invasores Constroem nas terras desse tipo com Invasor: 1 Cidade se houver mais Vilas que Cidades, senão 1 Vila (p. 6 e 10).
 
 ### Seu primeiro turno
 
@@ -441,18 +549,13 @@ O guia tem cinco etapas: montar a mesa e escolher o Espírito; a rodada e as fas
 
 > [!entender] **Para entender.** O jogo solo funciona como o jogo normal, com um tabuleiro da Ilha só como a ilha inteira. O manual avisa que a sorte pesa mais e que não há outros Espíritos para cobrir as fraquezas e limites do seu (p. 22). Todas as quantidades "por jogador" da montagem valem para 1.
 
-> [!passos] **Montar a mesa para 1 jogador** (p. 3, 4, 6, 13, 14 e 22)
+> [!passos] **Montar a mesa para 1 jogador** (p. 4, 6, 14 e 22)
 >
-> 1. Ilha: sorteie 1 tabuleiro da Ilha. Ele sozinho é a ilha. Cada tabuleiro tem 8 terras numeradas, duas de cada terreno, e a faixa de Oceano desenhada nele marca as terras costeiras.
-> 2. Ponha em cada terra os Invasores, os Dahan e a Praga dos ícones impressos nela; essa Praga vem da caixa.
-> 3. Tabuleiro dos Invasores ao lado, com 4 marcadores de Medo na reserva de Medo (4 por jogador).
-> 4. Baralho de Medo: 9 cartas de Medo, com a divisória "Nível de Terror 3" a 3 cartas do fundo e a "Nível de Terror 2" 3 cartas acima dela. O número não muda no solo.
-> 5. Baralho de Invasores no espaço Explorar: 3 cartas de Estágio I, 4 de Estágio II e 5 de Estágio III, 12 no total.
-> 6. Praga: na primeira partida, sem carta de Praga; o espaço impresso pede 5 por jogador, mais 1 da errata: 6 Pragas.
-> 7. Baralhos de Poder Menor e Maior embaralhados, com espaço para o descarte; Energia e peças ao alcance.
-> 8. Pegue as 13 Presenças e os 3 marcadores de lembrete de uma cor, o painel do Golpe Veloz do Relâmpago, as 4 cartas Únicas dele (a mão) e a carta de Progressão de Poder, separando as cartas listadas nela.
-> 9. Montagem do Relâmpago: 2 Presenças na Areia de número mais alto do tabuleiro. Vire o painel para o lado das trilhas e cubra os círculos tracejados com as outras 11 Presenças: 7 na trilha de Energia e 4 na de Jogadas.
-> 10. Ação inicial dos Invasores: revele a carta do topo, Explore no tipo dela e ponha a carta em Construir.
+> 1. Ilha: sorteie 1 tabuleiro da Ilha. Ele sozinho é a ilha, com a faixa de Oceano desenhada nele marcando as terras costeiras (p. 13).
+> 2. Reserva de Medo com 4 marcadores (4 por jogador) e espaço de Praga com 6 Pragas (5 por jogador, mais 1 da errata).
+> 3. Baralho de Medo (9 cartas) e baralho de Invasores (12 cartas) iguais aos de qualquer número de jogadores.
+> 4. Uma cor só: 13 Presenças. No Relâmpago, 2 na Areia de número mais alto do tabuleiro e as outras 11 nas trilhas, 7 na de Energia e 4 na de Jogadas.
+> 5. O resto (ícones de montagem, baralhos de Poder, suprimento, painel, ação inicial dos Invasores) segue a seção "Montar a mesa passo a passo".
 
 !fig[Um tabuleiro da Ilha, que no solo é a ilha inteira: em cima, cada terreno (Selva, Areia, Pântano, Montanha) e o Oceano à esquerda; embaixo, as terras costeiras, que tocam o Oceano, e as do interior. As outras bordas são penhascos. Ao lado do número de cada terra ficam os ícones de montagem, que dizem quais Invasores, Dahan e Praga entram ali no começo. No exemplo abaixo, a Areia de número mais alto deste tabuleiro é a terra 6. Ilustração: manual oficial Greater Than Games (p. 13)](figuras/solo-tabuleiro.webp)
 

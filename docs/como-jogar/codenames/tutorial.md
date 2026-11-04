@@ -2,6 +2,73 @@
 
 *Regras conferidas no manual da edição brasileira (Devir, tradução de Rodrigo Sponchiado Uemura e Marcelo Fernandes, © Czech Games Edition, julho de 2015), baixado da página do jogo no site da Devir. Na capa desse manual o jogo se chama Codinomes; a caixa à venda se chama Código Secreto. As páginas citadas são os números impressos no manual.*
 
+## setup. Montar a mesa passo a passo
+
+Esta seção segue a página de preparação do manual (p. 2 e 3), na mesma ordem. Leva uns 2 minutos na mesa.
+
+**Componentes usados na partida**
+
+| Peça | Quantidade | Para quê |
+|---|---|---|
+| Cartas de codinome | 25 na mesa (o manual não dá o total da caixa) | Uma palavra em cada; formam a grade (p. 2) |
+| Carta chave | 1 por partida, sorteada | Mapa secreto da grade (p. 2) |
+| Apoio | 1 | Suporte em que a carta chave fica em pé, entre os espiões mestres (p. 2) |
+| Cartas de agente vermelho | 8 | Cobrem as palavras da Equipe Vermelha (p. 3) |
+| Cartas de agente azul | 8 | Cobrem as palavras da Equipe Azul (p. 3) |
+| Agente duplo | 1, vermelho de um lado e azul do outro | Vai para a equipe inicial (p. 3) |
+| Cartas de civil inocente | 7 | Cobrem as palavras que não são de ninguém (p. 3) |
+| Carta do assassino | 1 | Cobre a palavra proibida (p. 3) |
+| Ampulheta | 1 | Limite de tempo opcional (p. 5) |
+
+**Quantos jogadores**
+
+| Jogadores | Como jogar |
+|---|---|
+| 4 ou mais | Jogo padrão: duas equipes, cada uma com pelo menos dois (p. 2) |
+| 2 ou 3 | Variantes da última página do manual; veja as Situações especiais (p. 2 e 8) |
+
+**Passo a passo**
+
+1. **Forme as equipes.** Divida os jogadores em duas equipes, Vermelha e Azul, de tamanho e habilidade parecidos (p. 2).
+2. **Escolha os espiões mestres.** Cada equipe escolhe um jogador para ser o seu espião mestre (p. 2).
+3. **Sente todos no lugar.** Os dois espiões mestres sentam do mesmo lado da mesa. Os outros jogadores, os agentes de campo, sentam do lado oposto, de frente para eles (p. 2).
+
+!fig[A mesa montada vista de cima: os agentes de campo das duas equipes no alto, a grade no meio, as pilhas de cartas abaixo dela e os espiões mestres embaixo, lado a lado, com a carta chave no apoio entre eles. Ilustração: manual Devir (p. 2)](figuras/preparacao.webp)
+
+4. **Embaralhe as cartas de codinome.** Enquanto embaralha, vire metade do baralho de vez em quando, para misturar bem as palavras (p. 2).
+5. **Monte a grade.** Tire ao acaso 25 cartas de codinome e ponha-as na mesa numa grade de 5 por 5, entre as duas fileiras de jogadores (p. 2).
+6. **Sorteie a carta chave e ponha no apoio.** Os espiões mestres tiram uma carta chave ao acaso e a encaixam no apoio, entre eles. Qualquer lado pode ficar para cima. Os agentes de campo não podem ver a carta (p. 2).
+7. **Aprenda a ler a chave.** Cada quadrado da carta chave corresponde à palavra na mesma posição da grade. Quadrado azul: palavra da Equipe Azul. Quadrado vermelho: palavra da Equipe Vermelha. Quadrado sem cor: civil inocente. Quadrado preto: o assassino (p. 2).
+
+!fig[A carta chave ao lado da grade que ela descreve: cada quadrado vale para a palavra na mesma posição, e a moldura colorida de cada palavra mostra a cor do quadrado. O X preto marca o assassino. Ilustração: manual Devir (p. 2)](figuras/chave.webp)
+
+8. **Veja quem começa.** As quatro luzes nas bordas da carta chave têm a cor da equipe inicial. Ela tem 9 palavras para encontrar, a outra tem 8, e é ela que dá a primeira pista (p. 3). Na figura acima, as luzes são vermelhas: a Vermelha começa.
+9. **Separe as cartas de agente.** As 8 cartas de agente vermelho ficam numa pilha na frente do espião mestre vermelho; as 8 de agente azul, na frente do espião mestre azul (p. 3).
+
+!fig[As cartas de agente vermelho e azul, uma pilha para cada espião mestre. Ilustração: manual Devir (p. 3)](figuras/agentes.webp)
+
+10. **Vire o agente duplo para a cor da equipe inicial** e ponha-o na pilha dela. Ele é uma das cartas de agente dessa equipe durante a partida, e por isso ela tem 9 cartas, uma para cada palavra que precisa cobrir (p. 3).
+
+!fig[O agente duplo, com uma face de cada cor: fica virado para a cor da equipe inicial. Ilustração: manual Devir (p. 3)](figuras/agente-duplo.webp)
+
+11. **Ponha os civis e o assassino no meio.** As 7 cartas de civil inocente e a carta do assassino ficam entre os jogadores, num lugar onde os dois espiões mestres alcançam com facilidade (p. 3).
+
+!fig[As 7 cartas de civil inocente e a do assassino, ao alcance dos dois espiões mestres. Ilustração: manual Devir (p. 3)](figuras/civis-assassino.webp)
+
+12. **Deixe a ampulheta à mão, se for usá-la.** Ela é opcional e serve para apressar quem demora a decidir (p. 5).
+
+**O que fica fora da partida.** O manual não traz uma lista do que volta para a caixa. As cartas de codinome e as cartas chave que não foram sorteadas não entram nesta partida; na seguinte, viram-se 25 codinomes novos (p. 5).
+
+!fig[Uma partida em andamento na edição original em inglês: a grade com palavras já cobertas por cartas de agente e de civil, a carta chave no apoio, as pilhas de cartas e a ampulheta. Imagem: Czech Games Edition](../../codenames/fotos/mesa-1.webp)
+
+**Antes de começar, confira:** 25 palavras na grade; a carta chave no apoio, virada só para os espiões mestres; 9 cartas na pilha da equipe inicial e 8 na outra; 7 civis e o assassino no meio.
+
+?? A carta chave tem luzes azuis. Como ficam as pilhas de cartas de agente?
+- ( ) 8 azuis e 8 vermelhas; o agente duplo fica no meio, com os civis
+- (x) 9 na frente do espião mestre azul (8 azuis e o agente duplo virado para o azul) e 8 na frente do vermelho
+- ( ) 9 na frente do espião mestre vermelho, porque a equipe que não começa ganha uma carta a mais
+= Luzes azuis: a Azul começa e tem 9 palavras. O agente duplo vira para o azul e entra na pilha azul (p. 3).
+
 ## 4min. Comece a jogar em 4 minutos
 
 **Meta:** em 4 minutos de leitura, montar a mesa e jogar o primeiro turno da sua equipe sem abrir o manual.
@@ -12,19 +79,12 @@ Duas equipes, Vermelha e Azul, disputam a mesma grade de 25 palavras. Em cada eq
 
 ### Monte a mesa
 
-São precisos pelo menos 4 jogadores, duas equipes de dois (p. 2). Com 2 ou 3, veja as Situações especiais.
+A montagem completa, com figuras, está em **Montar a mesa passo a passo**, no alto da página. O essencial:
 
-Peças: cartas de codinome (uma palavra cada), cartas chave, o apoio (suporte da carta chave), 8 cartas de agente vermelho, 8 de agente azul, o agente duplo (vermelho de um lado, azul do outro), 7 cartas de civil inocente e 1 do assassino (p. 2 e 3).
-
-1. Divida o grupo em duas equipes de tamanho e habilidade parecidos.
-2. Cada equipe escolhe o seu espião mestre. Os dois sentam do mesmo lado da mesa; os agentes de campo, de frente para eles.
-3. Embaralhe as cartas de codinome e ponha 25 na mesa, numa grade de 5 por 5.
-4. Os espiões mestres sorteiam uma carta chave e a encaixam no apoio entre eles, com qualquer lado para cima. Os agentes de campo não podem vê-la. Cada quadrado da chave é a palavra na mesma posição da grade: azul e vermelho, das equipes; sem cor, civil; preto, assassino.
-5. As quatro luzes nas bordas da carta chave mostram a cor da equipe inicial. Ela tem 9 palavras para encontrar; a outra, 8.
-6. Vire o agente duplo para a cor da equipe inicial e junte-o à pilha de cartas de agente dela. Cada pilha fica na frente do seu espião mestre.
-7. As 7 cartas de civil inocente e a carta do assassino ficam entre os jogadores, onde os dois espiões mestres alcançam.
-
-(p. 2 e 3)
+1. Duas equipes, pelo menos 4 jogadores; um espião mestre em cada, os dois do mesmo lado da mesa (p. 2).
+2. 25 cartas de codinome numa grade de 5 por 5; a carta chave no apoio, escondida dos agentes de campo (p. 2).
+3. As luzes da chave mostram a equipe inicial, que tem 9 palavras e recebe o agente duplo; a outra tem 8 (p. 3).
+4. Cada pilha de cartas de agente na frente do seu espião mestre; civis e assassino no meio (p. 3).
 
 ### Seu primeiro turno
 
@@ -108,17 +168,9 @@ O guia tem três etapas, cada uma uma parte real da partida: montar a mesa, joga
 > 7. As cartas de agente vermelho ficam numa pilha na frente do espião mestre vermelho; as de agente azul, na frente do azul.
 > 8. As cartas de civil inocente e a do assassino ficam entre os jogadores, ao alcance dos dois espiões mestres.
 
-!fig[A mesa montada: os agentes de campo de um lado, a grade de 25 codinomes no meio, as pilhas de cartas de agente e as de civil e do assassino abaixo dela, e a carta chave no apoio, virada para os dois espiões mestres. Ilustração: manual Devir (p. 2)](figuras/preparacao.webp)
-
-!fig[A carta chave e a grade que ela descreve: cada quadrado vale para a palavra na mesma posição. As luzes vermelhas mostram que a Vermelha começa, com 9 palavras; o X marca o assassino, FAIXA. Ilustração: manual Devir (p. 2)](figuras/chave.webp)
+As figuras de cada passo da montagem estão em **Montar a mesa passo a passo**, no alto da página.
 
 > [!mais] **Embaralhar bem.** Ao embaralhar as cartas de codinome, vire metade do baralho de vez em quando, para as palavras se misturarem melhor (p. 2).
-
-!fig[As cartas de agente, 8 vermelhas e 8 azuis. Cada pilha fica na frente do seu espião mestre e ajuda a lembrar quem é de qual equipe. Ilustração: manual Devir (p. 3)](figuras/agentes.webp)
-
-!fig[O agente duplo, com uma face vermelha e uma azul, vira para a cor da equipe inicial. Ilustração: manual Devir (p. 3)](figuras/agente-duplo.webp)
-
-!fig[As cartas de civil inocente, 7, e a do assassino, 1, que ficam ao alcance dos dois espiões mestres. Ilustração: manual Devir (p. 3)](figuras/civis-assassino.webp)
 
 > [!atencao] Os agentes de campo nunca veem a carta chave. É por isso que os espiões mestres sentam juntos, com o apoio entre eles (p. 2).
 
