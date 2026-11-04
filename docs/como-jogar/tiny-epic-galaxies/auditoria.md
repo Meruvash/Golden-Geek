@@ -131,3 +131,17 @@ Pedido do editor: seção `## setup. Montar a mesa passo a passo` antes do "Come
 - **Figuras novas** (só a parte gráfica, sem rótulos nem blocos de texto do manual): `setup-paineis.webp` (p. 2, os 5 painéis), `setup-pecas.webp` (p. 2, Naves e os três tipos de marcador, recompostos sem as legendas sobre um trecho da margem da página), `setup-naves.webp` (p. 3, painel verde; um resto do rótulo "Painéis Galácticos" coberto com a cor do fundo), `setup-painel.webp` (p. 3, painel amarelo, para os passos 4 e 5), `setup-planetas.webp` (p. 3, 5 planetas e a pilha), `setup-controle.webp` (p. 3, Painel de Controle e dados; o rótulo "7 Dados de Ação" coberto com um trecho vizinho do fundo), `setup-missao.webp` (p. 2), `setup-solo.webp` (p. 10, painel pirata e marcadores; uma linha de chamada fora do painel coberta; as linhas de chamada que cruzam o painel ficaram, sem texto). `preparacao.webp` (p. 3) saiu da etapa 1 e foi para o passo 9 como visão geral. Foto oficial `fotos/componentes-1.webp` na lista de componentes, crédito "Imagem: MeepleBR" conforme `fotos/fontes.json` (não há foto de mesa montada da editora).
 - **Passos sem ilustração própria no manual:** o passo 4 (recursos) e o passo 5 (Marcador de Império) aparecem juntos no mesmo painel da ilustração da p. 3 e dividem uma figura; o embaralhar dos planetas e das missões, o descarte da missão e a devolução à caixa não são ilustrados; quem começa (p. 4) não tem desenho; a tabela por número de jogadores (p. 3) é só texto, e a ilustração mostra apenas a mesa de 3 jogadores. Nada foi inventado para esses passos.
 - **Comece a jogar:** "Monte a mesa" virou um resumo de 4 itens que aponta para a nova seção; `checar_comece.py` aprovado; `vicios.py` sem aviso; zero travessão. Página renderizada em memória com `como_jogar_md.pagina` (10 figuras na seção, listas com numeração contínua); nenhum HTML gravado, `publicar` não alterado.
+
+## Auditoria independente da montagem (04/11/2026)
+
+Veredito do auditor: APROVADO COM CORREÇÕES, sem erro de regra. Correções aplicadas:
+
+- Solo: a Frota de Piratas é "o verso de outro Painel Galáctico, de cor diferente da sua"; os Piratas usam as 4 Naves e os 3 marcadores da cor desse painel (ilustração da p. 10); no "O que volta para a caixa", "(no solo, a cor dos Piratas entra)".
+- Legenda de `componentes-1`: nomeia a caixa, diz "o livro de regras" e avisa que os componentes têm textos em inglês, como na edição brasileira (de acordo com o [!edicao] da etapa 1).
+- `preparacao.webp`: cortada a faixa de baixo com metade do título "PREPARAÇÃO" (agora 1000 x 468).
+- `setup-solo.webp`: removidas as linhas de chamada que sobravam (a diagonal do alto, a vertical sob o Marcador de Império, a de fora do painel e a de baixo da caixa do 21), copiando o fundo vizinho.
+- Tabela e parágrafo com o mesmo termo: "Painéis Galácticos fora da partida", dito como leitura do guia.
+- Conferência final: linha do solo acrescentada (4 planetas, nenhuma Missão, Frota de Piratas com 4 Naves no centro, Império na estrela, 0 de Energia e Cultura, você começa).
+- Etapa 1: o passo a passo aponta para as figuras da seção de montagem, a nota do solo remete à seção de montagem, e "salvo no passo 6 (os planetas) e nas Missões Secretas que voltam para a caixa" ficou igual nas duas seções.
+- Resumo do "Comece a jogar": "(receba 2, fique com 1)" nas Missões e "Solo: veja a seção acima."
+- `checar_comece.py` aprovado de novo; `vicios.py` sem aviso; zero travessão.

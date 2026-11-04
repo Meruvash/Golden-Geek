@@ -189,7 +189,7 @@ O guia tem quatro etapas, cada uma uma parte real da partida: montar a mesa; rol
 >
 > **A trilha de Império** marca o seu Nível de Império. Cada espaço mostra quantos dados você rola, quantas Naves pode usar e quantos pontos de vitória o nível vale, e o número do espaço é o custo para chegar nele (p. 3 e 8).
 
-> [!passos] **Passo a passo: preparação** (p. 3), em resumo (veja as figuras em "Montar a mesa passo a passo"). Igual para 2 a 5 jogadores, salvo no passo 6 (os planetas) e nas Missões Secretas que voltam para a caixa.
+> [!passos] **Passo a passo: preparação** (p. 3), resumida (veja as figuras em "Montar a mesa passo a passo"). Igual para 2 a 5 jogadores, salvo no passo 6 (os planetas) e nas Missões Secretas que voltam para a caixa.
 >
 > 1. Cada jogador recebe um Painel Galáctico, com a galáxia para cima.
 > 2. Cada um pega, da sua cor, 4 Naves, 1 Marcador de Cultura, 1 Marcador de Energia e 1 Marcador de Império.
