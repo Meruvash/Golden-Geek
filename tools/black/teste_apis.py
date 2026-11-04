@@ -105,5 +105,55 @@ def mercado_livre():
         print(f"   −{d * 100:.0f}% R$ {p:.2f} {t}")
 
 
+def mercado_livre_alternativas():
+    """Caminhos que a API ainda abre (04/11/2026): anúncios por produto, busca de catálogo, categoria e mais vendidos."""
+    print("== Mercado Livre: alternativas")
+    cid, seg = os.environ.get("ML_CLIENT_ID"), os.environ.get("ML_CLIENT_SECRET")
+    if not cid or not seg:
+        return
+    tok = requests.post(f"{ML}/oauth/token", data={"grant_type": "client_credentials", "client_id": cid, "client_secret": seg},
+                        headers=UA, timeout=30).json().get("access_token")
+    h = {**UA, "Authorization": f"Bearer {tok}"}
+    ofertas = json.loads((ROOT / "conteudo" / "black" / "ofertas.json").read_text(encoding="utf-8"))
+    ids = []
+    for of in ofertas.values():
+        for o in of.get("ofertas", []):
+            m = apis.ML_PROD.search(o.get("url") or "")
+            if m and m.group(1) not in ids:
+                ids.append(m.group(1))
+    # a) anúncios de cada produto de catálogo
+    cods, com_item, oficiais, exemplos = {}, 0, 0, []
+    for pid in ids[:20]:
+        r = requests.get(f"{ML}/products/{pid}/items", headers=h, timeout=30)
+        cods[r.status_code] = cods.get(r.status_code, 0) + 1
+        time.sleep(0.4)
+        if r.ok:
+            res = r.json().get("results") or []
+            if res:
+                com_item += 1
+                it = res[0]
+                oficiais += bool(it.get("official_store_id"))
+                if len(exemplos) < 3:
+                    exemplos.append({k: it.get(k) for k in ("price", "original_price", "condition", "official_store_id", "seller_id")})
+        elif len(exemplos) < 3:
+            exemplos.append(r.text[:120])
+    print(f"a) /products/ID/items (20): respostas {cods}; com anúncio: {com_item}; 1º anúncio de loja oficial: {oficiais}")
+    for x in exemplos:
+        print("   ", x)
+    # b) descoberta de categoria e busca de catálogo
+    r = requests.get(f"{ML}/sites/MLB/domain_discovery/search", params={"q": "jogo de tabuleiro", "limit": 3}, headers=h, timeout=30)
+    cats = [(x.get("category_id"), x.get("category_name")) for x in (r.json() if r.ok else [])]
+    print(f"b) domain_discovery: HTTP {r.status_code} {cats}")
+    r = requests.get(f"{ML}/products/search", params={"status": "active", "site_id": "MLB", "q": "jogo de tabuleiro", "limit": 20}, headers=h, timeout=30)
+    print(f"c) /products/search: HTTP {r.status_code}; " + (f"{len(r.json().get('results', []))} produtos" if r.ok else r.text[:140]))
+    # c) mais vendidos da categoria
+    for cat, _ in cats[:2]:
+        r = requests.get(f"{ML}/highlights/MLB/category/{cat}", headers=h, timeout=30)
+        n = len(r.json().get("content", [])) if r.ok else 0
+        print(f"d) /highlights/MLB/category/{cat}: HTTP {r.status_code}; {n} itens" + ("" if r.ok else " " + r.text[:120]))
+        time.sleep(0.5)
+
+
 if __name__ == "__main__":
     mercado_livre()
+    mercado_livre_alternativas()
