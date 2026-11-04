@@ -15,7 +15,7 @@
 // Variáveis: DB (D1), MODERACAO_TOKEN e TURNSTILE_SECRET (segredos), ORIGEM (site), DEV=1 só no teste local.
 
 import { rotasPush, agendado } from "./push.js";
-import { rotasMercado } from "./mercado.js";
+import { rotasMercado, rotinaMercado } from "./mercado.js";
 
 const MAX_POR_HORA = 5;
 const PAGINA = /^\/[a-z0-9\-/]{1,180}\/$/;
@@ -116,13 +116,15 @@ async function moderacao(req, url, env) {
 export default {
   async scheduled(evento, env, ctx) {
     ctx.waitUntil(agendado(env));  // notificações do Black de Verdade (worker/src/push.js)
+    // Mercado: rastreio das etiquetas, prazos de envio e conclusão dos pedidos, a cada 15 minutos
+    if (new Date(evento.scheduledTime || Date.now()).getUTCMinutes() % 15 === 0) ctx.waitUntil(rotinaMercado(env).catch(() => null));
   },
   async fetch(req, env, ctx) {
     const url = new URL(req.url), h = cors(req, env);
     try {
       if (req.method === "OPTIONS") return new Response(null, { status: 204, headers: h });
       if (url.pathname === "/painel") return new Response(PAINEL, { headers: { "content-type": "text/html; charset=utf-8", "x-robots-tag": "noindex" } });
-      if (url.pathname.startsWith("/v1/mercado/") || url.pathname.startsWith("/v1/moderacao/mercado/"))
+      if (url.pathname.startsWith("/v1/mercado/") || url.pathname.startsWith("/v1/moderacao/mercado/") || url.pathname.startsWith("/v1/envio/"))
         return rotasMercado(req, url, env, h, { json, turnstileOk, ipHash, autorizado }, ctx);
       if (url.pathname.startsWith("/v1/moderacao/")) return moderacao(req, url, env);
       if (url.pathname === "/v1/pagina" && req.method === "GET") return pagina(url, env, h);
@@ -175,18 +177,26 @@ function cartaoAnuncio(a){const fts=a.fotos.map(k=>'<a href="/v1/mercado/foto/'+
 function cartaoComentario(c){return '<div class="c '+c.estado+'" data-id="'+c.id+'"><div class="meta">'+esc(c.estado)+' · '+esc(c.criado)+' UTC · <a href="https://eliteboardgamers.com.br'+esc(c.pagina)+'" target="_blank">'+esc(c.pagina)+'</a></div>'
  +'<div><b>'+esc(c.nome)+'</b>'+(c.email?' · '+esc(c.email):'')+'</div><div class="txt">'+esc(c.texto)+'</div>'+(c.parecer?'<div class="parecer">Parecer: '+esc(c.parecer)+(c.decidido_por?' ('+esc(c.decidido_por)+')':'')+'</div>':'')
  +'<div class="acoes"><button class="b ok" data-e="aprovado">Aprovar</button><button class="b no" data-e="reprovado">Reprovar</button></div></div>'}
-const EP={aguardando:'aguardando pagamento',processando:'pagamento em análise',pago:'pago',cancelado:'cancelado',devolvido:'devolvido'};
-function cartaoPedido(p){return '<div class="c '+(p.estado==='pago'?'aprovado':p.estado==='cancelado'?'reprovado':'pendente')+'"><div class="meta">pedido #'+p.id+' · '+esc(EP[p.estado]||p.estado)+' · '+esc(p.criado)+' UTC'+(p.pagamento?' · pagamento MP '+esc(p.pagamento):'')+'</div>'
+const EP={aguardando:'aguardando pagamento',processando:'pagamento em análise',pago:'pago, esperando envio',enviado:'a caminho',entregue:'entregue',concluido:'concluído',problema:'PROBLEMA',cancelado:'cancelado',devolvido:'devolvido'};
+function cartaoPedido(p){return '<div class="c '+(p.estado==='problema'?'duvidoso':['pago','enviado','entregue','concluido'].includes(p.estado)?'aprovado':p.estado==='cancelado'?'reprovado':'pendente')+'" data-pedido="'+p.id+'"><div class="meta">pedido #'+p.id+' · '+esc(EP[p.estado]||p.estado)+' · '+esc(p.criado)+' UTC'+(p.pagamento?' · pagamento MP '+esc(p.pagamento):'')+'</div>'
  +'<div><b>'+esc(p.jogo)+'</b> <span class="preco">'+reais(p.valor+p.frete)+'</span></div><dl class="ft"><dt>Comissão</dt><dd>'+reais(p.taxa)+' (5% de '+reais(p.valor)+')</dd>'
- +'<dt>Vendedor</dt><dd>'+esc(p.vendedor)+' · anúncio #'+p.anuncio+'</dd><dt>Comprador</dt><dd>'+esc(p.comprador)+' · '+esc(p.email)+(p.whatsapp?' · '+esc(p.whatsapp):'')+'</dd><dt>Entrega</dt><dd>'+esc(p.entrega)+(p.frete?' ('+reais(p.frete)+')':'')+'</dd></dl></div>'}
+ +'<dt>Vendedor</dt><dd>'+esc(p.vendedor)+' · anúncio #'+p.anuncio+'</dd><dt>Comprador</dt><dd>'+esc(p.comprador)+' · '+esc(p.email)+(p.whatsapp?' · '+esc(p.whatsapp):'')+'</dd><dt>Entrega</dt><dd>'+esc(p.entrega)+(p.servico_nome?' · '+esc(p.servico_nome):'')+(p.frete_custo?' · etiqueta '+reais(p.frete_custo)+(p.frete_gratis?' (frete grátis)':''):'')+'</dd>'
+ +(p.entrega==='envio'?'<dt>Envio</dt><dd>'+esc(p.envio_estado||'sem etiqueta')+(p.prazo_envio?' · postar até '+esc(p.prazo_envio)+' UTC':'')+(p.etiqueta_url?' · <a href="'+esc(p.etiqueta_url)+'" target="_blank">etiqueta</a>':'')+(p.rastreio?' · rastreio '+esc(p.rastreio):'')+'</dd>':'')
+ +(p.envio_erro?'<dt>Erro</dt><dd class="den">'+esc(p.envio_erro)+'</dd>':'')+(p.problema?'<dt>Problema</dt><dd class="den">'+esc(p.problema)+'</dd>':'')+'</dl>'
+ +(['pago','enviado','entregue','problema','concluido'].includes(p.estado)?'<div class="acoes">'+(p.estado==='problema'?'<button class="b ok" data-p="reabrir">Reabrir (sem problema)</button>':'')+'<button class="b" data-p="concluir">Concluir</button><button class="b no" data-p="reembolsar">Devolver o pagamento</button></div>':'')+'</div>'}
 async function carrega(){const r=await api(aba);if(r.status===401){sessionStorage.removeItem('mod');return entrar()}
  const d=await r.json();$('#app').hidden=false;$('#login').hidden=true;const ped=aba==='mercado/pedidos',merc=aba.startsWith('mercado/');const itens=ped?d.pedidos:merc?d.anuncios:d.comentarios;
- $('#lista').innerHTML=itens.length?itens.map(ped?cartaoPedido:merc?cartaoAnuncio:cartaoComentario).join(''):'<p class="vazio">'+(ped?'Nenhuma venda ainda.':'Nada esperando decisão.')+'</p>'}
+ const topo=ped&&d.envio?'<div class="c '+(d.envio.conectado?'aprovado':'duvidoso')+'"><b>Melhor Envio (etiquetas):</b> '+(d.envio.conectado?'conta da Elite conectada. Mantenha saldo na carteira para as etiquetas.':d.envio.configurado?'falta conectar a conta da Elite. <button class="b ok" id="me-con">Conectar Melhor Envio</button>':'faltam ME_CLIENT_ID, ME_CLIENT_SECRET e ME_CONTATO no serviço (instalador).')+'</div>':'';
+ $('#lista').innerHTML=topo+(itens.length?itens.map(ped?cartaoPedido:merc?cartaoAnuncio:cartaoComentario).join(''):'<p class="vazio">'+(ped?'Nenhuma venda ainda.':'Nada esperando decisão.')+'</p>')}
 function entrar(){$('#app').hidden=true;$('#login').hidden=false;$('#senha').focus()}
 $('#login').addEventListener('submit',e=>{e.preventDefault();sessionStorage.setItem('mod',$('#senha').value);carrega()});
 $('#sair').addEventListener('click',()=>{sessionStorage.removeItem('mod');entrar()});
 document.querySelectorAll('[data-aba]').forEach(b=>b.addEventListener('click',()=>{aba=b.dataset.aba;document.querySelectorAll('[data-aba]').forEach(x=>x.setAttribute('aria-pressed',x===b));carrega()}));
-$('#lista').addEventListener('click',async e=>{const b=e.target.closest('[data-e]');if(!b)return;const id=+b.closest('.c').dataset.id;
+$('#lista').addEventListener('click',async e=>{if(e.target.id==='me-con'){const r=await api('mercado/envio/conectar',{method:'POST',body:'{}'});const j=await r.json();if(j.url)location.href=j.url;else alert(j.erro);return}
+ const bp=e.target.closest('[data-p]');if(bp){if(bp.dataset.p==='reembolsar'&&!confirm('Devolver todo o pagamento ao comprador pelo Mercado Pago?'))return;bp.disabled=true;
+  const r=await api('mercado/pedido',{method:'POST',body:JSON.stringify({id:+bp.closest('[data-pedido]').dataset.pedido,acao:bp.dataset.p})});const j=await r.json();if(j.erro)alert(j.erro);carrega();return}
+ const b=e.target.closest('[data-e]');if(!b)return;const id=+b.closest('.c').dataset.id;
  b.disabled=true;const merc=b.closest('.c').dataset.tipo==='mercado';await api((merc?'mercado/':'')+'decidir',{method:'POST',body:JSON.stringify({id,estado:b.dataset.e,por:'editor'})});carrega()});
+const ev=new URLSearchParams(location.search).get('envio');if(ev){alert({ok:'Melhor Envio conectado!',recusado:'Conexão com o Melhor Envio cancelada.',expirou:'A conexão expirou. Tente de novo.',erro:'Não deu para conectar o Melhor Envio.'}[ev]||ev);history.replaceState(null,'','/painel');aba='mercado/pedidos'}
 tok()?carrega():entrar();
 </script></main></body></html>`;

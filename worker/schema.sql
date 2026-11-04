@@ -38,7 +38,9 @@ CREATE TABLE IF NOT EXISTS mercado_anuncios (
   preco       INTEGER NOT NULL,       -- centavos
   troca       INTEGER NOT NULL DEFAULT 0,
   entrega     TEXT NOT NULL,          -- ambos | envio | retirada
-  frete       INTEGER,                -- centavos cobrados pelo envio (0 = frete grátis); vazio quando é só retirada
+  cep_origem  TEXT,                   -- CEP de onde o jogo sai (cotação do frete); nunca publicado
+  pacote      TEXT,                   -- tamanho da caixa: p | m | g | gg (worker/src/melhorenvio.js)
+  frete_gratis INTEGER NOT NULL DEFAULT 0,  -- 1: o vendedor paga o envio (sai do que ele recebe)
   cidade      TEXT NOT NULL,
   uf          TEXT NOT NULL,
   descricao   TEXT,
@@ -98,7 +100,8 @@ CREATE TABLE IF NOT EXISTS mercado_mp_oauth (
   criado      TEXT NOT NULL DEFAULT (datetime('now'))
 );
 
--- compras feitas pelo site. Valores em centavos; taxa = 5% do valor do jogo (o frete fica todo com o vendedor).
+-- compras feitas pelo site, com as etapas do pedido (pagamento -> envio -> entrega -> conclusão).
+-- Valores em centavos; taxa = 5% do valor do jogo. O frete pago vai para a Elite junto com a taxa e paga a etiqueta.
 CREATE TABLE IF NOT EXISTS mercado_pedidos (
   id          INTEGER PRIMARY KEY AUTOINCREMENT,
   anuncio     INTEGER NOT NULL,
@@ -108,15 +111,61 @@ CREATE TABLE IF NOT EXISTS mercado_pedidos (
   whatsapp    TEXT,
   entrega     TEXT NOT NULL,          -- envio | retirada
   valor       INTEGER NOT NULL,       -- preço do jogo
-  frete       INTEGER NOT NULL DEFAULT 0,
-  taxa        INTEGER NOT NULL,       -- comissão da Elite (marketplace_fee)
-  estado      TEXT NOT NULL DEFAULT 'aguardando',  -- aguardando | processando | pago | cancelado | devolvido
+  frete       INTEGER NOT NULL DEFAULT 0,   -- o que o comprador pagou de envio (0 com frete grátis)
+  frete_custo INTEGER NOT NULL DEFAULT 0,   -- custo da etiqueta cotado no Melhor Envio
+  frete_gratis INTEGER NOT NULL DEFAULT 0,
+  servico     INTEGER,                -- serviço do Melhor Envio escolhido (PAC, SEDEX, Jadlog...)
+  servico_nome TEXT,
+  prazo_dias  INTEGER,                -- prazo de entrega cotado, em dias úteis
+  destino     TEXT,                   -- endereço e CPF do comprador, cifrados (só para a etiqueta)
+  taxa        INTEGER NOT NULL,       -- comissão da Elite
+  estado      TEXT NOT NULL DEFAULT 'aguardando',  -- aguardando | processando | pago | enviado | entregue | concluido | problema | cancelado | devolvido
   preferencia TEXT,                   -- id da preferência no Mercado Pago
   pagamento   TEXT,                   -- id do pagamento no Mercado Pago
   mp_status   TEXT,
+  etiqueta    TEXT,                   -- id da etiqueta no Melhor Envio
+  etiqueta_url TEXT,                  -- link público de impressão
+  etiqueta_custo INTEGER,
+  protocolo   TEXT,
+  envio_estado TEXT,                  -- gerando | gerada | postada | entregue | cancelada | erro | atencao
+  envio_erro  TEXT,
+  rastreio    TEXT,
+  rastreio_url TEXT,
+  prazo_envio TEXT,                   -- até quando o vendedor tem de postar (pago + 10 dias)
+  problema    TEXT,                   -- relato do comprador
   criado      TEXT NOT NULL DEFAULT (datetime('now')),
   pago_em     TEXT,
+  etiqueta_em TEXT,
+  postado_em  TEXT,
+  entregue_em TEXT,
+  concluido_em TEXT,
   atualizado  TEXT,
+  rastreado_em TEXT,
   ip_hash     TEXT
 );
 CREATE INDEX IF NOT EXISTS mercado_pedidos_anuncio ON mercado_pedidos (anuncio, estado, criado);
+
+-- avaliação do vendedor pelo comprador, depois que o pedido é concluído (reputação nos anúncios)
+CREATE TABLE IF NOT EXISTS mercado_avaliacoes (
+  pedido      INTEGER PRIMARY KEY,
+  mp_usuario  TEXT NOT NULL,          -- o vendedor é identificado pela conta do Mercado Pago
+  nota        INTEGER NOT NULL,       -- 1 a 5
+  comentario  TEXT,
+  criado      TEXT NOT NULL DEFAULT (datetime('now'))
+);
+CREATE INDEX IF NOT EXISTS mercado_avaliacoes_vendedor ON mercado_avaliacoes (mp_usuario);
+
+-- a conta da Elite no Melhor Envio (uma só), tokens cifrados com MP_CHAVE
+CREATE TABLE IF NOT EXISTS mercado_envio_conta (
+  id          INTEGER PRIMARY KEY CHECK (id = 1),
+  token       TEXT NOT NULL,
+  renovacao   TEXT NOT NULL,
+  expira      TEXT NOT NULL,
+  criado      TEXT NOT NULL DEFAULT (datetime('now')),
+  atualizado  TEXT
+);
+CREATE TABLE IF NOT EXISTS mercado_envio_oauth (state TEXT PRIMARY KEY, criado TEXT NOT NULL DEFAULT (datetime('now')));
+
+-- limite de cotações de frete por aparelho (a API do Melhor Envio também tem limite)
+CREATE TABLE IF NOT EXISTS mercado_cotacoes (ip_hash TEXT NOT NULL, criado TEXT NOT NULL DEFAULT (datetime('now')));
+CREATE INDEX IF NOT EXISTS mercado_cotacoes_ip ON mercado_cotacoes (ip_hash, criado);

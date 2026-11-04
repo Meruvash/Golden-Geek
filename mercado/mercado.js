@@ -63,7 +63,21 @@
   // preço de novo só vale se a leitura for recente (até 4 dias)
   const precoNovo = j => j && j.preco && j.dia && (Date.now() - Date.parse(j.dia + "T12:00:00-03:00")) < 4 * 864e5 ? Math.round(j.preco * 100) : null;
 
-  const textoFrete = a => a.entrega === "retirada" ? "Só retirada" : (a.frete === 0 ? "Frete grátis" : a.frete ? `Frete ${reais(a.frete)}` : "Envia") + (a.entrega === "ambos" ? " ou retirada" : "");
+  const textoFrete = a => a.entrega === "retirada" ? "Só retirada" : (a.frete_gratis ? "Frete grátis" : "Envia") + (a.entrega === "ambos" ? " ou retirada" : "");
+  const estrelas = n => "★".repeat(Math.round(n)) + "☆".repeat(5 - Math.round(n));
+  const reputacao = a => a.avaliacoes ? `<span class="mc-rep">★ ${String(a.nota).replace(".", ",")} <small>(${a.avaliacoes})</small></span>` : a.vendas ? `<span class="mc-rep"><small>${a.vendas} venda${a.vendas > 1 ? "s" : ""}</small></span>` : "";
+  const mascaraCpf = v => { const d = v.replace(/\D/g, "").slice(0, 11); return d.replace(/(\d{3})(\d)/, "$1.$2").replace(/(\d{3})\.(\d{3})(\d)/, "$1.$2.$3").replace(/(\d{3})\.(\d{3})\.(\d{3})(\d)/, "$1.$2.$3-$4"); };
+  const mascaraCep = v => { const d = v.replace(/\D/g, "").slice(0, 8); return d.length > 5 ? d.slice(0, 5) + "-" + d.slice(5) : d; };
+  // preenche rua, bairro, cidade e UF pelo CEP (ViaCEP, serviço público dos Correios); se falhar, a pessoa digita
+  async function viaCep(cep, campos) {
+    const d = cep.replace(/\D/g, ""); if (d.length !== 8) return;
+    try {
+      const r = await (await fetch(`https://viacep.com.br/ws/${d}/json/`)).json(); if (r.erro) return;
+      const poe = (el, v) => { if (el && v && !el.value) el.value = v; };
+      poe(campos.rua, r.logradouro); poe(campos.bairro, r.bairro); poe(campos.cidade, r.localidade); poe(campos.uf, r.uf);
+      if (campos.numero && !campos.numero.value) campos.numero.focus();
+    } catch { /* sem rede: segue manual */ }
+  }
   const compras = { ler: () => guarda.get("eb-mercado-compras", []), poe(c) { const l = this.ler().filter(x => x.p !== c.p); l.unshift(c); guarda.set("eb-mercado-compras", l.slice(0, 50)); } };
 
   // anti-robô: o Turnstile da Cloudflare só é baixado quando a pessoa começa a preencher um formulário
@@ -87,7 +101,7 @@
     const corpo = `<span class="mc-foto">${img}${selos}</span><span class="mc-txt"><b class="mc-nome">${esc(a.jogo || "Nome do jogo")}</b>${a.edicao ? `<span class="mc-ed">${esc(a.edicao)}</span>` : ""}`
       + `<span class="mc-preco">${a.preco ? reais(a.preco) : "R$ –"}</span>${eco}`
       + `<span class="mc-onde">${ic("pino")}${esc(a.cidade || "Cidade")}${a.uf ? "/" + esc(a.uf) : ""} · ${esc(textoFrete(a))}</span>`
-      + `<span class="mc-quem"><i class="mc-av">${esc((a.vendedor || "?").trim()[0] || "?")}</i><span>${esc(a.vendedor || "Seu nome")}${a.aprovado_em ? " · " + quando(a.aprovado_em) : ""}</span></span></span>`;
+      + `<span class="mc-quem"><i class="mc-av">${esc((a.vendedor || "?").trim()[0] || "?")}</i><span>${esc(a.vendedor || "Seu nome")}${a.aprovado_em ? " · " + quando(a.aprovado_em) : ""}</span>${reputacao(a)}</span></span>`;
     return `<li class="mc-card">${link ? `<a href="${RAIZ}anuncio/?id=${a.id}">${corpo}</a>` : `<div>${corpo}</div>`}</li>`;
   }
 
@@ -159,7 +173,12 @@
     $(".mc-selos-l").innerHTML = `<span class="mc-selo ${esc(a.condicao)}">${esc(COND[a.condicao])}</span>${a.troca ? '<span class="mc-selo troca">Aceita troca</span>' : ""}`;
     $(".mc-fatos").innerHTML = [["estado", "Estado", COND[a.condicao]], ["idioma", "Idioma", IDI[a.idioma]], ["caixa", "Entrega", textoFrete(a)], ["pino", "Onde", `${a.cidade}/${a.uf}`]]
       .map(([i, t, v]) => `<div><dt>${ic(i)}${t}</dt><dd>${esc(v)}</dd></div>`).join("");
-    $(".mc-vend").innerHTML = `<i class="mc-av">${esc(a.vendedor.trim()[0])}</i><div><b>${esc(a.vendedor)}</b><small>${esc(a.cidade)}/${esc(a.uf)} · anunciou ${quando(a.aprovado_em)}</small></div>`;
+    $(".mc-vend").innerHTML = `<i class="mc-av">${esc(a.vendedor.trim()[0])}</i><div><b>${esc(a.vendedor)}</b><small>${esc(a.cidade)}/${esc(a.uf)} · anunciou ${quando(a.aprovado_em)}</small>`
+      + `<small>${a.avaliacoes ? `${reputacao(a)} · ${a.vendas} venda${a.vendas === 1 ? "" : "s"} concluída${a.vendas === 1 ? "" : "s"}` : a.vendas ? `${a.vendas} venda${a.vendas === 1 ? "" : "s"} concluída${a.vendas === 1 ? "" : "s"}` : "Ainda sem vendas avaliadas no Mercado"}</small></div>`;
+    if (a.ultimas_avaliacoes && a.ultimas_avaliacoes.length) {
+      $(".mc-aval-b").hidden = false;
+      $(".mc-avals").innerHTML = a.ultimas_avaliacoes.map(v => `<li><b aria-label="${v.nota} de 5">${estrelas(v.nota)}</b><time>${quando(v.criado)}</time>${v.comentario ? `<br>${esc(v.comentario)}` : ""}</li>`).join("");
+    }
     if (a.estado === "vendido") {
       $(".mc-vendido").hidden = false; $(".mc-denuncia").hidden = true;
     } else if (a.reservado) {
@@ -208,51 +227,87 @@
     art.removeAttribute("aria-busy");
   }
 
-  // caixa de compra do anúncio: escolha da entrega, total e a janela com os dados do comprador
+  // caixa de compra do anúncio: entrega, frete cotado pelo CEP (Melhor Envio), total e a janela com os dados do comprador
   function compraAnuncio(a) {
     const box = $(".mc-compra"), ent = $(".mc-ent"), total = $(".mc-total"), dlg = $(".mc-compra-dlg"), form = $("form", dlg), st = $(".mc-st", dlg);
+    const caixaCep = $(".mc-cep"), inCep = $("[name=cep]", caixaCep), stF = $(".mc-st-frete"), fretes = $(".mc-fretes"), botao = $(".mc-comprar");
+    const podeEnviar = a.entrega !== "retirada" && a.envio_site, podeRetirar = a.entrega !== "envio";
+    if (!podeEnviar && !podeRetirar) return;
     box.hidden = false;
-    if (a.entrega === "ambos") {
+    let opcoes = [], cepCotado = "";
+    if (podeEnviar && podeRetirar) {
       ent.hidden = false;
-      ent.innerHTML = `<label class="mc-op"><input type="radio" name="receber" value="envio" checked>Receber pelo correio<small>${a.frete ? "+ " + reais(a.frete) : "Frete grátis"}</small></label>`
+      ent.innerHTML = `<label class="mc-op"><input type="radio" name="receber" value="envio" checked>Receber pelo correio<small>${a.frete_gratis ? "Frete grátis" : "Frete calculado pelo CEP"}</small></label>`
         + `<label class="mc-op"><input type="radio" name="receber" value="retirada">Retirar em mãos<small>${esc(a.cidade)}/${esc(a.uf)}</small></label>`;
     }
-    const escolha = () => a.entrega === "ambos" ? $("[name=receber]:checked", ent).value : a.entrega;
-    const valor = () => a.preco + (escolha() === "envio" ? (a.frete || 0) : 0);
+    const escolha = () => podeEnviar && podeRetirar ? $("[name=receber]:checked", ent).value : podeEnviar ? "envio" : "retirada";
+    const opcao = () => opcoes.find(o => String(o.servico) === ($("[name=frete]:checked", fretes) || {}).value);
     const mostra = () => {
-      const e = escolha();
-      total.innerHTML = `Total: <b>${reais(valor())}</b>${e === "envio" ? (a.frete ? ` (jogo ${reais(a.preco)} + envio ${reais(a.frete)})` : " com frete grátis") : " · retirada em mãos"}`;
-      $(".mc-comprar").lastChild.textContent = `Comprar por ${reais(valor())}`;
+      const e = escolha(), o = opcao();
+      caixaCep.hidden = e !== "envio";
+      if (e === "envio" && !o) { total.innerHTML = "Informe o seu CEP para ver o frete e o prazo."; botao.disabled = true; botao.lastChild.textContent = "Comprar"; return; }
+      const v = a.preco + (e === "envio" ? o.preco : 0);
+      total.innerHTML = `Total: <b>${reais(v)}</b>${e === "envio" ? (o.preco ? ` (jogo ${reais(a.preco)} + envio ${reais(o.preco)})` : " com frete grátis") + ` · chega em até ${o.prazo} dias úteis depois da postagem` : " · retirada em mãos"}`;
+      botao.disabled = false; botao.lastChild.textContent = `Comprar por ${reais(v)}`;
     };
-    ent.addEventListener("change", mostra); mostra();
-    const dados = guarda.get("eb-mercado-comprador", {});
-    for (const k of ["nome", "email", "whatsapp"]) if (dados[k]) form.elements[k].value = dados[k];
-    form.elements.whatsapp.addEventListener("input", ev => { ev.target.value = mascaraZap(ev.target.value); });
-    $(".mc-comprar").addEventListener("click", () => {
+    async function calcula() {
+      const cep = inCep.value.replace(/\D/g, "");
+      if (cep.length !== 8) { stF.className = "mc-st mc-st-frete erro"; stF.textContent = "CEP com 8 números."; return; }
+      stF.className = "mc-st mc-st-frete"; stF.textContent = "Calculando…"; fretes.innerHTML = "";
+      try {
+        const d = await postJSON("/v1/mercado/frete", { id: a.id, cep });
+        opcoes = d.opcoes; cepCotado = cep; stF.textContent = "";
+        guarda.set("eb-mercado-cep", cep);
+        fretes.innerHTML = opcoes.map((o, i) => `<label class="mc-op"><input type="radio" name="frete" value="${o.servico}"${i ? "" : " checked"}><span>${esc(o.empresa || "")} ${esc(o.nome)}<small>até ${o.prazo} dias úteis</small></span><b>${o.preco ? reais(o.preco) : "Grátis"}</b></label>`).join("");
+      } catch (ex) { opcoes = []; stF.className = "mc-st mc-st-frete erro"; stF.textContent = ex.message; }
+      mostra();
+    }
+    inCep.addEventListener("input", () => { inCep.value = mascaraCep(inCep.value); if (inCep.value.replace(/\D/g, "").length === 8 && inCep.value.replace(/\D/g, "") !== cepCotado) calcula(); });
+    $(".mc-calc").addEventListener("click", calcula);
+    ent.addEventListener("change", mostra); fretes.addEventListener("change", mostra);
+    const cepSalvo = guarda.get("eb-mercado-cep", "");
+    if (cepSalvo && podeEnviar) { inCep.value = mascaraCep(cepSalvo); calcula(); }
+    mostra();
+    // janela de compra: dados de contato e, no envio, o endereço completo para a etiqueta
+    const dados = guarda.get("eb-mercado-comprador", {}), f = form.elements;
+    for (const k of ["nome", "email", "whatsapp", "e_nome", "e_rua", "e_numero", "e_complemento", "e_bairro", "e_cidade", "e_uf"]) if (dados[k] && f[k]) f[k].value = dados[k];
+    f.whatsapp.addEventListener("input", ev => { ev.target.value = mascaraZap(ev.target.value); });
+    f.e_cpf.addEventListener("input", ev => { ev.target.value = mascaraCpf(ev.target.value); });
+    const fsEnd = $(".mc-end", form);
+    botao.addEventListener("click", () => {
       st.textContent = ""; st.className = "mc-st";
-      $(".mc-resumo", dlg).innerHTML = `<b>${esc(a.jogo)}</b> · ${reais(valor())} · ${escolha() === "envio" ? "receber pelo correio" : "retirar em " + esc(a.cidade) + "/" + esc(a.uf)}`;
+      const e = escolha(), o = opcao();
+      fsEnd.hidden = e !== "envio";
+      if (e === "envio") { if (!f.e_nome.value) f.e_nome.value = f.nome.value; viaCep(cepCotado, { rua: f.e_rua, bairro: f.e_bairro, cidade: f.e_cidade, uf: f.e_uf, numero: null }); }
+      $(".mc-resumo", dlg).innerHTML = `<b>${esc(a.jogo)}</b> · ${reais(a.preco + (e === "envio" ? o.preco : 0))} · ${e === "envio" ? `${esc(o.empresa || "")} ${esc(o.nome)} para o CEP ${mascaraCep(cepCotado)}` : "retirar em " + esc(a.cidade) + "/" + esc(a.uf)}`;
       if (!dlg.showModal) return alert("Seu navegador não abre a janela de compra. Atualize o navegador para comprar.");
       dlg.showModal(); turnstile($(".mc-ts", dlg));
     });
     form.addEventListener("submit", async ev => {
       if (ev.submitter && ev.submitter.value === "cancelar") return;
       ev.preventDefault();
-      const f = form.elements, erro = m => { st.className = "mc-st erro"; st.textContent = m; };
+      const erro = m => { st.className = "mc-st erro"; st.textContent = m; }, e = escolha();
       if (f.nome.value.trim().length < 2) return erro("Escreva seu nome.");
       if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(f.email.value.trim())) return erro("Informe um e-mail válido.");
       if (f.whatsapp.value.replace(/\D/g, "").length < 10) return erro("Informe seu WhatsApp com DDD.");
+      if (e === "envio") {
+        if (f.e_cpf.value.replace(/\D/g, "").length !== 11) return erro("Informe o CPF de quem recebe (a transportadora exige).");
+        if (!f.e_rua.value.trim() || !f.e_numero.value.trim() || !f.e_bairro.value.trim() || !f.e_cidade.value.trim() || f.e_uf.value.trim().length !== 2) return erro("Preencha o endereço completo.");
+      }
       if (!f.aceite.checked) return erro("Aceite as regras do Mercado para continuar.");
       const token = tokenTs($(".mc-ts", dlg));
       if (TS && !token) return erro("Confirme que você não é um robô (quadrinho acima).");
-      guarda.set("eb-mercado-comprador", { nome: f.nome.value.trim(), email: f.email.value.trim(), whatsapp: f.whatsapp.value });
-      const botao = ev.submitter || $("button[value=pagar]", form); botao.disabled = true;
+      guarda.set("eb-mercado-comprador", Object.fromEntries(["nome", "email", "whatsapp", "e_nome", "e_rua", "e_numero", "e_complemento", "e_bairro", "e_cidade", "e_uf"].map(k => [k, f[k].value.trim()])));
+      const b2 = ev.submitter || $("button[value=pagar]", form); b2.disabled = true;
       st.className = "mc-st"; st.textContent = "Abrindo o pagamento…";
+      const corpo = { id: a.id, nome: f.nome.value.trim(), email: f.email.value.trim(), whatsapp: f.whatsapp.value, entrega: e, aceite: "1", isca: f.site.value, turnstile: token };
+      if (e === "envio") Object.assign(corpo, { cep: cepCotado, servico: opcao().servico, endereco: { nome: f.e_nome.value.trim(), cpf: f.e_cpf.value, cep: cepCotado,
+        rua: f.e_rua.value.trim(), numero: f.e_numero.value.trim(), complemento: f.e_complemento.value.trim(), bairro: f.e_bairro.value.trim(), cidade: f.e_cidade.value.trim(), uf: f.e_uf.value.trim().toUpperCase() } });
       try {
-        const r = await postJSON("/v1/mercado/comprar", { id: a.id, nome: f.nome.value.trim(), email: f.email.value.trim(), whatsapp: f.whatsapp.value,
-          entrega: escolha(), aceite: "1", isca: f.site.value, turnstile: token });
+        const r = await postJSON("/v1/mercado/comprar", corpo);
         compras.poe({ p: r.pedido, k: r.chave, jogo: a.jogo, criado: new Date().toISOString() });
         location.href = r.url;
-      } catch (ex) { erro(ex.message); resetTs($(".mc-ts", dlg)); botao.disabled = false; }
+      } catch (ex) { erro(ex.message); resetTs($(".mc-ts", dlg)); b2.disabled = false; }
     });
   }
 
@@ -311,15 +366,18 @@
     let processando = 0;
 
     // rascunho dos campos de texto neste aparelho (fotos não)
-    const CAMPOS_RASCUNHO = ["jogo", "jogo_slug", "edicao", "preco_txt", "frete_txt", "idioma", "descricao", "vendedor", "cidade", "uf", "whatsapp", "instagram", "email"];
+    const CAMPOS_RASCUNHO = ["jogo", "jogo_slug", "edicao", "preco_txt", "cep_origem", "idioma", "descricao", "vendedor", "cidade", "uf", "whatsapp", "instagram", "email"];
     const rasc = guarda.get("eb-mercado-rascunho", {});
     for (const k of CAMPOS_RASCUNHO) if (rasc[k] && form.elements[k]) form.elements[k].value = rasc[k];
     if (rasc.condicao) { const r = form.querySelector(`[name=condicao][value="${rasc.condicao}"]`); if (r) r.checked = true; }
     if (rasc.entrega) { const r = form.querySelector(`[name=entrega][value="${rasc.entrega}"]`); if (r) r.checked = true; }
     if (rasc.troca) form.elements.troca.checked = true;
+    if (rasc.pacote) { const r = form.querySelector(`[name=pacote][value="${rasc.pacote}"]`); if (r) r.checked = true; }
+    if (rasc.frete_gratis) form.elements.frete_gratis.checked = true;
     const salvaRascunho = () => {
       const r = Object.fromEntries(CAMPOS_RASCUNHO.map(k => [k, form.elements[k].value]));
       r.condicao = (form.querySelector("[name=condicao]:checked") || {}).value; r.entrega = (form.querySelector("[name=entrega]:checked") || {}).value; r.troca = form.elements.troca.checked;
+      r.pacote = (form.querySelector("[name=pacote]:checked") || {}).value; r.frete_gratis = form.elements.frete_gratis.checked;
       guarda.set("eb-mercado-rascunho", r);
     };
 
@@ -333,9 +391,9 @@
     const atualizaPrevia = () => {
       const d = dados();
       campoFrete.hidden = d.entrega === "retirada";
-      d.frete = d.entrega === "retirada" ? null : (form.elements.frete_txt.value.trim() === "" ? undefined : centavos(form.elements.frete_txt.value) || 0);
+      d.frete_gratis = d.entrega !== "retirada" && form.elements.frete_gratis.checked;
       prev.innerHTML = cartao(d, { link: false });
-      liquido.textContent = d.preco >= 100 ? `Neste anúncio: você recebe ${reais(d.preco - Math.round(d.preco * 0.05))} pelo jogo${d.frete ? ` + ${reais(d.frete)} do envio` : ""}, antes da tarifa do Mercado Pago.` : "";
+      liquido.textContent = d.preco >= 100 ? `Neste anúncio: você recebe ${reais(d.preco - Math.round(d.preco * 0.05))} pelo jogo${d.frete_gratis ? ", menos o valor da etiqueta" : ""}, antes da tarifa do Mercado Pago.` : "";
     };
     const contDesc = () => { $(".mc-cont-t").textContent = `${form.elements.descricao.value.length.toLocaleString("pt-BR")}/1.500`; };
 
@@ -408,6 +466,7 @@
 
     const zap = form.elements.whatsapp;
     zap.addEventListener("input", () => { zap.value = mascaraZap(zap.value); });
+    form.elements.cep_origem.addEventListener("input", ev => { ev.target.value = mascaraCep(ev.target.value); });
     form.addEventListener("input", ev => { if (ev.target.name === "descricao") contDesc(); if (ev.target.type !== "file") { atualizaPrevia(); salvaRascunho(); } });
     form.addEventListener("change", () => { atualizaPrevia(); salvaRascunho(); });
 
@@ -427,8 +486,8 @@
       if (!fotos.length) { add.scrollIntoView({ block: "center" }); return erro("Coloque pelo menos uma foto do jogo."); }
       if (!form.querySelector("[name=condicao]:checked")) { form.querySelector("[name=condicao]").scrollIntoView({ block: "center" }); return erro("Escolha o estado do jogo."); }
       if (!(preco >= 100 && preco <= 10000000)) return erro("Informe um preço entre R$ 1 e R$ 100.000.", "preco_txt");
-      const entrega = form.querySelector("[name=entrega]:checked").value, freteTxt = f.frete_txt.value.trim(), frete = freteTxt === "" ? NaN : centavos(freteTxt);
-      if (entrega !== "retirada" && !(frete >= 0 && frete <= 50000)) return erro("Informe o valor do envio (0 para frete grátis, até R$ 500).", "frete_txt");
+      const entrega = form.querySelector("[name=entrega]:checked").value, cepO = f.cep_origem.value.replace(/\D/g, "");
+      if (entrega !== "retirada" && cepO.length !== 8) return erro("Informe o CEP de onde o jogo sai (8 números): ele calcula o frete.", "cep_origem");
       if (f.vendedor.value.trim().length < 2) return erro("Escreva seu nome ou apelido.", "vendedor");
       if (f.cidade.value.trim().length < 2) return erro("Informe a cidade.", "cidade");
       if (!f.uf.value) return erro("Escolha o estado (UF).", "uf");
@@ -441,7 +500,7 @@
       for (const k of ["jogo", "jogo_slug", "edicao", "idioma", "descricao", "vendedor", "cidade", "uf", "whatsapp", "instagram", "email"]) fd.append(k, f[k].value.trim());
       fd.append("condicao", form.querySelector("[name=condicao]:checked").value);
       fd.append("entrega", entrega);
-      if (entrega !== "retirada") fd.append("frete", String(frete));
+      if (entrega !== "retirada") { fd.append("cep_origem", cepO); fd.append("pacote", form.querySelector("[name=pacote]:checked").value); fd.append("frete_gratis", f.frete_gratis.checked ? "1" : "0"); }
       fd.append("preco", String(preco)); fd.append("troca", f.troca.checked ? "1" : "0"); fd.append("aceite", "1");
       fd.append("isca", f.site.value); fd.append("turnstile", token);
       fotos.forEach((x, i) => fd.append("foto", x.blob, `foto-${i + 1}.${x.blob.type === "image/webp" ? "webp" : "jpg"}`));
@@ -490,6 +549,7 @@
       vazio.hidden = true;
       const aviso = st.textContent; if (!aviso) { st.className = "mc-st mc-st-meu"; st.textContent = "Carregando…"; }
       const res = await Promise.all(meus.map(x => postJSON("/v1/mercado/meu", { id: x.id, t: x.t }).then(d => ({ x, a: d.anuncio, vendas: d.vendas || [], pagamento: d.pagamento })).catch(ex => ({ x, erro: ex }))));
+      cacheVendas = Object.fromEntries(res.filter(z => z.a).flatMap(z => z.vendas.map(v => [v.id, { ...v, jogo: z.a.jogo, anuncio: z.a.id }])));
       if (!aviso) st.textContent = "";
       ul.innerHTML = res.map(({ x, a, erro, vendas, pagamento }) => {
         if (erro) return `<li class="mc-meu" data-id="${x.id}"><span class="sem"></span><div><h3>${esc(x.jogo || "Anúncio nº " + x.id)}</h3><span class="est removido">${erro.status === 404 ? "Removido" : "Sem conexão"}</span><p>${erro.status === 404 ? "Este anúncio foi removido ou o link não vale mais." : "Não conseguimos falar com o serviço agora."}</p></div><div class="acs"><button type="button" data-acao="esquecer">${ic("nao")}Tirar desta lista</button></div></li>`;
@@ -509,17 +569,74 @@
         const ativo = ["aprovado", "pendente", "duvidoso", "vencido"].includes(est);
         const mpb = !ativo ? "" : a.mp_conectado ? `<div class="mc-mp ok">${ic("estado")}Mercado Pago conectado: você recebe as vendas na sua conta.</div>`
           : `<div class="mc-mp">${pagamento === false ? "Os pagamentos do Mercado ainda estão sendo ligados. Volte em breve para conectar sua conta." : `Conecte sua conta do Mercado Pago para o anúncio aparecer. <button type="button" data-acao="conectar">Conectar Mercado Pago</button>`}</div>`;
-        const ESTV = { processando: "pagamento em análise", pago: "pago", devolvido: "devolvido ao comprador" };
-        const vendasH = vendas.length ? `<ul class="mc-vendas">${vendas.map(v => `<li><b>Venda nº ${v.id}: ${ESTV[v.estado]}</b> · ${reais(v.valor + v.frete)} (${v.entrega === "envio" ? "envio" : "retirada"})<br>`
-          + (v.estado === "pago" ? `Comprador: ${esc(v.comprador)} · <a href="https://wa.me/${esc(v.whatsapp)}?text=${encodeURIComponent(`Olá, ${v.comprador}! Aqui é ${a.vendedor}, do Mercado da Elite. Recebi o pagamento de ${a.jogo}. Vamos combinar a ${v.entrega === "envio" ? "entrega" : "retirada"}?`)}" target="_blank" rel="noopener">chamar no WhatsApp</a><br>`
-             + `Você recebe ${reais(v.valor - v.taxa + v.frete)} no Mercado Pago (comissão da Elite ${reais(v.taxa)}), menos a tarifa do Mercado Pago.` : `Comprador: ${esc(v.comprador)}. O contato aparece quando o pagamento for aprovado.`)
-          + `</li>`).join("")}</ul>` : "";
+        const vendasH = vendas.length ? `<ul class="mc-vendas">${vendas.map(v => venda(v, a)).join("")}</ul>` : "";
         return `<li class="mc-meu" data-id="${a.id}">${a.fotos[0] ? `<img src="${foto(a.fotos[0])}" alt="">` : '<span class="sem"></span>'}<div><h3>${esc(a.jogo)}</h3><span class="est ${est}">${ESTADO[est]}</span><p><b>${reais(a.preco)}</b> · ${esc(COND[a.condicao])} · ${esc(a.cidade)}/${esc(a.uf)}</p><p>${esc(info)}</p></div>`
           + mpb + vendasH + `<div class="acs">${acs.join("")}</div><div class="preco-ed" hidden><label>Novo preço R$ <input inputmode="decimal" value="${(a.preco / 100).toLocaleString("pt-BR", { minimumFractionDigits: 2 })}"></label><button type="button" class="mc-btn pri" data-acao="preco" style="min-height:40px">Salvar</button></div></li>`;
       }).join("");
     }
+    let cacheVendas = {};
+    // uma venda em Meus anúncios: etapas, o que fazer agora, etiqueta com QR e o contato do comprador
+    function venda(v, a) {
+      const ETAPA = { processando: 0, pago: 1, enviado: 2, entregue: 3, concluido: 4, problema: 1, devolvido: 0 };
+      const passo = ETAPA[v.estado] ?? 0, envio = v.entrega === "envio";
+      const nomes = envio ? ["Pago", "Postar", "A caminho", "Concluído"] : ["Pago", "Combinar", "Entregue", "Concluído"];
+      const etapas = `<ol class="mc-etapas">${nomes.map((n, i) => `<li class="${i < passo ? "feito" : i === passo ? (v.estado === "problema" || v.estado === "devolvido" ? "parou" : "agora") : ""}">${n}</li>`).join("")}</ol>`;
+      const pago = ["pago", "enviado", "entregue", "concluido", "problema"].includes(v.estado);
+      const recebe = v.valor - v.taxa - (v.frete_gratis ? v.frete_custo : 0);
+      let corpo = `<b>Venda nº ${v.id}</b> · ${reais(v.valor)}${envio ? ` · ${esc(v.servico_nome || "envio")}` : " · retirada em mãos"}<br>`;
+      if (v.estado === "processando") corpo += "O Mercado Pago está confirmando o pagamento. Aguarde para enviar.";
+      if (pago) corpo += `Comprador: ${esc(v.comprador)} · <a href="https://wa.me/${esc(v.whatsapp)}?text=${encodeURIComponent(`Olá, ${v.comprador}! Aqui é ${a.vendedor}, do Mercado da Elite. Recebi o pagamento de ${a.jogo}.${envio ? " Vou postar e te mando o rastreio." : " Vamos combinar a retirada?"}`)}" target="_blank" rel="noopener">chamar no WhatsApp</a><br>`
+        + `Você recebe ${reais(recebe)} no Mercado Pago (comissão da Elite ${reais(v.taxa)}${v.frete_gratis ? `, etiqueta ${reais(v.frete_custo)}` : ""}), menos a tarifa do Mercado Pago.`;
+      if (v.estado === "devolvido") corpo += "O pagamento foi devolvido ao comprador.";
+      if (v.estado === "problema") corpo += `<br><b>O comprador relatou um problema:</b> ${esc(v.problema || "")}. A moderação da Elite vai falar com vocês.`;
+      let etq = "";
+      if (envio && v.estado === "pago") {
+        const prazo = v.prazo_envio ? `<span class="mc-prazo">Poste até ${dataLonga(v.prazo_envio)}</span>, ou o pagamento volta para o comprador.` : "";
+        etq = v.etiqueta_url
+          ? `<div class="mc-etq"><span class="mc-qr" data-url="${esc(v.etiqueta_url)}"></span><div><p><b>Etiqueta pronta.</b> Imprima, cole na caixa e leve a uma agência dos Correios ou ponto da transportadora. Sem impressora? Aponte a câmera do celular para o QR e imprima em qualquer lugar.</p><p>${prazo}</p>`
+            + `<a class="mc-btn pri" href="${esc(v.etiqueta_url)}" target="_blank" rel="noopener">Abrir a etiqueta para imprimir</a></div></div>`
+          : `<div class="mc-etq" style="grid-template-columns:1fr"><div><p><b>Próximo passo: gerar a etiqueta.</b> O frete já foi pago pelo comprador. ${prazo}</p>${v.envio_estado === "erro" ? `<p style="color:#a3223a">A última tentativa falhou: confira o endereço e tente de novo.</p>` : ""}`
+            + `<button type="button" class="mc-btn pri" data-acao="etiqueta" data-venda="${v.id}">Gerar etiqueta</button></div></div>`;
+      }
+      if (envio && v.rastreio) etq += `<div class="mc-rastreio">Rastreio: <b>${esc(v.rastreio)}</b>${v.rastreio_url ? `<a href="${esc(v.rastreio_url)}" target="_blank" rel="noopener">Acompanhar a entrega</a>` : ""}</div>`;
+      return `<li>${etapas}<p style="margin:10px 0 0">${corpo}</p>${etq}</li>`;
+    }
+    // o QR de cada etiqueta (mercado/qr.js) é desenhado depois que a lista aparece
+    new MutationObserver(() => $$(".mc-qr:empty").forEach(el => { try { el.innerHTML = window.qrElite.qrSvg(el.dataset.url, { modulo: 4, margem: 2, titulo: "QR para abrir a etiqueta no celular" }); } catch { el.remove(); } }))
+      .observe(ul, { childList: true, subtree: true });
+    // janela de geração da etiqueta: dados de quem envia (o CPF não fica guardado)
+    const dlgE = $(".mc-etq-dlg"), fE = $("form", dlgE).elements, stE = $(".mc-st", dlgE);
+    const salvo = guarda.get("eb-mercado-remetente", {});
+    for (const k of ["r_nome", "r_cep", "r_rua", "r_numero", "r_complemento", "r_bairro", "r_cidade", "r_uf"]) if (salvo[k]) fE[k].value = salvo[k];
+    fE.r_cpf.addEventListener("input", ev => { ev.target.value = mascaraCpf(ev.target.value); });
+    fE.r_cep.addEventListener("input", ev => { ev.target.value = mascaraCep(ev.target.value); if (ev.target.value.length === 9) viaCep(ev.target.value, { rua: fE.r_rua, bairro: fE.r_bairro, cidade: fE.r_cidade, uf: fE.r_uf, numero: fE.r_numero }); });
+    let vendaAtual = null;
+    $("form", dlgE).addEventListener("submit", async ev => {
+      if (ev.submitter && ev.submitter.value === "cancelar") return;
+      ev.preventDefault();
+      const v = vendaAtual, x = meus.find(y => y.id === v.anuncio), erroE = m => { stE.className = "mc-st erro"; stE.textContent = m; };
+      if (fE.r_cpf.value.replace(/\D/g, "").length !== 11) return erroE("Informe o seu CPF (a transportadora exige na etiqueta).");
+      const rem = { nome: fE.r_nome.value.trim(), cpf: fE.r_cpf.value, cep: fE.r_cep.value, rua: fE.r_rua.value.trim(), numero: fE.r_numero.value.trim(),
+        complemento: fE.r_complemento.value.trim(), bairro: fE.r_bairro.value.trim(), cidade: fE.r_cidade.value.trim(), uf: fE.r_uf.value.trim().toUpperCase() };
+      if (fE.r_lembrar.checked) guarda.set("eb-mercado-remetente", Object.fromEntries(["r_nome", "r_cep", "r_rua", "r_numero", "r_complemento", "r_bairro", "r_cidade", "r_uf"].map(k => [k, fE[k].value.trim()])));
+      const b2 = ev.submitter; if (b2) b2.disabled = true;
+      stE.className = "mc-st"; stE.textContent = "Comprando e gerando a etiqueta…";
+      try {
+        await postJSON("/v1/mercado/meu/etiqueta", { id: x.id, t: x.t, pedido: v.id, remetente: rem });
+        fE.r_cpf.value = ""; dlgE.close();
+        await desenha();
+        st.className = "mc-st mc-st-meu ok"; st.textContent = "Etiqueta gerada! Imprima pelo botão ou pelo QR.";
+      } catch (e2) { erroE(e2.message); }
+      finally { if (b2) b2.disabled = false; }
+    });
     ul.addEventListener("click", async ev => {
       const b = ev.target.closest("[data-acao]"); if (!b) return;
+      if (b.dataset.acao === "etiqueta") {
+        vendaAtual = cacheVendas[+b.dataset.venda];
+        $(".mc-resumo", dlgE).innerHTML = `<b>${esc(vendaAtual.jogo)}</b> · venda nº ${vendaAtual.id} · ${esc(vendaAtual.servico_nome || "")}`;
+        stE.textContent = ""; stE.className = "mc-st";
+        return dlgE.showModal ? dlgE.showModal() : alert("Atualize o navegador para gerar a etiqueta.");
+      }
       const li = b.closest(".mc-meu"), id = +li.dataset.id, x = meus.find(y => y.id === id), acao = b.dataset.acao;
       if (acao === "esquecer") { meus = meus.filter(y => y.id !== id); guarda.set("eb-mercado-meus", meus); return desenha(); }
       if (acao === "conectar") return conectaMP(id, x.t, st);
@@ -545,45 +662,88 @@
     }
   }
 
-  /* ---------- pedido (volta do Mercado Pago) ---------- */
+  /* ---------- pedido: etapas da compra (pagamento, envio, entrega, conclusão) ---------- */
   async function pedido() {
     const q = new URLSearchParams(location.search), p = Number(q.get("p")), k = q.get("k") || "";
     const pagamento = q.get("payment_id") || q.get("collection_id") || "";
-    const sec = $(".mc-pedido"), erro = $(".mc-erro");
-    const ESTP = { aguardando: "Aguardando pagamento", processando: "Pagamento em análise", pago: "Pago", cancelado: "Não concluído", devolvido: "Devolvido" };
+    const sec = $(".mc-pedido"), erro = $(".mc-erro"), aval = $(".mc-avaliar"), dlgP = $(".mc-prob-dlg");
+    const ESTP = { aguardando: "Aguardando pagamento", processando: "Pagamento em análise", pago: "Pago", enviado: "A caminho", entregue: "Entregue",
+                   concluido: "Concluído", problema: "Em análise pela Elite", cancelado: "Não concluído", devolvido: "Pagamento devolvido" };
     if (!p || !k) { sec.hidden = true; erro.hidden = false; return; }
-    let voltas = 0;
+    const acao = async (corpo) => postJSON("/v1/mercado/pedido/acao", { p, k, ...corpo });
+    let voltas = 0, d;
     async function carrega() {
-      let d;
       try { d = (await postJSON("/v1/mercado/pedido", { p, k, pagamento })).pedido; }
       catch (ex) { if (ex.status === 404) { sec.hidden = true; erro.hidden = false; } return; }
-      const a = d.anuncio, total = d.valor + d.frete;
+      const a = d.anuncio, total = d.valor + d.frete, envio = d.entrega === "envio";
       compras.poe({ p, k, jogo: a.jogo, criado: compras.ler().find(c => c.p === p)?.criado || new Date().toISOString() });
       document.title = `${ESTP[d.estado]}: ${a.jogo} · Mercado da Elite`;
       $(".mc-ped-foto").innerHTML = a.foto ? `<img src="${foto(a.foto)}" alt="">` : "";
-      const est = $(".est", sec); est.className = `est ${d.estado}`; est.textContent = ESTP[d.estado];
+      const est = $(".est", sec); est.className = `est ${["enviado", "entregue", "concluido"].includes(d.estado) ? "pago" : d.estado === "problema" ? "processando" : d.estado}`; est.textContent = ESTP[d.estado];
       $(".mc-tit", sec).textContent = a.jogo;
       $(".mc-ped-sub").textContent = `Pedido nº ${d.id} · vendido por ${a.vendedor}, ${a.cidade}/${a.uf}`;
-      $(".mc-ped-val").innerHTML = [["vendido", "Jogo", reais(d.valor)], ["caixa", d.entrega === "envio" ? "Envio" : "Retirada", d.entrega === "envio" ? (d.frete ? reais(d.frete) : "grátis") : `${a.cidade}/${a.uf}`],
-        ["estado", "Total", reais(total)], ["relogio", "Pedido em", dataLonga(d.criado)]].map(([i, t, v]) => `<div><dt>${ic(i)}${t}</dt><dd>${esc(v)}</dd></div>`).join("");
-      const msg = $(".mc-ped-msg"), cont = $(".mc-contato", sec);
-      cont.innerHTML = "";
-      if (d.estado === "pago") {
-        msg.innerHTML = `<p><b>Pagamento aprovado!</b> O dinheiro foi para o vendedor pelo Mercado Pago e ele recebeu o seu WhatsApp. Se quiser, chame ${esc(a.vendedor)} agora para combinar ${d.entrega === "envio" ? "o envio" : "a retirada"}.</p>`;
-        const texto = `Olá, ${a.vendedor}! Comprei o ${a.jogo} no Mercado da Elite (pedido nº ${d.id}). Vamos combinar ${d.entrega === "envio" ? "o envio" : "a retirada"}?`;
-        cont.innerHTML = (a.whatsapp ? `<a class="mc-btn zap" href="https://wa.me/${esc(a.whatsapp)}?text=${encodeURIComponent(texto)}" target="_blank" rel="noopener">${ic("zap")}Chamar ${esc(a.vendedor)} no WhatsApp</a>` : "")
+      // linha do tempo
+      const PASSO = { aguardando: 0, processando: 0, pago: 1, enviado: 2, entregue: 3, concluido: 4, problema: d.entregue_em ? 3 : d.postado_em ? 2 : 1, cancelado: 0, devolvido: 0 };
+      const passo = PASSO[d.estado], parou = ["cancelado", "devolvido", "problema"].includes(d.estado);
+      const nomes = envio ? [["Pagamento", d.pago_em], ["Postagem", d.postado_em], ["Entrega", d.entregue_em], ["Concluído", d.concluido_em]]
+                          : [["Pagamento", d.pago_em], ["Retirada", null], ["Confirmação", d.concluido_em], ["Concluído", d.concluido_em]];
+      $(".mc-etapas", sec).innerHTML = nomes.map(([n, quandoE], i) => `<li class="${i < passo ? "feito" : i === passo ? (parou ? "parou" : "agora") : ""}">${n}${quandoE ? `<small>${new Date(quandoE.replace(" ", "T") + "Z").toLocaleDateString("pt-BR", { day: "2-digit", month: "2-digit" })}</small>` : ""}</li>`).join("");
+      $(".mc-ped-val").innerHTML = [["vendido", "Jogo", reais(d.valor)], ["caixa", envio ? "Envio" : "Retirada", envio ? `${d.servico_nome || ""} · ${d.frete ? reais(d.frete) : "grátis"}` : `${a.cidade}/${a.uf}`],
+        ["estado", "Total pago", reais(total)], ["relogio", envio ? "Prazo de entrega" : "Pedido em", envio && d.prazo_dias ? `até ${d.prazo_dias} dias úteis após a postagem` : dataLonga(d.criado)]]
+        .map(([i, t, v]) => `<div><dt>${ic(i)}${t}</dt><dd>${esc(v)}</dd></div>`).join("");
+      const msg = $(".mc-ped-msg"), cont = $(".mc-contato", sec), acoes = $(".mc-ped-acoes"), ras = $(".mc-rastreio");
+      cont.innerHTML = ""; acoes.innerHTML = ""; ras.hidden = !d.rastreio;
+      if (d.rastreio) ras.innerHTML = `Código de rastreio: <b>${esc(d.rastreio)}</b>${d.rastreio_url ? `<a href="${esc(d.rastreio_url)}" target="_blank" rel="noopener">Acompanhar a entrega</a>` : ""}`;
+      const contato = () => {
+        const texto = `Olá, ${a.vendedor}! Comprei o ${a.jogo} no Mercado da Elite (pedido nº ${d.id}).`;
+        cont.innerHTML = (a.whatsapp ? `<a class="mc-btn zap" href="https://wa.me/${esc(a.whatsapp)}?text=${encodeURIComponent(texto)}" target="_blank" rel="noopener">${ic("zap")}Falar com ${esc(a.vendedor)} no WhatsApp</a>` : "")
           + (a.instagram ? `<a class="mc-btn ig" href="https://www.instagram.com/${esc(a.instagram)}/" target="_blank" rel="noopener">${ic("insta")}@${esc(a.instagram)} no Instagram</a>` : "");
-      } else if (d.estado === "aguardando" || d.estado === "processando") {
-        msg.innerHTML = `<p>${d.estado === "processando" ? "O Mercado Pago está confirmando o pagamento. Isso costuma levar poucos minutos." : "Ainda não recebemos a confirmação do pagamento. Se você já pagou, espere um pouco: esta página atualiza sozinha."} O contato do vendedor aparece aqui assim que o pagamento for aprovado.</p>`;
-        if (voltas++ < 40) setTimeout(carrega, 8000);
-      } else if (d.estado === "devolvido") {
-        msg.innerHTML = "<p>O pagamento deste pedido foi devolvido pelo Mercado Pago.</p>";
-      } else {
-        msg.innerHTML = `<p>O pagamento não foi concluído e nada foi cobrado por este pedido. Se ainda quiser o jogo, volte ao anúncio e tente de novo.</p>`;
-        cont.innerHTML = `<a class="mc-btn pri" href="${RAIZ}anuncio/?id=${a.id}">Voltar ao anúncio</a>`;
-      }
+      };
+      const botoes = (recebi) => { acoes.innerHTML = (recebi ? `<button type="button" class="mc-btn pri" data-a="recebi">Recebi o jogo, está tudo certo</button>` : "") + `<button type="button" class="mc-btn sec" data-a="problema">Tive um problema</button>`; };
+      const M = {
+        aguardando: "Ainda não recebemos a confirmação do pagamento. Se você já pagou, espere um pouco: esta página atualiza sozinha.",
+        processando: "O Mercado Pago está confirmando o pagamento. Isso costuma levar poucos minutos.",
+        pago: envio ? `<b>Pagamento aprovado!</b> Agora é com ${esc(a.vendedor)}: ele tem até ${d.prazo_envio ? dataLonga(d.prazo_envio) : "10 dias"} para postar. Se não postar no prazo, o pagamento volta para você sozinho.`
+                    : `<b>Pagamento aprovado!</b> Combine a retirada com ${esc(a.vendedor)}. Depois de conferir o jogo, confirme aqui que recebeu.`,
+        enviado: `<b>O jogo está a caminho.</b> Quando chegar, confira as peças e confirme aqui.`,
+        entregue: `<b>Entregue!</b> Confira o jogo e confirme que está tudo certo. Sem confirmação, o pedido é concluído sozinho ${d.entregue_em ? `em ${dataLonga(new Date(Date.parse(d.entregue_em.replace(" ", "T") + "Z") + 7 * 864e5).toISOString().replace("T", " ").slice(0, 19))}` : "7 dias depois da entrega"}.`,
+        concluido: "<b>Pedido concluído.</b> Obrigado por comprar no Mercado da Elite!",
+        problema: `<b>A moderação da Elite está vendo o seu relato.</b> ${esc(d.problema || "")}`,
+        devolvido: "O pagamento deste pedido foi devolvido pelo Mercado Pago.",
+        cancelado: "O pagamento não foi concluído e nada foi cobrado por este pedido. Se ainda quiser o jogo, volte ao anúncio e tente de novo.",
+      };
+      msg.innerHTML = `<p>${M[d.estado]}</p>`;
+      if (["pago", "enviado", "entregue", "concluido", "problema"].includes(d.estado)) contato();
+      if (d.estado === "pago") botoes(!envio);
+      if (d.estado === "enviado" || d.estado === "entregue") botoes(true);
+      if (d.estado === "cancelado") cont.innerHTML = `<a class="mc-btn pri" href="${RAIZ}anuncio/?id=${a.id}">Voltar ao anúncio</a>`;
+      aval.hidden = d.estado !== "concluido";
+      if (d.avaliacao) $(".mc-aval-f", aval).innerHTML = `<p>Você deu <b style="color:#e3a400">${estrelas(d.avaliacao.nota)}</b>${d.avaliacao.comentario ? `: “${esc(d.avaliacao.comentario)}”` : ""}. Obrigado!</p>`;
+      if ((d.estado === "aguardando" || d.estado === "processando") && voltas++ < 40) setTimeout(carrega, 8000);
+      else if (d.estado === "pago" && envio && voltas++ < 60) setTimeout(carrega, 60000);  // acompanha a postagem com a página aberta
       sec.removeAttribute("aria-busy");
     }
+    $(".mc-ped-acoes").addEventListener("click", async ev => {
+      const b = ev.target.closest("[data-a]"); if (!b) return;
+      if (b.dataset.a === "problema") { $(".mc-st", dlgP).textContent = ""; return dlgP.showModal ? dlgP.showModal() : alert("Fale com a Elite pelo Instagram com o número do pedido."); }
+      if (!confirm("Confirmar que recebeu o jogo e está tudo certo? Depois disso o pedido é concluído.")) return;
+      b.disabled = true;
+      try { await acao({ acao: "recebi" }); await carrega(); aval.scrollIntoView({ block: "center" }); } catch (ex) { alert(ex.message); b.disabled = false; }
+    });
+    $("form", dlgP).addEventListener("submit", async ev => {
+      if (ev.submitter && ev.submitter.value === "cancelar") return;
+      ev.preventDefault();
+      const stP = $(".mc-st", dlgP);
+      try { await acao({ acao: "problema", motivo: ev.target.elements.motivo.value }); dlgP.close(); await carrega(); }
+      catch (ex) { stP.className = "mc-st erro"; stP.textContent = ex.message; }
+    });
+    $(".mc-aval-f", aval).addEventListener("submit", async ev => {
+      ev.preventDefault();
+      const f = ev.target, stA = $(".mc-st", f), nota = Number((f.querySelector("[name=nota]:checked") || {}).value);
+      if (!nota) { stA.className = "mc-st erro"; stA.textContent = "Escolha de 1 a 5 estrelas."; return; }
+      try { await acao({ acao: "avaliar", nota, comentario: f.elements.comentario.value }); await carrega(); }
+      catch (ex) { stA.className = "mc-st erro"; stA.textContent = ex.message; }
+    });
     carrega();
   }
 

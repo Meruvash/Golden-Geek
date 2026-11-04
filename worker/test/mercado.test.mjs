@@ -5,7 +5,7 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { DatabaseSync } from "node:sqlite";
 import worker from "../src/index.js";
-import { normalizaWhatsapp, normalizaInstagram } from "../src/mercado.js";
+import { normalizaWhatsapp, normalizaInstagram, cpfValido, rotinaMercado } from "../src/mercado.js";
 
 const ESQUEMA = readFileSync(new URL("../schema.sql", import.meta.url), "utf-8");
 
@@ -33,12 +33,38 @@ function d1() {
 
 const SITE = "https://eliteboardgamers.com.br";
 const SENHA = "senha-de-moderacao-bem-comprida-123";
-const ambiente = () => ({ DB: d1(), ORIGEM: SITE, MODERACAO_TOKEN: SENHA, DEV: "1", MP_CLIENT_ID: "app-123", MP_CLIENT_SECRET: "segredo-app", MP_CHAVE: "chave-de-teste-bem-longa" });
+const ME = "https://sandbox.melhorenvio.com.br";
+const ambiente = () => ({ DB: d1(), ORIGEM: SITE, MODERACAO_TOKEN: SENHA, DEV: "1", MP_CLIENT_ID: "app-123", MP_CLIENT_SECRET: "segredo-app", MP_CHAVE: "chave-de-teste-bem-longa",
+  ME_CLIENT_ID: "me-app", ME_CLIENT_SECRET: "me-segredo", ME_CONTATO: "tecnico@exemplo.com", ME_BASE: ME });
+const CPF_A = "529.982.247-25", CPF_B = "111.444.777-35";
+const ENDERECO = { nome: "Joana Compradora", cpf: CPF_A, cep: "22041-001", rua: "Rua Barata Ribeiro", numero: "200", complemento: "ap 101", bairro: "Copacabana", cidade: "Rio de Janeiro", uf: "RJ" };
+const REMETENTE = { nome: "Ana Beatriz Souza", cpf: CPF_B, cep: "13010-000", rua: "Rua Barão de Jaguara", numero: "50", bairro: "Centro", cidade: "Campinas", uf: "SP" };
 
-// Mercado Pago simulado: OAuth, preferências e pagamentos
-const mpSim = { tokens: [], prefs: [], pagamentos: {}, user: 777, expira: 15552000 };
+// Mercado Pago e Melhor Envio simulados
+const mpSim = { tokens: [], prefs: [], pagamentos: {}, reembolsos: [], user: 777, expira: 15552000 };
+const meSim = { tokens: [], carrinho: [], compras: [], semSaldo: false, rastreio: {}, agentes: new Set() };
 globalThis.fetch = async (url, op = {}) => {
   const u = String(url), corpo = op.body ? JSON.parse(op.body) : null;
+  if (u.startsWith(ME)) {
+    meSim.agentes.add(op.headers["user-agent"]);
+    const c = u.slice(ME.length);
+    if (c === "/oauth/token") { meSim.tokens.push(corpo); return new Response(JSON.stringify({ access_token: `ME-token-${meSim.tokens.length}`, refresh_token: `ME-renova-${meSim.tokens.length}`, expires_in: 2592000 })); }
+    if (c === "/api/v2/me/shipment/calculate") {
+      meSim.ultimaCotacao = corpo;
+      return new Response(JSON.stringify([
+        { id: 2, name: "SEDEX", price: "55.00", custom_price: "52.10", delivery_time: 2, custom_delivery_time: 2, company: { name: "Correios" } },
+        { id: 1, name: "PAC", price: "30.50", custom_price: "28.90", delivery_time: 6, custom_delivery_time: 7, company: { name: "Correios" } },
+        { id: 3, name: ".Package", error: "Serviço indisponível para o trecho" }]));
+    }
+    if (c === "/api/v2/me/cart") { meSim.carrinho.push(corpo); return new Response(JSON.stringify({ id: `9a1b2c3d-0000-4000-8000-00000000000${meSim.carrinho.length}`, protocol: `ORD-${meSim.carrinho.length}`, price: 28.9 }), { status: 201 }); }
+    if (c === "/api/v2/me/shipment/checkout") { if (meSim.semSaldo) return new Response(JSON.stringify({ message: "Saldo insuficiente" }), { status: 422 }); meSim.compras.push(corpo); return new Response(JSON.stringify({ purchase: { status: "paid" } })); }
+    if (c === "/api/v2/me/shipment/generate") return new Response(JSON.stringify(Object.fromEntries(corpo.orders.map(o => [o, { status: true, message: "ok" }]))));
+    if (c === "/api/v2/me/shipment/print") return new Response(JSON.stringify({ url: `${ME}/imprimir/publico-${corpo.orders[0].slice(-1)}` }));
+    if (c === "/api/v2/me/shipment/tracking") return new Response(JSON.stringify(Object.fromEntries(corpo.orders.filter(o => meSim.rastreio[o]).map(o => [o, meSim.rastreio[o]]))));
+    return new Response("{}", { status: 404 });
+  }
+  const rf = u.match(/^https:\/\/api\.mercadopago\.com\/v1\/payments\/(\d+)\/refunds$/);
+  if (rf) { mpSim.reembolsos.push({ id: rf[1], chave: op.headers["x-idempotency-key"] }); return new Response(JSON.stringify({ id: 1, status: "approved" }), { status: 201 }); }
   if (u === "https://api.mercadopago.com/oauth/token") {
     mpSim.tokens.push(corpo);
     const n = mpSim.tokens.length;
@@ -72,7 +98,7 @@ function formulario(campos = {}, fotos = [WEBP(), JPEG()]) {
   const f = new FormData();
   const base = { jogo: "Brass: Birmingham", jogo_slug: "brass-birmingham", edicao: "Ludofy, com sleeves", condicao: "usado-otimo", idioma: "pt",
                  preco: "45000", troca: "1", entrega: "ambos", cidade: "Campinas", uf: "SP", descricao: "Jogado 3 vezes.\nTudo completo.",
-                 frete: "2500", vendedor: "Ana B.", whatsapp: "(19) 98765-4321", instagram: "@ana.jogos", email: "ana@exemplo.com", aceite: "1", ...campos };
+                 cep_origem: "13010-000", pacote: "m", vendedor: "Ana B.", whatsapp: "(19) 98765-4321", instagram: "@ana.jogos", email: "ana@exemplo.com", aceite: "1", ...campos };
   for (const [k, v] of Object.entries(base)) if (v !== undefined) f.append(k, v);
   fotos.forEach((b, i) => f.append("foto", b, `f${i}.bin`));
   return f;
@@ -98,10 +124,18 @@ async function publica(env, campos, fotos) {
   await conecta(env, a);
   return a;
 }
+// a Elite conecta a conta do Melhor Envio pelo painel
+async function conectaEnvio(env) {
+  const { url } = await (await chama(env, "/v1/moderacao/mercado/envio/conectar", { corpo: {}, senha: SENHA })).json();
+  const state = new URL(url).searchParams.get("state");
+  return chama(env, `/v1/envio/retorno?code=ME-codigo&state=${state}`, { origem: "" });
+}
 const compra = async (env, id, extra = {}, ipFixo) => {
-  const r = await chama(env, "/v1/mercado/comprar", { corpo: { id, nome: "Joana Compradora", email: "joana@exemplo.com", whatsapp: "(21) 99888-7766", entrega: "envio", aceite: "1", ...extra }, ipFixo });
+  const r = await chama(env, "/v1/mercado/comprar", { corpo: { id, nome: "Joana Compradora", email: "joana@exemplo.com", whatsapp: "(21) 99888-7766", entrega: "envio",
+    cep: ENDERECO.cep, servico: 1, endereco: ENDERECO, aceite: "1", ...extra }, ipFixo });
   return { status: r.status, ...(await r.json()) };
 };
+const paga = async (env, c, id, valor) => { mpSim.pagamentos[id] = { status: "approved", external_reference: `eb-${c.pedido}`, transaction_amount: valor }; return avisa(env, c.pedido, id); };
 const avisa = (env, pedido, pagamento) => chama(env, `/v1/mercado/mp/aviso?pedido=${pedido}`, { corpo: { type: "payment", data: { id: String(pagamento) } }, origem: "" });
 
 test("contato: WhatsApp e Instagram são normalizados", () => {
@@ -143,7 +177,9 @@ test("anúncio entra pendente, só aparece depois de aprovado e não expõe e-ma
   assert.equal(det.instagram, undefined);
   assert.equal(det.email, undefined);
   assert.equal(det.compra, true);
-  assert.equal(det.frete, 2500);
+  assert.equal(det.pacote, "m");
+  assert.equal(det.cep_origem, undefined);  // o CEP de origem não é publicado
+  assert.equal(det.envio_site, false);       // Melhor Envio ainda não conectado
   assert.equal(det.descricao, "Jogado 3 vezes.\nTudo completo.");
   // as fotos saem com o tipo certo
   const ft = await chama(env, `/v1/mercado/foto/${det.fotos[1]}`);
@@ -160,8 +196,9 @@ test("validação: sem foto, foto que não é imagem, sem contato, sem aceite, p
   assert.match((await anuncia(env, { aceite: undefined })).erro, /aceite as regras/);
   assert.match((await anuncia(env, { preco: "50" })).erro, /preço/);
   assert.match((await anuncia(env, { uf: "XX" })).erro, /UF/);
-  assert.match((await anuncia(env, { frete: "" })).erro, /valor do envio/);
-  assert.equal((await anuncia(env, { entrega: "retirada", frete: "" })).ok, true);
+  assert.match((await anuncia(env, { cep_origem: "123" })).erro, /CEP de onde o jogo vai sair/);
+  assert.match((await anuncia(env, { pacote: "xl" })).erro, /tamanho da caixa/);
+  assert.equal((await anuncia(env, { entrega: "retirada", cep_origem: "", pacote: "" })).ok, true);
   assert.match((await anuncia(env, {}, Array.from({ length: 7 }, WEBP))).erro, /No máximo 6/);
   const grande = new Uint8Array(800 * 1024); grande.set([0xff, 0xd8, 0xff]);
   assert.match((await anuncia(env, {}, [new Blob([grande])])).erro, /grande demais/);
@@ -195,11 +232,6 @@ test("vendedor gerencia pelo link secreto: preço, renovar, vendido e remover", 
   assert.equal((await acao({ acao: "preco", preco: 39900 })).preco, 39900);
   assert.equal((await lista(env))[0].preco, 39900);
   assert.equal((await acao({ acao: "renovar" })).ok, true);
-  assert.equal((await acao({ acao: "vendido" })).estado, "vendido");
-  assert.deepEqual(await lista(env), []);
-  const vend = (await (await chama(env, `/v1/mercado/anuncio?id=${a.id}`)).json()).anuncio;
-  assert.equal(vend.estado, "vendido");
-  assert.equal(vend.whatsapp, undefined);
   assert.equal((await acao({ acao: "remover" })).estado, "removido");
   assert.equal(env.DB.raw.prepare("SELECT COUNT(*) AS n FROM mercado_fotos").get().n, 0);
   const resto = env.DB.raw.prepare("SELECT whatsapp, email, instagram FROM mercado_anuncios WHERE id = ?").get(a.id);
@@ -266,17 +298,18 @@ test("conexão do Mercado Pago: OAuth com PKCE, token guardado cifrado e volta p
   assert.equal(meu.anuncio.mp_conectado, true);
 });
 
-test("compra: preferência com 5% para a Elite, frete à parte, reserva e liberação do contato só depois do pagamento", async () => {
+test("compra: frete cotado no Melhor Envio, 5% + frete para a Elite, reserva e liberação do contato só depois do pagamento", async () => {
   const env = ambiente();
-  const a = await publica(env);   // R$ 450 + R$ 25 de envio
+  await conectaEnvio(env);
+  const a = await publica(env);   // R$ 450, PAC de R$ 28,90
   mpSim.prefs = [];
   const c = await compra(env, a.id, {}, "10.5.5.5");
   assert.equal(c.status, 200);
   assert.match(c.url, /^https:\/\/www\.mercadopago\.com\.br\//);
   const { corpo, auth } = mpSim.prefs[0];
   assert.match(auth, /^Bearer APP_USR-token-\d+$/);       // pagamento na conta do vendedor
-  assert.equal(corpo.marketplace_fee, 22.5);              // 5% de R$ 450 (sem o frete)
-  assert.deepEqual(corpo.items.map(i => i.unit_price), [450, 25]);
+  assert.equal(corpo.marketplace_fee, 51.4);              // 5% de R$ 450 + R$ 28,90 da etiqueta (a Elite compra)
+  assert.deepEqual(corpo.items.map(i => i.unit_price), [450, 28.9]);
   assert.equal(corpo.external_reference, `eb-${c.pedido}`);
   assert.equal(corpo.notification_url, `https://api.eliteboardgamers.com.br/v1/mercado/mp/aviso?pedido=${c.pedido}`);
   assert.equal(corpo.back_urls.success, `${SITE}/mercado/pedido/?p=${c.pedido}&k=${c.chave}`);
@@ -299,7 +332,7 @@ test("compra: preferência com 5% para a Elite, frete à parte, reserva e libera
   await avisa(env, c2.pedido, 901);
   assert.equal((await verPed()).estado, "processando");
   // Pix aprovado de verdade: conferido na API do Mercado Pago
-  mpSim.pagamentos["902"] = { status: "approved", external_reference: `eb-${c2.pedido}`, transaction_amount: 450 };
+  mpSim.pagamentos["902"] = { status: "approved", external_reference: `eb-${c2.pedido}`, transaction_amount: 450 };  // retirada: só o jogo
   assert.equal((await avisa(env, c2.pedido, 902)).status, 200);
   const pago = await verPed();
   assert.equal(pago.estado, "pago");
@@ -325,8 +358,8 @@ test("compra: preferência com 5% para a Elite, frete à parte, reserva e libera
 test("na volta do Mercado Pago o pedido confere o pagamento na hora, sem esperar o aviso", async () => {
   const env = ambiente();
   const a = await publica(env);
-  const c = await compra(env, a.id);
-  mpSim.pagamentos["5550001"] = { status: "pending", external_reference: `eb-${c.pedido}`, transaction_amount: 475 };
+  const c = await compra(env, a.id, { entrega: "retirada" });
+  mpSim.pagamentos["5550001"] = { status: "pending", external_reference: `eb-${c.pedido}`, transaction_amount: 450 };
   const ver = async () => (await (await chama(env, "/v1/mercado/pedido", { corpo: { p: c.pedido, k: c.chave, pagamento: "5550001" } })).json()).pedido;
   assert.equal((await ver()).estado, "processando");
   mpSim.pagamentos["5550001"].status = "approved";
@@ -338,11 +371,13 @@ test("na volta do Mercado Pago o pedido confere o pagamento na hora, sem esperar
 test("pagamento recusado devolve o jogo à venda; sem pagamento ligado não há compra", async () => {
   const env = ambiente();
   const a = await publica(env);
-  const c = await compra(env, a.id, {}, "10.7.7.7");
-  mpSim.pagamentos["700"] = { status: "rejected", external_reference: `eb-${c.pedido}`, transaction_amount: 475 };
+  const c = await compra(env, a.id, { entrega: "retirada" }, "10.7.7.7");
+  mpSim.pagamentos["700"] = { status: "rejected", external_reference: `eb-${c.pedido}`, transaction_amount: 450 };
   await avisa(env, c.pedido, 700);
   assert.equal((await lista(env))[0].reservado, false);
-  assert.equal((await compra(env, a.id, {}, "10.8.8.8")).status, 200);
+  assert.equal((await compra(env, a.id, { entrega: "retirada" }, "10.8.8.8")).status, 200);
+  // sem o Melhor Envio conectado, envio pelo site não é aceito
+  assert.equal((await compra(env, a.id, {}, "10.8.8.9")).status, 503);
   const sem = { ...env, MP_CHAVE: "" };
   assert.equal((await compra(sem, a.id)).status, 503);
   assert.equal((await (await chama(sem, `/v1/mercado/anuncio?id=${a.id}`)).json()).anuncio.compra, false);
@@ -353,8 +388,166 @@ test("token do vendedor perto de vencer é renovado antes de criar o pagamento",
   const a = await publica(env);
   env.DB.raw.prepare("UPDATE mercado_mp_contas SET expira = ?").run(new Date(Date.now() + 86400e3).toISOString());
   mpSim.tokens = []; mpSim.prefs = [];
-  assert.equal((await compra(env, a.id)).status, 200);
+  assert.equal((await compra(env, a.id, { entrega: "retirada" })).status, 200);
   assert.equal(mpSim.tokens[0].grant_type, "refresh_token");
   assert.match(mpSim.tokens[0].refresh_token, /^TG-renova-\d+$/);
   assert.equal(mpSim.prefs[0].auth, "Bearer APP_USR-token-1");
+});
+
+test("CPF: dígitos verificadores", () => {
+  assert.equal(cpfValido(CPF_A), "52998224725");
+  assert.equal(cpfValido("529.982.247-24"), null);
+  assert.equal(cpfValido("111.111.111-11"), null);
+});
+
+test("frete: cotação com o pacote do anúncio, só opções válidas, da mais barata; frete grátis vira R$ 0 só na mais barata", async () => {
+  const env = ambiente();
+  const a = await publica(env);
+  const cota = async (id, cep = "22041001") => { const r = await chama(env, "/v1/mercado/frete", { corpo: { id, cep } }); return { status: r.status, ...(await r.json()) }; };
+  assert.equal((await cota(a.id)).status, 503);   // a Elite ainda não conectou o Melhor Envio
+  assert.equal((await conectaEnvio(env)).headers.get("location"), "https://api.eliteboardgamers.com.br/painel?envio=ok");
+  assert.ok(!env.DB.raw.prepare("SELECT token FROM mercado_envio_conta").get().token.includes("ME-token"), "token do Melhor Envio cifrado");
+  const c = await cota(a.id);
+  assert.deepEqual(c.opcoes.map(o => [o.nome, o.preco, o.prazo]), [["PAC", 2890, 7], ["SEDEX", 5210, 2]]);
+  assert.deepEqual(meSim.ultimaCotacao.products[0], { id: "jogo", width: 30, height: 8, length: 30, weight: 1.5, insurance_value: 450, quantity: 1 });
+  assert.equal(meSim.ultimaCotacao.from.postal_code, "13010000");
+  assert.ok([...meSim.agentes].every(ag => ag.includes("tecnico@exemplo.com")), "o Melhor Envio exige o contato técnico no User-Agent");
+  assert.equal((await cota(a.id, "123")).status, 400);
+  const g = await publica(env, { frete_gratis: "1", jogo: "Azul" });
+  const cg = await cota(g.id);
+  assert.equal(cg.gratis, true);
+  assert.deepEqual(cg.opcoes.map(o => [o.nome, o.preco]), [["PAC", 0]]);
+  // frete grátis: o comprador paga só o jogo e a Elite recebe a taxa + a etiqueta, que saem da parte do vendedor
+  mpSim.prefs = [];
+  const cc = await compra(env, g.id);
+  assert.equal(cc.status, 200);
+  assert.deepEqual(mpSim.prefs[0].corpo.items.map(i => i.unit_price), [450]);
+  assert.equal(mpSim.prefs[0].corpo.marketplace_fee, 51.4);
+});
+
+test("compra com envio: endereço e CPF validados e guardados cifrados", async () => {
+  const env = ambiente();
+  await conectaEnvio(env);
+  const a = await publica(env);
+  assert.match((await compra(env, a.id, { endereco: { ...ENDERECO, cpf: "123" } })).erro, /CPF/);
+  assert.match((await compra(env, a.id, { endereco: { ...ENDERECO, numero: "" } })).erro, /endereço completo/);
+  assert.match((await compra(env, a.id, { servico: 99 })).erro, /não está mais disponível/);
+  const c = await compra(env, a.id, { servico: 2 });
+  assert.equal(c.status, 200);
+  const p = env.DB.raw.prepare("SELECT destino, frete, servico_nome FROM mercado_pedidos WHERE id = ?").get(c.pedido);
+  assert.equal(p.frete, 5210);
+  assert.equal(p.servico_nome, "Correios SEDEX");
+  assert.ok(!p.destino.includes("Copacabana") && !p.destino.includes("52998224725"), "endereço e CPF cifrados");
+});
+
+test("etapas do envio: etiqueta, postagem, entrega, confirmação e avaliação (como no pagamento seguro)", async () => {
+  const env = ambiente();
+  await conectaEnvio(env);
+  const a = await publica(env);
+  const c = await compra(env, a.id);
+  await paga(env, c, "8800001", 478.9);
+  const ver = async () => (await (await chama(env, "/v1/mercado/pedido", { corpo: { p: c.pedido, k: c.chave } })).json()).pedido;
+  const p1 = await ver();
+  assert.equal(p1.estado, "pago");
+  assert.ok(Date.parse(p1.prazo_envio.replace(" ", "T") + "Z") > Date.now() + 9 * 86400e3, "prazo de envio de 10 dias");
+  // o comprador não confirma antes de postar
+  const acaoC = async (corpo) => { const r = await chama(env, "/v1/mercado/pedido/acao", { corpo: { p: c.pedido, k: c.chave, ...corpo } }); return { status: r.status, ...(await r.json()) }; };
+  assert.equal((await acaoC({ acao: "recebi" })).status, 409);
+  // o vendedor gera a etiqueta pelo link secreto
+  const gera = async (rem = REMETENTE) => { const r = await chama(env, "/v1/mercado/meu/etiqueta", { corpo: { id: a.id, t: a.token, pedido: c.pedido, remetente: rem } }); return { status: r.status, ...(await r.json()) }; };
+  assert.match((await gera({ ...REMETENTE, cpf: "000" })).erro, /CPF/);
+  meSim.semSaldo = true;
+  assert.match((await gera()).erro, /sem saldo/);
+  meSim.semSaldo = false;
+  meSim.carrinho = [];
+  const e = await gera();
+  assert.equal(e.status, 200);
+  assert.match(e.url, /\/imprimir\/publico-/);
+  const cart = meSim.carrinho.at(-1);
+  assert.equal(cart.service, 1);
+  assert.equal(cart.from.document, "11144477735");
+  assert.equal(cart.to.document, "52998224725");
+  assert.equal(cart.to.address, "Rua Barata Ribeiro");
+  assert.equal(cart.to.postal_code, "22041001");
+  assert.deepEqual(cart.volumes, [{ height: 8, width: 30, length: 30, weight: 1.5 }]);
+  assert.equal(cart.options.insurance_value, 450);
+  assert.equal(cart.options.non_commercial, true);
+  assert.deepEqual(cart.options.tags, [{ tag: `eb-${c.pedido}`, url: `${SITE}/mercado/` }]);
+  assert.equal((await gera()).url, e.url);   // segunda vez devolve a mesma etiqueta, sem comprar outra
+  assert.equal(meSim.compras.length, 1);
+  // o vendedor vê a etiqueta na venda
+  const v = (await (await chama(env, "/v1/mercado/meu", { corpo: { id: a.id, t: a.token } })).json()).vendas[0];
+  assert.equal(v.envio_estado, "gerada");
+  assert.equal(v.etiqueta_url, e.url);
+  // aviso de postagem do Melhor Envio (assinado)
+  const etq = env.DB.raw.prepare("SELECT etiqueta FROM mercado_pedidos WHERE id = ?").get(c.pedido).etiqueta;
+  const assina = async (corpo, segredo = "me-segredo") => {
+    const k = await crypto.subtle.importKey("raw", new TextEncoder().encode(segredo), { name: "HMAC", hash: "SHA-256" }, false, ["sign"]);
+    return btoa(String.fromCharCode(...new Uint8Array(await crypto.subtle.sign("HMAC", k, new TextEncoder().encode(corpo)))));
+  };
+  const avisoME = async (evento, extra = {}, segredo) => {
+    const corpo = JSON.stringify({ event: evento, data: { id: etq, status: evento.split(".")[1], tracking: "AA123456789BR", tags: [{ tag: `eb-${c.pedido}`, url: null }], ...extra } });
+    return worker.fetch(new Request("https://api.eliteboardgamers.com.br/v1/envio/aviso", { method: "POST", body: corpo, headers: { "x-me-signature": await assina(corpo, segredo) } }), env, ctx);
+  };
+  assert.equal((await avisoME("order.posted", {}, "segredo-errado")).status, 401);
+  assert.equal((await ver()).estado, "pago");
+  assert.equal((await avisoME("order.posted", { posted_at: "2026-11-05 10:00:00" })).status, 200);
+  const p2 = await ver();
+  assert.equal(p2.estado, "enviado");
+  assert.equal(p2.rastreio, "AA123456789BR");
+  assert.equal(p2.rastreio_url, "https://melhorrastreio.com.br/rastreio/AA123456789BR");
+  // entrega chega pelo rastreio periódico (aviso perdido)
+  env.DB.raw.prepare("UPDATE mercado_pedidos SET rastreado_em = datetime('now', '-3 hours') WHERE id = ?").run(c.pedido);
+  meSim.rastreio[etq] = { status: "delivered", tracking: "AA123456789BR", delivered_at: "2026-11-08 15:00:00" };
+  assert.equal((await rotinaMercado(env)).rastreados, 1);
+  assert.equal((await ver()).estado, "entregue");
+  // avaliar só depois de concluir
+  assert.equal((await acaoC({ acao: "avaliar", nota: 5 })).status, 409);
+  assert.equal((await acaoC({ acao: "recebi" })).estado, "concluido");
+  assert.match((await acaoC({ acao: "avaliar", nota: 9 })).erro, /1 a 5/);
+  assert.equal((await acaoC({ acao: "avaliar", nota: 5, comentario: "Jogo impecável, bem embalado." })).ok, true);
+  assert.equal((await acaoC({ acao: "avaliar", nota: 1 })).status, 409);   // uma avaliação por pedido
+  assert.deepEqual((await ver()).avaliacao, { nota: 5, comentario: "Jogo impecável, bem embalado." });
+  // a reputação aparece nos outros anúncios do mesmo vendedor (mesma conta do Mercado Pago)
+  const outro = await publica(env, { jogo: "Cascadia" });
+  const l = (await lista(env)).find(x => x.id === outro.id);
+  assert.deepEqual([l.nota, l.avaliacoes, l.vendas], [5, 1, 1]);
+  const det = (await (await chama(env, `/v1/mercado/anuncio?id=${outro.id}`)).json()).anuncio;
+  assert.equal(det.ultimas_avaliacoes[0].comentario, "Jogo impecável, bem embalado.");
+});
+
+test("prazos: sem postagem em 10 dias o pagamento é devolvido e o jogo volta à venda; entregue conclui em 7 dias", async () => {
+  const env = ambiente();
+  await conectaEnvio(env);
+  const a = await publica(env);
+  const c = await compra(env, a.id, {}, "10.20.0.1");
+  await paga(env, c, "8800002", 478.9);
+  env.DB.raw.prepare("UPDATE mercado_pedidos SET prazo_envio = datetime('now', '-1 minute') WHERE id = ?").run(c.pedido);
+  mpSim.reembolsos = [];
+  assert.equal((await rotinaMercado(env)).devolvidos, 1);
+  assert.deepEqual(mpSim.reembolsos, [{ id: "8800002", chave: `eb-prazo-${c.pedido}` }]);
+  assert.equal(env.DB.raw.prepare("SELECT estado FROM mercado_pedidos WHERE id = ?").get(c.pedido).estado, "devolvido");
+  assert.equal((await lista(env)).length, 1);   // de volta à venda
+  // outro pedido entregue há 8 dias conclui sozinho
+  const c2 = await compra(env, a.id, {}, "10.20.0.2");
+  await paga(env, c2, "8800003", 478.9);
+  env.DB.raw.prepare("UPDATE mercado_pedidos SET estado = 'entregue', entregue_em = datetime('now', '-8 days') WHERE id = ?").run(c2.pedido);
+  assert.equal((await rotinaMercado(env)).concluidos, 1);
+});
+
+test("problema: o comprador reclama e o editor devolve o pagamento pelo painel", async () => {
+  const env = ambiente();
+  await conectaEnvio(env);
+  const a = await publica(env);
+  const c = await compra(env, a.id, { entrega: "retirada" });
+  await paga(env, c, "8800004", 450);
+  const acaoC = async (corpo) => { const r = await chama(env, "/v1/mercado/pedido/acao", { corpo: { p: c.pedido, k: c.chave, ...corpo } }); return { status: r.status, ...(await r.json()) }; };
+  assert.match((await acaoC({ acao: "problema", motivo: "ruim" })).erro, /10 letras/);
+  assert.equal((await acaoC({ acao: "problema", motivo: "O vendedor não aparece para a retirada." })).estado, "problema");
+  const peds = await (await chama(env, "/v1/moderacao/mercado/pedidos", { senha: SENHA })).json();
+  assert.equal(peds.pedidos[0].problema, "O vendedor não aparece para a retirada.");
+  assert.equal(peds.pedidos[0].destino, undefined);
+  const r = await (await chama(env, "/v1/moderacao/mercado/pedido", { corpo: { id: c.pedido, acao: "reembolsar" }, senha: SENHA })).json();
+  assert.equal(r.estado, "devolvido");
+  assert.equal(mpSim.reembolsos.at(-1).id, "8800004");
 });

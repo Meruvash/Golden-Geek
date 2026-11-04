@@ -2,7 +2,9 @@
 
 Uso: python3 tools/build_mercado.py   (o build_home.py também chama)
 Páginas: /mercado/ (vitrine), /mercado/anunciar/ (formulário), /mercado/anuncio/?id=N (anúncio), /mercado/meu/ (gerenciar),
-/mercado/pedido/?p=N&k=... (o comprador acompanha o pagamento e recebe o contato do vendedor)
+/mercado/pedido/?p=N&k=... (o comprador acompanha as etapas: pagamento, envio, entrega e conclusão, e avalia o vendedor).
+O frete é cotado no Melhor Envio pelo CEP do comprador, e o vendedor gera a etiqueta (com QR para abrir no celular,
+mercado/qr.js) em Meus anúncios.
 e /mercado/jogos.json (lista de jogos para o vendedor escolher, com o menor preço de novo visto pelo Black de Verdade).
 
 A compra é paga pelo site, pelo Mercado Pago, na conta do vendedor; a Elite fica com 5% do preço do jogo
@@ -27,9 +29,11 @@ e = html.escape
 DIR = ROOT / "mercado"
 URL = f"{SITE}/mercado/"
 OG = f"{SITE}/mercado/capa.jpg"
-VERSAO_JS = "2"   # troque quando mudar o mercado.js, para o navegador buscar o novo
+VERSAO_JS = "3"   # troque quando mudar o mercado.js, para o navegador buscar o novo
 
 UFS = "AC AL AP AM BA CE DF ES GO MA MT MS MG PA PB PR PE PI RJ RN RS RO RR SC SP SE TO".split()
+PACOTES = [("p", "Pequena", "até 20 × 20 × 6 cm · card games, jogos de bolso"), ("m", "Média", "até 30 × 30 × 8 cm · a maioria dos jogos"),
+           ("g", "Grande", "até 32 × 32 × 12 cm · caixa quadrada cheia"), ("gg", "Muito grande", "até 42 × 42 × 16 cm · big box")]
 CONDICOES = [("lacrado", "Lacrado", "Nunca aberto, plástico original"),
              ("como-novo", "Como novo", "Aberto, sem sinais de uso"),
              ("usado-otimo", "Usado, ótimo", "Pouco jogado, tudo perfeito"),
@@ -136,7 +140,7 @@ CSS = """<style>
 .mc-passos li{counter-increment:p;position:relative;background:var(--panel2);border:1px solid var(--line);border-radius:14px;padding:16px 16px 16px 60px;color:#cfd5de;font-size:.94rem}
 .mc-passos li::before{content:counter(p);position:absolute;left:16px;top:16px;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:var(--gold);color:#111;font-weight:800}
 .mc-passos b{display:block;color:#fff;font-size:1rem;margin-bottom:2px}
-@media (min-width:760px){.mc-passos{grid-template-columns:repeat(3,1fr)}}
+@media (min-width:760px){.mc-passos{grid-template-columns:repeat(2,1fr)}}@media (min-width:1100px){.mc-passos{grid-template-columns:repeat(4,1fr)}}
 /* cartões claros de texto (dicas, regras) */
 .mc .bloco>h2{display:flex;align-items:center;justify-content:flex-start;gap:8px;color:var(--paper-ink);font-size:1.1rem;letter-spacing:-.005em;text-transform:none;margin:0 0 10px;padding:0;border:0}.mc .bloco>h2 .ic{width:22px;height:22px;color:var(--brasil)}.mc-lista+.mc-lista{margin-top:10px}.mc .bloco>.mc-aviso{margin-top:12px}
 .mc-lista{display:grid;gap:8px;margin:0;padding:0;list-style:none}
@@ -174,7 +178,7 @@ CSS = """<style>
 .mc-fatos dd{margin:2px 0 0;font-weight:700;font-size:.93rem;overflow-wrap:anywhere}
 .mc-vend{display:flex;align-items:center;gap:12px;padding-top:12px;border-top:1px solid var(--paper-line)}
 .mc-vend .mc-av{width:44px;height:44px;font-size:1.1rem}
-.mc-vend b{display:block;font-size:1.02rem}.mc-vend small{color:var(--paper-muted);font-size:.84rem}
+.mc-vend b{display:block;font-size:1.02rem}.mc-vend small{display:block;color:var(--paper-muted);font-size:.84rem}
 .mc-contato{display:grid;gap:8px}.mc-contato .mc-btn{width:100%}
 .mc-novo{display:grid;gap:4px;background:var(--brasil-bg);color:#123d26;border-radius:10px;padding:10px 12px;font-size:.9rem}
 .mc-novo b{font-size:1rem}.mc-novo a{color:var(--brasil);font-weight:700}
@@ -286,6 +290,38 @@ CSS = """<style>
 .mc-resumo{margin:0;font-size:.92rem;color:#3a414c;background:#fff;border:1px solid var(--paper-line);border-radius:10px;padding:10px 12px}
 .mc-dlg .mc-campo{display:grid;gap:5px;min-height:0}.mc-dlg .mc-check{min-height:0}
 .mc-taxa{margin:0;font-size:.86rem;color:#3a414c;background:#fff;border:1px solid var(--paper-line);border-radius:10px;padding:10px 12px}.mc-liquido{display:block;margin-top:4px;font-weight:800;color:var(--brasil)}.mc-liquido:empty{display:none}
+/* frete, etapas, etiqueta e avaliações */
+.mc-cep-l{display:flex;gap:8px}.mc-cep-l input{flex:1 1 auto;min-width:0;width:auto}.mc .mc-compra .mc-cep-l .mc-btn.sec{flex:none;width:auto;min-height:48px;padding:0 18px;color:var(--paper-ink);border-color:#c8cdd5}
+.mc-fretes{display:grid;gap:6px}.mc-fretes .mc-op{grid-template-columns:1fr auto;align-items:center;padding:10px 12px 10px 38px}.mc-fretes .mc-op b{font-variant-numeric:tabular-nums}.mc-fretes .mc-op span small{display:block}
+.mc-rot{margin:2px 0 -4px;font-weight:800;font-size:.9rem}
+.mc-end{border:0;padding:0;margin:0;display:grid;gap:10px}.mc-end legend{font-weight:800;padding:0;margin-bottom:4px}
+.mc-etapas{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px;margin:0;padding:0;list-style:none;counter-reset:e}
+.mc-etapas li{counter-increment:e;position:relative;display:grid;justify-items:center;gap:6px;text-align:center;font-size:.76rem;font-weight:700;color:var(--paper-muted);line-height:1.2}
+.mc-etapas li::before{content:counter(e);display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:#e6e9ee;color:var(--paper-muted);font-weight:800;position:relative;z-index:1}
+.mc-etapas li::after{content:"";position:absolute;top:14px;left:calc(-50% + 18px);right:calc(50% + 18px);height:3px;border-radius:2px;background:#e6e9ee}
+.mc-etapas li:first-child::after{display:none}
+.mc-etapas li.feito{color:var(--paper-ink)}.mc-etapas li.feito::before{content:"✓";background:var(--brasil);color:#fff}.mc-etapas li.feito::after,.mc-etapas li.agora::after{background:var(--brasil)}
+.mc-etapas li.agora{color:var(--paper-ink)}.mc-etapas li.agora::before{background:var(--gold);color:#111;box-shadow:0 0 0 4px rgba(227,178,60,.3)}
+.mc-etapas li.parou::before{content:"!";background:#b3263e;color:#fff}
+.mc-etapas small{display:block;font-weight:600;font-size:.7rem;color:var(--paper-muted)}
+.mc-rastreio{display:grid;gap:6px;background:#fff;border:1px solid var(--paper-line);border-radius:10px;padding:10px 12px;font-size:.9rem}.mc-rastreio b{font-family:ui-monospace,monospace;font-size:1rem;letter-spacing:.04em}
+.mc-rastreio a{color:var(--link);font-weight:800}
+.mc-ped-acoes{display:flex;flex-wrap:wrap;gap:8px}.mc-ped-acoes .mc-btn{flex:1 1 200px}.mc-ped-acoes .mc-btn.sec{color:var(--paper-ink);border-color:#c8cdd5}
+.mc-estrelas{display:flex;flex-direction:row-reverse;justify-content:flex-end;gap:4px}
+.mc-estrelas label{cursor:pointer;font-size:2.1rem;line-height:1;color:#c8cdd5}.mc-estrelas input{position:absolute;opacity:0}
+.mc-estrelas label:hover,.mc-estrelas label:hover~label,.mc-estrelas label:has(input:checked),.mc-estrelas label:has(input:checked)~label{color:#e3a400}
+.mc-estrelas label:has(input:focus-visible){outline:3px solid var(--gold);outline-offset:2px;border-radius:4px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.mc-aval-f{display:grid;gap:12px}.mc-aval-f .mc-btn{justify-self:start}
+.mc-rep{display:inline-flex;align-items:center;gap:4px;font-weight:800;color:#8a5f00}.mc-rep small{font-weight:600;color:var(--paper-muted)}
+.mc-avals{display:grid;gap:8px;margin:0;padding:0;list-style:none}.mc-avals li{background:#fff;border:1px solid var(--paper-line);border-radius:10px;padding:10px 12px;font-size:.9rem;color:#3a414c}
+.mc-avals b{color:#e3a400;letter-spacing:1px}.mc-avals time{color:var(--paper-muted);font-size:.8rem;margin-left:6px}
+.mc-etq{grid-column:1/-1;display:grid;grid-template-columns:132px minmax(0,1fr);gap:12px;align-items:center;background:#fff;border:2px dashed #b9c0ca;border-radius:12px;padding:12px}
+.mc-etq svg{width:132px;height:132px;display:block;border-radius:6px}
+.mc-etq p{margin:0;font-size:.86rem;color:#3a414c}.mc-etq .mc-btn{min-height:42px;font-size:.88rem;margin-top:6px}
+@media (max-width:420px){.mc-etq{grid-template-columns:1fr;justify-items:center;text-align:center}}
+.mc-prazo{display:inline-block;font-weight:800;color:#8a5f00}
+@media print{.mc-etq{border:0}}
 /* pedido */
 .mc-pedido{display:grid;gap:14px}.mc-ped-topo{display:grid;grid-template-columns:88px minmax(0,1fr);gap:14px;align-items:center}
 .mc-ped-foto img,.mc-ped-foto{display:block;width:88px;height:88px;border-radius:12px;object-fit:cover;background:#e6e9ee}
@@ -294,7 +330,7 @@ CSS = """<style>
 .mc-ped-sub{margin:4px 0 0;color:var(--paper-muted);font-size:.9rem}.mc-ped-msg p{margin:0;color:#3a414c}
 .mc-contato{display:grid;gap:8px}.mc-contato .mc-btn{width:100%}
 .mc-vendas{grid-column:1/-1;display:grid;gap:8px;margin:0;padding:0;list-style:none}
-.mc-vendas li{background:#fff;border:1px solid var(--paper-line);border-radius:10px;padding:10px 12px;font-size:.88rem;color:#3a414c}
+.mc-vendas>li{background:#fff;border:1px solid var(--paper-line);border-radius:10px;padding:10px 12px;font-size:.88rem;color:#3a414c}
 .mc-vendas b{color:var(--paper-ink)}.mc-vendas a{color:var(--brasil);font-weight:800}
 .mc-mp{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;background:#fff4d1;color:#5c3f00;border-radius:10px;padding:10px 12px;font-size:.88rem;font-weight:700}
 .mc-mp.ok{background:var(--brasil-bg);color:#123d26}
@@ -343,7 +379,8 @@ def _casca(pre, dados_pagina, cfg):
 
 DICAS = """<ul class="mc-lista">
    <li>Pague só pelo botão Comprar, pelo Mercado Pago. Nunca faça Pix ou depósito direto para o vendedor.</li>
-   <li>Depois do pagamento, peça ao vendedor o código de rastreio do envio.</li>
+   <li>O vendedor tem 10 dias para postar. Sem postagem no prazo, o pagamento volta para você sozinho.</li>
+   <li>Acompanhe o rastreio na página do pedido e só confirme o recebimento depois de conferir o jogo.</li>
    <li>Na retirada em mãos, marque num lugar público e confira as peças na hora.</li>
    <li>Quem pede para pagar por fora do site está quebrando as regras: denuncie o anúncio.</li>
    <li>Desconfie de preço muito abaixo do normal e de pressa para fechar.</li>
@@ -352,8 +389,9 @@ DICAS = """<ul class="mc-lista">
 REGRAS = """<ul class="mc-lista">
    <li>Só jogos de tabuleiro, card games, expansões e acessórios de jogos.</li>
    <li>Foto real do item à venda: nada de imagem da caixa tirada da internet.</li>
-   <li>Preço final em reais e valor do envio informado no anúncio.</li>
-   <li>Venda e pagamento sempre pelo site. A Elite fica com 5% do preço do jogo; o frete fica todo com o vendedor.</li>
+   <li>Preço final em reais. O frete é calculado pelo site, e a etiqueta sai pronta em Meus anúncios.</li>
+   <li>Postar em até 10 dias depois do pagamento. Sem postagem no prazo, o pagamento volta para o comprador.</li>
+   <li>Venda e pagamento sempre pelo site. A Elite fica com 5% do preço do jogo e usa o frete pago para comprar a etiqueta.</li>
    <li>Um anúncio por jogo, com conta do Mercado Pago conectada para receber.</li>
   </ul>
   <ul class="mc-lista nao">
@@ -402,9 +440,10 @@ def build_lista(cfg):
  <section class="mc-como" id="como-funciona" aria-labelledby="h-como">
   <div><h2 id="h-como">Como funciona</h2><p class="sub">Anunciar é grátis e leva uns três minutos, sem criar conta. A Elite só ganha quando você vende: 5% do preço do jogo.</p></div>
   <ol class="mc-passos">
-   <li><b>Anuncie com fotos reais</b>Escolha o jogo, tire até 6 fotos, diga o estado, o preço e o valor do envio. Depois conecte a sua conta do Mercado Pago para receber.</li>
-   <li><b>A gente confere</b>Todo anúncio passa por moderação antes de aparecer, para segurar golpe, pirataria e propaganda.</li>
-   <li><b>Venda pelo site</b>O comprador paga pelo Mercado Pago e o dinheiro cai na sua conta. Vocês recebem o contato um do outro para combinar a entrega.</li>
+   <li><b>Anuncie com fotos reais</b>Escolha o jogo, tire até 6 fotos, diga o estado, o preço e o tamanho da caixa. Conecte o Mercado Pago para receber. A moderação confere antes de publicar.</li>
+   <li><b>Pagamento pelo site</b>O comprador calcula o frete pelo CEP e paga por Pix ou cartão. O dinheiro do jogo cai na sua conta do Mercado Pago.</li>
+   <li><b>Etiqueta pronta</b>Você gera a etiqueta em Meus anúncios, imprime (ou abre pelo QR no celular) e posta em até 10 dias. O rastreio aparece para os dois.</li>
+   <li><b>Entrega e avaliação</b>O comprador confirma que recebeu e avalia você. Boas avaliações aparecem nos seus próximos anúncios.</li>
   </ol>
  </section>
  <div class="mc-dois">
@@ -447,6 +486,8 @@ def build_anuncio(cfg):
     <div class="mc-vend"></div>
     <div class="mc-compra" hidden>
      <div class="mc-ent" role="radiogroup" aria-label="Como receber" hidden></div>
+     <div class="mc-cep" hidden><label class="mc-campo">CEP para calcular o frete<span class="mc-cep-l"><input name="cep" inputmode="numeric" autocomplete="postal-code" placeholder="00000-000" maxlength="9"><button type="button" class="mc-btn sec mc-calc">Calcular</button></span></label>
+      <p class="mc-st mc-st-frete" role="status"></p><div class="mc-fretes" role="radiogroup" aria-label="Opções de envio"></div></div>
      <p class="mc-total"></p>
      <button type="button" class="mc-btn pri mc-comprar">{ic("sacola")}Comprar</button>
      <p class="mc-pag">Pix ou cartão em até 12x pelo Mercado Pago. O contato do vendedor aparece assim que o pagamento é aprovado.</p>
@@ -456,6 +497,7 @@ def build_anuncio(cfg):
     <a class="mc-res" hidden>{ic("estrela")}<span></span></a>
    </section>
    <section class="bloco mc-desc-b" hidden><h2>Descrição do vendedor</h2><p class="mc-desc"></p></section>
+   <section class="bloco mc-aval-b" hidden><h2>{ic("estrela")} Avaliações do vendedor</h2><ul class="mc-avals"></ul></section>
    <section class="bloco"><div class="mc-rodape-an"><span class="mc-quando"></span>{botao_compartilhar("Olha esse anúncio no Mercado da Elite", "", mini=True)}</div>
     <button type="button" class="mc-denuncia">{ic("bandeira")}Denunciar este anúncio</button></section>
    <section class="bloco"><h2>{ic("escudo")} Antes de fechar negócio</h2>{DICAS}
@@ -470,6 +512,13 @@ def build_anuncio(cfg):
   <label class="mc-campo">Seu nome<input name="nome" required minlength="2" maxlength="60" autocomplete="name"></label>
   <label class="mc-campo">E-mail <small>(o Mercado Pago manda o comprovante)</small><input name="email" type="email" required maxlength="120" autocomplete="email"></label>
   <label class="mc-campo">WhatsApp <small>(o vendedor recebe para combinar a entrega)</small><input name="whatsapp" type="tel" inputmode="tel" required autocomplete="tel-national" placeholder="(11) 98765-4321" maxlength="20"></label>
+  <fieldset class="mc-end" hidden><legend>Endereço de entrega</legend>
+   <p class="mc-aviso" style="color:var(--paper-muted)">Vai só para a etiqueta do envio, não aparece para ninguém. A transportadora exige o CPF de quem recebe.</p>
+   <div class="mc-linha"><label class="mc-campo">Nome completo de quem recebe<input name="e_nome" maxlength="80" autocomplete="name"></label><label class="mc-campo">CPF<input name="e_cpf" inputmode="numeric" maxlength="14" placeholder="000.000.000-00" autocomplete="off"></label></div>
+   <div class="mc-linha c3"><label class="mc-campo">Rua<input name="e_rua" maxlength="120" autocomplete="address-line1"></label><label class="mc-campo">Número<input name="e_numero" maxlength="20" autocomplete="off"></label></div>
+   <div class="mc-linha"><label class="mc-campo"><span>Complemento <small>(opcional)</small></span><input name="e_complemento" maxlength="60" autocomplete="address-line2"></label><label class="mc-campo">Bairro<input name="e_bairro" maxlength="80"></label></div>
+   <div class="mc-linha c3"><label class="mc-campo">Cidade<input name="e_cidade" maxlength="60" autocomplete="address-level2"></label><label class="mc-campo">UF<input name="e_uf" maxlength="2" autocomplete="address-level1"></label></div>
+  </fieldset>
   <label class="isca" aria-hidden="true">Site<input name="site" tabindex="-1" autocomplete="off"></label>
   <label class="mc-check"><input type="checkbox" name="aceite" value="1" required> <span>Li as <a href="../#regras" target="_blank">regras do Mercado</a> e sei que a compra é feita com o vendedor, pelo Mercado Pago.</span></label>
   <div class="mc-ts"></div>
@@ -497,6 +546,7 @@ def build_anunciar(cfg):
     pre = "../../"
     ufs = "".join(f'<option value="{u}">{u}</option>' for u in UFS)
     conds = "".join(f'<label class="mc-op"><input type="radio" name="condicao" value="{v}" required>{r}<small>{d}</small></label>' for v, r, d in CONDICOES)
+    pacotes = "".join(f'<label class="mc-op"><input type="radio" name="pacote" value="{v}"{" checked" if v == "m" else ""}>{r}<small>{d}</small></label>' for v, r, d in PACOTES)
     corpo = f"""{cabecalho(pre, "Mercado", sub=True)}
 <main id="conteudo" class="in mc" {_casca(pre, "anunciar", cfg)}>
  {trilha(("Início", pre), ("Mercado", "../"), ("Anunciar", ""))}
@@ -529,7 +579,12 @@ def build_anunciar(cfg):
      <label class="mc-op"><input type="radio" name="entrega" value="envio">Só envio<small>Mando pelos Correios ou transportadora</small></label>
      <label class="mc-op"><input type="radio" name="entrega" value="retirada">Só retirada<small>Entrego em mãos na minha cidade</small></label>
     </div>
-    <label class="mc-campo mc-frete"><span>Valor do envio <small>(o comprador paga junto; 0 = frete grátis)</small></span><span class="mc-preco-in"><span>R$</span><input name="frete_txt" inputmode="decimal" placeholder="Ex.: 25,00" autocomplete="off"></span></label>
+    <div class="mc-frete">
+     <label class="mc-campo"><span>CEP de onde o jogo sai <small>(não aparece no anúncio; serve para calcular o frete)</small></span><input name="cep_origem" inputmode="numeric" autocomplete="postal-code" placeholder="00000-000" maxlength="9"></label>
+     <p class="mc-rot">Tamanho da caixa do envio, já embalada</p>
+     <div class="mc-ops c2" role="radiogroup" aria-label="Tamanho da caixa">{pacotes}</div>
+     <label class="mc-check"><input type="checkbox" name="frete_gratis" value="1"> <span>Ofereço frete grátis <small>(o valor da etiqueta sai do que você recebe)</small></span></label>
+    </div>
     <label class="mc-campo"><span>Descrição <small>(opcional)</small></span><textarea name="descricao" maxlength="1500" rows="5" placeholder="Quantas vezes foi jogado, se está completo, se tem sleeves ou insert, marcas de uso…"></textarea><span class="mc-cont-t" aria-live="polite">0/1.500</span></label>
    </fieldset>
    <fieldset class="mc-passo"><legend><i>4</i>Você e o contato</legend>
@@ -548,7 +603,7 @@ def build_anunciar(cfg):
    </fieldset>
    <fieldset class="mc-passo"><legend><i>5</i>Publicar</legend>
     <label class="mc-check"><input type="checkbox" name="aceite" value="1" required> <span>Li as <a href="../#regras" target="_blank">regras do Mercado</a> e autorizo a Elite Boardgamers a publicar este anúncio com o meu nome, a cidade, as fotos e o contato que deixei, até eu remover. <a href="{pre}politica-editorial/#mercado" target="_blank">Como tratamos os dados</a></span></label>
-    <p class="mc-taxa">Quando vender pelo site, você recebe na sua conta do Mercado Pago o preço do jogo menos 5% da Elite, mais o frete inteiro. A tarifa do próprio Mercado Pago também é descontada do que você recebe. <span class="mc-liquido"></span></p>
+    <p class="mc-taxa">Quando vender pelo site, você recebe na sua conta do Mercado Pago o preço do jogo menos 5% da Elite (e menos o frete, se você oferecer frete grátis). A tarifa do próprio Mercado Pago também é descontada do que você recebe. A etiqueta do envio sai pronta, paga com o frete do comprador. <span class="mc-liquido"></span></p>
     <div class="mc-ts"></div>
     <div class="mc-enviar"><button type="submit" class="mc-btn pri">{ic("sacola")}Enviar anúncio para moderação</button>
      <p class="mc-st mc-st-envio" role="status"></p></div>
@@ -577,6 +632,19 @@ def build_meu(cfg):
     corpo = f"""{cabecalho(pre, "Mercado", sub=True)}
 <main id="conteudo" class="in mc" {_casca(pre, "meu", cfg)}>
  {trilha(("Início", pre), ("Mercado", "../"), ("Meus anúncios", ""))}
+ <dialog class="mc-dlg mc-etq-dlg" aria-labelledby="h-etq"><form method="dialog" novalidate>
+  <h2 id="h-etq">Gerar etiqueta de envio</h2>
+  <p class="mc-resumo"></p>
+  <p class="mc-aviso" style="color:var(--paper-muted)">Seus dados de remetente vão só para a etiqueta e não ficam guardados no site. A transportadora exige o CPF de quem envia.</p>
+  <div class="mc-linha"><label class="mc-campo">Nome completo<input name="r_nome" maxlength="80" autocomplete="name"></label><label class="mc-campo">CPF<input name="r_cpf" inputmode="numeric" maxlength="14" placeholder="000.000.000-00" autocomplete="off"></label></div>
+  <div class="mc-linha"><label class="mc-campo">CEP<input name="r_cep" inputmode="numeric" maxlength="9" autocomplete="postal-code"></label><label class="mc-campo">Número<input name="r_numero" maxlength="20"></label></div>
+  <label class="mc-campo">Rua<input name="r_rua" maxlength="120" autocomplete="address-line1"></label>
+  <div class="mc-linha"><label class="mc-campo"><span>Complemento <small>(opcional)</small></span><input name="r_complemento" maxlength="60" autocomplete="address-line2"></label><label class="mc-campo">Bairro<input name="r_bairro" maxlength="80"></label></div>
+  <div class="mc-linha c3"><label class="mc-campo">Cidade<input name="r_cidade" maxlength="60" autocomplete="address-level2"></label><label class="mc-campo">UF<input name="r_uf" maxlength="2" autocomplete="address-level1"></label></div>
+  <label class="mc-check"><input type="checkbox" name="r_lembrar" value="1" checked> <span>Lembrar o endereço neste aparelho (o CPF não é lembrado)</span></label>
+  <p class="mc-st" role="status"></p>
+  <div class="acoes"><button class="mc-btn sec" value="cancelar" formnovalidate>Cancelar</button><button class="mc-btn pri" value="gerar">Gerar etiqueta</button></div>
+ </form></dialog>
  <header><h1 class="mc-tit" style="color:#fff">Meus anúncios</h1><p class="sub">Os anúncios que você fez neste aparelho, ou que abriu pelo seu link de gerenciamento.</p></header>
  <p class="mc-st mc-st-meu" role="status"></p>
  <ul class="mc-meus"></ul>
@@ -584,6 +652,7 @@ def build_meu(cfg):
  <div class="mc-vazio" hidden>{ic("sacola")}<b>Nenhum anúncio neste aparelho</b><span>Abra o link de gerenciamento que você recebeu ao anunciar, ou faça um anúncio novo.</span><a class="mc-btn pri" href="../anunciar/">{ic("mais")}Anunciar meu jogo</a></div>
 </main>
 {rodape(pre, barra="")}
+<script src="{pre}mercado/qr.js?v={VERSAO_JS}" defer></script>
 <script src="{pre}mercado/mercado.js?v={VERSAO_JS}" defer></script>"""
     return pagina("Meus anúncios no Mercado da Elite | Elite Boardgamers", "Acompanhe, mude o preço, marque como vendido ou remova os seus anúncios do Mercado da Elite.",
                   "", OG, pre, corpo, head_extra="\n" + CSS)
@@ -596,20 +665,35 @@ def build_pedido(cfg):
  {trilha(("Início", pre), ("Mercado", "../"), ("Pedido", ""))}
  <section class="mc-pedido bloco" aria-live="polite" aria-busy="true">
   <div class="mc-ped-topo"><span class="mc-ped-foto"></span><div><p class="est"></p><h1 class="mc-tit">Carregando pedido…</h1><p class="mc-ped-sub"></p></div></div>
+  <ol class="mc-etapas" aria-label="Etapas do pedido"></ol>
   <dl class="mc-fatos mc-ped-val"></dl>
   <div class="mc-ped-msg"></div>
+  <div class="mc-rastreio" hidden></div>
   <div class="mc-contato"></div>
+  <div class="mc-ped-acoes"></div>
  </section>
+ <section class="bloco mc-avaliar" hidden><h2>{ic("estrela")} Avalie o vendedor</h2>
+  <form class="mc-aval-f" novalidate><div class="mc-estrelas" role="radiogroup" aria-label="Nota">{"".join(f'<label><input type="radio" name="nota" value="{n}"><span aria-hidden="true">★</span><b class="sr">{n} estrela{"s" if n > 1 else ""}</b></label>' for n in range(5, 0, -1))}</div>
+   <label class="mc-campo"><span>Comentário <small>(opcional, aparece nos anúncios do vendedor)</small></span><textarea name="comentario" maxlength="500" rows="3"></textarea></label>
+   <button type="submit" class="mc-btn pri">Enviar avaliação</button><p class="mc-st" role="status"></p></form></section>
+ <dialog class="mc-dlg mc-prob-dlg" aria-labelledby="h-prob"><form method="dialog" novalidate>
+  <h2 id="h-prob">Tive um problema com o pedido</h2>
+  <p class="mc-aviso" style="color:var(--paper-muted)">A moderação da Elite recebe o seu relato e fala com você e com o vendedor. Se for o caso, o pagamento é devolvido pelo Mercado Pago.</p>
+  <label class="mc-campo">O que aconteceu?<textarea name="motivo" maxlength="1000" rows="4" placeholder="Ex.: o jogo chegou sem as cartas da expansão; o vendedor não respondeu para a retirada."></textarea></label>
+  <p class="mc-st" role="status"></p>
+  <div class="acoes"><button class="mc-btn sec" value="cancelar" formnovalidate>Cancelar</button><button class="mc-btn pri" value="enviar">Enviar para a moderação</button></div>
+ </form></dialog>
  <div class="mc-erro" hidden><b>Pedido não encontrado</b><span>Use o endereço que abriu quando você voltou do Mercado Pago. O comprovante também chega no seu e-mail.</span><a class="mc-btn pri" href="../">Voltar ao Mercado</a></div>
  <section class="bloco"><h2>{ic("escudo")} Depois da compra</h2><ul class="mc-lista">
-  <li>O vendedor recebe o seu WhatsApp e combina o envio ou a retirada com você.</li>
-  <li>No envio, peça o código de rastreio. Na retirada, confira as peças na hora.</li>
-  <li>Algum problema com o pedido? Fale primeiro com o vendedor e, se não resolver, chame a Elite no Instagram com o número do pedido.</li>
+  <li>O vendedor tem 10 dias para postar. Sem postagem no prazo, o pagamento volta para você sozinho.</li>
+  <li>O rastreio aparece aqui assim que o pacote é postado.</li>
+  <li>Confira o jogo e confirme o recebimento. Sem confirmação, o pedido é concluído 7 dias depois da entrega.</li>
+  <li>Algum problema? Use o botão "Tive um problema" antes de confirmar: a moderação da Elite acompanha.</li>
  </ul></section>
 </main>
 {rodape(pre, barra="")}
 <script src="{pre}mercado/mercado.js?v={VERSAO_JS}" defer></script>"""
-    return pagina("Seu pedido no Mercado da Elite | Elite Boardgamers", "Acompanhe o pagamento da sua compra no Mercado da Elite.", "", OG, pre, corpo, head_extra="\n" + CSS)
+    return pagina("Seu pedido no Mercado da Elite | Elite Boardgamers", "Acompanhe as etapas da sua compra no Mercado da Elite: pagamento, envio, entrega e avaliação.", "", OG, pre, corpo, head_extra="\n" + CSS)
 
 
 def build():

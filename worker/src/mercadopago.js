@@ -97,3 +97,10 @@ export function criaPreferencia(token, corpo) {
 export function buscaPagamento(token, id) {
   return chamaMP(`/v1/payments/${encodeURIComponent(id)}`, { token });
 }
+
+// devolve o pagamento inteiro ao comprador (a comissão da Elite volta junto, proporcional, pelo próprio Mercado Pago)
+export function reembolsa(token, id, chave) {
+  return fetch(`${API_MP}/v1/payments/${encodeURIComponent(id)}/refunds`, {
+    method: "POST", headers: { "content-type": "application/json", authorization: `Bearer ${token}`, "x-idempotency-key": chave }, body: "{}",
+  }).then(async r => { const d = await r.json().catch(() => ({})); if (!r.ok) throw Object.assign(new Error(`Mercado Pago ${r.status}: ${d.message || "erro"}`), { status: r.status }); return d; });
+}

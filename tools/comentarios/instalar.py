@@ -8,6 +8,12 @@ Precisa de duas variáveis no ambiente (nunca no código nem no chat):
 Para o pagamento do Mercado da Elite (opcional; sem elas o Mercado funciona, mas o botão Comprar não aparece):
   MP_CLIENT_ID e MP_CLIENT_SECRET   credenciais de produção da aplicação no Mercado Pago Developers, com o fluxo
                                     PKCE ligado e a URL de redirecionamento https://api.eliteboardgamers.com.br/v1/mercado/mp/retorno
+Para o frete e as etiquetas (opcional; sem elas só há retirada em mãos):
+  ME_CLIENT_ID, ME_CLIENT_SECRET    aplicativo da Elite no Melhor Envio (Integrações > Área Dev.), com a URL de
+                                    redirecionamento https://api.eliteboardgamers.com.br/v1/envio/retorno e o webhook
+                                    https://api.eliteboardgamers.com.br/v1/envio/aviso
+  ME_CONTATO                        e-mail técnico que o Melhor Envio exige no User-Agent das chamadas
+  Depois, no painel (aba Vendas), o editor clica em "Conectar Melhor Envio" e autoriza a conta da Elite.
   (a chave que cifra os tokens dos vendedores, MP_CHAVE, é gerada uma vez só e nunca é trocada: trocar desconectaria todos)
 Passos (pode rodar de novo sem estragar nada): banco D1 + tabelas, verificador anti-robô (Turnstile),
 publicação do worker em api.eliteboardgamers.com.br, segredos, conteudo/interacoes.json e um teste no ar.
@@ -90,6 +96,13 @@ def main():
         print("ok pagamento do Mercado (Mercado Pago) ligado")
     else:
         print("⚠️ sem MP_CLIENT_ID/MP_CLIENT_SECRET: o Mercado abre sem o botão Comprar até as credenciais serem gravadas")
+    me = {k: os.environ.get(k) for k in ("ME_CLIENT_ID", "ME_CLIENT_SECRET", "ME_CONTATO")}
+    if all(me.values()):
+        for k, v in me.items():
+            wrangler("secret", "put", k, token=token, entrada=v)
+        print("ok frete e etiquetas (Melhor Envio): conecte a conta da Elite no painel, aba Vendas")
+    else:
+        print("⚠️ sem ME_CLIENT_ID/ME_CLIENT_SECRET/ME_CONTATO: o Mercado vende só com retirada em mãos")
     print("ok worker publicado em", API)
 
     # 4. liga a seção nas páginas
