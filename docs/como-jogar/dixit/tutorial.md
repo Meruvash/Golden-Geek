@@ -12,7 +12,7 @@ A cada turno, um jogador é o **narrador**. Ele olha as cartas da mão, escolhe 
 
 ### Monte a mesa
 
-Para 4 a 8 jogadores. Com 3, veja as Situações especiais (p. 3).
+Na caixa: 1 tabuleiro, 84 cartas Dixit, 8 discos de votação e 8 coelhos de madeira (p. 2). O tabuleiro tem a **trilha de pontuação**, por onde os coelhos andam um espaço por ponto, e 8 **espaços de carta** numerados nas bordas, onde as cartas do turno ficam expostas (p. 2). O **disco de votação** é girado até mostrar o número da carta em que você vota (p. 2). Estas regras valem de 4 a 8 jogadores; com 3, veja as Situações especiais (p. 3).
 
 1. Cada jogador escolhe uma cor e pega o coelho e o disco de votação dessa cor.
 2. Os coelhos vão para o início da trilha de pontuação do tabuleiro.
@@ -24,16 +24,17 @@ Para 4 a 8 jogadores. Com 3, veja as Situações especiais (p. 3).
 O primeiro narrador é quem primeiro pensar numa dica (p. 2). O turno tem quatro momentos (p. 2):
 
 1. **Criar o enigma.** O narrador escolhe uma carta da mão, sem mostrar, e diz a dica. Cada outro jogador escolhe na mão a carta que melhor ilustra a dica e a entrega ao narrador, virada para baixo.
-2. **Expor as cartas.** O narrador embaralha as cartas recebidas com a dele e as põe viradas para cima nos espaços numerados ao redor do tabuleiro.
-3. **Votar.** Cada jogador, menos o narrador, gira o seu disco até o número da carta que acha ser do narrador, sem mostrar. Ninguém vota na própria carta. Todos revelam juntos.
-4. **Pontuar.** O narrador mostra qual era a sua carta e conta os votos que ela recebeu.
+2. **Expor as cartas.** O narrador embaralha as cartas recebidas com a dele e as põe ao acaso, viradas para cima, nos espaços de carta, com os números à vista. Usam-se os espaços de 1 até o número de cartas do turno: com 6 jogadores, de 1 a 6, como no exemplo do manual.
+3. **Votar.** Cada jogador, menos o narrador, gira o seu disco até o número da carta que acha ser do narrador, sem mostrar. Ninguém vota na própria carta. Todos revelam juntos e põem o disco sobre a carta votada.
+4. **Pontuar.** O narrador mostra qual era a sua carta e conta os votos que ela recebeu. Cada um avança o coelho um espaço por ponto.
 
 | Votos na carta do narrador | Narrador | Quem acertou | Quem errou |
 |---|---|---|---|
 | Todos ou nenhum | 0 | 2 | 2 |
 | Alguns, não todos | 3 | 3 | 0 |
+| Bônus, nos dois casos | nenhum | +1 por voto na sua carta | +1 por voto na sua carta |
 
-E, além disso, cada jogador que não é o narrador ganha 1 ponto por voto que **a carta dele** recebeu (p. 2).
+O bônus: além disso, cada jogador que não é o narrador ganha 1 ponto por voto que **a carta dele** recebeu (p. 2).
 
 > [!resolvido] **Exemplo resolvido.** Cinco jogadores. Ana narra e diz "Silêncio". Bruno e Davi votam na carta dela; Carla vota na carta de Davi; Elisa vota na de Carla. Alguns acertaram, não todos: Ana, Bruno e Davi ganham 3. Davi ainda ganha 1 pelo voto de Carla (4 no total); Carla ganha 1 pelo voto de Elisa; Elisa fica com 0 (p. 2).
 
@@ -57,11 +58,11 @@ E, além disso, cada jogador que não é o narrador ganha 1 ponto por voto que *
 
 O que fazer quando a pilha de compra acaba: etapa 3. A partida com 3 jogadores: Situações especiais.
 
-### Como a partida acaba
+### Como a partida acaba: fim do turno e fim da partida
 
-As cartas do turno vão para o descarte, cada um compra até ter 6 de novo e o jogador à esquerda do narrador vira o novo narrador. Se, no fim de um turno, alguém chegou a 30 pontos ou mais, a partida acaba: vence quem tem mais pontos; empate divide a vitória (p. 2).
+As cartas do turno vão para o descarte, cada um compra até ter 6 de novo e o jogador à esquerda do narrador vira o novo narrador (p. 2). Se, no fim de um turno, alguém chegou a 30 pontos ou mais, a partida acaba ali, sem novo turno: vence quem tem mais pontos; empate divide a vitória (p. 2).
 
-**Prefere ver?** O vídeo é da Dixit: Disney Edition, que traz no manual as mesmas regras de turno e de pontuação da caixa básica, para 3 a 6 jogadores. Ele complementa este guia; em caso de diferença, vale o manual.
+**Prefere ver?** O vídeo é da Dixit: Disney Edition, cujo manual traz as mesmas regras de turno e de pontuação da caixa básica; muda o fim: na Disney, vencem todos os que chegaram a 30; na caixa básica, vence quem tem mais pontos. Ele complementa este guia; em caso de diferença, vale o manual.
 
 !video[DIXIT: Disney Edition - Regras + Gameplay comentada!, canal Duque Board Games](https://www.youtube.com/watch?v=zGwfQnQP0J8&t=0s)
 
@@ -69,9 +70,9 @@ As cartas do turno vão para o descarte, cada um compra até ter 6 de novo e o j
 
 ## 0. Antes de tudo: o que é este jogo
 
-Dixit é um jogo de cartas ilustradas, com tabuleiro, para 3 a 8 jogadores (p. 2 e 3). As 84 cartas não têm texto, só imagens; o jogo inteiro gira em torno de dizer algo sobre uma imagem e adivinhar de qual imagem o outro está falando.
+Dixit é um jogo de 84 cartas ilustradas e um tabuleiro, com 8 coelhos e 8 discos de votação, um por jogador, e regras próprias para 3 jogadores (p. 2 e 3). O jogo inteiro gira em torno de dizer algo sobre uma imagem e adivinhar de qual imagem o outro está falando.
 
-Há um único tipo de turno, que se repete com o narrador passando para a esquerda. Ganha pontos o narrador que acha a medida da dica, nem óbvia nem obscura demais; ganham pontos os outros quando acertam a carta do narrador e quando a carta que eles mesmos deram engana alguém (p. 2). A partida termina no fim do turno em que alguém alcança 30 pontos (p. 2).
+Há um único tipo de turno, que se repete com o narrador passando para o jogador à esquerda (p. 2). Ganha pontos o narrador que acha a medida da dica, nem óbvia nem obscura demais; ganham pontos os outros quando acertam a carta do narrador e quando a carta que eles mesmos deram engana alguém (p. 2). A partida termina no fim do turno em que alguém alcança 30 pontos (p. 2).
 
 O que se ensina aqui é pouco em regra e muito em julgamento. A regra cabe numa tabela de duas linhas; o julgamento (que dica dar, que carta entregar) vem com as partidas, e o guia separa os dois: regra no texto corrido, sugestão nos blocos de dica.
 
@@ -81,7 +82,7 @@ São três etapas, na ordem do turno: montar a mesa e criar o enigma; votar e po
 
 ## 2. Etapa 1: montar a mesa e criar o enigma
 
-> [!entender] **Para entender.** A mesa tem pouca coisa. O **tabuleiro** junta três peças num só: a **trilha de pontuação**, por onde andam os coelhos; os **8 espaços de cartas** numerados nas bordas, onde as cartas do turno ficam expostas; e uma **referência para os jogadores**, o lembrete de como pontuar (p. 2). Cada jogador tem um **coelho de madeira**, que marca os pontos dele, e um **disco de votação**, que se gira até mostrar o número de uma carta (p. 2 e 3). Os 8 coelhos e os 8 discos explicam o limite de 8 jogadores.
+> [!entender] **Para entender.** A mesa tem pouca coisa. O **tabuleiro** junta três peças num só: a **trilha de pontuação**, por onde andam os coelhos; os **8 espaços de cartas** numerados nas bordas, onde as cartas do turno ficam expostas; e uma **referência para os jogadores**, o lembrete de como pontuar (p. 2). Cada jogador tem um **coelho de madeira**, que marca os pontos dele, e um **disco de votação**, que se gira até mostrar o número de uma carta (p. 2 e 3).
 
 > [!passos] **Passo a passo: Preparação** (p. 3)
 >
@@ -103,7 +104,7 @@ São três etapas, na ordem do turno: montar a mesa e criar o enigma; votar e po
 > 3. Cada outro jogador escolhe, entre as 6 cartas da própria mão, a que melhor ilustra a dica.
 > 4. Os jogadores entregam essas cartas ao narrador sem mostrá-las; ele as embaralha com a dele.
 
-> [!mais] **O que vale como dica.** Uma palavra ou uma frase com quantas palavras quiser; pode ser inventada ou tirada de obras que já existem (poesia, nome ou trecho de música, filme, provérbio). Também pode ser cantada, uma mímica ou uma onomatopeia (p. 3).
+> [!mais] **O que vale como dica.** Uma palavra ou uma frase com quantas palavras quiser; pode ser um trecho de obras que já existem (poesia, nome ou trecho de música, filme, provérbio). Também pode ser cantada, uma mímica ou uma onomatopeia (p. 3).
 
 > [!mais] **Quem narra primeiro.** Depois da preparação, o primeiro jogador que pensar numa dica é o narrador do primeiro turno (p. 2).
 
@@ -113,11 +114,11 @@ São três etapas, na ordem do turno: montar a mesa e criar o enigma; votar e po
 
 > [!atencao] Quem não é narrador entrega carta mesmo sem nada que combine bem: a regra manda escolher a que **melhor** ilustra a dica entre as 6 da mão, não uma que combine perfeitamente (p. 2).
 
-> [!dica] **Sugestão para o narrador.** O manual diz que a dica muito descritiva ou muito abstrata e pessoal arrisca deixar o narrador sem pontos (p. 3). Um teste rápido antes de falar: a dica serviria só para a sua carta? Então está fácil demais. Ela só faz sentido para você? Então está difícil demais.
+> [!dica] **Sugestão para o narrador.** O manual diz que a dica muito descritiva ou muito abstrata ou pessoal arrisca deixar o narrador sem pontos (p. 3). Um teste rápido antes de falar: a dica serviria só para a sua carta? Então está fácil demais. Ela só faz sentido para você? Então está difícil demais.
 
-> [!resolvido] **Exemplo resolvido.** Quatro jogadores: Ana, Bruno, Carla e Davi. Na preparação, cada um pega coelho e disco da sua cor, os quatro coelhos vão para o início da trilha, e cada um recebe 6 cartas; as 60 que sobram formam a pilha de compra. Bruno é o primeiro a ter uma ideia e anuncia: é o narrador. Ele escolhe uma carta, sem mostrar, e diz "Sozinho no meio da festa". Ana, Carla e Davi escolhem, cada um, uma carta da própria mão e a entregam a Bruno, viradas para baixo. Bruno embaralha as 4 cartas.
+> [!resolvido] **Exemplo resolvido.** Quatro jogadores: Ana, Bruno, Carla e Davi. Na preparação, cada um pega coelho e disco da sua cor, os quatro coelhos vão para o início da trilha, e cada um recebe 6 cartas; as 60 que sobram (só o jogo base) formam a pilha de compra. Bruno é o primeiro a ter uma ideia e anuncia: é o narrador. Ele escolhe uma carta, sem mostrar, e diz "Sozinho no meio da festa". Ana, Carla e Davi escolhem, cada um, uma carta da própria mão e a entregam a Bruno, viradas para baixo. Bruno embaralha as 4 cartas.
 
-> [!complete] **Complete.** Seis jogadores, cada um com 6 cartas na mão.
+> [!complete] **Complete.** Seis jogadores, cada um com 6 cartas na mão (só o jogo base, sem expansões).
 >
 > ?? Quantas cartas sobram na pilha de compra depois da preparação?
 > - ( ) 54
@@ -145,7 +146,7 @@ São três etapas, na ordem do turno: montar a mesa e criar o enigma; votar e po
 
 > [!passos] **Passo a passo: Resolver o enigma** (p. 2)
 >
-> 1. O narrador distribui as cartas ao acaso, viradas para cima, nos espaços de carta do tabuleiro, deixando os números visíveis. Com 6 jogadores, ele usa os espaços de 1 a 6.
+> 1. O narrador distribui as cartas ao acaso, viradas para cima, nos espaços de carta do tabuleiro, deixando os números visíveis. Usam-se os espaços de 1 até o número de cartas do turno: com 6 jogadores, de 1 a 6 (exemplo do manual); com 3 jogadores, 5 cartas, de 1 a 5.
 > 2. Cada jogador, menos o narrador, gira o disco de votação até o número da carta que acredita ser do narrador, sem mostrar. Ninguém vota na própria carta.
 > 3. Quando todos votaram, os discos são revelados ao mesmo tempo e colocados sobre as cartas votadas.
 > 4. O narrador revela qual era a carta dele e conta os votos que ela recebeu.
@@ -165,7 +166,7 @@ São três etapas, na ordem do turno: montar a mesa e criar o enigma; votar e po
 
 > [!atencao] **Errar não zera o bônus.** Quem não acertou a carta do narrador pode pontuar mesmo assim, se a carta que entregou recebeu votos. No exemplo do manual, o Violeta errou e terminou o turno com 1 (p. 3).
 
-> [!mais] **O narrador não ganha bônus.** O bônus é só para quem não é o narrador; os votos na carta do narrador contam para decidir entre "todos ou nenhum" e "alguns", e só (p. 2).
+> [!mais] **O narrador não ganha bônus.** O bônus é só para quem não é o narrador; os votos na carta do narrador decidem entre "todos ou nenhum" e "alguns" e dão 3 a quem votou nela quando só alguns acertam (p. 2).
 
 > [!complete] **Complete.** Seis jogadores, Bruno narra. Ana e Carla votam na carta de Bruno; Davi e Elisa votam na carta de Ana; Fabio vota na de Carla.
 >
@@ -220,7 +221,7 @@ São três etapas, na ordem do turno: montar a mesa e criar o enigma; votar e po
 
 ## 4. Etapa 3: fechar o turno e a partida
 
-> [!entender] **Para entender.** Depois da pontuação, a mesa volta ao começo: cartas usadas saem de jogo, as mãos se completam e a vez de narrar passa para a esquerda. A partida não tem número fixo de turnos; ela acaba quando a pontuação chega a 30, e só no fim do turno, depois que todos marcaram os pontos dele (p. 2).
+> [!entender] **Para entender.** Depois da pontuação, a mesa volta ao começo: cartas usadas vão para o descarte, as mãos se completam e a vez de narrar passa para a esquerda. A partida não tem número fixo de turnos; ela acaba quando a pontuação chega a 30, e só no fim do turno, depois que todos marcaram os pontos dele (p. 2).
 
 > [!passos] **Passo a passo: Fim do turno** (p. 2)
 >
@@ -234,11 +235,11 @@ São três etapas, na ordem do turno: montar a mesa e criar o enigma; votar e po
 > 2. Vence quem tem mais pontos.
 > 3. Empate: os jogadores empatados dividem a vitória.
 
-> [!mais] **A pilha de compra acabou.** Se não houver cartas suficientes na pilha para todos os jogadores, embaralhe o descarte para formar uma nova pilha de compra (p. 2).
+> [!mais] **A pilha de compra acabou.** Se não houver cartas suficientes na pilha de compra para todos os jogadores, as cartas da pilha de descarte são embaralhadas para formar uma nova pilha de compra (p. 2).
 
-> [!edicao] **O que entra no novo embaralhamento.** O manual brasileiro do DIX601 manda embaralhar "as cartas na pilha de descarte" (p. 2). O manual em inglês da mesma edição, publicado pela Libellud, e o manual brasileiro da Dixit: Disney Edition dizem que se embaralham as cartas que restaram na pilha **e** o descarte. O guia segue essa leitura: junte o que sobrou da pilha ao descarte e embaralhe tudo.
+> [!edicao] **Outra redação em outras edições.** O manual em inglês da Libellud e o manual brasileiro da Dixit: Disney Edition dizem que se embaralham as cartas que restaram na pilha **e** o descarte. O manual brasileiro DIX601 fala só do descarte (p. 2).
 
-> [!resolvido] **Exemplo resolvido.** Quatro jogadores. Antes do turno, Bruno tem 28 pontos e Carla, 29. Ana narra; Bruno acerta a carta dela, Carla e Davi erram, e cada um deles recebe 1 voto de bônus. Bruno faz 3 e vai a 31; Carla faz 1 e vai a 30. Os dois passaram de 30 no fim do turno: a partida acaba, e Bruno vence com 31.
+> [!resolvido] **Exemplo resolvido.** Quatro jogadores. Antes do turno, Bruno tem 28 pontos e Carla, 29. Ana narra; Bruno acerta a carta dela, Carla e Davi erram, e Carla e Davi recebem, cada um, 1 voto na própria carta. Bruno faz 3 e vai a 31; Carla faz 1 e vai a 30. Os dois alcançaram ou passaram 30 no fim do turno: a partida acaba, e Bruno vence com 31.
 
 > [!complete] **Complete.** Cinco jogadores. O turno acabou, e você entregou 1 carta para a votação.
 >
@@ -275,13 +276,13 @@ São três etapas, na ordem do turno: montar a mesa e criar o enigma; votar e po
 
 > [!edicao] **A compra do narrador com 3 jogadores.** O manual diz que todos completam a mão com 7 e que os não narradores compram 2. Ele não diz quanto o narrador compra; como ele entregou 1 carta, o guia lê que compra 1, para voltar a 7 (p. 2 e 3).
 
-> [!mais] **Ninguém pode votar em carta sua, nem nas duas.** Com 3 jogadores, você tem 2 cartas no tabuleiro, e as duas são "sua própria carta" para a regra do voto (p. 2 e 3).
+> [!mais] **Você não pode votar em nenhuma das suas duas cartas.** Com 3 jogadores, você tem 2 cartas no tabuleiro, e as duas são "sua própria carta" para a regra do voto (p. 2 e 3).
 
 > [!edicao] **Edições antigas.** O manual brasileiro antigo de Dixit (Galápagos, 2015) tinha outras regras: fichas de votação numeradas em vez de discos, fim da partida quando se compra a última carta e uma variante de 3 jogadores em que, se só um acertar, ele e o narrador marcam 4. A edição de 2021 (DIX301) e a atual (DIX601) usam os discos, o fim em 30 pontos e as regras deste guia. Se a sua caixa tem fichas de votação, confira o manual dela.
 
-> [!edicao] **Dois jogadores.** O manual da caixa básica é para 3 a 8 jogadores e não traz regra para 2 (p. 2 e 3; a Libellud indica 3 a 8 na página do jogo). O guia não ensina variante para 2, porque nenhuma está no manual.
+> [!edicao] **Dois jogadores.** O manual não traz regra para 2 jogadores; a menor partida com regra própria é a de 3 (p. 3). O guia não ensina variante para 2, porque nenhuma está no manual.
 
-> [!mais] **Expansões.** Cada expansão traz 84 cartas novas para misturar às do jogo base; a última página do manual lista Quest, Journey, Origins, Daydreams, Memories, Revelations, Harmonies, Anniversary e Mirrors (p. 4). As regras não mudam.
+> [!mais] **Expansões.** A última página do manual lista Quest, Journey, Origins, Daydreams, Memories, Revelations, Harmonies, Anniversary e Mirrors e diz que cada expansão contém um universo original em 84 cartas (p. 4).
 
 ## 6. Avaliação final
 
@@ -349,7 +350,7 @@ Responda sem consultar. Cada resposta diz o que reler.
 | Alguns, não todos | 3 | 3 | 0 |
 | Bônus | nenhum | +1 por voto na sua carta | +1 por voto na sua carta |
 
-**Pilha acabou:** junte o que sobrou ao descarte e embaralhe.
+**Pilha acabou:** embaralhe o descarte para formar a nova pilha de compra.
 
 **Fim:** no fim do turno em que alguém tem 30 ou mais. Vence quem tem mais; empate divide a vitória.
 
