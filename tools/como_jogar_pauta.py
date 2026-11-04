@@ -6,7 +6,8 @@ Duas fontes do Google, ambas por acesso normal (sem contornar limite):
      com a coluna "subindo". O Trends limita acessos seguidos (erro 429): nesse caso o script segue só com a fonte 2.
   2. Autocompletar do Google e do YouTube para "como jogar <jogo>": quantas variações aparecem (mais variações = mais procura).
 Os candidatos são jogos de tabuleiro modernos (lista abaixo, mais os que o Trends trouxer); ficam de fora os que já
-têm tutorial em conteudo/como-jogar/ e os clássicos de domínio público (xadrez, dama, dominó, truco, baralho).
+têm tutorial em conteudo/como-jogar/, os clássicos de domínio público (xadrez, dama, dominó, truco, baralho) e os
+jogos de massa de loja de brinquedo (War, Perfil, Detetive, UNO, Banco Imobiliário...), que não são boardgames.
 Grava conteudo/como_jogar_pauta.json com o ranking e a data, e imprime o resultado.
 """
 import http.cookiejar
@@ -22,11 +23,15 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 CANDIDATOS = ["catan", "azul", "ticket to ride", "dixit", "codenames", "carcassonne", "splendor", "7 wonders", "7 wonders duel",
               "king of tokyo", "pandemic", "wingspan", "cascadia", "root", "terraforming mars", "dune imperium", "patchwork",
-              "sushi go", "love letter", "the mind", "the crew", "coup", "exploding kittens", "detetive", "war", "perfil",
-              "ark nova", "everdell", "harmonies", "heat", "sky team", "flip 7", "bang", "uno flip", "takenoko", "kingdomino"]
+              "sushi go", "love letter", "the mind", "the crew", "coup", "exploding kittens",
+              "ark nova", "everdell", "harmonies", "heat", "sky team", "flip 7", "bang", "takenoko", "kingdomino"]
 # buscas que falam de videogame, não do jogo de mesa ("como jogar the crew" é quase tudo sobre o jogo de corrida)
 VIDEOGAME = re.compile(r"\b(pc|ps[2-5]|playstation|xbox|switch|steam|motorfest|motorsport|celular|roblox|minecraft|free fire|online|mobile|android|iphone|ps plus)\b", re.I)
 FORA = {"xadrez", "dama", "dominó", "domino", "truco", "baralho", "uno", "sudoku", "ludo", "trilha", "jogo da velha", "resta um"}
+# jogos de massa de loja de brinquedo não são boardgames modernos e não entram no site (pedido do editor em 04/11/2026)
+FORA |= {"war", "perfil", "detetive", "uno flip", "banco imobiliário", "banco imobiliario", "jogo da vida", "imagem e ação",
+         "imagem e acao", "cara a cara", "combate", "scotland yard", "monopoly", "lince", "pula macaco", "cilada", "tapa certo",
+         "batalha naval", "twister", "jenga", "pictionary", "mastermind", "senha", "stop", "academia", "master", "quem sou eu"}
 
 
 def sugestoes(q, yt=False):
