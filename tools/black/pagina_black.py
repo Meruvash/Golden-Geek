@@ -97,7 +97,7 @@ CSS = """<style>
 .dest .of-c{padding:0 14px 14px}
 .dest .of-n{font-size:1.15rem}
 .dest .of-por{font-size:1.9rem}
-.of-novo{position:absolute;left:10px;bottom:10px;padding:4px 9px;border-radius:999px;background:#111;color:#5fd38d;font-weight:800;font-size:.78rem;border:1px solid #2f6e4a}.dest .pos{position:absolute;right:10px;top:10px;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:#111;color:var(--gold);font-weight:900;font-size:.9rem;border:1px solid #4a3f1c}
+.of-fogo{color:#ffb347!important;border-color:#7a4a12!important}.of-novo{position:absolute;left:10px;bottom:10px;padding:4px 9px;border-radius:999px;background:#111;color:#5fd38d;font-weight:800;font-size:.78rem;border:1px solid #2f6e4a}.dest .pos{position:absolute;right:10px;top:10px;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:#111;color:var(--gold);font-weight:900;font-size:.9rem;border:1px solid #4a3f1c}
 @media (max-width:759px){.dest{grid-auto-flow:column;grid-auto-columns:84%;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:6px;margin:0 -16px;padding-left:16px;padding-right:16px;scrollbar-width:none}
  .dest>li{scroll-snap-align:start}}
 @media (min-width:760px){.dest{grid-template-columns:repeat(2,minmax(0,1fr))}}
@@ -301,7 +301,7 @@ def nota_txt(x):
     return f'<span class="of-nota">★ {x["bgg"]:.1f}</span> no BGG'.replace(".", ",", 1) if x["bgg"] else "sem nota no BGG"
 
 
-def cartao(grupo, pre, cps, agora_, destaque=False, pos=None, novo=None):
+def cartao(grupo, pre, cps, agora_, destaque=False, pos=None, novo=None, selo=None):
     """Um jogo: a melhor oferta em destaque e, se houver, as outras lojas que também passaram no corte."""
     x = grupo[0]
     img = capa(x, pre, 640 if destaque else 240)
@@ -318,7 +318,7 @@ def cartao(grupo, pre, cps, agora_, destaque=False, pos=None, novo=None):
     dados = (f'data-tipo="{e(x["tipo"])}" data-desc="{x["desc"]:.4f}" data-eco="{eco:.2f}" data-bgg="{x["bgg"] or 0:.2f}" '
              f'data-por="{x["por"]:.2f}" data-rec="{1 if x["recorde"] else 0}" data-busca="{e((nome(x) + " " + " ".join(o["loja"] for o in grupo) + " " + (x["editora"] or "")).lower())}"')
     return f"""<li class="of" {dados}>
- <a class="of-img" href="{e(x["url"])}" {rel} tabindex="-1" aria-hidden="true">{f'<img src="{img}" alt="" loading="lazy" decoding="async" width="{640 if destaque else 240}" height="{640 if destaque else 240}">' if img else ilustra(nome(x), x["loja"])}<span class="of-pct">−{pct(x["desc"])}</span>{f'<span class="pos">{pos}</span>' if pos else ""}{f'<span class="of-novo">🆕 entrou {e(novo)}</span>' if novo else ""}</a>
+ <a class="of-img" href="{e(x["url"])}" {rel} tabindex="-1" aria-hidden="true">{f'<img src="{img}" alt="" loading="lazy" decoding="async" width="{640 if destaque else 240}" height="{640 if destaque else 240}">' if img else ilustra(nome(x), x["loja"])}<span class="of-pct">−{pct(x["desc"])}</span>{f'<span class="pos">{pos}</span>' if pos else ""}{f'<span class="of-novo">🆕 entrou {e(novo)}</span>' if novo else ""}{f'<span class="of-novo of-fogo">{e(selo)}</span>' if selo else ""}</a>
  <div class="of-c">
   {'<span class="of-rec">Menor preço do período</span>' if x["recorde"] else ""}{f'<span class="of-com">Achado da comunidade · vendedor não conferido</span>' if x.get("comunidade") else ""}
   <h3 class="of-n">{e(nome(x))}</h3>
@@ -340,9 +340,9 @@ def cartao(grupo, pre, cps, agora_, destaque=False, pos=None, novo=None):
 JS = """<script>
 (()=>{const f=document.querySelector('.bk-filtros');if(!f)return;f.hidden=false;
 const ul=document.querySelector('.ofertas'),itens=[...ul.children],cont=f.querySelector('.bk-cont'),vazio=document.querySelector('.ofertas-vazio');
-let tipo='',ord='desc';
+let tipo='',ord='novo';
 const aplica=()=>{const q=f.querySelector('input[type=search]').value.trim().toLowerCase(),rec=f.querySelector('.bk-chk input').checked;
- const chave={desc:x=>-x.dataset.desc,eco:x=>-x.dataset.eco,bgg:x=>-x.dataset.bgg,por:x=>+x.dataset.por}[ord];
+ const chave={novo:x=>+x.dataset.i,desc:x=>-x.dataset.desc,eco:x=>-x.dataset.eco,bgg:x=>-x.dataset.bgg,por:x=>+x.dataset.por}[ord];
  itens.sort((a,b)=>chave(a)-chave(b)).forEach(x=>ul.append(x));let n=0;
  itens.forEach(x=>{const ok=(!tipo||x.dataset.tipo===tipo)&&(!rec||x.dataset.rec==='1')&&(!q||x.dataset.busca.includes(q));x.hidden=!ok;n+=ok});
  cont.textContent=n+(n===1?' jogo':' jogos');vazio.hidden=n>0};
@@ -354,6 +354,7 @@ document.addEventListener('click',async e=>{const b=e.target.closest('.cup-cod')
 </script>"""
 
 
+DESTAQUE_CADA = 6  # um destaque de maior desconto a cada 6 cartões nas listas (pedido do usuário em 04/11/2026)
 N_NOVIDADES = 8  # cartões em "Últimas novidades" (pedido do usuário em 04/11/2026)
 NOVIDADES = Path(__file__).resolve().parents[2] / "conteudo" / "black" / "novidades.json"
 
@@ -452,14 +453,12 @@ def build(radar_itens, armadilhas, quase=(), outras=()):
     recordes = sum(1 for x in melhor.values() if x["recorde"])
     n_cupons = sum(len(r["cupons"]) for r in cps.values())
     curta = min((x["dias"] for x in radar_itens), default=None)
-    lista_html = "".join(cartao(g, pre, cps, agora_) for g in grupos.values())
     quase_html = "".join(cartao([x], pre, cps, agora_) for x in quase)
     # Outras promoções: jogos sem nota 7 no BGG nem prêmio, com o mesmo corte de 20% (pedido do usuário em 04/11/2026);
     # contam no total do topo
     g_outras = {}
     for x in outras:
         g_outras.setdefault(x["slug"], []).append(x)
-    outras_html = "".join(cartao(g, pre, cps, agora_) for g in g_outras.values())
     # Últimas novidades (pedido do usuário em 04/11/2026, no lugar do Top 5 parado): as ofertas que entraram por
     # último no radar (bem avaliados e outras promoções), a mais nova primeiro. A hora de entrada de cada jogo fica em
     # conteudo/black/novidades.json; jogo que sai do radar e volta conta como novidade de novo.
@@ -489,6 +488,30 @@ def build(radar_itens, armadilhas, quase=(), outras=()):
     exata = lambda v: v if v and len(v) > 10 else ""
     ordem = sorted(todos_g, key=lambda sl: (exata(entrou[sl]), str(todos_g[sl][0].get("verificado") or "")), reverse=True)
     top = [todos_g[sl][0] for sl in ordem[:N_NOVIDADES]]
+
+    # Listas na ordem do usuário (04/11/2026): os mais recentes em cima, os mais antigos embaixo e, a cada
+    # DESTAQUE_CADA cartões, um destaque com o maior desconto que ainda não apareceu (sem repetir cartão)
+    def em_ordem(gs):
+        cron = sorted(gs, key=lambda sl: (exata(entrou.get(sl, "")), str(gs[sl][0].get("verificado") or "")), reverse=True)
+        por_desc = sorted(gs, key=lambda sl: -gs[sl][0]["desc"])[:max(1, len(gs) // DESTAQUE_CADA)]
+        dest = [sl for sl in por_desc]
+        fila = [sl for sl in cron if sl not in dest]
+        saida, i = [], 0
+        while fila or dest:
+            if dest and (i + 1) % (DESTAQUE_CADA + 1) == 0:
+                saida.append((dest.pop(0), True))
+            elif fila:
+                saida.append((fila.pop(0), False))
+            else:
+                saida.append((dest.pop(0), True))
+            i += 1
+        html_ = ""
+        for n, (sl, d) in enumerate(saida):
+            c = cartao(gs[sl], pre, cps, agora_, selo=f"🔥 Destaque: −{pct(gs[sl][0]['desc'])}" if d else None)
+            html_ += c.replace('<li class="of" ', f'<li class="of{" of-dest" if d else ""}" data-i="{n}" ', 1)
+        return html_
+    lista_html = em_ordem({x["slug"]: grupos[x["slug"]] for x in melhor.values()})
+    outras_html = em_ordem(g_outras)
     dest_html = "".join(cartao(todos_g[sl], pre, cps, agora_, destaque=True, novo=quando(entrou[sl])) for sl in ordem[:N_NOVIDADES])
     n_outras = len(g_outras)
     total = len(melhor) + n_outras
@@ -643,12 +666,12 @@ def build(radar_itens, armadilhas, quase=(), outras=()):
  </section>
  <section id="todas" aria-labelledby="h-todas">
   <h2 id="h-todas">Todas as ofertas com desconto real</h2>
-  <p class="sub">Um cartão por jogo, com a loja mais barata. Quando outra loja também passou no corte, ela aparece em "Mais lojas".</p>
+  <p class="sub">Os mais recentes em cima, com destaques de maior desconto no meio. Um cartão por jogo, com a loja mais barata. Quando outra loja também passou no corte, ela aparece em "Mais lojas".</p>
   <div class="bk-filtros" role="group" aria-label="Filtrar e ordenar ofertas" hidden>
    <div class="seg"><button type="button" data-tipo="" aria-pressed="true">Tudo ({len(melhor)})</button><button type="button" data-tipo="game" aria-pressed="false">Jogos base ({n_jogos})</button><button type="button" data-tipo="expansion" aria-pressed="false">Expansões ({n_exps})</button>
     <label class="bk-chk"><input type="checkbox"> Menor preço do período</label></div>
    <div class="bk-linha2"><input type="search" placeholder="Buscar jogo, loja ou editora" aria-label="Buscar jogo, loja ou editora">
-    <select aria-label="Ordenar"><option value="desc">Maior desconto</option><option value="eco">Maior economia em R$</option><option value="bgg">Melhor nota BGG</option><option value="por">Menor preço</option></select></div>
+    <select aria-label="Ordenar"><option value="novo">Mais recentes (com destaques)</option><option value="desc">Maior desconto</option><option value="eco">Maior economia em R$</option><option value="bgg">Melhor nota BGG</option><option value="por">Menor preço</option></select></div>
    <p class="bk-cont" aria-live="polite"></p>
   </div>
   {f'<ul class="ofertas">{lista_html}</ul>' if lista_html else ""}
