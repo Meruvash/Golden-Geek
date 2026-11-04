@@ -2137,5 +2137,47 @@
    ],
    "verificado_em": "2026-11-04"
   }
+ },
+ "estrela.com.br": {
+  "nome": "Estrela",
+  "apelidos": [
+   "Estrela"
+  ],
+  "site": "https://www.estrela.com.br",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.estrela.com.br/sitemap/deco.xml"
+   ],
+   "verificado_em": "2026-11-04"
+  }
+ },
+ "explodingkittens.com": {
+  "nome": "Exploding Kittens",
+  "apelidos": [
+   "Exploding Kittens"
+  ],
+  "site": "https://www.explodingkittens.com",
+  "plataforma": "shopify",
+  "estrategia": "sitemap+shopify_json",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.explodingkittens.com/sitemap.xml"
+   ],
+   "verificado_em": "2026-11-04"
+  }
  }
 }
