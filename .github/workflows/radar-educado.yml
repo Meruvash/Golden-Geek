@@ -38,4 +38,4 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CANAL: ${{ secrets.TELEGRAM_CANAL }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: bash tools/black/ciclo.sh educado 10800 7200 radar-educado.yml
+        run: bash tools/black/ciclo.sh educado 10800 14400 radar-educado.yml   # ciclo de até 4 h: a lista passa de 3.600 para cerca de 6.900 jogos

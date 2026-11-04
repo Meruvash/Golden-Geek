@@ -233,6 +233,18 @@ def slugs_sitemap():
     return list(dict.fromkeys(re.findall(r"/item/([a-z0-9-]+)</loc>", xml)))
 
 
+DESCOBERTA = DADOS / "descoberta.json"
+
+
+def slugs_novos(maximo=250):
+    """Jogos com preço no Compara Jogos que o robô ainda não acompanha (até `maximo` por leitura): é assim que os
+    ~3 mil jogos sem nota 7 entram aos poucos, sem pesar no site (pedido do usuário em 04/11/2026)."""
+    vistos = set(ler(LISTA, [])) | set(ler(HIST, {})) | set(ler(DESCOBERTA, []))
+    novos = [s for s in slugs_sitemap() if s not in vistos][:maximo]
+    gravar(DESCOBERTA, sorted(set(ler(DESCOBERTA, [])) | set(novos)))  # tentado uma vez; quem tem preço entra na lista
+    return novos
+
+
 def slugs_quedas():
     return list(dict.fromkeys(re.findall(r'href="/item/([a-z0-9-]+)"', baixar(f"{BASE}/price-drops"))))
 
@@ -266,14 +278,13 @@ def coletar(slugs, registrar_lista=False, limite=None):
         if not it:
             continue
         vistos += 1
+        # todos os jogos entram (pedido do usuário em 04/11/2026); os sem nota 7 nem prêmio vão para "Outras promoções"
         ok = qualifica(it, prem)
         if registrar_lista:
-            (entra_l if ok else sai_l).add(s)
-        if not ok:
-            sai_o.add(s)
-            continue
+            entra_l.add(s)
         h = hist.setdefault(s, {"pontos": {}})
         h.update({k: it[k] for k in ("nome", "tipo", "ano", "bgg", "bgg_id", "editora", "editora_br", "imagem")})
+        h["principal"] = ok
         h["pontos"].update({d: p for d, p in it["hist30"].items()})
         # ponto de hoje: menor preço de jogo novo entre as lojas, como o histórico do próprio Compara Jogos
         lojas = [o["por"] for o in it["ofertas"] if o["por"] and o["tipo"] == "LINK" and not FORA.search(o["loja"] + o["loja_id"])]
@@ -381,8 +392,9 @@ def achados_comunidade(hist, hoje):
             ref, menor, dias = v["ref"], v.get("menor") or v["ref"], v["ref_dias"]
         else:
             continue
-        if not slug or not ((bgg or 0) >= NOTA_MIN or chave(nome) in prem):
+        if not slug:
             continue
+        bom = (bgg or 0) >= NOTA_MIN or chave(nome) in prem
         por = v["preco"]
         if por < ref * SUSPEITO:
             continue
@@ -392,7 +404,7 @@ def achados_comunidade(hist, hoje):
                       "ref": ref, "desc": (ref - por) / ref, "menor": menor, "recorde": por <= menor, "dias": dias,
                       "fonte_preco": f'achado da comunidade ({(v.get("fonte") or "Promobit").removeprefix("Telegram: ")})',
                       "vendedor": None, "verificado": quando_br, "editora_br": None, "comunidade": True,
-                      "post": v.get("link")})
+                      "post": v.get("link"), "principal": bom})
     return saida
 
 
@@ -400,7 +412,7 @@ def calcular():
     """Itens do radar, armadilhas e itens no menor preço, a partir do histórico e das ofertas de hoje."""
     hist, hoje_d = ler(HIST, {}), ler(HOJE, {})
     hoje = agora().date()
-    radar, armadilhas, quase = [], [], []
+    radar, armadilhas, quase, outras = [], [], [], []
     for s, h in hist.items():
         of = hoje_d.get(s)
         if not of:
@@ -436,6 +448,10 @@ def calcular():
                     "fonte_preco": api["fonte"] if api else ("página da loja" if la else ("feed da loja" if o.get("fonte") == "feed da loja" else "Compara Jogos")),
                     "vendedor": api.get("vendedor") if api else None,
                     "verificado": (api or la or {}).get("hora") or o.get("atualizado") or of["verificado"], "editora_br": h.get("editora_br")}
+            if h.get("principal") is False:  # jogo sem nota 7 nem prêmio: só entra em "Outras promoções", com 20% ou mais
+                if desc >= CORTE:
+                    outras.append({**base, "principal": False})
+                continue
             if desc >= CORTE:
                 radar.append(base)
             elif desc >= QUASE:
@@ -444,6 +460,10 @@ def calcular():
                 armadilhas.append(base)
     # achados da comunidade (Telegram e Promobit) entram na conta geral com a mesma régua (pedido do usuário em 03/11/2026)
     for base in achados_comunidade(hist, hoje):
+        if base.get("principal") is False:
+            if base["desc"] >= CORTE:
+                outras.append(base)
+            continue
         if base["desc"] >= CORTE:
             radar.append(base)
         elif base["desc"] >= QUASE:
@@ -464,7 +484,13 @@ def calcular():
         if x["slug"] not in no_radar and (x["slug"], x["loja"]) not in vq:
             vq.add((x["slug"], x["loja"]))
             quase_u.append(x)
-    return unicos, armadilhas[:30], quase_u
+    outras.sort(key=lambda x: -x["desc"])
+    vo, outras_u = set(), []
+    for x in outras:
+        if x["slug"] not in no_radar and (x["slug"], x["loja"]) not in vo:
+            vo.add((x["slug"], x["loja"]))
+            outras_u.append(x)
+    return unicos, armadilhas[:30], quase_u, outras_u
 
 
 def perto_do_corte(maximo=350):
@@ -523,6 +549,14 @@ def main(robo=None, acao=None):
         coletar(alvo, registrar_lista=True, limite=a.limite)
     elif a.acao == "rapida":
         coletar(list(dict.fromkeys(slugs_quedas() + perto_do_corte())), limite=a.limite)
+        try:
+            novos = slugs_novos()
+        except Exception as ex:  # sitemap fora do ar: a descoberta fica para a próxima leitura
+            novos = []
+            print("aviso: descoberta de jogos novos pulada:", ex)
+        if novos:
+            print(f"-- descoberta: {len(novos)} jogos ainda não acompanhados")
+            coletar(novos, registrar_lista=True)
     if a.acao != "pagina":
         if robo == "educado":
             import apis
@@ -551,7 +585,7 @@ def main(robo=None, acao=None):
     if a.acao != "pagina":
         import alertas  # alerta no celular de quem assinou o canal, para cada jogo que entrou no radar
         with _TravaDados():
-            alertas.avisar(r[0])
+            alertas.avisar(r[0] + r[3])
 
 
 if __name__ == "__main__":

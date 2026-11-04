@@ -421,7 +421,7 @@ JS_ALERTA = """ <script>
 """
 
 
-def build(radar_itens, armadilhas, quase=()):
+def build(radar_itens, armadilhas, quase=(), outras=()):
     pre = "../"
     url = f"{SITE}/black/"
     agora_ = radar.agora()
@@ -452,6 +452,15 @@ def build(radar_itens, armadilhas, quase=()):
     dest_html = "".join(cartao(grupos[x["slug"]], pre, cps, agora_, destaque=True, pos=i) for i, x in enumerate(top, 1))
     lista_html = "".join(cartao(g, pre, cps, agora_) for g in grupos.values())
     quase_html = "".join(cartao([x], pre, cps, agora_) for x in quase)
+    # Outras promoções: jogos sem nota 7 no BGG nem prêmio, com o mesmo corte de 20% (pedido do usuário em 04/11/2026);
+    # contam no total do topo
+    g_outras = {}
+    for x in outras:
+        g_outras.setdefault(x["slug"], []).append(x)
+    outras_html = "".join(cartao(g, pre, cps, agora_) for g in g_outras.values())
+    n_outras = len(g_outras)
+    total = len(melhor) + n_outras
+    maior = max([maior, *(x["desc"] for x in outras)], default=maior)
     cps_html = ""
     for dom, reg in sorted(cps.items(), key=lambda kv: kv[1]["loja"].lower()):
         for c in reg["cupons"].values():
@@ -543,18 +552,18 @@ def build(radar_itens, armadilhas, quase=()):
   <h1>Black de <span>Verdade</span></h1>
   <p class="lide">Só entra aqui jogo de tabuleiro que está <b>pelo menos 20% abaixo do preço médio real</b> dos últimos meses. Nada de comparar com um preço "de" inventado na véspera.</p>
   <ul class="bk-stats">
-   <li class="ouro"><b>{len(melhor)}</b><span>jogos com desconto real ({n_jogos} jogos base, {n_exps} expansões)</span></li>
+   <li class="ouro"><b>{total}</b><span>jogos com desconto real ({len(melhor)} bem avaliados e {n_outras} em outras promoções)</span></li>
    <li class="ouro"><b>até {pct(maior)}</b><span>abaixo da média</span></li>
    <li><b>{recordes}</b><span>no menor preço do período</span></li>
    <li><b>{n_cupons}</b><span>cupom{"s" if n_cupons != 1 else ""} anunciado{"s" if n_cupons != 1 else ""} pelas lojas</span></li>
   </ul>
   <p class="bk-atual">Atualizado em {agora_.strftime("%d/%m/%Y às %Hh%M")} (horário de Brasília). O radar lê os preços de novo a cada 30 minutos.</p>
-  <nav class="bk-pulo" aria-label="Atalhos"><a class="pri" href="#melhores">Ver as melhores ofertas</a><a class="sec" href="#alertas">🔔 Alertas no celular</a><button type="button" class="inst" hidden>📲 Tela de Início</button><a class="sec" href="#todas">Todas as {len(melhor)}</a>{f'<a class="sec" href="#quase">Quase Black ({len(quase)})</a>' if quase else ""}{'<a class="sec" href="#cupons">Cupons</a>' if cps_html else ""}{'<a class="sec" href="#comunidade">Achados da comunidade</a>' if pb_html else ""}{'<a class="sec" href="#sem-foto">Achados sem foto</a>' if sem_foto_html else ""}</nav>
+  <nav class="bk-pulo" aria-label="Atalhos"><a class="pri" href="#melhores">Ver as melhores ofertas</a><a class="sec" href="#alertas">🔔 Alertas no celular</a><button type="button" class="inst" hidden>📲 Tela de Início</button><a class="sec" href="#todas">Bem avaliados ({len(melhor)})</a>{f'<a class="sec" href="#outras">Outras promoções ({n_outras})</a>' if n_outras else ""}{f'<a class="sec" href="#quase">Quase Black ({len(quase)})</a>' if quase else ""}{'<a class="sec" href="#cupons">Cupons</a>' if cps_html else ""}{'<a class="sec" href="#comunidade">Achados da comunidade</a>' if pb_html else ""}{'<a class="sec" href="#sem-foto">Achados sem foto</a>' if sem_foto_html else ""}</nav>
  </header>
  <ul class="bk-conf">
   <li>Desconto calculado sobre a média aparada do histórico de preços, não sobre o preço "de" da loja.</li>
   <li>Preço conferido na página da própria loja, com o horário da leitura em cada oferta. Promoções postadas pela comunidade (Telegram e Promobit) também entram na conta, com o selo "achado da comunidade" e link para o post.</li>
-  <li>Só jogo bem avaliado: nota 7 ou mais no BGG, ou premiado. Links sem comissão.</li>
+  <li>Na lista principal, só jogo bem avaliado: nota 7 ou mais no BGG, ou premiado. Os outros jogos com o mesmo desconto real ficam em "Outras promoções". Links sem comissão.</li>
  </ul>
  <section id="alertas" aria-labelledby="h-alertas" class="bk-alerta">
   <h2 id="h-alertas">🔔 Receba as promoções no celular</h2>
@@ -614,6 +623,11 @@ def build(radar_itens, armadilhas, quase=()):
   <p class="vazio ofertas-vazio" hidden>Nenhuma oferta com esses filtros.</p>
   <p class="credito">Preços, histórico, nota BGG e imagens das caixas: Compara Jogos (comparajogos.com.br). Links levam à loja; não ganhamos comissão.</p>
  </section>
+ <section id="outras" aria-labelledby="h-outras">
+  <h2 id="h-outras">Outras promoções: 20% ou mais abaixo da média ({n_outras})</h2>
+  <p class="sub">Jogos com o mesmo desconto real da lista principal, com a mesma conferência na loja, mas sem nota 7 no BGG nem prêmio (ou ainda sem nota). Vale olhar a avaliação antes de comprar.</p>
+  {f'<ul class="ofertas outras">{outras_html}</ul>' if outras_html else '<p class="vazio">Nenhum jogo nessa faixa nesta leitura.</p>'}
+ </section>
  <section id="quase" aria-labelledby="h-quase">
   <h2 id="h-quase">Quase Black: de 15% a 19% abaixo da média</h2>
   <p class="sub">Jogos que ainda não chegaram aos 20% do Black de Verdade, mas já estão abaixo da média real do período. Mesmo cálculo e mesma conferência na loja. Se o preço cair mais, o jogo sobe para a lista principal.</p>
@@ -671,7 +685,7 @@ def build(radar_itens, armadilhas, quase=()):
     ld = seo.script({"@type": "CollectionPage", "@id": url, "url": url, "name": titulo, "inLanguage": "pt-BR",
                      "dateModified": agora_.isoformat(timespec="minutes")},
                     seo.trilha(("Início", f"{SITE}/"), ("Black de Verdade", url)))
-    descr_curta = (f"{len(melhor)} jogos de tabuleiro até {pct(maior)} abaixo do preço médio real. Desconto calculado sobre o histórico, "
+    descr_curta = (f"{total} jogos de tabuleiro até {pct(maior)} abaixo do preço médio real. Desconto calculado sobre o histórico, "
                    "não sobre o preço \"de\" da loja. Atualizado a cada 30 minutos.") if melhor else None
     descr = descr_curta or ("Radar de ofertas de jogos de tabuleiro com desconto real de 20% ou mais sobre a média aparada do histórico "
              "de preços, com nota BGG, loja, link e horário da verificação.")
@@ -681,14 +695,14 @@ def build(radar_itens, armadilhas, quase=()):
     try:
         import hashlib
         import cartao_black
-        arq = cartao_black.gerar(top, len(melhor), maior, agora_.strftime("%d/%m"))
+        arq = cartao_black.gerar(top, total, maior, agora_.strftime("%d/%m"))
         og_img = f"{SITE}/img/black/{arq.name}?v={hashlib.md5(arq.read_bytes()).hexdigest()[:8]}"
     except Exception as ex:  # sem o cartão, a página segue com a imagem antiga
         print("aviso: cartão da Black não gerado:", ex)
     (ROOT / "black").mkdir(exist_ok=True)
     (ROOT / "black" / "index.html").write_text(pagina(titulo, descr, url, og_img, pre, corpo,
                                                       head_extra="\n" + CSS, jsonld=ld), encoding="utf-8")
-    print(f"ok black/index.html: {len(melhor)} jogos no radar, {len(armadilhas)} armadilhas")
+    print(f"ok black/index.html: {total} jogos com desconto real ({len(melhor)} bem avaliados, {n_outras} em outras promoções), {len(armadilhas)} armadilhas")
 
 
 

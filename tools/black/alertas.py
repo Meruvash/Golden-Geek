@@ -37,7 +37,7 @@ TOPICO = "eliteboardgamers-black"
 TOPICO_TESTE = "eliteboardgamers-black-teste"
 PAGINA = "https://eliteboardgamers.com.br/black/"
 ICONE = "https://eliteboardgamers.com.br/apple-touch-icon.png"
-MAX_POR_LEITURA = 5
+MAX_POR_LEITURA = 10  # alertas individuais por leitura; os outros jogos novos vão todos, pelo nome, num alerta-resumo
 UA = {"User-Agent": "EliteBoardgamers/1.0 (+https://eliteboardgamers.com.br/black/robo/)"}
 
 
@@ -170,7 +170,8 @@ def avisar(radar_itens):
         nome = x["nome"].replace("–", "-").replace("—", "-")
         texto = (f"{brl(x['por'])} na {x['loja']}, {x['desc'] * 100:.0f}% abaixo da média real de {brl(x['ref'])}."
                  + (" Menor preço do período." if x.get("recorde") else "")
-                 + (" Achado da comunidade, vendedor não conferido." if x.get("comunidade") else ""))
+                 + (" Achado da comunidade, vendedor não conferido." if x.get("comunidade") else "")
+                 + (" Em Outras promoções (nota BGG abaixo de 7)." if x.get("principal") is False else ""))
         if enviar(f"−{x['desc'] * 100:.0f}% {nome}", texto, link=x.get("url") or PAGINA, tags="game_die,moneybag",
                   prioridade="high" if x["desc"] >= 0.35 else "default", imagem=x.get("imagem")):
             enviados += 1
@@ -179,8 +180,11 @@ def avisar(radar_itens):
         else:
             pendentes.setdefault(x["slug"], dt.datetime.now(dt.timezone.utc).isoformat(timespec="minutes"))
     resto = novos[MAX_POR_LEITURA:]
-    if resto and enviar(f"+{len(resto)} promoções novas no Black de Verdade",
-                        ", ".join(x["nome"] for x in resto[:6]) + ("…" if len(resto) > 6 else ""), tags="game_die"):
+    # todos os outros jogos novos saem no resumo, pelo nome e com o desconto (pedido do usuário em 04/11/2026)
+    lista_resto = "; ".join(f"{x['nome']} (−{x['desc'] * 100:.0f}%)" for x in resto)
+    if len(lista_resto) > 3500:  # limite do texto do alerta; o restante está na página
+        lista_resto = lista_resto[:3500].rsplit("; ", 1)[0] + "; e outros na página"
+    if resto and enviar(f"+{len(resto)} promoções novas no Black de Verdade", lista_resto, tags="game_die"):
         for x in resto:
             avisados[x["slug"]] = hoje
             pendentes.pop(x["slug"], None)
@@ -197,4 +201,5 @@ if __name__ == "__main__":
     else:
         sys.path.insert(0, str(Path(__file__).resolve().parent))
         import radar
-        avisar(radar.calcular()[0])
+        r = radar.calcular()
+        avisar(r[0] + r[3])
