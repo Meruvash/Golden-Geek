@@ -169,3 +169,18 @@ A foto da mesa marcada como principal (`mesa-2.webp`) já abre a página no topo
 **O que o manual não ilustra.** O passo 7 (o que volta para a caixa), o passo 8 (a tampa da caixa) e o centro da mesa vazio antes do passo 6 não têm desenho próprio; o passo 5 (entregar o marcador de primeiro jogador) só aparece como a peça F parada na mesa, dentro de `setup-mesa.webp`. A página de preparação não mostra a mesa com 2 ou com 4 jogadores: o desenho é sempre o de 3 (7 expositores). Nenhuma imagem foi inventada para cobrir essas lacunas.
 
 **Conferências.** `python3 tools/checar_comece.py docs/como-jogar/azul/tutorial.md`: dentro da diretriz. `python3 tools/vicios.py docs/como-jogar/azul/tutorial.md`: limpo. Zero travessões e meias-riscas no tutorial. A página foi gerada em memória com `tools/como_jogar_md.py` (sem gravar HTML) para conferir que as 7 imagens existem e que a lista numerada continua de 1 a 8 entre as figuras.
+
+## Auditoria independente da montagem (04/11/2026)
+
+Resultado: aprovado com correções. Todas aplicadas em `docs/como-jogar/azul/tutorial.md`:
+
+- **Erro 1.** A etapa 1 usava `figuras/preparacao.webp`, com as letras D e E trocadas em relação à p. 2 brasileira. Trocada por `figuras/setup-mesa.webp` (recorte da p. 2 brasileira), com a mesma legenda da seção de montagem. `preparacao.webp` não é mais usada pelo tutorial; o arquivo ficou na pasta.
+- **Menor 1.** Passo 5 da montagem: "(p. 2)" virou "(p. 2 e 3)", porque quem começa também está na p. 3.
+- **Menor 2.** Legenda da mesa inteira, nas duas figuras: "7 expositores de fábrica, 6 deles já com 4 azulejos; a seta mostra o último sendo preenchido", como está no desenho.
+- **Menor 3.** Item 4 do resumo do Comece a jogar (tampa da caixa) ganhou "(p. 4 e 5)".
+- **Clareza 1.** O passo a passo da etapa 1 passou a ter os mesmos 8 passos da seção de montagem (o passo 5 do manual dividido em 5 e 6; a tampa como 8). Respostas do Sua vez ajustadas: "passos 3 e 7", "passo 6", "passos 5 e 6"; "passo 2" continuou certo.
+- **Clareza 2.** Passo 8 marcado como "Dica do guia", dizendo que a página de preparação não fala da tampa (fonte: p. 4 e 5).
+- **Clareza 3.** Passo 7: "Com 4 jogadores, nada volta para a caixa", e que a caixa trazer 4 tabuleiros, 4 marcadores e 9 expositores é dedução (o máximo que a preparação usa; o manual não lista componentes). A resposta "2 voltam" do Sua vez da etapa 1 diz a mesma ressalva.
+- **Opcional.** Passo 5: "Se ninguém esteve em Portugal, combinem quem começa: o manual não diz."
+
+Conferências refeitas: `checar_comece.py` dentro da diretriz; `vicios.py` limpo; zero travessões e meias-riscas.

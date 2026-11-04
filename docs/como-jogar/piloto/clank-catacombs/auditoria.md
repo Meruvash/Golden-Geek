@@ -40,3 +40,22 @@ Pedido do editor de 04/11/2026 (PADRAO_EDITORIAL.md, "Montar a mesa passo a pass
 **Lacunas do manual registradas no texto:** a lista de componentes não dá a quantidade de Ouro ("o manual não dá a quantidade"); o manual não diz o que fazer com as cores que ninguém escolheu, e a seção não diz nada sobre isso.
 
 **"Comece a jogar".** A parte "Monte a mesa" virou um resumo de 5 itens que remete à seção nova (mantida a regra do Revelar). `python3 tools/checar_comece.py` passou; o texto não tem travessões; a lista de `tools/vicios.py` não acusa nada.
+
+## Auditoria independente da montagem (04/11/2026)
+
+Resultado: aprovado com correções. Todas aplicadas no `tutorial.md` e nas figuras:
+
+1. Legenda de `fotos/mesa-1.webp` corrigida: é partida em andamento, em imagem promocional com cartas da edição em inglês; na montagem só a Peça Inicial fica na mesa.
+2. Cabeçalho da tabela por número de jogadores: cubos do primeiro ataque com o Marcador na casa inicial, mais 1 por carta de Perigo na Fileira (p. 11, conferido no texto do manual).
+3. Introdução: Maestria nos passos 15 e 16.
+4. Resumo "Monte a mesa" do Comece a jogar ganhou uma linha com Artefatos (5 no topo), Segredos e Prisioneiros, Mercado, 5 cubos de Fantasma, Ídolos no Altar e uma Maestria por jogador perto da Cripta.
+5. `setup-ataque.webp` refeito: a carta do manual tem cerca de 59 px de largura na origem (96 ppi, `pdfimages -list`); agora aparece pequena, centrada numa faixa com o fundo do manual, em vez de esticada. As costuras brancas (bordas das imagens montadas no PDF) foram tiradas de `setup-pecas.webp`, `setup-ouro.webp` e `setup-peca-inicial.webp` com filtro só para linhas finas e longas, preservando os cadeados e as setas.
+6. "Banco" definido no passo 4 como o estoque comum.
+7. Versos das peças, conferidos na ilustração da p. 2 (seis versos roxos com porta, os demais azuis) e na seta da p. 4: em segurança é o roxo com porta, Profundezas é o azul; texto dos passos 3 e 6 e legenda de `setup-pecas.webp` dizem isso.
+8. Legenda de `setup-peca-inicial.webp` mostra a Cripta: a plataforma de borda verde no meio da peça (onde os peões estão na ilustração da p. 5).
+9. Legenda de `preparacao.webp` explica o H: área de Clank!, passo 27.
+10. Passo 22: cubos, peões e baralhos iniciais das cores não escolhidas ficam na caixa.
+11. Cubos por ataque descritos como os ícones vermelhos da casa do Marcador (p. 2 e 4), na seção de montagem e no "O ataque do dragão" do Comece a jogar.
+12. Legenda de `fotos/componentes-1.webp`: "(cartas da edição em inglês)".
+
+Conferido de novo: `python3 tools/checar_comece.py` passa; zero travessões; a lista de `tools/vicios.py` não acusa nada.
