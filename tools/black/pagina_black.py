@@ -123,7 +123,7 @@ CSS = """<style>
 /* cupons */
 .cupons{display:grid;gap:10px;margin:12px 0 0;padding:0;list-style:none}
 @media (min-width:760px){.cupons{grid-template-columns:repeat(2,minmax(0,1fr))}}
-.wp{margin:12px 0 6px}.wp [hidden]{display:none!important}.wp-pisca{animation:wpp 1.2s ease 2}@keyframes wpp{50%{background:#3a3220}}.wp p{border-radius:8px}.wp p{font-size:.92rem;color:#c9ced8;margin:10px 0 0}.wp-ok{color:#5fd38d!important;font-weight:700}
+.inst{display:inline-flex;align-items:center;gap:5px;padding:6px 12px;min-height:34px;border-radius:999px;border:1px solid #e3b23c;background:transparent;color:#e3b23c;font:800 .82rem/1 inherit;font-family:inherit;cursor:pointer}.inst[hidden]{display:none!important}.inst-guia{position:fixed;inset:0;z-index:99;background:rgba(0,0,0,.62);display:flex;flex-direction:column;padding:16px}.inst-br,.inst-bc{justify-content:flex-end}.inst-tr{justify-content:flex-start;flex-direction:column-reverse}.inst-caixa{position:relative;background:#16181d;color:#e9ecf1;border:1px solid #e3b23c;border-radius:14px;padding:16px 16px 12px;max-width:420px;width:100%;margin:0 auto;box-sizing:border-box}.inst-caixa ol{margin:8px 0 6px 18px;padding:0;display:grid;gap:6px}.inst-caixa p{margin:6px 0 0;font-size:.85rem;color:#c9ced8}.inst-t{color:#e3b23c}.inst-x{position:absolute;right:8px;top:6px;background:none;border:0;color:#c9ced8;font-size:1.1rem;min-width:36px;min-height:36px;cursor:pointer}.inst-seta{font-size:2.4rem;color:#e3b23c;animation:instq 1s ease-in-out infinite;text-align:center;line-height:1.2}.inst-br .inst-seta{text-align:right;padding-right:6px}.inst-tr .inst-seta{text-align:right;padding-right:10px}@keyframes instq{50%{transform:translateY(8px)}}.inst-tr .inst-seta{animation-name:instc}@keyframes instc{50%{transform:translateY(-8px)}}@media (prefers-reduced-motion:reduce){.inst-seta{animation:none}}.wp{margin:12px 0 6px}.wp [hidden]{display:none!important}.wp-pisca{animation:wpp 1.2s ease 2}@keyframes wpp{50%{background:#3a3220}}.wp p{border-radius:8px}.wp p{font-size:.92rem;color:#c9ced8;margin:10px 0 0}.wp-ok{color:#5fd38d!important;font-weight:700}
 .wp-mais{margin-top:14px;border-top:1px solid #2a2f3a;padding-top:10px}.wp-mais summary{cursor:pointer;color:#e3b23c;font-weight:700}
 .bk-alerta .al-os{margin:12px 0}.al-tag{font-weight:800;margin:0 0 10px}
 .al-btn{display:flex;align-items:center;justify-content:center;width:100%;min-height:56px;padding:14px 18px;border-radius:14px;background:#e3b23c;color:#111;font-weight:900;font-size:1.08rem;text-decoration:none;border:0;cursor:pointer;font-family:inherit;box-sizing:border-box}
@@ -372,7 +372,7 @@ const motivo=()=>{if(embutido)return 'Você abriu o site dentro de outro aplicat
  return null};
 if(tem&&!(ios&&!app))navigator.serviceWorker.register('/sw-black.js').then(async r=>{const s=await r.pushManager.getSubscription();if(s&&Notification.permission==='granted')mostra('.wp-ok')}).catch(()=>{});
 btn.addEventListener('click',async()=>{const m=motivo();
- if(m===''){mostra('.wp-ios');return}
+ if(m===''){mostra('.wp-ios');const i=document.querySelector('.inst');if(i)i.click();return}
  if(m){mostra('.wp-erro',m);return}
  btn.textContent='Ativando…';btn.disabled=true;
  try{if(Notification.permission==='denied'){mostra('.wp-neg');return}
@@ -390,6 +390,33 @@ btn.addEventListener('click',async()=>{const m=motivo();
 q('.wp-sair').addEventListener('click',async()=>{try{const r=await navigator.serviceWorker.getRegistration('/sw-black.js');const s=r&&await r.pushManager.getSubscription();
  if(s){await fetch(api+'/v1/push/cancelar',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({endpoint:s.endpoint})}).catch(()=>{});await s.unsubscribe()}}catch(e){}
  mostra('')})})();
+</script>"""
+
+
+JS_INSTALA = """<script>
+(()=>{const ua=navigator.userAgent,ipad=navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1,ios=/iPhone|iPad|iPod/i.test(ua)||ipad;
+const app=window.matchMedia('(display-mode: standalone)').matches||navigator.standalone===true;if(app)return;
+const bts=[...document.querySelectorAll('.inst')];let adiado=null;
+const liga=()=>bts.forEach(b=>b.hidden=false);
+window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();adiado=e;liga()});
+window.addEventListener('appinstalled',()=>bts.forEach(b=>b.hidden=true));
+const embutido=/Instagram|FBAN|FBAV|FB_IAB|Line\\/|WhatsApp|Telegram|TikTok/i.test(ua);
+if(ios||('install' in navigator))liga();
+const v=+((ua.match(/OS (\\d+)_/)||[])[1]||0),chrome=/CriOS|EdgiOS|FxiOS/.test(ua);
+const guia=()=>{let onde,passos;
+ if(embutido){onde='tr';passos=['Toque nos três pontinhos <b>(⋯)</b> aqui em cima','Escolha <b>Abrir no Safari</b>','No Safari, toque de novo neste botão']}
+ else if(chrome){onde='tr';passos=['Toque em <b>Compartilhar</b> <span class="ig">⬆️</span> ao lado do endereço, aqui em cima','Escolha <b>Adicionar à Tela de Início</b>','Toque em <b>Adicionar</b>']}
+ else if(ipad){onde='tr';passos=['Toque em <b>Compartilhar</b> <span class="ig">⬆️</span> aqui em cima','Escolha <b>Adicionar à Tela de Início</b>','Toque em <b>Adicionar</b>']}
+ else if(v>=26){onde='br';passos=['Toque nos <b>três pontinhos (⋯)</b> aqui embaixo, à direita','Toque em <b>Compartilhar</b> <span class="ig">⬆️</span> e depois em <b>Adicionar à Tela de Início</b>','Toque em <b>Adicionar</b>']}
+ else{onde='bc';passos=['Toque em <b>Compartilhar</b> <span class="ig">⬆️</span> aqui embaixo','Role e toque em <b>Adicionar à Tela de Início</b>','Toque em <b>Adicionar</b>']}
+ const o=document.createElement('div');o.className='inst-guia inst-'+onde;o.setAttribute('role','dialog');o.setAttribute('aria-label','Como adicionar à Tela de Início');
+ o.innerHTML='<div class="inst-caixa"><button type="button" class="inst-x" aria-label="Fechar">✕</button><b class="inst-t">Elite na Tela de Início</b><ol>'+passos.map(x=>'<li>'+x+'</li>').join('')+'</ol><p>Depois, abra pelo ícone novo e toque em <b>Ativar alertas</b>. <button type="button" class="inst" hidden>📲 Adicionar à Tela de Início</button></p></div><div class="inst-seta" aria-hidden="true">'+(onde==='tr'?'⬆':'⬇')+'</div>';
+ o.addEventListener('click',e=>{if(e.target===o||e.target.classList.contains('inst-x'))o.remove()});document.body.append(o)};
+bts.forEach(b=>b.addEventListener('click',async()=>{
+ if(adiado){adiado.prompt();const r=await adiado.userChoice;adiado=null;if(r.outcome==='accepted')bts.forEach(x=>x.hidden=true);return}
+ if('install' in navigator){try{await navigator.install();return}catch(e){}}
+ if(ios){guia();return}
+ alert('No Chrome: toque nos três pontinhos (⋮) e em "Instalar app" ou "Adicionar à tela inicial".')}))})();
 </script>"""
 
 
@@ -533,7 +560,7 @@ def build(radar_itens, armadilhas, quase=()):
    <li><b>{n_cupons}</b><span>cupom{"s" if n_cupons != 1 else ""} anunciado{"s" if n_cupons != 1 else ""} pelas lojas</span></li>
   </ul>
   <p class="bk-atual">Atualizado em {agora_.strftime("%d/%m/%Y às %Hh%M")} (horário de Brasília). O radar lê os preços de novo a cada 30 minutos.</p>
-  <nav class="bk-pulo" aria-label="Atalhos"><a class="pri" href="#melhores">Ver as melhores ofertas</a><a class="sec" href="#alertas">🔔 Alertas no celular</a><a class="sec" href="#todas">Todas as {len(melhor)}</a>{f'<a class="sec" href="#quase">Quase Black ({len(quase)})</a>' if quase else ""}{'<a class="sec" href="#cupons">Cupons</a>' if cps_html else ""}{'<a class="sec" href="#comunidade">Achados da comunidade</a>' if pb_html else ""}{'<a class="sec" href="#sem-foto">Achados sem foto</a>' if sem_foto_html else ""}</nav>
+  <nav class="bk-pulo" aria-label="Atalhos"><a class="pri" href="#melhores">Ver as melhores ofertas</a><a class="sec" href="#alertas">🔔 Alertas no celular</a><button type="button" class="inst" hidden>📲 Tela de Início</button><a class="sec" href="#todas">Todas as {len(melhor)}</a>{f'<a class="sec" href="#quase">Quase Black ({len(quase)})</a>' if quase else ""}{'<a class="sec" href="#cupons">Cupons</a>' if cps_html else ""}{'<a class="sec" href="#comunidade">Achados da comunidade</a>' if pb_html else ""}{'<a class="sec" href="#sem-foto">Achados sem foto</a>' if sem_foto_html else ""}</nav>
  </header>
  <ul class="bk-conf">
   <li>Desconto calculado sobre a média aparada do histórico de preços, não sobre o preço "de" da loja.</li>
@@ -578,6 +605,7 @@ def build(radar_itens, armadilhas, quase=()):
  </section>
  {JS_ALERTA}
  {JS_PUSH if push else ""}
+ {JS_INSTALA}
  <section id="melhores" aria-labelledby="h-melhores">
   <h2 id="h-melhores">As 5 melhores agora</h2>
   <p class="sub">A melhor combinação de nota no BGG e desconto real.</p>
