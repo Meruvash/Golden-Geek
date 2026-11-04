@@ -2,6 +2,93 @@
 
 *Regras tiradas do manual oficial em inglês da Capstone Games (Sanctuary Rulebook, v1, 8 páginas), porque a Grok Games não publica o manual em português. Os nomes dos componentes são tradução nossa e podem ser diferentes dos impressos na caixa brasileira. As páginas citadas são as do manual em inglês.*
 
+## setup. Montar a mesa passo a passo
+
+A montagem segue a página de preparação do manual (p. 1), na mesma ordem: primeiro a parte comum da mesa, nos itens 1 a 6 do manual; depois a parte de cada jogador, nos itens A a D. É a mesma de 2 a 5 jogadores, salvo a posição da carta de Projetos (passo 14).
+
+**O que entra na montagem** (p. 1). O manual não traz a lista do conteúdo da caixa; as quantidades abaixo são as que a preparação pede.
+
+| Componente | Quantidade |
+|---|---|
+| Tabuleiro da vitrine | 1 |
+| Peças hexagonais (Animais, Prédios e Projetos) | todas; o manual não diz quantas são |
+| Tabuleiro de conservação | 1 |
+| Metas de conservação | 10, das quais 5 entram na partida |
+| Marcadores de conservação, de bolsa e de fim de jogo | a reserva inteira; o manual não diz quantos são |
+| Tabuleiro do zoológico | 1 por jogador |
+| Cartas de ação (Projetos, Rocha, Floresta e Água) | 4 diferentes por jogador |
+| Marcadores de melhoria | 4 por jogador, da cor dele |
+| Marcadores de conquista (2×, 3×, 4× e 5×) | 4 por jogador, da cor dele |
+| Suporte de peças | 1 por jogador |
+
+As folhas de ajuda e o Glossário, que o manual cita para explicar bônus e pontos (p. 2 e 3), não entram na montagem: deixe à mão.
+
+!fig[Uma partida em andamento, com a caixa no centro: o tabuleiro de conservação à esquerda, um suporte de peças com a mão de um jogador, tabuleiros do zoológico já com peças, a vitrine e, na frente, as cartas de ação. Na montagem, os tabuleiros do zoológico e o de conservação começam sem peças e sem marcadores. Imagem: Capstone Games · edição em inglês (Sanctuary)](../../santuario/fotos/mesa-1.webp)
+
+1. **Ponha o tabuleiro da vitrine no centro da mesa** (p. 1). Ele aparece com as peças na figura do passo 3.
+2. **Embaralhe todas as peças viradas para baixo** e empilhe em uma ou mais pilhas. Quando o jogo manda pegar peças "da pilha", são estas (p. 1).
+
+!fig[Peças viradas para baixo, empilhadas: é a pilha (item 2 do manual). Ilustração: manual Capstone Games (p. 1)](figuras/setup-pilha.webp)
+
+3. **Abra 6 peças da pilha na vitrine**, viradas para cima, uma ao lado de cada número, de 1 a 6. Essas 6 peças são a vitrine (p. 1).
+
+!fig[O tabuleiro da vitrine com as 6 peças abertas, uma em cada número; a posição 1 fica embaixo e a 6 em cima (itens 1 e 3 do manual). Ilustração: manual Capstone Games (p. 1)](figuras/setup-vitrine.webp)
+
+4. **Deixe espaço ao lado da vitrine para a pilha de descarte** (p. 1).
+5. **Separe os marcadores de conservação, de bolsa e de fim de jogo** ao lado: são a reserva (p. 1).
+6. **Ponha o tabuleiro de conservação ao lado da vitrine** (p. 1).
+7. **Embaralhe as 10 metas de conservação viradas para baixo** (p. 1).
+8. **Revele 5 metas ao acaso e ponha no tabuleiro de conservação**, uma em cada coluna. A ordem não importa; o manual sugere deixar juntas as metas de continente e juntas as de classe de animal (p. 1).
+
+!fig[O tabuleiro de conservação com 5 metas no alto: três de classe de animal à esquerda e duas de continente à direita. Embaixo de cada meta, uma faixa de cor para cada jogador: cada um põe os seus marcadores de conquista na faixa da sua cor (p. 7). Item 6 do manual. Ilustração: manual Capstone Games (p. 1)](figuras/setup-conservacao.webp)
+
+9. **Devolva à caixa as outras 5 metas**: não são usadas nesta partida (p. 1).
+10. **Cada jogador põe um tabuleiro do zoológico à sua frente.** Todos usam o mesmo lado do tabuleiro; na primeira partida, o lado 1 (p. 1).
+
+!fig[A mesa de um jogador: o tabuleiro do zoológico (A), as 4 cartas de ação nos encaixes de baixo (B), os marcadores de melhoria e de conquista da cor dele (C) e o suporte de peças (D), itens A a D do manual. Ilustração: manual Capstone Games (p. 1)](figuras/preparacao.webp)
+
+11. **Cada jogador pega as 4 cartas de ação diferentes e vira todas para o lado I.** O lado está impresso no canto inferior direito da carta (p. 1).
+12. **Sorteie o primeiro jogador** (p. 1).
+13. **O primeiro jogador põe a carta de Projetos no encaixe da esquerda**, sob o tabuleiro do zoológico, com a seta apontando para o 1 (p. 1).
+
+!fig[A fila do primeiro jogador, toda no lado I: Projetos no encaixe da esquerda, com a seta no 1, e depois Rocha, Água e Floresta. No círculo, a seta da carta de Projetos, que marca o alcance e o nível de Projeto (item B do manual). Ilustração: manual Capstone Games (p. 1)](figuras/setup-cartas.webp)
+
+14. **Os jogadores seguintes, em sentido horário, põem a carta de Projetos um encaixe mais à direita** cada um: seta no 2, no 3 e no 4. Com 5 jogadores, o quarto e o quinto põem a carta no encaixe da direita, com a seta no 4 (p. 1).
+15. **Cada jogador põe as outras 3 cartas ao acaso** nos 3 encaixes que sobraram (p. 1).
+16. **Cada jogador escolhe uma cor e põe à frente, virados para cima, os 4 marcadores de melhoria e os 4 marcadores de conquista dela** (p. 1). A cor é a mesma da sua faixa no tabuleiro de conservação, onde os marcadores de conquista vão entrar (p. 7).
+
+!fig[Os marcadores de uma cor: em cima, os 4 marcadores de melhoria, com as condições 1, 2, 3= e 4≠; embaixo, os 4 marcadores de conquista, 2×, 3×, 4× e 5× (item C do manual). Ilustração: manual Capstone Games (p. 1)](figuras/setup-marcadores.webp)
+
+17. **Cada jogador põe um suporte de peças à sua frente.** As peças que você receber entram nele, viradas para você, e são a sua mão. Ninguém começa com peças (p. 1).
+
+!fig[O suporte de peças, onde fica a mão de cada jogador (item D do manual). Ilustração: manual Capstone Games (p. 1)](figuras/setup-suporte.webp)
+
+18. **Na primeira partida, cada jogador devolve à caixa o seu marcador de conquista 4×.** É uma sugestão do manual: assim, o fim pode ser disparado ao pôr o terceiro marcador de conquista (em vez do quarto). As outras condições de fim continuam valendo (p. 1 e 8).
+
+**O que muda com o número de jogadores** (p. 1):
+
+| Jogadores | Encaixe da carta de Projetos, do 1º ao último | Alcance de cada um no primeiro turno | Cartas de ação na mesa | Marcadores de conquista em jogo (primeira partida) | Metas no tabuleiro / na caixa |
+|---|---|---|---|---|---|
+| 2 | 1, 2 | 1, 2 | 8 | 8 (6) | 5 / 5 |
+| 3 | 1, 2, 3 | 1, 2, 3 | 12 | 12 (9) | 5 / 5 |
+| 4 | 1, 2, 3, 4 | 1, 2, 3, 4 | 16 | 16 (12) | 5 / 5 |
+| 5 | 1, 2, 3, 4, 4 | 1, 2, 3, 4, 4 | 20 | 20 (15) | 5 / 5 |
+
+O manual cita um modo solo (p. 8), mas não traz as regras dele.
+
+**O que volta para a caixa:** as 5 metas de conservação não reveladas (passo 9) e, na primeira partida, o marcador de conquista 4× de cada jogador (passo 18). O manual não manda devolver mais nada (p. 1).
+
+**Quem começa:** o jogador sorteado no passo 12, com alcance 1. Depois dele, a vez segue em sentido horário (p. 1 e 2).
+
+**Antes de começar, confira:** vitrine com 6 peças abertas e espaço para o descarte; reserva de marcadores separada; 5 metas no tabuleiro de conservação; tabuleiros do zoológico todos do mesmo lado; cartas de ação no lado I, com a de Projetos no encaixe certo para cada um; 4 marcadores de melhoria e 4 de conquista por jogador (3 de conquista na primeira partida); suportes vazios.
+
+?? Primeira partida com 5 jogadores, seguindo as sugestões do manual. Qual mesa está certa?
+- ( ) 10 metas no tabuleiro de conservação e a carta de Projetos do quinto jogador num encaixe 5, à direita do 4.
+- ( ) 5 metas no tabuleiro, Projetos do quinto jogador de volta ao encaixe 1 e 2 peças da pilha no suporte de cada um.
+- (x) 5 metas no tabuleiro, Projetos do quarto e do quinto jogador no encaixe 4 e 3 marcadores de conquista por jogador.
+- ( ) 5 metas no tabuleiro, Projetos do quarto e do quinto jogador no encaixe 4 e as cartas de ação no lado II.
+= Revelam-se 5 das 10 metas; com 5 jogadores, o quarto e o quinto põem Projetos no encaixe da direita, com a seta no 4; ninguém começa com peças; as cartas começam no lado I; e, na primeira partida, o manual sugere devolver o marcador 4×, ficando 3 de conquista por jogador (p. 1).
+
 ## 4min. Comece a jogar em 4 minutos
 
 **Meta:** em 4 minutos de leitura, montar a mesa e jogar o seu primeiro turno sem abrir o manual.
@@ -12,10 +99,11 @@ Cada jogador monta um zoológico no próprio **tabuleiro**, com peças hexagonai
 
 ### Monte a mesa
 
-1. Tabuleiro da vitrine no centro. Embaralhe as peças viradas para baixo: é a pilha. Abra 6 na vitrine, uma em cada número. Lugar para o descarte.
-2. Tabuleiro de conservação ao lado, com 5 das 10 metas sorteadas; as outras voltam à caixa. Separe os marcadores de conservação, de bolsa e de fim de jogo. Tudo isso fica para depois.
-3. Cada jogador: tabuleiro (todos do mesmo lado; lado 1 na primeira partida), suporte de peças, que guarda a sua mão, e, da sua cor, 4 marcadores de melhoria e 4 de conquista, para depois. Ninguém começa com peças.
-4. Sorteie quem começa. Cada jogador põe as 4 cartas de ação, lado I para cima, nos 4 encaixes sob o tabuleiro, numerados de 1 (esquerda) a 4: a de Projetos no encaixe da sua ordem de jogo (o 5º jogador, no 4), as outras 3 ao acaso.
+A montagem completa, com figuras, está na seção "Montar a mesa passo a passo", logo acima. O essencial (p. 1):
+
+1. Vitrine no centro com 6 peças abertas da pilha; tabuleiro de conservação com 5 metas.
+2. Cada jogador: tabuleiro do zoológico (lado 1 na primeira partida), suporte de peças vazio e os marcadores da sua cor (na primeira partida, devolva o 4×: 3 metas bastam).
+3. Sorteie quem começa. Cartas de ação no lado I: a de Projetos no encaixe da sua ordem de jogo (o 5º jogador, no 4), as outras 3 ao acaso.
 
 ### Seu primeiro turno
 
@@ -71,7 +159,7 @@ Casais e o Rio: etapa 3. Metas e melhorias: etapa 4. Pontuação: etapa 5.
 
 ### Como a partida acaba
 
-Quem apoia 4 metas (põe seus 4 marcadores de conquista sob elas) ou cobre o tabuleiro ganha 10 pontos, e os outros jogam mais um turno. Pilha vazia antes disso: a partida acaba ao fim daquele turno. Mais pontos vence.
+Quem apoia 4 metas (põe seus 4 marcadores de conquista sob elas; na primeira partida, devolva o 4×: 3 metas bastam) ou cobre o tabuleiro ganha 10 pontos, e os outros jogam mais um turno. Pilha vazia antes disso: a partida acaba ao fim daquele turno. Mais pontos vence.
 
 **Prefere ver?** Partida resumida em vídeo; em caso de diferença, vale o manual.
 
@@ -111,8 +199,6 @@ Em cada etapa, o que fica à vista é o essencial: o passo a passo e o erro mais
 > 6. Sorteie o primeiro jogador. Cada jogador pega as 4 cartas de ação, com o lado I para cima (o número do lado aparece no canto inferior direito), e as põe nos 4 encaixes sob o tabuleiro de uma vez: a carta de Projetos do primeiro jogador no encaixe da esquerda, com a seta no 1; a dos seguintes, em sentido horário, um encaixe mais à direita (seta no 2, no 3, no 4); as outras 3 cartas de cada um, ao acaso nos encaixes que sobraram.
 > 7. Cada jogador escolhe uma cor e põe à frente, virados para cima, os 4 marcadores de melhoria e os 4 marcadores de conquista dela.
 > 8. Cada jogador pega um suporte de peças, onde fica a sua mão. Ninguém começa com peças.
-
-!fig[A mesa de um jogador: o tabuleiro do zoológico (A), as 4 cartas de ação nos encaixes de baixo (B), os marcadores de melhoria e de conquista da cor dele (C) e o suporte de peças (D). Ilustração: manual oficial Capstone (p. 1)](figuras/preparacao.webp)
 
 > [!mais] **5 jogadores.** O quarto e o quinto jogador põem a carta de Projetos no encaixe da direita, com a seta no 4 (p. 1).
 
