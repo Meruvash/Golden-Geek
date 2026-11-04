@@ -107,7 +107,7 @@
  "como_funciona": [
   "Cada jogador monta, no próprio espaço, uma ilha de 16 cartas numa grade de 4 por 4. As cartas são plantas (árvores, arbustos, ervas e cogumelos) e terrenos, e quase tudo nelas vale ponto no fim. Quem soma mais pontos vence.",
   "Na preparação, cada um recebe uma carta de Ilha e uma de Clima, com habilidades próprias. A Ilha define quantas cartas você compra, quantas vão para a compostagem (uma pilha de cartas viradas que vale ponto) e quanto solo você tem. Solo é a moeda do jogo: com ele você paga o custo das cartas.",
-  "No turno, o jogador ativo escolhe uma de quatro ações, e todos fazem a mesma ação, numa versão menor. Plantar: o ativo planta até duas cartas, compra quatro e fica com uma; os outros plantam uma e compram uma. Compostar: o ativo ganha 5 de solo e põe 2 cartas do baralho na compostagem; os outros escolhem 2 de solo ou 2 cartas. Regar: o ativo põe até 6 brotos nas plantas e ganha 2 de solo; os outros, 2 brotos ou 2 de solo. Crescer: o ativo compra 4 cartas e põe 2 peças de crescimento; os outros escolhem 2 cartas ou 2 peças.",
+  "No turno, o jogador ativo escolhe uma de quatro ações, e todos fazem a mesma ação, numa versão menor. Plantar: o ativo planta até duas cartas, compra quatro e fica com uma; os outros plantam uma e compram uma. Compostar: o ativo ganha 5 de solo e põe 2 cartas do baralho na compostagem; os outros escolhem 2 de solo ou compostar 2 cartas. Regar: o ativo põe até 6 brotos nas plantas e ganha 2 de solo; os outros, 2 brotos ou 2 de solo. Crescer: o ativo compra 4 cartas e põe 2 peças de crescimento; os outros escolhem 2 cartas ou 2 peças.",
   "Cada ação tem uma cor. Depois dela, todo mundo ativa ao mesmo tempo as habilidades daquela cor na Ilha, no Clima e em todas as cartas da ilha. É aí que o motor aparece: uma carta gera solo, outra compra cartas, outra rega, e uma ação vira uma cadeia de efeitos.",
   "No centro ficam quatro cartas de Fauna, objetivos de bichos com exigências de habitat; quem cumpre primeiro pega a folha que vale mais. Há também cartas de Ecossistema, com objetivos de fim de jogo. Quem planta a 16ª carta ganha 7 pontos de bônus e dispara o fim. Pontuam as cartas, os troncos e copas, os brotos, a compostagem, os terrenos, os Ecossistemas e as folhas de Fauna. No solo, você enfrenta Gaia, um adversário automático."
  ],
@@ -218,7 +218,7 @@
   [
    "Leve",
    "Cinco jogadores, cinco planilhas",
-   "A Meeple Mountain achou repetitiva a sequência de ações com cinco pessoas, e a GeekDad lembra que o comprar quatro e ficar com uma trava quem pensa demais. Com mesa cheia, o jogo não fica pior. Só fica mais longo, e o motor dos outros não é da sua conta."
+   "A Meeple Mountain achou repetitiva a sequência de ações (jogou até com quatro pessoas), e a GeekDad lembra que o comprar quatro e ficar com uma trava quem pensa demais. Com mesa cheia, o jogo não fica pior. Só fica mais longo, e o motor dos outros não é da sua conta."
   ],
   [
    "Leve",
@@ -244,7 +244,7 @@
   ],
   [
    "5 jogadores",
-   "Joga, mas a Meeple Mountain achou repetitiva a sequência de ações com mesa cheia.",
+   "Joga, mas fica mais longo; a Meeple Mountain, que jogou até com quatro, achou repetitiva a sequência de ações.",
    1
   ]
  ],

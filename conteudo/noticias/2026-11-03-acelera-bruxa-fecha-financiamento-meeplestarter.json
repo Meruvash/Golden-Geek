@@ -7,7 +7,7 @@
  "selo": "Informativo",
  "editora": "Independente",
  "lide": "A campanha de Acelera Bruxa, jogo brasileiro de corrida com construção de baralho criado e ilustrado por Alison Fabrizi, terminou em 30/10/2026 no Meeplestarter com R$ 48.198,90 arrecadados, 185% da meta de R$ 26.000. Foram 103 apoiadores, e a entrega das recompensas está prevista para fevereiro de 2027.",
- "por_que_importa": "Num mês em que o Meeplestarter teve campanha de seis dígitos, um jogo de bruxa de vassoura quase dobrou a meta sem editora grande por trás. É o tamanho real do financiamento nacional: cem pessoas, um autor, uma caixa. E um add-on que vende um álibi para explicar a compra em casa, o que diz muito sobre o público, inclusive sobre a gente.",
+ "por_que_importa": "Sem editora grande por trás, um jogo de bruxa de vassoura quase dobrou a meta. É o tamanho real do financiamento nacional: cem pessoas, um autor, uma caixa. E um add-on que vende um álibi para explicar a compra em casa, o que diz muito sobre o público, inclusive sobre a gente.",
  "numeros": [
   [
    "R$ 48.198,90",
@@ -25,13 +25,13 @@
    "Meeplestarter"
   ],
   [
-   "1 a 4",
+   "1 a 6",
    "jogadores, partidas de cerca de 40 minutos",
    "Ludopedia"
   ]
  ],
  "corpo": [
-  "Em Acelera Bruxa, cada jogador pilota uma bruxa numa corrida em tabuleiro modular, compra cartas para melhorar o próprio baralho, rola dados de movimento e usa feitiços para atrapalhar quem vai na frente. O autor, Alison Fabrizi, também assina Magos de Araque, de 2025, oferecido junto na campanha.",
+  "Em Acelera Bruxa, cada jogador pilota uma bruxa numa corrida em tabuleiro modular, compra cartas para melhorar o próprio baralho e usa feitiços para atrapalhar quem vai na frente. O autor, Alison Fabrizi, também assina Magos de Araque, oferecido junto na campanha.",
   "A campanha começou em 08/09/2026 e bateu a meta em 11/09/2026, segundo as atualizações publicadas no Meeplestarter. As metas extras liberaram bruxas novas, e a campanha teve ainda a expansão Bete da Sorte, de apostas na corrida, por R$ 45, e um kit para levar a partida a 5 ou 6 jogadores, que o próprio autor diz não ser a configuração ideal."
  ],
  "no_brasil": "Acelera Bruxa é um jogo nacional independente, financiado no Meeplestarter, com entrega prevista para 01/02/2027. Em 03/11/2026, a página da campanha mostrava todos os apoios como indisponíveis, sem pré-venda tardia aberta. Não encontramos oferta em lojas brasileiras até essa data.",
@@ -60,11 +60,6 @@
    "nome": "Ludopedia: Acelera Bruxa",
    "url": "https://ludopedia.com.br/jogo/acelera-bruxa",
    "data": "03/11/2026"
-  },
-  {
-   "nome": "ComparaJogos: Acelera Bruxa",
-   "url": "https://www.comparajogos.com.br/item/acelera-bruxa",
-   "data": "03/11/2026"
   }
  ],
  "imagem": {
@@ -90,7 +85,7 @@
    "data": "03/11/2026",
    "fontes": [
     "https://meeplestarter.com.br/acelerabruxa",
-    "https://www.comparajogos.com.br/item/acelera-bruxa"
+    "https://ludopedia.com.br/jogo/acelera-bruxa"
    ],
    "obs": "jogo nacional independente, financiado no Meeplestarter; entrega prevista para 01/02/2027"
   }
