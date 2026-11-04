@@ -2,6 +2,112 @@
 
 *Regras conferidas no manual da edição brasileira da Asmodee (Galápagos), o "Livro de Regras dos Invasores" de Tiny Epic Vikings, arquivo TNE051_regras_v1.0, de 24 páginas. As páginas citadas são as desse manual. Este guia ensina o jogo de 2 a 4 pessoas; o modo solo tem regras próprias nas p. 16 a 23.*
 
+## setup. Montar a mesa passo a passo
+
+A montagem segue a página de preparação do manual (p. 4), na mesma ordem dos passos numerados de lá (1, 1A, 1B, 2, 2A, 3, 3A, 3B, 4, 5, 6A a 6E, 7 e 8), com a lista de componentes da p. 2 e a ilustração da mesa montada da p. 5. Ela muda com o número de jogadores no lado do mapa, nas Cartas de Benefício e, com 2 jogadores, nas peças do inimigo (p. 16). O modo solo tem montagem própria (p. 16 e 17), que este guia não cobre.
+
+**O que vem na caixa** (p. 2):
+
+| Componente | Quantidade |
+|---|---|
+| Tabuleiro de Mapa, dupla face | 1 |
+| Tabuleiros de Clã | 4 |
+| Cartas Viking | 48 |
+| Cartas de Benefício | 18 |
+| Tabuleiros de Deus | 6 |
+| Tabuleiro de Era/Pontuação | 1 |
+| Colonos / Barcos / Templos | 24 (6 por cor) / 16 (4 por cor) / 8 (2 por cor) |
+| Marcadores de Pontuação | 4 |
+| Corvo | 1 |
+| Vilas | 13 |
+| Runas | 9, 3 de cada tipo |
+| Marcadores de Fúria | 3 |
+| Marcadores de Recurso | 12, 4 de cada tipo (Madeira, Alimento e Aço) |
+| Marcador de Chefe | 1 |
+
+**O mapa e os deuses**
+
+1. **Desdobre o Tabuleiro de Mapa no centro da mesa, com o lado do seu número de jogadores para cima.** O ícone do canto inferior direito diz qual é o lado: 1-3 ou 4 (p. 4, passo 1).
+
+!fig[As duas faces do Tabuleiro de Mapa: a frente, à esquerda, e o verso, à direita. Uma face (ícone 4) serve para 4 jogadores; a outra (ícone 1-3), para 1 a 3. Ilustração: manual Asmodee (p. 2)](figuras/setup-mapa-faces.webp)
+
+2. **Ponha 1 Runa em cada Ilha, do tipo que o ícone da Ilha mostra.** As Runas que sobram voltam para a caixa (p. 4, passo 1A).
+3. **Ponha 1 Vila em cada espaço de Vila do mapa**, menos nos espaços marcados com o barco. As Vilas que sobram voltam para a caixa (p. 4, passo 1B).
+
+!fig[O mapa com uma Runa em cada Ilha, as Vilas nos seus espaços e, nos Fiordes da borda, os Barcos iniciais (passo 18). Ilustração: manual Asmodee (p. 5)](figuras/setup-mapa.webp)
+
+4. **Embaralhe os 6 Tabuleiros de Deus e sorteie 3.** Ponha-os virados para cima numa fileira acima do mapa. Os outros 3 voltam para a caixa (p. 4, passo 2).
+
+!fig[Três Tabuleiros de Deus sorteados, em fileira: Odin, Frigga e Thor. Cada um tem a Trilha de Fúria em volta e a Bênção de Valhala no centro. Ilustração: manual Asmodee (p. 5)](figuras/setup-deuses.webp)
+
+5. **Sorteie um Marcador de Fúria para cada um dos 3 deuses e ponha-o no espaço 0 da Trilha de Fúria** daquele tabuleiro (p. 4, passo 2A).
+
+!fig[Um Marcador de Fúria indo para o espaço 0 da Trilha de Fúria de um deus. O símbolo do marcador é o de uma das Runas. Ilustração: manual Asmodee (p. 5)](figuras/setup-furia.webp)
+
+**A era e as cartas**
+
+6. **Ponha o Tabuleiro de Era à direita dos deuses, com o lado do Corvo para cima** (p. 4, passo 3).
+7. **Ponha o Corvo no espaço 1 do Tabuleiro de Era**: é a Era 1 (p. 4, passo 3A).
+8. **Deixe livre um espaço à esquerda do Tabuleiro de Era**, para a Carta de Benefício de cada Batalha (p. 4, passo 3B).
+
+!fig[O Tabuleiro de Era com o Corvo indo para o espaço da Era 1 e, à esquerda, o espaço pontilhado livre para a Carta de Benefício. Os números em círculo são os dos passos do manual. Ilustração: manual Asmodee (p. 5)](figuras/setup-era.webp)
+
+9. **Embaralhe as Cartas Viking num baralho só, virado para baixo, ao alcance de todos**, com espaço ao lado para a Pilha de Descarte (p. 4, passo 4).
+
+!fig[O Baralho Viking, virado para baixo, e, à esquerda, o espaço pontilhado da Pilha de Descarte. Ilustração: manual Asmodee (p. 5)](figuras/setup-baralho.webp)
+
+10. **Embaralhe as Cartas de Benefício e distribua-as viradas para cima em duas fileiras, uma acima e outra abaixo do mapa**: 4 cartas por fileira com 2 jogadores, 5 com 3, 7 com 4. As que sobram voltam para a caixa (p. 4, passo 5).
+
+!fig[As duas fileiras de Cartas de Benefício de uma partida de 4 jogadores, 7 acima e 7 abaixo do mapa. Ilustração: manual Asmodee (p. 5)](figuras/setup-beneficio.webp)
+
+**O clã de cada jogador**
+
+11. **Cada jogador pega um Tabuleiro de Clã e põe os 6 Colonos da cor dele nos espaços marcados do tabuleiro** (p. 4, passo 6A).
+12. **Ponha 3 Barcos nos espaços do tabuleiro e separe o quarto** para o passo 18 (p. 4, passo 6B).
+13. **Ponha os 2 Templos nos espaços deles** (p. 4, passo 6C).
+14. **Separe o Marcador de Pontuação da sua cor**: ele só entra na pontuação do fim da partida (p. 4, passo 6D).
+15. **Pegue 1 Marcador de Recurso de cada tipo, Madeira, Alimento e Aço, e ponha os três no espaço 2 da Trilha de Recursos**, na parte de baixo do Tabuleiro de Clã (p. 4, passo 6E).
+
+!fig[Um Tabuleiro de Clã montado: os 6 Colonos na fileira de cima, 3 Barcos e os 2 Templos na fileira do meio e os três Marcadores de Recurso no 2 da trilha de baixo, com as setas mostrando a última peça de cada tipo entrando. Ilustração: manual Asmodee (p. 5)](figuras/setup-cla.webp)
+
+**Quem começa e os Barcos no mapa**
+
+16. **Deixe espaço abaixo do Tabuleiro de Clã para a fileira de Cartas Viking jogadas** (ilustração da p. 5).
+17. **Dê o Marcador de Chefe ao jogador inicial: quem esteve numa ilha mais recentemente** (p. 4, passo 7).
+
+!fig[O Marcador de Chefe. Ilustração: manual Asmodee (p. 5)](figuras/setup-chefe.webp)
+
+18. **Começando pelo jogador à direita do Chefe e seguindo no sentido anti-horário, terminando no Chefe, cada um põe o Barco separado num Fiorde vazio que encoste na borda do mapa** (p. 4, passo 8).
+
+!fig[O Barco separado vai para um Fiorde da borda do mapa. Ilustração: manual Asmodee (p. 5)](figuras/setup-barco.webp)
+
+!fig[A mesa montada para 4 jogadores, com os números dos passos do manual: os 3 deuses com a Fúria no 0, o Tabuleiro de Era com o Corvo na Era 1, o Baralho Viking, as 7 Cartas de Benefício acima e as 7 abaixo do mapa, as Runas nas Ilhas, as Vilas e o Barco separado indo para a borda. Ilustração: manual Asmodee (p. 5)](figuras/preparacao.webp)
+
+**O que muda com o número de jogadores** (p. 4 e 16):
+
+| Jogadores | Lado do mapa | Cartas de Benefício por fileira | Cartas de Benefício na mesa | Cartas de Benefício que voltam à caixa | Peças do inimigo |
+|---|---|---|---|---|---|
+| 2 | o do ícone 1-3 | 4 | 8 | 10 | 3 Templos e 6 Colonos, das 2 cores que sobram |
+| 3 | o do ícone 1-3 | 5 | 10 | 8 | nenhuma |
+| 4 | o do ícone 4 | 7 | 14 | 4 | nenhuma |
+
+**Com 2 jogadores, monte também o inimigo** (p. 16): com as peças das 2 cores que ninguém usa, ponha 1 Templo e 2 Colonos em cada uma das 3 Ilhas Periféricas, as que tocam a borda do mapa. O inimigo começa controlando essas Ilhas, mas as Runas ficam nelas e a Fúria dos deuses não sobe.
+
+!fig[A variante de 2 jogadores: 1 Templo e 2 Colonos do inimigo em cada Ilha da borda do mapa. Ilustração: manual Asmodee (p. 16)](figuras/setup-inimigo.webp)
+
+**O que volta para a caixa** (p. 4): as Runas e as Vilas que não couberam no mapa, os 3 Tabuleiros de Deus não sorteados e as Cartas de Benefício que não entraram nas fileiras. O manual não diz o que fazer com as cores que ninguém escolheu; deixe-as fora da mesa (com 2 jogadores, parte delas vira o inimigo). Um Colono do inimigo removido de uma Ilha vai para a caixa (p. 16). As Cartas Viking ainda não são distribuídas: cada era começa com a Seleção de Cartas (p. 7).
+
+!fig[Uma partida de 4 jogadores em andamento, na foto da editora, com componentes em inglês; algumas Cartas de Benefício já foram conquistadas: o mapa no centro, os deuses e o Tabuleiro de Era no alto e, em volta, os Tabuleiros de Clã com as Cartas Viking. É a edição Deluxe, com peças diferentes das da caixa comum. Imagem: Gamelyn Games · edição Deluxe](fotos/mesa-1.webp)
+
+**Antes de começar, confira:** mapa no lado do número de jogadores, com uma Runa em cada Ilha e as Vilas; 3 deuses com a Fúria no 0; Tabuleiro de Era com o Corvo na Era 1 e o espaço livre à esquerda; Baralho Viking com lugar para o descarte; as duas fileiras de Benefício conforme a tabela; cada Tabuleiro de Clã com 6 Colonos, 3 Barcos, 2 Templos e os recursos no 2; Marcador de Chefe entregue; um Barco de cada jogador num Fiorde da borda.
+
+?? Partida de 3 jogadores. Qual mesa está certa?
+- ( ) 7 Cartas de Benefício em cada fileira e os recursos de cada jogador no 0
+- (x) 5 Cartas de Benefício em cada fileira e o Barco separado de cada jogador num Fiorde vazio da borda do mapa
+- ( ) 5 Cartas de Benefício em cada fileira e o Barco separado de cada jogador numa Doca de Ilha
+- ( ) 5 Cartas de Benefício em cada fileira e o inimigo com 1 Templo e 2 Colonos nas Ilhas da borda
+= Com 3 jogadores, cada fileira tem 5 cartas, e o Barco separado vai para um Fiorde vazio que encoste na borda do mapa, não para uma Doca. Os recursos começam no 2, e o inimigo só entra com 2 jogadores (p. 4 e 16).
+
 ## 4min. Comece a jogar em 4 minutos
 
 **Meta:** em 4 minutos de leitura, montar a mesa e jogar o seu primeiro turno sem abrir o manual.
@@ -12,15 +118,13 @@ Você comanda um clã viking por 3 eras. Em cada era, monta uma mão de **Cartas
 
 ### Monte a mesa
 
-Na ordem. O marcado *(depois)* se monta já e se usa mais tarde.
+A montagem completa, com figuras, está na seção "Montar a mesa passo a passo", logo acima. O essencial (p. 4):
 
-1. Tabuleiro de Mapa no centro, no lado com o ícone do seu número de jogadores; 1 Runa em cada Ilha, no tipo do ícone; 1 Vila em cada espaço de Vila *(depois)* (p. 4).
-2. 3 Tabuleiros de Deus sorteados acima do mapa, cada um com 1 Marcador de Fúria sorteado no 0. O símbolo do marcador diz qual Runa é daquele deus (p. 4; o vínculo aparece nas figuras das p. 5, 13 e 15).
-3. Tabuleiro de Era, lado do Corvo para cima, com o Corvo no 1; Cartas Viking embaralhadas num baralho (p. 4).
-4. Cartas de Benefício viradas para cima em duas fileiras, acima e abaixo do mapa: 4 por fileira com 2 jogadores, 5 com 3, 7 com 4 *(depois)* (p. 4).
-5. Cada jogador: Tabuleiro de Clã com 6 Colonos, 3 Barcos e 2 Templos nos espaços; 1 Barco separado; Madeira, Alimento e Aço no 2 (p. 4).
-6. Quem esteve numa ilha mais recentemente pega o Marcador de Chefe. A partir do jogador à direita dele, no sentido anti-horário, cada um põe o Barco separado num Fiorde vazio na borda do mapa (p. 4).
-7. **Com 2 jogadores:** com peças das 2 cores que sobraram, o inimigo põe 1 Templo e 2 Colonos em cada uma das 3 Ilhas que tocam a borda do mapa. As Runas ficam nas Ilhas, e a Fúria não sobe (p. 16). A seleção de cartas também muda: veja "Situações especiais".
+1. Mapa no lado com o ícone 1-3 (2 ou 3 jogadores) ou 4, com 1 Runa em cada Ilha e as Vilas; 3 deuses sorteados acima, cada um com 1 Marcador de Fúria no 0. O símbolo do marcador diz qual Runa é daquele deus (o vínculo aparece nas figuras das p. 5, 13 e 15).
+2. Tabuleiro de Era com o Corvo no 1; Baralho Viking; Cartas de Benefício em duas fileiras: 4 por fileira com 2 jogadores, 5 com 3, 7 com 4.
+3. Cada jogador: Tabuleiro de Clã com 6 Colonos, 3 Barcos e 2 Templos; 1 Barco separado; Madeira, Alimento e Aço no 2.
+4. Quem esteve numa ilha mais recentemente pega o Marcador de Chefe. A partir do jogador à direita dele, no sentido anti-horário, cada um põe o Barco separado num Fiorde vazio da borda do mapa.
+5. **Com 2 jogadores:** o inimigo põe 1 Templo e 2 Colonos em cada Ilha da borda (p. 16), e a seleção de cartas muda: veja "Situações especiais".
 
 ### Seu primeiro turno
 
@@ -99,21 +203,19 @@ Cinco etapas, na ordem em que você precisa delas: mesa; cartas e turno; mapa; b
 >
 > **O Tabuleiro de Clã** guarda as suas peças fora do mapa, com o custo de cada uma, e as trilhas de recursos, de 0 a 7 (p. 6 e 12).
 
-> [!passos] **Passo a passo: preparação** (p. 4 e 5). Igual para 2, 3 ou 4 jogadores, salvo nos passos 1 e 6 e nas peças do inimigo com 2 jogadores (veja abaixo).
+> [!passos] **Passo a passo: preparação** (p. 4 e 5). Igual para 2, 3 ou 4 jogadores, salvo nos passos 1 e 8 e nas peças do inimigo com 2 jogadores (veja abaixo).
 >
-> 1. Tabuleiro de Mapa no centro, no lado do ícone do número de jogadores.
+> 1. Tabuleiro de Mapa no centro, no lado do ícone do número de jogadores (1-3 ou 4).
 > 2. 1 Runa em cada Ilha, conforme o ícone; Runas que sobram voltam à caixa.
 > 3. 1 Vila em cada espaço de Vila do mapa, exceto nos espaços marcados com um barco; as que sobram voltam à caixa.
 > 4. 3 Tabuleiros de Deus sorteados, virados para cima, em fileira acima do mapa; os outros voltam à caixa.
 > 5. 1 Marcador de Fúria sorteado em cada deus, no espaço 0 da Trilha de Fúria.
-> 6. Cartas de Benefício embaralhadas, viradas para cima, em duas fileiras, acima e abaixo do mapa: 4 por fileira (2 jogadores), 5 (3 jogadores) ou 7 (4 jogadores). As que sobram voltam à caixa.
-> 7. Tabuleiro de Era com o Corvo para cima, à direita dos deuses; o Corvo no espaço 1. Deixe livre, à esquerda dele, um espaço para uma Carta de Benefício.
-> 8. Baralho Viking embaralhado, virado para baixo, com espaço ao lado para a Pilha de Descarte.
+> 6. Tabuleiro de Era com o lado do Corvo para cima, à direita dos deuses; o Corvo no espaço 1. Deixe livre, à esquerda dele, um espaço para uma Carta de Benefício.
+> 7. Baralho Viking embaralhado, virado para baixo, com espaço ao lado para a Pilha de Descarte.
+> 8. Cartas de Benefício embaralhadas, viradas para cima, em duas fileiras, acima e abaixo do mapa: 4 por fileira (2 jogadores), 5 (3 jogadores) ou 7 (4 jogadores). As que sobram voltam à caixa.
 > 9. Cada jogador: Tabuleiro de Clã; 6 Colonos nos espaços; 3 Barcos nos espaços e 1 separado; 2 Templos nos espaços; 1 Marcador de Pontuação separado; Madeira, Alimento e Aço no espaço 2 da Trilha de Recursos.
 > 10. O Marcador de Chefe vai para quem esteve numa ilha mais recentemente.
 > 11. A partir do jogador à direita do Chefe, no sentido anti-horário e terminando no Chefe, cada um põe o Barco separado num Fiorde vazio que encoste na borda do mapa.
-
-!fig[A mesa de uma partida de 4 jogadores: os 3 deuses com o Marcador de Fúria no 0, o Tabuleiro de Era com o Corvo na Era 1, o Baralho Viking, 7 Cartas de Benefício acima e 7 abaixo do mapa, uma Runa em cada Ilha, as Vilas nos seus espaços e o Barco separado indo para um Fiorde da borda. Ilustração: manual Asmodee (p. 5)](figuras/preparacao.webp)
 
 > [!mais] **Partida de 2 jogadores: o inimigo.** Com 2 jogadores entra um terceiro clã, o inimigo, com as peças de duas cores que ninguém usa. Ponha 1 Templo e 2 Colonos em cada uma das 3 Ilhas Periféricas, as que tocam a borda do mapa. O inimigo começa controlando essas Ilhas, mas as Runas ficam nelas e nenhuma Fúria sobe. Um Colono do inimigo removido de uma Ilha volta para a caixa (p. 16). O manual não dá turnos ao inimigo: ele só ocupa as Ilhas e entra na seleção de cartas. Cada Ilha dele começa com Influência 6 (Templo 4 e 2 Colonos), e para tomá-la vale a regra normal: mais Influência que ele e pés no chão. Como a Runa está na Ilha, quem a toma a pega "diretamente da Ilha", e a Fúria do deus dela sobe 1 (p. 13 e 16).
 

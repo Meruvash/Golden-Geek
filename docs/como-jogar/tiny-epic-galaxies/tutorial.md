@@ -2,6 +2,88 @@
 
 *Regras conferidas no Manual de Regras da edição brasileira (Meeple BR Jogos, 12 páginas, tradução de Guilherme Duque, arquivo de 2017 publicado no site da editora). As páginas citadas são as desse manual.*
 
+## setup. Montar a mesa passo a passo
+
+A montagem segue a página de preparação do manual (p. 3), na mesma ordem dos oito passos de lá, com a lista de componentes da p. 2 e a regra de quem começa da p. 4. É a mesma para 2 a 5 jogadores, salvo no passo 6 (os planetas) e nas Missões Secretas que voltam para a caixa. A partida solo, contra os Piratas Galácticos, vem logo depois da tabela (p. 10).
+
+**O que vem na caixa** (p. 2):
+
+| Componente | Quantidade |
+|---|---|
+| Painéis Galácticos (no verso, as Frotas de Piratas) | 5 |
+| Painel de Controle | 1 |
+| Cartas de Planeta | 40 |
+| Cartas de Missão Secreta | 12 |
+| Dados de Ação | 7 |
+| Naves | 20, 4 de cada cor |
+| Marcadores de Império / de Energia / de Cultura | 5 de cada tipo, 1 por cor |
+
+!fig[A caixa de Tiny Epic Galaxies e os componentes, na foto da editora: Missões Secretas, Cartas de Planeta, as Naves e os marcadores das cinco cores, os 7 Dados de Ação, os Painéis Galácticos, o livro de regras e o Painel de Controle. São componentes com textos em inglês, como na edição brasileira. Imagem: MeepleBR](fotos/componentes-1.webp)
+
+1. **Cada jogador pega um Painel Galáctico** na cor que preferir, com a galáxia para cima. O verso, com as Frotas de Piratas, só se usa na partida solo (p. 3).
+
+!fig[Os Painéis Galácticos, um de cada cor, com a galáxia para cima: a trilha de recursos de 1 a 7 em volta da galáxia, a trilha de Naves e a trilha de Império à direita. Ilustração: manual Meeple BR (p. 2)](figuras/setup-paineis.webp)
+
+2. **Cada jogador pega as peças da sua cor:** 4 Naves, 1 Marcador de Cultura, 1 Marcador de Energia e 1 Marcador de Império (p. 3).
+
+!fig[As peças das cinco cores: em cima, as Naves; embaixo, da esquerda para a direita, os Marcadores de Império (com a estrela), de Energia (cubos com o raio) e de Cultura (cilindros com a coluna). Cada jogador usa 4 Naves e 1 marcador de cada tipo da sua cor. Ilustração: manual Meeple BR (p. 2)](figuras/setup-pecas.webp)
+
+3. **Ponha 2 Naves de pé no centro do seu Painel Galáctico** e as outras 2 nos espaços marcados da trilha de Naves (p. 3). Só as 2 do centro estão disponíveis no começo; as da trilha entram quando o seu Nível de Império sobe (p. 3 e 8).
+
+!fig[Um Painel Galáctico verde já montado: 2 Naves de pé no centro, sobre a galáxia, e 2 Naves nos espaços da trilha de Naves, à direita, com a Missão Secreta embaixo do painel. Ilustração: manual Meeple BR (p. 3)](figuras/setup-naves.webp)
+
+4. **Marque os recursos na trilha de recursos:** o Marcador de Cultura no 1 e o Marcador de Energia no 2. Todos começam com 1 Cultura e 2 Energias (p. 3).
+5. **Ponha o Marcador de Império no primeiro espaço da trilha de Império**, o da estrela (p. 3). É ele que diz quantos dados você rola: 4 no primeiro turno (p. 4).
+
+!fig[O Painel Galáctico amarelo pronto para começar: à esquerda, o cubo de Energia e o cilindro de Cultura no começo da trilha de recursos; no centro, as 2 Naves de pé; à direita, as 2 Naves da trilha de Naves; embaixo, o Marcador de Império no primeiro espaço da trilha de Império; ao lado, a Missão Secreta embaixo do painel. Ilustração: manual Meeple BR (p. 3)](figuras/setup-painel.webp)
+
+6. **Embaralhe as Cartas de Planeta e abra no centro da mesa o número de jogadores mais 2**, viradas para cima. Com 5 jogadores, abra só 6. São os planetas disponíveis (p. 3). O resto do baralho fica numa pilha ao lado, com o verso para cima, como na ilustração: é dela que sai a carta que repõe cada planeta colonizado (p. 3 e 7).
+
+!fig[Os planetas disponíveis de uma partida de 3 jogadores, 5 cartas viradas para cima, e a pilha de Cartas de Planeta à direita. Ilustração: manual Meeple BR (p. 3)](figuras/setup-planetas.webp)
+
+7. **Ponha o Painel de Controle e os 7 Dados de Ação no centro da mesa** (p. 3), ao alcance de todos. No mesmo painel ficam a Área de Ativação, com os espaços de 1 a 7, que recebe os dados usados em cada turno (p. 4), e o Conversor (p. 9).
+
+!fig[O Painel de Controle, com o Conversor à esquerda e a Área de Ativação numerada de 1 a 7 embaixo, e os 7 Dados de Ação ao lado. Ilustração: manual Meeple BR (p. 3)](figuras/setup-controle.webp)
+
+8. **Embaralhe as Cartas de Missão Secreta e dê 2 a cada jogador.** Cada um olha as duas, põe uma embaixo do próprio Painel Galáctico e descarta a outra. A sua missão fica em segredo até o fim da partida. As cartas que sobraram voltam para a caixa sem que ninguém as olhe (p. 3).
+
+!fig[Cartas de Missão Secreta: o verso, à esquerda, e a frente de uma missão, à direita. Ilustração: manual Meeple BR (p. 2)](figuras/setup-missao.webp)
+
+9. **Defina quem começa.** O jogador mais novo começa, ou usem outro método que preferirem; a vez segue no sentido horário (p. 4 e 9).
+
+!fig[A mesa montada para 3 jogadores: o Painel de Controle e os 7 Dados de Ação no alto, os 5 planetas disponíveis ao lado da pilha de Cartas de Planeta e os três Painéis Galácticos, cada um com 2 Naves no centro, 2 na trilha de Naves, os marcadores de recursos, o Marcador de Império na estrela e a Missão Secreta embaixo. Ilustração: manual Meeple BR (p. 3)](figuras/preparacao.webp)
+
+**O que muda com o número de jogadores** (p. 3 e 10):
+
+| Jogadores | Planetas abertos | Cartas na pilha de planetas | Missões distribuídas (2 por jogador) | Missões que voltam à caixa sem ser olhadas | Painéis Galácticos fora da partida |
+|---|---|---|---|---|---|
+| 1 (solo) | 4 | 36 | nenhuma | 12 | 3 (você e os Piratas usam 2) |
+| 2 | 4 | 36 | 4 | 8 | 3 |
+| 3 | 5 | 35 | 6 | 6 | 2 |
+| 4 | 6 | 34 | 8 | 4 | 1 |
+| 5 | 6 | 34 | 10 | 2 | nenhum |
+
+**O que volta para a caixa:** as Cartas de Missão Secreta que não foram distribuídas, sem que ninguém as olhe (p. 3). Painéis Galácticos fora da partida, com as Naves e os marcadores das cores que ninguém escolheu (no solo, a cor dos Piratas entra): o manual não manda usá-los, e é leitura deste guia que ficam de lado, como a missão que cada jogador descarta. Os 7 Dados de Ação e o Painel de Controle entram sempre, com qualquer número de jogadores (p. 3).
+
+**Partida solo** (p. 10). A montagem é a de uma partida de 2 jogadores, com estas mudanças:
+
+1. **Escolha uma Frota de Piratas para enfrentar**: é o verso de outro Painel Galáctico, de cor diferente da sua. Cada cor é uma frota diferente, com uma dificuldade, de Iniciante a Épico (p. 10).
+2. **Use as 4 Naves e os 3 marcadores da cor desse painel**, como na ilustração, **e ponha as 4 Naves no centro do painel dos Piratas**, todas disponíveis desde o começo, e o Marcador de Império deles no primeiro espaço da trilha de Império, o da estrela (p. 10).
+3. **Os marcadores de Energia e de Cultura dos Piratas ficam fora do painel**: eles começam com zero dos dois (p. 10).
+4. **Ninguém pega Missão Secreta** (p. 10).
+5. **Você começa** (p. 10).
+
+!fig[Uma Frota de Piratas montada para a partida solo: as 4 Naves no centro do painel, o Marcador de Império no primeiro espaço da trilha de Império e, fora do painel, os marcadores de Energia e de Cultura, que começam em zero. Ilustração: manual Meeple BR (p. 10)](figuras/setup-solo.webp)
+
+**Antes de começar, confira:** cada painel com 2 Naves de pé no centro e 2 na trilha de Naves, 1 Cultura e 2 Energias, o Marcador de Império na estrela e 1 Missão Secreta embaixo; planetas abertos conforme a tabela, com a pilha ao lado; Painel de Controle e 7 dados no centro; quem começa definido. No solo: 4 planetas, nenhuma Missão, Frota de Piratas com 4 Naves no centro, Império na estrela e 0 de Energia e Cultura; você começa.
+
+?? Partida de 5 jogadores. Qual mesa está certa?
+- ( ) 7 planetas abertos; cada jogador com 1 Missão Secreta embaixo do painel
+- (x) 6 planetas abertos; cada jogador com 2 Naves no centro do painel, 2 na trilha de Naves e 1 Missão Secreta embaixo
+- ( ) 6 planetas abertos; cada jogador com as 4 Naves no centro do painel
+- ( ) 6 planetas abertos; cada jogador com as 2 Missões Secretas embaixo do painel
+= Com 5 jogadores, o manual abre só 6 planetas, e não 7. Cada jogador começa com 2 Naves no centro e 2 na trilha de Naves (as 4 no centro são só dos Piratas, no solo) e fica com 1 das 2 Missões Secretas, descartando a outra (p. 3 e 10).
+
 ## 4min. Comece a jogar em 4 minutos
 
 **Meta:** em 4 minutos de leitura, montar a mesa e jogar o seu primeiro turno sem abrir o manual.
@@ -12,17 +94,13 @@ Cada jogador comanda um império galáctico. No seu turno, você rola **Dados de
 
 ### Monte a mesa
 
-Na ordem. O marcado *(depois)* se monta já e se usa mais tarde.
+A montagem completa, com figuras, está na seção "Montar a mesa passo a passo", logo acima. O essencial (p. 3 e 4):
 
-1. Cada jogador pega um Painel Galáctico e, da mesma cor, 4 Naves, 1 Marcador de Cultura, 1 Marcador de Energia e 1 Marcador de Império. O verso do painel é da partida solo *(depois)*.
-2. 2 Naves de pé no centro do painel; as outras 2 nos espaços da trilha de Naves *(depois)*.
-3. Na trilha de recursos, marque 1 Cultura e 2 Energias.
-4. Marcador de Império no primeiro espaço da trilha de Império, o da estrela.
-5. Abra no centro da mesa Cartas de Planeta em número igual ao de jogadores mais 2; com 5 jogadores, só 6. São os planetas disponíveis.
-6. Painel de Controle e os 7 Dados de Ação no centro.
-7. Cada jogador recebe 2 Cartas de Missão Secreta, fica com 1, escondida embaixo do painel, e descarta a outra *(depois)*.
-
-Tudo isso está na p. 3. O jogador mais novo começa, e a vez segue no sentido horário (p. 4 e 9).
+1. Cada jogador: Painel Galáctico, 2 Naves de pé no centro e 2 na trilha de Naves, 1 Cultura e 2 Energias, Marcador de Império na estrela e 1 Missão Secreta escondida embaixo (receba 2, fique com 1).
+2. Planetas abertos no centro: o número de jogadores mais 2; com 5 jogadores, só 6.
+3. Painel de Controle e os 7 Dados de Ação no centro.
+4. O mais novo começa; a vez segue no sentido horário.
+5. Solo: veja a seção acima.
 
 ### Seu primeiro turno
 
@@ -111,7 +189,7 @@ O guia tem quatro etapas, cada uma uma parte real da partida: montar a mesa; rol
 >
 > **A trilha de Império** marca o seu Nível de Império. Cada espaço mostra quantos dados você rola, quantas Naves pode usar e quantos pontos de vitória o nível vale, e o número do espaço é o custo para chegar nele (p. 3 e 8).
 
-> [!passos] **Passo a passo: preparação** (p. 3). Igual para 2 a 5 jogadores, salvo no passo 6.
+> [!passos] **Passo a passo: preparação** (p. 3), resumida (veja as figuras em "Montar a mesa passo a passo"). Igual para 2 a 5 jogadores, salvo no passo 6 (os planetas) e nas Missões Secretas que voltam para a caixa.
 >
 > 1. Cada jogador recebe um Painel Galáctico, com a galáxia para cima.
 > 2. Cada um pega, da sua cor, 4 Naves, 1 Marcador de Cultura, 1 Marcador de Energia e 1 Marcador de Império.
@@ -123,9 +201,7 @@ O guia tem quatro etapas, cada uma uma parte real da partida: montar a mesa; rol
 > 8. Embaralhe as Cartas de Missão Secreta e dê 2 a cada jogador. Cada um escolhe 1, põe embaixo do painel e descarta a outra. As cartas ficam secretas até o fim. O resto volta para a caixa sem ser olhado.
 > 9. O jogador mais novo começa, ou escolham outro jeito.
 
-!fig[A mesa montada para 3 jogadores: o Painel de Controle e os 7 Dados de Ação no centro, 5 planetas disponíveis ao lado da pilha de Cartas de Planeta e, em cada Painel Galáctico, 2 Naves no centro, 2 na trilha de Naves, os marcadores de recursos, o Marcador de Império na estrela e a Missão Secreta embaixo. Ilustração: manual Meeple BR (p. 3)](figuras/preparacao.webp)
-
-> [!mais] **Partida solo.** Com 1 jogador, a preparação é a de 2 jogadores, e o adversário é uma Frota de Piratas, impressa no verso de um Painel Galáctico. Veja as Situações especiais (p. 10).
+> [!mais] **Partida solo.** Com 1 jogador, a preparação é a de 2 jogadores, e o adversário é uma Frota de Piratas, impressa no verso de outro Painel Galáctico. A montagem solo está em "Montar a mesa passo a passo", e as regras do turno, nas Situações especiais (p. 10).
 
 > [!edicao] Nas ilustrações do manual brasileiro, o Painel de Controle, os painéis e as cartas aparecem com textos em inglês ("Activation Bay", "Converter"). Para as ações escritas nas Cartas de Planeta, o manual manda consultar o interior da caixa (p. 8). Este guia usa os nomes do manual em português.
 
