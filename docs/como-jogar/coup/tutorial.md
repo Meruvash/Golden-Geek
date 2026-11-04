@@ -108,7 +108,7 @@ O guia tem três etapas, cada uma uma parte real da partida: montar a mesa e usa
 > 5. Dê 1 carta de ajuda a cada jogador.
 > 6. Quem venceu a última partida começa.
 
-> [!edicao] **Quantas cartas usar.** O livreto lista 25 cartas de personagem, 5 de cada, e mais 5 de Inquisidor (p. 2), mas não diz quantas entram numa partida comum. Este guia usa 3 de cada, 15 ao todo, por três motivos lidos no próprio livreto: o exemplo de 3 jogadores deixa 9 cartas no Baralho da Corte, o que só fecha com 15 (p. 7); a variante para 7 ou mais jogadores manda incluir 4 ou 5 de cada (p. 8); e a variante do Inquisidor fala em tirar as 3 cartas de Embaixador (p. 8). O manual em inglês, cuja caixa tem só 15 cartas, confirma a conta.
+> [!edicao] **Quantas cartas usar.** O livreto lista 25 cartas de personagem, 5 de cada, e 5 de Inquisidor (p. 2), sem dizer quantas entram numa partida comum. Este guia usa 3 de cada porque o exemplo de 3 jogadores deixa 9 cartas no Baralho da Corte, o que só fecha com 15 (p. 7), a variante para 7 ou mais jogadores manda usar 4 ou 5 de cada e a do Inquisidor fala em tirar as 3 cartas de Embaixador (p. 8). O manual em inglês, cuja caixa tem 15 cartas, confirma.
 
 > [!passos] **Passo a passo: o turno e as ações gerais** (p. 3 e 4).
 >
@@ -156,33 +156,19 @@ O guia tem três etapas, cada uma uma parte real da partida: montar a mesa e usa
 > - (x) Devolve todas ao Tesouro Central
 > = Devolve todas ao **Tesouro Central** e deixa as duas cartas viradas para cima (p. 3).
 
-> [!treino] **Treino rápido.** Quantas moedas o jogador tem no fim da vez?
+> [!treino] **Treino rápido.**
 >
-> ?? Tinha 3 e pegou Renda.
-> - ( ) 5
-> - (x) 4
-> - ( ) 3
-> = **4.** Renda dá 1 moeda (p. 4).
->
-> ?? Tinha 4, pediu Ajuda Externa e ninguém bloqueou.
+> ?? Tinha 4 moedas, pediu Ajuda Externa e ninguém bloqueou. Quantas tem agora?
 > - (x) 6
 > - ( ) 5
 > - ( ) 7
 > = **6.** Ajuda Externa dá 2 moedas (p. 4).
->
-> ?? Tinha 8 e deu um Golpe de Estado.
-> - ( ) 0
-> - (x) 1
-> - ( ) 3
-> = **1.** O Golpe custa 7 (p. 4).
 
 ## 3. Etapa 2: os personagens e as ações contrárias
 
-> [!entender] **Para entender.** Cada personagem dá duas coisas possíveis: uma ação de personagem, que você faz na sua vez, e às vezes uma ação contrária, que bloqueia a ação de outro jogador. Nas duas você só *diz* que tem o personagem (p. 4 e 5).
+> [!entender] **Para entender.** Cada personagem dá uma ação de personagem, que você faz na sua vez, e às vezes uma ação contrária, que bloqueia a ação de outro jogador. Nas duas você só *diz* que tem o personagem (p. 4 e 5). Por isso importa menos quais cartas você tem do que quais a mesa acredita que você tem.
 >
-> Isso muda a pergunta de cada turno. Não importa só quais cartas você tem, mas quais a mesa acredita que você tem. Quem pega moedas com o Duque três vezes seguidas está dizendo "tenho o Duque", e cada repetição torna a frase mais fácil ou mais arriscada de contestar.
->
-> Duas regras de dinheiro valem para tudo: quem bloqueia não paga nada, e quando uma ação é bloqueada, as moedas que ela custou ficam gastas (p. 5). A exceção, a contestação que derruba a ação e devolve o dinheiro, é da etapa 3.
+> Uma regra de dinheiro vale para tudo: quando uma ação é bloqueada, as moedas que ela custou ficam gastas (p. 5). A contestação, que derruba a ação e devolve o dinheiro, é da etapa 3.
 
 !fig[Os cinco personagens como aparecem no livreto, ao lado das suas ações: Duque, Assassino, Capitão, Embaixador e Condessa. Ilustração: manual FunBox Jogos (p. 4 e 5)](figuras/personagens.webp)
 
@@ -207,8 +193,6 @@ O guia tem três etapas, cada uma uma parte real da partida: montar a mesa e usa
 !fig[Os personagens que bloqueiam, na ordem do livreto: o Duque bloqueia a Ajuda Externa, a Condessa bloqueia o Assassinato, e o Embaixador e o Capitão bloqueiam a Extorsão. Ilustração: manual FunBox Jogos (p. 5)](figuras/acoes-contrarias.webp)
 
 > [!atencao] Quem bloqueia o Assassino e o Capitão é só o jogador atacado (p. 5). O Duque é diferente: qualquer jogador pode bloquear a Ajuda Externa de outro, mesmo sem estar envolvido (p. 5).
-
-> [!dica] O Embaixador é a ação que muda as suas cartas sem que a mesa veja quais entraram. Depois de perder uma influência, ele pode ser um jeito de buscar o personagem que você mais vem anunciando. É uma sugestão de jogo, não uma regra.
 
 > [!resolvido] **Exemplo resolvido.** Bruno tem 5 moedas e diz: "Sou o Assassino, assassino Ana". Ele paga 3 ao Tesouro Central e fica com 2. Ninguém contesta o Assassino. Ana diz: "Tenho a Condessa, bloqueio". Ninguém contesta Ana. O Assassinato falha, Ana não perde nada, e Bruno continua com 2 moedas: o que se paga numa ação bloqueada não volta (p. 5).
 
@@ -238,21 +222,13 @@ O guia tem três etapas, cada uma uma parte real da partida: montar a mesa e usa
 > - ( ) Nenhuma, se não quiser trocar
 > - ( ) 1
 > - (x) 2
-> = **2.** Você pega 2, troca de nenhuma a duas com as suas e devolve 2 (p. 5). Fica com o mesmo número de cartas de antes.
->
-> ?? Ana é alvo do Assassino. Quem pode bloquear com a Condessa?
-> - ( ) Qualquer jogador
-> - (x) Só Ana
-> - ( ) Ana ou o jogador à esquerda dela
-> = **Só Ana.** O bloqueio da Condessa é do jogador que está sendo assassinado (p. 5).
+> = **2.** Você pega 2, troca de nenhuma a duas com as suas e devolve 2 (p. 5).
 
 ## 4. Etapa 3: contestar e blefar
 
-> [!entender] **Para entender.** A contestação é o motor de Coup. Sem ela, todo mundo diria ter o Duque o tempo todo. Com ela, cada blefe tem preço, e cada dúvida também: quem contesta e erra perde uma influência (p. 6).
+> [!entender] **Para entender.** Sem contestação, todo mundo diria ter o Duque o tempo todo. Com ela, cada blefe tem preço, e cada dúvida também: quem contesta e erra perde uma influência (p. 6). Quem ganha mostrando o personagem troca a carta por outra do Baralho da Corte, e a mesa deixa de saber o que ele tem (p. 6): provar a verdade não entrega a sua mão.
 >
-> Repare no que acontece com quem ganha. Ao mostrar o personagem, ele devolve a carta ao Baralho da Corte, embaralha e pega outra. Ele não perde influência, mas a mesa não sabe mais o que ele tem (p. 6). Provar a verdade, então, não entrega a sua mão.
->
-> A ordem importa. As contestações são resolvidas antes da ação ou da ação contrária (p. 3). Na prática, como no exemplo do livreto (p. 7): alguém anuncia uma ação; os outros podem contestá-la; se ela sobrevive, o alvo ou quem puder pode bloquear; o bloqueio também pode ser contestado; só então algo acontece.
+> As contestações são resolvidas antes da ação ou da ação contrária (p. 3). Na prática, como no exemplo do livreto (p. 7): alguém anuncia; os outros podem contestar; se a ação sobrevive, pode vir o bloqueio; o bloqueio também pode ser contestado; só então algo acontece.
 
 > [!passos] **Passo a passo: contestação** (p. 6).
 >
@@ -272,8 +248,6 @@ O guia tem três etapas, cada uma uma parte real da partida: montar a mesa e usa
 !fig[O Assassino e a Condessa, o par que mais derruba jogador numa só vez: quem blefa a Condessa e é contestado pode perder as duas influências. Ilustração: manual FunBox Jogos (p. 4 e 5)](figuras/assassino-condessa.webp)
 
 > [!atencao] Contestação ganha devolve as moedas, bloqueio não. Se o Assassino é contestado e não tinha a carta, as 3 moedas voltam para ele (p. 6). Se o Assassino é bloqueado pela Condessa, as 3 moedas ficam gastas (p. 5).
-
-> [!edicao] **Ganhou a contestação, e a ação?** O livreto diz que, depois de quem ganhou trocar a carta, "a ação ou ação contrária é resolvida" (p. 6). Ou seja, quem provou ter o Duque ainda pega as 3 moedas, como no exemplo do próprio livreto (p. 7). Isso é regra; o que o livreto não define é quem contesta primeiro quando dois jogadores querem contestar ao mesmo tempo. Combine com a mesa antes de começar.
 
 > [!resolvido] **Exemplo resolvido.** Bruno tem 4 moedas e uma carta de Duque e outra de Capitão. Ele diz: "Sou o Assassino, assassino Ana" e paga 3, ficando com 1. Ana contesta. Bruno não tem o Assassino, então não mostra nada e perde a contestação: vira o seu Capitão para cima. A ação falha inteira, Ana não perde nada, e as 3 moedas voltam para Bruno, que fica de novo com 4 (p. 6).
 
@@ -299,19 +273,13 @@ O guia tem três etapas, cada uma uma parte real da partida: montar a mesa e usa
 > - ( ) Nenhuma, se depois disser que tem a Condessa
 > = **2**, e você está fora. É o perigo duplo do Assassino (p. 6).
 >
-> ?? Bruno pegou Renda na vez dele. Carla pode contestar?
-> - ( ) Sim, qualquer ação pode ser contestada
-> - (x) Não: Renda não exige personagem, e só se contesta ação ou ação contrária de personagem
-> - ( ) Só se ela tiver o Duque
-> = **Não.** Só ações e ações contrárias de personagem podem ser contestadas (p. 6), e a Renda é uma ação geral (p. 4).
->
 > ?? Ana anunciou o Capitão contra Bruno, Bruno bloqueou com o Embaixador e já começou a vez seguinte. Ana ainda pode contestar o Embaixador de Bruno?
 > - ( ) Sim, até o fim da rodada
 > - (x) Não: quando o jogo segue, não se contesta mais
 > - ( ) Sim, mas só ela, que foi bloqueada
 > = **Não.** A contestação tem de vir na hora; depois que o jogo prossegue, a ação não pode mais ser contestada (p. 6).
 
-> [!dica] Contestar custa caro quando você tem só uma influência, porque errar elimina você. Em geral, vale mais duvidar de quem já anunciou personagens diferentes demais, ou de um personagem cujas cópias já estão viradas para cima na mesa: com 3 cópias de cada, se duas estão à vista, só sobra uma. É sugestão, não regra.
+> [!dica] Com uma influência só, contestar e errar elimina você. Uma pista útil são as cartas viradas para cima: com 3 cópias de cada personagem, se duas estão à vista, só sobra uma escondida. É sugestão, não regra.
 
 ## 5. Situações especiais
 
@@ -325,9 +293,7 @@ O guia tem três etapas, cada uma uma parte real da partida: montar a mesa e usa
 
 > [!mais] **Mais de 6 jogadores.** Com 7 ou 8 jogadores, use 4 cartas de cada personagem (20 cartas). Com 9 ou 10, use as 5 de cada (25 cartas). O livreto avisa que a partida fica mais longa e que os eliminados cedo esperam bastante, e recomenda a variante para jogadores experientes (p. 8).
 
-> [!mais] **Cartas reveladas são públicas.** Cartas viradas para cima ficam à vista de todos durante toda a partida, inclusive as de quem saiu (p. 3). Elas são informação: mostram quantas cópias de cada personagem ainda podem estar escondidas.
-
-> [!edicao] **O que o livreto não diz.** Não diz o que o Capitão faz contra quem tem 0 moedas, nem quem começa a primeira partida de um grupo (só "o vencedor da última partida", p. 2), nem a ordem quando dois jogadores querem contestar ou bloquear ao mesmo tempo. Nesses casos, decida com a mesa antes de começar e mantenha a decisão até o fim.
+> [!edicao] **O que o livreto não diz.** Não diz o que o Capitão faz contra quem tem 0 moedas, quem começa a primeira partida de um grupo (só "o vencedor da última partida", p. 2), nem a ordem quando dois jogadores querem contestar ou bloquear ao mesmo tempo. Decida com a mesa antes de começar.
 
 ## 6. Avaliação final
 

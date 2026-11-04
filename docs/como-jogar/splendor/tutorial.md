@@ -88,7 +88,7 @@ O que faz o jogo andar é o desconto. Cada carta comprada tem um bônus, uma ped
 Duas ideias sustentam o resto:
 
 - **Fichas vêm e vão; cartas ficam.** As fichas gastas voltam para o estoque. As cartas compradas ficam com você até o fim e são elas que dão bônus e quase todos os pontos (p. 3 e 4).
-- **Tudo está à vista.** As 12 cartas à venda, as fichas e as cartas de cada jogador ficam abertas na mesa. Você vê o que o adversário está perto de comprar e pode reservar a carta antes dele (p. 3 e 4).
+- **Tudo está à vista.** As 12 cartas à venda e as fichas e cartas de cada jogador ficam abertas: dá para ver o que o adversário vai comprar e reservar a carta antes dele (p. 3 e 4).
 
 ## 1. Como este guia ensina
 
@@ -231,15 +231,14 @@ O guia tem três etapas, cada uma uma parte real da partida: montar a mesa e ler
 > ?? Você tem 8 fichas e pega 3 de cores diferentes. O que acontece no fim do turno?
 > - ( ) Nada: o limite só conta na hora de comprar
 > - (x) Você devolve 1 ficha à sua escolha e fica com 10
-> - ( ) Você devolve 1 das 3 que acabou de pegar, obrigatoriamente
 > - ( ) A ação não é permitida, porque passaria de 10
-> = 11 fichas no fim do turno: devolva 1, qualquer uma, até ficar com 10 (p. 3).
+> = Com 11, devolva 1, qualquer uma (p. 3).
 >
 > ?? Você tem 2 cartas reservadas e quer reservar a carta do topo do baralho de nível 3. Pode?
 > - (x) Pode: ela vai para a sua mão sem ser mostrada, e você pega 1 ouro
 > - ( ) Não: só se reserva carta à mostra
 > - ( ) Pode, mas sem ouro, porque a carta veio do baralho
-> = Pode. A reserva pode ser do topo de um baralho, sem mostrar a carta, e fica com 3 na mão, o máximo (p. 3).
+> = Pode, sem mostrar a carta, e fica com 3 reservas, o máximo (p. 3).
 
 > [!treino] **Treino rápido: quanto você paga?**
 >
@@ -288,13 +287,13 @@ O guia tem três etapas, cada uma uma parte real da partida: montar a mesa e ler
 
 > [!mais] **Cartas reservadas no fim.** As cartas que ficaram na mão não valem pontos nem tiram pontos (manual de 2025).
 
-> [!atencao] Não há trilha de pontos: os pontos estão nas cartas e nos nobres à sua frente, sempre à vista (p. 4; manual de 2025). Confira a soma de cada um quando a partida esquentar, para ninguém ser pego de surpresa pelo 15.
+> [!atencao] Não há trilha de pontos: eles estão nas cartas e nos nobres à frente de cada um, sempre à vista (p. 4; manual de 2025). Confira as somas com frequência, para ninguém ser pego de surpresa pelo 15.
 
-> [!resolvido] **Exemplo resolvido.** Partida de 4 jogadores; Ana começou, e a ordem é Ana, Bruno, Carla e Davi. À frente de Bruno há 3 cartas verdes, 3 azuis e 2 brancas, e um nobre à mostra pede 3 verdes, 3 azuis e 3 brancos. As cartas dele valem 12 pontos.
+> [!resolvido] **Exemplo resolvido.** Partida de 4 jogadores, na ordem Ana (que começou), Bruno, Carla e Davi. Bruno tem 3 cartas verdes, 3 azuis e 2 brancas, que somam 12 pontos; um nobre à mostra pede 3 verdes, 3 azuis e 3 brancos.
 >
-> 1. No seu turno, Bruno compra uma carta branca que não vale ponto. Agora tem 3 bônus brancos.
-> 2. No fim do turno, ele cumpre o pedido do nobre: a visita vem sozinha. 12 + 3 = 15 pontos.
-> 3. Com 15, a última rodada começou. Carla e Davi ainda jogam; Ana não, porque a rodada termina em Davi, à direita dela.
+> 1. Bruno compra uma carta branca sem pontos. Agora tem 3 bônus brancos.
+> 2. No fim do turno, o nobre visita Bruno: 12 + 3 = 15 pontos. A última rodada começou.
+> 3. Carla e Davi ainda jogam; Ana não, porque a rodada termina em Davi, à direita dela.
 > 4. Davi termina com 13 pontos de cartas e um nobre: 16. Davi vence.
 
 > [!complete] **Complete.** Mesma partida, mas Davi termina com 15 pontos, empatado com Bruno. Bruno comprou 11 cartas de desenvolvimento; Davi, 9.
@@ -304,39 +303,24 @@ O guia tem três etapas, cada uma uma parte real da partida: montar a mesa e ler
 > - (x) Davi, que comprou menos cartas
 > - ( ) Os dois dividem a vitória
 > = Davi. No empate, vence quem comprou menos cartas de desenvolvimento (p. 4). Dividir a vitória só acontece se esse número também empatar (manual de 2025).
->
-> ?? As 2 cartas reservadas que Davi não comprou mudam a conta?
-> - ( ) Sim: cada uma tira 1 ponto
-> - ( ) Sim: contam como cartas compradas no desempate
-> - (x) Não: só contam as cartas compradas e os nobres
-> = Não. Carta reservada não comprada não dá nem tira pontos (manual de 2025) e não é carta comprada (p. 4).
 
-> [!suavez] **Sua vez.** Três situações.
+> [!suavez] **Sua vez.** Duas situações.
 >
 > ?? No fim do seu turno, você cumpre o pedido de dois nobres. O que acontece?
 > - ( ) Recebe os dois, 6 pontos
 > - (x) Escolhe um; o outro pode vir num turno seguinte, se ainda estiver na mesa
 > - ( ) Não recebe nenhum, porque o empate anula a visita
-> - ( ) Recebe o que pedir mais bônus
-> = Só um nobre por turno, à sua escolha (p. 4). No fim do próximo turno, se o outro ainda estiver à mostra e você ainda cumprir o pedido dele, ele visita você (p. 3 e 4).
+> = Só um nobre por turno, à sua escolha. O outro pode vir no fim de um turno seguinte, se ainda estiver na mesa (p. 3 e 4).
 >
-> ?? Um nobre pede 4 bônus vermelhos. Você tem 2 cartas vermelhas e 3 fichas vermelhas. Ele visita você?
-> - ( ) Sim: 2 bônus mais 3 fichas passam de 4
-> - (x) Não: contam só os bônus, e você tem 2
-> - ( ) Sim, se você devolver 2 fichas vermelhas ao estoque
+> ?? O nobre do manual pede 3 bônus verdes, 3 azuis e 3 brancos. Você tem 3 cartas verdes, 3 azuis e 2 brancas, e 2 fichas brancas. Ele visita você?
+> - ( ) Sim: 2 bônus brancos mais 2 fichas brancas passam de 3
+> - (x) Não: contam só os bônus, e você tem 2 brancos
+> - ( ) Sim, se você devolver 1 ficha branca ao estoque
 > = Não. O nobre olha os bônus, as cartas à sua frente, e não as fichas (p. 3).
->
-> ?? Você chega a 15 pontos no seu turno e é o primeiro jogador da partida. O que acontece?
-> - ( ) A partida acaba na hora, e você vence
-> - ( ) Joga-se mais uma rodada inteira, começando por você
-> - (x) Todos os outros jogam mais um turno, e a partida acaba
-> = Os outros completam a rodada, para que todos tenham o mesmo número de turnos; depois, vence quem tiver mais pontos (p. 4).
 
 ## 5. Situações especiais
 
-**Mais de 10 fichas durante o turno.** O limite conta só no fim do turno. No meio dele, você pode passar de 10 (manual de 2025).
-
-> [!dica] Reservar não serve só para guardar uma carta que você quer. Também tira da mesa a carta de que o adversário precisa, e ainda dá ouro. Mas cada reserva ocupa um dos 3 lugares da mão até você comprá-la, e carta reservada não pode ser descartada.
+> [!dica] Reservar também tira da mesa a carta de que o adversário precisa, e ainda dá ouro. Mas cada reserva ocupa um dos 3 lugares da mão até ser comprada.
 
 > [!edicao] O manual de 2015 diz apenas que o jogador pega 3 fichas de cores diferentes, sem dizer o que fazer se faltar cor no estoque. O de 2025 resolve: você pode pegar 2 fichas, ou até 1. Este guia segue o de 2025, que é a versão mais nova da mesma editora.
 
@@ -374,11 +358,11 @@ Responda sem consultar. Cada resposta diz o que reler.
 - (x) 5
 = **5**: 3 azuis e 2 pretas (manual de 2025; p. 4). Releia a etapa 2.
 
-?? 5. Um nobre pede 3 verdes, 3 azuis e 3 brancos. Você tem 3 cartas verdes, 3 azuis e 1 branca, mais 2 fichas brancas. Ele visita você?
-- (x) Não: faltam 2 bônus brancos
-- ( ) Sim: as 2 fichas brancas completam o pedido
-- ( ) Sim, se você gastar a sua ação para chamá-lo
-= **Não.** O nobre olha só os bônus, e a visita nunca é uma ação (p. 3). Releia a etapa 3.
+?? 5. No turno passado, você cumpriu o pedido de dois nobres e escolheu um. Neste turno, só pegou fichas, e o outro nobre continua na mesa. O que acontece no fim do turno?
+- ( ) Nada: nobre só vem no turno em que você compra uma carta
+- (x) Ele visita você, sem custar ação
+- ( ) Você pode chamá-lo, mas gasta a ação do próximo turno
+= **Ele visita você.** A verificação é no fim de qualquer turno, e a visita não é uma ação (p. 3 e 4). Releia a etapa 3.
 
 ?? 6. Bruno chega a 15 pontos. Davi joga depois e chega a 16. Quem vence?
 - ( ) Bruno, que chegou a 15 primeiro
