@@ -54,19 +54,13 @@ Na sua vez, você faz uma única ação. Passar a vez não é permitido (p. 3). 
 > - ( ) Só se ele tivesse o Duque
 > = **Sim.** Toda ação contrária feita com personagem pode ser contestada, por qualquer jogador (p. 5 e 6). O que acontece numa contestação está na etapa 3.
 
-> [!suavez] **Agora a sua mesa.** Antes de agir, pense: que ação eu posso pagar, e vou dizer a verdade ou blefar? Confira as regras que valem para qualquer mesa:
+> [!suavez] **Agora a sua mesa.** Antes de agir, pense: que ação eu posso pagar, e vou dizer a verdade ou blefar?
 >
 > ?? Você não tem o Capitão. Pode anunciar a ação do Capitão?
 > - ( ) Não: só se anuncia personagem que se tem
 > - (x) Sim: você pode blefar, e só mostra cartas se for contestado
 > - ( ) Sim, mas precisa mostrar uma carta qualquer virada para baixo
 > = **Sim.** Quem anuncia um personagem pode estar dizendo a verdade ou blefando, e não revela nada a menos que seja contestado (p. 4).
->
-> ?? Qual ação ninguém pode bloquear nem contestar?
-> - ( ) Ajuda Externa
-> - ( ) A do Duque
-> - (x) Renda
-> = **Renda.** Não exige personagem e não tem bloqueio (p. 4). A Ajuda Externa pode ser bloqueada pelo Duque, e o Duque pode ser contestado.
 
 ### Ainda não precisa saber
 
@@ -86,11 +80,9 @@ Cada vez que perde uma influência, você vira uma das suas cartas para cima, e 
 
 !fig[Dois membros da corte na ilustração da capa do livreto brasileiro. Ilustração: manual FunBox Jogos (p. 1)](figuras/capa.webp)
 
-Você é o chefe de uma família numa cidade-estado italiana, governada por uma corte fraca e corrupta. Para chegar ao poder, manipula, blefa e suborna. O objetivo é eliminar a influência de todas as outras famílias e ser a única que sobra (p. 2 e 3).
+Você é o chefe de uma família numa cidade-estado italiana, governada por uma corte fraca e corrupta, e quer eliminar a influência de todas as outras famílias (p. 2 e 3). Cada jogador tem duas cartas de personagem viradas para baixo, as suas duas **influências**, e moedas à vista. O Duque arrecada, o Assassino elimina, o Capitão extorque, o Embaixador troca cartas, a Condessa protege do Assassino (p. 4 e 5).
 
-Na mesa, isso cabe em poucas peças. Cada jogador tem duas cartas de personagem viradas para baixo, que são as suas duas **influências**, e algumas moedas à vista. Cada personagem dá direito a uma ação ou a um bloqueio: o Duque arrecada, o Assassino elimina, o Capitão extorque, o Embaixador troca cartas, a Condessa protege do Assassino (p. 4 e 5).
-
-O que faz o jogo é que ninguém confere nada até alguém duvidar. Você pode usar qualquer personagem dizendo que o tem. Se alguém contesta e você estava blefando, perde uma influência. Se você dizia a verdade, quem contestou é que perde (p. 4 e 6). Cada turno, portanto, é uma pergunta para a mesa inteira: acredito ou não?
+Ninguém confere nada até alguém duvidar. Você pode usar qualquer personagem dizendo que o tem. Se alguém contesta e você blefava, perde uma influência; se dizia a verdade, quem contestou é que perde (p. 4 e 6). Cada turno é uma pergunta para a mesa: acredito ou não?
 
 Duas ideias sustentam o resto:
 
@@ -103,15 +95,9 @@ O guia tem três etapas, cada uma uma parte real da partida: montar a mesa e usa
 
 ## 2. Etapa 1: a mesa e as ações gerais
 
-> [!entender] **Para entender.** Coup tem três tipos de componente, e cada um tem uma função.
+> [!entender] **Para entender.** **As cartas de personagem** são a sua influência: viradas para baixo, contam; viradas para cima, não. Quem escolhe qual carta virar é sempre o dono (p. 3). **O Baralho da Corte** guarda as cartas que ninguém tem e entra em jogo quando alguém usa o Embaixador ou ganha uma contestação (p. 5 e 6). **As moedas** ficam à vista, para todos saberem quem pode pagar o quê; cada moeda de ouro vale 5 (p. 2).
 >
-> **As cartas de personagem** são a sua influência. Enquanto estão viradas para baixo, contam; quando você perde uma influência, vira uma delas para cima, e ela deixa de contar. Quem escolhe qual carta virar é sempre o dono (p. 3).
->
-> **O Baralho da Corte** guarda as cartas que ninguém tem. Ele entra em jogo quando alguém usa o Embaixador ou ganha uma contestação: as cartas voltam para ele e saem dele embaralhadas (p. 5 e 6).
->
-> **As moedas** pagam as ações mais fortes. Ficam sempre à vista, para que todos saibam quem pode pagar o quê (p. 2). A caixa tem moedas comuns e moedas de ouro, e cada moeda de ouro vale 5 (p. 2).
->
-> As ações se dividem em dois grupos. As **ações gerais** (Renda, Ajuda Externa e Golpe de Estado) estão sempre disponíveis e não exigem personagem. As **ações de personagem** exigem dizer que você tem um certo personagem (p. 4). Esta etapa trata das gerais.
+> As **ações gerais** (Renda, Ajuda Externa e Golpe de Estado) estão sempre disponíveis e não exigem personagem; as **ações de personagem** exigem dizer que você tem um certo personagem (p. 4). Esta etapa trata das gerais.
 
 > [!passos] **Passo a passo: preparação** (p. 2).
 >

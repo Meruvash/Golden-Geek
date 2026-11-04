@@ -24,7 +24,7 @@ Na caixa: 1 tabuleiro, 84 cartas Dixit, 8 discos de votação e 8 coelhos de mad
 O primeiro narrador é quem primeiro pensar numa dica (p. 2). O turno tem quatro momentos (p. 2):
 
 1. **Criar o enigma.** O narrador escolhe uma carta da mão, sem mostrar, e diz a dica. Cada outro jogador escolhe na mão a carta que melhor ilustra a dica e a entrega ao narrador, virada para baixo.
-2. **Expor as cartas.** O narrador embaralha as cartas recebidas com a dele e as põe ao acaso, viradas para cima, nos espaços de carta, com os números à vista. Usam-se os espaços de 1 até o número de cartas do turno: com 6 jogadores, de 1 a 6, como no exemplo do manual.
+2. **Expor as cartas.** O narrador embaralha as cartas recebidas com a dele e as põe ao acaso, viradas para cima, nos espaços de carta, com os números à vista. Usam-se os espaços de 1 até o número de cartas do turno: com 6 jogadores, de 1 a 6, como no exemplo do manual (p. 2).
 3. **Votar.** Cada jogador, menos o narrador, gira o seu disco até o número da carta que acha ser do narrador, sem mostrar. Ninguém vota na própria carta. Todos revelam juntos e põem o disco sobre a carta votada.
 4. **Pontuar.** O narrador mostra qual era a sua carta e conta os votos que ela recebeu. Cada um avança o coelho um espaço por ponto.
 

@@ -88,3 +88,35 @@ Como no piloto: 5 a 8 adultos que nunca jogaram Dixit leem só o tutorial, monta
 ## 9. Ligação com a resenha
 
 Não há resenha de Dixit no site (`conteudo/dixit.json` não existe). Se a resenha sair, o campo `"resenha"` do JSON passa a `"dixit"` e as duas páginas se apontam.
+
+## Auditoria independente (04/11/2026)
+
+Duas auditorias de outros agentes: regras (aprovado com correções) e partida simulada (jogável com ajustes). Critério aplicado: toda afirmação sai do DIX601 com página; o que não sai foi cortado. As seções 2, 5 e 7 acima descrevem a versão anterior; onde divergirem, vale esta lista.
+
+**Auditoria de regras**
+
+1. Pilha que acaba: a regra e a folha de consulta seguem agora o DIX601 p. 2 (embaralhar o descarte). O `[!edicao]` ficou, só como diferença de redação do manual em inglês e do da Disney; saiu "O guia segue essa leitura".
+2. Expansões: cortados "As regras não mudam" e "para misturar às do jogo base"; o bloco diz só o que a p. 4 diz (lista e 84 cartas por expansão).
+3. Título do bloco trocado para "Você não pode votar em nenhuma das suas duas cartas."
+4. Legenda do vídeo: diz agora que só o fim difere (Disney: vencem todos os que chegaram a 30, manual DIX631 p. 2; básica: vence quem tem mais pontos). Cortado "3 a 6 jogadores", que o manual da Disney não afirma.
+5. Formas de dica: cortado "inventada ou"; ficou "um trecho de obras que já existem" (p. 3).
+6. Bônus do narrador: cortado "e só"; o bloco diz que os votos na carta do narrador decidem o caso e dão 3 a quem votou nela quando só alguns acertam (p. 2).
+7. Exemplo do fim: "Os dois alcançaram ou passaram 30"; "Carla e Davi recebem, cada um, 1 voto na própria carta".
+8. Etapa 3: "cartas usadas saem de jogo" virou "vão para o descarte".
+9. Cortado "As 84 cartas não têm texto, só imagens" (não está no manual). "abstrata e pessoal" virou "abstrata ou pessoal". Pelo mesmo critério, também cortei "para 3 a 8 jogadores (p. 2 e 3)" na seção 0, "Os 8 coelhos e os 8 discos explicam o limite de 8 jogadores" na etapa 1 e a menção à Libellud no bloco de 2 jogadores; ficou o que o manual diz: 8 coelhos e 8 discos (p. 2), regra própria para 3 (p. 3), nenhuma para 2. O JSON mantém "3 a 8 jogadores", que é dado da página oficial do produto, como o BRIEF permite.
+
+**Partida simulada**
+
+a. Comece: lista de componentes da p. 2 (1 tabuleiro, 84 cartas, 8 discos de votação, 8 coelhos). Não escrevi "discos numerados de 1 a 8" nem as cores: o manual não diz.
+b. Comece: trilha de pontuação, espaços de carta e disco de votação explicados no primeiro uso, com página.
+c. Lugares: o manual não fala em sentar em círculo, então não escrevi. Ficou só que o narrador passa para o jogador à esquerda (p. 2), na seção 0 e no Comece.
+d. Espaços: "de 1 até o número de cartas do turno", com o exemplo do manual (6 jogadores, 1 a 6, p. 2) no Comece e na etapa 2; na etapa 2, também 3 jogadores = 5 cartas (p. 3).
+e. Comece: os discos são postos sobre a carta votada depois de revelados (p. 2).
+f. Comece: "Cada um avança o coelho um espaço por ponto" (p. 2).
+g. Trilha: o manual só diz "início da trilha" (p. 3) e nada sobre passar do fim; nada novo foi escrito.
+h. O título ficou "### Como a partida acaba: fim do turno e fim da partida": `tools/checar_comece.py` exige uma subseção que comece com "### Como a partida acaba", e assim os dois pedidos são atendidos.
+i. "a partida acaba ali, sem novo turno".
+j. Linha "Bônus, nos dois casos" acrescentada à tabela do Comece.
+k. "(só o jogo base)" nos dois exercícios com contagem da pilha (Complete da etapa 1 e exemplo resolvido da etapa 1).
+
+**Portões depois das correções:** `checar_comece.py` passa; `vicios.py` com 0 avisos no tutorial e no JSON; 0 travessão e meia-risca no tutorial. O JSON não precisou de mudança ("publicar" continua false).

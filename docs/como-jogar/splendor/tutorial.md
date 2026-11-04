@@ -33,8 +33,7 @@ No seu turno, você faz **exatamente uma** destas quatro ações (p. 3):
 
 1. **Escolha uma ação.** Você começa sem fichas e sem bônus, então ainda não paga o custo de nenhuma carta: no primeiro turno, a escolha é entre pegar fichas e reservar.
 2. **Ouro só vem da reserva.** As duas ações de pegar fichas nunca dão ouro (p. 3).
-3. **Carta que sai da mesa é reposta na hora** pela do topo do mesmo baralho, para que haja sempre 4 de cada nível à mostra (p. 4).
-4. **Suas fichas ficam à vista** de todos, na mesa, à sua frente (p. 3).
+3. **Carta que sai da mesa é reposta na hora** pela do topo do mesmo baralho: ficam sempre 4 de cada nível à mostra (p. 4).
 
 > [!resolvido] **Exemplo resolvido.** Partida de 2 jogadores: o estoque tem 4 fichas de cada pedra e 5 de ouro. Ana começa e pega 1 ficha branca, 1 azul e 1 verde. As pilhas branca, azul e verde ficam com 3 cada; a vermelha e a preta continuam com 4. Ana termina o turno com 3 fichas.
 
@@ -50,15 +49,15 @@ No seu turno, você faz **exatamente uma** destas quatro ações (p. 3):
 > - ( ) Sim, deixando a pilha azul com 1
 > - (x) Não: a pilha azul tem só 3
 > - ( ) Sim, se ele pegar também 1 ficha de ouro
-> = Não. Com 3 fichas na pilha, ninguém pega 2 azuis. As ações de pegar fichas nunca dão ouro (p. 3).
+> = Não. A pilha azul tem 3, e pegar fichas nunca dá ouro (p. 3).
 
 > [!suavez] **Agora a sua mesa.** Olhe o estoque e as 12 cartas antes de escolher.
 >
-> ?? Você quer uma ficha de ouro. Qual ação dá ouro?
-> - ( ) Pegar 3 fichas diferentes, escolhendo o ouro como uma delas
-> - (x) Reservar uma carta
-> - ( ) Pegar 2 fichas iguais na pilha de ouro
-> = Reservar é a única forma de conseguir ouro (p. 3).
+> ?? Alguma pilha de pedra tem menos de 4 fichas?
+> - ( ) Sim: então ninguém pode pegar fichas dela
+> - (x) Sim: dela você pode pegar 1 ficha, como parte das 3 diferentes, mas não 2 iguais
+> - ( ) Não importa: o mínimo de 4 vale só para o ouro
+> = Uma pilha com menos de 4 ainda entra nas 3 fichas diferentes; só a ação de 2 iguais pede 4 na pilha (p. 3).
 >
 > ?? Você reservou uma carta de nível 1 que estava à mostra. O que acontece com o espaço vazio?
 > - ( ) Fica vazio até o fim da rodada
@@ -82,9 +81,9 @@ Quando alguém chega a 15 pontos de prestígio, a rodada é completada para que 
 
 ## 0. Antes de tudo: o que é este jogo
 
-Você é um comerciante de pedras preciosas. Começa sem nada e, turno a turno, junta fichas de cinco pedras: diamante (branca), safira (azul), esmeralda (verde), rubi (vermelha) e ônix (preta). Com elas, compra cartas de desenvolvimento, que no tema do jogo são minas, meios de transporte e artesãos. Vence quem tiver mais pontos de prestígio quando a partida acabar (p. 2 e 3).
+Você é um comerciante de pedras preciosas. Começa sem nada e junta fichas de cinco pedras: diamante (branca), safira (azul), esmeralda (verde), rubi (vermelha) e ônix (preta). Com elas, compra cartas de desenvolvimento, que no tema são minas, meios de transporte e artesãos. Vence quem tiver mais pontos de prestígio no fim (p. 2 e 3).
 
-O que faz o jogo andar é o desconto. Cada carta comprada tem um bônus, uma pedra desenhada no canto, e cada bônus vale como uma ficha daquela cor em todas as compras seguintes. As primeiras cartas custam fichas que você levou turnos para juntar; mais adiante, os bônus pagam boa parte do preço, e uma carta pode sair até de graça (p. 4).
+O que faz o jogo andar é o desconto. Cada carta comprada tem um bônus, uma pedra desenhada no canto, e cada bônus vale como uma ficha daquela cor em todas as compras seguintes. As primeiras cartas custam fichas juntadas em vários turnos; mais adiante, os bônus pagam parte do preço, e uma carta pode sair de graça (p. 4).
 
 Duas ideias sustentam o resto:
 
@@ -99,11 +98,11 @@ O guia tem três etapas, cada uma uma parte real da partida: montar a mesa e ler
 
 > [!entender] **Para entender.** A caixa tem três tipos de peça, e cada um tem uma função.
 >
-> **As fichas** são 40: 7 de cada uma das cinco pedras preciosas e 5 de ouro, amarelas. O ouro é curinga: vale como qualquer pedra na hora de pagar (p. 2 e 3).
+> **As fichas** são 40: 7 de cada pedra preciosa e 5 de ouro, amarelas. O ouro é curinga: vale como qualquer pedra na hora de pagar (p. 2 e 3).
 >
-> **As cartas de desenvolvimento** são 90, em três níveis: 40 de nível 1, 30 de nível 2 e 20 de nível 3 (p. 2). O nível aparece no verso. Na frente, cada carta mostra três informações: os pontos de prestígio que ela vale, no canto de cima à esquerda (sem número, não vale ponto); o bônus, a pedra no canto de cima à direita; e o custo, as fichas pedidas no canto de baixo à esquerda. A cor do bônus é a cor da carta (p. 3 e manual de 2025).
+> **As cartas de desenvolvimento** são 90, em três níveis: 40 de nível 1, 30 de nível 2 e 20 de nível 3 (p. 2). O nível aparece no verso. Na frente: os pontos de prestígio que ela vale, no canto de cima à esquerda (sem número, não vale ponto); o bônus, a pedra no canto de cima à direita; e o custo, as fichas pedidas no canto de baixo à esquerda. A cor do bônus é a cor da carta (p. 3 e manual de 2025).
 >
-> **Os cartões de nobres** são 10. Cada um vale 3 pontos de prestígio e pede uma combinação de bônus, desenhada no lado esquerdo do cartão: tantas cartas de tal cor, tantas de outra (p. 3).
+> **Os cartões de nobres** são 10. Cada um vale 3 pontos de prestígio e pede uma combinação de bônus, desenhada no lado esquerdo do cartão (p. 3).
 
 > [!passos] **Passo a passo: preparação** (p. 2). É igual para 2, 3 ou 4 jogadores, salvo nos passos 3 e 4.
 >
@@ -119,7 +118,7 @@ O guia tem três etapas, cada uma uma parte real da partida: montar a mesa e ler
 
 !fig[Uma carta de desenvolvimento da edição de 2025: vale 1 ponto de prestígio (canto de cima à esquerda), dá bônus vermelho (canto de cima à direita) e custa 3 fichas azuis, 2 vermelhas e 3 pretas (canto de baixo à esquerda). Ilustração: manual Galápagos de 2025](figuras/anatomia.webp)
 
-> [!resolvido] **Exemplo resolvido.** Você monta uma partida de 2 jogadores. Devolve à caixa 3 fichas de cada pedra preciosa, 15 no total, e ficam 4 de cada no estoque, mais as 5 de ouro. Revela 3 nobres e devolve os outros 7. Revela 4 cartas de cada nível: 12 à mostra.
+> [!resolvido] **Exemplo resolvido.** Partida de 2 jogadores: você devolve à caixa 3 fichas de cada pedra preciosa e fica com 4 de cada, mais as 5 de ouro. Revela 3 nobres e devolve os outros 7. Revela 4 cartas de cada nível.
 
 > [!suavez] **Sua vez.** Agora a mesa é para 3 jogadores. Responda olhando só o passo a passo.
 >
@@ -143,12 +142,6 @@ O guia tem três etapas, cada uma uma parte real da partida: montar a mesa e ler
 
 > [!treino] **Treino rápido: leia a carta.** Use a carta da figura abaixo, do manual de 2015.
 >
-> ?? Quantos pontos de prestígio ela vale?
-> - ( ) 1
-> - (x) 2
-> - ( ) 7
-> = 2, o número no canto de cima à esquerda (p. 3).
->
 > ?? Qual bônus ela dá?
 > - ( ) Branco
 > - ( ) Azul
@@ -161,26 +154,24 @@ O guia tem três etapas, cada uma uma parte real da partida: montar a mesa e ler
 > - ( ) 7 fichas de qualquer cor
 > = 1 branca, 4 azuis e 2 verdes, as pedras no canto de baixo à esquerda (p. 3).
 
-!fig[A carta do treino: para comprá-la sem bônus, o jogador devolve 1 ficha branca, 4 azuis e 2 verdes; ela vale 2 pontos e dá bônus vermelho. Ilustração: manual Galápagos (p. 3)](figuras/compra.webp)
+!fig[A carta do treino: sem bônus, ela custa 1 ficha branca, 4 azuis e 2 verdes; vale 2 pontos e dá bônus vermelho. Ilustração: manual Galápagos (p. 3)](figuras/compra.webp)
 
 ## 3. Etapa 2: as quatro ações
 
-> [!entender] **Para entender.** Cada turno é uma única ação, e as quatro se encaixam numa troca simples: fichas viram cartas, e cartas viram desconto.
+> [!entender] **Para entender.** Cada turno é uma única ação, e as quatro formam uma troca simples: fichas viram cartas, e cartas viram desconto.
 >
-> **Pegar fichas** é o jeito de juntar o preço. Três fichas diferentes enchem a mão mais depressa; duas iguais servem quando a carta pede muito de uma cor, mas só se a pilha estiver cheia, com 4 ou mais (p. 3).
+> **Pegar fichas** junta o preço. Três diferentes rendem mais fichas; duas iguais servem quando a carta pede muito de uma cor, se a pilha tiver 4 ou mais (p. 3).
 >
-> **Reservar** faz duas coisas ao mesmo tempo: guarda uma carta que só você poderá comprar e dá 1 ficha de ouro, o curinga. É a única porta para o ouro, e a mão aceita até 3 reservas (p. 3).
+> **Reservar** guarda uma carta que só você poderá comprar e dá 1 ficha de ouro, o curinga. É a única porta para o ouro (p. 3).
 >
-> **Comprar** é a ação que dá pontos e bônus. O bônus é o coração do jogo: cada carta da sua cor reduz em uma ficha o preço daquela cor em todas as compras seguintes (p. 4).
->
-> O limite de 10 fichas no fim do turno impede que alguém acumule fichas sem comprar (p. 3).
+> **Comprar** dá pontos e bônus. Cada carta de uma cor à sua frente reduz em uma ficha o preço daquela cor em todas as compras seguintes (p. 4). O limite de 10 fichas no fim do turno impede que alguém acumule sem comprar (p. 3).
 
 > [!passos] **Passo a passo: as quatro ações** (p. 3). No seu turno, faça exatamente uma.
 >
 > 1. **Pegar 3 fichas de pedras preciosas de cores diferentes.** Uma ficha de cada uma de três cores, nunca ouro.
 > 2. **Pegar 2 fichas de pedras preciosas da mesma cor.** Só se houver pelo menos 4 fichas daquela cor no estoque antes de você pegar. Nunca ouro.
-> 3. **Reservar 1 carta de desenvolvimento e pegar 1 ficha de ouro.** Pegue uma carta à mostra ou a carta do topo de um dos três baralhos, sem mostrá-la aos outros. Ela vai para a sua mão. Depois pegue 1 ficha de ouro. Você não pode ter mais de 3 cartas reservadas, e carta reservada não pode ser descartada: só sai da mão comprada.
-> 4. **Comprar 1 carta de desenvolvimento.** Uma das cartas à mostra ou uma das suas reservadas. Pague o custo menos os seus bônus (veja abaixo). As fichas gastas, ouro incluído, voltam para o estoque. Ponha a carta à sua frente, numa fileira da cor dela, em cascata, com pontos e bônus visíveis.
+> 3. **Reservar 1 carta de desenvolvimento e pegar 1 ficha de ouro.** Pegue uma carta à mostra ou, sem mostrá-la aos outros, a do topo de um dos três baralhos. Ela vai para a sua mão. Depois pegue 1 ficha de ouro. Você não pode ter mais de 3 cartas reservadas, e carta reservada não pode ser descartada: só sai da mão comprada.
+> 4. **Comprar 1 carta de desenvolvimento.** Uma das cartas à mostra ou uma das suas reservadas. Pague o custo menos os seus bônus (veja abaixo). As fichas gastas, ouro incluído, voltam para o estoque. Ponha a carta à sua frente, com pontos e bônus à vista; o manual sugere colunas por cor, em cascata.
 
 > [!passos] **Passo a passo: pagar uma carta** (p. 3 e 4)
 >
@@ -209,9 +200,9 @@ O guia tem três etapas, cada uma uma parte real da partida: montar a mesa e ler
 
 > [!mais] **Ouro no lugar de uma cor que você tem.** O ouro pode substituir qualquer pedra, mesmo uma cor de que você tenha fichas (manual de 2025).
 
-!fig[O exemplo de Giulia no manual de 2025: a carta azul custa 1 ficha branca, 1 verde, 1 vermelha e 1 preta. Ela não tem ficha vermelha e paga com 1 branca, 1 verde, 1 de ouro e 1 preta, que voltam todas para o estoque. Ilustração: manual Galápagos de 2025](figuras/ouro.webp)
+!fig[Giulia compra a carta azul (1 branca, 1 verde, 1 vermelha e 1 preta). Sem ficha vermelha, paga com 1 branca, 1 verde, 1 de ouro e 1 preta, que voltam ao estoque. Ilustração: manual Galápagos de 2025](figuras/ouro.webp)
 
-!fig[O outro exemplo de Giulia: ela tem 2 cartas vermelhas e 1 preta. Para comprar a carta da direita (3 azuis, 2 vermelhas e 3 pretas), os bônus descontam as 2 vermelhas e 1 preta, e ela paga só 3 fichas azuis e 2 pretas. Ilustração: manual Galápagos de 2025](figuras/bonus.webp)
+!fig[Giulia tem 2 cartas vermelhas e 1 preta. A carta da direita custa 3 azuis, 2 vermelhas e 3 pretas; os bônus descontam 2 vermelhas e 1 preta, e ela paga 3 fichas azuis e 2 pretas. Ilustração: manual Galápagos de 2025](figuras/bonus.webp)
 
 > [!resolvido] **Exemplo resolvido.** Você tem 2 cartas azuis à sua frente e 7 fichas: 1 branca, 1 azul, 2 verdes, 2 vermelhas e 1 de ouro. Quer a carta da etapa 1, que custa 1 branca, 4 azuis e 2 verdes.
 >
@@ -219,7 +210,7 @@ O guia tem três etapas, cada uma uma parte real da partida: montar a mesa e ler
 > 2. Azul: custa 4, seus 2 bônus azuis descontam 2. Faltam 2 azuis, e você tem 1 ficha azul: paga com ela e completa com a ficha de ouro.
 > 3. Verde: custa 2. Paga 2 fichas verdes.
 >
-> Você devolve ao estoque 5 fichas (1 branca, 1 azul, 2 verdes e o ouro) e fica com as 2 vermelhas. A carta vai para a sua frente: agora você tem um bônus vermelho e 2 pontos. A mesa repõe a carta pelo topo do baralho do mesmo nível.
+> Você devolve 5 fichas ao estoque (1 branca, 1 azul, 2 verdes e o ouro) e fica com as 2 vermelhas. A carta dá a você um bônus vermelho e 2 pontos, e a mesa repõe o espaço pelo baralho do mesmo nível.
 
 > [!complete] **Complete.** Você tem 1 carta vermelha à sua frente e 5 fichas: 1 branca, 1 verde, 2 azuis e 1 de ouro. Compra a carta azul do exemplo de Giulia: 1 branca, 1 verde, 1 vermelha e 1 preta. A branca e a verde, você paga com as fichas dessas cores. Termine a compra.
 >
@@ -234,14 +225,8 @@ O guia tem três etapas, cada uma uma parte real da partida: montar a mesa e ler
 > - ( ) Com uma ficha azul, que é a cor da carta comprada
 > - ( ) Não dá: sem ficha preta, a compra não pode ser feita
 > = Com o ouro, que substitui qualquer cor (p. 3).
->
-> ?? Com quantas fichas você termina o turno?
-> - ( ) 1
-> - (x) 2
-> - ( ) 5
-> = 2 fichas azuis. Você devolveu 3 (branca, verde e ouro) das 5 que tinha (p. 3).
 
-> [!suavez] **Sua vez.** Três situações.
+> [!suavez] **Sua vez.** Duas situações.
 >
 > ?? Você tem 8 fichas e pega 3 de cores diferentes. O que acontece no fim do turno?
 > - ( ) Nada: o limite só conta na hora de comprar
@@ -255,12 +240,6 @@ O guia tem três etapas, cada uma uma parte real da partida: montar a mesa e ler
 > - ( ) Não: só se reserva carta à mostra
 > - ( ) Pode, mas sem ouro, porque a carta veio do baralho
 > = Pode. A reserva pode ser do topo de um baralho, sem mostrar a carta, e fica com 3 na mão, o máximo (p. 3).
->
-> ?? Você comprou uma carta que estava reservada na sua mão. A mesa recebe uma carta nova?
-> - ( ) Sim, do baralho do mesmo nível
-> - (x) Não: a carta não saiu da mesa
-> - ( ) Sim, do baralho de nível 1
-> = Não. A reposição só acontece quando sai da mesa uma carta à mostra (p. 4).
 
 > [!treino] **Treino rápido: quanto você paga?**
 >
@@ -284,9 +263,9 @@ O guia tem três etapas, cada uma uma parte real da partida: montar a mesa e ler
 
 ## 4. Etapa 3: nobres, fim da partida e pontos
 
-> [!entender] **Para entender.** Os nobres premiam quem junta bônus de certas cores. Ninguém escolhe um nobre como ação: no fim de cada turno, você confere se as cartas à sua frente cumprem o pedido de algum cartão, e o nobre vem sozinho (p. 3 e 4). São 3 pontos que ninguém pode tomar depois, mas cada nobre é de quem chegar primeiro.
+> [!entender] **Para entender.** Os nobres premiam quem junta bônus de certas cores. Ninguém gasta ação com eles: no fim de cada turno, se as cartas à sua frente cumprem o pedido de um cartão, o nobre vem sozinho (p. 3 e 4). Cada nobre é de quem chegar primeiro.
 >
-> A partida não tem número fixo de rodadas. Ela acaba quando alguém chega a 15 pontos de prestígio, e a rodada é completada para que todos tenham jogado o mesmo número de turnos (p. 4). Por isso, quem joga depois de quem chegou a 15 ainda tem a última chance de passar à frente.
+> A partida não tem número fixo de rodadas. Quando alguém chega a 15 pontos, a rodada é completada para que todos joguem o mesmo número de turnos (p. 4): quem joga depois ainda pode passar à frente.
 
 > [!passos] **Passo a passo: a visita dos nobres** (p. 3 e 4)
 >
