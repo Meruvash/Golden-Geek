@@ -24,7 +24,7 @@ A montagem segue a preparação do folheto da Devir (p. 2), na mesma ordem, com 
 
 ### Montagem para principiantes
 
-1. **Monte a moldura** juntando as 6 peças de mar num anel, como no desenho da p. 1 (p. 2).
+1. **Monte a moldura** juntando as 6 peças de mar num anel, como no desenho da p. 1, encaixando as pontas de mesmo número (p. 2; manual original, p. 2).
 
 !fig[Uma das 6 peças da moldura: mar por fora, costa por dentro e um porto 3:1 impresso. Ilustração: manual Devir do Catan Plus (p. 2)](figuras/setup-moldura.webp)
 
@@ -40,7 +40,7 @@ A montagem segue a preparação do folheto da Devir (p. 2), na mesma ordem, com 
 
 !fig[Um porto na costa da ilha montada: o porto especial de cereais, com a troca 2:1. Ilustração: manual Devir (p. 1)](figuras/setup-porto.webp)
 
-5. **Ponha o ladrão no deserto** (ilustração da p. 1; manual original, p. 12).
+5. **Ponha o ladrão no deserto** (ilustração da p. 1; manual original, p. 7).
 
 !fig[O ladrão, a figura preta que começa a partida no deserto. Ilustração: manual Devir do Catan Plus (p. 3)](figuras/setup-ladrao.webp)
 
@@ -49,7 +49,7 @@ A montagem segue a preparação do folheto da Devir (p. 2), na mesma ordem, com 
 
 !fig[As peças de uma cor, da esquerda para a direita: cidade, aldeia e estrada. Ilustração: manual Devir do Catan Plus (p. 3)](figuras/setup-pecas.webp)
 
-8. **Cada jogador põe 2 aldeias e 2 estradas no tabuleiro**, onde o desenho mostra a sua cor (p. 2).
+8. **Cada jogador põe 2 aldeias e 2 estradas no tabuleiro**, onde o desenho mostra a sua cor. Com 3 jogadores, pule o vermelho: ninguém põe as peças vermelhas (p. 2).
 
 !fig[A montagem para principiantes: a ilha com o ladrão no deserto, os portos na moldura e as 2 aldeias e 2 estradas de cada cor; a aldeia com letra (A vermelho, B azul, C laranja, D branco) é a que dá as cartas iniciais. Ilustração: manual Devir (p. 1)](figuras/preparacao.webp)
 
@@ -71,12 +71,10 @@ A montagem segue a preparação do folheto da Devir (p. 2), na mesma ordem, com 
 
 16. **Cada jogador recebe da reserva as cartas iniciais:** uma carta de matéria-prima de cada terreno vizinho da sua aldeia marcada com letra no desenho. Pelo exemplo do manual, o azul recebe 1 madeira, 1 minério e 1 argila, e o laranja, 1 minério e 2 cereais (p. 2).
 
-!fig[A aldeia azul com a letra B encosta numa floresta, numa montanha e numa colina: o azul começa com 1 madeira, 1 minério e 1 argila. Ilustração: manual Devir (p. 1)](figuras/setup-aldeia-b.webp)
+!fig[A aldeia azul com a letra B encosta na floresta do 8, na montanha do 3 e na colina do 5: o azul começa com 1 madeira, 1 minério e 1 argila. Ilustração: manual Devir (p. 1)](figuras/setup-aldeia-b.webp)
 
 17. **As cartas ficam escondidas na mão** de cada jogador a partida toda (p. 2).
 18. **O jogador mais velho começa.** Depois, a vez passa sempre para o jogador à esquerda (p. 2).
-
-!fig[Detalhe da ilha na edição internacional de 2025, com aldeias, cidades e estradas de quatro cores e o ladrão no alto, à esquerda. A arte é diferente da do folheto. Imagem: Catan GmbH · edição internacional de 2025](fotos/mesa-1.webp)
 
 **O que muda com o número de jogadores** (p. 2; manual do Catan Plus, p. 3):
 
@@ -84,6 +82,8 @@ A montagem segue a preparação do folheto da Devir (p. 2), na mesma ordem, com 
 |---|---|---|---|
 | 3 | 3, sem o vermelho | 6 aldeias e 6 estradas | as 24 peças vermelhas (5 aldeias, 4 cidades e 15 estradas); sobra também 1 das 4 tabelas de custos |
 | 4 | 4 | 8 aldeias e 8 estradas | nada |
+
+!fig[Detalhe de uma partida em andamento na edição internacional de 2025 (há cidades e o ladrão já saiu do deserto), não a montagem inicial. A arte é diferente da do folheto. Imagem: Catan GmbH · edição internacional de 2025](fotos/mesa-1.webp)
 
 O jogo base é para 3 ou 4. Com 2, há uma variante oficial no site da Devir; com 5 ou 6, a expansão própria (página do produto da Devir). Este guia não cobre esses modos.
 
@@ -97,23 +97,23 @@ Depois de um ou dois jogos, o manual sugere montar a ilha ao acaso (p. 2). Os de
 2. **Vire os 19 terrenos para baixo e embaralhe** (manual original, p. 12).
 3. **Ponha os terrenos virados para cima dentro da moldura**, ao acaso (manual original, p. 12).
 
-!fig[Uma ilha montada ao acaso: os 19 terrenos embaralhados dentro da moldura, ainda sem fichas. Ilustração: manual Catan Studio (p. 12)](figuras/setup-aleatoria.webp)
+!fig[Uma ilha montada ao acaso: os 19 terrenos embaralhados dentro da moldura, ainda sem fichas. A moldura é a da caixa americana; na da Devir, os portos vêm impressos. Ilustração: manual Catan Studio (p. 12)](figuras/setup-aleatoria.webp)
 
 4. **Separe as 18 fichas numeradas ao lado do tabuleiro**, com a letra para cima (manual original, p. 13).
-5. **Ponha uma ficha em cada terreno, em ordem alfabética.** Comece num terreno do canto e siga em espiral para o centro, no sentido contrário ao dos ponteiros do relógio, pulando o deserto (manual original, p. 13).
+5. **Ponha uma ficha em cada terreno, em ordem alfabética.** Comece num terreno do canto e siga em espiral para o centro, no sentido contrário ao dos ponteiros do relógio, pulando o deserto (manual original, p. 13). No fim, vire todas as fichas para o número aparecer (manual do Catan Plus, p. 7, na expansão para 5 e 6 jogadores).
 
-!fig[A espiral das fichas: começa num terreno do canto e segue as setas para o centro, pulando o deserto. Ilustração: manual Catan Studio (p. 13)](figuras/setup-espiral.webp)
+!fig[A espiral das fichas: começa num terreno do canto e segue as setas para o centro, pulando o deserto. A moldura é a da caixa americana; na da Devir, os portos vêm impressos. Ilustração: manual Catan Studio (p. 13)](figuras/setup-espiral.webp)
 
-6. **Ponha o ladrão no deserto** (manual original, p. 12).
-7. **Prepare peças, tabelas, reserva, monte de desenvolvimento, cartas especiais e dados** como nos passos 6, 7 e 9 a 15 da montagem para principiantes. Ninguém põe aldeia ou estrada ainda (manual original, p. 12).
+6. **Ponha o ladrão no deserto** (manual original, p. 7 e 12).
+7. **Prepare peças, tabelas, reserva, monte de desenvolvimento, cartas especiais e dados** como nos passos 6, 7 e 10 a 15 da montagem para principiantes. Ninguém põe aldeia ou estrada ainda: todas as peças ficam à frente de cada jogador (manual original, p. 12).
 8. **Cada jogador rola os dois dados.** Quem tirar mais é o primeiro jogador (manual original, p. 12).
-9. **Primeira rodada:** o primeiro jogador põe 1 aldeia numa encruzilhada livre e 1 estrada encostada nela; os outros fazem o mesmo, um de cada vez, no sentido horário. A regra da distância já vale (manual original, p. 12).
+9. **Primeira rodada:** o primeiro jogador põe 1 aldeia numa encruzilhada livre e 1 estrada encostada nela; os outros fazem o mesmo, um de cada vez, no sentido horário. A regra da distância já vale: nenhuma aldeia ou cidade pode ficar nas três encruzilhadas vizinhas da nova aldeia (p. 3; manual original, p. 12).
 
 !fig[Na fase de fundação, cada aldeia entra com uma estrada encostada nela. Ilustração: manual Catan Studio (p. 12)](figuras/setup-rodada1.webp)
 
 10. **Segunda rodada, na ordem inversa:** começa quem foi o último na primeira rodada e a vez segue no sentido anti-horário, de modo que o primeiro jogador põe por último. Cada um põe a segunda aldeia em qualquer encruzilhada livre que respeite a regra da distância, sem precisar ligá-la à primeira, e uma estrada encostada nela (manual original, p. 12).
 
-!fig[Regra da distância: o laranja pode fundar uma aldeia na encruzilhada marcada em azul, mas não nas marcadas em vermelho, vizinhas de uma aldeia. Ilustração: manual Devir (p. 3)](figuras/distancia.webp)
+!fig[Regra da distância: o laranja pode fundar uma aldeia na encruzilhada marcada em azul, mas não nas marcadas em vermelho, vizinhas de uma aldeia. Na fase de fundação vale só a distância: a aldeia não precisa de estrada chegando nela (manual original, p. 12). Ilustração: manual Devir (p. 3)](figuras/distancia.webp)
 
 11. **Logo depois de pôr a segunda aldeia, cada jogador recebe da reserva 1 carta de cada terreno vizinho a ela** (manual original, p. 12).
 12. **O primeiro jogador, que pôs a segunda aldeia por último, começa a partida rolando os dados** (manual original, p. 12).
@@ -122,7 +122,7 @@ Depois de um ou dois jogos, o manual sugere montar a ilha ao acaso (p. 2). Os de
 |---|---|---|
 | Ordem | Ana, Bruno, Carla, Diana | Diana, Carla, Bruno, Ana |
 
-> [!edicao] O manual original sorteia peças de porto avulsas, da caixa americana. Na caixa da Devir, os 9 portos vêm impressos nas 6 peças de moldura (manual do Catan Plus, p. 2), por isso o passo 1 varia os portos pela ordem da moldura, opção que o próprio manual original oferece. O manual original também não diz em que momento as fichas passam a mostrar o número; o que importa é que, no fim da montagem, todas mostrem o número.
+> [!edicao] O manual original sorteia peças de porto avulsas, da caixa americana. Na caixa da Devir, os 9 portos vêm impressos nas 6 peças de moldura (manual do Catan Plus, p. 2), por isso o passo 1 varia os portos pela ordem da moldura, opção que o próprio manual original oferece. As fichas têm letra no verso e só são viradas para o número no fim (manual do Catan Plus, p. 7).
 
 **Antes de começar, confira:** moldura fechada com os portos no lugar; 19 terrenos, 18 fichas e o deserto sem ficha, com o ladrão; 2 aldeias e 2 estradas de cada cor em jogo; peças restantes à frente de cada dono; reserva com 5 pilhas viradas para cima; monte de desenvolvimento virado para baixo; cartas especiais e dados ao lado; cartas iniciais na mão, escondidas; quem começa definido.
 
@@ -145,7 +145,7 @@ Você coloniza uma ilha. Cada **terreno** da ilha produz uma **matéria-prima** 
 
 A montagem completa, com figuras, está na seção "Montar a mesa passo a passo", logo acima. O essencial da montagem para principiantes (p. 2):
 
-1. Ilha como no desenho da p. 1 do manual: moldura, 19 terrenos, fichas numeradas e o ladrão no deserto.
+1. Ilha como no desenho da p. 1 do manual: moldura, 19 terrenos, fichas numeradas, o deserto sem ficha e com o ladrão.
 2. Cada jogador: 5 aldeias, 4 cidades, 15 estradas e uma tabela de custos de construção; 2 aldeias e 2 estradas onde o desenho mostra a sua cor. Com 3 jogadores, ninguém usa o vermelho.
 3. A reserva de matéria-prima nos suportes de cartas, o monte de desenvolvimento virado para baixo *(depois)*, as cartas especiais *(depois)* e os 2 dados ao lado.
 4. Cada jogador recebe uma carta de cada terreno vizinho da sua aldeia marcada com letra e a guarda escondida na mão.

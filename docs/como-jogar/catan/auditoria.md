@@ -170,3 +170,22 @@ Pedido do editor: seção `## setup. Montar a mesa passo a passo` antes do "Come
 - **Mudanças fora da seção.** "### Monte a mesa" do "Comece" virou resumo de 5 itens que remete à seção nova. Em "7. Situações especiais", o passo a passo da montagem aleatória e o bloco [!edicao] dos portos saíram de lá e foram para a seção de montagem (texto igual, sem mudança de regra), ficando no lugar uma remissão; assim o guia não traz a mesma lista duas vezes. A etapa 1 continua com o seu passo a passo didático.
 - **Pergunta da conferência:** ordem da segunda aldeia na fase de fundação com 4 jogadores (original p. 12); as erradas repetem a ordem da primeira rodada ou giram no sentido errado.
 - **Portões:** `checar_comece.py` ✅; `vicios.avisos` sem aviso; travessão e meia-risca no tutorial: 0. O conversor (`como_jogar_md.pagina`, em memória) monta a seção com 16 imagens, todas existentes, sem marcador cru. `"publicar"` não foi alterado; nenhum HTML gerado foi tocado.
+
+## Auditoria independente da montagem (04/11/2026)
+
+Resultado: aprovado com correções, sem erro de regra. Cada correção foi conferida no texto dos manuais baixados de novo (`<scratchpad>/setup/catan/txt/`). Aplicado:
+
+1. Passo 7 da aleatória: remete aos passos 6, 7 e 10 a 15 e diz que todas as peças ficam à frente de cada jogador (original, p. 12).
+2. Passo 5 da aleatória: "no fim, vire todas as fichas para o número aparecer" (manual do Catan Plus, p. 7, expansão para 5 e 6: "Finalmente, vire todas as fichas numeradas de modo a que os números fiquem à vista"). O bloco [!edicao] deixou de dizer que o momento não está definido e agora diz que as fichas têm letra no verso e são viradas no fim (Plus, p. 7).
+3. Ladrão no deserto: citação trocada para o original, p. 7 ("A robber starts the game there"); na aleatória, p. 7 e 12.
+4. Recortes refeitos: `setup-especiais.webp` 670 x 231 (folheto p. 2, agora com a base das cartas); `setup-porto.webp` 500 x 303 (folheto p. 1, sem os fragmentos do alto; o "2:1" fica tão legível quanto a imagem embutida, de cerca de 180 ppi, permite).
+5. Resumo do "Comece", item 1: voltou "o deserto sem ficha e com o ladrão".
+6. Foto `mesa-1.webp`: legenda diz que é partida em andamento (há cidades e o ladrão já saiu do deserto), não a montagem inicial; foi para depois da tabela de 3 e 4 jogadores.
+7. Passo 1: "encaixando as pontas de mesmo número" (original, p. 2: "matching the numbers at the ends of the frame pieces together").
+8. Passo 8: "com 3 jogadores, pule o vermelho" (p. 2).
+9. Passo 9 da aleatória define a regra da distância (folheto p. 3; original p. 12); a legenda de `distancia.webp` diz que na fase de fundação a aldeia não precisa de estrada chegando nela (original, p. 12: a aldeia vai em qualquer encruzilhada livre e a estrada é posta depois, encostada nela).
+10. Legendas de `setup-aleatoria` e `setup-espiral`: moldura da caixa americana; na da Devir, os portos vêm impressos.
+11. `setup-aldeia-b.webp` alargado (491 x 372, folheto p. 1): mostra a floresta do 8, a montanha do 3 e a colina do 5 em volta da aldeia B. Fica visível o contorno branco do "Caminho" (sem o texto da etiqueta).
+12. Ordem livre da moldura na aleatória: está no manual (original, p. 12: "just shuffle the order of the frame pieces"; o Catan Plus, p. 7, diz o mesmo na expansão: "peças de moldura grandes do jogo básico em qualquer ordem"). O passo 1 continua citando o original, p. 12.
+
+Portões: `checar_comece.py` ✅; `vicios.avisos` sem aviso; travessão e meia-risca no tutorial: 0; a seção monta com 16 imagens, sem marcador cru.
