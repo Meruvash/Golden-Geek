@@ -150,3 +150,19 @@ Nova seção "## 7. Modo solo: jogar sozinho", depois da etapa 5; as seguintes f
 - Não há desenho da Praga entrando num tabuleiro solo; a figura de Devastar (p. 11) mostra a Praga e a cascata.
 
 **Portões:** zero travessão; `tools/vicios.py` sem aviso; `tools/checar_comece.py` passa; o conversor gera a página sem marcação crua. A seção tem cerca de 850 palavras de texto (1.200 com as legendas); o tutorial foi para cerca de 7.300 palavras de texto.
+
+## Auditoria independente do modo solo (04/11/2026)
+
+Veredito: aprovado com correções menores. O que foi feito:
+
+1. A montagem para 1 jogador agora cita as p. 3, 4, 6, 13, 14 e 22: a p. 14 é o painel e as trilhas do Relâmpago.
+2. "Num tabuleiro como o da figura acima" virou "como o da primeira figura desta seção", porque a figura logo acima é o painel.
+3. `solo-icones.webp` saiu do texto e foi apagado: era o mesmo tabuleiro de `solo-tabuleiro.webp`. A frase sobre os ícones de montagem foi para a legenda de `solo-tabuleiro.webp`, que também diz que a Areia mais alta daquele tabuleiro é a terra 6. As figuras reaproveitadas (`espirito`, `construir`, `explorar`, `devastar`) ficam na seção 7, agora com legendas sobre o exemplo solo. A seção fica com 7 figuras.
+4. Texto do manual dentro dos recortes:
+   - `devastar.webp`: as linhas "Wetlands about to Ravage.", "Step 1/2" e "Option 1/2" foram cobertas de branco, que é o fundo da página. Foi apagada também a linha de 1 px do título "Ravage Examples" no alto. Os desenhos ficaram inteiros.
+   - `construir.webp` e `explorar.webp`: recortados de novo a partir da página 11 em 220 dpi, começando abaixo dos títulos "Build/Explore Examples".
+   - `solo-baralho-medo.webp`: recortado de novo, sem o resto do título "Game Setup" no alto.
+   Os quatro arquivos mantêm o nome e servem também às seções 4 e 5.
+5. O passo 3 do primeiro turno solo traz a regra especial do Relâmpago: para cada Ar que você tiver, pode usar 1 Poder Lento como se fosse Rápido (ilustração da p. 14).
+
+Portões: zero travessão; `tools/vicios.py` sem aviso; `tools/checar_comece.py` passa.

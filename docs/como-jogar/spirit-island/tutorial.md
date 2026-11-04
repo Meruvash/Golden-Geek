@@ -441,7 +441,7 @@ O guia tem cinco etapas: montar a mesa e escolher o Espírito; a rodada e as fas
 
 > [!entender] **Para entender.** O jogo solo funciona como o jogo normal, com um tabuleiro da Ilha só como a ilha inteira. O manual avisa que a sorte pesa mais e que não há outros Espíritos para cobrir as fraquezas e limites do seu (p. 22). Todas as quantidades "por jogador" da montagem valem para 1.
 
-> [!passos] **Montar a mesa para 1 jogador** (p. 3, 4, 6, 13 e 22)
+> [!passos] **Montar a mesa para 1 jogador** (p. 3, 4, 6, 13, 14 e 22)
 >
 > 1. Ilha: sorteie 1 tabuleiro da Ilha. Ele sozinho é a ilha. Cada tabuleiro tem 8 terras numeradas, duas de cada terreno, e a faixa de Oceano desenhada nele marca as terras costeiras.
 > 2. Ponha em cada terra os Invasores, os Dahan e a Praga dos ícones impressos nela; essa Praga vem da caixa.
@@ -454,34 +454,32 @@ O guia tem cinco etapas: montar a mesa e escolher o Espírito; a rodada e as fas
 > 9. Montagem do Relâmpago: 2 Presenças na Areia de número mais alto do tabuleiro. Vire o painel para o lado das trilhas e cubra os círculos tracejados com as outras 11 Presenças: 7 na trilha de Energia e 4 na de Jogadas.
 > 10. Ação inicial dos Invasores: revele a carta do topo, Explore no tipo dela e ponha a carta em Construir.
 
-!fig[Um tabuleiro da Ilha, que no solo é a ilha inteira: em cima, cada terreno (Selva, Areia, Pântano, Montanha) e o Oceano à esquerda; embaixo, as terras costeiras, que tocam o Oceano, e as do interior. As outras bordas são penhascos. Ilustração: manual oficial Greater Than Games (p. 13)](figuras/solo-tabuleiro.webp)
-
-!fig[O mesmo tipo de tabuleiro com os ícones de montagem impressos ao lado do número de cada terra: eles dizem quais Invasores, Dahan e Praga entram ali no começo. Ilustração: manual oficial Greater Than Games (p. 4)](figuras/solo-icones.webp)
+!fig[Um tabuleiro da Ilha, que no solo é a ilha inteira: em cima, cada terreno (Selva, Areia, Pântano, Montanha) e o Oceano à esquerda; embaixo, as terras costeiras, que tocam o Oceano, e as do interior. As outras bordas são penhascos. Ao lado do número de cada terra ficam os ícones de montagem, que dizem quais Invasores, Dahan e Praga entram ali no começo. No exemplo abaixo, a Areia de número mais alto deste tabuleiro é a terra 6. Ilustração: manual oficial Greater Than Games (p. 13)](figuras/solo-tabuleiro.webp)
 
 !fig[O tabuleiro dos Invasores: baralho de Medo e Cartas de Medo Conquistadas à esquerda, reserva de Medo e Medo Gerado no centro, Nível de Terror e espaço de Praga à direita, e embaixo os espaços Devastar, Construir e Explorar, este com o baralho de Invasores. Ilustração: manual oficial Greater Than Games (p. 4)](figuras/solo-invasores.webp)
 
 !fig[O baralho de Medo aberto em leque: três grupos de 3 cartas, separados pelas divisórias de Nível de Terror II e III. Ilustração: manual oficial Greater Than Games (p. 6)](figuras/solo-baralho-medo.webp)
 
-!fig[O painel do Relâmpago com as trilhas: na de cima (Energia) e na de baixo (Jogadas), só o primeiro círculo, de linha cheia, fica descoberto no começo. Ilustração: manual oficial Greater Than Games (p. 14)](figuras/espirito.webp)
+!fig[O painel do Relâmpago no solo: as 11 Presenças que não vão para a terra 6 cobrem os círculos tracejados, 7 na trilha de Energia (em cima) e 4 na de Jogadas; à mostra ficam só o 1 de Energia e o 2 de Jogadas, os círculos de linha cheia. No primeiro turno solo, a opção 3 de Crescimento (no alto) dá 3 Energia. Ilustração: manual oficial Greater Than Games (p. 14)](figuras/espirito.webp)
 
-**Uma rodada sozinho.** Um exemplo construído com as regras do manual, num tabuleiro como o da figura acima, em que a Areia de número mais alto é a terra 6 (p. 13).
+**Uma rodada sozinho.** Um exemplo construído com as regras do manual, num tabuleiro como o da primeira figura desta seção, em que a Areia de número mais alto é a terra 6 (p. 13).
 
 > [!resolvido] **Exemplo resolvido: o primeiro turno solo.**
 >
 > 1. Montagem: 2 Presenças na terra 6 (Areia), que já é um Local Sagrado, porque tem 2 Presenças suas (p. 13). A carta da ação inicial mostra Selva: 1 Explorador em cada Selva que tenha Vila ou Cidade ou seja vizinha de Vila, Cidade ou Oceano. A carta vai para Construir (p. 6 e 10).
 > 2. Fase dos Espíritos: você escolhe a opção 3 de Crescimento. Tira a primeira Presença da trilha de Energia (descobre outro "1") e a põe a até 1 terra da sua Presença. Ganha 3 Energia do Crescimento e 1 da trilha: 4. A trilha de Jogadas mostra 2: escolha até 2 das suas 4 cartas, com custo somado de até 4, e pague agora, mesmo as Lentas. Os Elementos delas já valem (p. 8 e 14).
-> 3. Fase dos Poderes Rápidos: use as cartas Rápidas, escolhendo o alvo agora (p. 8 e 16).
+> 3. Fase dos Poderes Rápidos: use as cartas Rápidas, escolhendo o alvo agora. Pela regra especial do Relâmpago, para cada Ar que você tiver, pode usar 1 Poder Lento como se fosse Rápido (p. 8, 14 e 16).
 > 4. Fase dos Invasores: se você não conquistou carta de Medo, não há Medo a resolver, e ainda não há carta em Devastar. Construir: numa Selva que recebeu 1 Explorador na montagem, há 0 Vila e 0 Cidade, então entra 1 Vila. Explorar: revele a carta seguinte e ponha 1 Explorador em cada terra daquele tipo que se qualifique. Avance: a carta de Selva vai para Devastar e a nova para Construir (p. 9 e 10).
 > 5. Fase dos Poderes Lentos: use as cartas Lentas (p. 10).
 > 6. O Tempo Passa: as cartas jogadas vão para o seu descarte; Dano e Elementos somem (p. 10).
 
-!fig[Construir em Montanhas: só terras com Invasores recebem peça; entra Cidade onde há mais Vilas que Cidades e Vila nos outros casos. No solo, a regra é a mesma, num tabuleiro só. Ilustração: manual oficial Greater Than Games (p. 11)](figuras/construir.webp)
+!fig[Construir, como no passo 4 do exemplo solo: a terra B tem só Exploradores (0 Vila e 0 Cidade) e recebe uma Vila, como a sua Selva com 1 Explorador; a terra A, com mais Vilas que Cidades, recebe Cidade; a D, sem Invasores, nada. Ilustração: manual oficial Greater Than Games (p. 11)](figuras/construir.webp)
 
-!fig[Explorar em Selvas: recebe Explorador a terra com Vila ou Cidade, a vizinha de uma delas e a costeira; a terra B, do interior e sem vizinhos com Vila ou Cidade, fica vazia. Ilustração: manual oficial Greater Than Games (p. 11)](figuras/explorar.webp)
+!fig[Explorar, como no passo 4 do exemplo solo com a carta nova: no seu tabuleiro, recebe 1 Explorador cada terra do tipo da carta que tenha Vila ou Cidade (A), seja vizinha de uma (C) ou seja costeira (D); a terra B, do interior e longe de Vila e Cidade, fica vazia. Ilustração: manual oficial Greater Than Games (p. 11)](figuras/explorar.webp)
 
 > [!resolvido] **Exemplo resolvido: a Devastação do turno 2.** A carta de Selva está em Devastar. Uma Selva tem 1 Vila, 1 Explorador e 1 Dahan, sem Defender: 2 + 1 = 3 de Dano. Entra 1 Praga, e o espaço de Praga cai de 6 para 5. Os 2 primeiros pontos de Dano destroem o Dahan, e não sobra Dahan para revidar. Se você tivesse Presença ali, perderia 1 delas com essa Praga (p. 9 e 15).
 
-!fig[Devastar: em A, a Praga entra e os Dahan sobreviventes revidam; em B, a Praga cai numa terra que já tinha Praga e a extra vai para uma vizinha, com efeitos diferentes conforme a escolha. Ilustração: manual oficial Greater Than Games (p. 11)](figuras/devastar.webp)
+!fig[Devastar, como no turno 2 do exemplo solo: em A, 1 Vila e 1 Explorador causam 3 de Dano e põem 1 Praga, que no solo sai do espaço de 6; em B, a Praga cai numa terra que já tinha Praga, e a extra vai para uma vizinha: se for uma terra com Presença sua, você perde 1 Presença ali. Ilustração: manual oficial Greater Than Games (p. 11)](figuras/devastar.webp)
 
 > [!passos] **Vencer e perder sozinho** (p. 12)
 >
