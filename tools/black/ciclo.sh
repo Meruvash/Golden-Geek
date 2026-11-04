@@ -16,6 +16,11 @@ LIMITE=$((320 * 60))   # o trabalho tem 330 min; a folga cobre a publicação e 
 publicar() {
   # batimento: prova de vida para o vigia da reserva (tools/black/vigia_radar.py), um commit por ciclo
   date -u +%Y-%m-%dT%H:%M:%S+00:00 > "conteudo/black/batimento_$ROBO.txt"
+  # arquivo de dados quebrado (robô parado no meio de uma gravação) volta à versão da main em vez de ser publicado
+  for f in conteudo/black/*.json; do
+    python3 -c "import json,sys; json.load(open(sys.argv[1], encoding='utf-8'))" "$f" 2>/dev/null \
+      || { echo "JSON quebrado, descartado: $f"; git checkout -q -- "$f" 2>/dev/null || true; }
+  done
   git add conteudo/black black img/black
   if git diff --cached --quiet; then echo "nada mudou"; return 0; fi
   git commit -q -m "Radar Black: robô $ROBO de $(TZ=America/Sao_Paulo date +'%d/%m/%Y %Hh%M')"
@@ -38,8 +43,12 @@ while :; do
   # educado: varredura completa do sitemap no domingo à tarde (UTC 14h a 16h, janela que um ciclo de 3 h sempre pega)
   acao=coletar
   if [ "$(date -u +%u)" = "7" ] && [ "$(date -u +%H)" -ge 14 ] && [ "$(date -u +%H)" -le 16 ]; then acao=varrer; fi
-  if [ "$ROBO" = "normal" ]; then python3 tools/black/robo_normal.py; else python3 tools/black/robo_educado.py "$acao"; fi \
-    || echo "o robô terminou com erro neste ciclo; segue no próximo"
+  # prazo do robô: termina 10 min antes do limite do trabalho, para sempre sobrar tempo de publicar o que já leu
+  # (04/11/2026: um ciclo do educado foi morto pelo limite do GitHub no meio e 2 h 30 de leitura se perderam)
+  prazo=$((LIMITE - SECONDS - 600)); [ $prazo -lt 300 ] && prazo=300
+  if [ "$ROBO" = "normal" ]; then timeout --kill-after=60 "$prazo" python3 tools/black/robo_normal.py
+  else timeout --kill-after=60 "$prazo" python3 tools/black/robo_educado.py "$acao"; fi \
+    || echo "o robô terminou com erro ou no prazo neste ciclo; publica o que já leu e segue"
   publicar
   espera=$((INTERVALO - (SECONDS - inicio)))
   # não começa um ciclo novo se ele puder passar do limite do trabalho
