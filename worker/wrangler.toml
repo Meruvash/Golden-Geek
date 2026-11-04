@@ -6,6 +6,7 @@ workers_dev = false
 
 [vars]
 ORIGEM = "https://eliteboardgamers.com.br"
+VAPID_PUBLICA = "BAuuYpjRp8UT5SD550BzzeENf02lsfNyczx7CUV8tUslAhHDmm30jR7kncKBASXumHcWCxiPgWHzZVq5w4VriPw"
 
 [[d1_databases]]
 binding = "DB"
@@ -15,3 +16,7 @@ database_id = "e117a6dc-26b6-49d7-a02e-7b57e8be4852"
 [[routes]]
 pattern = "api.eliteboardgamers.com.br"
 custom_domain = true
+
+# notificações do Black de Verdade: lê black/alertas.json e manda o push (src/push.js)
+[triggers]
+crons = ["* * * * *"]
