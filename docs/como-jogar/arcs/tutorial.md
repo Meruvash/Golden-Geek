@@ -2,32 +2,141 @@
 
 *Regras conferidas no manual oficial da edição brasileira, publicado pela Meeple BR (Arcs, livro de regras de 24 páginas, tradução de Romir G. E. Paulino, arquivo de agosto de 2025). Os nomes são os impressos nesse manual (o subtítulo vem da página do produto da Meeple BR), e as páginas citadas são as do manual. Este guia cobre o jogo base; o modo Líderes e Conhecimento fica para depois da primeira partida, como o próprio manual recomenda.*
 
+## setup. Montar a mesa passo a passo
+
+Esta é a montagem completa do jogo base, na ordem das p. 4 e 5 do manual (Preparação Geral, passos A a K; Preparação dos Jogadores, passos L a Q). As letras entre colchetes são as do manual e aparecem nos círculos das figuras. O modo Líderes e Conhecimento muda parte da montagem e fica para depois: o manual pede para não jogar a primeira partida com ele (p. 21).
+
+**Componentes que você vai usar** (p. 2 e 3)
+
+- 1 mapa do Vértice.
+- Por jogador, na cor dele: 1 tabuleiro do jogador, 5 cidades, 5 espaçoportos, 15 naves, 10 agentes e 2 marcadores de Poder (o segundo só serve nas expansões). A caixa tem peças para 4 jogadores.
+- 28 cartas de ação: 20 de "2" a "6" e 8 de "1" e "7".
+- 12 cartas de preparação: 4 para cada número de jogadores (2, 3 e 4).
+- 25 cartas de Guilda e 6 cartas de Vox.
+- 25 fichas de recurso: 5 de cada (Matéria-Prima, Combustível, Arma, Relíquia e Psiônico).
+- 18 dados de batalha: 6 de Assalto, 6 de Escaramuça e 6 de Saque.
+- 1 marcador do capítulo, 3 marcadores de ambição, 1 marcador zero e 1 marcador de iniciativa.
+- 4 marcadores de caminho (2 longos e 2 curtos) e 6 marcadores fora de jogo.
+- 4 folhas de ajuda.
+
+**Ficam na caixa nesta partida:** as 8 cartas de líder e as 14 de conhecimento, que são do modo Líderes e Conhecimento (p. 3 e 21); com 2 ou 3 jogadores, as 8 cartas de ação "1" e "7" (p. 3 e 4); as cartas de preparação dos outros números de jogadores (p. 4); as peças das cores que ninguém escolheu (implícito no passo L, p. 5).
+
+!fig[Uma partida de Arcs na mesa, em foto da editora original (edição em inglês): o mapa no centro, os tabuleiros dos jogadores nas bordas, os dados de batalha e as fichas de recurso ao lado (partida em andamento, edição em inglês; não é a montagem inicial). Imagem: Buried Giant Studios](../../arcs/fotos/mesa-1.webp)
+
+**O que muda com o número de jogadores** (p. 2, 4 e 5)
+
+| Jogadores | Baralho de ação | Linha da Corte | Aglomerados fora de jogo | Sistemas C de cada um | Fichas nas ambições | Cartas que sobram para o descarte | Poder para acabar |
+|---|---|---|---|---|---|---|---|
+| 2 | 20 cartas ("1" e "7" na caixa) | 3 cartas | 2 | 2 (2 naves em cada) | 6 fichas (passo 14) | 8 | 33 |
+| 3 | 20 cartas ("1" e "7" na caixa) | 4 cartas | 2 | 1 | nenhuma | 2 | 30 |
+| 4 | 28 cartas | 4 cartas | 1 | 1 | nenhuma | 4 | 27 |
+
+As cartas que sobram são o baralho de ação menos as 6 de cada jogador: 20 menos 12, 20 menos 18 e 28 menos 24.
+
+**Preparação Geral** (p. 4)
+
+1. [A] Ponha o mapa no centro da mesa.
+2. [A] Junte ao lado do mapa os 18 dados de batalha e as 25 fichas de recurso.
+3. [B] Sorteie um jogador e entregue a ele o marcador de iniciativa.
+
+!fig[O que fica ao lado do mapa: os dados de batalha (Assalto, Escaramuça e Saque, 6 de cada), as fichas de recurso (5 de cada tipo) e, à direita, o marcador de iniciativa. Ilustração: manual Meeple BR (p. 5)](figuras/setup-recursos-dados.webp)
+
+4. [C] Embaralhe as 20 cartas de ação marcadas de "2" a "6", com o verso para cima: é o baralho de ação.
+5. [D] Só com 4 jogadores: embaralhe no baralho de ação as 8 cartas marcadas com "1" e "7". Com 2 ou 3 jogadores, elas voltam à caixa.
+
+!fig[O baralho de ação com o verso para cima (C) e as cartas "1" e "7", que só entram com 4 jogadores (D). Ilustração: manual Meeple BR (p. 5)](figuras/setup-baralho-acao.webp)
+
+6. [E] Ponha os 3 marcadores de ambição, com o lado azul (o de menor numeração) para cima, na seção Marcadores Disponíveis do mapa.
+7. [F] Ponha o marcador do capítulo no espaço "1" da Trilha de Capítulos.
+
+!fig[A borda direita do mapa: os 3 marcadores de ambição com o lado azul para cima nos Marcadores Disponíveis (E), as seções Magnata, Tirano, Senhor da Guerra, Guardião e Empata (a seta K mostra uma ficha de Relíquia indo para Guardião, só com 2 jogadores) e o marcador do capítulo no espaço "1" (F). Ilustração: manual Meeple BR (p. 5)](figuras/setup-ambicoes.webp)
+
+8. [G] Ponha o marcador zero na seção Ambição Declarada do mapa, na borda esquerda (ele aparece na figura do mapa, no passo 21).
+9. [H] Embaralhe as 6 cartas de Vox e as 25 cartas de Guilda juntas, com o verso para cima: é o Baralho da Corte. Ponha-o ao lado do mapa.
+10. [H] Revele cartas do Baralho da Corte, uma ao lado da outra: 3 cartas com 2 jogadores, 4 com 3 ou 4 jogadores. É a linha da Corte.
+
+!fig[A linha da Corte com 4 cartas reveladas e, embaixo, o Baralho da Corte com o verso para cima (H). Ilustração: manual Meeple BR (p. 5)](figuras/setup-corte.webp)
+
+11. [I] Pegue as 4 cartas de preparação do seu número de jogadores, embaralhe e revele 1.
+
+!fig[Uma carta de preparação de 4 jogadores, revelada (I): ela marca o aglomerado Fora de Jogo e os sistemas iniciais de cada jogador, de 1A a 4C (N). Ilustração: manual Meeple BR (p. 4)](figuras/setup-carta-preparacao.webp)
+
+12. [J] Em cada aglomerado que a carta marca como Fora de Jogo, ponha um marcador de caminho sobre o portal numerado. O manual não diz qual dos dois tamanhos vai em cada portal; a sugestão deste guia é usar o que se encaixa no portal coberto.
+13. [J] Nesse mesmo aglomerado, ponha 3 marcadores fora de jogo sobre os 3 planetas que tocam o portal. São 2 aglomerados com 2 ou 3 jogadores e 1 com 4 jogadores.
+
+!fig[Os marcadores de caminho, longo e curto, que cobrem o portal e ligam os portais dos aglomerados vizinhos, e um marcador fora de jogo, que cobre um planeta. Ilustração: manual Meeple BR (p. 3)](figuras/setup-fora-de-jogo.webp)
+
+14. [K] Só com 2 jogadores: pegue as 6 fichas de recurso dos 6 planetas cobertos por marcadores fora de jogo e ponha nas seções de ambição do mapa: Matéria-Prima e Combustível em Magnata, Armas em Senhor da Guerra, Relíquias em Guardião e Psiônicos em Empata. A seta K da figura do passo 7 mostra uma delas.
+
+**Preparação dos Jogadores** (p. 5)
+
+15. [L] Cada jogador escolhe uma cor e pega o tabuleiro do jogador, 5 cidades, 5 espaçoportos, 15 naves e 10 agentes dela.
+
+!fig[As peças de cada jogador (L): 5 espaçoportos (o triângulo), 15 naves e 10 agentes. As 5 cidades, também triangulares, aparecem no tabuleiro da figura seguinte. Ilustração: manual Meeple BR (p. 5)](figuras/setup-pecas.webp)
+
+16. [L] Cada jogador põe as 5 cidades nos espaços triangulares ao longo da borda de cima do seu tabuleiro.
+
+!fig[O tabuleiro do jogador com as cidades nos espaços triangulares da borda de cima e, à esquerda, os dois primeiros espaços circulares já com as 2 fichas de recurso do passo 22 (O). Embaixo, as áreas de Recursos, Troféus e Prisioneiros. Ilustração: manual Meeple BR (p. 5)](figuras/setup-tabuleiro.webp)
+
+17. [M] Cada jogador põe o seu marcador de Poder no espaço "0" da trilha de Poder, na borda de baixo do mapa.
+18. [N] Cada sistema da carta de preparação é um planeta (o tipo dele é o do ícone e da cor do planeta) ou um portal; cidades e espaçoportos vão num espaço de construção do planeta (p. 7). Todos põem as peças iniciais ao mesmo tempo, com as naves em pé e as construções com o lado colorido para cima, isto é, inteiras (p. 7). Quem tem o marcador de iniciativa é o jogador 1 e põe 3 naves e 1 cidade no sistema 1A da carta de preparação. A cidade é a mais à esquerda do seu tabuleiro.
+19. [N] O jogador 1 põe 3 naves e 1 espaçoporto no sistema 1B.
+20. [N] O jogador 1 põe 2 naves no sistema 1C. Com 2 jogadores, a carta tem dois sistemas 1C, e ele põe 2 naves em cada um.
+21. [N] Seguindo em sentido horário a partir do jogador 1, o 2º, o 3º e o 4º jogadores fazem o mesmo nos sistemas 2A a 2C, 3A a 3C e 4A a 4C.
+
+!fig[O mapa preparado com uma carta de 4 jogadores: o aglomerado Fora de Jogo com o marcador de caminho no portal e os marcadores fora de jogo nos planetas (J), as peças iniciais do jogador 1 em 1A, 1B e 1C (N), o marcador zero na borda esquerda (G), o descarte do baralho de ação no alto, à esquerda (Q), e o início da trilha de Poder embaixo (M). Ilustração: manual Meeple BR (p. 4)](figuras/preparacao.webp)
+
+22. [O] Cada jogador pega as 2 fichas de recurso dos ícones dos planetas dos seus sistemas A e B e as põe, nessa ordem, nos dois primeiros espaços circulares da esquerda do seu tabuleiro (figura do passo 16).
+23. [P] Cada jogador compra 6 cartas de ação para a mão.
+
+!fig[A mão inicial de cada jogador: 6 cartas de ação (P). Ilustração: manual Meeple BR (p. 5)](figuras/setup-mao.webp)
+
+24. [P] Só com 2 jogadores: o jogador sem o marcador de iniciativa pode, uma única vez, descartar as 6 cartas da mão e comprar 6 novas.
+25. [Q] As cartas de ação que ninguém recebeu vão para a pilha de descarte do mapa, com o verso para cima (o espaço Q, no alto e à esquerda, na figura do passo 21).
+
+**Quem começa.** O jogador com o marcador de iniciativa: ele joga a carta líder e faz o primeiro turno da primeira rodada; depois, a vez segue em sentido horário (p. 3, 8 e 10).
+
+**Antes de começar, confira:**
+
+- Baralho de ação com as cartas certas para o número de jogadores e nenhuma carta "1" ou "7" sobrando na mesa com 2 ou 3 jogadores.
+- Marcadores de ambição com o lado azul para cima; marcador do capítulo no "1"; marcador zero em Ambição Declarada.
+- Linha da Corte com 3 cartas (2 jogadores) ou 4 (3 ou 4 jogadores).
+- Cada aglomerado Fora de Jogo com o marcador de caminho no portal e os 3 planetas cobertos.
+- Cada jogador com 8 naves no mapa (10 com 2 jogadores), 1 cidade, 1 espaçoporto, 2 fichas de recurso no tabuleiro, Poder em "0" e 6 cartas na mão.
+
+?? Numa partida de 3 jogadores, quantas cartas de ação vão para a pilha de descarte depois que todos compram a mão?
+- ( ) Nenhuma: o baralho de ação fica de lado para o capítulo seguinte.
+- (x) 2, viradas para baixo.
+- ( ) 10, porque as cartas "1" e "7" também entram.
+- ( ) 4, viradas para cima.
+= Com 3 jogadores o baralho tem as 20 cartas de "2" a "6"; 3 jogadores com 6 cartas cada ficam com 18, e as 2 que sobram vão para o descarte com o verso para cima (p. 4 e 5).
+
 ## 4min. Comece a jogar em 4 minutos
 
 **Meta:** em 4 minutos de leitura, entender o objetivo, montar a mesa e jogar a primeira rodada sem abrir o manual.
 
 ### A ideia do jogo
 
-Cada jogador comanda naves, cidades e agentes no **Vértice**, um mapa de planetas e portais. Você ganha **Poder** (os pontos do jogo) completando **ambições**: ter mais recursos de certo tipo, mais prisioneiros ou mais troféus. A partida costuma ter de 3 a 5 **capítulos**, no máximo 5. Ela acaba no fim do capítulo em que alguém chega a 27 de Poder (4 jogadores), 30 (3 jogadores) ou 33 (2 jogadores), ou no fim do capítulo 5. Vence quem tiver mais Poder (p. 2 e 19).
+Cada jogador comanda naves, cidades e agentes no **Vértice**, um mapa de planetas e portais. Você ganha **Poder** (os pontos do jogo) completando **ambições**: ter mais recursos de certo tipo, mais prisioneiros ou mais troféus. A partida se divide em **capítulos**, no máximo 5 (p. 2 e 8).
 
 ### Monte a mesa
 
-1. Mapa no centro, com os 18 dados de batalha e as 25 fichas de recurso ao lado. Sorteie quem fica com o marcador de iniciativa (p. 4).
-2. Baralho de ação: as 20 cartas de "2" a "6", embaralhadas. Com 4 jogadores, junte também as 8 cartas "1" e "7".
-3. Os 3 marcadores de ambição, com o lado azul para cima, nos Marcadores Disponíveis; o marcador do capítulo no "1"; o marcador zero em Ambição Declarada.
-4. Corte: embaralhe as 6 cartas de Vox com as 25 de Guilda e abra 3 cartas (2 jogadores) ou 4 (3 ou 4 jogadores) ao lado do mapa.
-5. Revele 1 carta de preparação da sua contagem de jogadores. Nos aglomerados que ela marca como Fora de Jogo, ponha o marcador de caminho no portal e 3 marcadores fora de jogo nos planetas.
-6. Cada jogador pega o tabuleiro, 5 cidades, 5 espaçoportos, 15 naves e 10 agentes da sua cor; as cidades vão para os espaços triangulares do tabuleiro. Marcador de Poder no 0 (p. 5).
-7. Peças iniciais, nos sistemas marcados na carta de preparação com o seu número (1 para quem tem a iniciativa, depois 2, 3 e 4 em sentido horário): em A, 3 naves e 1 cidade; em B, 3 naves e 1 espaçoporto; em C, 2 naves (com 2 jogadores, 2 naves em cada um dos dois sistemas C).
-8. Cada um recebe as 2 fichas de recurso dos planetas dos seus sistemas A e B e compra 6 cartas de ação. As cartas que sobrarem vão para o descarte, viradas para baixo.
+A montagem completa, com figuras, está na seção "Montar a mesa passo a passo", logo acima. O essencial (p. 4 e 5):
 
-### Sua primeira rodada
+1. Mapa no centro; marcador de iniciativa para um jogador sorteado.
+2. Baralho de ação com as cartas de "2" a "6" (com 4 jogadores, também "1" e "7"); Corte com 3 cartas (2 jogadores) ou 4.
+3. Uma carta de preparação do seu número de jogadores, revelada: ela marca os aglomerados fora de jogo e os sistemas iniciais.
+4. Cada jogador põe 3 naves e 1 cidade em A, 3 naves e 1 espaçoporto em B, 2 naves em C (com 2 jogadores, em cada um dos dois sistemas C); recebe as 2 fichas de recurso dos planetas de A e B e compra 6 cartas de ação. Com 2 jogadores, as 6 fichas dos planetas cobertos vão para as seções de ambição.
 
-Uma rodada é uma volta na mesa: em geral, cada jogador joga **1 carta de ação**. Quem não tem cartas é pulado (p. 8 e 10).
+### Seu primeiro turno
 
-- **Quem tem a iniciativa** joga a carta líder, virada para cima, e faz uma ação por ponto de ação da carta, conforme o **naipe**. Antes, pode declarar a ambição mostrada na carta.
+Uma rodada é uma volta na mesa: em geral, cada jogador joga **1 carta de ação** no seu turno. Quem não tem cartas é pulado (p. 8 e 10).
+
+- **Quem tem a iniciativa** joga a carta líder, virada para cima, e faz uma ação por ponto de ação da carta, conforme o naipe. Antes, pode declarar a ambição mostrada na carta.
 - **Os outros**, em sentido horário, escolhem uma de três formas: **Superar** (mesmo naipe e número maior que o da líder: faz ações até os pontos da carta), **Copiar** (carta virada para baixo: faz 1 ação da carta líder) ou **Pivotar** (outro naipe, qualquer número: faz 1 ação da própria carta).
-- No fim da rodada, a iniciativa vai para quem Superou com o número mais alto (se ninguém a tomou antes).
+- No fim da rodada, a iniciativa vai para quem Superou com o número mais alto (se ninguém a tomou antes); se ninguém Superou, fica com quem já tem (p. 11).
+
+O número no canto da carta decide quem Supera; os pontos de ação da carta dizem quantas ações você faz (p. 10).
 
 | Naipe | Ações |
 |---|---|
@@ -36,15 +145,31 @@ Uma rodada é uma volta na mesa: em geral, cada jogador joga **1 carta de ação
 | Construção | Construir, Reparar |
 | Mobilização | Mover, Influenciar |
 
-?? O Jogador 2 não tem nenhuma carta do naipe da carta líder. O que pode fazer?
-- ( ) Nada: precisa passar a vez.
-- (x) Pivotar com uma carta de outro naipe e fazer 1 ação dela, ou Copiar com uma carta virada para baixo e fazer 1 ação da líder.
-- ( ) Superar com qualquer carta de número maior.
-= Superar exige o mesmo naipe da líder. Copiar aceita qualquer carta, virada para baixo, e Pivotar exige carta de outro naipe; os dois dão 1 ação (p. 10).
+> [!resolvido] **Exemplo resolvido.** O Jogador 1 tem a iniciativa e lidera com uma Agressão "3": faz uma ação de Agressão por ponto de ação da carta. O Jogador 2 joga uma Agressão "5": mesmo naipe e número maior, então Supera e faz ações até os pontos da carta dele. O Jogador 3 Copia: joga uma carta virada para baixo e faz 1 ação da líder, Mover. Ninguém tomou a iniciativa, e o Jogador 2 Superou: ele lidera a próxima rodada (p. 10 e 11).
 
-### Como se ganha Poder
+> [!complete] **Complete.** Agora é o Jogador 3, numa rodada nova liderada pelo Jogador 2.
+>
+> ?? O Jogador 3 não tem nenhuma carta do naipe da carta líder. O que pode fazer?
+> - ( ) Nada: precisa passar a vez.
+> - (x) Pivotar com uma carta de outro naipe e fazer 1 ação dela, ou Copiar com uma carta virada para baixo e fazer 1 ação da líder.
+> - ( ) Superar com qualquer carta de número maior.
+> = Superar exige o mesmo naipe da líder. Copiar aceita qualquer carta, virada para baixo, e Pivotar exige carta de outro naipe; os dois dão 1 ação (p. 10).
 
-No fim do capítulo, quando ninguém tem mais cartas, pontuam as ambições **declaradas**. Quem estiver em primeiro numa ambição ganha o valor maior dos marcadores dela; o segundo, o valor menor (p. 18). As ambições são: **Magnata** (Matéria-Prima e Combustível), **Tirano** (Prisioneiros), **Senhor da Guerra** (Troféus), **Guardião** (Relíquia) e **Empata** (Psiônico).
+> [!suavez] **Sua vez.**
+>
+> ?? A líder é uma Mobilização "3". O Jogador 2 Pivota com uma Agressão "6", e o Jogador 3 Supera com uma Mobilização "4". Ninguém tomou a iniciativa. Quem lidera a próxima rodada?
+> - ( ) O Jogador 2, porque jogou o número mais alto.
+> - (x) O Jogador 3.
+> - ( ) Quem jogou a líder, porque ninguém tomou a iniciativa.
+> = A iniciativa vai para quem Superou com o número mais alto; Pivotar não conta (p. 11).
+
+### Ainda não precisa saber
+
+Tomar a iniciativa no meio da rodada e declarar ambição em detalhe: etapa 2. O que cada ação faz e as cartas da Corte: etapa 3. Batalha e dano: etapa 4. Pontuação no detalhe: etapa 5. Abra a etapa quando chegar a hora.
+
+### Como a partida acaba
+
+O capítulo termina quando todos ficam sem cartas de ação ou quando todos que ainda têm cartas passam a iniciativa. Então pontuam as ambições **declaradas**: quem estiver em primeiro numa ambição ganha a soma dos valores maiores dos marcadores dela; o segundo, a soma dos menores. Quem não tem nada que conte para a ambição não pontua nela (p. 18). As ambições são: Magnata (Matéria-Prima e Combustível), Tirano (Prisioneiros), Senhor da Guerra (Troféus), Guardião (Relíquia) e Empata (Psiônico). A partida acaba no fim do capítulo em que alguém chega a 27 de Poder (4 jogadores), 30 (3 jogadores) ou 33 (2 jogadores), ou no fim do capítulo 5. Vence quem tiver mais Poder (p. 2 e 19).
 
 **Prefere ver?** Uma partida resumida e as regras em vídeo; em caso de diferença, vale o manual.
 
@@ -97,7 +222,7 @@ O guia tem cinco etapas: montar a mesa e ler o mapa; jogar uma rodada; fazer as 
 > 4. Você **controla** um sistema se tiver lá mais naves inteiras que qualquer outro jogador. Empate: ninguém controla.
 > 5. **Leal** é o que tem a sua cor; **Oponente**, o que tem a cor de outro jogador.
 
-!fig[O mapa preparado para 3 jogadores: a carta de preparação mostra os aglomerados fora de jogo e os sistemas iniciais de cada jogador (1A, 1B, 1C e assim por diante). Ilustração: manual Meeple BR (p. 4)](figuras/preparacao.webp)
+!fig[O mapa preparado com uma carta de preparação de 4 jogadores: a carta mostra o aglomerado fora de jogo e os sistemas iniciais de cada jogador (1A, 1B, 1C e assim por diante). Ilustração: manual Meeple BR (p. 4)](figuras/preparacao.webp)
 
 > [!mais] **Preparação para 2 jogadores.** Ponha as 6 fichas de recurso dos 6 planetas cobertos por marcadores fora de jogo nas seções de ambição do mapa: Matéria-Prima e Combustível em Magnata, Armas em Senhor da Guerra, Relíquias em Guardião e Psiônicos em Empata. Na pontuação, elas contam como se fossem de um terceiro jogador; as Armas em Senhor da Guerra contam como Troféus (p. 4 e 19).
 
