@@ -1,0 +1,42 @@
+{
+ "slug": "spirit-island",
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 1600,
+   "altura": 1600,
+   "editora": "shop.greaterthangames.com",
+   "credito": "Imagem: shop.greaterthangames.com · edição em inglês (Greater Than Games)",
+   "pagina": "https://shop.greaterthangames.com/products/spirit-island",
+   "imagem": "http://shop.greaterthangames.com/cdn/shop/files/SISL-CORE-1.jpg",
+   "baixada_em": "2026-11-04",
+   "aprovada": true,
+   "texto": true
+  },
+  {
+   "arquivo": "fotos/mesa-1.webp",
+   "tipo": "mesa",
+   "largura": 1600,
+   "altura": 1600,
+   "editora": "shop.greaterthangames.com",
+   "credito": "Imagem: shop.greaterthangames.com · edição em inglês (Greater Than Games)",
+   "pagina": "https://shop.greaterthangames.com/products/spirit-island",
+   "imagem": "https://shop.greaterthangames.com/cdn/shop/files/SISL-CORE-3.jpg?2000w",
+   "baixada_em": "2026-11-04",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 1600,
+   "altura": 1600,
+   "editora": "shop.greaterthangames.com",
+   "credito": "Imagem: shop.greaterthangames.com · edição em inglês (Greater Than Games)",
+   "pagina": "https://shop.greaterthangames.com/products/spirit-island",
+   "imagem": "https://shop.greaterthangames.com/cdn/shop/files/SISL-CORE-2.jpg?2000w",
+   "baixada_em": "2026-11-04",
+   "aprovada": true
+  }
+ ]
+}
