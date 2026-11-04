@@ -4,7 +4,7 @@
 
 ## setup. Montar a mesa passo a passo
 
-A montagem segue a preparação do manual para o modo Cooperativo vs. Zumbi (p. 4 e 5), na mesma ordem dos passos 1 a 8 e das letras A a Q, com a criação dos montes de cartas da p. 6 no lugar em que o manual a pede (passo 6) e a lista de componentes da p. 2. Nesse modo jogam de 3 a 5 pessoas: uma é o Jogador Zumbi, as outras são os humanos. O que muda nos outros modos está na tabela depois dos passos (p. 16 e 18).
+A montagem segue a preparação do manual para o modo Cooperativo vs. Zumbi (p. 4 e 5), na mesma ordem dos passos 1 a 8 e das letras A a Q, com a criação dos montes de cartas da p. 6 no lugar em que o manual a pede (passo 6) e a lista de componentes da p. 2. Nesse modo jogam de 3 a 5 pessoas (p. 3): uma é o Jogador Zumbi, as outras são os humanos. O que muda nos outros modos está na tabela depois dos passos (p. 16 e 18).
 
 **O que vem na caixa** (p. 2):
 
@@ -63,12 +63,12 @@ A montagem segue a preparação do manual para o modo Cooperativo vs. Zumbi (p. 
 
 !fig[Três Cartas de Objetivo sorteadas, com o lado cooperativo para cima: cada uma traz os componentes, a preparação e as regras do objetivo. Ilustração: manual Meeple BR (p. 5)](figuras/setup-objetivos.webp)
 
-15. **Separe as 32 Cartas de Procura pelo tipo:** Pegar, Evento, Arma e Mochila (p. 6, passo 1).
+15. **Um jogador monta os montes: separe as 32 Cartas de Procura pelo tipo:** Pegar, Evento, Arma e Mochila (p. 6, passo 1).
 16. **Embaralhe juntas as de Pegar e de Evento: é o Monte A, 12 cartas, fechado** (p. 6, passo 2).
 17. **Embaralhe juntas as de Arma e de Mochila e compre 12 sem olhar: é o Monte B.** As que sobram, fechadas, formam o Monte de Suprimento (p. 6, passo 3).
 18. **Embaralhe o Monte A com o Monte B: é o Monte de Procura, 24 cartas** (p. 6, passo 4).
 
-!fig[Os montes de cartas: em cima, os ícones dos quatro tipos (Pegar, Evento, Arma e Mochila); no meio, o Monte A (Pegar e Evento), o Monte B (Arma e Mochila) e, à direita, o resto, que vira o Monte de Suprimento; embaixo, o Monte de Procura, A e B juntos. Ilustração: manual Meeple BR (p. 6)](figuras/setup-montes.webp)
+!fig[Os montes de cartas: em cima, os ícones dos quatro tipos (Pegar, Evento, Arma e Mochila); depois, o Monte A (Pegar e Evento); abaixo, o Monte B (Arma e Mochila) e, à direita, o resto, que vira o Monte de Suprimento; embaixo, o Monte de Procura, A e B juntos. Ilustração: manual Meeple BR (p. 6)](figuras/setup-montes.webp)
 
 19. **Ponha o Monte de Suprimento fechado, com o verso para cima, perto das Cartas de Objetivo** (p. 4, passo L).
 
@@ -79,7 +79,7 @@ A montagem segue a preparação do manual para o modo Cooperativo vs. Zumbi (p. 
 
 !fig[À esquerda, o Monte de Procura (M); à direita, uma Carta de Procura fechada na frente de um humano (N). Ilustração: manual Meeple BR (p. 5)](figuras/setup-procura.webp)
 
-**As peças das Lojas**
+**Dado, Itens e peças das Lojas**
 
 22. **Ponha o Dado de Luta e os 12 Itens perto do Monte de Suprimento** (p. 5, passo 7).
 
@@ -89,17 +89,17 @@ A montagem segue a preparação do manual para o modo Cooperativo vs. Zumbi (p. 
 
 !fig[A Moto indo para a sua marcação no Estacionamento Z (O). Ilustração: manual Meeple BR (p. 5)](figuras/setup-veiculo.webp)
 
-24. **Ponha os 2 Marcadores de Armadilha, com o lado cinza para cima, ao lado da Amp. Eletrônicos ou da Brinquedos MBR**, a que estiver na mesa (p. 5, passo P).
+24. **Ponha os 2 Marcadores de Armadilha, com o lado cinza para cima, ao lado da Amp. Eletrônicos / Brinquedos MBR** (p. 5, passo P). Eles estão entre os Marcadores de Objetivo da caixa (p. 2).
 
 !fig[Os 2 Marcadores de Armadilha, lado cinza para cima, ao lado da Amp. Eletrônicos. Ilustração: manual Meeple BR (p. 5)](figuras/setup-armadilha.webp)
 
-25. **Ponha os 2 Marcadores de Suprimento nos locais com os números deles** (p. 5, passo Q).
+25. **Ponha os 2 Marcadores de Suprimento nos locais com os números deles** (p. 5, passo Q). Eles também estão entre os Marcadores de Objetivo (p. 2).
 
 !fig[Um Marcador de Suprimento indo para o local com o seu número numa Loja (Q). Ilustração: manual Meeple BR (p. 5)](figuras/setup-suprimento.webp)
 
 26. **Começa quem esteve num shopping mais recentemente**, ou escolham outro jeito (p. 6).
 
-!fig[O shopping em jogo, na foto da editora: o Pátio no centro com a Barricada e os Sobreviventes, as Lojas em volta com Zumbis, ITEMeeples carregando Itens e a Moto. Imagem: MeepleBR](fotos/mesa-1.webp)
+!fig[O shopping no meio de uma partida, não a mesa inicial, na foto da editora: o Pátio no centro com a Barricada e os Sobreviventes, as Lojas em volta com Zumbis, ITEMeeples carregando Itens e a Moto. Imagem: MeepleBR](fotos/mesa-1.webp)
 
 **O que muda com o modo e o número de jogadores** (p. 4, 6, 16 e 18):
 
@@ -109,9 +109,11 @@ A montagem segue a preparação do manual para o modo Cooperativo vs. Zumbi (p. 
 | Cooperativo vs. Zumbi | 4 (3 humanos) | 2 | idem | dá 3, fica com 5; 16 no monte |
 | Cooperativo vs. Zumbi | 5 (4 humanos) | 2 | idem | dá 4, fica com 4; 16 no monte |
 | Cooperativo contra a IA | 2 a 4 | 3 fácil, 2 normal, 1 difícil, 0 épico | 1 sorteada, só a habilidade do topo, sem Indicador de Horda | cada jogador compra 1 ao acaso e a deixa fechada junto da Carta de Jogador: 22, 21 ou 20 no monte |
-| Solo | 1 | como no Cooperativo contra a IA | como no Cooperativo contra a IA | como no Cooperativo contra a IA; você controla 2 Cartas de Jogador, cada uma com um ITEMeeple |
+| Solo | 1 | como no Cooperativo contra a IA | como no Cooperativo contra a IA | você controla 2 Cartas de Jogador, cada uma com um ITEMeeple; o manual não diz quantas Cartas de Procura iniciais: combinem antes (leitura deste guia: 1 por personagem) |
 
-Nos modos competitivos, as Cartas de Objetivo ficam com o lado "Objetivo Competitivo" para cima, o Pátio vira para o lado "Pátio Competitivo", e cada humano põe um Marcador de Sobrevivente no símbolo da sua cor (dois, se forem só 2 humanos) (p. 17 e 18).
+Nos modos competitivos, as Cartas de Objetivo ficam com o lado "Objetivo Competitivo" para cima, o Pátio vira para o lado "Pátio Competitivo", e cada humano põe um Marcador de Sobrevivente no símbolo da sua cor (dois, se forem só 2 humanos), e os Marcadores de Objetivo da cor de cada jogador marcam o progresso dele nas Cartas de Objetivo (p. 17 e 18).
+
+**Sem Jogador Zumbi** (contra a IA e Solo, p. 16 e 18): faça os passos 1 a 5 com o número de Sobreviventes da tabela; no lugar dos passos 6 a 8, sorteie 1 Carta de Zumbi, use só a habilidade do topo e não ponha Indicador de Horda; os Zumbis que sobram ficam num estoque ao lado do shopping (leitura deste guia, como no passo 8); faça os passos 9 a 19 e 22 a 26; no lugar dos passos 20 e 21, o Monte de Procura fica ao alcance de todos (leitura deste guia) e cada jogador compra 1 carta ao acaso e a deixa fechada junto da Carta de Jogador. No Solo, você controla 2 personagens.
 
 **O que volta para a caixa:** as Cartas de Jogador e os Marcadores de Munição e de Dano que não foram usados (p. 4, passo K). Os Zumbis que não estão no shopping não voltam: são o estoque, 10 no começo (18 menos os 8 das entradas), se nenhum Objetivo pedir outros (p. 4). As 8 Cartas de Arma e de Mochila que sobram do Monte B formam o Monte de Suprimento (p. 6).
 
@@ -141,6 +143,7 @@ A montagem completa, com figuras, está na seção "Montar a mesa passo a passo"
 3. Cada humano fica com 1 de 3 Cartas de Jogador, lado Humano: ITEMeeple na sala central do Pátio, dano no 0 e munição no 9.
 4. 3 Cartas de Objetivo, lado cooperativo, preparadas; Monte de Procura de 24 cartas com o Jogador Zumbi, que compra 8 e põe 1 fechada na frente de cada humano.
 5. Começa quem esteve num shopping mais recentemente (p. 6).
+6. Dado, Itens, Veículo, Armadilhas e Marcadores de Suprimento: veja os passos 22 a 25 acima.
 
 ### Seu primeiro turno
 
@@ -187,7 +190,7 @@ Depois da sua Procura (p. 12 a 14): se o símbolo da carta revelada for o da ent
 
 ### Ainda não precisa saber
 
-Comido Vivo: etapa 1. Cercado em detalhe: etapa 2. Salas, Itens e Objetivos: etapa 3. Barricada e jogo sem Jogador Zumbi: etapa 4. **Com 2 jogadores** (ou sozinho), não há Jogador Zumbi: monte a mesa como acima, troque o que o bloco "Cooperativo sem Jogador Zumbi" da etapa 4 indica e use o turno da IA no lugar do turno do Zumbi (p. 16 e 18).
+Comido Vivo: etapa 1. Cercado em detalhe: etapa 2. Salas, Itens e Objetivos: etapa 3. Barricada e jogo sem Jogador Zumbi: etapa 4. **Com 2 jogadores** (ou sozinho), não há Jogador Zumbi; o modo contra a IA também serve para 3 ou 4 jogadores. Monte a mesa como acima, com as trocas da tabela de modos em "Montar a mesa passo a passo" e do bloco "Cooperativo sem Jogador Zumbi" da etapa 4, e use o turno da IA no lugar do turno do Zumbi (p. 16 e 18).
 
 ### Como a partida acaba
 
@@ -218,7 +221,7 @@ São quatro etapas: mesa, dano e munição; mover e matar Zumbis; usar as Lojas 
 > 1. Pátio no centro, lado "Pátio Cooperativo" para cima. As outras 8 Lojas ao redor, em posição e lado aleatórios, com os Símbolos de Entrada para fora do shopping (algumas ficam de cabeça para baixo). 1 Zumbi em cada Símbolo de Entrada: 8 Zumbis.
 > 2. Barricada no espaço 2 do Contador de Barricada; 2 Marcadores de Sobrevivente na área de Estoque do Pátio.
 > 3. O Jogador Zumbi embaralha as Cartas de Jogador embaixo da mesa, compra 3 e fica com 1, lado Zumbi para cima; as outras voltam ao baralho. 1 Indicador de Horda (cubo verde) no espaço 1 do Contador de Horda, os outros 2 ao alcance. Os Zumbis restantes são o estoque, ao lado dele.
-> 4. Cada humano recebe 3 Cartas de Jogador ao acaso e fica com 1, lado Humano. Põe o ITEMeeple na sala central do Pátio (p. 4), o Marcador de Dano da cor dele no 0 da trilha e um Marcador de Munição no 9. O que sobrou volta à caixa.
+> 4. Cada humano recebe 3 Cartas de Jogador ao acaso e fica com 1, lado Humano. Põe o ITEMeeple na sala central do Pátio, o Marcador de Dano da cor dele no 0 da trilha e um Marcador de Munição no 9 (com figuras na seção "Montar a mesa passo a passo"). O que sobrou volta à caixa.
 > 5. 3 Cartas de Objetivo sorteadas embaixo da mesa, lado "Objetivo Cooperativo" para cima. Siga a preparação de cada uma; se pedir um Indicador de Objetivo (cubo colorido), use qualquer cor de jogador.
 > 6. Monte o Monte de Procura e o Monte de Suprimento (abaixo). Suprimento perto das Cartas de Objetivo; Procura perto do Jogador Zumbi, que compra 8 cartas, escolhe e põe 1 fechada na frente de cada humano (que ainda não olha) e fica com o resto na mão.
 > 7. Dado de Luta e os 12 Itens perto do Monte de Suprimento. O Veículo (Moto ou Carro de Polícia, conforme as Lojas na mesa) na sua marcação; 2 Marcadores de Armadilha, lado cinza para cima, ao lado da Loja que os usa; os 2 Marcadores de Suprimento nos locais com os seus números.

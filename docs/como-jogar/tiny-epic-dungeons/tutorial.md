@@ -4,7 +4,7 @@
 
 ## setup. Montar a mesa passo a passo
 
-A montagem segue a página "Preparação" do manual (p. 4 e 5), na mesma ordem das letras A a V, e o diagrama da mesa montada (p. 5). Cada passo abaixo diz entre parênteses a letra do manual. O que muda com o número de heróis, inclusive na partida solo, está na tabela do fim (p. 4 e 17).
+A montagem segue a página "Preparação" do manual (p. 4 e 5): a frase de abertura dela (o passo 1 abaixo) e depois as letras A a V, na mesma ordem, e o diagrama da mesa montada (p. 5). Cada passo abaixo diz entre parênteses a letra do manual. O que muda com o número de heróis, inclusive na partida solo, está na tabela do fim (p. 4 e 17).
 
 **O que vem na caixa** (p. 2):
 
@@ -27,7 +27,9 @@ A montagem segue a página "Preparação" do manual (p. 4 e 5), na mesma ordem d
 | Marcadores de Desarme | 7 |
 | Marcadores de Altar | 5 |
 
-1. **Separe as Cartas de Masmorra em quatro grupos, pelo símbolo: Entrada, Salas, Encontros e Porta do Covil. Embaralhe cada grupo separadamente** (p. 4).
+1. **Separe as Cartas de Masmorra em quatro grupos, pelo símbolo: Entrada, Salas, Encontros e Porta do Covil. Embaralhe cada grupo separadamente** (p. 4, abertura, antes do item A). O símbolo de cada grupo é um losango azul, como os que o manual mostra na abertura da Preparação: escada na Entrada, arco de porta na Sala, cabeça de monstro no Encontro e um selo com uma estrela de pontas na Porta do Covil (p. 4).
+
+!fig[Os quatro símbolos, da esquerda para a direita: Entrada, Sala, Encontro e Porta do Covil. Ilustração: manual Meeple BR (p. 4)](figuras/setup-simbolos.webp)
 
 !fig[As 28 Cartas de Masmorra. Ilustração: manual Meeple BR (p. 2)](figuras/setup-masmorra.webp)
 
@@ -44,16 +46,18 @@ A montagem segue a página "Preparação" do manual (p. 4 e 5), na mesma ordem d
 9. **Ponha 1 Marcador de Altar no símbolo dele na Carta de Entrada** (p. 4, H).
 10. **Separe mais Marcadores de Altar, um por herói.** Os que sobram voltam para a caixa (p. 4, I).
 
+!fig[Os 5 Marcadores de Altar: 1 vai para a Entrada e os outros, um por herói, ficam separados. Ilustração: manual Meeple BR (p. 2)](figuras/setup-altares.webp)
+
 !fig[A Carta de Entrada no centro, com 4 Cartas de Masmorra viradas para baixo em volta, o Marcador de Altar e as miniaturas indo para ela; a letra F do manual marca a Entrada. Ilustração: manual Meeple BR (p. 5)](figuras/setup-entrada.webp)
 
 11. **Ponha o Tabuleiro de Tocha fora da Grade, com o lado Ato 1 para cima**, e deixe espaço em volta para as cartas nos locais de Goblin e de Lacaio (p. 4, J).
-12. **Ponha o Marcador de Tocha no espaço do topo da trilha marcado com o número de heróis**: com 4 heróis, no espaço "4" (p. 4, K).
+12. **Ponha o Marcador de Tocha no espaço do topo da trilha marcado com o número de heróis**: com 4 heróis, no espaço "4" (p. 4, K). Na figura da mesa montada, mais abaixo, a seta K aponta esse espaço.
 
 !fig[O Tabuleiro de Tocha, lado Ato 1, e o Marcador de Tocha. Ilustração: manual Meeple BR (p. 2)](figuras/setup-tocha.webp)
 
 13. **Embaralhe as Cartas de Goblin e as de Lacaio em 2 baralhos separados, virados para baixo, perto do Tabuleiro de Tocha** (p. 4, L).
 14. **Ponha os 4 Marcadores de Goblin ao lado dos números correspondentes no Tabuleiro de Tocha** (p. 4, M).
-15. **Ponha Marcadores de Vida, um por herói, perto do Baralho de Lacaio.** Os que não forem usados voltam para a caixa (p. 4, N).
+15. **Ponha Marcadores de Vida, um por herói, perto do Baralho de Lacaio**: os corações cinza (no diagrama da p. 5, N); os vermelhos ficam para os heróis no passo 21. Os que não forem usados voltam para a caixa (p. 4, N; p. 5).
 
 !fig[No alto, as Cartas de Goblin e as de Lacaio; embaixo, os 4 Marcadores de Goblin e os Marcadores de Lacaio. Ilustração: manual Meeple BR (p. 2)](figuras/setup-goblin-lacaio.webp)
 
@@ -72,7 +76,7 @@ A montagem segue a página "Preparação" do manual (p. 4 e 5), na mesma ordem d
 
 !fig[As 8 Miniaturas de Herói e os 8 Tabuleiros de Herói. Ilustração: manual Meeple BR (p. 2)](figuras/setup-herois.webp)
 
-!fig[Os Marcadores de Vida e de Foco e, à direita, os Marcadores de Altar. Ilustração: manual Meeple BR (p. 2)](figuras/setup-marcadores.webp)
+!fig[Os 12 Marcadores de Vida e de Foco: os corações vermelhos e os raios amarelos vão para os heróis (passo 21); os corações cinza ficam perto do Baralho de Lacaio (passo 15; no diagrama da p. 5, N). Ilustração: manual Meeple BR (p. 2)](figuras/setup-vida-foco.webp)
 
 22. **Deixe os 7 Marcadores de Desarme ao alcance dos jogadores** (p. 5, U).
 23. **Dê os 3 Dados de Herói e o Dado de Inimigo ao jogador mais novo**, que faz o primeiro turno (p. 5, V).
@@ -91,20 +95,20 @@ A montagem segue a página "Preparação" do manual (p. 4 e 5), na mesma ordem d
 | 3 | 7 | 3 + 9 | 4 | 23 cartas | espaço "3" | 1 + 3 / 1 | 3 |
 | 4 | 5 | 4 + 12 | 4 | 25 cartas | espaço "4" | 1 + 4 / 0 | 4 |
 
-> [!mais] **Partida solo.** Jogue com pelo menos 2 heróis (ou 3, ou 4) e controle cada um separadamente: atributos, espólios, feitiços e lugar na masmorra. Seja qual for o número de jogadores, a referência é a quantidade de heróis; por isso a montagem segue a linha de 2, 3 ou 4 heróis da tabela (p. 17).
+> [!mais] **Partida solo.** Jogue com pelo menos 2 heróis (ou 3, ou 4) e controle cada um separadamente: atributos, espólios, feitiços e lugar na masmorra. Seja qual for o número de jogadores, a referência é a quantidade de heróis; por isso a montagem segue a linha de 2, 3 ou 4 heróis da tabela (p. 17). No solo, escolha a ordem dos seus heróis e mantenha-a (o manual não define).
 
 **O que volta para a caixa:** as Salas e os Encontros não usados (E); os Marcadores de Altar e de Vida que sobram (I e N); os Tabuleiros de Chefe não comprados, sem revelar (O); os heróis não escolhidos (R) (p. 4 e 5).
 
-!fig[Tiny Epic Dungeons montado, na foto da editora (edição Deluxe, com peças diferentes das da caixa comum). Imagem: Gamelyn Games · edição Deluxe](fotos/mesa-1.webp)
-
 **Antes de começar, confira:** Baralho da Masmorra com C embaixo, B no meio e A em cima, no tamanho da tabela; Entrada aberta com 4 cartas viradas para baixo em volta e 1 Marcador de Altar; Altares separados, um por herói; Tabuleiro de Tocha no Ato 1 com a tocha no espaço do número de heróis; baralhos de Goblin e de Lacaio, Marcadores de Goblin nos números e Marcadores de Vida, um por herói; Tabuleiro de Chefe sorteado no Ato 1 com o Marcador do Chefe; Espólio e Feitiço; cada herói com miniatura na Entrada, Vida e Foco no topo; Desarmes à mão; dados com o mais novo.
 
+!fig[Uma partida em andamento, na foto da editora (edição Deluxe em inglês, com peças diferentes das da caixa comum). Não é a mesa no início. Imagem: Gamelyn Games · edição Deluxe](fotos/mesa-1.webp)
+
 ?? Partida com 2 heróis. Qual montagem está certa?
-- ( ) Baralho A com 5 Salas e Marcador de Tocha no espaço "2"
-- ( ) Baralho A com 9 Salas e Marcador de Tocha no primeiro espaço da trilha
+- ( ) Baralho A com 5 Salas, Baralho B com 2 Encontros e 6 Salas, e Marcador de Tocha no espaço "2"
+- ( ) Baralho A com 9 Salas, Baralho B com 2 Encontros e 6 Salas, e Marcador de Tocha no primeiro espaço
 - (x) Baralho A com 9 Salas, Baralho B com 2 Encontros e 6 Salas, e Marcador de Tocha no espaço "2"
-- ( ) Baralho A com 9 Salas e Baralho B com 1 Encontro e 3 Salas
-= Com 2 heróis, o Baralho A tem 9 Salas, o B tem 1 Encontro e 3 Salas por herói (2 e 6), e a tocha começa no espaço do topo com o número de heróis, o "2" (p. 4). O Baralho A de 5 Salas é o de 4 heróis.
+- ( ) Baralho A com 9 Salas, Baralho B com 1 Encontro e 3 Salas, e Marcador de Tocha no espaço "2"
+= Com 2 heróis, o Baralho A tem 9 Salas, o B tem 1 Encontro e 3 Salas por herói (2 e 6), e a tocha começa no espaço do topo com o número de heróis, o "2" (p. 4). O Baralho A de 5 Salas é o de 4 heróis, e 1 Encontro e 3 Salas é a conta de um herói só.
 
 ## 4min. Comece a jogar em 4 minutos
 
@@ -120,8 +124,8 @@ A montagem completa, com figuras, está na seção "Montar a mesa passo a passo"
 
 1. Baralho da Masmorra, virado para baixo, de cima para baixo: A, Salas (2 heróis: 9; 3: 7; 4: 5); B, 1 Encontro e 3 Salas por herói; C, 3 Salas e a Porta do Covil.
 2. Carta de Entrada aberta no centro, com 1 Marcador de Altar e 1 carta virada para baixo em cada lado. Espaço para uma grade de 7 por 7.
-3. Tabuleiro de Tocha no Ato 1, tocha no espaço do número de heróis; baralhos de Goblin e de Lacaio; 1 Marcador de Vida e 1 de Altar por herói *(depois)*.
-4. Tabuleiro de Chefe sorteado, no Ato 1, e Marcador do Chefe *(depois)*. Baralhos de Espólio e de Feitiço. Marcadores de Desarme.
+3. Tabuleiro de Tocha no Ato 1, tocha no espaço do número de heróis; baralhos de Goblin e de Lacaio; Marcadores de Goblin nos números do Tabuleiro de Tocha; 1 Marcador de Vida perto do Baralho de Lacaio e 1 de Altar por herói (separados para usar depois).
+4. Tabuleiro de Chefe sorteado, sem revelar, no Ato 1, com o Marcador do Chefe ao lado (para usar depois). Baralhos de Espólio e de Feitiço. Marcadores de Desarme.
 5. Cada jogador: Tabuleiro de Herói, miniatura na Entrada, Vida e Foco no topo das trilhas. O mais novo pega os dados e começa.
 
 ### Seu primeiro turno
@@ -204,7 +208,7 @@ Em cada etapa fica à vista o essencial: o passo a passo e o erro mais comum. O 
 > 12. Cada jogador: Tabuleiro de Herói (escolhido, sorteado ou escolhido entre alguns sorteados), miniatura na Carta de Entrada, Marcador de Vida e Marcador de Foco nos valores mais altos das trilhas.
 > 13. 7 Marcadores de Desarme ao alcance. Os 3 Dados de Herói e o Dado de Inimigo para o jogador mais novo, que começa.
 
-!fig[A mesa montada: Carta de Entrada no centro da grade de 7 por 7, com 4 cartas viradas e as miniaturas; acima, Tabuleiro de Chefe, Tabuleiro de Tocha e os baralhos de Goblin e de Lacaio; à esquerda, Espólio, Feitiço e o Baralho da Masmorra; embaixo, um Tabuleiro de Herói com os marcadores de Vida e de Foco. As letras seguem os itens da preparação. Ilustração: manual Meeple BR (p. 5)](figuras/preparacao.webp)
+A figura completa da mesa montada está na seção "Montar a mesa passo a passo", no início do guia.
 
 > [!mais] **Partida solo.** Use pelo menos 2 heróis e controle cada um em separado: atributos, espólios, feitiços e lugar na masmorra. Para todas as regras, o número de heróis é o número de jogadores (p. 17).
 

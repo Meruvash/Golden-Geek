@@ -55,7 +55,7 @@ A montagem segue a preparação do manual (p. 4 e 5), na mesma ordem: lá ela te
 
 !fig[O Tabuleiro de Lenda montado: o Dobrão no 1 da Trilha de Ouro (letra D), os 3 Tesouros na base (E), o Marcador de Lenda no espaço de baixo da Trilha de Lenda (C) e um Marujo na terceira linha (F). As letras são as dos passos do manual. Ilustração: manual Meeple BR (p. 4)](figuras/setup-tab-lenda.webp)
 
-8. **Embaralhe os seus 5 Marcadores de Ordem virados para baixo e ponha um em cada espaço de 1 a 5 do Timão**, em sentido horário, agora virados para cima. Cada jogador fica com uma ordem diferente, sorteada (p. 4, passo G).
+8. **Embaralhe os seus 5 Marcadores de Ordem virados para baixo e ponha um em cada espaço de 1 a 5 do Timão**, em sentido horário, agora virados para cima. Assim, a sequência das Ordens no Timão de cada jogador é sorteada (p. 4, passo G).
 9. **Ponha o Capitão no Esconderijo**, o espaço 0 do Timão (p. 4, passo H).
 10. **Ponha os outros 3 Marujos nos espaços de Missão da base do Tabuleiro de Timão, um em cada**: Cordame, Canhões e Extorsão. O Reparo fica vazio (p. 4, passo I).
 
@@ -63,7 +63,7 @@ A montagem segue a preparação do manual (p. 4 e 5), na mesma ordem: lá ela te
 
 **O Mercado e os Navios Mercantes**
 
-11. **Ponha o Tabuleiro de Mercado ao alcance de todos. Pegue 1 cubo de cada cor e ponha cada um, ao acaso, num dos 4 espaços da esquerda do tabuleiro** (p. 4, passo J). A posição de cada cubo diz quanto aquele Espólio vale.
+11. **Ponha o Tabuleiro de Mercado ao alcance de todos. Pegue 1 cubo de cada cor e ponha cada um, ao acaso, num dos 4 espaços da esquerda do tabuleiro** (p. 4, passo J). A posição de cada cubo diz quanto aquele Espólio vale: de cima para baixo, os espaços valem 5, 4, 3 e 2 Ouros (p. 9).
 
 !fig[O Tabuleiro de Mercado com um cubo de cada cor nos 4 espaços da esquerda. Ilustração: manual Meeple BR (p. 5)](figuras/setup-mercado.webp)
 
@@ -71,8 +71,8 @@ A montagem segue a preparação do manual (p. 4 e 5), na mesma ordem: lá ela te
 
 !fig[Os Caixotes de Espólios que sobram vão para a Bolsa de Espólios. Ilustração: manual Meeple BR (p. 5)](figuras/setup-bolsa.webp)
 
-13. **Ponha os 2 Portos em cantos opostos do Mar** (p. 4, passo L).
-14. **Ponha 1 Navio Mercante em cada Carta de Mapa com Porto**, de qualquer cor, apontado na diagonal para o Porto do outro canto (p. 4, passo M).
+13. **Ponha os 2 Portos em cantos opostos do Mar, na diagonal** (p. 4, passo L).
+14. **Ponha 1 Navio Mercante em cada uma das 2 cartas onde pôs um Porto**, de qualquer cor, apontado na diagonal para o Porto do outro canto (p. 4, passo M).
 15. **Tire 1 cubo da Bolsa, ao acaso, para cada Navio Mercante** e ponha nele (p. 4, passo N).
 
 !fig[O canto de cima, à direita: o Porto, o Navio Mercante laranja virado para o canto oposto e o cubo que ele leva (letras M e N do manual). Ilustração: manual Meeple BR (p. 5)](figuras/setup-mercantes.webp)
@@ -98,21 +98,21 @@ A montagem segue a preparação do manual (p. 4 e 5), na mesma ordem: lá ela te
 
 21. **A partir do primeiro jogador, em sentido horário, cada um põe o seu Navio Pirata numa Carta de Mapa com Enseada (a âncora) desocupada.** Todos começam escondidos (p. 5, passo R).
 
-!fig[O Mar pronto para 4 jogadores: os Marcadores de Busca fechados, os dois Navios Mercantes em cantos opostos, a Fragata num dos outros cantos e os quatro Navios Piratas em cartas com Enseada. Ilustração: manual Meeple BR (p. 5)](figuras/setup-mar.webp)
+!fig[O Mar pronto para 4 jogadores: os Marcadores de Busca fechados, os dois Navios Mercantes em cantos opostos, a Fragata num dos outros cantos e três Navios Piratas já em cartas com Enseada; a âncora destacada à esquerda é a Enseada do quarto navio, fora do recorte. Ilustração: manual Meeple BR (p. 5)](figuras/setup-mar.webp)
 
 22. **Na mesma ordem, cada um escolhe o lado da sua Carta de Capitão** com que vai começar e a põe à direita do Tabuleiro de Timão (p. 5, passo S). Os lados têm símbolos e Ações Bônus diferentes, e a carta só vira no Motim (p. 10).
 
-!fig[As Cartas de Capitão, cada uma com dois lados diferentes. Ilustração: manual Meeple BR (p. 2)](figuras/setup-capitao.webp)
+!fig[As 4 Cartas de Capitão (um dos lados; o verso tem outros símbolos e Ações Bônus). Ilustração: manual Meeple BR (p. 2)](figuras/setup-capitao.webp)
 
 23. **Deixe os 3 Dados e os Marcadores de Tiro Certeiro ao alcance de todos** (p. 5, passo 10).
 
 !fig[Os 3 Dados e os Marcadores de Tiro Certeiro. Ilustração: manual Meeple BR (p. 5)](figuras/setup-dados.webp)
 
-24. **Cada jogador tira da Bolsa 1 cubo e o põe no seu Navio Pirata**, conforme o Mercado: o primeiro jogador pega o Espólio que vale 2 Ouros, o segundo o que vale 3, e assim por diante (p. 5, passo 11).
+24. **Cada jogador tira da Bolsa 1 cubo e o põe no seu Navio Pirata**, escolhido pelo valor do Espólio no Mercado e pela ordem de jogo: o primeiro jogador pega o Espólio que vale 2 Ouros, o segundo o que vale 3, e assim por diante (p. 5, passo 11).
 
-!fig[O Espólio inicial: um cubo da Bolsa vai para o Navio Pirata, que está numa Enseada. Ilustração: manual Meeple BR (p. 5)](figuras/setup-espolio.webp)
+!fig[O Espólio inicial: um cubo da Bolsa vai para o Navio Pirata, que vai para uma Enseada (R). Ilustração: manual Meeple BR (p. 5)](figuras/setup-espolio.webp)
 
-!fig[A mesa montada para 4 jogadores, com todos os passos do manual numerados: o Tabuleiro de Mercado, as Cartas de Mercador, a Tripulação, os Dados, a Bolsa de Espólios e o Mar com os navios. Ilustração: manual Meeple BR (p. 5)](figuras/preparacao.webp)
+!fig[A mesa montada para 4 jogadores, com os passos e letras do manual que valem para o centro da mesa: o Tabuleiro de Mercado, as Cartas de Mercador, a Tripulação, os Dados, a Bolsa de Espólios e o Mar com os navios. Ilustração: manual Meeple BR (p. 5)](figuras/preparacao.webp)
 
 **O que muda com o número de jogadores** (p. 4 e 5):
 
@@ -126,9 +126,9 @@ Os cubos da Bolsa são os 40 menos os 4 do Mercado, os 2 dos Navios Mercantes e 
 
 **O que volta para a caixa:** os 4 Marcadores de Busca que sobram, sem ser revelados, e todo componente de jogador que não foi entregue: tabuleiros, peças das cores que ninguém escolheu e Cartas de Capitão não sorteadas (p. 4).
 
-!fig[Uma partida em andamento, na foto da editora: o Mar no centro e, em volta, os Tabuleiros de Lenda e de Timão de cada jogador, com as Cartas de Capitão e de Tripulação. É a edição Deluxe, com peças diferentes das da caixa comum. Imagem: Gamelyn Games · edição Deluxe](fotos/mesa-1.webp)
+!fig[Uma partida em andamento, numa imagem 3D da editora (edição Deluxe): o Mar no centro e, em volta, os Tabuleiros de Lenda e de Timão de cada jogador, com as Cartas de Capitão e de Tripulação. É a edição Deluxe, com peças diferentes das da caixa comum. Imagem: Gamelyn Games · edição Deluxe](fotos/mesa-1.webp)
 
-**Antes de começar, confira:** Mar de 4 por 4 com um Marcador de Busca fechado em cada carta; cada jogador com Dobrão no 1, Tesouros na base, Marcador de Lenda embaixo com o lado sem sangue para cima, um Marujo na Trilha de Lenda, Ordens sorteadas no Timão, Capitão no 0 e Marujos no Cordame, nos Canhões e na Extorsão; Portos e Navios Mercantes em cantos opostos, cada navio com um cubo; Fragata num canto livre; Navios Piratas em Enseadas, cada um com o seu Espólio inicial.
+**Antes de começar, confira:** Mar de 4 por 4 com um Marcador de Busca fechado em cada carta; Mercado com 1 cubo por cor, 2 Cartas de Mercador e 3 Cartas de Tripulação viradas; cada jogador com Dobrão no 1, Tesouros na base, Marcador de Lenda embaixo com o lado sem sangue para cima, um Marujo na Trilha de Lenda, Ordens sorteadas no Timão, Capitão no 0 e Marujos no Cordame, nos Canhões e na Extorsão; Portos e Navios Mercantes em cantos opostos, cada navio com um cubo; Fragata num canto livre; Navios Piratas em Enseadas, cada um com o seu Espólio inicial.
 
 ?? Partida de 3 jogadores. Qual mesa está certa?
 - ( ) A Fragata no canto mais perto do primeiro jogador, mesmo que tenha um Navio Mercante
@@ -152,7 +152,7 @@ A montagem completa, com figuras, está na seção "Montar a mesa passo a passo"
 1. Mar de 16 Cartas de Mapa em 4 por 4, com um Marcador de Busca fechado em cada carta.
 2. Cada jogador: Tabuleiro de Lenda (Dobrão no 1, 3 Tesouros, Marcador de Lenda embaixo, 1 Marujo na terceira linha) e Tabuleiro de Timão (Ordens sorteadas, Capitão no 0, Marujos no Cordame, nos Canhões e na Extorsão).
 3. Mercado com 1 cubo de cada cor; Navios Mercantes com 1 cubo nos Portos de cantos opostos; Cartas de Mercador com o 2 no topo e 2 viradas; 3 Cartas de Tripulação viradas.
-4. O mais novo começa: põe a Fragata num canto sem Navio Mercante; em sentido horário, cada um esconde o Navio Pirata numa Enseada, escolhe o lado da Carta de Capitão e recebe o Espólio inicial (o de 2 Ouros para o primeiro, o de 3 para o segundo, e assim por diante).
+4. O primeiro jogador (o mais novo, ou como preferirem) põe a Fragata num canto sem Navio Mercante; em sentido horário, cada um esconde o Navio Pirata numa Enseada, escolhe o lado da Carta de Capitão e recebe o Espólio inicial (o de 2 Ouros para o primeiro, o de 3 para o segundo, e assim por diante).
 
 ### Seu primeiro turno
 

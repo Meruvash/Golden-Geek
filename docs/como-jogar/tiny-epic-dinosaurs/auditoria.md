@@ -159,3 +159,20 @@ Pedido do editor: seção `## setup. Montar a mesa passo a passo` antes do "Come
 - **Figuras novas** (só a parte gráfica; rótulos e números de passo do manual cortados, e o "F" coberto com a cor do fundo): `setup-acao.webp` (p. 2); `setup-rodada.webp` (Tabuleiro de Rodada, p. 5, e a caneca, p. 3); `setup-fazenda-jogador.webp` (p. 2); `setup-meeples.webp` (Capatazes e Dinofazendeiros, p. 2); `setup-marcadores.webp` (p. 3); `setup-contrato.webp` (Tabuleiro de Contrato com os dois baralhos e os Contratos Públicos, p. 5, sem os rótulos "4", "Eii" e "F"); `setup-pesquisa.webp` (p. 5); `setup-dinos.webp` (dinossauros e Barreiras, p. 5, e Dado de Caça, p. 3); `setup-primeiro.webp` (p. 3); `setup-solo.webp` (preparação solo, p. 14, com as letras A a E do manual, explicadas na legenda). Reaproveitada: `preparacao.webp` (p. 5). Foto oficial `fotos/mesa-1.webp`, crédito de `fotos/fontes.json` ("Imagem: Gamelyn Games · edição Deluxe"), com aviso de que é a edição Deluxe.
 - **Passos sem ilustração própria no manual:** o lado de cada Tabuleiro de Ação para 4 jogadores (passo 1); a separação dos baralhos de Contrato pelo verso (passo 6); a escolha de 1 Contrato Privado e a devolução da outra, que no diagrama (p. 5, "Ei") aparece com o rótulo de texto por cima e não foi recortada; os bônus iniciais do passo 12, que o diagrama não mostra; a montagem de 2 e 3 jogadores. Esses passos ficam com texto e com a figura geral.
 - **Comece a jogar:** "Monte a mesa" virou um resumo de 5 itens que aponta para a nova seção; `checar_comece.py` aprovado; `vicios.py` sem aviso; zero travessão. `publicar` não foi alterado.
+
+## Auditoria independente da montagem (04/11/2026)
+
+Resultado: aprovado com correções. O que foi aplicado:
+
+- **Erro 1:** a legenda da foto `mesa-1` agora diz "Uma partida em andamento, na foto da editora (edição Deluxe em inglês; peças e posições diferentes das da montagem do manual)", com o crédito de `fotos/fontes.json`.
+- **Clareza 2:** a frase que explica "*(depois)*" voltou ao "Monte a mesa" do 4min.
+- **Clareza 3:** o passo 1 diz que a marca do lado é uma faixa, como "1-3 JOGADORES", e que vale o lado cuja faixa inclui o seu número. Na tabela ficou "o lado cuja faixa inclui 2/3/4", e a legenda de `setup-acao` cita a faixa (p. 4 e 5).
+- **Clareza 4:** o bônus do solo virou leitura rotulada ("pela regra de 2 jogadores, com o Rival como primeiro, você seria o segundo; a p. 14 não confirma").
+- **Clareza 5:** a legenda de `preparacao` diz "embaixo, à direita" e explica que os números da figura são os 7 passos do manual.
+- **Menor 6:** `preparacao.webp` saiu da Etapa 1, que agora remete à seção de montagem.
+- **Menor 7:** sobras limpas. Em `setup-contrato`, o recorte foi dividido em duas partes, o "i" de "Eii" ficou de fora e o círculo "F" foi coberto com a cor do tabuleiro, sem o retângulo azul de antes. Em `setup-rodada`, a ponta de seta foi cortada e coberta. Em `setup-dinos`, o círculo "6i" ficou fora do recorte. Em `setup-solo`, o "1" do número da página ficou fora.
+- **Menor 8:** a legenda de `setup-solo` cita, junto do D, os 2 Dinofazendeiros guardados para a pontuação (p. 14).
+- **Menor 9:** a legenda de `setup-contrato` diz "a quantidade de uma partida de 4".
+- **Menor 10:** os passos 1 e 2 citam "(p. 4, passo 1)" e "(p. 4, passo 2)".
+- **Solo:** o texto diz que o Rival não recebe Tabuleiro de Fazenda (a p. 14 só lhe dá o verso do Tabuleiro de Jogador) e que os 3 Marcadores de Recurso são 1 de Planta, 1 de Carne e 1 de Suprimento. Essa parte é lida na figura B da p. 14; o texto do manual diz só "3 Marcadores de Recurso".
+- `checar_comece.py` aprovado; `vicios.py` sem aviso; zero travessão.
