@@ -4,9 +4,9 @@
 
 ## setup. Montar a mesa passo a passo
 
-A montagem segue o quadro de preparação do manual (Game Setup, p. 3), na mesma ordem dos 8 itens dele, e a ilustração das p. 2 e 3, que mostra a mesa de um jogador com a Pistoleira e os mesmos números. Cada jogador monta o próprio herói à sua frente; não há tabuleiro central nem nada em comum no meio da mesa (p. 3).
+A montagem segue o quadro de preparação do manual (Game Setup, p. 3), na mesma ordem dos 8 itens dele, e a ilustração das p. 2 e 3, que mostra a mesa de um jogador com a Pistoleira e os mesmos números. O manual não traz tabuleiro central: cada jogador põe à sua frente os componentes do herói (p. 3).
 
-**O que cada herói traz** (p. 3; quantidades do folheto de exemplo da p. 6):
+**O que cada herói traz** (p. 3; quantidades da lista de componentes do folheto de exemplo da p. 6, o do Pirata Amaldiçoado, Cursed Pirate):
 
 | Componente | Quantidade |
 |---|---|
@@ -15,15 +15,16 @@ A montagem segue o quadro de preparação do manual (Game Setup, p. 3), na mesma
 | Fichas de efeito de status e de companheiro | varia por herói; o folheto mostra o lugar de cada uma |
 | Marcador de Vida | 1 |
 | Marcador de CP | 1 |
-| Cartas do herói, que formam o baralho | 33 no herói do exemplo; o número exato está no folheto de cada herói |
-| Dados | 5 |
+| Cartas do herói, que formam o baralho | 33 no Pirata Amaldiçoado, o herói do exemplo da p. 6; o número exato está no folheto de cada herói |
+| Dados | 5 (p. 6; a rolagem ofensiva usa os 5, p. 12) |
+| Carta de ordem de turno (Turn Order Card) | 1 (p. 6); os passos de preparação não a usam |
 
 1. **Ponha à sua frente o tabuleiro do herói**, aberto, com as habilidades à vista (item 1, p. 3).
 
 !fig[O tabuleiro do herói aberto, o item 1 da preparação: as habilidades da Pistoleira em volta da figura dela e, embaixo, a suprema. Ilustração: manual Dice Throne (p. 2 e 3)](figuras/setup-tabuleiro.webp)
 
 2. **Ponha o folheto do herói ao lado do tabuleiro** (item 2, p. 3).
-3. **Empilhe as fichas no folheto**: cada pilha de efeito de status ou de companheiro vai no lugar dela, ao lado da regra da ficha. Ninguém começa com ficha no tabuleiro (item 3, p. 3; p. 6).
+3. **Empilhe as fichas no folheto**: cada pilha de efeito de status ou de companheiro vai no lugar dela, ao lado da regra da ficha. Ninguém começa com ficha no tabuleiro, salvo se a preparação própria do herói (passo 8) mandar; o Pirata Amaldiçoado do exemplo da p. 6, por exemplo, começa com 3 Dobrões (Cursed Doubloons) (item 3, p. 3; p. 6).
 
 !fig[O folheto da Pistoleira (2) com as fichas empilhadas (3): Evasiva, Recarga, Derrubada e Recompensa, cada pilha ao lado da sua regra; embaixo, à direita, a legenda das faces dos dados. Ilustração: manual Dice Throne (p. 2)](figuras/setup-folheto.webp)
 
@@ -32,17 +33,17 @@ A montagem segue o quadro de preparação do manual (Game Setup, p. 3), na mesma
 
 !fig[Os dois marcadores giratórios já acertados: Vida em 50 (4) e CP em 2 (5). Ilustração: manual Dice Throne (p. 2 e 3)](figuras/setup-marcadores.webp)
 
-6. **Embaralhe as suas cartas, ponha o baralho virado para baixo e compre as 4 de cima**: é a sua mão inicial. Deixe ao lado o espaço da pilha de descarte, que fica virada para cima (item 6, p. 3).
+6. **Embaralhe as suas cartas, ponha o baralho virado para baixo e compre as 4 de cima**: é a sua mão inicial. Deixe ao lado o espaço da pilha de descarte, que fica virada para cima (item 6 e ilustração, p. 3).
 
 !fig[O baralho virado para baixo (6) e, embaixo, o espaço da pilha de descarte, com as cartas viradas para cima. Ilustração: manual Dice Throne (p. 3)](figuras/setup-baralho.webp)
 
-7. **Pegue os seus 5 dados e role 1.** Quem tirar o maior número é o jogador inicial e começa (item 7, p. 3).
+7. **Pegue os seus 5 dados e role 1.** Quem tirar o maior número é o jogador inicial e começa (item 7, p. 3). Se houver empate no maior número, rolem de novo os empatados (solução da mesa; o manual não diz).
 
-!fig[Os 5 dados da Pistoleira (7), com Bala nas faces 1 a 3, Arrancada na 4 e na 5 e Mosca na 6. Ilustração: manual Dice Throne (p. 3)](figuras/setup-dados.webp)
+!fig[Os 5 dados da Pistoleira (7), com Bala nas faces 1 a 3, Arrancada na 4 e na 5 e Mosca na 6. Ilustração: manual Dice Throne (p. 3; faces na legenda do folheto, p. 2)](figuras/setup-dados.webp)
 
-8. **Faça a preparação própria do herói, se houver**: alguns heróis têm passos a mais, impressos no folheto, no quadro Hero Setup. Faça-os antes de começar (item 8, p. 3; p. 6).
+8. **Faça a preparação própria do herói, se houver**: alguns heróis têm passos a mais, impressos no folheto, no quadro Hero Setup (na versão 2.4.3 do manual o quadro fica na frente do folheto; em manuais anteriores, como a 2.3.2, no verso). Faça-os antes de começar (item 8, p. 3; p. 6).
 
-!fig[A mesa de um jogador montada com a Pistoleira: o folheto com as fichas empilhadas (2 e 3) e, nele, o lugar da preparação própria (8), o tabuleiro do herói (1), o marcador de Vida em 50 (4), o de CP em 2 (5), o baralho (6), os dados (7) e o lugar da pilha de descarte. Ilustração: manual Dice Throne (p. 2 e 3)](figuras/preparacao.webp)
+!fig[A mesa de um jogador montada com a Pistoleira: o folheto com as fichas empilhadas (2 e 3) e, nele, o lugar da preparação própria (8), o tabuleiro do herói (1), o marcador de Vida em 50 (4), o de CP em 2 (5), o baralho (6), os dados (7) e o lugar da pilha de descarte. Ilustração: manual Dice Throne v2.4.x (p. 2 e 3)](figuras/preparacao.webp)
 
 9. **Lembre a regra do primeiro turno:** o jogador inicial pula a fase de Renda do primeiro turno dele, sem ganhar CP nem comprar carta. Depois a vez segue normalmente (p. 4 e 12).
 
@@ -54,14 +55,14 @@ A montagem segue o quadro de preparação do manual (Game Setup, p. 3), na mesma
 |---|---|---|---|---|
 | 2 | duelo | 50 | um por jogador | rolagem de 1 dado; alternam |
 | 3 | Rei da Colina | 35 | um por jogador | rolagem de 1 dado; sentido horário |
-| 4 | duplas (2 contra 2) | 50 por dupla | um por dupla, dividido entre os parceiros | rolagem de 1 dado; zigue-zague entre as duplas |
+| 4 | duplas (2 contra 2) | 50 por dupla | um por dupla, compartilhado pelos parceiros (o dano de qualquer um sai dele) | rolagem de 1 dado; zigue-zague entre as duplas |
 | 5 ou 6 | variantes | o manual manda para variants.dicethrone.com | | |
 
-O resto da montagem é igual em todos os modos: cada um tem o próprio CP em 2, as próprias 4 cartas e o próprio herói (p. 3 e 11). Nas duplas, os parceiros sentam lado a lado e podem ver a mão um do outro (p. 11).
+O manual não diz qual dos dois marcadores de Vida a dupla usa; a sugestão deste guia é usar o de um dos parceiros e deixar o outro na caixa (p. 11). O resto da montagem é igual nos modos de 2, 3 e 4 jogadores: cada um tem o próprio CP em 2, as próprias 4 cartas e o próprio herói (p. 3 e 11). Nas duplas, os parceiros sentam lado a lado e podem ver a mão um do outro (p. 11).
 
 !fig[A ordem dos turnos em duplas: a vez passa do 1 (dupla vermelha) para o 2 (dupla azul), depois para o 3 e o 4, em zigue-zague; parceiros sentam lado a lado. Ilustração: manual Dice Throne (p. 11)](figuras/setup-duplas.webp)
 
-**O que volta para a caixa.** O manual não traz uma lista: cada jogador põe à sua frente todos os componentes do herói escolhido (p. 3), e os heróis que ninguém escolheu ficam guardados.
+**O que volta para a caixa.** O manual não traz uma lista: cada jogador põe à sua frente todos os componentes do herói escolhido (p. 3), e os heróis que ninguém escolheu ficam guardados. Nas duplas, pela sugestão acima, volta também o marcador de Vida que a dupla não usa.
 
 **Antes de começar, confira:** tabuleiro, folheto e fichas empilhadas à frente de cada um; Vida em 50 no duelo; CP em 2; baralho embaralhado e 4 cartas na mão; espaço da pilha de descarte; 5 dados; preparação própria do herói feita; jogador inicial escolhido e avisado de que pula a primeira Renda.
 
@@ -86,8 +87,9 @@ Resumo da seção "Montar a mesa passo a passo", acima, que tem cada passo com f
 
 1. Tabuleiro, folheto e fichas empilhadas à sua frente.
 2. Vida em 50 no duelo e CP em 2.
-3. Baralho embaralhado e 4 cartas na mão; preparação própria do herói, se houver.
+3. Baralho embaralhado e 4 cartas na mão.
 4. Cada um rola 1 dado; o maior resultado é o jogador inicial.
+5. Preparação própria do herói, se houver.
 
 ### Seu primeiro turno
 

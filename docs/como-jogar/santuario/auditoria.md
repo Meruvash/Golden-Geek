@@ -185,3 +185,17 @@ Pedido do editor: seção `## setup. Montar a mesa passo a passo` antes do "Come
 - **Figuras novas** (recortes da p. 1 a 400 dpi, só a parte gráfica, sem blocos de texto; os números e letras dos passos do manual ficaram, por serem parte da ilustração; webp q80): `setup-pilha.webp` (item 2), `setup-vitrine.webp` (itens 1 e 3), `setup-conservacao.webp` (item 6), `setup-cartas.webp` (item B, com a ampliação da seta da carta de Projetos), `setup-marcadores.webp` (item C), `setup-suporte.webp` (item D). `preparacao.webp` (p. 1) saiu da etapa 1 e foi para o passo 10, por ser a mesma ilustração. Foto oficial `../../santuario/fotos/mesa-1.webp` depois da tabela de componentes, crédito "Imagem: Capstone Games · edição em inglês (Sanctuary)" conforme `santuario/fotos/fontes.json`.
 - **Passos sem ilustração própria no manual:** passo 1 (tabuleiro da vitrine sozinho: aparece com as peças na figura do passo 3), passo 4 (espaço do descarte), passo 5 (reserva de marcadores de conservação, de bolsa e de fim de jogo), passo 7 (embaralhar as metas), passo 9 (metas devolvidas à caixa), passo 11 (virar as cartas para o lado I: só o ícone "side I" no texto), passo 12 (sorteio), passos 14 e 15 (a ilustração mostra só a fila de um jogador), passo 18 (o 4× aparece só como ícone dentro do quadro de dica). Nada foi inventado para esses passos.
 - **Comece a jogar:** "Monte a mesa" virou um resumo de 3 itens que aponta para a nova seção; `checar_comece.py` aprovado; vícios de `tools/vicios.py`: nenhum; zero travessão. `publicar` não foi alterado.
+
+## Auditoria independente da montagem (04/11/2026)
+
+Resultado: aprovado com correções. Todas aplicadas no tutorial e nas figuras:
+
+- **Erro 1 (pergunta ??):** a quarta opção não era errada pelo manual, porque devolver o 4× é só dica (p. 1). O enunciado passou a "seguindo as sugestões do manual" e a quarta opção virou "cartas de ação no lado II", que contraria o item B (p. 1). A explicação diz agora que as cartas começam no lado I.
+- **Sem apoio 2:** a frase sobre o solo virou "O manual cita um modo solo (p. 8), mas não traz as regras dele."
+- **Menor 3:** o passo 18 diz agora que o fim "pode ser disparado ao pôr o terceiro marcador de conquista (em vez do quarto)" e que as outras condições de fim continuam valendo (p. 1 e 8).
+- **Menor 4:** recortei de novo `setup-vitrine.webp`: a linha preta de chamada à esquerda saiu, preenchida com os pixels vizinhos. Também refiz `preparacao.webp` a partir da p. 1 a 400 dpi: o recorte começa logo à direita da lupa vermelha e o resto da linha vermelha sobre a carta de Projetos foi preenchido com os pixels vizinhos. Assim, a faixa esquerda do tabuleiro do zoológico (borda do Rio) ficou fora da figura, e nada foi desenhado no lugar. A versão anterior está no scratchpad (`setup/santuario/preparacao_antiga.webp`).
+- **Menor 5:** a legenda da foto `mesa-1.webp` diz agora que é uma partida em andamento, com a caixa no centro, e que na montagem os tabuleiros começam sem peças e sem marcadores.
+- **Clareza 6:** as legendas citam o item do manual cujo selo aparece na figura (itens 2, 1 e 3, 6, A a D, B, C, D).
+- **Clareza 7:** o resumo "Monte a mesa" e "Como a partida acaba", no "Comece a jogar", dizem "na primeira partida, devolva o 4×: 3 metas bastam".
+- **Opcional, aplicado:** o passo 16 e a legenda do tabuleiro de conservação dizem que a cor do jogador é a da faixa onde vão os marcadores de conquista dele. A p. 7 apoia: "on the space of your color".
+- **Conferência:** `checar_comece.py` aprovado; vícios de `tools/vicios.py`: nenhum; zero travessão.

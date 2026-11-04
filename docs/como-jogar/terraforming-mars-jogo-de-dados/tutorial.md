@@ -11,7 +11,7 @@ A montagem segue a página de preparação do manual (p. 3), na mesma ordem dos 
 | Componente | Quantidade | O que o manual diz |
 |---|---|---|
 | Tabuleiro | 1 | dupla face: use qualquer um dos lados (p. 3) |
-| Dados | 60 | 5 cores: amarelo, verde, azul, cinza e vermelho (p. 7) |
+| Dados | 60 | 5 cores: amarelo, verde, azul, cinza e vermelho (ilustração da p. 7) |
 | Cubos | 6 | 2 transparentes, para oxigênio e temperatura, e 1 da cor de cada jogador (p. 3) |
 | Peças | 42 | entre elas os 7 oceanos (p. 3), florestas, cidades e peças especiais (p. 6) |
 | Marcos | 11 | 8 do jogo básico e 3 da Era das Corporações (p. 12) |
@@ -21,7 +21,7 @@ A montagem segue a página de preparação do manual (p. 3), na mesma ordem dos 
 | Tabuleiros de jogador | 4 | o manual não os menciona nem os usa na preparação |
 | Livro de regras | 1 | 12 páginas |
 
-!fig[Os componentes fora da caixa, na foto da editora (edição em inglês): o tabuleiro, os dados, as peças hexagonais e os cubos. Imagem: FryxGames](fotos/mesa-1.webp)
+!fig[Os componentes fora da caixa, na foto da editora (edição em inglês, com os cartões de referência em inglês sobre o tabuleiro): o tabuleiro, os dados, as peças hexagonais e os cubos. Imagem: FryxGames](fotos/mesa-1.webp)
 
 **Tabuleiro** (item 1, p. 3)
 
@@ -29,7 +29,7 @@ A montagem segue a página de preparação do manual (p. 3), na mesma ordem dos 
 2. **Ponha um cubo transparente no 0% da trilha de oxigênio**, o arco numerado de 0 a 16 sobre o planeta (p. 3; ilustração da p. 2).
 3. **Ponha o outro cubo transparente no -32 °C da trilha de temperatura**, o termômetro à direita (p. 3; ilustração da p. 2).
 4. **Empilhe os 7 oceanos sobre o símbolo de oceano** do tabuleiro (p. 3).
-5. **Cada jogador escolhe uma cor e põe o cubo dessa cor no 0 da trilha de PVs**, a numeração que contorna o tabuleiro (p. 3).
+5. **Cada jogador escolhe uma cor e põe o cubo dessa cor no 0 da trilha de PVs**, a numeração que contorna o tabuleiro: o 0 é o espaço sem número antes do 1, no alto à direita (p. 3; ilustração da p. 2).
 
 !fig[O tabuleiro pronto: um cubo transparente no começo da trilha de oxigênio (o arco de cima), o outro no -32 °C do termômetro, a pilha de oceanos no hexágono azul e os cubos dos jogadores no começo da trilha de PVs, no alto à direita. Ilustração: manual Meeple BR (p. 2)](figuras/setup-tabuleiro.webp)
 
@@ -50,14 +50,14 @@ A montagem segue a página de preparação do manual (p. 3), na mesma ordem dos 
 
 9. **Embaralhe todas as cartas bônus e tire 4, 6 ou 8 sem revelar**, conforme o número de jogadores (tabela abaixo) (p. 3).
 10. **Deixe as cartas tiradas viradas para baixo ao lado do tabuleiro** (p. 3).
-11. **Devolva as outras cartas bônus à caixa sem ver quais são** (p. 3). Quem alcançar 5 e 12 PVs na trilha recebe uma carta bônus (p. 3 e 7).
+11. **Devolva as outras cartas bônus à caixa sem ver quais são** (p. 3). Cada jogador recebe uma carta bônus ao alcançar 5 PVs e de novo ao alcançar 12 PVs, uma carta bônus de cada vez (p. 3 e 7).
 
-!fig[As cartas bônus, viradas para baixo, ao lado da trilha de PVs. Ilustração: manual Meeple BR (p. 2)](figuras/setup-bonus.webp)
+!fig[As cartas bônus, viradas para baixo, ao lado do tabuleiro. Ilustração: manual Meeple BR (p. 2)](figuras/setup-bonus.webp)
 
 **Prêmios** (item 5, p. 3)
 
 12. **Pegue do estoque 1 dado de cada cor**: são 5 dados (p. 3).
-13. **Sorteie 3 desses 5 dados.** O manual não diz o que fazer com os 2 que sobram; eles saíram do estoque e podem voltar para ele (p. 3).
+13. **Sorteie 3 desses 5 dados.** O manual não diz o que fazer com os 2 dados que sobram (p. 3). Sugestão deste guia: devolva-os ao estoque.
 14. **Role os 3 dados sorteados e ponha um em cada espaço de prêmio** do tabuleiro, com a face que saiu para cima. No fim, os jogadores disputam quem tem mais desses ícones no custo das cartas jogadas (p. 3 e 8).
 
 !fig[Os 3 espaços de prêmio, no canto de cima à esquerda do tabuleiro, cada um com um dado rolado; embaixo, os valores do primeiro e do segundo lugar, 5 e 3 PVs. Ilustração: manual Meeple BR (p. 2)](figuras/setup-premios.webp)
@@ -84,9 +84,9 @@ A montagem segue a página de preparação do manual (p. 3), na mesma ordem dos 
 
 **Revelar corporações** (item 9, p. 3)
 
-22. **Na ordem de jogo, cada jogador põe a corporação escolhida à sua frente, virada para cima** (p. 3).
+22. **Na ordem de jogo, cada jogador põe a corporação escolhida à sua frente, virada para cima** (p. 3). Algumas corporações fazem algo ao ser reveladas: a Tharsis Republic, por exemplo, põe uma cidade no tabuleiro, com os 2 PVs e o bônus de colocação (p. 11).
 23. **Pegue o bônus inicial da caixa vermelha**, o quadro de baixo, à esquerda, na carta (na Credicor, 3 marcadores curinga) (p. 3).
-24. **Cubra a caixa vermelha com a peça da sua cor** (p. 3).
+24. **Cubra a caixa vermelha com a peça retangular da sua cor** (a verde na figura) (p. 3).
 
 !fig[A corporação Credicor: a caixa vermelha dá 3 marcadores curinga e é coberta pela peça do jogador, como mostra a seta; a caixa marrom produz 2 dados amarelos e 1 vermelho. Ilustração: manual Meeple BR (p. 3)](figuras/corporacao.webp)
 
@@ -115,18 +115,18 @@ A montagem segue a página de preparação do manual (p. 3), na mesma ordem dos 
 
 **Partida solo** (p. 9). Monte a mesa como acima, com estas mudanças:
 
-1. **Ponha 1 cidade numa das 3 áreas com bônus de colocação de PV** do tabuleiro (p. 9).
-2. **Ponha 1 oceano ao lado dessa cidade** (p. 9).
+1. **Ponha 1 cidade numa das 3 áreas com bônus de colocação de PV** do tabuleiro, as que mostram a medalha dourada com "1" sobre fita verde (veja a figura do passo 5) (p. 9).
+2. **Ponha 1 oceano numa área azul de oceano vizinha da cidade** (p. 6 e 9). O manual não diz se esse oceano sai da pilha de 7.
 3. **Ponha 1 floresta numa área vizinha da cidade e do oceano ao mesmo tempo** (p. 9). Você não recebe bônus nem PVs por essas três peças (p. 9).
 4. **Ponha o cubo do oxigênio em 2% e o da temperatura em -28 °C**, em vez de 0% e -32 °C (p. 9).
 5. **Tire 4 cartas bônus**, como na partida de 2 jogadores (p. 3 e 9).
-6. **Pegue outro cubo de jogador para marcar o tempo, no 0**; ele passa para 1 antes do seu primeiro turno (p. 9).
+6. **Pegue outro cubo de jogador para marcar o tempo e ponha no 0 da trilha de PVs**; ele passa para 1 antes do seu primeiro turno e marca sempre o turno atual, até o 50 (p. 9).
 7. **Depois da produção inicial, olhe as 4 cartas bônus e jogue 1 delas na hora** (p. 9).
 8. **Pule a penalidade do primeiro jogador** (p. 3).
 
 Os prêmios e os marcos são sorteados como sempre; o que muda é como você os ganha, explicado em "Situações especiais" (p. 9).
 
-**Antes de começar, confira:** cubos transparentes em 0% e -32 °C (2% e -28 °C no solo); 7 oceanos na pilha; cubos dos jogadores no 0 da trilha de PVs; estoque com todos os dados, curingas e peças; baralho de projetos virado para baixo com espaço para descarte; 4, 6 ou 8 cartas bônus viradas para baixo; 3 dados rolados nos prêmios; 3 marcos; cada jogador com 5 cartas na mão, a corporação à frente com a caixa vermelha coberta e os dados da caixa marrom rolados; 1 recurso entregue ao último jogador.
+**Antes de começar, confira:** cubos transparentes em 0% e -32 °C (2% e -28 °C no solo); 7 oceanos na pilha; cubos dos jogadores no 0 da trilha de PVs; estoque com todos os dados, curingas e peças; baralho de projetos virado para baixo com espaço para descarte; 4, 6 ou 8 cartas bônus viradas para baixo; 3 dados rolados nos prêmios; 3 marcos; cada jogador com 5 cartas na mão, a corporação à frente com a caixa vermelha coberta e os dados da caixa marrom rolados; 1 recurso entregue ao último jogador. **No solo:** cidade, oceano e floresta iniciais no tabuleiro; cubo de tempo no 0 da trilha de PVs; 4 cartas bônus e 1 delas jogada logo depois da produção inicial; sem penalidade do primeiro jogador.
 
 ?? Partida de 3 jogadores. Qual mesa está pronta para começar?
 - ( ) 8 cartas bônus viradas para baixo, 3 dados rolados nos prêmios e 3 marcos
@@ -145,13 +145,13 @@ Cada jogador comanda uma **corporação** que terraforma Marte. Os seus recursos
 
 ### Monte a mesa
 
-A montagem completa, com figuras, está na seção "Montar a mesa passo a passo", logo acima. O essencial (p. 3):
+A montagem completa, com figuras, está na seção "Montar a mesa passo a passo", logo acima (solo: veja o fim da seção de montagem; a partida solo dura 50 turnos, p. 9). O essencial (p. 3):
 
 1. Tabuleiro no centro; cubos transparentes em 0% de oxigênio e -32 °C; 7 oceanos na pilha; cubo de cada jogador no 0 da trilha de PVs.
 2. Estoque de dados, curingas e peças ao lado; baralho de projetos virado para baixo; 4, 6 ou 8 cartas bônus viradas para baixo.
 3. 3 dados rolados nos prêmios e 3 marcos sorteados.
 4. Cada jogador fica com 5 cartas de projeto e 1 de 2 corporações, pega o bônus da caixa vermelha, cobre a caixa com a sua peça e rola os dados da caixa marrom.
-5. Começa quem venceu mais recentemente uma partida de Terraforming Mars; ele entrega 1 recurso ao último jogador.
+5. Começa quem venceu mais recentemente uma partida de Terraforming Mars; ele entrega 1 recurso ao último jogador (não no solo).
 
 ### Seu primeiro turno
 
@@ -160,7 +160,7 @@ A cada turno você escolhe **uma** das duas coisas (p. 4):
 | Turno | O que você faz |
 |---|---|
 | **Ação** | 1 ação de suporte e depois 1 ação principal |
-| **Produção** | fica com até 3 dados, completa a mão até 5 cartas, recebe e rola os dados das caixas marrons, desvira as cartas azuis usadas |
+| **Produção** | fica com até 3 dados, pode descartar cartas da mão, completa a mão até 5 cartas, recebe e rola os dados das caixas marrons, desvira as cartas azuis usadas |
 
 **Ações de suporte** (escolha 1): receber e rolar 1 dado à sua escolha do estoque; pagar 1 recurso qualquer para virar outro dado em qualquer uma das faces dele; pagar 1 recurso qualquer para comprar 2 cartas; ou usar uma ação de suporte de uma carta azul sua.
 
@@ -192,7 +192,7 @@ Para que serve cada recurso: etapa 1. Cartas verdes, vermelhas e azuis: etapa 2.
 
 ### Como a partida acaba
 
-Quando o segundo dos três parâmetros fica completo, todos jogam mais um turno, inclusive quem o completou. Depois somam PVs da trilha, de prêmios, de marcos e das cartas (p. 6 e 8).
+A partida acaba quando 2 desses 3 parâmetros ficam completos (p. 2): quando o segundo fica completo, todos jogam mais um turno, inclusive quem o completou. Depois somam PVs da trilha, de prêmios, de marcos e das cartas (p. 6 e 8).
 
 **Prefere ver?** Regras em vídeo. Ele complementa este guia; em caso de diferença, vale o manual.
 

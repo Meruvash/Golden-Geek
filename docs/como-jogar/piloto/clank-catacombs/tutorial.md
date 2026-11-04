@@ -4,7 +4,7 @@
 
 ## setup. Montar a mesa passo a passo
 
-A montagem segue as páginas de preparação do manual brasileiro (p. 4 e 5), na mesma ordem, das letras A a H. É igual para 2, 3 ou 4 jogadores, salvo no Marcador do Dragão (passo 2), nas fichas de Maestria (passo 16) e nos cubos iniciais da área de Clank! (passo 27).
+A montagem segue as páginas de preparação do manual brasileiro (p. 4 e 5), na mesma ordem, das letras A a H. É igual para 2, 3 ou 4 jogadores, salvo no Marcador do Dragão (passo 2), nas fichas de Maestria (passos 15 e 16) e nos cubos iniciais da área de Clank! (passo 27).
 
 **O que vem na caixa** (p. 2 e 3):
 
@@ -32,7 +32,7 @@ A montagem segue as páginas de preparação do manual brasileiro (p. 4 e 5), na
 | Gazuas | 24 |
 | Guia de Referência de Fichas | 1, suplemento de regras |
 
-!fig[Peças da masmorra, cartas, Marcador do Dragão, peões e fichas, na imagem da editora. Imagem: Dire Wolf](fotos/componentes-1.webp)
+!fig[Peças da masmorra, cartas, Marcador do Dragão, peões e fichas, na imagem da editora (cartas da edição em inglês). Imagem: Dire Wolf](fotos/componentes-1.webp)
 
 **A. O tabuleiro de Clank!** (p. 4)
 
@@ -46,12 +46,12 @@ A montagem segue as páginas de preparação do manual brasileiro (p. 4 e 5), na
 
 **B. As peças da masmorra** (p. 4)
 
-3. **Separe as 28 peças quadradas pelo verso, em duas pilhas:** as 22 das Profundezas e as 6 em segurança (p. 2 e 4).
-4. **Embaralhe as 22 peças das Profundezas** e ponha a pilha virada para baixo no Banco, perto do tabuleiro de Clank! (p. 4).
+3. **Separe as 28 peças quadradas pelo verso, em duas pilhas:** as 22 das Profundezas, de verso azul, e as 6 em segurança, de verso roxo com uma porta de madeira (p. 2 e 4).
+4. **Embaralhe as 22 peças das Profundezas** e ponha a pilha virada para baixo no Banco, perto do tabuleiro de Clank! O Banco é o estoque comum, ao alcance de todos, onde ficam as peças e fichas que ninguém pegou ainda (p. 4).
 5. **Embaralhe as 6 peças em segurança e devolva 2 delas à caixa, sorteadas e sem ver.** Elas não serão usadas nesta partida (p. 4).
-6. **Ponha as 4 peças em segurança que sobraram em cima da pilha das Profundezas.** Assim, as quatro primeiras peças descobertas são sempre as seguras (p. 4).
+6. **Ponha as 4 peças em segurança que sobraram, as de verso roxo, em cima da pilha das Profundezas.** Assim, as quatro primeiras peças descobertas são sempre as seguras (p. 4).
 
-!fig[Os dois versos das peças quadradas: a seta indica que a pilha das peças em segurança vai em cima da pilha das Profundezas. Ilustração: manual Galápagos (p. 4)](figuras/setup-pecas.webp)
+!fig[Os dois versos das peças quadradas: atrás, o azul das Profundezas; na frente, o roxo das peças em segurança, com a porta. A seta indica que as roxas vão em cima da pilha azul. Ilustração: manual Galápagos (p. 4)](figuras/setup-pecas.webp)
 
 **C. O Banco** (p. 4)
 
@@ -76,7 +76,7 @@ A montagem segue as páginas de preparação do manual brasileiro (p. 4 e 5), na
 
 !fig[O Tabuleiro do Mercado e as quatro pilhas de fichas: Mochilas, Amuletos de Sangue, Kits de Ladrão e Coroas. Ilustração: manual Galápagos (p. 4)](figuras/setup-mercado.webp)
 
-!fig[A mesa montada até aqui: o tabuleiro de Clank! com o Marcador do Dragão na Trilha de Fúria (A), a pilha de peças da masmorra (B) e o Banco com Ouro, Gazuas, Artefatos, fichas, Tabuleiro do Mercado e Bolsa do Dragão (C). Ilustração: manual Galápagos (p. 4)](figuras/preparacao.webp)
+!fig[A mesa montada até aqui: o tabuleiro de Clank! com o Marcador do Dragão na Trilha de Fúria (A), a pilha de peças da masmorra (B) e o Banco com Ouro, Gazuas, Artefatos, fichas, Tabuleiro do Mercado e Bolsa do Dragão (C). O H marca a área de Clank!, no alto do tabuleiro, onde entram os cubos iniciais do passo 27. Ilustração: manual Galápagos (p. 4)](figuras/preparacao.webp)
 
 **D. A Peça Inicial** (p. 4)
 
@@ -85,7 +85,7 @@ A montagem segue as páginas de preparação do manual brasileiro (p. 4 e 5), na
 15. **Perto da Cripta, empilhe uma ficha de Maestria por jogador** (p. 4).
 16. **Devolva à caixa as fichas de Maestria que sobraram** (p. 4).
 
-!fig[A Peça Inicial: a linha de cima aponta o Altar dos Macacos com os Ídolos de Macaco; a de baixo, a pilha de fichas de Maestria perto da Cripta. Ilustração: manual Galápagos (p. 4)](figuras/setup-peca-inicial.webp)
+!fig[A Peça Inicial: a Cripta é a plataforma de borda verde no meio da peça. A linha de cima aponta o Altar dos Macacos com os Ídolos de Macaco; a de baixo, a pilha de fichas de Maestria, logo acima da Cripta. Ilustração: manual Galápagos (p. 4)](figuras/setup-peca-inicial.webp)
 
 **E. As cartas** (p. 5)
 
@@ -105,7 +105,7 @@ A montagem segue as páginas de preparação do manual brasileiro (p. 4 e 5), na
 
 !fig[Os cubos Clank! nas quatro cores de jogador: vermelho, amarelo, verde e azul. Ilustração: manual Galápagos (p. 5)](figuras/setup-cubos.webp)
 
-22. **Cada jogador põe o peão da sua cor na Cripta, na Peça Inicial.** A Cripta fica fora da masmorra (p. 5).
+22. **Cada jogador põe o peão da sua cor na Cripta, na Peça Inicial.** A Cripta fica fora da masmorra (p. 5). Cubos, peões e baralhos iniciais das cores que ninguém escolheu ficam na caixa.
 
 !fig[Os quatro peões na Cripta da Peça Inicial. Ilustração: manual Galápagos (p. 5)](figuras/setup-peoes.webp)
 
@@ -121,17 +121,17 @@ A montagem segue as páginas de preparação do manual brasileiro (p. 4 e 5), na
 27. **Cada jogador põe cubos seus na área de Clank! do tabuleiro de Clank!:** o primeiro põe 3, o segundo 2, o terceiro 1 e o quarto nenhum (p. 5).
 28. **Se alguma carta da Fileira tiver o texto Revelar, execute esse texto antes do primeiro turno** (p. 11).
 
-!fig[Clank! Catacombs montado, na foto da editora. Imagem: Dire Wolf](fotos/mesa-1.webp)
+!fig[Partida em andamento, em imagem promocional da editora (cartas da edição em inglês); na montagem só a Peça Inicial fica na mesa. Imagem: Dire Wolf](fotos/mesa-1.webp)
 
 **O que muda com o número de jogadores** (p. 4, 5 e 12):
 
-| Jogadores | Casa do Marcador do Dragão (de baixo para cima) | Cubos tirados da bolsa no primeiro ataque | Fichas de Maestria perto da Cripta | Fichas de Maestria que voltam à caixa | Cubos na área de Clank!, na ordem dos jogadores |
+| Jogadores | Casa do Marcador do Dragão (de baixo para cima) | Cubos tirados da bolsa no primeiro ataque (com o Marcador na casa inicial; +1 por carta de Perigo na Fileira, p. 11) | Fichas de Maestria perto da Cripta | Fichas de Maestria que voltam à caixa | Cubos na área de Clank!, na ordem dos jogadores |
 |---|---|---|---|---|---|
 | 2 | 3ª | 3 | 2 | 2 | 3 e 2 |
 | 3 | 2ª | 2 | 3 | 1 | 3, 2 e 1 |
 | 4 | 1ª | 2 | 4 | nenhuma | 3, 2, 1 e 0 |
 
-O número de cubos de cada ataque é o que a casa do Marcador mostra (p. 12). Para 5 ou 6 jogadores é preciso a expansão Bando de Aventureiros, com regras próprias (p. 15).
+Para saber quantos cubos saem em cada ataque, conte os ícones vermelhos da casa do Marcador (p. 2, 4 e 12). Para 5 ou 6 jogadores é preciso a expansão Bando de Aventureiros, com regras próprias (p. 15).
 
 **O que volta para a caixa:** 2 das 6 peças em segurança, sorteadas e sem ver (passo 5), e as fichas de Maestria além de uma por jogador (passo 16) (p. 4).
 
@@ -158,9 +158,10 @@ A montagem completa, com figuras, está na seção "Montar a mesa passo a passo"
 
 1. Tabuleiro de Clank! num lado da mesa, Marcador do Dragão na casa do número de jogadores; Peça Inicial no centro.
 2. Peças da masmorra numa pilha, com 4 das 6 em segurança em cima; Banco com Ouro, Gazuas e a Bolsa do Dragão com os 24 cubos pretos.
-3. Reserva ao lado e Fileira da Masmorra com 6 cartas sem o símbolo de Ataque do Dragão. Carta com o texto Revelar: faça o que ela diz agora.
-4. Cada jogador: 30 cubos de uma cor, peão na Cripta, 3 Gazuas e as 10 cartas iniciais, embaralhadas; compre 5.
-5. Começa o mais furtivo (ou um sorteado), no sentido horário. Na área de Clank!, o primeiro põe 3 cubos, o segundo 2, o terceiro 1, o quarto nenhum.
+3. Artefatos empilhados (o de 5 pontos no topo), Segredos e Prisioneiros embaralhados, Mercado montado e os 5 cubos de Fantasma no Banco; Ídolos no Altar dos Macacos e uma Maestria por jogador perto da Cripta.
+4. Reserva ao lado e Fileira da Masmorra com 6 cartas sem o símbolo de Ataque do Dragão. Carta com o texto Revelar: faça o que ela diz agora.
+5. Cada jogador: 30 cubos de uma cor, peão na Cripta, 3 Gazuas e as 10 cartas iniciais, embaralhadas; compre 5.
+6. Começa o mais furtivo (ou um sorteado), no sentido horário. Na área de Clank!, o primeiro põe 3 cubos, o segundo 2, o terceiro 1, o quarto nenhum.
 
 ### Seu primeiro turno
 
@@ -216,7 +217,7 @@ A montagem completa, com figuras, está na seção "Montar a mesa passo a passo"
 
 ### O ataque do dragão
 
-Os cubos da área de Clank! vão para a Bolsa do Dragão, e saem dela tantos quanto o número grande da casa do Marcador (não é o número de jogadores). Preto volta ao Banco; cubo da sua cor vai para o seu Contador de Pontos de Vida, 1 de dano cada. Os não sorteados continuam na Bolsa. No décimo dano, você é nocauteado.
+Os cubos da área de Clank! vão para a Bolsa do Dragão, e saem dela tantos quanto os ícones vermelhos da casa do Marcador (não é o número de jogadores) (p. 2 e 4). Preto volta ao Banco; cubo da sua cor vai para o seu Contador de Pontos de Vida, 1 de dano cada. Os não sorteados continuam na Bolsa. No décimo dano, você é nocauteado.
 
 ### Ainda não precisa saber
 

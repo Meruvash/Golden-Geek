@@ -210,3 +210,21 @@ Pedido do editor: seção `## setup. Montar a mesa passo a passo` antes do "Come
 - **Figuras novas** (recortes da 2.3.2, só parte gráfica, com os números do próprio manual, que batem com os passos): `setup-tabuleiro.webp` (p. 2 e 3, os marcadores que invadiam os cantos de cima foram cobertos com a cor do fundo), `setup-folheto.webp` (p. 2, sem o 8), `setup-marcadores.webp` (Vida e CP lado a lado, p. 2 e 3), `setup-baralho.webp` (p. 3), `setup-dados.webp` (p. 3), `setup-duplas.webp` (diagrama do zigue-zague, p. 11). Reaproveitadas: `preparacao.webp` (saiu da etapa 1 e foi para o passo 8, para não repetir a mesma imagem) e a foto oficial `fotos/mesa-1.webp`, crédito "Imagem: Dice Throne · Season One" conforme `fotos/fontes.json`; a legenda avisa que a foto mostra partida em andamento (Vida 18).
 - **Sem ilustração própria no manual:** o passo 4 (Vida) e o 5 (CP) dividem uma figura, colocada depois do passo 5, porque os dois marcadores são pequenos; o passo 2 (folheto) divide a figura com o 3; o passo 9 (pular a primeira Renda) e os modos de 3 jogadores e de 5 ou 6 não têm desenho de montagem; o quadro Hero Setup do folheto é só texto. Nada foi inventado para esses passos.
 - **Comece a jogar:** "Monte a mesa" virou um resumo de 4 itens que remete à nova seção. `checar_comece.py` aprovado; `vicios.avisos` sem aviso; zero travessão e meia-risca. Página conferida em memória com `como_jogar_md.pagina` (a seção sai com a classe `setup` e as 8 imagens); nenhum HTML gravado; `publicar` não foi alterado.
+
+## Auditoria independente da montagem (04/11/2026)
+
+Parecer do auditor: aprovado com correções. Aplicadas no tutorial:
+
+1. Erro, passo 3: "ninguém começa com ficha" agora ressalva a preparação própria do herói, com o exemplo do Pirata Amaldiçoado, que começa com 3 Dobrões (quadro Hero Setup do folheto de exemplo, p. 6).
+2. Passo 8: dito que na 2.4.3 o quadro Hero Setup fica na frente do folheto e em manuais anteriores, como a 2.3.2, no verso; legenda da `preparacao.webp` passou a "manual Dice Throne v2.4.x (p. 2 e 3)".
+3. Introdução: "o manual não traz tabuleiro central: cada jogador põe à sua frente os componentes do herói (p. 3)", no lugar de "nada em comum no meio da mesa", que o manual não diz.
+4. "Igual em todos os modos" virou "igual nos modos de 2, 3 e 4 jogadores" (5 e 6 ficam nas variantes).
+5. Tabela de componentes: acrescentada a carta de ordem de turno (1, p. 6), com o aviso de que os passos de preparação não a usam.
+6. Passo 6 cita "(item 6 e ilustração, p. 3)", porque baralho virado para baixo e descarte virado para cima vêm da ilustração.
+7. Legenda de `setup-dados.webp`: "(p. 3; faces na legenda do folheto, p. 2)".
+8. Resumo do "Comece a jogar": a rolagem do jogador inicial vem antes da preparação própria do herói, como na seção (agora 5 itens).
+9. Cartas: "33 no Pirata Amaldiçoado, o herói do exemplo da p. 6"; dados: 5, com a p. 12 (a rolagem ofensiva usa os 5).
+10. Duplas: marcador "compartilhado pelos parceiros (o dano de qualquer um sai dele)" (p. 11). A p. 11 não diz qual marcador usar; o texto dá como sugestão do guia usar o de um parceiro e deixar o outro na caixa, e o "O que volta para a caixa" repete isso.
+11. Empate na rolagem inicial: "rolem de novo os empatados (solução da mesa; o manual não diz)".
+
+Nenhuma figura precisou mudar. `checar_comece.py` aprovado; `vicios.avisos` sem aviso; zero travessão e meia-risca. Sem commit; nenhum outro arquivo tocado.

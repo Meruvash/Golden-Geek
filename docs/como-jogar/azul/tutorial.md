@@ -35,13 +35,13 @@ A montagem segue a página de preparação do manual (p. 2), na mesma ordem. É 
 
 !fig[Os azulejos (letra D no manual) vão todos para o saco (letra E). Ilustração: manual Galápagos (p. 2)](figuras/setup-saco.webp)
 
-5. **Dê o marcador de primeiro jogador a quem visitou Portugal mais recentemente.** É essa pessoa que começa a partida (p. 2).
+5. **Dê o marcador de primeiro jogador a quem visitou Portugal mais recentemente.** É essa pessoa que começa a partida (p. 2 e 3). Se ninguém esteve em Portugal, combinem quem começa: o manual não diz.
 6. **Quem pegou o marcador de primeiro jogador enche cada expositor de fábrica com exatamente 4 azulejos tirados do saco ao acaso**, sem olhar (p. 2).
 
-!fig[A mesa pronta de 3 jogadores: 7 expositores de fábrica, cada um com 4 azulejos, o centro da mesa vazio e o saco embaixo, à direita; a seta mostra azulejos saindo do saco para um expositor. À esquerda, o marcador de primeiro jogador (letra F no manual), a peça com o número 1. Ilustração: manual Galápagos (p. 2)](figuras/setup-mesa.webp)
+!fig[A mesa pronta de 3 jogadores: 7 expositores de fábrica, 6 deles já com 4 azulejos; a seta mostra o último sendo preenchido com azulejos tirados do saco, embaixo, à direita. O centro da mesa está vazio. À esquerda, o marcador de primeiro jogador (letra F no manual), a peça com o número 1. Ilustração: manual Galápagos (p. 2)](figuras/setup-mesa.webp)
 
-7. **Devolva à caixa os tabuleiros de jogador, os marcadores de pontuação e os expositores de fábrica que não serão usados** (p. 2).
-8. **Deixe a tampa da caixa à mão, vazia.** Ela guarda os azulejos descartados durante a partida, até o saco esvaziar (p. 4 e 5).
+7. **Devolva à caixa os tabuleiros de jogador, os marcadores de pontuação e os expositores de fábrica que não serão usados** (p. 2). Com 4 jogadores, nada volta para a caixa. Que a caixa traz 4 tabuleiros, 4 marcadores de pontuação e 9 expositores é dedução deste guia: é o máximo que a preparação usa, e o manual não lista os componentes.
+8. **Dica do guia: deixe a tampa da caixa à mão, vazia.** A página de preparação não fala dela, mas ela guarda os azulejos descartados durante a partida, até o saco esvaziar (p. 4 e 5).
 
 **O que muda com o número de jogadores** (p. 2). Só o número de expositores de fábrica; as outras colunas são a conta de 4 azulejos por expositor.
 
@@ -81,7 +81,7 @@ A montagem completa, com figuras, está na seção "Montar a mesa passo a passo"
 1. Cada jogador: um tabuleiro de jogador com a parede colorida para cima e o marcador de pontuação no 0 da trilha de pontuação.
 2. Expositores de fábrica em círculo: 5 com 2 jogadores, 7 com 3, 9 com 4. O meio do círculo é o centro da mesa.
 3. Os 100 azulejos no saco. Quem visitou Portugal mais recentemente pega o marcador de primeiro jogador e põe 4 azulejos tirados do saco ao acaso em cada expositor.
-4. O que sobrou volta para a caixa; a tampa da caixa fica à mão para os descartes.
+4. O que sobrou volta para a caixa; a tampa da caixa fica à mão para os descartes (p. 4 e 5).
 
 ### Seu primeiro turno
 
@@ -170,16 +170,18 @@ O guia tem quatro etapas, cada uma uma parte real da partida: montar a mesa, peg
 >
 > **Os expositores de fábrica** são os discos onde aparecem 4 azulejos por rodada. O **centro da mesa**, no meio do círculo, recebe as sobras. O **marcador de primeiro jogador** é uma peça com o número 1. A **tampa da caixa** guarda os azulejos descartados até o saco esvaziar (p. 2, 3 e 5).
 
-> [!passos] **Passo a passo: preparação** (p. 2). É igual para 2, 3 ou 4 jogadores, salvo no passo 3.
+> [!passos] **Passo a passo: preparação** (p. 2). É igual para 2, 3 ou 4 jogadores, salvo no passo 3. A numeração é a mesma da seção "Montar a mesa passo a passo".
 >
 > 1. Dê a cada jogador um tabuleiro de jogador. Todos usam o lado com a parede colorida. O lado cinza é a Partida Alternativa (veja as Situações especiais), e todos precisam usar o mesmo lado.
 > 2. Cada jogador põe 1 marcador de pontuação no espaço 0 da sua trilha de pontuação.
 > 3. Arrume os expositores de fábrica em círculo ao redor do centro da mesa: 5 numa partida de 2 jogadores, 7 numa de 3 e 9 numa de 4.
 > 4. Ponha os 100 azulejos no saco.
-> 5. O jogador que visitou Portugal mais recentemente pega o marcador de primeiro jogador e enche cada expositor com exatamente 4 azulejos tirados do saco ao acaso.
-> 6. Devolva à caixa os tabuleiros, marcadores de pontuação e expositores que não serão usados.
+> 5. O jogador que visitou Portugal mais recentemente pega o marcador de primeiro jogador.
+> 6. Ele enche cada expositor com exatamente 4 azulejos tirados do saco ao acaso.
+> 7. Devolva à caixa os tabuleiros, marcadores de pontuação e expositores que não serão usados.
+> 8. Dica do guia: deixe a tampa da caixa à mão para os descartes (p. 4 e 5).
 
-!fig[A mesa de uma partida de 3 jogadores: 7 expositores de fábrica em círculo, cada um com 4 azulejos tirados do saco, o centro da mesa vazio e o marcador de primeiro jogador ao lado. Ilustração: manual Galápagos (p. 2)](figuras/preparacao.webp)
+!fig[A mesa pronta de 3 jogadores: 7 expositores de fábrica, 6 deles já com 4 azulejos; a seta mostra o último sendo preenchido com azulejos tirados do saco, embaixo, à direita. O centro da mesa está vazio. À esquerda, o marcador de primeiro jogador (letra F no manual), a peça com o número 1. Ilustração: manual Galápagos (p. 2)](figuras/setup-mesa.webp)
 
 > [!atencao] O marcador de primeiro jogador não fica com quem começa. No início da primeira jogada, essa pessoa o põe no centro da mesa, e ele fica lá até alguém pegar azulejos do centro (p. 3).
 
@@ -189,19 +191,19 @@ O guia tem quatro etapas, cada uma uma parte real da partida: montar a mesa, peg
 > - ( ) 5 na mesa; 4 voltam
 > - ( ) 9 na mesa; nenhum volta
 > - (x) 7 na mesa; 2 voltam
-> = Sete na mesa; dois voltam para a caixa, junto com 1 tabuleiro e 1 marcador de pontuação. São os passos 3 e 6 da preparação (p. 2).
+> = Sete na mesa; dois voltam para a caixa, junto com 1 tabuleiro e 1 marcador de pontuação, contando que a caixa traz 9 expositores e 4 tabuleiros, o máximo que a preparação usa. São os passos 3 e 7 da preparação (p. 2).
 >
 > ?? Quantos azulejos saem do saco na preparação?
 > - ( ) 20
 > - (x) 28
 > - ( ) 36
-> = 28: 4 em cada um dos 7 expositores. É o passo 5 da preparação (p. 2).
+> = 28: 4 em cada um dos 7 expositores. É o passo 6 da preparação (p. 2).
 >
 > ?? Quem enche os expositores?
 > - ( ) O jogador à esquerda de quem vai começar
 > - ( ) Cada jogador enche os expositores mais perto dele
 > - (x) Quem pegou o marcador de primeiro jogador
-> = Quem pegou o marcador de primeiro jogador. É o passo 5 da preparação (p. 2).
+> = Quem pegou o marcador de primeiro jogador. São os passos 5 e 6 da preparação (p. 2).
 >
 > ?? Em que espaço da trilha de pontuação fica cada marcador?
 > - (x) No 0
