@@ -1,0 +1,23 @@
+{
+ "slug": "codenames",
+ "titulo": "Como jogar Código Secreto",
+ "jogo": "Código Secreto",
+ "genero": "Palavras · Festa em equipes",
+ "jogadores": "2 a 8 jogadores",
+ "duracao": "15 min",
+ "idade": "10+",
+ "edicao": "Edição Devir",
+ "data": "2026-11-04",
+ "descricao": "Regras de Código Secreto (Codenames) conferidas no manual da Devir: preparação, a pista de uma palavra, os toques, o assassino e o que vale como pista.",
+ "resumo": "O espião mestre da sua equipe dá pistas de uma palavra e um número, vocês tocam as palavras certas na grade, e vence a equipe que encontrar todas as suas primeiro sem tocar o assassino.",
+ "pontos": [
+  "Na sua vez, o espião mestre diz uma palavra e um número, e os agentes de campo podem tocar até o número mais um.",
+  "Acertou, continua; civil ou palavra da outra equipe encerram o turno, e o assassino faz a sua equipe perder na hora.",
+  "A pista é sobre significado: não pode ser palavra visível na mesa, uma forma dela ou um pedaço dela."
+ ],
+ "leitura_min": 23,
+ "etapas": 3,
+ "resenha": "codenames",
+ "chamada": "Uma palavra, um número e 25 codinomes na mesa: aprenda a dar pistas e a fugir do assassino. Começa com um resumo para jogar em 4 minutos e segue em três etapas, da mesa montada às pistas que valem.",
+ "publicar": false
+}

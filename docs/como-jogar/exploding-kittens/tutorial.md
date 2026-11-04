@@ -12,7 +12,7 @@ No baralho há **Exploding Kittens**, gatinhos explosivos. Na sua vez, você jog
 
 ### Monte a mesa
 
-O baralho tem 56 cartas, para 2 a 5 jogadores (p. 1). Na ordem (p. 1):
+56 cartas, 2 a 5 jogadores. Na ordem (p. 1):
 
 1. Tire do baralho os 4 Exploding Kittens e deixe-os de lado.
 2. Tire as 6 Cartas de Desarme e dê uma a cada jogador.
@@ -59,12 +59,6 @@ As outras cartas trazem o efeito escrito; a etapa 2 explica cada uma.
 > - (x) 2
 > - ( ) 4
 > = Um a menos que o número de jogadores (p. 1).
->
-> ?? Você jogou duas cartas de ação no seu turno. O que falta para terminá-lo?
-> - ( ) Nada: quem joga carta não compra
-> - ( ) Descartar uma carta da mão
-> - (x) Comprar a carta do topo da Pilha de Compra
-> = Jogar ou passar, e então comprar; só cartas como Pulo e Ataque encerram o turno sem compra (p. 1 e 2).
 
 ### Ainda não precisa saber
 
@@ -74,7 +68,7 @@ Ataque, Presente, Embaralhar, Não! e os pares de Cartas de Gato: etapa 2. Combo
 
 Cada jogador que explode sai. Como há um Exploding Kitten a menos que o número de jogadores, a Pilha de Compra nunca acaba antes do fim: sobra um jogador, e ele vence (p. 1).
 
-**Prefere ver?** O folheto brasileiro indica o vídeo de regras oficial, em inglês, e manda ligar as legendas (CC) em português. Ele complementa este guia; em caso de diferença, vale o manual.
+**Prefere ver?** O folheto indica o vídeo oficial, em inglês, com legendas (CC) em português. Ele complementa este guia; em caso de diferença, vale o manual.
 
 !video[Exploding Kittens - How to Play, canal Exploding Kittens](https://www.youtube.com/watch?v=rcVpTb-iPoQ&t=0s)
 
@@ -82,19 +76,17 @@ Cada jogador que explode sai. Como há um Exploding Kitten a menos que o número
 
 ## 0. Antes de tudo: o que é este jogo
 
-Exploding Kittens é um jogo de cartas de 2 a 5 jogadores, sem tabuleiro: só o baralho de 56 cartas e o folheto (p. 1). O próprio folheto resume a regra de vitória em duas frases: se você explodir, perde; se não explodir, vence (p. 1).
+Exploding Kittens é um jogo de cartas de 2 a 5 jogadores: só o baralho de 56 cartas e o folheto. A regra de vitória, nas palavras dele: "se você explodir, você perde"; "se você não explodir, você vence" (p. 1).
 
-A partida gira em torno de uma pergunta que se repete a cada turno: comprar ou não comprar a próxima carta. Comprar é obrigatório no fim do turno, e cada compra pode ser um Exploding Kitten. Quase todas as outras cartas servem para mexer nessa compra: ver o que vem (Veja o Futuro), fugir dela (Pulo), empurrá-la para o vizinho (Ataque), bagunçar a ordem (Embaralhar), tomar cartas dos outros (Presente e os pares) e cancelar a jogada alheia (Não!). A Carta de Desarme é a única que salva quem já comprou o gatinho (p. 1 e 2).
-
-O jogo não tem pontuação. Os jogadores vão saindo, um a um, e vence quem sobrar.
+Comprar é obrigatório no fim do turno, e cada compra pode ser um Exploding Kitten. Quase todas as outras cartas mexem nessa compra: ver o que vem (Veja o Futuro), fugir dela (Pulo), empurrá-la para o vizinho (Ataque), mudar a ordem (Embaralhar), tomar cartas dos outros (Presente e os pares) e cancelar a jogada alheia (Não!). Só a Carta de Desarme salva quem já comprou o gatinho (p. 1 e 2). Não há pontuação: os jogadores saem um a um, e vence quem sobrar.
 
 ## 1. Como este guia ensina
 
-São três etapas, cada uma uma parte real da partida: montar e jogar turnos simples; usar as cartas de ação; usar os Combos Especiais e resolver Ataques em cadeia. Cada etapa traz **Para entender** (como funciona e por quê), **Passo a passo** (as regras de sempre), regras adicionais para casos menos frequentes e tarefas com ajuda decrescente: **exemplo resolvido**, tarefa para **completar** e **sua vez**. Escolha uma opção em cada pergunta para ver a certa e a explicação. No fim, uma avaliação diz o que reler, e a folha de consulta vai para a mesa.
+São três etapas: montar e jogar turnos simples; as cartas de ação; Combos Especiais e Ataques em cadeia. Cada etapa traz **Para entender** (como funciona e por quê), **Passo a passo** (as regras de sempre), regras adicionais para casos menos frequentes e tarefas com ajuda decrescente: **exemplo resolvido**, tarefa para **completar** e **sua vez**. Escolha uma opção em cada pergunta para ver a certa e a explicação. No fim, uma avaliação diz o que reler, e a folha de consulta vai para a mesa.
 
 ## 2. Etapa 1: montar o baralho e jogar turnos simples
 
-> [!entender] **Para entender.** A preparação regula o perigo. Cada jogador começa com uma Carta de Desarme na mão, protegido contra a primeira explosão. Os Exploding Kittens entram no baralho depois da distribuição, para que ninguém comece com um na mão, e são sempre um a menos que o número de jogadores: assim, a Pilha de Compra nunca acaba e só um jogador sobra (p. 1). Conforme as cartas são compradas, a pilha diminui e a chance de explosão sobe; o folheto lembra que dá para contar as cartas restantes para saber essa chance (p. 1).
+> [!entender] **Para entender.** A preparação regula o perigo. Cada jogador começa com uma Carta de Desarme na mão, protegido contra a primeira explosão. Os Exploding Kittens entram no baralho depois da distribuição, para que ninguém comece com um na mão, e são sempre um a menos que o número de jogadores: assim, a Pilha de Compra nunca acaba e só um jogador sobra (p. 1). A cada compra, a pilha diminui e a chance de explosão sobe.
 
 > [!passos] **Passo a passo: preparação** (p. 1)
 >
@@ -108,7 +100,7 @@ São três etapas, cada uma uma parte real da partida: montar e jogar turnos sim
 
 !fig[Os primeiros passos da preparação: do baralho saem as 6 Cartas de Desarme e os 4 Exploding Kittens. Ilustração: manual Galápagos (p. 1)](figuras/preparacao.webp)
 
-Com as contas da preparação, o tamanho da Pilha de Compra no início é sempre o mesmo para cada número de jogadores:
+Tamanho da Pilha de Compra no início, pelas contas da preparação:
 
 | Jogadores | Desarmes extras de volta | Exploding Kittens | Cartas na Pilha de Compra |
 |---|---|---|---|
@@ -133,17 +125,15 @@ Com as contas da preparação, o tamanho da Pilha de Compra no início é sempre
 
 !fig[A Carta de Desarme vai para a Pilha de Descarte; depois, o jogador devolve o Exploding Kitten à Pilha de Compra, aqui escondido embaixo da mesa. Ilustração: manual Galápagos (p. 2)](figuras/desarme.webp)
 
-> [!mais] **Onde pôr o gatinho.** Qualquer lugar vale, inclusive o topo, para que o próximo jogador o compre. Se quiser, segure o baralho embaixo da mesa para que ninguém veja a posição (p. 2).
+> [!mais] **Onde pôr o gatinho.** Qualquer lugar, inclusive o topo, para o próximo comprá-lo. Pode segurar o baralho embaixo da mesa para esconder a posição (p. 2).
 
-> [!mais] **Mão vazia ou cheia.** Não há limite máximo nem mínimo de cartas na mão. Se as suas cartas acabarem, nada muda: você continua jogando e compra ao menos uma carta no próximo turno (p. 1).
+> [!mais] **Mão vazia ou cheia.** Não há limite de cartas na mão. Se as suas acabarem, nada muda: você compra no próximo turno (p. 1).
 
 > [!mais] **Quando jogar o Desarme.** O efeito dele vale ao comprar um Exploding Kitten, para não ser eliminado (p. 2). Não há como gastá-lo antes, por precaução.
 
-> [!mais] **Fim da partida.** A cada eliminação, a mesa fica com um jogador a menos; quando sobra um, ele vence. A Pilha de Compra não acaba antes, porque há Exploding Kittens suficientes para eliminar todos menos um (p. 1).
-
 !fig[Como funciona: um jogador compra da Pilha de Compra, sai um Exploding Kitten, e ele explode. Ilustração: manual Galápagos (p. 1)](figuras/como-funciona.webp)
 
-> [!resolvido] **Exemplo resolvido.** Partida de 3, com Ana, Bruno e Carla. A Pilha de Compra começa com 29 cartas, 2 delas Exploding Kittens. Ana passa a vez e compra: uma Carta de Gato, sem efeito sozinha. Bruno também passa e compra um Exploding Kitten. Ele mostra a carta, joga o Desarme, devolve o gatinho para a terceira posição da pilha, sem que ninguém veja, e o turno dele acaba. Agora Bruno sabe onde está um Exploding Kitten e não tem mais Desarme; Ana e Carla ainda têm o delas.
+> [!resolvido] **Exemplo resolvido.** Partida de 3, com Ana, Bruno e Carla. A Pilha de Compra começa com 29 cartas, 2 delas Exploding Kittens. Ana passa a vez e compra: uma Carta de Gato, sem efeito sozinha. Bruno também passa e compra um Exploding Kitten. Ele mostra a carta, joga o Desarme, devolve o gatinho para a terceira posição da pilha, sem que ninguém veja, e o turno dele acaba. Agora só Bruno sabe onde está um Exploding Kitten, e só ele está sem Desarme.
 
 > [!complete] **Complete.** Partida de 2. Você tirou os 4 Exploding Kittens e as 6 Cartas de Desarme e deu 1 Desarme a cada jogador.
 >
@@ -160,18 +150,12 @@ Com as contas da preparação, o tamanho da Pilha de Compra no início é sempre
 > - (x) Não: só o Desarme salva de um gatinho já comprado
 > - ( ) Sim, se ninguém jogar Não!
 > = Pulo evita a compra, mas a compra já aconteceu. A Carta de Desarme é a única que salva (p. 1 e 2).
->
-> ?? Partida de 5. Quantas cartas tem a Pilha de Compra antes do primeiro turno?
-> - ( ) 23
-> - ( ) 20
-> - (x) 16
-> = Sobram 46 cartas sem gatinhos e Desarmes; volta 1 Desarme (47); saem 35 para as mãos (12); entram 4 Exploding Kittens: 16 (p. 1).
 
 > [!dica] **Contar cartas.** O folheto sugere guardar as cartas no começo, quando a chance de explodir é baixa, e contar a Pilha de Compra para saber o risco (p. 1). Numa partida de 4, se nenhum gatinho saiu nas 8 primeiras compras, restam 3 Exploding Kittens em 15 cartas: 1 chance em 5 na próxima compra.
 
 ## 3. Etapa 2: as cartas de ação
 
-> [!entender] **Para entender.** As cartas de ação mexem em três coisas: **o que você sabe** da Pilha de Compra (Veja o Futuro), **a ordem** dela (Embaralhar) e **quem compra** dela (Pulo e Ataque). Presente e os pares de Cartas de Gato tiram cartas dos outros, e assim você pode conseguir um Desarme. O Não! cancela qualquer uma dessas jogadas, mesmo fora da sua vez (p. 2). O folheto as chama de Guia Prático e diz que só é preciso lê-lo quando surgir dúvida sobre uma carta: o texto de cada carta diz o que ela faz (p. 1 e 2).
+> [!entender] **Para entender.** As cartas de ação mexem em três coisas: **o que você sabe** da Pilha de Compra (Veja o Futuro), **a ordem** dela (Embaralhar) e **quem compra** (Pulo e Ataque). Presente e os pares tiram cartas dos outros, inclusive Desarmes. O Não! cancela essas jogadas, mesmo fora da sua vez (p. 2).
 
 > [!passos] **Passo a passo: as cartas de ação** (p. 2)
 >
@@ -196,9 +180,7 @@ Com as contas da preparação, o tamanho da Pilha de Compra no início é sempre
 
 > [!mais] **Ataque cancelado.** Se o seu Ataque leva um Não!, ele não vale: o turno continua sendo seu, e você ainda precisa terminá-lo, comprando ou com outra carta (p. 2).
 
-> [!mais] **Cartas canceladas se perdem.** A carta que levou Não! não volta para a mão de ninguém; fica na Pilha de Descarte (p. 2).
-
-> [!resolvido] **Exemplo resolvido.** É o exemplo de turno do folheto (p. 2). Você desconfia de que a carta do topo é um Exploding Kitten e, em vez de passar e comprar, joga Veja o Futuro (3X). Acertou: a primeira das três é um gatinho. Você joga um Ataque para terminar o turno sem comprar e mandar o próximo jogador jogar dois turnos. Outro jogador joga um Não! sobre o Ataque: o turno continua seu. Você joga Embaralhar, embaralha a Pilha de Compra e compra a carta do topo, torcendo para que não seja o gatinho.
+> [!resolvido] **Exemplo resolvido.** O exemplo de turno do folheto (p. 2). Você desconfia de que a carta do topo é um Exploding Kitten e, em vez de passar e comprar, joga Veja o Futuro (3X). Acertou: a primeira das três é um gatinho. Você joga um Ataque para terminar o turno sem comprar e mandar o próximo jogador jogar dois turnos. Outro jogador joga um Não! sobre o Ataque: o turno continua seu. Você joga Embaralhar, embaralha a Pilha de Compra e compra a carta do topo, torcendo para que não seja o gatinho.
 
 > [!complete] **Complete.** Bruno joga Presente contra você. Você tem na mão um Desarme, um Pulo e uma Carta de Gato.
 >
@@ -216,12 +198,6 @@ Com as contas da preparação, o tamanho da Pilha de Compra no início é sempre
 > - ( ) Ana diz o nome de uma carta e você a entrega, se tiver
 > = O Par rouba uma carta aleatória (p. 2). Escolher o nome é o Três Cartas Iguais, da etapa 3.
 >
-> ?? Você joga Veja o Futuro. Depois de olhar, o que acontece com o seu turno?
-> - ( ) Acaba, e você não compra
-> - ( ) Acaba, e você compra
-> - (x) Continua: você pode jogar mais cartas e ainda precisa comprar ou encerrar o turno
-> = Veja o Futuro não encerra o turno (p. 2).
->
 > ?? Ana joga Ataque. Bruno, o próximo, responde com um Não!. Carla joga um Não! sobre o de Bruno. E agora?
 > - ( ) O Ataque está cancelado
 > - (x) O Ataque vale: Bruno joga dois turnos
@@ -230,7 +206,7 @@ Com as contas da preparação, o tamanho da Pilha de Compra no início é sempre
 
 ## 4. Etapa 3: Combos Especiais e Ataques em cadeia
 
-> [!entender] **Para entender.** O folheto pede que os Combos Especiais sejam lidos depois da primeira partida (p. 2). Eles ampliam a ideia do Par de Cartas de Gato: qualquer carta pode virar munição para roubar, desde que você tenha duas ou três com o mesmo nome. Ao usar uma carta assim, você abre mão do efeito dela. Os Ataques em cadeia são a outra coisa que pede atenção: um Ataque pode ser respondido com outro, e os turnos se somam.
+> [!entender] **Para entender.** O folheto pede que os Combos Especiais sejam lidos depois da primeira partida (p. 2). Eles ampliam a ideia do Par de Cartas de Gato: qualquer carta pode virar munição para roubar, desde que você tenha duas ou três com o mesmo nome. Ao usar uma carta assim, você abre mão do efeito dela. Já um Ataque pode ser respondido com outro, e os turnos se somam.
 
 > [!passos] **Passo a passo: Combos Especiais** (p. 2)
 >
@@ -272,33 +248,24 @@ Com as contas da preparação, o tamanho da Pilha de Compra no início é sempre
 > - ( ) Você pede outra carta
 > - (x) Você não recebe nada
 > = Se o jogador não tiver a carta pedida, você não recebe nenhuma (p. 2).
->
-> ?? Bruno deve 2 turnos por um Ataque e joga um Pulo. O que falta?
-> - (x) Um turno, que termina com compra ou com outra carta
-> - ( ) Nada: o Pulo encerra os dois
-> - ( ) Dois turnos, porque Pulo não vale contra Ataque
-> = Contra Ataque, um Pulo encerra só um dos dois turnos (p. 2).
 
 ## 5. Situações especiais
 
-**Partida de 2 ou 3.** Só 2 Cartas de Desarme extras voltam ao baralho; as outras saem do jogo (p. 1). Com 4 jogadores, as 2 restantes voltam; com 5, a única restante volta.
+**Partida de 2 ou 3.** Só 2 Cartas de Desarme extras voltam ao baralho; as outras saem do jogo (p. 1).
 
-> [!mais] **Eliminado com cartas na mão.** Quem explode descarta todas as cartas, inclusive o Exploding Kitten (p. 2). Ninguém herda a mão do eliminado.
-
-> [!mais] **Desarmes extras na mão.** Os Desarmes que voltam ao baralho são embaralhados antes da distribuição (passos 3 e 4 da preparação), então um jogador pode começar com dois. Durante a partida, Presente, pares e Três Cartas Iguais também podem tirar ou dar Desarmes (p. 1 e 2).
+> [!mais] **Desarmes extras na mão.** Os Desarmes que voltam ao baralho entram antes da distribuição, então alguém pode começar com dois (p. 1).
 
 > [!edicao] **Diferenças entre edições.** O guia segue o folheto EXK401 de 2023. A tiragem brasileira anterior (código EKEK01, 2019) e o manual em inglês dizem algumas coisas de outro jeito:
 >
 > - **Ataque contra Ataque:** na tiragem de 2019, a vítima que ataca encerra a vez e o próximo joga só 2 turnos, sem somar. No folheto de 2023 e no inglês, os turnos se somam (etapa 3).
 > - **Cinco cartas diferentes:** a tiragem de 2019 tinha um terceiro Combo Especial, com cinco cartas de nomes diferentes para pegar qualquer carta da Pilha de Descarte. O folheto de 2023 não o traz.
-> - **Nome da carta:** em 2019, "Desarmar"; em 2023, "Desarme".
 > - **Eliminação:** o manual em inglês de 2025 manda deixar o gatinho virado para cima à sua frente e as outras cartas viradas para baixo; o brasileiro manda descartar tudo.
-> - **Partida rápida:** o manual em inglês traz uma variante para 2 e 3 jogadores, que tira ao acaso cerca de um terço do baralho antes de pôr os Exploding Kittens. O folheto brasileiro não a traz.
+> - **Partida rápida:** o manual em inglês sugere, com 2 ou 3 jogadores, tirar ao acaso cerca de um terço do baralho antes de pôr os Exploding Kittens. O brasileiro não tem essa variante.
 
 > [!edicao] **Pontos que o folheto deixa em aberto.** O guia escolheu uma leitura em cada um; combine com a mesa.
 >
 > - **Pulo em Ataque acumulado:** o folheto trata só do caso de 2 turnos ("anula 1 dos dois turnos"). O guia aplica a mesma regra em cadeia: cada Pulo encerra um turno.
-> - **Desarme durante um Ataque:** o folheto diz que o turno acaba depois do Desarme (p. 2). O guia entende que acaba só aquele turno; se você devia dois, o segundo ainda vem, como em qualquer compra.
+> - **Desarme durante um Ataque:** o turno acaba depois do Desarme (p. 2); o guia entende que acaba só aquele, e o segundo turno devido ainda vem.
 > - **Eliminado devendo turnos:** o folheto não diz o que acontece com turnos de Ataque de um jogador que explode. Sugestão do guia, sem apoio no texto: a vez passa ao próximo jogador, que joga um turno comum.
 
 ## 6. Avaliação final
@@ -315,7 +282,7 @@ Responda sem consultar. Cada resposta diz o que reler.
 - ( ) Nenhuma
 - (x) 2
 - ( ) 4
-= Sobram 2 das 6, e as restantes voltam; o limite de 2 só pesa com 2 ou 3 jogadores (p. 1). Releia a etapa 1.
+= As 2 que sobram voltam; o limite só pesa com 2 ou 3 jogadores (p. 1). Releia a etapa 1.
 
 ?? 3. Carla compra um Exploding Kitten e joga Desarme. Davi joga Não! sobre o Desarme. O que acontece?
 - ( ) Carla é eliminada
@@ -333,7 +300,7 @@ Responda sem consultar. Cada resposta diz o que reler.
 - ( ) 2
 - ( ) 3
 - (x) 4
-= Os 2 que você não jogou mais 2 (p. 2). Releia a etapa 3.
+= Os 2 que faltavam mais 2 (p. 2). Releia a etapa 3.
 
 ?? 6. Você joga três Cartas de Gato iguais. O que pode fazer?
 - (x) Pedir uma carta pelo nome a um jogador
@@ -369,6 +336,6 @@ Responda sem consultar. Cada resposta diz o que reler.
 ## 8. Fontes
 
 - Galápagos (Asmodee). *Exploding Kittens: regras*, Edição Original, código EXK401 (folheto de 2 páginas, v1.0, PDF de 18/08/2023; tradução de Juliana Gallo; © Exploding Kittens 2023). Biblioteca de downloads da Asmodee Brasil, https://www.asmodee.com.br/download-library. Consultado em 04/11/2026.
-- Galápagos. *Exploding Kittens: regras*, Edição Original, tiragem anterior, código EKEK01 (folheto de 2 páginas, PDF de 28/05/2019), mesma biblioteca. Usado só para as diferenças entre edições. Consultado em 04/11/2026.
+- Galápagos. *Exploding Kittens: regras*, tiragem anterior, código EKEK01 (PDF de 28/05/2019), mesma biblioteca. Só para as diferenças entre edições. Consultado em 04/11/2026.
 - Exploding Kittens. *Exploding Kittens: Original Edition, The Rules* (manual em inglês, 2 páginas, ©2025), https://www.explodingkittens.com/pages/rules-kittens. Usado para esclarecer o Ataque em cadeia. Consultado em 04/11/2026.
 - Exploding Kittens. Página do produto *Exploding Kittens: Original Edition*, https://www.explodingkittens.com/products/exploding-kittens-original-edition (2 a 5 jogadores, 7+, 15 min). Consultado em 04/11/2026.

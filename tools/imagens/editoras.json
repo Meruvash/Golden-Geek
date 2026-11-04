@@ -2168,7 +2168,9 @@
   "plataforma": "shopify",
   "estrategia": "sitemap+shopify_json",
   "press_kit": null,
-  "paginas": {},
+  "paginas": {
+   "exploding-kittens": "https://www.explodingkittens.com/products/exploding-kittens-original-edition"
+  },
   "status": "ok",
   "obs": "",
   "robots": {
