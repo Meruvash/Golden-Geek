@@ -109,3 +109,44 @@ Dois auditores externos: um de regras (aprovado com ajustes, nenhum erro de regr
 - k. Etapa 2: "uma palavra e um número, além de soletrar a pista se pedirem" (p. 6).
 
 **Portões depois das correções:** `checar_comece.py` passa. Com a lista de peças, o Comece chegou a 880 palavras; foi enxugado e voltou a ficar abaixo de 800. Travessão e meia-risca: zero. `vicios.py`: zero aviso. Exclamação: zero. O tutorial tem 5.320 palavras por `wc`.
+
+## 7. Seção de montagem (04/11/2026)
+
+O editor pediu uma seção de montagem completa no alto da página, e ela entrou como `## setup. Montar a mesa passo a passo`, antes do "Comece a jogar". Ela segue a ordem de PREPARAÇÃO, EQUIPE INICIAL e CARTAS DE AGENTE do manual (p. 2 e 3) e tem quatro partes: uma tabela de componentes com quantidades, uma tabela por número de jogadores (p. 2 e 8), 12 passos com página e uma conferência final com uma pergunta `??`.
+
+**Imagens por passo.** Nenhuma figura nova foi recortada. As cinco que já existiam foram para o passo que ilustram:
+- `preparacao`, depois do passo 3 (lugares à mesa);
+- `chave`, depois do passo 7 (leitura da chave), servindo também ao passo 8 (as luzes);
+- `agentes`, depois do passo 9;
+- `agente-duplo`, depois do passo 10;
+- `civis-assassino`, depois do passo 11.
+
+Na etapa 1 elas foram retiradas, para não repetir as mesmas imagens, e o texto agora remete à seção de montagem. Uma foto oficial entrou uma vez: `../../codenames/fotos/mesa-1.webp`, com o crédito "Imagem: Czech Games Edition", tirado de `codenames/fotos/fontes.json`. A legenda diz que a foto é da edição original em inglês e mostra uma partida em andamento.
+
+**Passos sem ilustração no manual** (registrados aqui em vez de inventar imagem):
+- 1 e 2 (formar as equipes, escolher os espiões mestres). A ilustração da p. 2 mostra os lugares, não a escolha.
+- 4 (embaralhar virando metade do baralho).
+- 6 (sortear a chave). Só a chave já no apoio aparece, na figura da mesa.
+- 12 (ampulheta). O manual não a mostra na preparação nem diz onde ela fica; o tutorial só diz "deixe à mão, se for usá-la" (p. 5).
+
+**Lacunas do manual na montagem.**
+- O manual não dá o total de cartas de codinome nem de cartas chave da caixa; a tabela diz isso.
+- O manual não lista o que volta para a caixa. O tutorial diz só que as cartas não sorteadas não entram na partida e que, na seguinte, viram-se 25 codinomes novos (p. 5).
+
+**O "Comece a jogar".** A subseção "Monte a mesa" virou um resumo de 4 itens que remete à nova seção.
+
+**Portões.** `checar_comece.py` passa. Travessão e meia-risca: zero. `vicios.py`: zero aviso; uma muleta acusada no resumo foi trocada. A renderização de teste, gravada só no scratchpad, mostra a seção com a classe `setup`, toda à vista, logo depois do resumo. O tutorial tem 6.045 palavras por `wc`.
+
+## 8. Auditoria independente da montagem (04/11/2026)
+
+Resultado do auditor: aprovado com correções, sem erro de regra. As correções:
+
+1. "O que fica fora": agora diz "Para a próxima partida, retire as cartas que cobrem as palavras, devolva-as às pilhas e vire 25 codinomes (p. 5)", sem o "novos".
+2. Introdução: "segue a preparação do manual (p. 2 e 3), na mesma ordem, com a ampulheta da p. 5 no fim".
+3. Passo 4: acrescentado "(as cartas têm palavras dos dois lados)", conforme a figura da p. 2 e a ordem de virar metade do baralho.
+4. Legenda de `chave.webp`: diz que a moldura colorida das palavras existe só na ilustração do manual, não nas cartas de verdade.
+5. `preparacao.webp` passou a ter a frase de entrada "Assim fica a mesa pronta:".
+6. A conferência final ganhou "e todos sabem qual equipe começa (luzes da chave)".
+7. Item opcional, aceito: o passo 6 diz que qualquer lado da chave pode ficar para cima (p. 2) e que as luzes estão nas quatro bordas (p. 3). O manual não liga uma coisa à outra explicitamente, e o texto também não liga.
+
+Portões: `checar_comece.py` passa, travessão e meia-risca zero, `vicios.py` sem aviso.

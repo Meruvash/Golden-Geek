@@ -97,3 +97,23 @@ Duas auditorias independentes: regras (aprovada com correções, nenhum erro de 
 - **Redação:** "Os pontos ficam nas cartas e nos nobres, sempre à vista (p. 4; manual de 2025)"; marcador de primeiro jogador "ajuda a saber quem joga o último turno (manual de 2025)"; "a cor do bônus é a cor da carta" citada só no manual de 2025; "sem número, não vale ponto" com (p. 3); primeiro turno dito como consequência ("como toda carta tem custo", p. 3); "são necessárias 4 fichas".
 - **Partida simulada:** frase de que cada nobre tem o seu pedido, que muda de um para outro (p. 4); "no fim do seu turno" para a visita na ideia do jogo, na etapa 3 e na avaliação; reposição da mesa "na hora", em que a carta é comprada ou reservada, no Comece, na etapa 2 e na folha de consulta (p. 4; manual de 2025); "(o guia explica os nobres na etapa 3)"; "Ainda não precisa saber" sem fim da partida e desempate; "exatamente 1 ficha de cada uma de três cores", com a exceção de 2025; "Uma rodada é cada jogador jogar um turno"; tabela com "(máx. 3 reservas; ouro se houver)"; baralhos com o nível 1 na fileira de baixo e os nobres acima, como na figura da p. 2 (2025: nobres "em uma fileira acima das cartas").
 - **Portões refeitos:** `checar_comece.py` aprovado; `vicios.py` com 0 aviso nos três arquivos; zero travessão. Tutorial: 4.920 palavras (`wc -w`). `publicar` continua `false`.
+
+## Seção de montagem (04/11/2026)
+
+Pedido do editor: seção `## setup. Montar a mesa passo a passo` antes do "Comece a jogar", seguindo a p. 2 do manual de 2015 na mesma ordem, com os acréscimos do folheto de 2025 (passos 1 a 5 numerados no próprio folheto).
+
+- **Conteúdo e fonte:** componentes e quantidades (p. 2; 2025); baralhos por nível e em coluna crescente (p. 2; 2025 passo 1); 4 cartas por nível (p. 2; passo 2); nobres = jogadores + 1, "numa fileira acima das cartas" (p. 2; passo 3); fichas por número de jogadores e ouro fixo em 5 (p. 2; passo 4); o mais novo começa e pega o marcador (p. 3; passo 5). Tabela por número de jogadores recalculada em Python: 2 jogadores, 4 por pedra, 15 fichas e 7 nobres voltam à caixa; 3 jogadores, 5 por pedra, 10 fichas e 6 nobres; 4 jogadores, 7 por pedra, nenhuma ficha e 5 nobres. "Não há outras modificações" é citação literal da p. 2.
+- **Interpretado:** passo 7 ("ninguém recebe nada na montagem") é leitura da ausência de qualquer distribuição nos passos do manual (p. 2 e 3), dito como tal no texto.
+- **Figuras novas** (recortes só da parte gráfica, textos do manual retirados): `setup-fichas.webp` (as seis fichas do quadro de componentes de 2025, recompostas lado a lado sem as legendas), `setup-baralhos.webp` (os três versos, sem as legendas), `setup-nobres.webp` (três nobres e o marcador de primeiro jogador, recompostos sem as legendas), `setup-2025.webp` (a ilustração de preparação de 2025 com os números dos passos, sem o texto). `preparacao.webp` (2015 p. 2) saiu da etapa 1 e foi para o passo 5 da montagem. Foto oficial `fotos/mesa-1.webp`, crédito "Imagem: Space Cowboys" conforme `fotos/fontes.json`.
+- **Passos sem ilustração no manual:** a tabela de 2 e 3 jogadores (p. 2) é só texto, sem desenho da mesa com menos fichas ou nobres; o embaralhar e a devolução de fichas e nobres à caixa não são ilustrados; a ordem de jogo (sentido horário) não tem desenho. Nada foi inventado para esses passos: ficam com texto, e a figura mais próxima é a da mesa de 4 jogadores.
+- **Comece a jogar:** "Monte a mesa" virou um resumo de 4 itens que aponta para a nova seção; `checar_comece.py` aprovado; `vicios.py` com 0 aviso; zero travessão. `publicar` não foi alterado.
+
+## Auditoria independente da montagem (04/11/2026)
+
+Resultado: aprovado com correções. Aplicadas:
+
+- Erro 1: a introdução dizia "salvo nos passos 3 e 4"; os passos que mudam com o número de jogadores são o 4 (nobres) e o 5 (fichas). Corrigido.
+- Erro 2: a foto `fotos/mesa-1.webp` mostra os 10 nobres abaixo das cartas, o que contradiz o passo 4. Saiu da seção de montagem e não foi usada em outro lugar do tutorial.
+- Menores: legenda de `setup-fichas.webp` passou a "Os seis tipos de ficha"; título do passo 7 passou a "Ninguém recebe fichas nem cartas na montagem"; "nenhuma carta de desenvolvimento volta para a caixa" no lugar de "ficam todas nos baralhos".
+- Clareza: `setup-nobres.webp` recortada de novo, só com o nobre inteiro (pedido de 3 verdes, 3 azuis e 3 vermelhos, lido na ilustração) e o marcador, sem as linhas cinzas e sem o nobre cortado; legenda ajustada. O passo 3 diz que as 4 cartas são tiradas do baralho embaralhado daquele nível (p. 2; 2025: "Revele 4 cartas de cada nível, colocando-as em uma fileira à direita dos respectivos baralhos").
+- Portões refeitos: `checar_comece.py` aprovado, `vicios.py` 0 aviso, zero travessão.

@@ -2,6 +2,74 @@
 
 *Regras conferidas no folheto de regras da edição brasileira de Exploding Kittens, a Edição Original (Galápagos, código EXK401, versão v1.0, 2023, tradução de Juliana Gallo), baixado da biblioteca de downloads da Asmodee Brasil. O folheto tem duas faces: a p. 1 traz as regras, a p. 2 traz o Guia Prático das cartas e os Combos Especiais. As poucas diferenças em relação à tiragem anterior e ao manual em inglês estão nas Situações especiais.*
 
+## setup. Montar a mesa passo a passo
+
+Tudo o que a partida usa é o baralho de 56 cartas; não há tabuleiro nem peças. A montagem leva poucos minutos e segue os 7 passos da preparação do folheto, na mesma ordem (p. 1). Reserve um espaço livre no centro da mesa.
+
+**O que vem na caixa** (p. 1 e 2):
+
+| Carta | Quantidade |
+|---|---|
+| Exploding Kitten | 4 |
+| Desarme | 6 |
+| Não! | 5 |
+| Veja o Futuro (3X) | 5 |
+| Ataque (2X) | 4 |
+| Pulo | 4 |
+| Presente | 4 |
+| Embaralhar | 4 |
+| Cartas de Gato | 20 (5 tipos com desenhos diferentes, 4 de cada) |
+| **Total** | **56**, e o folheto de regras |
+
+**Passo a passo** (p. 1):
+
+1. **Separe os Exploding Kittens.** Procure no baralho as 4 cartas pretas de Exploding Kitten e deixe-as de lado, por perto: elas só entram no passo 5.
+2. **Separe as Cartas de Desarme e entregue uma a cada jogador.** Tire do baralho as 6 Cartas de Desarme e dê uma a cada um. Cada jogador põe a sua na mão.
+
+!fig[Passos 1 e 2: do baralho saem os 4 Exploding Kittens e as 6 Cartas de Desarme. Ilustração: manual Galápagos (p. 1)](figuras/preparacao.webp)
+
+3. **Devolva ao baralho os Desarmes que sobraram.** Com 4 ou 5 jogadores, devolva todos os que sobraram (2 ou 1). Com 2 ou 3 jogadores, devolva só 2; os demais saem da partida e voltam para a caixa (p. 1, quadro "Dois ou três jogadores").
+
+!fig[Passo 3: as Cartas de Desarme que sobraram voltam para o baralho. Ilustração: manual Galápagos (p. 1)](figuras/setup-desarmes-de-volta.webp)
+
+4. **Embaralhe e distribua 7 cartas a cada jogador**, viradas para baixo. Com o Desarme do passo 2, cada um fica com 8 cartas na mão. Olhe as suas e não as mostre. Como os Desarmes extras voltaram ao baralho antes da distribuição, alguém pode receber um segundo.
+
+!fig[Passo 4: a mão de 8 cartas, com a Carta de Desarme e as 7 recebidas. Ilustração: manual Galápagos (p. 1)](figuras/setup-mao.webp)
+
+5. **Ponha os Exploding Kittens de volta no baralho**, em número igual ao de jogadores menos 1: 1 com 2 jogadores, 2 com 3, 3 com 4, 4 com 5. Os que sobram saem da partida e voltam para a caixa. É isso que garante que todos explodam, menos um.
+
+!fig[Passo 5, exemplo com 4 jogadores: 3 Exploding Kittens entram no baralho. Ilustração: manual Galápagos (p. 1)](figuras/setup-gatinhos-de-volta.webp)
+
+6. **Embaralhe e ponha o baralho no centro da mesa**, virado para baixo. Essa é a Pilha de Compra. Deixe ao lado um espaço vazio para a Pilha de Descarte, onde as cartas jogadas ficam viradas para cima.
+
+!fig[Passo 6: a Pilha de Compra no centro, virada para baixo, e o espaço vazio da Pilha de Descarte ao lado. Ilustração: manual Galápagos (p. 1)](figuras/pilha-de-compra.webp)
+
+7. **Escolham quem começa.** O folheto deixa o critério livre e dá exemplos de brincadeira, como o jogador mais jovem. O jogo segue no sentido horário: depois de você, joga quem está à sua esquerda.
+
+**O que muda com o número de jogadores** (p. 1; contas do guia):
+
+| Jogadores | Desarmes nas mãos | Desarmes devolvidos ao baralho | Desarmes para a caixa | Exploding Kittens no baralho | Exploding Kittens para a caixa | Cartas na Pilha de Compra |
+|---|---|---|---|---|---|---|
+| 2 | 2 | 2 | 2 | 1 | 3 | 35 |
+| 3 | 3 | 2 | 1 | 2 | 2 | 29 |
+| 4 | 4 | 2 | 0 | 3 | 1 | 23 |
+| 5 | 5 | 1 | 0 | 4 | 0 | 16 |
+
+**O que volta para a caixa:** só as cartas que o folheto manda remover da partida, ou seja, os Desarmes e os Exploding Kittens a mais da tabela (p. 1). Todas as outras cartas ficam no jogo.
+
+**Antes de começar, confira:**
+
+- Cada jogador tem 8 cartas na mão, entre elas pelo menos uma Carta de Desarme.
+- A Pilha de Compra está no centro, virada para baixo, com Exploding Kittens em número igual ao de jogadores menos 1.
+- Há espaço livre ao lado dela para a Pilha de Descarte.
+- Todos sabem quem começa e que a vez passa para a esquerda.
+
+?? Partida de 3 jogadores. Depois da montagem, quantas cartas estão na Pilha de Compra?
+- ( ) 23
+- (x) 29
+- ( ) 31
+= Sobram 46 cartas sem Exploding Kittens e Desarmes; voltam 2 Desarmes (48); saem 21 para as mãos (27); entram 2 Exploding Kittens: 29 (p. 1).
+
 ## 4min. Comece a jogar em 4 minutos
 
 **Meta:** em 4 minutos de leitura, montar o baralho e jogar o seu primeiro turno sem abrir o folheto.
@@ -12,15 +80,11 @@ No baralho há **Exploding Kittens**, gatinhos explosivos. Na sua vez, você jog
 
 ### Monte a mesa
 
-56 cartas, 2 a 5 jogadores. Na ordem (p. 1):
+A montagem completa, com figuras, está em "Montar a mesa passo a passo", logo acima. Os pontos principais (p. 1):
 
-1. Tire do baralho os 4 Exploding Kittens e deixe-os de lado.
-2. Tire as 6 Cartas de Desarme e dê uma a cada jogador.
-3. Devolva ao baralho as Cartas de Desarme que sobraram. Com 2 ou 3 jogadores, devolva só 2 e tire as outras do jogo.
-4. Embaralhe e dê 7 cartas viradas para baixo a cada um. Cada jogador fica com 8 cartas: 7 e o Desarme. Olhe as suas sem mostrar.
-5. Ponha de volta no baralho um Exploding Kitten a menos que o número de jogadores: 3 numa partida de 4, por exemplo. Os que sobram saem do jogo.
-6. Embaralhe e ponha o baralho virado para baixo no centro: é a Pilha de Compra. Deixe espaço ao lado para a Pilha de Descarte.
-7. Escolham quem começa. O jogo segue no sentido horário: o próximo é sempre o jogador à esquerda.
+1. Separe os 4 Exploding Kittens e as 6 Cartas de Desarme; dê 1 Desarme a cada jogador e devolva os outros ao baralho (com 2 ou 3 jogadores, só 2; os demais voltam para a caixa).
+2. Embaralhe e dê 7 cartas a cada um (cada um fica com 8); depois ponha no baralho Exploding Kittens em número igual ao de jogadores menos 1 e devolva à caixa os que sobrarem.
+3. Embaralhe, ponha a Pilha de Compra no centro e escolham quem começa. A vez passa para a esquerda.
 
 ### Seu primeiro turno
 
