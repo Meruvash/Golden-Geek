@@ -123,6 +123,8 @@ CSS = """<style>
 /* cupons */
 .cupons{display:grid;gap:10px;margin:12px 0 0;padding:0;list-style:none}
 @media (min-width:760px){.cupons{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.wp{margin:12px 0 6px}.wp p{font-size:.92rem;color:#c9ced8;margin:10px 0 0}.wp-ok{color:#5fd38d!important;font-weight:700}
+.wp-mais{margin-top:14px;border-top:1px solid #2a2f3a;padding-top:10px}.wp-mais summary{cursor:pointer;color:#e3b23c;font-weight:700}
 .bk-alerta .al-os{margin:12px 0}.al-tag{font-weight:800;margin:0 0 10px}
 .al-btn{display:flex;align-items:center;justify-content:center;width:100%;min-height:56px;padding:14px 18px;border-radius:14px;background:#e3b23c;color:#111;font-weight:900;font-size:1.08rem;text-decoration:none;border:0;cursor:pointer;font-family:inherit;box-sizing:border-box}
 .bk-alerta a.al-btn,.bk-alerta a.al-btn:visited,.bk-alerta a.al-btn:hover{color:#111;text-decoration:none}
@@ -352,6 +354,31 @@ document.addEventListener('click',async e=>{const b=e.target.closest('.cup-cod')
 </script>"""
 
 
+JS_PUSH = """<script>
+(()=>{const w=document.querySelector('.wp');if(!w)return;
+const q=s=>w.querySelector(s),mostra=s=>{['.wp-ok','.wp-ios','.wp-neg','.wp-erro'].forEach(x=>q(x).hidden=x!==s);q('.wp-ativar').hidden=s==='.wp-ok'};
+const ios=/iPhone|iPad|iPod/i.test(navigator.userAgent)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1);
+const app=window.matchMedia('(display-mode: standalone)').matches||navigator.standalone===true;
+const tem='serviceWorker' in navigator&&'PushManager' in window&&'Notification' in window;
+const chave=s=>{const p='='.repeat((4-s.length%4)%4),b=atob((s+p).replace(/-/g,'+').replace(/_/g,'/'));return Uint8Array.from(b,c=>c.charCodeAt(0))};
+const api=w.dataset.api;
+if(ios&&!app){mostra('.wp-ios');q('.wp-ativar').hidden=true;return}
+if(!tem){mostra('.wp-erro');return}
+navigator.serviceWorker.register('/sw-black.js').then(async r=>{const s=await r.pushManager.getSubscription();if(s&&Notification.permission==='granted')mostra('.wp-ok')});
+q('.wp-ativar').addEventListener('click',async()=>{const b=q('.wp-ativar'),o=b.textContent;b.textContent='Ativando…';
+ try{const p=await Notification.requestPermission();if(p!=='granted'){mostra('.wp-neg');b.textContent=o;return}
+  const r=await navigator.serviceWorker.register('/sw-black.js');await navigator.serviceWorker.ready;
+  const s=(await r.pushManager.getSubscription())||await r.pushManager.subscribe({userVisibleOnly:true,applicationServerKey:chave(w.dataset.chave)});
+  const x=await fetch(api+'/v1/push/inscrever',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({sub:s.toJSON()})});
+  if(!x.ok)throw new Error('api');mostra('.wp-ok');
+  r.showNotification('Alertas do Black de Verdade ativados',{body:'Quando um jogo entrar no radar com desconto real, o aviso chega aqui.',icon:'/icon-192.png',tag:'ativado'})}
+ catch(e){b.textContent=o;mostra('.wp-erro');q('.wp-erro').textContent='Não deu para ativar agora (sem conexão com o serviço de alertas). Tente de novo em alguns minutos.'}});
+q('.wp-sair').addEventListener('click',async()=>{const r=await navigator.serviceWorker.getRegistration('/sw-black.js')||await navigator.serviceWorker.ready;const s=r&&await r.pushManager.getSubscription();
+ if(s){await fetch(api+'/v1/push/cancelar',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({endpoint:s.endpoint})}).catch(()=>{});await s.unsubscribe()}
+ mostra('');q('.wp-ativar').hidden=false})})();
+</script>"""
+
+
 JS_ALERTA = """ <script>
  (()=>{const ua=navigator.userAgent,and=/Android/i.test(ua),ios=/iPhone|iPad|iPod/i.test(ua)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1);
  const os=and?'android':ios?'ios':'pc';document.querySelectorAll('.al-os').forEach(b=>b.hidden=b.dataset.os!==os);
@@ -373,6 +400,10 @@ def build(radar_itens, armadilhas, quase=()):
         tg = json.loads((ROOT / "conteudo" / "black" / "alertas_config.json").read_text(encoding="utf-8")).get("telegram")
     except (FileNotFoundError, ValueError):
         tg = None
+    try:
+        push = json.loads((ROOT / "conteudo" / "black" / "push.json").read_text(encoding="utf-8"))
+    except (FileNotFoundError, ValueError):
+        push = None
     tg_btn = (f'<a class="al-btn al-tg" href="https://t.me/{e(tg.lstrip("@"))}" target="_blank" rel="noopener">'
               f'Entrar no canal do Telegram (1 toque)</a>') if tg else ""
     titulo = "Black de Verdade: ofertas de jogos de tabuleiro com desconto real"
@@ -497,7 +528,16 @@ def build(radar_itens, armadilhas, quase=()):
  </ul>
  <section id="alertas" aria-labelledby="h-alertas" class="bk-alerta">
   <h2 id="h-alertas">🔔 Receba as promoções no celular</h2>
-  <p class="sub">Quando um jogo entra no Black de Verdade, chega uma notificação no seu celular, como mensagem, com o preço, a loja e o desconto real. Grátis, sem cadastro e sem e-mail, pelo app ntfy (gratuito e de código aberto).</p>
+  <p class="sub">Quando um jogo entra no Black de Verdade, chega uma notificação no seu celular, como mensagem, com o preço, a loja e o desconto real. {"Grátis, sem instalar nada e sem cadastro: um toque e pronto." if push else "Grátis, sem cadastro e sem e-mail, pelo app ntfy (gratuito e de código aberto)."}</p>
+  {f'''<div class="wp" data-chave="{e(push["chave"])}" data-api="{e(push["api"])}">
+   <button type="button" class="al-btn wp-ativar">🔔 Ativar alertas neste celular</button>
+   <p class="wp-ok" hidden>✅ Pronto! Os alertas do Black de Verdade vão chegar neste aparelho. <button type="button" class="al-mini wp-sair">Desativar</button></p>
+   <p class="wp-ios" hidden>No iPhone, a Apple só deixa sites mandarem notificação depois de adicionados à tela de início: toque em <b>Compartilhar</b> (o quadrado com a seta ⬆️), depois em <b>Adicionar à Tela de Início</b>. Abra o Elite pelo ícone novo, volte aqui e toque em <b>Ativar alertas</b>.</p>
+   <p class="wp-neg" hidden>As notificações estão bloqueadas para este site. Toque no cadeado ao lado do endereço, em <b>Permissões</b> ou <b>Notificações</b>, escolha <b>Permitir</b> e toque de novo no botão.</p>
+   <p class="wp-erro" hidden>Este navegador não aceita notificações de sites. Use o Chrome no Android, o Safari no iPhone (depois de adicionar à tela de início) ou um navegador de computador.</p>
+   <p class="al-dica">Sem instalar nada: o próprio navegador mostra o alerta na barra de notificações, com o preço e o desconto real. Para parar, é só tocar em Desativar.</p>
+  </div>
+  <details class="wp-mais"><summary>Prefere receber por um app (ntfy ou Telegram)?</summary>''' if push else ""}
   <div class="al-os" data-os="android">
    <p class="al-tag">No seu Android, é um toque só:</p>
    <a class="al-btn" href="intent://ntfy.sh/eliteboardgamers-black?display=Black%20de%20Verdade#Intent;scheme=ntfy;package=io.heckel.ntfy;S.browser_fallback_url=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dio.heckel.ntfy;end" data-al="android">Ativar alertas no celular</a>
@@ -519,9 +559,11 @@ def build(radar_itens, armadilhas, quase=()):
    {f'<p class="al-tag" style="margin-top:16px">Ou entre no canal do Telegram:</p>{tg_btn}' if tg else ""}
    <p class="al-dica">Prefere receber neste computador? <a href="https://ntfy.sh/eliteboardgamers-black" target="_blank" rel="noopener">Abra o canal no navegador</a>, toque em <b>Subscribe</b> e permita as notificações.</p>
   </div>
+  {"</details>" if push else ""}
   <p class="al-canal">Nome do canal: <b>eliteboardgamers-black</b> <button type="button" class="al-mini al-copia" data-copia="eliteboardgamers-black">Copiar</button> · para parar, é só cancelar a assinatura no app.</p>
  </section>
  {JS_ALERTA}
+ {JS_PUSH if push else ""}
  <section id="melhores" aria-labelledby="h-melhores">
   <h2 id="h-melhores">As 5 melhores agora</h2>
   <p class="sub">A melhor combinação de nota no BGG e desconto real.</p>

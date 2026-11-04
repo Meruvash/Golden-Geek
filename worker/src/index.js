@@ -9,8 +9,11 @@
 //   GET  /v1/moderacao/recentes        últimos 200 comentários, qualquer estado
 //   POST /v1/moderacao/decidir {id, estado, parecer, por}
 //   GET  /painel                       painel de moderação (pede a senha no navegador)
+// Notificações do Black de Verdade: /v1/push/* e o cron, em src/push.js
 //
 // Variáveis: DB (D1), MODERACAO_TOKEN e TURNSTILE_SECRET (segredos), ORIGEM (site), DEV=1 só no teste local.
+
+import { rotasPush, agendado } from "./push.js";
 
 const MAX_POR_HORA = 5;
 const PAGINA = /^\/[a-z0-9\-/]{1,180}\/$/;
@@ -109,6 +112,9 @@ async function moderacao(req, url, env) {
 }
 
 export default {
+  async scheduled(evento, env, ctx) {
+    ctx.waitUntil(agendado(env));  // notificações do Black de Verdade (worker/src/push.js)
+  },
   async fetch(req, env) {
     const url = new URL(req.url), h = cors(req, env);
     try {
@@ -118,6 +124,7 @@ export default {
       if (url.pathname === "/v1/pagina" && req.method === "GET") return pagina(url, env, h);
       if (url.pathname === "/v1/curtir" && req.method === "POST") return curtir(req, env, h);
       if (url.pathname === "/v1/comentar" && req.method === "POST") return comentar(req, env, h);
+      if (url.pathname.startsWith("/v1/push/")) return rotasPush(req, url, env, h);
       return json({ erro: "rota desconhecida" }, 404, h);
     } catch (e) {
       return json({ erro: "falha interna" }, 500, h);

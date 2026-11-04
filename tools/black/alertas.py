@@ -30,7 +30,8 @@ import requests
 
 ROOT = Path(__file__).resolve().parents[2]
 ESTADO = ROOT / "conteudo" / "black" / "alertas_estado.json"
-FILA = ROOT / "conteudo" / "black" / "alertas_fila.json"  # alertas esperando envio pelo GitHub Actions (que tem o token)
+FILA = ROOT / "conteudo" / "black" / "alertas_fila.json"
+FEED = ROOT / "black" / "alertas.json"  # lista pública dos últimos alertas; o serviço de notificações do site lê e manda o push  # alertas esperando envio pelo GitHub Actions (que tem o token)
 SERVIDOR = "https://ntfy.sh"
 TOPICO = "eliteboardgamers-black"
 TOPICO_TESTE = "eliteboardgamers-black-teste"
@@ -44,7 +45,28 @@ def brl(v):
     return "R$ " + f"{v:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")
 
 
+def no_feed(titulo, texto, link, imagem=None):
+    """Acrescenta o alerta à lista pública black/alertas.json (os 30 mais recentes). O serviço de notificações do site
+    (worker em api.eliteboardgamers.com.br) lê essa lista a cada minuto e manda a notificação do navegador para quem
+    tocou em "Ativar alertas" na página: sem app e sem cadastro."""
+    try:
+        feed = json.loads(FEED.read_text(encoding="utf-8"))
+    except (FileNotFoundError, ValueError):
+        feed = []
+    agora = dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds")
+    ident = f"{agora}-{abs(hash(titulo)) % 100000}"
+    feed.append({"id": ident, "hora": agora, "titulo": titulo, "texto": texto, "url": link, "imagem": imagem})
+    FEED.parent.mkdir(parents=True, exist_ok=True)
+    FEED.write_text(json.dumps(feed[-30:], ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+
+
 def enviar(titulo, texto, link=PAGINA, tags="game_die", prioridade="default", topico=TOPICO, imagem=None):
+    if topico == TOPICO:
+        no_feed(titulo, texto, link, imagem)
+    return _enviar_ntfy(titulo, texto, link, tags, prioridade, topico, imagem)
+
+
+def _enviar_ntfy(titulo, texto, link=PAGINA, tags="game_die", prioridade="default", topico=TOPICO, imagem=None):
     """Sem NTFY_TOKEN (leitura de reserva fora do GitHub), o alerta vai para a fila e o workflow alertas.yml envia."""
     if not (os.environ.get("NTFY_TOKEN") or os.environ.get("TELEGRAM_BOT_TOKEN")) and topico == TOPICO:
         fila = json.loads(FILA.read_text(encoding="utf-8")) if FILA.exists() else []
