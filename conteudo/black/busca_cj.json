@@ -137,6 +137,7 @@
  },
  "asmodee imagine jogo de cartas casual 3 a 8 jogadores idade 10": null,
  "asmodee mass effect the board game priority hagalaz jogo de tabuleiro idade 14 1 4 jogadores partidas de ate 90 min": null,
+ "asmodee star wars the mandalorian adventures 1 a 4 jogadores idade 14": null,
  "astro knights orion board game": null,
  "aurum": {
   "bgg": 6.97253,
@@ -160,6 +161,17 @@
   "ref_dias": 32,
   "slug": "azul",
   "tipo": "game"
+ },
+ "bang the dice game old saloon": {
+  "bgg": 7.52411,
+  "editora": "dV Giochi",
+  "imagem": "https://uploads.comparajogos.com.br/img/ccd6805798664a3fb9038053238afd05c1fbd1cb.png",
+  "menor": null,
+  "nome": "BANG! The Dice Game: Old Saloon",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "bang-the-dice-game-old-saloon",
+  "tipo": "expansion"
  },
  "bardsung the lost levels a board game expansion by steamforged games": null,
  "beach bandits": {
@@ -256,6 +268,17 @@
  "brass iron clays": null,
  "brass lancashire deluxe edition conclave editora": null,
  "brotherwise games boss monster 10th anniversary edition": null,
+ "bullet": {
+  "bgg": 7.927,
+  "editora": "Level 99 Games",
+  "imagem": "https://uploads.comparajogos.com.br/img/6869455f97fb66341f42c0ea7db00242c4ed2672.png",
+  "menor": null,
+  "nome": "Bullet★",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "bullet",
+  "tipo": "game"
+ },
  "capstone games pagan fate of roanoke beyond the palisades expansion game jogo de cartas assimetrico witch vs hunter para 2 jogadores com exp": null,
  "carcassonne o dragao e a fada": {
   "bgg": 6.51697,
@@ -395,6 +418,17 @@
  },
  "cupons 15 de desconto em compras acima de r 249 limite": null,
  "dairyman dice": null,
+ "dark souls the board game explorers expansion": {
+  "bgg": 7.56105,
+  "editora": "Steamforged Games Ltd.",
+  "imagem": "https://uploads.comparajogos.com.br/img/cae9bc1332c22900b48745828495de7f9926dc68.jpg",
+  "menor": null,
+  "nome": "Dark Souls: The Board Game – Explorers Expansion",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "dark-souls-the-board-game-explorers-expansion",
+  "tipo": "expansion"
+ },
  "dark souls the board game the sunless city core set": {
   "bgg": 6.32143,
   "editora": "Steamforged Games Ltd.",
@@ -479,6 +513,28 @@
  "dobble princesas": null,
  "dobble stitch": null,
  "dobble super mario": null,
+ "don t mess with cthulhu deluxe": {
+  "bgg": 7.3347,
+  "editora": "Indie Boards & Cards",
+  "imagem": "https://uploads.comparajogos.com.br/img/ae34fdb7ca259e40fd4615d383476d032179503d.jpg",
+  "menor": null,
+  "nome": "Don't Mess with Cthulhu Deluxe",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "dont-mess-with-cthulhu-deluxe",
+  "tipo": "game"
+ },
+ "dungeons dragons attack wing bronze dragon expansion pack": {
+  "bgg": 7.63158,
+  "editora": "WizKids",
+  "imagem": "https://uploads.comparajogos.com.br/img/811511b70a2daaff8febd1fb941b48804186d772.jpg",
+  "menor": null,
+  "nome": "Dungeons & Dragons: Attack Wing – Bronze Dragon Expansion Pack",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "dungeons-dragons-attack-wing-bronze-dragon-expansion-pack",
+  "tipo": "expansion"
+ },
  "dungeons dragons descida ao avernus": {
   "bgg": 6.86667,
   "editora": null,
@@ -1182,6 +1238,7 @@
   "slug": "memoarrr",
   "tipo": "game"
  },
+ "menor preco do ano galapagos zombicide monty phyton s flying circus character pack expansao gamer a partir de 14 anos partidas de at": null,
  "menor preco do ano jolly roger devir multicor": null,
  "menor preco do ano transamerica game": null,
  "menor preco dos ultimos 30 dias asmodee hitster verao jogo de tabuleiro idade 14 2 a 10 jogadores 30 minutos por partida": null,
@@ -1199,6 +1256,17 @@
   "tipo": "game"
  },
  "mistborn": null,
+ "monopoly empire": {
+  "bgg": 5.58527,
+  "editora": "Hasbro",
+  "imagem": "https://uploads.comparajogos.com.br/img/188f63e66ba82e4d17970948539603f994dddb81.png",
+  "menor": null,
+  "nome": "Monopoly Empire",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "monopoly-empire",
+  "tipo": "game"
+ },
  "monster trick": {
   "bgg": 6.66827,
   "editora": "Ravensburger Spieleverlag GmbH",
@@ -1289,6 +1357,17 @@
   "ref": 44.91,
   "ref_dias": 32,
   "slug": "onboard-variedades",
+  "tipo": "game"
+ },
+ "one deck dungeon forest of shadows": {
+  "bgg": 7.07988,
+  "editora": "Asmadi Games",
+  "imagem": "https://uploads.comparajogos.com.br/img/09fbd494e3eff5f4a8323263c8650fbae48600f7.jpg",
+  "menor": null,
+  "nome": "One Deck Dungeon: Forest of Shadows",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "one-deck-dungeon-forest-of-shadows",
   "tipo": "game"
  },
  "only murders in the building the game": {
@@ -1571,7 +1650,29 @@
  "sleeves usa chimera 57 5 x 89 mm meeple virus": null,
  "sleeves yucatan 54 x 80 mm blue core meeple virus": null,
  "smash up knights of the round table": null,
+ "smash up world tour culture shock": {
+  "bgg": 7.59074,
+  "editora": "Alderac Entertainment Group",
+  "imagem": "https://uploads.comparajogos.com.br/img/32fa21321925c749603e77922b319738a29e680b.png",
+  "menor": null,
+  "nome": "Smash Up: World Tour – Culture Shock",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "smash-up-world-tour-culture-shock",
+  "tipo": "game"
+ },
  "smash up world tour culture shock expansion aeg board game card game african russian german legends and more 2 to 4 players 30 to 4": null,
+ "snake oil": {
+  "bgg": 6.65997,
+  "editora": "Snake Oil, LLC",
+  "imagem": "https://uploads.comparajogos.com.br/img/f8d5d0af6c0167da01216ccfbdb63ae91617a0cd.jpg",
+  "menor": null,
+  "nome": "Snake Oil",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "snake-oil",
+  "tipo": "game"
+ },
  "so resgatar os dois cupons da pagina klask": null,
  "soda jerk": {
   "bgg": 6.97336,
@@ -1714,6 +1815,17 @@
  "stonemaier games viticulture bordeaux expansion by jamey stegmaier add to viticulture base game a new board featuring updated graphics": null,
  "stonemaier games wyrmspan a wingspan game by connie vogelmann build a cavernous sanctuary for beautiful dragons strategy board game for a": null,
  "street masters board game aftershock stretch goals": null,
+ "street masters tide of the dragon": {
+  "bgg": 7.01379,
+  "editora": "Blacklist Games",
+  "imagem": "https://uploads.comparajogos.com.br/img/cc6ad906458aa23e365db7de1e80e42d453fcb00.jpg",
+  "menor": null,
+  "nome": "Street Masters: Tide of the Dragon",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "street-masters-tide-of-the-dragon",
+  "tipo": "game"
+ },
  "stronger with you parfum 100ml": null,
  "stupid deaths": {
   "bgg": 4.39914,
@@ -1830,6 +1942,18 @@
   "slug": "the-red-dragon-inn-battle-for-greyport-pirates",
   "tipo": "expansion"
  },
+ "this game is killer frozen horror": {
+  "bgg": 7.17155,
+  "editora": "Smirk & Dagger Games",
+  "imagem": "https://uploads.comparajogos.com.br/img/0b064c9c79dddcd37b1b28581cc7d487f2e857ae.png",
+  "menor": null,
+  "nome": "This Game Is Killer: Frozen Horror",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "this-game-is-killer-frozen-horror",
+  "tipo": "game"
+ },
+ "through the ages devir multicor": null,
  "tier up": {
   "bgg": null,
   "editora": "Samba Estudios",
@@ -1861,6 +1985,17 @@
   "ref": 134.91,
   "ref_dias": 32,
   "slug": "tiny-epic-cthulhu",
+  "tipo": "game"
+ },
+ "tiny epic tactics": {
+  "bgg": 6.68394,
+  "editora": "Gamelyn Games",
+  "imagem": "https://uploads.comparajogos.com.br/img/d90b583c29ad0937ee23f05d0c8c4f44ff477778.jpg",
+  "menor": null,
+  "nome": "Tiny Epic Tactics",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "tiny-epic-tactics",
   "tipo": "game"
  },
  "tixa a lagartixa": {
@@ -1964,6 +2099,17 @@
   "tipo": "game"
  },
  "uno toy story metalico": null,
+ "uno with customizable wild cards": {
+  "bgg": 6.20681,
+  "editora": "Mattel",
+  "imagem": "https://uploads.comparajogos.com.br/img/818683ff2c0938fbd0f3cefedf3a33a3d54c0ced.jpg",
+  "menor": null,
+  "nome": "UNO: With Customizable Wild Cards",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "uno-with-customizable-wild-cards",
+  "tipo": "game"
+ },
  "up or down": {
   "bgg": 6.69276,
   "editora": "ABACUSSPIELE",
@@ -1976,6 +2122,17 @@
   "tipo": "game"
  },
  "versao com a arte nova do jogo original resgate o cupom na pagina do jogo ticket to ride": null,
+ "village rails": {
+  "bgg": 7.23525,
+  "editora": "Osprey Games",
+  "imagem": "https://uploads.comparajogos.com.br/img/0fc8b6fa4224563311ebb2c7a7a7ce51bea87a31.jpg",
+  "menor": null,
+  "nome": "Village Rails",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "village-rails",
+  "tipo": "game"
+ },
  "viticulture bordeaux expansion": {
   "bgg": null,
   "editora": "Stonemaier Games",
@@ -2011,6 +2168,17 @@
   "tipo": "expansion"
  },
  "war of the ring colored plastic rings core set": null,
+ "war of the ring the fate of erebor": {
+  "bgg": 8.12383,
+  "editora": "Ares Games",
+  "imagem": "https://uploads.comparajogos.com.br/img/14b6d0b9b06711a2f9aa4ef6eec7843c5e407058.jpg",
+  "menor": null,
+  "nome": "War of the Ring: The Fate of Erebor",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "war-of-the-ring-the-fate-of-erebor",
+  "tipo": "expansion"
+ },
  "war of the ring the fate of erebor card game expansion by ares games 2 4 players 120 minutes of gameplay card games for teens and adults ag": null,
  "war story occupied france": {
   "bgg": 8.06309,
@@ -2025,6 +2193,17 @@
  },
  "wingspan europa expansao": null,
  "wingspan oceania expansao": null,
+ "wispwood": {
+  "bgg": 5.96663,
+  "editora": "Czech Games Edition",
+  "imagem": "https://uploads.comparajogos.com.br/img/3dfe28ca55a60e10981c961b38c3d5598cca87d2.jpg",
+  "menor": null,
+  "nome": "Wispwood",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "wispwood",
+  "tipo": "game"
+ },
  "witchcraft": {
   "bgg": 7.62054,
   "editora": "Salt & Pepper Games",
