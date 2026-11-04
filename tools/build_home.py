@@ -790,6 +790,8 @@ if __name__ == "__main__":
     for n in build_home():
         build_nota(n)
     print("ok index.html e", len(notas()), "notícias")
+    import alertas_site  # lista que o sininho de notificações usa (Notícias e Resenhas)
+    print("ok alertas/conteudo.json:", alertas_site.gerar(), "itens")
     # guias "Melhores jogos para…" antes das resenhas: o balão do perfil só liga para guia que existe
     import build_guias
     print("ok guias:", len(build_guias.build()), "páginas em /jogos-de-tabuleiro/")

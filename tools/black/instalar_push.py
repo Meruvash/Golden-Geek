@@ -25,6 +25,11 @@ CREATE TABLE IF NOT EXISTS push_alertas (id TEXT PRIMARY KEY, lote TEXT, titulo 
 CREATE INDEX IF NOT EXISTS push_alertas_lote ON push_alertas (lote);
 CREATE TABLE IF NOT EXISTS push_estado (k TEXT PRIMARY KEY, v TEXT);
 """
+TABELAS_TEMAS = """
+CREATE TABLE IF NOT EXISTS push_fila (lote TEXT PRIMARY KEY, tema TEXT, cursor TEXT, criado TEXT);
+CREATE TABLE IF NOT EXISTS push_entrega (endpoint TEXT, alerta TEXT, mostrado INTEGER DEFAULT 0, PRIMARY KEY (endpoint, alerta));
+CREATE INDEX IF NOT EXISTS push_entrega_alerta ON push_entrega (alerta);
+"""
 
 
 def b64u(b):
@@ -39,6 +44,16 @@ def main():
     # 1. tabelas
     wrangler("d1", "execute", "elite-interacoes", "--remote", "--command", TABELAS.replace("\n", " "), token=token)
     print("ok tabelas push_subs, push_alertas, push_estado")
+    # 1b. temas (sininho do site: black, noticias, resenhas) e entrega por aparelho; ALTER falha se já existir
+    for col in ("ALTER TABLE push_subs ADD COLUMN temas TEXT DEFAULT ',black,'",
+                "ALTER TABLE push_alertas ADD COLUMN tema TEXT DEFAULT 'black'"):
+        try:
+            wrangler("d1", "execute", "elite-interacoes", "--remote", "--command", col, token=token)
+        except SystemExit as erro:
+            if "duplicate column" not in str(erro):
+                raise
+    wrangler("d1", "execute", "elite-interacoes", "--remote", "--command", TABELAS_TEMAS.replace("\n", " "), token=token)
+    print("ok temas e entregas por aparelho")
     # 2. chaves VAPID (só na primeira vez)
     if "VAPID_PUBLICA" not in toml:
         from cryptography.hazmat.primitives.asymmetric import ec

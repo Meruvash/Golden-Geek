@@ -74,6 +74,8 @@ if __name__ == "__main__":
         print("ok index.html (Últimas resenhas atualizada)")
     except SystemExit as e:
         print(f"⚠️ página inicial NÃO regerada: {e}. Corrija e rode python3 tools/build_home.py")
+    import alertas_site  # sininho de notificações: avisa quem ligou Resenhas
+    print("ok alertas/conteudo.json:", alertas_site.gerar(), "itens")
     import busca
     print("ok busca.json:", busca.build(), "registros")
     import build_sitemap

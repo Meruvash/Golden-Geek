@@ -370,7 +370,7 @@ const motivo=()=>{if(embutido)return 'Você abriu o site dentro de outro aplicat
  if(ios&&!app)return '';
  if(!tem)return 'Este navegador não aceita notificações de sites. Abra eliteboardgamers.com.br/black no Chrome (Android) ou no Safari (iPhone, depois de adicionar à Tela de Início).';
  return null};
-if(tem&&!(ios&&!app))navigator.serviceWorker.register('/sw-black.js').then(async r=>{const s=await r.pushManager.getSubscription();if(s&&Notification.permission==='granted')mostra('.wp-ok')}).catch(()=>{});
+if(tem&&!(ios&&!app))navigator.serviceWorker.register('/sw-black.js').then(async r=>{const s=await r.pushManager.getSubscription();if(!s||Notification.permission!=='granted')return;const d=await (await fetch(api+'/v1/push/temas',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({endpoint:s.endpoint})})).json();if((d.temas||[]).includes('black'))mostra('.wp-ok')}).catch(()=>{});
 btn.addEventListener('click',async()=>{const m=motivo();
  if(m===''){mostra('.wp-ios');window.EliteGuia&&EliteGuia.abrir('instalar');return}
  if(m){mostra('.wp-erro',m);return}
@@ -381,14 +381,14 @@ btn.addEventListener('click',async()=>{const m=motivo();
   const r=await prazo(navigator.serviceWorker.register('/sw-black.js'),15000,'o navegador não registrou o serviço de alertas');
   await prazo(navigator.serviceWorker.ready,15000,'o serviço de alertas não ficou pronto');
   const s=(await r.pushManager.getSubscription())||await prazo(r.pushManager.subscribe({userVisibleOnly:true,applicationServerKey:chave(w.dataset.chave)}),20000,'o serviço de push do navegador não respondeu');
-  const x=await prazo(fetch(api+'/v1/push/inscrever',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({sub:s.toJSON()})}),15000,'sem resposta do servidor do Elite');
+  const x=await prazo(fetch(api+'/v1/push/inscrever',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({sub:s.toJSON(),temas:['black'],juntar:true})}),15000,'sem resposta do servidor do Elite');
   if(!x.ok)throw new Error('o servidor do Elite recusou a inscrição ('+x.status+')');
   mostra('.wp-ok');
   r.showNotification('Alertas do Black de Verdade ativados',{body:'Quando um jogo entrar no radar com desconto real, o aviso chega aqui.',icon:'/icon-192.png',tag:'ativado'})}
  catch(e){mostra('.wp-erro','Não deu para ativar: '+(e&&e.message||e)+'. Confira se está no Chrome (Android) ou no Safari pela Tela de Início (iPhone) e tente de novo.')}
  finally{btn.textContent=txt;btn.disabled=false}});
 q('.wp-sair').addEventListener('click',async()=>{try{const r=await navigator.serviceWorker.getRegistration('/sw-black.js');const s=r&&await r.pushManager.getSubscription();
- if(s){await fetch(api+'/v1/push/cancelar',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({endpoint:s.endpoint})}).catch(()=>{});await s.unsubscribe()}}catch(e){}
+ if(s){await fetch(api+'/v1/push/cancelar',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({endpoint:s.endpoint,temas:['black']})}).catch(()=>{});try{localStorage.setItem('eb-sino','')}catch(e){}}}catch(e){}
  mostra('')})})();
 </script>"""
 
