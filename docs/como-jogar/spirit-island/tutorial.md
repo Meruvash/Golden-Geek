@@ -8,31 +8,31 @@
 
 ### A ideia do jogo
 
-Spirit Island é cooperativo: todos jogam juntos contra o jogo. Cada pessoa é um **Espírito** (*Spirit*) da natureza que defende uma ilha de colonos, os **Invasores** (*Invaders*). Os Invasores se espalham sozinhos, comandados por cartas, e deixam **Praga** (*Blight*) na terra. Vocês vencem quando assustam e destroem Invasores o bastante; perdem se a ilha se encher de Praga, se um Espírito sumir do mapa ou se o tempo acabar (p. 3 e 12).
+Spirit Island é cooperativo: todos jogam contra o jogo. Cada pessoa é um **Espírito** (*Spirit*) da natureza que defende a ilha de colonos, os **Invasores** (*Invaders*), que se espalham comandados por cartas e deixam **Praga** (*Blight*) na terra. Vocês vencem assustando e destruindo Invasores; perdem se a Praga, o tempo ou a perda de um Espírito chegarem antes (p. 3 e 12).
 
 ### Monte a mesa
 
-Montagem da primeira partida, como o manual recomenda para quem nunca jogou (p. 3 e 6):
+Primeira partida, como o manual recomenda (p. 3 e 6):
 
-1. Tabuleiro dos Invasores num canto. Na reserva de Medo, 4 marcadores de Medo por jogador.
-2. Baralho de Medo: embaralhe as cartas de Medo e use 9. Ponha a divisória "Nível de Terror 3" com 3 cartas embaixo dela, a divisória "Nível de Terror 2" com mais 3 cartas embaixo, e as 3 últimas por cima. *(depois)*
-3. Baralho de Invasores: separe as cartas de Invasor por Estágio (o número romano), embaralhe cada grupo e use 3 de Estágio I por cima, 4 de Estágio II no meio e 5 de Estágio III embaixo. Ele fica no espaço Explorar do tabuleiro dos Invasores.
-4. Praga: sem carta de Praga na primeira partida. No espaço de Praga impresso no tabuleiro, ponha 5 Pragas por jogador e mais 1 (errata oficial). Com 2 jogadores, 11.
-5. Um tabuleiro da Ilha por jogador, montados como no desenho da p. 6. Ponha em cada terra os Invasores, os Dahan (o povo nativo) e a Praga que os ícones dela mostram.
-6. Baralhos de Poder Menor e de Poder Maior embaralhados; Energia, Explorador, Vila, Cidade e Dahan ao alcance de todos. *(depois)*
-7. Cada jogador escolhe uma cor, pega todas as Presenças dela e escolhe um Espírito de complexidade baixa. Este guia usa o **Golpe Veloz do Relâmpago** (*Lightning's Swift Strike*). Pegue o painel dele, as 4 cartas de Poder Únicas (a sua mão) e a carta de Progressão de Poder do Espírito.
-8. Cada jogador começa num tabuleiro da Ilha diferente e segue a montagem impressa no painel. A do Relâmpago: 2 Presenças na terra de Areia de número mais alto do seu tabuleiro. Vire o painel e cubra com Presença todos os círculos tracejados das duas trilhas; ficam descobertos só os primeiros números da esquerda.
-9. Revele a carta do topo do baralho de Invasores: ponha 1 Explorador em cada terra daquele tipo que tenha Vila ou Cidade, ou que seja vizinha de Vila, Cidade ou Oceano. A carta vai para o espaço Construir.
+1. Tabuleiro dos Invasores num canto, com 4 marcadores de Medo por jogador na reserva de Medo.
+2. Baralho de Medo (etapa 5): 9 cartas de Medo, com a divisória "Nível de Terror 3" a 3 cartas do fundo e a "Nível de Terror 2" 3 cartas acima dela.
+3. Baralho de Invasores, no espaço Explorar: 3 cartas de Estágio I por cima, 4 de Estágio II no meio e 5 de Estágio III embaixo, cada grupo embaralhado.
+4. Praga: sem carta de Praga na primeira partida. No espaço de Praga impresso no tabuleiro, ponha 5 Pragas por jogador mais 1 (errata): 6 no solo, 11 com 2.
+5. Um tabuleiro da Ilha por jogador (no solo, um só), montados como nos desenhos das p. 6 e 7. Ponha em cada terra os Invasores, os Dahan (o povo nativo) e a Praga que os ícones dela mostram; essa Praga vem da caixa, não do espaço de Praga. O Oceano é a faixa de mar de cada tabuleiro (p. 13 e 22).
+6. Baralhos de Poder Menor e de Poder Maior embaralhados; Energia, Explorador, Vila, Cidade e Dahan ao alcance de todos.
+7. Cada jogador pega as Presenças de uma cor e um Espírito de complexidade baixa; este guia usa o **Golpe Veloz do Relâmpago** (*Lightning's Swift Strike*): painel, 4 cartas de Poder Únicas (a mão) e carta de Progressão de Poder, com as cartas listadas nela separadas.
+8. Cada jogador começa num tabuleiro da Ilha diferente e segue a montagem do lado do painel com a história. A do Relâmpago: 2 das 13 Presenças na Areia de número mais alto do seu tabuleiro. Vire o painel para o lado das trilhas e cubra os círculos tracejados: 7 Presenças na de Energia (1, 1, 2, 2, 3, 4, 4, 5) e 4 na de Jogadas (2, 3, 4, 5, 6). Ficam à mostra o 1 e o 2 (p. 4, 6 e 14).
+9. Revele a carta do topo do baralho de Invasores: ponha 1 Explorador em cada terra daquele tipo que tenha Vila ou Cidade, ou que seja vizinha de Vila, Cidade ou Oceano. A carta vai para o espaço Construir. No primeiro turno, os Invasores Constroem nas terras desse tipo que tenham Invasor: 1 Cidade se a terra tiver mais Vilas que Cidades, senão 1 Vila (p. 6 e 10).
 
 ### Seu primeiro turno
 
-Todos jogam ao mesmo tempo, conversando à vontade. O turno tem cinco fases (p. 8 a 10):
+Todos jogam ao mesmo tempo. O turno tem cinco fases (p. 8 a 10):
 
-1. **Fase dos Espíritos.** Cada um escolhe 1 opção de Crescimento do painel e faz tudo o que ela mostra; ganha a Energia do maior número descoberto na trilha de Energia; escolhe e paga as cartas que vai usar, no máximo o maior número descoberto na trilha de Jogadas. Ainda não escolhe onde usar.
-2. **Fase dos Poderes Rápidos.** Usa as cartas Rápidas (símbolo vermelho de pássaro).
-3. **Fase dos Invasores.** Devastar, Construir e Explorar, nas terras do tipo mostrado pelas cartas do tabuleiro dos Invasores. Depois, as cartas andam uma casa para a esquerda.
-4. **Fase dos Poderes Lentos.** Usa as cartas Lentas (símbolo azul de tartaruga).
-5. **O Tempo Passa.** Cartas jogadas vão para o seu descarte; Dano e Elementos somem.
+1. **Fase dos Espíritos.** Cada um faz tudo de 1 opção de Crescimento; ganha a Energia do maior número descoberto na trilha de Energia; escolhe e paga as cartas, até o maior número descoberto na trilha de Jogadas. Ainda sem escolher onde usar.
+2. **Fase dos Poderes Rápidos.** Cartas Rápidas (pássaro vermelho).
+3. **Fase dos Invasores.** Devastar, Construir e Explorar, nas terras do tipo de cada carta; depois, as cartas andam uma casa para a esquerda.
+4. **Fase dos Poderes Lentos.** Cartas Lentas (tartaruga azul).
+5. **O Tempo Passa.** Cartas jogadas ao descarte; Dano e Elementos somem; Dahan feridos se recuperam.
 
 | Crescimento do Relâmpago | Faz tudo isto |
 |---|---|
@@ -40,9 +40,9 @@ Todos jogam ao mesmo tempo, conversando à vontade. O turno tem cinco fases (p. 
 | Opção 2 | Pôr 1 Presença a até 2 terras da sua Presença e mais 1 numa terra onde você já tem Presença |
 | Opção 3 | Pôr 1 Presença a até 1 terra da sua Presença e ganhar 3 Energia |
 
-A Presença que você põe na ilha sai de uma das duas trilhas, sempre a próxima da esquerda para a direita, e descobre um número maior (p. 14).
+A Presença posta na ilha sai de uma das trilhas, sempre a próxima da esquerda, e descobre um número maior. "A até 1 terra" inclui a terra onde você já está (alcance 0). Ganhar carta de Poder, na primeira partida: pegue a próxima da carta de Progressão (p. 14, 16 e 18).
 
-> [!resolvido] **Exemplo resolvido.** No primeiro turno, o Jogador 1 (Relâmpago) escolhe a opção 3. Tira a Presença mais à esquerda da trilha de Energia, que descobre outro "1", e a põe numa terra vizinha das suas Areias. Ganha 3 Energia do Crescimento e depois 1 da trilha: 4 Energia. A trilha de Jogadas mostra 2, então ele joga até 2 das suas 4 cartas, desde que o custo somado caiba em 4. Na fase dos Invasores ainda não há carta em Devastar: os Invasores Constroem onde exploraram na montagem e Exploram com uma carta nova (p. 6, 10 e 14).
+> [!resolvido] **Exemplo resolvido.** No primeiro turno, o Jogador 1 (Relâmpago) escolhe a opção 3. Tira a Presença mais à esquerda da trilha de Energia, que descobre outro "1", e a põe numa terra vizinha da sua Areia. Ganha 3 Energia do Crescimento e 1 da trilha: 4. Joga até 2 das suas 4 cartas, com custo somado de até 4. Na fase dos Invasores ainda não há Devastação: eles Constroem (passo 9 da montagem) e Exploram com carta nova (p. 6, 10 e 14).
 
 > [!complete] **Complete.** O Jogador 2 também joga com o Relâmpago e escolhe a opção 2, tirando as duas Presenças da trilha de Jogadas.
 >
@@ -50,7 +50,7 @@ A Presença que você põe na ilha sai de uma das duas trilhas, sempre a próxim
 > - ( ) 3 de Energia e 2 jogadas.
 > - (x) 1 de Energia e 4 jogadas.
 > - ( ) 2 de Energia e 3 jogadas.
-> = A trilha de Jogadas do Relâmpago é 2, 3, 4, 5, 6: tirar as duas primeiras Presenças descobre o 4. A de Energia continua no 1 (p. 13 e 14; painel ilustrado na p. 14).
+> = Tirar as duas primeiras Presenças da trilha 2, 3, 4, 5, 6 descobre o 4; a Energia continua no 1 (p. 13 e 14).
 
 > [!suavez] **Agora a sua mesa.**
 >
@@ -62,17 +62,17 @@ A Presença que você põe na ilha sai de uma das duas trilhas, sempre a próxim
 
 ### Ainda não precisa saber
 
-Poderes Inatos, Elementos e ganhar cartas: etapa 3. Devastar em detalhe e os Dahan: etapa 4. Medo, Níveis de Terror e Praga: etapa 5.
+Poderes Inatos e Elementos: etapa 3. Devastar e Dahan: etapa 4. Medo e Praga: etapa 5.
 
 ### Como a partida acaba
 
-Vence-se na hora, quando a ilha cumpre a condição do Nível de Terror atual; no Nível 1, nenhum Invasor na ilha. Perde-se se acabar a Praga do espaço de Praga, se um Espírito ficar sem Presença na ilha ou se for preciso Explorar com o baralho de Invasores vazio (p. 12).
+Vitória na hora, quando a ilha cumpre a condição do Nível de Terror atual (no Nível 1, nenhum Invasor). Derrota se acabar a Praga do espaço de Praga, se um Espírito ficar sem Presença na ilha ou se for preciso Explorar com o baralho de Invasores vazio (p. 12).
 
-**Prefere ver?** As regras em vídeo, em português. Ele complementa este guia; em caso de diferença, vale o manual.
+**Prefere ver?** Regras em vídeo. Ele complementa este guia; em caso de diferença, vale o manual.
 
 !video[Spirit Island - Como Jogar, canal Romir Play House](https://www.youtube.com/watch?v=610Ms1ZMbng&t=0s)
 
-> [!atencao] **Os três erros mais caros.** Devastar põe 1 Praga só na terra, mesmo com muito Dano, e a Praga extra em terra que já tinha Praga vai para uma única terra vizinha (p. 21). Os Invasores agem só nas terras do tipo mostrado na carta. Presença destruída sai do jogo; não volta para o painel (p. 9).
+> [!atencao] **Os três erros mais caros.** Devastar põe 1 Praga só, e a Praga extra numa terra que já tinha Praga vai para uma única vizinha (p. 21). Os Invasores agem só nas terras do tipo da carta. Presença destruída sai do jogo, não volta ao painel (p. 9).
 
 ## 0. Antes de tudo: o que é este jogo
 
@@ -100,17 +100,17 @@ O guia tem cinco etapas: montar a mesa e escolher o Espírito; a rodada e as fas
 
 > [!passos] **A ilha e o suprimento** (p. 6)
 >
-> 1. Sorteie um tabuleiro da Ilha por jogador e monte a ilha como no desenho do manual para 2, 3 ou 4 jogadores.
+> 1. Sorteie um tabuleiro da Ilha por jogador e monte a ilha como nos desenhos das p. 6 e 7. No jogo solo, um tabuleiro só é a ilha inteira (p. 22).
 > 2. Ponha em cada terra os Invasores, os Dahan e a Praga indicados pelos ícones. Essa Praga vem da caixa, não do espaço de Praga.
 > 3. Embaralhe os baralhos de Poder Menor e de Poder Maior e deixe espaço para o descarte de cada um.
 > 4. Deixe Energia, Cidades, Vilas, Exploradores e Dahan onde todos alcancem.
 
 > [!passos] **Os jogadores** (p. 3 e 6)
 >
-> 1. Cada jogador pega as Presenças e os marcadores de efeito de um turno de uma cor.
+> 1. Cada jogador pega as 13 Presenças de uma cor e os 3 marcadores de lembrete da mesma cor, que servem, se quiser, para marcar terras com efeito que dura só o turno (p. 4 e 17).
 > 2. Escolhe um Espírito: o painel e as 4 cartas de Poder Únicas dele, que são a mão inicial. Na primeira partida, escolha um de complexidade baixa e pegue também a carta de Progressão de Poder dele; separe as cartas de Poder Menor e Maior listadas nela.
 > 3. Cada jogador fica com um tabuleiro da Ilha diferente e segue a montagem do painel, que sempre põe Presença numa ou mais terras desse tabuleiro.
-> 4. Vire o painel e cubra com Presença os círculos tracejados das duas trilhas. Os números da esquerda, de círculo cheio, ficam descobertos.
+> 4. Vire o painel para o lado do Crescimento e das trilhas de Presença e cubra com Presença os círculos tracejados das duas trilhas. Os números da esquerda, de círculo cheio, ficam descobertos (p. 6 e 14).
 > 5. Ação inicial dos Invasores: revele a carta do topo do baralho de Invasores, Explore no tipo de terra dela e ponha a carta no espaço Construir. A partida começa na fase dos Espíritos.
 
 !fig[Mesa montada para 4 jogadores, sem Adversário nem Cenário: o tabuleiro dos Invasores com o baralho de Medo, a reserva de Medo, a carta de Praga e as cartas de Invasor, e a ilha de quatro tabuleiros com Invasores, Dahan, Praga e as Presenças de cada cor. Ilustração: manual oficial Greater Than Games (p. 7)](figuras/preparacao.webp)
@@ -123,7 +123,7 @@ O guia tem cinco etapas: montar a mesa e escolher o Espírito; a rodada e as fas
 
 > [!mais] **Peças acabaram.** Invasores e Dahan não têm limite: se faltar peça de Invasor, use marcadores de Energia como "mais 1" ou "mais 3" dela (p. 15 e 16).
 
-> [!edicao] **Manual mais antigo.** A versão de 2018 do manual em inglês não traz a errata de 1 Praga a mais; a de 2023 (usada aqui) traz e remete à errata oficial. A Ace Studios lançou o jogo no Brasil em 2019 e vende a "Edição 2023"; se o seu manual não tiver a errata, ponha a Praga extra mesmo assim.
+> [!edicao] **Manual mais antigo.** A versão de 2018 do manual em inglês não traz a errata de 1 Praga a mais; a de 2023 (usada aqui) traz e remete à errata oficial. Se o seu manual não tiver a errata, ponha a Praga extra mesmo assim.
 
 > [!resolvido] **Exemplo resolvido.** Partida de 2 jogadores, primeira vez de todos. Reserva de Medo: 4 × 2 = 8 marcadores. Espaço de Praga impresso: 5 × 2 + 1 = 11 Pragas. Baralho de Invasores: 3 + 4 + 5 = 12 cartas. O Jogador 1, com o Relâmpago, põe 2 Presenças na Areia de número mais alto do seu tabuleiro. A carta de Invasor revelada mostra Selva: os Invasores Exploram nas Selvas, e a carta vai para Construir.
 
@@ -141,7 +141,7 @@ O guia tem cinco etapas: montar a mesa e escolher o Espírito; a rodada e as fas
 > - ( ) No descarte do tabuleiro dos Invasores.
 > - (x) No espaço Construir.
 > - ( ) No espaço Devastar.
-> = Ela vai para Construir: no primeiro turno os Invasores Constroem onde exploraram (p. 6).
+> = Ela vai para Construir: no primeiro turno os Invasores Constroem nas terras desse tipo que têm Invasores (p. 6 e 10).
 
 ## 3. Etapa 2: a rodada e as fases
 
@@ -153,13 +153,13 @@ O guia tem cinco etapas: montar a mesa e escolher o Espírito; a rodada e as fas
 > 2. **Fase dos Poderes Rápidos.** Usem os Poderes Rápidos: cartas jogadas e Poderes Inatos do painel. Podem ser usados quase ao mesmo tempo; se a ordem importar, os jogadores escolhem, e um Poder não interrompe outro no meio.
 > 3. **Fase dos Invasores.** (a) Ilha Arruinada, se a carta de Praga já virou; (b) Medo: resolvam as cartas de Medo conquistadas; (c) ações dos Invasores: Devastar, Construir e Explorar; (d) avancem as cartas de Invasor.
 > 4. **Fase dos Poderes Lentos.** Como a dos Rápidos, com os Poderes Lentos.
-> 5. **O Tempo Passa.** As cartas jogadas vão para o descarte pessoal de cada um. Todos os Elementos e todo o Dano do turno somem; peças deitadas para marcar Dano voltam a ficar em pé.
+> 5. **O Tempo Passa.** As cartas jogadas vão para o descarte pessoal de cada um. Todos os Elementos e todo o Dano do turno somem; peças deitadas ou viradas para marcar Dano voltam ao normal, e os Dahan feridos se recuperam (p. 9).
 
 > [!passos] **Avançar as cartas de Invasor** (p. 10)
 >
 > 1. Depois de Explorar, a carta de Devastar vai para o descarte.
 > 2. A de Construir vai para Devastar, e a de Explorar vai para Construir.
-> 3. No turno seguinte, os Invasores Devastam onde Construíram e Constroem onde Exploraram.
+> 3. No turno seguinte, os Invasores Devastam nas terras do tipo em que Construíram e Constroem nas do tipo em que Exploraram, sempre só onde houver Invasores.
 
 > [!mais] **Rápido não espera.** Um Poder Rápido não pode ser guardado para a fase Lenta: use agora ou perca o uso (p. 8).
 
@@ -187,14 +187,14 @@ O guia tem cinco etapas: montar a mesa e escolher o Espírito; a rodada e as fas
 
 ## 4. Etapa 3: Poderes, Presença e Energia
 
-> [!entender] **Para entender.** Carta jogada vai para o descarte no fim do turno e só volta à mão com o Crescimento de Recuperar (*Reclaim*): de tempos em tempos, você para de crescer na ilha para recuperar as cartas (p. 10 e 14). Tirar Presença da trilha de cima dá mais Energia por turno; da de baixo, mais cartas por turno. Só conta o maior número descoberto; os números não se somam (p. 14).
+> [!entender] **Para entender.** Carta jogada vai para o descarte no fim do turno e, em geral, só volta à mão com o Crescimento de Recuperar (*Reclaim*; alguns Espíritos têm também "Recuperar 1"): de tempos em tempos, você para de crescer na ilha para recuperar as cartas (p. 10 e 14). Tirar Presença da trilha de cima dá mais Energia por turno; da de baixo, mais cartas por turno. Só conta o maior número descoberto; os números não se somam (p. 14).
 
 > [!passos] **Presença, Locais Sagrados e trilhas** (p. 13 e 14)
 >
 > 1. A Presença marca as terras do seu Espírito, as "suas terras". Uma terra aceita qualquer número de Presenças, de qualquer Espírito.
 > 2. Uma terra com 2 ou mais Presenças suas é um **Local Sagrado** (*Sacred Site*). Alguns Poderes só podem ser usados a partir dele.
 > 3. Para pôr Presença na ilha, tire-a de qualquer das duas trilhas, sempre a próxima da esquerda para a direita. "Pôr 1 Presença, alcance 2" significa numa terra a até 2 terras de distância de uma Presença sua.
-> 4. Energia: no começo do turno você ganha o maior número descoberto na trilha de Energia. Energia não gasta fica para o próximo turno; não se passa Energia para outro Espírito.
+> 4. Energia: na fase dos Espíritos, depois do Crescimento, você ganha o maior número descoberto na trilha de Energia. Energia não gasta fica para o próximo turno; não se passa Energia para outro Espírito.
 > 5. Jogadas: o maior número descoberto na trilha de Jogadas é o máximo de cartas por turno, mesmo que sobre Energia. Jogada não usada se perde.
 
 > [!passos] **As opções de Crescimento comuns** (p. 14)
@@ -262,7 +262,7 @@ O guia tem cinco etapas: montar a mesa e escolher o Espírito; a rodada e as fas
 > - ( ) Destruir 1 Cidade.
 > - (x) Destruir 1 Vila.
 > - ( ) Destruir 1 Vila e mais 1 Vila ou Cidade.
-> = Cidade exige 4 Fogo e 3 Ar; com 3 Fogo e 2 Ar ou mais, vale só o primeiro nível, 1 Vila (painel ilustrado na p. 14).
+> = Cidade exige 4 Fogo e 3 Ar. Com 3 ou mais Fogo e 2 ou mais Ar, mas menos de 4 Fogo ou de 3 Ar, vale só o primeiro nível: 1 Vila (painel ilustrado na p. 14).
 
 > [!suavez] **Sua vez.**
 >
@@ -305,7 +305,7 @@ O guia tem cinco etapas: montar a mesa e escolher o Espírito; a rodada e as fas
 > [!passos] **Devastar** (p. 9)
 >
 > 1. Olhe a carta no espaço Devastar. Os Invasores Devastam nas terras do tipo dela que tenham Invasores.
-> 2. Some o Dano: 1 por Explorador, 2 por Vila, 3 por Cidade. Tire o Defender que houver na terra.
+> 2. Some o Dano: 1 por Explorador, 2 por Vila, 3 por Cidade. Subtraia o Defender que houver na terra.
 > 3. Ao mesmo tempo: se o Dano for 2 ou mais, ponha 1 Praga na terra (uma só, qualquer que seja o Dano); e cada 2 de Dano destrói 1 Dahan. Sobrando 1 de Dano, um Dahan fica ferido: vire-o de cabeça para baixo.
 > 4. Depois, cada Dahan que sobreviveu causa 2 de Dano aos Invasores daquela terra, divididos como os jogadores quiserem.
 
@@ -367,7 +367,7 @@ O guia tem cinco etapas: montar a mesa e escolher o Espírito; a rodada e as fas
 
 ## 6. Etapa 5: Praga, Medo, vitória e derrota
 
-> [!entender] **Para entender.** Há duas contas correndo ao mesmo tempo. A da Praga é a ameaça: cada Praga que cai na ilha sai do espaço de Praga, e quando ele se esvazia a partida costuma estar perdida. A do Medo é a saída: cada Medo aproxima uma carta de Medo, e as cartas de Medo sobem o Nível de Terror, que torna a vitória mais fácil (p. 12 e 15).
+> [!entender] **Para entender.** Há duas contas correndo ao mesmo tempo. A da Praga é a ameaça: cada Praga que cai na ilha sai do espaço de Praga. Sem carta de Praga, quando ele se esvazia vocês perdem; com carta de Praga, sigam o que ela diz (p. 12 e 15). A do Medo é a saída: cada Medo aproxima uma carta de Medo, e as cartas de Medo sobem o Nível de Terror, que torna a vitória mais fácil (p. 12 e 15).
 
 > [!passos] **Praga** (p. 15)
 >
@@ -447,7 +447,7 @@ O guia tem cinco etapas: montar a mesa e escolher o Espírito; a rodada e as fas
 
 > [!mais] **Jogo difícil demais.** Para um jogo um pouco mais fácil, dê a todos os Espíritos um Crescimento extra no fim da montagem; para um moderadamente mais fácil, pule a ação inicial dos Invasores; para muito mais fácil, faça as duas coisas (p. 21).
 
-> [!edicao] **Expansões.** A Ace Studios também publicou no Brasil a expansão *Galhos e Garras* (*Branch & Claw*). Alguns tabuleiros temáticos têm ícones de fichas dessa expansão: ignore-os no jogo base (p. 23). As regras das expansões não estão neste guia.
+> [!edicao] **Expansões.** Alguns tabuleiros temáticos têm ícones de fichas da expansão *Branch & Claw*: ignore-os no jogo base (p. 23). As regras das expansões não estão neste guia.
 
 ## 8. Avaliação final
 

@@ -92,3 +92,38 @@ Cada linha: afirmação do tutorial, onde está, página e trecho lido no manual
 - Os nomes podem não bater com a caixa da Ace; quem tiver o manual brasileiro em mãos deveria conferir o glossário (dossiê, seção 4) e trocar os termos.
 - O vídeo é do Romir Play House, não do Duque Board Games (o Duque não tem vídeo do jogo); não conferi se o vídeo segue a edição de 2023 com a errata.
 - Portões: zero travessão; `vicios.py` sem aviso no tutorial e no JSON; `checar_comece.py` passa; o conversor gera a página sem marcação crua.
+
+## Auditoria independente (04/11/2026)
+
+Duas auditorias de outros agentes. Regras: aprovado com correções (0 erro de regra; 26 de 26 perguntas certas). Jogo simulado: jogável com ajustes. Tudo o que entrou de novo foi conferido no manual, com página; o que o manual não sustenta ficou de fora.
+
+**Auditoria de regras**
+
+1. Frase sobre lançamento em 2019 e "Edição 2023" da Ace Studios (bloco [!edicao] da etapa 1): removida. Ficou só que a versão de 2018 não traz a errata.
+2. Frase sobre a Ace ter publicado *Galhos e Garras*: removida. Ficou "ignore os ícones de *Branch & Claw*" (p. 23).
+3. "desenho da p. 6": agora "desenhos das p. 6 e 7", no Comece e na etapa 1.
+4. "no começo do turno você ganha" Energia: agora "na fase dos Espíritos, depois do Crescimento" (p. 8).
+5. "só volta à mão com Recuperar": agora "em geral", com a menção a "Recuperar 1" (p. 14).
+6. Devastar, passo 2: "Tire" virou "Subtraia o Defender" (p. 9).
+7. Marcas "(depois)" no Comece: tiradas. O passo do baralho de Medo diz "(etapa 5)".
+
+**Auditoria de jogo simulado**
+
+a. O Comece agora diz o que entra no primeiro Construir: nas terras do tipo da carta que tenham Invasor, 1 Cidade se houver mais Vilas que Cidades, senão 1 Vila (passo 9; p. 6 e 10).
+b. "Constroem onde exploraram" corrigido no exemplo do Comece, no treino da etapa 1 e no passo 3 de "Avançar as cartas": Construir age nas terras do tipo da carta que têm Invasores (p. 10).
+c. Energia inicial: o manual não diz. Nada acrescentado.
+d. Solo: Comece, passo 4 (6 Pragas: 5 por jogador mais 1, p. 6) e passo 5 (um tabuleiro só, p. 22); etapa 1, passo 1 da ilha (p. 22). Os 4 marcadores de Medo saem da regra de 4 por jogador, já no passo 1.
+e. "Vire o painel": agora diz que a montagem está no lado com a história e que o painel vira para o lado das trilhas (p. 6 e ilustração da p. 14).
+f. Passo 8 do Comece: 13 Presenças (p. 4), 2 na ilha, 7 na trilha de Energia (1, 1, 2, 2, 3, 4, 4, 5) e 4 na de Jogadas (2, 3, 4, 5, 6), com o 1 e o 2 à mostra (p. 6; painel da p. 14). Isso vem antes da pergunta do Complete.
+g. Comece: "essa Praga vem da caixa, não do espaço de Praga" (p. 6) e "separe as cartas listadas na Progressão" (p. 3).
+h. Comece: "Ganhar carta de Poder, na primeira partida: pegue a próxima da carta de Progressão" (p. 3 e 18).
+i. "Marcadores de efeito de um turno": agora "3 marcadores de lembrete da cor, para marcar, se quiser, terras com efeito que dura só o turno" (p. 4 e 17).
+j. "vizinha das suas Areias" virou singular. Acrescentado que "a até 1 terra" inclui a terra onde você já está, porque alcance é máximo e alcance 0 é terra com Presença sua (p. 14 e 16).
+k. Rapidez do Relâmpago: o texto continua dizendo só "1 Poder Lento", sem afirmar nada sobre o Poder Inato, porque a ilustração cobre o fim da frase.
+l. Etapa 5: "costuma estar perdida" virou "sem carta de Praga, vocês perdem; com carta, sigam o que ela diz" (p. 12 e 15), coerente com o treino.
+m. Explicação do Complete da etapa 3 reescrita: "com 3 ou mais Fogo e 2 ou mais Ar, mas menos de 4 Fogo ou de 3 Ar, vale só o primeiro nível".
+n. O Tempo Passa (Comece e etapa 2): os Dahan feridos se recuperam no fim do turno (p. 9 e 10).
+o. Oceano: Comece, passo 5, "a faixa de mar de cada tabuleiro" (p. 13). O manual não diz em que borda fica; não acrescentei mais.
+p. Cartas Únicas do Relâmpago: sem fonte citável; nada acrescentado.
+
+**Portões depois das correções:** zero travessão; `tools/vicios.py` sem aviso no tutorial e no JSON; `tools/checar_comece.py` passa (o Comece foi enxugado para caber em 1.000 palavras com os acréscimos). Extensão: cerca de 6.480 palavras de texto, quase igual à anterior, porque os acréscimos pedidos ocuparam o que foi cortado. O JSON não precisou mudar e continua com `"publicar": false`.
