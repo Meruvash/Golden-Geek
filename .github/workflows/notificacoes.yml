@@ -1,0 +1,33 @@
+# Plano B das notificações do sininho (Web Push): se o cron de um minuto da Cloudflare não processou um alerta novo,
+# este workflow pede ao worker que rode o ciclo (/v1/push/rodar). Não envia nada por conta própria, então não duplica.
+# Falha (e o GitHub manda e-mail) só quando nem o plano B conseguiu. Ver tools/notificacoes/vigia.py.
+name: "Notificações: vigia e plano B"
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - alertas/conteudo.json
+      - black/alertas.json
+  schedule:
+    - cron: "7,22,37,52 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: notificacoes-vigia
+  cancel-in-progress: false
+
+jobs:
+  vigia:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Confere e, se preciso, dispara o envio
+        run: python3 tools/notificacoes/vigia.py ${{ github.event_name == 'push' && '--esperar' || '--sem-pausa' }}

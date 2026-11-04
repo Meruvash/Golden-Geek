@@ -44,9 +44,17 @@ def main():
     # 1. tabelas
     wrangler("d1", "execute", "elite-interacoes", "--remote", "--command", TABELAS.replace("\n", " "), token=token)
     print("ok tabelas push_subs, push_alertas, push_estado")
+    wrangler("d1", "execute", "elite-interacoes", "--remote", "--command", TABELAS_TEMAS.replace("\n", " "), token=token)
     # 1b. temas (sininho do site: black, noticias, resenhas) e entrega por aparelho; ALTER falha se já existir
     for col in ("ALTER TABLE push_subs ADD COLUMN temas TEXT DEFAULT ',black,'",
-                "ALTER TABLE push_alertas ADD COLUMN tema TEXT DEFAULT 'black'"):
+                "ALTER TABLE push_alertas ADD COLUMN tema TEXT DEFAULT 'black'",
+                # nova tentativa e saúde (04/11/2026): quando o push saiu, quantas vezes, se o serviço aceitou e se o
+                # aparelho já roda o service worker novo (visto)
+                "ALTER TABLE push_entrega ADD COLUMN enviado TEXT",
+                "ALTER TABLE push_entrega ADD COLUMN tentativas INTEGER DEFAULT 0",
+                "ALTER TABLE push_entrega ADD COLUMN ok INTEGER DEFAULT 0",
+                "ALTER TABLE push_subs ADD COLUMN ultimo_ok TEXT",
+                "ALTER TABLE push_subs ADD COLUMN visto TEXT"):
         try:
             wrangler("d1", "execute", "elite-interacoes", "--remote", "--command", col, token=token)
         except SystemExit as erro:

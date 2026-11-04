@@ -388,7 +388,7 @@ btn.addEventListener('click',async()=>{const m=motivo();
  catch(e){mostra('.wp-erro','Não deu para ativar: '+(e&&e.message||e)+'. Confira se está no Chrome (Android) ou no Safari pela Tela de Início (iPhone) e tente de novo.')}
  finally{btn.textContent=txt;btn.disabled=false}});
 q('.wp-sair').addEventListener('click',async()=>{try{const r=await navigator.serviceWorker.getRegistration('/sw-black.js');const s=r&&await r.pushManager.getSubscription();
- if(s){await fetch(api+'/v1/push/cancelar',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({endpoint:s.endpoint,temas:['black']})}).catch(()=>{});try{localStorage.setItem('eb-sino','')}catch(e){}}}catch(e){}
+ if(s){await fetch(api+'/v1/push/cancelar',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({endpoint:s.endpoint,temas:['black']})}).then(async x=>{const d=await x.json();try{localStorage.setItem('eb-sino',(d.temas||[]).join(','))}catch(e){}}).catch(()=>{})}}catch(e){}
  mostra('')})})();
 </script>"""
 

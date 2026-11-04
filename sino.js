@@ -44,10 +44,29 @@
     const r = await navigator.serviceWorker.getRegistration(SW).catch(() => null) || await navigator.serviceWorker.getRegistration("/").catch(() => null);
     return r ? r.pushManager.getSubscription().catch(() => null) : null;
   }
+  // Aviso de tema novo: quem ligou os alertas só para o Black (na página do Black, antes do sininho existir) não recebe
+  // notícias nem resenhas sem saber. O sininho ganha um ponto e o painel explica; nada é ligado sem a pessoa escolher.
+  const faltando = () => TEMAS.map((t) => t[0]).filter((t) => !atuais.includes(t));
+  const ponto = () => btn.classList.toggle("novo", atuais.length > 0 && faltando().length > 0 && ls.get("eb-sino-visto") !== faltando().join(","));
+  if (!document.getElementById("sino-ponto")) {
+    const st = document.createElement("style"); st.id = "sino-ponto";
+    st.textContent = ".sino-btn{position:relative}.sino-btn.novo::after{content:'';position:absolute;top:4px;right:4px;width:10px;height:10px;border-radius:50%;background:#ff5a5f;box-shadow:0 0 0 2px #000}";
+    document.head.append(st);
+  }
+
+  // estado real, se já houver inscrição neste aparelho
   (async () => {
     const s = await inscricao();
     if (!s || Notification.permission !== "granted") { if (atuais.length) { atuais = []; ls.set("eb-sino", ""); marca(); } return; }
-    try { const d = await (await post("/v1/push/temas", { endpoint: s.endpoint })).json(); atuais = d.temas || []; ls.set("eb-sino", atuais.join(",")); marca(); } catch (e) {}
+    try {
+      const d = await (await post("/v1/push/temas", { endpoint: s.endpoint })).json();
+      if (!d.inscrito && atuais.length) {
+        // o servidor perdeu esta inscrição (apagada depois de falhas seguidas): refaz em silêncio com os temas de antes
+        const x = await post("/v1/push/inscrever", { sub: s.toJSON(), temas: atuais });
+        if (x.ok) d.temas = (await x.json()).temas;
+      }
+      atuais = d.temas || []; ls.set("eb-sino", atuais.join(",")); marca(); ponto();
+    } catch (e) {}
   })();
 
   const CSS = `.sino-p{position:fixed;z-index:2147482000;right:12px;top:calc(var(--nav-h,49px) + 70px);width:min(360px,calc(100vw - 24px));background:#16181d;color:#eef1f5;border:2px solid #e3b23c;border-radius:16px;padding:16px;box-shadow:0 12px 40px rgba(0,0,0,.55);box-sizing:border-box;font-size:.95rem}
@@ -70,6 +89,7 @@
     painel.setAttribute("role", "dialog"); painel.setAttribute("aria-label", "Notificações da Elite");
     painel.innerHTML = `<button type="button" class="sino-x" aria-label="Fechar">✕</button><h2>🔔 Avisos no celular</h2>
 <p>Chega como mensagem na barra de notificações. Sem app, sem cadastro; desligue quando quiser.</p>` +
+      (atuais.length && faltando().length ? `<p class="sino-st ok" style="color:#ffd27a">Neste aparelho você recebe só: ${TEMAS.filter((t) => atuais.includes(t[0])).map((t) => t[1].replace(/^\S+ /, "")).join(", ")}. Marque os outros temas e toque em Salvar para receber também.</p>` : "") +
       TEMAS.map(([id, nome, desc]) => `<label><input type="checkbox" value="${id}"${novos || atuais.includes(id) ? " checked" : ""}><span>${nome}<small>${desc}</small></span></label>`).join("") +
       `<button type="button" class="sino-ok">${atuais.length ? "Salvar escolha" : "🔔 Ativar avisos"}</button>
 <p class="sino-st" role="status"></p>
@@ -79,6 +99,7 @@
     setTimeout(() => document.addEventListener("click", fora), 0);
     document.addEventListener("keydown", esc);
     btn.setAttribute("aria-expanded", "true");
+    if (btn.classList.contains("novo")) { ls.set("eb-sino-visto", faltando().join(",")); btn.classList.remove("novo"); }
     painel.querySelector(".sino-ok").focus();
   }
   function fecha() {
