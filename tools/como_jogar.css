@@ -158,3 +158,11 @@ td .ico{margin-right:6px}
 .yt-play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:#c4302b;color:#fff;font-weight:800;font-size:.95rem;padding:10px 16px;border-radius:999px;white-space:nowrap;box-shadow:0 2px 10px rgba(0,0,0,.4)}
 .yt:hover .yt-play,.yt:focus-visible .yt-play{background:#e03a33}
 .video iframe{width:100%;aspect-ratio:16/9;border:0;border-radius:8px;display:block}
+/* fotos em todas as seções (04/11/2026): foto do jogo no topo e em cada seção sem figura do manual */
+.topo-cj{overflow:hidden}
+.foto-topo{margin:-20px -20px 4px;display:grid;gap:0}
+.foto-topo img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;background:#fff}
+.foto-topo figcaption{font-size:.78rem;color:var(--paper-muted);padding:6px 20px 0}
+.foto-topo.caixa img,.foto-sec.caixa img{object-fit:contain}
+.foto-sec img{aspect-ratio:16/9;object-fit:cover}
+@media (max-width:600px){.foto-topo{margin:-16px -16px 4px}.foto-topo figcaption{padding:6px 16px 0}}

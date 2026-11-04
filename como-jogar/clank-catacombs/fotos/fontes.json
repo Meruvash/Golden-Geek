@@ -1,0 +1,42 @@
+{
+ "slug": "clank-catacombs",
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 600,
+   "altura": 600,
+   "editora": "Asmodee UK",
+   "credito": "Imagem: Asmodee UK",
+   "pagina": "https://www.asmodee.co.uk/products/dwd02006-clank-catacombs",
+   "imagem": "https://cdn.shopify.com/s/files/1/0572/1076/5512/files/DWD02006_1.jpg",
+   "baixada_em": "2026-11-04",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/mesa-1.webp",
+   "tipo": "mesa",
+   "largura": 1280,
+   "altura": 720,
+   "editora": "Dire Wolf",
+   "credito": "Imagem: Dire Wolf",
+   "pagina": "https://direwolfdigital.com/news/clank-catacombs-now-at-your-flgs/",
+   "imagem": "https://d19y2ttatozxjp.cloudfront.net/wp-content/uploads/2022/06/23203456/announcing-clank-catacombs.jpg",
+   "baixada_em": "2026-11-04",
+   "aprovada": true,
+   "texto": true
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 1280,
+   "altura": 720,
+   "editora": "Dire Wolf",
+   "credito": "Imagem: Dire Wolf",
+   "pagina": "https://news.direwolfdigital.com/announcing-clank-catacombs/",
+   "imagem": "https://d19y2ttatozxjp.cloudfront.net/wp-content/uploads/2022/03/18180017/CatacombsComponents.jpg",
+   "baixada_em": "2026-11-04",
+   "aprovada": true
+  }
+ ]
+}

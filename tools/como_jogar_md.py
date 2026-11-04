@@ -22,6 +22,11 @@ ficam inteiras recolhidas. O tempo de leitura do topo conta só o que fica à vi
   = explicação         aparece quando o leitor escolhe uma opção, com a certa marcada
 Só gera página com "publicar": true no JSON, marcado depois da auditoria independente; rascunho não vai ao ar.
 Uma página escrita à mão (sem tutorial.md) não é tocada: o JSON dela só alimenta a lista em /como-jogar/.
+
+Fotos em todas as seções (pedido do editor em 04/11/2026): o topo da página abre com uma foto oficial do jogo e toda
+seção sem figura própria ganha uma foto logo abaixo do título. As fotos vêm de como-jogar/<slug>/fotos/fontes.json
+(robô de imagens, skill imagens) ou, se o jogo tiver resenha, de <slug>/fotos/fontes.json; só as aprovadas, sem rosto
+de frente ("pessoas") e sem as que o crivo deixou de fora ("fora"). Sem foto oficial, entram as figuras do manual.
 """
 import html
 import json
@@ -191,8 +196,59 @@ def blocos(linhas, dobrar=False):
     return "\n".join(out)
 
 
-def secao(titulo, num, linhas):
-    """Uma seção ##; as partes "### Respostas" viram respostas escondidas."""
+TIPO_ROTULO = {"capa": "a caixa", "mesa": "a mesa montada", "jogabilidade": "uma partida em andamento", "componentes": "os componentes"}
+ORDEM_TOPO = ("mesa", "jogabilidade", "componentes", "capa")
+
+
+def fotos_jogo(meta):
+    """Fotos oficiais do jogo, com o caminho visto da página como-jogar/<slug>/: [{src, abs, alt, credito, tipo, w, h}]."""
+    slug = meta["slug"]
+    lugares = [(ROOT / "como-jogar" / slug / "fotos" / "fontes.json", "", f"como-jogar/{slug}/")]
+    for r in dict.fromkeys(x for x in (meta.get("resenha"), slug) if x):
+        lugares.append((ROOT / r / "fotos" / "fontes.json", f"../../{r}/", f"{r}/"))
+    vistos, out = set(), []
+    for arq, pre, base in lugares:
+        if not arq.exists():
+            continue
+        for f in json.loads(arq.read_text(encoding="utf-8")).get("fotos", []):
+            if not f.get("aprovada") or f.get("pessoas") or f.get("fora") or f["arquivo"] in vistos:
+                continue
+            if not (arq.parent.parent / f["arquivo"]).exists():
+                continue
+            vistos.add(f["arquivo"])
+            nota = f" ({f['nota']})" if f.get("nota") else ""
+            out.append({"src": pre + f["arquivo"], "abs": f"{SITE}/{base}{f['arquivo']}", "tipo": f.get("tipo", ""),
+                        "alt": f"{meta['jogo']}: {TIPO_ROTULO.get(f.get('tipo'), 'foto do jogo')}",
+                        "credito": (f.get("credito") or "") + nota, "w": f.get("largura"), "h": f.get("altura"),
+                        "principal": f.get("principal"), "texto": f.get("texto")})
+        if out:
+            break
+    return out
+
+
+def figuras_md(md):
+    """Figuras do manual que o tutorial já usa (reserva quando o jogo não tem foto oficial)."""
+    return [{"src": m.group(2), "abs": "", "tipo": "figura", "alt": re.sub(r"[*]", "", m.group(1)), "credito": m.group(1),
+             "w": None, "h": None, "principal": False, "texto": False}
+            for m in re.finditer(r"^!fig\[(.+?)\]\((\S+?)\)\s*$", md, re.M)]
+
+
+def ordem_fotos(fotos):
+    """Topo primeiro (a marcada "principal", senão mesa, jogabilidade, componentes, capa), sem texto por cima antes."""
+    return sorted(fotos, key=lambda f: (not f["principal"], bool(f["texto"]),
+                                        ORDEM_TOPO.index(f["tipo"]) if f["tipo"] in ORDEM_TOPO else len(ORDEM_TOPO)))
+
+
+def figura_foto(f, classe="foto", topo=False):
+    dim = f' width="{f["w"]}" height="{f["h"]}"' if f["w"] and f["h"] else ""
+    carga = ' fetchpriority="high"' if topo else ' loading="lazy"'
+    caixa = " caixa" if f["tipo"] == "capa" else ""
+    return (f'<figure class="{classe}{caixa}"><img src="{html.escape(f["src"])}" alt="{html.escape(f["alt"])}"{dim}{carga} decoding="async">'
+            f'<figcaption>{inline(f["credito"])}</figcaption></figure>')
+
+
+def secao(titulo, num, linhas, foto=None):
+    """Uma seção ##; as partes "### Respostas" viram respostas escondidas. Sem figura à vista, abre com foto() (a próxima do rodízio)."""
     partes, atual = [], []
     for l in linhas:
         if l.startswith("### "):
@@ -223,8 +279,12 @@ def secao(titulo, num, linhas):
         html_corpo = f'<details class="dobra sec-opc"><summary>Abrir esta seção</summary>{html_corpo}</details>'
     classe = "bloco sec" + (" rapido" if num == "4min" else "") + (" ref" if titulo.lower().startswith("para consultar") else "") + (" opc" if opcional else "")
     selo = '<span class="tag-opc">Opcional</span>' if opcional else ""
+    # foto em toda seção (04/11/2026): a seção que não tem figura do manual à vista abre com uma foto do jogo
+    abre = ""
+    if foto and not re.search(r'<figure class="fig"', re.sub(r"<details.*?</details>", "", html_corpo, flags=re.S)) and (f := foto()):
+        abre = figura_foto(f, "fig foto-sec") + "\n"
     return (f'<section class="{classe}" id="{slugify(titulo)}"><h2><span class="num">{"" if num == "4min" else num}</span>{inline(titulo)}{selo}</h2>\n'
-            + html_corpo + "\n</section>")
+            + abre + html_corpo + "\n</section>")
 
 
 def visiveis(html_txt):
@@ -253,12 +313,22 @@ def pagina(meta, md):
     data_longa = f"{int(d[8:10])} de {MESES[int(d[5:7]) - 1]} de {d[:4]}"
     rapido = [s for s in secoes if s[1] == "4min"]
     resto = [s for s in secoes if s[1] != "4min"]
+    # fotos: a primeira abre a página; as outras se revezam nas seções sem figura (sem foto oficial, as figuras do manual)
+    fotos = ordem_fotos(fotos_jogo(meta))
+    reserva = figuras_md(md)
+    topo_f = fotos[0] if fotos else (reserva[0] if reserva else None)
+    roda = (fotos[1:] or fotos) if fotos else reserva
+    contador = iter(range(10 ** 6))
+    def prox():
+        return roda[next(contador) % len(roda)] if roda else None
     indice = "".join(f'<li><a href="#{slugify(t)}">{e(t)}</a>{" <small>(opcional)</small>" if any(t.startswith(o) for o in OPCIONAIS) else ""}</li>' for t, _, _ in rapido + resto)
-    secs_html = "\n".join(secao(t, n, c) for t, n, c in resto)
+    og = (topo_f["abs"] or f"{SITE}/como-jogar/{meta['slug']}/{topo_f['src']}") if topo_f else f"{SITE}/marca/banner-1200.webp"
+    rapido_secs = [secao(t, n, c, prox) for t, n, c in rapido]
+    secs_html = "\n".join(secao(t, n, c, prox) for t, n, c in resto)
     # no "comece em 4 minutos", "etapa 4" vira link para a seção da etapa
     etapas_id = {m.group(1): slugify(t) for t, _, _ in resto if (m := re.match(r"Etapa (\d+)", t))}
     rapido_html = re.sub(r"\betapa (\d+)\b", lambda m: f'<a href="#{etapas_id[m.group(1)]}">etapa {m.group(1)}</a>' if m.group(1) in etapas_id else m.group(0),
-                         "\n".join(secao(t, n, c) for t, n, c in rapido))
+                         "\n".join(rapido_secs))
     leitura = max(1, round(visiveis(secs_html) / PALAVRAS_MIN))
     resenha = ""
     if meta.get("resenha") and (ROOT / meta["resenha"] / "index.html").exists():
@@ -278,7 +348,7 @@ def pagina(meta, md):
 <meta property="og:title" content="{e(meta['titulo'])}">
 <meta property="og:description" content="{e(meta['descricao'])}">
 <meta property="og:url" content="{url}">
-<meta property="og:image" content="{SITE}/marca/banner-1200.webp">
+<meta property="og:image" content="{og}">
 <link rel="icon" href="../../favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32.png">
 <link rel="apple-touch-icon" href="../../apple-touch-icon.png">
@@ -292,7 +362,8 @@ def pagina(meta, md):
 <main id="conteudo" class="gut"><div class="nota">
   <nav class="trilha" aria-label="Trilha de navegação"><ol><li><a href="../../">Início</a></li><li><a href="../">Como jogar</a></li><li aria-current="page">{e(meta['jogo'])}</li></ol></nav>
 
-  <article class="bloco">
+  <article class="bloco topo-cj">
+    {figura_foto(topo_f, "foto-topo", topo=True) if topo_f else ""}
     <span class="num-l">{e(meta['genero'])}</span>
     <h1>{e(meta['titulo'])}</h1>
     <p class="meta-e"><span>Para quem nunca jogou</span><span>{e(meta['jogadores'])}</span><span>{e(meta['duracao'])}</span><span>{e(meta['idade'])}</span><span>{e(meta['edicao'])}</span></p>

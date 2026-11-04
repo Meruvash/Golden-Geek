@@ -443,6 +443,9 @@ def imagens_da_pagina(cli, url, rec):
             if "/_next/image" in u and "url=" in u:  # Next.js: a imagem de verdade vem no parâmetro url
                 from urllib.parse import parse_qs
                 u = urljoin(url, parse_qs(urlsplit(u).query).get("url", [u])[0])
+            # SVG decorativo do tema (Shopify) gastava o limite de candidatas e escondia a segunda fonte
+            if re.search(r"\.svg(\?|$)", u, re.I):
+                return
             if re.search(r"\.(jpe?g|png|webp)(\?|$)", u, re.I) or "/cdn/shop/" in u or "cdn.shopify.com" in u:
                 achadas.append((original(u), alt))
 
