@@ -320,6 +320,51 @@
   "principal": false,
   "tipo": "game"
  },
+ "1589": {
+  "ano": 2025,
+  "bgg": 6.125,
+  "bgg_id": 449759,
+  "editora": "Scribabs",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/4bcfdd9e1d60c4f8f48d8a0579b982d4092c749b.jpg",
+  "nome": "1589",
+  "pontos": {
+   "2026-10-04": 637.46,
+   "2026-10-05": 637.46,
+   "2026-10-06": 637.46,
+   "2026-10-07": 637.46,
+   "2026-10-08": 637.46,
+   "2026-10-09": 637.46,
+   "2026-10-10": 637.46,
+   "2026-10-11": 637.46,
+   "2026-10-12": 637.46,
+   "2026-10-13": 637.46,
+   "2026-10-14": 637.46,
+   "2026-10-15": 637.46,
+   "2026-10-16": 637.46,
+   "2026-10-17": 637.46,
+   "2026-10-18": 637.46,
+   "2026-10-19": 637.46,
+   "2026-10-20": 637.46,
+   "2026-10-21": 637.46,
+   "2026-10-22": 637.46,
+   "2026-10-23": 637.46,
+   "2026-10-24": 637.46,
+   "2026-10-25": 637.46,
+   "2026-10-26": 637.46,
+   "2026-10-27": 637.46,
+   "2026-10-28": 637.46,
+   "2026-10-29": 637.46,
+   "2026-10-30": 637.46,
+   "2026-10-31": 637.46,
+   "2026-11-01": 637.46,
+   "2026-11-02": 637.46,
+   "2026-11-03": 637.46,
+   "2026-11-04": 637.46
+  },
+  "principal": false,
+  "tipo": "game"
+ },
  "1830-railways-robber-barons": {
   "ano": 2018,
   "bgg": 7.86447,
@@ -445,6 +490,18 @@
   "principal": false,
   "tipo": "game"
  },
+ "24-game": {
+  "ano": 2012,
+  "bgg": 5.89022,
+  "bgg_id": 6891,
+  "editora": "Suntex",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/e3476037517b869fea336fb214090f4e8eb081e3.jpg",
+  "nome": "24 Game",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
  "24-game-algebraexponents": {
   "ano": 1999,
   "bgg": 5.5,
@@ -557,6 +614,18 @@
    "2026-11-03": 38.0,
    "2026-11-04": 38
   },
+  "principal": false,
+  "tipo": "game"
+ },
+ "3-laws-of-robotics": {
+  "ano": 2019,
+  "bgg": 6.15214,
+  "bgg_id": 271447,
+  "editora": "Floodgate Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/102a124b2f2c46339fe577790829b95c0283a329.png",
+  "nome": "3 Laws of Robotics",
+  "pontos": {},
   "principal": false,
   "tipo": "game"
  },
@@ -819,6 +888,49 @@
   "principal": false,
   "tipo": "game"
  },
+ "5-pares": {
+  "ano": 2026,
+  "bgg": 5.78779,
+  "bgg_id": 456453,
+  "editora": "PaperGames",
+  "editora_br": true,
+  "imagem": "https://uploads.comparajogos.com.br/img/6fd59e61648ce885f6c3ce072f2d3c87d7c2bc84.png",
+  "nome": "5 Pares",
+  "pontos": {
+   "2026-10-06": 57.59,
+   "2026-10-07": 56.51,
+   "2026-10-08": 56.51,
+   "2026-10-09": 56.51,
+   "2026-10-10": 56.51,
+   "2026-10-11": 56.51,
+   "2026-10-12": 56.51,
+   "2026-10-13": 56.51,
+   "2026-10-14": 56.51,
+   "2026-10-15": 56.51,
+   "2026-10-16": 56.51,
+   "2026-10-17": 56.51,
+   "2026-10-18": 56.51,
+   "2026-10-19": 56.51,
+   "2026-10-20": 56.51,
+   "2026-10-21": 56.51,
+   "2026-10-22": 56.51,
+   "2026-10-23": 55.69,
+   "2026-10-24": 55.69,
+   "2026-10-25": 55.69,
+   "2026-10-26": 55.69,
+   "2026-10-27": 55.69,
+   "2026-10-28": 55.69,
+   "2026-10-29": 55.69,
+   "2026-10-30": 55.69,
+   "2026-10-31": 55.69,
+   "2026-11-01": 55.69,
+   "2026-11-02": 55.69,
+   "2026-11-03": 55.69,
+   "2026-11-04": 55.69
+  },
+  "principal": false,
+  "tipo": "game"
+ },
  "5-score": {
   "ano": 2001,
   "bgg": 6,
@@ -1052,6 +1164,51 @@
    "2026-11-02": 17.75,
    "2026-11-03": 17.75,
    "2026-11-04": 17.75
+  },
+  "principal": false,
+  "tipo": "game"
+ },
+ "50-caes": {
+  "ano": 2007,
+  "bgg": null,
+  "bgg_id": 450339,
+  "editora": "Galápagos Jogos",
+  "editora_br": true,
+  "imagem": "https://uploads.comparajogos.com.br/img/28c8e2ad69c2ecfb28dc166e4ad242e1a4f4821d.png",
+  "nome": "50 cães",
+  "pontos": {
+   "2026-10-04": 29.79,
+   "2026-10-05": 29.79,
+   "2026-10-06": 29.79,
+   "2026-10-07": 29.79,
+   "2026-10-08": 29.79,
+   "2026-10-09": 29.79,
+   "2026-10-10": 29.79,
+   "2026-10-11": 29.79,
+   "2026-10-12": 29.79,
+   "2026-10-13": 29.79,
+   "2026-10-14": 29.79,
+   "2026-10-15": 29.79,
+   "2026-10-16": 29.79,
+   "2026-10-17": 29.79,
+   "2026-10-18": 29.79,
+   "2026-10-19": 29.79,
+   "2026-10-20": 29.79,
+   "2026-10-21": 29.79,
+   "2026-10-22": 29.79,
+   "2026-10-23": 18.41,
+   "2026-10-24": 18.41,
+   "2026-10-25": 18.41,
+   "2026-10-26": 18.41,
+   "2026-10-27": 18.41,
+   "2026-10-28": 18.41,
+   "2026-10-29": 18.41,
+   "2026-10-30": 18.41,
+   "2026-10-31": 18.41,
+   "2026-11-01": 18.41,
+   "2026-11-02": 18.41,
+   "2026-11-03": 18.41,
+   "2026-11-04": 18.41
   },
   "principal": false,
   "tipo": "game"
@@ -1325,6 +1482,30 @@
    "2026-11-03": 22.61,
    "2026-11-04": 22.61
   },
+  "principal": false,
+  "tipo": "game"
+ },
+ "60": {
+  "ano": 2026,
+  "bgg": 8.1529,
+  "bgg_id": 474125,
+  "editora": "dlp games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/4884d4bb696e94417278fdff156a483b31c57737.jpg",
+  "nome": "-60°",
+  "pontos": {},
+  "principal": true,
+  "tipo": "game"
+ },
+ "60-segundos": {
+  "ano": 1973,
+  "bgg": 4.44654,
+  "bgg_id": 5588,
+  "editora": "Grow Jogos e Brinquedos",
+  "editora_br": true,
+  "imagem": "https://uploads.comparajogos.com.br/img/49705329cc827ec11d407d1f13eed093f27afa6c.jpg",
+  "nome": "60 segundos",
+  "pontos": {},
   "principal": false,
   "tipo": "game"
  },
@@ -3895,6 +4076,18 @@
    "2026-11-03": 90.53
   },
   "tipo": "game"
+ },
+ "abstratus-artes-visuais": {
+  "ano": 2022,
+  "bgg": 8.5,
+  "bgg_id": 438206,
+  "editora": "Ludens Spirit",
+  "editora_br": true,
+  "imagem": "https://uploads.comparajogos.com.br/img/7c2f23089045cdb31e47bf8c7dda849836ca31d3.jpg",
+  "nome": "Abstratus: Artes Visuais",
+  "pontos": {},
+  "principal": true,
+  "tipo": "expansion"
  },
  "abstratus-kit-expansao": {
   "ano": 2018,
@@ -6635,6 +6828,30 @@
   },
   "tipo": "game"
  },
+ "amc-reel-clues": {
+  "ano": 2002,
+  "bgg": 5.70233,
+  "bgg_id": 11873,
+  "editora": "University Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/cb1ca8c2203b6cf5a79bec9a02a13ca3a309e22e.jpg",
+  "nome": "AMC Reel Clues",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
+ "american-pursuit": {
+  "ano": 2024,
+  "bgg": 5,
+  "bgg_id": 425603,
+  "editora": "(Independente)",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/4abd1222979960be115b0e79648f17aa2158f258.jpg",
+  "nome": "American Pursuit",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
  "amigos-de-merda": {
   "ano": 2019,
   "bgg": 5.34112,
@@ -7633,6 +7850,24 @@
   "pontos": {},
   "tipo": "game"
  },
+ "another-mans-treasure": {
+  "ano": 2024,
+  "bgg": 6.44737,
+  "bgg_id": 414341,
+  "editora": "Grandpa Beck's Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/e2f957e7de46ee75942e49dc401c942a510adbff.jpg",
+  "nome": "Another Man's Treasure",
+  "pontos": {
+   "2026-10-29": 92.5,
+   "2026-10-30": 92.5,
+   "2026-11-02": 92.5,
+   "2026-11-03": 92.5,
+   "2026-11-04": 92.5
+  },
+  "principal": false,
+  "tipo": "game"
+ },
  "antiques": {
   "ano": 2025,
   "bgg": 7.4,
@@ -7699,6 +7934,30 @@
   "imagem": "https://uploads.comparajogos.com.br/img/9f4a72b702547d3d05435dc3e6ab50885a892888.png",
   "nome": "Antiquity",
   "pontos": {},
+  "tipo": "game"
+ },
+ "antiquity-quest": {
+  "ano": 2019,
+  "bgg": 6.51745,
+  "bgg_id": 286559,
+  "editora": "Grandpa Beck's Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/77386666addc7268e5203b48a893fdde7471b499.jpg",
+  "nome": "Antiquity Quest",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
+ "ants-in-the-pants": {
+  "ano": 2005,
+  "bgg": 4.22841,
+  "bgg_id": 8487,
+  "editora": "Hasbro",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/34422ae3fde1de0663d8f89bf6f203f5d831a655.jpg",
+  "nome": "Ants in the Pants",
+  "pontos": {},
+  "principal": false,
   "tipo": "game"
  },
  "apagao-ruas-de-furia": {
@@ -8646,6 +8905,18 @@
   "editora_br": false,
   "imagem": "https://uploads.comparajogos.com.br/img/2d7ecf4c6b349d024c10671d4df28bbfe8326409.jpg",
   "nome": "Arena: The Contest – Madness Box",
+  "pontos": {},
+  "principal": true,
+  "tipo": "expansion"
+ },
+ "arena-the-contest-tanares-villain-pack": {
+  "ano": 2023,
+  "bgg": 8.22778,
+  "bgg_id": 360530,
+  "editora": "Dragori Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/ad937fa9f5cb1a6c0088ded2987fe1d07491e55f.jpg",
+  "nome": "Arena: The Contest – Tanares Villain Pack",
   "pontos": {},
   "principal": true,
   "tipo": "expansion"
@@ -11543,6 +11814,18 @@
   "principal": true,
   "tipo": "game"
  },
+ "ashes-ascendancy": {
+  "ano": 2026,
+  "bgg": 8.56549,
+  "bgg_id": 437290,
+  "editora": "Plaid Hat Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/d90c23f6812764c663f3ec898af90ddf717841f4.jpg",
+  "nome": "Ashes Ascendancy",
+  "pontos": {},
+  "principal": true,
+  "tipo": "game"
+ },
  "ashes-reborn-red-rains-the-corpse-of-viros": {
   "ano": 2023,
   "bgg": 8.46171,
@@ -13197,6 +13480,18 @@
   "principal": true,
   "tipo": "game"
  },
+ "bad-kitty-the-purrrrrfect-party-game-for-you-and-your-posse": {
+  "ano": 2024,
+  "bgg": 6.6,
+  "bgg_id": 420982,
+  "editora": "Dyce Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/247d64bcca1d8a8e6529426e8f7946affebc238a.jpg",
+  "nome": "BAD KITTY: The PURRRRRFECT Party Game for You and Your Posse",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
  "bad-people": {
   "ano": 2016,
   "bgg": 5.43894,
@@ -13206,6 +13501,51 @@
   "imagem": "https://uploads.comparajogos.com.br/img/399fbddf5dea11ba8612c98d26088d157bc8eb6d.jpg",
   "nome": "Bad People",
   "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
+ "bad-signs": {
+  "ano": 2024,
+  "bgg": null,
+  "bgg_id": 464993,
+  "editora": "Buró",
+  "editora_br": true,
+  "imagem": null,
+  "nome": "Bad Signs",
+  "pontos": {
+   "2026-10-04": 34.4,
+   "2026-10-05": 34.4,
+   "2026-10-06": 34.4,
+   "2026-10-07": 34.4,
+   "2026-10-08": 34.4,
+   "2026-10-09": 34.4,
+   "2026-10-10": 34.4,
+   "2026-10-11": 34.4,
+   "2026-10-12": 34.4,
+   "2026-10-13": 34.4,
+   "2026-10-14": 34.4,
+   "2026-10-15": 34.4,
+   "2026-10-16": 34.4,
+   "2026-10-17": 34.4,
+   "2026-10-18": 34.4,
+   "2026-10-19": 34.4,
+   "2026-10-20": 34.4,
+   "2026-10-21": 34.4,
+   "2026-10-22": 34.4,
+   "2026-10-23": 34.4,
+   "2026-10-24": 34.4,
+   "2026-10-25": 34.4,
+   "2026-10-26": 34.4,
+   "2026-10-27": 34.4,
+   "2026-10-28": 34.4,
+   "2026-10-29": 34.4,
+   "2026-10-30": 34.4,
+   "2026-10-31": 34.4,
+   "2026-11-01": 34.4,
+   "2026-11-02": 34.4,
+   "2026-11-03": 34.4,
+   "2026-11-04": 34.4
+  },
   "principal": false,
   "tipo": "game"
  },
@@ -15683,6 +16023,18 @@
   "nome": "Belfort: Limited Edition",
   "pontos": {},
   "principal": true,
+  "tipo": "game"
+ },
+ "bella-sara": {
+  "ano": 2005,
+  "bgg": 5.16667,
+  "bgg_id": 30637,
+  "editora": "Conceptcard",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/c3d41679c0759a4e7ce9eb4ebf2ba89a35a39d29.jpg",
+  "nome": "Bella Sara",
+  "pontos": {},
+  "principal": false,
   "tipo": "game"
  },
  "bellum-magica": {
@@ -19322,6 +19674,18 @@
   },
   "tipo": "game"
  },
+ "bone-zai-5": {
+  "ano": 2025,
+  "bgg": 6.83333,
+  "bgg_id": 446683,
+  "editora": "Buddypal Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/dc9b1d0957536991fdd5052cae763c156cc3f533.jpg",
+  "nome": "Bone-Zai 5",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
  "bonfire": {
   "ano": 2020,
   "bgg": 7.07344,
@@ -19397,6 +19761,18 @@
   "editora_br": false,
   "imagem": "https://uploads.comparajogos.com.br/img/23c0ed58042ca744dabe4da6f15fb1fc63d0c5b8.jpg",
   "nome": "BOO",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
+ "boo-ty-call": {
+  "ano": 2023,
+  "bgg": 5.80172,
+  "bgg_id": 362888,
+  "editora": "Skybound Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/54e7204535be6f994118944ec1394f1f06e2b8b4.jpg",
+  "nome": "Boo-ty Call",
   "pontos": {},
   "principal": false,
   "tipo": "game"
@@ -20790,6 +21166,18 @@
   },
   "tipo": "game"
  },
+ "bugo-mini-expansion": {
+  "ano": 2025,
+  "bgg": null,
+  "bgg_id": 467449,
+  "editora": "Bucaneiros Jogos",
+  "editora_br": true,
+  "imagem": "https://uploads.comparajogos.com.br/img/f4026b8057829a33c1db9b407cabb979d3ae0bec.jpg",
+  "nome": "BugÔ: Mini Expansion",
+  "pontos": {},
+  "principal": false,
+  "tipo": "expansion"
+ },
  "bullet": {
   "ano": 2022,
   "bgg": 7.927,
@@ -20906,6 +21294,18 @@
   "principal": false,
   "tipo": "game"
  },
+ "burger-mania": {
+  "ano": 2016,
+  "bgg": 5.26413,
+  "bgg_id": 223094,
+  "editora": "Fotorama USA",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/af1ba43243b390b4bae24d6ddb5c9eab8f5e4aac.jpg",
+  "nome": "Burger Mania",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
  "burgus": {
   "ano": 2025,
   "bgg": null,
@@ -20914,6 +21314,18 @@
   "editora_br": false,
   "imagem": "https://uploads.comparajogos.com.br/img/a04f600367af3973fc84882f7c30e1a1cc32b44d.jpg",
   "nome": "Burgus",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
+ "burma-1942-45": {
+  "ano": 2025,
+  "bgg": 6.55556,
+  "bgg_id": 9496,
+  "editora": "Compass Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/fd2897d00c8fda438316e1ed949bac0945e56c55.jpg",
+  "nome": "Burma 1942-45",
   "pontos": {},
   "principal": false,
   "tipo": "game"
@@ -21315,6 +21727,51 @@
   "principal": false,
   "tipo": "expansion"
  },
+ "cacadores-das-reliquias-perdidas": {
+  "ano": 2026,
+  "bgg": 10,
+  "bgg_id": 480430,
+  "editora": "Cubo Jogos",
+  "editora_br": true,
+  "imagem": "https://uploads.comparajogos.com.br/img/edfcae5e9e8f10f201feb897ccf5f22f8c13783f.jpg",
+  "nome": "Caçadores das Relíquias Perdidas",
+  "pontos": {
+   "2026-10-04": 185.91,
+   "2026-10-05": 185.91,
+   "2026-10-06": 185.91,
+   "2026-10-07": 185.91,
+   "2026-10-08": 185.91,
+   "2026-10-09": 185.91,
+   "2026-10-10": 185.91,
+   "2026-10-11": 185.91,
+   "2026-10-12": 185.91,
+   "2026-10-13": 185.91,
+   "2026-10-14": 185.91,
+   "2026-10-15": 185.91,
+   "2026-10-16": 185.91,
+   "2026-10-17": 185.91,
+   "2026-10-18": 185.91,
+   "2026-10-19": 185.91,
+   "2026-10-20": 185.91,
+   "2026-10-21": 185.91,
+   "2026-10-22": 185.91,
+   "2026-10-23": 185.91,
+   "2026-10-24": 185.91,
+   "2026-10-25": 185.91,
+   "2026-10-26": 185.91,
+   "2026-10-27": 185.91,
+   "2026-10-28": 185.91,
+   "2026-10-29": 185.91,
+   "2026-10-30": 185.91,
+   "2026-10-31": 185.91,
+   "2026-11-01": 185.91,
+   "2026-11-02": 185.91,
+   "2026-11-03": 185.91,
+   "2026-11-04": 185.91
+  },
+  "principal": true,
+  "tipo": "game"
+ },
  "cacao": {
   "ano": 2017,
   "bgg": 6.77873,
@@ -21691,6 +22148,26 @@
   "imagem": "https://uploads.comparajogos.com.br/img/709dbcdc0e25b57d99386e0e3e27384601e06088.png",
   "nome": "Cafundó",
   "pontos": {},
+  "tipo": "game"
+ },
+ "cagueta": {
+  "ano": 2023,
+  "bgg": null,
+  "bgg_id": 470668,
+  "editora": "CapyCat Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/10cacffc8e1098da1651a05651c2726830b80e73.jpg",
+  "nome": "Cagueta",
+  "pontos": {
+   "2026-10-29": 129.9,
+   "2026-10-30": 129.9,
+   "2026-10-31": 129.9,
+   "2026-11-01": 129.9,
+   "2026-11-02": 129.9,
+   "2026-11-03": 129.9,
+   "2026-11-04": 129.9
+  },
+  "principal": false,
   "tipo": "game"
  },
  "cai-nao-cai": {
@@ -22154,6 +22631,18 @@
   "editora_br": true,
   "imagem": null,
   "nome": "Can Can Matemático",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
+ "can-you-beat-ken": {
+  "ano": 2005,
+  "bgg": 3.92593,
+  "bgg_id": 16567,
+  "editora": "University Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/48050669c545d5d91d48fb023af69e8013bef82b.jpg",
+  "nome": "Can You Beat Ken?",
   "pontos": {},
   "principal": false,
   "tipo": "game"
@@ -26815,6 +27304,18 @@
   "pontos": {},
   "tipo": "game"
  },
+ "chicago-northwestern": {
+  "ano": 2023,
+  "bgg": 6.89271,
+  "bgg_id": 202265,
+  "editora": "Rio Grande Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/1175bc44fbfc010bb8d865ae6a97b97d5e5558bd.png",
+  "nome": "Chicago & NorthWestern",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
  "chicago-poker": {
   "ano": 2007,
   "bgg": 5.84261,
@@ -27475,6 +27976,18 @@
   "imagem": "https://uploads.comparajogos.com.br/img/2584e108316bcfae673a06e15d80e9186bc3de64.jpg",
   "nome": "Circle the Wagons",
   "pontos": {},
+  "tipo": "game"
+ },
+ "circular-reasoning-the-well-of-power": {
+  "ano": 2018,
+  "bgg": 6.52363,
+  "bgg_id": 167283,
+  "editora": "Breaking Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/e12ea7db5a3298db632948a408820d46f6c4924c.jpg",
+  "nome": "Circular Reasoning: The Well of Power",
+  "pontos": {},
+  "principal": false,
   "tipo": "game"
  },
  "citadels": {
@@ -29182,6 +29695,51 @@
   "principal": true,
   "tipo": "game"
  },
+ "coffee-rush-grab-go": {
+  "ano": 2025,
+  "bgg": 6.03019,
+  "bgg_id": 452335,
+  "editora": "Korea Boardgames co., Ltd.",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/c8de0954d71341762f8374212c30cf4d670fa281.jpg",
+  "nome": "Coffee Rush: Grab & Go",
+  "pontos": {
+   "2026-10-04": 107.1,
+   "2026-10-05": 107.1,
+   "2026-10-06": 107.1,
+   "2026-10-07": 107.1,
+   "2026-10-08": 106.94,
+   "2026-10-09": 106.94,
+   "2026-10-10": 106.94,
+   "2026-10-11": 106.94,
+   "2026-10-12": 106.94,
+   "2026-10-13": 92.89,
+   "2026-10-14": 92.89,
+   "2026-10-15": 92.89,
+   "2026-10-16": 92.89,
+   "2026-10-17": 92.89,
+   "2026-10-18": 92.89,
+   "2026-10-19": 92.89,
+   "2026-10-20": 92.89,
+   "2026-10-21": 92.89,
+   "2026-10-22": 92.89,
+   "2026-10-23": 92.89,
+   "2026-10-24": 92.89,
+   "2026-10-25": 92.89,
+   "2026-10-26": 92.89,
+   "2026-10-27": 92.89,
+   "2026-10-28": 92.89,
+   "2026-10-29": 92.89,
+   "2026-10-30": 92.89,
+   "2026-10-31": 91.05,
+   "2026-11-01": 91.05,
+   "2026-11-02": 91.05,
+   "2026-11-03": 89.96,
+   "2026-11-04": 89.99
+  },
+  "principal": false,
+  "tipo": "game"
+ },
  "coffee-rush-inverno": {
   "ano": 2026,
   "bgg": 7.25929,
@@ -30831,6 +31389,51 @@
   "principal": false,
   "tipo": "game"
  },
+ "contrabando": {
+  "ano": 1970,
+  "bgg": 6,
+  "bgg_id": 375774,
+  "editora": "Karto",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/ae58806b8d0f8a8189da125016f9d9ec4fb603fa.jpg",
+  "nome": "Contrabando",
+  "pontos": {
+   "2026-10-04": 71.91,
+   "2026-10-05": 71.91,
+   "2026-10-06": 71.91,
+   "2026-10-07": 71.91,
+   "2026-10-08": 71.91,
+   "2026-10-09": 71.91,
+   "2026-10-10": 71.91,
+   "2026-10-11": 71.91,
+   "2026-10-12": 71.91,
+   "2026-10-13": 71.91,
+   "2026-10-14": 71.91,
+   "2026-10-15": 71.91,
+   "2026-10-16": 71.91,
+   "2026-10-17": 71.91,
+   "2026-10-18": 71.91,
+   "2026-10-19": 71.91,
+   "2026-10-20": 71.91,
+   "2026-10-21": 71.91,
+   "2026-10-22": 71.91,
+   "2026-10-23": 71.91,
+   "2026-10-24": 71.91,
+   "2026-10-25": 71.91,
+   "2026-10-26": 71.91,
+   "2026-10-27": 71.91,
+   "2026-10-28": 71.91,
+   "2026-10-29": 71.91,
+   "2026-10-30": 71.91,
+   "2026-10-31": 71.91,
+   "2026-11-01": 71.91,
+   "2026-11-02": 71.91,
+   "2026-11-03": 71.91,
+   "2026-11-04": 74.39
+  },
+  "principal": false,
+  "tipo": "game"
+ },
  "convidados-indesejados": {
   "ano": 2023,
   "bgg": 7.0929,
@@ -31729,6 +32332,18 @@
   "pontos": {},
   "tipo": "game"
  },
+ "costa-rica": {
+  "ano": 2016,
+  "bgg": 6.19747,
+  "bgg_id": 194100,
+  "editora": "Mayfair Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/be9cf8c16f84182366fcd4e721fffc51dabff9e2.jpg",
+  "nome": "Costa Rica",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
  "costa-ruana": {
   "ano": 2018,
   "bgg": 6.25541,
@@ -32371,6 +32986,18 @@
   "principal": false,
   "tipo": "game"
  },
+ "coyote-petersons-wild-adventure": {
+  "ano": 2022,
+  "bgg": 6.5,
+  "bgg_id": 344247,
+  "editora": "Rather Dashing Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/43602dd1f64d7968d36fd584a966c08c3cbdb251.png",
+  "nome": "Coyote Peterson's Wild Adventure",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
  "cozy-stickerville": {
   "ano": 2026,
   "bgg": 5.94582,
@@ -32379,6 +33006,18 @@
   "editora_br": false,
   "imagem": "https://uploads.comparajogos.com.br/img/62e9874ef1c342e44b97ab68978c6392bdc37d51.png",
   "nome": "Cozy Stickerville",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
+ "crack-list": {
+  "ano": 2023,
+  "bgg": 6.40199,
+  "bgg_id": 373284,
+  "editora": "SAVANA",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/e554ad5669280328b6b560eac7885d55b18ad16a.png",
+  "nome": "Crack List",
   "pontos": {},
   "principal": false,
   "tipo": "game"
@@ -32633,6 +33272,25 @@
   "imagem": "https://uploads.comparajogos.com.br/img/7868c9a3d239eece81e1aaa004e3e25cb4707081.jpg",
   "nome": "Crocodile",
   "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
+ "crocodile-dentist": {
+  "ano": 2006,
+  "bgg": 4.80641,
+  "bgg_id": 10453,
+  "editora": "Winning Moves Games (USA)",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/0fc656ff248d6847058c04907af61caece1edc31.jpg",
+  "nome": "Crocodile Dentist",
+  "pontos": {
+   "2026-10-29": 27.0,
+   "2026-10-30": 27.0,
+   "2026-10-31": 38.9,
+   "2026-11-01": 38.9,
+   "2026-11-03": 27.09,
+   "2026-11-04": 27.09
+  },
   "principal": false,
   "tipo": "game"
  },
@@ -33311,6 +33969,22 @@
   "imagem": "https://uploads.comparajogos.com.br/img/5ca33f0100bd41a919a5df4134853bac86bbf242.jpg",
   "nome": "Cubo",
   "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
+ "cubo-das-emocoes": {
+  "ano": 2024,
+  "bgg": null,
+  "bgg_id": 467828,
+  "editora": "(Independente)",
+  "editora_br": false,
+  "imagem": null,
+  "nome": "Cubo das Emoções",
+  "pontos": {
+   "2026-10-29": 28.96,
+   "2026-11-03": 28.96,
+   "2026-11-04": 27.99
+  },
   "principal": false,
   "tipo": "game"
  },
@@ -34448,6 +35122,30 @@
   "principal": true,
   "tipo": "expansion"
  },
+ "dark-souls-the-board-game-summoned-expansion": {
+  "ano": 2017,
+  "bgg": 7.54546,
+  "bgg_id": 285976,
+  "editora": "Steamforged Games Ltd.",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/ba92d7d1d22f616ae831810c71a3e8d242e46c19.jpg",
+  "nome": "Dark Souls: The Board Game – Summoned Expansion",
+  "pontos": {},
+  "principal": true,
+  "tipo": "expansion"
+ },
+ "dark-souls-the-board-game-the-sunless-city-core-set": {
+  "ano": 2024,
+  "bgg": 6.32143,
+  "bgg_id": 407535,
+  "editora": "Steamforged Games Ltd.",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/a4679db0bb576073344783f878fe8ce485f1a99f.png",
+  "nome": "Dark Souls: The Board Game – The Sunless City Core Set",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
  "dark-souls-the-card-game": {
   "ano": 2018,
   "bgg": 6.74267,
@@ -34679,6 +35377,18 @@
   "pontos": {},
   "tipo": "game"
  },
+ "dc-deck-building-game-arkham-asylum": {
+  "ano": 2025,
+  "bgg": 8.26523,
+  "bgg_id": 428244,
+  "editora": "Cryptozoic Entertainment",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/ae3628b20c0eb004ac9f9ccfe0e34beba40c9913.jpg",
+  "nome": "DC Deck-Building Game: Arkham Asylum",
+  "pontos": {},
+  "principal": true,
+  "tipo": "game"
+ },
  "dc-deck-building-game-crossover-collection-1": {
   "ano": 2022,
   "bgg": 8.09156,
@@ -34769,6 +35479,63 @@
   "nome": "D&D Essentials Kit",
   "pontos": {},
   "tipo": "rpg"
+ },
+ "de-lorc-pour-les-braves": {
+  "ano": 2003,
+  "bgg": 5.59891,
+  "bgg_id": 6824,
+  "editora": "Asmodee",
+  "editora_br": true,
+  "imagem": "https://uploads.comparajogos.com.br/img/ee161090d06d243fa49f9e0621a2430f2a10f4fa.jpg",
+  "nome": "De l'Orc pour les braves",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
+ "de-quem-e-o-reino": {
+  "ano": 2021,
+  "bgg": 6.33333,
+  "bgg_id": 391051,
+  "editora": "Singa Jogos",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/9040feb2acaa4b243a15eebd985e5f4c44ea01af.jpg",
+  "nome": "De Quem É O Reino?",
+  "pontos": {
+   "2026-10-04": 37.09,
+   "2026-10-05": 37.09,
+   "2026-10-06": 37.09,
+   "2026-10-07": 37.09,
+   "2026-10-08": 37.09,
+   "2026-10-09": 37.09,
+   "2026-10-10": 37.09,
+   "2026-10-11": 37.09,
+   "2026-10-12": 37.09,
+   "2026-10-13": 37.09,
+   "2026-10-14": 37.09,
+   "2026-10-15": 37.09,
+   "2026-10-16": 37.09,
+   "2026-10-17": 37.09,
+   "2026-10-18": 37.09,
+   "2026-10-19": 37.09,
+   "2026-10-20": 37.09,
+   "2026-10-21": 37.09,
+   "2026-10-22": 37.09,
+   "2026-10-23": 37.09,
+   "2026-10-24": 37.09,
+   "2026-10-25": 37.09,
+   "2026-10-26": 37.09,
+   "2026-10-27": 37.09,
+   "2026-10-28": 37.09,
+   "2026-10-29": 37.09,
+   "2026-10-30": 37.09,
+   "2026-10-31": 37.09,
+   "2026-11-01": 37.09,
+   "2026-11-02": 37.09,
+   "2026-11-03": 37.09,
+   "2026-11-04": 37.09
+  },
+  "principal": false,
+  "tipo": "game"
  },
  "de-vulgari-eloquentia": {
   "ano": 2010,
@@ -35246,6 +36013,18 @@
   "principal": false,
   "tipo": "game"
  },
+ "deckscape-draculas-castle": {
+  "ano": 2022,
+  "bgg": 6.29143,
+  "bgg_id": 343387,
+  "editora": "MEEPLE",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/23d058241df67fc94d7be1739309630f770df928.png",
+  "nome": "Deckscape: Dracula's Castle",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
  "deckscape-roubo-em-veneza": {
   "ano": 2020,
   "bgg": 6.65344,
@@ -35356,6 +36135,18 @@
   "editora_br": false,
   "imagem": "https://uploads.comparajogos.com.br/img/6419c8f1f7700079bba3899a9c6cf4850856d469.png",
   "nome": "Deckscape: The Mystery of Eldorado",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
+ "decodables": {
+  "ano": 2024,
+  "bgg": 6.38571,
+  "bgg_id": 417879,
+  "editora": "Spin Master Ltd.",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/d5b3fd775683e7b2c673fd88d61e35343d025ebf.png",
+  "nome": "Decodables",
   "pontos": {},
   "principal": false,
   "tipo": "game"
@@ -36378,6 +37169,18 @@
   "principal": false,
   "tipo": "game"
  },
+ "detonate": {
+  "ano": 2025,
+  "bgg": 5.86429,
+  "bgg_id": 455313,
+  "editora": "Lost Boy Entertainment",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/73cfe45dd9fc1dc146592dba5e97c923ae3c9cd5.jpg",
+  "nome": "Detonate",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
  "deus": {
   "ano": 2016,
   "bgg": 7.26783,
@@ -37022,6 +37825,18 @@
   "principal": true,
   "tipo": "game"
  },
+ "dictator-game-rome-tyrant": {
+  "ano": 2023,
+  "bgg": 4.875,
+  "bgg_id": 419190,
+  "editora": "A&B Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/f2076ff808450e433d1ef12890d5a4c592ff06bd.jpg",
+  "nome": "Dictator Game: Rome Tyrant",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
  "die-die-die": {
   "ano": 2017,
   "bgg": 6.89583,
@@ -37190,6 +38005,18 @@
    "2026-11-03": 18.51,
    "2026-11-04": 18.51
   },
+  "tipo": "game"
+ },
+ "diner": {
+  "ano": 2014,
+  "bgg": 6.05234,
+  "bgg_id": 154902,
+  "editora": "Dice Hate Me Studio",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/30abc99e2d9757be84f2ac49a9b6f479a6a09cd5.jpg",
+  "nome": "Diner",
+  "pontos": {},
+  "principal": false,
   "tipo": "game"
  },
  "dingo": {
@@ -37623,6 +38450,18 @@
    "2026-11-03": 142.4,
    "2026-11-04": 142.4
   },
+  "tipo": "game"
+ },
+ "dish-or-disaster": {
+  "ano": 2026,
+  "bgg": null,
+  "bgg_id": 475029,
+  "editora": "Cenvodiq",
+  "editora_br": false,
+  "imagem": null,
+  "nome": "Dish or Disaster",
+  "pontos": {},
+  "principal": false,
   "tipo": "game"
  },
  "disney-coup-artimanhas-ardilosas": {
@@ -38949,6 +39788,96 @@
   },
   "tipo": "expansion"
  },
+ "dixit-signature-adventure-and-mystery": {
+  "ano": 2026,
+  "bgg": null,
+  "bgg_id": 481241,
+  "editora": "Libellud",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/b2d08a6da5088854f705a9a06e3a9c308879ca4d.jpg",
+  "nome": "Dixit: Signature – Adventure and Mystery",
+  "pontos": {
+   "2026-10-04": 53.1,
+   "2026-10-05": 53.1,
+   "2026-10-06": 53.1,
+   "2026-10-07": 53.1,
+   "2026-10-08": 53.1,
+   "2026-10-09": 53.1,
+   "2026-10-10": 53.1,
+   "2026-10-11": 53.1,
+   "2026-10-12": 53.1,
+   "2026-10-13": 53.1,
+   "2026-10-14": 53.1,
+   "2026-10-15": 53.1,
+   "2026-10-16": 53.1,
+   "2026-10-17": 53.81,
+   "2026-10-18": 53.81,
+   "2026-10-19": 53.81,
+   "2026-10-20": 53.81,
+   "2026-10-21": 53.81,
+   "2026-10-22": 53.81,
+   "2026-10-23": 53.81,
+   "2026-10-24": 53.81,
+   "2026-10-25": 53.81,
+   "2026-10-26": 53.81,
+   "2026-10-27": 53.81,
+   "2026-10-28": 53.81,
+   "2026-10-29": 53.81,
+   "2026-10-30": 53.81,
+   "2026-10-31": 53.81,
+   "2026-11-01": 53.81,
+   "2026-11-02": 53.81,
+   "2026-11-03": 45.29,
+   "2026-11-04": 45.29
+  },
+  "principal": false,
+  "tipo": "expansion"
+ },
+ "dixit-signature-adventure-vilains-disney-edition": {
+  "ano": 2026,
+  "bgg": null,
+  "bgg_id": 481242,
+  "editora": "Libellud",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/4e1e8e13472866ea0ec9163050ba5157f21be429.jpg",
+  "nome": "Dixit: Signature – Adventure Vilains: Disney Edition",
+  "pontos": {
+   "2026-10-04": 53.1,
+   "2026-10-05": 53.1,
+   "2026-10-06": 53.1,
+   "2026-10-07": 53.1,
+   "2026-10-08": 53.1,
+   "2026-10-09": 53.1,
+   "2026-10-10": 53.1,
+   "2026-10-11": 53.1,
+   "2026-10-12": 53.1,
+   "2026-10-13": 53.1,
+   "2026-10-14": 53.1,
+   "2026-10-15": 53.1,
+   "2026-10-16": 53.1,
+   "2026-10-17": 53.91,
+   "2026-10-18": 53.91,
+   "2026-10-19": 53.91,
+   "2026-10-20": 53.91,
+   "2026-10-21": 53.91,
+   "2026-10-22": 53.91,
+   "2026-10-23": 53.91,
+   "2026-10-24": 53.91,
+   "2026-10-25": 53.91,
+   "2026-10-26": 53.91,
+   "2026-10-27": 53.91,
+   "2026-10-28": 53.91,
+   "2026-10-29": 53.91,
+   "2026-10-30": 53.91,
+   "2026-10-31": 53.91,
+   "2026-11-01": 53.91,
+   "2026-11-02": 53.91,
+   "2026-11-03": 45.29,
+   "2026-11-04": 45.29
+  },
+  "principal": false,
+  "tipo": "expansion"
+ },
  "dnup": {
   "ano": 2026,
   "bgg": 7.20525,
@@ -39231,6 +40160,96 @@
    "2026-11-04": 66.96
   },
   "principal": true,
+  "tipo": "game"
+ },
+ "dobble-gigante": {
+  "ano": 2025,
+  "bgg": 5.5,
+  "bgg_id": 431838,
+  "editora": "Zygomatic",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/0b73a7c1f149de9fe39ef90bdb3ac3852a163bd2.jpg",
+  "nome": "Dobble Gigante",
+  "pontos": {
+   "2026-10-04": 111.51,
+   "2026-10-05": 111.51,
+   "2026-10-06": 111.51,
+   "2026-10-07": 111.51,
+   "2026-10-08": 111.51,
+   "2026-10-09": 111.51,
+   "2026-10-10": 111.51,
+   "2026-10-11": 111.51,
+   "2026-10-12": 111.51,
+   "2026-10-13": 111.51,
+   "2026-10-14": 111.51,
+   "2026-10-15": 111.51,
+   "2026-10-16": 111.51,
+   "2026-10-17": 111.51,
+   "2026-10-18": 111.51,
+   "2026-10-19": 111.51,
+   "2026-10-20": 111.51,
+   "2026-10-21": 111.51,
+   "2026-10-22": 111.51,
+   "2026-10-23": 111.51,
+   "2026-10-24": 111.51,
+   "2026-10-25": 111.51,
+   "2026-10-26": 111.51,
+   "2026-10-27": 111.51,
+   "2026-10-28": 111.51,
+   "2026-10-29": 111.51,
+   "2026-10-30": 111.51,
+   "2026-10-31": 111.51,
+   "2026-11-01": 111.51,
+   "2026-11-02": 111.51,
+   "2026-11-03": 111.51,
+   "2026-11-04": 111.51
+  },
+  "principal": false,
+  "tipo": "game"
+ },
+ "dobble-the-lord-of-the-rings": {
+  "ano": 2025,
+  "bgg": 6.1,
+  "bgg_id": 451322,
+  "editora": "Zygomatic",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/9dd16b0bd82b1bfcf0f375ba5ad957bc47c3ddb1.jpg",
+  "nome": "Dobble The Lord of the Rings",
+  "pontos": {
+   "2026-10-04": 72.42,
+   "2026-10-05": 72.42,
+   "2026-10-06": 72.42,
+   "2026-10-07": 72.42,
+   "2026-10-08": 89.91,
+   "2026-10-09": 89.91,
+   "2026-10-10": 89.91,
+   "2026-10-11": 89.91,
+   "2026-10-12": 89.91,
+   "2026-10-13": 89.91,
+   "2026-10-14": 89.91,
+   "2026-10-15": 89.91,
+   "2026-10-16": 89.91,
+   "2026-10-17": 89.91,
+   "2026-10-18": 89.91,
+   "2026-10-19": 89.91,
+   "2026-10-20": 89.91,
+   "2026-10-21": 89.91,
+   "2026-10-22": 89.91,
+   "2026-10-23": 89.91,
+   "2026-10-24": 89.91,
+   "2026-10-25": 89.91,
+   "2026-10-26": 89.91,
+   "2026-10-27": 72.42,
+   "2026-10-28": 72.42,
+   "2026-10-29": 72.42,
+   "2026-10-30": 72.42,
+   "2026-10-31": 72.42,
+   "2026-11-01": 72.42,
+   "2026-11-02": 72.42,
+   "2026-11-03": 89.91,
+   "2026-11-04": 89.91
+  },
+  "principal": false,
   "tipo": "game"
  },
  "dobrada-historica-misterios-da-floresta": {
@@ -40488,6 +41507,30 @@
   "principal": true,
   "tipo": "game"
  },
+ "donner-dinner-party": {
+  "ano": 2017,
+  "bgg": 6.21332,
+  "bgg_id": 219638,
+  "editora": "Chronicle Books",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/4b184da839c75e5ae968085fc5c774f1a88e9c23.png",
+  "nome": "Donner Dinner Party",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
+ "dont-bust-100": {
+  "ano": 0,
+  "bgg": null,
+  "bgg_id": 446473,
+  "editora": "Continuum Games",
+  "editora_br": false,
+  "imagem": null,
+  "nome": "Don't Bust 100",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
  "dont-get-got": {
   "ano": 2021,
   "bgg": 6.96092,
@@ -40509,6 +41552,18 @@
   "imagem": "https://uploads.comparajogos.com.br/img/ae34fdb7ca259e40fd4615d383476d032179503d.jpg",
   "nome": "Don't Mess with Cthulhu Deluxe",
   "pontos": {},
+  "tipo": "game"
+ },
+ "dont-quote-me": {
+  "ano": 2003,
+  "bgg": 5.48864,
+  "bgg_id": 10917,
+  "editora": "Wiggles 3D",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/6584f18cc3f74c449fe3289e0016e966c3f62c03.jpg",
+  "nome": "Don't  Quote Me",
+  "pontos": {},
+  "principal": false,
   "tipo": "game"
  },
  "dont-quote-me-sports-illustrated-edition": {
@@ -40917,6 +41972,18 @@
   "principal": false,
   "tipo": "game"
  },
+ "double-take": {
+  "ano": 2012,
+  "bgg": 5.91176,
+  "bgg_id": 121045,
+  "editora": "R&R Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/70c6cca0a40d728b9e663541bdddfda58c23cecd.jpg",
+  "nome": "Double Take",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
  "double-twelve-mexican-train-dominoes": {
   "ano": 2018,
   "bgg": 5.81641,
@@ -40994,6 +42061,18 @@
    "2026-11-03": 94.9,
    "2026-11-04": 94.9
   },
+  "principal": false,
+  "tipo": "game"
+ },
+ "dr-biscuits-radical-road-trip-60-fun-games-to-play-in-your-car": {
+  "ano": 2019,
+  "bgg": 6.83333,
+  "bgg_id": 309513,
+  "editora": "Barry & Jason Games and Entertainment",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/c934821bcaac62ced1d5a182e4f93a73519c370e.png",
+  "nome": "Dr. Biscuits' Radical Road Trip: 60 Fun Games to Play in Your Car",
+  "pontos": {},
   "principal": false,
   "tipo": "game"
  },
@@ -41464,6 +42543,18 @@
   "imagem": "https://uploads.comparajogos.com.br/img/5e624b06ad4f14b58c688479b88dc17a50642e28.png",
   "nome": "Dragonfire",
   "pontos": {},
+  "tipo": "game"
+ },
+ "dragonmasters": {
+  "ano": 2025,
+  "bgg": 3,
+  "bgg_id": 474679,
+  "editora": "A&B Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/166eeca95daa01663fbd36045209f7436afcadba.jpg",
+  "nome": "Dragonmasters",
+  "pontos": {},
+  "principal": false,
   "tipo": "game"
  },
  "dragons-chickens": {
@@ -42760,6 +43851,51 @@
   "pontos": {},
   "tipo": "game"
  },
+ "dungeon-master039s-guide-2024": {
+  "ano": 2024,
+  "bgg": 8.54167,
+  "bgg_id": 405474,
+  "editora": null,
+  "editora_br": null,
+  "imagem": "https://uploads.comparajogos.com.br/img/e7c2a32da133113d4651134800bd40c410141950.jpg",
+  "nome": "Dungeon Master&#039;s Guide (2024)",
+  "pontos": {
+   "2026-10-04": 188.91,
+   "2026-10-05": 188.91,
+   "2026-10-06": 188.91,
+   "2026-10-07": 188.91,
+   "2026-10-08": 188.91,
+   "2026-10-09": 188.91,
+   "2026-10-10": 188.91,
+   "2026-10-11": 188.91,
+   "2026-10-12": 188.91,
+   "2026-10-13": 188.91,
+   "2026-10-14": 188.91,
+   "2026-10-15": 188.91,
+   "2026-10-16": 188.91,
+   "2026-10-17": 188.91,
+   "2026-10-18": 188.91,
+   "2026-10-19": 188.91,
+   "2026-10-20": 188.91,
+   "2026-10-21": 188.91,
+   "2026-10-22": 188.91,
+   "2026-10-23": 188.91,
+   "2026-10-24": 188.91,
+   "2026-10-25": 188.91,
+   "2026-10-26": 188.91,
+   "2026-10-27": 188.91,
+   "2026-10-28": 188.91,
+   "2026-10-29": 188.91,
+   "2026-10-30": 188.91,
+   "2026-10-31": 188.91,
+   "2026-11-01": 188.91,
+   "2026-11-02": 188.91,
+   "2026-11-03": 188.91,
+   "2026-11-04": 188.91
+  },
+  "principal": true,
+  "tipo": "rpg"
+ },
  "dungeon-master039s-screen-curse-of-strahd": {
   "ano": 2016,
   "bgg": 8.5,
@@ -43163,6 +44299,51 @@
   "principal": false,
   "tipo": "game"
  },
+ "dungeons-dragons-5th-edition-players-handbook-2024": {
+  "ano": 2024,
+  "bgg": 7.05556,
+  "bgg_id": 405473,
+  "editora": null,
+  "editora_br": null,
+  "imagem": "https://uploads.comparajogos.com.br/img/f3f312f4ce4e8390bbb1175af598867ab736568d.jpg",
+  "nome": "Dungeons & Dragons (5th Edition): Player’s Handbook (2024)",
+  "pontos": {
+   "2026-10-04": 158.01,
+   "2026-10-05": 158.01,
+   "2026-10-06": 158.01,
+   "2026-10-07": 158.01,
+   "2026-10-08": 158.01,
+   "2026-10-09": 158.01,
+   "2026-10-10": 185.07,
+   "2026-10-11": 185.07,
+   "2026-10-12": 185.07,
+   "2026-10-13": 185.07,
+   "2026-10-14": 185.07,
+   "2026-10-15": 185.07,
+   "2026-10-16": 185.07,
+   "2026-10-17": 185.07,
+   "2026-10-18": 185.07,
+   "2026-10-19": 185.07,
+   "2026-10-20": 185.07,
+   "2026-10-21": 185.07,
+   "2026-10-22": 185.07,
+   "2026-10-23": 185.07,
+   "2026-10-24": 185.07,
+   "2026-10-25": 185.07,
+   "2026-10-26": 185.07,
+   "2026-10-27": 176.54,
+   "2026-10-28": 176.54,
+   "2026-10-29": 176.54,
+   "2026-10-30": 176.54,
+   "2026-10-31": 167.31,
+   "2026-11-01": 167.31,
+   "2026-11-02": 167.31,
+   "2026-11-03": 167.31,
+   "2026-11-04": 167.31
+  },
+  "principal": true,
+  "tipo": "rpg"
+ },
  "dungeons-dragons-attack-wing": {
   "ano": 2014,
   "bgg": 7.13517,
@@ -43280,6 +44461,30 @@
   "nome": "Dungeons & Dragons: Attack Wing – Hobgoblin Troop Expansion Pack",
   "pontos": {},
   "principal": false,
+  "tipo": "expansion"
+ },
+ "dungeons-dragons-attack-wing-movanic-deva-angel-expansion-pack": {
+  "ano": 2014,
+  "bgg": 7.47857,
+  "bgg_id": 161319,
+  "editora": "WizKids",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/45d80a761ef6d42f08bf528011e138a411be093a.jpg",
+  "nome": "Dungeons & Dragons: Attack Wing – Movanic Deva Angel Expansion Pack",
+  "pontos": {},
+  "principal": true,
+  "tipo": "expansion"
+ },
+ "dungeons-dragons-attack-wing-sun-elf-wizard-expansion-pack": {
+  "ano": 2014,
+  "bgg": 7.46818,
+  "bgg_id": 161292,
+  "editora": "WizKids",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/cd83feb73857dfd191da6e75eecd6c457f6e7692.jpg",
+  "nome": "Dungeons & Dragons: Attack Wing – Sun Elf Wizard Expansion Pack",
+  "pontos": {},
+  "principal": true,
   "tipo": "expansion"
  },
  "dungeons-dragons-castle-ravenloft-board-game": {
@@ -44645,6 +45850,51 @@
   },
   "tipo": "game"
  },
+ "eclipse": {
+  "ano": 2009,
+  "bgg": 6.25366,
+  "bgg_id": 11542,
+  "editora": "Gigamic",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/435a0240afa48993fa1cdc34e6c53c4159fc2a1f.jpg",
+  "nome": "Eclipse",
+  "pontos": {
+   "2026-10-04": 1234.9,
+   "2026-10-05": 1234.9,
+   "2026-10-06": 1234.9,
+   "2026-10-07": 1234.9,
+   "2026-10-08": 1234.9,
+   "2026-10-09": 1234.9,
+   "2026-10-10": 1234.9,
+   "2026-10-11": 1234.9,
+   "2026-10-12": 1234.9,
+   "2026-10-13": 1234.9,
+   "2026-10-14": 1234.9,
+   "2026-10-15": 1234.9,
+   "2026-10-16": 1234.9,
+   "2026-10-17": 1234.9,
+   "2026-10-18": 1234.9,
+   "2026-10-19": 1234.9,
+   "2026-10-20": 1234.9,
+   "2026-10-21": 1234.9,
+   "2026-10-22": 1234.9,
+   "2026-10-23": 1234.9,
+   "2026-10-24": 1234.9,
+   "2026-10-25": 1234.9,
+   "2026-10-26": 1234.9,
+   "2026-10-27": 1234.9,
+   "2026-10-28": 1234.9,
+   "2026-10-29": 1234.9,
+   "2026-10-30": 1234.9,
+   "2026-10-31": 1234.9,
+   "2026-11-01": 1234.9,
+   "2026-11-02": 1234.9,
+   "2026-11-03": 1234.9,
+   "2026-11-04": 1234.9
+  },
+  "principal": false,
+  "tipo": "game"
+ },
  "eclipse-new-dawn-for-the-galaxy": {
   "ano": 2015,
   "bgg": 7.82077,
@@ -45212,6 +46462,18 @@
   "principal": false,
   "tipo": "game"
  },
+ "electronic-dream-phone": {
+  "ano": 2009,
+  "bgg": 6.06424,
+  "bgg_id": 6578,
+  "editora": "Fundex",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/610ccab463a8eee49a5d5ce1ee19640fb669e6ae.jpg",
+  "nome": "Electronic Dream Phone",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
  "elementar-a-tumba-do-arqueologo": {
   "ano": 2020,
   "bgg": 6.6108,
@@ -45355,6 +46617,18 @@
   "editora_br": false,
   "imagem": "https://uploads.comparajogos.com.br/img/b6ff23f873e8fd4ae84c079e151b6390f88dc164.jpg",
   "nome": "Elements",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
+ "elemystic": {
+  "ano": 2025,
+  "bgg": 6.36327,
+  "bgg_id": 444024,
+  "editora": "White Wizard Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/f38e00943b5151ce64494659b888896120d29823.gif",
+  "nome": "Elemystic",
   "pontos": {},
   "principal": false,
   "tipo": "game"
@@ -47097,6 +48371,18 @@
   "principal": false,
   "tipo": "game"
  },
+ "epic-spell-wars-of-the-battle-wizards-melee-at-murdershroom-marsh": {
+  "ano": 2017,
+  "bgg": 6.50018,
+  "bgg_id": 221366,
+  "editora": "Cryptozoic Entertainment",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/2816e61a11730d71482ca2aecab48253ecb6000b.png",
+  "nome": "Epic Spell Wars of the Battle Wizards: Melee at Murdershroom Marsh",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
  "equili-tetris": {
   "ano": 2023,
   "bgg": null,
@@ -47626,6 +48912,51 @@
   "pontos": {},
   "principal": false,
   "tipo": "expansion"
+ },
+ "esconde-esconde-toy-story": {
+  "ano": 2026,
+  "bgg": null,
+  "bgg_id": 478473,
+  "editora": "Grok Games",
+  "editora_br": true,
+  "imagem": "https://uploads.comparajogos.com.br/img/ae96177d960e40d118a7422b28cd8e6e27001cac.jpg",
+  "nome": "Esconde Esconde Toy Story",
+  "pontos": {
+   "2026-10-04": 105.22,
+   "2026-10-05": 105.22,
+   "2026-10-06": 105.22,
+   "2026-10-07": 105.22,
+   "2026-10-08": 105.22,
+   "2026-10-09": 105.22,
+   "2026-10-10": 105.22,
+   "2026-10-11": 105.22,
+   "2026-10-12": 105.22,
+   "2026-10-13": 98.99,
+   "2026-10-14": 98.99,
+   "2026-10-15": 98.99,
+   "2026-10-16": 98.99,
+   "2026-10-17": 98.99,
+   "2026-10-18": 98.99,
+   "2026-10-19": 98.99,
+   "2026-10-20": 98.99,
+   "2026-10-21": 98.99,
+   "2026-10-22": 98.99,
+   "2026-10-23": 98.99,
+   "2026-10-24": 98.99,
+   "2026-10-25": 98.99,
+   "2026-10-26": 98.99,
+   "2026-10-27": 98.99,
+   "2026-10-28": 98.99,
+   "2026-10-29": 98.99,
+   "2026-10-30": 98.99,
+   "2026-10-31": 98.99,
+   "2026-11-01": 98.99,
+   "2026-11-02": 98.99,
+   "2026-11-03": 97.52,
+   "2026-11-04": 97.52
+  },
+  "principal": false,
+  "tipo": "game"
  },
  "esdras-e-neemias": {
   "ano": 2024,
@@ -49595,6 +50926,51 @@
   "principal": false,
   "tipo": "game"
  },
+ "exit-the-game-the-professors-last-riddle": {
+  "ano": 2023,
+  "bgg": 7.60785,
+  "bgg_id": 356313,
+  "editora": "KOSMOS",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/01ae79f2c7e7c1aba0c2797d438a5553365d43e5.jpg",
+  "nome": "EXIT: The Game – The Professor's Last Riddle",
+  "pontos": {
+   "2026-10-04": 89.1,
+   "2026-10-05": 89.1,
+   "2026-10-06": 89.1,
+   "2026-10-07": 89.1,
+   "2026-10-08": 89.1,
+   "2026-10-09": 89.1,
+   "2026-10-10": 89.1,
+   "2026-10-11": 89.1,
+   "2026-10-12": 89.1,
+   "2026-10-13": 89.1,
+   "2026-10-14": 89.1,
+   "2026-10-15": 89.1,
+   "2026-10-16": 89.1,
+   "2026-10-17": 89.1,
+   "2026-10-18": 89.1,
+   "2026-10-19": 89.1,
+   "2026-10-20": 89.1,
+   "2026-10-21": 89.1,
+   "2026-10-22": 89.1,
+   "2026-10-23": 89.1,
+   "2026-10-24": 89.1,
+   "2026-10-25": 89.1,
+   "2026-10-26": 89.1,
+   "2026-10-27": 89.1,
+   "2026-10-28": 89.1,
+   "2026-10-29": 89.1,
+   "2026-10-30": 89.1,
+   "2026-10-31": 89.1,
+   "2026-11-01": 89.1,
+   "2026-11-02": 89.1,
+   "2026-11-03": 89.1,
+   "2026-11-04": 89.1
+  },
+  "principal": true,
+  "tipo": "game"
+ },
  "exit-the-game-the-venice-conspiracy": {
   "ano": 2025,
   "bgg": 7.781,
@@ -49694,6 +51070,51 @@
    "2026-11-03": 260.31,
    "2026-11-04": 260.31
   },
+  "tipo": "game"
+ },
+ "exodus-machina": {
+  "ano": 2026,
+  "bgg": 8,
+  "bgg_id": 482226,
+  "editora": "Ludens Spirit",
+  "editora_br": true,
+  "imagem": "https://uploads.comparajogos.com.br/img/049a614248a309813267da889afc0f05801080c9.jpg",
+  "nome": "Exodus Machina",
+  "pontos": {
+   "2026-10-04": 343.17,
+   "2026-10-05": 343.17,
+   "2026-10-06": 343.17,
+   "2026-10-07": 343.17,
+   "2026-10-08": 343.17,
+   "2026-10-09": 343.17,
+   "2026-10-10": 343.17,
+   "2026-10-11": 343.17,
+   "2026-10-12": 343.17,
+   "2026-10-13": 343.17,
+   "2026-10-14": 343.17,
+   "2026-10-15": 343.17,
+   "2026-10-16": 343.17,
+   "2026-10-17": 343.17,
+   "2026-10-18": 343.17,
+   "2026-10-19": 343.17,
+   "2026-10-20": 343.17,
+   "2026-10-21": 343.17,
+   "2026-10-22": 343.17,
+   "2026-10-23": 343.17,
+   "2026-10-24": 343.17,
+   "2026-10-25": 343.17,
+   "2026-10-26": 343.17,
+   "2026-10-27": 343.17,
+   "2026-10-28": 343.17,
+   "2026-10-29": 343.17,
+   "2026-10-30": 343.17,
+   "2026-10-31": 343.17,
+   "2026-11-01": 343.17,
+   "2026-11-02": 343.17,
+   "2026-11-03": 343.17,
+   "2026-11-04": 343.17
+  },
+  "principal": true,
   "tipo": "game"
  },
  "expedition-luxor": {
@@ -51152,6 +52573,18 @@
   "pontos": {},
   "tipo": "game"
  },
+ "far-cry-escape-from-rook-islands": {
+  "ano": 2024,
+  "bgg": 5.084,
+  "bgg_id": 347935,
+  "editora": "Funforge",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/6a1342a7498ef3f8bb533b86d7602b67f9cf4ca0.jpg",
+  "nome": "Far Cry: Escape from Rook Islands",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
  "faraon": {
   "ano": 2016,
   "bgg": 5.79805,
@@ -51699,6 +53132,51 @@
    "2026-11-04": 65.01
   },
   "principal": false,
+  "tipo": "game"
+ },
+ "fazenda-fabulosa": {
+  "ano": 2026,
+  "bgg": 7,
+  "bgg_id": 482961,
+  "editora": "Jelly Monster",
+  "editora_br": true,
+  "imagem": "https://uploads.comparajogos.com.br/img/2b2a5ed9420ecd9a6067939c17d9c3471cb9829f.png",
+  "nome": "Fazenda Fabulosa",
+  "pontos": {
+   "2026-10-04": 31.31,
+   "2026-10-05": 31.31,
+   "2026-10-06": 31.31,
+   "2026-10-07": 31.31,
+   "2026-10-08": 31.31,
+   "2026-10-09": 31.31,
+   "2026-10-10": 31.31,
+   "2026-10-11": 31.31,
+   "2026-10-12": 31.31,
+   "2026-10-13": 31.31,
+   "2026-10-14": 31.31,
+   "2026-10-15": 31.31,
+   "2026-10-16": 31.31,
+   "2026-10-17": 31.31,
+   "2026-10-18": 31.31,
+   "2026-10-19": 31.31,
+   "2026-10-20": 31.31,
+   "2026-10-21": 31.31,
+   "2026-10-22": 31.31,
+   "2026-10-23": 31.31,
+   "2026-10-24": 31.31,
+   "2026-10-25": 31.31,
+   "2026-10-26": 31.31,
+   "2026-10-27": 31.31,
+   "2026-10-28": 31.31,
+   "2026-10-29": 31.31,
+   "2026-10-30": 31.31,
+   "2026-10-31": 31.31,
+   "2026-11-01": 31.31,
+   "2026-11-02": 31.31,
+   "2026-11-03": 31.31,
+   "2026-11-04": 31.31
+  },
+  "principal": true,
   "tipo": "game"
  },
  "fazenda-formidavel": {
@@ -52331,6 +53809,23 @@
    "2026-11-02": 27.81,
    "2026-11-03": 27.81,
    "2026-11-04": 27.81
+  },
+  "principal": false,
+  "tipo": "game"
+ },
+ "fica-a-dica": {
+  "ano": 2022,
+  "bgg": null,
+  "bgg_id": 414862,
+  "editora": "Grow Jogos e Brinquedos",
+  "editora_br": true,
+  "imagem": "https://uploads.comparajogos.com.br/img/f0bd524cf767dfc336f6804e5c85acc7c6041766.jpg",
+  "nome": "#Fica a Dica",
+  "pontos": {
+   "2026-10-29": 79.0,
+   "2026-10-30": 79.0,
+   "2026-11-03": 79.0,
+   "2026-11-04": 79.0
   },
   "principal": false,
   "tipo": "game"
@@ -53546,6 +55041,30 @@
   },
   "tipo": "game"
  },
+ "first-to-worst-after-dark-expansion": {
+  "ano": 2024,
+  "bgg": null,
+  "bgg_id": 464293,
+  "editora": "Dyce Games",
+  "editora_br": false,
+  "imagem": null,
+  "nome": "First to Worst: After Dark Expansion",
+  "pontos": {},
+  "principal": false,
+  "tipo": "expansion"
+ },
+ "first-to-worst-the-party-game-about-how-your-friends-and-family-rank-things": {
+  "ano": 2024,
+  "bgg": 6.71771,
+  "bgg_id": 420370,
+  "editora": "Dyce Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/20c0deec5c64b2338cefc4dcc8dab2701f733a00.jpg",
+  "nome": "First to Worst: The Party Game About How Your Friends and Family Rank Things",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
  "fish-frenzy": {
   "ano": 2016,
   "bgg": 6.03069,
@@ -54189,6 +55708,18 @@
   "principal": false,
   "tipo": "game"
  },
+ "flip-words": {
+  "ano": 2018,
+  "bgg": 5.8,
+  "bgg_id": 278406,
+  "editora": "Evan&#039;s Fun Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/6a2bc81ddb33964c8cd7d2a3d5c6c10052c301ce.jpg",
+  "nome": "Flip Words",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
  "fliptoons": {
   "ano": 2025,
   "bgg": 6.40233,
@@ -54401,6 +55932,18 @@
   "principal": false,
   "tipo": "game"
  },
+ "flow-2025": {
+  "ano": 2025,
+  "bgg": 6.29601,
+  "bgg_id": 434141,
+  "editora": "Brain Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/5cfa7535176f70e3652e322033d1eda100c3f677.jpg",
+  "nome": "Flow (2025)",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
  "flower-fields": {
   "ano": 2024,
   "bgg": 5.7797,
@@ -54409,6 +55952,18 @@
   "editora_br": false,
   "imagem": "https://uploads.comparajogos.com.br/img/2526c93b079483ccfa80c8d246536e065e5997d1.png",
   "nome": "Flower Fields",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
+ "flucht-aus-der-bahn": {
+  "ano": 2024,
+  "bgg": 5,
+  "bgg_id": 431451,
+  "editora": "Riva",
+  "editora_br": false,
+  "imagem": null,
+  "nome": "Flucht aus der Bahn",
   "pontos": {},
   "principal": false,
   "tipo": "game"
@@ -58055,6 +59610,18 @@
   "imagem": "https://uploads.comparajogos.com.br/img/23a9764d1105e99f25574edffcebe69bc6bb1564.jpg",
   "nome": "Gataria",
   "pontos": {},
+  "tipo": "game"
+ },
+ "gator-golf": {
+  "ano": 2020,
+  "bgg": 5.04688,
+  "bgg_id": 104756,
+  "editora": "Goliath Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/d9700a036fa44c5ebf08f5bf3522f49ea97f981f.jpg",
+  "nome": "Gator Golf",
+  "pontos": {},
+  "principal": false,
   "tipo": "game"
  },
  "gaudi": {
@@ -62169,6 +63736,18 @@
   "principal": true,
   "tipo": "game"
  },
+ "hands": {
+  "ano": 2019,
+  "bgg": 6.19772,
+  "bgg_id": 171950,
+  "editora": "White Goblin Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/8a25d0d2c5671f4726d91ba35144436feefb69f5.jpg",
+  "nome": "Hands",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
  "hangman": {
   "ano": 1894,
   "bgg": 4.28222,
@@ -62177,6 +63756,18 @@
   "editora_br": true,
   "imagem": "https://uploads.comparajogos.com.br/img/6775887562df6066649fc80dfbd930fa08af1153.jpg",
   "nome": "Hangman",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
+ "hangry": {
+  "ano": 2021,
+  "bgg": 3.75,
+  "bgg_id": 375982,
+  "editora": "Big G Creative",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/cfa687ad374438c19bc3ef3ce5f12731b33e6362.jpg",
+  "nome": "Hangry",
   "pontos": {},
   "principal": false,
   "tipo": "game"
@@ -62689,6 +64280,26 @@
   },
   "principal": false,
   "tipo": "game"
+ },
+ "harry-potter-hogwarts-battle-the-charms-and-potions-expansion": {
+  "ano": 2020,
+  "bgg": 7.75839,
+  "bgg_id": 304297,
+  "editora": "The OP",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/58b23146841bf6214c739ac8ddd7d2426b398a4a.jpg",
+  "nome": "Harry Potter: Hogwarts Battle – The Charms and Potions Expansion",
+  "pontos": {
+   "2026-10-29": 499.0,
+   "2026-10-30": 499.0,
+   "2026-10-31": 499.0,
+   "2026-11-01": 499.0,
+   "2026-11-02": 499.0,
+   "2026-11-03": 499.0,
+   "2026-11-04": 499.0
+  },
+  "principal": true,
+  "tipo": "expansion"
  },
  "harry-potter-hogwarts-battle-the-monster-box-of-monsters-expansion": {
   "ano": 2017,
@@ -63223,6 +64834,18 @@
    "2026-11-04": 34.32
   },
   "tipo": "expansion"
+ },
+ "head-trip": {
+  "ano": 2023,
+  "bgg": 5.83056,
+  "bgg_id": 402150,
+  "editora": "Cards Against Humanity  LLC",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/27ece80a75594b8251e011cf95d3ee629c7bbafb.jpg",
+  "nome": "Head Trip",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
  },
  "heads-will-roll": {
   "ano": 2023,
@@ -64713,6 +66336,26 @@
   "principal": false,
   "tipo": "game"
  },
+ "historias-ao-cubo": {
+  "ano": 2020,
+  "bgg": null,
+  "bgg_id": 464999,
+  "editora": "Ludens Spirit",
+  "editora_br": true,
+  "imagem": null,
+  "nome": "Histórias ao Cubo",
+  "pontos": {
+   "2026-10-29": 60.29,
+   "2026-10-30": 46.31,
+   "2026-10-31": 46.31,
+   "2026-11-01": 46.31,
+   "2026-11-02": 46.31,
+   "2026-11-03": 46.31,
+   "2026-11-04": 46.31
+  },
+  "principal": false,
+  "tipo": "game"
+ },
  "historias-de-pescador": {
   "ano": 2019,
   "bgg": 7.41667,
@@ -65609,6 +67252,18 @@
   },
   "tipo": "game"
  },
+ "horrible-couple": {
+  "ano": 2025,
+  "bgg": 6.12609,
+  "bgg_id": 455803,
+  "editora": "Exploding Kittens",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/0bcb0cb43a836038bf3149f9112487d42df90405.jpg",
+  "nome": "Horrible Couple",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
  "horrible-house-pets": {
   "ano": 2018,
   "bgg": 6.5,
@@ -66185,6 +67840,18 @@
   "editora_br": false,
   "imagem": "https://uploads.comparajogos.com.br/img/94fed444f78b5e40d46e3054734af949eaa8bb49.jpg",
   "nome": "Hurlyburly",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
+ "hurry-up-chicken-butt": {
+  "ano": 2023,
+  "bgg": 5.94362,
+  "bgg_id": 394551,
+  "editora": "Exploding Kittens",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/ba4803bf63bcbc725d035371001c85de9087d515.png",
+  "nome": "Hurry Up Chicken Butt",
   "pontos": {},
   "principal": false,
   "tipo": "game"
@@ -68010,6 +69677,26 @@
   "pontos": {},
   "tipo": "game"
  },
+ "inferno-papal-bulls-mini-expansion": {
+  "ano": 2024,
+  "bgg": 7.62424,
+  "bgg_id": 430092,
+  "editora": "Red Mojo",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/b3267a2dcedabb642066cc733a6951b1fe957db0.jpg",
+  "nome": "Inferno: Papal Bulls – Mini Expansion",
+  "pontos": {
+   "2026-10-29": 74.9,
+   "2026-10-30": 74.9,
+   "2026-10-31": 74.9,
+   "2026-11-01": 74.9,
+   "2026-11-02": 74.9,
+   "2026-11-03": 74.9,
+   "2026-11-04": 74.9
+  },
+  "principal": true,
+  "tipo": "expansion"
+ },
  "infiltrado": {
   "ano": 2024,
   "bgg": 6.52127,
@@ -68603,6 +70290,63 @@
    "2026-11-04": 63.48
   },
   "tipo": "expansion"
+ },
+ "inverted-dice": {
+  "ano": 2015,
+  "bgg": 5.32375,
+  "bgg_id": 190950,
+  "editora": "OffCircle",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/a62b2645540522e814de0a230e24ba8975e9642d.jpg",
+  "nome": "Inverted Dice",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
+ "investigato": {
+  "ano": 2023,
+  "bgg": 7,
+  "bgg_id": 464841,
+  "editora": "Game Office",
+  "editora_br": true,
+  "imagem": null,
+  "nome": "Investigato",
+  "pontos": {
+   "2026-10-04": 51.99,
+   "2026-10-05": 51.99,
+   "2026-10-06": 51.99,
+   "2026-10-07": 51.99,
+   "2026-10-08": 51.99,
+   "2026-10-09": 51.99,
+   "2026-10-10": 51.99,
+   "2026-10-11": 51.99,
+   "2026-10-12": 51.99,
+   "2026-10-13": 51.99,
+   "2026-10-14": 51.99,
+   "2026-10-15": 51.99,
+   "2026-10-16": 51.99,
+   "2026-10-17": 51.99,
+   "2026-10-18": 51.99,
+   "2026-10-19": 51.99,
+   "2026-10-20": 51.99,
+   "2026-10-21": 51.99,
+   "2026-10-22": 51.99,
+   "2026-10-23": 51.99,
+   "2026-10-24": 51.99,
+   "2026-10-25": 51.99,
+   "2026-10-26": 51.99,
+   "2026-10-27": 51.99,
+   "2026-10-28": 51.99,
+   "2026-10-29": 51.99,
+   "2026-10-30": 51.99,
+   "2026-10-31": 51.99,
+   "2026-11-01": 51.99,
+   "2026-11-02": 51.99,
+   "2026-11-03": 51.99,
+   "2026-11-04": 51.99
+  },
+  "principal": true,
+  "tipo": "game"
  },
  "invocathlon": {
   "ano": 2025,
@@ -70123,6 +71867,18 @@
   "principal": false,
   "tipo": "game"
  },
+ "jogo-family-feud-o-racha-das-familias-brasileiras": {
+  "ano": 2006,
+  "bgg": 5.50688,
+  "bgg_id": 5312,
+  "editora": "Estrela",
+  "editora_br": true,
+  "imagem": "https://uploads.comparajogos.com.br/img/38c27ca4b505a6e7a1da3694d7819ad3aa899ba4.jpg",
+  "nome": "Jogo Family Feud O racha das familias brasileiras!",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
  "jogo-liga-da-justica": {
   "ano": 2017,
   "bgg": 7.1,
@@ -70852,6 +72608,18 @@
   "principal": false,
   "tipo": "game"
  },
+ "justin-bieber-backstage-pass-game": {
+  "ano": 2010,
+  "bgg": 3.3,
+  "bgg_id": 88263,
+  "editora": "The Canadian Group",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/43aa24ad55ed1e93aca0f48f73a110beefa573f8.jpg",
+  "nome": "Justin Bieber Backstage Pass Game",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
  "k2": {
   "ano": 2015,
   "bgg": 7.00087,
@@ -70873,6 +72641,18 @@
   "nome": "K3",
   "pontos": {},
   "principal": false,
+  "tipo": "game"
+ },
+ "kaan-cities-in-the-sky": {
+  "ano": 2027,
+  "bgg": 8.63864,
+  "bgg_id": 472132,
+  "editora": "Detestable Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/5713f8d35ce876c7d029139205be5d432c9308f8.png",
+  "nome": "Ka'an: Cities in the Sky",
+  "pontos": {},
+  "principal": true,
   "tipo": "game"
  },
  "kaleidos-junior": {
@@ -71374,6 +73154,51 @@
    "2026-11-02": 157.99,
    "2026-11-03": 157.99,
    "2026-11-04": 157.99
+  },
+  "principal": false,
+  "tipo": "game"
+ },
+ "katamino-tower": {
+  "ano": 2023,
+  "bgg": 6.41395,
+  "bgg_id": 379555,
+  "editora": "Gigamic",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/9ef442c2dc21b3409a1b33ee9c99094c4f8f3b2d.png",
+  "nome": "Katamino Tower",
+  "pontos": {
+   "2026-10-04": 232.39,
+   "2026-10-05": 232.39,
+   "2026-10-06": 232.39,
+   "2026-10-07": 232.39,
+   "2026-10-08": 232.39,
+   "2026-10-09": 232.39,
+   "2026-10-10": 232.39,
+   "2026-10-11": 232.39,
+   "2026-10-12": 232.39,
+   "2026-10-13": 232.39,
+   "2026-10-14": 232.39,
+   "2026-10-15": 232.39,
+   "2026-10-16": 232.39,
+   "2026-10-17": 232.39,
+   "2026-10-18": 232.39,
+   "2026-10-19": 232.39,
+   "2026-10-20": 232.39,
+   "2026-10-21": 232.39,
+   "2026-10-22": 232.39,
+   "2026-10-23": 232.39,
+   "2026-10-24": 232.39,
+   "2026-10-25": 232.39,
+   "2026-10-26": 232.39,
+   "2026-10-27": 232.39,
+   "2026-10-28": 232.39,
+   "2026-10-29": 232.39,
+   "2026-10-30": 232.39,
+   "2026-10-31": 232.39,
+   "2026-11-01": 232.39,
+   "2026-11-02": 232.39,
+   "2026-11-03": 232.39,
+   "2026-11-04": 232.39
   },
   "principal": false,
   "tipo": "game"
@@ -74028,6 +75853,18 @@
   "principal": false,
   "tipo": "game"
  },
+ "know-thyself": {
+  "ano": 2025,
+  "bgg": 6.38889,
+  "bgg_id": 414885,
+  "editora": "(Independente)",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/c2b6c6f00f8aba9e824285d6bb83fb7c4351d6cf.jpg",
+  "nome": "Know Thyself",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
  "knuckle-sammich-a-kobolds-ate-my-baby-card-game": {
   "ano": 2016,
   "bgg": 5.43548,
@@ -75107,6 +76944,52 @@
   "principal": true,
   "tipo": "game"
  },
+ "lalala-expansao-pop": {
+  "ano": 2026,
+  "bgg": 9,
+  "bgg_id": 472111,
+  "editora": "Party Games Brasil",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/154706a8129861ba15abbe3028f61cb27d8e72ea.png",
+  "nome": "LaLaLa: Expansão Pop",
+  "pontos": {
+   "2026-10-04": 22.41,
+   "2026-10-05": 22.41,
+   "2026-10-06": 22.41,
+   "2026-10-07": 22.41,
+   "2026-10-08": 22.41,
+   "2026-10-09": 22.41,
+   "2026-10-10": 22.41,
+   "2026-10-11": 22.41,
+   "2026-10-12": 22.41,
+   "2026-10-13": 22.41
+  },
+  "principal": true,
+  "tipo": "expansion"
+ },
+ "lalala-expansao-rock": {
+  "ano": 2026,
+  "bgg": 9,
+  "bgg_id": 472110,
+  "editora": "Party Games Brasil",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/19bccddb40497d69c0e9a08c12283f8f8fbd64f1.png",
+  "nome": "LaLaLa: Expansão Rock",
+  "pontos": {
+   "2026-10-04": 22.41,
+   "2026-10-05": 22.41,
+   "2026-10-06": 22.41,
+   "2026-10-07": 22.41,
+   "2026-10-08": 22.41,
+   "2026-10-09": 22.41,
+   "2026-10-10": 22.41,
+   "2026-10-11": 22.41,
+   "2026-10-12": 22.41,
+   "2026-10-13": 22.41
+  },
+  "principal": true,
+  "tipo": "expansion"
+ },
  "lambeijocas": {
   "ano": 2024,
   "bgg": 5.93038,
@@ -75197,6 +77080,26 @@
   },
   "tipo": "game"
  },
+ "lance-final": {
+  "ano": 1977,
+  "bgg": 5.27385,
+  "bgg_id": 6186,
+  "editora": "Estrela",
+  "editora_br": true,
+  "imagem": "https://uploads.comparajogos.com.br/img/16184f20c3a056484f701fd1136e013f1eda97ef.png",
+  "nome": "Lance Final",
+  "pontos": {
+   "2026-10-29": 54.0,
+   "2026-10-30": 54.0,
+   "2026-10-31": 54.0,
+   "2026-11-01": 54.0,
+   "2026-11-02": 54.0,
+   "2026-11-03": 54.0,
+   "2026-11-04": 54.0
+  },
+  "principal": false,
+  "tipo": "game"
+ },
  "landlord": {
   "ano": 1998,
   "bgg": 5.92097,
@@ -75284,6 +77187,18 @@
   "editora_br": false,
   "imagem": "https://uploads.comparajogos.com.br/img/a9f4f33e12908d9f2eb99cdffade1af906119416.jpg",
   "nome": "Last Call: The Bartender Game",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
+ "last-chip-standing-devils-luck": {
+  "ano": 2017,
+  "bgg": 5.02778,
+  "bgg_id": 219698,
+  "editora": "Brybelly",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/a4e4a21347812992a2731dcabc32c1fa4c52a2d1.jpg",
+  "nome": "Last Chip Standing: Devil's Luck",
   "pontos": {},
   "principal": false,
   "tipo": "game"
@@ -76185,6 +78100,51 @@
   "principal": false,
   "tipo": "game"
  },
+ "lemonade-stand": {
+  "ano": 2012,
+  "bgg": 5.84378,
+  "bgg_id": 104655,
+  "editora": "Mayday Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/3ab0de6255969c8c04b500ac8865d2ce61e16841.jpg",
+  "nome": "Lemonade Stand",
+  "pontos": {
+   "2026-10-04": 92.99,
+   "2026-10-05": 92.99,
+   "2026-10-06": 92.99,
+   "2026-10-07": 92.99,
+   "2026-10-08": 92.99,
+   "2026-10-09": 92.99,
+   "2026-10-10": 92.99,
+   "2026-10-11": 92.99,
+   "2026-10-12": 92.99,
+   "2026-10-13": 92.99,
+   "2026-10-14": 92.99,
+   "2026-10-15": 92.99,
+   "2026-10-16": 92.99,
+   "2026-10-17": 92.99,
+   "2026-10-18": 92.99,
+   "2026-10-19": 92.99,
+   "2026-10-20": 92.99,
+   "2026-10-21": 92.99,
+   "2026-10-22": 92.99,
+   "2026-10-23": 92.99,
+   "2026-10-24": 92.99,
+   "2026-10-25": 92.99,
+   "2026-10-26": 92.99,
+   "2026-10-27": 92.99,
+   "2026-10-28": 92.99,
+   "2026-10-29": 92.99,
+   "2026-10-30": 92.99,
+   "2026-10-31": 92.99,
+   "2026-11-01": 92.99,
+   "2026-11-02": 92.99,
+   "2026-11-03": 92.99,
+   "2026-11-04": 92.99
+  },
+  "principal": false,
+  "tipo": "game"
+ },
  "lemur": {
   "ano": 2024,
   "bgg": 5.27778,
@@ -76401,6 +78361,18 @@
   "imagem": "https://uploads.comparajogos.com.br/img/ad91787d7070110f911aa196799a6b0685ec1a1f.jpg",
   "nome": "Letter Drop",
   "pontos": {},
+  "tipo": "game"
+ },
+ "letter-rip-the-game-of-famous-names": {
+  "ano": 2011,
+  "bgg": 5,
+  "bgg_id": 171075,
+  "editora": "University Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/1b18c2795d97809f03fd166f9dbdea8d494cc258.jpg",
+  "nome": "Letter Rip: The Game of Famous Names",
+  "pontos": {},
+  "principal": false,
   "tipo": "game"
  },
  "letters-from-whitechapel": {
@@ -76945,6 +78917,18 @@
   "principal": false,
   "tipo": "game"
  },
+ "like-minds": {
+  "ano": 2004,
+  "bgg": 5.75245,
+  "bgg_id": 13357,
+  "editora": "Pressman Toy Corp.",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/7785e5b6fae9e3d04187e1b23bcfc96783dfe132.jpg",
+  "nome": "Like Minds",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
  "lince": {
   "ano": 1998,
   "bgg": 5.5354,
@@ -77306,6 +79290,18 @@
    "2026-11-03": 181.24,
    "2026-11-04": 181.24
   },
+  "tipo": "game"
+ },
+ "lizzy-loves-darcy-a-jane-austen-matchmaking-game": {
+  "ano": 2021,
+  "bgg": 4.60714,
+  "bgg_id": 354209,
+  "editora": "Clarkson Potter",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/a788407ef22d2cbd69c0c2f281cf35059b5493a2.jpg",
+  "nome": "Lizzy Loves Darcy: A Jane Austen Matchmaking Game",
+  "pontos": {},
+  "principal": false,
   "tipo": "game"
  },
  "llama-llama": {
@@ -78660,6 +80656,51 @@
    "2026-10-31": 39.87,
    "2026-11-01": 39.87,
    "2026-11-02": 39.87,
+   "2026-11-03": 33.95,
+   "2026-11-04": 33.95
+  },
+  "principal": false,
+  "tipo": "game"
+ },
+ "ludoteca-disney-o-urisinho-pooh": {
+  "ano": 2026,
+  "bgg": null,
+  "bgg_id": 479919,
+  "editora": "Grok Games",
+  "editora_br": true,
+  "imagem": "https://uploads.comparajogos.com.br/img/1ba8821884230a388d29bcab34fa13394d098ff1.png",
+  "nome": "Ludoteca Disney: O Urisinho Pooh",
+  "pontos": {
+   "2026-10-04": 40.31,
+   "2026-10-05": 40.31,
+   "2026-10-06": 40.31,
+   "2026-10-07": 40.31,
+   "2026-10-08": 40.31,
+   "2026-10-09": 40.31,
+   "2026-10-10": 40.31,
+   "2026-10-11": 40.31,
+   "2026-10-12": 40.31,
+   "2026-10-13": 40.31,
+   "2026-10-14": 40.31,
+   "2026-10-15": 40.31,
+   "2026-10-16": 40.31,
+   "2026-10-17": 40.31,
+   "2026-10-18": 40.31,
+   "2026-10-19": 40.31,
+   "2026-10-20": 40.31,
+   "2026-10-21": 40.31,
+   "2026-10-22": 40.31,
+   "2026-10-23": 40.41,
+   "2026-10-24": 40.41,
+   "2026-10-25": 40.41,
+   "2026-10-26": 40.41,
+   "2026-10-27": 40.41,
+   "2026-10-28": 40.41,
+   "2026-10-29": 40.41,
+   "2026-10-30": 40.41,
+   "2026-10-31": 40.41,
+   "2026-11-01": 40.41,
+   "2026-11-02": 40.41,
    "2026-11-03": 33.95,
    "2026-11-04": 33.95
   },
@@ -80324,6 +82365,18 @@
   "principal": false,
   "tipo": "game"
  },
+ "majority": {
+  "ano": 1995,
+  "bgg": 5,
+  "bgg_id": 41330,
+  "editora": "(Independente)",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/ff1c2b6bac2bd9fd68c830e4ab59ec5a4705acce.jpg",
+  "nome": "Majority",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
  "mala-e-cuia": {
   "ano": 2025,
   "bgg": 8.8,
@@ -81311,6 +83364,18 @@
   "pontos": {},
   "tipo": "game"
  },
+ "mares-de-seis-lados": {
+  "ano": 2026,
+  "bgg": 7.44929,
+  "bgg_id": 462764,
+  "editora": "Meeple BR Jogos",
+  "editora_br": true,
+  "imagem": "https://uploads.comparajogos.com.br/img/2a0b78707be17dca790026093a11f5d095f59471.jpg",
+  "nome": "Mares de Seis Lados",
+  "pontos": {},
+  "principal": true,
+  "tipo": "game"
+ },
  "mario-kart-racing-deluxe": {
   "ano": 2021,
   "bgg": null,
@@ -81468,6 +83533,18 @@
    "2026-11-03": 464.07,
    "2026-11-04": 464.07
   },
+  "tipo": "game"
+ },
+ "marry-date-or-dump": {
+  "ano": 2003,
+  "bgg": 4.29355,
+  "bgg_id": 10325,
+  "editora": "DCK Wallace",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/e5f5b635dbe74338a2f4d5ca3ef50dd9910c9f67.jpg",
+  "nome": "Marry, Date or Dump?",
+  "pontos": {},
+  "principal": false,
   "tipo": "game"
  },
  "marrying-mr-darcy": {
@@ -82068,6 +84145,18 @@
   "pontos": {},
   "tipo": "expansion"
  },
+ "marvel-champions-the-card-game-winter-soldier-hero-pack": {
+  "ano": 2025,
+  "bgg": 8.45974,
+  "bgg_id": 446593,
+  "editora": "Fantasy Flight Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/70daddafa0a917000dfb34cb4af43b882eb653b7.png",
+  "nome": "Marvel Champions: The Card Game – Winter Soldier Hero Pack",
+  "pontos": {},
+  "principal": true,
+  "tipo": "expansion"
+ },
  "marvel-champions-the-card-game-wolverine-hero-pack": {
   "ano": 2022,
   "bgg": 8.61446,
@@ -82110,6 +84199,51 @@
   "imagem": "https://uploads.comparajogos.com.br/img/bb914a87feb957037b45ab605323487b8bf099e0.jpg",
   "nome": "Marvel Contest of Champions: Battlerealm",
   "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
+ "marvel-corrida-magica": {
+  "ano": 2023,
+  "bgg": null,
+  "bgg_id": 464856,
+  "editora": "Copag Cards",
+  "editora_br": true,
+  "imagem": null,
+  "nome": "Marvel Corrida Mágica",
+  "pontos": {
+   "2026-10-04": 98.91,
+   "2026-10-05": 98.91,
+   "2026-10-06": 98.91,
+   "2026-10-07": 98.91,
+   "2026-10-08": 98.91,
+   "2026-10-09": 98.91,
+   "2026-10-10": 98.91,
+   "2026-10-11": 98.91,
+   "2026-10-12": 98.91,
+   "2026-10-13": 98.91,
+   "2026-10-14": 98.91,
+   "2026-10-15": 98.91,
+   "2026-10-16": 98.91,
+   "2026-10-17": 98.91,
+   "2026-10-18": 98.91,
+   "2026-10-19": 98.91,
+   "2026-10-20": 98.91,
+   "2026-10-21": 98.91,
+   "2026-10-22": 98.91,
+   "2026-10-23": 98.91,
+   "2026-10-24": 98.91,
+   "2026-10-25": 98.91,
+   "2026-10-26": 98.91,
+   "2026-10-27": 98.91,
+   "2026-10-28": 98.91,
+   "2026-10-29": 91.72,
+   "2026-10-30": 91.72,
+   "2026-10-31": 91.72,
+   "2026-11-01": 91.72,
+   "2026-11-02": 91.72,
+   "2026-11-03": 91.72,
+   "2026-11-04": 91.72
+  },
   "principal": false,
   "tipo": "game"
  },
@@ -83362,6 +85496,18 @@
   "principal": false,
   "tipo": "game"
  },
+ "masques": {
+  "ano": 2016,
+  "bgg": 6.45422,
+  "bgg_id": 65673,
+  "editora": "Cool Mini Or Not",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/1a1e3530f656e54bcab27f6934718d170b15217f.jpg",
+  "nome": "Masques",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
  "mass-effect-the-board-game-priority-hagalaz": {
   "ano": 2024,
   "bgg": 6.69929,
@@ -83619,6 +85765,25 @@
    "2026-11-04": 46.41
   },
   "principal": true,
+  "tipo": "game"
+ },
+ "master-junior": {
+  "ano": 1986,
+  "bgg": null,
+  "bgg_id": 464977,
+  "editora": "Grow Jogos e Brinquedos",
+  "editora_br": true,
+  "imagem": null,
+  "nome": "Master Junior",
+  "pontos": {
+   "2026-10-29": 115.5,
+   "2026-10-30": 115.5,
+   "2026-10-31": 115.5,
+   "2026-11-01": 115.5,
+   "2026-11-03": 115.5,
+   "2026-11-04": 115.5
+  },
+  "principal": false,
   "tipo": "game"
  },
  "master-of-orion-the-board-game": {
@@ -84298,6 +86463,51 @@
   "nome": "Medusa Oschophoria",
   "pontos": {},
   "principal": true,
+  "tipo": "game"
+ },
+ "meeple-ataca": {
+  "ano": 2025,
+  "bgg": null,
+  "bgg_id": 467742,
+  "editora": "Ludens Spirit",
+  "editora_br": true,
+  "imagem": null,
+  "nome": "Meeple Ataca",
+  "pontos": {
+   "2026-10-04": 18.49,
+   "2026-10-05": 18.49,
+   "2026-10-06": 18.49,
+   "2026-10-07": 18.49,
+   "2026-10-08": 18.49,
+   "2026-10-09": 18.49,
+   "2026-10-10": 18.49,
+   "2026-10-11": 18.49,
+   "2026-10-12": 18.49,
+   "2026-10-13": 18.49,
+   "2026-10-14": 18.49,
+   "2026-10-15": 18.49,
+   "2026-10-16": 18.49,
+   "2026-10-17": 18.49,
+   "2026-10-18": 18.49,
+   "2026-10-19": 18.49,
+   "2026-10-20": 18.49,
+   "2026-10-21": 18.49,
+   "2026-10-22": 18.49,
+   "2026-10-23": 18.49,
+   "2026-10-24": 18.49,
+   "2026-10-25": 18.49,
+   "2026-10-26": 18.49,
+   "2026-10-27": 18.49,
+   "2026-10-28": 18.49,
+   "2026-10-29": 18.49,
+   "2026-10-30": 18.49,
+   "2026-10-31": 18.49,
+   "2026-11-01": 18.49,
+   "2026-11-02": 18.49,
+   "2026-11-03": 18.49,
+   "2026-11-04": 18.49
+  },
+  "principal": false,
   "tipo": "game"
  },
  "meeple-br-jogos-promo-pack-1": {
@@ -86283,6 +88493,51 @@
   "principal": false,
   "tipo": "game"
  },
+ "mimica-picante": {
+  "ano": 2024,
+  "bgg": null,
+  "bgg_id": 466535,
+  "editora": "(Independente)",
+  "editora_br": false,
+  "imagem": null,
+  "nome": "Mimica Picante",
+  "pontos": {
+   "2026-10-04": 29.79,
+   "2026-10-05": 29.79,
+   "2026-10-06": 29.79,
+   "2026-10-07": 29.79,
+   "2026-10-08": 29.79,
+   "2026-10-09": 29.79,
+   "2026-10-10": 29.79,
+   "2026-10-11": 29.79,
+   "2026-10-12": 29.79,
+   "2026-10-13": 29.79,
+   "2026-10-14": 29.79,
+   "2026-10-15": 29.79,
+   "2026-10-16": 29.79,
+   "2026-10-17": 29.79,
+   "2026-10-18": 29.79,
+   "2026-10-19": 29.79,
+   "2026-10-20": 29.79,
+   "2026-10-21": 29.79,
+   "2026-10-22": 29.79,
+   "2026-10-23": 29.79,
+   "2026-10-24": 29.79,
+   "2026-10-25": 29.79,
+   "2026-10-26": 29.79,
+   "2026-10-27": 29.79,
+   "2026-10-28": 29.79,
+   "2026-10-29": 29.79,
+   "2026-10-30": 29.79,
+   "2026-10-31": 29.79,
+   "2026-11-01": 29.79,
+   "2026-11-02": 29.79,
+   "2026-11-03": 29.79,
+   "2026-11-04": 29.79
+  },
+  "principal": false,
+  "tipo": "game"
+ },
  "mind-invaders": {
   "ano": 2025,
   "bgg": 7,
@@ -87711,6 +89966,25 @@
   "principal": false,
   "tipo": "game"
  },
+ "monopoly-barbie": {
+  "ano": 2023,
+  "bgg": 5.75,
+  "bgg_id": 403399,
+  "editora": "Hasbro",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/f120c3070206e8e0843bfb0eaee968c3e24c591e.jpg",
+  "nome": "Monopoly: Barbie",
+  "pontos": {
+   "2026-10-29": 349.9,
+   "2026-10-30": 349.9,
+   "2026-10-31": 349.9,
+   "2026-11-02": 349.9,
+   "2026-11-03": 349.9,
+   "2026-11-04": 349.9
+  },
+  "principal": false,
+  "tipo": "game"
+ },
  "monopoly-bid": {
   "ano": 2020,
   "bgg": 5.71979,
@@ -87767,6 +90041,25 @@
   "principal": false,
   "tipo": "game"
  },
+ "monopoly-disney-mickey-and-friends": {
+  "ano": 2022,
+  "bgg": 6.33333,
+  "bgg_id": 411227,
+  "editora": "Hasbro",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/61f071ba2f9b44fa70913688e3d917e952fea542.jpg",
+  "nome": "Monopoly: Disney Mickey and Friends",
+  "pontos": {
+   "2026-10-29": 469.9,
+   "2026-10-30": 469.9,
+   "2026-11-01": 469.9,
+   "2026-11-02": 469.9,
+   "2026-11-03": 469.9,
+   "2026-11-04": 469.9
+  },
+  "principal": false,
+  "tipo": "game"
+ },
  "monopoly-electronic-banking": {
   "ano": 2013,
   "bgg": 4.90121,
@@ -87788,6 +90081,25 @@
   "imagem": "https://uploads.comparajogos.com.br/img/188f63e66ba82e4d17970948539603f994dddb81.png",
   "nome": "Monopoly Empire",
   "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
+ "monopoly-f1": {
+  "ano": 2026,
+  "bgg": 6.75,
+  "bgg_id": 478771,
+  "editora": "Hasbro",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/4743f6ae8d76ed34fa53281419f0eb820db42be1.jpg",
+  "nome": "Monopoly F1",
+  "pontos": {
+   "2026-10-29": 299.99,
+   "2026-10-30": 299.99,
+   "2026-10-31": 349.99,
+   "2026-11-02": 349.99,
+   "2026-11-03": 349.99,
+   "2026-11-04": 349.99
+  },
   "principal": false,
   "tipo": "game"
  },
@@ -87859,6 +90171,65 @@
   "principal": false,
   "tipo": "game"
  },
+ "monopoly-go-to-jail": {
+  "ano": 2025,
+  "bgg": 6.48769,
+  "bgg_id": 436810,
+  "editora": "Hasbro",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/9ab16e46ec7334394a9eb025d190b1b6002be8f6.jpg",
+  "nome": "Monopoly: Go to Jail",
+  "pontos": {
+   "2026-10-29": 78.99,
+   "2026-10-30": 78.99,
+   "2026-10-31": 78.99,
+   "2026-11-01": 78.99,
+   "2026-11-02": 78.99,
+   "2026-11-03": 78.99,
+   "2026-11-04": 78.99
+  },
+  "principal": false,
+  "tipo": "expansion"
+ },
+ "monopoly-grab-and-go": {
+  "ano": 2023,
+  "bgg": 4.65833,
+  "bgg_id": 449772,
+  "editora": "Hasbro",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/cf83995f8857444763d3e33865c4ec68dfb75ca9.jpg",
+  "nome": "Monopoly Grab and Go",
+  "pontos": {
+   "2026-10-29": 38.88,
+   "2026-10-30": 38.88,
+   "2026-10-31": 59.95,
+   "2026-11-02": 59.95,
+   "2026-11-03": 38.88,
+   "2026-11-04": 38.88
+  },
+  "principal": false,
+  "tipo": "game"
+ },
+ "monopoly-harry-potter-a-magical-adventure-at-hogwarts": {
+  "ano": 2024,
+  "bgg": 5.77538,
+  "bgg_id": 425070,
+  "editora": "Hasbro",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/6d6d8c7a242b0604dc85ce78206f062106aa04cd.jpg",
+  "nome": "Monopoly: Harry Potter – A Magical Adventure at Hogwarts",
+  "pontos": {
+   "2026-10-29": 293.0,
+   "2026-10-30": 293.0,
+   "2026-10-31": 293.0,
+   "2026-11-01": 293.0,
+   "2026-11-02": 293.0,
+   "2026-11-03": 293.0,
+   "2026-11-04": 293.0
+  },
+  "principal": false,
+  "tipo": "game"
+ },
  "monopoly-here-and-now-the-world-edition": {
   "ano": 2008,
   "bgg": 5.12392,
@@ -87869,6 +90240,26 @@
   "nome": "Monopoly: Here and Now – The World Edition",
   "pontos": {},
   "principal": false,
+  "tipo": "game"
+ },
+ "monopoly-house-of-the-dragon": {
+  "ano": 2024,
+  "bgg": 7.5,
+  "bgg_id": 446233,
+  "editora": "Hasbro",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/51d35470faaf88daf0d4157976476d034f83ce4e.jpg",
+  "nome": "Monopoly: House of the Dragon",
+  "pontos": {
+   "2026-10-29": 599.0,
+   "2026-10-30": 599.0,
+   "2026-10-31": 599.0,
+   "2026-11-01": 599.0,
+   "2026-11-02": 599.0,
+   "2026-11-03": 599.0,
+   "2026-11-04": 599.0
+  },
+  "principal": true,
   "tipo": "game"
  },
  "monopoly-junior": {
@@ -87900,6 +90291,25 @@
    "2026-11-02": 204.6,
    "2026-11-03": 204.6,
    "2026-11-04": 204.6
+  },
+  "principal": false,
+  "tipo": "game"
+ },
+ "monopoly-knockout": {
+  "ano": 2023,
+  "bgg": 6.77658,
+  "bgg_id": 404983,
+  "editora": "Hasbro",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/46e6f570e06bf219169f7a71414045b6d2da01ad.png",
+  "nome": "Monopoly Knockout",
+  "pontos": {
+   "2026-10-29": 62.53,
+   "2026-10-30": 62.53,
+   "2026-10-31": 63.11,
+   "2026-11-02": 63.11,
+   "2026-11-03": 63.92,
+   "2026-11-04": 63.81
   },
   "principal": false,
   "tipo": "game"
@@ -88182,6 +90592,38 @@
   "principal": false,
   "tipo": "game"
  },
+ "monopoly-super-mario-celebration": {
+  "ano": 2020,
+  "bgg": 5.74167,
+  "bgg_id": 323911,
+  "editora": "Hasbro",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/351c619fda43da0f1b9a3ca26e059c52d2897bc3.jpg",
+  "nome": "Monopoly: Super Mario Celebration!",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
+ "monopoly-the-legend-of-zelda": {
+  "ano": 2014,
+  "bgg": 5.56809,
+  "bgg_id": 163576,
+  "editora": "The OP",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/576a88c054dd82938640cd52ca73c87dd115bbc7.jpg",
+  "nome": "Monopoly: The Legend of Zelda",
+  "pontos": {
+   "2026-10-29": 1066.03,
+   "2026-10-30": 1066.03,
+   "2026-10-31": 1066.03,
+   "2026-11-01": 775.03,
+   "2026-11-02": 775.03,
+   "2026-11-03": 775.03,
+   "2026-11-04": 775.03
+  },
+  "principal": false,
+  "tipo": "game"
+ },
  "monsdrawsity": {
   "ano": 2022,
   "bgg": 7.13256,
@@ -88217,6 +90659,51 @@
   "pontos": {},
   "principal": false,
   "tipo": "game"
+ },
+ "monster-manual-2024": {
+  "ano": 2025,
+  "bgg": 8.375,
+  "bgg_id": 405475,
+  "editora": null,
+  "editora_br": null,
+  "imagem": "https://uploads.comparajogos.com.br/img/0adff3e9bdae37e55a751ff0090a4ea832304d03.jpg",
+  "nome": "Monster Manual (2024)",
+  "pontos": {
+   "2026-10-04": 199.02,
+   "2026-10-05": 199.02,
+   "2026-10-06": 199.02,
+   "2026-10-07": 199.02,
+   "2026-10-08": 199.02,
+   "2026-10-09": 199.02,
+   "2026-10-10": 199.02,
+   "2026-10-11": 199.02,
+   "2026-10-12": 199.02,
+   "2026-10-13": 199.02,
+   "2026-10-14": 199.02,
+   "2026-10-15": 199.02,
+   "2026-10-16": 199.02,
+   "2026-10-17": 199.02,
+   "2026-10-18": 199.02,
+   "2026-10-19": 199.02,
+   "2026-10-20": 199.02,
+   "2026-10-21": 199.02,
+   "2026-10-22": 199.02,
+   "2026-10-23": 199.02,
+   "2026-10-24": 199.02,
+   "2026-10-25": 199.02,
+   "2026-10-26": 199.02,
+   "2026-10-27": 199.02,
+   "2026-10-28": 199.02,
+   "2026-10-29": 199.02,
+   "2026-10-30": 199.02,
+   "2026-10-31": 199.02,
+   "2026-11-01": 199.02,
+   "2026-11-02": 199.02,
+   "2026-11-03": 199.02,
+   "2026-11-04": 199.02
+  },
+  "principal": true,
+  "tipo": "rpg"
  },
  "monster-manual-dd-5e": {
   "ano": 2018,
@@ -88319,6 +90806,18 @@
    "2026-11-03": 55.69,
    "2026-11-04": 55.69
   },
+  "principal": false,
+  "tipo": "game"
+ },
+ "monsterkantine": {
+  "ano": 2020,
+  "bgg": null,
+  "bgg_id": 324072,
+  "editora": "Riva",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/dec5fe99c0922cd789019bacbfde0bd76c519872.png",
+  "nome": "Monsterkantine",
+  "pontos": {},
   "principal": false,
   "tipo": "game"
  },
@@ -88476,6 +90975,18 @@
   "nome": "Moon Colony Bloodbath",
   "pontos": {},
   "principal": true,
+  "tipo": "game"
+ },
+ "moonlight-market": {
+  "ano": 2024,
+  "bgg": 6.4933,
+  "bgg_id": 425798,
+  "editora": "Queen Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/ea325b15caab7ea723ad0f35d6694e817dde9dc2.jpg",
+  "nome": "Moonlight Market",
+  "pontos": {},
+  "principal": false,
   "tipo": "game"
  },
  "moonlight-the-land-of-the-wolves": {
@@ -88823,6 +91334,18 @@
   "editora_br": false,
   "imagem": "https://uploads.comparajogos.com.br/img/bbdcebe2ab031035939e6996e3250365851fa36a.jpg",
   "nome": "Mr. Jack Pocket",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
+ "mr-listers-quiz-shootout": {
+  "ano": 2015,
+  "bgg": 6.26771,
+  "bgg_id": 182635,
+  "editora": "Big Potato",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/09533c78bb6ffc99511b1f45cba035c119674e33.jpg",
+  "nome": "Mr Lister's Quiz Shootout",
   "pontos": {},
   "principal": false,
   "tipo": "game"
@@ -89570,6 +92093,18 @@
   "principal": false,
   "tipo": "game"
  },
+ "munchkin-fu-2-monky-business": {
+  "ano": 2010,
+  "bgg": 6.35673,
+  "bgg_id": 14087,
+  "editora": "Steve Jackson Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/575c094675a652726799d57b94f548659aca275e.jpg",
+  "nome": "Munchkin Fu 2: Monky Business",
+  "pontos": {},
+  "principal": false,
+  "tipo": "expansion"
+ },
  "munchkin-loot-letter": {
   "ano": 2012,
   "bgg": 7.22638,
@@ -89833,6 +92368,18 @@
   "editora_br": false,
   "imagem": "https://uploads.comparajogos.com.br/img/b9e1640c2feb24c893226521b2ffb9cc7321976f.jpg",
   "nome": "Murder Mystery Party Case Files: Murder Noir",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
+ "murder-mystery-party-cocktail-for-murder": {
+  "ano": 2024,
+  "bgg": null,
+  "bgg_id": 447735,
+  "editora": "University Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/05ad2844f153a3c1c54c73bc35a82265188de80e.jpg",
+  "nome": "Murder Mystery Party: Cocktail for Murder",
   "pontos": {},
   "principal": false,
   "tipo": "game"
@@ -90167,6 +92714,18 @@
   "principal": true,
   "tipo": "game"
  },
+ "my-little-pony-collectible-card-game": {
+  "ano": 2013,
+  "bgg": 6.0717,
+  "bgg_id": 149746,
+  "editora": null,
+  "editora_br": null,
+  "imagem": "https://uploads.comparajogos.com.br/img/bd75adf92147bcff5a42adc1a7b17651ccd95678.jpg",
+  "nome": "My Little Pony: Collectible Card Game",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
  "my-little-scythe": {
   "ano": 2025,
   "bgg": 7.19406,
@@ -90377,6 +92936,18 @@
   },
   "principal": true,
   "tipo": "expansion"
+ },
+ "mystery-date": {
+  "ano": 2009,
+  "bgg": 4.72664,
+  "bgg_id": 7314,
+  "editora": "Milton Bradley",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/3c8d32bc329d766a8c8c49d8b373b5e81d87d415.jpg",
+  "nome": "Mystery Date",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
  },
  "mystery-house-adventures-in-a-box": {
   "ano": 2019,
@@ -91277,6 +93848,18 @@
   "principal": true,
   "tipo": "game"
  },
+ "necromancer": {
+  "ano": 2025,
+  "bgg": 5.85714,
+  "bgg_id": 441557,
+  "editora": "Kobold Press",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/85acffc23bc3950e80ea510be9d91ea8a770d2d9.jpg",
+  "nome": "Necromancer",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
  "necromunda-underhive": {
   "ano": 2017,
   "bgg": 7.72373,
@@ -91797,6 +94380,18 @@
   "principal": true,
   "tipo": "game"
  },
+ "new-phone-who-dis-bad-advice-nsfw-expansion-pack": {
+  "ano": 2022,
+  "bgg": 6.2,
+  "bgg_id": 369609,
+  "editora": "(Independente)",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/469b24e3c77bda3b63b4d873b0e80546f9a085af.jpg",
+  "nome": "New Phone, Who Dis?: Bad Advice NSFW Expansion Pack",
+  "pontos": {},
+  "principal": false,
+  "tipo": "expansion"
+ },
  "new-york-1901": {
   "ano": 2018,
   "bgg": 6.78579,
@@ -91956,6 +94551,18 @@
   "principal": true,
   "tipo": "expansion"
  },
+ "newtons-tree": {
+  "ano": 2019,
+  "bgg": 6.68867,
+  "bgg_id": 304068,
+  "editora": "Grasper Global Private Ltd (Skillmatics)",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/7013ddac4ac7297d0e20ca049a6f76510c0e44f3.jpg",
+  "nome": "Newton's Tree",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
  "next-station-london": {
   "ano": 2024,
   "bgg": 7.42605,
@@ -92083,6 +94690,51 @@
   "principal": false,
   "tipo": "game"
  },
+ "nhac": {
+  "ano": 2025,
+  "bgg": 5.86148,
+  "bgg_id": 433340,
+  "editora": "VR Distribution",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/dd97171415e0629466ec4a7b1498ac3b612726b1.png",
+  "nome": "Nhac!",
+  "pontos": {
+   "2026-10-04": 61.38,
+   "2026-10-05": 61.38,
+   "2026-10-06": 61.19,
+   "2026-10-07": 58.41,
+   "2026-10-08": 58.41,
+   "2026-10-09": 58.41,
+   "2026-10-10": 58.41,
+   "2026-10-11": 58.41,
+   "2026-10-12": 58.41,
+   "2026-10-13": 58.41,
+   "2026-10-14": 58.41,
+   "2026-10-15": 58.41,
+   "2026-10-16": 58.41,
+   "2026-10-17": 58.41,
+   "2026-10-18": 58.41,
+   "2026-10-19": 58.41,
+   "2026-10-20": 58.41,
+   "2026-10-21": 58.41,
+   "2026-10-22": 58.41,
+   "2026-10-23": 58.41,
+   "2026-10-24": 58.41,
+   "2026-10-25": 58.41,
+   "2026-10-26": 58.41,
+   "2026-10-27": 58.41,
+   "2026-10-28": 58.41,
+   "2026-10-29": 58.41,
+   "2026-10-30": 58.41,
+   "2026-10-31": 58.41,
+   "2026-11-01": 58.41,
+   "2026-11-02": 58.41,
+   "2026-11-03": 49.07,
+   "2026-11-04": 49.07
+  },
+  "principal": false,
+  "tipo": "game"
+ },
  "nhac-nhac": {
   "ano": 2019,
   "bgg": 6.32446,
@@ -92125,6 +94777,18 @@
    "2026-11-03": 128.45,
    "2026-11-04": 128.45
   },
+  "principal": false,
+  "tipo": "game"
+ },
+ "ni-no-kuni-ii-the-board-game": {
+  "ano": 2019,
+  "bgg": 6.32546,
+  "bgg_id": 285125,
+  "editora": "Steamforged Games Ltd.",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/7a776db054b4fe70152af3a1b0d82938f03b94d2.jpg",
+  "nome": "Ni no Kuni II: The Board Game",
+  "pontos": {},
   "principal": false,
   "tipo": "game"
  },
@@ -93179,6 +95843,18 @@
   "editora_br": false,
   "imagem": "https://uploads.comparajogos.com.br/img/c34f6b996175626aaaaecb75afa5bce0ae50dadc.jpg",
   "nome": "Not Alone",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
+ "not-it-the-cryptid-hunters-edition": {
+  "ano": 2020,
+  "bgg": 4.83333,
+  "bgg_id": 301698,
+  "editora": "The Good Game Company",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/15151f7b8a20c19a7c4a92afddb8c278156f9c73.png",
+  "nome": "Not It!: The Cryptid Hunters Edition",
   "pontos": {},
   "principal": false,
   "tipo": "game"
@@ -95339,6 +98015,26 @@
   "principal": false,
   "tipo": "game"
  },
+ "octi-extreme": {
+  "ano": 2002,
+  "bgg": 6.6796,
+  "bgg_id": 450,
+  "editora": "Great American Trading Company",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/2e962306231343770a16eb8cca3638ef62c955a2.jpg",
+  "nome": "Octi Extreme",
+  "pontos": {
+   "2026-10-29": 153.77,
+   "2026-10-30": 153.77,
+   "2026-10-31": 153.77,
+   "2026-11-01": 153.77,
+   "2026-11-02": 153.77,
+   "2026-11-03": 153.77,
+   "2026-11-04": 153.77
+  },
+  "principal": false,
+  "tipo": "game"
+ },
  "odin": {
   "ano": 2025,
   "bgg": 6.27509,
@@ -96138,6 +98834,96 @@
   "imagem": "https://uploads.comparajogos.com.br/img/0972cebbcf79712fb2f6608d098984babfa27f2c.png",
   "nome": "On Tour",
   "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
+ "onboard-cinema-e-tv": {
+  "ano": 2026,
+  "bgg": null,
+  "bgg_id": 481460,
+  "editora": "Geeks N' Orcs",
+  "editora_br": true,
+  "imagem": null,
+  "nome": "OnBoard! Cinema e TV",
+  "pontos": {
+   "2026-10-04": 44.91,
+   "2026-10-05": 44.91,
+   "2026-10-06": 44.91,
+   "2026-10-07": 44.91,
+   "2026-10-08": 44.91,
+   "2026-10-09": 44.91,
+   "2026-10-10": 44.91,
+   "2026-10-11": 44.91,
+   "2026-10-12": 44.91,
+   "2026-10-13": 44.91,
+   "2026-10-14": 44.91,
+   "2026-10-15": 44.91,
+   "2026-10-16": 44.91,
+   "2026-10-17": 44.91,
+   "2026-10-18": 44.91,
+   "2026-10-19": 44.91,
+   "2026-10-20": 44.91,
+   "2026-10-21": 44.91,
+   "2026-10-22": 44.91,
+   "2026-10-23": 44.91,
+   "2026-10-24": 44.91,
+   "2026-10-25": 44.91,
+   "2026-10-26": 44.91,
+   "2026-10-27": 44.91,
+   "2026-10-28": 44.91,
+   "2026-10-29": 44.91,
+   "2026-10-30": 44.91,
+   "2026-10-31": 44.91,
+   "2026-11-01": 44.91,
+   "2026-11-02": 44.91,
+   "2026-11-03": 35.1,
+   "2026-11-04": 35.1
+  },
+  "principal": false,
+  "tipo": "game"
+ },
+ "onboard-variedades": {
+  "ano": 2026,
+  "bgg": null,
+  "bgg_id": 481459,
+  "editora": "Geeks N' Orcs",
+  "editora_br": true,
+  "imagem": null,
+  "nome": "Onboard! Variedades",
+  "pontos": {
+   "2026-10-04": 44.91,
+   "2026-10-05": 44.91,
+   "2026-10-06": 44.91,
+   "2026-10-07": 44.91,
+   "2026-10-08": 44.91,
+   "2026-10-09": 44.91,
+   "2026-10-10": 44.91,
+   "2026-10-11": 44.91,
+   "2026-10-12": 44.91,
+   "2026-10-13": 44.91,
+   "2026-10-14": 44.91,
+   "2026-10-15": 44.91,
+   "2026-10-16": 44.91,
+   "2026-10-17": 44.91,
+   "2026-10-18": 44.91,
+   "2026-10-19": 44.91,
+   "2026-10-20": 44.91,
+   "2026-10-21": 44.91,
+   "2026-10-22": 44.91,
+   "2026-10-23": 44.91,
+   "2026-10-24": 44.91,
+   "2026-10-25": 44.91,
+   "2026-10-26": 44.91,
+   "2026-10-27": 44.91,
+   "2026-10-28": 44.91,
+   "2026-10-29": 44.91,
+   "2026-10-30": 44.91,
+   "2026-10-31": 44.91,
+   "2026-11-01": 44.91,
+   "2026-11-02": 44.91,
+   "2026-11-03": 35.1,
+   "2026-11-04": 35.1
+  },
   "principal": false,
   "tipo": "game"
  },
@@ -99812,6 +102598,30 @@
   "principal": false,
   "tipo": "game"
  },
+ "pass-the-pot": {
+  "ano": 2020,
+  "bgg": 5.3,
+  "bgg_id": 324811,
+  "editora": "R&R Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/7f1abed3e678ddcd83a67a3231fe7b197407a620.jpg",
+  "nome": "Pass The Pot",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
+ "passa-a-letra": {
+  "ano": 2017,
+  "bgg": null,
+  "bgg_id": 465039,
+  "editora": "Grow Jogos e Brinquedos",
+  "editora_br": true,
+  "imagem": null,
+  "nome": "Passa a Letra",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
  "passa-palavras": {
   "ano": 2023,
   "bgg": 8.11111,
@@ -101722,6 +104532,18 @@
   "principal": false,
   "tipo": "game"
  },
+ "pikmi-pops-lollipop-chase": {
+  "ano": 2018,
+  "bgg": 4.66667,
+  "bgg_id": 265027,
+  "editora": "Pressman Toy Corp.",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/ee1f1b67e644f154670e0a10282b8565c3941eb7.png",
+  "nome": "Pikmi Pops Lollipop Chase",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
  "piles": {
   "ano": 2023,
   "bgg": 6.8744,
@@ -101953,6 +104775,18 @@
   "principal": false,
   "tipo": "game"
  },
+ "pipas": {
+  "ano": 2023,
+  "bgg": null,
+  "bgg_id": 465050,
+  "editora": "Pais e Filhos",
+  "editora_br": false,
+  "imagem": null,
+  "nome": "Pipas",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
  "pipeline": {
   "ano": 2019,
   "bgg": 7.55881,
@@ -102160,6 +104994,25 @@
   "principal": true,
   "tipo": "game"
  },
+ "piratas-do-firmamentum": {
+  "ano": 2022,
+  "bgg": null,
+  "bgg_id": 464992,
+  "editora": "Pais e Filhos",
+  "editora_br": false,
+  "imagem": null,
+  "nome": "Piratas Do Firmamentum",
+  "pontos": {
+   "2026-10-29": 159.9,
+   "2026-10-30": 159.9,
+   "2026-11-01": 159.9,
+   "2026-11-02": 159.9,
+   "2026-11-03": 159.9,
+   "2026-11-04": 159.9
+  },
+  "principal": false,
+  "tipo": "game"
+ },
  "piratas-mares-agitados": {
   "ano": 2021,
   "bgg": 7.75,
@@ -102170,6 +105023,51 @@
   "nome": "Piratas!: Mares Agitados",
   "pontos": {},
   "principal": true,
+  "tipo": "expansion"
+ },
+ "piratas-pets": {
+  "ano": 2025,
+  "bgg": null,
+  "bgg_id": 478831,
+  "editora": "Asmodee",
+  "editora_br": true,
+  "imagem": null,
+  "nome": "Piratas!: Pets",
+  "pontos": {
+   "2026-10-04": 44.81,
+   "2026-10-05": 44.81,
+   "2026-10-06": 44.81,
+   "2026-10-07": 44.81,
+   "2026-10-08": 44.81,
+   "2026-10-09": 44.81,
+   "2026-10-10": 44.81,
+   "2026-10-11": 44.81,
+   "2026-10-12": 44.81,
+   "2026-10-13": 44.81,
+   "2026-10-14": 44.81,
+   "2026-10-15": 44.81,
+   "2026-10-16": 44.81,
+   "2026-10-17": 44.81,
+   "2026-10-18": 44.81,
+   "2026-10-19": 44.81,
+   "2026-10-20": 44.81,
+   "2026-10-21": 44.81,
+   "2026-10-22": 44.81,
+   "2026-10-23": 41.66,
+   "2026-10-24": 41.66,
+   "2026-10-25": 41.66,
+   "2026-10-26": 41.66,
+   "2026-10-27": 41.66,
+   "2026-10-28": 44.81,
+   "2026-10-29": 44.81,
+   "2026-10-30": 44.81,
+   "2026-10-31": 44.81,
+   "2026-11-01": 44.81,
+   "2026-11-02": 44.81,
+   "2026-11-03": 44.81,
+   "2026-11-04": 44.81
+  },
+  "principal": false,
   "tipo": "expansion"
  },
  "pirates-at-oceans-edge": {
@@ -102644,6 +105542,30 @@
   "nome": "Planted: A Game of Nature & Nurture",
   "pontos": {},
   "principal": true,
+  "tipo": "game"
+ },
+ "play-hit-90s-2000s": {
+  "ano": 2025,
+  "bgg": 5.75945,
+  "bgg_id": 432681,
+  "editora": "ATM Gaming",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/d3698e3dc68ea33a647ffa369c2bf4a097e453b5.jpg",
+  "nome": "Play Hit: 90s 2000s",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
+ "playbill-broadway-trivia": {
+  "ano": 2024,
+  "bgg": 6,
+  "bgg_id": 438165,
+  "editora": "Clarkson Potter",
+  "editora_br": false,
+  "imagem": null,
+  "nome": "Playbill Broadway Trivia",
+  "pontos": {},
+  "principal": false,
   "tipo": "game"
  },
  "player039s-handbook-dd-5e": {
@@ -103545,6 +106467,18 @@
   "principal": false,
   "tipo": "game"
  },
+ "poorly-explained-tv-shows": {
+  "ano": 2026,
+  "bgg": null,
+  "bgg_id": 477249,
+  "editora": "Brass Monkey",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/a6425d834a6bbe96e5ca72f30906d417147e2df4.png",
+  "nome": "Poorly Explained TV Shows",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
  "pop-art": {
   "ano": 2026,
   "bgg": null,
@@ -103981,6 +106915,18 @@
   "editora_br": true,
   "imagem": "https://uploads.comparajogos.com.br/img/9c482b7145bfc498ec93e9f04ca4839e34d0d601.jpg",
   "nome": "Pot de Vin",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
+ "potion-blowout": {
+  "ano": 2026,
+  "bgg": 1,
+  "bgg_id": 474925,
+  "editora": "Cenvodiq",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/67a212461825fadf43b6b66969a77f21af3b2771.jpg",
+  "nome": "Potion Blowout",
   "pontos": {},
   "principal": false,
   "tipo": "game"
@@ -105660,6 +108606,18 @@
   "principal": true,
   "tipo": "rpg"
  },
+ "purrfect-potions": {
+  "ano": 2025,
+  "bgg": 5.72963,
+  "bgg_id": 456550,
+  "editora": "Steve Jackson Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/1f657eb5054c6cd2ac67daab6b6321d284dc97ba.png",
+  "nome": "Purrfect Potions",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
  "push-push-penguin": {
   "ano": 2025,
   "bgg": 5.9058,
@@ -106057,6 +109015,51 @@
   "principal": true,
   "tipo": "game"
  },
+ "quadrilha": {
+  "ano": 2014,
+  "bgg": null,
+  "bgg_id": 466687,
+  "editora": "Mitra",
+  "editora_br": true,
+  "imagem": null,
+  "nome": "Quadrilha",
+  "pontos": {
+   "2026-10-04": 92.89,
+   "2026-10-05": 92.89,
+   "2026-10-06": 92.89,
+   "2026-10-07": 92.89,
+   "2026-10-08": 92.89,
+   "2026-10-09": 92.89,
+   "2026-10-10": 92.89,
+   "2026-10-11": 92.89,
+   "2026-10-12": 92.89,
+   "2026-10-13": 92.89,
+   "2026-10-14": 92.89,
+   "2026-10-15": 92.89,
+   "2026-10-16": 92.89,
+   "2026-10-17": 92.89,
+   "2026-10-18": 92.89,
+   "2026-10-19": 92.89,
+   "2026-10-20": 92.89,
+   "2026-10-21": 92.89,
+   "2026-10-22": 92.89,
+   "2026-10-23": 92.89,
+   "2026-10-24": 92.89,
+   "2026-10-25": 92.89,
+   "2026-10-26": 92.89,
+   "2026-10-27": 92.89,
+   "2026-10-28": 92.89,
+   "2026-10-29": 92.89,
+   "2026-10-30": 92.89,
+   "2026-10-31": 92.89,
+   "2026-11-01": 92.89,
+   "2026-11-02": 92.89,
+   "2026-11-03": 92.89,
+   "2026-11-04": 92.89
+  },
+  "principal": false,
+  "tipo": "game"
+ },
  "quadro-a-quadro": {
   "ano": 1982,
   "bgg": 6.06344,
@@ -106159,6 +109162,24 @@
   "pontos": {},
   "principal": true,
   "tipo": "expansion"
+ },
+ "qual-e-a-palavra": {
+  "ano": 2004,
+  "bgg": 3,
+  "bgg_id": 466557,
+  "editora": "Pais e Filhos",
+  "editora_br": false,
+  "imagem": null,
+  "nome": "Qual é a Palavra?",
+  "pontos": {
+   "2026-10-29": 51.62,
+   "2026-10-30": 51.62,
+   "2026-11-02": 51.62,
+   "2026-11-03": 51.62,
+   "2026-11-04": 51.62
+  },
+  "principal": false,
+  "tipo": "game"
  },
  "qual-e-o-seu-meme": {
   "ano": 2024,
@@ -107886,6 +110907,25 @@
   "pontos": {},
   "principal": true,
   "tipo": "expansion"
+ },
+ "race-to-pattern-palace": {
+  "ano": 2023,
+  "bgg": 5.66667,
+  "bgg_id": 455999,
+  "editora": "hand2mind",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/8b5955a2759d8e7d3ae16853584820b4e7095dfd.jpg",
+  "nome": "Race to Pattern Palace!",
+  "pontos": {
+   "2026-10-29": 169.15,
+   "2026-10-30": 169.15,
+   "2026-10-31": 163.18,
+   "2026-11-02": 163.18,
+   "2026-11-03": 158.28,
+   "2026-11-04": 158.28
+  },
+  "principal": false,
+  "tipo": "game"
  },
  "race-to-the-new-found-land": {
   "ano": 2018,
@@ -111877,6 +114917,51 @@
   "principal": false,
   "tipo": "game"
  },
+ "rolima": {
+  "ano": 2026,
+  "bgg": 5.4,
+  "bgg_id": 482206,
+  "editora": "Quero Quero Jogos",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/d1609645e31645e89d0e500982879cd06dd19d52.jpg",
+  "nome": "Rolimã",
+  "pontos": {
+   "2026-10-04": 89.91,
+   "2026-10-05": 89.91,
+   "2026-10-06": 89.91,
+   "2026-10-07": 89.91,
+   "2026-10-08": 89.91,
+   "2026-10-09": 89.91,
+   "2026-10-10": 89.91,
+   "2026-10-11": 89.91,
+   "2026-10-12": 89.91,
+   "2026-10-13": 89.91,
+   "2026-10-14": 89.91,
+   "2026-10-15": 89.91,
+   "2026-10-16": 89.91,
+   "2026-10-17": 89.91,
+   "2026-10-18": 89.91,
+   "2026-10-19": 89.91,
+   "2026-10-20": 89.91,
+   "2026-10-21": 89.91,
+   "2026-10-22": 89.91,
+   "2026-10-23": 89.91,
+   "2026-10-24": 89.91,
+   "2026-10-25": 89.91,
+   "2026-10-26": 89.91,
+   "2026-10-27": 89.91,
+   "2026-10-28": 89.91,
+   "2026-10-29": 89.91,
+   "2026-10-30": 89.91,
+   "2026-10-31": 89.91,
+   "2026-11-01": 89.91,
+   "2026-11-02": 89.91,
+   "2026-11-03": 57.6,
+   "2026-11-04": 57.6
+  },
+  "principal": false,
+  "tipo": "game"
+ },
  "roll-camera-o-jogo-de-criar-filmes": {
   "ano": 2022,
   "bgg": 7.40037,
@@ -112015,6 +115100,18 @@
   "editora_br": false,
   "imagem": "https://uploads.comparajogos.com.br/img/e504a9ecd08b843c8ddf4b851194f7ce315367aa.jpg",
   "nome": "ROLLICK!  The Hysterical Game of Clues and Collaboration",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
+ "rollie": {
+  "ano": 2026,
+  "bgg": 6.60902,
+  "bgg_id": 453861,
+  "editora": "Hachette Boardgames",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/8dfdce450446ad698f486c95009e1223e1e698af.png",
+  "nome": "Rollie",
   "pontos": {},
   "principal": false,
   "tipo": "game"
@@ -113012,6 +116109,51 @@
   "principal": false,
   "tipo": "game"
  },
+ "rouba-monte-volta-ao-mundo": {
+  "ano": 2019,
+  "bgg": 6,
+  "bgg_id": 464774,
+  "editora": "Pais e Filhos",
+  "editora_br": false,
+  "imagem": null,
+  "nome": "Rouba Monte: Volta ao Mundo",
+  "pontos": {
+   "2026-10-04": 13.86,
+   "2026-10-05": 13.86,
+   "2026-10-06": 13.86,
+   "2026-10-07": 13.86,
+   "2026-10-08": 13.86,
+   "2026-10-09": 13.86,
+   "2026-10-10": 13.86,
+   "2026-10-11": 13.86,
+   "2026-10-12": 13.86,
+   "2026-10-13": 13.86,
+   "2026-10-14": 13.86,
+   "2026-10-15": 13.86,
+   "2026-10-16": 13.86,
+   "2026-10-17": 13.86,
+   "2026-10-18": 13.86,
+   "2026-10-19": 13.86,
+   "2026-10-20": 13.86,
+   "2026-10-21": 13.86,
+   "2026-10-22": 13.86,
+   "2026-10-23": 13.86,
+   "2026-10-24": 13.86,
+   "2026-10-25": 13.86,
+   "2026-10-26": 13.86,
+   "2026-10-27": 13.86,
+   "2026-10-28": 13.86,
+   "2026-10-29": 13.86,
+   "2026-10-30": 13.86,
+   "2026-10-31": 13.86,
+   "2026-11-01": 13.86,
+   "2026-11-02": 13.86,
+   "2026-11-03": 13.86,
+   "2026-11-04": 13.86
+  },
+  "principal": false,
+  "tipo": "game"
+ },
  "roubo-no-museu": {
   "ano": 2023,
   "bgg": null,
@@ -113461,6 +116603,18 @@
   "principal": true,
   "tipo": "game"
  },
+ "rummy-colony": {
+  "ano": 2026,
+  "bgg": null,
+  "bgg_id": 465400,
+  "editora": "Pegasus Spiele",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/52734498a9041748b6e808c68c9af5dd966cd993.jpg",
+  "nome": "Rummy Colony",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
  "rummy-travel": {
   "ano": 1887,
   "bgg": 5.9232,
@@ -113469,6 +116623,18 @@
   "editora_br": false,
   "imagem": "https://uploads.comparajogos.com.br/img/09cf5cff9261ec1ac4bae74c695a1f9403e062aa.png",
   "nome": "Rummy Travel",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
+ "rumpelstiltskin": {
+  "ano": 2015,
+  "bgg": 5.74134,
+  "bgg_id": 175224,
+  "editora": "Alderac Entertainment Group",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/4db6c46990d41b0ce6f954171b3ceef0b6202ebc.jpg",
+  "nome": "Rumpelstiltskin",
   "pontos": {},
   "principal": false,
   "tipo": "game"
@@ -116202,6 +119368,18 @@
   "principal": false,
   "tipo": "game"
  },
+ "scrambit": {
+  "ano": 2025,
+  "bgg": null,
+  "bgg_id": 468849,
+  "editora": "White Beetle Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/55727d40e37e84981ad51ba42dff2dbef9a403e9.jpg",
+  "nome": "Scrambit",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
  "scrap-racer": {
   "ano": 2021,
   "bgg": 6.25123,
@@ -117926,6 +121104,18 @@
   "principal": false,
   "tipo": "game"
  },
+ "sex-and-the-city-trivia-game": {
+  "ano": 2004,
+  "bgg": 4.38,
+  "bgg_id": 12762,
+  "editora": "Cardinal",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/6ff9e5cbf52ed246657400b13341c4957d3e9e5b.jpg",
+  "nome": "Sex and the City Trivia Game",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
  "sextou": {
   "ano": 2026,
   "bgg": 4.66667,
@@ -119067,6 +122257,25 @@
   "principal": false,
   "tipo": "game"
  },
+ "show-do-milhao": {
+  "ano": 2025,
+  "bgg": null,
+  "bgg_id": 466818,
+  "editora": "Pais e Filhos",
+  "editora_br": false,
+  "imagem": null,
+  "nome": "Show do Milhão",
+  "pontos": {
+   "2026-10-29": 68.72,
+   "2026-10-30": 68.72,
+   "2026-11-01": 77.0,
+   "2026-11-02": 67.9,
+   "2026-11-03": 67.9,
+   "2026-11-04": 67.9
+  },
+  "principal": false,
+  "tipo": "game"
+ },
  "show-do-milhao-2": {
   "ano": 0,
   "bgg": 5.22222,
@@ -119959,6 +123168,18 @@
   "editora_br": false,
   "imagem": "https://uploads.comparajogos.com.br/img/1aef788b5c4cb80549d2c594bc696e7c71b218e5.jpg",
   "nome": "Skulldug!",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
+ "skunked": {
+  "ano": 2011,
+  "bgg": 5,
+  "bgg_id": 142643,
+  "editora": "Marina Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/2136f6e1d8f4190a10d7dfdabd2abc721d4e5cd8.jpg",
+  "nome": "Skunked",
   "pontos": {},
   "principal": false,
   "tipo": "game"
@@ -121921,6 +125142,18 @@
   "principal": false,
   "tipo": "game"
  },
+ "smokey-bears-happy-camper": {
+  "ano": 2025,
+  "bgg": 6,
+  "bgg_id": 456750,
+  "editora": "MasterPieces Inc.",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/9ea3574365868d25213c8d9ae5222d7af00552dd.jpg",
+  "nome": "Smokey Bear's Happy Camper",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
  "smores-galore": {
   "ano": 2024,
   "bgg": 6.93333,
@@ -122198,6 +125431,24 @@
   "principal": false,
   "tipo": "game"
  },
+ "soggy-doggy": {
+  "ano": 2017,
+  "bgg": 3.82677,
+  "bgg_id": 240133,
+  "editora": "Spin Master Ltd.",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/bd0344b82cad89119a4cdba2d85112efdd6f7116.jpg",
+  "nome": "Soggy Doggy",
+  "pontos": {
+   "2026-10-29": 590.02,
+   "2026-10-30": 590.02,
+   "2026-11-02": 590.02,
+   "2026-11-03": 590.02,
+   "2026-11-04": 590.02
+  },
+  "principal": false,
+  "tipo": "game"
+ },
  "sola-fide-the-reformation": {
   "ano": 2016,
   "bgg": 6.4071,
@@ -122406,6 +125657,24 @@
    "2026-11-04": 60.45
   },
   "principal": true,
+  "tipo": "game"
+ },
+ "something-wild-mickey-and-friends": {
+  "ano": 2020,
+  "bgg": 6.31114,
+  "bgg_id": 313537,
+  "editora": "Funko Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/8c643b73cd36631b7b20df01a9ef15418a6fd561.png",
+  "nome": "Something Wild! Mickey and Friends",
+  "pontos": {
+   "2026-10-29": 67.21,
+   "2026-11-01": 67.21,
+   "2026-11-02": 67.21,
+   "2026-11-03": 67.21,
+   "2026-11-04": 67.21
+  },
+  "principal": false,
   "tipo": "game"
  },
  "something-wild-star-wars-original-trilogy-darth-vader": {
@@ -123113,6 +126382,18 @@
   "principal": true,
   "tipo": "game"
  },
+ "spaceteam": {
+  "ano": 2015,
+  "bgg": 6.54966,
+  "bgg_id": 184491,
+  "editora": "Stellar Factory",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/11c7b1687ab222350af26dc02e926d8bd52b987b.png",
+  "nome": "Spaceteam",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
  "spank-the-pig": {
   "ano": 2023,
   "bgg": 7,
@@ -123692,6 +126973,51 @@
    "2026-11-02": 259.47,
    "2026-11-03": 259.47,
    "2026-11-04": 259.47
+  },
+  "principal": true,
+  "tipo": "accessory"
+ },
+ "spirit-island-premium-token-pack-2": {
+  "ano": 2023,
+  "bgg": 9.5,
+  "bgg_id": 374891,
+  "editora": null,
+  "editora_br": null,
+  "imagem": "https://uploads.comparajogos.com.br/img/ee11f6ed565a5c083f25ec37d25544afd0782ff7.jpg",
+  "nome": "Spirit Island: Premium Token Pack 2",
+  "pontos": {
+   "2026-10-04": 278.99,
+   "2026-10-05": 278.99,
+   "2026-10-06": 278.99,
+   "2026-10-07": 278.99,
+   "2026-10-08": 278.99,
+   "2026-10-09": 278.99,
+   "2026-10-10": 278.99,
+   "2026-10-11": 288.29,
+   "2026-10-12": 288.29,
+   "2026-10-13": 278.07,
+   "2026-10-14": 278.07,
+   "2026-10-15": 278.07,
+   "2026-10-16": 278.07,
+   "2026-10-17": 278.07,
+   "2026-10-18": 278.07,
+   "2026-10-19": 278.07,
+   "2026-10-20": 278.07,
+   "2026-10-21": 278.07,
+   "2026-10-22": 278.07,
+   "2026-10-23": 278.07,
+   "2026-10-24": 278.07,
+   "2026-10-25": 278.07,
+   "2026-10-26": 259.38,
+   "2026-10-27": 259.38,
+   "2026-10-28": 259.38,
+   "2026-10-29": 259.38,
+   "2026-10-30": 259.38,
+   "2026-10-31": 259.38,
+   "2026-11-01": 259.38,
+   "2026-11-02": 259.38,
+   "2026-11-03": 259.38,
+   "2026-11-04": 259.38
   },
   "principal": true,
   "tipo": "accessory"
@@ -127036,6 +130362,18 @@
   "principal": false,
   "tipo": "game"
  },
+ "star-wars-unlimited-a-lawless-time": {
+  "ano": 2026,
+  "bgg": 8.54464,
+  "bgg_id": 464363,
+  "editora": "Fantasy Flight Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/5ef6e237e1003318bb5e879b37d28c1d33578616.png",
+  "nome": "Star Wars: Unlimited – A Lawless Time",
+  "pontos": {},
+  "principal": true,
+  "tipo": "expansion"
+ },
  "star-wars-unlimited-intro-battle-hoth": {
   "ano": 2025,
   "bgg": 5.55008,
@@ -127892,6 +131230,18 @@
   "principal": true,
   "tipo": "expansion"
  },
+ "star-wars-x-wing-second-edition-battle-of-yavin-scenario-pack": {
+  "ano": 2022,
+  "bgg": 7.68556,
+  "bgg_id": 365217,
+  "editora": "Atomic Mass Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/94f7dcdafb5219b4bec60b324b317078bd0b6884.png",
+  "nome": "Star Wars: X-Wing (Second Edition) – Battle of Yavin Scenario Pack",
+  "pontos": {},
+  "principal": true,
+  "tipo": "expansion"
+ },
  "star-wars-x-wing-second-edition-btl-a4-y-wing-expansion-pack": {
   "ano": 2018,
   "bgg": 7.71774,
@@ -127900,6 +131250,18 @@
   "editora_br": false,
   "imagem": "https://uploads.comparajogos.com.br/img/b1e0e3477cefc13d919bff5f6e48d6c643e2220f.png",
   "nome": "Star Wars: X-Wing (Second Edition) – BTL-A4 Y-Wing Expansion Pack",
+  "pontos": {},
+  "principal": true,
+  "tipo": "expansion"
+ },
+ "star-wars-x-wing-second-edition-clone-z-95-headhunter-expansion-pack": {
+  "ano": 2022,
+  "bgg": 7.77895,
+  "bgg_id": 361687,
+  "editora": "Atomic Mass Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/30d15a9079b1bf59288c7f7bf1c917c916f8cbff.jpg",
+  "nome": "Star Wars: X-Wing (Second Edition) – Clone Z-95 Headhunter Expansion Pack",
   "pontos": {},
   "principal": true,
   "tipo": "expansion"
@@ -127952,6 +131314,30 @@
   "principal": true,
   "tipo": "accessory"
  },
+ "star-wars-x-wing-second-edition-galactic-empire-squadron-starter-pack": {
+  "ano": 2023,
+  "bgg": 7.79412,
+  "bgg_id": 385527,
+  "editora": "Atomic Mass Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/38d46f978e7793832059c16ff14908db095614c5.png",
+  "nome": "Star Wars: X-Wing (Second Edition) – Galactic Empire Squadron Starter Pack",
+  "pontos": {},
+  "principal": true,
+  "tipo": "expansion"
+ },
+ "star-wars-x-wing-second-edition-gauntlet-fighter-expansion-pack": {
+  "ano": 2022,
+  "bgg": 7.92,
+  "bgg_id": 360236,
+  "editora": "Atomic Mass Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/66044cc16e0d0567123f488a45b9c69e422ed819.png",
+  "nome": "Star Wars: X-Wing (Second Edition) – Gauntlet Fighter Expansion Pack",
+  "pontos": {},
+  "principal": true,
+  "tipo": "expansion"
+ },
  "star-wars-x-wing-second-edition-guardians-of-the-republic-squadron-pack": {
   "ano": 2018,
   "bgg": 8.32826,
@@ -127972,6 +131358,18 @@
   "editora_br": false,
   "imagem": "https://uploads.comparajogos.com.br/img/aad20b99c7f4d90bb5ebd92ccdad1804ce9d8dec.png",
   "nome": "Star Wars: X-Wing (Second Edition) – Heralds of Hope Squadron Pack",
+  "pontos": {},
+  "principal": true,
+  "tipo": "expansion"
+ },
+ "star-wars-x-wing-second-edition-hotshots-and-aces-ii-reinforcements-pack": {
+  "ano": 2022,
+  "bgg": 7.72,
+  "bgg_id": 371695,
+  "editora": "Atomic Mass Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/d3d2cfc690335418de82b51936947a9d6f0d875e.png",
+  "nome": "Star Wars: X-Wing (Second Edition) – Hotshots and Aces II Reinforcements Pack",
   "pontos": {},
   "principal": true,
   "tipo": "expansion"
@@ -128072,6 +131470,18 @@
   "principal": true,
   "tipo": "expansion"
  },
+ "star-wars-x-wing-second-edition-pride-of-mandalore-reinforcements-pack": {
+  "ano": 2022,
+  "bgg": 7.90667,
+  "bgg_id": 358523,
+  "editora": "Atomic Mass Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/723aeaa2c3f8aee6fe7fdd6396b466a9d55faf4a.png",
+  "nome": "Star Wars: X-Wing (Second Edition) – Pride of Mandalore Reinforcements Pack",
+  "pontos": {},
+  "principal": true,
+  "tipo": "expansion"
+ },
  "star-wars-x-wing-second-edition-punishing-one-expansion-pack": {
   "ano": 2019,
   "bgg": 7.3275,
@@ -128108,6 +131518,18 @@
   "principal": true,
   "tipo": "accessory"
  },
+ "star-wars-x-wing-second-edition-rebel-alliance-squadron-starter-pack": {
+  "ano": 2023,
+  "bgg": 7.73529,
+  "bgg_id": 385528,
+  "editora": "Atomic Mass Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/60b9df8cb0764f3c67b61048181ddbde3444abfd.png",
+  "nome": "Star Wars: X-Wing (Second Edition) – Rebel Alliance Squadron Starter Pack",
+  "pontos": {},
+  "principal": true,
+  "tipo": "expansion"
+ },
  "star-wars-x-wing-second-edition-resistance-conversion-kit": {
   "ano": 2019,
   "bgg": 8.75,
@@ -128128,6 +131550,18 @@
   "editora_br": false,
   "imagem": "https://uploads.comparajogos.com.br/img/dc1343a87617080e9562c74cc4ee2874be57b391.png",
   "nome": "Star Wars: X-Wing (Second Edition) – Resistance Transport Expansion Pack",
+  "pontos": {},
+  "principal": true,
+  "tipo": "expansion"
+ },
+ "star-wars-x-wing-second-edition-rogue-class-starfighter-expansion-pack": {
+  "ano": 2022,
+  "bgg": 7.96538,
+  "bgg_id": 362086,
+  "editora": "Atomic Mass Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/042cb8d12eaa0242e1e175d1b3153efc50665f8d.jpg",
+  "nome": "Star Wars: X-Wing (Second Edition) – Rogue-class Starfighter Expansion Pack",
   "pontos": {},
   "principal": true,
   "tipo": "expansion"
@@ -128222,6 +131656,18 @@
   "principal": true,
   "tipo": "expansion"
  },
+ "star-wars-x-wing-second-edition-tiesa-bomber-expansion-pack": {
+  "ano": 2023,
+  "bgg": 8.25,
+  "bgg_id": 402809,
+  "editora": "Atomic Mass Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/0e9989f50cf6499f9984bcf5aa57dfb0846b4e33.jpg",
+  "nome": "Star Wars: X-Wing (Second Edition) – TIE/sa Bomber Expansion Pack",
+  "pontos": {},
+  "principal": true,
+  "tipo": "expansion"
+ },
  "star-wars-x-wing-second-edition-tiesf-fighter-expansion-pack": {
   "ano": 2019,
   "bgg": 8.27667,
@@ -128242,6 +131688,18 @@
   "editora_br": false,
   "imagem": "https://uploads.comparajogos.com.br/img/49badcd28b001bd160f3498e1f9daa843e5d932c.png",
   "nome": "Star Wars: X-Wing (Second Edition) – TIE/sk Striker Expansion Pack",
+  "pontos": {},
+  "principal": true,
+  "tipo": "expansion"
+ },
+ "star-wars-x-wing-second-edition-yt-2400-light-freighter-expansion-pack": {
+  "ano": 2023,
+  "bgg": 8.28462,
+  "bgg_id": 401485,
+  "editora": "Atomic Mass Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/3690c623249c53679a7e3ffd1207b99b113ef4aa.jpg",
+  "nome": "Star Wars: X-Wing (Second Edition) – YT-2400 Light Freighter Expansion Pack",
   "pontos": {},
   "principal": true,
   "tipo": "expansion"
@@ -128633,6 +132091,51 @@
   "nome": "Stir Fry Eighteen",
   "pontos": {},
   "principal": false,
+  "tipo": "game"
+ },
+ "stitch-626": {
+  "ano": 2026,
+  "bgg": 7.66667,
+  "bgg_id": 470444,
+  "editora": "Grok Games",
+  "editora_br": true,
+  "imagem": "https://uploads.comparajogos.com.br/img/d8973cb2f0014acd5d58de11cd20d9e29dfb1f10.png",
+  "nome": "Stitch 626",
+  "pontos": {
+   "2026-10-04": 55.71,
+   "2026-10-05": 55.71,
+   "2026-10-06": 55.71,
+   "2026-10-07": 55.71,
+   "2026-10-08": 55.71,
+   "2026-10-09": 55.71,
+   "2026-10-10": 55.71,
+   "2026-10-11": 55.71,
+   "2026-10-12": 55.71,
+   "2026-10-13": 55.71,
+   "2026-10-14": 55.71,
+   "2026-10-15": 55.71,
+   "2026-10-16": 55.71,
+   "2026-10-17": 55.71,
+   "2026-10-18": 55.71,
+   "2026-10-19": 55.71,
+   "2026-10-20": 55.71,
+   "2026-10-21": 55.71,
+   "2026-10-22": 55.71,
+   "2026-10-23": 55.71,
+   "2026-10-24": 55.71,
+   "2026-10-25": 55.71,
+   "2026-10-26": 55.71,
+   "2026-10-27": 55.71,
+   "2026-10-28": 55.71,
+   "2026-10-29": 55.71,
+   "2026-10-30": 55.71,
+   "2026-10-31": 55.71,
+   "2026-11-01": 55.71,
+   "2026-11-02": 55.71,
+   "2026-11-03": 55.71,
+   "2026-11-04": 55.71
+  },
+  "principal": true,
   "tipo": "game"
  },
  "stock-car-race-day": {
@@ -129286,6 +132789,18 @@
   },
   "principal": true,
   "tipo": "game"
+ },
+ "stupor-mundi-fredericks-sons-gates-mini-expansion": {
+  "ano": 2025,
+  "bgg": 6.9,
+  "bgg_id": 426954,
+  "editora": "Quined Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/55769ec2d930e14009c10f3604d424b6c633d0bd.jpg",
+  "nome": "Stupor Mundi: Frederick's Sons + \"Gates\" Mini-expansion",
+  "pontos": {},
+  "principal": false,
+  "tipo": "expansion"
  },
  "stupor-mundi-master-print-edition": {
   "ano": 2025,
@@ -130217,6 +133732,23 @@
   "principal": false,
   "tipo": "game"
  },
+ "super-mario-air-hockey": {
+  "ano": 0,
+  "bgg": 4,
+  "bgg_id": 424181,
+  "editora": "Epoch Co., Ltd.",
+  "editora_br": false,
+  "imagem": null,
+  "nome": "Super Mario Air Hockey",
+  "pontos": {
+   "2026-10-29": 219.77,
+   "2026-11-02": 215.79,
+   "2026-11-03": 209.92,
+   "2026-11-04": 209.92
+  },
+  "principal": false,
+  "tipo": "game"
+ },
  "super-mario-balance-block": {
   "ano": 2011,
   "bgg": 5,
@@ -130352,6 +133884,23 @@
   "principal": false,
   "tipo": "game"
  },
+ "super-mario-cap-stacker": {
+  "ano": 2025,
+  "bgg": 4.33333,
+  "bgg_id": 437187,
+  "editora": "Epoch Everlasting Play",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/0575194bc40d65a716948ec076715476f289c298.jpg",
+  "nome": "Super Mario Cap Stacker",
+  "pontos": {
+   "2026-10-29": 80.53,
+   "2026-11-02": 87.44,
+   "2026-11-03": 87.44,
+   "2026-11-04": 87.44
+  },
+  "principal": false,
+  "tipo": "game"
+ },
  "super-mario-piranha-plant-escape": {
   "ano": 2020,
   "bgg": 3.93182,
@@ -130393,6 +133942,25 @@
    "2026-11-02": 169.0,
    "2026-11-03": 169.0,
    "2026-11-04": 169.0
+  },
+  "principal": false,
+  "tipo": "game"
+ },
+ "super-mario-question-block-game": {
+  "ano": 0,
+  "bgg": null,
+  "bgg_id": 440624,
+  "editora": "Epoch",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/0c2fc71a2fb57452275a7f784361b877082bedb2.jpg",
+  "nome": "Super Mario: Question block game",
+  "pontos": {
+   "2026-10-29": 194.9,
+   "2026-10-30": 193.99,
+   "2026-10-31": 193.99,
+   "2026-11-02": 157.99,
+   "2026-11-03": 157.99,
+   "2026-11-04": 157.99
   },
   "principal": false,
   "tipo": "game"
@@ -130888,6 +134456,39 @@
   "principal": true,
   "tipo": "game"
  },
+ "sushi-mania": {
+  "ano": 2019,
+  "bgg": 6,
+  "bgg_id": 345794,
+  "editora": "Game Office",
+  "editora_br": true,
+  "imagem": null,
+  "nome": "Sushi Mania",
+  "pontos": {
+   "2026-10-04": 89.19,
+   "2026-10-05": 89.19,
+   "2026-10-06": 89.19,
+   "2026-10-07": 89.19,
+   "2026-10-08": 89.19,
+   "2026-10-09": 89.19,
+   "2026-10-10": 89.19,
+   "2026-10-11": 89.19,
+   "2026-10-12": 89.19,
+   "2026-10-13": 89.19,
+   "2026-10-14": 89.19,
+   "2026-10-15": 89.19,
+   "2026-10-16": 89.19,
+   "2026-10-17": 89.19,
+   "2026-10-18": 89.19,
+   "2026-10-19": 89.19,
+   "2026-10-20": 89.19,
+   "2026-10-21": 89.19,
+   "2026-10-22": 89.19,
+   "2026-10-23": 89.19
+  },
+  "principal": false,
+  "tipo": "game"
+ },
  "sushi-rush": {
   "ano": 2022,
   "bgg": 6.12727,
@@ -130978,6 +134579,26 @@
   "principal": false,
   "tipo": "game"
  },
+ "suspeito-descubra-todos-os-misterios": {
+  "ano": 2019,
+  "bgg": null,
+  "bgg_id": 464783,
+  "editora": "Pais e Filhos",
+  "editora_br": false,
+  "imagem": null,
+  "nome": "Suspeito: Descubra Todos os Mistérios!",
+  "pontos": {
+   "2026-10-29": 58.0,
+   "2026-10-30": 58.0,
+   "2026-10-31": 58.0,
+   "2026-11-01": 58.0,
+   "2026-11-02": 58.0,
+   "2026-11-03": 58.0,
+   "2026-11-04": 58.0
+  },
+  "principal": false,
+  "tipo": "game"
+ },
  "sweet-lands": {
   "ano": 2025,
   "bgg": 8.15067,
@@ -131056,6 +134677,18 @@
   "editora_br": false,
   "imagem": "https://uploads.comparajogos.com.br/img/30fc9497f0020c85aa15a1af067af773881a0093.jpg",
   "nome": "Swindler",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
+ "swing-your-sausage": {
+  "ano": 2024,
+  "bgg": 5.5,
+  "bgg_id": 431044,
+  "editora": "Lucky Egg",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/e4ff2fe3a736f4aec73091aadf0d6d6240e80f89.jpg",
+  "nome": "Swing Your Sausage",
   "pontos": {},
   "principal": false,
   "tipo": "game"
@@ -131244,6 +134877,18 @@
   "nome": "Tabannusi: Builders of Ur",
   "pontos": {},
   "principal": true,
+  "tipo": "game"
+ },
+ "table-golf-association-meeple-beach": {
+  "ano": 2025,
+  "bgg": 6.8,
+  "bgg_id": 446751,
+  "editora": "Meeple Mania Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/1277fbf3f8b6a098aea20a6bd2dc6fae6c49ea01.jpg",
+  "nome": "Table Golf Association: Meeple Beach",
+  "pontos": {},
+  "principal": false,
   "tipo": "game"
  },
  "tabu": {
@@ -131732,6 +135377,51 @@
   "principal": true,
   "tipo": "accessory"
  },
+ "tak-tik-na-fazenda": {
+  "ano": 2023,
+  "bgg": null,
+  "bgg_id": 466803,
+  "editora": "Ludens Spirit",
+  "editora_br": true,
+  "imagem": null,
+  "nome": "Tak Tik: Na Fazenda",
+  "pontos": {
+   "2026-10-04": 64.17,
+   "2026-10-05": 64.17,
+   "2026-10-06": 64.17,
+   "2026-10-07": 64.17,
+   "2026-10-08": 64.17,
+   "2026-10-09": 64.17,
+   "2026-10-10": 64.17,
+   "2026-10-11": 64.17,
+   "2026-10-12": 64.17,
+   "2026-10-13": 64.17,
+   "2026-10-14": 64.17,
+   "2026-10-15": 64.17,
+   "2026-10-16": 64.17,
+   "2026-10-17": 64.17,
+   "2026-10-18": 64.17,
+   "2026-10-19": 64.17,
+   "2026-10-20": 64.17,
+   "2026-10-21": 64.17,
+   "2026-10-22": 64.17,
+   "2026-10-23": 64.17,
+   "2026-10-24": 64.17,
+   "2026-10-25": 64.17,
+   "2026-10-26": 64.17,
+   "2026-10-27": 64.17,
+   "2026-10-28": 64.17,
+   "2026-10-29": 64.17,
+   "2026-10-30": 64.17,
+   "2026-10-31": 64.17,
+   "2026-11-01": 64.17,
+   "2026-11-02": 64.17,
+   "2026-11-03": 64.17,
+   "2026-11-04": 64.17
+  },
+  "principal": false,
+  "tipo": "game"
+ },
  "take-time": {
   "ano": 2025,
   "bgg": 7.82873,
@@ -131953,6 +135643,18 @@
   "principal": false,
   "tipo": "game"
  },
+ "tales-of-evil": {
+  "ano": 2021,
+  "bgg": 6.83983,
+  "bgg_id": 252212,
+  "editora": "Escape Studios",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/a9433c20fc4707a8e1cd247f5d5da913ecf3b264.jpg",
+  "nome": "Tales of Evil",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
  "talisman-o-magico-jogo-de-aventura": {
   "ano": 2008,
   "bgg": 6.50526,
@@ -132150,6 +135852,63 @@
   "pontos": {},
   "principal": false,
   "tipo": "expansion"
+ },
+ "tao-long-the-way-of-the-dragon-red-pearl": {
+  "ano": 2023,
+  "bgg": 5.64286,
+  "bgg_id": 321704,
+  "editora": "ThunderGryph Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/c2b3643e746dfb98d0b9556e4ffe9a51c3401612.png",
+  "nome": "Tao Long: The Way of the Dragon – Red Pearl",
+  "pontos": {},
+  "principal": false,
+  "tipo": "expansion"
+ },
+ "tap-bar": {
+  "ano": 2026,
+  "bgg": null,
+  "bgg_id": 481316,
+  "editora": "Conclave Editora",
+  "editora_br": true,
+  "imagem": "https://uploads.comparajogos.com.br/img/5d7e25050d31d3a295b427ade5f592d1cfcbcae9.jpg",
+  "nome": "Tap Bar",
+  "pontos": {
+   "2026-10-04": 44.55,
+   "2026-10-05": 44.55,
+   "2026-10-06": 44.55,
+   "2026-10-07": 44.55,
+   "2026-10-08": 44.55,
+   "2026-10-09": 44.55,
+   "2026-10-10": 46.41,
+   "2026-10-11": 46.41,
+   "2026-10-12": 46.41,
+   "2026-10-13": 46.41,
+   "2026-10-14": 46.41,
+   "2026-10-15": 46.41,
+   "2026-10-16": 46.41,
+   "2026-10-17": 46.41,
+   "2026-10-18": 46.41,
+   "2026-10-19": 46.41,
+   "2026-10-20": 46.41,
+   "2026-10-21": 46.41,
+   "2026-10-22": 46.41,
+   "2026-10-23": 46.41,
+   "2026-10-24": 46.41,
+   "2026-10-25": 46.41,
+   "2026-10-26": 46.41,
+   "2026-10-27": 46.41,
+   "2026-10-28": 46.41,
+   "2026-10-29": 46.41,
+   "2026-10-30": 46.41,
+   "2026-10-31": 46.41,
+   "2026-11-01": 46.41,
+   "2026-11-02": 46.41,
+   "2026-11-03": 41.51,
+   "2026-11-04": 41.51
+  },
+  "principal": false,
+  "tipo": "game"
  },
  "tapa-certo": {
   "ano": 2008,
@@ -132699,6 +136458,18 @@
    "2026-11-03": 252.96,
    "2026-11-04": 252.96
   },
+  "principal": false,
+  "tipo": "game"
+ },
+ "teenage-mutant-ninja-turtles-showdown-bebop-rocksteady-madness": {
+  "ano": 2017,
+  "bgg": 4.94459,
+  "bgg_id": 223778,
+  "editora": "IDW Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/cbb753d3e362b5da77a286462acce78100995546.jpg",
+  "nome": "Teenage Mutant Ninja Turtles: Showdown – Bebop & Rocksteady Madness",
+  "pontos": {},
   "principal": false,
   "tipo": "game"
  },
@@ -134557,6 +138328,24 @@
   "principal": false,
   "tipo": "game"
  },
+ "tesouro-do-farao": {
+  "ano": 1990,
+  "bgg": 5.83333,
+  "bgg_id": 10454,
+  "editora": "Estrela",
+  "editora_br": true,
+  "imagem": "https://uploads.comparajogos.com.br/img/5f668355c00a861554f87e776410efe4d193edcb.png",
+  "nome": "Tesouro do Faraó",
+  "pontos": {
+   "2026-10-29": 174.59,
+   "2026-10-30": 174.59,
+   "2026-11-01": 174.59,
+   "2026-11-03": 174.59,
+   "2026-11-04": 174.59
+  },
+  "principal": false,
+  "tipo": "game"
+ },
  "tesouro-inca": {
   "ano": 2015,
   "bgg": 6.84939,
@@ -134688,6 +138477,18 @@
   "principal": true,
   "tipo": "game"
  },
+ "thats-how-we-do-it": {
+  "ano": 2012,
+  "bgg": null,
+  "bgg_id": 247500,
+  "editora": "Patch Products",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/ee0f89e8267095e1cd79c0a808be9bb3e3a2d420.jpg",
+  "nome": "That's How We Do It!",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
  "thats-not-a-hat": {
   "ano": 2023,
   "bgg": 7.01878,
@@ -134792,6 +138593,18 @@
   "nome": "The Adventures of Robin Hood",
   "pontos": {},
   "principal": true,
+  "tipo": "game"
+ },
+ "the-allowance-game": {
+  "ano": 1998,
+  "bgg": 4.13483,
+  "bgg_id": 7399,
+  "editora": "Lakeshore Learning Materials",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/68ba083499da092ad364dc0049a45e98e203cdce.jpg",
+  "nome": "The Allowance Game",
+  "pontos": {},
+  "principal": false,
   "tipo": "game"
  },
  "the-anarchy": {
@@ -135074,6 +138887,18 @@
   "principal": true,
   "tipo": "expansion"
  },
+ "the-boardgamegeek-game": {
+  "ano": 2009,
+  "bgg": 5.95984,
+  "bgg_id": 43249,
+  "editora": "R&D Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/215f3373181bfb982807c4d9ea5508e1a006e271.jpg",
+  "nome": "The BoardGameGeek Game",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
  "the-breach": {
   "ano": 2025,
   "bgg": 7.9605,
@@ -135252,6 +139077,18 @@
   "principal": true,
   "tipo": "game"
  },
+ "the-censored-game": {
+  "ano": 0,
+  "bgg": 6,
+  "bgg_id": 263690,
+  "editora": "Buffalo Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/72d3f6d0adce56beba4d832cf09db9f974079d85.jpg",
+  "nome": "The Censored Game",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
  "the-charade-game": {
   "ano": 1985,
   "bgg": 5.35263,
@@ -135330,6 +139167,18 @@
    "2026-11-03": 3.63,
    "2026-11-04": 3.63
   },
+  "principal": false,
+  "tipo": "game"
+ },
+ "the-couples-quiz": {
+  "ano": 2018,
+  "bgg": 4.4375,
+  "bgg_id": 295009,
+  "editora": "Lagoon Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/9d4d6958d44c6dcfa32a7fda7e7a10364b891b1c.png",
+  "nome": "The Couples Quiz",
+  "pontos": {},
   "principal": false,
   "tipo": "game"
  },
@@ -135906,6 +139755,38 @@
   "principal": false,
   "tipo": "game"
  },
+ "the-game-of-life-fame-edition": {
+  "ano": 2013,
+  "bgg": 4.65362,
+  "bgg_id": 27296,
+  "editora": "Hasbro",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/6c636967bee2fb40f2736fb7fd9c8d22cdc71945.jpg",
+  "nome": "The Game of Life: Fame Edition",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
+ "the-game-of-life-harry-potter": {
+  "ano": 2026,
+  "bgg": null,
+  "bgg_id": 477772,
+  "editora": "Hasbro",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/6586d322c3c39d4922f93fccb34ca087cc5ba704.jpg",
+  "nome": "The Game of Life: Harry Potter",
+  "pontos": {
+   "2026-10-29": 259.0,
+   "2026-10-30": 259.0,
+   "2026-10-31": 259.0,
+   "2026-11-01": 259.0,
+   "2026-11-02": 259.0,
+   "2026-11-03": 259.0,
+   "2026-11-04": 259.0
+  },
+  "principal": false,
+  "tipo": "game"
+ },
  "the-game-of-life-the-simpsons-edition": {
   "ano": 2004,
   "bgg": 5.1028,
@@ -136307,6 +140188,18 @@
   "principal": false,
   "tipo": "game"
  },
+ "the-hunger-games-district-12-strategy-game": {
+  "ano": 2012,
+  "bgg": 5.18333,
+  "bgg_id": 118339,
+  "editora": "WizKids",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/02f47150cdd6b59d28394e104fe356391799d667.jpg",
+  "nome": "The Hunger Games: District 12 Strategy Game",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
  "the-hunters-german-u-boats-at-war-1939-43": {
   "ano": 2020,
   "bgg": 7.73614,
@@ -136448,6 +140341,18 @@
   "principal": true,
   "tipo": "game"
  },
+ "the-kings-will": {
+  "ano": 2017,
+  "bgg": 6.86138,
+  "bgg_id": 213149,
+  "editora": "ADC Blackfire Entertainment GmbH",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/b88cdf524f7bb46b22d6490db9d34f28e7b71481.jpg",
+  "nome": "The King's Will",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
  "the-last-kingdom-board-game": {
   "ano": 2023,
   "bgg": 7.4802,
@@ -136526,6 +140431,18 @@
    "2026-11-03": 59.52,
    "2026-11-04": 59.52
   },
+  "principal": false,
+  "tipo": "game"
+ },
+ "the-loon-dice-game": {
+  "ano": 2003,
+  "bgg": 5.25,
+  "bgg_id": 100046,
+  "editora": "Koplow Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/e15e92d6022112d3d6d34f30d66b90da07aee8d5.jpg",
+  "nome": "The Loon Dice Game",
+  "pontos": {},
   "principal": false,
   "tipo": "game"
  },
@@ -136984,6 +140901,18 @@
   "nome": "The Networks",
   "pontos": {},
   "principal": true,
+  "tipo": "game"
+ },
+ "the-newlywed-game": {
+  "ano": 1967,
+  "bgg": 4.81764,
+  "bgg_id": 9091,
+  "editora": "Endless Games (I)",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/328e85642693b9f6cc4ef137bdff23da0911739c.jpg",
+  "nome": "The Newlywed Game",
+  "pontos": {},
+  "principal": false,
   "tipo": "game"
  },
  "the-night-cage": {
@@ -138245,6 +142174,18 @@
   "principal": false,
   "tipo": "game"
  },
+ "the-uzzle": {
+  "ano": 2021,
+  "bgg": 5.70741,
+  "bgg_id": 378271,
+  "editora": "Uzzle Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/2d637d3a1428de6280be985ee2027409bb11552d.jpg",
+  "nome": "The Uzzle",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
  "the-vale-of-eternity": {
   "ano": 2023,
   "bgg": 7.60194,
@@ -138302,6 +142243,18 @@
   "principal": false,
   "tipo": "game"
  },
+ "the-voting-game": {
+  "ano": 2015,
+  "bgg": 5.377,
+  "bgg_id": 172007,
+  "editora": "(Independente)",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/6d2877b0faa90521a8b670995b6343152cdccfdf.jpg",
+  "nome": "The Voting Game",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
  "the-voyages-of-marco-polo-the-new-characters": {
   "ano": 2015,
   "bgg": 8.08442,
@@ -138322,6 +142275,18 @@
   "editora_br": false,
   "imagem": "https://uploads.comparajogos.com.br/img/710f94f2059a08778694b4c07819f45b7bbd79b2.jpg",
   "nome": "The Walking Dead Board Game",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
+ "the-waylanders": {
+  "ano": 2018,
+  "bgg": 6.20697,
+  "bgg_id": 256250,
+  "editora": "Eclipse Editorial",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/3d90f849050c73dcfec116c7bcf2cb79c74c8318.png",
+  "nome": "The Waylanders",
   "pontos": {},
   "principal": false,
   "tipo": "game"
@@ -138958,6 +142923,18 @@
   "principal": true,
   "tipo": "expansion"
  },
+ "thing-thing": {
+  "ano": 2025,
+  "bgg": 6.54767,
+  "bgg_id": 426162,
+  "editora": "DVC Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/95482e610b2a1d8447ff6a0d7f1150134cbcc3d2.png",
+  "nome": "Thing Thing",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
  "things-from-the-flood": {
   "ano": 2019,
   "bgg": 7.77812,
@@ -139016,6 +142993,18 @@
   "principal": true,
   "tipo": "game"
  },
+ "think-fast-disney-edition": {
+  "ano": 2019,
+  "bgg": 6.19231,
+  "bgg_id": 327850,
+  "editora": "Ridley's Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/4ac35eeef513f1274e37d40716456a3738563132.jpg",
+  "nome": "Think Fast!: Disney Edition",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
  "think-n-sync-the-great-minds-think-alike-game": {
   "ano": 2017,
   "bgg": 6.05829,
@@ -139024,6 +143013,18 @@
   "editora_br": false,
   "imagem": "https://uploads.comparajogos.com.br/img/18e0407ea55cde0331b93b4a2e0dda3f4d3fb5be.jpg",
   "nome": "Think 'n Sync: The Great Minds Think Alike Game",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
+ "thinkblot": {
+  "ano": 2004,
+  "bgg": 4.43898,
+  "bgg_id": 2878,
+  "editora": "Sababa Toys, Inc.",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/cb819a2288929916aa3eed918c5f71ff98dce8e8.jpg",
+  "nome": "ThinkBlot",
   "pontos": {},
   "principal": false,
   "tipo": "game"
@@ -139086,6 +143087,18 @@
   "nome": "This War of Mine: The Board Game",
   "pontos": {},
   "principal": true,
+  "tipo": "game"
+ },
+ "thornwatch": {
+  "ano": 2018,
+  "bgg": 6.31168,
+  "bgg_id": 159011,
+  "editora": "Lone Shark Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/6179dd15dfbcaf3d3a6c58f4b7514c219c3c73b0.jpg",
+  "nome": "Thornwatch",
+  "pontos": {},
+  "principal": false,
   "tipo": "game"
  },
  "three-cheers-for-master": {
@@ -139469,6 +143482,30 @@
   },
   "principal": true,
   "tipo": "game"
+ },
+ "tianxia-new-ships-promo": {
+  "ano": 2025,
+  "bgg": 7.03571,
+  "bgg_id": 448737,
+  "editora": "Giant Roc",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/eb2021edafa724d3b41f61ce2db2b02e25217fc2.jpg",
+  "nome": "Tianxia: New Ships Promo",
+  "pontos": {},
+  "principal": true,
+  "tipo": "expansion"
+ },
+ "tianxia-new-starting-buildings-promo": {
+  "ano": 2025,
+  "bgg": 8.5,
+  "bgg_id": 456791,
+  "editora": "Board&Dice",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/e6b163831c87db9c3b58dc9282676d2898d4e30d.png",
+  "nome": "Tianxia: New Starting Buildings Promo",
+  "pontos": {},
+  "principal": true,
+  "tipo": "expansion"
  },
  "tic-tac-toe": {
   "ano": 2010,
@@ -140556,6 +144593,51 @@
   "principal": false,
   "tipo": "game"
  },
+ "time-bomb-2025": {
+  "ano": 2025,
+  "bgg": 7.14459,
+  "bgg_id": 236217,
+  "editora": "IELLO",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/59e8d14a779314d3362ee586166d1cbe5b4fbd99.jpg",
+  "nome": "Time Bomb (2025)",
+  "pontos": {
+   "2026-10-04": 101.37,
+   "2026-10-05": 101.37,
+   "2026-10-06": 101.37,
+   "2026-10-07": 101.37,
+   "2026-10-08": 101.37,
+   "2026-10-09": 101.37,
+   "2026-10-10": 101.37,
+   "2026-10-11": 101.37,
+   "2026-10-12": 101.37,
+   "2026-10-13": 101.37,
+   "2026-10-14": 101.37,
+   "2026-10-15": 101.37,
+   "2026-10-16": 101.37,
+   "2026-10-17": 101.37,
+   "2026-10-18": 101.37,
+   "2026-10-19": 101.37,
+   "2026-10-20": 101.37,
+   "2026-10-21": 101.37,
+   "2026-10-22": 101.37,
+   "2026-10-23": 101.37,
+   "2026-10-24": 101.37,
+   "2026-10-25": 101.37,
+   "2026-10-26": 101.37,
+   "2026-10-27": 101.37,
+   "2026-10-28": 101.37,
+   "2026-10-29": 101.37,
+   "2026-10-30": 101.37,
+   "2026-10-31": 101.37,
+   "2026-11-01": 101.37,
+   "2026-11-02": 101.37,
+   "2026-11-03": 101.37,
+   "2026-11-04": 101.37
+  },
+  "principal": true,
+  "tipo": "game"
+ },
  "time-machine-rocket": {
   "ano": 2021,
   "bgg": 7.39474,
@@ -140614,6 +144696,18 @@
   "principal": true,
   "tipo": "game"
  },
+ "time-of-legends-joan-of-arc-apocalypse": {
+  "ano": 2019,
+  "bgg": 7.66881,
+  "bgg_id": 239722,
+  "editora": "Mythic Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/5b2dcd4d61169208bcbcd6c8c6ff184cd4d28e26.jpg",
+  "nome": "Time of Legends: Joan of Arc – Apocalypse",
+  "pontos": {},
+  "principal": true,
+  "tipo": "expansion"
+ },
  "time-of-legends-joan-of-arc-unleash-hell": {
   "ano": 2019,
   "bgg": 8.03015,
@@ -140622,6 +144716,18 @@
   "editora_br": false,
   "imagem": "https://uploads.comparajogos.com.br/img/fe74c471954348aa4ee4d5b2a6f5471cfc1a853c.jpg",
   "nome": "Time of Legends: Joan of Arc – Unleash Hell",
+  "pontos": {},
+  "principal": true,
+  "tipo": "expansion"
+ },
+ "time-of-legends-joan-of-arc-village-pack": {
+  "ano": 2019,
+  "bgg": 7.47691,
+  "bgg_id": 240082,
+  "editora": "Mythic Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/e34cc1669f16406966c0295a6e94bcc3c684642b.png",
+  "nome": "Time of Legends: Joan of Arc – Village Pack",
   "pontos": {},
   "principal": true,
   "tipo": "expansion"
@@ -141030,6 +145136,18 @@
   "nome": "Time's Up! Party",
   "pontos": {},
   "principal": true,
+  "tipo": "game"
+ },
+ "timescape-charles-dickens-dilemma": {
+  "ano": 2026,
+  "bgg": null,
+  "bgg_id": 470327,
+  "editora": "Ridley's Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/8bc4b35e1adace08f5145849052566bb764d1164.jpg",
+  "nome": "Timescape: Charles Dickens’ Dilemma",
+  "pontos": {},
+  "principal": false,
   "tipo": "game"
  },
  "tinco": {
@@ -142279,6 +146397,18 @@
   "principal": true,
   "tipo": "game"
  },
+ "tokyo-jutaku": {
+  "ano": 2018,
+  "bgg": 6.09414,
+  "bgg_id": 235360,
+  "editora": "Jordan Draper Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/bec278fd7a5f69343b532c25eb550e4534d02a66.jpg",
+  "nome": "TOKYO JUTAKU",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
  "tomahawk": {
   "ano": 2006,
   "bgg": 5.96353,
@@ -143250,6 +147380,51 @@
   "principal": false,
   "tipo": "game"
  },
+ "trava-letras": {
+  "ano": 2018,
+  "bgg": null,
+  "bgg_id": 464878,
+  "editora": "Estrela",
+  "editora_br": true,
+  "imagem": null,
+  "nome": "Trava Letras",
+  "pontos": {
+   "2026-10-04": 130.11,
+   "2026-10-05": 130.11,
+   "2026-10-06": 130.11,
+   "2026-10-07": 130.11,
+   "2026-10-08": 130.11,
+   "2026-10-09": 130.11,
+   "2026-10-10": 130.11,
+   "2026-10-11": 130.11,
+   "2026-10-12": 130.11,
+   "2026-10-13": 130.11,
+   "2026-10-14": 130.11,
+   "2026-10-15": 130.11,
+   "2026-10-16": 130.11,
+   "2026-10-17": 130.11,
+   "2026-10-18": 130.11,
+   "2026-10-19": 130.11,
+   "2026-10-20": 130.11,
+   "2026-10-21": 130.11,
+   "2026-10-22": 130.11,
+   "2026-10-23": 130.11,
+   "2026-10-24": 130.11,
+   "2026-10-25": 130.11,
+   "2026-10-26": 130.11,
+   "2026-10-27": 130.11,
+   "2026-10-28": 130.11,
+   "2026-10-29": 38.82,
+   "2026-10-30": 38.82,
+   "2026-10-31": 44.99,
+   "2026-11-01": 44.99,
+   "2026-11-02": 44.99,
+   "2026-11-03": 44.99,
+   "2026-11-04": 44.99
+  },
+  "principal": false,
+  "tipo": "game"
+ },
  "traverse": {
   "ano": 1991,
   "bgg": 6.00651,
@@ -144108,6 +148283,18 @@
   "editora_br": false,
   "imagem": "https://uploads.comparajogos.com.br/img/d40e2d3ec62af7c231d689cbac67e649da6d4ed0.jpg",
   "nome": "Triplo",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
+ "tripoley": {
+  "ano": 2014,
+  "bgg": 5.68228,
+  "bgg_id": 4853,
+  "editora": "Ideal",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/f2f5ca050d4a05dba2bd03d93d7fe896deb7a64c.jpg",
+  "nome": "Tripoley",
   "pontos": {},
   "principal": false,
   "tipo": "game"
@@ -145153,6 +149340,18 @@
   "principal": true,
   "tipo": "game"
  },
+ "turbo-piratas": {
+  "ano": 2026,
+  "bgg": null,
+  "bgg_id": 477845,
+  "editora": "Meeple BR Jogos",
+  "editora_br": true,
+  "imagem": null,
+  "nome": "Turbo Piratas",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
  "turing-machine": {
   "ano": 2022,
   "bgg": 7.62337,
@@ -145635,6 +149834,53 @@
    "2026-11-03": 69.99,
    "2026-11-04": 69.99
   },
+  "principal": false,
+  "tipo": "game"
+ },
+ "twister-air": {
+  "ano": 2023,
+  "bgg": 4.5,
+  "bgg_id": 391740,
+  "editora": "Hasbro",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/76665e8788f3573f4885e9846e2f2d6b59739a4c.png",
+  "nome": "Twister Air",
+  "pontos": {
+   "2026-10-29": 61.85,
+   "2026-11-03": 63.81,
+   "2026-11-04": 63.7
+  },
+  "principal": false,
+  "tipo": "game"
+ },
+ "twister-junior": {
+  "ano": 2023,
+  "bgg": 4.16667,
+  "bgg_id": 412199,
+  "editora": "Hasbro",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/6085cf6ecae142941a421d706ac96d24faab1dc8.png",
+  "nome": "Twister Junior",
+  "pontos": {
+   "2026-10-29": 95.48,
+   "2026-10-30": 152.22,
+   "2026-10-31": 152.22,
+   "2026-11-01": 190.0,
+   "2026-11-03": 190.0,
+   "2026-11-04": 190.0
+  },
+  "principal": false,
+  "tipo": "game"
+ },
+ "two-types-of-people": {
+  "ano": 2025,
+  "bgg": 5.5,
+  "bgg_id": 437695,
+  "editora": "Relatable",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/65fd3a284fd51f8526cc711e88eabb109415aa2e.jpg",
+  "nome": "Two Types of People",
+  "pontos": {},
   "principal": false,
   "tipo": "game"
  },
@@ -146703,6 +150949,18 @@
   "principal": true,
   "tipo": "game"
  },
+ "unlock-epic-adventures": {
+  "ano": 2021,
+  "bgg": 7.64406,
+  "bgg_id": 294612,
+  "editora": "Space Cowboys",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/1fe97717bbe3e7fe627948ea2b4db2874f2f041d.jpg",
+  "nome": "Unlock!: Epic Adventures",
+  "pontos": {},
+  "principal": true,
+  "tipo": "game"
+ },
  "unlock-escape-adventures": {
   "ano": 2017,
   "bgg": 7.33433,
@@ -147413,6 +151671,26 @@
   "principal": false,
   "tipo": "game"
  },
+ "uno-elite-formula-1-2025-core-edition": {
+  "ano": 2025,
+  "bgg": 5.3125,
+  "bgg_id": 460867,
+  "editora": "Mattel",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/38c4fe9b974fe041085c034fa07158ddc97e48c8.jpg",
+  "nome": "UNO Elite Formula 1: 2025 Core Edition",
+  "pontos": {
+   "2026-10-29": 129.9,
+   "2026-10-30": 129.9,
+   "2026-10-31": 129.9,
+   "2026-11-01": 129.9,
+   "2026-11-02": 129.9,
+   "2026-11-03": 129.9,
+   "2026-11-04": 129.9
+  },
+  "principal": false,
+  "tipo": "game"
+ },
  "uno-flex": {
   "ano": 2023,
   "bgg": 6.07719,
@@ -147503,6 +151781,68 @@
   "principal": false,
   "tipo": "game"
  },
+ "uno-flip-attack": {
+  "ano": 2024,
+  "bgg": 6.83437,
+  "bgg_id": 423154,
+  "editora": "Mattel",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/bc250e07b5970cea844eb32748e2ab8b2d547001.png",
+  "nome": "UNO Flip Attack",
+  "pontos": {
+   "2026-10-04": 269.61,
+   "2026-10-05": 269.61,
+   "2026-10-06": 269.61,
+   "2026-10-07": 269.61,
+   "2026-10-08": 269.61,
+   "2026-10-09": 269.61,
+   "2026-10-10": 269.61,
+   "2026-10-11": 269.61,
+   "2026-10-12": 269.61,
+   "2026-10-13": 269.61,
+   "2026-10-14": 269.61,
+   "2026-10-15": 269.61,
+   "2026-10-16": 269.61,
+   "2026-10-17": 269.61,
+   "2026-10-18": 269.61,
+   "2026-10-19": 269.61,
+   "2026-10-20": 269.61,
+   "2026-10-21": 269.61,
+   "2026-10-22": 269.61,
+   "2026-10-23": 269.61,
+   "2026-10-24": 269.61,
+   "2026-10-25": 269.61,
+   "2026-10-26": 269.61,
+   "2026-10-27": 269.61,
+   "2026-10-28": 269.61,
+   "2026-10-29": 240.9,
+   "2026-10-30": 240.9,
+   "2026-10-31": 240.9,
+   "2026-11-01": 240.9,
+   "2026-11-02": 240.9,
+   "2026-11-03": 240.9,
+   "2026-11-04": 226.38
+  },
+  "principal": false,
+  "tipo": "game"
+ },
+ "uno-mario-kart": {
+  "ano": 2021,
+  "bgg": 6.43485,
+  "bgg_id": 342232,
+  "editora": "Mattel",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/d9debf7233febcec511bb398b7e50c5b79ea7290.jpg",
+  "nome": "UNO: Mario Kart",
+  "pontos": {
+   "2026-10-29": 162.0,
+   "2026-10-31": 163.5,
+   "2026-11-03": 163.5,
+   "2026-11-04": 165.3
+  },
+  "principal": false,
+  "tipo": "game"
+ },
  "uno-masters-of-the-universe": {
   "ano": 2020,
   "bgg": 6.28261,
@@ -147535,6 +151875,51 @@
    "2026-10-29": 223.38,
    "2026-11-03": 223.38,
    "2026-11-04": 223.38
+  },
+  "principal": false,
+  "tipo": "game"
+ },
+ "uno-party": {
+  "ano": 2025,
+  "bgg": 6.31507,
+  "bgg_id": 372973,
+  "editora": "Mattel",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/97012ce942b612a80962e173e45ec355d6ac2aa9.jpg",
+  "nome": "UNO Party!",
+  "pontos": {
+   "2026-10-04": 161.41,
+   "2026-10-05": 161.41,
+   "2026-10-06": 161.41,
+   "2026-10-07": 161.41,
+   "2026-10-08": 161.41,
+   "2026-10-09": 161.41,
+   "2026-10-10": 161.41,
+   "2026-10-11": 161.41,
+   "2026-10-12": 161.41,
+   "2026-10-13": 161.41,
+   "2026-10-14": 161.41,
+   "2026-10-15": 161.41,
+   "2026-10-16": 161.41,
+   "2026-10-17": 161.41,
+   "2026-10-18": 161.41,
+   "2026-10-19": 161.41,
+   "2026-10-20": 161.41,
+   "2026-10-21": 161.41,
+   "2026-10-22": 161.41,
+   "2026-10-23": 161.41,
+   "2026-10-24": 161.41,
+   "2026-10-25": 161.41,
+   "2026-10-26": 161.41,
+   "2026-10-27": 161.41,
+   "2026-10-28": 161.41,
+   "2026-10-29": 119.0,
+   "2026-10-30": 119.0,
+   "2026-10-31": 119.0,
+   "2026-11-01": 119.0,
+   "2026-11-02": 119.0,
+   "2026-11-03": 119.0,
+   "2026-11-04": 119.0
   },
   "principal": false,
   "tipo": "game"
@@ -147719,6 +152104,23 @@
   "principal": false,
   "tipo": "game"
  },
+ "uno-super-mario": {
+  "ano": 2016,
+  "bgg": 6.13315,
+  "bgg_id": 209095,
+  "editora": "Mattel",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/123b4f69358770dbe00d82a8ec71e7d8848d907d.jpg",
+  "nome": "UNO: Super Mario",
+  "pontos": {
+   "2026-10-29": 240.61,
+   "2026-11-02": 240.61,
+   "2026-11-03": 240.61,
+   "2026-11-04": 240.61
+  },
+  "principal": false,
+  "tipo": "game"
+ },
  "uno-teams": {
   "ano": 2024,
   "bgg": 6.06,
@@ -147779,6 +152181,22 @@
    "2026-11-01": 187.0,
    "2026-11-02": 187.0,
    "2026-11-03": 187.0
+  },
+  "principal": false,
+  "tipo": "game"
+ },
+ "uno-toy-story-4": {
+  "ano": 2018,
+  "bgg": 6.08333,
+  "bgg_id": 281659,
+  "editora": "Mattel",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/a64b3c048ea55cd6bf9fc63258cf584fc9cf46e3.jpg",
+  "nome": "UNO: Toy Story 4",
+  "pontos": {
+   "2026-10-29": 139.0,
+   "2026-11-03": 139.0,
+   "2026-11-04": 139.0
   },
   "principal": false,
   "tipo": "game"
@@ -147848,6 +152266,18 @@
   "editora_br": false,
   "imagem": "https://uploads.comparajogos.com.br/img/bf245cef8df11fa029c861f7264aa53cabafd473.jpg",
   "nome": "Unsolved Case Files: Jane Doe",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
+ "unsolved-case-files-mini-case-luna-knight": {
+  "ano": 2024,
+  "bgg": 6.5,
+  "bgg_id": 430746,
+  "editora": "Unsolved Case Files",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/3237bd358ef60f279a2e217414c7a61299a08c5e.jpg",
+  "nome": "Unsolved Case Files: Mini Case – Luna Knight",
   "pontos": {},
   "principal": false,
   "tipo": "game"
@@ -148261,6 +152691,42 @@
   "principal": true,
   "tipo": "expansion"
  },
+ "vampire-the-eternal-struggle-fifth-edition-new-blood-malkavian": {
+  "ano": 2021,
+  "bgg": 7,
+  "bgg_id": 425175,
+  "editora": "Black Chantry Productions",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/caa56ed706d85453367bf282a49484cfbc9fbedc.jpg",
+  "nome": "Vampire: The Eternal Struggle Fifth Edition – New Blood: Malkavian",
+  "pontos": {},
+  "principal": true,
+  "tipo": "expansion"
+ },
+ "vampire-the-eternal-struggle-fifth-edition-new-blood-tremere": {
+  "ano": 2021,
+  "bgg": null,
+  "bgg_id": 425178,
+  "editora": "Black Chantry Productions",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/5a1645535af27ac6ebecc259b36f8c1938bce92d.jpg",
+  "nome": "Vampire: The Eternal Struggle Fifth Edition – New Blood: Tremere",
+  "pontos": {},
+  "principal": false,
+  "tipo": "expansion"
+ },
+ "vampire-the-eternal-struggle-fifth-edition-new-blood-ventrue": {
+  "ano": 2021,
+  "bgg": null,
+  "bgg_id": 425179,
+  "editora": "Black Chantry Productions",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/4875c1a3552cc61cca1ad5ec0fdf210013c8fe3e.jpg",
+  "nome": "Vampire: The Eternal Struggle Fifth Edition – New Blood: Ventrue",
+  "pontos": {},
+  "principal": false,
+  "tipo": "expansion"
+ },
  "vampire-the-eternal-struggle-heirs-to-the-blood-1": {
   "ano": 2018,
   "bgg": 8.13636,
@@ -148353,6 +152819,18 @@
   "editora_br": false,
   "imagem": "https://uploads.comparajogos.com.br/img/13937d2229a7d43a8e8bc1272ed6bf47e387cf07.jpg",
   "nome": "Vampire: The Eternal Struggle – Parliament of Shadows",
+  "pontos": {},
+  "principal": true,
+  "tipo": "expansion"
+ },
+ "vampire-the-eternal-struggle-the-endless-dance-30th-anniversary-deck": {
+  "ano": 2024,
+  "bgg": 7.83333,
+  "bgg_id": 425184,
+  "editora": "Black Chantry Productions",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/443bb780a71361960a223d863a82a910a21b0830.jpg",
+  "nome": "Vampire: The Eternal Struggle – The Endless Dance 30th Anniversary Deck",
   "pontos": {},
   "principal": true,
   "tipo": "expansion"
@@ -149128,6 +153606,26 @@
   "nome": "Vengeance: Roll & Fight – Episode 1",
   "pontos": {},
   "principal": true,
+  "tipo": "game"
+ },
+ "venture-2010": {
+  "ano": 2010,
+  "bgg": 5.98636,
+  "bgg_id": 74203,
+  "editora": "Øone Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/cfb9ea6c9601174f483fb27a910482829fe005ad.jpg",
+  "nome": "Venture (2010)",
+  "pontos": {
+   "2026-10-29": 529.74,
+   "2026-10-30": 529.74,
+   "2026-10-31": 529.74,
+   "2026-11-01": 529.74,
+   "2026-11-02": 529.74,
+   "2026-11-03": 529.74,
+   "2026-11-04": 529.74
+  },
+  "principal": false,
   "tipo": "game"
  },
  "venturesome": {
@@ -149983,6 +154481,18 @@
   "principal": true,
   "tipo": "game"
  },
+ "virulence-an-infectious-card-game": {
+  "ano": 2017,
+  "bgg": 6.63636,
+  "bgg_id": 202207,
+  "editora": "Genius Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/cfc1dde32b495ac3fa830e03ddd24a27f615a7f3.png",
+  "nome": "Virulence: An Infectious Card Game",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
  "virus": {
   "ano": 2019,
   "bgg": 6.71856,
@@ -150551,6 +155061,24 @@
   "imagem": "https://uploads.comparajogos.com.br/img/03a7fb94001ccc72439038b6d8c5020e6c5c7ad5.png",
   "nome": "Voodoo Prince",
   "pontos": {},
+  "principal": true,
+  "tipo": "game"
+ },
+ "vossa-excelencia-calamidade-publica": {
+  "ano": 2022,
+  "bgg": 9,
+  "bgg_id": 352428,
+  "editora": "Ludens Spirit",
+  "editora_br": true,
+  "imagem": "https://uploads.comparajogos.com.br/img/759d173bbe49e590e227551bfd5d8892731f78b1.jpg",
+  "nome": "Vossa Excelência: Calamidade Pública",
+  "pontos": {
+   "2026-10-29": 111.55,
+   "2026-10-30": 111.55,
+   "2026-11-02": 111.55,
+   "2026-11-03": 111.55,
+   "2026-11-04": 111.55
+  },
   "principal": true,
   "tipo": "game"
  },
@@ -152127,6 +156655,18 @@
   "principal": false,
   "tipo": "game"
  },
+ "wench": {
+  "ano": 2005,
+  "bgg": 4.49946,
+  "bgg_id": 17451,
+  "editora": "Eagle-Gryphon Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/0fbc39e666db9ea59e16db1dd340ea5cc462e316.jpg",
+  "nome": "Wench",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
  "wendake": {
   "ano": 2018,
   "bgg": 7.45199,
@@ -152384,6 +156924,18 @@
   "principal": false,
   "tipo": "game"
  },
+ "whats-your-excuse": {
+  "ano": 2022,
+  "bgg": null,
+  "bgg_id": 369886,
+  "editora": "Ad Magic, Inc.",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/df025abda961dde0bcc57ee9a9c95fac8a5bfc50.png",
+  "nome": "What's Your Excuse?",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
  "when-i-dream": {
   "ano": 2018,
   "bgg": 6.93179,
@@ -152625,6 +157177,18 @@
   "editora_br": false,
   "imagem": "https://uploads.comparajogos.com.br/img/28d2f9a1fb6f854457e61e92f980110e0623ebe9.png",
   "nome": "Who's the Silly Goose?",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
+ "why-are-you-like-this": {
+  "ano": 2024,
+  "bgg": 6.15833,
+  "bgg_id": 425079,
+  "editora": "Exploding Kittens",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/fccc5e3841e498e3a24e607e66141540dd773f6c.png",
+  "nome": "Why Are You Like This?",
   "pontos": {},
   "principal": false,
   "tipo": "game"
@@ -153426,6 +157990,18 @@
   "principal": false,
   "tipo": "game"
  },
+ "wonder-letters": {
+  "ano": 2007,
+  "bgg": 4,
+  "bgg_id": 35087,
+  "editora": "WonderChess LLC.",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/9bcd6a0953a1d04323ce2f91d77a53abe9628c25.jpg",
+  "nome": "Wonder Letters",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
  "wonderland-words": {
   "ano": 2025,
   "bgg": 7.91667,
@@ -153595,6 +158171,18 @@
   "editora_br": false,
   "imagem": "https://uploads.comparajogos.com.br/img/b458eb6e4e825f7c46f9ffa6ec6766897ace2fa1.jpg",
   "nome": "Word Winder",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
+ "wordoku-fun-spelled-out": {
+  "ano": 2016,
+  "bgg": 5.94875,
+  "bgg_id": 213544,
+  "editora": "Calliope Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/8a61737252b4310853bb898994f7f810fd09d265.png",
+  "nome": "Wordoku: Fun Spelled Out",
   "pontos": {},
   "principal": false,
   "tipo": "game"
@@ -153771,6 +158359,18 @@
   },
   "principal": true,
   "tipo": "expansion"
+ },
+ "would-you-rather": {
+  "ano": 1999,
+  "bgg": 4.36393,
+  "bgg_id": 677,
+  "editora": "Lagoon Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/ee167e779205738d9fc079c8728691a48fe15966.png",
+  "nome": "Would You Rather...?",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
  },
  "would-you-rather-dvd-game": {
   "ano": 2007,
@@ -154652,6 +159252,18 @@
   "principal": false,
   "tipo": "game"
  },
+ "yokai-2015": {
+  "ano": 2015,
+  "bgg": 5.96,
+  "bgg_id": 181997,
+  "editora": "Miciosegone Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/e692c4f74cbbda6967ab889acac51f49ed290be9.png",
+  "nome": "Yokai (2015)",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
  "yokai-sketch": {
   "ano": 2023,
   "bgg": 6.79465,
@@ -155113,6 +159725,24 @@
   "principal": true,
   "tipo": "game"
  },
+ "zap-zap-zoo": {
+  "ano": 2023,
+  "bgg": null,
+  "bgg_id": 466903,
+  "editora": "Elka Brinquedos",
+  "editora_br": false,
+  "imagem": null,
+  "nome": "Zap Zap Zoo",
+  "pontos": {
+   "2026-10-29": 47.64,
+   "2026-10-30": 47.64,
+   "2026-11-02": 47.64,
+   "2026-11-03": 47.64,
+   "2026-11-04": 47.64
+  },
+  "principal": false,
+  "tipo": "game"
+ },
  "zapotec": {
   "ano": 2022,
   "bgg": 7.1506,
@@ -155293,6 +159923,18 @@
    "2026-11-04": 36
   },
   "principal": true,
+  "tipo": "game"
+ },
+ "zeppelin-raider": {
+  "ano": 2013,
+  "bgg": 5.2,
+  "bgg_id": 168256,
+  "editora": "1A Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/28c568ec97a84efb9d35fef538417f42eaff5124.jpg",
+  "nome": "Zeppelin Raider",
+  "pontos": {},
+  "principal": false,
   "tipo": "game"
  },
  "zero-to-100": {
@@ -156019,6 +160661,18 @@
    "2026-10-24": 185.91,
    "2026-10-25": 185.91
   },
+  "principal": true,
+  "tipo": "expansion"
+ },
+ "zombicide-black-plague-npc-2-notorious-plagued-characters": {
+  "ano": 2018,
+  "bgg": 7.61831,
+  "bgg_id": 179539,
+  "editora": "CMON Limited",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/bae1112106a7e447ed97bc402fb7f64c355ba87e.jpg",
+  "nome": "Zombicide: Black Plague – NPC-2: Notorious Plagued Characters",
+  "pontos": {},
   "principal": true,
   "tipo": "expansion"
  },
@@ -157098,6 +161752,18 @@
   "principal": true,
   "tipo": "expansion"
  },
+ "zombie-burrito": {
+  "ano": 2024,
+  "bgg": 5.71875,
+  "bgg_id": 425077,
+  "editora": "Exploding Kittens",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/0eb047a64f85f241c9e5338f3e40ea58deafb7a1.png",
+  "nome": "Zombie Burrito",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
  "zombie-dice": {
   "ano": 2013,
   "bgg": 6.22917,
@@ -157277,6 +161943,18 @@
   "principal": false,
   "tipo": "game"
  },
+ "zoo-ball": {
+  "ano": 2017,
+  "bgg": 6.28903,
+  "bgg_id": 229742,
+  "editora": "Osprey Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/2ae50a7989fbe8815a0d237dea6b26288f6c3719.jpg",
+  "nome": "Zoo Ball",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
  "zoo-panic": {
   "ano": 2009,
   "bgg": 3.88636,
@@ -157311,6 +161989,30 @@
   "nome": "ZU Tiles: Hime – Starter Set 1",
   "pontos": {},
   "principal": true,
+  "tipo": "game"
+ },
+ "zueira-never-ends": {
+  "ano": 2015,
+  "bgg": null,
+  "bgg_id": 464988,
+  "editora": "(Independente)",
+  "editora_br": false,
+  "imagem": null,
+  "nome": "Zueira Never Ends",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
+ "zueira-never-ends-pug-life": {
+  "ano": 2017,
+  "bgg": null,
+  "bgg_id": 466544,
+  "editora": "(Independente)",
+  "editora_br": false,
+  "imagem": null,
+  "nome": "Zueira Never Ends: Pug Life",
+  "pontos": {},
+  "principal": false,
   "tipo": "game"
  },
  "zuera": {
