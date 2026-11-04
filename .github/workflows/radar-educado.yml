@@ -10,6 +10,7 @@ on:
 permissions:
   contents: write
   pages: write
+  actions: write
 
 concurrency:
   group: radar-black-educado
@@ -25,11 +26,7 @@ jobs:
         with:
           python-version: "3.13"
       - run: pip install requests Pillow beautifulsoup4 lxml feedparser price-parser protego
-      - name: Escolhe a leitura
-        id: acao
-        run: |
-          if [ "$(date -u +%u)" = "7" ] && [ "$(date -u +%H)" = "14" ]; then echo "acao=varrer" >> "$GITHUB_OUTPUT"; else echo "acao=coletar" >> "$GITHUB_OUTPUT"; fi
-      - name: Lê os preços
+      - name: Lê os preços e publica, em ciclos (normal 30 min, educado 3 h), e dispara o próximo trabalho
         env:
           KEEPA_KEY: ${{ secrets.KEEPA_KEY }}
           ML_CLIENT_ID: ${{ secrets.ML_CLIENT_ID }}
@@ -37,14 +34,5 @@ jobs:
           NTFY_TOKEN: ${{ secrets.NTFY_TOKEN }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CANAL: ${{ secrets.TELEGRAM_CANAL }}
-        run: python3 tools/black/robo_educado.py ${{ steps.acao.outputs.acao }}
-      - name: Publica
-        run: |
-          git config user.name "Radar Black (Elite Boardgamers)"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add conteudo/black black img/black
-          if git diff --cached --quiet; then echo "nada mudou"; exit 0; fi
-          git commit -m "Radar Black: robô educado de $(TZ=America/Sao_Paulo date +'%d/%m/%Y %Hh%M')"
-          for i in 1 2 3 4; do git pull --rebase -X theirs origin main && git push origin HEAD:main && break; sleep $((i*5)); done
-          curl -s -X POST -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" -H "Accept: application/vnd.github+json" \
-            "https://api.github.com/repos/${{ github.repository }}/pages/builds" || true
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: bash tools/black/ciclo.sh educado 10800 7200 radar-educado.yml
