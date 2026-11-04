@@ -2,7 +2,7 @@
  "mes": "2026-09",
  "label": "Setembro de 2026",
  "titulo_previstos": "Previstos para setembro",
- "total": 41,
+ "total": 43,
  "lancados": [
   {
    "id_jogo": 84662,
@@ -677,6 +677,27 @@
    "pode_criar_topico": true
   },
   {
+   "id_jogo": 89503,
+   "nome": "Monopoly: Guerreiras do Kpop",
+   "url": "https://ludopedia.com.br/jogo/monopoly-kpop-demon-hunters",
+   "capa": "https://storage.googleapis.com/ludopedia-capas/89503_t.jpg",
+   "fl_jogo_base": 1,
+   "fl_tipo": 1,
+   "editora": {
+    "id": 4023,
+    "nome": "Hasbro do Brasil",
+    "url": "https://ludopedia.com.br/editora/4023/Hasbro do Brasil"
+   },
+   "status": {
+    "id": 1,
+    "label": "Lançado",
+    "slug": "lancado"
+   },
+   "comentarios": 0,
+   "url_topico": null,
+   "pode_criar_topico": true
+  },
+  {
    "id_jogo": 88774,
    "nome": "Moon Colony Bloodbath: Kit de Recursos e Marcadores 3D - MeepleHive 3D",
    "url": "https://ludopedia.com.br/jogo/moon-colony-bloodbath-kit-de-recursos-e-marcadores-3d-meeplehive-3d",
@@ -687,6 +708,27 @@
     "id": 11181,
     "nome": "MeepleHive 3D",
     "url": "https://ludopedia.com.br/editora/11181/MeepleHive 3D"
+   },
+   "status": {
+    "id": 1,
+    "label": "Lançado",
+    "slug": "lancado"
+   },
+   "comentarios": 0,
+   "url_topico": null,
+   "pode_criar_topico": true
+  },
+  {
+   "id_jogo": 58482,
+   "nome": "Mythic - Criador de Aventura",
+   "url": "https://ludopedia.com.br/jogo/mythic-the-adventure-crafter",
+   "capa": "https://storage.googleapis.com/ludopedia-capas/58482_t.jpg",
+   "fl_jogo_base": 0,
+   "fl_tipo": 2,
+   "editora": {
+    "id": 2650,
+    "nome": "RetroPunk Publicações",
+    "url": "https://ludopedia.com.br/editora/2650/RetroPunk Publicações"
    },
    "status": {
     "id": 1,

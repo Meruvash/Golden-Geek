@@ -1745,5 +1745,50 @@
    ],
    "verificado_em": "2026-11-03"
   }
+ },
+ "moodpublishing.com": {
+  "nome": "MOOD Publishing",
+  "apelidos": [
+   "MOOD Publishing"
+  ],
+  "site": "https://moodpublishing.com",
+  "plataforma": "shopify",
+  "estrategia": "sitemap+shopify_json",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://moodpublishing.com/sitemap.xml"
+   ],
+   "verificado_em": "2026-11-04"
+  }
+ },
+ "mynewsdesk.com": {
+  "nome": "Coffee Stain (Mynewsdesk)",
+  "apelidos": [
+   "Coffee Stain (Mynewsdesk)"
+  ],
+  "site": "https://www.mynewsdesk.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://www.mynewsdesk.com/en/media-monitoring/",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.mynewsdesk.com/sitemaps/index.xml",
+    "https://www.mynewsdesk.com/post-sitemap.xml",
+    "https://www.mynewsdesk.com/page-sitemap.xml",
+    "https://www.mynewsdesk.com/customer_case-sitemap.xml"
+   ],
+   "verificado_em": "2026-11-04"
+  }
  }
 }

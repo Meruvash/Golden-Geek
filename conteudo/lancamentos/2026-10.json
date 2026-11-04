@@ -2,7 +2,7 @@
  "mes": "2026-10",
  "label": "Outubro de 2026",
  "titulo_previstos": "Previstos para outubro",
- "total": 53,
+ "total": 54,
  "lancados": [
   {
    "id_jogo": 66676,
@@ -173,6 +173,48 @@
    "pode_criar_topico": true
   },
   {
+   "id_jogo": 57677,
+   "nome": "Civolution",
+   "url": "https://ludopedia.com.br/jogo/civolution",
+   "capa": "https://storage.googleapis.com/ludopedia-capas/57677_t.jpg",
+   "fl_jogo_base": 1,
+   "fl_tipo": 1,
+   "editora": {
+    "id": 3525,
+    "nome": "Devir Brasil",
+    "url": "https://ludopedia.com.br/editora/3525/Devir Brasil"
+   },
+   "status": {
+    "id": 1,
+    "label": "Lançado",
+    "slug": "lancado"
+   },
+   "comentarios": 0,
+   "url_topico": null,
+   "pode_criar_topico": true
+  },
+  {
+   "id_jogo": 81114,
+   "nome": "Civolution - Carta de Admissão",
+   "url": "https://ludopedia.com.br/jogo/civolution-acceptance-letter",
+   "capa": "https://storage.googleapis.com/ludopedia-capas/81114_t.jpg",
+   "fl_jogo_base": 0,
+   "fl_tipo": 1,
+   "editora": {
+    "id": 3525,
+    "nome": "Devir Brasil",
+    "url": "https://ludopedia.com.br/editora/3525/Devir Brasil"
+   },
+   "status": {
+    "id": 1,
+    "label": "Lançado",
+    "slug": "lancado"
+   },
+   "comentarios": 0,
+   "url_topico": "https://ludopedia.com.br/topico/102408/-topico-oficial-civolution-carta-de-admissao",
+   "pode_criar_topico": false
+  },
+  {
    "id_jogo": 81664,
    "nome": "Coffee Rush: Grab & Go",
    "url": "https://ludopedia.com.br/jogo/coffee-rush-grab-go",
@@ -330,6 +372,27 @@
     "id": 92,
     "nome": "Asmodee (Galápagos)",
     "url": "https://ludopedia.com.br/editora/92/Asmodee (Galápagos)"
+   },
+   "status": {
+    "id": 1,
+    "label": "Lançado",
+    "slug": "lancado"
+   },
+   "comentarios": 0,
+   "url_topico": null,
+   "pode_criar_topico": true
+  },
+  {
+   "id_jogo": 38119,
+   "nome": "Horizontes de Spirit Island ",
+   "url": "https://ludopedia.com.br/jogo/horizons-of-spirit-island",
+   "capa": "https://storage.googleapis.com/ludopedia-capas/38119_t.jpg",
+   "fl_jogo_base": 1,
+   "fl_tipo": 1,
+   "editora": {
+    "id": 1870,
+    "nome": "Ace Studios",
+    "url": "https://ludopedia.com.br/editora/1870/Ace Studios"
    },
    "status": {
     "id": 1,
@@ -616,6 +679,27 @@
    "pode_criar_topico": false
   },
   {
+   "id_jogo": 82348,
+   "nome": "Magical Athlete (I)",
+   "url": "https://ludopedia.com.br/jogo/magical-athlete-i",
+   "capa": "https://storage.googleapis.com/ludopedia-capas/82348_t.jpg",
+   "fl_jogo_base": 1,
+   "fl_tipo": 1,
+   "editora": {
+    "id": 92,
+    "nome": "Asmodee (Galápagos)",
+    "url": "https://ludopedia.com.br/editora/92/Asmodee (Galápagos)"
+   },
+   "status": {
+    "id": 4,
+    "label": "Em Pré Venda",
+    "slug": "pre-venda"
+   },
+   "comentarios": 6,
+   "url_topico": "https://ludopedia.com.br/topico/101448/-topico-oficial-magical-athlete-i",
+   "pode_criar_topico": false
+  },
+  {
    "id_jogo": 80721,
    "nome": "Formigas",
    "url": "https://ludopedia.com.br/jogo/ants",
@@ -742,48 +826,6 @@
    "pode_criar_topico": true
   },
   {
-   "id_jogo": 57677,
-   "nome": "Civolution",
-   "url": "https://ludopedia.com.br/jogo/civolution",
-   "capa": "https://storage.googleapis.com/ludopedia-capas/57677_t.jpg",
-   "fl_jogo_base": 1,
-   "fl_tipo": 1,
-   "editora": {
-    "id": 3525,
-    "nome": "Devir Brasil",
-    "url": "https://ludopedia.com.br/editora/3525/Devir Brasil"
-   },
-   "status": {
-    "id": 4,
-    "label": "Em Pré Venda",
-    "slug": "pre-venda"
-   },
-   "comentarios": 0,
-   "url_topico": null,
-   "pode_criar_topico": true
-  },
-  {
-   "id_jogo": 81114,
-   "nome": "Civolution - Carta de Admissão",
-   "url": "https://ludopedia.com.br/jogo/civolution-acceptance-letter",
-   "capa": "https://storage.googleapis.com/ludopedia-capas/81114_t.jpg",
-   "fl_jogo_base": 0,
-   "fl_tipo": 1,
-   "editora": {
-    "id": 3525,
-    "nome": "Devir Brasil",
-    "url": "https://ludopedia.com.br/editora/3525/Devir Brasil"
-   },
-   "status": {
-    "id": 3,
-    "label": "Anunciado",
-    "slug": "anunciado"
-   },
-   "comentarios": 0,
-   "url_topico": "https://ludopedia.com.br/topico/102408/-topico-oficial-civolution-carta-de-admissao",
-   "pode_criar_topico": false
-  },
-  {
    "id_jogo": 66668,
    "nome": "Compile: Main1",
    "url": "https://ludopedia.com.br/jogo/compile-main1",
@@ -862,27 +904,6 @@
     "id": 5,
     "label": "Em Financiamento Coletivo",
     "slug": "fc"
-   },
-   "comentarios": 0,
-   "url_topico": null,
-   "pode_criar_topico": true
-  },
-  {
-   "id_jogo": 38119,
-   "nome": "Horizontes de Spirit Island ",
-   "url": "https://ludopedia.com.br/jogo/horizons-of-spirit-island",
-   "capa": "https://storage.googleapis.com/ludopedia-capas/38119_t.jpg",
-   "fl_jogo_base": 1,
-   "fl_tipo": 1,
-   "editora": {
-    "id": 1870,
-    "nome": "Ace Studios",
-    "url": "https://ludopedia.com.br/editora/1870/Ace Studios"
-   },
-   "status": {
-    "id": 4,
-    "label": "Em Pré Venda",
-    "slug": "pre-venda"
    },
    "comentarios": 0,
    "url_topico": null,

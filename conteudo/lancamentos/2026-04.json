@@ -2,7 +2,7 @@
  "mes": "2026-04",
  "label": "Abril de 2026",
  "titulo_previstos": "Previstos para abril",
- "total": 52,
+ "total": 53,
  "lancados": [
   {
    "id_jogo": 32345,
@@ -204,6 +204,27 @@
     "id": 4183,
     "nome": "Bucaneiros Jogos",
     "url": "https://ludopedia.com.br/editora/4183/Bucaneiros Jogos"
+   },
+   "status": {
+    "id": 1,
+    "label": "Lançado",
+    "slug": "lancado"
+   },
+   "comentarios": 0,
+   "url_topico": null,
+   "pode_criar_topico": true
+  },
+  {
+   "id_jogo": 67183,
+   "nome": "DCeased: Gotham City Outbreak",
+   "url": "https://ludopedia.com.br/jogo/dceased-gotham-city-outbreak",
+   "capa": "https://storage.googleapis.com/ludopedia-capas/67183_t.jpg",
+   "fl_jogo_base": 1,
+   "fl_tipo": 1,
+   "editora": {
+    "id": 92,
+    "nome": "Asmodee (Galápagos)",
+    "url": "https://ludopedia.com.br/editora/92/Asmodee (Galápagos)"
    },
    "status": {
     "id": 1,
