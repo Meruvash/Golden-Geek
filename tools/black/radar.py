@@ -359,6 +359,15 @@ def links_ruins():
     return _LINKS_RUINS
 
 
+def url_oferta(o, api):
+    """Mercado Livre pela API: abre o anúncio do vendedor conferido (loja oficial ou MercadoLíder), não a página geral do
+    produto, onde o destaque pode ser de outro vendedor e outro preço (pedido do usuário em 04/11/2026)."""
+    m = re.search(r"mercadolivre\.com\.br/(?:[^/]+/)?p/(MLB\d+)", o.get("url") or "")
+    if api and api.get("fonte") == "API do Mercado Livre" and api.get("anuncio") and m:
+        return f"https://www.mercadolivre.com.br/p/{m.group(1)}?pdp_filters=item_id:{api['anuncio']}"
+    return o["url"]
+
+
 def link_oferta(url):
     """Link de oferta pronto para o site, ou None quando ele não leva direto à página do produto."""
     if not url or not url.startswith("http") or INDIRETO.search(url):
@@ -577,6 +586,7 @@ def calcular():
             url = link_oferta(o.get("url"))
             if not url:
                 continue  # sem link direto para a página do produto (intermediário ou ERRO na auditoria de links)
+            url = url_oferta({**o, "url": url}, api)
             # preço da API oficial, ou lido agora na página da loja; senão, o que a loja informou ao Compara Jogos
             por = api["preco"] if api else (la["preco"] if la else o["por"])
             desc = (ref - por) / ref
