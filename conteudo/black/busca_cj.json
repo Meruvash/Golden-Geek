@@ -719,6 +719,7 @@
  "galapagos daybreak jogo de tabuleiro para galera 1 a 4 jogadores partidas de ate 120 min": null,
  "galapagos familia": null,
  "galapagos love letter 2a edicao jogo de cartas para 2 a 6 jogadores": null,
+ "galapagos radlands jogo de cartas para amigos 2 jogadores 20 a 40 minutos por partida": null,
  "galapagos zombicide 2a edicao jogo de tabuleiro cooperativo 1 6 jogadores 30 60min": null,
  "gentes": {
   "bgg": 6.65767,
@@ -1002,6 +1003,17 @@
   "tipo": "game"
  },
  "legendary encounters the matrix deck building game": null,
+ "lemur": {
+  "bgg": 5.27778,
+  "editora": "PaperGames",
+  "imagem": "https://uploads.comparajogos.com.br/img/41d2bfc34f986c7f020ceb5099271270beabfbce.png",
+  "menor": 18.49,
+  "nome": "Lemur",
+  "ref": 22.4,
+  "ref_dias": 32,
+  "slug": "lemur",
+  "tipo": "game"
+ },
  "light speed arena": {
   "bgg": 6.08341,
   "editora": "Pegasus Spiele",
