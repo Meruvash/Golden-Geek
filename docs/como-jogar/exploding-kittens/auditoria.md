@@ -122,3 +122,13 @@ Pedido do editor: seção `## setup. Montar a mesa passo a passo` antes do "Come
 - **Foto oficial `fotos/componentes-1.webp` não usada.** A imagem da página da Exploding Kittens (arquivo de origem `EKG-2EXP_PDPContent_DTC_1400x1400InTheBox.png`) mostra cartas de expansões em inglês (Streaking Kitten, Alter the Future, Catomic Bomb, Garbage Collection, Mark, Curse of the Cat Butt, Swap Top and Bottom, See the Future (5X)), que não existem na caixa da Edição Original. Pô-la como "o que vem na caixa" ensinaria errado. Fica para o editor decidir; a seção usa só desenhos do folheto.
 - **"Comece a jogar":** "Monte a mesa" virou um resumo de 3 itens que remete à seção nova.
 - **Portões:** `checar_comece.py` passa (aviso só pelas exclamações de "Não!" e "Sim!"); `vicios.py` 0 avisos; travessão e meia-risca 0; conversão em memória com `tools/como_jogar_md.pagina()`: a seção sai com a classe `setup`, 3 figuras `setup-*`, sem marca `[!...]` sobrando. `wc -w` do tutorial: 5.358 palavras com a seção nova. O campo `publicar` do JSON não foi tocado.
+
+## Auditoria independente da montagem (04/11/2026)
+
+Resultado: aprovado com correções, sem erro de fato. Aplicado:
+
+1. Resumo do "Comece a jogar", item 2: "Embaralhe e dê 7 cartas a cada um (cada um fica com 8); depois ponha no baralho Exploding Kittens em número igual ao de jogadores menos 1 e devolva à caixa os que sobrarem" (p. 1, passos 4 e 5).
+2. Resumo, item 1: acrescentado "os demais voltam para a caixa" depois do limite de 2 Desarmes com 2 ou 3 jogadores (p. 1).
+3. Legenda de `setup-gatinhos-de-volta.webp`: "Passo 5, exemplo com 4 jogadores: 3 Exploding Kittens entram no baralho" (a figura mostra 3 cartas). A figura foi regravada com o fundo cinza do quadro "Por exemplo" trocado por branco, como as outras; o desenho não mudou.
+
+A foto `fotos/componentes-1.webp` foi marcada "fora" em `fotos/fontes.json` pelo coordenador (cartas de expansão). Portões: `checar_comece.py` passa (aviso só pelas exclamações de "Não!" e "Sim!"); `vicios.py` 0 avisos; travessão e meia-risca 0. Sem commit.
