@@ -321,6 +321,17 @@
   "slug": "card-goblins-expansao-faroeste",
   "tipo": "expansion"
  },
+ "carnival zombie": {
+  "bgg": 7.03779,
+  "editora": "Albe Pavo",
+  "imagem": "https://uploads.comparajogos.com.br/img/7570df2920e7512b3a7c9cb25b10f7609a334b6d.jpg",
+  "menor": null,
+  "nome": "Carnival Zombie",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "carnival-zombie",
+  "tipo": "game"
+ },
  "cashflow 101": {
   "bgg": 5.29511,
   "editora": "Cashflow Technologies, Inc.",
@@ -424,6 +435,17 @@
   "ref_dias": 32,
   "slug": "cortex-harry-potter",
   "tipo": "game"
+ },
+ "coup a reforma": {
+  "bgg": 7.25303,
+  "editora": "FunBox Jogos",
+  "imagem": "https://uploads.comparajogos.com.br/img/c9957e84cb8ce22f29407796231704fc4f3de338.jpg",
+  "menor": 89.91,
+  "nome": "Coup: A Reforma",
+  "ref": null,
+  "ref_dias": 1,
+  "slug": "coup-a-reforma",
+  "tipo": "expansion"
  },
  "cubo das emocoes": {
   "bgg": null,
@@ -627,6 +649,7 @@
   "slug": "enquadrados",
   "tipo": "game"
  },
+ "escape devir": null,
  "estalo": {
   "bgg": 6.29137,
   "editora": "Grow Jogos e Brinquedos",
@@ -771,6 +794,17 @@
  "fora de ordem adoleta jogos": null,
  "franco german rails expansion for gulf mobile ohio": null,
  "frete gratis": null,
+ "fruit war": {
+  "bgg": null,
+  "editora": "Blakruut Games",
+  "imagem": "https://uploads.comparajogos.com.br/img/b9aa99a89575eca8479b9023413aeca04412d799.jpg",
+  "menor": null,
+  "nome": "Fruit War",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "fruit-war",
+  "tipo": "game"
+ },
  "fugitive second edition": {
   "bgg": 7.42449,
   "editora": "Fowers Games",
