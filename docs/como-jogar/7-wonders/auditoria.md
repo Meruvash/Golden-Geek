@@ -127,3 +127,29 @@ Vídeo: "7 Wonders - Como Jogar", Romir Play House (oEmbed), de 2016, primeira e
 - O vídeo é da primeira edição.
 - O tutorial ficou no teto da extensão pedida; a etapa 2 é a mais densa.
 - Nenhum teste com leitor; esta é uma autoverificação do redator, sem auditoria independente ainda.
+
+## Auditoria independente (05/11/2026)
+
+Duas auditorias de outros agentes: conferência contra o manual (aprovado com correções; nenhuma regra ou conta errada) e partida simulada só com o tutorial (joga com ajustes). O que mudou:
+
+**Conferência**
+1. Fonte dos efeitos: os três trechos que citavam a cartilha (comércio a 1 Moeda, pontos das Amarelas e Roxas, efeitos de estágio) dizem agora "cartilha de efeitos oficial em inglês, *Description of Effects*, Repos 2023; a cartilha em português não foi consultada".
+2. Frase sem apoio ("ninguém fica esperando a vez") trocada por "o jogo é para 3 a 7 pessoas (página do jogo na Repos)".
+3. Treino rápido da etapa 2: acrescentado que nenhum vizinho tem outro recurso à venda, nem no recurso inicial, para a resposta b) ficar fechada.
+4. Complete do "Comece a jogar": a premissa diz que o estágio também não cabe no Tesouro, para "vender" ser a única saída.
+5. Erros mais caros: "a 2 Moedas cada (1 Moeda com efeito de comércio)".
+6. Arrumação da cidade: "e as de recurso em cima do recurso inicial (p. 4)".
+7. Passo 9 da montagem: acrescentada a recomendação da p. 4 de jogar um após o outro na primeira partida.
+8. Figuras: `recursos.webp` e `encadeamento.webp` recortadas no topo (sem a linha de texto do manual); `setup-maravilha.webp` ampliada para a direita, e o rótulo "Lado do Dia ou da Noite" aparece inteiro, o que sustenta a legenda.
+
+**Partida simulada**
+- a. Roxas: são 10 Guildas, todas marcadas 3+, logo nenhuma sai no filtro do passo 2. Fonte: Lista de cartas e encadeamentos, versão oficial em inglês (p. 2 da lista; as 10 Guildas com "3+"). O manual (p. 1 e 3) não dá o número; o tutorial cita a lista.
+- b. Conferência final: "cada baralho com 7 cartas por jogador (21 com 3 jogadores, 49 com 7)". Conferido: com 7 jogadores, Era I e Era II têm 49 cartas (p. 1) e a Era III fica com 40 não Roxas mais 9 Roxas = 49; com 3 jogadores, a contagem dos "3+" da coluna da Era I na lista em inglês dá 21. As demais combinações decorrem de o manual distribuir 7 cartas a cada um (p. 4) [interpretada].
+- c. Encadeamento: o passo a passo diz que o símbolo que a carta libera fica no alto, à direita, nas cartas da sua cidade, e o que a carta nova exige fica junto à zona de custo (p. 7 e figura da p. 7).
+- d. "Recurso inicial" definido no passo 5 da montagem (p. 2), antes do primeiro uso no texto corrido. A "seta" do efeito de comércio: a seta desenhada no símbolo aponta para o vizinho da esquerda ou da direita (cartilha em inglês: "on the left or right according to the arrow").
+- e. Lista de cartas e encadeamentos descrita na tabela de componentes como folha de referência (p. 2: "Essa lista serve de referência"). Troca de 3 Moedas de 1 por uma de 3: o manual não fala nisso; não entrou. Entrou só o que a p. 2 diz: "x Moedas" é o valor total.
+- f. Vizinhos definidos no passo 9 (p. 4); com 3 jogadores, são os outros dois (decorre da definição). Como sortear o tabuleiro: o manual só diz "aleatório"; o tutorial diz isso e não inventa método.
+- g. Custo em Moedas: o manual só fala em cartas que custam 1 Moeda (p. 6) e não mostra carta que peça Moedas e recursos juntos; o tutorial diz exatamente isso, sem afirmar que não existe.
+- h. Símbolo militar: nas figuras das p. 2, 5 e 6, é um par de espadas cruzadas sobre um escudo redondo; o manual o chama de "símbolos militares". O tutorial agora descreve assim.
+
+**Portões depois da correção:** `tools/checar_comece.py`: "seção Comece a jogar dentro da diretriz"; `tools/vicios.py`: 0 aviso; travessão e meia-risca: 0. JSON com `"publicar": false`.

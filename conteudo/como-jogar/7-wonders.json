@@ -15,9 +15,9 @@
   "Recursos não se gastam; o que faltar se compra só dos vizinhos, a 2 Moedas por recurso, e só de cartas Marrons, Cinzas e do recurso inicial do tabuleiro.",
   "No fim de cada Era, a força militar é comparada com a de cada vizinho; depois da Era III, somam-se Maravilha, Tesouro, conflitos e as cartas Azuis, Amarelas, Verdes e Roxas."
  ],
- "leitura_min": 21,
+ "leitura_min": 22,
  "etapas": 3,
  "resenha": null,
  "chamada": "Escolha uma carta, passe a mão e construa a sua cidade da Antiguidade ao mesmo tempo que todos. Começa com a mesa montada passo a passo e segue em três etapas, do primeiro turno à contagem da ciência.",
- "publicar": false
+ "publicar": true
 }

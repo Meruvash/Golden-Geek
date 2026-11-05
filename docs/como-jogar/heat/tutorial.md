@@ -90,7 +90,7 @@ A montagem completa, com figuras, está em **Montar a mesa passo a passo**, no a
 2. Baralho de 18 cartas (12 básicas, 3 melhorias iniciais, 3 de estresse) virado para baixo; 6 de calor no motor; pino na 1ª marcha (p. 3).
 3. Carros no grid em ordem sorteada; 7 cartas na mão (p. 3).
 
-### Sua primeira rodada
+### Seu primeiro turno
 
 1. **Todos trocam de marcha ao mesmo tempo.** Fique onde está, ou suba ou desça uma marcha (p. 4).
 2. **Todos jogam cartas viradas para baixo,** tantas quanto a marcha: 1 na 1ª, 4 na 4ª. Carta de calor não pode ser jogada (p. 4).
@@ -120,7 +120,7 @@ A montagem completa, com figuras, está em **Montar a mesa passo a passo**, no a
 
 Rodar na curva: etapa 2. Estresse, resfriamento, turbo, vácuo e adrenalina: etapas 1 e 3. Fim da corrida: etapa 3.
 
-### Como a corrida acaba
+### Como a partida acaba
 
 Vence quem cruzar primeiro a linha de chegada depois das voltas indicadas. Se dois ou mais cruzam na mesma rodada, vence o carro mais à frente (p. 7).
 
@@ -128,7 +128,7 @@ Vence quem cruzar primeiro a linha de chegada depois das voltas indicadas. Se do
 
 !video[HEAT: Pedal to the Metal | Gameplay resumida, canal Duque Board Games](https://www.youtube.com/watch?v=eSF0OhUyuLU&t=0s)
 
-> [!atencao] **Os três erros mais caros.** O carro anda exatamente a velocidade, nem uma casa a menos (p. 5). O vácuo não entra na conta da curva, mas o turbo entra (p. 6). E carta de calor nunca é jogada nem descartada da mão: só sai pelo resfriamento (ou, no caso raro da mão entupida, completando a jogada; p. 7).
+> [!atencao] **Os três erros mais caros.** O carro anda exatamente a velocidade, nem uma casa a menos (p. 5). O vácuo não entra na conta da curva, mas o turbo entra (p. 6). E carta de calor não pode ser descartada nem jogada normalmente: só sai da mão pelo resfriamento (ou, no caso raro da mão entupida, completando a jogada; p. 7).
 
 ## 0. Antes de tudo: o que é este jogo
 
@@ -320,6 +320,8 @@ O guia tem três etapas, cada uma uma parte real da corrida: andar na reta, pass
 > 3. Depois da linha de chegada, ignore os limites de velocidade: ande o quanto puder.
 > 4. No fim da rodada, tire da pista os carros que chegaram e ponha-os, em ordem, no Hall da Fama do tabuleiro. A corrida continua até todos chegarem.
 
+> [!edicao] **Contar as voltas.** O livreto básico diz só que vence quem cruza primeiro a linha de chegada "depois do número de voltas indicado no tabuleiro" (p. 7). Ele não explica como contar as voltas nem se a saída do grid conta como uma passagem pela linha. As casas por volta (69 na pista dos EUA) aparecem no quadro da pista (p. 3), mas nenhuma regra básica as usa.
+
 > [!mais] **Vácuo na chegada.** O vácuo nunca pode ser usado para cruzar a linha de chegada, nem depois de cruzá-la (p. 7).
 
 > [!mais] **Adrenalina no fim.** Quando carros já saíram da pista, a adrenalina continua contando pelo número de carros que largaram, não pelos que ainda correm (p. 7).
@@ -371,7 +373,7 @@ Responda sem consultar. Cada resposta diz o que reler.
 ?? 5. Você tem 2 cartas de estresse e 1 de calor na mão e não quer nenhuma delas. Pode descartá-las?
 - ( ) Sim, todas, no passo de descartar
 - ( ) Só o estresse
-- (x) Nenhuma: estresse sai ao ser jogado, e calor, pelo resfriamento
+- (x) Nenhuma: estresse sai ao ser jogado, e calor, pelo resfriamento (ou na mão entupida)
 = **Nenhuma.** Estresse e calor não podem ser descartados (p. 5 a 7). Releia a etapa 3.
 
 ?? 6. Numa corrida de 6 carros, quem recebe a adrenalina?
@@ -391,7 +393,7 @@ Responda sem consultar. Cada resposta diz o que reler.
 2. Jogar cartas (todos juntos): tantas quanto a marcha, viradas para baixo; nunca calor.
 3. Do carro da frente para trás, cada um: revelar e mover exatamente a soma. Símbolo +: vire até sair uma básica.
 4. Adrenalina: último carro (dois últimos com 5 ou mais): +1 casa e +1 de velocidade, e/ou +1 resfriamento.
-5. Reagir, em qualquer ordem: resfriamento (1ª marcha 3, 2ª marcha 1), turbo (1 calor, um +, uma vez por turno).
+5. Reagir, em qualquer ordem: resfriamento (1ª marcha 3, 2ª marcha 1, 3ª e 4ª nenhum), turbo em qualquer marcha (1 calor, um +, uma vez por turno).
 6. Vácuo: ao lado ou logo atrás de um carro, +2 casas; não conta na curva; nunca na chegada.
 7. Conferir curva: velocidade (cartas, + do turbo, +1 da adrenalina) acima do limite paga a diferença em calor; cada curva em separado.
 8. Descartar o que quiser, menos estresse e calor.

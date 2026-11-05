@@ -194,8 +194,9 @@ Script: `/tmp/claude-0/-home-user/6a4d6f51-afb4-5576-b0bf-e2035e13b944/scratchpa
 
 Figuras em `como-jogar/everdell/figuras/` (webp, qualidade 80, até 1000 px), recortadas das páginas renderizadas a 200 dpi; as imagens embutidas no PDF têm 100 ppi, então os recortes são pequenos:
 
-- Montagem: `setup-eventos-basicos` (p. 4), `setup-arvore`, `setup-recursos`, `setup-fichas`, `setup-floresta` (duas clareiras lado a lado), `setup-eventos`, `setup-campina`, `setup-jogador`, `preparacao` (página 7 inteira, sem o número da página; a nota de texto "Não há limite de quantidade de recursos..." foi apagada com a cor do papel) (p. 7); `setup-galhos` (p. 13).
+- Montagem: `setup-eventos-basicos` e `setup-tabuleiro` (p. 4), `setup-arvore`, `setup-recursos`, `setup-fichas`, `setup-floresta` (duas clareiras lado a lado), `setup-eventos`, `setup-campina`, `setup-jogador`, `preparacao` (página 7 inteira, sem o número da página; a nota de texto "Não há limite de quantidade de recursos..." foi apagada com a cor do papel) (p. 7); `setup-galhos` (p. 13).
 - Etapas: `locais-basicos` e `locais` (p. 8), `refugio-jornada` e `eventos` (p. 9), `carta` (p. 10), `pontuacao` (p. 15).
-- Passos sem figura própria: 1 (tabuleiro sozinho; a figura da árvore cobre o passo 2), 9 e 10 (baralho e descarte aparecem nas figuras dos Eventos e da página inteira), 11 a 12 juntos numa figura, 14 e 15 (não ilustráveis).
+- Foto: `fotos/mesa-1.webp` (de outro agente; crédito "Imagem: Tabletop Tycoon" do `fotos/fontes.json`), no fim da montagem, descrita como partida em andamento em imagem digital da edição em inglês.
+- Passos sem figura própria: 9 e 10 (baralho e descarte aparecem nas figuras dos Eventos e da página inteira), 11 a 12 juntos numa figura, 14 e 15 (não ilustráveis).
 
 `conteudo/como-jogar/everdell.json`: jogadores (1 a 4), idade (14+) e duração (60 a 120 min) da página do produto EVE001; edição "Edição Galápagos (Asmodee)"; `resenha: null` (não há `everdell/` nem `conteudo/everdell.json`); `publicar: false`; `leitura_min: 24` (cerca de 280 palavras por minuto sobre o total, a proporção dos outros tutoriais).

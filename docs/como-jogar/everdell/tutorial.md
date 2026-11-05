@@ -28,6 +28,8 @@ A montagem segue a página de preparação do manual (p. 6), na mesma ordem, com
 **1. O tabuleiro e a árvore** (p. 6)
 
 1. **Ponha o tabuleiro no centro da mesa** (p. 6). O manual não ensina a encaixar as peças da árvore; a p. 5 só a mostra montada.
+!fig[O tabuleiro: no alto, o rio e o toco da árvore; logo abaixo, a faixa dos locais básicos; dos lados, as clareiras da floresta; embaixo, a Jornada à esquerda e o Refúgio à direita. Ilustração: manual Galápagos (p. 4)](figuras/setup-tabuleiro.webp)
+
 2. **Ponha a Árvore Perene de Ever no toco desenhado no topo do tabuleiro** (p. 6).
 
 !fig[A Árvore Perene de Ever no toco do alto do tabuleiro (1), com os trabalhadores nos galhos de cima (7). Ilustração: manual Galápagos (p. 7)](figuras/setup-arvore.webp)
@@ -80,6 +82,8 @@ A montagem segue a página de preparação do manual (p. 6), na mesma ordem, com
 15. **Ninguém recebe recursos na montagem:** tudo vem dos locais e das cartas durante a partida (p. 6).
 
 !fig[A mesa montada para 4 jogadores, com os números dos passos do manual (1 a 7). Ilustração: manual Galápagos (p. 7)](figuras/preparacao.webp)
+
+!fig[Partida de 2 jogadores já em andamento, em imagem digital da editora (edição em inglês): a árvore com o baralho, a Campina, as cartas de Floresta e as vilas com várias cartas. Na montagem, as vilas começam vazias. Imagem: Tabletop Tycoon](fotos/mesa-1.webp)
 
 **O que muda com o número de jogadores** (p. 6 e 8):
 

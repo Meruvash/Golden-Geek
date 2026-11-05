@@ -86,3 +86,43 @@ O mesmo protocolo do piloto (PROMPT_PILOTO, seção 10): 5 a 8 adultos que nunca
 ## 8. Ligação com a resenha
 
 A resenha `/heat-pedal-to-the-metal/` já usa calor, estresse, resfriamento, turbo, vácuo e adrenalina; o tutorial usa os mesmos nomes, e o JSON aponta `"resenha": "heat-pedal-to-the-metal"`, o que faz o gerador pôr o link "Leia a nossa resenha" e as fotos oficiais da resenha.
+
+## Auditoria independente (05/11/2026)
+
+Duas auditorias independentes (regras, com o manual; e partida simulada, só com o tutorial) aprovaram o texto com correções. Todas as contas foram confirmadas. Correções feitas nesta rodada:
+
+**Auditoria de regras**
+
+1. Legenda de `estresse.webp` estava errada. Conferida de novo na imagem da p. 5: para o primeiro estresse saem uma carta de calor e uma de estresse, depois o 2; para o segundo, a melhoria de 5 e uma carta de calor, depois o 3. Descartadas: 2 de calor, 1 de estresse e 1 melhoria. Corrigida.
+2. "Calor só sai pelo resfriamento" ignorava a mão entupida (p. 7). Corrigido nos três erros caros, no bloco da mão entupida, na sua vez da etapa 3 e na avaliação 5.
+3. Complete da etapa 1: agora pede "a maior velocidade garantida" (o estresse poderia dar mais).
+4. Calor que sobra: deixou de ser atribuído à p. 2; agora diz que o manual não usa reserva de calor nas regras básicas e que guardá-lo é leitura do guia.
+5. Legenda do grid: tirado "numeradas".
+6. Módulos avançados citados no livreto avançado, p. 1.
+7. Adrenalina: "e/ou".
+8. Passos 4 a 9 com os números do manual; resfriamento e turbo dentro do passo 5.
+9. Rodopio: "quando não há calor suficiente".
+10. Painel citado nas p. 3 e 5.
+11. `setup-componentes`: rótulos em inglês traduzidos na legenda (sem novo recorte).
+12. `setup-quadro`: legenda menciona a seta do Hall da Fama.
+13. Seção 0: "em geral sabe" e "uma ou mais cartas".
+14. Ordem dos turnos: a ordem do grid vale só para a primeira rodada (p. 3); cada rodada começa pelo carro da frente (p. 4). O `[!edicao]` sobre a reavaliação no meio da rodada foi mantido.
+15. Estresse do rodopio vindo da reserva: uma frase diz que é leitura do guia.
+
+**Partida simulada**
+
+- a. Voltas: novo `[!edicao]` "Contar as voltas": o livreto básico não explica a contagem nem se a saída do grid conta; as 69 casas por volta só aparecem no quadro, sem regra que as use.
+- b. Troca dupla com motor vazio: o manual não trata (só proíbe o turbo sem calor, p. 7); o tutorial não afirma nada além disso. Continua lacuna (R5).
+- c. Resfriamento "na 3ª e na 4ª, nenhum", no passo a passo e na folha (o painel só mostra o símbolo na 1ª e na 2ª; p. 6).
+- d. Turbo descrito como válido em qualquer marcha no "Para entender" da etapa 3 e na folha.
+- e. Estresse do rodopio vai para a mão; o manual só manda "comprar até ter 7" (p. 6): com 7 ou mais, não se compra nada. Escrito assim; o manual não fala de limite de mão.
+- f. Pista: vagas lado a lado ("duas, nas ilustrações"); posição 1 do grid é a da frente e joga primeiro (inferido de p. 3 e 4). O número de posições do grid não foi afirmado, porque o texto não o dá.
+- g. "Na pista dos EUA são 6 e 3; nas outras, use os números do quadro."
+- h. Definidos linha de corrida, linha de curva e Hall da Fama, pela figura da p. 4 e pelo quadro da p. 3. Se parar sobre a linha de curva conta como cruzar: o manual não diz; a linha aparece na divisa das casas, e o guia não afirma nada além disso.
+- i. Motor acima de 6 e reserva de estresse vazia: o manual não trata; não entrou.
+- j. Dica: o resfriamento (passo 5) vem antes de conferir a curva (passo 7).
+- k. Seção 0: "uma ou mais cartas de calor".
+
+Além disso, as subseções "Sua primeira rodada" e "Como a corrida acaba" foram renomeadas para "Seu primeiro turno" e "Como a partida acaba", nomes exigidos por `tools/checar_comece.py`.
+
+Extensão: cerca de 6.390 palavras de texto, uns 6% acima do teto de 6.000, por causa das definições e ressalvas pedidas pelas duas auditorias. Portões depois das correções: `checar_comece.py` aprovado; `vicios.py` sem aviso; zero travessões; o conversor gera a página sem erro. `publicar` continua `false`.
