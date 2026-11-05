@@ -1,50 +1,51 @@
-# Auditoria de links — 2026-11-05T04:23-03:00
+# Auditoria de links — 2026-11-05T17:19-03:00
 
 Gerado por `tools/auditoria_links.py` (robô com User-Agent próprio, 1 pedido a cada 2 s por domínio, robots.txt respeitado). Links de oferta com ERRO saem do /black/ na próxima geração da página.
 
-**Ofertas no /black/:** 217 links, 177 certos, 0 com erro, 40 não verificáveis.
+**Ofertas no /black/:** 214 links, 177 certos, 0 com erro, 37 não verificáveis.
 
 ## Por tipo de link
 
 | Tipo | ok | ERRO | não verificável | não conferido |
 |---|---|---|---|---|
-| oferta | 141 | 1 | 34 | 0 |
-| oferta (mais lojas) | 36 | 0 | 6 | 0 |
-| achado | 10 | 0 | 0 | 0 |
+| oferta | 146 | 1 | 34 | 0 |
+| oferta (mais lojas) | 31 | 0 | 3 | 0 |
+| achado | 14 | 0 | 0 | 0 |
 | cupom | 5 | 0 | 0 | 0 |
-| loja | 58 | 0 | 8 | 0 |
-| preço | 95 | 0 | 0 | 0 |
-| outro | 0 | 0 | 0 | 1201 |
+| loja | 64 | 0 | 3 | 0 |
+| preço | 102 | 0 | 0 | 0 |
+| outro | 0 | 0 | 0 | 1293 |
 
 ## Por loja (links conferidos)
 
 | Domínio | ok | ERRO | não verificável |
 |---|---|---|---|
-| comparajogos.com.br | 95 | 0 | 0 |
-| caixinhaboardgames.com.br | 49 | 1 | 0 |
-| mercadolivre.com.br | 0 | 0 | 38 |
+| comparajogos.com.br | 102 | 0 | 0 |
+| mercadolivre.com.br | 0 | 0 | 39 |
 | bravojogos.com.br | 35 | 0 | 0 |
-| placegames.com.br | 27 | 0 | 0 |
+| caixinhaboardgames.com.br | 33 | 1 | 0 |
+| placegames.com.br | 32 | 0 | 0 |
 | tabuloja.com | 25 | 0 | 0 |
-| facilshopping.com.br | 18 | 0 | 0 |
-| amazon.com.br | 17 | 0 | 0 |
-| playeasy.com.br | 15 | 0 | 0 |
-| alquimistasdosjogos.com.br | 9 | 0 | 0 |
-| mecadosjogos.com.br | 0 | 0 | 9 |
+| amazon.com.br | 21 | 0 | 0 |
+| facilshopping.com.br | 17 | 0 | 0 |
+| playeasy.com.br | 17 | 0 | 0 |
+| mecadosjogos.com.br | 10 | 0 | 0 |
+| alquimistasdosjogos.com.br | 8 | 0 | 0 |
 | cangaiajogos.com.br | 7 | 0 | 0 |
+| masmorra.com.br | 7 | 0 | 0 |
 | tavernareal.com | 7 | 0 | 0 |
+| ludostation.com.br | 5 | 0 | 0 |
 | brecholudico.com.br | 4 | 0 | 0 |
 | leaolivros.com.br | 4 | 0 | 0 |
-| masmorra.com.br | 4 | 0 | 0 |
 | boardgamebarato.com.br | 3 | 0 | 0 |
-| ludostation.com.br | 3 | 0 | 0 |
 | mosaicoloja.com.br | 3 | 0 | 0 |
+| odisseiajogos.com.br | 3 | 0 | 0 |
 | spaceboardgames.com.br | 3 | 0 | 0 |
 | animusludere.com.br | 2 | 0 | 0 |
 | livtoys.com.br | 2 | 0 | 0 |
-| odisseiajogos.com.br | 2 | 0 | 0 |
 | omniverse.com.br | 2 | 0 | 0 |
 | paladinsgames.com.br | 2 | 0 | 0 |
+| pittasboardgames.com.br | 2 | 0 | 0 |
 | borderjogos.com.br | 1 | 0 | 0 |
 | espacoarcs.com.br | 1 | 0 | 0 |
 | guildadosjogos.com.br | 1 | 0 | 0 |
@@ -52,18 +53,13 @@ Gerado por `tools/auditoria_links.py` (robô com User-Agent próprio, 1 pedido a
 | loja.frodosbg.com.br | 1 | 0 | 0 |
 | loja.joyjoycafe.com.br | 1 | 0 | 0 |
 | magazineluiza.com.br | 0 | 0 | 1 |
-| pittasboardgames.com.br | 1 | 0 | 0 |
 
 ## Erros (1)
 
 - **oferta** — Ticket to Ride: Alemanha: <https://www.caixinhaboardgames.com.br/produtos/ticket-to-ride-alemanha-pre-venda-rh596/> ((fora do site: retirada do /black/ pela auditoria)) — página não existe (404)
 
-## Não verificáveis (48)
+## Não verificáveis (40)
 
-- **oferta (mais lojas)** — Destemidos: Reforços: <https://www.mecadosjogos.com.br/destemidos-reforcos-p350> (/black/) — robots.txt respondeu 403 (bloqueio)
-- **oferta (mais lojas)** — FateFlip: Arrastado pelo Mar: <https://www.mecadosjogos.com.br/fateflip-arrastado-pelo-mar-p549> (/black/) — robots.txt respondeu 403 (bloqueio)
-- **oferta (mais lojas)** — FateFlip: Decretos Reais: <https://www.mecadosjogos.com.br/fateflip-decretos-reais-p1073> (/black/) — robots.txt respondeu 403 (bloqueio)
-- **oferta** — Power Hungry Pets: <https://www.mecadosjogos.com.br/power-hungry-pets-p694> (/black/) — robots.txt respondeu 403 (bloqueio)
 - **oferta** — UNO Flip!: <https://www.mercadolivre.com.br/p/MLB16092602?pdp_filters=item_id:MLB3992344771> (/black/) — robots.txt proíbe robôs nesta página
 - **oferta** — Hamburgueria Maluca: <https://www.mercadolivre.com.br/p/MLB19307754?pdp_filters=item_id:MLB3625543867> (/black/) — robots.txt proíbe robôs nesta página
 - **oferta** — Munchkin: <https://www.mercadolivre.com.br/p/MLB19492366?pdp_filters=item_id:MLB3695349129> (/black/) — robots.txt proíbe robôs nesta página
@@ -91,20 +87,16 @@ Gerado por `tools/auditoria_links.py` (robô com User-Agent próprio, 1 pedido a
 - **oferta** — Candy Land: <https://www.mercadolivre.com.br/p/MLB47329717?pdp_filters=item_id:MLB6214538674> (/black/) — robots.txt proíbe robôs nesta página
 - **oferta** — Trava Letras: <https://www.mercadolivre.com.br/p/MLB48880144?pdp_filters=item_id:MLB5576231012> (/black/) — robots.txt proíbe robôs nesta página
 - **oferta** — UNO Stacko: <https://www.mercadolivre.com.br/p/MLB51032628?pdp_filters=item_id:MLB5524577636> (/black/) — robots.txt proíbe robôs nesta página
+- **oferta** — UNO Spin: <https://www.mercadolivre.com.br/p/MLB58370268?pdp_filters=item_id:MLB5771966300> (/black/) — robots.txt proíbe robôs nesta página
+- **oferta** — Tapalavras: <https://www.mercadolivre.com.br/p/MLB59487551?pdp_filters=item_id:MLB4503565085> (/black/) — robots.txt proíbe robôs nesta página
 - **oferta** — Genius: <https://www.mercadolivre.com.br/p/MLB60067337?pdp_filters=item_id:MLB4263460227> (/black/) — robots.txt proíbe robôs nesta página
 - **oferta** — Liar's UNO: <https://www.mercadolivre.com.br/p/MLB62548317?pdp_filters=item_id:MLB6293749138> (/black/) — robots.txt proíbe robôs nesta página
 - **oferta** — Luz Final: <https://www.mercadolivre.com.br/p/MLB66827548?pdp_filters=item_id:MLB6660299536> (/black/) — robots.txt proíbe robôs nesta página
 - **oferta** — Detetive: <https://www.mercadolivre.com.br/p/MLB74523091?pdp_filters=item_id:MLB4812795033> (/black/) — robots.txt proíbe robôs nesta página
 - **oferta** — 50 animais marinhos: <https://www.mercadolivre.com.br/p/MLB75042549?pdp_filters=item_id:MLB4860618321> (/black/) — robots.txt proíbe robôs nesta página
-- **oferta** — Tapalavras: <https://www.mercadolivre.com.br/p/MLB79848963?pdp_filters=item_id:MLB5466975153> (/black/) — robots.txt proíbe robôs nesta página
 - **oferta** — Imagem & Ação: <https://www.mercadolivre.com.br/p/MLB8857424?pdp_filters=item_id:MLB5270008302> (/black/) — robots.txt proíbe robôs nesta página
 - **oferta** — Buckaroo!: <https://www.mercadolivre.com.br/p/MLB8950241?pdp_filters=item_id:MLB3491700275> (/black/) — robots.txt proíbe robôs nesta página
-- **oferta** — Rummikub Jr.: <https://www.mercadolivre.com.br/p/MLB9644309?pdp_filters=item_id:MLB5270133780> (/black/) — robots.txt proíbe robôs nesta página
+- **oferta** — Rummikub Jr.: <https://www.mercadolivre.com.br/p/MLB9644309?pdp_filters=item_id:MLB3625532223> (/black/) — robots.txt proíbe robôs nesta página
 - **loja**: <https://www.magazineluiza.com.br/gloomhaven-board-game-galapagos-galapagos/p/af327976gh/br/jogo/> (/gloomhaven/) — robots.txt respondeu 403 (bloqueio)
-- **loja**: <https://www.mecadosjogos.com.br/ark-nova-p548> (/ark-nova/) — robots.txt respondeu 403 (bloqueio)
-- **loja**: <https://www.mecadosjogos.com.br/flip-7-grok-jogos-portugues-br-p1044> (/flip-7/) — robots.txt respondeu 403 (bloqueio)
-- **loja**: <https://www.mecadosjogos.com.br/return-to-dark-tower-p373> (/return-to-dark-tower/) — robots.txt respondeu 403 (bloqueio)
-- **loja**: <https://www.mecadosjogos.com.br/sky-team-p528> (/sky-team/) — robots.txt respondeu 403 (bloqueio)
-- **loja**: <https://www.mecadosjogos.com.br/sleeping-gods-p188> (/sleeping-gods/) — robots.txt respondeu 403 (bloqueio)
 - **loja**: <https://www.mercadolivre.com.br/ark-nova-jogo-de-tabuleiroboard-game-grok/p/MLB23073841> (/ark-nova/) — robots.txt proíbe robôs nesta página
 - **loja**: <https://www.mercadolivre.com.br/root-board-game-meeplebr-pt-br/p/MLB19709898> (/root/) — robots.txt proíbe robôs nesta página
