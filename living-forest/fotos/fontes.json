@@ -1,0 +1,29 @@
+{
+ "slug": "living-forest",
+ "fotos": [
+  {
+   "arquivo": "fotos/mesa-1.webp",
+   "tipo": "mesa",
+   "largura": 1600,
+   "altura": 1067,
+   "editora": "Spiel des Jahres",
+   "credito": "Imagem: Spiel des Jahres · edição alemã",
+   "pagina": "https://www.spiel-des-jahres.de/spiele/living-forest/",
+   "imagem": "https://www.spiel-des-jahres.de/wp-content/uploads/2022/06/Living-Forest-detail-scaled.jpg",
+   "baixada_em": "2026-11-05",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/jogabilidade-1.webp",
+   "tipo": "jogabilidade",
+   "largura": 1600,
+   "altura": 1067,
+   "editora": "Spiel des Jahres",
+   "credito": "Imagem: Spiel des Jahres · edição alemã",
+   "pagina": "https://www.spiel-des-jahres.de/spiele/living-forest/",
+   "imagem": "https://www.spiel-des-jahres.de/wp-content/uploads/2022/06/Living-Forest-Szene-scaled.jpg",
+   "baixada_em": "2026-11-05",
+   "aprovada": true
+  }
+ ]
+}

@@ -1,0 +1,31 @@
+{
+ "slug": "just-one",
+ "usar_na_pagina": true,
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 800,
+   "altura": 1260,
+   "editora": "Repos Production",
+   "credito": "Imagem: Repos Production · edição de 2025",
+   "pagina": "https://www.rprod.com/en/games/just-one",
+   "imagem": "https://cdn.svc.asmodee.net/production-rprod/storage/games/justone/NEW/jo-refresh-3d-box-en-left-1749634354oWcQL-large.png",
+   "baixada_em": "2026-11-05",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/jogabilidade-1.webp",
+   "tipo": "jogabilidade",
+   "largura": 1000,
+   "altura": 1098,
+   "editora": "Repos Production",
+   "credito": "Imagem: Repos Production · edição de 2025",
+   "pagina": "https://www.rprod.com/en/games/just-one",
+   "imagem": "https://cdn.svc.asmodee.net/production-rprod/storage/games/justone/NEW/2024-03-29-butterfish-1028-1750149072IDkaB.png",
+   "baixada_em": "2026-11-05",
+   "aprovada": true,
+   "principal": true
+  }
+ ]
+}

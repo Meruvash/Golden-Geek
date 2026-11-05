@@ -1,0 +1,44 @@
+{
+ "slug": "dragomino",
+ "usar_na_pagina": true,
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 1500,
+   "altura": 1125,
+   "editora": "Blue Orange",
+   "credito": "Imagem: Blue Orange",
+   "pagina": "https://blueorangegames.eu/en/games/dragomino/",
+   "imagem": "https://blueorangegames.eu/wp-content/uploads/2020/04/Dragomino-3DBox.jpg",
+   "baixada_em": "2026-11-05",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/mesa-1.webp",
+   "tipo": "mesa",
+   "largura": 1600,
+   "altura": 1067,
+   "editora": "Spiel des Jahres",
+   "credito": "Imagem: Spiel des Jahres · edição alemã",
+   "pagina": "https://www.spiel-des-jahres.de/spiele/dragomino/",
+   "imagem": "https://www.spiel-des-jahres.de/wp-content/uploads/2021/05/Dragomino2.jpg",
+   "baixada_em": "2026-11-05",
+   "aprovada": true,
+   "jogar": true
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 1600,
+   "altura": 1067,
+   "editora": "Spiel des Jahres",
+   "credito": "Imagem: Spiel des Jahres · edição alemã",
+   "pagina": "https://www.spiel-des-jahres.de/spiele/dragomino/",
+   "imagem": "https://www.spiel-des-jahres.de/wp-content/uploads/2021/05/Dragomino1.jpg",
+   "baixada_em": "2026-11-05",
+   "aprovada": true,
+   "principal": true
+  }
+ ]
+}

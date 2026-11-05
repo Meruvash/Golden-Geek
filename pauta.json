@@ -2134,10 +2134,14 @@
      "fonte": "https://eliteboardgamers.com.br/"
     }
    ],
-   "status": "na_fila",
+   "status": "sem_fotos",
    "prioridade": 97,
    "premios_distintos": 2,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "fotos": {
+    "verificado_em": "2026-11-05",
+    "obs": "Repos Production (página do jogo: só caixas, cartas recortadas e render do material), Asmodee Canada (páginas FR e EN: só caixas e o mesmo render); Galápagos (bloqueia robôs); Spiel des Jahres (página do jogo: só caixa)"
+   }
   },
   {
    "jogo": "Living Forest",
@@ -2193,7 +2197,8 @@
    "status": "na_fila",
    "premios_distintos": 2,
    "prioridade": 99,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "slug": "dragomino"
   },
   {
    "jogo": "Paleo",
@@ -2221,7 +2226,8 @@
    "status": "na_fila",
    "premios_distintos": 2,
    "prioridade": 100,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "slug": "paleo"
   },
   {
    "jogo": "Just One",
@@ -2249,7 +2255,8 @@
    "status": "na_fila",
    "prioridade": 101,
    "premios_distintos": 2,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "slug": "just-one"
   },
   {
    "jogo": "Werewords",
@@ -2844,14 +2851,11 @@
      "fonte": "https://eliteboardgamers.com.br/"
     }
    ],
-   "status": "sem_fotos",
+   "status": "na_fila",
    "prioridade": 23,
    "premios_distintos": 1,
    "carro_chefe": true,
-   "fotos": {
-    "verificado_em": "2026-10-30",
-    "obs": "hegemonicproject.com (loja e what-is-hegemony): só renders de catálogo em fundo branco; sem edição nacional localizada"
-   }
+   "slug": "hegemony"
   },
   {
    "jogo": "On Mars",
@@ -4500,10 +4504,14 @@
      "fonte": "https://eliteboardgamers.com.br/"
     }
    ],
-   "status": "na_fila",
+   "status": "sem_fotos",
    "prioridade": 91,
    "premios_distintos": 1,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "fotos": {
+    "verificado_em": "2026-11-05",
+    "obs": "Czech Games Edition (páginas do jogo 2017 e nova edição e página de imprensa: só caixas, merch, render dos cards em fundo preto e fotos de estúdio em fundo branco), Heidelbär Games (edição alemã: página do jogo e post de Dia dos Namorados, nada utilizável), Devir (sem página do jogo no Brasil)"
+   }
   },
   {
    "jogo": "Exit: The Game",
@@ -4583,7 +4591,8 @@
    "status": "na_fila",
    "prioridade": 92,
    "premios_distintos": 1,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "slug": "photosynthesis"
   },
   {
    "jogo": "Unlock!",
@@ -4620,10 +4629,14 @@
      "fonte": "https://eliteboardgamers.com.br/"
     }
    ],
-   "status": "na_fila",
+   "status": "sem_fotos",
    "prioridade": 93,
    "premios_distintos": 1,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "fotos": {
+    "verificado_em": "2026-11-05",
+    "obs": "GMT Games (gmtgames.com e o blog insidegmt.com bloqueiam robôs no robots.txt); sem editora licenciada em outro país nem edição nacional localizada"
+   }
   },
   {
    "jogo": "Isle of Skye: From Chieftain to King",
@@ -4740,10 +4753,14 @@
      "fonte": "https://eliteboardgamers.com.br/"
     }
    ],
-   "status": "na_fila",
+   "status": "sem_fotos",
    "prioridade": 94,
    "premios_distintos": 1,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "fotos": {
+    "verificado_em": "2026-11-05",
+    "obs": "GMT Games (gmtgames.com e o blog insidegmt.com bloqueiam robôs no robots.txt); sem editora licenciada em outro país nem edição nacional localizada"
+   }
   },
   {
    "jogo": "Five Tribes",
@@ -4840,10 +4857,14 @@
      "fonte": "https://eliteboardgamers.com.br/"
     }
    ],
-   "status": "na_fila",
+   "status": "sem_fotos",
    "prioridade": 95,
    "premios_distintos": 1,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "fotos": {
+    "verificado_em": "2026-11-05",
+    "obs": "Gamelyn Games/Tycoon Games (tycoongames.com: páginas Ultra Tiny, coleção e Blast Off: só caixas, renders e componentes em fundo branco); sem licenciada nem edição nacional localizadas"
+   }
   },
   {
    "jogo": "SETI: Space Agencies",

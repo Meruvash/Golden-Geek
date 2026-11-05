@@ -1,0 +1,57 @@
+{
+ "slug": "hegemony",
+ "usar_na_pagina": true,
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 1600,
+   "altura": 1600,
+   "editora": "Don't Panic Games",
+   "credito": "Imagem: Don't Panic Games · edição francesa",
+   "pagina": "https://www.dontpanicgames.com/fr/shop/jeux/hegemony/",
+   "imagem": "https://www.dontpanicgames.com/wp-content/uploads/2023/04/hegemony_shop.jpg",
+   "baixada_em": "2026-11-05",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/mesa-1.webp",
+   "tipo": "mesa",
+   "largura": 1600,
+   "altura": 1066,
+   "editora": "Portal Games",
+   "credito": "Imagem: Portal Games · edição polonesa",
+   "pagina": "https://sklep.portalgames.pl/hegemony",
+   "imagem": "https://sklep.portalgames.pl/userdata/public/gfx/13571/Hegemony_low-34.jpg",
+   "baixada_em": "2026-11-05",
+   "aprovada": true,
+   "principal": true
+  },
+  {
+   "arquivo": "fotos/mesa-2.webp",
+   "tipo": "mesa",
+   "largura": 1600,
+   "altura": 1066,
+   "editora": "Portal Games",
+   "credito": "Imagem: Portal Games · edição polonesa",
+   "pagina": "https://sklep.portalgames.pl/hegemony",
+   "imagem": "https://sklep.portalgames.pl/userdata/public/gfx/13565/Hegemony_low-05.jpg",
+   "baixada_em": "2026-11-05",
+   "aprovada": true,
+   "fora": true
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 1600,
+   "altura": 1066,
+   "editora": "Portal Games",
+   "credito": "Imagem: Portal Games · edição polonesa",
+   "pagina": "https://sklep.portalgames.pl/hegemony",
+   "imagem": "https://sklep.portalgames.pl/userdata/public/gfx/13570/Hegemony_low-23.jpg",
+   "baixada_em": "2026-11-05",
+   "aprovada": true,
+   "jogar": true
+  }
+ ]
+}

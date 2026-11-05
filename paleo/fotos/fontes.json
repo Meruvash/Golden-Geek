@@ -1,0 +1,44 @@
+{
+ "slug": "paleo",
+ "usar_na_pagina": true,
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 1259,
+   "altura": 1247,
+   "editora": "Spiel des Jahres",
+   "credito": "Imagem: Spiel des Jahres",
+   "pagina": "https://www.spiel-des-jahres.de/spiele/paleo/",
+   "imagem": "https://www.spiel-des-jahres.de/wp-content/uploads/2021/05/paleo.jpg",
+   "baixada_em": "2026-11-05",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/jogabilidade-1.webp",
+   "tipo": "jogabilidade",
+   "largura": 1600,
+   "altura": 1067,
+   "editora": "Spiel des Jahres",
+   "credito": "Imagem: Spiel des Jahres",
+   "pagina": "https://www.spiel-des-jahres.de/spiele/paleo/",
+   "imagem": "https://www.spiel-des-jahres.de/wp-content/uploads/2021/05/Paleo1.jpg",
+   "baixada_em": "2026-11-05",
+   "aprovada": true,
+   "jogar": true
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 1600,
+   "altura": 1067,
+   "editora": "Spiel des Jahres",
+   "credito": "Imagem: Spiel des Jahres",
+   "pagina": "https://www.spiel-des-jahres.de/spiele/paleo/",
+   "imagem": "https://www.spiel-des-jahres.de/wp-content/uploads/2021/05/Paleo2.jpg",
+   "baixada_em": "2026-11-05",
+   "aprovada": true,
+   "principal": true
+  }
+ ]
+}

@@ -2225,5 +2225,84 @@
    ],
    "verificado_em": "2026-11-04"
   }
+ },
+ "heidelbaer.de": {
+  "nome": "Heidelbär Games",
+  "apelidos": [
+   "Heidelbär Games"
+  ],
+  "site": "https://www.heidelbaer.de",
+  "plataforma": "wordpress",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://www.heidelbaer.de/presse",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [],
+   "verificado_em": "2026-11-05"
+  }
+ },
+ "blueorangegames.eu": {
+  "nome": "Blue Orange",
+  "apelidos": [
+   "Blue Orange"
+  ],
+  "site": "https://blueorangegames.eu",
+  "plataforma": "woocommerce",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://blueorangegames.eu/sitemap_index.xml"
+   ],
+   "verificado_em": "2026-11-05"
+  }
+ },
+ "asmodee.com.br": {
+  "nome": "Asmodee Brasil",
+  "apelidos": [
+   "Asmodee Brasil"
+  ],
+  "site": "https://asmodee.com.br",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "erro",
+  "obs": "robots.txt de https://asmodee.com.br inacessível (erro de rede); tente mais tarde"
+ },
+ "insidegmt.com": {
+  "nome": "GMT Games (InsideGMT)",
+  "apelidos": [
+   "GMT Games (InsideGMT)"
+  ],
+  "site": "https://insidegmt.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "bloqueado",
+  "obs": "robots.txt proíbe https://insidegmt.com"
+ },
+ "ravensburger.us": {
+  "nome": "Ravensburger USA",
+  "apelidos": [
+   "Ravensburger USA"
+  ],
+  "site": "https://ravensburger.us",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "bloqueado",
+  "obs": "403 em https://ravensburger.us"
  }
 }
