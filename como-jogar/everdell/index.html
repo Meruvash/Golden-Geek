@@ -1,0 +1,536 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Como jogar Everdell: regras passo a passo | Elite Boardgamers</title>
+<meta name="description" content="Aprenda a jogar Everdell: montagem, locais exclusivos e compartilhados, cartas e Criatura gratuita, estações, Eventos, Jornada e pontuação.">
+<link rel="canonical" href="https://eliteboardgamers.com.br/como-jogar/everdell/">
+<meta name="robots" content="max-image-preview:large">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Como jogar Everdell">
+<meta property="og:description" content="Aprenda a jogar Everdell: montagem, locais exclusivos e compartilhados, cartas e Criatura gratuita, estações, Eventos, Jornada e pontuação.">
+<meta property="og:url" content="https://eliteboardgamers.com.br/como-jogar/everdell/">
+<meta property="og:image" content="https://eliteboardgamers.com.br/como-jogar/everdell/fotos/mesa-1.webp">
+<link rel="icon" href="../../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32.png">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<link rel="preload" href="../../fontes/public-sans.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:"Public Sans";src:url(../../fontes/public-sans.woff2) format("woff2");font-weight:400 800;font-style:normal;font-display:swap}
+@font-face{font-family:"Public Sans";src:url(../../fontes/public-sans-italic.woff2) format("woff2");font-weight:400;font-style:italic;font-display:swap}
+/* Layout: o mesmo da página de lição do Discipulado (O Paladino): fundo preto (pedido do editor: preto no lugar do azul), faixa do banner, navegação fixa, coluna central de 760px com cartões claros de papel, filete dourado sobre os títulos de seção. Visual único (o site não tem tema claro). */
+:root{
+  color-scheme:dark;
+  --ground:#000; --panel:#0f1115; --panel2:#171a20; --line:#262a32; --line2:#2e333c;
+  --ink:#eceff3; --muted:#a1a9b5; --gold:#e3b23c;
+  --paper:#f4f5f7; --paper-ink:#14171c; --paper-muted:#5a6270; --paper-line:#dde1e7; --paper-text:#3a414c;
+  --link:#1f5fae; --ok:#1b7a45; --ok-bg:#e3f4ea; --cinza-bg:#eceef1; --ouro-bg:#fff4d1; --ouro-ink:#8a5f00;
+  --erro:#b3263e; --faixa-ouro:#1d1606; --ouro-claro:#f1ead6; --check:#4cc38a;
+  --f-body:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box}
+html{scroll-padding-top:64px}
+body{margin:0;background:var(--ground);color:var(--ink);font:16px/1.55 var(--f-body)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--panel)}
+h1,h2,h3,p,ul,ol,figure{margin:0}
+a{color:var(--link);text-underline-offset:.18em}
+::selection{background:var(--gold);color:#000}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px;border-radius:3px}
+.gut{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+
+.skip{position:absolute;left:-999px}.skip:focus{left:12px;top:8px;z-index:40;background:var(--gold);color:#000;padding:6px 10px}
+.aviso{background:var(--gold);color:#000;font-weight:800;font-size:.8rem;text-align:center}
+.aviso .gut{padding-block:6px}
+.topo{background:var(--ground)}
+.topo img{display:block;width:100%;max-width:640px;height:auto;margin:0 auto}
+.nav{background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line);position:sticky;top:env(safe-area-inset-top,0px);z-index:20}
+.nav ul{max-width:1120px;margin:0 auto;list-style:none;display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;padding-block:0}
+.nav a{display:block;padding:11px 12px;white-space:nowrap;color:var(--ink);text-decoration:none;font-weight:700;font-size:.92rem;border-bottom:3px solid transparent}
+.nav a[aria-current]{color:var(--gold);border-bottom-color:var(--gold)}
+
+.nota{max-width:760px;margin:0 auto;padding-block:20px 56px;display:grid;gap:16px}
+.trilha ol{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:4px 8px;font-size:.85rem;color:var(--muted)}
+.trilha li+li::before{content:"›";margin-right:8px;color:var(--muted)}
+.trilha a{color:var(--gold);font-weight:700;text-decoration:none}
+
+.bloco{background:var(--paper);color:var(--paper-ink);border-radius:10px;padding:20px;min-width:0;display:grid;gap:14px}
+.num-l{font-size:.8rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--paper-muted)}
+h1{font-size:clamp(1.7rem,5vw,2.4rem);line-height:1.12;font-weight:800;letter-spacing:-.015em;text-wrap:balance}
+.meta-e{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:.88rem;color:var(--paper-muted)}
+.meta{font-family:var(--mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.05em;color:var(--paper-muted)}
+
+.r1{background:var(--panel2);color:var(--ink);border:1px solid var(--line2);border-left:4px solid var(--gold)}
+.kick{font-size:.75rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--gold)}
+.r1 .resp{font-size:1.12rem;font-weight:600;line-height:1.45}
+.r1 ul{list-style:none;padding:0;display:grid;gap:8px}
+.r1 li{display:flex;gap:8px;align-items:flex-start;color:#dfe4ea}
+.r1 li svg{flex:none;width:20px;height:20px;margin-top:2px;stroke:var(--check);fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.r1 .pe{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:.88rem;color:var(--muted)}
+.r1 .pe b{color:var(--ink)}
+.legenda{display:flex;flex-wrap:wrap;gap:8px}
+.legenda span{font-size:.74rem;font-weight:800;letter-spacing:.04em;border-radius:999px;padding:3px 10px 3px 14px;background:var(--paper);color:var(--paper-ink)}
+.legenda .l1{box-shadow:inset 5px 0 0 var(--paper-ink)}.legenda .l2{box-shadow:inset 5px 0 0 var(--ok)}
+.legenda .l3{box-shadow:inset 5px 0 0 var(--gold)}.legenda .l4{box-shadow:inset 5px 0 0 var(--ouro-ink)}
+
+.indice h2,.sec>h2{font-size:1.15rem;font-weight:800;line-height:1.3;color:var(--paper-ink);border-top:3px solid var(--gold);padding-top:12px;text-wrap:balance;display:flex;gap:10px;align-items:baseline}
+.indice ol{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:2px 16px}
+.indice a{display:block;padding:6px 0;color:var(--paper-ink);text-decoration:none;font-weight:600;font-size:.94rem;border-bottom:1px solid var(--paper-line)}
+.indice a:hover{color:var(--link)}
+
+.sec>h2 .num{display:none}
+.sec h3{font-size:1.05rem;font-weight:800;margin-top:6px}
+.sec p{color:var(--paper-text);max-width:66ch}
+.sec ul,.sec ol{padding-left:1.3em;display:grid;gap:6px;color:var(--paper-text)}
+.sec ul{list-style:disc}
+.sec li::marker{color:var(--ouro-ink);font-weight:800}
+strong{font-weight:700;color:var(--paper-ink)}
+.pg{white-space:nowrap;font-size:.76em;color:var(--paper-muted);border:1px solid var(--paper-line);background:#fff;border-radius:4px;padding:0 5px;vertical-align:.08em;font-variant-numeric:tabular-nums}
+code{font-size:.9em;background:#fff;padding:1px 5px;border-radius:4px}
+
+.tab{overflow-x:auto;border:1px solid var(--paper-line);border-radius:8px;background:#fff}
+table{border-collapse:collapse;width:100%;font-size:.92rem;color:var(--paper-text)}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--paper-line);vertical-align:top}
+th{font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--paper-muted);background:var(--paper)}
+tr:last-child td{border-bottom:0}
+
+.call{border-radius:8px;padding:14px 16px;display:grid;gap:10px;min-width:0;background:#fff;border:1px solid var(--paper-line);border-left:4px solid var(--paper-muted)}
+.call .rot{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;font-weight:800;color:var(--paper-muted)}
+.call.entender{background:var(--cinza-bg);border-color:#d5d9df;border-left-color:var(--paper-ink)}
+.call.entender .rot{color:var(--paper-ink)}
+.call.passos{border-left-color:var(--ok)}
+.call.passos .rot{color:var(--ok)}
+.call.resolvido{background:var(--panel2);border-color:var(--line2);border-left-color:var(--gold)}
+.call.resolvido .rot{color:var(--gold)}
+.call.resolvido p,.call.resolvido li{color:#dfe4ea}
+.call.resolvido strong{color:#fff}
+.call.resolvido .pg{color:#c8ccd2;border-color:var(--line2)}
+.call.complete{border-left:4px dashed var(--gold)}
+.call.complete .rot{color:var(--ouro-ink)}
+.call.suavez{background:var(--faixa-ouro);border-color:#3a2e10;border-left-color:var(--gold)}
+.call.suavez .rot{color:var(--gold)}
+.call.suavez p,.call.suavez li{color:var(--ouro-claro)}
+.call.suavez strong{color:#fff}
+.call.suavez li::marker{color:var(--gold)}
+.call.suavez .pg{color:var(--ouro-claro);border-color:#3a2e10}
+.call.treino{background:var(--ouro-bg);border-color:#f0dfa6;border-left-color:var(--ouro-ink)}
+.call.treino .rot{color:var(--ouro-ink)}
+.call.atencao{border-left-color:var(--erro)}
+.call.atencao .rot{color:var(--erro)}
+.call.edicao{background:var(--paper);border-left-color:var(--paper-ink)}
+.call.edicao .rot{color:var(--paper-ink)}
+.call.dica{background:var(--ouro-bg);border-left-color:var(--gold)}
+.call.dica .rot{color:var(--ouro-ink)}
+.call ol,.call ul{padding-left:1.3em}
+.call .pg{background:transparent}
+
+.respostas{border:1px solid var(--paper-line);border-left:4px solid var(--ok);border-radius:8px;background:#fff}
+.respostas summary{cursor:pointer;padding:12px 16px;font-weight:800;color:var(--ok);list-style:none;min-height:44px;display:flex;align-items:center}
+.respostas summary::-webkit-details-marker{display:none}
+.respostas summary::before{content:"+";display:inline-grid;place-items:center;width:1.4em;height:1.4em;margin-right:8px;border-radius:50%;background:var(--ok-bg)}
+.respostas[open] summary::before{content:"−"}
+.respostas>div{padding:0 16px 16px;display:grid;gap:12px}
+
+.sec.rapido{outline:2px solid var(--gold);outline-offset:-2px}
+.sec.rapido>h2::after{content:"4 min de leitura";margin-left:auto;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:#000;background:var(--gold);border-radius:3px;padding:3px 8px;white-space:nowrap}
+.sec.rapido>p:first-of-type{font-size:1.02rem}
+.sec.ref{outline:2px solid var(--gold);outline-offset:-2px}
+.sec.ref>h2::after{content:"Leve para a mesa";margin-left:auto;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:#000;background:var(--gold);border-radius:3px;padding:3px 8px;white-space:nowrap}
+
+footer{border-top:1px solid var(--line);background:var(--panel);color:var(--muted);font-size:.85rem}
+footer .in{max-width:760px;margin:0 auto;padding-block:20px}
+@media (max-width:600px){
+  .bloco{padding:16px;border-radius:8px}
+  .sec.ref>h2::after{display:none}
+}
+/* essencial x opcional: o que não é essencial abre com um toque */
+.dobra{border:1px solid var(--paper-line);border-radius:8px;background:#fff}
+.dobra>summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:10px;padding:11px 14px;font-weight:700;font-size:.92rem;color:var(--paper-ink);min-height:44px}
+.dobra>summary::-webkit-details-marker{display:none}
+.dobra>summary::before{content:"+";flex:none;display:grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--paper-line);color:var(--paper-ink);font-weight:800;line-height:1}
+.dobra[open]>summary::before{content:"−"}
+.dobra>.call,.dobra>details,.dobra>aside{margin:0 12px 12px}
+.dobra.pratica>summary{color:var(--ouro-ink)}
+.dobra.pratica[open]{display:grid;gap:10px;padding-bottom:12px}
+.dobra.pratica>*:not(summary){margin:0 12px}
+.dobra.sec-opc{border-style:dashed}
+.dobra.sec-opc[open]{padding-bottom:12px}
+.dobra.sec-opc>*:not(summary){margin-left:14px;margin-right:14px}
+.tag-opc{margin-left:10px;font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;font-weight:800;color:var(--paper-muted);border:1px solid var(--paper-line);border-radius:3px;padding:2px 6px;vertical-align:middle}
+.legenda-f{font-size:.88rem;color:var(--muted)}.legenda-f b{color:var(--ink)}
+.mais-i{display:inline-grid;place-items:center;width:18px;height:18px;border-radius:50%;background:var(--paper-line);color:var(--paper-ink);font-weight:800;font-size:.8rem}
+.indice small{color:var(--muted);font-weight:400}
+.sec p,.sec li,.sec a{overflow-wrap:anywhere}
+
+.ico{display:inline-block;width:28px;height:28px;vertical-align:middle;border-radius:5px;margin-right:6px}
+td .ico{margin-right:6px}
+.rec{display:inline-flex;align-items:center;gap:0;white-space:nowrap}
+.cel{display:block;min-width:0}
+
+/* referências visuais (01/11/2026): figura do manual e vídeo no ponto da ação */
+.fig,.video{margin:4px 0;display:grid;gap:6px;min-width:0}
+.fig img{width:100%;height:auto;border-radius:8px;border:1px solid var(--paper-line);background:#fff}
+.fig figcaption,.video figcaption{font-size:.82rem;color:var(--paper-muted);line-height:1.45}
+.yt{position:relative;display:block;width:100%;padding:0;border:0;border-radius:8px;overflow:hidden;cursor:pointer;background:#000;aspect-ratio:16/9}
+.yt img{width:100%;height:100%;object-fit:cover;opacity:.85;display:block}
+.yt-play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:#c4302b;color:#fff;font-weight:800;font-size:.95rem;padding:10px 16px;border-radius:999px;white-space:nowrap;box-shadow:0 2px 10px rgba(0,0,0,.4)}
+.yt:hover .yt-play,.yt:focus-visible .yt-play{background:#e03a33}
+.video iframe{width:100%;aspect-ratio:16/9;border:0;border-radius:8px;display:block}
+/* fotos em todas as seções (04/11/2026): foto do jogo no topo e em cada seção sem figura do manual */
+.topo-cj{overflow:hidden}
+.foto-topo{margin:-20px -20px 4px;display:grid;gap:0}
+.foto-topo img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;background:#fff}
+.foto-topo figcaption{font-size:.78rem;color:var(--paper-muted);padding:6px 20px 0}
+.foto-topo.caixa img,.foto-sec.caixa img{object-fit:contain}
+.foto-sec img{aspect-ratio:16/9;object-fit:cover}
+@media (max-width:600px){.foto-topo{margin:-16px -16px 4px}.foto-topo figcaption{padding:6px 16px 0}}
+.sec.setup{border-top:4px solid var(--ok)}
+.sec.setup>h2::before{content:"Comece por aqui";display:block;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ok);margin-bottom:4px}
+.sec.setup>h2{display:block}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://eliteboardgamers.com.br/#organizacao", "name": "Elite Boardgamers", "url": "https://eliteboardgamers.com.br/", "logo": {"@type": "ImageObject", "url": "https://eliteboardgamers.com.br/marca/elite-boardgamers.webp", "width": 318, "height": 254}, "sameAs": ["https://www.instagram.com/eliteboardgamers/"]}, {"@type": "Article", "@id": "https://eliteboardgamers.com.br/como-jogar/everdell/#artigo", "mainEntityOfPage": "https://eliteboardgamers.com.br/como-jogar/everdell/", "headline": "Como jogar Everdell", "description": "Aprenda a jogar Everdell: montagem, locais exclusivos e compartilhados, cartas e Criatura gratuita, estações, Eventos, Jornada e pontuação.", "image": ["https://eliteboardgamers.com.br/como-jogar/everdell/fotos/mesa-1.webp"], "datePublished": "2026-11-05", "author": {"@type": "Organization", "name": "Redação Elite Boardgamers", "url": "https://eliteboardgamers.com.br/politica-editorial/"}, "publisher": {"@id": "https://eliteboardgamers.com.br/#organizacao"}, "inLanguage": "pt-BR"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Início", "item": "https://eliteboardgamers.com.br/"}, {"@type": "ListItem", "position": 2, "name": "Como jogar", "item": "https://eliteboardgamers.com.br/como-jogar/"}, {"@type": "ListItem", "position": 3, "name": "Como jogar Everdell", "item": "https://eliteboardgamers.com.br/como-jogar/everdell/"}]}]}</script>
+<style id="moldura">.busca-btn{display:grid;place-items:center;flex:none;width:44px;height:44px;padding:0;border:1px solid #3a3f48;border-radius:8px;background:none;color:#e9ecf1;cursor:pointer}.busca-btn:hover{border-color:#e3b23c;color:#e3b23c}.busca-btn[hidden]{display:none}.sino-btn{position:relative;display:grid;place-items:center;flex:none;width:44px;height:44px;padding:0;border:1px solid #3a3f48;border-radius:8px;background:none;color:#e9ecf1;cursor:pointer}.sino-btn:hover,.sino-btn.on{border-color:#e3b23c;color:#e3b23c}.sino-btn[hidden]{display:none}.sino-btn.on::after{content:"";position:absolute;right:7px;top:7px;width:8px;height:8px;border-radius:50%;background:#5fd38d;box-shadow:0 0 0 2px #111}footer .in a{display:inline-flex;align-items:center;min-height:24px}.cpw{position:relative;display:inline-block}.cp{display:inline-flex;align-items:center;justify-content:center;gap:8px;box-sizing:border-box;line-height:1.2;min-height:44px;margin:0;padding:10px 20px;border-radius:999px;border:0;background:#157a43;color:#fff;font:inherit;font-size:.95rem;font-weight:800;text-decoration:none;cursor:pointer}.cp:hover{background:#11683a;color:#fff}.cp .ic{width:19px;height:19px}.cp[hidden]{display:none}.cpw.mini .cp{min-height:40px;padding:8px 14px;font-size:.88rem}.cp-menu{position:absolute;z-index:30;top:calc(100% + 8px);left:0;min-width:200px;display:grid;gap:2px;padding:6px;border-radius:12px;background:#fff;border:1px solid #dde1e7;box-shadow:0 10px 30px rgba(0,0,0,.25)}.cp-menu[hidden]{display:none}.cp-menu.sobe{top:auto;bottom:calc(100% + 8px)}.cp-menu.dir{left:auto;right:0}.cp-op{display:flex;align-items:center;gap:10px;min-height:44px;padding:8px 12px;border:0;border-radius:8px;background:none;color:#14171c;font:inherit;font-size:.95rem;font-weight:700;text-align:left;text-decoration:none;cursor:pointer}.cp-op:hover,.cp-op:focus-visible{background:#eef1f4;color:#14171c}.cp-op .ic{width:20px;height:20px}.cp-op.zap-op .ic{color:#157a43}.cp-st{position:absolute;z-index:30;top:calc(100% + 8px);left:0;white-space:nowrap;margin:0;padding:6px 12px;border-radius:8px;background:#14171c;color:#fff;font-size:.85rem;font-weight:700}.cp-st:empty{display:none}.barra-lt .cp-st{top:auto;bottom:calc(100% + 8px)}.convite{display:flex;align-items:center;justify-content:space-between;gap:12px 20px;flex-wrap:wrap}.convite .cv-t{margin:0;font-weight:800;font-size:1.1rem}.convite .cv-s{margin:2px 0 0;font-size:.92rem;opacity:.8}.barra-lt>*{flex:none}.barra-lt{width:max-content;max-width:calc(100vw - 12px);box-sizing:border-box;position:fixed;z-index:25;left:50%;bottom:calc(12px + env(safe-area-inset-bottom));display:flex;align-items:center;gap:4px;padding:5px;border-radius:999px;background:#14171c;border:1px solid #3a3f48;box-shadow:0 8px 24px rgba(0,0,0,.35);transform:translate(-50%,0);transition:transform .25s ease,opacity .25s ease}.barra-lt.fora{transform:translate(-50%,calc(100% + 24px));opacity:0;pointer-events:none}.lt-b{display:inline-flex;align-items:center;gap:7px;min-height:44px;padding:8px 14px;border:0;border-radius:999px;background:none;color:#e9ecf1;font:inherit;font-size:.9rem;font-weight:700;text-decoration:none;cursor:pointer}.lt-b:hover{background:#262a31;color:#fff}.lt-b .ic{width:20px;height:20px}.barra-lt .lt-b.curtir{background:none;border:0;color:#e9ecf1;padding:8px 14px}.barra-lt .lt-b.curtir[aria-pressed=true]{color:#ff6b81;background:none}@media (max-width:479px){.lt-b span{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}}.lt-b.curtir[aria-pressed=true] .ic{fill:currentColor}.lt-grupo{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:44px;padding:0 14px 0 6px;border-radius:999px;background:#e3b23c;color:#14171c;font-size:.9rem;font-weight:800;text-decoration:none;white-space:nowrap}.lt-grupo:hover{background:#f0c44f;color:#14171c}.lt-grupo img{width:32px;height:32px;border-radius:8px;display:block}@media (max-width:479px){.barra-lt{gap:2px}.barra-lt .lt-b{padding:8px 10px}.barra-lt .cp{padding:8px 12px}.lt-grupo{padding:0 12px 0 6px}}@media (max-width:399px){.barra-lt:has(.curtir) .cp span{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}.barra-lt:has(.curtir) .cp{padding:8px 14px}}.barra-lt .cp{min-height:44px;padding:8px 16px;font-size:.9rem}body.lt-on .voltar-topo,body.lt-on button.sobe{bottom:calc(76px + env(safe-area-inset-bottom))}@media print{.barra-lt{display:none}}.interacoes{display:grid;gap:14px}.interacoes[hidden]{display:none}.curtir-l{display:flex;align-items:center;gap:12px;flex-wrap:wrap}.curtir{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:8px 18px;border-radius:999px;border:2px solid #b3263e;background:#fff;color:#b3263e;font:inherit;font-weight:800;cursor:pointer}.curtir .ic{width:22px;height:22px}.curtir[aria-pressed=true]{background:#b3263e;color:#fff}.curtir[aria-pressed=true] .ic{fill:currentColor}.curtir .n{font-variant-numeric:tabular-nums}.curtir-dica{font-size:.9rem;color:#5a6270}.interacoes h2{margin:4px 0 0}.coms{list-style:none;margin:0;padding:0;display:grid;gap:10px}.coms li{background:#fff;border:1px solid #dde1e7;border-radius:10px;padding:12px 14px}.com-quem{margin:0;font-size:.92rem}.com-quem time{color:#5a6270;font-size:.8rem;margin-left:6px}.com-txt{margin:4px 0 0;white-space:pre-wrap;color:#14171c}.coms-vazio{margin:0;color:#5a6270}.com-form{display:grid;gap:10px;border-top:1px solid #dde1e7;padding-top:14px}.com-form label{display:grid;gap:4px;font-weight:700;font-size:.9rem;color:#14171c}.com-form small{font-weight:600;color:#5a6270}.com-form input,.com-form textarea{font:inherit;font-size:16px;font-weight:400;padding:10px 12px;border:1px solid #c8cdd5;border-radius:8px;background:#fff;color:#14171c}.com-form textarea{resize:vertical;min-height:110px}.com-form .isca{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}.com-form button{justify-self:start;min-height:44px;padding:10px 20px;border-radius:999px;border:0;background:#14171c;color:#fff;font:inherit;font-weight:800;cursor:pointer}.com-form button:disabled{opacity:.6}.com-aviso{margin:0;font-size:.82rem;color:#5a6270}.com-aviso a{color:#1f5fae}.com-st{margin:0;font-weight:700;font-size:.92rem}.com-st:empty{display:none}.com-st.ok{color:#1b7a45}.com-st.erro{color:#a3223a}:where(html){scroll-padding-top:calc(var(--nav-h,49px) + 12px)}.nav{position:sticky;top:0;z-index:20}body .abas,body .barra-f,body .ctrl{top:var(--nav-h,49px)}.marca img.logo{width:auto;height:48px;border-radius:0}@media (max-width:480px){.marca img.logo{height:40px}}.nav .casa{display:flex;align-items:center;justify-content:center;min-width:44px}.nav .casa .ic{width:20px;height:20px}@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.card:hover,.jogo:hover .capa img,.jogo:active .capa,.zap:active,.post-btn:active,.btn-filtro:hover,.btn-filtro:active,.ver:active{transform:none!important}}.in{max-width:1180px;margin:0 auto;padding-left:16px;padding-right:16px}.ic{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round;flex:none}.bar{border-bottom:1px solid var(--line);background:#000;color:var(--ink)}.bar .in{display:flex;align-items:center;gap:12px;padding-top:8px;padding-bottom:8px}.bar a{color:inherit;text-decoration:none;font-weight:600;font-size:.95rem}.marca img{display:block;width:84px;border-radius:6px}.bar .ig{margin-left:auto;display:flex;align-items:center;gap:6px;padding:6px 10px;border-radius:6px}.bar .ig:hover{color:var(--gold)}.bar .zap-mini{display:flex;align-items:center;gap:6px;padding:6px 10px;border-radius:6px;background:#157a43;color:#fff}.nav ul{padding-left:16px;padding-right:16px}.nav ul li{list-style:none}@media (max-width:700px){.bar .ig span,.bar .zap-mini span{display:none}}footer{font-size:.9rem}footer .in{max-width:1180px;display:flex;flex-wrap:wrap;gap:6px 16px;padding-top:20px;padding-bottom:28px}footer a{color:var(--muted);text-decoration:none}footer a:hover{color:var(--gold)}</style>
+<style id="guia-extra">
+/* fotos na lista de tutoriais e no topo de /como-jogar/ (04/11/2026) */
+.topo-cj{overflow:hidden}
+.lista-t a.com-foto{grid-template-columns:96px 1fr;column-gap:14px;align-items:start}
+.lista-t a.com-foto>*{grid-column:2}
+.lista-t a.com-foto>img{grid-column:1;grid-row:1/span 4;width:96px;height:96px;object-fit:cover;border-radius:6px;background:#fff}
+.cj-mosaico{display:grid;grid-template-columns:2fr 1fr;grid-template-rows:1fr 1fr;gap:4px;margin:-20px -20px 4px;aspect-ratio:16/9;overflow:hidden}
+.cj-mosaico img{width:100%;height:100%;object-fit:cover;display:block;background:#fff}
+.cj-mosaico img:first-child{grid-row:1/span 2}
+.cj-mosaico-c{font-size:.78rem;color:var(--paper-muted)}
+@media (max-width:600px){.cj-mosaico{margin:-16px -16px 4px}.lista-t a.com-foto{grid-template-columns:72px 1fr}.lista-t a.com-foto>img{width:72px;height:72px}}
+/* faixa de progresso, presa logo abaixo do menu */
+.guia-prog{position:sticky;top:var(--nav-h,45px);z-index:15;background:var(--panel);border-bottom:1px solid var(--line)}
+.guia-prog a{display:flex;align-items:center;gap:10px;max-width:760px;margin:0 auto;padding:9px 16px;color:var(--ink);text-decoration:none;font-size:.86rem;font-weight:700;min-height:40px}
+.guia-prog .gp-r{flex:none;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--gold)}
+.guia-prog .gp-t{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.guia-prog .gp-i{margin-left:auto;flex:none;font-size:.78rem;color:var(--muted);font-weight:600}
+.guia-prog .gp-b{position:absolute;left:0;right:0;bottom:-1px;height:3px;background:var(--gold);transform-origin:0 50%;transform:scaleX(0)}
+html{scroll-padding-top:calc(var(--nav-h,45px) + 56px)}
+/* legenda dos blocos: pontos de cor em vez de pílulas */
+.legenda{gap:6px 16px}
+.legenda span{position:relative;background:none;color:var(--muted);box-shadow:none!important;padding:0 0 0 16px;font-size:.8rem;letter-spacing:0}
+.legenda span::before{content:"";position:absolute;left:0;top:.32em;width:10px;height:10px;border-radius:3px;background:var(--paper)}
+.legenda .l2::before{background:var(--ok)}.legenda .l3::before{background:var(--gold)}.legenda .l4::before{background:var(--ouro-ink)}
+/* índice numerado */
+.indice ol{counter-reset:it}.indice li{counter-increment:it}
+.indice a{display:flex;gap:10px;align-items:baseline;min-height:40px;padding:9px 0}
+.indice a::before{content:counter(it);flex:none;width:1.6em;font-size:.8rem;font-weight:800;color:var(--ouro-ink);font-variant-numeric:tabular-nums}
+.nota-pe{color:var(--muted);font-size:.85rem;padding:4px 2px 0}
+/* exercícios de múltipla escolha: tocou numa opção, aparece a certa e a explicação */
+.quiz{display:grid;gap:8px;padding:12px 0;border-top:1px solid var(--paper-line)}.quiz:first-of-type{border-top:0}
+.q-p{font-weight:700;color:inherit}
+.q-ops{display:grid;gap:6px}
+.q-op{display:block;width:100%;text-align:left;font:inherit;font-size:.95rem;line-height:1.35;min-height:44px;padding:10px 12px;border-radius:8px;
+ border:1px solid #c8cdd5;background:#fff;color:#14171c;cursor:pointer}
+.q-op:hover{border-color:var(--gold)}.q-op:disabled{cursor:default}
+.q-op.ok{background:#e3f4ea;border-color:#1b7a45;color:#0f4d2b;font-weight:700}.q-op.ok::before{content:"✓ ";font-weight:800}
+.q-op.erro{background:#fbe6e9;border-color:#b3263e;color:#7d1a2b}.q-op.erro::before{content:"✗ ";font-weight:800}
+.q-exp{border-left:4px solid var(--ok);background:#f2faf5;color:#14171c;border-radius:6px;padding:8px 12px}
+.q-exp .q-res{color:var(--ok)}.q-exp.mal{border-left-color:#b3263e;background:#fdf3f4}.q-exp.mal .q-res{color:#b3263e}
+.call.suavez .q-op,.call.resolvido .q-op{border-color:#3a2e10}
+/* endereços longos (fontes) quebram em vez de alargar a página */
+.sec a,.sec li,.sec p{overflow-wrap:anywhere}
+/* títulos das etapas com mais respiro */
+.sec{scroll-margin-top:calc(var(--nav-h,45px) + 56px)}
+@media (min-width:601px){.sec{padding:24px 28px}}
+/* tabelas: fichas no celular (menos as grades de células curtas, que ficam tabela e centralizadas) */
+.tab table.grade th,.tab table.grade td{text-align:center;padding:7px 6px}
+.tab table.grade th{white-space:normal;overflow-wrap:anywhere;hyphens:auto}
+@media (max-width:600px){
+ .tab:not(:has(.grade)){border:0;background:none;overflow:visible;border-radius:0}
+ .tab:not(:has(.grade)) table,.tab:not(:has(.grade)) tbody,.tab:not(:has(.grade)) tr,.tab:not(:has(.grade)) td{display:block}
+ .tab:not(:has(.grade)) thead{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+ .tab:not(:has(.grade)) tr{background:#fff;border:1px solid var(--paper-line);border-radius:8px;padding:10px 12px;margin-bottom:8px}
+ .tab:not(:has(.grade)) td{border:0;padding:3px 0;display:grid;grid-template-columns:6.5em minmax(0,1fr);gap:8px}
+ .tab:not(:has(.grade)) td::before{content:attr(data-label);font-size:.7rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--paper-muted);padding-top:3px}
+ .tab:not(:has(.grade)) td:empty{display:none}
+ .tab:not(:has(.grade)) td:first-child{display:block;font-weight:800;color:var(--paper-ink);padding-bottom:4px}
+ .tab:not(:has(.grade)) td:first-child::before{display:none}
+}
+</style>
+</head>
+<body>
+<!--moldura--><a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<header class="bar" id="topo"><div class="in">
+ <a class="marca" href="../../"><img class="logo" src="../../marca/logo-eb-104.webp" srcset="../../marca/logo-eb-52.webp 157w, ../../marca/logo-eb-104.webp 314w, ../../marca/logo-eb-156.webp 472w" sizes="(max-width: 480px) 121px, 145px" width="157" height="52" alt="Elite Board Gamers: página inicial"></a>
+ <a class="ig" href="https://www.instagram.com/eliteboardgamers/" target="_blank" rel="noopener" aria-label="Instagram @eliteboardgamers"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6" fill="currentColor"/></svg><span>@eliteboardgamers</span></a>
+ <a class="zap-mini" href="https://chat.whatsapp.com/IgQQkJdSkzHBaEq3UwFeAo" target="_blank" rel="noopener" aria-label="Grupo do WhatsApp"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8.4 19l-4.4 1Z"/><path d="M9.2 8.6c.3-.5.8-.5 1-.1l.7 1.5c.1.3 0 .6-.2.8l-.4.4c.5 1.1 1.4 2 2.5 2.5l.4-.4c.2-.2.5-.3.8-.2l1.5.7c.4.2.4.7-.1 1-.7.5-1.6.6-2.4.3a7 7 0 0 1-4.2-4.2c-.3-.8-.2-1.7.4-2.3Z"/></svg><span>Grupo do WhatsApp</span></a>
+ <button type="button" class="busca-btn" aria-label="Buscar no site" aria-haspopup="dialog" aria-keyshortcuts="/ Control+K" hidden><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></button>
+ <button type="button" class="sino-btn" aria-label="Receber notificações" aria-haspopup="dialog" aria-expanded="false" hidden><svg class="ic" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 3a6 6 0 0 0-6 6v3.6L4.3 15.5A1 1 0 0 0 5.2 17h13.6a1 1 0 0 0 .9-1.5L18 12.6V9a6 6 0 0 0-6-6z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M9.5 19.5a2.6 2.6 0 0 0 5 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+</div></header>
+<script src="/sino.js?v=2" defer></script>
+<script>(()=>{const b=document.querySelector('.busca-btn');let c;b.hidden=false;const a=()=>{c=c||new Promise((r,j)=>{const s=document.createElement('script');s.src='../../busca.js';s.onload=r;s.onerror=()=>{c=null;j()};document.head.append(s)});c.then(()=>abrirBusca('../../'),()=>{})};b.addEventListener('click',a);addEventListener('keydown',e=>{const t=e.target,ed=t.isContentEditable||/^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName);if((e.key==='/'&&!ed&&!e.ctrlKey&&!e.metaKey)||((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k')){e.preventDefault();a()}})})()</script>
+<nav class="nav" aria-label="Seções do site"><ul class="in"><li><a class="casa" href="../../" aria-label="Página inicial"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 9.5V20h13V9.5"/><path d="M10 20v-5.5h4V20"/></svg></a></li><li><a href="../../noticias/">Notícias</a></li><li><a href="../../resenhas/">Resenhas</a></li><li><a href="../../como-jogar/" aria-current="true">Como jogar</a></li><li><a href="../../lancamentos/">Lançamentos</a></li><li><a href="../../black/">Black de Verdade</a></li></ul></nav>
+<script>(()=>{const n=document.querySelector('.nav'),h=()=>document.documentElement.style.setProperty('--nav-h',n.offsetHeight+'px');h();addEventListener('resize',h);addEventListener('load',h)})()</script>
+<div class="guia-prog"><a href="#neste-guia"><span class="gp-r">Guia</span><span class="gp-t">Neste guia</span><span class="gp-i">Índice</span></a><span class="gp-b" aria-hidden="true"></span></div><!--/moldura-->
+
+<main id="conteudo" class="gut"><div class="nota">
+  <nav class="trilha" aria-label="Trilha de navegação"><ol><li><a href="../../">Início</a></li><li><a href="../">Como jogar</a></li><li aria-current="page">Everdell</li></ol></nav>
+
+  <article class="bloco topo-cj">
+    <figure class="foto-topo"><img src="fotos/mesa-1.webp" alt="Everdell: a mesa montada" width="1500" height="1500" fetchpriority="high" decoding="async"><figcaption>Imagem: Tabletop Tycoon (partida em andamento)</figcaption></figure>
+    <span class="num-l">Alocação de trabalhadores · Construção de vila</span>
+    <h1>Como jogar Everdell</h1>
+    <p class="meta-e"><span>Para quem nunca jogou</span><span>1 a 4 jogadores</span><span>60 a 120 min</span><span>14+</span><span>Edição Galápagos (Asmodee)</span></p>
+    <p class="meta"><time datetime="2026-11-05">5 de novembro de 2026</time> · Redação Elite Boardgamers</p>
+  </article>
+
+  <section class="bloco r1" aria-label="Resumo em 1 minuto">
+    <span class="kick">Resumo em 1 minuto</span>
+    <p class="resp">Você manda trabalhadores aos locais do vale para juntar recursos e paga com eles as cartas que formam a sua vila; depois do outono, vence quem tiver mais pontos.</p>
+    <ul><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.5l4.5 4.5L19.5 6.5"/></svg><span>No seu turno, você faz uma ação: alocar um trabalhador, jogar uma carta da mão ou da Campina, ou preparar-se para a próxima estação.</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.5l4.5 4.5L19.5 6.5"/></svg><span>Local de círculo fechado aceita um só trabalhador; a mão nunca passa de 8 cartas, e a vila tem 15 espaços.</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.5l4.5 4.5L19.5 6.5"/></svg><span>Primavera, verão e outono trazem trabalhadores novos; depois do outono, cada um joga até passar a vez, e somam-se cartas, fichas, bônus, Jornada e Eventos.</span></li></ul>
+    <p class="pe"><span><b>Como você aprende:</b> 4 etapas, da mesa montada à contagem de pontos</span><span><b>Leitura do essencial:</b> cerca de 8 min</span></p>
+    <p class="legenda-f"><b>À vista, só o essencial para jogar.</b> O que abre com <span class="mais-i">+</span> é explicação, exemplo, exercício ou regra de caso especial: abra quando precisar.</p>
+  </section>
+
+<section class="bloco sec setup" id="montar-a-mesa-passo-a-passo"><h2><span class="num"></span>Montar a mesa passo a passo</h2>
+<p>A montagem segue a página de preparação do manual <span class="pg">p.&nbsp;6</span>, na mesma ordem, com a ilustração numerada da p. 7. É igual para 2, 3 ou 4 jogadores, salvo no número de cartas de Floresta (passo 5), no segundo espaço das cartas de Floresta, que só se usa com 4 jogadores, e nas cartas que cada um recebe, que dependem da ordem de jogo (passo 13).</p>
+<p><strong>O que vem na caixa</strong> <span class="pg">p.&nbsp;4 e 5</span>:</p>
+<div class="tab"><table><thead><tr><th>Componente</th><th>Quantidade</th></tr></thead><tbody><tr><td data-label="Componente">Tabuleiro</td><td data-label="Quantidade">1</td></tr><tr><td data-label="Componente">Árvore Perene de Ever, em peças para montar</td><td data-label="Quantidade">1</td></tr><tr><td data-label="Componente">Peças de Evento básico</td><td data-label="Quantidade">4</td></tr><tr><td data-label="Componente">Trabalhadores: Ouriços, Camundongos, Esquilos e Tartarugas</td><td data-label="Quantidade">24, 6 de cada cor</td></tr><tr><td data-label="Componente">Cartas de Criatura e de Construção (o baralho principal)</td><td data-label="Quantidade">128</td></tr><tr><td data-label="Componente">Cartas de Floresta</td><td data-label="Quantidade">11</td></tr><tr><td data-label="Componente">Cartas de Evento especial</td><td data-label="Quantidade">16</td></tr><tr><td data-label="Componente">Carta de vitória</td><td data-label="Quantidade">1 (deixe na caixa: o manual não lhe dá regra)</td></tr><tr><td data-label="Componente">Gravetos / cristais de resina / seixos / frutos</td><td data-label="Quantidade">30 / 25 / 20 / 30</td></tr><tr><td data-label="Componente">Fichas de pontuação</td><td data-label="Quantidade">10 de 3 pontos e 20 de 1 ponto</td></tr><tr><td data-label="Componente">Fichas de Ocupado</td><td data-label="Quantidade">20</td></tr><tr><td data-label="Componente">Dado de 8 lados</td><td data-label="Quantidade">1, só para o modo solo</td></tr></tbody></table></div>
+<figure class="fig"><img src="figuras/setup-eventos-basicos.webp" alt="As quatro peças de Evento básico, de 3 pontos cada. Ilustração: manual Galápagos (p. 4)" loading="lazy" decoding="async"><figcaption>As quatro peças de Evento básico, de 3 pontos cada. Ilustração: manual Galápagos <span class="pg">p.&nbsp;4</span></figcaption></figure>
+<p><strong>1. O tabuleiro e a árvore</strong> <span class="pg">p.&nbsp;6</span></p>
+<ol><li><strong>Ponha o tabuleiro no centro da mesa</strong> <span class="pg">p.&nbsp;6</span>. A p. 5 mostra a árvore em quatro estágios de montagem, sem instruções escritas.</li></ol>
+<figure class="fig"><img src="figuras/setup-tabuleiro.webp" alt="O tabuleiro: no alto, o rio e o toco da árvore; logo abaixo, a faixa dos locais básicos; dos lados, as clareiras da floresta; embaixo, à esquerda, a Jornada (espaços que valem pontos, usados só no outono) e, à direita, o Refúgio (onde se trocam cartas por recursos). Ilustração: manual Galápagos (p. 4)" loading="lazy" decoding="async"><figcaption>O tabuleiro: no alto, o rio e o toco da árvore; logo abaixo, a faixa dos locais básicos; dos lados, as clareiras da floresta; embaixo, à esquerda, a Jornada (espaços que valem pontos, usados só no outono) e, à direita, o Refúgio (onde se trocam cartas por recursos). Ilustração: manual Galápagos <span class="pg">p.&nbsp;4</span></figcaption></figure>
+<ol start="2"><li><strong>Ponha a Árvore Perene de Ever no toco desenhado no topo do tabuleiro</strong> <span class="pg">p.&nbsp;6</span>.</li></ol>
+<figure class="fig"><img src="figuras/setup-arvore.webp" alt="A Árvore Perene de Ever no toco do alto do tabuleiro (1), com os trabalhadores nos galhos de cima (7). Ilustração: manual Galápagos (p. 7)" loading="lazy" decoding="async"><figcaption>A Árvore Perene de Ever no toco do alto do tabuleiro (1), com os trabalhadores nos galhos de cima (7). Ilustração: manual Galápagos <span class="pg">p.&nbsp;7</span></figcaption></figure>
+<p><strong>2. Recursos e fichas</strong> <span class="pg">p.&nbsp;6 e 7</span></p>
+<ol start="3"><li><strong>Ponha os gravetos, os cristais, os seixos e os frutos em quatro pilhas ao longo da margem do rio.</strong> Essas pilhas são o estoque geral. Os recursos não têm limite: se uma pilha acabar, use outra coisa no lugar <span class="pg">p.&nbsp;6 e 7</span>.</li></ol>
+<figure class="fig"><img src="figuras/setup-recursos.webp" alt="O estoque geral ao longo do rio (2): gravetos, cristais, seixos e frutos. Ilustração: manual Galápagos (p. 7)" loading="lazy" decoding="async"><figcaption>O estoque geral ao longo do rio (2): gravetos, cristais, seixos e frutos. Ilustração: manual Galápagos <span class="pg">p.&nbsp;7</span></figcaption></figure>
+<ol start="4"><li><strong>Ponha as fichas de pontuação e as fichas de Ocupado ao lado do tabuleiro</strong> <span class="pg">p.&nbsp;6</span>. A ficha de Ocupado marca a Construção que já deu a sua Criatura gratuita (etapa 2, p. 10).</li></ol>
+<figure class="fig"><img src="figuras/setup-fichas.webp" alt="Fichas de pontuação e de Ocupado ao lado do tabuleiro. Ilustração: manual Galápagos (p. 7)" loading="lazy" decoding="async"><figcaption>Fichas de pontuação e de Ocupado ao lado do tabuleiro. Ilustração: manual Galápagos <span class="pg">p.&nbsp;7</span></figcaption></figure>
+<p><strong>3. As cartas de Floresta</strong> <span class="pg">p.&nbsp;6</span></p>
+<ol start="5"><li><strong>Embaralhe as 11 cartas de Floresta e ponha algumas, viradas para cima, nas clareiras da floresta</strong>, dos dois lados do tabuleiro: 3 cartas com 2 jogadores, 4 cartas com 3 ou 4 jogadores. As outras voltam para a caixa <span class="pg">p.&nbsp;6</span>.</li></ol>
+<figure class="fig"><img src="figuras/setup-floresta.webp" alt="As cartas de Floresta nas clareiras dos dois lados do tabuleiro (3). Ilustração: manual Galápagos (p. 7)" loading="lazy" decoding="async"><figcaption>As cartas de Floresta nas clareiras dos dois lados do tabuleiro (3). Ilustração: manual Galápagos <span class="pg">p.&nbsp;7</span></figcaption></figure>
+<p><strong>4. Os Eventos</strong> <span class="pg">p.&nbsp;6</span></p>
+<ol start="6"><li><strong>Ponha as 4 peças de Evento básico ao longo da margem do rio</strong> <span class="pg">p.&nbsp;6</span>.</li><li><strong>Embaralhe as 16 cartas de Evento especial e ponha 4 nos galhos de baixo da Árvore Perene de Ever.</strong> As outras 12 voltam para a caixa <span class="pg">p.&nbsp;6</span>.</li></ol>
+<figure class="fig"><img src="figuras/setup-eventos.webp" alt="Os Eventos (4): peças básicas na margem do rio e cartas especiais nos galhos de baixo. No meio, o número 5 marca o baralho dentro da árvore. Ilustração: manual Galápagos (p. 7)" loading="lazy" decoding="async"><figcaption>Os Eventos (4): peças básicas na margem do rio e cartas especiais nos galhos de baixo. No meio, o número 5 marca o baralho dentro da árvore. Ilustração: manual Galápagos <span class="pg">p.&nbsp;7</span></figcaption></figure>
+<p><strong>5. O baralho e a Campina</strong> <span class="pg">p.&nbsp;6 e 7</span></p>
+<ol start="8"><li><strong>Embaralhe o baralho principal e abra 8 cartas viradas para cima na Campina</strong>, a área grande no meio do tabuleiro <span class="pg">p.&nbsp;6</span>.</li><li><strong>Ponha o resto do baralho dentro da Árvore Perene de Ever</strong>, no vão do tronco <span class="pg">p.&nbsp;6</span>.</li><li><strong>Deixe livre o recorte na borda de baixo do tabuleiro:</strong> ali fica a pilha de descarte, com as cartas viradas para baixo <span class="pg">p.&nbsp;7</span>.</li></ol>
+<figure class="fig"><img src="figuras/setup-campina.webp" alt="As 8 cartas da Campina, em duas fileiras de quatro; o 5 do meio é o mesmo número do passo do baralho. Ilustração: manual Galápagos (p. 7)" loading="lazy" decoding="async"><figcaption>As 8 cartas da Campina, em duas fileiras de quatro; o 5 do meio é o mesmo número do passo do baralho. Ilustração: manual Galápagos <span class="pg">p.&nbsp;7</span></figcaption></figure>
+<p><strong>6. Cada jogador e quem começa</strong> <span class="pg">p.&nbsp;6, 7 e 8</span></p>
+<ol start="11"><li><strong>Cada jogador escolhe uma cor, pega os 6 trabalhadores dela e deixa 2 à sua frente</strong> <span class="pg">p.&nbsp;4 e 6</span>. Deduzimos que os trabalhadores das cores sem dono ficam na caixa: o manual não fala deles.</li><li><strong>Definam quem começa: a pessoa mais humilde da mesa</strong> <span class="pg">p.&nbsp;6</span>. Se preferirem, sorteiem: é um conselho deste guia, não do manual. A vez segue no sentido horário <span class="pg">p.&nbsp;8</span>. O manual põe essa regra no fim da preparação, mas ela precisa vir antes do passo seguinte.</li><li><strong>Cada jogador compra cartas do baralho, conforme a ordem de jogo:</strong> o primeiro compra 5, o segundo 6, o terceiro 7 e o quarto 8 <span class="pg">p.&nbsp;6</span>.</li></ol>
+<figure class="fig"><img src="figuras/setup-jogador.webp" alt="O Jogador 1 (6): 2 trabalhadores e 5 cartas. Ilustração: manual Galápagos (p. 7)" loading="lazy" decoding="async"><figcaption>O Jogador 1 (6): 2 trabalhadores e 5 cartas. Ilustração: manual Galápagos <span class="pg">p.&nbsp;7</span></figcaption></figure>
+<ol start="14"><li><strong>Cada jogador põe os outros 4 trabalhadores nos galhos de cima da árvore:</strong> 1 na primavera, 1 no verão e 2 no outono <span class="pg">p.&nbsp;6</span>.</li></ol>
+<figure class="fig"><img src="figuras/setup-galhos.webp" alt="Os trabalhadores nos galhos de cima, sob os escudos das estações: primavera +1, verão +1, outono +2. Ilustração: manual Galápagos (p. 13)" loading="lazy" decoding="async"><figcaption>Os trabalhadores nos galhos de cima, sob os escudos das estações: primavera +1, verão +1, outono +2. Ilustração: manual Galápagos <span class="pg">p.&nbsp;13</span></figcaption></figure>
+<ol start="15"><li><strong>Ninguém recebe recursos:</strong> a preparação <span class="pg">p.&nbsp;6</span> não dá recursos a ninguém; tudo vem dos locais e das cartas durante a partida.</li></ol>
+<figure class="fig"><img src="figuras/preparacao.webp" alt="A mesa montada para 4 jogadores, com os números dos passos do manual (1 a 7). Ilustração: manual Galápagos (p. 7)" loading="lazy" decoding="async"><figcaption>A mesa montada para 4 jogadores, com os números dos passos do manual (1 a 7). Ilustração: manual Galápagos <span class="pg">p.&nbsp;7</span></figcaption></figure>
+<figure class="fig"><img src="fotos/mesa-1.webp" alt="Partida de 2 jogadores já em andamento, em imagem digital da editora (edição em inglês): a árvore com o baralho, a Campina, as cartas de Floresta e as vilas com várias cartas. Na montagem, as vilas começam vazias. Imagem: Tabletop Tycoon" loading="lazy" decoding="async"><figcaption>Partida de 2 jogadores já em andamento, em imagem digital da editora (edição em inglês): a árvore com o baralho, a Campina, as cartas de Floresta e as vilas com várias cartas. Na montagem, as vilas começam vazias. Imagem: Tabletop Tycoon</figcaption></figure>
+<p><strong>O que muda com o número de jogadores</strong> <span class="pg">p.&nbsp;6 e 8</span>:</p>
+<div class="tab"><table><thead><tr><th>Jogadores</th><th>Cartas de Floresta na mesa</th><th>Que voltam para a caixa</th><th>Cartas na mão, na ordem de jogo</th><th>Segundo espaço das cartas de Floresta</th></tr></thead><tbody><tr><td data-label="Jogadores">2</td><td data-label="Cartas de Floresta na mesa">3</td><td data-label="Que voltam para a caixa">8</td><td data-label="Cartas na mão, na ordem de jogo">5 e 6</td><td data-label="Segundo espaço das cartas de Floresta">não se usa</td></tr><tr><td data-label="Jogadores">3</td><td data-label="Cartas de Floresta na mesa">4</td><td data-label="Que voltam para a caixa">7</td><td data-label="Cartas na mão, na ordem de jogo">5, 6 e 7</td><td data-label="Segundo espaço das cartas de Floresta">não se usa</td></tr><tr><td data-label="Jogadores">4</td><td data-label="Cartas de Floresta na mesa">4</td><td data-label="Que voltam para a caixa">7</td><td data-label="Cartas na mão, na ordem de jogo">5, 6, 7 e 8</td><td data-label="Segundo espaço das cartas de Floresta">só o espaço com o símbolo de 4 jogadores</td></tr></tbody></table></div>
+<p><strong>O que volta para a caixa:</strong> o manual manda guardar as cartas de Floresta e de Evento especial que sobram <span class="pg">p.&nbsp;6</span>. Por dedução, ficam também na caixa os trabalhadores sem dono e o dado de 8 lados, que é só do modo solo <span class="pg">p.&nbsp;4</span>, e a carta de vitória, que não tem regra.</p>
+<p><strong>Antes de começar, confira:</strong> árvore no toco; quatro pilhas de recursos na margem do rio; fichas ao lado; 3 ou 4 cartas de Floresta; 4 Eventos básicos no rio e 4 Eventos especiais nos galhos de baixo; 8 cartas na Campina e o baralho dentro da árvore; cada jogador com 2 trabalhadores à frente, 4 na árvore (1, 1 e 2) e as cartas da sua posição; quem começa definido.</p>
+<div class="quiz"><p class="q-p">Partida de 3 jogadores. Qual mesa está certa?</p><div class="q-ops"><button type="button" class="q-op">3 cartas de Floresta; mãos de 5, 6 e 7 cartas</button><button type="button" class="q-op" data-ok>4 cartas de Floresta; mãos de 5, 6 e 7 cartas</button><button type="button" class="q-op">4 cartas de Floresta; 5 cartas na mão de cada um</button><button type="button" class="q-op">4 cartas de Floresta; mãos de 6, 7 e 8 cartas</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Com 3 ou 4 jogadores vão 4 cartas de Floresta para a mesa, e as mãos crescem pela ordem de jogo: 5 para o primeiro, 6 para o segundo, 7 para o terceiro <span class="pg">p.&nbsp;6</span>.</p></div></div>
+</section>
+<section class="bloco sec rapido" id="comece-a-jogar-em-4-minutos"><h2><span class="num"></span>Comece a jogar em 4 minutos</h2>
+<p><strong>Meta:</strong> em 4 minutos de leitura, montar a mesa e jogar o seu primeiro turno sem abrir o manual.</p>
+<h3>A ideia do jogo</h3>
+<p>Você monta uma vila de bichos da floresta. Manda <strong>trabalhadores</strong> aos locais do tabuleiro para pegar <strong>recursos</strong> (gravetos, cristais, seixos e frutos) e cartas, e paga com eles as <strong>cartas</strong> de Criatura e de Construção que formam a sua vila. O ano passa em estações, e cada estação traz trabalhadores novos; no fim do outono, vence quem tiver mais <strong>pontos</strong>.</p>
+<h3>Monte a mesa</h3>
+<p>A montagem completa, com figuras, está na seção "Montar a mesa passo a passo", logo acima. O essencial <span class="pg">p.&nbsp;6</span>:</p>
+<ol><li>Tabuleiro no centro, árvore no toco do alto, recursos em pilhas na margem do rio, fichas ao lado.</li><li>Cartas de Floresta nas clareiras: 3 com 2 jogadores, 4 com 3 ou 4.</li><li>Eventos <em>(depois)</em>: 4 básicos no rio, 4 especiais nos galhos de baixo da árvore.</li><li>8 cartas abertas na Campina; o baralho dentro da árvore.</li><li>Cada jogador: 2 trabalhadores à frente e 4 nos galhos de cima (1 primavera, 1 verão, 2 outono). Cartas: 5 para quem começa, 6 para o segundo, 7 para o terceiro, 8 para o quarto.</li><li>Antes de dar as cartas do item 5, defina quem começa: a pessoa mais humilde (ou sorteiem). A vez segue no sentido horário.</li></ol>
+<h3>Seu primeiro turno</h3>
+<p>No seu turno você faz <strong>uma</strong> de três ações: <strong>Alocar um Trabalhador</strong>, <strong>Jogar uma Carta</strong> ou <strong>Preparar-se para a Estação</strong> <span class="pg">p.&nbsp;8</span>. Você começa sem nenhum recurso e com trabalhadores livres, por isso o primeiro turno quase sempre é alocar.</p>
+<ol><li><strong>Ponha um trabalhador seu num espaço livre de um local</strong> e pegue na hora o que ele dá, do estoque geral ou do baralho <span class="pg">p.&nbsp;8</span>.</li><li><strong>Local exclusivo, de círculo fechado, aceita só 1 trabalhador</strong>, seja seu ou de outro. <strong>Local compartilhado, de círculo aberto, aceita vários</strong>, inclusive da mesma cor <span class="pg">p.&nbsp;8</span>.</li><li><strong>O trabalhador fica ali</strong> até você se preparar para a próxima estação <span class="pg">p.&nbsp;8</span>.</li><li><strong>Comprar carta é tirar do topo do baralho para a mão.</strong> A mão nunca passa de 8 cartas: compre só até ficar com 8 <span class="pg">p.&nbsp;11</span>.</li></ol>
+<p>Os 8 locais básicos, na faixa do caminho logo abaixo do rio <span class="pg">p.&nbsp;8</span>:</p>
+<div class="tab"><table><thead><tr><th>Local básico</th><th>Tipo</th></tr></thead><tbody><tr><td data-label="Local básico">3 gravetos</td><td data-label="Tipo">exclusivo</td></tr><tr><td data-label="Local básico">2 gravetos e 1 carta</td><td data-label="Tipo">compartilhado</td></tr><tr><td data-label="Local básico">2 cristais</td><td data-label="Tipo">exclusivo</td></tr><tr><td data-label="Local básico">1 cristal e 1 carta</td><td data-label="Tipo">compartilhado</td></tr><tr><td data-label="Local básico">2 cartas e 1 ficha de 1 ponto</td><td data-label="Tipo">compartilhado</td></tr><tr><td data-label="Local básico">1 seixo</td><td data-label="Tipo">exclusivo</td></tr><tr><td data-label="Local básico">1 fruto e 1 carta</td><td data-label="Tipo">exclusivo</td></tr><tr><td data-label="Local básico">1 fruto</td><td data-label="Tipo">compartilhado</td></tr></tbody></table></div>
+<p>As cartas de Floresta também são locais, em geral mais fortes, com o que dão escrito na carta. Com 2 ou 3 jogadores, cada uma recebe só 1 trabalhador <span class="pg">p.&nbsp;8</span>.</p>
+<figure class="fig"><img src="figuras/locais-basicos.webp" alt="Os 8 locais básicos: a placa mostra o que o local dá; o círculo, se é exclusivo (fechado) ou compartilhado (aberto). O que dão e o tipo de três deles (2 gravetos e 1 carta, 1 cristal e 1 carta, 1 fruto) vêm só desta ilustração. Ilustração: manual Galápagos (p. 8)" loading="lazy" decoding="async"><figcaption>Os 8 locais básicos: a placa mostra o que o local dá; o círculo, se é exclusivo (fechado) ou compartilhado (aberto). O que dão e o tipo de três deles (2 gravetos e 1 carta, 1 cristal e 1 carta, 1 fruto) vêm só desta ilustração. Ilustração: manual Galápagos <span class="pg">p.&nbsp;8</span></figcaption></figure>
+<aside class="call resolvido"><p class="rot">Tarefa · exemplo resolvido</p><p><strong>Exemplo resolvido.</strong> Partida de 2 jogadores. Ana começa, com 5 cartas na mão, e põe um trabalhador no local de 3 gravetos: pega 3 gravetos do estoque geral. O local é exclusivo e agora está ocupado.</p></aside>
+<aside class="call complete"><p class="rot">Tarefa · complete</p><p><strong>Complete.</strong> Agora é Bruno, com 6 cartas na mão.</p>
+<div class="quiz"><p class="q-p">Bruno pode pôr um trabalhador no local de 3 gravetos?</p><div class="q-ops"><button type="button" class="q-op">Sim, porque o trabalhador de Ana é de outra cor</button><button type="button" class="q-op">Sim, se pagar 1 fruto para Ana</button><button type="button" class="q-op" data-ok>Não: o local é exclusivo e já tem o trabalhador de Ana</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Local exclusivo recebe 1 trabalhador só, de qualquer cor <span class="pg">p.&nbsp;8</span>.</p></div></div>
+<div class="quiz"><p class="q-p">Bruno vai ao local de 2 gravetos e 1 carta. Com quanto fica?</p><div class="q-ops"><button type="button" class="q-op" data-ok>2 gravetos e 7 cartas na mão</button><button type="button" class="q-op">2 gravetos e 6 cartas, porque a carta vem da Campina</button><button type="button" class="q-op">Nada: Ana já usou um local de gravetos</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Pega 2 gravetos e compra 1 carta do baralho: 7 na mão. O local é compartilhado <span class="pg">p.&nbsp;8 e 11</span>.</p></div></div></aside>
+<aside class="call suavez"><p class="rot">Tarefa · sua vez</p><p><strong>Agora a sua mão.</strong> Olhe os locais livres antes de escolher.</p>
+<div class="quiz"><p class="q-p">Você é o quarto jogador e tem 8 cartas. Vai ao local de 2 cartas e 1 ficha de 1 ponto. O que recebe?</p><div class="q-ops"><button type="button" class="q-op">2 cartas, e descarta 2 da mão</button><button type="button" class="q-op">Nada: com a mão cheia, o local fica proibido para você</button><button type="button" class="q-op" data-ok>Só a ficha de 1 ponto: com 8 cartas, não compra nenhuma</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> A mão nunca passa de 8; você compra só até somar 8, e o resto do local vale normalmente <span class="pg">p.&nbsp;11</span>.</p></div></div></aside>
+<h3>Ainda não precisa saber</h3>
+<p>Pagar e jogar cartas, a vila de 15 espaços e a Criatura gratuita: <a href="#etapa-2-jogar-uma-carta-e-montar-a-vila">etapa 2</a>. Preparar-se para a Estação, a Produção (quando as cartas verdes rendem de novo), os Eventos, as cartas de Destino (cartas da vila que são locais) e a Jornada (pontos no outono): <a href="#etapa-3-as-estacoes-os-eventos-e-a-jornada">etapa 3</a>. Fim da partida e pontos: <a href="#etapa-4-fim-da-partida-e-pontuacao">etapa 4</a>. O Refúgio, que troca cartas por recursos, está na <a href="#etapa-1-alocar-um-trabalhador">etapa 1</a>.</p>
+<h3>Como a partida acaba</h3>
+<p>Cada jogador passa por primavera, verão e outono no seu ritmo. Depois de se preparar para o outono, você joga até não poder ou não querer mais e passa a vez. Quando todos passaram, vence quem tiver mais pontos <span class="pg">p.&nbsp;12 e 14</span>.</p>
+<p><strong>Prefere ver?</strong> Uma explicação das regras seguida de partida, gravada ao vivo. Ele complementa este guia; em caso de diferença, vale o manual.</p>
+<figure class="video"><button type="button" class="yt" data-id="Jbjsdd9eHdQ" data-t="0" aria-label="Assistir ao vídeo"><img src="https://i.ytimg.com/vi/Jbjsdd9eHdQ/hqdefault.jpg" alt="" loading="lazy" decoding="async" width="480" height="360"><span class="yt-play">▶ Assistir ao vídeo</span></button><figcaption>Everdell - Regras &amp; Gameplay Ao Vivo, canal Covil dos Jogos · <a href="https://www.youtube.com/watch?v=Jbjsdd9eHdQ&amp;t=0s" rel="noopener">abrir no YouTube</a></figcaption></figure>
+<aside class="call atencao"><p class="rot">Atenção</p><p><strong>Os três erros mais caros.</strong> Local de círculo fechado aceita 1 trabalhador só, mesmo que seja seu. A mão nunca passa de 8 cartas. Os trabalhadores não voltam sozinhos no fim da rodada: só voltam quando você gasta um turno para se preparar para a estação.</p></aside>
+</section>
+  <nav class="bloco indice" id="neste-guia" aria-label="Neste guia"><h2>Neste guia</h2><ol><li><a href="#montar-a-mesa-passo-a-passo">Montar a mesa passo a passo</a></li><li><a href="#comece-a-jogar-em-4-minutos">Comece a jogar em 4 minutos</a></li><li><a href="#antes-de-tudo-o-que-e-este-jogo">Antes de tudo: o que é este jogo</a> <small>(opcional)</small></li><li><a href="#como-este-guia-ensina">Como este guia ensina</a> <small>(opcional)</small></li><li><a href="#etapa-1-alocar-um-trabalhador">Etapa 1: alocar um trabalhador</a></li><li><a href="#etapa-2-jogar-uma-carta-e-montar-a-vila">Etapa 2: jogar uma carta e montar a vila</a></li><li><a href="#etapa-3-as-estacoes-os-eventos-e-a-jornada">Etapa 3: as estações, os Eventos e a Jornada</a></li><li><a href="#etapa-4-fim-da-partida-e-pontuacao">Etapa 4: fim da partida e pontuação</a></li><li><a href="#situacoes-especiais">Situações especiais</a> <small>(opcional)</small></li><li><a href="#avaliacao-final">Avaliação final</a> <small>(opcional)</small></li><li><a href="#para-consultar-durante-a-partida">Para consultar durante a partida</a></li><li><a href="#fontes">Fontes</a></li></ol></nav>
+
+<section class="bloco sec opc" id="antes-de-tudo-o-que-e-este-jogo"><h2><span class="num">0</span>Antes de tudo: o que é este jogo<span class="tag-opc">Opcional</span></h2>
+<figure class="fig foto-sec"><img src="fotos/jogabilidade-1.webp" alt="Everdell: uma partida em andamento" width="1500" height="1126" loading="lazy" decoding="async"><figcaption>Imagem: Tabletop Tycoon (partida em andamento)</figcaption></figure>
+<details class="dobra sec-opc"><summary>Abrir esta seção</summary><p>Everdell é um jogo de alocação de trabalhadores e de construção de vila para 1 a 4 pessoas, de James A. Wilson, com ilustrações de Andrew Bosley <span class="pg">p.&nbsp;23</span>. Cada jogador lidera um grupo de criaturas que chega ao vale no fim do inverno e precisa erguer uma vila antes do inverno seguinte <span class="pg">p.&nbsp;2, 3 e 12</span>.</p>
+<p>Os recursos vêm dos trabalhadores, e os pontos vêm da vila: cada carta ocupa um dos 15 espaços e vale os pontos impressos nela, e muitas rendem recursos, descontos ou bônus no fim <span class="pg">p.&nbsp;10, 11 e 14</span>. A cada turno você decide aonde mandar os poucos trabalhadores ou qual carta merece um espaço.</p>
+<p>Duas ideias sustentam o resto:</p>
+<ul><li><strong>Cada um tem o seu calendário.</strong> Não há rodada comum de estações. Você decide quando se preparar para a próxima, e os outros podem estar uma estação à frente ou atrás <span class="pg">p.&nbsp;12</span>.</li><li><strong>Quem chega primeiro ocupa.</strong> Local exclusivo, carta da Campina e Evento são de quem pegar antes <span class="pg">p.&nbsp;8, 9 e 10</span>.</li></ul></details>
+</section>
+<section class="bloco sec opc" id="como-este-guia-ensina"><h2><span class="num">1</span>Como este guia ensina<span class="tag-opc">Opcional</span></h2>
+<figure class="fig foto-sec"><img src="fotos/componentes-1.webp" alt="Everdell: os componentes" width="1500" height="1000" loading="lazy" decoding="async"><figcaption>Imagem: Tabletop Tycoon (partida em andamento)</figcaption></figure>
+<details class="dobra sec-opc"><summary>Abrir esta seção</summary><p>Quatro etapas, na ordem da partida: alocar, jogar cartas, as estações e a pontuação. Cada etapa traz <strong>Para entender</strong> (o porquê), <strong>Passo a passo</strong> (a regra exata), regras de caso especial a um toque e tarefas com ajuda que diminui: <strong>exemplo resolvido</strong>, <strong>complete</strong> e <strong>sua vez</strong>. Toque numa opção para ver a resposta e a explicação. No fim, uma avaliação diz o que reler, e uma folha de consulta vai para a mesa.</p></details>
+</section>
+<section class="bloco sec" id="etapa-1-alocar-um-trabalhador"><h2><span class="num">2</span>Etapa 1: alocar um trabalhador</h2>
+<details class="dobra entender"><summary>Por que funciona assim</summary><aside class="call entender"><p>Os trabalhadores são a sua única fonte de recursos no começo, e são poucos: 2 no começo, ainda no fim do inverno, e 6 no outono <span class="pg">p.&nbsp;6 e 13</span>. Cada um que você põe fica parado no local até você chamar todos de volta, o que custa um turno inteiro <span class="pg">p.&nbsp;8 e 12</span>. Por isso cada envio conta, e por isso os locais exclusivos disputados, como o de 3 gravetos, costumam ser ocupados cedo.</p></aside></details>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Alocar um trabalhador</strong> <span class="pg">p.&nbsp;8</span></p>
+<ol><li>Escolha um trabalhador seu que esteja livre, à sua frente.</li><li>Ponha-o num espaço de pata livre de um local: básico, de Floresta, Refúgio, Evento, carta de Destino ou Jornada.</li><li>Local exclusivo (círculo fechado): só se estiver vazio. Local compartilhado (círculo aberto): sempre.</li><li>Na hora, pegue os recursos listados do estoque geral, compre as cartas do baralho ou faça a ação do local.</li><li>O trabalhador fica alocado ali até a sua próxima ação de Preparar-se para a Estação.</li></ol></aside>
+<figure class="fig"><img src="figuras/locais.webp" alt="Exclusivo (um trabalhador) e compartilhado (vários). Ilustração: manual Galápagos (p. 8)" loading="lazy" decoding="async"><figcaption>Exclusivo (um trabalhador) e compartilhado (vários). Ilustração: manual Galápagos <span class="pg">p.&nbsp;8</span></figcaption></figure>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Os locais do tabuleiro</strong> <span class="pg">p.&nbsp;8 e 9</span></p>
+<ol><li><strong>Locais básicos:</strong> os 8 da tabela do "Comece a jogar", na faixa abaixo do rio.</li><li><strong>Locais de Floresta:</strong> o que a carta de Floresta diz. Com 2 ou 3 jogadores, 1 trabalhador por carta.</li><li><strong>Refúgio:</strong> local compartilhado sem limite. Descarte quantas cartas quiser da mão e receba 1 recurso à sua escolha para cada 2 cartas descartadas. O descarte fica virado para baixo.</li></ol></aside>
+<details class="dobra mais"><summary>Regra adicional: Floresta com 4 jogadores</summary><aside class="call mais"><p>Os espaços marcados com o símbolo de 4 jogadores só existem nas partidas de 4. Mesmo com o segundo espaço aberto, você não pode pôr 2 trabalhadores seus na mesma carta de Floresta <span class="pg">p.&nbsp;8</span>.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Recurso que acabou</summary><aside class="call mais"><p>Não há limite de recursos por jogador. Se uma pilha do estoque geral acabar, use outra coisa no lugar <span class="pg">p.&nbsp;7</span>.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Baralho vazio</summary><aside class="call mais"><p>Se o baralho acabar, embaralhe a pilha de descarte para formar um novo <span class="pg">p.&nbsp;11</span>.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Dar cartas a um adversário</summary><aside class="call mais"><p>Quando uma regra manda dar cartas, escolha quem tem espaço na mão, se houver; entregue o máximo que couber e descarte o resto <span class="pg">p.&nbsp;11</span>.</p></aside></details>
+<figure class="fig"><img src="figuras/refugio-jornada.webp" alt="À esquerda, o Refúgio; à direita, a Jornada, com os espaços de 2 a 5 pontos (etapa 3). Ilustração: manual Galápagos (p. 9)" loading="lazy" decoding="async"><figcaption>À esquerda, o Refúgio; à direita, a Jornada, com os espaços de 2 a 5 pontos (etapa 3). Ilustração: manual Galápagos <span class="pg">p.&nbsp;9</span></figcaption></figure>
+<aside class="call atencao"><p class="rot">Atenção</p><p>Exclusivo é exclusivo também para você. O seu próprio trabalhador num local de círculo fechado bloqueia o seu segundo trabalhador do mesmo jeito que bloqueia os dos outros <span class="pg">p.&nbsp;8</span>.</p></aside>
+<details class="dobra resolvido"><summary>Ver um exemplo resolvido</summary><aside class="call resolvido"><p>Você tem 7 cartas e precisa de frutos. Põe um trabalhador no Refúgio e descarta 5 cartas: 2 pares completos dão 2 recursos, e a quinta carta não rende nada. Escolhe 2 frutos e fica com 2 cartas na mão.</p></aside></details>
+
+
+<details class="dobra pratica"><summary>Pratique esta etapa: exercícios com respostas</summary><aside class="call complete"><p class="rot">Tarefa · complete</p><p><strong>Complete.</strong> Bruno já tem um trabalhador no Refúgio. Você também quer ir lá.</p>
+<div class="quiz"><p class="q-p">Você pode pôr o seu trabalhador no Refúgio?</p><div class="q-ops"><button type="button" class="q-op" data-ok>Sim: o Refúgio é compartilhado e não tem limite</button><button type="button" class="q-op">Não: o Refúgio só aceita 1 trabalhador por vez</button><button type="button" class="q-op">Só se o seu trabalhador for da mesma cor do de Bruno</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> O Refúgio é compartilhado e aceita qualquer número de trabalhadores, mesmo da mesma cor <span class="pg">p.&nbsp;9</span>.</p></div></div>
+<div class="quiz"><p class="q-p">Você descarta 4 cartas. Quantos recursos recebe?</p><div class="q-ops"><button type="button" class="q-op">4</button><button type="button" class="q-op" data-ok>2</button><button type="button" class="q-op">1</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> 1 recurso à sua escolha para cada 2 cartas descartadas: 4 cartas dão 2 <span class="pg">p.&nbsp;9</span>.</p></div></div></aside>
+<aside class="call suavez"><p class="rot">Tarefa · sua vez</p><p><strong>Sua vez.</strong> Partida de 3 jogadores.</p>
+<div class="quiz"><p class="q-p">Você tem um trabalhador numa carta de Floresta e quer pôr o segundo na mesma carta. Pode?</p><div class="q-ops"><button type="button" class="q-op">Sim, se a carta tiver dois espaços desenhados</button><button type="button" class="q-op">Sim, desde que pague 1 recurso</button><button type="button" class="q-op" data-ok>Não: com 3 jogadores, cada carta de Floresta recebe 1 trabalhador só</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Com 2 ou 3 jogadores, só cabe 1 trabalhador em cada local de Floresta; e nem com 4 você pode pôr 2 seus na mesma carta <span class="pg">p.&nbsp;8</span>.</p></div></div></aside></details>
+</section>
+<section class="bloco sec" id="etapa-2-jogar-uma-carta-e-montar-a-vila"><h2><span class="num">3</span>Etapa 2: jogar uma carta e montar a vila</h2>
+<details class="dobra entender"><summary>Por que funciona assim</summary><aside class="call entender"><p>As cartas são o motor e o placar ao mesmo tempo. Cada uma tem um custo em recursos, um valor em pontos e um efeito, que depende da cor <span class="pg">p.&nbsp;10 e 11</span>. Uma Fazenda logo cedo, por exemplo, dá fruto quando é jogada e de novo em duas estações, e ainda aumenta o que outras cartas rendem, como o Sapo Balseiro <span class="pg">p.&nbsp;11, 12 e 19</span>. Como a vila só tem 15 espaços, cada carta também é uma escolha do que fica de fora <span class="pg">p.&nbsp;11</span>.</p></aside></details>
+<figure class="fig"><img src="figuras/carta.webp" alt="O Tribunal, Construção Singular, custa 1 graveto, 1 cristal e 2 seixos, vale 2 pontos e tem a Juíza como Criatura gratuita. A Juíza custa 3 frutos, ou nada com o Tribunal na vila. Ilustração: manual Galápagos (p. 10)" loading="lazy" decoding="async"><figcaption>O Tribunal, Construção Singular, custa 1 graveto, 1 cristal e 2 seixos, vale 2 pontos e tem a Juíza como Criatura gratuita. A Juíza custa 3 frutos, ou nada com o Tribunal na vila. Ilustração: manual Galápagos <span class="pg">p.&nbsp;10</span></figcaption></figure>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Jogar uma carta</strong> <span class="pg">p.&nbsp;10 e 11</span></p>
+<ol><li>Escolha uma carta da sua mão ou uma das 8 da Campina.</li><li>Pague o custo da coluna da esquerda, devolvendo os recursos ao estoque geral. Criatura custa frutos.</li><li>Se a carta veio da Campina, reponha na hora a vaga com a carta do topo do baralho.</li><li>Ponha a carta na sua vila, num dos 15 espaços.</li><li>Resolva o efeito da carta, conforme a cor dela.</li><li>Resolva os efeitos que a carta nova dispara em cartas que já estão na vila (como Tribunal ou Lojista).</li></ol></aside>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>As cinco cores</strong> <span class="pg">p.&nbsp;11</span></p>
+<ol><li><strong>Bronze, Viajante:</strong> age uma vez, quando é jogada, e nunca mais.</li><li><strong>Verde, Produção:</strong> age quando é jogada e de novo ao se preparar para a primavera e para o outono.</li><li><strong>Vermelha, Destino:</strong> age quando um trabalhador é alocado nela (etapa 3).</li><li><strong>Azul, Regulamentação:</strong> dá bônus quando você joga certos tipos de carta, ou descontos.</li><li><strong>Roxa, Prosperidade:</strong> vale os pontos de base e os pontos de bônus no fim da partida.</li></ol></aside>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>A Criatura gratuita</strong> <span class="pg">p.&nbsp;10</span></p>
+<ol><li>Cada Criatura mostra, no alto à esquerda, o nome de uma Construção.</li><li>Se essa Construção está na sua vila, você pode jogar a Criatura sem pagar os frutos.</li><li>Ponha uma ficha de Ocupado nessa Construção. Cada Construção faz isso uma vez só na partida.</li></ol></aside>
+<aside class="call atencao"><p class="rot">Atenção</p><p>Comum e Singular. A faixa abaixo do nome diz se a carta é Comum ou Singular. Da Comum, você pode ter várias cópias na vila; da Singular, só uma <span class="pg">p.&nbsp;10</span>.</p></aside>
+<details class="dobra mais"><summary>Regra adicional: Habilidade de desconto</summary><aside class="call mais"><p>Se for usar uma habilidade que muda o custo (Masmorra, Juíza, Estalajadeiro), ela vem antes de tudo, antes de pagar <span class="pg">p.&nbsp;11</span>.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Vila cheia</summary><aside class="call mais"><p>A vila tem no máximo 15 espaços, um por carta. Os Eventos realizados não contam para esse limite <span class="pg">p.&nbsp;11</span>.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Ficha de Ocupado que fica</summary><aside class="call mais"><p>A ficha de Ocupado não sai da Construção se a Criatura gratuita for removida da sua vila depois <span class="pg">p.&nbsp;10</span>.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Andarilha</summary><aside class="call mais"><p>Pelo glossário, a Andarilha não ocupa um dos 15 espaços da vila; ao ser jogada, você compra 3 cartas <span class="pg">p.&nbsp;18</span>.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Marido e Esposa</summary><aside class="call mais"><p>As duas cartas dividem um espaço só na vila <span class="pg">p.&nbsp;18</span>.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Cartas com regra própria</summary><aside class="call mais"><p>O glossário das p. 18 a 21 detalha cada carta. Estalajadeiro, Guindaste e Masmorra não se somam com outras habilidades de carta; o Bobo da Corte vai para a vila de um adversário <span class="pg">p.&nbsp;18 e 20</span>.</p></aside></details>
+<details class="dobra edicao"><summary>Sobre a edição: Errata da Galápagos (outubro de 2023)</summary><aside class="call edicao"><p>A Ruínas age só quando é jogada, não na Produção: descarte uma Construção da sua vila, ponha a Ruínas no lugar, receba de volta o custo da descartada e compre 2 cartas <span class="pg">p.&nbsp;21</span>. A errata corrige também textos impressos de cartas; duas mudam o jogo: na carta de Floresta que compra 2 da Campina, você joga 1 delas pagando 1 recurso a menos, e a Criatura gratuita do Escultor de Madeira vem da Despensa, não do Armazém.</p></aside></details>
+<details class="dobra resolvido"><summary>Ver um exemplo resolvido</summary><aside class="call resolvido"><p>(a sequência do manual, p. 12). Turno 1: trabalhador no local de 3 gravetos. Turno 2: o outro numa carta de Floresta que dá 1 graveto, 1 cristal e 1 fruto; você tem 4 gravetos, 1 cristal e 1 fruto. Turno 3: joga uma Fazenda da mão (Construção Comum verde, custa 2 gravetos e 1 cristal, vale 1 ponto, dá 1 fruto ao ser jogada e na Produção); paga e recebe o fruto: 2 gravetos e 2 frutos. Turno 4: joga o Sapo Balseiro da Campina (Criatura Comum verde, custa 2 frutos, vale 1 ponto, dá 2 gravetos por Fazenda na vila ao ser jogado e na Produção); a vaga é reposta, e você fica com 4 gravetos <span class="pg">p.&nbsp;12, 15, 19 e 20</span>.</p></aside></details>
+
+
+<details class="dobra pratica"><summary>Pratique esta etapa: exercícios com respostas</summary><aside class="call complete"><p class="rot">Tarefa · complete</p><p><strong>Complete.</strong> Você tem na vila o Tribunal (Construção Singular azul, 2 pontos; dá 1 graveto, 1 cristal ou 1 seixo cada vez que você joga uma Construção, mas nada quando ele mesmo é jogado), sem ficha de Ocupado, e 3 frutos. Na mão está a Juíza (Criatura Singular azul, custa 3 frutos, vale 2 pontos; quando você joga uma Criatura ou Construção, pode trocar 1 recurso do custo por outro que tenha) <span class="pg">p.&nbsp;10, 18 e 21</span>.</p>
+<div class="quiz"><p class="q-p">Quanto custa jogar a Juíza?</p><div class="q-ops"><button type="button" class="q-op" data-ok>Nada: ela é a Criatura gratuita do Tribunal</button><button type="button" class="q-op">3 frutos, como sempre</button><button type="button" class="q-op">1 fruto, com desconto do Tribunal</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> O Tribunal é a Construção listada na Juíza; com ele na vila, a Juíza sai sem pagar frutos <span class="pg">p.&nbsp;10</span>.</p></div></div>
+<div class="quiz"><p class="q-p">O que acontece com o Tribunal?</p><div class="q-ops"><button type="button" class="q-op">Nada</button><button type="button" class="q-op">Volta para a mão</button><button type="button" class="q-op" data-ok>Recebe uma ficha de Ocupado e não dá outra Criatura gratuita</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> A ficha de Ocupado marca que a Construção já deu a sua Criatura gratuita, e isso vale uma vez só <span class="pg">p.&nbsp;10</span>.</p></div></div></aside>
+<aside class="call suavez"><p class="rot">Tarefa · sua vez</p><p><strong>Sua vez.</strong> Duas situações.</p>
+<div class="quiz"><p class="q-p">Você já tem um Tribunal na vila. Pode jogar o segundo Tribunal?</p><div class="q-ops"><button type="button" class="q-op">Sim, pagando o custo de novo</button><button type="button" class="q-op" data-ok>Não: o Tribunal é Singular</button><button type="button" class="q-op">Sim, se a vila tiver menos de 15 cartas</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Da carta Singular só cabe uma cópia na vila <span class="pg">p.&nbsp;10</span>.</p></div></div>
+<div class="quiz"><p class="q-p">Você joga uma Fazenda com o Tribunal na vila (ele dá 1 graveto, 1 cristal ou 1 seixo a cada Construção jogada). Qual a ordem?</p><div class="q-ops"><button type="button" class="q-op" data-ok>Você paga, põe a Fazenda na vila, recebe o fruto dela e depois o recurso do Tribunal</button><button type="button" class="q-op">O Tribunal dá o recurso antes de você pagar a Fazenda</button><button type="button" class="q-op">Você recebe o fruto e o recurso, e paga no fim do turno</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Pagar, pôr na vila, efeito da carta e, por último, efeitos disparados como o do Tribunal <span class="pg">p.&nbsp;11 e 21</span>.</p></div></div></aside></details>
+</section>
+<section class="bloco sec" id="etapa-3-as-estacoes-os-eventos-e-a-jornada"><h2><span class="num">4</span>Etapa 3: as estações, os Eventos e a Jornada</h2>
+<details class="dobra entender"><summary>Por que funciona assim</summary><aside class="call entender"><p>Preparar-se para a Estação é o único jeito de recuperar os trabalhadores, e cada estação traz mais gente: 2 no começo, 3 na primavera, 4 no verão, 6 no outono <span class="pg">p.&nbsp;6 e 13</span>. Os Eventos e a Jornada valem pontos direto, mas pedem vila montada ou cartas na mão; por isso aparecem mais tarde <span class="pg">p.&nbsp;9</span>.</p></aside></details>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Preparar-se para a estação</strong> <span class="pg">p.&nbsp;12 e 13</span></p>
+<ol><li>Só pode quando todos os seus trabalhadores estão alocados.</li><li>No seu turno, traga de volta todos os trabalhadores alocados.</li><li>Pegue na árvore os trabalhadores da próxima estação e receba os bônus dela.</li><li>Seu turno acaba aí; a partida segue com o próximo jogador.</li></ol></aside>
+<div class="tab"><table><thead><tr><th>Estação</th><th>Trabalhadores novos</th><th>Bônus <span class="pg">p.&nbsp;13</span></th></tr></thead><tbody><tr><td data-label="Estação">Primavera</td><td data-label="Trabalhadores novos">1</td><td data-label="Bônus p.&nbsp;13">Produção: todas as suas cartas verdes agem, na ordem que você escolher</td></tr><tr><td data-label="Estação">Verão</td><td data-label="Trabalhadores novos">1</td><td data-label="Bônus p.&nbsp;13">Pegar até 2 das cartas abertas da Campina para a mão; não há Produção</td></tr><tr><td data-label="Estação">Outono</td><td data-label="Trabalhadores novos">2</td><td data-label="Bônus p.&nbsp;13">Produção: todas as suas cartas verdes agem</td></tr></tbody></table></div>
+<aside class="call atencao"><p class="rot">Atenção</p><p>Cada um tem a sua estação. Os jogadores não precisam se preparar ao mesmo tempo <span class="pg">p.&nbsp;12</span>. Um pode estar no verão enquanto o outro ainda está na primavera.</p></aside>
+<details class="dobra mais"><summary>Regra adicional: Verão sem Produção</summary><aside class="call mais"><p>No verão as cartas verdes não agem em grupo, mas uma carta verde jogada no verão age normalmente quando é jogada <span class="pg">p.&nbsp;13</span>.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Pegar da Campina no verão</summary><aside class="call mais"><p>É a exceção à regra de comprar sempre do baralho: o verão manda tirar cartas da Campina <span class="pg">p.&nbsp;11 e 13</span>. Elas respeitam o limite de 8 na mão; pegue as duas e só depois reponha as vagas com o baralho.</p></aside></details>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Cartas de Destino</strong> <span class="pg">p.&nbsp;9 e 11</span></p>
+<ol><li>Uma carta vermelha de Destino na sua vila é um local: você pode pôr um trabalhador seu nela.</li><li>Se a carta tem o símbolo ABERTO (uma plaquinha com essa palavra), os adversários também podem pôr trabalhadores nela.</li><li>Quando um adversário usa o seu Destino, você recebe 1 ficha de 1 ponto do estoque geral.</li></ol></aside>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Eventos</strong> <span class="pg">p.&nbsp;9</span></p>
+<ol><li>Ponha 1 trabalhador num Evento básico ou especial que ainda esteja na mesa.</li><li>Só pode se a sua vila cumprir as exigências do Evento; pague na hora os recursos que ele pedir.</li><li>Cada Evento é de um jogador só. O Evento realizado fica ao lado da sua vila e vale pontos no fim.</li><li>O trabalhador volta na próxima ação de Preparar-se para a Estação.</li></ol></aside>
+<figure class="fig"><img src="figuras/eventos.webp" alt="O Grande Circuito (básico) exige 3 cartas de Destino; o Teto Imaculado da Capela (especial) exige o Escultor de Madeira e a Capela. Ilustração: manual Galápagos (p. 9)" loading="lazy" decoding="async"><figcaption>O Grande Circuito (básico) exige 3 cartas de Destino; o Teto Imaculado da Capela (especial) exige o Escultor de Madeira e a Capela. Ilustração: manual Galápagos <span class="pg">p.&nbsp;9</span></figcaption></figure>
+<aside class="call atencao"><p class="rot">Atenção</p><p>O manual escreve só a exigência do Grande Circuito (3 cartas de Destino, p. 9). As dos outros Eventos básicos estão impressas junto das peças de Evento básico, no tabuleiro, como nos nomes Monumento do Vale e Festival da Colheita; as dos especiais, em cada carta. Confira na mesa antes de mandar o trabalhador.</p></aside>
+<details class="dobra mais"><summary>Regra adicional: Evento já realizado</summary><aside class="call mais"><p>Você não devolve um Evento se as cartas exigidas saírem da sua vila depois <span class="pg">p.&nbsp;9</span>.</p></aside></details>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>A Jornada</strong> <span class="pg">p.&nbsp;9</span></p>
+<ol><li>Só no outono.</li><li>Escolha um espaço de 2, 3, 4 ou 5 pontos e descarte da mão tantas cartas quanto os pontos dele.</li><li>Os espaços de 5, 4 e 3 são exclusivos; o de 2 é compartilhado.</li><li>O trabalhador vale, no fim da partida, os pontos do espaço. Você pode mandar mais de um trabalhador à Jornada.</li></ol></aside>
+<details class="dobra dica"><summary>Dica</summary><aside class="call dica"><p>Cartas paradas na mão viram pontos na Jornada do outono. Guardar algumas para o fim pode render um espaço alto.</p></aside></details>
+<details class="dobra resolvido"><summary>Ver um exemplo resolvido</summary><aside class="call resolvido"><p>(continuação do manual, p. 12). Seus 2 trabalhadores estão alocados e você não tem recursos para jogar mais nada. No turno seguinte, você se prepara para a primavera: traz de volta os 2 trabalhadores, pega 1 trabalhador novo na árvore (agora são 3) e faz a Produção. A Fazenda dá 1 fruto e o Sapo Balseiro dá 2 gravetos, porque você tem 1 Fazenda. Com os 4 gravetos que já tinha, fica com 6 gravetos e 1 fruto.</p></aside></details>
+
+
+<details class="dobra pratica"><summary>Pratique esta etapa: exercícios com respostas</summary><aside class="call complete"><p class="rot">Tarefa · complete</p><p><strong>Complete.</strong> Você está no verão, com 4 trabalhadores: 3 alocados e 1 livre. Tem cartas para jogar.</p>
+<div class="quiz"><p class="q-p">Pode se preparar para o outono neste turno?</p><div class="q-ops"><button type="button" class="q-op">Sim, a qualquer momento depois do verão começar</button><button type="button" class="q-op">Sim, se tiver jogado uma carta no turno anterior</button><button type="button" class="q-op" data-ok>Não: ainda tem um trabalhador livre</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Preparar-se para a Estação exige todos os seus trabalhadores alocados <span class="pg">p.&nbsp;3 e 12</span>.</p></div></div>
+<div class="quiz"><p class="q-p">Você aloca o último e, no turno seguinte, se prepara para o outono. Com quantos trabalhadores fica?</p><div class="q-ops"><button type="button" class="q-op">5</button><button type="button" class="q-op" data-ok>6</button><button type="button" class="q-op">4, porque os do verão ficam na árvore</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Você traz de volta os 4 e pega os 2 do outono: 6 <span class="pg">p.&nbsp;13</span>.</p></div></div></aside>
+<aside class="call suavez"><p class="rot">Tarefa · sua vez</p><p><strong>Sua vez.</strong> Duas situações.</p>
+<div class="quiz"><p class="q-p">É primavera para você. Pode mandar um trabalhador à Jornada?</p><div class="q-ops"><button type="button" class="q-op" data-ok>Não: a Jornada só abre no outono</button><button type="button" class="q-op">Sim, se descartar as cartas</button><button type="button" class="q-op">Sim, mas só ao espaço de 2 pontos</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Apenas no outono você pode enviar trabalhador à Jornada <span class="pg">p.&nbsp;9</span>.</p></div></div>
+<div class="quiz"><p class="q-p">Ana pôs um trabalhador no Correio, carta de Destino com o símbolo ABERTO, que está na sua vila. O que você ganha?</p><div class="q-ops"><button type="button" class="q-op">O efeito do Correio também</button><button type="button" class="q-op">Nada: a carta é de quem a usa</button><button type="button" class="q-op" data-ok>1 ficha de 1 ponto do estoque geral</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> O dono do Destino recebe 1 ficha de 1 ponto quando um adversário o visita <span class="pg">p.&nbsp;9</span>.</p></div></div></aside></details>
+</section>
+<section class="bloco sec" id="etapa-4-fim-da-partida-e-pontuacao"><h2><span class="num">5</span>Etapa 4: fim da partida e pontuação</h2>
+<details class="dobra entender"><summary>Por que funciona assim</summary><aside class="call entender"><p>Não existe um último turno marcado. Cada jogador termina quando, depois de se preparar para o outono, não pode ou não quer fazer mais nada <span class="pg">p.&nbsp;12 e 14</span>. Quem passa primeiro fica de fora enquanto os outros continuam; por isso, nada mais entra na mão nem no estoque de quem já passou.</p></aside></details>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>O fim</strong> <span class="pg">p.&nbsp;12 e 14</span></p>
+<ol><li>A ação de Preparar-se para o outono é a última preparação da partida.</li><li>Depois dela, continue jogando (alocar o que restar, jogar cartas) até não poder ou não querer mais.</li><li>Então passe a vez. Quem passou não recebe mais cartas nem recursos.</li><li>A partida acaba quando todos passaram.</li></ol></aside>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>A contagem</strong> <span class="pg">p.&nbsp;14</span></p>
+<ol><li>Some os pontos de base impressos em todas as cartas da vila.</li><li>Some as fichas de pontuação.</li><li>Some os bônus das cartas roxas de Prosperidade.</li><li>Some os pontos dos trabalhadores na Jornada.</li><li>Some os pontos dos Eventos realizados.</li><li>Mais pontos vence. Empate: vence quem realizou mais Eventos; se persistir, quem tiver mais recursos sobrando.</li></ol></aside>
+<details class="dobra mais"><summary>Regra adicional: Dar algo a quem já passou</summary><aside class="call mais"><p>Se for preciso dar cartas ou recursos a um jogador e todos os jogadores já tiverem passado a vez, descarte as cartas ou os recursos <span class="pg">p.&nbsp;14</span>.</p></aside></details>
+<figure class="fig"><img src="figuras/pontuacao.webp" alt="A vila do exemplo de pontuação: cartas, fichas, um trabalhador na Jornada de 4 pontos e os três Eventos realizados. Ilustração: manual Galápagos (p. 15)" loading="lazy" decoding="async"><figcaption>A vila do exemplo de pontuação: cartas, fichas, um trabalhador na Jornada de 4 pontos e os três Eventos realizados. Ilustração: manual Galápagos <span class="pg">p.&nbsp;15</span></figcaption></figure>
+<details class="dobra resolvido"><summary>Ver um exemplo resolvido</summary><aside class="call resolvido"><p>(a contagem do manual, p. 14). Pontos de base das cartas: 22. Fichas de pontuação: 14. Bônus das cartas roxas: 10, sendo 3 da Esposa (está com o Marido), 2 da Arquiteta (1 cristal e 1 seixo sobrando) e 5 do Rei (1 Evento básico vale 1 e 2 Eventos especiais valem 2 cada). Jornada: 4. Eventos: 12, sendo 6 do Espetáculo em Domicílio, 3 do Pregando para os Patifes e 3 do Grande Circuito. Total: 22 + 14 + 10 + 4 + 12 = 62.</p></aside></details>
+
+
+<details class="dobra pratica"><summary>Pratique esta etapa: exercícios com respostas</summary><aside class="call complete"><p class="rot">Tarefa · complete</p><p><strong>Complete.</strong> Você tem o Rei, carta roxa que no fim vale 1 ponto por Evento básico e 2 por Evento especial realizados <span class="pg">p.&nbsp;19</span>. Realizou 2 Eventos básicos e 1 especial.</p>
+<div class="quiz"><p class="q-p">Quanto vale o bônus do Rei?</p><div class="q-ops"><button type="button" class="q-op">3</button><button type="button" class="q-op" data-ok>4</button><button type="button" class="q-op">6</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> 2 básicos a 1 ponto e 1 especial a 2 pontos: 2 + 2 = 4. Esses pontos se somam aos de base do Rei e aos dos próprios Eventos <span class="pg">p.&nbsp;14 e 19</span>.</p></div></div></aside>
+<aside class="call suavez"><p class="rot">Tarefa · sua vez</p><p><strong>Sua vez.</strong> Duas situações.</p>
+<div class="quiz"><p class="q-p">Você termina com a Arquiteta, que vale 1 ponto por cristal e seixo sobrando, até 6 <span class="pg">p.&nbsp;18</span>. Sobraram 3 cristais, 2 seixos e 4 gravetos. Qual o bônus?</p><div class="q-ops"><button type="button" class="q-op" data-ok>5</button><button type="button" class="q-op">9</button><button type="button" class="q-op">6</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Gravetos não contam: 3 cristais e 2 seixos dão 5, abaixo do teto de 6 <span class="pg">p.&nbsp;18</span>.</p></div></div>
+<div class="quiz"><p class="q-p">Ana e Bruno empatam com 58 pontos. Os dois realizaram 3 Eventos; Ana tem 4 recursos sobrando, Bruno 2. Quem vence?</p><div class="q-ops"><button type="button" class="q-op">Bruno</button><button type="button" class="q-op">Os dois dividem a vitória</button><button type="button" class="q-op" data-ok>Ana</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> O primeiro desempate é o número de Eventos, e eles empatam; o segundo é o de recursos sobrando: vence Ana <span class="pg">p.&nbsp;14</span>.</p></div></div></aside></details>
+</section>
+<section class="bloco sec opc" id="situacoes-especiais"><h2><span class="num">6</span>Situações especiais<span class="tag-opc">Opcional</span></h2>
+<figure class="fig foto-sec caixa"><img src="fotos/capa-1.webp" alt="Everdell: a caixa" width="953" height="1015" loading="lazy" decoding="async"><figcaption>Imagem: Tabletop Tycoon</figcaption></figure>
+<details class="dobra sec-opc"><summary>Abrir esta seção</summary><details class="dobra mais"><summary>Regra adicional: Cartas que mexem na vila</summary><aside class="call mais"><p>Se Ruínas ou outra habilidade remover uma carta com fichas de pontuação, as fichas se perdem. Um trabalhador não permanente que estava na carta vai para a Ruínas; um permanente sai com ela <span class="pg">p.&nbsp;21</span>.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Trabalhador permanente</summary><aside class="call mais"><p>No Cemitério e no Monastério o trabalhador fica para sempre e não volta ao se preparar para a estação. O segundo espaço de cada um só abre com o Coveiro e com o Monge na vila <span class="pg">p.&nbsp;20 e 21</span>.</p></aside></details>
+<details class="dobra dica"><summary>Dica</summary><aside class="call dica"><p>Os Eventos especiais são só 4, e cada um é de quem chegar primeiro <span class="pg">p.&nbsp;6 e 9</span>. Olhar as exigências deles no começo ajuda a escolher que cartas levar para a vila.</p></aside></details></details>
+</section>
+<section class="bloco sec opc" id="avaliacao-final"><h2><span class="num">7</span>Avaliação final<span class="tag-opc">Opcional</span></h2>
+<figure class="fig foto-sec"><img src="fotos/jogabilidade-1.webp" alt="Everdell: uma partida em andamento" width="1500" height="1126" loading="lazy" decoding="async"><figcaption>Imagem: Tabletop Tycoon (partida em andamento)</figcaption></figure>
+<details class="dobra sec-opc"><summary>Abrir esta seção</summary><p>Responda sem consultar. Cada resposta diz o que reler.</p>
+<div class="quiz"><p class="q-p">1. Partida de 2 jogadores. Quantas cartas de Floresta vão para a mesa, e quantas cartas recebe quem joga em segundo?</p><div class="q-ops"><button type="button" class="q-op" data-ok>3 de Floresta; 6 cartas</button><button type="button" class="q-op">4 de Floresta; 5 cartas</button><button type="button" class="q-op">3 de Floresta; 5 cartas</button><button type="button" class="q-op">4 de Floresta; 6 cartas</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> <strong>3 e 6.</strong> Com 2 jogadores vão 3 cartas de Floresta; o segundo a jogar compra 6 <span class="pg">p.&nbsp;6</span>. Releia a montagem.</p></div></div>
+<div class="quiz"><p class="q-p">2. Seu trabalhador está no local de 1 seixo. Você pode pôr outro trabalhador seu ali?</p><div class="q-ops"><button type="button" class="q-op">Sim, porque os dois são seus</button><button type="button" class="q-op" data-ok>Não: o local é exclusivo</button><button type="button" class="q-op">Sim, pagando 1 recurso</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> <strong>Não.</strong> Local exclusivo aceita 1 trabalhador, de qualquer cor <span class="pg">p.&nbsp;8</span>. Releia a etapa 1.</p></div></div>
+<div class="quiz"><p class="q-p">3. Você tem 1 trabalhador livre e não quer jogar carta. Pode se preparar para a estação?</p><div class="q-ops"><button type="button" class="q-op">Sim</button><button type="button" class="q-op">Sim, se for verão</button><button type="button" class="q-op" data-ok>Não: todos os trabalhadores precisam estar alocados</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> <strong>Não</strong> <span class="pg">p.&nbsp;3 e 12</span>. Releia a etapa 3.</p></div></div>
+<div class="quiz"><p class="q-p">4. É verão para você e outono para Ana. Ela vai à Jornada. E você?</p><div class="q-ops"><button type="button" class="q-op" data-ok>Não pode: a sua estação ainda é o verão</button><button type="button" class="q-op">Também pode, porque a mesa já chegou ao outono</button><button type="button" class="q-op">Pode, mas só ao espaço de 2 pontos</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> <strong>Não pode.</strong> Cada jogador está na sua estação, e a Jornada é só no outono <span class="pg">p.&nbsp;9 e 12</span>. Releia a etapa 3.</p></div></div>
+<div class="quiz"><p class="q-p">5. Empate em pontos e em Eventos. Quem vence?</p><div class="q-ops"><button type="button" class="q-op">Quem passou a vez primeiro</button><button type="button" class="q-op" data-ok>Quem tiver mais recursos sobrando</button><button type="button" class="q-op">Quem tiver mais cartas na vila</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> <strong>Mais recursos sobrando</strong> <span class="pg">p.&nbsp;14</span>. Releia a etapa 4.</p></div></div>
+<aside class="call atencao"><p class="rot">Atenção</p><p><strong>Critério para começar a jogar.</strong> Acertou 4 ou 5? Monte a mesa e jogue, com a folha de consulta ao lado. Errou a 1, releia a montagem; a 2, a etapa 1; a 3 ou a 4, a etapa 3; a 5, a etapa 4. Depois refaça só as perguntas que errou.</p></aside></details>
+</section>
+<section class="bloco sec ref" id="para-consultar-durante-a-partida"><h2><span class="num">8</span>Para consultar durante a partida</h2>
+<figure class="fig foto-sec"><img src="fotos/componentes-1.webp" alt="Everdell: os componentes" width="1500" height="1000" loading="lazy" decoding="async"><figcaption>Imagem: Tabletop Tycoon (partida em andamento)</figcaption></figure>
+<p><strong>Montagem:</strong> árvore no toco; recursos no rio; Floresta: 3 cartas (2 jogadores) ou 4 (3 ou 4); 4 Eventos básicos no rio e 4 especiais nos galhos de baixo; 8 cartas na Campina; baralho na árvore. Cada jogador: 2 trabalhadores à frente, 4 na árvore (1 primavera, 1 verão, 2 outono); cartas 5, 6, 7 e 8 pela ordem. Começa o mais humilde; sentido horário.</p>
+<p><strong>No seu turno, uma ação:</strong></p>
+<ol><li><strong>Alocar um Trabalhador:</strong> espaço livre; exclusivo (círculo fechado) 1 só; compartilhado (aberto) vários. Pegue na hora. Floresta: 1 por carta com 2 ou 3 jogadores. Refúgio: 1 recurso a cada 2 cartas descartadas. Destino de outro com ABERTO: o dono ganha 1 ponto. Evento: cumpra a exigência e pague. Jornada: só no outono, descarte cartas iguais aos pontos (5, 4, 3 exclusivos; 2 compartilhado).</li><li><strong>Jogar uma Carta:</strong> da mão ou da Campina. Ordem: habilidade de desconto, pagar (ou Ocupado), repor a Campina, pôr na vila, efeito da carta, efeitos disparados. Vila: 15 espaços. Singular: 1 cópia. Criatura gratuita: Construção dela na vila, ficha de Ocupado, uma vez.</li><li><strong>Preparar-se para a Estação:</strong> só com todos os trabalhadores alocados. Volte todos. Primavera +1 e Produção; verão +1 e até 2 cartas da Campina; outono +2 e Produção.</li></ol>
+<p><strong>Sempre:</strong> mão até 8 cartas. Comprar é do baralho. Baralho vazio: embaralhe o descarte. Recurso esgotado: use outra coisa.</p>
+<p><strong>Fim:</strong> depois do outono, jogue até não poder ou não querer e passe. Pontos: base das cartas + fichas + bônus roxos + Jornada + Eventos. Empate: mais Eventos; depois, mais recursos sobrando.</p>
+</section>
+<section class="bloco sec" id="fontes"><h2><span class="num">9</span>Fontes</h2>
+<figure class="fig foto-sec caixa"><img src="fotos/capa-1.webp" alt="Everdell: a caixa" width="953" height="1015" loading="lazy" decoding="async"><figcaption>Imagem: Tabletop Tycoon</figcaption></figure>
+<ul><li>Galápagos. <em>Everdell: livro de regras</em> (edição brasileira, arquivo EVE001_regras_v2.0.pdf, 24 páginas, criado em 03/10/2023; tradução de Jana Pin; © 2018-2021 Tabletop Tycoon). Biblioteca de Downloads da Asmodee Brasil, <a href="https://www.asmodee.com.br/download-library">https://www.asmodee.com.br/download-library</a>, item "EVE001 - Everdell - SKU: EVE001", etiqueta Regras. Consultado em 05/11/2026.</li><li>Galápagos. <em>Errata oficial: Everdell</em> (arquivo EVE001_ERRATA_v2.0_10-23.pdf, 3 páginas, v2.0 de 10/2023). Mesma biblioteca, mesmo item, etiqueta Errata. Consultado em 05/11/2026.</li><li>Asmodee Brasil. Página do produto EVE001 (1 a 4 participantes, 14+, 60 a 120 min), <a href="https://www.asmodee.com.br/jogo-de-tabuleiro-everdell/produto/EVE001">https://www.asmodee.com.br/jogo-de-tabuleiro-everdell/produto/EVE001</a>. Consultado em 05/11/2026.</li><li>Tabletop Tycoon. <em>Everdell Core Game Rulebook</em> (original em inglês), consultado só para comparar a página de Eventos, <a href="https://tycoongames.com/products/everdell-standard-edition-3rd-edition">https://tycoongames.com/products/everdell-standard-edition-3rd-edition</a>. Consultado em 05/11/2026.</li></ul>
+</section>
+
+<p class="nota-pe">Regras conferidas no livro de regras da edição brasileira da Galápagos (Asmodee Brasil), arquivo EVE001_regras_v2.0, de 24 páginas, e na errata oficial v2.0 de outubro de 2023, as duas da Biblioteca de Downloads da Asmodee Brasil. As páginas citadas são as do livro de regras. Este guia ensina o jogo de 2 a 4 pessoas; o modo solo, contra o rato Ragurto, tem regras próprias nas p. 16 e 17.</p>
+</div></main>
+
+<!--rodape--><footer><div class="in">
+ <span>Elite Boardgamers</span><a href="../../noticias/">Notícias</a><a href="../../resenhas/">Resenhas</a><a href="../../como-jogar/">Como jogar</a><a href="../../lancamentos/">Lançamentos</a><a href="../../black/">Black de Verdade</a><a href="../../jogos-de-tabuleiro/">Guia de jogos de tabuleiro</a><a href="../../premios/">Prêmios</a><a href="../../politica-editorial/">Política editorial</a>
+ <a href="https://www.instagram.com/eliteboardgamers/" target="_blank" rel="noopener">Instagram @eliteboardgamers</a><a href="https://chat.whatsapp.com/IgQQkJdSkzHBaEq3UwFeAo" target="_blank" rel="noopener">Grupo do WhatsApp</a>
+</div></footer>
+<div class="barra-lt fora" role="region" aria-label="Ações da página"><div class="cpw" data-texto=""><a class="cp" href="https://wa.me/" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="M8.2 10.8l7.6-4.4M8.2 13.2l7.6 4.4"/></svg><span>Compartilhar</span></a><div class="cp-menu" hidden><a class="cp-op zap-op" href="https://wa.me/" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8.4 19l-4.4 1Z"/><path d="M9.2 8.6c.3-.5.8-.5 1-.1l.7 1.5c.1.3 0 .6-.2.8l-.4.4c.5 1.1 1.4 2 2.5 2.5l.4-.4c.2-.2.5-.3.8-.2l1.5.7c.4.2.4.7-.1 1-.7.5-1.6.6-2.4.3a7 7 0 0 1-4.2-4.2c-.3-.8-.2-1.7.4-2.3Z"/></svg>WhatsApp</a><button type="button" class="cp-op"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h8"/></svg>Copiar link</button></div><p class="cp-st" role="status"></p></div><script>(()=>{const pega=c=>({u:c.dataset.url||location.href,t:c.dataset.texto||document.title});
+document.querySelectorAll('.cpw:not(.ok)').forEach(c=>{c.classList.add('ok');const b=c.querySelector('.cp');
+ const n=document.createElement('button');n.type='button';n.className=b.className;n.innerHTML=b.innerHTML;n.setAttribute('aria-expanded','false');b.replaceWith(n)});
+if(window.__cp)return;window.__cp=1;
+const celular=()=>navigator.share&&matchMedia('(pointer:coarse)').matches;
+const fecha=()=>document.querySelectorAll('.cp-menu:not([hidden])').forEach(m=>{m.hidden=true;m.parentNode.querySelector('.cp').setAttribute('aria-expanded','false')});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')fecha()});
+document.addEventListener('click',async ev=>{const c=ev.target.closest('.cpw');if(!c){fecha();return}
+ const {u,t}=pega(c),m=c.querySelector('.cp-menu'),st=c.querySelector('.cp-st'),el=ev.target.closest('.cp,.cp-op');if(!el)return;
+ if(el.classList.contains('cp')){
+  if(celular()){try{await navigator.share({title:document.title,text:t,url:u})}catch(e){}return}
+  const abre=m.hidden;fecha();if(!abre)return;
+  m.querySelector('.zap-op').href='https://wa.me/?text='+encodeURIComponent(t+' '+u);
+  const r=c.getBoundingClientRect();m.classList.toggle('sobe',!!c.closest('.barra-lt')||r.bottom>innerHeight-140);m.classList.toggle('dir',r.left>innerWidth-220);
+  m.hidden=false;el.setAttribute('aria-expanded','true');m.querySelector('.cp-op').focus();return}
+ if(el.classList.contains('zap-op')){fecha();return}
+ fecha();let ok=false;try{await navigator.clipboard.writeText(u);ok=true}catch(e){
+  const i=document.createElement('input');i.value=u;document.body.append(i);i.select();try{ok=document.execCommand('copy')}catch(e2){}i.remove()}
+ st.textContent=ok?'Link copiado!':'Não deu para copiar o link.';clearTimeout(st._t);st._t=setTimeout(()=>st.textContent='',2500);
+ c.querySelector('.cp').focus()})})()</script><a class="lt-grupo" href="https://chat.whatsapp.com/IgQQkJdSkzHBaEq3UwFeAo" target="_blank" rel="noopener" aria-label="Entrar no grupo do WhatsApp da Elite"><img src="/favicon-48.png" width="48" height="48" alt=""><span>Grupo</span></a></div><script>(()=>{const l=document.querySelector('.barra-lt');if(!l)return;const vis=new Set();
+const poe=()=>{const on=scrollY>500&&!vis.size;l.classList.toggle('fora',!on);l.inert=!on;document.body.classList.toggle('lt-on',on)};
+const io=new IntersectionObserver(es=>{es.forEach(e=>e.isIntersecting?vis.add(e.target):vis.delete(e.target));poe()});
+document.querySelectorAll('.convite,footer').forEach(x=>io.observe(x));addEventListener('scroll',poe,{passive:true});poe()})()</script>
+<script>document.addEventListener('click',e=>{const b=e.target.closest('.q-op');if(!b||b.disabled)return;const q=b.closest('.quiz');
+q.querySelectorAll('.q-op').forEach(o=>{o.disabled=true;if(o.hasAttribute('data-ok'))o.classList.add('ok')});const ok=b.hasAttribute('data-ok');
+if(!ok)b.classList.add('erro');const x=q.querySelector('.q-exp');x.hidden=false;x.classList.toggle('mal',!ok);x.querySelector('.q-res').textContent=ok?'Isso!':'Não é essa.';});
+(()=>{const g=document.querySelector('.guia-prog');if(!g)return;const t=g.querySelector('.gp-t'),b=g.querySelector('.gp-b');
+const secs=[...document.querySelectorAll('.sec[id]')],idx=document.querySelector('.indice');
+const poe=()=>{const y=scrollY+innerHeight*.3;let at=null;for(const s of secs){if(s.offsetTop<=y)at=s}
+ t.textContent=at&&scrollY>idx.offsetTop?at.querySelector('h2').textContent.replace(/^\d+/,'').trim():'Neste guia';
+ const h=document.documentElement.scrollHeight-innerHeight;b.style.transform='scaleX('+(h>0?Math.min(1,scrollY/h):0)+')'};
+addEventListener('scroll',poe,{passive:true});addEventListener('resize',poe);poe()})();
+document.addEventListener('click',e=>{const y=e.target.closest('.yt');if(!y)return;const f=document.createElement('iframe');
+f.src='https://www.youtube-nocookie.com/embed/'+y.dataset.id+'?start='+y.dataset.t+'&autoplay=1&rel=0';f.title=y.getAttribute('aria-label');
+f.allow='autoplay; encrypted-media; picture-in-picture';f.allowFullscreen=true;y.replaceWith(f)});</script><!--/rodape-->
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "b37421bd1ade44f1a59e46b96626bf03"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

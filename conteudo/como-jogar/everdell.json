@@ -15,9 +15,9 @@
   "Local de círculo fechado aceita um só trabalhador; a mão nunca passa de 8 cartas, e a vila tem 15 espaços.",
   "Primavera, verão e outono trazem trabalhadores novos; depois do outono, cada um joga até passar a vez, e somam-se cartas, fichas, bônus, Jornada e Eventos."
  ],
- "leitura_min": 24,
+ "leitura_min": 25,
  "etapas": 4,
  "resenha": null,
  "chamada": "Mande trabalhadores pelo vale, junte gravetos, cristais, seixos e frutos e erga a vila mais rica antes do inverno. Começa com a mesa montada passo a passo e um resumo para jogar em 4 minutos, e segue em quatro etapas até a contagem final.",
- "publicar": false
+ "publicar": true
 }

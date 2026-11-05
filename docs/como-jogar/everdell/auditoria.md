@@ -84,3 +84,29 @@ Como no protocolo do PROMPT_PILOTO, seção 10: 5 a 8 adultos que nunca jogaram;
 ## 8. Ligação com a resenha
 
 Não há resenha de Everdell no site (`everdell/` e `conteudo/everdell.json` não existem). Se vier a existir, a resenha pode linkar "Como jogar" no bloco de como funciona, e o tutorial ganha `"resenha": "everdell"` no JSON.
+
+## Auditoria independente (05/11/2026)
+
+Duas auditorias independentes: conferência de regras contra o manual (aprovado com correções) e partida simulada só com o tutorial (joga com ajustes). Correções aplicadas no mesmo dia:
+
+**Conferência**
+- Os 8 locais básicos foram confirmados na ampliação da p. 8. O tipo de três deles (2 gravetos e 1 carta, 1 cristal e 1 carta, 1 fruto) vem só da ilustração; o tutorial diz isso na legenda da figura.
+- E1. Errata: o `[!edicao]` agora diz que duas correções mudam o jogo (carta de Floresta que compra 2 da Campina: joga-se 1 pagando 1 recurso a menos; Criatura gratuita do Escultor de Madeira vem da Despensa, não do Armazém).
+- S2. Tirado "de papelão" da tabela. S3. "A p. 5 mostra a árvore em quatro estágios de montagem, sem instruções escritas." S4. Trabalhadores sem dono, dado e carta de vitória marcados como dedução; o manual só manda guardar as cartas de Floresta e de Evento que sobram (p. 6); dado só no solo (p. 4). S5. "A preparação (p. 6) não dá recursos a ninguém."
+- M6. Regra de dar a quem passou, literal: "e todos os jogadores já tiverem passado a vez" (p. 14).
+- M7. "Quem começa" passou para o passo 12, antes das cartas (passo 13), com "ou sorteiem" marcado como conselho do guia; o Comece avisa o mesmo.
+- M8. A lacuna dos Eventos básicos virou `[!atencao]`, dizendo que as exigências estão impressas junto das peças no tabuleiro (Monumento do Vale, Festival da Colheita).
+- M9. `preparacao.webp`: apagados o bloco "Coloque aqui a pilha de descarte...", o "2" órfão da nota e o pedaço do número de página "7" (recorte até 1795 px na renderização de 200 dpi).
+
+**Partida simulada**
+- Custo, pontos, tipo e habilidade das cartas dos exemplos: Fazenda e Sapo Balseiro no resolvido da etapa 2 (p. 12, 15, 19 e 20, conferidos na ampliação da p. 15: Fazenda 1 ponto, Sapo Balseiro 2 frutos e 1 ponto); Tribunal e Juíza no complete (p. 10, 18 e 21), com "nada quando ele mesmo é jogado" para o Tribunal.
+- Legenda da figura da carta diz que o Tribunal é Singular.
+- Fichas de pontuação: "10 de 3 pontos e 20 de 1 ponto", como na p. 4, sem o total somado.
+- Carta de vitória: "deixe na caixa: o manual não lhe dá regra".
+- Legendas do Refúgio e da Jornada alinhadas (Refúgio à esquerda e Jornada à direita na figura da p. 9; na do tabuleiro, Jornada embaixo à esquerda e Refúgio embaixo à direita, que é a posição real).
+- Verão: "pegar até 2 das cartas abertas da Campina", com `[!mais]` dizendo que é a exceção à regra de comprar do baralho.
+- Introdução da montagem: cita o segundo espaço de Floresta com 4 jogadores e a mão pela ordem de jogo.
+- Definições na primeira menção: ficha de Ocupado (passo 4), Jornada e Refúgio (legenda do tabuleiro), Produção, Destino e Jornada ("Ainda não precisa saber"), ABERTO (passo a passo de Destino).
+- "1 trabalhador só, seja seu ou de outro." O "(5)" das legendas de baralho e Campina foi reescrito.
+
+**Portões depois das correções:** `checar_comece.py` aprovado (aviso só de "Jornada", nome do local na caixa); `vicios.py` no tutorial e no JSON: só "jornada"; travessão e meia-risca: 0; 23 perguntas renderizadas; leitura do essencial: cerca de 8 min. Extensão subiu para cerca de 6.470 palavras com letra (7.040 pelo `wc -w`), acima do teto de 6.000, por causa dos dados de carta e das definições pedidos pela partida simulada. `publicar` continua `false`.
