@@ -1,0 +1,58 @@
+{
+ "slug": "king-of-tokyo",
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 1362,
+   "altura": 1600,
+   "editora": "IELLO",
+   "credito": "Imagem: IELLO · edição francesa",
+   "pagina": "https://iello.fr/jeux/king-of-tokyo/",
+   "imagem": "https://iello.fr/wp-content/uploads/2016/10/KOT_Mockup-2019_FR_Light.png",
+   "baixada_em": "2026-11-05",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/mesa-1.webp",
+   "tipo": "mesa",
+   "largura": 1600,
+   "altura": 1067,
+   "editora": "IELLO",
+   "credito": "Imagem: IELLO · edição francesa",
+   "pagina": "https://iello.fr/jeux/king-of-tokyo/",
+   "imagem": "https://iello.fr/wp-content/uploads/2016/10/King-of-Tokyo-7.jpg",
+   "baixada_em": "2026-11-05",
+   "aprovada": true,
+   "render_3d": false,
+   "partida_em_andamento": false
+  },
+  {
+   "arquivo": "fotos/jogabilidade-1.webp",
+   "tipo": "jogabilidade",
+   "largura": 1600,
+   "altura": 1067,
+   "editora": "IELLO",
+   "credito": "Imagem: IELLO · edição francesa",
+   "pagina": "https://iello.fr/jeux/king-of-tokyo/",
+   "imagem": "https://iello.fr/wp-content/uploads/2016/10/King-of-Tokyo-25.jpg",
+   "baixada_em": "2026-11-05",
+   "aprovada": true,
+   "render_3d": false
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 1600,
+   "altura": 1067,
+   "editora": "IELLO",
+   "credito": "Imagem: IELLO · edição francesa",
+   "pagina": "https://iello.fr/jeux/king-of-tokyo/",
+   "imagem": "https://iello.fr/wp-content/uploads/2016/10/King-of-Tokyo-8.jpg",
+   "baixada_em": "2026-11-05",
+   "aprovada": true,
+   "render_3d": false,
+   "texto": true
+  }
+ ]
+}

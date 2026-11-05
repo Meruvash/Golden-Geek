@@ -16,15 +16,15 @@ A montagem segue a página de preparação do manual (p. 3), na mesma ordem. O j
 | Fichas de Conflito Militar: Derrota / Vitória | 24 / 24 (8 de Vitória por Era) |
 | Caderneta de pontuação | 1 |
 | Cartilhas de Descrição de Efeitos | 3 |
-| Lista de cartas e encadeamentos | 1 |
+| Lista de cartas e encadeamentos (folha de referência com todas as cartas e os encadeamentos) | 1 |
 
 !fig[Uma carta de Era, frente e verso. Na frente: o nome (Escola), o efeito (aqui, um símbolo de ciência), a zona de custo à esquerda, os símbolos de encadeamento à direita, o símbolo para daltônicos no alto e, no rodapé, o número mínimo de jogadores (3+). No verso: a Era (II) e a direção para passar as cartas. Ilustração: manual Repos Production (p. 2)](figuras/setup-cartas.webp)
 
 1. **Separe as cartas de Era em três baralhos: Era I, Era II e Era III.** O verso de cada carta mostra a Era em algarismo romano (p. 2 e 3).
 2. **Em cada baralho, fique só com as cartas do seu número de jogadores.** No rodapé da frente, cada carta mostra o número mínimo de jogadores: 3+, 4+, até 7+. Fique com as cartas cujo número é menor ou igual ao de jogadores na mesa e devolva as outras à caixa. Com 5 jogadores, por exemplo, ficam as de 3+, 4+ e 5+ (p. 3).
-3. **No baralho da Era III, separe todas as cartas Roxas.** Sorteie, sem olhar, o número de jogadores mais 2 e junte essas cartas, viradas para baixo, ao resto da Era III. As outras Roxas voltam à caixa. Com 5 jogadores, são 7 Roxas (p. 3).
+3. **No baralho da Era III, separe todas as cartas Roxas, as Guildas.** São 10, todas marcadas 3+, por isso nenhuma sai no passo 2 (Lista de cartas e encadeamentos, versão oficial em inglês). Sorteie, sem olhar, o número de jogadores mais 2 e junte essas cartas, viradas para baixo, ao resto da Era III. As outras Roxas voltam à caixa. Com 5 jogadores, são 7 Roxas (p. 3).
 4. **Embaralhe cada um dos três baralhos e ponha-os virados para baixo no centro da mesa** (p. 3). Deixe ao lado um espaço para a pilha de descarte, que começa vazia (figura da p. 3).
-5. **Cada jogador pega um tabuleiro de Maravilha ao acaso, põe à sua frente e escolhe o lado: Dia ou Noite** (p. 3). Nas primeiras partidas, o manual recomenda o lado do Dia para todos. Se o grupo preferir, cada um escolhe o seu tabuleiro em vez de sortear (p. 3).
+5. **Cada jogador pega um tabuleiro de Maravilha ao acaso, põe à sua frente e escolhe o lado: Dia ou Noite** (p. 3). Nas primeiras partidas, o manual recomenda o lado do Dia para todos. O manual não diz como sortear, só que o tabuleiro é aleatório; se o grupo preferir, cada um escolhe o seu (p. 3). No canto de cima, o tabuleiro mostra o **recurso inicial**: um recurso que a sua cidade produz desde o começo (p. 2).
 
 !fig[O tabuleiro de Alexandria, lado do Dia. No canto de cima, o recurso inicial; no alto à direita, o nome e o sinal de lado; embaixo, os três estágios da construção, cada um com o custo à esquerda e o efeito à direita. Ilustração: manual Repos Production (p. 2)](figuras/setup-maravilha.webp)
 
@@ -32,12 +32,14 @@ A montagem segue a página de preparação do manual (p. 3), na mesma ordem. O j
 
 !fig[As duas Moedas: valor 1 (prata) e valor 3 (ouro). Ilustração: manual Repos Production (p. 2)](figuras/setup-moedas.webp)
 
+As Moedas contam pelo valor: quando o manual diz "x Moedas", é o valor total, em Moedas de 1 ou de 3 (p. 2).
+
 7. **Ponha todas as fichas de Conflito Militar no centro da mesa**, formando a reserva de fichas (p. 3).
 
 !fig[As fichas de Conflito Militar: Derrota (-1) e as Vitórias da Era I (+1), da Era II (+3) e da Era III (+5). Ilustração: manual Repos Production (p. 2)](figuras/setup-fichas.webp)
 
 8. **Devolva à caixa os tabuleiros que sobraram** e o resto do material que não entrou na mesa (p. 3). Deixe à mão a caderneta de pontuação e as cartilhas de Descrição de Efeitos: o manual as usa na contagem final (p. 8).
-9. **Ninguém começa.** Em 7 Wonders todos jogam ao mesmo tempo, então não há primeiro jogador nem ordem de turno (p. 4).
+9. **Ninguém começa.** Em 7 Wonders todos jogam ao mesmo tempo, então não há primeiro jogador nem ordem de turno (p. 4). Na primeira partida, o manual recomenda que os jogadores revelem e joguem um após o outro, para se familiarizar com o jogo (p. 4). Seus **vizinhos** são o jogador logo à sua esquerda e o logo à sua direita; com 3 jogadores, são os outros dois (p. 4).
 10. **Para começar a Era I, distribua 7 cartas da Era I para cada jogador**, viradas para baixo. É a mão inicial (p. 4).
 
 !fig[A mesa montada para 5 jogadores: no centro, os três baralhos de Era (1), a reserva de fichas de Conflito Militar (4), a reserva de Moedas (3) e o lugar do descarte; à sua frente, a sua Maravilha (2) com o seu Tesouro de 3 Moedas (3); dos lados, os vizinhos da esquerda e da direita. Ilustração: manual Repos Production (p. 3)](figuras/setup-mesa.webp)
@@ -54,7 +56,7 @@ A montagem segue a página de preparação do manual (p. 3), na mesma ordem. O j
 
 Voltam para a caixa: as cartas de Era acima do número de jogadores, as Roxas não sorteadas e os tabuleiros sem dono. Não mudam: as 7 cartas na mão, as 3 Moedas iniciais e as fichas.
 
-**Antes de começar, confira:** três baralhos, só com as cartas do seu número de jogadores; Roxas sorteadas (jogadores mais 2) dentro da Era III; um tabuleiro e 3 Moedas na frente de cada um; reservas de Moedas e de fichas no centro; espaço para o descarte; 7 cartas da Era I na mão de cada um.
+**Antes de começar, confira:** três baralhos, só com as cartas do seu número de jogadores, cada um com 7 cartas por jogador (21 com 3 jogadores, 49 com 7); Roxas sorteadas (jogadores mais 2) dentro da Era III; um tabuleiro e 3 Moedas na frente de cada um; reservas de Moedas e de fichas no centro; espaço para o descarte; 7 cartas da Era I na mão de cada um.
 
 ?? Partida de 4 jogadores. Quantas cartas Roxas entram no baralho da Era III?
 - ( ) 4
@@ -99,7 +101,7 @@ Algumas cartas são grátis: a zona de custo, no canto esquerdo, vem vazia. E o 
 
 > [!resolvido] **Exemplo resolvido.** Na sua mão da Era I, uma carta tem a zona de custo vazia: é grátis (p. 6). Você a escolhe, todos revelam, e você a constrói acima do tabuleiro. Suas outras 6 cartas vão para o vizinho da esquerda; as 6 do vizinho da direita vêm para você.
 
-> [!complete] **Complete.** No turno seguinte, nenhuma das 6 cartas que você recebeu pode ser paga com o que a sua cidade tem, e você não quer comprar nada dos vizinhos.
+> [!complete] **Complete.** No turno seguinte, nenhuma das 6 cartas que você recebeu pode ser paga com o que a sua cidade tem, você não quer comprar nada dos vizinhos, e o estágio também não cabe no seu Tesouro.
 >
 > ?? O que você ainda pode fazer com uma delas?
 > - ( ) Nada: você passa o turno sem jogar carta
@@ -127,13 +129,13 @@ Cada Era tem 6 turnos; no sexto, você recebe 2 cartas, joga uma e descarta a ou
 
 !video[7 Wonders - Como Jogar, canal Romir Play House](https://www.youtube.com/watch?v=G81fQ5WhJuE&t=0s)
 
-> [!atencao] **Os três erros mais caros.** Você nunca pode ter duas cartas com o mesmo nome na sua cidade. Recurso não se gasta: o que a sua cidade produz serve de novo em todo turno. E dos vizinhos só se compra o que as cartas Marrons, as Cinzas e o recurso inicial produzem, a 2 Moedas cada, pagas a eles.
+> [!atencao] **Os três erros mais caros.** Você nunca pode ter duas cartas com o mesmo nome na sua cidade. Recurso não se gasta: o que a sua cidade produz serve de novo em todo turno. E dos vizinhos só se compra o que as cartas Marrons, as Cinzas e o recurso inicial produzem, a 2 Moedas cada (1 Moeda com efeito de comércio), pagas a eles.
 
 ## 0. Antes de tudo: o que é este jogo
 
 Você é o líder de uma das sete grandes cidades da Antiguidade, cada uma com a sua Maravilha. Em três Eras, constrói Estruturas que produzem recursos, fazem comércio, armam o exército, avançam a ciência e rendem prestígio. Vence quem tiver a cidade com mais pontos de vitória depois da Era III (p. 1).
 
-O que dá o ritmo ao jogo é a mão que circula. Ninguém compra cartas de um baralho no seu turno: você recebe uma mão, fica com uma carta e entrega o resto. A carta que você deixa passar vai parar na mão do vizinho, e a que ele deixou passar chega na sua. Com isso, todos jogam ao mesmo tempo (p. 4 e 5), e ninguém fica esperando a vez, seja com 3 ou com 7 pessoas (página do jogo na Repos).
+O que dá o ritmo ao jogo é a mão que circula. Ninguém compra cartas de um baralho no seu turno: você recebe uma mão, fica com uma carta e entrega o resto. A carta que você deixa passar vai parar na mão do vizinho, e a que ele deixou passar chega na sua. Com isso, todos jogam ao mesmo tempo (p. 4 e 5); o jogo é para 3 a 7 pessoas (página do jogo na Repos).
 
 Duas ideias sustentam o resto:
 
@@ -162,7 +164,7 @@ Três etapas, cada uma uma parte real da partida: jogar um turno, pagar o que se
 
 > [!passos] **Passo a passo: as três ações** (p. 4)
 >
-> 1. **Construir a Estrutura.** Pague o custo da carta (etapa 2) e ponha a carta virada para cima acima do seu tabuleiro. Ela fica na sua cidade até o fim do jogo. Empilhe as cartas da mesma cor, deixando os efeitos à vista, e as que dão recursos sobre o lado do recurso inicial.
+> 1. **Construir a Estrutura.** Pague o custo da carta (etapa 2) e ponha a carta virada para cima acima do seu tabuleiro. Ela fica na sua cidade até o fim do jogo. Empilhe as cartas da mesma cor, deixando os efeitos à vista, e as de recurso em cima do recurso inicial (p. 4).
 > 2. **Construir um estágio da Maravilha.** Pague só o custo impresso no tabuleiro, embaixo do próximo estágio. Ponha a carta virada para baixo sob o tabuleiro, metade escondida por esse estágio. O efeito do estágio vale até o fim do jogo. Qualquer carta serve, e ela não tem outro uso.
 > 3. **Vender a carta.** Ponha a carta virada para baixo na pilha de descarte, no centro, e pegue 3 Moedas da reserva para o seu Tesouro.
 
@@ -229,7 +231,7 @@ Três etapas, cada uma uma parte real da partida: jogar um turno, pagar o que se
 > [!passos] **Passo a passo: os quatro tipos de custo** (p. 6 e 7)
 >
 > 1. **Sem custo.** Zona de custo vazia: a carta é grátis.
-> 2. **Custo em Moedas.** A carta mostra 1 Moeda: tire 1 Moeda do seu Tesouro e devolva à reserva.
+> 2. **Custo em Moedas.** A carta mostra 1 Moeda: tire 1 Moeda do seu Tesouro e devolva à reserva. O manual só fala em cartas que custam 1 Moeda e não mostra carta que peça Moedas e recursos juntos.
 > 3. **Custo em recursos.** A carta ou o estágio mostra os recursos pedidos. Pague com o que a sua cidade produz e, se faltar, compre dos vizinhos.
 > 4. **Encadeamento.** A partir da Era II, se você já construiu uma carta com o mesmo símbolo de encadeamento no canto superior direito, constrói esta de graça.
 
@@ -258,12 +260,12 @@ Três etapas, cada uma uma parte real da partida: jogar um turno, pagar o que se
 
 > [!mais] **Ninguém bloqueia.** Você não pode impedir que um vizinho compre os seus recursos, e os dois vizinhos podem comprar o mesmo recurso seu no mesmo turno (p. 7).
 
-> [!mais] **Comércio mais barato.** Alguns efeitos baixam o preço da compra para 1 Moeda: um vale para os recursos comuns (Argila, Pedra, Minério e Madeira) do vizinho indicado pela seta; outro, para os recursos raros (Vidro, Tecido e Papiro) dos dois vizinhos. A carta mostra o símbolo, e a cartilha de Descrição de Efeitos o explica.
+> [!mais] **Comércio mais barato.** Alguns efeitos baixam o preço da compra para 1 Moeda: um vale para os recursos comuns (Argila, Pedra, Minério e Madeira) do vizinho para o qual aponta a seta desenhada no símbolo (para a esquerda ou para a direita); outro, para os recursos raros (Vidro, Tecido e Papiro) dos dois vizinhos (cartilha de efeitos oficial em inglês, *Description of Effects*, Repos 2023; a cartilha em português não foi consultada).
 
 > [!passos] **Passo a passo: encadeamento** (p. 7)
 >
-> 1. Olhe o canto superior direito da sua cidade: as cartas construídas podem ter um símbolo de encadeamento.
-> 2. Se a carta que você quer construir (das Eras II ou III) mostra, ao lado da zona de custo, o mesmo símbolo, ela sai de graça.
+> 1. Olhe o canto superior direito das cartas da sua cidade: é ali que fica o símbolo que a carta libera.
+> 2. Na carta que você quer construir (das Eras II ou III), o símbolo exigido fica junto à zona de custo. Se ele é igual ao de uma carta da sua cidade, ela sai de graça.
 > 3. Sem o símbolo, você ainda pode construí-la pagando o custo em recursos.
 > 4. Algumas cartas têm dois símbolos no canto superior direito e servem a dois encadeamentos.
 
@@ -304,7 +306,7 @@ Três etapas, cada uma uma parte real da partida: jogar um turno, pagar o que se
 > - ( ) Sim, por 2 Moedas, porque é a mesma carta
 > = Esse símbolo rende só 1 Madeira para você por turno. A segunda teria de vir de outro símbolo, do mesmo vizinho ou do outro (p. 7).
 
-> [!treino] **Treino rápido: dá para construir?** Sua cidade produz 1 Pedra (recurso inicial), 1 Argila e 1 Vidro. Tesouro: 4 Moedas. O vizinho da esquerda tem Madeira numa carta Marrom; o da direita, Papiro numa carta Cinza.
+> [!treino] **Treino rápido: dá para construir?** Sua cidade produz 1 Pedra (recurso inicial), 1 Argila e 1 Vidro. Tesouro: 4 Moedas. O vizinho da esquerda tem Madeira numa carta Marrom; o da direita, Papiro numa carta Cinza, e nenhum dos dois tem outro recurso à venda (nem no recurso inicial).
 >
 > ?? a) Carta que custa 1 Pedra e 1 Vidro.
 > - (x) Sim, sem gastar Moedas
@@ -332,7 +334,7 @@ Três etapas, cada uma uma parte real da partida: jogar um turno, pagar o que se
 
 > [!passos] **Passo a passo: Resolução de Conflitos Militares** (p. 5). No fim de cada Era, depois do sexto turno.
 >
-> 1. Conte os símbolos militares (as espadas cruzadas) nas cartas que você construiu e no seu tabuleiro, se algum estágio construído os tiver. Essa é a sua força militar.
+> 1. Conte os símbolos militares (duas espadas cruzadas sobre um escudo redondo) nas cartas que você construiu e no seu tabuleiro, se algum estágio construído os tiver. Essa é a sua força militar.
 > 2. Compare com o vizinho da esquerda e, depois, com o da direita.
 > 3. Força igual: ninguém pega ficha.
 > 4. Força menor: pegue uma ficha de Derrota (-1).
@@ -373,9 +375,9 @@ Três etapas, cada uma uma parte real da partida: jogar um turno, pagar o que se
 
 > [!edicao] O manual em português não dá nome aos três símbolos de ciência: mostra só o desenho de cada um. Este guia os chama de "tipos" e, nos exemplos, de A, B e C.
 
-> [!mais] **Pontos das Amarelas e das Roxas.** O valor depende do efeito de cada carta, e a cartilha de Descrição de Efeitos explica cada símbolo. Entre os efeitos da cartilha há pontos por carta de certa cor na sua cidade ou na dos vizinhos e pontos por estágio de Maravilha construído (p. 8; cartilha de Descrição de Efeitos).
+> [!mais] **Pontos das Amarelas e das Roxas.** O valor depende do efeito de cada carta, e a cartilha de Descrição de Efeitos explica cada símbolo. Entre os efeitos da cartilha há pontos por carta de certa cor na sua cidade ou na dos vizinhos e pontos por estágio de Maravilha construído (p. 8; cartilha de efeitos oficial em inglês, *Description of Effects*, Repos 2023; a cartilha em português não foi consultada)
 
-> [!mais] **Efeitos de estágio.** Alguns estágios fazem mais que dar pontos ou recursos: há os que deixam jogar a carta que seria descartada no sexto turno, construir de graça uma carta do descarte, ou construir de graça a primeira ou a última carta de cada Era. Cada efeito está na cartilha de Descrição de Efeitos.
+> [!mais] **Efeitos de estágio.** Alguns estágios fazem mais que dar pontos ou recursos: há os que deixam jogar a carta que seria descartada no sexto turno, construir de graça uma carta do descarte, ou construir de graça a primeira ou a última carta de cada Era. Cada efeito está explicado na cartilha (cartilha de efeitos oficial em inglês, *Description of Effects*, Repos 2023; a cartilha em português não foi consultada).
 
 !fig[A pontuação de Alex no manual: Maravilha 10, Tesouro 3 (3 conjuntos de 3 Moedas), Conflitos 6, Azuis 9, Amarelas 2, Verdes 21 e Roxas 4, total 55. Nas Verdes, 3 símbolos iguais dão 9, 2 iguais dão 4, 1 dá 1 e um trio de diferentes dá 7. Ilustração: manual Repos Production (p. 8)](figuras/pontuacao.webp)
 
