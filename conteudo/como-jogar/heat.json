@@ -1,0 +1,23 @@
+{
+ "slug": "heat",
+ "titulo": "Como jogar Heat: Pedal to the Metal",
+ "jogo": "Heat: Pedal to the Metal",
+ "genero": "Corrida · Gestão de mão",
+ "jogadores": "1 a 6 jogadores",
+ "duracao": "60 min",
+ "idade": "10+",
+ "edicao": "Manual oficial em inglês (Days of Wonder)",
+ "data": "2026-11-05",
+ "descricao": "Regras de Heat: Pedal to the Metal passo a passo, conferidas no manual oficial: marchas, cartas, curvas, calor, rodopio, vácuo e chegada.",
+ "resumo": "Você escolhe a marcha, joga cartas que somam a velocidade do carro e paga calor do motor quando passa rápido demais nas curvas; vence quem cruzar primeiro a linha de chegada.",
+ "pontos": [
+  "A marcha diz quantas cartas você joga; a soma delas é a velocidade, e o carro anda exatamente esse número de casas.",
+  "Passar uma curva acima do limite custa uma carta de calor do motor por ponto de excesso; sem calor, o carro roda e cai para a 1ª marcha.",
+  "Resfriamento, turbo, vácuo e adrenalina ajudam a controlar o calor e ganhar posição; vence quem cruzar primeiro a chegada depois das voltas."
+ ],
+ "leitura_min": 0,
+ "etapas": 3,
+ "resenha": "heat-pedal-to-the-metal",
+ "chamada": "Escolha a marcha, some as cartas e decida quanto calor gastar em cada curva. Começa com a mesa montada passo a passo e um resumo para jogar em 4 minutos, e segue em três etapas, da reta à linha de chegada.",
+ "publicar": false
+}

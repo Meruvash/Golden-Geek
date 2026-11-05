@@ -2304,5 +2304,55 @@
   "paginas": {},
   "status": "bloqueado",
   "obs": "403 em https://ravensburger.us"
+ },
+ "starling.games": {
+  "nome": "Starling Games",
+  "apelidos": [
+   "Starling Games"
+  ],
+  "site": "https://www.starling.games",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "erro",
+  "obs": "404 em https://www.starling.games"
+ },
+ "everdell.com": {
+  "nome": "Starling Games",
+  "apelidos": [
+   "Starling Games"
+  ],
+  "site": "https://everdell.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "erro",
+  "obs": "robots.txt de https://everdell.com inacessível (erro de rede); tente mais tarde"
+ },
+ "tycoongames.com": {
+  "nome": "Tabletop Tycoon",
+  "apelidos": [
+   "Starling Games",
+   "Tabletop Tycoon"
+  ],
+  "site": "https://tycoongames.com",
+  "plataforma": "shopify",
+  "estrategia": "sitemap+shopify_json",
+  "press_kit": "https://tycoongames.com/pages/media-application",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://tycoongames.com/sitemap.xml",
+    "https://tycoongames.com/sitemap.xml",
+    "https://tycoongames.com/sitemap.xml"
+   ],
+   "verificado_em": "2026-11-05"
+  }
  }
 }

@@ -1,0 +1,71 @@
+{
+ "slug": "everdell",
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 953,
+   "altura": 1015,
+   "editora": "Tabletop Tycoon",
+   "credito": "Imagem: Tabletop Tycoon",
+   "pagina": "https://tycoongames.com/products/everdell-standard-edition-3rd-edition",
+   "imagem": "https://cdn.shopify.com/s/files/1/0559/8245/6947/files/Everdell-Standard-3rdEd-_01.jpg",
+   "baixada_em": "2026-11-05",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/mesa-1.webp",
+   "tipo": "mesa",
+   "largura": 1500,
+   "altura": 1500,
+   "editora": "Tabletop Tycoon",
+   "credito": "Imagem: Tabletop Tycoon",
+   "pagina": "https://tycoongames.com/products/everdell-standard-edition-3rd-edition",
+   "imagem": "https://cdn.shopify.com/s/files/1/0559/8245/6947/files/Everdell-Standard-3rdEd-_03.jpg",
+   "baixada_em": "2026-11-05",
+   "aprovada": true,
+   "render_3d": true,
+   "nota": "partida em andamento"
+  },
+  {
+   "arquivo": "fotos/jogabilidade-1.webp",
+   "tipo": "jogabilidade",
+   "largura": 1500,
+   "altura": 1126,
+   "editora": "Tabletop Tycoon",
+   "credito": "Imagem: Tabletop Tycoon",
+   "pagina": "https://tycoongames.com/products/everdell-standard-edition-3rd-edition",
+   "imagem": "https://cdn.shopify.com/s/files/1/0559/8245/6947/files/Everdell-Standard-3rdEd-_06.jpg",
+   "baixada_em": "2026-11-05",
+   "aprovada": true,
+   "nota": "partida em andamento"
+  },
+  {
+   "arquivo": "fotos/jogabilidade-2.webp",
+   "tipo": "jogabilidade",
+   "largura": 1260,
+   "altura": 841,
+   "editora": "Tabletop Tycoon",
+   "credito": "Imagem: Tabletop Tycoon",
+   "pagina": "https://tycoongames.com/products/everdell-standard-edition-3rd-edition",
+   "imagem": "https://cdn.shopify.com/s/files/1/0559/8245/6947/files/TCG_260615_ProductShoot_Game01_Small-3.webp",
+   "baixada_em": "2026-11-05",
+   "aprovada": true,
+   "nota": "partida em andamento",
+   "pessoas": true
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 1500,
+   "altura": 1000,
+   "editora": "Tabletop Tycoon",
+   "credito": "Imagem: Tabletop Tycoon",
+   "pagina": "https://tycoongames.com/products/everdell-standard-edition-3rd-edition",
+   "imagem": "https://cdn.shopify.com/s/files/1/0559/8245/6947/files/Everdell-Standard-3rdEd-_07.jpg",
+   "baixada_em": "2026-11-05",
+   "aprovada": true,
+   "nota": "partida em andamento"
+  }
+ ]
+}

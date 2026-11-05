@@ -1,0 +1,44 @@
+{
+ "slug": "7-wonders",
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 1435,
+   "altura": 1600,
+   "editora": "Repos Production",
+   "credito": "Imagem: Repos Production (kit de imprensa)",
+   "pagina": "https://cdn.svc.asmodee.net/production-rprod/storage/downloads/games/7wonders/press/sev-press-kit-en-1610369806FCwe2.zip",
+   "imagem": "https://cdn.svc.asmodee.net/production-rprod/storage/downloads/games/7wonders/press/sev-press-kit-en-1610369806FCwe2.zip#SEV_BOX3D_right.png",
+   "baixada_em": "2026-11-05",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/mesa-1.webp",
+   "tipo": "mesa",
+   "largura": 1600,
+   "altura": 1280,
+   "editora": "Repos Production",
+   "credito": "Imagem: Repos Production (kit de imprensa)",
+   "pagina": "https://cdn.svc.asmodee.net/production-rprod/storage/downloads/games/7wonders/press/sev-press-kit-en-1610369806FCwe2.zip",
+   "imagem": "https://cdn.svc.asmodee.net/production-rprod/storage/downloads/games/7wonders/press/sev-press-kit-en-1610369806FCwe2.zip#SEV_eclate_left.png",
+   "baixada_em": "2026-11-05",
+   "aprovada": true,
+   "render_3d": true,
+   "partida_em_andamento": false
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 1600,
+   "altura": 768,
+   "editora": "Repos Production",
+   "credito": "Imagem: Repos Production (kit de imprensa)",
+   "pagina": "https://cdn.svc.asmodee.net/production-rprod/storage/downloads/games/7wonders/press/sev-press-kit-en-1610369806FCwe2.zip",
+   "imagem": "https://cdn.svc.asmodee.net/production-rprod/storage/downloads/games/7wonders/press/sev-press-kit-en-1610369806FCwe2.zip#SEV_eclate_full.png",
+   "baixada_em": "2026-11-05",
+   "aprovada": true,
+   "render_3d": true
+  }
+ ]
+}
