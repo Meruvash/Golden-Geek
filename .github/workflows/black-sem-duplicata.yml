@@ -1,0 +1,45 @@
+# Conserta a página do Black quando ela chega à main com cartão repetido (05/11/2026: dois robôs publicando juntos e a
+# junção do git, que é por linha, repetia cartões). Roda a cada publicação da página; se tools/duplicatas.py acusar,
+# refaz a página a partir dos dados (tools/black/radar.py pagina) e publica. O push feito com o GITHUB_TOKEN não
+# dispara este workflow de novo, então não entra em laço.
+name: "Black: página sem duplicata"
+
+on:
+  push:
+    branches: [main]
+    paths: [black/index.html]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: black-sem-duplicata
+  cancel-in-progress: true
+
+jobs:
+  conserta:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - run: pip install requests Pillow beautifulsoup4 lxml feedparser price-parser protego
+      - name: Confere e, se preciso, refaz a página
+        run: |
+          git config user.name "Radar Black (Elite Boardgamers)"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for i in 1 2 3 4 5; do
+            git pull -q --rebase -X theirs origin main || { git rebase --abort 2>/dev/null; git fetch -q origin main; git reset -q --hard origin/main; }
+            if python3 tools/duplicatas.py; then echo "página sem duplicata"; exit 0; fi
+            python3 tools/black/radar.py pagina
+            python3 tools/duplicatas.py || { echo "::error::a página refeita ainda tem duplicata: o erro é no gerador"; exit 1; }
+            git add black img/black conteudo/black/novidades.json
+            git diff --cached --quiet && exit 0
+            git commit -q -m "Black: página refeita sem cartão repetido (conserto automático)"
+            git push -q origin HEAD:main && exit 0
+            sleep $((i * 15))
+          done
+          exit 1
