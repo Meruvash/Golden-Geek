@@ -487,6 +487,8 @@ def build(radar_itens, armadilhas, quase=(), outras=()):
     # primeiro quem tem hora exata de entrada (mais nova primeiro); depois, o preço conferido mais recentemente
     exata = lambda v: v if v and len(v) > 10 else ""
     ordem = sorted(todos_g, key=lambda sl: (exata(entrou[sl]), str(todos_g[sl][0].get("verificado") or "")), reverse=True)
+    # regra do usuário (05/11/2026): em Últimas novidades só entra jogo com foto (o cartão sem foto vira ilustração)
+    ordem = [sl for sl in ordem if capa(todos_g[sl][0], pre, 640)]
     top = [todos_g[sl][0] for sl in ordem[:N_NOVIDADES]]
 
     # Listas na ordem do usuário (04/11/2026): os mais recentes em cima, os mais antigos embaixo e, a cada
