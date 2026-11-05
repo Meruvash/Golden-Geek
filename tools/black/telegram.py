@@ -54,26 +54,65 @@ ENCURTADORES = re.compile(r"(?i)ccnl\.app|bit\.ly|tinyurl|cutt\.ly|is\.gd|t\.co\
 # Links de afiliado de quem postou NUNCA são guardados nem publicados (pedido do usuário em 05/11/2026: pelas regras da
 # Amazon, divulgar a tag de outro afiliado pode causar problema para ele). Encurtador de afiliado vira None (o robô
 # usa o link da loja que o Compara Jogos lista para o jogo) e link comum perde tag, ref e parâmetros de rastreio.
-AFILIADO = re.compile(r"(?i)amzn\.to|a\.co/|link\.amazon|amzlinks|amazon\.[a-z.]+/.*[?&]tag=|meli\.la|mercadolivre\.com/sec|"
+AFILIADO = re.compile(r"(?i)amzn\.to|amzlink\.|a\.co/|link\.amazon|amzlinks|amazon\.[a-z.]+/.*[?&]tag=|meli\.la|mercadoli[vb]re\.com(\.br)?/(sec|social)/|"
                       r"shope\.ee|s\.shopee|tidd\.ly|lmd\.ink|onelink|awin1|redir\.lomadee|tracking|clk\.|afiliad")
 RASTREIO = re.compile(r"(?i)^(utm_.*|tag|ref|ref_|linkcode|ascsubtag|camp.*|creative.*|afil.*|aff.*|partner.*|matt_.*|"
                       r"source|fbclid|gclid|psc|smid|th|sr|qid|keywords|pd_rd_.*|pf_rd_.*|content-id|spm|clickid|sca_.*|mkt_.*)$")
 
 
+# Só vira link de loja o que é de uma loja que conhecemos (05/11/2026: um amzlink.to e um mercadolivre.com/sec/, os
+# dois de afiliado, passaram pela lista de bloqueio). Qualquer outro endereço (encurtador novo, canal, rede social) cai.
+MARKETPLACES = ("amazon.com.br", "mercadolivre.com.br", "magazineluiza.com.br", "americanas.com.br", "casasbahia.com.br",
+                "shopee.com.br", "aliexpress.com", "comparajogos.com.br", "submarino.com.br", "kabum.com.br")
+
+
+def _dominios_de_loja():
+    doms = set(MARKETPLACES)
+    try:
+        of = json.loads((ROOT / "conteudo" / "black" / "ofertas.json").read_text(encoding="utf-8"))
+    except (FileNotFoundError, ValueError):
+        return doms
+    for v in of.values():
+        for o in v.get("ofertas", []):
+            for k in ("link", "url"):
+                h = urlparse(o.get(k) or "").netloc.lower()
+                if h:
+                    doms.add(h.removeprefix("www."))
+    return doms
+
+
+_DOMS = None
+
+
+def loja_conhecida(host):
+    global _DOMS
+    if _DOMS is None:
+        _DOMS = _dominios_de_loja()
+    h = (host or "").lower().split(":")[0].removeprefix("www.")
+    return any(h == d or h.endswith("." + d) for d in _DOMS)
+
+
 def link_seguro(url):
-    """Link da loja sem afiliado de ninguém: encurtador ou link de afiliado → None; senão, sem parâmetros de rastreio."""
+    """Link da loja sem afiliado de ninguém: encurtador, link de afiliado ou site que não é loja conhecida → None;
+    Amazon vira amazon.com.br/dp/<ASIN>; nos outros, saem os parâmetros de rastreio."""
     from urllib.parse import urlsplit, urlunsplit, parse_qsl, urlencode
-    if not url or ENCURTADORES.search(url) or re.search(r"(?i)amzn\.to|a\.co/|link\.amazon|amzlinks|meli\.la|shope\.ee|s\.shopee|tidd\.ly|lmd\.ink|onelink|awin1|lomadee", url):
+    if not url:
         return None
-    m = re.search(r"amazon\.com\.br/(?:[^/?]+/)?(?:dp|gp/product)/([A-Z0-9]{10})", url)
-    if m:
+    m = re.match(r"(?i)https?://(?:www\.)?amazon\.com\.br/(?:[^?#]*/)?(?:dp|gp/product)/([A-Z0-9]{10})", url)
+    if m:  # página do produto na Amazon: fica só o ASIN, sem tag nem nada do afiliado
         return f"https://www.amazon.com.br/dp/{m.group(1)}"
+    if ENCURTADORES.search(url) or AFILIADO.search(url):
+        return None
     try:
         u = urlsplit(url)
     except ValueError:
         return None
+    if u.scheme not in ("http", "https") or not loja_conhecida(u.netloc):
+        return None
+    if "amazon." in u.netloc.lower():
+        return None  # Amazon sem página de produto (vitrine, /shop/ de influenciador etc.): fora
     q = [(k, v) for k, v in parse_qsl(u.query, keep_blank_values=True) if not RASTREIO.match(k)]
-    return urlunsplit((u.scheme, u.netloc, u.path, urlencode(q), ""))
+    return urlunsplit(("https", u.netloc, u.path, urlencode(q), ""))
 
 
 def _lojas_conhecidas():
@@ -190,8 +229,10 @@ def ler():
     dados = {k: v for k, v in dados.items() if (v.get("publicado") or v["visto"])[:16] >= limite}
     for v in dados.values():  # limpa também o que já estava guardado
         v["link_loja"] = link_seguro(v.get("link_loja"))
-        if v.get("dominio") and not link_seguro("https://" + v["dominio"] + "/x"):
+        if v.get("dominio") and not loja_conhecida(v["dominio"]):
             v["dominio"] = "link encurtado"
+        if v.get("loja") and "." in v["loja"] and not loja_conhecida(v["loja"]):
+            v["loja"] = "link encurtado"
     referencia(dados)
     ARQ.parent.mkdir(parents=True, exist_ok=True)
     ARQ.write_text(json.dumps(dados, ensure_ascii=False, indent=1, sort_keys=True) + "\n", encoding="utf-8")

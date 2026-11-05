@@ -33,7 +33,7 @@ LINK = re.compile(r'(?:href|src)="([^"]+)"')
 
 # Link de afiliado de outra pessoa nunca pode ir ao ar (pedido do usuário em 05/11/2026: pelas regras da Amazon, divulgar a
 # tag de outro afiliado pode causar problema para ele). Vale para tudo que o site publica, inclusive os dados em conteudo/.
-AFILIADO_PUBLICO = re.compile(r"(?i)[?&]tag=[a-z0-9_-]+-2[0-9]\b|amzn\.to/|link\.amazon/|amzlinks\.|meli\.la/|shope\.ee/|s\.shopee|"
+AFILIADO_PUBLICO = re.compile(r"(?i)[?&]tag=[a-z0-9_-]+-2[0-9]\b|amzn\.to/|amzlink\.to/|link\.amazon/|amzlinks\.|meli\.la/|mercadoli[vb]re\.com(\.br)?/(sec|social)/|shope\.ee/|s\.shopee|"
                               r"tidd\.ly/|lmd\.ink/|awin1\.com|redir\.lomadee")
 
 
