@@ -33,7 +33,18 @@ print('\n'.join(p)); sys.exit(1 if p else 0)"; then :; else
   if git diff --cached --quiet; then echo "nada mudou"; return 0; fi
   git commit -q -m "Radar Black: robô $ROBO de $(TZ=America/Sao_Paulo date +'%d/%m/%Y %Hh%M')"
   for i in 1 2 3 4 5; do
-    git pull -q --rebase -X theirs origin main && git push -q origin HEAD:main && break
+    if git pull -q --rebase -X theirs origin main; then
+      # a junção do git é por linha: com dois robôs publicando juntos, a página podia sair com cartões repetidos e um
+      # JSON podia quebrar (05/11/2026). Depois de juntar, confere os dados e refaz a página a partir deles.
+      for f in conteudo/black/*.json; do
+        python3 -c "import json,sys; json.load(open(sys.argv[1], encoding='utf-8'))" "$f" 2>/dev/null \
+          || { echo "JSON quebrado na junção, fica o da main: $f"; git checkout -q origin/main -- "$f" 2>/dev/null || true; }
+      done
+      python3 tools/black/radar.py pagina >/dev/null 2>&1 || echo "aviso: não refez a página depois da junção"
+      git add conteudo/black black img/black
+      git diff --cached --quiet || git commit -q -m "Radar Black: página refeita depois de juntar as leituras"
+      git push -q origin HEAD:main && break
+    fi
     sleep $((i * 10))
   done
   curl -s -o /dev/null -X POST -H "Authorization: Bearer $GITHUB_TOKEN" -H "Accept: application/vnd.github+json" \
