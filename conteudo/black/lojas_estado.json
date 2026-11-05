@@ -10,7 +10,7 @@
   },
   "bravojogos.com.br": {
    "dia": "2026-11-05",
-   "paginas": 9
+   "paginas": 12
   },
   "brecholudico.com.br": {
    "dia": "2026-11-05",
@@ -210,7 +210,7 @@
   },
   "www.mecadosjogos.com.br": {
    "dia": "2026-11-05",
-   "paginas": 4
+   "paginas": 5
   },
   "www.mosaicoloja.com.br": {
    "dia": "2026-11-05",
@@ -256,7 +256,7 @@
   },
   "www.promobit.com.br": {
    "dia": "2026-11-05",
-   "paginas": 10
+   "paginas": 20
   },
   "www.reunionjogos.com.br": {
    "dia": "2026-11-05",
@@ -272,7 +272,7 @@
   },
   "www.spaceboardgames.com.br": {
    "dia": "2026-11-05",
-   "paginas": 3
+   "paginas": 8
   },
   "www.tabuloja.com": {
    "dia": "2026-11-05",
@@ -410,6 +410,12 @@
    "hora": "2026-11-05T00:08+00:00",
    "preco": 49.99
   },
+  "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-finca-p": {
+   "cj": 139.41,
+   "estoque": true,
+   "hora": "2026-11-05T06:05+00:00",
+   "preco": 149.9
+  },
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-galaxy-trucker-segunda-edicao-p": {
    "cj": 199.02,
    "estoque": true,
@@ -452,6 +458,12 @@
    "hora": "2026-11-04T19:12+00:00",
    "preco": 109.9
   },
+  "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-petiquette-edicao-ingles-p": {
+   "cj": 83.61,
+   "estoque": true,
+   "hora": "2026-11-05T06:05+00:00",
+   "preco": 89.9
+  },
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-quest-p": {
    "cj": 66.87,
    "estoque": true,
@@ -487,6 +499,12 @@
    "estoque": true,
    "hora": "2026-11-05T05:55+00:00",
    "preco": 109.9
+  },
+  "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-the-elder-scrolls-a-traicao-da-segunda-era-p": {
+   "cj": 1859.07,
+   "estoque": true,
+   "hora": "2026-11-05T06:05+00:00",
+   "preco": 1999.0
   },
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-time-stories-revolution-a-midsummer-night-p": {
    "cj": 92.91,
@@ -2099,25 +2117,31 @@
   "https://www.spaceboardgames.com.br/jogos-de-tabuleiro/funocracy": {
    "cj": 48.36,
    "estoque": true,
-   "hora": "2026-11-05T05:52+00:00",
+   "hora": "2026-11-05T06:05+00:00",
    "preco": 52.0
+  },
+  "https://www.spaceboardgames.com.br/jogos-de-tabuleiro/general-orders-world-war-ii": {
+   "cj": 82.77,
+   "estoque": true,
+   "hora": "2026-11-05T06:05+00:00",
+   "preco": 89.0
   },
   "https://www.spaceboardgames.com.br/jogos-de-tabuleiro/kluster": {
    "cj": 102.3,
    "estoque": true,
-   "hora": "2026-11-05T05:53+00:00",
+   "hora": "2026-11-05T06:05+00:00",
    "preco": 110.0
   },
   "https://www.spaceboardgames.com.br/jogos-de-tabuleiro/neuroshima-hex-battle-policia-de-aco-vs-feras": {
    "cj": 111.6,
    "estoque": true,
-   "hora": "2026-11-05T05:53+00:00",
+   "hora": "2026-11-05T06:05+00:00",
    "preco": 120.0
   },
   "https://www.spaceboardgames.com.br/jogos-de-tabuleiro/score-cards": {
    "cj": 37.2,
    "estoque": true,
-   "hora": "2026-11-05T05:24+00:00",
+   "hora": "2026-11-05T06:05+00:00",
    "preco": 40.0
   },
   "https://www.tabuloja.com/bananagrams": {
