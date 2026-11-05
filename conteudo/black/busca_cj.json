@@ -277,6 +277,17 @@
  "blacklist games jogo de tabuleiro street masters mare do dragao": null,
  "blacklist games street masters the board game legend of oni expansion": null,
  "blacklist games street masters the board game tide of the dragon": null,
+ "blokus trigon": {
+  "bgg": 6.88951,
+  "editora": "Mattel",
+  "imagem": "https://uploads.comparajogos.com.br/img/15472f4c7338c04889a9ac1163c033c7414802a6.jpg",
+  "menor": null,
+  "nome": "Blokus Trigon",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "blokus-trigon",
+  "tipo": "game"
+ },
  "blurgh": {
   "bgg": 6.5,
   "editora": "Inkster Games",
@@ -1582,6 +1593,17 @@
   "ref": 67.13,
   "ref_dias": 32,
   "slug": "monster-trick",
+  "tipo": "game"
+ },
+ "mortum medieval detective": {
+  "bgg": 7.21036,
+  "editora": "Arcane Wonders",
+  "imagem": "https://uploads.comparajogos.com.br/img/8649d9842156bb2d4af81ece3454e8f74038b866.jpg",
+  "menor": null,
+  "nome": "Mortum: Medieval Detective",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "mortum-medieval-detective",
   "tipo": "game"
  },
  "mosaico jogos the jetsons o jogo de tabuleiro controle os jetsons em suas aventuras por orbit city nesse euro medio familiar de 1 a 5 pess": null,
