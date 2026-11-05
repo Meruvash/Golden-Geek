@@ -58,7 +58,11 @@ def trends(termo):
 
 def main():
     top_n = int(sys.argv[sys.argv.index("--top") + 1]) if "--top" in sys.argv else 10
-    feitos = {json.loads(p.read_text(encoding="utf-8"))["jogo"].lower() for p in (ROOT / "conteudo" / "como-jogar").glob("*.json")}
+    # já feitos: pelo nome no Brasil e pelo slug (Código Secreto tem slug "codenames"; rascunho também conta)
+    feitos = set()
+    for p in (ROOT / "conteudo" / "como-jogar").glob("*.json"):
+        m = json.loads(p.read_text(encoding="utf-8"))
+        feitos |= {m["jogo"].lower(), m["slug"].replace("-", " ")}
     trend = {"relacionadas": [], "subindo": [], "erro": None}
     for termo in ("jogo de tabuleiro", "como jogar jogo de tabuleiro"):
         try:

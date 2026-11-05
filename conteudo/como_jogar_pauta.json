@@ -1,81 +1,11 @@
 {
- "data": "2026-11-04",
+ "data": "2026-11-05",
  "trends": {
   "relacionadas": [],
   "subindo": [],
   "erro": "HTTP Error 429: unknown"
  },
  "ranking": [
-  {
-   "jogo": "perfil",
-   "nota": 17.0,
-   "google": 10,
-   "youtube": 14,
-   "trends": null,
-   "subindo": false,
-   "exemplos": [
-    "como jogar perfil",
-    "como jogar perfil junior",
-    "como jogar perfil 7",
-    "como jogar perfil 6"
-   ]
-  },
-  {
-   "jogo": "detetive",
-   "nota": 16.5,
-   "google": 10,
-   "youtube": 13,
-   "trends": null,
-   "subindo": false,
-   "exemplos": [
-    "como jogar detetive",
-    "como jogar detetive da estrela",
-    "como jogar detetive tabuleiro",
-    "como jogar detetive com 2 pessoas"
-   ]
-  },
-  {
-   "jogo": "coup",
-   "nota": 13.0,
-   "google": 9,
-   "youtube": 8,
-   "trends": null,
-   "subindo": false,
-   "exemplos": [
-    "como jogar coup",
-    "como jogar coup com baralho",
-    "como jogar coup de 2",
-    "como jogar coup com 2 pessoas"
-   ]
-  },
-  {
-   "jogo": "war",
-   "nota": 11.5,
-   "google": 7,
-   "youtube": 9,
-   "trends": null,
-   "subindo": false,
-   "exemplos": [
-    "como jogar war",
-    "como jogar war tabuleiro",
-    "como jogar warzone sem tpm 2.0",
-    "como jogar war 2"
-   ]
-  },
-  {
-   "jogo": "dixit",
-   "nota": 11.0,
-   "google": 9,
-   "youtube": 4,
-   "trends": null,
-   "subindo": false,
-   "exemplos": [
-    "como jogar dixit",
-    "como jogar dixit odyssey",
-    "como jogar dixit de 2",
-    "como jogar dixit disney"
-   ]
-  },
   {
    "jogo": "codenames",
    "nota": 8.5,
@@ -88,61 +18,6 @@
     "como jogar codenames duet",
     "como jogar codenames com amigos",
     "como jogar codenames em portugues"
-   ]
-  },
-  {
-   "jogo": "exploding kittens",
-   "nota": 8.0,
-   "google": 6,
-   "youtube": 4,
-   "trends": null,
-   "subindo": false,
-   "exemplos": [
-    "como jogar exploding kittens",
-    "como jogar exploding kittens bem vs mal",
-    "como jogar exploding kittens tabuleiro",
-    "como jogar exploding kittens zombie"
-   ]
-  },
-  {
-   "jogo": "uno flip",
-   "nota": 6.5,
-   "google": 5,
-   "youtube": 3,
-   "trends": null,
-   "subindo": false,
-   "exemplos": [
-    "como jogar uno flip",
-    "como jogar uno flip attack",
-    "como jogar uno flip regras",
-    "como jogar uno flip ataque"
-   ]
-  },
-  {
-   "jogo": "splendor",
-   "nota": 6.0,
-   "google": 4,
-   "youtube": 4,
-   "trends": null,
-   "subindo": false,
-   "exemplos": [
-    "como jogar splendor",
-    "como jogar splendor duel",
-    "como jogar splendor marvel",
-    "como jogar splendor pokemon"
-   ]
-  },
-  {
-   "jogo": "bang",
-   "nota": 6.0,
-   "google": 3,
-   "youtube": 6,
-   "trends": null,
-   "subindo": false,
-   "exemplos": [
-    "como jogar bang",
-    "como jogar bang dice game",
-    "como jogar bang drive"
    ]
   },
   {
@@ -186,19 +61,6 @@
    ]
   },
   {
-   "jogo": "heat",
-   "nota": 4.5,
-   "google": 3,
-   "youtube": 3,
-   "trends": null,
-   "subindo": false,
-   "exemplos": [
-    "como jogar heat",
-    "como jogar heat pedal to the metal",
-    "como jogar heatseeker rocket league"
-   ]
-  },
-  {
    "jogo": "carcassonne",
    "nota": 4.0,
    "google": 3,
@@ -209,6 +71,19 @@
     "como jogar carcassonne",
     "como jogar carcassonne tabuleiro",
     "como jogar carcassonne junior"
+   ]
+  },
+  {
+   "jogo": "heat",
+   "nota": 4.0,
+   "google": 3,
+   "youtube": 2,
+   "trends": null,
+   "subindo": false,
+   "exemplos": [
+    "como jogar heat",
+    "como jogar heat pedal to the metal",
+    "como jogar heatseeker rocket league"
    ]
   },
   {
@@ -325,6 +200,72 @@
    "subindo": false,
    "exemplos": [
     "como jogar cascadia"
+   ]
+  },
+  {
+   "jogo": "patchwork",
+   "nota": 1.5,
+   "google": 1,
+   "youtube": 1,
+   "trends": null,
+   "subindo": false,
+   "exemplos": [
+    "como jogar patchwork"
+   ]
+  },
+  {
+   "jogo": "love letter",
+   "nota": 1.5,
+   "google": 1,
+   "youtube": 1,
+   "trends": null,
+   "subindo": false,
+   "exemplos": [
+    "como jogar love letter"
+   ]
+  },
+  {
+   "jogo": "ark nova",
+   "nota": 1.5,
+   "google": 1,
+   "youtube": 1,
+   "trends": null,
+   "subindo": false,
+   "exemplos": [
+    "como jogar ark nova"
+   ]
+  },
+  {
+   "jogo": "sky team",
+   "nota": 1.5,
+   "google": 1,
+   "youtube": 1,
+   "trends": null,
+   "subindo": false,
+   "exemplos": [
+    "como jogar sky team"
+   ]
+  },
+  {
+   "jogo": "flip 7",
+   "nota": 1.5,
+   "google": 1,
+   "youtube": 1,
+   "trends": null,
+   "subindo": false,
+   "exemplos": [
+    "como jogar flip 7"
+   ]
+  },
+  {
+   "jogo": "takenoko",
+   "nota": 1.5,
+   "google": 1,
+   "youtube": 1,
+   "trends": null,
+   "subindo": false,
+   "exemplos": [
+    "como jogar takenoko"
    ]
   }
  ]
