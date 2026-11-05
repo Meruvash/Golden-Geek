@@ -124,7 +124,7 @@ A montagem completa, com figuras, está na seção "Montar a mesa passo a passo"
 No seu turno você faz **uma** de três ações: **Alocar um Trabalhador**, **Jogar uma Carta** ou **Preparar-se para a Estação** (p. 8). Você começa sem nenhum recurso e com trabalhadores livres, por isso o primeiro turno quase sempre é alocar.
 
 1. **Ponha um trabalhador seu num espaço livre de um local** e pegue na hora o que ele dá, do estoque geral ou do baralho (p. 8).
-2. **Local exclusivo, de círculo fechado, aceita só 1 trabalhador**, nem que seja de outra cor ou seu. **Local compartilhado, de círculo aberto, aceita vários**, inclusive da mesma cor (p. 8).
+2. **Local exclusivo, de círculo fechado, aceita só 1 trabalhador**, de qualquer cor, inclusive a sua. **Local compartilhado, de círculo aberto, aceita vários**, inclusive da mesma cor (p. 8).
 3. **O trabalhador fica ali** até você se preparar para a próxima estação (p. 8).
 4. **Comprar carta é tirar do topo do baralho para a mão.** A mão nunca passa de 8 cartas: compre só até ficar com 8 (p. 11).
 
@@ -151,8 +151,8 @@ As cartas de Floresta também são locais, em geral mais fortes, com o que dão 
 >
 > ?? Bruno pode pôr um trabalhador no local de 3 gravetos?
 > - ( ) Sim, porque o trabalhador de Ana é de outra cor
-> - (x) Não: o local é exclusivo e já tem o trabalhador de Ana
 > - ( ) Sim, se pagar 1 fruto para Ana
+> - (x) Não: o local é exclusivo e já tem o trabalhador de Ana
 > = Local exclusivo recebe 1 trabalhador só, de qualquer cor (p. 8).
 >
 > ?? Bruno vai ao local de 2 gravetos e 1 carta. Com quanto fica?
@@ -165,8 +165,8 @@ As cartas de Floresta também são locais, em geral mais fortes, com o que dão 
 >
 > ?? Você é o quarto jogador e tem 8 cartas. Vai ao local de 2 cartas e 1 ficha de 1 ponto. O que recebe?
 > - ( ) 2 cartas, e descarta 2 da mão
-> - (x) Só a ficha de 1 ponto: com 8 cartas, não compra nenhuma
 > - ( ) Nada: com a mão cheia, o local fica proibido para você
+> - (x) Só a ficha de 1 ponto: com 8 cartas, não compra nenhuma
 > = A mão nunca passa de 8; você compra só até somar 8, e o resto do local vale normalmente (p. 11).
 
 ### Ainda não precisa saber
@@ -233,8 +233,8 @@ Quatro etapas, na ordem da partida: alocar, jogar cartas, as estações e a pont
 > [!complete] **Complete.** Bruno já tem um trabalhador no Refúgio. Você também quer ir lá.
 >
 > ?? Você pode pôr o seu trabalhador no Refúgio?
-> - ( ) Não: o Refúgio só aceita 1 trabalhador por vez
 > - (x) Sim: o Refúgio é compartilhado e não tem limite
+> - ( ) Não: o Refúgio só aceita 1 trabalhador por vez
 > - ( ) Só se o seu trabalhador for da mesma cor do de Bruno
 > = O Refúgio é compartilhado e aceita qualquer número de trabalhadores, mesmo da mesma cor (p. 9).
 >
@@ -300,15 +300,15 @@ Quatro etapas, na ordem da partida: alocar, jogar cartas, as estações e a pont
 > [!complete] **Complete.** Você tem o Tribunal na vila, sem ficha de Ocupado, e 3 frutos. A Juíza está na sua mão.
 >
 > ?? Quanto custa jogar a Juíza?
-> - ( ) 3 frutos, como sempre
 > - (x) Nada: ela é a Criatura gratuita do Tribunal
+> - ( ) 3 frutos, como sempre
 > - ( ) 1 fruto, com desconto do Tribunal
 > = O Tribunal é a Construção listada na Juíza; com ele na vila, a Juíza sai sem pagar frutos (p. 10).
 >
 > ?? O que acontece com o Tribunal?
 > - ( ) Nada
-> - (x) Recebe uma ficha de Ocupado e não dá outra Criatura gratuita
 > - ( ) Volta para a mão
+> - (x) Recebe uma ficha de Ocupado e não dá outra Criatura gratuita
 > = A ficha de Ocupado marca que a Construção já deu a sua Criatura gratuita, e isso vale uma vez só (p. 10).
 
 > [!suavez] **Sua vez.** Duas situações.
@@ -320,8 +320,8 @@ Quatro etapas, na ordem da partida: alocar, jogar cartas, as estações e a pont
 > = Da carta Singular só cabe uma cópia na vila (p. 10).
 >
 > ?? Você joga uma Fazenda com o Tribunal na vila (ele dá 1 graveto, 1 cristal ou 1 seixo a cada Construção jogada). Qual a ordem?
-> - ( ) O Tribunal dá o recurso antes de você pagar a Fazenda
 > - (x) Você paga, põe a Fazenda na vila, recebe o fruto dela e depois o recurso do Tribunal
+> - ( ) O Tribunal dá o recurso antes de você pagar a Fazenda
 > - ( ) Você recebe o fruto e o recurso, e paga no fim do turno
 > = Pagar, pôr na vila, efeito da carta e, por último, efeitos disparados como o do Tribunal (p. 11 e 21).
 
@@ -378,8 +378,8 @@ Quatro etapas, na ordem da partida: alocar, jogar cartas, as estações e a pont
 >
 > ?? Pode se preparar para o outono neste turno?
 > - ( ) Sim, a qualquer momento depois do verão começar
-> - (x) Não: ainda tem um trabalhador livre
 > - ( ) Sim, se tiver jogado uma carta no turno anterior
+> - (x) Não: ainda tem um trabalhador livre
 > = Preparar-se para a Estação exige todos os seus trabalhadores alocados (p. 3 e 12).
 >
 > ?? Você aloca o último e, no turno seguinte, se prepara para o outono. Com quantos trabalhadores fica?
@@ -391,15 +391,15 @@ Quatro etapas, na ordem da partida: alocar, jogar cartas, as estações e a pont
 > [!suavez] **Sua vez.** Duas situações.
 >
 > ?? É primavera para você. Pode mandar um trabalhador à Jornada?
-> - ( ) Sim, se descartar as cartas
 > - (x) Não: a Jornada só abre no outono
+> - ( ) Sim, se descartar as cartas
 > - ( ) Sim, mas só ao espaço de 2 pontos
 > = Apenas no outono você pode enviar trabalhador à Jornada (p. 9).
 >
 > ?? Ana pôs um trabalhador no Correio, carta de Destino com o símbolo ABERTO, que está na sua vila. O que você ganha?
-> - (x) 1 ficha de 1 ponto do estoque geral
 > - ( ) O efeito do Correio também
 > - ( ) Nada: a carta é de quem a usa
+> - (x) 1 ficha de 1 ponto do estoque geral
 > = O dono do Destino recebe 1 ficha de 1 ponto quando um adversário o visita (p. 9).
 
 ## 5. Etapa 4: fim da partida e pontuação
@@ -437,15 +437,15 @@ Quatro etapas, na ordem da partida: alocar, jogar cartas, as estações e a pont
 > [!suavez] **Sua vez.** Duas situações.
 >
 > ?? Você termina com a Arquiteta, que vale 1 ponto por cristal e seixo sobrando, até 6 (p. 18). Sobraram 3 cristais, 2 seixos e 4 gravetos. Qual o bônus?
+> - (x) 5
 > - ( ) 9
 > - ( ) 6
-> - (x) 5
 > = Gravetos não contam: 3 cristais e 2 seixos dão 5, abaixo do teto de 6 (p. 18).
 >
 > ?? Ana e Bruno empatam com 58 pontos. Os dois realizaram 3 Eventos; Ana tem 4 recursos sobrando, Bruno 2. Quem vence?
-> - (x) Ana
 > - ( ) Bruno
 > - ( ) Os dois dividem a vitória
+> - (x) Ana
 > = O primeiro desempate é o número de Eventos, e eles empatam; o segundo é o de recursos sobrando: vence Ana (p. 14).
 
 ## 6. Situações especiais
@@ -461,8 +461,8 @@ Quatro etapas, na ordem da partida: alocar, jogar cartas, as estações e a pont
 Responda sem consultar. Cada resposta diz o que reler.
 
 ?? 1. Partida de 2 jogadores. Quantas cartas de Floresta vão para a mesa, e quantas cartas recebe quem joga em segundo?
-- ( ) 4 de Floresta; 5 cartas
 - (x) 3 de Floresta; 6 cartas
+- ( ) 4 de Floresta; 5 cartas
 - ( ) 3 de Floresta; 5 cartas
 - ( ) 4 de Floresta; 6 cartas
 = **3 e 6.** Com 2 jogadores vão 3 cartas de Floresta; o segundo a jogar compra 6 (p. 6). Releia a montagem.
@@ -475,20 +475,20 @@ Responda sem consultar. Cada resposta diz o que reler.
 
 ?? 3. Você tem 1 trabalhador livre e não quer jogar carta. Pode se preparar para a estação?
 - ( ) Sim
-- (x) Não: todos os trabalhadores precisam estar alocados
 - ( ) Sim, se for verão
+- (x) Não: todos os trabalhadores precisam estar alocados
 = **Não** (p. 3 e 12). Releia a etapa 3.
 
 ?? 4. É verão para você e outono para Ana. Ela vai à Jornada. E você?
-- ( ) Também pode, porque a mesa já chegou ao outono
 - (x) Não pode: a sua estação ainda é o verão
+- ( ) Também pode, porque a mesa já chegou ao outono
 - ( ) Pode, mas só ao espaço de 2 pontos
 = **Não pode.** Cada jogador está na sua estação, e a Jornada é só no outono (p. 9 e 12). Releia a etapa 3.
 
 ?? 5. Empate em pontos e em Eventos. Quem vence?
 - ( ) Quem passou a vez primeiro
-- ( ) Quem tiver mais cartas na vila
 - (x) Quem tiver mais recursos sobrando
+- ( ) Quem tiver mais cartas na vila
 = **Mais recursos sobrando** (p. 14). Releia a etapa 4.
 
 > [!atencao] **Critério para começar a jogar.** Acertou 4 ou 5? Monte a mesa e jogue, com a folha de consulta ao lado. Errou a 1, releia a montagem; a 2, a etapa 1; a 3 ou a 4, a etapa 3; a 5, a etapa 4. Depois refaça só as perguntas que errou.
