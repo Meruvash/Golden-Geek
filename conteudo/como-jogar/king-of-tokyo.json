@@ -1,0 +1,23 @@
+{
+ "slug": "king-of-tokyo",
+ "titulo": "Como jogar King of Tokyo",
+ "jogo": "King of Tokyo",
+ "genero": "Dados · Família",
+ "jogadores": "2 a 6 jogadores",
+ "duracao": "30 min",
+ "idade": "8+",
+ "edicao": "Edição Galápagos",
+ "data": "2026-11-05",
+ "descricao": "Regras de King of Tokyo passo a passo, conferidas no manual da Galápagos: montagem, os dados, entrar e sair de Tóquio, cartas de Poder e fim.",
+ "resumo": "Role seis dados até três vezes para marcar pontos, ganhar Energia, curar ou atacar, e vença chegando a 20 Pontos de Vitória ou sendo o último Monstro vivo.",
+ "pontos": [
+  "Os números só pontuam em trinca: três faces de 1, 2 ou 3 valem o número, e cada dado igual a mais vale 1.",
+  "Quem está em Tóquio ganha pontos e fere todos os de fora, mas não cura com os dados e só sai depois de perder Vida para garras.",
+  "A Energia compra cartas de Poder, e a partida acaba no fim do turno em que alguém chega a 20 pontos ou só resta um Monstro."
+ ],
+ "leitura_min": 17,
+ "etapas": 3,
+ "resenha": null,
+ "chamada": "Role os dados, decida se entra em Tóquio e aguente os ataques de todo mundo. Começa com a mesa montada passo a passo e um resumo para jogar em 4 minutos, e segue em três etapas.",
+ "publicar": false
+}

@@ -16,11 +16,11 @@ A montagem segue a seção "Componentes e preparação" do manual (p. 2), na mes
 | Abades de madeira (mini-expansão O Abade), um de cada cor | 5 |
 | Marcador de pontos (o tabuleiro da trilha de pontos) | 1 |
 
-!fig[Os três tipos de cartela de terreno, da esquerda para a direita: uma com pedaço de cidade (a parte murada, com casas), uma com estrada e uma com monastério no centro. Ilustração: manual Devir (p. 2)](figuras/setup-cartelas.webp)
+!fig[Cartelas de terreno: com pedaço de cidade (a parte murada), com estrada e com monastério no centro. Ilustração: manual Devir (p. 2)](figuras/setup-cartelas.webp)
 
 1. **Separe a cartela inicial e as 12 cartelas de rio**, as únicas de verso mais escuro (p. 2). As de rio são da mini-expansão O Rio: no jogo base, ficam na caixa.
 
-!fig[À esquerda, o verso normal; no meio, o verso mais escuro da cartela inicial e das cartelas de rio; à direita, uma cartela de rio vista de frente. Ilustração: manual Devir (p. 2)](figuras/setup-versos.webp)
+!fig[O verso normal, o verso mais escuro (cartela inicial e rio) e uma cartela de rio vista de frente. Ilustração: manual Devir (p. 2)](figuras/setup-versos.webp)
 
 2. **Ponha a cartela inicial no centro da mesa, virada para cima** (p. 2). É dela que o terreno vai crescer.
 3. **Misture todas as outras cartelas de terreno, viradas para baixo, e faça vários montes** em volta da mesa, de modo que todos alcancem um monte com facilidade (p. 2).
@@ -35,7 +35,7 @@ A montagem segue a seção "Componentes e preparação" do manual (p. 2), na mes
 
 7. **Devolva à caixa as figuras das cores que ninguém escolheu e os 5 abades** (p. 2). O manual os deixa de fora "nas primeiras partidas".
 
-!fig[Em cima, os seguidores das cinco cores; embaixo, os abades, um pouco diferentes no formato. Ilustração: manual Devir (p. 2)](figuras/setup-seguidores.webp)
+!fig[Em cima, os seguidores das cinco cores; embaixo, os abades. Ilustração: manual Devir (p. 2)](figuras/setup-seguidores.webp)
 
 8. **Defina quem começa.** O jogador mais jovem começa, e a vez segue no sentido horário (p. 3).
 
@@ -123,18 +123,18 @@ A partida termina quando não houver mais cartela para pegar e colocar. Aí se c
 
 ## 0. Antes de tudo: o que é este jogo
 
-Carcassonne é um jogo de montar um mapa. Não há tabuleiro: o terreno nasce da cartela inicial e cresce uma cartela por turno, colocada por quem está na vez. Cada cartela tem pedaços de estrada, de cidade, de campo e, às vezes, um monastério, e precisa encaixar no que já está na mesa (p. 2 e 3).
+Carcassonne é um jogo de montar um mapa. Não há tabuleiro: o terreno nasce da cartela inicial e cresce uma cartela por turno. Cada cartela tem pedaços de estrada, cidade, campo ou monastério e precisa encaixar no que já está na mesa (p. 2 e 3).
 
 O seguidor reivindica a construção inteira, não só a cartela em que está, e ela dá pontos a quem tiver seguidor nela quando fica concluída, mesmo que outro jogador a tenha fechado (p. 3).
 
 Duas ideias sustentam o resto:
 
-- **Os seguidores são poucos e voltam.** Cada um tem 7. O seguidor só volta para a reserva quando a construção dele é pontuada; até lá, fica preso no terreno (p. 2 e 4).
+- **Os seguidores são poucos e voltam.** Cada um tem 7, e o seguidor só volta para a reserva quando a construção dele é pontuada (p. 2 e 4).
 - **Todos constroem o mesmo mapa.** A cartela que você coloca pode completar a cidade de outro jogador, ou encostar uma cidade sua na dele. Dá para ajudar, atrapalhar e até tomar uma cidade alheia (p. 5 e 6).
 
 ## 1. Como este guia ensina
 
-Três etapas, cada uma uma parte real da partida: colocar a cartela e o seguidor, pontuar durante o jogo, fechar a partida com a contagem final e os fazendeiros. Cada etapa traz **Para entender** (o porquê), **Passo a passo** (a regra exata), casos especiais a um toque e tarefas com ajuda que diminui: **exemplo resolvido**, **complete** e **sua vez**. Toque numa opção para ver a resposta e a explicação. No fim, uma avaliação diz o que reler, e uma folha de consulta vai para a mesa.
+Três etapas: colocar a cartela e o seguidor, pontuar durante o jogo, fechar a partida com a contagem final e os fazendeiros. Cada etapa traz **Para entender** (o porquê), **Passo a passo** (a regra exata), casos especiais a um toque e tarefas com ajuda que diminui: **exemplo resolvido**, **complete** e **sua vez**. Toque numa opção para ver a resposta e a explicação. No fim, uma avaliação diz o que reler, e uma folha de consulta vai para a mesa.
 
 ## 2. Etapa 1: colocar a cartela e o seguidor
 
@@ -157,7 +157,7 @@ Três etapas, cada uma uma parte real da partida: colocar a cartela e o seguidor
 > 3. Antes, siga a zona escolhida pelas outras cartelas: se houver outro seguidor nela, de qualquer jogador, inclusive seu, você não pode pôr o seu ali.
 > 4. O seguidor fica onde está até a zona dele ser pontuada.
 
-!fig[Em cima, a cartela nova (à direita) continua a estrada e encosta campo em campo; o jogador vermelho põe nela um ladrão. Embaixo, o jogador azul coloca a cartela de borda vermelha: a estrada à direita do cruzamento é a mesma do ladrão vermelho, então o X marca que ali ele não pode pôr seguidor, e o azul o põe como cavaleiro na cidade. Ilustração: manual Devir (p. 3)](figuras/colocar-seguidor.webp)
+!fig[Em cima, a cartela nova (à direita) continua a estrada, e o vermelho põe nela um ladrão. Embaixo, o azul coloca a cartela de borda vermelha: a estrada à direita do cruzamento já tem o ladrão vermelho (o X), e o azul põe o seguidor como cavaleiro na cidade. Ilustração: manual Devir (p. 3)](figuras/colocar-seguidor.webp)
 
 > [!mais] **Cartela que não cabe.** No caso raro de não haver lugar no terreno onde a cartela dê continuidade, deixe-a na caixa e pegue outra (p. 5).
 
@@ -217,7 +217,7 @@ Três etapas, cada uma uma parte real da partida: colocar a cartela e o seguidor
 
 !fig[Uma estrada que vai de um cruzamento até uma cidade passa por 3 cartelas: concluída, dá 3 pontos ao ladrão azul. Ilustração: manual Devir (p. 3)](figuras/estrada.webp)
 
-!fig[A cartela de borda vermelha fecha a cidade. Os números mostram a contagem: 2 pela primeira cartela, 4 com o brasão, 6 pela cartela nova e 8 pela de baixo. São 3 cartelas e 1 brasão, 3 × 2 + 2 = 8 pontos para o cavaleiro vermelho, que volta para a reserva. Ilustração: manual Devir (p. 4)](figuras/cidade.webp)
+!fig[A cartela de borda vermelha fecha a cidade. Os números contam 2 por cartela e 2 pelo brasão: 3 cartelas e 1 brasão, 8 pontos para o cavaleiro vermelho, que volta para a reserva. Ilustração: manual Devir (p. 4)](figuras/cidade.webp)
 
 !fig[A cartela 4 completa as 8 cartelas em volta do monastério: o monge vermelho recebe 9 pontos e volta para a reserva. Ilustração: manual Devir (p. 5)](figuras/monasterio.webp)
 

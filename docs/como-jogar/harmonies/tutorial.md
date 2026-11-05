@@ -20,9 +20,9 @@ A montagem segue a página de preparação do manual (p. 2 e 3), na mesma ordem.
 | Cartas de espíritos da natureza e cubos de espíritos da natureza | 10 cartas e 4 cubos |
 | Bloco de pontuação | 1 |
 
-!fig[Os componentes de Harmonies: tabuleiro central, tabuleiros pessoais, peças coloridas, cubos e cartas de animais. Imagem: Libellud](../../harmonies/fotos/componentes-1.webp)
+!fig[Os componentes de Harmonies. Imagem: Libellud](../../harmonies/fotos/componentes-1.webp)
 
-1. **Ponha o tabuleiro central no meio da mesa com o lado de 2-4 jogadores para cima** (p. 2). É a peça escura de bordas redondas, com uma seta no centro.
+1. **Ponha o tabuleiro central no meio da mesa com o lado de 2-4 jogadores para cima** (p. 2).
 2. **Ponha todas as 120 peças na bolsa** e deixe a bolsa perto do tabuleiro central (p. 2).
 
 !fig[As peças entram na bolsa, que fica ao lado do tabuleiro central. Ilustração: manual Galápagos (p. 2)](figuras/setup-bolsa.webp)
@@ -125,8 +125,8 @@ No seu turno, você faz uma ação obrigatória e pode fazer duas opcionais, na 
 >
 > ?? Um espaço tem 2 amarelas e 1 azul, e você gostaria de pegar só as amarelas. Pode?
 > - ( ) Pode: você pega quantas peças quiser de um espaço
-> - (x) Não: você pega as 3 peças do espaço e põe as 3 no seu tabuleiro
 > - ( ) Pode, se devolver a azul para a bolsa
+> - (x) Não: você pega as 3 peças do espaço e põe as 3 no seu tabuleiro
 > = A ação obrigatória é pegar as 3 peças de um espaço e posicioná-las todas (p. 4).
 
 ### Ainda não precisa saber
@@ -152,9 +152,7 @@ Os pontos vêm de duas fontes, somadas no fim (p. 7 a 9):
 - **As paisagens.** Cada árvore, montanha, campo e construção vale pontos pelo seu formato, e a água vale pelo rio mais comprido (lado A) ou pelo número de ilhas (lado B).
 - **Os animais.** Cada carta de animal mostra um pequeno desenho de peças, o habitat. Quando o seu tabuleiro tem esse desenho, você põe um cubo nele, e a carta vale mais a cada cubo posto.
 
-A tensão do jogo está aí: a mesma peça serve às duas coisas. Uma cinza pode crescer uma montanha que vale pontos sozinha, ou completar o habitat de um animal que pede uma montanha baixa. E o tabuleiro pessoal tem espaço limitado: cada peça ocupa um lugar ou aumenta uma pilha.
-
-A interação entre jogadores é indireta. Ninguém mexe no tabuleiro do outro; o que você tira do tabuleiro central e da fileira de cartas deixa de estar disponível para os outros (p. 4 e 5).
+A tensão do jogo está aí: a mesma peça serve às duas coisas. Uma cinza pode crescer uma montanha que vale pontos sozinha, ou completar o habitat de um animal que pede uma montanha baixa. E o tabuleiro pessoal tem espaço limitado: cada peça ocupa um lugar ou aumenta uma pilha. A interação é indireta: ninguém mexe no tabuleiro do outro, mas o que você tira do tabuleiro central e da fileira de cartas deixa de estar disponível (p. 4 e 5).
 
 ## 1. Como este guia ensina
 
@@ -162,11 +160,9 @@ Três etapas, cada uma uma parte real da partida: pôr peças e formar paisagens
 
 ## 2. Etapa 1: peças e paisagens
 
-> [!entender] **Para entender.** As 3 peças que você pega são a sua única ação obrigatória, e o que você faz com elas decide quase tudo. Uma peça no chão ocupa um espaço novo; uma peça empilhada não ocupa espaço novo, mas transforma a pilha: duas marrons e uma verde viram uma árvore de tamanho 3, três cinzas viram uma montanha alta.
+> [!entender] **Para entender.** As 3 peças que você pega são a sua única ação obrigatória, e o que você faz com elas decide quase tudo. Uma peça no chão ocupa um espaço novo; uma peça empilhada transforma a pilha: duas marrons e uma verde viram uma árvore de tamanho 3.
 >
 > Cada tipo de paisagem tem a sua regra de pontos, e quase todas premiam altura ou formato. A tabela abaixo dá o essencial; a etapa 3 detalha as restrições.
->
-> O tabuleiro central é a vitrine comum. Você leva um espaço inteiro, e as 3 peças novas que você sorteia da bolsa para repô-lo ficam à disposição do próximo jogador.
 
 > [!passos] **Passo a passo: pegar e posicionar peças** (p. 4)
 >
@@ -219,29 +215,23 @@ Três etapas, cada uma uma parte real da partida: pôr peças e formar paisagens
 >
 > ?? E a vermelha, pode ir sobre a construção?
 > - ( ) Pode: vermelha vai sobre vermelha
-> - (x) Não: a construção já tem 2 peças, e só se empilha sobre 1 ou 2 peças nas pilhas da ilustração
 > - ( ) Pode, se a construção ainda não tiver cubo
+> - (x) Não: a construção já tem 2 peças, e só se empilha sobre 1 ou 2 peças nas pilhas da ilustração
 > = Vermelha vai sobre uma vermelha sozinha, mas a construção (vermelha sobre marrom) já está completa com 2 peças; a ilustração não mostra pilha de 3 com vermelha (p. 4).
 
-> [!suavez] **Sua vez.** Duas situações.
+> [!suavez] **Sua vez.**
 >
 > ?? Você quer pôr uma marrom embaixo de uma verde que está sozinha, para fazer uma árvore de tamanho 2. Pode?
 > - ( ) Pode: a árvore fica igual a uma verde sobre marrom
 > - (x) Não: nunca se põe peça embaixo de outra já posta
 > - ( ) Pode, se a verde ainda não tiver cubo
 > = Nenhuma peça vai embaixo de peças já posicionadas (p. 4). A árvore precisa ser montada de baixo para cima.
->
-> ?? Você pegou 3 amarelas. Alguma pode ir em cima de outra amarela?
-> - ( ) Sim, até 2 de altura
-> - ( ) Sim, se formar um campo de 3
-> - (x) Não: amarela fica sempre no chão
-> = Campo e água não se empilham; as 3 amarelas vão para espaços vazios (p. 4).
 
 > [!treino] **Treino rápido: quanto vale?** (p. 8)
 >
 > ?? a) Uma árvore de 2 marrons com a verde em cima e uma verde sozinha no chão.
-> - ( ) 4
 > - (x) 8
+> - ( ) 4
 > - ( ) 10
 > = Tamanho 3 vale 7, tamanho 1 vale 1: 8 pontos.
 >
@@ -253,9 +243,7 @@ Três etapas, cada uma uma parte real da partida: pôr peças e formar paisagens
 
 ## 3. Etapa 2: animais
 
-> [!entender] **Para entender.** Os animais são a outra metade dos pontos, e às vezes a maior: no exemplo do manual, Giulia faz 53 pontos de paisagem e 63 de animais (p. 9).
->
-> Cada carta de animal mostra, embaixo, um pequeno desenho de peças: o habitat. Uma das peças do desenho tem um cubo em cima; é ali que o animal vai morar. Na lateral, a carta tem uma coluna de espaços com números, e cada espaço recebe um cubo quando você pega a carta (p. 5).
+> [!entender] **Para entender.** Os animais são a outra metade dos pontos (no exemplo do manual, 63 de 116, p. 9). Cada carta de animal mostra, embaixo, um pequeno desenho de peças: o habitat. Uma das peças do desenho tem um cubo em cima; é ali que o animal vai morar. Na lateral, a carta tem uma coluna de espaços com números, e cada espaço recebe um cubo quando você pega a carta (p. 5).
 >
 > Cada vez que o seu tabuleiro tem o habitat, você tira o cubo de baixo da carta e o põe no tabuleiro. Com isso aparece um número: é quanto a carta vale. Quanto mais cubos você tira, mais alto o número que fica à mostra (p. 6 e 9).
 
@@ -284,9 +272,7 @@ Três etapas, cada uma uma parte real da partida: pôr peças e formar paisagens
 
 > [!mais] **Uma peça, vários habitats.** A mesma peça pode fazer parte de vários habitats, iguais ou diferentes. Só o espaço que recebe o cubo precisa estar livre (p. 6; p. 12).
 
-> [!mais] **Cores repetidas.** O manual recomenda, nas primeiras partidas, não ter acima do tabuleiro várias cartas cujo cubo vai na mesma cor. A faixa colorida na lateral da carta mostra essa cor (p. 5). É conselho, não regra.
-
-> [!edicao] O manual diz que o habitat "pode ser orientado em qualquer direção" (p. 6) e ilustra 6 giros (p. 7). Ele não fala em espelhar o desenho. Este guia diz "girado" e não afirma nada sobre espelhar.
+> [!edicao] O manual diz que o habitat "pode ser orientado em qualquer direção" (p. 6) e ilustra 6 giros (p. 7). Não fala em espelhar o desenho, e este guia não afirma nada sobre isso.
 
 !fig[No exemplo do manual, Giulia pega 2 cinzas e 1 vermelha e põe uma das cinzas no tabuleiro (1); com isso forma o habitat da Raposa Feneco e põe um cubo nele (2). Ilustração: manual Galápagos (p. 6)](figuras/cubo-1.webp)
 
@@ -323,13 +309,13 @@ Três etapas, cada uma uma parte real da partida: pôr peças e formar paisagens
 >
 > ?? O habitat de uma carta pede uma montanha de altura 2 ao lado de uma azul. Você tem uma montanha de altura 3 ao lado de uma azul. Pode pôr o cubo?
 > - ( ) Pode: a montanha é ainda maior que a pedida
-> - (x) Não: a altura precisa ser exatamente a do desenho
 > - ( ) Pode, se girar o desenho
+> - (x) Não: a altura precisa ser exatamente a do desenho
 > = Árvores e montanhas do habitat precisam ter a altura exata (p. 6).
 
 ## 4. Etapa 3: fim da partida e pontos
 
-> [!entender] **Para entender.** A partida não tem número fixo de rodadas. Ela acaba quando o material comum se esgota (a bolsa não tem peças para reabastecer o tabuleiro central) ou quando um tabuleiro pessoal está quase cheio. Como o primeiro jogador sempre começa cada rodada, a rodada é completada para todos jogarem o mesmo número de turnos (p. 7).
+> [!entender] **Para entender.** A partida não tem número fixo de rodadas. Ela acaba quando a bolsa se esgota ou quando um tabuleiro pessoal está quase cheio, e a rodada é completada para todos jogarem o mesmo número de turnos (p. 7).
 >
 > Na contagem, cada tipo de paisagem tem uma restrição que muda a estratégia: montanha precisa de vizinha, campo grande vale o mesmo que campo pequeno, construção precisa de vizinhos variados, e só o melhor rio pontua (p. 8).
 
@@ -367,7 +353,7 @@ Três etapas, cada uma uma parte real da partida: pôr peças e formar paisagens
 
 > [!atencao] Uma construção na borda tem menos vizinhos, e espaço vazio não mostra cor nenhuma (p. 8). E campo grande não rende mais: 4 amarelas juntas valem 5, mas dois grupos de 2 valem 10 (p. 8).
 
-!fig[O exemplo de contagem do manual: o rio de 7 peças vale 19; montanhas de 7, 1, 1 e 1, ligadas entre si; dois campos de 5; construções de 5 (3 ou mais cores em volta) e uma de 0 (só 2 cores); árvores de 1 e 3. Embaixo, as cartas de animais com o espaço que conta circulado; na folha, 53 pontos de paisagens mais 63 de animais. Ilustração: manual Galápagos (p. 9)](figuras/pontuacao.webp)
+!fig[O tabuleiro de Giulia no fim da partida, com o valor de cada paisagem marcado; embaixo, as cartas de animais com o espaço que conta circulado; ao lado, a folha com 53 de paisagens mais 63 de animais. Ilustração: manual Galápagos (p. 9)](figuras/pontuacao.webp)
 
 > [!resolvido] **Exemplo resolvido: a contagem do manual** (p. 9). Giulia, lado A:
 >
@@ -387,8 +373,8 @@ Três etapas, cada uma uma parte real da partida: pôr peças e formar paisagens
 > = Só a construção com 3 cores vale 5; o rio de 5 peças vale 11 (p. 8). Paisagens: 10 + 6 + 10 + 5 + 11 = 42.
 >
 > ?? Nos animais, você tem o Musaranho com 2 cubos postos (o 17 ainda coberto) e uma carta de 8 e 4 com 1 cubo posto (o 8 coberto). Qual é o total da partida?
-> - ( ) 42
 > - (x) 56
+> - ( ) 42
 > - ( ) 67
 > = Musaranho 10, a outra carta 4: animais 14. Total 42 + 14 = 56 (p. 9).
 
@@ -406,20 +392,6 @@ Três etapas, cada uma uma parte real da partida: pôr peças e formar paisagens
 > - (x) Carla, que posicionou mais cubos
 > = No empate, vence quem posicionou mais cubos de animais; só se isso também empatar a vitória é dividida (p. 7).
 
-> [!treino] **Treino rápido: o rio** (p. 8)
->
-> ?? a) Rio de 8 peças.
-> - ( ) 15
-> - (x) 23
-> - ( ) 32
-> = 15 pelas 6 primeiras, mais 4 por peça a partir da sétima: 15 + 8 = 23.
->
-> ?? b) Você tem dois rios, de 4 e de 3 peças, separados.
-> - ( ) 13
-> - (x) 8
-> - ( ) 5
-> = Só o melhor rio pontua: o de 4 vale 8.
-
 ## 5. Situações especiais
 
 > [!mais] **Espíritos da natureza (variante).** Depois de algumas partidas, embaralhe as cartas de espíritos da natureza e dê 2 a cada jogador, viradas para baixo. No seu primeiro turno, olhe as 2, escolha 1, ponha acima do tabuleiro virada para cima, devolva a outra à caixa e ponha um cubo de espírito da natureza na escolhida. Esse cubo segue as regras de posicionamento dos cubos de animais. A carta conta no limite de 4 até ser completada. No fim, ela só pontua se o cubo foi posto, sem penalidade se não foi, e os pontos seguem a regra impressa na carta, calculados com as paisagens do fim da partida. Somam-se na coluna dos animais (p. 10).
@@ -430,9 +402,7 @@ Três etapas, cada uma uma parte real da partida: pôr peças e formar paisagens
 
 > [!edicao] **O que o manual não diz.** Ele não diz o que fazer se a bolsa tiver menos de 3 peças na hora de reabastecer, nem se a pilha de cartas de animais acabar. A regra de fim só fala em bolsa "vazia" quando é preciso reabastecer (p. 7). Combine com a mesa antes de começar, se acontecer.
 
-> [!dica] Montanhas e árvores altas valem muito (7), mas pedem 3 peças da mesma pilha. Os animais muitas vezes pedem peças baixas. Antes de subir uma pilha, olhe se alguma das suas cartas precisa dela na altura atual.
-
-> [!dica] Os campos valem por grupo. Várias duplas de amarelas separadas rendem mais do que um campo grande.
+> [!dica] Montanhas e árvores de 3 peças valem 7, o máximo de uma pilha. Mas o habitat de um animal pede a altura exata (p. 6): antes de subir uma pilha, veja se alguma das suas cartas precisa dela na altura em que está.
 
 ## 6. Avaliação final
 
@@ -440,8 +410,8 @@ Responda sem consultar. Cada resposta diz o que reler.
 
 ?? 1. Partida de 2 jogadores. Quantos espaços do tabuleiro central recebem peças e quantas cartas de animais ficam abertas?
 - ( ) 3 espaços e 3 cartas
-- (x) 5 espaços e 5 cartas
 - ( ) 5 espaços e 4 cartas
+- (x) 5 espaços e 5 cartas
 = **5 e 5**: o lado de 2-4 jogadores tem 5 espaços de 3 peças, e há 5 cartas abertas; 3 e 3 é o solo (p. 2, 3 e 11). Releia a montagem.
 
 ?? 2. Onde uma peça verde pode ir?

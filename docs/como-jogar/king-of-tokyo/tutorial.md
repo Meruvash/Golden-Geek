@@ -4,14 +4,14 @@
 
 ## setup. Montar a mesa passo a passo
 
-A montagem segue o quadro "Preparação" do manual, na p. 3, na mesma ordem: seis passos. A lista de componentes está na p. 2.
+A montagem segue o quadro "Preparação" do manual (p. 3), na mesma ordem. Os componentes estão na p. 2.
 
 **Componentes da caixa** (p. 2)
 
 | Componente | Quantidade | Para que serve |
 |---|---|---|
-| Tabuleiros de Monstro | 6 | Um por jogador; dois discos: Pontos de Vitória e Pontos de Vida |
-| Figuras de papelão | 6 | O seu Monstro; fica perto de você ou dentro de Tóquio |
+| Tabuleiros de Monstro | 6 | Discos de Pontos de Vitória e de Pontos de Vida |
+| Figuras de papelão | 6 | O seu Monstro, perto de você ou em Tóquio |
 | Tabuleiro de Tóquio | 1 | Dois lugares: Cidade de Tóquio e Baía de Tóquio |
 | Dados pretos | 6 | Os dados que todos rolam |
 | Dados verdes | 2 | Só com certas cartas de Poder |
@@ -140,13 +140,13 @@ A partida termina no fim do turno em que um Monstro chega a 20 Pontos de Vitóri
 
 ## 0. Antes de tudo: o que é este jogo
 
-King of Tokyo é um jogo de dados para 2 a 6 jogadores, a partir de 8 anos, com partidas de cerca de 30 minutos (p. 1). Cada jogador controla um Monstro, com um tabuleiro que marca Pontos de Vitória e Pontos de Vida. Há dois caminhos para vencer: chegar primeiro a 20 Pontos de Vitória ou ser o último Monstro vivo (p. 1).
+King of Tokyo é um jogo de dados para 2 a 6 jogadores, a partir de 8 anos, com partidas de cerca de 30 minutos (p. 1). Há dois caminhos para vencer: chegar primeiro a 20 Pontos de Vitória ou ser o último Monstro vivo (p. 1).
 
-A cada turno, você rola seis dados, escolhe o que guardar e o que rolar de novo, e faz o que as faces finais mandam. Estar em Tóquio dá pontos e faz cada garra sua ferir todos os de fora, mas expõe você a todos e impede a cura pelos dados (p. 5).
+A cada turno, você rola seis dados e faz o que as faces finais mandam. Estar em Tóquio dá pontos e faz cada garra sua ferir todos os de fora, mas expõe você a todos e impede a cura pelos dados (p. 5).
 
 ## 1. Como este guia ensina
 
-São três etapas, na ordem em que as dúvidas aparecem na mesa: rolar e resolver os dados; entrar, ficar e sair de Tóquio; cartas de Poder e fim da partida. Cada etapa tem **Para entender** (o porquê), **Passo a passo** (a regra de sempre), regras adicionais em blocos à parte e tarefas com ajuda decrescente: **exemplo resolvido**, tarefa para **completar** e **sua vez**. Escolha uma opção em cada pergunta para ver a certa e a explicação. No fim, uma avaliação diz o que reler, e a folha de consulta fica para a mesa.
+São três etapas, na ordem em que as dúvidas aparecem na mesa: rolar e resolver os dados; entrar, ficar e sair de Tóquio; cartas de Poder e fim da partida. Cada etapa tem **Para entender** (o porquê), **Passo a passo** (a regra de sempre), regras adicionais à parte e tarefas com ajuda decrescente: **exemplo resolvido**, tarefa para **completar** e **sua vez**. Escolha uma opção em cada pergunta para ver a certa e a explicação. No fim, uma avaliação diz o que reler, e a folha de consulta fica para a mesa.
 
 ## 2. Etapa 1: rolar e resolver os dados
 
@@ -199,13 +199,7 @@ São três etapas, na ordem em que as dúvidas aparecem na mesa: rolar e resolve
 > - ( ) 15
 > = Trinca de 3 vale 3; os dois dados a mais valem 1 cada (p. 4).
 >
-> ?? b) 1, 1, 2, 2, 3 e 3.
-> - (x) 0
-> - ( ) 6
-> - ( ) 3
-> = Nenhum número aparece três vezes; par não pontua (p. 4).
->
-> ?? c) Seis faces de 1.
+> ?? b) Seis faces de 1.
 > - ( ) 6
 > - (x) 4
 > - ( ) 1
@@ -310,7 +304,7 @@ São três etapas, na ordem em que as dúvidas aparecem na mesa: rolar e resolve
 
 > [!edicao] **Dois Monstros a 20 no mesmo turno.** O manual não traz desempate para esse caso, e o guia não inventa um.
 
-> [!mais] **Cartas com esclarecimento no manual.** A p. 7 explica cinco cartas. **Imitador:** copia o efeito de uma carta como se ela tivesse acabado de ser jogada; se a copiada for descartada, a ficha volta para você, e por 1 de Energia, no início do seu próximo turno, você a põe em outra carta Constante. **Sopro de Fogo:** os Monstros à sua direita e à sua esquerda perdem 1 de Vida, mesmo no mesmo lugar que você; com 2 jogadores, o adversário perde só 1. **Oportunista:** com dois em jogo, compra primeiro o primeiro Monstro em sentido horário a partir do jogador da vez. **Metamorfose:** as Constantes descartadas com ela saem no Fim do turno e devolvem o custo impresso. **Cuspe Envenenado e Raio de Encolhimento:** as fichas ficam mesmo sem a carta e só saem fora de Tóquio, usando corações (p. 7).
+> [!mais] **Cartas com esclarecimento no manual** (p. 7). **Imitador:** copia uma carta como se ela tivesse acabado de ser jogada; se a copiada sair, a ficha volta, e por 1 de Energia, no início do seu turno, vai para outra Constante. **Sopro de Fogo:** os vizinhos da direita e da esquerda perdem 1, mesmo no mesmo lugar que você; a 2, o adversário perde só 1. **Oportunista:** com dois em jogo, compra primeiro o primeiro Monstro em sentido horário a partir do jogador da vez. **Metamorfose:** as Constantes saem no Fim do turno e devolvem o custo impresso. **Cuspe Envenenado e Raio de Encolhimento:** as fichas ficam mesmo sem a carta e só saem fora de Tóquio, usando corações.
 
 ## 6. Avaliação final
 

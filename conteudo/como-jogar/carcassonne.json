@@ -1,0 +1,23 @@
+{
+ "slug": "carcassonne",
+ "titulo": "Como jogar Carcassonne",
+ "jogo": "Carcassonne",
+ "genero": "Colocação de peças · Família",
+ "jogadores": "2 a 5 jogadores",
+ "duracao": "35 min",
+ "idade": "7+",
+ "edicao": "Edição Devir",
+ "data": "2026-11-05",
+ "descricao": "Regras de Carcassonne passo a passo, conferidas no manual da Devir: montagem, cartelas, seguidores, pontos de estradas, cidades, monastérios e campos.",
+ "resumo": "Você coloca uma cartela de terreno por turno, põe seguidores em estradas, cidades, monastérios e campos, e vence quem tiver mais pontos quando as cartelas acabarem.",
+ "pontos": [
+  "No seu turno, você coloca uma cartela continuando o terreno e pode pôr um seguidor nela, numa zona que ainda não tenha seguidor.",
+  "Estrada concluída vale 1 ponto por cartela; cidade concluída, 2 por cartela e 2 por brasão; monastério cercado, 9. O seguidor volta para a reserva.",
+  "Quando as cartelas acabam, o que ficou pela metade ainda pontua (a cidade vale a metade), e os fazendeiros ganham 3 por cidade concluída no seu campo."
+ ],
+ "leitura_min": 12,
+ "etapas": 3,
+ "resenha": null,
+ "chamada": "Monte o mapa de Carcassonne cartela por cartela e ponha seus seguidores nas estradas, cidades e campos certos. Começa com um resumo para jogar em 4 minutos e segue em três etapas, da primeira cartela à contagem final.",
+ "publicar": false
+}
