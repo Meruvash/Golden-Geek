@@ -11,7 +11,7 @@ Esta seção segue a preparação do manual (p. 3), na mesma ordem. Ela vale par
 | Peça | Quantidade na caixa | Para quê |
 |---|---|---|
 | Tabuleiro dupla face | 2, com 4 pistas (EUA, França, Grã-Bretanha e Itália) | A pista da corrida (p. 2) |
-| Painel do jogador | 6, um por cor | Câmbio, motor, baralho e descarte de cada piloto (p. 2) |
+| Painel do jogador | 6, um por cor | Câmbio, motor, baralho e descarte de cada piloto (p. 3 e 5) |
 | Carro | 6, um por cor | Sua posição na pista (p. 2) |
 | Pino de marcha | 6, um por cor | Marca a marcha em que você está (p. 2) |
 | Cartas básicas | 72, 12 por cor: três de cada valor, 1, 2, 3 e 4 | A velocidade do carro; têm o símbolo de velocímetro (p. 2) |
@@ -27,7 +27,7 @@ Esta seção segue a preparação do manual (p. 3), na mesma ordem. Ela vale par
 | 5 ou 6 | A adrenalina vale para os dois últimos carros (p. 5) |
 | Qualquer número | Só os carros que correm vão para o grid; o resto da preparação é igual para todos (p. 3) |
 
-O livreto de regras básicas não traz partida solo. Jogar sozinho, ou completar a mesa com pilotos automáticos, usa o módulo Lendas, explicado no outro livreto da caixa, de regras avançadas.
+O livreto de regras básicas não traz partida solo. Jogar sozinho, ou completar a mesa com pilotos automáticos, usa o módulo Lendas, explicado no outro livreto da caixa, de regras avançadas (livreto avançado, p. 1).
 
 **Passo a passo**
 
@@ -37,11 +37,11 @@ O livreto de regras básicas não traz partida solo. Jogar sozinho, ou completar
 
 2. **Cada jogador escolhe uma cor** e pega o carro, o painel, o pino de marcha e as 12 cartas básicas dessa cor, mais as 3 cartas de melhoria inicial da mesma cor (p. 3).
 
-!fig[As cartas de cada piloto: na fila de cima, as básicas de valor 1 a 4 (três de cada); na do meio, as três melhorias iniciais (0, 5 e uma de calor, com o fundo de divisas); embaixo, uma carta de estresse e uma de calor. Ilustração: manual oficial Days of Wonder (p. 2)](figuras/setup-componentes.webp)
+!fig[As cartas de cada piloto: na fila de cima, as básicas de valor 1 a 4 (três de cada); na do meio, as três melhorias iniciais (0, 5 e uma de calor, com o fundo de divisas); embaixo, uma carta de estresse e uma de calor. Os rótulos em inglês dizem "18 cartas de melhoria inicial (3 por jogador)", "37 cartas de estresse" e "48 cartas de calor". Ilustração: manual oficial Days of Wonder (p. 2)](figuras/setup-componentes.webp)
 
-3. **Leia no tabuleiro quantas cartas de calor e de estresse cada carro recebe.** Em geral são 6 de calor e 3 de estresse, e o manual usa esses números no resto da preparação (p. 3). No mesmo quadro estão as curvas por volta, as casas por volta e o número de voltas da corrida.
+3. **Leia no tabuleiro quantas cartas de calor e de estresse cada carro recebe.** Em geral são 6 de calor e 3 de estresse, e o manual usa esses números no resto da preparação (p. 3). Na pista dos EUA são 6 e 3; nas outras, use os números do quadro de cada pista. No mesmo quadro estão as curvas por volta, as casas por volta e o número de voltas da corrida, e ao lado fica o Hall da Fama, a coluna onde os carros que terminam a corrida são postos em ordem (p. 3 e 7).
 
-!fig[O quadro da pista dos EUA. As setas apontam o número de voltas (2), as casas por volta (69) e as curvas por volta (4); embaixo, os ícones mostram 6 cartas de calor e 3 de estresse por carro. Ilustração: manual oficial Days of Wonder (p. 3)](figuras/setup-quadro.webp)
+!fig[O quadro da pista dos EUA. As setas apontam o número de voltas (2), as casas por volta (69) e as curvas por volta (4); embaixo, os ícones mostram 6 cartas de calor e 3 de estresse por carro. A seta da direita aponta o Hall da Fama, a coluna numerada onde os carros que chegam são postos em ordem. Ilustração: manual oficial Days of Wonder (p. 3)](figuras/setup-quadro.webp)
 
 4. **Monte o baralho.** Ponha o painel à sua frente. Embaralhe as 12 cartas básicas, as 3 de melhoria inicial e 3 cartas de estresse: são 18 cartas. O baralho fica virado para baixo no espaço da esquerda do painel (p. 3).
 5. **Encha o motor.** Ponha 6 cartas de calor viradas para cima no espaço do motor, no meio do painel (p. 3).
@@ -53,15 +53,15 @@ O livreto de regras básicas não traz partida solo. Jogar sozinho, ou completar
 
 !fig[A reserva de cartas de estresse (7), ao lado do tabuleiro. Ilustração: manual oficial Days of Wonder (p. 3)](figuras/setup-estresse.webp)
 
-8. **Sorteie o grid de largada.** Ponha os carros participantes no grid ao acaso, um de cada vez, ocupando as posições em ordem crescente. Essa ordem é a dos turnos na primeira rodada (p. 3).
+8. **Sorteie o grid de largada.** Ponha os carros participantes no grid ao acaso, um de cada vez, ocupando as posições em ordem crescente. Essa ordem vale só para a primeira rodada (p. 3); depois, cada rodada começa pelo carro que estiver mais à frente na pista (p. 4). O primeiro carro sorteado fica na posição 1, a da frente, e joga primeiro (p. 3 e 4).
 
-!fig[O grid de largada (8), no alto da pista: os carros enfileirados em posições numeradas. Ilustração: manual oficial Days of Wonder (p. 3)](figuras/setup-grid.webp)
+!fig[O grid de largada (8), no alto da pista: os carros enfileirados. Ilustração: manual oficial Days of Wonder (p. 3)](figuras/setup-grid.webp)
 
 9. **Compre 7 cartas do seu baralho.** São as cartas que você tem para a primeira rodada (p. 3).
 
 > [!mais] **Equilibrar a mesa.** Se um piloto experiente joga com novatos, o manual sugere que ele tire 1 ou 2 cartas de calor do próprio carro (p. 3).
 
-**O que volta para a caixa.** Ficam guardados as cores que ninguém usa, as cartas de calor e de estresse que não entraram nos carros nem na reserva (as regras básicas não usam o calor que sobra) e todo o material dos módulos avançados, que o manual deixa para depois (p. 2).
+**O que volta para a caixa.** Ficam guardados as cores que ninguém usa, as cartas de calor que não entraram nos carros e todo o material dos módulos avançados, que o manual deixa para depois (p. 2). O manual não usa uma reserva de calor nas regras básicas; guardar o calor que sobra é a leitura deste guia.
 
 **Quem começa.** Não há primeiro jogador: a primeira rodada segue a ordem do grid, do carro da frente para trás (p. 3 e 4).
 
@@ -128,13 +128,13 @@ Vence quem cruzar primeiro a linha de chegada depois das voltas indicadas. Se do
 
 !video[HEAT: Pedal to the Metal | Gameplay resumida, canal Duque Board Games](https://www.youtube.com/watch?v=eSF0OhUyuLU&t=0s)
 
-> [!atencao] **Os três erros mais caros.** O carro anda exatamente a velocidade, nem uma casa a menos (p. 5). O vácuo não entra na conta da curva, mas o turbo entra (p. 6). E carta de calor nunca é jogada nem descartada da mão: só sai pelo resfriamento (p. 7).
+> [!atencao] **Os três erros mais caros.** O carro anda exatamente a velocidade, nem uma casa a menos (p. 5). O vácuo não entra na conta da curva, mas o turbo entra (p. 6). E carta de calor nunca é jogada nem descartada da mão: só sai pelo resfriamento (ou, no caso raro da mão entupida, completando a jogada; p. 7).
 
 ## 0. Antes de tudo: o que é este jogo
 
-Heat é um jogo de corrida de carros com cartas. Ninguém rola dado para andar: você escolhe a marcha, escolhe as cartas e sabe, antes de revelar, quantas casas vai andar. O acaso está no baralho, que decide que cartas chegam à mão, e nas cartas de estresse (p. 3 a 5).
+Heat é um jogo de corrida de carros com cartas. Ninguém rola dado para andar: você escolhe a marcha, escolhe as cartas e em geral sabe, antes de revelar, quantas casas vai andar. O acaso está no baralho, que decide que cartas chegam à mão, e nas cartas de estresse (p. 3 a 5).
 
-O motor é o seu orçamento. Ele começa com 6 cartas de calor. Cada vez que você força o carro (passa rápido demais numa curva, usa o turbo, pula duas marchas), uma carta de calor sai do motor e vai para a pilha de descarte. Dali, mais tarde, ela é embaralhada de volta e chega à sua mão, onde não serve para nada e ocupa espaço. Para devolvê-la ao motor, é preciso resfriar, em geral andando nas marchas baixas (p. 7).
+O motor é o seu orçamento. Ele começa com 6 cartas de calor. Cada vez que você força o carro (passa rápido demais numa curva, usa o turbo, pula duas marchas), uma ou mais cartas de calor saem do motor e vão para a pilha de descarte. Dali, mais tarde, ela é embaralhada de volta e chega à sua mão, onde não serve para nada e ocupa espaço. Para devolvê-la ao motor, é preciso resfriar, em geral andando nas marchas baixas (p. 7).
 
 Duas ideias sustentam o resto:
 
@@ -149,9 +149,9 @@ O guia tem três etapas, cada uma uma parte real da corrida: andar na reta, pass
 
 > [!entender] **Para entender.** Cada rodada tem nove passos, impressos no alto do painel. Quatro acontecem sempre: trocar de marcha, jogar cartas, revelar e mover, e completar a mão. Os outros cinco (adrenalina, reagir, vácuo, conferir curva e descartar) só valem em certas situações (p. 4).
 >
-> Os dois primeiros passos são feitos por todos ao mesmo tempo, cada um no seu ritmo. Do passo 3 em diante, um carro de cada vez faz tudo, do 3 ao 9, começando pelo carro mais à frente; depois vem o de trás, e assim até o último (p. 4).
+> Os dois primeiros passos são feitos por todos ao mesmo tempo, cada um no seu ritmo. Do passo 3 em diante, um carro de cada vez faz tudo, do 3 ao 9, começando pelo carro mais à frente; depois vem o de trás, e assim até o último (p. 4). A ordem sorteada no grid vale só para a primeira rodada (p. 3): toda rodada começa pelo carro que está na frente naquele momento.
 >
-> **A pista** é dividida em casas. Cada casa tem vagas lado a lado, e a vaga mais perto da linha de corrida conta como mais à frente (p. 4 e 5). Pequenos marcadores na beira da pista mostram quantas casas faltam para a próxima curva (p. 4).
+> **A pista** é dividida em casas. Cada casa tem vagas lado a lado (duas, nas ilustrações do manual). A **linha de corrida** é a linha que corre ao longo de um dos lados da pista (6 na figura abaixo); a vaga mais perto dela conta como mais à frente (p. 4 e 5). A **linha de curva** atravessa a pista no ponto da curva (2 na figura), e o número ao lado dela é o limite de velocidade (p. 4). Pequenos marcadores na beira da pista mostram quantas casas faltam para a próxima curva (p. 4).
 
 !fig[A sequência da rodada no alto do painel: 1 trocar de marcha, 2 jogar cartas, 3 revelar e mover, 4 adrenalina, 5 reagir, 6 vácuo, 7 conferir curva, 8 descartar, 9 completar a mão. Os passos obrigatórios têm o sinal de exclamação. Ilustração: manual oficial Days of Wonder (p. 4)](figuras/sequencia.webp)
 
@@ -176,11 +176,11 @@ O guia tem três etapas, cada uma uma parte real da corrida: andar na reta, pass
 
 > [!mais] **Baralho vazio.** Se você precisa comprar, virar ou descartar uma carta e o baralho acabou, embaralhe a pilha de descarte e faça dela o novo baralho, virado para baixo. As cartas que estão na sua área de jogo ficam fora: elas ainda não foram descartadas (p. 6).
 
-!fig[O exemplo do manual: as cartas reveladas são um 3 e dois estresses. Para o primeiro estresse saem duas cartas de calor, descartadas, e depois um 2; para o segundo sai a melhoria de 5, descartada, e depois um 3. A velocidade é 3 + 2 + 3 = 8. Ilustração: manual oficial Days of Wonder (p. 5)](figuras/estresse.webp)
+!fig[O exemplo do manual: as cartas reveladas são um 3 e dois estresses. Para o primeiro estresse saem uma carta de calor e uma de estresse, descartadas, e depois um 2; para o segundo saem a melhoria de 5 e uma carta de calor, descartadas, e depois um 3. Descartadas: 2 de calor, 1 de estresse e 1 melhoria. Velocidade 3 + 2 + 3 = 8. Ilustração: manual oficial Days of Wonder (p. 5)](figuras/estresse.webp)
 
 > [!resolvido] **Exemplo resolvido.** Você está na 2ª marcha e fica nela. Joga um 4 e uma carta de estresse. Na sua vez, revela as duas. Para o estresse, vira a carta de cima do baralho: é a melhoria de 5, que não é básica e vai para o descarte. Vira a próxima: um 1, básico, que vai para a área de jogo, em cima do estresse. Velocidade: 4 + 1 = 5. O carro anda 5 casas. No fim da vez, o 4, o estresse e o 1 vão para o descarte, e você compra duas cartas.
 
-> [!complete] **Complete.** Você está na 3ª marcha, com 7 cartas na mão: dois calores, um estresse, um 1, um 2, um 3 e um 4. Quer andar o máximo possível sem trocar de marcha.
+> [!complete] **Complete.** Você está na 3ª marcha, com 7 cartas na mão: dois calores, um estresse, um 1, um 2, um 3 e um 4. Quer a maior velocidade garantida sem trocar de marcha.
 >
 > ?? Que cartas você joga?
 > - ( ) As duas de calor e o 4, para tirar o calor da mão
@@ -206,7 +206,7 @@ O guia tem três etapas, cada uma uma parte real da corrida: andar na reta, pass
 
 > [!entender] **Para entender.** Cada curva tem um número na beira da pista, o limite de velocidade, e uma linha de curva atravessando a pista (p. 4). A curva não olha onde você parou: olha se você cruzou a linha neste turno e qual foi a sua velocidade, a soma de todas as cartas da área de jogo (p. 6).
 >
-> Pagar calor é tirar cartas do motor e pôr na pilha de descarte (p. 7). O motor começa com 6. Quando ele está vazio e a curva cobra, o carro roda: volta para antes da curva, cai para a 1ª marcha e recebe cartas de estresse (p. 6). Por isso a pergunta de toda curva é "quanto calor eu tenho?", não só "quantas casas faltam?".
+> Pagar calor é tirar cartas do motor e pôr na pilha de descarte (p. 7). O motor começa com 6. Quando não há calor suficiente para o que a curva cobra, o carro roda: volta para antes da curva, cai para a 1ª marcha e recebe cartas de estresse (p. 6). Por isso a pergunta de toda curva é "quanto calor eu tenho?", não só "quantas casas faltam?".
 
 > [!passos] **Passo a passo: conferir a curva** (p. 6 e 7)
 >
@@ -216,11 +216,11 @@ O guia tem três etapas, cada uma uma parte real da corrida: andar na reta, pass
 > 4. Passou por várias curvas no mesmo turno: confira cada uma separadamente, a partir da primeira linha cruzada.
 > 5. Sem calor suficiente: pague todo o calor que tem e rode (bloco abaixo).
 
-> [!atencao] **Rodar.** Se não tiver calor para pagar o excesso, você paga todo o que tem e roda na hora: o carro volta para a primeira casa disponível antes da linha da curva que causou o rodopio; você pega cartas de estresse da reserva para a mão, 1 se estiver na 1ª ou na 2ª marcha, 2 se estiver na 3ª ou na 4ª; e o pino de marcha vai para a 1ª (p. 6).
+> [!atencao] **Rodar.** Se não tiver calor para pagar o excesso, você paga todo o que tem e roda na hora: o carro volta para a primeira casa disponível antes da linha da curva que causou o rodopio; você pega cartas de estresse da reserva para a mão, 1 se estiver na 1ª ou na 2ª marcha, 2 se estiver na 3ª ou na 4ª; e o pino de marcha vai para a 1ª (p. 6). Tirar esse estresse da reserva é a leitura deste guia: o manual diz só que você o pega para a mão. No passo de completar a mão, você compra até ter 7 (p. 6); com 7 ou mais na mão, não compra nada.
 
 > [!mais] **Pular duas marchas.** No passo de trocar de marcha, você pode mover o pino duas marchas (da 1ª para a 3ª, da 2ª para a 4ª e o contrário), pagando 1 calor na hora. Como todos trocam ao mesmo tempo, anuncie, pague e mova o pino (p. 4 e 7).
 
-> [!mais] **Mão entupida.** Calor nunca é jogado nem descartado da mão; ele só ocupa lugar. Se a mão tiver tanto calor que faltam cartas jogáveis para a sua marcha, jogue todas as que puder e complete com cartas de calor. Nesse caso o carro não anda: ao revelar, ponha o pino na 1ª marcha, ponha as cartas da área de jogo no descarte e vá direto ao passo de completar a mão (p. 7).
+> [!mais] **Mão entupida.** Calor nunca é descartado da mão e só é jogado neste caso raro; no resto do tempo, ele só ocupa lugar. Se a mão tiver tanto calor que faltam cartas jogáveis para a sua marcha, jogue todas as que puder e complete com cartas de calor. Nesse caso o carro não anda: ao revelar, ponha o pino na 1ª marcha, ponha as cartas da área de jogo no descarte e vá direto ao passo de completar a mão (p. 7).
 
 > [!resolvido] **Exemplo resolvido.** Você está na 4ª marcha, com 2 cartas de calor no motor. Joga 2 + 1 + 2 + 1 e cruza uma curva de limite 3. Velocidade 6, excesso 3, mas o motor só tem 2. Você paga as 2 e roda: o carro volta para a primeira casa disponível antes daquela linha de curva, você pega 2 cartas de estresse da reserva (está na 4ª) e o pino vai para a 1ª marcha.
 
@@ -262,22 +262,20 @@ O guia tem três etapas, cada uma uma parte real da corrida: andar na reta, pass
 > - ( ) 2
 > = Na 1ª ou na 2ª, 1 estresse; na 3ª ou na 4ª, 2 (p. 6).
 
-> [!dica] Os marcadores de casas até a próxima curva servem para planejar: com eles, dá para saber antes de jogar se as cartas vão cruzar a linha e quanto vai custar. Uma sugestão: deixe calor no motor para as curvas, em vez de gastá-lo todo na reta.
+> [!dica] Os marcadores de casas até a próxima curva servem para planejar: com eles, dá para saber antes de jogar se as cartas vão cruzar a linha e quanto vai custar. Uma sugestão: deixe calor no motor para as curvas, em vez de gastá-lo todo na reta. E lembre que o resfriamento (passo 5) vem antes de conferir a curva (passo 7): o calor que você devolve ao motor na 1ª ou na 2ª marcha já pode pagar a curva do mesmo turno (p. 4 e 6).
 
 ## 4. Etapa 3: reagir, pegar vácuo e cruzar a chegada
 
-> [!entender] **Para entender.** Depois de mover, o jogo dá algumas ferramentas, todas opcionais. Na fase de reação você ativa, na ordem que quiser, os símbolos a que tem acesso: nas regras básicas, os da sua marcha (turbo e resfriamento) e a adrenalina, se for o último (p. 5). Depois vem o vácuo, se você estiver colado em outro carro (p. 6). A diferença entre eles na curva é o ponto mais importante desta etapa: o turbo e a adrenalina aumentam a velocidade que a curva confere; o vácuo só anda casas (p. 6).
+> [!entender] **Para entender.** Depois de mover, o jogo dá algumas ferramentas, todas opcionais. Na fase de reação você ativa, na ordem que quiser, os símbolos a que tem acesso: nas regras básicas, o turbo, que vale em qualquer marcha, o resfriamento da 1ª e da 2ª marcha e a adrenalina, se for o último (p. 5 e 6). Depois vem o vácuo, se você estiver colado em outro carro (p. 6). A diferença entre eles na curva é o ponto mais importante desta etapa: o turbo e a adrenalina aumentam a velocidade que a curva confere; o vácuo só anda casas (p. 6).
 
 > [!passos] **Passo a passo: do passo 4 ao 9** (p. 5 e 6)
 >
-> 1. **Adrenalina** (só para o último carro a mover na rodada; com 5 carros ou mais, para os dois últimos): você pode andar 1 casa a mais, somando 1 à velocidade, e ganhar 1 resfriamento a mais. Ela não se guarda para outra rodada.
-> 2. **Reagir.** Ative os seus símbolos, um por vez, na ordem que quiser.
-> 3. **Resfriamento:** devolva cartas de calor da mão para o motor, quantas o número indicar. Na 1ª marcha, 3; na 2ª, 1.
-> 4. **Turbo:** em qualquer marcha, uma vez por turno, pague 1 calor e ganhe um símbolo +: vire cartas até sair uma básica e ande o valor dela. Você ainda pode ser bloqueado.
-> 5. **Vácuo.** Se você está ao lado de outro carro ou na casa logo atrás de um, pode andar 2 casas. Uma vez por turno. Se a casa final estiver cheia, você fica na primeira casa com vaga livre atrás.
-> 6. **Conferir curva**, como na etapa 2.
-> 7. **Descartar.** Se quiser, descarte cartas da mão, viradas para cima, na pilha de descarte. Estresse e calor nunca podem ser descartados.
-> 8. **Completar a mão**, como na etapa 1.
+> - **4. Adrenalina** (só para o último carro a mover na rodada; com 5 carros ou mais, para os dois últimos): você pode andar 1 casa a mais, somando 1 à velocidade, e/ou ganhar 1 resfriamento a mais. Ela não se guarda para outra rodada.
+> - **5. Reagir.** Ative os seus símbolos, um por vez, na ordem que quiser. **Resfriamento:** devolva cartas de calor da mão para o motor, quantas o número indicar: na 1ª marcha, 3; na 2ª, 1; na 3ª e na 4ª, nenhum (mais 1 se a adrenalina der). **Turbo:** em qualquer marcha, uma vez por turno, pague 1 calor e ganhe um símbolo +: vire cartas até sair uma básica e ande o valor dela. Você ainda pode ser bloqueado.
+> - **6. Vácuo.** Se você está ao lado de outro carro ou na casa logo atrás de um, pode andar 2 casas. Uma vez por turno. Se a casa final estiver cheia, você fica na primeira casa com vaga livre atrás.
+> - **7. Conferir curva**, como na etapa 2.
+> - **8. Descartar.** Se quiser, descarte cartas da mão, viradas para cima, na pilha de descarte. Estresse e calor nunca podem ser descartados.
+> - **9. Completar a mão**, como na etapa 1.
 
 > [!atencao] O símbolo + do turbo aumenta a velocidade conferida na curva. O vácuo não: as 2 casas dele não entram na conta, mesmo que levem você para além de uma linha de curva (p. 6).
 
@@ -305,7 +303,7 @@ O guia tem três etapas, cada uma uma parte real da corrida: andar na reta, pass
 > - (x) Devolver as 3 ao motor, com o resfriamento 3 da 1ª marcha
 > - ( ) Descartá-las no passo de descartar
 > - ( ) Jogá-las na próxima rodada como cartas de valor zero
-> = Na 1ª marcha, o resfriamento é 3. Calor nunca é descartado nem jogado (p. 6 e 7).
+> = Na 1ª marcha, o resfriamento é 3. Calor nunca é descartado e só é jogado no caso raro da mão entupida (p. 6 e 7).
 >
 > ?? Pode usar o turbo duas vezes no mesmo turno, pagando 2 de calor?
 > - ( ) Sim, se tiver calor no motor
@@ -338,7 +336,7 @@ O guia tem três etapas, cada uma uma parte real da corrida: andar na reta, pass
 
 > [!mais] **Estresse virando estresse.** Se o símbolo + virar outra carta de estresse, ela vai para o descarte, como qualquer carta não básica, e você continua virando (p. 5).
 
-> [!mais] **Correr com os módulos.** Garagem, Clima e condições de pista, Lendas e Campeonato estão no livreto de regras avançadas. O manual sugere jogar algumas corridas com as regras básicas antes deles (p. 1).
+> [!mais] **Correr com os módulos.** Garagem, Clima e condições de pista, Lendas e Campeonato estão no livreto de regras avançadas (livreto avançado, p. 1). O manual das regras básicas sugere jogar algumas corridas com ele antes desses módulos (p. 1).
 
 > [!edicao] Este guia foi conferido no manual em inglês. A Galápagos vende o jogo no Brasil como *Heat: Pedal to the Metal*, mas o manual da edição brasileira não estava disponível para download público na biblioteca da Asmodee Brasil quando o guia foi escrito, e os termos da caixa brasileira (calor, estresse, resfriamento, turbo, vácuo e outros) podem ser diferentes dos usados aqui.
 
