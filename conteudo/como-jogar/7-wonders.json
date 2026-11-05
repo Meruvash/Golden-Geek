@@ -1,0 +1,23 @@
+{
+ "slug": "7-wonders",
+ "titulo": "Como jogar 7 Wonders",
+ "jogo": "7 Wonders",
+ "genero": "Draft de cartas · Construção de civilização",
+ "jogadores": "3 a 7 jogadores",
+ "duracao": "30 min",
+ "idade": "10+",
+ "edicao": "2ª edição (Repos Production; no Brasil, Galápagos)",
+ "data": "2026-11-05",
+ "descricao": "Regras de 7 Wonders (2ª edição) passo a passo: montagem, as três ações, recursos e compra dos vizinhos, conflito militar e pontuação com a ciência.",
+ "resumo": "Em três Eras, você escolhe uma carta por turno ao mesmo tempo que todos, constrói Estruturas e a sua Maravilha, e vence quem somar mais pontos de vitória depois da Era III.",
+ "pontos": [
+  "Todos jogam ao mesmo tempo: cada um escolhe 1 carta da mão, faz uma ação com ela (construir a Estrutura, construir um estágio da Maravilha ou vender por 3 Moedas) e passa o resto ao vizinho.",
+  "Recursos não se gastam; o que faltar se compra só dos vizinhos, a 2 Moedas por recurso, e só de cartas Marrons, Cinzas e do recurso inicial do tabuleiro.",
+  "No fim de cada Era, a força militar é comparada com a de cada vizinho; depois da Era III, somam-se Maravilha, Tesouro, conflitos e as cartas Azuis, Amarelas, Verdes e Roxas."
+ ],
+ "leitura_min": 21,
+ "etapas": 3,
+ "resenha": null,
+ "chamada": "Escolha uma carta, passe a mão e construa a sua cidade da Antiguidade ao mesmo tempo que todos. Começa com a mesa montada passo a passo e segue em três etapas, do primeiro turno à contagem da ciência.",
+ "publicar": false
+}

@@ -56,11 +56,9 @@ A montagem segue o quadro "Preparação" do manual, na p. 3, na mesma ordem: sei
 | 2 a 4 | Só a Cidade de Tóquio | 1 |
 | 5 ou 6 | Cidade de Tóquio e Baía de Tóquio | 2 |
 
-O resto da preparação é igual para todos: 10 Pontos de Vida, 0 Pontos de Vitória, 6 dados pretos, 3 cartas à vista.
+O resto da preparação é igual para todos. A partida a 2 não tem regra especial no manual brasileiro (veja as Situações especiais).
 
-> [!mais] **Partida a 2.** O manual brasileiro não tem regra especial para 2 jogadores. O manual em inglês da IELLO, de 2023, traz uma regra opcional; ela está nas Situações especiais.
-
-**O que volta para a caixa.** O manual não diz. Os Monstros que ninguém escolheu (figura e tabuleiro) não têm função na partida; dados verdes e fichas ficam na mesa, porque algumas cartas os usam (p. 2 e 3).
+**O que volta para a caixa.** O manual não diz. Os Monstros que ninguém escolheu não têm função na partida; dados verdes e fichas ficam na mesa, porque algumas cartas os usam (p. 2 e 3).
 
 **Quem começa.** Cada jogador rola os 6 dados pretos; começa quem tirar mais faces de garra (a face de Atacar). Empate: continua-se rolando até um só ter o maior número de garras. Depois, o jogo segue em sentido horário (p. 4).
 
@@ -117,19 +115,14 @@ No primeiro turno da partida ninguém está em Tóquio: as garras do primeiro jo
 > - ( ) 4
 > = Quem sai de Tóquio cede o lugar a quem atacou: você entra na Cidade de Tóquio no passo 3 e ganha 1 (p. 5 e 6).
 
-> [!suavez] **Sua vez.** Você começa o turno dentro de Tóquio, com 8 de Vida e 4 Pontos de Vitória. Seus dados finais: coração, coração, garra, 2, 2 e raio.
+> [!suavez] **Sua vez.** Você começa o turno dentro de Tóquio, com 8 de Vida e 4 Pontos de Vitória. Seus dados finais: coração, coração, garra, 2, 2 e raio. Começar o turno em Tóquio já lhe deu 2 Pontos de Vitória (p. 5).
 >
 > ?? Com quanto de Vida você termina a resolução dos dados?
 > - ( ) 10
 > - (x) 8
 > - ( ) 9
 > = Em Tóquio os corações não curam (p. 5).
->
-> ?? E com quantos Pontos de Vitória?
-> - ( ) 4
-> - ( ) 8
-> - (x) 6
-> = Começar o turno em Tóquio vale 2 (p. 5); o par de 2 não vale nada, só a trinca (p. 4).
+
 
 ### Ainda não precisa saber
 
@@ -149,11 +142,11 @@ A partida termina no fim do turno em que um Monstro chega a 20 Pontos de Vitóri
 
 King of Tokyo é um jogo de dados para 2 a 6 jogadores, a partir de 8 anos, com partidas de cerca de 30 minutos (p. 1). Cada jogador controla um Monstro, com um tabuleiro que marca Pontos de Vitória e Pontos de Vida. Há dois caminhos para vencer: chegar primeiro a 20 Pontos de Vitória ou ser o último Monstro vivo (p. 1).
 
-A cada turno, você rola seis dados, escolhe o que guardar e o que rolar de novo, e faz o que as faces finais mandam. O centro do jogo é o tabuleiro de Tóquio: estar lá dá pontos e transforma cada garra sua num ataque contra todos os de fora, mas deixa você exposto aos ataques de todos e sem poder curar com os dados (p. 5). A Energia compra cartas de Poder, que mudam as regras para o seu Monstro (p. 2 e 6).
+A cada turno, você rola seis dados, escolhe o que guardar e o que rolar de novo, e faz o que as faces finais mandam. Estar em Tóquio dá pontos e faz cada garra sua ferir todos os de fora, mas expõe você a todos e impede a cura pelos dados (p. 5).
 
 ## 1. Como este guia ensina
 
-São três etapas, na ordem em que as dúvidas aparecem na mesa: rolar e resolver os dados; entrar, ficar e sair de Tóquio; cartas de Poder e fim da partida. Cada etapa tem **Para entender** (o porquê), **Passo a passo** (a regra de sempre), regras adicionais em blocos à parte e tarefas com ajuda decrescente: **exemplo resolvido**, tarefa para **completar** e **sua vez**. Escolha uma opção em cada pergunta para ver a certa e a explicação. No fim, uma avaliação diz o que reler, e a folha de consulta vai para a mesa.
+São três etapas, na ordem em que as dúvidas aparecem na mesa: rolar e resolver os dados; entrar, ficar e sair de Tóquio; cartas de Poder e fim da partida. Cada etapa tem **Para entender** (o porquê), **Passo a passo** (a regra de sempre), regras adicionais em blocos à parte e tarefas com ajuda decrescente: **exemplo resolvido**, tarefa para **completar** e **sua vez**. Escolha uma opção em cada pergunta para ver a certa e a explicação. No fim, uma avaliação diz o que reler, e a folha de consulta fica para a mesa.
 
 ## 2. Etapa 1: rolar e resolver os dados
 
@@ -178,12 +171,8 @@ São três etapas, na ordem em que as dúvidas aparecem na mesa: rolar e resolve
 
 > [!mais] **Eliminação.** Quando um Monstro perde o último Ponto de Vida, o disco mostra a caveira e ele é eliminado: as cartas Constantes e os cubos de Energia dele vão para o descarte (p. 4).
 
-> [!mais] **Dados verdes.** Algumas cartas de Poder deixam rolar 1 ou 2 dados verdes junto com os pretos na primeira rolagem (p. 4). Sem essas cartas, eles ficam de lado.
-
 > [!resolvido] **Exemplo resolvido: o exemplo do manual, conta por conta** (p. 5). O CyberKitty está na Cidade de Tóquio, e é a vez do Gigazaur, que está fora. Ele rola 1, 2, 3, 3, coração e raio. Separa os dois 3 e rola os outros quatro: 3, 3, 2, 2, 2 e garra. Muda de ideia: separa os três 2 e rola os outros três, que dão 2, raio e garra. Resultado final: 2, 2, 2, 2, raio, garra. Três faces de 2 valem 2, e o quarto 2 vale +1: 3 Pontos de Vitória. O raio dá 1 de Energia. A garra faz o CyberKitty, em Tóquio, perder 1. Sem coração, não há cura.
 
-
-> [!atencao] **Quatro dados iguais não são "trinca mais um ponto do número".** O dado a mais vale sempre 1, não o número dele: quatro faces de 3 valem 4 (3 da trinca mais 1), e não 6 (p. 4).
 
 > [!complete] **Complete.** Você está fora de Tóquio. Um Monstro está na Cidade de Tóquio, e outros dois estão fora, como você. Seus dados finais: 2, 2, 2, garra, garra e raio. A trinca de 2 dá 2 Pontos de Vitória e o raio, 1 de Energia.
 >
@@ -200,12 +189,7 @@ São três etapas, na ordem em que as dúvidas aparecem na mesa: rolar e resolve
 > - ( ) 7
 > - ( ) 10
 > = Em Tóquio os corações dos dados não curam; só cartas de Poder curam lá (p. 4 e 5).
->
-> ?? Você está em Tóquio e tira três garras. Quem perde 3 de Vida?
-> - ( ) Só o jogador à sua esquerda
-> - (x) Todos os Monstros fora de Tóquio
-> - ( ) Ninguém, porque quem está em Tóquio não ataca
-> = Em Tóquio, as garras ferem todos os Monstros fora de Tóquio (p. 4).
+
 
 > [!treino] **Treino rápido: quantos Pontos de Vitória?** Conte só os números.
 >
@@ -229,7 +213,12 @@ São três etapas, na ordem em que as dúvidas aparecem na mesa: rolar e resolve
 
 ## 3. Etapa 2: entrar, ficar e sair de Tóquio
 
-> [!entender] **Para entender.** Tóquio é o lugar de onde se ataca todo mundo e onde todo mundo ataca você. Entrar vale 1 Ponto de Vitória; começar o turno lá dentro vale 2. Em troca, você não cura com os dados (p. 5). A saída é controlada: ninguém sai de Tóquio quando quer, só quando acaba de perder Vida para a garra de outro Monstro. Nesse momento, decide se fica ou cede, e quem atacou toma o lugar (p. 5 e 6). Assim, Tóquio quase nunca fica vazia por muito tempo.
+> [!entender] **Para entender.** Tóquio é o lugar de onde se ataca todo mundo e onde todo mundo ataca você. Entrar vale 1 Ponto de Vitória; começar o turno lá dentro vale 2. Em troca, você não cura com os dados (p. 5). A saída é vigiada: só se **cede** Tóquio no momento em que se perde Vida para as garras de outro Monstro, e quem atacou toma o lugar. Por isso Tóquio quase nunca fica vazia.
+
+> [!passos] **Passo a passo: Ficar ou ceder** (p. 4 a 6)
+>
+> 1. Você está em Tóquio e acaba de perder Vida para as garras de outro Monstro: escolha ficar ou ceder Tóquio. Fora desse momento, ninguém sai.
+> 2. Quem cede tira a figura de Tóquio e perde a Vida do mesmo jeito; quem atacou entra no lugar.
 
 > [!passos] **Passo a passo: Entre em Tóquio** (p. 5 e 6)
 >
@@ -237,12 +226,6 @@ São três etapas, na ordem em que as dúvidas aparecem na mesa: rolar e resolve
 > 2. Se não há ninguém em Tóquio, você tem de entrar e pôr a sua figura na Cidade de Tóquio.
 > 3. Se um Monstro cedeu Tóquio por causa das suas garras neste turno, você tem de tomar o lugar dele.
 > 4. Ao entrar, ganhe 1 Ponto de Vitória.
-
-> [!passos] **Passo a passo: Ficar ou ceder** (p. 4 e 5)
->
-> 1. Você está em Tóquio e perdeu Vida para as garras de outro Monstro: escolha ficar ou ceder Tóquio.
-> 2. Se cede, tira a figura de Tóquio. A Vida perdida continua perdida.
-> 3. Se fica, no começo do seu próximo turno ganha 2 Pontos de Vitória.
 
 !fig[O exemplo de partida com 5 jogadores, na situação do início: o Gigazaur na Cidade de Tóquio, o Space Penguin na Baía de Tóquio e, fora, MekaDragon, CyberKitty e The King. Ilustração: manual Galápagos (p. 6)](figuras/exemplo-5-jogadores.webp)
 
@@ -252,11 +235,7 @@ São três etapas, na ordem em que as dúvidas aparecem na mesa: rolar e resolve
 
 > [!mais] **Dano de carta não abre a saída.** Perder Vida pelo efeito de uma carta de Poder não é o mesmo que perder para garras: só as garras permitem ceder Tóquio (p. 4).
 
-> [!mais] **O primeiro turno da partida.** Nenhum Monstro começa em Tóquio. O primeiro jogador entra na Cidade de Tóquio no passo Entre em Tóquio, e as garras dele não ferem ninguém (p. 4 e 5).
-
 > [!resolvido] **Exemplo resolvido: o exemplo do manual com 5 jogadores** (p. 6). O Gigazaur está na Cidade e o Space Penguin, na Baía. O MekaDragon tira 4 garras: os dois perdem 4 e cedem; ele entra na Cidade (+1) e a Baía fica vazia. O Gigazaur tira 1 garra: só o MekaDragon perde 1, e fica; como a Baía está vazia, o Gigazaur tem de entrar nela (+1). O Space Penguin tira 1 garra: o Gigazaur e o MekaDragon perdem 1; o Gigazaur cede a Baía, e o Space Penguin entra nela (+1). Depois, o MekaDragon começa o turno em Tóquio (+2) e tira 3 garras: o Gigazaur, The King e o CyberKitty perdem 3, e o Space Penguin, também em Tóquio, nada. O Gigazaur chega a 0 e é eliminado. Restam 4 Monstros: o Space Penguin sai da Baía na hora.
-
-> [!atencao] **Ceder não evita o dano.** O Monstro que cede Tóquio perde a Vida do ataque do mesmo jeito (p. 4). E quem atacou não escolhe: se o outro cedeu, ele tem de entrar (p. 6).
 
 > [!complete] **Complete.** Partida de 4. Ana está na Cidade de Tóquio. Bruno, de fora, tira 2 garras; Ana perde 2 e cede.
 >
@@ -268,23 +247,15 @@ São três etapas, na ordem em que as dúvidas aparecem na mesa: rolar e resolve
 
 > [!suavez] **Sua vez.**
 >
-> ?? Você está em Tóquio desde o turno passado e está com pouca Vida. No seu turno, pode sair de Tóquio por vontade própria?
-> - ( ) Sim, no começo do turno
-> - ( ) Sim, no fim do turno
-> - (x) Não: só depois de perder Vida para as garras de outro Monstro
-> = Você só pode sair de Tóquio após perder Vida para a garra de outro Monstro (p. 5).
->
 > ?? Partida de 6. A Cidade de Tóquio está ocupada e a Baía, vazia. Você, de fora, tira 1 garra, e o Monstro da Cidade decide ficar. O que acontece com você?
 > - (x) Você tem de entrar na Baía de Tóquio e ganha 1
 > - ( ) Nada: só entra quem fez alguém ceder
 > - ( ) Você pode escolher entre ficar fora e entrar na Baía
 > = Com 5 ou 6 jogadores, se a Cidade está ocupada e a Baía vazia, você tem de entrar na Baía (p. 5), como o Gigazaur no exemplo (p. 6).
 
-> [!dica] **Sugestão.** Ficar em Tóquio rende 2 pontos por turno, mas todos os de fora atacam você. Um critério simples: compare a sua Vida com quantas garras os outros podem tirar até a sua próxima vez.
-
 ## 4. Etapa 3: cartas de Poder e fim da partida
 
-> [!entender] **Para entender.** A Energia não vale ponto sozinha: ela vira cartas de Poder. Toda carta tem nome, custo em Energia (no canto de cima), tipo e efeito (p. 2). Há dois tipos. **Constante:** fica virada para cima à sua frente até o fim da partida, salvo se algo disser o contrário. **Descarte:** o efeito acontece na hora e a carta vai para o descarte (p. 2). As três cartas à vista se renovam assim que alguém compra, e quem não gostou de nenhuma pode pagar para trocar as três (p. 6).
+> [!entender] **Para entender.** A Energia serve para comprar cartas de Poder. Toda carta tem nome, custo em Energia (no canto de cima), tipo e efeito (p. 2). Há dois tipos. **Constante:** fica virada para cima à sua frente até o fim da partida, salvo se algo disser o contrário. **Descarte:** o efeito acontece na hora e a carta vai para o descarte (p. 2).
 
 !fig[Uma carta de Poder: custo no canto de cima (5 de Energia), nome, tipo (Descarte) e efeito. Ilustração: manual Galápagos (p. 2)](figuras/carta-de-poder.webp)
 
@@ -321,12 +292,6 @@ São três etapas, na ordem em que as dúvidas aparecem na mesa: rolar e resolve
 
 > [!suavez] **Sua vez.**
 >
-> ?? Você comprou uma carta do tipo Descarte. O que faz com ela?
-> - ( ) Guarda à sua frente até o fim da partida
-> - (x) Resolve o efeito na hora e a põe no descarte
-> - ( ) Guarda e usa quando quiser
-> = Descarte: resolva o efeito imediatamente e descarte a carta (p. 2).
->
 > ?? Durante o seu turno, você chega a 20 Pontos de Vitória ainda no passo de resolver os dados. Quando a partida termina?
 > - ( ) Na hora, antes do passo Entre em Tóquio
 > - (x) No fim deste turno
@@ -335,15 +300,15 @@ São três etapas, na ordem em que as dúvidas aparecem na mesa: rolar e resolve
 
 ## 5. Situações especiais
 
-> [!edicao] **Partida a 2 jogadores.** O manual brasileiro (2016) não tem regra própria para 2. O manual oficial em inglês da IELLO, revisado em novembro de 2023, traz uma regra opcional para 2 jogadores: ao entrar em Tóquio, você ganha 1 de Energia em vez de 1 Ponto de Vitória; ao começar o turno em Tóquio, ganha 1 de Energia em vez de 2 Pontos de Vitória; o resto não muda (manual em inglês, p. 5). Use só se a mesa combinar; pela regra da caixa brasileira, a partida a 2 é igual às outras.
+> [!edicao] **Partida a 2 jogadores.** O manual brasileiro (2016) não tem regra própria para 2. O manual oficial em inglês da IELLO, revisado em novembro de 2023, traz uma regra opcional para 2 jogadores: ao entrar em Tóquio, você ganha 1 de Energia em vez de 1 Ponto de Vitória; ao começar o turno em Tóquio, ganha 1 de Energia em vez de 2 Pontos de Vitória; o resto não muda (manual em inglês, p. 5). Pela caixa brasileira, a partida a 2 é igual às outras.
 
-> [!edicao] **Empate para escolher o primeiro jogador.** O manual diz que, no empate de garras, "os jogadores continuam rolando os dados até que apenas um deles tenha o maior número" (p. 4). Não diz se rolam todos ou só os empatados; rolar só os empatados é a leitura mais simples, mas é uma escolha da mesa.
+> [!edicao] **Empate para escolher o primeiro jogador.** O manual diz que, no empate de garras, "os jogadores continuam rolando os dados até que apenas um deles tenha o maior número" (p. 4). Não diz se rolam todos ou só os empatados: combine antes.
 
 > [!mais] **Os dois Monstros de Tóquio cedem ao mesmo ataque.** Com 5 ou 6 jogadores, se os dois Monstros de Tóquio cedem ao mesmo ataque, quem atacou entra na Cidade de Tóquio, e a Baía fica vazia até o próximo Monstro de fora entrar nela (exemplo da p. 6).
 
-> [!edicao] **A Cidade vazia e a Baía ocupada.** Com 5 ou 6 jogadores, se o Monstro da Cidade de Tóquio é eliminado e o da Baía continua no jogo, o manual não diz se ele passa para a Cidade nem quem deve entrar nela. Só há regra para quando o jogo cai para 4 Monstros ou menos: aí o da Baía sai e, se a Cidade estiver vazia, vai para ela (p. 5). Combine com a mesa antes de jogar.
+> [!edicao] **A Cidade vazia e a Baía ocupada.** Com 5 ou 6 Monstros ainda em jogo, se o da Cidade de Tóquio é eliminado, o manual não diz se o da Baía passa para a Cidade nem quem entra nela; só regula a queda para 4 Monstros ou menos (p. 5). Combine com a mesa.
 
-> [!edicao] **Dois Monstros a 20 no mesmo turno.** O manual não diz o que acontece se dois Monstros chegarem a 20 Pontos de Vitória no mesmo turno (por efeito de carta, por exemplo). O guia não ensina desempate, porque nenhum está no manual.
+> [!edicao] **Dois Monstros a 20 no mesmo turno.** O manual não traz desempate para esse caso, e o guia não inventa um.
 
 > [!mais] **Cartas com esclarecimento no manual.** A p. 7 explica cinco cartas. **Imitador:** copia o efeito de uma carta como se ela tivesse acabado de ser jogada; se a copiada for descartada, a ficha volta para você, e por 1 de Energia, no início do seu próximo turno, você a põe em outra carta Constante. **Sopro de Fogo:** os Monstros à sua direita e à sua esquerda perdem 1 de Vida, mesmo no mesmo lugar que você; com 2 jogadores, o adversário perde só 1. **Oportunista:** com dois em jogo, compra primeiro o primeiro Monstro em sentido horário a partir do jogador da vez. **Metamorfose:** as Constantes descartadas com ela saem no Fim do turno e devolvem o custo impresso. **Cuspe Envenenado e Raio de Encolhimento:** as fichas ficam mesmo sem a carta e só saem fora de Tóquio, usando corações (p. 7).
 
@@ -375,25 +340,19 @@ Responda sem consultar. Cada resposta diz o que reler.
 - ( ) Sim, mas sem perder a Vida
 = Perda de Vida por carta de Poder não é a mesma coisa que por garras; só as garras permitem ceder (p. 4). Releia a etapa 2.
 
-?? 5. Você começa o turno em Tóquio. O que ganha antes de rolar?
-- (x) 2 Pontos de Vitória
-- ( ) 1 Ponto de Vitória
-- ( ) 2 Pontos de Vida
-= Começar o turno em Tóquio vale 2 Pontos de Vitória (p. 5). Releia a etapa 2.
-
-?? 6. Quanto custa trocar as três cartas de Poder à vista?
+?? 5. Quanto custa trocar as três cartas de Poder à vista?
 - ( ) 1 de Energia
 - ( ) 3 de Energia
 - (x) 2 de Energia
 = Pague 2 para limpar as três cartas e revelar três novas (p. 6). Releia a etapa 3.
 
-?? 7. Um Monstro é eliminado. O que acontece com as cartas Constantes e a Energia dele?
+?? 6. Um Monstro é eliminado. O que acontece com as cartas Constantes e a Energia dele?
 - ( ) Vão para quem o eliminou
 - (x) Vão para o descarte
 - ( ) Voltam para o banco e o baralho, embaralhadas
 = As cartas Constantes e os cubos de Energia do eliminado são descartados (p. 4). Releia a etapa 1.
 
-> [!atencao] **Critério para começar a jogar.** Acertou 6 ou 7? Monte a mesa e jogue, com a folha de consulta ao lado. Errou a 2, a 3 ou a 7, releia a etapa 1; a 1, a 4 ou a 5, a etapa 2; a 6, a etapa 3. Depois refaça só as que errou.
+> [!atencao] **Critério para começar a jogar.** Acertou 5 ou 6? Monte a mesa e jogue, com a folha de consulta ao lado. Errou a 2, a 3 ou a 6, releia a etapa 1; a 1 ou a 4, a etapa 2; a 5, a etapa 3. Depois refaça só as que errou.
 
 ## 7. Para consultar durante a partida
 

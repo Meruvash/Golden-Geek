@@ -44,15 +44,15 @@ A montagem segue a página de preparação do manual (p. 3), na mesma ordem. O j
 
 **O que muda com o número de jogadores** (p. 3 e 4):
 
-| Jogadores | Cartas de Era que ficam (em cada baralho) | Roxas sorteadas para a Era III | Cartas na mão no início de cada Era |
-|---|---|---|---|
-| 3 | 3+ | 5 | 7 |
-| 4 | 3+ e 4+ | 6 | 7 |
-| 5 | 3+ a 5+ | 7 | 7 |
-| 6 | 3+ a 6+ | 8 | 7 |
-| 7 | todas (3+ a 7+) | 9 | 7 |
+| Jogadores | Cartas de Era que ficam (em cada baralho) | Roxas sorteadas para a Era III |
+|---|---|---|
+| 3 | 3+ | 5 |
+| 4 | 3+ e 4+ | 6 |
+| 5 | 3+ a 5+ | 7 |
+| 6 | 3+ a 6+ | 8 |
+| 7 | todas (3+ a 7+) | 9 |
 
-Voltam para a caixa: as cartas de Era acima do número de jogadores, as Roxas não sorteadas e os tabuleiros sem dono. Tesouro inicial (3 Moedas) e fichas não mudam.
+Voltam para a caixa: as cartas de Era acima do número de jogadores, as Roxas não sorteadas e os tabuleiros sem dono. Não mudam: as 7 cartas na mão, as 3 Moedas iniciais e as fichas.
 
 **Antes de começar, confira:** três baralhos, só com as cartas do seu número de jogadores; Roxas sorteadas (jogadores mais 2) dentro da Era III; um tabuleiro e 3 Moedas na frente de cada um; reservas de Moedas e de fichas no centro; espaço para o descarte; 7 cartas da Era I na mão de cada um.
 
@@ -97,7 +97,7 @@ Um turno tem três momentos, e todos fazem cada um ao mesmo tempo (p. 4 e 5):
 
 Algumas cartas são grátis: a zona de custo, no canto esquerdo, vem vazia. E o seu tabuleiro já produz um recurso desde o começo, o **recurso inicial** (p. 2 e 6). A etapa 2 explica como pagar o resto.
 
-> [!resolvido] **Exemplo resolvido.** Sua mão da Era I tem 7 cartas. Uma delas não tem nada na zona de custo, no canto esquerdo: é grátis (p. 6). Você a põe virada para baixo à sua frente. Todos revelam; você constrói a Estrutura, pondo a carta virada para cima acima do tabuleiro. As outras 6 cartas vão para o vizinho da esquerda, e você recebe 6 cartas do vizinho da direita.
+> [!resolvido] **Exemplo resolvido.** Na sua mão da Era I, uma carta tem a zona de custo vazia: é grátis (p. 6). Você a escolhe, todos revelam, e você a constrói acima do tabuleiro. Suas outras 6 cartas vão para o vizinho da esquerda; as 6 do vizinho da direita vêm para você.
 
 > [!complete] **Complete.** No turno seguinte, nenhuma das 6 cartas que você recebeu pode ser paga com o que a sua cidade tem, e você não quer comprar nada dos vizinhos.
 >
@@ -137,8 +137,8 @@ O que dá o ritmo ao jogo é a mão que circula. Ninguém compra cartas de um ba
 
 Duas ideias sustentam o resto:
 
-- **Só os vizinhos contam diretamente.** Você compra recursos só dos jogadores à sua esquerda e à sua direita, e a guerra de cada Era é só contra eles (p. 5 e 7).
-- **Tudo vira ponto no fim.** Durante a partida não há placar. Os pontos vêm de sete lugares diferentes, contados depois da Era III: Maravilha, Tesouro, conflitos e as cartas Azuis, Amarelas, Verdes e Roxas (p. 8).
+- **Só os vizinhos contam diretamente.** Você compra recursos só dos jogadores à sua esquerda e à sua direita, e a guerra é só contra eles (p. 5 e 7).
+- **Tudo vira ponto no fim.** Não há placar durante a partida: os pontos de sete fontes são contados depois da Era III (p. 8).
 
 ## 1. Como este guia ensina
 
@@ -181,7 +181,7 @@ Três etapas, cada uma uma parte real da partida: jogar um turno, pagar o que se
 > 3. Jogue a carta escolhida normalmente, com uma das três ações.
 > 4. A Era acaba com a Resolução de Conflitos Militares (etapa 3).
 
-> [!resolvido] **Exemplo resolvido.** Era I, terceiro turno. Você recebeu 5 cartas. Uma é a Estrutura Azul que você já construiu no primeiro turno; outra é uma Vermelha que você não consegue pagar; as outras três você também não quer.
+> [!resolvido] **Exemplo resolvido.** Era I, terceiro turno. Você recebeu 5 cartas, e a única que interessa é uma Azul igual à que você construiu no primeiro turno.
 >
 > 1. A Azul repetida não pode ser construída: você já tem uma carta com esse nome (p. 4).
 > 2. Você pode usá-la num estágio. Se a sua cidade paga o custo do estágio 1 do seu tabuleiro, a carta vai virada para baixo embaixo dele e o efeito do estágio passa a valer (p. 4).
@@ -218,15 +218,13 @@ Três etapas, cada uma uma parte real da partida: jogar um turno, pagar o que se
 
 ## 3. Etapa 2: pagar o custo
 
-> [!entender] **Para entender.** Quase tudo em 7 Wonders tem um preço, impresso na zona de custo, no canto esquerdo da carta, ou embaixo de cada estágio do tabuleiro (p. 6). O preço é pago com três moedas de troca diferentes.
+> [!entender] **Para entender.** O preço está na zona de custo, no canto esquerdo da carta, ou embaixo de cada estágio do tabuleiro (p. 6).
 >
-> **Recursos** são o principal. Eles não saem do lugar: quem tem uma carta Marrom de Madeira tem, para sempre, 1 Madeira por turno. Usar o recurso para construir não o gasta; no turno seguinte ele está lá de novo (p. 6).
+> **Recursos** são o principal, e não saem do lugar: quem tem uma carta Marrom de Madeira tem 1 Madeira em todo turno, até o fim. Construir com ela não a gasta (p. 6).
 >
-> **Moedas** pagam as poucas cartas que custam 1 Moeda e, principalmente, os recursos que você compra dos vizinhos (p. 6 e 7).
+> **Moedas** pagam as cartas que custam 1 Moeda e os recursos comprados dos vizinhos (p. 6 e 7).
 >
-> **O encadeamento** é a recompensa por planejar. Algumas cartas das Eras II e III saem de graça para quem construiu antes a carta com o mesmo símbolo (p. 7).
->
-> Pagar com recurso é de graça; pagar com Moedas tira do Tesouro, que vale ponto no fim; o encadeamento poupa as duas coisas.
+> **O encadeamento** premia quem planeja: algumas cartas das Eras II e III saem de graça para quem construiu antes a carta com o mesmo símbolo (p. 7).
 
 > [!passos] **Passo a passo: os quatro tipos de custo** (p. 6 e 7)
 >
@@ -267,10 +265,9 @@ Três etapas, cada uma uma parte real da partida: jogar um turno, pagar o que se
 > 1. Olhe o canto superior direito da sua cidade: as cartas construídas podem ter um símbolo de encadeamento.
 > 2. Se a carta que você quer construir (das Eras II ou III) mostra, ao lado da zona de custo, o mesmo símbolo, ela sai de graça.
 > 3. Sem o símbolo, você ainda pode construí-la pagando o custo em recursos.
+> 4. Algumas cartas têm dois símbolos no canto superior direito e servem a dois encadeamentos.
 
 !fig[O encadeamento do manual: o Teatro, da Era I, tem um símbolo no canto superior direito; os Jardins, da Era III, mostram o mesmo símbolo ao lado do custo. Quem construiu o Teatro constrói os Jardins de graça. Ilustração: manual Repos Production (p. 7)](figuras/encadeamento.webp)
-
-> [!mais] **Dois encadeamentos.** Algumas cartas têm dois símbolos no canto superior direito e liberam duas cartas diferentes depois (p. 7).
 
 > [!resolvido] **Exemplo resolvido.** O próximo estágio da sua Maravilha custa 2 Minérios (o custo é o do exemplo da p. 6). A sua cidade produz 1 Minério. O vizinho da esquerda tem uma carta Marrom de Minério. Seu Tesouro: 3 Moedas.
 >
@@ -329,9 +326,9 @@ Três etapas, cada uma uma parte real da partida: jogar um turno, pagar o que se
 
 ## 4. Etapa 3: fim da Era e pontuação
 
-> [!entender] **Para entender.** A guerra em 7 Wonders é uma comparação, não um combate. Ninguém ataca ninguém: no fim de cada Era, você só compara a sua força militar com a de cada vizinho, separadamente (p. 5). As Vitórias valem mais a cada Era (+1, +3, +5), e a Derrota custa sempre -1. Com isso, a força militar pesa mais no fim do jogo.
+> [!entender] **Para entender.** A guerra é uma comparação, não um combate: no fim de cada Era, você compara a sua força militar com a de cada vizinho, separadamente (p. 5). As Vitórias crescem a cada Era (+1, +3, +5), e a Derrota é sempre -1.
 >
-> Os pontos só aparecem no fim. A caderneta de pontuação tem sete linhas, uma para cada fonte de pontos, e a soma decide (p. 8). A ciência é a linha que mais cresce: símbolos iguais rendem o quadrado da quantidade, e cada trio de símbolos diferentes rende mais 7.
+> Os pontos só aparecem no fim, em sete linhas da caderneta (p. 8). A ciência é a que mais cresce: símbolos iguais rendem a quantidade vezes ela mesma, e cada trio de símbolos diferentes rende mais 7.
 
 > [!passos] **Passo a passo: Resolução de Conflitos Militares** (p. 5). No fim de cada Era, depois do sexto turno.
 >
