@@ -34,7 +34,7 @@
   "Civolution é o eurogame pesado de Stefan Feld em que dois dados escolhem a ação e o jogador gasta recursos para ajustar o azar, ao longo de quatro eras e até três horas de partida. Venceu o As d'Or Expert 2026, em Cannes. A expansão Carta de Admissão também passou para lançado no mesmo calendário.",
   "Horizontes de Spirit Island é a versão menor do cooperativo de R. Eric Reuss, para 1 a 3 jogadores, com cinco espíritos novos pensados para quem nunca jogou a série. As duas caixas entraram em pré-venda no fim de outubro, quando publicamos as primeiras notas sobre elas."
  ],
- "no_brasil": "Civolution e a expansão Carta de Admissão são edições em português da Devir Brasil; Horizontes de Spirit Island é edição da Ace Studios. Em 04/11/2026, o ComparaJogos listava três ofertas de Civolution, de R$ 730,00 a R$ 774,30, e seis de Horizontes, de R$ 213,78 a R$ 232,39. Confira na loja se o estoque já é de pronta-entrega.",
+ "no_brasil": "Civolution e a expansão Carta de Admissão são edições em português da Devir Brasil; Horizontes de Spirit Island é edição da Ace Studios. Em 04/11/2026, o ComparaJogos mostrava Civolution a partir de R$ 730,00 e Horizontes a partir de R$ 213,78, os dois no Pix. Confira na loja se o estoque já é de pronta-entrega.",
  "critica": [
   {
    "fonte": "Meeple Mountain",
@@ -104,8 +104,10 @@
   }
  ],
  "imagem": {
-  "arquivo": "capas/57677.jpg",
-  "credito": "Capa via Ludopedia"
+  "arquivo": "capas/civolution-e-horizontes-de-spirit-island-chegam-as-lojas.jpg",
+  "credito": "Imagem: Devir, divulgação · a caixa da edição brasileira de Civolution",
+  "origem": "https://devir.com.br/wp-content/uploads/2026/09/imagem-destaque-site-3.png",
+  "pagina": "https://devir.com.br/civolution/"
  },
  "ids_ludopedia": [
   57677,
@@ -136,7 +138,7 @@
     "https://www.comparajogos.com.br/item/civolution",
     "https://ludopedia.com.br/jogo/civolution"
    ],
-   "obs": "Devir Brasil; lançado no calendário em 04/11/2026; três ofertas de R$ 730,00 a R$ 774,30"
+   "obs": "Devir Brasil; lançado no calendário em 04/11/2026; a partir de R$ 730,00 no Pix"
   },
   {
    "jogo": "Horizontes de Spirit Island",
@@ -146,7 +148,7 @@
     "https://ludopedia.com.br/jogo/horizons-of-spirit-island",
     "https://www.comparajogos.com.br/item/horizontes-de-spirit-island"
    ],
-   "obs": "Ace Studios; lançado no calendário em 04/11/2026; seis ofertas de R$ 213,78 a R$ 232,39"
+   "obs": "Ace Studios; lançado no calendário em 04/11/2026; a partir de R$ 213,78 no Pix"
   }
  ],
  "manchete": true,
