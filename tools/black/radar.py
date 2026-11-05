@@ -460,6 +460,13 @@ def link_direto(url, loja, ofertas_jogo, nome=None, hoje_d=None, slug_cache=None
 
 
 CANAL_AFILIADO = re.compile(r"(?i)BG Turbo|Board Oferta|GameBox|Ludofertas")  # canais que postam com link de afiliado
+def preco_voltou(v, loja, por, ofertas_jogo):
+    """A loja do post já está bem mais cara numa leitura do Compara Jogos feita depois do post? Então a promoção acabou."""
+    alvo = _norm_loja(loja)
+    return bool(alvo and por and any(o.get("por") and o["por"] > por * 1.10 and str(o.get("atualizado") or "") > str(v.get("publicado") or "")
+                                     and _norm_loja(o.get("loja")) == alvo for o in ofertas_jogo or []))
+
+
 SEM_LINK = set()  # achados da comunidade sem página do produto na loja (o robô relê a página do jogo)
 
 
@@ -547,10 +554,7 @@ def achados_comunidade(hist, hoje, hoje_d=None):
             continue  # a auditoria de links abriu este link e ele não leva à página do produto
         # a loja já voltou ao preço normal? (05/11/2026, Wyrmspan: post a R$ 464,92, Amazon a R$ 999,75 no Compara Jogos
         # depois do post): leitura do Compara Jogos mais nova que o post, na mesma loja, 10% acima do postado → acabou
-        alvo_l = _norm_loja(loja)
-        if any(o.get("por") and o["por"] > por * 1.10 and str(o.get("atualizado") or "") > str(v.get("publicado") or "")
-               and alvo_l and (_norm_loja(o.get("loja")) == alvo_l)
-               for o in ((hoje_d or {}).get(slug) or {}).get("ofertas", [])):
+        if preco_voltou(v, loja, por, ((hoje_d or {}).get(slug) or {}).get("ofertas")):
             continue
         saida.append({"slug": slug, "nome": nome, "tipo": tipo or "game", "editora": editora, "bgg": bgg, "imagem": img,
                       "loja": loja, "url": link,

@@ -570,6 +570,13 @@ def build(radar_itens, armadilhas, quase=(), outras=()):
         loja_url = radar.link_direto(v.get("link_loja") or v.get("link"), v.get("loja") or "",
                                      (hoje_d.get(sl) or {}).get("ofertas"), None, hoje_d, sl)
         loja_url = radar.link_oferta(loja_url) if loja_url else None
+        # regras de 05/11/2026: promoção que a loja já desfez sai; canal que posta com link de afiliado não ganha botão
+        # para o post (o post leva ao afiliado de outra pessoa); sem link nenhum para conferir, o achado não entra
+        if v.get("preco") and radar.preco_voltou(v, v.get("loja") or "", v["preco"], (hoje_d.get(sl) or {}).get("ofertas")):
+            continue
+        post_url = None if radar.CANAL_AFILIADO.search(v.get("fonte") or "") else v.get("link")
+        if not loja_url and not post_url:
+            continue
         if r and tem_preco:
             ref, dias, menor = r
             d = (ref - v["preco"]) / ref
@@ -601,7 +608,8 @@ def build(radar_itens, armadilhas, quase=(), outras=()):
                     + (f'<p class="cup-ref">{real}</p>' if real else "")
                     + f'<p class="cup-st">Postada {hora(v.get("publicado") or v["visto"], agora_)}. Vendedor e validade não conferidos.</p>'
                     + (f'<a href="{e(loja_url)}" target="_blank" rel="noopener nofollow">Ver na loja ↗</a> ' if loja_url else "")
-                    + f'<a href="{e(v["link"])}" target="_blank" rel="noopener nofollow">Ver no {e((v.get("fonte") or "Promobit").removeprefix("Telegram: "))} ↗</a></li>')
+                    + (f'<a href="{e(post_url)}" target="_blank" rel="noopener nofollow">Ver no {e((v.get("fonte") or "Promobit").removeprefix("Telegram: "))} ↗</a>' if post_url else "")
+                    + '</li>')
         if foto:
             pb_html += cartao_c
         else:
