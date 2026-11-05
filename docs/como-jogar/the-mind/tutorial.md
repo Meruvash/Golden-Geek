@@ -19,7 +19,7 @@ A montagem segue a "Preparação" do manual (p. 1), na mesma ordem, com cada aç
 
 **Os passos** (p. 1)
 
-**1. Vidas e estrelas ninja da equipe.** A equipe recebe as vidas e estrelas ninja da tabela abaixo (com 3 jogadores, 3 vidas e 1 estrela ninja), e elas ficam abertas sobre a mesa, viradas para cima (p. 1).
+**1. Vidas e estrelas ninja da equipe.** A equipe recebe as vidas e estrelas ninja da tabela no fim desta seção (com 3 jogadores, 3 vidas e 1 estrela ninja), e elas ficam abertas sobre a mesa, viradas para cima (p. 1).
 
 !fig[Passo 1, numa partida de 3 jogadores: as 3 vidas da equipe, uma sobre a outra, e 1 estrela ninja, abertas na mesa. Ilustração: manual Galápagos (p. 1)](figuras/setup-1-vidas-estrela.webp)
 
@@ -35,7 +35,7 @@ A montagem segue a "Preparação" do manual (p. 1), na mesma ordem, com cada aç
 
 **6. O resto do baralho.** As cartas com números que sobram formam uma pilha virada para baixo, de lado (p. 1). Ela não é usada durante o nível; só volta a ser embaralhada no nível seguinte (p. 2).
 
-!fig[Passos 5 e 6: cada jogador com a sua carta (aqui, 28 e 55; a terceira está deitada, de lado). Ilustração: manual Galápagos (p. 1)](figuras/setup-3-cartas.webp)
+!fig[Passo 5: cada jogador com a sua carta (aqui, 28 e 55; a terceira está deitada, de lado). Ilustração: manual Galápagos (p. 1)](figuras/setup-3-cartas.webp)
 
 !fig[A mesa pronta para 3 jogadores, como no exemplo do manual: 3 vidas, 1 estrela ninja, a pilha de níveis de 1 a 10 e uma carta para cada um. Ilustração: manual Galápagos (p. 1)](figuras/setup-completa.webp)
 
@@ -77,10 +77,10 @@ Resumo da seção "Montar a mesa passo a passo", acima (p. 1).
 
 ### Seu primeiro turno
 
-No nível 1, cada jogador tem uma carta. O nível acontece assim (p. 1):
+The Mind não tem turnos: o "primeiro turno", aqui, é o primeiro nível. No nível 1, cada jogador tem uma carta. O nível acontece assim (p. 1):
 
 1. **Concentrem-se.** Quem estiver pronto põe a palma da mão sobre a mesa. Quando todos estiverem com a mão na mesa, todos a retiram, e o nível começa.
-2. **Jogar.** Quem acha que tem a carta mais baixa entre todas as que ainda estão nas mãos a põe no centro da mesa, virada para cima. A carta seguinte vai em cima dela, e assim por diante: uma carta de cada vez, sempre maior que a anterior.
+2. **Jogar.** Quem acha que tem a carta mais baixa das mãos a põe no centro da mesa, virada para cima. A carta seguinte vai em cima dela, e assim por diante: uma carta de cada vez, sempre maior que a anterior.
 3. **Sem falar dos números.** Ninguém pode mostrar a carta, dizer o número, dar pista, fazer acordo ou usar sinal secreto.
 4. **Vencer o nível.** Quando todas as cartas estão na pilha, em ordem crescente, a equipe venceu o nível.
 
@@ -88,7 +88,7 @@ A qualquer momento, alguém pode dizer **"Pausa"**: todos põem uma mão na mesa
 
 !fig[O nível 1 vencido, no exemplo do manual: 17, depois 28, depois 55, sempre em ordem crescente. Ilustração: manual Galápagos (p. 1)](figuras/nivel1-jogada.webp)
 
-> [!resolvido] **Exemplo resolvido.** O exemplo do manual, com 3 jogadores no nível 1 (p. 1). Danilo, Paula e Felipe põem a mão na mesa e a retiram. Felipe tem a 17 e joga primeiro, depois de pouco tempo. Paula, com a 28, espera um pouco mais e põe a sua sobre a 17. Danilo, com a 55, espera mais ainda e fecha a pilha: 17, 28, 55. Tudo em ordem: nível 1 vencido.
+> [!resolvido] **Exemplo resolvido.** O exemplo do manual, com 3 jogadores no nível 1 (p. 1). Danilo, Paula e Felipe põem a mão na mesa e a retiram. Felipe põe a 17 no centro. Paula põe a 28 sobre a 17. Danilo põe a 55 sobre a 28 e fecha a pilha: 17, 28, 55. Tudo em ordem: nível 1 vencido.
 
 > [!complete] **Complete.** Nível 2, três jogadores, duas cartas cada. Ana tem 12 e 60; Bruno, 33 e 41; Carla, 5 e 90.
 >
@@ -115,7 +115,7 @@ O que acontece quando alguém erra a ordem e como funciona a estrela ninja: etap
 
 A cada nível, cada jogador recebe uma carta a mais que no anterior: 2 no nível 2, 3 no nível 3, e assim por diante (p. 1 e 2). Se a equipe vence o último nível da partida, vence o jogo. Se perde a última vida, perde o jogo (p. 2).
 
-**Prefere ver?** O vídeo é de The Mind Extreme, que acrescenta uma segunda pilha, decrescente, e níveis com cartas viradas para baixo; concentração, vidas, estrelas ninja e níveis seguem a ideia da caixa básica. Ele complementa este guia; em caso de diferença, vale o manual.
+**Prefere ver?** O vídeo é de The Mind Extreme, que tem regras diferentes: cartas brancas e vermelhas, de 1 a 50 cada; duas pilhas ao mesmo tempo, uma crescente e outra decrescente; níveis com cartas viradas para baixo; a estrela ninja funciona de outro jeito; e a pausa se chama "Parem". Concentração, vidas e níveis seguem a ideia da caixa básica. Ele complementa este guia; em caso de diferença, vale o manual.
 
 !video[THE MIND: Extreme - Regras + review!, canal Duque Board Games](https://www.youtube.com/watch?v=kC5wllRwjJ8&t=0s)
 
@@ -139,7 +139,7 @@ Três etapas, na ordem da partida: jogar um nível; errar e usar a estrela ninja
 >
 > 1. Cada jogador segura as suas cartas numa mão, sem mostrá-las.
 > 2. Quem estiver pronto põe a outra mão espalmada sobre a mesa. Quando todos estiverem prontos, todos retiram a mão e o nível começa.
-> 3. Quem achar que tem a carta mais baixa entre todas as que ainda estão nas mãos põe essa carta no centro da mesa, virada para cima, sobre a pilha.
+> 3. Quem achar que tem a carta mais baixa das mãos põe essa carta no centro da mesa, virada para cima, sobre a pilha.
 > 4. As cartas vão uma a uma, cada uma maior que a anterior. Não existe ordem de jogadores.
 > 5. Cada jogador sempre joga a carta mais baixa da própria mão.
 > 6. Quando todas as cartas estão na pilha em ordem crescente, a equipe vence o nível.
@@ -150,15 +150,15 @@ Três etapas, na ordem da partida: jogar um nível; errar e usar a estrela ninja
 
 > [!entender] **Para entender: o segredo do jogo (spoiler do manual).** Se preferir descobrir sozinho, como o manual recomenda aos jogadores experientes, pule este bloco (p. 1). O quadro de cabeça para baixo no fim da folha diz que The Mind é um jogo de sincronia guiada pela noção de tempo: quanto mais baixa a carta, mais cedo se joga; o 5 sai rápido, o 80 espera mais. O manual avisa que não se trata de contar segundos, e que com algumas partidas o que parecia sorte vira habilidade, porque a equipe desenvolve um sentido comum do tempo (p. 2).
 
-> [!resolvido] **Exemplo resolvido.** O nível 2 do manual, com 3 jogadores (p. 2). Paula tem 7 e 94; Felipe, 11 e 81; Danilo, 35 e 47. Todos põem a mão na mesa e a retiram. Paula joga a 7. Felipe joga a 11. Danilo joga a 35 e, depois, a 47, uma de cada vez. Felipe joga a 81, e Paula fecha com a 94. A pilha ficou 7, 11, 35, 47, 81, 94: nível 2 vencido.
-
 > [!dica] **Sugestão: conte a distância, não o número.** Com a pilha na 40, a sua 45 pede pouca espera, embora 45 não seja um número baixo. É estratégia, não regra.
+
+> [!resolvido] **Exemplo resolvido.** O nível 2 do manual, com 3 jogadores (p. 2). Paula tem 7 e 94; Felipe, 11 e 81; Danilo, 35 e 47. Todos põem a mão na mesa e a retiram. Paula joga a 7. Felipe joga a 11. Danilo joga a 35 e, depois, a 47, uma de cada vez. Felipe joga a 81, e Paula fecha com a 94. A pilha ficou 7, 11, 35, 47, 81, 94: nível 2 vencido.
 
 > [!complete] **Complete.** Dois jogadores no nível 4. Você tem 6, 39, 40 e 93; o seu parceiro tem 15, 58, 61 e 77.
 >
 > ?? A pilha já tem 6 e 15. Qual é a próxima carta, e quantas cartas você joga em seguida?
 > - ( ) A 58 do parceiro; depois você joga uma
-> - (x) A sua 39; depois você joga a 40, também sozinha
+> - (x) A sua 39; depois a 40, numa jogada separada
 > - ( ) A sua 39 e a 40 juntas, de uma vez
 > = 39 e 40 são as mais baixas que restam e estão na sua mão: você joga as duas logo, mas uma por vez (p. 1).
 
@@ -176,12 +176,15 @@ Três etapas, na ordem da partida: jogar um nível; errar e usar a estrela ninja
 
 > [!passos] **Passo a passo: quando alguém erra** (p. 2)
 >
-> 1. Assim que uma carta é jogada fora de ordem, quem tem uma carta mais baixa que ela interrompe o jogo na hora.
+> 1. Assim que uma carta é jogada fora de ordem, quem tem uma carta mais baixa que ela interrompe o jogo na hora. No exemplo do manual, eles dizem "Pausa".
 > 2. A equipe perde uma vida: uma carta de vida sai da mesa e vai para o lado.
 > 3. Todos os jogadores descartam, das próprias mãos, todas as cartas mais baixas que a carta jogada.
-> 4. A equipe se concentra de novo, com a mão na mesa, e continua o mesmo nível com as cartas que restaram. Não começa um nível novo.
+> 4. A carta jogada fica na pilha: só as cartas abaixo dela saem das mãos, então a próxima carta precisa ser maior que ela.
+> 5. A equipe se concentra de novo, com a mão na mesa, e continua o mesmo nível com as cartas que restaram. Não começa um nível novo.
 
 > [!resolvido] **Exemplo resolvido.** O exemplo do manual (p. 2). Paula joga a 34. Danilo tem a 26 e Felipe, a 30: os dois dizem "Pausa". A equipe perde uma vida. Danilo põe a 26 de lado, Felipe põe a 30 de lado, todos se concentram e o nível continua.
+
+> [!edicao] **Para onde vão a vida perdida e a estrela usada.** O manual diz só que a carta vai "de lado" (p. 2) e não diz se ela se junta às que ficaram de lado na preparação. Como a caixa tem só 5 vidas e 3 estrelas e a equipe pode chegar a esse máximo com recompensas (p. 1 e 2), o guia lê que sim: ponha a carta junto das que ficaram de lado.
 
 > [!atencao] **Um erro, uma vida.** No exemplo do manual, dois jogadores tinham cartas abaixo da 34, e a equipe perdeu uma vida só (p. 2). Não se perde uma vida por carta descartada.
 
@@ -194,7 +197,7 @@ Três etapas, na ordem da partida: jogar um nível; errar e usar a estrela ninja
 
 > [!edicao] **Quem está sem cartas e a estrela ninja.** O manual diz que "todos os jogadores descartam a sua carta mais baixa" e não fala de quem já jogou todas as cartas do nível (p. 2). O guia lê que esse jogador simplesmente não descarta nada.
 
-> [!resolvido] **Exemplo resolvido: a estrela ninja.** Três jogadores no nível 3, ninguém jogou ainda e a mesa está travada. Ana levanta a mão; Bruno e Carla concordam. Ana descarta a 44, Bruno a 12, Carla a 27, as três viradas para cima. Ficam Ana com 70 e 91, Bruno com 50 e 83, Carla com 61 e 99, e o nível continua depois da concentração (p. 2).
+> [!resolvido] **Exemplo resolvido: a estrela ninja.** Três jogadores no nível 3, ninguém jogou ainda e a mesa está travada, isto é, ninguém se arrisca a jogar. Ana levanta a mão; Bruno e Carla concordam. Ana descarta a 44, Bruno a 12, Carla a 27, as três viradas para cima. Ficam Ana com 70 e 91, Bruno com 50 e 83, Carla com 61 e 99, e o nível continua depois da concentração.
 
 > [!complete] **Complete.** Quatro jogadores no nível 2. Bruno joga a 60. Ana ainda tem 14 e 75; Carla, 58 e 80; Davi, 66 e 90.
 >
@@ -225,20 +228,19 @@ Três etapas, na ordem da partida: jogar um nível; errar e usar a estrela ninja
 
 > [!passos] **Passo a passo: o nível seguinte** (p. 2)
 >
-> 1. A carta do nível que a equipe acabou de vencer vai para a caixa. A próxima carta da pilha de níveis mostra o novo nível.
-> 2. Se o nível vencido dá recompensa, a equipe pega a vida ou a estrela ninja das cartas que ficaram de lado.
+> 1. Confira a recompensa na carta do nível vencido: se ela tem o símbolo, a equipe pega a vida ou a estrela ninja das cartas que ficaram de lado.
+> 2. Depois, a carta do nível vencido vai para a caixa. A próxima carta da pilha de níveis mostra o novo nível.
 > 3. Junte as 100 cartas com números (a pilha da mesa, os descartes e o resto do baralho) e embaralhe.
 > 4. Dê a cada jogador o número de cartas do novo nível: o número do nível. Nível 3, 3 cartas; nível 7, 7 cartas.
 > 5. Cada jogador recolhe as cartas com uma mão e põe a outra na mesa para se concentrar. Depois, o nível começa.
 
-!fig[A carta do nível 2 e, no canto de baixo, à direita, o símbolo da recompensa. Ilustração: manual Galápagos (p. 2)](figuras/recompensa.webp)
+!fig[Uma carta de nível com o símbolo da recompensa no canto inferior direito. Ilustração: manual Galápagos (p. 2)](figuras/recompensa.webp)
 
 > [!passos] **Passo a passo: recompensas** (p. 2)
 >
 > 1. Só os níveis 2, 3, 5, 6, 8 e 9 dão recompensa.
-> 2. O nível 2 dá uma estrela ninja.
-> 3. Nos níveis 3, 5, 6, 8 e 9, a recompensa (uma vida ou uma estrela ninja) é a que aparece na própria carta do nível.
-> 4. A equipe pode ter no máximo 5 vidas e 3 estrelas ninja.
+> 2. A recompensa, uma vida ou uma estrela ninja, aparece desenhada no canto inferior direito da própria carta do nível. No nível 2, o manual diz que é uma estrela ninja.
+> 3. A equipe pode ter no máximo 5 vidas e 3 estrelas ninja.
 
 > [!edicao] **Recompensa com a equipe no máximo.** O manual não diz o que acontece com a recompensa quando a equipe já tem 5 vidas ou 3 estrelas (p. 2). Como a caixa só tem 5 vidas e 3 estrelas (p. 1), o guia lê que ela não é recebida.
 
@@ -249,7 +251,7 @@ Três etapas, na ordem da partida: jogar um nível; errar e usar a estrela ninja
 
 > [!mais] **Novo desafio: modo cego.** Se a equipe vence todos os níveis, pode continuar jogando em modo cego. Volta ao nível 1 com as vidas e estrelas ninja que sobraram, e agora as cartas vão para a pilha do centro viradas para baixo. Ao terminar o nível, vire a pilha e confira a ordem; se alguém errou, a equipe perde uma vida. As outras regras continuam as mesmas. O desafio é ver quantos níveis a equipe vence assim (p. 2).
 
-> [!edicao] **Modo cego com mais de um erro.** O manual diz que, se "algum jogador tiver cometido algum erro, a equipe perde uma vida" (p. 2), e não diz se dois erros no mesmo nível custam duas vidas. O guia segue a letra: uma vida por nível com erro. Combinem antes de começar, se a mesa preferir outra leitura.
+> [!edicao] **Modo cego com mais de um erro.** O manual diz que, se "algum jogador tiver cometido algum erro, a equipe perde uma vida" (p. 2), e não diz se dois erros no mesmo nível custam duas vidas. Pela letra, seria uma vida por nível com erro; no The Mind Extreme, outro jogo, cada erro custa uma vida. Combinem antes de começar qual leitura a mesa vai usar.
 
 > [!resolvido] **Exemplo resolvido: as contas de uma partida a três.** A equipe começa com 3 vidas e 1 estrela ninja (p. 1). Erra uma vez no nível 1 (fica com 2 vidas), vence o nível 1 e vence o nível 2, que dá uma estrela ninja: 2 vidas e 2 estrelas. No nível 3, cada um recebe 3 cartas, 9 ao todo (p. 2).
 
@@ -263,11 +265,11 @@ Três etapas, na ordem da partida: jogar um nível; errar e usar a estrela ninja
 
 > [!suavez] **Sua vez.**
 >
-> ?? Partida de 2 jogadores, sem nenhuma recompensa recebida ainda. A equipe erra duas vezes no nível 1. O que acontece?
+> ?? Partida de 2 jogadores. A equipe erra uma vez no nível 1, vence os níveis 1 e 2 e erra outra vez no nível 3. O que acontece?
 > - ( ) Volta ao nível 1 com 1 vida
 > - (x) A equipe perde o jogo
 > - ( ) Usa a estrela ninja no lugar da vida
-> = Com 2 jogadores, a equipe começa com 2 vidas; o segundo erro leva a última, e a equipe que perde a última vida perde (p. 1 e 2).
+> = Com 2 jogadores, a equipe começa com 2 vidas (p. 1). O nível 2 dá uma estrela ninja, não uma vida, e a recompensa do nível 3 só viria depois de vencê-lo; o segundo erro leva a última vida, e a equipe perde (p. 2).
 >
 > ?? A equipe tem 5 vidas e vence um nível cuja carta mostra uma vida de recompensa. Com quantas vidas fica?
 > - (x) 5
@@ -279,7 +281,7 @@ Três etapas, na ordem da partida: jogar um nível; errar e usar a estrela ninja
 
 > [!edicao] **Duas cartas ao mesmo tempo.** O manual diz que as cartas são colocadas uma a uma (p. 1), mas não diz o que fazer quando duas pessoas põem cartas quase juntas. Combinem antes da partida como resolver esse caso; isso é regra da mesa, não acordo sobre as cartas.
 
-> [!edicao] **O erro descarta as últimas cartas.** Se, depois de um erro ou de uma estrela ninja, ninguém fica com carta na mão, o manual não diz o que acontece. O guia lê que o nível foi vencido, como quando a última carta vai para a pilha (p. 2).
+> [!edicao] **O erro descarta as últimas cartas.** Se, depois de um erro ou de uma estrela ninja, ninguém fica com carta na mão, o manual não diz o que acontece. O guia lê que o nível foi vencido, como quando a última carta vai para a pilha (p. 1 e 2).
 
 ## 6. Avaliação final
 
@@ -309,11 +311,11 @@ Responda sem consultar. Cada resposta diz o que reler.
 - (x) Descarta a carta mais baixa, virada para cima
 = Todos os jogadores descartam a carta mais baixa, virada para cima (p. 2). Releia a etapa 2.
 
-?? 5. Que nível dá sempre uma estrela ninja de recompensa?
+?? 5. Qual destes níveis dá recompensa?
 - (x) O nível 2
 - ( ) O nível 4
 - ( ) O nível 7
-= O nível 2 dá uma estrela ninja; os níveis 3, 5, 6, 8 e 9 dão a recompensa que a carta mostra (p. 2). Releia a etapa 3.
+= Dão recompensa os níveis 2, 3, 5, 6, 8 e 9; ela aparece no canto inferior direito da carta (p. 2). Releia a etapa 3.
 
 > [!atencao] **Critério para começar a jogar.** Acertou 4 ou 5? Monte a mesa e jogue, com a folha de consulta ao lado. Errou a 1, releia a montagem; a 2, a etapa 1; a 3 ou a 4, a etapa 2; a 5, a etapa 3. Depois refaça só as que errou.
 
@@ -338,7 +340,7 @@ Responda sem consultar. Cada resposta diz o que reler.
 
 **Estrela ninja:** alguém levanta a mão; se todos concordam, cada um descarta a carta mais baixa, virada para cima; concentrar e seguir.
 
-**Nível vencido:** carta do nível na caixa; recompensa (nível 2: estrela; 3, 5, 6, 8 e 9: a da carta); máximo de 5 vidas e 3 estrelas; embaralhar as 100 cartas e dar uma a mais para cada um.
+**Nível vencido:** recompensa nos níveis 2, 3, 5, 6, 8 e 9 (vida ou estrela, desenhada no canto inferior direito da carta); depois, carta do nível na caixa; máximo de 5 vidas e 3 estrelas; embaralhar as 100 cartas e dar uma a mais para cada um.
 
 **Fim:** a equipe vence ao passar do último nível e perde ao perder a última vida. Depois da vitória, se quiserem: modo cego, cartas viradas para baixo, conferidas no fim de cada nível.
 
