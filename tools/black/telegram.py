@@ -51,6 +51,29 @@ def _num(s):
 
 
 ENCURTADORES = re.compile(r"(?i)ccnl\.app|bit\.ly|tinyurl|cutt\.ly|is\.gd|t\.co\b|encurtador|linktr\.ee|go\.ludofertas")
+# Links de afiliado de quem postou NUNCA são guardados nem publicados (pedido do usuário em 05/11/2026: pelas regras da
+# Amazon, divulgar a tag de outro afiliado pode causar problema para ele). Encurtador de afiliado vira None (o robô
+# usa o link da loja que o Compara Jogos lista para o jogo) e link comum perde tag, ref e parâmetros de rastreio.
+AFILIADO = re.compile(r"(?i)amzn\.to|a\.co/|link\.amazon|amzlinks|amazon\.[a-z.]+/.*[?&]tag=|meli\.la|mercadolivre\.com/sec|"
+                      r"shope\.ee|s\.shopee|tidd\.ly|lmd\.ink|onelink|awin1|redir\.lomadee|tracking|clk\.|afiliad")
+RASTREIO = re.compile(r"(?i)^(utm_.*|tag|ref|ref_|linkcode|ascsubtag|camp.*|creative.*|afil.*|aff.*|partner.*|matt_.*|"
+                      r"source|fbclid|gclid|psc|smid|th|sr|qid|keywords|pd_rd_.*|pf_rd_.*|content-id|spm|clickid|sca_.*|mkt_.*)$")
+
+
+def link_seguro(url):
+    """Link da loja sem afiliado de ninguém: encurtador ou link de afiliado → None; senão, sem parâmetros de rastreio."""
+    from urllib.parse import urlsplit, urlunsplit, parse_qsl, urlencode
+    if not url or ENCURTADORES.search(url) or re.search(r"(?i)amzn\.to|a\.co/|link\.amazon|amzlinks|meli\.la|shope\.ee|s\.shopee|tidd\.ly|lmd\.ink|onelink|awin1|lomadee", url):
+        return None
+    m = re.search(r"amazon\.com\.br/(?:[^/?]+/)?(?:dp|gp/product)/([A-Z0-9]{10})", url)
+    if m:
+        return f"https://www.amazon.com.br/dp/{m.group(1)}"
+    try:
+        u = urlsplit(url)
+    except ValueError:
+        return None
+    q = [(k, v) for k, v in parse_qsl(u.query, keep_blank_values=True) if not RASTREIO.match(k)]
+    return urlunsplit((u.scheme, u.netloc, u.path, urlencode(q), ""))
 
 
 def _lojas_conhecidas():
@@ -161,10 +184,14 @@ def ler():
                 novos += k not in dados
                 dados[k] = {"titulo": it["nome"], "preco": it["preco"], "preco_antes": it["antes"] if it["antes"] and it["antes"] > it["preco"] else None,
                             "tipo_preco": "NORMAL", "cupom": it["cupom"], "loja": loja, "dominio": dom,
-                            "publicado": quando, "link": f"https://t.me/{pid}", "link_loja": it["url"], "jogo": jogo,
+                            "publicado": quando, "link": f"https://t.me/{pid}", "link_loja": link_seguro(it["url"]), "jogo": jogo,
                             "fonte": f"Telegram: {nome_canal}", "visto": hora}
     limite = (agora() - GUARDA).isoformat()[:16]
     dados = {k: v for k, v in dados.items() if (v.get("publicado") or v["visto"])[:16] >= limite}
+    for v in dados.values():  # limpa também o que já estava guardado
+        v["link_loja"] = link_seguro(v.get("link_loja"))
+        if v.get("dominio") and not link_seguro("https://" + v["dominio"] + "/x"):
+            v["dominio"] = "link encurtado"
     referencia(dados)
     ARQ.parent.mkdir(parents=True, exist_ok=True)
     ARQ.write_text(json.dumps(dados, ensure_ascii=False, indent=1, sort_keys=True) + "\n", encoding="utf-8")

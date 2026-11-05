@@ -21,6 +21,14 @@ publicar() {
     python3 -c "import json,sys; json.load(open(sys.argv[1], encoding='utf-8'))" "$f" 2>/dev/null \
       || { echo "JSON quebrado, descartado: $f"; git checkout -q -- "$f" 2>/dev/null || true; }
   done
+  # link de afiliado de terceiros nunca vai ao ar (pedido do usuário em 05/11/2026): se aparecer, não publica e o
+  # trabalho falha no fim, para o GitHub avisar por e-mail
+  if python3 -c "import sys,re,pathlib; sys.path.insert(0,'tools'); import verificar_site as v; \
+p=[str(f) for f in list(pathlib.Path('conteudo/black').rglob('*.json'))+list(pathlib.Path('black').rglob('*.*')) if f.is_file() and v.AFILIADO_PUBLICO.search(f.read_text(encoding='utf-8',errors='ignore'))]; \
+print('\n'.join(p)); sys.exit(1 if p else 0)"; then :; else
+    echo "::error::link de afiliado de terceiros nos dados do Black: publicação suspensa neste ciclo"; AFILIADO_ACHADO=1
+    git checkout -q -- conteudo/black black 2>/dev/null; return 0
+  fi
   git add conteudo/black black img/black
   if git diff --cached --quiet; then echo "nada mudou"; return 0; fi
   git commit -q -m "Radar Black: robô $ROBO de $(TZ=America/Sao_Paulo date +'%d/%m/%Y %Hh%M')"
@@ -61,3 +69,4 @@ echo "== fim do trabalho depois de $n ciclos; disparando o próximo"
 curl -s -X POST -H "Authorization: Bearer $GITHUB_TOKEN" -H "Accept: application/vnd.github+json" \
   "https://api.github.com/repos/$GITHUB_REPOSITORY/actions/workflows/$WORKFLOW/dispatches" -d '{"ref":"main"}' \
   && echo "próximo trabalho pedido"
+[ -n "${AFILIADO_ACHADO:-}" ] && exit 1 || exit 0

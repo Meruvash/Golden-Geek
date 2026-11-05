@@ -31,6 +31,25 @@ FORA = {".git", ".cache", "tools", "modelos", "marca", "lotes", "fontes", "triag
 LINK = re.compile(r'(?:href|src)="([^"]+)"')
 
 
+# Link de afiliado de outra pessoa nunca pode ir ao ar (pedido do usuário em 05/11/2026: pelas regras da Amazon, divulgar a
+# tag de outro afiliado pode causar problema para ele). Vale para tudo que o site publica, inclusive os dados em conteudo/.
+AFILIADO_PUBLICO = re.compile(r"(?i)[?&]tag=[a-z0-9_-]+-2[0-9]\b|amzn\.to/|link\.amazon/|amzlinks\.|meli\.la/|shope\.ee/|s\.shopee|"
+                              r"tidd\.ly/|lmd\.ink/|awin1\.com|redir\.lomadee")
+
+
+def checar_afiliados(erros):
+    pulos = (".cache", "node_modules", ".git", "tools", ".claude", "worker")
+    for p in sorted(ROOT.rglob("*")):
+        if p.suffix not in (".html", ".json", ".xml", ".txt", ".md", ".js") or any(x in p.parts for x in pulos) or not p.is_file():
+            continue
+        try:
+            m = AFILIADO_PUBLICO.search(p.read_text(encoding="utf-8", errors="ignore"))
+        except OSError:
+            continue
+        if m:
+            erros.append(f"link de afiliado de terceiros publicado em {p.relative_to(ROOT)} ({m.group(0)}): tire na origem")
+
+
 def checar_json(erros):
     for p in sorted((ROOT / "conteudo").rglob("*.json")):
         try:
@@ -168,6 +187,7 @@ def main():
     dia = args[args.index("--data") + 1] if "--data" in args else date.today().isoformat()
     erros = []
     checar_json(erros)
+    checar_afiliados(erros)
     ns = checar_noticias(erros)
     publicadas = checar_resenhas(erros)
     checar_links(erros)
