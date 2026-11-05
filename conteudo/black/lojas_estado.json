@@ -10,7 +10,7 @@
   },
   "bravojogos.com.br": {
    "dia": "2026-11-05",
-   "paginas": 20
+   "paginas": 23
   },
   "brecholudico.com.br": {
    "dia": "2026-11-05",
@@ -41,10 +41,10 @@
    "paginas": 6
   },
   "loja.joyjoycafe.com.br": {
-   "descanso_ate": "2026-11-05T17:41+00:00",
+   "descanso_ate": "2026-11-07T18:31+00:00",
    "dia": "2026-11-05",
    "motivo": "página respondeu 403",
-   "paginas": 0
+   "paginas": 1
   },
   "loja.orcspace.com.br": {
    "dia": "2026-11-05",
@@ -145,10 +145,10 @@
    "paginas": 6
   },
   "www.elfosecia.com.br": {
-   "descanso_ate": "2026-11-05T17:41+00:00",
+   "descanso_ate": "2026-11-07T18:31+00:00",
    "dia": "2026-11-05",
    "motivo": "página respondeu 403",
-   "paginas": 0
+   "paginas": 1
   },
   "www.espacoarcs.com.br": {
    "dia": "2026-11-05",
@@ -219,7 +219,7 @@
    "paginas": 6
   },
   "www.mundogalapagos.com.br": {
-   "descanso_ate": "2026-11-05T17:41+00:00",
+   "descanso_ate": "2026-11-07T18:31+00:00",
    "dia": "2026-11-05",
    "motivo": "robots.txt respondeu 403",
    "paginas": 0
@@ -246,7 +246,7 @@
   },
   "www.placegames.com.br": {
    "dia": "2026-11-05",
-   "paginas": 9
+   "paginas": 12
   },
   "www.playeasy.com.br": {
    "dia": "2026-11-05",
@@ -258,7 +258,7 @@
   },
   "www.promobit.com.br": {
    "dia": "2026-11-05",
-   "paginas": 60
+   "paginas": 70
   },
   "www.reunionjogos.com.br": {
    "dia": "2026-11-05",
@@ -278,7 +278,7 @@
   },
   "www.tabuloja.com": {
    "dia": "2026-11-05",
-   "paginas": 7
+   "paginas": 8
   },
   "www.tavernareal.com": {
    "dia": "2026-11-05",
@@ -292,7 +292,7 @@
    "descanso_ate": "2026-11-05T17:41+00:00",
    "dia": "2026-11-05",
    "motivo": "robots.txt respondeu 403",
-   "paginas": 0
+   "paginas": 3
   },
   "www.tschuss.com.br": {
    "dia": "2026-11-05",
@@ -421,7 +421,7 @@
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-fateflip-arrastado-pelo-mar-p": {
    "cj": 46.49,
    "estoque": true,
-   "hora": "2026-11-03T22:06+00:00",
+   "hora": "2026-11-05T18:31+00:00",
    "preco": 49.99
   },
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-fateflip-decretos-reais-p": {
@@ -441,6 +441,12 @@
    "estoque": true,
    "hora": "2026-11-05T06:36+00:00",
    "preco": 149.9
+  },
+  "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-formula-pop-p": {
+   "cj": 41.76,
+   "estoque": true,
+   "hora": "2026-11-05T18:31+00:00",
+   "preco": 44.9
   },
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-galaxy-trucker-segunda-edicao-p": {
    "cj": 199.02,
@@ -471,6 +477,12 @@
    "estoque": true,
    "hora": "2026-11-05T10:06+00:00",
    "preco": 129.99
+  },
+  "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-loot-p": {
+   "cj": 42.69,
+   "estoque": true,
+   "hora": "2026-11-05T18:31+00:00",
+   "preco": 45.9
   },
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-o-laboratorio-de-dexter-a-grande-invencao-p": {
    "cj": 83.61,
@@ -2338,6 +2350,12 @@
    "hora": "2026-11-05T18:04+00:00",
    "preco": 37.09
   },
+  "https://www.placegames.com.br/boardgames/copia-pickomino": {
+   "cj": 37.09,
+   "estoque": true,
+   "hora": "2026-11-05T18:31+00:00",
+   "preco": 37.09
+  },
   "https://www.placegames.com.br/boardgames/dino-parque": {
    "cj": 80.8,
    "estoque": true,
@@ -2446,6 +2464,12 @@
    "hora": "2026-11-05T18:06+00:00",
    "preco": 64.99
   },
+  "https://www.placegames.com.br/glitches": {
+   "cj": 18.49,
+   "estoque": true,
+   "hora": "2026-11-05T18:31+00:00",
+   "preco": 23.14
+  },
   "https://www.placegames.com.br/katamino-pocket": {
    "cj": 157.99,
    "estoque": true,
@@ -2463,6 +2487,12 @@
    "estoque": true,
    "hora": "2026-11-05T18:07+00:00",
    "preco": 64.99
+  },
+  "https://www.placegames.com.br/o-que-o-que": {
+   "cj": 18.49,
+   "estoque": true,
+   "hora": "2026-11-05T18:31+00:00",
+   "preco": 18.49
   },
   "https://www.placegames.com.br/orange-stories": {
    "cj": 18.49,
@@ -3229,7 +3259,7 @@
   "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/twilight-struggle": {
    "cj": 269.1,
    "estoque": true,
-   "hora": "2026-11-04T03:01+00:00",
+   "hora": "2026-11-05T18:31+00:00",
    "preco": 299.0
   },
   "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/um-mundo-estranho-acima-das-nuvens": {
