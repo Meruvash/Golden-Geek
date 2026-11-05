@@ -1,5 +1,5 @@
 {
-  "edicao": "2026-11-04",
+  "edicao": "2026-11-05",
   "em_alta": [
     {
       "nome": "Civolution",
@@ -26,10 +26,10 @@
       "link": "noticias/magical-athlete-pre-venda-asmodee/"
     },
     {
-      "nome": "Caminhos Tortuosos",
-      "id_ludopedia": 81879,
-      "motivo": "Caminhos Tortuosos ganha preço na pré-venda da Devir",
-      "link": "noticias/arnak-caminhos-tortuosos-e-gaudi-ganham-preco/"
+      "nome": "Pilgrims: Curious Adventures",
+      "id_ludopedia": 80886,
+      "motivo": "Jogo do universo de Pilgrims chega às lojas pela Jelly Monster",
+      "link": "noticias/pilgrims-curious-adventures-jelly-monster/"
     }
   ],
   "financiamentos": [
@@ -37,8 +37,8 @@
       "nome": "Satisfactory: The Board Game",
       "editora": "MOOD Publishing",
       "onde": "Gamefound · aberto",
-      "situacao": "€2,22 milhões de 8.713 apoiadores; termina em 10/11",
-      "fonte": "Tabletop Analytics, 04/11/2026",
+      "situacao": "€2,27 milhões de 8.929 apoiadores; termina em 10/11",
+      "fonte": "Tabletop Analytics, 05/11/2026",
       "noticia": "satisfactory-tabuleiro-passa-de-2-milhoes-gamefound"
     },
     {
@@ -50,52 +50,44 @@
       "noticia": "too-little-time-chip-theory-gamefound"
     },
     {
+      "nome": "Ragnarok the Board Game: Ceremony of Prontera",
+      "editora": "Siam Board Games",
+      "onde": "Kickstarter · aberto",
+      "situacao": "S$ 661 mil de 2.470 apoiadores; termina em 05/11",
+      "fonte": "Kicktraq, 05/11/2026",
+      "noticia": "ragnarok-online-jogo-de-tabuleiro-kickstarter"
+    },
+    {
       "nome": "Plants vs. Zombies: The Board Game",
       "editora": "Mantic Games",
       "onde": "Kickstarter · aberto",
-      "situacao": "£1,05 milhão de 7.658 apoiadores; termina em 05/11",
-      "fonte": "Tabletop Analytics, 04/11/2026",
+      "situacao": "£1,16 milhão de 8.445 apoiadores; termina em 05/11",
+      "fonte": "Tabletop Analytics, 05/11/2026",
       "noticia": "plants-vs-zombies-tabuleiro-passa-de-1-milhao-de-libras"
     },
     {
       "nome": "Origins of Light: A Final Fantasy Board Game",
       "editora": "KessCo",
       "onde": "Kickstarter · aberto",
-      "situacao": "US$ 1,1 milhão de 3.562 apoiadores; termina em 18/11",
-      "fonte": "Tabletop Analytics, 04/11/2026",
+      "situacao": "US$ 1,13 milhão de 3.650 apoiadores; termina em 18/11",
+      "fonte": "Tabletop Analytics, 05/11/2026",
       "noticia": "origins-of-light-final-fantasy-tabuleiro-kickstarter"
     },
     {
       "nome": "The Danes",
       "editora": "Feuerland Spiele",
       "onde": "Gamefound · aberto",
-      "situacao": "€912 mil de 8.335 apoiadores; termina em 05/11",
-      "fonte": "Tabletop Analytics, 04/11/2026",
+      "situacao": "€963 mil de 8.809 apoiadores; termina em 05/11",
+      "fonte": "Tabletop Analytics, 05/11/2026",
       "noticia": "the-danes-rosenberg-gamefound"
     },
     {
       "nome": "Stormlight: War for Roshar",
       "editora": "Brotherwise Games",
       "onde": "Kickstarter · aberto",
-      "situacao": "US$ 3,08 milhões de 12.589 apoiadores; termina em 06/11",
-      "fonte": "Tabletop Analytics, 04/11/2026",
+      "situacao": "US$ 3,28 milhões de 13.437 apoiadores; termina em 06/11",
+      "fonte": "Tabletop Analytics, 05/11/2026",
       "noticia": "stormlight-war-for-roshar-kickstarter"
-    },
-    {
-      "nome": "Dice Throne Nexus",
-      "editora": "Dice Throne",
-      "onde": "Kickstarter · encerrado",
-      "situacao": "US$ 2,09 milhões de 14.372 apoiadores",
-      "fonte": "Kicktraq, 03/11/2026",
-      "noticia": "dice-throne-nexus-kickstarter-2-milhoes"
-    },
-    {
-      "nome": "Acelera Bruxa",
-      "editora": "Independente",
-      "onde": "Brasil · encerrado",
-      "situacao": "R$ 48 mil (185% da meta); entrega prevista para 01/02/2027",
-      "fonte": "MeepleStarter, 03/11/2026",
-      "noticia": "acelera-bruxa-fecha-financiamento-meeplestarter"
     },
     {
       "nome": "Through the Mountains",
@@ -109,8 +101,8 @@
       "nome": "Night at the Zoo e Pondscape",
       "editora": "Bucaneiros Jogos",
       "onde": "Brasil · aberto",
-      "situacao": "R$ 286 mil (1.146% da meta); termina em 10/11",
-      "fonte": "MeepleStarter, 01/11/2026",
+      "situacao": "R$ 299 mil (1.196% da meta); termina em 10/11",
+      "fonte": "MeepleStarter, 05/11/2026",
       "noticia": "night-at-the-zoo-pondscape-bucaneiros"
     },
     {
@@ -126,24 +118,16 @@
       "editora": "Independente",
       "onde": "Brasil · aberto",
       "situacao": "Metas batidas; Oyó até 09/11, Brava Gente até 10/12",
-      "fonte": "MeepleStarter, 01/11/2026",
+      "fonte": "MeepleStarter, 05/11/2026",
       "noticia": "brava-gente-e-oyo-batem-a-meta"
     },
     {
       "nome": "Spellrift Legends",
       "editora": "Ludens Spirit",
       "onde": "Brasil · aberto",
-      "situacao": "R$ 121 mil (610% da meta); termina em 20/11",
-      "fonte": "MeepleStarter, 31/10/2026",
+      "situacao": "R$ 130 mil (653% da meta); termina em 20/11",
+      "fonte": "MeepleStarter, 05/11/2026",
       "noticia": "spellrift-legends-financiamento-meeplestarter"
-    },
-    {
-      "nome": "Arkham Horror Remastered",
-      "editora": "Fantasy Flight Games",
-      "onde": "Gamefound · aberto",
-      "situacao": "US$ 4,15 milhões de 10.045 apoiadores; termina em 05/11",
-      "fonte": "Tabletop Analytics, 04/11/2026",
-      "noticia": "arkham-horror-remastered-gamefound"
     },
     {
       "nome": "BattleForge: Berserker",
@@ -157,8 +141,8 @@
       "nome": "Dia da Caça",
       "editora": "Ludovia Estúdio",
       "onde": "Brasil · aberto",
-      "situacao": "62% da meta, termina em 06/11",
-      "fonte": "MeepleStarter, 28/10/2026",
+      "situacao": "73% da meta, termina em 06/11",
+      "fonte": "MeepleStarter, 05/11/2026",
       "noticia": "financiamentos-abertos-battleforge-dia-da-caca"
     }
   ],
@@ -194,9 +178,9 @@
     {
       "quando": "9 a 11 jul 2027",
       "titulo": "Diversão Offline, São Paulo",
-      "detalhe": "Datas indicadas no site do evento",
-      "previsto": true,
-      "noticia": "diversao-offline-2027"
+      "detalhe": "Ingressos pela Tavernando a partir da Black Friday",
+      "previsto": false,
+      "noticia": "diversao-offline-2027-tavernando-ingressos"
     },
     {
       "quando": "21 a 24 out 2027",

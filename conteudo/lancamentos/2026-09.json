@@ -2,7 +2,7 @@
  "mes": "2026-09",
  "label": "Setembro de 2026",
  "titulo_previstos": "Previstos para setembro",
- "total": 43,
+ "total": 44,
  "lancados": [
   {
    "id_jogo": 84662,
@@ -624,6 +624,27 @@
     "id": 92,
     "nome": "Asmodee (Galápagos)",
     "url": "https://ludopedia.com.br/editora/92/Asmodee (Galápagos)"
+   },
+   "status": {
+    "id": 1,
+    "label": "Lançado",
+    "slug": "lancado"
+   },
+   "comentarios": 0,
+   "url_topico": null,
+   "pode_criar_topico": true
+  },
+  {
+   "id_jogo": 89538,
+   "nome": "In the Footsteps of Darwin - Kit de Bússolas",
+   "url": "https://ludopedia.com.br/jogo/in-the-footsteps-of-darwin-kit-de-bussolas",
+   "capa": "https://storage.googleapis.com/ludopedia-capas/89538_t.jpg",
+   "fl_jogo_base": 0,
+   "fl_tipo": 1,
+   "editora": {
+    "id": 5774,
+    "nome": "Moedas & Co.",
+    "url": "https://ludopedia.com.br/editora/5774/Moedas & Co."
    },
    "status": {
     "id": 1,

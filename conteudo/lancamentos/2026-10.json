@@ -2,7 +2,7 @@
  "mes": "2026-10",
  "label": "Outubro de 2026",
  "titulo_previstos": "Previstos para outubro",
- "total": 54,
+ "total": 55,
  "lancados": [
   {
    "id_jogo": 66676,
@@ -477,6 +477,27 @@
     "id": 86,
     "nome": "Independente",
     "url": "https://ludopedia.com.br/editora/86/Independente"
+   },
+   "status": {
+    "id": 1,
+    "label": "Lançado",
+    "slug": "lancado"
+   },
+   "comentarios": 0,
+   "url_topico": null,
+   "pode_criar_topico": true
+  },
+  {
+   "id_jogo": 85685,
+   "nome": "Panton: Episódio Matinta Perera",
+   "url": "https://ludopedia.com.br/jogo/panton-episodio-matinta-perera",
+   "capa": "https://storage.googleapis.com/ludopedia-capas/85685_t.jpg",
+   "fl_jogo_base": 1,
+   "fl_tipo": 1,
+   "editora": {
+    "id": 11259,
+    "nome": "Artemis Table Games",
+    "url": "https://ludopedia.com.br/editora/11259/Artemis Table Games"
    },
    "status": {
     "id": 1,

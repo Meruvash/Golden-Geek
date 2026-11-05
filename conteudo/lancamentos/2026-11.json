@@ -2,7 +2,7 @@
  "mes": "2026-11",
  "label": "Novembro de 2026",
  "titulo_previstos": "Previstos para novembro",
- "total": 17,
+ "total": 20,
  "lancados": [
   {
    "id_jogo": 84451,
@@ -57,6 +57,27 @@
     "id": 2650,
     "nome": "RetroPunk Publicações",
     "url": "https://ludopedia.com.br/editora/2650/RetroPunk Publicações"
+   },
+   "status": {
+    "id": 1,
+    "label": "Lançado",
+    "slug": "lancado"
+   },
+   "comentarios": 0,
+   "url_topico": null,
+   "pode_criar_topico": true
+  },
+  {
+   "id_jogo": 80886,
+   "nome": "Pilgrims: Curious Adventures",
+   "url": "https://ludopedia.com.br/jogo/pilgrims-curious-adventures",
+   "capa": "https://storage.googleapis.com/ludopedia-capas/80886_t.jpg",
+   "fl_jogo_base": 1,
+   "fl_tipo": 1,
+   "editora": {
+    "id": 8985,
+    "nome": "Jelly Monster",
+    "url": "https://ludopedia.com.br/editora/8985/Jelly Monster"
    },
    "status": {
     "id": 1,
@@ -175,6 +196,27 @@
    "pode_criar_topico": false
   },
   {
+   "id_jogo": 84673,
+   "nome": "Coffee Rush Inverno",
+   "url": "https://ludopedia.com.br/jogo/coffee-rush-winter",
+   "capa": "https://storage.googleapis.com/ludopedia-capas/84673_t.jpg",
+   "fl_jogo_base": 1,
+   "fl_tipo": 1,
+   "editora": {
+    "id": 92,
+    "nome": "Asmodee (Galápagos)",
+    "url": "https://ludopedia.com.br/editora/92/Asmodee (Galápagos)"
+   },
+   "status": {
+    "id": 3,
+    "label": "Anunciado",
+    "slug": "anunciado"
+   },
+   "comentarios": 0,
+   "url_topico": null,
+   "pode_criar_topico": true
+  },
+  {
    "id_jogo": 87728,
    "nome": "De Volta ao Kansas",
    "url": "https://ludopedia.com.br/jogo/de-volta-ao-kansas",
@@ -253,6 +295,27 @@
     "id": 4,
     "label": "Em Pré Venda",
     "slug": "pre-venda"
+   },
+   "comentarios": 0,
+   "url_topico": null,
+   "pode_criar_topico": true
+  },
+  {
+   "id_jogo": 86576,
+   "nome": "Harmonies: Crescendo",
+   "url": "https://ludopedia.com.br/jogo/harmonies-crescendo",
+   "capa": "https://storage.googleapis.com/ludopedia-capas/86576_t.jpg",
+   "fl_jogo_base": 0,
+   "fl_tipo": 1,
+   "editora": {
+    "id": 92,
+    "nome": "Asmodee (Galápagos)",
+    "url": "https://ludopedia.com.br/editora/92/Asmodee (Galápagos)"
+   },
+   "status": {
+    "id": 3,
+    "label": "Anunciado",
+    "slug": "anunciado"
    },
    "comentarios": 0,
    "url_topico": null,
