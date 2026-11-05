@@ -10,7 +10,7 @@
   },
   "bravojogos.com.br": {
    "dia": "2026-11-05",
-   "paginas": 23
+   "paginas": 25
   },
   "brecholudico.com.br": {
    "dia": "2026-11-05",
@@ -90,7 +90,7 @@
   },
   "www.alquimistasdosjogos.com.br": {
    "dia": "2026-11-05",
-   "paginas": 6
+   "paginas": 8
   },
   "www.animusludere.com.br": {
    "dia": "2026-11-05",
@@ -206,7 +206,7 @@
   },
   "www.masmorra.com.br": {
    "dia": "2026-11-05",
-   "paginas": 6
+   "paginas": 8
   },
   "www.mecadosjogos.com.br": {
    "descanso_ate": "2026-11-07T20:04+00:00",
@@ -246,7 +246,7 @@
   },
   "www.placegames.com.br": {
    "dia": "2026-11-05",
-   "paginas": 12
+   "paginas": 16
   },
   "www.playeasy.com.br": {
    "dia": "2026-11-05",
@@ -258,7 +258,7 @@
   },
   "www.promobit.com.br": {
    "dia": "2026-11-05",
-   "paginas": 70
+   "paginas": 80
   },
   "www.reunionjogos.com.br": {
    "dia": "2026-11-05",
@@ -278,7 +278,7 @@
   },
   "www.tabuloja.com": {
    "dia": "2026-11-05",
-   "paginas": 8
+   "paginas": 10
   },
   "www.tavernareal.com": {
    "dia": "2026-11-05",
@@ -472,6 +472,12 @@
    "hora": "2026-11-05T20:49+00:00",
    "preco": 29.99
   },
+  "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-hutan-p": {
+   "cj": 130.11,
+   "estoque": true,
+   "hora": "2026-11-05T20:54+00:00",
+   "preco": 139.9
+  },
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-kronologic-cuzco-1450-p": {
    "cj": 120.89,
    "estoque": true,
@@ -637,7 +643,7 @@
   "https://bravojogos.com.br/uau-friday-2023/jogo-gravity-superstar": {
    "cj": 92.07,
    "estoque": true,
-   "hora": "2026-11-05T08:36+00:00",
+   "hora": "2026-11-05T20:54+00:00",
    "preco": 99.0
   },
   "https://loja.frodosbg.com.br/citadels-2nd-edicao-revisada": {
@@ -736,6 +742,12 @@
    "hora": "2026-11-03T23:04+00:00",
    "preco": 152.81
   },
+  "https://www.alquimistasdosjogos.com.br/jogos/covenant": {
+   "cj": 359.81,
+   "estoque": true,
+   "hora": "2026-11-05T20:54+00:00",
+   "preco": 359.81
+  },
   "https://www.alquimistasdosjogos.com.br/jogos/fateflip-arrastado-pelo-mar": {
    "cj": 44.81,
    "estoque": true,
@@ -759,6 +771,12 @@
    "estoque": true,
    "hora": "2026-11-05T13:21+00:00",
    "preco": 296.81
+  },
+  "https://www.alquimistasdosjogos.com.br/jogos/loot": {
+   "cj": 40.31,
+   "estoque": true,
+   "hora": "2026-11-05T20:55+00:00",
+   "preco": 53.81
   },
   "https://www.alquimistasdosjogos.com.br/jogos/the-mandalorian-adventures-cla-de-dois": {
    "cj": 139.3,
@@ -1801,7 +1819,7 @@
   "https://www.facilshopping.com.br/produtos/arkham-horror-card-game-a-cidade-submersa-exp-investigador/?entry_path=category": {
    "cj": 102.21,
    "estoque": true,
-   "hora": "2026-11-05T20:47+00:00",
+   "hora": "2026-11-05T18:04+00:00",
    "preco": 109.9
   },
   "https://www.facilshopping.com.br/produtos/azul-duel-galapagos/": {
@@ -2101,19 +2119,13 @@
   "https://www.masmorra.com.br/produtos/con11819": {
    "cj": 62.91,
    "estoque": true,
-   "hora": "2026-11-05T20:50+00:00",
+   "hora": "2026-11-05T20:55+00:00",
    "preco": 69.9
-  },
-  "https://www.masmorra.com.br/produtos/con11824": {
-   "cj": 107.91,
-   "estoque": true,
-   "hora": "2026-11-05T20:49+00:00",
-   "preco": 119.9
   },
   "https://www.masmorra.com.br/produtos/conc01234": {
    "cj": 449.91,
    "estoque": true,
-   "hora": "2026-11-05T20:48+00:00",
+   "hora": "2026-11-05T20:54+00:00",
    "preco": 499.9
   },
   "https://www.masmorra.com.br/produtos/mbr0056": {
@@ -2338,12 +2350,6 @@
    "hora": "2026-11-05T20:51+00:00",
    "preco": 37.09
   },
-  "https://www.placegames.com.br/boardgames/alien-attack-usa": {
-   "cj": 130.09,
-   "estoque": true,
-   "hora": "2026-11-05T20:47+00:00",
-   "preco": 130.09
-  },
   "https://www.placegames.com.br/boardgames/boast-or-nothing": {
    "cj": 37.09,
    "estoque": true,
@@ -2470,6 +2476,18 @@
    "hora": "2026-11-05T20:48+00:00",
    "preco": 74.29
   },
+  "https://www.placegames.com.br/destemidos-norte-da-africa": {
+   "cj": 153.34,
+   "estoque": true,
+   "hora": "2026-11-05T20:54+00:00",
+   "preco": 153.34
+  },
+  "https://www.placegames.com.br/draftosaurus-marina-e-show-aereo": {
+   "cj": 74.29,
+   "estoque": true,
+   "hora": "2026-11-05T20:54+00:00",
+   "preco": 74.29
+  },
   "https://www.placegames.com.br/exploding-kittens-edicao-revisada": {
    "cj": 64.99,
    "estoque": true,
@@ -2492,6 +2510,18 @@
    "cj": 148.69,
    "estoque": true,
    "hora": "2026-11-05T20:49+00:00",
+   "preco": 148.69
+  },
+  "https://www.placegames.com.br/imperium-classicos": {
+   "cj": 148.69,
+   "estoque": true,
+   "hora": "2026-11-05T20:55+00:00",
+   "preco": 148.69
+  },
+  "https://www.placegames.com.br/imperium-lendas": {
+   "cj": 148.69,
+   "estoque": true,
+   "hora": "2026-11-05T20:55+00:00",
    "preco": 148.69
   },
   "https://www.placegames.com.br/katamino-pocket": {
@@ -3317,10 +3347,10 @@
    "preco": 229.0
   },
   "https://www.tabuloja.com/libertalia-os-ventos-de-galecrest": {
-   "cj": 107.1,
+   "cj": 125.1,
    "estoque": true,
-   "hora": "2026-11-04T20:24+00:00",
-   "preco": 119.0
+   "hora": "2026-11-05T20:55+00:00",
+   "preco": 139.0
   },
   "https://www.tabuloja.com/pre-venda/tiny-epic-crimes-chefoes": {
    "cj": 68.4,
