@@ -203,6 +203,17 @@
   "tipo": "game"
  },
  "beast board game us edition": null,
+ "best story wins": {
+  "bgg": 6.25,
+  "editora": "DSS Games",
+  "imagem": "https://uploads.comparajogos.com.br/img/b50e09fcac649d92c0b0497e15581e4f4630d531.png",
+  "menor": null,
+  "nome": "Best Story Wins",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "best-story-wins",
+  "tipo": "game"
+ },
  "bf a place for all my books": null,
  "bf ai aproveita e ja pega esse tb eu sei que voce vai gostar hitster lado b": null,
  "bf expansao do viticulture para corrigir a expansao do viticulture que corrigiu o jogo base do viticulture viticulture bordeaux expansion": null,
@@ -1823,6 +1834,7 @@
  "shackleton": null,
  "shackleton base": null,
  "shadows of brimstone hero pack gambler": null,
+ "shadows of brimstone pacote de herois nativos jargono": null,
  "shadows of brimstone the guardian of targa xl enemy pack": {
   "bgg": 8.23734,
   "editora": "Flying Frog Productions",
