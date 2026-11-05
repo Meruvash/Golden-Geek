@@ -453,7 +453,12 @@ def build(radar_itens, armadilhas, quase=(), outras=()):
     recordes = sum(1 for x in melhor.values() if x["recorde"])
     n_cupons = sum(len(r["cupons"]) for r in cps.values())
     curta = min((x["dias"] for x in radar_itens), default=None)
-    quase_html = "".join(cartao([x], pre, cps, agora_) for x in quase)
+    # um cartão por jogo também no Quase Black (05/11/2026: o mesmo jogo saía uma vez por loja); as outras lojas vão em
+    # "Mais lojas", como nas outras listas
+    g_quase = {}
+    for x in sorted(quase, key=lambda x: -x["desc"]):
+        g_quase.setdefault(x["slug"], []).append(x)
+    quase_html = "".join(cartao(g, pre, cps, agora_) for g in g_quase.values())
     # Outras promoções: jogos sem nota 7 no BGG nem prêmio, com o mesmo corte de 20% (pedido do usuário em 04/11/2026);
     # contam no total do topo
     g_outras = {}
@@ -556,7 +561,17 @@ def build(radar_itens, armadilhas, quase=(), outras=()):
             return (r[0] - v["preco"]) / r[0]
         return None
     # primeiro os achados com desconto real de 15% ou mais sobre a nossa base; depois os mais recentes (até 80)
-    ordem = sorted(pbs.values(), key=lambda v: ((_real(v) or -1) >= radar.QUASE, v.get("publicado") or ""), reverse=True)[:80]
+    ordem = sorted(pbs.values(), key=lambda v: ((_real(v) or -1) >= radar.QUASE, v.get("publicado") or ""), reverse=True)
+    # um cartão por jogo (05/11/2026: dois canais postando o mesmo jogo saíam duas vezes): fica o da ordem acima, o de
+    # desconto real e mais recente; post sem jogo identificado conta pelo título
+    vistos_c, unicos_c = set(), []
+    for v in ordem:
+        ch = v.get("jogo") or v.get("slug_cj") or radar.chave(limpa(v.get("titulo") or ""))
+        if ch in vistos_c:
+            continue
+        vistos_c.add(ch)
+        unicos_c.append(v)
+    ordem = unicos_c[:80]
     sem_foto_html = ""
     for v in ordem:
         h0 = hist.get(v.get("jogo") or "")
@@ -632,7 +647,7 @@ def build(radar_itens, armadilhas, quase=(), outras=()):
    <li><b>{n_cupons}</b><span>cupom{"s" if n_cupons != 1 else ""} anunciado{"s" if n_cupons != 1 else ""} pelas lojas</span></li>
   </ul>
   <p class="bk-atual">Atualizado em {agora_.strftime("%d/%m/%Y às %Hh%M")} (horário de Brasília). O radar lê os preços de novo a cada 30 minutos.</p>
-  <nav class="bk-pulo" aria-label="Atalhos"><a class="pri" href="#melhores">Ver as novidades</a><a class="sec" href="#alertas">🔔 Alertas no celular</a><button type="button" class="inst" hidden>📲 Tela de Início</button><a class="sec" href="#todas">Bem avaliados ({len(melhor)})</a>{f'<a class="sec" href="#outras">Outras promoções ({n_outras})</a>' if n_outras else ""}{f'<a class="sec" href="#quase">Quase Black ({len(quase)})</a>' if quase else ""}{'<a class="sec" href="#cupons">Cupons</a>' if cps_html else ""}{'<a class="sec" href="#comunidade">Achados da comunidade</a>' if pb_html else ""}{'<a class="sec" href="#sem-foto">Achados sem foto</a>' if sem_foto_html else ""}</nav>
+  <nav class="bk-pulo" aria-label="Atalhos"><a class="pri" href="#melhores">Ver as novidades</a><a class="sec" href="#alertas">🔔 Alertas no celular</a><button type="button" class="inst" hidden>📲 Tela de Início</button><a class="sec" href="#todas">Bem avaliados ({len(melhor)})</a>{f'<a class="sec" href="#outras">Outras promoções ({n_outras})</a>' if n_outras else ""}{f'<a class="sec" href="#quase">Quase Black ({len(g_quase)})</a>' if quase else ""}{'<a class="sec" href="#cupons">Cupons</a>' if cps_html else ""}{'<a class="sec" href="#comunidade">Achados da comunidade</a>' if pb_html else ""}{'<a class="sec" href="#sem-foto">Achados sem foto</a>' if sem_foto_html else ""}</nav>
  </header>
  <ul class="bk-conf">
   <li>Desconto calculado sobre a média aparada do histórico de preços, não sobre o preço "de" da loja.</li>

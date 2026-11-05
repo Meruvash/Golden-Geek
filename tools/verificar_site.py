@@ -188,6 +188,8 @@ def main():
     erros = []
     checar_json(erros)
     checar_afiliados(erros)
+    import duplicatas  # postagem duplicada (Black e notícias), pedido do usuário em 05/11/2026
+    erros.extend(f"postagem duplicada em {x['onde']}: {x['item']}" for x in duplicatas.black() + duplicatas.noticias())
     ns = checar_noticias(erros)
     publicadas = checar_resenhas(erros)
     checar_links(erros)
