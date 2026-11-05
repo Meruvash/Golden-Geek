@@ -8,6 +8,9 @@ on:
   push:
     branches: [main]
     paths: [black/index.html]
+  # as publicações dos robôs do Actions (GITHUB_TOKEN) não disparam o gatilho acima: a cada 15 min, confere também
+  schedule:
+    - cron: "4,19,34,49 * * * *"
   workflow_dispatch:
 
 permissions:
