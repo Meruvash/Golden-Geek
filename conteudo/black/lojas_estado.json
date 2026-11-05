@@ -10,7 +10,7 @@
   },
   "bravojogos.com.br": {
    "dia": "2026-11-05",
-   "paginas": 12
+   "paginas": 14
   },
   "brecholudico.com.br": {
    "dia": "2026-11-05",
@@ -209,7 +209,9 @@
    "paginas": 3
   },
   "www.mecadosjogos.com.br": {
+   "descanso_ate": "2026-11-07T08:28+00:00",
    "dia": "2026-11-05",
+   "motivo": "robots.txt respondeu 403",
    "paginas": 5
   },
   "www.mosaicoloja.com.br": {
@@ -256,7 +258,7 @@
   },
   "www.promobit.com.br": {
    "dia": "2026-11-05",
-   "paginas": 20
+   "paginas": 30
   },
   "www.reunionjogos.com.br": {
    "dia": "2026-11-05",
@@ -272,7 +274,7 @@
   },
   "www.spaceboardgames.com.br": {
    "dia": "2026-11-05",
-   "paginas": 8
+   "paginas": 9
   },
   "www.tabuloja.com": {
    "dia": "2026-11-05",
@@ -410,6 +412,12 @@
    "hora": "2026-11-05T07:36+00:00",
    "preco": 49.99
   },
+  "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-fibonachos-p": {
+   "cj": 27.81,
+   "estoque": true,
+   "hora": "2026-11-05T08:28+00:00",
+   "preco": 29.9
+  },
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-finca-p": {
    "cj": 139.41,
    "estoque": true,
@@ -455,7 +463,7 @@
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-patchwork-nova-edicao-p": {
    "cj": 102.21,
    "estoque": true,
-   "hora": "2026-11-04T19:12+00:00",
+   "hora": "2026-11-05T08:28+00:00",
    "preco": 109.9
   },
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-petiquette-edicao-ingles-p": {
@@ -2131,6 +2139,12 @@
    "estoque": true,
    "hora": "2026-11-05T08:07+00:00",
    "preco": 110.0
+  },
+  "https://www.spaceboardgames.com.br/jogos-de-tabuleiro/mirianth-pets": {
+   "cj": 39.06,
+   "estoque": true,
+   "hora": "2026-11-05T08:28+00:00",
+   "preco": 42.0
   },
   "https://www.spaceboardgames.com.br/jogos-de-tabuleiro/neuroshima-hex-battle-policia-de-aco-vs-feras": {
    "cj": 111.6,
