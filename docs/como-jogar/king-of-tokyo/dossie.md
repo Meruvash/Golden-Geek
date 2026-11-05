@@ -174,7 +174,7 @@ Fotos: a pasta `como-jogar/king-of-tokyo/fotos/` é de outro agente e não exist
 - `python3 tools/checar_comece.py docs/como-jogar/king-of-tokyo/tutorial.md`: "seção Comece a jogar dentro da diretriz".
 - Conversão de prova com `tools/como_jogar_md.pagina()` gerada só no scratchpad (`render/index.html`): sem erro, 11 figuras.
 - Contas: `scripts/contas.py` no scratchpad (trincas, Energia, Vida, exemplo do Space Penguin). Resultados conferem com o texto.
-- Extensão: `wc -w` 5.211 (com marcação, legendas e URLs); contagem `\w+` sem as linhas de figura e vídeo: 4.611. Passa um pouco do alvo de 4.500 por causa das tabelas de componentes e de faces e do exemplo de 5 jogadores, que é a única forma de mostrar Cidade e Baía funcionando juntas. A primeira versão tinha 5.566 e foi cortada (exemplo de cura, segundo treino, dicas, passos repetidos).
+- Extensão: `wc -w` 5.211 (com marcação, legendas e URLs); contagem `\w+` sem as linhas de figura e vídeo: 4.931. Passa um pouco do alvo de 4.500 por causa das tabelas de componentes e de faces e do exemplo de 5 jogadores, que é a única forma de mostrar Cidade e Baía funcionando juntas. A primeira versão tinha 5.566 e foi cortada (exemplo de cura, segundo treino, dicas, passos repetidos).
 - Legibilidade (Flesch adaptado, Martins et al. 1996, `Arcvalion_gospel/tools/discipulado/legibilidade.py --guia`): índice 87,1 ("fácil"), 11,5 palavras por frase, 1,77 sílaba por palavra. As opções de múltipla escolha e as tabelas contam como frases e puxam a média. É informação, não meta. O medidor acusa "linhas com travessão" por causa do hífen das listas de opções; não há travessão.
 
 ## 11. Dados do topo (conteudo/como-jogar/king-of-tokyo.json)

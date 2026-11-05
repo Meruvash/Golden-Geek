@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Como jogar King of Tokyo: regras passo a passo | Elite Boardgamers</title>
+<meta name="description" content="Regras de King of Tokyo passo a passo, conferidas no manual da Galápagos: montagem, os dados, entrar e sair de Tóquio, cartas de Poder e fim.">
+<link rel="canonical" href="https://eliteboardgamers.com.br/como-jogar/king-of-tokyo/">
+<meta name="robots" content="max-image-preview:large">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Como jogar King of Tokyo">
+<meta property="og:description" content="Regras de King of Tokyo passo a passo, conferidas no manual da Galápagos: montagem, os dados, entrar e sair de Tóquio, cartas de Poder e fim.">
+<meta property="og:url" content="https://eliteboardgamers.com.br/como-jogar/king-of-tokyo/">
+<meta property="og:image" content="https://eliteboardgamers.com.br/como-jogar/king-of-tokyo/fotos/mesa-1.webp">
+<link rel="icon" href="../../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32.png">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<link rel="preload" href="../../fontes/public-sans.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:"Public Sans";src:url(../../fontes/public-sans.woff2) format("woff2");font-weight:400 800;font-style:normal;font-display:swap}
+@font-face{font-family:"Public Sans";src:url(../../fontes/public-sans-italic.woff2) format("woff2");font-weight:400;font-style:italic;font-display:swap}
+/* Layout: o mesmo da página de lição do Discipulado (O Paladino): fundo preto (pedido do editor: preto no lugar do azul), faixa do banner, navegação fixa, coluna central de 760px com cartões claros de papel, filete dourado sobre os títulos de seção. Visual único (o site não tem tema claro). */
+:root{
+  color-scheme:dark;
+  --ground:#000; --panel:#0f1115; --panel2:#171a20; --line:#262a32; --line2:#2e333c;
+  --ink:#eceff3; --muted:#a1a9b5; --gold:#e3b23c;
+  --paper:#f4f5f7; --paper-ink:#14171c; --paper-muted:#5a6270; --paper-line:#dde1e7; --paper-text:#3a414c;
+  --link:#1f5fae; --ok:#1b7a45; --ok-bg:#e3f4ea; --cinza-bg:#eceef1; --ouro-bg:#fff4d1; --ouro-ink:#8a5f00;
+  --erro:#b3263e; --faixa-ouro:#1d1606; --ouro-claro:#f1ead6; --check:#4cc38a;
+  --f-body:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box}
+html{scroll-padding-top:64px}
+body{margin:0;background:var(--ground);color:var(--ink);font:16px/1.55 var(--f-body)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--panel)}
+h1,h2,h3,p,ul,ol,figure{margin:0}
+a{color:var(--link);text-underline-offset:.18em}
+::selection{background:var(--gold);color:#000}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px;border-radius:3px}
+.gut{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+
+.skip{position:absolute;left:-999px}.skip:focus{left:12px;top:8px;z-index:40;background:var(--gold);color:#000;padding:6px 10px}
+.aviso{background:var(--gold);color:#000;font-weight:800;font-size:.8rem;text-align:center}
+.aviso .gut{padding-block:6px}
+.topo{background:var(--ground)}
+.topo img{display:block;width:100%;max-width:640px;height:auto;margin:0 auto}
+.nav{background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line);position:sticky;top:env(safe-area-inset-top,0px);z-index:20}
+.nav ul{max-width:1120px;margin:0 auto;list-style:none;display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;padding-block:0}
+.nav a{display:block;padding:11px 12px;white-space:nowrap;color:var(--ink);text-decoration:none;font-weight:700;font-size:.92rem;border-bottom:3px solid transparent}
+.nav a[aria-current]{color:var(--gold);border-bottom-color:var(--gold)}
+
+.nota{max-width:760px;margin:0 auto;padding-block:20px 56px;display:grid;gap:16px}
+.trilha ol{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:4px 8px;font-size:.85rem;color:var(--muted)}
+.trilha li+li::before{content:"›";margin-right:8px;color:var(--muted)}
+.trilha a{color:var(--gold);font-weight:700;text-decoration:none}
+
+.bloco{background:var(--paper);color:var(--paper-ink);border-radius:10px;padding:20px;min-width:0;display:grid;gap:14px}
+.num-l{font-size:.8rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--paper-muted)}
+h1{font-size:clamp(1.7rem,5vw,2.4rem);line-height:1.12;font-weight:800;letter-spacing:-.015em;text-wrap:balance}
+.meta-e{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:.88rem;color:var(--paper-muted)}
+.meta{font-family:var(--mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.05em;color:var(--paper-muted)}
+
+.r1{background:var(--panel2);color:var(--ink);border:1px solid var(--line2);border-left:4px solid var(--gold)}
+.kick{font-size:.75rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--gold)}
+.r1 .resp{font-size:1.12rem;font-weight:600;line-height:1.45}
+.r1 ul{list-style:none;padding:0;display:grid;gap:8px}
+.r1 li{display:flex;gap:8px;align-items:flex-start;color:#dfe4ea}
+.r1 li svg{flex:none;width:20px;height:20px;margin-top:2px;stroke:var(--check);fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.r1 .pe{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:.88rem;color:var(--muted)}
+.r1 .pe b{color:var(--ink)}
+.legenda{display:flex;flex-wrap:wrap;gap:8px}
+.legenda span{font-size:.74rem;font-weight:800;letter-spacing:.04em;border-radius:999px;padding:3px 10px 3px 14px;background:var(--paper);color:var(--paper-ink)}
+.legenda .l1{box-shadow:inset 5px 0 0 var(--paper-ink)}.legenda .l2{box-shadow:inset 5px 0 0 var(--ok)}
+.legenda .l3{box-shadow:inset 5px 0 0 var(--gold)}.legenda .l4{box-shadow:inset 5px 0 0 var(--ouro-ink)}
+
+.indice h2,.sec>h2{font-size:1.15rem;font-weight:800;line-height:1.3;color:var(--paper-ink);border-top:3px solid var(--gold);padding-top:12px;text-wrap:balance;display:flex;gap:10px;align-items:baseline}
+.indice ol{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:2px 16px}
+.indice a{display:block;padding:6px 0;color:var(--paper-ink);text-decoration:none;font-weight:600;font-size:.94rem;border-bottom:1px solid var(--paper-line)}
+.indice a:hover{color:var(--link)}
+
+.sec>h2 .num{display:none}
+.sec h3{font-size:1.05rem;font-weight:800;margin-top:6px}
+.sec p{color:var(--paper-text);max-width:66ch}
+.sec ul,.sec ol{padding-left:1.3em;display:grid;gap:6px;color:var(--paper-text)}
+.sec ul{list-style:disc}
+.sec li::marker{color:var(--ouro-ink);font-weight:800}
+strong{font-weight:700;color:var(--paper-ink)}
+.pg{white-space:nowrap;font-size:.76em;color:var(--paper-muted);border:1px solid var(--paper-line);background:#fff;border-radius:4px;padding:0 5px;vertical-align:.08em;font-variant-numeric:tabular-nums}
+code{font-size:.9em;background:#fff;padding:1px 5px;border-radius:4px}
+
+.tab{overflow-x:auto;border:1px solid var(--paper-line);border-radius:8px;background:#fff}
+table{border-collapse:collapse;width:100%;font-size:.92rem;color:var(--paper-text)}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--paper-line);vertical-align:top}
+th{font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--paper-muted);background:var(--paper)}
+tr:last-child td{border-bottom:0}
+
+.call{border-radius:8px;padding:14px 16px;display:grid;gap:10px;min-width:0;background:#fff;border:1px solid var(--paper-line);border-left:4px solid var(--paper-muted)}
+.call .rot{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;font-weight:800;color:var(--paper-muted)}
+.call.entender{background:var(--cinza-bg);border-color:#d5d9df;border-left-color:var(--paper-ink)}
+.call.entender .rot{color:var(--paper-ink)}
+.call.passos{border-left-color:var(--ok)}
+.call.passos .rot{color:var(--ok)}
+.call.resolvido{background:var(--panel2);border-color:var(--line2);border-left-color:var(--gold)}
+.call.resolvido .rot{color:var(--gold)}
+.call.resolvido p,.call.resolvido li{color:#dfe4ea}
+.call.resolvido strong{color:#fff}
+.call.resolvido .pg{color:#c8ccd2;border-color:var(--line2)}
+.call.complete{border-left:4px dashed var(--gold)}
+.call.complete .rot{color:var(--ouro-ink)}
+.call.suavez{background:var(--faixa-ouro);border-color:#3a2e10;border-left-color:var(--gold)}
+.call.suavez .rot{color:var(--gold)}
+.call.suavez p,.call.suavez li{color:var(--ouro-claro)}
+.call.suavez strong{color:#fff}
+.call.suavez li::marker{color:var(--gold)}
+.call.suavez .pg{color:var(--ouro-claro);border-color:#3a2e10}
+.call.treino{background:var(--ouro-bg);border-color:#f0dfa6;border-left-color:var(--ouro-ink)}
+.call.treino .rot{color:var(--ouro-ink)}
+.call.atencao{border-left-color:var(--erro)}
+.call.atencao .rot{color:var(--erro)}
+.call.edicao{background:var(--paper);border-left-color:var(--paper-ink)}
+.call.edicao .rot{color:var(--paper-ink)}
+.call.dica{background:var(--ouro-bg);border-left-color:var(--gold)}
+.call.dica .rot{color:var(--ouro-ink)}
+.call ol,.call ul{padding-left:1.3em}
+.call .pg{background:transparent}
+
+.respostas{border:1px solid var(--paper-line);border-left:4px solid var(--ok);border-radius:8px;background:#fff}
+.respostas summary{cursor:pointer;padding:12px 16px;font-weight:800;color:var(--ok);list-style:none;min-height:44px;display:flex;align-items:center}
+.respostas summary::-webkit-details-marker{display:none}
+.respostas summary::before{content:"+";display:inline-grid;place-items:center;width:1.4em;height:1.4em;margin-right:8px;border-radius:50%;background:var(--ok-bg)}
+.respostas[open] summary::before{content:"−"}
+.respostas>div{padding:0 16px 16px;display:grid;gap:12px}
+
+.sec.rapido{outline:2px solid var(--gold);outline-offset:-2px}
+.sec.rapido>h2::after{content:"4 min de leitura";margin-left:auto;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:#000;background:var(--gold);border-radius:3px;padding:3px 8px;white-space:nowrap}
+.sec.rapido>p:first-of-type{font-size:1.02rem}
+.sec.ref{outline:2px solid var(--gold);outline-offset:-2px}
+.sec.ref>h2::after{content:"Leve para a mesa";margin-left:auto;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:#000;background:var(--gold);border-radius:3px;padding:3px 8px;white-space:nowrap}
+
+footer{border-top:1px solid var(--line);background:var(--panel);color:var(--muted);font-size:.85rem}
+footer .in{max-width:760px;margin:0 auto;padding-block:20px}
+@media (max-width:600px){
+  .bloco{padding:16px;border-radius:8px}
+  .sec.ref>h2::after{display:none}
+}
+/* essencial x opcional: o que não é essencial abre com um toque */
+.dobra{border:1px solid var(--paper-line);border-radius:8px;background:#fff}
+.dobra>summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:10px;padding:11px 14px;font-weight:700;font-size:.92rem;color:var(--paper-ink);min-height:44px}
+.dobra>summary::-webkit-details-marker{display:none}
+.dobra>summary::before{content:"+";flex:none;display:grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--paper-line);color:var(--paper-ink);font-weight:800;line-height:1}
+.dobra[open]>summary::before{content:"−"}
+.dobra>.call,.dobra>details,.dobra>aside{margin:0 12px 12px}
+.dobra.pratica>summary{color:var(--ouro-ink)}
+.dobra.pratica[open]{display:grid;gap:10px;padding-bottom:12px}
+.dobra.pratica>*:not(summary){margin:0 12px}
+.dobra.sec-opc{border-style:dashed}
+.dobra.sec-opc[open]{padding-bottom:12px}
+.dobra.sec-opc>*:not(summary){margin-left:14px;margin-right:14px}
+.tag-opc{margin-left:10px;font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;font-weight:800;color:var(--paper-muted);border:1px solid var(--paper-line);border-radius:3px;padding:2px 6px;vertical-align:middle}
+.legenda-f{font-size:.88rem;color:var(--muted)}.legenda-f b{color:var(--ink)}
+.mais-i{display:inline-grid;place-items:center;width:18px;height:18px;border-radius:50%;background:var(--paper-line);color:var(--paper-ink);font-weight:800;font-size:.8rem}
+.indice small{color:var(--muted);font-weight:400}
+.sec p,.sec li,.sec a{overflow-wrap:anywhere}
+
+.ico{display:inline-block;width:28px;height:28px;vertical-align:middle;border-radius:5px;margin-right:6px}
+td .ico{margin-right:6px}
+.rec{display:inline-flex;align-items:center;gap:0;white-space:nowrap}
+.cel{display:block;min-width:0}
+
+/* referências visuais (01/11/2026): figura do manual e vídeo no ponto da ação */
+.fig,.video{margin:4px 0;display:grid;gap:6px;min-width:0}
+.fig img{width:100%;height:auto;border-radius:8px;border:1px solid var(--paper-line);background:#fff}
+.fig figcaption,.video figcaption{font-size:.82rem;color:var(--paper-muted);line-height:1.45}
+.yt{position:relative;display:block;width:100%;padding:0;border:0;border-radius:8px;overflow:hidden;cursor:pointer;background:#000;aspect-ratio:16/9}
+.yt img{width:100%;height:100%;object-fit:cover;opacity:.85;display:block}
+.yt-play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:#c4302b;color:#fff;font-weight:800;font-size:.95rem;padding:10px 16px;border-radius:999px;white-space:nowrap;box-shadow:0 2px 10px rgba(0,0,0,.4)}
+.yt:hover .yt-play,.yt:focus-visible .yt-play{background:#e03a33}
+.video iframe{width:100%;aspect-ratio:16/9;border:0;border-radius:8px;display:block}
+/* fotos em todas as seções (04/11/2026): foto do jogo no topo e em cada seção sem figura do manual */
+.topo-cj{overflow:hidden}
+.foto-topo{margin:-20px -20px 4px;display:grid;gap:0}
+.foto-topo img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;background:#fff}
+.foto-topo figcaption{font-size:.78rem;color:var(--paper-muted);padding:6px 20px 0}
+.foto-topo.caixa img,.foto-sec.caixa img{object-fit:contain}
+.foto-sec img{aspect-ratio:16/9;object-fit:cover}
+@media (max-width:600px){.foto-topo{margin:-16px -16px 4px}.foto-topo figcaption{padding:6px 16px 0}}
+.sec.setup{border-top:4px solid var(--ok)}
+.sec.setup>h2::before{content:"Comece por aqui";display:block;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ok);margin-bottom:4px}
+.sec.setup>h2{display:block}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://eliteboardgamers.com.br/#organizacao", "name": "Elite Boardgamers", "url": "https://eliteboardgamers.com.br/", "logo": {"@type": "ImageObject", "url": "https://eliteboardgamers.com.br/marca/elite-boardgamers.webp", "width": 318, "height": 254}, "sameAs": ["https://www.instagram.com/eliteboardgamers/"]}, {"@type": "Article", "@id": "https://eliteboardgamers.com.br/como-jogar/king-of-tokyo/#artigo", "mainEntityOfPage": "https://eliteboardgamers.com.br/como-jogar/king-of-tokyo/", "headline": "Como jogar King of Tokyo", "description": "Regras de King of Tokyo passo a passo, conferidas no manual da Galápagos: montagem, os dados, entrar e sair de Tóquio, cartas de Poder e fim.", "image": ["https://eliteboardgamers.com.br/como-jogar/king-of-tokyo/fotos/mesa-1.webp"], "datePublished": "2026-11-05", "author": {"@type": "Organization", "name": "Redação Elite Boardgamers", "url": "https://eliteboardgamers.com.br/politica-editorial/"}, "publisher": {"@id": "https://eliteboardgamers.com.br/#organizacao"}, "inLanguage": "pt-BR"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Início", "item": "https://eliteboardgamers.com.br/"}, {"@type": "ListItem", "position": 2, "name": "Como jogar", "item": "https://eliteboardgamers.com.br/como-jogar/"}, {"@type": "ListItem", "position": 3, "name": "Como jogar King of Tokyo", "item": "https://eliteboardgamers.com.br/como-jogar/king-of-tokyo/"}]}]}</script>
+<style id="moldura">.busca-btn{display:grid;place-items:center;flex:none;width:44px;height:44px;padding:0;border:1px solid #3a3f48;border-radius:8px;background:none;color:#e9ecf1;cursor:pointer}.busca-btn:hover{border-color:#e3b23c;color:#e3b23c}.busca-btn[hidden]{display:none}.sino-btn{position:relative;display:grid;place-items:center;flex:none;width:44px;height:44px;padding:0;border:1px solid #3a3f48;border-radius:8px;background:none;color:#e9ecf1;cursor:pointer}.sino-btn:hover,.sino-btn.on{border-color:#e3b23c;color:#e3b23c}.sino-btn[hidden]{display:none}.sino-btn.on::after{content:"";position:absolute;right:7px;top:7px;width:8px;height:8px;border-radius:50%;background:#5fd38d;box-shadow:0 0 0 2px #111}footer .in a{display:inline-flex;align-items:center;min-height:24px}.cpw{position:relative;display:inline-block}.cp{display:inline-flex;align-items:center;justify-content:center;gap:8px;box-sizing:border-box;line-height:1.2;min-height:44px;margin:0;padding:10px 20px;border-radius:999px;border:0;background:#157a43;color:#fff;font:inherit;font-size:.95rem;font-weight:800;text-decoration:none;cursor:pointer}.cp:hover{background:#11683a;color:#fff}.cp .ic{width:19px;height:19px}.cp[hidden]{display:none}.cpw.mini .cp{min-height:40px;padding:8px 14px;font-size:.88rem}.cp-menu{position:absolute;z-index:30;top:calc(100% + 8px);left:0;min-width:200px;display:grid;gap:2px;padding:6px;border-radius:12px;background:#fff;border:1px solid #dde1e7;box-shadow:0 10px 30px rgba(0,0,0,.25)}.cp-menu[hidden]{display:none}.cp-menu.sobe{top:auto;bottom:calc(100% + 8px)}.cp-menu.dir{left:auto;right:0}.cp-op{display:flex;align-items:center;gap:10px;min-height:44px;padding:8px 12px;border:0;border-radius:8px;background:none;color:#14171c;font:inherit;font-size:.95rem;font-weight:700;text-align:left;text-decoration:none;cursor:pointer}.cp-op:hover,.cp-op:focus-visible{background:#eef1f4;color:#14171c}.cp-op .ic{width:20px;height:20px}.cp-op.zap-op .ic{color:#157a43}.cp-st{position:absolute;z-index:30;top:calc(100% + 8px);left:0;white-space:nowrap;margin:0;padding:6px 12px;border-radius:8px;background:#14171c;color:#fff;font-size:.85rem;font-weight:700}.cp-st:empty{display:none}.barra-lt .cp-st{top:auto;bottom:calc(100% + 8px)}.convite{display:flex;align-items:center;justify-content:space-between;gap:12px 20px;flex-wrap:wrap}.convite .cv-t{margin:0;font-weight:800;font-size:1.1rem}.convite .cv-s{margin:2px 0 0;font-size:.92rem;opacity:.8}.barra-lt>*{flex:none}.barra-lt{width:max-content;max-width:calc(100vw - 12px);box-sizing:border-box;position:fixed;z-index:25;left:50%;bottom:calc(12px + env(safe-area-inset-bottom));display:flex;align-items:center;gap:4px;padding:5px;border-radius:999px;background:#14171c;border:1px solid #3a3f48;box-shadow:0 8px 24px rgba(0,0,0,.35);transform:translate(-50%,0);transition:transform .25s ease,opacity .25s ease}.barra-lt.fora{transform:translate(-50%,calc(100% + 24px));opacity:0;pointer-events:none}.lt-b{display:inline-flex;align-items:center;gap:7px;min-height:44px;padding:8px 14px;border:0;border-radius:999px;background:none;color:#e9ecf1;font:inherit;font-size:.9rem;font-weight:700;text-decoration:none;cursor:pointer}.lt-b:hover{background:#262a31;color:#fff}.lt-b .ic{width:20px;height:20px}.barra-lt .lt-b.curtir{background:none;border:0;color:#e9ecf1;padding:8px 14px}.barra-lt .lt-b.curtir[aria-pressed=true]{color:#ff6b81;background:none}@media (max-width:479px){.lt-b span{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}}.lt-b.curtir[aria-pressed=true] .ic{fill:currentColor}.lt-grupo{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:44px;padding:0 14px 0 6px;border-radius:999px;background:#e3b23c;color:#14171c;font-size:.9rem;font-weight:800;text-decoration:none;white-space:nowrap}.lt-grupo:hover{background:#f0c44f;color:#14171c}.lt-grupo img{width:32px;height:32px;border-radius:8px;display:block}@media (max-width:479px){.barra-lt{gap:2px}.barra-lt .lt-b{padding:8px 10px}.barra-lt .cp{padding:8px 12px}.lt-grupo{padding:0 12px 0 6px}}@media (max-width:399px){.barra-lt:has(.curtir) .cp span{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}.barra-lt:has(.curtir) .cp{padding:8px 14px}}.barra-lt .cp{min-height:44px;padding:8px 16px;font-size:.9rem}body.lt-on .voltar-topo,body.lt-on button.sobe{bottom:calc(76px + env(safe-area-inset-bottom))}@media print{.barra-lt{display:none}}.interacoes{display:grid;gap:14px}.interacoes[hidden]{display:none}.curtir-l{display:flex;align-items:center;gap:12px;flex-wrap:wrap}.curtir{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:8px 18px;border-radius:999px;border:2px solid #b3263e;background:#fff;color:#b3263e;font:inherit;font-weight:800;cursor:pointer}.curtir .ic{width:22px;height:22px}.curtir[aria-pressed=true]{background:#b3263e;color:#fff}.curtir[aria-pressed=true] .ic{fill:currentColor}.curtir .n{font-variant-numeric:tabular-nums}.curtir-dica{font-size:.9rem;color:#5a6270}.interacoes h2{margin:4px 0 0}.coms{list-style:none;margin:0;padding:0;display:grid;gap:10px}.coms li{background:#fff;border:1px solid #dde1e7;border-radius:10px;padding:12px 14px}.com-quem{margin:0;font-size:.92rem}.com-quem time{color:#5a6270;font-size:.8rem;margin-left:6px}.com-txt{margin:4px 0 0;white-space:pre-wrap;color:#14171c}.coms-vazio{margin:0;color:#5a6270}.com-form{display:grid;gap:10px;border-top:1px solid #dde1e7;padding-top:14px}.com-form label{display:grid;gap:4px;font-weight:700;font-size:.9rem;color:#14171c}.com-form small{font-weight:600;color:#5a6270}.com-form input,.com-form textarea{font:inherit;font-size:16px;font-weight:400;padding:10px 12px;border:1px solid #c8cdd5;border-radius:8px;background:#fff;color:#14171c}.com-form textarea{resize:vertical;min-height:110px}.com-form .isca{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}.com-form button{justify-self:start;min-height:44px;padding:10px 20px;border-radius:999px;border:0;background:#14171c;color:#fff;font:inherit;font-weight:800;cursor:pointer}.com-form button:disabled{opacity:.6}.com-aviso{margin:0;font-size:.82rem;color:#5a6270}.com-aviso a{color:#1f5fae}.com-st{margin:0;font-weight:700;font-size:.92rem}.com-st:empty{display:none}.com-st.ok{color:#1b7a45}.com-st.erro{color:#a3223a}:where(html){scroll-padding-top:calc(var(--nav-h,49px) + 12px)}.nav{position:sticky;top:0;z-index:20}body .abas,body .barra-f,body .ctrl{top:var(--nav-h,49px)}.marca img.logo{width:auto;height:48px;border-radius:0}@media (max-width:480px){.marca img.logo{height:40px}}.nav .casa{display:flex;align-items:center;justify-content:center;min-width:44px}.nav .casa .ic{width:20px;height:20px}@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.card:hover,.jogo:hover .capa img,.jogo:active .capa,.zap:active,.post-btn:active,.btn-filtro:hover,.btn-filtro:active,.ver:active{transform:none!important}}.in{max-width:1180px;margin:0 auto;padding-left:16px;padding-right:16px}.ic{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round;flex:none}.bar{border-bottom:1px solid var(--line);background:#000;color:var(--ink)}.bar .in{display:flex;align-items:center;gap:12px;padding-top:8px;padding-bottom:8px}.bar a{color:inherit;text-decoration:none;font-weight:600;font-size:.95rem}.marca img{display:block;width:84px;border-radius:6px}.bar .ig{margin-left:auto;display:flex;align-items:center;gap:6px;padding:6px 10px;border-radius:6px}.bar .ig:hover{color:var(--gold)}.bar .zap-mini{display:flex;align-items:center;gap:6px;padding:6px 10px;border-radius:6px;background:#157a43;color:#fff}.nav ul{padding-left:16px;padding-right:16px}.nav ul li{list-style:none}@media (max-width:700px){.bar .ig span,.bar .zap-mini span{display:none}}footer{font-size:.9rem}footer .in{max-width:1180px;display:flex;flex-wrap:wrap;gap:6px 16px;padding-top:20px;padding-bottom:28px}footer a{color:var(--muted);text-decoration:none}footer a:hover{color:var(--gold)}</style>
+<style id="guia-extra">
+/* fotos na lista de tutoriais e no topo de /como-jogar/ (04/11/2026) */
+.topo-cj{overflow:hidden}
+.lista-t a.com-foto{grid-template-columns:96px 1fr;column-gap:14px;align-items:start}
+.lista-t a.com-foto>*{grid-column:2}
+.lista-t a.com-foto>img{grid-column:1;grid-row:1/span 4;width:96px;height:96px;object-fit:cover;border-radius:6px;background:#fff}
+.cj-mosaico{display:grid;grid-template-columns:2fr 1fr;grid-template-rows:1fr 1fr;gap:4px;margin:-20px -20px 4px;aspect-ratio:16/9;overflow:hidden}
+.cj-mosaico img{width:100%;height:100%;object-fit:cover;display:block;background:#fff}
+.cj-mosaico img:first-child{grid-row:1/span 2}
+.cj-mosaico-c{font-size:.78rem;color:var(--paper-muted)}
+@media (max-width:600px){.cj-mosaico{margin:-16px -16px 4px}.lista-t a.com-foto{grid-template-columns:72px 1fr}.lista-t a.com-foto>img{width:72px;height:72px}}
+/* faixa de progresso, presa logo abaixo do menu */
+.guia-prog{position:sticky;top:var(--nav-h,45px);z-index:15;background:var(--panel);border-bottom:1px solid var(--line)}
+.guia-prog a{display:flex;align-items:center;gap:10px;max-width:760px;margin:0 auto;padding:9px 16px;color:var(--ink);text-decoration:none;font-size:.86rem;font-weight:700;min-height:40px}
+.guia-prog .gp-r{flex:none;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--gold)}
+.guia-prog .gp-t{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.guia-prog .gp-i{margin-left:auto;flex:none;font-size:.78rem;color:var(--muted);font-weight:600}
+.guia-prog .gp-b{position:absolute;left:0;right:0;bottom:-1px;height:3px;background:var(--gold);transform-origin:0 50%;transform:scaleX(0)}
+html{scroll-padding-top:calc(var(--nav-h,45px) + 56px)}
+/* legenda dos blocos: pontos de cor em vez de pílulas */
+.legenda{gap:6px 16px}
+.legenda span{position:relative;background:none;color:var(--muted);box-shadow:none!important;padding:0 0 0 16px;font-size:.8rem;letter-spacing:0}
+.legenda span::before{content:"";position:absolute;left:0;top:.32em;width:10px;height:10px;border-radius:3px;background:var(--paper)}
+.legenda .l2::before{background:var(--ok)}.legenda .l3::before{background:var(--gold)}.legenda .l4::before{background:var(--ouro-ink)}
+/* índice numerado */
+.indice ol{counter-reset:it}.indice li{counter-increment:it}
+.indice a{display:flex;gap:10px;align-items:baseline;min-height:40px;padding:9px 0}
+.indice a::before{content:counter(it);flex:none;width:1.6em;font-size:.8rem;font-weight:800;color:var(--ouro-ink);font-variant-numeric:tabular-nums}
+.nota-pe{color:var(--muted);font-size:.85rem;padding:4px 2px 0}
+/* exercícios de múltipla escolha: tocou numa opção, aparece a certa e a explicação */
+.quiz{display:grid;gap:8px;padding:12px 0;border-top:1px solid var(--paper-line)}.quiz:first-of-type{border-top:0}
+.q-p{font-weight:700;color:inherit}
+.q-ops{display:grid;gap:6px}
+.q-op{display:block;width:100%;text-align:left;font:inherit;font-size:.95rem;line-height:1.35;min-height:44px;padding:10px 12px;border-radius:8px;
+ border:1px solid #c8cdd5;background:#fff;color:#14171c;cursor:pointer}
+.q-op:hover{border-color:var(--gold)}.q-op:disabled{cursor:default}
+.q-op.ok{background:#e3f4ea;border-color:#1b7a45;color:#0f4d2b;font-weight:700}.q-op.ok::before{content:"✓ ";font-weight:800}
+.q-op.erro{background:#fbe6e9;border-color:#b3263e;color:#7d1a2b}.q-op.erro::before{content:"✗ ";font-weight:800}
+.q-exp{border-left:4px solid var(--ok);background:#f2faf5;color:#14171c;border-radius:6px;padding:8px 12px}
+.q-exp .q-res{color:var(--ok)}.q-exp.mal{border-left-color:#b3263e;background:#fdf3f4}.q-exp.mal .q-res{color:#b3263e}
+.call.suavez .q-op,.call.resolvido .q-op{border-color:#3a2e10}
+/* endereços longos (fontes) quebram em vez de alargar a página */
+.sec a,.sec li,.sec p{overflow-wrap:anywhere}
+/* títulos das etapas com mais respiro */
+.sec{scroll-margin-top:calc(var(--nav-h,45px) + 56px)}
+@media (min-width:601px){.sec{padding:24px 28px}}
+/* tabelas: fichas no celular (menos as grades de células curtas, que ficam tabela e centralizadas) */
+.tab table.grade th,.tab table.grade td{text-align:center;padding:7px 6px}
+.tab table.grade th{white-space:normal;overflow-wrap:anywhere;hyphens:auto}
+@media (max-width:600px){
+ .tab:not(:has(.grade)){border:0;background:none;overflow:visible;border-radius:0}
+ .tab:not(:has(.grade)) table,.tab:not(:has(.grade)) tbody,.tab:not(:has(.grade)) tr,.tab:not(:has(.grade)) td{display:block}
+ .tab:not(:has(.grade)) thead{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+ .tab:not(:has(.grade)) tr{background:#fff;border:1px solid var(--paper-line);border-radius:8px;padding:10px 12px;margin-bottom:8px}
+ .tab:not(:has(.grade)) td{border:0;padding:3px 0;display:grid;grid-template-columns:6.5em minmax(0,1fr);gap:8px}
+ .tab:not(:has(.grade)) td::before{content:attr(data-label);font-size:.7rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--paper-muted);padding-top:3px}
+ .tab:not(:has(.grade)) td:empty{display:none}
+ .tab:not(:has(.grade)) td:first-child{display:block;font-weight:800;color:var(--paper-ink);padding-bottom:4px}
+ .tab:not(:has(.grade)) td:first-child::before{display:none}
+}
+</style>
+</head>
+<body>
+<!--moldura--><a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<header class="bar" id="topo"><div class="in">
+ <a class="marca" href="../../"><img class="logo" src="../../marca/logo-eb-104.webp" srcset="../../marca/logo-eb-52.webp 157w, ../../marca/logo-eb-104.webp 314w, ../../marca/logo-eb-156.webp 472w" sizes="(max-width: 480px) 121px, 145px" width="157" height="52" alt="Elite Board Gamers: página inicial"></a>
+ <a class="ig" href="https://www.instagram.com/eliteboardgamers/" target="_blank" rel="noopener" aria-label="Instagram @eliteboardgamers"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6" fill="currentColor"/></svg><span>@eliteboardgamers</span></a>
+ <a class="zap-mini" href="https://chat.whatsapp.com/IgQQkJdSkzHBaEq3UwFeAo" target="_blank" rel="noopener" aria-label="Grupo do WhatsApp"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8.4 19l-4.4 1Z"/><path d="M9.2 8.6c.3-.5.8-.5 1-.1l.7 1.5c.1.3 0 .6-.2.8l-.4.4c.5 1.1 1.4 2 2.5 2.5l.4-.4c.2-.2.5-.3.8-.2l1.5.7c.4.2.4.7-.1 1-.7.5-1.6.6-2.4.3a7 7 0 0 1-4.2-4.2c-.3-.8-.2-1.7.4-2.3Z"/></svg><span>Grupo do WhatsApp</span></a>
+ <button type="button" class="busca-btn" aria-label="Buscar no site" aria-haspopup="dialog" aria-keyshortcuts="/ Control+K" hidden><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></button>
+ <button type="button" class="sino-btn" aria-label="Receber notificações" aria-haspopup="dialog" aria-expanded="false" hidden><svg class="ic" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 3a6 6 0 0 0-6 6v3.6L4.3 15.5A1 1 0 0 0 5.2 17h13.6a1 1 0 0 0 .9-1.5L18 12.6V9a6 6 0 0 0-6-6z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M9.5 19.5a2.6 2.6 0 0 0 5 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+</div></header>
+<script src="/sino.js?v=2" defer></script>
+<script>(()=>{const b=document.querySelector('.busca-btn');let c;b.hidden=false;const a=()=>{c=c||new Promise((r,j)=>{const s=document.createElement('script');s.src='../../busca.js';s.onload=r;s.onerror=()=>{c=null;j()};document.head.append(s)});c.then(()=>abrirBusca('../../'),()=>{})};b.addEventListener('click',a);addEventListener('keydown',e=>{const t=e.target,ed=t.isContentEditable||/^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName);if((e.key==='/'&&!ed&&!e.ctrlKey&&!e.metaKey)||((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k')){e.preventDefault();a()}})})()</script>
+<nav class="nav" aria-label="Seções do site"><ul class="in"><li><a class="casa" href="../../" aria-label="Página inicial"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 9.5V20h13V9.5"/><path d="M10 20v-5.5h4V20"/></svg></a></li><li><a href="../../noticias/">Notícias</a></li><li><a href="../../resenhas/">Resenhas</a></li><li><a href="../../como-jogar/" aria-current="true">Como jogar</a></li><li><a href="../../lancamentos/">Lançamentos</a></li><li><a href="../../black/">Black de Verdade</a></li></ul></nav>
+<script>(()=>{const n=document.querySelector('.nav'),h=()=>document.documentElement.style.setProperty('--nav-h',n.offsetHeight+'px');h();addEventListener('resize',h);addEventListener('load',h)})()</script>
+<div class="guia-prog"><a href="#neste-guia"><span class="gp-r">Guia</span><span class="gp-t">Neste guia</span><span class="gp-i">Índice</span></a><span class="gp-b" aria-hidden="true"></span></div><!--/moldura-->
+
+<main id="conteudo" class="gut"><div class="nota">
+  <nav class="trilha" aria-label="Trilha de navegação"><ol><li><a href="../../">Início</a></li><li><a href="../">Como jogar</a></li><li aria-current="page">King of Tokyo</li></ol></nav>
+
+  <article class="bloco topo-cj">
+    <figure class="foto-topo"><img src="fotos/mesa-1.webp" alt="King of Tokyo: a mesa montada" width="1600" height="1067" fetchpriority="high" decoding="async"><figcaption>Imagem: IELLO · edição francesa</figcaption></figure>
+    <span class="num-l">Dados · Família</span>
+    <h1>Como jogar King of Tokyo</h1>
+    <p class="meta-e"><span>Para quem nunca jogou</span><span>2 a 6 jogadores</span><span>30 min</span><span>8+</span><span>Edição Galápagos</span></p>
+    <p class="meta"><time datetime="2026-11-05">5 de novembro de 2026</time> · Redação Elite Boardgamers</p>
+  </article>
+
+  <section class="bloco r1" aria-label="Resumo em 1 minuto">
+    <span class="kick">Resumo em 1 minuto</span>
+    <p class="resp">Role seis dados até três vezes para marcar pontos, ganhar Energia, curar ou atacar, e vença chegando a 20 Pontos de Vitória ou sendo o último Monstro vivo.</p>
+    <ul><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.5l4.5 4.5L19.5 6.5"/></svg><span>Os números só pontuam em trinca: três faces de 1, 2 ou 3 valem o número, e cada dado igual a mais vale 1.</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.5l4.5 4.5L19.5 6.5"/></svg><span>Quem está em Tóquio ganha pontos e fere todos os de fora, mas não cura com os dados e só sai depois de perder Vida para garras.</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.5l4.5 4.5L19.5 6.5"/></svg><span>A Energia compra cartas de Poder, e a partida acaba no fim do turno em que alguém chega a 20 pontos ou só resta um Monstro.</span></li></ul>
+    <p class="pe"><span><b>Como você aprende:</b> 3 etapas, da mesa montada à contagem de pontos</span><span><b>Leitura do essencial:</b> cerca de 7 min</span></p>
+    <p class="legenda-f"><b>À vista, só o essencial para jogar.</b> O que abre com <span class="mais-i">+</span> é explicação, exemplo, exercício ou regra de caso especial: abra quando precisar.</p>
+  </section>
+
+<section class="bloco sec setup" id="montar-a-mesa-passo-a-passo"><h2><span class="num"></span>Montar a mesa passo a passo</h2>
+<p>A montagem segue o quadro "Preparação" do manual <span class="pg">p.&nbsp;3</span>, na mesma ordem. Os componentes estão na p. 2.</p>
+<p><strong>Componentes da caixa</strong> <span class="pg">p.&nbsp;2</span></p>
+<div class="tab"><table><thead><tr><th>Componente</th><th>Quantidade</th><th>Para que serve</th></tr></thead><tbody><tr><td data-label="Componente">Tabuleiros de Monstro</td><td data-label="Quantidade">6</td><td data-label="Para que serve">Discos de Pontos de Vitória e de Pontos de Vida</td></tr><tr><td data-label="Componente">Figuras de papelão</td><td data-label="Quantidade">6</td><td data-label="Para que serve">O seu Monstro, perto de você ou em Tóquio</td></tr><tr><td data-label="Componente">Tabuleiro de Tóquio</td><td data-label="Quantidade">1</td><td data-label="Para que serve">Dois lugares: Cidade de Tóquio e Baía de Tóquio</td></tr><tr><td data-label="Componente">Dados pretos</td><td data-label="Quantidade">6</td><td data-label="Para que serve">Os dados que todos rolam</td></tr><tr><td data-label="Componente">Dados verdes</td><td data-label="Quantidade">2</td><td data-label="Para que serve">Só com certas cartas de Poder</td></tr><tr><td data-label="Componente">Cartas de Poder</td><td data-label="Quantidade">66</td><td data-label="Para que serve"><span class="cel">Compradas com Energia; dois tipos: <strong>Constante</strong> (fica à sua frente até o fim) e <strong>Descarte</strong> (age na hora e sai)</span></td></tr><tr><td data-label="Componente">Cubos de Energia</td><td data-label="Quantidade">sem número no manual</td><td data-label="Para que serve">A moeda do jogo</td></tr><tr><td data-label="Componente">Fichas</td><td data-label="Quantidade">28</td><td data-label="Para que serve">Só com certas cartas: 3 Fumaça, 1 Imitador, 12 Encolhido, 12 Envenenado</td></tr></tbody></table></div>
+<p><strong>Os passos</strong> <span class="pg">p.&nbsp;3</span></p>
+<p><strong>1. Monstros.</strong> Cada jogador escolhe um Monstro e pega a figura e o tabuleiro de Monstro dele. Gire os discos do tabuleiro: Pontos de Vida em 10 e Pontos de Vitória em 0 <span class="pg">p.&nbsp;3</span>. A figura fica perto de você <span class="pg">p.&nbsp;2</span>.</p>
+<figure class="fig"><img src="figuras/setup-1-monstro.webp" alt="Passo 1: a figura e o tabuleiro de Monstro de The King, ao lado do tabuleiro de Tóquio. Ilustração: manual Galápagos (p. 3)" loading="lazy" decoding="async"><figcaption>Passo 1: a figura e o tabuleiro de Monstro de The King, ao lado do tabuleiro de Tóquio. Ilustração: manual Galápagos <span class="pg">p.&nbsp;3</span></figcaption></figure>
+<figure class="fig"><img src="figuras/tabuleiro-monstro.webp" alt="O tabuleiro de Monstro de perto: o nome, o disco de Pontos de Vitória no alto e o disco de Pontos de Vida embaixo, que começa em 10. Ilustração: manual Galápagos (p. 2)" loading="lazy" decoding="async"><figcaption>O tabuleiro de Monstro de perto: o nome, o disco de Pontos de Vitória no alto e o disco de Pontos de Vida embaixo, que começa em 10. Ilustração: manual Galápagos <span class="pg">p.&nbsp;2</span></figcaption></figure>
+<p><strong>2. Tabuleiro de Tóquio.</strong> Ponha o tabuleiro de Tóquio no centro da mesa, ao alcance de todos. Com 2 a 4 jogadores, use só a Cidade de Tóquio; com 5 ou 6, use a Cidade de Tóquio e a Baía de Tóquio <span class="pg">p.&nbsp;3</span>.</p>
+<figure class="fig"><img src="figuras/setup-2-toquio.webp" alt="Passo 2: o tabuleiro de Tóquio, com a Cidade de Tóquio (círculo vermelho) e a Baía de Tóquio (círculo tracejado). Ilustração: manual Galápagos (p. 3)" loading="lazy" decoding="async"><figcaption>Passo 2: o tabuleiro de Tóquio, com a Cidade de Tóquio (círculo vermelho) e a Baía de Tóquio (círculo tracejado). Ilustração: manual Galápagos <span class="pg">p.&nbsp;3</span></figcaption></figure>
+<p><strong>3. Baralho.</strong> Embaralhe as cartas de Poder e forme um baralho, virado para baixo, como na ilustração <span class="pg">p.&nbsp;3</span>. Deixe espaço ao lado para o descarte: vão para lá as cartas de Descarte usadas e as cartas limpas <span class="pg">p.&nbsp;2 e 6</span>.</p>
+<figure class="fig"><img src="figuras/setup-3-baralho.webp" alt="Passo 3: o baralho de cartas de Poder. Ilustração: manual Galápagos (p. 3)" loading="lazy" decoding="async"><figcaption>Passo 3: o baralho de cartas de Poder. Ilustração: manual Galápagos <span class="pg">p.&nbsp;3</span></figcaption></figure>
+<p><strong>4. Três cartas à vista e as fichas.</strong> Vire as três primeiras cartas do baralho para cima, ao lado do tabuleiro de Tóquio. Deixe as fichas por perto <span class="pg">p.&nbsp;3</span>.</p>
+<figure class="fig"><img src="figuras/setup-4-cartas-fichas.webp" alt="Passo 4: as três cartas de Poder viradas para cima e, à direita, as fichas. Ilustração: manual Galápagos (p. 3)" loading="lazy" decoding="async"><figcaption>Passo 4: as três cartas de Poder viradas para cima e, à direita, as fichas. Ilustração: manual Galápagos <span class="pg">p.&nbsp;3</span></figcaption></figure>
+<p><strong>5. Dados.</strong> Ponha os 6 dados pretos no centro da mesa. Deixe os 2 dados verdes de lado: só algumas cartas deixam rolá-los <span class="pg">p.&nbsp;3</span>.</p>
+<figure class="fig"><img src="figuras/setup-5-dados.webp" alt="Passo 5: os seis dados pretos e, à parte, os dois dados verdes. Ilustração: manual Galápagos (p. 3)" loading="lazy" decoding="async"><figcaption>Passo 5: os seis dados pretos e, à parte, os dois dados verdes. Ilustração: manual Galápagos <span class="pg">p.&nbsp;3</span></figcaption></figure>
+<p><strong>6. Banco de Energia.</strong> Junte todos os cubos de Energia num monte: é o banco <span class="pg">p.&nbsp;3</span>. Como todos os cubos vão para o banco, cada jogador começa com 0 de Energia.</p>
+<figure class="fig"><img src="figuras/setup-6-energia.webp" alt="Passo 6: o banco com os cubos de Energia. Ilustração: manual Galápagos (p. 3)" loading="lazy" decoding="async"><figcaption>Passo 6: o banco com os cubos de Energia. Ilustração: manual Galápagos <span class="pg">p.&nbsp;3</span></figcaption></figure>
+<figure class="fig"><img src="fotos/mesa-1.webp" alt="Mesa montada para foto pela IELLO, na edição francesa (cartas em francês): o tabuleiro de Tóquio, o baralho, três cartas à vista, os cubos de Energia, os dados pretos e quatro Monstros. Não é o início exato da partida: o CyberKitty já está na Cidade de Tóquio. Imagem: IELLO · edição francesa" loading="lazy" decoding="async"><figcaption>Mesa montada para foto pela IELLO, na edição francesa (cartas em francês): o tabuleiro de Tóquio, o baralho, três cartas à vista, os cubos de Energia, os dados pretos e quatro Monstros. Não é o início exato da partida: o CyberKitty já está na Cidade de Tóquio. Imagem: IELLO · edição francesa</figcaption></figure>
+<figure class="fig"><img src="figuras/preparacao.webp" alt="A mesa montada para três jogadores, como no quadro de preparação: tabuleiro de Tóquio no meio, baralho e três cartas acima, fichas, banco de Energia, dados pretos e verdes e os três Monstros com seus tabuleiros. Ilustração: manual Galápagos (p. 3)" loading="lazy" decoding="async"><figcaption>A mesa montada para três jogadores, como no quadro de preparação: tabuleiro de Tóquio no meio, baralho e três cartas acima, fichas, banco de Energia, dados pretos e verdes e os três Monstros com seus tabuleiros. Ilustração: manual Galápagos <span class="pg">p.&nbsp;3</span></figcaption></figure>
+<p><strong>O que muda com o número de jogadores</strong> <span class="pg">p.&nbsp;3 e 5</span></p>
+<div class="tab"><table><thead><tr><th>Jogadores</th><th>Lugares de Tóquio em uso</th><th>Quantos Monstros podem estar em Tóquio</th></tr></thead><tbody><tr><td data-label="Jogadores">2 a 4</td><td data-label="Lugares de Tóquio em uso">Só a Cidade de Tóquio</td><td data-label="Quantos Monstros podem estar em Tóquio">1</td></tr><tr><td data-label="Jogadores">5 ou 6</td><td data-label="Lugares de Tóquio em uso">Cidade de Tóquio e Baía de Tóquio</td><td data-label="Quantos Monstros podem estar em Tóquio">2</td></tr></tbody></table></div>
+<p>O resto da preparação é igual para todos. A partida a 2 não tem regra especial no manual brasileiro (veja as Situações especiais).</p>
+<p><strong>O que volta para a caixa.</strong> O manual não diz. Os Monstros que ninguém escolheu não têm função na partida; dados verdes e fichas ficam na mesa, porque algumas cartas os usam <span class="pg">p.&nbsp;2 e 3</span>.</p>
+<p><strong>Quem começa.</strong> Cada jogador rola os 6 dados pretos; começa quem tirar mais faces de garra (a face de Atacar). Empate: continua-se rolando até um só ter o maior número de garras. Depois, o jogo segue em sentido horário <span class="pg">p.&nbsp;4</span>.</p>
+<p><strong>Antes de começar, confira:</strong> cada jogador com um Monstro, a figura por perto e o tabuleiro em 10 Pontos de Vida e 0 Pontos de Vitória; ninguém em Tóquio; a Baía de Tóquio em uso só com 5 ou 6 jogadores; o baralho e 3 cartas viradas ao lado do tabuleiro, com espaço para o descarte; fichas por perto; 6 dados pretos no centro e 2 verdes de lado; o banco de Energia formado, e ninguém com Energia.</p>
+<div class="quiz"><p class="q-p">Partida de 4 jogadores. Quais lugares do tabuleiro de Tóquio entram em jogo?</p><div class="q-ops"><button type="button" class="q-op">A Cidade de Tóquio e a Baía de Tóquio</button><button type="button" class="q-op" data-ok>Só a Cidade de Tóquio</button><button type="button" class="q-op">Só a Baía de Tóquio</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Com 2 a 4 jogadores, use apenas a Cidade de Tóquio; a Baía entra com 5 ou 6 <span class="pg">p.&nbsp;3</span>.</p></div></div>
+</section>
+<section class="bloco sec rapido" id="comece-a-jogar-em-4-minutos"><h2><span class="num"></span>Comece a jogar em 4 minutos</h2>
+<figure class="fig foto-sec"><img src="fotos/jogabilidade-1.webp" alt="King of Tokyo: uma partida em andamento" width="1600" height="1067" loading="lazy" decoding="async"><figcaption>Imagem: IELLO · edição francesa</figcaption></figure>
+<p><strong>Meta:</strong> em 4 minutos de leitura, montar a mesa e jogar o seu primeiro turno sem abrir o manual.</p>
+<h3>A ideia do jogo</h3>
+<p>Cada jogador é um Monstro gigante. No seu turno, você rola os dados até três vezes e faz o que eles mandam: marcar <strong>Pontos de Vitória</strong>, ganhar <strong>Energia</strong> para comprar cartas, curar ou atacar. Quem está dentro de <strong>Tóquio</strong> bate em todos os de fora, e os de fora batem em quem está dentro. Vence o primeiro a ter 20 Pontos de Vitória ou o último Monstro que sobrar com <strong>Pontos de Vida</strong> <span class="pg">p.&nbsp;1</span>.</p>
+<h3>Monte a mesa</h3>
+<p>Resumo da seção "Montar a mesa passo a passo", acima.</p>
+<ol><li>Cada um: Monstro, figura e tabuleiro em 10 de Vida e 0 de Vitória.</li><li>Tabuleiro de Tóquio no centro (Baía de Tóquio só com 5 ou 6 jogadores).</li><li>Baralho; 3 cartas viradas ao lado; fichas por perto <em>(depois)</em>.</li><li>6 dados pretos no centro; 2 verdes de lado <em>(depois)</em>.</li><li>Banco de Energia.</li><li>Começa quem tirar mais garras com os 6 dados pretos.</li></ol>
+<h3>Seu primeiro turno</h3>
+<p>O dado tem seis faces: <strong>1</strong>, <strong>2</strong> e <strong>3</strong> (Pontos de Vitória), o <strong>raio</strong> (Energia), a <strong>garra</strong> (Atacar) e o <strong>coração</strong> (Curar) <span class="pg">p.&nbsp;2</span>. O turno tem seis passos <span class="pg">p.&nbsp;4 e 5</span>:</p>
+<ol><li><strong>Começo.</strong> Se você começa o turno em Tóquio (Cidade ou Baía), ganhe 2 Pontos de Vitória.</li><li><strong>Role os dados.</strong> Até três rolagens: a primeira com os 6 dados pretos; antes de cada outra, escolha quais rolar de novo, inclusive os que estavam de lado. Pode parar quando quiser <span class="pg">p.&nbsp;4 e 6</span>.</li><li><strong>Resolva os dados</strong>, todos, na ordem que quiser: - Três faces iguais de 1, 2 ou 3 valem esse número em Pontos de Vitória; cada dado a mais com o mesmo número vale +1. Par não vale nada. - Cada raio: 1 cubo de Energia do banco. - Cada coração: +1 Ponto de Vida, só fora de Tóquio, e nunca acima de 10. - Cada garra: 1 Ponto de Vida a menos para todos do outro lado: se você está em Tóquio (Cidade ou Baía), os de fora; se está fora, os de Tóquio.</li><li><strong>Entre em Tóquio.</strong> Se ninguém está em Tóquio, entre na Cidade de Tóquio. Com 5 ou 6 jogadores, se você está fora e só a Cidade está ocupada, entre na Baía. Se alguém cedeu por causa das suas garras, você tem de entrar no lugar de quem cedeu (na Cidade, se ela estiver vazia). Ao entrar, +1 Ponto de Vitória <span class="pg">p.&nbsp;5 e 6</span>.</li><li><strong>Compre cartas de Poder</strong> com a Energia, se quiser <span class="pg">p.&nbsp;6</span>.</li><li><strong>Fim do turno.</strong> Passe os dados para a esquerda <span class="pg">p.&nbsp;6</span>.</li></ol>
+<p>No primeiro turno, Tóquio está vazia: as garras do primeiro jogador não ferem ninguém, e ele termina dentro da Cidade de Tóquio <span class="pg">p.&nbsp;4 e 5</span>.</p>
+<aside class="call resolvido"><p class="rot">Tarefa · exemplo resolvido</p><p><strong>Exemplo resolvido.</strong> Você é o primeiro. Depois das rolagens, os dados mostram 3, 3, 3, raio, raio e garra. Três faces de 3: 3 Pontos de Vitória. Dois raios: 2 cubos de Energia. A garra não fere ninguém, porque Tóquio está vazia. Você entra na Cidade de Tóquio e ganha mais 1: termina com 4 Pontos de Vitória, 2 de Energia e 10 de Vida.</p></aside>
+<aside class="call complete"><p class="rot">Tarefa · complete</p><p><strong>Complete.</strong> Você joga logo depois. O primeiro jogador está na Cidade de Tóquio, com 10 de Vida. Seus dados finais: 1, 1, 1, 1, garra e garra. Você ganha 2 Pontos de Vitória (três faces de 1, mais 1 pelo quarto 1), e o Monstro de Tóquio perde 2 de Vida. Ele decide sair.</p>
+<div class="quiz"><p class="q-p">Com quantos Pontos de Vitória você termina o turno, se começou com 0?</p><div class="q-ops"><button type="button" class="q-op">2</button><button type="button" class="q-op" data-ok>3</button><button type="button" class="q-op">4</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Quem sai de Tóquio cede o lugar a quem atacou: você entra na Cidade de Tóquio no passo Entre em Tóquio e ganha 1 <span class="pg">p.&nbsp;5 e 6</span>.</p></div></div></aside>
+<aside class="call suavez"><p class="rot">Tarefa · sua vez</p><p><strong>Sua vez.</strong> Você começa o turno dentro de Tóquio, com 8 de Vida e 4 Pontos de Vitória. Seus dados finais: coração, coração, garra, 2, 2 e raio. Começar o turno em Tóquio já lhe deu 2 Pontos de Vitória <span class="pg">p.&nbsp;5</span>.</p>
+<div class="quiz"><p class="q-p">Com quanto de Vida você termina a resolução dos dados?</p><div class="q-ops"><button type="button" class="q-op">10</button><button type="button" class="q-op" data-ok>8</button><button type="button" class="q-op">9</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Em Tóquio os corações não curam <span class="pg">p.&nbsp;5</span>.</p></div></div></aside>
+<h3>Ainda não precisa saber</h3>
+<p>Ceder Tóquio e os detalhes da Baía: <a href="#etapa-2-entrar-ficar-e-sair-de-toquio">etapa 2</a>. Tipos de carta e como limpar as cartas à vista: <a href="#etapa-3-cartas-de-poder-e-fim-da-partida">etapa 3</a>.</p>
+<h3>Como a partida acaba</h3>
+<p>A partida termina no fim do turno em que um Monstro chega a 20 Pontos de Vitória ou em que só resta um Monstro. Um Monstro que chega a 0 de Vida é eliminado <span class="pg">p.&nbsp;4 e 6</span>.</p>
+<p><strong>Prefere ver?</strong> Este vídeo explica as regras da caixa básica. Ele complementa este guia; em caso de diferença, vale o manual.</p>
+<figure class="video"><button type="button" class="yt" data-id="uNdf_H9zHlU" data-t="0" aria-label="Assistir ao vídeo"><img src="https://i.ytimg.com/vi/uNdf_H9zHlU/hqdefault.jpg" alt="" loading="lazy" decoding="async" width="480" height="360"><span class="yt-play">▶ Assistir ao vídeo</span></button><figcaption>King of Tokyo - Como Jogar, canal Romir Play House · <a href="https://www.youtube.com/watch?v=uNdf_H9zHlU&amp;t=0s" rel="noopener">abrir no YouTube</a></figcaption></figure>
+<aside class="call atencao"><p class="rot">Atenção</p><p><strong>Os três erros mais caros.</strong> Par de números não dá ponto: só a trinca. Corações não curam quem está em Tóquio. Quem está em Tóquio não pode sair quando quer: só depois de perder Vida para a garra de outro Monstro.</p></aside>
+</section>
+  <nav class="bloco indice" id="neste-guia" aria-label="Neste guia"><h2>Neste guia</h2><ol><li><a href="#montar-a-mesa-passo-a-passo">Montar a mesa passo a passo</a></li><li><a href="#comece-a-jogar-em-4-minutos">Comece a jogar em 4 minutos</a></li><li><a href="#antes-de-tudo-o-que-e-este-jogo">Antes de tudo: o que é este jogo</a> <small>(opcional)</small></li><li><a href="#como-este-guia-ensina">Como este guia ensina</a> <small>(opcional)</small></li><li><a href="#etapa-1-rolar-e-resolver-os-dados">Etapa 1: rolar e resolver os dados</a></li><li><a href="#etapa-2-entrar-ficar-e-sair-de-toquio">Etapa 2: entrar, ficar e sair de Tóquio</a></li><li><a href="#etapa-3-cartas-de-poder-e-fim-da-partida">Etapa 3: cartas de Poder e fim da partida</a></li><li><a href="#situacoes-especiais">Situações especiais</a> <small>(opcional)</small></li><li><a href="#avaliacao-final">Avaliação final</a> <small>(opcional)</small></li><li><a href="#para-consultar-durante-a-partida">Para consultar durante a partida</a></li><li><a href="#fontes">Fontes</a></li></ol></nav>
+
+<section class="bloco sec opc" id="antes-de-tudo-o-que-e-este-jogo"><h2><span class="num">0</span>Antes de tudo: o que é este jogo<span class="tag-opc">Opcional</span></h2>
+<figure class="fig foto-sec caixa"><img src="fotos/capa-1.webp" alt="King of Tokyo: a caixa" width="1362" height="1600" loading="lazy" decoding="async"><figcaption>Imagem: IELLO · edição francesa</figcaption></figure>
+<details class="dobra sec-opc"><summary>Abrir esta seção</summary><p>King of Tokyo é um jogo de dados para 2 a 6 jogadores, a partir de 8 anos, com partidas de cerca de 30 minutos <span class="pg">p.&nbsp;1</span>. Há dois caminhos para vencer: chegar primeiro a 20 Pontos de Vitória ou ser o último Monstro vivo <span class="pg">p.&nbsp;1</span>.</p>
+<p>A cada turno, você rola seis dados e faz o que as faces finais mandam. Estar em Tóquio dá pontos e faz cada garra sua ferir todos os de fora, mas expõe você a todos e impede a cura pelos dados <span class="pg">p.&nbsp;5</span>.</p></details>
+</section>
+<section class="bloco sec opc" id="como-este-guia-ensina"><h2><span class="num">1</span>Como este guia ensina<span class="tag-opc">Opcional</span></h2>
+<figure class="fig foto-sec"><img src="fotos/componentes-1.webp" alt="King of Tokyo: os componentes" width="1600" height="1067" loading="lazy" decoding="async"><figcaption>Imagem: IELLO · edição francesa</figcaption></figure>
+<details class="dobra sec-opc"><summary>Abrir esta seção</summary><p>São três etapas, na ordem em que as dúvidas aparecem na mesa: rolar e resolver os dados; entrar, ficar e sair de Tóquio; cartas de Poder e fim da partida. Cada etapa tem <strong>Para entender</strong> (o porquê), <strong>Passo a passo</strong> (a regra de sempre), regras adicionais à parte e tarefas com ajuda decrescente: <strong>exemplo resolvido</strong>, tarefa para <strong>completar</strong> e <strong>sua vez</strong>. Escolha uma opção em cada pergunta para ver a certa e a explicação. No fim, uma avaliação diz o que reler, e a folha de consulta fica para a mesa.</p></details>
+</section>
+<section class="bloco sec" id="etapa-1-rolar-e-resolver-os-dados"><h2><span class="num">2</span>Etapa 1: rolar e resolver os dados</h2>
+<details class="dobra entender"><summary>Por que funciona assim</summary><aside class="call entender"><p>Os seis dados pretos são iguais, e cada um tem as mesmas seis faces: 1, 2, 3, raio, garra e coração <span class="pg">p.&nbsp;2</span>. O que vale no seu turno é só o resultado da última rolagem <span class="pg">p.&nbsp;4</span>. Os números só pontuam em trinca, e trinca de 3 vale mais que trinca de 1; os dados a mais na trinca rendem 1 ponto cada, seja qual for o número.</p></aside></details>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Role os dados</strong> <span class="pg">p.&nbsp;4</span></p>
+<ol><li>Primeira rolagem: role os 6 dados pretos.</li><li>Segunda rolagem: deixe de lado os dados que lhe agradaram e role de novo só os outros.</li><li>Terceira rolagem: role de novo os que ainda não agradam e, se mudou de ideia, também os que estavam de lado. O glossário diz o mesmo de qualquer rolagem: antes dela, você pode deixar de lado dados já rolados e rolar de novo dados que estavam de lado <span class="pg">p.&nbsp;6</span>.</li><li>Você pode parar a qualquer momento. Depois da última rolagem, passe a resolver os dados.</li></ol></aside>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Resolva os dados</strong> <span class="pg">p.&nbsp;4</span></p>
+<ol><li>Resolva todos os dados, na ordem que quiser.</li><li><strong>Pontos de Vitória:</strong> três faces de 1, de 2 ou de 3 dão esse número de Pontos de Vitória. Cada dado a mais com o mesmo número dá +1.</li><li><strong>Energia:</strong> cada raio dá 1 cubo de Energia do banco. Guarde os cubos na sua reserva, à sua frente, até gastá-los.</li><li><strong>Curar:</strong> fora de Tóquio, cada coração dá +1 Ponto de Vida. Em Tóquio, os corações não curam. Ninguém passa de 10 Pontos de Vida.</li><li><strong>Atacar:</strong> cada garra faz perder 1 Ponto de Vida todos do outro lado: se você está em Tóquio (Cidade ou Baía), todos os de fora; se está fora, todos os de Tóquio.</li></ol></aside>
+<figure class="fig"><img src="figuras/exemplo-rolagem.webp" alt="O exemplo de rolagem do manual: a primeira rolagem do Gigazaur (1, 2, 3, 3, coração, raio), a segunda, depois de separar os dois 3 (3, 3, 2, 2, 2, garra), e a terceira, depois de separar os três 2 (2, 2, 2, 2, raio, garra). Ilustração: manual Galápagos (p. 5)" loading="lazy" decoding="async"><figcaption>O exemplo de rolagem do manual: a primeira rolagem do Gigazaur (1, 2, 3, 3, coração, raio), a segunda, depois de separar os dois 3 (3, 3, 2, 2, 2, garra), e a terceira, depois de separar os três 2 (2, 2, 2, 2, raio, garra). Ilustração: manual Galápagos <span class="pg">p.&nbsp;5</span></figcaption></figure>
+<aside class="call atencao"><p class="rot">Atenção</p><p><strong>Duas trincas na mesma rolagem.</strong> O manual não diz o que acontece se os 6 dados formarem duas trincas (três 1 e três 2, por exemplo): a regra e o exemplo falam de uma trinca só <span class="pg">p.&nbsp;4</span>. Combine com a mesa.</p></aside>
+<details class="dobra mais"><summary>Regra adicional: Eliminação</summary><aside class="call mais"><p>Quando um Monstro perde o último Ponto de Vida, o disco mostra a caveira e ele é eliminado: as cartas Constantes e os cubos de Energia dele vão para o descarte <span class="pg">p.&nbsp;4</span>.</p></aside></details>
+<details class="dobra resolvido"><summary>Ver um exemplo resolvido</summary><aside class="call resolvido"><p> <span class="pg">p.&nbsp;5</span>. O CyberKitty está na Cidade de Tóquio, e é a vez do Gigazaur, que está fora. Ele rola 1, 2, 3, 3, coração e raio. Separa os dois 3 e rola os outros quatro: 3, 3, 2, 2, 2 e garra. Muda de ideia: separa os três 2 e rola os outros três, que dão 2, raio e garra. Resultado final: 2, 2, 2, 2, raio, garra. Três faces de 2 valem 2, e o quarto 2 vale +1: 3 Pontos de Vitória. O raio dá 1 de Energia. A garra faz o CyberKitty, em Tóquio, perder 1. Sem coração, não há cura.</p></aside></details>
+
+
+
+<details class="dobra pratica"><summary>Pratique esta etapa: exercícios com respostas</summary><aside class="call complete"><p class="rot">Tarefa · complete</p><p><strong>Complete.</strong> Você está fora de Tóquio. Um Monstro está na Cidade de Tóquio, e outros dois estão fora, como você. Seus dados finais: 2, 2, 2, garra, garra e raio. A trinca de 2 dá 2 Pontos de Vitória e o raio, 1 de Energia.</p>
+<div class="quiz"><p class="q-p">Quem perde Vida com as suas duas garras?</p><div class="q-ops"><button type="button" class="q-op">Os três outros Monstros, 2 cada</button><button type="button" class="q-op" data-ok>Só o Monstro em Tóquio, que perde 2</button><button type="button" class="q-op">Só os dois que estão fora, 2 cada</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Fora de Tóquio, as garras ferem todos os Monstros em Tóquio e mais ninguém <span class="pg">p.&nbsp;4</span>.</p></div></div></aside>
+<aside class="call suavez"><p class="rot">Tarefa · sua vez</p><p><strong>Sua vez.</strong></p>
+<div class="quiz"><p class="q-p">Você está dentro de Tóquio, com 5 de Vida, e tira dois corações. Com quanto de Vida fica?</p><div class="q-ops"><button type="button" class="q-op" data-ok>5</button><button type="button" class="q-op">7</button><button type="button" class="q-op">10</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Em Tóquio os corações dos dados não curam; só cartas de Poder curam lá <span class="pg">p.&nbsp;4 e 5</span>.</p></div></div></aside>
+<aside class="call treino"><p class="rot">Treino rápido</p><p><strong>Quantos Pontos de Vitória?</strong> Conte só os números.</p>
+<div class="quiz"><p class="q-p">a) 3, 3, 3, 3, 3 e garra.</p><div class="q-ops"><button type="button" class="q-op">3</button><button type="button" class="q-op" data-ok>5</button><button type="button" class="q-op">15</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Trinca de 3 vale 3; os dois dados a mais valem 1 cada <span class="pg">p.&nbsp;4</span>.</p></div></div>
+<div class="quiz"><p class="q-p">b) Seis faces de 1.</p><div class="q-ops"><button type="button" class="q-op">6</button><button type="button" class="q-op" data-ok>4</button><button type="button" class="q-op">1</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Trinca de 1 vale 1, e os três dados a mais valem 1 cada <span class="pg">p.&nbsp;4</span>.</p></div></div></aside></details>
+</section>
+<section class="bloco sec" id="etapa-2-entrar-ficar-e-sair-de-toquio"><h2><span class="num">3</span>Etapa 2: entrar, ficar e sair de Tóquio</h2>
+<details class="dobra entender"><summary>Por que funciona assim</summary><aside class="call entender"><p>Tóquio é o lugar de onde se ataca todo mundo e onde todo mundo ataca você. Entrar vale 1 Ponto de Vitória; começar o turno lá dentro vale 2. Em troca, você não cura com os dados <span class="pg">p.&nbsp;5</span>. A saída é vigiada: só se <strong>cede</strong> Tóquio no momento em que se perde Vida para as garras de outro Monstro, e quem atacou toma o lugar. Por isso Tóquio quase nunca fica vazia.</p></aside></details>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Ficar ou ceder</strong> (p. 4 a 6)</p>
+<ol><li>Você está em Tóquio e acaba de perder Vida para as garras de outro Monstro: escolha ficar ou ceder Tóquio. Fora desse momento, ninguém sai (salvo a saída obrigatória da Baía e a eliminação).</li><li>Quem cede tira a figura de Tóquio e perde a Vida do mesmo jeito; quem atacou entra no lugar.</li></ol></aside>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Entre em Tóquio</strong> <span class="pg">p.&nbsp;5 e 6</span></p>
+<ol><li>Este passo vem depois de resolver os dados.</li><li>Se não há ninguém em Tóquio, você tem de entrar e pôr a sua figura na Cidade de Tóquio.</li><li>Com 5 ou 6 jogadores: se você está fora, a Cidade está ocupada e a Baía, vazia, entre na Baía.</li><li>Se um Monstro cedeu Tóquio por causa das suas garras neste turno, você tem de tomar o lugar dele.</li><li>Ao entrar, ganhe 1 Ponto de Vitória.</li></ol></aside>
+<figure class="fig"><img src="figuras/exemplo-5-jogadores.webp" alt="O exemplo de partida com 5 jogadores, na situação do início: o Gigazaur na Cidade de Tóquio, o Space Penguin na Baía de Tóquio e, fora, MekaDragon, CyberKitty e The King. Ilustração: manual Galápagos (p. 6)" loading="lazy" decoding="async"><figcaption>O exemplo de partida com 5 jogadores, na situação do início: o Gigazaur na Cidade de Tóquio, o Space Penguin na Baía de Tóquio e, fora, MekaDragon, CyberKitty e The King. Ilustração: manual Galápagos <span class="pg">p.&nbsp;6</span></figcaption></figure>
+<details class="dobra mais"><summary>Regra adicional: A Baía de Tóquio (5 ou 6 jogadores)</summary><aside class="call mais"><p>Se você está fora, a Cidade de Tóquio está ocupada e a Baía de Tóquio está vazia, você tem de entrar na Baía. Quem está na Cidade ou na Baía está "em Tóquio", e a Baía tem os mesmos efeitos da Cidade <span class="pg">p.&nbsp;5</span>. Os dois Monstros em Tóquio não se ferem: as garras de um ferem só quem está fora <span class="pg">p.&nbsp;6</span>.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Quando sobram 4 Monstros ou menos</summary><aside class="call mais"><p>Quem está na Baía de Tóquio sai na hora; se a Cidade de Tóquio estiver vazia nesse momento, passa para ela <span class="pg">p.&nbsp;5</span>.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Dano de carta não abre a saída</summary><aside class="call mais"><p>Perder Vida pelo efeito de uma carta de Poder não é o mesmo que perder para garras: só as garras permitem ceder Tóquio <span class="pg">p.&nbsp;4</span>.</p></aside></details>
+<details class="dobra resolvido"><summary>Ver um exemplo resolvido</summary><aside class="call resolvido"><p> <span class="pg">p.&nbsp;6</span>. O Gigazaur está na Cidade e o Space Penguin, na Baía. O MekaDragon tira 4 garras: os dois perdem 4 e cedem; ele entra na Cidade (+1) e a Baía fica vazia. O Gigazaur tira 1 garra: só o MekaDragon perde 1, e fica; como a Baía está vazia, o Gigazaur tem de entrar nela (+1). O Space Penguin tira 1 garra: o Gigazaur e o MekaDragon perdem 1; o Gigazaur cede a Baía, e o Space Penguin entra nela (+1). Depois, o MekaDragon começa o turno em Tóquio (+2) e tira 3 garras: o Gigazaur, The King e o CyberKitty perdem 3, e o Space Penguin, também em Tóquio, nada. O Gigazaur chega a 0 e é eliminado. O manual não diz com quanto de Vida cada um começa o exemplo; como o Gigazaur perde 4, 1 e 3 e termina com 0, ele tinha 8 no começo. Restam 4 Monstros: o Space Penguin sai da Baía na hora.</p></aside></details>
+
+
+<details class="dobra pratica"><summary>Pratique esta etapa: exercícios com respostas</summary><aside class="call complete"><p class="rot">Tarefa · complete</p><p><strong>Complete.</strong> Partida de 4. Ana está na Cidade de Tóquio. Bruno, de fora, tira 2 garras; Ana perde 2 e cede.</p>
+<div class="quiz"><p class="q-p">O que acontece com Bruno no passo Entre em Tóquio?</p><div class="q-ops"><button type="button" class="q-op">Escolhe se entra ou não</button><button type="button" class="q-op">Entra só se tiver mais Vida que Ana</button><button type="button" class="q-op" data-ok>Tem de entrar na Cidade de Tóquio e ganha 1 Ponto de Vitória</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> O Monstro que atacou assume o lugar de quem cedeu e ganha 1 ao entrar <span class="pg">p.&nbsp;5 e 6</span>.</p></div></div></aside>
+<aside class="call suavez"><p class="rot">Tarefa · sua vez</p><p><strong>Sua vez.</strong></p>
+<div class="quiz"><p class="q-p">Partida de 6. A Cidade de Tóquio está ocupada e a Baía, vazia. Você, de fora, tira 1 garra, e o Monstro da Cidade decide ficar. O que acontece com você?</p><div class="q-ops"><button type="button" class="q-op" data-ok>Você tem de entrar na Baía de Tóquio e ganha 1</button><button type="button" class="q-op">Nada: só entra quem fez alguém ceder</button><button type="button" class="q-op">Você pode escolher entre ficar fora e entrar na Baía</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Com 5 ou 6 jogadores, se a Cidade está ocupada e a Baía vazia, você tem de entrar na Baía <span class="pg">p.&nbsp;5</span>, como o Gigazaur no exemplo <span class="pg">p.&nbsp;6</span>.</p></div></div></aside></details>
+</section>
+<section class="bloco sec" id="etapa-3-cartas-de-poder-e-fim-da-partida"><h2><span class="num">4</span>Etapa 3: cartas de Poder e fim da partida</h2>
+<details class="dobra entender"><summary>Por que funciona assim</summary><aside class="call entender"><p>A Energia serve para comprar cartas de Poder. Toda carta tem nome, custo em Energia (no canto de cima), tipo e efeito <span class="pg">p.&nbsp;2</span>. Há dois tipos. <strong>Constante:</strong> fica virada para cima à sua frente até o fim da partida, salvo se algo disser o contrário. <strong>Descarte:</strong> o efeito acontece na hora e a carta vai para o descarte <span class="pg">p.&nbsp;2</span>.</p></aside></details>
+<figure class="fig"><img src="figuras/carta-de-poder.webp" alt="Uma carta de Poder: custo no canto de cima (5 de Energia), nome, tipo (Descarte) e efeito. Ilustração: manual Galápagos (p. 2)" loading="lazy" decoding="async"><figcaption>Uma carta de Poder: custo no canto de cima (5 de Energia), nome, tipo (Descarte) e efeito. Ilustração: manual Galápagos <span class="pg">p.&nbsp;2</span></figcaption></figure>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Compre cartas de Poder</strong> <span class="pg">p.&nbsp;6</span></p>
+<ol><li>Você pode comprar uma ou mais das três cartas viradas para cima, pagando ao banco a Energia do custo.</li><li>Cada carta comprada é substituída na hora pela carta do topo do baralho, que já pode ser comprada.</li><li>Você também pode pagar 2 de Energia para limpar: as três cartas à vista vão para o descarte e três novas são viradas, já à venda.</li><li>Enquanto tiver Energia, pode continuar comprando ou limpando. A Energia que sobrar fica para outro turno.</li></ol></aside>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Fim do turno</strong> <span class="pg">p.&nbsp;6</span></p>
+<ol><li>Resolva os efeitos de cartas de Poder que valem no fim do turno.</li><li>Passe os dados para o jogador à sua esquerda.</li></ol></aside>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Fim da partida</strong> <span class="pg">p.&nbsp;6</span></p>
+<ol><li>A partida termina no fim do turno em que um Monstro chegou a 20 Pontos de Vitória, ou em que só resta um Monstro.</li><li>Vence o Monstro que chegou a 20, ou o último sobrevivente: ele é o Rei de Tóquio.</li></ol></aside>
+<details class="dobra mais"><summary>Regra adicional: 20 pontos e 0 de Vida no mesmo turno</summary><aside class="call mais"><p>Se uma carta de Poder levar você a 20 Pontos de Vitória e a 0 de Vida no mesmo turno, você é eliminado: é preciso sobreviver até o fim do turno para vencer. Se todos os Monstros forem eliminados ao mesmo tempo, todos perdem <span class="pg">p.&nbsp;7</span>.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Vida acima de 10 com cartas</summary><aside class="call mais"><p>As cartas de Poder também não levam ninguém acima de 10 de Vida, a não ser que uma carta Constante diga o contrário <span class="pg">p.&nbsp;7</span>.</p></aside></details>
+<details class="dobra resolvido"><summary>Ver um exemplo resolvido</summary><aside class="call resolvido"><p> <span class="pg">p.&nbsp;6</span>. O Space Penguin tem 10 de Energia e não gosta das três cartas. Paga 2 para limpar e vê as três seguintes: fica com 8. Uma delas custa 3; ele compra e a substitui pela do topo do baralho. Fica com 5 e guarda para outro turno.</p></aside></details>
+
+
+<details class="dobra pratica"><summary>Pratique esta etapa: exercícios com respostas</summary><aside class="call complete"><p class="rot">Tarefa · complete</p><p><strong>Complete.</strong> Você tem 6 de Energia. Compra uma carta de 4, e a carta que entra no lugar custa 2.</p>
+<div class="quiz"><p class="q-p">Pode comprar também a carta nova neste turno?</p><div class="q-ops"><button type="button" class="q-op" data-ok>Sim: ela já está à venda e você ainda tem 2</button><button type="button" class="q-op">Não: a carta nova só pode ser comprada no turno seguinte</button><button type="button" class="q-op">Não: cada jogador compra uma carta por turno</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Cartas novas podem ser compradas imediatamente, e você pode continuar comprando enquanto tiver Energia <span class="pg">p.&nbsp;6</span>.</p></div></div></aside>
+<aside class="call suavez"><p class="rot">Tarefa · sua vez</p><p><strong>Sua vez.</strong></p>
+<div class="quiz"><p class="q-p">Durante o seu turno, você chega a 20 Pontos de Vitória ainda no passo de resolver os dados. Quando a partida termina?</p><div class="q-ops"><button type="button" class="q-op">Na hora, antes do passo Entre em Tóquio</button><button type="button" class="q-op" data-ok>No fim deste turno</button><button type="button" class="q-op">No fim da rodada, quando todos tiverem jogado</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> O jogo termina no final do turno em que um Monstro chegou a 20 <span class="pg">p.&nbsp;6</span>.</p></div></div></aside></details>
+</section>
+<section class="bloco sec opc" id="situacoes-especiais"><h2><span class="num">5</span>Situações especiais<span class="tag-opc">Opcional</span></h2>
+<figure class="fig foto-sec"><img src="fotos/jogabilidade-1.webp" alt="King of Tokyo: uma partida em andamento" width="1600" height="1067" loading="lazy" decoding="async"><figcaption>Imagem: IELLO · edição francesa</figcaption></figure>
+<details class="dobra sec-opc"><summary>Abrir esta seção</summary><details class="dobra edicao"><summary>Sobre a edição: Partida a 2 jogadores</summary><aside class="call edicao"><p>O manual brasileiro (2016) não tem regra própria para 2. O manual oficial em inglês da IELLO, revisado em novembro de 2023, traz uma regra opcional para 2 jogadores: ao entrar em Tóquio, você ganha 1 de Energia em vez de 1 Ponto de Vitória; ao começar o turno em Tóquio, ganha 1 de Energia em vez de 2 Pontos de Vitória; o resto não muda (manual em inglês, p. 5). Pela caixa brasileira, a partida a 2 é igual às outras.</p></aside></details>
+<aside class="call atencao"><p class="rot">Atenção</p><p><strong>Empate para escolher o primeiro jogador.</strong> O manual diz que, no empate de garras, "os jogadores continuam rolando os dados até que apenas um deles tenha o maior número" <span class="pg">p.&nbsp;4</span>. Não diz se rolam todos ou só os empatados: combine antes.</p></aside>
+<details class="dobra mais"><summary>Regra adicional: Os dois Monstros de Tóquio cedem ao mesmo ataque</summary><aside class="call mais"><p>Com 5 ou 6 jogadores, se os dois Monstros de Tóquio cedem ao mesmo ataque, quem atacou entra na Cidade de Tóquio, e a Baía fica vazia até o próximo Monstro de fora entrar nela (exemplo da p. 6).</p></aside></details>
+<aside class="call atencao"><p class="rot">Atenção</p><p><strong>O que o manual não diz sobre Cidade e Baía.</strong> Quando os dois Monstros de Tóquio são atingidos pelo mesmo ataque, o manual não diz em que ordem decidem se cedem <span class="pg">p.&nbsp;4</span>. O único caso em que ele manda o Monstro da Baía passar para a Cidade é a volta a 4 Monstros ou menos <span class="pg">p.&nbsp;5</span>. Se o da Cidade é eliminado com 5 ou 6 ainda em jogo, ele não diz se o da Baía passa para a Cidade nem quem entra nela. Combine com a mesa.</p></aside>
+<aside class="call atencao"><p class="rot">Atenção</p><p><strong>Dois Monstros a 20 no mesmo turno.</strong> O manual não traz desempate para esse caso, e o guia não inventa um.</p></aside>
+<details class="dobra mais"><summary>Regra adicional: Cartas com esclarecimento no manual</summary><aside class="call mais"><p> <span class="pg">p.&nbsp;7</span>. <strong>Imitador:</strong> copia uma carta como se ela tivesse acabado de ser jogada; se a copiada sair, a ficha volta, e por 1 de Energia, no início do seu turno, vai para outra Constante. <strong>Sopro de Fogo:</strong> quando ela age, os vizinhos da direita e da esquerda perdem 1, mesmo no mesmo lugar que você; a 2, o adversário perde só 1. <strong>Oportunista:</strong> com dois em jogo, compra primeiro o primeiro Monstro em sentido horário a partir do jogador da vez. <strong>Metamorfose:</strong> as Constantes que você descarta com ela saem no Fim do turno e devolvem o custo impresso. <strong>Cuspe Envenenado e Raio de Encolhimento:</strong> as fichas ficam mesmo sem a carta e só saem fora de Tóquio, usando corações.</p></aside></details></details>
+</section>
+<section class="bloco sec opc" id="avaliacao-final"><h2><span class="num">6</span>Avaliação final<span class="tag-opc">Opcional</span></h2>
+<figure class="fig foto-sec caixa"><img src="fotos/capa-1.webp" alt="King of Tokyo: a caixa" width="1362" height="1600" loading="lazy" decoding="async"><figcaption>Imagem: IELLO · edição francesa</figcaption></figure>
+<details class="dobra sec-opc"><summary>Abrir esta seção</summary><p>Responda sem consultar. Cada resposta diz o que reler.</p>
+<div class="quiz"><p class="q-p">1. Com 5 jogadores, quantos Monstros podem estar em Tóquio ao mesmo tempo?</p><div class="q-ops"><button type="button" class="q-op">1</button><button type="button" class="q-op" data-ok>2</button><button type="button" class="q-op">3</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Com 5 ou 6, usam-se a Cidade e a Baía de Tóquio <span class="pg">p.&nbsp;3 e 5</span>. Releia a montagem e a etapa 2.</p></div></div>
+<div class="quiz"><p class="q-p">2. Seus dados finais: 3, 3, 3, 3, 1 e 1. Quantos Pontos de Vitória?</p><div class="q-ops"><button type="button" class="q-op">12</button><button type="button" class="q-op">5</button><button type="button" class="q-op" data-ok>4</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Trinca de 3 vale 3, o quarto 3 vale +1; o par de 1 não vale nada <span class="pg">p.&nbsp;4</span>. Releia a etapa 1.</p></div></div>
+<div class="quiz"><p class="q-p">3. Você está fora de Tóquio, com 9 de Vida, e tira três corações. Com quanto fica?</p><div class="q-ops"><button type="button" class="q-op">12</button><button type="button" class="q-op" data-ok>10</button><button type="button" class="q-op">9</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Fora de Tóquio, cada coração cura 1, mas ninguém passa de 10 <span class="pg">p.&nbsp;4</span>. Releia a etapa 1.</p></div></div>
+<div class="quiz"><p class="q-p">4. O Monstro de Tóquio perdeu Vida para uma carta de Poder de outro jogador. Ele pode ceder Tóquio?</p><div class="q-ops"><button type="button" class="q-op">Sim, como num ataque de garras</button><button type="button" class="q-op" data-ok>Não: só pode ceder depois de perder Vida para garras</button><button type="button" class="q-op">Sim, mas sem perder a Vida</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Perda de Vida por carta de Poder não é a mesma coisa que por garras; só as garras permitem ceder <span class="pg">p.&nbsp;4</span>. Releia a etapa 2.</p></div></div>
+<div class="quiz"><p class="q-p">5. Quanto custa trocar as três cartas de Poder à vista?</p><div class="q-ops"><button type="button" class="q-op">1 de Energia</button><button type="button" class="q-op">3 de Energia</button><button type="button" class="q-op" data-ok>2 de Energia</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Pague 2 para limpar as três cartas e revelar três novas <span class="pg">p.&nbsp;6</span>. Releia a etapa 3.</p></div></div>
+<div class="quiz"><p class="q-p">6. Um Monstro é eliminado. O que acontece com as cartas Constantes e a Energia dele?</p><div class="q-ops"><button type="button" class="q-op">Vão para quem o eliminou</button><button type="button" class="q-op" data-ok>Vão para o descarte</button><button type="button" class="q-op">Voltam para o banco e o baralho, embaralhadas</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> As cartas Constantes e os cubos de Energia do eliminado são descartados <span class="pg">p.&nbsp;4</span>. Releia a etapa 1.</p></div></div>
+<aside class="call atencao"><p class="rot">Atenção</p><p><strong>Critério para começar a jogar.</strong> Acertou 5 ou 6? Monte a mesa e jogue, com a folha de consulta ao lado. Errou a 2, a 3 ou a 6, releia a etapa 1; a 1, a montagem e a etapa 2; a 4, a etapa 2; a 5, a etapa 3. Depois refaça só as que errou.</p></aside></details>
+</section>
+<section class="bloco sec ref" id="para-consultar-durante-a-partida"><h2><span class="num">7</span>Para consultar durante a partida</h2>
+<figure class="fig foto-sec"><img src="fotos/componentes-1.webp" alt="King of Tokyo: os componentes" width="1600" height="1067" loading="lazy" decoding="async"><figcaption>Imagem: IELLO · edição francesa</figcaption></figure>
+<p><strong>Preparação:</strong> cada um com Monstro, figura e tabuleiro em 10 de Vida e 0 de Vitória; tabuleiro de Tóquio no centro (Baía só com 5 ou 6); baralho e 3 cartas à vista; fichas por perto; 6 dados pretos no centro, 2 verdes de lado; banco de Energia. Começa quem tirar mais garras; sentido horário.</p>
+<p><strong>O turno</strong></p>
+<ol><li><strong>Começo:</strong> se está em Tóquio (Cidade ou Baía), +2 Pontos de Vitória.</li><li><strong>Role</strong> até 3 vezes; antes de cada rolagem, escolha quais dados rolar de novo (pode incluir os que estavam de lado).</li><li><strong>Resolva</strong> todos os dados, na ordem que quiser.</li><li><strong>Entre em Tóquio</strong> se estiver vazia (Cidade; ou a Baía, com 5 ou 6), ou no lugar de quem cedeu para as suas garras: +1 Ponto de Vitória.</li><li><strong>Compre</strong> cartas de Poder ou pague 2 para limpar as três.</li><li><strong>Fim:</strong> efeitos de fim de turno; dados para a esquerda.</li></ol>
+<div class="tab"><table><thead><tr><th>Face</th><th>Efeito</th></tr></thead><tbody><tr><td data-label="Face">1, 2, 3</td><td data-label="Efeito">Trinca vale o número em Pontos de Vitória; cada dado a mais igual, +1. Par não vale</td></tr><tr><td data-label="Face">Raio</td><td data-label="Efeito">1 cubo de Energia</td></tr><tr><td data-label="Face">Coração</td><td data-label="Efeito">+1 de Vida, só fora de Tóquio; máximo 10</td></tr><tr><td data-label="Face">Garra</td><td data-label="Efeito">Em Tóquio: fere todos os de fora. Fora: fere todos os de Tóquio</td></tr></tbody></table></div>
+<p><strong>Tóquio:</strong> sair só depois de perder Vida para garras de outro Monstro; quem cede perde a Vida igual; quem atacou entra no lugar. Com 5 ou 6: se você está fora, a Cidade está ocupada e a Baía vazia, entre na Baía. Com 4 ou menos, quem está na Baía sai na hora; o Monstro da Baía passa para a Cidade se ela estiver vazia.</p>
+<p><strong>Cartas:</strong> Constante fica até o fim; Descarte resolve e vai para o descarte. Carta nova à venda na hora.</p>
+<p><strong>Fim:</strong> no fim do turno em que alguém tem 20 Pontos de Vitória ou só resta um Monstro. É preciso estar vivo no fim do turno para vencer.</p>
+</section>
+<section class="bloco sec" id="fontes"><h2><span class="num">8</span>Fontes</h2>
+<figure class="fig foto-sec"><img src="fotos/jogabilidade-1.webp" alt="King of Tokyo: uma partida em andamento" width="1600" height="1067" loading="lazy" decoding="async"><figcaption>Imagem: IELLO · edição francesa</figcaption></figure>
+<ul><li>Galápagos Jogos. <em>King of Tokyo: livro de regras</em> (edição brasileira, código KOT201; arquivo "rules BR revised", folha de 8 páginas, PDF criado em 21/06/2016; tradução de Leonardo Zilio, revisão de Priscilla Freitas; ©2011-2016 IELLO USA LLC). Biblioteca de downloads da Asmodee Brasil, item 1890 "KOT201 - King of Tokyo", baixado pela API pública da biblioteca: <a href="https://api-prd.mundogalapagos.com.br/library-download/store/file?id=1890&amp;tagId=2&amp;group=b2c">https://api-prd.mundogalapagos.com.br/library-download/store/file?id=1890&amp;tagId=2&amp;group=b2c</a>. Consultado em 05/11/2026.</li><li>IELLO. <em>King of Tokyo: rulebook</em> (inglês, arquivo "KOT_Rules_EN_11-2023_Light", 8 páginas, novembro de 2023), <a href="https://iellogames.com/wp-content/uploads/2021/10/KOT_Rules_EN_11-2023_Light.pdf">https://iellogames.com/wp-content/uploads/2021/10/KOT_Rules_EN_11-2023_Light.pdf</a>, linkado na página oficial do jogo, <a href="https://iellogames.com/jeux/king-of-tokyo/">https://iellogames.com/jeux/king-of-tokyo/</a> (2 a 6 jogadores, 8+, 30 min; lançamento em 17/06/2016). Consultados em 05/11/2026.</li></ul>
+</section>
+
+<p class="nota-pe">Regras conferidas no livro de regras da edição brasileira de King of Tokyo (Galápagos Jogos, código KOT201, tradução de Leonardo Zilio), baixado da biblioteca de downloads da Asmodee Brasil. É a edição de 2016, de Richard Garfield, com arte de Régis Torres: a mesma que a IELLO lista hoje como King of Tokyo. As páginas citadas são as numeradas no manual, de 1 (capa) a 8 (créditos).</p>
+</div></main>
+
+<!--rodape--><footer><div class="in">
+ <span>Elite Boardgamers</span><a href="../../noticias/">Notícias</a><a href="../../resenhas/">Resenhas</a><a href="../../como-jogar/">Como jogar</a><a href="../../lancamentos/">Lançamentos</a><a href="../../black/">Black de Verdade</a><a href="../../jogos-de-tabuleiro/">Guia de jogos de tabuleiro</a><a href="../../premios/">Prêmios</a><a href="../../politica-editorial/">Política editorial</a>
+ <a href="https://www.instagram.com/eliteboardgamers/" target="_blank" rel="noopener">Instagram @eliteboardgamers</a><a href="https://chat.whatsapp.com/IgQQkJdSkzHBaEq3UwFeAo" target="_blank" rel="noopener">Grupo do WhatsApp</a>
+</div></footer>
+<div class="barra-lt fora" role="region" aria-label="Ações da página"><div class="cpw" data-texto=""><a class="cp" href="https://wa.me/" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="M8.2 10.8l7.6-4.4M8.2 13.2l7.6 4.4"/></svg><span>Compartilhar</span></a><div class="cp-menu" hidden><a class="cp-op zap-op" href="https://wa.me/" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8.4 19l-4.4 1Z"/><path d="M9.2 8.6c.3-.5.8-.5 1-.1l.7 1.5c.1.3 0 .6-.2.8l-.4.4c.5 1.1 1.4 2 2.5 2.5l.4-.4c.2-.2.5-.3.8-.2l1.5.7c.4.2.4.7-.1 1-.7.5-1.6.6-2.4.3a7 7 0 0 1-4.2-4.2c-.3-.8-.2-1.7.4-2.3Z"/></svg>WhatsApp</a><button type="button" class="cp-op"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h8"/></svg>Copiar link</button></div><p class="cp-st" role="status"></p></div><script>(()=>{const pega=c=>({u:c.dataset.url||location.href,t:c.dataset.texto||document.title});
+document.querySelectorAll('.cpw:not(.ok)').forEach(c=>{c.classList.add('ok');const b=c.querySelector('.cp');
+ const n=document.createElement('button');n.type='button';n.className=b.className;n.innerHTML=b.innerHTML;n.setAttribute('aria-expanded','false');b.replaceWith(n)});
+if(window.__cp)return;window.__cp=1;
+const celular=()=>navigator.share&&matchMedia('(pointer:coarse)').matches;
+const fecha=()=>document.querySelectorAll('.cp-menu:not([hidden])').forEach(m=>{m.hidden=true;m.parentNode.querySelector('.cp').setAttribute('aria-expanded','false')});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')fecha()});
+document.addEventListener('click',async ev=>{const c=ev.target.closest('.cpw');if(!c){fecha();return}
+ const {u,t}=pega(c),m=c.querySelector('.cp-menu'),st=c.querySelector('.cp-st'),el=ev.target.closest('.cp,.cp-op');if(!el)return;
+ if(el.classList.contains('cp')){
+  if(celular()){try{await navigator.share({title:document.title,text:t,url:u})}catch(e){}return}
+  const abre=m.hidden;fecha();if(!abre)return;
+  m.querySelector('.zap-op').href='https://wa.me/?text='+encodeURIComponent(t+' '+u);
+  const r=c.getBoundingClientRect();m.classList.toggle('sobe',!!c.closest('.barra-lt')||r.bottom>innerHeight-140);m.classList.toggle('dir',r.left>innerWidth-220);
+  m.hidden=false;el.setAttribute('aria-expanded','true');m.querySelector('.cp-op').focus();return}
+ if(el.classList.contains('zap-op')){fecha();return}
+ fecha();let ok=false;try{await navigator.clipboard.writeText(u);ok=true}catch(e){
+  const i=document.createElement('input');i.value=u;document.body.append(i);i.select();try{ok=document.execCommand('copy')}catch(e2){}i.remove()}
+ st.textContent=ok?'Link copiado!':'Não deu para copiar o link.';clearTimeout(st._t);st._t=setTimeout(()=>st.textContent='',2500);
+ c.querySelector('.cp').focus()})})()</script><a class="lt-grupo" href="https://chat.whatsapp.com/IgQQkJdSkzHBaEq3UwFeAo" target="_blank" rel="noopener" aria-label="Entrar no grupo do WhatsApp da Elite"><img src="/favicon-48.png" width="48" height="48" alt=""><span>Grupo</span></a></div><script>(()=>{const l=document.querySelector('.barra-lt');if(!l)return;const vis=new Set();
+const poe=()=>{const on=scrollY>500&&!vis.size;l.classList.toggle('fora',!on);l.inert=!on;document.body.classList.toggle('lt-on',on)};
+const io=new IntersectionObserver(es=>{es.forEach(e=>e.isIntersecting?vis.add(e.target):vis.delete(e.target));poe()});
+document.querySelectorAll('.convite,footer').forEach(x=>io.observe(x));addEventListener('scroll',poe,{passive:true});poe()})()</script>
+<script>document.addEventListener('click',e=>{const b=e.target.closest('.q-op');if(!b||b.disabled)return;const q=b.closest('.quiz');
+q.querySelectorAll('.q-op').forEach(o=>{o.disabled=true;if(o.hasAttribute('data-ok'))o.classList.add('ok')});const ok=b.hasAttribute('data-ok');
+if(!ok)b.classList.add('erro');const x=q.querySelector('.q-exp');x.hidden=false;x.classList.toggle('mal',!ok);x.querySelector('.q-res').textContent=ok?'Isso!':'Não é essa.';});
+(()=>{const g=document.querySelector('.guia-prog');if(!g)return;const t=g.querySelector('.gp-t'),b=g.querySelector('.gp-b');
+const secs=[...document.querySelectorAll('.sec[id]')],idx=document.querySelector('.indice');
+const poe=()=>{const y=scrollY+innerHeight*.3;let at=null;for(const s of secs){if(s.offsetTop<=y)at=s}
+ t.textContent=at&&scrollY>idx.offsetTop?at.querySelector('h2').textContent.replace(/^\d+/,'').trim():'Neste guia';
+ const h=document.documentElement.scrollHeight-innerHeight;b.style.transform='scaleX('+(h>0?Math.min(1,scrollY/h):0)+')'};
+addEventListener('scroll',poe,{passive:true});addEventListener('resize',poe);poe()})();
+document.addEventListener('click',e=>{const y=e.target.closest('.yt');if(!y)return;const f=document.createElement('iframe');
+f.src='https://www.youtube-nocookie.com/embed/'+y.dataset.id+'?start='+y.dataset.t+'&autoplay=1&rel=0';f.title=y.getAttribute('aria-label');
+f.allow='autoplay; encrypted-media; picture-in-picture';f.allowFullscreen=true;y.replaceWith(f)});</script><!--/rodape-->
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "b37421bd1ade44f1a59e46b96626bf03"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

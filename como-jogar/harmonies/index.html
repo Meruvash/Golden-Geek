@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Como jogar Harmonies: regras passo a passo | Elite Boardgamers</title>
+<meta name="description" content="Regras de Harmonies passo a passo, conferidas no manual da Galápagos: montagem, como empilhar as peças, animais, fim da partida e pontuação.">
+<link rel="canonical" href="https://eliteboardgamers.com.br/como-jogar/harmonies/">
+<meta name="robots" content="max-image-preview:large">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Como jogar Harmonies">
+<meta property="og:description" content="Regras de Harmonies passo a passo, conferidas no manual da Galápagos: montagem, como empilhar as peças, animais, fim da partida e pontuação.">
+<meta property="og:url" content="https://eliteboardgamers.com.br/como-jogar/harmonies/">
+<meta property="og:image" content="https://eliteboardgamers.com.br/harmonies/fotos/componentes-1.webp">
+<link rel="icon" href="../../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32.png">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<link rel="preload" href="../../fontes/public-sans.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:"Public Sans";src:url(../../fontes/public-sans.woff2) format("woff2");font-weight:400 800;font-style:normal;font-display:swap}
+@font-face{font-family:"Public Sans";src:url(../../fontes/public-sans-italic.woff2) format("woff2");font-weight:400;font-style:italic;font-display:swap}
+/* Layout: o mesmo da página de lição do Discipulado (O Paladino): fundo preto (pedido do editor: preto no lugar do azul), faixa do banner, navegação fixa, coluna central de 760px com cartões claros de papel, filete dourado sobre os títulos de seção. Visual único (o site não tem tema claro). */
+:root{
+  color-scheme:dark;
+  --ground:#000; --panel:#0f1115; --panel2:#171a20; --line:#262a32; --line2:#2e333c;
+  --ink:#eceff3; --muted:#a1a9b5; --gold:#e3b23c;
+  --paper:#f4f5f7; --paper-ink:#14171c; --paper-muted:#5a6270; --paper-line:#dde1e7; --paper-text:#3a414c;
+  --link:#1f5fae; --ok:#1b7a45; --ok-bg:#e3f4ea; --cinza-bg:#eceef1; --ouro-bg:#fff4d1; --ouro-ink:#8a5f00;
+  --erro:#b3263e; --faixa-ouro:#1d1606; --ouro-claro:#f1ead6; --check:#4cc38a;
+  --f-body:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box}
+html{scroll-padding-top:64px}
+body{margin:0;background:var(--ground);color:var(--ink);font:16px/1.55 var(--f-body)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--panel)}
+h1,h2,h3,p,ul,ol,figure{margin:0}
+a{color:var(--link);text-underline-offset:.18em}
+::selection{background:var(--gold);color:#000}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px;border-radius:3px}
+.gut{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+
+.skip{position:absolute;left:-999px}.skip:focus{left:12px;top:8px;z-index:40;background:var(--gold);color:#000;padding:6px 10px}
+.aviso{background:var(--gold);color:#000;font-weight:800;font-size:.8rem;text-align:center}
+.aviso .gut{padding-block:6px}
+.topo{background:var(--ground)}
+.topo img{display:block;width:100%;max-width:640px;height:auto;margin:0 auto}
+.nav{background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line);position:sticky;top:env(safe-area-inset-top,0px);z-index:20}
+.nav ul{max-width:1120px;margin:0 auto;list-style:none;display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;padding-block:0}
+.nav a{display:block;padding:11px 12px;white-space:nowrap;color:var(--ink);text-decoration:none;font-weight:700;font-size:.92rem;border-bottom:3px solid transparent}
+.nav a[aria-current]{color:var(--gold);border-bottom-color:var(--gold)}
+
+.nota{max-width:760px;margin:0 auto;padding-block:20px 56px;display:grid;gap:16px}
+.trilha ol{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:4px 8px;font-size:.85rem;color:var(--muted)}
+.trilha li+li::before{content:"›";margin-right:8px;color:var(--muted)}
+.trilha a{color:var(--gold);font-weight:700;text-decoration:none}
+
+.bloco{background:var(--paper);color:var(--paper-ink);border-radius:10px;padding:20px;min-width:0;display:grid;gap:14px}
+.num-l{font-size:.8rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--paper-muted)}
+h1{font-size:clamp(1.7rem,5vw,2.4rem);line-height:1.12;font-weight:800;letter-spacing:-.015em;text-wrap:balance}
+.meta-e{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:.88rem;color:var(--paper-muted)}
+.meta{font-family:var(--mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.05em;color:var(--paper-muted)}
+
+.r1{background:var(--panel2);color:var(--ink);border:1px solid var(--line2);border-left:4px solid var(--gold)}
+.kick{font-size:.75rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--gold)}
+.r1 .resp{font-size:1.12rem;font-weight:600;line-height:1.45}
+.r1 ul{list-style:none;padding:0;display:grid;gap:8px}
+.r1 li{display:flex;gap:8px;align-items:flex-start;color:#dfe4ea}
+.r1 li svg{flex:none;width:20px;height:20px;margin-top:2px;stroke:var(--check);fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.r1 .pe{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:.88rem;color:var(--muted)}
+.r1 .pe b{color:var(--ink)}
+.legenda{display:flex;flex-wrap:wrap;gap:8px}
+.legenda span{font-size:.74rem;font-weight:800;letter-spacing:.04em;border-radius:999px;padding:3px 10px 3px 14px;background:var(--paper);color:var(--paper-ink)}
+.legenda .l1{box-shadow:inset 5px 0 0 var(--paper-ink)}.legenda .l2{box-shadow:inset 5px 0 0 var(--ok)}
+.legenda .l3{box-shadow:inset 5px 0 0 var(--gold)}.legenda .l4{box-shadow:inset 5px 0 0 var(--ouro-ink)}
+
+.indice h2,.sec>h2{font-size:1.15rem;font-weight:800;line-height:1.3;color:var(--paper-ink);border-top:3px solid var(--gold);padding-top:12px;text-wrap:balance;display:flex;gap:10px;align-items:baseline}
+.indice ol{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:2px 16px}
+.indice a{display:block;padding:6px 0;color:var(--paper-ink);text-decoration:none;font-weight:600;font-size:.94rem;border-bottom:1px solid var(--paper-line)}
+.indice a:hover{color:var(--link)}
+
+.sec>h2 .num{display:none}
+.sec h3{font-size:1.05rem;font-weight:800;margin-top:6px}
+.sec p{color:var(--paper-text);max-width:66ch}
+.sec ul,.sec ol{padding-left:1.3em;display:grid;gap:6px;color:var(--paper-text)}
+.sec ul{list-style:disc}
+.sec li::marker{color:var(--ouro-ink);font-weight:800}
+strong{font-weight:700;color:var(--paper-ink)}
+.pg{white-space:nowrap;font-size:.76em;color:var(--paper-muted);border:1px solid var(--paper-line);background:#fff;border-radius:4px;padding:0 5px;vertical-align:.08em;font-variant-numeric:tabular-nums}
+code{font-size:.9em;background:#fff;padding:1px 5px;border-radius:4px}
+
+.tab{overflow-x:auto;border:1px solid var(--paper-line);border-radius:8px;background:#fff}
+table{border-collapse:collapse;width:100%;font-size:.92rem;color:var(--paper-text)}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--paper-line);vertical-align:top}
+th{font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--paper-muted);background:var(--paper)}
+tr:last-child td{border-bottom:0}
+
+.call{border-radius:8px;padding:14px 16px;display:grid;gap:10px;min-width:0;background:#fff;border:1px solid var(--paper-line);border-left:4px solid var(--paper-muted)}
+.call .rot{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;font-weight:800;color:var(--paper-muted)}
+.call.entender{background:var(--cinza-bg);border-color:#d5d9df;border-left-color:var(--paper-ink)}
+.call.entender .rot{color:var(--paper-ink)}
+.call.passos{border-left-color:var(--ok)}
+.call.passos .rot{color:var(--ok)}
+.call.resolvido{background:var(--panel2);border-color:var(--line2);border-left-color:var(--gold)}
+.call.resolvido .rot{color:var(--gold)}
+.call.resolvido p,.call.resolvido li{color:#dfe4ea}
+.call.resolvido strong{color:#fff}
+.call.resolvido .pg{color:#c8ccd2;border-color:var(--line2)}
+.call.complete{border-left:4px dashed var(--gold)}
+.call.complete .rot{color:var(--ouro-ink)}
+.call.suavez{background:var(--faixa-ouro);border-color:#3a2e10;border-left-color:var(--gold)}
+.call.suavez .rot{color:var(--gold)}
+.call.suavez p,.call.suavez li{color:var(--ouro-claro)}
+.call.suavez strong{color:#fff}
+.call.suavez li::marker{color:var(--gold)}
+.call.suavez .pg{color:var(--ouro-claro);border-color:#3a2e10}
+.call.treino{background:var(--ouro-bg);border-color:#f0dfa6;border-left-color:var(--ouro-ink)}
+.call.treino .rot{color:var(--ouro-ink)}
+.call.atencao{border-left-color:var(--erro)}
+.call.atencao .rot{color:var(--erro)}
+.call.edicao{background:var(--paper);border-left-color:var(--paper-ink)}
+.call.edicao .rot{color:var(--paper-ink)}
+.call.dica{background:var(--ouro-bg);border-left-color:var(--gold)}
+.call.dica .rot{color:var(--ouro-ink)}
+.call ol,.call ul{padding-left:1.3em}
+.call .pg{background:transparent}
+
+.respostas{border:1px solid var(--paper-line);border-left:4px solid var(--ok);border-radius:8px;background:#fff}
+.respostas summary{cursor:pointer;padding:12px 16px;font-weight:800;color:var(--ok);list-style:none;min-height:44px;display:flex;align-items:center}
+.respostas summary::-webkit-details-marker{display:none}
+.respostas summary::before{content:"+";display:inline-grid;place-items:center;width:1.4em;height:1.4em;margin-right:8px;border-radius:50%;background:var(--ok-bg)}
+.respostas[open] summary::before{content:"−"}
+.respostas>div{padding:0 16px 16px;display:grid;gap:12px}
+
+.sec.rapido{outline:2px solid var(--gold);outline-offset:-2px}
+.sec.rapido>h2::after{content:"4 min de leitura";margin-left:auto;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:#000;background:var(--gold);border-radius:3px;padding:3px 8px;white-space:nowrap}
+.sec.rapido>p:first-of-type{font-size:1.02rem}
+.sec.ref{outline:2px solid var(--gold);outline-offset:-2px}
+.sec.ref>h2::after{content:"Leve para a mesa";margin-left:auto;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:#000;background:var(--gold);border-radius:3px;padding:3px 8px;white-space:nowrap}
+
+footer{border-top:1px solid var(--line);background:var(--panel);color:var(--muted);font-size:.85rem}
+footer .in{max-width:760px;margin:0 auto;padding-block:20px}
+@media (max-width:600px){
+  .bloco{padding:16px;border-radius:8px}
+  .sec.ref>h2::after{display:none}
+}
+/* essencial x opcional: o que não é essencial abre com um toque */
+.dobra{border:1px solid var(--paper-line);border-radius:8px;background:#fff}
+.dobra>summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:10px;padding:11px 14px;font-weight:700;font-size:.92rem;color:var(--paper-ink);min-height:44px}
+.dobra>summary::-webkit-details-marker{display:none}
+.dobra>summary::before{content:"+";flex:none;display:grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--paper-line);color:var(--paper-ink);font-weight:800;line-height:1}
+.dobra[open]>summary::before{content:"−"}
+.dobra>.call,.dobra>details,.dobra>aside{margin:0 12px 12px}
+.dobra.pratica>summary{color:var(--ouro-ink)}
+.dobra.pratica[open]{display:grid;gap:10px;padding-bottom:12px}
+.dobra.pratica>*:not(summary){margin:0 12px}
+.dobra.sec-opc{border-style:dashed}
+.dobra.sec-opc[open]{padding-bottom:12px}
+.dobra.sec-opc>*:not(summary){margin-left:14px;margin-right:14px}
+.tag-opc{margin-left:10px;font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;font-weight:800;color:var(--paper-muted);border:1px solid var(--paper-line);border-radius:3px;padding:2px 6px;vertical-align:middle}
+.legenda-f{font-size:.88rem;color:var(--muted)}.legenda-f b{color:var(--ink)}
+.mais-i{display:inline-grid;place-items:center;width:18px;height:18px;border-radius:50%;background:var(--paper-line);color:var(--paper-ink);font-weight:800;font-size:.8rem}
+.indice small{color:var(--muted);font-weight:400}
+.sec p,.sec li,.sec a{overflow-wrap:anywhere}
+
+.ico{display:inline-block;width:28px;height:28px;vertical-align:middle;border-radius:5px;margin-right:6px}
+td .ico{margin-right:6px}
+.rec{display:inline-flex;align-items:center;gap:0;white-space:nowrap}
+.cel{display:block;min-width:0}
+
+/* referências visuais (01/11/2026): figura do manual e vídeo no ponto da ação */
+.fig,.video{margin:4px 0;display:grid;gap:6px;min-width:0}
+.fig img{width:100%;height:auto;border-radius:8px;border:1px solid var(--paper-line);background:#fff}
+.fig figcaption,.video figcaption{font-size:.82rem;color:var(--paper-muted);line-height:1.45}
+.yt{position:relative;display:block;width:100%;padding:0;border:0;border-radius:8px;overflow:hidden;cursor:pointer;background:#000;aspect-ratio:16/9}
+.yt img{width:100%;height:100%;object-fit:cover;opacity:.85;display:block}
+.yt-play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:#c4302b;color:#fff;font-weight:800;font-size:.95rem;padding:10px 16px;border-radius:999px;white-space:nowrap;box-shadow:0 2px 10px rgba(0,0,0,.4)}
+.yt:hover .yt-play,.yt:focus-visible .yt-play{background:#e03a33}
+.video iframe{width:100%;aspect-ratio:16/9;border:0;border-radius:8px;display:block}
+/* fotos em todas as seções (04/11/2026): foto do jogo no topo e em cada seção sem figura do manual */
+.topo-cj{overflow:hidden}
+.foto-topo{margin:-20px -20px 4px;display:grid;gap:0}
+.foto-topo img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;background:#fff}
+.foto-topo figcaption{font-size:.78rem;color:var(--paper-muted);padding:6px 20px 0}
+.foto-topo.caixa img,.foto-sec.caixa img{object-fit:contain}
+.foto-sec img{aspect-ratio:16/9;object-fit:cover}
+@media (max-width:600px){.foto-topo{margin:-16px -16px 4px}.foto-topo figcaption{padding:6px 16px 0}}
+.sec.setup{border-top:4px solid var(--ok)}
+.sec.setup>h2::before{content:"Comece por aqui";display:block;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ok);margin-bottom:4px}
+.sec.setup>h2{display:block}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://eliteboardgamers.com.br/#organizacao", "name": "Elite Boardgamers", "url": "https://eliteboardgamers.com.br/", "logo": {"@type": "ImageObject", "url": "https://eliteboardgamers.com.br/marca/elite-boardgamers.webp", "width": 318, "height": 254}, "sameAs": ["https://www.instagram.com/eliteboardgamers/"]}, {"@type": "Article", "@id": "https://eliteboardgamers.com.br/como-jogar/harmonies/#artigo", "mainEntityOfPage": "https://eliteboardgamers.com.br/como-jogar/harmonies/", "headline": "Como jogar Harmonies", "description": "Regras de Harmonies passo a passo, conferidas no manual da Galápagos: montagem, como empilhar as peças, animais, fim da partida e pontuação.", "image": ["https://eliteboardgamers.com.br/harmonies/fotos/componentes-1.webp"], "datePublished": "2026-11-05", "author": {"@type": "Organization", "name": "Redação Elite Boardgamers", "url": "https://eliteboardgamers.com.br/politica-editorial/"}, "publisher": {"@id": "https://eliteboardgamers.com.br/#organizacao"}, "inLanguage": "pt-BR"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Início", "item": "https://eliteboardgamers.com.br/"}, {"@type": "ListItem", "position": 2, "name": "Como jogar", "item": "https://eliteboardgamers.com.br/como-jogar/"}, {"@type": "ListItem", "position": 3, "name": "Como jogar Harmonies", "item": "https://eliteboardgamers.com.br/como-jogar/harmonies/"}]}]}</script>
+<style id="moldura">.busca-btn{display:grid;place-items:center;flex:none;width:44px;height:44px;padding:0;border:1px solid #3a3f48;border-radius:8px;background:none;color:#e9ecf1;cursor:pointer}.busca-btn:hover{border-color:#e3b23c;color:#e3b23c}.busca-btn[hidden]{display:none}.sino-btn{position:relative;display:grid;place-items:center;flex:none;width:44px;height:44px;padding:0;border:1px solid #3a3f48;border-radius:8px;background:none;color:#e9ecf1;cursor:pointer}.sino-btn:hover,.sino-btn.on{border-color:#e3b23c;color:#e3b23c}.sino-btn[hidden]{display:none}.sino-btn.on::after{content:"";position:absolute;right:7px;top:7px;width:8px;height:8px;border-radius:50%;background:#5fd38d;box-shadow:0 0 0 2px #111}footer .in a{display:inline-flex;align-items:center;min-height:24px}.cpw{position:relative;display:inline-block}.cp{display:inline-flex;align-items:center;justify-content:center;gap:8px;box-sizing:border-box;line-height:1.2;min-height:44px;margin:0;padding:10px 20px;border-radius:999px;border:0;background:#157a43;color:#fff;font:inherit;font-size:.95rem;font-weight:800;text-decoration:none;cursor:pointer}.cp:hover{background:#11683a;color:#fff}.cp .ic{width:19px;height:19px}.cp[hidden]{display:none}.cpw.mini .cp{min-height:40px;padding:8px 14px;font-size:.88rem}.cp-menu{position:absolute;z-index:30;top:calc(100% + 8px);left:0;min-width:200px;display:grid;gap:2px;padding:6px;border-radius:12px;background:#fff;border:1px solid #dde1e7;box-shadow:0 10px 30px rgba(0,0,0,.25)}.cp-menu[hidden]{display:none}.cp-menu.sobe{top:auto;bottom:calc(100% + 8px)}.cp-menu.dir{left:auto;right:0}.cp-op{display:flex;align-items:center;gap:10px;min-height:44px;padding:8px 12px;border:0;border-radius:8px;background:none;color:#14171c;font:inherit;font-size:.95rem;font-weight:700;text-align:left;text-decoration:none;cursor:pointer}.cp-op:hover,.cp-op:focus-visible{background:#eef1f4;color:#14171c}.cp-op .ic{width:20px;height:20px}.cp-op.zap-op .ic{color:#157a43}.cp-st{position:absolute;z-index:30;top:calc(100% + 8px);left:0;white-space:nowrap;margin:0;padding:6px 12px;border-radius:8px;background:#14171c;color:#fff;font-size:.85rem;font-weight:700}.cp-st:empty{display:none}.barra-lt .cp-st{top:auto;bottom:calc(100% + 8px)}.convite{display:flex;align-items:center;justify-content:space-between;gap:12px 20px;flex-wrap:wrap}.convite .cv-t{margin:0;font-weight:800;font-size:1.1rem}.convite .cv-s{margin:2px 0 0;font-size:.92rem;opacity:.8}.barra-lt>*{flex:none}.barra-lt{width:max-content;max-width:calc(100vw - 12px);box-sizing:border-box;position:fixed;z-index:25;left:50%;bottom:calc(12px + env(safe-area-inset-bottom));display:flex;align-items:center;gap:4px;padding:5px;border-radius:999px;background:#14171c;border:1px solid #3a3f48;box-shadow:0 8px 24px rgba(0,0,0,.35);transform:translate(-50%,0);transition:transform .25s ease,opacity .25s ease}.barra-lt.fora{transform:translate(-50%,calc(100% + 24px));opacity:0;pointer-events:none}.lt-b{display:inline-flex;align-items:center;gap:7px;min-height:44px;padding:8px 14px;border:0;border-radius:999px;background:none;color:#e9ecf1;font:inherit;font-size:.9rem;font-weight:700;text-decoration:none;cursor:pointer}.lt-b:hover{background:#262a31;color:#fff}.lt-b .ic{width:20px;height:20px}.barra-lt .lt-b.curtir{background:none;border:0;color:#e9ecf1;padding:8px 14px}.barra-lt .lt-b.curtir[aria-pressed=true]{color:#ff6b81;background:none}@media (max-width:479px){.lt-b span{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}}.lt-b.curtir[aria-pressed=true] .ic{fill:currentColor}.lt-grupo{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:44px;padding:0 14px 0 6px;border-radius:999px;background:#e3b23c;color:#14171c;font-size:.9rem;font-weight:800;text-decoration:none;white-space:nowrap}.lt-grupo:hover{background:#f0c44f;color:#14171c}.lt-grupo img{width:32px;height:32px;border-radius:8px;display:block}@media (max-width:479px){.barra-lt{gap:2px}.barra-lt .lt-b{padding:8px 10px}.barra-lt .cp{padding:8px 12px}.lt-grupo{padding:0 12px 0 6px}}@media (max-width:399px){.barra-lt:has(.curtir) .cp span{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}.barra-lt:has(.curtir) .cp{padding:8px 14px}}.barra-lt .cp{min-height:44px;padding:8px 16px;font-size:.9rem}body.lt-on .voltar-topo,body.lt-on button.sobe{bottom:calc(76px + env(safe-area-inset-bottom))}@media print{.barra-lt{display:none}}.interacoes{display:grid;gap:14px}.interacoes[hidden]{display:none}.curtir-l{display:flex;align-items:center;gap:12px;flex-wrap:wrap}.curtir{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:8px 18px;border-radius:999px;border:2px solid #b3263e;background:#fff;color:#b3263e;font:inherit;font-weight:800;cursor:pointer}.curtir .ic{width:22px;height:22px}.curtir[aria-pressed=true]{background:#b3263e;color:#fff}.curtir[aria-pressed=true] .ic{fill:currentColor}.curtir .n{font-variant-numeric:tabular-nums}.curtir-dica{font-size:.9rem;color:#5a6270}.interacoes h2{margin:4px 0 0}.coms{list-style:none;margin:0;padding:0;display:grid;gap:10px}.coms li{background:#fff;border:1px solid #dde1e7;border-radius:10px;padding:12px 14px}.com-quem{margin:0;font-size:.92rem}.com-quem time{color:#5a6270;font-size:.8rem;margin-left:6px}.com-txt{margin:4px 0 0;white-space:pre-wrap;color:#14171c}.coms-vazio{margin:0;color:#5a6270}.com-form{display:grid;gap:10px;border-top:1px solid #dde1e7;padding-top:14px}.com-form label{display:grid;gap:4px;font-weight:700;font-size:.9rem;color:#14171c}.com-form small{font-weight:600;color:#5a6270}.com-form input,.com-form textarea{font:inherit;font-size:16px;font-weight:400;padding:10px 12px;border:1px solid #c8cdd5;border-radius:8px;background:#fff;color:#14171c}.com-form textarea{resize:vertical;min-height:110px}.com-form .isca{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}.com-form button{justify-self:start;min-height:44px;padding:10px 20px;border-radius:999px;border:0;background:#14171c;color:#fff;font:inherit;font-weight:800;cursor:pointer}.com-form button:disabled{opacity:.6}.com-aviso{margin:0;font-size:.82rem;color:#5a6270}.com-aviso a{color:#1f5fae}.com-st{margin:0;font-weight:700;font-size:.92rem}.com-st:empty{display:none}.com-st.ok{color:#1b7a45}.com-st.erro{color:#a3223a}:where(html){scroll-padding-top:calc(var(--nav-h,49px) + 12px)}.nav{position:sticky;top:0;z-index:20}body .abas,body .barra-f,body .ctrl{top:var(--nav-h,49px)}.marca img.logo{width:auto;height:48px;border-radius:0}@media (max-width:480px){.marca img.logo{height:40px}}.nav .casa{display:flex;align-items:center;justify-content:center;min-width:44px}.nav .casa .ic{width:20px;height:20px}@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.card:hover,.jogo:hover .capa img,.jogo:active .capa,.zap:active,.post-btn:active,.btn-filtro:hover,.btn-filtro:active,.ver:active{transform:none!important}}.in{max-width:1180px;margin:0 auto;padding-left:16px;padding-right:16px}.ic{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round;flex:none}.bar{border-bottom:1px solid var(--line);background:#000;color:var(--ink)}.bar .in{display:flex;align-items:center;gap:12px;padding-top:8px;padding-bottom:8px}.bar a{color:inherit;text-decoration:none;font-weight:600;font-size:.95rem}.marca img{display:block;width:84px;border-radius:6px}.bar .ig{margin-left:auto;display:flex;align-items:center;gap:6px;padding:6px 10px;border-radius:6px}.bar .ig:hover{color:var(--gold)}.bar .zap-mini{display:flex;align-items:center;gap:6px;padding:6px 10px;border-radius:6px;background:#157a43;color:#fff}.nav ul{padding-left:16px;padding-right:16px}.nav ul li{list-style:none}@media (max-width:700px){.bar .ig span,.bar .zap-mini span{display:none}}footer{font-size:.9rem}footer .in{max-width:1180px;display:flex;flex-wrap:wrap;gap:6px 16px;padding-top:20px;padding-bottom:28px}footer a{color:var(--muted);text-decoration:none}footer a:hover{color:var(--gold)}</style>
+<style id="guia-extra">
+/* fotos na lista de tutoriais e no topo de /como-jogar/ (04/11/2026) */
+.topo-cj{overflow:hidden}
+.lista-t a.com-foto{grid-template-columns:96px 1fr;column-gap:14px;align-items:start}
+.lista-t a.com-foto>*{grid-column:2}
+.lista-t a.com-foto>img{grid-column:1;grid-row:1/span 4;width:96px;height:96px;object-fit:cover;border-radius:6px;background:#fff}
+.cj-mosaico{display:grid;grid-template-columns:2fr 1fr;grid-template-rows:1fr 1fr;gap:4px;margin:-20px -20px 4px;aspect-ratio:16/9;overflow:hidden}
+.cj-mosaico img{width:100%;height:100%;object-fit:cover;display:block;background:#fff}
+.cj-mosaico img:first-child{grid-row:1/span 2}
+.cj-mosaico-c{font-size:.78rem;color:var(--paper-muted)}
+@media (max-width:600px){.cj-mosaico{margin:-16px -16px 4px}.lista-t a.com-foto{grid-template-columns:72px 1fr}.lista-t a.com-foto>img{width:72px;height:72px}}
+/* faixa de progresso, presa logo abaixo do menu */
+.guia-prog{position:sticky;top:var(--nav-h,45px);z-index:15;background:var(--panel);border-bottom:1px solid var(--line)}
+.guia-prog a{display:flex;align-items:center;gap:10px;max-width:760px;margin:0 auto;padding:9px 16px;color:var(--ink);text-decoration:none;font-size:.86rem;font-weight:700;min-height:40px}
+.guia-prog .gp-r{flex:none;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--gold)}
+.guia-prog .gp-t{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.guia-prog .gp-i{margin-left:auto;flex:none;font-size:.78rem;color:var(--muted);font-weight:600}
+.guia-prog .gp-b{position:absolute;left:0;right:0;bottom:-1px;height:3px;background:var(--gold);transform-origin:0 50%;transform:scaleX(0)}
+html{scroll-padding-top:calc(var(--nav-h,45px) + 56px)}
+/* legenda dos blocos: pontos de cor em vez de pílulas */
+.legenda{gap:6px 16px}
+.legenda span{position:relative;background:none;color:var(--muted);box-shadow:none!important;padding:0 0 0 16px;font-size:.8rem;letter-spacing:0}
+.legenda span::before{content:"";position:absolute;left:0;top:.32em;width:10px;height:10px;border-radius:3px;background:var(--paper)}
+.legenda .l2::before{background:var(--ok)}.legenda .l3::before{background:var(--gold)}.legenda .l4::before{background:var(--ouro-ink)}
+/* índice numerado */
+.indice ol{counter-reset:it}.indice li{counter-increment:it}
+.indice a{display:flex;gap:10px;align-items:baseline;min-height:40px;padding:9px 0}
+.indice a::before{content:counter(it);flex:none;width:1.6em;font-size:.8rem;font-weight:800;color:var(--ouro-ink);font-variant-numeric:tabular-nums}
+.nota-pe{color:var(--muted);font-size:.85rem;padding:4px 2px 0}
+/* exercícios de múltipla escolha: tocou numa opção, aparece a certa e a explicação */
+.quiz{display:grid;gap:8px;padding:12px 0;border-top:1px solid var(--paper-line)}.quiz:first-of-type{border-top:0}
+.q-p{font-weight:700;color:inherit}
+.q-ops{display:grid;gap:6px}
+.q-op{display:block;width:100%;text-align:left;font:inherit;font-size:.95rem;line-height:1.35;min-height:44px;padding:10px 12px;border-radius:8px;
+ border:1px solid #c8cdd5;background:#fff;color:#14171c;cursor:pointer}
+.q-op:hover{border-color:var(--gold)}.q-op:disabled{cursor:default}
+.q-op.ok{background:#e3f4ea;border-color:#1b7a45;color:#0f4d2b;font-weight:700}.q-op.ok::before{content:"✓ ";font-weight:800}
+.q-op.erro{background:#fbe6e9;border-color:#b3263e;color:#7d1a2b}.q-op.erro::before{content:"✗ ";font-weight:800}
+.q-exp{border-left:4px solid var(--ok);background:#f2faf5;color:#14171c;border-radius:6px;padding:8px 12px}
+.q-exp .q-res{color:var(--ok)}.q-exp.mal{border-left-color:#b3263e;background:#fdf3f4}.q-exp.mal .q-res{color:#b3263e}
+.call.suavez .q-op,.call.resolvido .q-op{border-color:#3a2e10}
+/* endereços longos (fontes) quebram em vez de alargar a página */
+.sec a,.sec li,.sec p{overflow-wrap:anywhere}
+/* títulos das etapas com mais respiro */
+.sec{scroll-margin-top:calc(var(--nav-h,45px) + 56px)}
+@media (min-width:601px){.sec{padding:24px 28px}}
+/* tabelas: fichas no celular (menos as grades de células curtas, que ficam tabela e centralizadas) */
+.tab table.grade th,.tab table.grade td{text-align:center;padding:7px 6px}
+.tab table.grade th{white-space:normal;overflow-wrap:anywhere;hyphens:auto}
+@media (max-width:600px){
+ .tab:not(:has(.grade)){border:0;background:none;overflow:visible;border-radius:0}
+ .tab:not(:has(.grade)) table,.tab:not(:has(.grade)) tbody,.tab:not(:has(.grade)) tr,.tab:not(:has(.grade)) td{display:block}
+ .tab:not(:has(.grade)) thead{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+ .tab:not(:has(.grade)) tr{background:#fff;border:1px solid var(--paper-line);border-radius:8px;padding:10px 12px;margin-bottom:8px}
+ .tab:not(:has(.grade)) td{border:0;padding:3px 0;display:grid;grid-template-columns:6.5em minmax(0,1fr);gap:8px}
+ .tab:not(:has(.grade)) td::before{content:attr(data-label);font-size:.7rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--paper-muted);padding-top:3px}
+ .tab:not(:has(.grade)) td:empty{display:none}
+ .tab:not(:has(.grade)) td:first-child{display:block;font-weight:800;color:var(--paper-ink);padding-bottom:4px}
+ .tab:not(:has(.grade)) td:first-child::before{display:none}
+}
+</style>
+</head>
+<body>
+<!--moldura--><a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<header class="bar" id="topo"><div class="in">
+ <a class="marca" href="../../"><img class="logo" src="../../marca/logo-eb-104.webp" srcset="../../marca/logo-eb-52.webp 157w, ../../marca/logo-eb-104.webp 314w, ../../marca/logo-eb-156.webp 472w" sizes="(max-width: 480px) 121px, 145px" width="157" height="52" alt="Elite Board Gamers: página inicial"></a>
+ <a class="ig" href="https://www.instagram.com/eliteboardgamers/" target="_blank" rel="noopener" aria-label="Instagram @eliteboardgamers"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6" fill="currentColor"/></svg><span>@eliteboardgamers</span></a>
+ <a class="zap-mini" href="https://chat.whatsapp.com/IgQQkJdSkzHBaEq3UwFeAo" target="_blank" rel="noopener" aria-label="Grupo do WhatsApp"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8.4 19l-4.4 1Z"/><path d="M9.2 8.6c.3-.5.8-.5 1-.1l.7 1.5c.1.3 0 .6-.2.8l-.4.4c.5 1.1 1.4 2 2.5 2.5l.4-.4c.2-.2.5-.3.8-.2l1.5.7c.4.2.4.7-.1 1-.7.5-1.6.6-2.4.3a7 7 0 0 1-4.2-4.2c-.3-.8-.2-1.7.4-2.3Z"/></svg><span>Grupo do WhatsApp</span></a>
+ <button type="button" class="busca-btn" aria-label="Buscar no site" aria-haspopup="dialog" aria-keyshortcuts="/ Control+K" hidden><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></button>
+ <button type="button" class="sino-btn" aria-label="Receber notificações" aria-haspopup="dialog" aria-expanded="false" hidden><svg class="ic" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 3a6 6 0 0 0-6 6v3.6L4.3 15.5A1 1 0 0 0 5.2 17h13.6a1 1 0 0 0 .9-1.5L18 12.6V9a6 6 0 0 0-6-6z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M9.5 19.5a2.6 2.6 0 0 0 5 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+</div></header>
+<script src="/sino.js?v=2" defer></script>
+<script>(()=>{const b=document.querySelector('.busca-btn');let c;b.hidden=false;const a=()=>{c=c||new Promise((r,j)=>{const s=document.createElement('script');s.src='../../busca.js';s.onload=r;s.onerror=()=>{c=null;j()};document.head.append(s)});c.then(()=>abrirBusca('../../'),()=>{})};b.addEventListener('click',a);addEventListener('keydown',e=>{const t=e.target,ed=t.isContentEditable||/^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName);if((e.key==='/'&&!ed&&!e.ctrlKey&&!e.metaKey)||((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k')){e.preventDefault();a()}})})()</script>
+<nav class="nav" aria-label="Seções do site"><ul class="in"><li><a class="casa" href="../../" aria-label="Página inicial"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 9.5V20h13V9.5"/><path d="M10 20v-5.5h4V20"/></svg></a></li><li><a href="../../noticias/">Notícias</a></li><li><a href="../../resenhas/">Resenhas</a></li><li><a href="../../como-jogar/" aria-current="true">Como jogar</a></li><li><a href="../../lancamentos/">Lançamentos</a></li><li><a href="../../black/">Black de Verdade</a></li></ul></nav>
+<script>(()=>{const n=document.querySelector('.nav'),h=()=>document.documentElement.style.setProperty('--nav-h',n.offsetHeight+'px');h();addEventListener('resize',h);addEventListener('load',h)})()</script>
+<div class="guia-prog"><a href="#neste-guia"><span class="gp-r">Guia</span><span class="gp-t">Neste guia</span><span class="gp-i">Índice</span></a><span class="gp-b" aria-hidden="true"></span></div><!--/moldura-->
+
+<main id="conteudo" class="gut"><div class="nota">
+  <nav class="trilha" aria-label="Trilha de navegação"><ol><li><a href="../../">Início</a></li><li><a href="../">Como jogar</a></li><li aria-current="page">Harmonies</li></ol></nav>
+
+  <article class="bloco topo-cj">
+    <figure class="foto-topo"><img src="../../harmonies/fotos/componentes-1.webp" alt="Harmonies: os componentes" width="1600" height="1047" fetchpriority="high" decoding="async"><figcaption>Imagem: Libellud</figcaption></figure>
+    <span class="num-l">Colocação de peças · Família</span>
+    <h1>Como jogar Harmonies</h1>
+    <p class="meta-e"><span>Para quem nunca jogou</span><span>1 a 4 jogadores</span><span>30 min</span><span>10+</span><span>Edição Galápagos (Asmodee)</span></p>
+    <p class="meta"><time datetime="2026-11-05">5 de novembro de 2026</time> · Redação Elite Boardgamers</p>
+  </article>
+
+  <section class="bloco r1" aria-label="Resumo em 1 minuto">
+    <span class="kick">Resumo em 1 minuto</span>
+    <p class="resp">Você pega 3 peças por turno para montar árvores, montanhas, campos, construções e rios no seu tabuleiro, instala animais nos habitats que criou e vence quem somar mais pontos de paisagens e animais.</p>
+    <ul><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.5l4.5 4.5L19.5 6.5"/></svg><span>No seu turno, você pega as 3 peças de um espaço do tabuleiro central e põe as 3 no seu tabuleiro, empilhando só do jeito permitido.</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.5l4.5 4.5L19.5 6.5"/></svg><span>Quando o seu tabuleiro tem o habitat de uma carta de animal, você tira o cubo de baixo da carta e o põe ali; a carta vale o número mais alto sem cubo.</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.5l4.5 4.5L19.5 6.5"/></svg><span>A partida acaba quando a bolsa se esgota ou alguém fica com 2 ou menos espaços vazios; a rodada é completada e vence quem tiver mais pontos.</span></li></ul>
+    <p class="pe"><span><b>Como você aprende:</b> 3 etapas, da mesa montada à contagem de pontos</span><span><b>Leitura do essencial:</b> cerca de 10 min</span></p>
+    <p class="legenda-f"><b>À vista, só o essencial para jogar.</b> O que abre com <span class="mais-i">+</span> é explicação, exemplo, exercício ou regra de caso especial: abra quando precisar.</p>
+  </section>
+
+<section class="bloco sec setup" id="montar-a-mesa-passo-a-passo"><h2><span class="num"></span>Montar a mesa passo a passo</h2>
+<p>A montagem segue a página de preparação do manual <span class="pg">p.&nbsp;2 e 3</span>, na mesma ordem. É igual para 2, 3 ou 4 jogadores; só o modo solo muda, no fim desta seção.</p>
+<p><strong>O que vem na caixa</strong> <span class="pg">p.&nbsp;2</span>:</p>
+<div class="tab"><table><thead><tr><th>Componente</th><th>Quantidade</th></tr></thead><tbody><tr><td data-label="Componente">Bolsa</td><td data-label="Quantidade">1</td></tr><tr><td data-label="Componente">Tabuleiro central</td><td data-label="Quantidade">1 (dois lados: 2-4 jogadores e Solo)</td></tr><tr><td data-label="Componente">Tabuleiros pessoais</td><td data-label="Quantidade">4 (dois lados: A e B)</td></tr><tr><td data-label="Componente">Cartas de auxílio</td><td data-label="Quantidade">4</td></tr><tr><td data-label="Componente">Peças</td><td data-label="Quantidade">120: 23 azuis, 23 cinza, 21 marrons, 19 verdes, 19 amarelas, 15 vermelhas</td></tr><tr><td data-label="Componente">Cubos de animais</td><td data-label="Quantidade">75</td></tr><tr><td data-label="Componente">Cartas de animais</td><td data-label="Quantidade">32</td></tr><tr><td data-label="Componente">Cartas de espíritos da natureza e cubos de espíritos da natureza</td><td data-label="Quantidade">10 cartas e 4 cubos</td></tr><tr><td data-label="Componente">Bloco de pontuação</td><td data-label="Quantidade">1</td></tr><tr><td data-label="Componente">Livro de regras</td><td data-label="Quantidade">1</td></tr></tbody></table></div>
+<figure class="fig"><img src="../../harmonies/fotos/componentes-1.webp" alt="A caixa e uma mesa de Harmonies montada, com os componentes. Imagem: Libellud" loading="lazy" decoding="async"><figcaption>A caixa e uma mesa de Harmonies montada, com os componentes. Imagem: Libellud</figcaption></figure>
+<ol><li><strong>Ponha o tabuleiro central no meio da mesa com o lado de 2-4 jogadores para cima</strong> <span class="pg">p.&nbsp;2</span>.</li><li><strong>Ponha todas as 120 peças na bolsa</strong> e deixe a bolsa perto do tabuleiro central <span class="pg">p.&nbsp;2</span>.</li></ol>
+<figure class="fig"><img src="figuras/setup-bolsa.webp" alt="As peças entram na bolsa, que fica ao lado do tabuleiro central. Ilustração: manual Galápagos (p. 2)" loading="lazy" decoding="async"><figcaption>As peças entram na bolsa, que fica ao lado do tabuleiro central. Ilustração: manual Galápagos <span class="pg">p.&nbsp;2</span></figcaption></figure>
+<ol start="3"><li><strong>Encha cada um dos 5 espaços do tabuleiro central com 3 peças tiradas da bolsa ao acaso</strong>, sem escolher cor. São 15 peças à vista <span class="pg">p.&nbsp;2</span>.</li></ol>
+<figure class="fig"><img src="figuras/setup-tabuleiro.webp" alt="O tabuleiro central sendo enchido: 4 espaços já com 3 peças e o quinto prestes a receber as suas, sorteadas da bolsa; a seta fica no meio. Ilustração: manual Galápagos (p. 2)" loading="lazy" decoding="async"><figcaption>O tabuleiro central sendo enchido: 4 espaços já com 3 peças e o quinto prestes a receber as suas, sorteadas da bolsa; a seta fica no meio. Ilustração: manual Galápagos <span class="pg">p.&nbsp;2</span></figcaption></figure>
+<ol start="4"><li><strong>Embaralhe as 32 cartas de animais e abra 5 delas</strong>, viradas para cima, perto do tabuleiro central. O resto fica ao lado, virado para baixo: é a pilha de compra. Ponha os 75 cubos de animais ao alcance de todos: é a reserva <span class="pg">p.&nbsp;3</span>.</li></ol>
+<figure class="fig"><img src="figuras/setup-cartas.webp" alt="A fileira de 5 cartas de animais abertas, a pilha de compra e, embaixo, os cubos de animais da reserva. Ilustração: manual Galápagos (p. 3)" loading="lazy" decoding="async"><figcaption>A fileira de 5 cartas de animais abertas, a pilha de compra e, embaixo, os cubos de animais da reserva. Ilustração: manual Galápagos <span class="pg">p.&nbsp;3</span></figcaption></figure>
+<ol start="5"><li><strong>Nas primeiras partidas, deixe na caixa as 10 cartas e os 4 cubos de espíritos da natureza.</strong> O manual recomenda jogar algumas partidas antes de usá-los <span class="pg">p.&nbsp;3</span>. Este guia explica a variante nas "Situações especiais".</li></ol>
+<figure class="fig"><img src="figuras/setup-caixa.webp" alt="As cartas de espíritos da natureza (o verso com a pata) e os 4 cubos de espíritos, que ficam na caixa nas primeiras partidas. Ilustração: manual Galápagos (p. 3)" loading="lazy" decoding="async"><figcaption>As cartas de espíritos da natureza (o verso com a pata) e os 4 cubos de espíritos, que ficam na caixa nas primeiras partidas. Ilustração: manual Galápagos <span class="pg">p.&nbsp;3</span></figcaption></figure>
+<ol start="6"><li><strong>Cada jogador pega um tabuleiro pessoal e uma carta de auxílio</strong>, o resumo da pontuação. Todos combinam qual lado do tabuleiro pessoal vão usar, e todos usam o mesmo lado: o lado A pontua a água pelo rio; o B, pelas ilhas <span class="pg">p.&nbsp;8</span>. Cada um deixa a carta de auxílio virada para o lado igual ao dos tabuleiros. Nas primeiras partidas, o manual recomenda o lado A <span class="pg">p.&nbsp;3</span>.</li></ol>
+<figure class="fig"><img src="figuras/setup-tabuleiros.webp" alt="Dois jogadores com o tabuleiro pessoal vazio e a carta de auxílio ao lado, virada para o mesmo lado do tabuleiro. Ilustração: manual Galápagos (p. 3)" loading="lazy" decoding="async"><figcaption>Dois jogadores com o tabuleiro pessoal vazio e a carta de auxílio ao lado, virada para o mesmo lado do tabuleiro. Ilustração: manual Galápagos <span class="pg">p.&nbsp;3</span></figcaption></figure>
+<ol start="7"><li><strong>Escolha quem começa:</strong> o último jogador a ter visto uma paisagem magnífica. Gire a seta do tabuleiro central para apontar para ele. A vez segue no sentido horário <span class="pg">p.&nbsp;3 e 4</span>.</li></ol>
+<figure class="fig"><img src="figuras/setup-primeiro.webp" alt="A seta do tabuleiro central virada para o primeiro jogador. Ilustração: manual Galápagos (p. 3)" loading="lazy" decoding="async"><figcaption>A seta do tabuleiro central virada para o primeiro jogador. Ilustração: manual Galápagos <span class="pg">p.&nbsp;3</span></figcaption></figure>
+<ol start="8"><li><strong>Ninguém começa com peças, cartas ou cubos.</strong> Tudo o que cada um vai ter sai do tabuleiro central, da fileira de cartas e da reserva durante a partida (p. 2 a 4).</li></ol>
+<p>O bloco de pontuação só entra no fim da partida <span class="pg">p.&nbsp;9</span>.</p>
+<p><strong>O que muda com o número de jogadores</strong> <span class="pg">p.&nbsp;2, 3 e 11</span>:</p>
+<div class="tab"><table><thead><tr><th>Jogadores</th><th>Lado do tabuleiro central</th><th>Espaços com 3 peças</th><th>Cartas de animais abertas</th><th>Tabuleiros pessoais e cartas de auxílio que ficam na caixa</th></tr></thead><tbody><tr><td data-label="Jogadores">1 (solo)</td><td data-label="Lado do tabuleiro central">Solo</td><td data-label="Espaços com 3 peças">3</td><td data-label="Cartas de animais abertas">3</td><td data-label="Tabuleiros pessoais e cartas de auxílio que ficam na caixa">3</td></tr><tr><td data-label="Jogadores">2</td><td data-label="Lado do tabuleiro central">2-4 jogadores</td><td data-label="Espaços com 3 peças">5</td><td data-label="Cartas de animais abertas">5</td><td data-label="Tabuleiros pessoais e cartas de auxílio que ficam na caixa">2</td></tr><tr><td data-label="Jogadores">3</td><td data-label="Lado do tabuleiro central">2-4 jogadores</td><td data-label="Espaços com 3 peças">5</td><td data-label="Cartas de animais abertas">5</td><td data-label="Tabuleiros pessoais e cartas de auxílio que ficam na caixa">1</td></tr><tr><td data-label="Jogadores">4</td><td data-label="Lado do tabuleiro central">2-4 jogadores</td><td data-label="Espaços com 3 peças">5</td><td data-label="Cartas de animais abertas">5</td><td data-label="Tabuleiros pessoais e cartas de auxílio que ficam na caixa">nenhum</td></tr></tbody></table></div>
+<p>Com 2, 3 ou 4 jogadores, todas as peças vão para a bolsa e nada mais muda. Ficam na caixa os tabuleiros pessoais e as cartas de auxílio que ninguém pegou e, nas primeiras partidas, os espíritos da natureza.</p>
+<aside class="call mais"><p class="rot">Regra adicional</p><p><strong>Modo solo.</strong> Use o lado Solo do tabuleiro central, que tem só 3 espaços, e abra só 3 cartas de animais. As outras regras de montagem são as mesmas <span class="pg">p.&nbsp;11</span>. O que muda no turno está nas "Situações especiais".</p></aside>
+<p><strong>Antes de começar, confira:</strong> tabuleiro central com o lado certo para cima e 3 peças em cada espaço; bolsa com as outras peças; 5 cartas de animais abertas e a pilha de compra ao lado; cubos de animais na reserva; cada jogador com tabuleiro pessoal e carta de auxílio, todos do mesmo lado; a seta apontando para quem começa.</p>
+<div class="quiz"><p class="q-p">Partida de 3 jogadores, a primeira do grupo. O que está certo?</p><div class="q-ops"><button type="button" class="q-op">Cada jogador escolhe o lado do seu tabuleiro pessoal; quem não conhece o jogo usa o lado A</button><button type="button" class="q-op">O tabuleiro central fica com o lado Solo, porque o lado de 2-4 é só para 4 jogadores</button><button type="button" class="q-op" data-ok>Todos usam o mesmo lado do tabuleiro pessoal, de preferência o A, e há 5 cartas de animais abertas</button><button type="button" class="q-op">Cada jogador recebe 3 peças da bolsa antes do primeiro turno</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Todos usam o mesmo lado, e o manual recomenda o A nas primeiras partidas; com 2 a 4 jogadores, o tabuleiro central fica com o lado de 2-4 e há 5 cartas abertas. Ninguém recebe peças na montagem <span class="pg">p.&nbsp;2 e 3</span>.</p></div></div>
+</section>
+<section class="bloco sec rapido" id="comece-a-jogar-em-4-minutos"><h2><span class="num"></span>Comece a jogar em 4 minutos</h2>
+<figure class="fig foto-sec caixa"><img src="../../harmonies/fotos/capa-1.webp" alt="Harmonies: a caixa" width="1414" height="1500" loading="lazy" decoding="async"><figcaption>Imagem: Libellud</figcaption></figure>
+<p><strong>Meta:</strong> em 4 minutos de leitura, montar a mesa e jogar o seu primeiro turno sem abrir o manual.</p>
+<h3>A ideia do jogo</h3>
+<p>Você constrói uma paisagem no seu tabuleiro pessoal. Na sua vez, pega 3 <strong>peças</strong> coloridas e as põe nos espaços do tabuleiro; empilhadas do jeito certo, viram árvores, montanhas e construções, que valem pontos. Quando a paisagem forma o <strong>habitat</strong> desenhado numa <strong>carta de animal</strong>, você instala ali um <strong>cubo de animal</strong>, e a carta passa a valer pontos. Vence quem somar mais pontos no fim.</p>
+<h3>Monte a mesa</h3>
+<p>A montagem completa, com figuras, está na seção "Montar a mesa passo a passo", logo acima. O essencial <span class="pg">p.&nbsp;2 e 3</span>:</p>
+<ol><li>Tabuleiro central com 3 peças sorteadas em cada um dos 5 espaços; o resto das peças na bolsa.</li><li>5 cartas de animais abertas, a pilha de compra e os cubos de animais ao lado.</li><li>Cada jogador com um tabuleiro pessoal, todos do mesmo lado (o A nas primeiras partidas).</li><li>A seta aponta para quem começa; a vez segue no sentido horário.</li></ol>
+<h3>Seu primeiro turno</h3>
+<p>No seu turno, você faz uma ação obrigatória e pode fazer duas opcionais, na ordem que quiser <span class="pg">p.&nbsp;4</span>:</p>
+<div class="tab"><table><thead><tr><th>Ação</th><th>Quando</th><th>O que você faz</th></tr></thead><tbody><tr><td data-label="Ação">Pegar e posicionar peças</td><td data-label="Quando">Obrigatória, exatamente uma vez</td><td data-label="O que você faz">Pega as 3 peças de um dos espaços do tabuleiro central e põe as 3 no seu tabuleiro pessoal</td></tr><tr><td data-label="Ação">Pegar 1 carta de animal</td><td data-label="Quando">Opcional, no máximo uma vez</td><td data-label="O que você faz">Explicada na <a href="#etapa-2-animais">etapa 2</a></td></tr><tr><td data-label="Ação">Posicionar 1 cubo de animal</td><td data-label="Quando">Opcional, quantas vezes puder</td><td data-label="O que você faz">Explicada na <a href="#etapa-2-animais">etapa 2</a></td></tr></tbody></table></div>
+<ol><li><strong>Escolha um espaço do tabuleiro central e pegue as 3 peças dele</strong> <span class="pg">p.&nbsp;4</span>.</li><li><strong>Ponha as 3 no seu tabuleiro pessoal</strong>, onde quiser. Uma peça sempre pode ir num espaço vazio <span class="pg">p.&nbsp;4</span>.</li><li><strong>Ou empilhe</strong>, mas só destes jeitos: cinza sobre cinza (montanha, até 3 de altura); marrom sobre 1 marrom (no máximo 2) e verde sobre 1 ou 2 marrons (árvore); vermelha sobre uma única cinza, marrom ou vermelha (construção). Azul e amarela ficam sempre no chão, e nada vai em cima delas <span class="pg">p.&nbsp;4</span>.</li><li><strong>No fim do turno, tire 3 peças da bolsa</strong> e ponha no espaço que você esvaziou <span class="pg">p.&nbsp;4</span>.</li></ol>
+<aside class="call resolvido"><p class="rot">Tarefa · exemplo resolvido</p><p><strong>Exemplo resolvido.</strong> Você pega um espaço com 1 peça marrom, 1 verde e 1 azul. Põe a marrom num espaço vazio, a verde em cima dela (uma árvore de tamanho 2) e a azul em outro espaço vazio. No fim do turno, tira 3 peças da bolsa e enche o espaço que ficou vazio no tabuleiro central.</p></aside>
+<aside class="call complete"><p class="rot">Tarefa · complete</p><p><strong>Complete.</strong> No turno seguinte, você pega 2 peças cinza e 1 vermelha. Já pôs uma cinza num espaço vazio.</p>
+<div class="quiz"><p class="q-p">Onde pode ir a segunda cinza?</p><div class="q-ops"><button type="button" class="q-op">Em cima da árvore do exemplo, para deixá-la mais alta</button><button type="button" class="q-op" data-ok>Em cima da primeira cinza, fazendo uma montanha de altura 2</button><button type="button" class="q-op">Em cima da peça azul</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Cinza só vai sobre cinza, até 3 de altura, ou num espaço vazio <span class="pg">p.&nbsp;4</span>.</p></div></div>
+<div class="quiz"><p class="q-p">E a vermelha?</p><div class="q-ops"><button type="button" class="q-op">Só num espaço vazio: vermelha nunca vai em cima de outra peça</button><button type="button" class="q-op">Em cima da verde da árvore</button><button type="button" class="q-op" data-ok>Num espaço vazio ou em cima de uma cinza, de uma marrom ou de outra vermelha</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> A construção é vermelha sobre cinza, marrom ou vermelha; a vermelha também pode ir num espaço vazio <span class="pg">p.&nbsp;4 e 8</span>.</p></div></div></aside>
+<aside class="call suavez"><p class="rot">Tarefa · sua vez</p><p><strong>Agora a sua mesa.</strong> Olhe os 5 espaços do tabuleiro central antes de escolher.</p>
+<div class="quiz"><p class="q-p">Um espaço tem 2 amarelas e 1 azul, e você gostaria de pegar só as amarelas. Pode?</p><div class="q-ops"><button type="button" class="q-op">Pode: você pega quantas peças quiser de um espaço</button><button type="button" class="q-op">Pode, se devolver a azul para a bolsa</button><button type="button" class="q-op" data-ok>Não: você pega as 3 peças do espaço e põe as 3 no seu tabuleiro</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> A ação obrigatória é pegar as 3 peças de um espaço e posicioná-las todas <span class="pg">p.&nbsp;4</span>.</p></div></div></aside>
+<h3>Ainda não precisa saber</h3>
+<p>Cartas de animais e cubos: <a href="#etapa-2-animais">etapa 2</a>. Quanto vale cada paisagem e como se conta o rio: etapas 1 e 3. Fim da partida e desempate: <a href="#etapa-3-fim-da-partida-e-pontos">etapa 3</a>. Para o primeiro turno, basta empilhar certo.</p>
+<h3>Como a partida acaba</h3>
+<p>A partida termina quando a bolsa está vazia na hora de reabastecer o tabuleiro central, ou quando alguém termina o turno com 2 ou menos espaços vazios (sem peça) no tabuleiro pessoal. A rodada é completada para todos jogarem o mesmo número de turnos, e vence quem tiver mais pontos <span class="pg">p.&nbsp;7</span>.</p>
+<p><strong>Prefere ver?</strong> As regras completas em vídeo. Ele complementa este guia; em caso de diferença, vale o manual.</p>
+<figure class="video"><button type="button" class="yt" data-id="o4psd_-Lzv0" data-t="0" aria-label="Assistir ao vídeo"><img src="https://i.ytimg.com/vi/o4psd_-Lzv0/hqdefault.jpg" alt="" loading="lazy" decoding="async" width="480" height="360"><span class="yt-play">▶ Assistir ao vídeo</span></button><figcaption>HARMONIES | Regras completas (Com exemplos), canal Duque Board Games · <a href="https://www.youtube.com/watch?v=o4psd_-Lzv0&amp;t=0s" rel="noopener">abrir no YouTube</a></figcaption></figure>
+<aside class="call atencao"><p class="rot">Atenção</p><p><strong>Os três erros mais caros.</strong> Você pega sempre as 3 peças de um espaço, nunca menos. Nenhuma peça vai embaixo de outra já posta nem num espaço com cubo de animal. Fora os empilhamentos da <a href="#etapa-1-pecas-e-paisagens">etapa 1</a>, nenhuma pilha é permitida: azul e amarela nunca recebem nada em cima.</p></aside>
+</section>
+  <nav class="bloco indice" id="neste-guia" aria-label="Neste guia"><h2>Neste guia</h2><ol><li><a href="#montar-a-mesa-passo-a-passo">Montar a mesa passo a passo</a></li><li><a href="#comece-a-jogar-em-4-minutos">Comece a jogar em 4 minutos</a></li><li><a href="#antes-de-tudo-o-que-e-este-jogo">Antes de tudo: o que é este jogo</a> <small>(opcional)</small></li><li><a href="#como-este-guia-ensina">Como este guia ensina</a> <small>(opcional)</small></li><li><a href="#etapa-1-pecas-e-paisagens">Etapa 1: peças e paisagens</a></li><li><a href="#etapa-2-animais">Etapa 2: animais</a></li><li><a href="#etapa-3-fim-da-partida-e-pontos">Etapa 3: fim da partida e pontos</a></li><li><a href="#situacoes-especiais">Situações especiais</a> <small>(opcional)</small></li><li><a href="#avaliacao-final">Avaliação final</a> <small>(opcional)</small></li><li><a href="#para-consultar-durante-a-partida">Para consultar durante a partida</a></li><li><a href="#fontes">Fontes</a></li></ol></nav>
+
+<section class="bloco sec opc" id="antes-de-tudo-o-que-e-este-jogo"><h2><span class="num">0</span>Antes de tudo: o que é este jogo<span class="tag-opc">Opcional</span></h2>
+<figure class="fig foto-sec caixa"><img src="../../harmonies/fotos/capa-1.webp" alt="Harmonies: a caixa" width="1414" height="1500" loading="lazy" decoding="async"><figcaption>Imagem: Libellud</figcaption></figure>
+<details class="dobra sec-opc"><summary>Abrir esta seção</summary><p>Harmonies é um jogo de colocação de peças para 1 a 4 pessoas, a partir de 10 anos, em cerca de 30 minutos, segundo a Libellud. Cada jogador tem o seu tabuleiro pessoal, uma grade de espaços hexagonais, e passa a partida enchendo-o com peças de seis cores. Cada cor é um pedaço de natureza: azul é água, amarela é campo, cinza é montanha, marrom e verde formam árvores, e a vermelha é construção <span class="pg">p.&nbsp;4 e 8</span>.</p>
+<p>Os pontos vêm de duas fontes, somadas no fim (p. 7 a 9):</p>
+<ul><li><strong>As paisagens.</strong> Cada árvore, montanha, campo e construção vale pontos pelo seu formato, e a água vale pelo rio mais comprido (lado A) ou pelo número de ilhas, as áreas que as peças azuis separam (lado B).</li><li><strong>Os animais.</strong> Cada carta de animal mostra um pequeno desenho de peças, o habitat. Quando o seu tabuleiro tem esse desenho, você põe um cubo nele, e a carta vale mais a cada cubo posto.</li></ul>
+<p>A tensão do jogo está aí: a mesma peça serve às duas coisas. Uma cinza pode crescer uma montanha que vale pontos sozinha, ou completar o habitat de um animal que pede uma montanha baixa. E o tabuleiro pessoal tem espaço limitado: cada peça ocupa um lugar ou aumenta uma pilha. A interação é indireta: ninguém mexe no tabuleiro do outro, mas o que você tira do tabuleiro central e da fileira de cartas deixa de estar disponível <span class="pg">p.&nbsp;4 e 5</span>.</p></details>
+</section>
+<section class="bloco sec opc" id="como-este-guia-ensina"><h2><span class="num">1</span>Como este guia ensina<span class="tag-opc">Opcional</span></h2>
+<figure class="fig foto-sec caixa"><img src="../../harmonies/fotos/capa-1.webp" alt="Harmonies: a caixa" width="1414" height="1500" loading="lazy" decoding="async"><figcaption>Imagem: Libellud</figcaption></figure>
+<details class="dobra sec-opc"><summary>Abrir esta seção</summary><p>Três etapas, cada uma uma parte real da partida: pôr peças e formar paisagens, instalar animais, fechar a partida e contar os pontos. Cada etapa traz <strong>Para entender</strong> (o porquê), <strong>Passo a passo</strong> (a regra exata), casos especiais a um toque e tarefas com ajuda que diminui: <strong>exemplo resolvido</strong>, <strong>complete</strong> e <strong>sua vez</strong>. Toque numa opção para ver a resposta e a explicação. No fim, uma avaliação diz o que reler, e uma folha de consulta vai para a mesa.</p></details>
+</section>
+<section class="bloco sec" id="etapa-1-pecas-e-paisagens"><h2><span class="num">2</span>Etapa 1: peças e paisagens</h2>
+<details class="dobra entender"><summary>Por que funciona assim</summary><aside class="call entender"><p>As 3 peças que você pega são a sua única ação obrigatória, e o que você faz com elas decide quase tudo. Uma peça no chão ocupa um espaço novo; uma peça empilhada transforma a pilha: duas marrons e uma verde viram uma árvore de tamanho 3.</p>
+<p>Cada tipo de paisagem tem a sua regra de pontos, e quase todas premiam altura ou formato. A tabela abaixo dá o essencial; a etapa 3 detalha as restrições.</p></aside></details>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Pegar e posicionar peças</strong> <span class="pg">p.&nbsp;4</span></p>
+<ol><li>Escolha um dos espaços do tabuleiro central e pegue as 3 peças dele.</li><li>Ponha as 3 no seu tabuleiro pessoal, uma de cada vez, seguindo as regras de posicionamento abaixo.</li><li>Entre uma peça e outra, se quiser, faça as ações opcionais (etapa 2).</li><li>Faça esta ação exatamente uma vez por turno.</li></ol></aside>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Como posicionar uma peça</strong> (p. 4; p. 12)</p>
+<ol><li>Uma peça sempre pode ir num espaço vazio.</li><li>Ela pode ir sobre 1 ou 2 peças já postas, mas só para formar estas pilhas: - <strong>Montanha:</strong> cinza sobre cinza, até 3 cinzas. - <strong>Árvore:</strong> marrom sobre marrom (no máximo 2 marrons) e verde sobre 1 ou 2 marrons. A verde fecha a árvore. - <strong>Construção:</strong> vermelha sobre uma única cinza, marrom ou vermelha. São só 2 peças de altura.</li><li>Nenhum outro empilhamento é permitido. Azul e amarela ficam sempre no chão, sem nada em cima.</li><li>Nunca ponha uma peça embaixo de outra já posta.</li><li>Nunca ponha uma peça num espaço que tem cubo de animal.</li></ol></aside>
+<figure class="fig"><img src="figuras/empilhar.webp" alt="As pilhas permitidas, por altura (1, 2 e 3): montanhas de 1 a 3 cinzas; construções com a vermelha sobre cinza, vermelha ou marrom; árvores com a verde sobre 0, 1 ou 2 marrons; água e campo só no chão. As linhas mostram que pilha nasce de qual. Ilustração: manual Galápagos (p. 4)" loading="lazy" decoding="async"><figcaption>As pilhas permitidas, por altura (1, 2 e 3): montanhas de 1 a 3 cinzas; construções com a vermelha sobre cinza, vermelha ou marrom; árvores com a verde sobre 0, 1 ou 2 marrons; água e campo só no chão. As linhas mostram que pilha nasce de qual. Ilustração: manual Galápagos <span class="pg">p.&nbsp;4</span></figcaption></figure>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Fim do turno</strong> (p. 4; p. 12)</p>
+<ol><li>Tire 3 peças da bolsa, sem escolher, e ponha no espaço do tabuleiro central que você esvaziou.</li><li>Se você pegou uma carta de animal, abra a carta do topo da pilha de compra, para a fileira voltar a ter 5 (3 no solo, p. 11).</li><li>A vez passa para o jogador à sua esquerda.</li></ol></aside>
+<p><strong>Quanto vale cada paisagem</strong> (p. 8; detalhes na etapa 3):</p>
+<div class="tab"><table><thead><tr><th>Paisagem</th><th>Como se forma</th><th>Pontos</th></tr></thead><tbody><tr><td data-label="Paisagem">Árvore</td><td data-label="Como se forma">Verde sobre 0, 1 ou 2 marrons</td><td data-label="Pontos">Tamanho 1: 1; tamanho 2: 3; tamanho 3: 7</td></tr><tr><td data-label="Paisagem">Montanha</td><td data-label="Como se forma">1, 2 ou 3 cinzas</td><td data-label="Pontos">Altura 1: 1; altura 2: 3; altura 3: 7; isolada de outras montanhas: 0</td></tr><tr><td data-label="Paisagem">Campo</td><td data-label="Como se forma">2 ou mais amarelas vizinhas</td><td data-label="Pontos">5 por grupo, de qualquer tamanho</td></tr><tr><td data-label="Paisagem">Construção</td><td data-label="Como se forma">Vermelha sobre cinza, marrom ou vermelha</td><td data-label="Pontos">5, se os vizinhos tiverem pelo menos 3 cores diferentes</td></tr><tr><td data-label="Paisagem">Água, lado A</td><td data-label="Como se forma">Peças azuis em fila (rio)</td><td data-label="Pontos">Pelo comprimento do seu maior rio</td></tr><tr><td data-label="Paisagem">Água, lado B</td><td data-label="Como se forma">Peças azuis que separam o tabuleiro (ilhas)</td><td data-label="Pontos">5 por ilha</td></tr></tbody></table></div>
+<details class="dobra mais"><summary>Regra adicional: Peça debaixo da vermelha</summary><aside class="call mais"><p>Uma cinza ou marrom que recebe uma vermelha em cima passa a ser a base de uma construção: deixa de ser montanha ou tronco de árvore. O manual mostra isso na nota da p. 6 (a vermelha sobre a cinza desfaz o habitat que pedia a cinza) e nas definições da p. 8 (montanha é pilha só de cinzas).</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Vermelha sozinha no chão</summary><aside class="call mais"><p>Não é construção, porque a construção é uma vermelha "posicionada sobre" outra peça <span class="pg">p.&nbsp;8</span>, e não pontua em nenhuma categoria. Como peça de cima, conta como cor para as construções vizinhas.</p></aside></details>
+<aside class="call atencao"><p class="rot">Atenção</p><p>Marrom sozinha, ou duas marrons sem verde em cima, não é árvore e vale 0 <span class="pg">p.&nbsp;8</span>. E depois que a verde está em cima, a árvore não cresce mais: nada vai sobre a verde.</p></aside>
+<details class="dobra resolvido"><summary>Ver um exemplo resolvido</summary><aside class="call resolvido"><p>Você pega 2 marrons e 1 verde. Põe uma marrom num espaço vazio, a outra marrom sobre ela e a verde no topo: uma árvore de tamanho 3, que vale 7 pontos no fim <span class="pg">p.&nbsp;4 e 8</span>. Se tivesse posto a verde sobre uma só marrom e a segunda marrom num espaço vazio, teria uma árvore de tamanho 2 (3 pontos) e uma marrom solta (0).</p></aside></details>
+
+
+
+<details class="dobra pratica"><summary>Pratique esta etapa: exercícios com respostas</summary><aside class="call complete"><p class="rot">Tarefa · complete</p><p><strong>Complete.</strong> No seu tabuleiro há uma montanha de 2 cinzas e, ao lado dela, uma construção (vermelha sobre marrom). Você pegou 1 cinza, 1 vermelha e 1 amarela.</p>
+<div class="quiz"><p class="q-p">Onde a cinza pode ir?</p><div class="q-ops"><button type="button" class="q-op" data-ok>Sobre a montanha de 2, fazendo uma montanha de altura 3, ou num espaço vazio</button><button type="button" class="q-op">Sobre a construção, para deixá-la mais alta</button><button type="button" class="q-op">Sobre a amarela que você acabou de pegar, depois de posicioná-la</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Cinza só vai sobre cinza, até 3, ou no chão <span class="pg">p.&nbsp;4</span>.</p></div></div>
+<div class="quiz"><p class="q-p">E a vermelha, pode ir sobre a construção?</p><div class="q-ops"><button type="button" class="q-op">Pode: vermelha vai sobre vermelha</button><button type="button" class="q-op">Pode, se a construção ainda não tiver cubo</button><button type="button" class="q-op" data-ok>Não: a construção já tem 2 peças, e só se empilha sobre 1 ou 2 peças nas pilhas da ilustração</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Vermelha vai sobre uma vermelha sozinha, mas a construção (vermelha sobre marrom) já está completa com 2 peças; a ilustração não mostra pilha de 3 com vermelha <span class="pg">p.&nbsp;4</span>.</p></div></div></aside>
+<aside class="call suavez"><p class="rot">Tarefa · sua vez</p><p><strong>Sua vez.</strong></p>
+<div class="quiz"><p class="q-p">Você quer pôr uma marrom embaixo de uma verde que está sozinha, para fazer uma árvore de tamanho 2. Pode?</p><div class="q-ops"><button type="button" class="q-op">Pode: a árvore fica igual a uma verde sobre marrom</button><button type="button" class="q-op" data-ok>Não: nunca se põe peça embaixo de outra já posta</button><button type="button" class="q-op">Pode, se a verde ainda não tiver cubo</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Nenhuma peça vai embaixo de peças já posicionadas <span class="pg">p.&nbsp;4</span>. A árvore precisa ser montada de baixo para cima.</p></div></div></aside>
+<aside class="call treino"><p class="rot">Treino rápido</p><p><strong>Quanto vale?</strong> <span class="pg">p.&nbsp;8</span></p>
+<div class="quiz"><p class="q-p">a) Uma árvore de 2 marrons com a verde em cima e uma verde sozinha no chão.</p><div class="q-ops"><button type="button" class="q-op" data-ok>8</button><button type="button" class="q-op">4</button><button type="button" class="q-op">10</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Tamanho 3 vale 7, tamanho 1 vale 1: 8 pontos.</p></div></div>
+<div class="quiz"><p class="q-p">b) Três montanhas: uma de altura 3 sozinha num canto, e duas vizinhas, de altura 1 e 2.</p><div class="q-ops"><button type="button" class="q-op">11</button><button type="button" class="q-op">7</button><button type="button" class="q-op" data-ok>4</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> A de altura 3 não tem montanha vizinha e vale 0; as duas vizinhas valem 1 e 3.</p></div></div></aside></details>
+</section>
+<section class="bloco sec" id="etapa-2-animais"><h2><span class="num">3</span>Etapa 2: animais</h2>
+<details class="dobra entender"><summary>Por que funciona assim</summary><aside class="call entender"><p>Os animais são a outra metade dos pontos (no exemplo do manual, 63 de 116, p. 9). Cada carta de animal mostra, embaixo, um pequeno desenho de peças: o habitat. Uma das peças do desenho tem um cubo em cima; é ali que o animal vai morar. Na lateral, a carta tem uma coluna de espaços com números, e cada espaço recebe um cubo quando você pega a carta <span class="pg">p.&nbsp;5</span>.</p>
+<p>Cada vez que o seu tabuleiro tem o habitat, você tira o cubo de baixo da carta e o põe no tabuleiro. Com isso aparece um número: é quanto a carta vale. Quanto mais cubos você tira, mais alto o número que fica à mostra <span class="pg">p.&nbsp;6 e 9</span>.</p></aside></details>
+<figure class="fig"><img src="figuras/carta.webp" alt="Uma carta de animal, a Raposa Feneco: na lateral, os espaços de cubo com os pontos (4, 9 e um terceiro valor, em cima); embaixo, o habitat (uma amarela e duas cinzas), com o cubo desenhado sobre a peça onde o animal vai; no pé da faixa, o lembrete da cor dessa peça. Ilustração: manual Galápagos (p. 5)" loading="lazy" decoding="async"><figcaption>Uma carta de animal, a Raposa Feneco: na lateral, os espaços de cubo com os pontos (4, 9 e um terceiro valor, em cima); embaixo, o habitat (uma amarela e duas cinzas), com o cubo desenhado sobre a peça onde o animal vai; no pé da faixa, o lembrete da cor dessa peça. Ilustração: manual Galápagos <span class="pg">p.&nbsp;5</span></figcaption></figure>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Pegar 1 carta de animal</strong> <span class="pg">p.&nbsp;5</span></p>
+<ol><li>Opcional, a qualquer momento do seu turno, no máximo uma vez por turno.</li><li>Escolha uma das 5 cartas abertas e ponha acima do seu tabuleiro pessoal.</li><li>Pegue da reserva um cubo de animal para cada espaço de cubo da carta e cubra cada espaço com um cubo.</li><li>Você pode ter no máximo 4 cartas acima do tabuleiro ao mesmo tempo.</li><li>No fim do turno, a fileira é reposta pela pilha de compra até ter 5 cartas.</li></ol></aside>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Posicionar 1 cubo de animal</strong> <span class="pg">p.&nbsp;6 e 7</span></p>
+<ol><li>Opcional, quantas vezes você puder, a qualquer momento do seu turno, inclusive entre uma peça e outra.</li><li>Procure no seu tabuleiro o habitat de uma das suas cartas, exatamente como desenhado: as mesmas cores, nas mesmas posições. Pode estar girado para qualquer lado.</li><li>Árvores e montanhas do habitat precisam ter exatamente a altura do desenho. Construções podem ter qualquer base (cinza, marrom ou vermelha).</li><li>A peça onde o cubo vai precisa estar desocupada: no máximo 1 cubo por espaço.</li><li>Tire o cubo mais de baixo da carta e ponha na peça indicada do habitat.</li><li>Quando sai o último cubo, a carta está completa: ponha ao lado do tabuleiro. Ela deixa de contar no limite de 4.</li></ol></aside>
+<figure class="fig"><img src="figuras/orientacoes.webp" alt="Orientações: o habitat do Musaranho (uma construção com uma amarela de cada lado, em ângulo, não em linha reta) aparece nas 6 posições em que pode ser girado. Combinações: 3 construções e 3 amarelas formam três habitats do Musaranho, porque as amarelas servem a mais de um. Ilustração: manual Galápagos (p. 7)" loading="lazy" decoding="async"><figcaption>Orientações: o habitat do Musaranho (uma construção com uma amarela de cada lado, em ângulo, não em linha reta) aparece nas 6 posições em que pode ser girado. Combinações: 3 construções e 3 amarelas formam três habitats do Musaranho, porque as amarelas servem a mais de um. Ilustração: manual Galápagos <span class="pg">p.&nbsp;7</span></figcaption></figure>
+<aside class="call atencao"><p class="rot">Atenção</p><p>O cubo posto é definitivo. Se depois você puser uma vermelha sobre uma cinza do habitat, o habitat deixa de existir, mas o cubo fica e continua valendo <span class="pg">p.&nbsp;6</span>. E a peça com cubo nunca mais recebe outra peça em cima <span class="pg">p.&nbsp;4</span>.</p></aside>
+<details class="dobra mais"><summary>Regra adicional: Uma peça, vários habitats</summary><aside class="call mais"><p>A mesma peça pode fazer parte de vários habitats, iguais ou diferentes. Só o espaço que recebe o cubo precisa estar livre (p. 6; p. 12).</p></aside></details>
+<details class="dobra edicao"><summary>Sobre a edição</summary><aside class="call edicao"><p>O manual diz que o habitat "pode ser orientado em qualquer direção" <span class="pg">p.&nbsp;6</span> e ilustra 6 giros <span class="pg">p.&nbsp;7</span>. Não fala em espelhar o desenho, e este guia não afirma nada sobre isso.</p></aside></details>
+<figure class="fig"><img src="figuras/cubo-1.webp" alt="No exemplo do manual, Giulia pega 2 cinzas e 1 vermelha e põe uma das cinzas no tabuleiro (1); com isso forma o habitat da Raposa Feneco e põe um cubo nele (2). Ilustração: manual Galápagos (p. 6)" loading="lazy" decoding="async"><figcaption>No exemplo do manual, Giulia pega 2 cinzas e 1 vermelha e põe uma das cinzas no tabuleiro (1); com isso forma o habitat da Raposa Feneco e põe um cubo nele (2). Ilustração: manual Galápagos <span class="pg">p.&nbsp;6</span></figcaption></figure>
+<figure class="fig"><img src="figuras/cubo-2.webp" alt="Continuação do exemplo do manual: Giulia põe mais uma cinza (3), forma o habitat outra vez e põe 2 cubos de Raposa Feneco (4 e 5). A carta fica sem cubos, completa, e vai para o lado do tabuleiro (6). Ilustração: manual Galápagos (p. 6)" loading="lazy" decoding="async"><figcaption>Continuação do exemplo do manual: Giulia põe mais uma cinza (3), forma o habitat outra vez e põe 2 cubos de Raposa Feneco (4 e 5). A carta fica sem cubos, completa, e vai para o lado do tabuleiro (6). Ilustração: manual Galápagos <span class="pg">p.&nbsp;6</span></figcaption></figure>
+<details class="dobra resolvido"><summary>Ver um exemplo resolvido</summary><aside class="call resolvido"><p>Você tem acima do tabuleiro a carta do Musaranho, com 3 cubos: o habitat é uma construção com uma amarela de cada lado, em ângulo (veja a figura das orientações), e o cubo vai sobre a construção. A coluna da carta mostra 17, 10 e 5, de cima para baixo <span class="pg">p.&nbsp;7</span>.</p>
+<ol><li>Você pega 1 amarela, 1 marrom e 1 vermelha. Já tem uma amarela no tabuleiro.</li><li>Põe a marrom vizinha à sua amarela e a vermelha sobre a marrom: uma construção.</li><li>Põe a nova amarela vizinha à construção, de modo que as três peças repitam o desenho da carta, girado se for preciso. O habitat está pronto.</li><li>Tira o cubo de baixo da carta e o põe sobre a construção. Agora o espaço do 5 está à mostra: a carta vale 5 pontos.</li></ol></aside></details>
+
+
+<details class="dobra pratica"><summary>Pratique esta etapa: exercícios com respostas</summary><aside class="call complete"><p class="rot">Tarefa · complete</p><p><strong>Complete.</strong> Mesmo turno do exemplo. A carta do Musaranho tem 2 cubos (nos espaços 17 e 10), e o seu tabuleiro tem um único habitat do Musaranho, já com cubo.</p>
+<div class="quiz"><p class="q-p">Você pode pôr o segundo cubo do Musaranho no mesmo habitat?</p><div class="q-ops"><button type="button" class="q-op">Pode: o habitat continua lá</button><button type="button" class="q-op" data-ok>Não: a construção já tem cubo, e cada espaço recebe no máximo 1</button><button type="button" class="q-op">Pode, se a carta ainda tiver cubos</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> O espaço do cubo precisa estar desocupado (p. 6; p. 12). Para o segundo cubo, você precisa de outro habitat, que pode reaproveitar as amarelas.</p></div></div>
+<div class="quiz"><p class="q-p">Se a partida acabasse agora, quanto valeria a carta?</p><div class="q-ops"><button type="button" class="q-op" data-ok>5</button><button type="button" class="q-op">17</button><button type="button" class="q-op">0, porque não está completa</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Vale o espaço mais alto sem cubo, o 5; carta incompleta também pontua <span class="pg">p.&nbsp;9</span>.</p></div></div></aside>
+<aside class="call suavez"><p class="rot">Tarefa · sua vez</p><p><strong>Sua vez.</strong> Duas situações.</p>
+<div class="quiz"><p class="q-p">Você tem 4 cartas acima do tabuleiro, e uma delas acabou de ficar completa neste turno. Ainda não pegou carta neste turno. Pode pegar uma?</p><div class="q-ops"><button type="button" class="q-op">Não: o limite é de 4 cartas na partida</button><button type="button" class="q-op" data-ok>Pode: a carta completa vai para o lado e sai do limite</button><button type="button" class="q-op">Pode, mas só no próximo turno</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> A carta completa não conta mais para o limite de 4, e a ação de pegar carta pode ser feita a qualquer momento do turno, uma vez <span class="pg">p.&nbsp;5 e 6</span>.</p></div></div>
+<div class="quiz"><p class="q-p">O habitat de uma carta pede uma montanha de altura 2 ao lado de uma azul. Você tem uma montanha de altura 3 ao lado de uma azul. Pode pôr o cubo?</p><div class="q-ops"><button type="button" class="q-op">Pode: a montanha é ainda maior que a pedida</button><button type="button" class="q-op">Pode, se girar o desenho</button><button type="button" class="q-op" data-ok>Não: a altura precisa ser exatamente a do desenho</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Árvores e montanhas do habitat precisam ter a altura exata <span class="pg">p.&nbsp;6</span>.</p></div></div></aside></details>
+</section>
+<section class="bloco sec" id="etapa-3-fim-da-partida-e-pontos"><h2><span class="num">4</span>Etapa 3: fim da partida e pontos</h2>
+<details class="dobra entender"><summary>Por que funciona assim</summary><aside class="call entender"><p>A partida não tem número fixo de rodadas. Ela acaba quando a bolsa se esgota ou quando um tabuleiro pessoal está quase cheio, e a rodada é completada para todos jogarem o mesmo número de turnos <span class="pg">p.&nbsp;7</span>.</p>
+<p>Na contagem, cada tipo de paisagem tem uma restrição que muda a estratégia: montanha precisa de vizinha, campo grande vale o mesmo que campo pequeno, construção precisa de vizinhos variados, e só o melhor rio pontua <span class="pg">p.&nbsp;8</span>.</p></aside></details>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>O fim da partida</strong> (p. 7; p. 12)</p>
+<ol><li>A partida termina quando acontece uma destas: a bolsa está vazia quando é preciso reabastecer o tabuleiro central; ou, no fim do turno de um jogador, o tabuleiro pessoal dele tem 2 ou menos espaços vazios (sem peça).</li><li>Completem a rodada: jogam os que ainda não jogaram nela. O último a jogar é quem está à direita do primeiro jogador, o que a seta aponta.</li><li>Cada um conta os pontos das paisagens e dos animais. O bloco de pontuação tem uma coluna para as paisagens e outra para os animais.</li><li>Vence quem tiver mais pontos.</li><li>Empate: vence quem posicionou mais cubos de animais. Persistindo, os empatados dividem a vitória.</li></ol></aside>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Contar as paisagens</strong> <span class="pg">p.&nbsp;8</span></p>
+<ol><li><strong>Árvores:</strong> cada árvore vale pela altura: verde sozinha 1, sobre 1 marrom 3, sobre 2 marrons 7.</li><li><strong>Montanhas:</strong> cada montanha vale pela altura: 1 cinza 1, 2 cinzas 3, 3 cinzas 7. Montanha que não está vizinha de nenhuma outra montanha vale 0.</li><li><strong>Campos:</strong> cada grupo de 2 ou mais amarelas vizinhas vale 5, qualquer que seja o tamanho. Amarela sozinha vale 0.</li><li><strong>Construções:</strong> cada construção vale 5 se os espaços vizinhos dela mostrarem pelo menos 3 cores diferentes, contando só a peça de cima de cada vizinho (a vermelha também conta como cor). Com menos de 3 cores, vale 0.</li><li><strong>Água:</strong> lado A, conte o seu maior rio; lado B, conte as ilhas (abaixo).</li></ol></aside>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>A água no lado A, o rio</strong> <span class="pg">p.&nbsp;8</span></p>
+<ol><li>Um rio é uma série de azuis em sequência, uma vizinha da outra.</li><li>Conte as peças de uma ponta à outra pelo caminho mais curto, incluindo as duas pontas. Se o rio se divide em braços, siga o caminho mais curto entre as duas pontas que você escolher; azuis fora desse caminho não contam (p. 8; FAQ da Libellud).</li><li>Só o seu melhor rio pontua.</li><li>Pontos: 1 peça 0; 2 peças 2; 3 peças 5; 4 peças 8; 5 peças 11; 6 peças 15; e mais 4 por peça depois da sexta.</li></ol></aside>
+<figure class="fig"><img src="figuras/agua.webp" alt="À esquerda, o lado A: o rio de 6 peças conta 15; a azul marcada com X fica fora do caminho mais curto e não conta. À direita, o lado B: as azuis dividem o tabuleiro em 4 ilhas, que valem 20 pontos. Ilustração: manual Galápagos (p. 8)" loading="lazy" decoding="async"><figcaption>À esquerda, o lado A: o rio de 6 peças conta 15; a azul marcada com X fica fora do caminho mais curto e não conta. À direita, o lado B: as azuis dividem o tabuleiro em 4 ilhas, que valem 20 pontos. Ilustração: manual Galápagos <span class="pg">p.&nbsp;8</span></figcaption></figure>
+<details class="dobra mais"><summary>Regra adicional: Rio em anel</summary><aside class="call mais"><p>Se o rio fecha um círculo, escolha uma peça de partida e conte até a peça diretamente oposta a ela, pelo caminho mais curto (FAQ da Libellud).</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: A água no lado B, as ilhas</summary><aside class="call mais"><p>Cada espaço ou grupo de espaços separado dos outros por peças azuis é uma ilha, e cada ilha vale 5. Você sempre tem pelo menos 1 ilha, mesmo sem nenhuma separação <span class="pg">p.&nbsp;8</span>. No exemplo do manual, as ilhas incluem espaços vazios.</p></aside></details>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Contar os animais</strong> <span class="pg">p.&nbsp;9</span></p>
+<ol><li>Para cada carta de animal, completa ou não, marque o número do espaço mais alto que está sem cubo.</li><li>Carta que ainda tem todos os cubos vale 0. Não há outra penalidade.</li></ol></aside>
+<aside class="call atencao"><p class="rot">Atenção</p><p>Uma construção na borda tem menos vizinhos, e espaço vazio não mostra cor nenhuma <span class="pg">p.&nbsp;8</span>. E campo grande não rende mais: 4 amarelas juntas valem 5, mas dois grupos de 2 valem 10 <span class="pg">p.&nbsp;8</span>.</p></aside>
+<figure class="fig"><img src="figuras/pontuacao.webp" alt="O tabuleiro de Giulia no fim da partida, com o valor de cada paisagem marcado; embaixo, as cartas de animais com o espaço que conta circulado; ao lado, a folha com os pontos de cada tipo e o total, 116. Ilustração: manual Galápagos (p. 9)" loading="lazy" decoding="async"><figcaption>O tabuleiro de Giulia no fim da partida, com o valor de cada paisagem marcado; embaixo, as cartas de animais com o espaço que conta circulado; ao lado, a folha com os pontos de cada tipo e o total, 116. Ilustração: manual Galápagos <span class="pg">p.&nbsp;9</span></figcaption></figure>
+<details class="dobra resolvido"><summary>Ver um exemplo resolvido</summary><aside class="call resolvido"><p> <span class="pg">p.&nbsp;9</span>. Giulia, lado A:</p>
+<ol><li>Árvores: 1 + 3 = 4.</li><li>Montanhas: 7 + 1 + 1 + 1 + 0 = 10 (a quinta, isolada, vale 0).</li><li>Campos: dois grupos, 5 + 5 = 10; a amarela sozinha vale 0.</li><li>Construções: duas com 3 ou mais cores em volta e uma com 2: 5 + 5 + 0 = 10.</li><li>Rio: 7 peças, 15 + 4 = 19.</li><li>Paisagens: 4 + 10 + 10 + 10 + 19 = 53. Animais: 5 + 10 + 4 + 12 + 16 + 16 = 63. Total: 116.</li></ol></aside></details>
+
+
+<details class="dobra pratica"><summary>Pratique esta etapa: exercícios com respostas</summary><aside class="call complete"><p class="rot">Tarefa · complete</p><p><strong>Complete.</strong> Fim de partida, lado A. Você tem uma árvore de tamanho 3 e uma de tamanho 2; duas montanhas de altura 2 vizinhas uma da outra e uma de altura 1 isolada; dois campos; uma construção com 3 cores em volta e outra com 2; e um rio de 5 peças. Árvores: 7 + 3 = 10. Montanhas: 3 + 3 + 0 = 6. Campos: 10.</p>
+<div class="quiz"><p class="q-p">Quanto valem as construções e o rio?</p><div class="q-ops"><button type="button" class="q-op">10 e 11</button><button type="button" class="q-op" data-ok>5 e 11</button><button type="button" class="q-op">5 e 15</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Só a construção com 3 cores vale 5; o rio de 5 peças vale 11 <span class="pg">p.&nbsp;8</span>. Paisagens: 10 + 6 + 10 + 5 + 11 = 42.</p></div></div>
+<div class="quiz"><p class="q-p">Nos animais, você tem o Musaranho com 2 cubos postos (o 17 ainda coberto) e uma carta de 8 e 4 com 1 cubo posto (o 8 coberto). Qual é o total da partida?</p><div class="q-ops"><button type="button" class="q-op" data-ok>56</button><button type="button" class="q-op">42</button><button type="button" class="q-op">67</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Musaranho 10, a outra carta 4: animais 14. Total 42 + 14 = 56 <span class="pg">p.&nbsp;9</span>.</p></div></div></aside>
+<aside class="call suavez"><p class="rot">Tarefa · sua vez</p><p><strong>Sua vez.</strong> Duas situações.</p>
+<div class="quiz"><p class="q-p">Ana termina o turno com 2 espaços vazios. Ela é a terceira de 4 na rodada. O que acontece?</p><div class="q-ops"><button type="button" class="q-op">A partida acaba na hora, e o quarto jogador não joga</button><button type="button" class="q-op" data-ok>O quarto jogador joga o seu turno, e então a partida acaba</button><button type="button" class="q-op">Todos jogam mais uma rodada inteira</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> A rodada é completada para todos terem o mesmo número de turnos <span class="pg">p.&nbsp;7</span>.</p></div></div>
+<div class="quiz"><p class="q-p">Bruno e Carla empatam com 98 pontos. Bruno posicionou 11 cubos de animais; Carla, 13. Quem vence?</p><div class="q-ops"><button type="button" class="q-op">Bruno, que tem mais pontos de paisagem</button><button type="button" class="q-op">Os dois dividem a vitória</button><button type="button" class="q-op" data-ok>Carla, que posicionou mais cubos</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> No empate, vence quem posicionou mais cubos de animais; só se isso também empatar a vitória é dividida <span class="pg">p.&nbsp;7</span>.</p></div></div></aside></details>
+</section>
+<section class="bloco sec opc" id="situacoes-especiais"><h2><span class="num">5</span>Situações especiais<span class="tag-opc">Opcional</span></h2>
+<figure class="fig foto-sec caixa"><img src="../../harmonies/fotos/capa-1.webp" alt="Harmonies: a caixa" width="1414" height="1500" loading="lazy" decoding="async"><figcaption>Imagem: Libellud</figcaption></figure>
+<details class="dobra sec-opc"><summary>Abrir esta seção</summary><details class="dobra mais"><summary>Regra adicional: Espíritos da natureza (variante)</summary><aside class="call mais"><p>Depois de algumas partidas, embaralhe as cartas de espíritos da natureza e dê 2 a cada jogador, viradas para baixo. No seu primeiro turno, olhe as 2, escolha 1, ponha acima do tabuleiro virada para cima, devolva a outra à caixa e ponha um cubo de espírito da natureza na escolhida. Esse cubo segue as regras de posicionamento dos cubos de animais. A carta conta no limite de 4 até ser completada. No fim, ela só pontua se o cubo foi posto, sem penalidade se não foi, e os pontos seguem a regra impressa na carta, calculados com as paisagens do fim da partida. Somam-se na coluna dos animais <span class="pg">p.&nbsp;10</span>.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Cubos de animais acabaram</summary><aside class="call mais"><p>Use substitutos: segundo o FAQ da Libellud, a quantidade de cubos é na prática ilimitada. O mesmo FAQ lembra que cada jogador só pode ter 4 cartas de animais acima do tabuleiro ao mesmo tempo.</p></aside></details>
+<details class="dobra edicao"><summary>Sobre a edição: Errata oficial (v1.0, 04/24)</summary><aside class="call edicao"><p>Na carta de espírito da natureza da Cegonha, onde está impresso "4", vale "6".</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Modo solo, o turno</summary><aside class="call mais"><p>No fim de cada turno, devolva para a caixa as 6 peças que sobraram no tabuleiro central (elas saem do jogo e não voltam para a bolsa) e encha os 3 espaços com 3 peças cada. Se você não pegou carta de animal no turno, pode descartar 1 carta da fileira e repor com a do topo da pilha. O resto das regras não muda. O resultado é medido em sóis, pela tabela da p. 11, que considera a pontuação, o lado do tabuleiro pessoal e o espírito da natureza escolhido <span class="pg">p.&nbsp;11</span>.</p></aside></details>
+<details class="dobra edicao"><summary>Sobre a edição: O que o manual não diz</summary><aside class="call edicao"><p>Ele não diz o que fazer se a bolsa tiver menos de 3 peças na hora de reabastecer, nem se a pilha de cartas de animais acabar. A regra de fim só fala em bolsa "vazia" quando é preciso reabastecer <span class="pg">p.&nbsp;7</span>. Combine com a mesa antes de começar, se acontecer.</p></aside></details>
+<details class="dobra dica"><summary>Dica</summary><aside class="call dica"><p>Montanhas e árvores de 3 peças valem 7, o máximo de uma pilha. Mas o habitat de um animal pede a altura exata <span class="pg">p.&nbsp;6</span>: antes de subir uma pilha, veja se alguma das suas cartas precisa dela na altura em que está.</p></aside></details></details>
+</section>
+<section class="bloco sec opc" id="avaliacao-final"><h2><span class="num">6</span>Avaliação final<span class="tag-opc">Opcional</span></h2>
+<figure class="fig foto-sec caixa"><img src="../../harmonies/fotos/capa-1.webp" alt="Harmonies: a caixa" width="1414" height="1500" loading="lazy" decoding="async"><figcaption>Imagem: Libellud</figcaption></figure>
+<details class="dobra sec-opc"><summary>Abrir esta seção</summary><p>Responda sem consultar. Cada resposta diz o que reler.</p>
+<div class="quiz"><p class="q-p">1. Partida de 2 jogadores. Quantos espaços do tabuleiro central recebem peças e quantas cartas de animais ficam abertas?</p><div class="q-ops"><button type="button" class="q-op">3 espaços e 3 cartas</button><button type="button" class="q-op">5 espaços e 4 cartas</button><button type="button" class="q-op" data-ok>5 espaços e 5 cartas</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> <strong>5 e 5</strong>: o lado de 2-4 jogadores tem 5 espaços de 3 peças, e há 5 cartas abertas; 3 e 3 é o solo <span class="pg">p.&nbsp;2, 3 e 11</span>. Releia a montagem.</p></div></div>
+<div class="quiz"><p class="q-p">2. Onde uma peça verde pode ir?</p><div class="q-ops"><button type="button" class="q-op">Sobre uma cinza, para formar uma árvore na montanha</button><button type="button" class="q-op">Sobre outra verde, para fazer uma árvore maior</button><button type="button" class="q-op" data-ok>Num espaço vazio ou sobre 1 ou 2 marrons</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> <strong>Num espaço vazio ou sobre 1 ou 2 marrons</strong> <span class="pg">p.&nbsp;4</span>. Releia a etapa 1.</p></div></div>
+<div class="quiz"><p class="q-p">3. Você ainda não pegou carta neste turno e tem 3 cartas acima do tabuleiro. Pode pegar uma entre a primeira e a segunda peça?</p><div class="q-ops"><button type="button" class="q-op" data-ok>Pode: a ação opcional pode ser feita entre uma peça e outra</button><button type="button" class="q-op">Não: cartas só se pegam depois de posicionar as 3 peças</button><button type="button" class="q-op">Não: com 3 cartas, só depois de completar uma</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> <strong>Pode.</strong> As ações opcionais podem ser feitas entre uma peça e outra, e o limite é 4 <span class="pg">p.&nbsp;4, 5 e 12</span>. Releia a etapa 2.</p></div></div>
+<div class="quiz"><p class="q-p">4. Uma construção na borda tem 4 vizinhos: azul, azul, amarela e um espaço vazio (peças de cima). Quanto vale?</p><div class="q-ops"><button type="button" class="q-op">5</button><button type="button" class="q-op" data-ok>0</button><button type="button" class="q-op">2</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> <strong>0</strong>: há só 2 cores (azul e amarela); espaço vazio não conta. Precisa de 3 cores <span class="pg">p.&nbsp;8</span>. Releia a etapa 3.</p></div></div>
+<div class="quiz"><p class="q-p">5. A carta do Musaranho tem 3 espaços (17, 10 e 5, de cima para baixo) e você pôs 2 cubos. Quanto ela vale no fim?</p><div class="q-ops"><button type="button" class="q-op">17</button><button type="button" class="q-op">15</button><button type="button" class="q-op" data-ok>10</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> <strong>10</strong>: os cubos saem de baixo, e vale o espaço mais alto sem cubo, que é o 10; os números não se somam <span class="pg">p.&nbsp;6 e 9</span>. Releia as etapas 2 e 3.</p></div></div>
+<aside class="call atencao"><p class="rot">Atenção</p><p><strong>Critério para começar a jogar.</strong> Acertou 4 ou 5? Monte a mesa e jogue, com a folha de consulta ao lado. Errou a 1, releia a montagem; a 2, a etapa 1; a 3, a etapa 2; a 4 ou a 5, a etapa 3. Depois refaça só as perguntas que errou.</p></aside></details>
+</section>
+<section class="bloco sec ref" id="para-consultar-durante-a-partida"><h2><span class="num">7</span>Para consultar durante a partida</h2>
+<figure class="fig foto-sec caixa"><img src="../../harmonies/fotos/capa-1.webp" alt="Harmonies: a caixa" width="1414" height="1500" loading="lazy" decoding="async"><figcaption>Imagem: Libellud</figcaption></figure>
+<p><strong>Preparação:</strong> tabuleiro central lado 2-4 (solo: lado Solo), 3 peças sorteadas em cada espaço; o resto na bolsa. 5 cartas de animais abertas (solo: 3), pilha de compra, cubos na reserva. Tabuleiros pessoais todos do mesmo lado (A nas primeiras partidas). A seta aponta o primeiro jogador; sentido horário.</p>
+<p><strong>No seu turno, em qualquer ordem:</strong></p>
+<ol><li>Obrigatório, uma vez: pegar as 3 peças de um espaço do tabuleiro central e pôr as 3 no seu tabuleiro.</li><li>Opcional, uma vez: pegar 1 carta de animal, cobrir os espaços dela com cubos (máximo 4 cartas acima do tabuleiro).</li><li>Opcional, quantas vezes puder: com o habitat no tabuleiro (girado vale, alturas exatas), tirar o cubo de baixo da carta e pôr na peça indicada. Carta sem cubos: completa, sai do limite.</li></ol>
+<p><strong>Empilhar:</strong> cinza sobre cinza (até 3); marrom sobre 1 marrom (no máximo 2); verde sobre 1 ou 2 marrons; vermelha sobre uma única cinza, marrom ou vermelha. Azul e amarela só no chão. Nunca embaixo de peça, nunca onde há cubo.</p>
+<p><strong>Fim do turno:</strong> 3 peças da bolsa no espaço vazio do tabuleiro central; fileira de cartas de volta a 5.</p>
+<p><strong>Fim da partida:</strong> bolsa vazia ao reabastecer, ou alguém com 2 ou menos espaços vazios (sem peça) no fim do turno. Completar a rodada. Empate: mais cubos posicionados; depois, vitória dividida.</p>
+<p><strong>Pontos:</strong> árvore 1, 3, 7. Montanha 1, 3, 7 (isolada 0). Campo 5 por grupo de 2 ou mais. Construção 5 com 3 ou mais cores em volta (peça de cima). Rio (lado A): 0, 2, 5, 8, 11, 15 para 1 a 6 peças, mais 4 por peça; só o maior. Ilhas (lado B): 5 cada. Animais: o espaço mais alto sem cubo.</p>
+</section>
+<section class="bloco sec" id="fontes"><h2><span class="num">8</span>Fontes</h2>
+<figure class="fig foto-sec caixa"><img src="../../harmonies/fotos/capa-1.webp" alt="Harmonies: a caixa" width="1414" height="1500" loading="lazy" decoding="async"><figcaption>Imagem: Libellud</figcaption></figure>
+<ul><li>Galápagos. <em>Harmonies: regras do jogo</em> (edição brasileira, arquivo HRM001_regras_v2.0.pdf, 12 páginas em 7 páginas de PDF, criado em 04/06/2024; tradução de Mateus Ornellas, revisão de Luis Perdomo e Camila Loricchio). Biblioteca de Downloads da Asmodee Brasil, <a href="https://www.asmodee.com.br/download-library">https://www.asmodee.com.br/download-library</a>, item "HRM001 - Harmonies - SKU: HRM001", etiqueta Regras. Consultado em 05/11/2026.</li><li>Galápagos. <em>Errata oficial Harmonies</em> v1.0 (04/24), arquivo HRM001_ERRATA_v1.0_04-24.pdf. Mesma biblioteca e item, etiqueta Errata. Consultado em 05/11/2026.</li><li>Libellud. <em>Harmonies: rules</em> (manual original em inglês, arquivo HARMONIES_Rules_EN_compressed-1.pdf), usado só para conferir dúvidas de tradução, e página do produto (jogadores, idade e duração), <a href="https://www.libellud.com/game/harmonies/">https://www.libellud.com/game/harmonies/</a>. Consultados em 05/11/2026.</li><li>Libellud. FAQ oficial da página do produto (5 perguntas, em inglês: símbolos do tabuleiro central, rio com braços, rio em anel, cubos de animais, cartas de espíritos da natureza), <a href="https://www.libellud.com/game/harmonies/">https://www.libellud.com/game/harmonies/</a>. Consultado em 05/11/2026.</li></ul>
+</section>
+<section class="bloco"><p class="sec-intro">Quer saber se vale a pena antes de jogar? <a href="../../harmonies/">Leia a nossa resenha de Harmonies</a>.</p></section>
+<p class="nota-pe">Regras conferidas no livro de regras da edição brasileira da Galápagos (arquivo HRM001 v2.0, de 2024, tradução de Mateus Ornellas), baixado da Biblioteca de Downloads da Asmodee Brasil, e na errata oficial v1.0 (04/24). As páginas citadas são as do livro: a capa é a p. 1, e a "Ajuda ao jogador", no verso, é a p. 12.</p>
+</div></main>
+
+<!--rodape--><footer><div class="in">
+ <span>Elite Boardgamers</span><a href="../../noticias/">Notícias</a><a href="../../resenhas/">Resenhas</a><a href="../../como-jogar/">Como jogar</a><a href="../../lancamentos/">Lançamentos</a><a href="../../black/">Black de Verdade</a><a href="../../jogos-de-tabuleiro/">Guia de jogos de tabuleiro</a><a href="../../premios/">Prêmios</a><a href="../../politica-editorial/">Política editorial</a>
+ <a href="https://www.instagram.com/eliteboardgamers/" target="_blank" rel="noopener">Instagram @eliteboardgamers</a><a href="https://chat.whatsapp.com/IgQQkJdSkzHBaEq3UwFeAo" target="_blank" rel="noopener">Grupo do WhatsApp</a>
+</div></footer>
+<div class="barra-lt fora" role="region" aria-label="Ações da página"><div class="cpw" data-texto=""><a class="cp" href="https://wa.me/" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="M8.2 10.8l7.6-4.4M8.2 13.2l7.6 4.4"/></svg><span>Compartilhar</span></a><div class="cp-menu" hidden><a class="cp-op zap-op" href="https://wa.me/" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8.4 19l-4.4 1Z"/><path d="M9.2 8.6c.3-.5.8-.5 1-.1l.7 1.5c.1.3 0 .6-.2.8l-.4.4c.5 1.1 1.4 2 2.5 2.5l.4-.4c.2-.2.5-.3.8-.2l1.5.7c.4.2.4.7-.1 1-.7.5-1.6.6-2.4.3a7 7 0 0 1-4.2-4.2c-.3-.8-.2-1.7.4-2.3Z"/></svg>WhatsApp</a><button type="button" class="cp-op"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h8"/></svg>Copiar link</button></div><p class="cp-st" role="status"></p></div><script>(()=>{const pega=c=>({u:c.dataset.url||location.href,t:c.dataset.texto||document.title});
+document.querySelectorAll('.cpw:not(.ok)').forEach(c=>{c.classList.add('ok');const b=c.querySelector('.cp');
+ const n=document.createElement('button');n.type='button';n.className=b.className;n.innerHTML=b.innerHTML;n.setAttribute('aria-expanded','false');b.replaceWith(n)});
+if(window.__cp)return;window.__cp=1;
+const celular=()=>navigator.share&&matchMedia('(pointer:coarse)').matches;
+const fecha=()=>document.querySelectorAll('.cp-menu:not([hidden])').forEach(m=>{m.hidden=true;m.parentNode.querySelector('.cp').setAttribute('aria-expanded','false')});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')fecha()});
+document.addEventListener('click',async ev=>{const c=ev.target.closest('.cpw');if(!c){fecha();return}
+ const {u,t}=pega(c),m=c.querySelector('.cp-menu'),st=c.querySelector('.cp-st'),el=ev.target.closest('.cp,.cp-op');if(!el)return;
+ if(el.classList.contains('cp')){
+  if(celular()){try{await navigator.share({title:document.title,text:t,url:u})}catch(e){}return}
+  const abre=m.hidden;fecha();if(!abre)return;
+  m.querySelector('.zap-op').href='https://wa.me/?text='+encodeURIComponent(t+' '+u);
+  const r=c.getBoundingClientRect();m.classList.toggle('sobe',!!c.closest('.barra-lt')||r.bottom>innerHeight-140);m.classList.toggle('dir',r.left>innerWidth-220);
+  m.hidden=false;el.setAttribute('aria-expanded','true');m.querySelector('.cp-op').focus();return}
+ if(el.classList.contains('zap-op')){fecha();return}
+ fecha();let ok=false;try{await navigator.clipboard.writeText(u);ok=true}catch(e){
+  const i=document.createElement('input');i.value=u;document.body.append(i);i.select();try{ok=document.execCommand('copy')}catch(e2){}i.remove()}
+ st.textContent=ok?'Link copiado!':'Não deu para copiar o link.';clearTimeout(st._t);st._t=setTimeout(()=>st.textContent='',2500);
+ c.querySelector('.cp').focus()})})()</script><a class="lt-grupo" href="https://chat.whatsapp.com/IgQQkJdSkzHBaEq3UwFeAo" target="_blank" rel="noopener" aria-label="Entrar no grupo do WhatsApp da Elite"><img src="/favicon-48.png" width="48" height="48" alt=""><span>Grupo</span></a></div><script>(()=>{const l=document.querySelector('.barra-lt');if(!l)return;const vis=new Set();
+const poe=()=>{const on=scrollY>500&&!vis.size;l.classList.toggle('fora',!on);l.inert=!on;document.body.classList.toggle('lt-on',on)};
+const io=new IntersectionObserver(es=>{es.forEach(e=>e.isIntersecting?vis.add(e.target):vis.delete(e.target));poe()});
+document.querySelectorAll('.convite,footer').forEach(x=>io.observe(x));addEventListener('scroll',poe,{passive:true});poe()})()</script>
+<script>document.addEventListener('click',e=>{const b=e.target.closest('.q-op');if(!b||b.disabled)return;const q=b.closest('.quiz');
+q.querySelectorAll('.q-op').forEach(o=>{o.disabled=true;if(o.hasAttribute('data-ok'))o.classList.add('ok')});const ok=b.hasAttribute('data-ok');
+if(!ok)b.classList.add('erro');const x=q.querySelector('.q-exp');x.hidden=false;x.classList.toggle('mal',!ok);x.querySelector('.q-res').textContent=ok?'Isso!':'Não é essa.';});
+(()=>{const g=document.querySelector('.guia-prog');if(!g)return;const t=g.querySelector('.gp-t'),b=g.querySelector('.gp-b');
+const secs=[...document.querySelectorAll('.sec[id]')],idx=document.querySelector('.indice');
+const poe=()=>{const y=scrollY+innerHeight*.3;let at=null;for(const s of secs){if(s.offsetTop<=y)at=s}
+ t.textContent=at&&scrollY>idx.offsetTop?at.querySelector('h2').textContent.replace(/^\d+/,'').trim():'Neste guia';
+ const h=document.documentElement.scrollHeight-innerHeight;b.style.transform='scaleX('+(h>0?Math.min(1,scrollY/h):0)+')'};
+addEventListener('scroll',poe,{passive:true});addEventListener('resize',poe);poe()})();
+document.addEventListener('click',e=>{const y=e.target.closest('.yt');if(!y)return;const f=document.createElement('iframe');
+f.src='https://www.youtube-nocookie.com/embed/'+y.dataset.id+'?start='+y.dataset.t+'&autoplay=1&rel=0';f.title=y.getAttribute('aria-label');
+f.allow='autoplay; encrypted-media; picture-in-picture';f.allowFullscreen=true;y.replaceWith(f)});</script><!--/rodape-->
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "b37421bd1ade44f1a59e46b96626bf03"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

@@ -100,3 +100,31 @@ Igual ao protocolo do PROMPT_PILOTO, seção 10: 5 a 8 adultos que nunca jogaram
 ## 6. Ligação com a resenha
 
 Não há resenha de King of Tokyo no site. Se vier a existir, o tutorial pode ser ligado pelo campo `"resenha"` do JSON.
+
+## Auditoria independente (05/11/2026)
+
+Duas auditorias independentes: conferência de regras contra o manual (aprovada, nenhum erro de regra, com 6 melhorias) e partida simulada (joga com 10 ajustes). Tudo foi aplicado no `tutorial.md`; `"publicar"` continua `false`.
+
+**Conferência de regras**
+- M1. Baralho: "virado para baixo, como na ilustração (p. 3)". Feito.
+- M2. Passo Entre em Tóquio do "Comece": quem atacou entra no lugar de quem cedeu (na Cidade, se ela estiver vazia). Feito.
+- M3. Ficar ou ceder: "Fora desse momento, ninguém sai (salvo a saída obrigatória da Baía e a eliminação)". Feito.
+- M4. Legenda de setup-1-monstro: "ao lado do tabuleiro de Tóquio". Feito.
+- M5. `[!edicao]` ficou só para a regra opcional de 2 jogadores (manual em inglês). As lacunas (empate do primeiro jogador, dois Monstros a 20, Cidade e Baía, duas trincas) passaram para `[!atencao]`.
+- M6. Fontes: a URL citada agora é a efetivamente usada (API da biblioteca, id=1890).
+
+**Partida simulada**
+1. Exemplo de 5 jogadores: o manual não dá a Vida de cada um no começo do exemplo (p. 6); o texto diz isso e que, para o Gigazaur terminar em 0 depois de perder 4, 1 e 3, ele tinha 8. Conta: 4 + 1 + 3 = 8.
+2. Garras: "todos do outro lado: se você está em Tóquio (Cidade ou Baía), os de fora; se está fora, os de Tóquio", no "Comece" e no passo a passo da etapa 1.
+3. Turno com seis passos no "Comece" e na folha: "Começo: se está em Tóquio (Cidade ou Baía), +2" antes dos cinco passos do manual (p. 4 e 5). Ficou numerado como passo 1, porque o conversor trata listas numeradas a partir de 1.
+4. Duas trincas: o manual não diz (p. 4). Novo `[!atencao]` na etapa 1, sem inventar regra.
+5. Dados de lado: pela p. 4 (segunda rolagem rola só os que não agradaram; terceira pode incluir os que estavam de lado) e pelo glossário da p. 6 (antes de qualquer rolagem, pode deixar dados de lado e rolar de novo os que estavam de lado). O "Comece" e a folha seguem o glossário; o passo a passo da etapa 1 cita os dois.
+6. Energia inicial: o manual manda formar o banco com todos os cubos (p. 3); o texto diz que, por isso, cada um começa com 0. Não há frase literal "0 de Energia" no manual; é consequência direta de "todos os cubos" no banco.
+7. Montagem: espaço para o descarte (p. 2 e 6) no passo 3 e na conferência; Constante e Descarte explicados na primeira menção (tabela de componentes, p. 2).
+8. Baía: "se você está fora, a Cidade está ocupada e a Baía vazia, entre na Baía", no passo a passo, no `[!mais]`, no "Comece" e na folha.
+9. Ordem de ceder entre Cidade e Baía e passagem da Baía para a Cidade: o manual não diz a ordem e só manda passar da Baía para a Cidade na volta a 4 Monstros ou menos (p. 4 e 5). Dito num `[!atencao]` das Situações especiais.
+10. Folha: "o Monstro da Baía passa para a Cidade se ela estiver vazia" (com 4 ou menos); critério da avaliação alinhado com as respostas (a 1 manda para a montagem e a etapa 2).
+
+**Fotos.** A foto oficial `fotos/mesa-1.webp` (IELLO) entrou na seção de montagem, com a legenda "edição francesa (cartas em francês)" e o aviso de que não é o início exato: o CyberKitty já está na Cidade de Tóquio. Crédito de `fotos/fontes.json`.
+
+**Portões depois das correções.** `checar_comece.py`: dentro da diretriz (o "Comece" foi enxugado para caber em 800 palavras depois dos acréscimos). `vicios.py`: nenhum aviso. Travessão: zero. Conversão de prova com `como_jogar_md.pagina()` (só em memória): sem erro. Extensão: 4.931 palavras (`\w+`, sem linhas de figura), acima do alvo de 4.500 por causa dos acréscimos pedidos; `leitura_min` foi para 18 no JSON.
