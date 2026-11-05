@@ -1,32 +1,5 @@
 # Elite Boardgamers: todos os robôs de busca e de IA são bem-vindos.
-# Os assistentes de IA também têm um resumo do site em /llms.txt e o texto integral em /llms-full.txt.
-
 User-agent: *
-Allow: /
-
-# Assistentes e buscas de IA, liberados nome por nome (ChatGPT, Claude, Perplexity, Gemini, Copilot, Apple, Meta e outros)
-User-agent: GPTBot
-User-agent: OAI-SearchBot
-User-agent: ChatGPT-User
-User-agent: ClaudeBot
-User-agent: Claude-SearchBot
-User-agent: Claude-User
-User-agent: anthropic-ai
-User-agent: PerplexityBot
-User-agent: Perplexity-User
-User-agent: Google-Extended
-User-agent: Googlebot
-User-agent: Bingbot
-User-agent: Applebot
-User-agent: Applebot-Extended
-User-agent: meta-externalagent
-User-agent: Meta-ExternalFetcher
-User-agent: Amazonbot
-User-agent: DuckAssistBot
-User-agent: MistralAI-User
-User-agent: cohere-ai
-User-agent: YouBot
-User-agent: CCBot
 Allow: /
 
 Sitemap: https://eliteboardgamers.com.br/sitemap.xml

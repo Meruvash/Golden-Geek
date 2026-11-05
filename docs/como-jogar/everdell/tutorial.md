@@ -4,7 +4,7 @@
 
 ## setup. Montar a mesa passo a passo
 
-A montagem segue a página de preparação do manual (p. 6), na mesma ordem, com a ilustração numerada da p. 7. É igual para 2, 3 ou 4 jogadores, salvo no número de cartas de Floresta (passo 5) e nas cartas que cada um recebe (passo 11).
+A montagem segue a página de preparação do manual (p. 6), na mesma ordem, com a ilustração numerada da p. 7. É igual para 2, 3 ou 4 jogadores, salvo no número de cartas de Floresta (passo 5) e nas cartas que cada um recebe (passo 12).
 
 **O que vem na caixa** (p. 4 e 5):
 
@@ -77,7 +77,7 @@ A montagem segue a página de preparação do manual (p. 6), na mesma ordem, com
 **7. Quem começa** (p. 6 e 8)
 
 14. **Começa a pessoa mais humilde da mesa.** A vez segue no sentido horário (p. 6 e 8).
-15. **Ninguém recebe recursos na montagem.** Os passos do manual não dão gravetos, cristais, seixos nem frutos a ninguém: tudo vem dos locais e das cartas durante a partida (p. 6).
+15. **Ninguém recebe recursos na montagem:** tudo vem dos locais e das cartas durante a partida (p. 6).
 
 !fig[A mesa montada para 4 jogadores, com os números dos passos do manual (1 a 7). Ilustração: manual Galápagos (p. 7)](figuras/preparacao.webp)
 
@@ -88,8 +88,6 @@ A montagem segue a página de preparação do manual (p. 6), na mesma ordem, com
 | 2 | 3 | 8 | 5 e 6 | não se usa |
 | 3 | 4 | 7 | 5, 6 e 7 | não se usa |
 | 4 | 4 | 7 | 5, 6, 7 e 8 | só o espaço com o símbolo de 4 jogadores |
-
-Cada jogador tem sempre 6 trabalhadores: 2 à frente e 4 na árvore (p. 4 e 6).
 
 **O que volta para a caixa:** as cartas de Floresta que sobraram, 12 Eventos especiais, os trabalhadores sem dono e o dado de 8 lados, só do modo solo (p. 4 e 6). A carta de vitória não aparece em nenhuma regra.
 
@@ -161,7 +159,7 @@ As cartas de Floresta também são locais, em geral mais fortes, com o que dão 
 > - (x) 2 gravetos e 7 cartas na mão
 > - ( ) 2 gravetos e 6 cartas, porque a carta vem da Campina
 > - ( ) Nada: Ana já usou um local de gravetos
-> = Ele pega 2 gravetos e compra 1 carta do baralho, ficando com 7. O local é compartilhado, e comprar é sempre do baralho, salvo instrução da própria regra (p. 8 e 11).
+> = Pega 2 gravetos e compra 1 carta do baralho: 7 na mão. O local é compartilhado (p. 8 e 11).
 
 > [!suavez] **Agora a sua mão.** Olhe os locais livres antes de escolher.
 >
@@ -177,7 +175,7 @@ Pagar e jogar cartas, a vila de 15 espaços e a Criatura gratuita: etapa 2. Prep
 
 ### Como a partida acaba
 
-Cada jogador passa por primavera, verão e outono no seu próprio ritmo. Depois de se preparar para o outono, você joga até não poder ou não querer fazer mais nada, e passa a vez. Quando todos passaram, soma-se tudo: vence quem tiver mais pontos (p. 12 e 14).
+Cada jogador passa por primavera, verão e outono no seu ritmo. Depois de se preparar para o outono, você joga até não poder ou não querer mais e passa a vez. Quando todos passaram, vence quem tiver mais pontos (p. 12 e 14).
 
 **Prefere ver?** Uma explicação das regras seguida de partida, gravada ao vivo. Ele complementa este guia; em caso de diferença, vale o manual.
 
@@ -198,7 +196,7 @@ Duas ideias sustentam o resto:
 
 ## 1. Como este guia ensina
 
-Quatro etapas, cada uma uma parte real da partida: alocar trabalhadores, jogar cartas, passar pelas estações com os locais que dependem delas, e fechar a pontuação. Cada etapa traz **Para entender** (o porquê), **Passo a passo** (a regra exata), regras de caso especial a um toque e tarefas com ajuda que diminui: **exemplo resolvido**, **complete** e **sua vez**. Toque numa opção para ver a resposta e a explicação. No fim, uma avaliação diz o que reler, e uma folha de consulta vai para a mesa.
+Quatro etapas, na ordem da partida: alocar, jogar cartas, as estações e a pontuação. Cada etapa traz **Para entender** (o porquê), **Passo a passo** (a regra exata), regras de caso especial a um toque e tarefas com ajuda que diminui: **exemplo resolvido**, **complete** e **sua vez**. Toque numa opção para ver a resposta e a explicação. No fim, uma avaliação diz o que reler, e uma folha de consulta vai para a mesa.
 
 ## 2. Etapa 1: alocar um trabalhador
 
@@ -230,7 +228,7 @@ Quatro etapas, cada uma uma parte real da partida: alocar trabalhadores, jogar c
 
 > [!atencao] Exclusivo é exclusivo também para você. O seu próprio trabalhador num local de círculo fechado bloqueia o seu segundo trabalhador do mesmo jeito que bloqueia os dos outros (p. 8).
 
-> [!resolvido] **Exemplo resolvido.** Partida de 2 jogadores, na primavera. Você tem 7 cartas na mão e quer recursos para uma carta cara. Põe um trabalhador no Refúgio e descarta 5 cartas: recebe 2 recursos à sua escolha (5 cartas formam 2 pares completos; a quinta é descartada sem render nada). Fica com 2 cartas na mão. Escolhe 2 frutos.
+> [!resolvido] **Exemplo resolvido.** Você tem 7 cartas e precisa de frutos. Põe um trabalhador no Refúgio e descarta 5 cartas: 2 pares completos dão 2 recursos, e a quinta carta não rende nada. Escolhe 2 frutos e fica com 2 cartas na mão.
 
 > [!complete] **Complete.** Bruno já tem um trabalhador no Refúgio. Você também quer ir lá.
 >
@@ -297,7 +295,7 @@ Quatro etapas, cada uma uma parte real da partida: alocar trabalhadores, jogar c
 
 > [!edicao] **Errata da Galápagos (outubro de 2023).** A Ruínas age só quando é jogada, não na Produção: descarte uma Construção da sua vila, ponha a Ruínas no lugar, receba de volta o custo da descartada e compre 2 cartas (p. 21). A errata corrige também textos impressos de algumas cartas, sem mudar regra.
 
-> [!resolvido] **Exemplo resolvido** (a sequência do manual, p. 12). Turno 1: você põe um trabalhador no local de 3 gravetos e fica com 3 gravetos. Turno 2: põe o outro numa carta de Floresta que dá 1 graveto, 1 cristal e 1 fruto; agora tem 4 gravetos, 1 cristal e 1 fruto. Turno 3: joga uma Fazenda da mão, pagando 2 gravetos e 1 cristal, e a Fazenda, carta verde, dá 1 fruto na hora: sobram 2 gravetos e 2 frutos. Turno 4: joga o Sapo Balseiro da Campina pagando 2 frutos; a vaga da Campina é reposta, e o Sapo Balseiro dá 2 gravetos por Fazenda na vila. Você termina com 4 gravetos e duas cartas verdes na vila.
+> [!resolvido] **Exemplo resolvido** (a sequência do manual, p. 12). Turno 1: trabalhador no local de 3 gravetos. Turno 2: o outro numa carta de Floresta que dá 1 graveto, 1 cristal e 1 fruto; você tem 4 gravetos, 1 cristal e 1 fruto. Turno 3: joga uma Fazenda da mão, paga 2 gravetos e 1 cristal e recebe 1 fruto dela: 2 gravetos e 2 frutos. Turno 4: joga o Sapo Balseiro da Campina por 2 frutos, a vaga é reposta, e ele dá 2 gravetos por Fazenda na vila: 4 gravetos.
 
 > [!complete] **Complete.** Você tem o Tribunal na vila, sem ficha de Ocupado, e 3 frutos. A Juíza está na sua mão.
 >
@@ -475,31 +473,25 @@ Responda sem consultar. Cada resposta diz o que reler.
 - ( ) Sim, pagando 1 recurso
 = **Não.** Local exclusivo aceita 1 trabalhador, de qualquer cor (p. 8). Releia a etapa 1.
 
-?? 3. Você joga uma Criatura da Campina. Qual é a ordem?
-- ( ) Pôr na vila, pagar, repor a Campina
-- (x) Pagar, repor a Campina, pôr na vila, resolver o efeito
-- ( ) Repor a Campina no fim do seu turno
-= **Pagar, repor, pôr, resolver** (p. 11). Releia a etapa 2.
-
-?? 4. Você tem 1 trabalhador livre e não quer jogar carta. Pode se preparar para a estação?
+?? 3. Você tem 1 trabalhador livre e não quer jogar carta. Pode se preparar para a estação?
 - ( ) Sim
 - (x) Não: todos os trabalhadores precisam estar alocados
 - ( ) Sim, se for verão
 = **Não** (p. 3 e 12). Releia a etapa 3.
 
-?? 5. É verão para você e outono para Ana. Ela vai à Jornada. E você?
+?? 4. É verão para você e outono para Ana. Ela vai à Jornada. E você?
 - ( ) Também pode, porque a mesa já chegou ao outono
 - (x) Não pode: a sua estação ainda é o verão
 - ( ) Pode, mas só ao espaço de 2 pontos
 = **Não pode.** Cada jogador está na sua estação, e a Jornada é só no outono (p. 9 e 12). Releia a etapa 3.
 
-?? 6. Empate em pontos e em Eventos. Quem vence?
+?? 5. Empate em pontos e em Eventos. Quem vence?
 - ( ) Quem passou a vez primeiro
 - ( ) Quem tiver mais cartas na vila
 - (x) Quem tiver mais recursos sobrando
 = **Mais recursos sobrando** (p. 14). Releia a etapa 4.
 
-> [!atencao] **Critério para começar a jogar.** Acertou 5 ou 6? Monte a mesa e jogue, com a folha de consulta ao lado. Errou a 1, releia a montagem; a 2, a etapa 1; a 3, a etapa 2; a 4 ou a 5, a etapa 3; a 6, a etapa 4. Depois refaça só as perguntas que errou.
+> [!atencao] **Critério para começar a jogar.** Acertou 4 ou 5? Monte a mesa e jogue, com a folha de consulta ao lado. Errou a 1, releia a montagem; a 2, a etapa 1; a 3 ou a 4, a etapa 3; a 5, a etapa 4. Depois refaça só as perguntas que errou.
 
 ## 8. Para consultar durante a partida
 
@@ -519,4 +511,4 @@ Responda sem consultar. Cada resposta diz o que reler.
 - Galápagos. *Everdell: livro de regras* (edição brasileira, arquivo EVE001_regras_v2.0.pdf, 24 páginas, criado em 03/10/2023; tradução de Jana Pin; © 2018-2021 Tabletop Tycoon). Biblioteca de Downloads da Asmodee Brasil, https://www.asmodee.com.br/download-library, item "EVE001 - Everdell - SKU: EVE001", etiqueta Regras. Consultado em 05/11/2026.
 - Galápagos. *Errata oficial: Everdell* (arquivo EVE001_ERRATA_v2.0_10-23.pdf, 3 páginas, v2.0 de 10/2023). Mesma biblioteca, mesmo item, etiqueta Errata. Consultado em 05/11/2026.
 - Asmodee Brasil. Página do produto EVE001 (1 a 4 participantes, 14+, 60 a 120 min), https://www.asmodee.com.br/jogo-de-tabuleiro-everdell/produto/EVE001. Consultado em 05/11/2026.
-- Tabletop Tycoon. *Everdell Core Game Rulebook* (manual original em inglês, 24 páginas), consultado só para comparar a página de Eventos; https://tycoongames.com/products/everdell-standard-edition-3rd-edition. Consultado em 05/11/2026.
+- Tabletop Tycoon. *Everdell Core Game Rulebook* (original em inglês), consultado só para comparar a página de Eventos, https://tycoongames.com/products/everdell-standard-edition-3rd-edition. Consultado em 05/11/2026.
