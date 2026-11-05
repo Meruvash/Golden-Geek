@@ -70,3 +70,20 @@ Todas as contas do texto e das legendas foram refeitas em `scripts/contas.py` (d
 - **Vídeo:** o canal Duque Board Games não tem vídeo de Carcassonne (busca no canal, 05/11/2026); entrou o da Devir, editora brasileira. O conteúdo do vídeo não foi conferido contra o manual.
 - **Extensão:** 5.020 por `wc -w` (cerca de 4.300 palavras de texto). O "Comece a jogar" passou no `checar_comece.py`.
 - **Legibilidade** não medida.
+
+## Auditoria independente (05/11/2026)
+
+Duas auditorias independentes: a conferência com o manual (aprovado com correções; regras e contas certas) e uma partida simulada só com o tutorial (joga com ajustes). Correções feitas:
+
+- **E1.** Legenda de `estrada.webp` corrigida: estrada entre dois cruzamentos, 3 pontos ao ladrão vermelho, o cavaleiro azul fica no terreno (p. 3).
+- **E2.** Aviso da etapa 1: o ladrão vermelho está "em outra cartela da mesma estrada", não numa vizinha.
+- **M1.** Cartelas de rio na caixa: citada a p. 2 do suplemento e dito que é leitura do guia (o manual não diz o que fazer com elas no jogo base).
+- **M2.** "Cada jogador que pontuou avança a sua figura."
+- **M3.** Jardins: a p. 2 cita "casinhas, pequenas figuras", não jardins; o texto agora diz isso e põe o jardim só no suplemento.
+- **M4.** "alcançou ou passou da casa 0".
+- **M5.** O "nas primeiras partidas" vale só para os abades.
+- **M6.** `setup-seguidores.webp` e `setup-marcador.webp` recortados de novo, sem os fragmentos de legenda, borda e setas.
+- **Partida simulada:** novo passo 8 da montagem (decidir se há fazendeiros, p. 6), repetido na conferência e na folha de consulta; `[!mais]` do seguidor que pontua no mesmo turno (ordem dos passos, p. 3; contagem no fim do turno, p. 5); descrição da cartela inicial pela figura da p. 2; tabela do primeiro turno com "estrada, cidade, monastério ou campo" e "o seguidor deitado no campo (fazendeiro) fica para a etapa 3"; `[!atencao]` "Fechar a construção não dá pontos por si só"; `[!mais]` dizendo que o manual só lista quatro fins de estrada e não trata de outros desenhos nas pontas; zonas dentro da mesma cartela, sustentadas pelo exemplo da p. 3 (estrada à direita do cruzamento ocupada, cidade da mesma cartela livre) e pelo suplemento, p. 1 (campos separados por cidades e estradas). A frase de que cada canto de campo num cruzamento é uma zona própria não entrou: as figuras não mostram isso de forma explícita. Monastério no fim: "1 por cartela vizinha, contando as diagonais (até 8)".
+- **Menores:** "as outras 71" na montagem; páginas da pontuação uniformizadas (estrada p. 3, cidade p. 4, monastério p. 5); a ideia de maioria entrou na seção 0 (p. 5).
+- **Fotos:** as fotos oficiais de `como-jogar/carcassonne/fotos/` não foram postas na montagem (não há foto da mesa montada); o gerador as distribui pelas seções.
+- **Portões refeitos:** `checar_comece.py` aprovado; `vicios.py` com 0 aviso no tutorial e no JSON; zero travessão. Tutorial: 5.319 palavras (`wc -w`), acima do alvo por causa das regras acrescentadas. `publicar` continua `false`.

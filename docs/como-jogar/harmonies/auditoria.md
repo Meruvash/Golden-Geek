@@ -111,3 +111,29 @@ Mais a foto oficial `../../harmonies/fotos/componentes-1.webp` (Libellud, aprova
 - O modo solo foi mantido curto (procura "como jogar harmonies solo" no autocompletar); a tabela de sóis da p. 11 não é explicada em detalhe.
 - O valor mais alto da carta do Feneco (p. 5) fica parcialmente encoberto pela linha do manual e não é citado.
 - Teste de execução por subagente e teste com pessoas: não feitos (fora do escopo desta rotina).
+
+## Auditoria independente (05/11/2026)
+
+Duas auditorias independentes (conferência contra o manual e partida simulada só com o tutorial). Veredito da conferência: aprovado com correções, nenhuma regra errada. Correções aplicadas no mesmo dia:
+
+| Item | Apontado | Correção |
+|---|---|---|
+| E1 | Exemplo de Giulia omitia a montanha isolada e a amarela sozinha | "Montanhas: 7 + 1 + 1 + 1 + 0 = 10 (a quinta, isolada, vale 0)"; campos com "a amarela sozinha vale 0" (p. 9) |
+| E2 | A página da Libellud tem FAQ oficial (FAQPage, 5 perguntas) | FAQ lido no HTML salvo (`work/lib_game.html`); citado nas Fontes e no dossiê (S-R2, K11). Entraram: rio com braços (caminho mais curto entre as duas pontas), rio em anel (peça de partida e a diretamente oposta), cubos de animais esgotados (substitutos, quantidade ilimitada) |
+| Sem apoio | Legenda de orientacoes.webp | "3 construções e 3 amarelas formam três habitats do Musaranho" |
+| M1 | Legenda de setup-tabuleiro | "4 espaços já com 3 peças e o quinto prestes a receber as suas" |
+| M2 | Legenda de pontuacao | "a folha com os pontos de cada tipo e o total, 116" |
+| M3 | Reposição da fileira no solo | "5 (3 no solo, p. 11)" |
+| M4 | Componentes | linha "Livro de regras: 1" (p. 2) |
+| M6 | Legenda de componentes-1 | "A caixa e uma mesa de Harmonies montada" |
+| Partida 1 | "desocupado" ambíguo no fim da partida | "espaços vazios (sem peça)" no fim; "desocupada" só para cubos |
+| Partida 2 | Vermelha sozinha no chão | `[!mais]`: não é construção nem pontua; conta como cor vizinha (p. 8) [interpretada, S-K4] |
+| Partida 3 | Regra rápida de empilhamento | "marrom sobre 1 marrom (no máximo 2)"; "vermelha sobre uma única cinza, marrom ou vermelha" |
+| Partida 4 | Peça debaixo da vermelha | `[!mais]`: vira base de construção, deixa de ser montanha ou tronco (p. 6 nota; p. 8) [interpretada, S-K3] |
+| Partida 5 | Forma do habitat do Musaranho | A ilustração das orientações (p. 7) mostra as duas amarelas em ângulo, não em linha reta: o texto diz "uma amarela de cada lado, em ângulo" |
+| Partida 6 | Rio com bifurcação | Passo 2 do rio cita o FAQ |
+| Partida 7 | Pergunta 4 da avaliação | "Uma construção na borda tem 4 vizinhos: ..." |
+| Partida 8 | Feneco | "4, 9 e um terceiro valor, em cima" (o número de cima fica encoberto na ilustração) |
+| Partida 9 | Termos sem explicação | carta de auxílio ("o resumo da pontuação") e ilhas ("as áreas que as peças azuis separam") explicadas na primeira menção; passo 6 da montagem diz que o lado A pontua a água pelo rio e o B pelas ilhas |
+
+Portões depois das correções: `checar_comece.py` passa; vícios 0; travessão 0; exclamação 0. Extensão: 5.013 palavras sem opções, explicações e legendas (6.567 contando tudo). `publicar` continua `false`.

@@ -24,7 +24,7 @@ O jogo foi escolhido pelo editor. Registro do que sustenta a escolha:
 | **Página do produto**, Libellud | "1 - 4 players", "10+", "30 min", lançamento 04/2024 | https://www.libellud.com/game/harmonies/ | 05/11/2026 |
 | Página do produto na loja da Asmodee Brasil | A API da loja (`www.asmodee.com.br/ccstore/v1/products/HRM001`) respondeu "Access Denied" (403) ao robô; não foi contornado | | 05/11/2026 |
 | **Vídeo** "HARMONIES \| Regras completas (Com exemplos)", Duque Board Games | Título e canal pelo oEmbed oficial; achado pela busca do próprio canal (`@DuqueBoardgames/search?query=harmonies`, com `Accept-Language: pt-BR`); nada baixado. O canal tem também "HARMONIES \| Gameplay resumida !" (Tfk1-bEpQ7I) | https://www.youtube.com/watch?v=o4psd_-Lzv0 | 05/11/2026 |
-| FAQ oficial | Nenhuma encontrada além da errata | | Lacuna |
+| **FAQ oficial**, Libellud | Bloco FAQPage da página do produto, 5 perguntas em inglês (símbolos do tabuleiro central; rio com braços; rio em anel; cubos de animais esgotados; cartas de espíritos) | https://www.libellud.com/game/harmonies/ (lido no HTML salvo em `work/lib_game.html`) | Lido em 05/11/2026, depois da auditoria independente |
 
 **User-Agent e robots.txt.** Todas as requisições usaram o User-Agent próprio do robô (`EliteBoardgamersBot/1.0 (+robo de pesquisa editorial)`). A API da biblioteca e o site da Libellud responderam normalmente; o `robots.txt` da Libellud só restringe busca, feeds e o conversor de imagens. A loja da Asmodee Brasil respondeu 403 e não foi usada. O YouTube foi consultado só na busca do canal e no oEmbed.
 
@@ -129,10 +129,14 @@ Classificação: `[verificada]` lida no manual nesta sessão; `[interpretada]` l
 | S-K | Construção: vermelha sobre marrom, cinza ou vermelha; 5 pontos se cercada por pelo menos 3 cores diferentes (das 6, incluindo vermelha), contando só a peça de cima de cada espaço vizinho; senão 0 | [BR p. 8] | "Considere apenas a peça superior de cada espaço adjacente" | verificada |
 | S-K2 | Vermelha sozinha no chão não é construção | [BR p. 8] | definição "posicionada sobre 1 peça" | verificada pela definição |
 | S-R | Lado A, rio: série de azuis consecutivas; conta de uma ponta à outra pelo caminho mais curto; 1 a 6 peças: 0, 2, 5, 8, 11, 15; mais 4 por peça depois da 6ª; só o melhor rio pontua | [BR p. 8] | "Você só pontua seu melhor Rio" | verificada (valores na ilustração) |
+| S-R2 | Rio com braços: caminho mais curto entre as duas pontas; rio em anel: escolhe-se uma peça de partida e conta-se até a diretamente oposta | [FAQ Libellud] "choose a starting token, then identify the token directly opposite it" | verificada |
+| S-K3 | Cinza ou marrom com vermelha em cima é base de construção e deixa de contar como montanha ou árvore | [BR p. 6 nota; p. 8 definições] | interpretada: a nota diz que a vermelha sobre a cinza desfaz o padrão; montanha é "pilha formada por 1, 2 ou 3 peças cinza" |
+| S-K4 | Vermelha sozinha no chão não pontua em nenhuma categoria, mas conta como cor vizinha | [BR p. 8] | interpretada pela definição ("posicionada sobre") e pela regra das cores vizinhas ("das 6 disponíveis, incluindo vermelhas") |
+| K11 | Cubos de animais esgotados: usar substitutos, quantidade ilimitada | [FAQ Libellud] "the number of cubes is effectively unlimited" | verificada |
 | S-I | Lado B, ilhas: cada espaço ou grupo de espaços separado dos outros por peças azuis é uma ilha; 5 pontos por ilha; sempre pelo menos 1 ilha | [BR p. 8] | "Você sempre tem pelo menos 1 Ilha" | verificada |
 | S-I2 | Espaços vazios contam como parte da ilha | [BR p. 8, ilustração] | as ilhas do exemplo de Bento têm espaços vazios | interpretada: a definição fala em "espaço", e o exemplo inclui espaços sem peça |
 | S-AN | Carta de animal, completa ou não: vale o número do espaço mais alto sem cubo; com todos os cubos, 0; sem outra penalidade | [BR p. 9] | "o espaço mais acima sem um Cubo de Animal" | verificada |
-| S-EX | Exemplo do manual: paisagens 53 (árvores 4, montanhas 10, campos 10, construções 10, rio 19), animais 63, total 116 | [BR p. 9] | "total de 116 pontos" | verificada e recalculada em `contas.py` |
+| S-EX | Exemplo do manual: paisagens 53 (árvores 4, montanhas 7 + 1 + 1 + 1 + 0 = 10, com uma isolada; campos 10, com uma amarela sozinha que vale 0; construções 10, rio 19), animais 63, total 116 | [BR p. 9] | "total de 116 pontos" | verificada e recalculada em `contas.py` |
 
 ### Variantes (p. 10 e 11) e errata
 

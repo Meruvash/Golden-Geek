@@ -18,12 +18,12 @@ A montagem segue a seção "Componentes e preparação" do manual (p. 2), na mes
 
 !fig[Cartelas de terreno: com pedaço de cidade (a parte murada), com estrada e com monastério no centro. Ilustração: manual Devir (p. 2)](figuras/setup-cartelas.webp)
 
-1. **Separe a cartela inicial e as 12 cartelas de rio**, as únicas de verso mais escuro (p. 2). As de rio são da mini-expansão O Rio: no jogo base, ficam na caixa.
+1. **Separe a cartela inicial e as 12 cartelas de rio**, as únicas de verso mais escuro (p. 2). As de rio são da mini-expansão O Rio, que substitui a cartela inicial pela do Manancial (suplemento, p. 2); o manual não diz o que fazer com elas no jogo base, e este guia as deixa na caixa.
 
 !fig[O verso normal, o verso mais escuro (cartela inicial e rio) e uma cartela de rio vista de frente. Ilustração: manual Devir (p. 2)](figuras/setup-versos.webp)
 
-2. **Ponha a cartela inicial no centro da mesa, virada para cima** (p. 2). É dela que o terreno vai crescer.
-3. **Misture todas as outras cartelas de terreno, viradas para baixo, e faça vários montes** em volta da mesa, de modo que todos alcancem um monte com facilidade (p. 2).
+2. **Ponha a cartela inicial no centro da mesa, virada para cima** (p. 2). Na figura do manual, ela mostra um pedaço de cidade murada numa borda e uma estrada que atravessa a cartela de um lado ao outro, com campo dos dois lados da estrada. É dela que o terreno vai crescer.
+3. **Misture as outras 71 cartelas de terreno, viradas para baixo, e faça vários montes** em volta da mesa, de modo que todos alcancem um monte com facilidade (p. 2).
 
 !fig[A cartela inicial, virada para cima, e dois montes de cartelas viradas para baixo. Ilustração: manual Devir (p. 2)](figuras/setup-inicial.webp)
 
@@ -33,11 +33,12 @@ A montagem segue a seção "Componentes e preparação" do manual (p. 2), na mes
 
 !fig[O marcador de pontos, com uma figura de cada cor no espaço 0. Ilustração: manual Devir (p. 2)](figuras/setup-marcador.webp)
 
-7. **Devolva à caixa as figuras das cores que ninguém escolheu e os 5 abades** (p. 2). O manual os deixa de fora "nas primeiras partidas".
+7. **Devolva à caixa as figuras das cores que ninguém escolheu e os 5 abades** (p. 2); os abades, "nas primeiras partidas".
 
 !fig[Em cima, os seguidores das cinco cores; embaixo, os abades. Ilustração: manual Devir (p. 2)](figuras/setup-seguidores.webp)
 
-8. **Defina quem começa.** O jogador mais jovem começa, e a vez segue no sentido horário (p. 3).
+8. **Decidam se jogam com fazendeiros.** O manual sugere deixá-los de fora nas primeiras partidas e usá-los depois de algumas (p. 6). Eles são explicados na etapa 3.
+9. **Defina quem começa.** O jogador mais jovem começa, e a vez segue no sentido horário (p. 3).
 
 **O que muda com o número de jogadores** (p. 2):
 
@@ -50,7 +51,7 @@ A montagem segue a seção "Componentes e preparação" do manual (p. 2), na mes
 
 Nada mais muda, e ninguém recebe cartela antes de começar (p. 2 e 3).
 
-**Antes de começar, confira:** cartela inicial no centro; cartelas de rio e abades na caixa; as outras cartelas em montes, viradas para baixo; marcador de pontos no canto, com uma figura de cada jogador no 0; 7 seguidores na reserva de cada um; quem começa definido.
+**Antes de começar, confira:** cartela inicial no centro; cartelas de rio e abades na caixa; as outras cartelas em montes, viradas para baixo; marcador de pontos no canto, com uma figura de cada jogador no 0; 7 seguidores na reserva de cada um; combinado se há fazendeiros; quem começa definido.
 
 ?? Partida de 3 jogadores. Quantos seguidores cada um tem na reserva, e quantas figuras voltam para a caixa?
 - ( ) 8 na reserva; voltam 16 figuras
@@ -83,10 +84,10 @@ O turno tem três passos, sempre nesta ordem (p. 3):
 | Passo | O que você faz |
 |---|---|
 | 1. Colocar uma cartela | Obrigatório. Pegue uma de um monte e encoste-a em outra, continuando o desenho: estrada com estrada, cidade com cidade, campo com campo |
-| 2. Colocar um seguidor | Opcional. Ponha um seguidor da reserva **na cartela que você acabou de colocar**, numa estrada, numa cidade ou num monastério que ainda não tenha seguidor |
+| 2. Colocar um seguidor | Opcional. Ponha um seguidor da reserva **na cartela que você acabou de colocar**, numa estrada, cidade, monastério ou campo que ainda não tenha seguidor |
 | 3. Contar pontos | Obrigatório. Toda estrada, cidade ou monastério com seguidor que a sua cartela concluiu pontua agora |
 
-O seguidor muda de nome conforme o lugar: na estrada é **ladrão**, na cidade é **cavaleiro**, no monastério é **monge** (p. 3 e 4). O fazendeiro fica para a etapa 3.
+O seguidor muda de nome conforme o lugar: na estrada é **ladrão**, na cidade é **cavaleiro**, no monastério é **monge** (p. 3 e 4). O seguidor deitado no campo (fazendeiro) fica para a etapa 3.
 
 > [!resolvido] **Exemplo resolvido.** Ana começa. Encosta uma cartela de estrada reta na cartela inicial, estrada com estrada e campo com campo. Põe um ladrão nessa estrada, que não tinha seguidor. A estrada não terminou dos dois lados, então ninguém pontua, e a vez passa para Bruno.
 
@@ -127,6 +128,8 @@ Carcassonne é um jogo de montar um mapa. Não há tabuleiro: o terreno nasce da
 
 O seguidor reivindica a construção inteira, não só a cartela em que está, e ela dá pontos a quem tiver seguidor nela quando fica concluída, mesmo que outro jogador a tenha fechado (p. 3).
 
+Se uma construção tiver seguidores de mais de um jogador, ela pontua para quem tiver mais seguidores nela (p. 5).
+
 Duas ideias sustentam o resto:
 
 - **Os seguidores são poucos e voltam.** Cada um tem 7, e o seguidor só volta para a reserva quando a construção dele é pontuada (p. 2 e 4).
@@ -141,6 +144,8 @@ Três etapas: colocar a cartela e o seguidor, pontuar durante o jogo, fechar a p
 > [!entender] **Para entender.** As cartelas de terreno têm quatro tipos de lugar, que o manual chama de **zonas** (p. 5): **estrada** (o caminho claro), **cidade** (a parte murada, com casas), **monastério** (a construção no centro da cartela) e **campo** (o verde em volta de tudo; no suplemento, p. 1).
 >
 > Uma zona pode atravessar muitas cartelas. Uma estrada que segue por quatro cartelas é uma estrada só. O seguidor reivindica a zona inteira, e por isso não pode entrar numa zona que já tem seguidor (p. 3 e 5).
+>
+> Dentro de uma mesma cartela também pode haver várias zonas. No exemplo do manual, a estrada à direita de um cruzamento era uma zona, e a cidade da mesma cartela, outra (p. 3); e os campos são separados pelas cidades e pelas estradas, de modo que uma cartela pode mostrar mais de um campo (suplemento, p. 1).
 >
 > Algumas cartelas de cidade têm um **brasão**, um pequeno escudo azul e branco. Ele vale pontos a mais quando a cidade é pontuada (p. 4).
 
@@ -163,7 +168,7 @@ Três etapas: colocar a cartela e o seguidor, pontuar durante o jogo, fechar a p
 
 > [!mais] **Reserva vazia.** O seguidor sai da sua reserva (p. 3), e pôr seguidor é opcional. Se os seus 7 estão todos no terreno, você só coloca a cartela até algum voltar.
 
-> [!atencao] Uma zona ocupada continua ocupada em todas as cartelas por onde ela passa. No exemplo do manual, o jogador azul não pôde pôr ladrão na estrada à direita do cruzamento porque o ladrão vermelho estava nela, numa cartela vizinha (p. 3).
+> [!atencao] Uma zona ocupada continua ocupada em todas as cartelas por onde ela passa. No exemplo do manual, o jogador azul não pôde pôr ladrão na estrada à direita do cruzamento porque o ladrão vermelho estava nela, em outra cartela da mesma estrada (p. 3).
 
 > [!resolvido] **Exemplo resolvido.** Na mesa há uma cidade com o cavaleiro de Bruno, aberta do lado direito. Você pega uma cartela com um pedaço de cidade de um lado e uma estrada do outro.
 >
@@ -193,7 +198,7 @@ Três etapas: colocar a cartela e o seguidor, pontuar durante o jogo, fechar a p
 
 > [!entender] **Para entender.** Os pontos chegam quando uma zona é **concluída**, no fim do turno de quem colocou a cartela que a concluiu. Concluída quer dizer fechada: a estrada não tem mais por onde continuar, a cidade está toda cercada de muralha, o monastério está cercado de cartelas (p. 5).
 >
-> Por cartela, cidade concluída vale o dobro de estrada (p. 5). E o seguidor que pontuou volta para a reserva, livre para ser usado de novo (p. 4): fechar uma construção pequena devolve o seguidor depressa.
+> Por cartela, cidade concluída vale o dobro de estrada (p. 3 e 4). E o seguidor que pontuou volta para a reserva, livre para ser usado de novo (p. 4): fechar uma construção pequena devolve o seguidor depressa.
 
 > [!passos] **Passo a passo: o que conta como concluído** (p. 3 a 5)
 >
@@ -201,33 +206,37 @@ Três etapas: colocar a cartela e o seguidor, pontuar durante o jogo, fechar a p
 > 2. **Cidade:** está toda cercada por muralhas, sem nenhum vazio nas bordas.
 > 3. **Monastério:** está cercado pelas 8 cartelas em volta dele, incluindo as das diagonais.
 
-> [!passos] **Passo a passo: quanto vale** (p. 3 a 5)
+> [!passos] **Passo a passo: quanto vale**
 >
-> 1. **Estrada concluída:** 1 ponto por cartela da estrada.
-> 2. **Cidade concluída:** 2 pontos por cartela da cidade e mais 2 por brasão dentro dela.
-> 3. **Monastério concluído:** 9 pontos (1 por cartela, contando a do próprio monastério).
+> 1. **Estrada concluída:** 1 ponto por cartela da estrada (p. 3).
+> 2. **Cidade concluída:** 2 pontos por cartela da cidade e mais 2 por brasão dentro dela (p. 4).
+> 3. **Monastério concluído:** 9 pontos, 1 por cartela, contando a do próprio monastério (p. 5).
 
 > [!passos] **Passo a passo: contar pontos no fim do turno** (p. 4 e 5)
 >
 > 1. Veja se a cartela colocada concluiu uma ou mais zonas. Pontue todas, no fim do turno.
 > 2. Recebem pontos todos os jogadores que têm seguidor na zona concluída, e não só quem colocou a cartela.
 > 3. Se há seguidores de mais de um jogador, ganha os pontos quem tiver mais seguidores na zona. Se houver empate no maior número, todos os empatados ganham os pontos inteiros.
-> 4. Avance a sua figura no marcador de pontos.
+> 4. Cada jogador que pontuou avança a sua figura no marcador de pontos.
 > 5. Devolva à reserva de cada dono os seguidores das zonas pontuadas, inclusive os de quem não ganhou pontos.
 
-!fig[Uma estrada que vai de um cruzamento até uma cidade passa por 3 cartelas: concluída, dá 3 pontos ao ladrão azul. Ilustração: manual Devir (p. 3)](figuras/estrada.webp)
+!fig[Uma estrada entre dois cruzamentos passa por 3 cartelas: concluída, dá 3 pontos ao ladrão vermelho; o cavaleiro azul, na cidade, fica no terreno. Ilustração: manual Devir (p. 3)](figuras/estrada.webp)
 
 !fig[A cartela de borda vermelha fecha a cidade. Os números contam 2 por cartela e 2 pelo brasão: 3 cartelas e 1 brasão, 8 pontos para o cavaleiro vermelho, que volta para a reserva. Ilustração: manual Devir (p. 4)](figuras/cidade.webp)
 
 !fig[A cartela 4 completa as 8 cartelas em volta do monastério: o monge vermelho recebe 9 pontos e volta para a reserva. Ilustração: manual Devir (p. 5)](figuras/monasterio.webp)
 
-> [!mais] **Volta no marcador.** A trilha do marcador de pontos tem 50 casas e pode ser percorrida mais de uma vez. Quem alcança ou passa da casa 0 deita a sua figura, para mostrar que já tem 50 pontos ou mais (p. 4).
+> [!mais] **Seguidor que pontua no mesmo turno.** O seguidor é colocado antes da contagem de pontos (p. 3). Se a cartela que você acabou de colocar conclui a zona em que você pôs o seguidor, ela pontua no fim desse turno e o seguidor volta para a reserva na hora (p. 3 e 5).
+
+> [!mais] **Estrada que acaba em outro desenho.** O manual só lista quatro fins de estrada: cruzamento, cidade, monastério ou a própria estrada fechada em volta (p. 3 e 5). Não trata de outros desenhos nas pontas.
+
+> [!mais] **Volta no marcador.** A trilha do marcador de pontos tem 50 casas e pode ser percorrida mais de uma vez. Quem alcançou ou passou da casa 0 deita a sua figura, para mostrar que já tem 50 pontos ou mais (p. 4).
 
 > [!mais] **Zona com dois donos.** Ninguém põe seguidor numa zona ocupada, mas uma cartela pode unir duas zonas que já tinham seguidor, cada uma o seu. Aí vale a maioria (p. 5 e 6).
 
 !fig[À esquerda, o vermelho põe um cavaleiro num pedaço de cidade separado da cidade do amarelo. À direita, uma cartela une e conclui a cidade: com 2 cavaleiros contra 1, só o vermelho ganha os 10 pontos. Ilustração: manual Devir (p. 6)](figuras/roubar-cidade.webp)
 
-> [!atencao] Quem fecha a construção não é quem ganha os pontos. Se a sua cartela conclui a estrada de Bruno, Bruno pontua, mesmo no seu turno (p. 3).
+> [!atencao] Fechar a construção não dá pontos por si só: pontua quem tem seguidor nela, mesmo que seja outro jogador. Se a sua cartela conclui a estrada de Bruno, Bruno pontua, mesmo no seu turno (p. 3).
 
 > [!resolvido] **Exemplo resolvido.** Ana tem 2 cavaleiros numa cidade, e Bruno tem 1. Você coloca a cartela que conclui essa cidade, com 5 cartelas e 1 brasão.
 >
@@ -282,7 +291,7 @@ Três etapas: colocar a cartela e o seguidor, pontuar durante o jogo, fechar a p
 > 2. Pontue todas as zonas que ainda têm seguidor, com a mesma regra de maioria: quem tem mais seguidores na zona leva; empatados levam todos.
 > 3. **Estrada:** 1 ponto por cartela, como durante a partida.
 > 4. **Cidade sem concluir:** 1 ponto por cartela de cidade e 1 por brasão, a metade do que valeria concluída.
-> 5. **Monastério sem concluir:** 1 ponto pela cartela dele e 1 por cartela vizinha.
+> 5. **Monastério sem concluir:** 1 ponto pela cartela dele e 1 por cartela vizinha, contando as diagonais (até 8).
 > 6. **Campo:** 3 pontos por cidade concluída que encosta nele.
 > 7. Vence quem tiver mais pontos no marcador.
 
@@ -332,7 +341,7 @@ Três etapas: colocar a cartela e o seguidor, pontuar durante o jogo, fechar a p
 
 > [!edicao] **O Rio e o Abade estão na caixa.** A caixa brasileira traz as duas mini-expansões: 12 cartelas de rio e 5 abades, um de cada cor (p. 2; catálogo Devir de 2026). As regras estão no suplemento (p. 2), e este guia não as ensina. Segundo o suplemento, com O Rio, a cartela "Manancial" substitui a cartela inicial e as cartelas de rio são colocadas antes das outras, terminando no "Lago"; com O Abade, cada jogador recebe o abade da sua cor, que só vai num monastério ou num jardim; num turno em que não puser seguidor, o jogador pode recolhê-lo e marcar os pontos do monastério ou do jardim como estiverem.
 
-> [!edicao] **Jardins e casinhas.** Algumas cartelas mostram jardins, casinhas e pequenas figuras; o manual manda não se preocupar com eles por ora (p. 2) e só fala do jardim na regra do Abade (suplemento, p. 2). Sem o Abade, este guia trata o jardim como parte do campo.
+> [!edicao] **Jardins e casinhas.** Algumas cartelas mostram elementos como casinhas e pequenas figuras, e o manual manda não se preocupar com eles por ora (p. 2). O jardim só aparece na regra do Abade (suplemento, p. 2). Sem o Abade, este guia trata o jardim como parte do campo.
 
 > [!edicao] **Edições.** O manual usado é o da Devir com © 2014. Em 2021 a Hans im Glück lançou uma edição nova, com arte e "alguns ajustes nas regras", segundo a Devir; este guia não a confrontou. Se o manual da sua caixa for outro, vale o da sua caixa.
 
@@ -378,7 +387,7 @@ Responda sem consultar. Cada resposta diz o que reler.
 
 ## 7. Para consultar durante a partida
 
-**Preparação:** cartela inicial no centro; o resto em montes virados para baixo (cartelas de rio e abades na caixa). Marcador de pontos com uma figura de cada jogador no 0. Cada um com 7 seguidores. Começa o mais jovem; sentido horário.
+**Preparação:** cartela inicial no centro; combinem se há fazendeiros (o manual sugere deixá-los de fora nas primeiras partidas); o resto em montes virados para baixo (cartelas de rio e abades na caixa). Marcador de pontos com uma figura de cada jogador no 0. Cada um com 7 seguidores. Começa o mais jovem; sentido horário.
 
 **No seu turno:**
 1. **Cartela (obrigatório):** pegue de um monte e encoste em pelo menos um lado de outra, dando continuidade (estrada, cidade, campo). Não cabe em lugar nenhum: caixa, e pegue outra.

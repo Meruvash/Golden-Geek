@@ -15,7 +15,7 @@ A montagem segue o quadro "Preparação" do manual (p. 3), na mesma ordem. Os co
 | Tabuleiro de Tóquio | 1 | Dois lugares: Cidade de Tóquio e Baía de Tóquio |
 | Dados pretos | 6 | Os dados que todos rolam |
 | Dados verdes | 2 | Só com certas cartas de Poder |
-| Cartas de Poder | 66 | Compradas com Energia |
+| Cartas de Poder | 66 | Compradas com Energia; dois tipos: **Constante** (fica à sua frente até o fim) e **Descarte** (age na hora e sai) |
 | Cubos de Energia | sem número no manual | A moeda do jogo |
 | Fichas | 28 | Só com certas cartas: 3 Fumaça, 1 Imitador, 12 Encolhido, 12 Envenenado |
 
@@ -23,7 +23,7 @@ A montagem segue o quadro "Preparação" do manual (p. 3), na mesma ordem. Os co
 
 **1. Monstros.** Cada jogador escolhe um Monstro e pega a figura e o tabuleiro de Monstro dele. Gire os discos do tabuleiro: Pontos de Vida em 10 e Pontos de Vitória em 0 (p. 3). A figura fica perto de você (p. 2).
 
-!fig[Passo 1: a figura e o tabuleiro de Monstro de The King, ao lado da mesa. Ilustração: manual Galápagos (p. 3)](figuras/setup-1-monstro.webp)
+!fig[Passo 1: a figura e o tabuleiro de Monstro de The King, ao lado do tabuleiro de Tóquio. Ilustração: manual Galápagos (p. 3)](figuras/setup-1-monstro.webp)
 
 !fig[O tabuleiro de Monstro de perto: o nome, o disco de Pontos de Vitória no alto e o disco de Pontos de Vida embaixo, que começa em 10. Ilustração: manual Galápagos (p. 2)](figuras/tabuleiro-monstro.webp)
 
@@ -31,7 +31,7 @@ A montagem segue o quadro "Preparação" do manual (p. 3), na mesma ordem. Os co
 
 !fig[Passo 2: o tabuleiro de Tóquio, com a Cidade de Tóquio (círculo vermelho) e a Baía de Tóquio (círculo tracejado). Ilustração: manual Galápagos (p. 3)](figuras/setup-2-toquio.webp)
 
-**3. Baralho.** Embaralhe as cartas de Poder e forme um baralho, virado para baixo (p. 3).
+**3. Baralho.** Embaralhe as cartas de Poder e forme um baralho, virado para baixo, como na ilustração (p. 3). Deixe espaço ao lado para o descarte: vão para lá as cartas de Descarte usadas e as cartas limpas (p. 2 e 6).
 
 !fig[Passo 3: o baralho de cartas de Poder. Ilustração: manual Galápagos (p. 3)](figuras/setup-3-baralho.webp)
 
@@ -43,9 +43,11 @@ A montagem segue o quadro "Preparação" do manual (p. 3), na mesma ordem. Os co
 
 !fig[Passo 5: os seis dados pretos e, à parte, os dois dados verdes. Ilustração: manual Galápagos (p. 3)](figuras/setup-5-dados.webp)
 
-**6. Banco de Energia.** Junte todos os cubos de Energia num monte: é o banco (p. 3).
+**6. Banco de Energia.** Junte todos os cubos de Energia num monte: é o banco (p. 3). Como todos os cubos vão para o banco, cada jogador começa com 0 de Energia.
 
 !fig[Passo 6: o banco com os cubos de Energia. Ilustração: manual Galápagos (p. 3)](figuras/setup-6-energia.webp)
+
+!fig[Mesa montada para foto pela IELLO, na edição francesa (cartas em francês): o tabuleiro de Tóquio, o baralho, três cartas à vista, os cubos de Energia, os dados pretos e quatro Monstros. Não é o início exato da partida: o CyberKitty já está na Cidade de Tóquio. Imagem: IELLO · edição francesa](fotos/mesa-1.webp)
 
 !fig[A mesa montada para três jogadores, como no quadro de preparação: tabuleiro de Tóquio no meio, baralho e três cartas acima, fichas, banco de Energia, dados pretos e verdes e os três Monstros com seus tabuleiros. Ilustração: manual Galápagos (p. 3)](figuras/preparacao.webp)
 
@@ -62,7 +64,7 @@ O resto da preparação é igual para todos. A partida a 2 não tem regra especi
 
 **Quem começa.** Cada jogador rola os 6 dados pretos; começa quem tirar mais faces de garra (a face de Atacar). Empate: continua-se rolando até um só ter o maior número de garras. Depois, o jogo segue em sentido horário (p. 4).
 
-**Antes de começar, confira:** cada jogador com um Monstro, a figura por perto e o tabuleiro em 10 Pontos de Vida e 0 Pontos de Vitória; ninguém em Tóquio; a Baía de Tóquio em uso só com 5 ou 6 jogadores; o baralho e 3 cartas viradas ao lado do tabuleiro; fichas por perto; 6 dados pretos no centro e 2 verdes de lado; o banco de Energia formado.
+**Antes de começar, confira:** cada jogador com um Monstro, a figura por perto e o tabuleiro em 10 Pontos de Vida e 0 Pontos de Vitória; ninguém em Tóquio; a Baía de Tóquio em uso só com 5 ou 6 jogadores; o baralho e 3 cartas viradas ao lado do tabuleiro, com espaço para o descarte; fichas por perto; 6 dados pretos no centro e 2 verdes de lado; o banco de Energia formado, e ninguém com Energia.
 
 ?? Partida de 4 jogadores. Quais lugares do tabuleiro de Tóquio entram em jogo?
 - ( ) A Cidade de Tóquio e a Baía de Tóquio
@@ -82,28 +84,29 @@ Cada jogador é um Monstro gigante. No seu turno, você rola os dados até três
 
 Resumo da seção "Montar a mesa passo a passo", acima.
 
-1. Cada um pega um Monstro: figura e tabuleiro, com 10 Pontos de Vida e 0 Pontos de Vitória.
+1. Cada um: Monstro, figura e tabuleiro em 10 de Vida e 0 de Vitória.
 2. Tabuleiro de Tóquio no centro (Baía de Tóquio só com 5 ou 6 jogadores).
-3. Baralho de cartas de Poder; 3 cartas viradas para cima ao lado; fichas por perto *(depois)*.
+3. Baralho; 3 cartas viradas ao lado; fichas por perto *(depois)*.
 4. 6 dados pretos no centro; 2 verdes de lado *(depois)*.
 5. Banco de Energia.
-6. Todos rolam os 6 dados pretos: começa quem tirar mais garras.
+6. Começa quem tirar mais garras com os 6 dados pretos.
 
 ### Seu primeiro turno
 
-O dado tem seis faces: **1**, **2** e **3** (Pontos de Vitória), o **raio** (Energia), a **garra** (Atacar) e o **coração** (Curar) (p. 2). O turno tem cinco passos (p. 4):
+O dado tem seis faces: **1**, **2** e **3** (Pontos de Vitória), o **raio** (Energia), a **garra** (Atacar) e o **coração** (Curar) (p. 2). O turno tem seis passos (p. 4 e 5):
 
-1. **Role os dados.** Role os 6 dados pretos. Separe os que quiser e role de novo os outros; faça isso até três rolagens no total. Na terceira, pode rolar de novo até os que tinha separado. Pode parar antes.
-2. **Resolva os dados**, todos, na ordem que quiser:
+1. **Começo.** Se você começa o turno em Tóquio (Cidade ou Baía), ganhe 2 Pontos de Vitória.
+2. **Role os dados.** Até três rolagens: a primeira com os 6 dados pretos; antes de cada outra, escolha quais rolar de novo, inclusive os que estavam de lado. Pode parar quando quiser (p. 4 e 6).
+3. **Resolva os dados**, todos, na ordem que quiser:
    - Três faces iguais de 1, 2 ou 3 valem esse número em Pontos de Vitória; cada dado a mais com o mesmo número vale +1. Par não vale nada.
    - Cada raio: 1 cubo de Energia do banco.
    - Cada coração: +1 Ponto de Vida, só fora de Tóquio, e nunca acima de 10.
-   - Cada garra: 1 Ponto de Vida a menos para quem não está no mesmo lugar que você.
-3. **Entre em Tóquio.** Se ninguém está em Tóquio, ou se quem estava lá cedeu o lugar por causa das suas garras, você tem de entrar na Cidade de Tóquio, e ganha 1 Ponto de Vitória (p. 5 e 6).
-4. **Compre cartas de Poder** com a Energia, se quiser (p. 6).
-5. **Fim do turno.** Passe os dados para a esquerda (p. 6).
+   - Cada garra: 1 Ponto de Vida a menos para todos do outro lado: se você está em Tóquio (Cidade ou Baía), os de fora; se está fora, os de Tóquio.
+4. **Entre em Tóquio.** Se ninguém está em Tóquio, entre na Cidade de Tóquio. Com 5 ou 6 jogadores, se você está fora e só a Cidade está ocupada, entre na Baía. Se alguém cedeu por causa das suas garras, você tem de entrar no lugar de quem cedeu (na Cidade, se ela estiver vazia). Ao entrar, +1 Ponto de Vitória (p. 5 e 6).
+5. **Compre cartas de Poder** com a Energia, se quiser (p. 6).
+6. **Fim do turno.** Passe os dados para a esquerda (p. 6).
 
-No primeiro turno da partida ninguém está em Tóquio: as garras do primeiro jogador não ferem ninguém, e ele termina o turno dentro da Cidade de Tóquio (p. 4 e 5).
+No primeiro turno, Tóquio está vazia: as garras do primeiro jogador não ferem ninguém, e ele termina dentro da Cidade de Tóquio (p. 4 e 5).
 
 > [!resolvido] **Exemplo resolvido.** Você é o primeiro. Depois das rolagens, os dados mostram 3, 3, 3, raio, raio e garra. Três faces de 3: 3 Pontos de Vitória. Dois raios: 2 cubos de Energia. A garra não fere ninguém, porque Tóquio está vazia. Você entra na Cidade de Tóquio e ganha mais 1: termina com 4 Pontos de Vitória, 2 de Energia e 10 de Vida.
 
@@ -113,7 +116,7 @@ No primeiro turno da partida ninguém está em Tóquio: as garras do primeiro jo
 > - ( ) 2
 > - (x) 3
 > - ( ) 4
-> = Quem sai de Tóquio cede o lugar a quem atacou: você entra na Cidade de Tóquio no passo 3 e ganha 1 (p. 5 e 6).
+> = Quem sai de Tóquio cede o lugar a quem atacou: você entra na Cidade de Tóquio no passo Entre em Tóquio e ganha 1 (p. 5 e 6).
 
 > [!suavez] **Sua vez.** Você começa o turno dentro de Tóquio, com 8 de Vida e 4 Pontos de Vitória. Seus dados finais: coração, coração, garra, 2, 2 e raio. Começar o turno em Tóquio já lhe deu 2 Pontos de Vitória (p. 5).
 >
@@ -125,7 +128,7 @@ No primeiro turno da partida ninguém está em Tóquio: as garras do primeiro jo
 
 ### Ainda não precisa saber
 
-Quando e como se cede Tóquio: etapa 2. A Baía de Tóquio, com 5 ou 6 jogadores: etapa 2. Os dois tipos de carta de Poder e como trocar as cartas à vista: etapa 3.
+Ceder Tóquio e os detalhes da Baía: etapa 2. Tipos de carta e como limpar as cartas à vista: etapa 3.
 
 ### Como a partida acaba
 
@@ -154,8 +157,8 @@ São três etapas, na ordem em que as dúvidas aparecem na mesa: rolar e resolve
 > [!passos] **Passo a passo: Role os dados** (p. 4)
 >
 > 1. Primeira rolagem: role os 6 dados pretos.
-> 2. Segunda rolagem: separe os dados que lhe agradaram e role de novo só os outros.
-> 3. Terceira rolagem: role de novo os que ainda não agradam e, se mudou de ideia, também os que estavam separados.
+> 2. Segunda rolagem: deixe de lado os dados que lhe agradaram e role de novo só os outros.
+> 3. Terceira rolagem: role de novo os que ainda não agradam e, se mudou de ideia, também os que estavam de lado. O glossário diz o mesmo de qualquer rolagem: antes dela, você pode deixar de lado dados já rolados e rolar de novo dados que estavam de lado (p. 6).
 > 4. Você pode parar a qualquer momento. Depois da última rolagem, passe a resolver os dados.
 
 > [!passos] **Passo a passo: Resolva os dados** (p. 4)
@@ -164,9 +167,11 @@ São três etapas, na ordem em que as dúvidas aparecem na mesa: rolar e resolve
 > 2. **Pontos de Vitória:** três faces de 1, de 2 ou de 3 dão esse número de Pontos de Vitória. Cada dado a mais com o mesmo número dá +1.
 > 3. **Energia:** cada raio dá 1 cubo de Energia do banco. Guarde os cubos na sua reserva, à sua frente, até gastá-los.
 > 4. **Curar:** fora de Tóquio, cada coração dá +1 Ponto de Vida. Em Tóquio, os corações não curam. Ninguém passa de 10 Pontos de Vida.
-> 5. **Atacar:** cada garra faz perder 1 Ponto de Vida os Monstros que não estão no mesmo lugar que você. Quem está em Tóquio fere todos os de fora; quem está fora fere todos os que estão em Tóquio.
+> 5. **Atacar:** cada garra faz perder 1 Ponto de Vida todos do outro lado: se você está em Tóquio (Cidade ou Baía), todos os de fora; se está fora, todos os de Tóquio.
 
 !fig[O exemplo de rolagem do manual: a primeira rolagem do Gigazaur (1, 2, 3, 3, coração, raio), a segunda, depois de separar os dois 3 (3, 3, 2, 2, 2, garra), e a terceira, depois de separar os três 2 (2, 2, 2, 2, raio, garra). Ilustração: manual Galápagos (p. 5)](figuras/exemplo-rolagem.webp)
+
+> [!atencao] **Duas trincas na mesma rolagem.** O manual não diz o que acontece se os 6 dados formarem duas trincas (três 1 e três 2, por exemplo): a regra e o exemplo falam de uma trinca só (p. 4). Combine com a mesa.
 
 > [!mais] **Eliminação.** Quando um Monstro perde o último Ponto de Vida, o disco mostra a caveira e ele é eliminado: as cartas Constantes e os cubos de Energia dele vão para o descarte (p. 4).
 
@@ -208,25 +213,26 @@ São três etapas, na ordem em que as dúvidas aparecem na mesa: rolar e resolve
 
 > [!passos] **Passo a passo: Ficar ou ceder** (p. 4 a 6)
 >
-> 1. Você está em Tóquio e acaba de perder Vida para as garras de outro Monstro: escolha ficar ou ceder Tóquio. Fora desse momento, ninguém sai.
+> 1. Você está em Tóquio e acaba de perder Vida para as garras de outro Monstro: escolha ficar ou ceder Tóquio. Fora desse momento, ninguém sai (salvo a saída obrigatória da Baía e a eliminação).
 > 2. Quem cede tira a figura de Tóquio e perde a Vida do mesmo jeito; quem atacou entra no lugar.
 
 > [!passos] **Passo a passo: Entre em Tóquio** (p. 5 e 6)
 >
 > 1. Este passo vem depois de resolver os dados.
 > 2. Se não há ninguém em Tóquio, você tem de entrar e pôr a sua figura na Cidade de Tóquio.
-> 3. Se um Monstro cedeu Tóquio por causa das suas garras neste turno, você tem de tomar o lugar dele.
-> 4. Ao entrar, ganhe 1 Ponto de Vitória.
+> 3. Com 5 ou 6 jogadores: se você está fora, a Cidade está ocupada e a Baía, vazia, entre na Baía.
+> 4. Se um Monstro cedeu Tóquio por causa das suas garras neste turno, você tem de tomar o lugar dele.
+> 5. Ao entrar, ganhe 1 Ponto de Vitória.
 
 !fig[O exemplo de partida com 5 jogadores, na situação do início: o Gigazaur na Cidade de Tóquio, o Space Penguin na Baía de Tóquio e, fora, MekaDragon, CyberKitty e The King. Ilustração: manual Galápagos (p. 6)](figuras/exemplo-5-jogadores.webp)
 
-> [!mais] **A Baía de Tóquio (5 ou 6 jogadores).** Se a Cidade de Tóquio está ocupada e a Baía de Tóquio está vazia, você tem de entrar na Baía. Quem está na Cidade ou na Baía está "em Tóquio", e a Baía tem os mesmos efeitos da Cidade (p. 5). Os dois Monstros em Tóquio não se ferem: as garras de um ferem só quem está fora (p. 6).
+> [!mais] **A Baía de Tóquio (5 ou 6 jogadores).** Se você está fora, a Cidade de Tóquio está ocupada e a Baía de Tóquio está vazia, você tem de entrar na Baía. Quem está na Cidade ou na Baía está "em Tóquio", e a Baía tem os mesmos efeitos da Cidade (p. 5). Os dois Monstros em Tóquio não se ferem: as garras de um ferem só quem está fora (p. 6).
 
 > [!mais] **Quando sobram 4 Monstros ou menos.** Quem está na Baía de Tóquio sai na hora; se a Cidade de Tóquio estiver vazia nesse momento, passa para ela (p. 5).
 
 > [!mais] **Dano de carta não abre a saída.** Perder Vida pelo efeito de uma carta de Poder não é o mesmo que perder para garras: só as garras permitem ceder Tóquio (p. 4).
 
-> [!resolvido] **Exemplo resolvido: o exemplo do manual com 5 jogadores** (p. 6). O Gigazaur está na Cidade e o Space Penguin, na Baía. O MekaDragon tira 4 garras: os dois perdem 4 e cedem; ele entra na Cidade (+1) e a Baía fica vazia. O Gigazaur tira 1 garra: só o MekaDragon perde 1, e fica; como a Baía está vazia, o Gigazaur tem de entrar nela (+1). O Space Penguin tira 1 garra: o Gigazaur e o MekaDragon perdem 1; o Gigazaur cede a Baía, e o Space Penguin entra nela (+1). Depois, o MekaDragon começa o turno em Tóquio (+2) e tira 3 garras: o Gigazaur, The King e o CyberKitty perdem 3, e o Space Penguin, também em Tóquio, nada. O Gigazaur chega a 0 e é eliminado. Restam 4 Monstros: o Space Penguin sai da Baía na hora.
+> [!resolvido] **Exemplo resolvido: o exemplo do manual com 5 jogadores** (p. 6). O Gigazaur está na Cidade e o Space Penguin, na Baía. O MekaDragon tira 4 garras: os dois perdem 4 e cedem; ele entra na Cidade (+1) e a Baía fica vazia. O Gigazaur tira 1 garra: só o MekaDragon perde 1, e fica; como a Baía está vazia, o Gigazaur tem de entrar nela (+1). O Space Penguin tira 1 garra: o Gigazaur e o MekaDragon perdem 1; o Gigazaur cede a Baía, e o Space Penguin entra nela (+1). Depois, o MekaDragon começa o turno em Tóquio (+2) e tira 3 garras: o Gigazaur, The King e o CyberKitty perdem 3, e o Space Penguin, também em Tóquio, nada. O Gigazaur chega a 0 e é eliminado. O manual não diz com quanto de Vida cada um começa o exemplo; como o Gigazaur perde 4, 1 e 3 e termina com 0, ele tinha 8 no começo. Restam 4 Monstros: o Space Penguin sai da Baía na hora.
 
 > [!complete] **Complete.** Partida de 4. Ana está na Cidade de Tóquio. Bruno, de fora, tira 2 garras; Ana perde 2 e cede.
 >
@@ -293,13 +299,13 @@ São três etapas, na ordem em que as dúvidas aparecem na mesa: rolar e resolve
 
 > [!edicao] **Partida a 2 jogadores.** O manual brasileiro (2016) não tem regra própria para 2. O manual oficial em inglês da IELLO, revisado em novembro de 2023, traz uma regra opcional para 2 jogadores: ao entrar em Tóquio, você ganha 1 de Energia em vez de 1 Ponto de Vitória; ao começar o turno em Tóquio, ganha 1 de Energia em vez de 2 Pontos de Vitória; o resto não muda (manual em inglês, p. 5). Pela caixa brasileira, a partida a 2 é igual às outras.
 
-> [!edicao] **Empate para escolher o primeiro jogador.** O manual diz que, no empate de garras, "os jogadores continuam rolando os dados até que apenas um deles tenha o maior número" (p. 4). Não diz se rolam todos ou só os empatados: combine antes.
+> [!atencao] **Empate para escolher o primeiro jogador.** O manual diz que, no empate de garras, "os jogadores continuam rolando os dados até que apenas um deles tenha o maior número" (p. 4). Não diz se rolam todos ou só os empatados: combine antes.
 
 > [!mais] **Os dois Monstros de Tóquio cedem ao mesmo ataque.** Com 5 ou 6 jogadores, se os dois Monstros de Tóquio cedem ao mesmo ataque, quem atacou entra na Cidade de Tóquio, e a Baía fica vazia até o próximo Monstro de fora entrar nela (exemplo da p. 6).
 
-> [!edicao] **A Cidade vazia e a Baía ocupada.** Com 5 ou 6 Monstros ainda em jogo, se o da Cidade de Tóquio é eliminado, o manual não diz se o da Baía passa para a Cidade nem quem entra nela; só regula a queda para 4 Monstros ou menos (p. 5). Combine com a mesa.
+> [!atencao] **O que o manual não diz sobre Cidade e Baía.** Quando os dois Monstros de Tóquio são atingidos pelo mesmo ataque, o manual não diz em que ordem decidem se cedem (p. 4). O único caso em que ele manda o Monstro da Baía passar para a Cidade é a volta a 4 Monstros ou menos (p. 5). Se o da Cidade é eliminado com 5 ou 6 ainda em jogo, ele não diz se o da Baía passa para a Cidade nem quem entra nela. Combine com a mesa.
 
-> [!edicao] **Dois Monstros a 20 no mesmo turno.** O manual não traz desempate para esse caso, e o guia não inventa um.
+> [!atencao] **Dois Monstros a 20 no mesmo turno.** O manual não traz desempate para esse caso, e o guia não inventa um.
 
 > [!mais] **Cartas com esclarecimento no manual** (p. 7). **Imitador:** copia uma carta como se ela tivesse acabado de ser jogada; se a copiada sair, a ficha volta, e por 1 de Energia, no início do seu turno, vai para outra Constante. **Sopro de Fogo:** quando ela age, os vizinhos da direita e da esquerda perdem 1, mesmo no mesmo lugar que você; a 2, o adversário perde só 1. **Oportunista:** com dois em jogo, compra primeiro o primeiro Monstro em sentido horário a partir do jogador da vez. **Metamorfose:** as Constantes que você descarta com ela saem no Fim do turno e devolvem o custo impresso. **Cuspe Envenenado e Raio de Encolhimento:** as fichas ficam mesmo sem a carta e só saem fora de Tóquio, usando corações.
 
@@ -343,17 +349,17 @@ Responda sem consultar. Cada resposta diz o que reler.
 - ( ) Voltam para o banco e o baralho, embaralhadas
 = As cartas Constantes e os cubos de Energia do eliminado são descartados (p. 4). Releia a etapa 1.
 
-> [!atencao] **Critério para começar a jogar.** Acertou 5 ou 6? Monte a mesa e jogue, com a folha de consulta ao lado. Errou a 2, a 3 ou a 6, releia a etapa 1; a 1 ou a 4, a etapa 2; a 5, a etapa 3. Depois refaça só as que errou.
+> [!atencao] **Critério para começar a jogar.** Acertou 5 ou 6? Monte a mesa e jogue, com a folha de consulta ao lado. Errou a 2, a 3 ou a 6, releia a etapa 1; a 1, a montagem e a etapa 2; a 4, a etapa 2; a 5, a etapa 3. Depois refaça só as que errou.
 
 ## 7. Para consultar durante a partida
 
 **Preparação:** cada um com Monstro, figura e tabuleiro em 10 de Vida e 0 de Vitória; tabuleiro de Tóquio no centro (Baía só com 5 ou 6); baralho e 3 cartas à vista; fichas por perto; 6 dados pretos no centro, 2 verdes de lado; banco de Energia. Começa quem tirar mais garras; sentido horário.
 
 **O turno**
-1. **Começo:** se está em Tóquio, +2 Pontos de Vitória.
-2. **Role** até 3 vezes; separe e role de novo o que quiser (até os separados, na terceira).
+1. **Começo:** se está em Tóquio (Cidade ou Baía), +2 Pontos de Vitória.
+2. **Role** até 3 vezes; antes de cada rolagem, escolha quais dados rolar de novo (pode incluir os que estavam de lado).
 3. **Resolva** todos os dados, na ordem que quiser.
-4. **Entre em Tóquio** se estiver vazia, ou se alguém cedeu para as suas garras: +1 Ponto de Vitória.
+4. **Entre em Tóquio** se estiver vazia (Cidade; ou a Baía, com 5 ou 6), ou no lugar de quem cedeu para as suas garras: +1 Ponto de Vitória.
 5. **Compre** cartas de Poder ou pague 2 para limpar as três.
 6. **Fim:** efeitos de fim de turno; dados para a esquerda.
 
@@ -364,7 +370,7 @@ Responda sem consultar. Cada resposta diz o que reler.
 | Coração | +1 de Vida, só fora de Tóquio; máximo 10 |
 | Garra | Em Tóquio: fere todos os de fora. Fora: fere todos os de Tóquio |
 
-**Tóquio:** sair só depois de perder Vida para garras de outro Monstro; quem cede perde a Vida igual; quem atacou entra no lugar. Com 5 ou 6: Cidade ocupada e Baía vazia, entre na Baía; com 4 ou menos, a Baía se esvazia.
+**Tóquio:** sair só depois de perder Vida para garras de outro Monstro; quem cede perde a Vida igual; quem atacou entra no lugar. Com 5 ou 6: se você está fora, a Cidade está ocupada e a Baía vazia, entre na Baía. Com 4 ou menos, quem está na Baía sai na hora; o Monstro da Baía passa para a Cidade se ela estiver vazia.
 
 **Cartas:** Constante fica até o fim; Descarte resolve e vai para o descarte. Carta nova à venda na hora.
 
@@ -372,5 +378,5 @@ Responda sem consultar. Cada resposta diz o que reler.
 
 ## 8. Fontes
 
-- Galápagos Jogos. *King of Tokyo: livro de regras* (edição brasileira, código KOT201; arquivo "rules BR revised", folha de 8 páginas, PDF criado em 21/06/2016; tradução de Leonardo Zilio, revisão de Priscilla Freitas; ©2011-2016 IELLO USA LLC). Biblioteca de downloads da Asmodee Brasil, https://www.asmodee.com.br/download-library, item 1890 "KOT201 - King of Tokyo". Consultado em 05/11/2026.
+- Galápagos Jogos. *King of Tokyo: livro de regras* (edição brasileira, código KOT201; arquivo "rules BR revised", folha de 8 páginas, PDF criado em 21/06/2016; tradução de Leonardo Zilio, revisão de Priscilla Freitas; ©2011-2016 IELLO USA LLC). Biblioteca de downloads da Asmodee Brasil, item 1890 "KOT201 - King of Tokyo", baixado pela API pública da biblioteca: https://api-prd.mundogalapagos.com.br/library-download/store/file?id=1890&tagId=2&group=b2c. Consultado em 05/11/2026.
 - IELLO. *King of Tokyo: rulebook* (inglês, arquivo "KOT_Rules_EN_11-2023_Light", 8 páginas, novembro de 2023), https://iellogames.com/wp-content/uploads/2021/10/KOT_Rules_EN_11-2023_Light.pdf, linkado na página oficial do jogo, https://iellogames.com/jeux/king-of-tokyo/ (2 a 6 jogadores, 8+, 30 min; lançamento em 17/06/2016). Consultados em 05/11/2026.

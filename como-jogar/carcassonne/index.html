@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Como jogar Carcassonne: regras passo a passo | Elite Boardgamers</title>
+<meta name="description" content="Regras de Carcassonne passo a passo, conferidas no manual da Devir: montagem, cartelas, seguidores, pontos de estradas, cidades, monastérios e campos.">
+<link rel="canonical" href="https://eliteboardgamers.com.br/como-jogar/carcassonne/">
+<meta name="robots" content="max-image-preview:large">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Como jogar Carcassonne">
+<meta property="og:description" content="Regras de Carcassonne passo a passo, conferidas no manual da Devir: montagem, cartelas, seguidores, pontos de estradas, cidades, monastérios e campos.">
+<meta property="og:url" content="https://eliteboardgamers.com.br/como-jogar/carcassonne/">
+<meta property="og:image" content="https://eliteboardgamers.com.br/como-jogar/carcassonne/fotos/jogabilidade-1.webp">
+<link rel="icon" href="../../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32.png">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<link rel="preload" href="../../fontes/public-sans.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:"Public Sans";src:url(../../fontes/public-sans.woff2) format("woff2");font-weight:400 800;font-style:normal;font-display:swap}
+@font-face{font-family:"Public Sans";src:url(../../fontes/public-sans-italic.woff2) format("woff2");font-weight:400;font-style:italic;font-display:swap}
+/* Layout: o mesmo da página de lição do Discipulado (O Paladino): fundo preto (pedido do editor: preto no lugar do azul), faixa do banner, navegação fixa, coluna central de 760px com cartões claros de papel, filete dourado sobre os títulos de seção. Visual único (o site não tem tema claro). */
+:root{
+  color-scheme:dark;
+  --ground:#000; --panel:#0f1115; --panel2:#171a20; --line:#262a32; --line2:#2e333c;
+  --ink:#eceff3; --muted:#a1a9b5; --gold:#e3b23c;
+  --paper:#f4f5f7; --paper-ink:#14171c; --paper-muted:#5a6270; --paper-line:#dde1e7; --paper-text:#3a414c;
+  --link:#1f5fae; --ok:#1b7a45; --ok-bg:#e3f4ea; --cinza-bg:#eceef1; --ouro-bg:#fff4d1; --ouro-ink:#8a5f00;
+  --erro:#b3263e; --faixa-ouro:#1d1606; --ouro-claro:#f1ead6; --check:#4cc38a;
+  --f-body:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box}
+html{scroll-padding-top:64px}
+body{margin:0;background:var(--ground);color:var(--ink);font:16px/1.55 var(--f-body)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--panel)}
+h1,h2,h3,p,ul,ol,figure{margin:0}
+a{color:var(--link);text-underline-offset:.18em}
+::selection{background:var(--gold);color:#000}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px;border-radius:3px}
+.gut{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+
+.skip{position:absolute;left:-999px}.skip:focus{left:12px;top:8px;z-index:40;background:var(--gold);color:#000;padding:6px 10px}
+.aviso{background:var(--gold);color:#000;font-weight:800;font-size:.8rem;text-align:center}
+.aviso .gut{padding-block:6px}
+.topo{background:var(--ground)}
+.topo img{display:block;width:100%;max-width:640px;height:auto;margin:0 auto}
+.nav{background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line);position:sticky;top:env(safe-area-inset-top,0px);z-index:20}
+.nav ul{max-width:1120px;margin:0 auto;list-style:none;display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;padding-block:0}
+.nav a{display:block;padding:11px 12px;white-space:nowrap;color:var(--ink);text-decoration:none;font-weight:700;font-size:.92rem;border-bottom:3px solid transparent}
+.nav a[aria-current]{color:var(--gold);border-bottom-color:var(--gold)}
+
+.nota{max-width:760px;margin:0 auto;padding-block:20px 56px;display:grid;gap:16px}
+.trilha ol{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:4px 8px;font-size:.85rem;color:var(--muted)}
+.trilha li+li::before{content:"›";margin-right:8px;color:var(--muted)}
+.trilha a{color:var(--gold);font-weight:700;text-decoration:none}
+
+.bloco{background:var(--paper);color:var(--paper-ink);border-radius:10px;padding:20px;min-width:0;display:grid;gap:14px}
+.num-l{font-size:.8rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--paper-muted)}
+h1{font-size:clamp(1.7rem,5vw,2.4rem);line-height:1.12;font-weight:800;letter-spacing:-.015em;text-wrap:balance}
+.meta-e{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:.88rem;color:var(--paper-muted)}
+.meta{font-family:var(--mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.05em;color:var(--paper-muted)}
+
+.r1{background:var(--panel2);color:var(--ink);border:1px solid var(--line2);border-left:4px solid var(--gold)}
+.kick{font-size:.75rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--gold)}
+.r1 .resp{font-size:1.12rem;font-weight:600;line-height:1.45}
+.r1 ul{list-style:none;padding:0;display:grid;gap:8px}
+.r1 li{display:flex;gap:8px;align-items:flex-start;color:#dfe4ea}
+.r1 li svg{flex:none;width:20px;height:20px;margin-top:2px;stroke:var(--check);fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.r1 .pe{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:.88rem;color:var(--muted)}
+.r1 .pe b{color:var(--ink)}
+.legenda{display:flex;flex-wrap:wrap;gap:8px}
+.legenda span{font-size:.74rem;font-weight:800;letter-spacing:.04em;border-radius:999px;padding:3px 10px 3px 14px;background:var(--paper);color:var(--paper-ink)}
+.legenda .l1{box-shadow:inset 5px 0 0 var(--paper-ink)}.legenda .l2{box-shadow:inset 5px 0 0 var(--ok)}
+.legenda .l3{box-shadow:inset 5px 0 0 var(--gold)}.legenda .l4{box-shadow:inset 5px 0 0 var(--ouro-ink)}
+
+.indice h2,.sec>h2{font-size:1.15rem;font-weight:800;line-height:1.3;color:var(--paper-ink);border-top:3px solid var(--gold);padding-top:12px;text-wrap:balance;display:flex;gap:10px;align-items:baseline}
+.indice ol{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:2px 16px}
+.indice a{display:block;padding:6px 0;color:var(--paper-ink);text-decoration:none;font-weight:600;font-size:.94rem;border-bottom:1px solid var(--paper-line)}
+.indice a:hover{color:var(--link)}
+
+.sec>h2 .num{display:none}
+.sec h3{font-size:1.05rem;font-weight:800;margin-top:6px}
+.sec p{color:var(--paper-text);max-width:66ch}
+.sec ul,.sec ol{padding-left:1.3em;display:grid;gap:6px;color:var(--paper-text)}
+.sec ul{list-style:disc}
+.sec li::marker{color:var(--ouro-ink);font-weight:800}
+strong{font-weight:700;color:var(--paper-ink)}
+.pg{white-space:nowrap;font-size:.76em;color:var(--paper-muted);border:1px solid var(--paper-line);background:#fff;border-radius:4px;padding:0 5px;vertical-align:.08em;font-variant-numeric:tabular-nums}
+code{font-size:.9em;background:#fff;padding:1px 5px;border-radius:4px}
+
+.tab{overflow-x:auto;border:1px solid var(--paper-line);border-radius:8px;background:#fff}
+table{border-collapse:collapse;width:100%;font-size:.92rem;color:var(--paper-text)}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--paper-line);vertical-align:top}
+th{font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--paper-muted);background:var(--paper)}
+tr:last-child td{border-bottom:0}
+
+.call{border-radius:8px;padding:14px 16px;display:grid;gap:10px;min-width:0;background:#fff;border:1px solid var(--paper-line);border-left:4px solid var(--paper-muted)}
+.call .rot{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;font-weight:800;color:var(--paper-muted)}
+.call.entender{background:var(--cinza-bg);border-color:#d5d9df;border-left-color:var(--paper-ink)}
+.call.entender .rot{color:var(--paper-ink)}
+.call.passos{border-left-color:var(--ok)}
+.call.passos .rot{color:var(--ok)}
+.call.resolvido{background:var(--panel2);border-color:var(--line2);border-left-color:var(--gold)}
+.call.resolvido .rot{color:var(--gold)}
+.call.resolvido p,.call.resolvido li{color:#dfe4ea}
+.call.resolvido strong{color:#fff}
+.call.resolvido .pg{color:#c8ccd2;border-color:var(--line2)}
+.call.complete{border-left:4px dashed var(--gold)}
+.call.complete .rot{color:var(--ouro-ink)}
+.call.suavez{background:var(--faixa-ouro);border-color:#3a2e10;border-left-color:var(--gold)}
+.call.suavez .rot{color:var(--gold)}
+.call.suavez p,.call.suavez li{color:var(--ouro-claro)}
+.call.suavez strong{color:#fff}
+.call.suavez li::marker{color:var(--gold)}
+.call.suavez .pg{color:var(--ouro-claro);border-color:#3a2e10}
+.call.treino{background:var(--ouro-bg);border-color:#f0dfa6;border-left-color:var(--ouro-ink)}
+.call.treino .rot{color:var(--ouro-ink)}
+.call.atencao{border-left-color:var(--erro)}
+.call.atencao .rot{color:var(--erro)}
+.call.edicao{background:var(--paper);border-left-color:var(--paper-ink)}
+.call.edicao .rot{color:var(--paper-ink)}
+.call.dica{background:var(--ouro-bg);border-left-color:var(--gold)}
+.call.dica .rot{color:var(--ouro-ink)}
+.call ol,.call ul{padding-left:1.3em}
+.call .pg{background:transparent}
+
+.respostas{border:1px solid var(--paper-line);border-left:4px solid var(--ok);border-radius:8px;background:#fff}
+.respostas summary{cursor:pointer;padding:12px 16px;font-weight:800;color:var(--ok);list-style:none;min-height:44px;display:flex;align-items:center}
+.respostas summary::-webkit-details-marker{display:none}
+.respostas summary::before{content:"+";display:inline-grid;place-items:center;width:1.4em;height:1.4em;margin-right:8px;border-radius:50%;background:var(--ok-bg)}
+.respostas[open] summary::before{content:"−"}
+.respostas>div{padding:0 16px 16px;display:grid;gap:12px}
+
+.sec.rapido{outline:2px solid var(--gold);outline-offset:-2px}
+.sec.rapido>h2::after{content:"4 min de leitura";margin-left:auto;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:#000;background:var(--gold);border-radius:3px;padding:3px 8px;white-space:nowrap}
+.sec.rapido>p:first-of-type{font-size:1.02rem}
+.sec.ref{outline:2px solid var(--gold);outline-offset:-2px}
+.sec.ref>h2::after{content:"Leve para a mesa";margin-left:auto;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:#000;background:var(--gold);border-radius:3px;padding:3px 8px;white-space:nowrap}
+
+footer{border-top:1px solid var(--line);background:var(--panel);color:var(--muted);font-size:.85rem}
+footer .in{max-width:760px;margin:0 auto;padding-block:20px}
+@media (max-width:600px){
+  .bloco{padding:16px;border-radius:8px}
+  .sec.ref>h2::after{display:none}
+}
+/* essencial x opcional: o que não é essencial abre com um toque */
+.dobra{border:1px solid var(--paper-line);border-radius:8px;background:#fff}
+.dobra>summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:10px;padding:11px 14px;font-weight:700;font-size:.92rem;color:var(--paper-ink);min-height:44px}
+.dobra>summary::-webkit-details-marker{display:none}
+.dobra>summary::before{content:"+";flex:none;display:grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--paper-line);color:var(--paper-ink);font-weight:800;line-height:1}
+.dobra[open]>summary::before{content:"−"}
+.dobra>.call,.dobra>details,.dobra>aside{margin:0 12px 12px}
+.dobra.pratica>summary{color:var(--ouro-ink)}
+.dobra.pratica[open]{display:grid;gap:10px;padding-bottom:12px}
+.dobra.pratica>*:not(summary){margin:0 12px}
+.dobra.sec-opc{border-style:dashed}
+.dobra.sec-opc[open]{padding-bottom:12px}
+.dobra.sec-opc>*:not(summary){margin-left:14px;margin-right:14px}
+.tag-opc{margin-left:10px;font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;font-weight:800;color:var(--paper-muted);border:1px solid var(--paper-line);border-radius:3px;padding:2px 6px;vertical-align:middle}
+.legenda-f{font-size:.88rem;color:var(--muted)}.legenda-f b{color:var(--ink)}
+.mais-i{display:inline-grid;place-items:center;width:18px;height:18px;border-radius:50%;background:var(--paper-line);color:var(--paper-ink);font-weight:800;font-size:.8rem}
+.indice small{color:var(--muted);font-weight:400}
+.sec p,.sec li,.sec a{overflow-wrap:anywhere}
+
+.ico{display:inline-block;width:28px;height:28px;vertical-align:middle;border-radius:5px;margin-right:6px}
+td .ico{margin-right:6px}
+.rec{display:inline-flex;align-items:center;gap:0;white-space:nowrap}
+.cel{display:block;min-width:0}
+
+/* referências visuais (01/11/2026): figura do manual e vídeo no ponto da ação */
+.fig,.video{margin:4px 0;display:grid;gap:6px;min-width:0}
+.fig img{width:100%;height:auto;border-radius:8px;border:1px solid var(--paper-line);background:#fff}
+.fig figcaption,.video figcaption{font-size:.82rem;color:var(--paper-muted);line-height:1.45}
+.yt{position:relative;display:block;width:100%;padding:0;border:0;border-radius:8px;overflow:hidden;cursor:pointer;background:#000;aspect-ratio:16/9}
+.yt img{width:100%;height:100%;object-fit:cover;opacity:.85;display:block}
+.yt-play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:#c4302b;color:#fff;font-weight:800;font-size:.95rem;padding:10px 16px;border-radius:999px;white-space:nowrap;box-shadow:0 2px 10px rgba(0,0,0,.4)}
+.yt:hover .yt-play,.yt:focus-visible .yt-play{background:#e03a33}
+.video iframe{width:100%;aspect-ratio:16/9;border:0;border-radius:8px;display:block}
+/* fotos em todas as seções (04/11/2026): foto do jogo no topo e em cada seção sem figura do manual */
+.topo-cj{overflow:hidden}
+.foto-topo{margin:-20px -20px 4px;display:grid;gap:0}
+.foto-topo img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;background:#fff}
+.foto-topo figcaption{font-size:.78rem;color:var(--paper-muted);padding:6px 20px 0}
+.foto-topo.caixa img,.foto-sec.caixa img{object-fit:contain}
+.foto-sec img{aspect-ratio:16/9;object-fit:cover}
+@media (max-width:600px){.foto-topo{margin:-16px -16px 4px}.foto-topo figcaption{padding:6px 16px 0}}
+.sec.setup{border-top:4px solid var(--ok)}
+.sec.setup>h2::before{content:"Comece por aqui";display:block;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ok);margin-bottom:4px}
+.sec.setup>h2{display:block}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://eliteboardgamers.com.br/#organizacao", "name": "Elite Boardgamers", "url": "https://eliteboardgamers.com.br/", "logo": {"@type": "ImageObject", "url": "https://eliteboardgamers.com.br/marca/elite-boardgamers.webp", "width": 318, "height": 254}, "sameAs": ["https://www.instagram.com/eliteboardgamers/"]}, {"@type": "Article", "@id": "https://eliteboardgamers.com.br/como-jogar/carcassonne/#artigo", "mainEntityOfPage": "https://eliteboardgamers.com.br/como-jogar/carcassonne/", "headline": "Como jogar Carcassonne", "description": "Regras de Carcassonne passo a passo, conferidas no manual da Devir: montagem, cartelas, seguidores, pontos de estradas, cidades, monastérios e campos.", "image": ["https://eliteboardgamers.com.br/como-jogar/carcassonne/fotos/jogabilidade-1.webp"], "datePublished": "2026-11-05", "author": {"@type": "Organization", "name": "Redação Elite Boardgamers", "url": "https://eliteboardgamers.com.br/politica-editorial/"}, "publisher": {"@id": "https://eliteboardgamers.com.br/#organizacao"}, "inLanguage": "pt-BR"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Início", "item": "https://eliteboardgamers.com.br/"}, {"@type": "ListItem", "position": 2, "name": "Como jogar", "item": "https://eliteboardgamers.com.br/como-jogar/"}, {"@type": "ListItem", "position": 3, "name": "Como jogar Carcassonne", "item": "https://eliteboardgamers.com.br/como-jogar/carcassonne/"}]}]}</script>
+<style id="moldura">.busca-btn{display:grid;place-items:center;flex:none;width:44px;height:44px;padding:0;border:1px solid #3a3f48;border-radius:8px;background:none;color:#e9ecf1;cursor:pointer}.busca-btn:hover{border-color:#e3b23c;color:#e3b23c}.busca-btn[hidden]{display:none}.sino-btn{position:relative;display:grid;place-items:center;flex:none;width:44px;height:44px;padding:0;border:1px solid #3a3f48;border-radius:8px;background:none;color:#e9ecf1;cursor:pointer}.sino-btn:hover,.sino-btn.on{border-color:#e3b23c;color:#e3b23c}.sino-btn[hidden]{display:none}.sino-btn.on::after{content:"";position:absolute;right:7px;top:7px;width:8px;height:8px;border-radius:50%;background:#5fd38d;box-shadow:0 0 0 2px #111}footer .in a{display:inline-flex;align-items:center;min-height:24px}.cpw{position:relative;display:inline-block}.cp{display:inline-flex;align-items:center;justify-content:center;gap:8px;box-sizing:border-box;line-height:1.2;min-height:44px;margin:0;padding:10px 20px;border-radius:999px;border:0;background:#157a43;color:#fff;font:inherit;font-size:.95rem;font-weight:800;text-decoration:none;cursor:pointer}.cp:hover{background:#11683a;color:#fff}.cp .ic{width:19px;height:19px}.cp[hidden]{display:none}.cpw.mini .cp{min-height:40px;padding:8px 14px;font-size:.88rem}.cp-menu{position:absolute;z-index:30;top:calc(100% + 8px);left:0;min-width:200px;display:grid;gap:2px;padding:6px;border-radius:12px;background:#fff;border:1px solid #dde1e7;box-shadow:0 10px 30px rgba(0,0,0,.25)}.cp-menu[hidden]{display:none}.cp-menu.sobe{top:auto;bottom:calc(100% + 8px)}.cp-menu.dir{left:auto;right:0}.cp-op{display:flex;align-items:center;gap:10px;min-height:44px;padding:8px 12px;border:0;border-radius:8px;background:none;color:#14171c;font:inherit;font-size:.95rem;font-weight:700;text-align:left;text-decoration:none;cursor:pointer}.cp-op:hover,.cp-op:focus-visible{background:#eef1f4;color:#14171c}.cp-op .ic{width:20px;height:20px}.cp-op.zap-op .ic{color:#157a43}.cp-st{position:absolute;z-index:30;top:calc(100% + 8px);left:0;white-space:nowrap;margin:0;padding:6px 12px;border-radius:8px;background:#14171c;color:#fff;font-size:.85rem;font-weight:700}.cp-st:empty{display:none}.barra-lt .cp-st{top:auto;bottom:calc(100% + 8px)}.convite{display:flex;align-items:center;justify-content:space-between;gap:12px 20px;flex-wrap:wrap}.convite .cv-t{margin:0;font-weight:800;font-size:1.1rem}.convite .cv-s{margin:2px 0 0;font-size:.92rem;opacity:.8}.barra-lt>*{flex:none}.barra-lt{width:max-content;max-width:calc(100vw - 12px);box-sizing:border-box;position:fixed;z-index:25;left:50%;bottom:calc(12px + env(safe-area-inset-bottom));display:flex;align-items:center;gap:4px;padding:5px;border-radius:999px;background:#14171c;border:1px solid #3a3f48;box-shadow:0 8px 24px rgba(0,0,0,.35);transform:translate(-50%,0);transition:transform .25s ease,opacity .25s ease}.barra-lt.fora{transform:translate(-50%,calc(100% + 24px));opacity:0;pointer-events:none}.lt-b{display:inline-flex;align-items:center;gap:7px;min-height:44px;padding:8px 14px;border:0;border-radius:999px;background:none;color:#e9ecf1;font:inherit;font-size:.9rem;font-weight:700;text-decoration:none;cursor:pointer}.lt-b:hover{background:#262a31;color:#fff}.lt-b .ic{width:20px;height:20px}.barra-lt .lt-b.curtir{background:none;border:0;color:#e9ecf1;padding:8px 14px}.barra-lt .lt-b.curtir[aria-pressed=true]{color:#ff6b81;background:none}@media (max-width:479px){.lt-b span{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}}.lt-b.curtir[aria-pressed=true] .ic{fill:currentColor}.lt-grupo{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:44px;padding:0 14px 0 6px;border-radius:999px;background:#e3b23c;color:#14171c;font-size:.9rem;font-weight:800;text-decoration:none;white-space:nowrap}.lt-grupo:hover{background:#f0c44f;color:#14171c}.lt-grupo img{width:32px;height:32px;border-radius:8px;display:block}@media (max-width:479px){.barra-lt{gap:2px}.barra-lt .lt-b{padding:8px 10px}.barra-lt .cp{padding:8px 12px}.lt-grupo{padding:0 12px 0 6px}}@media (max-width:399px){.barra-lt:has(.curtir) .cp span{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}.barra-lt:has(.curtir) .cp{padding:8px 14px}}.barra-lt .cp{min-height:44px;padding:8px 16px;font-size:.9rem}body.lt-on .voltar-topo,body.lt-on button.sobe{bottom:calc(76px + env(safe-area-inset-bottom))}@media print{.barra-lt{display:none}}.interacoes{display:grid;gap:14px}.interacoes[hidden]{display:none}.curtir-l{display:flex;align-items:center;gap:12px;flex-wrap:wrap}.curtir{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:8px 18px;border-radius:999px;border:2px solid #b3263e;background:#fff;color:#b3263e;font:inherit;font-weight:800;cursor:pointer}.curtir .ic{width:22px;height:22px}.curtir[aria-pressed=true]{background:#b3263e;color:#fff}.curtir[aria-pressed=true] .ic{fill:currentColor}.curtir .n{font-variant-numeric:tabular-nums}.curtir-dica{font-size:.9rem;color:#5a6270}.interacoes h2{margin:4px 0 0}.coms{list-style:none;margin:0;padding:0;display:grid;gap:10px}.coms li{background:#fff;border:1px solid #dde1e7;border-radius:10px;padding:12px 14px}.com-quem{margin:0;font-size:.92rem}.com-quem time{color:#5a6270;font-size:.8rem;margin-left:6px}.com-txt{margin:4px 0 0;white-space:pre-wrap;color:#14171c}.coms-vazio{margin:0;color:#5a6270}.com-form{display:grid;gap:10px;border-top:1px solid #dde1e7;padding-top:14px}.com-form label{display:grid;gap:4px;font-weight:700;font-size:.9rem;color:#14171c}.com-form small{font-weight:600;color:#5a6270}.com-form input,.com-form textarea{font:inherit;font-size:16px;font-weight:400;padding:10px 12px;border:1px solid #c8cdd5;border-radius:8px;background:#fff;color:#14171c}.com-form textarea{resize:vertical;min-height:110px}.com-form .isca{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}.com-form button{justify-self:start;min-height:44px;padding:10px 20px;border-radius:999px;border:0;background:#14171c;color:#fff;font:inherit;font-weight:800;cursor:pointer}.com-form button:disabled{opacity:.6}.com-aviso{margin:0;font-size:.82rem;color:#5a6270}.com-aviso a{color:#1f5fae}.com-st{margin:0;font-weight:700;font-size:.92rem}.com-st:empty{display:none}.com-st.ok{color:#1b7a45}.com-st.erro{color:#a3223a}:where(html){scroll-padding-top:calc(var(--nav-h,49px) + 12px)}.nav{position:sticky;top:0;z-index:20}body .abas,body .barra-f,body .ctrl{top:var(--nav-h,49px)}.marca img.logo{width:auto;height:48px;border-radius:0}@media (max-width:480px){.marca img.logo{height:40px}}.nav .casa{display:flex;align-items:center;justify-content:center;min-width:44px}.nav .casa .ic{width:20px;height:20px}@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.card:hover,.jogo:hover .capa img,.jogo:active .capa,.zap:active,.post-btn:active,.btn-filtro:hover,.btn-filtro:active,.ver:active{transform:none!important}}.in{max-width:1180px;margin:0 auto;padding-left:16px;padding-right:16px}.ic{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round;flex:none}.bar{border-bottom:1px solid var(--line);background:#000;color:var(--ink)}.bar .in{display:flex;align-items:center;gap:12px;padding-top:8px;padding-bottom:8px}.bar a{color:inherit;text-decoration:none;font-weight:600;font-size:.95rem}.marca img{display:block;width:84px;border-radius:6px}.bar .ig{margin-left:auto;display:flex;align-items:center;gap:6px;padding:6px 10px;border-radius:6px}.bar .ig:hover{color:var(--gold)}.bar .zap-mini{display:flex;align-items:center;gap:6px;padding:6px 10px;border-radius:6px;background:#157a43;color:#fff}.nav ul{padding-left:16px;padding-right:16px}.nav ul li{list-style:none}@media (max-width:700px){.bar .ig span,.bar .zap-mini span{display:none}}footer{font-size:.9rem}footer .in{max-width:1180px;display:flex;flex-wrap:wrap;gap:6px 16px;padding-top:20px;padding-bottom:28px}footer a{color:var(--muted);text-decoration:none}footer a:hover{color:var(--gold)}</style>
+<style id="guia-extra">
+/* fotos na lista de tutoriais e no topo de /como-jogar/ (04/11/2026) */
+.topo-cj{overflow:hidden}
+.lista-t a.com-foto{grid-template-columns:96px 1fr;column-gap:14px;align-items:start}
+.lista-t a.com-foto>*{grid-column:2}
+.lista-t a.com-foto>img{grid-column:1;grid-row:1/span 4;width:96px;height:96px;object-fit:cover;border-radius:6px;background:#fff}
+.cj-mosaico{display:grid;grid-template-columns:2fr 1fr;grid-template-rows:1fr 1fr;gap:4px;margin:-20px -20px 4px;aspect-ratio:16/9;overflow:hidden}
+.cj-mosaico img{width:100%;height:100%;object-fit:cover;display:block;background:#fff}
+.cj-mosaico img:first-child{grid-row:1/span 2}
+.cj-mosaico-c{font-size:.78rem;color:var(--paper-muted)}
+@media (max-width:600px){.cj-mosaico{margin:-16px -16px 4px}.lista-t a.com-foto{grid-template-columns:72px 1fr}.lista-t a.com-foto>img{width:72px;height:72px}}
+/* faixa de progresso, presa logo abaixo do menu */
+.guia-prog{position:sticky;top:var(--nav-h,45px);z-index:15;background:var(--panel);border-bottom:1px solid var(--line)}
+.guia-prog a{display:flex;align-items:center;gap:10px;max-width:760px;margin:0 auto;padding:9px 16px;color:var(--ink);text-decoration:none;font-size:.86rem;font-weight:700;min-height:40px}
+.guia-prog .gp-r{flex:none;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--gold)}
+.guia-prog .gp-t{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.guia-prog .gp-i{margin-left:auto;flex:none;font-size:.78rem;color:var(--muted);font-weight:600}
+.guia-prog .gp-b{position:absolute;left:0;right:0;bottom:-1px;height:3px;background:var(--gold);transform-origin:0 50%;transform:scaleX(0)}
+html{scroll-padding-top:calc(var(--nav-h,45px) + 56px)}
+/* legenda dos blocos: pontos de cor em vez de pílulas */
+.legenda{gap:6px 16px}
+.legenda span{position:relative;background:none;color:var(--muted);box-shadow:none!important;padding:0 0 0 16px;font-size:.8rem;letter-spacing:0}
+.legenda span::before{content:"";position:absolute;left:0;top:.32em;width:10px;height:10px;border-radius:3px;background:var(--paper)}
+.legenda .l2::before{background:var(--ok)}.legenda .l3::before{background:var(--gold)}.legenda .l4::before{background:var(--ouro-ink)}
+/* índice numerado */
+.indice ol{counter-reset:it}.indice li{counter-increment:it}
+.indice a{display:flex;gap:10px;align-items:baseline;min-height:40px;padding:9px 0}
+.indice a::before{content:counter(it);flex:none;width:1.6em;font-size:.8rem;font-weight:800;color:var(--ouro-ink);font-variant-numeric:tabular-nums}
+.nota-pe{color:var(--muted);font-size:.85rem;padding:4px 2px 0}
+/* exercícios de múltipla escolha: tocou numa opção, aparece a certa e a explicação */
+.quiz{display:grid;gap:8px;padding:12px 0;border-top:1px solid var(--paper-line)}.quiz:first-of-type{border-top:0}
+.q-p{font-weight:700;color:inherit}
+.q-ops{display:grid;gap:6px}
+.q-op{display:block;width:100%;text-align:left;font:inherit;font-size:.95rem;line-height:1.35;min-height:44px;padding:10px 12px;border-radius:8px;
+ border:1px solid #c8cdd5;background:#fff;color:#14171c;cursor:pointer}
+.q-op:hover{border-color:var(--gold)}.q-op:disabled{cursor:default}
+.q-op.ok{background:#e3f4ea;border-color:#1b7a45;color:#0f4d2b;font-weight:700}.q-op.ok::before{content:"✓ ";font-weight:800}
+.q-op.erro{background:#fbe6e9;border-color:#b3263e;color:#7d1a2b}.q-op.erro::before{content:"✗ ";font-weight:800}
+.q-exp{border-left:4px solid var(--ok);background:#f2faf5;color:#14171c;border-radius:6px;padding:8px 12px}
+.q-exp .q-res{color:var(--ok)}.q-exp.mal{border-left-color:#b3263e;background:#fdf3f4}.q-exp.mal .q-res{color:#b3263e}
+.call.suavez .q-op,.call.resolvido .q-op{border-color:#3a2e10}
+/* endereços longos (fontes) quebram em vez de alargar a página */
+.sec a,.sec li,.sec p{overflow-wrap:anywhere}
+/* títulos das etapas com mais respiro */
+.sec{scroll-margin-top:calc(var(--nav-h,45px) + 56px)}
+@media (min-width:601px){.sec{padding:24px 28px}}
+/* tabelas: fichas no celular (menos as grades de células curtas, que ficam tabela e centralizadas) */
+.tab table.grade th,.tab table.grade td{text-align:center;padding:7px 6px}
+.tab table.grade th{white-space:normal;overflow-wrap:anywhere;hyphens:auto}
+@media (max-width:600px){
+ .tab:not(:has(.grade)){border:0;background:none;overflow:visible;border-radius:0}
+ .tab:not(:has(.grade)) table,.tab:not(:has(.grade)) tbody,.tab:not(:has(.grade)) tr,.tab:not(:has(.grade)) td{display:block}
+ .tab:not(:has(.grade)) thead{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+ .tab:not(:has(.grade)) tr{background:#fff;border:1px solid var(--paper-line);border-radius:8px;padding:10px 12px;margin-bottom:8px}
+ .tab:not(:has(.grade)) td{border:0;padding:3px 0;display:grid;grid-template-columns:6.5em minmax(0,1fr);gap:8px}
+ .tab:not(:has(.grade)) td::before{content:attr(data-label);font-size:.7rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--paper-muted);padding-top:3px}
+ .tab:not(:has(.grade)) td:empty{display:none}
+ .tab:not(:has(.grade)) td:first-child{display:block;font-weight:800;color:var(--paper-ink);padding-bottom:4px}
+ .tab:not(:has(.grade)) td:first-child::before{display:none}
+}
+</style>
+</head>
+<body>
+<!--moldura--><a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<header class="bar" id="topo"><div class="in">
+ <a class="marca" href="../../"><img class="logo" src="../../marca/logo-eb-104.webp" srcset="../../marca/logo-eb-52.webp 157w, ../../marca/logo-eb-104.webp 314w, ../../marca/logo-eb-156.webp 472w" sizes="(max-width: 480px) 121px, 145px" width="157" height="52" alt="Elite Board Gamers: página inicial"></a>
+ <a class="ig" href="https://www.instagram.com/eliteboardgamers/" target="_blank" rel="noopener" aria-label="Instagram @eliteboardgamers"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6" fill="currentColor"/></svg><span>@eliteboardgamers</span></a>
+ <a class="zap-mini" href="https://chat.whatsapp.com/IgQQkJdSkzHBaEq3UwFeAo" target="_blank" rel="noopener" aria-label="Grupo do WhatsApp"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8.4 19l-4.4 1Z"/><path d="M9.2 8.6c.3-.5.8-.5 1-.1l.7 1.5c.1.3 0 .6-.2.8l-.4.4c.5 1.1 1.4 2 2.5 2.5l.4-.4c.2-.2.5-.3.8-.2l1.5.7c.4.2.4.7-.1 1-.7.5-1.6.6-2.4.3a7 7 0 0 1-4.2-4.2c-.3-.8-.2-1.7.4-2.3Z"/></svg><span>Grupo do WhatsApp</span></a>
+ <button type="button" class="busca-btn" aria-label="Buscar no site" aria-haspopup="dialog" aria-keyshortcuts="/ Control+K" hidden><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></button>
+ <button type="button" class="sino-btn" aria-label="Receber notificações" aria-haspopup="dialog" aria-expanded="false" hidden><svg class="ic" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 3a6 6 0 0 0-6 6v3.6L4.3 15.5A1 1 0 0 0 5.2 17h13.6a1 1 0 0 0 .9-1.5L18 12.6V9a6 6 0 0 0-6-6z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M9.5 19.5a2.6 2.6 0 0 0 5 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+</div></header>
+<script src="/sino.js?v=2" defer></script>
+<script>(()=>{const b=document.querySelector('.busca-btn');let c;b.hidden=false;const a=()=>{c=c||new Promise((r,j)=>{const s=document.createElement('script');s.src='../../busca.js';s.onload=r;s.onerror=()=>{c=null;j()};document.head.append(s)});c.then(()=>abrirBusca('../../'),()=>{})};b.addEventListener('click',a);addEventListener('keydown',e=>{const t=e.target,ed=t.isContentEditable||/^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName);if((e.key==='/'&&!ed&&!e.ctrlKey&&!e.metaKey)||((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k')){e.preventDefault();a()}})})()</script>
+<nav class="nav" aria-label="Seções do site"><ul class="in"><li><a class="casa" href="../../" aria-label="Página inicial"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 9.5V20h13V9.5"/><path d="M10 20v-5.5h4V20"/></svg></a></li><li><a href="../../noticias/">Notícias</a></li><li><a href="../../resenhas/">Resenhas</a></li><li><a href="../../como-jogar/" aria-current="true">Como jogar</a></li><li><a href="../../lancamentos/">Lançamentos</a></li><li><a href="../../black/">Black de Verdade</a></li></ul></nav>
+<script>(()=>{const n=document.querySelector('.nav'),h=()=>document.documentElement.style.setProperty('--nav-h',n.offsetHeight+'px');h();addEventListener('resize',h);addEventListener('load',h)})()</script>
+<div class="guia-prog"><a href="#neste-guia"><span class="gp-r">Guia</span><span class="gp-t">Neste guia</span><span class="gp-i">Índice</span></a><span class="gp-b" aria-hidden="true"></span></div><!--/moldura-->
+
+<main id="conteudo" class="gut"><div class="nota">
+  <nav class="trilha" aria-label="Trilha de navegação"><ol><li><a href="../../">Início</a></li><li><a href="../">Como jogar</a></li><li aria-current="page">Carcassonne</li></ol></nav>
+
+  <article class="bloco topo-cj">
+    <figure class="foto-topo"><img src="fotos/jogabilidade-1.webp" alt="Carcassonne: uma partida em andamento" width="1200" height="800" fetchpriority="high" decoding="async"><figcaption>Imagem: Z-Man Games (partida em andamento)</figcaption></figure>
+    <span class="num-l">Colocação de peças · Família</span>
+    <h1>Como jogar Carcassonne</h1>
+    <p class="meta-e"><span>Para quem nunca jogou</span><span>2 a 5 jogadores</span><span>35 min</span><span>7+</span><span>Edição Devir</span></p>
+    <p class="meta"><time datetime="2026-11-05">5 de novembro de 2026</time> · Redação Elite Boardgamers</p>
+  </article>
+
+  <section class="bloco r1" aria-label="Resumo em 1 minuto">
+    <span class="kick">Resumo em 1 minuto</span>
+    <p class="resp">Você coloca uma cartela de terreno por turno, põe seguidores em estradas, cidades, monastérios e campos, e vence quem tiver mais pontos quando as cartelas acabarem.</p>
+    <ul><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.5l4.5 4.5L19.5 6.5"/></svg><span>No seu turno, você coloca uma cartela continuando o terreno e pode pôr um seguidor nela, numa zona que ainda não tenha seguidor.</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.5l4.5 4.5L19.5 6.5"/></svg><span>Estrada concluída vale 1 ponto por cartela; cidade concluída, 2 por cartela e 2 por brasão; monastério cercado, 9. O seguidor volta para a reserva.</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.5l4.5 4.5L19.5 6.5"/></svg><span>Quando as cartelas acabam, o que ficou pela metade ainda pontua (a cidade vale a metade), e os fazendeiros ganham 3 por cidade concluída no seu campo.</span></li></ul>
+    <p class="pe"><span><b>Como você aprende:</b> 3 etapas, da mesa montada à contagem de pontos</span><span><b>Leitura do essencial:</b> cerca de 7 min</span></p>
+    <p class="legenda-f"><b>À vista, só o essencial para jogar.</b> O que abre com <span class="mais-i">+</span> é explicação, exemplo, exercício ou regra de caso especial: abra quando precisar.</p>
+  </section>
+
+<section class="bloco sec setup" id="montar-a-mesa-passo-a-passo"><h2><span class="num"></span>Montar a mesa passo a passo</h2>
+<p>A montagem segue a seção "Componentes e preparação" do manual <span class="pg">p.&nbsp;2</span>, na mesma ordem. É igual para 2, 3, 4 ou 5 jogadores; muda só quantas cores de seguidor ficam na mesa.</p>
+<p><strong>O que vem na caixa</strong> (p. 2; catálogo Devir de 2026):</p>
+<div class="tab"><table><thead><tr><th>Componente</th><th>Quantidade</th></tr></thead><tbody><tr><td data-label="Componente">Cartelas de terreno, contando a cartela inicial</td><td data-label="Quantidade">72</td></tr><tr><td data-label="Componente">Cartelas de rio (mini-expansão O Rio, verso mais escuro)</td><td data-label="Quantidade">12</td></tr><tr><td data-label="Componente">Seguidores de madeira: amarelo, vermelho, verde, azul e preto</td><td data-label="Quantidade">40, 8 de cada cor</td></tr><tr><td data-label="Componente">Abades de madeira (mini-expansão O Abade), um de cada cor</td><td data-label="Quantidade">5</td></tr><tr><td data-label="Componente">Marcador de pontos (o tabuleiro da trilha de pontos)</td><td data-label="Quantidade">1</td></tr></tbody></table></div>
+<figure class="fig"><img src="figuras/setup-cartelas.webp" alt="Cartelas de terreno: com pedaço de cidade (a parte murada), com estrada e com monastério no centro. Ilustração: manual Devir (p. 2)" loading="lazy" decoding="async"><figcaption>Cartelas de terreno: com pedaço de cidade (a parte murada), com estrada e com monastério no centro. Ilustração: manual Devir <span class="pg">p.&nbsp;2</span></figcaption></figure>
+<ol><li><strong>Separe a cartela inicial e as 12 cartelas de rio</strong>, as únicas de verso mais escuro <span class="pg">p.&nbsp;2</span>. As de rio são da mini-expansão O Rio, que substitui a cartela inicial pela do Manancial (suplemento, p. 2); o manual não diz o que fazer com elas no jogo base, e este guia as deixa na caixa.</li></ol>
+<figure class="fig"><img src="figuras/setup-versos.webp" alt="O verso normal, o verso mais escuro (cartela inicial e rio) e uma cartela de rio vista de frente. Ilustração: manual Devir (p. 2)" loading="lazy" decoding="async"><figcaption>O verso normal, o verso mais escuro (cartela inicial e rio) e uma cartela de rio vista de frente. Ilustração: manual Devir <span class="pg">p.&nbsp;2</span></figcaption></figure>
+<ol start="2"><li><strong>Ponha a cartela inicial no centro da mesa, virada para cima</strong> <span class="pg">p.&nbsp;2</span>. Na figura do manual, ela mostra um pedaço de cidade murada numa borda e uma estrada que atravessa a cartela de um lado ao outro, com campo dos dois lados da estrada. É dela que o terreno vai crescer.</li><li><strong>Misture as outras 71 cartelas de terreno, viradas para baixo, e faça vários montes</strong> em volta da mesa, de modo que todos alcancem um monte com facilidade <span class="pg">p.&nbsp;2</span>.</li></ol>
+<figure class="fig"><img src="figuras/setup-inicial.webp" alt="A cartela inicial, virada para cima, e dois montes de cartelas viradas para baixo. Ilustração: manual Devir (p. 2)" loading="lazy" decoding="async"><figcaption>A cartela inicial, virada para cima, e dois montes de cartelas viradas para baixo. Ilustração: manual Devir <span class="pg">p.&nbsp;2</span></figcaption></figure>
+<ol start="4"><li><strong>Coloque o marcador de pontos num canto da mesa</strong> <span class="pg">p.&nbsp;2</span>.</li><li><strong>Cada jogador escolhe uma cor e pega as 8 figuras dela.</strong> Sete ficam à frente do jogador: são a sua <strong>reserva</strong>, os seguidores que ele vai pôr no terreno <span class="pg">p.&nbsp;2</span>.</li><li><strong>A oitava figura de cada cor vai para o espaço 0 do marcador de pontos.</strong> Ela só marca os pontos do dono <span class="pg">p.&nbsp;2</span>.</li></ol>
+<figure class="fig"><img src="figuras/setup-marcador.webp" alt="O marcador de pontos, com uma figura de cada cor no espaço 0. Ilustração: manual Devir (p. 2)" loading="lazy" decoding="async"><figcaption>O marcador de pontos, com uma figura de cada cor no espaço 0. Ilustração: manual Devir <span class="pg">p.&nbsp;2</span></figcaption></figure>
+<ol start="7"><li><strong>Devolva à caixa as figuras das cores que ninguém escolheu e os 5 abades</strong> <span class="pg">p.&nbsp;2</span>; os abades, "nas primeiras partidas".</li></ol>
+<figure class="fig"><img src="figuras/setup-seguidores.webp" alt="Em cima, os seguidores das cinco cores; embaixo, os abades. Ilustração: manual Devir (p. 2)" loading="lazy" decoding="async"><figcaption>Em cima, os seguidores das cinco cores; embaixo, os abades. Ilustração: manual Devir <span class="pg">p.&nbsp;2</span></figcaption></figure>
+<ol start="8"><li><strong>Decidam se jogam com fazendeiros.</strong> O manual sugere deixá-los de fora nas primeiras partidas e usá-los depois de algumas <span class="pg">p.&nbsp;6</span>. Eles são explicados na etapa 3.</li><li><strong>Defina quem começa.</strong> O jogador mais jovem começa, e a vez segue no sentido horário <span class="pg">p.&nbsp;3</span>.</li></ol>
+<p><strong>O que muda com o número de jogadores</strong> <span class="pg">p.&nbsp;2</span>:</p>
+<div class="tab"><table><thead><tr><th>Jogadores</th><th>Seguidores em jogo (na reserva)</th><th>Figuras no marcador</th><th>Figuras que voltam à caixa</th></tr></thead><tbody><tr><td data-label="Jogadores">2</td><td data-label="Seguidores em jogo (na reserva)">14 (7 de cada)</td><td data-label="Figuras no marcador">2</td><td data-label="Figuras que voltam à caixa">24 seguidores e os 5 abades</td></tr><tr><td data-label="Jogadores">3</td><td data-label="Seguidores em jogo (na reserva)">21</td><td data-label="Figuras no marcador">3</td><td data-label="Figuras que voltam à caixa">16 seguidores e os 5 abades</td></tr><tr><td data-label="Jogadores">4</td><td data-label="Seguidores em jogo (na reserva)">28</td><td data-label="Figuras no marcador">4</td><td data-label="Figuras que voltam à caixa">8 seguidores e os 5 abades</td></tr><tr><td data-label="Jogadores">5</td><td data-label="Seguidores em jogo (na reserva)">35</td><td data-label="Figuras no marcador">5</td><td data-label="Figuras que voltam à caixa">nenhum seguidor; os 5 abades</td></tr></tbody></table></div>
+<p>Nada mais muda, e ninguém recebe cartela antes de começar <span class="pg">p.&nbsp;2 e 3</span>.</p>
+<p><strong>Antes de começar, confira:</strong> cartela inicial no centro; cartelas de rio e abades na caixa; as outras cartelas em montes, viradas para baixo; marcador de pontos no canto, com uma figura de cada jogador no 0; 7 seguidores na reserva de cada um; combinado se há fazendeiros; quem começa definido.</p>
+<div class="quiz"><p class="q-p">Partida de 3 jogadores. Quantos seguidores cada um tem na reserva, e quantas figuras voltam para a caixa?</p><div class="q-ops"><button type="button" class="q-op">8 na reserva; voltam 16 figuras</button><button type="button" class="q-op" data-ok>7 na reserva; voltam 16 seguidores e os 5 abades</button><button type="button" class="q-op">7 na reserva; voltam só os 5 abades</button><button type="button" class="q-op">8 na reserva; voltam 16 seguidores e os 5 abades</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Cada um fica com 7 na reserva e põe a oitava figura no 0 do marcador. As duas cores que sobraram (16 figuras) e os abades voltam para a caixa <span class="pg">p.&nbsp;2</span>.</p></div></div>
+</section>
+<section class="bloco sec rapido" id="comece-a-jogar-em-4-minutos"><h2><span class="num"></span>Comece a jogar em 4 minutos</h2>
+<figure class="fig foto-sec"><img src="fotos/componentes-1.webp" alt="Carcassonne: os componentes" width="1200" height="900" loading="lazy" decoding="async"><figcaption>Imagem: Z-Man Games</figcaption></figure>
+<p><strong>Meta:</strong> em 4 minutos de leitura, montar a mesa e jogar o seu primeiro turno sem abrir o manual.</p>
+<h3>A ideia do jogo</h3>
+<p>Juntos, os jogadores montam o mapa da região em volta da cidade de Carcassonne, uma <strong>cartela de terreno</strong> por turno. Cada cartela continua as estradas, as cidades e os campos que já estão na mesa. Quem põe um <strong>seguidor</strong> numa estrada, numa cidade ou num monastério ganha pontos quando essa construção fica <strong>concluída</strong>. Vence quem tiver mais pontos depois que a última cartela for colocada.</p>
+<h3>Monte a mesa</h3>
+<p>A montagem completa, com figuras, está na seção "Montar a mesa passo a passo", logo acima. O essencial <span class="pg">p.&nbsp;2 e 3</span>:</p>
+<ol><li>Cartela inicial no centro; as outras, viradas para baixo, em montes. Cartelas de rio e abades ficam na caixa.</li><li>Marcador de pontos no canto, com uma figura de cada jogador no 0.</li><li>Cada jogador fica com 7 seguidores da sua cor.</li><li>O mais jovem começa; a vez segue no sentido horário.</li></ol>
+<h3>Seu primeiro turno</h3>
+<p>O turno tem três passos, sempre nesta ordem <span class="pg">p.&nbsp;3</span>:</p>
+<div class="tab"><table><thead><tr><th>Passo</th><th>O que você faz</th></tr></thead><tbody><tr><td data-label="Passo">1. Colocar uma cartela</td><td data-label="O que você faz">Obrigatório. Pegue uma de um monte e encoste-a em outra, continuando o desenho: estrada com estrada, cidade com cidade, campo com campo</td></tr><tr><td data-label="Passo">2. Colocar um seguidor</td><td data-label="O que você faz"><span class="cel">Opcional. Ponha um seguidor da reserva <strong>na cartela que você acabou de colocar</strong>, numa estrada, cidade, monastério ou campo que ainda não tenha seguidor</span></td></tr><tr><td data-label="Passo">3. Contar pontos</td><td data-label="O que você faz">Obrigatório. Toda estrada, cidade ou monastério com seguidor que a sua cartela concluiu pontua agora</td></tr></tbody></table></div>
+<p>O seguidor muda de nome conforme o lugar: na estrada é <strong>ladrão</strong>, na cidade é <strong>cavaleiro</strong>, no monastério é <strong>monge</strong> <span class="pg">p.&nbsp;3 e 4</span>. O seguidor deitado no campo (fazendeiro) fica para a <a href="#etapa-3-fim-da-partida-e-fazendeiros">etapa 3</a>.</p>
+<aside class="call resolvido"><p class="rot">Tarefa · exemplo resolvido</p><p><strong>Exemplo resolvido.</strong> Ana começa. Encosta uma cartela de estrada reta na cartela inicial, estrada com estrada e campo com campo. Põe um ladrão nessa estrada, que não tinha seguidor. A estrada não terminou dos dois lados, então ninguém pontua, e a vez passa para Bruno.</p></aside>
+<aside class="call complete"><p class="rot">Tarefa · complete</p><p><strong>Complete.</strong> Agora é Bruno. Ele pega uma cartela que continua a mesma estrada de Ana e também tem um pedaço de cidade.</p>
+<div class="quiz"><p class="q-p">Bruno pode pôr um ladrão na estrada dessa cartela?</p><div class="q-ops"><button type="button" class="q-op">Pode: a cartela é nova, então a estrada nela é outra</button><button type="button" class="q-op" data-ok>Não: a estrada é a mesma em que Ana já tem um ladrão</button><button type="button" class="q-op">Pode, desde que fique com mais ladrões que Ana</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Não. O seguidor só entra numa zona que não tenha outro seguidor, e a estrada continua sendo a mesma, mesmo em outra cartela <span class="pg">p.&nbsp;3</span>.</p></div></div></aside>
+<aside class="call suavez"><p class="rot">Tarefa · sua vez</p><p><strong>Agora a sua mesa.</strong> Olhe a cartela que você pegou antes de escolher onde encostá-la.</p>
+<div class="quiz"><p class="q-p">Você quer pôr um seguidor numa cidade vazia que está numa cartela colocada há três turnos. Pode?</p><div class="q-ops"><button type="button" class="q-op">Pode, se a cidade estiver vazia</button><button type="button" class="q-op" data-ok>Não: o seguidor só vai na cartela que você colocou neste turno</button><button type="button" class="q-op">Pode, mas aí você não coloca cartela neste turno</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Não. "Só é permitido colocar um seguidor na mesma cartela que você acabou de colocar" <span class="pg">p.&nbsp;5</span>.</p></div></div></aside>
+<h3>Ainda não precisa saber</h3>
+<p>Quanto vale cada construção concluída e como se divide uma cidade com dois cavaleiros: <a href="#etapa-2-pontuar-durante-a-partida">etapa 2</a>. O que acontece no fim com o que ficou pela metade, e os fazendeiros: <a href="#etapa-3-fim-da-partida-e-fazendeiros">etapa 3</a>. Abra a etapa quando chegar a hora.</p>
+<h3>Como a partida acaba</h3>
+<p>A partida termina quando não houver mais cartela para pegar e colocar. Aí se contam os pontos das construções que ficaram sem concluir e dos campos, e vence quem tiver mais pontos no marcador <span class="pg">p.&nbsp;6</span>.</p>
+<p><strong>Prefere ver?</strong> As regras em vídeo, pelo canal da Devir, a editora brasileira. Ele complementa este guia; em caso de diferença, vale o manual.</p>
+<figure class="video"><button type="button" class="yt" data-id="T6ofmrjl2M4" data-t="0" aria-label="Assistir ao vídeo"><img src="https://i.ytimg.com/vi/T6ofmrjl2M4/hqdefault.jpg" alt="" loading="lazy" decoding="async" width="480" height="360"><span class="yt-play">▶ Assistir ao vídeo</span></button><figcaption>DEVIR BRASIL I Carcassonne - regras rápidas, canal Devir TV Brasil · <a href="https://www.youtube.com/watch?v=T6ofmrjl2M4&amp;t=0s" rel="noopener">abrir no YouTube</a></figcaption></figure>
+<aside class="call atencao"><p class="rot">Atenção</p><p><strong>Os três erros mais caros.</strong> O seguidor só vai na cartela que você acabou de colocar, nunca numa antiga. Não se põe seguidor numa estrada, cidade ou campo que já tem seguidor, mesmo que ele esteja longe. E o seguidor que pontuou volta para a sua reserva.</p></aside>
+</section>
+  <nav class="bloco indice" id="neste-guia" aria-label="Neste guia"><h2>Neste guia</h2><ol><li><a href="#montar-a-mesa-passo-a-passo">Montar a mesa passo a passo</a></li><li><a href="#comece-a-jogar-em-4-minutos">Comece a jogar em 4 minutos</a></li><li><a href="#antes-de-tudo-o-que-e-este-jogo">Antes de tudo: o que é este jogo</a> <small>(opcional)</small></li><li><a href="#como-este-guia-ensina">Como este guia ensina</a> <small>(opcional)</small></li><li><a href="#etapa-1-colocar-a-cartela-e-o-seguidor">Etapa 1: colocar a cartela e o seguidor</a></li><li><a href="#etapa-2-pontuar-durante-a-partida">Etapa 2: pontuar durante a partida</a></li><li><a href="#etapa-3-fim-da-partida-e-fazendeiros">Etapa 3: fim da partida e fazendeiros</a></li><li><a href="#situacoes-especiais">Situações especiais</a> <small>(opcional)</small></li><li><a href="#avaliacao-final">Avaliação final</a> <small>(opcional)</small></li><li><a href="#para-consultar-durante-a-partida">Para consultar durante a partida</a></li><li><a href="#fontes">Fontes</a></li></ol></nav>
+
+<section class="bloco sec opc" id="antes-de-tudo-o-que-e-este-jogo"><h2><span class="num">0</span>Antes de tudo: o que é este jogo<span class="tag-opc">Opcional</span></h2>
+<figure class="fig foto-sec caixa"><img src="fotos/capa-1.webp" alt="Carcassonne: a caixa" width="1500" height="1500" loading="lazy" decoding="async"><figcaption>Imagem: Z-Man Games</figcaption></figure>
+<details class="dobra sec-opc"><summary>Abrir esta seção</summary><p>Carcassonne é um jogo de montar um mapa. Não há tabuleiro: o terreno nasce da cartela inicial e cresce uma cartela por turno. Cada cartela tem pedaços de estrada, cidade, campo ou monastério e precisa encaixar no que já está na mesa <span class="pg">p.&nbsp;2 e 3</span>.</p>
+<p>O seguidor reivindica a construção inteira, não só a cartela em que está, e ela dá pontos a quem tiver seguidor nela quando fica concluída, mesmo que outro jogador a tenha fechado <span class="pg">p.&nbsp;3</span>.</p>
+<p>Se uma construção tiver seguidores de mais de um jogador, ela pontua para quem tiver mais seguidores nela <span class="pg">p.&nbsp;5</span>.</p>
+<p>Duas ideias sustentam o resto:</p>
+<ul><li><strong>Os seguidores são poucos e voltam.</strong> Cada um tem 7, e o seguidor só volta para a reserva quando a construção dele é pontuada <span class="pg">p.&nbsp;2 e 4</span>.</li><li><strong>Todos constroem o mesmo mapa.</strong> A cartela que você coloca pode completar a cidade de outro jogador, ou encostar uma cidade sua na dele. Dá para ajudar, atrapalhar e até tomar uma cidade alheia <span class="pg">p.&nbsp;5 e 6</span>.</li></ul></details>
+</section>
+<section class="bloco sec opc" id="como-este-guia-ensina"><h2><span class="num">1</span>Como este guia ensina<span class="tag-opc">Opcional</span></h2>
+<figure class="fig foto-sec"><img src="fotos/componentes-1.webp" alt="Carcassonne: os componentes" width="1200" height="900" loading="lazy" decoding="async"><figcaption>Imagem: Z-Man Games</figcaption></figure>
+<details class="dobra sec-opc"><summary>Abrir esta seção</summary><p>Três etapas: colocar a cartela e o seguidor, pontuar durante o jogo, fechar a partida com a contagem final e os fazendeiros. Cada etapa traz <strong>Para entender</strong> (o porquê), <strong>Passo a passo</strong> (a regra exata), casos especiais a um toque e tarefas com ajuda que diminui: <strong>exemplo resolvido</strong>, <strong>complete</strong> e <strong>sua vez</strong>. Toque numa opção para ver a resposta e a explicação. No fim, uma avaliação diz o que reler, e uma folha de consulta vai para a mesa.</p></details>
+</section>
+<section class="bloco sec" id="etapa-1-colocar-a-cartela-e-o-seguidor"><h2><span class="num">2</span>Etapa 1: colocar a cartela e o seguidor</h2>
+<details class="dobra entender"><summary>Por que funciona assim</summary><aside class="call entender"><p>As cartelas de terreno têm quatro tipos de lugar, que o manual chama de <strong>zonas</strong> <span class="pg">p.&nbsp;5</span>: <strong>estrada</strong> (o caminho claro), <strong>cidade</strong> (a parte murada, com casas), <strong>monastério</strong> (a construção no centro da cartela) e <strong>campo</strong> (o verde em volta de tudo; no suplemento, p. 1).</p>
+<p>Uma zona pode atravessar muitas cartelas. Uma estrada que segue por quatro cartelas é uma estrada só. O seguidor reivindica a zona inteira, e por isso não pode entrar numa zona que já tem seguidor <span class="pg">p.&nbsp;3 e 5</span>.</p>
+<p>Dentro de uma mesma cartela também pode haver várias zonas. No exemplo do manual, a estrada à direita de um cruzamento era uma zona, e a cidade da mesma cartela, outra <span class="pg">p.&nbsp;3</span>; e os campos são separados pelas cidades e pelas estradas, de modo que uma cartela pode mostrar mais de um campo (suplemento, p. 1).</p>
+<p>Algumas cartelas de cidade têm um <strong>brasão</strong>, um pequeno escudo azul e branco. Ele vale pontos a mais quando a cidade é pontuada <span class="pg">p.&nbsp;4</span>.</p></aside></details>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Colocar a cartela</strong> (p. 3 a 5)</p>
+<ol><li>Pegue uma cartela de qualquer monte e olhe-a. Você é obrigado a colocá-la.</li><li>Encoste-a no terreno de modo que ela toque pelo menos um lado de uma cartela já colocada. Encostar só pela ponta, na diagonal, não vale.</li><li>Gire a cartela como quiser, desde que ela dê continuidade ao terreno: estrada encosta em estrada, cidade em cidade, campo em campo, em todos os lados que tocam outra cartela.</li></ol></aside>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Colocar um seguidor</strong> (p. 3 a 5)</p>
+<ol><li>Se quiser, pegue um seguidor da sua reserva. Você pode pôr no máximo um por turno, e pode não pôr nenhum.</li><li>Ponha-o na cartela que você acabou de colocar, numa das zonas dela: na estrada, como ladrão; na cidade, como cavaleiro; no monastério, como monge.</li><li>Antes, siga a zona escolhida pelas outras cartelas: se houver outro seguidor nela, de qualquer jogador, inclusive seu, você não pode pôr o seu ali.</li><li>O seguidor fica onde está até a zona dele ser pontuada.</li></ol></aside>
+<figure class="fig"><img src="figuras/colocar-seguidor.webp" alt="Em cima, a cartela nova (à direita) continua a estrada, e o vermelho põe nela um ladrão. Embaixo, o azul coloca a cartela de borda vermelha: a estrada à direita do cruzamento já tem o ladrão vermelho (o X), e o azul põe o seguidor como cavaleiro na cidade. Ilustração: manual Devir (p. 3)" loading="lazy" decoding="async"><figcaption>Em cima, a cartela nova (à direita) continua a estrada, e o vermelho põe nela um ladrão. Embaixo, o azul coloca a cartela de borda vermelha: a estrada à direita do cruzamento já tem o ladrão vermelho (o X), e o azul põe o seguidor como cavaleiro na cidade. Ilustração: manual Devir <span class="pg">p.&nbsp;3</span></figcaption></figure>
+<details class="dobra mais"><summary>Regra adicional: Cartela que não cabe</summary><aside class="call mais"><p>No caso raro de não haver lugar no terreno onde a cartela dê continuidade, deixe-a na caixa e pegue outra <span class="pg">p.&nbsp;5</span>.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Reserva vazia</summary><aside class="call mais"><p>O seguidor sai da sua reserva <span class="pg">p.&nbsp;3</span>, e pôr seguidor é opcional. Se os seus 7 estão todos no terreno, você só coloca a cartela até algum voltar.</p></aside></details>
+<aside class="call atencao"><p class="rot">Atenção</p><p>Uma zona ocupada continua ocupada em todas as cartelas por onde ela passa. No exemplo do manual, o jogador azul não pôde pôr ladrão na estrada à direita do cruzamento porque o ladrão vermelho estava nela, em outra cartela da mesma estrada <span class="pg">p.&nbsp;3</span>.</p></aside>
+<details class="dobra resolvido"><summary>Ver um exemplo resolvido</summary><aside class="call resolvido"><p>Na mesa há uma cidade com o cavaleiro de Bruno, aberta do lado direito. Você pega uma cartela com um pedaço de cidade de um lado e uma estrada do outro.</p>
+<ol><li>Você encosta o pedaço de cidade na abertura da cidade de Bruno, e campo encosta em campo.</li><li>Agora é a mesma cidade de Bruno, que já tem cavaleiro: nela, você não põe cavaleiro.</li><li>A estrada da sua cartela não tem ninguém. Você põe um ladrão nela.</li></ol></aside></details>
+
+
+<details class="dobra pratica"><summary>Pratique esta etapa: exercícios com respostas</summary><aside class="call complete"><p class="rot">Tarefa · complete</p><p><strong>Complete.</strong> Você pega uma cartela de monastério com uma estrada saindo por baixo.</p>
+<div class="quiz"><p class="q-p">Para encaixar a cartela ao lado de uma cartela que mostra campo naquele lado, que borda da sua cartela pode encostar ali?</p><div class="q-ops"><button type="button" class="q-op">A de baixo, com a estrada, porque estrada pode tocar campo</button><button type="button" class="q-op" data-ok>Uma das bordas de campo</button><button type="button" class="q-op">Qualquer uma: o monastério está no centro e não precisa encaixar</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Campo encosta em campo. O monastério está no centro, mas as bordas da cartela precisam dar continuidade <span class="pg">p.&nbsp;4</span>.</p></div></div></aside>
+<aside class="call suavez"><p class="rot">Tarefa · sua vez</p><p><strong>Sua vez.</strong></p>
+<div class="quiz"><p class="q-p">Você colocou uma cartela que continua uma estrada onde você mesmo já tem um ladrão, três cartelas adiante. Pode pôr um segundo ladrão seu nessa estrada?</p><div class="q-ops"><button type="button" class="q-op">Pode: a regra só proíbe seguidor de outro jogador</button><button type="button" class="q-op" data-ok>Não: a estrada já tem um seguidor, mesmo sendo seu</button><button type="button" class="q-op">Pode, se a estrada ainda não estiver concluída</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Não. A regra é "nenhum outro seguidor na mesma zona", de quem quer que seja <span class="pg">p.&nbsp;5</span>.</p></div></div></aside></details>
+</section>
+<section class="bloco sec" id="etapa-2-pontuar-durante-a-partida"><h2><span class="num">3</span>Etapa 2: pontuar durante a partida</h2>
+<details class="dobra entender"><summary>Por que funciona assim</summary><aside class="call entender"><p>Os pontos chegam quando uma zona é <strong>concluída</strong>, no fim do turno de quem colocou a cartela que a concluiu. Concluída quer dizer fechada: a estrada não tem mais por onde continuar, a cidade está toda cercada de muralha, o monastério está cercado de cartelas <span class="pg">p.&nbsp;5</span>.</p>
+<p>Por cartela, cidade concluída vale o dobro de estrada <span class="pg">p.&nbsp;3 e 4</span>. E o seguidor que pontuou volta para a reserva, livre para ser usado de novo <span class="pg">p.&nbsp;4</span>: fechar uma construção pequena devolve o seguidor depressa.</p></aside></details>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>O que conta como concluído</strong> (p. 3 a 5)</p>
+<ol><li><strong>Estrada:</strong> os dois extremos acabam num cruzamento, numa cidade ou num monastério, ou a estrada se fecha sobre si mesma, em círculo.</li><li><strong>Cidade:</strong> está toda cercada por muralhas, sem nenhum vazio nas bordas.</li><li><strong>Monastério:</strong> está cercado pelas 8 cartelas em volta dele, incluindo as das diagonais.</li></ol></aside>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Quanto vale</strong></p>
+<ol><li><strong>Estrada concluída:</strong> 1 ponto por cartela da estrada <span class="pg">p.&nbsp;3</span>.</li><li><strong>Cidade concluída:</strong> 2 pontos por cartela da cidade e mais 2 por brasão dentro dela <span class="pg">p.&nbsp;4</span>.</li><li><strong>Monastério concluído:</strong> 9 pontos, 1 por cartela, contando a do próprio monastério <span class="pg">p.&nbsp;5</span>.</li></ol></aside>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Contar pontos no fim do turno</strong> <span class="pg">p.&nbsp;4 e 5</span></p>
+<ol><li>Veja se a cartela colocada concluiu uma ou mais zonas. Pontue todas, no fim do turno.</li><li>Recebem pontos todos os jogadores que têm seguidor na zona concluída, e não só quem colocou a cartela.</li><li>Se há seguidores de mais de um jogador, ganha os pontos quem tiver mais seguidores na zona. Se houver empate no maior número, todos os empatados ganham os pontos inteiros.</li><li>Cada jogador que pontuou avança a sua figura no marcador de pontos.</li><li>Devolva à reserva de cada dono os seguidores das zonas pontuadas, inclusive os de quem não ganhou pontos.</li></ol></aside>
+<figure class="fig"><img src="figuras/estrada.webp" alt="Uma estrada entre dois cruzamentos passa por 3 cartelas: concluída, dá 3 pontos ao ladrão vermelho; o cavaleiro azul, na cidade, fica no terreno. Ilustração: manual Devir (p. 3)" loading="lazy" decoding="async"><figcaption>Uma estrada entre dois cruzamentos passa por 3 cartelas: concluída, dá 3 pontos ao ladrão vermelho; o cavaleiro azul, na cidade, fica no terreno. Ilustração: manual Devir <span class="pg">p.&nbsp;3</span></figcaption></figure>
+<figure class="fig"><img src="figuras/cidade.webp" alt="A cartela de borda vermelha fecha a cidade. Os números contam 2 por cartela e 2 pelo brasão: 3 cartelas e 1 brasão, 8 pontos para o cavaleiro vermelho, que volta para a reserva. Ilustração: manual Devir (p. 4)" loading="lazy" decoding="async"><figcaption>A cartela de borda vermelha fecha a cidade. Os números contam 2 por cartela e 2 pelo brasão: 3 cartelas e 1 brasão, 8 pontos para o cavaleiro vermelho, que volta para a reserva. Ilustração: manual Devir <span class="pg">p.&nbsp;4</span></figcaption></figure>
+<figure class="fig"><img src="figuras/monasterio.webp" alt="A cartela 4 completa as 8 cartelas em volta do monastério: o monge vermelho recebe 9 pontos e volta para a reserva. Ilustração: manual Devir (p. 5)" loading="lazy" decoding="async"><figcaption>A cartela 4 completa as 8 cartelas em volta do monastério: o monge vermelho recebe 9 pontos e volta para a reserva. Ilustração: manual Devir <span class="pg">p.&nbsp;5</span></figcaption></figure>
+<details class="dobra mais"><summary>Regra adicional: Seguidor que pontua no mesmo turno</summary><aside class="call mais"><p>O seguidor é colocado antes da contagem de pontos <span class="pg">p.&nbsp;3</span>. Se a cartela que você acabou de colocar conclui a zona em que você pôs o seguidor, ela pontua no fim desse turno e o seguidor volta para a reserva na hora <span class="pg">p.&nbsp;3 e 5</span>.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Estrada que acaba em outro desenho</summary><aside class="call mais"><p>O manual só lista quatro fins de estrada: cruzamento, cidade, monastério ou a própria estrada fechada em volta <span class="pg">p.&nbsp;3 e 5</span>. Não trata de outros desenhos nas pontas.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Volta no marcador</summary><aside class="call mais"><p>A trilha do marcador de pontos tem 50 casas e pode ser percorrida mais de uma vez. Quem alcançou ou passou da casa 0 deita a sua figura, para mostrar que já tem 50 pontos ou mais <span class="pg">p.&nbsp;4</span>.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Zona com dois donos</summary><aside class="call mais"><p>Ninguém põe seguidor numa zona ocupada, mas uma cartela pode unir duas zonas que já tinham seguidor, cada uma o seu. Aí vale a maioria <span class="pg">p.&nbsp;5 e 6</span>.</p></aside></details>
+<figure class="fig"><img src="figuras/roubar-cidade.webp" alt="À esquerda, o vermelho põe um cavaleiro num pedaço de cidade separado da cidade do amarelo. À direita, uma cartela une e conclui a cidade: com 2 cavaleiros contra 1, só o vermelho ganha os 10 pontos. Ilustração: manual Devir (p. 6)" loading="lazy" decoding="async"><figcaption>À esquerda, o vermelho põe um cavaleiro num pedaço de cidade separado da cidade do amarelo. À direita, uma cartela une e conclui a cidade: com 2 cavaleiros contra 1, só o vermelho ganha os 10 pontos. Ilustração: manual Devir <span class="pg">p.&nbsp;6</span></figcaption></figure>
+<aside class="call atencao"><p class="rot">Atenção</p><p>Fechar a construção não dá pontos por si só: pontua quem tem seguidor nela, mesmo que seja outro jogador. Se a sua cartela conclui a estrada de Bruno, Bruno pontua, mesmo no seu turno <span class="pg">p.&nbsp;3</span>.</p></aside>
+<details class="dobra resolvido"><summary>Ver um exemplo resolvido</summary><aside class="call resolvido"><p>Ana tem 2 cavaleiros numa cidade, e Bruno tem 1. Você coloca a cartela que conclui essa cidade, com 5 cartelas e 1 brasão.</p>
+<ol><li>A cidade está concluída: vale 5 × 2 + 1 × 2 = 12 pontos.</li><li>Ana tem mais cavaleiros: só ela marca os 12.</li><li>Bruno não marca nada, mas o cavaleiro dele volta para a reserva, como os dois de Ana.</li><li>Você não tinha seguidor ali e não ganha nada, mesmo tendo fechado a cidade.</li></ol></aside></details>
+
+
+
+<details class="dobra pratica"><summary>Pratique esta etapa: exercícios com respostas</summary><aside class="call complete"><p class="rot">Tarefa · complete</p><p><strong>Complete.</strong> Uma estrada tem um ladrão de Ana e um de Bruno, que entraram em pedaços separados e foram ligados depois. Você coloca a cartela que conclui a estrada: ela passa por 4 cartelas.</p>
+<div class="quiz"><p class="q-p">Quantos pontos Ana e Bruno recebem?</p><div class="q-ops"><button type="button" class="q-op">2 cada um: o empate divide os pontos</button><button type="button" class="q-op" data-ok>4 cada um</button><button type="button" class="q-op">Nenhum: no empate, ninguém pontua</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Empatados no maior número de seguidores, os dois ganham os pontos inteiros: 4 cada um. É o exemplo do manual <span class="pg">p.&nbsp;5</span>.</p></div></div></aside>
+<aside class="call suavez"><p class="rot">Tarefa · sua vez</p><p><strong>Sua vez.</strong></p>
+<div class="quiz"><p class="q-p">Você conclui uma cidade com cavaleiros de Ana e de Bruno, 2 de cada. Ela tem 6 cartelas, sem brasão. Quanto recebe cada um?</p><div class="q-ops"><button type="button" class="q-op">6 cada um</button><button type="button" class="q-op">Nada: empate anula a pontuação</button><button type="button" class="q-op" data-ok>12 cada um</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> 6 × 2 = 12, e o empate no maior número dá os pontos inteiros a todos os empatados <span class="pg">p.&nbsp;5</span>.</p></div></div></aside>
+<aside class="call treino"><p class="rot">Treino rápido</p><p><strong>Quanto vale?</strong> Todas concluídas.</p>
+<div class="quiz"><p class="q-p">a) Cidade de 2 cartelas, sem brasão.</p><div class="q-ops"><button type="button" class="q-op" data-ok>4 pontos</button><button type="button" class="q-op">2 pontos</button><button type="button" class="q-op">6 pontos</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> 2 × 2 = 4 <span class="pg">p.&nbsp;4</span>.</p></div></div>
+<div class="quiz"><p class="q-p">b) Cidade de 4 cartelas com 1 brasão.</p><div class="q-ops"><button type="button" class="q-op">9 pontos</button><button type="button" class="q-op" data-ok>10 pontos</button><button type="button" class="q-op">12 pontos</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> 4 × 2 + 2 = 10 <span class="pg">p.&nbsp;4</span>.</p></div></div></aside></details>
+</section>
+<section class="bloco sec" id="etapa-3-fim-da-partida-e-fazendeiros"><h2><span class="num">4</span>Etapa 3: fim da partida e fazendeiros</h2>
+<details class="dobra entender"><summary>Por que funciona assim</summary><aside class="call entender"><p>Quando as cartelas acabam, as construções que ficaram pela metade ainda dão pontos, mas a cidade sem concluir vale só a metade <span class="pg">p.&nbsp;6</span>.</p>
+<p>Os <strong>fazendeiros</strong> são seguidores postos deitados num campo. Eles nunca pontuam durante a partida e nunca voltam para a reserva: só valem na contagem final, pelas cidades concluídas que encostam no campo deles (suplemento, p. 1). O manual sugere usá-los depois de algumas partidas <span class="pg">p.&nbsp;6</span>.</p>
+<p>Os campos são separados pelas estradas e pelas cidades (suplemento, p. 1).</p></aside></details>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>O fim da partida</strong> <span class="pg">p.&nbsp;6</span></p>
+<ol><li>A partida termina quando um jogador não pode mais pegar e colocar uma cartela, porque elas acabaram.</li><li>Pontue todas as zonas que ainda têm seguidor, com a mesma regra de maioria: quem tem mais seguidores na zona leva; empatados levam todos.</li><li><strong>Estrada:</strong> 1 ponto por cartela, como durante a partida.</li><li><strong>Cidade sem concluir:</strong> 1 ponto por cartela de cidade e 1 por brasão, a metade do que valeria concluída.</li><li><strong>Monastério sem concluir:</strong> 1 ponto pela cartela dele e 1 por cartela vizinha, contando as diagonais (até 8).</li><li><strong>Campo:</strong> 3 pontos por cidade concluída que encosta nele.</li><li>Vence quem tiver mais pontos no marcador.</li></ol></aside>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>O fazendeiro</strong> (suplemento, p. 1 e 2)</p>
+<ol><li>Ao colocar um seguidor (etapa 1), você pode pô-lo num campo da cartela que acabou de colocar, <strong>deitado</strong>: ele é um fazendeiro.</li><li>Como nas outras zonas, siga o campo pelas outras cartelas: se já houver fazendeiro nele, você não pode pôr o seu.</li><li>O fazendeiro fica no campo até o fim da partida.</li><li>Na contagem final, cada cidade concluída que encosta no campo dá 3 pontos a quem tiver mais fazendeiros nele; empatados ganham todos.</li></ol></aside>
+<figure class="fig"><img src="figuras/fim-partida.webp" alt="Contagem final do manual: o verde, com 2 cavaleiros contra 1 do preto, leva 8 pela cidade sem concluir (5 cartelas e 3 brasões); o amarelo, 4 pelo monastério com 3 vizinhas; o azul, 3 pela cidade de 2 cartelas e 1 brasão; o vermelho, 3 pela estrada de 3 cartelas. Ilustração: manual Devir (p. 6)" loading="lazy" decoding="async"><figcaption>Contagem final do manual: o verde, com 2 cavaleiros contra 1 do preto, leva 8 pela cidade sem concluir (5 cartelas e 3 brasões); o amarelo, 4 pelo monastério com 3 vizinhas; o azul, 3 pela cidade de 2 cartelas e 1 brasão; o vermelho, 3 pela estrada de 3 cartelas. Ilustração: manual Devir <span class="pg">p.&nbsp;6</span></figcaption></figure>
+<figure class="fig"><img src="figuras/fazendeiros.webp" alt="Os campos listrados têm as cores dos fazendeiros. No campo maior, vermelho e azul empatam e levam 9 cada pelas cidades concluídas A, B e C (a D não está concluída). O amarelo, com mais fazendeiros que o preto no outro campo, leva 12 por 4 cidades. No canto, o preto leva 6 por A e B. Ilustração: manual Devir (suplemento, p. 1)" loading="lazy" decoding="async"><figcaption>Os campos listrados têm as cores dos fazendeiros. No campo maior, vermelho e azul empatam e levam 9 cada pelas cidades concluídas A, B e C (a D não está concluída). O amarelo, com mais fazendeiros que o preto no outro campo, leva 12 por 4 cidades. No canto, o preto leva 6 por A e B. Ilustração: manual Devir (suplemento, p. 1)</figcaption></figure>
+<details class="dobra mais"><summary>Regra adicional: Campos que se unem</summary><aside class="call mais"><p>Como nas outras zonas, uma cartela pode unir dois campos que já tinham fazendeiro; aí vale a maioria (suplemento, p. 2).</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Cidade que encosta em dois campos</summary><aside class="call mais"><p>O suplemento conta a mesma cidade para mais de um campo: no exemplo, as cidades A e B dão pontos ao campo maior e ao campo do canto (suplemento, p. 1).</p></aside></details>
+<aside class="call atencao"><p class="rot">Atenção</p><p>O campo conta cidades, não cartelas de campo. E só cidade concluída: a cidade sem concluir que encosta no campo não dá nada ao fazendeiro (suplemento, p. 1).</p></aside>
+<details class="dobra resolvido"><summary>Ver um exemplo resolvido</summary><aside class="call resolvido"><p>As cartelas acabaram. Ana tem um ladrão numa estrada de 4 cartelas sem concluir, um cavaleiro sozinho numa cidade sem concluir de 3 cartelas com 1 brasão e um monge num monastério com 6 cartelas em volta.</p>
+<ol><li>Estrada: 4 cartelas, 4 pontos.</li><li>Cidade sem concluir: 3 cartelas e 1 brasão, 1 ponto cada, 4 pontos.</li><li>Monastério: 1 da cartela dele e 6 das vizinhas, 7 pontos.</li></ol>
+<p>Total: 15 pontos.</p></aside></details>
+
+
+<details class="dobra pratica"><summary>Pratique esta etapa: exercícios com respostas</summary><aside class="call complete"><p class="rot">Tarefa · complete</p><p><strong>Complete.</strong> Na contagem final, Bruno tem um fazendeiro num campo que encosta em 3 cidades: 2 concluídas e 1 sem concluir. Ninguém mais tem fazendeiro nesse campo.</p>
+<div class="quiz"><p class="q-p">Quantos pontos o fazendeiro dá?</p><div class="q-ops"><button type="button" class="q-op">9</button><button type="button" class="q-op" data-ok>6</button><button type="button" class="q-op">7</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> 3 por cidade concluída: 2 × 3 = 6. A cidade sem concluir não conta (suplemento, p. 1).</p></div></div></aside>
+<aside class="call suavez"><p class="rot">Tarefa · sua vez</p><p><strong>Sua vez.</strong></p>
+<div class="quiz"><p class="q-p">Na contagem final, uma cidade sem concluir de 4 cartelas e 2 brasões tem o seu cavaleiro e ninguém mais. Quanto você recebe?</p><div class="q-ops"><button type="button" class="q-op">12</button><button type="button" class="q-op" data-ok>6</button><button type="button" class="q-op">4</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Sem concluir, 1 por cartela e 1 por brasão: 4 + 2 = 6, a metade dos 12 que ela daria concluída <span class="pg">p.&nbsp;6</span>.</p></div></div></aside></details>
+</section>
+<section class="bloco sec opc" id="situacoes-especiais"><h2><span class="num">5</span>Situações especiais<span class="tag-opc">Opcional</span></h2>
+<figure class="fig foto-sec caixa"><img src="fotos/capa-1.webp" alt="Carcassonne: a caixa" width="1500" height="1500" loading="lazy" decoding="async"><figcaption>Imagem: Z-Man Games</figcaption></figure>
+<details class="dobra sec-opc"><summary>Abrir esta seção</summary><details class="dobra edicao"><summary>Sobre a edição: O Rio e o Abade estão na caixa</summary><aside class="call edicao"><p>A caixa brasileira traz as duas mini-expansões: 12 cartelas de rio e 5 abades, um de cada cor (p. 2; catálogo Devir de 2026). As regras estão no suplemento <span class="pg">p.&nbsp;2</span>, e este guia não as ensina. Segundo o suplemento, com O Rio, a cartela "Manancial" substitui a cartela inicial e as cartelas de rio são colocadas antes das outras, terminando no "Lago"; com O Abade, cada jogador recebe o abade da sua cor, que só vai num monastério ou num jardim; num turno em que não puser seguidor, o jogador pode recolhê-lo e marcar os pontos do monastério ou do jardim como estiverem.</p></aside></details>
+<details class="dobra edicao"><summary>Sobre a edição: Jardins e casinhas</summary><aside class="call edicao"><p>Algumas cartelas mostram elementos como casinhas e pequenas figuras, e o manual manda não se preocupar com eles por ora <span class="pg">p.&nbsp;2</span>. O jardim só aparece na regra do Abade (suplemento, p. 2). Sem o Abade, este guia trata o jardim como parte do campo.</p></aside></details>
+<details class="dobra edicao"><summary>Sobre a edição: Edições</summary><aside class="call edicao"><p>O manual usado é o da Devir com © 2014. Em 2021 a Hans im Glück lançou uma edição nova, com arte e "alguns ajustes nas regras", segundo a Devir; este guia não a confrontou. Se o manual da sua caixa for outro, vale o da sua caixa.</p></aside></details>
+<details class="dobra edicao"><summary>Sobre a edição: Empate no fim</summary><aside class="call edicao"><p>O manual não diz como desempatar quando dois jogadores terminam com os mesmos pontos <span class="pg">p.&nbsp;6</span>.</p></aside></details>
+<details class="dobra dica"><summary>Dica</summary><aside class="call dica"><p>Seguidor numa cidade grande que não fecha fica preso até o fim e rende a metade; construções pequenas fechadas cedo devolvem o seguidor.</p></aside></details></details>
+</section>
+<section class="bloco sec opc" id="avaliacao-final"><h2><span class="num">6</span>Avaliação final<span class="tag-opc">Opcional</span></h2>
+<figure class="fig foto-sec"><img src="fotos/componentes-1.webp" alt="Carcassonne: os componentes" width="1200" height="900" loading="lazy" decoding="async"><figcaption>Imagem: Z-Man Games</figcaption></figure>
+<details class="dobra sec-opc"><summary>Abrir esta seção</summary><p>Responda sem consultar. Cada resposta diz o que reler.</p>
+<div class="quiz"><p class="q-p">1. Você colocou uma cartela e quer pôr um seguidor. Onde ele pode ir?</p><div class="q-ops"><button type="button" class="q-op">Em qualquer zona vazia do terreno</button><button type="button" class="q-op" data-ok>Numa zona da cartela que você acabou de colocar, se essa zona não tiver outro seguidor</button><button type="button" class="q-op">Em qualquer zona da cartela nova, mesmo ocupada, se você ficar com maioria</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> <strong>Só na cartela nova, numa zona sem seguidor</strong> <span class="pg">p.&nbsp;3 e 5</span>. Releia a etapa 1.</p></div></div>
+<div class="quiz"><p class="q-p">2. Uma cidade concluída tem 3 cartelas e 2 brasões. Quanto vale?</p><div class="q-ops"><button type="button" class="q-op">5</button><button type="button" class="q-op">8</button><button type="button" class="q-op" data-ok>10</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> <strong>10:</strong> 3 × 2 + 2 × 2 <span class="pg">p.&nbsp;4</span>. Releia a etapa 2.</p></div></div>
+<div class="quiz"><p class="q-p">3. Uma estrada concluída tem 2 ladrões de Ana e 1 de Bruno. Quem pontua?</p><div class="q-ops"><button type="button" class="q-op" data-ok>Só Ana; os três ladrões voltam para a reserva</button><button type="button" class="q-op">Ana e Bruno, cada um com os pontos inteiros</button><button type="button" class="q-op">Só Ana; o ladrão de Bruno fica na estrada</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> <strong>Só Ana</strong>, que tem mais seguidores; todos voltam à reserva <span class="pg">p.&nbsp;5</span>. Releia a etapa 2.</p></div></div>
+<div class="quiz"><p class="q-p">4. Na contagem final, seu monastério tem 7 cartelas em volta. Quanto vale?</p><div class="q-ops"><button type="button" class="q-op">9</button><button type="button" class="q-op" data-ok>8</button><button type="button" class="q-op">7</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> <strong>8:</strong> 1 da cartela dele e 7 das vizinhas <span class="pg">p.&nbsp;6</span>. Releia a etapa 3.</p></div></div>
+<div class="quiz"><p class="q-p">5. Seu fazendeiro está num campo que encosta em 2 cidades concluídas e 2 sem concluir. Quanto ele vale na contagem final?</p><div class="q-ops"><button type="button" class="q-op">12</button><button type="button" class="q-op">8</button><button type="button" class="q-op" data-ok>6</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> <strong>6:</strong> só as cidades concluídas contam, 3 cada (suplemento, p. 1). Releia a etapa 3.</p></div></div>
+<aside class="call atencao"><p class="rot">Atenção</p><p><strong>Critério para começar a jogar.</strong> Acertou 4 ou 5? Monte a mesa e jogue, com a folha de consulta ao lado. Errou a 1, releia a etapa 1; a 2 ou a 3, a etapa 2; a 4 ou a 5, a etapa 3. Depois refaça só as perguntas que errou.</p></aside></details>
+</section>
+<section class="bloco sec ref" id="para-consultar-durante-a-partida"><h2><span class="num">7</span>Para consultar durante a partida</h2>
+<figure class="fig foto-sec caixa"><img src="fotos/capa-1.webp" alt="Carcassonne: a caixa" width="1500" height="1500" loading="lazy" decoding="async"><figcaption>Imagem: Z-Man Games</figcaption></figure>
+<p><strong>Preparação:</strong> cartela inicial no centro; combinem se há fazendeiros (o manual sugere deixá-los de fora nas primeiras partidas); o resto em montes virados para baixo (cartelas de rio e abades na caixa). Marcador de pontos com uma figura de cada jogador no 0. Cada um com 7 seguidores. Começa o mais jovem; sentido horário.</p>
+<p><strong>No seu turno:</strong></p>
+<ol><li><strong>Cartela (obrigatório):</strong> pegue de um monte e encoste em pelo menos um lado de outra, dando continuidade (estrada, cidade, campo). Não cabe em lugar nenhum: caixa, e pegue outra.</li><li><strong>Seguidor (opcional):</strong> um só, da reserva, na cartela que acabou de colocar, numa zona sem seguidor: ladrão (estrada), cavaleiro (cidade), monge (monastério), fazendeiro deitado (campo).</li><li><strong>Pontos (obrigatório):</strong> toda zona concluída pela cartela. Ganha quem tem mais seguidores nela; empate, todos levam tudo. Seguidores voltam para a reserva (fazendeiros não).</li></ol>
+<p><strong>Concluída / quanto vale:</strong> estrada com os dois extremos fechados: 1 por cartela. Cidade toda murada: 2 por cartela e 2 por brasão. Monastério com 8 cartelas em volta: 9.</p>
+<p><strong>Fim (cartelas acabaram):</strong> estrada, 1 por cartela; cidade sem concluir, 1 por cartela e 1 por brasão; monastério, 1 mais 1 por vizinha; campo, 3 por cidade concluída que encosta nele. Mais pontos vence. Marcador: passou do 0, deite a figura (mais 50).</p>
+</section>
+<section class="bloco sec" id="fontes"><h2><span class="num">8</span>Fontes</h2>
+<figure class="fig foto-sec"><img src="fotos/componentes-1.webp" alt="Carcassonne: os componentes" width="1200" height="900" loading="lazy" decoding="async"><figcaption>Imagem: Z-Man Games</figcaption></figure>
+<ul><li>Devir. <em>Carcassonne</em>, livro de regras da edição brasileira (6 páginas; © 2001 e 2014 Hans im Glück; tradução de Rodrigo Sponchiado Uemura; editor Marcelo Fernandes). Arquivo carcassonne-básico.pdf, <a href="https://devir.com.br/wp-content/uploads/2015/09/carcassonne-b%c3%a1sico.pdf">https://devir.com.br/wp-content/uploads/2015/09/carcassonne-b%c3%a1sico.pdf</a>. Consultado em 05/11/2026.</li><li>Devir. <em>Carcassonne: Suplemento</em> (fazendeiros, O Rio e O Abade; 2 páginas). Arquivo carcassonne-basico-suplemento.pdf, <a href="https://devir.com.br/wp-content/uploads/2015/09/carcassonne-basico-suplemento.pdf">https://devir.com.br/wp-content/uploads/2015/09/carcassonne-basico-suplemento.pdf</a>. Consultado em 05/11/2026.</li><li>Devir. <em>Catálogo Jogos Essenciais</em> (2026), p. 5: Carcassonne, 2 a 5 jogadores, acima de 7 anos, 35 minutos, componentes. <a href="https://devir.com.br/wp-content/uploads/2026/04/Novo-Catalogo-Essenciais.pdf">https://devir.com.br/wp-content/uploads/2026/04/Novo-Catalogo-Essenciais.pdf</a>. Consultado em 05/11/2026.</li><li>Devir. "Expansões de Carcassonne retornam com arte e conteúdo atualizados" (15/10/2025), sobre a edição nova de 2021. <a href="https://devir.com.br/expansoes-de-carcassonne-retornam-com-arte-e-conteudo-atualizados/">https://devir.com.br/expansoes-de-carcassonne-retornam-com-arte-e-conteudo-atualizados/</a>. Consultado em 05/11/2026.</li><li>Não foram encontrados FAQ nem errata oficiais da Devir até 05/11/2026.</li></ul>
+</section>
+
+<p class="nota-pe">Regras conferidas no manual da edição brasileira da Devir (livro de regras de 6 páginas e suplemento de 2 páginas, © 2001 e 2014 Hans im Glück, tradução de Rodrigo Sponchiado Uemura), baixados do site da Devir. As páginas citadas são as do livro de regras; "suplemento" indica o folheto dos fazendeiros, do Rio e do Abade. Este guia ensina só o jogo base.</p>
+</div></main>
+
+<!--rodape--><footer><div class="in">
+ <span>Elite Boardgamers</span><a href="../../noticias/">Notícias</a><a href="../../resenhas/">Resenhas</a><a href="../../como-jogar/">Como jogar</a><a href="../../lancamentos/">Lançamentos</a><a href="../../black/">Black de Verdade</a><a href="../../jogos-de-tabuleiro/">Guia de jogos de tabuleiro</a><a href="../../premios/">Prêmios</a><a href="../../politica-editorial/">Política editorial</a>
+ <a href="https://www.instagram.com/eliteboardgamers/" target="_blank" rel="noopener">Instagram @eliteboardgamers</a><a href="https://chat.whatsapp.com/IgQQkJdSkzHBaEq3UwFeAo" target="_blank" rel="noopener">Grupo do WhatsApp</a>
+</div></footer>
+<div class="barra-lt fora" role="region" aria-label="Ações da página"><div class="cpw" data-texto=""><a class="cp" href="https://wa.me/" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="M8.2 10.8l7.6-4.4M8.2 13.2l7.6 4.4"/></svg><span>Compartilhar</span></a><div class="cp-menu" hidden><a class="cp-op zap-op" href="https://wa.me/" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8.4 19l-4.4 1Z"/><path d="M9.2 8.6c.3-.5.8-.5 1-.1l.7 1.5c.1.3 0 .6-.2.8l-.4.4c.5 1.1 1.4 2 2.5 2.5l.4-.4c.2-.2.5-.3.8-.2l1.5.7c.4.2.4.7-.1 1-.7.5-1.6.6-2.4.3a7 7 0 0 1-4.2-4.2c-.3-.8-.2-1.7.4-2.3Z"/></svg>WhatsApp</a><button type="button" class="cp-op"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h8"/></svg>Copiar link</button></div><p class="cp-st" role="status"></p></div><script>(()=>{const pega=c=>({u:c.dataset.url||location.href,t:c.dataset.texto||document.title});
+document.querySelectorAll('.cpw:not(.ok)').forEach(c=>{c.classList.add('ok');const b=c.querySelector('.cp');
+ const n=document.createElement('button');n.type='button';n.className=b.className;n.innerHTML=b.innerHTML;n.setAttribute('aria-expanded','false');b.replaceWith(n)});
+if(window.__cp)return;window.__cp=1;
+const celular=()=>navigator.share&&matchMedia('(pointer:coarse)').matches;
+const fecha=()=>document.querySelectorAll('.cp-menu:not([hidden])').forEach(m=>{m.hidden=true;m.parentNode.querySelector('.cp').setAttribute('aria-expanded','false')});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')fecha()});
+document.addEventListener('click',async ev=>{const c=ev.target.closest('.cpw');if(!c){fecha();return}
+ const {u,t}=pega(c),m=c.querySelector('.cp-menu'),st=c.querySelector('.cp-st'),el=ev.target.closest('.cp,.cp-op');if(!el)return;
+ if(el.classList.contains('cp')){
+  if(celular()){try{await navigator.share({title:document.title,text:t,url:u})}catch(e){}return}
+  const abre=m.hidden;fecha();if(!abre)return;
+  m.querySelector('.zap-op').href='https://wa.me/?text='+encodeURIComponent(t+' '+u);
+  const r=c.getBoundingClientRect();m.classList.toggle('sobe',!!c.closest('.barra-lt')||r.bottom>innerHeight-140);m.classList.toggle('dir',r.left>innerWidth-220);
+  m.hidden=false;el.setAttribute('aria-expanded','true');m.querySelector('.cp-op').focus();return}
+ if(el.classList.contains('zap-op')){fecha();return}
+ fecha();let ok=false;try{await navigator.clipboard.writeText(u);ok=true}catch(e){
+  const i=document.createElement('input');i.value=u;document.body.append(i);i.select();try{ok=document.execCommand('copy')}catch(e2){}i.remove()}
+ st.textContent=ok?'Link copiado!':'Não deu para copiar o link.';clearTimeout(st._t);st._t=setTimeout(()=>st.textContent='',2500);
+ c.querySelector('.cp').focus()})})()</script><a class="lt-grupo" href="https://chat.whatsapp.com/IgQQkJdSkzHBaEq3UwFeAo" target="_blank" rel="noopener" aria-label="Entrar no grupo do WhatsApp da Elite"><img src="/favicon-48.png" width="48" height="48" alt=""><span>Grupo</span></a></div><script>(()=>{const l=document.querySelector('.barra-lt');if(!l)return;const vis=new Set();
+const poe=()=>{const on=scrollY>500&&!vis.size;l.classList.toggle('fora',!on);l.inert=!on;document.body.classList.toggle('lt-on',on)};
+const io=new IntersectionObserver(es=>{es.forEach(e=>e.isIntersecting?vis.add(e.target):vis.delete(e.target));poe()});
+document.querySelectorAll('.convite,footer').forEach(x=>io.observe(x));addEventListener('scroll',poe,{passive:true});poe()})()</script>
+<script>document.addEventListener('click',e=>{const b=e.target.closest('.q-op');if(!b||b.disabled)return;const q=b.closest('.quiz');
+q.querySelectorAll('.q-op').forEach(o=>{o.disabled=true;if(o.hasAttribute('data-ok'))o.classList.add('ok')});const ok=b.hasAttribute('data-ok');
+if(!ok)b.classList.add('erro');const x=q.querySelector('.q-exp');x.hidden=false;x.classList.toggle('mal',!ok);x.querySelector('.q-res').textContent=ok?'Isso!':'Não é essa.';});
+(()=>{const g=document.querySelector('.guia-prog');if(!g)return;const t=g.querySelector('.gp-t'),b=g.querySelector('.gp-b');
+const secs=[...document.querySelectorAll('.sec[id]')],idx=document.querySelector('.indice');
+const poe=()=>{const y=scrollY+innerHeight*.3;let at=null;for(const s of secs){if(s.offsetTop<=y)at=s}
+ t.textContent=at&&scrollY>idx.offsetTop?at.querySelector('h2').textContent.replace(/^\d+/,'').trim():'Neste guia';
+ const h=document.documentElement.scrollHeight-innerHeight;b.style.transform='scaleX('+(h>0?Math.min(1,scrollY/h):0)+')'};
+addEventListener('scroll',poe,{passive:true});addEventListener('resize',poe);poe()})();
+document.addEventListener('click',e=>{const y=e.target.closest('.yt');if(!y)return;const f=document.createElement('iframe');
+f.src='https://www.youtube-nocookie.com/embed/'+y.dataset.id+'?start='+y.dataset.t+'&autoplay=1&rel=0';f.title=y.getAttribute('aria-label');
+f.allow='autoplay; encrypted-media; picture-in-picture';f.allowFullscreen=true;y.replaceWith(f)});</script><!--/rodape-->
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "b37421bd1ade44f1a59e46b96626bf03"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

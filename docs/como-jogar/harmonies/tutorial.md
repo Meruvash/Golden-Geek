@@ -19,8 +19,9 @@ A montagem segue a página de preparação do manual (p. 2 e 3), na mesma ordem.
 | Cartas de animais | 32 |
 | Cartas de espíritos da natureza e cubos de espíritos da natureza | 10 cartas e 4 cubos |
 | Bloco de pontuação | 1 |
+| Livro de regras | 1 |
 
-!fig[Os componentes de Harmonies. Imagem: Libellud](../../harmonies/fotos/componentes-1.webp)
+!fig[A caixa e uma mesa de Harmonies montada, com os componentes. Imagem: Libellud](../../harmonies/fotos/componentes-1.webp)
 
 1. **Ponha o tabuleiro central no meio da mesa com o lado de 2-4 jogadores para cima** (p. 2).
 2. **Ponha todas as 120 peças na bolsa** e deixe a bolsa perto do tabuleiro central (p. 2).
@@ -29,7 +30,7 @@ A montagem segue a página de preparação do manual (p. 2 e 3), na mesma ordem.
 
 3. **Encha cada um dos 5 espaços do tabuleiro central com 3 peças tiradas da bolsa ao acaso**, sem escolher cor. São 15 peças à vista (p. 2).
 
-!fig[O tabuleiro central pronto: 5 espaços com 3 peças cada, sorteadas da bolsa, e a seta no meio. Ilustração: manual Galápagos (p. 2)](figuras/setup-tabuleiro.webp)
+!fig[O tabuleiro central sendo enchido: 4 espaços já com 3 peças e o quinto prestes a receber as suas, sorteadas da bolsa; a seta fica no meio. Ilustração: manual Galápagos (p. 2)](figuras/setup-tabuleiro.webp)
 
 4. **Embaralhe as 32 cartas de animais e abra 5 delas**, viradas para cima, perto do tabuleiro central. O resto fica ao lado, virado para baixo: é a pilha de compra. Ponha os 75 cubos de animais ao alcance de todos: é a reserva (p. 3).
 
@@ -39,7 +40,7 @@ A montagem segue a página de preparação do manual (p. 2 e 3), na mesma ordem.
 
 !fig[As cartas de espíritos da natureza (o verso com a pata) e os 4 cubos de espíritos, que ficam na caixa nas primeiras partidas. Ilustração: manual Galápagos (p. 3)](figuras/setup-caixa.webp)
 
-6. **Cada jogador pega um tabuleiro pessoal e uma carta de auxílio.** Todos combinam qual lado do tabuleiro pessoal vão usar, e todos usam o mesmo lado. Cada um deixa a carta de auxílio virada para o lado igual ao dos tabuleiros. Nas primeiras partidas, o manual recomenda o lado A (p. 3).
+6. **Cada jogador pega um tabuleiro pessoal e uma carta de auxílio**, o resumo da pontuação. Todos combinam qual lado do tabuleiro pessoal vão usar, e todos usam o mesmo lado: o lado A pontua a água pelo rio; o B, pelas ilhas (p. 8). Cada um deixa a carta de auxílio virada para o lado igual ao dos tabuleiros. Nas primeiras partidas, o manual recomenda o lado A (p. 3).
 
 !fig[Dois jogadores com o tabuleiro pessoal vazio e a carta de auxílio ao lado, virada para o mesmo lado do tabuleiro. Ilustração: manual Galápagos (p. 3)](figuras/setup-tabuleiros.webp)
 
@@ -102,7 +103,7 @@ No seu turno, você faz uma ação obrigatória e pode fazer duas opcionais, na 
 
 1. **Escolha um espaço do tabuleiro central e pegue as 3 peças dele** (p. 4).
 2. **Ponha as 3 no seu tabuleiro pessoal**, onde quiser. Uma peça sempre pode ir num espaço vazio (p. 4).
-3. **Ou empilhe**, mas só destes jeitos: cinza sobre cinza (montanha, até 3 de altura); verde sobre 1 ou 2 marrons, e marrom sobre marrom (árvore); vermelha sobre cinza, marrom ou vermelha (construção). Azul e amarela ficam sempre no chão, e nada vai em cima delas (p. 4).
+3. **Ou empilhe**, mas só destes jeitos: cinza sobre cinza (montanha, até 3 de altura); marrom sobre 1 marrom (no máximo 2) e verde sobre 1 ou 2 marrons (árvore); vermelha sobre uma única cinza, marrom ou vermelha (construção). Azul e amarela ficam sempre no chão, e nada vai em cima delas (p. 4).
 4. **No fim do turno, tire 3 peças da bolsa** e ponha no espaço que você esvaziou (p. 4).
 
 > [!resolvido] **Exemplo resolvido.** Você pega um espaço com 1 peça marrom, 1 verde e 1 azul. Põe a marrom num espaço vazio, a verde em cima dela (uma árvore de tamanho 2) e a azul em outro espaço vazio. No fim do turno, tira 3 peças da bolsa e enche o espaço que ficou vazio no tabuleiro central.
@@ -135,7 +136,7 @@ Cartas de animais e cubos: etapa 2. Quanto vale cada paisagem e como se conta o 
 
 ### Como a partida acaba
 
-A partida termina quando a bolsa está vazia na hora de reabastecer o tabuleiro central, ou quando alguém termina o turno com 2 ou menos espaços desocupados no tabuleiro pessoal. A rodada é completada para todos jogarem o mesmo número de turnos, e vence quem tiver mais pontos (p. 7).
+A partida termina quando a bolsa está vazia na hora de reabastecer o tabuleiro central, ou quando alguém termina o turno com 2 ou menos espaços vazios (sem peça) no tabuleiro pessoal. A rodada é completada para todos jogarem o mesmo número de turnos, e vence quem tiver mais pontos (p. 7).
 
 **Prefere ver?** As regras completas em vídeo. Ele complementa este guia; em caso de diferença, vale o manual.
 
@@ -149,7 +150,7 @@ Harmonies é um jogo de colocação de peças para 1 a 4 pessoas, a partir de 10
 
 Os pontos vêm de duas fontes, somadas no fim (p. 7 a 9):
 
-- **As paisagens.** Cada árvore, montanha, campo e construção vale pontos pelo seu formato, e a água vale pelo rio mais comprido (lado A) ou pelo número de ilhas (lado B).
+- **As paisagens.** Cada árvore, montanha, campo e construção vale pontos pelo seu formato, e a água vale pelo rio mais comprido (lado A) ou pelo número de ilhas, as áreas que as peças azuis separam (lado B).
 - **Os animais.** Cada carta de animal mostra um pequeno desenho de peças, o habitat. Quando o seu tabuleiro tem esse desenho, você põe um cubo nele, e a carta vale mais a cada cubo posto.
 
 A tensão do jogo está aí: a mesma peça serve às duas coisas. Uma cinza pode crescer uma montanha que vale pontos sozinha, ou completar o habitat de um animal que pede uma montanha baixa. E o tabuleiro pessoal tem espaço limitado: cada peça ocupa um lugar ou aumenta uma pilha. A interação é indireta: ninguém mexe no tabuleiro do outro, mas o que você tira do tabuleiro central e da fileira de cartas deixa de estar disponível (p. 4 e 5).
@@ -177,7 +178,7 @@ Três etapas, cada uma uma parte real da partida: pôr peças e formar paisagens
 > 2. Ela pode ir sobre 1 ou 2 peças já postas, mas só para formar estas pilhas:
 >    - **Montanha:** cinza sobre cinza, até 3 cinzas.
 >    - **Árvore:** marrom sobre marrom (no máximo 2 marrons) e verde sobre 1 ou 2 marrons. A verde fecha a árvore.
->    - **Construção:** vermelha sobre uma cinza, uma marrom ou uma vermelha. São só 2 peças de altura.
+>    - **Construção:** vermelha sobre uma única cinza, marrom ou vermelha. São só 2 peças de altura.
 > 3. Nenhum outro empilhamento é permitido. Azul e amarela ficam sempre no chão, sem nada em cima.
 > 4. Nunca ponha uma peça embaixo de outra já posta.
 > 5. Nunca ponha uma peça num espaço que tem cubo de animal.
@@ -187,7 +188,7 @@ Três etapas, cada uma uma parte real da partida: pôr peças e formar paisagens
 > [!passos] **Passo a passo: fim do turno** (p. 4; p. 12)
 >
 > 1. Tire 3 peças da bolsa, sem escolher, e ponha no espaço do tabuleiro central que você esvaziou.
-> 2. Se você pegou uma carta de animal, abra a carta do topo da pilha de compra, para a fileira voltar a ter 5.
+> 2. Se você pegou uma carta de animal, abra a carta do topo da pilha de compra, para a fileira voltar a ter 5 (3 no solo, p. 11).
 > 3. A vez passa para o jogador à sua esquerda.
 
 **Quanto vale cada paisagem** (p. 8; detalhes na etapa 3):
@@ -200,6 +201,10 @@ Três etapas, cada uma uma parte real da partida: pôr peças e formar paisagens
 | Construção | Vermelha sobre cinza, marrom ou vermelha | 5, se os vizinhos tiverem pelo menos 3 cores diferentes |
 | Água, lado A | Peças azuis em fila (rio) | Pelo comprimento do seu maior rio |
 | Água, lado B | Peças azuis que separam o tabuleiro (ilhas) | 5 por ilha |
+
+> [!mais] **Peça debaixo da vermelha.** Uma cinza ou marrom que recebe uma vermelha em cima passa a ser a base de uma construção: deixa de ser montanha ou tronco de árvore. O manual mostra isso na nota da p. 6 (a vermelha sobre a cinza desfaz o habitat que pedia a cinza) e nas definições da p. 8 (montanha é pilha só de cinzas).
+
+> [!mais] **Vermelha sozinha no chão.** Não é construção, porque a construção é uma vermelha "posicionada sobre" outra peça (p. 8), e não pontua em nenhuma categoria. Como peça de cima, conta como cor para as construções vizinhas.
 
 > [!atencao] Marrom sozinha, ou duas marrons sem verde em cima, não é árvore e vale 0 (p. 8). E depois que a verde está em cima, a árvore não cresce mais: nada vai sobre a verde.
 
@@ -247,7 +252,7 @@ Três etapas, cada uma uma parte real da partida: pôr peças e formar paisagens
 >
 > Cada vez que o seu tabuleiro tem o habitat, você tira o cubo de baixo da carta e o põe no tabuleiro. Com isso aparece um número: é quanto a carta vale. Quanto mais cubos você tira, mais alto o número que fica à mostra (p. 6 e 9).
 
-!fig[Uma carta de animal, a Raposa Feneco: na lateral, os espaços de cubo com os pontos (4, 9 e o mais alto em cima); embaixo, o habitat (uma amarela e duas cinzas), com o cubo desenhado sobre a peça onde o animal vai; no pé da faixa, o lembrete da cor dessa peça. Ilustração: manual Galápagos (p. 5)](figuras/carta.webp)
+!fig[Uma carta de animal, a Raposa Feneco: na lateral, os espaços de cubo com os pontos (4, 9 e um terceiro valor, em cima); embaixo, o habitat (uma amarela e duas cinzas), com o cubo desenhado sobre a peça onde o animal vai; no pé da faixa, o lembrete da cor dessa peça. Ilustração: manual Galápagos (p. 5)](figuras/carta.webp)
 
 > [!passos] **Passo a passo: pegar 1 carta de animal** (p. 5)
 >
@@ -266,7 +271,7 @@ Três etapas, cada uma uma parte real da partida: pôr peças e formar paisagens
 > 5. Tire o cubo mais de baixo da carta e ponha na peça indicada do habitat.
 > 6. Quando sai o último cubo, a carta está completa: ponha ao lado do tabuleiro. Ela deixa de contar no limite de 4.
 
-!fig[Orientações: o habitat do Musaranho (uma construção entre duas amarelas) aparece nas 6 posições em que pode ser girado. Combinações: as mesmas peças formam dois habitats, porque uma amarela serve aos dois. Ilustração: manual Galápagos (p. 7)](figuras/orientacoes.webp)
+!fig[Orientações: o habitat do Musaranho (uma construção com uma amarela de cada lado, em ângulo, não em linha reta) aparece nas 6 posições em que pode ser girado. Combinações: 3 construções e 3 amarelas formam três habitats do Musaranho, porque as amarelas servem a mais de um. Ilustração: manual Galápagos (p. 7)](figuras/orientacoes.webp)
 
 > [!atencao] O cubo posto é definitivo. Se depois você puser uma vermelha sobre uma cinza do habitat, o habitat deixa de existir, mas o cubo fica e continua valendo (p. 6). E a peça com cubo nunca mais recebe outra peça em cima (p. 4).
 
@@ -278,7 +283,7 @@ Três etapas, cada uma uma parte real da partida: pôr peças e formar paisagens
 
 !fig[Continuação do exemplo do manual: Giulia põe mais uma cinza (3), forma o habitat outra vez e põe 2 cubos de Raposa Feneco (4 e 5). A carta fica sem cubos, completa, e vai para o lado do tabuleiro (6). Ilustração: manual Galápagos (p. 6)](figuras/cubo-2.webp)
 
-> [!resolvido] **Exemplo resolvido.** Você tem acima do tabuleiro a carta do Musaranho, com 3 cubos: o habitat é uma construção entre duas amarelas, e o cubo vai sobre a construção. A coluna da carta mostra 17, 10 e 5, de cima para baixo (p. 7).
+> [!resolvido] **Exemplo resolvido.** Você tem acima do tabuleiro a carta do Musaranho, com 3 cubos: o habitat é uma construção com uma amarela de cada lado, em ângulo (veja a figura das orientações), e o cubo vai sobre a construção. A coluna da carta mostra 17, 10 e 5, de cima para baixo (p. 7).
 >
 > 1. Você pega 1 amarela, 1 marrom e 1 vermelha. Já tem uma amarela no tabuleiro.
 > 2. Põe a marrom vizinha à sua amarela e a vermelha sobre a marrom: uma construção.
@@ -321,7 +326,7 @@ Três etapas, cada uma uma parte real da partida: pôr peças e formar paisagens
 
 > [!passos] **Passo a passo: o fim da partida** (p. 7; p. 12)
 >
-> 1. A partida termina quando acontece uma destas: a bolsa está vazia quando é preciso reabastecer o tabuleiro central; ou, no fim do turno de um jogador, o tabuleiro pessoal dele tem 2 ou menos espaços desocupados.
+> 1. A partida termina quando acontece uma destas: a bolsa está vazia quando é preciso reabastecer o tabuleiro central; ou, no fim do turno de um jogador, o tabuleiro pessoal dele tem 2 ou menos espaços vazios (sem peça).
 > 2. Completem a rodada: jogam os que ainda não jogaram nela. O último a jogar é quem está à direita do primeiro jogador, o que a seta aponta.
 > 3. Cada um conta os pontos das paisagens e dos animais. O bloco de pontuação tem uma coluna para as paisagens e outra para os animais.
 > 4. Vence quem tiver mais pontos.
@@ -338,11 +343,13 @@ Três etapas, cada uma uma parte real da partida: pôr peças e formar paisagens
 > [!passos] **Passo a passo: a água no lado A, o rio** (p. 8)
 >
 > 1. Um rio é uma série de azuis em sequência, uma vizinha da outra.
-> 2. Conte as peças de uma ponta à outra pelo caminho mais curto, incluindo as duas pontas. Azuis fora desse caminho não contam.
+> 2. Conte as peças de uma ponta à outra pelo caminho mais curto, incluindo as duas pontas. Se o rio se divide em braços, siga o caminho mais curto entre as duas pontas que você escolher; azuis fora desse caminho não contam (p. 8; FAQ da Libellud).
 > 3. Só o seu melhor rio pontua.
 > 4. Pontos: 1 peça 0; 2 peças 2; 3 peças 5; 4 peças 8; 5 peças 11; 6 peças 15; e mais 4 por peça depois da sexta.
 
 !fig[À esquerda, o lado A: o rio de 6 peças conta 15; a azul marcada com X fica fora do caminho mais curto e não conta. À direita, o lado B: as azuis dividem o tabuleiro em 4 ilhas, que valem 20 pontos. Ilustração: manual Galápagos (p. 8)](figuras/agua.webp)
+
+> [!mais] **Rio em anel.** Se o rio fecha um círculo, escolha uma peça de partida e conte até a peça diretamente oposta a ela, pelo caminho mais curto (FAQ da Libellud).
 
 > [!mais] **A água no lado B, as ilhas.** Cada espaço ou grupo de espaços separado dos outros por peças azuis é uma ilha, e cada ilha vale 5. Você sempre tem pelo menos 1 ilha, mesmo sem nenhuma separação (p. 8). No exemplo do manual, as ilhas incluem espaços vazios.
 
@@ -353,13 +360,13 @@ Três etapas, cada uma uma parte real da partida: pôr peças e formar paisagens
 
 > [!atencao] Uma construção na borda tem menos vizinhos, e espaço vazio não mostra cor nenhuma (p. 8). E campo grande não rende mais: 4 amarelas juntas valem 5, mas dois grupos de 2 valem 10 (p. 8).
 
-!fig[O tabuleiro de Giulia no fim da partida, com o valor de cada paisagem marcado; embaixo, as cartas de animais com o espaço que conta circulado; ao lado, a folha com 53 de paisagens mais 63 de animais. Ilustração: manual Galápagos (p. 9)](figuras/pontuacao.webp)
+!fig[O tabuleiro de Giulia no fim da partida, com o valor de cada paisagem marcado; embaixo, as cartas de animais com o espaço que conta circulado; ao lado, a folha com os pontos de cada tipo e o total, 116. Ilustração: manual Galápagos (p. 9)](figuras/pontuacao.webp)
 
 > [!resolvido] **Exemplo resolvido: a contagem do manual** (p. 9). Giulia, lado A:
 >
 > 1. Árvores: 1 + 3 = 4.
-> 2. Montanhas: 7 + 1 + 1 + 1 = 10 (todas vizinhas de outra montanha).
-> 3. Campos: dois grupos, 5 + 5 = 10.
+> 2. Montanhas: 7 + 1 + 1 + 1 + 0 = 10 (a quinta, isolada, vale 0).
+> 3. Campos: dois grupos, 5 + 5 = 10; a amarela sozinha vale 0.
 > 4. Construções: duas com 3 ou mais cores em volta e uma com 2: 5 + 5 + 0 = 10.
 > 5. Rio: 7 peças, 15 + 4 = 19.
 > 6. Paisagens: 4 + 10 + 10 + 10 + 19 = 53. Animais: 5 + 10 + 4 + 12 + 16 + 16 = 63. Total: 116.
@@ -380,7 +387,7 @@ Três etapas, cada uma uma parte real da partida: pôr peças e formar paisagens
 
 > [!suavez] **Sua vez.** Duas situações.
 >
-> ?? Ana termina o turno com 2 espaços desocupados. Ela é a terceira de 4 na rodada. O que acontece?
+> ?? Ana termina o turno com 2 espaços vazios. Ela é a terceira de 4 na rodada. O que acontece?
 > - ( ) A partida acaba na hora, e o quarto jogador não joga
 > - (x) O quarto jogador joga o seu turno, e então a partida acaba
 > - ( ) Todos jogam mais uma rodada inteira
@@ -395,6 +402,8 @@ Três etapas, cada uma uma parte real da partida: pôr peças e formar paisagens
 ## 5. Situações especiais
 
 > [!mais] **Espíritos da natureza (variante).** Depois de algumas partidas, embaralhe as cartas de espíritos da natureza e dê 2 a cada jogador, viradas para baixo. No seu primeiro turno, olhe as 2, escolha 1, ponha acima do tabuleiro virada para cima, devolva a outra à caixa e ponha um cubo de espírito da natureza na escolhida. Esse cubo segue as regras de posicionamento dos cubos de animais. A carta conta no limite de 4 até ser completada. No fim, ela só pontua se o cubo foi posto, sem penalidade se não foi, e os pontos seguem a regra impressa na carta, calculados com as paisagens do fim da partida. Somam-se na coluna dos animais (p. 10).
+
+> [!mais] **Cubos de animais acabaram.** Use substitutos: segundo o FAQ da Libellud, a quantidade de cubos é na prática ilimitada. O mesmo FAQ lembra que cada jogador só pode ter 4 cartas de animais acima do tabuleiro ao mesmo tempo.
 
 > [!edicao] **Errata oficial (v1.0, 04/24).** Na carta de espírito da natureza da Cegonha, onde está impresso "4", vale "6".
 
@@ -426,7 +435,7 @@ Responda sem consultar. Cada resposta diz o que reler.
 - ( ) Não: com 3 cartas, só depois de completar uma
 = **Pode.** As ações opcionais podem ser feitas entre uma peça e outra, e o limite é 4 (p. 4, 5 e 12). Releia a etapa 2.
 
-?? 4. Uma construção tem, em volta, as peças de cima: azul, azul, amarela e um espaço vazio. Quanto vale?
+?? 4. Uma construção na borda tem 4 vizinhos: azul, azul, amarela e um espaço vazio (peças de cima). Quanto vale?
 - ( ) 5
 - (x) 0
 - ( ) 2
@@ -449,11 +458,11 @@ Responda sem consultar. Cada resposta diz o que reler.
 2. Opcional, uma vez: pegar 1 carta de animal, cobrir os espaços dela com cubos (máximo 4 cartas acima do tabuleiro).
 3. Opcional, quantas vezes puder: com o habitat no tabuleiro (girado vale, alturas exatas), tirar o cubo de baixo da carta e pôr na peça indicada. Carta sem cubos: completa, sai do limite.
 
-**Empilhar:** cinza sobre cinza (até 3); marrom sobre marrom; verde sobre 1 ou 2 marrons; vermelha sobre cinza, marrom ou vermelha. Azul e amarela só no chão. Nunca embaixo de peça, nunca onde há cubo.
+**Empilhar:** cinza sobre cinza (até 3); marrom sobre 1 marrom (no máximo 2); verde sobre 1 ou 2 marrons; vermelha sobre uma única cinza, marrom ou vermelha. Azul e amarela só no chão. Nunca embaixo de peça, nunca onde há cubo.
 
 **Fim do turno:** 3 peças da bolsa no espaço vazio do tabuleiro central; fileira de cartas de volta a 5.
 
-**Fim da partida:** bolsa vazia ao reabastecer, ou alguém com 2 ou menos espaços vazios no fim do turno. Completar a rodada. Empate: mais cubos posicionados; depois, vitória dividida.
+**Fim da partida:** bolsa vazia ao reabastecer, ou alguém com 2 ou menos espaços vazios (sem peça) no fim do turno. Completar a rodada. Empate: mais cubos posicionados; depois, vitória dividida.
 
 **Pontos:** árvore 1, 3, 7. Montanha 1, 3, 7 (isolada 0). Campo 5 por grupo de 2 ou mais. Construção 5 com 3 ou mais cores em volta (peça de cima). Rio (lado A): 0, 2, 5, 8, 11, 15 para 1 a 6 peças, mais 4 por peça; só o maior. Ilhas (lado B): 5 cada. Animais: o espaço mais alto sem cubo.
 
@@ -462,4 +471,4 @@ Responda sem consultar. Cada resposta diz o que reler.
 - Galápagos. *Harmonies: regras do jogo* (edição brasileira, arquivo HRM001_regras_v2.0.pdf, 12 páginas em 7 páginas de PDF, criado em 04/06/2024; tradução de Mateus Ornellas, revisão de Luis Perdomo e Camila Loricchio). Biblioteca de Downloads da Asmodee Brasil, https://www.asmodee.com.br/download-library, item "HRM001 - Harmonies - SKU: HRM001", etiqueta Regras. Consultado em 05/11/2026.
 - Galápagos. *Errata oficial Harmonies* v1.0 (04/24), arquivo HRM001_ERRATA_v1.0_04-24.pdf. Mesma biblioteca e item, etiqueta Errata. Consultado em 05/11/2026.
 - Libellud. *Harmonies: rules* (manual original em inglês, arquivo HARMONIES_Rules_EN_compressed-1.pdf), usado só para conferir dúvidas de tradução, e página do produto (jogadores, idade e duração), https://www.libellud.com/game/harmonies/. Consultados em 05/11/2026.
-- Não foi encontrado FAQ oficial até 05/11/2026.
+- Libellud. FAQ oficial da página do produto (5 perguntas, em inglês: símbolos do tabuleiro central, rio com braços, rio em anel, cubos de animais, cartas de espíritos da natureza), https://www.libellud.com/game/harmonies/. Consultado em 05/11/2026.
