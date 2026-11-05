@@ -459,7 +459,9 @@ def link_direto(url, loja, ofertas_jogo, nome=None, hoje_d=None, slug_cache=None
     return None
 
 
-CANAL_AFILIADO = re.compile(r"(?i)BG Turbo|Board Oferta|GameBox|Ludofertas")  # canais que postam com link de afiliado
+# Canais do Telegram postam com link de afiliado de quem posta: o Black não mostra botão para o post de NENHUM canal
+# (pedido do usuário em 05/11/2026, ampliando a regra que valia só para BG Turbo, Board Oferta, GameBox e Ludofertas).
+CANAL_AFILIADO = re.compile(r"(?i)^Telegram:|BG Turbo|Board Oferta|GameBox|Ludofertas")
 def preco_voltou(v, loja, por, ofertas_jogo):
     """A loja do post já está bem mais cara numa leitura do Compara Jogos feita depois do post? Então a promoção acabou."""
     alvo = _norm_loja(loja)
@@ -562,8 +564,8 @@ def achados_comunidade(hist, hoje, hoje_d=None):
                       "ref": ref, "desc": (ref - por) / ref, "menor": menor, "recorde": por <= menor, "dias": dias,
                       "fonte_preco": f'achado da comunidade ({(v.get("fonte") or "Promobit").removeprefix("Telegram: ")})',
                       "vendedor": None, "verificado": quando_br, "editora_br": None, "comunidade": True,
-                      # canal que posta com link de afiliado: sem o botão "Ver o post original", para não levar
-                      # o leitor ao link de afiliado de outra pessoa (05/11/2026)
+                      # canal do Telegram: sem o botão "Ver o post original", para não levar o leitor ao link de
+                      # afiliado de outra pessoa (05/11/2026)
                       "post": None if CANAL_AFILIADO.search(v.get("fonte") or "") else v.get("link"), "principal": bom})
     return saida
 
