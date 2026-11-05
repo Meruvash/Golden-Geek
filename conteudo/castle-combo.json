@@ -1,0 +1,334 @@
+{
+ "slug": "castle-combo",
+ "jogo": "Castle Combo",
+ "cor": "#3f6fb5",
+ "kicker": "Resenha · Cartas em 25 minutos",
+ "og_titulo": "Castle Combo vale a pena? Resenha Elite Boardgamers",
+ "titulo_busca": "Castle Combo: resenha do Golden Geek de jogo leve de 2024",
+ "descricao": "Resenha de Castle Combo, Golden Geek de jogo leve de 2024: grade de 9 cartas, ouro, chaves, quantos jogadores, preço e edição da Grok Games.",
+ "titulo_html": "Cabem cinco no castelo, mas a corte só funciona a dois: <span>Castle Combo</span>",
+ "lede": "Castle Combo, de Grégory Grard e Mathieu Roussel, é um jogo de cartas em que cada um monta uma grade de 3 por 3 cartas em nove turnos, comprando nobres, camponeses e soldados. Venceu o Golden Geek de jogo leve de 2024 e saiu no Brasil pela Grok Games em agosto de 2025. A caixa diz de 2 a 5 jogadores. A Board Game Quest diz que a dois é fenomenal e com cinco fica sofrível. A gente acha que as duas coisas cabem na mesma caixa de R$ 100.",
+ "tags": [
+  "2 a 5 jogadores",
+  "10–25 min",
+  "10+",
+  "Cartas",
+  "Montagem de grade"
+ ],
+ "alt": "Fichas de Castle Combo em primeiro plano: uma moeda de ouro de valor 5, um molho de chaves vermelhas e o mensageiro, um cavaleiro de chapéu de plumas",
+ "premiacoes": [
+  {
+   "premio": "Golden Geek",
+   "ano": 2024,
+   "categoria": "Jogo do Ano leve",
+   "colocacao": 1,
+   "resultado": "vencedor",
+   "fonte": "https://boardgamewire.com/index.php/2025/05/08/arcs-wins-big-in-2024-golden-geek-awards-seti-brings-home-pair-of-prizes/",
+   "rotulo": "Vencedor"
+  }
+ ],
+ "ficha": [
+  [
+   "Ano",
+   "2024; edição brasileira em agosto de 2025 (Grok Games)"
+  ],
+  [
+   "Designers",
+   "Grégory Grard e Mathieu Roussel"
+  ],
+  [
+   "Arte",
+   "Stéphane Escapa"
+  ],
+  [
+   "Editora original",
+   "Catch Up Games (França); Pandasaurus Games nos EUA"
+  ],
+  [
+   "Editora no Brasil",
+   "Grok Games"
+  ],
+  [
+   "Jogadores",
+   "2 a 5"
+  ],
+  [
+   "Duração anunciada",
+   "10 a 25 minutos (ComparaJogos e Meeple Mountain)"
+  ],
+  [
+   "Duração relatada",
+   "cerca de 20 minutos com a preparação, segundo a Board Game Quest; 15 a 20 minutos, segundo Dale Yu (Opinionated Gamers)"
+  ],
+  [
+   "Idade",
+   "10+ (Masmorra e Meeple Mountain); o anúncio da Grok Games em marketplace diz 14+"
+  ],
+  [
+   "Nota BGG",
+   "não confirmado nas fontes consultadas"
+  ],
+  [
+   "Nota ComparaJogos",
+   "7,7, com complexidade 1,7"
+  ],
+  [
+   "Nota Ludopedia",
+   "não confirmado nas fontes consultadas"
+  ],
+  [
+   "Idioma",
+   "pouco texto, memorizável, segundo o ComparaJogos"
+  ],
+  [
+   "Componentes",
+   "39 cartas de Castelo, 39 cartas de Vila, 1 peão de Mensageiro, 52 fichas de ouro (40 de 1 e 12 de 5), 44 fichas de chave (36 de 1 e 8 de 3), 1 ajuda de jogo dupla face, bloco de pontuação e livro de regras (RulesPal)"
+  ],
+  [
+   "Versão digital",
+   "gratuita na Board Game Arena"
+  ],
+  [
+   "Prêmios",
+   "Golden Geek 2024 de jogo leve (finalistas: Flip 7 e Captain Flip)"
+  ]
+ ],
+ "nota_ficha": "Ludopedia e BoardGameGeek bloqueiam acesso automatizado: a nota do BGG e a da Ludopedia ficaram sem confirmação; a data de lançamento nacional vem da busca. Componentes e regras segundo o resumo do livro de regras no RulesPal. Consulta em 05/11/2026.",
+ "como_funciona": [
+  "Cada jogador monta, na própria frente, uma grade de 3 por 3 cartas, uma por turno, em nove turnos. As cartas são personagens de um reino medieval, divididos em duas pilhas: Castelo, com nobres, clérigos e soldados, e Vila, com camponeses e artesãos. Ganha quem tiver mais pontos quando todas as grades estiverem cheias.",
+  "No meio da mesa ficam três cartas abertas do Castelo e três da Vila. O Mensageiro, um peão de madeira, fica ao lado de uma das duas fileiras, e você só pode comprar da fileira em que ele está. Cada um começa com 15 de ouro e 2 chaves.",
+  "No turno, você pode gastar uma chave, no máximo uma, para levar o Mensageiro para a outra fileira ou para descartar as três cartas da fileira dele e revelar outras três. Depois compra uma carta, pagando o custo em ouro menos os descontos das cartas que já tem. Quem não quer ou não pode pagar pega qualquer carta de graça e a põe virada para baixo: ganha 6 de ouro e 2 chaves, mas a carta não faz nada e vale zero.",
+  "A carta comprada entra na grade encostada, pelo lado, em outra carta sua, e o efeito dela acontece na hora, quase sempre dando ouro ou chaves conforme o que já está na sua grade. Se ela tem o ícone do Mensageiro, o peão muda de fileira.",
+  "No fim, cada carta pontua do seu jeito: pela linha, pela coluna, pelo canto ou pelos brasões das cartas vizinhas. Cartas de bolsa guardam o ouro que sobrou e o transformam em pontos, e cada chave vale 1 ponto. No empate, vence quem tiver mais ouro."
+ ],
+ "passos": [
+  [
+   "MOVA O MENSAGEIRO",
+   "Se quiser, gaste uma chave para levar o Mensageiro à outra fileira ou para trocar as três cartas da fileira dele."
+  ],
+  [
+   "COMPRE UMA CARTA",
+   "Pague o custo em ouro, menos os descontos da sua grade, e leve uma das três cartas da fileira do Mensageiro."
+  ],
+  [
+   "OU VIRE PARA BAIXO",
+   "Sem ouro ou sem carta boa, pegue qualquer carta de graça virada para baixo e ganhe 6 de ouro e 2 chaves."
+  ],
+  [
+   "ENCAIXE NA GRADE",
+   "Ponha a carta encostada pelo lado em outra sua, dentro da grade de 3 por 3, e resolva o efeito na hora."
+  ],
+  [
+   "PONTUE NO NONO TURNO",
+   "Com nove cartas na mesa, cada carta pontua pela posição ou pelos brasões vizinhos, e cada chave vale 1 ponto."
+  ]
+ ],
+ "como_resumo": "Compre nove cartas, encaixe numa grade de 3 por 3 e faça as vizinhas pontuarem juntas.",
+ "perfil": [
+  [
+   "Facilidade de ensinar",
+   5
+  ],
+  [
+   "Ritmo de partida",
+   5
+  ],
+  [
+   "Interação",
+   3
+  ],
+  [
+   "Variedade entre partidas",
+   4
+  ],
+  [
+   "Controle sobre a sorte",
+   3
+  ],
+  [
+   "Profundidade",
+   2
+  ]
+ ],
+ "experiencia": [
+  "Castle Combo vende um reino. O que chega na mesa é uma planilha de nove células com desenho de nobre bigodudo. Cada carta pergunta duas coisas: quanto ela custa agora e quanto vai valer no canto certo daqui a seis turnos. Dale Yu, da Opinionated Gamers, diz que as decisões levam menos de um minuto, e a gente confirma. É o tipo de jogo que acaba antes de alguém levantar para pegar água.",
+  "Um turno típico: a fileira do Castelo tem um nobre de 6 de ouro que pontua por cada brasão azul na mesma linha, e você tem 4 de ouro. Dá para gastar a chave e trocar a fileira, torcendo por coisa melhor, ou pegar o nobre virado para baixo, embolsar 6 de ouro e 2 chaves e aceitar um buraco de zero ponto na grade. O vizinho, enquanto isso, está de olho no mesmo nobre.",
+  "A dois, esse vizinho é o seu único problema, e a Board Game Quest diz que aí o jogo bloqueia, provoca e cobra atenção. Com cinco, a fileira muda quatro vezes antes da sua vez, e a mesma crítica descreve um jogo em que você espera para ver o que sobrou."
+ ],
+ "citacao": {
+  "texto": "O jogo é fenomenal a dois.",
+  "fonte": "Board Game Quest (tradução livre)"
+ },
+ "funciona": [
+  [
+   "Nove turnos e acabou",
+   "A partida tem exatamente nove compras por pessoa, e a Board Game Quest fala em cerca de 20 minutos com a preparação. Na Meeple Mountain, Bob Pazehoski chamou de recomendação fácil: fácil de montar, de ensinar, de jogar e de guardar. É o jogo que cabe no intervalo entre a pizza chegar e a pizza acabar."
+  ],
+  [
+   "O Mensageiro decide por você",
+   "Só se compra da fileira em que o peão está, e muitas cartas mudam o peão de lugar. Comprar uma carta, então, também escolhe o que o próximo jogador vai ver. A Board Game Quest destaca justamente isso: dá para tirar do rival a carta que ele queria, e ela insiste que não é paciência coletiva."
+  ],
+  [
+   "A carta virada é uma saída de verdade",
+   "Pegar a carta de graça, virada para baixo, rende 6 de ouro e 2 chaves e vale zero no fim. Parece só um castigo, mas resolve o turno em que falta dinheiro e prepara a compra cara do turno seguinte. Escolher quando abrir esse buraco na grade é uma das decisões mais interessantes da partida."
+  ],
+  [
+   "Cada carta pontua do seu jeito",
+   "Uma carta conta brasões na linha, outra quer ficar no canto, outra paga pelo ouro guardado na bolsa. Dale Yu, da Opinionated Gamers, chama isso de quebra-cabeça satisfatório. Como a grade só tem nove lugares, a ordem em que você abre as casas importa tanto quanto o que compra."
+  ],
+  [
+   "Barato, em português e no navegador",
+   "Saiu pela Grok Games em agosto de 2025, com pouco texto nas cartas segundo o ComparaJogos. Em 05/11/2026, o menor preço de jogo novo era R$ 98,81 no Pix, numa faixa de 27 ofertas até R$ 200. Quem quer testar antes tem a versão gratuita na Board Game Arena."
+  ],
+  [
+   "Ícones que se leem sozinhos",
+   "Dale Yu elogia os ícones fáceis de ler, e a Meeple Mountain gosta da arte de Stéphane Escapa e da caixa compacta, com divisória, que monta e desmonta rápido. Num jogo em que cada carta tem a própria regra de pontuação, como lembra a Opinionated Gamers, entender a carta à distância faz diferença real na mesa."
+  ]
+ ],
+ "atencao": [
+  [
+   "Moderada",
+   "Cinco na caixa, dois na mesa",
+   "A Board Game Quest dá nota máxima a dois, acha muito bom a três e chama de medíocre a ruim com quatro e cinco, porque a fileira muda tanto que a interação some. Dale Yu discorda e diz que funciona em todas as contagens. A caixa imprimiu o número cinco. A mesa vai descobrir sozinha onde parar."
+  ],
+  [
+   "Moderada",
+   "Pouco tema por baixo da coroa",
+   "Na Opinionated Gamers, Joe Huber achou o jogo abstrato demais, sem motivo temático para as escolhas, e Dan B. achou as decisões chatas perto de Faraway. O nobre de bigode é ótimo, mas ele está ali para somar brasão azul. Quem quer sentir que governa um reino vai sentir que preenche uma tabela."
+  ],
+  [
+   "Moderada",
+   "A fileira manda mais que você",
+   "Você só compra o que o Mensageiro mostra, e uma reposição feliz entrega a carta perfeita ao vizinho enquanto você fica com um camponês genérico. A chave ajuda, mas é uma por turno. Planejar nove turnos com seis cartas à vista tem limite, e a regra não oferece outro jeito de olhar o baralho."
+  ],
+  [
+   "Leve",
+   "Combos que fogem do controle",
+   "A Board Game Quest aponta que algumas combinações ficam fortes demais, como as cartas de bolsa junto com o Banqueiro. Quem descobre a dupla primeiro tem uma partida tranquila. Quem descobre depois aprende pela pontuação final, que é o jeito mais caro de aprender."
+  ],
+  [
+   "Leve",
+   "Cartas de papel fino",
+   "A Board Game Quest reclama do papel das cartas, sem acabamento de linho, e a Masmorra sugere protetores de tamanho 78. Num jogo de nove turnos que vai sair da caixa toda semana, o desgaste chega antes do tédio. Some o protetor na conta."
+  ],
+  [
+   "Leve",
+   "Ouro que pode faltar",
+   "Dale Yu notou que, com cinco jogadores, as fichas de ouro podem acabar na reserva. É um problema pequeno de componente, mas aparece justamente na contagem que a Board Game Quest menos recomenda. Mais um motivo para o castelo receber poucas visitas."
+  ]
+ ],
+ "jogadores": [
+  [
+   "2 jogadores",
+   "A melhor contagem para a Board Game Quest: dá para acompanhar o rival, bloquear a carta dele e planejar com a fileira mais estável.",
+   3
+  ],
+  [
+   "3 jogadores",
+   "Ainda muito bom segundo a Board Game Quest, com mais disputa pelas cartas boas e pouca espera.",
+   3
+  ],
+  [
+   "4 ou 5 jogadores",
+   "Funciona para Dale Yu; a Board Game Quest acha que vira espera passiva, porque a fileira muda demais antes da sua vez.",
+   2
+  ]
+ ],
+ "primeira_partida": "A regra se explica em poucos minutos, e Dale Yu fala em decisões de menos de um minuto por turno. O que confunde no começo é ler a pontuação de cada carta antes de comprar e lembrar que a carta precisa encostar pelo lado em outra sua. Dica prática: na primeira partida, não tenha medo de pegar uma carta virada para baixo cedo. Os 6 de ouro e as 2 chaves compram a carta cara que você vai querer no turno seguinte, e Dale lembra que não há ajuda de jogo para todos, então deixe a de dupla face no meio da mesa.",
+ "edicao_nacional": "A Grok Games lançou Castle Combo no Brasil em agosto de 2025, com o mesmo nome e cartas em português. Em 05/11/2026, o ComparaJogos listava 27 ofertas de jogo novo, de R$ 98,81 no Pix a R$ 200, e classificava o idioma como pouco texto, memorizável. A versão digital gratuita da Board Game Arena serve para testar antes.",
+ "preco_ref": {
+  "faixa": "a partir de R$ 98,81 no Pix",
+  "data": "05/11/2026",
+  "obs": "menor preço de jogo novo em lojas brasileiras segundo o ComparaJogos; 27 ofertas entre R$ 99 e R$ 200"
+ },
+ "versoes": "Existe versão digital gratuita na Board Game Arena, para 2 a 5 jogadores. O RulesPal já publica as regras de uma expansão, Castle Combo: Out of the Oubliette; edição em português dessa expansão não foi confirmada nas fontes consultadas até 05/11/2026. A caixa base é completa e não precisa de nada além dela.",
+ "comparacoes": [
+  [
+   "Faraway",
+   "faraway",
+   "O jogo que a Opinionated Gamers usou de régua: também é de cartas e rápido, mas com mais tensão entre objetivos e pontuação ao contrário. Mais cabeça, menos sorriso de nobre."
+  ],
+  [
+   "Flip 7",
+   "flip-7",
+   "Ficou em segundo lugar atrás de Castle Combo no Golden Geek de jogo leve de 2024. Troca a grade planejada por puro arriscar mais uma carta, e funciona melhor com a mesa cheia."
+  ],
+  [
+   "Harmonies",
+   "harmonies",
+   "Vencedor do Golden Geek de jogo médio no mesmo ano. Também monta um quadro pessoal que pontua por vizinhança, com peças de madeira e paisagem no lugar de nobres."
+  ]
+ ],
+ "para_quem": [
+  "Joga a dois ou a três e quer algo para depois do jantar",
+  "Gosta de fazer conta de vizinhança numa grade pequena",
+  "Quer um presente barato, em português, que se ensina em cinco minutos",
+  "Prefere testar no navegador antes de comprar",
+  "Acha graça em nobre de bigode valendo brasão azul"
+ ],
+ "nao_e_para": [
+  "Reúne cinco pessoas toda semana",
+  "Quer sentir que governa um reino",
+  "Odeia depender da carta que apareceu na fileira",
+  "Já tem Faraway e quer mais tensão",
+  "Procura um jogo para durar a noite inteira"
+ ],
+ "selo": "Recomendado",
+ "melhor_para": "entrada",
+ "veredito": "Castle Combo é um jogo para cinco que só se revela a dois, e isso é um elogio disfarçado. Com pouca gente, cada compra também tira uma carta do rival, o Mensageiro vira arma e nove turnos parecem uma partida de xadrez de bolso com nobres de bigode. O Golden Geek de jogo leve de 2024 foi para a caixa certa. O que pesa: com quatro ou cinco a Board Game Quest vê espera em vez de disputa, o tema é decoração e a fileira às vezes escolhe por você. A partir de R$ 98,81 no Pix, em português pela Grok Games, é o melhor uso de cem reais para uma dupla. A corte é pequena. O castelo é que exagerou no tamanho.",
+ "tagline": "Nove cartas, um mensageiro e uma corte que funciona melhor quando quase ninguém aparece.",
+ "consulta": "05/11/2026",
+ "fontes": [
+  [
+   "RulesPal – Castle Combo: livro de regras",
+   "https://rulespal.com/castle-combo/rulebook",
+   "regras, componentes, pontuação"
+  ],
+  [
+   "BoardGameWire – Golden Geek 2024",
+   "https://boardgamewire.com/index.php/2025/05/08/arcs-wins-big-in-2024-golden-geek-awards-seti-brings-home-pair-of-prizes/",
+   "prêmio e finalistas"
+  ],
+  [
+   "Board Game Quest – Castle Combo review",
+   "https://boardgamequest.com/castle-combo-review",
+   "crítica, número de jogadores, cartas, citação"
+  ],
+  [
+   "Opinionated Gamers – Dale Yu: Review of Castle Combo",
+   "https://opinionatedgamers.com/2024/12/09/dale-yu-review-of-castle-combo/",
+   "crítica, duração, opiniões divergentes"
+  ],
+  [
+   "Meeple Mountain – Castle Combo review",
+   "https://meeplemountain.com/reviews/castle-combo",
+   "crítica, duração, idade, arte"
+  ],
+  [
+   "ComparaJogos – Castle Combo",
+   "https://www.comparajogos.com.br/item/castle-combo",
+   "preço no Brasil, idioma, nota"
+  ],
+  [
+   "Masmorra – Castle Combo (Grok Games)",
+   "https://www.masmorra.com.br/produtos/grk0151",
+   "edição nacional, idade, protetores"
+  ],
+  [
+   "Ludopedia – Castle Combo",
+   "https://ludopedia.com.br/jogo/castle-combo",
+   "lançamento nacional (via busca)"
+  ],
+  [
+   "Board Game Arena – Castle Combo",
+   "https://en.boardgamearena.com/gamepanel?game=castlecombo",
+   "versão digital"
+  ],
+  [
+   "Pandasaurus Games – Castle Combo",
+   "https://pandasaurusgames.com/products/castle-combo",
+   "fotos"
+  ]
+ ],
+ "legenda": "Um jogo para cinco que só se revela a dois. 🏰\n\nCastle Combo venceu o Golden Geek de jogo leve de 2024: nove cartas, uma grade de 3 por 3 e um Mensageiro que decide o que você pode comprar.\nA dois, cada compra tira a carta do rival. Com cinco, a Board Game Quest vê mais espera que disputa.\nVeredito: RECOMENDADO. A partir de R$ 98,81 no Pix, em português pela Grok Games.\n\nNa sua mesa: dupla ou castelo lotado? 👇\nResenha completa no link da bio.\n\n#CastleCombo #JogosDeTabuleiro #BoardGames #JogoDeCartas #CardGame #GoldenGeek #JogoParaDois #TwoPlayerGames #GrokGames #Boardgamer #EliteBoardgamers"
+}

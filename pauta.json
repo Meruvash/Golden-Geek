@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-11-04",
+ "atualizado_em": "2026-11-05",
  "regras": {
   "premios": [
    "Golden Geek",
@@ -313,6 +313,26 @@
    "jogo": "Undaunted: Battle of Britain",
    "url": "https://eliteboardgamers.com.br/undaunted-battle-of-britain/",
    "data": "2026-11-04"
+  },
+  {
+   "jogo": "Castle Combo",
+   "url": "https://eliteboardgamers.com.br/castle-combo/",
+   "data": "2026-11-05"
+  },
+  {
+   "jogo": "Star Wars: The Battle of Hoth",
+   "url": "https://eliteboardgamers.com.br/star-wars-the-battle-of-hoth/",
+   "data": "2026-11-05"
+  },
+  {
+   "jogo": "Under Falling Skies",
+   "url": "https://eliteboardgamers.com.br/under-falling-skies/",
+   "data": "2026-11-05"
+  },
+  {
+   "jogo": "878: Vikings – Invasions of England",
+   "url": "https://eliteboardgamers.com.br/878/",
+   "data": "2026-11-05"
   }
  ],
  "jogos": [
@@ -3714,7 +3734,7 @@
      "fonte": "https://eliteboardgamers.com.br/"
     }
    ],
-   "status": "na_fila",
+   "status": "publicado",
    "prioridade": 80,
    "premios_distintos": 1,
    "carro_chefe": false,
@@ -3779,7 +3799,7 @@
      "fonte": "https://eliteboardgamers.com.br/"
     }
    ],
-   "status": "na_fila",
+   "status": "publicado",
    "prioridade": 41,
    "premios_distintos": 1,
    "carro_chefe": true,
@@ -4286,7 +4306,7 @@
      "fonte": "https://brettspielbox.de/15th-annual-golden-geek-awards-sieger/"
     }
    ],
-   "status": "na_fila",
+   "status": "publicado",
    "prioridade": 87,
    "premios_distintos": 1,
    "carro_chefe": false,
@@ -4459,7 +4479,7 @@
      "fonte": "https://eliteboardgamers.com.br/"
     }
    ],
-   "status": "na_fila",
+   "status": "publicado",
    "prioridade": 90,
    "premios_distintos": 1,
    "carro_chefe": false,

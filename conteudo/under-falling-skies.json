@@ -1,0 +1,316 @@
+{
+ "slug": "under-falling-skies",
+ "jogo": "Under Falling Skies",
+ "cor": "#2a6f86",
+ "kicker": "Resenha · Solo de dados",
+ "og_titulo": "Under Falling Skies vale a pena? Resenha Elite Boardgamers",
+ "titulo_busca": "Under Falling Skies: resenha do solo em que tirar 6 é perigo",
+ "descricao": "Resenha de Under Falling Skies, Golden Geek de jogo solo de 2020: dados que defendem e atraem naves, campanha, dificuldade, preço e edição da Devir.",
+ "titulo_html": "O único jogo de dados em que tirar seis é má notícia: <span>Under Falling Skies</span>",
+ "lede": "Under Falling Skies é um jogo solo de Tomáš Uhlíř, da Czech Games Edition, em que você defende uma cidade de uma invasão alienígena alocando cinco dados em salas de uma base subterrânea. Começou como um jogo de nove cartas para imprimir em casa, venceu o Golden Geek de jogo solo de 2020 e saiu no Brasil pela Devir em 2021. Cada dado alto fortalece a sala e acelera a nave inimiga. A gente achou o dilema mais elegante do gênero, e o jogo mais difícil de achar na loja.",
+ "tags": [
+  "1 jogador",
+  "20–40 min",
+  "12+",
+  "Solo",
+  "Alocação de dados"
+ ],
+ "alt": "Tabuleiro de Under Falling Skies com a base subterrânea embaixo, o céu com naves alienígenas vermelhas em cima e dados brancos e cinza ao redor",
+ "premiacoes": [
+  {
+   "premio": "Golden Geek",
+   "ano": 2020,
+   "categoria": "Solo",
+   "colocacao": 1,
+   "resultado": "vencedor",
+   "fonte": "https://brettspielbox.de/15th-annual-golden-geek-awards-sieger/",
+   "rotulo": "Vencedor"
+  }
+ ],
+ "ficha": [
+  [
+   "Ano",
+   "2020; edição brasileira em outubro de 2021 (Devir)"
+  ],
+  [
+   "Designer",
+   "Tomáš Uhlíř"
+  ],
+  [
+   "Editora original",
+   "Czech Games Edition"
+  ],
+  [
+   "Editora no Brasil",
+   "Devir"
+  ],
+  [
+   "Jogadores",
+   "1"
+  ],
+  [
+   "Duração anunciada",
+   "20 a 40 minutos (Tabletop Gaming e Meeple Mountain)"
+  ],
+  [
+   "Duração relatada",
+   "35 a 40 minutos na maioria das partidas, segundo a Opinionated Gamers"
+  ],
+  [
+   "Idade",
+   "12+ (Tabletop Gaming e ComparaJogos)"
+  ],
+  [
+   "Nota BGG",
+   "não confirmado nas fontes consultadas"
+  ],
+  [
+   "Nota ComparaJogos",
+   "7,3, com complexidade 2,4"
+  ],
+  [
+   "Nota Ludopedia",
+   "não confirmado nas fontes consultadas"
+  ],
+  [
+   "Idioma",
+   "português na edição da Devir (ComparaJogos)"
+  ],
+  [
+   "Componentes",
+   "1 nave-mãe, 4 peças de céu, 3 cidades, 3 bases, 7 dados de madeira, 9 naves de plástico, 1 escavadeira de madeira e 3 marcadores; campanha com 1 nave extra, 4 folhas de quadrinho, bloco de campanha e 12 cartelas com cidades, bases e personagens (Tabletop Gaming)"
+  ],
+  [
+   "Campanha",
+   "4 capítulos, cerca de 10 partidas (RulesPal); sete ou mais, segundo a Tabletop Gaming"
+  ],
+  [
+   "Versão digital",
+   "não confirmada nas fontes consultadas"
+  ],
+  [
+   "Prêmios",
+   "Golden Geek 2020 de jogo solo (finalistas: Gloomhaven: Jaws of the Lion e Lost Ruins of Arnak)"
+  ]
+ ],
+ "nota_ficha": "Ludopedia e BoardGameGeek bloqueiam acesso automatizado: a nota do BGG e a da Ludopedia ficaram sem confirmação; a data de lançamento nacional vem da busca. Regras segundo o resumo do livro de regras no RulesPal; componentes segundo a Tabletop Gaming. Consulta em 05/11/2026.",
+ "como_funciona": [
+  "Você comanda a defesa de uma cidade da Terra. Em cima do tabuleiro fica o céu, com naves alienígenas descendo coluna por coluna, e lá no alto a nave-mãe. Embaixo fica a sua base subterrânea, com salas de energia, caças, pesquisa e robôs. Você vence quando o marcador de pesquisa chega ao topo da trilha e perde se a cidade sofrer dano máximo ou se a nave-mãe chegar à linha da caveira.",
+  "A rodada começa com a rolagem dos dados: na primeira partida, três cinza e dois brancos. Cada dado vai para uma sala, e cada sala está numa coluna diferente. Ao pôr o dado, todas as naves daquela coluna descem o número de casas que ele mostra. Depois de pôr um dado branco, você rola de novo os que sobraram.",
+  "Na fase das salas, cada dado ativa a sala em que está, com força igual ao valor dele. Sala de energia recarrega a bateria, sala de caça derruba naves cuja explosão marca número igual ou menor que o dado, sala de pesquisa avança a trilha. Várias salas cobram energia para funcionar. Um dado também pode ir para um espaço ainda não escavado, e a escavadeira abre caminho para salas novas.",
+  "Nave que passa do céu causa 1 dano à cidade e volta para a nave-mãe. No fim da rodada, a nave-mãe desce uma linha e resolve o espaço em que parou: pode recuar a escavadeira, tirar pesquisa, trazer naves brancas ou causar dano. Depois, novas naves saem dela para as colunas.",
+  "O jogo completo traz cidades com poderes próprios, robôs que funcionam como dados extras e quatro peças de céu que podem ser viradas para o lado mais difícil, de nível 0 a 4. A campanha tem quatro capítulos, com personagens e cenários que mudam as regras."
+ ],
+ "passos": [
+  [
+   "ROLE OS DADOS",
+   "Role os cinco dados. Cada um vai para uma sala de uma coluna diferente da base, e você escolhe a ordem."
+  ],
+  [
+   "ATRAIA AS NAVES",
+   "Ao pôr um dado, todas as naves daquela coluna descem o número de casas que ele mostra. Depois de cada dado branco, role os restantes."
+  ],
+  [
+   "ATIVE AS SALAS",
+   "Cada dado ativa a sala dele com força igual ao valor: gera energia, derruba naves, avança a pesquisa ou escava."
+  ],
+  [
+   "DESÇA A NAVE-MÃE",
+   "A nave-mãe desce uma linha e resolve o espaço: pode recuar a escavadeira, tirar pesquisa, trazer naves ou causar dano."
+  ],
+  [
+   "COMPLETE A PESQUISA",
+   "Chegue ao topo da trilha de pesquisa antes que a cidade sofra dano máximo ou a nave-mãe alcance a caveira."
+  ]
+ ],
+ "como_resumo": "Ponha cinco dados nas salas, aguente as naves descendo e termine a pesquisa antes da caveira.",
+ "perfil": [
+  [
+   "Tensão por rodada",
+   5
+  ],
+  [
+   "Ritmo de partida",
+   4
+  ],
+  [
+   "Facilidade de ensinar",
+   4
+  ],
+  [
+   "Variedade entre partidas",
+   4
+  ],
+  [
+   "Controle sobre a sorte",
+   3
+  ],
+  [
+   "Ajuste de dificuldade",
+   5
+  ]
+ ],
+ "experiencia": [
+  "Em todo jogo de dados do mundo, o seis é festa. Aqui o seis é uma ameaça com desconto. A Tabletop Gaming chama de golpe de mestre a regra de que cada dado define a força da sala e também quanto as naves da coluna descem, e a Opinionated Gamers resume o mecanismo como ofuscantemente simples e perfeitamente frustrante. É isso. Você torce pelo número alto e reza para que ele caia na coluna vazia.",
+  "Um turno típico: saiu um 6 e você precisa dele na sala de caça para derrubar a nave que já está a duas casas da cidade. Só que a sala de caça fica embaixo justamente dessa coluna, e o 6 faz a nave descer seis casas antes de o caça atirar. Ou você usa o 6 na pesquisa, numa coluna sem nave, e aceita o dano. Depois vem o dado branco, e a nova rolada pode consertar tudo ou piorar tudo.",
+  "A partida dura de 20 a 40 minutos, e a Meeple Mountain diz que mesmo as derrotas no nível normal parecem ao alcance. Então você monta de novo. A invasão alienígena mais educada do mundo: ela espera você arrumar a mesa."
+ ],
+ "citacao": {
+  "texto": "O mecanismo esperto no centro do jogo é ao mesmo tempo ofuscantemente simples e perfeitamente frustrante.",
+  "fonte": "Opinionated Gamers (tradução livre)"
+ },
+ "funciona": [
+  [
+   "O dado que ajuda e atrapalha",
+   "Cada dado manda a força da sala e a velocidade das naves na coluna. A Tabletop Gaming chama essa regra de golpe de mestre e diz que ela cria escolhas tensas a cada rodada. É o tipo de ideia que cabe em uma frase e sustenta o jogo inteiro: o número que você quer é o número que te ameaça."
+  ],
+  [
+   "Dificuldade que se regula",
+   "As quatro peças de céu viram para o lado mais difícil, de nível 0 a 4, e cada cidade tem poder próprio. A Meeple Mountain diz que o nível normal é desafiador mas justo, e a Opinionated Gamers elogia o ajuste. Perder três vezes seguidas, aqui, é um convite para virar uma peça a menos, não para guardar a caixa."
+  ],
+  [
+   "Campanha generosa",
+   "São quatro capítulos com quadrinhos, personagens com poder de uso único e cenários que mudam regras. A Tabletop Gaming diz que uma segunda campanha quase não repetiria conteúdo e se impressiona com a generosidade numa caixa daquele tamanho. A Meeple Mountain lembra que cada campanha usa só parte das peças, então as montagens mudam."
+  ],
+  [
+   "Partida que cabe na noite",
+   "A Opinionated Gamers relata de 35 a 40 minutos na maioria das partidas, e a caixa anuncia de 20 a 40. Para um solo com campanha, isso é raro: dá para jogar um capítulo inteiro em duas noites sem montar mesa de duas horas. Arrumar e guardar também é rápido, com sete dados e nove naves."
+  ],
+  [
+   "Nasceu pequeno e cresceu bem",
+   "O jogo começou como um jogo de nove cartas para imprimir em casa, que venceu o concurso de design da Nanogame em 2019, segundo a ficha da Ludopedia. A versão de caixa ganhou campanha, cidades e robôs sem perder a regra central. Na Meeple Mountain, Ian Howard chegou a dizer que talvez seja um jogo perfeito."
+  ]
+ ],
+ "atencao": [
+  [
+   "Moderada",
+   "Difícil de achar novo",
+   "A Devir lançou a edição nacional em 2021, mas em 05/11/2026 o ComparaJogos só mostrava uma oferta de jogo novo, em marketplace, a R$ 471,11. A Tabletop Gaming falava em 29 libras na Inglaterra. O jogo elogiado pela generosidade ficou, no Brasil, com preço de jogo grande e estoque de jogo raro."
+  ],
+  [
+   "Moderada",
+   "Só para uma pessoa",
+   "É solo e só solo: a caixa diz 1 jogador e não há modo para dois nas fontes consultadas. Quem compra esperando dividir a defesa da Terra com alguém vai descobrir que a outra pessoa, no máximo, segura a caixa. A ideia é ótima. Ela só não aceita visita."
+  ],
+  [
+   "Moderada",
+   "A rolada pode salvar ou afundar",
+   "A Meeple Mountain avisa que a nova rolada depois do dado branco pode salvar uma rodada ruim ou arruinar uma boa, principalmente quando a hora certa importa. O crítico trata isso como parte da tensão. Quem odeia perder porque saiu um 6 no lugar errado vai perder algumas vezes exatamente por isso."
+  ],
+  [
+   "Leve",
+   "Tabuleiro que não cabe em qualquer mesa",
+   "A Opinionated Gamers conta que foi difícil encaixar o tabuleiro modular na mesa de um quarto de hotel, e que a mesa de centro resolveu. A base, o céu e a nave-mãe formam uma coluna comprida. É um jogo solo, mas que pede mesa de jogo de verdade."
+  ],
+  [
+   "Leve",
+   "Regra que engana quem já joga",
+   "Segundo a Opinionated Gamers, é fácil errar detalhes quando se supõe que o jogo funciona como outros. A regra de que o dado move a nave antes de a sala agir, por exemplo, contraria o instinto de quem vem de outros jogos de alocação. Na primeira partida, releia o livro com calma."
+  ],
+  [
+   "Leve",
+   "Cartelas desalinhadas",
+   "A Tabletop Gaming recebeu uma cópia com cartelas levemente mal cortadas, que desalinhavam a arte quando as peças do tabuleiro eram montadas, e chamou isso de defeito infeliz num design quase impecável. A edição brasileira não foi conferida neste ponto."
+  ]
+ ],
+ "jogadores": [
+  [
+   "Sozinho",
+   "É a única contagem: o jogo é solo de origem, e a crítica consultada trata a experiência como uma das melhores do gênero.",
+   3
+  ],
+  [
+   "2 jogadores",
+   "Modo para dois não confirmado nas fontes consultadas. Dá, no máximo, para decidir as jogadas a quatro mãos.",
+   1
+  ]
+ ],
+ "primeira_partida": "A primeira partida usa a cidade de Roswell, as bases A e B e três dados cinza e dois brancos, sem robôs e sem campanha. O que confunde é a ordem: o dado move as naves da coluna quando é colocado, e a sala só age na fase seguinte. Dica prática: antes de pôr cada dado, olhe a nave mais baixa daquela coluna e conte quantas casas faltam para ela atingir a cidade. Comece no nível 0, com as peças de céu do lado fácil, e só depois vire uma.",
+ "edicao_nacional": "A Devir lançou Under Falling Skies no Brasil em outubro de 2021, com o nome original e o jogo em português. Em 05/11/2026, o ComparaJogos só listava uma oferta de jogo novo, em marketplace, a R$ 471,11, sem ofertas de usado; nenhuma loja especializada aparecia com estoque. Vale procurar no mercado de usados antes de pagar esse valor.",
+ "preco_ref": {
+  "faixa": "R$ 471,11 (única oferta)",
+  "data": "05/11/2026",
+  "obs": "única oferta de jogo novo no ComparaJogos, em marketplace; nenhuma loja especializada com estoque"
+ },
+ "versoes": "A caixa já traz a campanha de quatro capítulos, com cidades extras, personagens e robôs. O jogo começou como um jogo de nove cartas para imprimir em casa, que venceu um concurso de design em 2019, segundo a Ludopedia. Expansão e versão digital oficial não foram confirmadas nas fontes consultadas até 05/11/2026.",
+ "comparacoes": [
+  [
+   "Sky Team",
+   "sky-team",
+   "Também é alocação de dados em que cada número tem dono e consequência, mas cooperativo para dois. Se você gostou da conta do dado alto que atrapalha, Sky Team leva essa angústia para a cabine."
+  ],
+  [
+   "Gloomhaven: Jaws of the Lion",
+   "gloomhaven-jaws-of-the-lion",
+   "Ficou entre os finalistas do mesmo Golden Geek de jogo solo de 2020. Também se joga sozinho e em campanha, mas com cenários longos, monstros e muito mais regra para levar para a mesa."
+  ],
+  [
+   "Last Light",
+   "last-light",
+   "Ficção científica com nave, ameaça e recurso escasso, mas para várias pessoas. Se a sua vontade é dividir a invasão, a conversa começa por outro lado da prateleira."
+  ]
+ ],
+ "para_quem": [
+  "Joga sozinho e quer partidas de meia hora",
+  "Gosta de dilema em que cada número tem custo",
+  "Quer campanha curta sem livro de cem páginas",
+  "Aceita perder e regular a dificuldade",
+  "Acha um exemplar usado por preço justo"
+ ],
+ "nao_e_para": [
+  "Quer dividir a partida com outra pessoa",
+  "Odeia ver um dado decidir a rodada",
+  "Só compra jogo novo em loja especializada",
+  "Procura narrativa longa e personagens marcantes",
+  "Joga em mesa pequena"
+ ],
+ "selo": "Recomendado com ressalva",
+ "ressalva": "difícil de achar novo",
+ "melhor_para": "solo",
+ "veredito": "Under Falling Skies é o único jogo de dados em que torcer pelo seis é falta de juízo, e é por isso que ele venceu o Golden Geek de jogo solo de 2020. Cada dado fortalece a sala e puxa a nave inimiga para baixo, e essa conta sozinha sustenta 30 minutos de tensão, quatro capítulos de campanha e cinco níveis de dificuldade. O que pesa: a nova rolada às vezes decide a rodada, o tabuleiro pede mesa grande e o jogo é só para uma pessoa. O maior problema, porém, está fora da caixa: em 05/11/2026, a única oferta nova encontrada era em marketplace, a R$ 471,11. Achou usado em português da Devir? Leve. A invasão espera.",
+ "tagline": "Cinco dados, uma cidade e o seis como o pior inimigo da humanidade.",
+ "consulta": "05/11/2026",
+ "fontes": [
+  [
+   "RulesPal – Under Falling Skies: livro de regras",
+   "https://rulespal.com/under-falling-skies/rulebook",
+   "regras, primeira partida, campanha, dificuldade"
+  ],
+  [
+   "Brettspielbox – 15th Annual Golden Geek Awards: Sieger",
+   "https://brettspielbox.de/15th-annual-golden-geek-awards-sieger/",
+   "prêmio e finalistas"
+  ],
+  [
+   "Tabletop Gaming – Under Falling Skies review",
+   "https://tabletopgaming.co.uk/reviews/under-falling-skies-review",
+   "crítica, componentes, preço original, campanha"
+  ],
+  [
+   "Meeple Mountain – Under Falling Skies review",
+   "https://www.meeplemountain.com/reviews/under-falling-skies/",
+   "crítica, dificuldade, rolada"
+  ],
+  [
+   "Opinionated Gamers – Under Falling Skies: A Solo Gaming Review",
+   "https://opinionatedgamers.com/2021/01/19/under-falling-skies-a-solo-gaming-review/",
+   "crítica, duração, citação"
+  ],
+  [
+   "ComparaJogos – Under Falling Skies",
+   "https://www.comparajogos.com.br/item/under-falling-skies",
+   "preço no Brasil, editora, idioma, nota"
+  ],
+  [
+   "Ludopedia – Under Falling Skies",
+   "https://ludopedia.com.br/jogo/under-falling-skies",
+   "lançamento nacional e origem do jogo (via busca)"
+  ],
+  [
+   "Czech Games Edition – Under Falling Skies",
+   "https://www.czechgames.com/games/under-falling-skies",
+   "ficha oficial, idade, duração, fotos"
+  ]
+ ],
+ "legenda": "O único jogo de dados em que tirar seis é má notícia. 🛸\n\nUnder Falling Skies venceu o Golden Geek de jogo solo de 2020: cinco dados, uma base subterrânea e naves alienígenas descendo.\nCada dado fortalece a sala e puxa a nave inimiga para baixo. Genial. Difícil é achar o jogo novo no Brasil.\nVeredito: RECOMENDADO COM RESSALVA. Edição da Devir em português; em 05/11/2026, só uma oferta nova, a R$ 471,11.\n\nNo seu jogo solo: dado alto ou dado seguro? 👇\nResenha completa no link da bio.\n\n#UnderFallingSkies #JogosDeTabuleiro #BoardGames #JogoSolo #SoloBoardGames #OnePlayerGuild #Dados #DiceGames #Devir #GoldenGeek #EliteBoardgamers"
+}
