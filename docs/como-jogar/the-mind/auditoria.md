@@ -78,3 +78,24 @@ O mesmo protocolo do piloto: 5 a 8 adultos que nunca jogaram; tarefas: montar a 
 ## 9. Ligação com a resenha
 
 A resenha está em `/the-mind/`. Proposta (não implementada): link do tutorial na resenha, perto do "como funciona", e da resenha no topo do tutorial.
+
+## Auditoria independente (05/11/2026)
+
+Duas auditorias independentes: conferência contra o manual (aprovado com correções, nenhum erro de regra) e partida simulada (joga com ajustes). O que mudou no tutorial:
+
+- **S1.** O exemplo resolvido do Comece não fala mais em tempo de espera; ficou só a ordem das cartas, como no exemplo do manual (p. 1). A ideia do tempo aparece só no bloco de spoiler da etapa 1, como promete a seção 0.
+- **M1.** O aviso do vídeo diz o que muda no The Mind Extreme: cartas brancas e vermelhas de 1 a 50, duas pilhas (uma crescente, outra decrescente), níveis com cartas viradas para baixo, estrela ninja diferente e pausa chamada "Parem" (manual TMI102). O "Parem!" ficou sem exclamação para passar no `checar_comece.py`.
+- **M2.** Modo cego com mais de um erro: o bloco cita as duas leituras (pela letra, uma vida por nível com erro; no Extreme, uma por erro) e deixa a escolha para a mesa, antes de começar.
+- **M3, M4.** Legendas: `recompensa.webp` agora diz "Uma carta de nível com o símbolo da recompensa no canto inferior direito"; `setup-3-cartas.webp`, "Passo 5". Os arquivos das figuras não mudaram.
+- **M5.** "(p. 1 e 2)" no `[!edicao]` do erro que descarta as últimas cartas.
+- **M6.** O `[!dica]` "conte a distância" fica logo depois do bloco de spoiler.
+- **M8.** No exemplo da estrela ninja saiu o "(p. 2)"; a página fica no passo a passo da regra.
+- **M9 e simulação 6.** O `checar_comece.py` exige o título exato "### Seu primeiro turno" (lista `OBRIGATORIAS`). O título ficou, e a seção agora começa explicando que The Mind não tem turnos e que, ali, o primeiro turno é o primeiro nível.
+- **Simulação 1.** A pergunta impossível (2 jogadores, dois erros no nível 1, quando só há 2 cartas e o primeiro erro esvazia as mãos) virou: erra no nível 1, vence os níveis 1 e 2, erra no nível 3. Resposta conferida: 2 vidas iniciais (p. 1); o nível 2 dá estrela, não vida (p. 2); a recompensa do nível 3 só viria depois de vencê-lo; o segundo erro leva a última vida e a equipe perde (p. 2).
+- **Simulação 2.** Os 6 níveis com recompensa agora são tratados do mesmo jeito: a recompensa (vida ou estrela ninja) está desenhada no canto inferior direito da carta (figura e texto da p. 2), e o nível 2, segundo o manual, dá estrela ninja. A pergunta 5 da avaliação perdeu o "sempre" e pergunta qual nível dá recompensa.
+- **Simulação 3.** Vida perdida e estrela usada: o manual diz só "de lado" (p. 2). Novo `[!edicao]` rotulado como leitura do guia: elas se juntam às cartas deixadas de lado na preparação, porque a caixa só tem 5 vidas e 3 estrelas e a equipe pode chegar a esse máximo com recompensas (p. 1 e 2).
+- **Simulação 4.** No passo a passo do nível seguinte, primeiro se confere a recompensa na carta, depois a carta vai para a caixa. A folha de consulta segue a mesma ordem.
+- **Simulação 5.** Interromper um erro: o manual diz que o jogo é "imediatamente interrompido" por quem tem carta mais baixa (p. 2); o passo cita que, no exemplo do manual, os jogadores dizem "Pausa" (p. 2), sem transformar isso em regra. Novo passo: a carta jogada fica na pilha, já que só as cartas abaixo dela são descartadas, e a próxima precisa ser maior que ela.
+- **Simulação 7.** "a tabela no fim desta seção" (passo 1 da montagem); "a carta mais baixa das mãos" (Comece e etapa 1); "depois a 40, numa jogada separada" (complete da etapa 1); "mesa travada" explicada no exemplo da estrela ("ninguém se arrisca a jogar").
+
+Portões depois das correções: `checar_comece.py` passa sem aviso; `vicios.py`: 0; travessão e meia-risca: 0; 4.662 palavras pela contagem `\w+`. O JSON continua com `"publicar": false`.

@@ -99,7 +99,7 @@ O dado tem seis faces: **1**, **2** e **3** (Pontos de Vitória), o **raio** (En
    - Cada raio: 1 cubo de Energia do banco.
    - Cada coração: +1 Ponto de Vida, só fora de Tóquio, e nunca acima de 10.
    - Cada garra: 1 Ponto de Vida a menos para quem não está no mesmo lugar que você.
-3. **Entre em Tóquio.** Se ninguém está em Tóquio, você tem de entrar na Cidade de Tóquio, e ganha 1 Ponto de Vitória (p. 5).
+3. **Entre em Tóquio.** Se ninguém está em Tóquio, ou se quem estava lá cedeu o lugar por causa das suas garras, você tem de entrar na Cidade de Tóquio, e ganha 1 Ponto de Vitória (p. 5 e 6).
 4. **Compre cartas de Poder** com a Energia, se quiser (p. 6).
 5. **Fim do turno.** Passe os dados para a esquerda (p. 6).
 
@@ -123,10 +123,9 @@ No primeiro turno da partida ninguém está em Tóquio: as garras do primeiro jo
 > - ( ) 9
 > = Em Tóquio os corações não curam (p. 5).
 
-
 ### Ainda não precisa saber
 
-Como sair de Tóquio e quem entra no lugar: etapa 2. A Baía de Tóquio, com 5 ou 6 jogadores: etapa 2. Os dois tipos de carta de Poder e como trocar as cartas à vista: etapa 3.
+Quando e como se cede Tóquio: etapa 2. A Baía de Tóquio, com 5 ou 6 jogadores: etapa 2. Os dois tipos de carta de Poder e como trocar as cartas à vista: etapa 3.
 
 ### Como a partida acaba
 
@@ -173,7 +172,6 @@ São três etapas, na ordem em que as dúvidas aparecem na mesa: rolar e resolve
 
 > [!resolvido] **Exemplo resolvido: o exemplo do manual, conta por conta** (p. 5). O CyberKitty está na Cidade de Tóquio, e é a vez do Gigazaur, que está fora. Ele rola 1, 2, 3, 3, coração e raio. Separa os dois 3 e rola os outros quatro: 3, 3, 2, 2, 2 e garra. Muda de ideia: separa os três 2 e rola os outros três, que dão 2, raio e garra. Resultado final: 2, 2, 2, 2, raio, garra. Três faces de 2 valem 2, e o quarto 2 vale +1: 3 Pontos de Vitória. O raio dá 1 de Energia. A garra faz o CyberKitty, em Tóquio, perder 1. Sem coração, não há cura.
 
-
 > [!complete] **Complete.** Você está fora de Tóquio. Um Monstro está na Cidade de Tóquio, e outros dois estão fora, como você. Seus dados finais: 2, 2, 2, garra, garra e raio. A trinca de 2 dá 2 Pontos de Vitória e o raio, 1 de Energia.
 >
 > ?? Quem perde Vida com as suas duas garras?
@@ -189,7 +187,6 @@ São três etapas, na ordem em que as dúvidas aparecem na mesa: rolar e resolve
 > - ( ) 7
 > - ( ) 10
 > = Em Tóquio os corações dos dados não curam; só cartas de Poder curam lá (p. 4 e 5).
-
 
 > [!treino] **Treino rápido: quantos Pontos de Vitória?** Conte só os números.
 >
@@ -304,7 +301,7 @@ São três etapas, na ordem em que as dúvidas aparecem na mesa: rolar e resolve
 
 > [!edicao] **Dois Monstros a 20 no mesmo turno.** O manual não traz desempate para esse caso, e o guia não inventa um.
 
-> [!mais] **Cartas com esclarecimento no manual** (p. 7). **Imitador:** copia uma carta como se ela tivesse acabado de ser jogada; se a copiada sair, a ficha volta, e por 1 de Energia, no início do seu turno, vai para outra Constante. **Sopro de Fogo:** os vizinhos da direita e da esquerda perdem 1, mesmo no mesmo lugar que você; a 2, o adversário perde só 1. **Oportunista:** com dois em jogo, compra primeiro o primeiro Monstro em sentido horário a partir do jogador da vez. **Metamorfose:** as Constantes saem no Fim do turno e devolvem o custo impresso. **Cuspe Envenenado e Raio de Encolhimento:** as fichas ficam mesmo sem a carta e só saem fora de Tóquio, usando corações.
+> [!mais] **Cartas com esclarecimento no manual** (p. 7). **Imitador:** copia uma carta como se ela tivesse acabado de ser jogada; se a copiada sair, a ficha volta, e por 1 de Energia, no início do seu turno, vai para outra Constante. **Sopro de Fogo:** quando ela age, os vizinhos da direita e da esquerda perdem 1, mesmo no mesmo lugar que você; a 2, o adversário perde só 1. **Oportunista:** com dois em jogo, compra primeiro o primeiro Monstro em sentido horário a partir do jogador da vez. **Metamorfose:** as Constantes que você descarta com ela saem no Fim do turno e devolvem o custo impresso. **Cuspe Envenenado e Raio de Encolhimento:** as fichas ficam mesmo sem a carta e só saem fora de Tóquio, usando corações.
 
 ## 6. Avaliação final
 

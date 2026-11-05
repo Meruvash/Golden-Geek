@@ -23,37 +23,37 @@ A montagem segue a página de preparação do manual (p. 6), na mesma ordem, com
 | Fichas de Ocupado | 20 |
 | Dado de 8 lados | 1, só para o modo solo |
 
-!fig[As quatro peças de Evento básico, cada uma com o espaço para um trabalhador e o valor de 3 pontos. Ilustração: manual Galápagos (p. 4)](figuras/setup-eventos-basicos.webp)
+!fig[As quatro peças de Evento básico, de 3 pontos cada. Ilustração: manual Galápagos (p. 4)](figuras/setup-eventos-basicos.webp)
 
 **1. O tabuleiro e a árvore** (p. 6)
 
-1. **Ponha o tabuleiro no centro da mesa.** O manual não ensina a encaixar as peças da Árvore Perene de Ever; a p. 5 só mostra a árvore montada, com dois andares de galhos.
+1. **Ponha o tabuleiro no centro da mesa** (p. 6). O manual não ensina a encaixar as peças da árvore; a p. 5 só a mostra montada.
 2. **Ponha a Árvore Perene de Ever no toco desenhado no topo do tabuleiro** (p. 6).
 
-!fig[A Árvore Perene de Ever montada sobre o toco no alto do tabuleiro (número 1 da ilustração), com os três escudos das estações em cima e os trabalhadores nos galhos de cima (número 7). Ilustração: manual Galápagos (p. 7)](figuras/setup-arvore.webp)
+!fig[A Árvore Perene de Ever no toco do alto do tabuleiro (1), com os trabalhadores nos galhos de cima (7). Ilustração: manual Galápagos (p. 7)](figuras/setup-arvore.webp)
 
 **2. Recursos e fichas** (p. 6 e 7)
 
 3. **Ponha os gravetos, os cristais, os seixos e os frutos em quatro pilhas ao longo da margem do rio.** Essas pilhas são o estoque geral. Os recursos não têm limite: se uma pilha acabar, use outra coisa no lugar (p. 6 e 7).
 
-!fig[As quatro pilhas do estoque geral ao longo do rio (os números 2): gravetos, cristais, seixos e frutos. Os números 4 e 5 marcam os Eventos e o baralho, dos passos seguintes. Ilustração: manual Galápagos (p. 7)](figuras/setup-recursos.webp)
+!fig[O estoque geral ao longo do rio (2): gravetos, cristais, seixos e frutos. Ilustração: manual Galápagos (p. 7)](figuras/setup-recursos.webp)
 
 4. **Ponha as fichas de pontuação e as fichas de Ocupado ao lado do tabuleiro** (p. 6).
 
-!fig[As fichas de pontuação de 1 e de 3 pontos e as fichas de Ocupado, ao lado do tabuleiro. Ilustração: manual Galápagos (p. 7)](figuras/setup-fichas.webp)
+!fig[Fichas de pontuação e de Ocupado ao lado do tabuleiro. Ilustração: manual Galápagos (p. 7)](figuras/setup-fichas.webp)
 
 **3. As cartas de Floresta** (p. 6)
 
 5. **Embaralhe as 11 cartas de Floresta e ponha algumas, viradas para cima, nas clareiras da floresta**, dos dois lados do tabuleiro: 3 cartas com 2 jogadores, 4 cartas com 3 ou 4 jogadores. As outras voltam para a caixa (p. 6).
 
-!fig[As cartas de Floresta nas clareiras, à esquerda e à direita do tabuleiro (os números 3). Cada uma é um local com os seus espaços para trabalhador. Ilustração: manual Galápagos (p. 7)](figuras/setup-floresta.webp)
+!fig[As cartas de Floresta nas clareiras dos dois lados do tabuleiro (3). Ilustração: manual Galápagos (p. 7)](figuras/setup-floresta.webp)
 
 **4. Os Eventos** (p. 6)
 
 6. **Ponha as 4 peças de Evento básico ao longo da margem do rio** (p. 6).
 7. **Embaralhe as 16 cartas de Evento especial e ponha 4 nos galhos de baixo da Árvore Perene de Ever.** As outras 12 voltam para a caixa (p. 6).
 
-!fig[Os quatro números 4: as peças de Evento básico na margem do rio, embaixo, e as cartas de Evento especial nos galhos de baixo da árvore, em cima. No meio, o número 5 marca o baralho guardado dentro da árvore. Ilustração: manual Galápagos (p. 7)](figuras/setup-eventos.webp)
+!fig[Os Eventos (4): peças básicas na margem do rio e cartas especiais nos galhos de baixo. No meio, o baralho dentro da árvore (5). Ilustração: manual Galápagos (p. 7)](figuras/setup-eventos.webp)
 
 **5. O baralho e a Campina** (p. 6 e 7)
 
@@ -61,25 +61,25 @@ A montagem segue a página de preparação do manual (p. 6), na mesma ordem, com
 9. **Ponha o resto do baralho dentro da Árvore Perene de Ever**, no vão do tronco (p. 6).
 10. **Deixe livre o recorte na borda de baixo do tabuleiro:** ali fica a pilha de descarte, com as cartas viradas para baixo (p. 7).
 
-!fig[As 8 cartas da Campina, em duas fileiras de quatro, no centro do tabuleiro (número 5). Embaixo ficam a Jornada, à esquerda, e o Refúgio, à direita. Ilustração: manual Galápagos (p. 7)](figuras/setup-campina.webp)
+!fig[As 8 cartas da Campina, em duas fileiras de quatro (5). Ilustração: manual Galápagos (p. 7)](figuras/setup-campina.webp)
 
 **6. Cada jogador** (p. 6 e 7)
 
 11. **Cada jogador escolhe uma cor, pega os 6 trabalhadores dela e deixa 2 à sua frente.** Os trabalhadores das cores que ninguém escolheu voltam para a caixa (p. 4 e 6).
 12. **Cada jogador compra cartas do baralho, conforme a ordem de jogo:** o primeiro compra 5, o segundo 6, o terceiro 7 e o quarto 8. Quem começa é decidido no passo 14; decida antes de comprar (p. 6).
 
-!fig[O canto do Jogador 1 (número 6): os 2 trabalhadores iniciais e as 5 cartas da mão. Na mesma ilustração, o Jogador 2 recebe 6 cartas, o 3 recebe 7 e o 4 recebe 8. Ilustração: manual Galápagos (p. 7)](figuras/setup-jogador.webp)
+!fig[O Jogador 1 (6): 2 trabalhadores e 5 cartas. Ilustração: manual Galápagos (p. 7)](figuras/setup-jogador.webp)
 
 13. **Cada jogador põe os outros 4 trabalhadores nos galhos de cima da árvore:** 1 na primavera, 1 no verão e 2 no outono (p. 6).
 
-!fig[Os galhos de cima da árvore, com os trabalhadores das quatro cores esperando as estações. Cada escudo diz o que a estação dá: primavera, +1 trabalhador e Produção; verão, +1 trabalhador e comprar 2 da Campina; outono, +2 trabalhadores e Produção. Ilustração: manual Galápagos (p. 13)](figuras/setup-galhos.webp)
+!fig[Os trabalhadores nos galhos de cima, sob os escudos das estações: primavera +1, verão +1, outono +2. Ilustração: manual Galápagos (p. 13)](figuras/setup-galhos.webp)
 
 **7. Quem começa** (p. 6 e 8)
 
 14. **Começa a pessoa mais humilde da mesa.** A vez segue no sentido horário (p. 6 e 8).
 15. **Ninguém recebe recursos na montagem.** Os passos do manual não dão gravetos, cristais, seixos nem frutos a ninguém: tudo vem dos locais e das cartas durante a partida (p. 6).
 
-!fig[A mesa montada para 4 jogadores, com os números dos passos do manual: 1, a árvore; 2, os recursos e as fichas; 3, as cartas de Floresta; 4, os Eventos; 5, a Campina e o baralho; 6, o canto de cada jogador; 7, os trabalhadores na árvore. Ilustração: manual Galápagos (p. 7)](figuras/preparacao.webp)
+!fig[A mesa montada para 4 jogadores, com os números dos passos do manual (1 a 7). Ilustração: manual Galápagos (p. 7)](figuras/preparacao.webp)
 
 **O que muda com o número de jogadores** (p. 6 e 8):
 
@@ -91,7 +91,7 @@ A montagem segue a página de preparação do manual (p. 6), na mesma ordem, com
 
 Cada jogador tem sempre 6 trabalhadores: 2 à frente e 4 na árvore (p. 4 e 6).
 
-**O que volta para a caixa:** as cartas de Floresta que não entraram (passo 5), as 12 cartas de Evento especial que não foram para a árvore (passo 7), os trabalhadores das cores sem dono (passo 11) e o dado de 8 lados, que só serve ao modo solo (p. 4 e 6). A carta de vitória não aparece em nenhuma regra do manual.
+**O que volta para a caixa:** as cartas de Floresta que sobraram, 12 Eventos especiais, os trabalhadores sem dono e o dado de 8 lados, só do modo solo (p. 4 e 6). A carta de vitória não aparece em nenhuma regra.
 
 **Antes de começar, confira:** árvore no toco; quatro pilhas de recursos na margem do rio; fichas ao lado; 3 ou 4 cartas de Floresta; 4 Eventos básicos no rio e 4 Eventos especiais nos galhos de baixo; 8 cartas na Campina e o baralho dentro da árvore; cada jogador com 2 trabalhadores à frente, 4 na árvore (1, 1 e 2) e as cartas da sua posição; quem começa definido.
 
@@ -145,7 +145,7 @@ Os 8 locais básicos, na faixa do caminho logo abaixo do rio (p. 8):
 
 As cartas de Floresta também são locais, em geral mais fortes, com o que dão escrito na carta. Com 2 ou 3 jogadores, cada uma recebe só 1 trabalhador (p. 8).
 
-!fig[Os 8 locais básicos: cada placa mostra o que o local dá, e o círculo da pata mostra se ele é exclusivo (fechado) ou compartilhado (aberto). Ilustração: manual Galápagos (p. 8)](figuras/locais-basicos.webp)
+!fig[Os 8 locais básicos: a placa mostra o que o local dá; o círculo, se é exclusivo (fechado) ou compartilhado (aberto). Ilustração: manual Galápagos (p. 8)](figuras/locais-basicos.webp)
 
 > [!resolvido] **Exemplo resolvido.** Partida de 2 jogadores. Ana começa, com 5 cartas na mão, e põe um trabalhador no local de 3 gravetos: pega 3 gravetos do estoque geral. O local é exclusivo e agora está ocupado.
 
@@ -189,7 +189,7 @@ Cada jogador passa por primavera, verão e outono no seu próprio ritmo. Depois 
 
 Everdell é um jogo de alocação de trabalhadores e de construção de vila para 1 a 4 pessoas, de James A. Wilson, com ilustrações de Andrew Bosley (p. 23). Cada jogador lidera um grupo de criaturas que chega ao vale no fim do inverno e precisa erguer uma vila antes do inverno seguinte (p. 2, 3 e 12).
 
-Os recursos vêm dos trabalhadores, e os pontos vêm da vila. Cada carta jogada ocupa um dos 15 espaços da sua vila e vale os pontos impressos nela; muitas também rendem recursos, descontos ou pontos extras no fim (p. 10, 11 e 14). Por isso o jogo cobra duas decisões ao mesmo tempo: aonde mandar os poucos trabalhadores e qual carta, entre a mão e as 8 da Campina, merece um dos espaços.
+Os recursos vêm dos trabalhadores, e os pontos vêm da vila: cada carta ocupa um dos 15 espaços e vale os pontos impressos nela, e muitas rendem recursos, descontos ou bônus no fim (p. 10, 11 e 14). A cada turno você decide aonde mandar os poucos trabalhadores ou qual carta merece um espaço.
 
 Duas ideias sustentam o resto:
 
@@ -202,7 +202,7 @@ Quatro etapas, cada uma uma parte real da partida: alocar trabalhadores, jogar c
 
 ## 2. Etapa 1: alocar um trabalhador
 
-> [!entender] **Para entender.** Os trabalhadores são a sua única fonte de recursos no começo, e são poucos: 2 na primavera que abre o jogo, 6 no outono (p. 6 e 13). Cada um que você põe fica parado no local até você chamar todos de volta, o que custa um turno inteiro (p. 8 e 12). Por isso cada envio conta, e por isso os locais exclusivos disputados, como o de 3 gravetos, costumam ser ocupados cedo.
+> [!entender] **Para entender.** Os trabalhadores são a sua única fonte de recursos no começo, e são poucos: 2 no começo, ainda no fim do inverno, e 6 no outono (p. 6 e 13). Cada um que você põe fica parado no local até você chamar todos de volta, o que custa um turno inteiro (p. 8 e 12). Por isso cada envio conta, e por isso os locais exclusivos disputados, como o de 3 gravetos, costumam ser ocupados cedo.
 
 > [!passos] **Passo a passo: alocar um trabalhador** (p. 8)
 > 1. Escolha um trabalhador seu que esteja livre, à sua frente.
@@ -211,7 +211,7 @@ Quatro etapas, cada uma uma parte real da partida: alocar trabalhadores, jogar c
 > 4. Na hora, pegue os recursos listados do estoque geral, compre as cartas do baralho ou faça a ação do local.
 > 5. O trabalhador fica alocado ali até a sua próxima ação de Preparar-se para a Estação.
 
-!fig[Exclusivo e compartilhado: no círculo fechado cabe um só trabalhador; no aberto cabem vários, de cores iguais ou diferentes. Ilustração: manual Galápagos (p. 8)](figuras/locais.webp)
+!fig[Exclusivo (um trabalhador) e compartilhado (vários). Ilustração: manual Galápagos (p. 8)](figuras/locais.webp)
 
 > [!passos] **Passo a passo: os locais do tabuleiro** (p. 8 e 9)
 > 1. **Locais básicos:** os 8 da tabela do "Comece a jogar", na faixa abaixo do rio.
@@ -226,7 +226,7 @@ Quatro etapas, cada uma uma parte real da partida: alocar trabalhadores, jogar c
 
 > [!mais] **Dar cartas a um adversário.** Quando uma regra manda dar cartas, escolha quem tem espaço na mão, se houver; entregue o máximo que couber e descarte o resto (p. 11).
 
-!fig[À esquerda, o Refúgio: o círculo de pedras aceita trabalhadores sem limite. À direita, a Jornada, com os espaços de 2, 3, 4 e 5 pontos, que a etapa 3 explica. Ilustração: manual Galápagos (p. 9)](figuras/refugio-jornada.webp)
+!fig[O Refúgio, à esquerda, e a Jornada, com os espaços de 2 a 5 pontos (etapa 3). Ilustração: manual Galápagos (p. 9)](figuras/refugio-jornada.webp)
 
 > [!atencao] Exclusivo é exclusivo também para você. O seu próprio trabalhador num local de círculo fechado bloqueia o seu segundo trabalhador do mesmo jeito que bloqueia os dos outros (p. 8).
 
@@ -253,32 +253,13 @@ Quatro etapas, cada uma uma parte real da partida: alocar trabalhadores, jogar c
 > - ( ) Sim, desde que pague 1 recurso
 > - (x) Não: com 3 jogadores, cada carta de Floresta recebe 1 trabalhador só
 > = Com 2 ou 3 jogadores, só cabe 1 trabalhador em cada local de Floresta; e nem com 4 você pode pôr 2 seus na mesma carta (p. 8).
->
-> ?? O local de 2 cartas e 1 ficha de 1 ponto já tem um trabalhador de Ana. Você pode ir?
-> - (x) Sim: é compartilhado
-> - ( ) Não: é exclusivo
-> - ( ) Só se Ana deixar
-> = Esse local tem o círculo aberto e aceita vários trabalhadores (p. 8).
 
-> [!treino] **Treino rápido: quantas cartas você compra?** Lembre: a mão nunca passa de 8 (p. 11).
->
-> ?? Você tem 7 cartas e vai ao local de 2 gravetos e 1 carta.
-> - (x) 1 carta e 2 gravetos
-> - ( ) 0 cartas e 2 gravetos
-> - ( ) 1 carta, mas sem os gravetos
-> = Com 7 na mão, a carta do local leva você a 8, o máximo; os gravetos vêm normalmente (p. 11).
->
-> ?? Você tem 7 cartas e vai ao local de 2 cartas e 1 ficha de 1 ponto.
-> - ( ) 2 cartas e a ficha, e descarta 1
-> - (x) 1 carta e a ficha
-> - ( ) 2 cartas e a ficha; o limite só vale no fim do turno
-> = Você compra só até somar 8, nunca mais: 1 carta. A ficha de 1 ponto vem do estoque geral (p. 8 e 11).
 
 ## 3. Etapa 2: jogar uma carta e montar a vila
 
-> [!entender] **Para entender.** As cartas são o motor e o placar ao mesmo tempo. Cada uma tem um custo em recursos, um valor em pontos e um efeito, que depende da cor (p. 10 e 11). Uma Fazenda logo cedo, por exemplo, dá fruto quando é jogada e de novo em duas estações, e ainda barateia outras cartas (p. 11, 12 e 20). Como a vila só tem 15 espaços, cada carta também é uma escolha do que fica de fora (p. 11).
+> [!entender] **Para entender.** As cartas são o motor e o placar ao mesmo tempo. Cada uma tem um custo em recursos, um valor em pontos e um efeito, que depende da cor (p. 10 e 11). Uma Fazenda logo cedo, por exemplo, dá fruto quando é jogada e de novo em duas estações, e ainda aumenta o que outras cartas rendem, como o Sapo Balseiro (p. 11, 12 e 19). Como a vila só tem 15 espaços, cada carta também é uma escolha do que fica de fora (p. 11).
 
-!fig[Como ler as cartas. À esquerda, a Construção Tribunal: custo na coluna da esquerda (1 graveto, 1 cristal e 2 seixos), tipo, nome, pontos (2), "Construção Singular" e, embaixo à direita, a Criatura gratuita (a Juíza). À direita, a Criatura Juíza: custa 3 frutos, ou sai de graça se o Tribunal estiver na sua vila. Ilustração: manual Galápagos (p. 10)](figuras/carta.webp)
+!fig[O Tribunal custa 1 graveto, 1 cristal e 2 seixos, vale 2 pontos e tem a Juíza como Criatura gratuita. A Juíza custa 3 frutos, ou nada com o Tribunal na vila. Ilustração: manual Galápagos (p. 10)](figuras/carta.webp)
 
 > [!passos] **Passo a passo: jogar uma carta** (p. 10 e 11)
 > 1. Escolha uma carta da sua mão ou uma das 8 da Campina.
@@ -302,19 +283,19 @@ Quatro etapas, cada uma uma parte real da partida: alocar trabalhadores, jogar c
 
 > [!atencao] Comum e Singular. A faixa abaixo do nome diz se a carta é Comum ou Singular. Da Comum, você pode ter várias cópias na vila; da Singular, só uma (p. 10).
 
-> [!mais] **Vila cheia.** A vila tem no máximo 15 espaços, um por carta. Os Eventos realizados não contam para esse limite (p. 11).
+> [!mais] **Habilidade de desconto.** Se for usar uma habilidade que muda o custo (Masmorra, Juíza, Estalajadeiro), ela vem antes de tudo, antes de pagar (p. 11).
 
-> [!mais] **Duas cartas tiradas da Campina de uma vez.** Quando um efeito manda comprar várias cartas da Campina, compre todas primeiro e só depois reponha as vagas (p. 11).
+> [!mais] **Vila cheia.** A vila tem no máximo 15 espaços, um por carta. Os Eventos realizados não contam para esse limite (p. 11).
 
 > [!mais] **Ficha de Ocupado que fica.** A ficha de Ocupado não sai da Construção se a Criatura gratuita for removida da sua vila depois (p. 10).
 
-> [!mais] **Andarilha.** É a única Criatura do jogo base que, pelo glossário, não ocupa um dos 15 espaços da vila; ao ser jogada, você compra 3 cartas (p. 18).
+> [!mais] **Andarilha.** Pelo glossário, a Andarilha não ocupa um dos 15 espaços da vila; ao ser jogada, você compra 3 cartas (p. 18).
 
-> [!mais] **Marido e Esposa.** As duas cartas dividem um espaço só na vila. A Esposa vale 3 pontos no fim se estiver junto do Marido; com uma Fazenda na vila, o Marido junto da Esposa dá 1 recurso à sua escolha quando é jogado e na Produção (p. 18).
+> [!mais] **Marido e Esposa.** As duas cartas dividem um espaço só na vila (p. 18).
 
-> [!mais] **Cartas que pedem detalhe.** O glossário das p. 18 a 21 explica cada carta com regra própria. Estalajadeiro, Guindaste e Masmorra dão desconto de 3 e não se somam com outras habilidades de carta (p. 18 e 20). O Bobo da Corte é jogado na vila de um adversário (p. 18).
+> [!mais] **Cartas com regra própria.** O glossário das p. 18 a 21 detalha cada carta. Estalajadeiro, Guindaste e Masmorra não se somam com outras habilidades de carta; o Bobo da Corte vai para a vila de um adversário (p. 18 e 20).
 
-> [!edicao] **Errata da Galápagos (outubro de 2023).** No glossário (p. 21), a Ruínas age só quando é jogada, não na Produção: descarte uma Construção da sua vila, ponha a Ruínas no lugar, receba de volta o custo da carta descartada e compre 2 cartas. A errata também corrige nomes e textos de algumas cartas impressas: o Evento "Médico, Pombo-Correio" se chama "Doutor, Pombo-Correio"; na Andarilha, "cidade" é "vila"; no Escultor de Madeira, "Armazém" é "Despensa"; no Cemitério, a carta revelada é "jogada", não "usada"; e numa carta de Floresta, "ao custo de 1 recurso" é "pagando menos 1 recurso".
+> [!edicao] **Errata da Galápagos (outubro de 2023).** A Ruínas age só quando é jogada, não na Produção: descarte uma Construção da sua vila, ponha a Ruínas no lugar, receba de volta o custo da descartada e compre 2 cartas (p. 21). A errata corrige também textos impressos de algumas cartas, sem mudar regra.
 
 > [!resolvido] **Exemplo resolvido** (a sequência do manual, p. 12). Turno 1: você põe um trabalhador no local de 3 gravetos e fica com 3 gravetos. Turno 2: põe o outro numa carta de Floresta que dá 1 graveto, 1 cristal e 1 fruto; agora tem 4 gravetos, 1 cristal e 1 fruto. Turno 3: joga uma Fazenda da mão, pagando 2 gravetos e 1 cristal, e a Fazenda, carta verde, dá 1 fruto na hora: sobram 2 gravetos e 2 frutos. Turno 4: joga o Sapo Balseiro da Campina pagando 2 frutos; a vaga da Campina é reposta, e o Sapo Balseiro dá 2 gravetos por Fazenda na vila. Você termina com 4 gravetos e duas cartas verdes na vila.
 
@@ -332,13 +313,7 @@ Quatro etapas, cada uma uma parte real da partida: alocar trabalhadores, jogar c
 > - ( ) Volta para a mão
 > = A ficha de Ocupado marca que a Construção já deu a sua Criatura gratuita, e isso vale uma vez só (p. 10).
 
-> [!suavez] **Sua vez.** Três situações.
->
-> ?? Você joga uma carta da Campina. Quando a vaga é preenchida?
-> - (x) Na hora, com a carta do topo do baralho
-> - ( ) No fim da rodada
-> - ( ) Só quando alguém se prepara para a estação
-> = A carta da Campina jogada é reposta imediatamente com uma nova do baralho (p. 11).
+> [!suavez] **Sua vez.** Duas situações.
 >
 > ?? Você já tem um Tribunal na vila. Pode jogar o segundo Tribunal?
 > - ( ) Sim, pagando o custo de novo
@@ -346,15 +321,15 @@ Quatro etapas, cada uma uma parte real da partida: alocar trabalhadores, jogar c
 > - ( ) Sim, se a vila tiver menos de 15 cartas
 > = Da carta Singular só cabe uma cópia na vila (p. 10).
 >
-> ?? Você joga uma Fazenda e já tem o Tribunal, que dá 1 graveto, 1 cristal ou 1 seixo quando você joga uma Construção. Em que ordem as coisas acontecem?
+> ?? Você joga uma Fazenda com o Tribunal na vila (ele dá 1 graveto, 1 cristal ou 1 seixo a cada Construção jogada). Qual a ordem?
 > - ( ) O Tribunal dá o recurso antes de você pagar a Fazenda
 > - (x) Você paga, põe a Fazenda na vila, recebe o fruto dela e depois o recurso do Tribunal
 > - ( ) Você recebe o fruto e o recurso, e paga no fim do turno
-> = A sequência é: pagar, repor a Campina se for o caso, pôr a carta na vila, resolver o efeito dela e por último os efeitos disparados, como o do Tribunal (p. 11 e 21).
+> = Pagar, pôr na vila, efeito da carta e, por último, efeitos disparados como o do Tribunal (p. 11 e 21).
 
 ## 4. Etapa 3: as estações, os Eventos e a Jornada
 
-> [!entender] **Para entender.** Preparar-se para a Estação é o único jeito de recuperar os trabalhadores, e cada estação traz mais gente: você começa com 2, tem 3 na primavera, 4 no verão e 6 no outono (p. 6 e 13). Ao mesmo tempo, a primavera e o outono reativam todas as cartas verdes, e o verão deixa comprar da Campina. Os locais que valem pontos direto, os Eventos e a Jornada, pedem uma vila já montada ou cartas na mão; por isso aparecem mais tarde na partida (p. 9).
+> [!entender] **Para entender.** Preparar-se para a Estação é o único jeito de recuperar os trabalhadores, e cada estação traz mais gente: 2 no começo, 3 na primavera, 4 no verão, 6 no outono (p. 6 e 13). Os Eventos e a Jornada valem pontos direto, mas pedem vila montada ou cartas na mão; por isso aparecem mais tarde (p. 9).
 
 > [!passos] **Passo a passo: preparar-se para a estação** (p. 12 e 13)
 > 1. Só pode quando todos os seus trabalhadores estão alocados.
@@ -382,12 +357,12 @@ Quatro etapas, cada uma uma parte real da partida: alocar trabalhadores, jogar c
 > [!passos] **Passo a passo: Eventos** (p. 9)
 > 1. Ponha 1 trabalhador num Evento básico ou especial que ainda esteja na mesa.
 > 2. Só pode se a sua vila cumprir as exigências do Evento; pague na hora os recursos que ele pedir.
-> 3. Cada Evento é de um jogador só. Pegue a peça ou a carta e ponha ao lado da sua vila; ela vale pontos no fim.
+> 3. Cada Evento é de um jogador só. O Evento realizado fica ao lado da sua vila e vale pontos no fim.
 > 4. O trabalhador volta na próxima ação de Preparar-se para a Estação.
 
-!fig[Dois Eventos do manual. À esquerda, a peça do Grande Circuito, um Evento básico: exige 3 cartas de Destino na vila e vale 3 pontos. À direita, o Evento especial Teto Imaculado da Capela, que exige o Escultor de Madeira e a Capela na vila. Ilustração: manual Galápagos (p. 9)](figuras/eventos.webp)
+!fig[O Grande Circuito (básico) exige 3 cartas de Destino; o Teto Imaculado da Capela (especial) exige o Escultor de Madeira e a Capela. Ilustração: manual Galápagos (p. 9)](figuras/eventos.webp)
 
-> [!edicao] O manual só escreve por extenso a exigência do Grande Circuito (3 cartas de Destino, p. 9). As exigências dos outros três Eventos básicos estão desenhadas no tabuleiro, ao lado de cada peça, e as dos Eventos especiais estão em cada carta. Confira na mesa antes de mandar o trabalhador.
+> [!edicao] O manual escreve só a exigência do Grande Circuito (3 cartas de Destino, p. 9). As dos outros Eventos básicos estão desenhadas no tabuleiro; as dos especiais, em cada carta.
 
 > [!mais] **Evento já realizado.** Você não devolve um Evento se as cartas exigidas saírem da sua vila depois (p. 9).
 
@@ -397,7 +372,7 @@ Quatro etapas, cada uma uma parte real da partida: alocar trabalhadores, jogar c
 > 3. Os espaços de 5, 4 e 3 são exclusivos; o de 2 é compartilhado.
 > 4. O trabalhador vale, no fim da partida, os pontos do espaço. Você pode mandar mais de um trabalhador à Jornada.
 
-> [!dica] O outono traz 2 trabalhadores e a Jornada transforma cartas paradas na mão em pontos. Guardar algumas cartas para o fim pode render um espaço alto da Jornada.
+> [!dica] Cartas paradas na mão viram pontos na Jornada do outono. Guardar algumas para o fim pode render um espaço alto.
 
 > [!resolvido] **Exemplo resolvido** (continuação do manual, p. 12). Seus 2 trabalhadores estão alocados e você não tem recursos para jogar mais nada. No turno seguinte, você se prepara para a primavera: traz de volta os 2 trabalhadores, pega 1 trabalhador novo na árvore (agora são 3) e faz a Produção. A Fazenda dá 1 fruto e o Sapo Balseiro dá 2 gravetos, porque você tem 1 Fazenda. Com os 4 gravetos que já tinha, fica com 6 gravetos e 1 fruto.
 
@@ -415,19 +390,13 @@ Quatro etapas, cada uma uma parte real da partida: alocar trabalhadores, jogar c
 > - ( ) 4, porque os do verão ficam na árvore
 > = Você traz de volta os 4 e pega os 2 do outono: 6 (p. 13).
 
-> [!suavez] **Sua vez.** Três situações.
+> [!suavez] **Sua vez.** Duas situações.
 >
 > ?? É primavera para você. Pode mandar um trabalhador à Jornada?
 > - ( ) Sim, se descartar as cartas
 > - (x) Não: a Jornada só abre no outono
 > - ( ) Sim, mas só ao espaço de 2 pontos
 > = Apenas no outono você pode enviar trabalhador à Jornada (p. 9).
->
-> ?? No outono, você vai ao espaço de 4 pontos da Jornada com 6 cartas na mão. Com quantas fica?
-> - ( ) 6, porque a Jornada não pede cartas
-> - ( ) 5
-> - (x) 2
-> = Você descarta tantas cartas quanto os pontos do espaço: 4. Sobram 2 (p. 9).
 >
 > ?? Ana pôs um trabalhador no Correio, carta de Destino com o símbolo ABERTO, que está na sua vila. O que você ganha?
 > - (x) 1 ficha de 1 ponto do estoque geral
@@ -455,7 +424,7 @@ Quatro etapas, cada uma uma parte real da partida: alocar trabalhadores, jogar c
 
 > [!mais] **Dar algo a quem já passou.** Se uma regra manda dar cartas ou recursos a um jogador e todos os outros já passaram, descarte o que seria dado (p. 14).
 
-!fig[A vila do exemplo de pontuação do manual: 17 cartas na vila (Marido e Esposa dividem um espaço), um trabalhador na Jornada de 4 pontos, os Eventos realizados (Espetáculo em Domicílio, Pregando para os Patifes e o Grande Circuito) e as fichas de pontuação. Ilustração: manual Galápagos (p. 15)](figuras/pontuacao.webp)
+!fig[A vila do exemplo de pontuação: cartas, fichas, um trabalhador na Jornada de 4 pontos e os três Eventos realizados. Ilustração: manual Galápagos (p. 15)](figuras/pontuacao.webp)
 
 > [!resolvido] **Exemplo resolvido** (a contagem do manual, p. 14). Pontos de base das cartas: 22. Fichas de pontuação: 14. Bônus das cartas roxas: 10, sendo 3 da Esposa (está com o Marido), 2 da Arquiteta (1 cristal e 1 seixo sobrando) e 5 do Rei (1 Evento básico vale 1 e 2 Eventos especiais valem 2 cada). Jornada: 4. Eventos: 12, sendo 6 do Espetáculo em Domicílio, 3 do Pregando para os Patifes e 3 do Grande Circuito. Total: 22 + 14 + 10 + 4 + 12 = 62.
 
@@ -467,19 +436,13 @@ Quatro etapas, cada uma uma parte real da partida: alocar trabalhadores, jogar c
 > - ( ) 6
 > = 2 básicos a 1 ponto e 1 especial a 2 pontos: 2 + 2 = 4. Esses pontos se somam aos de base do Rei e aos dos próprios Eventos (p. 14 e 19).
 
-> [!suavez] **Sua vez.** Três situações.
+> [!suavez] **Sua vez.** Duas situações.
 >
 > ?? Você termina com a Arquiteta, que vale 1 ponto por cristal e seixo sobrando, até 6 (p. 18). Sobraram 3 cristais, 2 seixos e 4 gravetos. Qual o bônus?
 > - ( ) 9
 > - ( ) 6
 > - (x) 5
 > = Gravetos não contam: 3 cristais e 2 seixos dão 5, abaixo do teto de 6 (p. 18).
->
-> ?? Você passou a vez. Bruno joga uma carta que manda dar 2 cartas a um adversário, e você é o único outro jogador. O que acontece?
-> - ( ) Você recebe as 2 cartas
-> - (x) As cartas são descartadas
-> - ( ) Bruno não pode jogar essa carta
-> = Quem passou não recebe mais cartas nem recursos; sem ninguém para receber, o que seria dado vai para o descarte (p. 14).
 >
 > ?? Ana e Bruno empatam com 58 pontos. Os dois realizaram 3 Eventos; Ana tem 4 recursos sobrando, Bruno 2. Quem vence?
 > - (x) Ana
@@ -489,17 +452,11 @@ Quatro etapas, cada uma uma parte real da partida: alocar trabalhadores, jogar c
 
 ## 6. Situações especiais
 
-> [!mais] **Cartas que mexem na vila.** Se Ruínas ou outra habilidade remover uma carta com fichas de pontuação, as fichas se perdem. Se a carta removida tinha um trabalhador alocado que não era permanente, ele vai para a Ruínas; se era permanente, sai do jogo com a carta (p. 21).
+> [!mais] **Cartas que mexem na vila.** Se Ruínas ou outra habilidade remover uma carta com fichas de pontuação, as fichas se perdem. Um trabalhador não permanente que estava na carta vai para a Ruínas; um permanente sai com ela (p. 21).
 
-> [!mais] **Trabalhador permanente.** Cemitério e Monastério seguram o trabalhador para sempre: ele não volta ao se preparar para a estação. O segundo espaço de cada um só abre com o Coveiro (Cemitério) e com o Monge (Monastério) na vila (p. 20 e 21).
+> [!mais] **Trabalhador permanente.** No Cemitério e no Monastério o trabalhador fica para sempre e não volta ao se preparar para a estação. O segundo espaço de cada um só abre com o Coveiro e com o Monge na vila (p. 20 e 21).
 
-> [!mais] **Torre do Relógio.** Começa com 3 fichas de 1 ponto. Antes de trazer os trabalhadores de volta ao se preparar para a estação, você pode tirar 1 ficha dela e ativar de novo um local básico ou de Floresta onde tenha um trabalhador. O que sobrar nela conta no fim (p. 21).
-
-> [!dica] Os Eventos especiais da mesa são só 4, e cada um é de quem chegar primeiro (p. 6 e 9). Olhar as exigências deles no começo ajuda a escolher que cartas levar para a vila.
-
-> [!dica] A Campina é de todos. Uma carta boa para o adversário pode valer mais na sua vila do que na mesa, enquanto houver espaço e recurso.
-
-> [!edicao] Este guia segue o livro de regras v2.0 da Galápagos com a errata oficial de outubro de 2023, que corrige o modo solo (p. 16), o texto da Ruínas (p. 21) e textos impressos de algumas cartas. Nenhuma correção muda a montagem nem as três ações.
+> [!dica] Os Eventos especiais são só 4, e cada um é de quem chegar primeiro (p. 6 e 9). Olhar as exigências deles no começo ajuda a escolher que cartas levar para a vila.
 
 ## 7. Avaliação final
 
@@ -534,7 +491,7 @@ Responda sem consultar. Cada resposta diz o que reler.
 - ( ) Também pode, porque a mesa já chegou ao outono
 - (x) Não pode: a sua estação ainda é o verão
 - ( ) Pode, mas só ao espaço de 2 pontos
-= **Não pode.** Cada jogador está na sua estação, e a Jornada é só no outono (p. 9 e 12). Releia a etapa 3. [interpretada: o manual diz "apenas no outono" e que cada um se prepara no seu ritmo]
+= **Não pode.** Cada jogador está na sua estação, e a Jornada é só no outono (p. 9 e 12). Releia a etapa 3.
 
 ?? 6. Empate em pontos e em Eventos. Quem vence?
 - ( ) Quem passou a vez primeiro

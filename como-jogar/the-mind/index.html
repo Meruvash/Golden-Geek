@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Como jogar The Mind: regras passo a passo | Elite Boardgamers</title>
+<meta name="description" content="Regras de The Mind passo a passo, conferidas no manual da Galápagos: montagem, níveis, vidas, estrela ninja, recompensas e o modo cego.">
+<link rel="canonical" href="https://eliteboardgamers.com.br/como-jogar/the-mind/">
+<meta name="robots" content="max-image-preview:large">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Como jogar The Mind">
+<meta property="og:description" content="Regras de The Mind passo a passo, conferidas no manual da Galápagos: montagem, níveis, vidas, estrela ninja, recompensas e o modo cego.">
+<meta property="og:url" content="https://eliteboardgamers.com.br/como-jogar/the-mind/">
+<meta property="og:image" content="https://eliteboardgamers.com.br/the-mind/fotos/componentes-1.webp">
+<link rel="icon" href="../../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32.png">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<link rel="preload" href="../../fontes/public-sans.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:"Public Sans";src:url(../../fontes/public-sans.woff2) format("woff2");font-weight:400 800;font-style:normal;font-display:swap}
+@font-face{font-family:"Public Sans";src:url(../../fontes/public-sans-italic.woff2) format("woff2");font-weight:400;font-style:italic;font-display:swap}
+/* Layout: o mesmo da página de lição do Discipulado (O Paladino): fundo preto (pedido do editor: preto no lugar do azul), faixa do banner, navegação fixa, coluna central de 760px com cartões claros de papel, filete dourado sobre os títulos de seção. Visual único (o site não tem tema claro). */
+:root{
+  color-scheme:dark;
+  --ground:#000; --panel:#0f1115; --panel2:#171a20; --line:#262a32; --line2:#2e333c;
+  --ink:#eceff3; --muted:#a1a9b5; --gold:#e3b23c;
+  --paper:#f4f5f7; --paper-ink:#14171c; --paper-muted:#5a6270; --paper-line:#dde1e7; --paper-text:#3a414c;
+  --link:#1f5fae; --ok:#1b7a45; --ok-bg:#e3f4ea; --cinza-bg:#eceef1; --ouro-bg:#fff4d1; --ouro-ink:#8a5f00;
+  --erro:#b3263e; --faixa-ouro:#1d1606; --ouro-claro:#f1ead6; --check:#4cc38a;
+  --f-body:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box}
+html{scroll-padding-top:64px}
+body{margin:0;background:var(--ground);color:var(--ink);font:16px/1.55 var(--f-body)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--panel)}
+h1,h2,h3,p,ul,ol,figure{margin:0}
+a{color:var(--link);text-underline-offset:.18em}
+::selection{background:var(--gold);color:#000}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px;border-radius:3px}
+.gut{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+
+.skip{position:absolute;left:-999px}.skip:focus{left:12px;top:8px;z-index:40;background:var(--gold);color:#000;padding:6px 10px}
+.aviso{background:var(--gold);color:#000;font-weight:800;font-size:.8rem;text-align:center}
+.aviso .gut{padding-block:6px}
+.topo{background:var(--ground)}
+.topo img{display:block;width:100%;max-width:640px;height:auto;margin:0 auto}
+.nav{background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line);position:sticky;top:env(safe-area-inset-top,0px);z-index:20}
+.nav ul{max-width:1120px;margin:0 auto;list-style:none;display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;padding-block:0}
+.nav a{display:block;padding:11px 12px;white-space:nowrap;color:var(--ink);text-decoration:none;font-weight:700;font-size:.92rem;border-bottom:3px solid transparent}
+.nav a[aria-current]{color:var(--gold);border-bottom-color:var(--gold)}
+
+.nota{max-width:760px;margin:0 auto;padding-block:20px 56px;display:grid;gap:16px}
+.trilha ol{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:4px 8px;font-size:.85rem;color:var(--muted)}
+.trilha li+li::before{content:"›";margin-right:8px;color:var(--muted)}
+.trilha a{color:var(--gold);font-weight:700;text-decoration:none}
+
+.bloco{background:var(--paper);color:var(--paper-ink);border-radius:10px;padding:20px;min-width:0;display:grid;gap:14px}
+.num-l{font-size:.8rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--paper-muted)}
+h1{font-size:clamp(1.7rem,5vw,2.4rem);line-height:1.12;font-weight:800;letter-spacing:-.015em;text-wrap:balance}
+.meta-e{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:.88rem;color:var(--paper-muted)}
+.meta{font-family:var(--mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.05em;color:var(--paper-muted)}
+
+.r1{background:var(--panel2);color:var(--ink);border:1px solid var(--line2);border-left:4px solid var(--gold)}
+.kick{font-size:.75rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--gold)}
+.r1 .resp{font-size:1.12rem;font-weight:600;line-height:1.45}
+.r1 ul{list-style:none;padding:0;display:grid;gap:8px}
+.r1 li{display:flex;gap:8px;align-items:flex-start;color:#dfe4ea}
+.r1 li svg{flex:none;width:20px;height:20px;margin-top:2px;stroke:var(--check);fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.r1 .pe{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:.88rem;color:var(--muted)}
+.r1 .pe b{color:var(--ink)}
+.legenda{display:flex;flex-wrap:wrap;gap:8px}
+.legenda span{font-size:.74rem;font-weight:800;letter-spacing:.04em;border-radius:999px;padding:3px 10px 3px 14px;background:var(--paper);color:var(--paper-ink)}
+.legenda .l1{box-shadow:inset 5px 0 0 var(--paper-ink)}.legenda .l2{box-shadow:inset 5px 0 0 var(--ok)}
+.legenda .l3{box-shadow:inset 5px 0 0 var(--gold)}.legenda .l4{box-shadow:inset 5px 0 0 var(--ouro-ink)}
+
+.indice h2,.sec>h2{font-size:1.15rem;font-weight:800;line-height:1.3;color:var(--paper-ink);border-top:3px solid var(--gold);padding-top:12px;text-wrap:balance;display:flex;gap:10px;align-items:baseline}
+.indice ol{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:2px 16px}
+.indice a{display:block;padding:6px 0;color:var(--paper-ink);text-decoration:none;font-weight:600;font-size:.94rem;border-bottom:1px solid var(--paper-line)}
+.indice a:hover{color:var(--link)}
+
+.sec>h2 .num{display:none}
+.sec h3{font-size:1.05rem;font-weight:800;margin-top:6px}
+.sec p{color:var(--paper-text);max-width:66ch}
+.sec ul,.sec ol{padding-left:1.3em;display:grid;gap:6px;color:var(--paper-text)}
+.sec ul{list-style:disc}
+.sec li::marker{color:var(--ouro-ink);font-weight:800}
+strong{font-weight:700;color:var(--paper-ink)}
+.pg{white-space:nowrap;font-size:.76em;color:var(--paper-muted);border:1px solid var(--paper-line);background:#fff;border-radius:4px;padding:0 5px;vertical-align:.08em;font-variant-numeric:tabular-nums}
+code{font-size:.9em;background:#fff;padding:1px 5px;border-radius:4px}
+
+.tab{overflow-x:auto;border:1px solid var(--paper-line);border-radius:8px;background:#fff}
+table{border-collapse:collapse;width:100%;font-size:.92rem;color:var(--paper-text)}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--paper-line);vertical-align:top}
+th{font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--paper-muted);background:var(--paper)}
+tr:last-child td{border-bottom:0}
+
+.call{border-radius:8px;padding:14px 16px;display:grid;gap:10px;min-width:0;background:#fff;border:1px solid var(--paper-line);border-left:4px solid var(--paper-muted)}
+.call .rot{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;font-weight:800;color:var(--paper-muted)}
+.call.entender{background:var(--cinza-bg);border-color:#d5d9df;border-left-color:var(--paper-ink)}
+.call.entender .rot{color:var(--paper-ink)}
+.call.passos{border-left-color:var(--ok)}
+.call.passos .rot{color:var(--ok)}
+.call.resolvido{background:var(--panel2);border-color:var(--line2);border-left-color:var(--gold)}
+.call.resolvido .rot{color:var(--gold)}
+.call.resolvido p,.call.resolvido li{color:#dfe4ea}
+.call.resolvido strong{color:#fff}
+.call.resolvido .pg{color:#c8ccd2;border-color:var(--line2)}
+.call.complete{border-left:4px dashed var(--gold)}
+.call.complete .rot{color:var(--ouro-ink)}
+.call.suavez{background:var(--faixa-ouro);border-color:#3a2e10;border-left-color:var(--gold)}
+.call.suavez .rot{color:var(--gold)}
+.call.suavez p,.call.suavez li{color:var(--ouro-claro)}
+.call.suavez strong{color:#fff}
+.call.suavez li::marker{color:var(--gold)}
+.call.suavez .pg{color:var(--ouro-claro);border-color:#3a2e10}
+.call.treino{background:var(--ouro-bg);border-color:#f0dfa6;border-left-color:var(--ouro-ink)}
+.call.treino .rot{color:var(--ouro-ink)}
+.call.atencao{border-left-color:var(--erro)}
+.call.atencao .rot{color:var(--erro)}
+.call.edicao{background:var(--paper);border-left-color:var(--paper-ink)}
+.call.edicao .rot{color:var(--paper-ink)}
+.call.dica{background:var(--ouro-bg);border-left-color:var(--gold)}
+.call.dica .rot{color:var(--ouro-ink)}
+.call ol,.call ul{padding-left:1.3em}
+.call .pg{background:transparent}
+
+.respostas{border:1px solid var(--paper-line);border-left:4px solid var(--ok);border-radius:8px;background:#fff}
+.respostas summary{cursor:pointer;padding:12px 16px;font-weight:800;color:var(--ok);list-style:none;min-height:44px;display:flex;align-items:center}
+.respostas summary::-webkit-details-marker{display:none}
+.respostas summary::before{content:"+";display:inline-grid;place-items:center;width:1.4em;height:1.4em;margin-right:8px;border-radius:50%;background:var(--ok-bg)}
+.respostas[open] summary::before{content:"−"}
+.respostas>div{padding:0 16px 16px;display:grid;gap:12px}
+
+.sec.rapido{outline:2px solid var(--gold);outline-offset:-2px}
+.sec.rapido>h2::after{content:"4 min de leitura";margin-left:auto;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:#000;background:var(--gold);border-radius:3px;padding:3px 8px;white-space:nowrap}
+.sec.rapido>p:first-of-type{font-size:1.02rem}
+.sec.ref{outline:2px solid var(--gold);outline-offset:-2px}
+.sec.ref>h2::after{content:"Leve para a mesa";margin-left:auto;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:#000;background:var(--gold);border-radius:3px;padding:3px 8px;white-space:nowrap}
+
+footer{border-top:1px solid var(--line);background:var(--panel);color:var(--muted);font-size:.85rem}
+footer .in{max-width:760px;margin:0 auto;padding-block:20px}
+@media (max-width:600px){
+  .bloco{padding:16px;border-radius:8px}
+  .sec.ref>h2::after{display:none}
+}
+/* essencial x opcional: o que não é essencial abre com um toque */
+.dobra{border:1px solid var(--paper-line);border-radius:8px;background:#fff}
+.dobra>summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:10px;padding:11px 14px;font-weight:700;font-size:.92rem;color:var(--paper-ink);min-height:44px}
+.dobra>summary::-webkit-details-marker{display:none}
+.dobra>summary::before{content:"+";flex:none;display:grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--paper-line);color:var(--paper-ink);font-weight:800;line-height:1}
+.dobra[open]>summary::before{content:"−"}
+.dobra>.call,.dobra>details,.dobra>aside{margin:0 12px 12px}
+.dobra.pratica>summary{color:var(--ouro-ink)}
+.dobra.pratica[open]{display:grid;gap:10px;padding-bottom:12px}
+.dobra.pratica>*:not(summary){margin:0 12px}
+.dobra.sec-opc{border-style:dashed}
+.dobra.sec-opc[open]{padding-bottom:12px}
+.dobra.sec-opc>*:not(summary){margin-left:14px;margin-right:14px}
+.tag-opc{margin-left:10px;font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;font-weight:800;color:var(--paper-muted);border:1px solid var(--paper-line);border-radius:3px;padding:2px 6px;vertical-align:middle}
+.legenda-f{font-size:.88rem;color:var(--muted)}.legenda-f b{color:var(--ink)}
+.mais-i{display:inline-grid;place-items:center;width:18px;height:18px;border-radius:50%;background:var(--paper-line);color:var(--paper-ink);font-weight:800;font-size:.8rem}
+.indice small{color:var(--muted);font-weight:400}
+.sec p,.sec li,.sec a{overflow-wrap:anywhere}
+
+.ico{display:inline-block;width:28px;height:28px;vertical-align:middle;border-radius:5px;margin-right:6px}
+td .ico{margin-right:6px}
+.rec{display:inline-flex;align-items:center;gap:0;white-space:nowrap}
+.cel{display:block;min-width:0}
+
+/* referências visuais (01/11/2026): figura do manual e vídeo no ponto da ação */
+.fig,.video{margin:4px 0;display:grid;gap:6px;min-width:0}
+.fig img{width:100%;height:auto;border-radius:8px;border:1px solid var(--paper-line);background:#fff}
+.fig figcaption,.video figcaption{font-size:.82rem;color:var(--paper-muted);line-height:1.45}
+.yt{position:relative;display:block;width:100%;padding:0;border:0;border-radius:8px;overflow:hidden;cursor:pointer;background:#000;aspect-ratio:16/9}
+.yt img{width:100%;height:100%;object-fit:cover;opacity:.85;display:block}
+.yt-play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:#c4302b;color:#fff;font-weight:800;font-size:.95rem;padding:10px 16px;border-radius:999px;white-space:nowrap;box-shadow:0 2px 10px rgba(0,0,0,.4)}
+.yt:hover .yt-play,.yt:focus-visible .yt-play{background:#e03a33}
+.video iframe{width:100%;aspect-ratio:16/9;border:0;border-radius:8px;display:block}
+/* fotos em todas as seções (04/11/2026): foto do jogo no topo e em cada seção sem figura do manual */
+.topo-cj{overflow:hidden}
+.foto-topo{margin:-20px -20px 4px;display:grid;gap:0}
+.foto-topo img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;background:#fff}
+.foto-topo figcaption{font-size:.78rem;color:var(--paper-muted);padding:6px 20px 0}
+.foto-topo.caixa img,.foto-sec.caixa img{object-fit:contain}
+.foto-sec img{aspect-ratio:16/9;object-fit:cover}
+@media (max-width:600px){.foto-topo{margin:-16px -16px 4px}.foto-topo figcaption{padding:6px 16px 0}}
+.sec.setup{border-top:4px solid var(--ok)}
+.sec.setup>h2::before{content:"Comece por aqui";display:block;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ok);margin-bottom:4px}
+.sec.setup>h2{display:block}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://eliteboardgamers.com.br/#organizacao", "name": "Elite Boardgamers", "url": "https://eliteboardgamers.com.br/", "logo": {"@type": "ImageObject", "url": "https://eliteboardgamers.com.br/marca/elite-boardgamers.webp", "width": 318, "height": 254}, "sameAs": ["https://www.instagram.com/eliteboardgamers/"]}, {"@type": "Article", "@id": "https://eliteboardgamers.com.br/como-jogar/the-mind/#artigo", "mainEntityOfPage": "https://eliteboardgamers.com.br/como-jogar/the-mind/", "headline": "Como jogar The Mind", "description": "Regras de The Mind passo a passo, conferidas no manual da Galápagos: montagem, níveis, vidas, estrela ninja, recompensas e o modo cego.", "image": ["https://eliteboardgamers.com.br/the-mind/fotos/componentes-1.webp"], "datePublished": "2026-11-05", "author": {"@type": "Organization", "name": "Redação Elite Boardgamers", "url": "https://eliteboardgamers.com.br/politica-editorial/"}, "publisher": {"@id": "https://eliteboardgamers.com.br/#organizacao"}, "inLanguage": "pt-BR"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Início", "item": "https://eliteboardgamers.com.br/"}, {"@type": "ListItem", "position": 2, "name": "Como jogar", "item": "https://eliteboardgamers.com.br/como-jogar/"}, {"@type": "ListItem", "position": 3, "name": "Como jogar The Mind", "item": "https://eliteboardgamers.com.br/como-jogar/the-mind/"}]}]}</script>
+<style id="moldura">.busca-btn{display:grid;place-items:center;flex:none;width:44px;height:44px;padding:0;border:1px solid #3a3f48;border-radius:8px;background:none;color:#e9ecf1;cursor:pointer}.busca-btn:hover{border-color:#e3b23c;color:#e3b23c}.busca-btn[hidden]{display:none}.sino-btn{position:relative;display:grid;place-items:center;flex:none;width:44px;height:44px;padding:0;border:1px solid #3a3f48;border-radius:8px;background:none;color:#e9ecf1;cursor:pointer}.sino-btn:hover,.sino-btn.on{border-color:#e3b23c;color:#e3b23c}.sino-btn[hidden]{display:none}.sino-btn.on::after{content:"";position:absolute;right:7px;top:7px;width:8px;height:8px;border-radius:50%;background:#5fd38d;box-shadow:0 0 0 2px #111}footer .in a{display:inline-flex;align-items:center;min-height:24px}.cpw{position:relative;display:inline-block}.cp{display:inline-flex;align-items:center;justify-content:center;gap:8px;box-sizing:border-box;line-height:1.2;min-height:44px;margin:0;padding:10px 20px;border-radius:999px;border:0;background:#157a43;color:#fff;font:inherit;font-size:.95rem;font-weight:800;text-decoration:none;cursor:pointer}.cp:hover{background:#11683a;color:#fff}.cp .ic{width:19px;height:19px}.cp[hidden]{display:none}.cpw.mini .cp{min-height:40px;padding:8px 14px;font-size:.88rem}.cp-menu{position:absolute;z-index:30;top:calc(100% + 8px);left:0;min-width:200px;display:grid;gap:2px;padding:6px;border-radius:12px;background:#fff;border:1px solid #dde1e7;box-shadow:0 10px 30px rgba(0,0,0,.25)}.cp-menu[hidden]{display:none}.cp-menu.sobe{top:auto;bottom:calc(100% + 8px)}.cp-menu.dir{left:auto;right:0}.cp-op{display:flex;align-items:center;gap:10px;min-height:44px;padding:8px 12px;border:0;border-radius:8px;background:none;color:#14171c;font:inherit;font-size:.95rem;font-weight:700;text-align:left;text-decoration:none;cursor:pointer}.cp-op:hover,.cp-op:focus-visible{background:#eef1f4;color:#14171c}.cp-op .ic{width:20px;height:20px}.cp-op.zap-op .ic{color:#157a43}.cp-st{position:absolute;z-index:30;top:calc(100% + 8px);left:0;white-space:nowrap;margin:0;padding:6px 12px;border-radius:8px;background:#14171c;color:#fff;font-size:.85rem;font-weight:700}.cp-st:empty{display:none}.barra-lt .cp-st{top:auto;bottom:calc(100% + 8px)}.convite{display:flex;align-items:center;justify-content:space-between;gap:12px 20px;flex-wrap:wrap}.convite .cv-t{margin:0;font-weight:800;font-size:1.1rem}.convite .cv-s{margin:2px 0 0;font-size:.92rem;opacity:.8}.barra-lt>*{flex:none}.barra-lt{width:max-content;max-width:calc(100vw - 12px);box-sizing:border-box;position:fixed;z-index:25;left:50%;bottom:calc(12px + env(safe-area-inset-bottom));display:flex;align-items:center;gap:4px;padding:5px;border-radius:999px;background:#14171c;border:1px solid #3a3f48;box-shadow:0 8px 24px rgba(0,0,0,.35);transform:translate(-50%,0);transition:transform .25s ease,opacity .25s ease}.barra-lt.fora{transform:translate(-50%,calc(100% + 24px));opacity:0;pointer-events:none}.lt-b{display:inline-flex;align-items:center;gap:7px;min-height:44px;padding:8px 14px;border:0;border-radius:999px;background:none;color:#e9ecf1;font:inherit;font-size:.9rem;font-weight:700;text-decoration:none;cursor:pointer}.lt-b:hover{background:#262a31;color:#fff}.lt-b .ic{width:20px;height:20px}.barra-lt .lt-b.curtir{background:none;border:0;color:#e9ecf1;padding:8px 14px}.barra-lt .lt-b.curtir[aria-pressed=true]{color:#ff6b81;background:none}@media (max-width:479px){.lt-b span{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}}.lt-b.curtir[aria-pressed=true] .ic{fill:currentColor}.lt-grupo{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:44px;padding:0 14px 0 6px;border-radius:999px;background:#e3b23c;color:#14171c;font-size:.9rem;font-weight:800;text-decoration:none;white-space:nowrap}.lt-grupo:hover{background:#f0c44f;color:#14171c}.lt-grupo img{width:32px;height:32px;border-radius:8px;display:block}@media (max-width:479px){.barra-lt{gap:2px}.barra-lt .lt-b{padding:8px 10px}.barra-lt .cp{padding:8px 12px}.lt-grupo{padding:0 12px 0 6px}}@media (max-width:399px){.barra-lt:has(.curtir) .cp span{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}.barra-lt:has(.curtir) .cp{padding:8px 14px}}.barra-lt .cp{min-height:44px;padding:8px 16px;font-size:.9rem}body.lt-on .voltar-topo,body.lt-on button.sobe{bottom:calc(76px + env(safe-area-inset-bottom))}@media print{.barra-lt{display:none}}.interacoes{display:grid;gap:14px}.interacoes[hidden]{display:none}.curtir-l{display:flex;align-items:center;gap:12px;flex-wrap:wrap}.curtir{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:8px 18px;border-radius:999px;border:2px solid #b3263e;background:#fff;color:#b3263e;font:inherit;font-weight:800;cursor:pointer}.curtir .ic{width:22px;height:22px}.curtir[aria-pressed=true]{background:#b3263e;color:#fff}.curtir[aria-pressed=true] .ic{fill:currentColor}.curtir .n{font-variant-numeric:tabular-nums}.curtir-dica{font-size:.9rem;color:#5a6270}.interacoes h2{margin:4px 0 0}.coms{list-style:none;margin:0;padding:0;display:grid;gap:10px}.coms li{background:#fff;border:1px solid #dde1e7;border-radius:10px;padding:12px 14px}.com-quem{margin:0;font-size:.92rem}.com-quem time{color:#5a6270;font-size:.8rem;margin-left:6px}.com-txt{margin:4px 0 0;white-space:pre-wrap;color:#14171c}.coms-vazio{margin:0;color:#5a6270}.com-form{display:grid;gap:10px;border-top:1px solid #dde1e7;padding-top:14px}.com-form label{display:grid;gap:4px;font-weight:700;font-size:.9rem;color:#14171c}.com-form small{font-weight:600;color:#5a6270}.com-form input,.com-form textarea{font:inherit;font-size:16px;font-weight:400;padding:10px 12px;border:1px solid #c8cdd5;border-radius:8px;background:#fff;color:#14171c}.com-form textarea{resize:vertical;min-height:110px}.com-form .isca{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}.com-form button{justify-self:start;min-height:44px;padding:10px 20px;border-radius:999px;border:0;background:#14171c;color:#fff;font:inherit;font-weight:800;cursor:pointer}.com-form button:disabled{opacity:.6}.com-aviso{margin:0;font-size:.82rem;color:#5a6270}.com-aviso a{color:#1f5fae}.com-st{margin:0;font-weight:700;font-size:.92rem}.com-st:empty{display:none}.com-st.ok{color:#1b7a45}.com-st.erro{color:#a3223a}:where(html){scroll-padding-top:calc(var(--nav-h,49px) + 12px)}.nav{position:sticky;top:0;z-index:20}body .abas,body .barra-f,body .ctrl{top:var(--nav-h,49px)}.marca img.logo{width:auto;height:48px;border-radius:0}@media (max-width:480px){.marca img.logo{height:40px}}.nav .casa{display:flex;align-items:center;justify-content:center;min-width:44px}.nav .casa .ic{width:20px;height:20px}@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.card:hover,.jogo:hover .capa img,.jogo:active .capa,.zap:active,.post-btn:active,.btn-filtro:hover,.btn-filtro:active,.ver:active{transform:none!important}}.in{max-width:1180px;margin:0 auto;padding-left:16px;padding-right:16px}.ic{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round;flex:none}.bar{border-bottom:1px solid var(--line);background:#000;color:var(--ink)}.bar .in{display:flex;align-items:center;gap:12px;padding-top:8px;padding-bottom:8px}.bar a{color:inherit;text-decoration:none;font-weight:600;font-size:.95rem}.marca img{display:block;width:84px;border-radius:6px}.bar .ig{margin-left:auto;display:flex;align-items:center;gap:6px;padding:6px 10px;border-radius:6px}.bar .ig:hover{color:var(--gold)}.bar .zap-mini{display:flex;align-items:center;gap:6px;padding:6px 10px;border-radius:6px;background:#157a43;color:#fff}.nav ul{padding-left:16px;padding-right:16px}.nav ul li{list-style:none}@media (max-width:700px){.bar .ig span,.bar .zap-mini span{display:none}}footer{font-size:.9rem}footer .in{max-width:1180px;display:flex;flex-wrap:wrap;gap:6px 16px;padding-top:20px;padding-bottom:28px}footer a{color:var(--muted);text-decoration:none}footer a:hover{color:var(--gold)}</style>
+<style id="guia-extra">
+/* fotos na lista de tutoriais e no topo de /como-jogar/ (04/11/2026) */
+.topo-cj{overflow:hidden}
+.lista-t a.com-foto{grid-template-columns:96px 1fr;column-gap:14px;align-items:start}
+.lista-t a.com-foto>*{grid-column:2}
+.lista-t a.com-foto>img{grid-column:1;grid-row:1/span 4;width:96px;height:96px;object-fit:cover;border-radius:6px;background:#fff}
+.cj-mosaico{display:grid;grid-template-columns:2fr 1fr;grid-template-rows:1fr 1fr;gap:4px;margin:-20px -20px 4px;aspect-ratio:16/9;overflow:hidden}
+.cj-mosaico img{width:100%;height:100%;object-fit:cover;display:block;background:#fff}
+.cj-mosaico img:first-child{grid-row:1/span 2}
+.cj-mosaico-c{font-size:.78rem;color:var(--paper-muted)}
+@media (max-width:600px){.cj-mosaico{margin:-16px -16px 4px}.lista-t a.com-foto{grid-template-columns:72px 1fr}.lista-t a.com-foto>img{width:72px;height:72px}}
+/* faixa de progresso, presa logo abaixo do menu */
+.guia-prog{position:sticky;top:var(--nav-h,45px);z-index:15;background:var(--panel);border-bottom:1px solid var(--line)}
+.guia-prog a{display:flex;align-items:center;gap:10px;max-width:760px;margin:0 auto;padding:9px 16px;color:var(--ink);text-decoration:none;font-size:.86rem;font-weight:700;min-height:40px}
+.guia-prog .gp-r{flex:none;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--gold)}
+.guia-prog .gp-t{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.guia-prog .gp-i{margin-left:auto;flex:none;font-size:.78rem;color:var(--muted);font-weight:600}
+.guia-prog .gp-b{position:absolute;left:0;right:0;bottom:-1px;height:3px;background:var(--gold);transform-origin:0 50%;transform:scaleX(0)}
+html{scroll-padding-top:calc(var(--nav-h,45px) + 56px)}
+/* legenda dos blocos: pontos de cor em vez de pílulas */
+.legenda{gap:6px 16px}
+.legenda span{position:relative;background:none;color:var(--muted);box-shadow:none!important;padding:0 0 0 16px;font-size:.8rem;letter-spacing:0}
+.legenda span::before{content:"";position:absolute;left:0;top:.32em;width:10px;height:10px;border-radius:3px;background:var(--paper)}
+.legenda .l2::before{background:var(--ok)}.legenda .l3::before{background:var(--gold)}.legenda .l4::before{background:var(--ouro-ink)}
+/* índice numerado */
+.indice ol{counter-reset:it}.indice li{counter-increment:it}
+.indice a{display:flex;gap:10px;align-items:baseline;min-height:40px;padding:9px 0}
+.indice a::before{content:counter(it);flex:none;width:1.6em;font-size:.8rem;font-weight:800;color:var(--ouro-ink);font-variant-numeric:tabular-nums}
+.nota-pe{color:var(--muted);font-size:.85rem;padding:4px 2px 0}
+/* exercícios de múltipla escolha: tocou numa opção, aparece a certa e a explicação */
+.quiz{display:grid;gap:8px;padding:12px 0;border-top:1px solid var(--paper-line)}.quiz:first-of-type{border-top:0}
+.q-p{font-weight:700;color:inherit}
+.q-ops{display:grid;gap:6px}
+.q-op{display:block;width:100%;text-align:left;font:inherit;font-size:.95rem;line-height:1.35;min-height:44px;padding:10px 12px;border-radius:8px;
+ border:1px solid #c8cdd5;background:#fff;color:#14171c;cursor:pointer}
+.q-op:hover{border-color:var(--gold)}.q-op:disabled{cursor:default}
+.q-op.ok{background:#e3f4ea;border-color:#1b7a45;color:#0f4d2b;font-weight:700}.q-op.ok::before{content:"✓ ";font-weight:800}
+.q-op.erro{background:#fbe6e9;border-color:#b3263e;color:#7d1a2b}.q-op.erro::before{content:"✗ ";font-weight:800}
+.q-exp{border-left:4px solid var(--ok);background:#f2faf5;color:#14171c;border-radius:6px;padding:8px 12px}
+.q-exp .q-res{color:var(--ok)}.q-exp.mal{border-left-color:#b3263e;background:#fdf3f4}.q-exp.mal .q-res{color:#b3263e}
+.call.suavez .q-op,.call.resolvido .q-op{border-color:#3a2e10}
+/* endereços longos (fontes) quebram em vez de alargar a página */
+.sec a,.sec li,.sec p{overflow-wrap:anywhere}
+/* títulos das etapas com mais respiro */
+.sec{scroll-margin-top:calc(var(--nav-h,45px) + 56px)}
+@media (min-width:601px){.sec{padding:24px 28px}}
+/* tabelas: fichas no celular (menos as grades de células curtas, que ficam tabela e centralizadas) */
+.tab table.grade th,.tab table.grade td{text-align:center;padding:7px 6px}
+.tab table.grade th{white-space:normal;overflow-wrap:anywhere;hyphens:auto}
+@media (max-width:600px){
+ .tab:not(:has(.grade)){border:0;background:none;overflow:visible;border-radius:0}
+ .tab:not(:has(.grade)) table,.tab:not(:has(.grade)) tbody,.tab:not(:has(.grade)) tr,.tab:not(:has(.grade)) td{display:block}
+ .tab:not(:has(.grade)) thead{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+ .tab:not(:has(.grade)) tr{background:#fff;border:1px solid var(--paper-line);border-radius:8px;padding:10px 12px;margin-bottom:8px}
+ .tab:not(:has(.grade)) td{border:0;padding:3px 0;display:grid;grid-template-columns:6.5em minmax(0,1fr);gap:8px}
+ .tab:not(:has(.grade)) td::before{content:attr(data-label);font-size:.7rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--paper-muted);padding-top:3px}
+ .tab:not(:has(.grade)) td:empty{display:none}
+ .tab:not(:has(.grade)) td:first-child{display:block;font-weight:800;color:var(--paper-ink);padding-bottom:4px}
+ .tab:not(:has(.grade)) td:first-child::before{display:none}
+}
+</style>
+</head>
+<body>
+<!--moldura--><a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<header class="bar" id="topo"><div class="in">
+ <a class="marca" href="../../"><img class="logo" src="../../marca/logo-eb-104.webp" srcset="../../marca/logo-eb-52.webp 157w, ../../marca/logo-eb-104.webp 314w, ../../marca/logo-eb-156.webp 472w" sizes="(max-width: 480px) 121px, 145px" width="157" height="52" alt="Elite Board Gamers: página inicial"></a>
+ <a class="ig" href="https://www.instagram.com/eliteboardgamers/" target="_blank" rel="noopener" aria-label="Instagram @eliteboardgamers"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6" fill="currentColor"/></svg><span>@eliteboardgamers</span></a>
+ <a class="zap-mini" href="https://chat.whatsapp.com/IgQQkJdSkzHBaEq3UwFeAo" target="_blank" rel="noopener" aria-label="Grupo do WhatsApp"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8.4 19l-4.4 1Z"/><path d="M9.2 8.6c.3-.5.8-.5 1-.1l.7 1.5c.1.3 0 .6-.2.8l-.4.4c.5 1.1 1.4 2 2.5 2.5l.4-.4c.2-.2.5-.3.8-.2l1.5.7c.4.2.4.7-.1 1-.7.5-1.6.6-2.4.3a7 7 0 0 1-4.2-4.2c-.3-.8-.2-1.7.4-2.3Z"/></svg><span>Grupo do WhatsApp</span></a>
+ <button type="button" class="busca-btn" aria-label="Buscar no site" aria-haspopup="dialog" aria-keyshortcuts="/ Control+K" hidden><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></button>
+ <button type="button" class="sino-btn" aria-label="Receber notificações" aria-haspopup="dialog" aria-expanded="false" hidden><svg class="ic" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 3a6 6 0 0 0-6 6v3.6L4.3 15.5A1 1 0 0 0 5.2 17h13.6a1 1 0 0 0 .9-1.5L18 12.6V9a6 6 0 0 0-6-6z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M9.5 19.5a2.6 2.6 0 0 0 5 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+</div></header>
+<script src="/sino.js?v=2" defer></script>
+<script>(()=>{const b=document.querySelector('.busca-btn');let c;b.hidden=false;const a=()=>{c=c||new Promise((r,j)=>{const s=document.createElement('script');s.src='../../busca.js';s.onload=r;s.onerror=()=>{c=null;j()};document.head.append(s)});c.then(()=>abrirBusca('../../'),()=>{})};b.addEventListener('click',a);addEventListener('keydown',e=>{const t=e.target,ed=t.isContentEditable||/^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName);if((e.key==='/'&&!ed&&!e.ctrlKey&&!e.metaKey)||((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k')){e.preventDefault();a()}})})()</script>
+<nav class="nav" aria-label="Seções do site"><ul class="in"><li><a class="casa" href="../../" aria-label="Página inicial"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 9.5V20h13V9.5"/><path d="M10 20v-5.5h4V20"/></svg></a></li><li><a href="../../noticias/">Notícias</a></li><li><a href="../../resenhas/">Resenhas</a></li><li><a href="../../como-jogar/" aria-current="true">Como jogar</a></li><li><a href="../../lancamentos/">Lançamentos</a></li><li><a href="../../black/">Black de Verdade</a></li></ul></nav>
+<script>(()=>{const n=document.querySelector('.nav'),h=()=>document.documentElement.style.setProperty('--nav-h',n.offsetHeight+'px');h();addEventListener('resize',h);addEventListener('load',h)})()</script>
+<div class="guia-prog"><a href="#neste-guia"><span class="gp-r">Guia</span><span class="gp-t">Neste guia</span><span class="gp-i">Índice</span></a><span class="gp-b" aria-hidden="true"></span></div><!--/moldura-->
+
+<main id="conteudo" class="gut"><div class="nota">
+  <nav class="trilha" aria-label="Trilha de navegação"><ol><li><a href="../../">Início</a></li><li><a href="../">Como jogar</a></li><li aria-current="page">The Mind</li></ol></nav>
+
+  <article class="bloco topo-cj">
+    <figure class="foto-topo"><img src="../../the-mind/fotos/componentes-1.webp" alt="The Mind: os componentes" width="1600" height="1600" fetchpriority="high" decoding="async"><figcaption>Imagem: Pandasaurus Games · edição dos EUA</figcaption></figure>
+    <span class="num-l">Cooperativo · Cartas</span>
+    <h1>Como jogar The Mind</h1>
+    <p class="meta-e"><span>Para quem nunca jogou</span><span>2 a 4 jogadores</span><span>20 min</span><span>8+</span><span>Edição Galápagos</span></p>
+    <p class="meta"><time datetime="2026-11-05">5 de novembro de 2026</time> · Redação Elite Boardgamers</p>
+  </article>
+
+  <section class="bloco r1" aria-label="Resumo em 1 minuto">
+    <span class="kick">Resumo em 1 minuto</span>
+    <p class="resp">A equipe põe todas as cartas das mãos numa pilha em ordem crescente sem dizer nada sobre elas, nível após nível, e vence ao passar do último nível antes de perder a última vida.</p>
+    <ul><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.5l4.5 4.5L19.5 6.5"/></svg><span>Não há vez de ninguém: quem acha que tem a carta mais baixa joga, sempre a mais baixa da própria mão, e ninguém pode revelar os números.</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.5l4.5 4.5L19.5 6.5"/></svg><span>Uma carta fora de ordem custa uma vida, e todas as cartas mais baixas que ela são descartadas; o nível continua.</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.5l4.5 4.5L19.5 6.5"/></svg><span>A estrela ninja, se todos concordarem, faz cada um descartar a carta mais baixa; os níveis 2, 3, 5, 6, 8 e 9 dão recompensa.</span></li></ul>
+    <p class="pe"><span><b>Como você aprende:</b> 3 etapas, da mesa montada à contagem de pontos</span><span><b>Leitura do essencial:</b> cerca de 5 min</span></p>
+    <p class="legenda-f"><b>À vista, só o essencial para jogar.</b> O que abre com <span class="mais-i">+</span> é explicação, exemplo, exercício ou regra de caso especial: abra quando precisar.</p>
+  </section>
+
+<section class="bloco sec setup" id="montar-a-mesa-passo-a-passo"><h2><span class="num"></span>Montar a mesa passo a passo</h2>
+<p>A montagem segue a "Preparação" do manual <span class="pg">p.&nbsp;1</span>, na mesma ordem, com cada ação num passo.</p>
+<p><strong>Componentes da caixa</strong> <span class="pg">p.&nbsp;1</span></p>
+<div class="tab"><table><thead><tr><th>Componente</th><th>Quantidade</th><th>Para que serve</th></tr></thead><tbody><tr><td data-label="Componente">Cartas com números</td><td data-label="Quantidade">100 (de 1 a 100)</td><td data-label="Para que serve">As cartas que a equipe tenta pôr em ordem crescente</td></tr><tr><td data-label="Componente">Cartas de nível</td><td data-label="Quantidade">12 (níveis 1 a 12)</td><td data-label="Para que serve">Mostram em que nível a equipe está e, em alguns níveis, a recompensa</td></tr><tr><td data-label="Componente">Cartas de vida</td><td data-label="Quantidade">5</td><td data-label="Para que serve">Cada erro custa uma vida; sem vidas, a equipe perde</td></tr><tr><td data-label="Componente">Estrelas ninja</td><td data-label="Quantidade">3</td><td data-label="Para que serve">Fazem todos descartarem a carta mais baixa da mão</td></tr></tbody></table></div>
+<figure class="fig"><img src="figuras/componentes.webp" alt="Os componentes: cartas com números (1, 23 e 100), três cartas de nível, uma carta de vida e uma estrela ninja. Ilustração: manual Galápagos (p. 1)" loading="lazy" decoding="async"><figcaption>Os componentes: cartas com números (1, 23 e 100), três cartas de nível, uma carta de vida e uma estrela ninja. Ilustração: manual Galápagos <span class="pg">p.&nbsp;1</span></figcaption></figure>
+<p><strong>Os passos</strong> <span class="pg">p.&nbsp;1</span></p>
+<p><strong>1. Vidas e estrelas ninja da equipe.</strong> A equipe recebe as vidas e estrelas ninja da tabela no fim desta seção (com 3 jogadores, 3 vidas e 1 estrela ninja), e elas ficam abertas sobre a mesa, viradas para cima <span class="pg">p.&nbsp;1</span>.</p>
+<figure class="fig"><img src="figuras/setup-1-vidas-estrela.webp" alt="Passo 1, numa partida de 3 jogadores: as 3 vidas da equipe, uma sobre a outra, e 1 estrela ninja, abertas na mesa. Ilustração: manual Galápagos (p. 1)" loading="lazy" decoding="async"><figcaption>Passo 1, numa partida de 3 jogadores: as 3 vidas da equipe, uma sobre a outra, e 1 estrela ninja, abertas na mesa. Ilustração: manual Galápagos <span class="pg">p.&nbsp;1</span></figcaption></figure>
+<p><strong>2. O resto das vidas e estrelas, de lado.</strong> As vidas e estrelas ninja que sobraram ficam separadas, num canto da mesa, porque podem entrar mais tarde como recompensa <span class="pg">p.&nbsp;1 e 2</span>. Não as misture com as da equipe.</p>
+<p><strong>3. Pilha de níveis.</strong> Junte as cartas de nível que a partida usa (veja a tabela), em ordem crescente, numa pilha virada para cima, com o nível 1 no topo <span class="pg">p.&nbsp;1</span>.</p>
+<figure class="fig"><img src="figuras/setup-2-niveis.webp" alt="Passo 3, com 3 jogadores: a pilha de níveis de 1 a 10, virada para cima, com o nível 1 no topo. Ilustração: manual Galápagos (p. 1)" loading="lazy" decoding="async"><figcaption>Passo 3, com 3 jogadores: a pilha de níveis de 1 a 10, virada para cima, com o nível 1 no topo. Ilustração: manual Galápagos <span class="pg">p.&nbsp;1</span></figcaption></figure>
+<p><strong>4. Níveis que sobram, na caixa.</strong> As cartas de nível que a partida não usa voltam para a caixa <span class="pg">p.&nbsp;1</span>. Com 4 jogadores, por exemplo, os níveis 9 a 12 não entram.</p>
+<p><strong>5. Embaralhar e dar as cartas do nível 1.</strong> Embaralhe as 100 cartas com números e dê 1 carta a cada jogador. Cada um segura a sua carta na mão sem deixar que os outros vejam <span class="pg">p.&nbsp;1</span>.</p>
+<p><strong>6. O resto do baralho.</strong> As cartas com números que sobram formam uma pilha virada para baixo, de lado <span class="pg">p.&nbsp;1</span>. Ela não é usada durante o nível; só volta a ser embaralhada no nível seguinte <span class="pg">p.&nbsp;2</span>.</p>
+<figure class="fig"><img src="figuras/setup-3-cartas.webp" alt="Passo 5: cada jogador com a sua carta (aqui, 28 e 55; a terceira está deitada, de lado). Ilustração: manual Galápagos (p. 1)" loading="lazy" decoding="async"><figcaption>Passo 5: cada jogador com a sua carta (aqui, 28 e 55; a terceira está deitada, de lado). Ilustração: manual Galápagos <span class="pg">p.&nbsp;1</span></figcaption></figure>
+<figure class="fig"><img src="figuras/setup-completa.webp" alt="A mesa pronta para 3 jogadores, como no exemplo do manual: 3 vidas, 1 estrela ninja, a pilha de níveis de 1 a 10 e uma carta para cada um. Ilustração: manual Galápagos (p. 1)" loading="lazy" decoding="async"><figcaption>A mesa pronta para 3 jogadores, como no exemplo do manual: 3 vidas, 1 estrela ninja, a pilha de níveis de 1 a 10 e uma carta para cada um. Ilustração: manual Galápagos <span class="pg">p.&nbsp;1</span></figcaption></figure>
+<p><strong>O que muda com o número de jogadores</strong> (p. 1; contas do guia nas três últimas colunas)</p>
+<div class="tab"><table><thead><tr><th>Jogadores</th><th>Níveis</th><th>Vidas da equipe</th><th>Estrelas ninja da equipe</th><th>De lado, para recompensa</th><th>Níveis que voltam à caixa</th></tr></thead><tbody><tr><td data-label="Jogadores">2</td><td data-label="Níveis">1 a 12</td><td data-label="Vidas da equipe">2</td><td data-label="Estrelas ninja da equipe">1</td><td data-label="De lado, para recompensa">3 vidas e 2 estrelas</td><td data-label="Níveis que voltam à caixa">nenhum</td></tr><tr><td data-label="Jogadores">3</td><td data-label="Níveis">1 a 10</td><td data-label="Vidas da equipe">3</td><td data-label="Estrelas ninja da equipe">1</td><td data-label="De lado, para recompensa">2 vidas e 2 estrelas</td><td data-label="Níveis que voltam à caixa">11 e 12</td></tr><tr><td data-label="Jogadores">4</td><td data-label="Níveis">1 a 8</td><td data-label="Vidas da equipe">4</td><td data-label="Estrelas ninja da equipe">1</td><td data-label="De lado, para recompensa">1 vida e 2 estrelas</td><td data-label="Níveis que voltam à caixa">9 a 12</td></tr></tbody></table></div>
+<p><strong>O que volta para a caixa.</strong> Só as cartas de nível que a partida não usa <span class="pg">p.&nbsp;1</span>. As vidas e estrelas que sobram ficam de lado na mesa, não na caixa.</p>
+<p><strong>Quem começa.</strong> Ninguém. The Mind não tem ordem de jogadores nem turnos: quem achar que tem a carta mais baixa da mesa a joga <span class="pg">p.&nbsp;1</span>. Antes da primeira carta, a equipe se concentra junta, como mostra a próxima seção.</p>
+<p><strong>Antes de começar, confira:</strong> vidas e estrelas ninja da equipe abertas na mesa, na quantidade da tabela; o restante das vidas e estrelas separado; a pilha de níveis virada para cima, com o nível 1 no topo e sem os níveis que não se usam; uma carta com número na mão de cada jogador, escondida; o resto do baralho virado para baixo.</p>
+<div class="quiz"><p class="q-p">Partida de 4 jogadores. Quantas vidas a equipe põe na mesa no começo, e até que nível vai a partida?</p><div class="q-ops"><button type="button" class="q-op">5 vidas, até o nível 12</button><button type="button" class="q-op">3 vidas, até o nível 10</button><button type="button" class="q-op" data-ok>4 vidas, até o nível 8</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Com 4 jogadores: níveis 1 a 8, 4 vidas e 1 estrela ninja <span class="pg">p.&nbsp;1</span>.</p></div></div>
+</section>
+<section class="bloco sec rapido" id="comece-a-jogar-em-4-minutos"><h2><span class="num"></span>Comece a jogar em 4 minutos</h2>
+<p><strong>Meta:</strong> em 4 minutos de leitura, montar a mesa e jogar o primeiro nível sem abrir o manual.</p>
+<h3>A ideia do jogo</h3>
+<p>Todos jogam juntos, como uma <strong>equipe</strong>, contra o jogo. Em cada <strong>nível</strong>, a equipe precisa pôr todas as cartas das mãos numa única pilha no meio da mesa, em <strong>ordem crescente</strong>, sem dizer nada sobre os números que tem. Não há vez de ninguém: quem acha que tem a carta mais baixa joga. Cada erro custa uma <strong>vida</strong> <span class="pg">p.&nbsp;1 e 2</span>.</p>
+<h3>Monte a mesa</h3>
+<p>Resumo da seção "Montar a mesa passo a passo", acima <span class="pg">p.&nbsp;1</span>.</p>
+<ol><li>Na mesa, abertas: vidas iguais ao número de jogadores e 1 estrela ninja. O resto das vidas e estrelas, de lado.</li><li>Pilha de níveis virada para cima, nível 1 no topo: até o 12 com 2 jogadores, o 10 com 3, o 8 com 4.</li><li>Embaralhe as 100 cartas com números e dê 1 a cada jogador; o resto fica virado para baixo, de lado.</li></ol>
+<h3>Seu primeiro turno</h3>
+<p>The Mind não tem turnos: o "primeiro turno", aqui, é o primeiro nível. No nível 1, cada jogador tem uma carta. O nível acontece assim <span class="pg">p.&nbsp;1</span>:</p>
+<ol><li><strong>Concentrem-se.</strong> Quem estiver pronto põe a palma da mão sobre a mesa. Quando todos estiverem com a mão na mesa, todos a retiram, e o nível começa.</li><li><strong>Jogar.</strong> Quem acha que tem a carta mais baixa das mãos a põe no centro da mesa, virada para cima. A carta seguinte vai em cima dela, e assim por diante: uma carta de cada vez, sempre maior que a anterior.</li><li><strong>Sem falar dos números.</strong> Ninguém pode mostrar a carta, dizer o número, dar pista, fazer acordo ou usar sinal secreto.</li><li><strong>Vencer o nível.</strong> Quando todas as cartas estão na pilha, em ordem crescente, a equipe venceu o nível.</li></ol>
+<p>A qualquer momento, alguém pode dizer <strong>"Pausa"</strong>: todos põem uma mão na mesa, se concentram, retiram a mão e voltam a jogar <span class="pg">p.&nbsp;1</span>.</p>
+<figure class="fig"><img src="figuras/nivel1-jogada.webp" alt="O nível 1 vencido, no exemplo do manual: 17, depois 28, depois 55, sempre em ordem crescente. Ilustração: manual Galápagos (p. 1)" loading="lazy" decoding="async"><figcaption>O nível 1 vencido, no exemplo do manual: 17, depois 28, depois 55, sempre em ordem crescente. Ilustração: manual Galápagos <span class="pg">p.&nbsp;1</span></figcaption></figure>
+<aside class="call resolvido"><p class="rot">Tarefa · exemplo resolvido</p><p><strong>Exemplo resolvido.</strong> O exemplo do manual, com 3 jogadores no nível 1 <span class="pg">p.&nbsp;1</span>. Danilo, Paula e Felipe põem a mão na mesa e a retiram. Felipe põe a 17 no centro. Paula põe a 28 sobre a 17. Danilo põe a 55 sobre a 28 e fecha a pilha: 17, 28, 55. Tudo em ordem: nível 1 vencido.</p></aside>
+<aside class="call complete"><p class="rot">Tarefa · complete</p><p><strong>Complete.</strong> Nível 2, três jogadores, duas cartas cada. Ana tem 12 e 60; Bruno, 33 e 41; Carla, 5 e 90.</p>
+<div class="quiz"><p class="q-p">Depois que Carla joga a 5 e Ana joga a 12, quem deve jogar a próxima carta, e qual?</p><div class="q-ops"><button type="button" class="q-op">Ana, a 60</button><button type="button" class="q-op" data-ok>Bruno, a 33</button><button type="button" class="q-op">Bruno, a 41</button><button type="button" class="q-op">Carla, a 90</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> A próxima carta é a mais baixa das que restam nas mãos: a 33, de Bruno. Depois vêm a 41 (Bruno outra vez, uma por vez), a 60 e a 90 <span class="pg">p.&nbsp;1 e 2</span>.</p></div></div></aside>
+<aside class="call suavez"><p class="rot">Tarefa · sua vez</p><p><strong>Sua vez.</strong></p>
+<div class="quiz"><p class="q-p">Você está com a 9, e mais ninguém jogou ainda. O que a regra diz sobre a sua vez de jogar?</p><div class="q-ops"><button type="button" class="q-op">Você espera o jogador à sua esquerda começar</button><button type="button" class="q-op">Você diz "tenho uma carta baixa" para os outros esperarem</button><button type="button" class="q-op" data-ok>Não há vez: se acha que a sua é a mais baixa, você joga</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Não existe ordem de jogo; quem julgar ter a carta mais baixa a coloca na mesa. Dizer algo sobre a carta é proibido <span class="pg">p.&nbsp;1</span>.</p></div></div></aside>
+<h3>Ainda não precisa saber</h3>
+<p>O que acontece quando alguém erra a ordem e como funciona a estrela ninja: <a href="#etapa-2-errar-e-usar-a-estrela-ninja">etapa 2</a>. Como se passa de nível e as recompensas: <a href="#etapa-3-passar-de-nivel-e-terminar-a-partida">etapa 3</a>. O modo cego, depois de vencer todos os níveis: <a href="#etapa-3-passar-de-nivel-e-terminar-a-partida">etapa 3</a>.</p>
+<h3>Como a partida acaba: vencer todos os níveis ou perder a última vida</h3>
+<p>A cada nível, cada jogador recebe uma carta a mais que no anterior: 2 no nível 2, 3 no nível 3, e assim por diante <span class="pg">p.&nbsp;1 e 2</span>. Se a equipe vence o último nível da partida, vence o jogo. Se perde a última vida, perde o jogo <span class="pg">p.&nbsp;2</span>.</p>
+<p><strong>Prefere ver?</strong> O vídeo é de The Mind Extreme, que tem regras diferentes: cartas brancas e vermelhas, de 1 a 50 cada; duas pilhas ao mesmo tempo, uma crescente e outra decrescente; níveis com cartas viradas para baixo; a estrela ninja funciona de outro jeito; e a pausa se chama "Parem". Concentração, vidas e níveis seguem a ideia da caixa básica. Ele complementa este guia; em caso de diferença, vale o manual.</p>
+<figure class="video"><button type="button" class="yt" data-id="kC5wllRwjJ8" data-t="0" aria-label="Assistir ao vídeo"><img src="https://i.ytimg.com/vi/kC5wllRwjJ8/hqdefault.jpg" alt="" loading="lazy" decoding="async" width="480" height="360"><span class="yt-play">▶ Assistir ao vídeo</span></button><figcaption>THE MIND: Extreme - Regras + review!, canal Duque Board Games · <a href="https://www.youtube.com/watch?v=kC5wllRwjJ8&amp;t=0s" rel="noopener">abrir no YouTube</a></figcaption></figure>
+<aside class="call atencao"><p class="rot">Atenção</p><p><strong>Os três erros mais caros.</strong> Ninguém pode dizer, mostrar ou insinuar o próprio número, nem combinar sinais <span class="pg">p.&nbsp;1</span>. Quem tem duas cartas seguidas, como 36 e 37, joga as duas, mas uma de cada vez <span class="pg">p.&nbsp;1</span>. Você sempre joga a carta mais baixa da sua mão, nunca outra <span class="pg">p.&nbsp;2</span>.</p></aside>
+</section>
+  <nav class="bloco indice" id="neste-guia" aria-label="Neste guia"><h2>Neste guia</h2><ol><li><a href="#montar-a-mesa-passo-a-passo">Montar a mesa passo a passo</a></li><li><a href="#comece-a-jogar-em-4-minutos">Comece a jogar em 4 minutos</a></li><li><a href="#antes-de-tudo-o-que-e-este-jogo">Antes de tudo: o que é este jogo</a> <small>(opcional)</small></li><li><a href="#como-este-guia-ensina">Como este guia ensina</a> <small>(opcional)</small></li><li><a href="#etapa-1-jogar-um-nivel">Etapa 1: jogar um nível</a></li><li><a href="#etapa-2-errar-e-usar-a-estrela-ninja">Etapa 2: errar e usar a estrela ninja</a></li><li><a href="#etapa-3-passar-de-nivel-e-terminar-a-partida">Etapa 3: passar de nível e terminar a partida</a></li><li><a href="#situacoes-especiais">Situações especiais</a> <small>(opcional)</small></li><li><a href="#avaliacao-final">Avaliação final</a> <small>(opcional)</small></li><li><a href="#para-consultar-durante-a-partida">Para consultar durante a partida</a></li><li><a href="#fontes">Fontes</a></li></ol></nav>
+
+<section class="bloco sec opc" id="antes-de-tudo-o-que-e-este-jogo"><h2><span class="num">0</span>Antes de tudo: o que é este jogo<span class="tag-opc">Opcional</span></h2>
+<figure class="fig foto-sec caixa"><img src="../../the-mind/fotos/capa-1.webp" alt="The Mind: a caixa" width="1600" height="1600" loading="lazy" decoding="async"><figcaption>Imagem: Pandasaurus Games · edição dos EUA</figcaption></figure>
+<details class="dobra sec-opc"><summary>Abrir esta seção</summary><p>The Mind é um jogo de cartas cooperativo de Wolfgang Warsch, para 2 a 4 jogadores a partir de 8 anos, com cerca de 20 minutos de partida <span class="pg">p.&nbsp;1</span>. A equipe vence ou perde junta. Em cada nível, todas as cartas das mãos precisam formar uma pilha em ordem crescente sem que ninguém diga nada sobre o que tem; cada nível dá uma carta a mais a cada um, e cada erro custa uma vida <span class="pg">p.&nbsp;1 e 2</span>.</p>
+<p>A regra cabe em poucas linhas; o que se aprende jogando é o ritmo. O manual guarda o segredo do jogo num quadro impresso de cabeça para baixo e recomenda que jogadores experientes joguem a primeira partida sem lê-lo <span class="pg">p.&nbsp;1 e 2</span>. O guia respeita isso: a ideia do quadro aparece só na etapa 1, num bloco que você abre se quiser.</p></details>
+</section>
+<section class="bloco sec opc" id="como-este-guia-ensina"><h2><span class="num">1</span>Como este guia ensina<span class="tag-opc">Opcional</span></h2>
+<figure class="fig foto-sec caixa"><img src="../../the-mind/fotos/capa-1.webp" alt="The Mind: a caixa" width="1600" height="1600" loading="lazy" decoding="async"><figcaption>Imagem: Pandasaurus Games · edição dos EUA</figcaption></figure>
+<details class="dobra sec-opc"><summary>Abrir esta seção</summary><p>Três etapas, na ordem da partida: jogar um nível; errar e usar a estrela ninja; passar de nível e terminar. Cada uma tem <strong>Para entender</strong>, <strong>Passo a passo</strong>, regras de caso especial à parte e tarefas com ajuda decrescente: <strong>exemplo resolvido</strong>, <strong>complete</strong> e <strong>sua vez</strong>. Toque numa opção para ver a certa e a explicação. No fim, uma avaliação diz o que reler, e a folha de consulta vai para a mesa.</p></details>
+</section>
+<section class="bloco sec" id="etapa-1-jogar-um-nivel"><h2><span class="num">2</span>Etapa 1: jogar um nível</h2>
+<figure class="fig foto-sec caixa"><img src="../../the-mind/fotos/capa-1.webp" alt="The Mind: a caixa" width="1600" height="1600" loading="lazy" decoding="async"><figcaption>Imagem: Pandasaurus Games · edição dos EUA</figcaption></figure>
+<details class="dobra entender"><summary>Por que funciona assim</summary><aside class="call entender"><p>Ninguém pode revelar nada das cartas, nem com acordo, nem com sinal secreto <span class="pg">p.&nbsp;1</span>. Sobra o que todos veem: quanto tempo passa até alguém jogar.</p></aside></details>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Um nível</strong> <span class="pg">p.&nbsp;1 e 2</span></p>
+<ol><li>Cada jogador segura as suas cartas numa mão, sem mostrá-las.</li><li>Quem estiver pronto põe a outra mão espalmada sobre a mesa. Quando todos estiverem prontos, todos retiram a mão e o nível começa.</li><li>Quem achar que tem a carta mais baixa das mãos põe essa carta no centro da mesa, virada para cima, sobre a pilha.</li><li>As cartas vão uma a uma, cada uma maior que a anterior. Não existe ordem de jogadores.</li><li>Cada jogador sempre joga a carta mais baixa da própria mão.</li><li>Quando todas as cartas estão na pilha em ordem crescente, a equipe vence o nível.</li></ol></aside>
+<details class="dobra mais"><summary>Regra adicional: Pausa</summary><aside class="call mais"><p>A qualquer momento do nível, qualquer jogador pode dizer "Pausa". O jogo para, todos põem uma mão sobre a mesa, se concentram, retiram a mão e só então voltam a jogar <span class="pg">p.&nbsp;1</span>.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Cartas seguidas na mesma mão</summary><aside class="call mais"><p>Com 36 e 37 na mão, jogue as duas logo, em ordem crescente, uma por vez <span class="pg">p.&nbsp;1</span>.</p></aside></details>
+<details class="dobra entender"><summary>Por que funciona assim</summary><aside class="call entender"><p>Se preferir descobrir sozinho, como o manual recomenda aos jogadores experientes, pule este bloco <span class="pg">p.&nbsp;1</span>. O quadro de cabeça para baixo no fim da folha diz que The Mind é um jogo de sincronia guiada pela noção de tempo: quanto mais baixa a carta, mais cedo se joga; o 5 sai rápido, o 80 espera mais. O manual avisa que não se trata de contar segundos, e que com algumas partidas o que parecia sorte vira habilidade, porque a equipe desenvolve um sentido comum do tempo <span class="pg">p.&nbsp;2</span>.</p></aside></details>
+<details class="dobra dica"><summary>Dica: Sugestão: conte a distância, não o número</summary><aside class="call dica"><p>Com a pilha na 40, a sua 45 pede pouca espera, embora 45 não seja um número baixo. É estratégia, não regra.</p></aside></details>
+<details class="dobra resolvido"><summary>Ver um exemplo resolvido</summary><aside class="call resolvido"><p>O nível 2 do manual, com 3 jogadores <span class="pg">p.&nbsp;2</span>. Paula tem 7 e 94; Felipe, 11 e 81; Danilo, 35 e 47. Todos põem a mão na mesa e a retiram. Paula joga a 7. Felipe joga a 11. Danilo joga a 35 e, depois, a 47, uma de cada vez. Felipe joga a 81, e Paula fecha com a 94. A pilha ficou 7, 11, 35, 47, 81, 94: nível 2 vencido.</p></aside></details>
+
+
+<details class="dobra pratica"><summary>Pratique esta etapa: exercícios com respostas</summary><aside class="call complete"><p class="rot">Tarefa · complete</p><p><strong>Complete.</strong> Dois jogadores no nível 4. Você tem 6, 39, 40 e 93; o seu parceiro tem 15, 58, 61 e 77.</p>
+<div class="quiz"><p class="q-p">A pilha já tem 6 e 15. Qual é a próxima carta, e quantas cartas você joga em seguida?</p><div class="q-ops"><button type="button" class="q-op">A 58 do parceiro; depois você joga uma</button><button type="button" class="q-op" data-ok>A sua 39; depois a 40, numa jogada separada</button><button type="button" class="q-op">A sua 39 e a 40 juntas, de uma vez</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> 39 e 40 são as mais baixas que restam e estão na sua mão: você joga as duas logo, mas uma por vez <span class="pg">p.&nbsp;1</span>.</p></div></div></aside>
+<aside class="call suavez"><p class="rot">Tarefa · sua vez</p><p><strong>Sua vez.</strong></p>
+<div class="quiz"><p class="q-p">Você tem 21, 56 e 93. Pode jogar a 56 primeiro e deixar a 21 para depois?</p><div class="q-ops"><button type="button" class="q-op">Pode, se achar que a 56 é a mais baixa da mesa</button><button type="button" class="q-op" data-ok>Não: a primeira carta que você joga é a 21, a mais baixa da sua mão</button><button type="button" class="q-op">Pode, desde que diga "Pausa" antes</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> A carta jogada deve ser sempre a mais baixa da mão; o manual dá este mesmo exemplo com 21, 56 e 93 <span class="pg">p.&nbsp;2</span>.</p></div></div></aside></details>
+</section>
+<section class="bloco sec" id="etapa-2-errar-e-usar-a-estrela-ninja"><h2><span class="num">3</span>Etapa 2: errar e usar a estrela ninja</h2>
+<figure class="fig foto-sec caixa"><img src="../../the-mind/fotos/capa-1.webp" alt="The Mind: a caixa" width="1600" height="1600" loading="lazy" decoding="async"><figcaption>Imagem: Pandasaurus Games · edição dos EUA</figcaption></figure>
+<details class="dobra entender"><summary>Por que funciona assim</summary><aside class="call entender"><p>Erro é uma coisa só: alguém jogou uma carta, e outra pessoa ainda segura uma menor. O jogo não recomeça o nível; cobra uma vida, limpa as cartas que ficaram para trás e segue dali <span class="pg">p.&nbsp;2</span>. A estrela ninja tira de cada mão a carta mais baixa, e essas cartas ficam à vista de todos <span class="pg">p.&nbsp;2</span>.</p></aside></details>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Quando alguém erra</strong> <span class="pg">p.&nbsp;2</span></p>
+<ol><li>Assim que uma carta é jogada fora de ordem, quem tem uma carta mais baixa que ela interrompe o jogo na hora. No exemplo do manual, eles dizem "Pausa".</li><li>A equipe perde uma vida: uma carta de vida sai da mesa e vai para o lado.</li><li>Todos os jogadores descartam, das próprias mãos, todas as cartas mais baixas que a carta jogada.</li><li>A carta jogada fica na pilha: só as cartas abaixo dela saem das mãos, então a próxima carta precisa ser maior que ela.</li><li>A equipe se concentra de novo, com a mão na mesa, e continua o mesmo nível com as cartas que restaram. Não começa um nível novo.</li></ol></aside>
+<details class="dobra resolvido"><summary>Ver um exemplo resolvido</summary><aside class="call resolvido"><p>O exemplo do manual <span class="pg">p.&nbsp;2</span>. Paula joga a 34. Danilo tem a 26 e Felipe, a 30: os dois dizem "Pausa". A equipe perde uma vida. Danilo põe a 26 de lado, Felipe põe a 30 de lado, todos se concentram e o nível continua.</p></aside></details>
+<details class="dobra edicao"><summary>Sobre a edição: Para onde vão a vida perdida e a estrela usada</summary><aside class="call edicao"><p>O manual diz só que a carta vai "de lado" <span class="pg">p.&nbsp;2</span> e não diz se ela se junta às que ficaram de lado na preparação. Como a caixa tem só 5 vidas e 3 estrelas e a equipe pode chegar a esse máximo com recompensas <span class="pg">p.&nbsp;1 e 2</span>, o guia lê que sim: ponha a carta junto das que ficaram de lado.</p></aside></details>
+<aside class="call atencao"><p class="rot">Atenção</p><p><strong>Um erro, uma vida.</strong> No exemplo do manual, dois jogadores tinham cartas abaixo da 34, e a equipe perdeu uma vida só <span class="pg">p.&nbsp;2</span>. Não se perde uma vida por carta descartada.</p></aside>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Usar uma estrela ninja</strong> <span class="pg">p.&nbsp;2</span></p>
+<ol><li>Durante um nível, qualquer jogador pode propor usar uma estrela ninja levantando a mão.</li><li>Se todos os jogadores concordarem, a estrela é usada: uma estrela ninja sai da mesa e vai para o lado.</li><li>Cada jogador descarta a carta mais baixa da própria mão, virada para cima, à vista de todos.</li><li>A equipe se concentra de novo e o nível continua.</li></ol></aside>
+<details class="dobra edicao"><summary>Sobre a edição: Quem está sem cartas e a estrela ninja</summary><aside class="call edicao"><p>O manual diz que "todos os jogadores descartam a sua carta mais baixa" e não fala de quem já jogou todas as cartas do nível <span class="pg">p.&nbsp;2</span>. O guia lê que esse jogador simplesmente não descarta nada.</p></aside></details>
+<details class="dobra resolvido"><summary>Ver um exemplo resolvido</summary><aside class="call resolvido"><p>Três jogadores no nível 3, ninguém jogou ainda e a mesa está travada, isto é, ninguém se arrisca a jogar. Ana levanta a mão; Bruno e Carla concordam. Ana descarta a 44, Bruno a 12, Carla a 27, as três viradas para cima. Ficam Ana com 70 e 91, Bruno com 50 e 83, Carla com 61 e 99, e o nível continua depois da concentração.</p></aside></details>
+
+
+<details class="dobra pratica"><summary>Pratique esta etapa: exercícios com respostas</summary><aside class="call complete"><p class="rot">Tarefa · complete</p><p><strong>Complete.</strong> Quatro jogadores no nível 2. Bruno joga a 60. Ana ainda tem 14 e 75; Carla, 58 e 80; Davi, 66 e 90.</p>
+<div class="quiz"><p class="q-p">Quais cartas são descartadas, e quantas vidas a equipe perde?</p><div class="q-ops"><button type="button" class="q-op">Só a 58 de Carla; perde 1 vida</button><button type="button" class="q-op">A 14 e a 58; perde 2 vidas</button><button type="button" class="q-op" data-ok>A 14 de Ana e a 58 de Carla; perde 1 vida</button><button type="button" class="q-op">Todas as cartas das mãos; o nível recomeça</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Todas as cartas abaixo de 60 saem das mãos: a 14 e a 58. O erro custa uma vida só, e o nível continua <span class="pg">p.&nbsp;2</span>.</p></div></div></aside>
+<aside class="call suavez"><p class="rot">Tarefa · sua vez</p><p><strong>Sua vez.</strong></p>
+<div class="quiz"><p class="q-p">Depois de um erro, a equipe volta ao nível 1?</p><div class="q-ops"><button type="button" class="q-op">Sim, sempre</button><button type="button" class="q-op" data-ok>Não: continua o mesmo nível com as cartas que sobraram</button><button type="button" class="q-op">Não: passa direto para o nível seguinte</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Depois do descarte, a equipe se concentra e retorna ao nível atual, sem começar um novo <span class="pg">p.&nbsp;2</span>.</p></div></div>
+<div class="quiz"><p class="q-p">Carla propõe usar a estrela ninja, e Bruno não quer. O que acontece?</p><div class="q-ops"><button type="button" class="q-op">A estrela é usada, porque a maioria quis</button><button type="button" class="q-op" data-ok>A estrela não é usada</button><button type="button" class="q-op">Só Carla descarta a carta mais baixa</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> A estrela ninja só é usada se todos os jogadores estiverem de acordo <span class="pg">p.&nbsp;2</span>.</p></div></div></aside></details>
+</section>
+<section class="bloco sec" id="etapa-3-passar-de-nivel-e-terminar-a-partida"><h2><span class="num">4</span>Etapa 3: passar de nível e terminar a partida</h2>
+<details class="dobra entender"><summary>Por que funciona assim</summary><aside class="call entender"><p>Cada nível dá uma carta a mais para cada um, e alguns níveis devolvem uma vida ou uma estrela ninja, tiradas das que ficaram de lado na preparação <span class="pg">p.&nbsp;2</span>. A partida termina quando a equipe vence o último nível ou fica sem vidas <span class="pg">p.&nbsp;2</span>.</p></aside></details>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>O nível seguinte</strong> <span class="pg">p.&nbsp;2</span></p>
+<ol><li>Confira a recompensa na carta do nível vencido: se ela tem o símbolo, a equipe pega a vida ou a estrela ninja das cartas que ficaram de lado.</li><li>Depois, a carta do nível vencido vai para a caixa. A próxima carta da pilha de níveis mostra o novo nível.</li><li>Junte as 100 cartas com números (a pilha da mesa, os descartes e o resto do baralho) e embaralhe.</li><li>Dê a cada jogador o número de cartas do novo nível: o número do nível. Nível 3, 3 cartas; nível 7, 7 cartas.</li><li>Cada jogador recolhe as cartas com uma mão e põe a outra na mesa para se concentrar. Depois, o nível começa.</li></ol></aside>
+<figure class="fig"><img src="figuras/recompensa.webp" alt="Uma carta de nível com o símbolo da recompensa no canto inferior direito. Ilustração: manual Galápagos (p. 2)" loading="lazy" decoding="async"><figcaption>Uma carta de nível com o símbolo da recompensa no canto inferior direito. Ilustração: manual Galápagos <span class="pg">p.&nbsp;2</span></figcaption></figure>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Recompensas</strong> <span class="pg">p.&nbsp;2</span></p>
+<ol><li>Só os níveis 2, 3, 5, 6, 8 e 9 dão recompensa.</li><li>A recompensa, uma vida ou uma estrela ninja, aparece desenhada no canto inferior direito da própria carta do nível. No nível 2, o manual diz que é uma estrela ninja.</li><li>A equipe pode ter no máximo 5 vidas e 3 estrelas ninja.</li></ol></aside>
+<details class="dobra edicao"><summary>Sobre a edição: Recompensa com a equipe no máximo</summary><aside class="call edicao"><p>O manual não diz o que acontece com a recompensa quando a equipe já tem 5 vidas ou 3 estrelas <span class="pg">p.&nbsp;2</span>. Como a caixa só tem 5 vidas e 3 estrelas <span class="pg">p.&nbsp;1</span>, o guia lê que ela não é recebida.</p></aside></details>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Fim do jogo</strong> <span class="pg">p.&nbsp;2</span></p>
+<ol><li>Se a equipe vence todos os níveis da partida (até o 12 com 2 jogadores, o 10 com 3, o 8 com 4), vence o jogo.</li><li>Se a equipe perde a última vida, perde o jogo.</li></ol></aside>
+<details class="dobra mais"><summary>Regra adicional: Novo desafio: modo cego</summary><aside class="call mais"><p>Se a equipe vence todos os níveis, pode continuar jogando em modo cego. Volta ao nível 1 com as vidas e estrelas ninja que sobraram, e agora as cartas vão para a pilha do centro viradas para baixo. Ao terminar o nível, vire a pilha e confira a ordem; se alguém errou, a equipe perde uma vida. As outras regras continuam as mesmas. O desafio é ver quantos níveis a equipe vence assim <span class="pg">p.&nbsp;2</span>.</p></aside></details>
+<details class="dobra edicao"><summary>Sobre a edição: Modo cego com mais de um erro</summary><aside class="call edicao"><p>O manual diz que, se "algum jogador tiver cometido algum erro, a equipe perde uma vida" <span class="pg">p.&nbsp;2</span>, e não diz se dois erros no mesmo nível custam duas vidas. Pela letra, seria uma vida por nível com erro; no The Mind Extreme, outro jogo, cada erro custa uma vida. Combinem antes de começar qual leitura a mesa vai usar.</p></aside></details>
+<details class="dobra resolvido"><summary>Ver um exemplo resolvido</summary><aside class="call resolvido"><p>A equipe começa com 3 vidas e 1 estrela ninja <span class="pg">p.&nbsp;1</span>. Erra uma vez no nível 1 (fica com 2 vidas), vence o nível 1 e vence o nível 2, que dá uma estrela ninja: 2 vidas e 2 estrelas. No nível 3, cada um recebe 3 cartas, 9 ao todo <span class="pg">p.&nbsp;2</span>.</p></aside></details>
+
+
+<details class="dobra pratica"><summary>Pratique esta etapa: exercícios com respostas</summary><aside class="call complete"><p class="rot">Tarefa · complete</p><p><strong>Complete.</strong> Quatro jogadores acabam de vencer o nível 5.</p>
+<div class="quiz"><p class="q-p">Quantas cartas cada um recebe no nível 6, e quantas cartas com números são distribuídas ao todo?</p><div class="q-ops"><button type="button" class="q-op">5 cada, 20 ao todo</button><button type="button" class="q-op" data-ok>6 cada, 24 ao todo</button><button type="button" class="q-op">6 cada, 30 ao todo</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Em cada nível, cada jogador recebe uma carta a mais que no anterior: 6 no nível 6; com 4 jogadores, 24 cartas <span class="pg">p.&nbsp;2</span>.</p></div></div></aside>
+<aside class="call suavez"><p class="rot">Tarefa · sua vez</p><p><strong>Sua vez.</strong></p>
+<div class="quiz"><p class="q-p">Partida de 2 jogadores. A equipe erra uma vez no nível 1, vence os níveis 1 e 2 e erra outra vez no nível 3. O que acontece?</p><div class="q-ops"><button type="button" class="q-op">Volta ao nível 1 com 1 vida</button><button type="button" class="q-op" data-ok>A equipe perde o jogo</button><button type="button" class="q-op">Usa a estrela ninja no lugar da vida</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Com 2 jogadores, a equipe começa com 2 vidas <span class="pg">p.&nbsp;1</span>. O nível 2 dá uma estrela ninja, não uma vida, e a recompensa do nível 3 só viria depois de vencê-lo; o segundo erro leva a última vida, e a equipe perde <span class="pg">p.&nbsp;2</span>.</p></div></div>
+<div class="quiz"><p class="q-p">A equipe tem 5 vidas e vence um nível cuja carta mostra uma vida de recompensa. Com quantas vidas fica?</p><div class="q-ops"><button type="button" class="q-op" data-ok>5</button><button type="button" class="q-op">6</button><button type="button" class="q-op">4</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> A equipe pode ter no máximo cinco vidas <span class="pg">p.&nbsp;2</span>. O guia lê que a recompensa acima do limite não é recebida.</p></div></div></aside></details>
+</section>
+<section class="bloco sec opc" id="situacoes-especiais"><h2><span class="num">5</span>Situações especiais<span class="tag-opc">Opcional</span></h2>
+<figure class="fig foto-sec caixa"><img src="../../the-mind/fotos/capa-1.webp" alt="The Mind: a caixa" width="1600" height="1600" loading="lazy" decoding="async"><figcaption>Imagem: Pandasaurus Games · edição dos EUA</figcaption></figure>
+<details class="dobra sec-opc"><summary>Abrir esta seção</summary><details class="dobra edicao"><summary>Sobre a edição: Duas cartas ao mesmo tempo</summary><aside class="call edicao"><p>O manual diz que as cartas são colocadas uma a uma <span class="pg">p.&nbsp;1</span>, mas não diz o que fazer quando duas pessoas põem cartas quase juntas. Combinem antes da partida como resolver esse caso; isso é regra da mesa, não acordo sobre as cartas.</p></aside></details>
+<details class="dobra edicao"><summary>Sobre a edição: O erro descarta as últimas cartas</summary><aside class="call edicao"><p>Se, depois de um erro ou de uma estrela ninja, ninguém fica com carta na mão, o manual não diz o que acontece. O guia lê que o nível foi vencido, como quando a última carta vai para a pilha <span class="pg">p.&nbsp;1 e 2</span>.</p></aside></details></details>
+</section>
+<section class="bloco sec opc" id="avaliacao-final"><h2><span class="num">6</span>Avaliação final<span class="tag-opc">Opcional</span></h2>
+<figure class="fig foto-sec caixa"><img src="../../the-mind/fotos/capa-1.webp" alt="The Mind: a caixa" width="1600" height="1600" loading="lazy" decoding="async"><figcaption>Imagem: Pandasaurus Games · edição dos EUA</figcaption></figure>
+<details class="dobra sec-opc"><summary>Abrir esta seção</summary><p>Responda sem consultar. Cada resposta diz o que reler.</p>
+<div class="quiz"><p class="q-p">1. Partida de 3 jogadores. Até que nível a equipe precisa chegar para vencer?</p><div class="q-ops"><button type="button" class="q-op">8</button><button type="button" class="q-op" data-ok>10</button><button type="button" class="q-op">12</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Com 3 jogadores, níveis 1 a 10 <span class="pg">p.&nbsp;1</span>. Releia a montagem.</p></div></div>
+<div class="quiz"><p class="q-p">2. Quem joga a primeira carta de um nível?</p><div class="q-ops"><button type="button" class="q-op">O jogador mais novo</button><button type="button" class="q-op">Quem venceu o nível anterior</button><button type="button" class="q-op" data-ok>Quem achar que tem a carta mais baixa</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Não há ordem de jogo <span class="pg">p.&nbsp;1</span>. Releia a etapa 1.</p></div></div>
+<div class="quiz"><p class="q-p">3. Paula joga a 34; Danilo tem 26, e Felipe tem 30. Quantas vidas a equipe perde?</p><div class="q-ops"><button type="button" class="q-op">2</button><button type="button" class="q-op" data-ok>1</button><button type="button" class="q-op">Nenhuma, se ninguém disser "Pausa"</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Um erro custa uma vida; as cartas abaixo de 34 são descartadas <span class="pg">p.&nbsp;2</span>. Releia a etapa 2.</p></div></div>
+<div class="quiz"><p class="q-p">4. A equipe usa uma estrela ninja. O que cada jogador faz?</p><div class="q-ops"><button type="button" class="q-op">Mostra a mão aos outros</button><button type="button" class="q-op">Joga a carta mais alta</button><button type="button" class="q-op" data-ok>Descarta a carta mais baixa, virada para cima</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Todos os jogadores descartam a carta mais baixa, virada para cima <span class="pg">p.&nbsp;2</span>. Releia a etapa 2.</p></div></div>
+<div class="quiz"><p class="q-p">5. Qual destes níveis dá recompensa?</p><div class="q-ops"><button type="button" class="q-op" data-ok>O nível 2</button><button type="button" class="q-op">O nível 4</button><button type="button" class="q-op">O nível 7</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Dão recompensa os níveis 2, 3, 5, 6, 8 e 9; ela aparece no canto inferior direito da carta <span class="pg">p.&nbsp;2</span>. Releia a etapa 3.</p></div></div>
+<aside class="call atencao"><p class="rot">Atenção</p><p><strong>Critério para começar a jogar.</strong> Acertou 4 ou 5? Monte a mesa e jogue, com a folha de consulta ao lado. Errou a 1, releia a montagem; a 2, a etapa 1; a 3 ou a 4, a etapa 2; a 5, a etapa 3. Depois refaça só as que errou.</p></aside></details>
+</section>
+<section class="bloco sec ref" id="para-consultar-durante-a-partida"><h2><span class="num">7</span>Para consultar durante a partida</h2>
+<figure class="fig foto-sec caixa"><img src="../../the-mind/fotos/capa-1.webp" alt="The Mind: a caixa" width="1600" height="1600" loading="lazy" decoding="async"><figcaption>Imagem: Pandasaurus Games · edição dos EUA</figcaption></figure>
+<p><strong>Preparação</strong></p>
+<div class="tab"><table><thead><tr><th>Jogadores</th><th>Níveis</th><th>Vidas</th><th>Estrelas ninja</th></tr></thead><tbody><tr><td data-label="Jogadores">2</td><td data-label="Níveis">1 a 12</td><td data-label="Vidas">2</td><td data-label="Estrelas ninja">1</td></tr><tr><td data-label="Jogadores">3</td><td data-label="Níveis">1 a 10</td><td data-label="Vidas">3</td><td data-label="Estrelas ninja">1</td></tr><tr><td data-label="Jogadores">4</td><td data-label="Níveis">1 a 8</td><td data-label="Vidas">4</td><td data-label="Estrelas ninja">1</td></tr></tbody></table></div>
+<p><strong>Um nível</strong></p>
+<ol><li>Cartas do nível: tantas quanto o número do nível, para cada jogador.</li><li>Todos com a mão na mesa; todos retiram; começa.</li><li>Quem achar que tem a carta mais baixa joga, uma por vez, sempre a mais baixa da própria mão.</li><li>Nada de falar, mostrar, combinar ou sinalizar números.</li><li>"Pausa" a qualquer momento: mão na mesa, concentrar, retirar, seguir.</li></ol>
+<p><strong>Erro:</strong> quem tem carta menor interrompe; a equipe perde 1 vida; todos descartam as cartas abaixo da jogada; concentrar e seguir no mesmo nível.</p>
+<p><strong>Estrela ninja:</strong> alguém levanta a mão; se todos concordam, cada um descarta a carta mais baixa, virada para cima; concentrar e seguir.</p>
+<p><strong>Nível vencido:</strong> recompensa nos níveis 2, 3, 5, 6, 8 e 9 (vida ou estrela, desenhada no canto inferior direito da carta); depois, carta do nível na caixa; máximo de 5 vidas e 3 estrelas; embaralhar as 100 cartas e dar uma a mais para cada um.</p>
+<p><strong>Fim:</strong> a equipe vence ao passar do último nível e perde ao perder a última vida. Depois da vitória, se quiserem: modo cego, cartas viradas para baixo, conferidas no fim de cada nível.</p>
+</section>
+<section class="bloco sec" id="fontes"><h2><span class="num">8</span>Fontes</h2>
+<figure class="fig foto-sec caixa"><img src="../../the-mind/fotos/capa-1.webp" alt="The Mind: a caixa" width="1600" height="1600" loading="lazy" decoding="async"><figcaption>Imagem: Pandasaurus Games · edição dos EUA</figcaption></figure>
+<ul><li>Galápagos. <em>The Mind: regras</em> (edição brasileira, código TMI001, arquivo "TMI001_regras_v1.0.pdf", título interno "The Mind_regras_v1.0_11-23", 2 páginas, PDF criado em 09/11/2023). Biblioteca de downloads da Asmodee Brasil, <a href="https://www.asmodee.com.br/download-library">https://www.asmodee.com.br/download-library</a>, item "TMI001 - The Mind"; arquivo em <a href="https://api-prd.mundogalapagos.com.br/library-download/store/file?id=2249&amp;tagId=2&amp;group=b2c">https://api-prd.mundogalapagos.com.br/library-download/store/file?id=2249&amp;tagId=2&amp;group=b2c</a>. Consultado em 05/11/2026.</li><li>Galápagos. <em>The Mind Extreme: regras</em> (edição brasileira, código TMI102, versão 1.0, outubro de 2023), mesma biblioteca, <a href="https://api-prd.mundogalapagos.com.br/library-download/store/file?id=2250&amp;tagId=2&amp;group=b2c">https://api-prd.mundogalapagos.com.br/library-download/store/file?id=2250&amp;tagId=2&amp;group=b2c</a>, consultado em 05/11/2026, só para descrever o vídeo.</li></ul>
+</section>
+<section class="bloco"><p class="sec-intro">Quer saber se vale a pena antes de jogar? <a href="../../the-mind/">Leia a nossa resenha de The Mind</a>.</p></section>
+<p class="nota-pe">Regras conferidas nas regras da edição brasileira de The Mind (Galápagos, código TMI001, versão 1.0, novembro de 2023), baixadas da biblioteca de downloads da Asmodee Brasil. A folha de regras não tem número impresso nas páginas: o guia chama a frente de p. 1 e o verso de p. 2.</p>
+</div></main>
+
+<!--rodape--><footer><div class="in">
+ <span>Elite Boardgamers</span><a href="../../noticias/">Notícias</a><a href="../../resenhas/">Resenhas</a><a href="../../como-jogar/">Como jogar</a><a href="../../lancamentos/">Lançamentos</a><a href="../../black/">Black de Verdade</a><a href="../../jogos-de-tabuleiro/">Guia de jogos de tabuleiro</a><a href="../../premios/">Prêmios</a><a href="../../politica-editorial/">Política editorial</a>
+ <a href="https://www.instagram.com/eliteboardgamers/" target="_blank" rel="noopener">Instagram @eliteboardgamers</a><a href="https://chat.whatsapp.com/IgQQkJdSkzHBaEq3UwFeAo" target="_blank" rel="noopener">Grupo do WhatsApp</a>
+</div></footer>
+<div class="barra-lt fora" role="region" aria-label="Ações da página"><div class="cpw" data-texto=""><a class="cp" href="https://wa.me/" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="M8.2 10.8l7.6-4.4M8.2 13.2l7.6 4.4"/></svg><span>Compartilhar</span></a><div class="cp-menu" hidden><a class="cp-op zap-op" href="https://wa.me/" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8.4 19l-4.4 1Z"/><path d="M9.2 8.6c.3-.5.8-.5 1-.1l.7 1.5c.1.3 0 .6-.2.8l-.4.4c.5 1.1 1.4 2 2.5 2.5l.4-.4c.2-.2.5-.3.8-.2l1.5.7c.4.2.4.7-.1 1-.7.5-1.6.6-2.4.3a7 7 0 0 1-4.2-4.2c-.3-.8-.2-1.7.4-2.3Z"/></svg>WhatsApp</a><button type="button" class="cp-op"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h8"/></svg>Copiar link</button></div><p class="cp-st" role="status"></p></div><script>(()=>{const pega=c=>({u:c.dataset.url||location.href,t:c.dataset.texto||document.title});
+document.querySelectorAll('.cpw:not(.ok)').forEach(c=>{c.classList.add('ok');const b=c.querySelector('.cp');
+ const n=document.createElement('button');n.type='button';n.className=b.className;n.innerHTML=b.innerHTML;n.setAttribute('aria-expanded','false');b.replaceWith(n)});
+if(window.__cp)return;window.__cp=1;
+const celular=()=>navigator.share&&matchMedia('(pointer:coarse)').matches;
+const fecha=()=>document.querySelectorAll('.cp-menu:not([hidden])').forEach(m=>{m.hidden=true;m.parentNode.querySelector('.cp').setAttribute('aria-expanded','false')});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')fecha()});
+document.addEventListener('click',async ev=>{const c=ev.target.closest('.cpw');if(!c){fecha();return}
+ const {u,t}=pega(c),m=c.querySelector('.cp-menu'),st=c.querySelector('.cp-st'),el=ev.target.closest('.cp,.cp-op');if(!el)return;
+ if(el.classList.contains('cp')){
+  if(celular()){try{await navigator.share({title:document.title,text:t,url:u})}catch(e){}return}
+  const abre=m.hidden;fecha();if(!abre)return;
+  m.querySelector('.zap-op').href='https://wa.me/?text='+encodeURIComponent(t+' '+u);
+  const r=c.getBoundingClientRect();m.classList.toggle('sobe',!!c.closest('.barra-lt')||r.bottom>innerHeight-140);m.classList.toggle('dir',r.left>innerWidth-220);
+  m.hidden=false;el.setAttribute('aria-expanded','true');m.querySelector('.cp-op').focus();return}
+ if(el.classList.contains('zap-op')){fecha();return}
+ fecha();let ok=false;try{await navigator.clipboard.writeText(u);ok=true}catch(e){
+  const i=document.createElement('input');i.value=u;document.body.append(i);i.select();try{ok=document.execCommand('copy')}catch(e2){}i.remove()}
+ st.textContent=ok?'Link copiado!':'Não deu para copiar o link.';clearTimeout(st._t);st._t=setTimeout(()=>st.textContent='',2500);
+ c.querySelector('.cp').focus()})})()</script><a class="lt-grupo" href="https://chat.whatsapp.com/IgQQkJdSkzHBaEq3UwFeAo" target="_blank" rel="noopener" aria-label="Entrar no grupo do WhatsApp da Elite"><img src="/favicon-48.png" width="48" height="48" alt=""><span>Grupo</span></a></div><script>(()=>{const l=document.querySelector('.barra-lt');if(!l)return;const vis=new Set();
+const poe=()=>{const on=scrollY>500&&!vis.size;l.classList.toggle('fora',!on);l.inert=!on;document.body.classList.toggle('lt-on',on)};
+const io=new IntersectionObserver(es=>{es.forEach(e=>e.isIntersecting?vis.add(e.target):vis.delete(e.target));poe()});
+document.querySelectorAll('.convite,footer').forEach(x=>io.observe(x));addEventListener('scroll',poe,{passive:true});poe()})()</script>
+<script>document.addEventListener('click',e=>{const b=e.target.closest('.q-op');if(!b||b.disabled)return;const q=b.closest('.quiz');
+q.querySelectorAll('.q-op').forEach(o=>{o.disabled=true;if(o.hasAttribute('data-ok'))o.classList.add('ok')});const ok=b.hasAttribute('data-ok');
+if(!ok)b.classList.add('erro');const x=q.querySelector('.q-exp');x.hidden=false;x.classList.toggle('mal',!ok);x.querySelector('.q-res').textContent=ok?'Isso!':'Não é essa.';});
+(()=>{const g=document.querySelector('.guia-prog');if(!g)return;const t=g.querySelector('.gp-t'),b=g.querySelector('.gp-b');
+const secs=[...document.querySelectorAll('.sec[id]')],idx=document.querySelector('.indice');
+const poe=()=>{const y=scrollY+innerHeight*.3;let at=null;for(const s of secs){if(s.offsetTop<=y)at=s}
+ t.textContent=at&&scrollY>idx.offsetTop?at.querySelector('h2').textContent.replace(/^\d+/,'').trim():'Neste guia';
+ const h=document.documentElement.scrollHeight-innerHeight;b.style.transform='scaleX('+(h>0?Math.min(1,scrollY/h):0)+')'};
+addEventListener('scroll',poe,{passive:true});addEventListener('resize',poe);poe()})();
+document.addEventListener('click',e=>{const y=e.target.closest('.yt');if(!y)return;const f=document.createElement('iframe');
+f.src='https://www.youtube-nocookie.com/embed/'+y.dataset.id+'?start='+y.dataset.t+'&autoplay=1&rel=0';f.title=y.getAttribute('aria-label');
+f.allow='autoplay; encrypted-media; picture-in-picture';f.allowFullscreen=true;y.replaceWith(f)});</script><!--/rodape-->
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "b37421bd1ade44f1a59e46b96626bf03"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

@@ -1,0 +1,44 @@
+{
+ "slug": "carcassonne",
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 1500,
+   "altura": 1500,
+   "editora": "Z-Man Games",
+   "credito": "Imagem: Z-Man Games",
+   "pagina": "https://www.zmangames.com/game/carcassonne/",
+   "imagem": "https://cdn.svc.asmodee.net/production-zman/uploads/image-converter/2024/08/ZM7810_box-right.webp",
+   "baixada_em": "2026-11-05",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/jogabilidade-1.webp",
+   "tipo": "jogabilidade",
+   "largura": 1200,
+   "altura": 800,
+   "editora": "Z-Man Games",
+   "credito": "Imagem: Z-Man Games",
+   "pagina": "https://www.zmangames.com/game/carcassonne/",
+   "imagem": "https://cdn.svc.asmodee.net/production-zman/uploads/2024/09/ZM7810_Carc_FB_02.png",
+   "baixada_em": "2026-11-05",
+   "aprovada": true,
+   "nota": "partida em andamento",
+   "render_3d": false,
+   "obs": "logo pequeno da Z-Man no canto inferior direito"
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 1200,
+   "altura": 900,
+   "editora": "Z-Man Games",
+   "credito": "Imagem: Z-Man Games",
+   "pagina": "https://www.zmangames.com/game/carcassonne/",
+   "imagem": "https://cdn.svc.asmodee.net/production-zman/uploads/image-converter/2024/08/Carcassonne-Contents-2.webp",
+   "baixada_em": "2026-11-05",
+   "aprovada": true
+  }
+ ]
+}
