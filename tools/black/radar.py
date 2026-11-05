@@ -459,6 +459,7 @@ def link_direto(url, loja, ofertas_jogo, nome=None, hoje_d=None, slug_cache=None
     return None
 
 
+CANAL_AFILIADO = re.compile(r"(?i)BG Turbo|Board Oferta|GameBox|Ludofertas")  # canais que postam com link de afiliado
 SEM_LINK = set()  # achados da comunidade sem página do produto na loja (o robô relê a página do jogo)
 
 
@@ -544,13 +545,22 @@ def achados_comunidade(hist, hoje, hoje_d=None):
             continue
         if not link_oferta(link):
             continue  # a auditoria de links abriu este link e ele não leva à página do produto
+        # a loja já voltou ao preço normal? (05/11/2026, Wyrmspan: post a R$ 464,92, Amazon a R$ 999,75 no Compara Jogos
+        # depois do post): leitura do Compara Jogos mais nova que o post, na mesma loja, 10% acima do postado → acabou
+        alvo_l = _norm_loja(loja)
+        if any(o.get("por") and o["por"] > por * 1.10 and str(o.get("atualizado") or "") > str(v.get("publicado") or "")
+               and alvo_l and (_norm_loja(o.get("loja")) == alvo_l)
+               for o in ((hoje_d or {}).get(slug) or {}).get("ofertas", [])):
+            continue
         saida.append({"slug": slug, "nome": nome, "tipo": tipo or "game", "editora": editora, "bgg": bgg, "imagem": img,
                       "loja": loja, "url": link,
                       "por": por, "de": v.get("preco_antes"),
                       "ref": ref, "desc": (ref - por) / ref, "menor": menor, "recorde": por <= menor, "dias": dias,
                       "fonte_preco": f'achado da comunidade ({(v.get("fonte") or "Promobit").removeprefix("Telegram: ")})',
                       "vendedor": None, "verificado": quando_br, "editora_br": None, "comunidade": True,
-                      "post": v.get("link"), "principal": bom})
+                      # canal que posta com link de afiliado: sem o botão "Ver o post original", para não levar
+                      # o leitor ao link de afiliado de outra pessoa (05/11/2026)
+                      "post": None if CANAL_AFILIADO.search(v.get("fonte") or "") else v.get("link"), "principal": bom})
     return saida
 
 
