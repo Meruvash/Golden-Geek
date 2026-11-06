@@ -2,7 +2,7 @@
  "mes": "2026-12",
  "label": "Dezembro de 2026",
  "titulo_previstos": "Previstos para dezembro",
- "total": 12,
+ "total": 13,
  "lancados": [
   {
    "id_jogo": 82854,
@@ -85,6 +85,27 @@
     "id": 3,
     "label": "Anunciado",
     "slug": "anunciado"
+   },
+   "comentarios": 0,
+   "url_topico": null,
+   "pode_criar_topico": true
+  },
+  {
+   "id_jogo": 89562,
+   "nome": "Coveiros vs Caveiras",
+   "url": "https://ludopedia.com.br/jogo/coveiros-vs-caveiras",
+   "capa": "https://storage.googleapis.com/ludopedia-capas/89562_t.jpg",
+   "fl_jogo_base": 1,
+   "fl_tipo": 1,
+   "editora": {
+    "id": 11679,
+    "nome": "Amaze Games",
+    "url": "https://ludopedia.com.br/editora/11679/Amaze Games"
+   },
+   "status": {
+    "id": 4,
+    "label": "Em Pré Venda",
+    "slug": "pre-venda"
    },
    "comentarios": 0,
    "url_topico": null,
