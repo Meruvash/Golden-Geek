@@ -10,7 +10,7 @@
   },
   "bravojogos.com.br": {
    "dia": "2026-11-06",
-   "paginas": 10
+   "paginas": 12
   },
   "brecholudico.com.br": {
    "dia": "2026-11-06",
@@ -126,7 +126,7 @@
   },
   "www.caixinhaboardgames.com.br": {
    "dia": "2026-11-06",
-   "paginas": 6
+   "paginas": 7
   },
   "www.caldeiraojogos.com.br": {
    "dia": "2026-11-06",
@@ -230,7 +230,7 @@
   },
   "www.odisseiajogos.com.br": {
    "dia": "2026-11-06",
-   "paginas": 2
+   "paginas": 3
   },
   "www.omniverse.com.br": {
    "dia": "2026-11-06",
@@ -258,7 +258,7 @@
   },
   "www.promobit.com.br": {
    "dia": "2026-11-06",
-   "paginas": 60
+   "paginas": 70
   },
   "www.reunionjogos.com.br": {
    "dia": "2026-11-06",
@@ -278,11 +278,11 @@
   },
   "www.tabuloja.com": {
    "dia": "2026-11-06",
-   "paginas": 9
+   "paginas": 10
   },
   "www.tavernareal.com": {
    "dia": "2026-11-06",
-   "paginas": 4
+   "paginas": 5
   },
   "www.tiogera.com.br": {
    "dia": "2026-11-06",
@@ -433,7 +433,7 @@
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-finca-p": {
    "cj": 139.41,
    "estoque": true,
-   "hora": "2026-11-05T19:06+00:00",
+   "hora": "2026-11-06T17:02+00:00",
    "preco": 149.9
   },
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-formula-pop-p": {
@@ -613,7 +613,7 @@
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/star-wars-rivals-s1-premier-set-edicao-em-ingles-p": {
    "cj": 74.31,
    "estoque": true,
-   "hora": "2026-11-05T20:51+00:00",
+   "hora": "2026-11-06T17:02+00:00",
    "preco": 79.9
   },
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/story-cubes-viagem": {
@@ -1033,7 +1033,7 @@
   "https://www.caixinhaboardgames.com.br/produtos/destemidos-norte-da-africa/?entry_path=category": {
    "cj": 152.52,
    "estoque": true,
-   "hora": "2026-11-06T16:42+00:00",
+   "hora": "2026-11-06T17:02+00:00",
    "preco": 164.0
   },
   "https://www.caixinhaboardgames.com.br/produtos/dobble-catan/": {
@@ -2278,6 +2278,12 @@
    "hora": "2026-11-06T16:45+00:00",
    "preco": 34.7
   },
+  "https://www.odisseiajogos.com.br/board-games/50-dinossauros": {
+   "cj": 28.4,
+   "estoque": true,
+   "hora": "2026-11-06T17:02+00:00",
+   "preco": 29.9
+  },
   "https://www.odisseiajogos.com.br/board-games/carcassonne-mensageiros-e-alcaides-nova-edicao-expansao-5": {
    "cj": 94.9,
    "estoque": true,
@@ -3319,7 +3325,7 @@
   "https://www.tavernareal.com/tabuleiro/night-parade-cursed-throne-expansao": {
    "cj": 69.29,
    "estoque": true,
-   "hora": "2026-11-06T16:44+00:00",
+   "hora": "2026-11-06T17:02+00:00",
    "preco": 76.99
   },
   "https://www.tavernareal.com/tabuleiro/sleeping-gods-dungeons-expansao": {
