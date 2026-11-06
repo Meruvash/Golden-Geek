@@ -2380,5 +2380,47 @@
    ],
    "verificado_em": "2026-11-06"
   }
+ },
+ "gamewright.com": {
+  "nome": "Gamewright",
+  "apelidos": [
+   "Gamewright"
+  ],
+  "site": "https://gamewright.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://gamewright.com/sitemap.xml"
+   ],
+   "verificado_em": "2026-11-06"
+  }
+ },
+ "zoch-verlag.com": {
+  "nome": "Zoch",
+  "apelidos": [
+   "Zoch"
+  ],
+  "site": "https://www.zoch-verlag.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://www.simba-dickie-group.com/en/press/",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.zoch-verlag.com/sitemaps/zoch.index.xml"
+   ],
+   "verificado_em": "2026-11-06"
+  }
  }
 }

@@ -1,0 +1,66 @@
+{
+ "slug": "pandemic",
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 1260,
+   "altura": 1260,
+   "editora": "Asmodee UK",
+   "credito": "Imagem: Asmodee UK",
+   "pagina": "https://www.asmodee.co.uk/products/zmg71100-pandemic",
+   "imagem": "https://cdn.shopify.com/s/files/1/0572/1076/5512/files/ZMG71100_1.jpg",
+   "baixada_em": "2026-11-06",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/mesa-1.webp",
+   "tipo": "mesa",
+   "largura": 1600,
+   "altura": 1600,
+   "editora": "Asmodee UK",
+   "credito": "Imagem: Asmodee UK",
+   "pagina": "https://www.asmodee.co.uk/products/zmg71100-pandemic",
+   "imagem": "https://cdn.shopify.com/s/files/1/0572/1076/5512/files/ZMG71100_2.jpg",
+   "baixada_em": "2026-11-06",
+   "aprovada": true,
+   "nota": "partida em andamento"
+  },
+  {
+   "arquivo": "fotos/jogabilidade-1.webp",
+   "tipo": "jogabilidade",
+   "largura": 1600,
+   "altura": 1600,
+   "editora": "Asmodee UK",
+   "credito": "Imagem: Asmodee UK",
+   "pagina": "https://www.asmodee.co.uk/products/zmg71100-pandemic",
+   "imagem": "https://cdn.shopify.com/s/files/1/0572/1076/5512/files/ZMG71100_3.jpg",
+   "baixada_em": "2026-11-06",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/jogabilidade-2.webp",
+   "tipo": "jogabilidade",
+   "largura": 1600,
+   "altura": 1600,
+   "editora": "Asmodee UK",
+   "credito": "Imagem: Asmodee UK",
+   "pagina": "https://www.asmodee.co.uk/products/zmg71100-pandemic",
+   "imagem": "https://cdn.shopify.com/s/files/1/0572/1076/5512/files/ZMG71100_4.jpg",
+   "baixada_em": "2026-11-06",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 1200,
+   "altura": 900,
+   "editora": "Z-Man Games",
+   "credito": "Imagem: Z-Man Games",
+   "pagina": "https://www.zmangames.com/game/pandemic/",
+   "imagem": "https://cdn.svc.asmodee.net/production-zman/uploads/image-converter/2024/08/Pandemic-Components-4.webp",
+   "baixada_em": "2026-11-06",
+   "aprovada": true
+  }
+ ]
+}
