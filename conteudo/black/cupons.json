@@ -1,8 +1,4 @@
 {
- "amazon.com.br": {
-  "cupons": {},
-  "loja": "Amazon"
- },
  "americanas.com.br": {
   "cupons": {
    "SONO10": {
@@ -13,7 +9,7 @@
     "texto": "Desconto de 10% em suas compras com o cupom Americanas 10% OFF em produtos Americanas VÁLIDO EM MÓVEIS, SOFÁS, CAMAS E COLCHÕES SELECIONADOS. SEM VALOR MÍNIMO DE COMPRA. SUJEITO À DISPONIBILIDADE",
     "validade": "2026-12-31T20:59:59-0300",
     "valor": "10% OFF",
-    "visto": "2026-11-05T20:46-03:00"
+    "visto": "2026-11-05T23:22-03:00"
    }
   },
   "loja": "Americanas"
@@ -25,7 +21,7 @@
  },
  "boardgames-hunters.lojaintegrada.com.br": {
   "cupons": {},
-  "lido": "2026-11-05T13:01-03:00",
+  "lido": "2026-11-05T23:21-03:00",
   "loja": "Boardgame Hunter"
  },
  "bravojogos.com.br": {
@@ -62,7 +58,7 @@
     "texto": "Cupom Casas Bahia oferece 10% de desconto em todo o site 10% OFF em produtos Casas Bahia CUPOM SEM RESTRIÇÕES, COMPRE E RETIRE EM ATÉ DUAS HORAS!",
     "validade": "2026-12-31T20:59:59-0300",
     "valor": "10% OFF",
-    "visto": "2026-11-05T20:46-03:00"
+    "visto": "2026-11-05T23:22-03:00"
    }
   },
   "loja": "Casas Bahia"
@@ -74,12 +70,12 @@
  },
  "itabuleiros.lojaintegrada.com.br": {
   "cupons": {},
-  "lido": "2026-11-05T13:01-03:00",
+  "lido": "2026-11-05T23:21-03:00",
   "loja": "ITABULEIROS"
  },
  "loja-ludocafe.lojaintegrada.com.br": {
   "cupons": {},
-  "lido": "2026-11-05T13:01-03:00",
+  "lido": "2026-11-05T23:21-03:00",
   "loja": "Loja LudoCafé"
  },
  "loja.frodosbg.com.br": {
@@ -202,7 +198,7 @@
  },
  "www.caixinhaboardgames.com.br": {
   "cupons": {},
-  "lido": "2026-11-05T10:17-03:00",
+  "lido": "2026-11-05T23:21-03:00",
   "loja": "Caixinha Boardgames"
  },
  "www.caldeiraojogos.com.br": {
