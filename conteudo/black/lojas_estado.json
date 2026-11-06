@@ -10,7 +10,7 @@
   },
   "bravojogos.com.br": {
    "dia": "2026-11-06",
-   "paginas": 15
+   "paginas": 16
   },
   "brecholudico.com.br": {
    "dia": "2026-11-06",
@@ -58,7 +58,7 @@
    "descanso_ate": "2026-11-05T22:05+00:00",
    "dia": "2026-11-06",
    "motivo": "robots.txt respondeu 429",
-   "paginas": 6
+   "paginas": 7
   },
   "modoaviaobg.com.br": {
    "dia": "2026-11-06",
@@ -126,7 +126,7 @@
   },
   "www.caixinhaboardgames.com.br": {
    "dia": "2026-11-06",
-   "paginas": 19
+   "paginas": 22
   },
   "www.caldeiraojogos.com.br": {
    "dia": "2026-11-06",
@@ -258,7 +258,7 @@
   },
   "www.promobit.com.br": {
    "dia": "2026-11-06",
-   "paginas": 80
+   "paginas": 90
   },
   "www.reunionjogos.com.br": {
    "dia": "2026-11-06",
@@ -278,7 +278,7 @@
   },
   "www.tabuloja.com": {
    "dia": "2026-11-06",
-   "paginas": 14
+   "paginas": 17
   },
   "www.tavernareal.com": {
    "dia": "2026-11-06",
@@ -292,7 +292,7 @@
    "descanso_ate": "2026-11-05T17:41+00:00",
    "dia": "2026-11-06",
    "motivo": "robots.txt respondeu 403",
-   "paginas": 6
+   "paginas": 9
   },
   "www.tschuss.com.br": {
    "dia": "2026-11-06",
@@ -493,7 +493,7 @@
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-o-laboratorio-de-dexter-a-grande-invencao-p": {
    "cj": 83.61,
    "estoque": true,
-   "hora": "2026-11-05T10:37+00:00",
+   "hora": "2026-11-06T23:28+00:00",
    "preco": 89.9
   },
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-patchwork-nova-edicao-p": {
@@ -1486,6 +1486,12 @@
    "hora": "2026-11-05T10:54+00:00",
    "preco": 65.0
   },
+  "https://www.caixinhaboardgames.com.br/produtos/quick-stop/?entry_path=category": {
+   "cj": 60.45,
+   "estoque": true,
+   "hora": "2026-11-06T23:28+00:00",
+   "preco": 65.0
+  },
   "https://www.caixinhaboardgames.com.br/produtos/quiferas/": {
    "cj": 32.55,
    "estoque": true,
@@ -1694,6 +1700,12 @@
    "cj": 20.46,
    "estoque": true,
    "hora": "2026-11-05T10:39+00:00",
+   "preco": 22.0
+  },
+  "https://www.caixinhaboardgames.com.br/produtos/uestop-turma-da-monica/?entry_path=category": {
+   "cj": 20.46,
+   "estoque": true,
+   "hora": "2026-11-06T23:28+00:00",
    "preco": 22.0
   },
   "https://www.caixinhaboardgames.com.br/produtos/warzoo-dicefire/": {
@@ -2773,7 +2785,7 @@
   "https://www.tabuloja.com/board-games/jogos-base/botanicus": {
    "cj": 206.1,
    "estoque": true,
-   "hora": "2026-11-05T10:04+00:00",
+   "hora": "2026-11-06T23:28+00:00",
    "preco": 229.0
   },
   "https://www.tabuloja.com/board-games/jogos-base/daitoshi": {
@@ -2931,6 +2943,12 @@
    "estoque": true,
    "hora": "2026-11-06T23:26+00:00",
    "preco": 74.0
+  },
+  "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/covenant": {
+   "cj": 296.1,
+   "estoque": false,
+   "hora": "2026-11-06T23:28+00:00",
+   "preco": 329.0
   },
   "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/cuco": {
    "cj": 35.1,
