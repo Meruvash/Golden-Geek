@@ -1,0 +1,29 @@
+{
+ "slug": "sushi-go",
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 1143,
+   "altura": 1600,
+   "editora": "Gamewright",
+   "credito": "Imagem: Gamewright",
+   "pagina": "https://gamewright.com/product/Sushi-Go",
+   "imagem": "https://gamewright.com/images/twenty/GAMEWRIGHT-249-front.jpg",
+   "baixada_em": "2026-11-06",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 1500,
+   "altura": 1201,
+   "editora": "Gamewright",
+   "credito": "Imagem: Gamewright",
+   "pagina": "https://gamewright.com/product/Sushi-Go",
+   "imagem": "https://gamewright.com/images/twenty/GAMEWRIGHT-249.jpg",
+   "baixada_em": "2026-11-06",
+   "aprovada": true
+  }
+ ]
+}
