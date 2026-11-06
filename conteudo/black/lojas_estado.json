@@ -10,7 +10,7 @@
   },
   "bravojogos.com.br": {
    "dia": "2026-11-06",
-   "paginas": 0
+   "paginas": 1
   },
   "brecholudico.com.br": {
    "dia": "2026-11-06",
@@ -258,7 +258,7 @@
   },
   "www.promobit.com.br": {
    "dia": "2026-11-06",
-   "paginas": 10
+   "paginas": 20
   },
   "www.reunionjogos.com.br": {
    "dia": "2026-11-06",
@@ -278,7 +278,7 @@
   },
   "www.tabuloja.com": {
    "dia": "2026-11-06",
-   "paginas": 1
+   "paginas": 2
   },
   "www.tavernareal.com": {
    "dia": "2026-11-06",
@@ -292,7 +292,7 @@
    "descanso_ate": "2026-11-05T17:41+00:00",
    "dia": "2026-11-06",
    "motivo": "robots.txt respondeu 403",
-   "paginas": 0
+   "paginas": 3
   },
   "www.tschuss.com.br": {
    "dia": "2026-11-06",
@@ -471,6 +471,12 @@
    "estoque": true,
    "hora": "2026-11-05T20:54+00:00",
    "preco": 139.9
+  },
+  "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-kokeshi-p": {
+   "cj": 92.91,
+   "estoque": true,
+   "hora": "2026-11-06T04:46+00:00",
+   "preco": 99.9
   },
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-kronologic-cuzco-1450-p": {
    "cj": 120.89,
