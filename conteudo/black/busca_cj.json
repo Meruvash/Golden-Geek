@@ -456,6 +456,7 @@
  "buro decisoes de merda jogo de cartas para amigos 5 30 jogadores": null,
  "buro fdp foi de proposito 2 expansao": null,
  "buro fdp foi de proposito 5 expansao": null,
+ "buro quempraque compartilhem um neuronio nesse jogo de sintonia 3 a 8 jogadores": null,
  "capstone games pagan fate of roanoke beyond the palisades expansion game jogo de cartas assimetrico witch vs hunter para 2 jogadores com exp": null,
  "carcassonne o dragao e a fada": {
   "bgg": 6.51697,
@@ -479,6 +480,7 @@
   "slug": "card-goblins-expansao-faroeste",
   "tipo": "expansion"
  },
+ "cargo empire deluxe edition": null,
  "carnival zombie": {
   "bgg": 7.03779,
   "editora": "Albe Pavo",
@@ -527,6 +529,7 @@
   "slug": "claim-edicao-limitada",
   "tipo": "game"
  },
+ "clank a deck building adventure master thief edition": null,
  "clank a deck building adventure master thief edition jogo de construcao de baralhos tema de aventura edicao master thief jogo de tabulei": null,
  "clank uma aventura de construcao de baralho": null,
  "coffee rush grab go": {
@@ -866,7 +869,19 @@
  "eclipse": null,
  "eclipse meeple br": null,
  "edicao essencial sem os recursos premium everdell silverfrost": null,
+ "efeito manada herd mentality 4 jogadores idade 10": null,
  "eleven international cup by portal games strategy board game": null,
+ "elfenroads": {
+  "bgg": 7.02599,
+  "editora": "Rio Grande Games",
+  "imagem": "https://uploads.comparajogos.com.br/img/dc8bbb8de31bd996ca346d4a1d68cf3c01840a33.jpg",
+  "menor": null,
+  "nome": "Elfenroads",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "elfenroads",
+  "tipo": "game"
+ },
  "enquadrados": {
   "bgg": 6.5,
   "editora": "Copag Cards",
@@ -1380,6 +1395,7 @@
   "slug": "innovation-artifacts-of-history",
   "tipo": "expansion"
  },
+ "into the machine": null,
  "invincible superhero roleplaying starter set": null,
  "jeopardy card game": {
   "bgg": 6.24455,
@@ -1392,6 +1408,7 @@
   "slug": "jeopardy-card-game",
   "tipo": "game"
  },
+ "jiangnan the art of influence": null,
  "jogo de cartas asmodee duplo risco 2 a 8 jogadores idade 8": {
   "bgg": 5.5249,
   "editora": "Galápagos Jogos",
@@ -1483,6 +1500,17 @@
   "ref": null,
   "ref_dias": 0,
   "slug": "know-thyself",
+  "tipo": "game"
+ },
+ "koi": {
+  "bgg": 7.72256,
+  "editora": "dV Giochi",
+  "imagem": "https://uploads.comparajogos.com.br/img/31354dda02ffc0b721d5a070142b0ed9f7d0a753.png",
+  "menor": null,
+  "nome": "Koi",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "koi",
   "tipo": "game"
  },
  "la habana card game": null,
@@ -2139,6 +2167,7 @@
   "slug": "pocket-paragons-acquisitions-incorporated",
   "tipo": "game"
  },
+ "posthuman resistence": null,
  "pot de vin": {
   "bgg": 6.20763,
   "editora": "Mandala Jogos",
@@ -2219,6 +2248,7 @@
  "rio grande games southern pacific train games strategy robber barons build invest in railroads dividends ages 12 3 5 players 30": null,
  "rio grande games space station phoenix rio grande games jogo de tabuleiro de estrategia idades 14 2 4 jogadores 90 120 minutos": null,
  "rio grande games wabash cannonball jogo de tabuleiro trem ferrovias do leste dos eua 14 anos ou mais 3 a 6 jogadores 30 60 minutos": null,
+ "rivet wars the board game expansion bundle nemoan breachers gunnar hammerson and terrain upgrade pack 3 items": null,
  "robinson crusoe adventures on the cursed island treasure chest": {
   "bgg": 8.10917,
   "editora": "Portal Games",
@@ -2336,6 +2366,7 @@
   "tipo": "expansion"
  },
  "shards of creation da brotherwise games idades 12 2 6 jogadores cosmere jogo de estrategia inspirado em brandon sanderson habilidades unic": null,
+ "shards of infinity saga": null,
  "sherlock holmes consulting detective the thames murders other cases board game mystery game for teens and adults ages 14 1 8 players av": null,
  "shock": null,
  "skull": {
@@ -2678,6 +2709,17 @@
   "ref": null,
   "ref_dias": 0,
   "slug": "the-guild-of-merchant-explorers",
+  "tipo": "game"
+ },
+ "the king is dead second edition": {
+  "bgg": 7.581,
+  "editora": "Osprey Games",
+  "imagem": "https://uploads.comparajogos.com.br/img/f50ee66abde80c3b1acd23617f894a477db38267.jpg",
+  "menor": null,
+  "nome": "The King Is Dead: Second Edition",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "the-king-is-dead-second-edition",
   "tipo": "game"
  },
  "the king s will": {
@@ -3024,6 +3066,7 @@
   "slug": "war-story-occupied-france",
   "tipo": "game"
  },
+ "wingspan asia jogo base para 2 jogadores": null,
  "wingspan europa expansao": null,
  "wingspan oceania expansao": null,
  "wispwood": {
