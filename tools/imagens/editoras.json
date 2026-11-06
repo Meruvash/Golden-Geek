@@ -2441,5 +2441,26 @@
    "sitemaps": [],
    "verificado_em": "2026-11-06"
   }
+ },
+ "blog.blueorangegames.com": {
+  "nome": "Blue Orange Games (blog)",
+  "apelidos": [
+   "Blue Orange Games (blog)"
+  ],
+  "site": "https://blog.blueorangegames.com",
+  "plataforma": "wordpress",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://blog.blueorangegames.com/sitemap_index.xml"
+   ],
+   "verificado_em": "2026-11-06"
+  }
  }
 }

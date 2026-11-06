@@ -1,0 +1,55 @@
+{
+ "slug": "kingdomino",
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 1024,
+   "altura": 768,
+   "editora": "Blue Orange",
+   "credito": "Imagem: Blue Orange",
+   "pagina": "https://blueorangegames.eu/fr/jeux/kingdomino/",
+   "imagem": "https://blueorangegames.eu/wp-content/uploads/2017/04/Kingdomino-Box.jpg",
+   "baixada_em": "2026-11-06",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/jogabilidade-1.webp",
+   "tipo": "jogabilidade",
+   "largura": 1600,
+   "altura": 1066,
+   "editora": "Blue Orange Games (blog)",
+   "credito": "Imagem: Blue Orange Games · nova edição (2025), mesmas regras",
+   "pagina": "https://blog.blueorangegames.com/tag/kingdomino/",
+   "imagem": "https://blog.blueorangegames.com/wp-content/uploads/2025/07/Kingdomino_Lifestyle-Board-Game.jpg",
+   "baixada_em": "2026-11-06",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/jogabilidade-2.webp",
+   "tipo": "jogabilidade",
+   "largura": 1600,
+   "altura": 900,
+   "editora": "Blue Orange Games (blog)",
+   "credito": "Imagem: Blue Orange Games · nova edição (2025), mesmas regras",
+   "pagina": "https://blog.blueorangegames.com/tag/kingdomino/",
+   "imagem": "https://blog.blueorangegames.com/wp-content/uploads/2025/07/Kingdomino-Lifestyle-2.jpg",
+   "baixada_em": "2026-11-06",
+   "aprovada": true,
+   "pessoas": true
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 800,
+   "altura": 800,
+   "editora": "Asmodee UK",
+   "credito": "Imagem: Asmodee UK · nova edição (2025), mesmas regras",
+   "pagina": "https://www.asmodee.co.uk/products/csgkingdomre-kingdomino-uk-refresh",
+   "imagem": "https://cdn.shopify.com/s/files/1/0572/1076/5512/files/CSGKINGDOMRE_2.jpg",
+   "baixada_em": "2026-11-06",
+   "aprovada": true,
+   "render_3d": true
+  }
+ ]
+}
