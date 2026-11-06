@@ -2354,5 +2354,31 @@
    ],
    "verificado_em": "2026-11-05"
   }
+ },
+ "americantabletopawards.com": {
+  "nome": "American Tabletop Awards",
+  "apelidos": [
+   "American Tabletop Awards"
+  ],
+  "site": "https://americantabletopawards.com",
+  "plataforma": "wordpress",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://americantabletopawards.com/press/",
+  "paginas": {
+   "hot-streak": "https://americantabletopawards.com/hot-streak/",
+   "thunder-road-vendetta": "https://americantabletopawards.com/thunder-road-vendetta/",
+   "planet-unknown": "https://americantabletopawards.com/planet-unknown/"
+  },
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://americantabletopawards.com/sitemap.xml",
+    "https://americantabletopawards.com/news-sitemap.xml"
+   ],
+   "verificado_em": "2026-11-06"
+  }
  }
 }

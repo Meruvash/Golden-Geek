@@ -1,0 +1,57 @@
+{
+ "slug": "planet-unknown",
+ "usar_na_pagina": true,
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 1600,
+   "altura": 1600,
+   "editora": "American Tabletop Awards",
+   "credito": "Imagem: American Tabletop Awards",
+   "pagina": "https://americantabletopawards.com/planet-unknown/",
+   "imagem": "https://americantabletopawards.com/wp-content/uploads/2023/04/planet-unknown-flat.jpeg",
+   "baixada_em": "2026-11-06",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/mesa-1.webp",
+   "tipo": "mesa",
+   "largura": 1600,
+   "altura": 1074,
+   "editora": "American Tabletop Awards",
+   "credito": "Imagem: American Tabletop Awards",
+   "pagina": "https://americantabletopawards.com/planet-unknown/",
+   "imagem": "https://americantabletopawards.com/wp-content/uploads/2023/04/dsc_6694.jpg",
+   "baixada_em": "2026-11-06",
+   "aprovada": true,
+   "principal": true
+  },
+  {
+   "arquivo": "fotos/mesa-2.webp",
+   "tipo": "mesa",
+   "largura": 1600,
+   "altura": 1074,
+   "editora": "American Tabletop Awards",
+   "credito": "Imagem: American Tabletop Awards",
+   "pagina": "https://americantabletopawards.com/planet-unknown/",
+   "imagem": "https://americantabletopawards.com/wp-content/uploads/2023/04/dsc_6693.jpg",
+   "baixada_em": "2026-11-06",
+   "aprovada": true,
+   "fora": true
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 1600,
+   "altura": 1074,
+   "editora": "American Tabletop Awards",
+   "credito": "Imagem: American Tabletop Awards",
+   "pagina": "https://americantabletopawards.com/planet-unknown/",
+   "imagem": "https://americantabletopawards.com/wp-content/uploads/2023/04/dsc_6699.jpg",
+   "baixada_em": "2026-11-06",
+   "aprovada": true,
+   "jogar": true
+  }
+ ]
+}

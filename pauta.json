@@ -2090,14 +2090,11 @@
      "fonte": "https://en.wikipedia.org/wiki/Spiel_des_Jahres"
     }
    ],
-   "status": "sem_fotos",
+   "status": "na_fila",
    "premios_distintos": 2,
    "prioridade": 96,
-   "fotos": {
-    "verificado_em": "2026-10-29",
-    "obs": "Adam's Apple Games (só caixas), Strohmann Games e Pegasus (página não encontrada); Galápagos bloqueia robôs"
-   },
-   "carro_chefe": false
+   "carro_chefe": false,
+   "slug": "planet-unknown"
   },
   {
    "jogo": "That’s Not a Hat",
@@ -2754,14 +2751,11 @@
      "fonte": "https://eliteboardgamers.com.br/"
     }
    ],
-   "status": "sem_fotos",
+   "status": "na_fila",
    "prioridade": 26,
    "premios_distintos": 1,
    "carro_chefe": true,
-   "fotos": {
-    "verificado_em": "2026-11-01",
-    "obs": "CMYK (só estúdio, crivo reprova topo), Asmodee Canada (mesmas fotos menores), Spiel des Jahres (só caixa), Strohmann Games (403), Korea Boardgames (sem página)"
-   }
+   "slug": "hot-streak"
   },
   {
    "jogo": "The Lord of the Rings: Duel for Middle-earth",
@@ -4076,14 +4070,11 @@
      "fonte": "https://eliteboardgamers.com.br/"
     }
    ],
-   "status": "sem_fotos",
+   "status": "na_fila",
    "prioridade": 43,
    "premios_distintos": 1,
    "carro_chefe": true,
-   "fotos": {
-    "verificado_em": "2026-11-02",
-    "obs": "Restoration Games: página do jogo, lojas Deluxe e Maximum Chrome (só renders), blog (Origins 2024, Origins 2025, Gen Con Blueprints, tag Thunder Road Vendetta): única foto de partida do jogo base tem rosto de frente; sem licenciada nem premiação com fotos"
-   }
+   "slug": "thunder-road-vendetta"
   },
   {
    "jogo": "Bubble Stories",

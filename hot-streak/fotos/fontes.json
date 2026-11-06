@@ -1,5 +1,6 @@
 {
  "slug": "hot-streak",
+ "usar_na_pagina": true,
  "fotos": [
   {
    "arquivo": "fotos/capa-1.webp",
@@ -14,6 +15,19 @@
    "aprovada": true
   },
   {
+   "arquivo": "fotos/mesa-1.webp",
+   "tipo": "mesa",
+   "largura": 1600,
+   "altura": 1074,
+   "editora": "American Tabletop Awards",
+   "credito": "Imagem: American Tabletop Awards",
+   "pagina": "https://americantabletopawards.com/hot-streak/",
+   "imagem": "https://americantabletopawards.com/wp-content/uploads/2026/04/hot-streak-1-jl.jpeg",
+   "baixada_em": "2026-11-06",
+   "aprovada": true,
+   "principal": true
+  },
+  {
    "arquivo": "fotos/jogabilidade-1.webp",
    "tipo": "jogabilidade",
    "largura": 1600,
@@ -23,7 +37,8 @@
    "pagina": "https://www.cmyk.games/products/hot-streak",
    "imagem": "https://cdn.shopify.com/s/files/1/0473/5562/5629/files/HS4751.jpg",
    "baixada_em": "2026-10-31",
-   "aprovada": true
+   "aprovada": true,
+   "fora": true
   },
   {
    "arquivo": "fotos/componentes-1.webp",
@@ -35,7 +50,8 @@
    "pagina": "https://www.cmyk.games/products/hot-streak",
    "imagem": "https://cdn.shopify.com/s/files/1/0473/5562/5629/files/HS4093.jpg",
    "baixada_em": "2026-10-31",
-   "aprovada": true
+   "aprovada": true,
+   "jogar": true
   }
  ]
 }
