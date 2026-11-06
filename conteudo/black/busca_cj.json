@@ -71,6 +71,7 @@
  "adicional ao fechar pedido sherlock files vol 4 fatal frontiers": null,
  "adicional ao fechar pedido steve jackson games munchkin farkle": null,
  "adicional ao fechar pedido steve jackson games random fun generator": null,
+ "adicional ao fechar pedido stonemaier games wingspan oceania expansion": null,
  "adicional ao fechar pedido stronghold games flamme rouge peloton expansion": null,
  "adicional ao fechar pedido stronghold games nations the dice game board games": null,
  "adicional ao fechar pedido suburbia expansions 2a edicao": null,
@@ -395,6 +396,17 @@
  "brass lancashire deluxe edition conclave editora": null,
  "brotherwise games boss monster 10th anniversary edition": null,
  "brotherwise games call to adventure the stormlight archive": null,
+ "buffy the vampire slayer the game": {
+  "bgg": 6.60106,
+  "editora": "Hasbro",
+  "imagem": "https://uploads.comparajogos.com.br/img/068b0952881c098b6d9c3b6311839b81137baf4c.jpg",
+  "menor": null,
+  "nome": "Buffy the Vampire Slayer: The Game",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "buffy-the-vampire-slayer-the-game",
+  "tipo": "game"
+ },
  "bugo mini expansao": null,
  "bullet": {
   "bgg": 7.927,
@@ -1961,6 +1973,17 @@
   "slug": "piratas",
   "tipo": "game"
  },
+ "pit": {
+  "bgg": 6.40379,
+  "editora": "Hasbro",
+  "imagem": "https://uploads.comparajogos.com.br/img/a493ea617f9f18ac8255b1cbf656e7f608563524.jpg",
+  "menor": null,
+  "nome": "Pit",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "pit",
+  "tipo": "game"
+ },
  "placegames a cada semana novos jogos adicionados liberado o 1 lote de jogos da black november da nossa loja parceira place games nosso": null,
  "placegames brass lancashire deluxe edition": null,
  "placegames em pre venda coffee rush inverno cupom gamebox7naplace": null,
@@ -2539,6 +2562,17 @@
   "ref_dias": 0,
   "slug": "the-red-dragon-inn-battle-for-greyport-pirates",
   "tipo": "expansion"
+ },
+ "the twilight saga new moon the movie board game": {
+  "bgg": 3.00612,
+  "editora": "Cardinal",
+  "imagem": "https://uploads.comparajogos.com.br/img/263404246bd063302f096890d1ed342998282fe5.jpg",
+  "menor": null,
+  "nome": "The Twilight Saga: New Moon – The Movie Board Game",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "the-twilight-saga-new-moon-the-movie-board-game",
+  "tipo": "game"
  },
  "this game is killer frozen horror": {
   "bgg": 7.17155,
