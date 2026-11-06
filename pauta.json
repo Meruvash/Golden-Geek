@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-11-05",
+ "atualizado_em": "2026-11-06",
  "regras": {
   "premios": [
    "Golden Geek",
@@ -333,6 +333,26 @@
    "jogo": "878: Vikings – Invasions of England",
    "url": "https://eliteboardgamers.com.br/878/",
    "data": "2026-11-05"
+  },
+  {
+   "jogo": "Hegemony: Lead Your Class to Victory",
+   "url": "https://eliteboardgamers.com.br/hegemony/",
+   "data": "2026-11-06"
+  },
+  {
+   "jogo": "Photosynthesis",
+   "url": "https://eliteboardgamers.com.br/photosynthesis/",
+   "data": "2026-11-06"
+  },
+  {
+   "jogo": "Dragomino",
+   "url": "https://eliteboardgamers.com.br/dragomino/",
+   "data": "2026-11-06"
+  },
+  {
+   "jogo": "Paleo",
+   "url": "https://eliteboardgamers.com.br/paleo/",
+   "data": "2026-11-06"
   }
  ],
  "jogos": [
@@ -2194,7 +2214,7 @@
      "fonte": "https://en.wikipedia.org/wiki/Spiel_des_Jahres"
     }
    ],
-   "status": "na_fila",
+   "status": "publicado",
    "premios_distintos": 2,
    "prioridade": 99,
    "carro_chefe": false,
@@ -2223,7 +2243,7 @@
      "fonte": "https://en.wikipedia.org/wiki/Spiel_des_Jahres"
     }
    ],
-   "status": "na_fila",
+   "status": "publicado",
    "premios_distintos": 2,
    "prioridade": 100,
    "carro_chefe": false,
@@ -2832,7 +2852,7 @@
      "categoria": "Jogo do Ano pesado",
      "colocacao": 1,
      "resultado": "vencedor",
-     "fonte": "https://eliteboardgamers.com.br/"
+     "fonte": "https://boardgamewire.com/index.php/2024/05/15/hegemony-lives-up-to-its-name-by-dominating-latest-golden-geek-awards/"
     },
     {
      "premio": "Golden Geek",
@@ -2840,7 +2860,7 @@
      "categoria": "Inovação",
      "colocacao": 1,
      "resultado": "vencedor",
-     "fonte": "https://eliteboardgamers.com.br/"
+     "fonte": "https://boardgamewire.com/index.php/2024/05/15/hegemony-lives-up-to-its-name-by-dominating-latest-golden-geek-awards/"
     },
     {
      "premio": "Golden Geek",
@@ -2848,10 +2868,10 @@
      "categoria": "Temático",
      "colocacao": 1,
      "resultado": "vencedor",
-     "fonte": "https://eliteboardgamers.com.br/"
+     "fonte": "https://boardgamewire.com/index.php/2024/05/15/hegemony-lives-up-to-its-name-by-dominating-latest-golden-geek-awards/"
     }
    ],
-   "status": "na_fila",
+   "status": "publicado",
    "prioridade": 23,
    "premios_distintos": 1,
    "carro_chefe": true,
@@ -4585,10 +4605,10 @@
      "categoria": "Arte",
      "colocacao": 1,
      "resultado": "vencedor",
-     "fonte": "https://eliteboardgamers.com.br/"
+     "fonte": "https://brettspielbox.de/12th-annual-golden-geek-awards-winners-2017/"
     }
    ],
-   "status": "na_fila",
+   "status": "publicado",
    "prioridade": 92,
    "premios_distintos": 1,
    "carro_chefe": false,

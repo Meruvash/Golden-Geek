@@ -1,0 +1,339 @@
+{
+ "slug": "paleo",
+ "jogo": "Paleo",
+ "cor": "#8a5a3b",
+ "kicker": "Resenha · Cooperativo de sobrevivência",
+ "og_titulo": "Paleo vale a pena? Resenha Elite Boardgamers",
+ "titulo_busca": "Paleo: resenha do cooperativo pré-histórico, Kennerspiel 2021",
+ "descricao": "Resenha de Paleo, Kennerspiel des Jahres 2021: cooperativo de cartas na Idade da Pedra, pintura do mamute, crânios, preço e edição da Devir.",
+ "titulo_html": "Sobreviver à Idade da Pedra é fácil; difícil é concordar sobre quem vai caçar: <span>Paleo</span>",
+ "lede": "Paleo é um jogo cooperativo de cartas de Peter Rustemeyer em que um grupo de humanos pré-históricos precisa caçar, coletar e fazer ferramentas para sobreviver até completar uma pintura de mamute na parede da caverna. Venceu o Kennerspiel des Jahres de 2021, à frente de Lost Ruins of Arnak, e saiu no Brasil pela Devir. A gente achou o cooperativo mais esperto da década. Também é o único em que o primeiro registro de arte da humanidade pode custar crânios, ferimentos e muita comida.",
+ "tags": [
+  "2–4 jogadores",
+  "45–60 min",
+  "10+",
+  "Cooperativo",
+  "Cartas"
+ ],
+ "alt": "Tabuleiro noturno de Paleo com crânios de papelão, cartas de pintura rupestre e fichas sobre a mesa, com mãos de jogadores ao fundo",
+ "premiacoes": [
+  {
+   "premio": "Kennerspiel des Jahres",
+   "ano": 2021,
+   "categoria": "Kennerspiel des Jahres",
+   "colocacao": 1,
+   "resultado": "vencedor",
+   "fonte": "https://www.spiel-des-jahres.de/spiel-des-jahres-und-kennerspiel-des-jahres-2021-stehen-fest/",
+   "rotulo": "Vencedor"
+  },
+  {
+   "premio": "As d'Or",
+   "ano": 2021,
+   "categoria": "Jeu de l’Année Expert",
+   "colocacao": null,
+   "resultado": "finalista",
+   "fonte": "https://fr.wikipedia.org/wiki/As_d%27Or",
+   "rotulo": "Finalista"
+  }
+ ],
+ "ficha": [
+  [
+   "Ano",
+   "2020; edição brasileira em 2022 (Devir)"
+  ],
+  [
+   "Designer",
+   "Peter Rustemeyer"
+  ],
+  [
+   "Arte",
+   "Dominik Mayer"
+  ],
+  [
+   "Editora original",
+   "Hans im Glück"
+  ],
+  [
+   "Editora no Brasil",
+   "Devir"
+  ],
+  [
+   "Jogadores",
+   "2 a 4 (Devir)"
+  ],
+  [
+   "Duração anunciada",
+   "60 minutos (Devir); 45 a 60 minutos (Tabletop Gaming)"
+  ],
+  [
+   "Duração relatada",
+   "a primeira partida de Dale Yu, num cenário fácil, durou seis rodadas (Opinionated Gamers)"
+  ],
+  [
+   "Idade",
+   "10+ (Devir)"
+  ],
+  [
+   "Nota ComparaJogos",
+   "7,7"
+  ],
+  [
+   "Nota BGG",
+   "não confirmado nas fontes consultadas"
+  ],
+  [
+   "Nota Ludopedia",
+   "não confirmado nas fontes consultadas"
+  ],
+  [
+   "Idioma",
+   "pouco texto, memorizável (ComparaJogos); edição nacional em português"
+  ],
+  [
+   "Componentes",
+   "222 cartas, 40 peças de madeira, 98 fichas, 3 tabuleiros, 1 peça de cemitério, 1 peça de oficina, 2 dados, 1 manual e 1 suplemento (Devir)"
+  ],
+  [
+   "Versão digital",
+   "a expansão A New Beginning aparece no Tabletopia; versão digital oficial do jogo base não confirmada nas fontes consultadas"
+  ],
+  [
+   "Prêmios",
+   "Kennerspiel des Jahres 2021 (indicados: Lost Ruins of Arnak e Fantasy Realms); finalista do As d'Or 2021 de jogo expert"
+  ]
+ ],
+ "nota_ficha": "Ludopedia e BoardGameGeek bloqueiam acesso automatizado: as notas dos dois ficaram sem confirmação; o mês de lançamento nacional vem da busca. Regras segundo as primeiras impressões de Dale Yu na Opinionated Gamers; componentes segundo a ficha da Devir. Consulta em 06/11/2026.",
+ "como_funciona": [
+  "Os jogadores formam uma tribo da Idade da Pedra e vencem juntos quando completam a pintura de mamute na parede da caverna, juntando as cinco fichas de vitória. Perdem juntos se a quinta ficha de crânio cair no tabuleiro da noite. Cada pessoa controla um pequeno grupo de humanos, as cartas de pessoa, com habilidades e espaço para ferimentos.",
+  "A caixa traz dez módulos de cartas. Cada partida junta as cartas básicas com módulos escolhidos, embaralha tudo e divide em pilhas, uma para cada jogador. As cartas têm verso diferente conforme o tipo, e esse verso é a única pista do que vem pela frente.",
+  "Cada rodada é um dia. Cada pessoa compra as três cartas do topo da sua pilha olhando só o verso, escolhe uma e devolve as outras duas por cima, na ordem que quiser. Todos revelam a carta escolhida ao mesmo tempo. Cada carta traz opções: coletar comida ou madeira, caçar, explorar, construir ferramentas, quase sempre exigindo certa habilidade ou um custo. O grupo discute, mas quem decide é o dono da carta. Também dá para ajudar outro jogador, emprestando as habilidades do seu grupo, ou ignorar a carta, menos as de perigo vermelhas.",
+  "O dia acaba quando todos dormem ou ficam sem cartas. À noite, cada humano precisa comer uma ficha de comida; quem fica sem comer põe um crânio no tabuleiro da noite. Depois, as missões abertas são resolvidas, e as cartas são embaralhadas e divididas de novo para o dia seguinte.",
+  "Ferimentos ocupam os corações de cada carta de pessoa; quando o espaço de crânio da carta é preenchido, aquela pessoa morre e vai para o cemitério. A partida segue até a pintura ficar pronta ou o quinto crânio aparecer."
+ ],
+ "passos": [
+  [
+   "ESCOLHA PELO VERSO",
+   "Compre três cartas da sua pilha olhando só o verso, escolha uma e devolva as outras duas por cima, na ordem que quiser."
+  ],
+  [
+   "REVELEM JUNTOS",
+   "Todos mostram a carta escolhida ao mesmo tempo; cada uma traz opções como caçar, coletar, explorar ou construir ferramentas."
+  ],
+  [
+   "DECIDA OU AJUDE",
+   "O grupo discute e o dono da carta decide; dá para ajudar outro jogador com suas habilidades ou ignorar a carta."
+  ],
+  [
+   "ALIMENTE A TRIBO",
+   "À noite, cada humano come uma ficha de comida; quem fica com fome põe um crânio no tabuleiro da noite."
+  ],
+  [
+   "PINTE O MAMUTE",
+   "Junte as cinco fichas de vitória para completar a pintura na caverna antes que o quinto crânio caia."
+  ]
+ ],
+ "como_resumo": "Escolha cartas pelo verso, revele junto, alimente a tribo e pinte o mamute antes do quinto crânio.",
+ "perfil": [
+  [
+   "Cooperação de verdade",
+   5
+  ],
+  [
+   "Tensão por rodada",
+   4
+  ],
+  [
+   "Variedade entre partidas",
+   5
+  ],
+  [
+   "Facilidade de ensinar",
+   3
+  ],
+  [
+   "Partida curta",
+   4
+  ],
+  [
+   "Clareza do manual",
+   2
+  ]
+ ],
+ "experiencia": [
+  "Todo cooperativo tem aquele jogador que joga por todo mundo. Paleo deu um jeito nele. Cada pessoa tem a própria pilha e escolhe a carta olhando só o verso, então ninguém sabe o que o outro vai revelar até a carta virar. Para Dale Yu, da Opinionated Gamers, cada um ter a sua pilha impede que alguém comande a mesa sozinho, e a escolha pelo verso cria uma expectativa constante.",
+  "Um turno típico: você vê três versos, um de floresta, um de montanha e um vermelho de perigo. Escolhe a floresta, esperando madeira. Revela: é um urso. A caçada pede uma ferramenta e uma habilidade que o seu grupo não tem. Aí a sua parceira, que virou uma carta de coleta tranquila, desiste dela para ajudar você. O urso vira comida para a noite. O terceiro jogador, que revelou o perigo vermelho, não pode ignorá-lo e sai do dia com um ferimento.",
+  "A Tabletop Gaming chama a revelação simultânea de parte esperta do jogo. A gente chama de reunião de família com fome, frio e um urso, só que mais organizada."
+ ],
+ "citacao": {
+  "texto": "Quem diria que uma luta sombria pela sobrevivência poderia ser tão divertida?",
+  "fonte": "Tabletop Gaming (tradução livre)"
+ },
+ "funciona": [
+  [
+   "Fim do jogador mandão",
+   "Cada pessoa tem a própria pilha e escolhe pelo verso, sem ver a carta. Dale Yu, da Opinionated Gamers, diz que esse desenho resiste ao jogador que tenta comandar todo mundo, mal comum dos cooperativos. A conversa continua livre, mas cada decisão final é do dono da carta, e isso devolve o jogo a cada pessoa da mesa."
+  ],
+  [
+   "A revelação que muda o plano",
+   "Todos mostram a carta ao mesmo tempo, e só então o grupo descobre se o dia vai ter caça, tempestade ou um urso. A Tabletop Gaming chama isso de parte esperta e elogia o foco em discussão e decisões coletivas. Dale Yu acrescenta que, de tanto olhar descartes e versos, o grupo começa a calcular as chances."
+  ],
+  [
+   "Dez módulos, várias partidas",
+   "A caixa traz dez módulos de cartas, e cada combinação tem desafios e segredos próprios, segundo a Tabletop Gaming. O júri do Spiel des Jahres diz que a variedade de eventos mantém a curiosidade por várias partidas. É um cooperativo que não acaba depois do primeiro cenário vencido."
+  ],
+  [
+   "Tema que vira história",
+   "Fome à noite, ferimento no braço, crânio no tabuleiro: o júri do Spiel des Jahres elogia as histórias e imagens dinâmicas que o jogo cria na cabeça de quem joga, e a lição de que o grupo só é forte junto. A Tabletop Gaming elogia a arte e as peças de papelão em três dimensões."
+  ],
+  [
+   "Kennerspiel merecido",
+   "Paleo venceu o Kennerspiel des Jahres de 2021 à frente de Lost Ruins of Arnak e Fantasy Realms, segundo o Spiel des Jahres. Dale Yu se disse muito impressionado com o sistema e achou o jogo fácil de aprender depois que a partida começa. A Tabletop Gaming fecha a crítica recomendando o jogo."
+  ]
+ ],
+ "atencao": [
+  [
+   "Moderada",
+   "Esgotado nas lojas",
+   "Em 06/11/2026, a Devir não mostrava preço na página do jogo, e Taverna Real e Ioiô de Pano marcavam o jogo como indisponível. No ComparaJogos, as ofertas novas eram de marketplace, a R$ 649,99 e R$ 749,99, e havia um usado a R$ 400. A tribo sobrevive ao urso; o estoque não sobreviveu."
+  ],
+  [
+   "Moderada",
+   "Manual que esconde o caminho",
+   "A Coopgestalt critica o manual: a lista de componentes é uma tira na primeira página, o resumo dos ícones fica no meio do livro e a oficina tem pouca orientação de montagem. Dale Yu achou confusas a preparação e as instruções das cartas de missão, e notou que o manual dá um passo de preparação na ordem errada."
+  ],
+  [
+   "Moderada",
+   "Solo não oficial",
+   "Segundo a Coopgestalt, Paleo não tem regras oficiais para uma pessoa. A solução do crítico é controlar duas tribos, como numa partida a dois; jogar com uma só foi, nas palavras dele, miserável. A Devir anuncia de 2 a 4 jogadores. Quem procura um cooperativo para jogar sozinho deve contar com o improviso."
+  ],
+  [
+   "Leve",
+   "A caixa não convence",
+   "A Coopgestalt conta que teve dificuldade para convencer outras pessoas a experimentar o jogo num evento, talvez pelo tema ou pela arte da capa. É o tipo de problema que some depois da primeira partida, mas que existe antes dela: um cooperativo sobre fome pré-histórica não vende sozinho na estante."
+  ],
+  [
+   "Leve",
+   "A oficina não volta para a caixa",
+   "A peça da oficina montada em três dimensões é bonita na mesa, mas a Coopgestalt diz que ela é difícil de guardar e tem pouca orientação de montagem. Junte isso a dez módulos de cartas separados por verso, e a arrumação do fim da noite vira uma pequena missão extra."
+  ]
+ ],
+ "jogadores": [
+  [
+   "2 jogadores",
+   "Funciona, com cada pessoa controlando um grupo; é também a base da adaptação solo da Coopgestalt.",
+   2
+  ],
+  [
+   "3 jogadores",
+   "A contagem que Dale Yu recomenda para a primeira partida: mais ajuda entre grupos sem alongar a discussão.",
+   3
+  ],
+  [
+   "4 jogadores",
+   "Mais habilidades na mesa e mais conversa para cada decisão. A duração anunciada continua de 45 a 60 minutos.",
+   2
+  ],
+  [
+   "1 jogador",
+   "Sem regra oficial, segundo a Coopgestalt; dá para controlar duas tribos, como numa partida a dois.",
+   1
+  ]
+ ],
+ "primeira_partida": "Comece por um cenário fácil e, como sugere Dale Yu, com três grupos na mesa. O que confunde é a preparação: separe as cartas de missão antes de embaralhar, porque o manual põe esse passo na ordem errada, segundo a Opinionated Gamers. Dica prática: antes de cada escolha, comente em voz alta o verso das três cartas da sua pilha. Ninguém vê a carta, mas todo mundo pode planejar quem vai precisar de ajuda.",
+ "edicao_nacional": "A Devir lançou Paleo no Brasil em 2022, em português. Em 06/11/2026, a página da Devir não mostrava preço, e Taverna Real e Ioiô de Pano marcavam o jogo como indisponível. No ComparaJogos, as únicas ofertas novas eram de marketplace, a R$ 649,99 no Mercado Livre e R$ 749,99 na Amazon, e a Pittas Board Games tinha um usado a R$ 400 (R$ 372 no Pix).",
+ "preco_ref": {
+  "faixa": "R$ 649,99 a R$ 749,99",
+  "data": "06/11/2026",
+  "obs": "só ofertas novas em marketplace; lojas especializadas sem estoque; usado a R$ 400"
+ },
+ "versoes": "A primeira expansão, Paleo: A New Beginning, anunciada em 2021, acrescenta agricultura e domesticação e aparece no Tabletopia. Existe ainda a mini-expansão The Terror Birds, sem edição nacional segundo a Ludopedia, e a versão infantil Paleolino, citada pelo Spiel des Jahres. Edição nacional de A New Beginning não foi confirmada nas fontes consultadas.",
+ "comparacoes": [
+  [
+   "Lost Ruins of Arnak",
+   "arnak",
+   "Disputou o mesmo Kennerspiel de 2021 e perdeu para Paleo. Também é exploração com cartas, mas competitiva, com construção de baralho e trabalhadores no tabuleiro."
+  ],
+  [
+   "The Crew",
+   "the-crew",
+   "Outro cooperativo de cartas em que a informação escondida é o desafio. The Crew limita a conversa; Paleo deixa todo mundo falar, mas esconde a carta até a revelação."
+  ]
+ ],
+ "para_quem": [
+  "Gosta de cooperativo sem um jogador mandando nos outros",
+  "Joga em grupo fixo de três ou quatro pessoas",
+  "Curte cenários diferentes a cada partida",
+  "Aceita perder para um urso e tentar de novo",
+  "Topa ler o manual com calma antes de abrir as cartas"
+ ],
+ "nao_e_para": [
+  "Procura um cooperativo para jogar sozinho",
+  "Odeia manual confuso e preparação com pegadinha",
+  "Prefere vencer os amigos a sobreviver com eles",
+  "Só compra jogo novo em loja especializada"
+ ],
+ "selo": "Recomendado com ressalva",
+ "ressalva": "esgotado nas lojas especializadas",
+ "melhor_para": "cooperativo",
+ "veredito": "Paleo resolveu o maior defeito dos cooperativos com uma ideia de criança: ninguém vê a carta do outro antes da hora. Cada um escolhe pelo verso, todos revelam juntos e o grupo descobre ao mesmo tempo se o dia é de caça, tempestade ou urso. O Kennerspiel de 2021 foi para o jogo certo, à frente de Arnak. O que pesa: o manual atrapalha a primeira preparação, não há solo oficial e, em 06/11/2026, as lojas especializadas consultadas estavam sem estoque, com ofertas novas só em marketplace, de R$ 649,99 a R$ 749,99. Achou um usado perto de R$ 400? Leve. A pintura do mamute não se faz sozinha.",
+ "tagline": "Dez módulos, cinco crânios e uma pintura de mamute que custa caro para terminar.",
+ "consulta": "06/11/2026",
+ "fontes": [
+  [
+   "Spiel des Jahres – Spiel des Jahres und Kennerspiel des Jahres 2021 stehen fest",
+   "https://www.spiel-des-jahres.de/spiel-des-jahres-und-kennerspiel-des-jahres-2021-stehen-fest/",
+   "prêmio, indicados, opinião do júri"
+  ],
+  [
+   "Wikipedia – As d'Or",
+   "https://fr.wikipedia.org/wiki/As_d%27Or",
+   "finalistas do As d'Or 2021"
+  ],
+  [
+   "Opinionated Gamers – Dale Yu: First Impressions of Paleo",
+   "https://opinionatedgamers.com/2020/10/23/dale-yu-first-impressions-of-paleo-spoiler-free/",
+   "regras, crítica, preparação, duração"
+  ],
+  [
+   "Tabletop Gaming – Paleo Review",
+   "https://www.tabletopgaming.co.uk/?p=7352",
+   "crítica, componentes, duração, citação"
+  ],
+  [
+   "Coopgestalt – A Review of Paleo, Part I",
+   "https://coopgestalt.com/2021/07/26/a-review-of-paleo-part-i-unboxing-solo-rules-and-initial-impressions/",
+   "solo, manual, oficina"
+  ],
+  [
+   "Devir – Paleo",
+   "https://www.devir.com.br/paleo",
+   "ficha nacional, componentes, idade, jogadores"
+  ],
+  [
+   "ComparaJogos – Paleo",
+   "https://www.comparajogos.com.br/item/paleo",
+   "preços, nota, idioma"
+  ],
+  [
+   "Taverna Real – Paleo",
+   "https://www.tavernareal.com/tabuleiro/paleo",
+   "estoque"
+  ],
+  [
+   "Ioiô de Pano – Paleo",
+   "https://www.ioiodepano.com.br/paleo-jogo-de-tabuleiro-devir",
+   "estoque"
+  ],
+  [
+   "Tabletopia – Paleo: A New Beginning",
+   "https://tabletopia.com/news/paleo-a-new-beginning",
+   "expansão"
+  ],
+  [
+   "Ludopedia – Paleo",
+   "https://ludopedia.com.br/jogo/paleo",
+   "lançamento nacional e expansões (via busca)"
+  ]
+ ],
+ "legenda": "O cooperativo que resolveu o problema do jogador mandão: ninguém vê a sua carta antes da hora. 🦣\n\nPaleo venceu o Kennerspiel des Jahres de 2021, à frente de Lost Ruins of Arnak.\nCada um escolhe a carta pelo verso, todos revelam juntos e a tribo precisa comer, caçar e pintar o mamute antes do quinto crânio.\nVeredito: RECOMENDADO COM RESSALVA. Edição da Devir em português; em 06/11/2026, só em marketplace, de R$ 649,99 a R$ 749,99.\n\nNa caverna, você caça o urso ou vai coletar frutinha? 👇\nResenha completa no link da bio.\n\n#Paleo #JogosDeTabuleiro #BoardGames #JogoCooperativo #CoopGames #KennerspielDesJahres #Devir #Boardgamer #JogosDeCartas #EliteBoardgamers"
+}

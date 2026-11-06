@@ -36,42 +36,6 @@
   "imagem": "https://eliteboardgamers.com.br/noticias/capas/acelera-bruxa-fecha-financiamento-meeplestarter.jpg"
  },
  {
-  "id": "r-brass-birmingham",
-  "tema": "resenhas",
-  "hora": "2026-11-04T02:06:53Z",
-  "titulo": "⭐ Resenha: Brass: Birmingham",
-  "texto": "O número 1 do mundo é um mercado em que cada favor que você pega vira lucro do concorrente.",
-  "url": "https://eliteboardgamers.com.br/brass-birmingham/",
-  "imagem": "https://eliteboardgamers.com.br/brass-birmingham/capa.jpg"
- },
- {
-  "id": "r-wavelength",
-  "tema": "resenhas",
-  "hora": "2026-11-04T02:06:53Z",
-  "titulo": "⭐ Resenha: Sintonia",
-  "texto": "Acertar vale 4 pontos. Errar vale a noite.",
-  "url": "https://eliteboardgamers.com.br/wavelength/",
-  "imagem": "https://eliteboardgamers.com.br/wavelength/capa.jpg"
- },
- {
-  "id": "r-werewords",
-  "tema": "resenhas",
-  "hora": "2026-11-04T02:06:53Z",
-  "titulo": "⭐ Resenha: Werewords",
-  "texto": "Saber a resposta é fácil. Difícil é saber e fingir que não sabe.",
-  "url": "https://eliteboardgamers.com.br/werewords/",
-  "imagem": "https://eliteboardgamers.com.br/werewords/capa.jpg"
- },
- {
-  "id": "r-flamecraft",
-  "tema": "resenhas",
-  "hora": "2026-11-04T02:06:53Z",
-  "titulo": "⭐ Resenha: Flamecraft",
-  "texto": "Ninguém compra bolo de padaria esperando surpresa. Compra porque é bom toda vez.",
-  "url": "https://eliteboardgamers.com.br/flamecraft/",
-  "imagem": "https://eliteboardgamers.com.br/flamecraft/capa.jpg"
- },
- {
   "id": "r-mechs-vs-minions",
   "tema": "resenhas",
   "hora": "2026-11-04T02:06:53Z",
@@ -358,5 +322,41 @@
   "texto": "O Japão exporta sucesso de caixinha há anos, de Love Letter a Ito, e mesmo assim a Arclight diz que falta gente para negociar licença lá fora. Ou seja: o gargalo nunca…",
   "url": "https://eliteboardgamers.com.br/noticias/japao-j-tan-arclight-forma-criadores-de-jogos/",
   "imagem": "https://eliteboardgamers.com.br/noticias/capas/57964.jpg"
+ },
+ {
+  "id": "r-hegemony",
+  "tema": "resenhas",
+  "hora": "2026-11-06T11:12:25Z",
+  "titulo": "⭐ Resenha: Hegemony: Lead Your Class to Victory",
+  "texto": "Quatro classes, sete leis, um saco de cubos e um sábado inteiro para decidir quem paga a conta.",
+  "url": "https://eliteboardgamers.com.br/hegemony/",
+  "imagem": "https://eliteboardgamers.com.br/hegemony/capa.jpg"
+ },
+ {
+  "id": "r-photosynthesis",
+  "tema": "resenhas",
+  "hora": "2026-11-06T11:12:44Z",
+  "titulo": "⭐ Resenha: Photosynthesis",
+  "texto": "Um sol que gira, quatro espécies de árvore e nenhuma vontade de dividir a luz.",
+  "url": "https://eliteboardgamers.com.br/photosynthesis/",
+  "imagem": "https://eliteboardgamers.com.br/photosynthesis/capa.jpg"
+ },
+ {
+  "id": "r-dragomino",
+  "tema": "resenhas",
+  "hora": "2026-11-06T11:13:03Z",
+  "titulo": "⭐ Resenha: Dragomino",
+  "texto": "Dominós de paisagem, 69 ovos e uma Mamãe Dragão que decide quem começa.",
+  "url": "https://eliteboardgamers.com.br/dragomino/",
+  "imagem": "https://eliteboardgamers.com.br/dragomino/capa.jpg"
+ },
+ {
+  "id": "r-paleo",
+  "tema": "resenhas",
+  "hora": "2026-11-06T11:13:22Z",
+  "titulo": "⭐ Resenha: Paleo",
+  "texto": "Dez módulos, cinco crânios e uma pintura de mamute que custa caro para terminar.",
+  "url": "https://eliteboardgamers.com.br/paleo/",
+  "imagem": "https://eliteboardgamers.com.br/paleo/capa.jpg"
  }
 ]

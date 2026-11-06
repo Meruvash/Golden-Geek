@@ -1,0 +1,319 @@
+{
+ "slug": "dragomino",
+ "jogo": "Dragomino",
+ "cor": "#d9822b",
+ "kicker": "Resenha · Jogo infantil de dominó",
+ "og_titulo": "Dragomino vale a pena? Resenha Elite Boardgamers",
+ "titulo_busca": "Dragomino: resenha do Kingdomino infantil com ovos de dragão",
+ "descricao": "Resenha de Dragomino, Kinderspiel des Jahres 2021: dominós de paisagem, ovos de dragão, partidas de 15 minutos, preço e edição da PaperGames.",
+ "titulo_html": "O Kingdomino que tirou a matemática e deixou a sorte de chocar dragão: <span>Dragomino</span>",
+ "lede": "Dragomino é a versão infantil de Kingdomino, de Bruno Cathala e Marie e Wilfried Fort: as crianças encaixam dominós de paisagem e, a cada combinação, viram um ovo que pode ter um filhote de dragão ou só a casca. Venceu o Kinderspiel des Jahres e o As d'Or infantil de 2021 e sai no Brasil pela PaperGames. A gente achou o jogo de 15 minutos mais justo da casa. A criança de cinco anos ganha do adulto, e não é porque o adulto deixou.",
+ "tags": [
+  "2–4 jogadores",
+  "15 min",
+  "5+",
+  "Infantil",
+  "Encaixe de peças"
+ ],
+ "alt": "Dominós de paisagem de Dragomino com neve, deserto e vulcão sobre a mesa, ao lado de pilhas de fichas de ovo, fichas de dragões ilustrados e a peça rosa da Mamãe Dragão",
+ "premiacoes": [
+  {
+   "premio": "Kinderspiel des Jahres",
+   "ano": 2021,
+   "categoria": "Kinderspiel des Jahres",
+   "colocacao": 1,
+   "resultado": "vencedor",
+   "fonte": "https://www.spiel-des-jahres.de/en/dragomino-is-kinderspiel-des-jahres-2021/",
+   "rotulo": "Vencedor"
+  },
+  {
+   "premio": "As d'Or",
+   "ano": 2021,
+   "categoria": "Jeu de l’Année Enfant",
+   "colocacao": 1,
+   "resultado": "vencedor",
+   "fonte": "https://fr.wikipedia.org/wiki/As_d%27Or",
+   "rotulo": "Vencedor"
+  }
+ ],
+ "ficha": [
+  [
+   "Ano",
+   "2020; edição brasileira em 2022 (PaperGames)"
+  ],
+  [
+   "Designers",
+   "Bruno Cathala, Marie Fort e Wilfried Fort"
+  ],
+  [
+   "Editora original",
+   "Blue Orange"
+  ],
+  [
+   "Editora no Brasil",
+   "PaperGames"
+  ],
+  [
+   "Jogadores",
+   "2 a 4"
+  ],
+  [
+   "Duração anunciada",
+   "cerca de 15 minutos (Spiel des Jahres)"
+  ],
+  [
+   "Duração relatada",
+   "15 a 20 minutos, segundo a AV Club; 15 minutos, segundo a Casual Game Revolution"
+  ],
+  [
+   "Idade",
+   "5+ (Spiel des Jahres); a AV Club diz que funciona a partir dos 4"
+  ],
+  [
+   "Nota ComparaJogos",
+   "7,0"
+  ],
+  [
+   "Nota BGG",
+   "não confirmado nas fontes consultadas"
+  ],
+  [
+   "Nota Ludopedia",
+   "não confirmado nas fontes consultadas"
+  ],
+  [
+   "Idioma",
+   "sem dependência de idioma (ComparaJogos)"
+  ],
+  [
+   "Componentes",
+   "4 dominós iniciais, 28 dominós de exploração, 69 fichas de ovo, 1 peça de Mamãe Dragão e manual (Paladins Games)"
+  ],
+  [
+   "Versão digital",
+   "não confirmada nas fontes consultadas"
+  ],
+  [
+   "Prêmios",
+   "Kinderspiel des Jahres 2021 (indicados: Fabelwelten e Mia London); As d'Or 2021 de jogo infantil"
+  ]
+ ],
+ "nota_ficha": "Ludopedia e BoardGameGeek bloqueiam acesso automatizado: as notas dos dois ficaram sem confirmação. Regras segundo a Casual Game Revolution e a página do Spiel des Jahres; componentes segundo a ficha da Paladins Games. Consulta em 06/11/2026.",
+ "como_funciona": [
+  "Cada criança é uma exploradora numa ilha de dragões e quer achar o maior número de filhotes. Todo mundo começa com um dominó inicial na frente de si. Cada dominó tem duas metades de paisagem, e são seis tipos de terreno, como neve, deserto e vulcão.",
+  "A cada rodada, quatro dominós são revelados no centro da mesa. Quem está com a Mamãe Dragão joga primeiro, e a ordem segue no sentido horário. Na sua vez, você pega um dos dominós do centro e o encaixa na sua área, encostando pelo menos uma das metades num terreno igual que já está lá.",
+  "Cada vez que duas metades do mesmo terreno se encostam, você pega uma ficha de ovo daquele terreno, vira e coloca sobre a junção. O ovo pode ter um filhote de dragão, que vale 1 ponto, ou só a casca, que não vale nada. Cada terreno tem sete dragões, mas a quantidade de cascas muda de um terreno para outro, então alguns ovos são mais arriscados. Num mesmo turno dá para chocar vários ovos.",
+  "Quem tira uma casca pega a Mamãe Dragão. Ela define quem joga primeiro na rodada seguinte e, no fim, vale 1 ponto extra para quem estiver com ela. Os dominós que sobram no centro são descartados, e quatro novos são revelados.",
+  "A partida acaba quando os dominós terminam. Cada um conta os filhotes, soma a Mamãe Dragão, se tiver, e vence quem tiver mais pontos."
+ ],
+ "passos": [
+  [
+   "REVELE QUATRO DOMINÓS",
+   "Quatro dominós de paisagem vão para o centro da mesa; quem está com a Mamãe Dragão começa a escolher."
+  ],
+  [
+   "ENCAIXE A PAISAGEM",
+   "Pegue um dominó e encaixe na sua área, encostando pelo menos uma metade num terreno igual que já está lá."
+  ],
+  [
+   "CHOQUE UM OVO",
+   "Para cada junção de terrenos iguais, pegue um ovo daquele terreno e vire: filhote de dragão vale 1 ponto, casca vale zero."
+  ],
+  [
+   "GANHE A MAMÃE DRAGÃO",
+   "Tirou casca? Pegue a Mamãe Dragão: ela decide quem começa a próxima rodada e vale 1 ponto no fim."
+  ],
+  [
+   "CONTE OS FILHOTES",
+   "Quando os dominós acabam, cada um soma os dragões e a Mamãe Dragão; vence quem tiver mais pontos."
+  ]
+ ],
+ "como_resumo": "Encaixe paisagens iguais, choque ovos de dragão e torça para não sair só casca.",
+ "perfil": [
+  [
+   "Facilidade de ensinar",
+   5
+  ],
+  [
+   "Partida curta",
+   5
+  ],
+  [
+   "Sorte",
+   4
+  ],
+  [
+   "Componentes e arte",
+   5
+  ],
+  [
+   "Decisão para adultos",
+   1
+  ],
+  [
+   "Autonomia da criança",
+   5
+  ]
+ ],
+ "experiencia": [
+  "Kingdomino tem conta de pontos, grade de cinco por cinco e a frase \"não, filho, esse não multiplica\". Dragomino jogou tudo isso fora. Sobrou o gesto de encaixar a paisagem certa e o suspense de virar o ovo. Para a AV Club, o jogo funciona com crianças a partir de quatro anos, porque a habilidade principal é combinar cores, e não há texto nenhum.",
+  "Um turno típico: sua filha tem um vulcão aberto e outro de neve. No centro há um dominó de vulcão com deserto e outro de neve com neve. Ela olha para você, você olha para ela, e ela pega o de neve porque cabe nas duas pontas: dois ovos. Vira o primeiro, dragão. Vira o segundo, casca. A Mamãe Dragão vai para a mão dela, que agora decide quem começa. Você perdeu a rodada e o controle da mesa.",
+  "A partida dura uns 15 minutos, e a Casual Game Revolution diz que esse tamanho equilibra a sorte dos ovos. Por isso, antes de alguém se frustrar, já tem outra partida montada."
+ ],
+ "citacao": {
+  "texto": "As crianças se sentem confiantes para jogar depois de uma única partida.",
+  "fonte": "Júri do Spiel des Jahres (tradução livre)"
+ },
+ "funciona": [
+  [
+   "Kingdomino sem a parte chata",
+   "A AV Club diz que o jogo reimagina Kingdomino para crianças, mantendo o encaixe de terrenos e descartando o conceito mais difícil, e chama Dragomino de modelo para quem adapta jogos para família. O júri do Spiel des Jahres foi na mesma linha e destacou o jeito impressionante de transformar um jogo de família num jogo infantil."
+  ],
+  [
+   "A sorte que nivela a mesa",
+   "Como o ovo pode ser dragão ou casca, quem calcula melhor nem sempre ganha. Para a AV Club, essa sorte ajuda a igualar adultos e crianças menores. É uma das raras partidas em que o adulto pode jogar a sério, sem fingir distração, e ainda perder para uma criança de cinco anos por dois ovos."
+  ],
+  [
+   "Escolha que a criança entende",
+   "Cada terreno tem sete dragões e um número diferente de cascas, segundo a Casual Game Revolution, então alguns ovos são mais arriscados. A Casual Game Revolution aponta que isso traz tensão para a escolha do dominó. A criança aprende a perguntar qual terreno compensa sem que ninguém precise falar a palavra probabilidade."
+  ],
+  [
+   "Dragões com personalidade",
+   "A Board Game Quest elogia os dragões em poses e estilos diferentes, cada um com a sua pequena personalidade, e a Casual Game Revolution destaca os dominós grossos e brilhantes. Na prática, metade da graça da partida é a criança anunciando qual dragão saiu e por que ele é o melhor da pilha."
+  ],
+  [
+   "Quinze minutos e acabou",
+   "A Board Game Quest e o Spiel des Jahres falam em cerca de 15 minutos, com regras simples e jogo rápido. É tempo suficiente para uma partida antes do jantar e curto o bastante para a revanche acontecer antes de alguém perder a paciência. O júri diz que uma partida basta para a criança jogar sozinha."
+  ]
+ ],
+ "atencao": [
+  [
+   "Moderada",
+   "Adulto sozinho não volta",
+   "A Casual Game Revolution diz que é definitivamente um jogo infantil e que adultos dificilmente vão jogar sem as crianças. A AV Club lembra que a única estratégia é escolher o terreno com mais chance de dragão. Quem procura desafio para a noite de adultos deve ir direto para o Kingdomino."
+  ],
+  [
+   "Moderada",
+   "A Mamãe Dragão embaralha a ordem",
+   "A peça que muda quem começa a rodada pode confundir as crianças menores, segundo a Casual Game Revolution e a Board Game Quest. A Board Game Quest sugere até tirá-la nas primeiras partidas e diz que ela funciona pior a dois. É a única regra do jogo que pede um adulto de árbitro."
+  ],
+  [
+   "Leve",
+   "Dois verdes que parecem um",
+   "A Board Game Quest aponta que os dois tipos de terreno verde podem confundir crianças pequenas, e o crítico preferia outra cor para um deles. Num jogo cuja regra inteira é combinar cor com cor, é um tropeço bobo: fique de olho nas primeiras rodadas."
+  ],
+  [
+   "Leve",
+   "Sorte manda no placar",
+   "Dá para fazer tudo certo e virar só casca. A AV Club trata isso como qualidade, porque nivela a mesa, e a Casual Game Revolution diz que a partida curta compensa a sorte. Ainda assim, criança que odeia perder por azar vai perder por azar, e na frente de todo mundo."
+  ],
+  [
+   "Leve",
+   "Preço que varia muito",
+   "Em 06/11/2026, o ComparaJogos mostrava o jogo novo de R$ 149,90 a R$ 222,99, dependendo da loja e do anúncio. Uma diferença de mais de R$ 70 por uma caixa de 15 minutos: compare antes de comprar."
+  ]
+ ],
+ "jogadores": [
+  [
+   "2 jogadores",
+   "Funciona e é rápido, mas a Board Game Quest acha que a Mamãe Dragão rende menos a dois.",
+   2
+  ],
+  [
+   "3 jogadores",
+   "Boa contagem para uma família pequena: mais disputa pelos dominós do centro e a Mamãe Dragão mudando de mão.",
+   2
+  ],
+  [
+   "4 jogadores",
+   "A mesa cheia de crianças e adultos é para onde o jogo foi pensado, e a partida continua em uns 15 minutos.",
+   3
+  ]
+ ],
+ "primeira_partida": "A explicação cabe em cinco minutos e o júri do Spiel des Jahres diz que uma partida basta para a criança jogar sozinha. O que confunde é a Mamãe Dragão mudando a ordem: nas primeiras partidas, a Board Game Quest sugere deixá-la de fora. Dica prática: separe as fichas de ovo por terreno antes de começar e mostre às crianças os dois verdes lado a lado, para ninguém encaixar um verde no outro.",
+ "edicao_nacional": "A PaperGames publica Dragomino no Brasil desde 2022, e o jogo não depende de idioma. Em 06/11/2026, o ComparaJogos listava ofertas novas de R$ 149,90, na Amazon, a R$ 222,99, num anúncio de marketplace da edição 2026; Leão Livros e PlayEasy cobravam R$ 164,90 e a Paladins Games, R$ 189,90 (R$ 176,61 no Pix). É fácil de achar.",
+ "preco_ref": {
+  "faixa": "R$ 149,90 a R$ 222,99",
+  "data": "06/11/2026",
+  "obs": "várias lojas com o jogo novo; preço mais baixo na Amazon, segundo o ComparaJogos"
+ },
+ "versoes": "Dragomino é a versão infantil de Kingdomino, Spiel des Jahres de 2017, segundo o Spiel des Jahres; o Kingdomino é o próximo passo natural, com escolha de peças mais tática. Expansões e versão digital oficial de Dragomino não foram confirmadas nas fontes consultadas até 06/11/2026.",
+ "comparacoes": [
+  [
+   "Kingdomino",
+   null,
+   "É o jogo de família de onde Dragomino saiu, Spiel des Jahres de 2017. O mesmo encaixe de terrenos, com escolha de peças mais tática e contagem de pontos, para quando a criança pedir mais."
+  ],
+  [
+   "Dorfromantik: The Board Game",
+   "dorfromantik-the-board-game",
+   "Também é encaixar paisagens iguais, só que cooperativo e para crianças maiores e adultos. Quando Dragomino ficar fácil demais, a família pode montar o mesmo mapa junta."
+  ],
+  [
+   "Cascadia",
+   "cascadia",
+   "Natureza, encaixe de peças e animais, numa partida de família para quem já lê e conta pontos. É o passo seguinte para quem gostou de combinar terrenos."
+  ]
+ ],
+ "para_quem": [
+  "Tem crianças a partir de cinco anos em casa",
+  "Precisa de uma partida de 15 minutos antes do jantar",
+  "Quer que a criança jogue sem ajuda já na segunda partida",
+  "Gosta de dragões, ovos e suspense de virar ficha",
+  "Pretende levar a família ao Kingdomino depois"
+ ],
+ "nao_e_para": [
+  "Busca jogo para uma noite só de adultos",
+  "Tem criança que chora quando perde por azar",
+  "Já joga Kingdomino em casa com crianças maiores",
+  "Espera decisões difíceis a cada turno"
+ ],
+ "selo": "Recomendado",
+ "melhor_para": "entrada",
+ "veredito": "Dragomino é a prova de que dá para tirar quase tudo de um jogo premiado e ele ficar melhor para quem importa. Saiu a conta de pontos do Kingdomino, entrou um ovo que pode ser dragão ou casca, e o resultado venceu o Kinderspiel des Jahres de 2021. Regras de cinco minutos, partida de 15 e sorte suficiente para uma criança de cinco anos ganhar de verdade. O que pesa: adulto não joga sozinho, a Mamãe Dragão confunde os menores e os dois verdes parecem um. Por R$ 149,90 a R$ 189,90 em loja, é o primeiro jogo de tabuleiro certo para a estante infantil. O adulto perde, e ainda agradece.",
+ "tagline": "Dominós de paisagem, 69 ovos e uma Mamãe Dragão que decide quem começa.",
+ "consulta": "06/11/2026",
+ "fontes": [
+  [
+   "Spiel des Jahres – Dragomino is Kinderspiel des Jahres 2021",
+   "https://www.spiel-des-jahres.de/en/dragomino-is-kinderspiel-des-jahres-2021/",
+   "prêmio, indicados, opinião do júri, citação"
+  ],
+  [
+   "Spiel des Jahres – Dragomino",
+   "https://www.spiel-des-jahres.de/en/games/dragomino/",
+   "jogadores, idade, duração, editoras"
+  ],
+  [
+   "Wikipedia – As d'Or",
+   "https://fr.wikipedia.org/wiki/As_d%27Or",
+   "As d'Or 2021"
+  ],
+  [
+   "Casual Game Revolution – Dragomino review",
+   "https://casualgamerevolution.com/node/2568",
+   "regras, crítica, duração"
+  ],
+  [
+   "AV Club – Dragomino review",
+   "https://www.avclub.com/dragomino-review",
+   "crítica, idade, sorte"
+  ],
+  [
+   "Board Game Quest – Dragomino Review",
+   "https://boardgamequest.com/dragomino-review",
+   "crítica, Mamãe Dragão, terrenos verdes"
+  ],
+  [
+   "ComparaJogos – Dragomino",
+   "https://www.comparajogos.com.br/item/dragomino",
+   "editora nacional, preços, nota, idioma"
+  ],
+  [
+   "Paladins Games – Dragomino",
+   "https://paladinsgames.com.br/dragomino",
+   "componentes, preço, idade"
+  ]
+ ],
+ "legenda": "O jogo em que a criança de cinco anos ganha de você. E não é porque você deixou. 🐉\n\nDragomino venceu o Kinderspiel des Jahres de 2021: é o Kingdomino sem a conta de pontos.\nEncaixe paisagens iguais, vire o ovo e torça: pode sair um filhote de dragão ou só a casca. Partida de 15 minutos.\nVeredito: RECOMENDADO. Edição da PaperGames, sem texto; em 06/11/2026, de R$ 149,90 a R$ 222,99.\n\nNa sua casa, quem ganha mais: as crianças ou os adultos? 👇\nResenha completa no link da bio.\n\n#Dragomino #JogosDeTabuleiro #BoardGames #JogosInfantis #KidsGames #KinderspielDesJahres #PaperGames #JogosEmFamilia #FamilyGames #EliteBoardgamers"
+}
