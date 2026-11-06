@@ -2422,5 +2422,24 @@
    ],
    "verificado_em": "2026-11-06"
   }
+ },
+ "blueorangegames.com": {
+  "nome": "Blue Orange Games",
+  "apelidos": [
+   "Blue Orange Games"
+  ],
+  "site": "https://blueorangegames.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://blueorangegames.com/about-us/awards-and-press?see=awards",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [],
+   "verificado_em": "2026-11-06"
+  }
  }
 }
