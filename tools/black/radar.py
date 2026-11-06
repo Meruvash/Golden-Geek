@@ -285,7 +285,10 @@ def coletar(slugs, registrar_lista=False, limite=None):
         h = hist.setdefault(s, {"pontos": {}})
         h.update({k: it[k] for k in ("nome", "tipo", "ano", "bgg", "bgg_id", "editora", "editora_br", "imagem")})
         h["principal"] = ok
-        h["pontos"].update({d: p for d, p in it["hist30"].items()})
+        # o Compara Jogos fecha o dia em UTC: depois das 21h de Brasília o histórico dele já traz o dia seguinte com o
+        # preço de agora. Esse ponto "do futuro" contava a promoção duas vezes na média e derrubava ofertas da página
+        # toda noite (erro achado em 06/11/2026); só entram dias até hoje no horário de Brasília
+        h["pontos"].update({d: p for d, p in it["hist30"].items() if d <= hoje})
         # ponto de hoje: menor preço de jogo novo entre as lojas, como o histórico do próprio Compara Jogos
         lojas = [o["por"] for o in it["ofertas"] if o["por"] and o["tipo"] == "LINK" and not FORA.search(o["loja"] + o["loja_id"])]
         if lojas:
@@ -529,7 +532,7 @@ def achados_comunidade(hist, hoje, hoje_d=None):
             continue
         h = hist.get(v.get("jogo") or "")
         if h and h.get("pontos"):
-            janela = {d: p for d, p in h["pontos"].items() if d >= (hoje - dt.timedelta(days=JANELA)).isoformat()}
+            janela = {d: p for d, p in h["pontos"].items() if (hoje - dt.timedelta(days=JANELA)).isoformat() <= d <= hoje.isoformat()}
             if not janela:
                 continue
             slug, nome, tipo, editora, bgg, img = v["jogo"], h["nome"], h.get("tipo"), h.get("editora"), h.get("bgg"), h.get("imagem")
@@ -579,7 +582,7 @@ def calcular():
         of = hoje_d.get(s)
         if not of:
             continue
-        janela = {d: p for d, p in h["pontos"].items() if d >= (hoje - dt.timedelta(days=JANELA)).isoformat()}
+        janela = {d: p for d, p in h["pontos"].items() if (hoje - dt.timedelta(days=JANELA)).isoformat() <= d <= hoje.isoformat()}
         if not janela:
             continue
         dias = (hoje - dt.date.fromisoformat(min(janela))).days + 1
