@@ -1,21 +1,5 @@
 [
  {
-  "id": "009bc2d4861a5e7f",
-  "hora": "2026-11-04T22:39:27+00:00",
-  "titulo": "−30% Revanche",
-  "texto": "R$ 39,90 na Mercado Livre, 30% abaixo da média real de R$ 56,99.",
-  "url": "https://www.mercadolivre.com.br/p/MLB38492802",
-  "imagem": "https://uploads.comparajogos.com.br/img/e6364bbf6e390a4ca71ff0466a91a2c129f19ccb.png"
- },
- {
-  "id": "c67ccea73ee8948a",
-  "hora": "2026-11-04T22:39:27+00:00",
-  "titulo": "−29% UNO Flip!",
-  "texto": "R$ 44,90 na Mercado Livre, 29% abaixo da média real de R$ 63,20. Em Outras promoções (nota BGG abaixo de 7).",
-  "url": "https://www.mercadolivre.com.br/p/MLB16092602",
-  "imagem": "https://uploads.comparajogos.com.br/img/8bbb9f0b1b59d0475ac16e4b5bc281204c25009f.jpg"
- },
- {
   "id": "a3c7c4d0f5ef06b5",
   "hora": "2026-11-04T22:39:28+00:00",
   "titulo": "+11 promoções novas no Black de Verdade",
@@ -238,5 +222,21 @@
   "texto": "R$ 100,00 na Caixinha Boardgames, 21% abaixo da média real de R$ 126,31. Em Outras promoções (nota BGG abaixo de 7).",
   "url": "https://www.caixinhaboardgames.com.br/produtos/warzoo-dicefire/?entry_path=category",
   "imagem": "https://uploads.comparajogos.com.br/img/511cc64b69b1ed566fe1ac70f521da6197d35d52.jpg"
+ },
+ {
+  "id": "dff7919421cc6f48",
+  "hora": "2026-11-06T23:30:37+00:00",
+  "titulo": "−24% HITSTER",
+  "texto": "R$ 116,81 na Mercado Livre, 24% abaixo da média real de R$ 153,80. Menor preço do período. Achado da comunidade, vendedor não conferido.",
+  "url": "https://www.mercadolivre.com.br/p/MLB61316731",
+  "imagem": "https://uploads.comparajogos.com.br/img/ccae8197d017d65ddb9b3ce9bdd91a332685cc0b.png"
+ },
+ {
+  "id": "504dc9aa1cd3dca1",
+  "hora": "2026-11-06T23:30:37+00:00",
+  "titulo": "−21% CATAN",
+  "texto": "R$ 213,12 na Mercado Livre, 21% abaixo da média real de R$ 270,11. Menor preço do período. Achado da comunidade, vendedor não conferido.",
+  "url": "https://www.mercadolivre.com.br/p/MLB19050659",
+  "imagem": "https://uploads.comparajogos.com.br/img/b575f8ce592189b2decf02a86684300ee47c1790.jpg"
  }
 ]

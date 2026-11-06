@@ -272,6 +272,10 @@
   "magalu": "https://www.magazineluiza.com.br/jogo-imagine-galapagos-121-pecas/p/240284300/br/bjdt/",
   "paladinsgames": "http://paladinsgames.com.br/produto/489430/imagine"
  },
+ "insuspeitos": {
+  "_hora": "2026-11-06T20:30-03:00",
+  "amazon": "https://www.amazon.com.br/dp/B0BN31V686"
+ },
  "jekyll-vs-hyde": {
   "_hora": "2026-11-05T14:39-03:00",
   "alquimistasdosjogos": "https://www.alquimistasdosjogos.com.br/jogos/jekyll-vs-hyde",
@@ -305,6 +309,15 @@
   "cangaiajogos": "https://www.cangaiajogos.com.br/loot",
   "mercadolivre": "https://www.mercadolivre.com.br/p/MLB70044214",
   "tabuloja": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/loot"
+ },
+ "luz": {
+  "_hora": "2026-11-06T20:30-03:00",
+  "alquimistasdosjogos": "https://www.alquimistasdosjogos.com.br/jogos/luz",
+  "bravojogos": "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-luz-p",
+  "cangaiajogos": "https://www.cangaiajogos.com.br/luz",
+  "placegames": "https://www.placegames.com.br/boardgames/luz",
+  "tabuloja": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/luz",
+  "tavernareal": "https://www.tavernareal.com/tabuleiro/luz"
  },
  "magic-the-gathering": {
   "_hora": "2026-11-05T23:23-03:00",

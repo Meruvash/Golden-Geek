@@ -39,10 +39,12 @@
  },
  "acima de r 249 limitado": null,
  "acima de r 79 limitado a r 100 cupom descontos": null,
+ "acima de r 99 limitado": null,
  "acima de r limitado": null,
  "adicional ao fechar pedido aeon s end into the wild cooperative sci fi fantasy strategy deck building board game for 1 to 4 players ages": null,
  "adicional ao fechar pedido aeons end the descent": null,
  "adicional ao fechar pedido aeons end the new age": null,
+ "adicional ao fechar pedido android netrunner lcg terminal directive": null,
  "adicional ao fechar pedido arcane wonders ar terra e mar critters at war laranja": null,
  "adicional ao fechar pedido arcane wonders dice manor board game 2 to 4 players 14": null,
  "adicional ao fechar pedido arcane wonders mentiras e suprimentos para espioes aereos e marinhos": null,
@@ -644,6 +646,17 @@
   "tipo": "game"
  },
  "cupons 15 de desconto em compras acima de r 249 limite": null,
+ "cursed court": {
+  "bgg": 7.13204,
+  "editora": "Atlas Games",
+  "imagem": "https://uploads.comparajogos.com.br/img/03b1365c8198304d86e52fcc3d993784f53ca3f3.png",
+  "menor": null,
+  "nome": "Cursed Court",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "cursed-court",
+  "tipo": "game"
+ },
  "dairyman dice": null,
  "dark souls the board game explorers expansion": {
   "bgg": 7.56105,
@@ -870,6 +883,7 @@
  "eclipse meeple br": null,
  "edicao essencial sem os recursos premium everdell silverfrost": null,
  "efeito manada herd mentality 4 jogadores idade 10": null,
+ "elden ring the board game realm of the grafted king kickstarter edition": null,
  "eleven international cup by portal games strategy board game": null,
  "elfenroads": {
   "bgg": 7.02599,
@@ -880,6 +894,17 @@
   "ref": null,
   "ref_dias": 0,
   "slug": "elfenroads",
+  "tipo": "game"
+ },
+ "end of the line": {
+  "bgg": 6.81472,
+  "editora": "Fight in a Box",
+  "imagem": "https://uploads.comparajogos.com.br/img/7f331d045e197b6367d278c5c1d1fa1aa3d699db.jpg",
+  "menor": null,
+  "nome": "End of the Line",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "end-of-the-line",
   "tipo": "game"
  },
  "enquadrados": {
@@ -1111,6 +1136,7 @@
  "galapagos true crime 2 jogadores": null,
  "galapagos wandinha ataque do hyde jogo para familia a parti de 10 anos partidas de ate 20 min": null,
  "galapagos zombicide 2a edicao jogo de tabuleiro cooperativo 1 6 jogadores 30 60min": null,
+ "geeks vs trolls caixa base": null,
  "gentes": {
   "bgg": 6.65767,
   "editora": "Game Brewer",
@@ -2746,6 +2772,17 @@
   "slug": "the-night-cage-shrieking-hollow",
   "tipo": "expansion"
  },
+ "the red dragon inn 7 the tavern crew": {
+  "bgg": 7.88688,
+  "editora": "SlugFest Games",
+  "imagem": "https://uploads.comparajogos.com.br/img/95e1db829f7c44087cf28aaacf1224c727ddffeb.jpg",
+  "menor": null,
+  "nome": "The Red Dragon Inn 7: The Tavern Crew",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "the-red-dragon-inn-7-the-tavern-crew",
+  "tipo": "game"
+ },
  "the red dragon inn battle for greyport pirates": {
   "bgg": 7.85357,
   "editora": "SlugFest Games",
@@ -3031,6 +3068,17 @@
   "ref_dias": 6,
   "slug": "vossa-excelencia-expansao-nova-era",
   "tipo": "expansion"
+ },
+ "vs system 2pcg aew": {
+  "bgg": 6.8,
+  "editora": "Upper Deck Entertainment",
+  "imagem": "https://uploads.comparajogos.com.br/img/5c75bdd24755d9e28537e16fe44f19241167a32d.png",
+  "menor": null,
+  "nome": "Vs. System 2PCG: AEW",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "vs-system-2pcg-aew",
+  "tipo": "game"
  },
  "vudu quadrinhos vs mangas": {
   "bgg": 6.75,
