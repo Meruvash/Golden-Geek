@@ -53,6 +53,7 @@
  "adicional ao fechar pedido board and dice nucleum board game ages 14 1 4 players 60 150 minutes playing time": null,
  "adicional ao fechar pedido cmon dune war for arrakis jogo de tabuleiro miniaturas idades 14 1 4 jogadores tempo de jogo de 120 minutos": null,
  "adicional ao fechar pedido deadly dinner red carpet in ruins english edition": null,
+ "adicional ao fechar pedido fantasy flight games ffgahb01 arkham horror terceira edicao": null,
  "adicional ao fechar pedido indie boards and cards aeon s end outcasts": null,
  "adicional ao fechar pedido indie boards and cards the resistance the plot thickens game": null,
  "adicional ao fechar pedido intent to kill deluxe upgrade by 25th century games ages 14 2 4 players": null,
@@ -219,6 +220,17 @@
   "slug": "azul",
   "tipo": "game"
  },
+ "bandida": {
+  "bgg": 6.47423,
+  "editora": "Helvetiq",
+  "imagem": "https://uploads.comparajogos.com.br/img/bbfc5ba11ea320ad0a8dcf690e9246d189a23fd0.png",
+  "menor": 49.19,
+  "nome": "Bandida",
+  "ref": 49.45,
+  "ref_dias": 32,
+  "slug": "bandida",
+  "tipo": "game"
+ },
  "bandido": {
   "bgg": 6.40422,
   "editora": "PaperGames",
@@ -254,6 +266,17 @@
   "tipo": "expansion"
  },
  "bardsung the lost levels a board game expansion by steamforged games": null,
+ "basta": {
+  "bgg": 5.52703,
+  "editora": "F.X. Schmid",
+  "imagem": "https://uploads.comparajogos.com.br/img/a0e0a2a0de115f3c12e0afa7796c1b780da20167.jpg",
+  "menor": 49.02,
+  "nome": "Basta!",
+  "ref": 53.67,
+  "ref_dias": 9,
+  "slug": "basta",
+  "tipo": "game"
+ },
  "beach bandits": {
   "bgg": 7.11364,
   "editora": "Happy Camper",
@@ -661,6 +684,17 @@
   "slug": "dc-deck-building-game-crossover-collection-1",
   "tipo": "expansion"
  },
+ "deckscape behind the curtain": {
+  "bgg": 6.84983,
+  "editora": "dV Giochi",
+  "imagem": "https://uploads.comparajogos.com.br/img/8eda4686cc58a19628aca49d99bdfe63b3c4e52a.jpg",
+  "menor": null,
+  "nome": "Deckscape: Behind the Curtain",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "deckscape-behind-the-curtain",
+  "tipo": "game"
+ },
  "destaques cupom brinqu3dos15 resgate na pagina do produto robinson crusoe edicao de colecionador": null,
  "detective city of angels": {
   "bgg": 7.87157,
@@ -719,6 +753,17 @@
   "tipo": "game"
  },
  "digit cod": null,
+ "disney the haunted mansion call of the spirits game": {
+  "bgg": 6.95342,
+  "editora": "Funko Games",
+  "imagem": "https://uploads.comparajogos.com.br/img/3a55106a239b4f75ae64defe7d55f4aa854a0efd.png",
+  "menor": null,
+  "nome": "Disney: The Haunted Mansion – Call of the Spirits Game",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "disney-the-haunted-mansion-call-of-the-spirits-game",
+  "tipo": "game"
+ },
  "dixit": {
   "bgg": 7.06968,
   "editora": "Galápagos Jogos",
@@ -2009,6 +2054,17 @@
   "ref": null,
   "ref_dias": 0,
   "slug": "pocket-paragons-acquisitions-incorporated",
+  "tipo": "game"
+ },
+ "pot de vin": {
+  "bgg": 6.20763,
+  "editora": "Mandala Jogos",
+  "imagem": "https://uploads.comparajogos.com.br/img/9c482b7145bfc498ec93e9f04ca4839e34d0d601.jpg",
+  "menor": null,
+  "nome": "Pot de Vin",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "pot-de-vin",
   "tipo": "game"
  },
  "prey another day": {
