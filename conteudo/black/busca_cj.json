@@ -171,6 +171,7 @@
  "asmodee 7 wonders expansao": null,
  "asmodee bananagrams de palavras cruzadas jogo para 1 a 8 jogadores": null,
  "asmodee dixit signature viloes expansao jogo de tabuleiro idade 8 3 a 12 jogadores 30 minutos por partida": null,
+ "asmodee dnup jogo de cartas estrategico 2 a 5 jogadores idade 8": null,
  "asmodee dobble dinossauros jogo de cartas 2 a 8 jogadores a partir de 6 anos partidas de ate 15 min": null,
  "asmodee dobble disney princess jogo de cartas para familia 2 a 8 jogadores idade 4 partidas de ate 15 minutos": null,
  "asmodee dobble harry potter jogo de cartas 2 a 8 jogadores idade 6 partidas de 15 min": null,
@@ -627,6 +628,17 @@
   "slug": "coup-a-reforma",
   "tipo": "expansion"
  },
+ "cryptozoology for beginners": {
+  "bgg": 6.39946,
+  "editora": "Cryptozoic Entertainment",
+  "imagem": "https://uploads.comparajogos.com.br/img/325414972024ac610cd01a2fb62637ce1587c4e2.jpg",
+  "menor": null,
+  "nome": "Cryptozoology for Beginners",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "cryptozoology-for-beginners",
+  "tipo": "game"
+ },
  "cubo das emocoes": {
   "bgg": null,
   "editora": "(Independente)",
@@ -872,6 +884,17 @@
   "slug": "dungeons-dragons-attack-wing-bronze-dragon-expansion-pack",
   "tipo": "expansion"
  },
+ "dungeons dragons attack wing gargoyle expansion pack": {
+  "bgg": 7.11905,
+  "editora": "WizKids",
+  "imagem": "https://uploads.comparajogos.com.br/img/179216f5d4c01a759e7d31fb6b5caa05a333d3b8.jpg",
+  "menor": null,
+  "nome": "Dungeons & Dragons: Attack Wing – Gargoyle Expansion Pack",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "dungeons-dragons-attack-wing-gargoyle-expansion-pack",
+  "tipo": "expansion"
+ },
  "dungeons dragons descida ao avernus": {
   "bgg": 6.86667,
   "editora": null,
@@ -1075,6 +1098,17 @@
   "ref": 200.0,
   "ref_dias": 32,
   "slug": "finca",
+  "tipo": "game"
+ },
+ "finspan": {
+  "bgg": 7.68071,
+  "editora": "Grok Games",
+  "imagem": "https://uploads.comparajogos.com.br/img/5cb2d6c7c509bb16ccc0bc19e4dff4b36aa38900.jpg",
+  "menor": 258.54,
+  "nome": "Finspan",
+  "ref": 258.54,
+  "ref_dias": 32,
+  "slug": "finspan",
   "tipo": "game"
  },
  "first to worst the party game about how your friends and family rank things": {
@@ -1371,6 +1405,17 @@
   "tipo": "game"
  },
  "homesteaders ed 10th anniversary expansao new beginnings": null,
+ "horrible couple": {
+  "bgg": 6.12609,
+  "editora": "Exploding Kittens",
+  "imagem": "https://uploads.comparajogos.com.br/img/0bcb0cb43a836038bf3149f9112487d42df90405.jpg",
+  "menor": null,
+  "nome": "Horrible Couple",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "horrible-couple",
+  "tipo": "game"
+ },
  "hostage negotiator": {
   "bgg": 6.78581,
   "editora": "Van Ryder Games",
@@ -2390,6 +2435,7 @@
   "slug": "sand",
   "tipo": "game"
  },
+ "santuario um jogo ark nova": null,
  "saturday night live the game": {
   "bgg": 4.58333,
   "editora": "Buffalo Games",
