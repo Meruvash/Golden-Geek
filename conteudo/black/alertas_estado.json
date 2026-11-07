@@ -245,7 +245,6 @@
   "caes-pop",
   "cai-nao-cai",
   "candy-land",
-  "catan",
   "chaves-confusoes-na-vila",
   "cilada",
   "citadels",
@@ -274,11 +273,11 @@
   "finca",
   "galaxy-trucker-second-edition",
   "genius",
+  "gravity-superstar",
   "hamburgueria-maluca",
   "happy-salmon",
   "harry-potter-batalha-de-hogwarts",
   "hi-ho-cherry-o",
-  "hitster",
   "hitster-verao",
   "hungry-hungry-hippos-grab-go",
   "ilha-da-caveira",
@@ -332,6 +331,7 @@
   "rummikub-jr",
   "sagrada-expansao-de-5-6-jogadores",
   "score-cards",
+  "shinkansen-zero-kei",
   "sizeup",
   "sky-towers",
   "sleeping-gods-dungeons",
@@ -350,6 +350,7 @@
   "the-mandalorian-adventures-cla-de-dois",
   "the-pillars-of-the-earth",
   "the-totem-game",
+  "time-stories-revolution-a-midsummer-night",
   "timeline-twist",
   "trava-letras",
   "triominos-junior",
@@ -365,5 +366,9 @@
   "world-wonders",
   "zenkai-adventure"
  ],
- "pendentes": {}
+ "pendentes": {
+  "gravity-superstar": "2026-11-07T01:57+00:00",
+  "shinkansen-zero-kei": "2026-11-07T01:57+00:00",
+  "time-stories-revolution-a-midsummer-night": "2026-11-07T01:57+00:00"
+ }
 }
