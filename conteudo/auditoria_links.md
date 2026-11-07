@@ -1,17 +1,17 @@
-# Auditoria de links — 2026-11-07T03:36-03:00
+# Auditoria de links — 2026-11-07T10:33-03:00
 
 Gerado por `tools/auditoria_links.py` (robô com User-Agent próprio, 1 pedido a cada 2 s por domínio, robots.txt respeitado). Links de oferta com ERRO saem do /black/ na próxima geração da página.
 
-**Ofertas no /black/:** 192 links, 155 certos, 0 com erro, 37 não verificáveis.
+**Ofertas no /black/:** 197 links, 160 certos, 0 com erro, 37 não verificáveis.
 
 ## Por tipo de link
 
 | Tipo | ok | ERRO | não verificável | não conferido |
 |---|---|---|---|---|
-| oferta | 119 | 1 | 34 | 0 |
-| oferta (mais lojas) | 36 | 0 | 3 | 0 |
+| oferta | 123 | 1 | 34 | 0 |
+| oferta (mais lojas) | 37 | 0 | 3 | 0 |
 | achado | 15 | 0 | 1 | 0 |
-| cupom | 5 | 0 | 0 | 0 |
+| cupom | 4 | 0 | 0 | 0 |
 | loja | 73 | 0 | 3 | 0 |
 | preço | 109 | 0 | 0 | 0 |
 | outro | 0 | 0 | 0 | 1274 |
@@ -21,15 +21,15 @@ Gerado por `tools/auditoria_links.py` (robô com User-Agent próprio, 1 pedido a
 | Domínio | ok | ERRO | não verificável |
 |---|---|---|---|
 | comparajogos.com.br | 109 | 0 | 0 |
-| caixinhaboardgames.com.br | 47 | 1 | 0 |
+| caixinhaboardgames.com.br | 46 | 1 | 0 |
 | mercadolivre.com.br | 0 | 0 | 40 |
-| bravojogos.com.br | 27 | 0 | 0 |
+| bravojogos.com.br | 30 | 0 | 0 |
 | placegames.com.br | 26 | 0 | 0 |
-| facilshopping.com.br | 15 | 0 | 0 |
+| facilshopping.com.br | 16 | 0 | 0 |
 | playeasy.com.br | 15 | 0 | 0 |
 | tabuloja.com | 15 | 0 | 0 |
 | mecadosjogos.com.br | 14 | 0 | 0 |
-| amazon.com.br | 9 | 0 | 0 |
+| amazon.com.br | 10 | 0 | 0 |
 | tavernareal.com | 9 | 0 | 0 |
 | alquimistasdosjogos.com.br | 8 | 0 | 0 |
 | cangaiajogos.com.br | 8 | 0 | 0 |
