@@ -305,6 +305,7 @@
   "perfil-7",
   "perfil-express-filmes-e-series",
   "perguntados-especialistas",
+  "pie-face",
   "piles",
   "piratas-3a-edicao",
   "piratas-pets",
@@ -319,6 +320,7 @@
   "rummikub-jr",
   "sagrada-expansao-de-5-6-jogadores",
   "score-cards",
+  "sequence-kids",
   "sizeup",
   "sky-towers",
   "sleeping-gods-dungeons",
@@ -350,5 +352,8 @@
   "world-wonders",
   "zenkai-adventure"
  ],
- "pendentes": {}
+ "pendentes": {
+  "pie-face": "2026-11-07T21:38+00:00",
+  "sequence-kids": "2026-11-07T21:38+00:00"
+ }
 }
