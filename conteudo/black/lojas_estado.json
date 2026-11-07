@@ -62,7 +62,7 @@
    "descanso_ate": "2026-11-05T22:05+00:00",
    "dia": "2026-11-07",
    "motivo": "robots.txt respondeu 429",
-   "paginas": 3
+   "paginas": 4
   },
   "modoaviaobg.com.br": {
    "dia": "2026-11-07",
@@ -262,7 +262,7 @@
   },
   "www.promobit.com.br": {
    "dia": "2026-11-07",
-   "paginas": 40
+   "paginas": 50
   },
   "www.reunionjogos.com.br": {
    "dia": "2026-11-07",
@@ -282,7 +282,7 @@
   },
   "www.tabuloja.com": {
    "dia": "2026-11-07",
-   "paginas": 7
+   "paginas": 8
   },
   "www.tavernareal.com": {
    "dia": "2026-11-07",
@@ -689,7 +689,7 @@
   "https://ludostation.com.br/produtos/medium-1geef/?entry_path=category": {
    "cj": 134.1,
    "estoque": true,
-   "hora": "2026-11-07T11:36+00:00",
+   "hora": "2026-11-07T11:54+00:00",
    "preco": 149.0
   },
   "https://ludostation.com.br/produtos/o-um-anel-rpg-contos-das-terras-ermas-11c2r/?entry_path=category": {
@@ -803,13 +803,13 @@
   "https://www.caixinhaboardgames.com.br/produtos/50-animais-marinhos/?entry_path=category": {
    "cj": 20.46,
    "estoque": true,
-   "hora": "2026-11-07T11:33+00:00",
+   "hora": "2026-11-07T09:20+00:00",
    "preco": 22.0
   },
   "https://www.caixinhaboardgames.com.br/produtos/50-caes/?entry_path=category": {
    "cj": 20.46,
    "estoque": true,
-   "hora": "2026-11-07T11:34+00:00",
+   "hora": "2026-11-07T09:20+00:00",
    "preco": 22.0
   },
   "https://www.caixinhaboardgames.com.br/produtos/50-filhotes/?entry_path=category": {
@@ -860,22 +860,10 @@
    "hora": "2026-11-07T11:34+00:00",
    "preco": 85.0
   },
-  "https://www.caixinhaboardgames.com.br/produtos/brainbox-pocket-animais-perigosos/": {
-   "cj": 26.97,
-   "estoque": true,
-   "hora": "2026-11-05T11:49+00:00",
-   "preco": 29.0
-  },
   "https://www.caixinhaboardgames.com.br/produtos/brainbox-pocket-animais-perigosos/?entry_path=category": {
    "cj": 26.97,
    "estoque": true,
    "hora": "2026-11-07T11:34+00:00",
-   "preco": 29.0
-  },
-  "https://www.caixinhaboardgames.com.br/produtos/brainbox-pocket-espaco/": {
-   "cj": 26.97,
-   "estoque": true,
-   "hora": "2026-11-05T11:49+00:00",
    "preco": 29.0
   },
   "https://www.caixinhaboardgames.com.br/produtos/brainbox-pocket-espaco/?entry_path=category": {
@@ -941,7 +929,7 @@
   "https://www.caixinhaboardgames.com.br/produtos/fateflip-arrastado-pelo-mar/?entry_path=category": {
    "cj": 45.57,
    "estoque": true,
-   "hora": "2026-11-07T11:35+00:00",
+   "hora": "2026-11-07T09:23+00:00",
    "preco": 49.0
   },
   "https://www.caixinhaboardgames.com.br/produtos/fateflip-decretos-reais/?entry_path=category": {
@@ -1015,12 +1003,6 @@
    "estoque": true,
    "hora": "2026-11-07T11:36+00:00",
    "preco": 42.0
-  },
-  "https://www.caixinhaboardgames.com.br/produtos/mapa-de-gemas-expansao-roam/": {
-   "cj": 45.57,
-   "estoque": true,
-   "hora": "2026-11-05T11:52+00:00",
-   "preco": 49.0
   },
   "https://www.caixinhaboardgames.com.br/produtos/mapa-de-gemas-expansao-roam/?entry_path=category": {
    "cj": 45.57,
@@ -1729,12 +1711,6 @@
    "estoque": true,
    "hora": "2026-11-07T11:36+00:00",
    "preco": 18.49
-  },
-  "https://www.placegames.com.br/board-games/prey-another-day": {
-   "cj": 46.39,
-   "estoque": true,
-   "hora": "2026-11-05T11:52+00:00",
-   "preco": 46.39
   },
   "https://www.placegames.com.br/board-games/procissao-das-almas": {
    "cj": 27.79,
