@@ -567,6 +567,17 @@
  "catan cupom resgateallsite0411 para quem resgatou ontem": null,
  "cge wispwood board game": null,
  "chicken cha cha cha": null,
+ "christian charades": {
+  "bgg": null,
+  "editora": "Gidi Games",
+  "imagem": "https://uploads.comparajogos.com.br/img/3930995451029e5089f5e6577ee6e573d2271259.jpg",
+  "menor": null,
+  "nome": "Christian Charades",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "christian-charades",
+  "tipo": "game"
+ },
  "claim edicao limitada": {
   "bgg": 5.68144,
   "editora": "PaperGames",
@@ -1133,6 +1144,17 @@
   "tipo": "game"
  },
  "fantasy flight games the eternal knot": null,
+ "fantasy realms deluxe edition": {
+  "bgg": 6.2921,
+  "editora": "WizKids",
+  "imagem": "https://uploads.comparajogos.com.br/img/42c2f3987e4267eda57166f8eeb8ff46b8a8a69d.jpg",
+  "menor": null,
+  "nome": "Fantasy Realms: Deluxe Edition",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "fantasy-realms-deluxe-edition",
+  "tipo": "game"
+ },
  "far cry escape from rook islands": null,
  "fdp foi de proposito": null,
  "festival of a thousand cats": {
@@ -1980,6 +2002,7 @@
   "tipo": "game"
  },
  "meeplebr neuroshima hex battle policia de aco vs feras jogo de tabuleiro expert 2 jogadores": null,
+ "meeplebr os gatos de schrodinger jogos familia jogos de carta 2 a 6 jogadores": null,
  "meeplebr paper dungeons jogo de tabuleiro expert 1 a 8 jogadores": null,
  "meeplebr pocket detective caso b jogo de cartas familia 1 a 6 jogadores": null,
  "meeplebr pocket detective caso c jogo de cartas familia 1 a 6 jogadores": null,
@@ -2357,6 +2380,17 @@
   "ref_dias": 0,
   "slug": "pocket-paragons-acquisitions-incorporated",
   "tipo": "game"
+ },
+ "pokemon tcg scarlet violet stellar crown": {
+  "bgg": 8.9,
+  "editora": "The Pokémon Company International",
+  "imagem": "https://uploads.comparajogos.com.br/img/1019b20a959b8e565f6d711127562a02b9eea831.png",
+  "menor": null,
+  "nome": "Pokémon TCG: Scarlet & Violet – Stellar Crown",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "pokemon-tcg-scarlet-violet-stellar-crown",
+  "tipo": "expansion"
  },
  "posthuman resistence": null,
  "pot de vin": {
