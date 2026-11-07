@@ -224,7 +224,6 @@
   "5-minute-one-piece",
   "5-score",
   "50-animais-marinhos",
-  "50-caes",
   "50-dinossauros",
   "50-filhotes",
   "a-iniciativa",
@@ -233,7 +232,6 @@
   "arboretum",
   "architects-of-the-west-kingdom-works-of-wonder-christ-the-redeemer-wonder",
   "arkham-horror-card-game-a-cidade-submersa-expansao-de-investigador",
-  "bananagrams-duel",
   "battleships",
   "bazaars-of-ubar",
   "black-stories-junior-orange-stories",
@@ -244,6 +242,7 @@
   "caes-pop",
   "cai-nao-cai",
   "candy-land",
+  "catan",
   "chaves-confusoes-na-vila",
   "chicago-1875-city-of-the-big-shoulders",
   "cilada",
@@ -270,7 +269,6 @@
   "fateflip-arrastado-pelo-mar",
   "fateflip-decretos-reais",
   "finca",
-  "galaxy-trucker-second-edition",
   "genius",
   "hamburgueria-maluca",
   "happy-salmon",
@@ -297,7 +295,6 @@
   "mazescape-kids-hipnos",
   "mesozooic",
   "mestre-makatsu",
-  "munchkin",
   "mysterium-secrets-lies",
   "na-ponta-da-lingua",
   "neuroshima-hex-battle",
@@ -315,9 +312,8 @@
   "piratas-3a-edicao",
   "piratas-pets",
   "power-hungry-pets",
-  "procissao-das-almas",
-  "qu4to",
   "quack-quack-patota-corrupta",
+  "queops",
   "quest",
   "quick-stop",
   "quiferas",
@@ -343,10 +339,8 @@
   "tapa-certo",
   "tapalavras",
   "the-game",
-  "the-mandalorian-adventures-cla-de-dois",
   "the-pillars-of-the-earth",
   "the-totem-game",
-  "timeline-twist",
   "trava-letras",
   "triominos-junior",
   "uestop",
@@ -362,6 +356,8 @@
   "zenkai-adventure"
  ],
  "pendentes": {
-  "chicago-1875-city-of-the-big-shoulders": "2026-11-07T02:42+00:00"
+  "catan": "2026-11-07T03:12+00:00",
+  "chicago-1875-city-of-the-big-shoulders": "2026-11-07T02:42+00:00",
+  "queops": "2026-11-07T03:12+00:00"
  }
 }

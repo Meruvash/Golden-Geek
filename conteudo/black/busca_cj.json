@@ -37,6 +37,7 @@
   "slug": "achei-turma-da-monica",
   "tipo": "game"
  },
+ "acima de r 199 limitado": null,
  "acima de r 249 limitado": null,
  "acima de r 79 limitado a r 100 cupom descontos": null,
  "acima de r 99 limitado": null,
@@ -82,6 +83,7 @@
  "adicional ao fechar pedido rio grande games ranking": null,
  "adicional ao fechar pedido sherlock files vol 4 fatal frontiers": null,
  "adicional ao fechar pedido silver fun competitive and strategic card game fun for family game night": null,
+ "adicional ao fechar pedido star wars legion essentials pack jogo de miniaturas de mesa jogo de estrategia para criancas e adultos maior": null,
  "adicional ao fechar pedido steve jackson games munchkin farkle": null,
  "adicional ao fechar pedido steve jackson games random fun generator": null,
  "adicional ao fechar pedido stonemaier games wingspan oceania expansion": null,
@@ -171,6 +173,7 @@
  "asmodee dixit signature viloes expansao jogo de tabuleiro idade 8 3 a 12 jogadores 30 minutos por partida": null,
  "asmodee dobble dinossauros jogo de cartas 2 a 8 jogadores a partir de 6 anos partidas de ate 15 min": null,
  "asmodee dobble disney princess jogo de cartas para familia 2 a 8 jogadores idade 4 partidas de ate 15 minutos": null,
+ "asmodee dobble harry potter jogo de cartas 2 a 8 jogadores idade 6 partidas de 15 min": null,
  "asmodee duna imperium linhagens expansao jogo de tabuleiro idade 14 1 a 4 jogadores 60 a 120 minutos por partida": null,
  "asmodee galapagos concept 4 a 12 jogadores idade 10": {
   "bgg": 6.74664,
@@ -857,6 +860,7 @@
   "slug": "dragon-island",
   "tipo": "game"
  },
+ "dune imperium rise of ix dreadnought upgrade pack": null,
  "dungeons dragons attack wing bronze dragon expansion pack": {
   "bgg": 7.63158,
   "editora": "WizKids",
@@ -1085,6 +1089,7 @@
   "tipo": "game"
  },
  "flamecraft dragons and dragons": null,
+ "flamecraft dragons of the past": null,
  "flip 7 with a vengeance": null,
  "fora de ordem adoleta jogos": null,
  "franco german rails expansion for gulf mobile ohio": null,
@@ -1876,6 +1881,7 @@
  "memorinth edition spielwiese deutsch englisch": null,
  "menor preco do ano asmodee arkham horror card game limiar da terra expansao de cenario": null,
  "menor preco do ano brass lancashire": null,
+ "menor preco do ano escape devir": null,
  "menor preco do ano fuji flush jogo de cartas": null,
  "menor preco do ano galapagos wonderland s war jogo de tabuleiro 2 a 4 jogadores": null,
  "menor preco do ano galapagos zombicide monty phyton s flying circus character pack expansao gamer a partir de 14 anos partidas de at": null,
@@ -1887,7 +1893,9 @@
  "menor preco do ano pegasus spiele jogo de tabuleiro civolution": null,
  "menor preco do ano the colonists": null,
  "menor preco do ano transamerica game": null,
+ "menor preco do ano world wonders compita estrategicamente para 1 5 jogadores maiores de 14 anos": null,
  "menor preco dos ultimos 30 dias asmodee hitster verao jogo de tabuleiro idade 14 2 a 10 jogadores 30 minutos por partida": null,
+ "menor preco dos ultimos 30 dias cmon death may die season 2 model dmd002": null,
  "menor preco dos ultimos 30 dias concordia venus expansion": null,
  "menor preco dos ultimos 30 dias devir 7th seal jogo de tabuleiro 1 jogador": null,
  "mercadolivre": null,
@@ -2231,6 +2239,17 @@
   "ref": 67.09,
   "ref_dias": 32,
   "slug": "prey-another-day",
+  "tipo": "game"
+ },
+ "prussian rails": {
+  "bgg": 5.96611,
+  "editora": "Rio Grande Games",
+  "imagem": "https://uploads.comparajogos.com.br/img/08024c7ddffe6e1a4fc5a6b04cfafb4fc4c429cc.jpg",
+  "menor": null,
+  "nome": "Prussian Rails",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "prussian-rails",
   "tipo": "game"
  },
  "quacks all in edition": {
