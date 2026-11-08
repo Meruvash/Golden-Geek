@@ -1,0 +1,23 @@
+{
+ "slug": "kingdomino",
+ "titulo": "Como jogar Kingdomino",
+ "jogo": "Kingdomino",
+ "genero": "Colocação de peças · Família",
+ "jogadores": "2 a 4 jogadores",
+ "duracao": "15 min",
+ "idade": "7+",
+ "edicao": "Manual oficial em inglês (Blue Orange)",
+ "data": "2026-11-08",
+ "descricao": "Regras de Kingdomino passo a passo, conferidas no manual oficial da Blue Orange: montagem, a fila de peças, o encaixe, o limite de 5 por 5 e a pontuação.",
+ "resumo": "Você escolhe peças de paisagem numa fila, encaixa cada uma no seu reino de 5 por 5 encostando terrenos iguais e vence quem somar mais pontos com territórios de muitos quadrados e muitas coroas.",
+ "pontos": [
+  "Na sua vez, você encaixa a peça que tinha escolhido e põe o seu rei numa peça da nova fila; quem fica com a peça de número mais baixo joga primeiro na rodada seguinte.",
+  "A peça precisa encostar, de lado, num terreno igual ou no castelo, e o reino inteiro tem de caber em 5 por 5; o que não cabe é descartado.",
+  "Cada território vale o número de quadrados vezes o número de coroas: sem coroa, vale zero."
+ ],
+ "leitura_min": 23,
+ "etapas": 3,
+ "resenha": null,
+ "chamada": "Escolha peças de paisagem, encaixe terrenos iguais e monte o reino de 5 por 5 com mais coroas. Começa com a montagem e um resumo para jogar em 4 minutos e segue em três etapas, da fila de peças à contagem de pontos.",
+ "publicar": false
+}

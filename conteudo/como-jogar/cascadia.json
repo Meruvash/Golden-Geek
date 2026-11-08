@@ -1,0 +1,23 @@
+{
+ "slug": "cascadia",
+ "titulo": "Como jogar Cascadia",
+ "jogo": "Cascadia",
+ "genero": "Colocação de peças · Família",
+ "jogadores": "1 a 4 jogadores",
+ "duracao": "45 min",
+ "idade": "10+",
+ "edicao": "Manual oficial em inglês",
+ "data": "2026-11-08",
+ "descricao": "Regras de Cascadia passo a passo, conferidas no manual oficial: montagem, turno, fichas de pinha, cartas de pontuação A, corredores e maiorias.",
+ "resumo": "Você pega um par de peça de habitat e ficha de animal por turno, monta o seu território e vence quem somar mais pontos com os animais, pelas cartas de pontuação, e com os maiores corredores de cada habitat.",
+ "pontos": [
+  "No seu turno, você pega 1 dos 4 pares do centro, encosta a peça no seu território e põe a ficha numa peça vazia que mostre aquele animal.",
+  "Fichas de pinha, ganhas nas peças-chave, deixam pegar peça e ficha de pares diferentes ou renovar as fichas do centro; as que sobram valem 1 ponto.",
+  "Cada um joga 20 turnos; pontuam os animais pelas cartas, o maior corredor de cada habitat, com bônus para o maior da mesa, e as pinhas."
+ ],
+ "leitura_min": 24,
+ "etapas": 3,
+ "resenha": "cascadia",
+ "chamada": "Monte um território de montanhas, florestas e rios e espalhe ursos, alces, salmões, falcões e raposas do jeito que as cartas pedem. Começa com a mesa montada passo a passo e um resumo para jogar em 4 minutos, e segue em três etapas até a contagem dos pontos.",
+ "publicar": false
+}

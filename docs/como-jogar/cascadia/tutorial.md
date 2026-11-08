@@ -131,14 +131,11 @@ Cada jogador joga exatamente 20 turnos. Quando, no fim de um turno, não há mai
 
 ## 0. Antes de tudo: o que é este jogo
 
-Cascadia é um jogo de colocação de peças e escolha de fichas para 1 a 4 pessoas, a partir de 10 anos, criado por Randy Flynn (p. 2). A página do jogo na AEG fala em 45 minutos de partida. O tema é a região do noroeste do Pacífico, na América do Norte, com seus habitats e animais (p. 2).
+Cascadia é um jogo de colocação de peças e escolha de fichas para 1 a 4 pessoas, a partir de 10 anos, criado por Randy Flynn, sobre os habitats e os animais do noroeste do Pacífico, na América do Norte (p. 2). A página do jogo na AEG fala em 45 minutos de partida.
 
-Cada jogador monta o seu território, que cresce uma peça por turno. São dois quebra-cabeças ao mesmo tempo (p. 2 e 8):
+Cada jogador monta o seu território, uma peça por turno, e resolve dois quebra-cabeças ao mesmo tempo. Os habitats pontuam pelo maior grupo de peças ligadas de cada terreno, o corredor de habitat. Os animais pontuam pelo formato que cada carta de pontuação pede: ursos em pares, alces em fila, salmões em corrente, falcões espalhados, raposas cercadas de vizinhos variados (p. 8 e 11).
 
-- **Os habitats.** Cada peça tem um ou dois tipos de terreno. No fim, cada tipo pontua pelo maior grupo de peças ligadas desse terreno, o corredor de habitat, e quem tem o maior corredor da mesa ganha bônus.
-- **Os animais.** Cada ficha posta é um animal no território. As cartas de pontuação dizem que formato cada espécie quer: ursos em pares, alces em fila, salmões em corrente, falcões espalhados, raposas cercadas de vizinhos variados.
-
-A tensão está no par: a peça que fecha o seu rio pode vir com a ficha errada, e a ficha que completa a corrente de salmões pode vir com uma peça que não encaixa em lugar nenhum. As fichas de pinha servem para soltar essa amarra. A interação é indireta: ninguém mexe no território do outro, mas o par que você leva sai da mesa (p. 6 e 7).
+A tensão está no par: a peça que fecha o seu rio pode vir com a ficha errada. As fichas de pinha soltam essa amarra. A interação é indireta: ninguém mexe no território do outro, mas o par que você leva sai da mesa (p. 6 e 7).
 
 ## 1. Como este guia ensina
 
@@ -163,7 +160,7 @@ Três etapas, cada uma uma parte real da partida: montar o território turno a t
 > 2. **3 fichas iguais:** você pode separar só essas 3 e tirar 3 novas do saco, uma de cada vez, na ordem. Isso vale uma vez por turno.
 > 3. Resolvida a superpopulação, as fichas separadas voltam para o saco.
 
-!fig[Superpopulação: em cima, 4 salmões, trocados sozinhos; embaixo, 3 raposas e 1 urso, quando quem joga pode trocar as 3 raposas. Ilustração: manual oficial AEG/Flatout Games (p. 6)](figuras/superpopulacao.webp)
+!fig[Superpopulação: as 4 fichas do centro são salmões, e por isso as 4 são trocadas sozinhas. Ilustração: manual oficial AEG/Flatout Games (p. 6)](figuras/superpopulacao.webp)
 
 > [!passos] **Passo a passo: gastar uma ficha de pinha** (p. 6 e 8)
 >
@@ -202,12 +199,6 @@ Três etapas, cada uma uma parte real da partida: montar o território turno a t
 > - (x) Não: a troca de 3 iguais vale uma vez por turno, e não há 3 iguais
 > - ( ) Pode, se devolver a pinha depois
 > = A troca opcional de 3 fichas iguais vale uma vez por turno; para renovar outra vez, só gastando pinha (p. 6).
->
-> ?? E os 3 ursos que você separou?
-> - ( ) Voltam para a caixa
-> - ( ) Ficam com você, como reserva
-> - (x) Voltam para o saco depois que a superpopulação foi resolvida
-> = As fichas separadas voltam para o saco depois de resolvida a superpopulação (p. 6).
 
 > [!suavez] **Sua vez.** Duas situações.
 >
@@ -263,7 +254,7 @@ Três etapas, cada uma uma parte real da partida: montar o território turno a t
 
 > [!mais] **Salmão com galho.** Três salmões em triângulo podem ser uma corrente, mas aí nenhum outro salmão pode encostar neles (p. 11). Um grupo em que algum salmão encosta em 3 ou mais salmões não é corrente.
 
-> [!mais] **Trocar as cartas A por outras.** Cada animal tem 4 cartas, com a letra A, B, C ou D no canto de baixo à direita. Para variar, separe as 4 de cada animal e sorteie 1 de cada, como manda a montagem (p. 4), ou combine com a mesa qual letra usar. Pelo manual (p. 11), o urso B dá 10 por grupo de exatamente 3; o C pontua grupos de 1 a 3 e dá 3 de bônus a quem tiver um de cada tamanho; o D pontua grupos de 2 a 4. O alce B pede os formatos desenhados; o C pontua cada grupo pelo tamanho, em qualquer formato; o D pede grupos em círculo. O salmão B vai até corrente de 5; o C pontua correntes de 3 a 5; o D dá 1 ponto por salmão da corrente e 1 por ficha de animal encostada nela. O falcão B pontua o falcão isolado que tem linha de visão para outro falcão; o C dá 3 por linha de visão entre dois falcões; o D pontua pares de falcões pelos tipos de animais entre eles. A raposa B conta os pares de outros animais vizinhos; a C, a quantidade do animal mais numeroso entre os vizinhos, sem contar raposas; a D pontua pares de raposas pelos pares de animais vizinhos.
+> [!mais] **Trocar as cartas A por outras.** Cada animal tem 4 cartas, com a letra A, B, C ou D no canto de baixo à direita. Depois das primeiras partidas, separe as 4 de cada animal e sorteie 1 de cada, como manda a montagem (p. 4), ou combine com a mesa qual letra usar. Cada carta traz o desenho do formato e a tabela de pontos, e o manual explica todas na p. 11. Exemplos: o urso B dá 10 pontos por grupo de exatamente 3 ursos; o falcão C dá 3 por linha de visão entre dois falcões; o salmão D dá 1 ponto por salmão da corrente e 1 por ficha de animal encostada nela (p. 11).
 
 > [!resolvido] **Exemplo resolvido: os animais de Jade** (p. 9). Na figura da etapa 3, o território de Jade pontua assim com as cartas A:
 >
