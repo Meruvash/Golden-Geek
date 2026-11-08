@@ -209,7 +209,7 @@ São cinco etapas: o turno comum (mapa, governar, mover, cartas e criação); a 
 > [!passos] **Governar, mover e gastar cartas** (p. 5 e 6)
 > 1. Governa uma clareira quem tem nela mais guerreiros e construções somados. Marcadores e o peão do Malandro não contam. Empate: ninguém governa (Leis de Root, 2.5).
 > 2. Para mover, escolha quantos guerreiros quiser de uma clareira e leve para uma clareira ligada por caminho. Você precisa governar a de origem, a de destino ou as duas.
-> 3. Uma peça pode mover várias vezes no mesmo turno, e vários movimentos podem levar o mesmo grupo ou grupos diferentes (Leis de Root, 4.2.3).
+> 3. Uma peça pode mover várias vezes no mesmo turno, e vários movimentos podem levar o mesmo grupo ou grupos diferentes (Leis de Root, 4.2.2).
 > 4. Construções ocupam um local livre; clareira sem local livre não recebe construção. Locais cobertos por ruína não recebem construção (p. 6).
 > 5. Carta "correspondente" a uma clareira é a do naipe dela ou um pássaro. Se a regra pede uma carta de pássaro, outro naipe não serve (p. 6).
 > 6. Baralho vazio: embaralhe o descarte para formar outro (Leis de Root, 2.1).
@@ -393,9 +393,9 @@ Valores lidos no tabuleiro dos Marqueses ilustrado no manual (p. 4).
 > 2. Cada avanço dá os PV do espaço novo: 1, 2 e 2. No espaço Aliado, cada nova ajuda a essa facção dá 2 PV.
 > 3. Se o Malandro remove um guerreiro de uma facção não hostil, ela vai para "Hostil". Daí em diante, cada peça dela que ele remove em batalha no seu turno dá 1 PV a mais.
 
-> [!mais] **Batalha do Malandro.** O dano máximo dele pelos dados é o número de Espadas não danificadas, exauridas ou não. Ele recebe dano danificando itens à escolha; sem item para danificar, ignora o dano. Sem Espada não danificada, está indefeso (p. 20; Leis de Root, 9.2.6).
+> [!mais] **Batalha do Malandro.** O dano máximo dele pelos dados é o número de Espadas não danificadas, exauridas ou não. Ele recebe dano danificando itens à escolha; sem item para danificar, ignora o dano. Sem Espada não danificada, está indefeso (p. 20; Leis de Root, 9.2.4, 9.2.6 e 9.2.7).
 
-> [!mais] **Remoção completa.** Se um efeito remove todas as peças inimigas de uma clareira onde está o Malandro, como a revolta da Aliança, ele danifica 3 itens (Leis de Root, 9.2.3).
+> [!mais] **Remoção completa.** Se um efeito remove todas as peças inimigas de uma clareira onde está o Malandro, como a revolta da Aliança, ele danifica 3 itens (Leis de Root, 9.2.2).
 
 > [!mais] **Aliados do Malandro.** Com uma facção no espaço Aliado, ele pode mover e batalhar com os guerreiros dela; os detalhes estão nas Leis de Root, 9.2.9.II (p. 19).
 
@@ -508,7 +508,7 @@ Responda sem voltar ao texto. Errou? A explicação diz qual etapa reler.
 - ( ) Chegando a 30 PV
 - (x) Governando, no começo do seu Amanhecer, 2 clareiras de cantos opostos
 - ( ) Governando 3 clareiras de qualquer naipe
-= Reler a etapa 5 (Leis de Root, 3.3.2).
+= Reler a etapa 5 (Leis de Root, 3.3.1).
 
 **Critério:** 5 ou 6 acertos, você está pronto para jogar. Menos que isso, releia as etapas indicadas.
 

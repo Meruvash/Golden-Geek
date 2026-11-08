@@ -76,7 +76,7 @@ Vídeos (oEmbed conferido em 08/11/2026): "ROOT + Expansão Submundo - Gameplay 
 | R17 | Turno: Amanhecer, Dia, Anoitecer; depois o jogador à esquerda (sentido horário) | p. 2; Leis 1.4.1 | V |
 | R18 | Governar: maior soma de guerreiros e construções; empate, ninguém; marcadores e peões não contam | p. 5; Leis 2.5 | V |
 | R19 | Mover: qualquer número de guerreiros para clareira adjacente; governar origem ou destino | p. 5; Leis 4.2.1 | V |
-| R20 | Sem limite de movimentos por peça; vários movimentos com o mesmo grupo ou grupos diferentes | Leis 4.2.3 | V |
+| R20 | Sem limite de movimentos por peça; vários movimentos com o mesmo grupo ou grupos diferentes | Leis 4.2.2 | V |
 | R21 | Florestas: só o Malandro entra | p. 5 | V |
 | R22 | Locais: 1 a 3; sem local livre, sem construção; ruína bloqueia até o Malandro explorar, e sem Malandro o jogo todo | p. 6 | V |
 | R23 | Naipes; pássaro curinga; pássaro exigido não admite substituto | p. 6; Leis 2.1.1 | V |
@@ -130,9 +130,9 @@ Vídeos (oEmbed conferido em 08/11/2026): "ROOT + Expansão Submundo - Gameplay 
 
 | # | Regra | Fonte | Cl. |
 |---|---|---|---|
-| R54 | Apoiadores: só pelo naipe; fora da mão; limite 5 sem base | p. 14; Leis 8.2.2 e 8.2.3 | V |
+| R54 | Apoiadores: só pelo naipe; fora da mão; limite 5 sem base | p. 14; Leis 8.2.3 | V |
 | R55 | Ultraje | p. 14; Leis 8.2.6 | V |
-| R56 | Guerrilha | p. 14; Leis 8.2.1 | V |
+| R56 | Guerrilha | p. 14; Leis 8.2.2 | V |
 | R57 | Amanhecer: revoltas, depois simpatia, quantas vezes quiser | p. 15; Leis 8.4 | V |
 | R58 | Revolta: clareira simpática do naipe de base no tabuleiro; 2 apoiadores; remove inimigos; base; guerreiros = clareiras simpáticas do naipe; 1 oficial | p. 15; Leis 8.4.1 | V |
 | R59 | Espalhar simpatia: clareira sem simpatia vizinha de simpática (ou qualquer, se não há); custo acima do marcador mais à esquerda; PV do espaço revelado; Lei Marcial +1 com 3 ou mais guerreiros de outro jogador | p. 15; Leis 8.4.2 | V |
@@ -145,21 +145,21 @@ Vídeos (oEmbed conferido em 08/11/2026): "ROOT + Expansão Submundo - Gameplay 
 
 | # | Regra | Fonte | Cl. |
 |---|---|---|---|
-| R64 | Peão não é guerreiro, não governa, não sai do mapa; Ágil | p. 17; Leis 9.2.2 e 9.2.4 | V |
+| R64 | Peão não é guerreiro, não governa, não sai do mapa; Ágil | p. 17; Leis 9.2.2 e 9.2.3 | V |
 | R65 | Estados do item; Chá, Moeda, Bolsa nas trilhas, exauridos vão para a Mochila | p. 17 e 19; Leis 9.2.5 | V |
 | R66 | Amanhecer: desvirar 2 por Chá + 3; deslizar (único acesso à floresta) | p. 17; Leis 9.4 | V |
 | R67 | Ações do Dia (Mover, Batalhar, Ataque, Explorar, Ajuda, Tarefa, Criar, Reparar, Ação Especial) | p. 18; Leis 9.5 | V |
 | R68 | Anoitecer: conserto na floresta; comprar 1 + Moedas; descartar até 5; limite 6 + 2 por Bolsa | p. 18; Leis 9.6 | V |
-| R69 | Batalha do Malandro: limite = Espadas não danificadas; dano danifica itens; indefeso sem Espada | p. 20; Leis 9.2.6 e 9.2.7 | V |
+| R69 | Batalha do Malandro: limite = Espadas não danificadas; dano danifica itens; indefeso sem Espada | p. 20; Leis 9.2.4, 9.2.6 e 9.2.7 | V |
 | R70 | Relações: custos 1, 2, 3; PV 1, 2, 2; Aliado +2 por ajuda; Hostil; Infâmia; Bota extra | p. 19 (figura lida a 200 dpi); Leis 9.2.9 | V |
-| R71 | Remoção Completa danifica 3 itens | Leis 9.2.3 | V |
+| R71 | Remoção Completa danifica 3 itens | Leis 9.2.2 (Andarilho Solitário) | V |
 
 ### 3.8 Vitória
 
 | # | Regra | Fonte | Cl. |
 |---|---|---|---|
 | R72 | 30 PV vence na hora; simultâneo, vence quem tem o turno | p. 2; Leis 3.1 | V |
-| R73 | Domínio: ativar no Dia com 10 PV ou mais; marcador sai; vitória no Amanhecer com 3 clareiras do naipe ou 2 cantos opostos (pássaro) | p. 21; Leis 3.3.1 e 3.3.2 | V |
+| R73 | Domínio: ativar no Dia com 10 PV ou mais; marcador sai; vitória no Amanhecer com 3 clareiras do naipe ou 2 cantos opostos (pássaro) | p. 21; Leis 3.3.1 | V |
 | R74 | Domínio gasto vai para o lado do mapa; pega-se no Dia gastando carta do naipe | p. 21; Leis 3.3.3 | V |
 | R75 | Coalizão do Malandro, só com 4 ou mais jogadores | p. 21; Leis 9.2.8 | V |
 | R76 | 2 jogadores: sem domínio; sugestão de duas partidas somadas | p. 22 | V |
