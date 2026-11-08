@@ -1,41 +1,5 @@
 [
  {
-  "id": "n-stormlight-war-for-roshar-kickstarter",
-  "tema": "noticias",
-  "hora": "2026-11-03T10:06:30Z",
-  "titulo": "📰 Stormlight: War for Roshar, jogo de guerra no mundo de Sanderson, passa de US$ 2,9 milhões",
-  "texto": "Fã de Sanderson encara livro de mil páginas, então três horas de mesa não assustam ninguém. A média de US$ 245 por apoiador mostra que esse público não quer a caixa…",
-  "url": "https://eliteboardgamers.com.br/noticias/stormlight-war-for-roshar-kickstarter/",
-  "imagem": "https://eliteboardgamers.com.br/noticias/capas/stormlight-war-for-roshar-kickstarter.jpg"
- },
- {
-  "id": "n-dice-throne-nexus-kickstarter-2-milhoes",
-  "tema": "noticias",
-  "hora": "2026-11-03T10:06:30Z",
-  "titulo": "📰 Dice Throne Nexus, com quatro heróis ciberpunk, encerra o Kickstarter com mais de US$ 2 milhões",
-  "texto": "Quinze mil pessoas pagaram para jogar dado contra um robô chamado Punch-a-Tron 3000, e a gente não vai fingir que não entende. Dice Throne virou uma fábrica de heróis…",
-  "url": "https://eliteboardgamers.com.br/noticias/dice-throne-nexus-kickstarter-2-milhoes/",
-  "imagem": "https://eliteboardgamers.com.br/noticias/capas/dice-throne-nexus-kickstarter-2-milhoes.jpg"
- },
- {
-  "id": "n-magical-athlete-pre-venda-asmodee",
-  "tema": "noticias",
-  "hora": "2026-11-03T10:06:30Z",
-  "titulo": "📰 Magical Athlete, corrida de dados refeita por Richard Garfield, entra em pré-venda pela Asmodee",
-  "texto": "É um jogo de rolar o dado e andar, o mecanismo que o hobby passou vinte anos tentando enterrar, e ele voltou com prêmio e nota máxima. A graça está nos 36 corredores,…",
-  "url": "https://eliteboardgamers.com.br/noticias/magical-athlete-pre-venda-asmodee/",
-  "imagem": "https://eliteboardgamers.com.br/noticias/capas/82348.jpg"
- },
- {
-  "id": "n-acelera-bruxa-fecha-financiamento-meeplestarter",
-  "tema": "noticias",
-  "hora": "2026-11-03T10:06:30Z",
-  "titulo": "📰 Acelera Bruxa, corrida de bruxas com construção de baralho, fecha financiamento com 185% da meta",
-  "texto": "Sem editora grande por trás, um jogo de bruxa de vassoura quase dobrou a meta. É o tamanho real do financiamento nacional: cem pessoas, um autor, uma caixa. E um add-on…",
-  "url": "https://eliteboardgamers.com.br/noticias/acelera-bruxa-fecha-financiamento-meeplestarter/",
-  "imagem": "https://eliteboardgamers.com.br/noticias/capas/acelera-bruxa-fecha-financiamento-meeplestarter.jpg"
- },
- {
   "id": "r-mechs-vs-minions",
   "tema": "resenhas",
   "hora": "2026-11-04T02:06:53Z",
@@ -106,24 +70,6 @@
   "texto": "Moicano neon por fora, contador por dentro. E quem ganha é o contador.",
   "url": "https://eliteboardgamers.com.br/radlands/",
   "imagem": "https://eliteboardgamers.com.br/radlands/capa.jpg"
- },
- {
-  "id": "n-civolution-e-horizontes-de-spirit-island-chegam-as-lojas",
-  "tema": "noticias",
-  "hora": "2026-11-04T10:08:54Z",
-  "titulo": "📰 Civolution e Horizontes de Spirit Island saem da pré-venda e chegam às lojas brasileiras",
-  "texto": "Pré-venda é a arte de pagar hoje por uma caixa que chega quando o frete quiser. Agora as duas estão na prateleira, e a escolha ficou honesta: Civolution custa mais que…",
-  "url": "https://eliteboardgamers.com.br/noticias/civolution-e-horizontes-de-spirit-island-chegam-as-lojas/",
-  "imagem": "https://eliteboardgamers.com.br/noticias/capas/civolution-e-horizontes-de-spirit-island-chegam-as-lojas.jpg"
- },
- {
-  "id": "n-spiel-essen-seis-furtos-montagem-desmontagem",
-  "tema": "noticias",
-  "hora": "2026-11-04T10:08:54Z",
-  "titulo": "📰 SPIEL Essen registra seis furtos na montagem e desmontagem; maior prejuízo chega a 14 mil euros",
-  "texto": "A maior feira do mundo bateu recorde de 230 mil visitantes e, na mesma semana, explicou que câmera em estande não resolve. A lógica é impecável: o pavilhão cuida do…",
-  "url": "https://eliteboardgamers.com.br/noticias/spiel-essen-seis-furtos-montagem-desmontagem/",
-  "imagem": "https://eliteboardgamers.com.br/noticias/capas/spiel-essen-seis-furtos-montagem-desmontagem.jpg"
  },
  {
   "id": "n-too-little-time-chip-theory-gamefound",
@@ -358,5 +304,59 @@
   "texto": "Dez módulos, cinco crânios e uma pintura de mamute que custa caro para terminar.",
   "url": "https://eliteboardgamers.com.br/paleo/",
   "imagem": "https://eliteboardgamers.com.br/paleo/capa.jpg"
+ },
+ {
+  "id": "n-ordinary-magic-unstable-games-gamefound",
+  "tema": "noticias",
+  "hora": "2026-11-08T14:33:57Z",
+  "titulo": "📰 Ordinary Magic, estúdio novo da dona de Unstable Unicorns, passa de US$ 687 mil no Gamefound",
+  "texto": "A editora que vendeu unicórnio explodindo para meio mundo resolveu apostar no oposto: livraria, hotel e café, com magia de bairro e pouca briga. A meta era US$ 30 mil e…",
+  "url": "https://eliteboardgamers.com.br/noticias/ordinary-magic-unstable-games-gamefound/",
+  "imagem": "https://eliteboardgamers.com.br/noticias/capas/ordinary-magic-unstable-games-gamefound.jpg"
+ },
+ {
+  "id": "n-gama-andrew-zorowitz-diretor-interino",
+  "tema": "noticias",
+  "hora": "2026-11-08T14:33:57Z",
+  "titulo": "📰 GAMA, dona da Origins Game Fair, nomeia Andrew Zorowitz, quarto comando em um ano",
+  "texto": "A GAMA cuida das duas vitrines onde lojistas dos EUA escolhem o que vão vender, e muito do que chega depois ao Brasil passa por ali antes. Uma associação que troca de…",
+  "url": "https://eliteboardgamers.com.br/noticias/gama-andrew-zorowitz-diretor-interino/",
+  "imagem": "https://eliteboardgamers.com.br/noticias/capas/gama-andrew-zorowitz-diretor-interino.jpg"
+ },
+ {
+  "id": "n-halo-campaign-evolved-tabuleiro-mantic-pre-venda",
+  "tema": "noticias",
+  "hora": "2026-11-08T14:33:57Z",
+  "titulo": "📰 Halo: Campaign Evolved vira jogo de tabuleiro para 1 ou 2 pessoas, com envio em dezembro",
+  "texto": "A Mantic já vende Halo: Flashpoint, um jogo de miniaturas que pede tinta, paciência e prateleira. Este aqui faz o caminho contrário: caixa pequena, meia hora e o Master…",
+  "url": "https://eliteboardgamers.com.br/noticias/halo-campaign-evolved-tabuleiro-mantic-pre-venda/",
+  "imagem": "https://eliteboardgamers.com.br/noticias/capas/halo-campaign-evolved-tabuleiro-mantic-pre-venda.jpg"
+ },
+ {
+  "id": "n-arkham-horror-remastered-fecha-gamefound-5-milhoes",
+  "tema": "noticias",
+  "hora": "2026-11-08T14:33:57Z",
+  "titulo": "📰 Arkham Horror Remastered fecha no Gamefound com US$ 5,67 milhões e 13.693 apoiadores",
+  "texto": "Em 31 de outubro a campanha estava em US$ 2,96 milhões; nos últimos cinco dias quase dobrou. O apoio médio foi de US$ 414, num jogo que se apresenta como a volta de um…",
+  "url": "https://eliteboardgamers.com.br/noticias/arkham-horror-remastered-fecha-gamefound-5-milhoes/",
+  "imagem": "https://eliteboardgamers.com.br/noticias/capas/arkham-horror-remastered-fecha-gamefound-5-milhoes.jpg"
+ },
+ {
+  "id": "n-zoo-tycoon-dinosaur-digs-kickstarter",
+  "tema": "noticias",
+  "hora": "2026-11-08T14:33:57Z",
+  "titulo": "📰 Zoo Tycoon ganha jogo de parque de dinossauros no Kickstarter, com 186 mil francos suíços",
+  "texto": "Pegar um jogo de zoológico e trocar os pinguins por tiranossauros é a ideia mais óbvia do mundo, e mesmo assim a Treecer foi além: tirou a conservação, pôs cerca…",
+  "url": "https://eliteboardgamers.com.br/noticias/zoo-tycoon-dinosaur-digs-kickstarter/",
+  "imagem": "https://eliteboardgamers.com.br/noticias/capas/zoo-tycoon-dinosaur-digs-kickstarter.jpg"
+ },
+ {
+  "id": "n-tasting-history-max-miller-jogo-kickstarter",
+  "tema": "noticias",
+  "hora": "2026-11-08T14:33:57Z",
+  "titulo": "📰 Tasting History, canal de Max Miller, vira jogo de tabuleiro e passa de US$ 480 mil",
+  "texto": "Jogo de influenciador costuma ser baralho com a cara do dono e piada interna. Este tem designer de miniaturas pesadas e alocação de trabalhadores, o que já é mais…",
+  "url": "https://eliteboardgamers.com.br/noticias/tasting-history-max-miller-jogo-kickstarter/",
+  "imagem": "https://eliteboardgamers.com.br/noticias/capas/tasting-history-max-miller-jogo-kickstarter.jpg"
  }
 ]
