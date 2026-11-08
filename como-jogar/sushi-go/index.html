@@ -1,0 +1,490 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Como jogar Sushi Go!: regras passo a passo | Elite Boardgamers</title>
+<meta name="description" content="Regras de Sushi Go! passo a passo, conferidas no manual da Devir: montagem, escolher e passar, wasabi, hashis, pontuação de cada prato e pudins.">
+<link rel="canonical" href="https://eliteboardgamers.com.br/como-jogar/sushi-go/">
+<meta name="robots" content="max-image-preview:large">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Como jogar Sushi Go!">
+<meta property="og:description" content="Regras de Sushi Go! passo a passo, conferidas no manual da Devir: montagem, escolher e passar, wasabi, hashis, pontuação de cada prato e pudins.">
+<meta property="og:url" content="https://eliteboardgamers.com.br/como-jogar/sushi-go/">
+<meta property="og:image" content="https://eliteboardgamers.com.br/como-jogar/sushi-go/fotos/componentes-1.webp">
+<link rel="icon" href="../../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32.png">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<link rel="preload" href="../../fontes/public-sans.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:"Public Sans";src:url(../../fontes/public-sans.woff2) format("woff2");font-weight:400 800;font-style:normal;font-display:swap}
+@font-face{font-family:"Public Sans";src:url(../../fontes/public-sans-italic.woff2) format("woff2");font-weight:400;font-style:italic;font-display:swap}
+/* Layout: o mesmo da página de lição do Discipulado (O Paladino): fundo preto (pedido do editor: preto no lugar do azul), faixa do banner, navegação fixa, coluna central de 760px com cartões claros de papel, filete dourado sobre os títulos de seção. Visual único (o site não tem tema claro). */
+:root{
+  color-scheme:dark;
+  --ground:#000; --panel:#0f1115; --panel2:#171a20; --line:#262a32; --line2:#2e333c;
+  --ink:#eceff3; --muted:#a1a9b5; --gold:#e3b23c;
+  --paper:#f4f5f7; --paper-ink:#14171c; --paper-muted:#5a6270; --paper-line:#dde1e7; --paper-text:#3a414c;
+  --link:#1f5fae; --ok:#1b7a45; --ok-bg:#e3f4ea; --cinza-bg:#eceef1; --ouro-bg:#fff4d1; --ouro-ink:#8a5f00;
+  --erro:#b3263e; --faixa-ouro:#1d1606; --ouro-claro:#f1ead6; --check:#4cc38a;
+  --f-body:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box}
+html{scroll-padding-top:64px}
+body{margin:0;background:var(--ground);color:var(--ink);font:16px/1.55 var(--f-body)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--panel)}
+h1,h2,h3,p,ul,ol,figure{margin:0}
+a{color:var(--link);text-underline-offset:.18em}
+::selection{background:var(--gold);color:#000}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px;border-radius:3px}
+.gut{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+
+.skip{position:absolute;left:-999px}.skip:focus{left:12px;top:8px;z-index:40;background:var(--gold);color:#000;padding:6px 10px}
+.aviso{background:var(--gold);color:#000;font-weight:800;font-size:.8rem;text-align:center}
+.aviso .gut{padding-block:6px}
+.topo{background:var(--ground)}
+.topo img{display:block;width:100%;max-width:640px;height:auto;margin:0 auto}
+.nav{background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line);position:sticky;top:env(safe-area-inset-top,0px);z-index:20}
+.nav ul{max-width:1120px;margin:0 auto;list-style:none;display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;padding-block:0}
+.nav a{display:block;padding:11px 12px;white-space:nowrap;color:var(--ink);text-decoration:none;font-weight:700;font-size:.92rem;border-bottom:3px solid transparent}
+.nav a[aria-current]{color:var(--gold);border-bottom-color:var(--gold)}
+
+.nota{max-width:760px;margin:0 auto;padding-block:20px 56px;display:grid;gap:16px}
+.trilha ol{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:4px 8px;font-size:.85rem;color:var(--muted)}
+.trilha li+li::before{content:"›";margin-right:8px;color:var(--muted)}
+.trilha a{color:var(--gold);font-weight:700;text-decoration:none}
+
+.bloco{background:var(--paper);color:var(--paper-ink);border-radius:10px;padding:20px;min-width:0;display:grid;gap:14px}
+.num-l{font-size:.8rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--paper-muted)}
+h1{font-size:clamp(1.7rem,5vw,2.4rem);line-height:1.12;font-weight:800;letter-spacing:-.015em;text-wrap:balance}
+.meta-e{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:.88rem;color:var(--paper-muted)}
+.meta{font-family:var(--mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.05em;color:var(--paper-muted)}
+
+.r1{background:var(--panel2);color:var(--ink);border:1px solid var(--line2);border-left:4px solid var(--gold)}
+.kick{font-size:.75rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--gold)}
+.r1 .resp{font-size:1.12rem;font-weight:600;line-height:1.45}
+.r1 ul{list-style:none;padding:0;display:grid;gap:8px}
+.r1 li{display:flex;gap:8px;align-items:flex-start;color:#dfe4ea}
+.r1 li svg{flex:none;width:20px;height:20px;margin-top:2px;stroke:var(--check);fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.r1 .pe{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:.88rem;color:var(--muted)}
+.r1 .pe b{color:var(--ink)}
+.legenda{display:flex;flex-wrap:wrap;gap:8px}
+.legenda span{font-size:.74rem;font-weight:800;letter-spacing:.04em;border-radius:999px;padding:3px 10px 3px 14px;background:var(--paper);color:var(--paper-ink)}
+.legenda .l1{box-shadow:inset 5px 0 0 var(--paper-ink)}.legenda .l2{box-shadow:inset 5px 0 0 var(--ok)}
+.legenda .l3{box-shadow:inset 5px 0 0 var(--gold)}.legenda .l4{box-shadow:inset 5px 0 0 var(--ouro-ink)}
+
+.indice h2,.sec>h2{font-size:1.15rem;font-weight:800;line-height:1.3;color:var(--paper-ink);border-top:3px solid var(--gold);padding-top:12px;text-wrap:balance;display:flex;gap:10px;align-items:baseline}
+.indice ol{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:2px 16px}
+.indice a{display:block;padding:6px 0;color:var(--paper-ink);text-decoration:none;font-weight:600;font-size:.94rem;border-bottom:1px solid var(--paper-line)}
+.indice a:hover{color:var(--link)}
+
+.sec>h2 .num{display:none}
+.sec h3{font-size:1.05rem;font-weight:800;margin-top:6px}
+.sec p{color:var(--paper-text);max-width:66ch}
+.sec ul,.sec ol{padding-left:1.3em;display:grid;gap:6px;color:var(--paper-text)}
+.sec ul{list-style:disc}
+.sec li::marker{color:var(--ouro-ink);font-weight:800}
+strong{font-weight:700;color:var(--paper-ink)}
+.pg{white-space:nowrap;font-size:.76em;color:var(--paper-muted);border:1px solid var(--paper-line);background:#fff;border-radius:4px;padding:0 5px;vertical-align:.08em;font-variant-numeric:tabular-nums}
+code{font-size:.9em;background:#fff;padding:1px 5px;border-radius:4px}
+
+.tab{overflow-x:auto;border:1px solid var(--paper-line);border-radius:8px;background:#fff}
+table{border-collapse:collapse;width:100%;font-size:.92rem;color:var(--paper-text)}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--paper-line);vertical-align:top}
+th{font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--paper-muted);background:var(--paper)}
+tr:last-child td{border-bottom:0}
+
+.call{border-radius:8px;padding:14px 16px;display:grid;gap:10px;min-width:0;background:#fff;border:1px solid var(--paper-line);border-left:4px solid var(--paper-muted)}
+.call .rot{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;font-weight:800;color:var(--paper-muted)}
+.call.entender{background:var(--cinza-bg);border-color:#d5d9df;border-left-color:var(--paper-ink)}
+.call.entender .rot{color:var(--paper-ink)}
+.call.passos{border-left-color:var(--ok)}
+.call.passos .rot{color:var(--ok)}
+.call.resolvido{background:var(--panel2);border-color:var(--line2);border-left-color:var(--gold)}
+.call.resolvido .rot{color:var(--gold)}
+.call.resolvido p,.call.resolvido li{color:#dfe4ea}
+.call.resolvido strong{color:#fff}
+.call.resolvido .pg{color:#c8ccd2;border-color:var(--line2)}
+.call.complete{border-left:4px dashed var(--gold)}
+.call.complete .rot{color:var(--ouro-ink)}
+.call.suavez{background:var(--faixa-ouro);border-color:#3a2e10;border-left-color:var(--gold)}
+.call.suavez .rot{color:var(--gold)}
+.call.suavez p,.call.suavez li{color:var(--ouro-claro)}
+.call.suavez strong{color:#fff}
+.call.suavez li::marker{color:var(--gold)}
+.call.suavez .pg{color:var(--ouro-claro);border-color:#3a2e10}
+.call.treino{background:var(--ouro-bg);border-color:#f0dfa6;border-left-color:var(--ouro-ink)}
+.call.treino .rot{color:var(--ouro-ink)}
+.call.atencao{border-left-color:var(--erro)}
+.call.atencao .rot{color:var(--erro)}
+.call.edicao{background:var(--paper);border-left-color:var(--paper-ink)}
+.call.edicao .rot{color:var(--paper-ink)}
+.call.dica{background:var(--ouro-bg);border-left-color:var(--gold)}
+.call.dica .rot{color:var(--ouro-ink)}
+.call ol,.call ul{padding-left:1.3em}
+.call .pg{background:transparent}
+
+.respostas{border:1px solid var(--paper-line);border-left:4px solid var(--ok);border-radius:8px;background:#fff}
+.respostas summary{cursor:pointer;padding:12px 16px;font-weight:800;color:var(--ok);list-style:none;min-height:44px;display:flex;align-items:center}
+.respostas summary::-webkit-details-marker{display:none}
+.respostas summary::before{content:"+";display:inline-grid;place-items:center;width:1.4em;height:1.4em;margin-right:8px;border-radius:50%;background:var(--ok-bg)}
+.respostas[open] summary::before{content:"−"}
+.respostas>div{padding:0 16px 16px;display:grid;gap:12px}
+
+.sec.rapido{outline:2px solid var(--gold);outline-offset:-2px}
+.sec.rapido>h2::after{content:"4 min de leitura";margin-left:auto;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:#000;background:var(--gold);border-radius:3px;padding:3px 8px;white-space:nowrap}
+.sec.rapido>p:first-of-type{font-size:1.02rem}
+.sec.ref{outline:2px solid var(--gold);outline-offset:-2px}
+.sec.ref>h2::after{content:"Leve para a mesa";margin-left:auto;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:#000;background:var(--gold);border-radius:3px;padding:3px 8px;white-space:nowrap}
+
+footer{border-top:1px solid var(--line);background:var(--panel);color:var(--muted);font-size:.85rem}
+footer .in{max-width:760px;margin:0 auto;padding-block:20px}
+@media (max-width:600px){
+  .bloco{padding:16px;border-radius:8px}
+  .sec.ref>h2::after{display:none}
+}
+/* essencial x opcional: o que não é essencial abre com um toque */
+.dobra{border:1px solid var(--paper-line);border-radius:8px;background:#fff}
+.dobra>summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:10px;padding:11px 14px;font-weight:700;font-size:.92rem;color:var(--paper-ink);min-height:44px}
+.dobra>summary::-webkit-details-marker{display:none}
+.dobra>summary::before{content:"+";flex:none;display:grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--paper-line);color:var(--paper-ink);font-weight:800;line-height:1}
+.dobra[open]>summary::before{content:"−"}
+.dobra>.call,.dobra>details,.dobra>aside{margin:0 12px 12px}
+.dobra.pratica>summary{color:var(--ouro-ink)}
+.dobra.pratica[open]{display:grid;gap:10px;padding-bottom:12px}
+.dobra.pratica>*:not(summary){margin:0 12px}
+.dobra.sec-opc{border-style:dashed}
+.dobra.sec-opc[open]{padding-bottom:12px}
+.dobra.sec-opc>*:not(summary){margin-left:14px;margin-right:14px}
+.tag-opc{margin-left:10px;font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;font-weight:800;color:var(--paper-muted);border:1px solid var(--paper-line);border-radius:3px;padding:2px 6px;vertical-align:middle}
+.legenda-f{font-size:.88rem;color:var(--muted)}.legenda-f b{color:var(--ink)}
+.mais-i{display:inline-grid;place-items:center;width:18px;height:18px;border-radius:50%;background:var(--paper-line);color:var(--paper-ink);font-weight:800;font-size:.8rem}
+.indice small{color:var(--muted);font-weight:400}
+.sec p,.sec li,.sec a{overflow-wrap:anywhere}
+
+.ico{display:inline-block;width:28px;height:28px;vertical-align:middle;border-radius:5px;margin-right:6px}
+td .ico{margin-right:6px}
+.rec{display:inline-flex;align-items:center;gap:0;white-space:nowrap}
+.cel{display:block;min-width:0}
+
+/* referências visuais (01/11/2026): figura do manual e vídeo no ponto da ação */
+.fig,.video{margin:4px 0;display:grid;gap:6px;min-width:0}
+.fig img{width:100%;height:auto;border-radius:8px;border:1px solid var(--paper-line);background:#fff}
+.fig figcaption,.video figcaption{font-size:.82rem;color:var(--paper-muted);line-height:1.45}
+.yt{position:relative;display:block;width:100%;padding:0;border:0;border-radius:8px;overflow:hidden;cursor:pointer;background:#000;aspect-ratio:16/9}
+.yt img{width:100%;height:100%;object-fit:cover;opacity:.85;display:block}
+.yt-play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:#c4302b;color:#fff;font-weight:800;font-size:.95rem;padding:10px 16px;border-radius:999px;white-space:nowrap;box-shadow:0 2px 10px rgba(0,0,0,.4)}
+.yt:hover .yt-play,.yt:focus-visible .yt-play{background:#e03a33}
+.video iframe{width:100%;aspect-ratio:16/9;border:0;border-radius:8px;display:block}
+/* fotos em todas as seções (04/11/2026): foto do jogo no topo e em cada seção sem figura do manual */
+.topo-cj{overflow:hidden}
+.foto-topo{margin:-20px -20px 4px;display:grid;gap:0}
+.foto-topo img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;background:#fff}
+.foto-topo figcaption{font-size:.78rem;color:var(--paper-muted);padding:6px 20px 0}
+.foto-topo.caixa img,.foto-sec.caixa img{object-fit:contain}
+.foto-sec img{aspect-ratio:16/9;object-fit:cover}
+@media (max-width:600px){.foto-topo{margin:-16px -16px 4px}.foto-topo figcaption{padding:6px 16px 0}}
+.sec.setup{border-top:4px solid var(--ok)}
+.sec.setup>h2::before{content:"Comece por aqui";display:block;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ok);margin-bottom:4px}
+.sec.setup>h2{display:block}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://eliteboardgamers.com.br/#organizacao", "name": "Elite Boardgamers", "url": "https://eliteboardgamers.com.br/", "logo": {"@type": "ImageObject", "url": "https://eliteboardgamers.com.br/marca/elite-boardgamers.webp", "width": 318, "height": 254}, "sameAs": ["https://www.instagram.com/eliteboardgamers/"]}, {"@type": "Article", "@id": "https://eliteboardgamers.com.br/como-jogar/sushi-go/#artigo", "mainEntityOfPage": "https://eliteboardgamers.com.br/como-jogar/sushi-go/", "headline": "Como jogar Sushi Go!", "description": "Regras de Sushi Go! passo a passo, conferidas no manual da Devir: montagem, escolher e passar, wasabi, hashis, pontuação de cada prato e pudins.", "image": ["https://eliteboardgamers.com.br/como-jogar/sushi-go/fotos/componentes-1.webp"], "datePublished": "2026-11-08", "author": {"@type": "Organization", "name": "Redação Elite Boardgamers", "url": "https://eliteboardgamers.com.br/politica-editorial/"}, "publisher": {"@id": "https://eliteboardgamers.com.br/#organizacao"}, "inLanguage": "pt-BR"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Início", "item": "https://eliteboardgamers.com.br/"}, {"@type": "ListItem", "position": 2, "name": "Como jogar", "item": "https://eliteboardgamers.com.br/como-jogar/"}, {"@type": "ListItem", "position": 3, "name": "Como jogar Sushi Go!", "item": "https://eliteboardgamers.com.br/como-jogar/sushi-go/"}]}]}</script>
+<style id="moldura">.busca-btn{display:grid;place-items:center;flex:none;width:44px;height:44px;padding:0;border:1px solid #3a3f48;border-radius:8px;background:none;color:#e9ecf1;cursor:pointer}.busca-btn:hover{border-color:#e3b23c;color:#e3b23c}.busca-btn[hidden]{display:none}.sino-btn{position:relative;display:grid;place-items:center;flex:none;width:44px;height:44px;padding:0;border:1px solid #3a3f48;border-radius:8px;background:none;color:#e9ecf1;cursor:pointer}.sino-btn:hover,.sino-btn.on{border-color:#e3b23c;color:#e3b23c}.sino-btn[hidden]{display:none}.sino-btn.on::after{content:"";position:absolute;right:7px;top:7px;width:8px;height:8px;border-radius:50%;background:#5fd38d;box-shadow:0 0 0 2px #111}footer .in a{display:inline-flex;align-items:center;min-height:24px}.cpw{position:relative;display:inline-block}.cp{display:inline-flex;align-items:center;justify-content:center;gap:8px;box-sizing:border-box;line-height:1.2;min-height:44px;margin:0;padding:10px 20px;border-radius:999px;border:0;background:#157a43;color:#fff;font:inherit;font-size:.95rem;font-weight:800;text-decoration:none;cursor:pointer}.cp:hover{background:#11683a;color:#fff}.cp .ic{width:19px;height:19px}.cp[hidden]{display:none}.cpw.mini .cp{min-height:40px;padding:8px 14px;font-size:.88rem}.cp-menu{position:absolute;z-index:30;top:calc(100% + 8px);left:0;min-width:200px;display:grid;gap:2px;padding:6px;border-radius:12px;background:#fff;border:1px solid #dde1e7;box-shadow:0 10px 30px rgba(0,0,0,.25)}.cp-menu[hidden]{display:none}.cp-menu.sobe{top:auto;bottom:calc(100% + 8px)}.cp-menu.dir{left:auto;right:0}.cp-op{display:flex;align-items:center;gap:10px;min-height:44px;padding:8px 12px;border:0;border-radius:8px;background:none;color:#14171c;font:inherit;font-size:.95rem;font-weight:700;text-align:left;text-decoration:none;cursor:pointer}.cp-op:hover,.cp-op:focus-visible{background:#eef1f4;color:#14171c}.cp-op .ic{width:20px;height:20px}.cp-op.zap-op .ic{color:#157a43}.cp-st{position:absolute;z-index:30;top:calc(100% + 8px);left:0;white-space:nowrap;margin:0;padding:6px 12px;border-radius:8px;background:#14171c;color:#fff;font-size:.85rem;font-weight:700}.cp-st:empty{display:none}.barra-lt .cp-st{top:auto;bottom:calc(100% + 8px)}.convite{display:flex;align-items:center;justify-content:space-between;gap:12px 20px;flex-wrap:wrap}.convite .cv-t{margin:0;font-weight:800;font-size:1.1rem}.convite .cv-s{margin:2px 0 0;font-size:.92rem;opacity:.8}.barra-lt>*{flex:none}.barra-lt{width:max-content;max-width:calc(100vw - 12px);box-sizing:border-box;position:fixed;z-index:25;left:50%;bottom:calc(12px + env(safe-area-inset-bottom));display:flex;align-items:center;gap:4px;padding:5px;border-radius:999px;background:#14171c;border:1px solid #3a3f48;box-shadow:0 8px 24px rgba(0,0,0,.35);transform:translate(-50%,0);transition:transform .25s ease,opacity .25s ease}.barra-lt.fora{transform:translate(-50%,calc(100% + 24px));opacity:0;pointer-events:none}.lt-b{display:inline-flex;align-items:center;gap:7px;min-height:44px;padding:8px 14px;border:0;border-radius:999px;background:none;color:#e9ecf1;font:inherit;font-size:.9rem;font-weight:700;text-decoration:none;cursor:pointer}.lt-b:hover{background:#262a31;color:#fff}.lt-b .ic{width:20px;height:20px}.barra-lt .lt-b.curtir{background:none;border:0;color:#e9ecf1;padding:8px 14px}.barra-lt .lt-b.curtir[aria-pressed=true]{color:#ff6b81;background:none}@media (max-width:479px){.lt-b span{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}}.lt-b.curtir[aria-pressed=true] .ic{fill:currentColor}.lt-grupo{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:44px;padding:0 14px 0 6px;border-radius:999px;background:#e3b23c;color:#14171c;font-size:.9rem;font-weight:800;text-decoration:none;white-space:nowrap}.lt-grupo:hover{background:#f0c44f;color:#14171c}.lt-grupo img{width:32px;height:32px;border-radius:8px;display:block}@media (max-width:479px){.barra-lt{gap:2px}.barra-lt .lt-b{padding:8px 10px}.barra-lt .cp{padding:8px 12px}.lt-grupo{padding:0 12px 0 6px}}@media (max-width:399px){.barra-lt:has(.curtir) .cp span{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}.barra-lt:has(.curtir) .cp{padding:8px 14px}}.barra-lt .cp{min-height:44px;padding:8px 16px;font-size:.9rem}body.lt-on .voltar-topo,body.lt-on button.sobe{bottom:calc(76px + env(safe-area-inset-bottom))}@media print{.barra-lt{display:none}}.interacoes{display:grid;gap:14px}.interacoes[hidden]{display:none}.curtir-l{display:flex;align-items:center;gap:12px;flex-wrap:wrap}.curtir{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:8px 18px;border-radius:999px;border:2px solid #b3263e;background:#fff;color:#b3263e;font:inherit;font-weight:800;cursor:pointer}.curtir .ic{width:22px;height:22px}.curtir[aria-pressed=true]{background:#b3263e;color:#fff}.curtir[aria-pressed=true] .ic{fill:currentColor}.curtir .n{font-variant-numeric:tabular-nums}.curtir-dica{font-size:.9rem;color:#5a6270}.interacoes h2{margin:4px 0 0}.coms{list-style:none;margin:0;padding:0;display:grid;gap:10px}.coms li{background:#fff;border:1px solid #dde1e7;border-radius:10px;padding:12px 14px}.com-quem{margin:0;font-size:.92rem}.com-quem time{color:#5a6270;font-size:.8rem;margin-left:6px}.com-txt{margin:4px 0 0;white-space:pre-wrap;color:#14171c}.coms-vazio{margin:0;color:#5a6270}.com-form{display:grid;gap:10px;border-top:1px solid #dde1e7;padding-top:14px}.com-form label{display:grid;gap:4px;font-weight:700;font-size:.9rem;color:#14171c}.com-form small{font-weight:600;color:#5a6270}.com-form input,.com-form textarea{font:inherit;font-size:16px;font-weight:400;padding:10px 12px;border:1px solid #c8cdd5;border-radius:8px;background:#fff;color:#14171c}.com-form textarea{resize:vertical;min-height:110px}.com-form .isca{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}.com-form button{justify-self:start;min-height:44px;padding:10px 20px;border-radius:999px;border:0;background:#14171c;color:#fff;font:inherit;font-weight:800;cursor:pointer}.com-form button:disabled{opacity:.6}.com-aviso{margin:0;font-size:.82rem;color:#5a6270}.com-aviso a{color:#1f5fae}.com-st{margin:0;font-weight:700;font-size:.92rem}.com-st:empty{display:none}.com-st.ok{color:#1b7a45}.com-st.erro{color:#a3223a}:where(html){scroll-padding-top:calc(var(--nav-h,49px) + 12px)}.nav{position:sticky;top:0;z-index:20}body .abas,body .barra-f,body .ctrl{top:var(--nav-h,49px)}.marca img.logo{width:auto;height:48px;border-radius:0}@media (max-width:480px){.marca img.logo{height:40px}}.nav .casa{display:flex;align-items:center;justify-content:center;min-width:44px}.nav .casa .ic{width:20px;height:20px}@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.card:hover,.jogo:hover .capa img,.jogo:active .capa,.zap:active,.post-btn:active,.btn-filtro:hover,.btn-filtro:active,.ver:active{transform:none!important}}.in{max-width:1180px;margin:0 auto;padding-left:16px;padding-right:16px}.ic{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round;flex:none}.bar{border-bottom:1px solid var(--line);background:#000;color:var(--ink)}.bar .in{display:flex;align-items:center;gap:12px;padding-top:8px;padding-bottom:8px}.bar a{color:inherit;text-decoration:none;font-weight:600;font-size:.95rem}.marca img{display:block;width:84px;border-radius:6px}.bar .ig{margin-left:auto;display:flex;align-items:center;gap:6px;padding:6px 10px;border-radius:6px}.bar .ig:hover{color:var(--gold)}.bar .zap-mini{display:flex;align-items:center;gap:6px;padding:6px 10px;border-radius:6px;background:#157a43;color:#fff}.nav ul{padding-left:16px;padding-right:16px}.nav ul li{list-style:none}@media (max-width:700px){.bar .ig span,.bar .zap-mini span{display:none}}footer{font-size:.9rem}footer .in{max-width:1180px;display:flex;flex-wrap:wrap;gap:6px 16px;padding-top:20px;padding-bottom:28px}footer a{color:var(--muted);text-decoration:none}footer a:hover{color:var(--gold)}</style>
+<style id="guia-extra">
+/* fotos na lista de tutoriais e no topo de /como-jogar/ (04/11/2026) */
+.topo-cj{overflow:hidden}
+.lista-t a.com-foto{grid-template-columns:96px 1fr;column-gap:14px;align-items:start}
+.lista-t a.com-foto>*{grid-column:2}
+.lista-t a.com-foto>img{grid-column:1;grid-row:1/span 4;width:96px;height:96px;object-fit:cover;border-radius:6px;background:#fff}
+.cj-mosaico{display:grid;grid-template-columns:2fr 1fr;grid-template-rows:1fr 1fr;gap:4px;margin:-20px -20px 4px;aspect-ratio:16/9;overflow:hidden}
+.cj-mosaico img{width:100%;height:100%;object-fit:cover;display:block;background:#fff}
+.cj-mosaico img:first-child{grid-row:1/span 2}
+.cj-mosaico-c{font-size:.78rem;color:var(--paper-muted)}
+@media (max-width:600px){.cj-mosaico{margin:-16px -16px 4px}.lista-t a.com-foto{grid-template-columns:72px 1fr}.lista-t a.com-foto>img{width:72px;height:72px}}
+/* faixa de progresso, presa logo abaixo do menu */
+.guia-prog{position:sticky;top:var(--nav-h,45px);z-index:15;background:var(--panel);border-bottom:1px solid var(--line)}
+.guia-prog a{display:flex;align-items:center;gap:10px;max-width:760px;margin:0 auto;padding:9px 16px;color:var(--ink);text-decoration:none;font-size:.86rem;font-weight:700;min-height:40px}
+.guia-prog .gp-r{flex:none;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--gold)}
+.guia-prog .gp-t{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.guia-prog .gp-i{margin-left:auto;flex:none;font-size:.78rem;color:var(--muted);font-weight:600}
+.guia-prog .gp-b{position:absolute;left:0;right:0;bottom:-1px;height:3px;background:var(--gold);transform-origin:0 50%;transform:scaleX(0)}
+html{scroll-padding-top:calc(var(--nav-h,45px) + 56px)}
+/* legenda dos blocos: pontos de cor em vez de pílulas */
+.legenda{gap:6px 16px}
+.legenda span{position:relative;background:none;color:var(--muted);box-shadow:none!important;padding:0 0 0 16px;font-size:.8rem;letter-spacing:0}
+.legenda span::before{content:"";position:absolute;left:0;top:.32em;width:10px;height:10px;border-radius:3px;background:var(--paper)}
+.legenda .l2::before{background:var(--ok)}.legenda .l3::before{background:var(--gold)}.legenda .l4::before{background:var(--ouro-ink)}
+/* índice numerado */
+.indice ol{counter-reset:it}.indice li{counter-increment:it}
+.indice a{display:flex;gap:10px;align-items:baseline;min-height:40px;padding:9px 0}
+.indice a::before{content:counter(it);flex:none;width:1.6em;font-size:.8rem;font-weight:800;color:var(--ouro-ink);font-variant-numeric:tabular-nums}
+.nota-pe{color:var(--muted);font-size:.85rem;padding:4px 2px 0}
+/* exercícios de múltipla escolha: tocou numa opção, aparece a certa e a explicação */
+.quiz{display:grid;gap:8px;padding:12px 0;border-top:1px solid var(--paper-line)}.quiz:first-of-type{border-top:0}
+.q-p{font-weight:700;color:inherit}
+.q-ops{display:grid;gap:6px}
+.q-op{display:block;width:100%;text-align:left;font:inherit;font-size:.95rem;line-height:1.35;min-height:44px;padding:10px 12px;border-radius:8px;
+ border:1px solid #c8cdd5;background:#fff;color:#14171c;cursor:pointer}
+.q-op:hover{border-color:var(--gold)}.q-op:disabled{cursor:default}
+.q-op.ok{background:#e3f4ea;border-color:#1b7a45;color:#0f4d2b;font-weight:700}.q-op.ok::before{content:"✓ ";font-weight:800}
+.q-op.erro{background:#fbe6e9;border-color:#b3263e;color:#7d1a2b}.q-op.erro::before{content:"✗ ";font-weight:800}
+.q-exp{border-left:4px solid var(--ok);background:#f2faf5;color:#14171c;border-radius:6px;padding:8px 12px}
+.q-exp .q-res{color:var(--ok)}.q-exp.mal{border-left-color:#b3263e;background:#fdf3f4}.q-exp.mal .q-res{color:#b3263e}
+.call.suavez .q-op,.call.resolvido .q-op{border-color:#3a2e10}
+/* endereços longos (fontes) quebram em vez de alargar a página */
+.sec a,.sec li,.sec p{overflow-wrap:anywhere}
+/* títulos das etapas com mais respiro */
+.sec{scroll-margin-top:calc(var(--nav-h,45px) + 56px)}
+@media (min-width:601px){.sec{padding:24px 28px}}
+/* tabelas: fichas no celular (menos as grades de células curtas, que ficam tabela e centralizadas) */
+.tab table.grade th,.tab table.grade td{text-align:center;padding:7px 6px}
+.tab table.grade th{white-space:normal;overflow-wrap:anywhere;hyphens:auto}
+@media (max-width:600px){
+ .tab:not(:has(.grade)){border:0;background:none;overflow:visible;border-radius:0}
+ .tab:not(:has(.grade)) table,.tab:not(:has(.grade)) tbody,.tab:not(:has(.grade)) tr,.tab:not(:has(.grade)) td{display:block}
+ .tab:not(:has(.grade)) thead{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+ .tab:not(:has(.grade)) tr{background:#fff;border:1px solid var(--paper-line);border-radius:8px;padding:10px 12px;margin-bottom:8px}
+ .tab:not(:has(.grade)) td{border:0;padding:3px 0;display:grid;grid-template-columns:6.5em minmax(0,1fr);gap:8px}
+ .tab:not(:has(.grade)) td::before{content:attr(data-label);font-size:.7rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--paper-muted);padding-top:3px}
+ .tab:not(:has(.grade)) td:empty{display:none}
+ .tab:not(:has(.grade)) td:first-child{display:block;font-weight:800;color:var(--paper-ink);padding-bottom:4px}
+ .tab:not(:has(.grade)) td:first-child::before{display:none}
+}
+</style>
+</head>
+<body>
+<!--moldura--><a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<header class="bar" id="topo"><div class="in">
+ <a class="marca" href="../../"><img class="logo" src="../../marca/logo-eb-104.webp" srcset="../../marca/logo-eb-52.webp 157w, ../../marca/logo-eb-104.webp 314w, ../../marca/logo-eb-156.webp 472w" sizes="(max-width: 480px) 121px, 145px" width="157" height="52" alt="Elite Board Gamers: página inicial"></a>
+ <a class="ig" href="https://www.instagram.com/eliteboardgamers/" target="_blank" rel="noopener" aria-label="Instagram @eliteboardgamers"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6" fill="currentColor"/></svg><span>@eliteboardgamers</span></a>
+ <a class="zap-mini" href="https://chat.whatsapp.com/IgQQkJdSkzHBaEq3UwFeAo" target="_blank" rel="noopener" aria-label="Grupo do WhatsApp"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8.4 19l-4.4 1Z"/><path d="M9.2 8.6c.3-.5.8-.5 1-.1l.7 1.5c.1.3 0 .6-.2.8l-.4.4c.5 1.1 1.4 2 2.5 2.5l.4-.4c.2-.2.5-.3.8-.2l1.5.7c.4.2.4.7-.1 1-.7.5-1.6.6-2.4.3a7 7 0 0 1-4.2-4.2c-.3-.8-.2-1.7.4-2.3Z"/></svg><span>Grupo do WhatsApp</span></a>
+ <button type="button" class="busca-btn" aria-label="Buscar no site" aria-haspopup="dialog" aria-keyshortcuts="/ Control+K" hidden><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></button>
+ <button type="button" class="sino-btn" aria-label="Receber notificações" aria-haspopup="dialog" aria-expanded="false" hidden><svg class="ic" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 3a6 6 0 0 0-6 6v3.6L4.3 15.5A1 1 0 0 0 5.2 17h13.6a1 1 0 0 0 .9-1.5L18 12.6V9a6 6 0 0 0-6-6z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M9.5 19.5a2.6 2.6 0 0 0 5 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+</div></header>
+<script src="/sino.js?v=2" defer></script>
+<script>(()=>{const b=document.querySelector('.busca-btn');let c;b.hidden=false;const a=()=>{c=c||new Promise((r,j)=>{const s=document.createElement('script');s.src='../../busca.js';s.onload=r;s.onerror=()=>{c=null;j()};document.head.append(s)});c.then(()=>abrirBusca('../../'),()=>{})};b.addEventListener('click',a);addEventListener('keydown',e=>{const t=e.target,ed=t.isContentEditable||/^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName);if((e.key==='/'&&!ed&&!e.ctrlKey&&!e.metaKey)||((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k')){e.preventDefault();a()}})})()</script>
+<nav class="nav" aria-label="Seções do site"><ul class="in"><li><a class="casa" href="../../" aria-label="Página inicial"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 9.5V20h13V9.5"/><path d="M10 20v-5.5h4V20"/></svg></a></li><li><a href="../../noticias/">Notícias</a></li><li><a href="../../resenhas/">Resenhas</a></li><li><a href="../../como-jogar/" aria-current="true">Como jogar</a></li><li><a href="../../lancamentos/">Lançamentos</a></li><li><a href="../../black/">Black de Verdade</a></li></ul></nav>
+<script>(()=>{const n=document.querySelector('.nav'),h=()=>document.documentElement.style.setProperty('--nav-h',n.offsetHeight+'px');h();addEventListener('resize',h);addEventListener('load',h)})()</script>
+<div class="guia-prog"><a href="#neste-guia"><span class="gp-r">Guia</span><span class="gp-t">Neste guia</span><span class="gp-i">Índice</span></a><span class="gp-b" aria-hidden="true"></span></div><!--/moldura-->
+
+<main id="conteudo" class="gut"><div class="nota">
+  <nav class="trilha" aria-label="Trilha de navegação"><ol><li><a href="../../">Início</a></li><li><a href="../">Como jogar</a></li><li aria-current="page">Sushi Go!</li></ol></nav>
+
+  <article class="bloco topo-cj">
+    <figure class="foto-topo"><img src="fotos/componentes-1.webp" alt="Sushi Go!: os componentes" width="1500" height="1201" fetchpriority="high" decoding="async"><figcaption>Imagem: Gamewright</figcaption></figure>
+    <span class="num-l">Escolher e passar · Cartas</span>
+    <h1>Como jogar Sushi Go!</h1>
+    <p class="meta-e"><span>Para quem nunca jogou</span><span>2 a 5 jogadores</span><span>15 min</span><span>8+</span><span>Edição Devir</span></p>
+    <p class="meta"><time datetime="2026-11-08">8 de novembro de 2026</time> · Redação Elite Boardgamers</p>
+  </article>
+
+  <section class="bloco r1" aria-label="Resumo em 1 minuto">
+    <span class="kick">Resumo em 1 minuto</span>
+    <p class="resp">Em cada turno você fica com uma carta da mão e passa o resto para a esquerda; depois de três rodadas, vence quem somar mais pontos com os pratos e os pudins.</p>
+    <ul><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.5l4.5 4.5L19.5 6.5"/></svg><span>Todos escolhem uma carta ao mesmo tempo, revelam juntos e passam o resto da mão para o jogador da esquerda.</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.5l4.5 4.5L19.5 6.5"/></svg><span>Tempurá vale em pares, sashimi em trios, gyoza cresce a cada carta; o wasabi triplica o próximo nigiri e o maki é disputado com a mesa.</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.5l4.5 4.5L19.5 6.5"/></svg><span>Os pudins ficam guardados até o fim: quem tem mais ganha 6 pontos e quem tem menos perde 6.</span></li></ul>
+    <p class="pe"><span><b>Como você aprende:</b> 3 etapas, da mesa montada à contagem de pontos</span><span><b>Leitura do essencial:</b> cerca de 5 min</span></p>
+    <p class="legenda-f"><b>À vista, só o essencial para jogar.</b> O que abre com <span class="mais-i">+</span> é explicação, exemplo, exercício ou regra de caso especial: abra quando precisar.</p>
+  </section>
+
+<section class="bloco sec setup" id="montar-a-mesa-passo-a-passo"><h2><span class="num"></span>Montar a mesa passo a passo</h2>
+<p>A montagem segue a "Preparação" do manual <span class="pg">p.&nbsp;2</span>, na mesma ordem, com cada ação num passo. Sushi Go! não tem tabuleiro: tudo o que vai à mesa são as cartas, papel e caneta.</p>
+<p><strong>Componentes da caixa</strong> <span class="pg">p.&nbsp;2</span></p>
+<div class="tab"><table><thead><tr><th>Carta</th><th>Quantidade</th><th>Para que serve</th></tr></thead><tbody><tr><td data-label="Carta">Tempurá</td><td data-label="Quantidade">14</td><td data-label="Para que serve">Em pares: cada par vale 5 pontos</td></tr><tr><td data-label="Carta">Sashimi</td><td data-label="Quantidade">14</td><td data-label="Para que serve">Em trios: cada trio vale 10 pontos</td></tr><tr><td data-label="Carta">Gyoza</td><td data-label="Quantidade">14</td><td data-label="Para que serve">Quanto mais, mais pontos, até 15</td></tr><tr><td data-label="Carta">Maki (2), maki (3) e maki (1)</td><td data-label="Quantidade">12, 8 e 6</td><td data-label="Para que serve">Os símbolos de maki disputam 6 e 3 pontos; o número entre parênteses é a quantidade de símbolos de maki da carta</td></tr><tr><td data-label="Carta">Nigiri de salmão, de lula e de ovo</td><td data-label="Quantidade">10, 5 e 5</td><td data-label="Para que serve">Valem 2, 3 e 1 ponto</td></tr><tr><td data-label="Carta">Wasabi</td><td data-label="Quantidade">6</td><td data-label="Para que serve">Triplica o próximo nigiri</td></tr><tr><td data-label="Carta">Hashis</td><td data-label="Quantidade">4</td><td data-label="Para que serve">Permitem baixar 2 cartas num turno futuro</td></tr><tr><td data-label="Carta">Pudim</td><td data-label="Quantidade">10</td><td data-label="Para que serve">Só contam no fim do jogo</td></tr></tbody></table></div>
+<p>São 108 cartas ao todo <span class="pg">p.&nbsp;2</span>, mais o manual, segundo a página do produto na Devir. Papel e caneta não vêm na caixa: o manual pede que os jogadores os providenciem <span class="pg">p.&nbsp;2</span>.</p>
+<figure class="fig"><img src="fotos/componentes-1.webp" alt="Algumas cartas da caixa, em foto da editora original: tempurá, wasabi, hashis, sashimi e pudim, ao lado da lata do jogo. É a edição em inglês; os nomes e o texto das cartas da caixa brasileira estão em português. Imagem: Gamewright" loading="lazy" decoding="async"><figcaption>Algumas cartas da caixa, em foto da editora original: tempurá, wasabi, hashis, sashimi e pudim, ao lado da lata do jogo. É a edição em inglês; os nomes e o texto das cartas da caixa brasileira estão em português. Imagem: Gamewright</figcaption></figure>
+<p><strong>Os passos</strong> <span class="pg">p.&nbsp;2</span></p>
+<p><strong>1. Embaralhar.</strong> Junte as 108 cartas num só monte e embaralhe bem <span class="pg">p.&nbsp;2</span>. Não há baralhos separados por tipo: todas as comidas vão juntas.</p>
+<figure class="fig"><img src="figuras/setup-1-cartas.webp" alt="Três cartas como aparecem na página de preparação do manual: tempurá, nigiri de salmão e gyoza. Cada carta mostra no rodapé o nome e um lembrete da pontuação. Ilustração: manual Devir (p. 2)" loading="lazy" decoding="async"><figcaption>Três cartas como aparecem na página de preparação do manual: tempurá, nigiri de salmão e gyoza. Cada carta mostra no rodapé o nome e um lembrete da pontuação. Ilustração: manual Devir <span class="pg">p.&nbsp;2</span></figcaption></figure>
+<p><strong>2. Dar as cartas.</strong> Dê a cada jogador o número de cartas da tabela abaixo: 10 com 2 jogadores, 9 com 3, 8 com 4 e 7 com 5 <span class="pg">p.&nbsp;2</span>.</p>
+<p><strong>3. Mão escondida.</strong> Cada jogador segura as suas cartas na mão, sem deixar os outros verem <span class="pg">p.&nbsp;2</span>.</p>
+<p><strong>4. Pilha de compra.</strong> O resto das cartas fica numa pilha virada para baixo, no centro da mesa <span class="pg">p.&nbsp;2</span>. Ela só volta a ser usada no começo da rodada seguinte, para dar as novas mãos <span class="pg">p.&nbsp;7</span>.</p>
+<p><strong>5. Placar.</strong> Separe papel e caneta e escolham um jogador para anotar a pontuação <span class="pg">p.&nbsp;2</span>.</p>
+<p>O manual não ilustra a mesa montada: a página de preparação mostra só as cartas soltas da figura acima.</p>
+<p><strong>O que muda com o número de jogadores</strong> (p. 2; contas do guia nas três últimas colunas)</p>
+<div class="tab"><table class="grade"><thead><tr><th>Jogadores</th><th>Cartas na mão de cada um</th><th>Turnos por rodada</th><th>Cartas na pilha de compra depois de dar</th><th>Cartas usadas nas 3 rodadas</th></tr></thead><tbody><tr><td>2</td><td>10</td><td>10</td><td>88</td><td>60</td></tr><tr><td>3</td><td>9</td><td>9</td><td>81</td><td>81</td></tr><tr><td>4</td><td>8</td><td>8</td><td>76</td><td>96</td></tr><tr><td>5</td><td>7</td><td>7</td><td>73</td><td>105</td></tr></tbody></table></div>
+<p><strong>O que volta para a caixa.</strong> Nada. Todas as 108 cartas são embaralhadas juntas; as que nunca saem da pilha de compra são ignoradas no fim do jogo <span class="pg">p.&nbsp;8</span>.</p>
+<p><strong>Quem começa.</strong> Ninguém. Em cada turno, todos escolhem a sua carta ao mesmo tempo <span class="pg">p.&nbsp;3</span>. O que existe é um jogador escolhido para anotar o placar <span class="pg">p.&nbsp;2</span>.</p>
+<p><strong>Antes de começar, confira:</strong> as 108 cartas embaralhadas juntas; cada jogador com a quantidade da tabela, na mão e escondida; o resto numa pilha virada para baixo no centro; papel, caneta e alguém para anotar.</p>
+<div class="quiz"><p class="q-p">Partida de 4 jogadores. Quantas cartas cada um recebe?</p><div class="q-ops"><button type="button" class="q-op">10</button><button type="button" class="q-op">7</button><button type="button" class="q-op" data-ok>8</button><button type="button" class="q-op">9</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Com 4 jogadores, 8 cartas para cada um; com 2, 10; com 3, 9; com 5, 7 <span class="pg">p.&nbsp;2</span>.</p></div></div>
+</section>
+<section class="bloco sec rapido" id="comece-a-jogar-em-4-minutos"><h2><span class="num"></span>Comece a jogar em 4 minutos</h2>
+<figure class="fig foto-sec caixa"><img src="fotos/capa-1.webp" alt="Sushi Go!: a caixa" width="1143" height="1600" loading="lazy" decoding="async"><figcaption>Imagem: Gamewright</figcaption></figure>
+<p><strong>Meta:</strong> em 4 minutos de leitura, montar a mesa e jogar o primeiro turno sem abrir o manual.</p>
+<h3>A ideia do jogo</h3>
+<p>Você recebe uma <strong>mão</strong> de cartas de comida. Em cada <strong>turno</strong>, fica com uma carta, baixa essa carta na sua frente, virada para baixo, e passa o resto da mão para o jogador da esquerda. Depois de três <strong>rodadas</strong>, quem tiver mais <strong>pontos</strong> vence: cada comida pontua de um jeito, e muitas só valem em grupo (p. 3 a 9).</p>
+<h3>Monte a mesa</h3>
+<p>Resumo da seção "Montar a mesa passo a passo", acima <span class="pg">p.&nbsp;2</span>.</p>
+<ol><li>Embaralhe as 108 cartas juntas.</li><li>Dê 10 cartas a cada um com 2 jogadores, 9 com 3, 8 com 4 e 7 com 5. Cada um segura a sua mão escondida.</li><li>O resto vira uma pilha de compra, virada para baixo, no centro.</li><li>Papel e caneta; alguém anota o placar.</li></ol>
+<h3>Seu primeiro turno</h3>
+<p>Um turno acontece assim, e todos o fazem ao mesmo tempo <span class="pg">p.&nbsp;3</span>:</p>
+<ol><li><strong>Escolher.</strong> Cada jogador escolhe 1 carta da própria mão e a põe na sua frente, virada para baixo.</li><li><strong>Revelar.</strong> Quando todos escolheram, todos viram a carta escolhida para cima, juntos.</li><li><strong>Passar.</strong> Cada um passa as cartas que sobraram na mão, viradas para baixo, para o jogador da esquerda, e pega as que recebeu da direita. Começa o turno seguinte, com uma carta a menos na mão.</li></ol>
+<p>As cartas baixadas ficam viradas para cima na sua frente até o fim da rodada, quando são pontuadas. O manual sugere agrupar as do mesmo tipo <span class="pg">p.&nbsp;3</span>.</p>
+<p>No primeiro turno, duas cartas pedem atenção, mas só fazem efeito depois: <strong>wasabi</strong> triplica o próximo nigiri que você baixar <span class="pg">p.&nbsp;3</span>, e <strong>hashis</strong> deixa você baixar 2 cartas num turno futuro <span class="pg">p.&nbsp;4</span>. As duas estão na <a href="#etapa-1-escolher-revelar-e-passar">etapa 1</a>.</p>
+<aside class="call resolvido"><p class="rot">Tarefa · exemplo resolvido</p><p><strong>Exemplo resolvido.</strong> Partida de 4 jogadores. Você recebeu 8 cartas: tempurá, tempurá, sashimi, maki (3), nigiri de lula, wasabi, pudim e gyoza. Você escolhe o wasabi e o põe na sua frente, virado para baixo. Quando os quatro escolheram, todos revelam. Você passa as outras 7 cartas para o jogador da esquerda e pega as 7 que o jogador da direita lhe passou. Começa o segundo turno <span class="pg">p.&nbsp;2 e 3</span>.</p></aside>
+<aside class="call complete"><p class="rot">Tarefa · complete</p><p><strong>Complete.</strong> Partida de 5 jogadores, primeiro turno. Você recebeu 7 cartas, escolheu um sashimi e o pôs na sua frente, virado para baixo. Dois jogadores ainda estão escolhendo.</p>
+<div class="quiz"><p class="q-p">O que você faz agora?</p><div class="q-ops"><button type="button" class="q-op">Vira o sashimi para cima e passa a mão</button><button type="button" class="q-op" data-ok>Espera os dois escolherem; aí todos revelam juntos</button><button type="button" class="q-op">Passa a mão para a esquerda enquanto eles escolhem</button><button type="button" class="q-op">Compra uma carta da pilha para repor a mão</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Todos revelam ao mesmo tempo, depois que todos escolheram, e só então passam a mão <span class="pg">p.&nbsp;3</span>. A pilha de compra só serve para dar as mãos de cada rodada <span class="pg">p.&nbsp;2 e 7</span>.</p></div></div></aside>
+<aside class="call suavez"><p class="rot">Tarefa · sua vez</p><p><strong>Sua vez.</strong></p>
+<div class="quiz"><p class="q-p">Partida de 3 jogadores, primeiro turno. Depois que todos revelam, quantas cartas você passa, e para quem?</p><div class="q-ops"><button type="button" class="q-op">9 cartas, para a direita</button><button type="button" class="q-op">8 cartas, para quem tiver menos pontos</button><button type="button" class="q-op" data-ok>8 cartas, para o jogador da esquerda</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Com 3 jogadores, cada um começa com 9 cartas <span class="pg">p.&nbsp;2</span>; depois de baixar uma, sobram 8, que vão viradas para baixo para a esquerda <span class="pg">p.&nbsp;3</span>.</p></div></div></aside>
+<h3>Ainda não precisa saber</h3>
+<p>Onde vai o nigiri quando você tem wasabi, como usar os hashis e o que acontece no último turno: <a href="#etapa-1-escolher-revelar-e-passar">etapa 1</a>. Quanto vale cada comida: <a href="#etapa-2-pontuar-uma-rodada">etapa 2</a>. Começar uma nova rodada, os pudins e quem vence: <a href="#etapa-3-tres-rodadas-pudins-e-o-vencedor">etapa 3</a>.</p>
+<h3>Como a partida acaba: três rodadas e a sobremesa</h3>
+<p>Cada rodada termina quando a última carta das mãos é baixada; aí todos pontuam o que está na frente <span class="pg">p.&nbsp;4</span>. Depois da terceira rodada, os pudins contam pontos, e quem tiver mais pontos vence <span class="pg">p.&nbsp;8 e 9</span>.</p>
+<p><strong>Prefere ver?</strong> O vídeo de regras rápidas é do canal da própria Devir. Ele complementa este guia; em caso de diferença, vale o manual.</p>
+<figure class="video"><button type="button" class="yt" data-id="yBhsS6p03Zk" data-t="0" aria-label="Assistir ao vídeo"><img src="https://i.ytimg.com/vi/yBhsS6p03Zk/hqdefault.jpg" alt="" loading="lazy" decoding="async" width="480" height="360"><span class="yt-play">▶ Assistir ao vídeo</span></button><figcaption>DEVIR BRASIL I Sushi Go! - regras rápidas, canal Devir TV Brasil · <a href="https://www.youtube.com/watch?v=yBhsS6p03Zk&amp;t=0s" rel="noopener">abrir no YouTube</a></figcaption></figure>
+<aside class="call atencao"><p class="rot">Atenção</p><p><strong>Os três erros mais caros.</strong> Ninguém escolhe e revela em momentos diferentes: todos escolhem virado para baixo e revelam juntos <span class="pg">p.&nbsp;3</span>. A mão passa sempre para a esquerda, na regra normal <span class="pg">p.&nbsp;3</span>. As cartas baixadas não voltam para a mão: ficam na sua frente até a pontuação <span class="pg">p.&nbsp;3</span>.</p></aside>
+</section>
+  <nav class="bloco indice" id="neste-guia" aria-label="Neste guia"><h2>Neste guia</h2><ol><li><a href="#montar-a-mesa-passo-a-passo">Montar a mesa passo a passo</a></li><li><a href="#comece-a-jogar-em-4-minutos">Comece a jogar em 4 minutos</a></li><li><a href="#antes-de-tudo-o-que-e-este-jogo">Antes de tudo: o que é este jogo</a> <small>(opcional)</small></li><li><a href="#como-este-guia-ensina">Como este guia ensina</a> <small>(opcional)</small></li><li><a href="#etapa-1-escolher-revelar-e-passar">Etapa 1: escolher, revelar e passar</a></li><li><a href="#etapa-2-pontuar-uma-rodada">Etapa 2: pontuar uma rodada</a></li><li><a href="#etapa-3-tres-rodadas-pudins-e-o-vencedor">Etapa 3: três rodadas, pudins e o vencedor</a></li><li><a href="#situacoes-especiais">Situações especiais</a> <small>(opcional)</small></li><li><a href="#avaliacao-final">Avaliação final</a> <small>(opcional)</small></li><li><a href="#para-consultar-durante-a-partida">Para consultar durante a partida</a></li><li><a href="#fontes">Fontes</a></li></ol></nav>
+
+<section class="bloco sec opc" id="antes-de-tudo-o-que-e-este-jogo"><h2><span class="num">0</span>Antes de tudo: o que é este jogo<span class="tag-opc">Opcional</span></h2>
+<figure class="fig foto-sec caixa"><img src="fotos/capa-1.webp" alt="Sushi Go!: a caixa" width="1143" height="1600" loading="lazy" decoding="async"><figcaption>Imagem: Gamewright</figcaption></figure>
+<details class="dobra sec-opc"><summary>Abrir esta seção</summary><p>Sushi Go! é um jogo de cartas de Paul Walker-Harding, com ilustrações de Nan Rangsima, para 2 a 5 jogadores a partir de 8 anos, com partidas de cerca de 15 minutos, segundo a página do produto na Devir. Autor, ilustrador e distribuidora brasileira estão no manual <span class="pg">p.&nbsp;11</span>.</p>
+<p>São três rodadas de escolher uma carta e passar o resto da mão adiante. A decisão de cada turno tem dois lados: o que você quer para fechar os seus grupos de comida e o que você deixa na mão que vai para o vizinho <span class="pg">p.&nbsp;3</span>.</p>
+<p>Este guia é do jogo base; o Sushi Go Party! é outro jogo, com outras regras.</p></details>
+</section>
+<section class="bloco sec opc" id="como-este-guia-ensina"><h2><span class="num">1</span>Como este guia ensina<span class="tag-opc">Opcional</span></h2>
+<figure class="fig foto-sec caixa"><img src="fotos/capa-1.webp" alt="Sushi Go!: a caixa" width="1143" height="1600" loading="lazy" decoding="async"><figcaption>Imagem: Gamewright</figcaption></figure>
+<details class="dobra sec-opc"><summary>Abrir esta seção</summary><p>Três etapas, na ordem em que você precisa delas: escolher e passar (com wasabi e hashis); pontuar uma rodada; três rodadas, pudins e o vencedor. Cada etapa tem <strong>Para entender</strong>, <strong>Passo a passo</strong>, regras de caso especial à parte e tarefas com ajuda decrescente: <strong>exemplo resolvido</strong>, <strong>complete</strong> e <strong>sua vez</strong>. Toque numa opção para ver a certa e a explicação. No fim, uma avaliação diz o que reler, e a folha de consulta vai para a mesa.</p></details>
+</section>
+<section class="bloco sec" id="etapa-1-escolher-revelar-e-passar"><h2><span class="num">2</span>Etapa 1: escolher, revelar e passar</h2>
+<details class="dobra entender"><summary>Por que funciona assim</summary><aside class="call entender"><p>A mão que você segura agora vai parar na frente do vizinho da esquerda no turno seguinte, e a do vizinho da direita chega até você <span class="pg">p.&nbsp;3</span>. Por isso cada escolha conta duas vezes: o que você pega e o que você deixa passar.</p></aside></details>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Um turno</strong> <span class="pg">p.&nbsp;3</span></p>
+<ol><li>Cada jogador escolhe 1 carta da mão e a põe na sua frente, virada para baixo.</li><li>Quando todos escolheram, todos revelam a carta ao mesmo tempo.</li><li>Se a carta revelada é um nigiri e você já tem um wasabi sem nigiri na frente, o nigiri vai sobre esse wasabi.</li><li>Cada um passa o resto da mão, virado para baixo, para o jogador da esquerda.</li><li>Todos pegam as cartas recebidas, e começa o turno seguinte, com uma carta a menos.</li></ol></aside>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>O fim da rodada</strong> <span class="pg">p.&nbsp;4</span></p>
+<ol><li>No último turno, cada um recebe uma única carta da direita.</li><li>Essa carta é baixada direto, junto das outras na sua frente.</li><li>Com as mãos vazias, todos pontuam as cartas que coletaram (etapa 2).</li></ol></aside>
+<details class="dobra mais"><summary>Regra adicional: Wasabi</summary><aside class="call mais"><p>Se você baixa um nigiri (de lula, de salmão ou de ovo) e já tem um wasabi na sua frente, esse nigiri deve ir sobre o wasabi e vale o triplo <span class="pg">p.&nbsp;3 e 7</span>. Você pode ter vários wasabis na frente, mas cada um recebe só 1 nigiri <span class="pg">p.&nbsp;3</span>. Wasabi sem nigiri não vale nada <span class="pg">p.&nbsp;7</span>.</p></aside></details>
+<figure class="fig"><img src="figuras/nigiri-wasabi.webp" alt="O nigiri de salmão e o wasabi, como aparecem no manual. O lembrete do wasabi diz &quot;próximo nigiri x3&quot;: vale para o nigiri que chega depois dele. Ilustração: manual Devir (p. 7)" loading="lazy" decoding="async"><figcaption>O nigiri de salmão e o wasabi, como aparecem no manual. O lembrete do wasabi diz "próximo nigiri x3": vale para o nigiri que chega depois dele. Ilustração: manual Devir <span class="pg">p.&nbsp;7</span></figcaption></figure>
+<details class="dobra mais"><summary>Regra adicional: Hashis</summary><aside class="call mais"><p>Se você já tem uma carta de hashis na sua frente, pode baixar 2 cartas num turno futuro. Escolha a primeira carta normalmente; antes de todos revelarem, diga "Sushi Go!" e baixe a segunda carta da sua mão. Depois todos revelam. Antes de passar a mão, pegue a carta de hashis da sua frente de volta para a mão: ela segue com as outras cartas para a esquerda, e outro jogador pode baixá-la. Você pode ter várias cartas de hashis na frente, mas usa só 1 por turno <span class="pg">p.&nbsp;4</span>. A carta de hashis não vale pontos <span class="pg">p.&nbsp;7</span>.</p></aside></details>
+<figure class="fig"><img src="figuras/hashis.webp" alt="A carta de hashis, com o lembrete &quot;escolha dois&quot;. Ilustração: manual Devir (p. 4)" loading="lazy" decoding="async"><figcaption>A carta de hashis, com o lembrete "escolha dois". Ilustração: manual Devir <span class="pg">p.&nbsp;4</span></figcaption></figure>
+<aside class="call atencao"><p class="rot">Atenção</p><p><strong>Wasabi vem antes do nigiri.</strong> O wasabi triplica o nigiri que você baixa depois dele, e o manual diz que o nigiri deve ir sobre ele, mesmo que seja o de ovo <span class="pg">p.&nbsp;3</span>. Um nigiri que já estava na sua frente antes do wasabi não passa para cima dele (o manual fala de um wasabi que você "já tem", e a carta diz "próximo nigiri x3").</p></aside>
+<details class="dobra resolvido"><summary>Ver um exemplo resolvido</summary><aside class="call resolvido"><p>Você tem na frente 1 sashimi e 1 carta de hashis, e a mão que recebeu tem 4 cartas: sashimi, sashimi, gyoza e maki (2). Você escolhe um sashimi, diz "Sushi Go!" e baixa o outro sashimi. Todos revelam. Agora são 3 sashimis na sua frente, um trio. Você pega a carta de hashis de volta e passa para a esquerda 3 cartas: gyoza, maki (2) e hashis. Os outros, que baixaram 1 carta cada, também passam 3 <span class="pg">p.&nbsp;4 e 6</span>.</p></aside></details>
+
+
+<details class="dobra pratica"><summary>Pratique esta etapa: exercícios com respostas</summary><aside class="call complete"><p class="rot">Tarefa · complete</p><p><strong>Complete.</strong> Você tem 2 wasabis na frente, ambos sem nigiri. Neste turno, baixa um nigiri de salmão; dois turnos depois, um nigiri de ovo.</p>
+<div class="quiz"><p class="q-p">Onde vão os dois nigiris?</p><div class="q-ops"><button type="button" class="q-op">Os dois sobre o mesmo wasabi</button><button type="button" class="q-op" data-ok>Um sobre cada wasabi</button><button type="button" class="q-op">Só o de salmão; o de ovo fica de fora</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Cada wasabi recebe só 1 nigiri, e todo nigiri baixado com um wasabi livre na frente deve ir sobre ele <span class="pg">p.&nbsp;3</span>.</p></div></div>
+<div class="quiz"><p class="q-p">Quanto valem os dois juntos no fim da rodada?</p><div class="q-ops"><button type="button" class="q-op">3</button><button type="button" class="q-op">6</button><button type="button" class="q-op" data-ok>9</button><button type="button" class="q-op">12</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Salmão sobre wasabi vale 6, e ovo sobre wasabi vale 3: 9 ao todo <span class="pg">p.&nbsp;7</span>.</p></div></div></aside>
+<aside class="call suavez"><p class="rot">Tarefa · sua vez</p><p><strong>Sua vez.</strong></p>
+<div class="quiz"><p class="q-p">Você tem 2 cartas de hashis na frente. Neste turno, quantas cartas pode baixar?</p><div class="q-ops"><button type="button" class="q-op">3</button><button type="button" class="q-op" data-ok>2</button><button type="button" class="q-op">4</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Pode ter várias cartas de hashis na frente, mas usa só 1 por turno <span class="pg">p.&nbsp;4</span>.</p></div></div></aside></details>
+</section>
+<section class="bloco sec" id="etapa-2-pontuar-uma-rodada"><h2><span class="num">3</span>Etapa 2: pontuar uma rodada</h2>
+<details class="dobra entender"><summary>Por que funciona assim</summary><aside class="call entender"><p>Cada comida pontua de um jeito. Tempurá e sashimi só valem em grupos fechados; o gyoza cresce a cada carta; o maki é uma disputa com a mesa; o nigiri vale sozinho, e mais com wasabi (p. 5 a 7). O pudim não pontua na rodada: fica guardado para o fim do jogo <span class="pg">p.&nbsp;7 e 8</span>.</p></aside></details>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>A pontuação de cada comida</strong> (p. 5 a 7)</p>
+<ol><li><strong>Tempurá:</strong> cada par vale 5 pontos; uma carta sobrando não vale nada. Vários pares pontuam.</li><li><strong>Sashimi:</strong> cada trio vale 10 pontos; 1 ou 2 cartas sobrando não valem nada. Vários trios pontuam.</li><li><strong>Gyoza:</strong> 1 carta vale 1; 2 valem 3; 3 valem 6; 4 valem 10; 5 ou mais valem 15.</li><li><strong>Nigiri:</strong> lula 3, salmão 2, ovo 1. Sobre wasabi: lula 9, salmão 6, ovo 3.</li><li><strong>Wasabi sem nigiri e hashis:</strong> não valem nada.</li><li><strong>Maki:</strong> cada jogador soma os símbolos de maki no topo das suas cartas de maki. Quem tem mais faz 6 pontos; o segundo, 3.</li><li>Anuncie o total da rodada para quem anota o placar <span class="pg">p.&nbsp;7</span>.</li></ol></aside>
+<figure class="fig"><img src="figuras/tempura-sashimi-gyoza.webp" alt="Tempurá, sashimi e gyoza, com o lembrete da pontuação no rodapé de cada carta: &quot;x2=5&quot;, &quot;x3=10&quot; e &quot;1 3 6 10 15&quot;. Ilustração: manual Devir (p. 6)" loading="lazy" decoding="async"><figcaption>Tempurá, sashimi e gyoza, com o lembrete da pontuação no rodapé de cada carta: "x2=5", "x3=10" e "1 3 6 10 15". Ilustração: manual Devir <span class="pg">p.&nbsp;6</span></figcaption></figure>
+<details class="dobra mais"><summary>Regra adicional: Empate no maki</summary><aside class="call mais"><p>Se vários jogadores empatam com mais símbolos, dividem os 6 pontos, e o segundo lugar não recebe nada. Se vários empatam em segundo, dividem os 3 pontos. Em toda divisão, o ponto que não dá para dividir é perdido <span class="pg">p.&nbsp;5</span>.</p></aside></details>
+<details class="dobra edicao"><summary>Sobre a edição: Maki com poucos símbolos</summary><aside class="call edicao"><p>O manual não diz se quem tem 0 símbolos de maki pode ficar com o segundo lugar, nem o que acontece quando só um jogador tem maki ou quando ninguém tem <span class="pg">p.&nbsp;5</span>. Combinem antes da partida.</p></aside></details>
+<figure class="fig"><img src="figuras/maki.webp" alt="Cartas de maki com 1, 2 e 3 símbolos no topo; o que conta é a soma dos símbolos, não o número de cartas. Ilustração: manual Devir (p. 5)" loading="lazy" decoding="async"><figcaption>Cartas de maki com 1, 2 e 3 símbolos no topo; o que conta é a soma dos símbolos, não o número de cartas. Ilustração: manual Devir <span class="pg">p.&nbsp;5</span></figcaption></figure>
+<details class="dobra resolvido"><summary>Ver um exemplo resolvido</summary><aside class="call resolvido"><p>Quatro jogadores, 8 cartas cada <span class="pg">p.&nbsp;2</span>. Na frente de cada um, no fim da rodada:</p>
+<ul><li>Ana: 3 tempurás, 2 gyozas, wasabi com nigiri de lula, maki (3).</li><li>Bruno: 3 sashimis, 2 makis (2), nigiri de salmão, pudim, hashis.</li><li>Carla: 3 gyozas, maki (1), wasabi sem nigiri, 2 pudins, 1 tempurá.</li><li>Davi: maki (3), maki (1), 2 sashimis, nigiri de ovo, wasabi com nigiri de salmão, 1 tempurá.</li></ul>
+<p>Ana: um par de tempurá (5; a terceira carta não vale), 2 gyozas (3), lula sobre wasabi (9): 17. Bruno: trio de sashimi (10), salmão (2): 12. Carla: 3 gyozas (6): 6. Davi: ovo (1), salmão sobre wasabi (6): 7; os 2 sashimis e o tempurá sozinho não valem nada <span class="pg">p.&nbsp;6 e 7</span>.</p>
+<p>Maki: Ana 3 símbolos, Bruno 4, Carla 1, Davi 4. Bruno e Davi empatam em primeiro e dividem os 6 pontos: 3 cada. Como houve empate em primeiro, ninguém leva os 3 do segundo lugar <span class="pg">p.&nbsp;5</span>.</p>
+<p>Totais da rodada: Ana 17, Bruno 15, Carla 6, Davi 10. Os pudins de Bruno e Carla ficam na frente deles para o fim do jogo <span class="pg">p.&nbsp;7</span>.</p></aside></details>
+
+
+<details class="dobra pratica"><summary>Pratique esta etapa: exercícios com respostas</summary><aside class="call complete"><p class="rot">Tarefa · complete</p><p><strong>Complete.</strong> Na frente de Eva há 4 gyozas, 5 tempurás e um nigiri de salmão sem wasabi. Ela não tem maki.</p>
+<div class="quiz"><p class="q-p">Quantos pontos Eva faz na rodada?</p><div class="q-ops"><button type="button" class="q-op">27</button><button type="button" class="q-op" data-ok>22</button><button type="button" class="q-op">37</button><button type="button" class="q-op">17</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> 4 gyozas valem 10; 5 tempurás formam 2 pares, 10 pontos, e a quinta não vale; salmão, 2. Total: 22 <span class="pg">p.&nbsp;6 e 7</span>.</p></div></div></aside>
+<aside class="call suavez"><p class="rot">Tarefa · sua vez</p><p><strong>Sua vez.</strong></p>
+<div class="quiz"><p class="q-p">Você tem 5 sashimis. Quantos pontos eles valem?</p><div class="q-ops"><button type="button" class="q-op">0</button><button type="button" class="q-op" data-ok>10</button><button type="button" class="q-op">15</button><button type="button" class="q-op">20</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Um trio vale 10; as 2 cartas que sobram não valem nada <span class="pg">p.&nbsp;6</span>.</p></div></div>
+<div class="quiz"><p class="q-p">Ana, Bruno e Carla têm 4 símbolos de maki cada; Davi tem 2. Quanto cada um faz no maki?</p><div class="q-ops"><button type="button" class="q-op">Ana, Bruno e Carla, 6 cada; Davi, 3</button><button type="button" class="q-op" data-ok>Ana, Bruno e Carla, 2 cada; Davi, nada</button><button type="button" class="q-op">Ana, Bruno e Carla, 2 cada; Davi, 3</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Três empatados em primeiro dividem 6: 2 cada. Com empate em primeiro, o segundo lugar não recebe nada <span class="pg">p.&nbsp;5</span>.</p></div></div></aside></details>
+</section>
+<section class="bloco sec" id="etapa-3-tres-rodadas-pudins-e-o-vencedor"><h2><span class="num">4</span>Etapa 3: três rodadas, pudins e o vencedor</h2>
+<details class="dobra entender"><summary>Por que funciona assim</summary><aside class="call entender"><p>Entre uma rodada e outra, a mesa é limpa, menos os pudins, que se acumulam até o fim <span class="pg">p.&nbsp;7</span>. Quem juntou mais pudins ganha 6 pontos no fim; quem juntou menos perde 6 <span class="pg">p.&nbsp;8</span>.</p></aside></details>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Começar uma nova rodada</strong> <span class="pg">p.&nbsp;7</span></p>
+<ol><li>Cada um anuncia a pontuação da rodada que acabou, para quem anota.</li><li>Descarte as cartas baixadas na mesa, menos as de pudim: cada um mantém os seus pudins na frente.</li><li>Dê a cada jogador uma nova mão, da pilha de compra, com a mesma quantidade da rodada anterior.</li></ol></aside>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>O fim do jogo</strong> <span class="pg">p.&nbsp;8 e 9</span></p>
+<ol><li>Depois da pontuação da terceira rodada, as cartas que ficaram na pilha de compra são ignoradas.</li><li>Quem tem mais cartas de pudim faz 6 pontos.</li><li>Quem tem menos cartas de pudim, contando quem não tem nenhuma, perde 6 pontos.</li><li>Vence quem tiver mais pontos. Em caso de empate, vence quem tiver mais cartas de pudim.</li></ol></aside>
+<figure class="fig"><img src="figuras/pudim.webp" alt="A carta de pudim, com o lembrete &quot;final: mais +6, menos -6&quot;. Ilustração: manual Devir (p. 8)" loading="lazy" decoding="async"><figcaption>A carta de pudim, com o lembrete "final: mais +6, menos -6". Ilustração: manual Devir <span class="pg">p.&nbsp;8</span></figcaption></figure>
+<details class="dobra mais"><summary>Regra adicional: Empate nos pudins</summary><aside class="call mais"><p>Se vários jogadores empatam com mais pudins, dividem os 6 pontos; se vários empatam com menos, dividem os 6 pontos negativos. O ponto que não dá para dividir é perdido <span class="pg">p.&nbsp;8</span>.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Ninguém com pudim</summary><aside class="call mais"><p>Se nenhum jogador tem carta de pudim, ninguém ganha nem perde pontos por pudim <span class="pg">p.&nbsp;8</span>.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Pudim com 2 jogadores</summary><aside class="call mais"><p>Ninguém perde pontos por ter menos pudins; só quem tem mais ganha os 6 pontos <span class="pg">p.&nbsp;8</span>.</p></aside></details>
+<details class="dobra edicao"><summary>Sobre a edição: Todos empatados nos pudins</summary><aside class="call edicao"><p>O manual não trata do caso em que todos têm o mesmo número de pudins, acima de zero: todos seriam ao mesmo tempo os que têm mais e os que têm menos <span class="pg">p.&nbsp;8</span>. Combinem antes.</p></aside></details>
+<details class="dobra edicao"><summary>Sobre a edição: Empate que os pudins não desfazem</summary><aside class="call edicao"><p>Se os empatados em pontos também têm o mesmo número de pudins, o manual não diz quem vence <span class="pg">p.&nbsp;9</span>.</p></aside></details>
+<details class="dobra resolvido"><summary>Ver um exemplo resolvido</summary><aside class="call resolvido"><p>Carla tem 4 pudins, Paulo 3, Luísa e Ana nenhum. Carla faz 6 pontos. Luísa e Ana empatam com menos pudins e dividem os 6 pontos negativos: cada uma perde 3 <span class="pg">p.&nbsp;8</span>. Paulo, no meio, não ganha nem perde. O manual escreve "Lise" e "ficando com 3 pontos cada"; pela regra logo acima (dividem os pontos negativos), são 3 pontos a menos para cada uma.</p></aside></details>
+<details class="dobra resolvido"><summary>Ver um exemplo resolvido</summary><aside class="call resolvido"><p>Ana fez 17, 22 e 19 pontos nas rodadas: 58. Bruno, 15, 25 e 20: 60. Carla, 18, 20 e 18: 56. Pudins: Ana 3, Bruno nenhum, Carla 2. Ana ganha 6 e fica com 64; Bruno perde 6 e fica com 54; Carla fica com 56. Ana vence, embora Bruno tivesse mais pontos antes da sobremesa <span class="pg">p.&nbsp;8 e 9</span>.</p></aside></details>
+
+
+<details class="dobra pratica"><summary>Pratique esta etapa: exercícios com respostas</summary><aside class="call complete"><p class="rot">Tarefa · complete</p><p><strong>Complete.</strong> Partida de 5 jogadores. Pudins no fim: Ana 3, Bruno 3, Carla 1, Davi 1, Eva nenhum.</p>
+<div class="quiz"><p class="q-p">O que cada um ganha ou perde com os pudins?</p><div class="q-ops"><button type="button" class="q-op">Ana e Bruno, 6 cada; Eva perde 6</button><button type="button" class="q-op" data-ok>Ana e Bruno, 3 cada; Eva perde 6</button><button type="button" class="q-op">Ana e Bruno, 3 cada; Carla, Davi e Eva perdem 2 cada</button><button type="button" class="q-op">Ana e Bruno, 3 cada; ninguém perde, porque Eva não tem pudim</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Ana e Bruno empatam com mais e dividem 6. Eva, sozinha com menos (nenhum pudim conta), perde 6. Carla e Davi não ganham nem perdem <span class="pg">p.&nbsp;8</span>.</p></div></div></aside>
+<aside class="call suavez"><p class="rot">Tarefa · sua vez</p><p><strong>Sua vez.</strong></p>
+<div class="quiz"><p class="q-p">Partida de 2 jogadores. Você tem 1 pudim e o seu adversário tem 3. O que acontece com você?</p><div class="q-ops"><button type="button" class="q-op">Perde 6 pontos</button><button type="button" class="q-op">Perde 3 pontos</button><button type="button" class="q-op" data-ok>Nada: com 2 jogadores, ninguém perde pontos por pudim</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Com 2 jogadores, só quem tem mais pudins ganha 6 pontos <span class="pg">p.&nbsp;8</span>.</p></div></div>
+<div class="quiz"><p class="q-p">No fim, Ana e Bruno têm 50 pontos cada. Ana tem 2 pudins e Bruno 1. Quem vence?</p><div class="q-ops"><button type="button" class="q-op" data-ok>Ana</button><button type="button" class="q-op">Bruno</button><button type="button" class="q-op">Os dois dividem a vitória</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Em caso de empate, vence quem tiver mais cartas de pudim <span class="pg">p.&nbsp;9</span>.</p></div></div></aside></details>
+</section>
+<section class="bloco sec opc" id="situacoes-especiais"><h2><span class="num">5</span>Situações especiais<span class="tag-opc">Opcional</span></h2>
+<figure class="fig foto-sec caixa"><img src="fotos/capa-1.webp" alt="Sushi Go!: a caixa" width="1143" height="1600" loading="lazy" decoding="async"><figcaption>Imagem: Gamewright</figcaption></figure>
+<details class="dobra sec-opc"><summary>Abrir esta seção</summary><details class="dobra mais"><summary>Regra adicional: Variante: passar para os dois lados</summary><aside class="call mais"><p>Nas rodadas 1 e 3, a mão passa para a esquerda; na rodada 2, para a direita <span class="pg">p.&nbsp;9</span>. É opcional: a regra normal passa sempre para a esquerda.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Variante de 2 jogadores, com jogador fictício</summary><aside class="call mais"><p>Dê cartas como para 3 jogadores (9 cartas). As cartas do jogador fictício ficam numa pilha virada para baixo entre você e a pilha de compra. Escolham quem controla o fictício primeiro. Quem controla pega a carta do topo da pilha do fictício e a junta à sua mão; escolhe 1 carta para si e 1 para o fictício, enquanto o adversário escolhe 1 carta normalmente. Revelem e passem as mãos um para o outro, sem mexer na pilha do fictício. No turno seguinte, o controle troca de lado. Sigam assim até a pilha do fictício acabar; joguem 3 rodadas e pontuem pelas regras normais <span class="pg">p.&nbsp;9 e 10</span>.</p></aside></details>
+<details class="dobra edicao"><summary>Sobre a edição: Na variante, as cartas do fictício</summary><aside class="call edicao"><p>O manual chama o fictício de "terceiro jogador" e manda pontuar "de acordo com as regras normais", mas não diz com todas as letras onde ficam as cartas escolhidas para ele <span class="pg">p.&nbsp;9 e 10</span>. O guia lê que elas ficam na frente dele, como as de qualquer jogador, e entram na disputa do maki e dos pudins. O manual também não esclarece se, na variante, vale a perda de 6 pontos por menos pudins ou a regra de pudim para 2 jogadores, em que ninguém perde; combinem antes.</p></aside></details>
+<details class="dobra edicao"><summary>Sobre a edição: Hashis e wasabi no mesmo turno</summary><aside class="call edicao"><p>O manual não diz o que acontece se, com os hashis, você baixa um wasabi e um nigiri no mesmo turno: a regra fala de um wasabi que você "já tem" na frente <span class="pg">p.&nbsp;3 e 4</span>. Também não diz qual nigiri vai sobre o wasabi se você baixa dois nigiris com os hashis e tem um só wasabi livre. Combinem antes da partida como resolver esses casos.</p></aside></details></details>
+</section>
+<section class="bloco sec opc" id="avaliacao-final"><h2><span class="num">6</span>Avaliação final<span class="tag-opc">Opcional</span></h2>
+<figure class="fig foto-sec caixa"><img src="fotos/capa-1.webp" alt="Sushi Go!: a caixa" width="1143" height="1600" loading="lazy" decoding="async"><figcaption>Imagem: Gamewright</figcaption></figure>
+<details class="dobra sec-opc"><summary>Abrir esta seção</summary><p>Responda sem consultar. Cada resposta diz o que reler.</p>
+<div class="quiz"><p class="q-p">1. Partida de 5 jogadores. Quantas cartas cada um recebe em cada rodada?</p><div class="q-ops"><button type="button" class="q-op">8</button><button type="button" class="q-op" data-ok>7</button><button type="button" class="q-op">9</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Com 5 jogadores, 7 cartas <span class="pg">p.&nbsp;2</span>. Releia a montagem.</p></div></div>
+<div class="quiz"><p class="q-p">2. Quando você revela a carta escolhida?</p><div class="q-ops"><button type="button" class="q-op">Logo que escolhe</button><button type="button" class="q-op" data-ok>Quando todos já escolheram, junto com os outros</button><button type="button" class="q-op">No fim da rodada</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Todos escolhem virado para baixo e revelam juntos <span class="pg">p.&nbsp;3</span>. Releia a etapa 1.</p></div></div>
+<div class="quiz"><p class="q-p">3. Você baixou um nigiri de lula no turno 2 e um wasabi no turno 3. Quanto vale a lula?</p><div class="q-ops"><button type="button" class="q-op" data-ok>3</button><button type="button" class="q-op">9</button><button type="button" class="q-op">6</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> O wasabi triplica o nigiri baixado depois dele; a lula veio antes <span class="pg">p.&nbsp;3 e 7</span>. Releia a etapa 1.</p></div></div>
+<div class="quiz"><p class="q-p">4. Você tem 3 tempurás e 4 gyozas. Quantos pontos fazem juntos?</p><div class="q-ops"><button type="button" class="q-op">13</button><button type="button" class="q-op">20</button><button type="button" class="q-op" data-ok>15</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Um par de tempurá, 5 (a terceira não vale); 4 gyozas, 10 <span class="pg">p.&nbsp;6</span>. Releia a etapa 2.</p></div></div>
+<div class="quiz"><p class="q-p">5. Carla tem 6 símbolos de maki, e Ana e Bruno têm 4 cada. Quanto faz Ana?</p><div class="q-ops"><button type="button" class="q-op">3</button><button type="button" class="q-op" data-ok>1</button><button type="button" class="q-op">2</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Ana e Bruno empatam em segundo e dividem 3; o ponto que sobra é perdido <span class="pg">p.&nbsp;5</span>. Releia a etapa 2.</p></div></div>
+<div class="quiz"><p class="q-p">6. Partida de 3 jogadores. Ana tem 2 pudins, Bruno 2 e Carla nenhum. O que acontece?</p><div class="q-ops"><button type="button" class="q-op">Ana e Bruno ganham 6 cada; Carla perde 6</button><button type="button" class="q-op">Ninguém ganha nem perde</button><button type="button" class="q-op" data-ok>Ana e Bruno ganham 3 cada; Carla perde 6</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Empate com mais pudins divide os 6 pontos; quem tem menos, mesmo sem nenhum, perde 6 <span class="pg">p.&nbsp;8</span>. Releia a etapa 3.</p></div></div>
+<aside class="call atencao"><p class="rot">Atenção</p><p><strong>Critério para começar a jogar.</strong> Acertou 5 ou 6? Embaralhe e jogue, com a folha de consulta ao lado. Errou a 1, releia a montagem; a 2 ou a 3, a etapa 1; a 4 ou a 5, a etapa 2; a 6, a etapa 3. Depois refaça só as que errou.</p></aside></details>
+</section>
+<section class="bloco sec ref" id="para-consultar-durante-a-partida"><h2><span class="num">7</span>Para consultar durante a partida</h2>
+<figure class="fig foto-sec caixa"><img src="fotos/capa-1.webp" alt="Sushi Go!: a caixa" width="1143" height="1600" loading="lazy" decoding="async"><figcaption>Imagem: Gamewright</figcaption></figure>
+<p><strong>Preparação:</strong> 108 cartas embaralhadas juntas; 10 cartas cada com 2 jogadores, 9 com 3, 8 com 4, 7 com 5; resto em pilha virada para baixo; papel e caneta.</p>
+<p><strong>Um turno</strong></p>
+<ol><li>Todos escolhem 1 carta, virada para baixo.</li><li>Todos revelam juntos.</li><li>Nigiri com wasabi livre na frente: vai sobre o wasabi.</li><li>Passe o resto da mão para a esquerda.</li></ol>
+<p><strong>Hashis:</strong> já na sua frente, diga "Sushi Go!" e baixe uma segunda carta antes da revelação; depois, a carta de hashis volta para a mão e é passada. Um por turno.</p>
+<p><strong>Fim da rodada:</strong> a última carta é baixada direto; todos pontuam.</p>
+<div class="tab"><table><thead><tr><th>Comida</th><th>Pontos</th></tr></thead><tbody><tr><td data-label="Comida">Tempurá</td><td data-label="Pontos">5 por par</td></tr><tr><td data-label="Comida">Sashimi</td><td data-label="Pontos">10 por trio</td></tr><tr><td data-label="Comida">Gyoza</td><td data-label="Pontos">1, 3, 6, 10, 15 (5 ou mais)</td></tr><tr><td data-label="Comida">Nigiri</td><td data-label="Pontos">lula 3, salmão 2, ovo 1; triplo sobre wasabi</td></tr><tr><td data-label="Comida">Maki</td><td data-label="Pontos">mais símbolos 6, segundo 3; empate divide, sobra perdida</td></tr><tr><td data-label="Comida">Wasabi sem nigiri, hashis</td><td data-label="Pontos">0</td></tr><tr><td data-label="Comida">Pudim</td><td data-label="Pontos">no fim do jogo: mais +6, menos -6 (com 2 jogadores, só +6)</td></tr></tbody></table></div>
+<p><strong>Nova rodada:</strong> anote os pontos; descarte tudo menos os pudins; nova mão do mesmo tamanho.</p>
+<p><strong>Fim do jogo:</strong> depois da terceira rodada, pontue os pudins. Vence quem tem mais pontos; empate, quem tem mais pudins.</p>
+</section>
+<section class="bloco sec" id="fontes"><h2><span class="num">8</span>Fontes</h2>
+<figure class="fig foto-sec caixa"><img src="fotos/capa-1.webp" alt="Sushi Go!: a caixa" width="1143" height="1600" loading="lazy" decoding="async"><figcaption>Imagem: Gamewright</figcaption></figure>
+<ul><li>Devir. <em>Sushi Go!: regras</em> (edição brasileira, tradução da Equipe Devir, design gráfico de Bascu; © 2014 Gamewright), arquivo "sushi-go.pdf", 12 páginas, PDF criado em 25/04/2018 e modificado em 28/01/2019. Página do produto: <a href="https://devir.com.br/sushi-go/">https://devir.com.br/sushi-go/</a> ; arquivo: <a href="https://devir.com.br/wp-content/uploads/2016/09/sushi-go.pdf">https://devir.com.br/wp-content/uploads/2016/09/sushi-go.pdf</a>. Consultado em 06/11/2026.</li><li>Devir. Página do produto Sushi Go! (jogadores, idade e duração), mesmo endereço, consultada em 06/11/2026.</li></ul>
+</section>
+
+<p class="nota-pe">Regras conferidas no manual da edição brasileira de Sushi Go! (Devir, tradução da Equipe Devir, a partir do jogo da Gamewright de 2014), baixado da página do produto no site da Devir. É o jogo base de cartas, não o Sushi Go Party! O PDF tem 12 páginas sem número impresso: o guia conta a capa como p. 1.</p>
+</div></main>
+
+<!--rodape--><footer><div class="in">
+ <span>Elite Boardgamers</span><a href="../../noticias/">Notícias</a><a href="../../resenhas/">Resenhas</a><a href="../../como-jogar/">Como jogar</a><a href="../../lancamentos/">Lançamentos</a><a href="../../black/">Black de Verdade</a><a href="../../jogos-de-tabuleiro/">Guia de jogos de tabuleiro</a><a href="../../premios/">Prêmios</a><a href="../../politica-editorial/">Política editorial</a>
+ <a href="https://www.instagram.com/eliteboardgamers/" target="_blank" rel="noopener">Instagram @eliteboardgamers</a><a href="https://chat.whatsapp.com/IgQQkJdSkzHBaEq3UwFeAo" target="_blank" rel="noopener">Grupo do WhatsApp</a>
+</div></footer>
+<div class="barra-lt fora" role="region" aria-label="Ações da página"><div class="cpw" data-texto=""><a class="cp" href="https://wa.me/" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="M8.2 10.8l7.6-4.4M8.2 13.2l7.6 4.4"/></svg><span>Compartilhar</span></a><div class="cp-menu" hidden><a class="cp-op zap-op" href="https://wa.me/" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8.4 19l-4.4 1Z"/><path d="M9.2 8.6c.3-.5.8-.5 1-.1l.7 1.5c.1.3 0 .6-.2.8l-.4.4c.5 1.1 1.4 2 2.5 2.5l.4-.4c.2-.2.5-.3.8-.2l1.5.7c.4.2.4.7-.1 1-.7.5-1.6.6-2.4.3a7 7 0 0 1-4.2-4.2c-.3-.8-.2-1.7.4-2.3Z"/></svg>WhatsApp</a><button type="button" class="cp-op"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h8"/></svg>Copiar link</button></div><p class="cp-st" role="status"></p></div><script>(()=>{const pega=c=>({u:c.dataset.url||location.href,t:c.dataset.texto||document.title});
+document.querySelectorAll('.cpw:not(.ok)').forEach(c=>{c.classList.add('ok');const b=c.querySelector('.cp');
+ const n=document.createElement('button');n.type='button';n.className=b.className;n.innerHTML=b.innerHTML;n.setAttribute('aria-expanded','false');b.replaceWith(n)});
+if(window.__cp)return;window.__cp=1;
+const celular=()=>navigator.share&&matchMedia('(pointer:coarse)').matches;
+const fecha=()=>document.querySelectorAll('.cp-menu:not([hidden])').forEach(m=>{m.hidden=true;m.parentNode.querySelector('.cp').setAttribute('aria-expanded','false')});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')fecha()});
+document.addEventListener('click',async ev=>{const c=ev.target.closest('.cpw');if(!c){fecha();return}
+ const {u,t}=pega(c),m=c.querySelector('.cp-menu'),st=c.querySelector('.cp-st'),el=ev.target.closest('.cp,.cp-op');if(!el)return;
+ if(el.classList.contains('cp')){
+  if(celular()){try{await navigator.share({title:document.title,text:t,url:u})}catch(e){}return}
+  const abre=m.hidden;fecha();if(!abre)return;
+  m.querySelector('.zap-op').href='https://wa.me/?text='+encodeURIComponent(t+' '+u);
+  const r=c.getBoundingClientRect();m.classList.toggle('sobe',!!c.closest('.barra-lt')||r.bottom>innerHeight-140);m.classList.toggle('dir',r.left>innerWidth-220);
+  m.hidden=false;el.setAttribute('aria-expanded','true');m.querySelector('.cp-op').focus();return}
+ if(el.classList.contains('zap-op')){fecha();return}
+ fecha();let ok=false;try{await navigator.clipboard.writeText(u);ok=true}catch(e){
+  const i=document.createElement('input');i.value=u;document.body.append(i);i.select();try{ok=document.execCommand('copy')}catch(e2){}i.remove()}
+ st.textContent=ok?'Link copiado!':'Não deu para copiar o link.';clearTimeout(st._t);st._t=setTimeout(()=>st.textContent='',2500);
+ c.querySelector('.cp').focus()})})()</script><a class="lt-grupo" href="https://chat.whatsapp.com/IgQQkJdSkzHBaEq3UwFeAo" target="_blank" rel="noopener" aria-label="Entrar no grupo do WhatsApp da Elite"><img src="/favicon-48.png" width="48" height="48" alt=""><span>Grupo</span></a></div><script>(()=>{const l=document.querySelector('.barra-lt');if(!l)return;const vis=new Set();
+const poe=()=>{const on=scrollY>500&&!vis.size;l.classList.toggle('fora',!on);l.inert=!on;document.body.classList.toggle('lt-on',on)};
+const io=new IntersectionObserver(es=>{es.forEach(e=>e.isIntersecting?vis.add(e.target):vis.delete(e.target));poe()});
+document.querySelectorAll('.convite,footer').forEach(x=>io.observe(x));addEventListener('scroll',poe,{passive:true});poe()})()</script>
+<script>document.addEventListener('click',e=>{const b=e.target.closest('.q-op');if(!b||b.disabled)return;const q=b.closest('.quiz');
+q.querySelectorAll('.q-op').forEach(o=>{o.disabled=true;if(o.hasAttribute('data-ok'))o.classList.add('ok')});const ok=b.hasAttribute('data-ok');
+if(!ok)b.classList.add('erro');const x=q.querySelector('.q-exp');x.hidden=false;x.classList.toggle('mal',!ok);x.querySelector('.q-res').textContent=ok?'Isso!':'Não é essa.';});
+(()=>{const g=document.querySelector('.guia-prog');if(!g)return;const t=g.querySelector('.gp-t'),b=g.querySelector('.gp-b');
+const secs=[...document.querySelectorAll('.sec[id]')],idx=document.querySelector('.indice');
+const poe=()=>{const y=scrollY+innerHeight*.3;let at=null;for(const s of secs){if(s.offsetTop<=y)at=s}
+ t.textContent=at&&scrollY>idx.offsetTop?at.querySelector('h2').textContent.replace(/^\d+/,'').trim():'Neste guia';
+ const h=document.documentElement.scrollHeight-innerHeight;b.style.transform='scaleX('+(h>0?Math.min(1,scrollY/h):0)+')'};
+addEventListener('scroll',poe,{passive:true});addEventListener('resize',poe);poe()})();
+document.addEventListener('click',e=>{const y=e.target.closest('.yt');if(!y)return;const f=document.createElement('iframe');
+f.src='https://www.youtube-nocookie.com/embed/'+y.dataset.id+'?start='+y.dataset.t+'&autoplay=1&rel=0';f.title=y.getAttribute('aria-label');
+f.allow='autoplay; encrypted-media; picture-in-picture';f.allowFullscreen=true;y.replaceWith(f)});</script><!--/rodape-->
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "b37421bd1ade44f1a59e46b96626bf03"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>

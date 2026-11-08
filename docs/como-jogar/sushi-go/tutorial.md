@@ -13,13 +13,13 @@ A montagem segue a "Preparação" do manual (p. 2), na mesma ordem, com cada aç
 | Tempurá | 14 | Em pares: cada par vale 5 pontos |
 | Sashimi | 14 | Em trios: cada trio vale 10 pontos |
 | Gyoza | 14 | Quanto mais, mais pontos, até 15 |
-| Maki (2), maki (3) e maki (1) | 12, 8 e 6 | Os símbolos de maki disputam 6 e 3 pontos |
+| Maki (2), maki (3) e maki (1) | 12, 8 e 6 | Os símbolos de maki disputam 6 e 3 pontos; o número entre parênteses é a quantidade de símbolos de maki da carta |
 | Nigiri de salmão, de lula e de ovo | 10, 5 e 5 | Valem 2, 3 e 1 ponto |
 | Wasabi | 6 | Triplica o próximo nigiri |
 | Hashis | 4 | Permitem baixar 2 cartas num turno futuro |
 | Pudim | 10 | Só contam no fim do jogo |
 
-São 108 cartas ao todo, mais o manual (p. 2). Papel e caneta não vêm na caixa: o manual pede que os jogadores os providenciem (p. 2).
+São 108 cartas ao todo (p. 2), mais o manual, segundo a página do produto na Devir. Papel e caneta não vêm na caixa: o manual pede que os jogadores os providenciem (p. 2).
 
 !fig[Algumas cartas da caixa, em foto da editora original: tempurá, wasabi, hashis, sashimi e pudim, ao lado da lata do jogo. É a edição em inglês; os nomes e o texto das cartas da caixa brasileira estão em português. Imagem: Gamewright](fotos/componentes-1.webp)
 
@@ -67,7 +67,7 @@ O manual não ilustra a mesa montada: a página de preparação mostra só as ca
 
 ### A ideia do jogo
 
-Você recebe uma **mão** de cartas de comida. Em cada **turno**, fica com uma carta, baixa essa carta na sua frente e passa o resto da mão para o jogador da esquerda. Depois de três **rodadas**, quem tiver mais **pontos** vence: cada comida pontua de um jeito, e muitas só valem em grupo (p. 3 a 9).
+Você recebe uma **mão** de cartas de comida. Em cada **turno**, fica com uma carta, baixa essa carta na sua frente, virada para baixo, e passa o resto da mão para o jogador da esquerda. Depois de três **rodadas**, quem tiver mais **pontos** vence: cada comida pontua de um jeito, e muitas só valem em grupo (p. 3 a 9).
 
 ### Monte a mesa
 
@@ -161,7 +161,7 @@ Três etapas, na ordem em que você precisa delas: escolher e passar (com wasabi
 
 !fig[A carta de hashis, com o lembrete "escolha dois". Ilustração: manual Devir (p. 4)](figuras/hashis.webp)
 
-> [!atencao] **Wasabi vem antes do nigiri.** O wasabi triplica o nigiri que você baixa depois dele, e o manual diz que o nigiri deve ir sobre ele, mesmo que seja o de ovo (p. 3). Um nigiri que já estava na sua frente antes do wasabi não passa para cima dele.
+> [!atencao] **Wasabi vem antes do nigiri.** O wasabi triplica o nigiri que você baixa depois dele, e o manual diz que o nigiri deve ir sobre ele, mesmo que seja o de ovo (p. 3). Um nigiri que já estava na sua frente antes do wasabi não passa para cima dele (o manual fala de um wasabi que você "já tem", e a carta diz "próximo nigiri x3").
 
 > [!resolvido] **Exemplo resolvido: os hashis.** Você tem na frente 1 sashimi e 1 carta de hashis, e a mão que recebeu tem 4 cartas: sashimi, sashimi, gyoza e maki (2). Você escolhe um sashimi, diz "Sushi Go!" e baixa o outro sashimi. Todos revelam. Agora são 3 sashimis na sua frente, um trio. Você pega a carta de hashis de volta e passa para a esquerda 3 cartas: gyoza, maki (2) e hashis. Os outros, que baixaram 1 carta cada, também passam 3 (p. 4 e 6).
 
@@ -206,7 +206,9 @@ Três etapas, na ordem em que você precisa delas: escolher e passar (com wasabi
 
 > [!mais] **Empate no maki.** Se vários jogadores empatam com mais símbolos, dividem os 6 pontos, e o segundo lugar não recebe nada. Se vários empatam em segundo, dividem os 3 pontos. Em toda divisão, o ponto que não dá para dividir é perdido (p. 5).
 
-!fig[Cartas de maki com 2, 3 e 1 símbolos no topo; o que conta é a soma dos símbolos, não o número de cartas. Ilustração: manual Devir (p. 5)](figuras/maki.webp)
+> [!edicao] **Maki com poucos símbolos.** O manual não diz se quem tem 0 símbolos de maki pode ficar com o segundo lugar, nem o que acontece quando só um jogador tem maki ou quando ninguém tem (p. 5). Combinem antes da partida.
+
+!fig[Cartas de maki com 1, 2 e 3 símbolos no topo; o que conta é a soma dos símbolos, não o número de cartas. Ilustração: manual Devir (p. 5)](figuras/maki.webp)
 
 > [!resolvido] **Exemplo resolvido: uma rodada inteira.** Quatro jogadores, 8 cartas cada (p. 2). Na frente de cada um, no fim da rodada:
 >
@@ -270,7 +272,11 @@ Três etapas, na ordem em que você precisa delas: escolher e passar (com wasabi
 
 > [!mais] **Pudim com 2 jogadores.** Ninguém perde pontos por ter menos pudins; só quem tem mais ganha os 6 pontos (p. 8).
 
-> [!resolvido] **Exemplo resolvido: os pudins do manual.** Carla tem 4 pudins, Paulo 3, Luísa e Ana nenhum. Carla faz 6 pontos. Luísa e Ana empatam com menos pudins e dividem os 6 pontos negativos: cada uma perde 3. Paulo não ganha nem perde (p. 8).
+> [!edicao] **Todos empatados nos pudins.** O manual não trata do caso em que todos têm o mesmo número de pudins, acima de zero: todos seriam ao mesmo tempo os que têm mais e os que têm menos (p. 8). Combinem antes.
+
+> [!edicao] **Empate que os pudins não desfazem.** Se os empatados em pontos também têm o mesmo número de pudins, o manual não diz quem vence (p. 9).
+
+> [!resolvido] **Exemplo resolvido: os pudins do manual.** Carla tem 4 pudins, Paulo 3, Luísa e Ana nenhum. Carla faz 6 pontos. Luísa e Ana empatam com menos pudins e dividem os 6 pontos negativos: cada uma perde 3 (p. 8). Paulo, no meio, não ganha nem perde. O manual escreve "Lise" e "ficando com 3 pontos cada"; pela regra logo acima (dividem os pontos negativos), são 3 pontos a menos para cada uma.
 
 > [!resolvido] **Exemplo resolvido: o fim de uma partida a três.** Ana fez 17, 22 e 19 pontos nas rodadas: 58. Bruno, 15, 25 e 20: 60. Carla, 18, 20 e 18: 56. Pudins: Ana 3, Bruno nenhum, Carla 2. Ana ganha 6 e fica com 64; Bruno perde 6 e fica com 54; Carla fica com 56. Ana vence, embora Bruno tivesse mais pontos antes da sobremesa (p. 8 e 9).
 
@@ -303,9 +309,9 @@ Três etapas, na ordem em que você precisa delas: escolher e passar (com wasabi
 
 > [!mais] **Variante de 2 jogadores, com jogador fictício.** Dê cartas como para 3 jogadores (9 cartas). As cartas do jogador fictício ficam numa pilha virada para baixo entre você e a pilha de compra. Escolham quem controla o fictício primeiro. Quem controla pega a carta do topo da pilha do fictício e a junta à sua mão; escolhe 1 carta para si e 1 para o fictício, enquanto o adversário escolhe 1 carta normalmente. Revelem e passem as mãos um para o outro, sem mexer na pilha do fictício. No turno seguinte, o controle troca de lado. Sigam assim até a pilha do fictício acabar; joguem 3 rodadas e pontuem pelas regras normais (p. 9 e 10).
 
-> [!edicao] **Na variante, as cartas do fictício.** O manual chama o fictício de "terceiro jogador" e manda pontuar "de acordo com as regras normais", mas não diz com todas as letras onde ficam as cartas escolhidas para ele (p. 9 e 10). O guia lê que elas ficam na frente dele, como as de qualquer jogador, e entram na disputa do maki e dos pudins.
+> [!edicao] **Na variante, as cartas do fictício.** O manual chama o fictício de "terceiro jogador" e manda pontuar "de acordo com as regras normais", mas não diz com todas as letras onde ficam as cartas escolhidas para ele (p. 9 e 10). O guia lê que elas ficam na frente dele, como as de qualquer jogador, e entram na disputa do maki e dos pudins. O manual também não esclarece se, na variante, vale a perda de 6 pontos por menos pudins ou a regra de pudim para 2 jogadores, em que ninguém perde; combinem antes.
 
-> [!edicao] **Hashis e wasabi no mesmo turno.** O manual não diz o que acontece se, com os hashis, você baixa um wasabi e um nigiri no mesmo turno: a regra fala de um wasabi que você "já tem" na frente (p. 3 e 4). Combinem antes da partida como resolver esse caso.
+> [!edicao] **Hashis e wasabi no mesmo turno.** O manual não diz o que acontece se, com os hashis, você baixa um wasabi e um nigiri no mesmo turno: a regra fala de um wasabi que você "já tem" na frente (p. 3 e 4). Também não diz qual nigiri vai sobre o wasabi se você baixa dois nigiris com os hashis e tem um só wasabi livre. Combinem antes da partida como resolver esses casos.
 
 ## 6. Avaliação final
 

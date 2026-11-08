@@ -83,3 +83,20 @@ O mesmo protocolo do piloto: 5 a 8 adultos que nunca jogaram; tarefas: montar a 
 ## 9. Ligação com a resenha
 
 Não há resenha de Sushi Go! no site. Proposta (não implementada): se uma resenha for publicada, ligar as duas páginas, e usar o campo `"resenha"` do JSON.
+
+## Auditoria independente (08/11/2026)
+
+Duas auditorias independentes: conferência contra o manual (aprovado, só itens menores) e partida simulada (joga com ajustes). O que mudou no tutorial:
+
+- **Conferência 1 e 2.** Exemplo dos pudins: acrescentado que o manual escreve "Lise" e "ficando com 3 pontos cada" e que, pela regra logo acima (dividem os pontos negativos), são 3 pontos a menos para cada uma; "Paulo, no meio, não ganha nem perde" fica como frase do guia, sem página.
+- **Conferência 3.** "Mais o manual" agora cita a página do produto da Devir; o "(p. 2)" fica só nas 108 cartas.
+- **Conferência 4.** O `[!atencao]` do wasabi diz de onde vem a leitura: o manual fala de um wasabi que você "já tem", e a carta diz "próximo nigiri x3".
+- **Conferência 5.** O `[!edicao]` da variante de 2 jogadores diz que o manual não esclarece se vale a perda de 6 pontos por menos pudins ou a regra de pudim para 2 jogadores; combinem antes.
+- **Conferência 6.** Legenda do maki na ordem da imagem: 1, 2 e 3 símbolos.
+- **Simulação a.** Novo `[!edicao]` na etapa 2: o manual não diz se quem tem 0 símbolos pode ficar em segundo, nem o que acontece quando só um jogador tem maki ou ninguém tem (p. 5). Lacuna nova (R42).
+- **Simulação b e c.** Voltaram como `[!edicao]` na etapa 3 as lacunas R38 (todos empatados nos pudins, "o manual não trata; combinem antes", p. 8) e R39 (empate que os pudins não desfazem, "o manual não diz", p. 9).
+- **Simulação d.** O `[!edicao]` dos hashis com wasabi ganhou o caso de dois nigiris e um só wasabi livre: o manual não diz qual vai sobre ele; combinem.
+- **Simulação e.** Na tabela de componentes: o número entre parênteses é a quantidade de símbolos de maki da carta.
+- **Simulação f.** "A ideia do jogo": a carta é baixada virada para baixo.
+
+Figuras e JSON sem mudança (`"publicar": false`). Portões depois das correções: `checar_comece.py` passa sem aviso; `vicios.py`: 0; travessão, meia-risca e sinal de menos: 0; 4.591 palavras pela contagem `\w+` (4.989 no `wc -w`), acima do alvo de 4.500 por causa dos blocos de lacuna pedidos. Não rodei `tools/como_jogar_md.py` nem `tools/build_como_jogar.py` no repositório.
