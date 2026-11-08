@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Como jogar Kingdomino: regras passo a passo | Elite Boardgamers</title>
+<meta name="description" content="Regras de Kingdomino passo a passo, conferidas no manual oficial da Blue Orange: montagem, a fila de peças, o encaixe, o limite de 5 por 5 e a pontuação.">
+<link rel="canonical" href="https://eliteboardgamers.com.br/como-jogar/kingdomino/">
+<meta name="robots" content="max-image-preview:large">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Como jogar Kingdomino">
+<meta property="og:description" content="Regras de Kingdomino passo a passo, conferidas no manual oficial da Blue Orange: montagem, a fila de peças, o encaixe, o limite de 5 por 5 e a pontuação.">
+<meta property="og:url" content="https://eliteboardgamers.com.br/como-jogar/kingdomino/">
+<meta property="og:image" content="https://eliteboardgamers.com.br/como-jogar/kingdomino/fotos/jogabilidade-1.webp">
+<link rel="icon" href="../../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32.png">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<link rel="preload" href="../../fontes/public-sans.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:"Public Sans";src:url(../../fontes/public-sans.woff2) format("woff2");font-weight:400 800;font-style:normal;font-display:swap}
+@font-face{font-family:"Public Sans";src:url(../../fontes/public-sans-italic.woff2) format("woff2");font-weight:400;font-style:italic;font-display:swap}
+/* Layout: o mesmo da página de lição do Discipulado (O Paladino): fundo preto (pedido do editor: preto no lugar do azul), faixa do banner, navegação fixa, coluna central de 760px com cartões claros de papel, filete dourado sobre os títulos de seção. Visual único (o site não tem tema claro). */
+:root{
+  color-scheme:dark;
+  --ground:#000; --panel:#0f1115; --panel2:#171a20; --line:#262a32; --line2:#2e333c;
+  --ink:#eceff3; --muted:#a1a9b5; --gold:#e3b23c;
+  --paper:#f4f5f7; --paper-ink:#14171c; --paper-muted:#5a6270; --paper-line:#dde1e7; --paper-text:#3a414c;
+  --link:#1f5fae; --ok:#1b7a45; --ok-bg:#e3f4ea; --cinza-bg:#eceef1; --ouro-bg:#fff4d1; --ouro-ink:#8a5f00;
+  --erro:#b3263e; --faixa-ouro:#1d1606; --ouro-claro:#f1ead6; --check:#4cc38a;
+  --f-body:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box}
+html{scroll-padding-top:64px}
+body{margin:0;background:var(--ground);color:var(--ink);font:16px/1.55 var(--f-body)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--panel)}
+h1,h2,h3,p,ul,ol,figure{margin:0}
+a{color:var(--link);text-underline-offset:.18em}
+::selection{background:var(--gold);color:#000}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px;border-radius:3px}
+.gut{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+
+.skip{position:absolute;left:-999px}.skip:focus{left:12px;top:8px;z-index:40;background:var(--gold);color:#000;padding:6px 10px}
+.aviso{background:var(--gold);color:#000;font-weight:800;font-size:.8rem;text-align:center}
+.aviso .gut{padding-block:6px}
+.topo{background:var(--ground)}
+.topo img{display:block;width:100%;max-width:640px;height:auto;margin:0 auto}
+.nav{background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line);position:sticky;top:env(safe-area-inset-top,0px);z-index:20}
+.nav ul{max-width:1120px;margin:0 auto;list-style:none;display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;padding-block:0}
+.nav a{display:block;padding:11px 12px;white-space:nowrap;color:var(--ink);text-decoration:none;font-weight:700;font-size:.92rem;border-bottom:3px solid transparent}
+.nav a[aria-current]{color:var(--gold);border-bottom-color:var(--gold)}
+
+.nota{max-width:760px;margin:0 auto;padding-block:20px 56px;display:grid;gap:16px}
+.trilha ol{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:4px 8px;font-size:.85rem;color:var(--muted)}
+.trilha li+li::before{content:"›";margin-right:8px;color:var(--muted)}
+.trilha a{color:var(--gold);font-weight:700;text-decoration:none}
+
+.bloco{background:var(--paper);color:var(--paper-ink);border-radius:10px;padding:20px;min-width:0;display:grid;gap:14px}
+.num-l{font-size:.8rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--paper-muted)}
+h1{font-size:clamp(1.7rem,5vw,2.4rem);line-height:1.12;font-weight:800;letter-spacing:-.015em;text-wrap:balance}
+.meta-e{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:.88rem;color:var(--paper-muted)}
+.meta{font-family:var(--mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.05em;color:var(--paper-muted)}
+
+.r1{background:var(--panel2);color:var(--ink);border:1px solid var(--line2);border-left:4px solid var(--gold)}
+.kick{font-size:.75rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--gold)}
+.r1 .resp{font-size:1.12rem;font-weight:600;line-height:1.45}
+.r1 ul{list-style:none;padding:0;display:grid;gap:8px}
+.r1 li{display:flex;gap:8px;align-items:flex-start;color:#dfe4ea}
+.r1 li svg{flex:none;width:20px;height:20px;margin-top:2px;stroke:var(--check);fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.r1 .pe{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:.88rem;color:var(--muted)}
+.r1 .pe b{color:var(--ink)}
+.legenda{display:flex;flex-wrap:wrap;gap:8px}
+.legenda span{font-size:.74rem;font-weight:800;letter-spacing:.04em;border-radius:999px;padding:3px 10px 3px 14px;background:var(--paper);color:var(--paper-ink)}
+.legenda .l1{box-shadow:inset 5px 0 0 var(--paper-ink)}.legenda .l2{box-shadow:inset 5px 0 0 var(--ok)}
+.legenda .l3{box-shadow:inset 5px 0 0 var(--gold)}.legenda .l4{box-shadow:inset 5px 0 0 var(--ouro-ink)}
+
+.indice h2,.sec>h2{font-size:1.15rem;font-weight:800;line-height:1.3;color:var(--paper-ink);border-top:3px solid var(--gold);padding-top:12px;text-wrap:balance;display:flex;gap:10px;align-items:baseline}
+.indice ol{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:2px 16px}
+.indice a{display:block;padding:6px 0;color:var(--paper-ink);text-decoration:none;font-weight:600;font-size:.94rem;border-bottom:1px solid var(--paper-line)}
+.indice a:hover{color:var(--link)}
+
+.sec>h2 .num{display:none}
+.sec h3{font-size:1.05rem;font-weight:800;margin-top:6px}
+.sec p{color:var(--paper-text);max-width:66ch}
+.sec ul,.sec ol{padding-left:1.3em;display:grid;gap:6px;color:var(--paper-text)}
+.sec ul{list-style:disc}
+.sec li::marker{color:var(--ouro-ink);font-weight:800}
+strong{font-weight:700;color:var(--paper-ink)}
+.pg{white-space:nowrap;font-size:.76em;color:var(--paper-muted);border:1px solid var(--paper-line);background:#fff;border-radius:4px;padding:0 5px;vertical-align:.08em;font-variant-numeric:tabular-nums}
+code{font-size:.9em;background:#fff;padding:1px 5px;border-radius:4px}
+
+.tab{overflow-x:auto;border:1px solid var(--paper-line);border-radius:8px;background:#fff}
+table{border-collapse:collapse;width:100%;font-size:.92rem;color:var(--paper-text)}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--paper-line);vertical-align:top}
+th{font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--paper-muted);background:var(--paper)}
+tr:last-child td{border-bottom:0}
+
+.call{border-radius:8px;padding:14px 16px;display:grid;gap:10px;min-width:0;background:#fff;border:1px solid var(--paper-line);border-left:4px solid var(--paper-muted)}
+.call .rot{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;font-weight:800;color:var(--paper-muted)}
+.call.entender{background:var(--cinza-bg);border-color:#d5d9df;border-left-color:var(--paper-ink)}
+.call.entender .rot{color:var(--paper-ink)}
+.call.passos{border-left-color:var(--ok)}
+.call.passos .rot{color:var(--ok)}
+.call.resolvido{background:var(--panel2);border-color:var(--line2);border-left-color:var(--gold)}
+.call.resolvido .rot{color:var(--gold)}
+.call.resolvido p,.call.resolvido li{color:#dfe4ea}
+.call.resolvido strong{color:#fff}
+.call.resolvido .pg{color:#c8ccd2;border-color:var(--line2)}
+.call.complete{border-left:4px dashed var(--gold)}
+.call.complete .rot{color:var(--ouro-ink)}
+.call.suavez{background:var(--faixa-ouro);border-color:#3a2e10;border-left-color:var(--gold)}
+.call.suavez .rot{color:var(--gold)}
+.call.suavez p,.call.suavez li{color:var(--ouro-claro)}
+.call.suavez strong{color:#fff}
+.call.suavez li::marker{color:var(--gold)}
+.call.suavez .pg{color:var(--ouro-claro);border-color:#3a2e10}
+.call.treino{background:var(--ouro-bg);border-color:#f0dfa6;border-left-color:var(--ouro-ink)}
+.call.treino .rot{color:var(--ouro-ink)}
+.call.atencao{border-left-color:var(--erro)}
+.call.atencao .rot{color:var(--erro)}
+.call.edicao{background:var(--paper);border-left-color:var(--paper-ink)}
+.call.edicao .rot{color:var(--paper-ink)}
+.call.dica{background:var(--ouro-bg);border-left-color:var(--gold)}
+.call.dica .rot{color:var(--ouro-ink)}
+.call ol,.call ul{padding-left:1.3em}
+.call .pg{background:transparent}
+
+.respostas{border:1px solid var(--paper-line);border-left:4px solid var(--ok);border-radius:8px;background:#fff}
+.respostas summary{cursor:pointer;padding:12px 16px;font-weight:800;color:var(--ok);list-style:none;min-height:44px;display:flex;align-items:center}
+.respostas summary::-webkit-details-marker{display:none}
+.respostas summary::before{content:"+";display:inline-grid;place-items:center;width:1.4em;height:1.4em;margin-right:8px;border-radius:50%;background:var(--ok-bg)}
+.respostas[open] summary::before{content:"−"}
+.respostas>div{padding:0 16px 16px;display:grid;gap:12px}
+
+.sec.rapido{outline:2px solid var(--gold);outline-offset:-2px}
+.sec.rapido>h2::after{content:"4 min de leitura";margin-left:auto;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:#000;background:var(--gold);border-radius:3px;padding:3px 8px;white-space:nowrap}
+.sec.rapido>p:first-of-type{font-size:1.02rem}
+.sec.ref{outline:2px solid var(--gold);outline-offset:-2px}
+.sec.ref>h2::after{content:"Leve para a mesa";margin-left:auto;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:#000;background:var(--gold);border-radius:3px;padding:3px 8px;white-space:nowrap}
+
+footer{border-top:1px solid var(--line);background:var(--panel);color:var(--muted);font-size:.85rem}
+footer .in{max-width:760px;margin:0 auto;padding-block:20px}
+@media (max-width:600px){
+  .bloco{padding:16px;border-radius:8px}
+  .sec.ref>h2::after{display:none}
+}
+/* essencial x opcional: o que não é essencial abre com um toque */
+.dobra{border:1px solid var(--paper-line);border-radius:8px;background:#fff}
+.dobra>summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:10px;padding:11px 14px;font-weight:700;font-size:.92rem;color:var(--paper-ink);min-height:44px}
+.dobra>summary::-webkit-details-marker{display:none}
+.dobra>summary::before{content:"+";flex:none;display:grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--paper-line);color:var(--paper-ink);font-weight:800;line-height:1}
+.dobra[open]>summary::before{content:"−"}
+.dobra>.call,.dobra>details,.dobra>aside{margin:0 12px 12px}
+.dobra.pratica>summary{color:var(--ouro-ink)}
+.dobra.pratica[open]{display:grid;gap:10px;padding-bottom:12px}
+.dobra.pratica>*:not(summary){margin:0 12px}
+.dobra.sec-opc{border-style:dashed}
+.dobra.sec-opc[open]{padding-bottom:12px}
+.dobra.sec-opc>*:not(summary){margin-left:14px;margin-right:14px}
+.tag-opc{margin-left:10px;font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;font-weight:800;color:var(--paper-muted);border:1px solid var(--paper-line);border-radius:3px;padding:2px 6px;vertical-align:middle}
+.legenda-f{font-size:.88rem;color:var(--muted)}.legenda-f b{color:var(--ink)}
+.mais-i{display:inline-grid;place-items:center;width:18px;height:18px;border-radius:50%;background:var(--paper-line);color:var(--paper-ink);font-weight:800;font-size:.8rem}
+.indice small{color:var(--muted);font-weight:400}
+.sec p,.sec li,.sec a{overflow-wrap:anywhere}
+
+.ico{display:inline-block;width:28px;height:28px;vertical-align:middle;border-radius:5px;margin-right:6px}
+td .ico{margin-right:6px}
+.rec{display:inline-flex;align-items:center;gap:0;white-space:nowrap}
+.cel{display:block;min-width:0}
+
+/* referências visuais (01/11/2026): figura do manual e vídeo no ponto da ação */
+.fig,.video{margin:4px 0;display:grid;gap:6px;min-width:0}
+.fig img{width:100%;height:auto;border-radius:8px;border:1px solid var(--paper-line);background:#fff}
+.fig figcaption,.video figcaption{font-size:.82rem;color:var(--paper-muted);line-height:1.45}
+.yt{position:relative;display:block;width:100%;padding:0;border:0;border-radius:8px;overflow:hidden;cursor:pointer;background:#000;aspect-ratio:16/9}
+.yt img{width:100%;height:100%;object-fit:cover;opacity:.85;display:block}
+.yt-play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:#c4302b;color:#fff;font-weight:800;font-size:.95rem;padding:10px 16px;border-radius:999px;white-space:nowrap;box-shadow:0 2px 10px rgba(0,0,0,.4)}
+.yt:hover .yt-play,.yt:focus-visible .yt-play{background:#e03a33}
+.video iframe{width:100%;aspect-ratio:16/9;border:0;border-radius:8px;display:block}
+/* fotos em todas as seções (04/11/2026): foto do jogo no topo e em cada seção sem figura do manual */
+.topo-cj{overflow:hidden}
+.foto-topo{margin:-20px -20px 4px;display:grid;gap:0}
+.foto-topo img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;background:#fff}
+.foto-topo figcaption{font-size:.78rem;color:var(--paper-muted);padding:6px 20px 0}
+.foto-topo.caixa img,.foto-sec.caixa img{object-fit:contain}
+.foto-sec img{aspect-ratio:16/9;object-fit:cover}
+@media (max-width:600px){.foto-topo{margin:-16px -16px 4px}.foto-topo figcaption{padding:6px 16px 0}}
+.sec.setup{border-top:4px solid var(--ok)}
+.sec.setup>h2::before{content:"Comece por aqui";display:block;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ok);margin-bottom:4px}
+.sec.setup>h2{display:block}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://eliteboardgamers.com.br/#organizacao", "name": "Elite Boardgamers", "url": "https://eliteboardgamers.com.br/", "logo": {"@type": "ImageObject", "url": "https://eliteboardgamers.com.br/marca/elite-boardgamers.webp", "width": 318, "height": 254}, "sameAs": ["https://www.instagram.com/eliteboardgamers/"]}, {"@type": "Article", "@id": "https://eliteboardgamers.com.br/como-jogar/kingdomino/#artigo", "mainEntityOfPage": "https://eliteboardgamers.com.br/como-jogar/kingdomino/", "headline": "Como jogar Kingdomino", "description": "Regras de Kingdomino passo a passo, conferidas no manual oficial da Blue Orange: montagem, a fila de peças, o encaixe, o limite de 5 por 5 e a pontuação.", "image": ["https://eliteboardgamers.com.br/como-jogar/kingdomino/fotos/jogabilidade-1.webp"], "datePublished": "2026-11-08", "author": {"@type": "Organization", "name": "Redação Elite Boardgamers", "url": "https://eliteboardgamers.com.br/politica-editorial/"}, "publisher": {"@id": "https://eliteboardgamers.com.br/#organizacao"}, "inLanguage": "pt-BR"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Início", "item": "https://eliteboardgamers.com.br/"}, {"@type": "ListItem", "position": 2, "name": "Como jogar", "item": "https://eliteboardgamers.com.br/como-jogar/"}, {"@type": "ListItem", "position": 3, "name": "Como jogar Kingdomino", "item": "https://eliteboardgamers.com.br/como-jogar/kingdomino/"}]}]}</script>
+<style id="moldura">.busca-btn{display:grid;place-items:center;flex:none;width:44px;height:44px;padding:0;border:1px solid #3a3f48;border-radius:8px;background:none;color:#e9ecf1;cursor:pointer}.busca-btn:hover{border-color:#e3b23c;color:#e3b23c}.busca-btn[hidden]{display:none}.sino-btn{position:relative;display:grid;place-items:center;flex:none;width:44px;height:44px;padding:0;border:1px solid #3a3f48;border-radius:8px;background:none;color:#e9ecf1;cursor:pointer}.sino-btn:hover,.sino-btn.on{border-color:#e3b23c;color:#e3b23c}.sino-btn[hidden]{display:none}.sino-btn.on::after{content:"";position:absolute;right:7px;top:7px;width:8px;height:8px;border-radius:50%;background:#5fd38d;box-shadow:0 0 0 2px #111}footer .in a{display:inline-flex;align-items:center;min-height:24px}.cpw{position:relative;display:inline-block}.cp{display:inline-flex;align-items:center;justify-content:center;gap:8px;box-sizing:border-box;line-height:1.2;min-height:44px;margin:0;padding:10px 20px;border-radius:999px;border:0;background:#157a43;color:#fff;font:inherit;font-size:.95rem;font-weight:800;text-decoration:none;cursor:pointer}.cp:hover{background:#11683a;color:#fff}.cp .ic{width:19px;height:19px}.cp[hidden]{display:none}.cpw.mini .cp{min-height:40px;padding:8px 14px;font-size:.88rem}.cp-menu{position:absolute;z-index:30;top:calc(100% + 8px);left:0;min-width:200px;display:grid;gap:2px;padding:6px;border-radius:12px;background:#fff;border:1px solid #dde1e7;box-shadow:0 10px 30px rgba(0,0,0,.25)}.cp-menu[hidden]{display:none}.cp-menu.sobe{top:auto;bottom:calc(100% + 8px)}.cp-menu.dir{left:auto;right:0}.cp-op{display:flex;align-items:center;gap:10px;min-height:44px;padding:8px 12px;border:0;border-radius:8px;background:none;color:#14171c;font:inherit;font-size:.95rem;font-weight:700;text-align:left;text-decoration:none;cursor:pointer}.cp-op:hover,.cp-op:focus-visible{background:#eef1f4;color:#14171c}.cp-op .ic{width:20px;height:20px}.cp-op.zap-op .ic{color:#157a43}.cp-st{position:absolute;z-index:30;top:calc(100% + 8px);left:0;white-space:nowrap;margin:0;padding:6px 12px;border-radius:8px;background:#14171c;color:#fff;font-size:.85rem;font-weight:700}.cp-st:empty{display:none}.barra-lt .cp-st{top:auto;bottom:calc(100% + 8px)}.convite{display:flex;align-items:center;justify-content:space-between;gap:12px 20px;flex-wrap:wrap}.convite .cv-t{margin:0;font-weight:800;font-size:1.1rem}.convite .cv-s{margin:2px 0 0;font-size:.92rem;opacity:.8}.barra-lt>*{flex:none}.barra-lt{width:max-content;max-width:calc(100vw - 12px);box-sizing:border-box;position:fixed;z-index:25;left:50%;bottom:calc(12px + env(safe-area-inset-bottom));display:flex;align-items:center;gap:4px;padding:5px;border-radius:999px;background:#14171c;border:1px solid #3a3f48;box-shadow:0 8px 24px rgba(0,0,0,.35);transform:translate(-50%,0);transition:transform .25s ease,opacity .25s ease}.barra-lt.fora{transform:translate(-50%,calc(100% + 24px));opacity:0;pointer-events:none}.lt-b{display:inline-flex;align-items:center;gap:7px;min-height:44px;padding:8px 14px;border:0;border-radius:999px;background:none;color:#e9ecf1;font:inherit;font-size:.9rem;font-weight:700;text-decoration:none;cursor:pointer}.lt-b:hover{background:#262a31;color:#fff}.lt-b .ic{width:20px;height:20px}.barra-lt .lt-b.curtir{background:none;border:0;color:#e9ecf1;padding:8px 14px}.barra-lt .lt-b.curtir[aria-pressed=true]{color:#ff6b81;background:none}@media (max-width:479px){.lt-b span{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}}.lt-b.curtir[aria-pressed=true] .ic{fill:currentColor}.lt-grupo{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:44px;padding:0 14px 0 6px;border-radius:999px;background:#e3b23c;color:#14171c;font-size:.9rem;font-weight:800;text-decoration:none;white-space:nowrap}.lt-grupo:hover{background:#f0c44f;color:#14171c}.lt-grupo img{width:32px;height:32px;border-radius:8px;display:block}@media (max-width:479px){.barra-lt{gap:2px}.barra-lt .lt-b{padding:8px 10px}.barra-lt .cp{padding:8px 12px}.lt-grupo{padding:0 12px 0 6px}}@media (max-width:399px){.barra-lt:has(.curtir) .cp span{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}.barra-lt:has(.curtir) .cp{padding:8px 14px}}.barra-lt .cp{min-height:44px;padding:8px 16px;font-size:.9rem}body.lt-on .voltar-topo,body.lt-on button.sobe{bottom:calc(76px + env(safe-area-inset-bottom))}@media print{.barra-lt{display:none}}.interacoes{display:grid;gap:14px}.interacoes[hidden]{display:none}.curtir-l{display:flex;align-items:center;gap:12px;flex-wrap:wrap}.curtir{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:8px 18px;border-radius:999px;border:2px solid #b3263e;background:#fff;color:#b3263e;font:inherit;font-weight:800;cursor:pointer}.curtir .ic{width:22px;height:22px}.curtir[aria-pressed=true]{background:#b3263e;color:#fff}.curtir[aria-pressed=true] .ic{fill:currentColor}.curtir .n{font-variant-numeric:tabular-nums}.curtir-dica{font-size:.9rem;color:#5a6270}.interacoes h2{margin:4px 0 0}.coms{list-style:none;margin:0;padding:0;display:grid;gap:10px}.coms li{background:#fff;border:1px solid #dde1e7;border-radius:10px;padding:12px 14px}.com-quem{margin:0;font-size:.92rem}.com-quem time{color:#5a6270;font-size:.8rem;margin-left:6px}.com-txt{margin:4px 0 0;white-space:pre-wrap;color:#14171c}.coms-vazio{margin:0;color:#5a6270}.com-form{display:grid;gap:10px;border-top:1px solid #dde1e7;padding-top:14px}.com-form label{display:grid;gap:4px;font-weight:700;font-size:.9rem;color:#14171c}.com-form small{font-weight:600;color:#5a6270}.com-form input,.com-form textarea{font:inherit;font-size:16px;font-weight:400;padding:10px 12px;border:1px solid #c8cdd5;border-radius:8px;background:#fff;color:#14171c}.com-form textarea{resize:vertical;min-height:110px}.com-form .isca{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}.com-form button{justify-self:start;min-height:44px;padding:10px 20px;border-radius:999px;border:0;background:#14171c;color:#fff;font:inherit;font-weight:800;cursor:pointer}.com-form button:disabled{opacity:.6}.com-aviso{margin:0;font-size:.82rem;color:#5a6270}.com-aviso a{color:#1f5fae}.com-st{margin:0;font-weight:700;font-size:.92rem}.com-st:empty{display:none}.com-st.ok{color:#1b7a45}.com-st.erro{color:#a3223a}:where(html){scroll-padding-top:calc(var(--nav-h,49px) + 12px)}.nav{position:sticky;top:0;z-index:20}body .abas,body .barra-f,body .ctrl{top:var(--nav-h,49px)}.marca img.logo{width:auto;height:48px;border-radius:0}@media (max-width:480px){.marca img.logo{height:40px}}.nav .casa{display:flex;align-items:center;justify-content:center;min-width:44px}.nav .casa .ic{width:20px;height:20px}@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.card:hover,.jogo:hover .capa img,.jogo:active .capa,.zap:active,.post-btn:active,.btn-filtro:hover,.btn-filtro:active,.ver:active{transform:none!important}}.in{max-width:1180px;margin:0 auto;padding-left:16px;padding-right:16px}.ic{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round;flex:none}.bar{border-bottom:1px solid var(--line);background:#000;color:var(--ink)}.bar .in{display:flex;align-items:center;gap:12px;padding-top:8px;padding-bottom:8px}.bar a{color:inherit;text-decoration:none;font-weight:600;font-size:.95rem}.marca img{display:block;width:84px;border-radius:6px}.bar .ig{margin-left:auto;display:flex;align-items:center;gap:6px;padding:6px 10px;border-radius:6px}.bar .ig:hover{color:var(--gold)}.bar .zap-mini{display:flex;align-items:center;gap:6px;padding:6px 10px;border-radius:6px;background:#157a43;color:#fff}.nav ul{padding-left:16px;padding-right:16px}.nav ul li{list-style:none}@media (max-width:700px){.bar .ig span,.bar .zap-mini span{display:none}}footer{font-size:.9rem}footer .in{max-width:1180px;display:flex;flex-wrap:wrap;gap:6px 16px;padding-top:20px;padding-bottom:28px}footer a{color:var(--muted);text-decoration:none}footer a:hover{color:var(--gold)}</style>
+<style id="guia-extra">
+/* fotos na lista de tutoriais e no topo de /como-jogar/ (04/11/2026) */
+.topo-cj{overflow:hidden}
+.lista-t a.com-foto{grid-template-columns:96px 1fr;column-gap:14px;align-items:start}
+.lista-t a.com-foto>*{grid-column:2}
+.lista-t a.com-foto>img{grid-column:1;grid-row:1/span 4;width:96px;height:96px;object-fit:cover;border-radius:6px;background:#fff}
+.cj-mosaico{display:grid;grid-template-columns:2fr 1fr;grid-template-rows:1fr 1fr;gap:4px;margin:-20px -20px 4px;aspect-ratio:16/9;overflow:hidden}
+.cj-mosaico img{width:100%;height:100%;object-fit:cover;display:block;background:#fff}
+.cj-mosaico img:first-child{grid-row:1/span 2}
+.cj-mosaico-c{font-size:.78rem;color:var(--paper-muted)}
+@media (max-width:600px){.cj-mosaico{margin:-16px -16px 4px}.lista-t a.com-foto{grid-template-columns:72px 1fr}.lista-t a.com-foto>img{width:72px;height:72px}}
+/* faixa de progresso, presa logo abaixo do menu */
+.guia-prog{position:sticky;top:var(--nav-h,45px);z-index:15;background:var(--panel);border-bottom:1px solid var(--line)}
+.guia-prog a{display:flex;align-items:center;gap:10px;max-width:760px;margin:0 auto;padding:9px 16px;color:var(--ink);text-decoration:none;font-size:.86rem;font-weight:700;min-height:40px}
+.guia-prog .gp-r{flex:none;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--gold)}
+.guia-prog .gp-t{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.guia-prog .gp-i{margin-left:auto;flex:none;font-size:.78rem;color:var(--muted);font-weight:600}
+.guia-prog .gp-b{position:absolute;left:0;right:0;bottom:-1px;height:3px;background:var(--gold);transform-origin:0 50%;transform:scaleX(0)}
+html{scroll-padding-top:calc(var(--nav-h,45px) + 56px)}
+/* legenda dos blocos: pontos de cor em vez de pílulas */
+.legenda{gap:6px 16px}
+.legenda span{position:relative;background:none;color:var(--muted);box-shadow:none!important;padding:0 0 0 16px;font-size:.8rem;letter-spacing:0}
+.legenda span::before{content:"";position:absolute;left:0;top:.32em;width:10px;height:10px;border-radius:3px;background:var(--paper)}
+.legenda .l2::before{background:var(--ok)}.legenda .l3::before{background:var(--gold)}.legenda .l4::before{background:var(--ouro-ink)}
+/* índice numerado */
+.indice ol{counter-reset:it}.indice li{counter-increment:it}
+.indice a{display:flex;gap:10px;align-items:baseline;min-height:40px;padding:9px 0}
+.indice a::before{content:counter(it);flex:none;width:1.6em;font-size:.8rem;font-weight:800;color:var(--ouro-ink);font-variant-numeric:tabular-nums}
+.nota-pe{color:var(--muted);font-size:.85rem;padding:4px 2px 0}
+/* exercícios de múltipla escolha: tocou numa opção, aparece a certa e a explicação */
+.quiz{display:grid;gap:8px;padding:12px 0;border-top:1px solid var(--paper-line)}.quiz:first-of-type{border-top:0}
+.q-p{font-weight:700;color:inherit}
+.q-ops{display:grid;gap:6px}
+.q-op{display:block;width:100%;text-align:left;font:inherit;font-size:.95rem;line-height:1.35;min-height:44px;padding:10px 12px;border-radius:8px;
+ border:1px solid #c8cdd5;background:#fff;color:#14171c;cursor:pointer}
+.q-op:hover{border-color:var(--gold)}.q-op:disabled{cursor:default}
+.q-op.ok{background:#e3f4ea;border-color:#1b7a45;color:#0f4d2b;font-weight:700}.q-op.ok::before{content:"✓ ";font-weight:800}
+.q-op.erro{background:#fbe6e9;border-color:#b3263e;color:#7d1a2b}.q-op.erro::before{content:"✗ ";font-weight:800}
+.q-exp{border-left:4px solid var(--ok);background:#f2faf5;color:#14171c;border-radius:6px;padding:8px 12px}
+.q-exp .q-res{color:var(--ok)}.q-exp.mal{border-left-color:#b3263e;background:#fdf3f4}.q-exp.mal .q-res{color:#b3263e}
+.call.suavez .q-op,.call.resolvido .q-op{border-color:#3a2e10}
+/* endereços longos (fontes) quebram em vez de alargar a página */
+.sec a,.sec li,.sec p{overflow-wrap:anywhere}
+/* títulos das etapas com mais respiro */
+.sec{scroll-margin-top:calc(var(--nav-h,45px) + 56px)}
+@media (min-width:601px){.sec{padding:24px 28px}}
+/* tabelas: fichas no celular (menos as grades de células curtas, que ficam tabela e centralizadas) */
+.tab table.grade th,.tab table.grade td{text-align:center;padding:7px 6px}
+.tab table.grade th{white-space:normal;overflow-wrap:anywhere;hyphens:auto}
+@media (max-width:600px){
+ .tab:not(:has(.grade)){border:0;background:none;overflow:visible;border-radius:0}
+ .tab:not(:has(.grade)) table,.tab:not(:has(.grade)) tbody,.tab:not(:has(.grade)) tr,.tab:not(:has(.grade)) td{display:block}
+ .tab:not(:has(.grade)) thead{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+ .tab:not(:has(.grade)) tr{background:#fff;border:1px solid var(--paper-line);border-radius:8px;padding:10px 12px;margin-bottom:8px}
+ .tab:not(:has(.grade)) td{border:0;padding:3px 0;display:grid;grid-template-columns:6.5em minmax(0,1fr);gap:8px}
+ .tab:not(:has(.grade)) td::before{content:attr(data-label);font-size:.7rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--paper-muted);padding-top:3px}
+ .tab:not(:has(.grade)) td:empty{display:none}
+ .tab:not(:has(.grade)) td:first-child{display:block;font-weight:800;color:var(--paper-ink);padding-bottom:4px}
+ .tab:not(:has(.grade)) td:first-child::before{display:none}
+}
+</style>
+</head>
+<body>
+<!--moldura--><a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<header class="bar" id="topo"><div class="in">
+ <a class="marca" href="../../"><img class="logo" src="../../marca/logo-eb-104.webp" srcset="../../marca/logo-eb-52.webp 157w, ../../marca/logo-eb-104.webp 314w, ../../marca/logo-eb-156.webp 472w" sizes="(max-width: 480px) 121px, 145px" width="157" height="52" alt="Elite Board Gamers: página inicial"></a>
+ <a class="ig" href="https://www.instagram.com/eliteboardgamers/" target="_blank" rel="noopener" aria-label="Instagram @eliteboardgamers"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6" fill="currentColor"/></svg><span>@eliteboardgamers</span></a>
+ <a class="zap-mini" href="https://chat.whatsapp.com/IgQQkJdSkzHBaEq3UwFeAo" target="_blank" rel="noopener" aria-label="Grupo do WhatsApp"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8.4 19l-4.4 1Z"/><path d="M9.2 8.6c.3-.5.8-.5 1-.1l.7 1.5c.1.3 0 .6-.2.8l-.4.4c.5 1.1 1.4 2 2.5 2.5l.4-.4c.2-.2.5-.3.8-.2l1.5.7c.4.2.4.7-.1 1-.7.5-1.6.6-2.4.3a7 7 0 0 1-4.2-4.2c-.3-.8-.2-1.7.4-2.3Z"/></svg><span>Grupo do WhatsApp</span></a>
+ <button type="button" class="busca-btn" aria-label="Buscar no site" aria-haspopup="dialog" aria-keyshortcuts="/ Control+K" hidden><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></button>
+ <button type="button" class="sino-btn" aria-label="Receber notificações" aria-haspopup="dialog" aria-expanded="false" hidden><svg class="ic" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 3a6 6 0 0 0-6 6v3.6L4.3 15.5A1 1 0 0 0 5.2 17h13.6a1 1 0 0 0 .9-1.5L18 12.6V9a6 6 0 0 0-6-6z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M9.5 19.5a2.6 2.6 0 0 0 5 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+</div></header>
+<script src="/sino.js?v=2" defer></script>
+<script>(()=>{const b=document.querySelector('.busca-btn');let c;b.hidden=false;const a=()=>{c=c||new Promise((r,j)=>{const s=document.createElement('script');s.src='../../busca.js';s.onload=r;s.onerror=()=>{c=null;j()};document.head.append(s)});c.then(()=>abrirBusca('../../'),()=>{})};b.addEventListener('click',a);addEventListener('keydown',e=>{const t=e.target,ed=t.isContentEditable||/^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName);if((e.key==='/'&&!ed&&!e.ctrlKey&&!e.metaKey)||((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k')){e.preventDefault();a()}})})()</script>
+<nav class="nav" aria-label="Seções do site"><ul class="in"><li><a class="casa" href="../../" aria-label="Página inicial"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 9.5V20h13V9.5"/><path d="M10 20v-5.5h4V20"/></svg></a></li><li><a href="../../noticias/">Notícias</a></li><li><a href="../../resenhas/">Resenhas</a></li><li><a href="../../como-jogar/" aria-current="true">Como jogar</a></li><li><a href="../../lancamentos/">Lançamentos</a></li><li><a href="../../black/">Black de Verdade</a></li></ul></nav>
+<script>(()=>{const n=document.querySelector('.nav'),h=()=>document.documentElement.style.setProperty('--nav-h',n.offsetHeight+'px');h();addEventListener('resize',h);addEventListener('load',h)})()</script>
+<div class="guia-prog"><a href="#neste-guia"><span class="gp-r">Guia</span><span class="gp-t">Neste guia</span><span class="gp-i">Índice</span></a><span class="gp-b" aria-hidden="true"></span></div><!--/moldura-->
+
+<main id="conteudo" class="gut"><div class="nota">
+  <nav class="trilha" aria-label="Trilha de navegação"><ol><li><a href="../../">Início</a></li><li><a href="../">Como jogar</a></li><li aria-current="page">Kingdomino</li></ol></nav>
+
+  <article class="bloco topo-cj">
+    <figure class="foto-topo"><img src="fotos/jogabilidade-1.webp" alt="Kingdomino: uma partida em andamento" width="1600" height="1066" fetchpriority="high" decoding="async"><figcaption>Imagem: Blue Orange Games · nova edição (2025), mesmas regras</figcaption></figure>
+    <span class="num-l">Colocação de peças · Família</span>
+    <h1>Como jogar Kingdomino</h1>
+    <p class="meta-e"><span>Para quem nunca jogou</span><span>2 a 4 jogadores</span><span>15 min</span><span>7+</span><span>Manual oficial em inglês (Blue Orange)</span></p>
+    <p class="meta"><time datetime="2026-11-08">8 de novembro de 2026</time> · Redação Elite Boardgamers</p>
+  </article>
+
+  <section class="bloco r1" aria-label="Resumo em 1 minuto">
+    <span class="kick">Resumo em 1 minuto</span>
+    <p class="resp">Você escolhe peças de paisagem numa fila, encaixa cada uma no seu reino de 5 por 5 encostando terrenos iguais e vence quem somar mais pontos com territórios de muitos quadrados e muitas coroas.</p>
+    <ul><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.5l4.5 4.5L19.5 6.5"/></svg><span>Na sua vez, você encaixa a peça que tinha escolhido e põe o seu rei numa peça da nova fila; quem fica com a peça de número mais baixo joga primeiro na rodada seguinte.</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.5l4.5 4.5L19.5 6.5"/></svg><span>A peça precisa encostar, de lado, num terreno igual ou no castelo, e o reino inteiro tem de caber em 5 por 5; o que não cabe é descartado.</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12.5l4.5 4.5L19.5 6.5"/></svg><span>Cada território vale o número de quadrados vezes o número de coroas: sem coroa, vale zero.</span></li></ul>
+    <p class="pe"><span><b>Como você aprende:</b> 3 etapas, da mesa montada à contagem de pontos</span><span><b>Leitura do essencial:</b> cerca de 5 min</span></p>
+    <p class="legenda-f"><b>À vista, só o essencial para jogar.</b> O que abre com <span class="mais-i">+</span> é explicação, exemplo, exercício ou regra de caso especial: abra quando precisar.</p>
+  </section>
+
+<section class="bloco sec setup" id="montar-a-mesa-passo-a-passo"><h2><span class="num"></span>Montar a mesa passo a passo</h2>
+<p>A montagem segue a preparação do manual <span class="pg">p.&nbsp;2</span>, na mesma ordem, com cada ação num passo.</p>
+<p><strong>Componentes da caixa</strong> (p. 2; nomes da página da PaperGames)</p>
+<div class="tab"><table><thead><tr><th>Componente</th><th>Quantidade</th><th>Para que serve</th></tr></thead><tbody><tr><td data-label="Componente">Peças de paisagem</td><td data-label="Quantidade">48</td><td data-label="Para que serve">Os dominós: cada um tem dois quadrados de terreno de um lado e um número do outro</td></tr><tr><td data-label="Componente">Peças de área inicial</td><td data-label="Quantidade">4</td><td data-label="Para que serve">Um quadrado só, onde cada reino começa</td></tr><tr><td data-label="Componente">Castelos</td><td data-label="Quantidade">4 (rosa, amarelo, verde e azul)</td><td data-label="Para que serve">Ficam em cima da peça de área inicial e mostram de quem é o reino. Neste guia, "o castelo" é também a peça de área inicial em que ele está</td></tr><tr><td data-label="Componente">Reis de madeira</td><td data-label="Quantidade">8 (2 de cada cor)</td><td data-label="Para que serve">Marcam a peça que cada jogador escolheu e a ordem de jogo</td></tr></tbody></table></div>
+<p>Cada peça de paisagem é numerada no verso <span class="pg">p.&nbsp;2</span>. Os terrenos são seis: campo de trigo (amarelo), lago (azul), floresta (verde-escuro), pastagem (verde-claro, com ovelhas), pântano (bege) e montanha (preto, com minas). Alguns quadrados têm de 1 a 3 coroas desenhadas; são elas que fazem pontos <span class="pg">p.&nbsp;3 e 28</span>.</p>
+<figure class="fig"><img src="figuras/setup-terrenos.webp" alt="Os quadrados de terreno da caixa e quantos há de cada um, com e sem coroas. A montanha é o terreno mais raro e o que tem mais coroas. Ilustração: manual oficial Blue Orange (p. 28)" loading="lazy" decoding="async"><figcaption>Os quadrados de terreno da caixa e quantos há de cada um, com e sem coroas. A montanha é o terreno mais raro e o que tem mais coroas. Ilustração: manual oficial Blue Orange <span class="pg">p.&nbsp;28</span></figcaption></figure>
+<p><strong>Os passos</strong> <span class="pg">p.&nbsp;2</span></p>
+<p><strong>1. Monte os castelos (só na primeira partida).</strong> Antes de jogar pela primeira vez, encaixe as partes de papelão dos 4 castelos pequenos <span class="pg">p.&nbsp;2</span>.</p>
+<figure class="fig"><img src="figuras/setup-castelo.webp" alt="As duas partes de cada castelo se encaixam pelas fendas, como mostram as setas. Ilustração: manual oficial Blue Orange (p. 2)" loading="lazy" decoding="async"><figcaption>As duas partes de cada castelo se encaixam pelas fendas, como mostram as setas. Ilustração: manual oficial Blue Orange <span class="pg">p.&nbsp;2</span></figcaption></figure>
+<p><strong>2. Ponha a caixa na mesa, aberta.</strong> Ela vai guardar o monte de compra (você o monta no passo 5) e marca o começo das filas <span class="pg">p.&nbsp;2</span>.</p>
+<figure class="fig"><img src="figuras/setup-caixa.webp" alt="A caixa aberta, com as peças de paisagem de pé na bandeja. Ilustração: manual oficial Blue Orange (p. 2)" loading="lazy" decoding="async"><figcaption>A caixa aberta, com as peças de paisagem de pé na bandeja. Ilustração: manual oficial Blue Orange <span class="pg">p.&nbsp;2</span></figcaption></figure>
+<p><strong>3. Reis.</strong> Cada jogador escolhe uma cor. Com 2 jogadores, cada um pega os dois reis da sua cor; com 3 ou 4, cada um pega um rei <span class="pg">p.&nbsp;2</span>.</p>
+<p><strong>4. Peça de área inicial e castelo.</strong> Cada jogador pega uma peça de área inicial e o castelo da sua cor. A peça vai na mesa, à sua frente, com o desenho para cima, e o castelo fica em cima dela <span class="pg">p.&nbsp;2</span>.</p>
+<p><strong>5. Monte de compra.</strong> Embaralhe as peças de paisagem e ponha-as em pé na bandeja da caixa, com o número virado para fora: esse é o monte de compra <span class="pg">p.&nbsp;2</span>. Com 2 jogadores, use 24 peças tiradas ao acaso; com 3, use 36; com 4, todas as 48 <span class="pg">p.&nbsp;2</span>. As que sobram ficam de lado, longe da caixa, até o fim da partida, para não se misturarem ao monte (p. 5, parte em francês).</p>
+<p><strong>6. A primeira fila (A no manual).</strong> Uma fila, neste guia, é uma fileira de peças posta em coluna ao lado da caixa. Pegue as primeiras peças da bandeja, sem olhar, tantas quantos reis estão em jogo (4 com 2 ou 4 jogadores, 3 com 3), e ponha-as numa coluna ao lado da caixa, com o número para cima <span class="pg">p.&nbsp;5 e 17</span>, em ordem crescente: o mais baixo fica sempre mais perto da caixa. Depois, vire cada uma no mesmo lugar, para mostrar os terrenos <span class="pg">p.&nbsp;2</span>.</p>
+<figure class="fig"><img src="figuras/setup-fila.webp" alt="Passo 6, com 4 jogadores: as peças 2, 21, 35 e 37 em ordem crescente, cada uma virada no mesmo lugar. Ilustração: manual oficial Blue Orange (p. 2)" loading="lazy" decoding="async"><figcaption>Passo 6, com 4 jogadores: as peças 2, 21, 35 e 37 em ordem crescente, cada uma virada no mesmo lugar. Ilustração: manual oficial Blue Orange <span class="pg">p.&nbsp;2</span></figcaption></figure>
+<p><strong>7. A escolha inicial (B no manual).</strong> Antes da primeira rodada, e só nessa vez, um jogador junta todos os reis na mão. Um de cada vez, os jogadores tiram um rei da mão, ao acaso, e põem esse rei numa peça livre da fila, a que quiserem; pode não ser o rei da sua cor <span class="pg">p.&nbsp;2 e 17</span>. Cada peça recebe um rei só, então o último rei vai para a peça que sobrou. Com 2 jogadores, cada um acaba com duas peças, uma para cada rei <span class="pg">p.&nbsp;2</span>.</p>
+<figure class="fig"><img src="figuras/setup-reis.webp" alt="Passo 7, a escolha inicial: os quatro reis, tirados ao acaso, vão um para cada peça da fila. Ilustração: manual oficial Blue Orange (p. 2)" loading="lazy" decoding="async"><figcaption>Passo 7, a escolha inicial: os quatro reis, tirados ao acaso, vão um para cada peça da fila. Ilustração: manual oficial Blue Orange <span class="pg">p.&nbsp;2</span></figcaption></figure>
+<p><strong>8. A segunda fila (C no manual).</strong> Com todos os reis na primeira fila, tire do monte o mesmo número de peças e forme uma segunda coluna ao lado da fila com os reis, também em ordem crescente a partir da caixa, e vire as peças <span class="pg">p.&nbsp;2 e 3</span>. Agora há duas filas: a dos reis e a nova, vazia.</p>
+<figure class="fig"><img src="figuras/setup-nova-fila.webp" alt="Passo 8: as peças 12, 44, 31 e 26 saem do monte e entram na nova fila em ordem crescente: 12, 26, 31 e 44. Ilustração: manual oficial Blue Orange (p. 2)" loading="lazy" decoding="async"><figcaption>Passo 8: as peças 12, 44, 31 e 26 saem do monte e entram na nova fila em ordem crescente: 12, 26, 31 e 44. Ilustração: manual oficial Blue Orange <span class="pg">p.&nbsp;2</span></figcaption></figure>
+<figure class="fig"><img src="fotos/componentes-1.webp" alt="A mesma situação numa foto da editora, com outra arte: a fila com os reis e, ao lado, a nova fila ainda com os números para cima, antes de ser virada; à esquerda, um reino já começado. Imagem: Asmodee UK" loading="lazy" decoding="async"><figcaption>A mesma situação numa foto da editora, com outra arte: a fila com os reis e, ao lado, a nova fila ainda com os números para cima, antes de ser virada; à esquerda, um reino já começado. Imagem: Asmodee UK</figcaption></figure>
+<p><strong>O que muda com o número de jogadores</strong> (p. 2 e 3; a última coluna é conta do guia)</p>
+<div class="tab"><table><thead><tr><th>Jogadores</th><th>Reis por jogador</th><th>Peças de paisagem na partida</th><th>Peças em cada fila</th><th>Rodadas</th><th>Peças que ficam fora</th></tr></thead><tbody><tr><td data-label="Jogadores">2</td><td data-label="Reis por jogador">2</td><td data-label="Peças de paisagem na partida">24</td><td data-label="Peças em cada fila">4</td><td data-label="Rodadas">6</td><td data-label="Peças que ficam fora">24</td></tr><tr><td data-label="Jogadores">3</td><td data-label="Reis por jogador">1</td><td data-label="Peças de paisagem na partida">36</td><td data-label="Peças em cada fila">3</td><td data-label="Rodadas">12</td><td data-label="Peças que ficam fora">12</td></tr><tr><td data-label="Jogadores">4</td><td data-label="Reis por jogador">1</td><td data-label="Peças de paisagem na partida">48</td><td data-label="Peças em cada fila">4</td><td data-label="Rodadas">12</td><td data-label="Peças que ficam fora">nenhuma</td></tr></tbody></table></div>
+<p>Em qualquer caso, pela conta do guia, cada jogador recebe 12 peças: 24 quadrados que, com a peça de área inicial, enchem a grade de 5 por 5 <span class="pg">p.&nbsp;2 e 3</span>.</p>
+<p><strong>O que volta para a caixa.</strong> Nada das peças de paisagem: as que ficaram fora da partida esperam de lado até o fim <span class="pg">p.&nbsp;5</span>. Voltam, pelo que o guia entende, os reis, castelos e peças de área inicial das cores que ninguém escolheu.</p>
+<p><strong>Quem começa.</strong> Joga primeiro quem tem o rei na peça da primeira fila mais perto da caixa, a de número mais baixo <span class="pg">p.&nbsp;3</span>.</p>
+<p><strong>Antes de começar, confira:</strong> castelo sobre a peça de área inicial diante de cada um; os reis certos; o monte com 24, 36 ou 48 peças; a primeira fila em ordem crescente a partir da caixa, com um rei em cada peça; a segunda fila ao lado, virada e sem reis.</p>
+<div class="quiz"><p class="q-p">Partida de 3 jogadores. Quantas peças de paisagem vão para o monte de compra, e quantas peças tem cada fila?</p><div class="q-ops"><button type="button" class="q-op">48 no monte, 4 em cada fila</button><button type="button" class="q-op" data-ok>36 no monte, 3 em cada fila</button><button type="button" class="q-op">36 no monte, 4 em cada fila</button><button type="button" class="q-op">24 no monte, 3 em cada fila</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Com 3 jogadores, usam-se 36 peças tiradas ao acaso, e cada fila tem tantas peças quantos reis em jogo: 3 <span class="pg">p.&nbsp;2</span>.</p></div></div>
+</section>
+<section class="bloco sec rapido" id="comece-a-jogar-em-4-minutos"><h2><span class="num"></span>Comece a jogar em 4 minutos</h2>
+<p><strong>Meta:</strong> em 4 minutos de leitura, montar a mesa e jogar a sua primeira vez sem abrir o manual.</p>
+<h3>A ideia do jogo</h3>
+<p>Cada jogador constrói um <strong>reino</strong> de 5 por 5 quadrados encaixando peças de paisagem como num dominó: cada peça precisa encostar num terreno igual. No fim, cada área de terreno igual, o <strong>território</strong>, vale o número de quadrados vezes o número de <strong>coroas</strong> que tem (p. 2 a 4). A peça que você escolhe agora decide em que lugar da fila você joga na próxima rodada.</p>
+<h3>Monte a mesa</h3>
+<p>Resumo da seção "Montar a mesa passo a passo", acima <span class="pg">p.&nbsp;2</span>.</p>
+<ol><li>Cada um com a peça de área inicial e o castelo à frente; 2 reis por jogador com 2 jogadores, 1 com 3 ou 4.</li><li>Monte de compra na caixa: 24, 36 ou 48 peças, conforme 2, 3 ou 4 jogadores.</li><li>Primeira fila ao lado da caixa, em ordem crescente, virada para os terrenos. Escolha inicial: os reis são sorteados, e cada um vai para uma peça.</li><li>Segunda fila ao lado da fila com os reis, em ordem crescente, virada, sem reis.</li></ol>
+<h3>Seu primeiro turno</h3>
+<p>Quem tem o rei mais perto da caixa joga primeiro e faz duas coisas, nesta ordem <span class="pg">p.&nbsp;3</span>:</p>
+<ol><li><strong>Encaixe a peça do seu rei no seu reino.</strong> Ela precisa encostar na peça de área inicial (que aceita qualquer terreno) ou, em outra peça de paisagem, num quadrado do mesmo terreno, de lado ou em cima e embaixo, nunca só pelo canto (na diagonal).</li><li><strong>Escolha uma peça da nova fila</strong> e ponha o seu rei nela.</li></ol>
+<p>Depois joga o rei da segunda peça, e assim por diante. Quando todos jogaram, uma nova fila sai do monte e fica no lugar da fila que esvaziou, ao lado da fila com os reis <span class="pg">p.&nbsp;3</span>. Com 2 jogadores, cada rei joga na vez da sua peça <span class="pg">p.&nbsp;3</span>.</p>
+<figure class="fig"><img src="figuras/turno.webp" alt="Um turno: 1, o jogador leva a peça em que estava o seu rei (dois quadrados de campo de trigo) e a encaixa ao lado do castelo; 2, põe o rei numa peça da nova fila, aqui a última. Ilustração: manual oficial Blue Orange (p. 3)" loading="lazy" decoding="async"><figcaption>Um turno: 1, o jogador leva a peça em que estava o seu rei (dois quadrados de campo de trigo) e a encaixa ao lado do castelo; 2, põe o rei numa peça da nova fila, aqui a última. Ilustração: manual oficial Blue Orange <span class="pg">p.&nbsp;3</span></figcaption></figure>
+<aside class="call resolvido"><p class="rot">Tarefa · exemplo resolvido</p><p><strong>Exemplo resolvido.</strong> O da figura acima <span class="pg">p.&nbsp;3</span>. O seu rei está na primeira peça da fila, com dois quadrados de campo de trigo. Você joga primeiro e põe a peça ao lado do castelo, que aceita qualquer terreno. Depois põe o rei na última peça da nova fila, de campo de trigo e pântano com 2 coroas.</p></aside>
+<aside class="call complete"><p class="rot">Tarefa · complete</p><p><strong>Complete.</strong> O seu reino tem só o castelo e uma peça de floresta e campo de trigo, encostada nele. Você recebe uma peça de lago e pastagem.</p>
+<div class="quiz"><p class="q-p">Onde ela pode entrar?</p><div class="q-ops"><button type="button" class="q-op">Encostada só na floresta, longe do castelo</button><button type="button" class="q-op" data-ok>Encostada em qualquer lado livre do castelo</button><button type="button" class="q-op">Em lugar nenhum: precisa ser descartada</button><button type="button" class="q-op">Encostada só pelo canto (na diagonal) na floresta</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> A peça de área inicial aceita qualquer terreno <span class="pg">p.&nbsp;3</span>. Longe do castelo, lago e pastagem não combinam com floresta nem com trigo, e o canto (na diagonal) não conta.</p></div></div></aside>
+<aside class="call suavez"><p class="rot">Tarefa · sua vez</p><p><strong>Sua vez.</strong></p>
+<div class="quiz"><p class="q-p">Na fila, o seu rei está na terceira peça (número 31), e os outros estão na 9, na 14 e na 40. Quando você joga?</p><div class="q-ops"><button type="button" class="q-op">Primeiro, porque escolheu antes</button><button type="button" class="q-op">Por último, porque a 31 tem número alto</button><button type="button" class="q-op" data-ok>Em terceiro, depois dos donos da 9 e da 14</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> A ordem segue a posição dos reis na fila, a partir da peça mais perto da caixa, a de número mais baixo <span class="pg">p.&nbsp;3</span>.</p></div></div></aside>
+<h3>Ainda não precisa saber</h3>
+<p>O limite da grade de 5 por 5, o descarte de peças e a última rodada: <a href="#etapa-2-a-grade-de-5-por-5-e-o-fim-da-partida">etapa 2</a>. Como contar os pontos, o desempate e as regras adicionais: <a href="#etapa-3-contar-os-pontos">etapa 3</a>.</p>
+<h3>Como a partida acaba: quando as peças acabam</h3>
+<p>A partida termina quando o monte acaba e as últimas peças são encaixadas, depois de 12 rodadas com 3 ou 4 jogadores ou 6 com 2. Ganha quem tiver mais pontos <span class="pg">p.&nbsp;3 e 4</span>.</p>
+<p><strong>Prefere ver?</strong> O vídeo abaixo é a partida completa que a página da PaperGames indica para aprender o jogo. Ele complementa este guia; em caso de diferença, vale o manual.</p>
+<figure class="video"><button type="button" class="yt" data-id="X7BaL2TkF9k" data-t="0" aria-label="Assistir ao vídeo"><img src="https://i.ytimg.com/vi/X7BaL2TkF9k/hqdefault.jpg" alt="" loading="lazy" decoding="async" width="480" height="360"><span class="yt-play">▶ Assistir ao vídeo</span></button><figcaption>Covil dos Jogos - Review e Gameplay Kingdomino, canal Covil dos Jogos · <a href="https://www.youtube.com/watch?v=X7BaL2TkF9k&amp;t=0s" rel="noopener">abrir no YouTube</a></figcaption></figure>
+<aside class="call atencao"><p class="rot">Atenção</p><p><strong>Os erros mais caros.</strong> A peça precisa encostar num terreno igual, de lado; encostar só pelo canto (na diagonal) não vale <span class="pg">p.&nbsp;3</span>. Quem joga primeiro é quem está na peça mais perto da caixa, não quem jogou primeiro na rodada anterior <span class="pg">p.&nbsp;3</span>. Você encaixa a peça que já tinha antes de escolher a nova <span class="pg">p.&nbsp;3</span>.</p></aside>
+</section>
+  <nav class="bloco indice" id="neste-guia" aria-label="Neste guia"><h2>Neste guia</h2><ol><li><a href="#montar-a-mesa-passo-a-passo">Montar a mesa passo a passo</a></li><li><a href="#comece-a-jogar-em-4-minutos">Comece a jogar em 4 minutos</a></li><li><a href="#antes-de-tudo-o-que-e-este-jogo">Antes de tudo: o que é este jogo</a> <small>(opcional)</small></li><li><a href="#como-este-guia-ensina">Como este guia ensina</a> <small>(opcional)</small></li><li><a href="#etapa-1-escolher-e-encaixar-pecas">Etapa 1: escolher e encaixar peças</a></li><li><a href="#etapa-2-a-grade-de-5-por-5-e-o-fim-da-partida">Etapa 2: a grade de 5 por 5 e o fim da partida</a></li><li><a href="#etapa-3-contar-os-pontos">Etapa 3: contar os pontos</a></li><li><a href="#situacoes-especiais">Situações especiais</a> <small>(opcional)</small></li><li><a href="#avaliacao-final">Avaliação final</a> <small>(opcional)</small></li><li><a href="#para-consultar-durante-a-partida">Para consultar durante a partida</a></li><li><a href="#fontes">Fontes</a></li></ol></nav>
+
+<section class="bloco sec opc" id="antes-de-tudo-o-que-e-este-jogo"><h2><span class="num">0</span>Antes de tudo: o que é este jogo<span class="tag-opc">Opcional</span></h2>
+<figure class="fig foto-sec"><img src="fotos/componentes-1.webp" alt="Kingdomino: os componentes" width="800" height="800" loading="lazy" decoding="async"><figcaption>Imagem: Asmodee UK · nova edição (2025), mesmas regras</figcaption></figure>
+<details class="dobra sec-opc"><summary>Abrir esta seção</summary><p>Kingdomino é um jogo de Bruno Cathala para 2 a 4 jogadores, com cerca de 15 minutos de partida; o manual indica a partir de 8 anos <span class="pg">p.&nbsp;2</span>, e a página da PaperGames, a partir de 7. Cada jogador é um rei que expande as suas terras encaixando peças de paisagem, como num dominó, até montar um reino de 5 por 5 quadrados <span class="pg">p.&nbsp;2</span>.</p>
+<p>A cada vez, você decide duas coisas: onde encaixar a peça que já tem e qual peça escolher na nova fila. A segunda escolha também define quando você joga na rodada seguinte.</p></details>
+</section>
+<section class="bloco sec opc" id="como-este-guia-ensina"><h2><span class="num">1</span>Como este guia ensina<span class="tag-opc">Opcional</span></h2>
+<figure class="fig foto-sec caixa"><img src="fotos/capa-1.webp" alt="Kingdomino: a caixa" width="1024" height="768" loading="lazy" decoding="async"><figcaption>Imagem: Blue Orange</figcaption></figure>
+<details class="dobra sec-opc"><summary>Abrir esta seção</summary><p>Três etapas, na ordem da partida: escolher e encaixar peças; respeitar a grade de 5 por 5 e chegar ao fim; contar os pontos. Cada uma tem <strong>Para entender</strong>, <strong>Passo a passo</strong>, regras de caso especial à parte e tarefas com ajuda decrescente: <strong>exemplo resolvido</strong>, <strong>complete</strong> e <strong>sua vez</strong>. Toque numa opção para ver a certa e a explicação. No fim, uma avaliação diz o que reler, e a folha de consulta vai para a mesa.</p></details>
+</section>
+<section class="bloco sec" id="etapa-1-escolher-e-encaixar-pecas"><h2><span class="num">2</span>Etapa 1: escolher e encaixar peças</h2>
+<details class="dobra entender"><summary>Por que funciona assim</summary><aside class="call entender"><p>A fila mostra que peças estão disponíveis e marca a ordem da próxima rodada: a posição do seu rei na nova fila é a sua posição na vez seguinte <span class="pg">p.&nbsp;3</span>. Escolher uma peça é também escolher quando você vai jogar.</p></aside></details>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Uma rodada</strong> <span class="pg">p.&nbsp;3</span></p>
+<ol><li>Joga quem tem o rei na peça mais perto da caixa, a de número mais baixo; depois, a segunda peça, e assim até a última.</li><li>Na sua vez, primeiro encaixe no seu reino a peça em que está o seu rei.</li><li>Depois, ponha o rei numa peça livre da nova fila. Cada peça recebe um rei só.</li><li>Quando todos jogaram, tire do monte o mesmo número de peças e forme outra fila nova no lugar da fila que esvaziou, ao lado da fila com os reis, em ordem crescente a partir da caixa, com os terrenos à mostra.</li><li>Com 2 jogadores, cada um faz os passos 2 e 3 uma vez para cada rei, na vez de cada rei.</li></ol></aside>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>Encaixar uma peça</strong> <span class="pg">p.&nbsp;3</span></p>
+<ol><li>A peça pode ficar na horizontal ou na vertical, com os terrenos para cima.</li><li>Ela precisa encostar na peça de área inicial, que aceita qualquer terreno, ou ter pelo menos um quadrado encostado num quadrado do mesmo terreno.</li><li>O encosto vale de lado ou em cima e embaixo, nunca só pelo canto (na diagonal).</li></ol></aside>
+<figure class="fig"><img src="figuras/conexao.webp" alt="Três encaixes. À esquerda, o trigo encosta só na pastagem: não vale. No meio, encosta no trigo do moinho: vale. À direita, outra peça encosta trigo com trigo e vale, mesmo tocando a pastagem em cima. Ilustração: manual oficial Blue Orange (p. 3)" loading="lazy" decoding="async"><figcaption>Três encaixes. À esquerda, o trigo encosta só na pastagem: não vale. No meio, encosta no trigo do moinho: vale. À direita, outra peça encosta trigo com trigo e vale, mesmo tocando a pastagem em cima. Ilustração: manual oficial Blue Orange <span class="pg">p.&nbsp;3</span></figcaption></figure>
+<details class="dobra edicao"><summary>Sobre a edição: Um encosto certo basta</summary><aside class="call edicao"><p>O texto pede que a peça combine com "pelo menos 1" terreno vizinho <span class="pg">p.&nbsp;3</span> e não fala dos outros lados. A terceira figura da página mostra uma peça válida que também toca um terreno diferente; o guia segue essa leitura.</p></aside></details>
+<details class="dobra edicao"><summary>Sobre a edição: Quem põe o rei sorteado</summary><aside class="call edicao"><p>Na escolha inicial (passo 7 da montagem), o guia segue o inglês e o português de Portugal: quem tira o rei o coloca, mesmo que não seja da sua cor <span class="pg">p.&nbsp;2 e 17</span>. O francês <span class="pg">p.&nbsp;5</span> diz que cada um coloca o próprio rei quando ele sai; o resultado é o mesmo sorteio.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Peça promocional "As Últimas Coroas"</summary><aside class="call mais"><p>As primeiras caixas da PaperGames trouxeram de brinde uma peça que substitui a de número 48, com coroas nos dois terrenos; ela segue as regras normais (página da PaperGames).</p></aside></details>
+<details class="dobra dica"><summary>Dica: Sugestão: olhe o número antes do desenho</summary><aside class="call dica"><p>Uma peça de número baixo faz você escolher cedo na rodada seguinte. Às vezes isso vale mais do que levar agora a peça mais bonita. É estratégia, não regra.</p></aside></details>
+<details class="dobra resolvido"><summary>Ver um exemplo resolvido</summary><aside class="call resolvido"><p>Quatro jogadores. Os reis estão nas peças 5 (Ana), 18 (Bruno), 27 (você) e 40 (Carla); a nova fila tem 3, 11, 30 e 46. Ana encaixa a 5 e põe o rei na 30. Bruno encaixa a 18 e escolhe a 3. Você encaixa a 27 e escolhe a 11. Carla encaixa a 40 e fica com a 46, a que sobrou. Próxima rodada: Bruno, você, Ana e Carla <span class="pg">p.&nbsp;3</span>.</p></aside></details>
+
+
+<details class="dobra pratica"><summary>Pratique esta etapa: exercícios com respostas</summary><aside class="call complete"><p class="rot">Tarefa · complete</p><p><strong>Complete.</strong> À direita do seu castelo há uma peça na horizontal, de pântano e floresta, com o pântano encostado no castelo. Chega uma peça de floresta e lago.</p>
+<div class="quiz"><p class="q-p">Qual destes lugares é válido?</p><div class="q-ops"><button type="button" class="q-op">Só com o lago encostado no pântano, sem tocar o castelo</button><button type="button" class="q-op" data-ok>Com a floresta encostada na floresta, de lado</button><button type="button" class="q-op">Com a floresta tocando a floresta só pelo canto (na diagonal)</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Fora do castelo, a peça precisa encostar num quadrado do mesmo terreno, de lado: lago com pântano não combina, e o canto (na diagonal) não conta <span class="pg">p.&nbsp;3</span>.</p></div></div></aside>
+<aside class="call suavez"><p class="rot">Tarefa · sua vez</p><p><strong>Sua vez.</strong></p>
+<div class="quiz"><p class="q-p">Partida de 2 jogadores. Os seus reis estão na 1ª e na 4ª peças da fila; os do adversário, na 2ª e na 3ª. Com as peças viradas, vale a posição na fila. Como a rodada anda?</p><div class="q-ops"><button type="button" class="q-op">Você joga com os dois reis, depois o adversário</button><button type="button" class="q-op" data-ok>Você (1ª peça), o adversário (2ª e 3ª), você (4ª)</button><button type="button" class="q-op">O adversário começa, porque você começou na rodada anterior</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Cada rei joga na vez da sua peça, a partir da mais perto da caixa <span class="pg">p.&nbsp;3</span>.</p></div></div></aside></details>
+</section>
+<section class="bloco sec" id="etapa-2-a-grade-de-5-por-5-e-o-fim-da-partida"><h2><span class="num">3</span>Etapa 2: a grade de 5 por 5 e o fim da partida</h2>
+<figure class="fig foto-sec"><img src="fotos/componentes-1.webp" alt="Kingdomino: os componentes" width="800" height="800" loading="lazy" decoding="async"><figcaption>Imagem: Asmodee UK · nova edição (2025), mesmas regras</figcaption></figure>
+<details class="dobra entender"><summary>Por que funciona assim</summary><aside class="call entender"><p>O reino inteiro, castelo incluído, precisa caber num quadrado de 5 por 5 <span class="pg">p.&nbsp;3</span>. O castelo não precisa ficar no meio, mas cada peça na beira empurra o reino para um lado, e o espaço do outro lado some.</p></aside></details>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>O limite e o descarte</strong> <span class="pg">p.&nbsp;3</span></p>
+<ol><li>Antes de encaixar, confira se o reino continua cabendo em 5 por 5, contando o castelo.</li><li>Se a peça não pode entrar em lugar nenhum dentro das regras de encaixe e do limite, ela é descartada.</li><li>Peça descartada não dá pontos.</li></ol></aside>
+<details class="dobra edicao"><summary>Sobre a edição: Descartar de propósito</summary><aside class="call edicao"><p>O manual só manda descartar a peça que não pode ser encaixada <span class="pg">p.&nbsp;3</span>. O guia lê que, se ela cabe em algum lugar válido, ela entra; e que, depois de descartar, você escolhe a peça nova normalmente.</p></aside></details>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>A última rodada</strong> <span class="pg">p.&nbsp;3 e 6</span></p>
+<ol><li>Quando o monte acaba, a última fila é formada como de costume.</li><li>Na rodada seguinte, cada jogador só encaixa a peça do seu rei; ninguém escolhe peça.</li><li>A partida acaba: 12 rodadas com 3 ou 4 jogadores, 6 com 2.</li></ol></aside>
+<details class="dobra edicao"><summary>Sobre a edição: Só encaixar, na última vez</summary><aside class="call edicao"><p>O inglês diz só que há "uma última rodada" <span class="pg">p.&nbsp;3</span>; o francês diz que nela se faz apenas a ação de encaixar <span class="pg">p.&nbsp;6</span>. Sem fila nova, as duas leituras dão no mesmo.</p></aside></details>
+<details class="dobra resolvido"><summary>Ver um exemplo resolvido</summary><aside class="call resolvido"><p>O seu castelo está na beira esquerda, e o reino já ocupa 5 colunas. Você recebe uma peça de lago e pastagem. Na horizontal, à direita do lago da quinta coluna, ela abriria uma sexta coluna: não pode. Na vertical, embaixo desse lago, encostando lago com lago, ela cabe, se ainda houver linhas livres <span class="pg">p.&nbsp;3</span>.</p></aside></details>
+
+
+<details class="dobra pratica"><summary>Pratique esta etapa: exercícios com respostas</summary><aside class="call complete"><p class="rot">Tarefa · complete</p><p><strong>Complete.</strong> Falta uma rodada. O seu reino já tem 5 quadrados de largura e 5 de altura, e os únicos espaços livres são dois quadrados soltos, longe um do outro. Chega a sua última peça.</p>
+<div class="quiz"><p class="q-p">O que acontece com ela?</p><div class="q-ops"><button type="button" class="q-op">Você a encaixa numa sexta linha</button><button type="button" class="q-op" data-ok>É descartada: ocupa dois quadrados vizinhos e não há dois livres juntos</button><button type="button" class="q-op">Você a guarda para a próxima partida</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Tudo precisa caber em 5 por 5; a peça que não cabe é descartada e não dá pontos <span class="pg">p.&nbsp;3</span>.</p></div></div></aside>
+<aside class="call suavez"><p class="rot">Tarefa · sua vez</p><p><strong>Sua vez.</strong></p>
+<div class="quiz"><p class="q-p">Partida de 4 jogadores. Quantas peças cada um recebe até o fim?</p><div class="q-ops"><button type="button" class="q-op">6</button><button type="button" class="q-op">24</button><button type="button" class="q-op" data-ok>12</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> 48 peças para 4 jogadores, em 12 rodadas de 4: 12 para cada um, os 24 quadrados que completam o 5 por 5 com o castelo <span class="pg">p.&nbsp;2 e 3</span>.</p></div></div></aside></details>
+</section>
+<section class="bloco sec" id="etapa-3-contar-os-pontos"><h2><span class="num">4</span>Etapa 3: contar os pontos</h2>
+<details class="dobra entender"><summary>Por que funciona assim</summary><aside class="call entender"><p>Um território é um grupo de quadrados do mesmo terreno ligados de lado <span class="pg">p.&nbsp;3</span>. O valor dele multiplica tamanho por coroas: um território grande sem coroa vale zero <span class="pg">p.&nbsp;4</span>.</p></aside></details>
+<aside class="call passos"><p class="rot">Passo a passo</p><p><strong>A pontuação</strong> <span class="pg">p.&nbsp;3 e 4</span></p>
+<ol><li>Separe o reino em territórios: cada grupo de quadrados do mesmo terreno ligados de lado.</li><li>Em cada território, conte os quadrados e as coroas, e multiplique. Sem coroa, 0.</li><li>Some os territórios. Quem somar mais vence.</li></ol></aside>
+<details class="dobra mais"><summary>Regra adicional: Dois territórios do mesmo terreno</summary><aside class="call mais"><p>Duas florestas que não se encostam são dois territórios, contados à parte (p. 6, parte em francês).</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Desempate</summary><aside class="call mais"><p>Vence quem tiver o maior território, o de mais quadrados, com ou sem coroas. Se ainda empatar, vence quem tiver mais coroas. Se continuar, a vitória é dividida <span class="pg">p.&nbsp;4 e 7</span>.</p></aside></details>
+<details class="dobra edicao"><summary>Sobre a edição: "Maior território" é um território só</summary><aside class="call edicao"><p>O inglês fala do "biggest territory" <span class="pg">p.&nbsp;4</span>; o francês, do domínio mais extenso, com ou sem coroas <span class="pg">p.&nbsp;7</span>; o alemão, do maior território isolado <span class="pg">p.&nbsp;10</span>. Compara-se o maior território de cada um, não o reino inteiro.</p></aside></details>
+<details class="dobra edicao"><summary>Sobre a edição: O castelo não pontua</summary><aside class="call edicao"><p>O manual manda contar quadrados de terreno <span class="pg">p.&nbsp;3</span>, e a peça de área inicial não é terreno; o exemplo do manual soma 23 sem ela <span class="pg">p.&nbsp;4</span>.</p></aside></details>
+<details class="dobra resolvido"><summary>Ver um exemplo resolvido</summary><aside class="call resolvido"><p>O reino do manual <span class="pg">p.&nbsp;4</span>. Campo de trigo: 3 quadrados e 1 coroa, 3 pontos. Pastagem: 4 e 2, 8. Pântano: 2 sem coroa, 0. Floresta: 1 sem coroa, 0. Montanha: 1 e 2, 2. Lago: 5 e 2, 10. Total: 23. No texto, o manual dá mais dois casos: floresta de 7 quadrados com 3 coroas, 21; lago de 9 sem coroa, 0 <span class="pg">p.&nbsp;4</span>.</p></aside></details>
+<figure class="fig"><img src="figuras/pontuacao.webp" alt="O reino do exemplo, com cada território contornado e a conta ao lado (coroas x quadrados): 1 x 3 = 3; 2 x 4 = 8; 0 x 2 = 0; 0 x 1 = 0; 2 x 1 = 2; 2 x 5 = 10; total 23. Ilustração: manual oficial Blue Orange (p. 4)" loading="lazy" decoding="async"><figcaption>O reino do exemplo, com cada território contornado e a conta ao lado (coroas x quadrados): 1 x 3 = 3; 2 x 4 = 8; 0 x 2 = 0; 0 x 1 = 0; 2 x 1 = 2; 2 x 5 = 10; total 23. Ilustração: manual oficial Blue Orange <span class="pg">p.&nbsp;4</span></figcaption></figure>
+
+
+<p><strong>Regras adicionais.</strong> O manual traz quatro regras opcionais, que se combinam como a mesa quiser <span class="pg">p.&nbsp;4</span>; os nomes são os da parte em português de Portugal <span class="pg">p.&nbsp;19</span>.</p>
+<details class="dobra mais"><summary>Regra adicional: Dinastia</summary><aside class="call mais"><p>Três partidas seguidas; vence quem somar mais nas três <span class="pg">p.&nbsp;4</span>.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: O Reino Central</summary><aside class="call mais"><p>10 pontos a mais se o castelo estiver no centro do reino <span class="pg">p.&nbsp;4</span>.</p></aside></details>
+<details class="dobra edicao"><summary>Sobre a edição: Centro de um reino incompleto</summary><aside class="call edicao"><p>O manual diz só "no centro" do reino <span class="pg">p.&nbsp;4</span>. Num reino com buracos, o guia lê que o centro é o da grade de 5 por 5 (7 por 7 no Duelo), não o do desenho que sobrou. Combinem antes, se a mesa preferir outra leitura.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: Harmonia</summary><aside class="call mais"><p>5 pontos a mais se o reino estiver completo, sem peça descartada <span class="pg">p.&nbsp;4</span>.</p></aside></details>
+<details class="dobra mais"><summary>Regra adicional: O Poderoso Duelo</summary><aside class="call mais"><p>Só com 2 jogadores; recomendado para quem já jogou uma ou duas partidas. Usem as 48 peças e construam reinos de 7 por 7 <span class="pg">p.&nbsp;4</span>.</p></aside></details>
+<details class="dobra pratica"><summary>Pratique esta etapa: exercícios com respostas</summary><aside class="call complete"><p class="rot">Tarefa · complete</p><p><strong>Complete.</strong> Campo de trigo de 5 quadrados com 1 coroa, lago de 3 com 2 coroas, floresta de 4 sem coroa.</p>
+<div class="quiz"><p class="q-p">Quantos pontos?</p><div class="q-ops"><button type="button" class="q-op">12</button><button type="button" class="q-op" data-ok>11</button><button type="button" class="q-op">15</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> 5 x 1 = 5; 3 x 2 = 6; 4 x 0 = 0. Total, 11 <span class="pg">p.&nbsp;3 e 4</span>. Somar quadrados e coroas daria 15.</p></div></div></aside>
+<aside class="call suavez"><p class="rot">Tarefa · sua vez</p><p><strong>Sua vez.</strong></p>
+<div class="quiz"><p class="q-p">Pastagem de 8 quadrados com 1 coroa, pântano de 2 com 2, campo de trigo de 6 sem coroa, montanha de 3 com 3. Total?</p><div class="q-ops"><button type="button" class="q-op">27</button><button type="button" class="q-op">15</button><button type="button" class="q-op" data-ok>21</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> 8 + 4 + 0 + 9 = 21 <span class="pg">p.&nbsp;3 e 4</span>.</p></div></div>
+<div class="quiz"><p class="q-p">Ana e Bruno empatam em 40. O maior território de Ana tem 8 quadrados; o de Bruno, 7, mas ele tem mais coroas. Quem vence?</p><div class="q-ops"><button type="button" class="q-op" data-ok>Ana</button><button type="button" class="q-op">Bruno</button><button type="button" class="q-op">Os dois</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> O primeiro desempate é o maior território; as coroas só contam se ele também empatar <span class="pg">p.&nbsp;4</span>.</p></div></div></aside></details>
+</section>
+<section class="bloco sec opc" id="situacoes-especiais"><h2><span class="num">5</span>Situações especiais<span class="tag-opc">Opcional</span></h2>
+<figure class="fig foto-sec caixa"><img src="fotos/capa-1.webp" alt="Kingdomino: a caixa" width="1024" height="768" loading="lazy" decoding="async"><figcaption>Imagem: Blue Orange</figcaption></figure>
+<details class="dobra sec-opc"><summary>Abrir esta seção</summary><details class="dobra edicao"><summary>Sobre a edição: Reino incompleto</summary><aside class="call edicao"><p>Quem descartou peças termina com buracos; o manual só diz que esses reinos podem ficar incompletos <span class="pg">p.&nbsp;3</span>. O buraco não vale nada, e a Harmonia não dá os 5 pontos <span class="pg">p.&nbsp;4</span>.</p></aside></details>
+<details class="dobra edicao"><summary>Sobre a edição: Nomes dos terrenos</summary><aside class="call edicao"><p>O manual não dá nome a cada terreno, e a lista da introdução muda de língua para língua <span class="pg">p.&nbsp;2, 5 e 17</span>. Os nomes deste guia vêm da cor e do desenho; na mesa, o que vale é o desenho igual.</p></aside></details></details>
+</section>
+<section class="bloco sec opc" id="avaliacao-final"><h2><span class="num">6</span>Avaliação final<span class="tag-opc">Opcional</span></h2>
+<figure class="fig foto-sec"><img src="fotos/componentes-1.webp" alt="Kingdomino: os componentes" width="800" height="800" loading="lazy" decoding="async"><figcaption>Imagem: Asmodee UK · nova edição (2025), mesmas regras</figcaption></figure>
+<details class="dobra sec-opc"><summary>Abrir esta seção</summary><p>Responda sem consultar. Cada resposta diz o que reler.</p>
+<div class="quiz"><p class="q-p">1. Partida de 2 jogadores. Quantas peças vão para o monte de compra, e quantos reis cada um usa?</p><div class="q-ops"><button type="button" class="q-op">48 peças, 1 rei</button><button type="button" class="q-op">36 peças, 2 reis</button><button type="button" class="q-op" data-ok>24 peças, 2 reis</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Com 2 jogadores, 24 peças tiradas ao acaso e dois reis por jogador <span class="pg">p.&nbsp;2</span>. Releia a montagem.</p></div></div>
+<div class="quiz"><p class="q-p">2. Na fila, os reis estão nas peças 6, 13, 22 e 47. Quem joga primeiro?</p><div class="q-ops"><button type="button" class="q-op" data-ok>O dono do rei na peça 6</button><button type="button" class="q-op">O dono do rei na peça 47</button><button type="button" class="q-op">Quem jogou por último na rodada anterior</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> A ordem vai da peça mais perto da caixa, a de número mais baixo <span class="pg">p.&nbsp;3</span>. Releia a etapa 1.</p></div></div>
+<div class="quiz"><p class="q-p">3. A sua peça de floresta e lago só encosta, fora do castelo, num campo de trigo. Ela pode entrar ali?</p><div class="q-ops"><button type="button" class="q-op">Pode, qualquer encosto vale</button><button type="button" class="q-op" data-ok>Não: precisa encostar num terreno igual, ou no castelo</button><button type="button" class="q-op">Pode, se encostar só pelo canto (na diagonal)</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Fora da peça de área inicial, a peça precisa de pelo menos um encosto de terreno igual, de lado <span class="pg">p.&nbsp;3</span>. Releia a etapa 1.</p></div></div>
+<div class="quiz"><p class="q-p">4. A peça não cabe no seu 5 por 5 de jeito nenhum. O que acontece?</p><div class="q-ops"><button type="button" class="q-op">Você a encaixa numa sexta coluna e perde 5 pontos</button><button type="button" class="q-op" data-ok>É descartada e não dá pontos</button><button type="button" class="q-op">Volta para o monte</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> Todas as peças precisam caber em 5 por 5; a que não cabe é descartada <span class="pg">p.&nbsp;3</span>. Releia a etapa 2.</p></div></div>
+<div class="quiz"><p class="q-p">5. Lago de 4 quadrados com 2 coroas e floresta de 6 quadrados sem coroa. Quanto valem juntos?</p><div class="q-ops"><button type="button" class="q-op">12</button><button type="button" class="q-op">14</button><button type="button" class="q-op" data-ok>8</button></div><div class="q-exp" role="status" hidden><p><b class="q-res"></b> 4 x 2 = 8; 6 x 0 = 0 <span class="pg">p.&nbsp;3 e 4</span>. Releia a etapa 3.</p></div></div>
+<aside class="call atencao"><p class="rot">Atenção</p><p><strong>Critério para começar a jogar.</strong> Acertou 4 ou 5? Monte a mesa e jogue, com a folha de consulta ao lado. Errou a 1, releia a montagem; a 2 ou a 3, a etapa 1; a 4, a etapa 2; a 5, a etapa 3. Depois refaça só as que errou.</p></aside></details>
+</section>
+<section class="bloco sec ref" id="para-consultar-durante-a-partida"><h2><span class="num">7</span>Para consultar durante a partida</h2>
+<figure class="fig foto-sec caixa"><img src="fotos/capa-1.webp" alt="Kingdomino: a caixa" width="1024" height="768" loading="lazy" decoding="async"><figcaption>Imagem: Blue Orange</figcaption></figure>
+<p><strong>Preparação</strong></p>
+<div class="tab"><table class="grade"><thead><tr><th>Jogadores</th><th>Reis por jogador</th><th>Peças no monte</th><th>Peças por fila</th><th>Rodadas</th></tr></thead><tbody><tr><td>2</td><td>2</td><td>24</td><td>4</td><td>6</td></tr><tr><td>3</td><td>1</td><td>36</td><td>3</td><td>12</td></tr><tr><td>4</td><td>1</td><td>48</td><td>4</td><td>12</td></tr></tbody></table></div>
+<p><strong>Escolha inicial</strong> (antes da primeira rodada): os reis são sorteados da mão de um jogador, e quem tira um rei o põe numa peça livre da primeira fila; depois, segunda fila ao lado da fila com os reis.</p>
+<p><strong>Uma rodada</strong></p>
+<ol><li>Ordem: da peça mais perto da caixa (número mais baixo) até a última.</li><li>Na sua vez: encaixe a peça do seu rei; depois ponha o rei numa peça livre da nova fila.</li><li>Com 2 jogadores, cada rei joga na vez da sua peça.</li><li>Fila velha vazia: nova fila do monte no lugar dela, ao lado da fila com os reis, em ordem crescente a partir da caixa, terrenos à mostra.</li></ol>
+<p><strong>Encaixe:</strong> encostar no castelo (aceita tudo) ou num quadrado de terreno igual, de lado; só pelo canto (na diagonal) não vale; um encosto certo basta. Tudo dentro de 5 por 5, castelo incluído. Não cabe: descarte, sem pontos.</p>
+<p><strong>Fim:</strong> monte vazio, última fila; na última rodada, só encaixar.</p>
+<p><strong>Pontos:</strong> cada território (terreno igual ligado de lado) vale quadrados x coroas; sem coroa, 0. Desempate: maior território; depois, mais coroas; depois, vitória dividida.</p>
+<p><strong>Opcionais:</strong> Dinastia (3 partidas); O Reino Central (+10, castelo no centro); Harmonia (+5, nenhum descarte); O Poderoso Duelo (2 jogadores, 48 peças, 7 por 7).</p>
+</section>
+<section class="bloco sec" id="fontes"><h2><span class="num">8</span>Fontes</h2>
+<figure class="fig foto-sec"><img src="fotos/componentes-1.webp" alt="Kingdomino: os componentes" width="800" height="800" loading="lazy" decoding="async"><figcaption>Imagem: Asmodee UK · nova edição (2025), mesmas regras</figcaption></figure>
+<ul><li>Blue Orange. <em>Kingdomino: Rules / Règles / Regeln / Regole / Reglas / Regras / Spelregels / Правила</em> (livreto multilíngue, © 2016, arquivo "KINGDOMINO_rules_ML.pdf", 28 páginas, PDF criado em 21/02/2017). Partes usadas: inglês (p. 2 a 4), francês (p. 5 a 7), alemão (p. 10, só o desempate), português de Portugal (p. 17 a 19) e a tabela de terrenos <span class="pg">p.&nbsp;28</span>. <a href="https://blueorangegames.eu/wp-content/uploads/2017/04/KINGDOMINO_rules_ML.pdf">https://blueorangegames.eu/wp-content/uploads/2017/04/KINGDOMINO_rules_ML.pdf</a>, ligado em <a href="https://blueorangegames.eu/en/games/kingdomino/">https://blueorangegames.eu/en/games/kingdomino/</a>. Consultado em 08/11/2026.</li><li>PaperGames. Página de Kingdomino (componentes, ficha técnica, peça promocional "As Últimas Coroas" e o link do manual brasileiro, que exige login no OneDrive e não pôde ser lido). <a href="https://papergames.com.br/kingdomino/">https://papergames.com.br/kingdomino/</a> (consultada em 06/11/2026) e <a href="https://papergames.com.br/kingdomino-as-ultimas-coroas/">https://papergames.com.br/kingdomino-as-ultimas-coroas/</a> (consultada em 08/11/2026).</li><li>Vídeo "Covil dos Jogos - Review e Gameplay Kingdomino", canal Covil dos Jogos (título e canal pelo oEmbed do YouTube), indicado na página da PaperGames: <a href="https://www.youtube.com/watch?v=X7BaL2TkF9k">https://www.youtube.com/watch?v=X7BaL2TkF9k</a>. Não baixado.</li></ul>
+</section>
+
+<p class="nota-pe">Regras conferidas no manual oficial da Blue Orange (livreto multilíngue "Rules", © 2016, arquivo baixado do site da editora), na parte em inglês, com as partes em francês, alemão (só o desempate, p. 10) e português de Portugal do mesmo livreto para tirar dúvidas de tradução. O manual da edição brasileira, da PaperGames, fica num link que exige login e não pôde ser lido. Os nomes das peças seguem a página da PaperGames; os outros termos são traduções deste guia e podem estar diferentes na caixa brasileira. As ilustrações são do manual de 2016 e podem ter arte diferente da sua caixa.</p>
+</div></main>
+
+<!--rodape--><footer><div class="in">
+ <span>Elite Boardgamers</span><a href="../../noticias/">Notícias</a><a href="../../resenhas/">Resenhas</a><a href="../../como-jogar/">Como jogar</a><a href="../../lancamentos/">Lançamentos</a><a href="../../black/">Black de Verdade</a><a href="../../jogos-de-tabuleiro/">Guia de jogos de tabuleiro</a><a href="../../premios/">Prêmios</a><a href="../../politica-editorial/">Política editorial</a>
+ <a href="https://www.instagram.com/eliteboardgamers/" target="_blank" rel="noopener">Instagram @eliteboardgamers</a><a href="https://chat.whatsapp.com/IgQQkJdSkzHBaEq3UwFeAo" target="_blank" rel="noopener">Grupo do WhatsApp</a>
+</div></footer>
+<div class="barra-lt fora" role="region" aria-label="Ações da página"><div class="cpw" data-texto=""><a class="cp" href="https://wa.me/" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="M8.2 10.8l7.6-4.4M8.2 13.2l7.6 4.4"/></svg><span>Compartilhar</span></a><div class="cp-menu" hidden><a class="cp-op zap-op" href="https://wa.me/" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8.4 19l-4.4 1Z"/><path d="M9.2 8.6c.3-.5.8-.5 1-.1l.7 1.5c.1.3 0 .6-.2.8l-.4.4c.5 1.1 1.4 2 2.5 2.5l.4-.4c.2-.2.5-.3.8-.2l1.5.7c.4.2.4.7-.1 1-.7.5-1.6.6-2.4.3a7 7 0 0 1-4.2-4.2c-.3-.8-.2-1.7.4-2.3Z"/></svg>WhatsApp</a><button type="button" class="cp-op"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h8"/></svg>Copiar link</button></div><p class="cp-st" role="status"></p></div><script>(()=>{const pega=c=>({u:c.dataset.url||location.href,t:c.dataset.texto||document.title});
+document.querySelectorAll('.cpw:not(.ok)').forEach(c=>{c.classList.add('ok');const b=c.querySelector('.cp');
+ const n=document.createElement('button');n.type='button';n.className=b.className;n.innerHTML=b.innerHTML;n.setAttribute('aria-expanded','false');b.replaceWith(n)});
+if(window.__cp)return;window.__cp=1;
+const celular=()=>navigator.share&&matchMedia('(pointer:coarse)').matches;
+const fecha=()=>document.querySelectorAll('.cp-menu:not([hidden])').forEach(m=>{m.hidden=true;m.parentNode.querySelector('.cp').setAttribute('aria-expanded','false')});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')fecha()});
+document.addEventListener('click',async ev=>{const c=ev.target.closest('.cpw');if(!c){fecha();return}
+ const {u,t}=pega(c),m=c.querySelector('.cp-menu'),st=c.querySelector('.cp-st'),el=ev.target.closest('.cp,.cp-op');if(!el)return;
+ if(el.classList.contains('cp')){
+  if(celular()){try{await navigator.share({title:document.title,text:t,url:u})}catch(e){}return}
+  const abre=m.hidden;fecha();if(!abre)return;
+  m.querySelector('.zap-op').href='https://wa.me/?text='+encodeURIComponent(t+' '+u);
+  const r=c.getBoundingClientRect();m.classList.toggle('sobe',!!c.closest('.barra-lt')||r.bottom>innerHeight-140);m.classList.toggle('dir',r.left>innerWidth-220);
+  m.hidden=false;el.setAttribute('aria-expanded','true');m.querySelector('.cp-op').focus();return}
+ if(el.classList.contains('zap-op')){fecha();return}
+ fecha();let ok=false;try{await navigator.clipboard.writeText(u);ok=true}catch(e){
+  const i=document.createElement('input');i.value=u;document.body.append(i);i.select();try{ok=document.execCommand('copy')}catch(e2){}i.remove()}
+ st.textContent=ok?'Link copiado!':'Não deu para copiar o link.';clearTimeout(st._t);st._t=setTimeout(()=>st.textContent='',2500);
+ c.querySelector('.cp').focus()})})()</script><a class="lt-grupo" href="https://chat.whatsapp.com/IgQQkJdSkzHBaEq3UwFeAo" target="_blank" rel="noopener" aria-label="Entrar no grupo do WhatsApp da Elite"><img src="/favicon-48.png" width="48" height="48" alt=""><span>Grupo</span></a></div><script>(()=>{const l=document.querySelector('.barra-lt');if(!l)return;const vis=new Set();
+const poe=()=>{const on=scrollY>500&&!vis.size;l.classList.toggle('fora',!on);l.inert=!on;document.body.classList.toggle('lt-on',on)};
+const io=new IntersectionObserver(es=>{es.forEach(e=>e.isIntersecting?vis.add(e.target):vis.delete(e.target));poe()});
+document.querySelectorAll('.convite,footer').forEach(x=>io.observe(x));addEventListener('scroll',poe,{passive:true});poe()})()</script>
+<script>document.addEventListener('click',e=>{const b=e.target.closest('.q-op');if(!b||b.disabled)return;const q=b.closest('.quiz');
+q.querySelectorAll('.q-op').forEach(o=>{o.disabled=true;if(o.hasAttribute('data-ok'))o.classList.add('ok')});const ok=b.hasAttribute('data-ok');
+if(!ok)b.classList.add('erro');const x=q.querySelector('.q-exp');x.hidden=false;x.classList.toggle('mal',!ok);x.querySelector('.q-res').textContent=ok?'Isso!':'Não é essa.';});
+(()=>{const g=document.querySelector('.guia-prog');if(!g)return;const t=g.querySelector('.gp-t'),b=g.querySelector('.gp-b');
+const secs=[...document.querySelectorAll('.sec[id]')],idx=document.querySelector('.indice');
+const poe=()=>{const y=scrollY+innerHeight*.3;let at=null;for(const s of secs){if(s.offsetTop<=y)at=s}
+ t.textContent=at&&scrollY>idx.offsetTop?at.querySelector('h2').textContent.replace(/^\d+/,'').trim():'Neste guia';
+ const h=document.documentElement.scrollHeight-innerHeight;b.style.transform='scaleX('+(h>0?Math.min(1,scrollY/h):0)+')'};
+addEventListener('scroll',poe,{passive:true});addEventListener('resize',poe);poe()})();
+document.addEventListener('click',e=>{const y=e.target.closest('.yt');if(!y)return;const f=document.createElement('iframe');
+f.src='https://www.youtube-nocookie.com/embed/'+y.dataset.id+'?start='+y.dataset.t+'&autoplay=1&rel=0';f.title=y.getAttribute('aria-label');
+f.allow='autoplay; encrypted-media; picture-in-picture';f.allowFullscreen=true;y.replaceWith(f)});</script><!--/rodape-->
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "b37421bd1ade44f1a59e46b96626bf03"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
