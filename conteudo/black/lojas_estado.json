@@ -10,7 +10,7 @@
   },
   "bravojogos.com.br": {
    "dia": "2026-11-08",
-   "paginas": 21
+   "paginas": 23
   },
   "brecholudico.com.br": {
    "dia": "2026-11-08",
@@ -166,7 +166,7 @@
    "descanso_ate": "2026-11-05T22:05+00:00",
    "dia": "2026-11-08",
    "motivo": "robots.txt respondeu 429",
-   "paginas": 6
+   "paginas": 7
   },
   "www.guildadosjogos.com.br": {
    "dia": "2026-11-08",
@@ -216,7 +216,7 @@
    "descanso_ate": "2026-11-08T10:13+00:00",
    "dia": "2026-11-08",
    "motivo": "robots.txt respondeu 403",
-   "paginas": 3
+   "paginas": 6
   },
   "www.mosaicoloja.com.br": {
    "dia": "2026-11-08",
@@ -262,7 +262,7 @@
   },
   "www.promobit.com.br": {
    "dia": "2026-11-08",
-   "paginas": 80
+   "paginas": 90
   },
   "www.reunionjogos.com.br": {
    "dia": "2026-11-08",
@@ -282,7 +282,7 @@
   },
   "www.tabuloja.com": {
    "dia": "2026-11-08",
-   "paginas": 14
+   "paginas": 15
   },
   "www.tavernareal.com": {
    "dia": "2026-11-08",
@@ -529,6 +529,12 @@
    "estoque": true,
    "hora": "2026-11-08T20:06+00:00",
    "preco": 1999.0
+  },
+  "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-time-stories-revolution-a-midsummer-night-p": {
+   "cj": 92.91,
+   "estoque": true,
+   "hora": "2026-11-08T20:14+00:00",
+   "preco": 99.9
   },
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-time-stories-revolution-the-hadal-project-p": {
    "cj": 92.91,
@@ -1265,7 +1271,7 @@
   "https://www.facilshopping.com.br/produtos/the-goonies-never-say-die-edicao-em-ingles-funko-games/?entry_path=category": {
    "cj": 158.01,
    "estoque": true,
-   "hora": "2026-11-08T20:06+00:00",
+   "hora": "2026-11-08T20:14+00:00",
    "preco": 169.9
   },
   "https://www.leaolivros.com.br/alien-attack-usa": {
