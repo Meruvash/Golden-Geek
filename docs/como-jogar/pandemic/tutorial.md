@@ -18,7 +18,7 @@ A montagem segue a seção "Preparação" do manual, que ocupa as p. 2 e 3, na m
 | Cartas de Infecção | 48 | Uma por cidade; dizem onde a doença se espalha |
 | Cubos de doença | 96 | 24 de cada uma das 4 cores |
 | Centros de Pesquisa | 6 | Onde se descobre a cura e por onde se voa entre centros |
-| Marcadores de Cura | 4 | Um por doença; de um lado o "frasco vazio", do outro o lado de doença Erradicada |
+| Marcadores de Cura | 4 | Um por doença; um lado é o "frasco vazio", o outro é o lado de doença Erradicada, com o símbolo de proibido (erradicação: etapa 2) |
 | Marcador de Velocidade de Infecção | 1 | Marca quantas cidades são infectadas por turno |
 | Marcador de Surtos | 1 | Conta os surtos |
 
@@ -32,7 +32,7 @@ A montagem segue a seção "Preparação" do manual, que ocupa as p. 2 e 3, na m
 
 **2. Marcador de Surtos e Marcadores de Cura.** Ponha o Marcador de Surtos no espaço "0" da Trilha de Surtos. Ponha os 4 Marcadores de Cura com o lado do "frasco vazio" para cima, perto do Indicador de Curas Descobertas (p. 2).
 
-!fig[Passo 2: a Trilha de Surtos, com o marcador no 0 e a caveira no fim, e o Indicador de Curas Descobertas. Ilustração: manual Galápagos (p. 2)](figuras/setup-2-trilhas.webp)
+!fig[Passo 2: a Trilha de Surtos, que vai de 0 a 7; o espaço seguinte, da caveira, é a derrota; e o Indicador de Curas Descobertas. Ilustração: manual Galápagos (p. 2)](figuras/setup-2-trilhas.webp)
 
 !fig[Passo 2: os quatro Marcadores de Cura, com o frasco vazio para cima. Ilustração: manual Galápagos (p. 2)](figuras/setup-2-marcadores-cura.webp)
 
@@ -42,15 +42,15 @@ A montagem segue a seção "Preparação" do manual, que ocupa as p. 2 e 3, na m
 
 !fig[Passo 3: as nove Cartas de Infecção em três grupos, que recebem 3, 2 e 1 cubos da cor da carta. Ilustração: manual Galápagos (p. 3)](figuras/setup-3-cidades.webp)
 
-**4. Cartas e peão de cada jogador.** Dê uma Carta de Referência a cada jogador. Embaralhe as Cartas de Função e dê 1 a cada um, virada para cima. Cada jogador pega o peão da cor da sua Carta de Função e o põe em Atlanta. Depois, separe as 6 Cartas de Epidemia do Baralho de Jogador e deixe-as de lado até o passo 5. Embaralhe as outras Cartas de Jogador (Cidade e Evento) e dê a mão inicial de cada um, conforme a tabela abaixo (p. 2).
+**4. Cartas e peão de cada jogador.** Dê uma Carta de Referência a cada jogador. Embaralhe as Cartas de Função e dê 1 a cada um, virada para cima. Cada jogador pega o peão da cor da sua Carta de Função e o põe em Atlanta. Depois, separe as 6 Cartas de Epidemia das Cartas de Jogador e deixe-as de lado até o passo 5. Embaralhe as outras Cartas de Jogador (Cidade e Evento) e dê a mão inicial de cada um, conforme a tabela abaixo (p. 2).
 
 !fig[Passo 4: Carta de Função (a Cientista), o peão dela, a Carta de Referência e duas Cartas de Cidade. Ilustração: manual Galápagos (p. 2)](figuras/setup-4-cartas.webp)
 
-**5. Baralho de Jogador.** Escolha a dificuldade: 4 Cartas de Epidemia para uma partida Introdutória, 5 para a Normal, 6 para a Heroica. As que sobrarem voltam para a caixa. Divida as cartas que não foram para a mão em tantas pilhas viradas para baixo quantas forem as Epidemias em jogo, de tamanhos o mais parecidos possível. Embaralhe 1 Carta de Epidemia em cada pilha e empilhe as pilhas umas sobre as outras, com as menores embaixo. Esse é o Baralho de Jogador, que fica no tabuleiro ao lado da Pilha de Descarte das Cartas de Jogador (p. 3).
+**5. Baralho de Jogador.** Escolha a dificuldade: 4 Cartas de Epidemia para uma partida Introdutória, 5 para a Normal, 6 para a Heroica. As que sobrarem voltam para a caixa. Divida as cartas que não foram para a mão em tantas pilhas viradas para baixo quantas forem as Epidemias em jogo, de tamanhos o mais parecidos possível. Embaralhe 1 Carta de Epidemia em cada pilha e empilhe as pilhas umas sobre as outras, com as menores embaixo. Esse é o Baralho de Jogador, que fica no tabuleiro ao lado do espaço da Pilha de Descarte de Jogador (p. 3).
 
 !fig[Passo 5: quatro pilhas, cada uma com uma Epidemia embaralhada, juntas formam o Baralho de Cartas de Jogador. Ilustração: manual Galápagos (p. 3)](figuras/setup-5-baralho.webp)
 
-**6. Quem começa.** Cada um olha as Cartas de Cidade da própria mão. Começa quem tiver a cidade de maior população, que vem impressa na carta (p. 3). Depois, a vez segue para a esquerda.
+**6. Quem começa.** Cada um olha as Cartas de Cidade da própria mão. Começa quem tiver a cidade de maior população, que vem impressa na carta (p. 3). O manual não diz o que fazer se alguém não tiver Carta de Cidade na mão: combine com a mesa. Depois, a vez segue para a esquerda.
 
 !fig[Uma partida em andamento, não a mesa recém-montada, numa caixa com cartas em francês: cubos separados por cor, Baralho de Jogador e Baralho de Infecção no tabuleiro e, diante de cada jogador, a Carta de Função e a mão aberta. Imagem: Asmodee UK](fotos/mesa-1.webp)
 
@@ -87,7 +87,7 @@ Pandemic é cooperativo: todos ganham ou perdem juntos. A equipe vence ao descob
 Resumo da seção "Montar a mesa passo a passo", acima.
 
 1. Tabuleiro; 1 Centro de Pesquisa em Atlanta, o resto e os cubos ao lado.
-2. Marcador de Surtos no 0; Marcadores de Cura com o frasco vazio para cima *(depois)*.
+2. Marcador de Surtos no 0; Marcadores de Cura com o frasco vazio para cima (só se mexem quando há cura).
 3. Velocidade de infecção no primeiro "2"; infecte 9 cidades com 3, 2 e 1 cubos.
 4. Função, Carta de Referência, peão em Atlanta e mão inicial (4, 3 ou 2 cartas).
 5. Baralho de Jogador com 4 Epidemias na primeira partida, uma em cada pilha.
@@ -99,15 +99,15 @@ O turno tem três partes (p. 3):
 
 1. **Faça até 4 ações**, em qualquer combinação; pode repetir a mesma. As de movimento: **Automóvel/Balsa** (ir pela linha branca até uma cidade ligada à sua), **Voo Direto** (descartar uma Carta de Cidade e ir até a cidade dela), **Voo Fretado** (descartar a carta da cidade onde você está e ir para qualquer cidade) e **Ponte Aérea** (de um Centro de Pesquisa para outro). Também pode **Tratar uma Doença**: tirar 1 cubo da sua cidade (p. 4).
 2. **Compre 2 Cartas de Jogador.** Se vier uma Epidemia, resolva-a na hora (resumo abaixo) e não compre outra no lugar (p. 6).
-3. **Infecte cidades.** Revele, do topo do Baralho de Infecção, tantas cartas quanto a velocidade de infecção (2 no começo). Cada cidade revelada recebe 1 cubo da cor dela. Se já tiver 3 dessa cor, não recebe o 4º: há um surto (p. 6).
+3. **Infecte cidades.** Revele, do topo do Baralho de Infecção, tantas cartas quanto a velocidade de infecção (2 no começo). Cada cidade revelada recebe 1 cubo da cor dela. Se já tiver 3 dessa cor, não recebe o 4º: há um surto. Descarte cada carta na Pilha de Descarte de Infecção (p. 6).
 
-**Epidemia, em três linhas** (p. 6). Avance o Marcador de Velocidade de Infecção 1 espaço. Pegue a carta do **fundo** do Baralho de Infecção e ponha 3 cubos nessa cidade. Embaralhe só a Pilha de Descarte de Infecção e ponha por cima do Baralho de Infecção.
+**Epidemia, em três linhas** (p. 6). Avance o Marcador de Velocidade de Infecção 1 espaço. Pegue a carta do **fundo** do Baralho de Infecção, ponha 3 cubos nessa cidade e descarte a carta na Pilha de Descarte de Infecção. Embaralhe só a Pilha de Descarte de Infecção e ponha por cima do Baralho de Infecção.
 
 **Surto, em duas linhas** (p. 7). Avance o Marcador de Surtos 1 espaço e ponha 1 cubo da cor do surto em cada cidade ligada. Uma delas que já tenha 3 cubos dessa cor tem um surto em cadeia.
 
 Se a sua Carta de Função muda uma ação, vale o que ela diz (p. 4). Carta de Evento na mão se joga a qualquer momento, sem gastar ação, e o efeito está escrito nela (p. 7). Na partida Introdutória, as cartas da mão ficam viradas para cima (p. 7).
 
-> [!resolvido] **Exemplo resolvido: o primeiro turno do manual** (p. 5). João sai de Atlanta. (1) Automóvel/Balsa até Chicago. (2) Automóvel/Balsa até São Francisco. (3) Trata uma Doença em São Francisco: tira 1 cubo azul. (4) Trata de novo: tira o segundo cubo azul. Quatro ações, nenhuma carta gasta. Depois ele compra 2 Cartas de Jogador e infecta 2 cidades.
+> [!resolvido] **Exemplo resolvido: o primeiro turno do manual** (p. 5). João sai de Atlanta. (1) Automóvel/Balsa até Chicago. (2) Automóvel/Balsa até São Francisco. (3) Trata uma Doença em São Francisco: tira 1 cubo azul. (4) Trata de novo: tira o segundo cubo azul. Quatro ações, nenhuma carta gasta. (Pela regra, o turno segue: ele compra 2 Cartas de Jogador e infecta 2 cidades, pela velocidade de infecção inicial.)
 
 !fig[O turno de João: de Atlanta a Chicago (1), de Chicago a São Francisco (2) e dois tratamentos em São Francisco (3 e 4), cada um tirando um cubo azul. Ilustração: manual Galápagos (p. 5)](figuras/exemplo-joao.webp)
 
@@ -129,7 +129,7 @@ Se a sua Carta de Função muda uma ação, vale o que ela diz (p. 4). Carta de 
 
 ### Ainda não precisa saber
 
-As outras ações (Construir um Centro de Pesquisa, Compartilhar Conhecimento, Descobrir uma Cura) e as funções em detalhe: etapa 2. Limite da mão e as regras das Cartas de Evento: etapa 3. Surto em cadeia em detalhe e doença erradicada: etapa 4.
+As outras ações (Construir um Centro de Pesquisa, Compartilhar Conhecimento, Descobrir uma Cura) e as funções em detalhe: etapa 2. Limite da mão e as regras das Cartas de Evento: etapa 3. Doença erradicada: etapa 2. Surto em cadeia em detalhe: etapa 4.
 
 ### Como a partida acaba
 
@@ -137,7 +137,7 @@ A equipe vence assim que a quarta cura é descoberta. Perde na hora com o 8º su
 
 **Prefere ver?** Este vídeo explica as regras do jogo base. Ele complementa este guia; em caso de diferença, vale o manual.
 
-!video[Pandemic - Como Jogar (acione legendas Klingon), canal Romir Play House](https://www.youtube.com/watch?v=KJVsAFD0y0I&t=0s)
+!video[Pandemic - Como Jogar, canal Romir Play House](https://www.youtube.com/watch?v=KJVsAFD0y0I&t=0s)
 
 > [!atencao] **Os três erros mais caros.** Na Epidemia, a cidade que recebe 3 cubos é a carta do **fundo** do Baralho de Infecção, e só a Pilha de Descarte de Infecção é reembaralhada e posta por cima. Uma cidade nunca recebe o 4º cubo de uma cor: no lugar dele, há um surto. A Carta de Epidemia comprada não é substituída por outra.
 
@@ -145,7 +145,7 @@ A equipe vence assim que a quarta cura é descoberta. Perde na hora com o 8º su
 
 Pandemic é um jogo cooperativo para 2 a 4 jogadores, a partir de 8 anos, com partidas de cerca de 45 minutos (página oficial da Z-Man Games). Os jogadores formam uma equipe de combate a doenças que viaja pelo mundo tratando infecções e juntando cartas para descobrir a cura de quatro doenças: Azul, Amarela, Preta e Vermelha (p. 1).
 
-A partida é uma corrida contra três relógios: o Baralho de Jogador, a Trilha de Surtos e o estoque de cubos. As Epidemias, escondidas no Baralho de Jogador, aceleram os três. Todos podem e devem dar opinião, mas quem decide é o jogador da vez (p. 3).
+A partida é uma corrida contra três relógios: o Baralho de Jogador, a Trilha de Surtos e o estoque de cubos. As Epidemias, escondidas no Baralho de Jogador, aceleram as infecções, e com elas os surtos e o gasto de cubos. Todos podem e devem dar opinião, mas quem decide é o jogador da vez (p. 3).
 
 ## 1. Como este guia ensina
 
@@ -184,7 +184,7 @@ São quatro etapas, na ordem em que as regras aparecem na mesa: mover-se pelo ma
 
 > [!suavez] **Sua vez.**
 >
-> ?? Você está em Paris e tem a carta de Paris. Que ação essa carta permite?
+> ?? Você está em Paris e tem a carta de Paris. Que movimento essa carta permite?
 > - ( ) Voo Direto para Paris
 > - ( ) Ponte Aérea para qualquer cidade
 > - (x) Voo Fretado para qualquer cidade
@@ -197,15 +197,15 @@ São quatro etapas, na ordem em que as regras aparecem na mesa: mover-se pelo ma
 > [!passos] **Passo a passo: as quatro outras ações** (p. 4)
 >
 > 1. **Construir um Centro de Pesquisa:** descarte a Carta de Cidade da cidade onde você está e ponha nela um Centro de Pesquisa do estoque.
-> 2. **Tratar uma Doença:** tire 1 cubo da sua cidade e devolva ao estoque. Se a doença já tem cura, tire todos os cubos dessa cor da cidade.
+> 2. **Tratar uma Doença:** tire 1 cubo da sua cidade e devolva ao estoque; se houver cubos de mais de uma cor, escolha a cor. Se a doença já tem cura, tire todos os cubos dessa cor da cidade.
 > 3. **Compartilhar Conhecimento:** dê a outro jogador a carta da cidade onde vocês dois estão, ou pegue dele essa carta. Os dois precisam estar na cidade e concordar.
-> 4. **Descobrir uma Cura:** em qualquer Centro de Pesquisa, descarte 5 Cartas de Cidade da mesma cor e ponha o Marcador de Cura dessa doença no Indicador de Curas Descobertas.
+> 4. **Descobrir uma Cura:** em qualquer Centro de Pesquisa, descarte 5 Cartas de Cidade da mesma cor e ponha o Marcador de Cura dessa doença no espaço dela no Indicador de Curas Descobertas. Ele continua com o "frasco vazio" para cima; só é virado para o lado de doença Erradicada quando a doença é erradicada.
 
 > [!mais] **Os 6 Centros de Pesquisa já construídos.** Se não há mais Centros de Pesquisa no estoque, pegue um de qualquer lugar do tabuleiro (p. 4).
 
 > [!mais] **Cubos de várias cores na mesma cidade.** Cada Tratar uma Doença age sobre uma cor. Se a cidade tem cubos de mais de uma doença com cura, é preciso uma ação por cor (p. 4).
 
-> [!mais] **Doença erradicada.** Se o último cubo de uma doença com cura sai do tabuleiro, ela está erradicada: vire o Marcador de Cura para o lado com o símbolo de proibido. Se, quando a cura é descoberta, já não há cubos dessa cor no tabuleiro, ela é erradicada na hora. Não é preciso erradicar para vencer; a vantagem é que cidades dessa cor não recebem mais cubos. Tirar o último cubo de doença sem cura não tem efeito (p. 4).
+> [!mais] **Doença erradicada.** Se o último cubo de uma doença com cura sai do tabuleiro, ela está erradicada: vire o Marcador de Cura do lado do "frasco vazio" para o lado de doença Erradicada, com o símbolo de proibido. Se, quando a cura é descoberta, já não há cubos dessa cor no tabuleiro, ela é erradicada na hora. Não é preciso erradicar para vencer; a vantagem é que cidades dessa cor não recebem mais cubos. Tirar o último cubo de doença sem cura não tem efeito (p. 4).
 
 > [!mais] **Mais de 7 cartas depois de receber uma.** Quem recebe uma carta em Compartilhar Conhecimento e fica com mais de 7 tem de descartar uma ou jogar uma Carta de Evento na hora (p. 4).
 
@@ -227,7 +227,7 @@ São quatro etapas, na ordem em que as regras aparecem na mesa: mover-se pelo ma
 
 > [!mais] **Especialista em Planos de Contingência, detalhes.** A Carta de Evento guardada sobre a Carta de Função, quando jogada, sai do jogo, em vez de ir para o descarte (p. 8).
 
-> [!mais] **Médico movido por outro.** Movido no turno de outro jogador (pelo Agente de Viagens ou pelo Transporte Aéreo), o Médico remove os cubos do mesmo jeito (p. 8).
+> [!mais] **Médico movido por outro.** Movido no turno de outro jogador (pelo Agente de Viagens ou pelo Transporte Aéreo, uma Carta de Evento explicada na etapa 3), o Médico remove os cubos do mesmo jeito (p. 8).
 
 > [!resolvido] **Exemplo resolvido: o turno de Ana, no manual** (p. 5). A doença vermelha já tem cura, e os 3 últimos cubos vermelhos estão em Manila, onde Ana, a Cientista, começa o turno. (1) Tratar uma Doença: os 3 cubos saem numa ação só, porque a doença tem cura; era o último vermelho do tabuleiro, então a doença vermelha é erradicada e o marcador é virado. Jorge, o Especialista em Operações, acabou de construir um Centro de Pesquisa em Chennai e tem a carta de lá. (2) Ana descarta a carta de Manila e faz um Voo Fretado até Chennai. (3) Compartilha Conhecimento e pega a carta de Chennai de Jorge: fica com 4 cartas pretas. (4) Como Cientista, 4 bastam: ela descarta as 4 no Centro de Pesquisa de Chennai e descobre a cura da doença preta.
 
@@ -251,13 +251,13 @@ São quatro etapas, na ordem em que as regras aparecem na mesa: mover-se pelo ma
 
 ## 4. Etapa 3: comprar cartas, Epidemias e Cartas de Evento
 
-> [!entender] **Para entender.** O Baralho de Jogador é o relógio: cada turno tira 2 cartas, e quando ele acaba a equipe perde. Uma Epidemia em cada pilha faz as Epidemias chegarem em intervalos parecidos. Cada uma acelera as infecções, põe 3 cubos numa cidade nova e devolve ao topo as cidades já infectadas, para que voltem logo (p. 3 e 6).
+> [!entender] **Para entender.** O Baralho de Jogador é o relógio: cada turno tira 2 cartas, e quando ele acaba a equipe perde. Uma Epidemia em cada pilha faz as Epidemias chegarem em intervalos parecidos. Cada uma acelera as infecções, põe 3 cubos numa cidade que não saía havia tempo e devolve ao topo as cidades já infectadas, para que voltem logo (p. 3 e 6).
 
 > [!passos] **Passo a passo: comprar cartas** (p. 6)
 >
 > 1. Depois das 4 ações, compre ao mesmo tempo as 2 cartas do topo do Baralho de Jogador.
 > 2. Se vier Carta de Epidemia, resolva-a na hora (abaixo). Depois de resolvida, ela sai da partida; não compre outra no lugar.
-> 3. Se ficar com mais de 7 cartas na mão, descarte ou jogue Cartas de Evento até ficar com 7.
+> 3. Se ficar com mais de 7 cartas na mão, descarte ou jogue Cartas de Evento até ficar com 7. As cartas descartadas vão para a Pilha de Descarte de Jogador.
 
 > [!passos] **Passo a passo: Carta de Epidemia** (p. 6)
 >
@@ -265,7 +265,7 @@ São quatro etapas, na ordem em que as regras aparecem na mesa: mover-se pelo ma
 > 2. **Infectar:** compre a carta do fundo do Baralho de Infecção e ponha 3 cubos da cor dela na cidade. Descarte a carta na Pilha de Descarte de Infecção.
 > 3. **Intensificar:** embaralhe só a Pilha de Descarte de Infecção e ponha essas cartas por cima do Baralho de Infecção.
 
-!fig[O exemplo de infecção do manual: a Trilha de Velocidade de Infecção (2, 2, 2, 3, 3, 4, 4), com o marcador no quarto espaço, o das 3 cartas, e as três Cartas de Infecção reveladas: Seul, Paris e Argel. Ilustração: manual Galápagos (p. 6)](figuras/infeccao.webp)
+!fig[O exemplo de infecção do manual: a Trilha de Velocidade de Infecção (2, 2, 2, 3, 3, 4, 4), com o marcador no quarto espaço, o das 3 cartas, e as três Cartas de Infecção reveladas: Seul, Paris e Argel; embaixo, o Indicador de Curas Descobertas com o vermelho erradicado e o preto curado. Ilustração: manual Galápagos (p. 6)](figuras/infeccao.webp)
 
 > [!mais] **A cidade do fundo já tem cubos.** Se a cidade da carta do fundo já tem cubos dessa cor, ponha só o bastante para chegar a 3, e há um surto dessa doença nela (p. 6). Se a doença já foi erradicada, não ponha cubo nenhum (p. 6).
 
@@ -335,7 +335,7 @@ São quatro etapas, na ordem em que as regras aparecem na mesa: mover-se pelo ma
 > [!passos] **Passo a passo: fim da partida** (p. 7)
 >
 > 1. A equipe vence assim que a quarta cura é descoberta, não importa quantos cubos ainda haja no tabuleiro.
-> 2. A equipe perde se o Marcador de Surtos chegar ao último espaço da Trilha de Surtos.
+> 2. A equipe perde se o Marcador de Surtos chegar ao último espaço da Trilha de Surtos: a trilha vai de 0 a 7, e o espaço seguinte, o da caveira, é a derrota (o 8º surto).
 > 3. A equipe perde se não houver cubos da cor necessária no estoque para pôr no tabuleiro, numa infecção, Epidemia ou surto.
 > 4. A equipe perde se um jogador não puder comprar 2 Cartas de Jogador depois das ações.
 
@@ -343,7 +343,7 @@ São quatro etapas, na ordem em que as regras aparecem na mesa: mover-se pelo ma
 
 !fig[Antes do surto: Paris recebe o segundo cubo azul, e Argel, que já tem 3 cubos pretos, vai ter um surto. Ilustração: manual Galápagos (p. 6)](figuras/surto.webp)
 
-> [!complete] **Complete.** A velocidade de infecção é 2. A primeira carta é uma cidade com 2 cubos amarelos; a segunda, uma cidade com 3 cubos azuis.
+> [!complete] **Complete.** A velocidade de infecção é 2. A primeira carta é uma cidade amarela com 2 cubos amarelos; a segunda, uma cidade azul com 3 cubos azuis.
 >
 > ?? Quantas vezes o Marcador de Surtos avança, se a segunda cidade não provocar surto em cadeia?
 > - ( ) Nenhuma

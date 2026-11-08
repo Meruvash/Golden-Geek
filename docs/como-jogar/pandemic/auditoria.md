@@ -81,3 +81,33 @@ O mesmo protocolo de `PROMPT_PILOTO.md`, seção 10: de 5 a 8 adultos que nunca 
 ## 6. Ligação com a resenha
 
 O site não tem resenha do Pandemic base; a de `/pandemic-legacy/` é de outro jogo. Proposta: quando houver resenha do base, um link do tutorial para ela e da resenha para o tutorial, e um aviso de que o tutorial ensina o jogo base, não o Legacy. Nada implementado.
+
+## Auditoria independente (08/11/2026)
+
+Duas auditorias de outros agentes: conferência contra o manual (aprovado com correções, nenhum erro de regra) e partida simulada só com o tutorial (joga com ajustes). Tudo corrigido nesta rodada; a regra não mudou em nenhum ponto. Não rodei `tools/como_jogar_md.py` nem `tools/build_como_jogar.py`.
+
+**Conferência**
+- S1. "Antes de tudo": as Epidemias aceleram as infecções, e com elas os surtos e o gasto de cubos (não "os três relógios").
+- M2. Exemplo de João: a frase final ficou marcada como regra ("Pela regra, o turno segue: ...").
+- M3. "Ainda não precisa saber": doença erradicada remete à etapa 2; surto em cadeia, à etapa 4.
+- M4. Complete da etapa 4: "uma cidade amarela com 2 cubos amarelos; a segunda, uma cidade azul com 3 cubos azuis".
+- M5. Resumo da Epidemia no "Comece": a carta do fundo vai para a Pilha de Descarte de Infecção antes do reembaralhamento (p. 6).
+- M6. `surto-em-cadeia.webp` e `setup-2-marcadores-cura.webp` recortados de novo, mais justos (sem a legenda do manual e sem a linha do rótulo).
+- M7. Legenda de `infeccao.webp` cita o Indicador de Curas com o vermelho erradicado e o preto curado.
+
+**Partida simulada**
+- 2. Lados do Marcador de Cura com os nomes do manual ("frasco vazio" e lado de doença Erradicada, p. 1 e 4); ao descobrir a cura, ele vai ao Indicador ainda com o frasco vazio para cima e só é virado na erradicação (p. 4: "Vire o Marcador de Cura dela do lado com o 'frasco vazio' para o lado com ...").
+- 3. Tirado o "*(depois)*" do resumo da montagem; no lugar, "só se mexem quando há cura".
+- 4. "Infecte cidades" no "Comece": cada carta vai para a Pilha de Descarte de Infecção (p. 6).
+- 5. Passo 4: "separe as 6 Cartas de Epidemia das Cartas de Jogador".
+- 6. Um nome só: "Pilha de Descarte de Jogador" (o passo 5 dizia "Pilha de Descarte das Cartas de Jogador", rótulo da ilustração da p. 3).
+- 7. "Erradicada" na tabela de componentes remete à etapa 2; "Transporte Aéreo", na primeira menção (Médico, etapa 2), diz que é Carta de Evento explicada na etapa 3.
+- 8. Quem começa: o manual só diz "O jogador com a Cidade de maior população começa" (p. 3); não trata de jogador sem Carta de Cidade nem de empate. O tutorial diz que o manual não diz. `[lacuna]`
+- 9. Trilha de Surtos: vai de 0 a 7, e o espaço seguinte (caveira) é a derrota, pela p. 7 ("último espaço") e pela ilustração da p. 2; na legenda do passo 2 e no passo a passo do fim da partida.
+- 10. Descartes pelo limite da mão vão para a Pilha de Descarte de Jogador. `[interpretada]`: a p. 6 diz só "descarte cartas"; a Pilha de Descarte de Jogador é a única pilha de descarte de Cartas de Jogador do jogo (p. 3 e 4).
+- 11. Tratar uma Doença com cubos de várias cores: "escolha a cor" (a p. 4 manda remover 1 cubo da cidade, sem fixar a cor).
+- 12. "Para entender" da etapa 3: a Epidemia põe 3 cubos "numa cidade que não saía havia tempo".
+- 13. Sua vez da etapa 1: "Que movimento essa carta permite?".
+- 14. Vídeo: legenda só com "Pandemic - Como Jogar" e o canal; o título real (oEmbed) termina em "(acione legendas Klingon)", omitido na legenda.
+
+**Portões depois das correções:** `checar_comece.py` "dentro da diretriz" (precisou de um corte de 6 palavras no resumo da montagem); `vicios.py` sem aviso; zero travessão e meia-risca no tutorial e na auditoria. `"publicar"` continua false; `"data"` 2026-11-08 não foi mexida.
