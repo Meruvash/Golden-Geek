@@ -1,0 +1,343 @@
+{
+ "slug": "planet-unknown",
+ "jogo": "Planet Unknown",
+ "cor": "#2f6f8f",
+ "kicker": "Resenha · Encaixe de peças no espaço",
+ "og_titulo": "Planeta Desconhecido vale a pena? Resenha Elite Boardgamers",
+ "titulo_busca": "Planeta Desconhecido (Planet Unknown): resenha do DSP 2023",
+ "descricao": "Resenha de Planeta Desconhecido (Planet Unknown), vencedor do Deutscher Spiele Preis 2023: como funciona a bandeja giratória e para quem é.",
+ "titulo_html": "O jogo inteiro gira em torno de uma bandeja de servir petisco: <span>Planeta Desconhecido</span>",
+ "lede": "Planeta Desconhecido, a edição brasileira de Planet Unknown, é um jogo de encaixar peças em formato de Tetris num planeta quadriculado, de um a seis jogadores ao mesmo tempo. Venceu o Deutscher Spiele Preis 2023 e foi indicado ao Kennerspiel. O astro da mesa não é o planeta: é uma bandeja giratória que decide quais peças chegam a cada um. O veredito vem lá embaixo, mas a pista está aqui: para quem prefere cuidar do próprio canto do universo sem levar ataque, é um dos melhores quebra-cabeças de peso médio.",
+ "tags": [
+  "1–6 jogadores",
+  "60–80 min",
+  "10+",
+  "Encaixe de peças",
+  "Ações simultâneas"
+ ],
+ "alt": "Planeta de Planeta Desconhecido com peças coloridas de terreno encaixadas na grade, robôs exploradores e marcadores azuis sobre o tabuleiro",
+ "premiacoes": [
+  {
+   "premio": "Deutscher Spiele Preis",
+   "ano": 2023,
+   "categoria": "Deutscher Spiele Preis",
+   "colocacao": 1,
+   "resultado": "vencedor",
+   "fonte": "https://boardgamewire.com/index.php/2023/10/04/planet-unknown-beats-dorfromantik-heat-to-win-germanys-biggest-board-game-prize/",
+   "rotulo": "Vencedor"
+  },
+  {
+   "premio": "Kennerspiel des Jahres",
+   "ano": 2023,
+   "categoria": "Kennerspiel des Jahres",
+   "colocacao": null,
+   "resultado": "indicado",
+   "fonte": "https://www.spiel-des-jahres.de/en/award-winners-2023/",
+   "rotulo": "Indicado"
+  }
+ ],
+ "ficha": [
+  [
+   "Ano",
+   "2022 (Adam's Apple Games); edição brasileira em 2025 (Mosaico Jogos)"
+  ],
+  [
+   "Designers",
+   "Ryan Lambert e Adam Rehberg"
+  ],
+  [
+   "Arte",
+   "Yoma"
+  ],
+  [
+   "Editora original",
+   "Adam's Apple Games"
+  ],
+  [
+   "Editora no Brasil",
+   "Mosaico Jogos (Planeta Desconhecido)"
+  ],
+  [
+   "Jogadores",
+   "1 a 6"
+  ],
+  [
+   "Duração anunciada",
+   "60 a 80 minutos (ComparaJogos); cerca de 70 minutos (Spiel des Jahres)"
+  ],
+  [
+   "Idade",
+   "10+"
+  ],
+  [
+   "Nota BGG",
+   "posição 167 no ranking, com cerca de 15 mil avaliações (conforme site que replica o BGG)"
+  ],
+  [
+   "Peso BGG",
+   "cerca de 2,2 / 5"
+  ],
+  [
+   "Nota ComparaJogos",
+   "7,8; complexidade 2,3 / 5"
+  ],
+  [
+   "Idioma",
+   "texto moderado, exige consulta (ComparaJogos)"
+  ],
+  [
+   "Componentes",
+   "estação espacial giratória (S.U.S.A.N.), 144 peças de terreno, 6 planetas, 6 corporações, 14 rovers, cápsulas de vida, meteoritos, peças de vegetação, 30 marcadores de trilha, 28 objetivos, 36 cartas de civilização e 60 cartas de evento"
+  ],
+  [
+   "Modo solo oficial",
+   "Sim, com baralho de eventos e meta de medalhas"
+  ],
+  [
+   "Versão digital",
+   "Board Game Arena (em inglês)"
+  ],
+  [
+   "Prêmios",
+   "Deutscher Spiele Preis 2023; indicado ao Kennerspiel des Jahres 2023"
+  ]
+ ],
+ "nota_ficha": "Posição e peso do BGG vêm de site que replica o BoardGameGeek, que bloqueia acesso automatizado. Nota e complexidade do ComparaJogos consultadas em 08/11/2026.",
+ "como_funciona": [
+  "Cada jogador recebe um planeta, que é um tabuleiro quadriculado, e uma corporação com cinco trilhas de recursos: civilização, água, biomassa, rover (robô explorador) e tecnologia. Vence quem tiver mais medalhas, os pontos do jogo, no fim da partida.",
+  "No centro da mesa fica a estação espacial, uma bandeja giratória com 144 peças em formato de poliminó (peças de vários quadradinhos, como no Tetris), separadas em depósitos. Na rodada, o comandante gira a bandeja quanto quiser; depois, todos escolhem ao mesmo tempo uma das duas peças do depósito à sua frente, uma pequena e uma grande, e encaixam no próprio planeta. A primeira peça toca a borda, e as seguintes encostam pelo lado em peças já postas.",
+  "Cada peça tem dois terrenos, e cada terreno avança uma trilha. Civilização dá cartas com bônus ou pontos de fim de jogo; água só avança se cobrir gelo do planeta; biomassa dá peças extras de vegetação; rover põe robôs que andam pelo planeta recolhendo cápsulas de vida e meteoritos; tecnologia libera habilidades da corporação. A energia não tem trilha: faz avançar outro recurso à escolha.",
+  "Peças com símbolo de meteoro recebem um meteorito, e linha ou coluna com meteorito não pontua até um rover recolhê-lo. Pôr uma peça em cima de um rover ou de uma cápsula destrói esse componente.",
+  "A partida acaba quando alguém não consegue encaixar nenhuma das duas peças do seu depósito ou quando um depósito esvazia. Contam medalhas as linhas e colunas completas, as trilhas, as cápsulas e os meteoritos recolhidos, as cartas de civilização e os objetivos disputados com os vizinhos. Há módulos de eventos e de objetivos privados, lados assimétricos de planetas e corporações e um modo solo com meta de pontos."
+ ],
+ "passos": [
+  [
+   "GIRE A ESTAÇÃO",
+   "O comandante gira a bandeja giratória até escolher qual depósito fica de frente para ele. O giro muda as peças que chegam a todos."
+  ],
+  [
+   "ESCOLHA SUA PEÇA",
+   "Ao mesmo tempo, cada jogador pega uma das duas peças do depósito à sua frente: uma pequena, do anel interno, ou uma grande, do externo."
+  ],
+  [
+   "ENCAIXE NO PLANETA",
+   "A primeira peça toca a borda; as outras encostam pelo lado em peças já postas. Peça com símbolo de meteoro recebe um meteorito em cima."
+  ],
+  [
+   "AVANCE DUAS TRILHAS",
+   "Cada terreno da peça sobe uma trilha: civilização, água, biomassa, rover ou tecnologia. Os marcos dão cartas, robôs, vegetação ou habilidades."
+  ],
+  [
+   "FECHE AS LINHAS",
+   "Quando alguém não consegue encaixar peça ou um depósito esvazia, contam-se linhas completas sem meteorito, trilhas, cápsulas e objetivos."
+  ]
+ ],
+ "como_resumo": "Gire a bandeja, pegue um poliminó e encaixe no seu planeta para subir cinco trilhas de recursos.",
+ "perfil": [
+  [
+   "Quebra-cabeça espacial",
+   5
+  ],
+  [
+   "Variedade entre partidas",
+   5
+  ],
+  [
+   "Componentes e mesa",
+   4
+  ],
+  [
+   "Facilidade de ensinar",
+   3
+  ],
+  [
+   "Partida curta",
+   3
+  ],
+  [
+   "Interação entre jogadores",
+   2
+  ]
+ ],
+ "experiencia": [
+  "A primeira coisa que todo mundo faz é girar a bandeja só para ver girar. O júri do Spiel des Jahres escreveu que só de olhar dá vontade de jogar, e é verdade: a estação espacial no meio da mesa é o centro das atenções, com razão, porque é o único lugar onde você mexe na vida de alguém.",
+  "No resto do tempo, cada um cuida do próprio planeta. Você pega uma peça em L com água e rover, encaixa sobre o gelo para a água valer, sobe as duas trilhas, ganha um robô e passa três rodadas traçando o caminho dele até o meteorito que trava a sua linha de cima. O vizinho faz o mesmo, em silêncio, no planeta dele. Oliver Kinne, do Tabletop Games Blog, diz que ainda sobra espaço para provocar e curtir a companhia, e Thomas Wells, da Meeple Mountain, descreve uma partida leve e tranquila.",
+  "Aí chega a sua vez de comandar. Você gira a bandeja dois cliques, olha a cara do amigo que esperava a peça em T e descobre o prazer simples de ser síndico do sistema solar."
+ ],
+ "citacao": {
+  "texto": "Só de olhar para Planet Unknown, dá vontade de entrar no jogo.",
+  "fonte": "júri do Spiel des Jahres (tradução livre)"
+ },
+ "funciona": [
+  [
+   "A bandeja giratória",
+   "A estação espacial no centro, a S.U.S.A.N., guarda as peças em depósitos e decide o que chega a cada jogador. O júri do Spiel des Jahres elogia o suprimento giratório, que cumpre a promessa de diversão, e a Board Game Review o descreve como um componente que deixa a mesa olhando. É também a única ferramenta de interação, e funciona."
+  ],
+  [
+   "Todos jogam ao mesmo tempo",
+   "Depois do giro, todos escolhem e encaixam a peça juntos. Por isso o júri do Spiel des Jahres diz que o quebra-cabeça funciona tão bem com dois quanto com seis jogadores: a espera quase não cresce com a mesa cheia, e uma partida de seis cabe em pouco mais de uma hora."
+  ],
+  [
+   "Peça e trilha amarradas",
+   "Cada peça encaixada no planeta sobe duas trilhas ao mesmo tempo. Uma peça em L de água e rover precisa cobrir gelo para a água contar e ainda abre caminho para o robô. O júri do Spiel des Jahres destaca essa ligação entre encaixe e ação como o motor do jogo."
+  ],
+  [
+   "Dificuldade sob medida",
+   "Planetas e corporações têm um lado simétrico, para estreantes, e um assimétrico, com regras próprias. O júri do Spiel des Jahres chama esse ajuste de forma elegante de escalar o desafio para iniciantes e veteranos, e Oliver Kinne, do Tabletop Games Blog, recomenda começar pelo lado padrão e virar depois."
+  ],
+  [
+   "Muita variedade na caixa",
+   "São 12 planetas assimétricos, corporações com árvores de tecnologia próprias, 36 cartas de civilização, 28 objetivos e 60 cartas de evento. A Board Game Review destaca a quantidade de jeitos de pontuar, e o modo solo usa o baralho de eventos com meta de 60 medalhas, ajustada pelos alertas sorteados."
+  ]
+ ],
+ "atencao": [
+  [
+   "Moderada",
+   "Vizinhança de condomínio",
+   "Fora o giro da bandeja, ninguém encosta no seu planeta. Thomas Wells, da Meeple Mountain, acha os objetivos disputados com os vizinhos um pouco preguiçosos e contrários à proposta do jogo, e sugere trocá-los por objetivos privados. É convivência de condomínio: todo mundo se cumprimenta no elevador e ninguém sabe o nome de ninguém."
+  ],
+  [
+   "Moderada",
+   "Assimetria torta",
+   "A Board Game Review diz que a única coisa que derruba o jogo é a assimetria desequilibrada entre planetas e corporações. Ou seja: o lado avançado, que deveria premiar quem já domina o básico, também pode premiar quem sorteou melhor. Use com um grupo que aceita poderes desiguais ou escolha os lados em comum acordo."
+  ],
+  [
+   "Leve",
+   "Manual com lacunas",
+   "Para a Board Game Review, o manual é razoável, mas deixa faltar esclarecimentos. Água e energia têm regras de encaixe próprias, e cada corporação tem a sua árvore de tecnologia. Um jogo sobre colonizar o desconhecido não precisava levar o tema tão a sério no livro de regras."
+  ],
+  [
+   "Leve",
+   "Mesa de jantar inteira",
+   "A Board Game Review lista o espaço na mesa como defeito: uma bandeja giratória no centro e, para cada pessoa, um planeta e um tabuleiro de corporação. Com seis jogadores, esqueça a travessa de petisco, porque o lugar dela já foi ocupado por uma bandeja que não serve petisco."
+  ],
+  [
+   "Leve",
+   "Solo sem escolha",
+   "No modo solo a bandeja gira um depósito por rodada, sem escolha. Oliver Kinne, do Tabletop Games Blog, diz que às vezes sobra escolher entre duas opções terríveis, e ainda lamenta os cubos de plástico, que poderiam ser de madeira."
+  ]
+ ],
+ "jogadores": [
+  [
+   "Sozinho",
+   "Modo solo com eventos e meta de 60 medalhas; o Tabletop Games Blog nota que às vezes sobram só duas opções ruins.",
+   2
+  ],
+  [
+   "2 jogadores",
+   "Tem variante própria, com a bandeja girando um depósito por rodada. O júri do Spiel des Jahres diz que funciona tão bem quanto com seis.",
+   3
+  ],
+  [
+   "3 a 6 jogadores",
+   "Todos jogam ao mesmo tempo, então a espera quase não cresce; quem precisa crescer é a mesa.",
+   3
+  ]
+ ],
+ "primeira_partida": "Use o planeta KSB-4156 e a corporação Universal Coalition, o lado simétrico que o manual indica para estreantes, e deixe eventos e objetivos privados na caixa. Explique primeiro as duas regras que mais pegam: água só sobe se cobrir gelo, e linha com meteorito não pontua até um rover recolhê-lo. Dica prática: comece pelas bordas e planeje cedo o caminho dos robôs, porque uma peça posta em cima de um rover destrói o robô.",
+ "edicao_nacional": "A edição em português se chama Planeta Desconhecido e é da Mosaico Jogos, que anunciou o jogo em agosto de 2022 e o lançou em junho de 2025, segundo a Ludopedia e uma loja. Em 08/11/2026, o ComparaJogos listava o jogo novo a partir de R$ 350,81 no Pix, com ofertas até cerca de R$ 432. O texto fica nas cartas de civilização, objetivos e eventos, que pedem consulta durante a partida.",
+ "preco_ref": {
+  "faixa": "a partir de R$ 350,81",
+  "data": "08/11/2026",
+  "obs": "menor preço no Pix em lojas brasileiras, segundo o ComparaJogos"
+ },
+ "versoes": "A expansão Supermoon aparece no ComparaJogos por R$ 239,90 em 08/11/2026, sem confirmação de idioma na página. Há versão digital no Board Game Arena desde novembro de 2023, em inglês. O jogo base já traz módulos opcionais: eventos, objetivos privados, variante para dois jogadores e lados assimétricos de planetas e corporações.",
+ "comparacoes": [
+  [
+   "Cascadia",
+   "cascadia",
+   "Também é encaixe de peças tiradas de um mercado comum, mais curto e com regras mais simples. Um bom passo anterior para quem nunca jogou nada com poliminó ou peças de terreno."
+  ],
+  [
+   "Terraforming Mars",
+   "terraforming-mars",
+   "O outro jogo de transformar planeta, bem mais longo e com as cartas no centro. Planeta Desconhecido entrega a sensação de colonizar em pouco mais de uma hora."
+  ],
+  [
+   "Dorfromantik: The Board Game",
+   "dorfromantik-the-board-game",
+   "Ficou em segundo no Deutscher Spiele Preis de 2023, atrás do Planeta Desconhecido. É cooperativo e mais calmo, para quem prefere montar a paisagem junto com o grupo."
+  ]
+ ],
+ "para_quem": [
+  "Gosta de encaixar peças e ver o tabuleiro fechar",
+  "Joga com grupos de tamanho variável, de um a seis",
+  "Prefere cuidar do próprio planeta a atacar o vizinho",
+  "Curte componente que vira assunto na mesa",
+  "Já jogou Cascadia e procura o passo seguinte"
+ ],
+ "nao_e_para": [
+  "Precisa de confronto direto para se divertir",
+  "Tem mesa pequena e seis amigos",
+  "Detesta consultar regra de exceção",
+  "Joga para atrapalhar os outros"
+ ],
+ "selo": "Recomendado",
+ "melhor_para": "proximo",
+ "veredito": "A verdade que a caixa não conta: o melhor componente do Planeta Desconhecido é uma bandeja giratória, e a única forma de atrapalhar alguém é girá-la. A gente acha que basta. O resto é um quebra-cabeça de poliminós muito bem amarrado, em que cada peça encaixada sobe duas trilhas e cada meteorito vira um problema de logística para os robôs. Venceu o Deutscher Spiele Preis 2023, à frente de Dorfromantik e Heat, e foi indicado ao Kennerspiel. Por cerca de R$ 350, recebe de um a seis jogadores sem ninguém esperar a vez. Pesam a assimetria torta e a interação de vizinho educado. Compre se o seu grupo gosta de planejar em paz. Se ele gosta de briga, a bandeja não dá conta.",
+ "tagline": "Seis planetas, uma bandeja giratória e o poder de estragar a rodada de alguém com dois cliques.",
+ "consulta": "08/11/2026",
+ "fontes": [
+  [
+   "RulesPal – Planet Unknown: manual",
+   "https://rulespal.com/planet-unknown/rulebook",
+   "regras, componentes, fim de jogo, solo"
+  ],
+  [
+   "Spiel des Jahres – Planet Unknown",
+   "https://www.spiel-des-jahres.de/en/games/planet-unknown/",
+   "crítica do júri, ficha"
+  ],
+  [
+   "Spiel des Jahres – vencedores e indicados de 2023",
+   "https://www.spiel-des-jahres.de/en/award-winners-2023/",
+   "indicação ao Kennerspiel"
+  ],
+  [
+   "BoardGameWire – Deutscher Spiele Preis 2023",
+   "https://boardgamewire.com/index.php/2023/10/04/planet-unknown-beats-dorfromantik-heat-to-win-germanys-biggest-board-game-prize/",
+   "prêmio, segundo e terceiro lugares"
+  ],
+  [
+   "Board Game Review – Planet Unknown",
+   "https://boardgamereview.co.uk/game-reviews/planet-unknown-board-game-review/",
+   "crítica, assimetria, manual, espaço na mesa"
+  ],
+  [
+   "Tabletop Games Blog – Planet Unknown",
+   "https://tabletopgamesblog.com/2023/10/21/planet-unknown-saturday-review",
+   "crítica, solo, componentes"
+  ],
+  [
+   "Meeple Mountain – Planet Unknown",
+   "https://www.meeplemountain.com/reviews/planet-unknown/",
+   "crítica, objetivos de vizinho"
+  ],
+  [
+   "ComparaJogos – Planeta Desconhecido",
+   "https://www.comparajogos.com.br/item/planeta-desconhecido",
+   "preço no Brasil, nota, idioma, expansão"
+  ],
+  [
+   "Masmorra – Planeta Desconhecido",
+   "https://www.masmorra.com.br/produtos/pldmos5001",
+   "edição nacional, data de lançamento"
+  ],
+  [
+   "Ludopedia – Mosaico anuncia Planet Unknown",
+   "https://ludopedia.com.br/topico/61154/mosaico-jogos-anuncia-o-jogo-planet-unknown",
+   "anúncio da edição nacional (via busca)"
+  ],
+  [
+   "Board Game Arena – Planet Unknown",
+   "https://br.boardgamearena.com/news?id=730",
+   "versão digital"
+  ],
+  [
+   "BoardGameMatcher – Planet Unknown",
+   "https://boardgamematcher.com/game/planet-unknown",
+   "posição e peso do BGG replicados"
+  ]
+ ],
+ "legenda": "O jogo inteiro gira em torno de uma bandeja de petisco. E funciona. 🪐\n\nPlaneta Desconhecido venceu o Deutscher Spiele Preis 2023, à frente de Dorfromantik e Heat.\nGire a estação, pegue uma peça em formato de Tetris, encaixe no seu planeta e suba duas trilhas por vez. De 1 a 6 jogadores, todos ao mesmo tempo.\nEdição da Mosaico Jogos em português; em 08/11/2026, a partir de R$ 350,81.\nVeredito: RECOMENDADO. Pouca briga, muito quebra-cabeça.\n\nVocê gira a bandeja para ajudar ou para atrapalhar? 👇\nResenha completa no link da bio.\n\n#PlanetaDesconhecido #PlanetUnknown #JogosDeTabuleiro #BoardGames #MosaicoJogos #DeutscherSpielePreis #Kennerspiel #EliteBoardgamers #Boardgamer"
+}

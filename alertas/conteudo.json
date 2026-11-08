@@ -1,41 +1,5 @@
 [
  {
-  "id": "r-mechs-vs-minions",
-  "tema": "resenhas",
-  "hora": "2026-11-04T02:06:53Z",
-  "titulo": "⭐ Resenha: Mechs vs. Minions",
-  "texto": "Você escreve o programa. O lacaio reescreve. O bug é a melhor parte.",
-  "url": "https://eliteboardgamers.com.br/mechs-vs-minions/",
-  "imagem": "https://eliteboardgamers.com.br/mechs-vs-minions/capa.jpg"
- },
- {
-  "id": "r-the-quacks-of-quedlinburg",
-  "tema": "resenhas",
-  "hora": "2026-11-04T02:06:53Z",
-  "titulo": "⭐ Resenha: The Quacks of Quedlinburg",
-  "texto": "Explodiu? Ainda compra. Está perdendo? Ganha vantagem. Nenhum cassino de verdade sobreviveria a essas regras.",
-  "url": "https://eliteboardgamers.com.br/the-quacks-of-quedlinburg/",
-  "imagem": "https://eliteboardgamers.com.br/the-quacks-of-quedlinburg/capa.jpg"
- },
- {
-  "id": "r-oath",
-  "tema": "resenhas",
-  "hora": "2026-11-04T02:06:53Z",
-  "titulo": "⭐ Resenha: Oath: Crônicas de Império e Exílio",
-  "texto": "Um império de mil anos que depende da agenda de quatro adultos.",
-  "url": "https://eliteboardgamers.com.br/oath/",
-  "imagem": "https://eliteboardgamers.com.br/oath/capa.jpg"
- },
- {
-  "id": "r-splendor-duel",
-  "tema": "resenhas",
-  "hora": "2026-11-04T02:06:53Z",
-  "titulo": "⭐ Resenha: Splendor Duel",
-  "texto": "Ninguém pediu. Agora ninguém quer devolver.",
-  "url": "https://eliteboardgamers.com.br/splendor-duel/",
-  "imagem": "https://eliteboardgamers.com.br/splendor-duel/capa.jpg"
- },
- {
   "id": "r-arcs",
   "tema": "resenhas",
   "hora": "2026-11-04T02:06:53Z",
@@ -358,5 +322,41 @@
   "texto": "Jogo de influenciador costuma ser baralho com a cara do dono e piada interna. Este tem designer de miniaturas pesadas e alocação de trabalhadores, o que já é mais…",
   "url": "https://eliteboardgamers.com.br/noticias/tasting-history-max-miller-jogo-kickstarter/",
   "imagem": "https://eliteboardgamers.com.br/noticias/capas/tasting-history-max-miller-jogo-kickstarter.jpg"
+ },
+ {
+  "id": "r-hot-streak",
+  "tema": "resenhas",
+  "hora": "2026-11-08T14:35:41Z",
+  "titulo": "⭐ Resenha: Hot Streak",
+  "texto": "Duas apostas, uma carta suja e vinte minutos torcendo por um cachorro-quente de plástico.",
+  "url": "https://eliteboardgamers.com.br/hot-streak/",
+  "imagem": "https://eliteboardgamers.com.br/hot-streak/capa.jpg"
+ },
+ {
+  "id": "r-thunder-road-vendetta",
+  "tema": "resenhas",
+  "hora": "2026-11-08T14:35:41Z",
+  "titulo": "⭐ Resenha: Thunder Road: Vendetta",
+  "texto": "Três carros, um helicóptero e a certeza de que quem lidera é o próximo alvo.",
+  "url": "https://eliteboardgamers.com.br/thunder-road-vendetta/",
+  "imagem": "https://eliteboardgamers.com.br/thunder-road-vendetta/capa.jpg"
+ },
+ {
+  "id": "r-planet-unknown",
+  "tema": "resenhas",
+  "hora": "2026-11-08T14:35:41Z",
+  "titulo": "⭐ Resenha: Planet Unknown",
+  "texto": "Seis planetas, uma bandeja giratória e o poder de estragar a rodada de alguém com dois cliques.",
+  "url": "https://eliteboardgamers.com.br/planet-unknown/",
+  "imagem": "https://eliteboardgamers.com.br/planet-unknown/capa.jpg"
+ },
+ {
+  "id": "r-just-one",
+  "tema": "resenhas",
+  "hora": "2026-11-08T14:35:41Z",
+  "titulo": "⭐ Resenha: Just One",
+  "texto": "Treze cartas, uma palavra por pessoa e a descoberta humilhante de que todo mundo escreveu a mesma coisa.",
+  "url": "https://eliteboardgamers.com.br/just-one/",
+  "imagem": "https://eliteboardgamers.com.br/just-one/capa.jpg"
  }
 ]

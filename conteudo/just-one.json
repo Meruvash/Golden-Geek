@@ -1,0 +1,152 @@
+{
+ "slug": "just-one",
+ "jogo": "Just One",
+ "cor": "#e0a40f",
+ "kicker": "Resenha · Jogo cooperativo de palavras",
+ "og_titulo": "Só Uma vale a pena? Resenha Elite Boardgamers",
+ "titulo_busca": "Só Uma (Just One): resenha do Spiel des Jahres 2019",
+ "descricao": "Resenha de Só Uma (Just One), vencedor do Spiel des Jahres 2019: como funciona o jogo cooperativo de pistas de uma palavra e para quem é.",
+ "titulo_html": "O jogo que castiga quem pensa igual aos amigos: <span>Só Uma</span>",
+ "lede": "Só Uma, a edição brasileira de Just One, é um jogo cooperativo de palavras para 3 a 7 pessoas: cada um escreve uma pista de uma palavra só, e as pistas repetidas são apagadas antes de quem adivinha ver. Venceu o Spiel des Jahres de 2019. A regra é tão curta que cabe na tampa. A crueldade também: aqui, ter a mesma ideia brilhante que o amigo é o jeito mais rápido de perder um ponto. Para família e grupo grande, acerta em cheio.",
+ "tags": [
+  "3–7 jogadores",
+  "20 min",
+  "8+",
+  "Cooperativo",
+  "Palavras"
+ ],
+ "alt": "Mão colocando uma carta de Só Uma com cinco palavras numeradas num suporte amarelo, com uma caneta ao lado",
+ "premiacoes": [
+  {
+   "premio": "Spiel des Jahres",
+   "ano": 2019,
+   "categoria": "Spiel des Jahres",
+   "colocacao": 1,
+   "resultado": "vencedor",
+   "fonte": "https://www.spiel-des-jahres.de/en/games/just-one/",
+   "rotulo": "Vencedor"
+  },
+  {
+   "premio": "Golden Geek",
+   "ano": 2018,
+   "categoria": "Festa",
+   "colocacao": 3,
+   "resultado": "top 3",
+   "fonte": "https://brettspielbox.de/13th-annual-golden-geek-awards-winners-2018/",
+   "rotulo": "Top 3"
+  }
+ ],
+ "ficha": [
+  ["Ano", "2018 (Repos Production); edição brasileira em 2019 (Galápagos, hoje Asmodee)"],
+  ["Designers", "Ludovic Roudy e Bruno Sautter"],
+  ["Arte", "Éric Azagury e Florian Poullet"],
+  ["Editora original", "Repos Production"],
+  ["Editora no Brasil", "Asmodee (Galápagos), com o nome Só Uma"],
+  ["Jogadores", "3 a 7"],
+  ["Duração anunciada", "cerca de 20 minutos (Spiel des Jahres)"],
+  ["Idade", "8+"],
+  ["Nota BGG", "posição 160 no ranking, com cerca de 36 mil avaliações (conforme site que replica o BGG)"],
+  ["Peso BGG", "cerca de 1,0 / 5"],
+  ["Nota ComparaJogos", "7,6; complexidade 1,0 / 5"],
+  ["Idioma", "não jogável em outro idioma (ComparaJogos)"],
+  ["Componentes", "110 cartas com cinco palavras cada, 7 suportes e 7 canetas para quadro branco"],
+  ["Versão digital", "Board Game Arena"],
+  ["Prêmios", "Spiel des Jahres 2019; finalista do Golden Geek 2018 de jogo de festa"]
+ ],
+ "nota_ficha": "Posição e peso do BGG vêm de site que replica o BoardGameGeek, que bloqueia acesso automatizado. Nota e complexidade do ComparaJogos consultadas em 08/11/2026.",
+ "como_funciona": [
+  "Só Uma é cooperativo: todos jogam juntos contra o placar. A partida usa 13 cartas sorteadas entre 110, cada uma com cinco palavras numeradas, e o objetivo é acertar o máximo delas, até 13.",
+  "Em cada turno, um jogador é quem adivinha. Ele pega a carta do topo sem olhar, põe no suporte virada para os outros e diz um número de 1 a 5: essa é a palavra misteriosa. Cada um dos outros escreve em segredo, no próprio suporte, uma única palavra como pista, sem conversar.",
+  "Antes de mostrar as pistas, quem adivinha fecha os olhos. Os outros comparam: pistas iguais são canceladas, e isso inclui singular e plural, masculino e feminino e palavras da mesma família. Também saem as pistas inválidas, como a própria palavra escrita de outro jeito, a tradução para outra língua ou uma palavra inventada. Se todas forem canceladas, a carta sai do jogo.",
+  "Quem adivinha abre os olhos, vê as pistas que sobraram e dá um palpite ou passa. Se acertar, a carta vai para a pilha de acertos. Se errar, a carta sai e a próxima do baralho também. Se passar, só a carta da vez sai. A vez de adivinhar passa para a esquerda.",
+  "O jogo termina quando o baralho acaba. Conta-se a pilha de acertos e compara-se com a tabela do manual: 13 é a pontuação perfeita, e de 0 a 3 o manual manda tentar de novo. Com três jogadores, cada pessoa usa dois suportes e escreve duas pistas."
+ ],
+ "passos": [
+  ["SORTEIE A PALAVRA", "Quem adivinha põe a carta no suporte sem olhar, virada para os outros, e diz um número de 1 a 5. Essa é a palavra misteriosa."],
+  ["UMA PISTA CADA", "Os outros escrevem em segredo uma única palavra como pista, sem conversar. Números, siglas e onomatopeias também valem como uma palavra."],
+  ["CANCELE AS IGUAIS", "Com quem adivinha de olhos fechados, os outros comparam: pistas iguais, da mesma família ou inválidas são retiradas antes de mostrar."],
+  ["PALPITE OU PASSE", "Quem adivinha vê as pistas restantes e arrisca uma vez. Acerto guarda a carta; erro descarta ela e mais uma; passar descarta só ela."],
+  ["CONTE AS CARTAS", "Quando o baralho de 13 cartas acaba, conte os acertos e compare com a tabela do manual. Treze é a pontuação perfeita."]
+ ],
+ "como_resumo": "Dê uma pista de uma palavra só e torça para ninguém ter pensado igual a você.",
+ "perfil": [
+  ["Risadas na mesa", 5],
+  ["Facilidade de ensinar", 5],
+  ["Partida curta", 5],
+  ["Inclusão de quem nunca joga", 5],
+  ["Grupos grandes", 4],
+  ["Profundidade estratégica", 1]
+ ],
+ "experiencia": [
+  "A palavra é 'camelo'. Você pensa em 'deserto' e escreve, orgulhoso. Os outros quatro também pensaram em 'deserto'. Quatro pistas canceladas, sobra a do seu tio, que escreveu 'Egito', e quem adivinha chuta 'pirâmide'. Bem-vindo ao Só Uma, o único jogo em que pensar igual aos amigos é castigado.",
+  "O que acontece na mesa é uma pequena guerra contra o óbvio. Ninguém quer dar a pista que todo mundo vai dar, então todo mundo foge para a segunda opção, que também é a de todo mundo. A Board Game Review descreve o resultado do outro lado do suporte: quem adivinha encara um mar de palavras sem ligação aparente. É aí que a mesa grita.",
+  "A partida leva uns 20 minutos, e o júri do Spiel des Jahres falou em atração magnética: termina a primeira, alguém já está embaralhando a segunda. O placar é contra a caixa, então ninguém perde sozinho. Perde o grupo todo, junto, por causa do 'deserto'."
+ ],
+ "citacao": {
+  "texto": "A genialidade de Just One está na simplicidade.",
+  "fonte": "júri do Spiel des Jahres (tradução livre)"
+ },
+ "funciona": [
+  ["Regras de um minuto", "Escreva uma palavra e não repita a do vizinho. O júri do Spiel des Jahres diz que a genialidade do jogo está na simplicidade, e a Board Game Review o chama de fantasticamente simples. Dá para explicar com a primeira carta já no suporte, sem ler o manual em voz alta."],
+  ["O cancelamento é o jogo", "Pistas iguais somem antes de quem adivinha ver. Essa regra transforma um jogo comum de associação numa disputa contra o óbvio: você precisa ser útil sem ser previsível. A Board Game Review descreve o efeito, um mar de palavras sem ligação na frente de quem adivinha, e a tensão que isso cria."],
+  ["Ninguém perde sozinho", "Todos jogam contra a tabela de pontos, não uns contra os outros. Robin Brooks, do GeekDad, resume como diversão em família de primeira, com todo mundo trabalhando junto, e recomenda o jogo para quebrar o gelo em grupos que nunca jogaram nada moderno."],
+  ["Até sete pessoas sem espera", "A caixa traz sete suportes e sete canetas, e todos escrevem ao mesmo tempo, então ninguém espera a vez. A Board Game Review diz que, para famílias de até sete pessoas, o jogo é difícil de superar, e o GeekDad sugere dividir em times para grupos ainda maiores."],
+  ["Revanche garantida", "O júri do Spiel des Jahres diz que o jogo cria uma atração magnética, e o efeito é concreto: partidas de cerca de 20 minutos e um baralho de 110 cartas com cinco palavras cada, 550 palavras possíveis, que pedem revanche antes de alguém levantar da mesa."]
+ ],
+ "atencao": [
+  ["Moderada", "Raso de propósito", "Robin Brooks, do GeekDad, admite que não é o jogo mais exigente taticamente do mundo. É um eufemismo educado: a decisão mais complexa da noite é escolher entre 'praia' e 'areia'. Quem procura estratégia vai achar a partida simpática e esquecível, como conversa de elevador com palavra cruzada."],
+  ["Moderada", "Repetição em sequência", "A Board Game Review lista como defeito que o jogo pode ficar repetitivo se jogado muitas vezes seguidas, e calcula que uma semana jogando toda noite cansaria. São 550 palavras no baralho, mas a mesa repete os mesmos atalhos de pensamento. O problema não é a caixa. Somos nós."],
+  ["Leve", "Idades misturadas", "A caixa diz 8+, mas o GeekDad nota que misturar crianças pequenas e adultos pode atrapalhar, porque os mais novos nem sempre têm repertório para certas palavras. Na prática, a festa de família pode virar aula de vocabulário, com o sobrinho de oito anos tentando adivinhar 'hipoteca'."],
+  ["Leve", "A mesa vira tribunal", "As regras cancelam pistas da mesma família, singular e plural e erros de grafia. Quem decide se 'pão' e 'padaria' são da mesma família é a mesa, com quem adivinha de olhos fechados esperando o veredito. É o único momento em que o jogo cooperativo vira audiência de conciliação."],
+  ["Leve", "Só em português", "O ComparaJogos classifica o jogo como não jogável em outro idioma, e faz sentido: as cartas são palavras. Comprar a edição importada só serve se todo mundo pensa em inglês às onze da noite, e ninguém pensa."]
+ ],
+ "jogadores": [
+  ["3 jogadores", "Funciona com a variante oficial: cada um escreve duas pistas em dois suportes, então ainda há o que cancelar.", 2],
+  ["4 a 7 jogadores", "A faixa da caixa, com sete suportes; a Board Game Review diz que é difícil de superar para famílias de até sete.", 3],
+  ["8 ou mais", "Fora da caixa; o GeekDad sugere adaptar com times para grupos maiores.", 1]
+ ],
+ "primeira_partida": "Explique com a primeira carta já no suporte: o resto se aprende jogando. O que mais confunde é a regra de cancelamento, então combine antes o que conta como mesma família de palavra e lembre que quem adivinha fecha os olhos durante a comparação. Dica prática: na primeira rodada, peça que cada um descarte a primeira palavra que veio à cabeça. A primeira que veio à sua é a mesma que veio à dos outros.",
+ "edicao_nacional": "A edição em português se chama Só Uma, saiu em 2019 pela Galápagos, hoje Asmodee, e traz as palavras em português, condição para jogar. Em 08/11/2026, o ComparaJogos listava o jogo novo a partir de R$ 199,40 no Pix. A caixa tem 110 cartas, sete suportes e sete canetas para quadro branco.",
+ "preco_ref": {
+  "faixa": "a partir de R$ 199,40",
+  "data": "08/11/2026",
+  "obs": "menor preço no Pix em lojas brasileiras, segundo o ComparaJogos"
+ },
+ "versoes": "A Repos Production lançou em 2025 uma edição renovada, que aparece nas fotos oficiais desta página. Há versão digital gratuita no Board Game Arena, jogada no navegador e com tutorial. Lá fora também saíram cartas promocionais, como as da caixa comemorativa do Deutscher Spielepreis Classic. Não encontramos expansão de conteúdo nas fontes consultadas até 08/11/2026.",
+ "comparacoes": [
+  ["So Clover!", "so-clover", "Mesmo espírito cooperativo de palavras, mas cada um cria pistas para um trevo de quatro palavras. Um pouco mais de cabeça, a mesma mesa unida contra o placar."],
+  ["Codenames", "codenames", "O clássico da pista de uma palavra, mas em times rivais. Para grupos que preferem competir a somar pontos juntos contra a caixa."],
+  ["The Mind", "the-mind", "Venceu o Golden Geek de jogo de festa de 2018, com Só Uma entre os finalistas. Também cooperativo e sem conversa, mas com números em vez de palavras."]
+ ],
+ "para_quem": [
+  "Junta de quatro a sete pessoas que gostam de conversar",
+  "Precisa de um jogo para quem diz que não gosta de jogo",
+  "Prefere ganhar ou perder em grupo",
+  "Tem 20 minutos antes da pizza chegar",
+  "Gosta de palavra cruzada e trocadilho"
+ ],
+ "nao_e_para": [
+  "Procura estratégia e decisão difícil",
+  "Joga quase sempre em dupla",
+  "Vai jogar dez partidas por semana com o mesmo grupo",
+  "Tem crianças pequenas e adultos no mesmo time"
+ ],
+ "selo": "Recomendado",
+ "melhor_para": "festa",
+ "veredito": "Só Uma tem uma regra genial e uma tese cruel: aqui, pensar igual aos amigos é castigado. Todo mundo escreve 'deserto', todo mundo é cancelado, e quem adivinha fica olhando para a única pista que sobrou, a do tio. O Spiel des Jahres de 2019 premiou exatamente isso, a simplicidade, e o tempo deu razão ao júri. Por cerca de R$ 200, é o jogo para ensinar entre o almoço e a sobremesa, a qualquer pessoa que saiba escrever. O que pesa é a profundidade: não há nenhuma, e quem joga toda semana vai sentir a repetição. Compre se você junta de quatro a sete pessoas que gostam de conversar. Se o seu grupo só fala de estratégia, saiba que ele também vai escrever 'deserto'.",
+ "tagline": "Treze cartas, uma palavra por pessoa e a descoberta humilhante de que todo mundo escreveu a mesma coisa.",
+ "consulta": "08/11/2026",
+ "fontes": [
+  ["Regras oficiais de Just One (Official Game Rules)", "https://officialgamerules.org/game-rules/just-one/", "regras, componentes, tabela de pontos, variante para três"],
+  ["Spiel des Jahres – Just One", "https://www.spiel-des-jahres.de/en/games/just-one/", "prêmio, crítica do júri, ficha"],
+  ["Brettspielbox – Golden Geek 2018", "https://brettspielbox.de/13th-annual-golden-geek-awards-winners-2018/", "finalistas de jogo de festa"],
+  ["Wikipedia – Just One (board game)", "https://en.wikipedia.org/wiki/Just_One_(board_game)", "autores, arte, ano, conferência de prêmios"],
+  ["Board Game Review – Just One", "https://boardgamereview.co.uk/game-reviews/just-one-party-game-review/", "crítica, repetição, grupos"],
+  ["GeekDad – Just One", "https://geekdad.com/2020/10/tabletop-review-just-one/", "crítica, idades, grupos grandes"],
+  ["ComparaJogos – Só Uma", "https://www.comparajogos.com.br/item/so-uma", "preço no Brasil, editora, nota, idioma, componentes"],
+  ["Ludopedia – Só Uma", "https://ludopedia.com.br/jogo/just-one?v=avaliacoes", "edição nacional (via busca)"],
+  ["Board Game Arena – Just One", "https://en.boardgamearena.com/news?id=634", "versão digital"],
+  ["BoardGameMatcher – Just One", "https://boardgamematcher.com/game/just-one", "posição e peso do BGG replicados"]
+ ],
+ "legenda": "O único jogo em que ter a mesma ideia do amigo faz o time perder. ✍️\n\nSó Uma (Just One) venceu o Spiel des Jahres de 2019.\nCada um escreve uma pista de uma palavra só, e as repetidas são apagadas antes de quem adivinha ver. De 3 a 7 pessoas, uns 20 minutos, todo mundo no mesmo time.\nEdição da Asmodee (Galápagos) em português; em 08/11/2026, a partir de R$ 199,40.\nVeredito: RECOMENDADO. Raso de propósito, e é por isso que funciona.\n\nQual pista você daria para camelo? 👇\nResenha completa no link da bio.\n\n#SoUma #JustOne #JogosDeTabuleiro #BoardGames #JogoCooperativo #JogoDeFesta #SpielDesJahres #Asmodee #EliteBoardgamers #Boardgamer"
+}
