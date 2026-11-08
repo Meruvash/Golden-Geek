@@ -17,37 +17,37 @@ A montagem segue a preparação do manual (p. 2), na mesma ordem, com cada açã
 
 Cada peça de paisagem tem um número de 1 a 48 no verso. Os terrenos são seis: campo de trigo (amarelo), lago (azul), floresta (verde-escuro), pastagem (verde-claro, com ovelhas), pântano (bege) e montanha (preto, com minas). Alguns quadrados têm de 1 a 3 coroas desenhadas; são elas que fazem pontos (p. 3 e 28).
 
-!fig[Todos os quadrados de terreno da caixa, com quantos há de cada um. Campo de trigo: 21 sem coroa e 5 com uma coroa. Lago: 12 e 6. Floresta: 16 e 6. Pastagem: 10 sem coroa, 2 com uma e 2 com duas. Pântano: 6, 2 e 2. Montanha: 1 sem coroa, 1 com uma, 3 com duas e 1 com três. Ilustração: manual oficial Blue Orange (p. 28)](figuras/setup-terrenos.webp)
+!fig[Os quadrados de terreno da caixa e quantos há de cada um, com e sem coroas. A montanha é o terreno mais raro e o que tem mais coroas. Ilustração: manual oficial Blue Orange (p. 28)](figuras/setup-terrenos.webp)
 
 **Os passos** (p. 2)
 
-**1. Monte os castelos (só na primeira partida).** Antes de jogar pela primeira vez, encaixe as partes de papelão dos 4 castelos pequenos (p. 2). Depois disso, eles voltam montados para a caixa.
+**1. Monte os castelos (só na primeira partida).** Antes de jogar pela primeira vez, encaixe as partes de papelão dos 4 castelos pequenos (p. 2).
 
 !fig[As duas partes de cada castelo se encaixam pelas fendas, como mostram as setas. Ilustração: manual oficial Blue Orange (p. 2)](figuras/setup-castelo.webp)
 
-**2. Ponha a caixa na mesa, aberta.** A caixa fica no meio da mesa, com a bandeja de plástico à vista: ela vai guardar o monte de compra e marca o começo das filas (p. 2).
+**2. Ponha a caixa na mesa, aberta.** Ela guarda o monte de compra e marca o começo das filas (p. 2).
 
-!fig[A caixa aberta, com as peças de paisagem de pé na bandeja, viradas para o mesmo lado. Ilustração: manual oficial Blue Orange (p. 2)](figuras/setup-caixa.webp)
+!fig[A caixa aberta, com as peças de paisagem de pé na bandeja. Ilustração: manual oficial Blue Orange (p. 2)](figuras/setup-caixa.webp)
 
 **3. Reis.** Cada jogador escolhe uma cor. Com 2 jogadores, cada um pega os dois reis da sua cor; com 3 ou 4, cada um pega um rei (p. 2).
 
-**4. Peça de área inicial e castelo.** Cada jogador pega uma peça de área inicial e o castelo da sua cor. A peça vai na mesa, à sua frente, com o desenho para cima, e o castelo fica em cima dela (p. 2). Ali começa o seu reino.
+**4. Peça de área inicial e castelo.** Cada jogador pega uma peça de área inicial e o castelo da sua cor. A peça vai na mesa, à sua frente, com o desenho para cima, e o castelo fica em cima dela (p. 2).
 
 **5. Monte de compra.** Embaralhe as peças de paisagem e ponha-as em pé na bandeja da caixa, com o número virado para fora: esse é o monte de compra (p. 2). Com 2 jogadores, use 24 peças tiradas ao acaso; com 3, use 36; com 4, todas as 48 (p. 2). As que sobram ficam de lado, fora da partida (p. 5, parte em francês).
 
-**6. A primeira fila (A no manual).** Tire da frente do monte tantas peças quantos reis estão em jogo: 4 com 2 jogadores (são 2 reis cada), 3 com 3 jogadores, 4 com 4 jogadores. Ponha-as numa coluna ao lado da caixa, com o número para cima, em ordem crescente: o número mais baixo fica sempre mais perto da caixa. Depois, vire cada uma no mesmo lugar, para mostrar os terrenos (p. 2).
+**6. A primeira fila (A no manual).** Tire da frente do monte tantas peças quantos reis estão em jogo (4 com 2 ou 4 jogadores, 3 com 3) e ponha-as numa coluna ao lado da caixa, com o número para cima, em ordem crescente: o mais baixo fica sempre mais perto da caixa. Depois, vire cada uma no mesmo lugar, para mostrar os terrenos (p. 2).
 
-!fig[Passo 6, numa partida de 4 jogadores: as peças 2, 21, 35 e 37 em ordem crescente, a 2 mais perto da caixa, e cada uma virada no mesmo lugar para mostrar os terrenos. Ilustração: manual oficial Blue Orange (p. 2)](figuras/setup-fila.webp)
+!fig[Passo 6, com 4 jogadores: as peças 2, 21, 35 e 37 em ordem crescente, cada uma virada no mesmo lugar. Ilustração: manual oficial Blue Orange (p. 2)](figuras/setup-fila.webp)
 
 **7. Os reis escolhem a primeira peça (B no manual).** Só nesta primeira vez, um jogador junta todos os reis na mão e os tira um por um, ao acaso. Quando sai o seu rei, você o põe numa peça livre da fila, a que quiser. Cada peça recebe um rei só, então o último rei vai para a peça que sobrou (p. 2 e 5). Com 2 jogadores, cada um escolhe duas peças, uma para cada rei (p. 2).
 
 !fig[Passo 7: os quatro reis, tirados ao acaso, vão um para cada peça da fila. Ilustração: manual oficial Blue Orange (p. 2)](figuras/setup-reis.webp)
 
-**8. A segunda fila (C no manual).** Com todas as peças da primeira fila ocupadas, tire do monte o mesmo número de peças e forme uma segunda coluna ao lado da primeira, também em ordem crescente, com o número mais baixo perto da caixa. Vire as peças para mostrar os terrenos (p. 2 e 3). Agora há duas filas: a dos reis e a nova, vazia.
+**8. A segunda fila (C no manual).** Com todos os reis na primeira fila, tire do monte o mesmo número de peças e forme uma segunda coluna ao lado, também em ordem crescente a partir da caixa, e vire as peças (p. 2 e 3). Agora há duas filas: a dos reis e a nova, vazia.
 
-!fig[Passo 8: as peças 12, 44, 31 e 26 saem do monte e vão para a nova fila em ordem crescente (12, 26, 31 e 44), ao lado da fila que já tem os reis. Ilustração: manual oficial Blue Orange (p. 2)](figuras/setup-nova-fila.webp)
+!fig[Passo 8: as peças 12, 44, 31 e 26 saem do monte e entram na nova fila em ordem crescente: 12, 26, 31 e 44. Ilustração: manual oficial Blue Orange (p. 2)](figuras/setup-nova-fila.webp)
 
-!fig[O mesmo momento na edição nova: à esquerda, um reino já começado; à direita, a fila com os reis e, ao lado, a nova fila ainda com os números para cima (2, 14, 15 e 24), antes de ser virada. Imagem: Asmodee UK · nova edição (2025), mesmas regras](fotos/componentes-1.webp)
+!fig[A mesma situação na edição nova: a fila com os reis e, ao lado, a nova fila ainda com os números para cima, antes de ser virada; à esquerda, um reino já começado. Imagem: Asmodee UK · nova edição (2025), mesmas regras](fotos/componentes-1.webp)
 
 **O que muda com o número de jogadores** (p. 2 e 3; contas do guia nas três últimas colunas)
 
@@ -57,13 +57,13 @@ Cada peça de paisagem tem um número de 1 a 48 no verso. Os terrenos são seis:
 | 3 | 1 | 36 | 3 | 12 | 12 |
 | 4 | 1 | 48 | 4 | 12 | nenhuma |
 
-Em qualquer caso, cada jogador recebe 12 peças de paisagem na partida: 24 quadrados, mais a peça de área inicial, enchem a grade de 5 por 5 (p. 3).
+Em qualquer caso, cada jogador recebe 12 peças: 24 quadrados que, com a peça de área inicial, enchem a grade de 5 por 5 (p. 3).
 
 **O que volta para a caixa.** As peças de paisagem que ficaram fora da partida (p. 2 e 5) e, pelo que o guia entende, os reis, castelos e peças de área inicial das cores que ninguém escolheu.
 
-**Quem começa.** Joga primeiro quem tem o rei na peça da primeira fila mais perto da caixa, a de número mais baixo (p. 3). Na mesa do exemplo acima, é o dono do rei que está na peça 2.
+**Quem começa.** Joga primeiro quem tem o rei na peça da primeira fila mais perto da caixa, a de número mais baixo (p. 3).
 
-**Antes de começar, confira:** cada jogador com a peça de área inicial e o castelo à sua frente; os reis certos (dois por jogador com 2 jogadores, um com 3 ou 4); o monte de compra com 24, 36 ou 48 peças, conforme o número de jogadores; a primeira fila em ordem crescente, a partir da caixa, com um rei em cada peça; a segunda fila ao lado, em ordem crescente, com os terrenos à mostra e sem reis.
+**Antes de começar, confira:** castelo sobre a peça de área inicial diante de cada um; os reis certos; o monte com 24, 36 ou 48 peças; a primeira fila em ordem crescente a partir da caixa, com um rei em cada peça; a segunda fila ao lado, virada e sem reis.
 
 ?? Partida de 3 jogadores. Quantas peças de paisagem vão para o monte de compra, e quantas peças tem cada fila?
 - ( ) 48 no monte, 4 em cada fila
@@ -96,20 +96,20 @@ Quem tem o rei mais perto da caixa joga primeiro e faz duas coisas, nesta ordem 
 1. **Encaixe a peça do seu rei no seu reino.** Ela precisa encostar na peça de área inicial (que aceita qualquer terreno) ou, em outra peça de paisagem, num quadrado do mesmo terreno, de lado ou em cima e embaixo, nunca só pela ponta.
 2. **Escolha uma peça da nova fila** e ponha o seu rei nela.
 
-Depois joga o rei da segunda peça da fila, e assim por diante. Quando todos jogaram, a fila velha está vazia, a nova tem todos os reis, e uma nova fila sai do monte (p. 3). Com 2 jogadores, você faz as duas ações duas vezes, uma para cada rei, quando chega a vez de cada um (p. 3).
+Depois joga o rei da segunda peça, e assim por diante. Quando todos jogaram, uma nova fila sai do monte (p. 3). Com 2 jogadores, cada rei joga na vez da sua peça (p. 3).
 
 !fig[Um turno: 1, o jogador leva a peça em que estava o seu rei (dois quadrados de campo de trigo) e a encaixa ao lado do castelo; 2, põe o rei numa peça da nova fila, aqui a última. Ilustração: manual oficial Blue Orange (p. 3)](figuras/turno.webp)
 
-> [!resolvido] **Exemplo resolvido.** O seu rei está na peça com dois quadrados de campo de trigo, a primeira da fila. Você joga primeiro. Põe a peça ao lado do seu castelo: a peça de área inicial aceita qualquer terreno, então a jogada é válida. Depois olha a nova fila e põe o rei na peça de lago com uma coroa, para começar um lago com coroa perto do castelo (p. 3).
+> [!resolvido] **Exemplo resolvido.** O seu rei está na primeira peça da fila, com dois quadrados de campo de trigo. Você joga primeiro e põe a peça ao lado do castelo, que aceita qualquer terreno. Depois põe o rei na peça de lago com uma coroa da nova fila (p. 3).
 
 > [!complete] **Complete.** O seu reino tem só o castelo e uma peça de floresta e campo de trigo, encostada nele. Você recebe uma peça de lago e pastagem.
 >
 > ?? Onde ela pode entrar?
-> - ( ) Encostada só na floresta, já que lago e floresta são terrenos de água e mato
+> - ( ) Encostada na floresta
 > - (x) Encostada em qualquer lado livre do castelo
 > - ( ) Em lugar nenhum: precisa ser descartada
 > - ( ) Encostada pela ponta no canto da floresta
-> = A peça de área inicial vale como curinga: qualquer terreno pode encostar nela (p. 3). Lago e pastagem não combinam com floresta nem com campo de trigo, e encostar só pela ponta não conta.
+> = A peça de área inicial aceita qualquer terreno (p. 3). Lago e pastagem não combinam com floresta nem com trigo, e a ponta não conta.
 
 > [!suavez] **Sua vez.**
 >
@@ -135,9 +135,9 @@ A partida termina quando o monte acaba e as últimas peças são encaixadas, dep
 
 ## 0. Antes de tudo: o que é este jogo
 
-Kingdomino é um jogo de Bruno Cathala para 2 a 4 jogadores, a partir de 8 anos, com cerca de 15 minutos de partida, segundo o manual (p. 2); a página da PaperGames indica a partir de 7 anos. Cada jogador é um rei que expande o seu território com peças de paisagem, como num dominó, e tenta montar um reino de 5 por 5 quadrados com as áreas de terreno mais valiosas (p. 2).
+Kingdomino é um jogo de Bruno Cathala para 2 a 4 jogadores, com cerca de 15 minutos de partida; o manual indica a partir de 8 anos (p. 2), e a página da PaperGames, a partir de 7. Cada jogador é um rei que expande as suas terras encaixando peças de paisagem, como num dominó, até montar um reino de 5 por 5 quadrados (p. 2).
 
-São só duas decisões por vez: onde encaixar a peça que você já tem e qual peça escolher na nova fila. A segunda é a mais interessante, porque a escolha também decide a sua posição na próxima rodada: quem fica com a peça de número mais baixo joga antes e escolhe antes.
+A cada vez, você decide duas coisas: onde encaixar a peça que já tem e qual peça escolher na nova fila. A segunda escolha também define quando você joga na rodada seguinte.
 
 ## 1. Como este guia ensina
 
@@ -145,179 +145,147 @@ Três etapas, na ordem da partida: escolher e encaixar peças; respeitar a grade
 
 ## 2. Etapa 1: escolher e encaixar peças
 
-> [!entender] **Para entender.** A fila faz duas coisas ao mesmo tempo. Mostra que peças estão disponíveis e marca a ordem da próxima rodada: a sua posição na nova fila é a sua posição na vez seguinte (p. 3). Por isso, escolher uma peça é também escolher quando você vai jogar.
+> [!entender] **Para entender.** A fila mostra que peças estão disponíveis e marca a ordem da próxima rodada: a posição do seu rei na nova fila é a sua posição na vez seguinte (p. 3). Escolher uma peça é também escolher quando você vai jogar.
 
 > [!passos] **Passo a passo: uma rodada** (p. 3)
 >
 > 1. Joga quem tem o rei na peça mais perto da caixa, a de número mais baixo; depois, a segunda peça, e assim até a última.
-> 2. Na sua vez, primeiro tire da fila a peça em que está o seu rei e encaixe-a no seu reino.
-> 3. Depois, ponha o seu rei numa peça livre da nova fila. Cada peça recebe um rei só.
-> 4. Quando todos jogaram, a fila velha ficou vazia: tire do monte o mesmo número de peças e forme outra fila nova, em ordem crescente a partir da caixa, com os terrenos à mostra.
+> 2. Na sua vez, primeiro encaixe no seu reino a peça em que está o seu rei.
+> 3. Depois, ponha o rei numa peça livre da nova fila. Cada peça recebe um rei só.
+> 4. Quando todos jogaram, tire do monte o mesmo número de peças e forme outra fila nova, em ordem crescente a partir da caixa, com os terrenos à mostra.
 > 5. Com 2 jogadores, cada um faz os passos 2 e 3 uma vez para cada rei, na vez de cada rei.
 
 > [!passos] **Passo a passo: encaixar uma peça** (p. 3)
 >
-> 1. A peça pode ficar deitada ou em pé, virada como você quiser, com os terrenos para cima.
-> 2. Ela precisa encostar na peça de área inicial, que aceita qualquer terreno, ou encostar em outra peça de paisagem com pelo menos um quadrado do mesmo terreno.
+> 1. A peça pode ficar deitada ou em pé, com os terrenos para cima.
+> 2. Ela precisa encostar na peça de área inicial, que aceita qualquer terreno, ou ter pelo menos um quadrado encostado num quadrado do mesmo terreno.
 > 3. O encosto vale de lado ou em cima e embaixo, nunca só pela ponta, na diagonal.
-> 4. Os outros lados da peça podem encostar em terrenos diferentes, desde que haja um encosto certo.
 
-!fig[Três tentativas com a mesma peça de campo de trigo e lago. À esquerda, o trigo encosta só na pastagem: não vale. No meio, o trigo encosta no trigo do moinho: vale. À direita, outra peça entra ao lado; o trigo encosta no trigo à esquerda, e por isso vale, mesmo encostando na pastagem em cima. Ilustração: manual oficial Blue Orange (p. 3)](figuras/conexao.webp)
+!fig[A mesma peça de campo de trigo e lago em três lugares. À esquerda, o trigo encosta só na pastagem: não vale. No meio, encosta no trigo do moinho: vale. À direita, outra peça encosta trigo com trigo e vale, mesmo tocando a pastagem em cima. Ilustração: manual oficial Blue Orange (p. 3)](figuras/conexao.webp)
 
-> [!edicao] **Um encosto certo basta.** O texto do manual pede que a peça combine com "pelo menos 1" dos terrenos vizinhos (p. 3) e não fala dos outros lados. A terceira figura da página mostra uma peça válida que também encosta num terreno diferente, e o guia segue essa leitura.
+> [!edicao] **Um encosto certo basta.** O texto pede que a peça combine com "pelo menos 1" terreno vizinho (p. 3) e não fala dos outros lados. A terceira figura da página mostra uma peça válida que também toca um terreno diferente; o guia segue essa leitura.
 
-> [!mais] **A primeira rodada é diferente.** Só na primeira vez, os reis são sorteados e escolhem as peças da primeira fila, e ninguém encaixa nada antes: é o passo 7 da montagem (p. 2).
+> [!edicao] **Quem põe o rei sorteado.** No sorteio da primeira rodada (passo 7 da montagem), o inglês diz que o rei que você põe "pode não ser" o da sua cor (p. 2). O francês, língua da editora, diz que, quando sai o seu rei, você mesmo o coloca (p. 5). O guia segue o francês.
 
-> [!edicao] **Quem põe o rei sorteado.** O texto em inglês diz que, no sorteio da primeira rodada, o rei que você põe na fila "pode não ser" o da sua cor (p. 2), e o português de Portugal repete a ideia (p. 17). O francês, a língua da editora, é mais claro: quando sai o seu rei, você mesmo o coloca (p. 5). O guia segue o francês.
+> [!mais] **Peça promocional "As Últimas Coroas".** As primeiras caixas da PaperGames trouxeram de brinde uma peça que substitui a de número 48, com coroas nos dois terrenos; ela segue as regras normais (página da PaperGames).
 
-> [!mais] **Peça promocional "As Últimas Coroas".** As primeiras caixas da PaperGames trouxeram de brinde uma peça especial que substitui a peça número 48, com coroas nos dois terrenos; ela segue todas as regras normais (página da PaperGames).
+> [!dica] **Sugestão: olhe o número antes do desenho.** Uma peça de número baixo faz você escolher cedo na rodada seguinte. Às vezes isso vale mais do que levar agora a peça mais bonita. É estratégia, não regra.
 
-> [!dica] **Sugestão: olhe o número antes do desenho.** Uma peça de número baixo na nova fila faz você jogar cedo na rodada seguinte e escolher antes dos outros. Às vezes vale mais escolher primeiro na próxima vez do que levar agora a peça mais bonita. É estratégia, não regra.
+> [!resolvido] **Exemplo resolvido.** Quatro jogadores. Os reis estão nas peças 5 (Ana), 18 (Bruno), 27 (você) e 40 (Carla); a nova fila tem 3, 11, 30 e 46. Ana encaixa a 5 e põe o rei na 30. Bruno encaixa a 18 e escolhe a 3. Você encaixa a 27 e escolhe a 11. Carla encaixa a 40 e fica com a 46, a que sobrou. Próxima rodada: Bruno, você, Ana e Carla (p. 3).
 
-> [!resolvido] **Exemplo resolvido.** Quatro jogadores. Na fila, os reis estão nas peças 5 (Ana), 18 (Bruno), 27 (você) e 40 (Carla). A nova fila tem as peças 3, 11, 30 e 46. Ana joga primeiro, encaixa a peça 5 e põe o rei na 30. Bruno encaixa a 18 e põe o rei na 3. Você encaixa a 27 e fica com a 11 ou a 46; escolhe a 11. Carla encaixa a 40 e leva a 46, a única que sobrou. Na rodada seguinte, a ordem será Bruno (3), você (11), Ana (30) e Carla (46) (p. 3).
-
-> [!complete] **Complete.** O seu reino tem o castelo e, à direita dele, uma peça deitada de pântano e floresta, com o pântano encostado no castelo. Você recebe uma peça de floresta e lago.
+> [!complete] **Complete.** À direita do seu castelo há uma peça deitada de pântano e floresta, com o pântano encostado no castelo. Chega uma peça de floresta e lago.
 >
 > ?? Qual destes lugares é válido?
 > - ( ) Com o lago encostado no pântano
-> - (x) Com a floresta encostada na floresta, em cima, embaixo ou à direita dela
+> - (x) Com a floresta encostada na floresta, de lado
 > - ( ) Com a floresta tocando o canto da floresta, na diagonal
-> = Fora do castelo, a peça precisa encostar num quadrado do mesmo terreno, de lado ou em cima e embaixo; na diagonal não vale (p. 3).
+> = Fora do castelo, a peça precisa encostar num quadrado do mesmo terreno, de lado; na diagonal não vale (p. 3).
 
 > [!suavez] **Sua vez.**
 >
-> ?? Partida de 2 jogadores. Você tem os reis nas peças 1 e 4 da fila, e o adversário nas 2 e 3. Como a rodada anda?
-> - ( ) Você joga com os dois reis, depois o adversário com os dois
-> - (x) Você (peça 1), o adversário (2), o adversário (3), você (4)
-> - ( ) O adversário começa, porque você jogou primeiro na rodada anterior
-> = Cada rei joga na vez da sua peça, a partir da mais perto da caixa; com 2 jogadores, cada um faz as duas ações uma vez para cada rei (p. 3).
->
-> ?? Você encaixou a sua peça. Pode deixar o rei fora da nova fila nesta rodada?
-> - ( ) Pode, se nenhuma peça servir
-> - (x) Não: depois de encaixar, você escolhe uma peça da nova fila e põe o rei nela
-> - ( ) Pode, e a peça que sobrar fica para quem quiser
-> = A ação 2 de cada vez é escolher uma peça nova pondo o rei nela (p. 3). Cada fila tem tantas peças quantos reis, então todos os reis ganham uma peça.
+> ?? Partida de 2 jogadores. Os seus reis estão nas peças 1 e 4 da fila; os do adversário, na 2 e na 3. Como a rodada anda?
+> - ( ) Você joga com os dois reis, depois o adversário
+> - (x) Você (peça 1), o adversário (2 e 3), você (4)
+> - ( ) O adversário começa, porque você começou na rodada anterior
+> = Cada rei joga na vez da sua peça, a partir da mais perto da caixa (p. 3).
 
 ## 3. Etapa 2: a grade de 5 por 5 e o fim da partida
 
-> [!entender] **Para entender.** O reino inteiro, castelo incluído, precisa caber num quadrado de 5 por 5 (p. 3). O castelo não precisa estar no meio, mas cada peça que você encaixa empurra a borda do reino para algum lado, e o espaço do outro lado vai sumindo. Peça que não cabe é peça perdida, sem pontos.
+> [!entender] **Para entender.** O reino inteiro, castelo incluído, precisa caber num quadrado de 5 por 5 (p. 3). O castelo não precisa ficar no meio, mas cada peça na beira empurra o reino para um lado, e o espaço do outro lado some.
 
 > [!passos] **Passo a passo: o limite e o descarte** (p. 3)
 >
-> 1. Antes de encaixar, confira se o reino continua cabendo em 5 por 5: no máximo 5 quadrados de largura e 5 de altura, contando o castelo.
-> 2. Se a peça não pode entrar em lugar nenhum respeitando as regras de encaixe e o limite, ela é descartada.
-> 3. Peça descartada não dá pontos e não volta para a partida.
-> 4. Mesmo depois de um descarte, você escolhe uma peça da nova fila, como sempre.
+> 1. Antes de encaixar, confira se o reino continua cabendo em 5 por 5, contando o castelo.
+> 2. Se a peça não pode entrar em lugar nenhum dentro das regras de encaixe e do limite, ela é descartada.
+> 3. Peça descartada não dá pontos.
 
-> [!edicao] **Descartar de propósito.** O manual manda descartar a peça quando ela não pode ser encaixada (p. 3) e não prevê descartar uma peça que caberia. O guia lê que, se a peça cabe em algum lugar válido, ela entra.
-
-> [!edicao] **Escolher depois de descartar.** O manual não fala do descarte junto com a escolha da nova peça. O guia lê que as duas ações seguem separadas: o descarte só muda o que acontece com a peça velha (p. 3).
+> [!edicao] **Descartar de propósito.** O manual só manda descartar a peça que não pode ser encaixada (p. 3). O guia lê que, se ela cabe em algum lugar válido, ela entra; e que, depois de descartar, você escolhe a peça nova normalmente.
 
 > [!passos] **Passo a passo: a última rodada** (p. 3 e 6)
 >
 > 1. Quando o monte acaba, a última fila é formada como de costume.
-> 2. Na rodada seguinte, cada jogador só encaixa a peça do seu rei; não há nova fila e ninguém escolhe peça.
-> 3. Com isso, a partida acaba: com 3 ou 4 jogadores, depois de 12 rodadas; com 2, depois de 6.
-> 4. Cada um deve ter à frente um reino de 5 por 5, com buracos se descartou alguma peça.
+> 2. Na rodada seguinte, cada jogador só encaixa a peça do seu rei; ninguém escolhe peça.
+> 3. A partida acaba: 12 rodadas com 3 ou 4 jogadores, 6 com 2.
 
-> [!edicao] **Só encaixar, na última vez.** O texto em inglês diz só que há "uma última rodada" (p. 3). O francês diz que nela os jogadores fazem apenas a primeira ação, a de encaixar (p. 6). Como não sobra fila para escolher, as duas leituras dão no mesmo.
+> [!edicao] **Só encaixar, na última vez.** O inglês diz só que há "uma última rodada" (p. 3); o francês diz que nela se faz apenas a ação de encaixar (p. 6). Sem fila nova, as duas leituras dão no mesmo.
 
-> [!dica] **Sugestão: decida cedo onde fica o castelo.** Se o reino já tem 5 quadrados de largura, só sobra crescer para cima e para baixo. Vale olhar a grade inteira antes de pôr cada peça na beira. É estratégia, não regra.
+> [!resolvido] **Exemplo resolvido.** O seu castelo está na ponta esquerda, e o reino já ocupa 5 colunas. Você recebe uma peça de lago e pastagem. Deitada, à direita do lago da quinta coluna, ela abriria uma sexta coluna: não pode. Em pé, embaixo desse lago, encostando lago com lago, ela cabe, se ainda houver linhas livres (p. 3).
 
-> [!resolvido] **Exemplo resolvido.** O seu castelo está na ponta esquerda do reino, e o reino já ocupa 5 colunas: do castelo até a quinta, à direita. Você recebe uma peça de lago e pastagem. Deitada, encostando o lago no lago da quinta coluna pela direita, ela abriria uma sexta coluna: não pode. Em pé, embaixo do lago da quinta coluna, ela fica dentro das 5 colunas e encosta lago com lago: pode, se ainda houver linhas livres embaixo (p. 3).
-
-> [!complete] **Complete.** Falta uma rodada. O seu reino já tem 5 quadrados de largura e 5 de altura, e os únicos espaços livres são dois quadrados soltos, longe um do outro. Chega a sua última peça de paisagem.
+> [!complete] **Complete.** Falta uma rodada. O seu reino já tem 5 quadrados de largura e 5 de altura, e os únicos espaços livres são dois quadrados soltos, longe um do outro. Chega a sua última peça.
 >
 > ?? O que acontece com ela?
-> - ( ) Você a encaixa por fora, numa sexta linha
-> - ( ) Você a guarda para a próxima rodada
-> - (x) É descartada, porque não cabe no 5 por 5: ocupa dois quadrados e só há um livre
-> - ( ) Você a troca com a peça de outro jogador
-> = Todas as peças precisam caber na grade de 5 por 5; a peça ocupa dois quadrados vizinhos, e não há dois livres juntos. A que não cabe é descartada e não dá pontos (p. 3).
+> - ( ) Você a encaixa numa sexta linha
+> - (x) É descartada: ocupa dois quadrados vizinhos e não há dois livres juntos
+> - ( ) Você a guarda para a próxima partida
+> = Tudo precisa caber em 5 por 5; a peça que não cabe é descartada e não dá pontos (p. 3).
 
 > [!suavez] **Sua vez.**
 >
-> ?? Partida de 4 jogadores. Quantas peças cada jogador encaixa ou descarta até o fim?
+> ?? Partida de 4 jogadores. Quantas peças cada um recebe até o fim?
 > - ( ) 6
-> - (x) 12
 > - ( ) 24
-> - ( ) 13
-> = São 48 peças para 4 jogadores, em 12 rodadas de 4 peças: 12 para cada um, os 24 quadrados que completam o 5 por 5 com o castelo (p. 2 e 3).
->
-> ?? Na última rodada, depois de encaixar a peça, o que você faz?
-> - ( ) Escolhe uma peça da nova fila, como sempre
-> - (x) Nada: não há nova fila, e a partida termina
-> - ( ) Compra uma peça do monte
-> = Na última rodada, os jogadores só fazem a ação de encaixar (p. 3 e 6).
+> - (x) 12
+> = 48 peças para 4 jogadores, em 12 rodadas de 4: 12 para cada um, os 24 quadrados que completam o 5 por 5 com o castelo (p. 2 e 3).
 
 ## 4. Etapa 3: contar os pontos
 
-> [!entender] **Para entender.** Um território é um grupo de quadrados do mesmo terreno ligados de lado ou em cima e embaixo (p. 3). O valor dele multiplica duas coisas: o tamanho e as coroas. Por isso, um território grande sem coroa vale zero, e uma coroa sozinha num quadrado isolado vale pouco (p. 3 e 4).
+> [!entender] **Para entender.** Um território é um grupo de quadrados do mesmo terreno ligados de lado (p. 3). O valor dele multiplica tamanho por coroas: um território grande sem coroa vale zero (p. 4).
 
 > [!passos] **Passo a passo: a pontuação** (p. 3 e 4)
 >
 > 1. Separe o reino em territórios: cada grupo de quadrados do mesmo terreno ligados de lado.
-> 2. Em cada território, conte os quadrados e conte as coroas.
-> 3. Multiplique: quadrados vezes coroas. Território sem coroa vale 0.
-> 4. Some os pontos de todos os territórios. A peça de área inicial, com o castelo, não é terreno e não pontua.
-> 5. Quem somar mais vence.
+> 2. Em cada território, conte os quadrados e as coroas, e multiplique. Sem coroa, 0.
+> 3. Some os territórios. Quem somar mais vence.
 
-> [!mais] **Dois territórios do mesmo terreno.** Se você tem duas florestas que não se encostam, são dois territórios, e cada um é contado à parte (p. 6, parte em francês).
+> [!mais] **Dois territórios do mesmo terreno.** Duas florestas que não se encostam são dois territórios, contados à parte (p. 6, parte em francês).
 
-> [!mais] **Desempate.** Vence quem tiver o maior território, o de mais quadrados, tenha ele coroas ou não. Se ainda empatar, vence quem tiver mais coroas no reino. Se o empate continuar, a vitória é dividida (p. 4 e 7).
+> [!mais] **Desempate.** Vence quem tiver o maior território, o de mais quadrados, com ou sem coroas. Se ainda empatar, vence quem tiver mais coroas. Se continuar, a vitória é dividida (p. 4 e 7).
 
-> [!edicao] **"Maior território" é um território só.** O inglês diz "the biggest territory (with the highest number of squares)" (p. 4), o que poderia soar como o reino inteiro. O francês fala do "domínio mais extenso", com ou sem coroas (p. 7), e o alemão, do maior território isolado (p. 10). O guia segue essa leitura: compara-se o maior território de cada um.
+> [!edicao] **"Maior território" é um território só.** O inglês fala do "biggest territory" (p. 4); o francês, do domínio mais extenso, com ou sem coroas (p. 7); o alemão, do maior território isolado (p. 10). Compara-se o maior território de cada um, não o reino inteiro.
 
-> [!edicao] **O castelo não pontua.** O manual não diz isso com essas palavras: ele manda contar os quadrados de terreno ligados (p. 3), e a peça de área inicial não é terreno. O exemplo de pontuação do manual chega a 23 sem contar o castelo (p. 4).
+> [!edicao] **O castelo não pontua.** O manual manda contar quadrados de terreno (p. 3), e a peça de área inicial não é terreno; o exemplo do manual soma 23 sem ela (p. 4).
 
-> [!resolvido] **Exemplo resolvido.** O reino do manual (p. 4). Campo de trigo: 3 quadrados e 1 coroa, 3 pontos. Pastagem: 4 quadrados e 2 coroas, 8 pontos. Pântano: 2 quadrados sem coroa, 0. Floresta: 1 quadrado sem coroa, 0. Montanha: 1 quadrado com 2 coroas, 2 pontos. Lago: 5 quadrados e 2 coroas, 10 pontos. Total: 3 + 8 + 0 + 0 + 2 + 10 = 23.
+> [!resolvido] **Exemplo resolvido.** O reino do manual (p. 4). Campo de trigo: 3 quadrados e 1 coroa, 3 pontos. Pastagem: 4 e 2, 8. Pântano: 2 sem coroa, 0. Floresta: 1 sem coroa, 0. Montanha: 1 e 2, 2. Lago: 5 e 2, 10. Total: 23. No texto, o manual dá mais dois casos: floresta de 7 quadrados com 3 coroas, 21; lago de 9 sem coroa, 0 (p. 4).
 
-!fig[O reino do exemplo de pontuação do manual, com cada território contornado e a conta ao lado: 1 coroa x 3 quadrados de trigo = 3; 2 x 4 de pastagem = 8; 0 x 2 de pântano = 0; 0 x 1 de floresta = 0; 2 x 1 de montanha = 2; 2 x 5 de lago = 10; total 23. Ilustração: manual oficial Blue Orange (p. 4)](figuras/pontuacao.webp)
+!fig[O reino do exemplo, com cada território contornado e a conta ao lado (coroas x quadrados): 1 x 3 = 3; 2 x 4 = 8; 0 x 2 = 0; 0 x 1 = 0; 2 x 1 = 2; 2 x 5 = 10; total 23. Ilustração: manual oficial Blue Orange (p. 4)](figuras/pontuacao.webp)
 
-> [!resolvido] **Outro exemplo, do texto do manual.** Uma floresta de 7 quadrados com 3 coroas vale 7 vezes 3, ou seja, 21. Um lago de 9 quadrados sem nenhuma coroa vale 0 (p. 4).
-
-> [!complete] **Complete.** O seu reino tem um campo de trigo de 5 quadrados com 1 coroa, um lago de 3 quadrados com 2 coroas e uma floresta de 4 quadrados sem coroa.
+> [!complete] **Complete.** Campo de trigo de 5 quadrados com 1 coroa, lago de 3 com 2 coroas, floresta de 4 sem coroa.
 >
-> ?? Quantos pontos você faz?
+> ?? Quantos pontos?
 > - ( ) 12
 > - (x) 11
 > - ( ) 15
-> - ( ) 6
-> = 5 x 1 = 5; 3 x 2 = 6; 4 x 0 = 0. Total, 11 (p. 3 e 4). Somar quadrados e coroas, em vez de multiplicar, daria 15.
+> = 5 x 1 = 5; 3 x 2 = 6; 4 x 0 = 0. Total, 11 (p. 3 e 4). Somar quadrados e coroas daria 15.
 
 > [!suavez] **Sua vez.**
 >
-> ?? Pastagem de 8 quadrados com 1 coroa, pântano de 2 quadrados com 2 coroas, campo de trigo de 6 quadrados sem coroa e montanha de 3 quadrados com 3 coroas. Total?
+> ?? Pastagem de 8 quadrados com 1 coroa, pântano de 2 com 2, campo de trigo de 6 sem coroa, montanha de 3 com 3. Total?
 > - ( ) 27
-> - (x) 21
 > - ( ) 15
-> = 8 x 1 = 8; 2 x 2 = 4; 6 x 0 = 0; 3 x 3 = 9. Total, 21 (p. 3 e 4).
+> - (x) 21
+> = 8 + 4 + 0 + 9 = 21 (p. 3 e 4).
 >
-> ?? Ana e Bruno empatam em 40 pontos. O maior território de Ana tem 8 quadrados; o de Bruno, 7. Bruno tem mais coroas. Quem vence?
+> ?? Ana e Bruno empatam em 40. O maior território de Ana tem 8 quadrados; o de Bruno, 7, mas ele tem mais coroas. Quem vence?
 > - (x) Ana
 > - ( ) Bruno
-> - ( ) Os dois dividem a vitória
-> = O primeiro critério de desempate é o maior território; as coroas só contam se ele também empatar (p. 4).
+> - ( ) Os dois
+> = O primeiro desempate é o maior território; as coroas só contam se ele também empatar (p. 4).
 
-**Regras adicionais.** O manual traz quatro regras opcionais, que podem ser combinadas como a mesa preferir (p. 4). Os nomes são os da parte em português de Portugal (p. 19).
+**Regras adicionais.** O manual traz quatro regras opcionais, que se combinam como a mesa quiser (p. 4); os nomes são os da parte em português de Portugal (p. 19).
 
-> [!mais] **Dinastia.** Joguem 3 partidas seguidas; vence quem somar mais pontos nas três (p. 4).
+> [!mais] **Dinastia.** Três partidas seguidas; vence quem somar mais nas três (p. 4).
 
-> [!mais] **O Reino Central.** Ganhe 10 pontos a mais se o seu castelo estiver no centro do reino (p. 4).
+> [!mais] **O Reino Central.** 10 pontos a mais se o castelo estiver no centro do reino (p. 4).
 
-> [!mais] **Harmonia.** Ganhe 5 pontos a mais se o seu reino estiver completo, sem nenhuma peça descartada (p. 4).
+> [!mais] **Harmonia.** 5 pontos a mais se o reino estiver completo, sem peça descartada (p. 4).
 
-> [!mais] **O Poderoso Duelo.** Só com 2 jogadores, depois de uma ou duas partidas de treino: usem todas as 48 peças e construam reinos de 7 por 7 (p. 4).
-
-> [!edicao] **Centro do reino.** O manual não define "centro" além disso. Num reino completo de 5 por 5, o guia lê que é o quadrado do meio, com dois quadrados de cada lado.
+> [!mais] **O Poderoso Duelo.** Só com 2 jogadores, depois de uma ou duas partidas: usem as 48 peças e construam reinos de 7 por 7 (p. 4).
 
 ## 5. Situações especiais
 
-> [!edicao] **Reino incompleto.** Quem descartou peças termina com buracos no 5 por 5; o manual só diz que esses reinos podem ficar incompletos (p. 3). Os quadrados que faltam não valem nada, e a regra opcional Harmonia não dá os 5 pontos a esse jogador (p. 4).
+> [!edicao] **Reino incompleto.** Quem descartou peças termina com buracos; o manual só diz que esses reinos podem ficar incompletos (p. 3). O buraco não vale nada, e a Harmonia não dá os 5 pontos (p. 4).
 
-> [!edicao] **Nomes dos terrenos.** O manual não dá nome a cada terreno nas peças, e a lista da introdução varia de língua para língua (p. 2, 5 e 17). Este guia usa campo de trigo, lago, floresta, pastagem, pântano e montanha, pela cor e pelo desenho. Na mesa, o que vale é a cor: dois quadrados combinam quando têm o mesmo terreno desenhado.
-
-> [!edicao] **Edição brasileira atual.** A caixa da PaperGames tem arte nova, de Pauline Detraz, e a página da editora lista os mesmos componentes do manual de 2016: 48 peças de paisagem, 4 peças de área inicial, 4 castelos e 8 reis. O guia não pôde ler o manual brasileiro; se ele trouxer alguma diferença, vale o da sua caixa.
+> [!edicao] **Nomes dos terrenos.** O manual não dá nome a cada terreno, e a lista da introdução muda de língua para língua (p. 2, 5 e 17). Os nomes deste guia vêm da cor e do desenho; na mesa, o que vale é o desenho igual.
 
 ## 6. Avaliação final
 
