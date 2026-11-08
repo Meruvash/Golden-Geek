@@ -10,10 +10,10 @@ A montagem segue a página de preparação do manual (p. 4), na mesma ordem, e a
 
 | Componente | Quantidade |
 |---|---|
-| Peças de habitat | 85, das quais 25 são peças-chave |
+| Peças de habitat | 85, das quais 25 são peças-chave (peças que dão ficha de pinha; Etapa 1) |
 | Peças iniciais de habitat | 5 |
 | Fichas de animais | 100: 20 de urso, 20 de alce, 20 de salmão, 20 de falcão e 20 de raposa |
-| Cartas de pontuação de animais | 21: 4 de urso, 4 de alce, 4 de salmão, 4 de falcão, 4 de raposa, 1 da variante família e 1 da variante intermediária |
+| Cartas de pontuação de animais | 21: 4 de urso, 4 de alce, 4 de salmão, 4 de falcão, 4 de raposa e 1 carta das variantes família e intermediária |
 | Fichas de pinha | 25 |
 | Saco de pano | 1 (para as fichas de animais) |
 | Bloco de pontuação | 1 |
@@ -24,15 +24,15 @@ A montagem segue a página de preparação do manual (p. 4), na mesma ordem, e a
 
 !fig[O saco de pano, que guarda as fichas de animais. Ilustração: manual oficial AEG/Flatout Games (p. 5)](figuras/setup-saco.webp)
 
-2. **Separe as peças de habitat pelo número de jogadores, sem olhar:** 43 para 2 jogadores, 63 para 3, 83 para 4 (20 por jogador, mais 3). Embaralhe e faça pilhas viradas para baixo, quantas quiser, ao alcance de todos. As que sobraram voltam para a caixa sem ninguém ver (p. 4).
+2. **Separe as peças de habitat pelo número de jogadores, sem olhar:** 43 para 2 jogadores, 63 para 3, 83 para 4 (20 por jogador, mais 3; no solo, 43, como para 2). Embaralhe e faça pilhas viradas para baixo, quantas quiser, ao alcance de todos. As que sobraram voltam para a caixa sem ninguém ver (p. 4).
 
 !fig[As pilhas de peças de habitat, viradas para baixo, com o verso bege. Ilustração: manual oficial AEG/Flatout Games (p. 5)](figuras/setup-pilhas.webp)
 
-3. **Escolha 1 carta de pontuação para cada um dos 5 animais** e ponha as 5 no centro, à vista de todos. O resto das cartas volta para a caixa. O manual manda sortear, mas recomenda, na primeira partida, as cartas com a letra **A** no canto de baixo à direita (p. 4). Este guia ensina as cartas A; a troca por outras está na etapa 2.
+3. **Escolha 1 carta de pontuação para cada um dos 5 animais** e ponha as 5 no centro, à vista de todos. O resto das cartas volta para a caixa. O manual manda sortear, mas recomenda, na primeira partida, as cartas com a letra **A** no canto de baixo à direita (p. 4). Este guia ensina as cartas A; a troca por outras está na Etapa 2.
 
 !fig[As 5 cartas de pontuação da primeira partida, uma por animal: urso, alce, salmão, falcão e raposa. Ilustração: manual oficial AEG/Flatout Games (p. 5)](figuras/setup-cartas.webp)
 
-4. **Dê a cada jogador 1 peça inicial de habitat, sorteada,** virada para cima na frente dele. É uma peça grande, com 3 espaços. As que sobraram voltam para a caixa (p. 4).
+4. **Dê a cada jogador 1 peça inicial de habitat, sorteada,** virada para cima na frente dele. Ela é o começo do território do jogador: o conjunto de peças e fichas na frente dele (p. 5). É uma peça grande, com 3 hexágonos, cada um com o seu terreno e os seus animais desenhados, como nas outras peças. As que sobraram voltam para a caixa (p. 4 e 5).
 
 !fig[A peça inicial de um jogador: três hexágonos de habitats diferentes, unidos numa peça só. Ilustração: manual oficial AEG/Flatout Games (p. 5)](figuras/setup-iniciais.webp)
 
@@ -47,7 +47,7 @@ A montagem segue a página de preparação do manual (p. 4), na mesma ordem, e a
 
 8. **Escolha quem começa:** quem viu por último um dos animais do jogo, ou por sorteio. A vez segue no sentido horário (p. 4 e 5).
 
-Ninguém começa com fichas de pinha nem com fichas de animais: tudo o que entra no seu território sai dos 4 pares do centro (p. 4 a 7). O bloco de pontuação só entra no fim (p. 8).
+Ninguém começa com fichas de pinha nem com fichas de animais: fora a peça inicial, tudo o que entra no seu território sai dos 4 pares do centro (p. 4 a 7). O bloco de pontuação só entra no fim (p. 8).
 
 **O que muda com o número de jogadores** (p. 4, 9 e 10):
 
@@ -58,7 +58,7 @@ Ninguém começa com fichas de pinha nem com fichas de animais: tudo o que entra
 | 3 | 63 | 22 | 20 | 3 para o maior e 1 para o segundo |
 | 4 | 83 | 2 | 20 | 3 para o maior e 1 para o segundo |
 
-Voltam para a caixa também as peças iniciais que ninguém recebeu e as cartas de pontuação que não foram escolhidas.
+Corredor de habitat é um grupo de peças ligadas pelo mesmo terreno; os pontos dele estão na Etapa 3 (p. 8). Voltam para a caixa também as peças iniciais que ninguém recebeu e as cartas de pontuação que não foram escolhidas.
 
 > [!mais] **Modo solo.** Monte como para 2 jogadores, mas só você recebe peça inicial, e as pilhas de peças ficam do lado esquerdo da área de jogo (p. 10). O que muda no turno está nas "Situações especiais".
 
@@ -93,16 +93,16 @@ A montagem completa, com figuras, está na seção "Montar a mesa passo a passo"
 2. **Pegue 1 par:** a peça e a ficha que estão juntas (p. 6).
 3. **Encaixe a peça** encostada em pelo menos um lado de uma peça do seu território. Não vale pôr em cima de outra nem mexer nas que já estão lá. O habitat da borda não precisa combinar com o vizinho (p. 7).
 4. **Ponha a ficha** numa peça sua que ainda não tenha ficha e que mostre o desenho desse animal. Pode ser a peça nova ou outra. Se não houver peça possível, ou se você não quiser pôr, a ficha volta para o saco (p. 7).
-5. **Reponha o centro:** uma peça do topo de qualquer pilha e uma ficha tirada do saco, no lugar vazio, sem mexer nos outros pares. A vez passa para a esquerda (p. 7).
+5. **Reponha o centro:** uma peça do topo de qualquer pilha e uma ficha tirada do saco, cada uma no lugar que ficou vazio, sem mexer nos outros pares. A vez passa no sentido horário (p. 5 e 7).
 
-!fig[Onde a peça nova pode entrar: em qualquer espaço que encoste no território (marcados com o sinal de certo); o espaço que não encosta em nenhuma peça (o X) não vale. Ilustração: manual oficial AEG/Flatout Games (p. 7)](figuras/colocar-peca.webp)
+!fig[Onde a peça nova pode entrar: os sinais de certo são exemplos de espaços que dividem um lado inteiro com uma peça do território; o X é um hexágono desalinhado, que não divide um lado inteiro com nenhuma peça, e não vale. Ilustração: manual oficial AEG/Flatout Games (p. 7)](figuras/colocar-peca.webp)
 
 > [!resolvido] **Exemplo resolvido.** Um par do centro tem uma peça de floresta e rio com desenhos de salmão e urso, e uma ficha de urso. Você pega o par, encosta a peça na sua peça inicial e põe o urso nela, porque ela mostra o urso e está vazia. No fim, vira uma peça da pilha e tira uma ficha do saco para refazer o par que você levou.
 
-> [!complete] **Complete.** No turno seguinte, você pega um par com uma peça de montanha que mostra só a raposa e uma ficha de salmão. Nenhuma peça vazia do seu território mostra salmão.
+> [!complete] **Complete.** No turno seguinte, você pega um par com uma peça de montanha e campo que mostra urso e raposa e uma ficha de salmão. Nenhuma peça vazia do seu território mostra salmão.
 >
 > ?? O que acontece com a ficha de salmão?
-> - ( ) Fica na peça de montanha, porque é a peça que veio no par
+> - ( ) Fica na peça de montanha e campo, porque é a peça que veio no par
 > - (x) Volta para o saco, porque não há peça vazia com o desenho do salmão
 > - ( ) Fica guardada com você até aparecer uma peça com salmão
 > = A ficha só vai numa peça sem ficha que mostre aquele animal; sem lugar, ela volta para o saco (p. 7).
@@ -117,7 +117,7 @@ A montagem completa, com figuras, está na seção "Montar a mesa passo a passo"
 
 ### Ainda não precisa saber
 
-Fichas de pinha e peças-chave: etapa 1. Como cada animal pontua nas cartas A: etapa 2. Corredores de habitat, bônus de maioria e desempate: etapa 3. No primeiro turno, ninguém tem pinha.
+Fichas de pinha e peças-chave: Etapa 1. Como cada animal pontua nas cartas A: Etapa 2. Corredores de habitat, bônus de maioria e desempate: Etapa 3. No primeiro turno, ninguém tem pinha.
 
 ### Como a partida acaba
 
@@ -133,7 +133,7 @@ Cada jogador joga exatamente 20 turnos. Quando, no fim de um turno, não há mai
 
 Cascadia é um jogo de colocação de peças e escolha de fichas para 1 a 4 pessoas, a partir de 10 anos, criado por Randy Flynn, sobre os habitats e os animais do noroeste do Pacífico, na América do Norte (p. 2). A página do jogo na AEG fala em 45 minutos de partida.
 
-Cada jogador monta o seu território, uma peça por turno, e resolve dois quebra-cabeças ao mesmo tempo. Os habitats pontuam pelo maior grupo de peças ligadas de cada terreno, o corredor de habitat. Os animais pontuam pelo formato que cada carta de pontuação pede: ursos em pares, alces em fila, salmões em corrente, falcões espalhados, raposas cercadas de vizinhos variados (p. 8 e 11).
+Cada jogador monta o seu território, uma peça por turno, e resolve dois quebra-cabeças ao mesmo tempo. Os habitats pontuam pelo maior grupo de peças ligadas de cada terreno, o corredor de habitat. Os animais pontuam pelo formato que cada carta de pontuação pede: ursos em pares, alces em fila, salmões em corrente, falcões espalhados, raposas cercadas de vizinhos variados, nas cartas A da primeira partida (p. 8 e 11).
 
 A tensão está no par: a peça que fecha o seu rio pode vir com a ficha errada. As fichas de pinha soltam essa amarra. A interação é indireta: ninguém mexe no território do outro, mas o par que você leva sai da mesa (p. 6 e 7).
 
@@ -148,7 +148,7 @@ Três etapas, cada uma uma parte real da partida: montar o território turno a t
 > [!passos] **Passo a passo: escolher o par** (p. 6)
 >
 > 1. No começo do turno, há 4 pares no centro, cada um com 1 peça de habitat e 1 ficha de animal.
-> 2. Antes de escolher, confira a superpopulação: 4 fichas iguais saem sozinhas; 3 fichas iguais podem sair, se você quiser (abaixo).
+> 2. Antes de escolher, confira a superpopulação: 4 fichas iguais saem sozinhas; 3 fichas iguais podem sair, se você quiser (abaixo). Isso vale também quando 4 iguais aparecem depois de uma troca, sua ou feita com pinha, porque a troca com pinha segue o mesmo processo e a de 4 iguais pode acontecer várias vezes no turno (p. 6).
 > 3. Se tiver fichas de pinha, pode gastar uma ou mais antes de pegar (abaixo).
 > 4. Pegue 1 par: a peça e a ficha que estão juntas.
 
@@ -175,11 +175,15 @@ Três etapas, cada uma uma parte real da partida: montar o território turno a t
 > 2. **A peça** encosta em pelo menos um lado de uma peça já posta, ou da peça inicial. Não vai em cima de outra, e nenhuma peça posta se move.
 > 3. **A ficha** vai numa única peça que ainda não tenha ficha e que mostre o desenho desse animal (cada peça mostra de 1 a 3 animais). Pode ser a peça nova ou outra já posta.
 > 4. Sem peça possível, ou se você preferir não pôr, a ficha volta para o saco.
-> 5. **Reponha:** a peça vem do topo de qualquer pilha; a ficha, do saco. Encha só o lugar vazio, sem arrastar os outros pares. A vez passa para a esquerda.
+> 5. **Reponha:** a peça nova, do topo de qualquer pilha, entra no lugar da peça levada; a ficha nova, tirada do saco, entra no lugar da ficha levada. Nada é arrastado: se você separou um par com pinha, a peça nova e a ficha nova ficam em lugares diferentes. A vez passa no sentido horário.
+
+> [!edicao] **Girar a peça.** O manual não diz se a peça pode ser girada antes de encaixar, nem proíbe (p. 7). Combine com a mesa antes de começar.
+
+> [!edicao] **Os 3 hexágonos da peça inicial.** O manual não diz em palavras, mas este guia trata cada hexágono da peça inicial como uma peça: cada um recebe a sua própria ficha, se mostrar o animal, e conta 1 no corredor do seu terreno. É o que a ilustração sustenta: cada hexágono tem animais desenhados (p. 5), e o território de Jade no fim da partida tem 23 hexágonos, os 20 que ela pegou mais os 3 da peça inicial (p. 9).
 
 !fig[Onde pôr uma ficha de raposa: há só 2 peças possíveis, marcadas com o sinal de certo; as marcadas com X não servem. Ilustração: manual oficial AEG/Flatout Games (p. 7)](figuras/colocar-ficha.webp)
 
-> [!mais] **Peça-chave.** Tem um pequeno símbolo triangular na borda; no exemplo do manual, é uma peça só de floresta com um único animal desenhado, o alce. Quando você põe numa peça-chave a ficha do animal desenhado nela, ganha 1 ficha de pinha da reserva (p. 7 e 8).
+> [!mais] **Peça-chave.** Na ilustração do manual, tem um triângulo branco na borda; a do exemplo é uma peça só de floresta com um único animal desenhado, o alce. Quando você põe numa peça-chave a ficha do animal desenhado nela, ganha 1 ficha de pinha da reserva (p. 7 e 8).
 
 !fig[Três peças: pântano e rio, onde cabe salmão, urso ou falcão; montanha e campo, onde cabe urso ou raposa; e uma peça-chave de floresta, que só aceita o alce e dá uma pinha. Ilustração: manual oficial AEG/Flatout Games (p. 8)](figuras/pecas.webp)
 
@@ -190,7 +194,7 @@ Três etapas, cada uma uma parte real da partida: montar o território turno a t
 > 1. Você devolve a pinha e usa o efeito **separar**: pega a peça-chave de floresta e a ficha de alce (p. 6).
 > 2. Encosta a floresta no seu território e põe o alce nela, porque a peça mostra o alce e está vazia (p. 7).
 > 3. A peça é peça-chave e recebeu o animal dela: você ganha 1 pinha da reserva e termina o turno com a mesma 1 pinha que tinha (p. 7).
-> 4. Repõe uma peça e uma ficha. A peça de rio e a ficha de salmão continuam no centro, e o lugar vazio recebe a peça nova e a ficha nova.
+> 4. Repõe: a peça nova entra no lugar da peça-chave levada, ao lado da ficha de salmão, e a ficha nova entra no lugar do alce, embaixo da peça de rio. Nada é arrastado (p. 7).
 
 > [!complete] **Complete.** As 4 fichas do centro são 3 ursos e 1 falcão. Você troca os 3 ursos, e saem do saco 2 raposas e 1 urso.
 >
@@ -202,7 +206,7 @@ Três etapas, cada uma uma parte real da partida: montar o território turno a t
 
 > [!suavez] **Sua vez.** Duas situações.
 >
-> ?? Você pegou um par com uma peça de campo que mostra urso e raposa e uma ficha de urso. A peça de campo é a única vazia que mostra o urso, mas você queria guardá-la para uma raposa. O que pode fazer?
+> ?? Você pegou um par com uma peça de montanha e campo que mostra urso e raposa e uma ficha de urso. Essa peça é a única vazia que mostra o urso, mas você queria guardá-la para uma raposa. O que pode fazer?
 > - (x) Pôr o urso nela ou devolver a ficha ao saco
 > - ( ) Guardar a ficha de urso fora do território até o próximo turno
 > - ( ) Pôr o urso numa peça vazia que não mostra urso
@@ -216,15 +220,14 @@ Três etapas, cada uma uma parte real da partida: montar o território turno a t
 
 ## 3. Etapa 2: os animais e as cartas A
 
-> [!entender] **Para entender.** Cada animal pontua pelo formato que a carta dele pede. Com as cartas A, o urso quer pares, o alce quer filas retas, o salmão quer correntes, o falcão quer ficar longe de outros falcões e a raposa quer vizinhos de espécies diferentes. Os pontos de cada formato estão impressos na própria carta, numa tabela: em cima, o tamanho do grupo; embaixo, os pontos (p. 9 e 11).
+> [!entender] **Para entender.** Cada animal pontua pelo formato que a carta dele pede. Com as cartas A, o urso quer pares, o alce quer filas retas, o salmão quer correntes, o falcão quer ficar longe de outros falcões e a raposa quer vizinhos de espécies diferentes. Os pontos de cada formato estão impressos na própria carta, numa tabela que liga cada tamanho de grupo aos pontos (p. 9 e 11).
 
 > [!passos] **Passo a passo: as regras gerais dos animais** (p. 11)
 >
 > 1. **Ursos:** os grupos têm de ter exatamente o número de ursos que a carta mostra, e dois grupos não podem encostar um no outro.
-> 2. **Alces:** os grupos têm de ter o formato desenhado na carta, em qualquer direção. Grupos de alces podem encostar, mas cada alce pontua uma vez só; entre as leituras possíveis, vale a que dá mais pontos.
+> 2. **Alces:** na maioria das cartas, os grupos têm de ter o formato desenhado, em qualquer direção. Grupos de alces podem encostar, mas cada alce pontua uma vez só; entre as leituras possíveis, vale a que dá mais pontos.
 > 3. **Salmões:** uma corrente é um grupo de salmões vizinhos em que cada salmão encosta em no máximo 2 outros. Nenhum outro salmão pode encostar na corrente.
-> 4. **Falcões:** linha de visão é uma reta de lado a lado dos hexágonos, interrompida só por outro falcão.
-> 5. **Raposas:** cada raposa olha os 6 espaços vizinhos.
+> 4. **Raposas:** cada raposa olha os 6 espaços vizinhos (o par de raposas da carta D olha 8).
 
 > [!passos] **Passo a passo: o que pontua em cada carta A** (p. 11)
 >
@@ -248,18 +251,20 @@ Três etapas, cada uma uma parte real da partida: montar o território turno a t
 | Raposa | raposa com 3 tipos vizinhos | 3 |
 | Raposa | raposa com 5 tipos vizinhos | 5 |
 
+> [!edicao] **Fila de alces maior que a carta.** A carta A mostra filas de 1 a 4 alces. O manual não diz como contar uma fila de 5 ou mais (p. 11). Combine com a mesa, se acontecer.
+
 > [!edicao] **Os números das cartas.** O manual em inglês mostra as cartas pequenas demais para ler a tabela de pontos inteira. Este guia só dá os valores que o exemplo de pontuação do manual confirma (p. 9); para os demais, vale o que está impresso na sua carta.
 
 > [!atencao] Três ursos juntos não são um par e não pontuam na carta A, porque o grupo precisa ter exatamente o tamanho da carta (p. 11). O mesmo vale para dois pares encostados: viram um grupo de 4. E um falcão que encosta em outro falcão não conta na carta A, nem ele nem o vizinho (p. 11).
 
-> [!mais] **Salmão com galho.** Três salmões em triângulo podem ser uma corrente, mas aí nenhum outro salmão pode encostar neles (p. 11). Um grupo em que algum salmão encosta em 3 ou mais salmões não é corrente.
+> [!mais] **Salmão: triângulo e galhos.** Três salmões em triângulo podem ser uma corrente, mas aí nenhum outro salmão pode encostar neles. Um grupo em que algum salmão encosta em 3 ou mais salmões não é corrente, e um grupo assim não pontua (p. 11).
 
-> [!mais] **Trocar as cartas A por outras.** Cada animal tem 4 cartas, com a letra A, B, C ou D no canto de baixo à direita. Depois das primeiras partidas, separe as 4 de cada animal e sorteie 1 de cada, como manda a montagem (p. 4), ou combine com a mesa qual letra usar. Cada carta traz o desenho do formato e a tabela de pontos, e o manual explica todas na p. 11. Exemplos: o urso B dá 10 pontos por grupo de exatamente 3 ursos; o falcão C dá 3 por linha de visão entre dois falcões; o salmão D dá 1 ponto por salmão da corrente e 1 por ficha de animal encostada nela (p. 11).
+> [!mais] **Trocar as cartas A por outras.** Cada animal tem 4 cartas, com a letra A, B, C ou D no canto de baixo à direita. Depois das primeiras partidas, separe as 4 de cada animal e sorteie 1 de cada, como manda a montagem (p. 4). Sugestão do guia, não do manual: se a mesa preferir, combinem qual letra usar. Cada carta traz o desenho do formato e a tabela de pontos, e o manual explica todas na p. 11. Exemplos: o urso B dá 10 pontos por grupo de exatamente 3 ursos; o falcão C dá 3 por linha de visão entre dois falcões (linha de visão é uma reta de lado a lado dos hexágonos, interrompida só por outro falcão); o salmão D dá 1 ponto por salmão da corrente e 1 por ficha de animal encostada nela (p. 11).
 
-> [!resolvido] **Exemplo resolvido: os animais de Jade** (p. 9). Na figura da etapa 3, o território de Jade pontua assim com as cartas A:
+> [!resolvido] **Exemplo resolvido: os animais de Jade** (p. 9). Na figura logo acima, o território de Jade pontua assim com as cartas A:
 >
 > 1. **Ursos:** 2 pares, nenhum encostado no outro: 11.
-> 2. **Alces:** uma fila de 2 e uma fila diagonal de 3: 5 + 9 = 14.
+> 2. **Alces:** uma fila de 2 e uma fila reta de 3, em outra direção: 5 + 9 = 14.
 > 3. **Salmões:** uma corrente de 4, em que nenhum salmão encosta em mais de 2: 12.
 > 4. **Falcões:** 4 falcões, nenhum vizinho de outro falcão: 11.
 > 5. **Raposas:** a da ponta esquerda tem vizinhos de 3 tipos (raposa, falcão, alce); a do lado tem os 5 tipos; a de baixo tem 3 (falcão, alce, urso): 3 + 5 + 3 = 11.
@@ -326,7 +331,7 @@ Três etapas, cada uma uma parte real da partida: montar o território turno a t
 > | Rio | 5 | 7 | 7 | Lee e Ash empatam: 2 para cada; Jade 0 |
 >
 > 1. Habitats de Jade: 6 + 2 + 4 + 1 + 7 + 1 + 8 + 3 + 5 + 0 = 37.
-> 2. Animais de Jade (etapa 2): 59. Pinhas: 2.
+> 2. Animais de Jade (Etapa 2): 59. Pinhas: 2.
 > 3. Total: 59 + 37 + 2 = 98. Lee fez 97 e Ash, 95: Jade vence.
 
 !fig[O bloco de pontuação da partida do manual: uma linha para cada animal, uma para cada habitat (o corredor e, no canto, o bônus), as pinhas e o total de Jade, Lee e Ash. Ilustração: manual oficial AEG/Flatout Games (p. 9)](figuras/bloco.webp)
@@ -361,11 +366,11 @@ Três etapas, cada uma uma parte real da partida: montar o território turno a t
 
 ## 5. Situações especiais
 
-> [!mais] **Modo solo, o turno.** Jogue normalmente, mas antes de repor o centro descarte a peça e a ficha mais longe das pilhas; elas saem do jogo. Arraste as 2 peças e as 2 fichas que sobraram para longe das pilhas, formando pares, e encha os espaços vazios. São 20 turnos. Na contagem, em vez das maiorias, ganhe 2 pontos por habitat com corredor de 7 ou mais, e compare com a tabela do manual: 60 ou mais é um bom começo; 110 ou mais, a faixa mais alta (p. 9 e 10).
+> [!mais] **Modo solo, o turno.** Jogue normalmente, mas antes de repor o centro descarte, entre as peças que sobraram, a mais longe das pilhas e, entre as fichas que sobraram, a mais longe das pilhas; as duas saem do jogo. Se você levou o par mais distante, sai o seguinte. No exemplo do manual, você leva a peça-chave da ponta e a ficha de alce do segundo par, e saem a peça de montanha e pântano (a terceira a partir das pilhas) e a ficha de urso da ponta (p. 10). Arraste as 2 peças e as 2 fichas que sobraram para longe das pilhas, formando pares, e encha os espaços vazios. A partida acaba depois do seu 20º turno, como no jogo com mais pessoas. Na contagem, em vez das maiorias, ganhe 2 pontos por habitat com corredor de 7 ou mais, e compare com a tabela do manual: 60 ou mais é um bom começo; 110 ou mais, a faixa mais alta (p. 9 e 10).
 
-> [!mais] **Variante família.** Para jogar com crianças, use só a carta da variante família no lugar das 5 cartas de animais: cada grupo de animais da mesma espécie, em qualquer formato, pontua pelo tamanho, como mostra a carta. O turno não muda, e a mesa pode pular as maiorias (p. 10).
+> [!mais] **Variante família.** Use só a carta da variante família no lugar das 5 cartas de animais: cada grupo de animais da mesma espécie, em qualquer formato, pontua pelo tamanho, como mostra a carta. O turno não muda, e a mesa pode pular as maiorias (p. 10).
 
-> [!mais] **Variante intermediária.** Igual à família, com a carta da variante intermediária, que pontua de outro jeito os grupos de tamanhos diferentes (p. 10).
+> [!mais] **Variante intermediária.** Igual à família, mas usando a pontuação da variante intermediária, que dá pontos diferentes para os grupos de cada tamanho (p. 10). A caixa traz uma só carta para as duas variantes (p. 3); use a indicação da variante intermediária impressa nela.
 
 > [!mais] **Conquistas.** O manual traz cenários, metas para partidas normais e restrições de regra, com uma trilha para marcar o progresso de cada jogador. São opcionais e não mudam as regras básicas (p. 12 a 14).
 
@@ -373,7 +378,7 @@ Três etapas, cada uma uma parte real da partida: montar o território turno a t
 
 > [!edicao] **Nomes deste guia.** "Falcão" traduz *hawk*, como na resenha do site; "ficha de pinha" traduz *Nature Token*, que o manual descreve como pinhas do abeto-de-douglas (p. 3); "campo" traduz *prairie*. A caixa da Grok pode usar outros nomes.
 
-> [!dica] As peças-chave são a fonte mais comum de pinhas, e cada pinha é 1 ponto se você não a gastar (p. 8). Antes de gastar uma só para trocar fichas, veja se o par como está já não serve.
+> [!dica] As peças-chave são a única fonte de pinhas (p. 7 e 8), e cada pinha é 1 ponto se você não a gastar (p. 8). Antes de gastar uma só para trocar fichas, veja se o par como está já não serve.
 
 ## 6. Avaliação final
 
@@ -389,27 +394,27 @@ Responda sem consultar. Cada resposta diz o que reler.
 - ( ) Só encostada num lado com o mesmo terreno
 - (x) Em qualquer espaço que encoste em pelo menos uma peça do seu território
 - ( ) Em cima de uma peça sem ficha, para trocar o terreno
-= **Encostada em qualquer peça sua**; combinar o terreno não é regra de colocação (p. 7). Releia a etapa 1.
+= **Encostada em qualquer peça sua**; combinar o terreno não é regra de colocação (p. 7). Releia a Etapa 1.
 
 ?? 3. Você pôs uma ficha de alce numa peça-chave de floresta que mostra o alce. O que ganha?
 - ( ) Nada além do alce
 - (x) 1 ficha de pinha
 - ( ) 1 ponto no corredor de floresta
-= **1 ficha de pinha**, ao pôr na peça-chave o animal dela (p. 7 e 8). Releia a etapa 1.
+= **1 ficha de pinha**, ao pôr na peça-chave o animal dela (p. 7 e 8). Releia a Etapa 1.
 
 ?? 4. Com a carta A, 4 falcões, dois deles encostados um no outro. Quantos falcões contam?
 - (x) 2
 - ( ) 3
 - ( ) 4
-= **2**: contam só os falcões que não encostam em nenhum outro falcão (p. 11). Releia a etapa 2.
+= **2**: contam só os falcões que não encostam em nenhum outro falcão (p. 11). Releia a Etapa 2.
 
 ?? 5. Partida de 3. Você tem o segundo maior pântano, empatado com outro jogador. Quanto ganha?
 - ( ) 1
 - ( ) 2
 - (x) 0
-= **0**: empate no segundo maior dá 0 para cada (p. 9). Releia a etapa 3.
+= **0**: empate no segundo maior dá 0 para cada (p. 9). Releia a Etapa 3.
 
-> [!atencao] **Critério para começar a jogar.** Acertou 4 ou 5? Monte a mesa e jogue, com a folha de consulta ao lado. Errou a 1, releia a montagem; a 2 ou a 3, a etapa 1; a 4, a etapa 2; a 5, a etapa 3. Depois refaça só as perguntas que errou.
+> [!atencao] **Critério para começar a jogar.** Acertou 4 ou 5? Monte a mesa e jogue, com a folha de consulta ao lado. Errou a 1, releia a montagem; a 2 ou a 3, a Etapa 1; a 4, a Etapa 2; a 5, a Etapa 3. Depois refaça só as perguntas que errou.
 
 ## 7. Para consultar durante a partida
 
@@ -421,7 +426,7 @@ Responda sem consultar. Cada resposta diz o que reler.
 3. Pegar 1 par.
 4. Peça encostada no território; ficha numa peça sem ficha que mostre o animal, ou de volta ao saco.
 5. Animal certo na peça-chave: +1 pinha.
-6. Repor peça (topo de qualquer pilha) e ficha (do saco) só no lugar vazio.
+6. Repor: peça nova (topo de qualquer pilha) no lugar da peça levada; ficha nova (do saco) no lugar da ficha levada. Nada é arrastado.
 
 **Cartas A:** urso, pares exatos (2 pares = 11); alce, filas retas (2 = 5; 3 = 9); salmão, correntes até 7 (4 = 12); falcão, falcões sem falcão vizinho (4 = 11); raposa, tipos de animais vizinhos, raposa incluída (3 tipos = 3; 5 tipos = 5). Outros valores: na carta.
 

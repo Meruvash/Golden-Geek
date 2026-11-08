@@ -52,7 +52,7 @@ Esta seção segue a preparação do manual (p. 3), na mesma ordem. Ela monta a 
 
 !fig[Foto da editora com o conteúdo da caixa, edição em inglês: o painel com dados já alocados e, em volta, peças dos módulos avançados e o Diário de Bordo. Não é a montagem da partida básica: nela, os dados começam atrás dos escudos e os módulos ficam guardados. Imagem: Le Scorpion Masqué](../../sky-team/fotos/mesa-1.webp)
 
-**O que volta para a caixa.** Tudo o que está no compartimento fechado: as peças dos módulos, as outras Esteiras de Aproximação e o Diário de Bordo, que o manual pede para abrir só depois de pousar em Montreal (p. 3 e 11; Diário de Bordo, p. 1).
+**O que volta para a caixa.** Tudo o que a preparação não cita: os componentes do compartimento fechado, que são dos módulos avançados (p. 3), e o Diário de Bordo, que só deve ser aberto depois de pousar em Montreal (p. 11; Diário de Bordo, p. 1).
 
 **Quem começa.** Não há sorteio. Em cada rodada, uma seta na tela de Altitude Atual mostra quem aloca o primeiro dado; na primeira rodada, a 6.000 pés, é o Piloto (p. 4).
 
@@ -85,7 +85,7 @@ A montagem completa, com figuras, está em **Montar a mesa passo a passo**, no a
 1. **Conversem sobre a estratégia**, sem falar de números de dado (p. 4).
 2. **Cada um rola os 4 dados atrás do escudo.** A partir daí, silêncio até o fim da rodada (p. 4).
 3. **A ficha de Rerrolagem do 6.000 vai para o estoque** do painel (p. 4).
-4. **Alternem:** o Piloto aloca um dado, depois o Copiloto, e assim até os 8 dados estarem no painel. Cada dado vai num espaço vazio da sua cor que aceite aquele número (p. 4).
+4. **Alternem:** o Piloto aloca um dado, depois o Copiloto, e assim até os 8 dados estarem no painel. Cada dado vai num espaço vazio da sua cor (ou das duas cores) que aceite aquele número. A Concentração, embaixo do painel, aceita qualquer dado de qualquer um (p. 4 e 8).
 5. **Eixo:** quando os dois dados estão lá, gire o disco a diferença entre eles, para o lado de quem pôs o maior (p. 5).
 6. **Motores:** quando os dois dados estão lá, some. Abaixo do marco azul, o avião não avança; entre os marcos, avança 1 espaço; acima do alaranjado, 2 (p. 6).
 7. **Fim da rodada:** a Altitude desce 1.000 pés e cada um pega seus dados de volta (p. 9).
@@ -110,7 +110,7 @@ A montagem completa, com figuras, está em **Montar a mesa passo a passo**, no a
 
 ### Ainda não precisa saber
 
-Rádio, Trens de Pouso, Flapes, Concentração e Café: etapa 2. Freios, a última rodada e o que fazer se chegar cedo ou tarde ao aeroporto: etapa 3. Rerrolagem e as derrotas do Eixo e dos Motores: etapa 1.
+O que fazem o Rádio, os Trens de Pouso, os Flapes, a Concentração e o Café: etapa 2. Freios, a última rodada e o que fazer se chegar cedo ou tarde ao aeroporto: etapa 3. Rerrolagem e as derrotas do Eixo e dos Motores: etapa 1.
 
 ### Como a partida acaba
 
@@ -246,11 +246,11 @@ O guia tem três etapas, cada uma uma parte real do voo: jogar uma rodada com as
 
 > [!suavez] **Sua vez.**
 >
-> ?? Há 2 aviões na Posição Atual e nenhum no espaço seguinte. O Copiloto tem um 2 e um 1 para os Rádios. O que limpa a Posição Atual?
-> - ( ) O 2 e o 1, porque o 2 também conta a Posição Atual
-> - (x) Só o 1 tira avião da Posição Atual; para tirar os dois, ele precisaria de dois dados de valor 1
-> - ( ) O 2 sozinho, que tira os dois aviões do espaço
-> = O dado 1 tira um avião da Posição Atual; o 2 conta até o espaço seguinte. Cada Rádio tira uma peça só (p. 7). Um Café poderia transformar o 2 em 1 (p. 8).
+> ?? Há 2 aviões na Posição Atual e nenhum no espaço seguinte. O Copiloto aloca um 1 e um 2 nos seus dois Rádios. Quantos aviões saem da Posição Atual?
+> - ( ) 2: o 2 também conta a Posição Atual
+> - (x) 1: só o dado 1 aponta para a Posição Atual; o 2 aponta para o espaço seguinte, que está vazio
+> - ( ) 2: o Rádio tira todas as peças do espaço
+> = Cada Rádio tira uma peça só, do espaço de número igual ao dado, contando a Posição Atual como 1 (p. 7). Um Café antes de alocar poderia transformar o 2 em 1 (p. 8).
 >
 > ?? Há 3 Cafés no painel e o Piloto aloca um dado na Concentração. O que acontece?
 > - (x) O dado fica lá, mas não entra Café: o painel já tem o máximo de 3
@@ -299,8 +299,6 @@ O guia tem três etapas, cada uma uma parte real do voo: jogar uma rodada com as
 
 > [!mais] **Não chegar a tempo.** O avião aparece na Altitude, mas o aeroporto não está na Posição Atual: pouso forçado antes do aeroporto, e vocês perdem (p. 10).
 
-> [!edicao] Os números dos Flapes 3 e 4 (4/5 e 5/6) e o lugar das fichas de Rerrolagem (6.000 e 2.000) vêm das ilustrações do manual (p. 3, 8 e 11); o texto cita só os dois primeiros Flapes. Também é a ilustração da p. 9 que mostra o Interruptor dos Freios virando; o texto dos Freios fala só do marco de Frenagem, e é ele que conta para o pouso.
-
 > [!resolvido] **Exemplo resolvido.** Última rodada. O Piloto acionou os Freios 2 e 4 em rodadas anteriores: o marco está entre o 4 e o 5. A esteira está limpa, todos os Trens de Pouso e Flapes estão verdes, e o Eixo está nivelado. O Piloto põe um 1 nos Motores e o Copiloto, um 3: soma 4, menor que a força dos Freios. No Eixo, os dois põem 5: nivelado. Vitória. Se o Copiloto tivesse posto 4 nos Motores, a soma 5 passaria do marco e o pouso falharia.
 
 > [!complete] **Complete.** Fim da 4ª rodada: a Altitude mostra 2.000, e o aeroporto acabou de aparecer na Posição Atual.
@@ -335,9 +333,11 @@ Cada módulo tem preparação e regras próprias no Diário de Bordo, que a trip
 
 > [!mais] **Corrigir um erro em silêncio.** Durante a alocação, a única fala permitida é para corrigir um erro de aplicação das regras (p. 4).
 
-> [!mais] **Rádio além do fim da esteira.** Se o valor do dado leva a contagem a um espaço sem avião, o Rádio não tem efeito (p. 7).
+> [!mais] **Rádio sem avião no espaço.** Se não há peça de Avião no espaço indicado pelo valor do dado, o Rádio não tem efeito (p. 7).
 
 > [!mais] **Dicas do próprio manual.** A última página do livreto traz conselhos para tripulações com dificuldade de pousar: na discussão, olhar a esteira inteira e decidir se é melhor avançar 0, 1 ou 2; não guardar a Concentração para o último turno, porque o parceiro pode precisar do Café; e deixar o parceiro alocar primeiro no Eixo e nos Motores quando seus dados forem variados (p. 12). São sugestões, não regras.
+
+> [!edicao] **O que vem das ilustrações.** Alguns dados deste guia foram lidos nos desenhos do manual, não no texto: os números dos Trens de Pouso 1/2 e 5/6 e dos Flapes 4/5 e 5/6 (o texto cita o 3/4 dos Trens e o 1/2 e o 2/3 dos Flapes; p. 4, 7, 8 e 11); o lugar das fichas de Rerrolagem, no 6.000 e no 2.000, e os 9 aviões da esteira de Montreal, com o aeroporto 6 espaços depois da nuvem (p. 3); o X do Eixo depois da marca 2 (p. 5); e o Interruptor dos Freios virando para a luz verde (p. 9). O texto dos Freios fala só do marco de Frenagem, e é ele que conta para o pouso (p. 9 e 10).
 
 > [!dica] Os Trens de Pouso e os Flapes mudam a velocidade necessária para avançar. Uma sugestão: com tráfego à frente, baixar Trens de Pouso cedo ajuda a ficar parado; quando for preciso avançar 2, deixar os Flapes para depois (p. 12).
 
@@ -369,11 +369,11 @@ Responda sem consultar. Cada resposta diz o que reler.
 - (x) Colisão: a tripulação perde
 = **Colisão.** Avançar com aviões na Posição Atual é derrota (p. 6). Releia a etapa 2.
 
-?? 5. Última rodada, só o Freio 2 acionado. Motores com 1 e 1. E agora?
-- (x) Passa: soma 2, menor que o marco, entre 2 e 3
-- ( ) Falha: com um Freio só, ninguém pousa
-- ( ) Falha: a soma precisa ser maior que os Freios
-= **Passa.** Com o Freio 2, o marco fica entre 2 e 3, e a soma tem de ser menor que ele (p. 9 e 10). Releia a etapa 3.
+?? 5. Última rodada, só o Freio 2 acionado. Motores com 1 e 1. A condição dos Freios está cumprida?
+- (x) Sim: soma 2, menor que o marco, entre 2 e 3
+- ( ) Não: com um Freio só, ninguém pousa
+- ( ) Não: a soma precisa ser maior que a força dos Freios
+= **Sim.** Com o Freio 2, o marco fica entre 2 e 3, e a soma tem de ser menor que ele (p. 9 e 10). Releia a etapa 3.
 
 ?? 6. O avião aparece na tela de Altitude, mas o aeroporto ainda não está na Posição Atual. O que acontece?
 - ( ) Joga-se mais uma rodada para chegar
