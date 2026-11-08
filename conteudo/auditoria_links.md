@@ -1,16 +1,16 @@
-# Auditoria de links — 2026-11-08T03:43-03:00
+# Auditoria de links — 2026-11-08T10:54-03:00
 
 Gerado por `tools/auditoria_links.py` (robô com User-Agent próprio, 1 pedido a cada 2 s por domínio, robots.txt respeitado). Links de oferta com ERRO saem do /black/ na próxima geração da página.
 
-**Ofertas no /black/:** 185 links, 149 certos, 1 com erro, 35 não verificáveis.
+**Ofertas no /black/:** 180 links, 145 certos, 0 com erro, 35 não verificáveis.
 
 ## Por tipo de link
 
 | Tipo | ok | ERRO | não verificável | não conferido |
 |---|---|---|---|---|
-| oferta | 113 | 2 | 32 | 0 |
-| oferta (mais lojas) | 36 | 0 | 3 | 0 |
-| achado | 19 | 0 | 2 | 0 |
+| oferta | 111 | 2 | 32 | 0 |
+| oferta (mais lojas) | 34 | 0 | 3 | 0 |
+| achado | 20 | 0 | 2 | 0 |
 | cupom | 4 | 0 | 0 | 0 |
 | loja | 73 | 0 | 3 | 0 |
 | preço | 109 | 0 | 0 | 0 |
@@ -29,8 +29,8 @@ Gerado por `tools/auditoria_links.py` (robô com User-Agent próprio, 1 pedido a
 | playeasy.com.br | 14 | 0 | 0 |
 | tabuloja.com | 13 | 0 | 0 |
 | mecadosjogos.com.br | 12 | 0 | 0 |
-| amazon.com.br | 11 | 0 | 0 |
 | leaolivros.com.br | 10 | 0 | 0 |
+| amazon.com.br | 9 | 0 | 0 |
 | tavernareal.com | 9 | 0 | 0 |
 | alquimistasdosjogos.com.br | 8 | 0 | 0 |
 | cangaiajogos.com.br | 7 | 0 | 0 |
@@ -45,12 +45,12 @@ Gerado por `tools/auditoria_links.py` (robô com User-Agent próprio, 1 pedido a
 | spaceboardgames.com.br | 3 | 0 | 0 |
 | animusludere.com.br | 2 | 0 | 0 |
 | livtoys.com.br | 2 | 0 | 0 |
-| loja.frodosbg.com.br | 2 | 0 | 0 |
 | omniverse.com.br | 2 | 0 | 0 |
 | borderjogos.com.br | 1 | 0 | 0 |
 | espacoarcs.com.br | 1 | 0 | 0 |
 | guildadosjogos.com.br | 1 | 0 | 0 |
 | happynerd.com.br | 1 | 0 | 0 |
+| loja.frodosbg.com.br | 1 | 0 | 0 |
 | loja.joyjoycafe.com.br | 1 | 0 | 0 |
 | magazineluiza.com.br | 0 | 0 | 1 |
 | modoaviaobg.com.br | 1 | 0 | 0 |
@@ -59,7 +59,7 @@ Gerado por `tools/auditoria_links.py` (robô com User-Agent próprio, 1 pedido a
 ## Erros (2)
 
 - **oferta** — Ticket to Ride: Alemanha: <https://www.caixinhaboardgames.com.br/produtos/ticket-to-ride-alemanha-pre-venda-rh596/> ((fora do site: retirada do /black/ pela auditoria)) — página não existe (404)
-- **oferta** — Sky Towers: <https://www.placegames.com.br/boardgames/sky-towers> (/black/) — página de outro jogo (cartão: “Sky Towers”; página: “Produto não encontrado - Place Games | Loja de Board Games - Locadora de Jogos | Produto não encontrado - Place Games | ”)
+- **oferta** — Sky Towers: <https://www.placegames.com.br/boardgames/sky-towers> ((fora do site: retirada do /black/ pela auditoria)) — página de outro jogo (cartão: “Sky Towers”; página: “Produto não encontrado - Place Games | Loja de Board Games - Locadora de Jogos | Produto não encontrado - Place Games | ”)
 
 ## Não verificáveis (40)
 
