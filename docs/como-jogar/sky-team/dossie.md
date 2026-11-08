@@ -102,8 +102,10 @@ Classificação: `[V]` verificada (lida no manual nesta sessão), `[VI]` verific
 | R2 | Discussão: estratégia permitida, falar dos dados proibido | [BR p. 4] "Vocês não podem falar sobre os dados" | V | |
 | R3 | Rolar 4 dados atrás do escudo; silêncio até o fim da rodada, salvo correção de erro de regra | [BR p. 4] "absolutamente em silêncio" | V | R2 |
 | R4 | Ficha de Rerrolagem na Altitude Atual vai para o estoque; uso a qualquer momento por qualquer um; os dois rerrolam uma vez quantos dados quiserem dos que restam | [BR p. 4] "OS DOIS JOGADORES poderão rerrolar UMA VEZ" | V | P9 |
-| R5 | Ficha não usada fica no estoque | [BR p. 4] não diz | I | R4 |
+| R5 | Ficha usada sai do jogo; não usada fica no estoque e pode acumular com a do 2.000 | [BR p. 4] não diz | I | R4 |
 | R6 | Turnos alternados; a seta da tela de Altitude Atual diz quem começa; na 1ª rodada, o Piloto | [BR p. 4] regra A | V | |
+| R6b | A marca alterna: Piloto no 6.000, 4.000, 2.000 e na imagem do avião; Copiloto no 5.000, 3.000 e 1.000 | [BR p. 3] ilustração a 400 dpi | VI | R6 |
+| R6c | Piloto senta à esquerda (lado azul, Trens de Pouso) | [BR p. 2 e 3] ilustração | VI | P6 |
 | R7 | Um dado por turno, dos que estão atrás do escudo, num espaço livre | [BR p. 4] regra B | V | |
 | R8 | Restrição de cor: azul só Piloto, alaranjado só Copiloto, bicolor qualquer um | [BR p. 4] | V | |
 | R9 | Restrição de número (ex.: primeiro Flape 1 ou 2; primeiro Freio 2) | [BR p. 4] regras C e D | V | |
@@ -137,6 +139,8 @@ Classificação: `[V]` verificada (lida no manual nesta sessão), `[VI]` verific
 | A8 | Café: ao alocar qualquer dado, gastar 1 ou mais, cada um ±1; voltam à reserva; qualquer um usa; não usados ficam; valores só entre 1 e 6, sem dar a volta | [BR p. 8] | V | A6 |
 | A9 | Freios: só Piloto; 2, 4, 6 em sequência; marco de Frenagem +1; efeito só na última rodada; não é preciso acionar todos | [BR p. 9] | V | P5 |
 | A10 | Posições do marco: antes do 2; entre 2 e 3 (1 Freio); entre 4 e 5 (2 Freios); depois do 6 (3 Freios) | [BR p. 9] "deixando-o entre o 4 e o 5"; ilustrações p. 9 e 11 | V / VI / I (o "depois do 6" é leitura da trilha) | A9 |
+| A11b | Dado em Flape ou Freio já acionado: sem efeito, como no Trem já verde; Rádio além do fim da esteira: sem efeito; Rádio funciona normalmente na última rodada | [BR p. 7] (Trem e Rádio sem avião), p. 10 (só os Motores mudam), p. 11 (condição A); o resto não está dito | I | A2, A4, A9 |
+| A12 | Dado na Concentração com 3 Cafés no painel: o dado fica, sem Café | [BR p. 4] "não têm restrição alguma"; p. 8 máximo 3; o caso não é tratado | I | A6 |
 | A11 | Interruptores também nos Freios | página oficial "Switches (for the Flaps, Landing Gear, and Brakes)"; ilustração [BR p. 9] | VI | A9 |
 
 ### 4.5 Fim da partida
@@ -212,3 +216,28 @@ Script: `/tmp/claude-0/-home-user/6a4d6f51-afb4-5576-b0bf-e2035e13b944/scratchpa
 Figuras recortadas do manual brasileiro (300 dpi), só a parte gráfica, `.webp` q80, até 1000 px, em `como-jogar/sky-team/figuras/`: `setup-setores` (p. 2, o painel com os nomes dos setores, que são rótulos da arte), `setup-painel` (p. 3, passos 1 a 3), `setup-esteiras` (p. 3, passos 5 a 8), `setup-dados` (p. 3, passos 4, 9 e 10), `eixo` (p. 5), `motores` (p. 6, dois dos três casos), `radio` (p. 7), `flapes` (p. 8), `cafe` (p. 8), `freios` (p. 9), `pouso` (p. 11). Os recortes levam os números de passo e os rótulos curtos da ilustração, sem os blocos de texto. A montagem única ao abrir a caixa (p. 2) não ganhou figura própria: os quadros dela trazem texto do manual dentro; a figura `setup-setores`, da mesma página, mostra o painel montado.
 
 JSON: "2 jogadores", "20 min" e "14+" da capa do manual (p. 1: ícones "20'", "+14" e "2"). `edicao`: "Edição Galápagos", porque as regras foram conferidas no manual brasileiro da Galápagos.
+
+## 11. Correções depois das auditorias independentes (08/11/2026)
+
+Auditoria de regras: aprovado com correções, sem erro de regra. Partida simulada: sim, com ajustes. Aplicado no tutorial:
+
+1. "Antes de tudo": tirado o exemplo do 3 no Eixo atribuído ao manual; agora "um dado no Eixo também é um recado ao parceiro (p. 12)".
+2. Pergunta dos 3 Cafés: cita a p. 4 (Concentração sem restrição) e marca como leitura do guia que o dado fica sem render Café (A12).
+3. `[!edicao]` "O que vem das ilustrações": acrescentadas as posições do marco de Frenagem, os 3 espaços da Concentração, a seta alternando, o lado do Piloto e o Interruptor do Freio deslizando para a luz verde (p. 9); tabela de componentes ajustada.
+4. Etapa 3: "é preciso avançar 6 espaços nas 6 rodadas antes da última, e cada rodada avança no máximo 2".
+5. "O que fica na caixa" (p. 3, "exatamente onde estão").
+6. Legenda de `pouso.webp`: "(A) o avião riscado no aeroporto: nenhuma peça pode sobrar na esteira".
+7. Quem começa: a seta alterna (ilustração da p. 3; R6b); o passo 4 do "Comece" diz "a começar por quem a seta da Altitude indicar (no 6.000, o Piloto)".
+8. Piloto à esquerda (ilustração, R6c).
+9. Desambiguados a fenda da Esteira de Aproximação e o estoque de Rerrolagem.
+10. Legenda de `setup-painel`: sem a numeração repetida.
+11. Rerrolagem: destino da ficha usada e acúmulo, como leitura do guia (R5).
+12. Passo dos Freios: Interruptor e as quatro posições do marco.
+13. "Força dos Freios = posição do marco de Frenagem" definida na ideia do jogo do "Comece" e no `[!entender]` da etapa 3.
+14. e 18. `[!edicao]` único para Flapes e Freios já acionados, Rádio além da esteira e Rádio na última rodada (A11b).
+15. "A Esteira de Altitude desce um espaço" no "Comece" e na folha.
+16. Colisão: "um Rádio de valor 1 para cada avião".
+17. Exemplo do "Comece": uma linha de efeito para Flape, Rádio e Concentração; "um dos Rádios do Copiloto"; "Ainda não precisa saber" fala das regras completas.
+19. Explicação do "Agora a sua mesa" e da avaliação 2 reescritas.
+
+Portões depois das correções: travessão 0; `vicios.py` sem aviso; `checar_comece.py` dentro da diretriz; conversor numa cópia no scratchpad sem erro (21 figuras, nada cru; leitura do essencial cerca de 9 min). Extensão: cerca de 5.700 palavras sem legendas (6.250 com tudo), acima do alvo por causa das notas de leitura do guia pedidas pela auditoria.

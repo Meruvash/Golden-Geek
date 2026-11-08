@@ -16,7 +16,7 @@ Esta seção segue a preparação do manual (p. 3), na mesma ordem, para a parti
 |---|---|---|
 | Painel de Controle | 1 | A cabine, com os espaços onde os dados são alocados (p. 2 e 3) |
 | Disco de Eixo da Aeronave | 1 | Mostra se o avião está nivelado (p. 3 e 5) |
-| Interruptores | 10 | Mostram a luz verde dos Trens de Pouso, Flapes e Freios acionados (p. 3, 7 a 9) |
+| Interruptores | 10 | Deslizam para mostrar a luz verde quando um Trem de Pouso, Flape ou Freio é acionado (p. 3, 7 e 8; nos Freios, ilustração da p. 9) |
 | Marcos de Aerodinâmica | 2, azul e alaranjado | Decidem quanto o avião avança (p. 3 e 6) |
 | Marco de Frenagem | 1, vermelho | A força dos Freios (p. 3 e 9) |
 | Dados | 4 azuis e 4 alaranjados | Do Piloto e do Copiloto (p. 3) |
@@ -35,11 +35,11 @@ Esta seção segue a preparação do manual (p. 3), na mesma ordem, para a parti
 2. **No Velocímetro**, o arco de números em volta do Eixo, ponha o marco de Aerodinâmica azul entre o 4 e o 5 e o alaranjado entre o 8 e o 9 (p. 3).
 3. **Ponha o marco de Frenagem à esquerda do 2** na trilha de Frenagem, o arco menor abaixo dos Motores (p. 3).
 
-!fig[O painel preparado: o disco de Eixo (1) nivelado; os marcos de Aerodinâmica (2), azul entre 4 e 5 e alaranjado entre 8 e 9; o marco de Frenagem (3) antes do 2; os Interruptores (1) tampando as luzes. Ilustração: manual Galápagos (p. 3)](figuras/setup-painel.webp)
+!fig[O painel preparado: o disco de Eixo nivelado, no alto; os marcos de Aerodinâmica, azul entre 4 e 5 e alaranjado entre 8 e 9; o marco de Frenagem, vermelho, antes do 2; os Interruptores tampando as luzes, embaixo de cada espaço. Os números na figura são os passos do manual, que usa o 1 tanto para o painel e o disco quanto para os Interruptores. Ilustração: manual Galápagos (p. 3)](figuras/setup-painel.webp)
 
-4. **Escolham os papéis.** Quem senta do lado azul do painel é o Piloto e pega os 4 dados azuis; quem senta do lado alaranjado é o Copiloto e pega os 4 alaranjados (p. 3).
-5. **Encaixe a Esteira de Altitude**, lado verde e amarelo para cima, na fenda do canto superior direito, e deslize-a até aparecer 6.000 na tela: é a Altitude Atual, em pés (p. 3).
-6. **Encaixe a Esteira de Aproximação de Montreal** na fenda do canto superior esquerdo e deslize-a até aparecer a nuvem na tela: é a Posição Atual do avião (p. 3).
+4. **Escolham os papéis.** Quem senta do lado azul do painel é o Piloto e pega os 4 dados azuis; quem senta do lado alaranjado é o Copiloto e pega os 4 alaranjados (p. 3). Na ilustração, olhando o painel de frente, o lado azul (Trens de Pouso) fica à esquerda: o Piloto senta à esquerda, o Copiloto à direita (p. 2 e 3).
+5. **Encaixe a Esteira de Altitude**, lado verde e amarelo para cima, na fenda do canto superior direito do painel, e deslize-a até aparecer 6.000 na tela: é a Altitude Atual, em pés (p. 3).
+6. **Encaixe a Esteira de Aproximação de Montreal** na fenda do canto superior esquerdo do painel (acima do estoque de Rerrolagem, o círculo cinza ao lado da tela) e deslize-a até aparecer a nuvem na tela: é a Posição Atual do avião (p. 3).
 7. **Ponha uma ficha de Rerrolagem em cada ícone de Rerrolagem** da Esteira de Altitude; na ilustração, no 6.000 e no 2.000 (p. 3).
 8. **Ponha uma peça de Avião em cada ícone de Tráfego** da Esteira de Aproximação (p. 3). Na ilustração, Montreal recebe 9 aviões e sobram 3.
 
@@ -52,9 +52,9 @@ Esta seção segue a preparação do manual (p. 3), na mesma ordem, para a parti
 
 !fig[O conteúdo da caixa em foto da editora, edição em inglês, com dados já no painel e peças dos módulos avançados. Não é a montagem da partida básica: nela, os dados começam atrás dos escudos e os módulos ficam guardados. Imagem: Le Scorpion Masqué](../../sky-team/fotos/mesa-1.webp)
 
-**O que volta para a caixa.** O que a preparação não cita: o compartimento fechado, dos módulos avançados (p. 3), e o Diário de Bordo, que só se abre depois de pousar em Montreal (p. 11; Diário de Bordo, p. 1).
+**O que fica na caixa.** O que a preparação não cita: os componentes do compartimento fechado, que são dos módulos avançados e ficam "exatamente onde estão" (p. 3), e o Diário de Bordo, que só se abre depois de pousar em Montreal (p. 11; Diário de Bordo, p. 1).
 
-**Quem começa.** Uma seta na tela de Altitude Atual mostra quem aloca o primeiro dado de cada rodada; na primeira, a 6.000 pés, é o Piloto (p. 4).
+**Quem começa.** Uma seta na tela de Altitude Atual mostra quem aloca o primeiro dado de cada rodada; na primeira, a 6.000 pés, é o Piloto (p. 4). Na ilustração da esteira, a marca alterna de lado: o Piloto abre no 6.000, 4.000, 2.000 e na rodada do pouso; o Copiloto, no 5.000, 3.000 e 1.000 (p. 3). Na dúvida, olhe a seta.
 
 **Antes de começar, confira:** Eixo nivelado e Interruptores nas luzes; marcos azul (4 e 5), alaranjado (8 e 9) e de Frenagem (antes do 2); Altitude em 6.000 com as fichas de Rerrolagem; Aproximação na nuvem, um avião por ícone de Tráfego; Café na reserva; 4 dados e um escudo para cada um.
 
@@ -70,7 +70,7 @@ Esta seção segue a preparação do manual (p. 3), na mesma ordem, para a parti
 
 ### A ideia do jogo
 
-Vocês dois são a tripulação de um avião e precisam pousá-lo em 7 rodadas. Em cada uma, cada jogador rola 4 dados escondido e, em silêncio, aloca um dado por vez no **Painel de Controle**. Todo jogador precisa pôr um dado no **Eixo**, que mantém o avião nivelado, e um nos **Motores**, que decidem quanto ele avança, em toda rodada. Os outros espaços abrem caminho e preparam o pouso (p. 1, 4 e 5).
+Vocês dois são a tripulação de um avião e precisam pousá-lo em 7 rodadas. Em cada uma, cada jogador rola 4 dados escondido e, em silêncio, aloca um dado por vez no **Painel de Controle**. Todo jogador precisa pôr um dado no **Eixo**, que mantém o avião nivelado, e um nos **Motores**, que decidem quanto ele avança, em toda rodada. Os outros espaços abrem caminho e preparam o pouso; os Freios, por exemplo, empurram o marco de Frenagem, e a posição dele é a força dos Freios (p. 1, 4, 5 e 9).
 
 ### Monte a mesa
 
@@ -85,12 +85,12 @@ A montagem completa, com figuras, está em **Montar a mesa passo a passo**, no a
 1. **Conversem sobre a estratégia**, sem falar de números de dado (p. 4).
 2. **Cada um rola os 4 dados atrás do escudo.** Daí em diante, silêncio até o fim da rodada (p. 4).
 3. **A ficha de Rerrolagem do 6.000 vai para o estoque** do painel (p. 4).
-4. **Alternem um dado por vez**, a começar pelo Piloto, até os 8 estarem no painel. Cada dado vai num espaço vazio da sua cor (ou das duas cores) que aceite o número. A Concentração, embaixo, aceita qualquer dado (p. 4 e 8).
+4. **Alternem um dado por vez**, a começar por quem a seta da Altitude indicar (no 6.000, o Piloto), até os 8 estarem no painel. Cada dado vai num espaço vazio da sua cor (ou das duas cores) que aceite o número. A Concentração, embaixo, aceita qualquer dado (p. 4 e 8).
 5. **Eixo:** com os dois dados lá, gire o disco a diferença entre eles, para o lado de quem pôs o maior (p. 5).
 6. **Motores:** com os dois dados lá, some. Abaixo do marco azul, o avião não avança; entre os marcos, avança 1 espaço; acima do alaranjado, 2 (p. 6).
-7. **Fim da rodada:** a Altitude desce 1.000 pés e cada um pega seus dados (p. 9).
+7. **Fim da rodada:** a Esteira de Altitude desce um espaço e cada um pega seus dados (p. 9).
 
-> [!resolvido] **Exemplo resolvido.** O Piloto rolou 2, 3, 5 e 6; o Copiloto, 1, 3, 4 e 4. O Piloto põe o 3 no Eixo; o Copiloto responde com outro 3, e o Eixo não se move. O Piloto põe o 5 nos Motores. O Copiloto põe o 1 no primeiro Flape, que aceita 1 ou 2, e o marco alaranjado anda para entre o 9 e o 10. O Piloto aloca o 6 no Rádio. O Copiloto põe 4 nos Motores: velocidade 9. Antes do Flape, 9 levaria o avião 2 espaços; agora fica entre os marcos e ele avança 1 (p. 6 e 8). O 2 do Piloto vai para a Concentração e o último 4, para o outro Rádio do Copiloto.
+> [!resolvido] **Exemplo resolvido.** O Piloto rolou 2, 3, 5 e 6; o Copiloto, 1, 3, 4 e 4. O Piloto põe o 3 no Eixo; o Copiloto responde com outro 3, e o Eixo não se move. O Piloto põe o 5 nos Motores. O Copiloto põe o 1 no primeiro Flape, que aceita 1 ou 2: cada Flape estendido empurra o marco alaranjado um espaço, e ele vai para entre o 9 e o 10. O Piloto aloca o 6 no Rádio, que tira um avião da esteira. O Copiloto põe 4 nos Motores: velocidade 9. Antes do Flape, 9 levaria o avião 2 espaços; agora fica entre os marcos e ele avança 1 (p. 6 a 8). O 2 do Piloto vai para a Concentração, que aceita qualquer dado e põe um Café no painel; o último 4 vai para um dos Rádios do Copiloto.
 
 > [!complete] **Complete.** O Eixo está nivelado. O Piloto pôs um 4 no Eixo. Você é o Copiloto e tem 2, 4, 5 e 6.
 >
@@ -106,11 +106,11 @@ A montagem completa, com figuras, está em **Montar a mesa passo a passo**, no a
 > - ( ) 1 espaço
 > - (x) 2 espaços
 > - ( ) Nada: a soma passou do limite
-> = Velocidade 9, acima do marco alaranjado, entre 8 e 9: avança 2 (p. 6).
+> = Velocidade 9: fica acima do marco alaranjado, que está entre 8 e 9. Avança 2 (p. 6).
 
 ### Ainda não precisa saber
 
-O que fazem o Rádio, os Trens de Pouso, os Flapes, a Concentração e o Café: etapa 2. Freios, última rodada e chegada cedo ou tarde: etapa 3. Rerrolagem e as derrotas do Eixo e dos Motores: etapa 1.
+As regras completas do Rádio, dos Trens de Pouso, dos Flapes, da Concentração e do Café (o exemplo acima só mostra o efeito): etapa 2. Freios, última rodada e chegada cedo ou tarde: etapa 3. Rerrolagem e as derrotas do Eixo e dos Motores: etapa 1.
 
 ### Como a partida acaba
 
@@ -126,7 +126,7 @@ Na última rodada, com o aeroporto na tela de Posição Atual e o avião na de A
 
 Sky Team é cooperativo e só para dois: a dupla ganha ou perde junta. Cada partida é uma aproximação em 7 rodadas, de 6.000 pés até o chão (p. 4 e 9). O avião desce sozinho; vocês controlam quanto ele avança, se fica nivelado, se o caminho está livre e se chega pronto para pousar.
 
-Duas ideias sustentam o resto. **Cada dado é uma ação e um recado:** depois da rolagem ninguém fala, e um 3 no Eixo diz ao parceiro "quero o avião nivelado" (p. 4 e 12). **O avião não espera:** a altitude cai toda rodada, e o aeroporto precisa aparecer na tela quando o avião chega ao chão (p. 9 e 10).
+Duas ideias sustentam o resto. **Cada dado é uma ação e um recado:** depois da rolagem ninguém fala (p. 4), e um dado no Eixo também é um recado ao parceiro (p. 12). **O avião não espera:** a altitude cai toda rodada, e o aeroporto precisa aparecer na tela quando o avião chega ao chão (p. 9 e 10).
 
 ## 1. Como este guia ensina
 
@@ -157,9 +157,9 @@ Três etapas, cada uma uma parte real do voo: a rodada com Eixo e Motores; limpa
 
 > [!atencao] **Ações obrigatórias.** Sem um dado de cada cor no Eixo e um de cada cor nos Motores no fim da rodada, vocês perdem na hora. Eles não precisam ser os primeiros dados alocados (p. 5).
 
-> [!mais] **Rerrolagem.** Quando a Altitude Atual tem ficha de Rerrolagem (como no 6.000), ela vai para o estoque, no canto superior esquerdo do painel. A qualquer momento da rodada, qualquer um pode usá-la: aí os dois podem rolar de novo, uma vez, quantos dados quiserem dos que ainda estão atrás do escudo (p. 4).
+> [!mais] **Rerrolagem.** Quando a Altitude Atual tem ficha de Rerrolagem (como no 6.000), ela vai para o estoque, o círculo cinza no canto superior esquerdo do painel, ao lado da tela de Posição Atual. A qualquer momento da rodada, qualquer um pode usá-la: aí os dois podem rolar de novo, uma vez, quantos dados quiserem dos que ainda estão atrás do escudo (p. 4).
 
-> [!edicao] O manual não diz o que acontece com uma ficha de Rerrolagem que ninguém usou na rodada: manda passá-la "para o estoque" e diz que ela pode ser usada "a qualquer momento da rodada" (p. 4). Este guia a deixa no estoque até alguém usá-la.
+> [!edicao] O manual não diz o que acontece com a ficha de Rerrolagem depois de usada, nem com a que ninguém usou: manda passá-la "para o estoque" e diz que ela pode ser usada "a qualquer momento da rodada" (p. 4). Leitura deste guia: a ficha usada sai do jogo; a não usada fica no estoque, e se ela ainda estiver lá quando a do 2.000 chegar, as duas ficam acumuladas, uma por uso.
 
 > [!resolvido] **Exemplo resolvido.** O avião começou a rodada inclinado 1 ponto para o Piloto. O Piloto põe 2 no Eixo e o Copiloto, 4: diferença 2, para o lado do Copiloto. O disco passa pelo centro e termina inclinado 1 ponto para o Copiloto. Nos Motores, 4 + 4 = 8, entre o azul (4 e 5) e o alaranjado (8 e 9): o avião avança 1.
 
@@ -201,11 +201,13 @@ Três etapas, cada uma uma parte real do voo: a rodada com Eixo e Motores; limpa
 
 !fig[O Café no manual: o Piloto tem um 3, gasta 2 Cafés, transforma o dado em 1 e o aloca no Rádio, tirando o avião da Posição Atual. Ilustração: manual Galápagos (p. 8)](figuras/cafe.webp)
 
-> [!atencao] **Colisão.** Aviões na Posição Atual não fazem mal até a hora de avançar. Se os Motores mandarem avançar com peças de Avião na Posição Atual, há colisão e vocês perdem (p. 6). Tire esse tráfego antes com um Rádio de valor 1.
+> [!atencao] **Colisão.** Aviões na Posição Atual não fazem mal até a hora de avançar. Se os Motores mandarem avançar com peças de Avião na Posição Atual, há colisão e vocês perdem (p. 6). Tire esse tráfego antes, com um Rádio de valor 1 para cada avião (p. 7).
 
 > [!mais] **Limites do Café.** Qualquer jogador usa os Cafés do painel, não importa quem os pôs. Os não usados ficam para as rodadas seguintes. O painel guarda no máximo 3. O dado modificado fica entre 1 e 6: 1 menos 1 não vira 6, e 6 mais 1 não vira 1 (p. 8).
 
-> [!mais] **Trem de Pouso já baixado.** Alocar dado num Trem de Pouso que já mostra a luz verde não tem efeito (p. 7).
+> [!mais] **Espaço já acionado.** Alocar dado num Trem de Pouso que já mostra a luz verde não tem efeito (p. 7).
+
+> [!edicao] **Flapes e Freios já acionados; Rádio além da esteira.** O manual só diz do Trem de Pouso que o dado num espaço já verde não tem efeito (p. 7). Leitura deste guia: vale o mesmo para Flapes e Freios já acionados, que, por irem em sequência, não podem ser acionados de novo (p. 8 e 9). Do Rádio, o manual diz que ele não tem efeito sem avião no espaço indicado (p. 7); se a contagem passar do fim da esteira, este guia o trata da mesma forma: sem efeito. Na última rodada, o manual só muda a leitura dos Motores (p. 10); o Rádio funciona como sempre, e é a última chance de tirar aviões para cumprir a condição A (p. 11).
 
 > [!edicao] **Avançar 2 com tráfego no caminho.** O manual trata do avanço com aviões na Posição Atual (p. 6), mas não descreve à parte o avanço de 2 com aviões no espaço seguinte. Este guia lê o avanço de 2 como dois avanços de 1: o segundo sairia de um espaço com aviões, e há colisão. O Diário de Bordo também conta o avanço de 2 espaço por espaço, ao tratar das curvas (Diário de Bordo, p. 3).
 
@@ -231,7 +233,7 @@ Três etapas, cada uma uma parte real do voo: a rodada com Eixo e Motores; limpa
 > - (x) O dado fica lá, mas não entra Café: o painel já tem 3
 > - ( ) Entra um quarto Café
 > - ( ) O Piloto troca um Café por uma Rerrolagem
-> = O painel não guarda mais de 3 Cafés (p. 8).
+> = A Concentração não tem restrição alguma (p. 4), então o dado pode ir para lá; mas o painel não guarda mais de 3 Cafés (p. 8). Que o dado fique sem render Café é leitura deste guia: o manual não trata o caso à parte.
 
 > [!treino] **Treino rápido.**
 >
@@ -243,20 +245,20 @@ Três etapas, cada uma uma parte real do voo: a rodada com Eixo e Motores; limpa
 
 ## 4. Etapa 3: frear e pousar
 
-> [!entender] **Para entender.** A Esteira de Altitude tem 7 espaços, um por rodada: de 6.000 a 1.000 e, por último, a imagem do avião (p. 9). A última rodada começa quando o aeroporto está na tela de Posição Atual e o avião, na de Altitude Atual; nela, a soma dos Motores é comparada com os Freios e não move a esteira (p. 10). Na ilustração, o aeroporto de Montreal fica 6 espaços depois da nuvem (p. 3): 6 avanços em 6 rodadas, no máximo 2 por rodada.
+> [!entender] **Para entender.** A Esteira de Altitude tem 7 espaços, um por rodada: de 6.000 a 1.000 e, por último, a imagem do avião (p. 9). A última rodada começa quando o aeroporto está na tela de Posição Atual e o avião, na de Altitude Atual; nela, a soma dos Motores é comparada com os Freios e não move a esteira (p. 10). Na ilustração, o aeroporto de Montreal fica 6 espaços depois da nuvem (p. 3): é preciso avançar 6 espaços nas 6 rodadas antes da última, e cada rodada avança no máximo 2 (p. 6).
 >
-> Os Freios só fazem efeito na última rodada, mas podem ser acionados antes (p. 9). O marco de Frenagem começa antes do 2, e a velocidade final precisa ficar abaixo dele (p. 9 a 11).
+> Os Freios só fazem efeito na última rodada, mas podem ser acionados antes (p. 9). A **força dos Freios** é a posição do marco de Frenagem: ele começa antes do 2, e a velocidade final precisa ficar abaixo dele (p. 9 a 11).
 
 > [!passos] **Passo a passo: Freios e pouso** (p. 9 a 11)
 >
-> 1. **Freios** (só o Piloto). Espaços que pedem exatamente 2, 4 e 6, acionados em sequência: 2, depois 4, depois 6. Cada um avança o marco de Frenagem um espaço. Não é preciso acionar os três.
+> 1. **Freios** (só o Piloto). Espaços que pedem exatamente 2, 4 e 6, acionados em sequência: 2, depois 4, depois 6. Deslize o Interruptor de baixo para a luz verde e avance o marco de Frenagem um espaço: de antes do 2 para entre 2 e 3, depois para entre 4 e 5, depois para além do 6. Não é preciso acionar os três.
 > 2. **Fim de cada rodada.** Depois de descer a Altitude e pegar os dados, olhe as telas: aeroporto na Posição Atual e avião na Altitude, comece a última rodada; se não, uma rodada normal.
 > 3. **Última rodada.** Joguem como sempre, com Eixo e Motores obrigatórios. Quando o segundo dado entrar nos Motores, compare a soma com o marco de Frenagem.
 > 4. **No fim dela, vocês vencem se:** (A) não há peças de Avião na esteira; (B) todos os Flapes e Trens de Pouso mostram luz verde; (C) o Eixo está perfeitamente nivelado; (D) a soma dos Motores é menor que a força dos Freios.
 
-!fig[Os Freios no manual: o Piloto aciona o segundo Freio com um 4 e o marco de Frenagem vai para entre o 4 e o 5. Ilustração: manual Galápagos (p. 9)](figuras/freios.webp)
+!fig[Os Freios no manual: o Piloto aciona o segundo Freio com um 4, o Interruptor desliza para mostrar a luz verde e o marco de Frenagem vai para entre o 4 e o 5. Ilustração: manual Galápagos (p. 9)](figuras/freios.webp)
 
-!fig[Pouso com vitória: (A) só o aeroporto na esteira, sem aviões; (B) Trens de Pouso e Flapes verdes; (C) Eixo nivelado; (D) Motores com 1 + 2 = 3, abaixo do marco de Frenagem, entre 4 e 5. Ilustração: manual Galápagos (p. 11)](figuras/pouso.webp)
+!fig[Pouso com vitória: (A) o avião riscado no aeroporto: nenhuma peça pode sobrar na esteira; (B) Trens de Pouso e Flapes verdes; (C) Eixo nivelado; (D) Motores com 1 + 2 = 3, abaixo do marco de Frenagem, entre 4 e 5. Ilustração: manual Galápagos (p. 11)](figuras/pouso.webp)
 
 > [!atencao] **Frear pelo menos uma vez.** Sem Freio, o marco fica antes do 2, e a menor soma de dois dados é 2: a força dos Freios "não pode estar abaixo de 2", ou o avião não para na pista (p. 10). Com o Freio 2, o marco vai para entre 2 e 3 e a velocidade máxima é 2; com o 4, entre 4 e 5, máximo 4 (p. 9 e 10); com o 6, máximo 6.
 
@@ -296,7 +298,7 @@ Depois de pousar em Montreal, abra o Diário de Bordo (p. 11): 21 cenários em 1
 
 ## 5. Situações especiais
 
-> [!edicao] **O que vem das ilustrações.** Alguns dados foram lidos nos desenhos do manual, não no texto: os Trens de Pouso 1/2 e 5/6 e os Flapes 4/5 e 5/6 (o texto cita o Trem 3/4 e os Flapes 1/2 e 2/3; p. 4, 7, 8 e 11); as fichas de Rerrolagem no 6.000 e no 2.000, os 9 aviões de Montreal e o aeroporto 6 espaços depois da nuvem (p. 3); o X do Eixo depois da marca 2 (p. 5); e o Interruptor do Freio virando (p. 9). O texto dos Freios fala só do marco de Frenagem, que é o que conta no pouso (p. 9 e 10).
+> [!edicao] **O que vem das ilustrações.** Alguns dados foram lidos nos desenhos do manual, não no texto: os Trens de Pouso 1/2 e 5/6 e os Flapes 4/5 e 5/6 (o texto cita o Trem 3/4 e os Flapes 1/2 e 2/3; p. 4, 7, 8 e 11); as fichas de Rerrolagem no 6.000 e no 2.000, os 9 aviões de Montreal e o aeroporto 6 espaços depois da nuvem (p. 3); o X do Eixo depois da marca 2 (p. 5); os 3 espaços de dado da Concentração (p. 4 e 8); a seta da Altitude alternando de lado (p. 3); o Piloto sentado à esquerda (p. 2 e 3); as posições do marco de Frenagem entre 2 e 3 e depois do 6 (o texto cita a de entre 4 e 5; p. 9 e 11); e o Interruptor do Freio deslizando para mostrar a luz verde (p. 9). O texto dos Freios fala só do marco de Frenagem, que é o que conta no pouso (p. 9 e 10).
 
 > [!dica] O próprio manual dá conselhos (p. 12), que são sugestões e não regras: na discussão, decidir se é melhor avançar 0, 1 ou 2; com tráfego à frente, baixar Trens de Pouso para conseguir ficar parado; quando for preciso avançar 2, deixar os Flapes para depois; e não guardar a Concentração para o último turno, porque o parceiro pode precisar do Café.
 
@@ -314,7 +316,7 @@ Responda sem consultar. Cada resposta diz o que reler.
 - ( ) A seta inclina 4 pontos para o Copiloto
 - (x) A seta inclina para o Piloto e passa do X: parafuso
 - ( ) Nada, até o fim da rodada
-= **Parafuso.** A diferença 4 vai para o lado do maior dado (p. 5). Releia a etapa 1.
+= **Parafuso.** A diferença 4 vai para o lado do maior dado, e o X fica logo depois da marca 2 (p. 5). Releia a etapa 1.
 
 ?? 3. Dois Flapes estendidos (marco alaranjado entre 10 e 11). Motores com 5 e 5. Quanto o avião avança?
 - ( ) 2 espaços
@@ -346,7 +348,7 @@ Responda sem consultar. Cada resposta diz o que reler.
 
 **Preparação (Montreal):** Eixo nivelado; Interruptores nas luzes; marco azul 4 e 5, alaranjado 8 e 9, Frenagem antes do 2; Altitude 6.000 e Rerrolagem nos ícones; Aproximação na nuvem, um avião por ícone de Tráfego; Café na reserva; Piloto azul, Copiloto alaranjado.
 
-**A rodada:** 1. discussão, sem falar de dados; 2. rolar atrás do escudo e silêncio; 3. Rerrolagem da Altitude Atual para o estoque; 4. um dado por vez, a partir de quem a seta indica; 5. Altitude desce 1.000 pés, dados de volta, conferir as telas.
+**A rodada:** 1. discussão, sem falar de dados; 2. rolar atrás do escudo e silêncio; 3. Rerrolagem da Altitude Atual para o estoque; 4. um dado por vez, a partir de quem a seta indica; 5. Esteira de Altitude desce um espaço, dados de volta, conferir as telas.
 
 | Espaço | Quem | Dado | Efeito |
 |---|---|---|---|
@@ -355,7 +357,7 @@ Responda sem consultar. Cada resposta diz o que reler.
 | Rádio | Piloto 1, Copiloto 2 | qualquer | Tira 1 avião do espaço igual ao dado, contando a Posição Atual como 1 |
 | Trens de Pouso | Piloto | 1/2, 3/4, 5/6, qualquer ordem | Luz verde; marco azul +1 |
 | Flapes | Copiloto | 1/2, 2/3, 4/5, 5/6, em sequência | Luz verde; marco alaranjado +1 |
-| Freios | Piloto | 2, 4, 6, em sequência | Marco de Frenagem +1 |
+| Freios | Piloto | 2, 4, 6, em sequência | Luz verde; marco de Frenagem +1 (antes do 2, entre 2 e 3, entre 4 e 5, além do 6) |
 | Concentração | qualquer um | qualquer | +1 Café no painel (máximo 3); cada Café muda um dado em 1, entre 1 e 6 |
 
 **Derrotas na hora:** falta de dado de cada cor no Eixo ou nos Motores no fim da rodada; Eixo no X; avançar com avião na Posição Atual; avançar com o aeroporto na Posição Atual; avião na Altitude sem o aeroporto na Posição Atual.

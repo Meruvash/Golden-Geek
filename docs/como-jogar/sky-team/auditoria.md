@@ -78,3 +78,7 @@ Mesmo protocolo dos outros Como Jogar: 5 a 8 adultos que nunca jogaram; tarefas 
 ## 8. Ligação com a resenha
 
 A resenha diz que o que mais confunde "é o eixo e a regra de que os dois dados dos motores precisam ser colocados em toda rodada"; o tutorial põe isso nos erros mais caros do "Comece" e na etapa 1. Proposta (não implementada): o bloco "primeira partida" da resenha poderia apontar para `/como-jogar/sky-team/`. A resenha cita a edição nacional como Asmodee; o manual traz os créditos da Galápagos (p. 11) e está na biblioteca de downloads da Asmodee Brasil.
+
+## Auditoria independente (08/11/2026)
+
+Duas auditorias por outros agentes: regras, "aprovado com correções", sem erro de regra; partida simulada por iniciante, "sim, com ajustes". As 19 correções foram aplicadas no mesmo dia; a lista está no dossiê, seção 11. O que mudou de classificação: quem abre cada rodada (seta alterna, lido na ilustração da p. 3), o lado do Piloto (ilustração), o destino da ficha de Rerrolagem usada e o acúmulo, dado em Flape ou Freio já acionado, Rádio além da esteira e dado na Concentração com 3 Cafés passaram a ter `[!edicao]` como leitura do guia. Nenhuma regra verificada mudou.
