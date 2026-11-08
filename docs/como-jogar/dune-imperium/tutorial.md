@@ -140,7 +140,7 @@ A montagem completa, com figuras, está na seção "Montar a mesa passo a passo"
 
 ### Seu primeiro turno
 
-A rodada começa com a revelação da Carta de Conflito do topo, que mostra o que se ganha no Combate desta rodada, e cada jogador compra 5 cartas do seu baralho (p. 8). Na sua vez, você faz um **Turno do Agente** (p. 9):
+A rodada começa com a Carta de Conflito do topo revelada (o prêmio do Combate) e cada jogador comprando 5 cartas do seu baralho (p. 8). Na sua vez, você faz um **Turno do Agente** (p. 9):
 
 1. **Jogue uma carta da mão** virada para cima à sua frente.
 2. **Escolha um ícone de Agente da carta**, na coluna da esquerda, e mande um Agente do Líder a um espaço com esse ícone no canto superior esquerdo.
@@ -324,8 +324,6 @@ Quatro etapas, na ordem em que a rodada acontece: o Turno do Agente, o Turno de 
 > [!mais] **Força acima de 20.** Vire o marcador de Combate para o lado +20 e recomece do início da trilha (p. 11).
 
 > [!mais] **Carta comprada no Revelar.** Se um efeito mandar comprar carta durante o seu Turno de Revelar, revele-a e use-a neste turno. Se a compra vier depois do seu Revelar, a carta fica na mão para a rodada seguinte, junto com as 5 novas (FAQ oficial).
-
-> [!dica] Intriga de Trama vale também no Turno de Revelar, não só no do Agente (p. 7 e 8). Às vezes compensa guardá-la para o momento em que ela rende mais.
 
 > [!resolvido] **Exemplo resolvido** (o do manual, p. 11). João revela Espião Imperial, Tóptero do Contrabandista e Stilgar. O Tóptero lhe dá 1 especiaria. As três somam 4 de Persuasão: ele adquire Viagem Espacial, que custa 3, e a põe no descarte; a Linha é reposta, e o 1 que sobrou se perde, porque nenhuma carta custa 1. Ele tem 2 tropas no Conflito (4 de força) e revelou 4 espadas, 1 do Espião e 3 de Stilgar: marca 8 na Trilha de Combate e limpa a mesa.
 

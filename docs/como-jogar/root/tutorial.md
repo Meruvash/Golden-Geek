@@ -229,7 +229,6 @@ São cinco etapas: o turno comum (mapa, governar, mover, cartas e criação); a 
 
 > [!resolvido] **Exemplo resolvido.** Os Marqueses têm uma oficina numa clareira de rato e outra numa clareira de raposa. Querem criar uma carta que custa 1 rato e dá a Mochila Pouco Usada. Ativam a oficina de rato, pegam o item do suprimento, põem na caixa de Itens Artesanais, ganham 1 PV e descartam a carta. A oficina de rato não pode ativar de novo neste turno; a de raposa ainda pode (p. 7 e 11).
 
-### Pratique esta etapa
 
 > [!complete] **Complete.** Uma clareira tem 2 guerreiros da Aliança e, dos Marqueses, 1 guerreiro e 1 serraria.
 >
@@ -267,7 +266,6 @@ São cinco etapas: o turno comum (mapa, governar, mover, cartas e criação); a 
 
 > [!resolvido] **Exemplo resolvido.** As Rapinas atacam com 3 guerreiros uma clareira onde os Marqueses têm 1 guerreiro e 1 serraria. Ninguém embosca. Os dados dão 3 e 1. As Rapinas causam 3 (têm 3 guerreiros); os Marqueses causam 1 (têm 1). Os Marqueses tiram primeiro o guerreiro, depois a serraria; o terceiro dano não acha peça. As Rapinas tiram 1 guerreiro e ganham 1 PV pela serraria (p. 8; contas conferidas).
 
-### Pratique esta etapa
 
 > [!complete] **Complete.** A Aliança tem 1 guerreiro e uma base numa clareira. Os Marqueses atacam com 2 guerreiros. Os dados dão 2 e 0.
 >
@@ -339,7 +337,6 @@ Valores lidos no tabuleiro dos Marqueses ilustrado no manual (p. 4).
 
 > [!resolvido] **Exemplo resolvido.** O Decreto das Rapinas tem 2 Vizires (pássaros) e um pássaro que elas acrescentaram. Na coluna Construir há um pássaro, mas todas as clareiras que elas governam já têm ninho. A ação não pode ser cumprida: tumulto. Perdem 3 PV (três pássaros), descartam o pássaro acrescentado e todas as outras cartas, menos os Vizires, trocam de líder, reposicionam os Vizires e vão para o Anoitecer, onde ainda ganham os PV da trilha de Ninhos (p. 13; contas conferidas).
 
-### Pratique esta etapa
 
 > [!complete] **Complete.** Os Marqueses ainda têm só a oficina inicial. Querem erguer a segunda.
 >
@@ -409,7 +406,6 @@ Valores lidos no tabuleiro dos Marqueses ilustrado no manual (p. 4).
 
 > [!resolvido] **Exemplo resolvido.** O Malandro divide uma clareira de raposa com as Rapinas, que estão em "Indiferente". Ele exaure um item e dá uma carta de raposa: a relação sobe 1 espaço e ele ganha 1 PV. Para o espaço seguinte precisa de 2 ajudas no mesmo turno; exaure mais 2 itens, dá mais 2 cartas de raposa ou pássaro e ganha 2 PV. Total: 3 ajudas, 3 PV (p. 19; contas conferidas).
 
-### Pratique esta etapa
 
 > [!complete] **Complete.** A Aliança quer pôr a 4ª simpatia numa clareira de coelho onde as Rapinas têm 3 guerreiros. A trilha mostra custo 2.
 >
@@ -454,7 +450,6 @@ Valores lidos no tabuleiro dos Marqueses ilustrado no manual (p. 4).
 
 > [!resolvido] **Exemplo resolvido.** Os Marqueses têm 14 PV e ativam no Dia o domínio de coelho; o marcador sai da trilha. No começo do Amanhecer seguinte, governam 3 clareiras de coelho: vencem. Com só 2, o jogo segue, e eles só vencem pelo domínio (p. 21).
 
-### Pratique esta etapa
 
 > [!complete] **Complete.** As Rapinas têm 8 PV e uma carta de domínio na mão.
 >
