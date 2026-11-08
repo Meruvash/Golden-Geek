@@ -10,7 +10,7 @@
   },
   "bravojogos.com.br": {
    "dia": "2026-11-08",
-   "paginas": 15
+   "paginas": 18
   },
   "brecholudico.com.br": {
    "dia": "2026-11-08",
@@ -210,7 +210,7 @@
   },
   "www.masmorra.com.br": {
    "dia": "2026-11-08",
-   "paginas": 6
+   "paginas": 9
   },
   "www.mecadosjogos.com.br": {
    "descanso_ate": "2026-11-08T10:13+00:00",
@@ -262,7 +262,7 @@
   },
   "www.promobit.com.br": {
    "dia": "2026-11-08",
-   "paginas": 60
+   "paginas": 70
   },
   "www.reunionjogos.com.br": {
    "dia": "2026-11-08",
@@ -282,7 +282,7 @@
   },
   "www.tabuloja.com": {
    "dia": "2026-11-08",
-   "paginas": 12
+   "paginas": 13
   },
   "www.tavernareal.com": {
    "dia": "2026-11-08",
@@ -296,7 +296,7 @@
    "descanso_ate": "2026-11-05T17:41+00:00",
    "dia": "2026-11-08",
    "motivo": "robots.txt respondeu 403",
-   "paginas": 3
+   "paginas": 6
   },
   "www.tschuss.com.br": {
    "dia": "2026-11-08",
@@ -419,7 +419,7 @@
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-fibonachos-p": {
    "cj": 27.81,
    "estoque": true,
-   "hora": "2026-11-07T21:47+00:00",
+   "hora": "2026-11-08T15:15+00:00",
    "preco": 29.9
   },
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-finca-p": {
@@ -431,7 +431,7 @@
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-galaxy-trucker-segunda-edicao-p": {
    "cj": 199.02,
    "estoque": true,
-   "hora": "2026-11-08T14:09+00:00",
+   "hora": "2026-11-08T15:15+00:00",
    "preco": 214.0
   },
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-grauso-p": {
@@ -530,12 +530,6 @@
    "hora": "2026-11-08T14:53+00:00",
    "preco": 1999.0
   },
-  "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-time-stories-revolution-a-midsummer-night-p": {
-   "cj": 92.91,
-   "estoque": true,
-   "hora": "2026-11-06T15:01+00:00",
-   "preco": 99.9
-  },
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-time-stories-revolution-the-hadal-project-p": {
    "cj": 92.91,
    "estoque": true,
@@ -551,7 +545,7 @@
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-word-traveler-p": {
    "cj": 65.01,
    "estoque": true,
-   "hora": "2026-11-08T00:21+00:00",
+   "hora": "2026-11-08T15:15+00:00",
    "preco": 69.9
   },
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/mesozooic": {
@@ -1772,12 +1766,6 @@
    "hora": "2026-11-08T14:51+00:00",
    "preco": 18.49
   },
-  "https://www.placegames.com.br/destemidos-norte-da-africa": {
-   "cj": 153.34,
-   "estoque": true,
-   "hora": "2026-11-06T14:58+00:00",
-   "preco": 153.34
-  },
   "https://www.placegames.com.br/draftosaurus-marina-e-show-aereo": {
    "cj": 74.29,
    "estoque": true,
@@ -1819,12 +1807,6 @@
    "estoque": true,
    "hora": "2026-11-08T14:52+00:00",
    "preco": 18.49
-  },
-  "https://www.placegames.com.br/night-parade-cursed-throne": {
-   "cj": 64.99,
-   "estoque": true,
-   "hora": "2026-11-06T15:00+00:00",
-   "preco": 64.99
   },
   "https://www.placegames.com.br/o-que-o-que": {
    "cj": 18.49,
@@ -2023,12 +2005,6 @@
    "estoque": true,
    "hora": "2026-11-08T14:51+00:00",
    "preco": 229.0
-  },
-  "https://www.tabuloja.com/board-games/jogos-base/daitoshi": {
-   "cj": 224.1,
-   "estoque": true,
-   "hora": "2026-11-06T15:12+00:00",
-   "preco": 249.0
   },
   "https://www.tabuloja.com/board-games/jogos-base/general-orders": {
    "cj": 80.1,
