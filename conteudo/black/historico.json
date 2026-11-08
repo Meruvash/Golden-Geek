@@ -17660,6 +17660,7 @@
   "imagem": "https://uploads.comparajogos.com.br/img/db370cbd954f1fd99a9d3114131bef2236a87614.jpg",
   "nome": "Beyond Baker Street",
   "pontos": {},
+  "principal": false,
   "tipo": "game"
  },
  "beyond-the-horizon": {
@@ -19338,7 +19339,11 @@
    "2026-11-01": 39.06,
    "2026-11-02": 39.06,
    "2026-11-03": 39.06,
-   "2026-11-04": 39.06
+   "2026-11-04": 39.06,
+   "2026-11-05": 39.06,
+   "2026-11-06": 39.06,
+   "2026-11-07": 39.06,
+   "2026-11-08": 39.06
   },
   "principal": false,
   "tipo": "game"
@@ -61594,6 +61599,18 @@
   "pontos": {},
   "principal": true,
   "tipo": "expansion"
+ },
+ "fort-sumter-the-secession-crisis-1860-61": {
+  "ano": 2018,
+  "bgg": 6.44885,
+  "bgg_id": 229956,
+  "editora": "GMT Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/e9d1f022223d807648ad6fc2c587f7443db45cfb.jpg",
+  "nome": "Fort Sumter: The Secession Crisis, 1860-61",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
  },
  "fortaleza-funesta": {
   "ano": 2026,
@@ -110818,6 +110835,18 @@
   "principal": true,
   "tipo": "expansion"
  },
+ "parkade": {
+  "ano": 2023,
+  "bgg": 5.32334,
+  "bgg_id": 386102,
+  "editora": "Facade Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/84cbe75d70f2768c762e3ada6a5007d1b8c816bc.jpg",
+  "nome": "Parkade",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
  "parks": {
   "ano": 2020,
   "bgg": 7.62987,
@@ -112850,6 +112879,18 @@
   "editora_br": false,
   "imagem": "https://uploads.comparajogos.com.br/img/9355ae683b5b183c371e75286b79643841879ecb.jpg",
   "nome": "Pick Nick!",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
+ "pickleball-blast": {
+  "ano": 2024,
+  "bgg": 6.25556,
+  "bgg_id": 425646,
+  "editora": "Moose",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/307ece42cdde62d1be8eec06ed4e4bcca63c2576.jpg",
+  "nome": "Pickleball Blast!",
   "pontos": {},
   "principal": false,
   "tipo": "game"
@@ -145225,6 +145266,18 @@
   "principal": false,
   "tipo": "game"
  },
+ "swearmints": {
+  "ano": 2021,
+  "bgg": 6.14474,
+  "bgg_id": 329789,
+  "editora": "Rampage Games LLC",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/20330600dbd04edd216e7f3feb4ad410fe89abcb.png",
+  "nome": "Swearmints",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
  "sweet-lands": {
   "ano": 2025,
   "bgg": 8.15067,
@@ -158755,6 +158808,18 @@
   "editora_br": false,
   "imagem": "https://uploads.comparajogos.com.br/img/be18cf106e8d93ac8c4555f74e1c7e841d776246.jpg",
   "nome": "Trash Pandas",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
+ "trash-talk": {
+  "ano": 2023,
+  "bgg": 6.69119,
+  "bgg_id": 387219,
+  "editora": "Friendly Skeleton",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/a221983947540251bd7f37729e22c97afa8098fc.png",
+  "nome": "Trash Talk",
   "pontos": {},
   "principal": false,
   "tipo": "game"
