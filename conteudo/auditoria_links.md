@@ -1,16 +1,16 @@
-# Auditoria de links — 2026-11-07T19:19-03:00
+# Auditoria de links — 2026-11-08T03:43-03:00
 
 Gerado por `tools/auditoria_links.py` (robô com User-Agent próprio, 1 pedido a cada 2 s por domínio, robots.txt respeitado). Links de oferta com ERRO saem do /black/ na próxima geração da página.
 
-**Ofertas no /black/:** 191 links, 152 certos, 0 com erro, 39 não verificáveis.
+**Ofertas no /black/:** 185 links, 149 certos, 1 com erro, 35 não verificáveis.
 
 ## Por tipo de link
 
 | Tipo | ok | ERRO | não verificável | não conferido |
 |---|---|---|---|---|
-| oferta | 114 | 1 | 36 | 0 |
-| oferta (mais lojas) | 38 | 0 | 3 | 0 |
-| achado | 19 | 0 | 1 | 0 |
+| oferta | 113 | 2 | 32 | 0 |
+| oferta (mais lojas) | 36 | 0 | 3 | 0 |
+| achado | 19 | 0 | 2 | 0 |
 | cupom | 4 | 0 | 0 | 0 |
 | loja | 73 | 0 | 3 | 0 |
 | preço | 109 | 0 | 0 | 0 |
@@ -21,21 +21,21 @@ Gerado por `tools/auditoria_links.py` (robô com User-Agent próprio, 1 pedido a
 | Domínio | ok | ERRO | não verificável |
 |---|---|---|---|
 | comparajogos.com.br | 109 | 0 | 0 |
-| caixinhaboardgames.com.br | 46 | 1 | 0 |
-| mercadolivre.com.br | 0 | 0 | 42 |
-| bravojogos.com.br | 31 | 0 | 0 |
-| placegames.com.br | 26 | 0 | 0 |
-| facilshopping.com.br | 16 | 0 | 0 |
-| mecadosjogos.com.br | 14 | 0 | 0 |
+| caixinhaboardgames.com.br | 43 | 1 | 0 |
+| mercadolivre.com.br | 0 | 0 | 38 |
+| bravojogos.com.br | 28 | 0 | 1 |
+| placegames.com.br | 25 | 1 | 0 |
+| facilshopping.com.br | 15 | 0 | 0 |
 | playeasy.com.br | 14 | 0 | 0 |
 | tabuloja.com | 13 | 0 | 0 |
-| amazon.com.br | 10 | 0 | 0 |
+| mecadosjogos.com.br | 12 | 0 | 0 |
+| amazon.com.br | 11 | 0 | 0 |
+| leaolivros.com.br | 10 | 0 | 0 |
 | tavernareal.com | 9 | 0 | 0 |
 | alquimistasdosjogos.com.br | 8 | 0 | 0 |
-| cangaiajogos.com.br | 8 | 0 | 0 |
+| cangaiajogos.com.br | 7 | 0 | 0 |
 | masmorra.com.br | 7 | 0 | 0 |
 | brecholudico.com.br | 5 | 0 | 0 |
-| leaolivros.com.br | 4 | 0 | 0 |
 | ludostation.com.br | 4 | 0 | 0 |
 | odisseiajogos.com.br | 4 | 0 | 0 |
 | boardgamebarato.com.br | 3 | 0 | 0 |
@@ -45,27 +45,26 @@ Gerado por `tools/auditoria_links.py` (robô com User-Agent próprio, 1 pedido a
 | spaceboardgames.com.br | 3 | 0 | 0 |
 | animusludere.com.br | 2 | 0 | 0 |
 | livtoys.com.br | 2 | 0 | 0 |
+| loja.frodosbg.com.br | 2 | 0 | 0 |
 | omniverse.com.br | 2 | 0 | 0 |
 | borderjogos.com.br | 1 | 0 | 0 |
 | espacoarcs.com.br | 1 | 0 | 0 |
 | guildadosjogos.com.br | 1 | 0 | 0 |
 | happynerd.com.br | 1 | 0 | 0 |
-| loja.frodosbg.com.br | 1 | 0 | 0 |
 | loja.joyjoycafe.com.br | 1 | 0 | 0 |
 | magazineluiza.com.br | 0 | 0 | 1 |
 | modoaviaobg.com.br | 1 | 0 | 0 |
 | pittasboardgames.com.br | 1 | 0 | 0 |
 
-## Erros (1)
+## Erros (2)
 
 - **oferta** — Ticket to Ride: Alemanha: <https://www.caixinhaboardgames.com.br/produtos/ticket-to-ride-alemanha-pre-venda-rh596/> ((fora do site: retirada do /black/ pela auditoria)) — página não existe (404)
+- **oferta** — Sky Towers: <https://www.placegames.com.br/boardgames/sky-towers> (/black/) — página de outro jogo (cartão: “Sky Towers”; página: “Produto não encontrado - Place Games | Loja de Board Games - Locadora de Jogos | Produto não encontrado - Place Games | ”)
 
-## Não verificáveis (43)
+## Não verificáveis (40)
 
 - **oferta** — UNO Flip!: <https://www.mercadolivre.com.br/p/MLB16092602?pdp_filters=item_id:MLB3992344771> (/black/) — robots.txt proíbe robôs nesta página
-- **oferta** — Hamburgueria Maluca: <https://www.mercadolivre.com.br/p/MLB19307754?pdp_filters=item_id:MLB3625543867> (/black/) — robots.txt proíbe robôs nesta página
-- **oferta** — Cilada: <https://www.mercadolivre.com.br/p/MLB19525478?pdp_filters=item_id:MLB4304112336> (/black/) — robots.txt proíbe robôs nesta página
-- **oferta** — War: Game of Thrones: <https://www.mercadolivre.com.br/p/MLB19709546?pdp_filters=item_id:MLB3961858733> (/black/) — robots.txt proíbe robôs nesta página
+- **oferta** — War: Game of Thrones: <https://www.mercadolivre.com.br/p/MLB19709546?pdp_filters=item_id:MLB3509401581> (/black/) — robots.txt proíbe robôs nesta página
 - **oferta** — Jogo da Rima: <https://www.mercadolivre.com.br/p/MLB19709959?pdp_filters=item_id:MLB5495621455> (/black/) — robots.txt proíbe robôs nesta página
 - **oferta** — Na Ponta da Lingua: <https://www.mercadolivre.com.br/p/MLB20270328?pdp_filters=item_id:MLB5492433269> (/black/) — robots.txt proíbe robôs nesta página
 - **oferta** — Dungeons & Drinks: <https://www.mercadolivre.com.br/p/MLB20997954?pdp_filters=item_id:MLB7810701466> (/black/) — robots.txt proíbe robôs nesta página
@@ -92,15 +91,14 @@ Gerado por `tools/auditoria_links.py` (robô com User-Agent próprio, 1 pedido a
 - **oferta** — Trava Letras: <https://www.mercadolivre.com.br/p/MLB48880144?pdp_filters=item_id:MLB4219165897> (/black/) — robots.txt proíbe robôs nesta página
 - **oferta (mais lojas)** — Dixit: <https://www.mercadolivre.com.br/p/MLB50321038?pdp_filters=item_id:MLB4907959717> (/black/) — robots.txt proíbe robôs nesta página
 - **oferta** — UNO Stacko: <https://www.mercadolivre.com.br/p/MLB51032628?pdp_filters=item_id:MLB5524577636> (/black/) — robots.txt proíbe robôs nesta página
-- **oferta** — UNO Spin: <https://www.mercadolivre.com.br/p/MLB58370268?pdp_filters=item_id:MLB5771966300> (/black/) — robots.txt proíbe robôs nesta página
 - **oferta** — Tapalavras: <https://www.mercadolivre.com.br/p/MLB58552201?pdp_filters=item_id:MLB4359851835> (/black/) — robots.txt proíbe robôs nesta página
 - **oferta** — Liar's UNO: <https://www.mercadolivre.com.br/p/MLB62548317?pdp_filters=item_id:MLB6293749138> (/black/) — robots.txt proíbe robôs nesta página
-- **oferta** — Everdell: Mistwood: <https://www.mercadolivre.com.br/p/MLB66327609> (/black/) — robots.txt proíbe robôs nesta página
 - **oferta** — Luz Final: <https://www.mercadolivre.com.br/p/MLB66827548?pdp_filters=item_id:MLB6660299536> (/black/) — robots.txt proíbe robôs nesta página
 - **oferta** — Detetive: <https://www.mercadolivre.com.br/p/MLB74523091?pdp_filters=item_id:MLB4812795033> (/black/) — robots.txt proíbe robôs nesta página
 - **oferta** — 50 animais marinhos: <https://www.mercadolivre.com.br/p/MLB75042549?pdp_filters=item_id:MLB4860618321> (/black/) — robots.txt proíbe robôs nesta página
 - **oferta** — Buckaroo!: <https://www.mercadolivre.com.br/p/MLB8950241?pdp_filters=item_id:MLB3491700275> (/black/) — robots.txt proíbe robôs nesta página
 - **oferta** — Rummikub Jr.: <https://www.mercadolivre.com.br/p/MLB9644309?pdp_filters=item_id:MLB3625532223> (/black/) — robots.txt proíbe robôs nesta página
+- **achado**: <https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-finca-p> (/black/) — robots.txt proíbe robôs nesta página
 - **loja**: <https://www.magazineluiza.com.br/gloomhaven-board-game-galapagos-galapagos/p/af327976gh/br/jogo/> (/gloomhaven/) — robots.txt respondeu 403 (bloqueio)
 - **loja**: <https://www.mercadolivre.com.br/ark-nova-jogo-de-tabuleiroboard-game-grok/p/MLB23073841> (/ark-nova/) — robots.txt proíbe robôs nesta página
 - **achado**: <https://www.mercadolivre.com.br/p/MLB44919803> (/black/) — robots.txt proíbe robôs nesta página
