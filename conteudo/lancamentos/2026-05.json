@@ -2,7 +2,7 @@
  "mes": "2026-05",
  "label": "Maio de 2026",
  "titulo_previstos": "Previstos para maio",
- "total": 47,
+ "total": 48,
  "lancados": [
   {
    "id_jogo": 54984,
@@ -906,6 +906,27 @@
    "comentarios": 0,
    "url_topico": "https://ludopedia.com.br/topico/101167/-topico-oficial-trunfos-e-tesouros-promo-domador-de-kraken",
    "pode_criar_topico": false
+  },
+  {
+   "id_jogo": 89559,
+   "nome": "Uno: X-Men",
+   "url": "https://ludopedia.com.br/jogo/uno-x-men",
+   "capa": "https://storage.googleapis.com/ludopedia-capas/89559_t.jpg",
+   "fl_jogo_base": 1,
+   "fl_tipo": 1,
+   "editora": {
+    "id": 4023,
+    "nome": "Hasbro do Brasil",
+    "url": "https://ludopedia.com.br/editora/4023/Hasbro do Brasil"
+   },
+   "status": {
+    "id": 1,
+    "label": "Lançado",
+    "slug": "lancado"
+   },
+   "comentarios": 0,
+   "url_topico": null,
+   "pode_criar_topico": true
   },
   {
    "id_jogo": 86349,
