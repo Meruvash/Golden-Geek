@@ -42,7 +42,7 @@ Correções do OCR feitas na leitura da imagem: tabela da p. 4 (o OCR leu "BB: 4
 
 **Limite do arquivo.** Como cada página é uma imagem de 964 px, as cartas de pontuação aparecem pequenas demais (p. 5, 9 e 11): dá para ler o cabeçalho das tabelas (urso 1 a 4 pares; alce filas de 1 a 4; salmão 1 a 7+; falcão 1 a 8+; raposa 1 a 5), mas não os pontos. Os pontos usados no tutorial são só os que o exemplo da p. 9 confirma (seção 4.5).
 
-**Jogadores, idade, duração.** 1 a 4 jogadores e 10+ (p. 2); 45 min (página da AEG). A resenha registra 14+ na caixa da Grok (fonte: Bravo Jogos); o JSON usa o 10+ do manual que embasa o tutorial.
+**Jogadores, idade, duração.** 1 a 4 jogadores e 10+ (p. 2); 45 min (página da AEG). A resenha registra 14+ na caixa da Grok (fonte citada por ela: página da Bravo Jogos), que não conferi nesta sessão. Por isso o JSON usa o 10+ do manual e da AEG, e o tutorial não traz caixa `[!edicao]` sobre a idade. Se o editor confirmar o 14+ na caixa, vale uma nota.
 
 ## 3. Glossário (inglês do manual para o português do tutorial)
 
@@ -77,7 +77,7 @@ Classificação: `[V]` verificada (lida nesta sessão, no texto ou na ilustraç�
 
 | # | Regra | Fonte | Classe |
 |---|---|---|---|
-| R1 | 85 peças de habitat, 25 delas peças-chave; 5 peças iniciais; 100 fichas (20 de cada animal); 21 cartas (4 por animal, família, intermediária); 25 pinhas; saco; bloco | p. 3 "85 Habitat Tiles including 25 Keystone Tiles" | V |
+| R1 | 85 peças de habitat, 25 delas peças-chave; 5 peças iniciais; 100 fichas (20 de cada animal); 21 cartas (4 por animal e 1 carta só para as variantes família e intermediária: 20 + 1 = 21; o texto da p. 3 diz "Family intermediate" num item); 25 pinhas; saco; bloco | p. 3 "85 Habitat Tiles including 25 Keystone Tiles" | V |
 | R2 | Todas as fichas de animais no saco | p. 4 passo 1 | V |
 | R3 | 43/63/83 peças para 2/3/4 jogadores, sorteadas sem olhar; pilhas viradas para baixo, em qualquer número; as excluídas voltam para a caixa | p. 4 passo 2 "This is 20 per player, plus 3" | V |
 | R4 | 1 carta por animal, sorteada; as outras para a caixa; primeira partida: cartas A | p. 4 passo 3 "with 'A' in the bottom right corner" | V |
@@ -87,7 +87,9 @@ Classificação: `[V]` verificada (lida nesta sessão, no texto ou na ilustraç�
 | R8 | Primeiro jogador: quem viu por último um dos animais, ou sorteio; sentido horário | p. 4 passo 8; p. 5 | V |
 | R9 | Ninguém começa com pinha ou ficha | p. 4 (nenhum passo dá) | I (inferido da lista completa de passos) |
 | R10 | Solo: montagem de 2 jogadores, só 1 peça inicial, pilhas à esquerda | p. 10 | V |
-| R11 | Peça inicial tem 3 hexágonos | p. 5 (ilustração) | V (ilustração) |
+| R11 | Peça inicial tem 3 hexágonos, cada um com terreno e animais desenhados | p. 5 (ilustração) | V (ilustração) |
+| R11b | Cada hexágono da peça inicial recebe a sua ficha e conta 1 no corredor do seu terreno | p. 5 (animais desenhados em cada hexágono); p. 9 (o território de Jade tem 23 hexágonos = 20 peças + 3 da inicial, com 20 fichas) | I (o manual não diz em palavras; tutorial avisa num `[!edicao]`) |
+| R11c | Girar a peça antes de encaixar | p. 7 não fala | L (tutorial avisa num `[!edicao]`) |
 
 ### 4.2 Turno (p. 5 a 8)
 
@@ -140,8 +142,9 @@ Classificação: `[V]` verificada (lida nesta sessão, no texto ou na ilustraç�
 | R46 | Falcão A: pontos crescentes por falcão que não encosta em outro falcão | V |
 | R47 | Raposa A: cada raposa pelo número de tipos diferentes vizinhos, incluindo raposas | V |
 | R48 | Resumo das cartas B, C e D (urso B 10 por grupo de 3; falcão C 3 por linha de visão; salmão D 1 por salmão + 1 por ficha vizinha; demais no texto) | V |
-| R49 | Grupo de salmões com bifurcação (algum salmão com 3 ou mais vizinhos salmões) não é corrente | I (definição de corrente da p. 11; o manual não diz em palavras o que acontece com o grupo) |
-| R50 | Falcão encostado em outro não pontua na carta A | I (a carta pontua "each hawk that is not adjacent to any other hawk"; o tutorial diz que os dois vizinhos não contam) |
+| R49 | Grupo de salmões com bifurcação (algum salmão com 3 ou mais vizinhos salmões) não é corrente e não pontua | V (p. 11: definição de corrente e "Each run of salmon may not have any other salmon adjacent to it"; reclassificada na auditoria independente) |
+| R50 | Falcão encostado em outro não pontua na carta A | V (p. 11: "each hawk that is not adjacent to any other hawk"; reclassificada na auditoria independente) |
+| R50b | Fila de alces maior que 4 na carta A | L (a carta mostra filas de 1 a 4; o manual não trata) |
 | R51 | Tabela de pontos completa das cartas A | L (ilegível no arquivo; seção 2) |
 
 ### 4.5 Valores confirmados pelo exemplo da p. 9
@@ -152,11 +155,14 @@ O território de Jade foi lido na ilustração da p. 9 e as vizinhanças foram c
 
 | # | Regra | Classe |
 |---|---|---|
-| R52 | Solo: antes de repor, descartar peça e ficha mais longe das pilhas (saem do jogo), arrastar as restantes formando pares, repor 2 e 2; 20 turnos; tabela de 60+ a 110+ | V |
+| R52 | Solo: antes de repor, descartar, entre as que sobraram, a peça e a ficha mais longe das pilhas (saem do jogo), arrastar as restantes formando pares, repor 2 e 2; acaba depois do 20º turno; tabela de 60+ a 110+ | V (o exemplo da p. 10 mostra o caso em que o par mais distante foi levado: sai a peça de montanha e pântano, terceira, e a ficha de urso da ponta) |
 | R53 | Família: só a carta família no passo 3; turno igual; pode pular as maiorias; grupos de qualquer forma pontuam por tamanho | V |
-| R54 | Intermediária: como a família, com a carta intermediária | V |
+| R54 | Intermediária: como a família, com a pontuação intermediária, que fica na mesma carta da família (p. 3 conta uma carta só) | V (regra); I (que seja a outra face: o manual não diz qual face) |
 | R55 | Conquistas: cenários, partidas normais e restrições, com trilha de progresso | V (resumo) |
 | R56 | Saco sem fichas; reserva de pinhas esgotada | L |
+| R57 | 4 fichas iguais depois de uma troca (de 3 iguais ou com pinha) também saem sozinhas | I (p. 6: a troca com pinha segue o processo da superpopulação, e a de 4 iguais "could happen multiple times" no turno). Na montagem, o manual não manda conferir: L |
+| R58 | Reposição: peça nova no lugar da peça levada, ficha nova no lugar da ficha levada; com pinha, ficam separadas | V (p. 7: "do not move the existing tiles and tokens. Simply refill the empty spots") |
+| R59 | Peças-chave são a única fonte de pinhas | V (p. 7 e 8: nenhuma outra regra dá pinha) |
 
 ### 4.7 Erros comuns
 
@@ -180,7 +186,7 @@ Extensão: cerca de 4.700 palavras de texto (sem legendas), dentro da faixa de 4
 ## 7. Portões automáticos e contas
 
 - Travessão e meia-risca no tutorial: 0.
-- `tools/vicios.py` (função `avisos`, aplicada ao texto inteiro): um aviso ("em resumo"), corrigido; depois, nenhum.
+- `tools/vicios.py` (função `avisos`, aplicada ao texto inteiro): um aviso de muleta de linguagem, corrigido; depois, nenhum.
 - `tools/checar_comece.py docs/como-jogar/cascadia/tutorial.md`: passa.
 - Conversor `tools/como_jogar_md.py` (função `pagina`, rodada em memória, sem gravar): gera a página sem erro.
 - Contas: `/tmp/claude-0/-home-user/6a4d6f51-afb4-5576-b0bf-e2035e13b944/scratchpad/d1106/cascadia/scripts/contas.py` refaz peças por número de jogadores e turnos (43 = 4 + 39, 40 turnos a 2), as vizinhanças do território de Jade, os 98, 97 e 95 do bloco da p. 9, as maiorias de cada habitat, e os números de todos os exercícios.

@@ -33,8 +33,8 @@ Texto do manual por página (OCR, conferido nas imagens das páginas): `/tmp/cla
 | Pinhas e desempate | R37, R38 | p. 8 e 9 | Confere |
 | Regras gerais dos animais | R39, R41, R43, R45 | p. 11 | Confere |
 | Cartas A | R40, R42, R44, R46, R47 | p. 11 | Confere. Cabeçalhos das tabelas (pares 1 a 4; filas 1 a 4; 1 a 7+; 1 a 8+; 1 a 5) lidos na imagem |
-| Falcão encostado não conta | R50 | p. 11 | Interpretada: a carta pontua o falcão "not adjacent to any other hawk"; os dois vizinhos ficam fora |
-| Salmão com galho | R49 | p. 11 | Interpretada a partir da definição de corrente |
+| Falcão encostado não conta | R50 | p. 11 | Confere (explícito na p. 11) |
+| Salmão: triângulo e galhos | R49 | p. 11 | Confere (explícito na p. 11) |
 | Troca de cartas e exemplos B, C, D | R4, R48 | p. 4 e 11 | Confere. A sugestão "combine com a mesa qual letra usar" é do guia, apresentada como alternativa ao sorteio que o manual manda |
 | Variantes família e intermediária | R53, R54 | p. 10 | Confere |
 | Conquistas | R55 | p. 12 a 14 | Confere (resumo) |
@@ -68,15 +68,15 @@ O passo 8 da montagem (quem começa) não tem ilustração no manual e ficou sem
 ## 5. Portões automáticos
 
 - Travessão e meia-risca: 0.
-- `tools/vicios.py`: sem aviso, depois de trocar "em resumo".
+- `tools/vicios.py`: sem aviso, depois de cortar uma muleta de linguagem.
 - `tools/checar_comece.py`: passa.
 - `tools/como_jogar_md.py`, função `pagina`, em memória: gera a página sem erro, com as figuras.
 - Extensão: cerca de 4.700 palavras de texto, sem as legendas.
 
 ## 6. Interpretações e lacunas
 
-- [interpretada] Ninguém começa com pinha (R9); peça de dois terrenos conta nos dois corredores (R33); salmão com galho não é corrente (R49); falcões vizinhos não contam na carta A (R50).
-- [lacuna] Tabela de pontos completa das cartas A (ilegível no arquivo): o tutorial dá só os valores confirmados pelo exemplo da p. 9 e manda ler os outros na carta, com um `[!edicao]`. Saco de fichas vazio e reserva de pinhas esgotada: o manual não trata.
+- [interpretada] Ninguém começa com pinha (R9); peça de dois terrenos conta nos dois corredores (R33); cada hexágono da peça inicial é uma peça (R11b); 4 iguais depois de uma troca também saem (R57); a pontuação intermediária fica na mesma carta da família (R54).
+- [lacuna] Tabela de pontos completa das cartas A (ilegível no arquivo): o tutorial dá só os valores confirmados pelo exemplo da p. 9 e manda ler os outros na carta, com um `[!edicao]`. Saco de fichas vazio e reserva de pinhas esgotada: o manual não trata. Girar a peça antes de encaixar (R11c), fila de alces maior que 4 (R50b) e conferência de superpopulação na montagem (R57): ditas como lacuna em `[!edicao]` ou no texto.
 
 ## 7. O que ficou fraco
 
@@ -85,3 +85,13 @@ O passo 8 da montagem (quem começa) não tem ilustração no manual e ficou sem
 - **Figuras suaves.** A resolução do arquivo da AEG é baixa.
 - **Vídeo.** O do topo é do canal Romir Play House, porque o Duque só tem review e unboxing de Cascadia. Não conferi se o vídeo segue a edição da Grok.
 - A auditoria independente e o teste de execução ainda não foram feitos.
+
+## 8. Correções das auditorias independentes (08/11/2026)
+
+Duas auditorias (regras: aprovado com correções; partida simulada: sim, com ajustes). Aplicado no tutorial:
+
+- **Erros de fato.** Cartas: 21 = 20 de animais + 1 carta das variantes família e intermediária (tabela da caixa e variante intermediária corrigidas). Reposição: a peça nova vai no lugar da peça levada e a ficha nova no lugar da ficha levada, sem arrastar (passo a passo, exemplo resolvido da Etapa 1 e folha de consulta). Peças-chave: "a única fonte de pinhas".
+- **Precisão.** Legenda de colocar-peca (o X é hexágono desalinhado; os certos são exemplos); "para jogar com crianças" retirado; "combinem qual letra usar" marcado como sugestão do guia; tabela da carta "liga cada tamanho de grupo aos pontos"; seção 0 diz "nas cartas A da primeira partida"; peças inexistentes trocadas por peça de montanha e campo com urso e raposa; "sentido horário" no lugar de "esquerda"; triângulo branco "na ilustração do manual"; alce "na maioria das cartas"; raposa D olha 8 espaços; R49 e R50 reclassificadas como verificadas.
+- **Clareza.** Peça inicial: hexágonos com animais desenhados e `[!edicao]` sobre cada hexágono contar como peça (interpretada); girar a peça: `[!edicao]` de lacuna; solo: "no solo, 43, como para 2", fim depois do 20º turno e descarte quando o par mais distante foi levado (pelo exemplo da p. 10); superpopulação depois de troca; definições de peça-chave, corredor e território na primeira menção; referências "Etapa N (nome)"; figura do território de Jade movida para antes do exemplo que a usa; "fila reta de 3, em outra direção"; título "Salmão: triângulo e galhos", com "um grupo assim não pontua"; linha de visão movida para o quadro da troca de cartas; fila de alces maior que 4: `[!edicao]` de lacuna; "fora a peça inicial".
+- **Idade.** Mantido 10+ no JSON; sem caixa sobre os 14+, por falta de fonte conferida nesta sessão (dossiê, seção 2).
+- Conversor testado só em memória, com saída no scratchpad (`/tmp/claude-0/-home-user/6a4d6f51-afb4-5576-b0bf-e2035e13b944/scratchpad/d1106/cascadia/teste_pagina.html`); nada gerado no repositório.

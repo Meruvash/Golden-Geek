@@ -28,7 +28,7 @@ A montagem segue a página de preparação do manual (p. 4), na mesma ordem, e a
 
 !fig[As pilhas de peças de habitat, viradas para baixo, com o verso bege. Ilustração: manual oficial AEG/Flatout Games (p. 5)](figuras/setup-pilhas.webp)
 
-3. **Escolha 1 carta de pontuação para cada um dos 5 animais** e ponha as 5 no centro, à vista de todos. O resto das cartas volta para a caixa. O manual manda sortear, mas recomenda, na primeira partida, as cartas com a letra **A** no canto de baixo à direita (p. 4). Este guia ensina as cartas A; a troca por outras está na Etapa 2.
+3. **Escolha 1 carta de pontuação para cada um dos 5 animais** e ponha as 5 no centro, à vista de todos. O resto das cartas volta para a caixa. O manual manda sortear, mas recomenda, na primeira partida, as cartas com a letra **A** no canto de baixo à direita (p. 4). Este guia ensina as cartas A; a troca por outras está na Etapa 2 (os animais e as cartas A).
 
 !fig[As 5 cartas de pontuação da primeira partida, uma por animal: urso, alce, salmão, falcão e raposa. Ilustração: manual oficial AEG/Flatout Games (p. 5)](figuras/setup-cartas.webp)
 
@@ -117,7 +117,7 @@ A montagem completa, com figuras, está na seção "Montar a mesa passo a passo"
 
 ### Ainda não precisa saber
 
-Fichas de pinha e peças-chave: Etapa 1. Como cada animal pontua nas cartas A: Etapa 2. Corredores de habitat, bônus de maioria e desempate: Etapa 3. No primeiro turno, ninguém tem pinha.
+Fichas de pinha e peças-chave: Etapa 1 (o turno e o território). Como cada animal pontua nas cartas A: Etapa 2 (os animais e as cartas A). Corredores de habitat, bônus de maioria e desempate: Etapa 3 (fim da partida e pontos). No primeiro turno, ninguém tem pinha.
 
 ### Como a partida acaba
 
@@ -261,6 +261,8 @@ Três etapas, cada uma uma parte real da partida: montar o território turno a t
 
 > [!mais] **Trocar as cartas A por outras.** Cada animal tem 4 cartas, com a letra A, B, C ou D no canto de baixo à direita. Depois das primeiras partidas, separe as 4 de cada animal e sorteie 1 de cada, como manda a montagem (p. 4). Sugestão do guia, não do manual: se a mesa preferir, combinem qual letra usar. Cada carta traz o desenho do formato e a tabela de pontos, e o manual explica todas na p. 11. Exemplos: o urso B dá 10 pontos por grupo de exatamente 3 ursos; o falcão C dá 3 por linha de visão entre dois falcões (linha de visão é uma reta de lado a lado dos hexágonos, interrompida só por outro falcão); o salmão D dá 1 ponto por salmão da corrente e 1 por ficha de animal encostada nela (p. 11).
 
+!fig[O território de Jade no fim da partida de 3 jogadores do manual, com as fichas de animais e, no canto, as 2 pinhas que sobraram. Ilustração: manual oficial AEG/Flatout Games (p. 9)](figuras/pontuacao.webp)
+
 > [!resolvido] **Exemplo resolvido: os animais de Jade** (p. 9). Na figura logo acima, o território de Jade pontua assim com as cartas A:
 >
 > 1. **Ursos:** 2 pares, nenhum encostado no outro: 11.
@@ -318,9 +320,7 @@ Três etapas, cada uma uma parte real da partida: montar o território turno a t
 
 > [!atencao] Só o maior corredor de cada habitat pontua. Um grupo de 3 florestas e outro de 4 rendem 4 pontos, não 7 (p. 8). E duas peças encostadas por terrenos diferentes não somam no mesmo corredor.
 
-!fig[O território de Jade no fim da partida de 3 jogadores do manual, com as fichas de animais e, no canto, as 2 pinhas que sobraram. Ilustração: manual oficial AEG/Flatout Games (p. 9)](figuras/pontuacao.webp)
-
-> [!resolvido] **Exemplo resolvido: a contagem do manual** (p. 9). Jade, Lee e Ash jogam a 3. Os maiores corredores de cada um:
+> [!resolvido] **Exemplo resolvido: a contagem do manual** (p. 9). Jade, Lee e Ash jogam a 3; o território de Jade está na figura da Etapa 2. Os maiores corredores de cada um:
 >
 > | Habitat | Jade | Lee | Ash | Bônus |
 > |---|---|---|---|---|
