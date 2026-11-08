@@ -1,0 +1,44 @@
+{
+ "slug": "mysterium-kids",
+ "usar_na_pagina": true,
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 900,
+   "altura": 900,
+   "editora": "Spiel des Jahres",
+   "credito": "Imagem: Spiel des Jahres · edição alemã",
+   "pagina": "https://www.spiel-des-jahres.de/spiele/mysterium-kids/",
+   "imagem": "https://www.spiel-des-jahres.de/wp-content/uploads/2023/05/Mysterium-Kids-3.jpg",
+   "baixada_em": "2026-11-08",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/mesa-1.webp",
+   "tipo": "mesa",
+   "largura": 1600,
+   "altura": 1067,
+   "editora": "Spiel des Jahres",
+   "credito": "Imagem: Spiel des Jahres · edição alemã",
+   "pagina": "https://www.spiel-des-jahres.de/spiele/mysterium-kids/",
+   "imagem": "https://www.spiel-des-jahres.de/wp-content/uploads/2023/07/mysterium_nom_sdj_2023_0238.jpeg",
+   "baixada_em": "2026-11-08",
+   "aprovada": true,
+   "principal": true
+  },
+  {
+   "arquivo": "fotos/jogabilidade-1.webp",
+   "tipo": "jogabilidade",
+   "largura": 1600,
+   "altura": 1067,
+   "editora": "Spiel des Jahres",
+   "credito": "Imagem: Spiel des Jahres · edição alemã",
+   "pagina": "https://www.spiel-des-jahres.de/spiele/mysterium-kids/",
+   "imagem": "https://www.spiel-des-jahres.de/wp-content/uploads/2023/07/mysterium_nom_sdj_2023_0232.jpeg",
+   "baixada_em": "2026-11-08",
+   "aprovada": true,
+   "jogar": true
+  }
+ ]
+}

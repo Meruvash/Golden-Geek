@@ -1,0 +1,57 @@
+{
+ "slug": "kutna-hora",
+ "usar_na_pagina": true,
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 915,
+   "altura": 1100,
+   "editora": "Czech Games Edition",
+   "credito": "Imagem: Czech Games Edition",
+   "pagina": "https://www.czechgames.com/games/kutna-hora-the-city-of-silver",
+   "imagem": "https://cdn.prod.website-files.com/67d17a45b4e1484b40ea8869/67d17a45b4e1484b40ea8b3f_Box%20image.webp",
+   "baixada_em": "2026-11-08",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/mesa-1.webp",
+   "tipo": "mesa",
+   "largura": 1600,
+   "altura": 1067,
+   "editora": "Czech Games Edition",
+   "credito": "Imagem: Czech Games Edition",
+   "pagina": "https://www.czechgames.com/games/kutna-hora-the-city-of-silver",
+   "imagem": "https://cdn.prod.website-files.com/67d17a45b4e1484b40ea8869/67d17a45b4e1484b40ea8b40_Photo%2001.webp",
+   "baixada_em": "2026-11-08",
+   "aprovada": true,
+   "fora": true
+  },
+  {
+   "arquivo": "fotos/mesa-2.webp",
+   "tipo": "mesa",
+   "largura": 1600,
+   "altura": 1067,
+   "editora": "Czech Games Edition",
+   "credito": "Imagem: Czech Games Edition",
+   "pagina": "https://www.czechgames.com/games/kutna-hora-the-city-of-silver",
+   "imagem": "https://cdn.prod.website-files.com/67d17a45b4e1484b40ea8869/67d17a45b4e1484b40ea8b44_Photo%2005.webp",
+   "baixada_em": "2026-11-08",
+   "aprovada": true,
+   "principal": true
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 1600,
+   "altura": 1067,
+   "editora": "Czech Games Edition",
+   "credito": "Imagem: Czech Games Edition",
+   "pagina": "https://www.czechgames.com/games/kutna-hora-the-city-of-silver",
+   "imagem": "https://cdn.prod.website-files.com/67d17a45b4e1484b40ea8869/67d17a45b4e1484b40ea8b45_Photo%2003.webp",
+   "baixada_em": "2026-11-08",
+   "aprovada": true,
+   "jogar": true
+  }
+ ]
+}

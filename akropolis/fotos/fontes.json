@@ -1,0 +1,57 @@
+{
+ "slug": "akropolis",
+ "usar_na_pagina": true,
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 800,
+   "altura": 800,
+   "editora": "Gigamic",
+   "credito": "Imagem: Gigamic",
+   "pagina": "https://en.gigamic.com/family-games/1212-akropolis-athena.html",
+   "imagem": "https://en.gigamic.com/2845-large_default/product.jpg",
+   "baixada_em": "2026-11-08",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/mesa-1.webp",
+   "tipo": "mesa",
+   "largura": 800,
+   "altura": 800,
+   "editora": "Gigamic",
+   "credito": "Imagem: Gigamic",
+   "pagina": "https://www.gigamic.com/jeux-de-strategie/806-akropolis-3421271360810.html",
+   "imagem": "https://www.gigamic.com/2533-large_default/akropolis.jpg",
+   "baixada_em": "2026-11-08",
+   "aprovada": true,
+   "principal": true
+  },
+  {
+   "arquivo": "fotos/jogabilidade-1.webp",
+   "tipo": "jogabilidade",
+   "largura": 800,
+   "altura": 800,
+   "editora": "Gigamic",
+   "credito": "Imagem: Gigamic",
+   "pagina": "https://www.gigamic.com/jeux-de-strategie/806-akropolis-3421271360810.html",
+   "imagem": "https://www.gigamic.com/2534-large_default/akropolis.jpg",
+   "baixada_em": "2026-11-08",
+   "aprovada": true,
+   "jogar": true
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 800,
+   "altura": 800,
+   "editora": "Gigamic",
+   "credito": "Imagem: Gigamic",
+   "pagina": "https://en.gigamic.com/family-games/1212-akropolis-athena.html",
+   "imagem": "https://en.gigamic.com/2849-large_default/product.jpg",
+   "baixada_em": "2026-11-08",
+   "aprovada": true,
+   "fora": true
+  }
+ ]
+}

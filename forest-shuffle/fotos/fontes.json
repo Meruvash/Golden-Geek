@@ -1,0 +1,57 @@
+{
+ "slug": "forest-shuffle",
+ "usar_na_pagina": true,
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 1030,
+   "altura": 1600,
+   "editora": "Lookout Games",
+   "credito": "Imagem: Lookout Games · edição alemã (Mischwald)",
+   "pagina": "https://www.lookout-spiele.de/de/games/mischwald.html",
+   "imagem": "https://www.lookout-spiele.de/upload/de_mischwald.html_GalleryImage.png",
+   "baixada_em": "2026-11-08",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/mesa-1.webp",
+   "tipo": "mesa",
+   "largura": 1000,
+   "altura": 667,
+   "editora": "Lookout Games",
+   "credito": "Imagem: Lookout Games · edição alemã (Mischwald)",
+   "pagina": "https://www.lookout-spiele.de/de/games/mischwald.html",
+   "imagem": "https://www.lookout-spiele.de/upload/de_mischwald.html_GalleryImage_1.jpeg",
+   "baixada_em": "2026-11-08",
+   "aprovada": true,
+   "principal": true
+  },
+  {
+   "arquivo": "fotos/mesa-2.webp",
+   "tipo": "mesa",
+   "largura": 1000,
+   "altura": 667,
+   "editora": "Lookout Games",
+   "credito": "Imagem: Lookout Games · edição alemã (Mischwald)",
+   "pagina": "https://www.lookout-spiele.de/de/games/mischwald.html",
+   "imagem": "https://www.lookout-spiele.de/upload/de_mischwald.html_GalleryImage.jpeg",
+   "baixada_em": "2026-11-08",
+   "aprovada": true,
+   "fora": true
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 1600,
+   "altura": 1033,
+   "editora": "Lookout Games",
+   "credito": "Imagem: Lookout Games · edição alemã (Mischwald)",
+   "pagina": "https://www.lookout-spiele.de/de/games/mischwald.html",
+   "imagem": "https://www.lookout-spiele.de/upload/de_mischwald.html_GalleryImage_3.png",
+   "baixada_em": "2026-11-08",
+   "aprovada": true,
+   "jogar": true
+  }
+ ]
+}

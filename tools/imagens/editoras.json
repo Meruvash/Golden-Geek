@@ -2462,5 +2462,26 @@
    ],
    "verificado_em": "2026-11-06"
   }
+ },
+ "gigamic.com": {
+  "nome": "Gigamic",
+  "apelidos": [
+   "Gigamic"
+  ],
+  "site": "https://www.gigamic.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://www.gigamic.com/content/6-presse",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.gigamic.com/2_index_sitemap.xml"
+   ],
+   "verificado_em": "2026-11-08"
+  }
  }
 }

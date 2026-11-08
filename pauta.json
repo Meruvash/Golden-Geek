@@ -2203,10 +2203,14 @@
      "fonte": "https://en.wikipedia.org/wiki/Spiel_des_Jahres"
     }
    ],
-   "status": "na_fila",
+   "status": "sem_fotos",
    "premios_distintos": 2,
    "prioridade": 98,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "fotos": {
+    "verificado_em": "2026-11-08",
+    "obs": "Ludonaute (só renders PNG em fundo liso), Galápagos (bloqueado), Pegasus, Asmodee UK/DE (sem página), Spiel des Jahres (fotos de mesa em fundo branco, reprovadas no crivo)"
+   }
   },
   {
    "jogo": "Dragomino",
@@ -2408,10 +2412,14 @@
      "fonte": "https://en.wikipedia.org/wiki/Spiel_des_Jahres"
     }
    ],
-   "status": "na_fila",
+   "status": "sem_fotos",
    "premios_distintos": 2,
    "prioridade": 102,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "fotos": {
+    "verificado_em": "2026-11-08",
+    "obs": "Blue Orange EU/US (só capa, regras e arte), blog Blue Orange, Galápagos (bloqueado), Pegasus (sem página), Spiel des Jahres (só capa)"
+   }
   },
   {
    "jogo": "The Voyages of Marco Polo",
@@ -2436,10 +2444,14 @@
      "fonte": "https://eliteboardgamers.com.br/"
     }
    ],
-   "status": "na_fila",
+   "status": "sem_fotos",
    "prioridade": 103,
    "premios_distintos": 2,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "fotos": {
+    "verificado_em": "2026-11-08",
+    "obs": "Hans im Glück, Z-Man, Grok Games (sem página no sitemap), Spiel des Jahres (nada)"
+   }
   },
   {
    "jogo": "Sleeping Gods",
@@ -3652,10 +3664,14 @@
      "fonte": "https://fr.wikipedia.org/wiki/As_d%27Or"
     }
    ],
-   "status": "na_fila",
+   "status": "sem_fotos",
    "premios_distintos": 1,
    "prioridade": 104,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "fotos": {
+    "verificado_em": "2026-11-08",
+    "obs": "Le Scorpion Masqué (página do jogo e blog: só render em fundo branco, cartas e selos de prêmio)"
+   }
   },
   {
    "jogo": "Zénith",
@@ -3715,7 +3731,8 @@
    "status": "na_fila",
    "premios_distintos": 1,
    "prioridade": 107,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "slug": "kutna-hora"
   },
   {
    "jogo": "Odin",
@@ -3817,10 +3834,14 @@
      "fonte": "https://en.wikipedia.org/wiki/Spiel_des_Jahres"
     }
    ],
-   "status": "na_fila",
+   "status": "sem_fotos",
    "premios_distintos": 1,
    "prioridade": 110,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "fotos": {
+    "verificado_em": "2026-11-08",
+    "obs": "Schmidt Spiele (página do produto sem imagens extraíveis), Spiel des Jahres (só capa e selo)"
+   }
   },
   {
    "jogo": "Castle Combo",
@@ -3861,7 +3882,8 @@
    "status": "na_fila",
    "premios_distintos": 1,
    "prioridade": 111,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "slug": "forest-shuffle"
   },
   {
    "jogo": "La Famiglia",
@@ -3962,10 +3984,14 @@
      "fonte": "https://fr.wikipedia.org/wiki/As_d%27Or"
     }
    ],
-   "status": "na_fila",
+   "status": "sem_fotos",
    "premios_distintos": 1,
    "prioridade": 115,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "fotos": {
+    "verificado_em": "2026-11-08",
+    "obs": "Cocktail Games (página do jogo, regras e As d'Or: só renders em fundo preto, caixa e cartas)"
+   }
   },
   {
    "jogo": "Unconscious Mind",
@@ -4009,7 +4035,8 @@
    "status": "na_fila",
    "premios_distintos": 1,
    "prioridade": 116,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "slug": "akropolis"
   },
   {
    "jogo": "Flashback Zombie Kids",
@@ -4073,7 +4100,8 @@
    "status": "na_fila",
    "premios_distintos": 1,
    "prioridade": 118,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "slug": "mysterium-kids"
   },
   {
    "jogo": "Thunder Road: Vendetta",
