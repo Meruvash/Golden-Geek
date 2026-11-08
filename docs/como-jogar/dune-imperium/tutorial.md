@@ -1,10 +1,10 @@
 # Como jogar Duna: Imperium
 
-*Regras conferidas no livro de regras da edição brasileira da Galápagos (Asmodee Brasil), arquivo DUN001_regras_v1.0, de 16 páginas, da Biblioteca de Downloads da Asmodee Brasil, e nos dois folhetos que vêm na caixa, o Guia dos Espaços no Tabuleiro e as Cartas da Casa Hagal, na versão em português publicada pela Dire Wolf. As páginas citadas são as do livro de regras; "Guia" é o folheto dos espaços. Este guia ensina o jogo base para 3 e 4 jogadores. Não vale para o Duna: Imperium Uprising, que é outro jogo.*
+*Regras conferidas no livro de regras da edição brasileira da Galápagos (Asmodee Brasil), arquivo DUN001_regras_v1.0, de 16 páginas, da Biblioteca de Downloads da Asmodee Brasil, e nos dois folhetos que vêm na caixa, o Guia dos Espaços no Tabuleiro e as Cartas da Casa Hagal, na versão em português publicada pela Dire Wolf. As páginas citadas são as do livro de regras; "Guia" é o folheto dos espaços. Este guia ensina o jogo base para 3 e 4 jogadores e, na montagem, a partida de 2 com a Casa Hagal; o modo solo fica no folheto. Não vale para o Duna: Imperium Uprising, que é outro jogo.*
 
 ## setup. Montar a mesa passo a passo
 
-A montagem segue as p. 4 e 5 do manual, na mesma ordem e com as mesmas letras, de A a H. É igual para 3 e 4 jogadores, salvo o disco de Pontos, que começa no 1 com 4 jogadores e no 0 com 3 (passo 15). Com 1 ou 2 jogadores entra a Casa Hagal, com preparação própria (p. 5).
+A montagem segue as p. 4 e 5 do manual, na mesma ordem e com as mesmas letras, de A a H. É igual para 3 e 4 jogadores, salvo o disco de Pontos, que começa no 1 com 4 jogadores e no 0 com 3 (passo 15). Com 2 jogadores entra a Casa Hagal, um rival automático, com preparação própria (no fim desta seção); o modo solo está no folheto dela (p. 5).
 
 **O que vem na caixa** (p. 3):
 
@@ -68,11 +68,15 @@ A montagem segue as p. 4 e 5 do manual, na mesma ordem e com as mesmas letras, d
 
 **D, E e F. Líder, baralho e recursos** (p. 4 e 5)
 
-11. **Cada jogador recebe um Líder**, escolhido ou sorteado, e o põe à sua frente (D). Na primeira partida, o manual recomenda Líderes de um ícone ao lado do nome: Paul Atreides, Glossu "A Fera" Rabban, Conde Memnon Thorvald ou Conde Ilban Richese (p. 4).
+11. **Cada jogador recebe um Líder**, escolhido ou sorteado, e o põe à sua frente (D). Depois do nome, cada Líder tem de um a três pequenos ícones brancos: quanto mais ícones, mais complexo. Na primeira partida, o manual recomenda os de um ícone só: Paul Atreides, Glossu "A Fera" Rabban, Conde Memnon Thorvald ou Conde Ilban Richese (p. 4).
 12. **Cada jogador embaralha o seu baralho inicial de 10 cartas** e o põe virado para baixo à esquerda do Líder (E). As 10 cartas são iguais para todos: Argumento Convincente (2), Adaga (2), Diplomacia (1), Duna, o Planeta Deserto (2), Reconhecimento (1), Buscar Aliados (1) e Anel do Sinete (1) (p. 3 e 5).
-13. **Cada jogador pega 1 água** para o seu estoque (F1). Ao lado do tabuleiro, monte o banco com os Solari, a especiaria e o resto da água (F2). Eles são considerados infinitos: se acabarem, use outra coisa no lugar (p. 5).
+13. **Cada jogador pega 1 água** para o seu estoque (F1). A preparação não dá mais nada: ninguém começa com Solari, especiaria ou Intriga (p. 5). Ao lado do tabuleiro, monte o banco com os marcadores de Solari, de especiaria e o resto da água (F2). Eles são considerados infinitos: se acabarem, use outra coisa no lugar (p. 5).
 
 !fig[O estoque de um jogador: água e peças (F1, G6), baralho inicial (E) e Líder com 2 Agentes (D, G1). Ilustração: manual Galápagos (p. 5)](figuras/setup-estoque.webp)
+
+**O Líder e o Anel do Sinete.** Cada Líder tem duas habilidades (p. 6). A da esquerda vale durante a partida inteira, do jeito que a carta descreve. A da direita, marcada com o ícone do Anel do Sinete, só se ativa quando você joga a carta Anel do Sinete do seu baralho num Turno do Agente: ela manda o Agente como qualquer carta e, além disso, aciona essa habilidade (p. 6 e 16).
+
+!fig[Duque Leto Atreides: os dois ícones brancos depois do nome indicam a complexidade; embaixo, à esquerda, a habilidade que vale sempre; à direita, a do Anel do Sinete. Ilustração: manual Galápagos (p. 5)](figuras/lider.webp)
 
 !fig[O banco: Solari, especiaria e água (F2). Ilustração: manual Galápagos (p. 5)](figuras/setup-banco.webp)
 
@@ -80,17 +84,19 @@ A montagem segue as p. 4 e 5 do manual, na mesma ordem e com as mesmas letras, d
 
 Cada jogador escolhe uma cor e pega todos os componentes dela.
 
-14. **Ponha 2 Agentes sobre o seu Líder.** O terceiro, o Espadachim, fica perto do tabuleiro: ele só entra no jogo se for comprado (G1).
+14. **Ponha 2 Agentes sobre o seu Líder.** O terceiro, o Espadachim, fica perto do tabuleiro: ele só entra no jogo se você o conquistar no espaço Espadachim, que custa 8 Solaris (G1; Guia).
 
 !fig[Os Agentes das quatro cores (G1). Ilustração: manual Galápagos (p. 5)](figuras/setup-agentes.webp)
 
 15. **Ponha um disco na Trilha de Pontuação: no espaço 1 com 4 jogadores, no espaço 0 com 3** (G2). O outro disco é o de Conselheiro e fica no estoque.
-16. **Ponha o marcador de Combate no espaço 0 da Trilha de Combate**, com o lado mostrado na figura do manual para cima; o outro lado, +20, só se usa quando a força passa de 20 (G3; p. 5 e 11).
+16. **Ponha o marcador de Combate no espaço 0 da Trilha de Combate**, com o lado da espada, sem o +20, para cima (G3; p. 5). O lado +20 só se usa quando a força passa de 20 (p. 11).
 17. **Ponha 4 cubos, um no espaço de baixo de cada Trilha de Influência** (G4).
 18. **Os outros 12 cubos são as suas tropas: ponha 3 na guarnição**, o círculo do tabuleiro mais perto de você (G5). As outras 9 ficam no estoque.
 19. **Deixe o resto no seu estoque**, à vista de todos: tropas, os 3 marcadores de Controle e o disco de Conselheiro (G6).
 
-!fig[Discos de Pontos no 0 (G2), marcador na Trilha de Combate (G3) e uma guarnição com 3 tropas (G5). Ilustração: manual Galápagos (p. 5)](figuras/setup-trilhas.webp)
+!fig[Discos de Pontos das quatro cores no espaço 1, numa partida de 4 (G2), e uma guarnição com 3 tropas (G5). Ilustração: manual Galápagos (p. 5)](figuras/setup-trilhas.webp)
+
+!fig[Os marcadores de Combate no espaço 0 da Trilha de Combate, com o lado da espada para cima (G3). Ilustração: manual Galápagos (p. 4)](figuras/setup-combate.webp)
 
 **H. Quem começa** (p. 5)
 
@@ -104,15 +110,29 @@ Cada jogador escolhe uma cor e pega todos os componentes dela.
 |---|---|---|---|
 | 3 | 0 | 1ª e 2ª | não |
 | 4 | 1 | 1ª, 2ª e 3ª | não |
-| 1 ou 2 | 0 | ver o folheto | sim, com preparação própria |
+| 2 | 0 | 1ª e 2ª (FAQ) | sim, com preparação própria (abaixo) |
 
 **O que volta para a caixa:** as 8 Cartas de Conflito que sobraram, sem olhar (p. 4). Por dedução, também as cores sem dono, a Casa Hagal (com 3 ou 4) e os marcadores do Barão, se ninguém joga com ele (p. 3).
 
-> [!mais] **Barão Vladimir Harkonnen.** Quem joga com ele escolhe, depois de toda a montagem e antes da primeira rodada, 2 dos 4 marcadores do Barão, põe sobre o Líder com o lado da Facção para baixo e devolve os outros 2 à caixa sem mostrar. Ele os revela mais tarde, uma vez por partida, para ganhar a recompensa (p. 13; FAQ oficial).
+> [!mais] **Barão Vladimir Harkonnen.** Quem joga com ele escolhe, depois de toda a montagem e antes da primeira rodada, 2 dos 4 marcadores do Barão, põe sobre o Líder com o lado da Facção para baixo e devolve os outros 2 à caixa sem mostrar. Quando revelar e o que ganha está na carta do Líder; isso vale uma vez por partida (p. 13; FAQ oficial).
 
-> [!mais] **1 ou 2 jogadores.** Com 2, entra um rival automático, a Casa Hagal, comandado por cartas: não junta recursos nem pontos, mas ocupa espaços e disputa os Conflitos, agindo depois de cada Turno do Agente do Primeiro Jogador. A preparação dele e o modo solo estão no folheto "Cartas da Casa Hagal" (p. 5; folheto).
+**Partida de 2 jogadores: a Casa Hagal** (folheto "Cartas da Casa Hagal", p. 1)
 
-**Antes de começar, confira:** Mentat deitado no Landsraad; 4 Alianças no alto das trilhas; Baralho de Conflito com 10 cartas (1 de I, 5 de II, 4 de III); Intriga embaralhada; Linha Imperial com 5 cartas; três pilhas da Reserva; cada jogador com Líder, baralho de 10 à esquerda, 1 água, 2 Agentes no Líder, Espadachim ao lado do tabuleiro, disco de Pontos no 0 (no 1 com 4 jogadores), marcador de Combate no 0, 4 cubos nas trilhas e 3 tropas na guarnição; Primeiro Jogador sorteado.
+Com 2 jogadores, monte a mesa como acima (discos de Pontos no 0) e acrescente um terceiro participante automático, a Casa Hagal. Ela não junta recursos, não monta baralho, não ganha recompensas nem Pontos de Vitória: só ocupa espaços e disputa os Conflitos.
+
+1. **Escolha uma cor para a Casa Hagal.** Ponha um cubo dela no espaço de baixo de cada Trilha de Influência; o resto dos cubos fica no estoque dela. Ela começa sem tropas na guarnição.
+2. **Tire do baralho da Casa Hagal as três cartas de Arrakina marcadas "1J"** no canto superior direito. Embaralhe as outras e deixe o baralho virado para baixo, com os três Agentes dela, perto do estoque dela.
+3. **Quando ela age:** logo depois de cada Turno do Agente do Primeiro Jogador, enquanto ela tiver Agente no estoque. Por isso ela pode fazer 2 turnos numa rodada e 3 na seguinte.
+4. **O que ela faz:** revele a carta do topo do baralho dela. Ela manda um Agente ao espaço da carta, se estiver vazio; se estiver ocupado, ignore a carta e revele outra até achar um vazio. Se o baralho acabar ou sair a carta Reembaralhar, embaralhe todas as cartas dela na hora.
+5. **Ela ignora custo e efeito do espaço** e faz só o que a carta mostra: avança na trilha indicada (sem bônus de Influência, mas fazendo a Aliança se puder); recruta 1 tropa por ícone de tropa, que vai direto ao Conflito se o espaço for de Combate e à guarnição se não for; nas cartas Minerar Especiaria, segue a carta e devolve ao banco a especiaria bônus do espaço.
+6. **Em espaço de Combate**, ela também envia até 2 tropas da guarnição ao Conflito, mesmo que a carta não recrute nada.
+7. **No Combate:** no começo da fase, se tiver tropa no Conflito, revele a carta do topo do baralho dela e avance o marcador de Combate dela pelo número de espadas da parte de baixo; ignore o resto. Depois os jogadores jogam as Intrigas de Combate.
+8. **Recompensas:** ela não recebe nenhuma nem ganha controle. Se vencer o Conflito de um espaço controlado por um jogador, tire o marcador de Controle desse jogador.
+9. Cartas e espaços que afetam os oponentes também a afetam, se ela tiver o que é pedido.
+
+Duas coisas o folheto não diz com todas as letras. Como ela só age depois dos Turnos do Agente do Primeiro Jogador, quando ele faz o Turno de Revelar ela para de agir nesta rodada. E, pela FAQ oficial, as recompensas seguem as mesmas regras de uma partida de 3: se a Casa Hagal ficar em 1º, os jogadores seguem com a posição que tiverem; a dela fica sem dono.
+
+**Antes de começar, confira (3 ou 4 jogadores):** Mentat deitado no Landsraad; 4 Alianças no alto das trilhas; Baralho de Conflito com 10 cartas (1 de I, 5 de II, 4 de III); Intriga embaralhada; Linha Imperial com 5 cartas; três pilhas da Reserva; cada jogador com Líder, baralho de 10 à esquerda, 1 água, 2 Agentes no Líder, Espadachim ao lado do tabuleiro, disco de Pontos no 0 (no 1 com 4 jogadores), marcador de Combate no 0, 4 cubos nas trilhas e 3 tropas na guarnição; Primeiro Jogador sorteado.
 
 ?? Partida de 4 jogadores. O que está errado nesta mesa?
 - ( ) Cada jogador com 3 tropas na guarnição e 9 no estoque
@@ -135,12 +155,12 @@ A montagem completa, com figuras, está na seção "Montar a mesa passo a passo"
 
 1. Tabuleiro no meio, Mentat deitado no Landsraad, Alianças no alto das trilhas.
 2. Baralho de Conflito de 10 cartas (I em cima, cinco de II, quatro de III); Intriga embaralhada; Linha Imperial com 5 cartas; três pilhas da Reserva.
-3. Cada jogador: Líder, baralho inicial embaralhado, 1 água, 2 Agentes no Líder, 4 cubos nas trilhas, 3 tropas na guarnição, disco de Pontos no 0 (no 1 com 4 jogadores).
+3. Cada jogador: Líder, baralho inicial embaralhado, 1 água, 2 Agentes no Líder, Espadachim ao lado do tabuleiro, 4 cubos nas trilhas, 3 tropas na guarnição, marcador de Combate no 0, disco de Pontos no 0 (no 1 com 4 jogadores).
 4. Sorteiem quem começa. A vez segue no sentido horário.
 
 ### Seu primeiro turno
 
-A rodada começa com a Carta de Conflito do topo revelada (o prêmio do Combate) e cada jogador comprando 5 cartas do seu baralho (p. 8). Na sua vez, você faz um **Turno do Agente** (p. 9):
+A rodada tem cinco fases: Começo da Rodada, Turnos do Jogador, Combate, Fabricantes e Chamar (p. 8). No Começo, revela-se a Carta de Conflito do topo (o prêmio do Combate) e cada jogador compra 5 cartas do seu baralho. Nos Turnos do Jogador, cada um faz um turno e passa a vez ao vizinho da esquerda, até todos terem revelado. No seu primeiro turno, você faz um **Turno do Agente** (p. 8 e 9):
 
 1. **Jogue uma carta da mão** virada para cima à sua frente.
 2. **Escolha um ícone de Agente da carta**, na coluna da esquerda, e mande um Agente do Líder a um espaço com esse ícone no canto superior esquerdo.
@@ -152,7 +172,7 @@ A rodada começa com a Carta de Conflito do topo revelada (o prêmio do Combate)
 
 Quando acabarem seus Agentes, ou se preferir antes, o seu turno é o **Turno de Revelar**: você revela o resto da mão e usa só a parte de baixo dessas cartas (etapa 2).
 
-> [!resolvido] **Exemplo resolvido** (o do manual, p. 10). João joga Duna, o Planeta Deserto, que tem o ícone de Comércio de Especiaria, e manda um Agente à Bacia Imperial. O espaço não cobra nada e dá 1 especiaria, mais a especiaria bônus acumulada ali; na primeira rodada não há bônus, então João pega 1 especiaria do banco (Guia). A carta não tem efeito na caixa do Agente.
+> [!resolvido] **Exemplo resolvido** (adaptado do manual, p. 10, supondo a primeira rodada). João joga Duna, o Planeta Deserto, que tem o ícone de Comércio de Especiaria, e manda um Agente à Bacia Imperial. O espaço não cobra nada e dá 1 especiaria, mais a especiaria bônus acumulada ali; na primeira rodada não há bônus, então João pega 1 especiaria do banco (Guia). A carta não tem efeito na caixa do Agente.
 
 > [!complete] **Complete.** Agora é a vez de Ana, com uma carta que também tem o ícone de Comércio de Especiaria.
 >
@@ -178,13 +198,13 @@ Quando acabarem seus Agentes, ou se preferir antes, o seu turno é o **Turno de 
 
 ### Ainda não precisa saber
 
-Custos com seta, Influência, Alianças e a tabela dos espaços: etapa 1 e etapa 4. O Turno de Revelar, a Persuasão e as cartas novas: etapa 2. Tropas no Conflito, força, Intrigas de Combate, recompensas e Fabricantes: etapa 3. Intrigas e o fim da partida: etapa 4.
+Custos com seta, Influência, Alianças e a tabela dos espaços: etapa 1 e etapa 4. O Turno de Revelar, a Persuasão e as cartas novas: etapa 2. Tropas no Conflito, força, Intrigas de Combate, recompensas e Fabricantes (os três desertos de especiaria, que acumulam bônus): etapa 3. Intrigas e o fim da partida: etapa 4.
 
 ### Como a partida acaba
 
 Ao fim de cada rodada, se alguém tiver 10 Pontos de Vitória ou mais, ou se o Baralho de Conflito tiver acabado, a partida termina. Vence quem tiver mais pontos (p. 6 e 13).
 
-**Prefere ver?** Um resumo de uma partida em 10 minutos, com as regras. Ele complementa este guia; em caso de diferença, vale o manual.
+**Prefere ver?** Um resumo de uma partida em 10 minutos. Ele complementa este guia; em caso de diferença, vale o manual.
 
 !video[DUNA IMPERIUM - Gameplay resumida em 10 minutos, canal Duque Board Games](https://www.youtube.com/watch?v=CYDTcBKB7cg&t=0s)
 
@@ -192,12 +212,12 @@ Ao fim de cada rodada, se alguém tiver 10 Pontos de Vitória ou mais, ou se o B
 
 ## 0. Antes de tudo: o que é este jogo
 
-Duna: Imperium junta construção de baralho com alocação de trabalhadores, inspirado nos livros de Frank Herbert e no filme do estúdio Legendary (p. 2). Cada jogador é o Líder de uma Casa Maior e disputa apoio político, especiaria e vitórias militares, medidas em Pontos de Vitória (p. 6). O design é de Paul Dennen (p. 15).
+Duna: Imperium junta construção de baralho com alocação de trabalhadores, inspirado no filme do estúdio Legendary e nos livros de Frank Herbert, Brian Herbert e Kevin J. Anderson (p. 2). Cada jogador é o Líder de uma Casa Maior e disputa apoio político, especiaria e vitórias militares, medidas em Pontos de Vitória (p. 6). O design é de Paul Dennen (p. 15).
 
 Duas ideias sustentam o resto:
 
 - **A mesma mão serve duas vezes.** Cada carta tem uma caixa do Agente, usada quando você a joga, e uma caixa de Revelar, usada se ela ficar na mão até o fim (p. 8).
-- **O baralho muda.** Todos começam com as mesmas 10 cartas; as que você adquire mudam os espaços a que tem acesso e a força que leva ao Conflito (p. 6).
+- **O baralho muda.** Todos começam com as mesmas 10 cartas; as que você adquire mudam os espaços a que tem acesso e a força que leva ao Conflito (p. 6 e 14).
 
 ## 1. Como este guia ensina
 
@@ -205,7 +225,14 @@ Quatro etapas, na ordem em que a rodada acontece: o Turno do Agente, o Turno de 
 
 ## 2. Etapa 1: o Turno do Agente
 
-> [!entender] **Para entender.** As cartas são passes para o tabuleiro: quem compra cartas sem olhar os ícones pode ficar sem acesso aos espaços de que precisa (p. 14). Cada espaço recebe um Agente só, então quem joga antes escolhe primeiro (p. 9). Com 2 Agentes, você tem 2 Turnos do Agente por rodada, a não ser que consiga o Mentat ou o Espadachim (p. 6).
+> [!entender] **Para entender.** As cartas são passes para o tabuleiro: quem adquire cartas sem olhar os ícones pode ficar sem acesso aos espaços de que precisa (p. 14). Cada espaço recebe um Agente só, então quem joga antes escolhe primeiro (p. 9). Com 2 Agentes, você tem até 2 Turnos do Agente por rodada, a não ser que consiga o Mentat ou o Espadachim (p. 6).
+
+> [!passos] **Passo a passo: a rodada** (p. 8 e 13)
+> 1. **Começo da Rodada:** revele a Carta de Conflito do topo; cada jogador compra 5 cartas.
+> 2. **Turnos do Jogador:** a partir do Primeiro Jogador, em sentido horário, cada um faz um turno (do Agente ou de Revelar) e passa a vez. Quem já revelou é pulado. A fase acaba quando todos revelaram.
+> 3. **Combate:** resolve o Conflito da rodada (etapa 3).
+> 4. **Fabricantes:** os três desertos de especiaria sem Agente ganham 1 especiaria bônus (etapa 3).
+> 5. **Chamar:** confira o fim; se a partida segue, os Agentes voltam aos Líderes e o Primeiro Jogador passa adiante (etapa 4). Não confunda a fase Chamar com o efeito de carta "chamar um Agente", que traz um Agente de volta no meio da rodada (situações especiais).
 
 > [!passos] **Passo a passo: o Turno do Agente** (p. 9 e 10)
 > 1. Jogue uma carta da mão com pelo menos um ícone de Agente.
@@ -215,13 +242,16 @@ Quatro etapas, na ordem em que a rodada acontece: o Turno do Agente, o Turno de 
 > 5. Resolva, na ordem que quiser: o efeito do espaço, a caixa do Agente da carta e, em espaço de Facção, +1 de Influência com ela.
 > 6. Ignore a caixa de Revelar dessa carta: ela não vale neste turno.
 
-> [!passos] **Passo a passo: os sete ícones de Agente** (p. 9)
-> 1. **Imperador, Guilda Espacial, Bene Gesserit e Fremen:** os dois espaços de cada Facção, à esquerda.
-> 2. **Landsraad:** os cinco espaços verdes do alto.
-> 3. **Cidade:** Arrakina, Cartago, Estação de Pesquisa e Sietch Tabr.
-> 4. **Comércio de Especiaria:** Vender Mélange, Contrato Seguro (a CHOAM) e os três desertos de especiaria.
+> [!passos] **Passo a passo: os sete ícones de Agente** (p. 9; Guia)
+> 1. **Imperador:** Conspirar e Riqueza.
+> 2. **Guilda Espacial:** Paquete e Dobra Espacial.
+> 3. **Bene Gesserit:** Reprodução Seletiva e Segredos.
+> 4. **Fremen:** Guerreiros Resistentes e Trajestiladores.
+> 5. **Landsraad:** os cinco espaços verdes do alto (Alto Conselho, Salão da Oratória, Mentat, Convocar Tropas, Espadachim).
+> 6. **Cidade:** Arrakina, Cartago, Estação de Pesquisa e Sietch Tabr.
+> 7. **Comércio de Especiaria:** Vender Mélange e Contrato Seguro (a CHOAM) e os três desertos de especiaria.
 
-!fig[A carta Legião Sardaukar tem dois ícones de Agente, Imperador e Landsraad: ela pode mandar o Agente a um dos dois espaços do Imperador ou a um dos cinco do Landsraad, mas a um só. Ilustração: manual Galápagos (p. 9)](figuras/icones-agente.webp)
+!fig[A carta Legião Sardaukar tem dois ícones de Agente, Imperador e Landsraad: ela pode mandar o Agente a um dos dois espaços do Imperador ou a um dos cinco do Landsraad, mas a um só. A caixa de Revelar dela envia tropas da guarnição ao Conflito (etapa 3). Ilustração: manual Galápagos (p. 9)](figuras/icones-agente.webp)
 
 **Os espaços do tabuleiro** (Guia; ícones e números na ilustração do tabuleiro, p. 4 e 5). "Combate" marca os espaços que permitem enviar tropas ao Conflito (etapa 3).
 
@@ -231,7 +261,7 @@ Quatro etapas, na ordem em que a rodada acontece: o Turno do Agente, o Turno de 
 | Riqueza | Imperador | | +1 Imperador, 2 Solaris |
 | Paquete (Combate) | Guilda Espacial | 6 especiarias | +1 Guilda, 5 tropas, 2 águas |
 | Dobra Espacial | Guilda Espacial | | +1 Guilda, adquire 1 Dobra Espacial da Reserva |
-| Reprodução Seletiva | Bene Gesserit | 2 especiarias | +1 Bene Gesserit; exclua 1 carta para comprar 2 |
+| Reprodução Seletiva | Bene Gesserit | 2 especiarias | +1 Bene Gesserit; exclua 1 carta para comprar 2 do seu baralho |
 | Segredos | Bene Gesserit | | +1 Bene Gesserit, 1 Intriga; quem tem 4 ou mais Intrigas lhe dá 1, ao acaso |
 | Guerreiros Resistentes (Combate) | Fremen | 1 água | +1 Fremen, 2 tropas |
 | Trajestiladores (Combate) | Fremen | | +1 Fremen, 1 água |
@@ -252,7 +282,7 @@ Quatro etapas, na ordem em que a rodada acontece: o Turno do Agente, o Turno de 
 
 > [!mais] **Custo com seta.** Numa carta ou espaço, a seta separa o custo (à esquerda ou acima) do efeito (à direita ou abaixo). Pagar é opcional, mas sem pagar não há efeito, e cada seta se paga uma vez só por carta jogada. O Acampamento Fremen deixa pagar 2 especiarias para recrutar 3 tropas, mas não 4 especiarias por 6 (p. 9 e 16).
 
-> [!mais] **Mentat.** No espaço Mentat, se o Mentat estiver lá, você o pega e o põe sobre o seu Líder: nesta rodada, ele é mais um Agente seu. Na fase Chamar, volta ao espaço. Se o Mentat não estiver ali (uma Intriga ou uma recompensa de Conflito pode tê-lo levado), o espaço dá só a carta (p. 13 e 16; Guia).
+> [!mais] **Mentat.** No espaço Mentat, se o Mentat estiver lá, você o pega e o põe sobre o seu Líder: nesta rodada, ele é mais um Agente seu. Na fase Chamar, volta ao espaço. Se o Mentat não estiver ali (uma Intriga pode tê-lo levado), o espaço dá só a carta (p. 13 e 16; Guia).
 
 > [!mais] **Espadachim.** No espaço Espadachim, você ganha o seu terceiro Agente, já para esta rodada, e fica com 3 Agentes até o fim. Cada jogador pode ir a esse espaço uma vez por partida (Guia).
 
@@ -260,7 +290,7 @@ Quatro etapas, na ordem em que a rodada acontece: o Turno do Agente, o Turno de 
 
 > [!mais] **Bônus de Controle.** Sob Arrakina, Cartago e Bacia Imperial há uma bandeira. Quem tiver o seu marcador de Controle ali ganha 1 Solari (Arrakina e Cartago) ou 1 especiaria (Bacia Imperial) toda vez que qualquer jogador, ele inclusive, manda um Agente ao espaço. Como se ganha o controle: etapa 3 (p. 10).
 
-> [!mais] **Comprar, descartar, excluir.** Comprar é tirar do topo do seu baralho; vazio, embaralhe o descarte e continue. Descartar é tirar da mão. Excluir devolve à caixa uma carta da mão, do descarte ou em jogo (carta da Reserva volta à pilha); é opcional, salvo como custo ou se a carta mandar se excluir (p. 6 e 16).
+> [!mais] **Comprar, adquirir, descartar, excluir.** Comprar é tirar do topo do seu baralho; adquirir é pagar Persuasão por uma carta nova (etapa 2); vazio, embaralhe o descarte e continue. Descartar é tirar da mão. Excluir devolve à caixa uma carta da mão, do descarte ou em jogo (carta da Reserva volta à pilha); é opcional, salvo como custo ou se a carta mandar se excluir (p. 6 e 16).
 
 > [!mais] **Laço Fremen.** Um efeito com o Laço Fremen vale se você já tem outra carta Fremen em jogo nesta rodada. Duas cartas com o Laço se ativam uma à outra, em qualquer ordem (p. 16).
 
@@ -298,7 +328,7 @@ Quatro etapas, na ordem em que a rodada acontece: o Turno do Agente, o Turno de 
 
 ## 3. Etapa 2: o Turno de Revelar e o seu baralho
 
-> [!entender] **Para entender.** O Turno de Revelar fecha a sua rodada. A parte de baixo das cartas guardadas dá Persuasão, que compra cartas, e espadas, que somam força no Conflito (p. 11). Cada carta pede uma escolha: jogá-la agora pelo ícone ou guardá-la pelo que revela depois.
+> [!entender] **Para entender.** O Turno de Revelar fecha a sua rodada. A parte de baixo das cartas guardadas dá Persuasão, que adquire cartas novas, e espadas, que somam força no Conflito (p. 11). Cada carta pede uma escolha: jogá-la agora pelo ícone ou guardá-la pelo que revela depois.
 
 > [!passos] **Passo a passo: o Turno de Revelar** (p. 11)
 > 1. **Revelar Cartas:** ponha todas as cartas que restam na mão viradas para cima, separadas das que você jogou nos Turnos do Agente.
@@ -311,7 +341,7 @@ Quatro etapas, na ordem em que a rodada acontece: o Turno do Agente, o Turno de 
 !fig[O Turno de Revelar de João: Espião Imperial, Tóptero do Contrabandista e Stilgar dão 4 de Persuasão e 4 espadas no total. Ilustração: manual Galápagos (p. 11)](figuras/revelar.webp)
 
 > [!passos] **Passo a passo: adquirir cartas** (p. 11 e 16)
-> 1. Compre quantas cartas a sua Persuasão pagar. A Persuasão de várias fontes se soma, e a de uma fonte se divide entre cartas.
+> 1. Adquira quantas cartas a sua Persuasão pagar. A Persuasão de várias fontes se soma, e a de uma fonte se divide entre cartas.
 > 2. A carta adquirida vai para a pilha de descarte, não para a mão. Você só a usa quando o descarte for embaralhado.
 > 3. A Linha Imperial é reposta na hora com o topo do Baralho Imperial; a carta nova já pode ser adquirida.
 > 4. Se a carta tiver efeito ao Adquirir, ele vale uma vez, agora.
@@ -319,7 +349,7 @@ Quatro etapas, na ordem em que a rodada acontece: o Turno do Agente, o Turno de 
 
 > [!atencao] Força exige tropa. Sem nenhuma tropa sua no Conflito, a sua força é 0, e as espadas reveladas não contam (p. 11).
 
-> [!mais] **Dobra Espacial.** Essa carta da Reserva não se compra com Persuasão: só pelo espaço Dobra Espacial ou por um ícone de Dobra Espacial (p. 11 e 16; FAQ oficial).
+> [!mais] **Dobra Espacial.** Essa carta da Reserva não se adquire com Persuasão: só pelo espaço Dobra Espacial ou por um ícone de Dobra Espacial (p. 11 e 16; FAQ oficial).
 
 > [!mais] **Força acima de 20.** Vire o marcador de Combate para o lado +20 e recomece do início da trilha (p. 11).
 
@@ -357,16 +387,18 @@ Quatro etapas, na ordem em que a rodada acontece: o Turno do Agente, o Turno de 
 
 ## 4. Etapa 3: o Conflito, o Combate e os Fabricantes
 
-> [!entender] **Para entender.** Cada rodada tem uma disputa só, a da Carta de Conflito revelada no começo (p. 8). As tropas são a aposta: cada uma vale 2 de força, só chega ao Conflito com um Agente num espaço de Combate e, no fim, volta ao estoque (p. 10 e 12). O manual lembra que quem se compromete mais tarde decide com mais informação (p. 14).
+> [!entender] **Para entender.** Cada rodada tem uma disputa só, a da Carta de Conflito revelada no começo (p. 8). As tropas são a aposta: cada uma vale 2 de força, em regra só chega ao Conflito com um Agente num espaço de Combate e, no fim, volta ao estoque (p. 10 e 12). O manual lembra que quem se compromete mais tarde decide com mais informação (p. 14).
 
 > [!passos] **Passo a passo: recrutar e enviar tropas** (p. 10 e 16)
 > 1. **Recrutar:** para cada ícone de tropa na carta ou no espaço, pegue uma tropa do estoque e ponha na sua guarnição. Sem tropas no estoque, não recruta.
-> 2. **Enviar:** só no turno em que o seu Agente vai a um espaço de Combate (deserto e espadas cruzadas).
+> 2. **Enviar:** em regra, só no turno em que o seu Agente vai a um espaço de Combate (deserto e espadas cruzadas).
 > 3. Envie ao Conflito quantas quiser das tropas recrutadas neste turno, pela carta ou pelo espaço.
 > 4. Envie também até 2 tropas a mais que já estavam na guarnição.
 > 5. As recrutadas que você não enviar ficam na guarnição.
 
 > [!atencao] Recrutar fora do Combate não leva ao Conflito. Em Convocar Tropas, por exemplo, as 4 tropas vão todas para a guarnição, porque o espaço não é de Combate (p. 10).
+
+> [!mais] **Exceções que mandam tropas ao Conflito.** Cartas podem passar por cima da regra normal (p. 6): a Legião Sardaukar, por exemplo, envia até três tropas da guarnição ao Conflito pela caixa de Revelar (ilustração da p. 9). E quem controla o espaço da Carta de Conflito revelada pode enviar 1 tropa do estoque (p. 10).
 
 !fig[Abgail joga Duncan Idaho e manda o Agente a Cartago, onde está o marcador de Controle de João. Ilustração: manual Galápagos (p. 10)](figuras/exemplo-cartago.webp)
 
@@ -380,19 +412,21 @@ Quatro etapas, na ordem em que a rodada acontece: o Turno do Agente, o Turno de 
 
 > [!passos] **Passo a passo: empates** (p. 12)
 > 1. Empate no 1º lugar: ninguém vence; cada empatado recebe a 2ª recompensa. Com 4 jogadores, se dois empatam no 1º, os outros dois disputam a 3ª.
-> 2. Empate no 2º lugar: cada empatado recebe a 3ª recompensa (que só existe com 4 jogadores).
+> 2. Empate no 2º lugar: com 4 jogadores, cada empatado recebe a 3ª recompensa. Com 3, ficam sem nada (o manual não trata do caso; leitura da p. 12, onde a 3ª só existe com 4).
 > 3. Empate no 3º lugar: ninguém recebe nada.
+
+> [!edicao] **Três empatados no 1º, com 4 jogadores.** O manual diz que cada empatado no 1º recebe a 2ª recompensa, mas não diz o que o quarto recebe nesse caso (p. 12). Combinem antes da partida.
 
 !fig[A carta Arrakina Sitiada: a 1ª recompensa dá 1 Ponto de Vitória e o controle de Arrakina; a 2ª, 4 Solaris; a 3ª, 2 Solaris. Ilustração: manual Galápagos (p. 12)](figuras/combate.webp)
 
 > [!passos] **Passo a passo: Fabricantes** (p. 13)
 > 1. Olhe A Grande Chã, a Bacia Hagga e a Bacia Imperial.
-> 2. Cada uma que estiver sem Agente recebe 1 especiaria do banco, no lugar da especiaria bônus.
-> 3. O bônus se soma ao que já estava ali e sai todo com o próximo Agente que for ao espaço.
+> 2. Cada uma que estiver sem Agente recebe 1 especiaria do banco no lugar da especiaria bônus, somando ao bônus que já estava ali.
+> 3. O próximo Agente que for ao espaço leva a especiaria base e todo o bônus.
 
 !fig[A Bacia Hagga dá 2 especiarias mais o bônus acumulado no ícone de Fabricante, para onde aponta a seta. Ilustração: manual Galápagos (p. 13)](figuras/fabricante.webp)
 
-> [!mais] **Ganhar o controle.** A Carta de Conflito com o nome de Arrakina, Cartago ou Bacia Imperial dá, ao vencedor, o controle do espaço: ele põe um marcador de Controle na bandeira, no lugar do marcador de quem controlava antes (p. 10 e 16).
+> [!mais] **Ganhar o controle.** A Carta de Conflito com o nome de Arrakina, Cartago ou Bacia Imperial dá, ao vencedor, o controle do espaço: ele põe um marcador de Controle na bandeira, no lugar do marcador de quem controlava antes (p. 10 e 16). O manual só diz que o marcador antigo é substituído; o natural é ele voltar ao estoque do dono.
 
 > [!mais] **Defesa de quem controla.** Quando for revelada a Carta de Conflito de um espaço que você já controla, você pode enviar 1 tropa do seu estoque direto ao Conflito (p. 10).
 
@@ -400,7 +434,7 @@ Quatro etapas, na ordem em que a rodada acontece: o Turno do Agente, o Turno de 
 
 > [!mais] **Perder e recuar.** Tropa perdida volta ao estoque. Tropa que recua volta do Conflito para a guarnição (p. 16).
 
-> [!mais] **Mentat como recompensa.** Se uma recompensa der o Mentat, você o pega de onde estiver e fica com ele como Agente na rodada seguinte (p. 16).
+> [!mais] **Mentat como recompensa.** Se uma recompensa der o Mentat, você o pega de onde estiver e fica com ele como Agente na rodada seguinte (p. 16). Na fase Chamar ele volta ao espaço do Mentat como sempre (p. 13), e você o pega no começo da rodada seguinte (FAQ oficial, carta Sort Through the Chaos).
 
 > [!resolvido] **Exemplo resolvido** (o do manual, p. 10 e 12). Abgail joga Duncan Idaho e vai a Cartago; João, que controla o espaço, ganha 1 Solari. Cartago dá a ela 1 tropa e 1 Intriga; pela carta, ela paga 1 água para recrutar outra tropa e comprar 1 carta. Ela envia as 2 tropas novas e mais 1 da guarnição. No Combate, João tem 8 e Abgail 6. João passa; Abgail joga a Intriga Emboscada (+4) e vai a 10; Denis, sem tropa no Conflito, não participa. Os dois passam. Abgail leva a 1ª recompensa de Arrakina Sitiada (1 ponto e o controle de Arrakina); João, a 2ª (4 Solaris); com 3 jogadores não há 3ª.
 
@@ -426,7 +460,7 @@ Quatro etapas, na ordem em que a rodada acontece: o Turno do Agente, o Turno de 
 > - ( ) Nenhuma
 > = Sem tropa recrutada no turno, só valem as até 2 da guarnição (p. 10).
 >
-> ?? Ninguém foi à Grande Chã nesta rodada; ela já tinha 1 especiaria bônus. Na rodada seguinte você vai lá. Quanto ganha?
+> ?? No começo desta rodada, a Grande Chã tinha 1 especiaria bônus, e ninguém foi lá. Na rodada seguinte você vai lá. Quanto ganha?
 > - ( ) 3
 > - ( ) 4
 > - (x) 5
@@ -436,7 +470,7 @@ Quatro etapas, na ordem em que a rodada acontece: o Turno do Agente, o Turno de 
 
 > [!entender] **Para entender.** Os pontos vêm das trilhas das Facções, das Alianças, dos Conflitos e de cartas e Intrigas (p. 6 e 7). As 4 Alianças trocam de mão: cada uma é de quem estiver mais alto na trilha (p. 7).
 
-!fig[A trilha da Bene Gesserit: o ponto de vitória no segundo espaço, o bônus (uma Intriga) no quarto, e o marcador de Aliança no alto. Ilustração: manual Galápagos (p. 7)](figuras/faccao.webp)
+!fig[A trilha da Bene Gesserit: o Ponto de Vitória no espaço de 2 de Influência, o bônus (uma Intriga) no de 4, e o marcador de Aliança no alto. Ilustração: manual Galápagos (p. 7)](figuras/faccao.webp)
 
 > [!passos] **Passo a passo: Influência e Aliança** (p. 7)
 > 1. Seu cubo começa no espaço de baixo de cada trilha. Agente em espaço da Facção, carta ou efeito: suba 1 espaço por Influência ganha.
@@ -445,7 +479,7 @@ Quatro etapas, na ordem em que a rodada acontece: o Turno do Agente, o Turno de 
 > 4. **Aliança:** o primeiro a chegar a 4 pega o marcador de Aliança dessa Facção e ganha o ponto dele.
 > 5. Se outro jogador passar a um espaço **mais alto** que o seu nessa trilha, ele toma o marcador: você perde o ponto, ele ganha.
 
-> [!atencao] Empatar não toma a Aliança. Só quem passa a um espaço mais alto que o do dono leva o marcador (p. 7).
+> [!atencao] Empatar não toma a Aliança. Só quem passa a um espaço mais alto que o do dono leva o marcador (p. 7). Mas o empate conta se o dono depois perder Influência (abaixo, "Perder a Aliança ao cair").
 
 > [!passos] **Passo a passo: Cartas de Intriga** (p. 7)
 > 1. Você as recebe principalmente em Cartago, Conspirar e Segredos, e onde houver o ícone de Intriga.
@@ -457,13 +491,13 @@ Quatro etapas, na ordem em que a rodada acontece: o Turno do Agente, o Turno de 
 
 > [!passos] **Passo a passo: Chamar e o fim** (p. 13)
 > 1. Na fase Chamar, confira: alguém tem 10 Pontos de Vitória ou mais, ou o Baralho de Conflito acabou? Então é o fim.
-> 2. Se não: o Mentat volta ao espaço dele, os Agentes voltam aos Líderes e o marcador de Primeiro Jogador passa ao vizinho da esquerda (sentido horário). Nova rodada.
+> 2. Se não: o Mentat volta ao espaço dele (se não estiver lá), os Agentes voltam aos Líderes e o marcador de Primeiro Jogador passa ao vizinho da esquerda (sentido horário). Nova rodada.
 > 3. **No fim:** cada um pode jogar quantas Intrigas de Fim de Jogo tiver. Depois, vence quem tiver mais Pontos de Vitória.
 > 4. **Empate:** vence quem tiver mais especiaria; depois, mais Solari; depois, mais água; depois, mais tropas na guarnição.
 
-> [!mais] **Ganhar 2 de Influência de uma vez.** Os dois espaços vão para a mesma Facção; não se dividem entre duas (p. 16).
+> [!mais] **Ganhar 2 de Influência de uma vez.** Quando o efeito deixa escolher a Facção e dá 2 de Influência, as duas vão para a mesma Facção; não se dividem entre duas (p. 16).
 
-> [!mais] **Perder a Aliança ao cair.** Se o dono da Aliança perde Influência e fica empatado com outro jogador que já estava ali, este recebe o marcador. Se cair a 3 ou menos, o marcador vai para quem tiver 4 ou mais; se ninguém tiver, volta ao tabuleiro (FAQ oficial).
+> [!mais] **Perder a Aliança ao cair.** O dono da Aliança que perde Influência com a Facção perde o marcador em dois casos. Se já estava empatado com outro jogador, quem estava empatado pega o marcador (com mais de um empatado, o dono escolhe qual). Se cair a 3 de Influência ou menos, o marcador vai para um jogador com 4 ou mais; se ninguém tiver 4, volta ao tabuleiro. Quem perde o marcador perde o ponto dele, e quem o recebe ganha (p. 7; FAQ oficial).
 
 > [!mais] **Baralho de Intriga vazio.** No caso raro de acabar, embaralhe o descarte de Intriga para formar um novo (FAQ oficial).
 
@@ -513,7 +547,7 @@ Quatro etapas, na ordem em que a rodada acontece: o Turno do Agente, o Turno de 
 
 > [!edicao] **Nome em inglês.** No exemplo da p. 12, o manual escreve uma vez "Arrakeen" e "Abby": são Arrakina e Abgail.
 
-> [!dica] Os Fremen dão água, que abre os desertos; a especiaria vira Solari, que pagam o Landsraad. O espaço sem custo de cada Facção dá Influência enquanto você junta recursos (p. 14).
+> [!dica] Os Fremen dão água, que abre os desertos; a especiaria vira Solaris, que pagam o Landsraad. O espaço sem custo de cada Facção dá Influência enquanto você junta recursos (p. 14).
 
 ## 7. Avaliação final
 
@@ -562,13 +596,13 @@ Responda sem consultar. Cada resposta diz o que reler.
 
 **Montagem:** ver "Antes de começar, confira", no fim da montagem.
 
-**Rodada:** 1. Começo: revele o Conflito, cada um compra 5. 2. Turnos do Jogador, sentido horário, até todos revelarem. 3. Combate. 4. Fabricantes. 5. Chamar.
+**Rodada:** 1. Começo: revele o Conflito, cada um compra 5. 2. Turnos do Jogador, um turno por vez, sentido horário, até todos revelarem. 3. Combate. 4. Fabricantes. 5. Chamar.
 
 **Turno do Agente:** uma carta, um ícone, um espaço vazio com o mesmo ícone. Custo antes. Efeito do espaço + caixa do Agente + Influência (espaço de Facção), na ordem que quiser. Seta: opcional, uma vez.
 
 **Turno de Revelar:** revele a mão; caixas de Revelar só dessas cartas; adquira com Persuasão (Linha, Elo com Arrakis, A Especiaria Deve Fluir) para o descarte; força = 2 por tropa no Conflito + 1 por espada revelada (0 sem tropa); limpe tudo para o descarte.
 
-**Tropas:** recrutar = estoque para guarnição. Enviar ao Conflito só em espaço de Combate: as recrutadas no turno + até 2 da guarnição.
+**Tropas:** recrutar = estoque para guarnição. Enviar ao Conflito, em regra, só em espaço de Combate: as recrutadas no turno + até 2 da guarnição. Exceções: cartas que mandam enviar e a tropa de defesa de quem controla o espaço do Conflito.
 
 **Combate:** Intrigas de Combate em rodadas de passe; 1ª e 2ª recompensa (3ª só com 4); força 0 não ganha; empate no 1º: 2ª para cada; empate no 2º: 3ª para cada. Tropas voltam ao estoque.
 

@@ -23,8 +23,10 @@ A montagem segue a página de preparação do Aprenda a Jogar (p. 4), passos 1 a
 | Cartas das facções | 4 líderes e 2 Vizires das Rapinas; 3 personagens e 15 tarefas do Malandro |
 | Cartas de resumo | 16 |
 | Dados | 2, com faces de 0 a 3 |
+| Marcadores de naipe | 12, só para o mapa do inverno (p. 23) |
+| Cartas de Instruções | 4, só para o Passo a Passo |
 
-!fig[Uma partida de Root em andamento, em foto da editora brasileira: guerreiros dos Marqueses (laranja), das Rapinas (azul) e da Aliança (verde) espalhados pelo mapa e os dois dados de batalha. Não é a montagem inicial. Imagem: MeepleBR](../../root/fotos/mesa-1.webp)
+!fig[Uma partida de Root em andamento, em foto da editora brasileira: guerreiros dos Marqueses (laranja) espalhados pelo mapa, um guerreiro das Rapinas (azul) e os dois dados de batalha. Não é a montagem inicial. Imagem: MeepleBR](../../root/fotos/mesa-1.webp)
 
 **Quais facções entram** (p. 4 e 22; Leis de Root, 5.2, p. 5)
 
@@ -48,13 +50,13 @@ Outras combinações estão na p. 22 e na regra de alcance das Leis (5.2).
 
 3. **Distribuam as cartas.** Com 2 jogadores, tirem antes as 4 cartas de domínio (Leis de Root, 5.1.3; p. 22). Embaralhem o baralho comum e deem 3 cartas a cada jogador. Não confundam esse baralho com as cartas próprias de algumas facções (p. 4).
 
-!fig[As cartas do baralho comum: cada uma tem um naipe e, na maioria, um efeito que pode ser criado. Ilustração: manual Meeple BR (p. 4)](figuras/setup-cartas.webp)
+!fig[O verso das cartas do baralho comum de 54 cartas, de onde saem as 3 cartas de cada jogador. Ilustração: manual Meeple BR (p. 4)](figuras/setup-cartas.webp)
 
 4. **Ponham as 4 ruínas** nos 4 locais do mapa marcados com "R" (p. 4).
 
 !fig[Uma ruína e o local marcado com "R" que ela cobre no mapa. Ilustração: manual Meeple BR (p. 4)](figuras/setup-ruinas.webp)
 
-5. **Montem o suprimento de itens:** 12 itens nos espaços do topo do mapa, 2 Bolsas, 2 Botas, 1 Besta, 1 Martelo, 2 Espadas, 2 Chás e 2 Moedas (p. 4; Leis de Root, 5.1.5). Os outros 11 itens são do Malandro (passo 7).
+5. **Montem o suprimento de itens:** 12 itens nos espaços do topo do mapa, 2 Bolsas, 2 Botas, 1 Besta, 1 Martelo, 2 Espadas, 2 Chás e 2 Moedas (p. 4; Leis de Root, 5.1.5). Dos outros 11 itens, 4 são marcados com "R" e vão para debaixo das ruínas (passo 24) e 7 são marcados com "S", os possíveis itens iniciais do Malandro (passo 25); os que o personagem não usa voltam à caixa (Leis de Root, B.1.2, 9.3.4 e 9.3.5). Sem o Malandro na partida, os itens "R" e "S" ficam na caixa e as ruínas não escondem nada: só bloqueiam os locais delas o jogo todo (p. 6; a preparação das ruínas com itens é um passo do Malandro, 9.3.4).
 
 !fig[Os 12 itens do suprimento, em duas fileiras: Bolsa, Bota, Besta ou Martelo, Espada, Chá e Moeda. Ilustração: manual Meeple BR (p. 4)](figuras/setup-itens.webp)
 
@@ -80,12 +82,12 @@ Outras combinações estão na p. 22 e na regra de alcance das Leis (5.2).
 14. Ponham 1 ninho e 6 guerreiros numa clareira de canto que não seja a clareira inicial de outro jogador e, se possível, no canto diagonalmente oposto a uma clareira inicial. Com os Marqueses na mesa, é o canto oposto à Torre da Guarda, o único sem guerreiro deles.
 15. Escolham 1 das 4 cartas de líder e ponham no espaço do líder; as outras 3 ficam ao lado, viradas para cima.
 16. Ponham as 2 cartas de Vizir Leal nas colunas do Decreto que a carta de líder indica.
-17. Ponham os 6 ninhos restantes na trilha de Ninhos, da direita para a esquerda.
+17. Ponham os 6 ninhos restantes na trilha de Ninhos, da direita para a esquerda; se sobrar espaço vazio, é o mais à esquerda. Os PV de cada espaço estão impressos na trilha, no tabuleiro (o manual mostra só um trecho, p. 12).
 
 **Aliança** (Leis de Root, 8.3, p. 7)
 
 18. Separem 10 guerreiros.
-19. Ponham as 3 bases nos espaços delas no tabuleiro de facção.
+19. Ponham as 3 bases nos espaços delas no tabuleiro de facção. Cada base tem um naipe impresso: raposa, coelho ou rato (Leis de Root, 8.4.1).
 20. Ponham os 10 marcadores de simpatia na trilha de Simpatia.
 21. Comprem 3 cartas do baralho comum e ponham, viradas para baixo, como baralho de apoiadores. A Aliança não põe nada no mapa.
 
@@ -94,9 +96,9 @@ Outras combinações estão na p. 22 e na regra de alcance das Leis (5.2).
 22. Escolham uma carta de personagem (Ladrão, Funileiro ou Andarilho) e ponham o peão do Malandro em qualquer floresta.
 23. Embaralhem as 15 tarefas e abram 3 ao lado do mapa.
 24. Tirem as 4 ruínas do mapa, ponham debaixo de cada uma um dos itens marcados com "R" (Bolsa, Bota, Martelo e Espada), embaralhem e devolvam as ruínas aos locais "R".
-25. Peguem os itens "S" da carta de personagem: Chá, Moeda e Bolsa vão viradas para cima nas trilhas do tabuleiro; os outros, na Mochila. Ponham 1 marcador de relação de cada outra facção em "Indiferente".
+25. Peguem os itens "S" da carta de personagem: Chá, Moeda e Bolsa vão virados para cima nas trilhas do canto esquerdo do tabuleiro; os outros, na Mochila, a área do tabuleiro do Malandro onde ficam os itens fora das trilhas (p. 17). Ponham 1 marcador de relação de cada outra facção em "Indiferente".
 
-!fig[O mapa montado para quatro facções: Torre da Guarda no canto de cima, à esquerda, com serraria, oficina e recrutador; um guerreiro laranja em cada clareira menos no canto oposto, onde ficam o ninho e os 6 guerreiros azuis; o peão do Malandro numa floresta; ruínas nos locais "R" e os 12 itens no topo. Ilustração: manual Meeple BR (Passo a Passo através de Root, p. 3)](figuras/setup-mapa.webp)
+!fig[O mapa montado para quatro facções, na montagem fixa do Passo a Passo: Torre da Guarda no canto de cima, à esquerda, com a serraria na mesma clareira e a oficina e o recrutador em clareiras vizinhas; um guerreiro laranja em cada clareira menos no canto oposto, onde ficam o ninho e os 6 guerreiros azuis; o peão do Malandro numa floresta; ruínas nos locais "R" e os 12 itens no topo. Ilustração: manual Meeple BR (Passo a Passo através de Root, p. 3)](figuras/setup-mapa.webp)
 
 **O que volta para a caixa:** tabuleiros e peças das facções fora da partida; com 2 jogadores, as 4 cartas de domínio; os itens "S" que o personagem do Malandro não usa; os 12 marcadores de naipe (Leis de Root, 5.1.3 e 9.3.5; p. 23). Os líderes não escolhidos ficam ao lado das Rapinas.
 
@@ -140,10 +142,10 @@ A montagem completa, com figuras, está na seção "Montar a mesa passo a passo"
 Todo turno tem três fases, nesta ordem: **Amanhecer**, **Dia** e **Anoitecer**. O seu tabuleiro de facção diz o que fazer em cada uma (p. 2). Três regras valem para todos:
 
 1. **Governar.** Você governa uma clareira se tem nela mais guerreiros e construções somados que qualquer outro jogador. Empate: ninguém governa (p. 5).
-2. **Mover.** Leve quantos guerreiros quiser de uma clareira para outra ligada por caminho. Você precisa governar a de origem ou a de destino (p. 5).
+2. **Mover.** Leve quantos guerreiros quiser de uma clareira para uma vizinha, isto é, ligada a ela por um caminho (Leis de Root, G.1.1). Você precisa governar a de origem ou a de destino (p. 5).
 3. **Cartas.** Cada carta tem um naipe: raposa, coelho, rato ou pássaro. O pássaro vale como qualquer naipe; mas se a regra pede pássaro, só pássaro serve (p. 6).
 
-No Anoitecer, quase todas as facções compram 1 carta, mais 1 para cada bônus de compra descoberto no tabuleiro, e descartam até ficar com 5 (p. 11).
+No Anoitecer, as facções compram 1 carta, mais 1 para cada bônus de compra descoberto no tabuleiro, e descartam até ficar com 5 (p. 11). O Malandro é a exceção: compra 1 mais 1 por Moeda (p. 18).
 
 | Facção | O primeiro turno, em uma linha |
 |---|---|
@@ -166,7 +168,7 @@ No Anoitecer, quase todas as facções compram 1 carta, mais 1 para cada bônus 
 >
 > ?? Você tem 2 guerreiros numa clareira onde o adversário tem 3. A clareira vizinha está vazia. Pode mover para lá?
 > - ( ) Sim: mover é sempre livre
-> - ( ) Não: a de origem é governada pelo adversário
+> - ( ) Sim: basta ter guerreiros na clareira de origem
 > - (x) Não: você não governa a de origem nem a de destino, que está vazia
 > = Para mover, é preciso governar a clareira de origem ou a de destino. Clareira vazia não é governada por ninguém (p. 5; Leis de Root, 2.5 e 4.2.1).
 
@@ -227,7 +229,7 @@ São cinco etapas: o turno comum (mapa, governar, mover, cartas e criação); a 
 
 > [!mais] **Ruínas sem Malandro.** Sem o Malandro na partida, os locais com ruína ficam bloqueados o jogo inteiro (p. 6).
 
-> [!resolvido] **Exemplo resolvido.** Os Marqueses têm uma oficina numa clareira de rato e outra numa clareira de raposa. Querem criar a Mochila Pouco Usada, uma carta de item que custa 1 rato. Ativam a oficina de rato, pegam do suprimento o item da carta, põem na caixa de Itens Artesanais, ganham 1 PV e descartam a carta. A oficina de rato não pode ativar de novo neste turno; a de raposa ainda pode (p. 7 e 11).
+> [!resolvido] **Exemplo resolvido.** Os Marqueses têm uma oficina numa clareira de rato e outra numa clareira de raposa. Querem criar a Mochila Pouco Usada, uma carta de item que custa 1 rato e, na figura do manual, dá uma Bolsa. Ativam a oficina de rato, pegam a Bolsa do suprimento, põem na caixa de Itens Artesanais, ganham 1 PV e descartam a carta. A oficina de rato não pode ativar de novo neste turno; a de raposa ainda pode (p. 7 e 11).
 
 > [!complete] **Complete.** Uma clareira tem 2 guerreiros da Aliança e, dos Marqueses, 1 guerreiro e 1 serraria.
 >
@@ -250,8 +252,8 @@ São cinco etapas: o turno comum (mapa, governar, mover, cartas e criação); a 
 > [!entender] **Para entender.** A batalha é rápida: dois dados, e cada lado causa o dano de um deles, limitado pelos guerreiros que tem ali. Construções e marcadores só caem depois dos guerreiros e valem 1 PV para quem os remove (p. 8).
 
 > [!passos] **Batalha** (p. 8 e 9; Leis de Root, 4.3, p. 4)
-> 1. O atacante escolhe uma clareira onde tem guerreiros e um inimigo com peças ali como defensor.
-> 2. O defensor pode jogar uma carta de emboscada correspondente à clareira: causa 2 de dano na hora. O atacante pode frustrar a emboscada jogando outra emboscada correspondente; aí as duas são descartadas e nada acontece.
+> 1. O atacante escolhe uma clareira onde tem guerreiros (ou, no caso do Malandro, o peão, etapa 4) e um inimigo com peças ali como defensor (Leis de Root, 4.3).
+> 2. O defensor pode jogar uma carta de emboscada correspondente à clareira. São 5 cartas com o nome Emboscada no baralho: uma de rato, uma de coelho, uma de raposa e duas de pássaro (Leis de Root, 2.1.2). A emboscada causa 2 de dano na hora. O atacante pode frustrar a emboscada jogando outra emboscada correspondente; aí as duas são descartadas e nada acontece.
 > 3. Rolem os dois dados. O atacante causa o maior resultado; o defensor, o menor. Nenhum lado causa, pelos dados, mais dano do que o número de guerreiros que tem na clareira.
 > 4. Efeitos que somam dano adicional entram agora e não têm esse limite. Se o defensor não tem nenhum guerreiro ali, está indefeso: o atacante causa 1 dano adicional.
 > 5. Os dois lados removem peças ao mesmo tempo. Quem recebe o dano escolhe quais peças tira, mas precisa tirar todos os guerreiros antes de qualquer construção ou marcador.
@@ -267,7 +269,7 @@ São cinco etapas: o turno comum (mapa, governar, mover, cartas e criação); a 
 
 > [!complete] **Complete.** A Aliança tem 1 guerreiro e uma base numa clareira. Os Marqueses atacam com 2 guerreiros. Os dados dão 2 e 0.
 >
-> ?? Quanto dano cada lado causa? Lembre que a Aliança, ao defender, usa o dado maior (Guerrilha).
+> ?? Quanto dano cada lado causa? A Aliança tem a habilidade Guerrilha: quando defende, ela usa o dado maior e o atacante, o menor (p. 14).
 > - ( ) Marqueses 2, Aliança 0
 > - (x) Marqueses 0, Aliança 1
 > - ( ) Marqueses 0, Aliança 2
@@ -291,7 +293,7 @@ São cinco etapas: o turno comum (mapa, governar, mover, cartas e criação); a 
 > 3. Batalhar: inicie uma batalha.
 > 4. Marcha: faça até 2 movimentos.
 > 5. Recrutar: 1 guerreiro em cada recrutador. Só uma vez por turno.
-> 6. Erguer: numa clareira que você governa, com local livre, ponha a construção mais à esquerda da trilha escolhida. Pague em madeira o custo do topo da coluna dela; a madeira pode vir de qualquer clareira ligada a essa por clareiras que você governa. Ganhe os PV do espaço de onde a construção saiu.
+> 6. Erguer: numa clareira que você governa, com local livre, ponha a construção mais à esquerda da trilha escolhida. Pague em madeira o custo do topo da coluna dela; a madeira pode vir dessa clareira ou de qualquer clareira governada por você ligada a ela por clareiras que você governa (Leis de Root, 6.5.4.II). Ganhe os PV do espaço de onde a construção saiu.
 > 7. Hora Extra: gaste uma carta do naipe de uma clareira com serraria e ponha 1 madeira nessa serraria.
 > 8. Aves de Aluguel: depois das 3 ações, cada carta de pássaro gasta dá 1 ação a mais.
 > 9. Anoitecer: compre 1 carta, mais 1 por bônus de compra descoberto, e descarte até ficar com 5.
@@ -307,18 +309,18 @@ Valores lidos no tabuleiro dos Marqueses ilustrado no manual (p. 4).
 
 > [!passos] **Turno das Rapinas** (p. 12 e 13; Leis de Root, 7.4 a 7.7)
 > 1. Amanhecer: se a mão está vazia, compre 1 carta. Depois, ponha 1 ou 2 cartas em quaisquer colunas do Decreto; só uma delas pode ser pássaro.
-> 2. Se não há nenhum ninho seu no mapa, ponha 1 ninho e 3 guerreiros na clareira com menos guerreiros.
+> 2. Se não há nenhum ninho seu no mapa, ponha 1 ninho e 3 guerreiros na clareira com menos guerreiros e onde todas essas peças possam ser postas (Leis de Root, 7.4.3). O manual não diz como desempatar entre clareiras com o mesmo número de guerreiros.
 > 3. Dia: primeiro, crie cartas com os ninhos.
-> 4. Depois, cumpra o Decreto da coluna da esquerda para a da direita; dentro de cada coluna, na ordem que quiser. Cada carta exige a ação da coluna numa clareira do naipe dela (pássaro: qualquer clareira).
+> 4. Depois, cumpra o Decreto da coluna da esquerda para a da direita (as colunas são, nesta ordem, Recrutar, Mover, Batalhar e Construir, p. 12 e 13); dentro de cada coluna, na ordem que quiser. Cada carta exige a ação da coluna numa clareira do naipe dela (pássaro: qualquer clareira).
 > 5. Recrutar: 1 guerreiro numa clareira com ninho. Mover: mova pelo menos 1 guerreiro a partir de uma clareira. Batalhar: inicie uma batalha numa clareira. Construir: ponha 1 ninho numa clareira que você governa, com local livre e sem ninho.
-> 6. Anoitecer: ganhe os PV do espaço vazio mais à direita da trilha de Ninhos; depois compre 1, mais 1 por bônus descoberto, e descarte até 5.
+> 6. Anoitecer: ganhe os PV do espaço vazio mais à direita da trilha de Ninhos (impressos embaixo de cada espaço; alguns espaços também escondem um bônus de compra, p. 12); depois compre 1, mais 1 por bônus descoberto, e descarte até 5.
 > 7. Lordes da Floresta: as Rapinas governam também quando empatam em guerreiros e construções, mas não governam clareira vazia (Leis de Root, 7.2.2).
 
 !fig[Um Decreto com cinco cartas: um pássaro e uma raposa em Recrutar, um coelho em Mover, um pássaro em Batalhar e outro em Construir. Ilustração: manual Meeple BR (p. 13)](figuras/decreto.webp)
 
 > [!passos] **Tumulto** (p. 13)
 > Se uma ação do Decreto não pode ser cumprida, por qualquer motivo, as Rapinas caem em tumulto, nesta ordem:
-> 1. Humilhar: perca 1 PV por carta de pássaro no Decreto, Vizires incluídos.
+> 1. Humilhar: perca 1 PV por carta de pássaro no Decreto, Vizires incluídos. Os manuais não dizem se a pontuação pode ficar abaixo de zero.
 > 2. Expurgar: descarte todas as cartas do Decreto, menos os 2 Vizires Leais.
 > 3. Destituir: vire o líder para baixo e escolha um novo entre os virados para cima; ponha os Vizires nas colunas que ele indica.
 > 4. Descansar: o Dia acaba; vá para o Anoitecer.
@@ -329,11 +331,11 @@ Valores lidos no tabuleiro dos Marqueses ilustrado no manual (p. 4).
 
 > [!mais] **Desprezo pelo Comércio.** Quando as Rapinas criam um item, ganham só 1 PV, qualquer que seja o valor da carta (p. 12; Leis de Root, 7.2.3).
 
-> [!mais] **Os quatro líderes das Rapinas.** Construtor (Vizires em Recrutar e Mover): ignora o Desprezo pelo Comércio. Carismático (Recrutar e Batalhar): cada recrutamento põe 2 guerreiros. Comandante (Mover e Batalhar): 1 dano adicional ao atacar. Déspota (Mover e Construir): 1 PV a mais quando remove em batalha construção ou marcador. Sem líder virado para cima, desvire todos (Leis de Root, 7.7.3 e 7.8).
+> [!mais] **Os quatro líderes das Rapinas.** Construtor (Vizires em Recrutar e Mover): ignora o Desprezo pelo Comércio. Carismático (Recrutar e Batalhar): cada recrutamento põe 2 guerreiros. Comandante (Mover e Batalhar): 1 dano adicional ao atacar. Déspota (Mover e Construir): 1 PV a mais em cada batalha em que remove ao menos uma construção ou marcador inimigo (7.8.4). Sem líder virado para cima, desvire todos (Leis de Root, 7.7.3 e 7.8).
 
 !fig[O exemplo de Dia dos Marqueses: dois movimentos de Marcha levam guerreiros laranja para a clareira de coelho, que passam a governar, e o espaço vazio dela recebe uma oficina nova. Ilustração: manual Meeple BR (p. 11)](figuras/marqueses-dia.webp)
 
-> [!resolvido] **Exemplo resolvido.** O Decreto das Rapinas tem 2 Vizires (pássaros) e um pássaro que elas acrescentaram. Na coluna Construir há um pássaro, mas todas as clareiras que elas governam já têm ninho. A ação não pode ser cumprida: tumulto. Perdem 3 PV (três pássaros), descartam o pássaro acrescentado e todas as outras cartas, menos os Vizires, trocam de líder, reposicionam os Vizires e vão para o Anoitecer, onde ainda ganham os PV da trilha de Ninhos (p. 13; contas conferidas).
+> [!resolvido] **Exemplo resolvido.** O líder das Rapinas é o Comandante, com os 2 Vizires (pássaros) em Mover e Batalhar. Elas puseram um pássaro na coluna Construir, mas todas as clareiras que governam já têm ninho. A ação não pode ser cumprida: tumulto. Perdem 3 PV (três pássaros no Decreto). Descartam o pássaro acrescentado e as outras cartas do Decreto; os Vizires ficam. Viram o Comandante para baixo, escolhem outro líder, põem os Vizires nas colunas dele e vão para o Anoitecer, onde ainda ganham os PV da trilha de Ninhos (p. 13; Leis de Root, 7.7 e 7.8; contas conferidas).
 
 > [!complete] **Complete.** Os Marqueses ainda têm só a oficina inicial. Querem erguer a segunda.
 >
@@ -360,8 +362,8 @@ Valores lidos no tabuleiro dos Marqueses ilustrado no manual (p. 4).
 
 > [!passos] **Turno da Aliança** (p. 14 a 16; Leis de Root, 8.4 a 8.6)
 > 1. Amanhecer: primeiro, revolte-se quantas vezes quiser; depois, espalhe simpatia quantas vezes quiser.
-> 2. Revolta: escolha uma clareira simpática do naipe de uma base ainda no seu tabuleiro e gaste 2 apoiadores desse naipe. Remova todas as peças inimigas dali, ponha a base, ponha guerreiros em número igual às clareiras simpáticas desse naipe (contando esta) e 1 guerreiro na seção de Oficiais.
-> 3. Espalhar simpatia: escolha uma clareira sem simpatia vizinha de uma clareira simpática (se não há nenhuma, qualquer clareira). Gaste apoiadores do naipe dela na quantidade impressa acima do marcador mais à esquerda da trilha de Simpatia, ponha o marcador e ganhe os PV do espaço que ficou vazio.
+> 2. Revolta: escolha uma clareira simpática do naipe de uma base ainda no seu tabuleiro e gaste 2 apoiadores desse naipe. Remova todas as peças inimigas dali, ponha a base num local livre (ela é uma construção, Leis de Root, 2.2.3), ponha guerreiros em número igual às clareiras simpáticas desse naipe (contando esta) e 1 guerreiro na seção de Oficiais.
+> 3. Espalhar simpatia: escolha uma clareira sem simpatia vizinha de uma clareira simpática (se não há nenhuma, qualquer clareira). Gaste apoiadores do naipe dela na quantidade impressa acima do marcador mais à esquerda da trilha de Simpatia, ponha o marcador e ganhe os PV impressos no espaço que ficou vazio. O custo sobe ao longo da trilha (a figura da p. 15 mostra a passagem de 2 para 3); os valores completos estão no tabuleiro da Aliança, e o manual não diz onde ficam os bônus de compra dela: leia no tabuleiro.
 > 4. Dia, com cartas da mão, em qualquer ordem: Criar (com simpatia); Mobilizar (ponha 1 carta da mão no baralho de apoiadores); Treinar (gaste 1 carta do naipe de uma base que está no mapa para pôr 1 guerreiro em Oficiais).
 > 5. Anoitecer: uma operação militar por oficial, em qualquer combinação: Mover; Batalhar; Recrutar (1 guerreiro numa clareira com base); Organizar (tire 1 guerreiro seu de uma clareira sem simpatia, ponha simpatia ali e ganhe os PV). Depois compre 1, mais 1 por bônus descoberto, e descarte até 5.
 > 6. Ultraje: quem remove uma simpatia ou move guerreiros para uma clareira simpática põe uma carta da mão, do naipe dela, no baralho de apoiadores. Sem carta assim, mostra a mão, e a Aliança compra 1 carta do baralho comum para os apoiadores.
@@ -369,21 +371,21 @@ Valores lidos no tabuleiro dos Marqueses ilustrado no manual (p. 4).
 
 !fig[Uma revolta: na clareira de raposa simpática, o ninho das Rapinas e dois guerreiros dos Marqueses são removidos e a base de raposa entra, com guerreiros verdes. Ilustração: manual Meeple BR (p. 15)](figuras/revolta.webp)
 
-> [!mais] **Limite de apoiadores.** Sem nenhuma base no mapa, o baralho de apoiadores comporta só 5 cartas; o que passar é descartado. Apoiadores só valem pelo naipe: não se cria nem se embosca com eles (p. 14; Leis de Root, 8.2.3).
+> [!mais] **Limite de apoiadores.** Sem nenhuma base no mapa, o baralho de apoiadores comporta só 5 cartas; o que passar é descartado. Apoiadores ficam virados para baixo, mas a Aliança pode olhá-los quando quiser. Só valem pelo naipe: não se cria nem se embosca com eles (p. 14; Leis de Root, 8.2.3).
 
 > [!mais] **Lei Marcial.** Se a clareira escolhida para a simpatia tem 3 ou mais guerreiros de outro jogador, gaste 1 apoiador a mais (p. 15).
 
-> [!mais] **Base removida.** A Aliança descarta todos os apoiadores do naipe da base, pássaros incluídos, e remove metade dos oficiais, arredondando para cima. Cada clareira tem no máximo 1 simpatia (Leis de Root, 8.2.4 e 8.2.5).
+> [!mais] **Base removida.** A Aliança descarta todos os apoiadores do naipe da base, pássaros incluídos, e remove metade dos oficiais, arredondando para cima. Se não sobrar base no mapa, descarta apoiadores até ficar com 5. A base removida volta para o tabuleiro da Aliança, como toda construção removida (Leis de Root, 8.2.4 e G.1.28). Cada clareira tem no máximo 1 simpatia (8.2.5).
 
 > [!passos] **Turno do Malandro** (p. 17 a 20; Leis de Root, 9.4 a 9.6)
 > 1. Amanhecer: desvire 2 itens por Chá virado para cima na trilha, e mais 3. Depois, pode deslizar: mover o peão para uma clareira ou floresta vizinha sem gastar Bota. Deslizar é o único jeito de entrar numa floresta.
-> 2. Dia: cada ação exaure (vira para baixo) um item não danificado e virado para cima. Chá, Moeda e Bolsa exauridos saem da trilha e vão para a Mochila.
-> 3. Mover: exaure 1 Bota (mais 1 se o destino tem guerreiros de facção hostil). O Malandro move sem governar nada.
+> 2. Dia: cada ação exaure (vira para baixo) um item não danificado e virado para cima. Chá, Moeda e Bolsa exauridos saem da trilha e vão para a Mochila; quando desvirados, voltam para a trilha deles, que comporta 3 itens cada (Leis de Root, 9.2.5). Item danificado vai para a seção de Itens Danificados da Mochila e não pode ser exaurido até ser consertado (p. 17 a 19).
+> 3. Mover: exaure 1 Bota (mais 1 se o destino tem guerreiros de facção hostil) para ir a uma clareira vizinha. O Malandro move sem precisar governar a origem ou o destino (Ágil, Leis de Root, 9.2.3).
 > 4. Batalhar: exaure 1 Espada. Ataque: exaure 1 Besta e remove 1 guerreiro inimigo da clareira (sem guerreiro dele ali, outra peça dele).
-> 5. Explorar: exaure 1 Tocha, pega o item de uma ruína na clareira e ganha 1 PV; ruína vazia sai do mapa.
+> 5. Explorar: exaure 1 Tocha, pega o item de uma ruína na clareira, põe virado para cima na Mochila ou na trilha dele e ganha 1 PV; ruína vazia sai do mapa (Leis de Root, 9.5.3).
 > 6. Ajuda: exaure qualquer item e dá uma carta do naipe da clareira a um jogador com peças ali; depois pode pegar um item da caixa de Itens Artesanais dele.
 > 7. Tarefa: numa clareira do naipe da tarefa, exaure os 2 itens que ela mostra. Escolha: comprar 2 cartas, ou 1 PV por tarefa desse naipe já cumprida, contando esta. Abra uma tarefa nova.
-> 8. Criar: 1 Martelo por naipe do custo, todos valendo o naipe da clareira. Reparar: 1 Martelo conserta 1 item danificado. Ação Especial: 1 Tocha faz a ação da carta de personagem.
+> 8. Criar: 1 Martelo por símbolo de naipe no custo da carta, todos valendo o naipe da clareira; item criado vai virado para cima para a Mochila ou para a trilha dele (Leis de Root, 9.5.8). Reparar: 1 Martelo conserta 1 item danificado. Ação Especial: 1 Tocha faz a ação da carta de personagem.
 > 9. Anoitecer: numa floresta, conserte todos os itens danificados. Compre 1 carta, mais 1 por Moeda virada para cima na trilha, e descarte até 5. Por fim, se a Mochila e os Danificados somam mais itens que 6 mais 2 por Bolsa na trilha, devolva o excesso à caixa.
 
 !fig[Os três estados de um item (virado para cima, exaurido e danificado) e os deslizamentos possíveis do peão do Malandro, para clareiras e florestas vizinhas. Ilustração: manual Meeple BR (p. 17)](figuras/malandro-itens.webp)
@@ -429,7 +431,7 @@ Valores lidos no tabuleiro dos Marqueses ilustrado no manual (p. 4).
 
 ## 6. Etapa 5: vencer a partida
 
-> [!entender] **Para entender.** Quase sempre vence quem chega a 30 PV primeiro. As cartas de domínio abrem outro caminho: quem já tem 10 PV troca a contagem de pontos por um objetivo de território. É uma aposta para quem está atrás ou para quem vê que não chega aos 30 (p. 2 e 21).
+> [!entender] **Para entender.** Quase sempre vence quem chega a 30 PV primeiro. As cartas de domínio abrem outro caminho: quem já tem 10 PV troca a contagem de pontos por um objetivo de território. Elas não podem ser jogadas cedo no jogo (p. 2 e 21).
 
 > [!passos] **Vitória** (p. 2 e 21; Leis de Root, 3)
 > 1. O primeiro a chegar a 30 PV vence na hora. Se dois chegam juntos, vence quem está jogando o turno.
@@ -456,15 +458,15 @@ Valores lidos no tabuleiro dos Marqueses ilustrado no manual (p. 4).
 
 > [!suavez] **Sua vez.**
 >
-> ?? A Aliança já tem 30 PV, conquistados no próprio turno. No turno seguinte, os Marqueses removem uma simpatia e também chegam a 30. Quem vence?
-> - (x) A Aliança, que chegou a 30 primeiro
-> - ( ) Os Marqueses, porque o turno é deles
-> - ( ) Ninguém: a partida só acaba no fim da rodada
-> = Quem chega a 30 vence na hora, e a partida acaba ali: a Aliança venceu no próprio turno. O desempate pelo dono do turno só vale quando dois chegam ao mesmo tempo (Leis de Root, 3.1).
+> ?? A Aliança chega a 30 PV no meio do próprio Dia, ao espalhar simpatia, e ainda tem ações por fazer. O que acontece?
+> - (x) Ela vence na hora, e a partida acaba ali
+> - ( ) Ela termina o turno e vence no fim da rodada
+> - ( ) Os outros jogadores ainda jogam um turno cada
+> = O primeiro a chegar a 30 PV vence imediatamente (Leis de Root, 3.1).
 
 ## 7. Situações especiais
 
-> [!edicao] **Aprenda a Jogar e Leis de Root.** Os dois manuais são da Meeple BR, mas de anos diferentes (2021 e 2022). Quando diferem, valem as Leis (Leis de Root, 1.1.1). Neste guia, isso pesa em três pontos: o jogador inicial é sorteado (o Aprenda a Jogar não diz quem começa); as Rapinas começam num canto que não seja a clareira inicial de outro jogador, de preferência o oposto; e a coalizão do Malandro só existe com 4 jogadores ou mais.
+> [!edicao] **Aprenda a Jogar e Leis de Root.** Os dois manuais são da Meeple BR, mas de anos diferentes (2021 e 2022). Quando diferem, valem as Leis (Leis de Root, 1.1.1). Neste guia, isso pesa em três pontos: o jogador inicial é sorteado (o Aprenda a Jogar não diz quem começa); as Rapinas começam num canto que não seja a clareira inicial de outro jogador e, se possível, obrigatoriamente no canto diagonalmente oposto a uma clareira inicial (7.3.2); e a coalizão do Malandro só existe com 4 jogadores ou mais, como dizem as Leis (9.2.8) e o texto da carta de domínio mostrada na p. 21.
 
 > [!edicao] **Nomes.** As Leis dizem Bolsa e o Aprenda a Jogar, "sacola"; este guia usa Bolsa. O "Vagabundo" das Leis é um personagem de expansão, não o Malandro (Leis de Root, D.4).
 
@@ -501,8 +503,8 @@ Responda sem voltar ao texto. Errou? A explicação diz qual etapa reler.
 ?? O Malandro quer entrar numa clareira com guerreiros de uma facção hostil. Quantas Botas exaure?
 - ( ) 1
 - (x) 2
-- ( ) Nenhuma: o Malandro é Ágil
-= Ágil dispensa governar, não as Botas; clareira com guerreiros hostis custa 1 Bota a mais (etapa 4; p. 19).
+- ( ) Nenhuma: o Malandro não precisa governar para mover
+= Mover sem governar não dispensa as Botas; clareira com guerreiros hostis custa 1 Bota a mais (etapa 4; p. 19).
 
 ?? Com 3 jogadores, as Rapinas ativam um domínio de pássaro. Como vencem?
 - ( ) Chegando a 30 PV
@@ -514,7 +516,7 @@ Responda sem voltar ao texto. Errou? A explicação diz qual etapa reler.
 
 ## 9. Para consultar durante a partida
 
-**Turno:** Amanhecer, Dia, Anoitecer. No Anoitecer, quase todos compram 1 carta, mais 1 por bônus descoberto, e descartam até 5.
+**Turno:** Amanhecer, Dia, Anoitecer. No Anoitecer, todos compram 1 carta, mais 1 por bônus descoberto (o Malandro, por Moeda), e descartam até 5.
 
 **Governar:** mais guerreiros e construções somados; empate, ninguém (Rapinas governam no empate). **Mover:** governar a origem ou o destino.
 
@@ -525,7 +527,7 @@ Responda sem voltar ao texto. Errou? A explicação diz qual etapa reler.
 | Facção | Amanhecer | Dia | Anoitecer |
 |---|---|---|---|
 | Marqueses | 1 madeira por serraria | Criar; até 3 ações (+1 por pássaro): Batalhar, Marcha, Recrutar, Erguer, Hora Extra | Comprar e descartar |
-| Rapinas | 1 ou 2 cartas no Decreto (no máximo 1 pássaro); sem ninho, ninho novo | Criar; cumprir o Decreto ou tumulto | PV da trilha de Ninhos; comprar e descartar |
+| Rapinas | Mão vazia: compre 1; 1 ou 2 cartas no Decreto (no máximo 1 pássaro); sem ninho, ninho novo e 3 guerreiros | Criar; cumprir o Decreto ou tumulto | PV da trilha de Ninhos; comprar e descartar |
 | Aliança | Revolta; espalhar simpatia | Criar, Mobilizar, Treinar | Operações por oficial: Mover, Batalhar, Recrutar, Organizar; comprar e descartar |
 | Malandro | Desvirar 2 por Chá, +3; deslizar | Exaurir itens: Mover, Batalhar, Ataque, Explorar, Ajuda, Tarefa, Criar, Reparar, Ação Especial | Consertar na floresta; comprar 1 +1 por Moeda; descartar; limite de itens |
 

@@ -40,7 +40,7 @@ Cada linha: onde está no tutorial → fonte → situação.
 | Grande Chã custa 2 águas; sem pagar não vai | Guia; p. 9 | conferida |
 | Fim: 10 pontos ou Conflito vazio, ao fim da rodada | p. 6 e 13 | conferida |
 
-**Etapa 1**: passo a passo (p. 9 e 10), sete ícones e quais espaços cada um abre (p. 9; Guia), tabela dos 22 espaços (Guia p. 1 e 2; tabela de Vender Mélange 2→6, 3→8, 4→10, 5→12 lida na ilustração do tabuleiro a 500 dpi, p. 4 e 5), seta (p. 9 e 16), Mentat (p. 6, 13, 16; Guia), Espadachim e Alto Conselho (Guia), bônus de Controle (p. 10), comprar/descartar/excluir (p. 6 e 16), Laço Fremen (p. 16), caixas exclusivas por turno (p. 8). Todas conferidas. Ponto delicado: "Salão da Oratória" é o nome do Guia; no tabuleiro o rótulo fica cortado na emenda das duas páginas da ilustração.
+**Etapa 1**: passo a passo (p. 9 e 10), sete ícones e quais espaços cada um abre (p. 9; Guia), tabela dos 22 espaços (Guia p. 1 e 2; tabela de Vender Mélange 2→6, 3→8, 4→10, 5→12 lida na ilustração do tabuleiro a 500 dpi, p. 4 e 5), seta (p. 9 e 16), Mentat (p. 6, 13, 16; Guia), Espadachim e Alto Conselho (Guia), bônus de Controle (p. 10), comprar/descartar/excluir (p. 6 e 16), Laço Fremen (p. 16), caixas exclusivas por turno (p. 8). Todas conferidas.
 
 **Etapa 2**: ordem do Revelar (p. 11), só as cartas reveladas agora (p. 11), adquirir e repor a Linha (p. 11), efeito ao Adquirir (p. 16), força 2 por tropa + 1 por espada, 0 sem tropa (p. 11), +20 (p. 11), limpar (p. 11), Dobra Espacial só por ícone ou espaço (p. 11; FAQ "Foldspace"), carta comprada no Revelar (FAQ "Reveal turn"). Conferidas.
 
@@ -75,7 +75,7 @@ Vídeo: "DUNA IMPERIUM - Gameplay resumida em 10 minutos", Duque Board Games, ac
 - `tools/vicios.py` (função `avisos`) no tutorial e no JSON: zero aviso.
 - Travessão e meia-risca no tutorial: 0. Exclamação fora das marcas de bloco: 0.
 - Conversor do site (`tools/como_jogar_md.py`, função `pagina`, gerado só no scratchpad, sem tocar no repositório): 26 perguntas de múltipla escolha renderizadas, nenhuma marcação sobrando, todas as imagens com caminho válido; "Leitura do essencial: cerca de 10 min".
-- Extensão: cerca de 6.535 palavras com letra (alvo do editor: 5.000 a 6.500 para jogo médio/pesado), 4 etapas. A tabela dos 22 espaços e a montagem com 20 passos são o que mais ocupa.
+- Extensão (antes das correções): cerca de 6.535 palavras com letra (alvo do editor: 5.000 a 6.500 para jogo médio/pesado), 4 etapas. A tabela dos 22 espaços e a montagem com 20 passos são o que mais ocupa.
 - Legibilidade (índice de Flesch adaptado ao português, cálculo aproximado com sílabas por grupos de vogais, sem tabelas nem legendas): cerca de 86. É informação, não meta; as listas curtas puxam o número para cima.
 
 ## 6. Pontos delicados e lacunas
@@ -92,3 +92,32 @@ Vídeo: "DUNA IMPERIUM - Gameplay resumida em 10 minutos", Duque Board Games, ac
 - O "Comece" ensina o primeiro Turno do Agente, mas o primeiro Turno de Revelar só aparece em duas linhas e remete à etapa 2; quem nunca jogou precisa ler a etapa 2 antes do fim da primeira rodada.
 - A tabela de espaços é densa para leitura de celular; funciona melhor como consulta.
 - Nenhum teste com pessoas nem teste de execução independente foi feito; este relatório é sinal de lacunas, não prova de que o texto ensina.
+
+## 8. Correções depois das auditorias independentes (08/11/2026)
+
+Auditor de regras: APROVADO COM CORREÇÕES. Partida simulada: SIM COM AJUSTES para 3 e 4; NÃO para 2. O que mudou no tutorial:
+
+1. **Perda da Aliança** reescrita pelo FAQ: empatado pega o marcador (com vários, o dono escolhe); cair a 3 ou menos: vai para um jogador com 4 ou mais, senão volta ao tabuleiro; o aviso "Empatar não toma a Aliança" agora remete a essa regra.
+2. **Figuras:** legenda de `setup-trilhas.webp` corrigida (discos no espaço 1, partida de 4); recorte novo `setup-combate.webp` com o marcador de Combate; `carta.webp` ampliado para mostrar F e G; `icones-agente.webp` sem o fragmento de texto; recorte novo `lider.webp`; legenda de `faccao.webp` com "espaço de 2 / de 4 de Influência"; legenda da Legião Sardaukar cita a caixa de Revelar.
+3. Exemplo de João no "Comece": "adaptado do manual, p. 10, supondo a primeira rodada".
+4. Envio de tropas: "em regra" só em espaço de Combate, com bloco de exceções (Legião Sardaukar, p. 9; cartas acima da regra, p. 6; tropa de defesa, p. 10); folha de consulta ajustada.
+5. Empate no 2º com 3 jogadores: sem recompensa, dito como leitura da p. 12; três empatados no 1º com 4: bloco `[!edicao]` (o manual não diz).
+6. Marcador de Combate: lado da espada, sem o +20 (p. 5).
+7. Autores da série (p. 2); p. 6 e 14 na ideia do baralho; "até 2 Turnos do Agente"; regra dos 2 de Influência reescrita; tabela por jogadores com "1ª e 2ª (FAQ)" para 2; vídeo sem "com as regras"; marca de interpretação de "Salão da Oratória" retirada do dossiê e desta auditoria.
+8. **Partida de 2 com a Casa Hagal:** bloco na montagem com preparação e funcionamento (folheto p. 1); duas leituras marcadas como tais (a Casa Hagal para depois do Revelar do Primeiro Jogador; recompensas pela FAQ). Abertura ajustada.
+9. Quadro do Líder e do Anel do Sinete (p. 6 e 16) e ícones de complexidade descritos.
+10. "Ninguém começa com Solari, especiaria ou Intriga" (p. 5, por omissão).
+11. Espadachim "conquistado no espaço Espadachim, 8 Solaris"; "adquirir" (Persuasão) separado de "comprar" (baralho) em todo o texto, com definição no bloco de termos.
+12. Barão: remete à carta do Líder para o momento e a recompensa.
+13. As cinco fases da rodada no "Seu primeiro turno" e num passo a passo no início da etapa 1, com a diferença entre a fase Chamar e o efeito "chamar um Agente".
+14. Mentat: na fase Chamar ele volta ao espaço; quem o ganhou como recompensa o pega no começo da rodada seguinte (p. 13 e 16; FAQ).
+15. "Fabricantes" definidos na primeira menção; passo 2 diz "somando ao bônus".
+16. (ver 5.)
+17. Os sete ícones numerados, com os espaços de cada um.
+18. Marcador de Controle substituído: volta ao estoque do dono, dito como leitura (o manual não diz).
+19. "Monte a mesa" do "Comece" inclui Espadachim e marcador de Combate.
+20. Solari/Solaris como no manual: "Solari" para o recurso e para 1; "Solaris" no plural.
+21. Pergunta da Grande Chã: "no começo desta rodada ela tinha 1 de bônus".
+22. Alternância explícita: cada um faz um turno e passa a vez.
+
+**Portões depois das correções:** `checar_comece.py` aprovado; `vicios.py` sem aviso no tutorial e no JSON; travessão e meia-risca: 0; prévia gerada só no scratchpad com o conversor: 26 perguntas, sem marcação sobrando, todas as figuras existem; "Leitura do essencial: cerca de 11 min". **Extensão:** cerca de 7.600 palavras com letra, acima do teto de 6.500 por causa do bloco da Casa Hagal e das exceções pedidas; nada foi cortado para compensar.

@@ -139,7 +139,7 @@ Classificação: V = verificada nesta sessão; I = interpretada; L = lacuna. "Gu
 - Bacia Hagga (Comércio de Especiaria, Combate, 1 água): 2 especiarias + bônus.
 - Bacia Imperial (Comércio de Especiaria, Combate): 1 especiaria + bônus; controlador ganha 1 especiaria.
 - Convocar Tropas (Landsraad, 4 Solaris): 4 tropas.
-- Salão da Oratória (Landsraad): 1 tropa; +1 de Persuasão no seu Turno de Revelar se tiver Agente ali. I quanto ao nome: o rótulo do tabuleiro fica cortado na emenda das p. 4 e 5 da ilustração; o Guia escreve "Salão da Oratória". V pelo Guia
+- Salão da Oratória (Landsraad): 1 tropa; +1 de Persuasão no seu Turno de Revelar se tiver Agente ali. Nome conforme o Guia.
 - Mentat (Landsraad, 2 Solaris): compra 1 carta; pega o Mentat.
 - Espadachim (Landsraad, 8 Solaris, uma vez por partida): ganha o terceiro Agente, já nesta rodada.
 - Paquete (Guilda Espacial, Combate, 6 especiarias): +1 Guilda, 5 tropas, 2 águas.
@@ -184,7 +184,7 @@ Classificação: V = verificada nesta sessão; I = interpretada; L = lacuna. "Gu
 - I2. 2 de Influência: +1 PV; caiu abaixo de 2, perde esse PV.
 - I3. 4 de Influência: bônus impresso no espaço; cair abaixo de 4 não devolve; possível ganhar de novo.
 - I4. O primeiro a chegar a 4 faz a Aliança: pega o marcador e ganha o PV dele. Quem passa a um espaço mais alto toma o marcador e o PV.
-- I5. FAQ: quem tem a Aliança e perde Influência perde o marcador se estava empatado com outro (o empatado o recebe) ou se cair a 3 ou menos (vai para quem tiver 4 ou mais; se ninguém, volta ao tabuleiro). [FAQ "Alliance"] V
+- I5. FAQ: quem tem a Aliança e perde Influência com a Facção perde o marcador (a) se já estava empatado com outro jogador: o empatado o pega; com mais de um empatado, o dono escolhe; (b) se cair a 3 ou menos: o marcador vai para um jogador com 4 ou mais; se ninguém tiver, volta ao tabuleiro. [FAQ "Alliance"] V. Quem recebe no caso (b), se houver mais de um com 4 ou mais: o FAQ não diz. L
 - I6. Ganhar 2 de Influência de uma vez: na mesma Facção. [BR p. 16] V
 - I7. Intrigas: viradas para baixo, fora do baralho; você pode olhar as suas; revela ao jogar; depois vão para o descarte de Intriga. Tipos: Trama (no seu Turno do Agente ou de Revelar), Combate (só no Combate), Fim de Jogo (só no fim). [BR p. 7] V
 - I8. Fontes principais: Cartago, Conspirar, Segredos e o ícone de Intriga. [BR p. 7] V
@@ -199,7 +199,21 @@ Classificação: V = verificada nesta sessão; I = interpretada; L = lacuna. "Gu
 - H2-1. Com 2, a Casa Hagal é um Rival: não junta recursos, não monta baralho, não ganha recompensas nem PV; manda Agentes e disputa Conflitos.
 - H2-2. Age depois de cada Turno do Agente do Primeiro Jogador, enquanto tiver Agente.
 - H2-3. Preparação: cubos abaixo das trilhas; sem tropas na guarnição; tirar do baralho as três cartas de Arrakina marcadas "1J".
+- H2-5. Rival: revela a carta do topo; Agente no espaço da carta se vazio, senão revela outra; baralho vazio ou carta Reembaralhar: reembaralha. Ignora custos e efeitos do espaço; só o da carta: avança na trilha (sem bônus, faz Aliança se puder), recruta 1 tropa por ícone (ao Conflito se espaço de Combate, senão guarnição), Minerar Especiaria: segue a carta e devolve o bônus ao banco (2 jogadores). Em espaço de Combate envia também até 2 da guarnição. [folheto p. 1] V
+- H2-6. Combate: no começo da fase 3, com tropa no Conflito, revela a carta do topo e soma as espadas da parte de baixo. [folheto p. 1] V
+- H2-7. Não ganha recompensas nem controle; vencendo Conflito de espaço controlado por jogador, remove o marcador dele. [folheto p. 1] V
+- H2-8. Depois do Turno de Revelar do Primeiro Jogador, a Casa Hagal não age mais na rodada (ela age depois de cada Turno do Agente dele). I. Recompensas dos jogadores quando a Casa Hagal fica bem colocada: pela FAQ ("Conflict": regras iguais para 1, 2 ou 3 jogadores), cada jogador recebe a recompensa da sua posição e a da Casa Hagal fica sem dono. I
 - H2-4. FAQ (errata): tirar também as duas cartas de Salão da Oratória e as duas de Convocar Tropas. Errata do folheto da expansão *Ascensão de Ix*, não do jogo base. I: não entra no tutorial; registrada aqui.
+
+**Acréscimos depois das auditorias independentes (08/11/2026)**
+- P-F2. A preparação só dá 1 água: ninguém começa com Solari, especiaria ou Intriga. [BR p. 5] I (por omissão do manual)
+- P-D2. Ícones de complexidade: pequenos ícones brancos depois do nome do Líder (Duque Leto Atreides tem dois, na ilustração da p. 5). [BR p. 4 e 5] V
+- P-G3b. Marcador de Combate: o lado da espada, sem o +20, para cima. [BR p. 5, ilustração; p. 11] V
+- A8b. Exceções ao envio só em espaço de Combate: cartas que mandam enviar (Legião Sardaukar, caixa de Revelar: "Envie até três tropas de sua guarnição para o Conflito", ilustração da p. 9; cartas suplantam regras, p. 6) e a tropa de defesa de quem controla (p. 10). V
+- K4b. Empate no 2º com 3 jogadores: sem recompensa (a 3ª só existe com 4). I (o manual não trata)
+- K4c. Três empatados no 1º com 4 jogadores: cada um recebe a 2ª; o que recebe o quarto, o manual não diz. L
+- C1b. Marcador de Controle substituído: o manual não diz para onde vai; o tutorial sugere o estoque do dono. I
+- A11b. Mentat ganho como recompensa: volta ao espaço na fase Chamar (p. 13) e o vencedor o pega no começo da rodada seguinte (FAQ, "Sort Through the Chaos"). V
 
 **Regras que costumam ser jogadas errado** (fonte: os negritos e as notas do próprio manual, que sinalizam onde ele espera erro; não consultei fórum): tropas recrutadas fora de espaço de Combate não vão ao Conflito (exemplo de Denis, p. 10); máximo de 2 tropas da guarnição (exemplo de João, p. 10); tropas do Conflito voltam ao estoque, não à guarnição (negrito, p. 12); força 0 sem tropa, mesmo com espadas (negrito, p. 11); só a caixa de Revelar das cartas reveladas agora (p. 11); a Aliança só muda para quem passa a um espaço mais alto (negrito, p. 7); seta paga uma vez só (exemplo do Acampamento Fremen, p. 9).
 
