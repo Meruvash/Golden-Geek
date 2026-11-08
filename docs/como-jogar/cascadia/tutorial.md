@@ -89,7 +89,7 @@ A montagem completa, com figuras, está na seção "Montar a mesa passo a passo"
 
 ### Seu primeiro turno
 
-1. **Olhe as 4 fichas do centro.** Se as 4 forem do mesmo animal, elas saem e entram 4 novas, tiradas do saco uma a uma (p. 6).
+1. **Olhe as 4 fichas do centro.** Se as 4 forem do mesmo animal, elas saem e entram 4 novas, tiradas do saco uma a uma. Se 3 forem iguais, você pode trocar essas 3, uma vez por turno (p. 6).
 2. **Pegue 1 par:** a peça e a ficha que estão juntas (p. 6).
 3. **Encaixe a peça** encostada em pelo menos um lado de uma peça do seu território. Não vale pôr em cima de outra nem mexer nas que já estão lá. O habitat da borda não precisa combinar com o vizinho (p. 7).
 4. **Ponha a ficha** numa peça sua que ainda não tenha ficha e que mostre o desenho desse animal. Pode ser a peça nova ou outra. Se não houver peça possível, ou se você não quiser pôr, a ficha volta para o saco (p. 7).
@@ -180,15 +180,15 @@ Três etapas, cada uma uma parte real da partida: montar o território turno a t
 > 4. Sem peça possível, ou se você preferir não pôr, a ficha volta para o saco.
 > 5. **Reponha:** a peça vem do topo de qualquer pilha; a ficha, do saco. Encha só o lugar vazio, sem arrastar os outros pares. A vez passa para a esquerda.
 
-!fig[Onde pôr uma ficha de raposa: só nas 2 peças vazias que mostram a raposa (sinal de certo); as peças sem o desenho, ou já com ficha, não valem (X). Ilustração: manual oficial AEG/Flatout Games (p. 7)](figuras/colocar-ficha.webp)
+!fig[Onde pôr uma ficha de raposa: há só 2 peças possíveis, marcadas com o sinal de certo; as marcadas com X não servem. Ilustração: manual oficial AEG/Flatout Games (p. 7)](figuras/colocar-ficha.webp)
 
-> [!mais] **Peça-chave.** É uma peça de um terreno só, com um único animal desenhado e uma marca em forma de triângulo na borda. Quando você põe nela a ficha desse animal, ganha 1 ficha de pinha da reserva (p. 7 e 8).
+> [!mais] **Peça-chave.** Tem um pequeno símbolo triangular na borda; no exemplo do manual, é uma peça só de floresta com um único animal desenhado, o alce. Quando você põe numa peça-chave a ficha do animal desenhado nela, ganha 1 ficha de pinha da reserva (p. 7 e 8).
 
 !fig[Três peças: pântano e rio, onde cabe salmão, urso ou falcão; montanha e campo, onde cabe urso ou raposa; e uma peça-chave de floresta, que só aceita o alce e dá uma pinha. Ilustração: manual oficial AEG/Flatout Games (p. 8)](figuras/pecas.webp)
 
 > [!atencao] Combinar o terreno na borda não é regra de colocação: você pode encostar um rio numa montanha. Mas só peças que se tocam pelo mesmo terreno formam corredor e pontuam juntas no fim (p. 7 e 8).
 
-> [!resolvido] **Exemplo resolvido.** Você tem 1 pinha. No centro há uma peça-chave de floresta com uma ficha de salmão, e um pouco ao lado, uma ficha de alce com uma peça de rio.
+> [!resolvido] **Exemplo resolvido.** Você tem 1 pinha. No centro há uma peça-chave de floresta que mostra o alce, com uma ficha de salmão no par, e em outro par, uma ficha de alce com uma peça de rio.
 >
 > 1. Você devolve a pinha e usa o efeito **separar**: pega a peça-chave de floresta e a ficha de alce (p. 6).
 > 2. Encosta a floresta no seu território e põe o alce nela, porque a peça mostra o alce e está vazia (p. 7).
@@ -263,7 +263,7 @@ Três etapas, cada uma uma parte real da partida: montar o território turno a t
 
 > [!mais] **Salmão com galho.** Três salmões em triângulo podem ser uma corrente, mas aí nenhum outro salmão pode encostar neles (p. 11). Um grupo em que algum salmão encosta em 3 ou mais salmões não é corrente.
 
-> [!mais] **Trocar as cartas A por outras.** Cada animal tem 4 cartas, com a letra A, B, C ou D no canto de baixo à direita. Para variar, separe as 4 de cada animal e sorteie 1 de cada, como manda a montagem (p. 4), ou combine com a mesa qual letra usar. Em resumo, pelo manual (p. 11): o urso B dá 10 por grupo de exatamente 3; o C pontua grupos de 1 a 3 e dá 3 de bônus a quem tiver um de cada tamanho; o D pontua grupos de 2 a 4. O alce B pede os formatos desenhados; o C pontua cada grupo pelo tamanho, em qualquer formato; o D pede grupos em círculo. O salmão B vai até corrente de 5; o C pontua correntes de 3 a 5; o D dá 1 ponto por salmão da corrente e 1 por ficha de animal encostada nela. O falcão B pontua o falcão isolado que tem linha de visão para outro falcão; o C dá 3 por linha de visão entre dois falcões; o D pontua pares de falcões pelos tipos de animais entre eles. A raposa B conta os pares de outros animais vizinhos; a C, a quantidade do animal mais numeroso entre os vizinhos, sem contar raposas; a D pontua pares de raposas pelos pares de animais vizinhos.
+> [!mais] **Trocar as cartas A por outras.** Cada animal tem 4 cartas, com a letra A, B, C ou D no canto de baixo à direita. Para variar, separe as 4 de cada animal e sorteie 1 de cada, como manda a montagem (p. 4), ou combine com a mesa qual letra usar. Pelo manual (p. 11), o urso B dá 10 por grupo de exatamente 3; o C pontua grupos de 1 a 3 e dá 3 de bônus a quem tiver um de cada tamanho; o D pontua grupos de 2 a 4. O alce B pede os formatos desenhados; o C pontua cada grupo pelo tamanho, em qualquer formato; o D pede grupos em círculo. O salmão B vai até corrente de 5; o C pontua correntes de 3 a 5; o D dá 1 ponto por salmão da corrente e 1 por ficha de animal encostada nela. O falcão B pontua o falcão isolado que tem linha de visão para outro falcão; o C dá 3 por linha de visão entre dois falcões; o D pontua pares de falcões pelos tipos de animais entre eles. A raposa B conta os pares de outros animais vizinhos; a C, a quantidade do animal mais numeroso entre os vizinhos, sem contar raposas; a D pontua pares de raposas pelos pares de animais vizinhos.
 
 > [!resolvido] **Exemplo resolvido: os animais de Jade** (p. 9). Na figura da etapa 3, o território de Jade pontua assim com as cartas A:
 >
