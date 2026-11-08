@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-11-06",
+ "atualizado_em": "2026-11-08",
  "regras": {
   "premios": [
    "Golden Geek",
@@ -353,6 +353,26 @@
    "jogo": "Paleo",
    "url": "https://eliteboardgamers.com.br/paleo/",
    "data": "2026-11-06"
+  },
+  {
+   "jogo": "Hot Streak",
+   "url": "https://eliteboardgamers.com.br/hot-streak/",
+   "data": "2026-11-08"
+  },
+  {
+   "jogo": "Thunder Road: Vendetta",
+   "url": "https://eliteboardgamers.com.br/thunder-road-vendetta/",
+   "data": "2026-11-08"
+  },
+  {
+   "jogo": "Planet Unknown",
+   "url": "https://eliteboardgamers.com.br/planet-unknown/",
+   "data": "2026-11-08"
+  },
+  {
+   "jogo": "Just One",
+   "url": "https://eliteboardgamers.com.br/just-one/",
+   "data": "2026-11-08"
   }
  ],
  "jogos": [
@@ -2090,7 +2110,7 @@
      "fonte": "https://en.wikipedia.org/wiki/Spiel_des_Jahres"
     }
    ],
-   "status": "na_fila",
+   "status": "publicado",
    "premios_distintos": 2,
    "prioridade": 96,
    "carro_chefe": false,
@@ -2269,7 +2289,7 @@
      "fonte": "https://eliteboardgamers.com.br/"
     }
    ],
-   "status": "na_fila",
+   "status": "publicado",
    "prioridade": 101,
    "premios_distintos": 2,
    "carro_chefe": false,
@@ -2751,7 +2771,7 @@
      "fonte": "https://eliteboardgamers.com.br/"
     }
    ],
-   "status": "na_fila",
+   "status": "publicado",
    "prioridade": 26,
    "premios_distintos": 1,
    "carro_chefe": true,
@@ -4070,7 +4090,7 @@
      "fonte": "https://eliteboardgamers.com.br/"
     }
    ],
-   "status": "na_fila",
+   "status": "publicado",
    "prioridade": 43,
    "premios_distintos": 1,
    "carro_chefe": true,

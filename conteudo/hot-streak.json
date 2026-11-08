@@ -1,0 +1,163 @@
+{
+ "slug": "hot-streak",
+ "jogo": "Hot Streak",
+ "cor": "#c8442b",
+ "kicker": "Resenha · Jogo de festa e apostas",
+ "og_titulo": "Hot Streak vale a pena? Resenha Elite Boardgamers",
+ "titulo_busca": "Hot Streak: resenha do jogo de apostas em mascotes",
+ "descricao": "Resenha de Hot Streak, vencedor do Golden Geek 2025 de jogo leve e de festa: como funcionam as apostas, o que a crítica diz e para quem é.",
+ "titulo_html": "Você não decide quase nada, e a mesa grita mesmo assim: <span>Hot Streak</span>",
+ "lede": "Hot Streak é um jogo de apostas em que quatro mascotes esportivos correm numa pista de lona e você torce pelo que apostou. Venceu duas categorias do Golden Geek 2025: jogo leve do ano e jogo de festa. Você toma duas decisões por corrida. Depois assiste a um cachorro-quente de plástico decidir o seu destino. Para grupos grandes com 20 minutos sobrando, a gente adianta: funciona bem demais para algo tão bobo.",
+ "tags": [
+  "2–9 jogadores",
+  "20 min",
+  "6+",
+  "Festa",
+  "Apostas"
+ ],
+ "alt": "Pista verde de Hot Streak com quatro mascotes em miniatura, um rei, um peixe, um cachorro-quente e um urso, alinhados na largada",
+ "premiacoes": [
+  {
+   "premio": "Golden Geek",
+   "ano": 2025,
+   "categoria": "Jogo do Ano leve",
+   "colocacao": 1,
+   "resultado": "vencedor",
+   "fonte": "https://boardgamewire.com/index.php/2026/05/12/co-op-titles-fate-of-the-fellowship-vantage-dominate-20th-golden-geek-awards-hot-streak-scores-pair-of-wins/",
+   "rotulo": "Vencedor"
+  },
+  {
+   "premio": "Golden Geek",
+   "ano": 2025,
+   "categoria": "Festa",
+   "colocacao": 1,
+   "resultado": "vencedor",
+   "fonte": "https://boardgamewire.com/index.php/2026/05/12/co-op-titles-fate-of-the-fellowship-vantage-dominate-20th-golden-geek-awards-hot-streak-scores-pair-of-wins/",
+   "rotulo": "Vencedor"
+  },
+  {
+   "premio": "Golden Geek",
+   "ano": 2025,
+   "categoria": "Inovação",
+   "colocacao": 3,
+   "resultado": "top 3",
+   "fonte": "https://boardgamewire.com/index.php/2026/05/12/co-op-titles-fate-of-the-fellowship-vantage-dominate-20th-golden-geek-awards-hot-streak-scores-pair-of-wins/",
+   "rotulo": "Top 3"
+  }
+ ],
+ "ficha": [
+  ["Ano", "2025 (CMYK); edição brasileira em 2026 (Asmodee)"],
+  ["Designer", "Jon Perry"],
+  ["Arte", "Cécile Gariépy"],
+  ["Editora original", "CMYK"],
+  ["Editora no Brasil", "Asmodee"],
+  ["Jogadores", "2 a 9"],
+  ["Duração anunciada", "cerca de 20 minutos (15 a 30 minutos, segundo a Asmodee Canadá)"],
+  ["Idade", "6+ (Asmodee Canadá e Meeple Mountain); uma loja brasileira indica 14+"],
+  ["Nota BGG", "cerca de 7,8 / 10 (conforme loja que replica o BGG)"],
+  ["Nota ComparaJogos", "8,0; complexidade 1,3 / 5"],
+  ["Idioma", "pouco texto, fácil de memorizar (ComparaJogos)"],
+  ["Componentes", "pista de lona, 4 mascotes em miniatura, 53 cartas de corrida, 12 cartas de aposta paralela, 12 fichas de aposta em mascote, 6 fichas de aposta paralela e cerca de 100 notas de dinheiro de papel"],
+  ["Versão digital", "não encontrada nas fontes consultadas"],
+  ["Prêmios", "Golden Geek 2025 de jogo leve do ano e de jogo de festa; finalista em inovação"]
+ ],
+ "nota_ficha": "A nota do BGG vem de loja que replica o BoardGameGeek, que bloqueia acesso automatizado; nota e complexidade do ComparaJogos foram consultadas em 08/11/2026.",
+ "como_funciona": [
+  "Hot Streak é um jogo de apostas numa corrida de quatro mascotes esportivos em miniatura: um rei, um peixe, um cachorro-quente e um urso. A partida tem três corridas, cada jogador começa com 10 dólares em dinheiro de papel e vence quem terminar com mais dinheiro.",
+  "Antes de cada corrida, o carteador separa a carta inicial de cada mascote e revela de 6 a 11 cartas do baralho de corrida, conforme o número de jogadores, para todos verem. Em seguida vem o draft de apostas em serpente: cada jogador pega duas fichas, que podem ser aposta num mascote (paga para 1º, 2º ou 3º lugar) ou aposta paralela, de sim ou não, sobre um evento da corrida.",
+  "Cada ficha tem dois lados. O seguro paga por várias colocações; o arriscado paga mais na vitória e, nas apostas paralelas, custa dinheiro se errar. Depois das apostas, cada jogador põe em segredo uma carta da própria mão de três no baralho da corrida, que é embaralhado; três cartas são descartadas sem que ninguém veja.",
+  "Aí a corrida anda sozinha. As cartas são viradas uma a uma e cada uma move um mascote, faz ele mudar de faixa, dar meia-volta ou cair. Mascote caído rasteja até se levantar; quem é atropelado no chão ou sai pela lateral da pista é desclassificado e fica com a pior colocação livre. Quem cruza a chegada ocupa a melhor colocação livre. Se o baralho acaba, ele é refeito e o fim da pista é enrolado, eliminando quem ficou para trás.",
+  "Com os quatro classificados, as apostas são pagas. Cada jogador recebe uma carta para voltar a ter três na mão e começa a rodada seguinte. Na terceira corrida, cada um dobra uma das duas apostas, para o ganho e para a perda."
+ ],
+ "passos": [
+  ["VEJA O BARALHO", "O carteador revela de 6 a 11 cartas da corrida, conforme o número de jogadores. Elas mostram quem tende a correr, cair ou dar meia-volta."],
+  ["APOSTE EM SERPENTE", "Cada jogador escolhe duas fichas em ordem de serpente: mascote para 1º, 2º ou 3º lugar ou evento de sim ou não, no lado seguro ou arriscado."],
+  ["SABOTE EM SEGREDO", "Cada um põe uma carta da mão de três no baralho da corrida. Depois de embaralhar, três cartas são descartadas sem ninguém ver."],
+  ["ASSISTA À CORRIDA", "As cartas viram uma a uma: mascotes avançam, mudam de faixa, caem ou dão meia-volta. Quem sai da pista ou é atropelado caído está fora."],
+  ["RECEBA E REPITA", "Cada aposta é paga conforme a chegada. São três corridas; na última, cada jogador dobra uma aposta. Vence quem tiver mais dinheiro."]
+ ],
+ "como_resumo": "Aposte em quatro mascotes desastrados, sabote o baralho em segredo e torça por três corridas.",
+ "perfil": [
+  ["Risadas na mesa", 5],
+  ["Componentes e arte", 5],
+  ["Facilidade de ensinar", 5],
+  ["Partida curta", 5],
+  ["Grupos grandes", 5],
+  ["Controle sobre o resultado", 1]
+ ],
+ "experiencia": [
+  "A parte em que você decide alguma coisa dura uns três minutos. Você olha as cartas abertas, vê que o urso tem dois 'cai' e o peixe tem um 'corre 3', escolhe o peixe no lado arriscado e enfia no baralho uma meia-volta para o cachorro-quente, em quem o vizinho acabou de apostar. Pronto. A partir daqui você é torcedor.",
+  "E então acontece a coisa estranha: a mesa inteira grita por um peixe de plástico. O urso cai, rasteja, é atropelado pelo rei e sai da prova. Alguém jura que aquela carta não era dele. A Wargamer deu 9 de 10 e listou 'zero estratégia' entre os defeitos. Deu 9 assim mesmo. É a nota mais sincera do ano: todo mundo sabe que não está decidindo nada, e ninguém se importa.",
+  "A partida acaba em uns 20 minutos, antes de alguém sentir a perda de um dinheiro que nunca existiu. É o único cassino em que a casa não ganha, porque não existe casa."
+ ],
+ "citacao": {
+  "texto": "Um dos jogos mais bobos que joguei em muito tempo, mas também o mais divertido.",
+  "fonte": "Board Game Quest (tradução livre)"
+ },
+ "funciona": [
+  ["A sabotagem secreta", "Cada jogador põe uma carta da mão no baralho da corrida sem mostrar, e três cartas somem sem ninguém ver. A Board Game Quest chama essa regra de pequena reviravolta maliciosa que acrescenta muita graça: você sabe o que pôs, desconfia do que o vizinho pôs e nunca tem certeza do que foi descartado."],
+  ["Apostas de dois lados", "O lado seguro paga por 1º, 2º e 3º lugar; o arriscado paga mais na vitória e, nas apostas paralelas, cobra quando erra. Dale Yu, do Opinionated Gamers, defende que há mais habilidade do que parece, justamente na leitura do baralho aberto e dos adversários."],
+  ["Brinquedo de verdade na mesa", "A pista é uma lona que desenrola da caixa por uma manivela lateral, e os mascotes são miniaturas grandes e pintadas. A Wargamer lista os componentes com cara de brinquedo como ponto forte, e a Board Game Quest elogia as miniaturas coloridas e o tapete que sai literalmente de dentro da caixa."],
+  ["Nove pessoas em 20 minutos", "A caixa anuncia de 2 a 9 jogadores e cerca de 20 minutos, e a corrida acontece para todos ao mesmo tempo, então ninguém fica esperando a vez. O revisor da Zatu destaca a energia da mesa com grupos maiores e a facilidade de levar o jogo à mesa."],
+  ["Perder tem graça", "O mascote que dá meia-volta a duas casas da chegada vira a história da noite. Andrew Lynch, da Meeple Mountain, resume que em Hot Streak os seus fracassos são engraçados, e conta que gente que nunca joga e jogadores experientes gostaram igual."],
+  ["Cada corrida é outra", "Cada partida usa só parte das 53 cartas de corrida, segundo a Meeple Mountain, e o baralho de cada prova muda com as cartas que os jogadores enfiam nele. A Board Game Quest cita isso como motivo da rejogabilidade: a composição do baralho nunca se repete."]
+ ],
+ "atencao": [
+  ["Moderada", "Decidir é opcional", "Alison Brennan, do Opinionated Gamers, diz que você tem quase zero controle além de algumas apostas, e Larry, no mesmo site, chama de experiência mais do que jogo. A gente concorda e acrescenta: se você precisa sentir que ganhou por mérito, este jogo vai te ofender. Três vezes por partida."],
+  ["Moderada", "O grupo é o jogo", "Dan B., do Opinionated Gamers, lembra que, como todo jogo de festa, Hot Streak depende do grupo. Com gente que torce, vira arquibancada. Com quatro pessoas caladas olhando o celular, é um peixe de plástico andando sozinho numa lona verde. A Zatu também nota que, com poucos jogadores, a energia cai."],
+  ["Leve", "Dinheiro de papel", "A Board Game Quest apontou as notas de papel como o único defeito e disse que vai trocar por fichas de pôquer. São cerca de 100 notas na caixa. É o único jogo de apostas em que o dinheiro falso consegue parecer ainda mais falso."],
+  ["Leve", "Probabilidade de enfeite", "Quem procura odds de verdade vai se frustrar: a Board Game Quest avisa que não é um jogo de apostas sério, com probabilidade calculada, e a Zatu diz que a sorte às vezes atropela a decisão de aposta. Literalmente, no caso do urso."],
+  ["Leve", "O mesmo truque toda noite", "A Zatu diz que a rejogabilidade depende muito do grupo. São quatro mascotes, três corridas e o mesmo mecanismo em todas as partidas: a graça vem de quem está sentado à mesa, não de conteúdo novo na caixa. Sem expansão anunciada nas fontes consultadas, a pista desenrola sempre do mesmo jeito."]
+ ],
+ "jogadores": [
+  ["2 ou 3 jogadores", "Funciona, mas a Zatu observa que com poucas pessoas a energia cai, e a graça está na mesa torcendo junto.", 1],
+  ["4 a 6 jogadores", "Boa faixa: o draft de apostas fica disputado e mais cartas secretas entram no baralho da corrida.", 2],
+  ["7 a 9 jogadores", "Onde o jogo rende mais para a Zatu, que destaca a energia com grupos grandes; a corrida acontece para todos ao mesmo tempo.", 3]
+ ],
+ "primeira_partida": "O Opinionated Gamers considera Hot Streak trivial de ensinar, e a Meeple Mountain diz que não poderia ser mais fácil de jogar. O que costuma confundir na primeira corrida é o lado arriscado das apostas paralelas, que cobra quando erra: mostre uma ficha virada antes de começar. Dica prática: na primeira corrida, leia as cartas abertas e conte quantos 'cai' cada mascote tem. Na segunda, você já vai estar enfiando meia-volta no favorito do vizinho.",
+ "edicao_nacional": "A edição em português é da Asmodee e chegou às lojas brasileiras em 2026 (julho, segundo a Ludopedia; agosto, segundo uma loja). As cartas têm pouco texto. Em 08/11/2026, o ComparaJogos listava 20 ofertas de jogo novo, a menor por R$ 301,64 no Pix. A caixa traz a pista de lona, quatro mascotes, 53 cartas de corrida, 12 cartas de aposta paralela, fichas de aposta e cerca de 100 notas.",
+ "preco_ref": {
+  "faixa": "a partir de R$ 301,64",
+  "data": "08/11/2026",
+  "obs": "menor preço no Pix entre 20 ofertas de jogo novo em lojas brasileiras, segundo o ComparaJogos"
+ },
+ "versoes": "Não encontramos expansão nem versão digital oficial de Hot Streak nas fontes consultadas até 08/11/2026. A CMYK lançou a caixa original em 2025, e a Asmodee distribui edições em inglês e em francês no Canadá. A Board Game Quest compara o jogo a Camel Up, Ready Set Bet e Downforce, outros jogos de aposta em corrida, e diz que prefere Hot Streak a todos eles.",
+ "comparacoes": [
+  ["Heat: Pedal to the Metal", "heat-pedal-to-the-metal", "Também é corrida, mas lá você pilota: controla marcha, calor do motor e curvas. Se Hot Streak te incomodou por não deixar decidir nada, Heat devolve o volante inteiro."],
+  ["Sintonia (Wavelength)", "wavelength", "Outro jogo de festa premiado em que a mesa discute em voz alta. Em vez de torcer por mascote, o grupo tenta adivinhar onde o amigo escondeu o ponteiro."],
+  ["Flip 7", "flip-7", "Para quem gostou de forçar a sorte: comprar mais uma carta ou parar. Cabe no bolso e tem a mesma tensão de ver tudo desandar na última carta."]
+ ],
+ "para_quem": [
+  "Reúne sete, oito pessoas e só tem 20 minutos",
+  "Acha graça quando dá tudo errado",
+  "Precisa ensinar as regras com a caixa ainda abrindo",
+  "Torce mais do que calcula",
+  "Joga com parentes que nunca viram um jogo moderno"
+ ],
+ "nao_e_para": [
+  "Precisa sentir que ganhou por mérito",
+  "Joga quase sempre em dupla",
+  "Exige probabilidade calculada nas apostas",
+  "Fica de mau humor quando a sorte decide",
+  "Tem um grupo que joga em silêncio"
+ ],
+ "selo": "Recomendado",
+ "melhor_para": "festa",
+ "veredito": "Vamos combinar uma coisa: Hot Streak quase não deixa você decidir, e é por isso que levou o Golden Geek 2025 de jogo leve e de jogo de festa. Você escolhe duas apostas, enfia uma carta suja no baralho e vira plateia. A Wargamer deu 9 com 'zero estratégia' na lista de defeitos, e a gente entende a conta. O controle é uma ilusão bem embalada, e a embalagem é ótima: mascotes de brinquedo, pista que desenrola da caixa e uma mesa inteira gritando por um cachorro-quente. Por cerca de R$ 300, funciona com nove pessoas e acaba antes da pizza esfriar. Se a sua noite precisa de mérito, compre um jogo de estratégia. Se precisa de barulho, compre este e deixe o urso cair.",
+ "tagline": "Duas apostas, uma carta suja e vinte minutos torcendo por um cachorro-quente de plástico.",
+ "consulta": "08/11/2026",
+ "fontes": [
+  ["Asmodee Canadá – Hot Streak", "https://www.asmodee.ca/en/?p=29096", "ficha, componentes, jogadores, idade, duração"],
+  ["Board Game Quest – Hot Streak review", "https://www.boardgamequest.com/hot-streak-review/", "regras, crítica, componentes"],
+  ["Opinionated Gamers – Dale Yu: Review of Hot Streak", "https://opinionatedgamers.com/2025/05/16/dale-yu-review-of-hot-streak/", "regras, crítica, opiniões da equipe"],
+  ["Wargamer – Hot Streak review", "https://www.wargamer.com/hot-streak/board-game-review", "crítica, nota, dinheiro inicial"],
+  ["Meeple Mountain – Hot Streak", "https://www.meeplemountain.com/reviews/hot-streak/", "crítica, regras, idade"],
+  ["Zatu – Hot Streak 3rd opinion", "https://zatu.com/en-us/blogs/reviews/hot-streak-3rd-opinion", "crítica, número de jogadores"],
+  ["BoardGameWire – Golden Geek 2025", "https://boardgamewire.com/index.php/2026/05/12/co-op-titles-fate-of-the-fellowship-vantage-dominate-20th-golden-geek-awards-hot-streak-scores-pair-of-wins/", "prêmios"],
+  ["ComparaJogos – Hot Streak", "https://www.comparajogos.com.br/item/hot-streak", "preço no Brasil, nota, complexidade, idioma"],
+  ["Bravo Jogos – Hot Streak", "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-hot-streak-p", "edição nacional, idioma, componentes"],
+  ["Ludopedia – Hot Streak", "https://ludopedia.com.br/jogo/hot-streak", "edição nacional (via busca)"],
+  ["Board Game Bliss – Hot Streak", "https://www.boardgamebliss.com/collections/games-with-good-reviews/products/hot-streak", "nota BGG replicada"]
+ ],
+ "legenda": "O jogo em que você aposta num cachorro-quente e perde para um peixe. 🏁\n\nHot Streak venceu o Golden Geek 2025 de jogo leve do ano e de jogo de festa.\nDuas apostas, uma carta secreta no baralho e pronto: o resto é torcida por quatro mascotes que caem, dão meia-volta e saem da pista.\nDe 2 a 9 jogadores, uns 20 minutos. Edição da Asmodee em português; em 08/11/2026, a partir de R$ 301,64.\nVeredito: RECOMENDADO. O controle é ilusão, e ninguém se importa.\n\nVocê é de aposta segura ou arriscada? 👇\nResenha completa no link da bio.\n\n#HotStreak #JogosDeTabuleiro #BoardGames #JogoDeFesta #PartyGame #GoldenGeek #CMYK #Asmodee #EliteBoardgamers #Boardgamer"
+}
