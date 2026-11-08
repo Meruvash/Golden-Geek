@@ -127,7 +127,7 @@ Cada rodada termina quando a última carta das mãos é baixada; aí todos pontu
 
 Sushi Go! é um jogo de cartas de Paul Walker-Harding, com ilustrações de Nan Rangsima, para 2 a 5 jogadores a partir de 8 anos, com partidas de cerca de 15 minutos, segundo a página do produto na Devir. Autor, ilustrador e distribuidora brasileira estão no manual (p. 11).
 
-A partida tem três rodadas. Em cada uma, todo mundo recebe uma mão, fica com uma carta e passa o resto adiante, até as mãos acabarem. A decisão de cada turno tem dois lados: o que você quer para fechar os seus grupos de comida e o que você deixa na mão que vai para o vizinho (p. 3).
+São três rodadas de escolher uma carta e passar o resto da mão adiante. A decisão de cada turno tem dois lados: o que você quer para fechar os seus grupos de comida e o que você deixa na mão que vai para o vizinho (p. 3).
 
 Este guia é do jogo base; o Sushi Go Party! é outro jogo, com outras regras.
 
@@ -170,7 +170,7 @@ Três etapas, na ordem em que você precisa delas: escolher e passar (com wasabi
 > ?? Onde vão os dois nigiris?
 > - ( ) Os dois sobre o mesmo wasabi
 > - (x) Um sobre cada wasabi
-> - ( ) O de salmão sobre um wasabi; o de ovo fica de fora, por ser fraco
+> - ( ) Só o de salmão; o de ovo fica de fora
 > = Cada wasabi recebe só 1 nigiri, e todo nigiri baixado com um wasabi livre na frente deve ir sobre ele (p. 3).
 >
 > ?? Quanto valem os dois juntos no fim da rodada?
@@ -187,12 +187,6 @@ Três etapas, na ordem em que você precisa delas: escolher e passar (com wasabi
 > - (x) 2
 > - ( ) 4
 > = Pode ter várias cartas de hashis na frente, mas usa só 1 por turno (p. 4).
->
-> ?? Você usou a carta de hashis neste turno. O que acontece com ela?
-> - ( ) Fica na sua frente e vale pontos no fim
-> - ( ) Vai para a pilha de compra
-> - (x) Volta para a sua mão e é passada para a esquerda
-> = Antes de passar a mão, você pega a carta de hashis de volta, e ela segue com as outras cartas (p. 4).
 
 ## 3. Etapa 2: pontuar uma rodada
 
@@ -213,8 +207,6 @@ Três etapas, na ordem em que você precisa delas: escolher e passar (com wasabi
 > [!mais] **Empate no maki.** Se vários jogadores empatam com mais símbolos, dividem os 6 pontos, e o segundo lugar não recebe nada. Se vários empatam em segundo, dividem os 3 pontos. Em toda divisão, o ponto que não dá para dividir é perdido (p. 5).
 
 !fig[Cartas de maki com 2, 3 e 1 símbolos no topo; o que conta é a soma dos símbolos, não o número de cartas. Ilustração: manual Devir (p. 5)](figuras/maki.webp)
-
-> [!atencao] **No maki contam os símbolos, não as cartas.** Uma carta de maki (3) vale mais na disputa que duas de maki (1) (p. 5).
 
 > [!resolvido] **Exemplo resolvido: uma rodada inteira.** Quatro jogadores, 8 cartas cada (p. 2). Na frente de cada um, no fim da rodada:
 >
@@ -388,4 +380,4 @@ Responda sem consultar. Cada resposta diz o que reler.
 ## 8. Fontes
 
 - Devir. *Sushi Go!: regras* (edição brasileira, tradução da Equipe Devir, design gráfico de Bascu; © 2014 Gamewright), arquivo "sushi-go.pdf", 12 páginas, PDF criado em 25/04/2018 e modificado em 28/01/2019. Página do produto: https://devir.com.br/sushi-go/ ; arquivo: https://devir.com.br/wp-content/uploads/2016/09/sushi-go.pdf. Consultado em 06/11/2026.
-- Devir. Página do produto Sushi Go! (jogadores, idade, duração, lista de componentes), https://devir.com.br/sushi-go/, consultada em 06/11/2026.
+- Devir. Página do produto Sushi Go! (jogadores, idade e duração), mesmo endereço, consultada em 06/11/2026.

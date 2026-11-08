@@ -1,0 +1,23 @@
+{
+ "slug": "sushi-go",
+ "titulo": "Como jogar Sushi Go!",
+ "jogo": "Sushi Go!",
+ "genero": "Escolher e passar · Cartas",
+ "jogadores": "2 a 5 jogadores",
+ "duracao": "15 min",
+ "idade": "8+",
+ "edicao": "Edição Devir",
+ "data": "2026-11-08",
+ "descricao": "Regras de Sushi Go! passo a passo, conferidas no manual da Devir: montagem, escolher e passar, wasabi, hashis, pontuação de cada prato e pudins.",
+ "resumo": "Em cada turno você fica com uma carta da mão e passa o resto para a esquerda; depois de três rodadas, vence quem somar mais pontos com os pratos e os pudins.",
+ "pontos": [
+  "Todos escolhem uma carta ao mesmo tempo, revelam juntos e passam o resto da mão para o jogador da esquerda.",
+  "Tempurá vale em pares, sashimi em trios, gyoza cresce a cada carta; o wasabi triplica o próximo nigiri e o maki é disputado com a mesa.",
+  "Os pudins ficam guardados até o fim: quem tem mais ganha 6 pontos e quem tem menos perde 6."
+ ],
+ "leitura_min": 22,
+ "etapas": 3,
+ "resenha": null,
+ "chamada": "Pegue uma carta, passe o resto da mão e monte o melhor prato de sushi. Começa com a montagem e um resumo para jogar em 4 minutos e segue em três etapas, do primeiro turno aos pudins.",
+ "publicar": false
+}
