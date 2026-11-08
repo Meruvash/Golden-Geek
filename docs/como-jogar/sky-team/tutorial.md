@@ -76,8 +76,8 @@ Vocês dois são a tripulação de um avião e precisam pousá-lo em 7 rodadas. 
 
 A montagem completa, com figuras, está em **Montar a mesa passo a passo**, no alto da página. O essencial:
 
-1. Painel entre os dois; Eixo nivelado; marcos azul (4 e 5), alaranjado (8 e 9) e de Frenagem (antes do 2) (p. 3).
-2. Altitude em 6.000; Aproximação de Montreal na nuvem, com aviões nos ícones de Tráfego; Rerrolagem nos ícones (p. 3).
+1. Painel entre os dois, Eixo nivelado, marcos nas posições iniciais (p. 3).
+2. Altitude em 6.000; Aproximação de Montreal na nuvem, com os aviões (p. 3).
 3. Piloto com os dados azuis, Copiloto com os alaranjados, um escudo para cada (p. 3).
 
 ### Seu primeiro turno
@@ -179,14 +179,6 @@ Três etapas, cada uma uma parte real do voo: a rodada com Eixo e Motores; limpa
 > - (x) O disco gira mais 1 ponto para o Copiloto, chega a 3 e o avião entra em parafuso
 > = A diferença vai para o lado do maior dado e soma à inclinação que já havia (p. 5).
 
-> [!treino] **Treino rápido.** Marcos na posição inicial.
->
-> ?? Motores com 2 e 2. Quanto o avião avança?
-> - (x) Nada
-> - ( ) 1 espaço
-> - ( ) 2 espaços
-> = Soma 4, abaixo do marco azul, entre 4 e 5 (p. 6).
-
 ## 3. Etapa 2: limpar o caminho e preparar o avião
 
 > [!entender] **Para entender.** Com Eixo e Motores ocupados, sobram 2 dados por jogador. O **Rádio** tira aviões do caminho. Os **Trens de Pouso** (só o Piloto) e os **Flapes** (só o Copiloto) precisam estar todos acionados no fim e, de quebra, empurram os marcos de Aerodinâmica. A **Concentração** aceita qualquer dado e rende Café, que muda o valor de outro dado (p. 7 e 8).
@@ -251,14 +243,14 @@ Três etapas, cada uma uma parte real do voo: a rodada com Eixo e Motores; limpa
 
 ## 4. Etapa 3: frear e pousar
 
-> [!entender] **Para entender.** A Esteira de Altitude tem 7 espaços, um por rodada: de 6.000 a 1.000 e, por último, a imagem do avião (p. 9). A última rodada começa quando o aeroporto está na tela de Posição Atual e o avião, na de Altitude Atual (p. 10). Nela, os Motores não movem mais a esteira: a soma é comparada com os Freios (p. 10). Na ilustração da preparação, o aeroporto de Montreal fica 6 espaços depois da nuvem (p. 3): são 6 avanços nas 6 primeiras rodadas, no máximo 2 por rodada.
+> [!entender] **Para entender.** A Esteira de Altitude tem 7 espaços, um por rodada: de 6.000 a 1.000 e, por último, a imagem do avião (p. 9). A última rodada começa quando o aeroporto está na tela de Posição Atual e o avião, na de Altitude Atual; nela, a soma dos Motores é comparada com os Freios e não move a esteira (p. 10). Na ilustração, o aeroporto de Montreal fica 6 espaços depois da nuvem (p. 3): 6 avanços em 6 rodadas, no máximo 2 por rodada.
 >
 > Os Freios só fazem efeito na última rodada, mas podem ser acionados antes (p. 9). O marco de Frenagem começa antes do 2, e a velocidade final precisa ficar abaixo dele (p. 9 a 11).
 
 > [!passos] **Passo a passo: Freios e pouso** (p. 9 a 11)
 >
 > 1. **Freios** (só o Piloto). Espaços que pedem exatamente 2, 4 e 6, acionados em sequência: 2, depois 4, depois 6. Cada um avança o marco de Frenagem um espaço. Não é preciso acionar os três.
-> 2. **Fim de cada rodada.** Depois de descer a Altitude e pegar os dados, olhe as telas. Aeroporto na Posição Atual e avião na Altitude: comece a última rodada. Se não, uma rodada normal.
+> 2. **Fim de cada rodada.** Depois de descer a Altitude e pegar os dados, olhe as telas: aeroporto na Posição Atual e avião na Altitude, comece a última rodada; se não, uma rodada normal.
 > 3. **Última rodada.** Joguem como sempre, com Eixo e Motores obrigatórios. Quando o segundo dado entrar nos Motores, compare a soma com o marco de Frenagem.
 > 4. **No fim dela, vocês vencem se:** (A) não há peças de Avião na esteira; (B) todos os Flapes e Trens de Pouso mostram luz verde; (C) o Eixo está perfeitamente nivelado; (D) a soma dos Motores é menor que a força dos Freios.
 
