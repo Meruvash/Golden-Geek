@@ -20,14 +20,14 @@ Autoverificação do redator, 08/11/2026. A auditoria independente fica para out
 | Peça inicial face para cima, castelo em cima | passo 4 | EN p. 2 | confere |
 | 24 / 36 / 48 peças ao acaso, números para fora; sobras de lado | passo 5 | EN p. 2; FR p. 5 | confere |
 | Fila: tantas peças quantos reis, crescente, a mais baixa junto da caixa, virar | passo 6 | EN p. 2 | confere |
-| Sorteio dos reis só na primeira rodada; um rei por peça; último sem escolha | passo 7 | EN p. 2; FR p. 5 | confere; quem põe o rei segue FR (marcado `[!edicao]`) |
+| Escolha inicial: reis sorteados, quem tira o rei o põe numa peça; um rei por peça | passo 7 | EN p. 2; PT p. 17; FR p. 5 | corrigido em 08/11: segue EN e PT-PT; o francês fica em `[!edicao]` |
 | Segunda fila ao lado, crescente, virada | passo 8 | EN p. 2 e 3 | confere |
 | Tabela por número de jogadores (filas, rodadas, sobras) | montagem | EN p. 2 e 3; contas | confere |
 | Quem começa: rei na peça mais perto da caixa | montagem, etapa 1 | EN p. 3 | confere |
 | Ação 1 encaixar, ação 2 escolher pondo o rei | 4min, etapa 1 | EN p. 3 | confere |
 | Encaixe: peça inicial curinga; senão 1 terreno igual, horizontal ou vertical | 4min, etapa 1 | EN p. 3 | confere |
 | Um encosto certo basta | etapa 1 | figura EN p. 3 | interpretada, marcada `[!edicao]` |
-| Peça deitada ou em pé | etapa 1 | figuras p. 2 e 3 | confere pela figura |
+| Peça na horizontal ou na vertical | etapa 1 | figuras p. 2 e 3 | confere pela figura |
 | 2 jogadores: cada rei na vez da sua peça | 4min, etapa 1 | EN p. 3 | interpretada (ordem pela posição dos reis); não marcada no texto como `[!edicao]` |
 | 5 x 5 com castelo; descarte sem pontos | etapa 2 | EN p. 3 | confere |
 | Não descartar o que cabe; escolher depois de descartar | etapa 2 | EN p. 3 | interpretada, marcada `[!edicao]` |
@@ -47,7 +47,7 @@ Todas no script `contas.py` (ver dossiê, seção 9): distribuição de terrenos
 
 ## 4. Cobertura
 
-Todas as regras da base (dossiê, seção 4) estão no tutorial, exceto: a definição de "centro" no Reino Central (lacuna, deixada sem leitura); a variante de 6 a 8 jogadores com duas caixas (manual separado da PaperGames, inacessível, e imagem da Blue Orange não lida; fora do jogo base).
+Todas as regras da base (dossiê, seção 4) estão no tutorial, exceto: a variante de 6 a 8 jogadores com duas caixas (manual separado da PaperGames, inacessível, e imagem da Blue Orange não lida; fora do jogo base).
 
 ## 5. Montagem passo a passo: o que o manual ilustra
 
@@ -64,9 +64,10 @@ O manual ilustra os passos 1 (castelo), 2 (caixa), 6 (quadro A), 7 (quadro B) e 
 - A fonte de regra não é o manual da caixa que o leitor brasileiro tem; os nomes de terreno, "monte de compra", "fila" e "rodada" são do guia e podem não bater com a caixa da PaperGames. O nome "pântano" não tem fonte.
 - Duas leituras ficaram como escolha do guia sem consenso do manual: encosto parcial (apoiada na figura) e descarte voluntário.
 - A ordem de jogo com 2 jogadores (cada rei na vez da sua peça) é dedução, sem bloco `[!edicao]`.
-- As figuras mostram a arte de 2016; a caixa atual tem arte nova, o que pode confundir quem compara terrenos pela imagem.
+- As figuras mostram a arte do manual de 2016; a caixa do leitor pode ter outra arte.
 - O vídeo não é de regras do Duque, e sim review com partida, do Covil dos Jogos; não conferi se ele ensina alguma regra diferente do manual.
-- Extensão no limite de cima da faixa pedida (cerca de 4.550 palavras).
+- Extensão acima da faixa pedida (cerca de 4.880 palavras, depois das correções).
+- O centro do Reino Central num reino incompleto é leitura do guia.
 - Legibilidade não medida.
 
 ## 8. Teste com leitores (proposta)
@@ -76,3 +77,7 @@ Mesmo protocolo dos outros tutoriais: 5 a 8 adultos que nunca jogaram; tarefas: 
 ## 9. Ligação com a resenha
 
 O site não tem resenha de Kingdomino; a de Dragomino (/dragomino/) é de outro jogo e já cita Kingdomino como "o próximo passo". Proposta, sem nada implementado: um link do tutorial para a resenha de Dragomino como versão infantil, e da resenha para este tutorial.
+
+## 10. Correções depois das auditorias independentes (08/11/2026)
+
+Aplicadas as 11 correções de regra e as 11 de clareza listadas no dossiê, seção 14. Portões refeitos: travessão 0; `vicios.py` 0; `checar_comece.py` aprovado. Conversor testado só numa cópia no scratchpad (`conv/saida.html`), sem rodar build no repositório.

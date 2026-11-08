@@ -21,11 +21,11 @@ Rotina diária de 06/11/2026, concluída em 08/11/2026 (o trabalho parou por lim
 
 **Como os arquivos foram obtidos.** `curl` com User-Agent `EliteBoardgamersBot/1.0 (robo)`. `robots.txt` de papergames.com.br e de blueorangegames.eu: só bloqueiam `wp-admin` e carrinho; www.blueorangegames.com não tem robots.txt (devolve a página inicial). Nenhum bloqueio contornado.
 
-**Por que o inglês e não o português de Portugal como base.** O BRIEF manda, sem manual brasileiro, usar o manual oficial em inglês. O livreto é o mesmo arquivo e traz o português de Portugal (p. 17 a 19), usado para nomes de regras opcionais e para comparação; o francês (p. 5 a 7), língua da editora, resolveu duas ambiguidades do inglês (sorteio dos reis e última rodada) e uma terceira com o alemão (desempate).
+**Por que o inglês e não o português de Portugal como base.** O BRIEF manda, sem manual brasileiro, usar o manual oficial em inglês. O livreto é o mesmo arquivo e traz o português de Portugal (p. 17 a 19), usado para nomes de regras opcionais e para comparação; o francês (p. 5 a 7) esclareceu a última rodada e, com o alemão (p. 10), o desempate; no sorteio da escolha inicial, o francês diverge, e o guia segue o inglês.
 
 **FAQ ou errata oficial:** não encontrada na página da Blue Orange Europe nem na da PaperGames.
 
-**Edição.** O manual é da primeira edição (2016, arte de Cyril Bouquet). A caixa brasileira atual tem arte nova (Pauline Detraz) e a página da PaperGames lista os mesmos componentes: 48 peças de paisagem, 4 peças de área inicial, 4 castelos, 8 reis de madeira (conferido). Não li as regras da edição nova; o tutorial avisa isso. A nota "mesmas regras" no crédito da foto da edição nova vem do `fotos/fontes.json` do outro agente, não deste dossiê.
+**Edição.** O manual é de 2016 (não traz crédito de ilustrador no texto extraído). A ficha da PaperGames credita a arte a Pauline Detraz; a página da PaperGames lista os mesmos componentes: 48 peças de paisagem, 4 peças de área inicial, 4 castelos, 8 reis de madeira (conferido). Não li as regras da edição nova; o tutorial avisa isso. A nota "mesmas regras" no crédito da foto da edição nova vem do `fotos/fontes.json` do outro agente, não deste dossiê.
 
 ## 3. Glossário
 
@@ -64,8 +64,8 @@ Marcação: `[EN p. N]`, `[FR p. N]`, `[PT p. N]`, `[DE p. N]`, `[PG]` (página 
 7. 2 jogadores: dois reis da cor; 3 e 4: um rei. [EN p. 2] "2 players game: two kings" [verificada]
 8. Peça inicial à frente, face para cima, castelo em cima. [EN p. 2] "Place the tile, face up, in front of you" [verificada]
 9. Embaralhar e pôr na caixa como monte, números para fora; 24 / 36 / 48 peças ao acaso. [EN p. 2] "use 24 randomly selected dominoes" [verificada]; as que sobram ficam de lado [FR p. 5] "que l'on laissera de côté" [verificada]
-10. A: tirar tantas peças quantos reis em jogo (3 com 3; 4 com 2 ou 4), em ordem crescente, a mais baixa junto da caixa, depois virar. [EN p. 2] "the lowest number is always placed next to the box" [verificada]
-11. B: só na primeira rodada, reis na mão de um jogador, sorteados um a um, cada um posto numa peça à escolha; um rei por peça; o último não escolhe. [EN p. 2] "Each domino tile can only have one king" [verificada]. Quem põe o rei: [FR p. 5] "Lorsque votre roi apparaît, placez-le" contra [EN p. 2] "It may not be your own colored king" e [PT p. 17] "pode ser que os jogadores não coloquem os seus próprios reis" [interpretada: segue FR]
+10. A: tirar tantas peças quantos reis em jogo, com o número para cima [FR p. 5; PT p. 17], (3 com 3; 4 com 2 ou 4), em ordem crescente, a mais baixa junto da caixa, depois virar. [EN p. 2] "the lowest number is always placed next to the box" [verificada]
+11. B: só na primeira rodada, reis na mão de um jogador, sorteados um a um, cada um posto numa peça à escolha; um rei por peça; o último não escolhe. [EN p. 2] "Each domino tile can only have one king" [verificada]. Quem põe o rei: [FR p. 5] "Lorsque votre roi apparaît, placez-le" contra [EN p. 2] "It may not be your own colored king" e [PT p. 17] "pode ser que os jogadores não coloquem os seus próprios reis" [verificada no inglês, que é a base; o tutorial segue EN e PT-PT e registra o francês em `[!edicao]`, correção da auditoria de 08/11/2026]
 12. C: com todos os reis postos, nova fila do monte, em ordem crescente, ao lado da fila dos reis, virada. [EN p. 2 e 3] "Place them in ascending order next to the line with the kings on" [verificada]
 13. O que volta à caixa: peças fora da partida [verificada, regra 9]; reis, castelos e peças iniciais de cores sem jogador [lacuna; o guia diz "pelo que o guia entende"]
 
@@ -79,7 +79,7 @@ Marcação: `[EN p. N]`, `[FR p. N]`, `[PT p. N]`, `[DE p. N]`, `[PG]` (página 
 **Encaixe** (depende de 15)
 19. Ligar à peça inicial, que vale como curinga, ou a outra peça com pelo menos 1 terreno igual, só na horizontal ou vertical. [EN p. 3] "matching at least 1 of its terrains (horizontally or vertically only)" [verificada]
 20. Outros lados podem tocar terrenos diferentes. [figura EN p. 3, terceiro exemplo] [interpretada]
-21. A peça pode ficar deitada ou em pé. [figuras EN p. 2 e 3: peças nas duas posições] [verificada pela figura]
+21. A peça pode ficar na horizontal ou na vertical. [figuras EN p. 2 e 3: peças nas duas posições] [verificada pela figura]
 22. Tudo dentro de 5 x 5; peça que não pode ser encaixada é descartada, sem pontos. [EN p. 3] "All your dominoes must fit in a 5x5 grid", "You do not get points for discarded tiles" [verificada]
 23. Descartar peça que caberia: [lacuna]; o guia lê que não se pode, pela condição "If you can't add a domino" [EN p. 3] [interpretada]
 24. Depois de descartar, ainda se escolhe peça nova [lacuna; interpretada, ações separadas]
@@ -97,7 +97,7 @@ Marcação: `[EN p. N]`, `[FR p. N]`, `[PT p. N]`, `[DE p. N]`, `[PG]` (página 
 
 **Opcionais** [EN p. 4; nomes PT p. 19]
 34. Dinastia: 3 partidas, soma. [verificada]
-35. O Reino Central: +10 se o castelo está no centro. [verificada]; o que é "centro" [lacuna; leitura não usada no tutorial]
+35. O Reino Central: +10 se o castelo está no centro. [verificada]; o centro de um reino incompleto [lacuna; o tutorial lê o centro da grade de 5 por 5, ou 7 por 7 no Duelo, marcado `[!edicao]`]
 36. Harmonia: +5 se completo, sem descarte. [verificada]
 37. O Poderoso Duelo: 2 jogadores, todas as peças, 7 x 7. [verificada]
 38. Combinar à vontade. [verificada]
@@ -107,12 +107,12 @@ Marcação: `[EN p. N]`, `[FR p. N]`, `[PT p. N]`, `[DE p. N]`, `[PG]` (página 
 
 ## 5. Ambiguidades e escolhas
 
-- Sorteio da primeira rodada (regra 11): segue o francês.
+- Sorteio da escolha inicial (regra 11): segue o inglês e o PT-PT (quem tira o rei o coloca); o francês fica registrado.
 - Encosto parcial (regra 20): segue a figura.
 - Última rodada (regra 25): francês explícito; inglês compatível.
 - Desempate (regra 32): FR e DE explícitos.
 - Descarte voluntário e escolha depois do descarte (23, 24): leituras do guia, marcadas `[!edicao]`.
-- "Centro" do Reino Central: não interpretado no tutorial (só a regra, sem definição).
+- "Centro" do Reino Central num reino incompleto: [interpretada], centro da grade.
 - Nome do terreno bege: "pântano", sem fonte; marcado em "Situações especiais".
 
 ## 6. Diferenças entre edições
@@ -147,7 +147,7 @@ Script `<scratchpad>/d1106/kingdomino/scripts/contas.py`:
 
 ## 10. Extensão
 
-Tutorial com cerca de 4.550 palavras (contagem por palavra, legendas incluídas; 4.814 pelo `wc -w`, que conta marcadores), dentro da faixa de 3.500 a 4.500 pedida para jogo leve, no limite de cima. A seção de montagem é a maior (oito passos, nove figuras), por exigência do padrão.
+Tutorial com cerca de 4.880 palavras (contagem por palavra, legendas incluídas), acima da faixa de 3.500 a 4.500 pedida para jogo leve: as correções das auditorias de 08/11/2026 acrescentaram esclarecimentos de montagem. A seção de montagem é a maior (oito passos, nove figuras), por exigência do padrão.
 
 ## 11. Portões automáticos
 
@@ -183,3 +183,7 @@ Vídeo: busca no canal Duque Board Games (`/@DuqueBoardgames/search?query=kingdo
 - idade 7+: página da PaperGames (caixa brasileira); o manual de 2016 diz 8+, e o tutorial cita os dois.
 - edição: "Manual oficial em inglês (Blue Orange)".
 - data: 2026-11-08 (pedido do coordenador). resenha: null. publicar: false.
+
+## 14. Correções das auditorias independentes (08/11/2026)
+
+Regras (APROVADO COM CORREÇÕES) e partida simulada (SIM COM AJUSTES), aplicadas no tutorial: escolha inicial pelo inglês; distratores que podiam ser certos reescritos; exemplo do turno alinhado à figura da p. 3 (peça de trigo e pântano com 2 coroas, conferida no recorte a 300 dpi); "número para cima" com p. 5 e 17; rótulos de conta do guia; "numerada no verso"; legenda "Três encaixes"; alemão citado na abertura; retiradas as menções sem fonte lida a "arte nova" e "nova edição (2025)"; horizontal ou vertical; "escolha inicial" em todo o texto; sobras de lado longe da caixa; "pelo canto (na diagonal)"; definição de fila; nova fila no lugar da que esvaziou; "primeiras peças da bandeja, sem olhar"; castelo inclui a peça de área inicial; posições 1ª a 4ª; Duelo "recomendado"; centro do Reino Central como `[!edicao]`.
