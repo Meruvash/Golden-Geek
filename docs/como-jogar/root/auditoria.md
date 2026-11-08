@@ -97,5 +97,41 @@ Passos sem figura própria: 8 a 25 (preparação de cada facção). O manual nã
 - A etapa 4 é a mais densa (Aliança e Malandro juntos): muitos passos e vários `[!mais]`. Se o teste com leitores mostrar sobrecarga, separar em duas etapas.
 - As trilhas de Ninhos e de Simpatia ficaram sem números; o leitor precisa olhar o tabuleiro.
 - O vídeo do Duque mostra a expansão Submundo; por isso há um segundo vídeo, de regras da caixa base (3DÜs), linkado pela própria Meeple BR. Os segundos não foram conferidos: só o vídeo do topo, a partir do 0.
-- Extensão: cerca de 7.080 palavras de texto contando a montagem (1.170); sem ela, cerca de 5.910.
+- Extensão: cerca de 7.660 palavras de texto contando a montagem (1.340); sem ela, cerca de 6.320.
 - O teste de execução por subagente não foi feito (o pedido proibiu subagentes); fica para a auditoria independente. Nada aqui prova que pessoas aprendem com o texto.
+
+## 6. Rodada de correções (auditoria independente, 08/11/2026)
+
+Auditoria de regras (APROVADO COM CORREÇÕES) e partida simulada (SIM COM AJUSTES). Tudo aplicado no tutorial; nada foi gerado no repositório (prévia só no scratchpad, sem marcação crua).
+
+1. Legenda de mesa-1 corrigida: guerreiros laranja, um azul e os dados; sem verde.
+2. Legenda de setup-cartas: verso das 54 cartas (p. 4).
+3. Passo 5: destino dos 11 itens ("R" sob as ruínas, "S" iniciais do Malandro, sobras na caixa) e o que acontece sem Malandro (Leis B.1.2, 9.3.4, 9.3.5; p. 6). `[I]` para "sem Malandro, ruínas sem item".
+4. Etapa 5: saiu a frase sem fonte; entrou "não podem ser jogadas cedo" (p. 2).
+5. Comece, Sua vez: distrator verdadeiro trocado por um falso.
+6. Pergunta dos 30 PV refeita: a Aliança chega a 30 no meio do próprio Dia e vence na hora (Leis 3.1).
+7. Quadro dos manuais: canto das Rapinas "se possível, obrigatoriamente" oposto (7.3.2); coalizão com 4 ou mais também na carta da p. 21.
+8. Ninho novo: "onde todas essas peças possam ser postas" (7.4.3); desempate marcado como lacuna.
+9. Déspota: 1 PV a mais por batalha (7.8.4).
+10. Criar do Malandro: 1 Martelo por símbolo de naipe (9.5.8).
+11. Base removida: apoiadores até 5 sem base; a base volta ao tabuleiro (8.2.4; G.1.28, `[I]`).
+12. Legenda de setup-mapa: serraria na clareira da Torre, oficina e recrutador nas vizinhas, montagem fixa do Passo a Passo.
+13. Tabela de componentes: marcadores de naipe (p. 23) e Cartas de Instruções (B.1.4).
+14. Exemplo de tumulto: líder Comandante, Vizires em Mover e Batalhar; os Vizires ficam.
+15. Folha de consulta: "mão vazia: compre 1" nas Rapinas; Malandro compra por Moeda.
+16. Canal 3DÜs: confirmado pelo oEmbed; mantido.
+17. Trilhas: Ninhos com PV impressos sob os espaços e bônus de compra em alguns (figura p. 12); espaço vazio é o mais à esquerda; Simpatia com custo crescente (figura p. 15); valores completos e bônus da Aliança como "leia no tabuleiro" `[L]`.
+18. Apoiadores podem ser olhados pela Aliança (8.2.3).
+19. Passo 19: cada base tem naipe.
+20. Mochila definida (passo 25); Mochila Pouco Usada dá Bolsa (figura p. 7); Itens Danificados definidos; destino dos itens explorados e criados (9.5.3, 9.5.8); Chá, Moeda e Bolsa voltam à trilha ao desvirar (9.2.5).
+21. "Vizinha" definida no Comece (G.1.1); "Ágil" trocado pelo efeito, com a regra 9.2.3.
+22. Emboscada: 5 cartas, quais naipes (2.1.2).
+23. PV abaixo de zero: lacuna declarada no Tumulto.
+24. Ordem das colunas do Decreto escrita.
+25. Origem da madeira dos Marqueses reescrita (6.5.4.II).
+26. Guerrilha explicada na própria pergunta da etapa 2 (p. 14).
+27. Batalha: o Malandro ataca com o peão (4.3).
+28. Anoitecer: a exceção (Malandro) nomeada.
+29. Revolta: base em local livre (2.2.3).
+
+Portões depois das correções: zero travessão; zero vício de `tools/vicios.py`; zero exclamação fora das marcas; `tools/checar_comece.py` passa.

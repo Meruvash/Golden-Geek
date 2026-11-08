@@ -190,4 +190,33 @@ Limite: um texto não observa o leitor nem ajusta o apoio a ele. O teste com pes
 - `tools/checar_comece.py docs/como-jogar/root/tutorial.md`: passa.
 - Contas dos exemplos: `/tmp/claude-0/-home-user/6a4d6f51-afb4-5576-b0bf-e2035e13b944/scratchpad/d1106/root/scripts/contas.py` (custos e PV dos Marqueses, batalhas, Guerrilha, indefeso, Lei Marcial, tumulto, relações, reanimar, capacidade, guerreiros no mapa, alcance).
 - Conversor (`tools/como_jogar_md.pagina`) gerou a prévia no scratchpad sem marcação crua (`[!`, `??`, `(x)`, `!fig`, `**`: zero). Leitura do essencial calculada pelo conversor: cerca de 12 min.
-- Extensão: cerca de 7.090 palavras de texto (sem as linhas de figura e vídeo), das quais cerca de 1.170 na montagem; sem a montagem, cerca de 5.920, dentro do alvo de 5.500 a 6.500.
+- Extensão (depois das correções da auditoria independente): cerca de 7.660 palavras de texto (sem as linhas de figura e vídeo), das quais cerca de 1.340 na montagem; sem a montagem, cerca de 6.320, dentro do alvo de 5.500 a 6.500.
+
+## 7. Correções da auditoria independente (08/11/2026)
+
+Auditoria de regras: APROVADO COM CORREÇÕES. Partida simulada: SIM COM AJUSTES. Regras novas ou ajustadas na base:
+
+| # | Regra | Fonte | Cl. |
+|---|---|---|---|
+| R77 | 11 itens fora do suprimento: 4 "R" (sob as ruínas) e 7 "S" (iniciais possíveis do Malandro); os não usados voltam à caixa; sem Malandro, ruínas sem item e locais bloqueados | Leis B.1.2, 9.3.4, 9.3.5; p. 6 | V; "sem Malandro, ruínas sem item" é `[I]` (pôr itens sob as ruínas é passo da preparação do Malandro) |
+| R78 | Componentes: 12 marcadores de naipe (mapa do inverno) e 4 Cartas de Instruções (Passo a Passo) | Leis B.1.2 e B.1.4; p. 23 | V |
+| R79 | Cada base tem um naipe impresso | Leis 8.4.1 | V |
+| R80 | Trilha de Ninhos: preenchida da direita para a esquerda; espaço vazio, se houver, é o mais à esquerda; PV impressos sob cada espaço, alguns com bônus de compra (trecho da figura da p. 12: +2 com bônus, +3, +4, +4) | Leis 7.3.5; figura p. 12 (600 dpi) | V; a trilha inteira continua `[L]`, "leia no tabuleiro" |
+| R81 | Construir das Rapinas pega o ninho mais à esquerda da trilha | Leis G.1.26 (Posicione: "retirada do espaço mais à esquerda da trilha") | V (não entrou no tutorial; a regra geral de posicionar está no glossário) |
+| R82 | Simpatia: custo sobe (figura p. 15, de 2 para 3); valores completos e bônus de compra da Aliança | figura p. 15 | L, "leia no tabuleiro" |
+| R83 | Aliança pode olhar os apoiadores quando quiser | Leis 8.2.3 | V |
+| R84 | Construção removida volta ao tabuleiro do dono | Leis G.1.28 ("ou para o espaço livre mais à direita de sua trilha") | I (G.1.28 lista destinos possíveis; para a base, o tabuleiro da Aliança) |
+| R85 | Sem base no mapa, apoiadores até 5 | Leis 8.2.4 | V |
+| R86 | Base precisa de local livre | Leis 2.2.3; 8.4.1 (remove inimigos antes de pôr a base) | V |
+| R87 | Ninho novo: clareira com menos guerreiros onde todas as peças caibam; desempate não definido | Leis 7.4.3 | V; desempate `[L]` |
+| R88 | Déspota: 1 PV a mais por batalha com remoção de construção ou marcador | Leis 7.8.4 | V |
+| R89 | Malandro cria com 1 Martelo por símbolo de naipe; item criado ou explorado vai virado para cima para a Mochila ou trilha | Leis 9.5.3, 9.5.8 | V |
+| R90 | Chá, Moeda e Bolsa desvirados voltam à trilha; 3 por trilha; Itens Danificados é seção da Mochila | Leis 9.2.5.I; p. 17 a 19 | V |
+| R91 | Emboscadas: 5 cartas (rato, coelho, raposa, 2 pássaros) | Leis 2.1.2; figura p. 9 | V |
+| R92 | PV abaixo de zero | Nenhum dos manuais diz | L |
+| R93 | Ordem das colunas do Decreto: Recrutar, Mover, Batalhar, Construir | p. 12 e figura p. 13 | V |
+| R94 | Malandro batalha com o peão | Leis 4.3 ("guerreiros e/ou peões") | V |
+| R95 | Mochila Pouco Usada dá uma Bolsa | Figura do exemplo de criação, p. 7 | V (pela figura) |
+| R96 | Coalizão com 4 ou mais: também no texto da carta de domínio da figura da p. 21 | p. 21; Leis 9.2.8 | V |
+
+Correções de citação feitas antes da auditoria e mantidas: Leis 4.2.2 (sem limite de movimentos), 9.2.2 (Remoção Completa), 9.2.3 (Ágil), 9.2.4 (Indefeso), 8.2.2 (Guerrilha), 3.3.1 (vitória por domínio). O canal 3DÜs foi conferido pelo oEmbed (author_name "3DÜs").
