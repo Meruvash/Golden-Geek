@@ -4,7 +4,7 @@
 
 ## setup. Montar a mesa passo a passo
 
-Esta seção segue a preparação do manual (p. 3), na mesma ordem, para a partida básica em Montreal. Os componentes do compartimento fechado da caixa são dos módulos avançados: deixe-os onde estão (p. 3).
+Esta seção segue a preparação do manual (p. 3), na mesma ordem, para a partida básica em Montreal.
 
 **Uma vez só, ao abrir a caixa.** Monte o Painel de Controle: tire e jogue fora as partes marcadas com o símbolo de lixeira, cole os 9 adesivos dupla face nas áreas indicadas, encaixe o disco de Eixo da Aeronave e ponha os 10 Interruptores em cima das luzes verdes (p. 2).
 
@@ -181,9 +181,9 @@ Três etapas, cada uma uma parte real do voo: a rodada com Eixo e Motores; limpa
 
 ## 3. Etapa 2: limpar o caminho e preparar o avião
 
-> [!entender] **Para entender.** Com Eixo e Motores ocupados, sobram 2 dados por jogador. O **Rádio** tira aviões do caminho. Os **Trens de Pouso** (só o Piloto) e os **Flapes** (só o Copiloto) precisam estar todos acionados no fim e, de quebra, empurram os marcos de Aerodinâmica. A **Concentração** aceita qualquer dado e rende Café, que muda o valor de outro dado (p. 7 e 8).
+> [!entender] **Para entender.** Fora Eixo e Motores, sobram 2 dados por jogador. O **Rádio** tira aviões do caminho; os **Trens de Pouso** e os **Flapes** precisam estar todos acionados no fim e empurram os marcos de Aerodinâmica; a **Concentração** rende Café, que muda o valor de outro dado (p. 7 e 8).
 >
-> Os marcos ligam tudo. Cada Trem de Pouso empurra o marco azul um espaço: é preciso mais velocidade para avançar, o que ajuda a esperar quando há aviões à frente (p. 7 e 12). Cada Flape empurra o alaranjado: fica mais difícil avançar 2, e com os 4 estendidos o marco passa do 12, onde nenhuma soma de dois dados chega (p. 8).
+> Cada Trem de Pouso empurra o marco azul: avançar pede mais velocidade, o que ajuda a esperar quando há aviões à frente (p. 7 e 12). Cada Flape empurra o alaranjado: avançar 2 fica mais difícil, e com os 4 estendidos o marco passa do 12, onde nenhuma soma de dois dados chega (p. 8).
 >
 > Na esteira, o avião pode chegar a um espaço com aviões, mas não pode sair dele enquanto eles estiverem lá (p. 6).
 
@@ -295,8 +295,6 @@ Três etapas, cada uma uma parte real do voo: a rodada com Eixo e Motores; limpa
 Depois de pousar em Montreal, abra o Diário de Bordo (p. 11): 21 cenários em 11 aeroportos, em quatro cores de dificuldade, de Pouso Rotineiro a Pouso Heroico (Diário de Bordo, p. 2 e 6 a 8; página oficial). A preparação é a desta página, com quatro trocas: a Esteira de Aproximação do aeroporto do cenário, que pode ser mais longa ou mais curta; a Esteira de Altitude do lado da mesma cor; os módulos que o cenário indica; e, em alguns cenários, cartas de Habilidade Especial (Diário de Bordo, p. 2). Cada módulo tem preparação e regras próprias no Diário de Bordo, lidas quando o cenário pede: Dado de Tráfego e Curvas (marcados em algumas esteiras), Querosene, Estagiário, Vento, Tempo Real, Perda de Querosene e Freios para Gelo (Diário de Bordo, p. 3 a 5). O resto segue esta página.
 
 ## 5. Situações especiais
-
-> [!mais] **Falar durante a alocação.** A única fala permitida é para corrigir um erro de aplicação das regras (p. 4).
 
 > [!edicao] **O que vem das ilustrações.** Alguns dados foram lidos nos desenhos do manual, não no texto: os Trens de Pouso 1/2 e 5/6 e os Flapes 4/5 e 5/6 (o texto cita o Trem 3/4 e os Flapes 1/2 e 2/3; p. 4, 7, 8 e 11); as fichas de Rerrolagem no 6.000 e no 2.000, os 9 aviões de Montreal e o aeroporto 6 espaços depois da nuvem (p. 3); o X do Eixo depois da marca 2 (p. 5); e o Interruptor do Freio virando (p. 9). O texto dos Freios fala só do marco de Frenagem, que é o que conta no pouso (p. 9 e 10).
 

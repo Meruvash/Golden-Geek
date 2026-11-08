@@ -1,0 +1,23 @@
+{
+ "slug": "sky-team",
+ "titulo": "Como jogar Sky Team",
+ "jogo": "Sky Team",
+ "genero": "Cooperativo · Dados",
+ "jogadores": "2 jogadores",
+ "duracao": "20 min",
+ "idade": "14+",
+ "edicao": "Edição Galápagos",
+ "data": "2026-11-08",
+ "descricao": "Regras de Sky Team passo a passo, conferidas no manual da Galápagos: Eixo, Motores, Rádio, Trens de Pouso, Flapes, Café, Freios e o pouso em Montreal.",
+ "resumo": "Piloto e Copiloto rolam dados escondidos e, sem falar, alocam um por vez no painel para nivelar o avião, controlar a velocidade e limpar o tráfego; vencem se pousarem em Montreal com tudo pronto na 7ª rodada.",
+ "pontos": [
+  "Cada um aloca um dado por vez, em silêncio; todo jogador põe um dado no Eixo e um nos Motores em toda rodada.",
+  "O Eixo gira a diferença entre os dois dados, e os Motores somam: abaixo do marco azul o avião não avança, entre os marcos avança 1, acima do alaranjado avança 2.",
+  "Para pousar: nenhum avião na esteira, Trens de Pouso e Flapes acionados, Eixo nivelado e Motores abaixo da força dos Freios."
+ ],
+ "leitura_min": 14,
+ "etapas": 3,
+ "resenha": "sky-team",
+ "chamada": "Dois pilotos, oito dados e nenhuma palavra depois da rolagem. Começa com a mesa montada passo a passo e um resumo para jogar em 4 minutos, e segue em três etapas, da primeira rodada ao pouso em Montreal.",
+ "publicar": false
+}
