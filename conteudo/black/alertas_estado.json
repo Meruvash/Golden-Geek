@@ -261,6 +261,7 @@
   "fantastic-factories-subterfuge",
   "fateflip-arrastado-pelo-mar",
   "fateflip-decretos-reais",
+  "gravity-superstar",
   "happy-salmon",
   "harry-potter-batalha-de-hogwarts",
   "hi-ho-cherry-o",
@@ -328,6 +329,7 @@
   "the-number",
   "the-pillars-of-the-earth",
   "the-totem-game",
+  "time-stories-revolution-the-hadal-project",
   "trava-letras",
   "triominos-junior",
   "uestop",
@@ -336,7 +338,12 @@
   "uno-party",
   "uno-stacko",
   "war-game-of-thrones",
-  "zenkai-adventure"
+  "zenkai-adventure",
+  "zombicide-gear-up"
  ],
- "pendentes": {}
+ "pendentes": {
+  "gravity-superstar": "2026-11-08T12:56+00:00",
+  "time-stories-revolution-the-hadal-project": "2026-11-08T12:56+00:00",
+  "zombicide-gear-up": "2026-11-08T12:56+00:00"
+ }
 }
