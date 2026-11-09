@@ -3708,10 +3708,14 @@
      "fonte": "https://fr.wikipedia.org/wiki/As_d%27Or"
     }
    ],
-   "status": "na_fila",
+   "status": "sem_fotos",
    "premios_distintos": 1,
    "prioridade": 105,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "fotos": {
+    "verificado_em": "2026-11-09",
+    "obs": "PlayPunk (playpunk.com: só cartas, selos e render em fundo preto), Spiel des Jahres (só capa)"
+   }
   },
   {
    "jogo": "Behind",
@@ -3728,10 +3732,14 @@
      "fonte": "https://fr.wikipedia.org/wiki/As_d%27Or"
     }
    ],
-   "status": "na_fila",
+   "status": "sem_fotos",
    "premios_distintos": 1,
    "prioridade": 106,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "fotos": {
+    "verificado_em": "2026-11-09",
+    "obs": "KYF Edition (site oficial não encontrado; só lojas e diretórios)"
+   }
   },
   {
    "jogo": "Kutná Hora",
@@ -3772,7 +3780,8 @@
    "status": "na_fila",
    "premios_distintos": 1,
    "prioridade": 108,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "slug": "odin"
   },
   {
    "jogo": "Opération Noisettes",
@@ -3920,10 +3929,14 @@
      "fonte": "https://fr.wikipedia.org/wiki/As_d%27Or"
     }
    ],
-   "status": "na_fila",
+   "status": "sem_fotos",
    "premios_distintos": 1,
    "prioridade": 112,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "fotos": {
+    "verificado_em": "2026-11-09",
+    "obs": "Feuerland (página sem imagens), Capstone (sem página), Boardgame Atelier (fotos de mesa em retrato de 700 px, abaixo do topo; aprovadas em la-famiglia/fotos)"
+   }
   },
   {
    "jogo": "Magic Keys",
@@ -4073,10 +4086,14 @@
      "fonte": "https://fr.wikipedia.org/wiki/As_d%27Or"
     }
    ],
-   "status": "na_fila",
+   "status": "sem_fotos",
    "premios_distintos": 1,
    "prioridade": 117,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "fotos": {
+    "verificado_em": "2026-11-09",
+    "obs": "Le Scorpion Masqué (página do jogo: só arte e montagem de cartas)"
+   }
   },
   {
    "jogo": "Legacy of Yu",
@@ -4162,7 +4179,8 @@
    "status": "na_fila",
    "premios_distintos": 1,
    "prioridade": 119,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "slug": "bubble-stories"
   },
   {
    "jogo": "Magic Mountain",
@@ -4182,7 +4200,8 @@
    "status": "na_fila",
    "premios_distintos": 1,
    "prioridade": 120,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "slug": "magic-mountain"
   },
   {
    "jogo": "Ready Set Bet",
@@ -4309,10 +4328,14 @@
      "fonte": "https://en.wikipedia.org/wiki/Spiel_des_Jahres"
     }
    ],
-   "status": "na_fila",
+   "status": "sem_fotos",
    "premios_distintos": 1,
    "prioridade": 122,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "fotos": {
+    "verificado_em": "2026-11-09",
+    "obs": "Gamewright (só caixa e renders em fundo liso), Spiel des Jahres (Speedy Roll: só retrato e capa), Lifestyle Boardgames/Piatnik não mapeadas"
+   }
   },
   {
    "jogo": "Oriflamme",
@@ -4735,7 +4758,8 @@
    "status": "na_fila",
    "premios_distintos": 1,
    "prioridade": 134,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "slug": "isle-of-skye"
   },
   {
    "jogo": "Maître Renard",

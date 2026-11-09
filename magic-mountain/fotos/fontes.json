@@ -1,0 +1,44 @@
+{
+ "slug": "magic-mountain",
+ "usar_na_pagina": true,
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 600,
+   "altura": 600,
+   "editora": "Spiel des Jahres",
+   "credito": "Imagem: Spiel des Jahres · edição alemã (Zauberberg)",
+   "pagina": "https://www.spiel-des-jahres.de/en/games/zauberberg-magic-mountain/",
+   "imagem": "https://www.spiel-des-jahres.de/wp-content/uploads/2022/05/Zauberberg.jpg",
+   "baixada_em": "2026-11-09",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/mesa-1.webp",
+   "tipo": "mesa",
+   "largura": 1600,
+   "altura": 1081,
+   "editora": "Spiel des Jahres",
+   "credito": "Imagem: Spiel des Jahres · edição alemã (Zauberberg)",
+   "pagina": "https://www.spiel-des-jahres.de/en/games/zauberberg-magic-mountain/",
+   "imagem": "https://www.spiel-des-jahres.de/wp-content/uploads/2022/06/Zauberwald-Szene-scaled.jpg",
+   "baixada_em": "2026-11-09",
+   "aprovada": true,
+   "principal": true
+  },
+  {
+   "arquivo": "fotos/jogabilidade-1.webp",
+   "tipo": "jogabilidade",
+   "largura": 1600,
+   "altura": 1067,
+   "editora": "Spiel des Jahres",
+   "credito": "Imagem: Spiel des Jahres · edição alemã (Zauberberg)",
+   "pagina": "https://www.spiel-des-jahres.de/en/games/zauberberg-magic-mountain/",
+   "imagem": "https://www.spiel-des-jahres.de/wp-content/uploads/2022/06/Zauberwald-detail-scaled.jpg",
+   "baixada_em": "2026-11-09",
+   "aprovada": true,
+   "jogar": true
+  }
+ ]
+}

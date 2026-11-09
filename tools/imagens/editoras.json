@@ -2483,5 +2483,135 @@
    ],
    "verificado_em": "2026-11-08"
   }
+ },
+ "pd-verlag.de": {
+  "nome": "PD-Verlag",
+  "apelidos": [
+   "PD-Verlag"
+  ],
+  "site": "https://pd-verlag.de",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "erro",
+  "obs": "robots.txt de https://pd-verlag.de inacessível (erro de rede); tente mais tarde"
+ },
+ "helvetiq.com": {
+  "nome": "Helvetiq",
+  "apelidos": [
+   "Helvetiq"
+  ],
+  "site": "https://helvetiq.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": 10.0,
+   "sitemaps": [
+    "https://helvetiq.com/sitemap/helvetiq_intl.xml",
+    "https://helvetiq.com/sitemap/helvetiq_fr.xml",
+    "https://helvetiq.com/sitemap/helvetiq_de.xml",
+    "https://helvetiq.com/sitemap/helvetiq_us.xml",
+    "https://helvetiq.com/sitemap/helvetiq_ch_fr.xml",
+    "https://helvetiq.com/sitemap/helvetiq_ch_de.xml",
+    "https://helvetiq.com/sitemap/helvetiq_ch_en.xml",
+    "https://helvetiq.com/sitemap/DE/sitemap.xml",
+    "https://helvetiq.com/sitemap.xml"
+   ],
+   "verificado_em": "2026-11-09"
+  }
+ },
+ "boardgameatelier.de": {
+  "nome": "Boardgame Atelier",
+  "apelidos": [
+   "Boardgame Atelier"
+  ],
+  "site": "https://www.boardgameatelier.de",
+  "plataforma": "woocommerce",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.boardgameatelier.de/sitemap_index.xml"
+   ],
+   "verificado_em": "2026-11-09"
+  }
+ },
+ "playpunk.com": {
+  "nome": "PlayPunk",
+  "apelidos": [
+   "PlayPunk"
+  ],
+  "site": "https://playpunk.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://playpunk.com/en/press",
+  "paginas": {},
+  "status": "ok",
+  "obs": "site montado com JavaScript: o robô abre as páginas no navegador",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [],
+   "verificado_em": "2026-11-09"
+  },
+  "js": true
+ },
+ "auzou.com": {
+  "nome": "Auzou",
+  "apelidos": [
+   "Auzou"
+  ],
+  "site": "https://auzou.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "erro",
+  "obs": "robots.txt de https://auzou.com inacessível (erro de rede); tente mais tarde"
+ },
+ "happybaobab.com": {
+  "nome": "Happy Baobab",
+  "apelidos": [
+   "Happy Baobab"
+  ],
+  "site": "https://happybaobab.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://happybaobab001.cafe24.com/sitemap.xml"
+   ],
+   "verificado_em": "2026-11-09"
+  }
+ },
+ "haba.de": {
+  "nome": "Haba",
+  "apelidos": [
+   "Haba"
+  ],
+  "site": "https://haba.de",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "erro",
+  "obs": "robots.txt de https://haba.de inacessível (erro de rede); tente mais tarde"
  }
 }

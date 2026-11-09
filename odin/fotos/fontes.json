@@ -1,0 +1,45 @@
+{
+ "slug": "odin",
+ "usar_na_pagina": true,
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 600,
+   "altura": 600,
+   "editora": "Helvetiq",
+   "credito": "Imagem: Helvetiq",
+   "pagina": "https://helvetiq.com/intl/odin",
+   "imagem": "https://helvetiq.com/media/catalog/product/a/s/as-dor-2025-winner-1000x1000_web_copie.webp",
+   "baixada_em": "2026-11-09",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/jogabilidade-1.webp",
+   "tipo": "jogabilidade",
+   "largura": 1500,
+   "altura": 1000,
+   "editora": "Helvetiq",
+   "credito": "Imagem: Helvetiq",
+   "pagina": "https://helvetiq.com/intl/odin",
+   "imagem": "https://helvetiq.com/media/catalog/product/o/d/odin-withplayers-website1.webp",
+   "baixada_em": "2026-11-09",
+   "aprovada": true,
+   "principal": true
+  },
+  {
+   "arquivo": "fotos/jogabilidade-2.webp",
+   "tipo": "jogabilidade",
+   "largura": 1500,
+   "altura": 1000,
+   "editora": "Helvetiq",
+   "credito": "Imagem: Helvetiq",
+   "pagina": "https://helvetiq.com/intl/odin",
+   "imagem": "https://helvetiq.com/media/catalog/product/o/d/odin-withplayers-website2.webp",
+   "baixada_em": "2026-11-09",
+   "aprovada": true,
+   "pessoas": true,
+   "fora": true
+  }
+ ]
+}
