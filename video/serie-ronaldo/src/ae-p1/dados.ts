@@ -229,7 +229,7 @@ export const FALAS = [
   "quem": "wan",
   "texto": "Calma, Ronaldo. No seu turno, você faz só uma coisa: lança uma nave… ou volta pra estação.",
   "inicio": 19.872,
-  "dur": 6.56,
+  "dur": 7.069,
   "arquivo": "voz/ae-p1/fala-05.wav",
   "palavras": [
    {
@@ -237,67 +237,67 @@ export const FALAS = [
     "w": "Calma,"
    },
    {
-    "t": 20.392,
+    "t": 20.351,
     "w": "Ronaldo."
    },
    {
-    "t": 21.085,
+    "t": 21.117,
     "w": "No"
    },
    {
-    "t": 21.259,
+    "t": 21.309,
     "w": "seu"
    },
    {
-    "t": 21.519,
+    "t": 21.596,
     "w": "turno,"
    },
    {
-    "t": 22.039,
+    "t": 22.075,
     "w": "você"
    },
    {
-    "t": 22.385,
+    "t": 22.458,
     "w": "faz"
    },
    {
-    "t": 22.645,
+    "t": 22.745,
     "w": "só"
    },
    {
-    "t": 22.819,
+    "t": 22.937,
     "w": "uma"
    },
    {
-    "t": 23.599,
+    "t": 23.224,
     "w": "coisa:"
    },
    {
-    "t": 24.032,
+    "t": 23.799,
     "w": "lança"
    },
    {
-    "t": 24.292,
+    "t": 24.278,
     "w": "uma"
    },
    {
-    "t": 24.639,
+    "t": 24.565,
     "w": "nave…"
    },
    {
-    "t": 24.812,
+    "t": 24.948,
     "w": "ou"
    },
    {
-    "t": 25.245,
+    "t": 25.14,
     "w": "volta"
    },
    {
-    "t": 25.592,
+    "t": 25.618,
     "w": "pra"
    },
    {
-    "t": 25.679,
+    "t": 25.906,
     "w": "estação."
    }
   ]
@@ -306,56 +306,56 @@ export const FALAS = [
   "id": 6,
   "quem": "ronaldo",
   "texto": "Então eu vou lançar pra aquela nuvem roxa, em nome de Jesus!",
-  "inicio": 26.732,
+  "inicio": 27.241,
   "dur": 3.678,
   "arquivo": "voz/ae-p1/fala-06.wav",
   "palavras": [
    {
-    "t": 26.732,
+    "t": 27.241,
     "w": "Então"
    },
    {
-    "t": 27.099,
+    "t": 27.608,
     "w": "eu"
    },
    {
-    "t": 27.246,
+    "t": 27.755,
     "w": "vou"
    },
    {
-    "t": 27.466,
+    "t": 27.975,
     "w": "lançar"
    },
    {
-    "t": 27.906,
+    "t": 28.415,
     "w": "pra"
    },
    {
-    "t": 28.2,
+    "t": 28.709,
     "w": "aquela"
    },
    {
-    "t": 28.64,
+    "t": 29.149,
     "w": "nuvem"
    },
    {
-    "t": 29.007,
+    "t": 29.516,
     "w": "roxa,"
    },
    {
-    "t": 29.374,
+    "t": 29.883,
     "w": "em"
    },
    {
-    "t": 29.521,
+    "t": 30.03,
     "w": "nome"
    },
    {
-    "t": 29.815,
+    "t": 30.324,
     "w": "de"
    },
    {
-    "t": 29.962,
+    "t": 30.471,
     "w": "Jesus!"
    }
   ]
@@ -364,48 +364,48 @@ export const FALAS = [
   "id": 7,
   "quem": "wan",
   "texto": "Aquilo é uma nebulosa. Transportador não tem Viagem. Não entra.",
-  "inicio": 30.71,
+  "inicio": 31.219,
   "dur": 4.72,
   "arquivo": "voz/ae-p1/fala-07.wav",
   "palavras": [
    {
-    "t": 30.71,
+    "t": 31.219,
     "w": "Aquilo"
    },
    {
-    "t": 31.342,
+    "t": 31.851,
     "w": "é"
    },
    {
-    "t": 31.447,
+    "t": 31.956,
     "w": "uma"
    },
    {
-    "t": 31.763,
+    "t": 32.272,
     "w": "nebulosa."
    },
    {
-    "t": 32.71,
+    "t": 33.219,
     "w": "Transportador"
    },
    {
-    "t": 33.71,
+    "t": 34.219,
     "w": "não"
    },
    {
-    "t": 33.941,
+    "t": 34.45,
     "w": "tem"
    },
    {
-    "t": 34.172,
+    "t": 34.681,
     "w": "Viagem."
    },
    {
-    "t": 34.71,
+    "t": 35.219,
     "w": "Não"
    },
    {
-    "t": 34.95,
+    "t": 35.459,
     "w": "entra."
    }
   ]
@@ -414,64 +414,64 @@ export const FALAS = [
   "id": 8,
   "quem": "wan",
   "texto": "E no primeiro lançamento, só vale região desocupada: sem invasor, sem nave de ninguém.",
-  "inicio": 35.73,
+  "inicio": 36.239,
   "dur": 6.0,
   "arquivo": "voz/ae-p1/fala-08.wav",
   "palavras": [
    {
-    "t": 35.73,
+    "t": 36.239,
     "w": "E"
    },
    {
-    "t": 35.812,
+    "t": 36.321,
     "w": "no"
    },
    {
-    "t": 35.977,
+    "t": 36.486,
     "w": "primeiro"
    },
    {
-    "t": 36.634,
+    "t": 37.143,
     "w": "lançamento,"
    },
    {
-    "t": 37.538,
+    "t": 38.047,
     "w": "só"
    },
    {
-    "t": 37.703,
+    "t": 38.212,
     "w": "vale"
    },
    {
-    "t": 38.031,
+    "t": 38.54,
     "w": "região"
    },
    {
-    "t": 38.525,
+    "t": 39.034,
     "w": "desocupada:"
    },
    {
-    "t": 39.429,
+    "t": 39.938,
     "w": "sem"
    },
    {
-    "t": 39.675,
+    "t": 40.184,
     "w": "invasor,"
    },
    {
-    "t": 40.333,
+    "t": 40.842,
     "w": "sem"
    },
    {
-    "t": 40.579,
+    "t": 41.088,
     "w": "nave"
    },
    {
-    "t": 40.908,
+    "t": 41.417,
     "w": "de"
    },
    {
-    "t": 41.072,
+    "t": 41.581,
     "w": "ninguém."
    }
   ]
@@ -480,60 +480,60 @@ export const FALAS = [
   "id": 9,
   "quem": "narrador",
   "texto": "Ele pousou num planeta vazio… e o planeta deu uma lua pra ele.",
-  "inicio": 42.18,
+  "inicio": 42.689,
   "dur": 4.074,
   "arquivo": "voz/ae-p1/fala-09.wav",
   "palavras": [
    {
-    "t": 42.18,
+    "t": 42.689,
     "w": "Ele"
    },
    {
-    "t": 42.424,
+    "t": 42.933,
     "w": "pousou"
    },
    {
-    "t": 42.913,
+    "t": 43.422,
     "w": "num"
    },
    {
-    "t": 43.157,
+    "t": 43.666,
     "w": "planeta"
    },
    {
-    "t": 43.727,
+    "t": 44.236,
     "w": "vazio…"
    },
    {
-    "t": 44.215,
+    "t": 44.724,
     "w": "e"
    },
    {
-    "t": 44.296,
+    "t": 44.805,
     "w": "o"
    },
    {
-    "t": 44.378,
+    "t": 44.887,
     "w": "planeta"
    },
    {
-    "t": 44.948,
+    "t": 45.457,
     "w": "deu"
    },
    {
-    "t": 45.192,
+    "t": 45.701,
     "w": "uma"
    },
    {
-    "t": 45.436,
+    "t": 45.945,
     "w": "lua"
    },
    {
-    "t": 45.68,
+    "t": 46.189,
     "w": "pra"
    },
    {
-    "t": 45.924,
+    "t": 46.433,
     "w": "ele."
    }
   ]
@@ -542,36 +542,36 @@ export const FALAS = [
   "id": 10,
   "quem": "ronaldo",
   "texto": "Uma lua! É sinal! É o reteté!",
-  "inicio": 46.554,
-  "dur": 3.384,
+  "inicio": 47.063,
+  "dur": 3.381,
   "arquivo": "voz/ae-p1/fala-10.wav",
   "palavras": [
    {
-    "t": 46.554,
+    "t": 47.063,
     "w": "Uma"
    },
    {
-    "t": 46.977,
+    "t": 47.486,
     "w": "lua!"
    },
    {
-    "t": 47.54,
+    "t": 48.049,
     "w": "É"
    },
    {
-    "t": 47.681,
+    "t": 48.19,
     "w": "sinal!"
    },
    {
-    "t": 48.526,
+    "t": 49.035,
     "w": "É"
    },
    {
-    "t": 48.667,
+    "t": 49.176,
     "w": "o"
    },
    {
-    "t": 48.807,
+    "t": 49.316,
     "w": "reteté!"
    }
   ]
@@ -580,64 +580,64 @@ export const FALAS = [
   "id": 11,
   "quem": "wan",
   "texto": "É a ativação da região. Planeta dá lua. Base Aliada dá a ação dela.",
-  "inicio": 50.238,
+  "inicio": 50.744,
   "dur": 5.68,
   "arquivo": "voz/ae-p1/fala-11.wav",
   "palavras": [
    {
-    "t": 50.238,
+    "t": 50.744,
     "w": "É"
    },
    {
-    "t": 50.345,
+    "t": 50.851,
     "w": "a"
    },
    {
-    "t": 50.452,
+    "t": 50.958,
     "w": "ativação"
    },
    {
-    "t": 51.31,
+    "t": 51.816,
     "w": "da"
    },
    {
-    "t": 51.524,
+    "t": 52.03,
     "w": "região."
    },
    {
-    "t": 52.274,
+    "t": 52.78,
     "w": "Planeta"
    },
    {
-    "t": 53.024,
+    "t": 53.53,
     "w": "dá"
    },
    {
-    "t": 53.024,
+    "t": 53.53,
     "w": "lua."
    },
    {
-    "t": 53.239,
+    "t": 53.745,
     "w": "Base"
    },
    {
-    "t": 53.667,
+    "t": 54.173,
     "w": "Aliada"
    },
    {
-    "t": 54.096,
+    "t": 54.602,
     "w": "dá"
    },
    {
-    "t": 54.739,
+    "t": 55.245,
     "w": "a"
    },
    {
-    "t": 54.953,
+    "t": 55.459,
     "w": "ação"
    },
    {
-    "t": 55.382,
+    "t": 55.888,
     "w": "dela."
    }
   ]
@@ -646,72 +646,72 @@ export const FALAS = [
   "id": 12,
   "quem": "narrador",
   "texto": "Mas na nebulosa vizinha, alguma coisa se mexeu. Um invasor ao alcance… vinha direto pra ele.",
-  "inicio": 56.418,
+  "inicio": 56.924,
   "dur": 7.784,
   "arquivo": "voz/ae-p1/fala-12.wav",
   "palavras": [
    {
-    "t": 56.418,
+    "t": 56.924,
     "w": "Mas"
    },
    {
-    "t": 56.727,
+    "t": 57.233,
     "w": "na"
    },
    {
-    "t": 56.933,
+    "t": 57.439,
     "w": "nebulosa"
    },
    {
-    "t": 57.757,
+    "t": 58.263,
     "w": "vizinha,"
    },
    {
-    "t": 58.581,
+    "t": 59.087,
     "w": "alguma"
    },
    {
-    "t": 59.199,
+    "t": 59.705,
     "w": "coisa"
    },
    {
-    "t": 59.714,
+    "t": 60.22,
     "w": "se"
    },
    {
-    "t": 59.92,
+    "t": 60.426,
     "w": "mexeu."
    },
    {
-    "t": 60.538,
+    "t": 61.044,
     "w": "Um"
    },
    {
-    "t": 60.736,
+    "t": 61.242,
     "w": "invasor"
    },
    {
-    "t": 61.428,
+    "t": 61.934,
     "w": "ao"
    },
    {
-    "t": 61.626,
+    "t": 62.132,
     "w": "alcance…"
    },
    {
-    "t": 62.319,
+    "t": 62.825,
     "w": "vinha"
    },
    {
-    "t": 62.813,
+    "t": 63.319,
     "w": "direto"
    },
    {
-    "t": 63.407,
+    "t": 63.913,
     "w": "pra"
    },
    {
-    "t": 63.802,
+    "t": 64.308,
     "w": "ele."
    }
   ]
@@ -720,24 +720,24 @@ export const FALAS = [
   "id": 13,
   "quem": "wan",
   "texto": "Ronaldo… agora é batalha.",
-  "inicio": 64.552,
+  "inicio": 65.058,
   "dur": 2.24,
   "arquivo": "voz/ae-p1/fala-13.wav",
   "palavras": [
    {
-    "t": 64.552,
+    "t": 65.058,
     "w": "Ronaldo…"
    },
    {
-    "t": 65.359,
+    "t": 65.865,
     "w": "agora"
    },
    {
-    "t": 65.864,
+    "t": 66.37,
     "w": "é"
    },
    {
-    "t": 65.965,
+    "t": 66.471,
     "w": "batalha."
    }
   ]
@@ -746,43 +746,43 @@ export const FALAS = [
   "id": 14,
   "quem": "narrador",
   "texto": "Parte 2: a batalha. Segue pra não perder.",
-  "inicio": 67.392,
+  "inicio": 67.898,
   "dur": 3.211,
   "arquivo": "voz/ae-p1/fala-14.wav",
   "palavras": [
    {
-    "t": 67.392,
+    "t": 67.898,
     "w": "Parte"
    },
    {
-    "t": 67.864,
+    "t": 68.37,
     "w": "2:"
    },
    {
-    "t": 68.053,
+    "t": 68.559,
     "w": "a"
    },
    {
-    "t": 68.147,
+    "t": 68.653,
     "w": "batalha."
    },
    {
-    "t": 68.808,
+    "t": 69.314,
     "w": "Segue"
    },
    {
-    "t": 69.28,
+    "t": 69.786,
     "w": "pra"
    },
    {
-    "t": 69.658,
+    "t": 70.164,
     "w": "não"
    },
    {
-    "t": 69.941,
+    "t": 70.447,
     "w": "perder."
    }
   ]
  }
 ];
-export const DURACAO = 72.0;
+export const DURACAO = 72.51;
