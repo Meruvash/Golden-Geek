@@ -13,6 +13,30 @@ Vale para todo vídeo novo (Reels, TikTok, Shorts). Nenhum vídeo começa a ser 
 | Consistência vem de um **sistema** decidido antes do projeto: paleta, tipos, tokens de movimento e quadros de estilo aprovados antes de animar. | Superside, Webflow, LottieFiles (motion-design) | Seções 4 a 7 são o sistema; a etapa 3 do fluxo é a aprovação dos quadros de estilo. |
 | "Instrument Serif, Inter, Space Grotesk… são onde o design gerado cai; use quando a marca usa, não por padrão." | HyperFrames, `references/look.md` | A tipografia é a da marca (Public Sans), não a da moda. |
 
+## 1b. Referências de série de história animada (Instagram BR)
+
+Analisadas no Virlo em 09/11/2026 (perfil + últimos Reels).
+
+**@subindonavidaserie ("Histórias com Davi") — modelo de ROTEIRO.** 22,9 mil seguidores; média de 473 mil views por Reel (mediana 401 mil); melhor episódio 1,21 mi; ~1,4 post/dia; Reels de 94 a 142 s.
+- **Série com protagonista fixo** (Davi, saiu do interior e mora num barraco em SP) e elenco recorrente (Dona Cida, Seu Valdir como antagonista). Episódios numerados, um por dia; a bio manda "começar pelo Ep. 1".
+- **Gancho-lição**: "Quando [situação], NÃO [o que todo mundo faria]." (ex.: "Quando o fiscal chegar, NÃO corra."). Variante: "Qualquer um faria X. O Davi fez Y."
+- **Números concretos** em toda virada: "De R$ 40 para R$ 102,30 em um dia", "40 a 6".
+- **Arco por episódio**: problema → decisão fora do óbvio → resultado com número → **nova ameaça no último segundo** → "Segue pra ver a Parte N+1" + pergunta para comentar.
+- **"Dica real"** no fim (uma regra útil e verificável) + aviso "História de ficção".
+- **Mecânica de crescimento**: "+1 episódio a cada 10 mil seguidores".
+
+**@realidadecomia2.0 ("Realidade com IA") — modelo de ESTILO VISUAL.** 30,1 mil seguidores; mediana de 5,7 mil views, mas os episódios com poder de anime conhecido estouram (Rasengan 159 mil, 27,6× a mediana); 2 posts/dia (11h e 17h); 75 a 156 s.
+- **Feito no Claude, "criando vídeos por código"** (a própria página de venda deles diz isso; narração própria ou ElevenLabs; legenda palavra por palavra).
+- **Um personagem original fixo** com ficha de personagem, idêntico em todo vídeo: vetor chapado, cabeça redonda, rosto com sombreamento facetado em 2-3 tons, roupa escura simples.
+- **Paleta dessaturada e calma** (céu cinza-azulado, verdes sálvia, azul-marinho) com **granulado de filme** por cima; cenários mínimos (nuvens, arbustos redondos, caminho).
+- **Um único efeito rico**: o poder (partículas, raios e brilho) é o único elemento detalhado e colorido do quadro. O contraste entre o simples e o efeito é o que prende.
+- **Gancho em 2ª pessoa**: "E se tu acordasse amanhã com [poder]?"; séries de 3 partes por tema; pergunta de escolha nos comentários ("Rasengan ou Chidori?").
+
+**O que adotamos**
+1. Série com **personagem original fixo** desenhado uma vez (ficha de personagem em `video/_personagem/`) e reutilizado em todos os episódios. É a única exceção à regra de "não desenhar personagem" da seção 5.
+2. Estilo do personagem e do cenário: vetor chapado facetado + paleta dessaturada + granulado. **O jogo de tabuleiro é o "poder"**: as peças, cartas e fotos oficiais são o elemento rico e colorido de cada quadro.
+3. Roteiro no arco do Davi, com gancho-lição ou "E se…", números reais do jogo, cliffhanger para o próximo episódio e "Dica real" que é uma regra de verdade do tutorial do site.
+
 ## 2. Fluxo obrigatório
 
 1. **Fonte**: os fatos vêm da resenha, do tutorial ou da notícia publicada no site. Nada fora disso.
@@ -66,7 +90,7 @@ Proibido (já aconteceu e não pode voltar): fundo diferente a cada vídeo; font
 1. **Fotos e vídeos oficiais** da editora (via skill `imagens`, com crédito na tela) ou gravados por nós na mesa.
 2. **Animações Lottie licenciadas** (LottieFiles, licença conferida e registrada em `assets/CREDITS.md`) para ícones e efeitos.
 3. **Peças em 3D** (toon, contorno preto) só para meeples, dados e naves, com as cores dos acentos.
-4. **Desenho próprio em SVG**: só ícones simples (seta, moeda, PV). Nunca personagens nem cenários.
+4. **Desenho próprio em SVG**: ícones simples (seta, moeda, PV) e o personagem fixo da série com seu cenário mínimo (seção 1b), sempre a partir da ficha de personagem. Nunca personagens de jogos.
 
 Nunca recriar a arte do jogo nem desenhar um personagem "parecido" com o de uma editora. Quando o vídeo precisa do personagem, usa-se a arte oficial com crédito.
 
@@ -114,6 +138,8 @@ Alto:
 - [ ] Mix fora de −16 a −14 LUFS
 
 ## Fontes
+
+- Virlo: perfis @subindonavidaserie e @realidadecomia2.0 (Instagram), consultados em 09/11/2026; página de venda do @realidadecomia2.0 (link da bio, claude.ai/artifact/WMqw9wpQDAkLSc3tKy9Rod).
 
 - Virlo: biblioteca de vídeos analisados (board game, nov/2026); transcrições de youtube.com/shorts/EmsNLDg2B-s, KiC8Fzo_LUc, UVfpkYOha70.
 - Kurzgesagt: https://kurzgesagt.org/youtube/ e "How to Make a Kurzgesagt Video in 1200 Hours".
