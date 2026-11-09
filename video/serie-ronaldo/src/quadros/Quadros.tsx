@@ -23,7 +23,7 @@ export const FichaPersonagem: React.FC<{ quem: "ronaldo" | "wan" }> = ({ quem })
         <Rotulo>Ficha de personagem · série "E se você acordasse em…"</Rotulo>
         <div style={{ ...tipo.titulo, color: cor.texto, marginTop: 14 }}>{ron ? "Ronaldo" : "Wan"}</div>
         <div style={{ ...tipo.apoio, color: cor.textoSuave, marginTop: 8, maxWidth: 900 }}>
-          {ron ? "Clérigo exorcista. Nunca jogou nada. Faz besteira com fé." : "Advogado. Fodão. Mafioso. Lê o manual inteiro e farma aura."}
+          {ron ? "Pastor. Nunca jogou nada. Faz besteira com fé." : "Advogado. Fodão. Mafioso. Lê o manual inteiro e farma aura."}
         </div>
       </div>
       <svg width={1080} height={1920} style={{ position: "absolute", left: 0, top: 0 }}>
@@ -53,7 +53,7 @@ export const FichaPersonagem: React.FC<{ quem: "ronaldo" | "wan" }> = ({ quem })
       </div>
       {/* paleta */}
       <div style={{ position: "absolute", left: 80, top: 1800, display: "flex", gap: 16, alignItems: "center" }}>
-        {(ron ? ["#2a2b33", "#6d4aa0", "#e3b23c", "#c68a66", "#3a2b22"] : ["#30333b", "#6a1f26", "#b3262f", "#d29b76", "#3a3b42", "#e3b23c"]).map((c) => (
+        {(ron ? ["#34548a", "#d9a62e", "#1c1c22", "#f1c7a3", "#3a2b22"] : ["#30333b", "#6a1f26", "#b3262f", "#f3cdae", "#3a3b42", "#e3b23c"]).map((c) => (
           <div key={c} style={{ width: 64, height: 64, borderRadius: 14, background: c, border: "3px solid #2a2e37" }} />
         ))}
       </div>
@@ -68,7 +68,7 @@ export const Quadro1: React.FC = () => (
     <Clareira />
     <Img src={staticFile("img/root-gatos-recorte.png")} style={{ position: "absolute", left: 360, top: 900, width: 820, transform: "rotate(-3deg)" }} />
     <svg width={1080} height={1920} style={{ position: "absolute", left: 0, top: 0 }}>
-      <Ronaldo x={300} y={1560} escala={1.05} expr="apavorado" pose="aspersorio" />
+      <Ronaldo x={300} y={1560} escala={1.05} expr="apavorado" pose="biblia" />
     </svg>
     <Veu altura={760} />
     <div style={{ position: "absolute", right: 80, top: 1290, ...tipo.rotulo, fontSize: 24, color: "#f4f1ea", textShadow: "0 2px 10px rgba(0,0,0,.6)" }}>Peças: foto MeepleBR</div>

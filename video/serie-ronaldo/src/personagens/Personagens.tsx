@@ -15,64 +15,75 @@ const Cabeca: React.FC<{ pele: string; sombra: string; cx: number; cy: number; r
   </g>
 );
 
-export const Ronaldo: React.FC<{ x: number; y: number; escala?: number; expr?: Expr; pose?: "cartas" | "aspersorio" | "encolhido"; virar?: boolean }> = ({
+export const Ronaldo: React.FC<{ x: number; y: number; escala?: number; expr?: Expr; pose?: "cartas" | "biblia" | "encolhido"; virar?: boolean }> = ({
   x, y, escala = 1, expr = "confuso", pose = "cartas", virar = false,
 }) => {
-  const pele = "#c68a66", sombra = "#a87154";
+  const pele = "#f1c7a3", sombra = "#ddaa85";
   const tx = `translate(${x - 200 * escala * (virar ? -1 : 1)},${y - 880 * escala}) scale(${escala * (virar ? -1 : 1)},${escala})`;
   const enc = pose === "encolhido";
   return (
     <g transform={tx}>
       {/* sombra no chão */}
       <ellipse cx={200} cy={882} rx={150} ry={20} fill="#000" opacity={0.18} />
-      {/* batina */}
-      <path d={enc ? "M120,420 L280,420 L330,870 L70,870 Z" : "M118,340 L282,340 L336,870 L64,870 Z"} fill="#2a2b33" />
-      <path d={enc ? "M200,420 L280,420 L330,870 L200,870 Z" : "M200,340 L282,340 L336,870 L200,870 Z"} fill="#22232a" />
-      {/* botões */}
-      <g fill="#3b3c46">{[400, 470, 540, 610, 680, 750].map((by) => <circle key={by} cx={200} cy={by + (enc ? 60 : 0)} r={6} />)}</g>
-      {/* estola roxa do exorcista com cruzes douradas */}
-      <path d={enc ? "M150,430 L178,430 L170,760 L140,760 Z" : "M148,350 L178,350 L168,700 L136,700 Z"} fill="#6d4aa0" />
-      <path d={enc ? "M222,430 L250,430 L260,760 L230,760 Z" : "M222,350 L252,350 L264,700 L232,700 Z"} fill="#5d3e8c" />
-      <g fill="#e3b23c">
-        <path d={`M148,${enc ? 720 : 660} h16 v-8 h6 v8 h16 v6 h-16 v20 h-6 v-20 h-16 Z`} transform="translate(-6,0)" />
-        <path d={`M236,${enc ? 720 : 660} h16 v-8 h6 v8 h16 v6 h-16 v20 h-6 v-20 h-16 Z`} />
-      </g>
-      {/* colarinho clerical */}
-      <rect x={176} y={enc ? 412 : 330} width={48} height={18} rx={4} fill="#f2f2ee" />
-      {/* braços e mãos por pose */}
-      {pose === "cartas" ? (
-        <g>
-          <path d="M120,360 C90,430 110,500 170,520 L190,500 C150,480 140,430 150,380 Z" fill="#2a2b33" />
-          <path d="M280,360 C310,430 290,500 230,520 L210,500 C250,480 260,430 250,380 Z" fill="#22232a" />
-          {/* cartas de cabeça para baixo, com ? */}
-          <g transform="rotate(180 200 520)">
-            <rect x={150} y={470} width={56} height={84} rx={8} fill="#f4ecdc" transform="rotate(-12 178 512)" />
-            <rect x={196} y={468} width={56} height={84} rx={8} fill="#efe4cf" transform="rotate(10 224 510)" />
+      {/* pastor: terno social azul um número maior, camisa branca, gravata dourada */}
+      {(() => {
+        const dy = enc ? 80 : 0;
+        const azul = "#34548a", azulSombra = "#2b4675", calca = "#2a3f66";
+        return (
+          <g>
+            {/* calças e sapatos */}
+            <path d={`M132,${640 + dy * 0.3} L194,${640 + dy * 0.3} L188,870 L126,870 Z`} fill={calca} />
+            <path d={`M206,${640 + dy * 0.3} L268,${640 + dy * 0.3} L274,870 L212,870 Z`} fill="#24375a" />
+            <path d="M116,862 h76 v16 h-82 Z M208,862 h76 l6,16 h-82 Z" fill="#1d1a18" />
+            {/* paletó */}
+            <path d={`M96,${350 + dy} C112,${330 + dy} 152,${322 + dy} 200,${322 + dy} C248,${322 + dy} 288,${330 + dy} 304,${350 + dy} L296,${680 + dy * 0.3} L104,${680 + dy * 0.3} Z`} fill={azul} />
+            <path d={`M200,${322 + dy} C248,${322 + dy} 288,${330 + dy} 304,${350 + dy} L296,${680 + dy * 0.3} L200,${680 + dy * 0.3} Z`} fill={azulSombra} />
+            {/* camisa, gravata, lapelas, botão */}
+            <path d={`M170,${326 + dy} L200,${440 + dy} L230,${326 + dy} Z`} fill="#f4f2ec" />
+            <path d={`M191,${340 + dy} L209,${340 + dy} L216,${480 + dy} L200,${500 + dy} L184,${480 + dy} Z`} fill="#d9a62e" />
+            <path d={`M193,${360 + dy} L207,${360 + dy} M190,${400 + dy} L210,${400 + dy} M188,${440 + dy} L212,${440 + dy}`} stroke="#b9861d" strokeWidth={5} />
+            <path d={`M152,${330 + dy} L200,${452 + dy} L178,${478 + dy} L134,${360 + dy} Z`} fill="#2c4878" />
+            <path d={`M248,${330 + dy} L200,${452 + dy} L222,${478 + dy} L266,${360 + dy} Z`} fill="#243d68" />
+            <circle cx={200} cy={560 + dy * 0.6} r={7} fill="#1e2f50" />
+            {/* braços e mãos por pose */}
+            {pose === "cartas" ? (
+              <g>
+                <path d="M100,360 C76,430 96,500 162,524 L182,502 C140,482 130,430 134,384 Z" fill={azul} />
+                <path d="M300,360 C324,430 304,500 238,524 L218,502 C260,482 270,430 266,384 Z" fill={azulSombra} />
+                <g transform="rotate(180 200 520)">
+                  <rect x={150} y={470} width={56} height={84} rx={8} fill="#f4ecdc" transform="rotate(-12 178 512)" />
+                  <rect x={196} y={468} width={56} height={84} rx={8} fill="#efe4cf" transform="rotate(10 224 510)" />
+                </g>
+                <text x={200} y={470} textAnchor="middle" fontFamily="Public Sans" fontWeight={900} fontSize={64} fill="#e3b23c">?</text>
+                <circle cx={172} cy={516} r={20} fill={pele} />
+                <circle cx={228} cy={516} r={20} fill={sombra} />
+              </g>
+            ) : pose === "biblia" ? (
+              <g>
+                <path d="M100,360 C76,430 96,500 150,524 L168,502 C132,482 124,430 134,384 Z" fill={azul} />
+                {/* braço erguido segurando a Bíblia */}
+                <path d="M296,350 C340,346 366,290 372,236 L346,228 C336,282 312,312 262,324 Z" fill={azulSombra} />
+                <circle cx={160} cy={514} r={20} fill={pele} />
+                <g transform="rotate(-14 362 170)">
+                  <rect x={312} y={110} width={104} height={136} rx={8} fill="#1c1c22" />
+                  <rect x={312} y={110} width={12} height={136} fill="#2b2b33" />
+                  <rect x={404} y={116} width={8} height={124} fill="#d9a62e" />
+                  <path d="M356,148 h12 v-14 h8 v14 h12 v8 h-12 v36 h-8 v-36 h-12 Z" fill="#d9a62e" />
+                </g>
+                <circle cx={360} cy={240} r={20} fill={sombra} />
+              </g>
+            ) : (
+              <g>
+                {/* encolhido: mãos na cabeça */}
+                <path d="M104,440 C70,400 84,300 140,260 L160,280 C126,320 124,390 140,430 Z" fill={azul} />
+                <path d="M296,440 C330,400 316,300 260,260 L240,280 C274,320 276,390 260,430 Z" fill={azulSombra} />
+                <circle cx={150} cy={270} r={22} fill={pele} />
+                <circle cx={250} cy={270} r={22} fill={sombra} />
+              </g>
+            )}
           </g>
-          <text x={200} y={470} textAnchor="middle" fontFamily="Public Sans" fontWeight={900} fontSize={64} fill="#e3b23c">?</text>
-          <circle cx={172} cy={516} r={20} fill={pele} />
-          <circle cx={228} cy={516} r={20} fill={sombra} />
-        </g>
-      ) : pose === "aspersorio" ? (
-        <g>
-          <path d="M120,360 C96,430 110,500 160,520 L176,500 C140,480 136,430 150,380 Z" fill="#2a2b33" />
-          <path d="M280,360 C330,360 360,300 370,250 L345,240 C330,290 305,320 262,330 Z" fill="#22232a" />
-          <circle cx={160} cy={512} r={20} fill={pele} />
-          {/* aspersório de água benta, pingando */}
-          <rect x={356} y={150} width={12} height={110} rx={6} fill="#c9a54a" transform="rotate(20 362 205)" />
-          <circle cx={340} cy={150} r={22} fill="#e3b23c" />
-          <circle cx={360} cy={250} r={20} fill={sombra} />
-          <g fill="#a9d8f5"><circle cx={300} cy={150} r={7} /><circle cx={280} cy={190} r={6} /><circle cx={310} cy={110} r={5} /></g>
-        </g>
-      ) : (
-        <g>
-          {/* encolhido: mãos na cabeça */}
-          <path d="M120,440 C80,400 90,300 140,260 L160,280 C130,320 130,390 150,430 Z" fill="#2a2b33" />
-          <path d="M280,440 C320,400 310,300 260,260 L240,280 C270,320 270,390 250,430 Z" fill="#22232a" />
-          <circle cx={150} cy={270} r={22} fill={pele} />
-          <circle cx={250} cy={270} r={22} fill={sombra} />
-        </g>
-      )}
+        );
+      })()}
       {/* cabeça */}
       <Cabeca pele={pele} sombra={sombra} cx={200} cy={enc ? 330 : 222} r={108} />
       {/* cabelo bagunçado com topete */}
@@ -113,7 +124,7 @@ export const Ronaldo: React.FC<{ x: number; y: number; escala?: number; expr?: E
 export const Wan: React.FC<{ x: number; y: number; escala?: number; expr?: ExprWan; pose?: "livro" | "bracos"; brilhoLivro?: boolean }> = ({
   x, y, escala = 1, expr = "calmo", pose = "livro", brilhoLivro = true,
 }) => {
-  const pele = "#d29b76", sombra = "#b47e5c";
+  const pele = "#f3cdae", sombra = "#dfae8c";
   return (
     <g transform={`translate(${x - 200 * escala},${y - 880 * escala}) scale(${escala})`}>
       <ellipse cx={200} cy={882} rx={170} ry={22} fill="#000" opacity={0.22} />

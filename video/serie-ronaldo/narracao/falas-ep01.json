@@ -1,0 +1,674 @@
+[
+ {
+  "id": 1,
+  "quem": "narradora",
+  "texto": "E se você acordasse dentro de Root… sem nunca ter jogado?",
+  "arquivo": "public/voz/fala-01.wav",
+  "dur": 3.345,
+  "palavras": [
+   {
+    "text": "E",
+    "start": 0,
+    "end": 0.07
+   },
+   {
+    "text": "se",
+    "start": 0.07,
+    "end": 0.209
+   },
+   {
+    "text": "você",
+    "start": 0.209,
+    "end": 0.489
+   },
+   {
+    "text": "acordasse",
+    "start": 0.489,
+    "end": 1.117
+   },
+   {
+    "text": "dentro",
+    "start": 1.117,
+    "end": 1.535
+   },
+   {
+    "text": "de",
+    "start": 1.535,
+    "end": 1.675
+   },
+   {
+    "text": "Holt,",
+    "start": 1.675,
+    "end": 2.024
+   },
+   {
+    "text": "sem",
+    "start": 2.024,
+    "end": 2.233
+   },
+   {
+    "text": "nunca",
+    "start": 2.233,
+    "end": 2.582
+   },
+   {
+    "text": "ter",
+    "start": 2.582,
+    "end": 2.791
+   },
+   {
+    "text": "jogado?",
+    "start": 2.791,
+    "end": 3.28
+   }
+  ]
+ },
+ {
+  "id": 2,
+  "quem": "narradora",
+  "texto": "O Ronaldo, pastor, abriu os olhos numa clareira. Em volta dele: gatos. Muitos gatos.",
+  "arquivo": "public/voz/fala-02.wav",
+  "dur": 5.586,
+  "palavras": [
+   {
+    "text": "O",
+    "start": 0,
+    "end": 0.08
+   },
+   {
+    "text": "Ronaldo",
+    "start": 0.08,
+    "end": 0.637
+   },
+   {
+    "text": "pastor",
+    "start": 0.637,
+    "end": 1.115
+   },
+   {
+    "text": "abriu",
+    "start": 1.115,
+    "end": 1.513
+   },
+   {
+    "text": "os",
+    "start": 1.513,
+    "end": 1.673
+   },
+   {
+    "text": "olhos",
+    "start": 1.673,
+    "end": 2.071
+   },
+   {
+    "text": "de",
+    "start": 2.071,
+    "end": 2.23
+   },
+   {
+    "text": "uma",
+    "start": 2.23,
+    "end": 2.469
+   },
+   {
+    "text": "clareira,",
+    "start": 2.469,
+    "end": 3.186
+   },
+   {
+    "text": "em",
+    "start": 3.186,
+    "end": 3.346
+   },
+   {
+    "text": "volta",
+    "start": 3.346,
+    "end": 3.744
+   },
+   {
+    "text": "dele,",
+    "start": 3.744,
+    "end": 4.142
+   },
+   {
+    "text": "gatos.",
+    "start": 4.142,
+    "end": 4.62
+   },
+   {
+    "text": "Muitos",
+    "start": 4.62,
+    "end": 5.06
+   },
+   {
+    "text": "gatos!",
+    "start": 5.06,
+    "end": 5.5
+   }
+  ]
+ },
+ {
+  "id": 3,
+  "quem": "ronaldo",
+  "texto": "Tá repreendido! Sai daqui, criatura!",
+  "arquivo": "public/voz/fala-03.wav",
+  "dur": 4.622,
+  "palavras": [
+   {
+    "text": "Está",
+    "start": 0,
+    "end": 0.313
+   },
+   {
+    "text": "repreendido.",
+    "start": 0.313,
+    "end": 1.252
+   },
+   {
+    "text": "Sai",
+    "start": 1.252,
+    "end": 1.486
+   },
+   {
+    "text": "daqui,",
+    "start": 1.486,
+    "end": 1.956
+   },
+   {
+    "text": "criatura!",
+    "start": 1.956,
+    "end": 2.66
+   }
+  ]
+ },
+ {
+  "id": 4,
+  "quem": "narradora",
+  "texto": "Qualquer um ficaria quieto. O Ronaldo tentou repreender um exército.",
+  "arquivo": "public/voz/fala-04.wav",
+  "dur": 4.8,
+  "palavras": [
+   {
+    "text": "Qualquer",
+    "start": 0,
+    "end": 0.542
+   },
+   {
+    "text": "um",
+    "start": 0.542,
+    "end": 0.678
+   },
+   {
+    "text": "ficaria",
+    "start": 0.678,
+    "end": 1.153
+   },
+   {
+    "text": "quieto.",
+    "start": 1.153,
+    "end": 1.627
+   },
+   {
+    "text": "O",
+    "start": 1.627,
+    "end": 1.695
+   },
+   {
+    "text": "Ronaldo",
+    "start": 1.695,
+    "end": 2.169
+   },
+   {
+    "text": "tentou",
+    "start": 2.169,
+    "end": 2.576
+   },
+   {
+    "text": "repreender",
+    "start": 2.576,
+    "end": 3.254
+   },
+   {
+    "text": "um",
+    "start": 3.254,
+    "end": 3.39
+   },
+   {
+    "text": "exército.",
+    "start": 3.39,
+    "end": 4
+   }
+  ]
+ },
+ {
+  "id": 5,
+  "quem": "narradora",
+  "texto": "Os Marqueses têm vinte e cinco guerreiros.",
+  "arquivo": "public/voz/fala-05.wav",
+  "dur": 2.536,
+  "palavras": [
+   {
+    "text": "Os",
+    "start": 0,
+    "end": 0.184
+   },
+   {
+    "text": "marqueses",
+    "start": 0.184,
+    "end": 1.01
+   },
+   {
+    "text": "têm",
+    "start": 1.01,
+    "end": 1.286
+   },
+   {
+    "text": "25",
+    "start": 1.286,
+    "end": 1.47
+   },
+   {
+    "text": "guerreiros.",
+    "start": 1.47,
+    "end": 2.48
+   }
+  ]
+ },
+ {
+  "id": 6,
+  "quem": "ronaldo",
+  "texto": "Vinte e cinco?!",
+  "arquivo": "public/voz/fala-06.wav",
+  "dur": 1.589,
+  "palavras": [
+   {
+    "text": "25.",
+    "start": 0,
+    "end": 1
+   }
+  ]
+ },
+ {
+  "id": 7,
+  "quem": "narradora",
+  "texto": "Ele tentou fugir pra clareira do lado… e não saiu do lugar.",
+  "arquivo": "public/voz/fala-07.wav",
+  "dur": 4.153,
+  "palavras": [
+   {
+    "text": "Ele",
+    "start": 0,
+    "end": 0.198
+   },
+   {
+    "text": "tentou",
+    "start": 0.198,
+    "end": 0.593
+   },
+   {
+    "text": "fugir",
+    "start": 0.593,
+    "end": 0.922
+   },
+   {
+    "text": "para",
+    "start": 0.922,
+    "end": 1.185
+   },
+   {
+    "text": "clareira",
+    "start": 1.185,
+    "end": 1.712
+   },
+   {
+    "text": "do",
+    "start": 1.712,
+    "end": 1.843
+   },
+   {
+    "text": "lado",
+    "start": 1.843,
+    "end": 2.107
+   },
+   {
+    "text": "e",
+    "start": 2.107,
+    "end": 2.173
+   },
+   {
+    "text": "não",
+    "start": 2.173,
+    "end": 2.37
+   },
+   {
+    "text": "saiu",
+    "start": 2.37,
+    "end": 2.633
+   },
+   {
+    "text": "do",
+    "start": 2.633,
+    "end": 2.765
+   },
+   {
+    "text": "lugar.",
+    "start": 2.765,
+    "end": 3.16
+   }
+  ]
+ },
+ {
+  "id": 8,
+  "quem": "ronaldo",
+  "texto": "Por que eu não consigo andar?!",
+  "arquivo": "public/voz/fala-08.wav",
+  "dur": 2.89,
+  "palavras": [
+   {
+    "text": "Por",
+    "start": 0,
+    "end": 0.25
+   },
+   {
+    "text": "que",
+    "start": 0.25,
+    "end": 0.5
+   },
+   {
+    "text": "eu",
+    "start": 0.5,
+    "end": 0.667
+   },
+   {
+    "text": "não",
+    "start": 0.667,
+    "end": 0.917
+   },
+   {
+    "text": "consigo",
+    "start": 0.917,
+    "end": 1.5
+   },
+   {
+    "text": "andar?",
+    "start": 1.5,
+    "end": 2
+   }
+  ]
+ },
+ {
+  "id": 9,
+  "quem": "narradora",
+  "texto": "Qualquer um correria. O Wan abriu o manual.",
+  "arquivo": "public/voz/fala-09.wav",
+  "dur": 2.923,
+  "palavras": [
+   {
+    "text": "Qualquer",
+    "start": 0,
+    "end": 0.687
+   },
+   {
+    "text": "um",
+    "start": 0.687,
+    "end": 0.859
+   },
+   {
+    "text": "correria.",
+    "start": 0.859,
+    "end": 1.632
+   },
+   {
+    "text": "O",
+    "start": 1.632,
+    "end": 1.718
+   },
+   {
+    "text": "1",
+    "start": 1.718,
+    "end": 1.804
+   },
+   {
+    "text": "abriu",
+    "start": 1.804,
+    "end": 2.233
+   },
+   {
+    "text": "o",
+    "start": 2.233,
+    "end": 2.319
+   },
+   {
+    "text": "manual.",
+    "start": 2.319,
+    "end": 2.92
+   }
+  ]
+ },
+ {
+  "id": 10,
+  "quem": "wan",
+  "texto": "Para mover, você precisa governar a clareira de saída ou a de chegada.",
+  "arquivo": "public/voz/fala-10.wav",
+  "dur": 4.589,
+  "palavras": [
+   {
+    "text": "Para",
+    "start": 0,
+    "end": 0.311
+   },
+   {
+    "text": "mover,",
+    "start": 0.311,
+    "end": 0.776
+   },
+   {
+    "text": "você",
+    "start": 0.776,
+    "end": 1.087
+   },
+   {
+    "text": "precisa",
+    "start": 1.087,
+    "end": 1.63
+   },
+   {
+    "text": "governar",
+    "start": 1.63,
+    "end": 2.251
+   },
+   {
+    "text": "a",
+    "start": 2.251,
+    "end": 2.329
+   },
+   {
+    "text": "clareira",
+    "start": 2.329,
+    "end": 2.95
+   },
+   {
+    "text": "de",
+    "start": 2.95,
+    "end": 3.105
+   },
+   {
+    "text": "saída",
+    "start": 3.105,
+    "end": 3.493
+   },
+   {
+    "text": "ou",
+    "start": 3.493,
+    "end": 3.648
+   },
+   {
+    "text": "a",
+    "start": 3.648,
+    "end": 3.726
+   },
+   {
+    "text": "deschegada.",
+    "start": 3.726,
+    "end": 4.58
+   }
+  ]
+ },
+ {
+  "id": 11,
+  "quem": "wan",
+  "texto": "Governa quem tem mais guerreiros e construções. Você tem zero.",
+  "arquivo": "public/voz/fala-11.wav",
+  "dur": 4.858,
+  "palavras": [
+   {
+    "text": "Governa",
+    "start": 0,
+    "end": 0.634
+   },
+   {
+    "text": "quem",
+    "start": 0.634,
+    "end": 0.996
+   },
+   {
+    "text": "tem",
+    "start": 0.996,
+    "end": 1.268
+   },
+   {
+    "text": "mais",
+    "start": 1.268,
+    "end": 1.63
+   },
+   {
+    "text": "guerreiros",
+    "start": 1.63,
+    "end": 2.536
+   },
+   {
+    "text": "e",
+    "start": 2.536,
+    "end": 2.626
+   },
+   {
+    "text": "construções.",
+    "start": 2.626,
+    "end": 3.713
+   },
+   {
+    "text": "Você",
+    "start": 3.713,
+    "end": 4.075
+   },
+   {
+    "text": "tem",
+    "start": 4.075,
+    "end": 4.347
+   },
+   {
+    "text": "zero.",
+    "start": 4.347,
+    "end": 4.8
+   }
+  ]
+ },
+ {
+  "id": 12,
+  "quem": "narradora",
+  "texto": "Mas o céu escureceu… e as Rapinas acabaram de pousar.",
+  "arquivo": "public/voz/fala-12.wav",
+  "dur": 3.349,
+  "palavras": [
+   {
+    "text": "Mas",
+    "start": 0,
+    "end": 0.229
+   },
+   {
+    "text": "o",
+    "start": 0.229,
+    "end": 0.305
+   },
+   {
+    "text": "céu",
+    "start": 0.305,
+    "end": 0.534
+   },
+   {
+    "text": "escureceu",
+    "start": 0.534,
+    "end": 1.22
+   },
+   {
+    "text": "e",
+    "start": 1.22,
+    "end": 1.297
+   },
+   {
+    "text": "as",
+    "start": 1.297,
+    "end": 1.449
+   },
+   {
+    "text": "rapinas",
+    "start": 1.449,
+    "end": 1.983
+   },
+   {
+    "text": "acabaram",
+    "start": 1.983,
+    "end": 2.593
+   },
+   {
+    "text": "de",
+    "start": 2.593,
+    "end": 2.746
+   },
+   {
+    "text": "pousar.",
+    "start": 2.746,
+    "end": 3.28
+   }
+  ]
+ },
+ {
+  "id": 13,
+  "quem": "narradora",
+  "texto": "Segue pra ver a Parte 2.",
+  "arquivo": "public/voz/fala-13.wav",
+  "dur": 1.64,
+  "palavras": [
+   {
+    "text": "Segue",
+    "start": 0,
+    "end": 0.41
+   },
+   {
+    "text": "para",
+    "start": 0.41,
+    "end": 0.738
+   },
+   {
+    "text": "ver",
+    "start": 0.738,
+    "end": 0.984
+   },
+   {
+    "text": "a",
+    "start": 0.984,
+    "end": 1.066
+   },
+   {
+    "text": "parte",
+    "start": 1.066,
+    "end": 1.476
+   },
+   {
+    "text": "2.",
+    "start": 1.476,
+    "end": 1.64
+   }
+  ]
+ }
+]
