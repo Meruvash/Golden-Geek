@@ -19,6 +19,9 @@ const mola = (s: number, t0: number) => {
 };
 const entre = (s: number, a: number, b: number) => s >= a && s < b;
 
+// +1,5 s no fim para dar tempo de ler o link do tutorial
+export const FIM = DURACAO + 1.5;
+
 const CORES_FALA: Record<string, string> = { narrador: cor.texto, ronaldo: "#8fb4ff", wan: cor.ouro };
 
 const Legenda: React.FC<{ s: number }> = ({ s }) => {
@@ -54,7 +57,16 @@ const Gatos: React.FC<{ x: number; y: number; w: number; giro?: number; s: numbe
   );
 };
 
-const Passaro: React.FC<{ x: number; y: number; esc: number }> = ({ x, y, esc }) => (
+// Link do tutorial "Como jogar Root" do site, na cartela final.
+export const LinkTutorial: React.FC<{ op: number }> = ({ op }) => (
+  <div style={{ margin: "56px auto 0", width: 900, opacity: op, border: `3px solid ${cor.ouro}`, borderRadius: 28, padding: "26px 30px", background: "rgba(15,17,21,.7)" }}>
+    <div style={{ ...tipo.rotulo, fontSize: 28, color: cor.ouro }}>Aprenda a jogar Root de verdade</div>
+    <div style={{ fontFamily: fonte, fontWeight: 800, fontSize: 44, color: cor.texto, marginTop: 10 }}>eliteboardgamers.com.br</div>
+    <div style={{ fontFamily: fonte, fontWeight: 700, fontSize: 40, color: cor.texto, marginTop: 2 }}>/como-jogar/root</div>
+  </div>
+);
+
+export const Passaro: React.FC<{ x: number; y: number; esc: number }> = ({ x, y, esc }) => (
   // ave estilizada nossa (não é a arte do jogo), azul das Rapinas
   <g transform={`translate(${x},${y}) scale(${esc})`}>
     <path d="M0,0 C30,-40 70,-46 90,-20 C110,-46 150,-40 180,0 C140,-14 110,-6 90,10 C70,-6 40,-14 0,0 Z" fill="#6ea8ff" />
@@ -209,7 +221,8 @@ export const Ep01: React.FC = () => {
             <div style={{ display: "flex", justifyContent: "center", marginTop: 40 }}>
               <div style={{ fontFamily: fonte, fontWeight: 900, fontSize: 52, color: cor.fundo, background: cor.marca, padding: "30px 64px", borderRadius: 999, transform: `scale(${0.8 + 0.2 * prog(s, (I(13) + 0.06), 0.5)})` }}>Segue pra ver a Parte 2</div>
             </div>
-            <Img src={staticFile("img/logo.webp")} style={{ width: 360, marginTop: 70, opacity: prog(s, (I(13) + 0.46), 0.5) }} />
+            <LinkTutorial op={prog(s, (I(13) + 0.3), 0.5)} />
+            <Img src={staticFile("img/logo.webp")} style={{ width: 320, marginTop: 56, opacity: prog(s, (I(13) + 0.46), 0.5) }} />
             <div style={{ ...tipo.rotulo, fontSize: 26, color: cor.textoSuave, marginTop: 50, opacity: prog(s, (I(13) + 0.66), 0.5) }}>História de ficção · regras de verdade do manual</div>
             <div style={{ ...tipo.rotulo, fontSize: 24, color: cor.textoSuave, marginTop: 14, opacity: prog(s, (I(13) + 0.66), 0.5) }}>Peças: foto MeepleBR</div>
           </div>
@@ -222,7 +235,7 @@ export const Ep01: React.FC = () => {
       <Granulado forca={0.12} />
 
       {/* ====== áudio ====== */}
-      <Audio src={staticFile("audio/trilha.mp3")} volume={(f) => interpolate(f / fps, [0, 0.6, (I(9) - 0.2), I(9), (W(9, "Wan") - 0.04), (W(9, "Wan") + 0.66), (I(13) + 1.16), (DURACAO - 0.1)], [0, 0.12, 0.12, 0.03, 0.03, 0.12, 0.12, 0], { extrapolateRight: "clamp" })} />
+      <Audio src={staticFile("audio/trilha.mp3")} volume={(f) => interpolate(f / fps, [0, 0.6, (I(9) - 0.2), I(9), (W(9, "Wan") - 0.04), (W(9, "Wan") + 0.66), (I(13) + 1.16), (FIM - 0.1)], [0, 0.12, 0.12, 0.03, 0.03, 0.12, 0.12, 0], { extrapolateRight: "clamp" })} />
       {FALAS.map((f) => (
         <Sequence key={f.id} from={Math.round(f.inicio * fps)} durationInFrames={Math.ceil((f.dur + 0.2) * fps)} name={`Fala ${f.id} (${f.quem})`} layout="none">
           <Audio src={staticFile(f.arquivo)} volume={1} />
