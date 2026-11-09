@@ -10,7 +10,7 @@
   },
   "bravojogos.com.br": {
    "dia": "2026-11-09",
-   "paginas": 8
+   "paginas": 9
   },
   "brecholudico.com.br": {
    "dia": "2026-11-09",
@@ -238,7 +238,7 @@
    "descanso_ate": "2026-11-08T10:13+00:00",
    "dia": "2026-11-09",
    "motivo": "robots.txt respondeu 403",
-   "paginas": 3
+   "paginas": 4
   },
   "www.mosaicoloja.com.br": {
    "descanso_ate": "2026-11-11T09:47+00:00",
@@ -290,7 +290,7 @@
   },
   "www.promobit.com.br": {
    "dia": "2026-11-09",
-   "paginas": 40
+   "paginas": 50
   },
   "www.reunionjogos.com.br": {
    "dia": "2026-11-09",
@@ -479,7 +479,7 @@
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-hutan-p": {
    "cj": 130.11,
    "estoque": true,
-   "hora": "2026-11-08T05:18+00:00",
+   "hora": "2026-11-09T12:16+00:00",
    "preco": 139.9
   },
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-kokeshi-p": {
@@ -1417,6 +1417,12 @@
    "estoque": true,
    "hora": "2026-11-09T11:58+00:00",
    "preco": 132.8
+  },
+  "https://www.mecadosjogos.com.br/asteria-meeplebr-jogo-de-tabuleiro-pt-br-p990": {
+   "cj": 45.45,
+   "estoque": true,
+   "hora": "2026-11-09T12:16+00:00",
+   "preco": 50.5
   },
   "https://www.mecadosjogos.com.br/balconia-p857": {
    "cj": 101.07,
