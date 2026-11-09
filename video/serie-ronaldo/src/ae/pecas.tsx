@@ -162,6 +162,11 @@ export const SeloDica: React.FC = () => (
 // x 60..930 e y 240..1290; o cenário e os personagens continuam em tela cheia por baixo.
 export const SEGURO: React.CSSProperties = { transform: "scale(0.888)", transformOrigin: "139px 557px" };
 
+// Versão quadrada (1080×1080, feed do Instagram): a mesma camada de textos e painéis, reduzida e
+// encaixada em x 216..863 e y 20..772; o cenário mostra só a faixa de baixo, com os personagens nos cantos.
+export const UI_QUADRADO: React.CSSProperties = { transform: "translate(183px,-112px) scale(0.66)", transformOrigin: "0 0" };
+export const MUNDO_QUADRADO: React.CSSProperties = { position: "absolute", left: 0, top: -760, width: 1080, height: 1920 };
+
 export const Cartela: React.FC<{ op: number; rotulo: string; botao: string; kBotao: number; kLogo: number }> = ({ op, rotulo, botao, kBotao, kLogo }) => (
   <AbsoluteFill>
     {/* fundo maior que a camada segura, para cobrir a tela inteira mesmo reduzido */}

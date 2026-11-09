@@ -16,6 +16,8 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="AndromedasEdge" component={Ae01} width={1080} height={1920} fps={30} durationInFrames={Math.ceil(FIM_AE * 30)} />
       <Composition id="AndromedaParte1" component={AeP1} width={1080} height={1920} fps={30} durationInFrames={Math.ceil(FIM_P1 * 30)} />
       <Composition id="AndromedaParte2" component={AeP2} width={1080} height={1920} fps={30} durationInFrames={Math.ceil(FIM_P2 * 30)} />
+      <Composition id="AndromedaParte1Quadrado" component={AeP1} width={1080} height={1080} fps={30} durationInFrames={Math.ceil(FIM_P1 * 30)} defaultProps={{ quadrado: true }} />
+      <Composition id="AndromedaParte2Quadrado" component={AeP2} width={1080} height={1080} fps={30} durationInFrames={Math.ceil(FIM_P2 * 30)} defaultProps={{ quadrado: true }} />
       <Still id="FichaRonaldo" component={FichaPersonagem} width={1080} height={1920} defaultProps={{ quem: "ronaldo" as const }} />
       <Still id="FichaWan" component={FichaPersonagem} width={1080} height={1920} defaultProps={{ quem: "wan" as const }} />
       <Still id="Quadro1Gancho" component={Quadro1} width={1080} height={1920} />

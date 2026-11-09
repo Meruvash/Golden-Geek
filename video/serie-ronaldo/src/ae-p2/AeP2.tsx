@@ -4,17 +4,22 @@ import { Audio } from "@remotion/media";
 import { Aura, Granulado } from "../cenario/Cenario";
 import { Ronaldo, Wan } from "../personagens/Personagens";
 import { area, cor, fonte, tipo } from "../tema";
-import { CIANO, Cartela, SEGURO, Credito, Dado, Espaco, Hex, Invasor, Legenda, Nave, Painel, ROXO, SAI, SeloDica, VERDE, VERMELHO, entre, mola, pos, prog, rolar } from "../ae/pecas";
+import { CIANO, Cartela, SEGURO, UI_QUADRADO, MUNDO_QUADRADO, Credito, Dado, Espaco, Hex, Invasor, Legenda, Nave, Painel, ROXO, SAI, SeloDica, VERDE, VERMELHO, entre, mola, pos, prog, rolar } from "../ae/pecas";
 import { DURACAO, FALAS } from "./dados";
 import { I, W } from "./marcas";
 
 // Parte 2: "A profecia do dado" (batalha e Retorno à Estação).
 export const FIM_P2 = DURACAO + 1.6;
 
-export const AeP2: React.FC = () => {
+export const AeP2: React.FC<{ quadrado?: boolean }> = ({ quadrado = false }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const s = frame / fps;
+  // posições: na versão quadrada os personagens vão para os cantos de baixo, menores
+  const RX = (x: number) => (quadrado ? 125 : x);
+  const escR = (e: number) => (quadrado ? 0.55 : e);
+  const WX = quadrado ? 955 : 810;
+  const escW = quadrado ? 0.58 : 0.66;
   const cena = (a: number, b: number) => prog(s, a - 0.1, 0.35) * (1 - prog(s, b - 0.3, 0.25, SAI));
   const vis = (a: number, b: number) => entre(s, a - 0.1, b);
 
@@ -30,29 +35,31 @@ export const AeP2: React.FC = () => {
   const falando = (q: string) => FALAS.some((f) => f.quem === q && s >= f.inicio && s < f.inicio + f.dur);
   const bob = (q: string) => (falando(q) ? Math.abs(Math.sin(s * 9)) * -9 : 0);
   const zoom = ronFala(6) ? 1 + 0.3 * prog(s, I(6), 0.4) : entre(s, tRes, I(8)) ? 1.3 : entre(s, I(12), I(13)) ? 1 + 0.2 * prog(s, I(12), 0.3) : 1;
-  const camOrig = entre(s, I(12), I(13)) ? "810px 1500px" : "250px 1500px";
+  const camOrig = entre(s, I(12), I(13)) ? `${WX}px 1500px` : `${RX(250)}px 1500px`;
   const tremor = entre(s, tRes, tRes + 0.5) ? Math.sin(s * 70) * 10 * (1 - prog(s, tRes, 0.5)) : 0;
 
   return (
     <AbsoluteFill style={{ backgroundColor: "#070914", fontFamily: fonte, filter: impacto ? "grayscale(1) invert(1) contrast(3)" : undefined }}>
+      <div style={quadrado ? MUNDO_QUADRADO : { position: "absolute", left: 0, top: 0, width: 1080, height: 1920 }}>
       <AbsoluteFill style={{ transform: `scale(${zoom}) translateX(${tremor}px)`, transformOrigin: camOrig }}>
         <Espaco s={s} alerta={s < I(3) ? 0.5 + 0.5 * Math.sin(s * 9) : 0} escuro={entre(s, tRes, I(10)) ? 0.35 : 0} />
         {[2, 6, 11].map((id) =>
-          ronFala(id) ? <div key={id} style={{ position: "absolute", left: 300, top: 1320, width: 220, height: 220, borderRadius: "50%", background: "radial-gradient(circle, rgba(255,240,190,.85), rgba(255,240,190,0) 70%)", opacity: prog(s, I(id), 0.3) * (1 - prog(s, I(id + 1) - 0.4, 0.35)) }} /> : null,
+          ronFala(id) ? <div key={id} style={{ position: "absolute", left: RX(250) + 50, top: quadrado ? 1378 : 1320, width: 220, height: 220, borderRadius: "50%", background: "radial-gradient(circle, rgba(255,240,190,.85), rgba(255,240,190,0) 70%)", opacity: prog(s, I(id), 0.3) * (1 - prog(s, I(id + 1) - 0.4, 0.35)) }} /> : null,
         )}
-        <Aura x={810} y={1430} raio={260 + 10 * Math.sin(s * 2)} seed={4} />
+        <Aura x={WX} y={1430} raio={260 + 10 * Math.sin(s * 2)} seed={4} />
         <svg width={1080} height={1920} style={{ position: "absolute", left: 0, top: 0 }}>
           <g transform={`translate(0,${bob("ronaldo")})`}>
-            <Ronaldo x={250} y={1835} escala={0.62} expr={ronExpr as "confuso"} pose={ronPose as "cartas"} />
+            <Ronaldo x={RX(250)} y={1835} escala={escR(0.62)} expr={ronExpr as "confuso"} pose={ronPose as "cartas"} />
           </g>
           <g transform={`translate(0,${bob("wan")})`}>
-            <Wan x={810} y={1835} escala={0.66} expr={wanExpr as "calmo"} pose={wanPose as "livro"} brilhoLivro={wanPose === "livro"} />
+            <Wan x={WX} y={1835} escala={escW} expr={wanExpr as "calmo"} pose={wanPose as "livro"} brilhoLivro={wanPose === "livro"} />
           </g>
         </svg>
       </AbsoluteFill>
+      </div>
 
       {/* ====== textos e painéis: dentro da zona segura do Reels ====== */}
-      <AbsoluteFill style={SEGURO}>
+      <AbsoluteFill style={quadrado ? UI_QUADRADO : SEGURO}>
       {/* ====== gancho: o Vorticon pousa ====== */}
       {s < I(3) ? (
         <>

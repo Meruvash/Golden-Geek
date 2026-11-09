@@ -4,17 +4,22 @@ import { Audio } from "@remotion/media";
 import { Aura, Granulado } from "../cenario/Cenario";
 import { Ronaldo, Wan } from "../personagens/Personagens";
 import { area, cor, fonte, tipo } from "../tema";
-import { CIANO, Cartela, SEGURO, Credito, Espaco, Hex, Invasor, Legenda, Nave, Painel, ROXO, SAI, SeloDica, VERDE, VERMELHO, entre, mola, pos, prog } from "../ae/pecas";
+import { CIANO, Cartela, SEGURO, UI_QUADRADO, MUNDO_QUADRADO, Credito, Espaco, Hex, Invasor, Legenda, Nave, Painel, ROXO, SAI, SeloDica, VERDE, VERMELHO, entre, mola, pos, prog } from "../ae/pecas";
 import { DURACAO, FALAS } from "./dados";
 import { I, W } from "./marcas";
 
 // Parte 1: "E se você acordasse dentro de Andromeda's Edge…" (o Lançamento).
 export const FIM_P1 = DURACAO + 1.6;
 
-export const AeP1: React.FC = () => {
+export const AeP1: React.FC<{ quadrado?: boolean }> = ({ quadrado = false }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const s = frame / fps;
+  // posições: na versão quadrada os personagens vão para os cantos de baixo, menores
+  const RX = (x: number) => (quadrado ? 125 : x);
+  const escR = (e: number) => (quadrado ? 0.55 : e);
+  const WX = quadrado ? 955 : 810;
+  const escW = quadrado ? 0.58 : 0.66;
   const cena = (a: number, b: number) => prog(s, a - 0.1, 0.35) * (1 - prog(s, b - 0.3, 0.25, SAI));
   const vis = (a: number, b: number) => entre(s, a - 0.1, b);
 
@@ -34,11 +39,12 @@ export const AeP1: React.FC = () => {
   const falando = (q: string) => FALAS.some((f) => f.quem === q && s >= f.inicio && s < f.inicio + f.dur);
   const bob = (q: string) => (falando(q) ? Math.abs(Math.sin(s * 9)) * -9 : 0);
   const zoom = ronFala(3) ? 1 + 0.25 * prog(s, I(3), 0.4) : ronFala(10) ? 1 + 0.3 * prog(s, I(10), 0.3) : entre(s, I(13), I(14)) ? 1 + 0.2 * prog(s, I(13), 0.4) : 1;
-  const camOrig = entre(s, I(13), I(14)) ? "810px 1500px" : "300px 1500px";
+  const camOrig = entre(s, I(13), I(14)) ? `${WX}px 1500px` : `${RX(250) + 50}px 1500px`;
   const tremor = entre(s, W(13, "batalha.") - 0.05, W(13, "batalha.") + 0.5) ? Math.sin(s * 70) * 12 * (1 - prog(s, W(13, "batalha."), 0.5)) : 0;
 
   return (
     <AbsoluteFill style={{ backgroundColor: "#070914", fontFamily: fonte, filter: impacto ? "grayscale(1) invert(1) contrast(3)" : undefined }}>
+      <div style={quadrado ? MUNDO_QUADRADO : { position: "absolute", left: 0, top: 0, width: 1080, height: 1920 }}>
       <AbsoluteFill style={{ transform: `scale(${zoom}) translateX(${tremor}px)`, transformOrigin: camOrig }}>
         <Espaco s={s} alerta={alerta} escuro={s < I(2) ? 0.35 * (1 - prog(s, I(2) - 0.3, 0.6)) : 0} />
         {/* Baía de Lançamento: 3 transportadores no chão da estação */}
@@ -47,33 +53,34 @@ export const AeP1: React.FC = () => {
             const t0 = W(4, "três") - 0.1 + i * 0.12;
             const saiu = i === 0 && s >= W(9, "pousou") - 1.2; // a nave lançada some da baía
             const depois = prog(s, tWan - 0.2, 0.5); // abre espaço para o Wan
-            return <Nave key={i} x={620 + i * 120 + (430 + i * 80 - 620 - i * 120) * depois} y={1545} esc={(0.7 - 0.15 * depois) * (s < I(4) ? 1 : 1 + 0.25 * Math.max(0, 1 - Math.abs(s - t0) * 3))} giro={0} op={saiu ? 0.2 : 1} />;
+            return <Nave key={i} x={620 + i * 120 + (430 + i * 80 - 620 - i * 120) * depois} y={quadrado ? 1700 : 1545} esc={(0.7 - 0.15 * depois) * (s < I(4) ? 1 : 1 + 0.25 * Math.max(0, 1 - Math.abs(s - t0) * 3))} giro={0} op={saiu ? 0.2 : 1} />;
           })}
-          <text x={740 - 230 * prog(s, tWan - 0.2, 0.5)} y={1465} textAnchor="middle" fontFamily={fonte} fontWeight={800} fontSize={30} fill={CIANO} opacity={s >= W(4, "três") - 0.1 && s < tWan + 0.5 ? 1 : 0.35}>Baía de Lançamento</text>
+          <text x={740 - 230 * prog(s, tWan - 0.2, 0.5)} y={quadrado ? 1795 : 1465} textAnchor="middle" fontFamily={fonte} fontWeight={800} fontSize={30} fill={CIANO} opacity={s >= W(4, "três") - 0.1 && s < tWan + 0.5 ? 1 : 0.35}>Baía de Lançamento</text>
         </svg>
         {/* luz do arrebatamento (que não era arrebatamento) */}
         {entre(s, I(3) - 0.05, W(4, "foi.") + 0.1) ? (
-          <div style={{ position: "absolute", left: ronX - 170, top: 0, width: 340, height: 1920, background: "linear-gradient(180deg, rgba(255,240,190,.0), rgba(255,240,190,.35) 60%, rgba(255,240,190,.15))", opacity: prog(s, I(3), 0.3) * (1 - prog(s, W(4, "foi."), 0.1)) }} />
+          <div style={{ position: "absolute", left: RX(ronX) - 170, top: 0, width: 340, height: 1920, background: "linear-gradient(180deg, rgba(255,240,190,.0), rgba(255,240,190,.35) 60%, rgba(255,240,190,.15))", opacity: prog(s, I(3), 0.3) * (1 - prog(s, W(4, "foi."), 0.1)) }} />
         ) : null}
         {/* luz da Bíblia */}
         {[6, 10].map((id) =>
-          ronFala(id) ? <div key={id} style={{ position: "absolute", left: 300, top: 1320, width: 220, height: 220, borderRadius: "50%", background: "radial-gradient(circle, rgba(255,240,190,.85), rgba(255,240,190,0) 70%)", opacity: prog(s, I(id), 0.3) * (1 - prog(s, I(id + 1) - 0.4, 0.35)) }} /> : null,
+          ronFala(id) ? <div key={id} style={{ position: "absolute", left: RX(250) + 50, top: quadrado ? 1378 : 1320, width: 220, height: 220, borderRadius: "50%", background: "radial-gradient(circle, rgba(255,240,190,.85), rgba(255,240,190,0) 70%)", opacity: prog(s, I(id), 0.3) * (1 - prog(s, I(id + 1) - 0.4, 0.35)) }} /> : null,
         )}
-        {s >= tWan ? <Aura x={810} y={1430 + (1 - wanSobe) * 500} raio={260 + 10 * Math.sin(s * 2)} seed={4} /> : null}
+        {s >= tWan ? <Aura x={WX} y={1430 + (1 - wanSobe) * 500} raio={260 + 10 * Math.sin(s * 2)} seed={4} /> : null}
         <svg width={1080} height={1920} style={{ position: "absolute", left: 0, top: 0 }}>
           <g transform={`translate(0,${bob("ronaldo") + sobe})`}>
-            <Ronaldo x={ronX} y={1835} escala={ronEsc} expr={ronExpr as "confuso"} pose={ronPose as "cartas"} />
+            <Ronaldo x={RX(ronX)} y={1835} escala={escR(ronEsc)} expr={ronExpr as "confuso"} pose={ronPose as "cartas"} />
           </g>
           {s >= tWan ? (
             <g transform={`translate(0,${(1 - wanSobe) * 800 + bob("wan")})`}>
-              <Wan x={810} y={1835} escala={0.66} expr={entre(s, I(11), I(12)) ? "sorriso" : s >= I(12) ? "serio" : "calmo"} pose={entre(s, I(7), I(9)) || entre(s, I(11), I(12)) ? "livro" : "bracos"} brilhoLivro={entre(s, I(7), I(9)) || entre(s, I(11), I(12))} />
+              <Wan x={WX} y={1835} escala={escW} expr={entre(s, I(11), I(12)) ? "sorriso" : s >= I(12) ? "serio" : "calmo"} pose={entre(s, I(7), I(9)) || entre(s, I(11), I(12)) ? "livro" : "bracos"} brilhoLivro={entre(s, I(7), I(9)) || entre(s, I(11), I(12))} />
             </g>
           ) : null}
         </svg>
       </AbsoluteFill>
+      </div>
 
       {/* ====== textos e painéis: dentro da zona segura do Reels ====== */}
-      <AbsoluteFill style={SEGURO}>
+      <AbsoluteFill style={quadrado ? UI_QUADRADO : SEGURO}>
       {/* ====== gancho ====== */}
       {s < I(2) ? (
         <div style={{ position: "absolute", left: area.lateral, right: area.lateral, top: 210, opacity: 1 - prog(s, I(2) - 0.3, 0.25, SAI) }}>
