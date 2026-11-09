@@ -10601,6 +10601,15 @@
  "arkham-horror-card-game-o-banquete-de-hemlock-vale-expansao-de-investigador": {
   "ofertas": [
    {
+    "api": {
+     "anuncio": "MLB6630921610",
+     "fonte": "API do Mercado Livre",
+     "hora": "2026-11-09T06:56-03:00",
+     "nivel": "loja oficial",
+     "preco": 389.9,
+     "vendedor": "LEITURAJUNDIAI",
+     "vendedor_ok": true
+    },
     "atualizado": "2026-11-09T03:31:46+00:00",
     "de": 389.9,
     "loja": "Mercado Livre",
@@ -63230,7 +63239,7 @@
     "api": {
      "anuncio": "MLB6681217472",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-09T03:25-03:00",
+     "hora": "2026-11-09T06:57-03:00",
      "nivel": "MercadoLíder silver",
      "preco": 192.0,
      "vendedor": "SM20250328163004",
