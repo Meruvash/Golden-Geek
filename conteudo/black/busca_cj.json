@@ -1062,6 +1062,17 @@
   "slug": "engis",
   "tipo": "game"
  },
+ "enigma": {
+  "bgg": 6.39299,
+  "editora": "Filosofia Éditions",
+  "imagem": "https://uploads.comparajogos.com.br/img/099d892219d8cd41be1797851cae3acbd3c86db5.png",
+  "menor": null,
+  "nome": "Enigma",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "enigma",
+  "tipo": "game"
+ },
  "enquadrados": {
   "bgg": 6.5,
   "editora": "Copag Cards",
@@ -1335,6 +1346,17 @@
  "galapagos true crime 2 jogadores": null,
  "galapagos wandinha ataque do hyde jogo para familia a parti de 10 anos partidas de ate 20 min": null,
  "galapagos zombicide 2a edicao jogo de tabuleiro cooperativo 1 6 jogadores 30 60min": null,
+ "gears of war the card game": {
+  "bgg": 6.97467,
+  "editora": "Steamforged Games Ltd.",
+  "imagem": "https://uploads.comparajogos.com.br/img/39e9b4ed2d08571ebe63e1064b01a797de9d7d60.jpg",
+  "menor": null,
+  "nome": "Gears of War: The Card Game",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "gears-of-war-the-card-game",
+  "tipo": "game"
+ },
  "geeks vs trolls caixa base": null,
  "gentes": {
   "bgg": 6.65767,
@@ -1581,6 +1603,17 @@
   "ref": null,
   "ref_dias": 0,
   "slug": "hostage-negotiator",
+  "tipo": "game"
+ },
+ "hoverkraft": {
+  "bgg": 5.35636,
+  "editora": "thinkgeek.com",
+  "imagem": "https://uploads.comparajogos.com.br/img/625fe829406b864e3449cbd127bd2b4eac4c26b3.jpg",
+  "menor": null,
+  "nome": "Hoverkraft",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "hoverkraft",
   "tipo": "game"
  },
  "hungry hungry hippos grab go": {
