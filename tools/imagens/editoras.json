@@ -2462,5 +2462,26 @@
    ],
    "verificado_em": "2026-11-06"
   }
+ },
+ "cardboardalchemy.com": {
+  "nome": "Cardboard Alchemy",
+  "apelidos": [
+   "Cardboard Alchemy"
+  ],
+  "site": "https://cardboardalchemy.com",
+  "plataforma": "wordpress",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://cardboardalchemy.com/sitemap_index.xml"
+   ],
+   "verificado_em": "2026-11-09"
+  }
  }
 }

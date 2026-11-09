@@ -1,0 +1,22 @@
+{
+ "slug": "andromedas-edge",
+ "titulo": "Como jogar Andromeda's Edge",
+ "jogo": "Andromeda's Edge",
+ "genero": "Alocação de trabalhadores · Construção de motor",
+ "jogadores": "2 a 4 jogadores",
+ "duracao": "40 a 200 min",
+ "idade": "14+",
+ "edicao": "Edição Galápagos",
+ "data": "2026-11-09",
+ "descricao": "Regras de Andromeda's Edge passo a passo, conferidas no manual da Galápagos: Lançamento, Retorno à Estação, módulos, desenvolvimentos, batalha e eventos.",
+ "resumo": "Você Lança naves para colher luas, usar as Bases Aliadas e desenvolver planetas, depois as traz de volta para ativar os módulos da estação; quando alguém alcança o terminus, todos jogam mais um turno e vence quem tiver mais PV na pontuação final.",
+ "pontos": [
+  "No seu turno, você Lança uma nave para uma região e a ativa, ou Retorna à Estação com todas as naves para ativar módulos.",
+  "Cada módulo recebido e cada desenvolvimento construído sobem uma trilha de progresso, que paga bônus na partida e PV no fim.",
+  "Batalha compara o maior dado de cada lado; mais naves na região sobem a mira, o mínimo que cada dado pode mostrar."
+ ],
+ "leitura_min": 15,
+ "etapas": 5,
+ "chamada": "Naves que trabalham no mapa e voltam para alimentar a estação. Começa com a mesa montada passo a passo e um resumo para jogar o primeiro turno em 6 minutos, e segue em cinco etapas, do primeiro Lançamento à pontuação final.",
+ "publicar": false
+}
