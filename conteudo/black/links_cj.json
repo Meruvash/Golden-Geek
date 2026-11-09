@@ -51,6 +51,10 @@
   "piranoboardgame": "https://piranoboardgame.com.br/jogo/aquaria",
   "tabuloja": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/aquaria"
  },
+ "arcs-lideres-e-conhecimento": {
+  "_hora": "2026-11-09T16:16-03:00",
+  "meeplebr": "https://www.lojameeplebrjogos.com.br/arcs-lideres-e-conhecimento"
+ },
  "arkham-horror-card-game-a-era-esquecida-expansao-de-investigador": {
   "_hora": "2026-11-05T20:47-03:00",
   "alquimistasdosjogos": "https://www.alquimistasdosjogos.com.br/jogos/arkham-horror-card-game-a-era-esquecida-expansao-de-investigadores",
@@ -278,6 +282,10 @@
   "mercadolivre": "https://www.mercadolivre.com.br/p/MLB49223257",
   "spaceboardgames": "https://www.spaceboardgames.com.br/jogos-de-tabuleiro/dorfromantik-the-duel"
  },
+ "draftosaurus": {
+  "_hora": "2026-11-09T16:16-03:00",
+  "meeplebr": "https://www.lojameeplebrjogos.com.br/draftosaurus"
+ },
  "dragon-eclipse": {
   "_hora": "2026-11-05T20:47-03:00",
   "caixinhaboardgames": "https://www.caixinhaboardgames.com.br/produtos/dragon-eclipse/?entry_path=category",
@@ -355,6 +363,13 @@
   "guildadosjogos": "https://www.guildadosjogos.com.br/flip-7-a-vinganca-nunca-e-plena",
   "mercadolivre": "https://www.mercadolivre.com.br/p/MLB67296023",
   "tabuloja": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/flip-7-a-vinganca-nunca-e-plena"
+ },
+ "fornalha": {
+  "_hora": "2026-11-09T16:16-03:00",
+  "amazon": "https://www.amazon.com.br/dp/B08WLTTSF8",
+  "dalarangames": "https://www.dalaran.com.br/fornalha",
+  "meeplebr": "https://www.lojameeplebrjogos.com.br/fornalha",
+  "mercadolivre": "https://www.mercadolivre.com.br/p/MLB21702948"
  },
  "foundations-of-metropolis": {
   "_hora": "2026-11-07T18:48-03:00",
@@ -832,11 +847,11 @@
   "spaceboardgames": "https://www.spaceboardgames.com.br/jogos-de-tabuleiro/the-white-castle-duel"
  },
  "thesauros": {
-  "_hora": "2026-11-08T15:54-03:00",
+  "_hora": "2026-11-09T16:16-03:00",
   "facilshopping": "https://www.facilshopping.com.br/produtos/thesauros-meeple-br-10u3g/?entry_path=category",
-  "mecadosjogos": "https://www.mecadosjogos.com.br/thesauros-p1486",
   "omniverse": "https://www.omniverse.com.br/thesauros",
   "spaceboardgames": "https://www.spaceboardgames.com.br/jogos-de-tabuleiro/thesauros",
+  "tabulerio": "https://www.tabulerio.com.br/jogos/jogos-de-carta/thesauros",
   "tabuloja": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/thesauros"
  },
  "through-the-ages-uma-nova-historia-da-civilizacao": {
