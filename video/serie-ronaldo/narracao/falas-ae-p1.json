@@ -274,97 +274,92 @@
   "texto": "Calma, Ronaldo. No seu turno, você faz só uma coisa: lança uma nave… ou volta pra estação.",
   "fala": "[calm] Calma, Ronaldo. No seu turno, você faz só uma coisa: lança uma nave… ou volta pra estação.",
   "arquivo": "voz/ae-p1/fala-05.wav",
-  "dur": 6.56,
+  "dur": 7.069,
   "palavras_ouvidas": [
    {
-    "text": "Calma,",
+    "text": "Calma",
     "start": 0,
-    "end": 0.52
+    "end": 0.479
    },
    {
-    "text": "Ronaldo.",
-    "start": 0.52,
-    "end": 1.213
+    "text": "Ronaldo,",
+    "start": 0.479,
+    "end": 1.245
    },
    {
-    "text": "No",
-    "start": 1.213,
-    "end": 1.387
+    "text": "no",
+    "start": 1.245,
+    "end": 1.437
    },
    {
     "text": "seu",
-    "start": 1.387,
-    "end": 1.647
+    "start": 1.437,
+    "end": 1.724
    },
    {
-    "text": "turno,",
-    "start": 1.647,
-    "end": 2.167
+    "text": "turno",
+    "start": 1.724,
+    "end": 2.203
    },
    {
     "text": "você",
-    "start": 2.167,
-    "end": 2.513
+    "start": 2.203,
+    "end": 2.586
    },
    {
     "text": "faz",
-    "start": 2.513,
-    "end": 2.773
+    "start": 2.586,
+    "end": 2.873
    },
    {
     "text": "só",
-    "start": 2.773,
-    "end": 2.947
+    "start": 2.873,
+    "end": 3.065
    },
    {
     "text": "uma",
-    "start": 2.947,
-    "end": 3.207
+    "start": 3.065,
+    "end": 3.352
    },
    {
-    "text": "coisa.",
-    "start": 3.207,
-    "end": 3.727
+    "text": "coisa,",
+    "start": 3.352,
+    "end": 3.927
    },
    {
-    "text": "Lança",
-    "start": 3.727,
-    "end": 4.16
+    "text": "lança",
+    "start": 3.927,
+    "end": 4.406
    },
    {
     "text": "uma",
-    "start": 4.16,
-    "end": 4.42
+    "start": 4.406,
+    "end": 4.693
    },
    {
     "text": "nave",
-    "start": 4.42,
-    "end": 4.767
+    "start": 4.693,
+    "end": 5.076
    },
    {
     "text": "ou",
-    "start": 4.767,
-    "end": 4.94
+    "start": 5.076,
+    "end": 5.268
    },
    {
     "text": "volta",
-    "start": 4.94,
-    "end": 5.373
+    "start": 5.268,
+    "end": 5.746
    },
    {
-    "text": "para",
-    "start": 5.373,
-    "end": 5.72
-   },
-   {
-    "text": "a",
-    "start": 5.72,
-    "end": 5.807
+    "text": "pra",
+    "start": 5.746,
+    "end": 6.034
    },
    {
     "text": "estação.",
-    "start": 5.807,
-    "end": 6.5
+    "start": 6.034,
+    "end": 6.8
    }
   ],
   "modelo": "eleven_multilingual_v2"
@@ -658,7 +653,7 @@
   "texto": "Uma lua! É sinal! É o reteté!",
   "fala": "[gasps] Uma lua! [excited] É sinal! É o reteté!",
   "arquivo": "voz/ae-p1/fala-10.wav",
-  "dur": 3.384,
+  "dur": 3.381,
   "palavras_ouvidas": [
    {
     "text": "Uma",
@@ -691,7 +686,7 @@
     "end": 2.253
    },
    {
-    "text": "reteter!",
+    "text": "reteter.",
     "start": 2.253,
     "end": 3.38
    }
