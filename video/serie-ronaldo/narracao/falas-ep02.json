@@ -2,81 +2,955 @@
  {
   "id": 1,
   "quem": "narrador",
-  "texto": "Parte dois. As Rapinas pousaram… e elas não obedecem a ninguém. Só ao Decreto."
+  "texto": "Parte dois. As Rapinas pousaram… e elas não obedecem a ninguém. Só ao Decreto.",
+  "arquivo": "voz/ep02/fala-01.wav",
+  "dur": 5.528,
+  "palavras_ouvidas": [
+   {
+    "text": "Parte",
+    "start": 0,
+    "end": 0.435
+   },
+   {
+    "text": "2.",
+    "start": 0.435,
+    "end": 0.609
+   },
+   {
+    "text": "As",
+    "start": 0.609,
+    "end": 0.783
+   },
+   {
+    "text": "rapinas",
+    "start": 0.783,
+    "end": 1.392
+   },
+   {
+    "text": "pousaram",
+    "start": 1.392,
+    "end": 2.088
+   },
+   {
+    "text": "e",
+    "start": 2.088,
+    "end": 2.175
+   },
+   {
+    "text": "elas",
+    "start": 2.175,
+    "end": 2.523
+   },
+   {
+    "text": "não",
+    "start": 2.523,
+    "end": 2.784
+   },
+   {
+    "text": "obedecem",
+    "start": 2.784,
+    "end": 3.48
+   },
+   {
+    "text": "a",
+    "start": 3.48,
+    "end": 3.567
+   },
+   {
+    "text": "ninguém,",
+    "start": 3.567,
+    "end": 4.263
+   },
+   {
+    "text": "só",
+    "start": 4.263,
+    "end": 4.437
+   },
+   {
+    "text": "o",
+    "start": 4.437,
+    "end": 4.524
+   },
+   {
+    "text": "decreto.",
+    "start": 4.524,
+    "end": 5.22
+   }
+  ]
  },
  {
   "id": 2,
   "quem": "narrador",
-  "texto": "Seis guerreiros. Um ninho. E uma fila de ordens que precisa ser cumprida todo turno."
+  "texto": "Seis guerreiros. Um ninho. E uma fila de ordens que precisa ser cumprida todo turno.",
+  "arquivo": "voz/ep02/fala-02.wav",
+  "dur": 4.838,
+  "palavras_ouvidas": [
+   {
+    "text": "seis",
+    "start": 0,
+    "end": 0.276
+   },
+   {
+    "text": "guerreiros,",
+    "start": 0.276,
+    "end": 1.035
+   },
+   {
+    "text": "um",
+    "start": 1.035,
+    "end": 1.173
+   },
+   {
+    "text": "ninho",
+    "start": 1.173,
+    "end": 1.518
+   },
+   {
+    "text": "e",
+    "start": 1.518,
+    "end": 1.587
+   },
+   {
+    "text": "uma",
+    "start": 1.587,
+    "end": 1.794
+   },
+   {
+    "text": "fila",
+    "start": 1.794,
+    "end": 2.07
+   },
+   {
+    "text": "de",
+    "start": 2.07,
+    "end": 2.208
+   },
+   {
+    "text": "ordens",
+    "start": 2.208,
+    "end": 2.621
+   },
+   {
+    "text": "que",
+    "start": 2.621,
+    "end": 2.828
+   },
+   {
+    "text": "precisa",
+    "start": 2.828,
+    "end": 3.311
+   },
+   {
+    "text": "ser",
+    "start": 3.311,
+    "end": 3.518
+   },
+   {
+    "text": "cumprida",
+    "start": 3.518,
+    "end": 4.07
+   },
+   {
+    "text": "todo",
+    "start": 4.07,
+    "end": 4.346
+   },
+   {
+    "text": "turno.",
+    "start": 4.346,
+    "end": 4.76
+   }
+  ]
  },
  {
   "id": 3,
   "quem": "ronaldo",
-  "texto": "Decreto? Tá amarrado! Eu decreto que vocês vão embora!"
+  "texto": "Decreto? Tá amarrado! Eu decreto que vocês vão embora!",
+  "arquivo": "voz/ep02/fala-03.wav",
+  "dur": 3.958,
+  "palavras_ouvidas": [
+   {
+    "text": "Decreto.",
+    "start": 0,
+    "end": 1.2
+   },
+   {
+    "text": "Tá",
+    "start": 1.2,
+    "end": 1.382
+   },
+   {
+    "text": "amarrado.",
+    "start": 1.382,
+    "end": 2.2
+   },
+   {
+    "text": "Eu",
+    "start": 2.2,
+    "end": 2.323
+   },
+   {
+    "text": "decreto",
+    "start": 2.323,
+    "end": 2.753
+   },
+   {
+    "text": "que",
+    "start": 2.753,
+    "end": 2.938
+   },
+   {
+    "text": "vocês",
+    "start": 2.938,
+    "end": 3.245
+   },
+   {
+    "text": "vão",
+    "start": 3.245,
+    "end": 3.43
+   },
+   {
+    "text": "embora.",
+    "start": 3.43,
+    "end": 3.86
+   }
+  ]
  },
  {
   "id": 4,
   "quem": "narrador",
-  "texto": "Qualquer um ficaria calado. O Ronaldo tentou revogar uma lei no grito."
+  "texto": "Qualquer um ficaria calado. O Ronaldo tentou revogar uma lei no grito.",
+  "arquivo": "voz/ep02/fala-04.wav",
+  "dur": 3.894,
+  "palavras_ouvidas": [
+   {
+    "text": "Qualquer",
+    "start": 0,
+    "end": 0.53
+   },
+   {
+    "text": "um",
+    "start": 0.53,
+    "end": 0.662
+   },
+   {
+    "text": "ficaria",
+    "start": 0.662,
+    "end": 1.126
+   },
+   {
+    "text": "calado.",
+    "start": 1.126,
+    "end": 1.589
+   },
+   {
+    "text": "O",
+    "start": 1.589,
+    "end": 1.655
+   },
+   {
+    "text": "Ronaldo",
+    "start": 1.655,
+    "end": 2.119
+   },
+   {
+    "text": "tentou",
+    "start": 2.119,
+    "end": 2.516
+   },
+   {
+    "text": "revogar",
+    "start": 2.516,
+    "end": 2.979
+   },
+   {
+    "text": "o",
+    "start": 2.979,
+    "end": 3.046
+   },
+   {
+    "text": "Malino",
+    "start": 3.046,
+    "end": 3.443
+   },
+   {
+    "text": "grito.",
+    "start": 3.443,
+    "end": 3.84
+   }
+  ]
  },
  {
   "id": 5,
   "quem": "narrador",
-  "texto": "Recrutar. Mover. Batalhar. Construir. Da esquerda pra direita, sem pular nenhuma."
+  "texto": "Recrutar. Mover. Batalhar. Construir. Da esquerda pra direita, sem pular nenhuma.",
+  "arquivo": "voz/ep02/fala-05.wav",
+  "dur": 7.061,
+  "palavras_ouvidas": [
+   {
+    "text": "Recrutar,",
+    "start": 0,
+    "end": 0.73
+   },
+   {
+    "text": "mover,",
+    "start": 0.73,
+    "end": 1.217
+   },
+   {
+    "text": "batalhar,",
+    "start": 1.217,
+    "end": 1.947
+   },
+   {
+    "text": "construir",
+    "start": 1.947,
+    "end": 2.678
+   },
+   {
+    "text": "da",
+    "start": 2.678,
+    "end": 2.84
+   },
+   {
+    "text": "esquerda",
+    "start": 2.84,
+    "end": 3.489
+   },
+   {
+    "text": "pra",
+    "start": 3.489,
+    "end": 3.733
+   },
+   {
+    "text": "direita,",
+    "start": 3.733,
+    "end": 4.382
+   },
+   {
+    "text": "sem",
+    "start": 4.382,
+    "end": 4.625
+   },
+   {
+    "text": "pular",
+    "start": 4.625,
+    "end": 5.031
+   },
+   {
+    "text": "nenhuma.",
+    "start": 5.031,
+    "end": 5.68
+   }
+  ]
  },
  {
   "id": 6,
   "quem": "ronaldo",
-  "texto": "E se elas não conseguirem?"
+  "texto": "E se elas não conseguirem?",
+  "arquivo": "voz/ep02/fala-06.wav",
+  "dur": 1.35,
+  "palavras_ouvidas": [
+   {
+    "text": "E",
+    "start": 0,
+    "end": 0.058
+   },
+   {
+    "text": "se",
+    "start": 0.058,
+    "end": 0.175
+   },
+   {
+    "text": "elas",
+    "start": 0.175,
+    "end": 0.407
+   },
+   {
+    "text": "não",
+    "start": 0.407,
+    "end": 0.582
+   },
+   {
+    "text": "conseguirem?",
+    "start": 0.582,
+    "end": 1.28
+   }
+  ]
  },
  {
   "id": 7,
   "quem": "narrador",
-  "texto": "O Wan já sabia a resposta."
+  "texto": "O Wan já sabia a resposta.",
+  "arquivo": "voz/ep02/fala-07.wav",
+  "dur": 2.189,
+  "palavras_ouvidas": [
+   {
+    "text": "O",
+    "start": 0,
+    "end": 0.073
+   },
+   {
+    "text": "Juan",
+    "start": 0.073,
+    "end": 0.364
+   },
+   {
+    "text": "já",
+    "start": 0.364,
+    "end": 0.509
+   },
+   {
+    "text": "sabia",
+    "start": 0.509,
+    "end": 0.873
+   },
+   {
+    "text": "a",
+    "start": 0.873,
+    "end": 0.945
+   },
+   {
+    "text": "resposta.",
+    "start": 0.945,
+    "end": 1.6
+   }
+  ]
  },
  {
   "id": 8,
   "quem": "wan",
-  "texto": "Se uma ordem não puder ser cumprida, as Rapinas caem em tumulto."
+  "texto": "Se uma ordem não puder ser cumprida, as Rapinas caem em tumulto.",
+  "arquivo": "voz/ep02/fala-08.wav",
+  "dur": 4.36,
+  "palavras_ouvidas": [
+   {
+    "text": "Se",
+    "start": 0,
+    "end": 0.151
+   },
+   {
+    "text": "uma",
+    "start": 0.151,
+    "end": 0.377
+   },
+   {
+    "text": "ordem",
+    "start": 0.377,
+    "end": 0.755
+   },
+   {
+    "text": "não",
+    "start": 0.755,
+    "end": 0.981
+   },
+   {
+    "text": "puder",
+    "start": 0.981,
+    "end": 1.358
+   },
+   {
+    "text": "ser",
+    "start": 1.358,
+    "end": 1.585
+   },
+   {
+    "text": "cumprida,",
+    "start": 1.585,
+    "end": 2.264
+   },
+   {
+    "text": "as",
+    "start": 2.264,
+    "end": 2.415
+   },
+   {
+    "text": "rapinas",
+    "start": 2.415,
+    "end": 2.943
+   },
+   {
+    "text": "caem",
+    "start": 2.943,
+    "end": 3.245
+   },
+   {
+    "text": "em",
+    "start": 3.245,
+    "end": 3.396
+   },
+   {
+    "text": "tumulto.",
+    "start": 3.396,
+    "end": 4
+   }
+  ]
  },
  {
   "id": 9,
   "quem": "wan",
-  "texto": "Perdem um ponto por pássaro no Decreto, descartam as ordens e trocam de líder."
+  "texto": "Perdem um ponto por pássaro no Decreto, descartam as ordens e trocam de líder.",
+  "arquivo": "voz/ep02/fala-09.wav",
+  "dur": 5.007,
+  "palavras_ouvidas": [
+   {
+    "text": "Perdem",
+    "start": 0,
+    "end": 0.462
+   },
+   {
+    "text": "um",
+    "start": 0.462,
+    "end": 0.615
+   },
+   {
+    "text": "ponto",
+    "start": 0.615,
+    "end": 1
+   },
+   {
+    "text": "por",
+    "start": 1,
+    "end": 1.231
+   },
+   {
+    "text": "pássaro",
+    "start": 1.231,
+    "end": 1.769
+   },
+   {
+    "text": "no",
+    "start": 1.769,
+    "end": 1.923
+   },
+   {
+    "text": "decreto.",
+    "start": 1.923,
+    "end": 2.538
+   },
+   {
+    "text": "Descartam",
+    "start": 2.538,
+    "end": 3.231
+   },
+   {
+    "text": "as",
+    "start": 3.231,
+    "end": 3.385
+   },
+   {
+    "text": "ordens",
+    "start": 3.385,
+    "end": 3.846
+   },
+   {
+    "text": "e",
+    "start": 3.846,
+    "end": 3.923
+   },
+   {
+    "text": "trocam",
+    "start": 3.923,
+    "end": 4.385
+   },
+   {
+    "text": "de",
+    "start": 4.385,
+    "end": 4.538
+   },
+   {
+    "text": "líder.",
+    "start": 4.538,
+    "end": 5
+   }
+  ]
  },
  {
   "id": 10,
   "quem": "narrador",
-  "texto": "O Decreto mandou batalhar numa clareira de coelho. O Wan tirou todo mundo de lá."
+  "texto": "O Decreto mandou batalhar numa clareira de coelho. O Wan tirou todo mundo de lá.",
+  "arquivo": "voz/ep02/fala-10.wav",
+  "dur": 4.348,
+  "palavras_ouvidas": [
+   {
+    "text": "O",
+    "start": 0,
+    "end": 0.065
+   },
+   {
+    "text": "decreto",
+    "start": 0.065,
+    "end": 0.524
+   },
+   {
+    "text": "mandou",
+    "start": 0.524,
+    "end": 0.916
+   },
+   {
+    "text": "batalhar",
+    "start": 0.916,
+    "end": 1.44
+   },
+   {
+    "text": "numa",
+    "start": 1.44,
+    "end": 1.702
+   },
+   {
+    "text": "clareira",
+    "start": 1.702,
+    "end": 2.225
+   },
+   {
+    "text": "de",
+    "start": 2.225,
+    "end": 2.356
+   },
+   {
+    "text": "coelho.",
+    "start": 2.356,
+    "end": 2.815
+   },
+   {
+    "text": "O",
+    "start": 2.815,
+    "end": 2.88
+   },
+   {
+    "text": "One",
+    "start": 2.88,
+    "end": 3.076
+   },
+   {
+    "text": "tirou",
+    "start": 3.076,
+    "end": 3.404
+   },
+   {
+    "text": "todo",
+    "start": 3.404,
+    "end": 3.665
+   },
+   {
+    "text": "mundo",
+    "start": 3.665,
+    "end": 3.993
+   },
+   {
+    "text": "de",
+    "start": 3.993,
+    "end": 4.124
+   },
+   {
+    "text": "lá.",
+    "start": 4.124,
+    "end": 4.32
+   }
+  ]
  },
  {
   "id": 11,
   "quem": "narrador",
-  "texto": "Sem ninguém pra atacar… a ordem falhou."
+  "texto": "Sem ninguém pra atacar… a ordem falhou.",
+  "arquivo": "voz/ep02/fala-11.wav",
+  "dur": 5.915,
+  "palavras_ouvidas": [
+   {
+    "text": "Sem",
+    "start": 0,
+    "end": 0.207
+   },
+   {
+    "text": "ninguém",
+    "start": 0.207,
+    "end": 0.691
+   },
+   {
+    "text": "para",
+    "start": 0.691,
+    "end": 0.967
+   },
+   {
+    "text": "atacar,",
+    "start": 0.967,
+    "end": 1.451
+   },
+   {
+    "text": "a",
+    "start": 1.451,
+    "end": 1.52
+   },
+   {
+    "text": "ordem",
+    "start": 1.52,
+    "end": 1.865
+   },
+   {
+    "text": "faiou.",
+    "start": 1.865,
+    "end": 2.28
+   }
+  ]
  },
  {
   "id": 12,
   "quem": "narrador",
-  "texto": "Tumulto. O líder caiu."
+  "texto": "Tumulto. O líder caiu.",
+  "arquivo": "voz/ep02/fala-12.wav",
+  "dur": 4.696,
+  "palavras_ouvidas": [
+   {
+    "text": "Tomuto,",
+    "start": 0,
+    "end": 0.653
+   },
+   {
+    "text": "o",
+    "start": 0.653,
+    "end": 0.747
+   },
+   {
+    "text": "líder",
+    "start": 0.747,
+    "end": 1.213
+   },
+   {
+    "text": "caiu.",
+    "start": 1.213,
+    "end": 1.68
+   }
+  ]
  },
  {
   "id": 13,
   "quem": "ronaldo",
-  "texto": "Glória! Foi a minha repreensão!"
+  "texto": "Glória! Foi a minha repreensão!",
+  "arquivo": "voz/ep02/fala-13.wav",
+  "dur": 2.023,
+  "palavras_ouvidas": [
+   {
+    "text": "Gória,",
+    "start": 0,
+    "end": 0.462
+   },
+   {
+    "text": "foi",
+    "start": 0.462,
+    "end": 0.692
+   },
+   {
+    "text": "a",
+    "start": 0.692,
+    "end": 0.769
+   },
+   {
+    "text": "minha",
+    "start": 0.769,
+    "end": 1.154
+   },
+   {
+    "text": "repreensão.",
+    "start": 1.154,
+    "end": 2
+   }
+  ]
  },
  {
   "id": 14,
   "quem": "wan",
-  "texto": "Claro, Ronaldo. Claro."
+  "texto": "Claro, Ronaldo. Claro.",
+  "arquivo": "voz/ep02/fala-14.wav",
+  "dur": 2.068,
+  "palavras_ouvidas": [
+   {
+    "text": "Claro,",
+    "start": 0,
+    "end": 0.462
+   },
+   {
+    "text": "Ronaldo.",
+    "start": 0.462,
+    "end": 1.077
+   },
+   {
+    "text": "Claro,",
+    "start": 1.077,
+    "end": 1.538
+   },
+   {
+    "text": "claro!",
+    "start": 1.538,
+    "end": 2
+   }
+  ]
  },
  {
   "id": 15,
   "quem": "narrador",
-  "texto": "Mas, no fundo da floresta, alguém começou a espalhar simpatia… a Aliança acordou."
+  "texto": "Mas, no fundo da floresta, alguém começou a espalhar simpatia… a Aliança acordou.",
+  "arquivo": "voz/ep02/fala-15.wav",
+  "dur": 5.239,
+  "palavras_ouvidas": [
+   {
+    "text": "Mas,",
+    "start": 0,
+    "end": 0.267
+   },
+   {
+    "text": "no",
+    "start": 0.267,
+    "end": 0.4
+   },
+   {
+    "text": "fundo",
+    "start": 0.4,
+    "end": 0.733
+   },
+   {
+    "text": "da",
+    "start": 0.733,
+    "end": 0.867
+   },
+   {
+    "text": "floresta,",
+    "start": 0.867,
+    "end": 1.467
+   },
+   {
+    "text": "alguém",
+    "start": 1.467,
+    "end": 1.867
+   },
+   {
+    "text": "começou",
+    "start": 1.867,
+    "end": 2.333
+   },
+   {
+    "text": "a",
+    "start": 2.333,
+    "end": 2.4
+   },
+   {
+    "text": "espalhar",
+    "start": 2.4,
+    "end": 2.933
+   },
+   {
+    "text": "a",
+    "start": 2.933,
+    "end": 3
+   },
+   {
+    "text": "simpatia.",
+    "start": 3,
+    "end": 3.6
+   },
+   {
+    "text": "A",
+    "start": 3.6,
+    "end": 3.675
+   },
+   {
+    "text": "Aliança",
+    "start": 3.675,
+    "end": 4.2
+   },
+   {
+    "text": "acordou.",
+    "start": 4.2,
+    "end": 4.8
+   }
+  ]
  },
  {
   "id": 16,
   "quem": "narrador",
-  "texto": "Aprende a jogar Root de verdade no nosso site. E segue pra ver a Parte três."
+  "texto": "Aprende a jogar Root de verdade no nosso site. E segue pra ver a Parte três.",
+  "arquivo": "voz/ep02/fala-16.wav",
+  "dur": 4.472,
+  "palavras_ouvidas": [
+   {
+    "text": "Aprende",
+    "start": 0,
+    "end": 0.533
+   },
+   {
+    "text": "a",
+    "start": 0.533,
+    "end": 0.61
+   },
+   {
+    "text": "jogar",
+    "start": 0.61,
+    "end": 0.991
+   },
+   {
+    "text": "Root",
+    "start": 0.991,
+    "end": 1.296
+   },
+   {
+    "text": "de",
+    "start": 1.296,
+    "end": 1.448
+   },
+   {
+    "text": "verdade",
+    "start": 1.448,
+    "end": 1.981
+   },
+   {
+    "text": "no",
+    "start": 1.981,
+    "end": 2.134
+   },
+   {
+    "text": "nosso",
+    "start": 2.134,
+    "end": 2.515
+   },
+   {
+    "text": "site",
+    "start": 2.515,
+    "end": 2.82
+   },
+   {
+    "text": "e",
+    "start": 2.82,
+    "end": 2.896
+   },
+   {
+    "text": "segue",
+    "start": 2.896,
+    "end": 3.277
+   },
+   {
+    "text": "para",
+    "start": 3.277,
+    "end": 3.582
+   },
+   {
+    "text": "ver",
+    "start": 3.582,
+    "end": 3.81
+   },
+   {
+    "text": "a",
+    "start": 3.81,
+    "end": 3.887
+   },
+   {
+    "text": "parte",
+    "start": 3.887,
+    "end": 4.268
+   },
+   {
+    "text": "3.",
+    "start": 4.268,
+    "end": 4.42
+   }
+  ]
  }
 ]
