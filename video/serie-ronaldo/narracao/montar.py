@@ -26,8 +26,10 @@ for f in falas:
         # Chatterbox: pausas internas longas (o modelo às vezes para 1-2 s no meio da frase) viram no máximo 0,32 s.
         # ElevenLabs (NATURAL=1): as pausas são intencionais e ficam como estão.
         filtro += "silenceremove=stop_periods=-1:stop_duration=0.32:stop_threshold=-42dB,"
-    filtro += "loudnorm=I=-16:TP=-1.5:LRA=11"
-    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", bruto, "-af", filtro, "-ar", "44100", arq], check=True)
+    # corte e normalização em duas passadas: areverse + loudnorm no mesmo filtro trava o ffmpeg em alguns arquivos
+    cortado = f"{tmp}/c{f['id']}.wav"
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", bruto, "-af", filtro.rstrip(","), cortado], check=True, timeout=120)
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", cortado, "-af", "loudnorm=I=-16:TP=-1.5:LRA=11", "-ar", "44100", arq], check=True, timeout=120)
     copia = f"{tmp}/t{f['id']}.wav"
     subprocess.run(["cp", arq, copia], check=True)
     r = subprocess.run(["npx", "--yes", "hyperframes@0.9.26", "transcribe", copia, "--language", "pt", "--json"], capture_output=True, text=True)
