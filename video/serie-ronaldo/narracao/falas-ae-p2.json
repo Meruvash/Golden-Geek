@@ -1,0 +1,80 @@
+[
+ {
+  "id": 1,
+  "quem": "narrador",
+  "texto": "Parte 2. Um Atacante Vorticon pousou do lado do Ronaldo do Reteté.",
+  "fala": "[excited] Parte dois. Um Atacante Vorticon pousou do lado do Ronaldo do Reteté."
+ },
+ {
+  "id": 2,
+  "quem": "ronaldo",
+  "texto": "Tá repreendido, alienígena!",
+  "fala": "[shouting] Tá repreendido, alienígena!"
+ },
+ {
+  "id": 3,
+  "quem": "wan",
+  "texto": "Não repreende. Rola. Cada lado rola os dados das suas armas, e quem tirar o maior dado vence.",
+  "fala": "[calm] Não repreende. Rola. Cada lado rola os dados das suas armas, e quem tirar o maior dado vence."
+ },
+ {
+  "id": 4,
+  "quem": "narrador",
+  "texto": "O transportador tem uma arma. O Vorticon, duas."
+ },
+ {
+  "id": 5,
+  "quem": "wan",
+  "texto": "E a mira é o menor valor que o seu dado pode mostrar. Cada nave sua na região soma um."
+ },
+ {
+  "id": 6,
+  "quem": "ronaldo",
+  "texto": "Senhor, assopra esse dado! Eu profetizo um seis!",
+  "fala": "[desperate] Senhor, assopra esse dado! [shouting] Eu profetizo um seis!"
+ },
+ {
+  "id": 7,
+  "quem": "narrador",
+  "texto": "Saiu… o número um. O Vorticon tirou cinco.",
+  "fala": "[deadpan] Saiu… o número um. O Vorticon tirou cinco."
+ },
+ {
+  "id": 8,
+  "quem": "wan",
+  "texto": "Perdeu e não tem escudo? A nave vai pro Ferro-Velho."
+ },
+ {
+  "id": 9,
+  "quem": "narrador",
+  "texto": "Sem nave e sem unção. Mas o Wan sabia o próximo passo."
+ },
+ {
+  "id": 10,
+  "quem": "wan",
+  "texto": "Retornar à Estação. Cada nave ativa um módulo. Uma nave no Reator Primário ativa a fileira inteira de ciência."
+ },
+ {
+  "id": 11,
+  "quem": "ronaldo",
+  "texto": "Eu vou ativar é o módulo do reteté!",
+  "fala": "[excited] Eu vou ativar é o módulo do reteté!"
+ },
+ {
+  "id": 12,
+  "quem": "wan",
+  "texto": "Isso não existe, Ronaldo.",
+  "fala": "[deadpan] Isso não existe, Ronaldo."
+ },
+ {
+  "id": 13,
+  "quem": "narrador",
+  "texto": "Módulos e desenvolvimentos sobem as trilhas. Quando alguém chega ao terminus, todos jogam mais um turno… e vence quem tiver mais pontos."
+ },
+ {
+  "id": 14,
+  "quem": "narrador",
+  "texto": "Tutorial completo no nosso site. E segue pra próxima aventura do Ronaldo.",
+  "fala": "[excited] Tutorial completo no nosso site. E segue pra próxima aventura do Ronaldo."
+ }
+]

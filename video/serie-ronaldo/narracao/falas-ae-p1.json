@@ -1,0 +1,83 @@
+[
+ {
+  "id": 1,
+  "quem": "narrador",
+  "texto": "E se você acordasse dentro de Andromeda's Edge… sem nunca ter jogado?",
+  "fala": "[mysterious] E se você acordasse dentro de Andromeda's Edge… [excited] sem nunca ter jogado?"
+ },
+ {
+  "id": 2,
+  "quem": "narrador",
+  "texto": "O Ronaldo do Reteté abriu os olhos numa estação espacial, na beira da galáxia."
+ },
+ {
+  "id": 3,
+  "quem": "ronaldo",
+  "texto": "Glória! Eu fui arrebatado!",
+  "fala": "[shouting] Glória! [excited] Eu fui arrebatado!"
+ },
+ {
+  "id": 4,
+  "quem": "narrador",
+  "texto": "Não foi. Ele tinha três naves na Baía de Lançamento… e nenhuma ideia do que fazer.",
+  "fala": "[deadpan] Não foi. Ele tinha três naves na Baía de Lançamento… e nenhuma ideia do que fazer."
+ },
+ {
+  "id": 5,
+  "quem": "wan",
+  "texto": "Calma, Ronaldo. No seu turno, você faz só uma coisa: lança uma nave… ou volta pra estação.",
+  "fala": "[calm] Calma, Ronaldo. No seu turno, você faz só uma coisa: lança uma nave… ou volta pra estação."
+ },
+ {
+  "id": 6,
+  "quem": "ronaldo",
+  "texto": "Então eu vou lançar pra aquela nuvem roxa, em nome de Jesus!",
+  "fala": "[excited] Então eu vou lançar pra aquela nuvem roxa, em nome de Jesus!"
+ },
+ {
+  "id": 7,
+  "quem": "wan",
+  "texto": "Aquilo é uma nebulosa. Transportador não tem Viagem. Não entra.",
+  "fala": "[serious] Aquilo é uma nebulosa. Transportador não tem Viagem. Não entra."
+ },
+ {
+  "id": 8,
+  "quem": "wan",
+  "texto": "E no primeiro lançamento, só vale região desocupada: sem invasor, sem nave de ninguém."
+ },
+ {
+  "id": 9,
+  "quem": "narrador",
+  "texto": "Ele pousou num planeta vazio… e o planeta deu uma lua pra ele."
+ },
+ {
+  "id": 10,
+  "quem": "ronaldo",
+  "texto": "Uma lua! É sinal! É o reteté!",
+  "fala": "[gasps] Uma lua! [excited] É sinal! É o reteté!"
+ },
+ {
+  "id": 11,
+  "quem": "wan",
+  "texto": "É a ativação da região. Planeta dá lua. Base Aliada dá a ação dela.",
+  "fala": "[sighs] É a ativação da região. Planeta dá lua. Base Aliada dá a ação dela."
+ },
+ {
+  "id": 12,
+  "quem": "narrador",
+  "texto": "Mas na nebulosa vizinha, alguma coisa se mexeu. Um invasor ao alcance… vinha direto pra ele.",
+  "fala": "[suspenseful] Mas na nebulosa vizinha, alguma coisa se mexeu. Um invasor ao alcance… vinha direto pra ele."
+ },
+ {
+  "id": 13,
+  "quem": "wan",
+  "texto": "Ronaldo… agora é batalha.",
+  "fala": "[serious] Ronaldo… agora é batalha."
+ },
+ {
+  "id": 14,
+  "quem": "narrador",
+  "texto": "Parte 2: a batalha. Segue pra não perder.",
+  "fala": "[excited] Parte dois: a batalha. Segue pra não perder."
+ }
+]

@@ -11,6 +11,7 @@ pausas = {int(k): v for k, v in json.loads(sys.argv[2] if len(sys.argv) > 2 else
 falas = json.load(open(f"narracao/falas-{ep}.json"))
 pasta = f"public/voz/{ep}"
 tmp = tempfile.mkdtemp()
+NATURAL = os.environ.get("NATURAL") == "1"
 
 def dur(p):
     return float(subprocess.check_output(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", p]).decode())
@@ -20,11 +21,13 @@ for f in falas:
     bruto = f"{tmp}/b{f['id']}.wav"
     os.replace(arq, bruto)
     filtro = ("silenceremove=start_periods=1:start_threshold=-50dB:start_silence=0.08,"
-              "areverse,silenceremove=start_periods=1:start_threshold=-50dB:start_silence=0.25,areverse,"
-              # pausas internas longas (o modelo às vezes para 1-2 s no meio da frase) viram no máximo 0,32 s
-              "silenceremove=stop_periods=-1:stop_duration=0.32:stop_threshold=-42dB,"
-              "loudnorm=I=-16:TP=-1.5:LRA=11")
-    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", bruto, "-af", filtro, "-ar", "24000", arq], check=True)
+              "areverse,silenceremove=start_periods=1:start_threshold=-50dB:start_silence=0.25,areverse,")
+    if not NATURAL:
+        # Chatterbox: pausas internas longas (o modelo às vezes para 1-2 s no meio da frase) viram no máximo 0,32 s.
+        # ElevenLabs (NATURAL=1): as pausas são intencionais e ficam como estão.
+        filtro += "silenceremove=stop_periods=-1:stop_duration=0.32:stop_threshold=-42dB,"
+    filtro += "loudnorm=I=-16:TP=-1.5:LRA=11"
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", bruto, "-af", filtro, "-ar", "44100", arq], check=True)
     copia = f"{tmp}/t{f['id']}.wav"
     subprocess.run(["cp", arq, copia], check=True)
     r = subprocess.run(["npx", "--yes", "hyperframes@0.9.26", "transcribe", copia, "--language", "pt", "--json"], capture_output=True, text=True)
