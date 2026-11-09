@@ -2377,6 +2377,17 @@
   "tipo": "game"
  },
  "o preco ja esteve um tanto mais baixo mas atualmente e o menor preco de mercado the castles of burgundy": null,
+ "oak": {
+  "bgg": 7.13898,
+  "editora": "Grok Games",
+  "imagem": "https://uploads.comparajogos.com.br/img/7966efcea723d16fdd23cece9c6af1d565d282ce.png",
+  "menor": 134.91,
+  "nome": "Oak",
+  "ref": 148.54,
+  "ref_dias": 32,
+  "slug": "oak",
+  "tipo": "game"
+ },
  "odin papergames": {
   "bgg": 6.27509,
   "editora": "PaperGames",
@@ -2827,6 +2838,17 @@
   "ref_dias": 0,
   "slug": "selfish-zombie-edition",
   "tipo": "game"
+ },
+ "sentinels of the multiverse villains of the multiverse": {
+  "bgg": 7.8158,
+  "editora": "Greater Than Games",
+  "imagem": "https://uploads.comparajogos.com.br/img/bcbc820741d8cff1dd632c6d80fb0639113bf2d2.jpg",
+  "menor": null,
+  "nome": "Sentinels of the Multiverse: Villains of the Multiverse",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "sentinels-of-the-multiverse-villains-of-the-multiverse",
+  "tipo": "expansion"
  },
  "setup": {
   "bgg": 6.12957,
