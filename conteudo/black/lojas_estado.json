@@ -2,47 +2,49 @@
  "lojas": {
   "azuosmetal.com.br": {
    "dia": "2026-11-09",
-   "paginas": 0
+   "paginas": 3
   },
   "boardgames-hunters.lojaintegrada.com.br": {
    "dia": "2026-11-09",
-   "paginas": 0
+   "paginas": 3
   },
   "bravojogos.com.br": {
    "dia": "2026-11-09",
-   "paginas": 3
+   "paginas": 8
   },
   "brecholudico.com.br": {
    "dia": "2026-11-09",
-   "paginas": 0
+   "paginas": 3
   },
   "brinkashop.commercesuite.com.br": {
+   "descanso_ate": "2026-11-11T09:40+00:00",
    "dia": "2026-11-09",
+   "motivo": "robots.txt respondeu 403",
    "paginas": 0
   },
   "interludi.com.br": {
    "dia": "2026-11-09",
-   "paginas": 1
+   "paginas": 4
   },
   "itabuleiros.lojaintegrada.com.br": {
    "dia": "2026-11-09",
-   "paginas": 0
+   "paginas": 3
   },
   "loja-ludocafe.lojaintegrada.com.br": {
    "dia": "2026-11-09",
-   "paginas": 0
+   "paginas": 3
   },
   "loja.adoletajogos.com.br": {
    "dia": "2026-11-09",
-   "paginas": 0
+   "paginas": 3
   },
   "loja.frodosbg.com.br": {
    "dia": "2026-11-09",
-   "paginas": 0
+   "paginas": 3
   },
   "loja.gamehives.com.br": {
    "dia": "2026-11-09",
-   "paginas": 0
+   "paginas": 3
   },
   "loja.joyjoycafe.com.br": {
    "descanso_ate": "2026-11-09T19:24+00:00",
@@ -52,33 +54,33 @@
   },
   "loja.orcspace.com.br": {
    "dia": "2026-11-09",
-   "paginas": 0
+   "paginas": 3
   },
   "lojanerdz.com.br": {
    "dia": "2026-11-09",
-   "paginas": 0
+   "paginas": 3
   },
   "ludostation.com.br": {
    "descanso_ate": "2026-11-05T22:05+00:00",
    "dia": "2026-11-09",
    "motivo": "robots.txt respondeu 429",
-   "paginas": 0
+   "paginas": 3
   },
   "modoaviaobg.com.br": {
    "dia": "2026-11-09",
-   "paginas": 0
+   "paginas": 3
   },
   "overrungeek.com.br": {
    "dia": "2026-11-09",
-   "paginas": 0
+   "paginas": 3
   },
   "paladinsgames.com.br": {
    "dia": "2026-11-09",
-   "paginas": 0
+   "paginas": 3
   },
   "piranoboardgame.com.br": {
    "dia": "2026-11-09",
-   "paginas": 0
+   "paginas": 3
   },
   "t.me": {
    "dia": "2026-11-09",
@@ -86,67 +88,77 @@
   },
   "tubaleria.store": {
    "dia": "2026-11-09",
-   "paginas": 0
+   "paginas": 3
   },
   "vempramesajogos.commercesuite.com.br": {
+   "descanso_ate": "2026-11-11T09:43+00:00",
    "dia": "2026-11-09",
+   "motivo": "robots.txt respondeu 403",
    "paginas": 0
   },
   "www.alquimistasdosjogos.com.br": {
+   "descanso_ate": "2026-11-11T09:43+00:00",
    "dia": "2026-11-09",
+   "motivo": "robots.txt respondeu 403",
    "paginas": 0
   },
   "www.animusludere.com.br": {
    "dia": "2026-11-09",
-   "paginas": 0
+   "paginas": 3
   },
   "www.boardgamebarato.com.br": {
    "dia": "2026-11-09",
-   "paginas": 0
+   "paginas": 3
   },
   "www.boardgameplaystore.com.br": {
    "dia": "2026-11-09",
-   "paginas": 2
+   "paginas": 5
   },
   "www.boargames.com.br": {
+   "descanso_ate": "2026-11-11T09:44+00:00",
    "dia": "2026-11-09",
+   "motivo": "robots.txt respondeu 403",
    "paginas": 0
   },
   "www.borbagames.com.br": {
    "dia": "2026-11-09",
-   "paginas": 0
+   "paginas": 3
   },
   "www.borderjogos.com.br": {
+   "descanso_ate": "2026-11-11T09:44+00:00",
    "dia": "2026-11-09",
+   "motivo": "robots.txt respondeu 403",
    "paginas": 0
   },
   "www.botanamesa.com.br": {
    "dia": "2026-11-09",
-   "paginas": 0
+   "paginas": 3
   },
   "www.brinkz.com.br": {
    "dia": "2026-11-09",
-   "paginas": 0
+   "paginas": 3
   },
   "www.caixinhaboardgames.com.br": {
    "dia": "2026-11-09",
-   "paginas": 0
+   "paginas": 3
   },
   "www.caldeiraojogos.com.br": {
    "dia": "2026-11-09",
-   "paginas": 0
+   "paginas": 3
   },
   "www.cangaiajogos.com.br": {
+   "descanso_ate": "2026-11-11T09:45+00:00",
    "dia": "2026-11-09",
+   "motivo": "robots.txt respondeu 403",
    "paginas": 0
   },
   "www.capivarajogos.com.br": {
    "dia": "2026-11-09",
-   "paginas": 0
+   "paginas": 3
   },
   "www.dalaran.com.br": {
    "dia": "2026-11-09",
-   "paginas": 0
+   "paginas": 3
   },
   "www.elfosecia.com.br": {
    "descanso_ate": "2026-11-09T19:24+00:00",
@@ -155,61 +167,71 @@
    "paginas": 0
   },
   "www.espacoarcs.com.br": {
+   "descanso_ate": "2026-11-11T09:45+00:00",
    "dia": "2026-11-09",
+   "motivo": "robots.txt respondeu 403",
    "paginas": 0
   },
   "www.expressoboardgames.com.br": {
    "dia": "2026-11-09",
-   "paginas": 0
+   "paginas": 3
   },
   "www.facilshopping.com.br": {
    "descanso_ate": "2026-11-05T22:05+00:00",
    "dia": "2026-11-09",
    "motivo": "robots.txt respondeu 429",
-   "paginas": 0
+   "paginas": 3
   },
   "www.guildadosjogos.com.br": {
    "dia": "2026-11-09",
-   "paginas": 0
+   "paginas": 3
   },
   "www.happynerd.com.br": {
+   "descanso_ate": "2026-11-11T09:46+00:00",
    "dia": "2026-11-09",
+   "motivo": "robots.txt respondeu 403",
    "paginas": 0
   },
   "www.immerstore.com.br": {
+   "descanso_ate": "2026-11-11T09:46+00:00",
    "dia": "2026-11-09",
+   "motivo": "robots.txt respondeu 403",
    "paginas": 0
   },
   "www.javalijogos.com.br": {
    "dia": "2026-11-09",
-   "paginas": 0
+   "paginas": 3
   },
   "www.jogasampa.com.br": {
    "dia": "2026-11-09",
-   "paginas": 0
+   "paginas": 3
   },
   "www.kobold.games": {
    "dia": "2026-11-09",
-   "paginas": 0
+   "paginas": 3
   },
   "www.labordo.com.br": {
    "dia": "2026-11-09",
-   "paginas": 0
+   "paginas": 3
   },
   "www.leaolivros.com.br": {
    "dia": "2026-11-09",
-   "paginas": 0
+   "paginas": 3
   },
   "www.livtoys.com.br": {
+   "descanso_ate": "2026-11-11T09:47+00:00",
    "dia": "2026-11-09",
+   "motivo": "robots.txt respondeu 403",
    "paginas": 0
   },
   "www.lojameeplebrjogos.com.br": {
    "dia": "2026-11-09",
-   "paginas": 0
+   "paginas": 3
   },
   "www.masmorra.com.br": {
+   "descanso_ate": "2026-11-11T09:47+00:00",
    "dia": "2026-11-09",
+   "motivo": "robots.txt respondeu 403",
    "paginas": 0
   },
   "www.mecadosjogos.com.br": {
@@ -219,7 +241,9 @@
    "paginas": 3
   },
   "www.mosaicoloja.com.br": {
+   "descanso_ate": "2026-11-11T09:47+00:00",
    "dia": "2026-11-09",
+   "motivo": "robots.txt respondeu 403",
    "paginas": 0
   },
   "www.mundogalapagos.com.br": {
@@ -230,81 +254,93 @@
   },
   "www.nerdev.com.br": {
    "dia": "2026-11-09",
-   "paginas": 0
+   "paginas": 3
   },
   "www.odisseiajogos.com.br": {
    "dia": "2026-11-09",
-   "paginas": 0
+   "paginas": 2
   },
   "www.omniverse.com.br": {
    "dia": "2026-11-09",
-   "paginas": 0
+   "paginas": 3
   },
   "www.pandaboardgames.com.br": {
    "dia": "2026-11-09",
-   "paginas": 0
+   "paginas": 3
   },
   "www.pittasboardgames.com.br": {
    "dia": "2026-11-09",
-   "paginas": 0
+   "paginas": 3
   },
   "www.placegames.com.br": {
+   "descanso_ate": "2026-11-11T09:48+00:00",
    "dia": "2026-11-09",
+   "motivo": "robots.txt respondeu 403",
    "paginas": 0
   },
   "www.playeasy.com.br": {
+   "descanso_ate": "2026-11-11T09:48+00:00",
    "dia": "2026-11-09",
+   "motivo": "robots.txt respondeu 403",
    "paginas": 0
   },
   "www.pousocultural.com.br": {
    "dia": "2026-11-09",
-   "paginas": 0
+   "paginas": 3
   },
   "www.promobit.com.br": {
    "dia": "2026-11-09",
-   "paginas": 30
+   "paginas": 40
   },
   "www.reunionjogos.com.br": {
    "dia": "2026-11-09",
-   "paginas": 0
+   "paginas": 3
   },
   "www.riodemeepeiro.com.br": {
    "dia": "2026-11-09",
-   "paginas": 0
+   "paginas": 3
   },
   "www.shopdg.com.br": {
    "dia": "2026-11-09",
-   "paginas": 0
+   "paginas": 3
   },
   "www.spaceboardgames.com.br": {
+   "descanso_ate": "2026-11-11T09:49+00:00",
    "dia": "2026-11-09",
+   "motivo": "robots.txt respondeu 403",
    "paginas": 0
   },
   "www.tabuloja.com": {
+   "descanso_ate": "2026-11-11T09:38+00:00",
    "dia": "2026-11-09",
+   "motivo": "robots.txt respondeu 403",
    "paginas": 3
   },
   "www.tavernareal.com": {
+   "descanso_ate": "2026-11-11T09:49+00:00",
    "dia": "2026-11-09",
+   "motivo": "robots.txt respondeu 403",
    "paginas": 1
   },
   "www.tiogera.com.br": {
    "dia": "2026-11-09",
-   "paginas": 0
+   "paginas": 3
   },
   "www.tocadotabuleiro.com": {
    "descanso_ate": "2026-11-05T17:41+00:00",
    "dia": "2026-11-09",
    "motivo": "robots.txt respondeu 403",
-   "paginas": 0
+   "paginas": 3
   },
   "www.tschuss.com.br": {
+   "descanso_ate": "2026-11-11T09:50+00:00",
    "dia": "2026-11-09",
+   "motivo": "robots.txt respondeu 403",
    "paginas": 0
   },
   "www.yorkjogos.com.br": {
    "dia": "2026-11-09",
-   "paginas": 0
+   "paginas": 3
   }
  },
  "precos": {
@@ -413,7 +449,7 @@
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-fibonachos-p": {
    "cj": 27.81,
    "estoque": true,
-   "hora": "2026-11-08T15:15+00:00",
+   "hora": "2026-11-09T09:38+00:00",
    "preco": 29.9
   },
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-finca-p": {
@@ -467,7 +503,7 @@
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-o-laboratorio-de-dexter-a-grande-invencao-p": {
    "cj": 83.61,
    "estoque": true,
-   "hora": "2026-11-08T17:34+00:00",
+   "hora": "2026-11-09T09:38+00:00",
    "preco": 89.9
   },
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-patchwork-nova-edicao-p": {
@@ -527,7 +563,7 @@
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-time-stories-revolution-a-midsummer-night-p": {
    "cj": 92.91,
    "estoque": true,
-   "hora": "2026-11-08T21:06+00:00",
+   "hora": "2026-11-09T09:38+00:00",
    "preco": 99.9
   },
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-time-stories-revolution-the-hadal-project-p": {
