@@ -79,7 +79,11 @@ tipografia:
   rotulo:  { peso: 800, tamanho: 28-34px, caixa-alta, espaçamento: 0.12em }
   piso:    28px              # nada legível abaixo disso
 formato: { largura: 1080, altura: 1920, fps: 30 }
-area-segura: { topo: 168, base-texto: 1330, laterais: 80 }   # UI do Instagram/TikTok
+area-segura: { topo: 240, base-texto: 1290, esquerda: 60, direita: 150 }   # UI do Instagram/TikTok (Reels)
+# O Reels cobre o topo (cabeçalho), a coluna da direita (curtir, comentar, compartilhar; y 900..1700)
+# e o rodapé (perfil, descrição, áudio; y > 1500). Texto e painéis ficam dentro da área segura;
+# rostos dos personagens acima de y 1500. Conferir com a grade vermelha (ver serie-ronaldo/src/ae/pecas.tsx, SEGURO).
+# Exportação para o Instagram: H.264 High, yuv420p (faixa de TV), CRF 17, AAC 192k 48 kHz, +faststart.
 logo: "marca/logo-eb-156.webp, só na cartela final, centralizado, 320-470px de largura"
 ```
 

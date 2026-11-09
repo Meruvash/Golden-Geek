@@ -157,8 +157,15 @@ export const SeloDica: React.FC = () => (
 );
 
 // Cartela final com o link do tutorial.
+// Zona segura do Reels: o Instagram cobre o topo (cabeçalho), a direita (curtir, comentar, compartilhar)
+// e o rodapé (perfil, descrição, áudio). Todo texto e painel vive dentro desta camada, reduzida para
+// x 60..930 e y 240..1290; o cenário e os personagens continuam em tela cheia por baixo.
+export const SEGURO: React.CSSProperties = { transform: "scale(0.888)", transformOrigin: "139px 557px" };
+
 export const Cartela: React.FC<{ op: number; rotulo: string; botao: string; kBotao: number; kLogo: number }> = ({ op, rotulo, botao, kBotao, kLogo }) => (
-  <AbsoluteFill style={{ background: `rgba(7,9,20,${0.86 * op})` }}>
+  <AbsoluteFill>
+    {/* fundo maior que a camada segura, para cobrir a tela inteira mesmo reduzido */}
+    <div style={{ position: "absolute", left: -400, right: -400, top: -600, bottom: -700, background: `rgba(7,9,20,${0.86 * op})` }} />
     <div style={{ position: "absolute", left: 0, right: 0, top: 330, textAlign: "center", opacity: op }}>
       <div style={{ ...tipo.rotulo, color: CIANO }}>{rotulo}</div>
       <div style={{ display: "flex", justifyContent: "center", marginTop: 40 }}>

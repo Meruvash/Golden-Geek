@@ -4,7 +4,7 @@ import { Audio } from "@remotion/media";
 import { Aura, Granulado } from "../cenario/Cenario";
 import { Ronaldo, Wan } from "../personagens/Personagens";
 import { area, cor, fonte, tipo } from "../tema";
-import { CIANO, Cartela, Credito, Dado, Espaco, Hex, Invasor, Legenda, Nave, Painel, ROXO, SAI, SeloDica, VERDE, VERMELHO, entre, mola, pos, prog, rolar } from "../ae/pecas";
+import { CIANO, Cartela, SEGURO, Credito, Dado, Espaco, Hex, Invasor, Legenda, Nave, Painel, ROXO, SAI, SeloDica, VERDE, VERMELHO, entre, mola, pos, prog, rolar } from "../ae/pecas";
 import { DURACAO, FALAS } from "./dados";
 import { I, W } from "./marcas";
 
@@ -38,19 +38,21 @@ export const AeP2: React.FC = () => {
       <AbsoluteFill style={{ transform: `scale(${zoom}) translateX(${tremor}px)`, transformOrigin: camOrig }}>
         <Espaco s={s} alerta={s < I(3) ? 0.5 + 0.5 * Math.sin(s * 9) : 0} escuro={entre(s, tRes, I(10)) ? 0.35 : 0} />
         {[2, 6, 11].map((id) =>
-          ronFala(id) ? <div key={id} style={{ position: "absolute", left: 300, top: 1390, width: 220, height: 220, borderRadius: "50%", background: "radial-gradient(circle, rgba(255,240,190,.85), rgba(255,240,190,0) 70%)", opacity: prog(s, I(id), 0.3) * (1 - prog(s, I(id + 1) - 0.4, 0.35)) }} /> : null,
+          ronFala(id) ? <div key={id} style={{ position: "absolute", left: 300, top: 1320, width: 220, height: 220, borderRadius: "50%", background: "radial-gradient(circle, rgba(255,240,190,.85), rgba(255,240,190,0) 70%)", opacity: prog(s, I(id), 0.3) * (1 - prog(s, I(id + 1) - 0.4, 0.35)) }} /> : null,
         )}
-        <Aura x={810} y={1500} raio={260 + 10 * Math.sin(s * 2)} seed={4} />
+        <Aura x={810} y={1430} raio={260 + 10 * Math.sin(s * 2)} seed={4} />
         <svg width={1080} height={1920} style={{ position: "absolute", left: 0, top: 0 }}>
           <g transform={`translate(0,${bob("ronaldo")})`}>
-            <Ronaldo x={250} y={1905} escala={0.62} expr={ronExpr as "confuso"} pose={ronPose as "cartas"} />
+            <Ronaldo x={250} y={1835} escala={0.62} expr={ronExpr as "confuso"} pose={ronPose as "cartas"} />
           </g>
           <g transform={`translate(0,${bob("wan")})`}>
-            <Wan x={810} y={1905} escala={0.66} expr={wanExpr as "calmo"} pose={wanPose as "livro"} brilhoLivro={wanPose === "livro"} />
+            <Wan x={810} y={1835} escala={0.66} expr={wanExpr as "calmo"} pose={wanPose as "livro"} brilhoLivro={wanPose === "livro"} />
           </g>
         </svg>
       </AbsoluteFill>
 
+      {/* ====== textos e painéis: dentro da zona segura do Reels ====== */}
+      <AbsoluteFill style={SEGURO}>
       {/* ====== gancho: o Vorticon pousa ====== */}
       {s < I(3) ? (
         <>
@@ -214,6 +216,7 @@ export const AeP2: React.FC = () => {
       {s >= I(14) - 0.14 ? <Cartela op={prog(s, I(14) - 0.14, 0.4)} rotulo="Andromeda's Edge · fim do Ep. 1" botao="Segue pra próxima aventura" kBotao={prog(s, W(14, "segue") - 0.1, 0.4)} kLogo={prog(s, I(14) + 0.5, 0.5)} /> : null}
 
       <Legenda s={s} falas={FALAS} ocultar={[14]} />
+      </AbsoluteFill>
       <Granulado forca={0.1} />
 
       {/* ====== áudio ====== */}

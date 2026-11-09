@@ -5,148 +5,150 @@
   "texto": "E se você acordasse dentro de Andromeda's Edge… sem nunca ter jogado?",
   "fala": "[mysterious] E se você acordasse dentro de Andromeda's Edge… [excited] sem nunca ter jogado?",
   "arquivo": "voz/ae-p1/fala-01.wav",
-  "dur": 4.442,
+  "dur": 4.17,
   "palavras_ouvidas": [
    {
     "text": "E",
     "start": 0,
-    "end": 0.079
+    "end": 0.071
    },
    {
     "text": "se",
-    "start": 0.079,
-    "end": 0.238
+    "start": 0.071,
+    "end": 0.212
    },
    {
     "text": "você",
-    "start": 0.238,
-    "end": 0.555
+    "start": 0.212,
+    "end": 0.495
    },
    {
     "text": "acordasse",
-    "start": 0.555,
-    "end": 1.269
+    "start": 0.495,
+    "end": 1.131
    },
    {
     "text": "dentro",
-    "start": 1.269,
-    "end": 1.744
+    "start": 1.131,
+    "end": 1.556
    },
    {
     "text": "de",
-    "start": 1.744,
-    "end": 1.903
+    "start": 1.556,
+    "end": 1.697
    },
    {
     "text": "Andrômedas",
-    "start": 1.903,
-    "end": 2.696
+    "start": 1.697,
+    "end": 2.404
    },
    {
     "text": "Edge",
-    "start": 2.696,
-    "end": 3.013
+    "start": 2.404,
+    "end": 2.687
    },
    {
     "text": "sem",
-    "start": 3.013,
-    "end": 3.251
+    "start": 2.687,
+    "end": 2.899
    },
    {
     "text": "nunca",
-    "start": 3.251,
-    "end": 3.647
+    "start": 2.899,
+    "end": 3.253
    },
    {
     "text": "ter",
-    "start": 3.647,
-    "end": 3.885
+    "start": 3.253,
+    "end": 3.465
    },
    {
     "text": "jogado?",
-    "start": 3.885,
-    "end": 4.44
+    "start": 3.465,
+    "end": 3.96
    }
-  ]
+  ],
+  "modelo": "eleven_multilingual_v2"
  },
  {
   "id": 2,
   "quem": "narrador",
   "texto": "O Ronaldo do Reteté abriu os olhos numa estação espacial, na beira da galáxia.",
   "arquivo": "voz/ae-p1/fala-02.wav",
-  "dur": 5.2,
+  "dur": 3.991,
   "palavras_ouvidas": [
    {
     "text": "O",
     "start": 0,
-    "end": 0.08
+    "end": 0.059
    },
    {
     "text": "Ronaldo",
-    "start": 0.08,
-    "end": 0.64
+    "start": 0.059,
+    "end": 0.473
    },
    {
     "text": "do",
-    "start": 0.64,
-    "end": 0.8
+    "start": 0.473,
+    "end": 0.591
    },
    {
-    "text": "retetê",
-    "start": 0.8,
-    "end": 1.28
+    "text": "Reteté",
+    "start": 0.591,
+    "end": 0.945
    },
    {
     "text": "abriu",
-    "start": 1.28,
-    "end": 1.68
+    "start": 0.945,
+    "end": 1.24
    },
    {
     "text": "os",
-    "start": 1.68,
-    "end": 1.84
+    "start": 1.24,
+    "end": 1.358
    },
    {
     "text": "olhos",
-    "start": 1.84,
-    "end": 2.24
+    "start": 1.358,
+    "end": 1.654
    },
    {
     "text": "numa",
-    "start": 2.24,
-    "end": 2.56
+    "start": 1.654,
+    "end": 1.89
    },
    {
     "text": "estação",
-    "start": 2.56,
-    "end": 3.12
+    "start": 1.89,
+    "end": 2.303
    },
    {
-    "text": "espacial,",
-    "start": 3.12,
-    "end": 3.84
+    "text": "espacial",
+    "start": 2.303,
+    "end": 2.776
    },
    {
     "text": "na",
-    "start": 3.84,
-    "end": 4
+    "start": 2.776,
+    "end": 2.894
    },
    {
     "text": "beira",
-    "start": 4,
-    "end": 4.4
+    "start": 2.894,
+    "end": 3.189
    },
    {
     "text": "da",
-    "start": 4.4,
-    "end": 4.56
+    "start": 3.189,
+    "end": 3.308
    },
    {
     "text": "galáxia.",
-    "start": 4.56,
-    "end": 5.2
+    "start": 3.308,
+    "end": 3.78
    }
-  ]
+  ],
+  "modelo": "eleven_multilingual_v2"
  },
  {
   "id": 3,

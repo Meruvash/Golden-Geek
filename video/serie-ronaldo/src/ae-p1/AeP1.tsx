@@ -4,7 +4,7 @@ import { Audio } from "@remotion/media";
 import { Aura, Granulado } from "../cenario/Cenario";
 import { Ronaldo, Wan } from "../personagens/Personagens";
 import { area, cor, fonte, tipo } from "../tema";
-import { CIANO, Cartela, Credito, Espaco, Hex, Invasor, Legenda, Nave, Painel, ROXO, SAI, SeloDica, VERDE, VERMELHO, entre, mola, pos, prog } from "../ae/pecas";
+import { CIANO, Cartela, SEGURO, Credito, Espaco, Hex, Invasor, Legenda, Nave, Painel, ROXO, SAI, SeloDica, VERDE, VERMELHO, entre, mola, pos, prog } from "../ae/pecas";
 import { DURACAO, FALAS } from "./dados";
 import { I, W } from "./marcas";
 
@@ -47,9 +47,9 @@ export const AeP1: React.FC = () => {
             const t0 = W(4, "três") - 0.1 + i * 0.12;
             const saiu = i === 0 && s >= W(9, "pousou") - 1.2; // a nave lançada some da baía
             const depois = prog(s, tWan - 0.2, 0.5); // abre espaço para o Wan
-            return <Nave key={i} x={620 + i * 120 + (430 + i * 80 - 620 - i * 120) * depois} y={1640} esc={(0.7 - 0.15 * depois) * (s < I(4) ? 1 : 1 + 0.25 * Math.max(0, 1 - Math.abs(s - t0) * 3))} giro={0} op={saiu ? 0.2 : 1} />;
+            return <Nave key={i} x={620 + i * 120 + (430 + i * 80 - 620 - i * 120) * depois} y={1545} esc={(0.7 - 0.15 * depois) * (s < I(4) ? 1 : 1 + 0.25 * Math.max(0, 1 - Math.abs(s - t0) * 3))} giro={0} op={saiu ? 0.2 : 1} />;
           })}
-          <text x={740 - 230 * prog(s, tWan - 0.2, 0.5)} y={1760} textAnchor="middle" fontFamily={fonte} fontWeight={800} fontSize={28} fill={CIANO} opacity={s >= W(4, "três") - 0.1 && s < tWan + 0.5 ? 1 : 0.35}>Baía de Lançamento</text>
+          <text x={740 - 230 * prog(s, tWan - 0.2, 0.5)} y={1465} textAnchor="middle" fontFamily={fonte} fontWeight={800} fontSize={30} fill={CIANO} opacity={s >= W(4, "três") - 0.1 && s < tWan + 0.5 ? 1 : 0.35}>Baía de Lançamento</text>
         </svg>
         {/* luz do arrebatamento (que não era arrebatamento) */}
         {entre(s, I(3) - 0.05, W(4, "foi.") + 0.1) ? (
@@ -57,21 +57,23 @@ export const AeP1: React.FC = () => {
         ) : null}
         {/* luz da Bíblia */}
         {[6, 10].map((id) =>
-          ronFala(id) ? <div key={id} style={{ position: "absolute", left: 300, top: 1390, width: 220, height: 220, borderRadius: "50%", background: "radial-gradient(circle, rgba(255,240,190,.85), rgba(255,240,190,0) 70%)", opacity: prog(s, I(id), 0.3) * (1 - prog(s, I(id + 1) - 0.4, 0.35)) }} /> : null,
+          ronFala(id) ? <div key={id} style={{ position: "absolute", left: 300, top: 1320, width: 220, height: 220, borderRadius: "50%", background: "radial-gradient(circle, rgba(255,240,190,.85), rgba(255,240,190,0) 70%)", opacity: prog(s, I(id), 0.3) * (1 - prog(s, I(id + 1) - 0.4, 0.35)) }} /> : null,
         )}
-        {s >= tWan ? <Aura x={810} y={1500 + (1 - wanSobe) * 500} raio={260 + 10 * Math.sin(s * 2)} seed={4} /> : null}
+        {s >= tWan ? <Aura x={810} y={1430 + (1 - wanSobe) * 500} raio={260 + 10 * Math.sin(s * 2)} seed={4} /> : null}
         <svg width={1080} height={1920} style={{ position: "absolute", left: 0, top: 0 }}>
           <g transform={`translate(0,${bob("ronaldo") + sobe})`}>
-            <Ronaldo x={ronX} y={1905} escala={ronEsc} expr={ronExpr as "confuso"} pose={ronPose as "cartas"} />
+            <Ronaldo x={ronX} y={1835} escala={ronEsc} expr={ronExpr as "confuso"} pose={ronPose as "cartas"} />
           </g>
           {s >= tWan ? (
             <g transform={`translate(0,${(1 - wanSobe) * 800 + bob("wan")})`}>
-              <Wan x={810} y={1905} escala={0.66} expr={entre(s, I(11), I(12)) ? "sorriso" : s >= I(12) ? "serio" : "calmo"} pose={entre(s, I(7), I(9)) || entre(s, I(11), I(12)) ? "livro" : "bracos"} brilhoLivro={entre(s, I(7), I(9)) || entre(s, I(11), I(12))} />
+              <Wan x={810} y={1835} escala={0.66} expr={entre(s, I(11), I(12)) ? "sorriso" : s >= I(12) ? "serio" : "calmo"} pose={entre(s, I(7), I(9)) || entre(s, I(11), I(12)) ? "livro" : "bracos"} brilhoLivro={entre(s, I(7), I(9)) || entre(s, I(11), I(12))} />
             </g>
           ) : null}
         </svg>
       </AbsoluteFill>
 
+      {/* ====== textos e painéis: dentro da zona segura do Reels ====== */}
+      <AbsoluteFill style={SEGURO}>
       {/* ====== gancho ====== */}
       {s < I(2) ? (
         <div style={{ position: "absolute", left: area.lateral, right: area.lateral, top: 210, opacity: 1 - prog(s, I(2) - 0.3, 0.25, SAI) }}>
@@ -256,6 +258,7 @@ export const AeP1: React.FC = () => {
       {s >= I(14) - 0.14 ? <Cartela op={prog(s, I(14) - 0.14, 0.4)} rotulo="Continua na Parte 2: a batalha" botao="Segue pra ver a Parte 2" kBotao={prog(s, W(14, "Segue") - 0.1, 0.4)} kLogo={prog(s, I(14) + 0.5, 0.5)} /> : null}
 
       <Legenda s={s} falas={FALAS} ocultar={[1, 14]} />
+      </AbsoluteFill>
       <Granulado forca={0.1} />
 
       {/* ====== áudio ====== */}
