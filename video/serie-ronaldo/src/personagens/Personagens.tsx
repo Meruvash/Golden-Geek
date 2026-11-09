@@ -25,7 +25,7 @@ export const Ronaldo: React.FC<{ x: number; y: number; escala?: number; expr?: E
     <g transform={tx}>
       {/* sombra no chão */}
       <ellipse cx={200} cy={882} rx={150} ry={20} fill="#000" opacity={0.18} />
-      {/* pastor: terno social azul um número maior, camisa branca, gravata dourada */}
+      {/* Ronaldo do Reteté: terno social azul um número maior, camisa branca, gravata dourada */}
       {(() => {
         const dy = enc ? 80 : 0;
         const azul = "#34548a", azulSombra = "#2b4675", calca = "#2a3f66";

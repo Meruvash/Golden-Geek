@@ -23,7 +23,7 @@ export const FichaPersonagem: React.FC<{ quem: "ronaldo" | "wan" }> = ({ quem })
         <Rotulo>Ficha de personagem · série "E se você acordasse em…"</Rotulo>
         <div style={{ ...tipo.titulo, color: cor.texto, marginTop: 14 }}>{ron ? "Ronaldo" : "Wan"}</div>
         <div style={{ ...tipo.apoio, color: cor.textoSuave, marginTop: 8, maxWidth: 900 }}>
-          {ron ? "Pastor. Nunca jogou nada. Faz besteira com fé." : "Advogado. Fodão. Mafioso. Lê o manual inteiro e farma aura."}
+          {ron ? "Ronaldo do Reteté. Nunca jogou nada. Faz besteira com fé." : "Advogado. Fodão. Mafioso. Lê o manual inteiro e farma aura."}
         </div>
       </div>
       <svg width={1080} height={1920} style={{ position: "absolute", left: 0, top: 0 }}>
