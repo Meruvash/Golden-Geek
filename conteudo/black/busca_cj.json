@@ -1,5 +1,6 @@
 {
  "101 dalmatas ludoteca disney": null,
+ "5 minute dungeon curses foiled again expansion": null,
  "7 conjuntos 49 pecas de dados": null,
  "7 wonders dice": {
   "bgg": 5.82335,
@@ -80,6 +81,7 @@
  "adicional ao fechar pedido expansao da unidade star wars legion imperial specialists miniaturas de suporte tatico do imperio galactico co": null,
  "adicional ao fechar pedido fantasy flight games ffgahb01 arkham horror terceira edicao": null,
  "adicional ao fechar pedido indie boards and cards aeon s end outcasts": null,
+ "adicional ao fechar pedido indie boards and cards aeons end the depths 2nd edition": null,
  "adicional ao fechar pedido indie boards and cards the resistance the plot thickens game": null,
  "adicional ao fechar pedido intent to kill deluxe upgrade by 25th century games ages 14 2 4 players": null,
  "adicional ao fechar pedido invincible the card game guardians of the globe official skybound tabletop superhero deck building game ages 14": null,
@@ -90,16 +92,19 @@
  "adicional ao fechar pedido mojo luck matching party card game for 3 to 8 players and ages 8": null,
  "adicional ao fechar pedido mother of frankenstein volume 1": null,
  "adicional ao fechar pedido mother of frankenstein volume 3": null,
+ "adicional ao fechar pedido munchkin tails": null,
  "adicional ao fechar pedido origem first builders": null,
  "adicional ao fechar pedido pegasus spiele mesos": null,
  "adicional ao fechar pedido portal games imperial miners por jogo de tabuleiro estrategia": null,
  "adicional ao fechar pedido queen games mercado moonlight 10852 de eua fr": null,
  "adicional ao fechar pedido rebel princess edicao deluxe a mistura definitiva de tematica e estrategia um jogo de cartas rapido viciante": null,
+ "adicional ao fechar pedido rio grande dominion alchemy": null,
  "adicional ao fechar pedido rio grande games pictures christmas expansion holiday board game add on": null,
  "adicional ao fechar pedido rio grande games ranking": null,
  "adicional ao fechar pedido sherlock files vol 4 fatal frontiers": null,
  "adicional ao fechar pedido silver fun competitive and strategic card game fun for family game night": null,
  "adicional ao fechar pedido star wars legion essentials pack jogo de miniaturas de mesa jogo de estrategia para criancas e adultos maior": null,
+ "adicional ao fechar pedido star wars shatterpoint sabotage showdown mission pack jogo de miniaturas de mesa jogo de estrategia para crianca": null,
  "adicional ao fechar pedido steve jackson games munchkin farkle": null,
  "adicional ao fechar pedido steve jackson games munchkin presents batman": null,
  "adicional ao fechar pedido steve jackson games random fun generator": null,
@@ -122,6 +127,7 @@
  "adventure stories": null,
  "aeg the guild of merchant explorers explore the world establish new settlements nautical voyage adventure board game 1 4 players ages 10": null,
  "aeons end shattered dreams": null,
+ "aeterna": null,
  "age of galaxy": {
   "bgg": 7.59415,
   "editora": "ICE Makes",
@@ -192,7 +198,29 @@
   "slug": "aqua",
   "tipo": "game"
  },
+ "aquaria": {
+  "bgg": 7.18798,
+  "editora": "Mosaico Jogos",
+  "imagem": "https://uploads.comparajogos.com.br/img/0cce96170d3cc9ca2103fbf1a0b0b0d0c1bc14b3.jpg",
+  "menor": 287.1,
+  "nome": "Aquaria",
+  "ref": 296.52,
+  "ref_dias": 32,
+  "slug": "aquaria",
+  "tipo": "game"
+ },
  "arcane wonders mortum medieval detective": null,
+ "archeologic": {
+  "bgg": 7.04039,
+  "editora": "Ludonaute",
+  "imagem": "https://uploads.comparajogos.com.br/img/74a7d0f9f02aa09e418930c1abfa163eeab3c586.jpg",
+  "menor": null,
+  "nome": "ArcheOlogic",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "archeologic",
+  "tipo": "game"
+ },
  "arkham horror 3rd edition dead of night board game expansion mystery game cooperative board game for adults ages 14 1 6 players average pla": null,
  "arkham horror card game asmodee pacote de cenario": null,
  "arkham horror the card game a light in the fog mythos pack": {
@@ -211,6 +239,7 @@
  "asmadi games innovation artifacts of history third edition": null,
  "asmodee 7 wonders expansao": null,
  "asmodee bananagrams de palavras cruzadas jogo para 1 a 8 jogadores": null,
+ "asmodee bezzerwizzer fun family trivia party game ages 15 2 players 45 minutes playing time": null,
  "asmodee dixit disney edition jogo de tabuleiro para familia e amigos 3 a 6 jogadores idade 8 partidas de ate 30 minutos": null,
  "asmodee dixit signature viloes expansao jogo de tabuleiro idade 8 3 a 12 jogadores 30 minutos por partida": null,
  "asmodee dnup jogo de cartas estrategico 2 a 5 jogadores idade 8": null,
@@ -218,6 +247,7 @@
  "asmodee dobble dinossauros jogo de cartas 2 a 8 jogadores a partir de 6 anos partidas de ate 15 min": null,
  "asmodee dobble disney princess jogo de cartas para familia 2 a 8 jogadores idade 4 partidas de ate 15 minutos": null,
  "asmodee dobble harry potter jogo de cartas 2 a 8 jogadores idade 6 partidas de 15 min": null,
+ "asmodee dobble stitch para familia 2 a 8 jogadores idade a partir de 6 anos partidas de ate 15 min": null,
  "asmodee duna imperium linhagens expansao jogo de tabuleiro idade 14 1 a 4 jogadores 60 a 120 minutos por partida": null,
  "asmodee galapagos concept 4 a 12 jogadores idade 10": {
   "bgg": 6.74664,
@@ -271,6 +301,7 @@
  },
  "avalon hill heroquest jogo de tabuleiro de estrategia jogo em ingles": null,
  "avalon hill heroquest spirit queen s torment quest pack requires heroquest game system to play dungeon crawler games ages 14 2 5 player": null,
+ "awkward guests 2 the berwick cases": null,
  "azul": {
   "bgg": 7.75868,
   "editora": "Galápagos Jogos",
@@ -338,6 +369,17 @@
   "ref": 53.67,
   "ref_dias": 9,
   "slug": "basta",
+  "tipo": "game"
+ },
+ "battle line": {
+  "bgg": 7.41449,
+  "editora": "GMT Games",
+  "imagem": "https://uploads.comparajogos.com.br/img/7234b5cf33e09c12d1efc88f5ceb9c7210297f4c.jpg",
+  "menor": null,
+  "nome": "Battle Line",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "battle-line",
   "tipo": "game"
  },
  "beach bandits": {
@@ -606,6 +648,7 @@
  "clank a deck building adventure master thief edition": null,
  "clank a deck building adventure master thief edition jogo de construcao de baralhos tema de aventura edicao master thief jogo de tabulei": null,
  "clank uma aventura de construcao de baralho": null,
+ "cmon marvel united deadpool expansion tabletop miniatures game strategy game cooperative game for adults and kids ages 14 1 4 players avera": null,
  "cmon massive darkness 2 hellscape jogo de tabuleiro jogo de miniaturas de mesa jogo de estrategia cooperativa para adultos e adolescentes": null,
  "coffee rush grab go": {
   "bgg": 6.03019,
@@ -957,6 +1000,7 @@
   "slug": "dragon-island",
   "tipo": "game"
  },
+ "drako dragons dwarves": null,
  "dune imperium rise of ix dreadnought upgrade pack": null,
  "dungeons dragons attack wing bronze dragon expansion pack": {
   "bgg": 7.63158,
@@ -1020,6 +1064,17 @@
   "slug": "elfenroads",
   "tipo": "game"
  },
+ "emblems": {
+  "bgg": 7.60155,
+  "editora": "SAVANA",
+  "imagem": "https://uploads.comparajogos.com.br/img/afb7e76177b2285685f803eadab0f2e41a7ca9eb.png",
+  "menor": 107.04,
+  "nome": "Emblems",
+  "ref": 143.53,
+  "ref_dias": 32,
+  "slug": "emblems",
+  "tipo": "game"
+ },
  "encantados jogo de cartas 3a edicao": null,
  "end of the line": {
   "bgg": 6.81472,
@@ -1041,6 +1096,17 @@
   "ref": 212.97,
   "ref_dias": 32,
   "slug": "engis",
+  "tipo": "game"
+ },
+ "enigma": {
+  "bgg": 6.39299,
+  "editora": "Filosofia Éditions",
+  "imagem": "https://uploads.comparajogos.com.br/img/099d892219d8cd41be1797851cae3acbd3c86db5.png",
+  "menor": null,
+  "nome": "Enigma",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "enigma",
   "tipo": "game"
  },
  "enquadrados": {
@@ -1171,6 +1237,8 @@
   "slug": "fantasma-blitz",
   "tipo": "game"
  },
+ "fantasy flight games ffgahb01 arkham horror terceira edicao": null,
+ "fantasy flight games genesys androids drones and synthetics adversary deck": null,
  "fantasy flight games the eternal knot": null,
  "fantasy realms deluxe edition": {
   "bgg": 6.2921,
@@ -1283,6 +1351,17 @@
   "slug": "funglish",
   "tipo": "game"
  },
+ "future me problems": {
+  "bgg": 6.0051,
+  "editora": "Mattel",
+  "imagem": "https://uploads.comparajogos.com.br/img/4256d91a06c587bfdbbebd6d37c8f94d1993c33c.jpg",
+  "menor": null,
+  "nome": "Future Me Problems",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "future-me-problems",
+  "tipo": "game"
+ },
  "galapago arkham horror card game os devoradores de sonhos expansao 1 a 4 jogadores partidas de ate 90 min": null,
  "galapago azul pavilhao de verao 2 a 4 jogadores": null,
  "galapagos 50 caes jogo de cartas criancas 1 ou jogadores partidas de 20 min": null,
@@ -1314,7 +1393,29 @@
  "galapagos true crime 2 jogadores": null,
  "galapagos wandinha ataque do hyde jogo para familia a parti de 10 anos partidas de ate 20 min": null,
  "galapagos zombicide 2a edicao jogo de tabuleiro cooperativo 1 6 jogadores 30 60min": null,
+ "gears of war the card game": {
+  "bgg": 6.97467,
+  "editora": "Steamforged Games Ltd.",
+  "imagem": "https://uploads.comparajogos.com.br/img/39e9b4ed2d08571ebe63e1064b01a797de9d7d60.jpg",
+  "menor": null,
+  "nome": "Gears of War: The Card Game",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "gears-of-war-the-card-game",
+  "tipo": "game"
+ },
  "geeks vs trolls caixa base": null,
+ "gempacked cards": {
+  "bgg": 6.50583,
+  "editora": "Pencil First Games, LLC",
+  "imagem": "https://uploads.comparajogos.com.br/img/47bb080843362ce70c9efc5871b3a8f638150fa5.jpg",
+  "menor": null,
+  "nome": "GemPacked Cards",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "gempacked-cards",
+  "tipo": "game"
+ },
  "gentes": {
   "bgg": 6.65767,
   "editora": "Game Brewer",
@@ -1379,6 +1480,17 @@
   "tipo": "game"
  },
  "grow jogo war 3 a 6 jogadores a partir de 10 anos": null,
+ "guilds of london wards of london": {
+  "bgg": 7.51071,
+  "editora": "Tasty Minstrel Games",
+  "imagem": "https://uploads.comparajogos.com.br/img/97a5ac5b8d982f3d49951ec2f55c21f88984b83a.jpg",
+  "menor": null,
+  "nome": "Guilds of London: Wards of London",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "guilds-of-london-wards-of-london",
+  "tipo": "expansion"
+ },
  "gwent": null,
  "gwent o jogo de tabuleiro lendario": null,
  "h d p 4 hasta donde puedas": {
@@ -1562,6 +1674,18 @@
   "slug": "hostage-negotiator",
   "tipo": "game"
  },
+ "hoverkraft": {
+  "bgg": 5.35636,
+  "editora": "thinkgeek.com",
+  "imagem": "https://uploads.comparajogos.com.br/img/625fe829406b864e3449cbd127bd2b4eac4c26b3.jpg",
+  "menor": null,
+  "nome": "Hoverkraft",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "hoverkraft",
+  "tipo": "game"
+ },
+ "hugge jogo de cartas conversa casais familia": null,
  "hungry hungry hippos grab go": {
   "bgg": 4.20465,
   "editora": "Hasbro",
@@ -1654,6 +1778,7 @@
  "jogo de cartas pool party stars bucaneiros jogos 3 a 6 jogadores": null,
  "jogo de enigmas galapagos 2 jogadores": null,
  "jogo de enigmas galapagos historias sinistras shit happens 2 jogadores": null,
+ "jogo de tabuleiro fazendo mimica coluna multicor": null,
  "jogo de tabuleiro galapagos mysterium secrets and lies expansao 2 a 7 jogadores": null,
  "jogo de tabuleiro imagem e acao 1 grow 1708": null,
  "jogo de tabuleiro onde esta o senhor smith ludens spirit azul": null,
@@ -1668,6 +1793,18 @@
  "jogo oliva 2 4 jogadores 8 anos across the board": null,
  "jogo para familia galapagos aurum a partir de 8 anos": null,
  "jogo publicidade across the board": null,
+ "jump drive terminal velocity": {
+  "bgg": 8.15134,
+  "editora": "Rio Grande Games",
+  "imagem": "https://uploads.comparajogos.com.br/img/e7e54228f8ad79c4075bf76197e0bb06c66744a0.jpg",
+  "menor": null,
+  "nome": "Jump Drive: Terminal Velocity",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "jump-drive-terminal-velocity",
+  "tipo": "expansion"
+ },
+ "jump drive terminal velocity expansion galaxy race card game an expansion for jump drive base game galaxy race card game rio grande g": null,
  "karmaka": {
   "bgg": 6.51772,
   "editora": "Chronicle Books",
@@ -1725,6 +1862,17 @@
   "tipo": "game"
  },
  "kitchen rush english edition": null,
+ "kitsu": {
+  "bgg": 6.83151,
+  "editora": "GRRRE Games",
+  "imagem": "https://uploads.comparajogos.com.br/img/89aeacfc450fe6ce4bbb6215f53dbd2280ede254.jpg",
+  "menor": 61.49,
+  "nome": "Kitsu",
+  "ref": 76.91,
+  "ref_dias": 32,
+  "slug": "kitsu",
+  "tipo": "game"
+ },
  "klask": {
   "bgg": 7.62623,
   "editora": "MEBO Games",
@@ -1819,6 +1967,7 @@
   "slug": "loot",
   "tipo": "game"
  },
+ "lucky duck games nestlings beautifully illustrated strategy game 1 4 players ages 10 30 60 minute gameplay": null,
  "lucky duck games pocoes de azerland 1 4 jogadores idades 14": null,
  "ludo": {
   "bgg": 4.35876,
@@ -1936,6 +2085,17 @@
   "tipo": "game"
  },
  "marvel asmodee manopla do infinito um jogo love letter": null,
+ "marvel champions the card game the galaxy s most wanted": {
+  "bgg": 7.7776,
+  "editora": "Fantasy Flight Games",
+  "imagem": "https://uploads.comparajogos.com.br/img/f99209fd2e6234c6509ef12e9158a2b25a828d9a.jpg",
+  "menor": null,
+  "nome": "Marvel Champions: The Card Game – The Galaxy's Most Wanted",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "marvel-champions-the-card-game-the-galaxys-most-wanted",
+  "tipo": "expansion"
+ },
  "massive darkness 2 hellscape": {
   "bgg": 8.00848,
   "editora": "Galápagos Jogos",
@@ -2265,6 +2425,28 @@
   "tipo": "game"
  },
  "o preco ja esteve um tanto mais baixo mas atualmente e o menor preco de mercado the castles of burgundy": null,
+ "oak": {
+  "bgg": 7.13898,
+  "editora": "Grok Games",
+  "imagem": "https://uploads.comparajogos.com.br/img/7966efcea723d16fdd23cece9c6af1d565d282ce.png",
+  "menor": 134.91,
+  "nome": "Oak",
+  "ref": 148.54,
+  "ref_dias": 32,
+  "slug": "oak",
+  "tipo": "game"
+ },
+ "odin papergames": {
+  "bgg": 6.27509,
+  "editora": "PaperGames",
+  "imagem": "https://uploads.comparajogos.com.br/img/f59aea6cca57c1d7be9460ce111183c88e1fb521.png",
+  "menor": 47.15,
+  "nome": "Odin",
+  "ref": 48.81,
+  "ref_dias": 32,
+  "slug": "odin",
+  "tipo": "game"
+ },
  "ofrenda": {
   "bgg": 7.39909,
   "editora": "Osprey Games",
@@ -2285,6 +2467,17 @@
   "ref": null,
   "ref_dias": 0,
   "slug": "oh-my-socks",
+  "tipo": "game"
+ },
+ "oh sushi game": {
+  "bgg": 5.50814,
+  "editora": "Eyeup",
+  "imagem": "https://uploads.comparajogos.com.br/img/d618e36b1a8ddcc714149ba8986eda130776117c.jpg",
+  "menor": null,
+  "nome": "Oh! Sushi Game",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "oh-sushi-game",
   "tipo": "game"
  },
  "onboard cinema e tv": {
@@ -2320,6 +2513,17 @@
   "slug": "one-deck-dungeon-forest-of-shadows",
   "tipo": "game"
  },
+ "one piece card game the seven warlords of the sea": {
+  "bgg": null,
+  "editora": "Bandai",
+  "imagem": "https://uploads.comparajogos.com.br/img/5ad704fef0d44c378199363c9156adb3c6d3b148.jpg",
+  "menor": null,
+  "nome": "One Piece Card Game: The Seven Warlords of the Sea",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "one-piece-card-game-the-seven-warlords-of-the-sea",
+  "tipo": "expansion"
+ },
  "only murders in the building the game": {
   "bgg": 6.81757,
   "editora": "Funko Games",
@@ -2344,6 +2548,7 @@
   "tipo": "game"
  },
  "origem first builders": null,
+ "orloj": null,
  "pagan fate of roanoke beyond the palisades expansion": null,
  "pandemic cupom resgateallsite0411 para quem resgatou ontem": null,
  "pandemic reign of cthulhu board game for adults and family cooperative ages 14 2 to 4 players average playtime 40 minutes made by z man gam": null,
@@ -2370,6 +2575,17 @@
   "tipo": "game"
  },
  "paris l e toile": null,
+ "parks": {
+  "bgg": 7.62987,
+  "editora": "Keymaster Games",
+  "imagem": "https://uploads.comparajogos.com.br/img/c23fe24e2efbce96a379eb80895044f9582e6c04.jpg",
+  "menor": 286.0,
+  "nome": "PARKS",
+  "ref": 313.41,
+  "ref_dias": 11,
+  "slug": "parks",
+  "tipo": "game"
+ },
  "pass pass jogo de cartas estrategico para 3 a 6 jogadores idade 9 versao original em portugues": null,
  "pegasus spiele dorfromantik sakura usa edition": null,
  "pegasus spiele istanbul big box board game edicao eua para idades 13 2 4 jogadores": null,
@@ -2436,6 +2652,7 @@
  "placegames em pre venda coffee rush inverno cupom gamebox7naplace": null,
  "plaid hat games chosen grove faction deck": null,
  "plaid hat games expansao magica natural ashes ascendancy": null,
+ "planet unknown supermoon expansion": null,
  "pocket detective die bombe tickt": {
   "bgg": 6.16064,
   "editora": "Schmidt Spiele",
@@ -2480,6 +2697,17 @@
   "ref": null,
   "ref_dias": 0,
   "slug": "pot-de-vin",
+  "tipo": "game"
+ },
+ "prey": {
+  "bgg": 6.76764,
+  "editora": "Allplay",
+  "imagem": "https://uploads.comparajogos.com.br/img/337a9b7e5d87e747fa9f56422e336b9df763e94e.jpg",
+  "menor": 17.91,
+  "nome": "Prey",
+  "ref": 50.24,
+  "ref_dias": 32,
+  "slug": "prey",
   "tipo": "game"
  },
  "prey another day": {
@@ -2575,6 +2803,7 @@
  "rio grande games pesca jogo de cartas de truques tema oceano desenho de cartas e colecao de pontos idades 14 3 5 jogadores 30 60 mi": null,
  "rio grande games southern pacific train games strategy robber barons build invest in railroads dividends ages 12 3 5 players 30": null,
  "rio grande games space station phoenix rio grande games jogo de tabuleiro de estrategia idades 14 2 4 jogadores 90 120 minutos": null,
+ "rio grande games trilhos prussianos construa ferrovias por toda a alemanha jogo de tabuleiro trens idades 14 3 5 jogadores 90 120 min": null,
  "rio grande games wabash cannonball jogo de tabuleiro trem ferrovias do leste dos eua 14 anos ou mais 3 a 6 jogadores 30 60 minutos": null,
  "rivet wars the board game expansion bundle nemoan breachers gunnar hammerson and terrain upgrade pack 3 items": null,
  "robinson crusoe adventures on the cursed island treasure chest": {
@@ -2680,6 +2909,17 @@
   "ref_dias": 0,
   "slug": "selfish-zombie-edition",
   "tipo": "game"
+ },
+ "sentinels of the multiverse villains of the multiverse": {
+  "bgg": 7.8158,
+  "editora": "Greater Than Games",
+  "imagem": "https://uploads.comparajogos.com.br/img/bcbc820741d8cff1dd632c6d80fb0639113bf2d2.jpg",
+  "menor": null,
+  "nome": "Sentinels of the Multiverse: Villains of the Multiverse",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "sentinels-of-the-multiverse-villains-of-the-multiverse",
+  "tipo": "expansion"
  },
  "setup": {
   "bgg": 6.12957,
@@ -2933,6 +3173,7 @@
  "steamforged games elden ring the board game weeping peninsula edicao kickstarter": null,
  "steamforged games jogo de tabuleiro street masters iv expansao regret of the blood moon": null,
  "steamforged games street masters the board game redemption pack 3": null,
+ "steve jackson games the fantasy trip wizard": null,
  "stitch 626": {
   "bgg": 7.66667,
   "editora": "Grok Games",
@@ -3099,6 +3340,7 @@
   "tipo": "game"
  },
  "the lord of the rings the card game riders of rohan starter deck cooperative adventure game strategy game ages 14 1 4 players 30 120": null,
+ "the lost expedition a game of survival in the amazon": null,
  "the night cage shrieking hollow": {
   "bgg": 7.88333,
   "editora": "Smirk & Dagger Games",
@@ -3143,6 +3385,19 @@
   "slug": "the-twilight-saga-new-moon-the-movie-board-game",
   "tipo": "game"
  },
+ "the vale of eternity": {
+  "bgg": 7.60194,
+  "editora": "Mandoo Games",
+  "imagem": "https://uploads.comparajogos.com.br/img/4039facc4a1ae4875d50bc6e33cc58ccc2a38393.png",
+  "menor": null,
+  "nome": "The Vale of Eternity",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "the-vale-of-eternity",
+  "tipo": "game"
+ },
+ "the witcher a queda dos reinos": null,
+ "the witcher aco e prata": null,
  "this game is killer frozen horror": {
   "bgg": 7.17155,
   "editora": "Smirk & Dagger Games",
@@ -3487,6 +3742,28 @@
   "slug": "warhammer-40000-seventh-edition",
   "tipo": "game"
  },
+ "warhammer age of sigmar third edition dominion": {
+  "bgg": 8.31579,
+  "editora": "Games Workshop Ltd.",
+  "imagem": "https://uploads.comparajogos.com.br/img/3766975b953ef54afc984540038092198c48a2b1.jpg",
+  "menor": null,
+  "nome": "Warhammer Age of Sigmar (Third Edition): Dominion",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "warhammer-age-of-sigmar-third-edition-dominion",
+  "tipo": "expansion"
+ },
+ "where in the world is carmen sandiego card game": {
+  "bgg": 5.37725,
+  "editora": "Pressman Toy Corp.",
+  "imagem": "https://uploads.comparajogos.com.br/img/79dd14ce9d7e55ecff0386b5964ba3615b32bd5a.png",
+  "menor": null,
+  "nome": "Where in the World is Carmen Sandiego? Card Game",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "where-in-the-world-is-carmen-sandiego-card-game",
+  "tipo": "game"
+ },
  "wingspan asia jogo base para 2 jogadores": null,
  "wingspan europa expansao": null,
  "wingspan oceania expansao": null,
@@ -3514,6 +3791,17 @@
  },
  "witchcraft fast playing solitaire card game to lead a coven of witches and save the village 25th century games": null,
  "wok shael han rank 1 caixa especializada": null,
+ "you laugh you drink": {
+  "bgg": 5.32,
+  "editora": "DSS Games",
+  "imagem": "https://uploads.comparajogos.com.br/img/0dfe269a2d72ed174db741c8bdb2c58ead3d5ffb.jpg",
+  "menor": null,
+  "nome": "You Laugh You Drink",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "you-laugh-you-drink",
+  "tipo": "game"
+ },
  "zombicide the boys character pack 1 the seven survivors from the seven for epic zombie action cooperative strategy board game for ages": null,
  "zombicide toxic city mall double sided game tiles": null,
  "zombie teenz": null,

@@ -1,5 +1,5 @@
 {
- "edicao": "2026-11-06",
+ "edicao": "2026-11-09",
  "em_alta": [
   {
    "nome": "Kelp: Tubarão vs Polvo",
@@ -34,35 +34,67 @@
  ],
  "financiamentos": [
   {
-   "nome": "Arkham Horror Remastered",
-   "editora": "Fantasy Flight Games",
-   "onde": "Gamefound · encerrado",
-   "situacao": "US$ 5,67 milhões de 13.693 apoiadores; terminou em 05/11",
-   "fonte": "Tabletop Analytics, 08/11/2026",
-   "noticia": "arkham-horror-remastered-fecha-gamefound-5-milhoes"
+   "nome": "Marco Polo Deluxe Master Set",
+   "editora": "Board&Dice",
+   "onde": "Gamefound · abre em 12/11",
+   "situacao": "Pré-campanha; junta os dois Marco Polo e Agents of Venice",
+   "fonte": "Brettspielbox, 08/11/2026",
+   "noticia": "marco-polo-deluxe-master-set-gamefound"
+  },
+  {
+   "nome": "Wallguards of the East Empire",
+   "editora": "Garphill Games",
+   "onde": "Kickstarter · abre em 10/11",
+   "situacao": "Pré-campanha; primeiro jogo da trilogia do Império do Leste",
+   "fonte": "Brettspielbox, 08/11/2026",
+   "noticia": "wallguards-of-the-east-empire-garphill-kickstarter"
   },
   {
    "nome": "Satisfactory: The Board Game",
    "editora": "MOOD Publishing",
    "onde": "Gamefound · aberto",
-   "situacao": "€2,50 milhões de 9.844 apoiadores; termina em 10/11",
-   "fonte": "Tabletop Analytics, 08/11/2026",
+   "situacao": "€2,65 milhões de 10.495 apoiadores; termina em 10/11",
+   "fonte": "Tabletop Analytics, 09/11/2026",
    "noticia": "satisfactory-tabuleiro-passa-de-2-milhoes-gamefound"
+  },
+  {
+   "nome": "Adventure Time Card Wars 2026",
+   "editora": "Cryptozoic",
+   "onde": "Kickstarter · aberto",
+   "situacao": "US$ 1,04 milhão de 3.340 apoiadores; termina em 25/11",
+   "fonte": "Tabletop Analytics, 09/11/2026",
+   "noticia": "adventure-time-card-wars-2026-passa-de-1-milhao"
+  },
+  {
+   "nome": "Fable Quest",
+   "editora": "Tycoon Games",
+   "onde": "Gamefound · aberto",
+   "situacao": "Cerca de €135 mil em 08/11",
+   "fonte": "Brettspielbox, 08/11/2026",
+   "noticia": "fable-quest-arcadia-quest-cooperativo-gamefound"
+  },
+  {
+   "nome": "Cubyria: Architects of a Lost City",
+   "editora": "Cubyria Games",
+   "onde": "Kickstarter · aberto",
+   "situacao": "£ 124 mil de 1.119 apoiadores; termina em 12/11",
+   "fonte": "Kicktraq, 09/11/2026",
+   "noticia": "cubyria-architects-of-a-lost-city-kickstarter"
   },
   {
    "nome": "Too Little Time",
    "editora": "Chip Theory Games",
    "onde": "Gamefound · aberto",
-   "situacao": "US$ 1,69 milhão de 4.889 apoiadores; termina em 13/11",
-   "fonte": "Tabletop Analytics, 08/11/2026",
+   "situacao": "US$ 1,71 milhão de 4.951 apoiadores; termina em 13/11",
+   "fonte": "Tabletop Analytics, 09/11/2026",
    "noticia": "too-little-time-chip-theory-gamefound"
   },
   {
    "nome": "Ordinary Magic",
    "editora": "Unstable Games",
    "onde": "Gamefound · aberto",
-   "situacao": "US$ 687 mil de 4.856 apoiadores; termina em 10/11",
-   "fonte": "Tabletop Analytics, 08/11/2026",
+   "situacao": "US$ 734 mil de 5.201 apoiadores; termina em 10/11",
+   "fonte": "Tabletop Analytics, 09/11/2026",
    "noticia": "ordinary-magic-unstable-games-gamefound"
   },
   {
@@ -93,8 +125,8 @@
    "nome": "Through the Mountains",
    "editora": "Allplay",
    "onde": "Kickstarter · aberto",
-   "situacao": "US$ 343 mil de 2.647 apoiadores; termina em 13/11",
-   "fonte": "Tabletop Analytics, 08/11/2026",
+   "situacao": "US$ 353 mil de 2.732 apoiadores; termina em 13/11",
+   "fonte": "Tabletop Analytics, 09/11/2026",
    "noticia": "through-the-mountains-knizia-kickstarter"
   },
   {

@@ -1,77 +1,5 @@
 [
  {
-  "id": "r-arcs",
-  "tema": "resenhas",
-  "hora": "2026-11-04T02:06:53Z",
-  "titulo": "⭐ Resenha: Arcs: Conflito e Colapso no Vértice",
-  "texto": "Um império galáctico decidido por quem tem coragem de jogar um zero.",
-  "url": "https://eliteboardgamers.com.br/arcs/",
-  "imagem": "https://eliteboardgamers.com.br/arcs/capa.jpg"
- },
- {
-  "id": "r-earth",
-  "tema": "resenhas",
-  "hora": "2026-11-04T02:06:53Z",
-  "titulo": "⭐ Resenha: Earth",
-  "texto": "A natureza levou milhões de anos. Aqui, 16 cartas e uma calculadora.",
-  "url": "https://eliteboardgamers.com.br/earth/",
-  "imagem": "https://eliteboardgamers.com.br/earth/capa.jpg"
- },
- {
-  "id": "r-century-spice-road",
-  "tema": "resenhas",
-  "hora": "2026-11-04T02:06:53Z",
-  "titulo": "⭐ Resenha: Century: Spice Road",
-  "texto": "Uma casa de câmbio com cheiro de canela. Tire a canela e o câmbio continua ótimo.",
-  "url": "https://eliteboardgamers.com.br/century-spice-road/",
-  "imagem": "https://eliteboardgamers.com.br/century-spice-road/capa.jpg"
- },
- {
-  "id": "r-radlands",
-  "tema": "resenhas",
-  "hora": "2026-11-04T02:06:53Z",
-  "titulo": "⭐ Resenha: Radlands",
-  "texto": "Moicano neon por fora, contador por dentro. E quem ganha é o contador.",
-  "url": "https://eliteboardgamers.com.br/radlands/",
-  "imagem": "https://eliteboardgamers.com.br/radlands/capa.jpg"
- },
- {
-  "id": "n-too-little-time-chip-theory-gamefound",
-  "tema": "noticias",
-  "hora": "2026-11-04T10:08:54Z",
-  "titulo": "📰 Too Little Time, novo jogo do universo de Too Many Bones, passa de US$ 1,5 milhão",
-  "texto": "A Chip Theory transformou ficha de pôquer em grife, e grife se vende antes de existir. US$ 346 por apoiador em média é preço de console, por uma caixa prevista para…",
-  "url": "https://eliteboardgamers.com.br/noticias/too-little-time-chip-theory-gamefound/",
-  "imagem": "https://eliteboardgamers.com.br/noticias/capas/too-little-time-chip-theory-gamefound.jpg"
- },
- {
-  "id": "n-plants-vs-zombies-tabuleiro-passa-de-1-milhao-de-libras",
-  "tema": "noticias",
-  "hora": "2026-11-04T10:08:54Z",
-  "titulo": "📰 Plants vs. Zombies vira tabuleiro cooperativo e passa de 1 milhão de libras no Kickstarter",
-  "texto": "Uma geração inteira aprendeu a defender o jardim no celular, entre um ônibus e outro. Agora vai pagar £ 138 em média para fazer o mesmo com cartas e miniaturas…",
-  "url": "https://eliteboardgamers.com.br/noticias/plants-vs-zombies-tabuleiro-passa-de-1-milhao-de-libras/",
-  "imagem": "https://eliteboardgamers.com.br/noticias/capas/plants-vs-zombies-tabuleiro-passa-de-1-milhao-de-libras.jpg"
- },
- {
-  "id": "n-satisfactory-tabuleiro-passa-de-2-milhoes-gamefound",
-  "tema": "noticias",
-  "hora": "2026-11-04T10:08:54Z",
-  "titulo": "📰 Satisfactory, sucesso de fábricas no videogame, passa de 2,2 milhões de euros no Gamefound",
-  "texto": "No computador, Satisfactory é o jogo em que a pessoa passa seis horas otimizando uma esteira e chama isso de descanso. Na mesa, a mesma pessoa vai pagar € 254 em média…",
-  "url": "https://eliteboardgamers.com.br/noticias/satisfactory-tabuleiro-passa-de-2-milhoes-gamefound/",
-  "imagem": "https://eliteboardgamers.com.br/noticias/capas/satisfactory-tabuleiro-passa-de-2-milhoes-gamefound.jpg"
- },
- {
-  "id": "n-origins-of-light-final-fantasy-tabuleiro-kickstarter",
-  "tema": "noticias",
-  "hora": "2026-11-04T10:08:54Z",
-  "titulo": "📰 Origins of Light, jogo de tabuleiro oficial de Final Fantasy, passa de US$ 1,1 milhão",
-  "texto": "Final Fantasy tem mais de trinta jogos e uma regra de ouro: o primeiro nunca é o último. A KessCo já avisou que este é o começo de uma série, e o apoio médio de US$ 310…",
-  "url": "https://eliteboardgamers.com.br/noticias/origins-of-light-final-fantasy-tabuleiro-kickstarter/",
-  "imagem": "https://eliteboardgamers.com.br/noticias/capas/origins-of-light-final-fantasy-tabuleiro-kickstarter.jpg"
- },
- {
   "id": "r-codenames-pictures",
   "tema": "resenhas",
   "hora": "2026-11-04T11:18:34Z",
@@ -106,15 +34,6 @@
   "texto": "Nenhum avião fica parado. Quem tenta frear vira a próxima ficha no descarte.",
   "url": "https://eliteboardgamers.com.br/undaunted-battle-of-britain/",
   "imagem": "https://eliteboardgamers.com.br/undaunted-battle-of-britain/capa.jpg"
- },
- {
-  "id": "n-coffee-rush-inverno-anunciado-asmodee",
-  "tema": "noticias",
-  "hora": "2026-11-05T10:05:39Z",
-  "titulo": "📰 Coffee Rush: Inverno, versão de fim de ano do jogo de baristas, é anunciado pela Asmodee",
-  "texto": "É o Coffee Rush de cachecol: a mesma correria para montar pedidos antes de o cliente desistir, agora com laranja, um tabuleiro que muda de lugar e gelo em forma de…",
-  "url": "https://eliteboardgamers.com.br/noticias/coffee-rush-inverno-anunciado-asmodee/",
-  "imagem": "https://eliteboardgamers.com.br/noticias/capas/coffee-rush-inverno-anunciado-asmodee.jpg"
  },
  {
   "id": "n-stomp-leder-games-robos-contra-kaijus",
@@ -300,8 +219,8 @@
   "id": "n-arkham-horror-remastered-fecha-gamefound-5-milhoes",
   "tema": "noticias",
   "hora": "2026-11-08T14:33:57Z",
-  "titulo": "📰 Arkham Horror Remastered fecha no Gamefound com US$ 5,67 milhões e 13.693 apoiadores",
-  "texto": "Em 31 de outubro a campanha estava em US$ 2,96 milhões; nos últimos cinco dias quase dobrou. O apoio médio foi de US$ 414, num jogo que se apresenta como a volta de um…",
+  "titulo": "📰 Arkham Horror Remastered fecha no Gamefound e passa de US$ 5,7 milhões com apoios tardios",
+  "texto": "Em 31 de outubro a campanha estava em US$ 2,96 milhões; até 08/11, com os apoios tardios, quase dobrou. O apoio médio foi de US$ 414, num jogo que se apresenta como a…",
   "url": "https://eliteboardgamers.com.br/noticias/arkham-horror-remastered-fecha-gamefound-5-milhoes/",
   "imagem": "https://eliteboardgamers.com.br/noticias/capas/arkham-horror-remastered-fecha-gamefound-5-milhoes.jpg"
  },
@@ -358,5 +277,86 @@
   "texto": "Treze cartas, uma palavra por pessoa e a descoberta humilhante de que todo mundo escreveu a mesma coisa.",
   "url": "https://eliteboardgamers.com.br/just-one/",
   "imagem": "https://eliteboardgamers.com.br/just-one/capa.jpg"
+ },
+ {
+  "id": "n-wallguards-of-the-east-empire-garphill-kickstarter",
+  "tema": "noticias",
+  "hora": "2026-11-09T10:03:34Z",
+  "titulo": "📰 Garphill abre trilogia nova com Wallguards of the East Empire no Kickstarter em 10/11",
+  "texto": "A Garphill descobriu a fórmula e não tem vergonha nenhuma: três jogos por região, sempre com muralha, sempre com camponês ansioso. A gente não reclama, porque a fórmula…",
+  "url": "https://eliteboardgamers.com.br/noticias/wallguards-of-the-east-empire-garphill-kickstarter/",
+  "imagem": "https://eliteboardgamers.com.br/noticias/capas/wallguards-of-the-east-empire-garphill-kickstarter.jpg"
+ },
+ {
+  "id": "n-adventure-time-card-wars-2026-passa-de-1-milhao",
+  "tema": "noticias",
+  "hora": "2026-11-09T10:03:34Z",
+  "titulo": "📰 Adventure Time Card Wars 2026 passa de US$ 1 milhão no Kickstarter da Cryptozoic",
+  "texto": "Um jogo que nasceu como piada dentro de um desenho animado já passou de um milhão de dólares pela terceira vez seguida. A gente acha ótimo, e um pouco assustador: o…",
+  "url": "https://eliteboardgamers.com.br/noticias/adventure-time-card-wars-2026-passa-de-1-milhao/",
+  "imagem": "https://eliteboardgamers.com.br/noticias/capas/adventure-time-card-wars-2026-passa-de-1-milhao.jpg"
+ },
+ {
+  "id": "n-fable-quest-arcadia-quest-cooperativo-gamefound",
+  "tema": "noticias",
+  "hora": "2026-11-09T10:03:34Z",
+  "titulo": "📰 Fable Quest leva o mundo de Arcadia Quest para uma campanha cooperativa no Gamefound",
+  "texto": "Arcadia Quest era o jogo em que os amigos se matavam com chibi fofinho, e esse era o charme. Agora todo mundo joga do mesmo lado. A gente entende: briga entre amigos…",
+  "url": "https://eliteboardgamers.com.br/noticias/fable-quest-arcadia-quest-cooperativo-gamefound/",
+  "imagem": "https://eliteboardgamers.com.br/noticias/capas/fable-quest-arcadia-quest-cooperativo-gamefound.jpg"
+ },
+ {
+  "id": "n-cubyria-architects-of-a-lost-city-kickstarter",
+  "tema": "noticias",
+  "hora": "2026-11-09T10:03:34Z",
+  "titulo": "📰 Cubyria, jogo de montar castelo em três dimensões, passa de 124 mil libras no Kickstarter",
+  "texto": "Jogo que vira maquete na mesa sempre chama atenção, e é para isso que ele foi feito. O próprio manual se resume como Tetris competitivo em 3D, o que é honesto e um…",
+  "url": "https://eliteboardgamers.com.br/noticias/cubyria-architects-of-a-lost-city-kickstarter/",
+  "imagem": "https://eliteboardgamers.com.br/noticias/capas/cubyria-architects-of-a-lost-city-kickstarter.jpg"
+ },
+ {
+  "id": "n-marco-polo-deluxe-master-set-gamefound",
+  "tema": "noticias",
+  "hora": "2026-11-09T10:03:34Z",
+  "titulo": "📰 As Viagens de Marco Polo e Marco Polo II viram caixa de luxo no Gamefound",
+  "texto": "Marco Polo é daqueles jogos que a gente indica sem pensar duas vezes, e agora volta na versão feita para quem já tem e vai comprar de novo. A Board&Dice já fez isso com…",
+  "url": "https://eliteboardgamers.com.br/noticias/marco-polo-deluxe-master-set-gamefound/",
+  "imagem": "https://eliteboardgamers.com.br/noticias/capas/marco-polo-deluxe-master-set-gamefound.jpg"
+ },
+ {
+  "id": "r-forest-shuffle",
+  "tema": "resenhas",
+  "hora": "2026-11-09T11:06:05Z",
+  "titulo": "⭐ Resenha: Forest Shuffle",
+  "texto": "Tem trilha sonora de documentário de natureza e final de declaração do imposto de renda.",
+  "url": "https://eliteboardgamers.com.br/forest-shuffle/",
+  "imagem": "https://eliteboardgamers.com.br/forest-shuffle/capa.jpg"
+ },
+ {
+  "id": "r-kutna-hora",
+  "tema": "resenhas",
+  "hora": "2026-11-09T11:06:22Z",
+  "titulo": "⭐ Resenha: Kutná Hora",
+  "texto": "Cada prédio que você ergue barateia a mercadoria do vizinho. A Boêmia do século 14 nunca foi tão generosa sem querer.",
+  "url": "https://eliteboardgamers.com.br/kutna-hora/",
+  "imagem": "https://eliteboardgamers.com.br/kutna-hora/capa.jpg"
+ },
+ {
+  "id": "r-akropolis",
+  "tema": "resenhas",
+  "hora": "2026-11-09T11:06:40Z",
+  "titulo": "⭐ Resenha: Akropolis",
+  "texto": "Parece um quebra-cabeça para relaxar até alguém comprar a praça com estrela que você esperava havia três rodadas.",
+  "url": "https://eliteboardgamers.com.br/akropolis/",
+  "imagem": "https://eliteboardgamers.com.br/akropolis/capa.jpg"
+ },
+ {
+  "id": "r-mysterium-kids",
+  "tema": "resenhas",
+  "hora": "2026-11-09T11:06:58Z",
+  "titulo": "⭐ Resenha: Mysterium Kids",
+  "texto": "Tente fazer o barulho de um gato num pandeiro sem miar. Agora perca para uma criança de seis anos que conseguiu.",
+  "url": "https://eliteboardgamers.com.br/mysterium-kids/",
+  "imagem": "https://eliteboardgamers.com.br/mysterium-kids/capa.jpg"
  }
 ]

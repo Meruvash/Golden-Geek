@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-11-08",
+ "atualizado_em": "2026-11-09",
  "regras": {
   "premios": [
    "Golden Geek",
@@ -373,6 +373,26 @@
    "jogo": "Just One",
    "url": "https://eliteboardgamers.com.br/just-one/",
    "data": "2026-11-08"
+  },
+  {
+   "jogo": "Forest Shuffle",
+   "url": "https://eliteboardgamers.com.br/forest-shuffle/",
+   "data": "2026-11-09"
+  },
+  {
+   "jogo": "Kutná Hora",
+   "url": "https://eliteboardgamers.com.br/kutna-hora/",
+   "data": "2026-11-09"
+  },
+  {
+   "jogo": "Akropolis",
+   "url": "https://eliteboardgamers.com.br/akropolis/",
+   "data": "2026-11-09"
+  },
+  {
+   "jogo": "Mysterium Kids",
+   "url": "https://eliteboardgamers.com.br/mysterium-kids/",
+   "data": "2026-11-09"
   }
  ],
  "jogos": [
@@ -2203,10 +2223,14 @@
      "fonte": "https://en.wikipedia.org/wiki/Spiel_des_Jahres"
     }
    ],
-   "status": "na_fila",
+   "status": "sem_fotos",
    "premios_distintos": 2,
    "prioridade": 98,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "fotos": {
+    "verificado_em": "2026-11-08",
+    "obs": "Ludonaute (só renders PNG em fundo liso), Galápagos (bloqueado), Pegasus, Asmodee UK/DE (sem página), Spiel des Jahres (fotos de mesa em fundo branco, reprovadas no crivo)"
+   }
   },
   {
    "jogo": "Dragomino",
@@ -2408,10 +2432,14 @@
      "fonte": "https://en.wikipedia.org/wiki/Spiel_des_Jahres"
     }
    ],
-   "status": "na_fila",
+   "status": "sem_fotos",
    "premios_distintos": 2,
    "prioridade": 102,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "fotos": {
+    "verificado_em": "2026-11-08",
+    "obs": "Blue Orange EU/US (só capa, regras e arte), blog Blue Orange, Galápagos (bloqueado), Pegasus (sem página), Spiel des Jahres (só capa)"
+   }
   },
   {
    "jogo": "The Voyages of Marco Polo",
@@ -2436,10 +2464,14 @@
      "fonte": "https://eliteboardgamers.com.br/"
     }
    ],
-   "status": "na_fila",
+   "status": "sem_fotos",
    "prioridade": 103,
    "premios_distintos": 2,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "fotos": {
+    "verificado_em": "2026-11-08",
+    "obs": "Hans im Glück, Z-Man, Grok Games (sem página no sitemap), Spiel des Jahres (nada)"
+   }
   },
   {
    "jogo": "Sleeping Gods",
@@ -3652,10 +3684,14 @@
      "fonte": "https://fr.wikipedia.org/wiki/As_d%27Or"
     }
    ],
-   "status": "na_fila",
+   "status": "sem_fotos",
    "premios_distintos": 1,
    "prioridade": 104,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "fotos": {
+    "verificado_em": "2026-11-08",
+    "obs": "Le Scorpion Masqué (página do jogo e blog: só render em fundo branco, cartas e selos de prêmio)"
+   }
   },
   {
    "jogo": "Zénith",
@@ -3672,10 +3708,14 @@
      "fonte": "https://fr.wikipedia.org/wiki/As_d%27Or"
     }
    ],
-   "status": "na_fila",
+   "status": "sem_fotos",
    "premios_distintos": 1,
    "prioridade": 105,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "fotos": {
+    "verificado_em": "2026-11-09",
+    "obs": "PlayPunk (playpunk.com: só cartas, selos e render em fundo preto), Spiel des Jahres (só capa)"
+   }
   },
   {
    "jogo": "Behind",
@@ -3692,10 +3732,14 @@
      "fonte": "https://fr.wikipedia.org/wiki/As_d%27Or"
     }
    ],
-   "status": "na_fila",
+   "status": "sem_fotos",
    "premios_distintos": 1,
    "prioridade": 106,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "fotos": {
+    "verificado_em": "2026-11-09",
+    "obs": "KYF Edition (site oficial não encontrado; só lojas e diretórios)"
+   }
   },
   {
    "jogo": "Kutná Hora",
@@ -3712,10 +3756,11 @@
      "fonte": "https://fr.wikipedia.org/wiki/As_d%27Or"
     }
    ],
-   "status": "na_fila",
+   "status": "publicado",
    "premios_distintos": 1,
    "prioridade": 107,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "slug": "kutna-hora"
   },
   {
    "jogo": "Odin",
@@ -3735,7 +3780,8 @@
    "status": "na_fila",
    "premios_distintos": 1,
    "prioridade": 108,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "slug": "odin"
   },
   {
    "jogo": "Opération Noisettes",
@@ -3817,10 +3863,14 @@
      "fonte": "https://en.wikipedia.org/wiki/Spiel_des_Jahres"
     }
    ],
-   "status": "na_fila",
+   "status": "sem_fotos",
    "premios_distintos": 1,
    "prioridade": 110,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "fotos": {
+    "verificado_em": "2026-11-08",
+    "obs": "Schmidt Spiele (página do produto sem imagens extraíveis), Spiel des Jahres (só capa e selo)"
+   }
   },
   {
    "jogo": "Castle Combo",
@@ -3858,10 +3908,11 @@
      "fonte": "https://de.wikipedia.org/wiki/Deutscher_Spiele_Preis"
     }
    ],
-   "status": "na_fila",
+   "status": "publicado",
    "premios_distintos": 1,
    "prioridade": 111,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "slug": "forest-shuffle"
   },
   {
    "jogo": "La Famiglia",
@@ -3878,10 +3929,14 @@
      "fonte": "https://fr.wikipedia.org/wiki/As_d%27Or"
     }
    ],
-   "status": "na_fila",
+   "status": "sem_fotos",
    "premios_distintos": 1,
    "prioridade": 112,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "fotos": {
+    "verificado_em": "2026-11-09",
+    "obs": "Feuerland (página sem imagens), Capstone (sem página), Boardgame Atelier (fotos de mesa em retrato de 700 px, abaixo do topo; aprovadas em la-famiglia/fotos)"
+   }
   },
   {
    "jogo": "Magic Keys",
@@ -3962,10 +4017,14 @@
      "fonte": "https://fr.wikipedia.org/wiki/As_d%27Or"
     }
    ],
-   "status": "na_fila",
+   "status": "sem_fotos",
    "premios_distintos": 1,
    "prioridade": 115,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "fotos": {
+    "verificado_em": "2026-11-08",
+    "obs": "Cocktail Games (página do jogo, regras e As d'Or: só renders em fundo preto, caixa e cartas)"
+   }
   },
   {
    "jogo": "Unconscious Mind",
@@ -4006,10 +4065,11 @@
      "fonte": "https://fr.wikipedia.org/wiki/As_d%27Or"
     }
    ],
-   "status": "na_fila",
+   "status": "publicado",
    "premios_distintos": 1,
    "prioridade": 116,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "slug": "akropolis"
   },
   {
    "jogo": "Flashback Zombie Kids",
@@ -4026,10 +4086,14 @@
      "fonte": "https://fr.wikipedia.org/wiki/As_d%27Or"
     }
    ],
-   "status": "na_fila",
+   "status": "sem_fotos",
    "premios_distintos": 1,
    "prioridade": 117,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "fotos": {
+    "verificado_em": "2026-11-09",
+    "obs": "Le Scorpion Masqué (página do jogo: só arte e montagem de cartas)"
+   }
   },
   {
    "jogo": "Legacy of Yu",
@@ -4070,10 +4134,11 @@
      "fonte": "https://en.wikipedia.org/wiki/Spiel_des_Jahres"
     }
    ],
-   "status": "na_fila",
+   "status": "publicado",
    "premios_distintos": 1,
    "prioridade": 118,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "slug": "mysterium-kids"
   },
   {
    "jogo": "Thunder Road: Vendetta",
@@ -4114,7 +4179,8 @@
    "status": "na_fila",
    "premios_distintos": 1,
    "prioridade": 119,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "slug": "bubble-stories"
   },
   {
    "jogo": "Magic Mountain",
@@ -4134,7 +4200,8 @@
    "status": "na_fila",
    "premios_distintos": 1,
    "prioridade": 120,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "slug": "magic-mountain"
   },
   {
    "jogo": "Ready Set Bet",
@@ -4261,10 +4328,14 @@
      "fonte": "https://en.wikipedia.org/wiki/Spiel_des_Jahres"
     }
    ],
-   "status": "na_fila",
+   "status": "sem_fotos",
    "premios_distintos": 1,
    "prioridade": 122,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "fotos": {
+    "verificado_em": "2026-11-09",
+    "obs": "Gamewright (só caixa e renders em fundo liso), Spiel des Jahres (Speedy Roll: só retrato e capa), Lifestyle Boardgames/Piatnik não mapeadas"
+   }
   },
   {
    "jogo": "Oriflamme",
@@ -4687,7 +4758,8 @@
    "status": "na_fila",
    "premios_distintos": 1,
    "prioridade": 134,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "slug": "isle-of-skye"
   },
   {
    "jogo": "Maître Renard",

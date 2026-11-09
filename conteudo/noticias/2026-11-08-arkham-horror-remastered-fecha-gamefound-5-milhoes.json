@@ -4,20 +4,20 @@
  "categoria": "Financiamento",
  "jogo": "Arkham Horror Remastered",
  "editora": "Fantasy Flight Games",
- "titulo": "Arkham Horror Remastered fecha no Gamefound com US$ 5,67 milhões e 13.693 apoiadores",
- "titulo_seo": "Arkham Horror Remastered fecha com US$ 5,67 milhões",
+ "titulo": "Arkham Horror Remastered fecha no Gamefound e passa de US$ 5,7 milhões com apoios tardios",
+ "titulo_seo": "Arkham Horror Remastered passa de US$ 5,7 milhões",
  "selo": "Informativo",
- "lide": "A campanha de Arkham Horror Remastered, primeira da Fantasy Flight Games no Gamefound, terminou em 5 de novembro com US$ 5.673.277 de 13.693 apoiadores, quase 19 vezes a meta de US$ 300 mil, segundo o Tabletop Analytics. O jogo refaz a segunda edição de 2005 com arte, componentes e manual novos. A campanha não anunciou português.",
- "por_que_importa": "Em 31 de outubro a campanha estava em US$ 2,96 milhões; nos últimos cinco dias quase dobrou. O apoio médio foi de US$ 414, num jogo que se apresenta como a volta de um clássico e se vende como coleção completa. A editora descobriu que nostalgia em caixa grande tem fila, e que a fila paga o pacote com todas as expansões.",
+ "lide": "A campanha de Arkham Horror Remastered, primeira da Fantasy Flight Games no Gamefound, terminou em 5 de novembro e, com os apoios tardios, somava US$ 5.714.301 de 13.804 apoiadores em 08/11/2026, cerca de 19 vezes a meta de US$ 300 mil, segundo o Tabletop Analytics. O jogo refaz a segunda edição de 2005 com arte, componentes e manual novos. A campanha não anunciou português.",
+ "por_que_importa": "Em 31 de outubro a campanha estava em US$ 2,96 milhões; até 08/11, com os apoios tardios, quase dobrou. O apoio médio foi de US$ 414, num jogo que se apresenta como a volta de um clássico e se vende como coleção completa. A editora descobriu que nostalgia em caixa grande tem fila, e que a fila paga o pacote com todas as expansões.",
  "numeros": [
   [
-   "US$ 5.673.277",
-   "arrecadados até o fim, em 05/11/2026",
+   "US$ 5.714.301",
+   "arrecadados até 08/11/2026, com apoios tardios",
    "Tabletop Analytics"
   ],
   [
-   "13.693",
-   "apoiadores",
+   "13.804",
+   "apoiadores até 08/11/2026",
    "Tabletop Analytics"
   ],
   [
@@ -33,7 +33,8 @@
  ],
  "corpo": [
   "Arkham Horror Remastered reproduz as regras da segunda edição, de 2005, com 16 investigadores no jogo base, nova arte e manual revisado. A campanha também ofereceu as expansões grandes reorganizadas: Dunwich Horror, Kingsport Horror, Innsmouth Horror, Miskatonic Horror e Cosmic Horror, que junta quatro expansões antigas, segundo a Fantasy Flight Games.",
-  "Foi a primeira campanha da editora, do grupo Asmodee, na linha que ela chama de Vault Series, de reedições de jogos fora de catálogo. A campanha durou de 20 de outubro a 5 de novembro."
+  "Foi a primeira campanha da editora, do grupo Asmodee, na linha que ela chama de Vault Series, de reedições de jogos fora de catálogo. A campanha durou de 21 de outubro a 5 de novembro.",
+  "Correção em 08/11/2026: os números publicados antes (US$ 5.673.277 e 13.693 apoiadores) já incluíam apoios tardios e não eram o total do encerramento; atualizamos para a leitura de 08/11. A campanha começou em 21 de outubro, não em 20."
  ],
  "no_brasil": "Para a segunda edição de Arkham Horror, não encontramos edição nacional até 08/11/2026, e a campanha não anunciou português. A terceira edição, mais enxuta, saiu no Brasil pela Asmodee (então Galápagos) em 2019. Quem quiser a Remastered depende de importação, com frete e imposto.",
  "critica": [],
@@ -70,6 +71,11 @@
   {
    "nome": "ComparaJogos: Arkham Horror 3ª edição",
    "url": "https://www.comparajogos.com.br/item/arkham-horror-3a-edicao",
+   "data": "08/11/2026"
+  },
+  {
+   "nome": "Brettspielbox: Crowdfunding News 45/26",
+   "url": "https://brettspielbox.de/brettspiel-crowdfunding-news-45-26",
    "data": "08/11/2026"
   }
  ],

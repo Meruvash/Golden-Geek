@@ -1,0 +1,112 @@
+{
+ "slug": "fable-quest-arcadia-quest-cooperativo-gamefound",
+ "data": "2026-11-09",
+ "categoria": "Financiamento",
+ "jogo": "Fable Quest",
+ "editora": "Tycoon Games",
+ "titulo": "Fable Quest leva o mundo de Arcadia Quest para uma campanha cooperativa no Gamefound",
+ "titulo_seo": "Fable Quest, de Arcadia Quest, no Gamefound",
+ "selo": "Informativo",
+ "lide": "A Tycoon Games abriu em 5 de novembro no Gamefound a campanha de Fable Quest, jogo cooperativo de campanha no mundo de Arcadia Quest, que somava cerca de 135 mil euros em 8 de novembro, segundo o Brettspielbox. São 12 capítulos para 1 a 4 pessoas. A Tycoon comprou Arcadia Quest da CMON; o jogo original saiu no Brasil pela Galápagos.",
+ "por_que_importa": "Arcadia Quest era o jogo em que os amigos se matavam com chibi fofinho, e esse era o charme. Agora todo mundo joga do mesmo lado. A gente entende: briga entre amigos virou mercadoria rara. Mas trocar a traição pela cooperação é mudar o tempero do prato inteiro e torcer para ninguém notar.",
+ "numeros": [
+  [
+   "cerca de € 135 mil",
+   "arrecadados até 08/11/2026",
+   "Brettspielbox"
+  ],
+  [
+   "12",
+   "capítulos de campanha",
+   "ICv2"
+  ],
+  [
+   "1 a 4",
+   "jogadores, a partir de 14 anos",
+   "ICv2"
+  ],
+  [
+   "05/11/2026",
+   "início da campanha",
+   "Brettspielbox"
+  ]
+ ],
+ "corpo": [
+  "Segundo o ICv2, a Tycoon Games adquiriu Arcadia Quest da CMON num acordo que incluiu vários jogos de Eric M. Lang. Em Fable Quest, os heróis juntam tesouro, enfrentam monstros e tentam salvar a Guilda dos Provadores de Cogumelos. As escolhas ao longo dos 12 capítulos levam a finais diferentes.",
+  "Cada personagem evolui montando o próprio baralho de ações e equipamentos. O site oficial diz que heróis de Arcadia Quest voltam como personagens jogáveis. O Brettspielbox destaca a diferença principal: o original era disputado entre os jogadores, e Fable Quest é totalmente cooperativo."
+ ],
+ "no_brasil": "Arcadia Quest saiu no Brasil pela Galápagos, hoje Asmodee, em 2016, segundo o ComparaJogos. Para Fable Quest, não encontramos edição nacional até 09/11/2026: o jogo não está no ComparaJogos nem no nosso calendário de lançamentos. Por enquanto, só pela campanha.",
+ "critica": [],
+ "para_quem": [
+  "Tem Arcadia Quest na estante e sente falta dos heróis, mas não da briga no fim da partida",
+  "Joga campanha com o mesmo grupo toda semana e quer escolha com consequência"
+ ],
+ "nao_e_para": [
+  "Gostava de Arcadia Quest justamente para trair o amigo no último turno",
+  "Não importa jogo de campanha sem saber se o grupo vai durar até o capítulo 12"
+ ],
+ "veredito": "Informativo. A gente gosta do universo, mas ainda não há crítica de quem jogou a campanha inteira. Acompanhe as primeiras partidas: campanha de 12 capítulos é casamento, e ninguém casa só pelo trailer.",
+ "fontes": [
+  {
+   "nome": "Brettspielbox: Brettspiel Crowdfunding News 45/26",
+   "url": "https://brettspielbox.de/brettspiel-crowdfunding-news-45-26",
+   "data": "09/11/2026"
+  },
+  {
+   "nome": "ICv2: Fable Quest coming soon to Gamefound",
+   "url": "https://icv2.com/articles/news/view/63496/fable-quest-coming-soon-gamefound",
+   "data": "09/11/2026"
+  },
+  {
+   "nome": "Fable Quest: site oficial",
+   "url": "https://fablequest.com/",
+   "data": "09/11/2026"
+  },
+  {
+   "nome": "ComparaJogos: Arcadia Quest",
+   "url": "https://www.comparajogos.com.br/item/arcadia-quest",
+   "data": "09/11/2026"
+  },
+  {
+   "nome": "Ludopedia: Arcadia Quest",
+   "url": "https://ludopedia.com.br/jogo/arcadia-quest",
+   "data": "09/11/2026"
+  }
+ ],
+ "imagem": {
+  "arquivo": "capas/fable-quest-arcadia-quest-cooperativo-gamefound.jpg",
+  "credito": "Imagem: Fable Quest (Tycoon Games), site oficial · ilustração do mundo",
+  "origem": "https://fablequest.com/assets/world.webp",
+  "pagina": "https://fablequest.com/"
+ },
+ "jogos": [],
+ "crivo": {
+  "pontos": 2,
+  "criterios": [
+   "Confirmada por duas fontes: Brettspielbox e ICv2 (2)"
+  ]
+ },
+ "verificacao_nacional": [
+  {
+   "jogo": "Fable Quest",
+   "resultado": "não encontrada",
+   "data": "09/11/2026",
+   "fontes": [
+    "https://www.comparajogos.com.br/item/arcadia-quest",
+    "https://fablequest.com/"
+   ],
+   "obs": "edicao_nacional.py: Fable Quest não está no ComparaJogos; jogo novo, em campanha"
+  },
+  {
+   "jogo": "Arcadia Quest",
+   "resultado": "edição nacional",
+   "data": "09/11/2026",
+   "fontes": [
+    "https://www.comparajogos.com.br/item/arcadia-quest",
+    "https://ludopedia.com.br/jogo/arcadia-quest"
+   ],
+   "obs": "Galápagos, 2016"
+  }
+ ],
+ "publicado_em": "2026-11-09T10:03:34+00:00"
+}

@@ -181,7 +181,7 @@
   "status": "RECENTS",
   "tipo_preco": "NORMAL",
   "titulo": "Jogo Cara a Cara Estrela",
-  "visto": "2026-11-08T11:24-03:00"
+  "visto": "2026-11-08T20:36-03:00"
  },
  "3185004": {
   "cupom": null,
@@ -195,14 +195,48 @@
   "preco": 24.24,
   "preco_antes": 39.99,
   "publicado": "2026-11-08T06:32:53-0300",
-  "ref": 32.98,
-  "ref_dias": 36,
+  "ref": 32.59,
+  "ref_dias": 37,
   "ref_fonte": "nossa base (Compara Jogos)",
   "slug": "jogo-tapa-certo-estrela-3185004",
   "slug_cj": "tapa-certo",
   "status": "RECENTS",
   "tipo_preco": "NORMAL",
   "titulo": "Jogo Tapa Certo Estrela",
-  "visto": "2026-11-08T11:24-03:00"
+  "visto": "2026-11-09T01:31-03:00"
+ },
+ "3187284": {
+  "cupom": null,
+  "dominio": "amazon.com.br",
+  "foto": "/482216858917941994527034862260.jpg",
+  "jogo": null,
+  "link": "https://www.promobit.com.br/oferta/hugge-jogo-de-cartas-conversa-casais-familia-3187284/",
+  "loja": "Amazon",
+  "preco": 95.84,
+  "preco_antes": 129,
+  "publicado": "2026-11-09T01:43:13-0300",
+  "ref_fonte": "sem referência",
+  "slug": "hugge-jogo-de-cartas-conversa-casais-familia-3187284",
+  "status": "RECENTS",
+  "tipo_preco": "NORMAL",
+  "titulo": "HUGGE Jogo de Cartas Conversa Casais Família",
+  "visto": "2026-11-09T10:02-03:00"
+ },
+ "3189071": {
+  "cupom": null,
+  "dominio": "amazon.com.br",
+  "foto": "/677026918517942423007663100407.jpg",
+  "jogo": null,
+  "link": "https://www.promobit.com.br/oferta/jogo-de-tabuleiro-fazendo-mimica-coluna-multicor-3189071/",
+  "loja": "Amazon",
+  "preco": 23.9,
+  "preco_antes": null,
+  "publicado": "2026-11-09T13:37:23-0300",
+  "ref_fonte": "sem referência",
+  "slug": "jogo-de-tabuleiro-fazendo-mimica-coluna-multicor-3189071",
+  "status": "RECENTS",
+  "tipo_preco": "NORMAL",
+  "titulo": "Jogo De Tabuleiro Fazendo Mimica Coluna Multicor",
+  "visto": "2026-11-09T14:45-03:00"
  }
 }

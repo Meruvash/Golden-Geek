@@ -49,7 +49,7 @@
   "No início de cada rodada, todos rolam seus quatro dados de movimento, e o primeiro jogador rola o dado de estrada, que dá movimento extra a quem andar só pelo asfalto. Cada jogador faz três turnos por rodada. No turno, você põe um dado no painel de um carro que ainda não andou, e ele anda o número tirado, sempre para uma das três casas à frente.",
   "Uma vez por rodada, outro dado pode ir para o painel de comando: ataque aéreo (o helicóptero pousa em qualquer casa vazia e atira), nitro (soma o dado ao movimento, com 1 a 3), derrapagem (passa por um carro sem bater, com 3 a 5) ou conserto (tira uma ficha de dano, com 6). Depois de andar, o carro pode atirar num veículo à frente: rola-se o dado de tiro, e acerta se sair o tamanho do alvo.",
   "Entrar na casa de outro veículo é uma batida: o dado de batida e o de direção dizem quem é empurrado e para onde, e o dono do veículo maior pode pedir nova rolagem. Cada dano tira uma ficha aleatória, que pode ter efeito como derrapar; com duas fichas, o carro para de funcionar. É eliminado o carro que sai pela lateral, que termina o turno na casa de um helicóptero ou que fica na placa de trás quando ela sai. Marcadores de perigo escondidos viram destroços, minas e outros obstáculos.",
-  "Quando um carro sai pela frente da última placa, entra uma placa nova e a de trás sai do jogo. Na primeira rodada ninguém atira. Quando um jogador fica sem carros funcionando, a placa da frente vira a final e a linha de chegada é posta logo depois dela."
+  "Quando um carro sai pela frente da última placa, entra uma placa nova e a de trás sai do jogo. Na primeira rodada ninguém atira. Com três ou mais jogadores, quando um jogador fica sem carros funcionando, a placa da frente vira a final e a linha de chegada é posta logo depois dela; em duas pessoas, a final é a quinta placa."
  ],
  "passos": [
   ["ROLE OS DADOS", "No início da rodada, todos rolam quatro dados de movimento. O primeiro jogador rola o dado de estrada, que dá bônus a quem andar só no asfalto."],
@@ -96,7 +96,7 @@
   ["5 jogadores", "Só com a expansão Big Rig and the Final Five; a Zatu jogou com cinco e diz que dá para chegar a seis com expansões.", 2]
  ],
  "primeira_partida": "Comece pela placa do estacionamento, uma das duas opções de largada do manual, e jogue sem expansões. A regra que mais confunde é a do embalo, que deixa andar uma casa com um carro que já se moveu, só quando os outros também já andaram; a Zatu achou essa parte a mais trabalhosa. Lembre a mesa de que na primeira rodada ninguém atira. Dica prática: espalhe os três carros. Carro grande colado no pequeno é batida esperando para acontecer.",
- "edicao_nacional": "A edição em português é da Asmodee (Galápagos) e foi lançada em setembro de 2025, segundo a Ludopedia, com manual em português. A expansão Carnaval do Caos saiu pela mesma editora em 2026. Em 08/11/2026, o ComparaJogos mostrava o jogo base a partir de R$ 369,68 no Pix, com ofertas de jogo novo até cerca de R$ 660.",
+ "edicao_nacional": "A edição em português é da Asmodee (Galápagos) e foi lançada em 2025, segundo a Bravo Jogos, com manual em português. A expansão Carnaval do Caos saiu pela mesma editora em 2026. Em 08/11/2026, o ComparaJogos mostrava o jogo base a partir de R$ 369,68 no Pix, com ofertas de jogo novo até cerca de R$ 660.",
  "preco_ref": {
   "faixa": "a partir de R$ 369,68",
   "data": "08/11/2026",

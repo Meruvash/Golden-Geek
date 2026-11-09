@@ -1,6 +1,6 @@
 {
  "abroad": {
-  "_hora": "2026-11-07T12:51-03:00",
+  "_hora": "2026-11-09T14:46-03:00",
   "alquimistasdosjogos": "https://www.alquimistasdosjogos.com.br/jogos/abroad",
   "brecholudico": "https://brecholudico.com.br/produto/abroad/",
   "ludostation": "https://ludostation.com.br/produtos/abroad-1ofzs/?entry_path=category",
@@ -8,7 +8,7 @@
   "mecadosjogos": "https://www.mecadosjogos.com.br/abroad-p1221"
  },
  "algae-inc": {
-  "_hora": "2026-11-08T09:56-03:00",
+  "_hora": "2026-11-09T11:45-03:00",
   "boardgameplaystore": "https://www.boardgameplaystore.com.br/products/algae-inc",
   "bravojogos": "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-algae-inc-ingles-p",
   "brecholudico": "https://brecholudico.com.br/produto/algae-inc/",
@@ -25,6 +25,32 @@
   "placegames": "https://www.placegames.com.br/boardgames/alien-attack-usa",
   "playeasy": "https://www.playeasy.com.br/alien-attack-usa"
  },
+ "anachrony-edicao-essencial": {
+  "_hora": "2026-11-09T12:16-03:00",
+  "amazon": "https://www.amazon.com.br/dp/B09FTMW8ZH",
+  "boardgamebarato": "https://www.boardgamebarato.com.br/anachrony-edicao-essencial",
+  "dalarangames": "https://www.dalaran.com.br/anachrony-edicao-essencial",
+  "facilshopping": "https://www.facilshopping.com.br/produtos/anachrony-edicao-essencial-grok/?entry_path=category",
+  "mercadolivre": "https://www.mercadolivre.com.br/p/MLB66539391",
+  "pittasboardgames": "https://www.pittasboardgames.com.br/produtos/anachrony-edicao-essencial/?entry_path=category"
+ },
+ "antiques": {
+  "_hora": "2026-11-09T11:33-03:00",
+  "alquimistasdosjogos": "https://www.alquimistasdosjogos.com.br/jogos/antiques",
+  "amazon": "https://www.amazon.com.br/dp/B0FY41ND5Y",
+  "brecholudico": "https://brecholudico.com.br/produto/antiques/",
+  "masmorra": "https://www.masmorra.com.br/produtos/atb95432",
+  "mercadolivre": "https://www.mercadolivre.com.br/p/MLB62648581",
+  "piranoboardgame": "https://piranoboardgame.com.br/jogo/antiques"
+ },
+ "aquaria": {
+  "_hora": "2026-11-09T13:46-03:00",
+  "amazon": "https://www.amazon.com.br/dp/B0G3Y6ZRRW",
+  "caixinhaboardgames": "https://www.caixinhaboardgames.com.br/produtos/aquaria/?entry_path=category",
+  "livtoys": "https://www.livtoys.com.br/boardgames/aquaria",
+  "piranoboardgame": "https://piranoboardgame.com.br/jogo/aquaria",
+  "tabuloja": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/aquaria"
+ },
  "arkham-horror-card-game-a-era-esquecida-expansao-de-investigador": {
   "_hora": "2026-11-05T20:47-03:00",
   "alquimistasdosjogos": "https://www.alquimistasdosjogos.com.br/jogos/arkham-horror-card-game-a-era-esquecida-expansao-de-investigadores",
@@ -32,6 +58,10 @@
   "caixinhaboardgames": "https://www.caixinhaboardgames.com.br/produtos/a-era-esquecida-expansao-investigador-arkham-horror-card-game/?entry_path=category",
   "livtoys": "https://www.livtoys.com.br/boardgames/expansao-de-investigador-arkham-horror-card-game-a-era-esquecida",
   "mercadolivre": "https://www.mercadolivre.com.br/p/MLB24071081"
+ },
+ "arkham-horror-the-card-game": {
+  "_hora": "2026-11-08T19:12-03:00",
+  "javalijogos": "https://www.javalijogos.com.br/arkham-horror-the-card-game"
  },
  "asteria": {
   "_hora": "2026-11-05T16:09-03:00",
@@ -42,8 +72,17 @@
   "mercadolivre": "https://www.mercadolivre.com.br/p/MLB60249525",
   "placegames": "https://www.placegames.com.br/boardgames/asteria"
  },
+ "azul-pavilhao-de-verao-mini": {
+  "_hora": "2026-11-09T11:33-03:00",
+  "amazon": "https://www.amazon.com.br/dp/B0DDR1D8M8",
+  "caixinhaboardgames": "https://www.caixinhaboardgames.com.br/produtos/azul-pavilhao-de-verao-mini/?entry_path=category",
+  "frodosbg": "https://loja.frodosbg.com.br/azul-mini-pavilhao-de-verao",
+  "mercadolivre": "https://www.mercadolivre.com.br/p/MLB46239496",
+  "placegames": "https://www.placegames.com.br/azul-mini-pavilhao-de-verao",
+  "playeasy": "https://www.playeasy.com.br/azul-pavilhao-de-verao-mini"
+ },
  "bandida": {
-  "_hora": "2026-11-07T13:57-03:00",
+  "_hora": "2026-11-08T14:35-03:00",
   "amazon": "https://www.amazon.com.br/dp/B0DM9WHXVP",
   "caldeiraojogos": "https://www.caldeiraojogos.com.br/produtos/bandida/?entry_path=category",
   "leaolivros": "https://www.leaolivros.com.br/bandida",
@@ -86,6 +125,15 @@
   "placegames": "https://www.placegames.com.br/boardgames/bim-bam-bum",
   "tabuloja": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/bim-bam-bum"
  },
+ "bla-bla-bel": {
+  "_hora": "2026-11-09T14:46-03:00",
+  "amazon": "https://www.amazon.com.br/dp/B0H9NPZ3R6",
+  "bravojogos": "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-bla-bla-bel-grok-games-p",
+  "livtoys": "https://www.livtoys.com.br/boardgames/bla-bla-bel-pre-venda",
+  "piranoboardgame": "https://piranoboardgame.com.br/jogo/bla-bla-bel",
+  "tabulerio": "https://www.tabulerio.com.br/jogos/jogos-de-carta/bla-bla-bel",
+  "tubaleria": "https://tubaleria.store/produtos/bla-bla-bel-19a7n/?entry_path=category"
+ },
  "black-stories-junior-true-stories": {
   "_hora": "2026-11-05T08:24-03:00",
   "brecholudico": "https://brecholudico.com.br/produto/historias-reais-true-stories-kids/",
@@ -111,13 +159,22 @@
   "tabuloja": "https://www.tabuloja.com/jogos-de-tabuleiro/expansoes/carcassonne-expansao-5-mensageiros-e-alcaides"
  },
  "cascadia-monumentos-naturais": {
-  "_hora": "2026-11-08T02:19-03:00",
+  "_hora": "2026-11-09T04:18-03:00",
   "alquimistasdosjogos": "https://www.alquimistasdosjogos.com.br/jogos/cascadia-monumentos-naturais-expansao",
   "amazon": "https://www.amazon.com.br/dp/B0H9NTFYGS",
   "ludostation": "https://ludostation.com.br/produtos/cascadia-monumentos-naturais-1rxky/?entry_path=category",
   "piranoboardgame": "https://piranoboardgame.com.br/jogo/cascadia-monumentos-naturais",
   "riodemeepeiroboardgames": "https://www.riodemeepeiro.com.br/produtos/cascadia-monumentos-naturais/?entry_path=category",
   "spaceboardgames": "https://www.spaceboardgames.com.br/jogos-de-tabuleiro/cascadia-monumentos-naturais"
+ },
+ "caveiras-de-sedlec": {
+  "_hora": "2026-11-09T13:46-03:00",
+  "alquimistasdosjogos": "https://www.alquimistasdosjogos.com.br/jogos/caveiras-de-sedlec",
+  "amazon": "https://www.amazon.com.br/dp/B0D79CRN8R",
+  "arcslivrosejogos": "https://www.espacoarcs.com.br/editora-de-jogos/caveiras-de-sedlec",
+  "mercadolivre": "https://www.mercadolivre.com.br/p/MLB37600574",
+  "piranoboardgame": "https://piranoboardgame.com.br/jogo/caveiras-de-sedlec",
+  "placegames": "https://www.placegames.com.br/caveiras-de-sedlec"
  },
  "civolution": {
   "_hora": "2026-11-07T13:57-03:00",
@@ -136,10 +193,10 @@
   "paladinsgames": "http://paladinsgames.com.br/produto/207210/codigo-secreto-dueto"
  },
  "coffee-rush-inverno": {
-  "_hora": "2026-11-07T13:21-03:00",
+  "_hora": "2026-11-09T14:46-03:00",
   "alquimistasdosjogos": "https://www.alquimistasdosjogos.com.br/jogos/coffee-rush-inverno",
   "amazon": "https://www.amazon.com.br/dp/B0HMJYQZTR",
-  "boardgamebarato": "https://www.boardgamebarato.com.br/coffee-rush-inverno",
+  "ludostation": "https://ludostation.com.br/produtos/coffee-rush-winter-galapagos/?entry_path=category",
   "masmorra": "https://www.masmorra.com.br/produtos/cfr201",
   "tabuloja": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/coffee-rush-inverno",
   "tavernareal": "https://www.tavernareal.com/tabuleiro/coffee-rush-inverno"
@@ -154,7 +211,7 @@
   "ludostation": "https://ludostation.com.br/produtos/covenant/?entry_path=category"
  },
  "cowboys-acelerados": {
-  "_hora": "2026-11-07T13:21-03:00",
+  "_hora": "2026-11-09T14:46-03:00",
   "animusludere": "https://www.animusludere.com.br/jogo-tabuleiro-cowboys-acelerados",
   "facilshopping": "https://www.facilshopping.com.br/produtos/cowboys-acelerados-jogo-de-cartas-ludens-spirit/?entry_path=category",
   "mercadolivre": "https://www.mercadolivre.com.br/p/MLB20565056",
@@ -181,12 +238,26 @@
   "mercadolivre": "https://www.mercadolivre.com.br/p/MLB29712665",
   "tabuloja": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/delta"
  },
+ "dino-fun": {
+  "_hora": "2026-11-09T13:46-03:00",
+  "amazon": "https://www.amazon.com.br/dp/B091V7PHXL",
+  "brecholudico": "https://brecholudico.com.br/produto/dino-fun/",
+  "brinkz": "https://www.brinkz.com.br/dino-fun",
+  "mercadolivre": "https://www.mercadolivre.com.br/p/MLB19709756",
+  "overrungeekstore": "https://overrungeek.com.br/produtos/dino-fun/?entry_path=category"
+ },
  "dino-parque": {
   "_hora": "2026-11-06T22:56-03:00",
   "alquimistasdosjogos": "https://www.alquimistasdosjogos.com.br/jogos/dino-parque",
   "facilshopping": "https://www.facilshopping.com.br/produtos/jogo-dino-parque-adoleta-jogos/?entry_path=category",
   "mercadolivre": "https://www.mercadolivre.com.br/p/MLB54239905",
   "placegames": "https://www.placegames.com.br/boardgames/dino-parque"
+ },
+ "dixit": {
+  "_hora": "2026-11-09T14:46-03:00",
+  "amazon": "https://www.amazon.com.br/dp/B0GY9HMVLF",
+  "mercadolivre": "https://www.mercadolivre.com.br/p/MLB62040241",
+  "tabulerio": "https://www.tabulerio.com.br/jogos/jogos-de-entrada/dixit"
  },
  "dobble-123": {
   "_hora": "2026-11-06T22:57-03:00",
@@ -216,6 +287,15 @@
   "mecadosjogos": "https://www.mecadosjogos.com.br/dragon-eclipse-p1149",
   "orcspace": "https://loja.orcspace.com.br/produtos/dragon-eclipse-kd9fh/?entry_path=category"
  },
+ "emblems": {
+  "_hora": "2026-11-09T14:46-03:00",
+  "alquimistasdosjogos": "https://www.alquimistasdosjogos.com.br/jogos/emblems",
+  "omniverse": "https://www.omniverse.com.br/emblems",
+  "piranoboardgame": "https://piranoboardgame.com.br/jogo/emblems",
+  "spaceboardgames": "https://www.spaceboardgames.com.br/jogos-de-tabuleiro/emblems",
+  "tabulerio": "https://www.tabulerio.com.br/jogos/linha-familia/emblems",
+  "tabuloja": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/emblems"
+ },
  "encantados": {
   "_hora": "2026-11-05T08:24-03:00",
   "facilshopping": "https://www.facilshopping.com.br/produtos/encantados/?entry_path=category",
@@ -231,7 +311,7 @@
   "tabuloja": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/escape-the-dark-castle"
  },
  "eu-vi": {
-  "_hora": "2026-11-08T05:00-03:00",
+  "_hora": "2026-11-09T07:02-03:00",
   "amazon": "https://www.amazon.com.br/dp/B0F1NH5H7G"
  },
  "everdell": {
@@ -292,7 +372,7 @@
   "spaceboardgames": "https://www.spaceboardgames.com.br/jogos-de-tabuleiro/galaxy-trucker"
  },
  "goats-goblins": {
-  "_hora": "2026-11-07T13:21-03:00",
+  "_hora": "2026-11-09T14:46-03:00",
   "alquimistasdosjogos": "https://www.alquimistasdosjogos.com.br/jogos/goats-e-goblins",
   "bravojogos": "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-goats-e-goblins-p",
   "brecholudico": "https://brecholudico.com.br/produto/goats-goblins/",
@@ -349,12 +429,17 @@
   "paladinsgames": "http://paladinsgames.com.br/produto/2217513/jekkyl-vs-hyde",
   "piranoboardgame": "https://piranoboardgame.com.br/jogo/jekyll-vs-hyde"
  },
+ "jolly-roger": {
+  "_hora": "2026-11-09T14:46-03:00",
+  "odisseiajogos": "https://www.odisseiajogos.com.br/board-games/jolly-roger",
+  "tiogera": "https://www.tiogera.com.br/jogo-jolly-roger-devir"
+ },
  "keep-the-heroes-out-playing-with-fire": {
-  "_hora": "2026-11-07T16:25-03:00",
+  "_hora": "2026-11-08T17:16-03:00",
   "riodemeepeiroboardgames": "https://www.riodemeepeiro.com.br/produtos/keep-the-heroes-out-playing-with-fire-13kp9/?entry_path=category"
  },
  "kingdom-crossing": {
-  "_hora": "2026-11-07T13:51-03:00",
+  "_hora": "2026-11-09T14:46-03:00",
   "alquimistasdosjogos": "https://www.alquimistasdosjogos.com.br/jogos/kingdom-crossing",
   "amazon": "https://www.amazon.com.br/dp/B0HFQ93PML",
   "bravojogos": "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-kingdom-crossing",
@@ -371,16 +456,15 @@
   "mercadolivre": "https://www.mercadolivre.com.br/p/MLB54292328"
  },
  "lets-go-pro-japao": {
-  "_hora": "2026-11-08T02:19-03:00",
+  "_hora": "2026-11-09T04:18-03:00",
   "amazon": "https://www.amazon.com.br/dp/B0H9P3K2HR",
   "javalijogos": "https://www.javalijogos.com.br/lets-go-pro-japao",
-  "mecadosjogos": "https://www.mecadosjogos.com.br/lets-go-pro-japao-p1177",
   "piranoboardgame": "https://piranoboardgame.com.br/jogo/let-s-go-pro-japao",
   "spaceboardgames": "https://www.spaceboardgames.com.br/jogos-de-tabuleiro/let-s-go-pro-japao",
   "tabuloja": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/let-s-go-pro-japao"
  },
  "level-10": {
-  "_hora": "2026-11-07T13:57-03:00"
+  "_hora": "2026-11-08T14:35-03:00"
  },
  "light-speed-arena": {
   "_hora": "2026-11-06T21:00-03:00",
@@ -401,7 +485,7 @@
   "tabuloja": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/loot"
  },
  "luz": {
-  "_hora": "2026-11-07T21:22-03:00",
+  "_hora": "2026-11-08T23:30-03:00",
   "alquimistasdosjogos": "https://www.alquimistasdosjogos.com.br/jogos/luz",
   "bravojogos": "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-luz-p",
   "cangaiajogos": "https://www.cangaiajogos.com.br/luz",
@@ -414,13 +498,22 @@
   "amazon": "https://www.amazon.com.br/dp/B00N9HQF0A"
  },
  "magical-athlete": {
-  "_hora": "2026-11-07T18:48-03:00",
+  "_hora": "2026-11-08T20:50-03:00",
   "alquimistasdosjogos": "https://www.alquimistasdosjogos.com.br/jogos/magical-athlete",
   "boardgamebarato": "https://www.boardgamebarato.com.br/magical-athlete",
+  "brecholudico": "https://brecholudico.com.br/produto/magical-athlete/",
   "ludostation": "https://ludostation.com.br/produtos/magical_athlete/?entry_path=category",
   "masmorra": "https://www.masmorra.com.br/produtos/mga001",
-  "tabuloja": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/magical-athlete",
-  "tavernareal": "https://www.tavernareal.com/tabuleiro/magical-athlete"
+  "tabuloja": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/magical-athlete"
+ },
+ "marcha-das-formigas": {
+  "_hora": "2026-11-09T14:46-03:00",
+  "cangaiajogos": "https://www.cangaiajogos.com.br/marcha-das-formigas",
+  "mercadolivre": "https://www.mercadolivre.com.br/p/MLB69436217",
+  "piranoboardgame": "https://piranoboardgame.com.br/jogo/marcha-das-formigas",
+  "riodemeepeiroboardgames": "https://www.riodemeepeiro.com.br/produtos/marcha-das-formigas/?entry_path=category",
+  "spaceboardgames": "https://www.spaceboardgames.com.br/jogos-de-tabuleiro/marcha-das-formigas",
+  "tabulerio": "https://www.tabulerio.com.br/jogos/expert/marcha-das-formigas"
  },
  "marrakech": {
   "_hora": "2026-11-05T20:47-03:00",
@@ -450,9 +543,18 @@
   "spaceboardgames": "https://www.spaceboardgames.com.br/jogos-de-tabuleiro/m-w-a-t"
  },
  "ninja-camp": {
-  "_hora": "2026-11-07T13:57-03:00",
+  "_hora": "2026-11-08T14:35-03:00",
   "mercadolivre": "https://www.mercadolivre.com.br/p/MLB21266530",
   "tschuss": "https://www.tschuss.com.br/jogos-de-cartas/ninja-camp"
+ },
+ "nippon-zaibatsu": {
+  "_hora": "2026-11-09T13:46-03:00",
+  "alquimistasdosjogos": "https://www.alquimistasdosjogos.com.br/jogos/nippon-zaibatsu-edicao-regular",
+  "amazon": "https://www.amazon.com.br/dp/B0GZLLBLNV",
+  "brecholudico": "https://brecholudico.com.br/produto/nippon-zaibatsu/",
+  "playeasy": "https://www.playeasy.com.br/nippon-zaibatsu",
+  "spaceboardgames": "https://www.spaceboardgames.com.br/jogos-de-tabuleiro/nippon-zaibatsu",
+  "tabuloja": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/nippon-zaibatsu"
  },
  "o-jogo-dos-sons": {
   "_hora": "2026-11-04T18:47-03:00",
@@ -470,6 +572,15 @@
   "placegames": "https://www.placegames.com.br/o-que-o-que",
   "tavernareal": "https://www.tavernareal.com/tabuleiro/o-que-o-que-promo"
  },
+ "oak": {
+  "_hora": "2026-11-09T12:16-03:00",
+  "amazon": "https://www.amazon.com.br/dp/B0B5HV11JC",
+  "boardgamebarato": "https://www.boardgamebarato.com.br/oak",
+  "borbagames": "https://www.borbagames.com.br/oak",
+  "frodosbg": "https://loja.frodosbg.com.br/oak",
+  "leaolivros": "https://www.leaolivros.com.br/oak",
+  "mercadolivre": "https://www.mercadolivre.com.br/p/MLB24866373"
+ },
  "order-overload-cafe": {
   "_hora": "2026-11-05T08:24-03:00",
   "bravojogos": "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-order-overload-cafe-p",
@@ -477,6 +588,14 @@
   "cangaiajogos": "https://www.cangaiajogos.com.br/todos-os-jogos/jogos-para-familia/order-overload-cafe-em-ingles-pre-venda",
   "dalarangames": "https://www.dalaran.com.br/order-overload-cafe-jogo-de-tabuleiro",
   "playeasy": "https://www.playeasy.com.br/order-overload-cafe-edicao-em-ingles"
+ },
+ "os-palacios-de-carrara-segunda-edicao": {
+  "_hora": "2026-11-09T13:46-03:00",
+  "amazon": "https://www.amazon.com.br/dp/B0B5HQPQDL",
+  "brecholudico": "https://brecholudico.com.br/produto/os-palacios-de-carrara-segunda-edicao/",
+  "leaolivros": "https://www.leaolivros.com.br/os-palacios-de-carrara-segunda-edicao",
+  "mercadolivre": "https://www.mercadolivre.com.br/p/MLB23246738",
+  "tabuloja": "https://www.tabuloja.com/os-palacios-de-carrara"
  },
  "paris": {
   "_hora": "2026-11-04T18:47-03:00",
@@ -519,6 +638,15 @@
   "paladinsgames": "http://paladinsgames.com.br/produto/1961389/prey-another-day",
   "playeasy": "https://www.playeasy.com.br/prey-another-day"
  },
+ "protocolo-scintilla": {
+  "_hora": "2026-11-09T14:46-03:00",
+  "alquimistasdosjogos": "https://www.alquimistasdosjogos.com.br/jogos/protocolo-scintilla",
+  "ludostation": "https://ludostation.com.br/produtos/protocolo-scintilla-1yce2/?entry_path=category",
+  "pittasboardgames": "https://www.pittasboardgames.com.br/produtos/protocolo-scintilla-12o25/?entry_path=category",
+  "playeasy": "https://www.playeasy.com.br/protocolo-scintilla",
+  "tabulerio": "https://www.tabulerio.com.br/jogos/jogos-de-tabuleiro/protocolo-scintilla",
+  "tavernareal": "https://www.tavernareal.com/tabuleiro/protocolo-scintilla"
+ },
  "reload": {
   "_hora": "2026-11-06T21:29-03:00",
   "boargames": "https://www.boargames.com.br/jogos-de-tabuleiro/boargames-medios-e-expert/reload",
@@ -537,13 +665,22 @@
   "pittasboardgames": "https://www.pittasboardgames.com.br/produtos/robinson-crusoe-edicao-de-colecionador/?entry_path=category"
  },
  "roda-de-trico": {
-  "_hora": "2026-11-08T02:19-03:00",
+  "_hora": "2026-11-09T04:18-03:00",
   "amazon": "https://www.amazon.com.br/dp/B0HBZ3TSQJ",
   "elfoscia": "https://www.elfosecia.com.br/roda-de-trico-jogo-de-tabuleiro-grokgames",
   "ludostation": "https://ludostation.com.br/produtos/roda-de-trico-1edx3/?entry_path=category",
   "riodemeepeiroboardgames": "https://www.riodemeepeiro.com.br/produtos/roda-de-trico/?entry_path=category",
   "spaceboardgames": "https://www.spaceboardgames.com.br/jogos-de-tabuleiro/roda-de-trico",
   "tabuloja": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/roda-de-trico"
+ },
+ "rorys-story-cubes-harry-potter": {
+  "_hora": "2026-11-09T14:46-03:00",
+  "alquimistasdosjogos": "https://www.alquimistasdosjogos.com.br/jogos/rory-s-story-cubes-harry-potter",
+  "amazon": "https://www.amazon.com.br/dp/B08T9W91VR",
+  "bravojogos": "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/rory-s-story-cubes-harry-potter-p",
+  "caixinhaboardgames": "https://www.caixinhaboardgames.com.br/produtos/rory-story-cubes-harry-potter/?entry_path=category",
+  "mercadolivre": "https://www.mercadolivre.com.br/p/MLB22365082",
+  "tabulerio": "https://www.tabulerio.com.br/jogos/cooperativos/rory-s-story-cubes-harry-potter"
  },
  "sagrada-as-grandes-fachadas-paixao": {
   "_hora": "2026-11-05T20:47-03:00",
@@ -564,7 +701,7 @@
   "paladinsgames": "http://paladinsgames.com.br/produto/2051438/sagrada-expansao-de-5-6-jogadores"
  },
  "santuario": {
-  "_hora": "2026-11-08T09:56-03:00",
+  "_hora": "2026-11-09T11:45-03:00",
   "alquimistasdosjogos": "https://www.alquimistasdosjogos.com.br/jogos/santuario",
   "amazon": "https://www.amazon.com.br/dp/B0GMR7DXTS",
   "guildadosjogos": "https://www.guildadosjogos.com.br/santuario",
@@ -580,7 +717,7 @@
   "playeasy": "https://www.playeasy.com.br/scythe-gambito-dos-ventos-expans-o"
  },
  "shackleton-base-uma-jornada-para-a-lua": {
-  "_hora": "2026-11-05T20:47-03:00",
+  "_hora": "2026-11-09T12:46-03:00",
   "boardgamebarato": "https://www.boardgamebarato.com.br/shackleton-base-uma-jornada-para-a-lua",
   "mercadolivre": "https://www.mercadolivre.com.br/p/MLB67012945",
   "spaceboardgames": "https://www.spaceboardgames.com.br/jogos-de-tabuleiro/shackleton-base-uma-jornada-para-a-lua",
@@ -641,6 +778,15 @@
   "playeasy": "https://www.playeasy.com.br/tainted-grail-monarcas-da-ruina",
   "spaceboardgames": "https://www.spaceboardgames.com.br/jogos-de-tabuleiro/tainted-grail-monarcas-da-ruina"
  },
+ "take-time": {
+  "_hora": "2026-11-09T11:33-03:00",
+  "amazon": "https://www.amazon.com.br/dp/B0F4BDW1NM",
+  "caixinhaboardgames": "https://www.caixinhaboardgames.com.br/produtos/take-time/?entry_path=category",
+  "cangaiajogos": "https://www.cangaiajogos.com.br/take-time",
+  "mercadolivre": "https://www.mercadolivre.com.br/p/MLB63094384",
+  "placegames": "https://www.placegames.com.br/boardgames/take-time",
+  "tabuloja": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/take-time"
+ },
  "te-toka-tiki-tiki": {
   "_hora": "2026-11-05T20:48-03:00",
   "brecholudico": "https://brecholudico.com.br/produto/te-toka-tiki-tiki/",
@@ -686,10 +832,10 @@
   "spaceboardgames": "https://www.spaceboardgames.com.br/jogos-de-tabuleiro/the-white-castle-duel"
  },
  "thesauros": {
-  "_hora": "2026-11-05T20:48-03:00",
-  "alquimistasdosjogos": "https://www.alquimistasdosjogos.com.br/jogos/thesauros",
+  "_hora": "2026-11-08T15:54-03:00",
   "facilshopping": "https://www.facilshopping.com.br/produtos/thesauros-meeple-br-10u3g/?entry_path=category",
   "mecadosjogos": "https://www.mecadosjogos.com.br/thesauros-p1486",
+  "omniverse": "https://www.omniverse.com.br/thesauros",
   "spaceboardgames": "https://www.spaceboardgames.com.br/jogos-de-tabuleiro/thesauros",
   "tabuloja": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/thesauros"
  },
@@ -724,6 +870,15 @@
   "overrungeekstore": "https://overrungeek.com.br/produtos/time-stories-revolution-a-midsummer-night/",
   "playeasy": "https://www.playeasy.com.br/time-stories-revolution-a-midsummer-night"
  },
+ "trolls-princesas": {
+  "_hora": "2026-11-09T12:16-03:00",
+  "amazon": "https://www.amazon.com.br/dp/B0CQ9WSYLW",
+  "boardgamebarato": "https://www.boardgamebarato.com.br/trolls-e-princesas",
+  "caixinhaboardgames": "https://www.caixinhaboardgames.com.br/produtos/trolls-e-princesas/?entry_path=category",
+  "leaolivros": "https://www.leaolivros.com.br/trolls-princesas",
+  "mercadolivre": "https://www.mercadolivre.com.br/p/MLB29147258",
+  "tabuloja": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/trolls-e-princesas"
+ },
  "twilight-struggle": {
   "_hora": "2026-11-05T23:23-03:00",
   "alquimistasdosjogos": "https://www.alquimistasdosjogos.com.br/twilight-struggle-a-guerra-fria",
@@ -733,9 +888,33 @@
   "ludostation": "https://ludostation.com.br/produtos/twilight-struggle-f2c2s/?entry_path=category",
   "mercadolivre": "https://www.mercadolivre.com.br/p/MLB19710157"
  },
+ "valheim-the-board-game": {
+  "_hora": "2026-11-09T14:46-03:00",
+  "pittasboardgames": "https://www.pittasboardgames.com.br/produtos/valheim-edicao-deluxe-189vy/?entry_path=category",
+  "spaceboardgames": "https://www.spaceboardgames.com.br/jogos-de-tabuleiro/valheim",
+  "tabulerio": "https://www.tabulerio.com.br/pre-venda/valheim-edicao-deluxe",
+  "tabuloja": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/valheim-edicao-deluxe",
+  "tavernareal": "https://www.tavernareal.com/tabuleiro/valheim-edicao-deluxe"
+ },
  "village-big-box": {
   "_hora": "2026-11-06T11:32-03:00",
   "galapagosjogos": "https://www.mundogalapagos.com.br/village-big-box-edicao-em-ingles/produto/VLG001"
+ },
+ "voidfall": {
+  "_hora": "2026-11-09T12:16-03:00",
+  "amazon": "https://www.amazon.com.br/dp/B0CP88NPNT",
+  "boardgamebarato": "https://www.boardgamebarato.com.br/voidfall",
+  "borbagames": "https://www.borbagames.com.br/voidfall",
+  "mercadolivre": "https://www.mercadolivre.com.br/p/MLB46544417",
+  "playeasy": "https://www.playeasy.com.br/voidfall"
+ },
+ "wingspan-expansao-europa": {
+  "_hora": "2026-11-09T13:46-03:00",
+  "amazon": "https://www.amazon.com.br/dp/B07YQ6FS8G",
+  "boardgamebarato": "https://www.boardgamebarato.com.br/wingspan-expansao-europa",
+  "brecholudico": "https://brecholudico.com.br/produto/wingspan-expansao-europa/",
+  "mercadolivre": "https://www.mercadolivre.com.br/p/MLB66570073",
+  "tabuloja": "https://www.tabuloja.com/board-games/expansoes/wingspan-expansao-europa"
  },
  "wonderlands-war-fragmentos-de-loucura": {
   "_hora": "2026-11-04T18:48-03:00",

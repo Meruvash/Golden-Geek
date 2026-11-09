@@ -1,0 +1,31 @@
+{
+ "slug": "bubble-stories",
+ "usar_na_pagina": true,
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 1024,
+   "altura": 768,
+   "editora": "Blue Orange",
+   "credito": "Imagem: Blue Orange",
+   "pagina": "https://blueorangegames.eu/fr/jeux/bubble-stories/",
+   "imagem": "https://blueorangegames.eu/wp-content/uploads/2024/02/BubbleStories-3DBox.jpg",
+   "baixada_em": "2026-11-09",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 1024,
+   "altura": 683,
+   "editora": "Blue Orange",
+   "credito": "Imagem: Blue Orange",
+   "pagina": "https://blueorangegames.eu/fr/jeux/bubble-stories/",
+   "imagem": "https://blueorangegames.eu/wp-content/uploads/2021/11/BubbleStories-Components-5.jpg",
+   "baixada_em": "2026-11-09",
+   "aprovada": true,
+   "principal": true
+  }
+ ]
+}

@@ -1,0 +1,31 @@
+{
+ "slug": "isle-of-skye",
+ "usar_na_pagina": true,
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 634,
+   "altura": 1000,
+   "editora": "Lookout Games",
+   "credito": "Imagem: Lookout Games",
+   "pagina": "https://www.lookout-spiele.de/de/games/isleofskye.html",
+   "imagem": "https://www.lookout-spiele.de/upload/de_isleofskye.html_GalleryImage.png",
+   "baixada_em": "2026-11-09",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/mesa-1.webp",
+   "tipo": "mesa",
+   "largura": 900,
+   "altura": 600,
+   "editora": "Lookout Games",
+   "credito": "Imagem: Lookout Games",
+   "pagina": "https://www.lookout-spiele.de/de/games/isleofskye.html",
+   "imagem": "https://www.lookout-spiele.de/upload/de_isleofskye.html_GalleryImage_2.jpg",
+   "baixada_em": "2026-11-09",
+   "aprovada": true,
+   "principal": true
+  }
+ ]
+}

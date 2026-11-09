@@ -1,0 +1,335 @@
+{
+ "slug": "mysterium-kids",
+ "jogo": "Mysterium Kids",
+ "cor": "#5b3f8c",
+ "kicker": "Resenha · Cooperativo infantil de sons",
+ "og_titulo": "Mysterium Kids vale a pena? Resenha Elite Boardgamers",
+ "titulo_busca": "Mysterium Kids: resenha do Kinderspiel 2023 tocado no pandeiro",
+ "descricao": "Resenha de Mysterium Kids, vencedor do Kinderspiel des Jahres 2023: como o fantasma dá pistas num pandeiro, para quem é e como importar.",
+ "titulo_html": "O júri premiou <span>Mysterium Kids</span>, mas quem levou o troféu para casa foi o pandeiro",
+ "lede": "Mysterium Kids é a versão infantil de Mysterium: um cooperativo de 2 a 6 jogadores, a partir de 6 anos, em que o fantasma não mostra cartas ilustradas, só faz barulho num pandeiro. Venceu o Kinderspiel des Jahres 2023. E a gente desconfia de quem foi o voto decisivo: o próprio júri escreveu que o pandeiro fascina as crianças na hora. O resto da caixa é bom, mas trabalha para ele. Uma pista do veredito: o problema não está no jogo, está na prateleira das lojas brasileiras.",
+ "tags": [
+  "2–6 jogadores",
+  "20 min",
+  "6+",
+  "Cooperativo",
+  "Dedução por sons"
+ ],
+ "alt": "Crianças à mesa com o tabuleiro da mansão de Mysterium Kids, cartas de ruído ilustradas nos cômodos e o pandeiro do fantasma",
+ "premiacoes": [
+  {
+   "premio": "Kinderspiel des Jahres",
+   "ano": 2023,
+   "categoria": "Kinderspiel des Jahres",
+   "colocacao": 1,
+   "resultado": "vencedor",
+   "fonte": "https://en.wikipedia.org/wiki/Spiel_des_Jahres",
+   "rotulo": "Vencedor"
+  }
+ ],
+ "ficha": [
+  [
+   "Ano",
+   "2022 (lançamento em outubro, segundo a Zatu)"
+  ],
+  [
+   "Designers",
+   "Antonin Boccara e Yves Hirschfeld"
+  ],
+  [
+   "Arte",
+   "Olivier Danchin"
+  ],
+  [
+   "Editora original",
+   "Libellud e Space Cow, com distribuição da Asmodee"
+  ],
+  [
+   "Editora no Brasil",
+   "edição nacional não encontrada nas fontes consultadas até 09/11/2026"
+  ],
+  [
+   "Jogadores",
+   "2 a 6"
+  ],
+  [
+   "Duração anunciada",
+   "21 minutos (manual); cerca de 20 minutos (Spiel des Jahres)"
+  ],
+  [
+   "Idade",
+   "6+"
+  ],
+  [
+   "Nota BGG",
+   "cerca de 6,7 com 447 avaliações, posição 6.907 no ranking (sites que replicam o BGG)"
+  ],
+  [
+   "Peso BGG",
+   "cerca de 1,1 / 5"
+  ],
+  [
+   "Nota Ludopedia",
+   "não confirmado nas fontes consultadas"
+  ],
+  [
+   "Idioma",
+   "cartas só com ilustração; o texto fica no manual"
+  ],
+  [
+   "Componentes",
+   "tabuleiro da mansão, tabuleiro de rodadas de dupla face (noite calma e noite de tempestade), marcador de Lua, 78 cartas de Ruído, 10 peças de Tesouro, 5 fichas de Fantasma e 1 pandeiro"
+  ],
+  [
+   "Versão digital",
+   "não confirmado nas fontes consultadas"
+  ],
+  [
+   "Prêmios",
+   "Kinderspiel des Jahres 2023"
+  ]
+ ],
+ "nota_ficha": "Nota, número de avaliações, posição e peso do BGG vêm de sites que replicam o BoardGameGeek (King Panda Games e BoardGameMatcher), porque o BGG e a Ludopedia bloqueiam acesso automatizado. Preços e disponibilidade consultados em 09/11/2026.",
+ "como_funciona": [
+  "Os jogadores passam a noite numa mansão abandonada atrás do tesouro do Capitão Eco, um fantasma que não fala, mas toca pandeiro. Todos jogam juntos contra o relógio: o objetivo é revelar o máximo de peças de Tesouro antes que a Lua atravesse o céu e a noite acabe.",
+  "Na preparação, cada um dos cinco cômodos do tabuleiro da mansão recebe uma carta de Ruído virada para cima. Cada carta mostra uma cena que faz barulho, como um gato arranhando a parede ou um ancinho no chão. O jogador mais velho começa como Fantasma, com o pandeiro e as cinco fichas de Fantasma, numeradas como os cômodos.",
+  "Na rodada, o Fantasma sorteia uma ficha em segredo: o número indica a carta que ele precisa fazer o grupo adivinhar. Os outros fecham os olhos ou viram de costas. O Fantasma diz \"Buuu\", faz sons com o pandeiro (bater, raspar, deslizar, mudar o ritmo) e encerra com outro \"Buuu\". Ele não pode falar nem fazer gestos.",
+  "O grupo abre os olhos, discute e escolhe uma carta; sem acordo, decide quem está à esquerda do Fantasma. Se a escolha bater com a ficha, o grupo vira uma peça de Tesouro. Algumas peças trazem só meio tesouro e precisam da outra metade para formar a estrela. Em algumas rodadas, a trilha da Lua pede duas cartas seguidas na mesma vez.",
+  "No fim da rodada, a Lua avança um espaço, as cartas da mansão saem e o pandeiro passa para a esquerda, junto com o papel de Fantasma. Quando a Lua chega ao último espaço, joga-se a rodada final e conta-se um ponto por estrela completa. O lado noite de tempestade do tabuleiro, com três tesouros a mais, deixa a partida mais difícil."
+ ],
+ "passos": [
+  [
+   "MONTE A MANSÃO",
+   "Ponha uma carta de Ruído virada para cima em cada um dos cinco cômodos numerados do tabuleiro da mansão e prepare a pilha de Tesouros."
+  ],
+  [
+   "SORTEIE A FICHA",
+   "O Fantasma da rodada sorteia em segredo uma das cinco fichas de Fantasma. O número dela indica a carta que o grupo precisa adivinhar."
+  ],
+  [
+   "TOQUE O PANDEIRO",
+   "Com os outros de olhos fechados, o Fantasma diz \"Buuu\", faz sons no pandeiro sem falar nem gesticular e fecha com outro \"Buuu\"."
+  ],
+  [
+   "ESCOLHAM JUNTOS",
+   "O grupo abre os olhos, discute os sons e aponta uma carta. Acertou o número da ficha, vira uma peça de Tesouro da pilha."
+  ],
+  [
+   "AVANCE A LUA",
+   "A Lua anda um espaço e o pandeiro passa para a esquerda. Depois da rodada final, cada estrela completa nos Tesouros vale um ponto."
+  ]
+ ],
+ "como_resumo": "Um fantasma faz barulho num pandeiro e o grupo adivinha qual das cinco cartas ele quis dizer.",
+ "perfil": [
+  [
+   "Facilidade de ensinar",
+   5
+  ],
+  [
+   "Conversa na mesa",
+   5
+  ],
+  [
+   "Partida curta",
+   5
+  ],
+  [
+   "Pandeiro e componentes",
+   4
+  ],
+  [
+   "Fôlego a longo prazo",
+   2
+  ],
+  [
+   "Desafio para adultos",
+   2
+  ]
+ ],
+ "experiencia": [
+  "A primeira coisa que acontece é previsível: alguém pega o pandeiro antes da explicação terminar. A segunda é a melhor do jogo. O Fantasma sorteia a ficha 5, olha para o gato que arranha a parede e descobre que não existe miado de pandeiro. Então raspa a pele com a unha, devagar, enquanto quatro pessoas de olhos fechados seguram o riso.",
+  "Depois vem o debate, e é ali que o jogo mostra por que ganhou. O grupo fica entre o ancinho e o gato. Alguém argumenta que ancinho seria um som mais repetitivo, como no exemplo do próprio manual, e o gato vence. Ryan Billingsley, do Dad Suggests, conta que a criança mais nova da mesa fica em pé de igualdade com os adultos, e é verdade: interpretar um barulho não exige ler, contar nem ter seis anos de experiência em jogos.",
+  "Em vinte minutos acabou, e a mesa pede outra. A família do Dad Suggests jogou pelo menos cinco vezes seguidas na primeira noite. A gente entende. É um jogo inteiro que cabe no intervalo do desenho animado."
+ ],
+ "citacao": {
+  "texto": "O pandeiro fascina as crianças na hora.",
+  "fonte": "júri do Spiel des Jahres (tradução livre)"
+ },
+ "funciona": [
+  [
+   "Um pandeiro como linguagem",
+   "Em vez das cartas de visão do Mysterium original, o Fantasma só tem sons: bater, raspar, deslizar, mudar o ritmo. O júri do Spiel des Jahres diz que o desafio de criar o barulho certo e ouvir com atenção cria um clima único, e Matthew Bailey, do Little Board Gamers, que não costuma gostar do Mysterium adulto, se surpreendeu com o quanto gostou deste."
+  ],
+  [
+   "Criança e adulto no mesmo nível",
+   "Ninguém precisa ler, fazer conta ou conhecer jogos para acertar um barulho de gato. Ryan Billingsley, do Dad Suggests, escreve que até o mais novo da mesa joga em pé de igualdade, e diz que explica as regras para um estreante em uns 30 segundos."
+  ],
+  [
+   "Fantasma em rodízio",
+   "O pandeiro troca de mãos a cada rodada, então todo mundo é Fantasma pelo menos uma vez numa partida cheia. Abbey Roberts, da Zatu, nota que esse rodízio ajuda a evitar briga entre irmãos pelo papel mais divertido, um problema real de qualquer jogo infantil com um personagem especial."
+  ],
+  [
+   "Cooperação sem chefe",
+   "O grupo ganha ou perde junto, e a discussão depois dos sons é a parte central da rodada. Quando ninguém concorda, a regra resolve: decide quem está à esquerda do Fantasma. O júri do Spiel des Jahres destaca a alegria do grupo ao descobrir junto qual era o objeto procurado."
+  ],
+  [
+   "Dificuldade em dois lados",
+   "O tabuleiro de rodadas tem um lado de noite calma, com 7 peças de Tesouro e até 9 pontos, e um de noite de tempestade, com 10 peças e até 13 pontos. Assim o mesmo jogo serve para a criança de 6 anos e para o irmão de 9 sem regra nova."
+  ],
+  [
+   "Caixa que não chacoalha",
+   "Abbey Roberts, da Zatu, elogia o encarte que segura todas as peças sem nada solto, e dá ao jogo 90%. Parece detalhe até a primeira vez que uma caixa infantil vira de cabeça para baixo no carro com 78 cartas e cinco fichas dentro."
+  ]
+ ],
+ "atencao": [
+  [
+   "Moderada",
+   "Edição nacional não encontrada até 09/11/2026",
+   "Não encontramos edição brasileira: a Amazon brasileira não lista o jogo e não o achamos no ComparaJogos. O texto fica só no manual, então a versão em inglês funciona à mesa, mas comprar exige importação. O vencedor do prêmio infantil de 2023 segue, em 2026, como um jogo que a criança brasileira conhece de vídeo."
+  ],
+  [
+   "Moderada",
+   "Quatro batidas, sala quatro",
+   "O Geeks Under Grace aponta que dá para burlar o sistema batendo no pandeiro quatro vezes para indicar uma carta. Fichas e cômodos são numerados de 1 a 5, e a regra só proíbe falar e gesticular. A partir daí o jogo de interpretar sons vira um jogo de contar, e cabe ao adulto combinar antes que contar não vale."
+  ],
+  [
+   "Moderada",
+   "Ruído que se repete",
+   "Matthew Bailey, do Little Board Gamers, notou que cartas repetidas tornam o palpite óbvio: o Fantasma refaz o mesmo som da partida anterior e o grupo acerta de memória. Ele mesmo duvida da rejogabilidade a longo prazo. Com 78 cartas e cinco por rodada, a família que joga toda noite logo tem o seu dicionário de barulhos."
+  ],
+  [
+   "Leve",
+   "Fôlego curto fora dos 6 a 8 anos",
+   "Para o Roll to Review, o jogo é uma ótima escolha para crianças de 6 a 8 anos, mas falta fôlego para jogadores mais velhos ou experientes. O adulto se diverte na primeira noite. Na décima, ele se pega torcendo para ser o Fantasma só para poder ficar de olhos abertos."
+  ],
+  [
+   "Leve",
+   "Difícil na ponta mais nova",
+   "Abbey Roberts, da Zatu, lista como ponto fraco que o jogo pode ser difícil para quem está no limite de baixo da faixa de 6 anos. Ficar de olhos fechados, criar um som sem falar e esperar a vez pedem paciência. O manual sugere virar de costas para quem não consegue manter os olhos fechados."
+  ]
+ ],
+ "jogadores": [
+  [
+   "2 jogadores",
+   "Funciona, mas a discussão some: um faz o som e o outro adivinha sozinho, sem ninguém para defender o ancinho.",
+   2
+  ],
+  [
+   "3 a 4 jogadores",
+   "A família do Dad Suggests jogou com quatro. Sobra gente para discordar, e numa partida de seis rodadas alguns viram Fantasma duas vezes.",
+   3
+  ],
+  [
+   "5 a 6 jogadores",
+   "Com seis, cada um é Fantasma uma vez na partida, segundo o Dad Suggests. O debate ganha força, e o volume da sala também.",
+   3
+  ]
+ ],
+ "primeira_partida": "A explicação leva menos de cinco minutos; Ryan Billingsley, do Dad Suggests, fala em 30 segundos. Comece pelo lado de noite calma do tabuleiro de rodadas, com as 7 peças de Tesouro sem o símbolo de tempestade. O que mais confunde é a rodada de duas cartas: o Fantasma dá as pistas das duas fichas seguidas, separadas por um \"Buuu\". Dica prática: combine antes que bater o número do cômodo não vale, e deixe a criança mais nova virar de costas em vez de fechar os olhos.",
+ "edicao_nacional": "Não encontramos edição brasileira de Mysterium Kids: em 09/11/2026, a Amazon brasileira não listava o jogo, e não o achamos no ComparaJogos, embora a Asmodee distribua o jogo lá fora. Lá fora, o júri do Spiel des Jahres indica preço de cerca de 28 euros, e a loja da Asmodee nos Estados Unidos cobrava US$ 36,99. As cartas não têm texto, então a edição em inglês funciona, com o manual traduzido em casa.",
+ "preco_ref": {
+  "faixa": "sem preço em lojas brasileiras",
+  "data": "09/11/2026",
+  "obs": "edição nacional não encontrada até 09/11/2026; cerca de 28 euros na Alemanha (Spiel des Jahres) e US$ 36,99 na loja da Asmodee dos EUA"
+ },
+ "versoes": "Não encontramos expansão nem versão digital de Mysterium Kids nas fontes consultadas. A família tem outros dois jogos: o Mysterium original, de 2 a 7 jogadores e 10+, que tem edição em português da Asmodee e expansões como Secrets and Lies, e Mysterium Park, versão mais curta, também para 10+. Para crianças abaixo de 10 anos, o Kids é a única porta de entrada.",
+ "comparacoes": [
+  [
+   "Dragomino",
+   "dragomino",
+   "Outro vencedor do Kinderspiel des Jahres, de 2021, para crianças a partir de 5 anos. É competitivo e de encaixar peças, para a família que prefere tabuleiro a barulho."
+  ],
+  [
+   "Só Uma",
+   "just-one",
+   "Mesmo esqueleto cooperativo: um grupo dá pistas e alguém adivinha. Só Uma usa palavras escritas e pede leitura, então é o passo seguinte quando a criança já lê com folga."
+  ],
+  [
+   "The Mind",
+   "the-mind",
+   "Outro cooperativo de comunicação proibida, em que ninguém pode falar. Lá o silêncio é tenso e o jogo é para adultos; aqui o silêncio vira barulho e o jogo é para criança."
+  ]
+ ],
+ "para_quem": [
+  "Tem filhos de 6 a 9 anos que ainda não leem com folga",
+  "Cansou de perder de propósito para o filho ganhar",
+  "Gosta de cooperativo em que a conversa é a jogada",
+  "Joga com grupos de 3 a 6 que gostam de fazer barulho",
+  "Topa importar uma caixa de cerca de US$ 37"
+ ],
+ "nao_e_para": [
+  "Procura um Mysterium para adultos, com as cartas de visão",
+  "Quer comprar na loja da esquina, em português",
+  "Joga sempre em dois",
+  "Mora em apartamento com vizinho que dorme cedo"
+ ],
+ "selo": "Recomendado com ressalva",
+ "ressalva": "só importado",
+ "melhor_para": "cooperativo",
+ "veredito": "A tese da gente: o Kinderspiel des Jahres 2023 foi para um pandeiro, e o júri estava certo. O resto da caixa existe para dar regras a ele, e faz isso bem. Cinco cartas na mansão, uma ficha secreta, nenhuma palavra, e a criança de 6 anos joga de igual para igual com o adulto. Pesam o atalho de bater o número do cômodo, as cartas que se repetem em quem joga toda noite e o fôlego curto para quem passou dos 9 anos. E pesa, sobretudo, a falta de edição brasileira. Mysterium Kids é a prova de que o melhor componente de um jogo infantil pode ser um instrumento de percussão. Se você conseguir importar, compre. Se não, o seu filho já tem uma panela e uma colher.",
+ "tagline": "Tente fazer o barulho de um gato num pandeiro sem miar. Agora perca para uma criança de seis anos que conseguiu.",
+ "consulta": "09/11/2026",
+ "fontes": [
+  [
+   "Libellud – Mysterium Kids: manual (inglês, PDF)",
+   "https://cdn.svc.asmodee.net/production-libellud/uploads/2022/08/MYSTKIDS_RULES_EN_LD.pdf",
+   "regras, componentes, pontuação, créditos"
+  ],
+  [
+   "Spiel des Jahres – Mysterium Kids",
+   "https://www.spiel-des-jahres.de/spiele/mysterium-kids/",
+   "crítica do júri, prêmio, ficha, preço na Alemanha"
+  ],
+  [
+   "Spiel des Jahres – Mysterium Kids (inglês)",
+   "https://www.spiel-des-jahres.de/en/games/mysterium-kids/",
+   "crítica do júri em inglês"
+  ],
+  [
+   "Zatu – Mysterium Kids review",
+   "https://zatu.com/en-us/blogs/reviews/mysterium-kids-review",
+   "crítica de Abbey Roberts, componentes, lançamento"
+  ],
+  [
+   "Little Board Gamers – Mysterium Kids",
+   "https://littleboardgamers.com/mysterium-kids-captain-echos-treasure/",
+   "crítica de Matthew Bailey, rejogabilidade"
+  ],
+  [
+   "Dad Suggests – Mysterium Kids is a Ghostly Good Time",
+   "https://www.dadsuggests.com/home/mysterium-kids",
+   "crítica de Ryan Billingsley, rodadas, idade"
+  ],
+  [
+   "Geeks Under Grace – Mysterium Kids review",
+   "https://www.geeksundergrace.com/tabletop/review-mysterium-kids-captain-echos-treasure/",
+   "crítica, atalho do número do cômodo (via busca)"
+  ],
+  [
+   "Roll to Review – guia de compra de Mysterium",
+   "https://rolltoreview.com/the-ultimate-mysterium-buyers-guide/",
+   "faixa etária ideal, fôlego para jogadores experientes"
+  ],
+  [
+   "King Panda Games – versões de Mysterium",
+   "https://www.kingpandagames.com/mysterium-versions/",
+   "nota e avaliações do BGG replicadas, comparação entre versões"
+  ],
+  [
+   "BoardGameMatcher – Mysterium Kids",
+   "https://boardgamematcher.com/game/mysterium-kids-captain-echo's-treasure",
+   "posição e peso do BGG replicados"
+  ],
+  [
+   "Asmodee (EUA) – Mysterium Kids: Captain Echo's Treasure",
+   "https://store.asmodee.com/products/mysterium-kids-captain-echos-treasure",
+   "preço nos Estados Unidos"
+  ],
+  [
+   "Amazon.com.br – busca por Mysterium Kids",
+   "https://www.amazon.com.br/s?k=mysterium+kids",
+   "ausência do jogo em loja brasileira"
+  ]
+ ],
+ "legenda": "O prêmio infantil de 2023 foi para um jogo. Mas quem brilha na mesa é o pandeiro. 🥁\n\nMysterium Kids venceu o Kinderspiel des Jahres 2023.\nUm fantasma que não fala faz barulho num pandeiro, e o grupo, de olhos fechados, tenta adivinhar qual das cinco cartas da mansão ele quis dizer. De 2 a 6 jogadores, a partir de 6 anos, em cerca de 20 minutos.\nNão encontramos edição nacional até 09/11/2026; lá fora, US$ 36,99 na loja da Asmodee dos EUA (09/11/2026).\nVeredito: RECOMENDADO COM RESSALVA. Criança e adulto jogam de igual para igual, mas é preciso importar.\n\nQual barulho você faria para um gato sem miar? 👇\nResenha completa no link da bio.\n\n#MysteriumKids #Mysterium #JogosDeTabuleiro #BoardGames #JogosInfantis #KinderspielDesJahres #JogoCooperativo #Libellud #EliteBoardgamers #Boardgamer"
+}
