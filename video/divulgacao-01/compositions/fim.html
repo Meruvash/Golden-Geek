@@ -1,0 +1,43 @@
+<template>
+  <style>
+    @font-face { font-family: "Public Sans"; src: url("assets/fonts/public-sans.woff2") format("woff2"); font-weight: 100 900; }
+    #root { position: absolute; inset: 0; overflow: hidden; background: #0b0c0f; }
+    #fim-glow {
+      position: absolute; left: -200px; right: -200px; top: 300px; height: 900px;
+      background: radial-gradient(closest-side, rgba(233,139,30,.22), rgba(233,139,30,0));
+    }
+    #fim-logo { position: absolute; left: 50%; top: 520px; width: 472px; margin-left: -236px; }
+    #fim-logo img { width: 472px; display: block; }
+    #fim-site {
+      position: absolute; left: 60px; right: 60px; top: 820px; text-align: center;
+      font-family: "Public Sans", sans-serif; font-weight: 800; font-size: 62px; color: #f5efe8; letter-spacing: -0.01em;
+    }
+    #fim-cta {
+      position: absolute; left: 50%; top: 950px; transform: translateX(-50%);
+      font-family: "Public Sans", sans-serif; font-weight: 800; font-size: 46px; color: #0b0c0f;
+      background: #e98b1e; padding: 26px 56px; border-radius: 999px; white-space: nowrap;
+    }
+    #fim-handle {
+      position: absolute; left: 60px; right: 60px; top: 1110px; text-align: center;
+      font-family: "Public Sans", sans-serif; font-weight: 600; font-size: 44px; color: #a1a9b5;
+    }
+  </style>
+  <div id="root" data-composition-id="fim" data-width="1080" data-height="1920">
+    <div id="fim-glow" data-layout-ignore></div>
+    <div id="fim-logo"><img id="fim-logo-img" src="assets/img/logo.webp" alt="Elite Boardgamers" /></div>
+    <div id="fim-site" data-var-text="site">eliteboardgamers.com.br</div>
+    <div id="fim-ctawrap"><div id="fim-cta">Link na bio</div></div>
+    <div id="fim-handle" data-var-text="handle">@eliteboardgamers</div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#fim-glow", { opacity: 0 }, { opacity: 1, duration: 0.8, ease: "power2.inOut" }, 0);
+    // The mark is performed: it lands slightly large with a premium spring (no bounce on opacity).
+    tl.fromTo("#fim-logo", { opacity: 0, scale: 1.35, filter: "blur(16px)" },
+      { opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.7, ease: "expo.out" }, 0.15);
+    tl.fromTo("#fim-site", { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.2, ease: "power4.out" }, 0.75);
+    tl.fromTo("#fim-ctawrap", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.6, ease: "back.out(1.4)" }, 1.0);
+    tl.fromTo("#fim-handle", { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "power2.out" }, 1.25);
+    window.__timelines["fim"] = tl;
+  </script>
+</template>

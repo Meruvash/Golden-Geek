@@ -1,0 +1,57 @@
+<template>
+  <style>
+    @font-face { font-family: "Public Sans"; src: url("assets/fonts/public-sans.woff2") format("woff2"); font-weight: 100 900; }
+    #root { position: absolute; inset: 0; overflow: hidden; background: #0b0c0f; }
+    #inf-stage { position: absolute; inset: 0; }
+    #inf-cam {
+      position: absolute; left: 60px; top: 560px; width: 960px; height: 960px;
+      transform-origin: 0 0;
+    }
+    #inf-img {
+      width: 960px; height: 960px; display: block; border-radius: 18px;
+      box-shadow: 0 40px 120px rgba(0,0,0,.6), 0 0 0 2px rgba(233,139,30,.35);
+    }
+    .inf-cap {
+      position: absolute; left: 90px; right: 90px; top: 250px;
+      font-family: "Archivo Black", sans-serif; text-transform: uppercase;
+      font-size: 84px; line-height: 1.02; letter-spacing: -0.01em; color: #f5efe8;
+    }
+    .inf-cap .acc { color: #e98b1e; }
+    .inf-cap .w { display: inline-block; }
+    #inf-capbg {
+      position: absolute; left: 0; right: 0; top: 0; height: 600px;
+      background: linear-gradient(180deg, rgba(11,12,15,1) 0%, rgba(11,12,15,1) 76%, rgba(11,12,15,0) 100%);
+    }
+  </style>
+  <div id="root" data-composition-id="infografico" data-width="1080" data-height="1920">
+    <div id="inf-stage">
+      <div id="inf-cam"><img id="inf-img" src="assets/img/infografico-wingspan.webp" alt="Infográfico de Wingspan" /></div>
+    </div>
+    <div id="inf-capbg"></div>
+    <div id="inf-c1" class="inf-cap clip" data-start="0" data-duration="2.15"><span class="w">Cada</span> <span class="w">jogo</span> <span class="w">vira</span> <span class="w">um</span> <span class="w acc">infográfico</span></div>
+    <div id="inf-c2" class="inf-cap clip" data-start="2.15" data-duration="1.7"><span class="w">Pontos</span> <span class="w">fortes</span> <span class="w">e</span> <span class="w acc">de</span> <span class="w acc">atenção</span></div>
+    <div id="inf-c3" class="inf-cap clip" data-start="3.85" data-duration="2.75"><span class="w">E</span> <span class="w">um</span> <span class="w acc">veredito</span> <span class="w">direto.</span></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    // Card arrives on a long tail.
+    tl.fromTo("#inf-cam", { x: 0, y: 380, scale: 1, opacity: 0, rotation: 0 },
+      { y: 0, opacity: 1, duration: 0.7, ease: "expo.out" }, 0);
+    tl.fromTo("#inf-c1 .w", { opacity: 0, filter: "blur(6px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.13, stagger: 0.067, ease: "power4.out" }, 0.3);
+
+    // Camera: centre a point of the card at (540, 1000).  x = 480 - s*px, y = 440 - s*py
+    // Punch-in 1: pontos fortes / atenção (card point 318, 764), s = 1.7
+    tl.to("#inf-cam", { x: -61, y: -859, scale: 1.7, duration: 0.55, ease: "power2.inOut" }, 2.0);
+    tl.fromTo("#inf-c2 .w", { opacity: 0, filter: "blur(6px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.13, stagger: 0.067, ease: "power4.out" }, 2.2);
+
+    // Punch-in 2: veredito (card point 654, 894), s = 1.75
+    tl.to("#inf-cam", { x: -664, y: -1124, scale: 1.75, duration: 0.55, ease: "power2.inOut" }, 3.7);
+    tl.fromTo("#inf-c3 .w", { opacity: 0, filter: "blur(6px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.13, stagger: 0.067, ease: "power4.out" }, 3.9);
+
+    // Pull back to the whole card, then the card drops away fast.
+    tl.to("#inf-cam", { x: 0, y: 0, scale: 1, duration: 0.6, ease: "power2.inOut" }, 5.25);
+    tl.to("#inf-cam", { y: -1300, opacity: 0, filter: "blur(14px)", duration: 0.32, ease: "power3.in" }, 6.25);
+    tl.to("#inf-c3 .w", { opacity: 0, filter: "blur(8px)", duration: 0.15, stagger: 0.03, ease: "power3.in" }, 6.2);
+    window.__timelines["infografico"] = tl;
+  </script>
+</template>

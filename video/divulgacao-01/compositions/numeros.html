@@ -1,0 +1,54 @@
+<template>
+  <style>
+    @font-face { font-family: "Public Sans"; src: url("assets/fonts/public-sans.woff2") format("woff2"); font-weight: 100 900; }
+    #root { position: absolute; inset: 0; overflow: hidden; background: #0b0c0f; }
+    .num-row { position: absolute; left: 90px; right: 90px; display: flex; align-items: baseline; gap: 34px; }
+    #num-r1 { top: 330px; }
+    #num-r2 { top: 610px; }
+    #num-r3 { top: 890px; }
+    .num-big {
+      font-family: "Archivo Black", sans-serif; font-size: 210px; line-height: 1; color: #e98b1e;
+      min-width: 300px; font-variant-numeric: tabular-nums;
+    }
+    .num-lbl {
+      font-family: "Public Sans", sans-serif; font-weight: 700; font-size: 54px; line-height: 1.1; color: #f5efe8;
+    }
+    .num-lbl small { display: block; font-weight: 500; font-size: 40px; color: #a1a9b5; margin-top: 6px; }
+    #num-r3 .num-big { font-size: 150px; }
+    #num-rule { position: absolute; left: 90px; right: 90px; top: 1150px; height: 3px; background: #262a32; transform-origin: 0 50%; }
+    #num-foot {
+      position: absolute; left: 90px; right: 90px; top: 1190px;
+      font-family: "Public Sans", sans-serif; font-weight: 600; font-size: 46px; color: #e3b23c;
+    }
+  </style>
+  <div id="root" data-composition-id="numeros" data-width="1080" data-height="1920">
+    <div id="num-r1" class="num-row"><span id="num-n1" class="num-big">74</span><span class="num-lbl">resenhas<small>de jogos premiados</small></span></div>
+    <div id="num-r2" class="num-row"><span id="num-n2" class="num-big">36</span><span class="num-lbl">guias de<br />Como Jogar</span></div>
+    <div id="num-r3" class="num-row"><span class="num-big">Todo dia</span></div>
+    <div id="num-r3b" class="num-row" style="top: 1060px"><span class="num-lbl" style="font-size:50px">notícias do mundo dos tabuleiros</span></div>
+    <div id="num-rule"></div>
+    <div id="num-foot">Todo número com fonte e data.</div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    const vars = (window.__hyperframes && window.__hyperframes.getVariables && window.__hyperframes.getVariables()) || {};
+    const n1 = Number(vars["num-resenhas"] ?? 74);
+    const n2 = Number(vars["num-tutoriais"] ?? 36);
+    const c1 = { v: 0 }, c2 = { v: 0 };
+    const e1 = document.querySelector("#num-n1"), e2 = document.querySelector("#num-n2");
+    e1.textContent = n1; e2.textContent = n2;
+    // Counters tick up as a pure function of timeline time.
+    tl.fromTo(c1, { v: 0 }, { v: n1, duration: 0.9, ease: "power3.out", onUpdate: () => (e1.textContent = Math.round(c1.v)) }, 0.15);
+    tl.fromTo(c2, { v: 0 }, { v: n2, duration: 0.9, ease: "power3.out", onUpdate: () => (e2.textContent = Math.round(c2.v)) }, 0.55);
+    tl.fromTo("#num-r1", { opacity: 0, y: 60 }, { opacity: 1, y: 0, duration: 0.55, ease: "expo.out" }, 0.1);
+    tl.fromTo("#num-r2", { opacity: 0, y: 60 }, { opacity: 1, y: 0, duration: 0.55, ease: "expo.out" }, 0.5);
+    tl.fromTo("#num-r3", { opacity: 0, filter: "blur(10px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.2, ease: "power4.out" }, 1.1);
+    tl.fromTo("#num-r3b", { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "power2.out" }, 1.3);
+    tl.fromTo("#num-rule", { scaleX: 0 }, { scaleX: 1, duration: 0.5, ease: "expo.out" }, 1.9);
+    tl.fromTo("#num-foot", { opacity: 0, filter: "blur(6px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.18, ease: "power4.out" }, 2.1);
+    // Exit
+    tl.to("#num-r1, #num-r2, #num-r3, #num-r3b, #num-rule, #num-foot",
+      { opacity: 0, filter: "blur(10px)", duration: 0.2, ease: "power3.in", stagger: 0.03 }, 4.2);
+    window.__timelines["numeros"] = tl;
+  </script>
+</template>

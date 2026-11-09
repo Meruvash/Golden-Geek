@@ -1,0 +1,53 @@
+<template>
+  <style>
+    @font-face { font-family: "Public Sans"; src: url("assets/fonts/public-sans.woff2") format("woff2"); font-weight: 100 900; }
+    #root { position: absolute; inset: 0; overflow: hidden; background: #0b0c0f; }
+    #prem-flood { position: absolute; inset: 0; background: #e98b1e; transform-origin: 50% 100%; }
+    #prem-quiet {
+      position: absolute; left: 90px; top: 330px;
+      font-family: "Public Sans", sans-serif; font-weight: 600; font-size: 60px; color: #a1a9b5;
+    }
+    #prem-hero {
+      position: absolute; left: 86px; right: 60px; top: 420px;
+      font-family: "Archivo Black", sans-serif; text-transform: uppercase;
+      font-size: 150px; line-height: .98; letter-spacing: -0.02em; color: #f5efe8;
+    }
+    #prem-hero .w { display: inline-block; }
+    #prem-hero .acc { color: #e98b1e; }
+    #prem-list {
+      position: absolute; left: 90px; right: 90px; top: 790px;
+      display: flex; flex-wrap: wrap; gap: 22px 20px;
+    }
+    .prem-pill {
+      font-family: "Public Sans", sans-serif; font-weight: 700; font-size: 40px; color: #e3b23c;
+      padding: 18px 30px; border: 3px solid rgba(227,178,60,.55); border-radius: 999px;
+      background: rgba(227,178,60,.08);
+    }
+  </style>
+  <div id="root" data-composition-id="premiados" data-width="1080" data-height="1920">
+    <div id="prem-flood"></div>
+    <div id="prem-quiet">Aqui a gente só resenha</div>
+    <h2 id="prem-hero"><span class="w">jogo</span><br /><span class="w acc">premiado.</span></h2>
+    <div id="prem-list">
+      <span class="prem-pill">Spiel des Jahres</span>
+      <span class="prem-pill">Kennerspiel</span>
+      <span class="prem-pill">Golden Geek</span>
+      <span class="prem-pill">As d'Or</span>
+      <span class="prem-pill">Deutscher Spiele Preis</span>
+      <span class="prem-pill">Prêmio Ludopedia</span>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    // Colour flood: an orange wipe rises and drops away, revealing the dark stage (the brand colour opens the chapter).
+    tl.fromTo("#prem-flood", { scaleY: 1 }, { scaleY: 0, duration: 0.45, ease: "power2.inOut", transformOrigin: "50% 0%" }, 0.05);
+    tl.fromTo("#prem-quiet", { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.2, ease: "power4.out" }, 0.4);
+    tl.fromTo("#prem-hero .w", { opacity: 0, filter: "blur(10px)" },
+      { opacity: 1, filter: "blur(0px)", duration: 0.16, ease: "power4.out", stagger: 0.12 }, 0.7);
+    tl.fromTo(".prem-pill", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.5, ease: "expo.out", stagger: 0.08 }, 1.5);
+    // Exit: whole stage whips up, 0.3 s.
+    tl.fromTo("#prem-quiet, #prem-hero, #prem-list", { y: 0, opacity: 1, filter: "blur(0px)" },
+      { y: -260, opacity: 0, filter: "blur(12px)", duration: 0.3, ease: "power3.in", stagger: 0.03 }, 4.4);
+    window.__timelines["premiados"] = tl;
+  </script>
+</template>

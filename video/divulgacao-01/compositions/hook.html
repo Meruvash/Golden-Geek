@@ -1,0 +1,54 @@
+<template>
+  <style>
+    @font-face { font-family: "Public Sans"; src: url("assets/fonts/public-sans.woff2") format("woff2"); font-weight: 100 900; }
+    #root { position: absolute; inset: 0; overflow: hidden; background: #0b0c0f; }
+    .hook-shot { position: absolute; inset: 0; overflow: hidden; }
+    .hook-shot img {
+      position: absolute; left: -420px; top: 0; width: 1920px; height: 1920px; object-fit: cover;
+    }
+    #hook-shade {
+      position: absolute; inset: 0;
+      background: linear-gradient(180deg, rgba(11,12,15,.92) 0%, rgba(11,12,15,.55) 30%, rgba(11,12,15,.35) 55%, rgba(11,12,15,.9) 100%);
+    }
+    #hook-title {
+      position: absolute; left: 90px; right: 90px; top: 360px;
+      font-family: "Archivo Black", sans-serif; color: #f5efe8;
+      font-size: 128px; line-height: 1.02; letter-spacing: -0.02em; text-transform: uppercase;
+    }
+    #hook-title .w { display: inline-block; }
+    #hook-title .acc { color: #e98b1e; }
+    #hook-kicker {
+      position: absolute; left: 94px; top: 250px;
+      font-family: "Public Sans", sans-serif; font-weight: 700; font-size: 40px;
+      letter-spacing: .14em; text-transform: uppercase; color: #e3b23c;
+    }
+  </style>
+  <div id="root" data-composition-id="hook" data-width="1080" data-height="1920">
+    <div id="hook-s1" class="hook-shot clip" data-layout-allow-overflow data-start="0" data-duration="0.6"><img id="hook-i1" src="assets/img/wingspan.jpg" alt="" /></div>
+    <div id="hook-s2" class="hook-shot clip" data-layout-allow-overflow data-start="0.6" data-duration="0.5"><img id="hook-i2" src="assets/img/ark-nova.jpg" alt="" /></div>
+    <div id="hook-s3" class="hook-shot clip" data-layout-allow-overflow data-start="1.1" data-duration="0.5"><img id="hook-i3" src="assets/img/dune-imperium.jpg" alt="" /></div>
+    <div id="hook-s4" class="hook-shot clip" data-layout-allow-overflow data-start="1.6" data-duration="0.5"><img id="hook-i4" src="assets/img/cascadia.jpg" alt="" /></div>
+    <div id="hook-s5" class="hook-shot clip" data-layout-allow-overflow data-start="2.1" data-duration="0.5"><img id="hook-i5" src="assets/img/brass-birmingham.jpg" alt="" /></div>
+    <div id="hook-s6" class="hook-shot clip" data-layout-allow-overflow data-start="2.6" data-duration="0.6"><img id="hook-i6" src="assets/img/heat-pedal-to-the-metal.jpg" alt="" /></div>
+    <div id="hook-shade"></div>
+    <div id="hook-kicker">Antes de comprar</div>
+    <h1 id="hook-title">
+      <span class="w">Vale</span> <span class="w">a</span> <span class="w">pena</span><br />
+      <span class="w">esse</span> <span class="w acc">jogo?</span>
+    </h1>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    // Each cut lands slightly large and settles (0.35 s), so the montage feels cut on motion.
+    const shots = ["#hook-i1", "#hook-i2", "#hook-i3", "#hook-i4", "#hook-i5", "#hook-i6"];
+    const starts = [0, 0.6, 1.1, 1.6, 2.1, 2.6];
+    shots.forEach((s, i) => {
+      tl.fromTo(s, { scale: 1.12 }, { scale: 1.0, duration: 0.45, ease: "expo.out" }, starts[i]);
+    });
+    // Frame 0 already carries the line (it is the thumbnail). Exit: words blur out, 60 ms apart.
+    tl.fromTo("#hook-title .w", { opacity: 1, filter: "blur(0px)", y: 0 },
+      { opacity: 0, filter: "blur(10px)", y: -40, duration: 0.2, ease: "power3.in", stagger: 0.05 }, 2.82);
+    tl.fromTo("#hook-kicker", { opacity: 1 }, { opacity: 0, duration: 0.15, ease: "power3.in" }, 2.82);
+    window.__timelines["hook"] = tl;
+  </script>
+</template>

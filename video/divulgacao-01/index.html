@@ -1,0 +1,80 @@
+<!doctype html>
+<html
+  lang="pt-BR"
+  data-composition-variables='[
+    {"id":"num-resenhas","type":"number","label":"Resenhas publicadas","default":74},
+    {"id":"num-tutoriais","type":"number","label":"Tutoriais Como Jogar","default":36},
+    {"id":"site","type":"string","label":"Endereço do site","default":"eliteboardgamers.com.br"},
+    {"id":"handle","type":"string","label":"Instagram","default":"@eliteboardgamers"}
+  ]'
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+    <style>
+      :root {
+        --ground: #0b0c0f;
+        --ink: #f5efe8;
+        --muted: #a1a9b5;
+        --brand: #e98b1e;
+        --gold: #e3b23c;
+        --line: #262a32;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        width: 1080px;
+        height: 1920px;
+        overflow: hidden;
+        background: var(--ground);
+      }
+      #bg {
+        position: absolute;
+        inset: 0;
+        background: var(--ground);
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-duration="24"
+      data-width="1080"
+      data-height="1920"
+    >
+      <div id="bg"></div>
+
+      <div id="hook" data-composition-id="hook" data-composition-src="compositions/hook.html"
+        data-start="0" data-duration="3.2" data-track-index="1" data-track-kind="graphics"
+        data-width="1080" data-height="1920" style="z-index: 2"></div>
+
+      <div id="premiados" data-composition-id="premiados" data-composition-src="compositions/premiados.html"
+        data-start="3.2" data-duration="4.8" data-track-index="1" data-track-kind="graphics"
+        data-width="1080" data-height="1920" style="z-index: 3"></div>
+
+      <div id="infografico" data-composition-id="infografico" data-composition-src="compositions/infografico.html"
+        data-start="8" data-duration="6.6" data-track-index="1" data-track-kind="graphics"
+        data-width="1080" data-height="1920" style="z-index: 4"></div>
+
+      <div id="numeros" data-composition-id="numeros" data-composition-src="compositions/numeros.html"
+        data-start="14.6" data-duration="4.6" data-track-index="1" data-track-kind="graphics"
+        data-width="1080" data-height="1920" style="z-index: 5"></div>
+
+      <div id="fim" data-composition-id="fim" data-composition-src="compositions/fim.html"
+        data-start="19.2" data-duration="4.8" data-track-index="1" data-track-kind="graphics"
+        data-width="1080" data-height="1920" style="z-index: 6"></div>
+    </div>
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>
