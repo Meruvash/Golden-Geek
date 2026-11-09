@@ -1,88 +1,121 @@
 <template>
   <style>
-    #root { position: absolute; inset: 0; overflow: hidden; background: #123a33; }
-    .ae-l { position: absolute; left: -60px; top: 0; width: 1200px; height: 1920px; }
-    #ae-spirit { position: absolute; left: 323px; top: 735px; width: 434px; height: 465px; transform-origin: 217px 450px; }
-    .ae-ff { position: absolute; width: 14px; height: 14px; border-radius: 50%;
-      background: radial-gradient(circle, #fbffd8 0%, #e3ff8a 35%, rgba(200,255,120,0) 70%); }
-    #ae-flash { position: absolute; inset: 0; background: radial-gradient(circle at 540px 1000px, #ffffff 0%, #eaffe0 35%, #bfe8ff 100%); }
+    @font-face { font-family: "Manrope"; font-weight: 700; src: url("assets/fonts/manrope-latin-700-normal.woff2") format("woff2"); }
+    #root { position: absolute; inset: 0; overflow: hidden; background: #061722; }
+    #ae-stage { position: absolute; inset: 0; }
+    .ae-l { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; }
+    /* rushing water, rendered by a shader at half resolution and scaled up */
+    #ae-water { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; }
+    #ae-vig { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(6,23,34,.9) 0%, rgba(6,23,34,.55) 30%, rgba(6,23,34,0) 45%), radial-gradient(ellipse at 50% 58%, rgba(6,23,34,0) 35%, rgba(6,23,34,.8) 90%); }
+    /* the manga panel holding the official cover art */
+    #ae-panel { position: absolute; left: 40px; top: 620px; width: 1000px; height: 889px; }
+    #ae-frame { position: absolute; inset: 0; overflow: hidden; border: 12px solid #0a1220; border-radius: 6px;
+      box-shadow: 0 0 0 6px #f4fbff, 0 0 0 14px #0a1220, 0 40px 90px rgba(0,0,0,.6); background: #0a1220; }
+    #ae-img { position: absolute; left: 0; top: 0; width: 1000px; height: 889px; transform-origin: 0 0; }
+    #ae-img img { width: 1000px; height: 889px; display: block; }
+    #ae-credit { position: absolute; left: 60px; top: 1572px; font-family: "Manrope", sans-serif; font-weight: 700; font-size: 28px; color: #cfe9f5; letter-spacing: .04em; }
+    #ae-flash { position: absolute; inset: 0; background: radial-gradient(circle at 540px 1060px, #ffffff 0%, #e2fbff 35%, #9fd8ff 100%); }
   </style>
   <div id="root" data-composition-id="arte-espirito" data-width="1080" data-height="1920">
-    <svg id="ae-back" class="ae-l" viewBox="0 0 1200 1920" data-layout-ignore>
-      <defs>
-        <linearGradient id="ae-bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d6a5a"/><stop offset="0.55" stop-color="#5ea777"/><stop offset="1" stop-color="#1d4a3b"/></linearGradient>
-        <linearGradient id="ae-ray" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff7d6" stop-opacity="0.55"/><stop offset="1" stop-color="#fff7d6" stop-opacity="0"/></linearGradient>
-      </defs>
-      <rect width="1200" height="1920" fill="url(#ae-bg)"/>
-      <g fill="#24584a" opacity="0.9">
-        <rect x="70" y="0" width="70" height="1500"/><rect x="230" y="0" width="46" height="1400"/><rect x="900" y="0" width="80" height="1520"/><rect x="1060" y="0" width="50" height="1420"/>
-      </g>
-      <g fill="#1f4d40"><circle cx="100" cy="300" r="190"/><circle cx="260" cy="200" r="160"/><circle cx="950" cy="260" r="200"/><circle cx="1100" cy="380" r="170"/><circle cx="600" cy="120" r="230"/></g>
-    </svg>
-    <svg id="ae-rays" class="ae-l" viewBox="0 0 1200 1920" data-layout-ignore>
-      <g fill="url(#ae-ray)"><polygon points="420,0 520,0 760,1500 600,1500"/><polygon points="600,0 660,0 900,1400 800,1400" opacity="0.7"/><polygon points="300,0 340,0 470,1300 400,1300" opacity="0.5"/></g>
-    </svg>
-    <svg id="ae-ground" class="ae-l" viewBox="0 0 1200 1920" data-layout-ignore>
-      <path d="M0,1180 C200,1120 420,1150 600,1140 C800,1130 1000,1110 1200,1160 L1200,1920 L0,1920 Z" fill="#3d8a5c"/>
-      <path d="M0,1260 C260,1200 520,1240 720,1220 C920,1200 1080,1220 1200,1240 L1200,1920 L0,1920 Z" fill="#2c6d4a"/>
-      <!-- the bush the spirit hides in -->
-      <g id="ae-bush"><circle cx="520" cy="1170" r="95" fill="#3f9a63"/><circle cx="640" cy="1160" r="110" fill="#4aa86c"/><circle cx="740" cy="1185" r="80" fill="#3f9a63"/>
-        <circle cx="505" cy="1150" r="55" fill="#6cc382"/><circle cx="630" cy="1130" r="66" fill="#78cd8b"/><circle cx="735" cy="1165" r="44" fill="#6cc382"/></g>
-      <g fill="#ffe7ef"><circle cx="300" cy="1250" r="9"/><circle cx="860" cy="1290" r="10"/><circle cx="180" cy="1330" r="8"/><circle cx="980" cy="1240" r="8"/></g>
-    </svg>
-
-    <!-- an original little forest spirit: soft, round, glowing -->
-    <div id="ae-spirit">
-      <svg viewBox="0 0 280 300" width="434" height="465" data-layout-ignore>
-        <defs>
-          <radialGradient id="ae-glow"><stop offset="0" stop-color="#f4ffe6" stop-opacity="0.95"/><stop offset="0.6" stop-color="#c9f5b8" stop-opacity="0.35"/><stop offset="1" stop-color="#c9f5b8" stop-opacity="0"/></radialGradient>
-          <radialGradient id="ae-body" cx="40%" cy="35%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.7" stop-color="#f1f5e6"/><stop offset="1" stop-color="#d3e6c8"/></radialGradient>
-        </defs>
-        <circle cx="140" cy="175" r="140" fill="url(#ae-glow)"/>
-        <g id="ae-leaf" style="transform-origin: 140px 92px">
-          <path d="M140,96 C138,70 140,50 146,36" stroke="#4f9a4c" stroke-width="6" fill="none" stroke-linecap="round"/>
-          <path d="M146,40 C170,18 205,22 214,34 C196,54 168,58 146,40 Z" fill="#7cc576"/>
-          <path d="M144,48 C124,30 98,32 90,42 C104,58 128,60 144,48 Z" fill="#9bd890"/>
+    <div id="ae-stage">
+      <canvas id="ae-water" width="540" height="960" data-layout-ignore></canvas>
+      <div id="ae-vig" data-layout-ignore></div>
+      <!-- radial speed lines behind the panel -->
+      <svg id="ae-speed" class="ae-l" viewBox="0 0 1080 1920" data-layout-ignore>
+        <g stroke="#e8fbff" stroke-linecap="round" opacity="0.9">
+          <path d="M540,1060 L-200,700" stroke-width="5"/><path d="M540,1060 L-200,1100" stroke-width="8"/><path d="M540,1060 L-200,1500" stroke-width="4"/>
+          <path d="M540,1060 L1280,640" stroke-width="7"/><path d="M540,1060 L1280,1000" stroke-width="4"/><path d="M540,1060 L1280,1460" stroke-width="9"/>
+          <path d="M540,1060 L200,1920" stroke-width="6"/><path d="M540,1060 L900,1920" stroke-width="5"/><path d="M540,1060 L540,560" stroke-width="4"/>
         </g>
-        <path d="M60,200 C56,140 92,96 140,96 C188,96 224,140 220,200 C218,250 184,276 140,276 C96,276 62,250 60,200 Z" fill="url(#ae-body)"/>
-        <ellipse cx="70" cy="214" rx="16" ry="11" fill="#eef4e2" transform="rotate(-25 70 214)"/>
-        <ellipse cx="210" cy="214" rx="16" ry="11" fill="#eef4e2" transform="rotate(25 210 214)"/>
-        <g id="ae-eyes"><ellipse cx="112" cy="182" rx="10" ry="14" fill="#2b2b35"/><ellipse cx="168" cy="182" rx="10" ry="14" fill="#2b2b35"/>
-          <circle cx="115" cy="177" r="3.5" fill="#fff"/><circle cx="171" cy="177" r="3.5" fill="#fff"/></g>
-        <ellipse cx="98" cy="208" rx="14" ry="8" fill="#ffb9b9" opacity="0.8"/><ellipse cx="182" cy="208" rx="14" ry="8" fill="#ffb9b9" opacity="0.8"/>
-        <path d="M130,210 Q140,220 150,210" stroke="#2b2b35" stroke-width="4" fill="none" stroke-linecap="round"/>
       </svg>
-    </div>
-    <svg id="ae-front" class="ae-l" viewBox="0 0 1200 1920" data-layout-ignore>
-      <g><circle cx="470" cy="1235" r="70" fill="#2f7d55"/><circle cx="790" cy="1240" r="75" fill="#2f7d55"/><circle cx="600" cy="1260" r="80" fill="#36885d"/></g>
-    </svg>
-    <div id="ae-ffs" data-layout-ignore>
-      <div class="ae-ff" id="ae-f1" style="left:240px;top:900px"></div><div class="ae-ff" id="ae-f2" style="left:820px;top:820px"></div>
-      <div class="ae-ff" id="ae-f3" style="left:360px;top:1060px"></div><div class="ae-ff" id="ae-f4" style="left:900px;top:1040px"></div>
-      <div class="ae-ff" id="ae-f5" style="left:180px;top:720px"></div><div class="ae-ff" id="ae-f6" style="left:700px;top:700px"></div>
+      <div id="ae-panel">
+        <div id="ae-frame">
+          <div id="ae-img"><img src="assets/img/capa-espiritos.jpg" alt="Espíritos da ilustração oficial da capa de Spirit Island" /></div>
+        </div>
+      </div>
+      <!-- water-breath ribbon across the panel -->
+      <svg id="ae-ribbon" class="ae-l" viewBox="0 0 1080 1920" data-layout-ignore>
+        <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path id="ae-rb0" pathLength="1" stroke-dasharray="1 1" d="M-40,1560 C120,1380 60,1120 260,980 C460,840 760,860 900,1000 C1040,1140 980,1360 800,1420 C640,1470 560,1340 640,1260" stroke="#0a1220" stroke-width="46"/>
+          <path id="ae-rb1" pathLength="1" stroke-dasharray="1 1" d="M-40,1560 C120,1380 60,1120 260,980 C460,840 760,860 900,1000 C1040,1140 980,1360 800,1420 C640,1470 560,1340 640,1260" stroke="#3fa2e6" stroke-width="30"/>
+          <path id="ae-rb2" pathLength="1" stroke-dasharray="1 1" d="M-40,1560 C120,1380 60,1120 260,980 C460,840 760,860 900,1000 C1040,1140 980,1360 800,1420 C640,1470 560,1340 640,1260" stroke="#e8fbff" stroke-width="7"/>
+        </g>
+        <g id="ae-foam" fill="#f4fbff" stroke="#0a1220" stroke-width="5">
+          <circle cx="640" cy="1260" r="18"/><circle cx="676" cy="1236" r="10"/><circle cx="900" cy="1000" r="14"/><circle cx="930" cy="970" r="8"/>
+        </g>
+      </svg>
+      <div id="ae-credit">Arte da capa: Greater Than Games</div>
     </div>
     <div id="ae-flash" data-layout-ignore></div>
   </div>
   <script>
+    // ---------- shader: turbulent rushing water, banded and inked ----------
+    const WATER = `precision highp float;
+      uniform vec2 res; uniform float t;
+      float hash(vec2 p){ p=fract(p*vec2(123.34,456.21)); p+=dot(p,p+45.32); return fract(p.x*p.y); }
+      float noise(vec2 p){ vec2 i=floor(p), f=fract(p); vec2 u=f*f*(3.-2.*f);
+        return mix(mix(hash(i),hash(i+vec2(1,0)),u.x), mix(hash(i+vec2(0,1)),hash(i+vec2(1,1)),u.x), u.y); }
+      float fbm(vec2 p){ float v=0., a=.5; for(int i=0;i<5;i++){ v+=a*noise(p); p=p*2.03+vec2(1.7,9.2); a*=.5; } return v; }
+      void main(){
+        vec2 uv = gl_FragCoord.xy / res;
+        vec2 c = uv - vec2(.5,.45); c.x *= res.x/res.y;
+        float ang = atan(c.y, c.x), r = length(c);
+        // whirlpool: noise stretched along the swirl so it reads as currents, not blobs
+        float warp = fbm(vec2(ang*3.0 + t*.4, r*4.0 - t*.8));
+        float n = fbm(vec2(ang*5.0 + r*7.0 - t*1.4 + warp*1.6, r*1.8 - t*.5));
+        float m = fbm(vec2(ang*9.0 + r*12.0 - t*2.2, r*3.0));
+        float v = n*.7 + m*.3;
+        vec3 deep=vec3(.02,.08,.22), mid=vec3(.05,.27,.58), light=vec3(.22,.58,.90), foam=vec3(.90,.97,1.);
+        vec3 col = v<.40 ? deep : v<.50 ? mid : v<.60 ? light : foam;
+        float lines = smoothstep(.05,.0, abs(fract(v*12. - t*.6)-.5)-.42);
+        col = mix(col, light*1.15, lines*.55*step(.36, v));
+        col *= .55 + .45*smoothstep(.75,.15,r);
+        gl_FragColor = vec4(col, 1.);
+      }`;
+    (function () {
+      const canvas = document.getElementById("ae-water");
+      const gl = canvas.getContext("webgl", { preserveDrawingBuffer: true, antialias: false });
+      const sh = (type, s) => { const o = gl.createShader(type); gl.shaderSource(o, s); gl.compileShader(o); return o; };
+      const pr = gl.createProgram();
+      gl.attachShader(pr, sh(gl.VERTEX_SHADER, "attribute vec2 a; void main(){ gl_Position=vec4(a,0.,1.); }"));
+      gl.attachShader(pr, sh(gl.FRAGMENT_SHADER, WATER)); gl.linkProgram(pr); gl.useProgram(pr);
+      gl.bindBuffer(gl.ARRAY_BUFFER, gl.createBuffer());
+      gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1, -1, 3, -1, -1, 3]), gl.STATIC_DRAW);
+      const loc = gl.getAttribLocation(pr, "a"); gl.enableVertexAttribArray(loc); gl.vertexAttribPointer(loc, 2, gl.FLOAT, false, 0, 0);
+      gl.uniform2f(gl.getUniformLocation(pr, "res"), canvas.width, canvas.height);
+      const ut = gl.getUniformLocation(pr, "t");
+      window.__aeWater = (time) => { gl.viewport(0, 0, canvas.width, canvas.height); gl.uniform1f(ut, time); gl.drawArrays(gl.TRIANGLES, 0, 3); };
+    })();
+    const clock = { t: 0 };
+    window.__aeWater(0);
+
     const tl = gsap.timeline({ paused: true });
-    // Enter from the tree dive: the glade arrives slightly large and settles.
-    tl.fromTo("#ae-back, #ae-rays, #ae-ground, #ae-front", { scale: 1.25, transformOrigin: "50% 55%" }, { scale: 1, duration: 0.9, ease: "expo.out" }, 0);
-    tl.fromTo("#ae-rays", { opacity: 0.4 }, { opacity: 1, duration: 3.5, ease: "power2.inOut" }, 0);
-    // The spirit peeks, pops up with squash and stretch, settles.
-    tl.fromTo("#ae-spirit", { y: 220, scaleX: 1, scaleY: 1 }, { y: 60, duration: 0.35, ease: "power2.out" }, 0.55);
-    tl.to("#ae-spirit", { y: -40, scaleX: 0.86, scaleY: 1.16, duration: 0.25, ease: "power2.out" }, 1.0);
-    tl.to("#ae-spirit", { y: 0, scaleX: 1.12, scaleY: 0.9, duration: 0.2, ease: "power2.in" }, 1.25);
-    tl.to("#ae-spirit", { scaleX: 1, scaleY: 1, duration: 0.5, ease: "elastic.out(1, 0.45)" }, 1.45);
-    tl.fromTo("#ae-leaf", { rotation: -18 }, { rotation: 0, duration: 1.0, ease: "elastic.out(1, 0.35)" }, 1.25);
-    // A blink, then a small happy tilt.
-    tl.fromTo("#ae-eyes", { scaleY: 1, transformOrigin: "140px 182px" }, { scaleY: 0.1, duration: 0.07, ease: "power2.in", yoyo: true, repeat: 1 }, 2.3);
-    tl.to("#ae-spirit", { rotation: -7, duration: 0.4, ease: "power2.inOut" }, 2.7);
-    tl.to("#ae-spirit", { rotation: 0, duration: 0.5, ease: "power2.inOut" }, 3.3);
-    // Fireflies drift on their own slow paths.
-    [[1, 60, -90], [2, -70, -60], [3, 50, -120], [4, -40, -80], [5, 90, -40], [6, -60, -110]].forEach(([i, dx, dy]) =>
-      tl.fromTo("#ae-f" + i, { x: 0, y: 0, opacity: 0.2 }, { x: dx, y: dy, opacity: 1, duration: 4.5, ease: "sine.inOut" }, 0));
-    // Exit: the spirit flares and the light floods the frame.
-    tl.to("#ae-spirit", { scale: 1.3, duration: 0.35, ease: "power3.in" }, 4.05);
+    tl.to(clock, { t: 4.5, duration: 4.5, ease: "none", onUpdate: () => window.__aeWater(clock.t) }, 0);
+    tl.fromTo("#ae-water", { scale: 1.25, transformOrigin: "50% 55%" }, { scale: 1, duration: 1.0, ease: "expo.out" }, 0);
+    // The panel slams in with an ink wipe.
+    tl.fromTo("#ae-panel", { scale: 1.3, rotation: -7, opacity: 0 }, { scale: 1, rotation: -2, opacity: 1, duration: 0.45, ease: "expo.out" }, 0.45);
+    tl.fromTo("#ae-frame", { clipPath: "polygon(0% 0%, 0% 0%, -20% 100%, -20% 100%)" }, { clipPath: "polygon(0% 0%, 120% 0%, 100% 100%, -20% 100%)", duration: 0.4, ease: "power3.out" }, 0.45);
+    tl.fromTo("#ae-credit", { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "power2.out" }, 0.9);
+    // Smash-zooms onto each spirit, each on a two-frame monochrome impact frame.
+    // x = 500 - s*fx, y = 444 - s*fy (focal point to panel centre), clamped so the art always covers the panel.
+    const smash = (t, s, x, y) => {
+      tl.to("#ae-stage", { filter: "grayscale(1) invert(1) contrast(3)", duration: 0.01 }, t - 0.01);
+      tl.to("#ae-stage", { filter: "grayscale(0) invert(0) contrast(1)", duration: 0.01 }, t + 0.06);
+      tl.to("#ae-img", { scale: s, x, y, duration: 0.22, ease: "expo.out" }, t);
+      tl.set("#ae-speed", { opacity: 1, scale: 1.25, svgOrigin: "540 1060" }, t);
+      tl.to("#ae-speed", { opacity: 0, scale: 1, duration: 0.55, ease: "power2.out", svgOrigin: "540 1060" }, t + 0.01);
+    };
+    tl.set("#ae-img", { scale: 1, x: 0, y: 0 }, 0);
+    tl.set("#ae-speed", { opacity: 0, scale: 1, svgOrigin: "540 1060" }, 0);
+    tl.set("#ae-stage", { filter: "grayscale(0) invert(0) contrast(1)" }, 0);
+    smash(1.25, 1.8, -50, -56);    // horned spirit
+    smash(2.0, 1.9, 0, -471);      // water spirit
+    smash(2.75, 1.8, -800, -256);  // stone spirit
+    tl.to("#ae-img", { scale: 1, x: 0, y: 0, duration: 0.35, ease: "power3.inOut" }, 3.45);
+    // Water breath ribbon, painted in one stroke over the last beat.
+    ["#ae-rb0", "#ae-rb1", "#ae-rb2"].forEach((id, i) =>
+      tl.fromTo(id, { attr: { "stroke-dashoffset": 1 } }, { attr: { "stroke-dashoffset": 0 }, duration: 0.7, ease: "power2.inOut" }, 3.4 + i * 0.03));
+    tl.fromTo("#ae-foam", { scale: 0, opacity: 0, svgOrigin: "640 1260" }, { scale: 1, opacity: 1, duration: 0.3, ease: "back.out(2)" }, 3.95);
     tl.fromTo("#ae-flash", { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "power2.in" }, 4.2);
     window.__timelines["arte-espirito"] = tl;
   </script>
