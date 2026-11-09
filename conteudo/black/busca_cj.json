@@ -1,5 +1,6 @@
 {
  "101 dalmatas ludoteca disney": null,
+ "5 minute dungeon curses foiled again expansion": null,
  "7 conjuntos 49 pecas de dados": null,
  "7 wonders dice": {
   "bgg": 5.82335,
@@ -209,6 +210,17 @@
   "tipo": "game"
  },
  "arcane wonders mortum medieval detective": null,
+ "archeologic": {
+  "bgg": 7.04039,
+  "editora": "Ludonaute",
+  "imagem": "https://uploads.comparajogos.com.br/img/74a7d0f9f02aa09e418930c1abfa163eeab3c586.jpg",
+  "menor": null,
+  "nome": "ArcheOlogic",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "archeologic",
+  "tipo": "game"
+ },
  "arkham horror 3rd edition dead of night board game expansion mystery game cooperative board game for adults ages 14 1 6 players average pla": null,
  "arkham horror card game asmodee pacote de cenario": null,
  "arkham horror the card game a light in the fog mythos pack": {
@@ -289,6 +301,7 @@
  },
  "avalon hill heroquest jogo de tabuleiro de estrategia jogo em ingles": null,
  "avalon hill heroquest spirit queen s torment quest pack requires heroquest game system to play dungeon crawler games ages 14 2 5 player": null,
+ "awkward guests 2 the berwick cases": null,
  "azul": {
   "bgg": 7.75868,
   "editora": "Galápagos Jogos",
@@ -987,6 +1000,7 @@
   "slug": "dragon-island",
   "tipo": "game"
  },
+ "drako dragons dwarves": null,
  "dune imperium rise of ix dreadnought upgrade pack": null,
  "dungeons dragons attack wing bronze dragon expansion pack": {
   "bgg": 7.63158,
@@ -1048,6 +1062,17 @@
   "ref": null,
   "ref_dias": 0,
   "slug": "elfenroads",
+  "tipo": "game"
+ },
+ "emblems": {
+  "bgg": 7.60155,
+  "editora": "SAVANA",
+  "imagem": "https://uploads.comparajogos.com.br/img/afb7e76177b2285685f803eadab0f2e41a7ca9eb.png",
+  "menor": 107.04,
+  "nome": "Emblems",
+  "ref": 143.53,
+  "ref_dias": 32,
+  "slug": "emblems",
   "tipo": "game"
  },
  "encantados jogo de cartas 3a edicao": null,
@@ -2444,6 +2469,17 @@
   "slug": "oh-my-socks",
   "tipo": "game"
  },
+ "oh sushi game": {
+  "bgg": 5.50814,
+  "editora": "Eyeup",
+  "imagem": "https://uploads.comparajogos.com.br/img/d618e36b1a8ddcc714149ba8986eda130776117c.jpg",
+  "menor": null,
+  "nome": "Oh! Sushi Game",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "oh-sushi-game",
+  "tipo": "game"
+ },
  "onboard cinema e tv": {
   "bgg": null,
   "editora": "Geeks N' Orcs",
@@ -2616,6 +2652,7 @@
  "placegames em pre venda coffee rush inverno cupom gamebox7naplace": null,
  "plaid hat games chosen grove faction deck": null,
  "plaid hat games expansao magica natural ashes ascendancy": null,
+ "planet unknown supermoon expansion": null,
  "pocket detective die bombe tickt": {
   "bgg": 6.16064,
   "editora": "Schmidt Spiele",
@@ -2660,6 +2697,17 @@
   "ref": null,
   "ref_dias": 0,
   "slug": "pot-de-vin",
+  "tipo": "game"
+ },
+ "prey": {
+  "bgg": 6.76764,
+  "editora": "Allplay",
+  "imagem": "https://uploads.comparajogos.com.br/img/337a9b7e5d87e747fa9f56422e336b9df763e94e.jpg",
+  "menor": 17.91,
+  "nome": "Prey",
+  "ref": 50.24,
+  "ref_dias": 32,
+  "slug": "prey",
   "tipo": "game"
  },
  "prey another day": {
@@ -3743,6 +3791,17 @@
  },
  "witchcraft fast playing solitaire card game to lead a coven of witches and save the village 25th century games": null,
  "wok shael han rank 1 caixa especializada": null,
+ "you laugh you drink": {
+  "bgg": 5.32,
+  "editora": "DSS Games",
+  "imagem": "https://uploads.comparajogos.com.br/img/0dfe269a2d72ed174db741c8bdb2c58ead3d5ffb.jpg",
+  "menor": null,
+  "nome": "You Laugh You Drink",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "you-laugh-you-drink",
+  "tipo": "game"
+ },
  "zombicide the boys character pack 1 the seven survivors from the seven for epic zombie action cooperative strategy board game for ages": null,
  "zombicide toxic city mall double sided game tiles": null,
  "zombie teenz": null,
