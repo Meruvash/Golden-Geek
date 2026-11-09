@@ -9,7 +9,7 @@ Entrega 1. Jogo pedido diretamente pelo editor (slug `andromedas-edge`). Escrito
 | **Livro de regras da edição brasileira, "Regras do Jogo"** (fonte principal) | Galápagos, AED001, "v1.0" impresso na p. 27; © Cardboard Alchemy; tradução Isabela Balian, revisão Gabriel Novaes e Luis Perdomo, gestão Matheus Passeri, diagramação Tati Hapanchuk; 28 páginas (629 x 809 pt); PDF criado em 27/09/2024 (InDesign 19.5); arquivo "AED001 - regras - v1.0.pdf" | Biblioteca de downloads da Asmodee Brasil. Busca `https://api-prd.mundogalapagos.com.br/library-download/store/search?term=andromeda` listou o item 2815 ("Andromeda's Edge - SKU: AED001", pai 2814, etiqueta Regras) e o item 2820 (mesmo nome, pai 2819, etiquetas Regras, Ilustração e Conteúdo da caixa). Download: `https://api-prd.mundogalapagos.com.br/library-download/store/file?id=2815&tagId=2&group=b2c` (HTTP 200, ZIP de 130 MB, sha256 f9165380…5ad1d02) | Baixado e lido inteiro em 09/11/2026, texto e ilustrações |
 | **Apêndice da edição brasileira** | Galápagos, "AED001_apendice_v1.0.pdf", 28 páginas, criado em 17/10/2024, modificado em 17/10/2025 | No mesmo ZIP | Lido: índice, facções (p. 2 a 8) e perguntas frequentes (p. 28). Usado só para o FAQ e a classificação das facções |
 | Item 2820 da biblioteca | | `file?id=2820&tagId=2&group=b2c` respondeu 404 (JSON) | Não usado |
-| Página oficial do jogo, Cardboard Alchemy | "1-5 PLAYERS", "40-200 Min", "14+", autores e descrição ("worker placement game in which your workers are upgradable starships") | https://cardboardalchemy.com/andromedas-edge/ (robots.txt só proíbe /wp-admin/) | Consultada em 09/11/2026. Os números de jogadores e de tempo incluem a expansão Escalation, citada na mesma página |
+| Página oficial do jogo, Cardboard Alchemy | "1-5 PLAYERS", "40-200 Min", "14+" (números do jogo com a expansão; o JSON diz isso na duração), autores e descrição ("worker placement game in which your workers are upgradable starships") | https://cardboardalchemy.com/andromedas-edge/ (robots.txt só proíbe /wp-admin/) | Consultada em 09/11/2026. Os números de jogadores e de tempo incluem a expansão Escalation, citada na mesma página |
 | Manual oficial em inglês (Cardboard Alchemy) | | https://cardboardalchemy.com/downloads/AndromedasEdge_Rulebook_sm.pdf, linkado na página oficial | Não baixado: o manual brasileiro bastou e não houve dúvida de tradução que pedisse a comparação |
 | Vídeo | "ANDROMEDA'S EDGE - Gameplay resumida", Duque Board Games | Busca do próprio canal (`/@DuqueBoardgames/search?query=andromeda`) e oEmbed (`https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=bK-DatEOPwA&format=json`), que confirmou título e canal | 09/11/2026 |
 
@@ -19,7 +19,7 @@ Entrega 1. Jogo pedido diretamente pelo editor (slug `andromedas-edge`). Escrito
 
 **Edição.** O manual é da edição brasileira (Galápagos) e os nomes do tutorial são os dela. O Apêndice avisa que parte do conteúdo citado nele é de expansões e promos ainda não publicadas no Brasil (Apêndice, p. 2); o tutorial não usa esse conteúdo.
 
-**Extensão.** O tutorial tem cerca de 10 mil palavras contando tabelas, exercícios e blocos recolhidos (a página mostra "Leitura do essencial: cerca de 15 min"). Passa do alvo do BRIEF porque o jogo tem 28 páginas de regras, dois tipos de turno, quatro tipos de região, cinco trilhas com espaços próprios, uma batalha em seis etapas e um sistema de eventos; o de Clank! tem 8 mil palavras. Nada de expansão entrou.
+**Extensão.** Depois das correções da auditoria, o tutorial tem cerca de 8.800 palavras contando tabelas, exercícios, blocos recolhidos e endereços (a página mostra "Leitura do essencial: cerca de 13 min"); a primeira versão tinha 10 mil. Passa do alvo do BRIEF porque o jogo tem 28 páginas de regras, dois tipos de turno, quatro tipos de região, cinco trilhas com espaços próprios, uma batalha em seis etapas e um sistema de eventos; o de Clank! tem 8 mil palavras. Nada de expansão entrou.
 
 ## 2. Glossário (termos da edição brasileira)
 
@@ -126,7 +126,19 @@ Marcação: `[BR p. N]` manual brasileiro; `[Ap. p. N]` Apêndice; `[ilustr.]` l
 
 **Opcionais** 48. Regiões especiais, cartas de destino, modo 2x2 [BR p. 26 e 27] V.
 
-**Lacunas** L1. Comprimento da trilha de eventos e posição exata dos espaços iniciais: só na ilustração (2J, 3J, 4-5J), sem texto; o guia diz "espaço inicial do número de jogadores". L2. Custo exato de cada posição nas colunas de módulos: impresso no tabuleiro, não no texto; o guia remete ao tabuleiro. L3. Valores do 2º espaço de cofre e posições de cada espaço nas trilhas: não citados.
+**Acrescentado depois da auditoria independente**
+49. Espaços iniciais dos eventos 1-2J, 3J e 4-5J [ilustr. p. 4] I.
+50. Invasores A a D "pelo método que preferir"; figuras montadas nos suportes [BR p. 3 e 4] V.
+51. Fichas de mecafago, 5, usadas por carta de evento [BR p. 3; Ap. p. 16] V.
+52. Exceção da classe S no Ataque Invasor: com S na região ativa, outros S ao alcance ainda atacam [BR p. 11] V.
+53. Recompensa da classe S uma vez por batalha; sem recompensa para invasor removido por carta; invasores são adversários e "naves" para cartas [Ap. p. 12] V.
+54. Quem dispara o evento continua jogador ativo até o fim dele; evento em curso quando o fim é desencadeado é resolvido até o fim [Ap. p. 14] V.
+55. Números das trilhas: cofre 1 e 2 PV por recurso; limite da mão 6 e 7; Nível 1 logo acima do espaço inicial [ilustr. p. 4 e 5] I. Desenvolvimento vale ao menos Nível 1, porque construir já sobe 1 espaço [dedução, BR p. 17 e ilustr.] I.
+56. Cor do planeta = cor das luas [BR p. 4] V; tipo de desenvolvimento impresso na peça [BR p. 17] V.
+57. Bônus de batalha do desenvolvimento "na região ativa ou adjacente" [BR p. 21] V (a p. 17 diz "adjacente").
+58. Nave construída fica na Baía de Lançamento [BR p. 15] V.
+
+**Lacunas** L1. Comprimento da trilha de eventos: só na ilustração. L2. Custo de cada posição nas colunas de módulos: impresso no tabuleiro. L3. Qual lado da estação usar (p. 6 só diz que há dois). L4. Número do "1º espaço" da trilha de PV (p. 7); leitura do guia: o espaço 1. L5. Adjacência e diagonais: não definidas; leitura do guia: peças que dividem um lado. L6. Movimento livre de naves: não existe ação de mover; só Escalada, cartas e efeitos (p. 15 e 21; Ap. p. 22 a 26). L7. Pilha de planetas ou baralho de eventos vazios. L8. Luas no bônus de cofre; leitura do guia: não contam.
 
 ## 4. Ordem do ensino
 
@@ -162,7 +174,7 @@ Passos sem figura própria: 1 (o tabuleiro inteiro aparece nas figuras de mapa e
 - Peças iniciais: 2 j. 10, 3 j. 12, 4 j. 14. Líderes: 6 + 2 + 1 = 9.
 - Comece: você 1 dado, mira 1; Vorticon 2 dados, mira 1. [5] contra [4, 3]: você vence. [5] contra [5, 2]: Vorticon vence.
 - Etapa 2: energia 1 + 2 − 1 (caça) = 2; − 1 no módulo de comércio = 1; titânio 1 − 1 = 0; 4 naves voltam.
-- Etapa 3: exemplo do manual 2 + 2 + 1 + 2 = 7; exemplo próprio 3 + 2 + 1 + 1 = 7; teto min(13, 10) = 10.
+- Etapa 3: exemplo do manual 2 + 2 + 1 + 2 = 7; exemplo próprio, igual ao texto (cidade 3, nebulosa vizinha 2, duas Bases Aliadas vizinhas com 1 cada) = 7; teto min(13, 10) = 10.
 - Etapa 4: manual, amarelo 1 + 1 + 3 + 1 = 6, mira 3; azul 1 + 2 + 2 = 5, mira 2. Próprio: 2 + 3 + 1 = 6 (limite). Mira 2 + 1 = 3. [6, 2] contra [6, 2, 1]: o segundo vence.
 - Etapa 5: evento 9 − 2 = 7. Manual: 62 → 121 → 145 → 137 → 147 → 163 → 165 (confere com a p. 25). Próprio: 58 + 37 = 95; + 12 = 107; − 2 = 105; + 6 = 111; + 1 = 112.
 - Avaliação: 3 módulos x 2 = 6.
@@ -172,4 +184,4 @@ Passos sem figura própria: 1 (o tabuleiro inteiro aparece nas figuras de mapa e
 - Travessão e meia-risca no tutorial: 0.
 - `tools/vicios.py` (função `avisos` aplicada ao texto do tutorial; o arquivo não tem linha de comando): 0 aviso.
 - `python3 tools/checar_comece.py docs/como-jogar/andromedas-edge/tutorial.md`: "seção Comece a jogar dentro da diretriz".
-- Conversor testado numa cópia de `tools/` no scratchpad (`.../d1109/andromedas-edge/preview/`), com `"publicar": true` só na cópia: página gerada, 13 figuras e 4 fotos achadas, toda seção com imagem, "Leitura do essencial: cerca de 15 min". Nada foi gerado no repositório.
+- Conversor testado numa cópia de `tools/` no scratchpad (`.../d1109/andromedas-edge/preview/`), com `"publicar": true` só na cópia, antes e depois das correções: página gerada, figuras e fotos achadas, toda seção com imagem, "Leitura do essencial: cerca de 13 min". Nada foi gerado no repositório.

@@ -15,8 +15,8 @@
   "Cada módulo recebido e cada desenvolvimento construído sobem uma trilha de progresso, que paga bônus na partida e PV no fim.",
   "Batalha compara o maior dado de cada lado; mais naves na região sobem a mira, o mínimo que cada dado pode mostrar."
  ],
- "leitura_min": 15,
+ "leitura_min": 13,
  "etapas": 5,
  "chamada": "Naves que trabalham no mapa e voltam para alimentar a estação. Começa com a mesa montada passo a passo e um resumo para jogar o primeiro turno em 6 minutos, e segue em cinco etapas, do primeiro Lançamento à pontuação final.",
- "publicar": false
+ "publicar": true
 }

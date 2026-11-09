@@ -1,6 +1,6 @@
 # Auditoria: Como Jogar Andromeda's Edge
 
-Entrega 3. Autoverificação de quem escreveu, regra por regra, contra o livro de regras da edição brasileira (Galápagos, AED001, v1.0) e o Apêndice da mesma edição, em 09/11/2026. A auditoria independente (conferência contra o manual e partida simulada) fica para outros agentes; até lá, `"publicar": false`.
+Entrega 3. Autoverificação de quem escreveu, regra por regra, contra o livro de regras da edição brasileira (Galápagos, AED001, v1.0) e o Apêndice da mesma edição, em 09/11/2026. A auditoria independente veio depois (seção 7); `"publicar"` segue `false` até a decisão do coordenador.
 
 ## 1. Fontes efetivamente usadas
 
@@ -78,3 +78,33 @@ Cada passo da montagem que o manual mostra tem figura recortada (lista no dossi�
 - Habilidades de facção, aprimoramentos neutros e cartas táticas específicas não são ensinados um a um (o Apêndice tem 28 páginas sobre isso); o guia ensina o sistema e manda ler a carta.
 - O vídeo do Duque é uma partida resumida, não uma explicação de regras.
 - Esta é uma autoverificação: falta a auditoria independente e o teste de execução por um leitor que só tenha o tutorial.
+
+## 7. Auditoria independente e correções (09/11/2026)
+
+Resultado: conferência de regras "aprovado com correções"; partida simulada "sim com ajustes", com todas as respostas certas. O que mudou no tutorial:
+
+1. Meia-lua da indústria: o benefício vem ao ativar os dois módulos, em qualquer ordem (p. 16). Era "qualquer um dos dois", erro.
+2. Legenda de batalha-dados: é o quadro do Resultado; verde 3-2-2 perde; azul 5-4 e invasores 5-3-3 empatam no 5, azul vence no 4 (p. 22).
+3. Legenda de setup-lideres: dois azuis e dois verdes na nebulosa sorteada por eles; um de cada cor por Base.
+4. Ataque Invasor: exceção da classe S completa no passo 1 da etapa 4 e no resumo de 6 minutos (p. 11).
+5. Tabela das Bases: Campo Maximus e de Odessa pagam o custo impresso da posição (p. 10, 16 e 28).
+6. Compra de módulos: "traço acima do ícone do módulo na ação" (p. 16).
+7. Legenda de setup-invasores: A, B e C; a D está cortada na ilustração do manual.
+8. Exercício do Lançamento subsequente: "e que não seja nebulosa" (p. 9 e 15).
+9. `[!edicao]` de Lançamento em região com invasor: reforçado com Apêndice p. 12.
+10. Componentes: fichas de mecafago (p. 3; Ap. p. 16), peças de região especial e auxílios ao jogador.
+11. `contas.py`: o exemplo da cidade agora é o mesmo do texto.
+12. Recompensa do Vorticon com Apêndice p. 12; "uma vez só" explicado como uma vez por batalha (Ap. p. 12).
+13. Duração 40 a 200 min marcada como número oficial com a expansão, nas fontes e no JSON.
+14. Novo bloco "Palavras do jogo" logo depois de "A ideia do jogo", sem negrito (o portão limita a 4 termos em negrito na ideia).
+15. `[!edicao]` sobre movimento das naves (p. 15 e 21; Ap. p. 22 a 26).
+16. `[!edicao]` dos números das trilhas (cofre 1 e 2, mão 6 e 7, Nível 1 acima do inicial; ilustração p. 4 e 5) e `[!edicao]` "Luas no cofre" (leitura do guia).
+17. Lados da estação e 1º espaço de PV: `[!edicao]` com leitura do guia; espaço dos eventos por número de jogadores na tabela (1-2J, 3J, 4-5J).
+18. Invasores A a D: "pelo método que preferir", com os suportes (p. 3 e 4).
+19. Legendas: só a numeração dos passos do guia.
+20. Planeta, cor da lua e tipo de desenvolvimento ligados (p. 4 e 17); nebulosas "na borda do mapa (na ilustração, a faixa de cima)" (p. 8); bônus de batalha "na região dele ou numa adjacente" (p. 21).
+21. Eventos: quem joga continua ativo, evento em curso no fim é resolvido (Ap. p. 14); pilha e baralho vazios como lacuna.
+22. Aprimoramento: a nave construída vai para a Baía de Lançamento (p. 15); Operações Táticas "pode fazer".
+23. Cortes: coluna "Para quê" da tabela de componentes, "Critério para começar a jogar", créditos de revisão nas fontes, "Antes de tudo" e "Como este guia ensina" encurtados (mantidos porque o BRIEF os exige), legendas e `[!edicao]` de limites e custos encurtados, exemplo de batalha do manual resumido, foto de componentes tirada da montagem (o gerador já põe as fotos).
+
+Tamanho: de cerca de 10.100 para 8.800 palavras (contagem bruta do arquivo). O alvo de 7.000 não foi alcançado sem cortar regra; as novidades pedidas (glossário, oito blocos novos) somam cerca de 600 palavras.
