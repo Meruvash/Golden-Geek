@@ -1,5 +1,5 @@
 {
- "gerado": "2026-11-08T19:31-03:00",
+ "gerado": "2026-11-09T04:11-03:00",
  "user_agent": "EliteBoardgamers/1.0 (+https://eliteboardgamers.com.br/black/robo/)",
  "links": [
   {
@@ -24,7 +24,7 @@
     "(fora do site: retirada do /black/ pela auditoria)"
    ],
    "status": "ERRO",
-   "motivo": "página sem sinal de produto (sem JSON-LD Product/Offer, og:type product nem preço e botão de compra)",
+   "motivo": "página de outro jogo (cartão: “Sky Towers”; página: “Produto não encontrado - Place Games | Loja de Board Games - Locadora de Jogos | Produto não encontrado - Place Games | ”)",
    "http": 200,
    "url_final": "https://www.placegames.com.br/sem-resultados-na-busca"
   },
@@ -81,19 +81,6 @@
    "url_final": "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/expansoes/jogo-iron-maiden-character-pack-3-expansao-p"
   },
   {
-   "url": "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/exploding-kittens-bem-vs-mal-p",
-   "categoria": "oferta (mais lojas)",
-   "paginas": [
-    "/black/"
-   ],
-   "jogo": "Exploding Kittens: Bem vs Mal",
-   "loja": "Bravo Jogos",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
-   "url_final": "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/exploding-kittens-bem-vs-mal-p"
-  },
-  {
    "url": "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/imperium-classics-p",
    "categoria": "oferta (mais lojas)",
    "paginas": [
@@ -120,17 +107,17 @@
    "url_final": "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-battleship-grab-e-go-p"
   },
   {
-   "url": "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-fateflip-arrastado-pelo-mar-p",
+   "url": "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-deep-sea-adventure-impulso-p",
    "categoria": "oferta (mais lojas)",
    "paginas": [
     "/black/"
    ],
-   "jogo": "FateFlip: Arrastado pelo Mar",
+   "jogo": "Deep Sea Adventure Boost",
    "loja": "Bravo Jogos",
    "status": "ok",
    "motivo": "página do produto",
    "http": 200,
-   "url_final": "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-fateflip-arrastado-pelo-mar-p"
+   "url_final": "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-deep-sea-adventure-impulso-p"
   },
   {
    "url": "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-hi-ho-cherry-meu-primeiro-pomarzinho-p",
@@ -224,32 +211,6 @@
    "url_final": "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/paris"
   },
   {
-   "url": "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/wingspan-oceania-expansao",
-   "categoria": "oferta",
-   "paginas": [
-    "/black/"
-   ],
-   "jogo": "Wingspan: Expansão Oceania",
-   "loja": "Bravo Jogos",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
-   "url_final": "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/wingspan-oceania-expansao"
-  },
-  {
-   "url": "https://brecholudico.com.br/produto/hitster-verao/",
-   "categoria": "oferta",
-   "paginas": [
-    "/black/"
-   ],
-   "jogo": "Hitster: Verão",
-   "loja": "Brechó Lúdico",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
-   "url_final": "https://brecholudico.com.br/produto/hitster-verao/"
-  },
-  {
    "url": "https://loja.frodosbg.com.br/citadels-2nd-edicao-revisada",
    "categoria": "oferta",
    "paginas": [
@@ -302,19 +263,6 @@
    "url_final": "https://www.alquimistasdosjogos.com.br/jogos/fateflip-arrastado-pelo-mar"
   },
   {
-   "url": "https://www.alquimistasdosjogos.com.br/jogos/loot",
-   "categoria": "oferta",
-   "paginas": [
-    "/black/"
-   ],
-   "jogo": "Loot",
-   "loja": "Alquimistas dos Jogos",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
-   "url_final": "https://www.alquimistasdosjogos.com.br/jogos/loot"
-  },
-  {
    "url": "https://www.alquimistasdosjogos.com.br/jogos/the-mandalorian-adventures-cla-de-dois",
    "categoria": "oferta",
    "paginas": [
@@ -341,43 +289,17 @@
    "url_final": "https://www.amazon.com.br/dp/8568059171"
   },
   {
-   "url": "https://www.amazon.com.br/dp/B0793MT3Y6",
+   "url": "https://www.amazon.com.br/dp/B0BD5TP5TL",
    "categoria": "oferta",
    "paginas": [
     "/black/"
    ],
-   "jogo": "Space Base",
+   "jogo": "Duna: Imperium",
    "loja": "Amazon",
    "status": "ok",
    "motivo": "página do produto",
    "http": 200,
-   "url_final": "https://www.amazon.com.br/dp/B0793MT3Y6"
-  },
-  {
-   "url": "https://www.amazon.com.br/dp/B08XW9T9BW",
-   "categoria": "oferta",
-   "paginas": [
-    "/black/"
-   ],
-   "jogo": "Architects of the West Kingdom: Works of Wonder: Christ the Redeemer Wonder",
-   "loja": "Amazon",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
-   "url_final": "https://www.amazon.com.br/dp/B08XW9T9BW"
-  },
-  {
-   "url": "https://www.amazon.com.br/dp/B0FGG1XZZX",
-   "categoria": "oferta",
-   "paginas": [
-    "/black/"
-   ],
-   "jogo": "Triominos Junior",
-   "loja": "Amazon",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
-   "url_final": "https://www.amazon.com.br/dp/B0FGG1XZZX"
+   "url_final": "https://www.amazon.com.br/dp/B0BD5TP5TL"
   },
   {
    "url": "https://www.animusludere.com.br/dp6",
@@ -404,19 +326,6 @@
    "motivo": "página do produto",
    "http": 200,
    "url_final": "https://www.animusludere.com.br/parvati_ml"
-  },
-  {
-   "url": "https://www.boardgamebarato.com.br/alien-attack-usa",
-   "categoria": "oferta (mais lojas)",
-   "paginas": [
-    "/black/"
-   ],
-   "jogo": "Alien Attack: USA",
-   "loja": "Board Game Barato",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
-   "url_final": "https://www.boardgamebarato.com.br/alien-attack-usa"
   },
   {
    "url": "https://www.boardgamebarato.com.br/destemidos-norte-da-africa",
@@ -471,19 +380,6 @@
    "url_final": "https://www.caixinhaboardgames.com.br/produtos/50-animais-marinhos/?entry_path=category"
   },
   {
-   "url": "https://www.caixinhaboardgames.com.br/produtos/50-filhotes/?entry_path=category",
-   "categoria": "oferta (mais lojas)",
-   "paginas": [
-    "/black/"
-   ],
-   "jogo": "50 Filhotes",
-   "loja": "Caixinha Boardgames",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
-   "url_final": "https://www.caixinhaboardgames.com.br/produtos/50-filhotes/?entry_path=category"
-  },
-  {
    "url": "https://www.caixinhaboardgames.com.br/produtos/a-fake-artist-goes-to-new-york/?entry_path=category",
    "categoria": "oferta",
    "paginas": [
@@ -524,7 +420,7 @@
   },
   {
    "url": "https://www.caixinhaboardgames.com.br/produtos/deep-sea-adventure-impulso/?entry_path=category",
-   "categoria": "oferta (mais lojas)",
+   "categoria": "oferta",
    "paginas": [
     "/black/"
    ],
@@ -547,6 +443,19 @@
    "motivo": "página do produto",
    "http": 200,
    "url_final": "https://www.caixinhaboardgames.com.br/produtos/dobble-catan/?entry_path=category"
+  },
+  {
+   "url": "https://www.caixinhaboardgames.com.br/produtos/dungeons-sleeping-gods/?entry_path=category",
+   "categoria": "oferta (mais lojas)",
+   "paginas": [
+    "/black/"
+   ],
+   "jogo": "Sleeping Gods: Dungeons",
+   "loja": "Caixinha Boardgames",
+   "status": "ok",
+   "motivo": "página do produto",
+   "http": 200,
+   "url_final": "https://www.caixinhaboardgames.com.br/produtos/dungeons-sleeping-gods/?entry_path=category"
   },
   {
    "url": "https://www.caixinhaboardgames.com.br/produtos/escape-the-dark-castle/?entry_path=category",
@@ -729,19 +638,6 @@
    "motivo": "página do produto",
    "http": 200,
    "url_final": "https://www.caixinhaboardgames.com.br/produtos/pets-expansao-piratas/?entry_path=category"
-  },
-  {
-   "url": "https://www.caixinhaboardgames.com.br/produtos/piles/?entry_path=category",
-   "categoria": "oferta",
-   "paginas": [
-    "/black/"
-   ],
-   "jogo": "Piles!",
-   "loja": "Caixinha Boardgames",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
-   "url_final": "https://www.caixinhaboardgames.com.br/produtos/piles/?entry_path=category"
   },
   {
    "url": "https://www.caixinhaboardgames.com.br/produtos/piratas-10-anos/?entry_path=category",
@@ -991,19 +887,6 @@
    "url_final": "https://www.facilshopping.com.br/produtos/a-tripulacao-missao-no-mar-profundo-devir-g8osy/?entry_path=category"
   },
   {
-   "url": "https://www.facilshopping.com.br/produtos/arkham-horror-card-game-a-cidade-submersa-exp-campanha/?entry_path=category",
-   "categoria": "oferta",
-   "paginas": [
-    "/black/"
-   ],
-   "jogo": "Arkham Horror: Card Game - A Cidade Submersa (Expansão de Campanha)",
-   "loja": "Facil Shopping",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
-   "url_final": "https://www.facilshopping.com.br/produtos/arkham-horror-card-game-a-cidade-submersa-exp-campanha/?entry_path=category"
-  },
-  {
    "url": "https://www.facilshopping.com.br/produtos/arkham-horror-card-game-a-cidade-submersa-exp-investigador/?entry_path=category",
    "categoria": "oferta",
    "paginas": [
@@ -1160,19 +1043,6 @@
    "url_final": "https://www.leaolivros.com.br/neuroshima-hex-battle-policia-de-aco-vs-fera"
   },
   {
-   "url": "https://www.leaolivros.com.br/nichtlustig-superlemming",
-   "categoria": "oferta",
-   "paginas": [
-    "/black/"
-   ],
-   "jogo": "Superlemming",
-   "loja": "Leão Livros",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
-   "url_final": "https://www.leaolivros.com.br/nichtlustig-superlemming"
-  },
-  {
    "url": "https://www.leaolivros.com.br/sizeup",
    "categoria": "oferta",
    "paginas": [
@@ -1199,19 +1069,6 @@
    "url_final": "https://www.livtoys.com.br/promocao/klask"
   },
   {
-   "url": "https://www.masmorra.com.br/produtos/con11819",
-   "categoria": "oferta",
-   "paginas": [
-    "/black/"
-   ],
-   "jogo": "Night Parade of a Hundred Yokai: Cursed Throne Expansion",
-   "loja": "Masmorra",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
-   "url_final": "https://www.masmorra.com.br/produtos/con11819"
-  },
-  {
    "url": "https://www.masmorra.com.br/produtos/con11824",
    "categoria": "oferta",
    "paginas": [
@@ -1226,7 +1083,7 @@
   },
   {
    "url": "https://www.mecadosjogos.com.br/deep-sea-adventure-boost-p1148",
-   "categoria": "oferta",
+   "categoria": "oferta (mais lojas)",
    "paginas": [
     "/black/"
    ],
@@ -1236,19 +1093,6 @@
    "motivo": "página do produto",
    "http": 200,
    "url_final": "https://www.mecadosjogos.com.br/deep-sea-adventure-boost-p1148"
-  },
-  {
-   "url": "https://www.mecadosjogos.com.br/destemidos-reforcos-p350",
-   "categoria": "oferta (mais lojas)",
-   "paginas": [
-    "/black/"
-   ],
-   "jogo": "Destemidos: Reforços",
-   "loja": "Meca dos Jogos",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
-   "url_final": "https://www.mecadosjogos.com.br/destemidos-reforcos-p350"
   },
   {
    "url": "https://www.mecadosjogos.com.br/fateflip-arrastado-pelo-mar-p549",
@@ -1313,20 +1157,20 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB16092602%3Fpdp_filters%3Ditem_id%253AMLB3992344771&tid=1ffa483f-6122-4878-aa8c-cf88e8146c31"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB16092602%3Fpdp_filters%3Ditem_id%253AMLB3992344771&tid=b3530ffa-d69d-485c-96dc-ab30732c640a"
   },
   {
-   "url": "https://www.mercadolivre.com.br/p/MLB19050659",
+   "url": "https://www.mercadolivre.com.br/p/MLB19307754?pdp_filters=item_id:MLB5270210746",
    "categoria": "oferta",
    "paginas": [
     "/black/"
    ],
-   "jogo": "CATAN",
+   "jogo": "Hamburgueria Maluca",
    "loja": "Mercado Livre",
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB19050659&tid=0e87b5d9-5b54-4dcc-b06b-3dcc0cd97ef3"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB19307754%3Fpdp_filters%3Ditem_id%253AMLB5270210746&tid=1caae4de-f092-4ad4-a03c-928d47e1f264"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB19709546?pdp_filters=item_id:MLB3509401581",
@@ -1339,7 +1183,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB19709546%3Fpdp_filters%3Ditem_id%253AMLB3509401581&tid=1c41c2b1-d66e-420f-88f8-ef69af837750"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB19709546%3Fpdp_filters%3Ditem_id%253AMLB3509401581&tid=6ddb23cd-85e7-4c9f-a1ef-3e9ef31a2251"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB19709959?pdp_filters=item_id:MLB5495621455",
@@ -1352,7 +1196,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB19709959%3Fpdp_filters%3Ditem_id%253AMLB5495621455&tid=0efc9509-ad82-4df9-ac64-c5bb6957a26e"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB19709959%3Fpdp_filters%3Ditem_id%253AMLB5495621455&tid=d5c90d17-5bc0-4ba8-ba29-03d57ab47051"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB20270328?pdp_filters=item_id:MLB5492433269",
@@ -1365,7 +1209,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB20270328%3Fpdp_filters%3Ditem_id%253AMLB5492433269&tid=0a523bb5-11a4-4e78-8762-eab8947fea71"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB20270328%3Fpdp_filters%3Ditem_id%253AMLB5492433269&tid=56478683-9f5c-4aeb-bb77-046aa76c3130"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB20997954?pdp_filters=item_id:MLB7810701466",
@@ -1378,7 +1222,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB20997954%3Fpdp_filters%3Ditem_id%253AMLB7810701466&tid=4170596d-b1b4-425e-8a27-9c79a6ace654"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB20997954%3Fpdp_filters%3Ditem_id%253AMLB7810701466&tid=d18b66ae-d122-41bc-a2b7-6282859f747b"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB21150345?pdp_filters=item_id:MLB5487190699",
@@ -1391,7 +1235,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB21150345%3Fpdp_filters%3Ditem_id%253AMLB5487190699&tid=b54d2666-e412-4eec-9ab3-534cf291f58b"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB21150345%3Fpdp_filters%3Ditem_id%253AMLB5487190699&tid=f8bfb836-7dee-4ff7-b837-3716daa4dc39"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB21419841?pdp_filters=item_id:MLB7706752846",
@@ -1404,7 +1248,20 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB21419841%3Fpdp_filters%3Ditem_id%253AMLB7706752846&tid=81a91379-4166-4e4a-86c9-2a3ef7ded9e6"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB21419841%3Fpdp_filters%3Ditem_id%253AMLB7706752846&tid=bb8da402-b08b-4711-8f95-4f47096527de"
+  },
+  {
+   "url": "https://www.mercadolivre.com.br/p/MLB22322369",
+   "categoria": "oferta",
+   "paginas": [
+    "/black/"
+   ],
+   "jogo": "Star Wars: Destiny: O Caminho da Força",
+   "loja": "Mercado Livre",
+   "status": "não verificável",
+   "motivo": "robots.txt proíbe robôs nesta página",
+   "http": null,
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB22322369&tid=2496b1cd-5c8f-46fd-a28a-f2c23f80e7f1"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB22659012?pdp_filters=item_id:MLB4647459246",
@@ -1417,7 +1274,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB22659012%3Fpdp_filters%3Ditem_id%253AMLB4647459246&tid=37421bb7-88fc-4936-b791-72db384837ce"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB22659012%3Fpdp_filters%3Ditem_id%253AMLB4647459246&tid=dcbb2284-c011-4c8a-b84d-f9f3e67ac5c2"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB22709368?pdp_filters=item_id:MLB5652240400",
@@ -1430,7 +1287,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB22709368%3Fpdp_filters%3Ditem_id%253AMLB5652240400&tid=870b7e38-af09-4393-81dc-e7bc1a9ce1ee"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB22709368%3Fpdp_filters%3Ditem_id%253AMLB5652240400&tid=4c401517-e644-4d70-bf06-d3f810bff844"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB23229744?pdp_filters=item_id:MLB4736921050",
@@ -1443,7 +1300,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB23229744%3Fpdp_filters%3Ditem_id%253AMLB4736921050&tid=b7fe4f73-9d6a-4f76-a28a-54f8d627e853"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB23229744%3Fpdp_filters%3Ditem_id%253AMLB4736921050&tid=b35ba942-9227-4767-98e7-fb4f58db9840"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB23278326?pdp_filters=item_id:MLB6549193888",
@@ -1456,7 +1313,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB23278326%3Fpdp_filters%3Ditem_id%253AMLB6549193888&tid=e5579e52-bbf6-41a0-982a-c4095fd8b6e8"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB23278326%3Fpdp_filters%3Ditem_id%253AMLB6549193888&tid=450f1276-667b-49b9-b870-d32197a4f187"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB23425290?pdp_filters=item_id:MLB3625614489",
@@ -1469,7 +1326,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB23425290%3Fpdp_filters%3Ditem_id%253AMLB3625614489&tid=ba059b19-0b4e-4c1b-8793-724231f3a8f2"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB23425290%3Fpdp_filters%3Ditem_id%253AMLB3625614489&tid=94366d0a-4bb4-43d3-95bf-543407cef2f9"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB25811837?pdp_filters=item_id:MLB4598515657",
@@ -1482,7 +1339,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB25811837%3Fpdp_filters%3Ditem_id%253AMLB4598515657&tid=33ea826e-d8c6-431a-8c33-0b1992049760"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB25811837%3Fpdp_filters%3Ditem_id%253AMLB4598515657&tid=f453e0da-14a1-4477-9e73-11441566ee1e"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB26098574?pdp_filters=item_id:MLB3913887582",
@@ -1495,7 +1352,20 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB26098574%3Fpdp_filters%3Ditem_id%253AMLB3913887582&tid=9f6368f0-6446-4dec-a870-b89e31c2f426"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB26098574%3Fpdp_filters%3Ditem_id%253AMLB3913887582&tid=743cf3cb-33e0-4172-9393-446a89ab6526"
+  },
+  {
+   "url": "https://www.mercadolivre.com.br/p/MLB27358652",
+   "categoria": "oferta",
+   "paginas": [
+    "/black/"
+   ],
+   "jogo": "Teotihuacan: Shadow of Xitle",
+   "loja": "Mercado Livre",
+   "status": "não verificável",
+   "motivo": "robots.txt proíbe robôs nesta página",
+   "http": null,
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB27358652&tid=3e0071bb-2f8e-4e5c-99dd-3112926f7302"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB34102404?pdp_filters=item_id:MLB3741193397",
@@ -1508,7 +1378,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB34102404%3Fpdp_filters%3Ditem_id%253AMLB3741193397&tid=40294667-9d2e-4b33-904c-48e431628910"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB34102404%3Fpdp_filters%3Ditem_id%253AMLB3741193397&tid=4d4b291b-6f2f-468f-8716-7605d692b5eb"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB35091678?pdp_filters=item_id:MLB5742077436",
@@ -1521,7 +1391,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB35091678%3Fpdp_filters%3Ditem_id%253AMLB5742077436&tid=d93afd19-1ba6-4d16-8bc8-405c3276b335"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB35091678%3Fpdp_filters%3Ditem_id%253AMLB5742077436&tid=3047e9f1-c7ac-4c12-832e-25bdb8969db4"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB35742049?pdp_filters=item_id:MLB5337457588",
@@ -1534,7 +1404,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB35742049%3Fpdp_filters%3Ditem_id%253AMLB5337457588&tid=dc331238-7880-462e-a945-5196d997c5e8"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB35742049%3Fpdp_filters%3Ditem_id%253AMLB5337457588&tid=1251f72a-9227-49dc-a86d-a982b0c9fe7c"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB37841196?pdp_filters=item_id:MLB3755358489",
@@ -1547,20 +1417,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB37841196%3Fpdp_filters%3Ditem_id%253AMLB3755358489&tid=93fc5fc4-29b4-4fd1-be7b-f7c1fbcc5fca"
-  },
-  {
-   "url": "https://www.mercadolivre.com.br/p/MLB38492802?pdp_filters=item_id:MLB7417796102",
-   "categoria": "oferta",
-   "paginas": [
-    "/black/"
-   ],
-   "jogo": "Revanche",
-   "loja": "Mercado Livre",
-   "status": "não verificável",
-   "motivo": "robots.txt proíbe robôs nesta página",
-   "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB38492802%3Fpdp_filters%3Ditem_id%253AMLB7417796102&tid=90da138b-379e-47eb-a4d6-728350b6d9b2"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB37841196%3Fpdp_filters%3Ditem_id%253AMLB3755358489&tid=a864918c-1168-4e6c-a3c4-cda985d7905d"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB39292103?pdp_filters=item_id:MLB3976803439",
@@ -1573,20 +1430,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB39292103%3Fpdp_filters%3Ditem_id%253AMLB3976803439&tid=a479a1f8-aa07-4ffb-8608-5b38269d3d74"
-  },
-  {
-   "url": "https://www.mercadolivre.com.br/p/MLB39446616?pdp_filters=item_id:MLB5258649700",
-   "categoria": "oferta",
-   "paginas": [
-    "/black/"
-   ],
-   "jogo": "Sequence Kids",
-   "loja": "Mercado Livre",
-   "status": "não verificável",
-   "motivo": "robots.txt proíbe robôs nesta página",
-   "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB39446616%3Fpdp_filters%3Ditem_id%253AMLB5258649700&tid=d7f17704-0575-4421-a4f8-0e653d8aaba8"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB39292103%3Fpdp_filters%3Ditem_id%253AMLB3976803439&tid=2d29860f-a9f3-4c98-88c8-90bde892b7e9"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB40442410?pdp_filters=item_id:MLB3946840827",
@@ -1599,7 +1443,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB40442410%3Fpdp_filters%3Ditem_id%253AMLB3946840827&tid=33a96457-20cb-4936-b5a1-c514150ce2ce"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB40442410%3Fpdp_filters%3Ditem_id%253AMLB3946840827&tid=334d0a22-9aa5-4c3e-a164-a664afca3caa"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB41372525",
@@ -1612,20 +1456,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB41372525&tid=11d7f366-db73-44b7-842f-4e0366a6b4fe"
-  },
-  {
-   "url": "https://www.mercadolivre.com.br/p/MLB44919803",
-   "categoria": "oferta",
-   "paginas": [
-    "/black/"
-   ],
-   "jogo": "Sushi Go Party!",
-   "loja": "Mercado Livre",
-   "status": "não verificável",
-   "motivo": "robots.txt proíbe robôs nesta página",
-   "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB44919803&tid=f3d31a74-2d25-480b-84f6-a70a3b2780ae"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB41372525&tid=8a208881-7fec-4aa0-be2a-f30889b139aa"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB47329717?pdp_filters=item_id:MLB6214538674",
@@ -1638,7 +1469,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB47329717%3Fpdp_filters%3Ditem_id%253AMLB6214538674&tid=75971947-5654-4301-a95a-339c2e6211f9"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB47329717%3Fpdp_filters%3Ditem_id%253AMLB6214538674&tid=46431327-b0f1-4772-addd-4df6228c852d"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB48880144?pdp_filters=item_id:MLB4219165897",
@@ -1651,7 +1482,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB48880144%3Fpdp_filters%3Ditem_id%253AMLB4219165897&tid=302b09b9-2361-49d6-9479-24a6501c2ac7"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB48880144%3Fpdp_filters%3Ditem_id%253AMLB4219165897&tid=4fc94bc1-f663-4755-b18d-f3ea2d955ce9"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB50321038?pdp_filters=item_id:MLB4907959717",
@@ -1664,7 +1495,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB50321038%3Fpdp_filters%3Ditem_id%253AMLB4907959717&tid=0bef72b0-99ff-4acd-9cc2-4f67ba9a8fa6"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB50321038%3Fpdp_filters%3Ditem_id%253AMLB4907959717&tid=b66c010e-4920-4bee-8474-3cde33a4663a"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB51032628?pdp_filters=item_id:MLB5524577636",
@@ -1677,7 +1508,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB51032628%3Fpdp_filters%3Ditem_id%253AMLB5524577636&tid=64a6c5ea-061f-41b8-b699-bbcdcaf2c94c"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB51032628%3Fpdp_filters%3Ditem_id%253AMLB5524577636&tid=02df89ac-f322-43c6-a1ab-b0bde1de318d"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB58552201?pdp_filters=item_id:MLB4359851835",
@@ -1690,20 +1521,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB58552201%3Fpdp_filters%3Ditem_id%253AMLB4359851835&tid=42d37a2b-c5dd-42c0-93af-3b6d52288af5"
-  },
-  {
-   "url": "https://www.mercadolivre.com.br/p/MLB61316731",
-   "categoria": "oferta",
-   "paginas": [
-    "/black/"
-   ],
-   "jogo": "HITSTER",
-   "loja": "Mercado Livre",
-   "status": "não verificável",
-   "motivo": "robots.txt proíbe robôs nesta página",
-   "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB61316731&tid=1a3bfe4f-c27a-48b4-8e74-9f4d24f1c19c"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB58552201%3Fpdp_filters%3Ditem_id%253AMLB4359851835&tid=174635a8-d059-4df3-8ea5-70c071d11379"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB62548317?pdp_filters=item_id:MLB6293749138",
@@ -1716,7 +1534,20 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB62548317%3Fpdp_filters%3Ditem_id%253AMLB6293749138&tid=e5a8ef93-fbfe-4172-a497-7c92e352595e"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB62548317%3Fpdp_filters%3Ditem_id%253AMLB6293749138&tid=7c25f4b8-7d50-4912-a418-0d787f35d1db"
+  },
+  {
+   "url": "https://www.mercadolivre.com.br/p/MLB65630789?pdp_filters=item_id:MLB6040727544",
+   "categoria": "oferta",
+   "paginas": [
+    "/black/"
+   ],
+   "jogo": "Speed Cups",
+   "loja": "Mercado Livre",
+   "status": "não verificável",
+   "motivo": "robots.txt proíbe robôs nesta página",
+   "http": null,
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB65630789%3Fpdp_filters%3Ditem_id%253AMLB6040727544&tid=4f017fd8-7ae5-4dfd-ac6e-404c8dda7652"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB66827548?pdp_filters=item_id:MLB6660299536",
@@ -1729,7 +1560,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB66827548%3Fpdp_filters%3Ditem_id%253AMLB6660299536&tid=04f4a021-9097-4d8c-a306-5dcc644ecb17"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB66827548%3Fpdp_filters%3Ditem_id%253AMLB6660299536&tid=bb5be7a5-100d-4928-9cde-3725264e0f55"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB74523091?pdp_filters=item_id:MLB4812795033",
@@ -1742,7 +1573,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB74523091%3Fpdp_filters%3Ditem_id%253AMLB4812795033&tid=52cf16d6-44ff-453c-b8ef-ee33ec1b4473"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB74523091%3Fpdp_filters%3Ditem_id%253AMLB4812795033&tid=03dd0881-9085-4f31-a0b4-2a21f38c2670"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB75042549?pdp_filters=item_id:MLB4860618321",
@@ -1755,7 +1586,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB75042549%3Fpdp_filters%3Ditem_id%253AMLB4860618321&tid=335756bd-1485-4d35-b028-622d0ed4c85e"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB75042549%3Fpdp_filters%3Ditem_id%253AMLB4860618321&tid=26a43fc2-97f9-4135-a6e0-821292254538"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB8950241?pdp_filters=item_id:MLB3491700275",
@@ -1768,7 +1599,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB8950241%3Fpdp_filters%3Ditem_id%253AMLB3491700275&tid=2d8ddcc8-e6c2-4dfc-b691-a97ab942f530"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB8950241%3Fpdp_filters%3Ditem_id%253AMLB3491700275&tid=de8c18f7-00d1-412c-921d-3d8927d3878a"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB9644309?pdp_filters=item_id:MLB3625532223",
@@ -1781,7 +1612,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB9644309%3Fpdp_filters%3Ditem_id%253AMLB3625532223&tid=d46ed043-4111-4a11-8caf-15011d33467b"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB9644309%3Fpdp_filters%3Ditem_id%253AMLB3625532223&tid=66ff3b1c-f6f4-4e73-8ec7-ffe4c644a7e8"
   },
   {
    "url": "https://www.odisseiajogos.com.br/board-games/50-dinossauros",
@@ -1927,19 +1758,6 @@
    "url_final": "https://www.placegames.com.br/boardgames/score-cards"
   },
   {
-   "url": "https://www.placegames.com.br/boardgames/the-totem-game",
-   "categoria": "oferta",
-   "paginas": [
-    "/black/"
-   ],
-   "jogo": "The Totem Game",
-   "loja": "Place Games",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
-   "url_final": "https://www.placegames.com.br/boardgames/the-totem-game"
-  },
-  {
    "url": "https://www.placegames.com.br/draftosaurus-marina-e-show-aereo",
    "categoria": "oferta",
    "paginas": [
@@ -2031,17 +1849,17 @@
    "url_final": "https://www.placegames.com.br/skytearstormsear"
   },
   {
-   "url": "https://www.placegames.com.br/van-gogh",
+   "url": "https://www.placegames.com.br/sleeping-gods-dungeons",
    "categoria": "oferta",
    "paginas": [
     "/black/"
    ],
-   "jogo": "Van Gogh",
+   "jogo": "Sleeping Gods: Dungeons",
    "loja": "Place Games",
    "status": "ok",
    "motivo": "página do produto",
    "http": 200,
-   "url_final": "https://www.placegames.com.br/van-gogh"
+   "url_final": "https://www.placegames.com.br/sleeping-gods-dungeons"
   },
   {
    "url": "https://www.playeasy.com.br/50-filhotes",
@@ -2253,7 +2071,7 @@
   },
   {
    "url": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/night-parade-of-a-hundred-yokai-cursed-throne-expansion",
-   "categoria": "oferta (mais lojas)",
+   "categoria": "oferta",
    "paginas": [
     "/black/"
    ],
@@ -2330,6 +2148,19 @@
    "url_final": "https://www.tavernareal.com/tabuleiro/elephant-rally"
   },
   {
+   "url": "https://www.tavernareal.com/tabuleiro/expansoes/reload-capture-the-flag-expansao",
+   "categoria": "oferta",
+   "paginas": [
+    "/black/"
+   ],
+   "jogo": "Reload: Capture the Flag",
+   "loja": "Taverna Real",
+   "status": "ok",
+   "motivo": "página do produto",
+   "http": 200,
+   "url_final": "https://www.tavernareal.com/tabuleiro/expansoes/reload-capture-the-flag-expansao"
+  },
+  {
    "url": "https://www.tavernareal.com/tabuleiro/magic-maze-maximum-security",
    "categoria": "oferta (mais lojas)",
    "paginas": [
@@ -2343,8 +2174,21 @@
    "url_final": "https://www.tavernareal.com/tabuleiro/magic-maze-maximum-security"
   },
   {
+   "url": "https://www.tavernareal.com/tabuleiro/night-parade-cursed-throne-expansao",
+   "categoria": "oferta (mais lojas)",
+   "paginas": [
+    "/black/"
+   ],
+   "jogo": "Night Parade of a Hundred Yokai: Cursed Throne Expansion",
+   "loja": "Taverna Real",
+   "status": "ok",
+   "motivo": "página do produto",
+   "http": 200,
+   "url_final": "https://www.tavernareal.com/tabuleiro/night-parade-cursed-throne-expansao"
+  },
+  {
    "url": "https://www.tavernareal.com/tabuleiro/sleeping-gods-dungeons-expansao",
-   "categoria": "oferta",
+   "categoria": "oferta (mais lojas)",
    "paginas": [
     "/black/"
    ],
@@ -2354,32 +2198,6 @@
    "motivo": "página do produto",
    "http": 200,
    "url_final": "https://www.tavernareal.com/tabuleiro/sleeping-gods-dungeons-expansao"
-  },
-  {
-   "url": "https://www.placegames.com.br/the-mind",
-   "categoria": "loja",
-   "paginas": [
-    "/the-mind/"
-   ],
-   "jogo": null,
-   "loja": null,
-   "status": "ERRO",
-   "motivo": "página sem sinal de produto (sem JSON-LD Product/Offer, og:type product nem preço e botão de compra)",
-   "http": 200,
-   "url_final": "https://www.placegames.com.br/sem-resultados-na-busca"
-  },
-  {
-   "url": "https://www.placegames.com.br/themind",
-   "categoria": "loja",
-   "paginas": [
-    "/the-mind/"
-   ],
-   "jogo": null,
-   "loja": null,
-   "status": "ERRO",
-   "motivo": "página sem sinal de produto (sem JSON-LD Product/Offer, og:type product nem preço e botão de compra)",
-   "http": 200,
-   "url_final": "https://www.placegames.com.br/sem-resultados-na-busca"
   },
   {
    "url": "http://www.catanbrasil.com.br/",
@@ -4066,6 +3884,19 @@
    "url_final": "https://brecholudico.com.br/produto/gloomhaven/"
   },
   {
+   "url": "https://brecholudico.com.br/produto/hitster-verao/",
+   "categoria": "achado",
+   "paginas": [
+    "/black/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "ok",
+   "motivo": "página do produto",
+   "http": 200,
+   "url_final": "https://brecholudico.com.br/produto/hitster-verao/"
+  },
+  {
    "url": "https://brecholudico.com.br/produto/root/",
    "categoria": "loja",
    "paginas": [
@@ -4135,6 +3966,17 @@
    "paginas": [
     "/gloomhaven-jaws-of-the-lion/",
     "/under-falling-skies/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não conferido",
+   "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
+  },
+  {
+   "url": "https://brettspielbox.de/brettspiel-crowdfunding-news-45-26",
+   "categoria": "outro",
+   "paginas": [
+    "/noticias/arkham-horror-remastered-fecha-gamefound-5-milhoes/"
    ],
    "jogo": null,
    "loja": null,
@@ -11129,7 +10971,7 @@
    "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
   },
   {
-   "url": "https://wa.me/?text=Arkham%20Horror%20Remastered%20fecha%20no%20Gamefound%20com%20US%24%205%2C67%20milh%C3%B5es%20e%2013.693%20apoiadores%20%28via%20Elite%20Boardgamers%29%20https%3A%2F%2Feliteboardgamers.com.br%2Fnoticias%2Farkham-horror-remastered-fecha-gamefound-5-milhoes%2F",
+   "url": "https://wa.me/?text=Arkham%20Horror%20Remastered%20fecha%20no%20Gamefound%20e%20passa%20de%20US%24%205%2C7%20milh%C3%B5es%20com%20apoios%20tardios%20%28via%20Elite%20Boardgamers%29%20https%3A%2F%2Feliteboardgamers.com.br%2Fnoticias%2Farkham-horror-remastered-fecha-gamefound-5-milhoes%2F",
    "categoria": "outro",
    "paginas": [
     "/noticias/arkham-horror-remastered-fecha-gamefound-5-milhoes/"
@@ -12849,6 +12691,19 @@
    "url_final": "https://www.alquimistasdosjogos.com.br/sem-resultados-na-busca"
   },
   {
+   "url": "https://www.alquimistasdosjogos.com.br/jogos/loot",
+   "categoria": "achado",
+   "paginas": [
+    "/black/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "ok",
+   "motivo": "página do produto",
+   "http": 200,
+   "url_final": "https://www.alquimistasdosjogos.com.br/jogos/loot"
+  },
+  {
    "url": "https://www.alquimistasdosjogos.com.br/jogos/luz-final-edicao-deluxe-completa",
    "categoria": "loja",
    "paginas": [
@@ -12912,6 +12767,19 @@
    "url_final": "https://www.amazon.com.br/dp/B07CK1PMRT"
   },
   {
+   "url": "https://www.amazon.com.br/dp/B08XW9T9BW",
+   "categoria": "achado",
+   "paginas": [
+    "/black/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "ok",
+   "motivo": "página do produto",
+   "http": 200,
+   "url_final": "https://www.amazon.com.br/dp/B08XW9T9BW"
+  },
+  {
    "url": "https://www.amazon.com.br/dp/B0CFS3GZFL",
    "categoria": "achado",
    "paginas": [
@@ -12949,6 +12817,19 @@
    "motivo": "página do produto",
    "http": 200,
    "url_final": "https://www.amazon.com.br/dp/B0DB2LP9Z4"
+  },
+  {
+   "url": "https://www.amazon.com.br/dp/B0FGG1XZZX",
+   "categoria": "achado",
+   "paginas": [
+    "/black/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "ok",
+   "motivo": "página do produto",
+   "http": 200,
+   "url_final": "https://www.amazon.com.br/dp/B0FGG1XZZX"
   },
   {
    "url": "https://www.analog.games//gameItem/show/419cd83f965b012001965b4af9831b1d",
@@ -14071,19 +13952,6 @@
    "motivo": "página do produto",
    "http": 200,
    "url_final": "https://www.caixinhaboardgames.com.br/produtos/o-jogo-dos-sons/"
-  },
-  {
-   "url": "https://www.caixinhaboardgames.com.br/produtos/order-overload-cafe/?entry_path=category",
-   "categoria": "achado",
-   "paginas": [
-    "/black/"
-   ],
-   "jogo": null,
-   "loja": null,
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
-   "url_final": "https://www.caixinhaboardgames.com.br/produtos/order-overload-cafe/?entry_path=category"
   },
   {
    "url": "https://www.cangaiajogos.com.br/bomb-busters",
@@ -18217,7 +18085,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fark-nova-jogo-de-tabuleiroboard-game-grok%2Fp%2FMLB23073841&tid=288b34aa-1d6d-41ba-8423-f3d0a0026a85"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fark-nova-jogo-de-tabuleiroboard-game-grok%2Fp%2FMLB23073841&tid=34bf6e8b-de4f-4cbc-9311-691b718a4764"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB55989574",
@@ -18230,7 +18098,20 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB55989574&tid=f24cd545-c6a8-429b-b47b-b31aef53c4cb"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB55989574&tid=469fc788-70b2-4541-9ff9-c81d0853a06a"
+  },
+  {
+   "url": "https://www.mercadolivre.com.br/p/MLB66975402",
+   "categoria": "achado",
+   "paginas": [
+    "/black/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não verificável",
+   "motivo": "robots.txt proíbe robôs nesta página",
+   "http": null,
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB66975402&tid=a6ed0285-c26b-4820-b98c-777b8dff6d9d"
   },
   {
    "url": "https://www.mercadolivre.com.br/root-board-game-meeplebr-pt-br/p/MLB19709898",
@@ -18243,7 +18124,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Froot-board-game-meeplebr-pt-br%2Fp%2FMLB19709898&tid=a128fff2-ce92-4913-8c34-43c9d1fe53a2"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Froot-board-game-meeplebr-pt-br%2Fp%2FMLB19709898&tid=9d8598b1-6772-4cbe-bd45-282fd6c074e0"
   },
   {
    "url": "https://www.miniaturemarket.com/galactic-cruise-kkg-gme-gc.html",
@@ -18635,6 +18516,32 @@
    "url_final": "https://www.placegames.com.br/o-que-o-que"
   },
   {
+   "url": "https://www.placegames.com.br/the-mind",
+   "categoria": "loja",
+   "paginas": [
+    "/the-mind/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "ok",
+   "motivo": "página do produto (com redirecionamento dentro da loja)",
+   "http": 200,
+   "url_final": "https://www.placegames.com.br/sem-resultados-na-busca"
+  },
+  {
+   "url": "https://www.placegames.com.br/themind",
+   "categoria": "loja",
+   "paginas": [
+    "/the-mind/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "ok",
+   "motivo": "página do produto (com redirecionamento dentro da loja)",
+   "http": 200,
+   "url_final": "https://www.placegames.com.br/sem-resultados-na-busca"
+  },
+  {
    "url": "https://www.playeasy.com.br/",
    "categoria": "cupom",
    "paginas": [
@@ -18695,9 +18602,9 @@
    ],
    "jogo": null,
    "loja": null,
-   "status": "ok",
-   "motivo": "página do produto (com redirecionamento dentro da loja)",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "sem resposta (ReadTimeout)",
+   "http": null,
    "url_final": "https://www.playeasy.com.br/luz-final-edicao-deluxe/"
   },
   {
@@ -19787,6 +19694,17 @@
    "categoria": "outro",
    "paginas": [
     "/root/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não conferido",
+   "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
+  },
+  {
+   "url": "https://www.threads.com/@tastinghistorywithmaxmiller/post/DcwDdyEm9bj/",
+   "categoria": "outro",
+   "paginas": [
+    "/noticias/tasting-history-max-miller-jogo-kickstarter/"
    ],
    "jogo": null,
    "loja": null,
@@ -21023,7 +20941,7 @@
   "/ark-nova/": 21,
   "/arnak/": 22,
   "/azul/": 23,
-  "/black/": 401,
+  "/black/": 377,
   "/black/robo/": 8,
   "/bomb-busters/": 21,
   "/brass-birmingham/": 28,
@@ -21115,7 +21033,7 @@
   "/noticias/": 7,
   "/noticias/acelera-bruxa-fecha-financiamento-meeplestarter/": 12,
   "/noticias/an-infamous-traffic-cole-wehrle-fecha-kickstarter/": 18,
-  "/noticias/arkham-horror-remastered-fecha-gamefound-5-milhoes/": 14,
+  "/noticias/arkham-horror-remastered-fecha-gamefound-5-milhoes/": 15,
   "/noticias/arkham-horror-remastered-gamefound/": 19,
   "/noticias/arnak-caminhos-tortuosos-e-gaudi-ganham-preco/": 16,
   "/noticias/asmodee-essen-toy-battle-too-many-bones-nemesis-lockdown/": 21,
@@ -21192,7 +21110,7 @@
   "/noticias/spiel-essen-seis-furtos-montagem-desmontagem/": 14,
   "/noticias/stomp-leder-games-robos-contra-kaijus/": 15,
   "/noticias/stormlight-war-for-roshar-kickstarter/": 19,
-  "/noticias/tasting-history-max-miller-jogo-kickstarter/": 15,
+  "/noticias/tasting-history-max-miller-jogo-kickstarter/": 16,
   "/noticias/the-danes-rosenberg-gamefound/": 19,
   "/noticias/through-the-mountains-knizia-kickstarter/": 18,
   "/noticias/too-little-time-chip-theory-gamefound/": 17,
