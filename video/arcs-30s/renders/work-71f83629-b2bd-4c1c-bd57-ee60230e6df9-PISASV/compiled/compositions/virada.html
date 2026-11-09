@@ -1,0 +1,28 @@
+<template>
+  <style>
+    @font-face { font-family: "Instrument Serif"; font-style: normal; font-weight: 400; src: url("assets/fonts/instrument-serif-latin-400-normal.woff2") format("woff2"); }
+    @font-face { font-family: "Instrument Serif"; font-style: italic; font-weight: 400; src: url("assets/fonts/instrument-serif-latin-400-italic.woff2") format("woff2"); }
+    @font-face { font-family: "Manrope"; font-weight: 500; src: url("assets/fonts/manrope-latin-500-normal.woff2") format("woff2"); }
+    @font-face { font-family: "Manrope"; font-weight: 700; src: url("assets/fonts/manrope-latin-700-normal.woff2") format("woff2"); }
+    @font-face { font-family: "Manrope"; font-weight: 800; src: url("assets/fonts/manrope-latin-800-normal.woff2") format("woff2"); }
+    .serif { font-family: "Instrument Serif", serif; font-weight: 400; letter-spacing: -0.01em; color: #f6f0e6; text-shadow: 0 4px 30px rgba(5,3,12,.55); }
+    .serif em { font-style: italic; color: #f2a54a; }
+    .kick { font-family: "Manrope", sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: .26em; color: #e8c37a; }
+    .body { font-family: "Manrope", sans-serif; font-weight: 500; color: #e4ddf0; text-shadow: 0 2px 18px rgba(5,3,12,.6); }
+    .w { display: inline-block; }
+    #root { position: absolute; inset: 0; overflow: hidden; }
+    #v-t1 { position: absolute; left: 60px; right: 60px; top: 250px; text-align: center; font-size: 120px; }
+    #v-t2 { position: absolute; left: 40px; right: 40px; top: 1180px; text-align: center; font-size: 168px; line-height: 1; }
+  </style>
+  <div id="root" data-composition-id="virada" data-width="1080" data-height="1920">
+    <div id="v-t1" class="serif">E foi a</div>
+    <div id="v-t2" class="serif"><em>jogada certa.</em></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#v-t1", { opacity: 0, filter: "blur(8px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.2, ease: "power4.out" }, 0.2);
+    tl.fromTo("#v-t2", { opacity: 0, scale: 1.25, filter: "blur(14px)" }, { opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.35, ease: "expo.out" }, 0.4);
+    tl.to("#v-t1, #v-t2", { opacity: 0, filter: "blur(10px)", duration: 0.2, ease: "power3.in" }, 1.35);
+    window.__timelines["virada"] = tl;
+  </script>
+</template>

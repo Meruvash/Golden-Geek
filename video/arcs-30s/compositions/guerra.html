@@ -1,99 +1,41 @@
 <template>
   <style>
-    @font-face { font-family: "Public Sans"; src: url("assets/fonts/public-sans.woff2") format("woff2"); font-weight: 100 900; }
+    @font-face { font-family: "Instrument Serif"; font-style: normal; font-weight: 400; src: url("assets/fonts/instrument-serif-latin-400-normal.woff2") format("woff2"); }
+    @font-face { font-family: "Instrument Serif"; font-style: italic; font-weight: 400; src: url("assets/fonts/instrument-serif-latin-400-italic.woff2") format("woff2"); }
+    @font-face { font-family: "Manrope"; font-weight: 500; src: url("assets/fonts/manrope-latin-500-normal.woff2") format("woff2"); }
+    @font-face { font-family: "Manrope"; font-weight: 700; src: url("assets/fonts/manrope-latin-700-normal.woff2") format("woff2"); }
+    @font-face { font-family: "Manrope"; font-weight: 800; src: url("assets/fonts/manrope-latin-800-normal.woff2") format("woff2"); }
+    .serif { font-family: "Instrument Serif", serif; font-weight: 400; letter-spacing: -0.01em; color: #f6f0e6; text-shadow: 0 4px 30px rgba(5,3,12,.55); }
+    .serif em { font-style: italic; color: #f2a54a; }
+    .kick { font-family: "Manrope", sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: .26em; color: #e8c37a; }
+    .body { font-family: "Manrope", sans-serif; font-weight: 500; color: #e4ddf0; text-shadow: 0 2px 18px rgba(5,3,12,.6); }
+    .w { display: inline-block; }
     #root { position: absolute; inset: 0; overflow: hidden; }
-    #w-map { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; }
-    .w-cap {
-      position: absolute; left: 80px; right: 80px; top: 250px;
-      font-family: "Archivo Black", sans-serif; text-transform: uppercase; color: #f5efe8;
-      font-size: 86px; line-height: 1.02; letter-spacing: -0.01em;
-    }
-    .w-cap .w { display: inline-block; }
-    .w-cap .acc { color: #e98b1e; }
-    .w-die { position: absolute; top: 560px; width: 230px; }
-    #w-d1 { left: 90px; } #w-d2 { left: 425px; } #w-d3 { left: 760px; }
-    .w-die .cube { width: 200px; height: 200px; margin: 0 auto; border-radius: 34px; position: relative; box-shadow: 0 24px 60px rgba(0,0,0,.5); }
-    .w-die .cube svg { position: absolute; inset: 30px; }
-    .w-die .lbl {
-      margin-top: 26px; text-align: center; font-family: "Public Sans", sans-serif; font-weight: 800; font-size: 36px;
-      letter-spacing: .04em; color: #f5efe8;
-    }
-    .w-die .hint { text-align: center; font-family: "Public Sans", sans-serif; font-weight: 500; font-size: 30px; color: #a9a3bd; margin-top: 6px; }
-    #w-flash { position: absolute; left: 700px; top: 1080px; width: 260px; height: 260px; border-radius: 50%;
-      background: radial-gradient(closest-side, #fff, rgba(255,214,120,.8) 40%, rgba(233,139,30,0)); }
+    .w-cap { position: absolute; left: 80px; right: 70px; top: 200px; font-size: 108px; line-height: 0.98; }
+    .w-lbl { position: absolute; top: 790px; width: 300px; text-align: center; }
+    #w-l1 { left: 55px; } #w-l2 { left: 390px; } #w-l3 { left: 725px; }
+    .w-lbl .kick { font-size: 28px; letter-spacing: .2em; color: #f6f0e6; }
+    .w-lbl .serif { font-size: 40px; margin-top: 4px; }
+    .w-lbl .serif em { color: #e8c37a; }
   </style>
   <div id="root" data-composition-id="guerra" data-width="1080" data-height="1920">
-    <svg id="w-map" viewBox="0 0 1080 1920" data-layout-ignore>
-      <defs>
-        <radialGradient id="w-sun" cx="50%" cy="50%" r="50%">
-          <stop offset="0%" stop-color="#ffe2a0"/><stop offset="45%" stop-color="#e3b23c"/><stop offset="100%" stop-color="#e98b1e" stop-opacity="0"/>
-        </radialGradient>
-      </defs>
-      <!-- The outer orbit is the zero from the last scene, continuing. -->
-      <ellipse id="w-o3" cx="540" cy="1150" rx="609" ry="168" fill="none" stroke="#e98b1e" stroke-width="21"/>
-      <ellipse id="w-o2" cx="540" cy="1150" rx="420" ry="116" fill="none" stroke="#6b5a9a" stroke-width="5"/>
-      <ellipse id="w-o1" cx="540" cy="1150" rx="240" ry="66" fill="none" stroke="#6b5a9a" stroke-width="5"/>
-      <circle id="w-sunc" cx="540" cy="1150" r="110" fill="url(#w-sun)"/>
-      <circle id="w-p1" cx="300" cy="1150" r="30" fill="#3fd0c9"/>
-      <circle id="w-p2" cx="842" cy="1218" r="38" fill="#c0662b"/>
-      <circle id="w-p3" cx="420" cy="1263" r="24" fill="#ff4fb0"/>
-      <circle id="w-p4" cx="690" cy="1093" r="22" fill="#e3b23c"/>
-      <g id="w-pink">
-        <path id="w-a1" d="M0,0 L-70,-20 L-54,0 L-70,20 Z" fill="#ff4fb0" transform="translate(250,1040)"/>
-        <path id="w-a2" d="M0,0 L-70,-20 L-54,0 L-70,20 Z" fill="#ff4fb0" transform="translate(190,1100)"/>
-        <path id="w-a3" d="M0,0 L-70,-20 L-54,0 L-70,20 Z" fill="#ff4fb0" transform="translate(230,1170)"/>
-      </g>
-      <g id="w-cyan"><g id="w-b1"><path d="M0,0 L70,-20 L54,0 L70,20 Z" fill="#3fd0c9" transform="translate(820,1180)"/></g><g id="w-b2"><path d="M0,0 L70,-20 L54,0 L70,20 Z" fill="#3fd0c9" transform="translate(880,1240)"/></g></g>
-    </svg>
-    <div id="w-flash" data-layout-ignore></div>
-
-    <div id="w-c1" class="w-cap clip" data-start="0" data-duration="3.4"><span class="w">Na</span> <span class="w">guerra,</span><br /><span class="w">você</span> <span class="w">escolhe</span> <span class="w acc">o</span> <span class="w acc">risco</span></div>
-    <div id="w-c2" class="w-cap clip" data-start="3.4" data-duration="2.6"><span class="w">Cada</span> <span class="w">ataque</span><br /><span class="w">é</span> <span class="w">uma</span> <span class="w acc">aposta</span></div>
-
-    <div id="w-d1" class="w-die">
-      <div class="cube" style="background:#f3e9d7"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="16" fill="#1b1530"/></svg></div>
-      <div class="lbl">ESCARAMUÇA</div><div class="hint">a segura</div>
-    </div>
-    <div id="w-d2" class="w-die">
-      <div class="cube" style="background:#d2421e"><svg viewBox="0 0 100 100"><polygon points="50,6 60,38 94,38 66,58 76,92 50,72 24,92 34,58 6,38 40,38" fill="#f3e9d7"/></svg></div>
-      <div class="lbl">ASSALTO</div><div class="hint">a agressiva</div>
-    </div>
-    <div id="w-d3" class="w-die">
-      <div class="cube" style="background:#e3b23c"><svg viewBox="0 0 100 100"><path d="M18,70 L50,20 L82,70 Z" fill="none" stroke="#1b1530" stroke-width="10" stroke-linejoin="round"/><circle cx="50" cy="56" r="8" fill="#1b1530"/></svg></div>
-      <div class="lbl">SAQUE</div><div class="hint">rouba recursos</div>
-    </div>
+    <div id="w-c1" class="w-cap serif clip" data-start="0" data-duration="3.4"><span class="w">Na</span> <span class="w">guerra,</span> <span class="w">você</span><br /><em class="w">escolhe</em> <em class="w">o</em> <em class="w">risco</em></div>
+    <div id="w-c2" class="w-cap serif clip" data-start="3.4" data-duration="2.6"><span class="w">Cada</span> <span class="w">ataque</span><br /><span class="w">é</span> <em class="w">uma</em> <em class="w">aposta</em></div>
+    <div id="w-l1" class="w-lbl"><div class="kick">Escaramuça</div><div class="serif"><em>a segura</em></div></div>
+    <div id="w-l2" class="w-lbl"><div class="kick">Assalto</div><div class="serif"><em>a agressiva</em></div></div>
+    <div id="w-l3" class="w-lbl"><div class="kick">Saque</div><div class="serif"><em>rouba recursos</em></div></div>
   </div>
   <script>
     const tl = gsap.timeline({ paused: true });
-    const words = (sel, t) => tl.fromTo(sel + " .w", { opacity: 0, filter: "blur(6px)" },
-      { opacity: 1, filter: "blur(0px)", duration: 0.13, stagger: 0.067, ease: "power4.out" }, t);
-
-    // The zero-orbit cools into the map; the inner orbits, sun and planets build around it.
-    tl.fromTo("#w-o3", { attr: { "stroke-width": 21 }, stroke: "#e98b1e" }, { attr: { "stroke-width": 5 }, stroke: "#6b5a9a", duration: 0.6, ease: "power2.inOut" }, 0);
-    tl.fromTo("#w-o2, #w-o1", { opacity: 0, scale: 0.6, transformOrigin: "540px 1150px" }, { opacity: 1, scale: 1, duration: 0.6, ease: "expo.out", stagger: 0.1 }, 0.1);
-    tl.fromTo("#w-sunc", { scale: 0, transformOrigin: "540px 1150px" }, { scale: 1, duration: 0.6, ease: "expo.out" }, 0.15);
-    tl.fromTo("#w-p1, #w-p2, #w-p3, #w-p4", { scale: 0, transformBox: "fill-box", transformOrigin: "50% 50%" }, { scale: 1, duration: 0.4, ease: "back.out(1.6)", stagger: 0.07 }, 0.35);
-    tl.fromTo("#w-pink", { x: -420 }, { x: 0, duration: 0.9, ease: "expo.out" }, 0.5);
-    tl.fromTo("#w-cyan", { x: 360 }, { x: 0, duration: 0.9, ease: "expo.out" }, 0.6);
+    const words = (sel, t) => tl.fromTo(sel + " .w", { opacity: 0, filter: "blur(8px)" },
+      { opacity: 1, filter: "blur(0px)", duration: 0.16, stagger: 0.07, ease: "power4.out" }, t);
     words("#w-c1", 0.2);
-
-    // Three dice drop and tumble, one per half beat; each lands dead still.
-    [["#w-d1", 1.3], ["#w-d2", 1.55], ["#w-d3", 1.8]].forEach(([d, t]) => {
-      tl.fromTo(d + " .cube", { y: -760, rotation: -540 }, { y: 0, rotation: 0, duration: 0.6, ease: "back.out(1.2)" }, t);
-      tl.fromTo([d + " .lbl", d + " .hint"], { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.3, ease: "expo.out" }, t + 0.45);
-    });
-
-    // The attack: the pink fleet dashes, a flash, one cyan ship tumbles away.
+    // Labels appear as each die lands (dice start falling at 1.3 / 1.55 / 1.8 s in this scene).
+    [["#w-l1", 1.75], ["#w-l2", 2.0], ["#w-l3", 2.25]].forEach(([s, t]) =>
+      tl.fromTo(s, { opacity: 0, y: 24, filter: "blur(6px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.35, ease: "expo.out" }, t));
     words("#w-c2", 3.45);
-    tl.to("#w-pink", { x: 470, y: 80, duration: 0.45, ease: "power3.in" }, 4.0);
-    tl.fromTo("#w-flash", { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1.3, duration: 0.12, ease: "power2.out" }, 4.45);
-    tl.to("#w-flash", { opacity: 0, scale: 1.8, duration: 0.4, ease: "power2.out" }, 4.57);
-    tl.to("#w-b1", { x: 420, y: 260, rotation: 260, opacity: 0, duration: 0.8, ease: "power2.out", transformBox: "fill-box", transformOrigin: "50% 50%" }, 4.5);
-
-    // Exit: the dice and caption leave fast, upward.
-    tl.to(".w-die", { y: -900, opacity: 0, duration: 0.35, ease: "power3.in", stagger: 0.04 }, 5.55);
+    tl.to(".w-lbl", { opacity: 0, y: -60, filter: "blur(8px)", duration: 0.3, ease: "power3.in", stagger: 0.04 }, 5.5);
     tl.to("#w-c2 .w", { opacity: 0, filter: "blur(8px)", duration: 0.15, stagger: 0.02, ease: "power3.in" }, 5.5);
-    tl.to("#w-map", { opacity: 0, scale: 1.15, duration: 0.4, ease: "power3.in", transformOrigin: "50% 60%" }, 5.6);
     window.__timelines["guerra"] = tl;
   </script>
 </template>

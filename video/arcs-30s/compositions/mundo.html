@@ -1,0 +1,457 @@
+<!doctype html>
+<!--
+  Mundo 3D do vídeo de Arcs: uma cena Three.js atrás de todas as legendas, 30 s.
+  Seek-safe: cada quadro é render(t), uma função pura do tempo, chamada por um relógio GSAP linear.
+  Coordenadas: câmera a z=20 com fov 30 → 1 unidade = 179 px; px→mundo: x=(px-540)*0.005582, y=(960-py)*0.005582.
+-->
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "Instrument Serif"; font-style: normal; font-weight: 400; src: url("assets/fonts/instrument-serif-latin-400-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Instrument Serif"; font-style: italic; font-weight: 400; src: url("assets/fonts/instrument-serif-latin-400-italic.woff2") format("woff2"); }
+      @font-face { font-family: "Manrope"; font-weight: 800; src: url("assets/fonts/manrope-latin-800-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Manrope"; font-weight: 700; src: url("assets/fonts/manrope-latin-700-normal.woff2") format("woff2"); }
+      html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; background: #07060d; }
+      #m-root { position: absolute; inset: 0; }
+      #m-canvas { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; }
+    </style>
+  </head>
+  <body>
+    <div id="m-root" data-composition-id="mundo" data-start="0" data-duration="30" data-width="1080" data-height="1920">
+      <canvas id="m-canvas" class="clip" data-start="0" data-duration="30" data-track-index="1" data-layout-ignore></canvas>
+    </div>
+
+    <script>
+      (function () {
+        var clock = { t: 0 };
+        var host = { clock: clock, render: null };
+        window.__arcsWorld = host;
+        window.__hf = window.__hf || {};
+        window.__hf.buildReady = window.__hf.buildReady || {};
+        window.__hf.buildReady["mundo"] = new Promise(function (resolve) { host.ready = resolve; });
+        var tl = gsap.timeline({ paused: true });
+        tl.to(clock, { t: 30, duration: 30, ease: "none", onUpdate: function () { if (host.render) host.render(clock.t); } });
+        window.__timelines = window.__timelines || {};
+        window.__timelines["mundo"] = tl;
+      })();
+    </script>
+
+    <script type="module">
+      import * as THREE from "https://cdn.jsdelivr.net/npm/three@0.184.0/+esm";
+      import { RoomEnvironment } from "https://cdn.jsdelivr.net/npm/three@0.184.0/examples/jsm/environments/RoomEnvironment.js/+esm";
+      import { RoundedBoxGeometry } from "https://cdn.jsdelivr.net/npm/three@0.184.0/examples/jsm/geometries/RoundedBoxGeometry.js/+esm";
+      import { EffectComposer } from "https://cdn.jsdelivr.net/npm/three@0.184.0/examples/jsm/postprocessing/EffectComposer.js/+esm";
+      import { RenderPass } from "https://cdn.jsdelivr.net/npm/three@0.184.0/examples/jsm/postprocessing/RenderPass.js/+esm";
+      import { UnrealBloomPass } from "https://cdn.jsdelivr.net/npm/three@0.184.0/examples/jsm/postprocessing/UnrealBloomPass.js/+esm";
+      import { OutputPass } from "https://cdn.jsdelivr.net/npm/three@0.184.0/examples/jsm/postprocessing/OutputPass.js/+esm";
+
+      const host = window.__arcsWorld;
+      await Promise.all([
+        document.fonts.load('400 200px "Instrument Serif"'),
+        document.fonts.load('italic 400 200px "Instrument Serif"'),
+        document.fonts.load('800 60px "Manrope"'),
+        document.fonts.load('700 60px "Manrope"'),
+      ]);
+
+      // ---------- helpers ----------
+      const PX = 0.005582;
+      const wx = (px) => (px - 540) * PX;
+      const wy = (py) => (960 - py) * PX;
+      const clamp = (x, a = 0, b = 1) => Math.min(b, Math.max(a, x));
+      const prog = (t, a, d) => clamp((t - a) / d);
+      const lerp = (a, b, k) => a + (b - a) * k;
+      const expoOut = (x) => (x >= 1 ? 1 : 1 - Math.pow(2, -10 * x));
+      const p3out = (x) => 1 - Math.pow(1 - x, 3);
+      const p3in = (x) => x * x * x;
+      const p2io = (x) => (x < 0.5 ? 2 * x * x : 1 - Math.pow(-2 * x + 2, 2) / 2);
+      const backOut = (x, s = 1.4) => 1 + (s + 1) * Math.pow(x - 1, 3) + s * Math.pow(x - 1, 2);
+      const bounceOut = (x) => {
+        const n = 7.5625, d = 2.75;
+        if (x < 1 / d) return n * x * x;
+        if (x < 2 / d) return n * (x -= 1.5 / d) * x + 0.75;
+        if (x < 2.5 / d) return n * (x -= 2.25 / d) * x + 0.9375;
+        return n * (x -= 2.625 / d) * x + 0.984375;
+      };
+      const damped = (x, f = 3, z = 5) => Math.exp(-z * x) * Math.sin(f * Math.PI * x); // settle wobble 0→0
+      let seed = 1013;
+      const rnd = () => ((seed = (seed * 1664525 + 1013904223) % 4294967296) / 4294967296);
+      const canvasTex = (w, h, draw) => {
+        const c = document.createElement("canvas"); c.width = w; c.height = h;
+        const g = c.getContext("2d"); draw(g, w, h);
+        const tex = new THREE.CanvasTexture(c); tex.colorSpace = THREE.SRGBColorSpace; tex.anisotropy = 4;
+        tex.userData = { c, g, w, h };
+        return tex;
+      };
+      const roundRect = (g, x, y, w, h, r) => {
+        g.beginPath(); g.moveTo(x + r, y); g.arcTo(x + w, y, x + w, y + h, r); g.arcTo(x + w, y + h, x, y + h, r);
+        g.arcTo(x, y + h, x, y, r); g.arcTo(x, y, x + w, y, r); g.closePath();
+      };
+
+      // ---------- renderer, scene, light ----------
+      const renderer = new THREE.WebGLRenderer({ canvas: document.getElementById("m-canvas"), antialias: true, preserveDrawingBuffer: true });
+      renderer.setPixelRatio(1);
+      renderer.setSize(1080, 1920, false);
+      renderer.outputColorSpace = THREE.SRGBColorSpace;
+      renderer.toneMapping = THREE.ACESFilmicToneMapping;
+      renderer.toneMappingExposure = 1.0;
+
+      const scene = new THREE.Scene();
+      const pmrem = new THREE.PMREMGenerator(renderer);
+      scene.environment = pmrem.fromScene(new RoomEnvironment(), 0.04).texture;
+      scene.environmentIntensity = 0.32;
+
+      const camera = new THREE.PerspectiveCamera(30, 1080 / 1920, 0.1, 400);
+      camera.position.set(0, 0, 20);
+
+      const key = new THREE.DirectionalLight(0xffe6c8, 1.15); key.position.set(-6, 8, 10); scene.add(key);
+      const rim = new THREE.DirectionalLight(0x7f9cff, 1.0); rim.position.set(7, -3, -6); scene.add(rim);
+      scene.add(new THREE.AmbientLight(0x30284a, 0.6));
+      const flash = new THREE.PointLight(0xffd29a, 0, 14, 1.6); scene.add(flash);
+
+      // ---------- nebula + stars ----------
+      const nebTex = canvasTex(1024, 2048, (g, w, h) => {
+        g.fillStyle = "#07060d"; g.fillRect(0, 0, w, h);
+        const blob = (x, y, r, col, a) => { const gr = g.createRadialGradient(x, y, 0, x, y, r); gr.addColorStop(0, `rgba(${col},${a})`); gr.addColorStop(1, `rgba(${col},0)`); g.fillStyle = gr; g.fillRect(0, 0, w, h); };
+        blob(820, 360, 760, "150,48,150", 0.55);
+        blob(140, 1650, 820, "40,62,170", 0.5);
+        blob(560, 1050, 520, "200,90,40", 0.16);
+        blob(300, 600, 420, "90,40,160", 0.35);
+        seed = 77;
+        for (let i = 0; i < 2600; i++) { const a = rnd() * 0.5; g.fillStyle = `rgba(255,255,255,${a * a})`; g.fillRect(rnd() * w, rnd() * h, 1.4, 1.4); }
+      });
+      const nebula = new THREE.Mesh(new THREE.PlaneGeometry(80, 160), new THREE.MeshBasicMaterial({ map: nebTex, toneMapped: false }));
+      nebula.position.set(0, 0, -100); scene.add(nebula);
+
+      seed = 4242;
+      const N = 2600, sp = new Float32Array(N * 3), sc = new Float32Array(N * 3);
+      for (let i = 0; i < N; i++) {
+        sp[i * 3] = (rnd() - 0.5) * 70; sp[i * 3 + 1] = (rnd() - 0.5) * 120; sp[i * 3 + 2] = -80 + rnd() * 86;
+        const warm = rnd(); const b = 0.55 + rnd() * 0.45;
+        sc[i * 3] = b * (warm > 0.8 ? 1 : 0.85); sc[i * 3 + 1] = b * 0.9; sc[i * 3 + 2] = b * (warm < 0.3 ? 1 : 0.92);
+      }
+      const sg = new THREE.BufferGeometry(); sg.setAttribute("position", new THREE.BufferAttribute(sp, 3)); sg.setAttribute("color", new THREE.BufferAttribute(sc, 3));
+      const dot = canvasTex(64, 64, (g) => { const gr = g.createRadialGradient(32, 32, 0, 32, 32, 32); gr.addColorStop(0, "rgba(255,255,255,1)"); gr.addColorStop(0.25, "rgba(255,255,255,.6)"); gr.addColorStop(1, "rgba(255,255,255,0)"); g.fillStyle = gr; g.fillRect(0, 0, 64, 64); });
+      const stars = new THREE.Points(sg, new THREE.PointsMaterial({ size: 0.16, map: dot, vertexColors: true, transparent: true, depthWrite: false, blending: THREE.AdditiveBlending, toneMapped: false }));
+      scene.add(stars);
+
+      // ---------- ships ----------
+      const shipShape = new THREE.Shape();
+      shipShape.moveTo(1.0, 0); shipShape.lineTo(-0.55, 0.46); shipShape.lineTo(-0.3, 0.1); shipShape.lineTo(-0.42, 0); shipShape.lineTo(-0.3, -0.1); shipShape.lineTo(-0.55, -0.46); shipShape.closePath();
+      const shipGeo = new THREE.ExtrudeGeometry(shipShape, { depth: 0.12, bevelEnabled: true, bevelThickness: 0.06, bevelSize: 0.05, bevelSegments: 3 });
+      shipGeo.translate(0, 0, -0.06); shipGeo.rotateX(-Math.PI / 2); shipGeo.rotateY(-Math.PI / 2);
+      const engineGeo = new THREE.SphereGeometry(0.09, 16, 12);
+      function makeShip(color, glow) {
+        const g = new THREE.Group();
+        g.add(new THREE.Mesh(shipGeo, new THREE.MeshPhysicalMaterial({ color, metalness: 0.55, roughness: 0.3, clearcoat: 0.6, clearcoatRoughness: 0.2 })));
+        const e = new THREE.Mesh(engineGeo, new THREE.MeshBasicMaterial({ color: new THREE.Color(glow).multiplyScalar(2.2), toneMapped: false }));
+        e.position.set(0, 0, -0.34); e.scale.set(1.1, 0.55, 1.3); g.add(e);
+        return g;
+      }
+      const PINK = 0xff4fb0, CYAN = 0x3fd0c9;
+      const hookFleet = [
+        [PINK, [-4.2, -7.5, 7], [5.5, 6, -26], 0.0],
+        [PINK, [-5.6, -6.6, 5], [4.0, 7.5, -30], 0.15],
+        [PINK, [-3.6, -8.6, 3], [6.5, 5, -34], 0.3],
+        [CYAN, [5.5, -2.0, 4], [-7, 3, -40], 0.1],
+        [CYAN, [6.4, -3.2, 1], [-6, 1.5, -46], 0.25],
+      ].map(([c, a, b, d]) => { const s = makeShip(c, c === PINK ? 0xffb0e0 : 0xb5fffb); s.userData = { a: new THREE.Vector3(...a), b: new THREE.Vector3(...b), d }; scene.add(s); return s; });
+
+      // ---------- cards ----------
+      const CW = 2.344, CH = 3.349;
+      function drawFront(g, w, h, o) {
+        g.clearRect(0, 0, w, h);
+        g.save(); roundRect(g, 0, 0, w, h, 56); g.clip();
+        const bg = g.createLinearGradient(0, 0, w, h); bg.addColorStop(0, "#f7efe0"); bg.addColorStop(1, "#e9dcc4"); g.fillStyle = bg; g.fillRect(0, 0, w, h);
+        seed = 9; for (let i = 0; i < 9000; i++) { g.fillStyle = `rgba(80,50,20,${rnd() * 0.05})`; g.fillRect(rnd() * w, rnd() * h, 2, 2); }
+        g.strokeStyle = "rgba(27,21,48,.35)"; g.lineWidth = 4; roundRect(g, 28, 28, w - 56, h - 56, 34); g.stroke();
+        // number (slot roll: o.roll is a float index into o.digits)
+        g.save(); g.beginPath(); g.rect(40, 50, 330, 420); g.clip();
+        g.font = '400 400px "Instrument Serif"'; g.textBaseline = "alphabetic";
+        o.digits.forEach((d, i) => { const y = 410 + (i - o.roll) * 420; if (y > -50 && y < 900) { g.fillStyle = d === "0" ? "#c8401d" : "#1b1530"; g.fillText(d, 62, y); } });
+        g.restore();
+        // emblem
+        g.save(); g.translate(w - 190, 200); g.strokeStyle = "#1b1530"; g.lineWidth = 16;
+        if (o.emblem === "planet") { g.beginPath(); g.arc(0, 0, 70, 0, Math.PI * 2); g.stroke(); g.strokeStyle = "#c0662b"; g.lineWidth = 12; g.beginPath(); g.ellipse(0, 0, 120, 34, -0.25, 0, Math.PI * 2); g.stroke(); }
+        else { roundRect(g, -68, -68, 136, 136, 14); g.stroke(); g.fillStyle = "#c0662b"; g.beginPath(); g.arc(0, 0, 24, 0, Math.PI * 2); g.fill(); }
+        g.restore();
+        // band
+        const by = h * 0.47; g.fillStyle = "#c0662b"; g.fillRect(0, by, w, 130);
+        g.fillStyle = "rgba(255,255,255,.12)"; g.fillRect(0, by, w, 8);
+        g.font = '800 62px "Manrope"'; g.fillStyle = "#f7efe0"; g.textAlign = "center"; g.textBaseline = "middle";
+        g.letterSpacing = "10px"; g.fillText("CONSTRUÇÃO", w / 2, by + 68); g.letterSpacing = "0px";
+        // pips
+        const n = o.pips, gap = 150, x0 = w / 2 - ((n - 1) * gap) / 2, py = h - 170;
+        for (let i = 0; i < n; i++) { g.save(); g.translate(x0 + i * gap, py); g.rotate(Math.PI / 4); g.fillStyle = "#1b1530"; roundRect(g, -44, -44, 88, 88, 12); g.fill(); g.restore(); }
+        g.restore();
+      }
+      function drawGlow(g, w, h, o) {
+        g.fillStyle = "#000"; g.fillRect(0, 0, w, h);
+        const n = o.pips, gap = 150, x0 = w / 2 - ((n - 1) * gap) / 2, py = h - 170;
+        for (let i = 0; i < n; i++) { const a = o.lit[i] || 0; if (a <= 0) continue; g.save(); g.translate(x0 + i * gap, py); g.rotate(Math.PI / 4); g.fillStyle = `rgba(255,150,50,${a})`; roundRect(g, -40, -40, 80, 80, 10); g.fill(); g.restore(); }
+      }
+      const backTex = canvasTex(820, 1172, (g, w, h) => {
+        g.save(); roundRect(g, 0, 0, w, h, 56); g.clip();
+        const bg = g.createLinearGradient(0, 0, 0, h); bg.addColorStop(0, "#2a1d4a"); bg.addColorStop(1, "#130d24"); g.fillStyle = bg; g.fillRect(0, 0, w, h);
+        g.strokeStyle = "#e98b1e"; g.lineWidth = 14; g.beginPath(); g.ellipse(w / 2, h / 2, 230, 70, -0.3, 0, Math.PI * 2); g.stroke();
+        g.fillStyle = "#e3b23c"; g.beginPath(); g.arc(w / 2, h / 2, 90, 0, Math.PI * 2); g.fill();
+        g.restore();
+      });
+      function makeCard(opts) {
+        const grp = new THREE.Group();
+        const body = new THREE.Mesh(new RoundedBoxGeometry(CW, CH, 0.06, 4, 0.11), new THREE.MeshPhysicalMaterial({ color: 0x1b1530, roughness: 0.4, metalness: 0.2, clearcoat: 0.5 }));
+        grp.add(body);
+        const state = Object.assign({ roll: 0, lit: [0, 0, 0] }, opts);
+        const front = canvasTex(820, 1172, (g, w, h) => drawFront(g, w, h, state));
+        const glow = canvasTex(820, 1172, (g, w, h) => drawGlow(g, w, h, state));
+        glow.colorSpace = THREE.SRGBColorSpace;
+        const fm = new THREE.MeshPhysicalMaterial({ map: front, transparent: true, alphaTest: 0.5, roughness: 0.42, clearcoat: 0.7, clearcoatRoughness: 0.18, emissive: 0xffffff, emissiveMap: glow, emissiveIntensity: 0 });
+        const f = new THREE.Mesh(new THREE.PlaneGeometry(CW - 0.05, CH - 0.05), fm); f.position.z = 0.032; grp.add(f);
+        const b = new THREE.Mesh(new THREE.PlaneGeometry(CW - 0.05, CH - 0.05), new THREE.MeshPhysicalMaterial({ map: backTex, transparent: true, alphaTest: 0.5, roughness: 0.4, clearcoat: 0.6 }));
+        b.position.z = -0.032; b.rotation.y = Math.PI; grp.add(b);
+        grp.userData = { state, front, glow, fm, key: "" };
+        grp.update = () => {
+          const k = state.roll.toFixed(3) + "|" + state.lit.map((v) => v.toFixed(2)).join(",");
+          if (k === grp.userData.key) return;
+          grp.userData.key = k;
+          drawFront(front.userData.g, 820, 1172, state); front.needsUpdate = true;
+          drawGlow(glow.userData.g, 820, 1172, state); glow.needsUpdate = true;
+          fm.emissiveIntensity = Math.max(...state.lit) > 0 ? 3.2 : 0;
+        };
+        scene.add(grp);
+        return grp;
+      }
+      const mine = makeCard({ digits: ["4", "3", "2", "1", "0"], pips: 3, emblem: "planet" });
+      const rival = makeCard({ digits: ["5"], pips: 2, emblem: "square" });
+
+      // ---------- tokens ----------
+      const hex = new THREE.Shape(); for (let i = 0; i < 6; i++) { const a = Math.PI / 6 + (i * Math.PI) / 3; const x = Math.cos(a) * 0.53, y = Math.sin(a) * 0.53; i ? hex.lineTo(x, y) : hex.moveTo(x, y); } hex.closePath();
+      const gold = new THREE.MeshStandardMaterial({ color: 0xc9982f, metalness: 1, roughness: 0.42 });
+      const token = new THREE.Group();
+      const hexGeo = new THREE.ExtrudeGeometry(hex, { depth: 0.1, bevelEnabled: true, bevelThickness: 0.04, bevelSize: 0.04, bevelSegments: 4 }); hexGeo.translate(0, 0, -0.05);
+      token.add(new THREE.Mesh(hexGeo, gold));
+      const tokLbl = canvasTex(512, 512, (g, w, h) => { g.font = '800 92px "Manrope"'; g.fillStyle = "#3a2405"; g.textAlign = "center"; g.textBaseline = "middle"; g.letterSpacing = "4px"; g.fillText("TROFÉUS", w / 2, h / 2); });
+      const tl1 = new THREE.Mesh(new THREE.PlaneGeometry(0.9, 0.9), new THREE.MeshStandardMaterial({ map: tokLbl, transparent: true, metalness: 0.3, roughness: 0.6 })); tl1.position.z = 0.1; token.add(tl1);
+      scene.add(token);
+
+      const pillShape = new THREE.Shape(); { const w = 1.7, h = 0.44, r = 0.22; pillShape.moveTo(-w / 2 + r, -h / 2); pillShape.lineTo(w / 2 - r, -h / 2); pillShape.absarc(w / 2 - r, 0, r, -Math.PI / 2, Math.PI / 2); pillShape.lineTo(-w / 2 + r, h / 2); pillShape.absarc(-w / 2 + r, 0, r, Math.PI / 2, (3 * Math.PI) / 2); }
+      const pillGeo = new THREE.ExtrudeGeometry(pillShape, { depth: 0.08, bevelEnabled: true, bevelThickness: 0.03, bevelSize: 0.03, bevelSegments: 3 }); pillGeo.translate(0, 0, -0.04);
+      const pill = new THREE.Group();
+      pill.add(new THREE.Mesh(pillGeo, new THREE.MeshPhysicalMaterial({ color: 0xe98b1e, roughness: 0.45, clearcoat: 0.35 })));
+      const pillLbl = canvasTex(1024, 256, (g, w, h) => { g.font = '800 104px "Manrope"'; g.fillStyle = "#1a0f05"; g.textAlign = "center"; g.textBaseline = "middle"; g.letterSpacing = "10px"; g.fillText("INICIATIVA", w / 2, h / 2 + 4); });
+      const pl = new THREE.Mesh(new THREE.PlaneGeometry(1.6, 0.4), new THREE.MeshBasicMaterial({ map: pillLbl, transparent: true })); pl.position.z = 0.075; pill.add(pl);
+      scene.add(pill);
+
+      // ---------- the zero, the orbits, the system ----------
+      const zero = new THREE.Mesh(new THREE.TorusGeometry(1.0, 0.15, 40, 160), new THREE.MeshStandardMaterial({ color: 0xe98b1e, emissive: 0xff7a18, emissiveIntensity: 2.4, roughness: 0.3, metalness: 0.2 }));
+      scene.add(zero);
+      const system = new THREE.Group(); scene.add(system);
+      const orbitMat = (c, o) => new THREE.MeshBasicMaterial({ color: c, transparent: true, opacity: o, toneMapped: false });
+      const orbits = [[3.4, 0x9a86d8], [2.34, 0x7f6cc0], [1.34, 0x7f6cc0]].map(([r, c]) => { const m = new THREE.Mesh(new THREE.TorusGeometry(r, 0.016, 8, 220), orbitMat(c, 0.75)); system.add(m); return m; });
+      const sun = new THREE.Mesh(new THREE.SphereGeometry(0.42, 48, 32), new THREE.MeshBasicMaterial({ color: new THREE.Color(0xffd98a).multiplyScalar(1.5), toneMapped: false }));
+      system.add(sun);
+      const haloTex = canvasTex(256, 256, (g) => { const gr = g.createRadialGradient(128, 128, 0, 128, 128, 128); gr.addColorStop(0, "rgba(255,220,150,.9)"); gr.addColorStop(0.3, "rgba(255,170,70,.35)"); gr.addColorStop(1, "rgba(255,120,30,0)"); g.fillStyle = gr; g.fillRect(0, 0, 256, 256); });
+      const halo = new THREE.Sprite(new THREE.SpriteMaterial({ color: new THREE.Color(0.9, 0.9, 0.9), map: haloTex, transparent: true, depthWrite: false, blending: THREE.AdditiveBlending, toneMapped: false })); halo.scale.set(3.4, 3.4, 1); system.add(halo);
+      const bandTex = (c1, c2) => canvasTex(512, 256, (g, w, h) => { for (let y = 0; y < h; y += 4) { const k = 0.5 + 0.5 * Math.sin(y * 0.09) * Math.sin(y * 0.021); g.fillStyle = k > 0.5 ? c1 : c2; g.fillRect(0, y, w, 4); } });
+      const planets = [[1.34, 2.6, 0.2, "#3fd0c9", "#1f7f86"], [3.4, 5.6, 0.26, "#d27a3c", "#7a3a1a"], [2.34, 1.0, 0.17, "#ff6fbf", "#8a2d68"], [2.34, 3.9, 0.15, "#f0c86a", "#a07428"]]
+        .map(([r, a, s, c1, c2]) => { const m = new THREE.Mesh(new THREE.SphereGeometry(s, 40, 28), new THREE.MeshStandardMaterial({ map: bandTex(c1, c2), roughness: 0.75 })); m.userData = { r, a }; system.add(m); return m; });
+      const sysPink = [0, 1, 2].map(() => { const s = makeShip(PINK, 0xffb0e0); s.scale.setScalar(0.62); scene.add(s); return s; });
+      const sysCyan = [0, 1].map(() => { const s = makeShip(CYAN, 0xb5fffb); s.scale.setScalar(0.62); scene.add(s); return s; });
+      const boomTex = canvasTex(256, 256, (g) => { const gr = g.createRadialGradient(128, 128, 0, 128, 128, 128); gr.addColorStop(0, "rgba(255,255,255,1)"); gr.addColorStop(0.3, "rgba(255,210,130,.8)"); gr.addColorStop(1, "rgba(255,120,30,0)"); g.fillStyle = gr; g.fillRect(0, 0, 256, 256); });
+      const boom = new THREE.Sprite(new THREE.SpriteMaterial({ color: new THREE.Color(3, 3, 3), map: boomTex, transparent: true, depthWrite: false, blending: THREE.AdditiveBlending, toneMapped: false })); scene.add(boom);
+
+      // ---------- dice ----------
+      const dieFace = (bg, draw) => canvasTex(512, 512, (g, w, h) => { g.fillStyle = bg; g.fillRect(0, 0, w, h); g.save(); g.translate(w / 2, h / 2); draw(g); g.restore(); });
+      const faces = [
+        dieFace("#f1e7d4", (g) => { g.fillStyle = "#1b1530"; g.beginPath(); g.arc(0, 0, 62, 0, Math.PI * 2); g.fill(); }),
+        dieFace("#c8381d", (g) => { g.fillStyle = "#e6d8bf"; g.beginPath(); for (let i = 0; i < 10; i++) { const r = i % 2 ? 62 : 150, a = -Math.PI / 2 + (i * Math.PI) / 5; g.lineTo(Math.cos(a) * r, Math.sin(a) * r); } g.closePath(); g.fill(); }),
+        dieFace("#d9a531", (g) => { g.strokeStyle = "#1b1530"; g.lineWidth = 34; g.lineJoin = "round"; g.beginPath(); g.moveTo(-130, 100); g.lineTo(0, -120); g.lineTo(130, 100); g.closePath(); g.stroke(); g.fillStyle = "#1b1530"; g.beginPath(); g.arc(0, 40, 32, 0, Math.PI * 2); g.fill(); }),
+      ];
+      const DS = 1.116;
+      const dieGeo = new RoundedBoxGeometry(DS, DS, DS, 5, 0.17);
+      const dice = faces.map((tex, i) => { const m = new THREE.Mesh(dieGeo, new THREE.MeshPhysicalMaterial({ map: tex, roughness: 0.4, clearcoat: 0.45, clearcoatRoughness: 0.25 })); scene.add(m); return m; });
+
+      // ---------- medals ----------
+      function medalFace(cat) {
+        return canvasTex(1024, 1024, (g, w, h) => {
+          const gr = g.createRadialGradient(380, 330, 40, 512, 512, 520); gr.addColorStop(0, "#ffe7a6"); gr.addColorStop(0.55, "#e0ad3c"); gr.addColorStop(1, "#9c6b17"); g.fillStyle = gr; g.fillRect(0, 0, w, h);
+          g.strokeStyle = "rgba(70,42,6,.55)"; g.lineWidth = 10; g.beginPath(); g.arc(512, 512, 430, 0, Math.PI * 2); g.stroke();
+          g.textAlign = "center"; g.textBaseline = "middle"; g.fillStyle = "#3a2405";
+          g.font = '700 58px "Manrope"'; g.letterSpacing = "14px"; g.fillText("MELHOR", 512, 330);
+          g.font = 'italic 400 168px "Instrument Serif"'; g.letterSpacing = "0px"; g.fillText(cat, 512, 520);
+          g.font = '700 50px "Manrope"'; g.letterSpacing = "14px"; g.fillText("VENCEDOR", 512, 700);
+        });
+      }
+      function makeMedal(cat) {
+        const g = new THREE.Group();
+        const disc = new THREE.Mesh(new THREE.CylinderGeometry(1.06, 1.06, 0.16, 128), new THREE.MeshStandardMaterial({ color: 0xc9962f, metalness: 1, roughness: 0.34 }));
+        disc.rotation.x = Math.PI / 2; g.add(disc);
+        const rimR = new THREE.Mesh(new THREE.TorusGeometry(1.06, 0.07, 24, 128), new THREE.MeshStandardMaterial({ color: 0xe0b44a, metalness: 1, roughness: 0.26 })); g.add(rimR);
+        const face = new THREE.Mesh(new THREE.CircleGeometry(0.98, 128), new THREE.MeshStandardMaterial({ map: medalFace(cat), metalness: 0.25, roughness: 0.55 })); face.position.z = 0.085; g.add(face);
+        scene.add(g); return g;
+      }
+      const medals = [makeMedal("Wargame"), makeMedal("Inovação")];
+
+      // ---------- post ----------
+      const composer = new EffectComposer(renderer);
+      composer.setPixelRatio(1); composer.setSize(1080, 1920);
+      composer.addPass(new RenderPass(scene, camera));
+      const bloom = new UnrealBloomPass(new THREE.Vector2(540, 960), 0.85, 0.5, 1.0);
+      composer.addPass(bloom);
+      composer.addPass(new OutputPass());
+
+      // ---------- the film, as a function of t ----------
+      const V = (x, y, z) => new THREE.Vector3(x, y, z);
+      const CARD_C = V(0, wy(860), 0);
+      const tmp = new THREE.Vector3();
+      const hideAll = () => { [...hookFleet, mine, rival, token, pill, zero, system, ...sysPink, ...sysCyan, boom, ...dice, ...medals].forEach((o) => (o.visible = false)); };
+
+      host.render = (t) => {
+        hideAll();
+        flash.intensity = 0;
+        stars.position.y = t * 0.12;
+        camera.position.set(0, 0, 20); camera.up.set(0, 1, 0); camera.lookAt(0, 0, 0);
+
+        // HOOK 0–4.3: the fleet streaks past the camera into deep space.
+        if (t < 4.3) {
+          camera.position.set(Math.sin(t * 0.3) * 0.4, 0.2 - t * 0.05, 21 - t * 0.2); camera.lookAt(0, 0, 0);
+          hookFleet.forEach((s) => {
+            const k = clamp((t + 1.2 - s.userData.d) / 6.2);
+            s.position.lerpVectors(s.userData.a, s.userData.b, k); s.visible = true;
+            tmp.lerpVectors(s.userData.a, s.userData.b, Math.min(1, k + 0.02)); s.lookAt(tmp); s.rotateZ(0.35 * Math.sin(t * 0.8 + s.userData.d * 10));
+          });
+          if (t >= 3.5) {
+            const k = expoOut(prog(t, 3.5, 0.75));
+            mine.visible = true; mine.position.set(0, lerp(-9, CARD_C.y, k), lerp(4, 0, k));
+            mine.rotation.set(lerp(-0.9, 0, k), lerp(Math.PI * 1.5, 0, k), lerp(-0.25, 0, k)); mine.scale.setScalar(1);
+          }
+        }
+
+        // JOGADA 4.3–12.3
+        if (t >= 4.3 && t < 12.3) {
+          const s = mine.userData.state;
+          const sway = Math.sin((t - 4.3) * 0.5) * 0.08;
+          camera.position.set(Math.sin((t - 4.3) * 0.35) * 1.2, 0.3, 20); camera.lookAt(0, 0.2, 0);
+          mine.visible = true; mine.position.copy(CARD_C); mine.rotation.set(0.05, sway, 0); mine.scale.setScalar(1);
+          // three action points light up
+          s.lit = [0, 1, 2].map((i) => clamp((t - 6.0 - i * 0.16) / 0.3)).map((v) => v * (1 - 0.65 * prog(t, 8.3, 0.25)));
+          // slot roll 4 → 0
+          s.roll = 4 * p2io(prog(t, 8.3, 0.42));
+          mine.update();
+          // ambition token drops onto the corner, settles
+          if (t >= 7.3) {
+            const kd = p3in(prog(t, 7.3, 0.42)), ks = prog(t, 7.72, 0.6);
+            token.visible = true;
+            const off = V(0.95, 1.56, 0.12);
+            token.position.set(CARD_C.x + off.x, lerp(CARD_C.y + off.y + 7, CARD_C.y + off.y, kd), off.z + lerp(3, 0, kd));
+            token.rotation.set(lerp(1.2, 0, kd), lerp(-2.4, 0, kd), lerp(-0.6, 0.14, kd) - 0.14 * (1 - Math.exp(-6 * ks)) + 0.12 * damped(ks, 3, 4));
+          }
+          // my card steps aside; the rival 5 spins in over it
+          if (t >= 9.9) {
+            const k = p3out(prog(t, 9.9, 0.5));
+            mine.position.set(lerp(0, -1.06, k), lerp(CARD_C.y, CARD_C.y - 0.22, k), lerp(0, -0.4, k)); mine.scale.setScalar(lerp(1, 0.82, k)); mine.rotation.z = lerp(0, 0.14, k); mine.rotation.y = sway + lerp(0, 0.25, k);
+            token.position.x = mine.position.x + 0.95 * mine.scale.x; token.position.y = mine.position.y + 1.56 * mine.scale.x; token.scale.setScalar(mine.scale.x);
+            const kr = expoOut(prog(t, 10.25, 0.45));
+            rival.visible = true; rival.update();
+            rival.position.set(lerp(7, 1.06, kr), lerp(CARD_C.y + 0.4, CARD_C.y - 0.67, kr), lerp(2, 0.3, kr));
+            rival.rotation.set(0, lerp(-Math.PI * 2.5, -0.18, kr), lerp(-0.6, -0.12, kr)); rival.scale.setScalar(0.82);
+          }
+          // the initiative token changes hands
+          if (t >= 10.7) {
+            const ka = backOut(prog(t, 10.7, 0.3)), km = p2io(prog(t, 11.1, 0.5));
+            pill.visible = true; pill.scale.setScalar(lerp(0.6, 1, clamp(ka, 0, 1.2)));
+            pill.position.set(lerp(-1.06, 1.1, km), lerp(-2.0, -2.25, km) + Math.sin(km * Math.PI) * 0.5, 0.8); pill.rotation.set(-0.15, 0, lerp(0.1, -0.08, km));
+          }
+          // exit: rival and pill whip right; the camera dives into my zero
+          if (t >= 11.8) {
+            const kx = p3in(prog(t, 11.8, 0.32));
+            rival.position.x += kx * 8; rival.rotation.y -= kx * 2; pill.position.x += kx * 8;
+            const kd = p3in(prog(t, 11.85, 0.45));
+            const target = V(mine.position.x - 0.62 * mine.scale.x, mine.position.y + 1.05 * mine.scale.x, 0);
+            camera.position.set(lerp(camera.position.x, target.x, kd), lerp(camera.position.y, target.y, kd), lerp(20, 2.2, kd)); camera.lookAt(lerp(0, target.x, kd), lerp(0.2, target.y, kd), 0);
+          }
+        }
+
+        // VIRADA 12.3–14.3: the zero, glowing; then it lies down and becomes an orbit.
+        if (t >= 12.3 && t < 14.3) {
+          const ka = expoOut(prog(t, 12.3, 0.45));
+          const kf = p2io(prog(t, 13.65, 0.65));
+          camera.position.set(0, lerp(0, 0.6, kf), 20); camera.lookAt(0, lerp(0, -0.3, kf), 0);
+          zero.visible = true;
+          zero.position.set(0, lerp(CARD_C.y, wy(1150), kf), lerp(8, 0, ka));
+          const sY = lerp(1.42, 1, kf), sc = lerp(1.06, 3.4, kf);
+          zero.scale.set(sc, sc * sY, sc * lerp(1, 0.25, kf));
+          zero.rotation.set(lerp(0, -1.25, kf), (1 - ka) * 1.2 + Math.sin(t * 0.8) * 0.06 * (1 - kf), 0);
+          zero.material.emissiveIntensity = lerp(2.4, 1.2, kf);
+        }
+
+        // GUERRA 14.3–20.3: the Vértice; three dice; the attack.
+        if (t >= 14.3 && t < 20.3) {
+          const lt = t - 14.3;
+          camera.position.set(Math.sin(lt * 0.25) * 0.8, 0.6, 20); camera.lookAt(0, -0.3, 0);
+          const kb = expoOut(prog(t, 14.3, 0.8));
+          system.visible = true; system.position.set(0, wy(1150), 0); system.rotation.set(-1.25, 0, lt * 0.04);
+          orbits.forEach((o, i) => { o.scale.setScalar(i === 0 ? 1 : lerp(0.5, 1, kb)); o.material.opacity = i === 0 ? 0.75 : 0.75 * kb; });
+          sun.scale.setScalar(lerp(0.01, 1, kb)); halo.scale.setScalar(lerp(0.1, 3.4, kb));
+          planets.forEach((p, i) => { const a = p.userData.a + lt * (0.5 / p.userData.r); p.position.set(Math.cos(a) * p.userData.r, Math.sin(a) * p.userData.r, 0); p.scale.setScalar(backOut(prog(t, 14.65 + i * 0.07, 0.4))); p.rotation.y = lt * 0.6; });
+          // fleets
+          const kf = expoOut(prog(t, 14.8, 0.9));
+          const pinkHome = [V(-2.3, -0.4, 1.2), V(-2.8, -0.9, 0.6), V(-2.4, -1.5, 1.6)];
+          const cyanHome = [V(2.2, -0.95, 1.0), V(2.6, -1.55, 0.4)];
+          const dash = p3in(prog(t, 18.3, 0.45));
+          sysPink.forEach((s, i) => { s.visible = true; tmp.copy(pinkHome[i]); tmp.x += lerp(-4, 0, kf) + dash * 3.6; tmp.y += dash * 0.2; s.position.copy(tmp); s.lookAt(tmp.x + 5, tmp.y, tmp.z); s.rotateZ(-1.15); });
+          sysCyan.forEach((s, i) => { s.visible = true; tmp.copy(cyanHome[i]); tmp.x += lerp(4, 0, kf); s.position.copy(tmp); s.lookAt(tmp.x - 5, tmp.y, tmp.z); s.rotateZ(1.15); });
+          if (t >= 18.75) {
+            const kh = prog(t, 18.75, 0.9);
+            const s = sysCyan[0]; s.position.x += p3out(kh) * 2.2; s.position.y -= p3out(kh) * 1.6; s.rotation.z += kh * 6; s.rotation.x += kh * 3; s.scale.setScalar(0.62 * (1 - kh));
+            boom.visible = true; const kb2 = prog(t, 18.75, 0.5); boom.position.copy(cyanHome[0]); boom.scale.setScalar(lerp(0.3, 3.2, p3out(kb2))); boom.material.opacity = 1 - kb2;
+            flash.position.copy(cyanHome[0]); flash.intensity = 60 * (1 - kb2);
+          }
+          // dice drop, tumble, land still
+          const dx = [wx(205), wx(540), wx(875)], dyT = wy(660);
+          dice.forEach((d, i) => {
+            const st = 15.6 + i * 0.25; if (t < st) return;
+            const k = prog(t, st, 0.75);
+            d.visible = true;
+            d.position.set(dx[i], lerp(dyT + 7, dyT, bounceOut(k)), 0.6);
+            const r = 1 - p3out(k);
+            d.rotation.set(-0.22 + r * (5 + i), 0.3 - 0.3 * i + r * (7 - i), r * (3 + i * 2));
+            if (t >= 19.85) { const ke = p3in(prog(t, 19.85 + i * 0.04, 0.35)); d.position.y += ke * 9; }
+          });
+          if (t >= 19.9) { const ke = p3in(prog(t, 19.9, 0.4)); system.position.z = -ke * 12; sysPink.concat(sysCyan).forEach((s) => (s.position.z -= ke * 12)); }
+        }
+
+        // PRÊMIOS 20.3–24.3: two gold medals spin in on the downbeat.
+        if (t >= 20.3 && t < 24.3) {
+          camera.position.set(0, 0, 20); camera.lookAt(0, 0, 0);
+          key.position.set(lerp(-9, 1, prog(t, 20.3, 4)), 8, 10);
+          medals.forEach((m, i) => {
+            const st = 20.3 + i * 0.08; const k = expoOut(prog(t, st, 0.55));
+            m.visible = t >= st;
+            m.position.set(i ? wx(780) : wx(300), wy(520), lerp(14, 0, k));
+            m.rotation.set(0.08 * Math.sin(t * 0.7 + i), lerp((i ? -1 : 1) * Math.PI * 3, 0, k) + 0.1 * Math.sin(t * 0.9 + i * 2), 0);
+            if (t >= 24.0) { const ke = p3in(prog(t, 24.0, 0.25)); m.position.y += ke * 6; }
+          });
+        }
+
+        // FIM 24.3–30: drift through the stars toward a distant sun.
+        if (t >= 24.3) {
+          const lt = t - 24.3;
+          camera.position.set(Math.sin(lt * 0.2) * 0.6, -lt * 0.15, 20 - lt * 0.8); camera.lookAt(0, -lt * 0.15, 0);
+          system.visible = true; system.position.set(0, -6.5, -30); system.rotation.set(-1.15, 0, lt * 0.05);
+          orbits.forEach((o) => { o.scale.setScalar(1); o.material.opacity = 0.5; }); sun.scale.setScalar(1); halo.scale.setScalar(3.4);
+          planets.forEach((p) => { const a = p.userData.a + (lt + 6) * (0.5 / p.userData.r); p.position.set(Math.cos(a) * p.userData.r, Math.sin(a) * p.userData.r, 0); p.scale.setScalar(1); });
+        }
+
+        composer.render();
+      };
+
+      // build the shaders once, draw a throwaway frame, then hand over.
+      await renderer.compileAsync(scene, camera);
+      host.render(0); host.render(host.clock.t);
+      host.ready();
+    </script>
+  </body>
+</html>

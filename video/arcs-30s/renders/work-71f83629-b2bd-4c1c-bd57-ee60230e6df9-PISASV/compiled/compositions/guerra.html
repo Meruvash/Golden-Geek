@@ -1,0 +1,41 @@
+<template>
+  <style>
+    @font-face { font-family: "Instrument Serif"; font-style: normal; font-weight: 400; src: url("assets/fonts/instrument-serif-latin-400-normal.woff2") format("woff2"); }
+    @font-face { font-family: "Instrument Serif"; font-style: italic; font-weight: 400; src: url("assets/fonts/instrument-serif-latin-400-italic.woff2") format("woff2"); }
+    @font-face { font-family: "Manrope"; font-weight: 500; src: url("assets/fonts/manrope-latin-500-normal.woff2") format("woff2"); }
+    @font-face { font-family: "Manrope"; font-weight: 700; src: url("assets/fonts/manrope-latin-700-normal.woff2") format("woff2"); }
+    @font-face { font-family: "Manrope"; font-weight: 800; src: url("assets/fonts/manrope-latin-800-normal.woff2") format("woff2"); }
+    .serif { font-family: "Instrument Serif", serif; font-weight: 400; letter-spacing: -0.01em; color: #f6f0e6; text-shadow: 0 4px 30px rgba(5,3,12,.55); }
+    .serif em { font-style: italic; color: #f2a54a; }
+    .kick { font-family: "Manrope", sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: .26em; color: #e8c37a; }
+    .body { font-family: "Manrope", sans-serif; font-weight: 500; color: #e4ddf0; text-shadow: 0 2px 18px rgba(5,3,12,.6); }
+    .w { display: inline-block; }
+    #root { position: absolute; inset: 0; overflow: hidden; }
+    .w-cap { position: absolute; left: 80px; right: 70px; top: 200px; font-size: 108px; line-height: 0.98; }
+    .w-lbl { position: absolute; top: 790px; width: 300px; text-align: center; }
+    #w-l1 { left: 55px; } #w-l2 { left: 390px; } #w-l3 { left: 725px; }
+    .w-lbl .kick { font-size: 28px; letter-spacing: .2em; color: #f6f0e6; }
+    .w-lbl .serif { font-size: 40px; margin-top: 4px; }
+    .w-lbl .serif em { color: #e8c37a; }
+  </style>
+  <div id="root" data-composition-id="guerra" data-width="1080" data-height="1920">
+    <div id="w-c1" class="w-cap serif clip" data-start="0" data-duration="3.4"><span class="w">Na</span> <span class="w">guerra,</span> <span class="w">você</span><br /><em class="w">escolhe</em> <em class="w">o</em> <em class="w">risco</em></div>
+    <div id="w-c2" class="w-cap serif clip" data-start="3.4" data-duration="2.6"><span class="w">Cada</span> <span class="w">ataque</span><br /><span class="w">é</span> <em class="w">uma</em> <em class="w">aposta</em></div>
+    <div id="w-l1" class="w-lbl"><div class="kick">Escaramuça</div><div class="serif"><em>a segura</em></div></div>
+    <div id="w-l2" class="w-lbl"><div class="kick">Assalto</div><div class="serif"><em>a agressiva</em></div></div>
+    <div id="w-l3" class="w-lbl"><div class="kick">Saque</div><div class="serif"><em>rouba recursos</em></div></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    const words = (sel, t) => tl.fromTo(sel + " .w", { opacity: 0, filter: "blur(8px)" },
+      { opacity: 1, filter: "blur(0px)", duration: 0.16, stagger: 0.07, ease: "power4.out" }, t);
+    words("#w-c1", 0.2);
+    // Labels appear as each die lands (dice start falling at 1.3 / 1.55 / 1.8 s in this scene).
+    [["#w-l1", 1.75], ["#w-l2", 2.0], ["#w-l3", 2.25]].forEach(([s, t]) =>
+      tl.fromTo(s, { opacity: 0, y: 24, filter: "blur(6px)" }, { opacity: 1, y: 0, filter: "blur(0px)", duration: 0.35, ease: "expo.out" }, t));
+    words("#w-c2", 3.45);
+    tl.to(".w-lbl", { opacity: 0, y: -60, filter: "blur(8px)", duration: 0.3, ease: "power3.in", stagger: 0.04 }, 5.5);
+    tl.to("#w-c2 .w", { opacity: 0, filter: "blur(8px)", duration: 0.15, stagger: 0.02, ease: "power3.in" }, 5.5);
+    window.__timelines["guerra"] = tl;
+  </script>
+</template>
