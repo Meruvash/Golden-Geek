@@ -1,0 +1,37 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; overflow: hidden; background: #0f1630; }
+    .af-full { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; }
+  </style>
+  <div id="root" data-composition-id="arte-fim" data-width="1080" data-height="1920">
+    <svg id="af-sky" class="af-full" viewBox="0 0 1080 1920" data-layout-ignore>
+      <defs>
+        <linearGradient id="af-g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0c1230"/><stop offset="0.55" stop-color="#29235a"/><stop offset="0.85" stop-color="#5a3f78"/><stop offset="1" stop-color="#7a4f7e"/></linearGradient>
+        <linearGradient id="af-au" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#58ffc8" stop-opacity="0"/><stop offset="0.5" stop-color="#7dffd6" stop-opacity="0.38"/><stop offset="1" stop-color="#8fb8ff" stop-opacity="0"/></linearGradient>
+        <radialGradient id="af-tree"><stop offset="0" stop-color="#e9ffd9" stop-opacity="0.95"/><stop offset="1" stop-color="#c9ffb8" stop-opacity="0"/></radialGradient>
+      </defs>
+      <rect width="1080" height="1920" fill="url(#af-g)"/>
+      <g id="af-stars" fill="#ffffff"></g>
+      <g id="af-aurora">
+        <path d="M-100,560 C200,420 500,640 800,480 C950,400 1100,450 1200,420 L1200,520 C1100,560 950,500 800,590 C500,760 200,540 -100,680 Z" fill="url(#af-au)"/>
+        <path d="M-100,760 C250,640 520,820 820,700 C980,640 1120,680 1200,660 L1200,730 C1100,760 980,720 820,780 C520,900 250,740 -100,840 Z" fill="url(#af-au)" opacity="0.7"/>
+      </g>
+      <circle cx="540" cy="1430" r="260" fill="url(#af-tree)"/>
+      <path d="M0,1560 C180,1500 360,1520 540,1490 C720,1460 900,1510 1080,1490 L1080,1920 L0,1920 Z" fill="#1a1838"/>
+      <path d="M528,1500 C530,1460 524,1430 514,1410 L540,1405 L566,1410 C556,1430 550,1460 552,1500 Z" fill="#100f26"/>
+      <g fill="#100f26"><circle cx="540" cy="1370" r="70"/><circle cx="478" cy="1400" r="50"/><circle cx="604" cy="1400" r="52"/></g>
+    </svg>
+  </div>
+  <script>
+    (function () {
+      let s = 31; const r = () => ((s = (s * 1664525 + 1013904223) % 4294967296) / 4294967296);
+      const g = document.getElementById("af-stars"); const NS = "http://www.w3.org/2000/svg";
+      for (let i = 0; i < 140; i++) { const c = document.createElementNS(NS, "circle"); c.setAttribute("cx", (r() * 1080).toFixed(1)); c.setAttribute("cy", (r() * 1300).toFixed(1)); c.setAttribute("r", (0.8 + r() * 2.2).toFixed(1)); c.setAttribute("opacity", (0.3 + r() * 0.7).toFixed(2)); g.appendChild(c); }
+    })();
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#af-sky", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "power2.out" }, 0);
+    tl.fromTo("#af-aurora", { x: 0 }, { x: -120, duration: 4, ease: "none" }, 0);
+    tl.fromTo("#af-stars", { y: 0 }, { y: 30, duration: 4, ease: "none" }, 0);
+    window.__timelines["arte-fim"] = tl;
+  </script>
+</template>

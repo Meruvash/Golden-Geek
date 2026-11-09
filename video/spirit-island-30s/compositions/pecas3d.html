@@ -1,0 +1,171 @@
+<!doctype html>
+<!--
+  Camada 3D do vídeo de Spirit Island: naves e peças dos Invasores, em toon shading com contorno preto,
+  sobre a arte 2D (canvas transparente). Seek-safe: render(t) é função pura do tempo.
+  px→mundo na profundidade z: x=(px-540)*PX*(20-z)/20, y=(960-py)*PX*(20-z)/20, PX=0.005582 (câmera z=20, fov 30).
+-->
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+    <style>
+      html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; background: transparent; }
+      #p3-root { position: absolute; inset: 0; }
+      #p3-canvas { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; }
+    </style>
+  </head>
+  <body>
+    <div id="p3-root" data-composition-id="pecas3d" data-start="0" data-duration="30" data-width="1080" data-height="1920">
+      <canvas id="p3-canvas" class="clip" data-start="0" data-duration="30" data-track-index="1" data-layout-ignore></canvas>
+    </div>
+    <script>
+      (function () {
+        var clock = { t: 0 }, host = { clock: clock, render: null };
+        window.__siPieces = host;
+        window.__hf = window.__hf || {}; window.__hf.buildReady = window.__hf.buildReady || {};
+        window.__hf.buildReady["pecas3d"] = new Promise(function (r) { host.ready = r; });
+        var tl = gsap.timeline({ paused: true });
+        tl.to(clock, { t: 30, duration: 30, ease: "none", onUpdate: function () { if (host.render) host.render(clock.t); } });
+        window.__timelines = window.__timelines || {}; window.__timelines["pecas3d"] = tl;
+      })();
+    </script>
+    <script type="module">
+      import * as THREE from "https://cdn.jsdelivr.net/npm/three@0.184.0/+esm";
+      const host = window.__siPieces;
+
+      const PX = 0.005582;
+      const S = (px, py, z = 0) => new THREE.Vector3((px - 540) * PX * (20 - z) / 20, (960 - py) * PX * (20 - z) / 20, z);
+      const clamp = (x, a = 0, b = 1) => Math.min(b, Math.max(a, x));
+      const prog = (t, a, d) => clamp((t - a) / d);
+      const lerp = (a, b, k) => a + (b - a) * k;
+      const p2io = (x) => (x < 0.5 ? 2 * x * x : 1 - Math.pow(-2 * x + 2, 2) / 2);
+      const p3in = (x) => x * x * x;
+      const bounceOut = (x) => { const n = 7.5625, d = 2.75; if (x < 1 / d) return n * x * x; if (x < 2 / d) return n * (x -= 1.5 / d) * x + 0.75; if (x < 2.5 / d) return n * (x -= 2.25 / d) * x + 0.9375; return n * (x -= 2.625 / d) * x + 0.984375; };
+
+      const renderer = new THREE.WebGLRenderer({ canvas: document.getElementById("p3-canvas"), antialias: true, alpha: true, preserveDrawingBuffer: true });
+      renderer.setPixelRatio(1); renderer.setSize(1080, 1920, false);
+      renderer.setClearColor(0x000000, 0);
+      renderer.outputColorSpace = THREE.SRGBColorSpace;
+      const scene = new THREE.Scene();
+      const camera = new THREE.PerspectiveCamera(30, 1080 / 1920, 0.1, 200); camera.position.set(0, 0, 20); camera.lookAt(0, 0, 0);
+      const sun = new THREE.DirectionalLight(0xffffff, 2.4); sun.position.set(-4, 6, 8); scene.add(sun);
+      scene.add(new THREE.AmbientLight(0xbfc8ff, 0.9));
+
+      // Toon ramp: three flat bands, like cel animation.
+      const ramp = new THREE.DataTexture(new Uint8Array([90, 90, 90, 255, 175, 175, 175, 255, 255, 255, 255, 255]), 3, 1, THREE.RGBAFormat);
+      ramp.minFilter = ramp.magFilter = THREE.NearestFilter; ramp.needsUpdate = true;
+      const toon = (c) => new THREE.MeshToonMaterial({ color: c, gradientMap: ramp });
+      const inkMat = new THREE.MeshBasicMaterial({ color: 0x14121c, side: THREE.BackSide });
+      // A mesh plus its ink outline (inverted hull).
+      function inked(geo, mat, w = 0.045) {
+        const g = new THREE.Group();
+        g.add(new THREE.Mesh(geo, mat));
+        const o = new THREE.Mesh(geo, inkMat);
+        geo.computeBoundingSphere(); const r = geo.boundingSphere.radius || 1;
+        o.scale.setScalar(1 + w / r * 2.2); g.add(o);
+        return g;
+      }
+
+      // ---------- ships (length 1.0 along -x, i.e. sailing left) ----------
+      function makeShip() {
+        const g = new THREE.Group();
+        const hs = new THREE.Shape();
+        hs.moveTo(-0.5, 0.08); hs.lineTo(0.42, 0.08); hs.quadraticCurveTo(0.52, 0.0, 0.46, -0.06); hs.quadraticCurveTo(0.1, -0.2, -0.36, -0.14); hs.quadraticCurveTo(-0.5, -0.06, -0.5, 0.08);
+        const hull = new THREE.ExtrudeGeometry(hs, { depth: 0.22, bevelEnabled: true, bevelThickness: 0.03, bevelSize: 0.02, bevelSegments: 2 }); hull.translate(0, 0, -0.11);
+        g.add(inked(hull, toon(0x8a4b2a), 0.02));
+        const deck = new THREE.Mesh(new THREE.BoxGeometry(0.86, 0.03, 0.2), toon(0xc58a55)); deck.position.y = 0.09; g.add(deck);
+        const mastGeo = new THREE.CylinderGeometry(0.014, 0.018, 0.62, 8);
+        [-0.12, 0.18].forEach((x, i) => {
+          const m = new THREE.Mesh(mastGeo, toon(0x5a3a22)); m.position.set(x, 0.38, 0); g.add(m);
+          const sg = new THREE.PlaneGeometry(i ? 0.3 : 0.36, i ? 0.34 : 0.4, 8, 6);
+          const pos = sg.attributes.position; for (let k = 0; k < pos.count; k++) { const y = pos.getY(k); const xx = pos.getX(k); pos.setZ(k, 0.06 * Math.cos((xx / 0.36) * Math.PI) + 0.02 * y); } sg.computeVertexNormals();
+          const sail = inked(sg, new THREE.MeshToonMaterial({ color: 0xf6ead2, gradientMap: ramp, side: THREE.DoubleSide }), 0.012);
+          sail.position.set(x, 0.42, 0.02); sail.rotation.y = Math.PI / 2 - 0.35; g.add(sail);
+        });
+        const flag = new THREE.Mesh(new THREE.PlaneGeometry(0.1, 0.05), new THREE.MeshToonMaterial({ color: 0xd2382d, gradientMap: ramp, side: THREE.DoubleSide })); flag.position.set(0.23, 0.72, 0); g.add(flag);
+        scene.add(g); return g;
+      }
+      const ships = [makeShip(), makeShip(), makeShip()];
+
+      // ---------- invader pieces ----------
+      const ivory = toon(0xf1e6cf);
+      function makeExplorer() {
+        const g = new THREE.Group();
+        const body = new THREE.LatheGeometry([[0, 0], [0.15, 0], [0.16, 0.03], [0.1, 0.12], [0.07, 0.24], [0.05, 0.3], [0, 0.32]].map(([x, y]) => new THREE.Vector2(x, y)), 24);
+        g.add(inked(body, ivory, 0.02));
+        const head = inked(new THREE.SphereGeometry(0.075, 20, 14), ivory, 0.018); head.position.y = 0.37; g.add(head);
+        const hat = inked(new THREE.CylinderGeometry(0.11, 0.11, 0.02, 20), toon(0x7a5a3e), 0.012); hat.position.y = 0.43; g.add(hat);
+        scene.add(g); return g;
+      }
+      function makeVillage() {
+        const g = new THREE.Group();
+        const base = inked(new THREE.BoxGeometry(0.34, 0.24, 0.3), ivory, 0.02); base.position.y = 0.12; g.add(base);
+        const rs = new THREE.Shape(); rs.moveTo(-0.21, 0); rs.lineTo(0.21, 0); rs.lineTo(0, 0.2); rs.closePath();
+        const roof = new THREE.ExtrudeGeometry(rs, { depth: 0.34, bevelEnabled: false }); roof.translate(0, 0, -0.17);
+        const r = inked(roof, toon(0xc8553d), 0.02); r.position.y = 0.24; g.add(r);
+        const door = new THREE.Mesh(new THREE.PlaneGeometry(0.07, 0.11), new THREE.MeshBasicMaterial({ color: 0x3a2a20 })); door.position.set(0.03, 0.06, 0.152); g.add(door);
+        scene.add(g); return g;
+      }
+      // tile centres (px): 230 / 540 / 850, top face at y≈1080
+      const pieces = [
+        { o: makeExplorer(), px: 230, py: 1110, drop: 12.2, sweep: 18.45, s: 1.0 },
+        { o: makeExplorer(), px: 500, py: 1120, drop: 13.0, sweep: 18.6, s: 1.0 },
+        { o: makeVillage(), px: 580, py: 1100, drop: 13.6, sweep: 18.62, s: 1.15 },
+        { o: makeExplorer(), px: 810, py: 1120, drop: 14.2, sweep: 18.73, s: 1.0 },
+        { o: makeVillage(), px: 890, py: 1100, drop: 14.4, sweep: 18.75, s: 1.15 },
+      ];
+
+      // zoom of the island art (matches arte-ilha's #ai-cam), so the ships stay glued to the painting
+      function islandZoom(t, px, py) {
+        const k1 = 1 + 0.06 * Math.min(t, 5.6) / 5.6;
+        let x = 560 + (px - 560) * k1, y = 1035 + (py - 1035) * k1;
+        const k2 = lerp(1, 6.5 / 1.06, p3in(prog(t, 5.75, 0.75)));
+        x = 600 + (x - 600) * k2; y = 880 + (y - 880) * k2;
+        return [x, y, k1 * k2];
+      }
+
+      const all = [...ships, ...pieces.map((p) => p.o)];
+      host.render = (t) => {
+        all.forEach((o) => (o.visible = false));
+        let any = false;
+        if (t >= 2.9 && t < 6.5) {
+          ships.forEach((s, i) => {
+            const k = p2io(prog(t, 2.9 + i * 0.18, 3.4));
+            const px = lerp(1060 + 46 * i, 700 + 120 * i, k), py = lerp(1046, 1092 + 14 * i, k) + Math.sin(t * 2.2 + i) * 2.5;
+            const size = lerp(34, 140, k);
+            const [zx, zy, zk] = islandZoom(t, px, py);
+            if (zx < -400 || zx > 1500 || zy > 2400) return;
+            s.visible = true; any = true;
+            s.position.copy(S(zx, zy, 0)); s.scale.setScalar(size * zk * PX);
+            s.rotation.set(0.12, -0.35, Math.sin(t * 1.8 + i * 1.3) * 0.05);
+          });
+        }
+        if (t >= 12.0 && t < 19.6) {
+          pieces.forEach((p, i) => {
+            if (t < p.drop) return;
+            const k = prog(t, p.drop, 0.5);
+            const base = S(p.px, p.py, 0.8);
+            p.o.visible = true; any = true;
+            p.o.scale.setScalar(p.s * 1.25);
+            p.o.position.set(base.x, lerp(base.y + 6, base.y, bounceOut(k)), base.z);
+            p.o.rotation.set(0.32, -0.5 + (1 - k) * 3, 0);
+            // ravage: the third land's pieces shake
+            if (i >= 3 && t > 14.8 && t < 15.3) { const sh = Math.sin((t - 14.8) * 60) * 0.03 * (1 - prog(t, 14.8, 0.5)); p.o.position.x += sh; }
+            // the wave: swept right, tumbling up and away
+            if (t >= p.sweep) {
+              const ks = prog(t, p.sweep, 0.9);
+              p.o.position.x += p3in(ks) * 9 + ks * 1.5; p.o.position.y += Math.sin(ks * Math.PI) * 1.6 + ks * 1.2;
+              p.o.rotation.z -= ks * 7; p.o.rotation.x += ks * 4;
+            }
+          });
+        }
+        if (!any) { renderer.clear(); return; }
+        renderer.render(scene, camera);
+      };
+      await renderer.compileAsync(scene, camera);
+      host.render(0); host.render(host.clock.t);
+      host.ready();
+    </script>
+  </body>
+</html>

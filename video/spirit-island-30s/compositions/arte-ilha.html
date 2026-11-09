@@ -1,0 +1,101 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; overflow: hidden; background: #f3d9c6; }
+    #ai-cam { position: absolute; inset: 0; transform-origin: 560px 1035px; }
+    .ai-layer { position: absolute; left: -60px; top: 0; width: 1200px; height: 1920px; }
+  </style>
+  <div id="root" data-composition-id="arte-ilha" data-width="1080" data-height="1920">
+    <div id="ai-cam" data-layout-ignore>
+      <!-- sky + sun -->
+      <svg id="ai-sky" class="ai-layer" viewBox="0 0 1200 1920" data-layout-ignore>
+        <defs>
+          <linearGradient id="ai-skyg" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#7fa6dc"/><stop offset="0.32" stop-color="#b7c3e8"/><stop offset="0.5" stop-color="#f3cfc4"/><stop offset="0.6" stop-color="#ffe4c9"/><stop offset="1" stop-color="#ffe4c9"/>
+          </linearGradient>
+          <radialGradient id="ai-sung"><stop offset="0" stop-color="#fffaf0"/><stop offset="0.18" stop-color="#fff1d6" stop-opacity="0.95"/><stop offset="0.5" stop-color="#ffd9b0" stop-opacity="0.35"/><stop offset="1" stop-color="#ffd9b0" stop-opacity="0"/></radialGradient>
+        </defs>
+        <rect width="1200" height="1920" fill="url(#ai-skyg)"/>
+        <circle cx="820" cy="900" r="560" fill="url(#ai-sung)"/>
+        <circle cx="820" cy="900" r="92" fill="#fffaf0"/>
+      </svg>
+      <!-- clouds (painterly: light tops, lavender bellies) -->
+      <svg id="ai-clouds" class="ai-layer" viewBox="0 0 1200 1920" data-layout-ignore>
+        <defs>
+          <linearGradient id="ai-cg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fffdf8"/><stop offset="0.6" stop-color="#fbe6e0"/><stop offset="1" stop-color="#c9b8dc"/></linearGradient>
+        </defs>
+        <g fill="url(#ai-cg)" opacity="0.95">
+          <g transform="translate(120,520)"><circle cx="0" cy="40" r="70"/><circle cx="90" cy="0" r="105"/><circle cx="210" cy="30" r="85"/><circle cx="300" cy="60" r="60"/><rect x="-60" y="40" width="420" height="80" rx="40"/></g>
+          <g transform="translate(700,380) scale(0.8)"><circle cx="0" cy="40" r="70"/><circle cx="100" cy="0" r="110"/><circle cx="230" cy="40" r="80"/><rect x="-60" y="40" width="360" height="80" rx="40"/></g>
+          <g transform="translate(380,760) scale(0.55)" opacity="0.8"><circle cx="0" cy="40" r="70"/><circle cx="90" cy="0" r="100"/><circle cx="200" cy="40" r="70"/><rect x="-60" y="40" width="330" height="80" rx="40"/></g>
+        </g>
+      </svg>
+      <!-- distant mountains in haze -->
+      <svg id="ai-mtn" class="ai-layer" viewBox="0 0 1200 1920" data-layout-ignore>
+        <defs>
+          <linearGradient id="ai-m1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8ea6d6"/><stop offset="1" stop-color="#d8cbe0"/></linearGradient>
+          <linearGradient id="ai-m2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a7b6dc"/><stop offset="1" stop-color="#ead8dc"/></linearGradient>
+        </defs>
+        <path d="M0,1040 L90,930 L170,975 L280,860 L380,955 L470,905 L560,1000 L1200,1000 L1200,1040 Z" fill="url(#ai-m2)" opacity="0.8"/>
+        <path d="M-20,1045 L60,985 L140,1010 L220,960 L300,1020 L360,1045 Z" fill="url(#ai-m1)" opacity="0.85"/>
+        <path d="M880,1045 L960,970 L1020,995 L1110,930 L1200,990 L1200,1045 Z" fill="url(#ai-m1)" opacity="0.7"/>
+      </svg>
+      <!-- sea with sun streaks -->
+      <svg id="ai-sea" class="ai-layer" viewBox="0 0 1200 1920" data-layout-ignore>
+        <defs>
+          <linearGradient id="ai-seag" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9cc9df"/><stop offset="0.25" stop-color="#5ea6c9"/><stop offset="1" stop-color="#245c87"/></linearGradient>
+        </defs>
+        <rect x="0" y="1040" width="1200" height="880" fill="url(#ai-seag)"/>
+        <g id="ai-streaks" fill="#fff6e4">
+          <rect x="740" y="1052" width="170" height="5" rx="2.5" opacity="0.85"/><rect x="700" y="1068" width="240" height="5" rx="2.5" opacity="0.7"/>
+          <rect x="760" y="1088" width="120" height="6" rx="3" opacity="0.6"/><rect x="680" y="1112" width="280" height="6" rx="3" opacity="0.45"/>
+          <rect x="730" y="1142" width="190" height="7" rx="3.5" opacity="0.35"/><rect x="660" y="1182" width="320" height="8" rx="4" opacity="0.25"/>
+        </g>
+      </svg>
+      <!-- the island, flat-shaded, with the old tree -->
+      <svg id="ai-isl" class="ai-layer" viewBox="0 0 1200 1920" data-layout-ignore>
+        <defs>
+          <linearGradient id="ai-cliff" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e6c79a"/><stop offset="1" stop-color="#a7835c"/></linearGradient>
+          <linearGradient id="ai-grass" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8fd18a"/><stop offset="1" stop-color="#3f9a63"/></linearGradient>
+          <radialGradient id="ai-aura"><stop offset="0" stop-color="#e9ffd9" stop-opacity="0.9"/><stop offset="1" stop-color="#c9ffb8" stop-opacity="0"/></radialGradient>
+        </defs>
+        <ellipse cx="600" cy="1190" rx="420" ry="34" fill="#ffffff" opacity="0.55"/>
+        <path d="M220,1180 C240,1110 330,1080 420,1070 C520,1040 700,1040 800,1070 C900,1090 980,1130 990,1185 C900,1215 320,1215 220,1180 Z" fill="url(#ai-cliff)"/>
+        <path d="M232,1150 C260,1090 360,1060 450,1050 C560,1022 700,1024 800,1050 C890,1070 960,1105 975,1150 C880,1135 330,1140 232,1150 Z" fill="url(#ai-grass)"/>
+        <g fill="#2f7d55"><circle cx="330" cy="1080" r="34"/><circle cx="380" cy="1060" r="42"/><circle cx="440" cy="1048" r="36"/><circle cx="760" cy="1046" r="38"/><circle cx="820" cy="1060" r="44"/><circle cx="880" cy="1082" r="32"/></g>
+        <g fill="#5fb874"><circle cx="322" cy="1070" r="22"/><circle cx="372" cy="1048" r="27"/><circle cx="432" cy="1038" r="22"/><circle cx="752" cy="1035" r="24"/><circle cx="812" cy="1048" r="28"/><circle cx="874" cy="1072" r="20"/></g>
+        <circle id="ai-aura-c" cx="600" cy="930" r="240" fill="url(#ai-aura)"/>
+        <path d="M588,1050 C590,1000 582,960 570,930 L600,925 L630,930 C618,960 610,1000 612,1050 Z" fill="#7a5a3e"/>
+        <g fill="#2f8a5a"><circle cx="600" cy="880" r="88"/><circle cx="520" cy="920" r="64"/><circle cx="680" cy="920" r="66"/><circle cx="560" cy="830" r="56"/><circle cx="645" cy="832" r="60"/></g>
+        <g fill="#7fd08a"><circle cx="585" cy="860" r="54"/><circle cx="505" cy="905" r="36"/><circle cx="665" cy="905" r="38"/><circle cx="548" cy="815" r="32"/><circle cx="632" cy="815" r="34"/></g>
+      </svg>
+      <!-- foreground grass and flowers (soft, close) -->
+      <svg id="ai-fg" class="ai-layer" viewBox="0 0 1200 1920" data-layout-ignore>
+        <path d="M0,1700 C200,1610 420,1650 600,1630 C800,1610 1000,1600 1200,1650 L1200,1920 L0,1920 Z" fill="#3e8a5c"/>
+        <path d="M0,1760 C240,1690 480,1730 700,1700 C900,1680 1060,1700 1200,1720 L1200,1920 L0,1920 Z" fill="#2c6b48"/>
+        <g fill="#fff4f6"><circle cx="160" cy="1700" r="10"/><circle cx="240" cy="1730" r="8"/><circle cx="880" cy="1680" r="10"/><circle cx="980" cy="1712" r="9"/><circle cx="560" cy="1660" r="8"/></g>
+        <g fill="#ffd1dc"><circle cx="160" cy="1700" r="4"/><circle cx="880" cy="1680" r="4"/><circle cx="560" cy="1660" r="3"/></g>
+      </svg>
+      <!-- birds -->
+      <svg id="ai-birds" class="ai-layer" viewBox="0 0 1200 1920" data-layout-ignore>
+        <g fill="none" stroke="#4a5a7a" stroke-width="4" stroke-linecap="round">
+          <path d="M300,700 q14,-12 28,0 q14,-12 28,0"/><path d="M360,740 q10,-9 20,0 q10,-9 20,0"/><path d="M250,760 q9,-8 18,0 q9,-8 18,0"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    // Parallax: each layer drifts at its own speed (far slow, near fast).
+    tl.fromTo("#ai-clouds", { x: 0 }, { x: -70, duration: 6.5, ease: "none" }, 0);
+    tl.fromTo("#ai-mtn", { x: 0 }, { x: -18, duration: 6.5, ease: "none" }, 0);
+    tl.fromTo("#ai-isl", { x: 0 }, { x: -30, duration: 6.5, ease: "none" }, 0);
+    tl.fromTo("#ai-fg", { x: 0, y: 0 }, { x: -60, y: 10, duration: 6.5, ease: "none" }, 0);
+    tl.fromTo("#ai-birds", { x: 0, y: 0 }, { x: 260, y: -90, duration: 6.5, ease: "none" }, 0);
+    tl.fromTo("#ai-streaks", { x: 0 }, { x: -24, duration: 6.5, ease: "none" }, 0);
+    tl.fromTo("#ai-aura-c", { opacity: 0.55 }, { opacity: 1, duration: 2.6, ease: "power2.inOut" }, 3.2);
+    // Camera: a gentle push, then a dive into the old tree (it becomes the next world).
+    tl.fromTo("#ai-cam", { scale: 1 }, { scale: 1.06, duration: 5.6, ease: "none" }, 0);
+    tl.to("#ai-cam", { scale: 6.5, duration: 0.75, ease: "power3.in", transformOrigin: "600px 880px" }, 5.75);
+    window.__timelines["arte-ilha"] = tl;
+  </script>
+</template>

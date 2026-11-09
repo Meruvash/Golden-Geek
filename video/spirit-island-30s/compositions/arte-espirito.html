@@ -1,0 +1,89 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; overflow: hidden; background: #123a33; }
+    .ae-l { position: absolute; left: -60px; top: 0; width: 1200px; height: 1920px; }
+    #ae-spirit { position: absolute; left: 323px; top: 735px; width: 434px; height: 465px; transform-origin: 217px 450px; }
+    .ae-ff { position: absolute; width: 14px; height: 14px; border-radius: 50%;
+      background: radial-gradient(circle, #fbffd8 0%, #e3ff8a 35%, rgba(200,255,120,0) 70%); }
+    #ae-flash { position: absolute; inset: 0; background: radial-gradient(circle at 540px 1000px, #ffffff 0%, #eaffe0 35%, #bfe8ff 100%); }
+  </style>
+  <div id="root" data-composition-id="arte-espirito" data-width="1080" data-height="1920">
+    <svg id="ae-back" class="ae-l" viewBox="0 0 1200 1920" data-layout-ignore>
+      <defs>
+        <linearGradient id="ae-bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2d6a5a"/><stop offset="0.55" stop-color="#5ea777"/><stop offset="1" stop-color="#1d4a3b"/></linearGradient>
+        <linearGradient id="ae-ray" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff7d6" stop-opacity="0.55"/><stop offset="1" stop-color="#fff7d6" stop-opacity="0"/></linearGradient>
+      </defs>
+      <rect width="1200" height="1920" fill="url(#ae-bg)"/>
+      <g fill="#24584a" opacity="0.9">
+        <rect x="70" y="0" width="70" height="1500"/><rect x="230" y="0" width="46" height="1400"/><rect x="900" y="0" width="80" height="1520"/><rect x="1060" y="0" width="50" height="1420"/>
+      </g>
+      <g fill="#1f4d40"><circle cx="100" cy="300" r="190"/><circle cx="260" cy="200" r="160"/><circle cx="950" cy="260" r="200"/><circle cx="1100" cy="380" r="170"/><circle cx="600" cy="120" r="230"/></g>
+    </svg>
+    <svg id="ae-rays" class="ae-l" viewBox="0 0 1200 1920" data-layout-ignore>
+      <g fill="url(#ae-ray)"><polygon points="420,0 520,0 760,1500 600,1500"/><polygon points="600,0 660,0 900,1400 800,1400" opacity="0.7"/><polygon points="300,0 340,0 470,1300 400,1300" opacity="0.5"/></g>
+    </svg>
+    <svg id="ae-ground" class="ae-l" viewBox="0 0 1200 1920" data-layout-ignore>
+      <path d="M0,1180 C200,1120 420,1150 600,1140 C800,1130 1000,1110 1200,1160 L1200,1920 L0,1920 Z" fill="#3d8a5c"/>
+      <path d="M0,1260 C260,1200 520,1240 720,1220 C920,1200 1080,1220 1200,1240 L1200,1920 L0,1920 Z" fill="#2c6d4a"/>
+      <!-- the bush the spirit hides in -->
+      <g id="ae-bush"><circle cx="520" cy="1170" r="95" fill="#3f9a63"/><circle cx="640" cy="1160" r="110" fill="#4aa86c"/><circle cx="740" cy="1185" r="80" fill="#3f9a63"/>
+        <circle cx="505" cy="1150" r="55" fill="#6cc382"/><circle cx="630" cy="1130" r="66" fill="#78cd8b"/><circle cx="735" cy="1165" r="44" fill="#6cc382"/></g>
+      <g fill="#ffe7ef"><circle cx="300" cy="1250" r="9"/><circle cx="860" cy="1290" r="10"/><circle cx="180" cy="1330" r="8"/><circle cx="980" cy="1240" r="8"/></g>
+    </svg>
+
+    <!-- an original little forest spirit: soft, round, glowing -->
+    <div id="ae-spirit">
+      <svg viewBox="0 0 280 300" width="434" height="465" data-layout-ignore>
+        <defs>
+          <radialGradient id="ae-glow"><stop offset="0" stop-color="#f4ffe6" stop-opacity="0.95"/><stop offset="0.6" stop-color="#c9f5b8" stop-opacity="0.35"/><stop offset="1" stop-color="#c9f5b8" stop-opacity="0"/></radialGradient>
+          <radialGradient id="ae-body" cx="40%" cy="35%"><stop offset="0" stop-color="#ffffff"/><stop offset="0.7" stop-color="#f1f5e6"/><stop offset="1" stop-color="#d3e6c8"/></radialGradient>
+        </defs>
+        <circle cx="140" cy="175" r="140" fill="url(#ae-glow)"/>
+        <g id="ae-leaf" style="transform-origin: 140px 92px">
+          <path d="M140,96 C138,70 140,50 146,36" stroke="#4f9a4c" stroke-width="6" fill="none" stroke-linecap="round"/>
+          <path d="M146,40 C170,18 205,22 214,34 C196,54 168,58 146,40 Z" fill="#7cc576"/>
+          <path d="M144,48 C124,30 98,32 90,42 C104,58 128,60 144,48 Z" fill="#9bd890"/>
+        </g>
+        <path d="M60,200 C56,140 92,96 140,96 C188,96 224,140 220,200 C218,250 184,276 140,276 C96,276 62,250 60,200 Z" fill="url(#ae-body)"/>
+        <ellipse cx="70" cy="214" rx="16" ry="11" fill="#eef4e2" transform="rotate(-25 70 214)"/>
+        <ellipse cx="210" cy="214" rx="16" ry="11" fill="#eef4e2" transform="rotate(25 210 214)"/>
+        <g id="ae-eyes"><ellipse cx="112" cy="182" rx="10" ry="14" fill="#2b2b35"/><ellipse cx="168" cy="182" rx="10" ry="14" fill="#2b2b35"/>
+          <circle cx="115" cy="177" r="3.5" fill="#fff"/><circle cx="171" cy="177" r="3.5" fill="#fff"/></g>
+        <ellipse cx="98" cy="208" rx="14" ry="8" fill="#ffb9b9" opacity="0.8"/><ellipse cx="182" cy="208" rx="14" ry="8" fill="#ffb9b9" opacity="0.8"/>
+        <path d="M130,210 Q140,220 150,210" stroke="#2b2b35" stroke-width="4" fill="none" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <svg id="ae-front" class="ae-l" viewBox="0 0 1200 1920" data-layout-ignore>
+      <g><circle cx="470" cy="1235" r="70" fill="#2f7d55"/><circle cx="790" cy="1240" r="75" fill="#2f7d55"/><circle cx="600" cy="1260" r="80" fill="#36885d"/></g>
+    </svg>
+    <div id="ae-ffs" data-layout-ignore>
+      <div class="ae-ff" id="ae-f1" style="left:240px;top:900px"></div><div class="ae-ff" id="ae-f2" style="left:820px;top:820px"></div>
+      <div class="ae-ff" id="ae-f3" style="left:360px;top:1060px"></div><div class="ae-ff" id="ae-f4" style="left:900px;top:1040px"></div>
+      <div class="ae-ff" id="ae-f5" style="left:180px;top:720px"></div><div class="ae-ff" id="ae-f6" style="left:700px;top:700px"></div>
+    </div>
+    <div id="ae-flash" data-layout-ignore></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    // Enter from the tree dive: the glade arrives slightly large and settles.
+    tl.fromTo("#ae-back, #ae-rays, #ae-ground, #ae-front", { scale: 1.25, transformOrigin: "50% 55%" }, { scale: 1, duration: 0.9, ease: "expo.out" }, 0);
+    tl.fromTo("#ae-rays", { opacity: 0.4 }, { opacity: 1, duration: 3.5, ease: "power2.inOut" }, 0);
+    // The spirit peeks, pops up with squash and stretch, settles.
+    tl.fromTo("#ae-spirit", { y: 220, scaleX: 1, scaleY: 1 }, { y: 60, duration: 0.35, ease: "power2.out" }, 0.55);
+    tl.to("#ae-spirit", { y: -40, scaleX: 0.86, scaleY: 1.16, duration: 0.25, ease: "power2.out" }, 1.0);
+    tl.to("#ae-spirit", { y: 0, scaleX: 1.12, scaleY: 0.9, duration: 0.2, ease: "power2.in" }, 1.25);
+    tl.to("#ae-spirit", { scaleX: 1, scaleY: 1, duration: 0.5, ease: "elastic.out(1, 0.45)" }, 1.45);
+    tl.fromTo("#ae-leaf", { rotation: -18 }, { rotation: 0, duration: 1.0, ease: "elastic.out(1, 0.35)" }, 1.25);
+    // A blink, then a small happy tilt.
+    tl.fromTo("#ae-eyes", { scaleY: 1, transformOrigin: "140px 182px" }, { scaleY: 0.1, duration: 0.07, ease: "power2.in", yoyo: true, repeat: 1 }, 2.3);
+    tl.to("#ae-spirit", { rotation: -7, duration: 0.4, ease: "power2.inOut" }, 2.7);
+    tl.to("#ae-spirit", { rotation: 0, duration: 0.5, ease: "power2.inOut" }, 3.3);
+    // Fireflies drift on their own slow paths.
+    [[1, 60, -90], [2, -70, -60], [3, 50, -120], [4, -40, -80], [5, 90, -40], [6, -60, -110]].forEach(([i, dx, dy]) =>
+      tl.fromTo("#ae-f" + i, { x: 0, y: 0, opacity: 0.2 }, { x: dx, y: dy, opacity: 1, duration: 4.5, ease: "sine.inOut" }, 0));
+    // Exit: the spirit flares and the light floods the frame.
+    tl.to("#ae-spirit", { scale: 1.3, duration: 0.35, ease: "power3.in" }, 4.05);
+    tl.fromTo("#ae-flash", { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "power2.in" }, 4.2);
+    window.__timelines["arte-espirito"] = tl;
+  </script>
+</template>

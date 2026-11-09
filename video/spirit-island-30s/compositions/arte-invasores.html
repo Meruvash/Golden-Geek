@@ -1,0 +1,83 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; overflow: hidden; background: #0d1b30; }
+    .an-full { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; }
+    #an-dark { position: absolute; inset: 0; background: #05070d; }
+    #an-eyes { position: absolute; left: 340px; top: 960px; width: 400px; height: 120px; }
+  </style>
+  <div id="root" data-composition-id="arte-invasores" data-width="1080" data-height="1920">
+    <svg id="an-bg" class="an-full" viewBox="0 0 1080 1920" data-layout-ignore>
+      <defs>
+        <radialGradient id="an-bgg" cx="50%" cy="56%" r="70%"><stop offset="0" stop-color="#1d3a5c"/><stop offset="1" stop-color="#0b1626"/></radialGradient>
+      </defs>
+      <rect width="1080" height="1920" fill="url(#an-bgg)"/>
+      <g id="an-dots" fill="#8fb3d9" opacity="0.35"></g>
+    </svg>
+    <svg id="an-tiles" class="an-full" viewBox="0 0 1080 1920" data-layout-ignore>
+      <defs>
+        <path id="an-hex" d="M0,-128 L111,-64 L111,64 L0,128 L-111,64 L-111,-64 Z"/>
+        <filter id="an-none"><feOffset dx="0" dy="0"/></filter>
+      </defs>
+      <!-- jungle -->
+      <g id="an-t1" transform="translate(230,1080)">
+        <ellipse cx="0" cy="150" rx="120" ry="22" fill="#000" opacity="0.35"/>
+        <use href="#an-hex" transform="translate(0,22)" fill="#1f6044" stroke="#1f6044" stroke-width="34" stroke-linejoin="round"/>
+        <use href="#an-hex" fill="#4fae6b" stroke="#4fae6b" stroke-width="34" stroke-linejoin="round"/>
+        <g fill="#2f7d55"><circle cx="-50" cy="-40" r="30"/><circle cx="-10" cy="-60" r="34"/><circle cx="40" cy="-30" r="28"/><circle cx="-60" cy="30" r="24"/><circle cx="55" cy="40" r="26"/></g>
+        <g fill="#7fd08a"><circle cx="-56" cy="-48" r="16"/><circle cx="-16" cy="-70" r="19"/><circle cx="34" cy="-38" r="15"/><circle cx="-64" cy="22" r="12"/><circle cx="50" cy="32" r="13"/></g>
+      </g>
+      <!-- sands -->
+      <g id="an-t2" transform="translate(540,1080)">
+        <ellipse cx="0" cy="150" rx="120" ry="22" fill="#000" opacity="0.35"/>
+        <use href="#an-hex" transform="translate(0,22)" fill="#b0812f" stroke="#b0812f" stroke-width="34" stroke-linejoin="round"/>
+        <use href="#an-hex" fill="#f0c66b" stroke="#f0c66b" stroke-width="34" stroke-linejoin="round"/>
+        <g fill="none" stroke="#d9a446" stroke-width="10" stroke-linecap="round"><path d="M-80,-30 Q-30,-60 20,-30"/><path d="M-40,30 Q10,0 70,30"/><path d="M-90,70 Q-50,50 -10,70"/></g>
+      </g>
+      <!-- wetland -->
+      <g id="an-t3" transform="translate(850,1080)">
+        <ellipse cx="0" cy="150" rx="120" ry="22" fill="#000" opacity="0.35"/>
+        <use href="#an-hex" transform="translate(0,22)" fill="#2d6d7c" stroke="#2d6d7c" stroke-width="34" stroke-linejoin="round"/>
+        <use href="#an-hex" fill="#6fb7c4" stroke="#6fb7c4" stroke-width="34" stroke-linejoin="round"/>
+        <g fill="none" stroke="#bfe6ec" stroke-width="7" stroke-linecap="round" opacity="0.8"><path d="M-70,-20 h50"/><path d="M10,10 h60"/><path d="M-50,60 h40"/></g>
+        <g stroke="#3f8a57" stroke-width="7" stroke-linecap="round"><path d="M-30,-60 v-30"/><path d="M-18,-58 v-22"/><path d="M60,-40 v-26"/></g>
+        <!-- ravage: grey-out and blight ink -->
+        <use id="an-grey" href="#an-hex" fill="#5b5566" stroke="#5b5566" stroke-width="34" stroke-linejoin="round"/>
+        <g id="an-blight">
+          <path d="M0,-70 C40,-80 80,-40 70,0 C95,30 60,80 20,70 C0,100 -50,90 -60,50 C-100,30 -90,-30 -50,-40 C-50,-70 -20,-70 0,-70 Z" fill="#2a0f22" stroke="#b0263f" stroke-width="8"/>
+          <path d="M60,-10 C90,-20 110,-10 118,-30" stroke="#2a0f22" stroke-width="12" fill="none" stroke-linecap="round"/>
+          <path d="M-58,48 C-80,70 -100,60 -110,80" stroke="#2a0f22" stroke-width="12" fill="none" stroke-linecap="round"/>
+        </g>
+        <use id="an-redline" href="#an-hex" fill="none" stroke="#ff3b4e" stroke-width="12" stroke-linejoin="round"/>
+      </g>
+    </svg>
+    <div id="an-dark" data-layout-ignore></div>
+    <svg id="an-eyes" viewBox="0 0 400 120" data-layout-ignore>
+      <defs><radialGradient id="an-eg"><stop offset="0" stop-color="#ffffff"/><stop offset="0.35" stop-color="#9dffd2"/><stop offset="1" stop-color="#3cffb0" stop-opacity="0"/></radialGradient></defs>
+      <ellipse cx="110" cy="60" rx="90" ry="50" fill="url(#an-eg)"/><ellipse cx="290" cy="60" rx="90" ry="50" fill="url(#an-eg)"/>
+      <path d="M60,64 Q110,30 160,56 Q110,76 60,64 Z" fill="#ffffff"/><path d="M240,56 Q290,30 340,64 Q290,76 240,56 Z" fill="#ffffff"/>
+    </svg>
+  </div>
+  <script>
+    // Background star-dots: seeded, built once.
+    (function () {
+      let s = 7; const r = () => ((s = (s * 1664525 + 1013904223) % 4294967296) / 4294967296);
+      const g = document.getElementById("an-dots"); const NS = "http://www.w3.org/2000/svg";
+      for (let i = 0; i < 90; i++) { const c = document.createElementNS(NS, "circle"); c.setAttribute("cx", (r() * 1080).toFixed(1)); c.setAttribute("cy", (r() * 1920).toFixed(1)); c.setAttribute("r", (1 + r() * 2.5).toFixed(1)); g.appendChild(c); }
+    })();
+    const tl = gsap.timeline({ paused: true });
+    // Light flood from the last scene fades into the night map.
+    tl.fromTo("#an-bg", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power2.out" }, 0);
+    // Tiles pop in one by one.
+    ["#an-t1", "#an-t2", "#an-t3"].forEach((t, i) =>
+      tl.fromTo(t, { scale: 0, transformOrigin: "50% 50%", transformBox: "fill-box" }, { scale: 1, duration: 0.55, ease: "back.out(1.6)" }, 0.45 + i * 0.12));
+    // Ravage on the third land (local 3.8): red pulse, grey-out, blight ink spreads.
+    tl.fromTo("#an-redline", { opacity: 0 }, { opacity: 1, duration: 0.1, ease: "power2.out" }, 3.8);
+    tl.to("#an-redline", { opacity: 0, duration: 0.6, ease: "power2.out" }, 3.95);
+    tl.fromTo("#an-grey", { opacity: 0 }, { opacity: 0.8, duration: 0.8, ease: "power2.out" }, 3.9);
+    tl.fromTo("#an-blight", { scale: 0, transformOrigin: "50% 50%", transformBox: "fill-box" }, { scale: 1, duration: 1.1, ease: "expo.out" }, 4.1);
+    // The island answers: darkness, then two eyes open.
+    tl.fromTo("#an-dark", { opacity: 0 }, { opacity: 0.9, duration: 0.45, ease: "power2.in" }, 6.35);
+    tl.fromTo("#an-eyes", { opacity: 0, scaleY: 0.1, transformOrigin: "50% 50%" }, { opacity: 1, scaleY: 1, duration: 0.18, ease: "expo.out" }, 6.7);
+    window.__timelines["arte-invasores"] = tl;
+  </script>
+</template>

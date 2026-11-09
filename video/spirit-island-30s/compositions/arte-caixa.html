@@ -1,0 +1,48 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; overflow: hidden; background: #f2b08c; }
+    .ac-full { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; }
+    #ac-mesa { position: absolute; left: 60px; top: 1010px; width: 960px; }
+    #ac-mesa img { width: 960px; display: block; }
+    #ac-boxwrap { position: absolute; left: 255px; top: 500px; width: 570px; height: 612px; perspective: 1400px; }
+    #ac-box { position: absolute; inset: 0; transform-style: preserve-3d; }
+    #ac-box img { width: 570px; display: block; filter: drop-shadow(0 40px 50px rgba(40,20,60,.45)); }
+    .ac-petal { position: absolute; width: 22px; height: 14px; border-radius: 50% 50% 50% 0; background: #ffd3df; }
+  </style>
+  <div id="root" data-composition-id="arte-caixa" data-width="1080" data-height="1920">
+    <svg id="ac-sky" class="ac-full" viewBox="0 0 1080 1920" data-layout-ignore>
+      <defs>
+        <linearGradient id="ac-g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6d6ab0"/><stop offset="0.35" stop-color="#c98fb1"/><stop offset="0.6" stop-color="#f6b38a"/><stop offset="1" stop-color="#ffd9a8"/></linearGradient>
+        <radialGradient id="ac-sun"><stop offset="0" stop-color="#fff4dc"/><stop offset="0.4" stop-color="#ffe0b0" stop-opacity="0.6"/><stop offset="1" stop-color="#ffd0a0" stop-opacity="0"/></radialGradient>
+      </defs>
+      <rect width="1080" height="1920" fill="url(#ac-g)"/>
+      <circle cx="540" cy="900" r="520" fill="url(#ac-sun)"/>
+    </svg>
+    <svg id="ac-hills" class="ac-full" viewBox="0 0 1080 1920" data-layout-ignore>
+      <path d="M0,1150 C180,1060 360,1100 540,1060 C720,1020 900,1080 1080,1040 L1080,1920 L0,1920 Z" fill="#b083ad" opacity="0.85"/>
+      <path d="M0,1260 C220,1180 420,1220 640,1190 C840,1160 960,1200 1080,1180 L1080,1920 L0,1920 Z" fill="#8a6aa3"/>
+      <path d="M0,1400 C260,1330 520,1370 760,1340 C920,1320 1000,1340 1080,1330 L1080,1920 L0,1920 Z" fill="#5f4f86"/>
+    </svg>
+    <div id="ac-mesa"><img src="assets/img/mesa-1-recorte.png" alt="Mesa de Spirit Island montada" /></div>
+    <div id="ac-boxwrap"><div id="ac-box"><img src="assets/img/capa-1-recorte.png" alt="Caixa de Spirit Island" /></div></div>
+    <div id="ac-petals" data-layout-ignore>
+      <div class="ac-petal" id="ac-p1" style="left:120px;top:520px"></div><div class="ac-petal" id="ac-p2" style="left:880px;top:440px"></div>
+      <div class="ac-petal" id="ac-p3" style="left:960px;top:760px"></div><div class="ac-petal" id="ac-p4" style="left:60px;top:860px"></div>
+      <div class="ac-petal" id="ac-p5" style="left:820px;top:1000px"></div><div class="ac-petal" id="ac-p6" style="left:200px;top:340px"></div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#ac-sky", { opacity: 0 }, { opacity: 1, duration: 0.35, ease: "power2.out" }, 0);
+    tl.fromTo("#ac-hills", { y: 120 }, { y: 0, duration: 1.0, ease: "expo.out" }, 0);
+    // Layers at different depths: the table rises slowly behind, the box lands in front and turns.
+    tl.fromTo("#ac-mesa", { y: 260, opacity: 0 }, { y: 0, opacity: 1, duration: 1.1, ease: "expo.out" }, 0.15);
+    tl.fromTo("#ac-mesa", { x: 0 }, { x: -30, duration: 3.5, ease: "none" }, 0.15);
+    tl.fromTo("#ac-boxwrap", { y: 700, scale: 0.85 }, { y: 0, scale: 1, duration: 0.8, ease: "back.out(1.3)" }, 0.05);
+    tl.fromTo("#ac-box", { rotationY: -38, rotationX: 8 }, { rotationY: -10, rotationX: 2, duration: 3.4, ease: "power2.out" }, 0.05);
+    [[1, 180, 260], [2, -160, 300], [3, -220, 240], [4, 200, 200], [5, -140, 220], [6, 160, 320]].forEach(([i, dx, dy]) =>
+      tl.fromTo("#ac-p" + i, { x: 0, y: 0, rotation: 0 }, { x: dx, y: dy, rotation: 300, duration: 3.6, ease: "sine.inOut" }, 0));
+    tl.to("#ac-boxwrap, #ac-mesa", { opacity: 0, y: "-=60", duration: 0.25, ease: "power3.in" }, 3.25);
+    window.__timelines["arte-caixa"] = tl;
+  </script>
+</template>

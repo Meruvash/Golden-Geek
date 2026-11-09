@@ -1,0 +1,68 @@
+{
+  "tts_provider": null,
+  "voice_id": null,
+  "voice_credit": null,
+  "bgm": {
+    "path": "assets/bgm/track.mp3",
+    "volume": 0.9,
+    "query": "epic japanese orchestral, taiko drums, shakuhachi flute, wonder and adventure, building to a powerful climax, 110 bpm, instrumental",
+    "mode": "retrieve",
+    "duration_s": 65
+  },
+  "bgm_pending": false,
+  "bgm_provider": "heygen",
+  "bgm_pid": null,
+  "bgm_log": null,
+  "bgm_mode": "retrieve",
+  "bgm_target_duration_s": null,
+  "bgm_seed_duration_s": null,
+  "bgm_loop_count": null,
+  "voices": [],
+  "sfx": [
+    {
+      "id": "b",
+      "name": "magic sparkle",
+      "file": "assets/sfx/magic-sparkle.mp3",
+      "source": "openverse",
+      "duration_s": 5.381,
+      "license": "cc0",
+      "credit": "\"GLEAM-GLOW-SFX-CHIME.wav\" by newagesoup is marked with CC0 1.0. To view the terms, visit https://creativecommons.org/publicdomain/zero/1.0/.",
+      "offset_s": 0,
+      "volume": 0.35
+    },
+    {
+      "id": "c",
+      "name": "wood block",
+      "file": "assets/sfx/wood-block.mp3",
+      "source": "openverse",
+      "duration_s": 0.284,
+      "license": "cc0",
+      "credit": "\"Wood block hit\" by thomasjaunism is marked with CC0 1.0. To view the terms, visit https://creativecommons.org/publicdomain/zero/1.0/.",
+      "offset_s": 0,
+      "volume": 0.35
+    },
+    {
+      "id": "d",
+      "name": "taiko drum hit",
+      "file": "assets/sfx/taiko-drum-hit.mp3",
+      "source": "openverse",
+      "duration_s": 0.508,
+      "license": "by",
+      "credit": "\"TAIKOENS.wav\" by xtrgamr is licensed under CC BY 4.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/4.0/.",
+      "offset_s": 0,
+      "volume": 0.35
+    },
+    {
+      "id": "e",
+      "name": "water splash wave",
+      "file": "assets/sfx/water-splash-wave.mp3",
+      "source": "openverse",
+      "duration_s": 8.94,
+      "license": "by",
+      "credit": "\"big wave splash.mp3\" by soundmary is licensed under CC BY 4.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/4.0/.",
+      "offset_s": 0,
+      "volume": 0.35
+    }
+  ],
+  "total_duration_s": 0
+}
