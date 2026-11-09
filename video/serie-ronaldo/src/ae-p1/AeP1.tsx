@@ -46,9 +46,10 @@ export const AeP1: React.FC = () => {
           {[0, 1, 2].map((i) => {
             const t0 = W(4, "três") - 0.1 + i * 0.12;
             const saiu = i === 0 && s >= W(9, "pousou") - 1.2; // a nave lançada some da baía
-            return <Nave key={i} x={620 + i * 120} y={1640} esc={0.7 * (s < I(4) ? 1 : 1 + 0.25 * Math.max(0, 1 - Math.abs(s - t0) * 3))} giro={0} op={saiu ? 0.2 : 1} />;
+            const depois = prog(s, tWan - 0.2, 0.5); // abre espaço para o Wan
+            return <Nave key={i} x={620 + i * 120 + (430 + i * 80 - 620 - i * 120) * depois} y={1640} esc={(0.7 - 0.15 * depois) * (s < I(4) ? 1 : 1 + 0.25 * Math.max(0, 1 - Math.abs(s - t0) * 3))} giro={0} op={saiu ? 0.2 : 1} />;
           })}
-          <text x={740} y={1760} textAnchor="middle" fontFamily={fonte} fontWeight={800} fontSize={28} fill={CIANO} opacity={s >= W(4, "três") - 0.1 && s < tWan + 0.5 ? 1 : 0.35}>Baía de Lançamento</text>
+          <text x={740 - 230 * prog(s, tWan - 0.2, 0.5)} y={1760} textAnchor="middle" fontFamily={fonte} fontWeight={800} fontSize={28} fill={CIANO} opacity={s >= W(4, "três") - 0.1 && s < tWan + 0.5 ? 1 : 0.35}>Baía de Lançamento</text>
         </svg>
         {/* luz do arrebatamento (que não era arrebatamento) */}
         {entre(s, I(3) - 0.05, W(4, "foi.") + 0.1) ? (

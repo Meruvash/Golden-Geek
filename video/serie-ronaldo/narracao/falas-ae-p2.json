@@ -3,78 +3,959 @@
   "id": 1,
   "quem": "narrador",
   "texto": "Parte 2. Um Atacante Vorticon pousou do lado do Ronaldo do Reteté.",
-  "fala": "[excited] Parte dois. Um Atacante Vorticon pousou do lado do Ronaldo do Reteté."
+  "fala": "[excited] Parte dois. Um Atacante Vorticon pousou do lado do Ronaldo do Reteté.",
+  "arquivo": "voz/ae-p2/fala-01.wav",
+  "dur": 5.04,
+  "palavras_ouvidas": [
+   {
+    "text": "Parte",
+    "start": 0,
+    "end": 0.448
+   },
+   {
+    "text": "2.",
+    "start": 0.448,
+    "end": 0.628
+   },
+   {
+    "text": "Um",
+    "start": 0.628,
+    "end": 0.807
+   },
+   {
+    "text": "atacante",
+    "start": 0.807,
+    "end": 1.524
+   },
+   {
+    "text": "Vorticon",
+    "start": 1.524,
+    "end": 2.241
+   },
+   {
+    "text": "pousou",
+    "start": 2.241,
+    "end": 2.779
+   },
+   {
+    "text": "do",
+    "start": 2.779,
+    "end": 2.958
+   },
+   {
+    "text": "lado",
+    "start": 2.958,
+    "end": 3.317
+   },
+   {
+    "text": "do",
+    "start": 3.317,
+    "end": 3.496
+   },
+   {
+    "text": "Ronaldo",
+    "start": 3.496,
+    "end": 4.124
+   },
+   {
+    "text": "do",
+    "start": 4.124,
+    "end": 4.303
+   },
+   {
+    "text": "Reteter.",
+    "start": 4.303,
+    "end": 5.02
+   }
+  ]
  },
  {
   "id": 2,
   "quem": "ronaldo",
   "texto": "Tá repreendido, alienígena!",
-  "fala": "[shouting] Tá repreendido, alienígena!"
+  "fala": "[shouting] Tá repreendido, alienígena!",
+  "arquivo": "voz/ae-p2/fala-02.wav",
+  "dur": 1.654,
+  "palavras_ouvidas": [
+   {
+    "text": "Está",
+    "start": 0,
+    "end": 0.244
+   },
+   {
+    "text": "repreendido,",
+    "start": 0.244,
+    "end": 0.978
+   },
+   {
+    "text": "alienígena.",
+    "start": 0.978,
+    "end": 1.65
+   }
+  ]
  },
  {
   "id": 3,
   "quem": "wan",
   "texto": "Não repreende. Rola. Cada lado rola os dados das suas armas, e quem tirar o maior dado vence.",
-  "fala": "[calm] Não repreende. Rola. Cada lado rola os dados das suas armas, e quem tirar o maior dado vence."
+  "fala": "[calm] Não repreende. Rola. Cada lado rola os dados das suas armas, e quem tirar o maior dado vence.",
+  "arquivo": "voz/ae-p2/fala-03.wav",
+  "dur": 7.28,
+  "palavras_ouvidas": [
+   {
+    "text": "Não",
+    "start": 0,
+    "end": 0.433
+   },
+   {
+    "text": "repreende,",
+    "start": 0.433,
+    "end": 1.878
+   },
+   {
+    "text": "rola.",
+    "start": 1.878,
+    "end": 2.6
+   },
+   {
+    "text": "Cada",
+    "start": 2.6,
+    "end": 2.895
+   },
+   {
+    "text": "lado",
+    "start": 2.895,
+    "end": 3.189
+   },
+   {
+    "text": "rola",
+    "start": 3.189,
+    "end": 3.484
+   },
+   {
+    "text": "os",
+    "start": 3.484,
+    "end": 3.632
+   },
+   {
+    "text": "dados",
+    "start": 3.632,
+    "end": 4
+   },
+   {
+    "text": "das",
+    "start": 4,
+    "end": 4.221
+   },
+   {
+    "text": "suas",
+    "start": 4.221,
+    "end": 4.516
+   },
+   {
+    "text": "armas",
+    "start": 4.516,
+    "end": 4.884
+   },
+   {
+    "text": "e",
+    "start": 4.884,
+    "end": 4.958
+   },
+   {
+    "text": "quem",
+    "start": 4.958,
+    "end": 5.253
+   },
+   {
+    "text": "tirar",
+    "start": 5.253,
+    "end": 5.621
+   },
+   {
+    "text": "o",
+    "start": 5.621,
+    "end": 5.695
+   },
+   {
+    "text": "maior",
+    "start": 5.695,
+    "end": 6.063
+   },
+   {
+    "text": "dado",
+    "start": 6.063,
+    "end": 6.358
+   },
+   {
+    "text": "vence.",
+    "start": 6.358,
+    "end": 6.8
+   }
+  ]
  },
  {
   "id": 4,
   "quem": "narrador",
-  "texto": "O transportador tem uma arma. O Vorticon, duas."
+  "texto": "O transportador tem uma arma. O Vorticon, duas.",
+  "arquivo": "voz/ae-p2/fala-04.wav",
+  "dur": 4.32,
+  "palavras_ouvidas": [
+   {
+    "text": "O",
+    "start": 0,
+    "end": 0.113
+   },
+   {
+    "text": "transportador",
+    "start": 0.113,
+    "end": 1.588
+   },
+   {
+    "text": "tem",
+    "start": 1.588,
+    "end": 1.928
+   },
+   {
+    "text": "uma",
+    "start": 1.928,
+    "end": 2.268
+   },
+   {
+    "text": "arma,",
+    "start": 2.268,
+    "end": 2.836
+   },
+   {
+    "text": "o",
+    "start": 2.836,
+    "end": 2.949
+   },
+   {
+    "text": "Voticon",
+    "start": 2.949,
+    "end": 3.743
+   },
+   {
+    "text": "duas.",
+    "start": 3.743,
+    "end": 4.31
+   }
+  ]
  },
  {
   "id": 5,
   "quem": "wan",
-  "texto": "E a mira é o menor valor que o seu dado pode mostrar. Cada nave sua na região soma um."
+  "texto": "E a mira é o menor valor que o seu dado pode mostrar. Cada nave sua na região soma um.",
+  "arquivo": "voz/ae-p2/fala-05.wav",
+  "dur": 6.08,
+  "palavras_ouvidas": [
+   {
+    "text": "E",
+    "start": 0,
+    "end": 0.09
+   },
+   {
+    "text": "a",
+    "start": 0.09,
+    "end": 0.179
+   },
+   {
+    "text": "mira",
+    "start": 0.179,
+    "end": 0.537
+   },
+   {
+    "text": "é",
+    "start": 0.537,
+    "end": 0.627
+   },
+   {
+    "text": "o",
+    "start": 0.627,
+    "end": 0.716
+   },
+   {
+    "text": "menor",
+    "start": 0.716,
+    "end": 1.164
+   },
+   {
+    "text": "valor",
+    "start": 1.164,
+    "end": 1.612
+   },
+   {
+    "text": "que",
+    "start": 1.612,
+    "end": 1.881
+   },
+   {
+    "text": "o",
+    "start": 1.881,
+    "end": 1.97
+   },
+   {
+    "text": "seu",
+    "start": 1.97,
+    "end": 2.239
+   },
+   {
+    "text": "dado",
+    "start": 2.239,
+    "end": 2.597
+   },
+   {
+    "text": "pode",
+    "start": 2.597,
+    "end": 2.955
+   },
+   {
+    "text": "mostrar,",
+    "start": 2.955,
+    "end": 3.672
+   },
+   {
+    "text": "cada",
+    "start": 3.672,
+    "end": 4.03
+   },
+   {
+    "text": "nave",
+    "start": 4.03,
+    "end": 4.388
+   },
+   {
+    "text": "sua",
+    "start": 4.388,
+    "end": 4.657
+   },
+   {
+    "text": "na",
+    "start": 4.657,
+    "end": 4.836
+   },
+   {
+    "text": "região",
+    "start": 4.836,
+    "end": 5.373
+   },
+   {
+    "text": "soma",
+    "start": 5.373,
+    "end": 5.731
+   },
+   {
+    "text": "um.",
+    "start": 5.731,
+    "end": 6
+   }
+  ]
  },
  {
   "id": 6,
   "quem": "ronaldo",
   "texto": "Senhor, assopra esse dado! Eu profetizo um seis!",
-  "fala": "[desperate] Senhor, assopra esse dado! [shouting] Eu profetizo um seis!"
+  "fala": "[desperate] Senhor, assopra esse dado! [shouting] Eu profetizo um seis!",
+  "arquivo": "voz/ae-p2/fala-06.wav",
+  "dur": 4.467,
+  "palavras_ouvidas": [
+   {
+    "text": "Senhor,",
+    "start": 0,
+    "end": 0.71
+   },
+   {
+    "text": "assopra",
+    "start": 0.71,
+    "end": 1.42
+   },
+   {
+    "text": "esse",
+    "start": 1.42,
+    "end": 1.826
+   },
+   {
+    "text": "dado.",
+    "start": 1.826,
+    "end": 2.334
+   },
+   {
+    "text": "Eu",
+    "start": 2.334,
+    "end": 2.537
+   },
+   {
+    "text": "profetizo",
+    "start": 2.537,
+    "end": 3.45
+   },
+   {
+    "text": "um",
+    "start": 3.45,
+    "end": 3.653
+   },
+   {
+    "text": "seis.",
+    "start": 3.653,
+    "end": 4.16
+   }
+  ]
  },
  {
   "id": 7,
   "quem": "narrador",
   "texto": "Saiu… o número um. O Vorticon tirou cinco.",
-  "fala": "[deadpan] Saiu… o número um. O Vorticon tirou cinco."
+  "fala": "[deadpan] Saiu… o número um. O Vorticon tirou cinco.",
+  "arquivo": "voz/ae-p2/fala-07.wav",
+  "dur": 5.031,
+  "palavras_ouvidas": [
+   {
+    "text": "saiu",
+    "start": 0,
+    "end": 0.673
+   },
+   {
+    "text": "o",
+    "start": 0.673,
+    "end": 0.841
+   },
+   {
+    "text": "número",
+    "start": 0.841,
+    "end": 1.851
+   },
+   {
+    "text": "1.",
+    "start": 1.851,
+    "end": 2.188
+   },
+   {
+    "text": "O",
+    "start": 2.188,
+    "end": 2.356
+   },
+   {
+    "text": "Vórticon",
+    "start": 2.356,
+    "end": 3.702
+   },
+   {
+    "text": "tirou",
+    "start": 3.702,
+    "end": 4.543
+   },
+   {
+    "text": "5.",
+    "start": 4.543,
+    "end": 4.88
+   }
+  ]
  },
  {
   "id": 8,
   "quem": "wan",
-  "texto": "Perdeu e não tem escudo? A nave vai pro Ferro-Velho."
+  "texto": "Perdeu e não tem escudo? A nave vai pro Ferro-Velho.",
+  "arquivo": "voz/ae-p2/fala-08.wav",
+  "dur": 3.36,
+  "palavras_ouvidas": [
+   {
+    "text": "Perdeu",
+    "start": 0,
+    "end": 0.48
+   },
+   {
+    "text": "e",
+    "start": 0.48,
+    "end": 0.56
+   },
+   {
+    "text": "não",
+    "start": 0.56,
+    "end": 0.8
+   },
+   {
+    "text": "tem",
+    "start": 0.8,
+    "end": 1.04
+   },
+   {
+    "text": "escudo.",
+    "start": 1.04,
+    "end": 1.6
+   },
+   {
+    "text": "A",
+    "start": 1.6,
+    "end": 1.68
+   },
+   {
+    "text": "nave",
+    "start": 1.68,
+    "end": 2
+   },
+   {
+    "text": "vai",
+    "start": 2,
+    "end": 2.24
+   },
+   {
+    "text": "pro",
+    "start": 2.24,
+    "end": 2.48
+   },
+   {
+    "text": "ferro",
+    "start": 2.48,
+    "end": 2.88
+   },
+   {
+    "text": "velho.",
+    "start": 2.88,
+    "end": 3.36
+   }
+  ]
  },
  {
   "id": 9,
   "quem": "narrador",
-  "texto": "Sem nave e sem unção. Mas o Wan sabia o próximo passo."
+  "texto": "Sem nave e sem unção. Mas o Wan sabia o próximo passo.",
+  "arquivo": "voz/ae-p2/fala-09.wav",
+  "dur": 4.4,
+  "palavras_ouvidas": [
+   {
+    "text": "Sem",
+    "start": 0,
+    "end": 0.301
+   },
+   {
+    "text": "nave",
+    "start": 0.301,
+    "end": 0.703
+   },
+   {
+    "text": "e",
+    "start": 0.703,
+    "end": 0.804
+   },
+   {
+    "text": "sem",
+    "start": 0.804,
+    "end": 1.105
+   },
+   {
+    "text": "unção,",
+    "start": 1.105,
+    "end": 1.708
+   },
+   {
+    "text": "mas",
+    "start": 1.708,
+    "end": 2.01
+   },
+   {
+    "text": "o",
+    "start": 2.01,
+    "end": 2.11
+   },
+   {
+    "text": "An",
+    "start": 2.11,
+    "end": 2.311
+   },
+   {
+    "text": "sabia",
+    "start": 2.311,
+    "end": 2.813
+   },
+   {
+    "text": "o",
+    "start": 2.813,
+    "end": 2.914
+   },
+   {
+    "text": "próximo",
+    "start": 2.914,
+    "end": 3.617
+   },
+   {
+    "text": "passo.",
+    "start": 3.617,
+    "end": 4.22
+   }
+  ]
  },
  {
   "id": 10,
   "quem": "wan",
-  "texto": "Retornar à Estação. Cada nave ativa um módulo. Uma nave no Reator Primário ativa a fileira inteira de ciência."
+  "texto": "Retornar à Estação. Cada nave ativa um módulo. Uma nave no Reator Primário ativa a fileira inteira de ciência.",
+  "arquivo": "voz/ae-p2/fala-10.wav",
+  "dur": 7.84,
+  "palavras_ouvidas": [
+   {
+    "text": "Retornar",
+    "start": 0,
+    "end": 0.922
+   },
+   {
+    "text": "à",
+    "start": 0.922,
+    "end": 1.038
+   },
+   {
+    "text": "estação.",
+    "start": 1.038,
+    "end": 1.96
+   },
+   {
+    "text": "Cada",
+    "start": 1.96,
+    "end": 2.335
+   },
+   {
+    "text": "nave",
+    "start": 2.335,
+    "end": 2.709
+   },
+   {
+    "text": "ativa",
+    "start": 2.709,
+    "end": 3.177
+   },
+   {
+    "text": "um",
+    "start": 3.177,
+    "end": 3.365
+   },
+   {
+    "text": "módulo.",
+    "start": 3.365,
+    "end": 4.02
+   },
+   {
+    "text": "Uma",
+    "start": 4.02,
+    "end": 4.236
+   },
+   {
+    "text": "nave",
+    "start": 4.236,
+    "end": 4.525
+   },
+   {
+    "text": "no",
+    "start": 4.525,
+    "end": 4.669
+   },
+   {
+    "text": "reator",
+    "start": 4.669,
+    "end": 5.101
+   },
+   {
+    "text": "primário",
+    "start": 5.101,
+    "end": 5.678
+   },
+   {
+    "text": "ativa",
+    "start": 5.678,
+    "end": 6.038
+   },
+   {
+    "text": "a",
+    "start": 6.038,
+    "end": 6.11
+   },
+   {
+    "text": "fileira",
+    "start": 6.11,
+    "end": 6.615
+   },
+   {
+    "text": "inteira",
+    "start": 6.615,
+    "end": 7.119
+   },
+   {
+    "text": "de",
+    "start": 7.119,
+    "end": 7.263
+   },
+   {
+    "text": "ciência.",
+    "start": 7.263,
+    "end": 7.84
+   }
+  ]
  },
  {
   "id": 11,
   "quem": "ronaldo",
   "texto": "Eu vou ativar é o módulo do reteté!",
-  "fala": "[excited] Eu vou ativar é o módulo do reteté!"
+  "fala": "[excited] Eu vou ativar é o módulo do reteté!",
+  "arquivo": "voz/ae-p2/fala-11.wav",
+  "dur": 2.32,
+  "palavras_ouvidas": [
+   {
+    "text": "Eu",
+    "start": 0,
+    "end": 0.166
+   },
+   {
+    "text": "vou",
+    "start": 0.166,
+    "end": 0.414
+   },
+   {
+    "text": "ativar",
+    "start": 0.414,
+    "end": 0.911
+   },
+   {
+    "text": "o",
+    "start": 0.911,
+    "end": 0.994
+   },
+   {
+    "text": "módulo",
+    "start": 0.994,
+    "end": 1.491
+   },
+   {
+    "text": "do",
+    "start": 1.491,
+    "end": 1.657
+   },
+   {
+    "text": "retetec.",
+    "start": 1.657,
+    "end": 2.32
+   }
+  ]
  },
  {
   "id": 12,
   "quem": "wan",
   "texto": "Isso não existe, Ronaldo.",
-  "fala": "[deadpan] Isso não existe, Ronaldo."
+  "fala": "[deadpan] Isso não existe, Ronaldo.",
+  "arquivo": "voz/ae-p2/fala-12.wav",
+  "dur": 1.92,
+  "palavras_ouvidas": [
+   {
+    "text": "Isso",
+    "start": 0,
+    "end": 0.244
+   },
+   {
+    "text": "não",
+    "start": 0.244,
+    "end": 0.426
+   },
+   {
+    "text": "existe,",
+    "start": 0.426,
+    "end": 0.853
+   },
+   {
+    "text": "Ronaldo.",
+    "start": 0.853,
+    "end": 1.34
+   }
+  ]
  },
  {
   "id": 13,
   "quem": "narrador",
-  "texto": "Módulos e desenvolvimentos sobem as trilhas. Quando alguém chega ao terminus, todos jogam mais um turno… e vence quem tiver mais pontos."
+  "texto": "Módulos e desenvolvimentos sobem as trilhas. Quando alguém chega ao terminus, todos jogam mais um turno… e vence quem tiver mais pontos.",
+  "arquivo": "voz/ae-p2/fala-13.wav",
+  "dur": 9.28,
+  "palavras_ouvidas": [
+   {
+    "text": "Módulos",
+    "start": 0,
+    "end": 0.653
+   },
+   {
+    "text": "e",
+    "start": 0.653,
+    "end": 0.747
+   },
+   {
+    "text": "desenvolvimentos",
+    "start": 0.747,
+    "end": 2.24
+   },
+   {
+    "text": "sobem",
+    "start": 2.24,
+    "end": 2.707
+   },
+   {
+    "text": "as",
+    "start": 2.707,
+    "end": 2.893
+   },
+   {
+    "text": "trilhas.",
+    "start": 2.893,
+    "end": 3.64
+   },
+   {
+    "text": "Quando",
+    "start": 3.64,
+    "end": 4.097
+   },
+   {
+    "text": "alguém",
+    "start": 4.097,
+    "end": 4.555
+   },
+   {
+    "text": "chega",
+    "start": 4.555,
+    "end": 4.936
+   },
+   {
+    "text": "ao",
+    "start": 4.936,
+    "end": 5.088
+   },
+   {
+    "text": "término,",
+    "start": 5.088,
+    "end": 5.698
+   },
+   {
+    "text": "todos",
+    "start": 5.698,
+    "end": 6.079
+   },
+   {
+    "text": "jogam",
+    "start": 6.079,
+    "end": 6.46
+   },
+   {
+    "text": "mais",
+    "start": 6.46,
+    "end": 6.765
+   },
+   {
+    "text": "um",
+    "start": 6.765,
+    "end": 6.917
+   },
+   {
+    "text": "turno",
+    "start": 6.917,
+    "end": 7.298
+   },
+   {
+    "text": "e",
+    "start": 7.298,
+    "end": 7.375
+   },
+   {
+    "text": "vence",
+    "start": 7.375,
+    "end": 7.756
+   },
+   {
+    "text": "quem",
+    "start": 7.756,
+    "end": 8.061
+   },
+   {
+    "text": "tiver",
+    "start": 8.061,
+    "end": 8.442
+   },
+   {
+    "text": "mais",
+    "start": 8.442,
+    "end": 8.746
+   },
+   {
+    "text": "pontos.",
+    "start": 8.746,
+    "end": 9.28
+   }
+  ]
  },
  {
   "id": 14,
   "quem": "narrador",
   "texto": "Tutorial completo no nosso site. E segue pra próxima aventura do Ronaldo.",
-  "fala": "[excited] Tutorial completo no nosso site. E segue pra próxima aventura do Ronaldo."
+  "fala": "[excited] Tutorial completo no nosso site. E segue pra próxima aventura do Ronaldo.",
+  "arquivo": "voz/ae-p2/fala-14.wav",
+  "dur": 5.396,
+  "palavras_ouvidas": [
+   {
+    "text": "Tutorial",
+    "start": 0,
+    "end": 0.684
+   },
+   {
+    "text": "completo",
+    "start": 0.684,
+    "end": 1.369
+   },
+   {
+    "text": "no",
+    "start": 1.369,
+    "end": 1.54
+   },
+   {
+    "text": "nosso",
+    "start": 1.54,
+    "end": 1.968
+   },
+   {
+    "text": "site",
+    "start": 1.968,
+    "end": 2.31
+   },
+   {
+    "text": "e",
+    "start": 2.31,
+    "end": 2.396
+   },
+   {
+    "text": "segue",
+    "start": 2.396,
+    "end": 2.823
+   },
+   {
+    "text": "para",
+    "start": 2.823,
+    "end": 3.166
+   },
+   {
+    "text": "a",
+    "start": 3.166,
+    "end": 3.251
+   },
+   {
+    "text": "próxima",
+    "start": 3.251,
+    "end": 3.85
+   },
+   {
+    "text": "aventura",
+    "start": 3.85,
+    "end": 4.534
+   },
+   {
+    "text": "do",
+    "start": 4.534,
+    "end": 4.706
+   },
+   {
+    "text": "Ronaldo.",
+    "start": 4.706,
+    "end": 5.39
+   }
+  ]
  }
 ]

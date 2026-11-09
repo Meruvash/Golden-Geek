@@ -3,81 +3,942 @@
   "id": 1,
   "quem": "narrador",
   "texto": "E se você acordasse dentro de Andromeda's Edge… sem nunca ter jogado?",
-  "fala": "[mysterious] E se você acordasse dentro de Andromeda's Edge… [excited] sem nunca ter jogado?"
+  "fala": "[mysterious] E se você acordasse dentro de Andromeda's Edge… [excited] sem nunca ter jogado?",
+  "arquivo": "voz/ae-p1/fala-01.wav",
+  "dur": 4.442,
+  "palavras_ouvidas": [
+   {
+    "text": "E",
+    "start": 0,
+    "end": 0.079
+   },
+   {
+    "text": "se",
+    "start": 0.079,
+    "end": 0.238
+   },
+   {
+    "text": "você",
+    "start": 0.238,
+    "end": 0.555
+   },
+   {
+    "text": "acordasse",
+    "start": 0.555,
+    "end": 1.269
+   },
+   {
+    "text": "dentro",
+    "start": 1.269,
+    "end": 1.744
+   },
+   {
+    "text": "de",
+    "start": 1.744,
+    "end": 1.903
+   },
+   {
+    "text": "Andrômedas",
+    "start": 1.903,
+    "end": 2.696
+   },
+   {
+    "text": "Edge",
+    "start": 2.696,
+    "end": 3.013
+   },
+   {
+    "text": "sem",
+    "start": 3.013,
+    "end": 3.251
+   },
+   {
+    "text": "nunca",
+    "start": 3.251,
+    "end": 3.647
+   },
+   {
+    "text": "ter",
+    "start": 3.647,
+    "end": 3.885
+   },
+   {
+    "text": "jogado?",
+    "start": 3.885,
+    "end": 4.44
+   }
+  ]
  },
  {
   "id": 2,
   "quem": "narrador",
-  "texto": "O Ronaldo do Reteté abriu os olhos numa estação espacial, na beira da galáxia."
+  "texto": "O Ronaldo do Reteté abriu os olhos numa estação espacial, na beira da galáxia.",
+  "arquivo": "voz/ae-p1/fala-02.wav",
+  "dur": 5.2,
+  "palavras_ouvidas": [
+   {
+    "text": "O",
+    "start": 0,
+    "end": 0.08
+   },
+   {
+    "text": "Ronaldo",
+    "start": 0.08,
+    "end": 0.64
+   },
+   {
+    "text": "do",
+    "start": 0.64,
+    "end": 0.8
+   },
+   {
+    "text": "retetê",
+    "start": 0.8,
+    "end": 1.28
+   },
+   {
+    "text": "abriu",
+    "start": 1.28,
+    "end": 1.68
+   },
+   {
+    "text": "os",
+    "start": 1.68,
+    "end": 1.84
+   },
+   {
+    "text": "olhos",
+    "start": 1.84,
+    "end": 2.24
+   },
+   {
+    "text": "numa",
+    "start": 2.24,
+    "end": 2.56
+   },
+   {
+    "text": "estação",
+    "start": 2.56,
+    "end": 3.12
+   },
+   {
+    "text": "espacial,",
+    "start": 3.12,
+    "end": 3.84
+   },
+   {
+    "text": "na",
+    "start": 3.84,
+    "end": 4
+   },
+   {
+    "text": "beira",
+    "start": 4,
+    "end": 4.4
+   },
+   {
+    "text": "da",
+    "start": 4.4,
+    "end": 4.56
+   },
+   {
+    "text": "galáxia.",
+    "start": 4.56,
+    "end": 5.2
+   }
+  ]
  },
  {
   "id": 3,
   "quem": "ronaldo",
   "texto": "Glória! Eu fui arrebatado!",
-  "fala": "[shouting] Glória! [excited] Eu fui arrebatado!"
+  "fala": "[shouting] Glória! [excited] Eu fui arrebatado!",
+  "arquivo": "voz/ae-p1/fala-03.wav",
+  "dur": 2.56,
+  "palavras_ouvidas": [
+   {
+    "text": "Glória!",
+    "start": 0,
+    "end": 0.779
+   },
+   {
+    "text": "Eu",
+    "start": 0.779,
+    "end": 1.002
+   },
+   {
+    "text": "fui",
+    "start": 1.002,
+    "end": 1.336
+   },
+   {
+    "text": "arrebatado!",
+    "start": 1.336,
+    "end": 2.56
+   }
+  ]
  },
  {
   "id": 4,
   "quem": "narrador",
   "texto": "Não foi. Ele tinha três naves na Baía de Lançamento… e nenhuma ideia do que fazer.",
-  "fala": "[deadpan] Não foi. Ele tinha três naves na Baía de Lançamento… e nenhuma ideia do que fazer."
+  "fala": "[deadpan] Não foi. Ele tinha três naves na Baía de Lançamento… e nenhuma ideia do que fazer.",
+  "arquivo": "voz/ae-p1/fala-04.wav",
+  "dur": 5.92,
+  "palavras_ouvidas": [
+   {
+    "text": "Não",
+    "start": 0,
+    "end": 0.6
+   },
+   {
+    "text": "foi.",
+    "start": 0.6,
+    "end": 1.4
+   },
+   {
+    "text": "Ele",
+    "start": 1.4,
+    "end": 1.624
+   },
+   {
+    "text": "tinha",
+    "start": 1.624,
+    "end": 1.997
+   },
+   {
+    "text": "três",
+    "start": 1.997,
+    "end": 2.296
+   },
+   {
+    "text": "naves",
+    "start": 2.296,
+    "end": 2.669
+   },
+   {
+    "text": "na",
+    "start": 2.669,
+    "end": 2.819
+   },
+   {
+    "text": "Bahia",
+    "start": 2.819,
+    "end": 3.192
+   },
+   {
+    "text": "de",
+    "start": 3.192,
+    "end": 3.341
+   },
+   {
+    "text": "Lançamento",
+    "start": 3.341,
+    "end": 4.088
+   },
+   {
+    "text": "e",
+    "start": 4.088,
+    "end": 4.163
+   },
+   {
+    "text": "nenhuma",
+    "start": 4.163,
+    "end": 4.685
+   },
+   {
+    "text": "ideia",
+    "start": 4.685,
+    "end": 5.059
+   },
+   {
+    "text": "do",
+    "start": 5.059,
+    "end": 5.208
+   },
+   {
+    "text": "que",
+    "start": 5.208,
+    "end": 5.432
+   },
+   {
+    "text": "fazer.",
+    "start": 5.432,
+    "end": 5.88
+   }
+  ]
  },
  {
   "id": 5,
   "quem": "wan",
   "texto": "Calma, Ronaldo. No seu turno, você faz só uma coisa: lança uma nave… ou volta pra estação.",
-  "fala": "[calm] Calma, Ronaldo. No seu turno, você faz só uma coisa: lança uma nave… ou volta pra estação."
+  "fala": "[calm] Calma, Ronaldo. No seu turno, você faz só uma coisa: lança uma nave… ou volta pra estação.",
+  "arquivo": "voz/ae-p1/fala-05.wav",
+  "dur": 6.56,
+  "palavras_ouvidas": [
+   {
+    "text": "Calma,",
+    "start": 0,
+    "end": 0.52
+   },
+   {
+    "text": "Ronaldo.",
+    "start": 0.52,
+    "end": 1.213
+   },
+   {
+    "text": "No",
+    "start": 1.213,
+    "end": 1.387
+   },
+   {
+    "text": "seu",
+    "start": 1.387,
+    "end": 1.647
+   },
+   {
+    "text": "turno,",
+    "start": 1.647,
+    "end": 2.167
+   },
+   {
+    "text": "você",
+    "start": 2.167,
+    "end": 2.513
+   },
+   {
+    "text": "faz",
+    "start": 2.513,
+    "end": 2.773
+   },
+   {
+    "text": "só",
+    "start": 2.773,
+    "end": 2.947
+   },
+   {
+    "text": "uma",
+    "start": 2.947,
+    "end": 3.207
+   },
+   {
+    "text": "coisa.",
+    "start": 3.207,
+    "end": 3.727
+   },
+   {
+    "text": "Lança",
+    "start": 3.727,
+    "end": 4.16
+   },
+   {
+    "text": "uma",
+    "start": 4.16,
+    "end": 4.42
+   },
+   {
+    "text": "nave",
+    "start": 4.42,
+    "end": 4.767
+   },
+   {
+    "text": "ou",
+    "start": 4.767,
+    "end": 4.94
+   },
+   {
+    "text": "volta",
+    "start": 4.94,
+    "end": 5.373
+   },
+   {
+    "text": "para",
+    "start": 5.373,
+    "end": 5.72
+   },
+   {
+    "text": "a",
+    "start": 5.72,
+    "end": 5.807
+   },
+   {
+    "text": "estação.",
+    "start": 5.807,
+    "end": 6.5
+   }
+  ]
  },
  {
   "id": 6,
   "quem": "ronaldo",
   "texto": "Então eu vou lançar pra aquela nuvem roxa, em nome de Jesus!",
-  "fala": "[excited] Então eu vou lançar pra aquela nuvem roxa, em nome de Jesus!"
+  "fala": "[excited] Então eu vou lançar pra aquela nuvem roxa, em nome de Jesus!",
+  "arquivo": "voz/ae-p1/fala-06.wav",
+  "dur": 3.678,
+  "palavras_ouvidas": [
+   {
+    "text": "Então",
+    "start": 0,
+    "end": 0.367
+   },
+   {
+    "text": "eu",
+    "start": 0.367,
+    "end": 0.514
+   },
+   {
+    "text": "vou",
+    "start": 0.514,
+    "end": 0.734
+   },
+   {
+    "text": "lançar",
+    "start": 0.734,
+    "end": 1.174
+   },
+   {
+    "text": "para",
+    "start": 1.174,
+    "end": 1.468
+   },
+   {
+    "text": "aquela",
+    "start": 1.468,
+    "end": 1.908
+   },
+   {
+    "text": "nuvem",
+    "start": 1.908,
+    "end": 2.275
+   },
+   {
+    "text": "roxa,",
+    "start": 2.275,
+    "end": 2.642
+   },
+   {
+    "text": "em",
+    "start": 2.642,
+    "end": 2.789
+   },
+   {
+    "text": "nome",
+    "start": 2.789,
+    "end": 3.083
+   },
+   {
+    "text": "de",
+    "start": 3.083,
+    "end": 3.23
+   },
+   {
+    "text": "Jesus.",
+    "start": 3.23,
+    "end": 3.67
+   }
+  ]
  },
  {
   "id": 7,
   "quem": "wan",
   "texto": "Aquilo é uma nebulosa. Transportador não tem Viagem. Não entra.",
-  "fala": "[serious] Aquilo é uma nebulosa. Transportador não tem Viagem. Não entra."
+  "fala": "[serious] Aquilo é uma nebulosa. Transportador não tem Viagem. Não entra.",
+  "arquivo": "voz/ae-p1/fala-07.wav",
+  "dur": 4.72,
+  "palavras_ouvidas": [
+   {
+    "text": "Aquilo",
+    "start": 0,
+    "end": 0.632
+   },
+   {
+    "text": "é",
+    "start": 0.632,
+    "end": 0.737
+   },
+   {
+    "text": "uma",
+    "start": 0.737,
+    "end": 1.053
+   },
+   {
+    "text": "nebulosa.",
+    "start": 1.053,
+    "end": 2
+   },
+   {
+    "text": "Transportador",
+    "start": 2,
+    "end": 3
+   },
+   {
+    "text": "não",
+    "start": 3,
+    "end": 3.231
+   },
+   {
+    "text": "tem",
+    "start": 3.231,
+    "end": 3.462
+   },
+   {
+    "text": "viagem.",
+    "start": 3.462,
+    "end": 4
+   },
+   {
+    "text": "Não",
+    "start": 4,
+    "end": 4.24
+   },
+   {
+    "text": "entra.",
+    "start": 4.24,
+    "end": 4.72
+   }
+  ]
  },
  {
   "id": 8,
   "quem": "wan",
-  "texto": "E no primeiro lançamento, só vale região desocupada: sem invasor, sem nave de ninguém."
+  "texto": "E no primeiro lançamento, só vale região desocupada: sem invasor, sem nave de ninguém.",
+  "arquivo": "voz/ae-p1/fala-08.wav",
+  "dur": 6.0,
+  "palavras_ouvidas": [
+   {
+    "text": "E",
+    "start": 0,
+    "end": 0.082
+   },
+   {
+    "text": "no",
+    "start": 0.082,
+    "end": 0.247
+   },
+   {
+    "text": "primeiro",
+    "start": 0.247,
+    "end": 0.904
+   },
+   {
+    "text": "lançamento,",
+    "start": 0.904,
+    "end": 1.808
+   },
+   {
+    "text": "só",
+    "start": 1.808,
+    "end": 1.973
+   },
+   {
+    "text": "vale",
+    "start": 1.973,
+    "end": 2.301
+   },
+   {
+    "text": "região",
+    "start": 2.301,
+    "end": 2.795
+   },
+   {
+    "text": "desocupada,",
+    "start": 2.795,
+    "end": 3.699
+   },
+   {
+    "text": "sem",
+    "start": 3.699,
+    "end": 3.945
+   },
+   {
+    "text": "invasor,",
+    "start": 3.945,
+    "end": 4.603
+   },
+   {
+    "text": "sem",
+    "start": 4.603,
+    "end": 4.849
+   },
+   {
+    "text": "nave",
+    "start": 4.849,
+    "end": 5.178
+   },
+   {
+    "text": "de",
+    "start": 5.178,
+    "end": 5.342
+   },
+   {
+    "text": "ninguém.",
+    "start": 5.342,
+    "end": 6
+   }
+  ]
  },
  {
   "id": 9,
   "quem": "narrador",
-  "texto": "Ele pousou num planeta vazio… e o planeta deu uma lua pra ele."
+  "texto": "Ele pousou num planeta vazio… e o planeta deu uma lua pra ele.",
+  "arquivo": "voz/ae-p1/fala-09.wav",
+  "dur": 4.074,
+  "palavras_ouvidas": [
+   {
+    "text": "Ele",
+    "start": 0,
+    "end": 0.244
+   },
+   {
+    "text": "pousou",
+    "start": 0.244,
+    "end": 0.733
+   },
+   {
+    "text": "num",
+    "start": 0.733,
+    "end": 0.977
+   },
+   {
+    "text": "planeta",
+    "start": 0.977,
+    "end": 1.547
+   },
+   {
+    "text": "vazio,",
+    "start": 1.547,
+    "end": 2.035
+   },
+   {
+    "text": "e",
+    "start": 2.035,
+    "end": 2.116
+   },
+   {
+    "text": "o",
+    "start": 2.116,
+    "end": 2.198
+   },
+   {
+    "text": "planeta",
+    "start": 2.198,
+    "end": 2.768
+   },
+   {
+    "text": "deu",
+    "start": 2.768,
+    "end": 3.012
+   },
+   {
+    "text": "uma",
+    "start": 3.012,
+    "end": 3.256
+   },
+   {
+    "text": "lua",
+    "start": 3.256,
+    "end": 3.5
+   },
+   {
+    "text": "pra",
+    "start": 3.5,
+    "end": 3.744
+   },
+   {
+    "text": "ele.",
+    "start": 3.744,
+    "end": 4.07
+   }
+  ]
  },
  {
   "id": 10,
   "quem": "ronaldo",
   "texto": "Uma lua! É sinal! É o reteté!",
-  "fala": "[gasps] Uma lua! [excited] É sinal! É o reteté!"
+  "fala": "[gasps] Uma lua! [excited] É sinal! É o reteté!",
+  "arquivo": "voz/ae-p1/fala-10.wav",
+  "dur": 3.384,
+  "palavras_ouvidas": [
+   {
+    "text": "Uma",
+    "start": 0,
+    "end": 0.423
+   },
+   {
+    "text": "lua,",
+    "start": 0.423,
+    "end": 0.986
+   },
+   {
+    "text": "é",
+    "start": 0.986,
+    "end": 1.127
+   },
+   {
+    "text": "sinal,",
+    "start": 1.127,
+    "end": 1.972
+   },
+   {
+    "text": "é",
+    "start": 1.972,
+    "end": 2.113
+   },
+   {
+    "text": "o",
+    "start": 2.113,
+    "end": 2.253
+   },
+   {
+    "text": "reteter!",
+    "start": 2.253,
+    "end": 3.38
+   }
+  ]
  },
  {
   "id": 11,
   "quem": "wan",
   "texto": "É a ativação da região. Planeta dá lua. Base Aliada dá a ação dela.",
-  "fala": "[sighs] É a ativação da região. Planeta dá lua. Base Aliada dá a ação dela."
+  "fala": "[sighs] É a ativação da região. Planeta dá lua. Base Aliada dá a ação dela.",
+  "arquivo": "voz/ae-p1/fala-11.wav",
+  "dur": 5.68,
+  "palavras_ouvidas": [
+   {
+    "text": "É",
+    "start": 0,
+    "end": 0.107
+   },
+   {
+    "text": "a",
+    "start": 0.107,
+    "end": 0.214
+   },
+   {
+    "text": "ativação",
+    "start": 0.214,
+    "end": 1.072
+   },
+   {
+    "text": "da",
+    "start": 1.072,
+    "end": 1.286
+   },
+   {
+    "text": "região,",
+    "start": 1.286,
+    "end": 2.036
+   },
+   {
+    "text": "planeta",
+    "start": 2.036,
+    "end": 2.786
+   },
+   {
+    "text": "da",
+    "start": 2.786,
+    "end": 3.001
+   },
+   {
+    "text": "Lua,",
+    "start": 3.001,
+    "end": 3.429
+   },
+   {
+    "text": "base",
+    "start": 3.429,
+    "end": 3.858
+   },
+   {
+    "text": "aliada",
+    "start": 3.858,
+    "end": 4.501
+   },
+   {
+    "text": "da",
+    "start": 4.501,
+    "end": 4.715
+   },
+   {
+    "text": "ação",
+    "start": 4.715,
+    "end": 5.144
+   },
+   {
+    "text": "dela.",
+    "start": 5.144,
+    "end": 5.68
+   }
+  ]
  },
  {
   "id": 12,
   "quem": "narrador",
   "texto": "Mas na nebulosa vizinha, alguma coisa se mexeu. Um invasor ao alcance… vinha direto pra ele.",
-  "fala": "[suspenseful] Mas na nebulosa vizinha, alguma coisa se mexeu. Um invasor ao alcance… vinha direto pra ele."
+  "fala": "[suspenseful] Mas na nebulosa vizinha, alguma coisa se mexeu. Um invasor ao alcance… vinha direto pra ele.",
+  "arquivo": "voz/ae-p1/fala-12.wav",
+  "dur": 7.784,
+  "palavras_ouvidas": [
+   {
+    "text": "Mas",
+    "start": 0,
+    "end": 0.309
+   },
+   {
+    "text": "na",
+    "start": 0.309,
+    "end": 0.515
+   },
+   {
+    "text": "nebulosa",
+    "start": 0.515,
+    "end": 1.339
+   },
+   {
+    "text": "vizinha,",
+    "start": 1.339,
+    "end": 2.163
+   },
+   {
+    "text": "alguma",
+    "start": 2.163,
+    "end": 2.781
+   },
+   {
+    "text": "coisa",
+    "start": 2.781,
+    "end": 3.296
+   },
+   {
+    "text": "se",
+    "start": 3.296,
+    "end": 3.502
+   },
+   {
+    "text": "mexeu.",
+    "start": 3.502,
+    "end": 4.12
+   },
+   {
+    "text": "Um",
+    "start": 4.12,
+    "end": 4.318
+   },
+   {
+    "text": "invasor",
+    "start": 4.318,
+    "end": 5.01
+   },
+   {
+    "text": "ao",
+    "start": 5.01,
+    "end": 5.208
+   },
+   {
+    "text": "alcance",
+    "start": 5.208,
+    "end": 5.901
+   },
+   {
+    "text": "vinha",
+    "start": 5.901,
+    "end": 6.395
+   },
+   {
+    "text": "direto",
+    "start": 6.395,
+    "end": 6.989
+   },
+   {
+    "text": "para",
+    "start": 6.989,
+    "end": 7.384
+   },
+   {
+    "text": "ele.",
+    "start": 7.384,
+    "end": 7.78
+   }
+  ]
  },
  {
   "id": 13,
   "quem": "wan",
   "texto": "Ronaldo… agora é batalha.",
-  "fala": "[serious] Ronaldo… agora é batalha."
+  "fala": "[serious] Ronaldo… agora é batalha.",
+  "arquivo": "voz/ae-p1/fala-13.wav",
+  "dur": 2.24,
+  "palavras_ouvidas": [
+   {
+    "text": "Ronaldo,",
+    "start": 0,
+    "end": 0.807
+   },
+   {
+    "text": "agora",
+    "start": 0.807,
+    "end": 1.312
+   },
+   {
+    "text": "é",
+    "start": 1.312,
+    "end": 1.413
+   },
+   {
+    "text": "batalha.",
+    "start": 1.413,
+    "end": 2.22
+   }
+  ]
  },
  {
   "id": 14,
   "quem": "narrador",
   "texto": "Parte 2: a batalha. Segue pra não perder.",
-  "fala": "[excited] Parte dois: a batalha. Segue pra não perder."
+  "fala": "[excited] Parte dois: a batalha. Segue pra não perder.",
+  "arquivo": "voz/ae-p1/fala-14.wav",
+  "dur": 3.211,
+  "palavras_ouvidas": [
+   {
+    "text": "Parte",
+    "start": 0,
+    "end": 0.472
+   },
+   {
+    "text": "2.",
+    "start": 0.472,
+    "end": 0.661
+   },
+   {
+    "text": "A",
+    "start": 0.661,
+    "end": 0.755
+   },
+   {
+    "text": "batalha",
+    "start": 0.755,
+    "end": 1.416
+   },
+   {
+    "text": "segue",
+    "start": 1.416,
+    "end": 1.888
+   },
+   {
+    "text": "para",
+    "start": 1.888,
+    "end": 2.266
+   },
+   {
+    "text": "não",
+    "start": 2.266,
+    "end": 2.549
+   },
+   {
+    "text": "perder.",
+    "start": 2.549,
+    "end": 3.21
+   }
+  ]
  }
 ]
