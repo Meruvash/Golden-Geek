@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; background: #f1e2c4; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="51.5" data-width="1080" data-height="1920">
+      <div id="cenas" data-composition-id="cenas" data-composition-src="compositions/cenas.html" data-start="0" data-duration="51.5" data-track-index="1" data-track-kind="graphics" data-width="1080" data-height="1920" style="z-index: 2"></div>
+      <div id="legendas" data-composition-id="legendas" data-composition-src="compositions/legendas.html" data-start="0" data-duration="51.5" data-track-index="2" data-track-kind="captions" data-width="1080" data-height="1920" style="z-index: 5"></div>
+      <!-- Narração: Chatterbox multilíngue (Resemble AI, MIT), voz clonada de uma referência pt-BR do Kokoro (pm_alex) -->
+      <audio id="voz01" class="clip" src="assets/voice/fala-01.wav" data-start="0.4" data-duration="4.52" data-track-index="8" data-volume="1"></audio>
+      <audio id="voz02" class="clip" src="assets/voice/fala-02.wav" data-start="5.22" data-duration="3.68" data-track-index="8" data-volume="1"></audio>
+      <audio id="voz03" class="clip" src="assets/voice/fala-03.wav" data-start="9.2" data-duration="6.08" data-track-index="8" data-volume="1"></audio>
+      <audio id="voz04" class="clip" src="assets/voice/fala-04.wav" data-start="15.58" data-duration="5.96" data-track-index="8" data-volume="1"></audio>
+      <audio id="voz05" class="clip" src="assets/voice/fala-05.wav" data-start="21.84" data-duration="3.6" data-track-index="8" data-volume="1"></audio>
+      <audio id="voz06" class="clip" src="assets/voice/fala-06.wav" data-start="25.74" data-duration="4.08" data-track-index="8" data-volume="1"></audio>
+      <audio id="voz07" class="clip" src="assets/voice/fala-07.wav" data-start="30.12" data-duration="3.72" data-track-index="8" data-volume="1"></audio>
+      <audio id="voz08" class="clip" src="assets/voice/fala-08.wav" data-start="34.14" data-duration="5.64" data-track-index="8" data-volume="1"></audio>
+      <audio id="voz09" class="clip" src="assets/voice/fala-09.wav" data-start="40.08" data-duration="5.28" data-track-index="8" data-volume="1"></audio>
+      <audio id="voz10" class="clip" src="assets/voice/fala-10.wav" data-start="45.66" data-duration="4.92" data-track-index="8" data-volume="1"></audio>
+      <!-- Trilha (catálogo HeyGen) por baixo da voz -->
+      <audio id="bgm" class="clip" src="assets/bgm/track.mp3" data-start="0" data-duration="51.5" data-media-start="0" data-track-index="9" data-volume="0.16" data-fade-in="0.3" data-fade-out="2"></audio>
+      <audio id="sfx-dados" class="clip" src="assets/sfx/dice-roll.mp3" data-start="41.0" data-duration="2.8" data-track-index="10" data-volume="0.6"></audio>
+      <audio id="sfx-p1" class="clip" src="assets/sfx/wood-block.mp3" data-start="10.53" data-duration="0.3" data-track-index="11" data-volume="0.3"></audio>
+      <audio id="sfx-p2" class="clip" src="assets/sfx/wood-block.mp3" data-start="12.12" data-duration="0.3" data-track-index="11" data-volume="0.3"></audio>
+      <audio id="sfx-p3" class="clip" src="assets/sfx/wood-block.mp3" data-start="14.0" data-duration="0.3" data-track-index="11" data-volume="0.3"></audio>
+      <audio id="sfx-p4" class="clip" src="assets/sfx/wood-block.mp3" data-start="34.6" data-duration="0.3" data-track-index="11" data-volume="0.3"></audio>
+    </div>
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>

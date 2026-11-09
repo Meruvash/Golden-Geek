@@ -1,0 +1,320 @@
+<template>
+  <style>
+    @font-face { font-family: "Instrument Serif"; font-style: normal; font-weight: 400; src: url("assets/fonts/instrument-serif-latin-400-normal.woff2") format("woff2"); }
+    @font-face { font-family: "Instrument Serif"; font-style: italic; font-weight: 400; src: url("assets/fonts/instrument-serif-latin-400-italic.woff2") format("woff2"); }
+    @font-face { font-family: "Manrope"; font-weight: 500; src: url("assets/fonts/manrope-latin-500-normal.woff2") format("woff2"); }
+    @font-face { font-family: "Manrope"; font-weight: 700; src: url("assets/fonts/manrope-latin-700-normal.woff2") format("woff2"); }
+    @font-face { font-family: "Manrope"; font-weight: 800; src: url("assets/fonts/manrope-latin-800-normal.woff2") format("woff2"); }
+    .serif { font-family: "Instrument Serif", serif; font-weight: 400; letter-spacing: -0.01em; color: #f6f0e6; text-shadow: 0 4px 30px rgba(5,3,12,.55); }
+    .serif em { font-style: italic; color: #f2a54a; }
+    .kick { font-family: "Manrope", sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: .26em; color: #e8c37a; }
+    .body { font-family: "Manrope", sans-serif; font-weight: 500; color: #e4ddf0; text-shadow: 0 2px 18px rgba(5,3,12,.6); }
+    .w { display: inline-block; }
+    #root { position: absolute; inset: 0; overflow: hidden; background: #f1e2c4; }
+    .full { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; }
+    .scene { position: absolute; inset: 0; }
+    .ink { color: #2b1d12; }
+    .kick.dark { color: #8a5a2b; }
+    .ttl { position: absolute; left: 70px; right: 70px; top: 230px; text-align: center; font-size: 150px; line-height: .95; color: #2b1d12; text-shadow: none; }
+    .ttl em { font-style: italic; }
+    .kk { position: absolute; left: 70px; right: 70px; top: 190px; text-align: center; font-size: 30px; }
+    .lbl { font-family: "Manrope", sans-serif; font-weight: 800; font-size: 30px; letter-spacing: .12em; text-transform: uppercase; color: #2b1d12; text-align: center; }
+    .credit { position: absolute; left: 0; right: 0; text-align: center; font-family: "Manrope", sans-serif; font-weight: 700; font-size: 28px; color: #6b5034; }
+    .photo { position: absolute; border-radius: 50%; overflow: hidden; border: 10px solid #2b1d12; box-shadow: 0 24px 50px rgba(60,35,10,.35); }
+    .photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  </style>
+  <div id="root" data-composition-id="cenas" data-width="1080" data-height="1920">
+    <!-- the autumn forest that stays under every scene -->
+    <svg id="cn-bg" class="full" viewBox="0 0 1080 1920" data-layout-ignore>
+      <defs>
+        <linearGradient id="cn-paper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f6ead2"/><stop offset="1" stop-color="#ead2a6"/></linearGradient>
+        <radialGradient id="cn-sun"><stop offset="0" stop-color="#fff6df" stop-opacity=".9"/><stop offset="1" stop-color="#fff6df" stop-opacity="0"/></radialGradient>
+      </defs>
+      <rect width="1080" height="1920" fill="url(#cn-paper)"/>
+      <circle cx="540" cy="820" r="520" fill="url(#cn-sun)"/>
+      <g id="cn-trees-back" fill="#d9a46a" opacity=".55">
+        <path d="M0,1500 L60,1340 L120,1500 Z"/><path d="M100,1500 L180,1300 L260,1500 Z"/><path d="M820,1500 L900,1310 L980,1500 Z"/><path d="M940,1500 L1010,1350 L1080,1500 Z"/><path d="M700,1500 L760,1370 L820,1500 Z"/><path d="M240,1500 L300,1380 L360,1500 Z"/>
+      </g>
+      <g id="cn-trees" stroke="#2b1d12" stroke-width="6" stroke-linejoin="round">
+        <path d="M-20,1560 L50,1380 L120,1560 Z" fill="#c8502a"/><path d="M90,1560 L170,1340 L250,1560 Z" fill="#e0893a"/>
+        <path d="M830,1560 L910,1350 L990,1560 Z" fill="#3f7d4a"/><path d="M960,1560 L1030,1390 L1100,1560 Z" fill="#c8502a"/>
+      </g>
+      <path d="M0,1540 C240,1500 480,1530 720,1510 C880,1500 980,1510 1080,1520 L1080,1920 L0,1920 Z" fill="#8d6a3f"/>
+      <path d="M0,1600 C260,1570 520,1600 760,1580 C900,1570 1000,1580 1080,1590 L1080,1920 L0,1920 Z" fill="#6f5130"/>
+      <g id="cn-leaves">
+        <path id="cn-lf1" d="M120,300 c14,-14 34,-10 38,6 c-14,10 -30,10 -38,-6 z" fill="#d9662f"/>
+        <path id="cn-lf2" d="M880,240 c14,-14 34,-10 38,6 c-14,10 -30,10 -38,-6 z" fill="#e8a33c"/>
+        <path id="cn-lf3" d="M300,120 c14,-14 34,-10 38,6 c-14,10 -30,10 -38,-6 z" fill="#c8502a"/>
+        <path id="cn-lf4" d="M760,420 c14,-14 34,-10 38,6 c-14,10 -30,10 -38,-6 z" fill="#e0893a"/>
+        <path id="cn-lf5" d="M520,60 c14,-14 34,-10 38,6 c-14,10 -30,10 -38,-6 z" fill="#d9662f"/>
+      </g>
+    </svg>
+
+    <!-- S1: the box -->
+    <div id="s1" class="scene clip" data-start="0" data-duration="5.0">
+      <div id="s1-k" class="kk kick dark">Como jogar</div>
+      <div id="s1-t" class="ttl serif">Root</div>
+      <img id="s1-box" src="assets/img/root-caixa-recorte.png" alt="Caixa de Root, edição MeepleBR" style="position:absolute;left:190px;top:540px;width:700px" />
+      <div id="s1-chips" style="position:absolute;left:0;right:0;top:1112px;display:flex;justify-content:center;gap:14px">
+        <span class="lbl s1c" style="font-size:24px;padding:12px 18px;border-radius:999px;background:#e8742a;color:#fff">Marqueses</span>
+        <span class="lbl s1c" style="font-size:24px;padding:12px 18px;border-radius:999px;background:#2d6fb6;color:#fff">Rapinas</span>
+        <span class="lbl s1c" style="font-size:24px;padding:12px 18px;border-radius:999px;background:#4f9a45;color:#fff">Aliança</span>
+        <span class="lbl s1c" style="font-size:24px;padding:12px 18px;border-radius:999px;background:#7d6b5d;color:#fff">Malandro</span>
+      </div>
+      <div class="credit" style="top:1066px">Imagem: MeepleBR</div>
+    </div>
+
+    <!-- S2: thirty points -->
+    <div id="s2" class="scene clip" data-start="5.0" data-duration="4.05">
+      <div id="s2-k" class="kk kick dark">Objetivo</div>
+      <svg id="s2-ring" class="full" viewBox="0 0 1080 1920" data-layout-ignore>
+        <circle cx="540" cy="820" r="250" fill="#fff8ea" stroke="#2b1d12" stroke-width="10"/>
+        <circle cx="540" cy="820" r="214" fill="none" stroke="#ead2a6" stroke-width="30"/>
+        <circle id="s2-prog" cx="540" cy="820" r="214" fill="none" stroke="#e8742a" stroke-width="30" stroke-linecap="round" pathLength="1" stroke-dasharray="1 1" transform="rotate(-90 540 820)"/>
+      </svg>
+      <div id="s2-n" class="serif" style="position:absolute;left:0;right:0;top:640px;text-align:center;font-size:300px;line-height:1;color:#2b1d12;text-shadow:none">0</div>
+      <div id="s2-l" class="lbl" style="position:absolute;left:0;right:0;top:1100px">pontos de vitória</div>
+    </div>
+
+    <!-- S3: Marquise -->
+    <div id="s3" class="scene clip" data-start="9.05" data-duration="6.38">
+      <div id="s3-t" class="ttl serif" style="color:#c85a1c">Marqueses</div>
+      <div id="s3-ph" class="photo" style="left:345px;top:440px;width:390px;height:390px"><img src="assets/img/root-componentes-1.webp" alt="Guerreiros dos Marqueses" style="object-position:60% 45%;transform:scale(1.35);transform-origin:60% 45%" /></div>
+      <svg id="s3-chain" class="full" viewBox="0 0 1080 1920" data-layout-ignore>
+        <g id="s3-i1" stroke="#2b1d12" stroke-width="7" stroke-linejoin="round">
+          <rect x="120" y="930" width="190" height="90" rx="44" fill="#a8703c"/><ellipse cx="290" cy="975" rx="26" ry="44" fill="#e2b77c"/><ellipse cx="290" cy="975" rx="12" ry="22" fill="none" stroke-width="5"/>
+        </g>
+        <g id="s3-a1"><path d="M345,975 h70" stroke="#2b1d12" stroke-width="8" stroke-linecap="round"/><path d="M405,955 l24,20 l-24,20" fill="none" stroke="#2b1d12" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></g>
+        <g id="s3-i2" stroke="#2b1d12" stroke-width="7" stroke-linejoin="round">
+          <path d="M465,1020 L465,960 L540,905 L615,960 L615,1020 Z" fill="#e8742a"/><rect x="522" y="975" width="36" height="45" fill="#2b1d12"/>
+        </g>
+        <g id="s3-a2"><path d="M650,975 h70" stroke="#2b1d12" stroke-width="8" stroke-linecap="round"/><path d="M710,955 l24,20 l-24,20" fill="none" stroke="#2b1d12" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></g>
+        <g id="s3-i3"><circle cx="860" cy="970" r="72" fill="#f2c14e" stroke="#2b1d12" stroke-width="7"/><text x="860" y="993" text-anchor="middle" font-family="Manrope" font-weight="800" font-size="62" fill="#2b1d12">PV</text></g>
+      </svg>
+      <div id="s3-l1" class="lbl" style="position:absolute;left:110px;width:210px;top:1060px">Madeira</div>
+      <div id="s3-l2" class="lbl" style="position:absolute;left:430px;width:220px;top:1060px">Construção</div>
+      <div id="s3-l3" class="lbl" style="position:absolute;left:760px;width:200px;top:1060px">Pontos</div>
+      <div class="credit" style="top:848px">Imagem: MeepleBR</div>
+    </div>
+
+    <!-- S4: Eyrie -->
+    <div id="s4" class="scene clip" data-start="15.43" data-duration="6.26">
+      <div id="s4-t" class="ttl serif" style="color:#245d9c">Rapinas</div>
+      <svg id="s4-nest" class="full" viewBox="0 0 1080 1920" data-layout-ignore>
+        <g stroke="#2b1d12" stroke-width="7" stroke-linejoin="round" stroke-linecap="round">
+          <path d="M400,560 C410,650 670,650 680,560 Z" fill="#a8703c"/>
+          <path d="M405,575 L470,610 M520,625 L580,600 M620,620 L670,580" fill="none" stroke-width="5"/>
+          <ellipse cx="540" cy="560" rx="140" ry="28" fill="#c99158"/>
+        </g>
+        <g id="s4-pv"><circle cx="735" cy="520" r="52" fill="#f2c14e" stroke="#2b1d12" stroke-width="6"/><text x="735" y="537" text-anchor="middle" font-family="Manrope" font-weight="800" font-size="44" fill="#2b1d12">PV</text></g>
+      </svg>
+      <div id="s4-dk" class="kick dark" style="position:absolute;left:0;right:0;top:720px;text-align:center;font-size:30px">O Decreto</div>
+      <div id="s4-dec" style="position:absolute;left:70px;right:70px;top:780px;display:flex;gap:18px;justify-content:center">
+        <div class="lbl s4c" style="width:215px;height:260px;border:7px solid #2b1d12;border-radius:20px;background:#d7e6f7;display:flex;align-items:flex-end;justify-content:center;padding-bottom:22px;font-size:28px;letter-spacing:.03em">Recrutar</div>
+        <div class="lbl s4c" style="width:215px;height:260px;border:7px solid #2b1d12;border-radius:20px;background:#d7e6f7;display:flex;align-items:flex-end;justify-content:center;padding-bottom:22px;font-size:28px;letter-spacing:.03em">Mover</div>
+        <div class="lbl s4c" style="width:215px;height:260px;border:7px solid #2b1d12;border-radius:20px;background:#d7e6f7;display:flex;align-items:flex-end;justify-content:center;padding-bottom:22px;font-size:28px;letter-spacing:.03em">Batalhar</div>
+        <div class="lbl s4c" style="width:215px;height:260px;border:7px solid #2b1d12;border-radius:20px;background:#d7e6f7;display:flex;align-items:flex-end;justify-content:center;padding-bottom:22px;font-size:28px;letter-spacing:.03em">Construir</div>
+      </div>
+      <div id="s4-stamp" class="serif" style="position:absolute;left:0;right:0;top:850px;text-align:center;font-size:130px;color:#c3271c;text-shadow:none"><em>Tumulto!</em></div>
+    </div>
+
+    <!-- S5: Alliance -->
+    <div id="s5" class="scene clip" data-start="21.69" data-duration="3.9">
+      <div id="s5-t" class="ttl serif" style="color:#3d7f36">Aliança</div>
+      <svg id="s5-map" class="full" viewBox="0 0 1080 1920" data-layout-ignore>
+        <g fill="none" stroke="#8d6a3f" stroke-width="10" stroke-linecap="round" stroke-dasharray="2 20">
+          <path d="M240,620 L470,560 L720,640 L860,860 L640,960 L380,1000 L230,820 Z"/><path d="M470,560 L540,800 L640,960"/><path d="M230,820 L540,800 L860,860"/>
+        </g>
+        <g stroke="#2b1d12" stroke-width="7" fill="#c9dfa4">
+          <circle cx="240" cy="620" r="62"/><circle cx="470" cy="560" r="62"/><circle cx="720" cy="640" r="62"/><circle cx="860" cy="860" r="62"/>
+          <circle cx="640" cy="960" r="62"/><circle cx="380" cy="1000" r="62"/><circle cx="230" cy="820" r="62"/><circle cx="540" cy="800" r="72"/>
+        </g>
+        <g id="s5-sym" fill="#4f9a45" stroke="#2b1d12" stroke-width="5">
+          <circle class="s5s" cx="540" cy="800" r="30"/><circle class="s5s" cx="470" cy="560" r="26"/><circle class="s5s" cx="720" cy="640" r="26"/>
+          <circle class="s5s" cx="230" cy="820" r="26"/><circle class="s5s" cx="640" cy="960" r="26"/><circle class="s5s" cx="860" cy="860" r="26"/>
+        </g>
+        <circle id="s5-wave" cx="540" cy="800" r="80" fill="none" stroke="#4f9a45" stroke-width="16"/>
+      </svg>
+      <div id="s5-rev" class="serif" style="position:absolute;left:0;right:0;top:1060px;text-align:center;font-size:96px;color:#3d7f36;text-shadow:none"><em>Revolta!</em></div>
+    </div>
+
+    <!-- S6: Vagabond -->
+    <div id="s6" class="scene clip" data-start="25.59" data-duration="4.38">
+      <div id="s6-t" class="ttl serif" style="color:#6b5a4c">Malandro</div>
+      <svg id="s6-art" class="full" viewBox="0 0 1080 1920" data-layout-ignore>
+        <path d="M120,1040 C300,900 420,1060 560,900 C680,760 820,860 960,700" fill="none" stroke="#8d6a3f" stroke-width="14" stroke-linecap="round" stroke-dasharray="4 26"/>
+        <g id="s6-ruin" stroke="#2b1d12" stroke-width="7" stroke-linejoin="round">
+          <path d="M500,900 L500,800 L530,800 L530,770 L590,770 L590,800 L620,800 L620,900 Z" fill="#b9ab96"/><path d="M540,900 L540,850 C540,830 580,830 580,850 L580,900 Z" fill="#2b1d12"/>
+        </g>
+        <g id="s6-items" stroke="#2b1d12" stroke-width="5">
+          <circle cx="470" cy="720" r="34" fill="#f2c14e"/><circle cx="560" cy="690" r="34" fill="#cfd8dc"/><circle cx="650" cy="720" r="34" fill="#a8703c"/>
+        </g>
+        <g id="s6-cards" stroke="#2b1d12" stroke-width="6">
+          <rect x="760" y="560" width="120" height="170" rx="14" fill="#fff8ea" transform="rotate(-12 820 645)"/>
+          <rect x="800" y="550" width="120" height="170" rx="14" fill="#fff8ea"/>
+          <rect x="840" y="560" width="120" height="170" rx="14" fill="#fff8ea" transform="rotate(12 900 645)"/>
+        </g>
+      </svg>
+      <svg id="s6-pawn" viewBox="0 0 100 120" style="position:absolute;left:0;top:0;width:110px;height:132px" data-layout-ignore>
+        <path d="M50,4 C62,4 70,13 70,24 C70,31 67,36 62,39 L88,51 C94,54 96,59 94,65 L92,71 C90,76 85,77 80,75 L68,70 L80,104 C82,110 78,114 72,114 L60,114 C56,114 53,112 52,108 L50,100 L48,108 C47,112 44,114 40,114 L28,114 C22,114 18,110 20,104 L32,70 L20,75 C15,77 10,76 8,71 L6,65 C4,59 6,54 12,51 L38,39 C33,36 30,31 30,24 C30,13 38,4 50,4 Z" fill="#7d6b5d" stroke="#2b1d12" stroke-width="5" stroke-linejoin="round"/>
+      </svg>
+      <div id="s6-l1" class="lbl" style="position:absolute;left:430px;width:260px;top:930px">Ruínas</div>
+      <div id="s6-l2" class="lbl" style="position:absolute;left:740px;width:260px;top:760px">Tarefas</div>
+    </div>
+
+    <!-- S7: turn phases -->
+    <div id="s7" class="scene clip" data-start="29.97" data-duration="4.02">
+      <div id="s7-k" class="kk kick dark">Cada turno</div>
+      <div id="s7-b1" style="position:absolute;left:90px;right:90px;top:520px;height:180px;border:8px solid #2b1d12;border-radius:28px;background:linear-gradient(90deg,#f7b98a,#ffd9a0);overflow:hidden">
+        <svg viewBox="0 0 900 180" width="884" height="164" data-layout-ignore style="position:absolute;left:0;top:0"><circle cx="760" cy="170" r="70" fill="#fff3c4" stroke="#2b1d12" stroke-width="6"/></svg>
+        <div class="serif" style="position:absolute;left:44px;top:32px;font-size:96px;color:#2b1d12;text-shadow:none">Amanhecer</div></div>
+      <div id="s7-b2" style="position:absolute;left:90px;right:90px;top:730px;height:180px;border:8px solid #2b1d12;border-radius:28px;background:linear-gradient(90deg,#8fd0f0,#c6ecff);overflow:hidden">
+        <svg viewBox="0 0 900 180" width="884" height="164" data-layout-ignore style="position:absolute;left:0;top:0"><circle cx="760" cy="82" r="56" fill="#ffe27a" stroke="#2b1d12" stroke-width="6"/></svg>
+        <div class="serif" style="position:absolute;left:44px;top:32px;font-size:96px;color:#2b1d12;text-shadow:none">Dia</div></div>
+      <div id="s7-b3" style="position:absolute;left:90px;right:90px;top:940px;height:180px;border:8px solid #2b1d12;border-radius:28px;background:linear-gradient(90deg,#5b4a8a,#8a6aa8);overflow:hidden">
+        <svg viewBox="0 0 900 180" width="884" height="164" data-layout-ignore style="position:absolute;left:0;top:0"><path d="M790,40 a50,50 0 1 0 0,100 a38,38 0 1 1 0,-100 z" fill="#f6eedb" stroke="#2b1d12" stroke-width="5"/></svg>
+        <div class="serif" style="position:absolute;left:44px;top:32px;font-size:96px;color:#fff3e0;text-shadow:none">Anoitecer</div></div>
+    </div>
+
+    <!-- S8: moving needs rule -->
+    <div id="s8" class="scene clip" data-start="33.99" data-duration="5.94">
+      <div id="s8-k" class="kk kick dark">Para mover</div>
+      <svg id="s8-art" class="full" viewBox="0 0 1080 1920" data-layout-ignore>
+        <path d="M380,820 L700,820" stroke="#8d6a3f" stroke-width="16" stroke-linecap="round" stroke-dasharray="4 26"/>
+        <circle cx="270" cy="820" r="130" fill="#c9dfa4" stroke="#2b1d12" stroke-width="8"/>
+        <circle cx="810" cy="820" r="130" fill="#c9dfa4" stroke="#2b1d12" stroke-width="8"/>
+        <circle id="s8-rule" cx="270" cy="820" r="150" fill="none" stroke="#e8742a" stroke-width="14" stroke-dasharray="22 16"/>
+        <g id="s8-crown" transform="translate(270,640)"><path d="M-46,20 L-46,-14 L-22,6 L0,-26 L22,6 L46,-14 L46,20 Z" fill="#f2c14e" stroke="#2b1d12" stroke-width="6" stroke-linejoin="round"/></g>
+      </svg>
+      <svg id="s8-pawn" viewBox="0 0 100 120" style="position:absolute;left:215px;top:742px;width:110px;height:132px" data-layout-ignore>
+        <path d="M50,4 C62,4 70,13 70,24 C70,31 67,36 62,39 L88,51 C94,54 96,59 94,65 L92,71 C90,76 85,77 80,75 L68,70 L80,104 C82,110 78,114 72,114 L60,114 C56,114 53,112 52,108 L50,100 L48,108 C47,112 44,114 40,114 L28,114 C22,114 18,110 20,104 L32,70 L20,75 C15,77 10,76 8,71 L6,65 C4,59 6,54 12,51 L38,39 C33,36 30,31 30,24 C30,13 38,4 50,4 Z" fill="#e8742a" stroke="#2b1d12" stroke-width="5" stroke-linejoin="round"/>
+      </svg>
+      <div id="s8-gov" class="lbl" style="position:absolute;left:120px;width:300px;top:560px;color:#c85a1c">Você governa</div>
+      <div id="s8-l1" class="lbl" style="position:absolute;left:120px;width:300px;top:980px">Saída</div>
+      <div id="s8-l2" class="lbl" style="position:absolute;left:660px;width:300px;top:980px">Chegada</div>
+      <div id="s8-or" class="serif" style="position:absolute;left:0;right:0;top:1060px;text-align:center;font-size:64px;color:#2b1d12;text-shadow:none"><em>uma das duas</em></div>
+    </div>
+
+    <!-- S9: battle -->
+    <div id="s9" class="scene clip" data-start="39.93" data-duration="5.58">
+      <div id="s9-t" class="ttl serif">Batalha</div>
+      <div id="s9-ph" class="photo" style="left:370px;top:440px;width:340px;height:340px"><img src="assets/img/root-mesa-1.webp" alt="Dados de batalha de Root na mesa" style="object-position:72% 45%;transform:scale(1.7);transform-origin:72% 45%" /></div>
+      <div id="s9-d1w" style="position:absolute;left:170px;top:830px;width:260px;text-align:center">
+        <div id="s9-d1" style="width:200px;height:200px;margin:0 auto;border:9px solid #2b1d12;border-radius:36px;background:#fff8ea;font-family:'Instrument Serif',serif;font-size:170px;line-height:186px;color:#2b1d12">3</div>
+        <div id="s9-l1" class="lbl" style="margin-top:16px;color:#c85a1c">Atacante<br />maior</div>
+      </div>
+      <div id="s9-d2w" style="position:absolute;left:650px;top:830px;width:260px;text-align:center">
+        <div id="s9-d2" style="width:200px;height:200px;margin:0 auto;border:9px solid #2b1d12;border-radius:36px;background:#fff8ea;font-family:'Instrument Serif',serif;font-size:170px;line-height:186px;color:#2b1d12">1</div>
+        <div id="s9-l2" class="lbl" style="margin-top:16px;color:#245d9c">Defensor<br />menor</div>
+      </div>
+      <div class="credit" style="top:790px">Imagens: MeepleBR</div>
+    </div>
+
+    <!-- S10: end card -->
+    <div id="s10" class="scene clip" data-start="45.51" data-duration="5.99">
+      <div id="s10-k" class="kk kick dark">Como jogar Root</div>
+      <div id="s10-t" class="ttl serif">Aprenda em<br /><em style="color:#c85a1c">5 etapas</em></div>
+      <div id="s10-s" class="body" style="position:absolute;left:80px;right:80px;top:580px;text-align:center;font-size:44px;color:#4a3420;text-shadow:none">Com exercícios e regras do manual</div>
+      <div id="s10-cw" style="position:absolute;left:0;right:0;top:680px;display:flex;justify-content:center">
+        <div id="s10-c" style="font-family:'Manrope',sans-serif;font-weight:800;font-size:46px;color:#fff;background:linear-gradient(180deg,#f0904a,#d8641f);padding:30px 64px;border-radius:999px;border:6px solid #2b1d12;white-space:nowrap">Leia no link da bio</div>
+      </div>
+      <div id="s10-lg" style="position:absolute;left:304px;top:880px;width:472px;background:#2b1d12;border-radius:26px;padding:22px 26px"><img src="assets/img/logo.webp" alt="Elite Boardgamers" style="width:420px;display:block" /></div>
+      <div id="s10-u" class="lbl" style="position:absolute;left:30px;right:30px;top:1100px;font-size:28px;letter-spacing:.04em">eliteboardgamers.com.br/como-jogar/root</div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    const IN = (sel, t, from = { opacity: 0, y: 30 }, d = 0.45, ease = "expo.out") => tl.fromTo(sel, from, { opacity: 1, y: 0, x: 0, scale: 1, rotation: 0, duration: d, ease }, t);
+    const POP = (sel, t) => tl.fromTo(sel, { scale: 0, transformOrigin: "50% 50%", transformBox: "fill-box" }, { scale: 1, duration: 0.45, ease: "back.out(1.8)" }, t);
+    const OUT = (sel, t) => tl.to(sel, { opacity: 0, y: -40, duration: 0.2, ease: "power3.in" }, t);
+    // leaves drift down over the whole film
+    [[1, 120, 1200], [2, -160, 1300], [3, 90, 1250], [4, -120, 1150], [5, 60, 1350]].forEach(([i, dx, dy]) =>
+      tl.fromTo("#cn-lf" + i, { x: 0, y: 0, rotation: 0, svgOrigin: "540 300" }, { x: dx, y: dy, rotation: 200, duration: 51.5, ease: "none" }, 0));
+    tl.fromTo("#cn-trees", { y: 0 }, { y: 12, duration: 51.5, ease: "none" }, 0);
+
+    // S1
+    tl.fromTo("#s1-box", { y: 420, scale: 0.8, rotation: -8, opacity: 0 }, { y: 0, scale: 1, rotation: -2, opacity: 1, duration: 0.7, ease: "back.out(1.3)" }, 0.2);
+    tl.to("#s1-box", { rotation: 1, duration: 3.6, ease: "sine.inOut" }, 0.9);
+    tl.fromTo(".s1c", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.4, ease: "expo.out", stagger: 0.1 }, 2.5);
+    OUT("#s1-k, #s1-t, #s1-box, #s1-chips", 4.78);
+    // S2
+    IN("#s2-k", 5.1);
+    tl.fromTo("#s2-ring", { opacity: 0, scale: 0.7, transformOrigin: "540px 820px" }, { opacity: 1, scale: 1, duration: 0.5, ease: "back.out(1.5)" }, 5.1);
+    tl.fromTo("#s2-prog", { attr: { "stroke-dashoffset": 1 } }, { attr: { "stroke-dashoffset": 0 }, duration: 1.2, ease: "power2.inOut" }, 6.0);
+    const c2 = { v: 0 }; const n2 = document.getElementById("s2-n");
+    tl.fromTo(c2, { v: 0 }, { v: 30, duration: 1.2, ease: "power2.inOut", onUpdate: () => (n2.textContent = Math.round(c2.v)) }, 6.0);
+    IN("#s2-l", 7.31);
+    OUT("#s2-k, #s2-ring, #s2-n, #s2-l", 8.85);
+    // S3
+    IN("#s3-t", 9.3, { opacity: 0, scale: 1.2, y: 0 });
+    tl.fromTo("#s3-ph", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.55, ease: "back.out(1.6)" }, 9.5);
+    POP("#s3-i1", 10.5); IN("#s3-l1", 10.6);
+    tl.fromTo("#s3-a1", { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: 0.3, ease: "expo.out" }, 11.75);
+    POP("#s3-i2", 12.09); IN("#s3-l2", 12.2);
+    tl.fromTo("#s3-a2", { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: 0.3, ease: "expo.out" }, 13.6);
+    POP("#s3-i3", 13.97); IN("#s3-l3", 14.05);
+    OUT("#s3-t, #s3-ph, #s3-chain, #s3-l1, #s3-l2, #s3-l3", 15.22);
+    // S4
+    IN("#s4-t", 15.7, { opacity: 0, scale: 1.2, y: 0 });
+    tl.fromTo("#s4-nest", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.45, ease: "expo.out" }, 16.25);
+    POP("#s4-pv", 17.0);
+    IN("#s4-dk", 18.3);
+    tl.fromTo(".s4c", { opacity: 0, y: -260, rotation: -10 }, { opacity: 1, y: 0, rotation: 0, duration: 0.45, ease: "back.out(1.4)", stagger: 0.12 }, 18.4);
+    tl.to(".s4c", { rotation: (i) => [-14, 9, -7, 15][i], y: (i) => [140, 190, 160, 210][i], opacity: 0.35, duration: 0.5, ease: "power2.in", stagger: 0.04 }, 20.6);
+    tl.fromTo("#s4-stamp", { opacity: 0, scale: 2.2, rotation: -12 }, { opacity: 1, scale: 1, rotation: -8, duration: 0.3, ease: "expo.out" }, 20.58);
+    OUT("#s4-t, #s4-nest, #s4-dk, #s4-dec, #s4-stamp", 21.48);
+    // S5
+    IN("#s5-t", 21.9, { opacity: 0, scale: 1.2, y: 0 });
+    tl.fromTo("#s5-map", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.5, ease: "expo.out" }, 22.0);
+    tl.fromTo(".s5s", { scale: 0, transformOrigin: "50% 50%", transformBox: "fill-box" }, { scale: 1, duration: 0.35, ease: "back.out(2)", stagger: 0.14 }, 23.1);
+    tl.fromTo("#s5-wave", { attr: { r: 80 }, opacity: 0 }, { attr: { r: 330 }, opacity: 1, duration: 0.6, ease: "expo.out" }, 24.22);
+    tl.to("#s5-wave", { opacity: 0, duration: 0.35, ease: "power2.in" }, 24.85);
+    tl.fromTo("#s5-rev", { opacity: 0, scale: 1.8 }, { opacity: 1, scale: 1, duration: 0.3, ease: "expo.out" }, 24.22);
+    OUT("#s5-t, #s5-map, #s5-rev", 25.38);
+    // S6: the pawn walks the trail
+    IN("#s6-t", 25.9, { opacity: 0, scale: 1.2, y: 0 });
+    tl.fromTo("#s6-art", { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "power2.out" }, 25.8);
+    const path6 = [[65, 920], [245, 820], [405, 900], [505, 800], [700, 700], [845, 640]];
+    tl.set("#s6-pawn", { x: path6[0][0], y: path6[0][1] }, 25.59);
+    path6.slice(1).forEach(([x, y], i) => tl.to("#s6-pawn", { x, y, duration: 0.5, ease: "power1.inOut" }, 26.4 + i * 0.5));
+    POP("#s6-ruin", 27.74); IN("#s6-l1", 27.8);
+    tl.fromTo("#s6-items", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "back.out(2)" }, 28.0);
+    POP("#s6-cards", 28.83); IN("#s6-l2", 28.9);
+    OUT("#s6-t, #s6-art, #s6-pawn, #s6-l1, #s6-l2", 29.76);
+    // S7
+    IN("#s7-k", 30.1);
+    IN("#s7-b1", 31.0, { opacity: 0, x: -400, y: 0 }, 0.45);
+    IN("#s7-b2", 31.8, { opacity: 0, x: 400, y: 0 }, 0.45);
+    IN("#s7-b3", 32.25, { opacity: 0, x: -400, y: 0 }, 0.45);
+    OUT("#s7-k, #s7-b1, #s7-b2, #s7-b3", 33.78);
+    // S8
+    IN("#s8-k", 34.2);
+    tl.fromTo("#s8-art", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.45, ease: "expo.out" }, 34.3);
+    tl.fromTo("#s8-pawn", { opacity: 0, y: -60 }, { opacity: 1, y: 0, duration: 0.4, ease: "back.out(2)" }, 34.45);
+    tl.fromTo("#s8-rule", { opacity: 0, scale: 0.8, svgOrigin: "270 820" }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(2)" }, 35.56);
+    POP("#s8-crown", 35.6); IN("#s8-gov", 35.65);
+    IN("#s8-l1", 36.85); IN("#s8-l2", 37.39);
+    tl.to("#s8-pawn", { x: 540, duration: 0.8, ease: "power2.inOut" }, 37.7);
+    IN("#s8-or", 38.4);
+    OUT("#s8-k, #s8-art, #s8-pawn, #s8-gov, #s8-l1, #s8-l2, #s8-or", 39.72);
+    // S9: dice tumble in, then each one is called out
+    IN("#s9-t", 40.0, { opacity: 0, scale: 1.2, y: 0 });
+    tl.fromTo("#s9-ph", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: "back.out(1.6)" }, 40.3);
+    tl.fromTo("#s9-d1", { y: -500, rotation: -540 }, { y: 0, rotation: -4, duration: 0.7, ease: "bounce.out" }, 41.3);
+    tl.fromTo("#s9-d2", { y: -500, rotation: 480 }, { y: 0, rotation: 5, duration: 0.7, ease: "bounce.out" }, 41.42);
+    tl.fromTo("#s9-l1, #s9-l2", { opacity: 0 }, { opacity: 0, duration: 0.01 }, 40.0);
+    tl.to("#s9-d1", { backgroundColor: "#f6c08f", scale: 1.12, duration: 0.25, ease: "back.out(2)" }, 43.3);
+    tl.to("#s9-l1", { opacity: 1, duration: 0.3 }, 43.3);
+    tl.to("#s9-d2", { backgroundColor: "#bcd5f2", scale: 1.12, duration: 0.25, ease: "back.out(2)" }, 44.54);
+    tl.to("#s9-l2", { opacity: 1, duration: 0.3 }, 44.54);
+    OUT("#s9-t, #s9-ph, #s9-d1w, #s9-d2w", 45.3);
+    // S10
+    IN("#s10-k", 45.6);
+    IN("#s10-t", 45.7, { opacity: 0, scale: 1.15, y: 0 });
+    IN("#s10-s", 47.45);
+    tl.fromTo("#s10-cw", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.6, ease: "back.out(1.4)" }, 48.7);
+    IN("#s10-lg", 46.6, { opacity: 0, scale: 1.25, y: 0 }, 0.6);
+    IN("#s10-u", 49.2);
+    window.__timelines["cenas"] = tl;
+  </script>
+</template>

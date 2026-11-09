@@ -1,0 +1,686 @@
+[
+  {
+    "text": "Este",
+    "start": 0.06,
+    "end": 0.4,
+    "id": "w0"
+  },
+  {
+    "text": "jogo",
+    "start": 0.5,
+    "end": 0.8,
+    "id": "w1"
+  },
+  {
+    "text": "de",
+    "start": 0.8,
+    "end": 1,
+    "id": "w2"
+  },
+  {
+    "text": "guerra",
+    "start": 1,
+    "end": 1.49,
+    "id": "w3"
+  },
+  {
+    "text": "fofo",
+    "start": 1.59,
+    "end": 1.92,
+    "id": "w4"
+  },
+  {
+    "text": "em",
+    "start": 2.01,
+    "end": 2.12,
+    "id": "w5"
+  },
+  {
+    "text": "que",
+    "start": 2.12,
+    "end": 2.29,
+    "id": "w6"
+  },
+  {
+    "text": "cada",
+    "start": 2.31,
+    "end": 2.55,
+    "id": "w7"
+  },
+  {
+    "text": "jogador",
+    "start": 2.55,
+    "end": 2.98,
+    "id": "w8"
+  },
+  {
+    "text": "joga",
+    "start": 2.98,
+    "end": 3.21,
+    "id": "w9"
+  },
+  {
+    "text": "um",
+    "start": 3.22,
+    "end": 3.34,
+    "id": "w10"
+  },
+  {
+    "text": "jogo",
+    "start": 3.34,
+    "end": 3.58,
+    "id": "w11"
+  },
+  {
+    "text": "diferente,",
+    "start": 3.58,
+    "end": 4.49,
+    "id": "w12"
+  },
+  {
+    "text": "é",
+    "start": 4.49,
+    "end": 4.64,
+    "id": "w13"
+  },
+  {
+    "text": "Holt.",
+    "start": 4.64,
+    "end": 5.28,
+    "id": "w14"
+  },
+  {
+    "text": "Seu",
+    "start": 5.31,
+    "end": 5.47,
+    "id": "w15"
+  },
+  {
+    "text": "objetivo",
+    "start": 5.72,
+    "end": 5.98,
+    "id": "w16"
+  },
+  {
+    "text": "é",
+    "start": 5.98,
+    "end": 6.04,
+    "id": "w17"
+  },
+  {
+    "text": "chegar",
+    "start": 6.04,
+    "end": 6.42,
+    "id": "w18"
+  },
+  {
+    "text": "primeiro",
+    "start": 6.42,
+    "end": 6.93,
+    "id": "w19"
+  },
+  {
+    "text": "a",
+    "start": 6.93,
+    "end": 6.99,
+    "id": "w20"
+  },
+  {
+    "text": "30",
+    "start": 6.99,
+    "end": 7.37,
+    "id": "w21"
+  },
+  {
+    "text": "pontos",
+    "start": 7.37,
+    "end": 7.75,
+    "id": "w22"
+  },
+  {
+    "text": "de",
+    "start": 7.75,
+    "end": 7.88,
+    "id": "w23"
+  },
+  {
+    "text": "vitória.",
+    "start": 7.88,
+    "end": 9.32,
+    "id": "w24"
+  },
+  {
+    "text": "Os",
+    "start": 9.35,
+    "end": 9.45,
+    "id": "w25"
+  },
+  {
+    "text": "marqueses",
+    "start": 9.45,
+    "end": 10.05,
+    "id": "w26"
+  },
+  {
+    "text": "vivem",
+    "start": 10.05,
+    "end": 10.37,
+    "id": "w27"
+  },
+  {
+    "text": "de",
+    "start": 10.38,
+    "end": 10.51,
+    "id": "w28"
+  },
+  {
+    "text": "madeira,",
+    "start": 10.51,
+    "end": 11.08,
+    "id": "w29"
+  },
+  {
+    "text": "cerrarias",
+    "start": 11.2,
+    "end": 11.71,
+    "id": "w30"
+  },
+  {
+    "text": "pagam",
+    "start": 11.71,
+    "end": 12.04,
+    "id": "w31"
+  },
+  {
+    "text": "construções",
+    "start": 12.04,
+    "end": 12.88,
+    "id": "w32"
+  },
+  {
+    "text": "e",
+    "start": 12.88,
+    "end": 12.99,
+    "id": "w33"
+  },
+  {
+    "text": "construções",
+    "start": 13.09,
+    "end": 14.2,
+    "id": "w34"
+  },
+  {
+    "text": "dão",
+    "start": 14.32,
+    "end": 14.68,
+    "id": "w35"
+  },
+  {
+    "text": "pontos.",
+    "start": 14.68,
+    "end": 15.71,
+    "id": "w36"
+  },
+  {
+    "text": "As",
+    "start": 15.81,
+    "end": 15.92,
+    "id": "w37"
+  },
+  {
+    "text": "rapinas",
+    "start": 15.92,
+    "end": 16.41,
+    "id": "w38"
+  },
+  {
+    "text": "pontuam",
+    "start": 16.41,
+    "end": 16.9,
+    "id": "w39"
+  },
+  {
+    "text": "com",
+    "start": 16.9,
+    "end": 17.11,
+    "id": "w40"
+  },
+  {
+    "text": "ninhos,",
+    "start": 17.11,
+    "end": 17.67,
+    "id": "w41"
+  },
+  {
+    "text": "mas",
+    "start": 17.68,
+    "end": 17.91,
+    "id": "w42"
+  },
+  {
+    "text": "precisam",
+    "start": 17.94,
+    "end": 18.56,
+    "id": "w43"
+  },
+  {
+    "text": "cumprir",
+    "start": 18.59,
+    "end": 19.13,
+    "id": "w44"
+  },
+  {
+    "text": "o",
+    "start": 19.13,
+    "end": 19.21,
+    "id": "w45"
+  },
+  {
+    "text": "decreto",
+    "start": 19.21,
+    "end": 19.78,
+    "id": "w46"
+  },
+  {
+    "text": "inteiro",
+    "start": 19.78,
+    "end": 20.36,
+    "id": "w47"
+  },
+  {
+    "text": "ou",
+    "start": 20.36,
+    "end": 20.45,
+    "id": "w48"
+  },
+  {
+    "text": "caem",
+    "start": 20.52,
+    "end": 20.81,
+    "id": "w49"
+  },
+  {
+    "text": "em",
+    "start": 20.81,
+    "end": 21.03,
+    "id": "w50"
+  },
+  {
+    "text": "tumulto.",
+    "start": 21.03,
+    "end": 21.92,
+    "id": "w51"
+  },
+  {
+    "text": "A",
+    "start": 21.95,
+    "end": 22.01,
+    "id": "w52"
+  },
+  {
+    "text": "aliança",
+    "start": 22.01,
+    "end": 22.68,
+    "id": "w53"
+  },
+  {
+    "text": "espalha",
+    "start": 22.68,
+    "end": 23.35,
+    "id": "w54"
+  },
+  {
+    "text": "simpatia",
+    "start": 23.35,
+    "end": 24.12,
+    "id": "w55"
+  },
+  {
+    "text": "até",
+    "start": 24.12,
+    "end": 24.41,
+    "id": "w56"
+  },
+  {
+    "text": "se",
+    "start": 24.41,
+    "end": 24.6,
+    "id": "w57"
+  },
+  {
+    "text": "revoltar.",
+    "start": 24.6,
+    "end": 25.72,
+    "id": "w58"
+  },
+  {
+    "text": "Eo",
+    "start": 25.75,
+    "end": 25.87,
+    "id": "w59"
+  },
+  {
+    "text": "malandro,",
+    "start": 25.9,
+    "end": 26.74,
+    "id": "w60"
+  },
+  {
+    "text": "sozinho,",
+    "start": 26.74,
+    "end": 27.48,
+    "id": "w61"
+  },
+  {
+    "text": "explora",
+    "start": 27.6,
+    "end": 28.12,
+    "id": "w62"
+  },
+  {
+    "text": "ruínas",
+    "start": 28.12,
+    "end": 28.63,
+    "id": "w63"
+  },
+  {
+    "text": "e",
+    "start": 28.63,
+    "end": 28.71,
+    "id": "w64"
+  },
+  {
+    "text": "cumpre",
+    "start": 28.71,
+    "end": 29.22,
+    "id": "w65"
+  },
+  {
+    "text": "tarefas.",
+    "start": 29.22,
+    "end": 30.14,
+    "id": "w66"
+  },
+  {
+    "text": "Todo",
+    "start": 30.25,
+    "end": 30.59,
+    "id": "w67"
+  },
+  {
+    "text": "turno",
+    "start": 30.68,
+    "end": 31.1,
+    "id": "w68"
+  },
+  {
+    "text": "tem",
+    "start": 31.1,
+    "end": 31.4,
+    "id": "w69"
+  },
+  {
+    "text": "a",
+    "start": 31.4,
+    "end": 31.5,
+    "id": "w70"
+  },
+  {
+    "text": "manhecer,",
+    "start": 31.5,
+    "end": 32.5,
+    "id": "w71"
+  },
+  {
+    "text": "dia",
+    "start": 32.5,
+    "end": 32.8,
+    "id": "w72"
+  },
+  {
+    "text": "e",
+    "start": 32.8,
+    "end": 32.9,
+    "id": "w73"
+  },
+  {
+    "text": "anoitecer.",
+    "start": 32.9,
+    "end": 34.2,
+    "id": "w74"
+  },
+  {
+    "text": "Para",
+    "start": 34.24,
+    "end": 34.58,
+    "id": "w75"
+  },
+  {
+    "text": "mover,",
+    "start": 34.7,
+    "end": 35.25,
+    "id": "w76"
+  },
+  {
+    "text": "você",
+    "start": 35.25,
+    "end": 35.63,
+    "id": "w77"
+  },
+  {
+    "text": "precisa",
+    "start": 35.63,
+    "end": 36.3,
+    "id": "w78"
+  },
+  {
+    "text": "governar",
+    "start": 36.3,
+    "end": 37.06,
+    "id": "w79"
+  },
+  {
+    "text": "a",
+    "start": 37.06,
+    "end": 37.15,
+    "id": "w80"
+  },
+  {
+    "text": "clareira",
+    "start": 37.15,
+    "end": 37.87,
+    "id": "w81"
+  },
+  {
+    "text": "de",
+    "start": 37.97,
+    "end": 38.09,
+    "id": "w82"
+  },
+  {
+    "text": "saída",
+    "start": 38.09,
+    "end": 38.56,
+    "id": "w83"
+  },
+  {
+    "text": "ou",
+    "start": 38.56,
+    "end": 38.75,
+    "id": "w84"
+  },
+  {
+    "text": "a",
+    "start": 38.75,
+    "end": 38.84,
+    "id": "w85"
+  },
+  {
+    "text": "deschegada.",
+    "start": 38.84,
+    "end": 40.16,
+    "id": "w86"
+  },
+  {
+    "text": "Parece",
+    "start": 40.23,
+    "end": 40.57,
+    "id": "w87"
+  },
+  {
+    "text": "simples,",
+    "start": 40.66,
+    "end": 41.18,
+    "id": "w88"
+  },
+  {
+    "text": "até",
+    "start": 41.18,
+    "end": 41.38,
+    "id": "w89"
+  },
+  {
+    "text": "batalha,",
+    "start": 41.38,
+    "end": 41.92,
+    "id": "w90"
+  },
+  {
+    "text": "o",
+    "start": 41.92,
+    "end": 42.04,
+    "id": "w91"
+  },
+  {
+    "text": "atacante",
+    "start": 42.04,
+    "end": 42.57,
+    "id": "w92"
+  },
+  {
+    "text": "causa",
+    "start": 42.57,
+    "end": 42.9,
+    "id": "w93"
+  },
+  {
+    "text": "o",
+    "start": 42.91,
+    "end": 42.94,
+    "id": "w94"
+  },
+  {
+    "text": "dado",
+    "start": 42.97,
+    "end": 43.24,
+    "id": "w95"
+  },
+  {
+    "text": "maior",
+    "start": 43.24,
+    "end": 43.58,
+    "id": "w96"
+  },
+  {
+    "text": "e",
+    "start": 43.58,
+    "end": 43.64,
+    "id": "w97"
+  },
+  {
+    "text": "o",
+    "start": 43.64,
+    "end": 43.7,
+    "id": "w98"
+  },
+  {
+    "text": "defensor,",
+    "start": 43.7,
+    "end": 44.52,
+    "id": "w99"
+  },
+  {
+    "text": "o",
+    "start": 44.52,
+    "end": 44.65,
+    "id": "w100"
+  },
+  {
+    "text": "menor.",
+    "start": 44.65,
+    "end": 45.72,
+    "id": "w101"
+  },
+  {
+    "text": "O",
+    "start": 45.75,
+    "end": 45.79,
+    "id": "w102"
+  },
+  {
+    "text": "passo",
+    "start": 45.95,
+    "end": 46.17,
+    "id": "w103"
+  },
+  {
+    "text": "a",
+    "start": 46.22,
+    "end": 46.24,
+    "id": "w104"
+  },
+  {
+    "text": "passo",
+    "start": 46.24,
+    "end": 46.62,
+    "id": "w105"
+  },
+  {
+    "text": "completo",
+    "start": 46.62,
+    "end": 47.21,
+    "id": "w106"
+  },
+  {
+    "text": "com",
+    "start": 47.33,
+    "end": 47.46,
+    "id": "w107"
+  },
+  {
+    "text": "exercícios",
+    "start": 47.46,
+    "end": 48.22,
+    "id": "w108"
+  },
+  {
+    "text": "está",
+    "start": 48.22,
+    "end": 48.5,
+    "id": "w109"
+  },
+  {
+    "text": "no",
+    "start": 48.53,
+    "end": 48.68,
+    "id": "w110"
+  },
+  {
+    "text": "link",
+    "start": 48.68,
+    "end": 48.99,
+    "id": "w111"
+  },
+  {
+    "text": "da",
+    "start": 48.99,
+    "end": 49.13,
+    "id": "w112"
+  },
+  {
+    "text": "bio.",
+    "start": 49.13,
+    "end": 49.48,
+    "id": "w113"
+  }
+]

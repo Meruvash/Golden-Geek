@@ -1,0 +1,46 @@
+{
+  "tts_provider": null,
+  "voice_id": null,
+  "voice_credit": null,
+  "bgm": {
+    "path": "assets/bgm/track.mp3",
+    "volume": 0.9,
+    "query": "playful whimsical folk adventure, pizzicato strings and light percussion, curious and lively, 110 bpm, instrumental",
+    "mode": "retrieve",
+    "duration_s": 90
+  },
+  "bgm_pending": false,
+  "bgm_provider": "heygen",
+  "bgm_pid": null,
+  "bgm_log": null,
+  "bgm_mode": "retrieve",
+  "bgm_target_duration_s": null,
+  "bgm_seed_duration_s": null,
+  "bgm_loop_count": null,
+  "voices": [],
+  "sfx": [
+    {
+      "id": "a",
+      "name": "dice roll",
+      "file": "assets/sfx/dice-roll.mp3",
+      "source": "openverse",
+      "duration_s": 3.912,
+      "license": "cc0",
+      "credit": "\"Dice Rolling - Dungeon and Dragons\" by joanneneedsthesound is marked with CC0 1.0. To view the terms, visit https://creativecommons.org/publicdomain/zero/1.0/.",
+      "offset_s": 0,
+      "volume": 0.35
+    },
+    {
+      "id": "b",
+      "name": "wood block",
+      "file": "assets/sfx/wood-block.mp3",
+      "source": "openverse",
+      "duration_s": 0.284,
+      "license": "cc0",
+      "credit": "\"Wood block hit\" by thomasjaunism is marked with CC0 1.0. To view the terms, visit https://creativecommons.org/publicdomain/zero/1.0/.",
+      "offset_s": 0,
+      "volume": 0.35
+    }
+  ],
+  "total_duration_s": 0
+}

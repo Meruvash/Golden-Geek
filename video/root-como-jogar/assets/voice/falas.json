@@ -1,0 +1,672 @@
+[
+ {
+  "id": 1,
+  "text": "Este jogo de guerra fofo, em que cada jogador joga um jogo diferente, é Root.",
+  "file": "/home/user/Golden-Geek/video/root-como-jogar/assets/voice/fala-01.wav",
+  "dur": 4.52,
+  "words": [
+   {
+    "text": "Este",
+    "start": 0,
+    "end": 0.281
+   },
+   {
+    "text": "jogo",
+    "start": 0.281,
+    "end": 0.563
+   },
+   {
+    "text": "de",
+    "start": 0.563,
+    "end": 0.703
+   },
+   {
+    "text": "guerra",
+    "start": 0.703,
+    "end": 1.125
+   },
+   {
+    "text": "fofo,",
+    "start": 1.125,
+    "end": 1.477
+   },
+   {
+    "text": "em",
+    "start": 1.477,
+    "end": 1.617
+   },
+   {
+    "text": "que",
+    "start": 1.617,
+    "end": 1.828
+   },
+   {
+    "text": "cada",
+    "start": 1.828,
+    "end": 2.109
+   },
+   {
+    "text": "jogador",
+    "start": 2.109,
+    "end": 2.602
+   },
+   {
+    "text": "joga",
+    "start": 2.602,
+    "end": 2.883
+   },
+   {
+    "text": "um",
+    "start": 2.883,
+    "end": 3.023
+   },
+   {
+    "text": "jogo",
+    "start": 3.023,
+    "end": 3.305
+   },
+   {
+    "text": "diferente,",
+    "start": 3.305,
+    "end": 4.008
+   },
+   {
+    "text": "é",
+    "start": 4.008,
+    "end": 4.078
+   },
+   {
+    "text": "Roach.",
+    "start": 4.078,
+    "end": 4.5
+   }
+  ],
+  "start": 0.4,
+  "end": 4.92
+ },
+ {
+  "id": 2,
+  "text": "Seu objetivo é chegar primeiro a trinta pontos de vitória.",
+  "file": "/home/user/Golden-Geek/video/root-como-jogar/assets/voice/fala-02.wav",
+  "dur": 3.68,
+  "words": [
+   {
+    "text": "Seu",
+    "start": 0,
+    "end": 0.216
+   },
+   {
+    "text": "objetivo",
+    "start": 0.216,
+    "end": 0.792
+   },
+   {
+    "text": "é",
+    "start": 0.792,
+    "end": 0.864
+   },
+   {
+    "text": "chegar",
+    "start": 0.864,
+    "end": 1.296
+   },
+   {
+    "text": "primeiro",
+    "start": 1.296,
+    "end": 1.872
+   },
+   {
+    "text": "a",
+    "start": 1.872,
+    "end": 1.944
+   },
+   {
+    "text": "30",
+    "start": 1.944,
+    "end": 2.088
+   },
+   {
+    "text": "pontos",
+    "start": 2.088,
+    "end": 2.52
+   },
+   {
+    "text": "de",
+    "start": 2.52,
+    "end": 2.664
+   },
+   {
+    "text": "vitória.",
+    "start": 2.664,
+    "end": 3.24
+   }
+  ],
+  "start": 5.22,
+  "end": 8.9
+ },
+ {
+  "id": 3,
+  "text": "Os Marqueses vivem de madeira: serrarias pagam construções, e construções dão pontos.",
+  "file": "/home/user/Golden-Geek/video/root-como-jogar/assets/voice/fala-03.wav",
+  "dur": 6.08,
+  "words": [
+   {
+    "text": "Os",
+    "start": 0,
+    "end": 0.145
+   },
+   {
+    "text": "marqueses",
+    "start": 0.145,
+    "end": 0.796
+   },
+   {
+    "text": "vivem",
+    "start": 0.796,
+    "end": 1.157
+   },
+   {
+    "text": "de",
+    "start": 1.157,
+    "end": 1.302
+   },
+   {
+    "text": "madeira,",
+    "start": 1.302,
+    "end": 1.881
+   },
+   {
+    "text": "serrarias",
+    "start": 1.881,
+    "end": 2.532
+   },
+   {
+    "text": "pagam",
+    "start": 2.532,
+    "end": 2.893
+   },
+   {
+    "text": "construções",
+    "start": 2.893,
+    "end": 3.689
+   },
+   {
+    "text": "e",
+    "start": 3.689,
+    "end": 3.761
+   },
+   {
+    "text": "construções",
+    "start": 3.761,
+    "end": 4.557
+   },
+   {
+    "text": "dão",
+    "start": 4.557,
+    "end": 4.774
+   },
+   {
+    "text": "pontos.",
+    "start": 4.774,
+    "end": 5.28
+   }
+  ],
+  "start": 9.2,
+  "end": 15.28
+ },
+ {
+  "id": 4,
+  "text": "As Rapinas pontuam com ninhos, mas precisam cumprir o Decreto inteiro, ou caem em tumulto.",
+  "file": "/home/user/Golden-Geek/video/root-como-jogar/assets/voice/fala-04.wav",
+  "dur": 5.96,
+  "words": [
+   {
+    "text": "As",
+    "start": 0,
+    "end": 0.149
+   },
+   {
+    "text": "rapinas",
+    "start": 0.149,
+    "end": 0.672
+   },
+   {
+    "text": "pontuam",
+    "start": 0.672,
+    "end": 1.195
+   },
+   {
+    "text": "com",
+    "start": 1.195,
+    "end": 1.419
+   },
+   {
+    "text": "ninhos,",
+    "start": 1.419,
+    "end": 1.941
+   },
+   {
+    "text": "mas",
+    "start": 1.941,
+    "end": 2.165
+   },
+   {
+    "text": "precisam",
+    "start": 2.165,
+    "end": 2.763
+   },
+   {
+    "text": "cumprir",
+    "start": 2.763,
+    "end": 3.285
+   },
+   {
+    "text": "o",
+    "start": 3.285,
+    "end": 3.36
+   },
+   {
+    "text": "decreto",
+    "start": 3.36,
+    "end": 3.883
+   },
+   {
+    "text": "inteiro",
+    "start": 3.883,
+    "end": 4.405
+   },
+   {
+    "text": "ou",
+    "start": 4.405,
+    "end": 4.555
+   },
+   {
+    "text": "cair",
+    "start": 4.555,
+    "end": 4.853
+   },
+   {
+    "text": "em",
+    "start": 4.853,
+    "end": 5.003
+   },
+   {
+    "text": "tumulto.",
+    "start": 5.003,
+    "end": 5.6
+   }
+  ],
+  "start": 15.58,
+  "end": 21.54
+ },
+ {
+  "id": 5,
+  "text": "A Aliança espalha simpatia até se revoltar.",
+  "file": "/home/user/Golden-Geek/video/root-como-jogar/assets/voice/fala-05.wav",
+  "dur": 3.6,
+  "words": [
+   {
+    "text": "A",
+    "start": 0,
+    "end": 0.085
+   },
+   {
+    "text": "aliança",
+    "start": 0.085,
+    "end": 0.679
+   },
+   {
+    "text": "espalha",
+    "start": 0.679,
+    "end": 1.273
+   },
+   {
+    "text": "simpatia",
+    "start": 1.273,
+    "end": 1.952
+   },
+   {
+    "text": "até",
+    "start": 1.952,
+    "end": 2.206
+   },
+   {
+    "text": "se",
+    "start": 2.206,
+    "end": 2.376
+   },
+   {
+    "text": "revoltar.",
+    "start": 2.376,
+    "end": 3.14
+   }
+  ],
+  "start": 21.84,
+  "end": 25.44
+ },
+ {
+  "id": 6,
+  "text": "E o Malandro, sozinho, explora ruínas e cumpre tarefas.",
+  "file": "/home/user/Golden-Geek/video/root-como-jogar/assets/voice/fala-06.wav",
+  "dur": 4.08,
+  "words": [
+   {
+    "text": "e",
+    "start": 0,
+    "end": 0.084
+   },
+   {
+    "text": "o",
+    "start": 0.084,
+    "end": 0.167
+   },
+   {
+    "text": "malandro",
+    "start": 0.167,
+    "end": 0.836
+   },
+   {
+    "text": "sozinho",
+    "start": 0.836,
+    "end": 1.42
+   },
+   {
+    "text": "explora",
+    "start": 1.42,
+    "end": 2.005
+   },
+   {
+    "text": "ruínas",
+    "start": 2.005,
+    "end": 2.507
+   },
+   {
+    "text": "e",
+    "start": 2.507,
+    "end": 2.59
+   },
+   {
+    "text": "cumpre",
+    "start": 2.59,
+    "end": 3.092
+   },
+   {
+    "text": "tarefas.",
+    "start": 3.092,
+    "end": 3.76
+   }
+  ],
+  "start": 25.74,
+  "end": 29.82
+ },
+ {
+  "id": 7,
+  "text": "Todo turno tem Amanhecer, Dia e Anoitecer.",
+  "file": "/home/user/Golden-Geek/video/root-como-jogar/assets/voice/fala-07.wav",
+  "dur": 3.72,
+  "words": [
+   {
+    "text": "Todo",
+    "start": 0,
+    "end": 0.313
+   },
+   {
+    "text": "turno",
+    "start": 0.313,
+    "end": 0.704
+   },
+   {
+    "text": "tem",
+    "start": 0.704,
+    "end": 0.938
+   },
+   {
+    "text": "amanhecer.",
+    "start": 0.938,
+    "end": 1.72
+   },
+   {
+    "text": "Dia",
+    "start": 1.72,
+    "end": 2.046
+   },
+   {
+    "text": "e",
+    "start": 2.046,
+    "end": 2.154
+   },
+   {
+    "text": "anoitecer.",
+    "start": 2.154,
+    "end": 3.24
+   }
+  ],
+  "start": 30.12,
+  "end": 33.84
+ },
+ {
+  "id": 8,
+  "text": "Para mover, você precisa governar a clareira de saída ou a de chegada.",
+  "file": "/home/user/Golden-Geek/video/root-como-jogar/assets/voice/fala-08.wav",
+  "dur": 5.64,
+  "words": [
+   {
+    "text": "Para",
+    "start": 0,
+    "end": 0.271
+   },
+   {
+    "text": "mover,",
+    "start": 0.271,
+    "end": 0.678
+   },
+   {
+    "text": "você",
+    "start": 0.678,
+    "end": 0.949
+   },
+   {
+    "text": "precisa",
+    "start": 0.949,
+    "end": 1.424
+   },
+   {
+    "text": "governar",
+    "start": 1.424,
+    "end": 1.966
+   },
+   {
+    "text": "a",
+    "start": 1.966,
+    "end": 2.034
+   },
+   {
+    "text": "clareira",
+    "start": 2.034,
+    "end": 2.576
+   },
+   {
+    "text": "de",
+    "start": 2.576,
+    "end": 2.712
+   },
+   {
+    "text": "saída",
+    "start": 2.712,
+    "end": 3.051
+   },
+   {
+    "text": "ou",
+    "start": 3.051,
+    "end": 3.186
+   },
+   {
+    "text": "a",
+    "start": 3.186,
+    "end": 3.254
+   },
+   {
+    "text": "deschegada.",
+    "start": 3.254,
+    "end": 4
+   }
+  ],
+  "start": 34.14,
+  "end": 39.78
+ },
+ {
+  "id": 9,
+  "text": "Parece simples, até a batalha: o atacante causa o dado maior, e o defensor, o menor.",
+  "file": "/home/user/Golden-Geek/video/root-como-jogar/assets/voice/fala-09.wav",
+  "dur": 5.28,
+  "words": [
+   {
+    "text": "Parece",
+    "start": 0,
+    "end": 0.439
+   },
+   {
+    "text": "simples,",
+    "start": 0.439,
+    "end": 1.024
+   },
+   {
+    "text": "até",
+    "start": 1.024,
+    "end": 1.243
+   },
+   {
+    "text": "batalha,",
+    "start": 1.243,
+    "end": 1.828
+   },
+   {
+    "text": "o",
+    "start": 1.828,
+    "end": 1.901
+   },
+   {
+    "text": "atacante",
+    "start": 1.901,
+    "end": 2.487
+   },
+   {
+    "text": "causa",
+    "start": 2.487,
+    "end": 2.852
+   },
+   {
+    "text": "o",
+    "start": 2.852,
+    "end": 2.925
+   },
+   {
+    "text": "dado",
+    "start": 2.925,
+    "end": 3.218
+   },
+   {
+    "text": "maior",
+    "start": 3.218,
+    "end": 3.584
+   },
+   {
+    "text": "e",
+    "start": 3.584,
+    "end": 3.657
+   },
+   {
+    "text": "o",
+    "start": 3.657,
+    "end": 3.73
+   },
+   {
+    "text": "defensor,",
+    "start": 3.73,
+    "end": 4.388
+   },
+   {
+    "text": "o",
+    "start": 4.388,
+    "end": 4.461
+   },
+   {
+    "text": "menor.",
+    "start": 4.461,
+    "end": 4.9
+   }
+  ],
+  "start": 40.08,
+  "end": 45.36
+ },
+ {
+  "id": 10,
+  "text": "O passo a passo completo, com exercícios, está no link da bio.",
+  "file": "/home/user/Golden-Geek/video/root-como-jogar/assets/voice/fala-10.wav",
+  "dur": 4.92,
+  "words": [
+   {
+    "text": "O",
+    "start": 0,
+    "end": 0.078
+   },
+   {
+    "text": "passo",
+    "start": 0.078,
+    "end": 0.468
+   },
+   {
+    "text": "a",
+    "start": 0.468,
+    "end": 0.546
+   },
+   {
+    "text": "passo",
+    "start": 0.546,
+    "end": 0.936
+   },
+   {
+    "text": "completo",
+    "start": 0.936,
+    "end": 1.559
+   },
+   {
+    "text": "com",
+    "start": 1.559,
+    "end": 1.793
+   },
+   {
+    "text": "exercícios",
+    "start": 1.793,
+    "end": 2.573
+   },
+   {
+    "text": "está",
+    "start": 2.573,
+    "end": 2.884
+   },
+   {
+    "text": "no",
+    "start": 2.884,
+    "end": 3.04
+   },
+   {
+    "text": "link",
+    "start": 3.04,
+    "end": 3.352
+   },
+   {
+    "text": "da",
+    "start": 3.352,
+    "end": 3.508
+   },
+   {
+    "text": "bio.",
+    "start": 3.508,
+    "end": 3.82
+   }
+  ],
+  "start": 45.66,
+  "end": 50.58
+ }
+]
