@@ -1,41 +1,5 @@
 [
  {
-  "id": "r-arcs",
-  "tema": "resenhas",
-  "hora": "2026-11-04T02:06:53Z",
-  "titulo": "⭐ Resenha: Arcs: Conflito e Colapso no Vértice",
-  "texto": "Um império galáctico decidido por quem tem coragem de jogar um zero.",
-  "url": "https://eliteboardgamers.com.br/arcs/",
-  "imagem": "https://eliteboardgamers.com.br/arcs/capa.jpg"
- },
- {
-  "id": "r-earth",
-  "tema": "resenhas",
-  "hora": "2026-11-04T02:06:53Z",
-  "titulo": "⭐ Resenha: Earth",
-  "texto": "A natureza levou milhões de anos. Aqui, 16 cartas e uma calculadora.",
-  "url": "https://eliteboardgamers.com.br/earth/",
-  "imagem": "https://eliteboardgamers.com.br/earth/capa.jpg"
- },
- {
-  "id": "r-century-spice-road",
-  "tema": "resenhas",
-  "hora": "2026-11-04T02:06:53Z",
-  "titulo": "⭐ Resenha: Century: Spice Road",
-  "texto": "Uma casa de câmbio com cheiro de canela. Tire a canela e o câmbio continua ótimo.",
-  "url": "https://eliteboardgamers.com.br/century-spice-road/",
-  "imagem": "https://eliteboardgamers.com.br/century-spice-road/capa.jpg"
- },
- {
-  "id": "r-radlands",
-  "tema": "resenhas",
-  "hora": "2026-11-04T02:06:53Z",
-  "titulo": "⭐ Resenha: Radlands",
-  "texto": "Moicano neon por fora, contador por dentro. E quem ganha é o contador.",
-  "url": "https://eliteboardgamers.com.br/radlands/",
-  "imagem": "https://eliteboardgamers.com.br/radlands/capa.jpg"
- },
- {
   "id": "r-codenames-pictures",
   "tema": "resenhas",
   "hora": "2026-11-04T11:18:34Z",
@@ -358,5 +322,41 @@
   "texto": "Marco Polo é daqueles jogos que a gente indica sem pensar duas vezes, e agora volta na versão feita para quem já tem e vai comprar de novo. A Board&Dice já fez isso com…",
   "url": "https://eliteboardgamers.com.br/noticias/marco-polo-deluxe-master-set-gamefound/",
   "imagem": "https://eliteboardgamers.com.br/noticias/capas/marco-polo-deluxe-master-set-gamefound.jpg"
+ },
+ {
+  "id": "r-forest-shuffle",
+  "tema": "resenhas",
+  "hora": "2026-11-09T11:06:05Z",
+  "titulo": "⭐ Resenha: Forest Shuffle",
+  "texto": "Tem trilha sonora de documentário de natureza e final de declaração do imposto de renda.",
+  "url": "https://eliteboardgamers.com.br/forest-shuffle/",
+  "imagem": "https://eliteboardgamers.com.br/forest-shuffle/capa.jpg"
+ },
+ {
+  "id": "r-kutna-hora",
+  "tema": "resenhas",
+  "hora": "2026-11-09T11:06:22Z",
+  "titulo": "⭐ Resenha: Kutná Hora",
+  "texto": "Cada prédio que você ergue barateia a mercadoria do vizinho. A Boêmia do século 14 nunca foi tão generosa sem querer.",
+  "url": "https://eliteboardgamers.com.br/kutna-hora/",
+  "imagem": "https://eliteboardgamers.com.br/kutna-hora/capa.jpg"
+ },
+ {
+  "id": "r-akropolis",
+  "tema": "resenhas",
+  "hora": "2026-11-09T11:06:40Z",
+  "titulo": "⭐ Resenha: Akropolis",
+  "texto": "Parece um quebra-cabeça para relaxar até alguém comprar a praça com estrela que você esperava havia três rodadas.",
+  "url": "https://eliteboardgamers.com.br/akropolis/",
+  "imagem": "https://eliteboardgamers.com.br/akropolis/capa.jpg"
+ },
+ {
+  "id": "r-mysterium-kids",
+  "tema": "resenhas",
+  "hora": "2026-11-09T11:06:58Z",
+  "titulo": "⭐ Resenha: Mysterium Kids",
+  "texto": "Tente fazer o barulho de um gato num pandeiro sem miar. Agora perca para uma criança de seis anos que conseguiu.",
+  "url": "https://eliteboardgamers.com.br/mysterium-kids/",
+  "imagem": "https://eliteboardgamers.com.br/mysterium-kids/capa.jpg"
  }
 ]

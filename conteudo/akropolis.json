@@ -1,0 +1,352 @@
+{
+ "slug": "akropolis",
+ "jogo": "Akropolis",
+ "cor": "#b5651d",
+ "kicker": "Resenha · Empilhamento de peças",
+ "og_titulo": "Akropolis vale a pena? Resenha Elite Boardgamers",
+ "titulo_busca": "Akropolis: resenha do Jogo do Ano no As d'Or 2023",
+ "descricao": "Resenha de Akropolis, Jogo do Ano no As d'Or 2023: como funciona o empilhamento de peças, edição da PaperGames, preço e para quem é.",
+ "titulo_html": "Parece passatempo de família, mas é especulação imobiliária com sabotagem: <span>Akropolis</span>",
+ "lede": "Akropolis é um jogo de 25 minutos em que cada pessoa monta uma cidade da Grécia Antiga com peças de três hexágonos, de dois a quatro jogadores ou em modo solo. Venceu o As d'Or 2023 como Jogo do Ano, na França, e saiu no Brasil pela PaperGames. A Gigamic fala em cidade harmoniosa. A mesa mostra outra coisa: o vizinho não constrói contra você, ele só compra antes a praça que você estava esperando. A pista do veredito: vale cada minuto, se ninguém fingir que é jogo calmo.",
+ "tags": [
+  "1–4 jogadores",
+  "25 min",
+  "8+",
+  "Colocação de peças",
+  "Empilhamento"
+ ],
+ "alt": "Mão colocando uma peça hexagonal sobre uma cidade de Akropolis montada na mesa, com distritos coloridos empilhados e um cubo de pedra ao lado",
+ "premiacoes": [
+  {
+   "premio": "As d'Or",
+   "ano": 2023,
+   "categoria": "Jeu de l'année",
+   "colocacao": 1,
+   "resultado": "vencedor",
+   "fonte": "https://fr.wikipedia.org/wiki/As_d%27Or",
+   "rotulo": "Vencedor"
+  }
+ ],
+ "ficha": [
+  [
+   "Ano",
+   "2022 (Gigamic); edição brasileira da PaperGames, com data de lançamento não confirmada nas fontes consultadas"
+  ],
+  [
+   "Designer",
+   "Jules Messaud"
+  ],
+  [
+   "Arte",
+   "Pauline Détraz"
+  ],
+  [
+   "Editora original",
+   "Gigamic"
+  ],
+  [
+   "Editora no Brasil",
+   "PaperGames"
+  ],
+  [
+   "Jogadores",
+   "2 a 4 na caixa da Gigamic; 1 a 4 com o modo solo oficial (PaperGames)"
+  ],
+  [
+   "Duração anunciada",
+   "25 minutos (Gigamic e PaperGames); 20 a 30 minutos (ComparaJogos)"
+  ],
+  [
+   "Idade",
+   "8+ (Gigamic)"
+  ],
+  [
+   "Nota BGG",
+   "média em torno de 7,5, com cerca de 11 mil avaliações (conforme sites que replicam o BGG; a posição no ranking varia entre eles)"
+  ],
+  [
+   "Peso BGG",
+   "cerca de 1,8 / 5"
+  ],
+  [
+   "Nota ComparaJogos",
+   "7,5 (234 avaliações); complexidade 1,8 / 5"
+  ],
+  [
+   "Nota Ludopedia",
+   "não confirmado nas fontes consultadas"
+  ],
+  [
+   "Idioma",
+   "sem dependência de idioma (ComparaJogos)"
+  ],
+  [
+   "Componentes",
+   "61 peças de cidade, 4 peças iniciais, 40 cubos de pedra em madeira, 1 marcador de arquiteto-chefe, 4 fichas de ajuda, 1 bloco de pontuação e manual"
+  ],
+  [
+   "Modo solo oficial",
+   "Sim, contra o Arquiteto Ilustre, em três níveis de dificuldade"
+  ],
+  [
+   "Versão digital",
+   "Board Game Arena, desde 26/04/2023"
+  ],
+  [
+   "Prêmios",
+   "As d'Or 2023, Jogo do Ano; a Gigamic lista ainda Mensa Select 2023, Japan Boardgame Prize 2023 e prêmios da UK Games Expo 2022"
+  ]
+ ],
+ "nota_ficha": "Nota e peso do BGG vêm de sites que replicam o BoardGameGeek (BoardGameMatcher e Board Game Oracle), que bloqueia acesso automatizado; a Ludopedia também não pôde ser consultada. Preço, nota e complexidade do ComparaJogos consultados em 09/11/2026.",
+ "como_funciona": [
+  "Cada jogador é um arquiteto que monta a própria cidade grega com peças de cidade, cada uma formada por três hexágonos. Vence quem tiver mais pontos de prestígio no fim. Todos começam com uma peça inicial, que já traz uma praça de Casas, e com pedras: 1 para o primeiro jogador, 2 para o segundo, 3 para o terceiro e 4 para o quarto.",
+  "No centro fica o canteiro de obras, uma fila de peças viradas para cima, sempre com duas peças a mais do que o número de jogadores. A primeira peça da fila é de graça; cada posição seguinte custa uma pedra a mais. Quem está sem pedras é obrigado a pegar a primeira. Quando sobra uma peça, ela vai para o começo da fila, uma nova pilha completa o canteiro e o marcador de arquiteto-chefe passa para a esquerda.",
+  "A peça pegada vai para a cidade. No térreo, ela precisa encostar por uma aresta em outra peça. Também dá para empilhar: a peça de cima tem de apoiar os três hexágonos, sem vão por baixo, e cobrir pelo menos duas peças diferentes. Hexágono coberto deixa de valer. Cobrir uma pedreira, porém, dá uma pedra ao dono.",
+  "Os hexágonos são de três tipos. Pedreiras rendem pedras. Distritos pontuam conforme a altura: valem 1 no térreo, 2 no segundo andar, e assim por diante. Praças têm estrelas e multiplicam os distritos da mesma cor. Cada distrito tem a sua condição: Casas só contam no maior grupo, Mercados não podem encostar em outro Mercado, Quartéis ficam na borda, Templos precisam estar cercados e Jardins valem em qualquer lugar.",
+  "A partida acaba quando as pilhas terminam e resta uma peça no canteiro. Para cada tipo, some o valor dos distritos válidos e multiplique pelo total de estrelas das praças daquele tipo; sem praça, o tipo vale zero. Cada pedra restante vale 1 ponto, e ela também desempata. O manual traz variantes que dobram os pontos de um tipo de distrito, e o modo solo põe você contra um adversário automático."
+ ],
+ "passos": [
+  [
+   "COMPRE NO CANTEIRO",
+   "Escolha uma peça da fila central. A primeira é de graça; cada posição seguinte custa uma pedra a mais. Sem pedras, pegue a primeira."
+  ],
+  [
+   "ENCAIXE OU EMPILHE",
+   "No térreo, a peça encosta por uma aresta na sua cidade. Empilhada, apoia os três hexágonos e cobre pelo menos duas peças diferentes."
+  ],
+  [
+   "COBRA AS PEDREIRAS",
+   "Pedreira coberta por outra peça rende uma pedra. Hexágono coberto deixa de valer, então decida bem o que enterrar."
+  ],
+  [
+   "CUMPRA A CONDIÇÃO",
+   "Casas contam no maior grupo, Mercados não se encostam, Quartéis ficam na borda, Templos cercados e Jardins valem em qualquer lugar."
+  ],
+  [
+   "MULTIPLIQUE NA PRAÇA",
+   "No fim, cada distrito vale a altura em que está. Some por tipo e multiplique pelas estrelas das praças daquele tipo; sem praça, vale zero."
+  ]
+ ],
+ "como_resumo": "Compre peças de três hexágonos, empilhe a cidade e multiplique os distritos pelas estrelas das praças.",
+ "perfil": [
+  [
+   "Quebra-cabeça espacial",
+   5
+  ],
+  [
+   "Partida curta",
+   5
+  ],
+  [
+   "Facilidade de ensinar",
+   4
+  ],
+  [
+   "Interação entre jogadores",
+   3
+  ],
+  [
+   "Componentes e mesa",
+   4
+  ],
+  [
+   "Variedade entre partidas",
+   3
+  ]
+ ],
+ "experiencia": [
+  "Os primeiros dez minutos são de terapia ocupacional. Você encaixa uma peça com duas Casas ao lado da praça de Casas da peça inicial, cobre uma pedreira, ganha uma pedra e sente que a Grécia Antiga é um lugar organizado. Tom Franklin, da Meeple Mountain, saiu das partidas mais renovado do que cansado. A gente entende o sentimento. Dura até a terceira rodada.",
+  "Porque aí você nota que a cidade inteira depende de uma praça de Templos com estrela, e que ela está na quarta posição da fila. Custa três pedras. Você tem duas. O vizinho, que até então só montava o bairro dele em silêncio, tem quatro, olha para a fila e leva a praça. Ele não precisava dela. Ele só viu que você precisava. Keith Law, no A.V. Club, escreveu que o jogo fica melhor com um pouco de maldade, e a mesa descobre isso sozinha.",
+  "O resto é decidir o que enterrar. Pôr uma peça no segundo andar dobra o valor dos distritos dela, mas cobre aquele Mercado que já estava pontuando. Crescer para cima é a única forma de enriquecer, e cada andar novo é construído em cima de algo que você mesmo fez."
+ ],
+ "citacao": {
+  "texto": "Provavelmente fica melhor jogado com um pouco de maldade.",
+  "fonte": "Keith Law, The A.V. Club (tradução livre)"
+ },
+ "funciona": [
+  [
+   "A terceira dimensão",
+   "Empilhar é o que separa Akropolis de outros jogos de encaixar peças. Um distrito no terceiro andar vale 3, então cada peça pede a conta entre subir e enterrar o que já pontua. Oliver Kinne, do Tabletop Games Blog, diz que é o elemento 3D que torna o jogo tão diferente, e que o desafio visual fica no nível certo."
+  ],
+  [
+   "Pedras como moeda",
+   "A fila cobra uma pedra por posição, e pedra se ganha cobrindo as próprias pedreiras. Assim, a mesma peça é compra e investimento: enterrar uma pedreira hoje paga a praça de amanhã. Keith Law, do A.V. Club, observa que a fase de compra exige aprendizado no começo e depois deixa de pesar."
+  ],
+  [
+   "Regras de uma ficha",
+   "Cinco tipos de distrito, cada um com uma condição de uma linha, e uma conta só no fim: altura vezes estrelas. Keith Law, do A.V. Club, fala em regras muito simples e diz que, sem a parte da maldade, crianças de sete ou oito anos jogam. A ficha de ajuda que vem na caixa resolve quase toda dúvida."
+  ],
+  [
+   "Meia hora de verdade",
+   "A caixa diz 25 minutos e as críticas não desmentem: Keith Law, do A.V. Club, fala em turnos curtos e partidas de cerca de meia hora. Com o canteiro sempre com duas peças a mais que o número de jogadores, a escolha raramente trava a mesa, e dá para emendar a revanche."
+  ],
+  [
+   "Produção caprichada",
+   "As peças são grossas e boas de manusear, e a caixa traz organizador de papelão e ficha de referência, segundo Tom Franklin, da Meeple Mountain. Oliver Kinne, do Tabletop Games Blog, gosta de o jogo quase não usar plástico: as pedras são cubos de madeira. A PaperGames diz que imprime e monta a edição brasileira na mesma fábrica das versões estrangeiras."
+  ],
+  [
+   "Escala de dois a quatro",
+   "Tom Franklin, da Meeple Mountain, diz que o jogo escala bem de dois a quatro e funciona com todas as peças. O número de pilhas muda com a mesa, e há uma variante longa para dois ou três que usa todas as peças. Oliver Kinne, do Tabletop Games Blog, jogou muito a dois e diz que funciona muito bem assim."
+  ]
+ ],
+ "atencao": [
+  [
+   "Moderada",
+   "Paz de fachada",
+   "Tom Franklin, da Meeple Mountain, avisa que as praças dão um gume afiado à interação: dá para travar a pontuação do outro comprando a praça que ele precisa. Keith Law, do A.V. Club, aponta que as praças com estrela são escassas. Ou seja, é um jogo tranquilo de família. Desde que a família não saiba contar estrelas."
+  ],
+  [
+   "Moderada",
+   "Cores que confundem",
+   "Para Tom Franklin, da Meeple Mountain, o visual dos distritos não é distinto o bastante para poupar jogadores daltônicos, e ele pede correção numa segunda edição. Num jogo em que errar a cor de um distrito zera a multiplicação daquele tipo, o detalhe não é estético. É placar."
+  ],
+  [
+   "Moderada",
+   "O sorteio decide muito",
+   "Keith Law, do A.V. Club, diz que a sorte das peças que saem tem impacto considerável em quem vence. Você planeja o bairro de Templos com cuidado de engenheiro, e a pilha seguinte vem cheia de Quartéis. É o canteiro de obras mais realista da história: o material que chega nunca é o que foi pedido."
+  ],
+  [
+   "Leve",
+   "Paralisia de terceiro andar",
+   "Oliver Kinne, do Tabletop Games Blog, avisa que o quebra-cabeça pode causar paralisia por análise e que o empilhamento confunde no começo, e reclama que nem sempre há pedras para a peça desejada. Com quatro pessoas, aquela que gira a peça na mão por dois minutos existe em todo grupo."
+  ],
+  [
+   "Leve",
+   "Grécia de enfeite",
+   "Keith Law, do A.V. Club, diz que o jogo recicla um tema muito cansado, a Grécia Antiga, e que na prática ele pouco importa, porque o jogo é abstrato. Oliver Kinne preferia moedas a pedras para comprar peças. Nenhum dos dois sente falta de Zeus."
+  ],
+  [
+   "Leve",
+   "Caixa com ar",
+   "Oliver Kinne, do Tabletop Games Blog, nota que a caixa tem bastante espaço vazio, embora o organizador de papelão compense. Na edição nacional, são 26 x 26 x 6 cm para 65 peças e 40 cubos. Cabe na estante. Só ocupa mais do que a cidade que vem dentro."
+  ]
+ ],
+ "jogadores": [
+  [
+   "Sozinho",
+   "Modo solo oficial contra o Arquiteto Ilustre, em três níveis; nenhuma das críticas consultadas avaliou esse modo.",
+   2
+  ],
+  [
+   "2 jogadores",
+   "O Tabletop Games Blog diz que funciona muito bem a dois; há variante longa que usa todas as peças.",
+   3
+  ],
+  [
+   "3 a 4 jogadores",
+   "A Meeple Mountain diz que escala bem; com mais gente, sobe a disputa pelas praças com estrela e a espera por quem empaca.",
+   3
+  ]
+ ],
+ "primeira_partida": "A explicação cabe em uns dez minutos com a ficha de ajuda na mão. O que mais confunde é o empilhamento: a peça de cima precisa apoiar os três hexágonos e cobrir pelo menos duas peças diferentes, nunca uma só. O segundo tropeço é esquecer que distrito sem praça da mesma cor vale zero. Dica prática: nas primeiras rodadas, pegue praças com estrela mesmo pagando pedras, e cubra suas pedreiras cedo para não ficar preso à primeira peça da fila.",
+ "edicao_nacional": "A edição brasileira é da PaperGames, com os mesmos componentes da Gigamic: 61 peças de cidade, 4 peças iniciais e 40 cubos de madeira. O ComparaJogos classifica o jogo como sem dependência de idioma, já que o texto fica no manual e nas fichas de ajuda. Em 09/11/2026, o menor preço listado no ComparaJogos era R$ 219,00 no Pix, com ofertas até cerca de R$ 283 na Amazon.",
+ "preco_ref": {
+  "faixa": "a partir de R$ 219,00",
+  "data": "09/11/2026",
+  "obs": "menor preço no Pix em lojas brasileiras, segundo o ComparaJogos"
+ },
+ "versoes": "A expansão Akropolis: Athena acrescenta 18 cartas de Construção, 30 minipeças e estátuas de Atena para quem monta as formas pedidas; o ComparaJogos lista Athena e Pantheon como indisponíveis em 09/11/2026, sem preço. Há versão digital no Board Game Arena desde 26/04/2023. O jogo base traz variantes de distrito, que dobram os pontos de um tipo, e um modo solo com três adversários automáticos.",
+ "comparacoes": [
+  [
+   "Cascadia",
+   "cascadia",
+   "Também é montar o próprio mapa com peças de um mercado comum, em meia hora. Cascadia é plano e mais pacífico; Akropolis acrescenta os andares e a briga por praça."
+  ],
+  [
+   "Harmonies",
+   "harmonies",
+   "O outro jogo em que empilhar é a ideia central, aqui com fichas de terreno e animais. Para quem gostou de subir prédios e quer trocar a Grécia pela paisagem."
+  ],
+  [
+   "Azul",
+   "azul",
+   "Compra de peças de um mercado comum e pontuação por padrão, com mais interação direta. Bom par para quem já jogou Azul e sente falta de tirar do outro a peça que ele precisava."
+  ]
+ ],
+ "para_quem": [
+  "Gosta de quebra-cabeça espacial que acaba em meia hora",
+  "Joga muito a dois e quer algo para emendar revanche",
+  "Já jogou Cascadia e quer uma dimensão a mais",
+  "Curte a maldade educada de comprar a peça do outro",
+  "Precisa de um jogo que ensine em dez minutos"
+ ],
+ "nao_e_para": [
+  "Tem dificuldade para distinguir cores",
+  "Quer tema forte e história na mesa",
+  "Fica irritado quando o sorteio de peças decide a partida",
+  "Procura um jogo de família sem nenhum atrito"
+ ],
+ "selo": "Recomendado",
+ "melhor_para": "entrada",
+ "veredito": "Akropolis é vendido como passatempo harmonioso de família e é, na prática, especulação imobiliária com sabotagem. A gente acha isso um elogio. O empilhamento é a melhor ideia da caixa: cada andar vale mais e cada andar enterra algo que você construiu. Em 25 minutos, com regras de uma ficha, o jogo entrega um quebra-cabeça que a Meeple Mountain chama de relaxante e o A.V. Club prefere com maldade, e os dois estão certos, só que em rodadas diferentes. Pesam as cores que confundem daltônicos e um sorteio de peças que manda bastante. Por cerca de R$ 220, é um dos jogos de entrada mais fáceis de recomendar. Na Grécia Antiga, como em qualquer cidade, quem sobe mais é quem cobre o que veio antes.",
+ "tagline": "Parece um quebra-cabeça para relaxar até alguém comprar a praça com estrela que você esperava havia três rodadas.",
+ "consulta": "09/11/2026",
+ "fontes": [
+  [
+   "RulesPal – Akropolis: manual",
+   "https://rulespal.com/akropolis/rulebook",
+   "regras, preparação, pontuação, variantes"
+  ],
+  [
+   "Gigamic – Modo solo de Akropolis (PDF)",
+   "https://export.gigamic.com/wp-content/uploads/2022/08/AKROPOLIS-SOLO-MODE-EN.pdf",
+   "modo solo e níveis de dificuldade"
+  ],
+  [
+   "Gigamic – Akropolis",
+   "https://www.gigamic.com/jeux-de-strategie/806-akropolis-3421271360810.html",
+   "ficha, componentes, prêmios"
+  ],
+  [
+   "PaperGames – Akropolis",
+   "https://papergames.com.br/akropolis/",
+   "edição nacional, componentes, dimensões da caixa"
+  ],
+  [
+   "Wikipédia (francês) – As d'Or",
+   "https://fr.wikipedia.org/wiki/As_d%27Or",
+   "Jogo do Ano 2023"
+  ],
+  [
+   "Meeple Mountain – Akropolis",
+   "https://www.meeplemountain.com/reviews/akropolis/",
+   "crítica, componentes, daltonismo, praças"
+  ],
+  [
+   "Tabletop Games Blog – Akropolis",
+   "https://tabletopgamesblog.com/2023/09/09/akropolis-saturday-review/",
+   "crítica, empilhamento, dois jogadores, caixa"
+  ],
+  [
+   "The A.V. Club – Akropolis",
+   "https://www.avclub.com/akropolis-board-game-review",
+   "crítica, sorte, tema, duração"
+  ],
+  [
+   "ComparaJogos – Akropolis",
+   "https://www.comparajogos.com.br/item/akropolis",
+   "preço no Brasil, nota, idioma, expansões"
+  ],
+  [
+   "Board Game Arena – lançamento de Akropolis",
+   "https://en.boardgamearena.com/news?id=678",
+   "versão digital"
+  ],
+  [
+   "BoardGameMatcher – Akropolis",
+   "https://boardgamematcher.com/game/akropolis",
+   "nota e nº de avaliações do BGG replicados"
+  ],
+  [
+   "Board Game Oracle – Akropolis",
+   "https://www.boardgameoracle.com/boardgame/price/18XRhCd2-R/akropolis",
+   "peso do BGG replicado"
+  ],
+  [
+   "Gigamic – Akropolis: Athena",
+   "https://en.gigamic.com/family-games/1212-akropolis-athena.html",
+   "expansão Athena"
+  ]
+ ],
+ "legenda": "Parece jogo de família tranquilo. É especulação imobiliária com sabotagem. 🏛️\n\nAkropolis venceu o As d'Or 2023 como Jogo do Ano, na França.\nCompre peças de três hexágonos, empilhe a cidade e multiplique os distritos pelas estrelas das praças. Cada andar vale mais, e cada andar enterra algo que você construiu.\nEdição da PaperGames, sem dependência de idioma; em 09/11/2026, a partir de R$ 219,00 no Pix.\nVeredito: RECOMENDADO. Meia hora de quebra-cabeça e uma praça roubada.\n\nVocê compra a peça que precisa ou a que o vizinho precisa? 👇\nResenha completa no link da bio.\n\n#Akropolis #JogosDeTabuleiro #BoardGames #PaperGames #Gigamic #AsDOr #TileLaying #JogoDeEntrada #EliteBoardgamers #Boardgamer"
+}

@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-11-08",
+ "atualizado_em": "2026-11-09",
  "regras": {
   "premios": [
    "Golden Geek",
@@ -373,6 +373,26 @@
    "jogo": "Just One",
    "url": "https://eliteboardgamers.com.br/just-one/",
    "data": "2026-11-08"
+  },
+  {
+   "jogo": "Forest Shuffle",
+   "url": "https://eliteboardgamers.com.br/forest-shuffle/",
+   "data": "2026-11-09"
+  },
+  {
+   "jogo": "Kutná Hora",
+   "url": "https://eliteboardgamers.com.br/kutna-hora/",
+   "data": "2026-11-09"
+  },
+  {
+   "jogo": "Akropolis",
+   "url": "https://eliteboardgamers.com.br/akropolis/",
+   "data": "2026-11-09"
+  },
+  {
+   "jogo": "Mysterium Kids",
+   "url": "https://eliteboardgamers.com.br/mysterium-kids/",
+   "data": "2026-11-09"
   }
  ],
  "jogos": [
@@ -3728,7 +3748,7 @@
      "fonte": "https://fr.wikipedia.org/wiki/As_d%27Or"
     }
    ],
-   "status": "na_fila",
+   "status": "publicado",
    "premios_distintos": 1,
    "prioridade": 107,
    "carro_chefe": false,
@@ -3879,7 +3899,7 @@
      "fonte": "https://de.wikipedia.org/wiki/Deutscher_Spiele_Preis"
     }
    ],
-   "status": "na_fila",
+   "status": "publicado",
    "premios_distintos": 1,
    "prioridade": 111,
    "carro_chefe": false,
@@ -4032,7 +4052,7 @@
      "fonte": "https://fr.wikipedia.org/wiki/As_d%27Or"
     }
    ],
-   "status": "na_fila",
+   "status": "publicado",
    "premios_distintos": 1,
    "prioridade": 116,
    "carro_chefe": false,
@@ -4097,7 +4117,7 @@
      "fonte": "https://en.wikipedia.org/wiki/Spiel_des_Jahres"
     }
    ],
-   "status": "na_fila",
+   "status": "publicado",
    "premios_distintos": 1,
    "prioridade": 118,
    "carro_chefe": false,
