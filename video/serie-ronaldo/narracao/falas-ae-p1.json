@@ -281,87 +281,87 @@
    {
     "text": "Calma",
     "start": 0,
-    "end": 0.479
+    "end": 0.482
    },
    {
     "text": "Ronaldo,",
-    "start": 0.479,
-    "end": 1.245
+    "start": 0.482,
+    "end": 1.252
    },
    {
     "text": "no",
-    "start": 1.245,
-    "end": 1.437
+    "start": 1.252,
+    "end": 1.445
    },
    {
     "text": "seu",
-    "start": 1.437,
-    "end": 1.724
+    "start": 1.445,
+    "end": 1.734
    },
    {
     "text": "turno",
-    "start": 1.724,
-    "end": 2.203
+    "start": 1.734,
+    "end": 2.216
    },
    {
     "text": "você",
-    "start": 2.203,
-    "end": 2.586
+    "start": 2.216,
+    "end": 2.601
    },
    {
     "text": "faz",
-    "start": 2.586,
-    "end": 2.873
+    "start": 2.601,
+    "end": 2.89
    },
    {
     "text": "só",
-    "start": 2.873,
-    "end": 3.065
+    "start": 2.89,
+    "end": 3.083
    },
    {
     "text": "uma",
-    "start": 3.065,
-    "end": 3.352
+    "start": 3.083,
+    "end": 3.372
    },
    {
     "text": "coisa,",
-    "start": 3.352,
-    "end": 3.927
+    "start": 3.372,
+    "end": 3.95
    },
    {
     "text": "lança",
-    "start": 3.927,
-    "end": 4.406
+    "start": 3.95,
+    "end": 4.432
    },
    {
     "text": "uma",
-    "start": 4.406,
-    "end": 4.693
+    "start": 4.432,
+    "end": 4.721
    },
    {
     "text": "nave",
-    "start": 4.693,
-    "end": 5.076
+    "start": 4.721,
+    "end": 5.106
    },
    {
     "text": "ou",
-    "start": 5.076,
-    "end": 5.268
+    "start": 5.106,
+    "end": 5.299
    },
    {
     "text": "volta",
-    "start": 5.268,
-    "end": 5.746
+    "start": 5.299,
+    "end": 5.78
    },
    {
     "text": "pra",
-    "start": 5.746,
-    "end": 6.034
+    "start": 5.78,
+    "end": 6.069
    },
    {
     "text": "estação.",
-    "start": 6.034,
-    "end": 6.8
+    "start": 6.069,
+    "end": 6.84
    }
   ],
   "modelo": "eleven_multilingual_v2"
@@ -372,67 +372,77 @@
   "texto": "Então eu vou lançar pra aquela nuvem roxa, com a força da minha vontade!",
   "fala": "[excited] Então eu vou lançar pra aquela nuvem roxa, com a força da minha vontade!",
   "arquivo": "voz/ae-p1/fala-06.wav",
-  "dur": 3.678,
+  "dur": 4.158,
   "palavras_ouvidas": [
    {
-    "text": "Então",
+    "text": "Então,",
     "start": 0,
-    "end": 0.367
+    "end": 0.415
    },
    {
     "text": "eu",
-    "start": 0.367,
-    "end": 0.514
+    "start": 0.415,
+    "end": 0.553
    },
    {
     "text": "vou",
-    "start": 0.514,
-    "end": 0.734
+    "start": 0.553,
+    "end": 0.761
    },
    {
     "text": "lançar",
-    "start": 0.734,
-    "end": 1.174
+    "start": 0.761,
+    "end": 1.176
    },
    {
     "text": "para",
-    "start": 1.174,
-    "end": 1.468
+    "start": 1.176,
+    "end": 1.453
    },
    {
     "text": "aquela",
-    "start": 1.468,
-    "end": 1.908
+    "start": 1.453,
+    "end": 1.868
    },
    {
     "text": "nuvem",
-    "start": 1.908,
-    "end": 2.275
+    "start": 1.868,
+    "end": 2.213
    },
    {
-    "text": "roxa,",
-    "start": 2.275,
-    "end": 2.642
+    "text": "roxa",
+    "start": 2.213,
+    "end": 2.49
    },
    {
-    "text": "em",
-    "start": 2.642,
-    "end": 2.789
+    "text": "com",
+    "start": 2.49,
+    "end": 2.698
    },
    {
-    "text": "nome",
-    "start": 2.789,
-    "end": 3.083
+    "text": "a",
+    "start": 2.698,
+    "end": 2.767
    },
    {
-    "text": "de",
-    "start": 3.083,
-    "end": 3.23
+    "text": "força",
+    "start": 2.767,
+    "end": 3.113
    },
    {
-    "text": "Jesus.",
-    "start": 3.23,
-    "end": 3.67
+    "text": "da",
+    "start": 3.113,
+    "end": 3.251
+   },
+   {
+    "text": "minha",
+    "start": 3.251,
+    "end": 3.597
+   },
+   {
+    "text": "vontade.",
+    "start": 3.597,
+    "end": 4.15
    }
   ]
  },
