@@ -7,7 +7,7 @@ import { area, cor, fonte, tipo } from "../tema";
 import { DURACAO, FALAS } from "./dados";
 import { I, W } from "./marcas";
 
-// "Andromeda's Edge em um minuto": o Wan ensina, o Ronaldo do Reteté atrapalha.
+// "Como jogar Andromeda's Edge": o Wan ensina, o Ronaldo do Reteté atrapalha.
 // Regras: tutorial do site (como-jogar/andromedas-edge), que segue o manual da Galápagos.
 export const FIM_AE = DURACAO + 1.5;
 
@@ -187,7 +187,7 @@ export const Ae01: React.FC = () => {
       {/* ====== título ====== */}
       {s < I(3) ? (
         <div style={{ position: "absolute", left: area.lateral, right: area.lateral, top: 200, opacity: 1 - prog(s, I(3) - 0.35, 0.25, SAI) }}>
-          <div style={{ ...tipo.rotulo, color: CIANO }}>Como jogar · em 1 minuto</div>
+          <div style={{ ...tipo.rotulo, color: CIANO }}>Como jogar · o essencial</div>
           <div style={{ ...tipo.titulo, fontSize: 108, color: cor.texto, marginTop: 14 }}>
             Andromeda's <span style={{ color: CIANO }}>Edge</span>
           </div>
@@ -358,7 +358,7 @@ export const Ae01: React.FC = () => {
                           <path d="M630,640 L700,640" stroke={cor.texto} strokeWidth={6} markerEnd="" />
                           <path d="M690,622 L716,640 L690,658 Z" fill={cor.texto} />
                           <Dado x={790} y={640} v={2} c={VERDE} esc={0.8 * (0.8 + 0.2 * mola(s, W(11, "Cada") + 0.4))} />
-                          <text x={675} y={735} textAnchor="middle" fontFamily={fonte} fontWeight={700} fontSize={26} fill={cor.textoSuave}>o dado nunca mostra menos que a mira</text>
+                          <text x={675} y={735} textAnchor="middle" fontFamily={fonte} fontWeight={700} fontSize={28} fill={cor.textoSuave}>o dado nunca mostra menos que a mira</text>
                         </g>
                       ) : null}
                     </>
@@ -455,7 +455,7 @@ export const Ae01: React.FC = () => {
             })}
             <g transform="translate(860,270)">
               <rect x={-14} y={-70} width={28} height={140} rx={8} fill={cor.ouro} />
-              <text x={0} y={-90} textAnchor="middle" fontFamily={fonte} fontWeight={900} fontSize={30} fill={cor.ouro}>terminus</text>
+              <text x={0} y={100} textAnchor="middle" fontFamily={fonte} fontWeight={900} fontSize={30} fill={cor.ouro}>terminus</text>
             </g>
             <g opacity={prog(s, W(19, "terminus,") + 0.3, 0.4)}>
               <text x={490} y={420} textAnchor="middle" fontFamily={fonte} fontWeight={900} fontSize={54} fill={cor.texto}>todos jogam +1 turno</text>
@@ -481,7 +481,7 @@ export const Ae01: React.FC = () => {
               <div style={{ fontFamily: fonte, fontWeight: 700, fontSize: 38, color: cor.texto, marginTop: 2 }}>/como-jogar/andromedas-edge</div>
             </div>
             <div style={{ display: "flex", justifyContent: "center", marginTop: 46 }}>
-              <div style={{ fontFamily: fonte, fontWeight: 900, fontSize: 48, color: cor.fundo, background: cor.marca, padding: "28px 56px", borderRadius: 999, transform: `scale(${0.8 + 0.2 * prog(s, W(20, "Segue") - 0.1, 0.5)})`, opacity: prog(s, W(20, "Segue") - 0.1, 0.3) }}>Segue pra mais 1 minuto de regras</div>
+              <div style={{ fontFamily: fonte, fontWeight: 900, fontSize: 48, color: cor.fundo, background: cor.marca, padding: "28px 56px", borderRadius: 999, transform: `scale(${0.8 + 0.2 * prog(s, W(20, "Segue") - 0.1, 0.5)})`, opacity: prog(s, W(20, "Segue") - 0.1, 0.3) }}>Segue pra mais regras</div>
             </div>
             <Img src={staticFile("img/logo.webp")} style={{ width: 300, marginTop: 50, opacity: prog(s, I(20) + 0.4, 0.5) }} />
             <div style={{ ...tipo.rotulo, fontSize: 24, color: cor.textoSuave, marginTop: 40, opacity: prog(s, I(20) + 0.6, 0.5) }}>Regras do manual Galápagos · personagens de ficção</div>

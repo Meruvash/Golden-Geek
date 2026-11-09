@@ -2,102 +2,1327 @@
  {
   "id": 1,
   "quem": "narrador",
-  "texto": "Andromeda's Edge em um minuto. O Wan explica… e o Ronaldo do Reteté atrapalha.",
-  "fala": "Ândromedas Édji em um minuto. O Wan explica… e o Ronaldo do Reteté atrapalha."
+  "texto": "Como jogar Andromeda's Edge. O Wan explica… e o Ronaldo atrapalha.",
+  "fala": "Como jogar Ândromedas Édji. O Wan explica… e o Ronaldo atrapalha.",
+  "arquivo": "voz/ae01/fala-01.wav",
+  "dur": 6.427,
+  "palavras_ouvidas": [
+   {
+    "text": "como",
+    "start": 0,
+    "end": 0.465
+   },
+   {
+    "text": "jogar",
+    "start": 0.465,
+    "end": 1.045
+   },
+   {
+    "text": "andromedas,",
+    "start": 1.045,
+    "end": 2.323
+   },
+   {
+    "text": "Eddie.",
+    "start": 2.323,
+    "end": 3.02
+   },
+   {
+    "text": "Juan",
+    "start": 3.02,
+    "end": 3.396
+   },
+   {
+    "text": "explica",
+    "start": 3.396,
+    "end": 4.054
+   },
+   {
+    "text": "e",
+    "start": 4.054,
+    "end": 4.148
+   },
+   {
+    "text": "o",
+    "start": 4.148,
+    "end": 4.242
+   },
+   {
+    "text": "Ronaldo",
+    "start": 4.242,
+    "end": 4.9
+   },
+   {
+    "text": "atrapalha.",
+    "start": 4.9,
+    "end": 5.84
+   }
+  ]
  },
  {
   "id": 2,
   "quem": "ronaldo",
-  "texto": "Glória! Eu vim pro espaço cheio de unção!"
+  "texto": "Glória! Eu vim pro espaço cheio de unção!",
+  "arquivo": "voz/ae01/fala-02.wav",
+  "dur": 3.639,
+  "palavras_ouvidas": [
+   {
+    "text": "Glória!",
+    "start": 0,
+    "end": 0.618
+   },
+   {
+    "text": "Eu",
+    "start": 0.618,
+    "end": 0.794
+   },
+   {
+    "text": "vim",
+    "start": 0.794,
+    "end": 1.059
+   },
+   {
+    "text": "por",
+    "start": 1.059,
+    "end": 1.324
+   },
+   {
+    "text": "espaço",
+    "start": 1.324,
+    "end": 1.853
+   },
+   {
+    "text": "cheio",
+    "start": 1.853,
+    "end": 2.294
+   },
+   {
+    "text": "de",
+    "start": 2.294,
+    "end": 2.471
+   },
+   {
+    "text": "um",
+    "start": 2.471,
+    "end": 2.647
+   },
+   {
+    "text": "são.",
+    "start": 2.647,
+    "end": 3
+   }
+  ]
  },
  {
   "id": 3,
   "quem": "wan",
-  "texto": "No seu turno, você faz só uma coisa: lança uma nave… ou volta pra estação."
+  "texto": "No seu turno, você faz só uma coisa: lança uma nave… ou volta pra estação.",
+  "arquivo": "voz/ae01/fala-03.wav",
+  "dur": 6.068,
+  "palavras_ouvidas": [
+   {
+    "text": "no",
+    "start": 0,
+    "end": 0.194
+   },
+   {
+    "text": "seu",
+    "start": 0.194,
+    "end": 0.485
+   },
+   {
+    "text": "turno,",
+    "start": 0.485,
+    "end": 1.068
+   },
+   {
+    "text": "você",
+    "start": 1.068,
+    "end": 1.456
+   },
+   {
+    "text": "faz",
+    "start": 1.456,
+    "end": 1.747
+   },
+   {
+    "text": "só",
+    "start": 1.747,
+    "end": 1.941
+   },
+   {
+    "text": "uma",
+    "start": 1.941,
+    "end": 2.232
+   },
+   {
+    "text": "coisa,",
+    "start": 2.232,
+    "end": 2.814
+   },
+   {
+    "text": "lança",
+    "start": 2.814,
+    "end": 3.3
+   },
+   {
+    "text": "uma",
+    "start": 3.3,
+    "end": 3.591
+   },
+   {
+    "text": "nave",
+    "start": 3.591,
+    "end": 3.979
+   },
+   {
+    "text": "ou",
+    "start": 3.979,
+    "end": 4.173
+   },
+   {
+    "text": "volta",
+    "start": 4.173,
+    "end": 4.658
+   },
+   {
+    "text": "para",
+    "start": 4.658,
+    "end": 5.047
+   },
+   {
+    "text": "a",
+    "start": 5.047,
+    "end": 5.144
+   },
+   {
+    "text": "estação.",
+    "start": 5.144,
+    "end": 5.92
+   }
+  ]
  },
  {
   "id": 4,
   "quem": "wan",
-  "texto": "Lançar tem quatro passos. Primeiro: escolha a região."
+  "texto": "Lançar tem quatro passos. Primeiro: escolha a região.",
+  "arquivo": "voz/ae01/fala-04.wav",
+  "dur": 3.894,
+  "palavras_ouvidas": [
+   {
+    "text": "Lançar",
+    "start": 0,
+    "end": 0.485
+   },
+   {
+    "text": "tem",
+    "start": 0.485,
+    "end": 0.728
+   },
+   {
+    "text": "quatro",
+    "start": 0.728,
+    "end": 1.213
+   },
+   {
+    "text": "passos.",
+    "start": 1.213,
+    "end": 1.779
+   },
+   {
+    "text": "Primeiro,",
+    "start": 1.779,
+    "end": 2.507
+   },
+   {
+    "text": "escolha",
+    "start": 2.507,
+    "end": 3.073
+   },
+   {
+    "text": "a",
+    "start": 3.073,
+    "end": 3.154
+   },
+   {
+    "text": "região.",
+    "start": 3.154,
+    "end": 3.72
+   }
+  ]
  },
  {
   "id": 5,
   "quem": "wan",
-  "texto": "Sem nave sua no mapa, só vale região desocupada: sem invasor e sem nave de ninguém."
+  "texto": "Sem nave sua no mapa, só vale região desocupada: sem invasor e sem nave de ninguém.",
+  "arquivo": "voz/ae01/fala-05.wav",
+  "dur": 6.189,
+  "palavras_ouvidas": [
+   {
+    "text": "Sem",
+    "start": 0,
+    "end": 0.257
+   },
+   {
+    "text": "nave",
+    "start": 0.257,
+    "end": 0.6
+   },
+   {
+    "text": "sua",
+    "start": 0.6,
+    "end": 0.857
+   },
+   {
+    "text": "no",
+    "start": 0.857,
+    "end": 1.029
+   },
+   {
+    "text": "mapa,",
+    "start": 1.029,
+    "end": 1.457
+   },
+   {
+    "text": "só",
+    "start": 1.457,
+    "end": 1.629
+   },
+   {
+    "text": "vale",
+    "start": 1.629,
+    "end": 1.971
+   },
+   {
+    "text": "região",
+    "start": 1.971,
+    "end": 2.486
+   },
+   {
+    "text": "desocupada,",
+    "start": 2.486,
+    "end": 3.429
+   },
+   {
+    "text": "sem",
+    "start": 3.429,
+    "end": 3.686
+   },
+   {
+    "text": "invasores,",
+    "start": 3.686,
+    "end": 4.543
+   },
+   {
+    "text": "sem",
+    "start": 4.543,
+    "end": 4.8
+   },
+   {
+    "text": "nave",
+    "start": 4.8,
+    "end": 5.143
+   },
+   {
+    "text": "de",
+    "start": 5.143,
+    "end": 5.314
+   },
+   {
+    "text": "ninguém.",
+    "start": 5.314,
+    "end": 6
+   }
+  ]
  },
  {
   "id": 6,
   "quem": "ronaldo",
-  "texto": "Então eu vou pra nebulosa, em nome de Jesus!"
+  "texto": "Então eu vou pra nebulosa, em nome de Jesus!",
+  "arquivo": "voz/ae01/fala-06.wav",
+  "dur": 3.54,
+  "palavras_ouvidas": [
+   {
+    "text": "Então",
+    "start": 0,
+    "end": 0.478
+   },
+   {
+    "text": "eu",
+    "start": 0.478,
+    "end": 0.67
+   },
+   {
+    "text": "vou",
+    "start": 0.67,
+    "end": 0.957
+   },
+   {
+    "text": "para",
+    "start": 0.957,
+    "end": 1.339
+   },
+   {
+    "text": "Nebulosa,",
+    "start": 1.339,
+    "end": 2.201
+   },
+   {
+    "text": "em",
+    "start": 2.201,
+    "end": 2.392
+   },
+   {
+    "text": "nome",
+    "start": 2.392,
+    "end": 2.775
+   },
+   {
+    "text": "de",
+    "start": 2.775,
+    "end": 2.966
+   },
+   {
+    "text": "Jesus.",
+    "start": 2.966,
+    "end": 3.54
+   }
+  ]
  },
  {
   "id": 7,
   "quem": "wan",
-  "texto": "Transportador não tem Viagem, Ronaldo. Nebulosa, não."
+  "texto": "Transportador não tem Viagem, Ronaldo. Nebulosa, não.",
+  "arquivo": "voz/ae01/fala-07.wav",
+  "dur": 3.947,
+  "palavras_ouvidas": [
+   {
+    "text": "O",
+    "start": 0,
+    "end": 0.082
+   },
+   {
+    "text": "transportador",
+    "start": 0.082,
+    "end": 1.15
+   },
+   {
+    "text": "não",
+    "start": 1.15,
+    "end": 1.397
+   },
+   {
+    "text": "tem",
+    "start": 1.397,
+    "end": 1.643
+   },
+   {
+    "text": "viagem",
+    "start": 1.643,
+    "end": 2.137
+   },
+   {
+    "text": "Ronaldo,",
+    "start": 2.137,
+    "end": 2.794
+   },
+   {
+    "text": "nebulosa",
+    "start": 2.794,
+    "end": 3.451
+   },
+   {
+    "text": "não.",
+    "start": 3.451,
+    "end": 3.78
+   }
+  ]
  },
  {
   "id": 8,
   "quem": "wan",
-  "texto": "Segundo: ative a região. Planeta te dá uma lua. Base Aliada te dá a ação dela."
+  "texto": "Segundo: ative a região. Planeta te dá uma lua. Base Aliada te dá a ação dela.",
+  "arquivo": "voz/ae01/fala-08.wav",
+  "dur": 8.002,
+  "palavras_ouvidas": [
+   {
+    "text": "Segundo,",
+    "start": 0,
+    "end": 0.975
+   },
+   {
+    "text": "ative",
+    "start": 0.975,
+    "end": 1.585
+   },
+   {
+    "text": "a",
+    "start": 1.585,
+    "end": 1.707
+   },
+   {
+    "text": "região.",
+    "start": 1.707,
+    "end": 2.56
+   },
+   {
+    "text": "Planeta",
+    "start": 3.76,
+    "end": 4.433
+   },
+   {
+    "text": "te",
+    "start": 4.433,
+    "end": 4.626
+   },
+   {
+    "text": "dá",
+    "start": 4.626,
+    "end": 4.818
+   },
+   {
+    "text": "uma",
+    "start": 4.818,
+    "end": 5.107
+   },
+   {
+    "text": "lua,",
+    "start": 5.107,
+    "end": 5.491
+   },
+   {
+    "text": "base",
+    "start": 5.491,
+    "end": 5.876
+   },
+   {
+    "text": "aliada",
+    "start": 5.876,
+    "end": 6.453
+   },
+   {
+    "text": "te",
+    "start": 6.453,
+    "end": 6.646
+   },
+   {
+    "text": "dá",
+    "start": 6.646,
+    "end": 6.838
+   },
+   {
+    "text": "a",
+    "start": 6.838,
+    "end": 6.934
+   },
+   {
+    "text": "ação",
+    "start": 6.934,
+    "end": 7.319
+   },
+   {
+    "text": "dela.",
+    "start": 7.319,
+    "end": 7.8
+   }
+  ]
  },
  {
   "id": 9,
   "quem": "wan",
-  "texto": "Terceiro: um invasor ao alcance vem pra cima de você. Quarto: batalha."
+  "texto": "Terceiro: um invasor ao alcance vem pra cima de você. Quarto: batalha.",
+  "arquivo": "voz/ae01/fala-09.wav",
+  "dur": 5.853,
+  "palavras_ouvidas": [
+   {
+    "text": "O",
+    "start": 0,
+    "end": 0.09
+   },
+   {
+    "text": "terceiro,",
+    "start": 0.09,
+    "end": 0.9
+   },
+   {
+    "text": "um",
+    "start": 0.9,
+    "end": 1.08
+   },
+   {
+    "text": "invasor",
+    "start": 1.08,
+    "end": 1.71
+   },
+   {
+    "text": "ao",
+    "start": 1.71,
+    "end": 1.89
+   },
+   {
+    "text": "alcance",
+    "start": 1.89,
+    "end": 2.52
+   },
+   {
+    "text": "vem",
+    "start": 2.52,
+    "end": 2.79
+   },
+   {
+    "text": "para",
+    "start": 2.79,
+    "end": 3.15
+   },
+   {
+    "text": "cima",
+    "start": 3.15,
+    "end": 3.51
+   },
+   {
+    "text": "de",
+    "start": 3.51,
+    "end": 3.69
+   },
+   {
+    "text": "você.",
+    "start": 3.69,
+    "end": 4.14
+   },
+   {
+    "text": "Quarto,",
+    "start": 4.14,
+    "end": 4.737
+   },
+   {
+    "text": "batalha.",
+    "start": 4.737,
+    "end": 5.42
+   }
+  ]
  },
  {
   "id": 10,
   "quem": "narrador",
-  "texto": "Cada lado rola os dados das suas armas. Quem tirar o maior dado vence."
+  "texto": "Cada lado rola os dados das suas armas. Quem tirar o maior dado vence.",
+  "arquivo": "voz/ae01/fala-10.wav",
+  "dur": 6.103,
+  "palavras_ouvidas": [
+   {
+    "text": "Cada",
+    "start": 0,
+    "end": 0.427
+   },
+   {
+    "text": "lado",
+    "start": 0.427,
+    "end": 0.853
+   },
+   {
+    "text": "rola",
+    "start": 0.853,
+    "end": 1.28
+   },
+   {
+    "text": "os",
+    "start": 1.28,
+    "end": 1.493
+   },
+   {
+    "text": "dados",
+    "start": 1.493,
+    "end": 2.027
+   },
+   {
+    "text": "das",
+    "start": 2.027,
+    "end": 2.347
+   },
+   {
+    "text": "suas",
+    "start": 2.347,
+    "end": 2.773
+   },
+   {
+    "text": "armas,",
+    "start": 2.773,
+    "end": 3.413
+   },
+   {
+    "text": "quem",
+    "start": 3.413,
+    "end": 3.84
+   },
+   {
+    "text": "tirar",
+    "start": 3.84,
+    "end": 4.373
+   },
+   {
+    "text": "o",
+    "start": 4.373,
+    "end": 4.48
+   },
+   {
+    "text": "maior",
+    "start": 4.48,
+    "end": 5.013
+   },
+   {
+    "text": "dado",
+    "start": 5.013,
+    "end": 5.44
+   },
+   {
+    "text": "vence.",
+    "start": 5.44,
+    "end": 6.08
+   }
+  ]
  },
  {
   "id": 11,
   "quem": "wan",
-  "texto": "A mira é o menor valor que o seu dado pode mostrar. Cada nave sua na região soma um."
+  "texto": "A mira é o menor valor que o seu dado pode mostrar. Cada nave sua na região soma um.",
+  "arquivo": "voz/ae01/fala-11.wav",
+  "dur": 6.258,
+  "palavras_ouvidas": [
+   {
+    "text": "A",
+    "start": 0,
+    "end": 0.095
+   },
+   {
+    "text": "mira",
+    "start": 0.095,
+    "end": 0.474
+   },
+   {
+    "text": "é",
+    "start": 0.474,
+    "end": 0.569
+   },
+   {
+    "text": "o",
+    "start": 0.569,
+    "end": 0.663
+   },
+   {
+    "text": "menor",
+    "start": 0.663,
+    "end": 1.137
+   },
+   {
+    "text": "valor",
+    "start": 1.137,
+    "end": 1.611
+   },
+   {
+    "text": "que",
+    "start": 1.611,
+    "end": 1.895
+   },
+   {
+    "text": "o",
+    "start": 1.895,
+    "end": 1.99
+   },
+   {
+    "text": "seu",
+    "start": 1.99,
+    "end": 2.274
+   },
+   {
+    "text": "dado",
+    "start": 2.274,
+    "end": 2.654
+   },
+   {
+    "text": "pode",
+    "start": 2.654,
+    "end": 3.033
+   },
+   {
+    "text": "mostrar,",
+    "start": 3.033,
+    "end": 3.791
+   },
+   {
+    "text": "cada",
+    "start": 3.791,
+    "end": 4.17
+   },
+   {
+    "text": "nave",
+    "start": 4.17,
+    "end": 4.549
+   },
+   {
+    "text": "sua",
+    "start": 4.549,
+    "end": 4.833
+   },
+   {
+    "text": "na",
+    "start": 4.833,
+    "end": 5.023
+   },
+   {
+    "text": "região",
+    "start": 5.023,
+    "end": 5.591
+   },
+   {
+    "text": "soma",
+    "start": 5.591,
+    "end": 5.97
+   },
+   {
+    "text": "1.",
+    "start": 5.97,
+    "end": 6.16
+   }
+  ]
  },
  {
   "id": 12,
   "quem": "ronaldo",
-  "texto": "Tá amarrado, dado! Eu profetizo um seis!"
+  "texto": "Tá amarrado, dado! Eu profetizo um seis!",
+  "arquivo": "voz/ae01/fala-12.wav",
+  "dur": 3.016,
+  "palavras_ouvidas": [
+   {
+    "text": "Tá",
+    "start": 0,
+    "end": 0.176
+   },
+   {
+    "text": "amarrado,",
+    "start": 0.176,
+    "end": 0.971
+   },
+   {
+    "text": "dado?",
+    "start": 0.971,
+    "end": 1.412
+   },
+   {
+    "text": "Eu",
+    "start": 1.412,
+    "end": 1.588
+   },
+   {
+    "text": "profetizo",
+    "start": 1.588,
+    "end": 2.382
+   },
+   {
+    "text": "um",
+    "start": 2.382,
+    "end": 2.559
+   },
+   {
+    "text": "seis.",
+    "start": 2.559,
+    "end": 3
+   }
+  ]
  },
  {
   "id": 13,
   "quem": "narrador",
-  "texto": "Saiu um."
+  "texto": "Saiu… o número um.",
+  "arquivo": "voz/ae01/fala-13.wav",
+  "dur": 2.015,
+  "palavras_ouvidas": [
+   {
+    "text": "Saiu",
+    "start": 0,
+    "end": 0.554
+   },
+   {
+    "text": "o",
+    "start": 0.554,
+    "end": 0.692
+   },
+   {
+    "text": "número",
+    "start": 0.692,
+    "end": 1.523
+   },
+   {
+    "text": "1.",
+    "start": 1.523,
+    "end": 1.8
+   }
+  ]
  },
  {
   "id": 14,
   "quem": "wan",
-  "texto": "Perdeu e não tem escudo? A nave vai pro Ferro-Velho."
+  "texto": "Perdeu e não tem escudo? A nave vai pro Ferro-Velho.",
+  "arquivo": "voz/ae01/fala-14.wav",
+  "dur": 5.083,
+  "palavras_ouvidas": [
+   {
+    "text": "perdeu",
+    "start": 0,
+    "end": 0.503
+   },
+   {
+    "text": "e",
+    "start": 0.503,
+    "end": 0.587
+   },
+   {
+    "text": "não",
+    "start": 0.587,
+    "end": 0.838
+   },
+   {
+    "text": "tem",
+    "start": 0.838,
+    "end": 1.09
+   },
+   {
+    "text": "escudo,",
+    "start": 1.09,
+    "end": 1.676
+   },
+   {
+    "text": "a",
+    "start": 1.676,
+    "end": 1.76
+   },
+   {
+    "text": "nave",
+    "start": 1.76,
+    "end": 2.095
+   },
+   {
+    "text": "vai",
+    "start": 2.095,
+    "end": 2.347
+   },
+   {
+    "text": "pro",
+    "start": 2.347,
+    "end": 2.598
+   },
+   {
+    "text": "ferro",
+    "start": 2.598,
+    "end": 3.017
+   },
+   {
+    "text": "velho.",
+    "start": 3.017,
+    "end": 3.52
+   }
+  ]
  },
  {
   "id": 15,
   "quem": "narrador",
-  "texto": "Quando você decide voltar… a estação trabalha."
+  "texto": "Quando você decide voltar… a estação trabalha.",
+  "arquivo": "voz/ae01/fala-15.wav",
+  "dur": 4.422,
+  "palavras_ouvidas": [
+   {
+    "text": "quando",
+    "start": 0,
+    "end": 0.63
+   },
+   {
+    "text": "você",
+    "start": 0.63,
+    "end": 1.05
+   },
+   {
+    "text": "decide",
+    "start": 1.05,
+    "end": 1.68
+   },
+   {
+    "text": "voltar,",
+    "start": 1.68,
+    "end": 2.415
+   },
+   {
+    "text": "a",
+    "start": 2.415,
+    "end": 2.52
+   },
+   {
+    "text": "estação",
+    "start": 2.52,
+    "end": 3.255
+   },
+   {
+    "text": "trabalha.",
+    "start": 3.255,
+    "end": 4.2
+   }
+  ]
  },
  {
   "id": 16,
   "quem": "wan",
-  "texto": "No Retorno, cada nave ativa um módulo. Uma nave no Reator Primário ativa a fileira inteira de ciência."
+  "texto": "No Retorno, cada nave ativa um módulo. Uma nave no Reator Primário ativa a fileira inteira de ciência.",
+  "arquivo": "voz/ae01/fala-16.wav",
+  "dur": 8.341,
+  "palavras_ouvidas": [
+   {
+    "text": "No",
+    "start": 0,
+    "end": 0.173
+   },
+   {
+    "text": "retorno,",
+    "start": 0.173,
+    "end": 0.866
+   },
+   {
+    "text": "cada",
+    "start": 0.866,
+    "end": 1.212
+   },
+   {
+    "text": "nave",
+    "start": 1.212,
+    "end": 1.559
+   },
+   {
+    "text": "ativa",
+    "start": 1.559,
+    "end": 1.992
+   },
+   {
+    "text": "um",
+    "start": 1.992,
+    "end": 2.165
+   },
+   {
+    "text": "módulo,",
+    "start": 2.165,
+    "end": 2.771
+   },
+   {
+    "text": "uma",
+    "start": 2.771,
+    "end": 3.031
+   },
+   {
+    "text": "nave",
+    "start": 3.031,
+    "end": 3.377
+   },
+   {
+    "text": "no",
+    "start": 3.377,
+    "end": 3.55
+   },
+   {
+    "text": "reator",
+    "start": 3.55,
+    "end": 4.07
+   },
+   {
+    "text": "primário",
+    "start": 4.07,
+    "end": 4.762
+   },
+   {
+    "text": "ativa",
+    "start": 4.762,
+    "end": 5.195
+   },
+   {
+    "text": "a",
+    "start": 5.195,
+    "end": 5.282
+   },
+   {
+    "text": "fileira",
+    "start": 5.282,
+    "end": 5.888
+   },
+   {
+    "text": "inteira",
+    "start": 5.888,
+    "end": 6.494
+   },
+   {
+    "text": "de",
+    "start": 6.494,
+    "end": 6.667
+   },
+   {
+    "text": "ciência.",
+    "start": 6.667,
+    "end": 7.36
+   }
+  ]
  },
  {
   "id": 17,
   "quem": "ronaldo",
-  "texto": "Eu vou ativar é o módulo do reteté!"
+  "texto": "Eu vou ativar é o módulo do reteté!",
+  "arquivo": "voz/ae01/fala-17.wav",
+  "dur": 2.888,
+  "palavras_ouvidas": [
+   {
+    "text": "Eu",
+    "start": 0,
+    "end": 0.187
+   },
+   {
+    "text": "vou",
+    "start": 0.187,
+    "end": 0.467
+   },
+   {
+    "text": "ativar.",
+    "start": 0.467,
+    "end": 1.12
+   },
+   {
+    "text": "É",
+    "start": 1.12,
+    "end": 1.213
+   },
+   {
+    "text": "o",
+    "start": 1.213,
+    "end": 1.307
+   },
+   {
+    "text": "módulo",
+    "start": 1.307,
+    "end": 1.867
+   },
+   {
+    "text": "do",
+    "start": 1.867,
+    "end": 2.053
+   },
+   {
+    "text": "reteter.",
+    "start": 2.053,
+    "end": 2.8
+   }
+  ]
  },
  {
   "id": 18,
   "quem": "wan",
-  "texto": "Isso não existe, Ronaldo."
+  "texto": "Isso não existe, Ronaldo.",
+  "arquivo": "voz/ae01/fala-18.wav",
+  "dur": 2.019,
+  "palavras_ouvidas": [
+   {
+    "text": "Isso",
+    "start": 0,
+    "end": 0.284
+   },
+   {
+    "text": "não",
+    "start": 0.284,
+    "end": 0.496
+   },
+   {
+    "text": "existe,",
+    "start": 0.496,
+    "end": 0.993
+   },
+   {
+    "text": "Ronaldo.",
+    "start": 0.993,
+    "end": 1.56
+   }
+  ]
  },
  {
   "id": 19,
   "quem": "narrador",
-  "texto": "Módulos e desenvolvimentos sobem as trilhas. Quando alguém alcança o terminus, todos jogam mais um turno… e vence quem tiver mais pontos."
+  "texto": "Módulos e desenvolvimentos sobem as trilhas. Quando alguém alcança o terminus, todos jogam mais um turno… e vence quem tiver mais pontos.",
+  "arquivo": "voz/ae01/fala-19.wav",
+  "dur": 10.089,
+  "palavras_ouvidas": [
+   {
+    "text": "Módulos",
+    "start": 0,
+    "end": 0.661
+   },
+   {
+    "text": "e",
+    "start": 0.661,
+    "end": 0.755
+   },
+   {
+    "text": "desenvolvimentos",
+    "start": 0.755,
+    "end": 2.265
+   },
+   {
+    "text": "sobem",
+    "start": 2.265,
+    "end": 2.736
+   },
+   {
+    "text": "as",
+    "start": 2.736,
+    "end": 2.925
+   },
+   {
+    "text": "trídeas.",
+    "start": 2.925,
+    "end": 3.68
+   },
+   {
+    "text": "Quando",
+    "start": 3.68,
+    "end": 4.106
+   },
+   {
+    "text": "alguém",
+    "start": 4.106,
+    "end": 4.532
+   },
+   {
+    "text": "alcança",
+    "start": 4.532,
+    "end": 5.03
+   },
+   {
+    "text": "o",
+    "start": 5.03,
+    "end": 5.101
+   },
+   {
+    "text": "términos,",
+    "start": 5.101,
+    "end": 5.74
+   },
+   {
+    "text": "todos",
+    "start": 5.74,
+    "end": 6.178
+   },
+   {
+    "text": "jogam",
+    "start": 6.178,
+    "end": 6.615
+   },
+   {
+    "text": "mais",
+    "start": 6.615,
+    "end": 6.965
+   },
+   {
+    "text": "um",
+    "start": 6.965,
+    "end": 7.14
+   },
+   {
+    "text": "turno",
+    "start": 7.14,
+    "end": 7.578
+   },
+   {
+    "text": "e",
+    "start": 7.578,
+    "end": 7.665
+   },
+   {
+    "text": "vêm-se",
+    "start": 7.665,
+    "end": 8.19
+   },
+   {
+    "text": "quem",
+    "start": 8.19,
+    "end": 8.54
+   },
+   {
+    "text": "tiver",
+    "start": 8.54,
+    "end": 8.978
+   },
+   {
+    "text": "mais",
+    "start": 8.978,
+    "end": 9.327
+   },
+   {
+    "text": "pontos.",
+    "start": 9.327,
+    "end": 9.94
+   }
+  ]
  },
  {
   "id": 20,
   "quem": "narrador",
-  "texto": "O tutorial completo está no nosso site. Segue pra mais um minuto de regras."
+  "texto": "O tutorial completo está no nosso site. Segue pra mais regras!",
+  "arquivo": "voz/ae01/fala-20.wav",
+  "dur": 4.854,
+  "palavras_ouvidas": [
+   {
+    "text": "O",
+    "start": 0,
+    "end": 0.085
+   },
+   {
+    "text": "tutorial",
+    "start": 0.085,
+    "end": 0.764
+   },
+   {
+    "text": "completo",
+    "start": 0.764,
+    "end": 1.442
+   },
+   {
+    "text": "está",
+    "start": 1.442,
+    "end": 1.782
+   },
+   {
+    "text": "no",
+    "start": 1.782,
+    "end": 1.952
+   },
+   {
+    "text": "nosso",
+    "start": 1.952,
+    "end": 2.376
+   },
+   {
+    "text": "site.",
+    "start": 2.376,
+    "end": 2.8
+   },
+   {
+    "text": "Segue",
+    "start": 2.8,
+    "end": 3.3
+   },
+   {
+    "text": "para",
+    "start": 3.3,
+    "end": 3.7
+   },
+   {
+    "text": "mais",
+    "start": 3.7,
+    "end": 4.1
+   },
+   {
+    "text": "regras.",
+    "start": 4.1,
+    "end": 4.8
+   }
+  ]
  }
 ]

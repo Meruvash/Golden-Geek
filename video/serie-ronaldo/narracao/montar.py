@@ -19,8 +19,10 @@ for f in falas:
     arq = f"{pasta}/fala-{f['id']:02d}.wav"
     bruto = f"{tmp}/b{f['id']}.wav"
     os.replace(arq, bruto)
-    filtro = ("silenceremove=start_periods=1:start_threshold=-45dB:start_silence=0.05,"
-              "areverse,silenceremove=start_periods=1:start_threshold=-45dB:start_silence=0.12,areverse,"
+    filtro = ("silenceremove=start_periods=1:start_threshold=-50dB:start_silence=0.08,"
+              "areverse,silenceremove=start_periods=1:start_threshold=-50dB:start_silence=0.25,areverse,"
+              # pausas internas longas (o modelo às vezes para 1-2 s no meio da frase) viram no máximo 0,32 s
+              "silenceremove=stop_periods=-1:stop_duration=0.32:stop_threshold=-42dB,"
               "loudnorm=I=-16:TP=-1.5:LRA=11")
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", bruto, "-af", filtro, "-ar", "24000", arq], check=True)
     copia = f"{tmp}/t{f['id']}.wav"
