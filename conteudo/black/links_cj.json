@@ -126,11 +126,11 @@
   "tabuloja": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/biddle"
  },
  "big-sur": {
-  "_hora": "2026-11-06T22:56-03:00",
-  "animusludere": "https://www.animusludere.com.br/big-sur",
+  "_hora": "2026-11-10T10:09-03:00",
   "arcslivrosejogos": "https://www.espacoarcs.com.br/jogos/big-sur",
-  "boardgamebarato": "https://www.boardgamebarato.com.br/big-sur",
-  "elfoscia": "https://www.elfosecia.com.br/big-sur-jogo-de-cartas-grokgames",
+  "caixinhaboardgames": "https://www.caixinhaboardgames.com.br/produtos/big-sur/?entry_path=category",
+  "ludostation": "https://ludostation.com.br/produtos/big-sur-10kbx/?entry_path=category",
+  "placegames": "https://www.placegames.com.br/boardgames/big-sur",
   "tabuloja": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/big-sur"
  },
  "bim-bam-bum": {
@@ -277,6 +277,13 @@
   "masmorra": "https://www.masmorra.com.br/produtos/cfr201",
   "tabuloja": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/coffee-rush-inverno",
   "tavernareal": "https://www.tavernareal.com/tabuleiro/coffee-rush-inverno"
+ },
+ "coup-2a-edicao": {
+  "_hora": "2026-11-10T10:09-03:00",
+  "amazon": "https://www.amazon.com.br/dp/B07F4G4LJK",
+  "mercadolivre": "https://www.mercadolivre.com.br/p/MLB44930152",
+  "placegames": "https://www.placegames.com.br/coup",
+  "tavernareal": "https://www.tavernareal.com/tabuleiro/coup-2a-edicao"
  },
  "covenant": {
   "_hora": "2026-11-05T20:47-03:00",
@@ -471,12 +478,12 @@
   "tabuloja": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/finca"
  },
  "flamecraft": {
-  "_hora": "2026-11-06T22:57-03:00",
+  "_hora": "2026-11-10T10:09-03:00",
   "boardgamebarato": "https://www.boardgamebarato.com.br/flamecraft",
   "caldeiraojogos": "https://www.caldeiraojogos.com.br/produtos/flamecraft/?entry_path=category",
   "javalijogos": "https://www.javalijogos.com.br/flamecraft",
-  "riodemeepeiroboardgames": "https://www.riodemeepeiro.com.br/produtos/flamecraft/?entry_path=category",
-  "tabuloja": "https://www.tabuloja.com/flamecraft",
+  "paladinsgames": "http://paladinsgames.com.br/produto/1313593/flamecraft-jogo-de-tabuleiro",
+  "riodemeepeiroboardgames": "https://www.riodemeepeiro.com.br/produtos/flamecraft/",
   "tavernareal": "https://www.tavernareal.com/tabuleiro/flamecraft"
  },
  "flip-7-a-vinganca-nunca-e-plena": {
@@ -1141,5 +1148,8 @@
   "_hora": "2026-11-07T01:23-03:00",
   "brecholudico": "https://brecholudico.com.br/produto/wyrmspan/",
   "spaceboardgames": "https://www.spaceboardgames.com.br/jogos-de-tabuleiro/wyrmspan"
+ },
+ "zombicide": {
+  "_hora": "2026-11-10T10:09-03:00"
  }
 }
