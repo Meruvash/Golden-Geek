@@ -6,6 +6,8 @@ import { Ae01, FIM_AE } from "./ae01/Ae01";
 import { AeP1, FIM_P1 } from "./ae-p1/AeP1";
 import { AeP2, FIM_P2 } from "./ae-p2/AeP2";
 import { FichaLukita } from "./seti/FichaLukita";
+import { ColtQuadro1, ColtQuadro2, ColtQuadro3 } from "./colt/QuadrosColt";
+import { ColtTeste } from "./colt/Teste";
 import { Seti, FIM_SETI } from "./seti/Seti";
 import { FichaPersonagem, Quadro1, Quadro2, Quadro3 } from "./quadros/Quadros";
 
@@ -23,6 +25,10 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="AndromedaParte1Quadrado" component={AeP1} width={1080} height={1080} fps={30} durationInFrames={Math.ceil(FIM_P1 * 30)} defaultProps={{ quadrado: true }} />
       <Composition id="AndromedaParte2Quadrado" component={AeP2} width={1080} height={1080} fps={30} durationInFrames={Math.ceil(FIM_P2 * 30)} defaultProps={{ quadrado: true }} />
       <Still id="FichaRonaldo" component={FichaPersonagem} width={1080} height={1920} defaultProps={{ quem: "ronaldo" as const }} />
+      <Still id="ColtTeste" component={ColtTeste} width={1080} height={1920} />
+      <Still id="ColtQuadro1" component={ColtQuadro1} width={1080} height={1920} />
+      <Still id="ColtQuadro2" component={ColtQuadro2} width={1080} height={1920} />
+      <Still id="ColtQuadro3" component={ColtQuadro3} width={1080} height={1920} />
       <Still id="FichaLukita" component={FichaLukita} width={1080} height={1920} />
       <Still id="FichaWan" component={FichaPersonagem} width={1080} height={1920} defaultProps={{ quem: "wan" as const }} />
       <Still id="Quadro1Gancho" component={Quadro1} width={1080} height={1920} />

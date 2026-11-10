@@ -121,8 +121,8 @@ export const Ronaldo: React.FC<{ x: number; y: number; escala?: number; expr?: E
   );
 };
 
-export const Wan: React.FC<{ x: number; y: number; escala?: number; expr?: ExprWan; pose?: "livro" | "bracos"; brilhoLivro?: boolean }> = ({
-  x, y, escala = 1, expr = "calmo", pose = "livro", brilhoLivro = true,
+export const Wan: React.FC<{ x: number; y: number; escala?: number; expr?: ExprWan; pose?: "livro" | "bracos" | "carta"; brilhoLivro?: boolean; faroeste?: boolean }> = ({
+  x, y, escala = 1, expr = "calmo", pose = "livro", brilhoLivro = true, faroeste = false,
 }) => {
   const pele = "#f3cdae", sombra = "#dfae8c";
   return (
@@ -160,6 +160,17 @@ export const Wan: React.FC<{ x: number; y: number; escala?: number; expr?: ExprW
           <g stroke="#b9a983" strokeWidth={3}><path d="M136,520 l48,12 M136,536 l48,12 M216,532 l48,-12 M216,548 l48,-12" /></g>
           <circle cx={138} cy={540} r={20} fill={pele} /><circle cx={262} cy={540} r={20} fill={sombra} />
         </g>
+      ) : pose === "carta" ? (
+        <g>
+          <path d="M84,346 C60,420 90,470 200,470 L200,440 C130,440 112,410 118,380 Z" fill="#30333b" />
+          <circle cx={164} cy={456} r={18} fill={pele} />
+          <path d="M316,346 C350,300 360,230 344,170 L314,174 C324,230 312,286 282,330 Z" fill="#292c33" />
+          <g transform="translate(330,110) rotate(12)">
+            <rect x={-40} y={-58} width={80} height={116} rx={10} fill="#f3e6c8" stroke="#2b1d14" strokeWidth={5} />
+            <text x={0} y={14} textAnchor="middle" fontFamily="Rye" fontSize={34} fill="#b3262f">?</text>
+          </g>
+          <circle cx={328} cy={168} r={18} fill={sombra} />
+        </g>
       ) : (
         <g>
           <path d="M84,346 C60,420 90,470 200,470 L200,440 C130,440 112,410 118,380 Z" fill="#30333b" />
@@ -194,6 +205,27 @@ export const Wan: React.FC<{ x: number; y: number; escala?: number; expr?: ExprW
       ) : (
         <path d="M182,278 q22,6 44,-2" stroke="#5a2e24" strokeWidth={7} fill="none" strokeLinecap="round" />
       )}
+      {faroeste ? (
+        <g>
+          {/* acabamento cinematográfico: mandíbula marcada, nariz, sombra de célula na bochecha */}
+          <path d="M104,218 C112,290 150,326 200,330 C250,326 288,290 296,218 C284,272 248,304 200,306 C152,304 116,272 104,218 Z" fill={sombra} opacity={0.75} />
+          <path d="M200,206 L190,250 L206,252" stroke="#c98f6c" strokeWidth={6} fill="none" strokeLinecap="round" strokeLinejoin="round" />
+          <path d="M236,236 q22,10 36,-4 l-6,24 q-18,8 -30,-20 Z" fill="#e8a789" opacity={0.6} />
+          {/* sombra da aba sobre os olhos: só o brilho aparece */}
+          <path d="M92,150 C130,176 270,176 308,150 L304,196 C260,214 140,214 96,196 Z" fill="#1d1410" opacity={0.34} />
+          <circle cx={166} cy={214} r={4} fill="#ffe2b0" /><circle cx={236} cy={214} r={4} fill="#ffe2b0" />
+          {/* lenço de bandido no pescoço */}
+          <path d="M140,300 C170,322 230,322 260,300 L246,334 L200,372 L154,334 Z" fill="#b3262f" />
+          <path d="M200,330 L246,334 L200,372 Z" fill="#8f1d25" />
+          <g fill="#f3e6c8" opacity={0.8}><circle cx={180} cy={330} r={4} /><circle cx={214} cy={344} r={4} /><circle cx={198} cy={318} r={3} /></g>
+          {/* chapéu de abas largas */}
+          <ellipse cx={200} cy={118} rx={176} ry={34} fill="#3a2a1f" />
+          <path d="M104,118 C108,60 136,26 200,26 C264,26 292,60 296,118 Z" fill="#4a3627" />
+          <path d="M200,26 C264,26 292,60 296,118 L200,118 Z" fill="#3a2a1f" />
+          <path d="M112,96 C150,104 250,104 288,96 L292,116 C250,124 150,124 108,116 Z" fill="#8f1d25" />
+          <path d="M150,40 q50,22 100,0" stroke="#2b1d14" strokeWidth={6} fill="none" opacity={0.5} />
+        </g>
+      ) : null}
     </g>
   );
 };
