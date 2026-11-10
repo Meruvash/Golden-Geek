@@ -6741,7 +6741,7 @@
    "2026-11-07": 118.85,
    "2026-11-08": 118.85,
    "2026-11-09": 118.85,
-   "2026-11-10": 118.85
+   "2026-11-10": 117.09
   },
   "principal": true,
   "tipo": "game"
@@ -127139,6 +127139,18 @@
   "pontos": {},
   "principal": false,
   "tipo": "game"
+ },
+ "risk-2210-ad-frontline": {
+  "ano": 2025,
+  "bgg": 8.38235,
+  "bgg_id": 430913,
+  "editora": "Renegade Game Studios",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/fd61309112d903f1c18ffe0af633a7258e80c70a.jpg",
+  "nome": "Risk 2210 A.D.: Frontline",
+  "pontos": {},
+  "principal": true,
+  "tipo": "expansion"
  },
  "risk-europe": {
   "ano": 2020,
