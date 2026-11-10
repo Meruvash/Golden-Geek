@@ -1,0 +1,1707 @@
+[
+ {
+  "id": 1,
+  "quem": "narrador",
+  "texto": "Você entrou num trem com cinco bandidos. Só um desce rico.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/wan1/fala-01.wav",
+  "dur": 3.145,
+  "palavras_ouvidas": [
+   {
+    "text": "Você",
+    "start": 0.1,
+    "end": 0.28
+   },
+   {
+    "text": "entrou",
+    "start": 0.3,
+    "end": 0.52
+   },
+   {
+    "text": "num",
+    "start": 0.56,
+    "end": 0.72
+   },
+   {
+    "text": "trem",
+    "start": 0.74,
+    "end": 0.94
+   },
+   {
+    "text": "com",
+    "start": 1.0,
+    "end": 1.08
+   },
+   {
+    "text": "cinco",
+    "start": 1.18,
+    "end": 1.34
+   },
+   {
+    "text": "bandidos.",
+    "start": 1.4,
+    "end": 1.82
+   },
+   {
+    "text": "Só",
+    "start": 2.06,
+    "end": 2.18
+   },
+   {
+    "text": "um",
+    "start": 2.22,
+    "end": 2.32
+   },
+   {
+    "text": "desse",
+    "start": 2.34,
+    "end": 2.6
+   },
+   {
+    "text": "rico",
+    "start": 2.64,
+    "end": 2.88
+   }
+  ]
+ },
+ {
+  "id": 2,
+  "quem": "narrador",
+  "texto": "E o chefe do seu bando… é o Wan.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/wan1/fala-02.wav",
+  "dur": 2.235,
+  "palavras_ouvidas": [
+   {
+    "text": "E",
+    "start": 0.08,
+    "end": 0.14
+   },
+   {
+    "text": "o",
+    "start": 0.16,
+    "end": 0.22
+   },
+   {
+    "text": "chefe",
+    "start": 0.26,
+    "end": 0.54
+   },
+   {
+    "text": "do",
+    "start": 0.58,
+    "end": 0.64
+   },
+   {
+    "text": "seu",
+    "start": 0.72,
+    "end": 0.88
+   },
+   {
+    "text": "bando",
+    "start": 0.9,
+    "end": 1.22
+   },
+   {
+    "text": "é",
+    "start": 1.56,
+    "end": 1.6
+   },
+   {
+    "text": "o",
+    "start": 1.62,
+    "end": 1.66
+   },
+   {
+    "text": "Van",
+    "start": 1.74,
+    "end": 1.96
+   }
+  ]
+ },
+ {
+  "id": 3,
+  "quem": "narrador",
+  "texto": "A partir de hoje, os comentários decidem o que você faz.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/wan1/fala-03.wav",
+  "dur": 3.089,
+  "palavras_ouvidas": [
+   {
+    "text": "A",
+    "start": 0.08,
+    "end": 0.1
+   },
+   {
+    "text": "partir",
+    "start": 0.18,
+    "end": 0.44
+   },
+   {
+    "text": "de",
+    "start": 0.52,
+    "end": 0.62
+   },
+   {
+    "text": "hoje,",
+    "start": 0.64,
+    "end": 0.9
+   },
+   {
+    "text": "os",
+    "start": 0.94,
+    "end": 1.06
+   },
+   {
+    "text": "comentários",
+    "start": 1.08,
+    "end": 1.66
+   },
+   {
+    "text": "decidem",
+    "start": 1.7,
+    "end": 2.1
+   },
+   {
+    "text": "o",
+    "start": 2.12,
+    "end": 2.2
+   },
+   {
+    "text": "que",
+    "start": 2.22,
+    "end": 2.3
+   },
+   {
+    "text": "você",
+    "start": 2.34,
+    "end": 2.56
+   },
+   {
+    "text": "faz",
+    "start": 2.62,
+    "end": 2.84
+   }
+  ]
+ },
+ {
+  "id": 4,
+  "quem": "wan",
+  "texto": "Plano simples. Vagão da frente. Pega a joia. Eu te cubro.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/wan1/fala-04.wav",
+  "dur": 4.876,
+  "palavras_ouvidas": [
+   {
+    "text": "Plano",
+    "start": 0.1,
+    "end": 0.3
+   },
+   {
+    "text": "simples:",
+    "start": 0.4,
+    "end": 0.76
+   },
+   {
+    "text": "vagão",
+    "start": 1.28,
+    "end": 1.6
+   },
+   {
+    "text": "da",
+    "start": 1.64,
+    "end": 1.7
+   },
+   {
+    "text": "frente.",
+    "start": 1.8,
+    "end": 2.08
+   },
+   {
+    "text": "Pega",
+    "start": 2.66,
+    "end": 2.86
+   },
+   {
+    "text": "a",
+    "start": 2.88,
+    "end": 2.92
+   },
+   {
+    "text": "joia,",
+    "start": 3.0,
+    "end": 3.3
+   },
+   {
+    "text": "eu",
+    "start": 3.84,
+    "end": 3.92
+   },
+   {
+    "text": "te",
+    "start": 3.98,
+    "end": 4.12
+   },
+   {
+    "text": "cubro",
+    "start": 4.16,
+    "end": 4.44
+   }
+  ]
+ },
+ {
+  "id": 5,
+  "quem": "narrador",
+  "texto": "Só que nesse trem ninguém age na hora.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/wan1/fala-05.wav",
+  "dur": 1.96,
+  "palavras_ouvidas": [
+   {
+    "text": "Só",
+    "start": 0.1,
+    "end": 0.18
+   },
+   {
+    "text": "que",
+    "start": 0.22,
+    "end": 0.3
+   },
+   {
+    "text": "nesse",
+    "start": 0.34,
+    "end": 0.58
+   },
+   {
+    "text": "trem",
+    "start": 0.62,
+    "end": 0.78
+   },
+   {
+    "text": "ninguém",
+    "start": 0.82,
+    "end": 1.08
+   },
+   {
+    "text": "age",
+    "start": 1.14,
+    "end": 1.3
+   },
+   {
+    "text": "na",
+    "start": 1.32,
+    "end": 1.44
+   },
+   {
+    "text": "hora",
+    "start": 1.48,
+    "end": 1.68
+   }
+  ]
+ },
+ {
+  "id": 6,
+  "quem": "narrador",
+  "texto": "Cada bandido joga uma carta numa pilha. Um de cada vez.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/wan1/fala-06.wav",
+  "dur": 3.375,
+  "palavras_ouvidas": [
+   {
+    "text": "Cada",
+    "start": 0.08,
+    "end": 0.22
+   },
+   {
+    "text": "bandido",
+    "start": 0.28,
+    "end": 0.62
+   },
+   {
+    "text": "joga",
+    "start": 0.68,
+    "end": 0.9
+   },
+   {
+    "text": "uma",
+    "start": 0.92,
+    "end": 1.12
+   },
+   {
+    "text": "carta",
+    "start": 1.16,
+    "end": 1.4
+   },
+   {
+    "text": "numa",
+    "start": 1.44,
+    "end": 1.58
+   },
+   {
+    "text": "pilha,",
+    "start": 1.7,
+    "end": 1.94
+   },
+   {
+    "text": "um",
+    "start": 2.34,
+    "end": 2.4
+   },
+   {
+    "text": "de",
+    "start": 2.46,
+    "end": 2.56
+   },
+   {
+    "text": "cada",
+    "start": 2.58,
+    "end": 2.74
+   },
+   {
+    "text": "vez",
+    "start": 2.82,
+    "end": 3.1
+   }
+  ]
+ },
+ {
+  "id": 7,
+  "quem": "narrador",
+  "texto": "Ninguém sabe o que vem até a pilha virar.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/wan1/fala-07.wav",
+  "dur": 2.039,
+  "palavras_ouvidas": [
+   {
+    "text": "Ninguém",
+    "start": 0.08,
+    "end": 0.34
+   },
+   {
+    "text": "sabe",
+    "start": 0.4,
+    "end": 0.66
+   },
+   {
+    "text": "o",
+    "start": 0.68,
+    "end": 0.74
+   },
+   {
+    "text": "que",
+    "start": 0.76,
+    "end": 0.84
+   },
+   {
+    "text": "vem",
+    "start": 0.88,
+    "end": 1.0
+   },
+   {
+    "text": "até",
+    "start": 1.04,
+    "end": 1.18
+   },
+   {
+    "text": "a",
+    "start": 1.22,
+    "end": 1.22
+   },
+   {
+    "text": "pilha",
+    "start": 1.32,
+    "end": 1.46
+   },
+   {
+    "text": "virar",
+    "start": 1.52,
+    "end": 1.78
+   }
+  ]
+ },
+ {
+  "id": 8,
+  "quem": "narrador",
+  "texto": "A pilha vira. Você anda. Você pega a joia.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/wan1/fala-08.wav",
+  "dur": 2.865,
+  "palavras_ouvidas": [
+   {
+    "text": "A",
+    "start": 0.08,
+    "end": 0.1
+   },
+   {
+    "text": "pilha",
+    "start": 0.2,
+    "end": 0.36
+   },
+   {
+    "text": "vira,",
+    "start": 0.46,
+    "end": 0.68
+   },
+   {
+    "text": "você",
+    "start": 0.86,
+    "end": 1.1
+   },
+   {
+    "text": "anda,",
+    "start": 1.16,
+    "end": 1.38
+   },
+   {
+    "text": "você",
+    "start": 1.72,
+    "end": 1.9
+   },
+   {
+    "text": "pega",
+    "start": 2.0,
+    "end": 2.18
+   },
+   {
+    "text": "a",
+    "start": 2.2,
+    "end": 2.24
+   },
+   {
+    "text": "joia",
+    "start": 2.34,
+    "end": 2.6
+   }
+  ]
+ },
+ {
+  "id": 9,
+  "quem": "narrador",
+  "texto": "Carta quatro. Um soco do Caolho. Na sua cara.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/wan1/fala-09.wav",
+  "dur": 3.145,
+  "palavras_ouvidas": [
+   {
+    "text": "Carta",
+    "start": 0.1,
+    "end": 0.34
+   },
+   {
+    "text": "quatro:",
+    "start": 0.46,
+    "end": 0.82
+   },
+   {
+    "text": "um",
+    "start": 1.02,
+    "end": 1.1
+   },
+   {
+    "text": "soco",
+    "start": 1.22,
+    "end": 1.44
+   },
+   {
+    "text": "do",
+    "start": 1.48,
+    "end": 1.58
+   },
+   {
+    "text": "caolho",
+    "start": 1.62,
+    "end": 2.0
+   },
+   {
+    "text": "na",
+    "start": 2.24,
+    "end": 2.36
+   },
+   {
+    "text": "sua",
+    "start": 2.4,
+    "end": 2.6
+   },
+   {
+    "text": "cara",
+    "start": 2.64,
+    "end": 2.88
+   }
+  ]
+ },
+ {
+  "id": 10,
+  "quem": "narrador",
+  "texto": "A joia cai. Você voa pro vagão de trás.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/wan1/fala-10.wav",
+  "dur": 2.304,
+  "palavras_ouvidas": [
+   {
+    "text": "A",
+    "start": 0.08,
+    "end": 0.14
+   },
+   {
+    "text": "joia",
+    "start": 0.16,
+    "end": 0.36
+   },
+   {
+    "text": "cai",
+    "start": 0.44,
+    "end": 0.62
+   },
+   {
+    "text": "e",
+    "start": 0.66,
+    "end": 0.66
+   },
+   {
+    "text": "você",
+    "start": 0.7,
+    "end": 0.94
+   },
+   {
+    "text": "voa",
+    "start": 0.98,
+    "end": 1.14
+   },
+   {
+    "text": "pro",
+    "start": 1.16,
+    "end": 1.26
+   },
+   {
+    "text": "vagão",
+    "start": 1.3,
+    "end": 1.54
+   },
+   {
+    "text": "de",
+    "start": 1.56,
+    "end": 1.66
+   },
+   {
+    "text": "trás",
+    "start": 1.7,
+    "end": 2.04
+   }
+  ]
+ },
+ {
+  "id": 11,
+  "quem": "narrador",
+  "texto": "Do chão, por um segundo, você vê a locomotiva.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/wan1/fala-11.wav",
+  "dur": 2.563,
+  "palavras_ouvidas": [
+   {
+    "text": "Do",
+    "start": 0.08,
+    "end": 0.14
+   },
+   {
+    "text": "chão,",
+    "start": 0.2,
+    "end": 0.4
+   },
+   {
+    "text": "por",
+    "start": 0.52,
+    "end": 0.62
+   },
+   {
+    "text": "um",
+    "start": 0.66,
+    "end": 0.72
+   },
+   {
+    "text": "segundo,",
+    "start": 0.8,
+    "end": 1.16
+   },
+   {
+    "text": "você",
+    "start": 1.22,
+    "end": 1.42
+   },
+   {
+    "text": "vê",
+    "start": 1.48,
+    "end": 1.58
+   },
+   {
+    "text": "a",
+    "start": 1.6,
+    "end": 1.64
+   },
+   {
+    "text": "locomotiva",
+    "start": 1.68,
+    "end": 2.3
+   }
+  ]
+ },
+ {
+  "id": 12,
+  "quem": "narrador",
+  "texto": "A maleta não tá mais lá. E o Wan… também não.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/wan1/fala-12.wav",
+  "dur": 2.754,
+  "palavras_ouvidas": [
+   {
+    "text": "A",
+    "start": 0.08,
+    "end": 0.14
+   },
+   {
+    "text": "maleta",
+    "start": 0.16,
+    "end": 0.44
+   },
+   {
+    "text": "não",
+    "start": 0.48,
+    "end": 0.6
+   },
+   {
+    "text": "tá",
+    "start": 0.62,
+    "end": 0.7
+   },
+   {
+    "text": "mais",
+    "start": 0.72,
+    "end": 0.88
+   },
+   {
+    "text": "lá",
+    "start": 0.92,
+    "end": 1.02
+   },
+   {
+    "text": "e",
+    "start": 1.28,
+    "end": 1.32
+   },
+   {
+    "text": "o",
+    "start": 1.36,
+    "end": 1.42
+   },
+   {
+    "text": "Juan",
+    "start": 1.44,
+    "end": 1.64
+   },
+   {
+    "text": "também",
+    "start": 1.98,
+    "end": 2.26
+   },
+   {
+    "text": "não",
+    "start": 2.3,
+    "end": 2.48
+   }
+  ]
+ },
+ {
+  "id": 13,
+  "quem": "narrador",
+  "texto": "Você chama o Wan. Nada. Chama de novo.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/wan1/fala-13.wav",
+  "dur": 2.465,
+  "palavras_ouvidas": [
+   {
+    "text": "Você",
+    "start": 0.1,
+    "end": 0.3
+   },
+   {
+    "text": "chama",
+    "start": 0.36,
+    "end": 0.54
+   },
+   {
+    "text": "o",
+    "start": 0.56,
+    "end": 0.62
+   },
+   {
+    "text": "Juan?",
+    "start": 0.66,
+    "end": 0.84
+   },
+   {
+    "text": "Nada.",
+    "start": 1.14,
+    "end": 1.42
+   },
+   {
+    "text": "Chama",
+    "start": 1.6,
+    "end": 1.78
+   },
+   {
+    "text": "de",
+    "start": 1.82,
+    "end": 1.9
+   },
+   {
+    "text": "novo",
+    "start": 1.94,
+    "end": 2.2
+   }
+  ]
+ },
+ {
+  "id": 14,
+  "quem": "narrador",
+  "texto": "Então você faz a única coisa que sobrou. Sobe no teto. Lá em cima dá pra correr até três vagões de uma vez.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/wan1/fala-14.wav",
+  "dur": 5.951,
+  "palavras_ouvidas": [
+   {
+    "text": "Então",
+    "start": 0.1,
+    "end": 0.34
+   },
+   {
+    "text": "você",
+    "start": 0.36,
+    "end": 0.58
+   },
+   {
+    "text": "faz",
+    "start": 0.62,
+    "end": 0.76
+   },
+   {
+    "text": "a",
+    "start": 0.82,
+    "end": 0.86
+   },
+   {
+    "text": "única",
+    "start": 0.94,
+    "end": 1.18
+   },
+   {
+    "text": "coisa",
+    "start": 1.2,
+    "end": 1.38
+   },
+   {
+    "text": "que",
+    "start": 1.4,
+    "end": 1.5
+   },
+   {
+    "text": "sobrou:",
+    "start": 1.52,
+    "end": 1.82
+   },
+   {
+    "text": "sobe",
+    "start": 2.22,
+    "end": 2.44
+   },
+   {
+    "text": "no",
+    "start": 2.48,
+    "end": 2.6
+   },
+   {
+    "text": "teto.",
+    "start": 2.64,
+    "end": 2.92
+   },
+   {
+    "text": "Lá",
+    "start": 3.24,
+    "end": 3.3
+   },
+   {
+    "text": "em",
+    "start": 3.32,
+    "end": 3.4
+   },
+   {
+    "text": "cima",
+    "start": 3.44,
+    "end": 3.62
+   },
+   {
+    "text": "dá",
+    "start": 3.66,
+    "end": 3.78
+   },
+   {
+    "text": "pra",
+    "start": 3.8,
+    "end": 3.92
+   },
+   {
+    "text": "correr",
+    "start": 3.94,
+    "end": 4.22
+   },
+   {
+    "text": "até",
+    "start": 4.26,
+    "end": 4.5
+   },
+   {
+    "text": "três",
+    "start": 4.52,
+    "end": 4.72
+   },
+   {
+    "text": "vagões",
+    "start": 4.74,
+    "end": 5.06
+   },
+   {
+    "text": "de",
+    "start": 5.1,
+    "end": 5.14
+   },
+   {
+    "text": "uma",
+    "start": 5.16,
+    "end": 5.32
+   },
+   {
+    "text": "vez",
+    "start": 5.36,
+    "end": 5.66
+   }
+  ]
+ },
+ {
+  "id": 15,
+  "quem": "narrador",
+  "texto": "Rodada três. O trem entra no túnel.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/wan1/fala-15.wav",
+  "dur": 2.16,
+  "palavras_ouvidas": [
+   {
+    "text": "Rodada",
+    "start": 0.06,
+    "end": 0.4
+   },
+   {
+    "text": "três:",
+    "start": 0.48,
+    "end": 0.76
+   },
+   {
+    "text": "o",
+    "start": 0.88,
+    "end": 0.92
+   },
+   {
+    "text": "trem",
+    "start": 1.02,
+    "end": 1.18
+   },
+   {
+    "text": "entra",
+    "start": 1.22,
+    "end": 1.44
+   },
+   {
+    "text": "no",
+    "start": 1.48,
+    "end": 1.6
+   },
+   {
+    "text": "túnel",
+    "start": 1.64,
+    "end": 1.9
+   }
+  ]
+ },
+ {
+  "id": 16,
+  "quem": "wan",
+  "texto": "Fica abaixado, parceiro. E não olha pra trás.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/wan1/fala-16.wav",
+  "dur": 3.69,
+  "palavras_ouvidas": [
+   {
+    "text": "Fica",
+    "start": 0.1,
+    "end": 0.34
+   },
+   {
+    "text": "abaixado,",
+    "start": 0.38,
+    "end": 0.96
+   },
+   {
+    "text": "parceiro,",
+    "start": 1.04,
+    "end": 1.52
+   },
+   {
+    "text": "e",
+    "start": 2.3,
+    "end": 2.36
+   },
+   {
+    "text": "não",
+    "start": 2.4,
+    "end": 2.54
+   },
+   {
+    "text": "olha",
+    "start": 2.64,
+    "end": 2.82
+   },
+   {
+    "text": "pra",
+    "start": 2.84,
+    "end": 2.98
+   },
+   {
+    "text": "trás",
+    "start": 3.02,
+    "end": 3.38
+   }
+  ]
+ },
+ {
+  "id": 17,
+  "quem": "narrador",
+  "texto": "E aqui vai o que você não sabe.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/wan1/fala-17.wav",
+  "dur": 1.618,
+  "palavras_ouvidas": [
+   {
+    "text": "E",
+    "start": 0.04,
+    "end": 0.08
+   },
+   {
+    "text": "aqui",
+    "start": 0.12,
+    "end": 0.32
+   },
+   {
+    "text": "vai",
+    "start": 0.36,
+    "end": 0.46
+   },
+   {
+    "text": "o",
+    "start": 0.5,
+    "end": 0.54
+   },
+   {
+    "text": "que",
+    "start": 0.56,
+    "end": 0.64
+   },
+   {
+    "text": "você",
+    "start": 0.68,
+    "end": 0.86
+   },
+   {
+    "text": "não",
+    "start": 0.88,
+    "end": 1.02
+   },
+   {
+    "text": "sabe",
+    "start": 1.06,
+    "end": 1.36
+   }
+  ]
+ },
+ {
+  "id": 18,
+  "quem": "narrador",
+  "texto": "No túnel, as cartas entram viradas pra baixo. Ninguém vê o que o outro jogou.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/wan1/fala-18.wav",
+  "dur": 4.468,
+  "palavras_ouvidas": [
+   {
+    "text": "No",
+    "start": 0.08,
+    "end": 0.2
+   },
+   {
+    "text": "túnel,",
+    "start": 0.22,
+    "end": 0.48
+   },
+   {
+    "text": "as",
+    "start": 0.62,
+    "end": 0.74
+   },
+   {
+    "text": "cartas",
+    "start": 0.82,
+    "end": 1.2
+   },
+   {
+    "text": "entram",
+    "start": 1.26,
+    "end": 1.54
+   },
+   {
+    "text": "viradas",
+    "start": 1.56,
+    "end": 1.96
+   },
+   {
+    "text": "pra",
+    "start": 2.0,
+    "end": 2.08
+   },
+   {
+    "text": "baixo.",
+    "start": 2.16,
+    "end": 2.52
+   },
+   {
+    "text": "Ninguém",
+    "start": 2.82,
+    "end": 3.12
+   },
+   {
+    "text": "vê",
+    "start": 3.18,
+    "end": 3.26
+   },
+   {
+    "text": "o",
+    "start": 3.3,
+    "end": 3.32
+   },
+   {
+    "text": "que",
+    "start": 3.4,
+    "end": 3.46
+   },
+   {
+    "text": "o",
+    "start": 3.5,
+    "end": 3.54
+   },
+   {
+    "text": "outro",
+    "start": 3.62,
+    "end": 3.82
+   },
+   {
+    "text": "jogou",
+    "start": 3.9,
+    "end": 4.22
+   }
+  ]
+ },
+ {
+  "id": 19,
+  "quem": "narrador",
+  "texto": "E isso é regra de verdade. Colt Express ganhou o Spiel des Jahres em 2015 e passou de 450 mil cópias.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/wan1/fala-19.wav",
+  "dur": 7.338,
+  "palavras_ouvidas": [
+   {
+    "text": "Isso",
+    "start": 0.14,
+    "end": 0.32
+   },
+   {
+    "text": "é",
+    "start": 0.34,
+    "end": 0.42
+   },
+   {
+    "text": "regra",
+    "start": 0.48,
+    "end": 0.78
+   },
+   {
+    "text": "de",
+    "start": 0.84,
+    "end": 0.9
+   },
+   {
+    "text": "verdade.",
+    "start": 0.98,
+    "end": 1.52
+   },
+   {
+    "text": "Colt",
+    "start": 1.9,
+    "end": 2.1
+   },
+   {
+    "text": "Express",
+    "start": 2.14,
+    "end": 2.64
+   },
+   {
+    "text": "ganhou",
+    "start": 2.72,
+    "end": 3.02
+   },
+   {
+    "text": "o",
+    "start": 3.02,
+    "end": 3.04
+   },
+   {
+    "text": "Spiel",
+    "start": 3.14,
+    "end": 3.42
+   },
+   {
+    "text": "des",
+    "start": 3.48,
+    "end": 3.68
+   },
+   {
+    "text": "Jahres",
+    "start": 3.72,
+    "end": 4.04
+   },
+   {
+    "text": "em",
+    "start": 4.08,
+    "end": 4.16
+   },
+   {
+    "text": "2015",
+    "start": 4.34,
+    "end": 4.78
+   },
+   {
+    "text": "e",
+    "start": 4.8,
+    "end": 4.82
+   },
+   {
+    "text": "passou",
+    "start": 4.92,
+    "end": 5.18
+   },
+   {
+    "text": "de",
+    "start": 5.24,
+    "end": 5.34
+   },
+   {
+    "text": "450",
+    "start": 5.66,
+    "end": 6.46
+   },
+   {
+    "text": "mil",
+    "start": 6.5,
+    "end": 6.6
+   },
+   {
+    "text": "cópias",
+    "start": 6.68,
+    "end": 7.06
+   }
+  ]
+ },
+ {
+  "id": 20,
+  "quem": "narrador",
+  "texto": "Quando o trem sai do túnel, o Wan tá no teto. Com a maleta.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/wan1/fala-20.wav",
+  "dur": 3.363,
+  "palavras_ouvidas": [
+   {
+    "text": "Quando",
+    "start": 0.1,
+    "end": 0.28
+   },
+   {
+    "text": "o",
+    "start": 0.3,
+    "end": 0.38
+   },
+   {
+    "text": "trem",
+    "start": 0.42,
+    "end": 0.62
+   },
+   {
+    "text": "sai",
+    "start": 0.68,
+    "end": 0.82
+   },
+   {
+    "text": "do",
+    "start": 0.84,
+    "end": 0.9
+   },
+   {
+    "text": "túnel,",
+    "start": 1.0,
+    "end": 1.24
+   },
+   {
+    "text": "o",
+    "start": 1.38,
+    "end": 1.46
+   },
+   {
+    "text": "Juan",
+    "start": 1.48,
+    "end": 1.68
+   },
+   {
+    "text": "tá",
+    "start": 1.76,
+    "end": 1.86
+   },
+   {
+    "text": "no",
+    "start": 1.88,
+    "end": 2.02
+   },
+   {
+    "text": "teto",
+    "start": 2.08,
+    "end": 2.36
+   },
+   {
+    "text": "com",
+    "start": 2.56,
+    "end": 2.62
+   },
+   {
+    "text": "a",
+    "start": 2.66,
+    "end": 2.7
+   },
+   {
+    "text": "maleta",
+    "start": 2.74,
+    "end": 3.12
+   }
+  ]
+ },
+ {
+  "id": 21,
+  "quem": "wan",
+  "texto": "O plano mudou.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/wan1/fala-21.wav",
+  "dur": 1.136,
+  "palavras_ouvidas": [
+   {
+    "text": "O",
+    "start": 0.06,
+    "end": 0.1
+   },
+   {
+    "text": "plano",
+    "start": 0.2,
+    "end": 0.5
+   },
+   {
+    "text": "mudou",
+    "start": 0.54,
+    "end": 0.86
+   }
+  ]
+ },
+ {
+  "id": 22,
+  "quem": "narrador",
+  "texto": "E atrás dele, o Caolho já virou a carta de tiro.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/wan1/fala-22.wav",
+  "dur": 2.619,
+  "palavras_ouvidas": [
+   {
+    "text": "E",
+    "start": 0.06,
+    "end": 0.1
+   },
+   {
+    "text": "atrás",
+    "start": 0.16,
+    "end": 0.42
+   },
+   {
+    "text": "dele,",
+    "start": 0.46,
+    "end": 0.62
+   },
+   {
+    "text": "o",
+    "start": 0.72,
+    "end": 0.76
+   },
+   {
+    "text": "caolho",
+    "start": 0.84,
+    "end": 1.18
+   },
+   {
+    "text": "já",
+    "start": 1.22,
+    "end": 1.32
+   },
+   {
+    "text": "virou",
+    "start": 1.36,
+    "end": 1.56
+   },
+   {
+    "text": "a",
+    "start": 1.6,
+    "end": 1.62
+   },
+   {
+    "text": "carta",
+    "start": 1.72,
+    "end": 1.94
+   },
+   {
+    "text": "de",
+    "start": 1.98,
+    "end": 2.04
+   },
+   {
+    "text": "tiro",
+    "start": 2.12,
+    "end": 2.36
+   }
+  ]
+ },
+ {
+  "id": 23,
+  "quem": "narrador",
+  "texto": "Agora é com você.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/wan1/fala-23.wav",
+  "dur": 1.12,
+  "palavras_ouvidas": [
+   {
+    "text": "Agora",
+    "start": 0.1,
+    "end": 0.3
+   },
+   {
+    "text": "é",
+    "start": 0.34,
+    "end": 0.38
+   },
+   {
+    "text": "com",
+    "start": 0.42,
+    "end": 0.54
+   },
+   {
+    "text": "você",
+    "start": 0.56,
+    "end": 0.86
+   }
+  ]
+ },
+ {
+  "id": 24,
+  "quem": "narrador",
+  "texto": "Se acha que o Wan te traiu, soca ele. A maleta cai no teto.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/wan1/fala-24.wav",
+  "dur": 3.214,
+  "palavras_ouvidas": [
+   {
+    "text": "Se",
+    "start": 0.1,
+    "end": 0.16
+   },
+   {
+    "text": "acha",
+    "start": 0.22,
+    "end": 0.42
+   },
+   {
+    "text": "que",
+    "start": 0.44,
+    "end": 0.52
+   },
+   {
+    "text": "o",
+    "start": 0.54,
+    "end": 0.62
+   },
+   {
+    "text": "Juan",
+    "start": 0.64,
+    "end": 0.8
+   },
+   {
+    "text": "te",
+    "start": 0.86,
+    "end": 0.98
+   },
+   {
+    "text": "traiu,",
+    "start": 1.02,
+    "end": 1.26
+   },
+   {
+    "text": "soca",
+    "start": 1.42,
+    "end": 1.68
+   },
+   {
+    "text": "ele.",
+    "start": 1.78,
+    "end": 1.94
+   },
+   {
+    "text": "A",
+    "start": 1.98,
+    "end": 2.0
+   },
+   {
+    "text": "maleta",
+    "start": 2.06,
+    "end": 2.36
+   },
+   {
+    "text": "cai",
+    "start": 2.4,
+    "end": 2.5
+   },
+   {
+    "text": "no",
+    "start": 2.54,
+    "end": 2.64
+   },
+   {
+    "text": "teto",
+    "start": 2.68,
+    "end": 2.96
+   }
+  ]
+ },
+ {
+  "id": 25,
+  "quem": "narrador",
+  "texto": "Se acha que ele tá te protegendo, atira no Caolho. Ele ganha uma bala inútil no baralho.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/wan1/fala-25.wav",
+  "dur": 4.346,
+  "palavras_ouvidas": [
+   {
+    "text": "Se",
+    "start": 0.1,
+    "end": 0.18
+   },
+   {
+    "text": "acha",
+    "start": 0.24,
+    "end": 0.4
+   },
+   {
+    "text": "que",
+    "start": 0.46,
+    "end": 0.5
+   },
+   {
+    "text": "ele",
+    "start": 0.54,
+    "end": 0.68
+   },
+   {
+    "text": "tá",
+    "start": 0.7,
+    "end": 0.78
+   },
+   {
+    "text": "te",
+    "start": 0.82,
+    "end": 0.9
+   },
+   {
+    "text": "protegendo,",
+    "start": 0.92,
+    "end": 1.46
+   },
+   {
+    "text": "atira",
+    "start": 1.52,
+    "end": 1.76
+   },
+   {
+    "text": "no",
+    "start": 1.8,
+    "end": 1.88
+   },
+   {
+    "text": "caolho.",
+    "start": 1.92,
+    "end": 2.26
+   },
+   {
+    "text": "Ele",
+    "start": 2.5,
+    "end": 2.64
+   },
+   {
+    "text": "ganha",
+    "start": 2.66,
+    "end": 2.8
+   },
+   {
+    "text": "uma",
+    "start": 2.84,
+    "end": 3.0
+   },
+   {
+    "text": "bala",
+    "start": 3.02,
+    "end": 3.26
+   },
+   {
+    "text": "inútil",
+    "start": 3.32,
+    "end": 3.64
+   },
+   {
+    "text": "no",
+    "start": 3.68,
+    "end": 3.76
+   },
+   {
+    "text": "baralho",
+    "start": 3.78,
+    "end": 4.1
+   }
+  ]
+ },
+ {
+  "id": 26,
+  "quem": "narrador",
+  "texto": "Comenta SOCAR ou ATIRAR. Manda pro amigo que te trairia por uma maleta. A maioria escreve a Parte 2.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/wan1/fala-26.wav",
+  "dur": 6.789,
+  "palavras_ouvidas": [
+   {
+    "text": "Comenta",
+    "start": 0.08,
+    "end": 0.38
+   },
+   {
+    "text": "\"socar\"",
+    "start": 0.48,
+    "end": 0.98
+   },
+   {
+    "text": "ou",
+    "start": 1.14,
+    "end": 1.22
+   },
+   {
+    "text": "\"atirar\".",
+    "start": 1.32,
+    "end": 1.9
+   },
+   {
+    "text": "Manda",
+    "start": 2.28,
+    "end": 2.48
+   },
+   {
+    "text": "pro",
+    "start": 2.56,
+    "end": 2.66
+   },
+   {
+    "text": "amigo",
+    "start": 2.68,
+    "end": 2.94
+   },
+   {
+    "text": "que",
+    "start": 3.02,
+    "end": 3.08
+   },
+   {
+    "text": "te",
+    "start": 3.14,
+    "end": 3.28
+   },
+   {
+    "text": "trairia",
+    "start": 3.32,
+    "end": 3.72
+   },
+   {
+    "text": "por",
+    "start": 3.82,
+    "end": 3.92
+   },
+   {
+    "text": "uma",
+    "start": 3.96,
+    "end": 4.08
+   },
+   {
+    "text": "maleta.",
+    "start": 4.12,
+    "end": 4.52
+   },
+   {
+    "text": "A",
+    "start": 4.8,
+    "end": 4.82
+   },
+   {
+    "text": "maioria",
+    "start": 4.88,
+    "end": 5.16
+   },
+   {
+    "text": "escreve",
+    "start": 5.2,
+    "end": 5.62
+   },
+   {
+    "text": "a",
+    "start": 5.66,
+    "end": 5.68
+   },
+   {
+    "text": "parte",
+    "start": 5.84,
+    "end": 6.1
+   },
+   {
+    "text": "dois",
+    "start": 6.18,
+    "end": 6.52
+   }
+  ]
+ }
+]

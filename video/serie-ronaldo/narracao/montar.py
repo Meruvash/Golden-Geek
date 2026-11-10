@@ -32,15 +32,8 @@ for f in falas:
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", cortado, "-af", "loudnorm=I=-16:TP=-1.5:LRA=11", "-ar", "44100", arq], check=True, timeout=120)
     copia = f"{tmp}/t{f['id']}.wav"
     subprocess.run(["cp", arq, copia], check=True)
-    r = subprocess.run(["npx", "--yes", "hyperframes@0.9.26", "transcribe", copia, "--language", "pt", "--json"], capture_output=True, text=True)
-    pal = []
-    for linha in (r.stdout + r.stderr).splitlines():
-        try:
-            j = json.loads(linha)
-        except Exception:
-            continue
-        if j.get("type") == "words":
-            pal += j["words"]
+    from stt import palavras
+    pal = palavras(copia)
     f["arquivo"] = f"voz/{ep}/fala-{f['id']:02d}.wav"
     f["dur"] = round(dur(arq), 3)
     f["palavras_ouvidas"] = pal

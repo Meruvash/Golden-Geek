@@ -11,7 +11,7 @@ VOZES = {
     "ronaldo": "YU8EsJtXFMyKMxYtheDk",  # Mário - Excited, Constant and Cheerful
     "lukita": "7lu3ze7orhWaNeSPowWx",  # Lucas - Engaging, Captivating and Kind (jovem, pt-BR)
 }
-NUM = {"1": "um", "2": "dois", "3": "três", "5": "cinco", "6": "seis"}
+NUM = {"1": "um", "2": "dois", "3": "três", "4": "quatro", "5": "cinco", "6": "seis"}
 
 
 def norm(t):
@@ -21,16 +21,8 @@ def norm(t):
 
 
 def ouvir(arq):
-    r = subprocess.run(["npx", "--yes", "hyperframes@0.9.26", "transcribe", arq, "--language", "pt", "--json"], capture_output=True, text=True)
-    pal = []
-    for linha in (r.stdout + r.stderr).splitlines():
-        try:
-            j = json.loads(linha)
-        except Exception:
-            continue
-        if j.get("type") == "words":
-            pal += j["words"]
-    return " ".join(p["text"] for p in pal)
+    from stt import palavras
+    return " ".join(p["text"] for p in palavras(arq))
 
 
 def tts(texto, voz, semente, saida, modelo="eleven_v3"):
