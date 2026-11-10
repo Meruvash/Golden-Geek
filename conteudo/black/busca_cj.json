@@ -51,6 +51,7 @@
  },
  "acima de r 199 limitado": null,
  "acima de r 200 limitado": null,
+ "acima de r 240 limitado": null,
  "acima de r 249 limitado": null,
  "acima de r 299 limitado": null,
  "acima de r 79 limitado": null,
@@ -650,6 +651,17 @@
   "ref": null,
   "ref_dias": 0,
   "slug": "chronology-the-game-of-all-time",
+  "tipo": "game"
+ },
+ "chrononauts": {
+  "bgg": 6.19071,
+  "editora": "Looney Labs",
+  "imagem": "https://uploads.comparajogos.com.br/img/c8e0d45cfa39343b4b283991616f9b892b45a4f0.jpg",
+  "menor": null,
+  "nome": "Chrononauts",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "chrononauts",
   "tipo": "game"
  },
  "civilization a new dawn terra incognita": {
@@ -2357,6 +2369,7 @@
  "menor preco do ano world wonders compita estrategicamente para 1 5 jogadores maiores de 14 anos": null,
  "menor preco dos ultimos 30 dias asmodee hitster verao jogo de tabuleiro idade 14 2 a 10 jogadores 30 minutos por partida": null,
  "menor preco dos ultimos 30 dias asmodee marvel united spider geddon jogo de tabuleiro 1 a 4 jogadores 40 min cooperativo": null,
+ "menor preco dos ultimos 30 dias caper europe jogo de cartas 2 jogadores idade 10 35 minutos por partida": null,
  "menor preco dos ultimos 30 dias cmon death may die season 2 model dmd002": null,
  "menor preco dos ultimos 30 dias concordia venus expansion": null,
  "menor preco dos ultimos 30 dias devir 7th seal jogo de tabuleiro 1 jogador": null,
@@ -2771,6 +2784,7 @@
   "tipo": "expansion"
  },
  "portal games imperial settlers rise of the empire": null,
+ "portal games neuroshima hex 3 0 desert tribes": null,
  "posthuman resistence": null,
  "pot de vin": {
   "bgg": 6.20763,
@@ -3861,6 +3875,17 @@
   "slug": "where-in-the-world-is-carmen-sandiego-card-game",
   "tipo": "game"
  },
+ "wings of glory world war 2 supermarine spitfire mk i squadron pack": {
+  "bgg": 7.8,
+  "editora": "Ares Games",
+  "imagem": "https://uploads.comparajogos.com.br/img/31ef601902c0a03791c08239d418fbc6885e62fb.jpg",
+  "menor": null,
+  "nome": "Wings of Glory: World War 2 – Supermarine Spitfire Mk.I Squadron Pack",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "wings-of-glory-world-war-2-supermarine-spitfire-mki-squadron-pack",
+  "tipo": "expansion"
+ },
  "wingspan asia jogo base para 2 jogadores": null,
  "wingspan europa expansao": null,
  "wingspan oceania expansao": null,
@@ -3888,6 +3913,17 @@
  },
  "witchcraft fast playing solitaire card game to lead a coven of witches and save the village 25th century games": null,
  "wok shael han rank 1 caixa especializada": null,
+ "wroth": {
+  "bgg": 7.51642,
+  "editora": "Chip Theory Games",
+  "imagem": "https://uploads.comparajogos.com.br/img/dbc3d62223e3ae4818a57cda4670f8e40cf7cdd6.png",
+  "menor": 422.81,
+  "nome": "Wroth",
+  "ref": 448.22,
+  "ref_dias": 32,
+  "slug": "wroth",
+  "tipo": "game"
+ },
  "you laugh you drink": {
   "bgg": 5.32,
   "editora": "DSS Games",
@@ -3899,6 +3935,7 @@
   "slug": "you-laugh-you-drink",
   "tipo": "game"
  },
+ "zombicide black ops": null,
  "zombicide the boys character pack 1 the seven survivors from the seven for epic zombie action cooperative strategy board game for ages": null,
  "zombicide toxic city mall double sided game tiles": null,
  "zombie teenz": null,
