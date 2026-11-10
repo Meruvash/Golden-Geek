@@ -9,6 +9,7 @@ VOZES = {
     "narrador": "plASsyS7JE6GCAvx9uIc",  # Marcio - Viral Hook Narrator (biblioteca ElevenLabs, pt-BR)
     "wan": "hwnuNyWkl9DjdTFykrN6",  # Adriano - Deep, Gravelly and Rugged
     "ronaldo": "YU8EsJtXFMyKMxYtheDk",  # Mário - Excited, Constant and Cheerful
+    "lukita": "7lu3ze7orhWaNeSPowWx",  # Lucas - Engaging, Captivating and Kind (jovem, pt-BR)
 }
 NUM = {"1": "um", "2": "dois", "3": "três", "5": "cinco", "6": "seis"}
 

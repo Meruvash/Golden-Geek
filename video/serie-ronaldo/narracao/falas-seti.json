@@ -1,0 +1,1162 @@
+[
+ {
+  "id": 1,
+  "quem": "narrador",
+  "texto": "E se você acordasse dentro de SETI… e os alienígenas chegassem primeiro?",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/seti/fala-01.wav",
+  "dur": 4.394,
+  "palavras_ouvidas": [
+   {
+    "text": "E",
+    "start": 0,
+    "end": 0.074
+   },
+   {
+    "text": "se",
+    "start": 0.074,
+    "end": 0.221
+   },
+   {
+    "text": "você",
+    "start": 0.221,
+    "end": 0.516
+   },
+   {
+    "text": "acordasse",
+    "start": 0.516,
+    "end": 1.179
+   },
+   {
+    "text": "dentro",
+    "start": 1.179,
+    "end": 1.621
+   },
+   {
+    "text": "de",
+    "start": 1.621,
+    "end": 1.768
+   },
+   {
+    "text": "7",
+    "start": 1.768,
+    "end": 1.842
+   },
+   {
+    "text": "e",
+    "start": 1.842,
+    "end": 1.916
+   },
+   {
+    "text": "os",
+    "start": 1.916,
+    "end": 2.063
+   },
+   {
+    "text": "alienígenas",
+    "start": 2.063,
+    "end": 2.874
+   },
+   {
+    "text": "chegassem",
+    "start": 2.874,
+    "end": 3.537
+   },
+   {
+    "text": "primeiro?",
+    "start": 3.537,
+    "end": 4.2
+   }
+  ]
+ },
+ {
+  "id": 2,
+  "quem": "narrador",
+  "texto": "O Lukita, professor de física, acordou num observatório. No jaleco, uma fórmula errada.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/seti/fala-02.wav",
+  "dur": 5.17,
+  "palavras_ouvidas": [
+   {
+    "text": "O",
+    "start": 0,
+    "end": 0.066
+   },
+   {
+    "text": "Lukita,",
+    "start": 0.066,
+    "end": 0.529
+   },
+   {
+    "text": "professor",
+    "start": 0.529,
+    "end": 1.124
+   },
+   {
+    "text": "de",
+    "start": 1.124,
+    "end": 1.257
+   },
+   {
+    "text": "física,",
+    "start": 1.257,
+    "end": 1.719
+   },
+   {
+    "text": "acordou",
+    "start": 1.719,
+    "end": 2.182
+   },
+   {
+    "text": "num",
+    "start": 2.182,
+    "end": 2.381
+   },
+   {
+    "text": "observatório,",
+    "start": 2.381,
+    "end": 3.241
+   },
+   {
+    "text": "no",
+    "start": 3.241,
+    "end": 3.373
+   },
+   {
+    "text": "Jaleco,",
+    "start": 3.373,
+    "end": 3.836
+   },
+   {
+    "text": "uma",
+    "start": 3.836,
+    "end": 4.034
+   },
+   {
+    "text": "fórmula",
+    "start": 4.034,
+    "end": 4.497
+   },
+   {
+    "text": "errada.",
+    "start": 4.497,
+    "end": 4.96
+   }
+  ]
+ },
+ {
+  "id": 3,
+  "quem": "lukita",
+  "texto": "Cinco rodadas, um sistema solar que gira e alienígenas pra descobrir? Isso é euro pesado!",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/seti/fala-03.wav",
+  "dur": 4.69,
+  "palavras_ouvidas": [
+   {
+    "text": "Cinco",
+    "start": 0,
+    "end": 0.3
+   },
+   {
+    "text": "rodadas,",
+    "start": 0.3,
+    "end": 0.78
+   },
+   {
+    "text": "um",
+    "start": 0.78,
+    "end": 0.9
+   },
+   {
+    "text": "sistema",
+    "start": 0.9,
+    "end": 1.32
+   },
+   {
+    "text": "solar",
+    "start": 1.32,
+    "end": 1.62
+   },
+   {
+    "text": "que",
+    "start": 1.62,
+    "end": 1.8
+   },
+   {
+    "text": "gira",
+    "start": 1.8,
+    "end": 2.04
+   },
+   {
+    "text": "e",
+    "start": 2.04,
+    "end": 2.1
+   },
+   {
+    "text": "alienígenas",
+    "start": 2.1,
+    "end": 2.76
+   },
+   {
+    "text": "para",
+    "start": 2.76,
+    "end": 3
+   },
+   {
+    "text": "descobrir,",
+    "start": 3,
+    "end": 3.6
+   },
+   {
+    "text": "isso",
+    "start": 3.6,
+    "end": 3.84
+   },
+   {
+    "text": "é",
+    "start": 3.84,
+    "end": 3.9
+   },
+   {
+    "text": "euro",
+    "start": 3.9,
+    "end": 4.14
+   },
+   {
+    "text": "pesado.",
+    "start": 4.14,
+    "end": 4.56
+   }
+  ]
+ },
+ {
+  "id": 4,
+  "quem": "narrador",
+  "texto": "No seu turno, você faz uma ação principal. Gastar energia pra mover a sonda é ação livre.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/seti/fala-04.wav",
+  "dur": 5.633,
+  "palavras_ouvidas": [
+   {
+    "text": "No",
+    "start": 0,
+    "end": 0.15
+   },
+   {
+    "text": "seu",
+    "start": 0.15,
+    "end": 0.374
+   },
+   {
+    "text": "turno,",
+    "start": 0.374,
+    "end": 0.823
+   },
+   {
+    "text": "você",
+    "start": 0.823,
+    "end": 1.123
+   },
+   {
+    "text": "faz",
+    "start": 1.123,
+    "end": 1.347
+   },
+   {
+    "text": "uma",
+    "start": 1.347,
+    "end": 1.572
+   },
+   {
+    "text": "ação",
+    "start": 1.572,
+    "end": 1.871
+   },
+   {
+    "text": "principal.",
+    "start": 1.871,
+    "end": 2.62
+   },
+   {
+    "text": "Gastar",
+    "start": 2.62,
+    "end": 3.051
+   },
+   {
+    "text": "energia",
+    "start": 3.051,
+    "end": 3.553
+   },
+   {
+    "text": "para",
+    "start": 3.553,
+    "end": 3.841
+   },
+   {
+    "text": "mover",
+    "start": 3.841,
+    "end": 4.199
+   },
+   {
+    "text": "a",
+    "start": 4.199,
+    "end": 4.271
+   },
+   {
+    "text": "sonda",
+    "start": 4.271,
+    "end": 4.63
+   },
+   {
+    "text": "é",
+    "start": 4.63,
+    "end": 4.702
+   },
+   {
+    "text": "ação",
+    "start": 4.702,
+    "end": 4.989
+   },
+   {
+    "text": "livre.",
+    "start": 4.989,
+    "end": 5.42
+   }
+  ]
+ },
+ {
+  "id": 5,
+  "quem": "narrador",
+  "texto": "Escanear custa um crédito e duas energias. Cada sinal marcado tira um dado do setor. Quando o setor fecha, quem tiver mais marcadores vence.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/seti/fala-05.wav",
+  "dur": 8.718,
+  "palavras_ouvidas": [
+   {
+    "text": "Escaniar",
+    "start": 0,
+    "end": 0.604
+   },
+   {
+    "text": "custa",
+    "start": 0.604,
+    "end": 0.982
+   },
+   {
+    "text": "um",
+    "start": 0.982,
+    "end": 1.133
+   },
+   {
+    "text": "crédito",
+    "start": 1.133,
+    "end": 1.662
+   },
+   {
+    "text": "e",
+    "start": 1.662,
+    "end": 1.738
+   },
+   {
+    "text": "duas",
+    "start": 1.738,
+    "end": 2.04
+   },
+   {
+    "text": "energias.",
+    "start": 2.04,
+    "end": 2.72
+   },
+   {
+    "text": "Cada",
+    "start": 2.72,
+    "end": 3.035
+   },
+   {
+    "text": "sinal",
+    "start": 3.035,
+    "end": 3.429
+   },
+   {
+    "text": "marcado",
+    "start": 3.429,
+    "end": 3.981
+   },
+   {
+    "text": "tira",
+    "start": 3.981,
+    "end": 4.296
+   },
+   {
+    "text": "um",
+    "start": 4.296,
+    "end": 4.454
+   },
+   {
+    "text": "dado",
+    "start": 4.454,
+    "end": 4.769
+   },
+   {
+    "text": "do",
+    "start": 4.769,
+    "end": 4.927
+   },
+   {
+    "text": "setor,",
+    "start": 4.927,
+    "end": 5.4
+   },
+   {
+    "text": "quando",
+    "start": 5.4,
+    "end": 5.817
+   },
+   {
+    "text": "o",
+    "start": 5.817,
+    "end": 5.887
+   },
+   {
+    "text": "setor",
+    "start": 5.887,
+    "end": 6.235
+   },
+   {
+    "text": "fecha",
+    "start": 6.235,
+    "end": 6.583
+   },
+   {
+    "text": "quem",
+    "start": 6.583,
+    "end": 6.861
+   },
+   {
+    "text": "tiver",
+    "start": 6.861,
+    "end": 7.209
+   },
+   {
+    "text": "mais",
+    "start": 7.209,
+    "end": 7.487
+   },
+   {
+    "text": "marcadores",
+    "start": 7.487,
+    "end": 8.183
+   },
+   {
+    "text": "vence.",
+    "start": 8.183,
+    "end": 8.6
+   }
+  ]
+ },
+ {
+  "id": 6,
+  "quem": "lukita",
+  "texto": "Agora eu pouso em Marte! Três energias… eu tenho exatamente três!",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/seti/fala-06.wav",
+  "dur": 4.133,
+  "palavras_ouvidas": [
+   {
+    "text": "Agora",
+    "start": 0,
+    "end": 0.413
+   },
+   {
+    "text": "eu",
+    "start": 0.413,
+    "end": 0.578
+   },
+   {
+    "text": "posto",
+    "start": 0.578,
+    "end": 0.99
+   },
+   {
+    "text": "em",
+    "start": 0.99,
+    "end": 1.155
+   },
+   {
+    "text": "Marte",
+    "start": 1.155,
+    "end": 1.568
+   },
+   {
+    "text": "3",
+    "start": 1.568,
+    "end": 1.65
+   },
+   {
+    "text": "energias,",
+    "start": 1.65,
+    "end": 2.393
+   },
+   {
+    "text": "eu",
+    "start": 2.393,
+    "end": 2.558
+   },
+   {
+    "text": "tenho",
+    "start": 2.558,
+    "end": 2.97
+   },
+   {
+    "text": "exatamente",
+    "start": 2.97,
+    "end": 3.795
+   },
+   {
+    "text": "3.",
+    "start": 3.795,
+    "end": 3.96
+   }
+  ]
+ },
+ {
+  "id": 7,
+  "quem": "narrador",
+  "texto": "Pousar dá uma pista de vida e pontos. E o primeiro a pousar ainda leva dados.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/seti/fala-07.wav",
+  "dur": 4.362,
+  "palavras_ouvidas": [
+   {
+    "text": "Pousar",
+    "start": 0,
+    "end": 0.403
+   },
+   {
+    "text": "dá",
+    "start": 0.403,
+    "end": 0.537
+   },
+   {
+    "text": "uma",
+    "start": 0.537,
+    "end": 0.738
+   },
+   {
+    "text": "pista",
+    "start": 0.738,
+    "end": 1.074
+   },
+   {
+    "text": "de",
+    "start": 1.074,
+    "end": 1.208
+   },
+   {
+    "text": "vida",
+    "start": 1.208,
+    "end": 1.476
+   },
+   {
+    "text": "e",
+    "start": 1.476,
+    "end": 1.543
+   },
+   {
+    "text": "pontos,",
+    "start": 1.543,
+    "end": 2.013
+   },
+   {
+    "text": "e",
+    "start": 2.013,
+    "end": 2.08
+   },
+   {
+    "text": "o",
+    "start": 2.08,
+    "end": 2.147
+   },
+   {
+    "text": "primeiro",
+    "start": 2.147,
+    "end": 2.684
+   },
+   {
+    "text": "a",
+    "start": 2.684,
+    "end": 2.751
+   },
+   {
+    "text": "pousar",
+    "start": 2.751,
+    "end": 3.154
+   },
+   {
+    "text": "ainda",
+    "start": 3.154,
+    "end": 3.489
+   },
+   {
+    "text": "leva",
+    "start": 3.489,
+    "end": 3.757
+   },
+   {
+    "text": "dados.",
+    "start": 3.757,
+    "end": 4.16
+   }
+  ]
+ },
+ {
+  "id": 8,
+  "quem": "narrador",
+  "texto": "Pista do céu, pista do pouso, pista dos dados. As três casas se fecharam… e a espécie foi descoberta.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/seti/fala-08.wav",
+  "dur": 5.941,
+  "palavras_ouvidas": [
+   {
+    "text": "pista",
+    "start": 0,
+    "end": 0.349
+   },
+   {
+    "text": "do",
+    "start": 0.349,
+    "end": 0.488
+   },
+   {
+    "text": "céu,",
+    "start": 0.488,
+    "end": 0.767
+   },
+   {
+    "text": "pista",
+    "start": 0.767,
+    "end": 1.116
+   },
+   {
+    "text": "do",
+    "start": 1.116,
+    "end": 1.256
+   },
+   {
+    "text": "pouso,",
+    "start": 1.256,
+    "end": 1.674
+   },
+   {
+    "text": "pista",
+    "start": 1.674,
+    "end": 2.023
+   },
+   {
+    "text": "dos",
+    "start": 2.023,
+    "end": 2.232
+   },
+   {
+    "text": "dados.",
+    "start": 2.232,
+    "end": 2.651
+   },
+   {
+    "text": "As",
+    "start": 2.651,
+    "end": 2.79
+   },
+   {
+    "text": "três",
+    "start": 2.79,
+    "end": 3.069
+   },
+   {
+    "text": "casas",
+    "start": 3.069,
+    "end": 3.418
+   },
+   {
+    "text": "se",
+    "start": 3.418,
+    "end": 3.558
+   },
+   {
+    "text": "fecharam",
+    "start": 3.558,
+    "end": 4.116
+   },
+   {
+    "text": "e",
+    "start": 4.116,
+    "end": 4.185
+   },
+   {
+    "text": "a",
+    "start": 4.185,
+    "end": 4.255
+   },
+   {
+    "text": "espécie",
+    "start": 4.255,
+    "end": 4.743
+   },
+   {
+    "text": "foi",
+    "start": 4.743,
+    "end": 4.953
+   },
+   {
+    "text": "descoberta.",
+    "start": 4.953,
+    "end": 5.72
+   }
+  ]
+ },
+ {
+  "id": 9,
+  "quem": "lukita",
+  "texto": "Socorro! Isso não estava no manual!",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/seti/fala-09.wav",
+  "dur": 1.811,
+  "palavras_ouvidas": [
+   {
+    "text": "Socorro,",
+    "start": 0,
+    "end": 0.48
+   },
+   {
+    "text": "isso",
+    "start": 0.48,
+    "end": 0.72
+   },
+   {
+    "text": "não",
+    "start": 0.72,
+    "end": 0.9
+   },
+   {
+    "text": "estava",
+    "start": 0.9,
+    "end": 1.26
+   },
+   {
+    "text": "no",
+    "start": 1.26,
+    "end": 1.38
+   },
+   {
+    "text": "manual.",
+    "start": 1.38,
+    "end": 1.8
+   }
+  ]
+ },
+ {
+  "id": 10,
+  "quem": "narrador",
+  "texto": "Qualquer um correria. O Wan abriu o manual.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/seti/fala-10.wav",
+  "dur": 2.469,
+  "palavras_ouvidas": [
+   {
+    "text": "Qualquer",
+    "start": 0,
+    "end": 0.511
+   },
+   {
+    "text": "um",
+    "start": 0.511,
+    "end": 0.639
+   },
+   {
+    "text": "correria,",
+    "start": 0.639,
+    "end": 1.214
+   },
+   {
+    "text": "o",
+    "start": 1.214,
+    "end": 1.278
+   },
+   {
+    "text": "van",
+    "start": 1.278,
+    "end": 1.469
+   },
+   {
+    "text": "abriu",
+    "start": 1.469,
+    "end": 1.789
+   },
+   {
+    "text": "o",
+    "start": 1.789,
+    "end": 1.853
+   },
+   {
+    "text": "manual.",
+    "start": 1.853,
+    "end": 2.3
+   }
+  ]
+ },
+ {
+  "id": 11,
+  "quem": "wan",
+  "texto": "Estava, sim. Espécie descoberta: vira o tabuleiro dela, lê a ficha, e quem marcou as pistas ganha a recompensa.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/seti/fala-11.wav",
+  "dur": 9.799,
+  "palavras_ouvidas": [
+   {
+    "text": "Estava",
+    "start": 0,
+    "end": 0.876
+   },
+   {
+    "text": "sim.",
+    "start": 0.876,
+    "end": 1.46
+   },
+   {
+    "text": "Espécie",
+    "start": 1.46,
+    "end": 2.168
+   },
+   {
+    "text": "descoberta.",
+    "start": 2.168,
+    "end": 3.28
+   },
+   {
+    "text": "Vira",
+    "start": 3.28,
+    "end": 3.662
+   },
+   {
+    "text": "o",
+    "start": 3.662,
+    "end": 3.758
+   },
+   {
+    "text": "tabuleiro",
+    "start": 3.758,
+    "end": 4.619
+   },
+   {
+    "text": "dela,",
+    "start": 4.619,
+    "end": 5.097
+   },
+   {
+    "text": "lê",
+    "start": 5.097,
+    "end": 5.288
+   },
+   {
+    "text": "a",
+    "start": 5.288,
+    "end": 5.384
+   },
+   {
+    "text": "ficha,",
+    "start": 5.384,
+    "end": 5.958
+   },
+   {
+    "text": "e",
+    "start": 5.958,
+    "end": 6.053
+   },
+   {
+    "text": "quem",
+    "start": 6.053,
+    "end": 6.436
+   },
+   {
+    "text": "marcou",
+    "start": 6.436,
+    "end": 7.009
+   },
+   {
+    "text": "as",
+    "start": 7.009,
+    "end": 7.201
+   },
+   {
+    "text": "pistas",
+    "start": 7.201,
+    "end": 7.774
+   },
+   {
+    "text": "ganha",
+    "start": 7.774,
+    "end": 8.253
+   },
+   {
+    "text": "a",
+    "start": 8.253,
+    "end": 8.348
+   },
+   {
+    "text": "recompensa.",
+    "start": 8.348,
+    "end": 9.4
+   }
+  ]
+ },
+ {
+  "id": 12,
+  "quem": "wan",
+  "texto": "E as cartas alienígenas são mais fortes que as normais.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/seti/fala-12.wav",
+  "dur": 3.489,
+  "palavras_ouvidas": [
+   {
+    "text": "e",
+    "start": 0,
+    "end": 0.072
+   },
+   {
+    "text": "as",
+    "start": 0.072,
+    "end": 0.215
+   },
+   {
+    "text": "cartas",
+    "start": 0.215,
+    "end": 0.646
+   },
+   {
+    "text": "alienígenas",
+    "start": 0.646,
+    "end": 1.435
+   },
+   {
+    "text": "são",
+    "start": 1.435,
+    "end": 1.65
+   },
+   {
+    "text": "mais",
+    "start": 1.65,
+    "end": 1.937
+   },
+   {
+    "text": "fortes",
+    "start": 1.937,
+    "end": 2.367
+   },
+   {
+    "text": "que",
+    "start": 2.367,
+    "end": 2.583
+   },
+   {
+    "text": "as",
+    "start": 2.583,
+    "end": 2.726
+   },
+   {
+    "text": "normais.",
+    "start": 2.726,
+    "end": 3.3
+   }
+  ]
+ },
+ {
+  "id": 13,
+  "quem": "narrador",
+  "texto": "Eles não vieram levar o Lukita. Vieram entregar o prêmio.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/seti/fala-13.wav",
+  "dur": 3.078,
+  "palavras_ouvidas": [
+   {
+    "text": "Eles",
+    "start": 0,
+    "end": 0.24
+   },
+   {
+    "text": "não",
+    "start": 0.24,
+    "end": 0.42
+   },
+   {
+    "text": "vieram",
+    "start": 0.42,
+    "end": 0.78
+   },
+   {
+    "text": "levar",
+    "start": 0.78,
+    "end": 1.08
+   },
+   {
+    "text": "o",
+    "start": 1.08,
+    "end": 1.14
+   },
+   {
+    "text": "Lukita,",
+    "start": 1.14,
+    "end": 1.56
+   },
+   {
+    "text": "vieram",
+    "start": 1.56,
+    "end": 1.92
+   },
+   {
+    "text": "entregar",
+    "start": 1.92,
+    "end": 2.4
+   },
+   {
+    "text": "o",
+    "start": 2.4,
+    "end": 2.46
+   },
+   {
+    "text": "prêmio.",
+    "start": 2.46,
+    "end": 2.88
+   }
+  ]
+ },
+ {
+  "id": 14,
+  "quem": "wan",
+  "texto": "Agora corrige esse jaleco, professor.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/seti/fala-14.wav",
+  "dur": 2.276,
+  "palavras_ouvidas": [
+   {
+    "text": "Agora,",
+    "start": 0,
+    "end": 0.36
+   },
+   {
+    "text": "corrige",
+    "start": 0.36,
+    "end": 0.78
+   },
+   {
+    "text": "esse",
+    "start": 0.78,
+    "end": 1.02
+   },
+   {
+    "text": "jaleco,",
+    "start": 1.02,
+    "end": 1.44
+   },
+   {
+    "text": "professor.",
+    "start": 1.44,
+    "end": 2.04
+   }
+  ]
+ },
+ {
+  "id": 15,
+  "quem": "narrador",
+  "texto": "E no próximo turno: o Lukita pousa na lua, ou analisa os dados? Comenta POUSAR ou ANALISAR.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/seti/fala-15.wav",
+  "dur": 6.768,
+  "palavras_ouvidas": [
+   {
+    "text": "E",
+    "start": 0,
+    "end": 0.089
+   },
+   {
+    "text": "no",
+    "start": 0.089,
+    "end": 0.266
+   },
+   {
+    "text": "próximo",
+    "start": 0.266,
+    "end": 0.886
+   },
+   {
+    "text": "turno,",
+    "start": 0.886,
+    "end": 1.418
+   },
+   {
+    "text": "o",
+    "start": 1.418,
+    "end": 1.507
+   },
+   {
+    "text": "Lukita",
+    "start": 1.507,
+    "end": 2.039
+   },
+   {
+    "text": "pousa",
+    "start": 2.039,
+    "end": 2.482
+   },
+   {
+    "text": "na",
+    "start": 2.482,
+    "end": 2.659
+   },
+   {
+    "text": "lua",
+    "start": 2.659,
+    "end": 2.925
+   },
+   {
+    "text": "ou",
+    "start": 2.925,
+    "end": 3.103
+   },
+   {
+    "text": "analisa",
+    "start": 3.103,
+    "end": 3.723
+   },
+   {
+    "text": "os",
+    "start": 3.723,
+    "end": 3.901
+   },
+   {
+    "text": "dados,",
+    "start": 3.901,
+    "end": 4.432
+   },
+   {
+    "text": "comenta",
+    "start": 4.432,
+    "end": 5.053
+   },
+   {
+    "text": "pousar",
+    "start": 5.053,
+    "end": 5.585
+   },
+   {
+    "text": "ou",
+    "start": 5.585,
+    "end": 5.762
+   },
+   {
+    "text": "analisar.",
+    "start": 5.762,
+    "end": 6.56
+   }
+  ]
+ }
+]

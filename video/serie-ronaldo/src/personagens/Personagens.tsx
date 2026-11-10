@@ -197,3 +197,106 @@ export const Wan: React.FC<{ x: number; y: number; escala?: number; expr?: ExprW
     </g>
   );
 };
+
+// Lukita: professor de física e cientista maluco que adora euros pesados.
+// Careca e de rosto jovem (inspiração livre no Aang, sem a flecha nem outros detalhes do personagem),
+// óculos redondos de nerd, jaleco branco coberto de fórmulas. A fórmula do peito começa ERRADA (E = mc³)
+// e é corrigida no fim do episódio (formulaCerta): o "defeito que se cura" do roteiro.
+type ExprLukita = "empolgado" | "apavorado" | "feliz";
+export const Lukita: React.FC<{ x: number; y: number; escala?: number; expr?: ExprLukita; pose?: "giz" | "bracos" | "normal"; formulaCerta?: boolean; corrigindo?: number }> = ({
+  x, y, escala = 1, expr = "empolgado", pose = "normal", formulaCerta = false, corrigindo = 0,
+}) => {
+  const pele = "#f2c9a5", sombra = "#dfae88";
+  const jaleco = "#f4f6f8", jalecoSombra = "#d9e0e8", tinta = "#3d5a80";
+  return (
+    <g transform={`translate(${x - 200 * escala},${y - 880 * escala}) scale(${escala})`}>
+      <ellipse cx={200} cy={882} rx={150} ry={20} fill="#000" opacity={0.2} />
+      {/* calça e tênis */}
+      <path d="M138,640 L194,640 L188,870 L132,870 Z" fill="#3b4256" />
+      <path d="M206,640 L262,640 L268,870 L212,870 Z" fill="#333a4c" />
+      <path d="M120,858 h74 v20 h-80 Z M206,858 h74 l8,20 h-82 Z" fill="#e9573f" />
+      <path d="M118,872 h76 M206,872 h80" stroke="#f4f6f8" strokeWidth={5} />
+      {/* camisa azul e gravata-borboleta */}
+      <path d="M150,330 L250,330 L240,640 L160,640 Z" fill="#7aa6d6" />
+      <path d="M178,336 l22,14 l22,-14 l0,26 l-22,-12 l-22,12 Z" fill="#c0392b" />
+      {/* jaleco aberto, comprido */}
+      <path d="M92,350 C110,326 150,318 186,318 L170,700 L104,700 Z" fill={jaleco} />
+      <path d="M308,350 C290,326 250,318 214,318 L230,700 L296,700 Z" fill={jalecoSombra} />
+      <path d="M186,318 L150,420 L170,440 Z M214,318 L250,420 L230,440 Z" fill="#c9d2dc" />
+      {/* bolso com canetas */}
+      <path d="M232,470 h46 v44 h-46 Z" fill="#cdd5df" />
+      <path d="M242,452 v26 M254,448 v30 M266,456 v22" stroke="#3d5a80" strokeWidth={6} strokeLinecap="round" />
+      <path d="M266,456 v-6" stroke="#e9573f" strokeWidth={6} strokeLinecap="round" />
+      {/* fórmulas espalhadas no jaleco */}
+      <g fontFamily="Public Sans" fontWeight={800} fill={tinta} opacity={0.75}>
+        <text x={112} y={560} fontSize={26}>F=ma</text>
+        <text x={116} y={620} fontSize={24}>Δx/Δt</text>
+        <text x={240} y={600} fontSize={30}>∫</text>
+        <text x={236} y={650} fontSize={22}>λ=c/f</text>
+      </g>
+      {/* a fórmula do peito: errada até ser corrigida */}
+      <g fontFamily="Public Sans" fontWeight={900}>
+        <text x={122} y={462} fontSize={30} fill={tinta}>E=mc</text>
+        <text x={203} y={446} fontSize={22} fill={formulaCerta ? tinta : "#c0392b"} opacity={formulaCerta ? 0 : 1 - corrigindo}>3</text>
+        <text x={203} y={446} fontSize={22} fill="#1f9d55" opacity={formulaCerta ? 1 : corrigindo}>2</text>
+        {formulaCerta || corrigindo > 0 ? <path d="M142,474 l6,8 l14,-18" stroke="#1f9d55" strokeWidth={5} fill="none" strokeLinecap="round" opacity={formulaCerta ? 1 : corrigindo} /> : null}
+      </g>
+      {/* braços por pose */}
+      {pose === "giz" ? (
+        <g>
+          <path d="M96,360 C72,430 90,500 140,530 L158,508 C122,486 112,430 122,388 Z" fill={jaleco} />
+          <path d="M304,360 C340,320 356,250 344,190 L316,192 C324,246 312,296 282,332 Z" fill={jalecoSombra} />
+          <circle cx={146} cy={522} r={20} fill={pele} />
+          <circle cx={332} cy={182} r={20} fill={sombra} />
+          <rect x={326} y={142} width={12} height={34} rx={4} fill="#f8f4e8" transform="rotate(18 332 160)" />
+        </g>
+      ) : pose === "bracos" ? (
+        <g>
+          <path d="M96,360 C60,320 48,250 62,186 L90,190 C84,246 98,296 122,332 Z" fill={jaleco} />
+          <path d="M304,360 C340,320 352,250 338,186 L310,190 C316,246 302,296 278,332 Z" fill={jalecoSombra} />
+          <circle cx={74} cy={176} r={20} fill={pele} /><circle cx={326} cy={176} r={20} fill={sombra} />
+        </g>
+      ) : (
+        <g>
+          <path d="M96,360 C74,440 86,520 112,590 L140,584 C120,520 112,450 122,388 Z" fill={jaleco} />
+          <path d="M304,360 C326,440 314,520 288,590 L260,584 C280,520 288,450 278,388 Z" fill={jalecoSombra} />
+          <circle cx={124} cy={596} r={20} fill={pele} /><circle cx={276} cy={596} r={20} fill={sombra} />
+        </g>
+      )}
+      {/* cabeça careca, rosto jovem e redondo */}
+      <path d="M176,300 h48 v26 h-48 Z" fill={sombra} />
+      <circle cx={92} cy={206} r={22} fill={sombra} /><circle cx={308} cy={206} r={22} fill={sombra} />
+      <Cabeca pele={pele} sombra={sombra} cx={200} cy={196} r={116} />
+      <ellipse cx={168} cy={118} rx={40} ry={16} fill="#fff" opacity={0.35} transform="rotate(-20 168 118)" />
+      {/* sobrancelhas finas */}
+      {expr === "apavorado" ? (
+        <g stroke="#6b4a33" strokeWidth={8} strokeLinecap="round"><path d="M140,150 L178,140" /><path d="M222,140 L260,150" /></g>
+      ) : (
+        <g stroke="#6b4a33" strokeWidth={8} strokeLinecap="round" fill="none"><path d="M138,152 q22,-16 42,-4" /><path d="M220,148 q20,-12 42,4" /></g>
+      )}
+      {/* óculos redondos */}
+      <g fill="#ffffff" fillOpacity={0.25} stroke="#2b2f3a" strokeWidth={8}>
+        <circle cx={160} cy={196} r={34} /><circle cx={240} cy={196} r={34} />
+      </g>
+      <path d="M194,194 q6,-8 12,0" stroke="#2b2f3a" strokeWidth={7} fill="none" />
+      <path d="M126,190 L96,184 M274,190 L304,184" stroke="#2b2f3a" strokeWidth={7} />
+      {/* olhos */}
+      {expr === "feliz" ? (
+        <g stroke="#1b1d24" strokeWidth={7} fill="none" strokeLinecap="round"><path d="M146,200 q14,-12 28,0" /><path d="M226,200 q14,-12 28,0" /></g>
+      ) : expr === "apavorado" ? (
+        <g><circle cx={160} cy={198} r={14} fill="#fff" /><circle cx={240} cy={198} r={14} fill="#fff" /><circle cx={160} cy={198} r={6} fill="#1b1d24" /><circle cx={240} cy={198} r={6} fill="#1b1d24" /></g>
+      ) : (
+        <g><circle cx={160} cy={198} r={9} fill="#1b1d24" /><circle cx={240} cy={198} r={9} fill="#1b1d24" /><circle cx={163} cy={194} r={3} fill="#fff" /><circle cx={243} cy={194} r={3} fill="#fff" /></g>
+      )}
+      {/* boca */}
+      {expr === "apavorado" ? (
+        <ellipse cx={200} cy={262} rx={18} ry={24} fill="#5a2e24" />
+      ) : expr === "feliz" ? (
+        <path d="M170,250 q30,26 60,0" stroke="#5a2e24" strokeWidth={8} fill="none" strokeLinecap="round" />
+      ) : (
+        <g><path d="M164,246 q36,40 72,0 Z" fill="#5a2e24" /><path d="M176,250 h48 v8 h-48 Z" fill="#fff" /></g>
+      )}
+      {expr === "apavorado" ? <path d="M286,150 q10,16 0,26 q-10,-10 0,-26 Z" fill="#9fd3f5" /> : null}
+    </g>
+  );
+};
