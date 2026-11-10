@@ -110,6 +110,37 @@ Perfil com ~239 mil seguidores. A Parte 1 fez **16 milhões de visualizações e
 - No episódio seguinte, a prova social: "68% de vocês mandaram ele para a nebulosa…".
 - Link para o tutorial do site como a "ficha" do jogador.
 
+## 4d. Mapa de batidas ASSISTIDO do @saveo.house (Partes 4, 5 e 8, assistidas em 10/11/2026)
+
+Vídeos enviados pelo editor, vistos com `/watch` (folhas de contato a cada 3 s) e transcritos palavra por palavra.
+Este é o molde. O roteiro novo é escrito **batida por batida contra esta tabela**, não "inspirado" nela.
+
+**Números medidos:** 97 s, 108 s e 178 s. Fala a ~2,7 palavras/s, frases de 2 a 8 palavras ("You swung hard." / "Nothing." / "Too far.").
+**Um plano novo a cada ~2,5 s** (cerca de 35 imagens diferentes em 95 s). Não existe "palco" parado por 15 s.
+
+| # | Batida | Tempo (P4 / P5 / P8) | O que acontece | Exemplo real |
+|---|---|---|---|---|
+| 1 | **Gancho na 2ª pessoa com número** | 0–5 s | Você + valor + conflito em 2 frases. Na P5 e P8, um **título grande em 2 cores** no topo (branco + magenta) | "You stole $10 million. Your cousin wants half or he talks." / título "SHE MAKES PEOPLE **DISAPPEAR**." |
+| 2 | **Recap pelo voto do público** | 5–10 s | A escolha da parte anterior, em %, vira o motor da cena | "88% of you said no, so he went for the bags." / cartão "THE COMMENTS DECIDE · DAY 1 HIDE 61% · DAY 2 PAY 59%" |
+| 3 | **Ação em frases curtas** | 10–25 s | Consequência física, um plano por frase, câmera colada na ação | "You swung hard. He came back harder." |
+| 4 | **Semente de mistério** | 23–38 s | Um detalhe visto "por um segundo" que liga a uma parte antiga | "for one second, you saw the plate… same car that was parked outside Dre's place" |
+| 5 | **Silêncio e escolha forçada** | 38–50 s | Tentativas que falham, decisão seca | "You called him. Nothing. You called again. So you did the only thing left." |
+| 6 | **Carimbo de hora + fala citada** | 54–65 s | Relógio na tela ("5:40 AM"), fala de outro personagem entre aspas, piada seca | "Morning, Dre. Nice eyebrow. Where's your chain?" |
+| 7 | **"O que você não sabe"** | 65–75 s | A virada: informação que o público não tinha | "And here's what Dre doesn't know. Police are allowed to lie to him." |
+| 8 | **Cartão "ISSO É REAL"** | 75–80 s | Papel creme sobre fundo escuro, fato do mundo real, carimbo magenta (ALLOWED / REAL) + lista "PERSONS OF INTEREST" com @ dos comentaristas | "The Supreme Court allowed exactly that…" / "In Japan, they're called night movers." |
+| 9 | **Escolha com preço claro** | 80–90 s | "Se você acha X, faça A. Se acha Y, faça B." Botões grandes com subtítulo do custo | "If you think he talks, run right now. If you think he lies, stay." RUN *if he talks* / STAY *if he lies* |
+| 10 | **CTA de comentário + compartilhamento** | 88–97 s | Uma palavra no comentário; segundo voto do outro personagem na conta dele; "A maioria escreve a Parte N"; "manda para o primo que você levaria" | Tela final com 2 cartões: "YOUR VOTE RUN or STAY / DRE'S VOTE TALK or LIE · Together they write Part 5." |
+
+**Elementos fixos de tela (sempre visíveis):**
+- **Painel de estado no topo** (CASH / BANKED / SUSPICION %), que muda na hora do evento (o número cai, a barra sobe). É a "ficha" do jogo.
+- **Legenda palavra por palavra** no terço de baixo, uma linha, palavra dita em branco e as seguintes em cinza.
+- **Rótulos pequenos em monoespaçada** ("THE FIXER", "DRE VOTES → @cousin.dre", "5:40 AM", "CAM 03 · LIVE").
+- **Paleta**: cenas pintadas escuras e iluminadas por uma fonte motivada (farol, lanterna, abajur, néon) + um único acento magenta para a interface.
+
+**Desenho:** personagens **simples** (cabeça branca em forma de feijão, olhos de ponto, sobrancelha que atua, contorno grosso de nanquim, membros de borracha) dentro de **cenários ricos**: luz volumétrica, chuva, poeira, reflexo no chão molhado, objetos em close (corrente, celular, formulário). A qualidade está **no cenário, na luz e no número de planos**, não num personagem complicado.
+
+**O que fizemos errado na primeira "O Assalto do Wan"** (para não repetir): 5 palcos em 63 s (um a cada 12 s, a referência troca a cada 2,5 s); sem painel de estado; sem recap pelo voto; sem "o que você não sabe"; sem cartão "isso é real"; escolha sem preço escrito; personagem complexo e cenário pobre (o contrário da referência).
+
 ## 5. Desenho (Claude Drawing)
 
 Fonte: github.com/cloveric/claude-drawing-skill (MIT), `docs/PRINCIPLES.md`. A skill pinta com código (Python + Pillow, sem modelo de imagem), em 83 estilos.

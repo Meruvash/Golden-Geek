@@ -167,3 +167,18 @@ O vetor chapado com personagem de cabeça redonda foi aposentado pelo editor ("n
 - **A luz do personagem segue a cena** (`LUZ_POENTE`, `LUZ_LAMPIAO`, `LUZ_LUA`).
 - **Atmosfera Shinkai em toda cena** (`src/colt/luz.tsx`): raios de Tyndall, poeira luminosa, flare de lente, separação quente/frio, pássaros, fumaça, tremor de calor. O mundo nunca para.
 - **Movimento (Huashu 09, seção 3)**: câmera só se move em evento; entra devagar (0,3–0,4 s), sai rápido (~0,18 s) e para; carimbo de palavra 1,55 → 0,94 → 1,0 em 0,17 s; piscar a cada ~3,5 s; respiração leve.
+
+## 12. Regras contra a repetição dos erros (10/11/2026)
+
+O editor reprovou "O Assalto do Wan" porque o roteiro só pegou o tema da referência e a imagem não subiu de nível. Estas regras valem para todo vídeo de série:
+
+1. **Referência só conta se foi assistida.** Vídeo baixado ou enviado, visto com `/watch` (folha de contato) e transcrito palavra por palavra. Análise feita só pela legenda do post não vale. Sem o vídeo, pedir o arquivo ao editor antes de escrever.
+2. **Mapa de batidas antes do roteiro.** A referência vira uma tabela com tempo, batida e exemplo, salva em `video/ROTEIRO_REFERENCIAS.md` (o molde do @saveo.house está na seção 4d).
+3. **Roteiro em tabela lado a lado**: coluna da batida da referência, coluna da nossa fala, coluna do plano. Toda batida do molde aparece ou tem a justificativa escrita de por que saiu. O editor aprova a tabela antes de qualquer voz.
+4. **Ritmo de planos da referência**: um plano novo a cada 2–3 s. Plano parado por mais de 4 s precisa de motivo.
+5. **Tudo desenhado em código, sem IA de imagem** (decisão do editor, 10/11/2026). A qualidade sobe pelo cenário pintado (`claude-drawing`), pela luz motivada (`src/colt/luz.tsx`), pelo número de planos e pela câmera, não por um personagem mais complicado.
+6. **Contrato das skills**: a tabela do roteiro diz qual skill responde por cada coisa (roteiro: `vox-director` + molde 4d; cenário: `claude-drawing`; movimento: `huashu-art-motion` seção 09; tipografia: `bang-motion`; checagem: `huashu-art-motion` QA). Skill instalada e não usada é falha do processo.
+7. **Teste de 10 s antes da produção**: os primeiros 10 s em 1080x1080, lado a lado com um quadro da referência no mesmo momento. O editor aprova o teste, depois vem o resto.
+8. **Formato quadrado 1080x1080 sempre** (seção 4).
+
+O passo a passo está na skill do projeto `/video-serie`.
