@@ -43,15 +43,15 @@ const Cel: React.FC<{ id: string; d: string; base: string; sombra: string; luz: 
 
 type ExprHD = "calmo" | "sorriso" | "serio";
 
-export const WanHD: React.FC<{ x: number; y: number; escala?: number; expr?: ExprHD; pose?: "bracos" | "carta"; faroeste?: boolean; luz?: Luz; id?: string }> = ({
-  x, y, escala = 1, expr = "calmo", pose = "bracos", faroeste = true, luz = LUZ_POENTE, id = "wan",
+export const WanHD: React.FC<{ x: number; y: number; escala?: number; expr?: ExprHD; pose?: "bracos" | "carta"; faroeste?: boolean; luz?: Luz; id?: string; piscar?: boolean; respira?: number }> = ({
+  x, y, escala = 1, expr = "calmo", pose = "bracos", faroeste = true, luz = LUZ_POENTE, id = "wan", piscar = false, respira = 0,
 }) => {
   const k = (s: string) => `${id}-${s}`;
   const PELE = "#f6d2b8", PELE_S = "#d9a487";
   const TERNO = "#34363f", TERNO_S = "#22232a";
   const CABELO = "#9a9aa3", CABELO_S = "#6b6b75";
   return (
-    <g transform={`translate(${x - 200 * escala},${y - 880 * escala}) scale(${escala})`}>
+    <g transform={`translate(${x - 200 * escala},${y - 880 * escala * (1 + respira)}) scale(${escala},${escala * (1 + respira)})`}>
       <ellipse cx={200} cy={884} rx={150} ry={18} fill="#000" opacity={0.28} />
       {/* pernas e sapatos */}
       <Cel id={k("perna1")} d="M124,600 L198,600 L192,856 L134,856 Z" base={TERNO} sombra={TERNO_S} luz={luz} sd={18} />
@@ -138,7 +138,7 @@ export const WanHD: React.FC<{ x: number; y: number; escala?: number; expr?: Exp
           <stop offset="0" stopColor="#2a1810" /><stop offset="0.6" stopColor="#6b3e22" /><stop offset="1" stopColor="#c58a4a" />
         </linearGradient>
       </defs>
-      {[174, 226].map((ex, i) => (
+      {piscar ? [174, 226].map((ex) => <path key={ex} d={`M${ex - 15},164 Q${ex},170 ${ex + 15},164`} stroke="#2a1b14" strokeWidth={4.4} fill="none" strokeLinecap="round" />) : [174, 226].map((ex, i) => (
         <g key={ex}>
           <ellipse cx={ex} cy={164} rx={14} ry={expr === "serio" ? 6 : 8} fill="#fdfaf4" />
           <ellipse cx={ex + (i ? -2 : 2)} cy={165} rx={7} ry={expr === "serio" ? 6 : 8} fill={`url(#${k("iris")})`} />
