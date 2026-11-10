@@ -36,42 +36,6 @@
   "imagem": "https://eliteboardgamers.com.br/undaunted-battle-of-britain/capa.jpg"
  },
  {
-  "id": "n-stomp-leder-games-robos-contra-kaijus",
-  "tema": "noticias",
-  "hora": "2026-11-05T10:05:39Z",
-  "titulo": "📰 Leder Games, editora de Root, revela Stomp, cooperativo de destreza com robôs contra kaijus",
-  "texto": "É o primeiro jogo novo que a Leder mostra desde que o autor e o ilustrador de Root saíram para abrir outro estúdio, em janeiro. A resposta da casa foi trocar a guerra…",
-  "url": "https://eliteboardgamers.com.br/noticias/stomp-leder-games-robos-contra-kaijus/",
-  "imagem": "https://eliteboardgamers.com.br/noticias/capas/stomp-leder-games-robos-contra-kaijus.jpg"
- },
- {
-  "id": "n-diversao-offline-2027-tavernando-ingressos",
-  "tema": "noticias",
-  "hora": "2026-11-05T10:05:39Z",
-  "titulo": "📰 Diversão Offline 2027 troca de tiqueteira e vende o primeiro lote na Black Friday pela Tavernando",
-  "texto": "Trocar a tiqueteira usada desde a primeira edição parece assunto de planilha, mas o que está em jogo é a fila do credenciamento, aquela que transforma a manhã de sábado…",
-  "url": "https://eliteboardgamers.com.br/noticias/diversao-offline-2027-tavernando-ingressos/",
-  "imagem": "https://eliteboardgamers.com.br/noticias/capas/diversao-offline-2027-tavernando-ingressos.jpg"
- },
- {
-  "id": "n-pilgrims-curious-adventures-jelly-monster",
-  "tema": "noticias",
-  "hora": "2026-11-05T10:05:39Z",
-  "titulo": "📰 Pilgrims: Curious Adventures, jogo baseado no game da Amanita Design, chega ao Brasil pela Jelly Monster",
-  "texto": "O Pilgrims do computador é um jogo de apontar e clicar em que a graça é combinar objetos e personagens só para ver o desastre que sai dali. O de tabuleiro trocou a…",
-  "url": "https://eliteboardgamers.com.br/noticias/pilgrims-curious-adventures-jelly-monster/",
-  "imagem": "https://eliteboardgamers.com.br/noticias/capas/80886.jpg"
- },
- {
-  "id": "n-ragnarok-online-jogo-de-tabuleiro-kickstarter",
-  "tema": "noticias",
-  "hora": "2026-11-05T10:05:39Z",
-  "titulo": "📰 Ragnarok Online vira jogo de tabuleiro e encerra campanha com 13 vezes a meta no Kickstarter",
-  "texto": "Para muita gente que cresceu em lan house no Brasil, Prontera foi a primeira praça pública da internet, com feirinha de poção e tudo. Agora ela cabe numa caixa com…",
-  "url": "https://eliteboardgamers.com.br/noticias/ragnarok-online-jogo-de-tabuleiro-kickstarter/",
-  "imagem": "https://eliteboardgamers.com.br/noticias/capas/ragnarok-online-jogo-de-tabuleiro-kickstarter.jpg"
- },
- {
   "id": "r-castle-combo",
   "tema": "resenhas",
   "hora": "2026-11-05T11:11:25Z",
@@ -106,15 +70,6 @@
   "texto": "Dois vikings, dois ingleses, um saco de cubos e o Tratado de Wedmore na mão de quem estiver perdendo.",
   "url": "https://eliteboardgamers.com.br/878/",
   "imagem": "https://eliteboardgamers.com.br/878/capa.jpg"
- },
- {
-  "id": "n-kelp-offshore-offspring-expansao-gamefound",
-  "tema": "noticias",
-  "hora": "2026-11-06T10:02:48Z",
-  "titulo": "📰 Kelp ganha expansão Offshore Offspring no Gamefound, com filhotes de tubarão e polvo",
-  "texto": "Kelp chegou ao Brasil pela Galápagos em 2025, e a expansão mexe justo no lado que a crítica achava monótono: o polvo, que passava turnos escondido como quem foge de…",
-  "url": "https://eliteboardgamers.com.br/noticias/kelp-offshore-offspring-expansao-gamefound/",
-  "imagem": "https://eliteboardgamers.com.br/noticias/capas/54051.jpg"
  },
  {
   "id": "n-coveiros-vs-caveiras-pre-venda-amaze-games",
@@ -358,5 +313,50 @@
   "texto": "Tente fazer o barulho de um gato num pandeiro sem miar. Agora perca para uma criança de seis anos que conseguiu.",
   "url": "https://eliteboardgamers.com.br/mysterium-kids/",
   "imagem": "https://eliteboardgamers.com.br/mysterium-kids/capa.jpg"
+ },
+ {
+  "id": "n-clash-royale-the-grand-arena-kickstarter",
+  "tema": "noticias",
+  "hora": "2026-11-10T09:53:54Z",
+  "titulo": "📰 Clash Royale: The Grand Arena, jogo de tabuleiro da Supercell, passa de US$ 143 mil",
+  "texto": "O jogo de celular que ensinou uma geração a gastar gema agora quer ensinar a gastar papelão. A gente reconhece o esforço: elixir, torre e coroa cabem bem numa mesa. O…",
+  "url": "https://eliteboardgamers.com.br/noticias/clash-royale-the-grand-arena-kickstarter/",
+  "imagem": "https://eliteboardgamers.com.br/noticias/capas/clash-royale-the-grand-arena-kickstarter.jpg"
+ },
+ {
+  "id": "n-satisfactory-reta-final-quase-3-milhoes",
+  "tema": "noticias",
+  "hora": "2026-11-10T09:53:54Z",
+  "titulo": "📰 Satisfactory: The Board Game chega ao último dia no Gamefound com quase 3 milhões de euros",
+  "texto": "Um videogame sobre construir fábrica eficiente virou um jogo de tabuleiro que arrecadou com a eficiência de uma fábrica. A gente acha a ironia perfeita. O que falta…",
+  "url": "https://eliteboardgamers.com.br/noticias/satisfactory-reta-final-quase-3-milhoes/",
+  "imagem": "https://eliteboardgamers.com.br/noticias/capas/satisfactory-reta-final-quase-3-milhoes.jpg"
+ },
+ {
+  "id": "n-abalone-minimundos-25-de-marco-meeplestarter",
+  "tema": "noticias",
+  "hora": "2026-11-10T09:53:54Z",
+  "titulo": "📰 Abalone, MiniMundos e 25 de Março entram na fila de financiamentos do MeepleStarter",
+  "texto": "Tem de tudo na fila: um abstrato de 1987 que vende como novo, dois jogos de bolso e um jogo sobre a rua de comércio mais caótica do Brasil. A gente torce por 25 de…",
+  "url": "https://eliteboardgamers.com.br/noticias/abalone-minimundos-25-de-marco-meeplestarter/",
+  "imagem": "https://eliteboardgamers.com.br/noticias/capas/abalone-minimundos-25-de-marco-meeplestarter.jpg"
+ },
+ {
+  "id": "n-night-at-the-zoo-pondscape-fecham-331-mil",
+  "tema": "noticias",
+  "hora": "2026-11-10T09:53:54Z",
+  "titulo": "📰 Night at the Zoo e Pondscape chegam ao último dia com R$ 331 mil no MeepleStarter",
+  "texto": "Treze vezes a meta para dois jogos de bicho, um com pinguim que escorrega e outro com sapo que come mosca. A gente acha merecido: o nome de Holek na caixa vende mais…",
+  "url": "https://eliteboardgamers.com.br/noticias/night-at-the-zoo-pondscape-fecham-331-mil/",
+  "imagem": "https://eliteboardgamers.com.br/noticias/capas/night-at-the-zoo-pondscape-fecham-331-mil.jpg"
+ },
+ {
+  "id": "n-harakiri-blades-of-honor-first-turn-meeplestarter",
+  "tema": "noticias",
+  "hora": "2026-11-10T09:53:54Z",
+  "titulo": "📰 Harakiri: Blades of Honor chega ao Brasil em inglês pela First Turn Games no MeepleStarter",
+  "texto": "Dungeon crawler de samurai, com miniatura, caixa secreta e envelope lacrado: tudo o que a gente jura que não vai mais comprar e compra. A novidade é poder pagar em…",
+  "url": "https://eliteboardgamers.com.br/noticias/harakiri-blades-of-honor-first-turn-meeplestarter/",
+  "imagem": "https://eliteboardgamers.com.br/noticias/capas/harakiri-blades-of-honor-first-turn-meeplestarter.jpg"
  }
 ]
