@@ -2299,7 +2299,7 @@
     "api": {
      "anuncio": "MLB7059219852",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-09T21:48-03:00",
+     "hora": "2026-11-09T23:48-03:00",
      "nivel": "loja oficial",
      "preco": 224.88,
      "vendedor": "Mercado Livre Casa",
@@ -2379,7 +2379,7 @@
     "api": {
      "anuncio": "MLB4190398693",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-09T21:48-03:00",
+     "hora": "2026-11-09T23:48-03:00",
      "nivel": "MercadoLíder silver",
      "preco": 239.99,
      "vendedor": "LOJA MEDIEVAL",
@@ -2459,7 +2459,7 @@
     "api": {
      "anuncio": "MLB5665150722",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-09T21:48-03:00",
+     "hora": "2026-11-09T23:48-03:00",
      "nivel": "MercadoLíder silver",
      "preco": 249.99,
      "vendedor": "LOJA MEDIEVAL",
@@ -14901,7 +14901,7 @@
     "api": {
      "anuncio": "MLB5476987368",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-09T21:48-03:00",
+     "hora": "2026-11-09T23:48-03:00",
      "nivel": "MercadoLíder silver",
      "preco": 129.99,
      "vendedor": "BATATINHA_BRINQUEDOS_",
@@ -14921,7 +14921,7 @@
     "api": {
      "anuncio": "MLB4077170069",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-09T21:48-03:00",
+     "hora": "2026-11-09T23:48-03:00",
      "nivel": "MercadoLíder silver",
      "preco": 139.9,
      "vendedor": "BBMAGAZINE_",
@@ -14941,7 +14941,7 @@
     "api": {
      "anuncio": "MLB6575110564",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-09T21:48-03:00",
+     "hora": "2026-11-09T23:48-03:00",
      "nivel": "loja oficial",
      "preco": 159.19,
      "vendedor": "LOJA CUTIM",
@@ -15020,7 +15020,7 @@
     "api": {
      "anuncio": "MLB7588327018",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-09T21:48-03:00",
+     "hora": "2026-11-09T23:48-03:00",
      "nivel": "loja oficial",
      "preco": 135.06,
      "vendedor": "PETMOGI",
@@ -24905,6 +24905,15 @@
     "vendedor": null
    },
    {
+    "api": {
+     "anuncio": "MLB7041643732",
+     "fonte": "API do Mercado Livre",
+     "hora": "2026-11-09T23:49-03:00",
+     "nivel": "loja oficial",
+     "preco": 65.99,
+     "vendedor": "HYPER_CLUB",
+     "vendedor_ok": true
+    },
     "atualizado": "2026-11-09T23:36:37.618+00:00",
     "de": 65.99,
     "loja": "Mercado Livre",
@@ -33109,6 +33118,15 @@
     "vendedor": null
    },
    {
+    "api": {
+     "anuncio": "MLB3835461385",
+     "fonte": "API do Mercado Livre",
+     "hora": "2026-11-09T23:49-03:00",
+     "nivel": "loja oficial",
+     "preco": 118.0,
+     "vendedor": "KTOYSCOLLECTOR",
+     "vendedor_ok": true
+    },
     "atualizado": "2026-11-09T23:36:38.774+00:00",
     "de": 114.99,
     "loja": "Mercado Livre",
@@ -33168,7 +33186,7 @@
     "api": {
      "anuncio": "MLB7964982084",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-09T21:49-03:00",
+     "hora": "2026-11-09T23:49-03:00",
      "nivel": "loja oficial",
      "preco": 299.99,
      "vendedor": "Mercado Livre Casa",
@@ -35360,6 +35378,15 @@
     "vendedor": null
    },
    {
+    "api": {
+     "anuncio": "MLB4034839363",
+     "fonte": "API do Mercado Livre",
+     "hora": "2026-11-09T23:49-03:00",
+     "nivel": "MercadoLíder gold",
+     "preco": 59.9,
+     "vendedor": "DREAMTOYS BRINQUEDOS",
+     "vendedor_ok": true
+    },
     "atualizado": "2026-11-09T23:36:58.305+00:00",
     "de": 59.9,
     "loja": "Mercado Livre",
@@ -35371,6 +35398,15 @@
     "vendedor": null
    },
    {
+    "api": {
+     "anuncio": "MLB4695897855",
+     "fonte": "API do Mercado Livre",
+     "hora": "2026-11-09T23:49-03:00",
+     "nivel": "loja oficial",
+     "preco": 75.0,
+     "vendedor": "INFINITYCARR",
+     "vendedor_ok": true
+    },
     "atualizado": "2026-11-09T23:37:02.154+00:00",
     "de": 72.75,
     "loja": "Mercado Livre",
@@ -35382,6 +35418,15 @@
     "vendedor": null
    },
    {
+    "api": {
+     "anuncio": "MLB7124115008",
+     "fonte": "API do Mercado Livre",
+     "hora": "2026-11-09T23:49-03:00",
+     "nivel": "loja oficial",
+     "preco": 77.75,
+     "vendedor": "BRINKCENTERJ",
+     "vendedor_ok": true
+    },
     "atualizado": "2026-11-09T23:36:45.553+00:00",
     "de": 77.75,
     "loja": "Mercado Livre",
@@ -71765,6 +71810,15 @@
     "vendedor": null
    },
    {
+    "api": {
+     "anuncio": "MLB4985891074",
+     "fonte": "API do Mercado Livre",
+     "hora": "2026-11-09T23:50-03:00",
+     "nivel": "MercadoLíder silver",
+     "preco": 172.0,
+     "vendedor": "BABYQUIPO",
+     "vendedor_ok": true
+    },
     "atualizado": "2026-11-09T23:37:01.212+00:00",
     "de": 172,
     "loja": "Mercado Livre",
@@ -119135,7 +119189,7 @@
     "api": {
      "anuncio": "MLB3680967416",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-09T21:51-03:00",
+     "hora": "2026-11-09T23:51-03:00",
      "nivel": "MercadoLíder platinum",
      "preco": 220.7,
      "vendedor": "NEWSTATION SOROCABA",
@@ -119955,6 +120009,15 @@
     "vendedor": null
    },
    {
+    "api": {
+     "anuncio": "MLB5407166974",
+     "fonte": "API do Mercado Livre",
+     "hora": "2026-11-09T23:51-03:00",
+     "nivel": "loja oficial",
+     "preco": 44.99,
+     "vendedor": "GROWJOGOS",
+     "vendedor_ok": true
+    },
     "atualizado": "2026-11-09T23:36:49.347+00:00",
     "de": 44.99,
     "loja": "Mercado Livre",
@@ -119966,6 +120029,15 @@
     "vendedor": null
    },
    {
+    "api": {
+     "anuncio": "MLB6762466482",
+     "fonte": "API do Mercado Livre",
+     "hora": "2026-11-09T23:51-03:00",
+     "nivel": "loja oficial",
+     "preco": 94.0,
+     "vendedor": "TRPSTORELOJA2",
+     "vendedor_ok": true
+    },
     "atualizado": "2026-11-09T23:36:52.821+00:00",
     "de": 94,
     "loja": "Mercado Livre",
@@ -119977,6 +120049,15 @@
     "vendedor": null
    },
    {
+    "api": {
+     "anuncio": "MLB3591346293",
+     "fonte": "API do Mercado Livre",
+     "hora": "2026-11-09T23:51-03:00",
+     "nivel": "loja oficial",
+     "preco": 116.99,
+     "vendedor": "LOJABKFB",
+     "vendedor_ok": true
+    },
     "atualizado": "2026-11-09T23:36:38.774+00:00",
     "de": 116.99,
     "loja": "Mercado Livre",
@@ -126182,6 +126263,15 @@
     "vendedor": null
    },
    {
+    "api": {
+     "anuncio": "MLB3569798017",
+     "fonte": "API do Mercado Livre",
+     "hora": "2026-11-09T23:51-03:00",
+     "nivel": "loja oficial",
+     "preco": 41.99,
+     "vendedor": "Mercado Livre Casa",
+     "vendedor_ok": true
+    },
     "atualizado": "2026-11-09T23:36:57.552+00:00",
     "de": 41.99,
     "loja": "Mercado Livre",
@@ -147446,6 +147536,15 @@
     "vendedor": null
    },
    {
+    "api": {
+     "anuncio": "MLB2909731482",
+     "fonte": "API do Mercado Livre",
+     "hora": "2026-11-09T23:51-03:00",
+     "nivel": "MercadoLíder silver",
+     "preco": 175.39,
+     "vendedor": "SANTEC_COMERCIAL",
+     "vendedor_ok": true
+    },
     "atualizado": "2026-11-09T23:37:02.154+00:00",
     "de": 169.95,
     "loja": "Mercado Livre",
@@ -156321,6 +156420,15 @@
     "vendedor": null
    },
    {
+    "api": {
+     "anuncio": "MLB3544942779",
+     "fonte": "API do Mercado Livre",
+     "hora": "2026-11-09T23:52-03:00",
+     "nivel": "loja oficial",
+     "preco": 24.99,
+     "vendedor": "Mercado Livre Casa",
+     "vendedor_ok": true
+    },
     "atualizado": "2026-11-09T23:37:02.154+00:00",
     "de": 24.99,
     "loja": "Mercado Livre",
@@ -168648,7 +168756,7 @@
     "api": {
      "anuncio": "MLB4219165897",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-09T21:52-03:00",
+     "hora": "2026-11-09T23:52-03:00",
      "nivel": "MercadoLíder silver",
      "preco": 54.99,
      "vendedor": "RSG ECOMMERCE",
@@ -168668,7 +168776,7 @@
     "api": {
      "anuncio": "MLB5445171335",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-09T21:52-03:00",
+     "hora": "2026-11-09T23:52-03:00",
      "nivel": "MercadoLíder silver",
      "preco": 44.99,
      "vendedor": "PIGPUG_2",
