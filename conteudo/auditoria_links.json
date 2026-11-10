@@ -1,5 +1,5 @@
 {
- "gerado": "2026-11-10T04:47-03:00",
+ "gerado": "2026-11-10T17:04-03:00",
  "user_agent": "EliteBoardgamers/1.0 (+https://eliteboardgamers.com.br/black/robo/)",
  "links": [
   {
@@ -81,30 +81,17 @@
    "url_final": "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/expansoes/jogo-iron-maiden-character-pack-3-expansao-p"
   },
   {
-   "url": "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/exploding-kittens-bem-vs-mal-p",
-   "categoria": "oferta (mais lojas)",
-   "paginas": [
-    "/black/"
-   ],
-   "jogo": "Exploding Kittens: Bem vs Mal",
-   "loja": "Bravo Jogos",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
-   "url_final": "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/exploding-kittens-bem-vs-mal-p"
-  },
-  {
-   "url": "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-3-capitulos-p",
+   "url": "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-batman-everybody-lies-p",
    "categoria": "oferta",
    "paginas": [
     "/black/"
    ],
-   "jogo": "3 Capítulos",
+   "jogo": "Batman: Everybody Lies",
    "loja": "Bravo Jogos",
    "status": "ok",
    "motivo": "página do produto",
    "http": 200,
-   "url_final": "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-3-capitulos-p"
+   "url_final": "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-batman-everybody-lies-p"
   },
   {
    "url": "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-battleship-grab-e-go-p",
@@ -484,19 +471,6 @@
    "url_final": "https://www.alquimistasdosjogos.com.br/jogos/the-mandalorian-adventures-cla-de-dois"
   },
   {
-   "url": "https://www.amazon.com.br/dp/B078PSP9TJ",
-   "categoria": "oferta",
-   "paginas": [
-    "/black/"
-   ],
-   "jogo": "Munchkin",
-   "loja": "Amazon",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
-   "url_final": "https://www.amazon.com.br/dp/B078PSP9TJ"
-  },
-  {
    "url": "https://www.amazon.com.br/dp/B0793MT3Y6",
    "categoria": "oferta",
    "paginas": [
@@ -589,7 +563,7 @@
   },
   {
    "url": "https://www.caixinhaboardgames.com.br/produtos/3-capitulos/?entry_path=category",
-   "categoria": "oferta (mais lojas)",
+   "categoria": "oferta",
    "paginas": [
     "/black/"
    ],
@@ -625,19 +599,6 @@
    "motivo": "página do produto",
    "http": 200,
    "url_final": "https://www.caixinhaboardgames.com.br/produtos/a-fake-artist-goes-to-new-york/?entry_path=category"
-  },
-  {
-   "url": "https://www.caixinhaboardgames.com.br/produtos/algae-inc/?entry_path=category",
-   "categoria": "oferta (mais lojas)",
-   "paginas": [
-    "/black/"
-   ],
-   "jogo": "Algae, Inc.",
-   "loja": "Caixinha Boardgames",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
-   "url_final": "https://www.caixinhaboardgames.com.br/produtos/algae-inc/?entry_path=category"
   },
   {
    "url": "https://www.caixinhaboardgames.com.br/produtos/anachrony-edicao-essencial/?entry_path=category",
@@ -1095,6 +1056,19 @@
    "url_final": "https://www.cangaiajogos.com.br/trolls-e-princesas"
   },
   {
+   "url": "https://www.elfosecia.com.br/old-london-bridge-sleeves-jogo-de-tabuleiro-vem-pra-mesa",
+   "categoria": "oferta",
+   "paginas": [
+    "/black/"
+   ],
+   "jogo": "Old London Bridge",
+   "loja": "Elfos & Cia",
+   "status": "ok",
+   "motivo": "página do produto",
+   "http": 200,
+   "url_final": "https://www.elfosecia.com.br/old-london-bridge-sleeves-jogo-de-tabuleiro-vem-pra-mesa"
+  },
+  {
    "url": "https://www.espacoarcs.com.br/jogos/zenkai-adventure-caverna-glacial",
    "categoria": "oferta",
    "paginas": [
@@ -1316,6 +1290,45 @@
    "url_final": "https://www.masmorra.com.br/produtos/bgexit28pt"
   },
   {
+   "url": "https://www.masmorra.com.br/produtos/bgparptit",
+   "categoria": "oferta",
+   "paginas": [
+    "/black/"
+   ],
+   "jogo": "Paris: La Cité de la Lumière",
+   "loja": "Masmorra",
+   "status": "ok",
+   "motivo": "página do produto",
+   "http": 200,
+   "url_final": "https://www.masmorra.com.br/produtos/bgparptit"
+  },
+  {
+   "url": "https://www.masmorra.com.br/produtos/bgredpt",
+   "categoria": "oferta",
+   "paginas": [
+    "/black/"
+   ],
+   "jogo": "The Red Cathedral",
+   "loja": "Masmorra",
+   "status": "ok",
+   "motivo": "página do produto",
+   "http": 200,
+   "url_final": "https://www.masmorra.com.br/produtos/bgredpt"
+  },
+  {
+   "url": "https://www.masmorra.com.br/produtos/bgregtr",
+   "categoria": "oferta",
+   "paginas": [
+    "/black/"
+   ],
+   "jogo": "Regicide",
+   "loja": "Masmorra",
+   "status": "ok",
+   "motivo": "página do produto",
+   "http": 200,
+   "url_final": "https://www.masmorra.com.br/produtos/bgregtr"
+  },
+  {
    "url": "https://www.masmorra.com.br/produtos/con11824",
    "categoria": "oferta",
    "paginas": [
@@ -1336,9 +1349,9 @@
    ],
    "jogo": "Deep Sea Adventure Boost",
    "loja": "Meca dos Jogos",
-   "status": "não verificável",
-   "motivo": "robots.txt respondeu 403 (bloqueio)",
-   "http": null,
+   "status": "ok",
+   "motivo": "página do produto",
+   "http": 200,
    "url_final": "https://www.mecadosjogos.com.br/deep-sea-adventure-boost-p1148"
   },
   {
@@ -1349,9 +1362,9 @@
    ],
    "jogo": "FateFlip: Arrastado pelo Mar",
    "loja": "Meca dos Jogos",
-   "status": "não verificável",
-   "motivo": "robots.txt respondeu 403 (bloqueio)",
-   "http": null,
+   "status": "ok",
+   "motivo": "página do produto",
+   "http": 200,
    "url_final": "https://www.mecadosjogos.com.br/fateflip-arrastado-pelo-mar-p549"
   },
   {
@@ -1362,9 +1375,9 @@
    ],
    "jogo": "Funocracy",
    "loja": "Meca dos Jogos",
-   "status": "não verificável",
-   "motivo": "robots.txt respondeu 403 (bloqueio)",
-   "http": null,
+   "status": "ok",
+   "motivo": "página do produto",
+   "http": 200,
    "url_final": "https://www.mecadosjogos.com.br/funocracy-p914"
   },
   {
@@ -1375,9 +1388,9 @@
    ],
    "jogo": "Power Hungry Pets",
    "loja": "Meca dos Jogos",
-   "status": "não verificável",
-   "motivo": "robots.txt respondeu 403 (bloqueio)",
-   "http": null,
+   "status": "ok",
+   "motivo": "página do produto",
+   "http": 200,
    "url_final": "https://www.mecadosjogos.com.br/power-hungry-pets-p694"
   },
   {
@@ -1391,20 +1404,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB16092602%3Fpdp_filters%3Ditem_id%253AMLB3992344771&tid=87348ac1-5336-44eb-bf54-1f56c7a7a648"
-  },
-  {
-   "url": "https://www.mercadolivre.com.br/p/MLB19050659",
-   "categoria": "oferta",
-   "paginas": [
-    "/black/"
-   ],
-   "jogo": "CATAN",
-   "loja": "Mercado Livre",
-   "status": "não verificável",
-   "motivo": "robots.txt proíbe robôs nesta página",
-   "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB19050659&tid=1d34eed3-a251-49c8-9497-34cd15a4399e"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB16092602%3Fpdp_filters%3Ditem_id%253AMLB3992344771&tid=8f775fcc-0899-4b52-b816-223d221f49a0"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB19307754?pdp_filters=item_id:MLB3625543867",
@@ -1417,7 +1417,20 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB19307754%3Fpdp_filters%3Ditem_id%253AMLB3625543867&tid=5e8cb7dc-204f-4097-9f78-55ec94b4a4e5"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB19307754%3Fpdp_filters%3Ditem_id%253AMLB3625543867&tid=40c99f9b-04b7-454a-b9e9-b1d770869ff2"
+  },
+  {
+   "url": "https://www.mercadolivre.com.br/p/MLB19492018",
+   "categoria": "oferta",
+   "paginas": [
+    "/black/"
+   ],
+   "jogo": "Imagem & Ação Júnior",
+   "loja": "Mercado Livre",
+   "status": "não verificável",
+   "motivo": "robots.txt proíbe robôs nesta página",
+   "http": null,
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB19492018&tid=0fb0b160-e307-477a-80e3-538780918ddb"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB19709546?pdp_filters=item_id:MLB3509401581",
@@ -1430,7 +1443,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB19709546%3Fpdp_filters%3Ditem_id%253AMLB3509401581&tid=ca27b910-f4d6-4dc6-bb24-3a32d8ec861c"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB19709546%3Fpdp_filters%3Ditem_id%253AMLB3509401581&tid=72c67010-1d5d-4d2f-9a5f-195134dccfca"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB19709959?pdp_filters=item_id:MLB5495621455",
@@ -1443,7 +1456,20 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB19709959%3Fpdp_filters%3Ditem_id%253AMLB5495621455&tid=3abc194d-dad9-4780-9ed6-77322b3f296d"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB19709959%3Fpdp_filters%3Ditem_id%253AMLB5495621455&tid=cad80fe1-c5ee-44f8-82c7-65da485c35ac"
+  },
+  {
+   "url": "https://www.mercadolivre.com.br/p/MLB19807546?pdp_filters=item_id:MLB7970556384",
+   "categoria": "oferta",
+   "paginas": [
+    "/black/"
+   ],
+   "jogo": "Super Cats",
+   "loja": "Mercado Livre",
+   "status": "não verificável",
+   "motivo": "robots.txt proíbe robôs nesta página",
+   "http": null,
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB19807546%3Fpdp_filters%3Ditem_id%253AMLB7970556384&tid=3830293c-492c-4ef5-8a14-16a2f1d652c4"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB20270328?pdp_filters=item_id:MLB4302754925",
@@ -1456,7 +1482,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB20270328%3Fpdp_filters%3Ditem_id%253AMLB4302754925&tid=72b4e5a8-dc52-432d-94ce-2ab2784bd768"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB20270328%3Fpdp_filters%3Ditem_id%253AMLB4302754925&tid=1e0b01b6-cf11-4ee3-b03a-3b2584921116"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB20997954?pdp_filters=item_id:MLB7810701466",
@@ -1469,7 +1495,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB20997954%3Fpdp_filters%3Ditem_id%253AMLB7810701466&tid=950e02b1-af92-4b1a-a668-5efc3be3b2fd"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB20997954%3Fpdp_filters%3Ditem_id%253AMLB7810701466&tid=e5867efc-1901-468d-9c9f-00da4f0b2ce8"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB21150345?pdp_filters=item_id:MLB5487190699",
@@ -1482,7 +1508,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB21150345%3Fpdp_filters%3Ditem_id%253AMLB5487190699&tid=fc935853-8e7e-46a5-984b-a2fab838ac0e"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB21150345%3Fpdp_filters%3Ditem_id%253AMLB5487190699&tid=67785f8c-289c-4ad2-ac88-c594873ebf02"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB21419841?pdp_filters=item_id:MLB7706752846",
@@ -1495,7 +1521,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB21419841%3Fpdp_filters%3Ditem_id%253AMLB7706752846&tid=57d0bfac-1f07-4353-b2fb-539d2c28cafa"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB21419841%3Fpdp_filters%3Ditem_id%253AMLB7706752846&tid=e7a04ed5-34e7-459f-9c5e-654a5dbf6f43"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB22322369",
@@ -1508,7 +1534,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB22322369&tid=89569208-caf0-4ca8-9b57-716f362a2f07"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB22322369&tid=e772aa10-7113-47ef-87d3-7dff37667cc7"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB22659012?pdp_filters=item_id:MLB4647459246",
@@ -1521,7 +1547,20 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB22659012%3Fpdp_filters%3Ditem_id%253AMLB4647459246&tid=2af525e5-389d-4a73-a747-311c61cada44"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB22659012%3Fpdp_filters%3Ditem_id%253AMLB4647459246&tid=2f0084a1-0504-409f-a3cf-728def9c2373"
+  },
+  {
+   "url": "https://www.mercadolivre.com.br/p/MLB22659013",
+   "categoria": "oferta",
+   "paginas": [
+    "/black/"
+   ],
+   "jogo": "Azul: Mestre Chocolatier",
+   "loja": "Mercado Livre",
+   "status": "não verificável",
+   "motivo": "robots.txt proíbe robôs nesta página",
+   "http": null,
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB22659013&tid=3783b26d-a75c-4ba9-b56a-c9f439145176"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB22709368?pdp_filters=item_id:MLB5652240400",
@@ -1534,7 +1573,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB22709368%3Fpdp_filters%3Ditem_id%253AMLB5652240400&tid=5ff8d2df-c8bd-4822-bf02-db0eaeef87af"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB22709368%3Fpdp_filters%3Ditem_id%253AMLB5652240400&tid=304976d8-299e-40c3-b1d2-953ba8e53483"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB23229744?pdp_filters=item_id:MLB4736921050",
@@ -1547,7 +1586,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB23229744%3Fpdp_filters%3Ditem_id%253AMLB4736921050&tid=764df00d-5c6d-4e77-b4a7-6cbe67cf23b7"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB23229744%3Fpdp_filters%3Ditem_id%253AMLB4736921050&tid=4436de2f-93cb-4826-bc6f-033c8d5387b9"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB23425290?pdp_filters=item_id:MLB3625614489",
@@ -1560,7 +1599,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB23425290%3Fpdp_filters%3Ditem_id%253AMLB3625614489&tid=f35a5afc-7f4d-457a-b8f9-78eda0015b76"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB23425290%3Fpdp_filters%3Ditem_id%253AMLB3625614489&tid=c8af4969-a7ed-4920-8b3f-2f4c411ae786"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB25811837?pdp_filters=item_id:MLB4598515657",
@@ -1573,7 +1612,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB25811837%3Fpdp_filters%3Ditem_id%253AMLB4598515657&tid=66d4f079-32a7-4f19-a4cb-c8382e1fc5f4"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB25811837%3Fpdp_filters%3Ditem_id%253AMLB4598515657&tid=70f808e0-e75e-4649-a666-ffd25b7583d5"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB26098574?pdp_filters=item_id:MLB3913887582",
@@ -1586,7 +1625,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB26098574%3Fpdp_filters%3Ditem_id%253AMLB3913887582&tid=5f779481-767c-48a6-b4b5-71a6113a2572"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB26098574%3Fpdp_filters%3Ditem_id%253AMLB3913887582&tid=d231a5c8-9309-471f-8021-fcd84fbabc04"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB27358652",
@@ -1599,7 +1638,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB27358652&tid=704aefc4-9277-4828-83d9-bbd4dcf9d05c"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB27358652&tid=123bc7ed-13b0-497d-a888-780a69e9b601"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB34102404?pdp_filters=item_id:MLB3741193397",
@@ -1612,7 +1651,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB34102404%3Fpdp_filters%3Ditem_id%253AMLB3741193397&tid=14f316c6-9daa-4f67-94cf-086fa1a63915"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB34102404%3Fpdp_filters%3Ditem_id%253AMLB3741193397&tid=baa30cd5-ee6f-42f3-908a-01881f93c894"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB35742049?pdp_filters=item_id:MLB5337457588",
@@ -1625,7 +1664,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB35742049%3Fpdp_filters%3Ditem_id%253AMLB5337457588&tid=6dd5a233-ac69-47c5-a290-81348e7425ad"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB35742049%3Fpdp_filters%3Ditem_id%253AMLB5337457588&tid=8d2252d0-b8e6-46f7-a5d6-c78d9301eea5"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB36701022",
@@ -1638,7 +1677,20 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB36701022&tid=c5ee04ec-1f3c-40f4-ad13-5fdd358fc795"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB36701022&tid=d4d23570-1a1d-4f73-b580-35faa0d55df5"
+  },
+  {
+   "url": "https://www.mercadolivre.com.br/p/MLB38492802?pdp_filters=item_id:MLB7417796102",
+   "categoria": "oferta",
+   "paginas": [
+    "/black/"
+   ],
+   "jogo": "Revanche",
+   "loja": "Mercado Livre",
+   "status": "não verificável",
+   "motivo": "robots.txt proíbe robôs nesta página",
+   "http": null,
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB38492802%3Fpdp_filters%3Ditem_id%253AMLB7417796102&tid=b5540c98-8500-4f37-8e95-856594c2fe29"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB39292103?pdp_filters=item_id:MLB3976803439",
@@ -1651,7 +1703,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB39292103%3Fpdp_filters%3Ditem_id%253AMLB3976803439&tid=28defe41-3b73-4646-aa64-86a351a5e2c3"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB39292103%3Fpdp_filters%3Ditem_id%253AMLB3976803439&tid=bb94e2d9-eeda-4348-8595-97a80149c525"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB40442410?pdp_filters=item_id:MLB3946840827",
@@ -1664,7 +1716,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB40442410%3Fpdp_filters%3Ditem_id%253AMLB3946840827&tid=5728681b-657e-4b9f-a789-585aded772bc"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB40442410%3Fpdp_filters%3Ditem_id%253AMLB3946840827&tid=fbb07eb2-e8e8-4312-833c-4d70fe1a99d4"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB47329717?pdp_filters=item_id:MLB6214538674",
@@ -1677,7 +1729,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB47329717%3Fpdp_filters%3Ditem_id%253AMLB6214538674&tid=2028274d-4b15-45d1-8b84-30aa76df876b"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB47329717%3Fpdp_filters%3Ditem_id%253AMLB6214538674&tid=9c1a3c31-3258-46f4-a2d0-c7a60b684105"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB48880144?pdp_filters=item_id:MLB4219165897",
@@ -1690,7 +1742,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB48880144%3Fpdp_filters%3Ditem_id%253AMLB4219165897&tid=cfee5889-8662-441c-a3b6-355ab0218cd1"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB48880144%3Fpdp_filters%3Ditem_id%253AMLB4219165897&tid=755bbbc2-14a9-48ca-9b2e-e56687422410"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB51032628?pdp_filters=item_id:MLB5524577636",
@@ -1703,10 +1755,10 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB51032628%3Fpdp_filters%3Ditem_id%253AMLB5524577636&tid=607859c8-2105-4d04-8624-f086b07faae5"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB51032628%3Fpdp_filters%3Ditem_id%253AMLB5524577636&tid=635f2aa0-d4f7-4509-b5ea-91ebbdac0b3f"
   },
   {
-   "url": "https://www.mercadolivre.com.br/p/MLB58552201?pdp_filters=item_id:MLB4359851835",
+   "url": "https://www.mercadolivre.com.br/p/MLB58552201?pdp_filters=item_id:MLB4486296871",
    "categoria": "oferta",
    "paginas": [
     "/black/"
@@ -1716,7 +1768,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB58552201%3Fpdp_filters%3Ditem_id%253AMLB4359851835&tid=3daa07ee-6470-43b3-b7be-e9bff20391f2"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB58552201%3Fpdp_filters%3Ditem_id%253AMLB4486296871&tid=77d4414b-28aa-4d87-b3d5-68f817327522"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB62548317?pdp_filters=item_id:MLB6293749138",
@@ -1729,7 +1781,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB62548317%3Fpdp_filters%3Ditem_id%253AMLB6293749138&tid=7d6325f2-1308-48a2-991a-29aec46fb3c8"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB62548317%3Fpdp_filters%3Ditem_id%253AMLB6293749138&tid=09057f3a-314c-4de8-a60b-dca457c96ccc"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB62648581?pdp_filters=item_id:MLB4335054021",
@@ -1742,7 +1794,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB62648581%3Fpdp_filters%3Ditem_id%253AMLB4335054021&tid=c68c0c56-2060-4f1d-84ba-3537a62d4bfe"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB62648581%3Fpdp_filters%3Ditem_id%253AMLB4335054021&tid=f877f561-f5d7-4ec9-8256-b22ee5c12454"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB65630789?pdp_filters=item_id:MLB6040727544",
@@ -1755,20 +1807,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB65630789%3Fpdp_filters%3Ditem_id%253AMLB6040727544&tid=10cf75af-732d-4d00-8e24-8fd26fd6a28a"
-  },
-  {
-   "url": "https://www.mercadolivre.com.br/p/MLB66563756?pdp_filters=item_id:MLB7967447310",
-   "categoria": "oferta",
-   "paginas": [
-    "/black/"
-   ],
-   "jogo": "Jogo da Vida",
-   "loja": "Mercado Livre",
-   "status": "não verificável",
-   "motivo": "robots.txt proíbe robôs nesta página",
-   "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB66563756%3Fpdp_filters%3Ditem_id%253AMLB7967447310&tid=c51da3fb-d4b6-44b9-9138-f3764db83f73"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB65630789%3Fpdp_filters%3Ditem_id%253AMLB6040727544&tid=49f0b4c0-5dab-465f-b3f3-c256d69dad07"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB66827548?pdp_filters=item_id:MLB6660299536",
@@ -1781,7 +1820,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB66827548%3Fpdp_filters%3Ditem_id%253AMLB6660299536&tid=6b22d100-aca1-4899-85bd-ec8374b67f4a"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB66827548%3Fpdp_filters%3Ditem_id%253AMLB6660299536&tid=63b0efcc-51bf-4208-8618-62cbe042996f"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB67988580",
@@ -1794,7 +1833,20 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB67988580&tid=290f1491-a699-472b-9b01-e1ec028093d7"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB67988580&tid=00e88f36-bde1-4696-9bf7-f861bbaf6312"
+  },
+  {
+   "url": "https://www.mercadolivre.com.br/p/MLB70580092?pdp_filters=item_id:MLB6901090112",
+   "categoria": "oferta",
+   "paginas": [
+    "/black/"
+   ],
+   "jogo": "UNO Flip Attack",
+   "loja": "Mercado Livre",
+   "status": "não verificável",
+   "motivo": "robots.txt proíbe robôs nesta página",
+   "http": null,
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB70580092%3Fpdp_filters%3Ditem_id%253AMLB6901090112&tid=84d8f7ff-7a18-45ff-babc-8e59cb8f0dbd"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB74523091?pdp_filters=item_id:MLB4812795033",
@@ -1807,7 +1859,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB74523091%3Fpdp_filters%3Ditem_id%253AMLB4812795033&tid=c92df62d-53ed-4a98-914c-af6fb890b85c"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB74523091%3Fpdp_filters%3Ditem_id%253AMLB4812795033&tid=36f6e8e2-2906-4af3-94f9-e9d6ed768f81"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB75042549?pdp_filters=item_id:MLB4860618321",
@@ -1820,23 +1872,10 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB75042549%3Fpdp_filters%3Ditem_id%253AMLB4860618321&tid=2219267e-7c56-4869-a8c6-0e7c29fefa99"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB75042549%3Fpdp_filters%3Ditem_id%253AMLB4860618321&tid=41ebea84-e45d-4f8c-9f9c-227642abf76e"
   },
   {
-   "url": "https://www.mercadolivre.com.br/p/MLB8950241?pdp_filters=item_id:MLB3491700275",
-   "categoria": "oferta",
-   "paginas": [
-    "/black/"
-   ],
-   "jogo": "Buckaroo!",
-   "loja": "Mercado Livre",
-   "status": "não verificável",
-   "motivo": "robots.txt proíbe robôs nesta página",
-   "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB8950241%3Fpdp_filters%3Ditem_id%253AMLB3491700275&tid=06948af1-0ced-4726-946e-2aa7509a7229"
-  },
-  {
-   "url": "https://www.mercadolivre.com.br/p/MLB9644309?pdp_filters=item_id:MLB5270133780",
+   "url": "https://www.mercadolivre.com.br/p/MLB9644309?pdp_filters=item_id:MLB3625532223",
    "categoria": "oferta",
    "paginas": [
     "/black/"
@@ -1846,7 +1885,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB9644309%3Fpdp_filters%3Ditem_id%253AMLB5270133780&tid=95b5caab-ae80-4652-a601-05a29d2dc6e6"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB9644309%3Fpdp_filters%3Ditem_id%253AMLB3625532223&tid=3b6adbe9-b922-4a4d-ad22-2b2b9098cc44"
   },
   {
    "url": "https://www.odisseiajogos.com.br/board-games/jolly-roger",
@@ -1914,6 +1953,19 @@
    "url_final": "https://www.placegames.com.br/black-stories-junior-spooky"
   },
   {
+   "url": "https://www.placegames.com.br/board-games/gangue-do-palhaco",
+   "categoria": "oferta",
+   "paginas": [
+    "/black/"
+   ],
+   "jogo": "Gangue do Palhaço",
+   "loja": "Place Games",
+   "status": "ok",
+   "motivo": "página do produto",
+   "http": 200,
+   "url_final": "https://www.placegames.com.br/board-games/gangue-do-palhaco"
+  },
+  {
    "url": "https://www.placegames.com.br/board-games/skim-session",
    "categoria": "oferta",
    "paginas": [
@@ -1934,10 +1986,23 @@
    ],
    "jogo": "Antiques",
    "loja": "Place Games",
-   "status": "não verificável",
-   "motivo": "sem resposta (ReadTimeout)",
-   "http": null,
+   "status": "ok",
+   "motivo": "página do produto",
+   "http": 200,
    "url_final": "https://www.placegames.com.br/boardgames/antiques"
+  },
+  {
+   "url": "https://www.placegames.com.br/boardgames/arkham-horror-the-card-game-tommy-muldoon-investigator",
+   "categoria": "oferta",
+   "paginas": [
+    "/black/"
+   ],
+   "jogo": "Arkham Horror: The Card Game: Tommy Muldoon Investigator Deck",
+   "loja": "Place Games",
+   "status": "ok",
+   "motivo": "página do produto",
+   "http": 200,
+   "url_final": "https://www.placegames.com.br/boardgames/arkham-horror-the-card-game-tommy-muldoon-investigator"
   },
   {
    "url": "https://www.placegames.com.br/boardgames/boast-or-nothing",
@@ -2029,6 +2094,32 @@
    "motivo": "página do produto",
    "http": 200,
    "url_final": "https://www.placegames.com.br/boardgames/dino-parque"
+  },
+  {
+   "url": "https://www.placegames.com.br/boardgames/dungeons-of-kards-deserto-e-fogo",
+   "categoria": "oferta",
+   "paginas": [
+    "/black/"
+   ],
+   "jogo": "Dungeons of Kards",
+   "loja": "Place Games",
+   "status": "ok",
+   "motivo": "página do produto",
+   "http": 200,
+   "url_final": "https://www.placegames.com.br/boardgames/dungeons-of-kards-deserto-e-fogo"
+  },
+  {
+   "url": "https://www.placegames.com.br/boardgames/fateflip-decretos-reais",
+   "categoria": "oferta",
+   "paginas": [
+    "/black/"
+   ],
+   "jogo": "FateFlip: Decretos Reais",
+   "loja": "Place Games",
+   "status": "ok",
+   "motivo": "página do produto",
+   "http": 200,
+   "url_final": "https://www.placegames.com.br/boardgames/fateflip-decretos-reais"
   },
   {
    "url": "https://www.placegames.com.br/boardgames/kitsu",
@@ -2161,6 +2252,19 @@
    "url_final": "https://www.placegames.com.br/caveiras-de-sedlec"
   },
   {
+   "url": "https://www.placegames.com.br/color-addict-cartucho",
+   "categoria": "oferta",
+   "paginas": [
+    "/black/"
+   ],
+   "jogo": "Color Addict",
+   "loja": "Place Games",
+   "status": "ok",
+   "motivo": "página do produto",
+   "http": 200,
+   "url_final": "https://www.placegames.com.br/color-addict-cartucho"
+  },
+  {
    "url": "https://www.placegames.com.br/draftosaurus-marina-e-show-aereo",
    "categoria": "oferta",
    "paginas": [
@@ -2174,6 +2278,19 @@
    "url_final": "https://www.placegames.com.br/draftosaurus-marina-e-show-aereo"
   },
   {
+   "url": "https://www.placegames.com.br/guerra-do-anel-card-game",
+   "categoria": "oferta",
+   "paginas": [
+    "/black/"
+   ],
+   "jogo": "Guerra do Anel: Card Game",
+   "loja": "Place Games",
+   "status": "ok",
+   "motivo": "página do produto",
+   "http": 200,
+   "url_final": "https://www.placegames.com.br/guerra-do-anel-card-game"
+  },
+  {
    "url": "https://www.placegames.com.br/imperium-lendas",
    "categoria": "oferta",
    "paginas": [
@@ -2185,6 +2302,19 @@
    "motivo": "página do produto",
    "http": 200,
    "url_final": "https://www.placegames.com.br/imperium-lendas"
+  },
+  {
+   "url": "https://www.placegames.com.br/lux-nova-micro-box",
+   "categoria": "oferta",
+   "paginas": [
+    "/black/"
+   ],
+   "jogo": "Lux Nova",
+   "loja": "Place Games",
+   "status": "ok",
+   "motivo": "página do produto",
+   "http": 200,
+   "url_final": "https://www.placegames.com.br/lux-nova-micro-box"
   },
   {
    "url": "https://www.placegames.com.br/magic-maze-maximum-security",
@@ -2318,7 +2448,7 @@
   },
   {
    "url": "https://www.playeasy.com.br/fateflip-decretos-reais",
-   "categoria": "oferta",
+   "categoria": "oferta (mais lojas)",
    "paginas": [
     "/black/"
    ],
@@ -2681,6 +2811,45 @@
    "url_final": null
   },
   {
+   "url": "https://www.comparajogos.com.br/item/clash-royale-the-grand-arena",
+   "categoria": "preço",
+   "paginas": [
+    "/noticias/clash-royale-the-grand-arena-kickstarter/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "ERRO",
+   "motivo": "página não existe (404)",
+   "http": 404,
+   "url_final": "https://www.comparajogos.com.br/item/clash-royale-the-grand-arena"
+  },
+  {
+   "url": "https://www.comparajogos.com.br/item/satisfactory",
+   "categoria": "preço",
+   "paginas": [
+    "/noticias/satisfactory-reta-final-quase-3-milhoes/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "ERRO",
+   "motivo": "página não existe (404)",
+   "http": 404,
+   "url_final": "https://www.comparajogos.com.br/item/satisfactory"
+  },
+  {
+   "url": "https://www.playeasy.com.br/",
+   "categoria": "loja",
+   "paginas": [
+    "/noticias/dual-em-nome-do-rei-goblin-game-outubro/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "ERRO",
+   "motivo": "link é a página inicial da loja, não a do produto",
+   "http": null,
+   "url_final": null
+  },
+  {
    "url": "http://www.catanbrasil.com.br/",
    "categoria": "outro",
    "paginas": [
@@ -2868,6 +3037,17 @@
    "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
   },
   {
+   "url": "https://apps.apple.com/br/app/isle-of-skye/id1326879265",
+   "categoria": "outro",
+   "paginas": [
+    "/isle-of-skye/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não conferido",
+   "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
+  },
+  {
    "url": "https://apps.apple.com/br/app/werewords/id1243586902",
    "categoria": "outro",
    "paginas": [
@@ -3044,10 +3224,54 @@
    "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
   },
   {
+   "url": "https://blueorangegames.eu/fr/jeux/bubble-stories/",
+   "categoria": "outro",
+   "paginas": [
+    "/bubble-stories/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não conferido",
+   "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
+  },
+  {
    "url": "https://blueorangegames.eu/wp-content/uploads/2017/04/KINGDOMINO_rules_ML.pdf",
    "categoria": "outro",
    "paginas": [
     "/como-jogar/kingdomino/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não conferido",
+   "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
+  },
+  {
+   "url": "https://blueorangegames.eu/wp-content/uploads/2021/08/BubbleStories-Rules-FR.pdf",
+   "categoria": "outro",
+   "paginas": [
+    "/bubble-stories/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não conferido",
+   "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
+  },
+  {
+   "url": "https://blueorangegames.eu/wp-content/uploads/2023/05/BubbleStoriesHolidays-Regles-PT.pdf",
+   "categoria": "outro",
+   "paginas": [
+    "/bubble-stories/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não conferido",
+   "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
+  },
+  {
+   "url": "https://blueorangegames.eu/wp-content/uploads/2023/12/BubbleStoriesContes-Regles-FR.pdf",
+   "categoria": "outro",
+   "paginas": [
+    "/bubble-stories/"
    ],
    "jogo": null,
    "loja": null,
@@ -3125,6 +3349,17 @@
    "categoria": "outro",
    "paginas": [
     "/gloomhaven-jaws-of-the-lion/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não conferido",
+   "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
+  },
+  {
+   "url": "https://boardgamefyi.com/games/isle-of-skye-from-chieftain-to-king",
+   "categoria": "outro",
+   "paginas": [
+    "/isle-of-skye/"
    ],
    "jogo": null,
    "loja": null,
@@ -3341,6 +3576,17 @@
    "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
   },
   {
+   "url": "https://boardgamematcher.com/game/bubble-stories",
+   "categoria": "outro",
+   "paginas": [
+    "/bubble-stories/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não conferido",
+   "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
+  },
+  {
    "url": "https://boardgamematcher.com/game/challengers",
    "categoria": "outro",
    "paginas": [
@@ -3378,6 +3624,17 @@
    "categoria": "outro",
    "paginas": [
     "/kutna-hora/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não conferido",
+   "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
+  },
+  {
+   "url": "https://boardgamematcher.com/game/magic-mountain",
+   "categoria": "outro",
+   "paginas": [
+    "/magic-mountain/"
    ],
    "jogo": null,
    "loja": null,
@@ -4486,19 +4743,6 @@
    "url_final": "https://brecholudico.com.br/produto/gloomhaven/"
   },
   {
-   "url": "https://brecholudico.com.br/produto/hitster-verao/",
-   "categoria": "achado",
-   "paginas": [
-    "/black/"
-   ],
-   "jogo": null,
-   "loja": null,
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
-   "url_final": "https://brecholudico.com.br/produto/hitster-verao/"
-  },
-  {
    "url": "https://brecholudico.com.br/produto/root/",
    "categoria": "loja",
    "paginas": [
@@ -4581,6 +4825,7 @@
     "/noticias/arkham-horror-remastered-fecha-gamefound-5-milhoes/",
     "/noticias/fable-quest-arcadia-quest-cooperativo-gamefound/",
     "/noticias/marco-polo-deluxe-master-set-gamefound/",
+    "/noticias/satisfactory-reta-final-quase-3-milhoes/",
     "/noticias/wallguards-of-the-east-empire-garphill-kickstarter/"
    ],
    "jogo": null,
@@ -4845,6 +5090,7 @@
     "/black/robo/",
     "/bomb-busters/",
     "/brass-birmingham/",
+    "/bubble-stories/",
     "/carnegie/",
     "/cascadia/",
     "/castle-combo/",
@@ -4915,6 +5161,7 @@
     "/hot-streak/",
     "/",
     "/inventors-of-the-south-tigris/",
+    "/isle-of-skye/",
     "/jogos-de-tabuleiro/campanha-e-legacy/",
     "/jogos-de-tabuleiro/cooperativos/",
     "/jogos-de-tabuleiro/estrategia/",
@@ -4931,10 +5178,13 @@
     "/kutna-hora/",
     "/lancamentos/",
     "/last-light/",
+    "/magic-mountain/",
     "/mechs-vs-minions/",
     "/micromacro/",
+    "/mon-puzzle-aventure/",
     "/mysterium-kids/",
     "/nemesis/",
+    "/noticias/abalone-minimundos-25-de-marco-meeplestarter/",
     "/noticias/acelera-bruxa-fecha-financiamento-meeplestarter/",
     "/noticias/adventure-time-card-wars-2026-passa-de-1-milhao/",
     "/noticias/an-infamous-traffic-cole-wehrle-fecha-kickstarter/",
@@ -4952,6 +5202,7 @@
     "/noticias/categoria/mercado/",
     "/noticias/categoria/premios/",
     "/noticias/civolution-e-horizontes-de-spirit-island-chegam-as-lojas/",
+    "/noticias/clash-royale-the-grand-arena-kickstarter/",
     "/noticias/coffee-rush-inverno-anunciado-asmodee/",
     "/noticias/coveiros-vs-caveiras-pre-venda-amaze-games/",
     "/noticias/cubyria-architects-of-a-lost-city-kickstarter/",
@@ -4978,6 +5229,7 @@
     "/noticias/grok-propolis-colegas-blind-jack-em-breve/",
     "/noticias/guia-dos-premios-2027/",
     "/noticias/halo-campaign-evolved-tabuleiro-mantic-pre-venda/",
+    "/noticias/harakiri-blades-of-honor-first-turn-meeplestarter/",
     "/noticias/harmonies-crescendo-e-bang-dice-explosion-ganham-preco/",
     "/noticias/heat-ganha-versao-digital-mipmap/",
     "/noticias/horizontes-de-spirit-island-pre-venda-ace-studios/",
@@ -4997,6 +5249,7 @@
     "/noticias/mosaico-jogos-terraria-e-floe-novembro/",
     "/noticias/nemesis-legacy-fecha-com-12-milhoes-de-euros/",
     "/noticias/night-at-the-zoo-pondscape-bucaneiros/",
+    "/noticias/night-at-the-zoo-pondscape-fecham-331-mil/",
     "/noticias/oceanos-ace-studios-meeplestarter/",
     "/noticias/ordinary-magic-unstable-games-gamefound/",
     "/noticias/origins-of-light-final-fantasy-tabuleiro-kickstarter/",
@@ -5011,6 +5264,7 @@
     "/noticias/restoration-games-workshop-refaz-chaos-in-the-old-world/",
     "/noticias/ruins-alebrijes-protocolo-scintilla-outubro/",
     "/noticias/santuario-vence-deutscher-spiele-preis-2026/",
+    "/noticias/satisfactory-reta-final-quase-3-milhoes/",
     "/noticias/satisfactory-tabuleiro-passa-de-2-milhoes-gamefound/",
     "/noticias/sentando-a-pua-e-revive-call-of-the-abyss/",
     "/noticias/speakeasy-vital-lacerda-pre-venda-mosaico/",
@@ -5603,6 +5857,17 @@
    "categoria": "outro",
    "paginas": [
     "/codenames-pictures/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não conferido",
+   "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
+  },
+  {
+   "url": "https://dicetower.com/board-game/341919",
+   "categoria": "outro",
+   "paginas": [
+    "/magic-mountain/"
    ],
    "jogo": null,
    "loja": null,
@@ -6542,7 +6807,8 @@
    "paginas": [
     "/challengers/",
     "/daybreak/",
-    "/dorfromantik-the-board-game/"
+    "/dorfromantik-the-board-game/",
+    "/isle-of-skye/"
    ],
    "jogo": null,
    "loja": null,
@@ -6774,6 +7040,7 @@
    "categoria": "outro",
    "paginas": [
     "/akropolis/",
+    "/bubble-stories/",
     "/carnegie/",
     "/challengers/",
     "/civolution/",
@@ -6781,6 +7048,7 @@
     "/dragomino/",
     "/great-western-trail/",
     "/kutna-hora/",
+    "/mon-puzzle-aventure/",
     "/paleo/",
     "/root/",
     "/scythe/"
@@ -6828,6 +7096,17 @@
    "categoria": "outro",
    "paginas": [
     "/harmonies/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não conferido",
+   "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
+  },
+  {
+   "url": "https://game-flow.fr/produit/mon-puzzle-aventure-dragon/",
+   "categoria": "outro",
+   "paginas": [
+    "/mon-puzzle-aventure/"
    ],
    "jogo": null,
    "loja": null,
@@ -6905,6 +7184,7 @@
    "url": "https://gamefound.com/projects/mood-publishing/satisfactory-the-board-game",
    "categoria": "outro",
    "paginas": [
+    "/noticias/satisfactory-reta-final-quase-3-milhoes/",
     "/noticias/satisfactory-tabuleiro-passa-de-2-milhoes-gamefound/"
    ],
    "jogo": null,
@@ -7322,6 +7602,17 @@
    "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
   },
   {
+   "url": "https://gusandco.net/2024/02/23/as-dor-2024-trio-audace-innovation-recompensees/",
+   "categoria": "outro",
+   "paginas": [
+    "/mon-puzzle-aventure/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não conferido",
+   "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
+  },
+  {
    "url": "https://gusandco.net/2025/12/08/boss-fighters-qr-avis-test-jeu-hybride-scan-play/",
    "categoria": "outro",
    "paginas": [
@@ -7631,6 +7922,17 @@
    "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
   },
   {
+   "url": "https://islaythedragon.com/featured/isle-of-tiles-a-review-of-isle-of-skye",
+   "categoria": "outro",
+   "paginas": [
+    "/isle-of-skye/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não conferido",
+   "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
+  },
+  {
    "url": "https://ixbt.games/en/news/2026/07/24/424930-nastolnye-igry-s-miniatiurami-ronins-revenge-spellrift-legends-i-tanares-expeditions-vypustiat-v-rossii.html",
    "categoria": "outro",
    "paginas": [
@@ -7931,6 +8233,17 @@
    "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
   },
   {
+   "url": "https://lookout-spiele.de/en/games/iosdruiden.html",
+   "categoria": "outro",
+   "paginas": [
+    "/isle-of-skye/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não conferido",
+   "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
+  },
+  {
    "url": "https://lookout-spiele.de/upload/en_gwt_elpaso.html_GWT_El_Paso_99992_ESG50190_Rules_EN_WEB_240930.pdf",
    "categoria": "outro",
    "paginas": [
@@ -7979,6 +8292,17 @@
    "categoria": "outro",
    "paginas": [
     "/878/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não conferido",
+   "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
+  },
+  {
+   "url": "https://ludopedia.com.br/jogo/abalone-polaris",
+   "categoria": "outro",
+   "paginas": [
+    "/noticias/abalone-minimundos-25-de-marco-meeplestarter/"
    ],
    "jogo": null,
    "loja": null,
@@ -8389,7 +8713,8 @@
    "url": "https://ludopedia.com.br/jogo/night-at-the-zoo",
    "categoria": "outro",
    "paginas": [
-    "/noticias/night-at-the-zoo-pondscape-bucaneiros/"
+    "/noticias/night-at-the-zoo-pondscape-bucaneiros/",
+    "/noticias/night-at-the-zoo-pondscape-fecham-331-mil/"
    ],
    "jogo": null,
    "loja": null,
@@ -8466,7 +8791,8 @@
    "url": "https://ludopedia.com.br/jogo/pondscape",
    "categoria": "outro",
    "paginas": [
-    "/noticias/night-at-the-zoo-pondscape-bucaneiros/"
+    "/noticias/night-at-the-zoo-pondscape-bucaneiros/",
+    "/noticias/night-at-the-zoo-pondscape-fecham-331-mil/"
    ],
    "jogo": null,
    "loja": null,
@@ -9375,6 +9701,28 @@
    "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
   },
   {
+   "url": "https://meeplestarter.com.br/25demarco",
+   "categoria": "outro",
+   "paginas": [
+    "/noticias/abalone-minimundos-25-de-marco-meeplestarter/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não conferido",
+   "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
+  },
+  {
+   "url": "https://meeplestarter.com.br/abalone",
+   "categoria": "outro",
+   "paginas": [
+    "/noticias/abalone-minimundos-25-de-marco-meeplestarter/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não conferido",
+   "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
+  },
+  {
    "url": "https://meeplestarter.com.br/acelerabruxa",
    "categoria": "outro",
    "paginas": [
@@ -9463,6 +9811,28 @@
    "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
   },
   {
+   "url": "https://meeplestarter.com.br/harakiri",
+   "categoria": "outro",
+   "paginas": [
+    "/noticias/harakiri-blades-of-honor-first-turn-meeplestarter/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não conferido",
+   "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
+  },
+  {
+   "url": "https://meeplestarter.com.br/meeplestarter.com.br-minimundos",
+   "categoria": "outro",
+   "paginas": [
+    "/noticias/abalone-minimundos-25-de-marco-meeplestarter/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não conferido",
+   "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
+  },
+  {
    "url": "https://meeplestarter.com.br/oceanos",
    "categoria": "outro",
    "paginas": [
@@ -9510,7 +9880,8 @@
    "url": "https://meeplestarter.com.br/tomasholek",
    "categoria": "outro",
    "paginas": [
-    "/noticias/night-at-the-zoo-pondscape-bucaneiros/"
+    "/noticias/night-at-the-zoo-pondscape-bucaneiros/",
+    "/noticias/night-at-the-zoo-pondscape-fecham-331-mil/"
    ],
    "jogo": null,
    "loja": null,
@@ -9522,6 +9893,17 @@
    "categoria": "outro",
    "paginas": [
     "/noticias/night-at-the-zoo-pondscape-bucaneiros/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não conferido",
+   "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
+  },
+  {
+   "url": "https://meeplestarter.com.br/xiu",
+   "categoria": "outro",
+   "paginas": [
+    "/noticias/abalone-minimundos-25-de-marco-meeplestarter/"
    ],
    "jogo": null,
    "loja": null,
@@ -9562,6 +9944,17 @@
    "motivo": "página do produto",
    "http": 200,
    "url_final": "https://modoaviaobg.com.br/produtos/hegemony-conduza-sua-classe-a-vitoria-edicao-ampliada-encomenda/"
+  },
+  {
+   "url": "https://mojo-nation.com/?p=26316",
+   "categoria": "outro",
+   "paginas": [
+    "/magic-mountain/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não conferido",
+   "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
   },
   {
    "url": "https://mosaicojogos.com.br/listing/a-anarquia/",
@@ -9711,6 +10104,17 @@
    "categoria": "outro",
    "paginas": [
     "/just-one/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não conferido",
+   "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
+  },
+  {
+   "url": "https://opinionatedgamers.com/2015/08/15/dale-yu-review-of-isle-of-skye/",
+   "categoria": "outro",
+   "paginas": [
+    "/isle-of-skye/"
    ],
    "jogo": null,
    "loja": null,
@@ -10051,7 +10455,8 @@
    "url": "https://opinionatedgamers.com/2026/03/17/dale-yu-review-of-pondscape/",
    "categoria": "outro",
    "paginas": [
-    "/noticias/night-at-the-zoo-pondscape-bucaneiros/"
+    "/noticias/night-at-the-zoo-pondscape-bucaneiros/",
+    "/noticias/night-at-the-zoo-pondscape-fecham-331-mil/"
    ],
    "jogo": null,
    "loja": null,
@@ -10130,6 +10535,17 @@
    "categoria": "outro",
    "paginas": [
     "/noticias/coffee-rush-inverno-anunciado-asmodee/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não conferido",
+   "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
+  },
+  {
+   "url": "https://ostatniatawerna.pl/en/i-will-be-a-little-detective-review-of-the-detective-game-detektyw-bombel",
+   "categoria": "outro",
+   "paginas": [
+    "/bubble-stories/"
    ],
    "jogo": null,
    "loja": null,
@@ -10242,6 +10658,39 @@
    "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
   },
   {
+   "url": "https://paradoxetemporel.fr/50356-test-et-avis-de-mon-puzzle-aventure-dragon.html",
+   "categoria": "outro",
+   "paginas": [
+    "/mon-puzzle-aventure/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não conferido",
+   "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
+  },
+  {
+   "url": "https://paradoxetemporel.fr/62863-test-et-avis-de-mon-puzzle-aventure-phobos.html",
+   "categoria": "outro",
+   "paginas": [
+    "/mon-puzzle-aventure/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não conferido",
+   "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
+  },
+  {
+   "url": "https://partieprise.fr/articles/bubble-stories-review",
+   "categoria": "outro",
+   "paginas": [
+    "/bubble-stories/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não conferido",
+   "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
+  },
+  {
    "url": "https://pegasus.de/en/Carnegie/57007G",
    "categoria": "outro",
    "paginas": [
@@ -10279,6 +10728,17 @@
    "categoria": "outro",
    "paginas": [
     "/hegemony/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não conferido",
+   "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
+  },
+  {
+   "url": "https://plateaumarmots.fr/test-bubble-stories",
+   "categoria": "outro",
+   "paginas": [
+    "/bubble-stories/"
    ],
    "jogo": null,
    "loja": null,
@@ -10661,6 +11121,17 @@
    "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
   },
   {
+   "url": "https://romirplayhouse.com/olha-a-bolha-como-jogar/",
+   "categoria": "outro",
+   "paginas": [
+    "/bubble-stories/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não conferido",
+   "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
+  },
+  {
    "url": "https://roxley.com/products/brass-birmingham",
    "categoria": "outro",
    "paginas": [
@@ -10687,6 +11158,17 @@
    "categoria": "outro",
    "paginas": [
     "/radlands/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não conferido",
+   "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
+  },
+  {
+   "url": "https://rules.dized.com/game/C3dE7mO3QyWLGNigRs2ZZw/HZpnmKZ8Tumo42wtY3ituQ/can-i-choose-which-ball-i-want",
+   "categoria": "outro",
+   "paginas": [
+    "/magic-mountain/"
    ],
    "jogo": null,
    "loja": null,
@@ -10775,6 +11257,17 @@
    "categoria": "outro",
    "paginas": [
     "/kutna-hora/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não conferido",
+   "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
+  },
+  {
+   "url": "https://rulespal.com/magic-mountain/rulebook",
+   "categoria": "outro",
+   "paginas": [
+    "/magic-mountain/"
    ],
    "jogo": null,
    "loja": null,
@@ -11149,6 +11642,17 @@
    "categoria": "outro",
    "paginas": [
     "/noticias/spiel-essen-2026-recorde-230-mil-visitantes/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não conferido",
+   "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
+  },
+  {
+   "url": "https://statelyplay.com/2017/10/31/digidiced-bringing-2016-kennerspiel-des-jahres-winner-isle-of-skye-to-digital/",
+   "categoria": "outro",
+   "paginas": [
+    "/isle-of-skye/"
    ],
    "jogo": null,
    "loja": null,
@@ -11785,6 +12289,17 @@
    "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
   },
   {
+   "url": "https://undecent.fr/2022/02/14/bubble-stories/",
+   "categoria": "outro",
+   "paginas": [
+    "/bubble-stories/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não conferido",
+   "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
+  },
+  {
    "url": "https://vantage.rulepop.com/",
    "categoria": "outro",
    "paginas": [
@@ -11886,6 +12401,17 @@
    "categoria": "outro",
    "paginas": [
     "/878/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não conferido",
+   "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
+  },
+  {
+   "url": "https://wa.me/?text=Abalone%2C%20MiniMundos%20e%2025%20de%20Mar%C3%A7o%20entram%20na%20fila%20de%20financiamentos%20do%20MeepleStarter%20%28via%20Elite%20Boardgamers%29%20https%3A%2F%2Feliteboardgamers.com.br%2Fnoticias%2Fabalone-minimundos-25-de-marco-meeplestarter%2F",
+   "categoria": "outro",
+   "paginas": [
+    "/noticias/abalone-minimundos-25-de-marco-meeplestarter/"
    ],
    "jogo": null,
    "loja": null,
@@ -12238,6 +12764,17 @@
    "categoria": "outro",
    "paginas": [
     "/civolution/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não conferido",
+   "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
+  },
+  {
+   "url": "https://wa.me/?text=Clash%20Royale%3A%20The%20Grand%20Arena%2C%20jogo%20de%20tabuleiro%20da%20Supercell%2C%20passa%20de%20US%24%20143%20mil%20%28via%20Elite%20Boardgamers%29%20https%3A%2F%2Feliteboardgamers.com.br%2Fnoticias%2Fclash-royale-the-grand-arena-kickstarter%2F",
+   "categoria": "outro",
+   "paginas": [
+    "/noticias/clash-royale-the-grand-arena-kickstarter/"
    ],
    "jogo": null,
    "loja": null,
@@ -12762,6 +13299,17 @@
    "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
   },
   {
+   "url": "https://wa.me/?text=Harakiri%3A%20Blades%20of%20Honor%20chega%20ao%20Brasil%20em%20ingl%C3%AAs%20pela%20First%20Turn%20Games%20no%20MeepleStarter%20%28via%20Elite%20Boardgamers%29%20https%3A%2F%2Feliteboardgamers.com.br%2Fnoticias%2Fharakiri-blades-of-honor-first-turn-meeplestarter%2F",
+   "categoria": "outro",
+   "paginas": [
+    "/noticias/harakiri-blades-of-honor-first-turn-meeplestarter/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não conferido",
+   "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
+  },
+  {
    "url": "https://wa.me/?text=Harmonies%3A%20Empilhe%20a%20paisagem%20certa%20e%20os%20animais%20v%C3%AAm%20morar%20nela.%20Resenha%20da%20Elite%20Boardgamers%20https%3A%2F%2Feliteboardgamers.com.br%2Fharmonies%2F",
    "categoria": "outro",
    "paginas": [
@@ -12843,6 +13391,17 @@
    "categoria": "outro",
    "paginas": [
     "/inventors-of-the-south-tigris/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não conferido",
+   "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
+  },
+  {
+   "url": "https://wa.me/?text=Isle%20of%20Skye%3A%20Voc%C3%AA%20protege%20a%20pe%C3%A7a%20que%20ama%20com%20um%20pre%C3%A7o%20alto.%20Ningu%C3%A9m%20compra%2C%20e%20a%20conta%20do%20apego%20chega%20para%20voc%C3%AA.%20Resenha%20da%20Elite%20Boardgamers%20https%3A%2F%2Feliteboardgamers.com.br%2Fisle-of-skye%2F",
+   "categoria": "outro",
+   "paginas": [
+    "/isle-of-skye/"
    ],
    "jogo": null,
    "loja": null,
@@ -12960,6 +13519,17 @@
    "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
   },
   {
+   "url": "https://wa.me/?text=Magic%20Mountain%3A%20A%20fam%C3%ADlia%20faz%20reuni%C3%A3o%20para%20escolher%20o%20buraco.%20A%20ladeira%20escuta%20tudo%20com%20aten%C3%A7%C3%A3o%20e%20decide%20sozinha.%20Resenha%20da%20Elite%20Boardgamers%20https%3A%2F%2Feliteboardgamers.com.br%2Fmagic-mountain%2F",
+   "categoria": "outro",
+   "paginas": [
+    "/magic-mountain/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não conferido",
+   "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
+  },
+  {
    "url": "https://wa.me/?text=Magical%20Athlete%2C%20corrida%20de%20dados%20refeita%20por%20Richard%20Garfield%2C%20entra%20em%20pr%C3%A9-venda%20pela%20Asmodee%20%28via%20Elite%20Boardgamers%29%20https%3A%2F%2Feliteboardgamers.com.br%2Fnoticias%2Fmagical-athlete-pre-venda-asmodee%2F",
    "categoria": "outro",
    "paginas": [
@@ -12997,6 +13567,17 @@
    "categoria": "outro",
    "paginas": [
     "/micromacro/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não conferido",
+   "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
+  },
+  {
+   "url": "https://wa.me/?text=Mon%20Puzzle%20Aventure%3A%20Montar%20%C3%A9%20s%C3%B3%20o%20aquecimento.%20A%20aventura%20come%C3%A7a%20na%20hora%20de%20arrumar%2C%20e%20a%20crian%C3%A7a%20nem%20percebe%20que%20caiu%20no%20golpe.%20Resenha%20da%20Elite%20Boardgamers%20https%3A%2F%2Feliteboardgamers.com.br%2Fmon-puzzle-aventure%2F",
+   "categoria": "outro",
+   "paginas": [
+    "/mon-puzzle-aventure/"
    ],
    "jogo": null,
    "loja": null,
@@ -13059,6 +13640,17 @@
    "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
   },
   {
+   "url": "https://wa.me/?text=Night%20at%20the%20Zoo%20e%20Pondscape%20chegam%20ao%20%C3%BAltimo%20dia%20com%20R%24%20331%20mil%20no%20MeepleStarter%20%28via%20Elite%20Boardgamers%29%20https%3A%2F%2Feliteboardgamers.com.br%2Fnoticias%2Fnight-at-the-zoo-pondscape-fecham-331-mil%2F",
+   "categoria": "outro",
+   "paginas": [
+    "/noticias/night-at-the-zoo-pondscape-fecham-331-mil/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não conferido",
+   "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
+  },
+  {
    "url": "https://wa.me/?text=Night%20at%20the%20Zoo%20e%20Pondscape%2C%20do%20autor%20de%20SETI%2C%20passam%20de%20R%24%20286%20mil%20%28via%20Elite%20Boardgamers%29%20https%3A%2F%2Feliteboardgamers.com.br%2Fnoticias%2Fnight-at-the-zoo-pondscape-bucaneiros%2F",
    "categoria": "outro",
    "paginas": [
@@ -13085,6 +13677,17 @@
    "categoria": "outro",
    "paginas": [
     "/oath/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não conferido",
+   "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
+  },
+  {
+   "url": "https://wa.me/?text=Olha%20a%20Bolha%3A%20A%20bolha%20de%20ouro%20vai%20para%20quem%20n%C3%A3o%20abre%20nenhum%20beco%20sem%20sa%C3%ADda.%20O%20manual%20ensina%20o%20truque%3A%20lembrar%20onde%20eles%20estavam.%20Resenha%20da%20Elite%20Boardgamers%20https%3A%2F%2Feliteboardgamers.com.br%2Fbubble-stories%2F",
+   "categoria": "outro",
+   "paginas": [
+    "/bubble-stories/"
    ],
    "jogo": null,
    "loja": null,
@@ -13338,6 +13941,17 @@
    "categoria": "outro",
    "paginas": [
     "/noticias/satisfactory-tabuleiro-passa-de-2-milhoes-gamefound/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não conferido",
+   "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
+  },
+  {
+   "url": "https://wa.me/?text=Satisfactory%3A%20The%20Board%20Game%20chega%20ao%20%C3%BAltimo%20dia%20no%20Gamefound%20com%20quase%203%20milh%C3%B5es%20de%20euros%20%28via%20Elite%20Boardgamers%29%20https%3A%2F%2Feliteboardgamers.com.br%2Fnoticias%2Fsatisfactory-reta-final-quase-3-milhoes%2F",
+   "categoria": "outro",
+   "paginas": [
+    "/noticias/satisfactory-reta-final-quase-3-milhoes/"
    ],
    "jogo": null,
    "loja": null,
@@ -13778,19 +14392,6 @@
    "url_final": "https://www.alquimistasdosjogos.com.br/sem-resultados-na-busca"
   },
   {
-   "url": "https://www.alquimistasdosjogos.com.br/jogos/loot",
-   "categoria": "achado",
-   "paginas": [
-    "/black/"
-   ],
-   "jogo": null,
-   "loja": null,
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
-   "url_final": "https://www.alquimistasdosjogos.com.br/jogos/loot"
-  },
-  {
    "url": "https://www.alquimistasdosjogos.com.br/jogos/luz-final-edicao-deluxe-completa",
    "categoria": "loja",
    "paginas": [
@@ -13841,7 +14442,7 @@
    "url_final": "https://www.amazon.com.br/RU%C3%8DNAS-PERDIDAS-DE-ARNAK-Devir/dp/B095B9F657"
   },
   {
-   "url": "https://www.amazon.com.br/dp/B07F1W1ZVG",
+   "url": "https://www.amazon.com.br/dp/B0CTVD32HG",
    "categoria": "achado",
    "paginas": [
     "/black/"
@@ -13851,26 +14452,24 @@
    "status": "ok",
    "motivo": "página do produto",
    "http": 200,
-   "url_final": "https://www.amazon.com.br/dp/B07F1W1ZVG"
-  },
-  {
-   "url": "https://www.amazon.com.br/dp/B0FGG1XZZX",
-   "categoria": "achado",
-   "paginas": [
-    "/black/"
-   ],
-   "jogo": null,
-   "loja": null,
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
-   "url_final": "https://www.amazon.com.br/dp/B0FGG1XZZX"
+   "url_final": "https://www.amazon.com.br/dp/B0CTVD32HG"
   },
   {
    "url": "https://www.analog.games//gameItem/show/419cd83f965b012001965b4af9831b1d",
    "categoria": "outro",
    "paginas": [
     "/the-crew/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não conferido",
+   "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
+  },
+  {
+   "url": "https://www.analog.games//gameItem/show/419cd83f96780f1701967b12bf3d3912",
+   "categoria": "outro",
+   "paginas": [
+    "/magic-mountain/"
    ],
    "jogo": null,
    "loja": null,
@@ -14543,6 +15142,17 @@
    "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
   },
   {
+   "url": "https://www.boardgamequest.com/crowdfunding-campaigns-of-the-week-11-9-26/",
+   "categoria": "outro",
+   "paginas": [
+    "/noticias/clash-royale-the-grand-arena-kickstarter/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não conferido",
+   "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
+  },
+  {
    "url": "https://www.boardgamequest.com/daybreak-review/",
    "categoria": "outro",
    "paginas": [
@@ -14898,19 +15508,6 @@
    "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
   },
   {
-   "url": "https://www.borderjogos.com.br/promocoes",
-   "categoria": "cupom",
-   "paginas": [
-    "/black/"
-   ],
-   "jogo": null,
-   "loja": "Border Jogos",
-   "status": "ok",
-   "motivo": "loja responde (cupom vale para a loja)",
-   "http": 200,
-   "url_final": "https://www.borderjogos.com.br/sem-resultados-na-busca"
-  },
-  {
    "url": "https://www.brinka.shop/estrategia-tabuleiro-e-rpg/codigo-secreto-devir",
    "categoria": "outro",
    "paginas": [
@@ -15255,6 +15852,17 @@
    "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
   },
   {
+   "url": "https://www.comparajogos.com.br/f/uploads/short-url/19LKVqWmhWXnxBxVJdk7RD7FZwV.pdf",
+   "categoria": "outro",
+   "paginas": [
+    "/isle-of-skye/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não conferido",
+   "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
+  },
+  {
    "url": "https://www.comparajogos.com.br/f/uploads/short-url/3pXXbenAxW8XaZymVYhiCpWs53W.pdf",
    "categoria": "outro",
    "paginas": [
@@ -15288,6 +15896,19 @@
    "motivo": "página do jogo no Compara Jogos responde",
    "http": 200,
    "url_final": "https://www.comparajogos.com.br/item/878-vikings-invasions-of-england"
+  },
+  {
+   "url": "https://www.comparajogos.com.br/item/abalone",
+   "categoria": "preço",
+   "paginas": [
+    "/noticias/abalone-minimundos-25-de-marco-meeplestarter/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "ok",
+   "motivo": "página do jogo no Compara Jogos responde",
+   "http": 200,
+   "url_final": "https://www.comparajogos.com.br/item/abalone"
   },
   {
    "url": "https://www.comparajogos.com.br/item/adventure-time-card-wars-princess-bubblegum-vs-lumpy-space-princess",
@@ -16048,6 +16669,19 @@
    "url_final": "https://www.comparajogos.com.br/item/halo-flashpoint"
   },
   {
+   "url": "https://www.comparajogos.com.br/item/harakiri-blades-of-honor",
+   "categoria": "preço",
+   "paginas": [
+    "/noticias/harakiri-blades-of-honor-first-turn-meeplestarter/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "ok",
+   "motivo": "página do jogo no Compara Jogos responde",
+   "http": 200,
+   "url_final": "https://www.comparajogos.com.br/item/harakiri-blades-of-honor"
+  },
+  {
    "url": "https://www.comparajogos.com.br/item/harmonies",
    "categoria": "preço",
    "paginas": [
@@ -16167,6 +16801,19 @@
    "url_final": "https://www.comparajogos.com.br/item/inventores-do-sul-do-tigre"
   },
   {
+   "url": "https://www.comparajogos.com.br/item/isle-of-skye-de-lider-a-rei",
+   "categoria": "preço",
+   "paginas": [
+    "/isle-of-skye/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "ok",
+   "motivo": "página do jogo no Compara Jogos responde",
+   "http": 200,
+   "url_final": "https://www.comparajogos.com.br/item/isle-of-skye-de-lider-a-rei"
+  },
+  {
    "url": "https://www.comparajogos.com.br/item/ito",
    "categoria": "preço",
    "paginas": [
@@ -16230,6 +16877,19 @@
    "motivo": "página do jogo no Compara Jogos responde",
    "http": 200,
    "url_final": "https://www.comparajogos.com.br/item/luz-final"
+  },
+  {
+   "url": "https://www.comparajogos.com.br/item/magic-mountain",
+   "categoria": "preço",
+   "paginas": [
+    "/magic-mountain/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "ok",
+   "motivo": "página do jogo no Compara Jogos responde",
+   "http": 200,
+   "url_final": "https://www.comparajogos.com.br/item/magic-mountain"
   },
   {
    "url": "https://www.comparajogos.com.br/item/magical-athlete",
@@ -16348,6 +17008,19 @@
    "motivo": "página do jogo no Compara Jogos responde",
    "http": 200,
    "url_final": "https://www.comparajogos.com.br/item/oceanos"
+  },
+  {
+   "url": "https://www.comparajogos.com.br/item/olha-a-bolha",
+   "categoria": "preço",
+   "paginas": [
+    "/bubble-stories/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "ok",
+   "motivo": "página do jogo no Compara Jogos responde",
+   "http": 200,
+   "url_final": "https://www.comparajogos.com.br/item/olha-a-bolha"
   },
   {
    "url": "https://www.comparajogos.com.br/item/paleo",
@@ -17169,6 +17842,17 @@
    "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
   },
   {
+   "url": "https://www.espritjeu.com/mon-puzzle-aventure-dragon.html",
+   "categoria": "outro",
+   "paginas": [
+    "/mon-puzzle-aventure/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não conferido",
+   "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
+  },
+  {
    "url": "https://www.explodingkittens.com/pages/rules-kittens",
    "categoria": "outro",
    "paginas": [
@@ -17330,10 +18014,43 @@
    "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
   },
   {
+   "url": "https://www.galaxus.de/en/page/putting-award-winning-magic-mountain-to-the-test-25359",
+   "categoria": "outro",
+   "paginas": [
+    "/magic-mountain/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não conferido",
+   "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
+  },
+  {
    "url": "https://www.gama.org/",
    "categoria": "outro",
    "paginas": [
     "/noticias/gama-andrew-zorowitz-diretor-interino/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não conferido",
+   "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
+  },
+  {
+   "url": "https://www.gamedeveloper.com/press-release/harakiri-blades-of-honor-the-dungeon-crawler-board-game-with-one-of-the-most-successful-campaigns-in-kickstarter-in-2021-opens-late-pledge",
+   "categoria": "outro",
+   "paginas": [
+    "/noticias/harakiri-blades-of-honor-first-turn-meeplestarter/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não conferido",
+   "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
+  },
+  {
+   "url": "https://www.gameinformer.com/2019/01/24/digital-board-game-spotlight-isle-of-skye",
+   "categoria": "outro",
+   "paginas": [
+    "/isle-of-skye/"
    ],
    "jogo": null,
    "loja": null,
@@ -17683,16 +18400,25 @@
   },
   {
    "url": "https://www.guildadosjogos.com.br/dorfromantik-the-board-game",
-   "categoria": "loja",
+   "categoria": "outro",
    "paginas": [
     "/dorfromantik-the-board-game/"
    ],
    "jogo": null,
    "loja": null,
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
-   "url_final": "https://www.guildadosjogos.com.br/dorfromantik-the-board-game"
+   "status": "não conferido",
+   "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
+  },
+  {
+   "url": "https://www.hachette.com/en/news/hachette-boardgames-honored-two-dor-awards/",
+   "categoria": "outro",
+   "paginas": [
+    "/mon-puzzle-aventure/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não conferido",
+   "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
   },
   {
    "url": "https://www.hans-im-glueck.de/game/carcassonne-labyrinth/",
@@ -17754,6 +18480,7 @@
     "/black/robo/",
     "/bomb-busters/",
     "/brass-birmingham/",
+    "/bubble-stories/",
     "/carnegie/",
     "/cascadia/",
     "/castle-combo/",
@@ -17824,6 +18551,7 @@
     "/hot-streak/",
     "/",
     "/inventors-of-the-south-tigris/",
+    "/isle-of-skye/",
     "/jogos-de-tabuleiro/campanha-e-legacy/",
     "/jogos-de-tabuleiro/cooperativos/",
     "/jogos-de-tabuleiro/estrategia/",
@@ -17840,10 +18568,13 @@
     "/kutna-hora/",
     "/lancamentos/",
     "/last-light/",
+    "/magic-mountain/",
     "/mechs-vs-minions/",
     "/micromacro/",
+    "/mon-puzzle-aventure/",
     "/mysterium-kids/",
     "/nemesis/",
+    "/noticias/abalone-minimundos-25-de-marco-meeplestarter/",
     "/noticias/acelera-bruxa-fecha-financiamento-meeplestarter/",
     "/noticias/adventure-time-card-wars-2026-passa-de-1-milhao/",
     "/noticias/an-infamous-traffic-cole-wehrle-fecha-kickstarter/",
@@ -17861,6 +18592,7 @@
     "/noticias/categoria/mercado/",
     "/noticias/categoria/premios/",
     "/noticias/civolution-e-horizontes-de-spirit-island-chegam-as-lojas/",
+    "/noticias/clash-royale-the-grand-arena-kickstarter/",
     "/noticias/coffee-rush-inverno-anunciado-asmodee/",
     "/noticias/coveiros-vs-caveiras-pre-venda-amaze-games/",
     "/noticias/cubyria-architects-of-a-lost-city-kickstarter/",
@@ -17887,6 +18619,7 @@
     "/noticias/grok-propolis-colegas-blind-jack-em-breve/",
     "/noticias/guia-dos-premios-2027/",
     "/noticias/halo-campaign-evolved-tabuleiro-mantic-pre-venda/",
+    "/noticias/harakiri-blades-of-honor-first-turn-meeplestarter/",
     "/noticias/harmonies-crescendo-e-bang-dice-explosion-ganham-preco/",
     "/noticias/heat-ganha-versao-digital-mipmap/",
     "/noticias/horizontes-de-spirit-island-pre-venda-ace-studios/",
@@ -17906,6 +18639,7 @@
     "/noticias/mosaico-jogos-terraria-e-floe-novembro/",
     "/noticias/nemesis-legacy-fecha-com-12-milhoes-de-euros/",
     "/noticias/night-at-the-zoo-pondscape-bucaneiros/",
+    "/noticias/night-at-the-zoo-pondscape-fecham-331-mil/",
     "/noticias/oceanos-ace-studios-meeplestarter/",
     "/noticias/ordinary-magic-unstable-games-gamefound/",
     "/noticias/origins-of-light-final-fantasy-tabuleiro-kickstarter/",
@@ -17920,6 +18654,7 @@
     "/noticias/restoration-games-workshop-refaz-chaos-in-the-old-world/",
     "/noticias/ruins-alebrijes-protocolo-scintilla-outubro/",
     "/noticias/santuario-vence-deutscher-spiele-preis-2026/",
+    "/noticias/satisfactory-reta-final-quase-3-milhoes/",
     "/noticias/satisfactory-tabuleiro-passa-de-2-milhoes-gamefound/",
     "/noticias/sentando-a-pua-e-revive-call-of-the-abyss/",
     "/noticias/speakeasy-vital-lacerda-pre-venda-mosaico/",
@@ -17989,6 +18724,17 @@
    "categoria": "outro",
    "paginas": [
     "/paleo/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não conferido",
+   "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
+  },
+  {
+   "url": "https://www.journaldugeek.com/2024/02/23/as-dor-2024-les-gagnants-sont-la-et-il-y-a-quelques-surprises/",
+   "categoria": "outro",
+   "paginas": [
+    "/mon-puzzle-aventure/"
    ],
    "jogo": null,
    "loja": null,
@@ -18217,6 +18963,17 @@
    "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
   },
   {
+   "url": "https://www.kicktraq.com/projects/maestromedia/clash-royale-the-grand-arena/",
+   "categoria": "outro",
+   "paginas": [
+    "/noticias/clash-royale-the-grand-arena-kickstarter/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não conferido",
+   "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
+  },
+  {
    "url": "https://www.kicktraq.com/projects/northstargames/oceans-a-standalone-game-in-the-evolution-series/",
    "categoria": "outro",
    "paginas": [
@@ -18243,6 +19000,17 @@
    "categoria": "outro",
    "paginas": [
     "/noticias/ragnarok-online-jogo-de-tabuleiro-kickstarter/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não conferido",
+   "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
+  },
+  {
+   "url": "https://www.kicktraq.com/projects/synergicgames/harakiri-blades-of-honor/",
+   "categoria": "outro",
+   "paginas": [
+    "/noticias/harakiri-blades-of-honor-first-turn-meeplestarter/"
    ],
    "jogo": null,
    "loja": null,
@@ -18329,19 +19097,6 @@
    "url_final": "https://www.leaolivros.com.br/promocoes"
   },
   {
-   "url": "https://www.leaolivros.com.br/tomalle",
-   "categoria": "achado",
-   "paginas": [
-    "/black/"
-   ],
-   "jogo": null,
-   "loja": null,
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
-   "url_final": "https://www.leaolivros.com.br/tomalle"
-  },
-  {
    "url": "https://www.libellud.com/game/dixit/",
    "categoria": "outro",
    "paginas": [
@@ -18417,6 +19172,17 @@
    "url_final": "https://www.lojameeplebrjogos.com.br/root"
   },
   {
+   "url": "https://www.lookout-spiele.de/de/games/isleofskye.html",
+   "categoria": "outro",
+   "paginas": [
+    "/isle-of-skye/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não conferido",
+   "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
+  },
+  {
    "url": "https://www.lookout-spiele.de/en/games/forrestshuffle.html",
    "categoria": "outro",
    "paginas": [
@@ -18486,6 +19252,17 @@
    "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
   },
   {
+   "url": "https://www.ludum.fr/avec-des-petits-2-4-ans/mon-puzzle-aventure-dragon-4762",
+   "categoria": "outro",
+   "paginas": [
+    "/mon-puzzle-aventure/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não conferido",
+   "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
+  },
+  {
    "url": "https://www.magazineluiza.com.br/gloomhaven-board-game-galapagos-galapagos/p/af327976gh/br/jogo/",
    "categoria": "loja",
    "paginas": [
@@ -18543,6 +19320,58 @@
    "motivo": "página do produto",
    "http": 200,
    "url_final": "https://www.masmorra.com.br/produtos/atb0020"
+  },
+  {
+   "url": "https://www.masmorra.com.br/produtos/bgcarafps",
+   "categoria": "achado",
+   "paginas": [
+    "/black/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "ok",
+   "motivo": "página do produto",
+   "http": 200,
+   "url_final": "https://www.masmorra.com.br/produtos/bgcarafps"
+  },
+  {
+   "url": "https://www.masmorra.com.br/produtos/bgcarcaps",
+   "categoria": "achado",
+   "paginas": [
+    "/black/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "ok",
+   "motivo": "página do produto",
+   "http": 200,
+   "url_final": "https://www.masmorra.com.br/produtos/bgcarcaps"
+  },
+  {
+   "url": "https://www.masmorra.com.br/produtos/bgcarpcsps",
+   "categoria": "achado",
+   "paginas": [
+    "/black/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "ok",
+   "motivo": "página do produto",
+   "http": 200,
+   "url_final": "https://www.masmorra.com.br/produtos/bgcarpcsps"
+  },
+  {
+   "url": "https://www.masmorra.com.br/produtos/bgcarvops",
+   "categoria": "achado",
+   "paginas": [
+    "/black/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "ok",
+   "motivo": "página do produto",
+   "http": 200,
+   "url_final": "https://www.masmorra.com.br/produtos/bgcarvops"
   },
   {
    "url": "https://www.masmorra.com.br/produtos/dun001",
@@ -18628,9 +19457,9 @@
    ],
    "jogo": null,
    "loja": null,
-   "status": "não verificável",
-   "motivo": "robots.txt respondeu 403 (bloqueio)",
-   "http": null,
+   "status": "ok",
+   "motivo": "página do produto",
+   "http": 200,
    "url_final": "https://www.mecadosjogos.com.br/ark-nova-p548"
   },
   {
@@ -18641,9 +19470,9 @@
    ],
    "jogo": null,
    "loja": null,
-   "status": "não verificável",
-   "motivo": "robots.txt respondeu 403 (bloqueio)",
-   "http": null,
+   "status": "ok",
+   "motivo": "página do produto",
+   "http": 200,
    "url_final": "https://www.mecadosjogos.com.br/flip-7-grok-jogos-portugues-br-p1044"
   },
   {
@@ -18654,9 +19483,9 @@
    ],
    "jogo": null,
    "loja": null,
-   "status": "não verificável",
-   "motivo": "robots.txt respondeu 403 (bloqueio)",
-   "http": null,
+   "status": "ok",
+   "motivo": "página do produto",
+   "http": 200,
    "url_final": "https://www.mecadosjogos.com.br/hegemony-conduza-sua-classe-a-vitoria-edicao-ampliada-p209"
   },
   {
@@ -18667,10 +19496,10 @@
    ],
    "jogo": null,
    "loja": null,
-   "status": "não verificável",
-   "motivo": "robots.txt respondeu 403 (bloqueio)",
-   "http": null,
-   "url_final": "https://www.mecadosjogos.com.br/return-to-dark-tower-p373"
+   "status": "ok",
+   "motivo": "página do produto (com redirecionamento dentro da loja)",
+   "http": 200,
+   "url_final": "https://www.mecadosjogos.com.br/return-to-dark-tower-across-the-board-meca-p373"
   },
   {
    "url": "https://www.mecadosjogos.com.br/sky-team-p528",
@@ -18680,9 +19509,9 @@
    ],
    "jogo": null,
    "loja": null,
-   "status": "não verificável",
-   "motivo": "robots.txt respondeu 403 (bloqueio)",
-   "http": null,
+   "status": "ok",
+   "motivo": "página do produto",
+   "http": 200,
    "url_final": "https://www.mecadosjogos.com.br/sky-team-p528"
   },
   {
@@ -18693,9 +19522,9 @@
    ],
    "jogo": null,
    "loja": null,
-   "status": "não verificável",
-   "motivo": "robots.txt respondeu 403 (bloqueio)",
-   "http": null,
+   "status": "ok",
+   "motivo": "página do produto",
+   "http": 200,
    "url_final": "https://www.mecadosjogos.com.br/sleeping-gods-p188"
   },
   {
@@ -18703,6 +19532,17 @@
    "categoria": "outro",
    "paginas": [
     "/century-spice-road/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não conferido",
+   "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
+  },
+  {
+   "url": "https://www.meeplelikeus.co.uk/isle-of-skye-2015/",
+   "categoria": "outro",
+   "paginas": [
+    "/isle-of-skye/"
    ],
    "jogo": null,
    "loja": null,
@@ -19053,6 +19893,17 @@
    "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
   },
   {
+   "url": "https://www.meeplemountain.com/reviews/isle-of-skye-from-chieftain-to-king/",
+   "categoria": "outro",
+   "paginas": [
+    "/isle-of-skye/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não conferido",
+   "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
+  },
+  {
    "url": "https://www.meeplemountain.com/reviews/kelp/",
    "categoria": "outro",
    "paginas": [
@@ -19360,10 +20211,10 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fark-nova-jogo-de-tabuleiroboard-game-grok%2Fp%2FMLB23073841&tid=a281c388-de9e-49b3-8e16-37dae7d41198"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fark-nova-jogo-de-tabuleiroboard-game-grok%2Fp%2FMLB23073841&tid=99c39848-baf0-47ff-8dc4-d64236c53ecc"
   },
   {
-   "url": "https://www.mercadolivre.com.br/p/MLB41372525",
+   "url": "https://www.mercadolivre.com.br/p/MLB19807546",
    "categoria": "achado",
    "paginas": [
     "/black/"
@@ -19373,7 +20224,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB41372525&tid=02abc7e4-04d0-4b01-a7a6-241a5fa1aa1c"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB19807546&tid=6b729938-d51c-4ab5-b1b8-b38bd910e5e6"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB55989574",
@@ -19386,7 +20237,20 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB55989574&tid=e9d6f29a-7191-4712-b0e8-fcee958e94f5"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB55989574&tid=e0c9f992-7419-44f8-88f7-8bba821955b8"
+  },
+  {
+   "url": "https://www.mercadolivre.com.br/p/MLB70580092",
+   "categoria": "achado",
+   "paginas": [
+    "/black/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não verificável",
+   "motivo": "robots.txt proíbe robôs nesta página",
+   "http": null,
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB70580092&tid=ba219766-4b50-4caa-9077-bc3a42d0d8c4"
   },
   {
    "url": "https://www.mercadolivre.com.br/root-board-game-meeplebr-pt-br/p/MLB19709898",
@@ -19399,13 +20263,24 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Froot-board-game-meeplebr-pt-br%2Fp%2FMLB19709898&tid=a3947d3d-b33d-4402-b326-67e1221fcf3c"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Froot-board-game-meeplebr-pt-br%2Fp%2FMLB19709898&tid=f5c2eea9-b937-4529-991c-6b7be21bafe4"
   },
   {
    "url": "https://www.miniaturemarket.com/galactic-cruise-kkg-gme-gc.html",
    "categoria": "outro",
    "paginas": [
     "/galactic-cruise/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não conferido",
+   "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
+  },
+  {
+   "url": "https://www.minicientista.com.br/jogos/jogos-com-cartas/olha-a-bolha-bubble-stories-jogo-de-cartas",
+   "categoria": "outro",
+   "paginas": [
+    "/bubble-stories/"
    ],
    "jogo": null,
    "loja": null,
@@ -19538,32 +20413,6 @@
    "loja": null,
    "status": "não conferido",
    "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
-  },
-  {
-   "url": "https://www.odisseiajogos.com.br/board-games/50-dinossauros",
-   "categoria": "achado",
-   "paginas": [
-    "/black/"
-   ],
-   "jogo": null,
-   "loja": null,
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
-   "url_final": "https://www.odisseiajogos.com.br/board-games/50-dinossauros"
-  },
-  {
-   "url": "https://www.odisseiajogos.com.br/board-games/carcassonne-mensageiros-e-alcaides-nova-edicao-expansao-5",
-   "categoria": "achado",
-   "paginas": [
-    "/black/"
-   ],
-   "jogo": null,
-   "loja": null,
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
-   "url_final": "https://www.odisseiajogos.com.br/board-games/carcassonne-mensageiros-e-alcaides-nova-edicao-expansao-5"
   },
   {
    "url": "https://www.odisseiajogos.com.br/board-games/o-senhor-dos-aneis-sina-da-sociedade",
@@ -19765,7 +20614,7 @@
    "url_final": "https://www.pittasboardgames.com.br/produtos/seti/"
   },
   {
-   "url": "https://www.placegames.com.br/boardgames/asteria",
+   "url": "https://www.placegames.com.br/boardgames/akigam-linha-slim",
    "categoria": "achado",
    "paginas": [
     "/black/"
@@ -19775,7 +20624,7 @@
    "status": "ok",
    "motivo": "página do produto",
    "http": 200,
-   "url_final": "https://www.placegames.com.br/boardgames/asteria"
+   "url_final": "https://www.placegames.com.br/boardgames/akigam-linha-slim"
   },
   {
    "url": "https://www.placegames.com.br/boardgames/dungeon-rummy-golems-vs-goblins-expansao",
@@ -19789,6 +20638,32 @@
    "motivo": "página do produto",
    "http": 200,
    "url_final": "https://www.placegames.com.br/boardgames/dungeon-rummy-golems-vs-goblins-expansao"
+  },
+  {
+   "url": "https://www.placegames.com.br/boardgames/setup",
+   "categoria": "achado",
+   "paginas": [
+    "/black/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "ok",
+   "motivo": "página do produto",
+   "http": 200,
+   "url_final": "https://www.placegames.com.br/boardgames/setup"
+  },
+  {
+   "url": "https://www.placegames.com.br/boardgames/star-wars-super-teams",
+   "categoria": "achado",
+   "paginas": [
+    "/black/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "ok",
+   "motivo": "página do produto",
+   "http": 200,
+   "url_final": "https://www.placegames.com.br/boardgames/star-wars-super-teams"
   },
   {
    "url": "https://www.placegames.com.br/the-mind",
@@ -19817,18 +20692,15 @@
    "url_final": "https://www.placegames.com.br/sem-resultados-na-busca"
   },
   {
-   "url": "https://www.playeasy.com.br/",
-   "categoria": "cupom",
+   "url": "https://www.play-in.com/fr/produit/502487/mon-puzzle-aventure-dragon",
+   "categoria": "outro",
    "paginas": [
-    "/black/",
-    "/noticias/dual-em-nome-do-rei-goblin-game-outubro/"
+    "/mon-puzzle-aventure/"
    ],
    "jogo": null,
-   "loja": "PlayEasy",
-   "status": "ok",
-   "motivo": "loja responde (cupom vale para a loja)",
-   "http": 200,
-   "url_final": "https://www.playeasy.com.br/"
+   "loja": null,
+   "status": "não conferido",
+   "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
   },
   {
    "url": "https://www.playeasy.com.br/luz-final-edicao-deluxe-completa.html",
@@ -19896,6 +20768,17 @@
    "categoria": "outro",
    "paginas": [
     "/noticias/ragnarok-online-jogo-de-tabuleiro-kickstarter/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não conferido",
+   "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
+  },
+  {
+   "url": "https://www.pocketgamer.biz/clash-royale-tabletop-game-surpasses-100000-on-kickstarter-after-reaching-target-in-one-hour/",
+   "categoria": "outro",
+   "paginas": [
+    "/noticias/clash-royale-the-grand-arena-kickstarter/"
    ],
    "jogo": null,
    "loja": null,
@@ -20109,6 +20992,17 @@
    "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
   },
   {
+   "url": "https://www.shutupandsitdown.com/review-isle-of-skye-journeyman/",
+   "categoria": "outro",
+   "paginas": [
+    "/isle-of-skye/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não conferido",
+   "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
+  },
+  {
    "url": "https://www.shutupandsitdown.com/review-mechs-vs-minions",
    "categoria": "outro",
    "paginas": [
@@ -20170,6 +21064,17 @@
    "categoria": "outro",
    "paginas": [
     "/so-clover/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não conferido",
+   "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
+  },
+  {
+   "url": "https://www.spiel-des-jahres.de/en/?p=10242",
+   "categoria": "outro",
+   "paginas": [
+    "/isle-of-skye/"
    ],
    "jogo": null,
    "loja": null,
@@ -20270,6 +21175,28 @@
    "categoria": "outro",
    "paginas": [
     "/planet-unknown/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não conferido",
+   "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
+  },
+  {
+   "url": "https://www.spiel-des-jahres.de/en/games/zauberberg-magic-mountain/",
+   "categoria": "outro",
+   "paginas": [
+    "/magic-mountain/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não conferido",
+   "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
+  },
+  {
+   "url": "https://www.spiel-des-jahres.de/en/kinderspiel-des-jahres-a-strong-year-overall/",
+   "categoria": "outro",
+   "paginas": [
+    "/magic-mountain/"
    ],
    "jogo": null,
    "loja": null,
@@ -20392,6 +21319,17 @@
    "categoria": "outro",
    "paginas": [
     "/noticias/carcassonne-labyrinth-chega-aos-eua/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não conferido",
+   "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
+  },
+  {
+   "url": "https://www.t-online.de/leben/familie/id_92332278/kinderspiel-des-jahres-2022-so-hat-die-jury-gewaehlt.html",
+   "categoria": "outro",
+   "paginas": [
+    "/magic-mountain/"
    ],
    "jogo": null,
    "loja": null,
@@ -20538,6 +21476,7 @@
    "url": "https://www.tabletopanalytics.com/project/satisfactory-the-board-game-58067",
    "categoria": "outro",
    "paginas": [
+    "/noticias/satisfactory-reta-final-quase-3-milhoes/",
     "/noticias/satisfactory-tabuleiro-passa-de-2-milhoes-gamefound/"
    ],
    "jogo": null,
@@ -20856,19 +21795,6 @@
    "url_final": "https://www.tabulerio.com.br/jogos/jogos-de-carta/bla-bla-bel"
   },
   {
-   "url": "https://www.tabulerio.com.br/jogos/jogos-de-entrada/prey",
-   "categoria": "achado",
-   "paginas": [
-    "/black/"
-   ],
-   "jogo": null,
-   "loja": null,
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
-   "url_final": "https://www.tabulerio.com.br/jogos/jogos-de-entrada/prey"
-  },
-  {
    "url": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/light-speed-arena",
    "categoria": "achado",
    "paginas": [
@@ -20913,19 +21839,6 @@
    "loja": null,
    "status": "não conferido",
    "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
-  },
-  {
-   "url": "https://www.tavernareal.com/tabuleiro/corrosion",
-   "categoria": "achado",
-   "paginas": [
-    "/black/"
-   ],
-   "jogo": null,
-   "loja": null,
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
-   "url_final": "https://www.tavernareal.com/tabuleiro/corrosion"
   },
   {
    "url": "https://www.tavernareal.com/tabuleiro/heat-pedal-to-the-metal",
@@ -21092,6 +22005,17 @@
    "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
   },
   {
+   "url": "https://www.vindjeu.eu/2023/10/10/mon-puzzle-aventure-dragon/",
+   "categoria": "outro",
+   "paginas": [
+    "/mon-puzzle-aventure/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não conferido",
+   "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
+  },
+  {
    "url": "https://www.wargamer.com/an-infamous-traffic/demo",
    "categoria": "outro",
    "paginas": [
@@ -21238,7 +22162,8 @@
    "url": "https://www.wargamer.com/night-at-the-zoo/board-game-review",
    "categoria": "outro",
    "paginas": [
-    "/noticias/night-at-the-zoo-pondscape-bucaneiros/"
+    "/noticias/night-at-the-zoo-pondscape-bucaneiros/",
+    "/noticias/night-at-the-zoo-pondscape-fecham-331-mil/"
    ],
    "jogo": null,
    "loja": null,
@@ -22333,10 +23258,11 @@
   "/ark-nova/": 21,
   "/arnak/": 22,
   "/azul/": 23,
-  "/black/": 438,
+  "/black/": 463,
   "/black/robo/": 8,
   "/bomb-busters/": 21,
   "/brass-birmingham/": 28,
+  "/bubble-stories/": 25,
   "/carnegie/": 29,
   "/cascadia/": 21,
   "/castle-combo/": 22,
@@ -22406,6 +23332,7 @@
   "/hegemony/": 26,
   "/hot-streak/": 23,
   "/inventors-of-the-south-tigris/": 26,
+  "/isle-of-skye/": 27,
   "/jogos-de-tabuleiro/": 7,
   "/jogos-de-tabuleiro/campanha-e-legacy/": 7,
   "/jogos-de-tabuleiro/cooperativos/": 7,
@@ -22422,11 +23349,14 @@
   "/kutna-hora/": 23,
   "/lancamentos/": 10,
   "/last-light/": 28,
+  "/magic-mountain/": 23,
   "/mechs-vs-minions/": 25,
   "/micromacro/": 21,
+  "/mon-puzzle-aventure/": 23,
   "/mysterium-kids/": 24,
   "/nemesis/": 22,
   "/noticias/": 7,
+  "/noticias/abalone-minimundos-25-de-marco-meeplestarter/": 15,
   "/noticias/acelera-bruxa-fecha-financiamento-meeplestarter/": 12,
   "/noticias/adventure-time-card-wars-2026-passa-de-1-milhao/": 17,
   "/noticias/an-infamous-traffic-cole-wehrle-fecha-kickstarter/": 18,
@@ -22444,6 +23374,7 @@
   "/noticias/categoria/mercado/": 7,
   "/noticias/categoria/premios/": 7,
   "/noticias/civolution-e-horizontes-de-spirit-island-chegam-as-lojas/": 18,
+  "/noticias/clash-royale-the-grand-arena-kickstarter/": 13,
   "/noticias/coffee-rush-inverno-anunciado-asmodee/": 15,
   "/noticias/coveiros-vs-caveiras-pre-venda-amaze-games/": 11,
   "/noticias/cubyria-architects-of-a-lost-city-kickstarter/": 15,
@@ -22470,6 +23401,7 @@
   "/noticias/grok-propolis-colegas-blind-jack-em-breve/": 19,
   "/noticias/guia-dos-premios-2027/": 19,
   "/noticias/halo-campaign-evolved-tabuleiro-mantic-pre-venda/": 14,
+  "/noticias/harakiri-blades-of-honor-first-turn-meeplestarter/": 13,
   "/noticias/harmonies-crescendo-e-bang-dice-explosion-ganham-preco/": 17,
   "/noticias/heat-ganha-versao-digital-mipmap/": 16,
   "/noticias/horizontes-de-spirit-island-pre-venda-ace-studios/": 13,
@@ -22488,6 +23420,7 @@
   "/noticias/mosaico-jogos-terraria-e-floe-novembro/": 15,
   "/noticias/nemesis-legacy-fecha-com-12-milhoes-de-euros/": 16,
   "/noticias/night-at-the-zoo-pondscape-bucaneiros/": 17,
+  "/noticias/night-at-the-zoo-pondscape-fecham-331-mil/": 14,
   "/noticias/oceanos-ace-studios-meeplestarter/": 18,
   "/noticias/ordinary-magic-unstable-games-gamefound/": 16,
   "/noticias/origins-of-light-final-fantasy-tabuleiro-kickstarter/": 14,
@@ -22502,6 +23435,7 @@
   "/noticias/restoration-games-workshop-refaz-chaos-in-the-old-world/": 16,
   "/noticias/ruins-alebrijes-protocolo-scintilla-outubro/": 15,
   "/noticias/santuario-vence-deutscher-spiele-preis-2026/": 16,
+  "/noticias/satisfactory-reta-final-quase-3-milhoes/": 13,
   "/noticias/satisfactory-tabuleiro-passa-de-2-milhoes-gamefound/": 14,
   "/noticias/sentando-a-pua-e-revive-call-of-the-abyss/": 17,
   "/noticias/speakeasy-vital-lacerda-pre-venda-mosaico/": 14,
