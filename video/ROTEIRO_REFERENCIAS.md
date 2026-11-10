@@ -88,6 +88,28 @@ Fonte: github.com/alexgreensh/anidoodle (Apache 2.0), `references/storytelling.m
 - **Cada piada tem uma linha "quem ri e por quê"**; se precisar explicar, sai ou é reescrita.
 - **O personagem mantém a "voz visual"**: uma fala dele sempre aparece com a mesma cara (cor de legenda, balão, pose).
 
+## 4c. Série interativa: o caso @saveo.house ("Every Dollar Leaves a Trail")
+
+Analisado em 10/11/2026 pelas legendas e números públicos de 12 Reels (o vídeo em si o Instagram não deixou baixar).
+Perfil com ~239 mil seguidores. A Parte 1 fez **16 milhões de visualizações e 12.900 comentários**; o Dia 7, 1,6 milhão; o Dia 8, 852 mil e 2.582 comentários.
+
+**O que eles fazem:**
+1. **Você é o protagonista**, na segunda pessoa: "Você acabou de roubar 10 milhões." (a nossa "E se você acordasse dentro de…" é a mesma ideia).
+2. **Gancho com número concreto e prazo**: "24 milhões em dinheiro. Pesa 240 quilos. Em 90 segundos a gaiola tranca."
+3. **O episódio termina numa escolha de 2 ou 3 opções**, cada uma com **preço claro** ("PAGAR: ela te leva até o guarda. Você perde 4 milhões."), e o público **comenta uma palavra só**. "A maioria escreve a Parte 9." Comentários em massa empurram o vídeo no algoritmo.
+4. **Prova social dentro da história**: "1.355 de vocês acertaram o nome dele", "61% de vocês pouparam o Dre".
+5. **Série diária** (Dia 1…9), com finale, recapitulação e temporada 2 anunciada com data.
+6. **Personagem recorrente com perfil próprio** (o primo Dre tem conta, @cousin.dre) e **membros da comunidade creditados** ("Fundadores no placar: @…").
+7. **Tudo leva ao site**: cada escolha fica salva na "ficha" do espectador no site, com placar, ranking e prêmios. É um funil de tráfego.
+8. **Alerta**: a temporada 2 caiu para 100–250 mil por episódio; a novidade cansa. Gancho novo a cada temporada.
+
+**Como aplicar aos nossos jogos ("Você decide a jogada"):**
+- O personagem (Ronaldo, Lukita…) para diante de uma decisão do jogo e o vídeo termina com **"Comenta LANÇAR ou RETORNAR"**.
+- O episódio seguinte mostra a consequência, **e a consequência é a regra de verdade**: o público aprende pela escolha que fez.
+- Cada opção mostra o custo em termos do jogo (pontos, recursos, risco de batalha).
+- No episódio seguinte, a prova social: "68% de vocês mandaram ele para a nebulosa…".
+- Link para o tutorial do site como a "ficha" do jogador.
+
 ## 5. Desenho (Claude Drawing)
 
 Fonte: github.com/cloveric/claude-drawing-skill (MIT), `docs/PRINCIPLES.md`. A skill pinta com código (Python + Pillow, sem modelo de imagem), em 83 estilos.
