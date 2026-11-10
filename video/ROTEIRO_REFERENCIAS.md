@@ -1,6 +1,6 @@
 # Referências de roteiro e direção para as animações
 
-Regras tiradas de três skills abertas (licença MIT) que destilam explainers que funcionam.
+Regras tiradas de skills abertas (MIT e Apache 2.0) que destilam explainers que funcionam.
 Lidas em 10/11/2026; só a documentação, nenhum código executado. Complementa o `PADRAO_VIDEO.md`.
 
 - **Vox Director** (github.com/Alisa0808/vox-director, `references/beat-layer.md`): arcos narrativos, ganchos, ritmo.
@@ -61,6 +61,32 @@ Nossa série "E se você acordasse dentro de…" é `man_in_hole` com miolo `how
 9. **Transição na respiração ou na troca de assunto**, nunca no meio da frase. Variar o tipo de transição.
 10. **O primeiro evento é visual**, não um título. Texto na tela tem no máximo 14 caracteres por bloco; a fala inteira vai na legenda. Menos da metade dos eventos é texto.
 11. **Revisar a lógica e os números**, não só se está bonito ("subiu 8,7 vezes" ≠ "subiu para 8,7 vezes").
+
+## 4b. História e comédia (Anidoodle)
+
+Fonte: github.com/alexgreensh/anidoodle (Apache 2.0), `references/storytelling.md`. Cada regra veio de um erro real no filme de exemplo do projeto.
+
+**O que todo filme precisa, mesmo com 60 s:**
+- **Uma transformação que cabe em duas palavras com uma seta.** Ex.: "perdido → mestre". Se a ideia é uma lista ("e aí mostramos a regra X"), ainda não é história.
+- **Gancho nos primeiros 3 s**, que planta uma pergunta. Nada de logo, tela parada ou "apresentação".
+- **Uma virada que dá para apontar na linha do tempo**, causada por algo **dentro do mundo** do filme (não por um corte de narrador).
+- **Escalada física**: o mundo cresce porque o personagem cresce (a câmera abre conforme ele avança).
+- **Um objeto-símbolo que volta mudado**: aparece cedo, nunca é explicado e volta pequeno no fim. O público descobre sozinho, e esse é o prêmio.
+- **Um defeito que se cura**: uma imperfeição armada no começo e paga no fim vale mais que qualquer polimento.
+- **Resolver e dar espaço**: termina no tempo forte e deixa uns segundos para ler. Nunca termina em cima do último evento.
+
+**Testes antes de produzir:** contar em 3 frases; dizer em que quadro está a virada; nomear o objeto-símbolo e os dois quadros onde ele aparece; para cada plano perguntar "o que mudou para o personagem?" (se a resposta for "só o visual", o plano sai); cada elemento na tela tem um motivo de uma linha.
+
+**Nada de ar morto:** algo visível se mexe em todo segundo, desde o quadro 0.
+
+**Roteiro como ação, não como fato:** cada linha do storyboard diz o que **se move** e no que vira, e o que **carrega** da linha anterior (um objeto, uma forma, a câmera). Duas linhas seguidas que não carregam nada são dois slides. Diga cada coisa uma vez só; um número repetido é um fato contado duas vezes.
+
+**Comédia:**
+- **Dor primeiro, piada depois**: liste as dores reais de quem joga (o manual de 40 páginas, a regra esquecida, o amigo que explica tudo errado) e escreva uma piada por dor. Substantivos específicos ganham de piada genérica.
+- **A piada mira a situação ou o hábito, nunca uma pessoa real nem o jogo.** Nossos personagens são pessoas da comunidade: a graça vem do que eles fazem, nunca de quem eles são.
+- **Variar o tipo de piada**, com pelo menos 4: verbal, trocadilho visual, interação, física (pastelão), estrutural (texto que se corrige sozinho, cadeira vazia). Nenhum tipo passa de 60% das piadas.
+- **Cada piada tem uma linha "quem ri e por quê"**; se precisar explicar, sai ou é reescrita.
+- **O personagem mantém a "voz visual"**: uma fala dele sempre aparece com a mesma cara (cor de legenda, balão, pose).
 
 ## 5. Desenho (Claude Drawing)
 
