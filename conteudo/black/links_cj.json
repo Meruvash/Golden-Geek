@@ -6,10 +6,10 @@
   "tocadotabuleiro": "https://www.tocadotabuleiro.com/produto/the-witcher-rpg-o-diario-do-bruxo-suplemento-de-regras-para-witcher-rpg-2349"
  },
  "abroad": {
-  "_hora": "2026-11-09T16:47-03:00",
+  "_hora": "2026-11-10T17:05-03:00",
   "alquimistasdosjogos": "https://www.alquimistasdosjogos.com.br/jogos/abroad",
+  "brecholudico": "https://brecholudico.com.br/produto/abroad/",
   "ludostation": "https://ludostation.com.br/produtos/abroad-1ofzs/?entry_path=category",
-  "masmorra": "https://www.masmorra.com.br/produtos/grk0214",
   "mecadosjogos": "https://www.mecadosjogos.com.br/abroad-p1221",
   "tabulerio": "https://www.tabulerio.com.br/jogos/abroad"
  },
@@ -67,6 +67,15 @@
  "arcs-lideres-e-conhecimento": {
   "_hora": "2026-11-09T16:16-03:00",
   "meeplebr": "https://www.lojameeplebrjogos.com.br/arcs-lideres-e-conhecimento"
+ },
+ "ark-nova-zoologicos-promo-2": {
+  "_hora": "2026-11-10T17:06-03:00",
+  "amazon": "https://www.amazon.com.br/dp/B0FKCJMS4Y",
+  "boargames": "https://www.boargames.com.br/jogos-de-tabuleiro/expert/ark-nova-zoologico-promo-2",
+  "masmorra": "https://www.masmorra.com.br/produtos/grk00199",
+  "mecadosjogos": "https://www.mecadosjogos.com.br/ark-nova-zoologico-promo-2-p934",
+  "modoaviaoboardgames": "https://modoaviaobg.com.br/produtos/ark-nova-zoologico-promo-2/?entry_path=category",
+  "tabulerio": "https://www.tabulerio.com.br/promo/ark-nova-zoologico-promo-2"
  },
  "arkham-horror-card-game-a-era-esquecida-expansao-de-investigador": {
   "_hora": "2026-11-05T20:47-03:00",
@@ -296,7 +305,7 @@
   "tabuloja": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/codigo-secreto-imagens"
  },
  "coffee-rush-inverno": {
-  "_hora": "2026-11-09T16:47-03:00",
+  "_hora": "2026-11-10T17:06-03:00",
   "alquimistasdosjogos": "https://www.alquimistasdosjogos.com.br/jogos/coffee-rush-inverno",
   "amazon": "https://www.amazon.com.br/dp/B0HMJYQZTR",
   "ludostation": "https://ludostation.com.br/produtos/coffee-rush-winter-galapagos/?entry_path=category",
@@ -549,6 +558,15 @@
   "guildadosjogos": "https://www.guildadosjogos.com.br/flip-7-a-vinganca-nunca-e-plena",
   "mercadolivre": "https://www.mercadolivre.com.br/p/MLB67296023",
   "tabuloja": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/flip-7-a-vinganca-nunca-e-plena"
+ },
+ "fora-de-ordem": {
+  "_hora": "2026-11-10T17:06-03:00",
+  "adoletajogos": "https://loja.adoletajogos.com.br/fora-de-ordem",
+  "amazon": "https://www.amazon.com.br/dp/B0CLQN77T4",
+  "brecholudico": "https://brecholudico.com.br/produto/fora-de-ordem/",
+  "caixinhaboardgames": "https://www.caixinhaboardgames.com.br/produtos/fora-de-ordem/?entry_path=category",
+  "mercadolivre": "https://www.mercadolivre.com.br/p/MLB70661818",
+  "yorkjogos": "https://www.yorkjogos.com.br/fora-de-ordem"
  },
  "fornalha": {
   "_hora": "2026-11-09T16:16-03:00",
@@ -1074,6 +1092,49 @@
   "pittasboardgames": "https://www.pittasboardgames.com.br/produtos/skyrise-1c8ng/?entry_path=category",
   "tabuloja": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/skyrise"
  },
+ "sleeve-copper-65x100mm": {
+  "_hora": "2026-11-10T17:06-03:00",
+  "amazon": "https://www.amazon.com.br/dp/B0GYK25VQF",
+  "mercadolivre": "https://www.mercadolivre.com.br/p/MLB67202817"
+ },
+ "sleeve-gold-80x120mm": {
+  "_hora": "2026-11-10T17:06-03:00",
+  "amazon": "https://www.amazon.com.br/dp/B0GYK6YZKX",
+  "mercadolivre": "https://www.mercadolivre.com.br/p/MLB21914557"
+ },
+ "sleeve-mini-chimera-43x65mm": {
+  "_hora": "2026-11-10T17:06-03:00",
+  "amazon": "https://www.amazon.com.br/dp/B0GYJT8DGN",
+  "mercadolivre": "https://www.mercadolivre.com.br/p/MLB19829629",
+  "playeasy": "https://www.playeasy.com.br/sleeves-mini-chimera-43-x-65-mm-blue-core"
+ },
+ "sleeve-mini-euro-45x68mm": {
+  "_hora": "2026-11-10T17:06-03:00",
+  "amazon": "https://www.amazon.com.br/dp/B0GYK84RZF"
+ },
+ "sleeve-quadrado-medio-80x80mm": {
+  "_hora": "2026-11-10T17:06-03:00",
+  "amazon": "https://www.amazon.com.br/dp/B0H12ZLJ7G",
+  "mercadolivre": "https://www.mercadolivre.com.br/p/MLB67352261",
+  "playeasy": "https://www.playeasy.com.br/sleeves-quadrado-medio-80-x-80-mm-blue-core"
+ },
+ "sleeve-silver-70x110mm": {
+  "_hora": "2026-11-10T17:06-03:00",
+  "amazon": "https://www.amazon.com.br/dp/B0H12SXLS8",
+  "boargames": "https://www.boargames.com.br/acessorios/sleeves/sleeve-bucaneiros-jogos-silver-70-x-110mm",
+  "playeasy": "https://www.playeasy.com.br/sleeves-silver-70-x-110-mm-blue-core"
+ },
+ "sleeve-tarot-70x120mm": {
+  "_hora": "2026-11-10T17:06-03:00",
+  "amazon": "https://www.amazon.com.br/dp/B0H132D5XL",
+  "mercadolivre": "https://www.mercadolivre.com.br/p/MLB67352103"
+ },
+ "sleeve-usa-56x87mm": {
+  "_hora": "2026-11-10T17:06-03:00",
+  "amazon": "https://www.amazon.com.br/dp/B0H12X4D4S",
+  "mercadolivre": "https://www.mercadolivre.com.br/p/MLB22365095",
+  "playeasy": "https://www.playeasy.com.br/sleeve-padrao-usa-56-mm-87-mm-meeple-virus-blue-core-premium"
+ },
  "space-base": {
   "_hora": "2026-11-10T00:04-03:00",
   "frodosbg": "https://loja.frodosbg.com.br/space-base"
@@ -1175,11 +1236,11 @@
   "spaceboardgames": "https://www.spaceboardgames.com.br/jogos-de-tabuleiro/the-white-castle-duel"
  },
  "thesauros": {
-  "_hora": "2026-11-09T16:47-03:00",
+  "_hora": "2026-11-10T17:06-03:00",
   "facilshopping": "https://www.facilshopping.com.br/produtos/thesauros-meeple-br-10u3g/?entry_path=category",
+  "mecadosjogos": "https://www.mecadosjogos.com.br/thesauros-p1486",
   "omniverse": "https://www.omniverse.com.br/thesauros",
   "spaceboardgames": "https://www.spaceboardgames.com.br/jogos-de-tabuleiro/thesauros",
-  "tabulerio": "https://www.tabulerio.com.br/jogos/jogos-de-carta/thesauros",
   "tabuloja": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/thesauros"
  },
  "through-the-ages-uma-nova-historia-da-civilizacao": {
