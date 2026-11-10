@@ -440,9 +440,8 @@
     "loja": "Caixinha Boardgames",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 50.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:38-03:00",
+     "preco": 50.0
     },
     "loja_id": "caixinhaboardgames",
     "por": 46.5,
@@ -457,9 +456,8 @@
     "loja": "Cangaia Jogos",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 51.99,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:38-03:00",
+     "preco": 51.99
     },
     "loja_id": "cangaiajogos",
     "por": 48.35,
@@ -513,7 +511,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:17-03:00"
+  "verificado": "2026-11-09T21:33-03:00"
  },
  "3-dragoes": {
   "ofertas": [
@@ -970,7 +968,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:17-03:00"
+  "verificado": "2026-11-09T21:35-03:00"
  },
  "5-pares": {
   "ofertas": [
@@ -1071,9 +1069,8 @@
     "loja": "Place Games",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 37.09,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:38-03:00",
+     "preco": 37.09
     },
     "loja_id": "placegames",
     "por": 37.09,
@@ -1116,7 +1113,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:17-03:00"
+  "verificado": "2026-11-09T21:34-03:00"
  },
  "5-segundos": {
   "ofertas": [
@@ -1233,9 +1230,8 @@
     "loja": "Caixinha Boardgames",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 22.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:38-03:00",
+     "preco": 22.0
     },
     "loja_id": "caixinhaboardgames",
     "por": 20.46,
@@ -1256,7 +1252,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:17-03:00"
+  "verificado": "2026-11-09T21:32-03:00"
  },
  "50-arvores": {
   "ofertas": [
@@ -1293,9 +1289,8 @@
     "loja": "PlayEasy",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 19.09,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:38-03:00",
+     "preco": 19.09
     },
     "loja_id": "playeasy",
     "por": 17.75,
@@ -1349,7 +1344,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:17-03:00"
+  "verificado": "2026-11-09T21:35-03:00"
  },
  "50-caes": {
   "ofertas": [
@@ -1359,9 +1354,8 @@
     "loja": "PlayEasy",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 19.8,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:38-03:00",
+     "preco": 19.8
     },
     "loja_id": "playeasy",
     "por": 18.41,
@@ -1376,9 +1370,8 @@
     "loja": "Caixinha Boardgames",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 22.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:38-03:00",
+     "preco": 22.0
     },
     "loja_id": "caixinhaboardgames",
     "por": 20.46,
@@ -1410,7 +1403,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:17-03:00"
+  "verificado": "2026-11-09T21:35-03:00"
  },
  "50-clues-white-sleep": {
   "ofertas": [
@@ -1456,9 +1449,8 @@
     "loja": "Odisseia Jogos",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 29.9,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:38-03:00",
+     "preco": 29.9
     },
     "loja_id": "odisseiajogos",
     "por": 28.4,
@@ -1501,7 +1493,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:17-03:00"
+  "verificado": "2026-11-09T21:35-03:00"
  },
  "50-filhotes": {
   "ofertas": [
@@ -1522,9 +1514,8 @@
     "loja": "PlayEasy",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 19.9,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:38-03:00",
+     "preco": 19.9
     },
     "loja_id": "playeasy",
     "por": 18.51,
@@ -1539,9 +1530,8 @@
     "loja": "Caixinha Boardgames",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 22.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:38-03:00",
+     "preco": 22.0
     },
     "loja_id": "caixinhaboardgames",
     "por": 20.46,
@@ -1584,7 +1574,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:17-03:00"
+  "verificado": "2026-11-09T21:33-03:00"
  },
  "50-flores": {
   "ofertas": [
@@ -2483,7 +2473,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:18-03:00"
+  "verificado": "2026-11-09T21:36-03:00"
  },
  "7-wonders-duel-panteao": {
   "ofertas": [
@@ -2712,9 +2702,8 @@
     "loja": "Caixinha Boardgames",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 149.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:38-03:00",
+     "preco": 149.0
     },
     "loja_id": "caixinhaboardgames",
     "por": 138.57,
@@ -2768,7 +2757,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:18-03:00"
+  "verificado": "2026-11-09T21:37-03:00"
  },
  "7-wonders-segunda-edicao-lideres": {
   "ofertas": [
@@ -3119,9 +3108,8 @@
     "loja": "Caixinha Boardgames",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 79.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:38-03:00",
+     "preco": 79.0
     },
     "loja_id": "caixinhaboardgames",
     "por": 73.47,
@@ -3136,9 +3124,8 @@
     "loja": "PlayEasy",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 79.99,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:38-03:00",
+     "preco": 79.99
     },
     "loja_id": "playeasy",
     "por": 74.39,
@@ -3153,9 +3140,8 @@
     "loja": "Alquimistas dos Jogos",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 80.81,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:38-03:00",
+     "preco": 80.81
     },
     "loja_id": "alquimistasdosjogos",
     "por": 80.81,
@@ -3176,7 +3162,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:18-03:00"
+  "verificado": "2026-11-09T21:35-03:00"
  },
  "a-feast-for-odin-mini-expansion-1": {
   "ofertas": [
@@ -3547,7 +3533,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:19-03:00"
+  "verificado": "2026-11-09T21:34-03:00"
  },
  "a-lenda-da-princesa": {
   "ofertas": [
@@ -4204,9 +4190,8 @@
     "loja": "Odisseia Jogos",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 79.9,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:38-03:00",
+     "preco": 79.9
     },
     "loja_id": "odisseiajogos",
     "por": 75.9,
@@ -4238,7 +4223,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:19-03:00"
+  "verificado": "2026-11-09T21:37-03:00"
  },
  "a-witchers-journal": {
   "ofertas": [
@@ -4248,9 +4233,8 @@
     "loja": "Odisseia Jogos",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 79.9,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:38-03:00",
+     "preco": 79.9
     },
     "loja_id": "odisseiajogos",
     "por": 75.9,
@@ -4282,7 +4266,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:19-03:00"
+  "verificado": "2026-11-09T21:37-03:00"
  },
  "abalone": {
   "ofertas": [
@@ -4417,9 +4401,8 @@
     "loja": "ARCS Livros e Jogos",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 30.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:38-03:00",
+     "preco": 30.0
     },
     "loja_id": "espacoarcs",
     "por": 27,
@@ -4473,7 +4456,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:20-03:00"
+  "verificado": "2026-11-09T21:36-03:00"
  },
  "abomination-the-heir-of-frankenstein": {
   "ofertas": [],
@@ -5171,7 +5154,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:20-03:00"
+  "verificado": "2026-11-09T21:33-03:00"
  },
  "adrenaline": {
   "ofertas": [],
@@ -5312,7 +5295,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:20-03:00"
+  "verificado": "2026-11-09T21:32-03:00"
  },
  "aeons-end-legacy": {
   "ofertas": [
@@ -5355,7 +5338,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:20-03:00"
+  "verificado": "2026-11-09T21:32-03:00"
  },
  "aeons-end-the-depths": {
   "ofertas": [
@@ -5429,9 +5412,8 @@
     "loja": "TabuLoja",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 59.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:38-03:00",
+     "preco": 59.0
     },
     "loja_id": "tabuloja",
     "por": 53.1,
@@ -5496,7 +5478,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:21-03:00"
+  "verificado": "2026-11-09T21:34-03:00"
  },
  "aetherspire": {
   "ofertas": [],
@@ -6382,9 +6364,8 @@
     "loja": "Alquimistas dos Jogos",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 292.31,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:38-03:00",
+     "preco": 292.31
     },
     "loja_id": "alquimistasdosjogos",
     "por": 292.31,
@@ -6439,7 +6420,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:21-03:00"
+  "verificado": "2026-11-09T21:30-03:00"
  },
  "alhambra": {
   "ofertas": [],
@@ -6485,9 +6466,8 @@
     "loja": "Leão Livros",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 118.85,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:38-03:00",
+     "preco": 118.85
     },
     "loja_id": "leaolivros",
     "por": 118.85,
@@ -6502,9 +6482,8 @@
     "loja": "Meca dos Jogos",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 132.8,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:38-03:00",
+     "preco": 132.8
     },
     "loja_id": "mecadosjogos",
     "por": 119.52,
@@ -6519,9 +6498,8 @@
     "loja": "PlayEasy",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 129.9,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:38-03:00",
+     "preco": 129.9
     },
     "loja_id": "playeasy",
     "por": 120.81,
@@ -6536,9 +6514,8 @@
     "loja": "Board Game Barato",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 124.11,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:38-03:00",
+     "preco": 124.11
     },
     "loja_id": "boardgamebarato",
     "por": 124.11,
@@ -6553,9 +6530,8 @@
     "loja": "Caixinha Boardgames",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 134.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:38-03:00",
+     "preco": 134.0
     },
     "loja_id": "caixinhaboardgames",
     "por": 124.62,
@@ -6570,9 +6546,8 @@
     "loja": "Place Games",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 130.09,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:38-03:00",
+     "preco": 130.09
     },
     "loja_id": "placegames",
     "por": 130.09,
@@ -6582,7 +6557,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:22-03:00"
+  "verificado": "2026-11-09T21:35-03:00"
  },
  "alien-fate-of-the-nostromo": {
   "ofertas": [],
@@ -7840,9 +7815,8 @@
     "loja": "TabuleRIO",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 249.9,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:38-03:00",
+     "preco": 249.9
     },
     "loja_id": "tabulerio",
     "por": 224.91,
@@ -7857,9 +7831,8 @@
     "loja": "PlayEasy",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 249.9,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:38-03:00",
+     "preco": 249.9
     },
     "loja_id": "playeasy",
     "por": 232.41,
@@ -7885,9 +7858,8 @@
     "loja": "Taverna Real",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 263.99,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:38-03:00",
+     "preco": 263.99
     },
     "loja_id": "tavernareal",
     "por": 237.59,
@@ -7897,7 +7869,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:22-03:00"
+  "verificado": "2026-11-09T21:30-03:00"
  },
  "anachrony-expansao-classica": {
   "ofertas": [
@@ -8692,7 +8664,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:23-03:00"
+  "verificado": "2026-11-09T21:36-03:00"
  },
  "ankh-gods-of-egypt-pantheon": {
   "ofertas": [
@@ -8787,9 +8759,8 @@
     "loja": "Place Games",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 92.89,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:38-03:00",
+     "preco": 92.89
     },
     "loja_id": "placegames",
     "por": 92.89,
@@ -8832,7 +8803,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:23-03:00"
+  "verificado": "2026-11-09T21:33-03:00"
  },
  "antiques-ghost-show": {
   "ofertas": [
@@ -9478,7 +9449,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:24-03:00"
+  "verificado": "2026-11-09T21:36-03:00"
  },
  "architectura": {
   "ofertas": [
@@ -10213,7 +10184,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:25-03:00"
+  "verificado": "2026-11-09T21:31-03:00"
  },
  "arkham-horror-card-game-a-era-esquecida-expansao-de-investigador": {
   "ofertas": [
@@ -12505,9 +12476,8 @@
     "loja": "Meca dos Jogos",
     "loja_agora": {
      "estoque": false,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 50.5,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:38-03:00",
+     "preco": 50.5
     },
     "loja_id": "mecadosjogos",
     "por": 45.45,
@@ -12762,7 +12732,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:27-03:00"
+  "verificado": "2026-11-09T21:31-03:00"
  },
  "athos-bulcao-master-pieces": {
   "ofertas": [
@@ -13561,7 +13531,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:28-03:00"
+  "verificado": "2026-11-09T21:31-03:00"
  },
  "axis-allies-1942-second-edition": {
   "ofertas": [],
@@ -14113,9 +14083,8 @@
     "loja": "Place Games",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 102.19,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:38-03:00",
+     "preco": 102.19
     },
     "loja_id": "placegames",
     "por": 102.19,
@@ -14130,9 +14099,8 @@
     "loja": "Caixinha Boardgames",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 115.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:38-03:00",
+     "preco": 115.0
     },
     "loja_id": "caixinhaboardgames",
     "por": 106.95,
@@ -14153,7 +14121,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:28-03:00"
+  "verificado": "2026-11-09T21:36-03:00"
  },
  "azul-pavilhao-de-verao-pavilhao-envidracado": {
   "ofertas": [
@@ -14259,7 +14227,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:28-03:00"
+  "verificado": "2026-11-09T21:31-03:00"
  },
  "bacchus": {
   "ofertas": [
@@ -14701,9 +14669,8 @@
     "loja": "Leão Livros",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 99.51,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:38-03:00",
+     "preco": 99.51
     },
     "loja_id": "leaolivros",
     "por": 99.51,
@@ -14752,7 +14719,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:28-03:00"
+  "verificado": "2026-11-09T21:37-03:00"
  },
  "balde-de-caranguejo": {
   "ofertas": [
@@ -15102,9 +15069,8 @@
     "loja": "PlayEasy",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 59.9,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:38-03:00",
+     "preco": 59.9
     },
     "loja_id": "playeasy",
     "por": 55.71,
@@ -15119,9 +15085,8 @@
     "loja": "Caixinha Boardgames",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 65.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:38-03:00",
+     "preco": 65.0
     },
     "loja_id": "caixinhaboardgames",
     "por": 60.45,
@@ -15131,7 +15096,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:29-03:00"
+  "verificado": "2026-11-09T21:35-03:00"
  },
  "bananagrams-party": {
   "ofertas": [
@@ -15172,9 +15137,8 @@
     "loja": "Caixinha Boardgames",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 85.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:38-03:00",
+     "preco": 85.0
     },
     "loja_id": "caixinhaboardgames",
     "por": 79.05,
@@ -15217,7 +15181,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:29-03:00"
+  "verificado": "2026-11-09T21:35-03:00"
  },
  "banco-imobiliario": {
   "ofertas": [
@@ -15297,7 +15261,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:29-03:00"
+  "verificado": "2026-11-09T21:30-03:00"
  },
  "banco-imobiliario-cartas": {
   "ofertas": [
@@ -16204,7 +16168,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:29-03:00"
+  "verificado": "2026-11-09T21:36-03:00"
  },
  "barenpark": {
   "ofertas": [],
@@ -16253,7 +16217,7 @@
     "loja": "Alquimistas dos Jogos",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:08-03:00",
+     "hora": "2026-11-09T21:38-03:00",
      "preco": 449.81
     },
     "loja_id": "alquimistasdosjogos",
@@ -16275,7 +16239,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:29-03:00"
+  "verificado": "2026-11-09T21:34-03:00"
  },
  "barrage-5-player-expansion": {
   "ofertas": [],
@@ -16346,7 +16310,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:29-03:00"
+  "verificado": "2026-11-09T21:33-03:00"
  },
  "barricade": {
   "ofertas": [],
@@ -16748,9 +16712,8 @@
     "loja": "Bravo Jogos",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 79.9,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:38-03:00",
+     "preco": 79.9
     },
     "loja_id": "bravojogos",
     "por": 74.31,
@@ -16793,7 +16756,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:29-03:00"
+  "verificado": "2026-11-09T21:32-03:00"
  },
  "batman-gotham-city-sem-lei": {
   "ofertas": [
@@ -16834,9 +16797,8 @@
     "loja": "Place Games",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 17.89,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:38-03:00",
+     "preco": 18.49
     },
     "loja_id": "placegames",
     "por": 18.49,
@@ -16879,7 +16841,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:29-03:00"
+  "verificado": "2026-11-09T21:33-03:00"
  },
  "batman-gotham-city-strategy-game": {
   "ofertas": [],
@@ -17103,9 +17065,8 @@
     "loja": "Bravo Jogos",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 29.99,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:38-03:00",
+     "preco": 29.99
     },
     "loja_id": "bravojogos",
     "por": 27.89,
@@ -17126,7 +17087,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:30-03:00"
+  "verificado": "2026-11-09T21:34-03:00"
  },
  "battlespace-ultra-modern-solo-skirmish-game": {
   "ofertas": [
@@ -17249,9 +17210,8 @@
     "loja": "TabuLoja",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 219.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:38-03:00",
+     "preco": 219.0
     },
     "loja_id": "tabuloja",
     "por": 197.1,
@@ -17261,7 +17221,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:30-03:00"
+  "verificado": "2026-11-09T21:33-03:00"
  },
  "beach-bandits": {
   "ofertas": [
@@ -18500,7 +18460,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:31-03:00"
+  "verificado": "2026-11-09T21:31-03:00"
  },
  "bioshock-infinite-the-siege-of-columbia": {
   "ofertas": [],
@@ -18683,9 +18643,8 @@
     "loja": "TabuleRIO",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 101.03,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:38-03:00",
+     "preco": 101.03
     },
     "loja_id": "tabulerio",
     "por": 90.93,
@@ -18739,7 +18698,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:31-03:00"
+  "verificado": "2026-11-09T21:37-03:00"
  },
  "blabbi": {
   "ofertas": [],
@@ -18753,9 +18712,8 @@
     "loja": "TabuLoja",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 89.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:38-03:00",
+     "preco": 89.0
     },
     "loja_id": "tabuloja",
     "por": 80.1,
@@ -18820,7 +18778,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:31-03:00"
+  "verificado": "2026-11-09T21:37-03:00"
  },
  "black-angel": {
   "ofertas": [
@@ -20019,7 +19977,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:32-03:00"
+  "verificado": "2026-11-09T21:31-03:00"
  },
  "black-stories-junior-green-stories": {
   "ofertas": [
@@ -20140,9 +20098,8 @@
     "loja": "Place Games",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 18.49,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:38-03:00",
+     "preco": 18.49
     },
     "loja_id": "placegames",
     "por": 18.49,
@@ -20174,7 +20131,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:32-03:00"
+  "verificado": "2026-11-09T21:32-03:00"
  },
  "black-stories-junior-rainbow-stories": {
   "ofertas": [
@@ -20352,7 +20309,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:32-03:00"
+  "verificado": "2026-11-09T21:35-03:00"
  },
  "black-stories-junior-spooky-stories": {
   "ofertas": [
@@ -20362,9 +20319,8 @@
     "loja": "Place Games",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 27.79,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:38-03:00",
+     "preco": 27.79
     },
     "loja_id": "placegames",
     "por": 27.79,
@@ -20418,7 +20374,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:32-03:00"
+  "verificado": "2026-11-09T21:35-03:00"
  },
  "black-stories-junior-true-stories": {
   "ofertas": [
@@ -20428,9 +20384,8 @@
     "loja": "Ludostation",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 39.99,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:38-03:00",
+     "preco": 39.99
     },
     "loja_id": "ludostation",
     "por": 35.99,
@@ -20615,7 +20570,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:32-03:00"
+  "verificado": "2026-11-09T21:32-03:00"
  },
  "black-stories-movie-edition": {
   "ofertas": [
@@ -20816,7 +20771,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:32-03:00"
+  "verificado": "2026-11-09T21:36-03:00"
  },
  "black-stories-shit-happens": {
   "ofertas": [
@@ -21505,7 +21460,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:32-03:00"
+  "verificado": "2026-11-09T21:32-03:00"
  },
  "blokus-trigon": {
   "ofertas": [
@@ -21779,9 +21734,8 @@
     "loja": "Place Games",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 37.09,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:38-03:00",
+     "preco": 37.09
     },
     "loja_id": "placegames",
     "por": 37.09,
@@ -22657,7 +22611,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:34-03:00"
+  "verificado": "2026-11-09T21:31-03:00"
  },
  "boss-monster-the-dungeon-building-card-game": {
   "ofertas": [
@@ -22718,9 +22672,8 @@
     "loja": "TabuLoja",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 229.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:38-03:00",
+     "preco": 229.0
     },
     "loja_id": "tabuloja",
     "por": 206.1,
@@ -22774,7 +22727,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:34-03:00"
+  "verificado": "2026-11-09T21:38-03:00"
  },
  "botanik": {
   "ofertas": [],
@@ -23068,9 +23021,8 @@
     "loja": "TabuLoja",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 499.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:39-03:00",
+     "preco": 499.0
     },
     "loja_id": "tabuloja",
     "por": 449.1,
@@ -23080,7 +23032,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-09T22:09:27.92+00:00",
+    "atualizado": "2026-11-09T23:37:20.144+00:00",
     "de": 499.9,
     "loja": "Brechó Lúdico",
     "loja_id": "brecholudico",
@@ -23091,7 +23043,7 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-09T22:06:15.281+00:00",
+    "atualizado": "2026-11-09T23:04:25.873+00:00",
     "de": 498.99,
     "loja": "Cangaia Jogos",
     "loja_id": "cangaiajogos",
@@ -23102,7 +23054,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:34-03:00"
+  "verificado": "2026-11-09T21:38-03:00"
  },
  "braverats": {
   "ofertas": [
@@ -23867,7 +23819,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:34-03:00"
+  "verificado": "2026-11-09T21:33-03:00"
  },
  "buffy-the-vampire-slayer-the-game": {
   "ofertas": [
@@ -24505,9 +24457,8 @@
     "loja": "TabuLoja",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 99.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:39-03:00",
+     "preco": 99.0
     },
     "loja_id": "tabuloja",
     "por": 89.1,
@@ -24561,7 +24512,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:35-03:00"
+  "verificado": "2026-11-09T21:34-03:00"
  },
  "caca-letras": {
   "ofertas": [],
@@ -24726,7 +24677,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:35-03:00"
+  "verificado": "2026-11-09T21:36-03:00"
  },
  "caesar-seize-rome-in-20-minutes": {
   "ofertas": [
@@ -24832,9 +24783,8 @@
     "loja": "TabuLoja",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 129.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:39-03:00",
+     "preco": 129.0
     },
     "loja_id": "tabuloja",
     "por": 116.1,
@@ -24910,7 +24860,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:35-03:00"
+  "verificado": "2026-11-09T21:37-03:00"
  },
  "cafe-da-tarde": {
   "ofertas": [
@@ -25144,7 +25094,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:35-03:00"
+  "verificado": "2026-11-09T21:32-03:00"
  },
  "calamandara": {
   "ofertas": [
@@ -25621,9 +25571,8 @@
     "loja": "Place Games",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 35.09,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:39-03:00",
+     "preco": 23.14
     },
     "loja_id": "placegames",
     "por": 23.14,
@@ -25666,7 +25615,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:36-03:00"
+  "verificado": "2026-11-09T21:33-03:00"
  },
  "campy-creatures": {
   "ofertas": [],
@@ -25850,7 +25799,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:36-03:00"
+  "verificado": "2026-11-09T21:32-03:00"
  },
  "cangaceiros": {
   "ofertas": [],
@@ -26179,7 +26128,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:36-03:00"
+  "verificado": "2026-11-09T21:34-03:00"
  },
  "cape-horn": {
   "ofertas": [
@@ -26749,9 +26698,8 @@
     "loja": "Odisseia Jogos",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 99.9,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:39-03:00",
+     "preco": 99.9
     },
     "loja_id": "odisseiajogos",
     "por": 94.9,
@@ -26794,7 +26742,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:36-03:00"
+  "verificado": "2026-11-09T21:37-03:00"
  },
  "carcassonne-a-torre": {
   "ofertas": [
@@ -29773,7 +29721,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:38-03:00"
+  "verificado": "2026-11-09T21:31-03:00"
  },
  "catapult-kingdoms-the-royal-feast-expansion": {
   "ofertas": [
@@ -29972,9 +29920,8 @@
     "loja": "Place Games",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 35.09,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:39-03:00",
+     "preco": 27.79
     },
     "loja_id": "placegames",
     "por": 27.79,
@@ -30017,7 +29964,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:38-03:00"
+  "verificado": "2026-11-09T21:37-03:00"
  },
  "caverna": {
   "ofertas": [],
@@ -30627,9 +30574,8 @@
     "loja": "ARCS Livros e Jogos",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 30.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:39-03:00",
+     "preco": 30.0
     },
     "loja_id": "espacoarcs",
     "por": 27,
@@ -30672,7 +30618,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:39-03:00"
+  "verificado": "2026-11-09T21:36-03:00"
  },
  "champions-of-midgard": {
   "ofertas": [],
@@ -30889,9 +30835,8 @@
     "loja": "Bravo Jogos",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 29.9,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:39-03:00",
+     "preco": 29.9
     },
     "loja_id": "bravojogos",
     "por": 27.81,
@@ -30945,7 +30890,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:39-03:00"
+  "verificado": "2026-11-09T21:34-03:00"
  },
  "checkpoint-charlie": {
   "ofertas": [],
@@ -31679,7 +31624,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:40-03:00"
+  "verificado": "2026-11-09T21:37-03:00"
  },
  "cinco": {
   "ofertas": [
@@ -31873,9 +31818,8 @@
     "loja": "Frodos BG",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 132.89,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:39-03:00",
+     "preco": 132.89
     },
     "loja_id": "frodosbg",
     "por": 132.89,
@@ -31929,7 +31873,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:40-03:00"
+  "verificado": "2026-11-09T21:33-03:00"
  },
  "citadels-2013": {
   "ofertas": [],
@@ -33004,9 +32948,8 @@
     "loja": "Bravo Jogos",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 79.9,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:39-03:00",
+     "preco": 79.9
     },
     "loja_id": "bravojogos",
     "por": 74.31,
@@ -33049,7 +32992,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:41-03:00"
+  "verificado": "2026-11-09T21:35-03:00"
  },
  "clank-legacy-acquisitions-incorporated": {
   "ofertas": [],
@@ -33388,7 +33331,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:41-03:00"
+  "verificado": "2026-11-09T21:35-03:00"
  },
  "clue-master-detective": {
   "ofertas": [],
@@ -33732,9 +33675,8 @@
     "loja": "Facil Shopping",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 124.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:39-03:00",
+     "preco": 124.0
     },
     "loja_id": "facilshopping",
     "por": 115.32,
@@ -33777,7 +33719,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:41-03:00"
+  "verificado": "2026-11-09T21:34-03:00"
  },
  "codigo-secreto-imagens": {
   "ofertas": [
@@ -33909,9 +33851,8 @@
     "loja": "TabuLoja",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 219.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:39-03:00",
+     "preco": 219.0
     },
     "loja_id": "tabuloja",
     "por": 197.1,
@@ -34592,7 +34533,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:42-03:00"
+  "verificado": "2026-11-09T21:35-03:00"
  },
  "color-field": {
   "ofertas": [],
@@ -35127,7 +35068,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:42-03:00"
+  "verificado": "2026-11-09T21:30-03:00"
  },
  "comic-hunters": {
   "ofertas": [
@@ -35392,7 +35333,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:42-03:00"
+  "verificado": "2026-11-09T21:35-03:00"
  },
  "concept-kids-animals": {
   "ofertas": [
@@ -35654,7 +35595,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:42-03:00"
+  "verificado": "2026-11-09T21:30-03:00"
  },
  "conectados": {
   "ofertas": [
@@ -35902,9 +35843,8 @@
     "loja": "TabuLoja",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 74.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:39-03:00",
+     "preco": 74.0
     },
     "loja_id": "tabuloja",
     "por": 66.6,
@@ -35958,7 +35898,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:43-03:00"
+  "verificado": "2026-11-09T21:37-03:00"
  },
  "conservas": {
   "ofertas": [],
@@ -36528,9 +36468,8 @@
     "loja": "Place Games",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 18.49,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:39-03:00",
+     "preco": 18.49
     },
     "loja_id": "placegames",
     "por": 18.49,
@@ -36573,7 +36512,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:43-03:00"
+  "verificado": "2026-11-09T21:37-03:00"
  },
  "corduba-27-ac": {
   "ofertas": [],
@@ -36760,7 +36699,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:43-03:00"
+  "verificado": "2026-11-09T21:31-03:00"
  },
  "corruptia": {
   "ofertas": [],
@@ -37113,9 +37052,8 @@
     "loja": "Caixinha Boardgames",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 85.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:39-03:00",
+     "preco": 85.0
     },
     "loja_id": "caixinhaboardgames",
     "por": 79.05,
@@ -37158,7 +37096,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:43-03:00"
+  "verificado": "2026-11-09T21:35-03:00"
  },
  "cortex-harry-potter": {
   "ofertas": [
@@ -37420,7 +37358,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:44-03:00"
+  "verificado": "2026-11-09T21:33-03:00"
  },
  "country-music-triviologies": {
   "ofertas": [
@@ -39234,9 +39172,8 @@
     "loja": "Caixinha Boardgames",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 29.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:39-03:00",
+     "preco": 29.0
     },
     "loja_id": "caixinhaboardgames",
     "por": 26.97,
@@ -39296,7 +39233,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:45-03:00"
+  "verificado": "2026-11-09T21:33-03:00"
  },
  "cult-following-cult-classics": {
   "ofertas": [],
@@ -39966,7 +39903,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:46-03:00"
+  "verificado": "2026-11-09T21:33-03:00"
  },
  "damas-chinas": {
   "ofertas": [
@@ -40489,9 +40426,8 @@
     "loja": "Place Games",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 260.29,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:39-03:00",
+     "preco": 260.29
     },
     "loja_id": "placegames",
     "por": 260.29,
@@ -40506,9 +40442,8 @@
     "loja": "Alquimistas dos Jogos",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 260.81,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:39-03:00",
+     "preco": 260.81
     },
     "loja_id": "alquimistasdosjogos",
     "por": 260.81,
@@ -40523,9 +40458,8 @@
     "loja": "Cangaia Jogos",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 288.99,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:39-03:00",
+     "preco": 288.99
     },
     "loja_id": "cangaiajogos",
     "por": 268.76,
@@ -40540,9 +40474,8 @@
     "loja": "Caixinha Boardgames",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 289.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:39-03:00",
+     "preco": 289.0
     },
     "loja_id": "caixinhaboardgames",
     "por": 268.77,
@@ -40563,7 +40496,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:46-03:00"
+  "verificado": "2026-11-09T21:36-03:00"
  },
  "dc-arena": {
   "ofertas": [
@@ -40593,9 +40526,8 @@
     "loja": "Place Games",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 27.79,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:39-03:00",
+     "preco": 27.79
     },
     "loja_id": "placegames",
     "por": 27.79,
@@ -40649,7 +40581,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:46-03:00"
+  "verificado": "2026-11-09T21:35-03:00"
  },
  "dc-comics-deck-building-game": {
   "ofertas": [],
@@ -41746,9 +41678,8 @@
     "loja": "Meca dos Jogos",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 86.8,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:39-03:00",
+     "preco": 86.8
     },
     "loja_id": "mecadosjogos",
     "por": 75.95,
@@ -41763,9 +41694,8 @@
     "loja": "Caixinha Boardgames",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 85.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:39-03:00",
+     "preco": 85.0
     },
     "loja_id": "caixinhaboardgames",
     "por": 79.05,
@@ -41780,9 +41710,8 @@
     "loja": "TabuLoja",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 89.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:39-03:00",
+     "preco": 89.0
     },
     "loja_id": "tabuloja",
     "por": 80.1,
@@ -41797,9 +41726,8 @@
     "loja": "Alquimistas dos Jogos",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 80.81,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:39-03:00",
+     "preco": 80.81
     },
     "loja_id": "alquimistasdosjogos",
     "por": 80.81,
@@ -41814,9 +41742,8 @@
     "loja": "Place Games",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 83.59,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:39-03:00",
+     "preco": 83.59
     },
     "loja_id": "placegames",
     "por": 83.59,
@@ -41826,7 +41753,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:47-03:00"
+  "verificado": "2026-11-09T21:33-03:00"
  },
  "deep-space-pest-control": {
   "ofertas": [],
@@ -42237,9 +42164,8 @@
     "loja": "Meca dos Jogos",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 163.5,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:39-03:00",
+     "preco": 163.5
     },
     "loja_id": "mecadosjogos",
     "por": 147.15,
@@ -42254,9 +42180,8 @@
     "loja": "PlayEasy",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 159.9,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:39-03:00",
+     "preco": 159.9
     },
     "loja_id": "playeasy",
     "por": 148.71,
@@ -42271,9 +42196,8 @@
     "loja": "Board Game Barato",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 152.1,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:39-03:00",
+     "preco": 152.1
     },
     "loja_id": "boardgamebarato",
     "por": 152.1,
@@ -42288,9 +42212,8 @@
     "loja": "Caixinha Boardgames",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 164.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:39-03:00",
+     "preco": 164.0
     },
     "loja_id": "caixinhaboardgames",
     "por": 152.52,
@@ -42322,7 +42245,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:48-03:00"
+  "verificado": "2026-11-09T21:36-03:00"
  },
  "destemidos-reforcos": {
   "ofertas": [
@@ -42374,9 +42297,8 @@
     "loja": "Meca dos Jogos",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 178.1,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:39-03:00",
+     "preco": 178.1
     },
     "loja_id": "mecadosjogos",
     "por": 160.29,
@@ -42391,9 +42313,8 @@
     "loja": "Alquimistas dos Jogos",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 161.81,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:39-03:00",
+     "preco": 161.81
     },
     "loja_id": "alquimistasdosjogos",
     "por": 161.81,
@@ -42408,9 +42329,8 @@
     "loja": "Board Game Barato",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 161.99,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:39-03:00",
+     "preco": 161.99
     },
     "loja_id": "boardgamebarato",
     "por": 161.99,
@@ -42420,7 +42340,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:48-03:00"
+  "verificado": "2026-11-09T21:34-03:00"
  },
  "destinies-character-traits-module": {
   "ofertas": [],
@@ -42710,7 +42630,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:48-03:00"
+  "verificado": "2026-11-09T21:33-03:00"
  },
  "detetive-2019": {
   "ofertas": [],
@@ -43257,7 +43177,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:48-03:00"
+  "verificado": "2026-11-09T21:33-03:00"
  },
  "dice-forge-rebellion": {
   "ofertas": [],
@@ -43936,9 +43856,8 @@
     "loja": "Taverna Real",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 97.99,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:39-03:00",
+     "preco": 97.99
     },
     "loja_id": "tavernareal",
     "por": 88.19,
@@ -43953,9 +43872,8 @@
     "loja": "Ludostation",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 99.99,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:39-03:00",
+     "preco": 99.99
     },
     "loja_id": "ludostation",
     "por": 89.99,
@@ -43965,7 +43883,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:49-03:00"
+  "verificado": "2026-11-09T21:32-03:00"
  },
  "dino-parque": {
   "ofertas": [
@@ -43995,9 +43913,8 @@
     "loja": "Place Games",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 80.8,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:39-03:00",
+     "preco": 80.8
     },
     "loja_id": "placegames",
     "por": 80.8,
@@ -44029,7 +43946,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:49-03:00"
+  "verificado": "2026-11-09T21:36-03:00"
  },
  "dino-race": {
   "ofertas": [],
@@ -44572,7 +44489,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:49-03:00"
+  "verificado": "2026-11-09T21:31-03:00"
  },
  "disney-lorcana-azurite-sea": {
   "ofertas": [
@@ -45317,9 +45234,8 @@
     "loja": "TabuleRIO",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 129.9,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:39-03:00",
+     "preco": 129.9
     },
     "loja_id": "tabulerio",
     "por": 116.91,
@@ -45329,7 +45245,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:50-03:00"
+  "verificado": "2026-11-09T21:33-03:00"
  },
  "dixit-10th-anniversary": {
   "ofertas": [],
@@ -45538,7 +45454,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:50-03:00"
+  "verificado": "2026-11-09T21:36-03:00"
  },
  "dixit-harmonies": {
   "ofertas": [
@@ -46576,9 +46492,8 @@
     "loja": "Caixinha Boardgames",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 49.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:39-03:00",
+     "preco": 49.0
     },
     "loja_id": "caixinhaboardgames",
     "por": 45.57,
@@ -46621,7 +46536,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:50-03:00"
+  "verificado": "2026-11-09T21:32-03:00"
  },
  "dobble-connect": {
   "ofertas": [
@@ -47181,7 +47096,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:50-03:00"
+  "verificado": "2026-11-09T21:33-03:00"
  },
  "dobro-pixar-os-incriveis-promo-pack": {
   "ofertas": [
@@ -47851,7 +47766,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:51-03:00"
+  "verificado": "2026-11-09T21:34-03:00"
  },
  "dogs-o-socio": {
   "ofertas": [
@@ -47951,7 +47866,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:51-03:00"
+  "verificado": "2026-11-09T21:30-03:00"
  },
  "dominant-species-the-card-game": {
   "ofertas": [],
@@ -48363,7 +48278,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:51-03:00"
+  "verificado": "2026-11-09T21:34-03:00"
  },
  "domino-dungeon": {
   "ofertas": [],
@@ -48408,9 +48323,8 @@
     "loja": "TabuLoja",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 129.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:39-03:00",
+     "preco": 129.0
     },
     "loja_id": "tabuloja",
     "por": 116.1,
@@ -49085,9 +48999,8 @@
     "loja": "Animus Ludere",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 94.9,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:39-03:00",
+     "preco": 94.9
     },
     "loja_id": "animusludere",
     "por": 94.9,
@@ -49130,7 +49043,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:52-03:00"
+  "verificado": "2026-11-09T21:34-03:00"
  },
  "dr-biscuits-radical-road-trip-60-fun-games-to-play-in-your-car": {
   "ofertas": [],
@@ -49231,9 +49144,8 @@
     "loja": "Place Games",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 74.29,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:39-03:00",
+     "preco": 74.29
     },
     "loja_id": "placegames",
     "por": 74.29,
@@ -49248,9 +49160,8 @@
     "loja": "Alquimistas dos Jogos",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 80.81,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:39-03:00",
+     "preco": 80.81
     },
     "loja_id": "alquimistasdosjogos",
     "por": 80.81,
@@ -49276,9 +49187,8 @@
     "loja": "Taverna Real",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 90.99,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:39-03:00",
+     "preco": 90.99
     },
     "loja_id": "tavernareal",
     "por": 81.89,
@@ -49288,7 +49198,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:52-03:00"
+  "verificado": "2026-11-09T21:34-03:00"
  },
  "drag-slay": {
   "ofertas": [
@@ -49934,9 +49844,8 @@
     "loja": "TabuLoja",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 111.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:39-03:00",
+     "preco": 111.0
     },
     "loja_id": "tabuloja",
     "por": 99.9,
@@ -49990,7 +49899,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:52-03:00"
+  "verificado": "2026-11-09T21:36-03:00"
  },
  "dropzone-commander-2-player-starter-set": {
   "ofertas": [],
@@ -50321,7 +50230,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:53-03:00"
+  "verificado": "2026-11-09T21:33-03:00"
  },
  "duna-traicao": {
   "ofertas": [
@@ -51440,7 +51349,7 @@
     "loja": "Place Games",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:09-03:00",
+     "hora": "2026-11-09T21:39-03:00",
      "preco": 120.79
     },
     "loja_id": "placegames",
@@ -51484,7 +51393,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:53-03:00"
+  "verificado": "2026-11-09T21:37-03:00"
  },
  "dungeon-rummy-misfit-pack": {
   "ofertas": [
@@ -51947,7 +51856,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:54-03:00"
+  "verificado": "2026-11-09T21:30-03:00"
  },
  "dungeons-dragons-descida-ao-avernus-escudo-do-mestre": {
   "ofertas": [],
@@ -52116,7 +52025,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:54-03:00"
+  "verificado": "2026-11-09T21:36-03:00"
  },
  "dungeons-of-kards": {
   "ofertas": [
@@ -52440,7 +52349,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:54-03:00"
+  "verificado": "2026-11-09T21:35-03:00"
  },
  "durian": {
   "ofertas": [
@@ -52450,9 +52359,8 @@
     "loja": "Place Games",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 92.89,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:39-03:00",
+     "preco": 92.89
     },
     "loja_id": "placegames",
     "por": 92.89,
@@ -53809,9 +53717,8 @@
     "loja": "Meca dos Jogos",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 346.5,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:39-03:00",
+     "preco": 346.5
     },
     "loja_id": "mecadosjogos",
     "por": 311.85,
@@ -53826,9 +53733,8 @@
     "loja": "PlayEasy",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 338.8,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:39-03:00",
+     "preco": 338.8
     },
     "loja_id": "playeasy",
     "por": 315.08,
@@ -53888,7 +53794,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:55-03:00"
+  "verificado": "2026-11-09T21:37-03:00"
  },
  "eclipse-pulsar": {
   "ofertas": [],
@@ -53922,9 +53828,8 @@
     "loja": "PlayEasy",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 338.8,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:39-03:00",
+     "preco": 338.8
     },
     "loja_id": "playeasy",
     "por": 315.08,
@@ -53994,7 +53899,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:55-03:00"
+  "verificado": "2026-11-09T21:37-03:00"
  },
  "ecos-first-continent": {
   "ofertas": [],
@@ -54267,7 +54172,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:55-03:00"
+  "verificado": "2026-11-09T21:30-03:00"
  },
  "eldritch-horror-sob-as-piramides": {
   "ofertas": [],
@@ -54534,9 +54439,8 @@
     "loja": "Masmorra",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 119.9,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:39-03:00",
+     "preco": 119.9
     },
     "loja_id": "masmorra",
     "por": 107.91,
@@ -54551,9 +54455,8 @@
     "loja": "Taverna Real",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 119.99,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:39-03:00",
+     "preco": 119.99
     },
     "loja_id": "tavernareal",
     "por": 107.99,
@@ -54568,9 +54471,8 @@
     "loja": "TabuLoja",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 129.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:39-03:00",
+     "preco": 129.0
     },
     "loja_id": "tabuloja",
     "por": 116.1,
@@ -54585,9 +54487,8 @@
     "loja": "Ludostation",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 129.9,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:39-03:00",
+     "preco": 129.9
     },
     "loja_id": "ludostation",
     "por": 116.91,
@@ -54597,7 +54498,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:56-03:00"
+  "verificado": "2026-11-09T21:34-03:00"
  },
  "eletrika": {
   "ofertas": [
@@ -54744,7 +54645,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:56-03:00"
+  "verificado": "2026-11-09T21:33-03:00"
  },
  "eleven-um-jogo-de-gerenciamento-de-futebol": {
   "ofertas": [
@@ -55285,9 +55186,8 @@
     "loja": "TabuleRIO",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 118.93,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:39-03:00",
+     "preco": 118.93
     },
     "loja_id": "tabulerio",
     "por": 107.04,
@@ -55352,7 +55252,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:56-03:00"
+  "verificado": "2026-11-09T21:34-03:00"
  },
  "embolada": {
   "ofertas": [],
@@ -55481,9 +55381,8 @@
     "loja": "Facil Shopping",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 64.45,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:39-03:00",
+     "preco": 64.45
     },
     "loja_id": "facilshopping",
     "por": 59.94,
@@ -55509,7 +55408,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:56-03:00"
+  "verificado": "2026-11-09T21:35-03:00"
  },
  "encantados-third-edition": {
   "ofertas": [
@@ -55860,7 +55759,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:57-03:00"
+  "verificado": "2026-11-09T21:35-03:00"
  },
  "enigma-do-labirinto": {
   "ofertas": [
@@ -55971,7 +55870,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:57-03:00"
+  "verificado": "2026-11-09T21:36-03:00"
  },
  "enseada-dos-mercadores": {
   "ofertas": [
@@ -55998,7 +55897,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:57-03:00"
+  "verificado": "2026-11-09T21:31-03:00"
  },
  "enseada-dos-mercadores-a-criadora-dos-dragoes": {
   "ofertas": [
@@ -56174,7 +56073,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:57-03:00"
+  "verificado": "2026-11-09T21:31-03:00"
  },
  "enseada-dos-mercadores-o-estalajadeiro": {
   "ofertas": [
@@ -56243,7 +56142,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:57-03:00"
+  "verificado": "2026-11-09T21:30-03:00"
  },
  "ensemble": {
   "ofertas": [],
@@ -57276,9 +57175,8 @@
     "loja": "TabuLoja",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 83.16,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:39-03:00",
+     "preco": 83.16
     },
     "loja_id": "tabuloja",
     "por": 74.84,
@@ -57523,7 +57421,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:58-03:00"
+  "verificado": "2026-11-09T21:31-03:00"
  },
  "eu-sou-uma-banana": {
   "ofertas": [
@@ -58402,9 +58300,8 @@
     "loja": "ARCS Livros e Jogos",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 60.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:39-03:00",
+     "preco": 60.0
     },
     "loja_id": "espacoarcs",
     "por": 54,
@@ -58414,7 +58311,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:58-03:00"
+  "verificado": "2026-11-09T21:37-03:00"
  },
  "exit-a-cabana-abandonada": {
   "ofertas": [
@@ -58845,6 +58742,11 @@
     "atualizado": "2026-11-09T22:44:46.94+00:00",
     "de": 249.9,
     "loja": "Masmorra",
+    "loja_agora": {
+     "estoque": true,
+     "hora": "2026-11-09T21:39-03:00",
+     "preco": 249.9
+    },
     "loja_id": "masmorra",
     "por": 224.91,
     "tipo": "LINK",
@@ -58897,7 +58799,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:58-03:00"
+  "verificado": "2026-11-09T21:30-03:00"
  },
  "exit-o-jogo-morte-no-expresso-do-oriente": {
   "ofertas": [
@@ -60114,9 +60016,8 @@
     "loja": "Place Games",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 64.99,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:39-03:00",
+     "preco": 64.99
     },
     "loja_id": "placegames",
     "por": 64.99,
@@ -60148,7 +60049,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:59-03:00"
+  "verificado": "2026-11-09T21:37-03:00"
  },
  "exploding-kittens-barking-kittens": {
   "ofertas": [],
@@ -60204,9 +60105,8 @@
     "loja": "Caixinha Boardgames",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 43.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:39-03:00",
+     "preco": 43.0
     },
     "loja_id": "caixinhaboardgames",
     "por": 39.99,
@@ -60238,7 +60138,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T19:59-03:00"
+  "verificado": "2026-11-09T21:32-03:00"
  },
  "exploding-kittens-imploding-kittens": {
   "ofertas": [],
@@ -61524,9 +61424,8 @@
     "loja": "Leão Livros",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 46.41,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:39-03:00",
+     "preco": 46.41
     },
     "loja_id": "leaolivros",
     "por": 46.41,
@@ -61558,7 +61457,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:00-03:00"
+  "verificado": "2026-11-09T21:34-03:00"
  },
  "fantastiqa-the-rucksack-edition": {
   "ofertas": [
@@ -61989,9 +61888,8 @@
     "loja": "Meca dos Jogos",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 49.2,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:39-03:00",
+     "preco": 49.2
     },
     "loja_id": "mecadosjogos",
     "por": 44.28,
@@ -62006,9 +61904,8 @@
     "loja": "Alquimistas dos Jogos",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 44.81,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:39-03:00",
+     "preco": 44.81
     },
     "loja_id": "alquimistasdosjogos",
     "por": 44.81,
@@ -62024,8 +61921,7 @@
     "loja_agora": {
      "estoque": true,
      "hora": "2026-11-09T21:40-03:00",
-     "preco": 48.9,
-     "reaproveitado": true
+     "preco": 48.9
     },
     "loja_id": "playeasy",
     "por": 45.48,
@@ -62041,8 +61937,7 @@
     "loja_agora": {
      "estoque": true,
      "hora": "2026-11-09T21:40-03:00",
-     "preco": 49.0,
-     "reaproveitado": true
+     "preco": 49.0
     },
     "loja_id": "caixinhaboardgames",
     "por": 45.57,
@@ -62058,8 +61953,7 @@
     "loja_agora": {
      "estoque": true,
      "hora": "2026-11-09T21:40-03:00",
-     "preco": 52.99,
-     "reaproveitado": true
+     "preco": 52.99
     },
     "loja_id": "tavernareal",
     "por": 47.69,
@@ -62080,7 +61974,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:00-03:00"
+  "verificado": "2026-11-09T21:34-03:00"
  },
  "fateflip-decretos-reais": {
   "ofertas": [
@@ -62102,8 +61996,7 @@
     "loja_agora": {
      "estoque": true,
      "hora": "2026-11-09T21:40-03:00",
-     "preco": 50.0,
-     "reaproveitado": true
+     "preco": 50.0
     },
     "loja_id": "mecadosjogos",
     "por": 45,
@@ -62119,8 +62012,7 @@
     "loja_agora": {
      "estoque": true,
      "hora": "2026-11-09T21:40-03:00",
-     "preco": 48.9,
-     "reaproveitado": true
+     "preco": 48.9
     },
     "loja_id": "playeasy",
     "por": 45.48,
@@ -62136,8 +62028,7 @@
     "loja_agora": {
      "estoque": true,
      "hora": "2026-11-09T21:40-03:00",
-     "preco": 49.0,
-     "reaproveitado": true
+     "preco": 49.0
     },
     "loja_id": "caixinhaboardgames",
     "por": 45.57,
@@ -62153,8 +62044,7 @@
     "loja_agora": {
      "estoque": true,
      "hora": "2026-11-09T21:40-03:00",
-     "preco": 52.9,
-     "reaproveitado": true
+     "preco": 52.9
     },
     "loja_id": "tavernareal",
     "por": 47.61,
@@ -62175,7 +62065,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:00-03:00"
+  "verificado": "2026-11-09T21:34-03:00"
  },
  "fauna": {
   "ofertas": [],
@@ -62579,7 +62469,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:01-03:00"
+  "verificado": "2026-11-09T21:30-03:00"
  },
  "fdp-foi-de-proposito-2": {
   "ofertas": [
@@ -64596,7 +64486,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:02-03:00"
+  "verificado": "2026-11-09T21:32-03:00"
  },
  "fire-in-the-lake-sovereign-of-discord": {
   "ofertas": [],
@@ -66669,8 +66559,7 @@
     "loja_agora": {
      "estoque": true,
      "hora": "2026-11-09T21:40-03:00",
-     "preco": 65.0,
-     "reaproveitado": true
+     "preco": 65.0
     },
     "loja_id": "tabuloja",
     "por": 58.5,
@@ -66724,7 +66613,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:03-03:00"
+  "verificado": "2026-11-09T21:36-03:00"
  },
  "forgotten-waters": {
   "ofertas": [
@@ -66960,8 +66849,7 @@
     "loja_agora": {
      "estoque": true,
      "hora": "2026-11-09T21:40-03:00",
-     "preco": 170.9,
-     "reaproveitado": true
+     "preco": 170.9
     },
     "loja_id": "meeplebr",
     "por": 170.9,
@@ -66982,7 +66870,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:03-03:00"
+  "verificado": "2026-11-09T21:35-03:00"
  },
  "forrageio": {
   "ofertas": [],
@@ -67894,8 +67782,7 @@
     "loja_agora": {
      "estoque": true,
      "hora": "2026-11-09T21:40-03:00",
-     "preco": 69.0,
-     "reaproveitado": true
+     "preco": 69.0
     },
     "loja_id": "tabuloja",
     "por": 62.1,
@@ -67944,7 +67831,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:04-03:00"
+  "verificado": "2026-11-09T21:35-03:00"
  },
  "frogriders": {
   "ofertas": [
@@ -69113,8 +69000,7 @@
     "loja_agora": {
      "estoque": true,
      "hora": "2026-11-09T21:40-03:00",
-     "preco": 53.1,
-     "reaproveitado": true
+     "preco": 53.1
     },
     "loja_id": "mecadosjogos",
     "por": 47.79,
@@ -69130,8 +69016,7 @@
     "loja_agora": {
      "estoque": true,
      "hora": "2026-11-09T21:40-03:00",
-     "preco": 52.0,
-     "reaproveitado": true
+     "preco": 52.0
     },
     "loja_id": "spaceboardgames",
     "por": 48.36,
@@ -69147,8 +69032,7 @@
     "loja_agora": {
      "estoque": true,
      "hora": "2026-11-09T21:40-03:00",
-     "preco": 52.0,
-     "reaproveitado": true
+     "preco": 52.0
     },
     "loja_id": "caixinhaboardgames",
     "por": 48.36,
@@ -69158,7 +69042,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:05-03:00"
+  "verificado": "2026-11-09T21:35-03:00"
  },
  "fury-of-dracula-3a-edicao": {
   "ofertas": [],
@@ -69543,8 +69427,7 @@
     "loja_agora": {
      "estoque": true,
      "hora": "2026-11-09T21:40-03:00",
-     "preco": 218.8,
-     "reaproveitado": true
+     "preco": 218.8
     },
     "loja_id": "mecadosjogos",
     "por": 196.92,
@@ -69560,8 +69443,7 @@
     "loja_agora": {
      "estoque": true,
      "hora": "2026-11-09T21:40-03:00",
-     "preco": 197.81,
-     "reaproveitado": true
+     "preco": 197.81
     },
     "loja_id": "alquimistasdosjogos",
     "por": 197.81,
@@ -69577,8 +69459,7 @@
     "loja_agora": {
      "estoque": true,
      "hora": "2026-11-09T21:40-03:00",
-     "preco": 214.0,
-     "reaproveitado": true
+     "preco": 214.0
     },
     "loja_id": "caixinhaboardgames",
     "por": 199.02,
@@ -69605,8 +69486,7 @@
     "loja_agora": {
      "estoque": true,
      "hora": "2026-11-09T21:40-03:00",
-     "preco": 229.99,
-     "reaproveitado": true
+     "preco": 229.99
     },
     "loja_id": "ludostation",
     "por": 206.99,
@@ -69616,7 +69496,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:05-03:00"
+  "verificado": "2026-11-09T21:35-03:00"
  },
  "galhos": {
   "ofertas": [
@@ -70536,8 +70416,7 @@
     "loja_agora": {
      "estoque": true,
      "hora": "2026-11-09T21:40-03:00",
-     "preco": 79.7,
-     "reaproveitado": true
+     "preco": 79.7
     },
     "loja_id": "leaolivros",
     "por": 79.7,
@@ -70553,8 +70432,7 @@
     "loja_agora": {
      "estoque": true,
      "hora": "2026-11-09T21:40-03:00",
-     "preco": 89.0,
-     "reaproveitado": true
+     "preco": 89.0
     },
     "loja_id": "tabuloja",
     "por": 80.1,
@@ -70570,8 +70448,7 @@
     "loja_agora": {
      "estoque": true,
      "hora": "2026-11-09T21:40-03:00",
-     "preco": 89.0,
-     "reaproveitado": true
+     "preco": 89.0
     },
     "loja_id": "spaceboardgames",
     "por": 82.77,
@@ -70603,7 +70480,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:06-03:00"
+  "verificado": "2026-11-09T21:37-03:00"
  },
  "genesis-battle-of-champions-tactical-collectible-card-game": {
   "ofertas": [],
@@ -70810,7 +70687,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:06-03:00"
+  "verificado": "2026-11-09T21:31-03:00"
  },
  "genotype-a-mendelian-genetics-game": {
   "ofertas": [],
@@ -70888,7 +70765,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:06-03:00"
+  "verificado": "2026-11-09T21:32-03:00"
  },
  "get-a-grip-the-no-thumbs-challenge-game": {
   "ofertas": [
@@ -71639,8 +71516,7 @@
     "loja_agora": {
      "estoque": true,
      "hora": "2026-11-09T21:40-03:00",
-     "preco": 18.49,
-     "reaproveitado": true
+     "preco": 18.49
     },
     "loja_id": "placegames",
     "por": 18.49,
@@ -72160,7 +72036,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:07-03:00"
+  "verificado": "2026-11-09T21:35-03:00"
  },
  "go-bomb": {
   "ofertas": [
@@ -73049,8 +72925,7 @@
     "loja_agora": {
      "estoque": true,
      "hora": "2026-11-09T21:40-03:00",
-     "preco": 39.99,
-     "reaproveitado": true
+     "preco": 39.99
     },
     "loja_id": "bravojogos",
     "por": 37.19,
@@ -73115,7 +72990,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:08-03:00"
+  "verificado": "2026-11-09T21:37-03:00"
  },
  "gravity-superstar": {
   "ofertas": [
@@ -74855,7 +74730,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:09-03:00"
+  "verificado": "2026-11-09T21:33-03:00"
  },
  "hamlet-o-jogo-de-construcao-de-aldeia": {
   "ofertas": [
@@ -75744,7 +75619,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:09-03:00"
+  "verificado": "2026-11-09T21:30-03:00"
  },
  "harmonies-pulsar": {
   "ofertas": [
@@ -77615,8 +77490,7 @@
     "loja_agora": {
      "estoque": true,
      "hora": "2026-11-09T21:40-03:00",
-     "preco": 29.9,
-     "reaproveitado": true
+     "preco": 29.9
     },
     "loja_id": "bravojogos",
     "por": 27.81,
@@ -77637,7 +77511,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:11-03:00"
+  "verificado": "2026-11-09T21:31-03:00"
  },
  "hidden-games-o-caso-de-pedra-pequena": {
   "ofertas": [
@@ -78556,7 +78430,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:11-03:00"
+  "verificado": "2026-11-09T21:30-03:00"
  },
  "history-of-the-world-2001": {
   "ofertas": [],
@@ -78806,7 +78680,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:11-03:00"
+  "verificado": "2026-11-09T21:36-03:00"
  },
  "hive": {
   "ofertas": [],
@@ -79353,7 +79227,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:12-03:00"
+  "verificado": "2026-11-09T21:32-03:00"
  },
  "homesteaders": {
   "ofertas": [
@@ -79461,8 +79335,7 @@
     "loja_agora": {
      "estoque": true,
      "hora": "2026-11-09T21:40-03:00",
-     "preco": 83.16,
-     "reaproveitado": true
+     "preco": 83.16
     },
     "loja_id": "tabuloja",
     "por": 74.84,
@@ -80002,8 +79875,7 @@
     "loja_agora": {
      "estoque": true,
      "hora": "2026-11-09T21:40-03:00",
-     "preco": 29.99,
-     "reaproveitado": true
+     "preco": 29.99
     },
     "loja_id": "bravojogos",
     "por": 27.89,
@@ -80024,7 +79896,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:13-03:00"
+  "verificado": "2026-11-09T21:34-03:00"
  },
  "hunt-a-killer-a-wealth-of-murder": {
   "ofertas": [
@@ -80656,8 +80528,7 @@
     "loja_agora": {
      "estoque": true,
      "hora": "2026-11-09T21:40-03:00",
-     "preco": 50.0,
-     "reaproveitado": true
+     "preco": 50.0
     },
     "loja_id": "caixinhaboardgames",
     "por": 46.5,
@@ -80700,7 +80571,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:13-03:00"
+  "verificado": "2026-11-09T21:34-03:00"
  },
  "ilha-dos-dinossauros": {
   "ofertas": [
@@ -80915,7 +80786,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:13-03:00"
+  "verificado": "2026-11-09T21:31-03:00"
  },
  "imagem-acao-2": {
   "ofertas": [
@@ -80995,7 +80866,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:13-03:00"
+  "verificado": "2026-11-09T21:37-03:00"
  },
  "imagem-acao-junior": {
   "ofertas": [
@@ -81210,8 +81081,7 @@
     "loja_agora": {
      "estoque": true,
      "hora": "2026-11-09T21:40-03:00",
-     "preco": 92.0,
-     "reaproveitado": true
+     "preco": 92.0
     },
     "loja_id": "caixinhaboardgames",
     "por": 85.56,
@@ -81254,7 +81124,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:13-03:00"
+  "verificado": "2026-11-09T21:35-03:00"
  },
  "imhotep": {
   "ofertas": [],
@@ -81732,8 +81602,7 @@
     "loja_agora": {
      "estoque": true,
      "hora": "2026-11-09T21:40-03:00",
-     "preco": 152.81,
-     "reaproveitado": true
+     "preco": 143.81
     },
     "loja_id": "alquimistasdosjogos",
     "por": 143.81,
@@ -81749,8 +81618,7 @@
     "loja_agora": {
      "estoque": true,
      "hora": "2026-11-09T21:40-03:00",
-     "preco": 147.14,
-     "reaproveitado": true
+     "preco": 147.14
     },
     "loja_id": "leaolivros",
     "por": 147.14,
@@ -81766,8 +81634,7 @@
     "loja_agora": {
      "estoque": true,
      "hora": "2026-11-09T21:40-03:00",
-     "preco": 159.0,
-     "reaproveitado": true
+     "preco": 159.0
     },
     "loja_id": "bravojogos",
     "por": 147.87,
@@ -81788,7 +81655,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:14-03:00"
+  "verificado": "2026-11-09T21:34-03:00"
  },
  "imperium-horizontes": {
   "ofertas": [
@@ -81830,8 +81697,7 @@
     "loja_agora": {
      "estoque": true,
      "hora": "2026-11-09T21:40-03:00",
-     "preco": 296.0,
-     "reaproveitado": true
+     "preco": 296.0
     },
     "loja_id": "mecadosjogos",
     "por": 266.4,
@@ -81847,8 +81713,7 @@
     "loja_agora": {
      "estoque": true,
      "hora": "2026-11-09T21:40-03:00",
-     "preco": 299.0,
-     "reaproveitado": true
+     "preco": 299.0
     },
     "loja_id": "tabuloja",
     "por": 269.1,
@@ -81864,8 +81729,7 @@
     "loja_agora": {
      "estoque": true,
      "hora": "2026-11-09T21:40-03:00",
-     "preco": 269.81,
-     "reaproveitado": true
+     "preco": 269.81
     },
     "loja_id": "alquimistasdosjogos",
     "por": 269.81,
@@ -81881,8 +81745,7 @@
     "loja_agora": {
      "estoque": true,
      "hora": "2026-11-09T21:40-03:00",
-     "preco": 298.8,
-     "reaproveitado": true
+     "preco": 298.8
     },
     "loja_id": "playeasy",
     "por": 277.88,
@@ -81892,7 +81755,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:14-03:00"
+  "verificado": "2026-11-09T21:36-03:00"
  },
  "imperium-lendas": {
   "ofertas": [
@@ -81950,14 +81813,29 @@
     "vendedor": null
    },
    {
+    "atualizado": "2026-11-09T23:38:12.933+00:00",
+    "de": 159,
+    "loja": "Bravo Jogos",
+    "loja_agora": {
+     "estoque": true,
+     "hora": "2026-11-09T21:40-03:00",
+     "preco": 159.0
+    },
+    "loja_id": "bravojogos",
+    "por": 147.87,
+    "tipo": "LINK",
+    "titulo": "Imperium : Lendas",
+    "url": "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/imperium-lendas-p",
+    "vendedor": null
+   },
+   {
     "atualizado": "2026-11-09T22:48:54.346+00:00",
     "de": 159.88,
     "loja": "Place Games",
     "loja_agora": {
      "estoque": true,
      "hora": "2026-11-09T21:40-03:00",
-     "preco": 148.69,
-     "reaproveitado": true
+     "preco": 148.69
     },
     "loja_id": "placegames",
     "por": 148.69,
@@ -81984,7 +81862,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:14-03:00"
+  "verificado": "2026-11-09T21:36-03:00"
  },
  "in-a-pickle": {
   "ofertas": [
@@ -82797,7 +82675,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:15-03:00"
+  "verificado": "2026-11-09T21:35-03:00"
  },
  "inventores-do-sul-do-tigre": {
   "ofertas": [
@@ -83053,8 +82931,7 @@
     "loja_agora": {
      "estoque": true,
      "hora": "2026-11-09T21:40-03:00",
-     "preco": 129.99,
-     "reaproveitado": true
+     "preco": 129.99
     },
     "loja_id": "bravojogos",
     "por": 120.89,
@@ -83064,7 +82941,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:15-03:00"
+  "verificado": "2026-11-09T21:32-03:00"
  },
  "isaribi": {
   "ofertas": [],
@@ -84218,7 +84095,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:16-03:00"
+  "verificado": "2026-11-09T21:34-03:00"
  },
  "jogo-da-vida": {
   "ofertas": [
@@ -84298,7 +84175,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:16-03:00"
+  "verificado": "2026-11-09T21:30-03:00"
  },
  "jogo-da-vida-cartas": {
   "ofertas": [
@@ -84664,8 +84541,7 @@
     "loja_agora": {
      "estoque": true,
      "hora": "2026-11-09T21:40-03:00",
-     "preco": 129.9,
-     "reaproveitado": true
+     "preco": 129.9
     },
     "loja_id": "odisseiajogos",
     "por": 123.4,
@@ -84686,7 +84562,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:16-03:00"
+  "verificado": "2026-11-09T21:30-03:00"
  },
  "jolly-roger-um-jogo-de-motins-e-pirataria": {
   "ofertas": [
@@ -85749,7 +85625,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:17-03:00"
+  "verificado": "2026-11-09T21:37-03:00"
  },
  "katamino-family": {
   "ofertas": [],
@@ -86159,8 +86035,7 @@
     "loja_agora": {
      "estoque": true,
      "hora": "2026-11-09T21:40-03:00",
-     "preco": 239.0,
-     "reaproveitado": true
+     "preco": 239.0
     },
     "loja_id": "tabuloja",
     "por": 215.1,
@@ -86203,7 +86078,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:18-03:00"
+  "verificado": "2026-11-09T21:37-03:00"
  },
  "keltis-el-camino-de-las-piedras": {
   "ofertas": [],
@@ -86287,7 +86162,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:18-03:00"
+  "verificado": "2026-11-09T21:30-03:00"
  },
  "kemet-blood-and-sand-kickstarter-edition": {
   "ofertas": [],
@@ -86362,7 +86237,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:18-03:00"
+  "verificado": "2026-11-09T21:31-03:00"
  },
  "kemet-blood-and-sand-sand-worm": {
   "ofertas": [
@@ -86395,8 +86270,7 @@
     "loja_agora": {
      "estoque": true,
      "hora": "2026-11-09T21:40-03:00",
-     "preco": 12.0,
-     "reaproveitado": true
+     "preco": 12.0
     },
     "loja_id": "caixinhaboardgames",
     "por": 11.16,
@@ -86439,7 +86313,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:18-03:00"
+  "verificado": "2026-11-09T21:32-03:00"
  },
  "kemet-blood-and-sand-the-great-old-ones": {
   "ofertas": [],
@@ -86598,7 +86472,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:18-03:00"
+  "verificado": "2026-11-09T21:32-03:00"
  },
  "keyforge-adventures-rise-of-the-keyraken": {
   "ofertas": [],
@@ -86717,7 +86591,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:18-03:00"
+  "verificado": "2026-11-09T21:35-03:00"
  },
  "keyforge-mass-mutation": {
   "ofertas": [
@@ -86766,7 +86640,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:18-03:00"
+  "verificado": "2026-11-09T21:31-03:00"
  },
  "keyforge-mass-mutation-deluxe-archon-deck": {
   "ofertas": [],
@@ -88669,8 +88543,7 @@
     "loja_agora": {
      "estoque": true,
      "hora": "2026-11-09T21:40-03:00",
-     "preco": 61.49,
-     "reaproveitado": true
+     "preco": 64.99
     },
     "loja_id": "placegames",
     "por": 64.99,
@@ -88771,8 +88644,7 @@
     "loja_agora": {
      "estoque": true,
      "hora": "2026-11-09T21:40-03:00",
-     "preco": 299.0,
-     "reaproveitado": true
+     "preco": 299.0
     },
     "loja_id": "livtoys",
     "por": 278.07,
@@ -88815,7 +88687,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:19-03:00"
+  "verificado": "2026-11-09T21:30-03:00"
  },
  "klask-4": {
   "ofertas": [],
@@ -88854,8 +88726,7 @@
     "loja_agora": {
      "estoque": true,
      "hora": "2026-11-09T21:40-03:00",
-     "preco": 110.0,
-     "reaproveitado": true
+     "preco": 110.0
     },
     "loja_id": "spaceboardgames",
     "por": 102.3,
@@ -89309,8 +89180,7 @@
     "loja_agora": {
      "estoque": true,
      "hora": "2026-11-09T21:40-03:00",
-     "preco": 126.7,
-     "reaproveitado": true
+     "preco": 126.7
     },
     "loja_id": "mecadosjogos",
     "por": 114.03,
@@ -89326,8 +89196,7 @@
     "loja_agora": {
      "estoque": true,
      "hora": "2026-11-09T21:40-03:00",
-     "preco": 124.0,
-     "reaproveitado": true
+     "preco": 124.0
     },
     "loja_id": "caixinhaboardgames",
     "por": 115.32,
@@ -89348,7 +89217,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:20-03:00"
+  "verificado": "2026-11-09T21:37-03:00"
  },
  "kronologic-paris-1920": {
   "ofertas": [
@@ -89370,8 +89239,7 @@
     "loja_agora": {
      "estoque": true,
      "hora": "2026-11-09T21:40-03:00",
-     "preco": 119.9,
-     "reaproveitado": true
+     "preco": 119.9
     },
     "loja_id": "tabuloja",
     "por": 107.91,
@@ -89436,7 +89304,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:20-03:00"
+  "verificado": "2026-11-09T21:37-03:00"
  },
  "krosmaster-arena": {
   "ofertas": [],
@@ -89608,7 +89476,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:20-03:00"
+  "verificado": "2026-11-09T21:34-03:00"
  },
  "kuala-2000": {
   "ofertas": [],
@@ -89741,7 +89609,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:20-03:00"
+  "verificado": "2026-11-09T21:30-03:00"
  },
  "la-vina": {
   "ofertas": [],
@@ -90975,8 +90843,7 @@
     "loja_agora": {
      "estoque": true,
      "hora": "2026-11-09T21:40-03:00",
-     "preco": 18.49,
-     "reaproveitado": true
+     "preco": 18.49
     },
     "loja_id": "placegames",
     "por": 18.49,
@@ -91143,8 +91010,7 @@
     "loja_agora": {
      "estoque": true,
      "hora": "2026-11-09T21:40-03:00",
-     "preco": 289.0,
-     "reaproveitado": true
+     "preco": 289.0
     },
     "loja_id": "tabuloja",
     "por": 260.1,
@@ -91667,7 +91533,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:23-03:00"
+  "verificado": "2026-11-09T21:34-03:00"
  },
  "libertalia": {
   "ofertas": [],
@@ -92018,7 +91884,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:23-03:00"
+  "verificado": "2026-11-09T21:32-03:00"
  },
  "lincolns-war": {
   "ofertas": [
@@ -92080,8 +91946,7 @@
     "loja_agora": {
      "estoque": true,
      "hora": "2026-11-09T21:40-03:00",
-     "preco": 79.0,
-     "reaproveitado": true
+     "preco": 79.0
     },
     "loja_id": "tabuloja",
     "por": 71.1,
@@ -92206,8 +92071,7 @@
     "loja_agora": {
      "estoque": true,
      "hora": "2026-11-09T21:40-03:00",
-     "preco": 50.0,
-     "reaproveitado": true
+     "preco": 50.0
     },
     "loja_id": "caixinhaboardgames",
     "por": 46.5,
@@ -92267,7 +92131,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:23-03:00"
+  "verificado": "2026-11-09T21:32-03:00"
  },
  "little-town": {
   "ofertas": [],
@@ -92721,7 +92585,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:23-03:00"
+  "verificado": "2026-11-09T21:36-03:00"
  },
  "lobisomem-por-uma-noite": {
   "ofertas": [
@@ -93188,8 +93052,7 @@
     "loja_agora": {
      "estoque": true,
      "hora": "2026-11-09T21:40-03:00",
-     "preco": 40.31,
-     "reaproveitado": true
+     "preco": 40.31
     },
     "loja_id": "alquimistasdosjogos",
     "por": 40.31,
@@ -93255,7 +93118,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:24-03:00"
+  "verificado": "2026-11-09T21:36-03:00"
  },
  "loot-island": {
   "ofertas": [],
@@ -93783,7 +93646,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:24-03:00"
+  "verificado": "2026-11-09T21:31-03:00"
  },
  "ludosaurus": {
   "ofertas": [
@@ -95311,8 +95174,7 @@
     "loja_agora": {
      "estoque": true,
      "hora": "2026-11-09T21:40-03:00",
-     "preco": 18.99,
-     "reaproveitado": true
+     "preco": 18.99
     },
     "loja_id": "tavernareal",
     "por": 17.09,
@@ -95328,8 +95190,7 @@
     "loja_agora": {
      "estoque": true,
      "hora": "2026-11-09T21:40-03:00",
-     "preco": 19.0,
-     "reaproveitado": true
+     "preco": 19.0
     },
     "loja_id": "caixinhaboardgames",
     "por": 17.67,
@@ -95345,8 +95206,7 @@
     "loja_agora": {
      "estoque": true,
      "hora": "2026-11-09T21:40-03:00",
-     "preco": 18.49,
-     "reaproveitado": true
+     "preco": 18.49
     },
     "loja_id": "placegames",
     "por": 18.49,
@@ -95367,7 +95227,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:25-03:00"
+  "verificado": "2026-11-09T21:31-03:00"
  },
  "magic-maze-pocket": {
   "ofertas": [],
@@ -97264,7 +97124,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:26-03:00"
+  "verificado": "2026-11-09T21:31-03:00"
  },
  "mansions-of-madness-the-silver-tablet": {
   "ofertas": [],
@@ -97299,8 +97159,7 @@
     "loja_agora": {
      "estoque": true,
      "hora": "2026-11-09T21:40-03:00",
-     "preco": 42.0,
-     "reaproveitado": true
+     "preco": 42.0
     },
     "loja_id": "caixinhaboardgames",
     "por": 39.06,
@@ -97354,7 +97213,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:26-03:00"
+  "verificado": "2026-11-09T21:32-03:00"
  },
  "mao-de-vaca": {
   "ofertas": [
@@ -98862,8 +98721,7 @@
     "loja_agora": {
      "estoque": true,
      "hora": "2026-11-09T21:40-03:00",
-     "preco": 199.0,
-     "reaproveitado": true
+     "preco": 199.0
     },
     "loja_id": "tabuloja",
     "por": 179.1,
@@ -98912,7 +98770,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:28-03:00"
+  "verificado": "2026-11-09T21:37-03:00"
  },
  "marvel-united-deadpool": {
   "ofertas": [
@@ -98939,7 +98797,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:28-03:00"
+  "verificado": "2026-11-09T21:31-03:00"
  },
  "marvel-united-enter-the-spider-verse": {
   "ofertas": [
@@ -99372,7 +99230,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:28-03:00"
+  "verificado": "2026-11-09T21:33-03:00"
  },
  "marvel-united-war-of-kings": {
   "ofertas": [],
@@ -100100,7 +99958,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:29-03:00"
+  "verificado": "2026-11-09T21:37-03:00"
  },
  "master-entretenimento": {
   "ofertas": [
@@ -100270,7 +100128,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:29-03:00"
+  "verificado": "2026-11-09T21:32-03:00"
  },
  "match-5": {
   "ofertas": [
@@ -100434,8 +100292,7 @@
     "loja_agora": {
      "estoque": true,
      "hora": "2026-11-09T21:40-03:00",
-     "preco": 49.99,
-     "reaproveitado": true
+     "preco": 49.99
     },
     "loja_id": "bravojogos",
     "por": 46.49,
@@ -100467,7 +100324,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:29-03:00"
+  "verificado": "2026-11-09T21:33-03:00"
  },
  "mazescape-labyrinthos": {
   "ofertas": [
@@ -100829,8 +100686,7 @@
     "loja_agora": {
      "estoque": true,
      "hora": "2026-11-09T21:40-03:00",
-     "preco": 149.0,
-     "reaproveitado": true
+     "preco": 149.0
     },
     "loja_id": "ludostation",
     "por": 134.1,
@@ -100846,8 +100702,7 @@
     "loja_agora": {
      "estoque": true,
      "hora": "2026-11-09T21:40-03:00",
-     "preco": 149.9,
-     "reaproveitado": true
+     "preco": 149.9
     },
     "loja_id": "masmorra",
     "por": 134.91,
@@ -100863,8 +100718,7 @@
     "loja_agora": {
      "estoque": true,
      "hora": "2026-11-09T21:40-03:00",
-     "preco": 159.0,
-     "reaproveitado": true
+     "preco": 159.0
     },
     "loja_id": "tabuloja",
     "por": 143.1,
@@ -100885,7 +100739,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:30-03:00"
+  "verificado": "2026-11-09T21:36-03:00"
  },
  "medusa-oschophoria": {
   "ofertas": [],
@@ -101263,8 +101117,7 @@
     "loja_agora": {
      "estoque": true,
      "hora": "2026-11-09T21:40-03:00",
-     "preco": 59.0,
-     "reaproveitado": true
+     "preco": 59.0
     },
     "loja_id": "tabuloja",
     "por": 53.1,
@@ -101296,7 +101149,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:30-03:00"
+  "verificado": "2026-11-09T21:35-03:00"
  },
  "memorinth": {
   "ofertas": [
@@ -101683,8 +101536,7 @@
     "loja_agora": {
      "estoque": true,
      "hora": "2026-11-09T21:40-03:00",
-     "preco": 59.9,
-     "reaproveitado": true
+     "preco": 59.9
     },
     "loja_id": "bravojogos",
     "por": 55.71,
@@ -101727,7 +101579,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:30-03:00"
+  "verificado": "2026-11-09T21:33-03:00"
  },
  "messina-1347": {
   "ofertas": [
@@ -101876,8 +101728,7 @@
     "loja_agora": {
      "estoque": true,
      "hora": "2026-11-09T21:40-03:00",
-     "preco": 52.1,
-     "reaproveitado": true
+     "preco": 52.1
     },
     "loja_id": "mecadosjogos",
     "por": 45.59,
@@ -101893,8 +101744,7 @@
     "loja_agora": {
      "estoque": true,
      "hora": "2026-11-09T21:40-03:00",
-     "preco": 46.39,
-     "reaproveitado": true
+     "preco": 46.39
     },
     "loja_id": "placegames",
     "por": 46.39,
@@ -101910,8 +101760,7 @@
     "loja_agora": {
      "estoque": true,
      "hora": "2026-11-09T21:40-03:00",
-     "preco": 50.0,
-     "reaproveitado": true
+     "preco": 50.0
     },
     "loja_id": "caixinhaboardgames",
     "por": 46.5,
@@ -101943,7 +101792,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:31-03:00"
+  "verificado": "2026-11-09T21:35-03:00"
  },
  "meteors": {
   "ofertas": [],
@@ -104010,7 +103859,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:32-03:00"
+  "verificado": "2026-11-09T21:31-03:00"
  },
  "mixtura": {
   "ofertas": [
@@ -104177,7 +104026,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:32-03:00"
+  "verificado": "2026-11-09T21:34-03:00"
  },
  "modern-art-card-game": {
   "ofertas": [
@@ -104621,7 +104470,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:32-03:00"
+  "verificado": "2026-11-09T21:30-03:00"
  },
  "monopoly-disney-mickey-and-friends": {
   "ofertas": [
@@ -105075,7 +104924,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:33-03:00"
+  "verificado": "2026-11-09T21:31-03:00"
  },
  "monopoly-pokemon-edition": {
   "ofertas": [
@@ -106140,7 +105989,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:34-03:00"
+  "verificado": "2026-11-09T21:36-03:00"
  },
  "mu-more": {
   "ofertas": [],
@@ -106508,9 +106357,8 @@
     "loja": "Caixinha Boardgames",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 49.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:41-03:00",
+     "preco": 49.0
     },
     "loja_id": "caixinhaboardgames",
     "por": 45.57,
@@ -106553,7 +106401,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:34-03:00"
+  "verificado": "2026-11-09T21:37-03:00"
  },
  "munchkin-4-montaria-arredia": {
   "ofertas": [
@@ -106873,7 +106721,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:34-03:00"
+  "verificado": "2026-11-09T21:37-03:00"
  },
  "munchkin-8-centauros-e-homens-lagartos": {
   "ofertas": [
@@ -106953,7 +106801,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:34-03:00"
+  "verificado": "2026-11-09T21:33-03:00"
  },
  "munchkin-9-jurassic-snark": {
   "ofertas": [
@@ -107033,7 +106881,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:34-03:00"
+  "verificado": "2026-11-09T21:34-03:00"
  },
  "munchkin-conan": {
   "ofertas": [],
@@ -107146,9 +106994,8 @@
     "loja": "Caixinha Boardgames",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 69.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:41-03:00",
+     "preco": 69.0
     },
     "loja_id": "caixinhaboardgames",
     "por": 64.17,
@@ -107191,7 +107038,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:34-03:00"
+  "verificado": "2026-11-09T21:36-03:00"
  },
  "munchkin-zombies": {
   "ofertas": [
@@ -107497,9 +107344,8 @@
     "loja": "Place Games",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 92.89,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:41-03:00",
+     "preco": 92.89
     },
     "loja_id": "placegames",
     "por": 92.89,
@@ -107553,7 +107399,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:35-03:00"
+  "verificado": "2026-11-09T21:36-03:00"
  },
  "my-city": {
   "ofertas": [],
@@ -107914,9 +107760,8 @@
     "loja": "Place Games",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 64.99,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:41-03:00",
+     "preco": 64.99
     },
     "loja_id": "placegames",
     "por": 64.99,
@@ -107931,9 +107776,8 @@
     "loja": "Caixinha Boardgames",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 72.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:41-03:00",
+     "preco": 72.0
     },
     "loja_id": "caixinhaboardgames",
     "por": 66.96,
@@ -107965,7 +107809,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:35-03:00"
+  "verificado": "2026-11-09T21:32-03:00"
  },
  "mystery-date": {
   "ofertas": [],
@@ -108072,7 +107916,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:35-03:00"
+  "verificado": "2026-11-09T21:31-03:00"
  },
  "nacho-stack": {
   "ofertas": [
@@ -109165,7 +109009,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:36-03:00"
+  "verificado": "2026-11-09T21:32-03:00"
  },
  "near-and-far": {
   "ofertas": [],
@@ -109408,7 +109252,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:36-03:00"
+  "verificado": "2026-11-09T21:34-03:00"
  },
  "neuroshima-hex-30-beasts": {
   "ofertas": [
@@ -109486,9 +109330,8 @@
     "loja": "Leão Livros",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 109.74,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:41-03:00",
+     "preco": 109.74
     },
     "loja_id": "leaolivros",
     "por": 109.74,
@@ -109503,9 +109346,8 @@
     "loja": "Meca dos Jogos",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 122.9,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:41-03:00",
+     "preco": 122.9
     },
     "loja_id": "mecadosjogos",
     "por": 110.61,
@@ -109520,9 +109362,8 @@
     "loja": "Place Games",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 111.49,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:41-03:00",
+     "preco": 111.49
     },
     "loja_id": "placegames",
     "por": 111.49,
@@ -109537,9 +109378,8 @@
     "loja": "Space Board Games",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 120.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:41-03:00",
+     "preco": 120.0
     },
     "loja_id": "spaceboardgames",
     "por": 111.6,
@@ -109554,9 +109394,8 @@
     "loja": "Masmorra",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 129.9,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:41-03:00",
+     "preco": 129.9
     },
     "loja_id": "masmorra",
     "por": 116.91,
@@ -109566,7 +109405,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:36-03:00"
+  "verificado": "2026-11-09T21:34-03:00"
  },
  "nevada-city": {
   "ofertas": [],
@@ -110026,9 +109865,8 @@
     "loja": "TabuLoja",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 59.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:41-03:00",
+     "preco": 59.0
     },
     "loja_id": "tabuloja",
     "por": 53.1,
@@ -110038,7 +109876,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:37-03:00"
+  "verificado": "2026-11-09T21:33-03:00"
  },
  "nhac": {
   "ofertas": [
@@ -110438,9 +110276,8 @@
     "loja": "TabuLoja",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 69.9,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:41-03:00",
+     "preco": 69.9
     },
     "loja_id": "tabuloja",
     "por": 62.91,
@@ -110466,9 +110303,8 @@
     "loja": "Caixinha Boardgames",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 72.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:41-03:00",
+     "preco": 72.0
     },
     "loja_id": "caixinhaboardgames",
     "por": 66.96,
@@ -110483,9 +110319,8 @@
     "loja": "Taverna Real",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 76.99,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:41-03:00",
+     "preco": 76.99
     },
     "loja_id": "tavernareal",
     "por": 69.29,
@@ -110495,7 +110330,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:37-03:00"
+  "verificado": "2026-11-09T21:32-03:00"
  },
  "night-parade-of-a-hundred-yokai-kami-rising": {
   "ofertas": [],
@@ -112131,7 +111966,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:38-03:00"
+  "verificado": "2026-11-09T21:33-03:00"
  },
  "o-gato-e-a-torre": {
   "ofertas": [
@@ -112276,9 +112111,8 @@
     "loja": "Caixinha Boardgames",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 149.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:41-03:00",
+     "preco": 149.0
     },
     "loja_id": "caixinhaboardgames",
     "por": 138.57,
@@ -112310,7 +112144,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:38-03:00"
+  "verificado": "2026-11-09T21:36-03:00"
  },
  "o-labirinto-magico": {
   "ofertas": [
@@ -112351,9 +112185,8 @@
     "loja": "TabuLoja",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 269.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:41-03:00",
+     "preco": 269.0
     },
     "loja_id": "tabuloja",
     "por": 242.1,
@@ -112396,7 +112229,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:38-03:00"
+  "verificado": "2026-11-09T21:37-03:00"
  },
  "o-laboratorio-de-dexter-a-grande-invencao": {
   "ofertas": [
@@ -112713,9 +112546,8 @@
     "loja": "Place Games",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 18.49,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:41-03:00",
+     "preco": 18.49
     },
     "loja_id": "placegames",
     "por": 18.49,
@@ -113158,7 +112990,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:38-03:00"
+  "verificado": "2026-11-09T21:37-03:00"
  },
  "o-senhor-dos-aneis-card-game-cacador-de-sonhos-expansao-de-herois": {
   "ofertas": [
@@ -113866,9 +113698,8 @@
     "loja": "Taverna Real",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 97.99,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:41-03:00",
+     "preco": 97.99
     },
     "loja_id": "tavernareal",
     "por": 88.19,
@@ -113883,9 +113714,8 @@
     "loja": "TabuLoja",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 119.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:41-03:00",
+     "preco": 99.0
     },
     "loja_id": "tabuloja",
     "por": 89.1,
@@ -113900,9 +113730,8 @@
     "loja": "Alquimistas dos Jogos",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 89.81,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:41-03:00",
+     "preco": 89.81
     },
     "loja_id": "alquimistasdosjogos",
     "por": 89.81,
@@ -113912,7 +113741,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:39-03:00"
+  "verificado": "2026-11-09T21:32-03:00"
  },
  "oath-cronicas-de-imperio-e-exilio": {
   "ofertas": [
@@ -114130,9 +113959,8 @@
     "loja": "Caixinha Boardgames",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 124.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:41-03:00",
+     "preco": 124.0
     },
     "loja_id": "caixinhaboardgames",
     "por": 115.32,
@@ -115092,9 +114920,8 @@
     "loja": "TabuLoja",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 39.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:41-03:00",
+     "preco": 39.0
     },
     "loja_id": "tabuloja",
     "por": 35.1,
@@ -115148,7 +114975,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:40-03:00"
+  "verificado": "2026-11-09T21:36-03:00"
  },
  "onboard-variedades": {
   "ofertas": [
@@ -115169,9 +114996,8 @@
     "loja": "TabuLoja",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 39.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:41-03:00",
+     "preco": 39.0
     },
     "loja_id": "tabuloja",
     "por": 35.1,
@@ -115225,7 +115051,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:40-03:00"
+  "verificado": "2026-11-09T21:36-03:00"
  },
  "once-upon-a-time-knightly-tales": {
   "ofertas": [
@@ -115278,9 +115104,8 @@
     "loja": "TabuLoja",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 89.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:41-03:00",
+     "preco": 89.0
     },
     "loja_id": "tabuloja",
     "por": 80.1,
@@ -115334,7 +115159,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:40-03:00"
+  "verificado": "2026-11-09T21:35-03:00"
  },
  "one-deck-dungeon-abyssal-depths": {
   "ofertas": [
@@ -115551,7 +115376,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:40-03:00"
+  "verificado": "2026-11-09T21:30-03:00"
  },
  "one-piece-card-game-animal-kingdom-pirates": {
   "ofertas": [
@@ -115643,7 +115468,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:40-03:00"
+  "verificado": "2026-11-09T21:35-03:00"
  },
  "one-two-many-rabbits": {
   "ofertas": [
@@ -115995,9 +115820,8 @@
     "loja": "Caixinha Boardgames",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 99.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:41-03:00",
+     "preco": 99.0
     },
     "loja_id": "caixinhaboardgames",
     "por": 92.07,
@@ -116051,7 +115875,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:40-03:00"
+  "verificado": "2026-11-09T21:37-03:00"
  },
  "order-up-fish-market": {
   "ofertas": [
@@ -116790,9 +116614,8 @@
     "loja": "Taverna Real",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 97.99,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:41-03:00",
+     "preco": 97.99
     },
     "loja_id": "tavernareal",
     "por": 88.19,
@@ -116807,9 +116630,8 @@
     "loja": "Alquimistas dos Jogos",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 89.81,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:41-03:00",
+     "preco": 89.81
     },
     "loja_id": "alquimistasdosjogos",
     "por": 89.81,
@@ -116819,7 +116641,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:41-03:00"
+  "verificado": "2026-11-09T21:34-03:00"
  },
  "os-pilares-da-terra-o-jogo-de-cartas": {
   "ofertas": [
@@ -117056,9 +116878,8 @@
     "loja": "Caixinha Boardgames",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 39.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:41-03:00",
+     "preco": 39.0
     },
     "loja_id": "caixinhaboardgames",
     "por": 36.27,
@@ -117735,7 +117556,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:42-03:00"
+  "verificado": "2026-11-09T21:32-03:00"
  },
  "pan-am": {
   "ofertas": [],
@@ -118149,7 +117970,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:42-03:00"
+  "verificado": "2026-11-09T21:34-03:00"
  },
  "pandemic-a-beira-do-caos": {
   "ofertas": [],
@@ -118323,7 +118144,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:42-03:00"
+  "verificado": "2026-11-09T21:37-03:00"
  },
  "pandemic-zona-critica": {
   "ofertas": [
@@ -119049,9 +118870,8 @@
     "loja": "Bravo Jogos",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 159.9,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:41-03:00",
+     "preco": 159.9
     },
     "loja_id": "bravojogos",
     "por": 148.71,
@@ -119094,7 +118914,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:42-03:00"
+  "verificado": "2026-11-09T21:33-03:00"
  },
  "paris-connection": {
   "ofertas": [],
@@ -119272,9 +119092,8 @@
     "loja": "Bravo Jogos",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 49.9,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:41-03:00",
+     "preco": 49.9
     },
     "loja_id": "bravojogos",
     "por": 46.41,
@@ -119317,7 +119136,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:42-03:00"
+  "verificado": "2026-11-09T21:32-03:00"
  },
  "parkade": {
   "ofertas": [],
@@ -119431,9 +119250,8 @@
     "loja": "TabuLoja",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 89.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:41-03:00",
+     "preco": 89.0
     },
     "loja_id": "tabuloja",
     "por": 80.1,
@@ -119448,9 +119266,8 @@
     "loja": "Animus Ludere",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 85.4,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:41-03:00",
+     "preco": 85.4
     },
     "loja_id": "animusludere",
     "por": 85.4,
@@ -119460,7 +119277,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:43-03:00"
+  "verificado": "2026-11-09T21:36-03:00"
  },
  "pass-pass": {
   "ofertas": [
@@ -119811,9 +119628,8 @@
     "loja": "Livtoys",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 109.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:41-03:00",
+     "preco": 109.0
     },
     "loja_id": "livtoys",
     "por": 101.37,
@@ -119828,9 +119644,8 @@
     "loja": "Place Games",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 102.19,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:41-03:00",
+     "preco": 102.19
     },
     "loja_id": "placegames",
     "por": 102.19,
@@ -119857,7 +119672,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:43-03:00"
+  "verificado": "2026-11-09T21:36-03:00"
  },
  "patchwork-doodle": {
   "ofertas": [],
@@ -120258,7 +120073,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:43-03:00"
+  "verificado": "2026-11-09T21:32-03:00"
  },
  "pega-em-6-25-anos": {
   "ofertas": [
@@ -120641,7 +120456,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:44-03:00"
+  "verificado": "2026-11-09T21:36-03:00"
  },
  "perfil-express-filmes-e-series": {
   "ofertas": [
@@ -120721,7 +120536,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:44-03:00"
+  "verificado": "2026-11-09T21:33-03:00"
  },
  "perfil-express-harry-potter": {
   "ofertas": [
@@ -120837,7 +120652,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:44-03:00"
+  "verificado": "2026-11-09T21:34-03:00"
  },
  "pergola": {
   "ofertas": [
@@ -120964,7 +120779,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:44-03:00"
+  "verificado": "2026-11-09T21:34-03:00"
  },
  "persona-non-grata": {
   "ofertas": [
@@ -121543,7 +121358,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:44-03:00"
+  "verificado": "2026-11-09T21:37-03:00"
  },
  "pictomania": {
   "ofertas": [
@@ -121712,7 +121527,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:44-03:00"
+  "verificado": "2026-11-09T21:33-03:00"
  },
  "pie-face-cannon": {
   "ofertas": [],
@@ -121761,9 +121576,8 @@
     "loja": "Caixinha Boardgames",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 85.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:41-03:00",
+     "preco": 85.0
     },
     "loja_id": "caixinhaboardgames",
     "por": 79.05,
@@ -121778,9 +121592,8 @@
     "loja": "Cangaia Jogos",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 93.99,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:41-03:00",
+     "preco": 93.99
     },
     "loja_id": "cangaiajogos",
     "por": 87.41,
@@ -121823,7 +121636,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:44-03:00"
+  "verificado": "2026-11-09T21:35-03:00"
  },
  "pilgrims-curious-adventures": {
   "ofertas": [
@@ -122342,9 +122155,8 @@
     "loja": "Caixinha Boardgames",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 69.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:41-03:00",
+     "preco": 69.0
     },
     "loja_id": "caixinhaboardgames",
     "por": 64.17,
@@ -122359,9 +122171,8 @@
     "loja": "Place Games",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 74.29,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:41-03:00",
+     "preco": 74.29
     },
     "loja_id": "placegames",
     "por": 74.29,
@@ -122399,7 +122210,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:45-03:00"
+  "verificado": "2026-11-09T21:33-03:00"
  },
  "piratas-de-maracaibo": {
   "ofertas": [
@@ -122560,9 +122371,8 @@
     "loja": "Caixinha Boardgames",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 24.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:41-03:00",
+     "preco": 24.0
     },
     "loja_id": "caixinhaboardgames",
     "por": 22.32,
@@ -122605,7 +122415,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:45-03:00"
+  "verificado": "2026-11-09T21:32-03:00"
  },
  "pirates-at-oceans-edge": {
   "ofertas": [
@@ -122954,7 +122764,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:45-03:00"
+  "verificado": "2026-11-09T21:33-03:00"
  },
  "pj-masks-hq-rescue": {
   "ofertas": [
@@ -123900,7 +123710,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:46-03:00"
+  "verificado": "2026-11-09T21:31-03:00"
  },
  "pokemon-trading-card-game-battle-academy": {
   "ofertas": [
@@ -124180,7 +123990,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:46-03:00"
+  "verificado": "2026-11-09T21:34-03:00"
  },
  "ponto-de-vista": {
   "ofertas": [],
@@ -124378,7 +124188,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:46-03:00"
+  "verificado": "2026-11-09T21:31-03:00"
  },
  "popcorn": {
   "ofertas": [],
@@ -125279,9 +125089,8 @@
     "loja": "Meca dos Jogos",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 41.5,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:41-03:00",
+     "preco": 41.5
     },
     "loja_id": "mecadosjogos",
     "por": 37.35,
@@ -125296,9 +125105,8 @@
     "loja": "Caixinha Boardgames",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 43.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:41-03:00",
+     "preco": 43.0
     },
     "loja_id": "caixinhaboardgames",
     "por": 39.99,
@@ -125347,7 +125155,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:47-03:00"
+  "verificado": "2026-11-09T21:32-03:00"
  },
  "power-rangers-cartas-em-acao": {
   "ofertas": [
@@ -125597,9 +125405,8 @@
     "loja": "Place Games",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 55.69,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:41-03:00",
+     "preco": 55.69
     },
     "loja_id": "placegames",
     "por": 55.69,
@@ -125631,7 +125438,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:47-03:00"
+  "verificado": "2026-11-09T21:37-03:00"
  },
  "prehistorias": {
   "ofertas": [
@@ -125957,7 +125764,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:47-03:00"
+  "verificado": "2026-11-09T21:31-03:00"
  },
  "prey-another-day": {
   "ofertas": [
@@ -126515,9 +126322,8 @@
     "loja": "TabuleRIO",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 410.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:41-03:00",
+     "preco": 410.0
     },
     "loja_id": "tabulerio",
     "por": 369,
@@ -126715,7 +126521,7 @@
     "loja": "Place Games",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:11-03:00",
+     "hora": "2026-11-09T21:41-03:00",
      "preco": 176.59
     },
     "loja_id": "placegames",
@@ -126781,7 +126587,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:47-03:00"
+  "verificado": "2026-11-09T21:37-03:00"
  },
  "pucket": {
   "ofertas": [],
@@ -126888,7 +126694,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:47-03:00"
+  "verificado": "2026-11-09T21:32-03:00"
  },
  "pula-pula-urso-polar": {
   "ofertas": [
@@ -127305,9 +127111,8 @@
     "loja": "Leão Livros",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 27.81,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:41-03:00",
+     "preco": 27.81
     },
     "loja_id": "leaolivros",
     "por": 27.81,
@@ -127350,7 +127155,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:48-03:00"
+  "verificado": "2026-11-09T21:37-03:00"
  },
  "quack-quack": {
   "ofertas": [
@@ -127409,9 +127214,8 @@
     "loja": "TabuLoja",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 69.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:41-03:00",
+     "preco": 69.0
     },
     "loja_id": "tabuloja",
     "por": 62.1,
@@ -127476,7 +127280,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:48-03:00"
+  "verificado": "2026-11-09T21:36-03:00"
  },
  "quacks": {
   "ofertas": [
@@ -127710,9 +127514,8 @@
     "loja": "Cangaia Jogos",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 114.99,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:41-03:00",
+     "preco": 114.99
     },
     "loja_id": "cangaiajogos",
     "por": 106.94,
@@ -127727,9 +127530,8 @@
     "loja": "Caixinha Boardgames",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 115.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:41-03:00",
+     "preco": 115.0
     },
     "loja_id": "caixinhaboardgames",
     "por": 106.95,
@@ -127761,7 +127563,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:48-03:00"
+  "verificado": "2026-11-09T21:36-03:00"
  },
  "quantik": {
   "ofertas": [
@@ -128075,7 +127877,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:48-03:00"
+  "verificado": "2026-11-09T21:36-03:00"
  },
  "quatro-estacoes": {
   "ofertas": [
@@ -128096,9 +127898,8 @@
     "loja": "Bravo Jogos",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 99.9,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:41-03:00",
+     "preco": 99.9
     },
     "loja_id": "bravojogos",
     "por": 92.91,
@@ -128223,7 +128024,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:48-03:00"
+  "verificado": "2026-11-09T21:31-03:00"
  },
  "queda-de-roma": {
   "ofertas": [
@@ -128777,7 +128578,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:48-03:00"
+  "verificado": "2026-11-09T21:35-03:00"
  },
  "queops": {
   "ofertas": [
@@ -128857,7 +128658,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:49-03:00"
+  "verificado": "2026-11-09T21:37-03:00"
  },
  "quermesse": {
   "ofertas": [],
@@ -128895,9 +128696,8 @@
     "loja": "Place Games",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 64.99,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:41-03:00",
+     "preco": 64.99
     },
     "loja_id": "placegames",
     "por": 64.99,
@@ -128907,14 +128707,29 @@
     "vendedor": null
    },
    {
+    "atualizado": "2026-11-09T23:38:12.933+00:00",
+    "de": 71.9,
+    "loja": "Bravo Jogos",
+    "loja_agora": {
+     "estoque": true,
+     "hora": "2026-11-09T21:41-03:00",
+     "preco": 71.9
+    },
+    "loja_id": "bravojogos",
+    "por": 66.87,
+    "tipo": "LINK",
+    "titulo": "Jogo Quest",
+    "url": "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-quest-p",
+    "vendedor": null
+   },
+   {
     "atualizado": "2026-11-09T23:07:17.266+00:00",
     "de": 72,
     "loja": "Caixinha Boardgames",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 72.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:41-03:00",
+     "preco": 72.0
     },
     "loja_id": "caixinhaboardgames",
     "por": 66.96,
@@ -128929,9 +128744,8 @@
     "loja": "Cangaia Jogos",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 79.99,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:41-03:00",
+     "preco": 79.99
     },
     "loja_id": "cangaiajogos",
     "por": 74.39,
@@ -128946,7 +128760,7 @@
     "loja": "Livtoys",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:11-03:00",
+     "hora": "2026-11-09T21:41-03:00",
      "preco": 89.0
     },
     "loja_id": "livtoys",
@@ -128968,7 +128782,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:49-03:00"
+  "verificado": "2026-11-09T21:32-03:00"
  },
  "quest-edicao-familia": {
   "ofertas": [],
@@ -129177,9 +128991,8 @@
     "loja": "Caixinha Boardgames",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 65.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:41-03:00",
+     "preco": 65.0
     },
     "loja_id": "caixinhaboardgames",
     "por": 60.45,
@@ -129222,7 +129035,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:49-03:00"
+  "verificado": "2026-11-09T21:34-03:00"
  },
  "quicksand": {
   "ofertas": [
@@ -129301,9 +129114,8 @@
     "loja": "PlayEasy",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 29.9,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:41-03:00",
+     "preco": 29.9
     },
     "loja_id": "playeasy",
     "por": 27.81,
@@ -129318,9 +129130,8 @@
     "loja": "Caixinha Boardgames",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 35.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:41-03:00",
+     "preco": 35.0
     },
     "loja_id": "caixinhaboardgames",
     "por": 32.55,
@@ -129374,7 +129185,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:49-03:00"
+  "verificado": "2026-11-09T21:32-03:00"
  },
  "quissama": {
   "ofertas": [
@@ -129572,7 +129383,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:49-03:00"
+  "verificado": "2026-11-09T21:34-03:00"
  },
  "quoridor-pac-man": {
   "ofertas": [
@@ -129913,9 +129724,8 @@
     "loja": "Caixinha Boardgames",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 139.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:41-03:00",
+     "preco": 139.0
     },
     "loja_id": "caixinhaboardgames",
     "por": 129.27,
@@ -129958,7 +129768,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:49-03:00"
+  "verificado": "2026-11-09T21:35-03:00"
  },
  "radlands-cult-of-chrome": {
   "ofertas": [
@@ -130700,9 +130510,8 @@
     "loja": "Caixinha Boardgames",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 59.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:41-03:00",
+     "preco": 59.0
     },
     "loja_id": "caixinhaboardgames",
     "por": 54.87,
@@ -130745,7 +130554,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:50-03:00"
+  "verificado": "2026-11-09T21:35-03:00"
  },
  "rampage-the-space-cowboys": {
   "ofertas": [
@@ -131098,7 +130907,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:50-03:00"
+  "verificado": "2026-11-09T21:32-03:00"
  },
  "ready-set-bet": {
   "ofertas": [
@@ -132111,9 +131920,8 @@
     "loja": "Taverna Real",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 26.99,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:41-03:00",
+     "preco": 26.99
     },
     "loja_id": "tavernareal",
     "por": 24.29,
@@ -132156,7 +131964,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:51-03:00"
+  "verificado": "2026-11-09T21:31-03:00"
  },
  "reload-rumble": {
   "ofertas": [
@@ -132225,7 +132033,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:51-03:00"
+  "verificado": "2026-11-09T21:31-03:00"
  },
  "reload-team-sponsor-character-pack-1": {
   "ofertas": [],
@@ -132691,7 +132499,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:51-03:00"
+  "verificado": "2026-11-09T21:37-03:00"
  },
  "revelando-emocoes": {
   "ofertas": [
@@ -133095,9 +132903,8 @@
     "loja": "Caixinha Boardgames",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 49.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:41-03:00",
+     "preco": 49.0
     },
     "loja_id": "caixinhaboardgames",
     "por": 45.57,
@@ -133112,9 +132919,8 @@
     "loja": "Place Games",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 51.04,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:41-03:00",
+     "preco": 51.04
     },
     "loja_id": "placegames",
     "por": 51.04,
@@ -133146,7 +132952,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:51-03:00"
+  "verificado": "2026-11-09T21:34-03:00"
  },
  "rick-morty-megamagszorult-helyzetben": {
   "ofertas": [],
@@ -133321,7 +133127,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:52-03:00"
+  "verificado": "2026-11-09T21:31-03:00"
  },
  "rising-sun-invasao-da-dinastia": {
   "ofertas": [],
@@ -134250,9 +134056,8 @@
     "loja": "TabuLoja",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 64.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:41-03:00",
+     "preco": 64.0
     },
     "loja_id": "tabuloja",
     "por": 57.6,
@@ -134273,7 +134078,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:53-03:00"
+  "verificado": "2026-11-09T21:33-03:00"
  },
  "roll-camera-o-jogo-de-criar-filmes": {
   "ofertas": [
@@ -134585,7 +134390,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:53-03:00"
+  "verificado": "2026-11-09T21:35-03:00"
  },
  "root-baralho-de-exilados-e-partisans": {
   "ofertas": [],
@@ -135011,9 +134816,8 @@
     "loja": "TabuleRIO",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 19.9,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:41-03:00",
+     "preco": 19.9
     },
     "loja_id": "tabulerio",
     "por": 17.91,
@@ -135056,7 +134860,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:53-03:00"
+  "verificado": "2026-11-09T21:33-03:00"
  },
  "rorys-story-cubes-heroes": {
   "ofertas": [],
@@ -135148,9 +134952,8 @@
     "loja": "Bravo Jogos",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 29.9,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:41-03:00",
+     "preco": 29.9
     },
     "loja_id": "bravojogos",
     "por": 27.81,
@@ -135182,7 +134985,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:53-03:00"
+  "verificado": "2026-11-09T21:36-03:00"
  },
  "rotten-apples": {
   "ofertas": [],
@@ -135267,7 +135070,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:54-03:00"
+  "verificado": "2026-11-09T21:35-03:00"
  },
  "roulette": {
   "ofertas": [
@@ -135763,7 +135566,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:54-03:00"
+  "verificado": "2026-11-09T21:35-03:00"
  },
  "rummikub-jr": {
   "ofertas": [
@@ -135810,7 +135613,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:54-03:00"
+  "verificado": "2026-11-09T21:35-03:00"
  },
  "rummikub-twist": {
   "ofertas": [
@@ -136537,9 +136340,8 @@
     "loja": "Caixinha Boardgames",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 99.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:41-03:00",
+     "preco": 99.0
     },
     "loja_id": "caixinhaboardgames",
     "por": 92.07,
@@ -136593,7 +136395,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:54-03:00"
+  "verificado": "2026-11-09T21:37-03:00"
  },
  "sagrada-expansao-de-5-6-jogadores": {
   "ofertas": [
@@ -136634,9 +136436,8 @@
     "loja": "Caixinha Boardgames",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 149.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:41-03:00",
+     "preco": 149.0
     },
     "loja_id": "caixinhaboardgames",
     "por": 138.57,
@@ -136679,7 +136480,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:54-03:00"
+  "verificado": "2026-11-09T21:33-03:00"
  },
  "sagrada-the-great-facades-glory": {
   "ofertas": [],
@@ -139029,9 +138830,8 @@
     "loja": "Place Games",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 37.09,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:41-03:00",
+     "preco": 37.09
     },
     "loja_id": "placegames",
     "por": 37.09,
@@ -139046,9 +138846,8 @@
     "loja": "Space Board Games",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 40.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:41-03:00",
+     "preco": 40.0
     },
     "loja_id": "spaceboardgames",
     "por": 37.2,
@@ -139080,7 +138879,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:56-03:00"
+  "verificado": "2026-11-09T21:36-03:00"
  },
  "scotland-yard": {
   "ofertas": [
@@ -139149,7 +138948,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:56-03:00"
+  "verificado": "2026-11-09T21:36-03:00"
  },
  "scotland-yard-maquina-do-tempo": {
   "ofertas": [
@@ -140270,7 +140069,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:56-03:00"
+  "verificado": "2026-11-09T21:31-03:00"
  },
  "seas-of-strife": {
   "ofertas": [
@@ -140737,7 +140536,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:57-03:00"
+  "verificado": "2026-11-09T21:34-03:00"
  },
  "senha": {
   "ofertas": [
@@ -141049,7 +140848,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:57-03:00"
+  "verificado": "2026-11-09T21:36-03:00"
  },
  "sequoia": {
   "ofertas": [],
@@ -143494,9 +143293,8 @@
     "loja": "Leão Livros",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 46.04,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:41-03:00",
+     "preco": 46.04
     },
     "loja_id": "leaolivros",
     "por": 46.04,
@@ -143511,9 +143309,8 @@
     "loja": "Bravo Jogos",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 49.9,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:41-03:00",
+     "preco": 49.9
     },
     "loja_id": "bravojogos",
     "por": 46.41,
@@ -143545,7 +143342,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:59-03:00"
+  "verificado": "2026-11-09T21:35-03:00"
  },
  "sk8-pro": {
   "ofertas": [
@@ -143587,9 +143384,8 @@
     "loja": "TabuLoja",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 39.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:41-03:00",
+     "preco": 39.0
     },
     "loja_id": "tabuloja",
     "por": 35.1,
@@ -143604,9 +143400,8 @@
     "loja": "Place Games",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 37.09,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:41-03:00",
+     "preco": 37.09
     },
     "loja_id": "placegames",
     "por": 37.09,
@@ -143660,7 +143455,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:59-03:00"
+  "verificado": "2026-11-09T21:36-03:00"
  },
  "skip-bo": {
   "ofertas": [
@@ -143718,7 +143513,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:59-03:00"
+  "verificado": "2026-11-09T21:31-03:00"
  },
  "skulk-hollow": {
   "ofertas": [],
@@ -143802,7 +143597,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:59-03:00"
+  "verificado": "2026-11-09T21:32-03:00"
  },
  "skull-king": {
   "ofertas": [
@@ -144103,9 +143898,8 @@
     "loja": "TabuLoja",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 59.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:42-03:00",
+     "preco": 59.0
     },
     "loja_id": "tabuloja",
     "por": 53.1,
@@ -144148,7 +143942,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:59-03:00"
+  "verificado": "2026-11-09T21:36-03:00"
  },
  "skyjo": {
   "ofertas": [
@@ -144504,9 +144298,8 @@
     "loja": "Place Games",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 176.59,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:42-03:00",
+     "preco": 176.59
     },
     "loja_id": "placegames",
     "por": 176.59,
@@ -144750,9 +144543,8 @@
     "loja": "Place Games",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 46.39,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:42-03:00",
+     "preco": 46.39
     },
     "loja_id": "placegames",
     "por": 46.39,
@@ -144767,9 +144559,8 @@
     "loja": "Caixinha Boardgames",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 50.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:42-03:00",
+     "preco": 50.0
     },
     "loja_id": "caixinhaboardgames",
     "por": 46.5,
@@ -144784,9 +144575,8 @@
     "loja": "Taverna Real",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 54.99,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:42-03:00",
+     "preco": 54.99
     },
     "loja_id": "tavernareal",
     "por": 49.49,
@@ -144796,7 +144586,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T20:59-03:00"
+  "verificado": "2026-11-09T21:31-03:00"
  },
  "sleeping-gods-primeval-peril": {
   "ofertas": [],
@@ -146957,7 +146747,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T21:01-03:00"
+  "verificado": "2026-11-09T21:32-03:00"
  },
  "soletrando-cards": {
   "ofertas": [],
@@ -147560,7 +147350,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T21:01-03:00"
+  "verificado": "2026-11-09T21:31-03:00"
  },
  "sort-it-out": {
   "ofertas": [],
@@ -147660,9 +147450,8 @@
     "loja": "Place Games",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 92.89,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:42-03:00",
+     "preco": 92.89
     },
     "loja_id": "placegames",
     "por": 92.89,
@@ -147716,7 +147505,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T21:01-03:00"
+  "verificado": "2026-11-09T21:37-03:00"
  },
  "sovereign-skies": {
   "ofertas": [
@@ -148346,7 +148135,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T21:02-03:00"
+  "verificado": "2026-11-09T21:36-03:00"
  },
  "spellbook": {
   "ofertas": [
@@ -150171,7 +149960,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T21:03-03:00"
+  "verificado": "2026-11-09T21:33-03:00"
  },
  "star-realms-crisis-eventi": {
   "ofertas": [],
@@ -150698,7 +150487,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T21:04-03:00"
+  "verificado": "2026-11-09T21:33-03:00"
  },
  "star-wars-destiny-luke-skywalker-starter-set": {
   "ofertas": [],
@@ -150738,7 +150527,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T21:04-03:00"
+  "verificado": "2026-11-09T21:35-03:00"
  },
  "star-wars-destiny-obi-wan-kenobi-starter-set": {
   "ofertas": [],
@@ -151010,7 +150799,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T21:04-03:00"
+  "verificado": "2026-11-09T21:33-03:00"
  },
  "star-wars-legion-aat-trade-federation-battle-tank-unit-expansion": {
   "ofertas": [],
@@ -151742,9 +151531,8 @@
     "loja": "Caixinha Boardgames",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 79.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:42-03:00",
+     "preco": 79.0
     },
     "loja_id": "caixinhaboardgames",
     "por": 73.47,
@@ -151848,9 +151636,8 @@
     "loja": "Caixinha Boardgames",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 99.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:42-03:00",
+     "preco": 99.0
     },
     "loja_id": "caixinhaboardgames",
     "por": 92.07,
@@ -151865,9 +151652,8 @@
     "loja": "Place Games",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 105.49,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:42-03:00",
+     "preco": 105.49
     },
     "loja_id": "placegames",
     "por": 105.49,
@@ -151910,7 +151696,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T21:06-03:00"
+  "verificado": "2026-11-09T21:34-03:00"
  },
  "star-wars-the-card-game": {
   "ofertas": [],
@@ -152406,7 +152192,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T21:06-03:00"
+  "verificado": "2026-11-09T21:31-03:00"
  },
  "star-wars-unlock": {
   "ofertas": [
@@ -153212,9 +152998,8 @@
     "loja": "Caixinha Boardgames",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 64.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:42-03:00",
+     "preco": 64.0
     },
     "loja_id": "caixinhaboardgames",
     "por": 59.52,
@@ -153257,7 +153042,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T21:08-03:00"
+  "verificado": "2026-11-09T21:32-03:00"
  },
  "stickup": {
   "ofertas": [
@@ -153964,9 +153749,8 @@
     "loja": "TabuleRIO",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 270.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:42-03:00",
+     "preco": 270.0
     },
     "loja_id": "tabulerio",
     "por": 243,
@@ -154009,7 +153793,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T21:09-03:00"
+  "verificado": "2026-11-09T21:37-03:00"
  },
  "stupor-mundi-fredericks-sons-gates-mini-expansion": {
   "ofertas": [],
@@ -154460,7 +154244,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T21:10-03:00"
+  "verificado": "2026-11-09T21:35-03:00"
  },
  "super-boss-monster": {
   "ofertas": [
@@ -154937,7 +154721,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T21:10-03:00"
+  "verificado": "2026-11-09T21:34-03:00"
  },
  "super-mario-question-block-game": {
   "ofertas": [
@@ -154982,7 +154766,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T21:10-03:00"
+  "verificado": "2026-11-09T21:32-03:00"
  },
  "super-skill-pinball-4-cade": {
   "ofertas": [
@@ -155143,9 +154927,8 @@
     "loja": "Leão Livros",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 31.06,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:42-03:00",
+     "preco": 31.06
     },
     "loja_id": "leaolivros",
     "por": 31.06,
@@ -155160,9 +154943,8 @@
     "loja": "Meca dos Jogos",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 34.7,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:42-03:00",
+     "preco": 34.7
     },
     "loja_id": "mecadosjogos",
     "por": 31.23,
@@ -155177,9 +154959,8 @@
     "loja": "Caixinha Boardgames",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 34.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:42-03:00",
+     "preco": 34.0
     },
     "loja_id": "caixinhaboardgames",
     "por": 31.62,
@@ -155189,7 +154970,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T21:10-03:00"
+  "verificado": "2026-11-09T21:36-03:00"
  },
  "supernova": {
   "ofertas": [],
@@ -155664,9 +155445,8 @@
     "loja": "TabuLoja",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 69.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:42-03:00",
+     "preco": 69.0
     },
     "loja_id": "tabuloja",
     "por": 62.1,
@@ -155687,7 +155467,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T21:10-03:00"
+  "verificado": "2026-11-09T21:34-03:00"
  },
  "suspeito-descubra-todos-os-misterios": {
   "ofertas": [
@@ -155917,9 +155697,8 @@
     "loja": "Bravo Jogos",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 64.9,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:42-03:00",
+     "preco": 64.9
     },
     "loja_id": "bravojogos",
     "por": 60.36,
@@ -155940,7 +155719,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T21:11-03:00"
+  "verificado": "2026-11-09T21:34-03:00"
  },
  "tabannusi-builders-of-ur": {
   "ofertas": [],
@@ -156426,9 +156205,8 @@
     "loja": "TabuLoja",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 79.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:42-03:00",
+     "preco": 79.0
     },
     "loja_id": "tabuloja",
     "por": 71.1,
@@ -156438,7 +156216,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T21:11-03:00"
+  "verificado": "2026-11-09T21:31-03:00"
  },
  "tactical-maps-reincarnated": {
   "ofertas": [],
@@ -156758,9 +156536,8 @@
     "loja": "Place Games",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 92.89,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:42-03:00",
+     "preco": 92.89
     },
     "loja_id": "placegames",
     "por": 92.89,
@@ -156775,9 +156552,8 @@
     "loja": "Caixinha Boardgames",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 109.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:42-03:00",
+     "preco": 109.0
     },
     "loja_id": "caixinhaboardgames",
     "por": 101.37,
@@ -156792,9 +156568,8 @@
     "loja": "Cangaia Jogos",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 114.99,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:42-03:00",
+     "preco": 114.99
     },
     "loja_id": "cangaiajogos",
     "por": 106.94,
@@ -156815,7 +156590,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T21:11-03:00"
+  "verificado": "2026-11-09T21:33-03:00"
  },
  "takenoko": {
   "ofertas": [
@@ -156920,9 +156695,8 @@
     "loja": "PlayEasy",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 89.9,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:42-03:00",
+     "preco": 89.9
     },
     "loja_id": "playeasy",
     "por": 83.61,
@@ -156937,9 +156711,8 @@
     "loja": "Caixinha Boardgames",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 100.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:42-03:00",
+     "preco": 100.0
     },
     "loja_id": "caixinhaboardgames",
     "por": 93,
@@ -156982,7 +156755,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T21:11-03:00"
+  "verificado": "2026-11-09T21:35-03:00"
  },
  "talent-jam": {
   "ofertas": [],
@@ -157153,7 +156926,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T21:11-03:00"
+  "verificado": "2026-11-09T21:32-03:00"
  },
  "tanto-cuore": {
   "ofertas": [
@@ -157348,7 +157121,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T21:12-03:00"
+  "verificado": "2026-11-09T21:33-03:00"
  },
  "tapalavras": {
   "ofertas": [
@@ -157464,7 +157237,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T21:12-03:00"
+  "verificado": "2026-11-09T21:31-03:00"
  },
  "tapestry": {
   "ofertas": [
@@ -157596,7 +157369,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T21:12-03:00"
+  "verificado": "2026-11-09T21:34-03:00"
  },
  "targi": {
   "ofertas": [],
@@ -158313,7 +158086,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T21:12-03:00"
+  "verificado": "2026-11-09T21:36-03:00"
  },
  "tell-me-without-telling-me": {
   "ofertas": [
@@ -158770,7 +158543,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T21:12-03:00"
+  "verificado": "2026-11-09T21:35-03:00"
  },
  "terminated": {
   "ofertas": [],
@@ -159876,7 +159649,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T21:13-03:00"
+  "verificado": "2026-11-09T21:37-03:00"
  },
  "terraforming-mars-hellas-elysium": {
   "ofertas": [
@@ -160813,7 +160586,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T21:13-03:00"
+  "verificado": "2026-11-09T21:30-03:00"
  },
  "texas-hold-it": {
   "ofertas": [
@@ -161402,7 +161175,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T21:14-03:00"
+  "verificado": "2026-11-09T21:31-03:00"
  },
  "the-couples-quiz": {
   "ofertas": [
@@ -161551,9 +161324,8 @@
     "loja": "TabuLoja",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 79.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:42-03:00",
+     "preco": 79.0
     },
     "loja_id": "tabuloja",
     "por": 71.1,
@@ -161618,7 +161390,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T21:14-03:00"
+  "verificado": "2026-11-09T21:36-03:00"
  },
  "the-elder-scrolls-a-traicao-da-segunda-era": {
   "ofertas": [
@@ -161628,9 +161400,8 @@
     "loja": "Bravo Jogos",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 1999.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:42-03:00",
+     "preco": 1999.0
     },
     "loja_id": "bravojogos",
     "por": 1859.07,
@@ -161640,7 +161411,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T21:14-03:00"
+  "verificado": "2026-11-09T21:34-03:00"
  },
  "the-elder-scrolls-betrayal-of-the-second-era-deslandra-promo": {
   "ofertas": [
@@ -161731,7 +161502,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T21:14-03:00"
+  "verificado": "2026-11-09T21:36-03:00"
  },
  "the-four-doors": {
   "ofertas": [],
@@ -161776,9 +161547,8 @@
     "loja": "Caixinha Boardgames",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 179.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:42-03:00",
+     "preco": 179.0
     },
     "loja_id": "caixinhaboardgames",
     "por": 166.47,
@@ -161832,7 +161602,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T21:14-03:00"
+  "verificado": "2026-11-09T21:37-03:00"
  },
  "the-fox-in-the-forest": {
   "ofertas": [
@@ -161881,9 +161651,8 @@
     "loja": "Caixinha Boardgames",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 39.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:42-03:00",
+     "preco": 39.0
     },
     "loja_id": "caixinhaboardgames",
     "por": 36.27,
@@ -161937,7 +161706,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T21:15-03:00"
+  "verificado": "2026-11-09T21:33-03:00"
  },
  "the-game-of-49": {
   "ofertas": [],
@@ -162238,9 +162007,8 @@
     "loja": "Facil Shopping",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 169.9,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:42-03:00",
+     "preco": 169.9
     },
     "loja_id": "facilshopping",
     "por": 158.01,
@@ -162255,9 +162023,8 @@
     "loja": "Caixinha Boardgames",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 189.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:42-03:00",
+     "preco": 189.0
     },
     "loja_id": "caixinhaboardgames",
     "por": 175.77,
@@ -162311,7 +162078,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T21:15-03:00"
+  "verificado": "2026-11-09T21:35-03:00"
  },
  "the-goonies-under-the-goondocks-a-never-say-die-expansion": {
   "ofertas": [
@@ -162802,9 +162569,8 @@
     "loja": "Alquimistas dos Jogos",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 139.3,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:42-03:00",
+     "preco": 139.3
     },
     "loja_id": "alquimistasdosjogos",
     "por": 139.3,
@@ -162819,9 +162585,8 @@
     "loja": "Bravo Jogos",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 149.9,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:42-03:00",
+     "preco": 149.9
     },
     "loja_id": "bravojogos",
     "por": 139.41,
@@ -162875,7 +162640,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T21:16-03:00"
+  "verificado": "2026-11-09T21:37-03:00"
  },
  "the-manhattan-project": {
   "ofertas": [],
@@ -163425,9 +163190,8 @@
     "loja": "Ludostation",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 110.5,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:42-03:00",
+     "preco": 110.5
     },
     "loja_id": "ludostation",
     "por": 99.45,
@@ -163470,7 +163234,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T21:16-03:00"
+  "verificado": "2026-11-09T21:37-03:00"
  },
  "the-order-of-the-stick-adventure-game-deluxe-edition": {
   "ofertas": [
@@ -163643,9 +163407,8 @@
     "loja": "Bravo Jogos",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 37.9,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:42-03:00",
+     "preco": 37.9
     },
     "loja_id": "bravojogos",
     "por": 35.25,
@@ -163699,7 +163462,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T21:16-03:00"
+  "verificado": "2026-11-09T21:33-03:00"
  },
  "the-plan": {
   "ofertas": [
@@ -164794,9 +164557,8 @@
     "loja": "Odisseia Jogos",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 89.9,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:42-03:00",
+     "preco": 89.9
     },
     "loja_id": "odisseiajogos",
     "por": 85.4,
@@ -165763,7 +165525,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T21:18-03:00"
+  "verificado": "2026-11-09T21:31-03:00"
  },
  "tichu": {
   "ofertas": [
@@ -167179,9 +166941,8 @@
     "loja": "Caixinha Boardgames",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 36.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:42-03:00",
+     "preco": 36.0
     },
     "loja_id": "caixinhaboardgames",
     "por": 33.48,
@@ -167196,9 +166957,8 @@
     "loja": "Bravo Jogos",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 39.99,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:42-03:00",
+     "preco": 39.99
     },
     "loja_id": "bravojogos",
     "por": 37.19,
@@ -167241,7 +167001,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T21:20-03:00"
+  "verificado": "2026-11-09T21:35-03:00"
  },
  "times-to-remember": {
   "ofertas": [
@@ -168009,7 +167769,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T21:20-03:00"
+  "verificado": "2026-11-09T21:32-03:00"
  },
  "tiny-epic-game-of-thrones-ice-fire": {
   "ofertas": [],
@@ -168714,9 +168474,8 @@
     "loja": "Leão Livros",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 23.16,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:42-03:00",
+     "preco": 23.16
     },
     "loja_id": "leaolivros",
     "por": 23.16,
@@ -169801,7 +169560,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T21:22-03:00"
+  "verificado": "2026-11-09T21:31-03:00"
  },
  "traverse": {
   "ofertas": [],
@@ -170746,7 +170505,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T21:22-03:00"
+  "verificado": "2026-11-09T21:37-03:00"
  },
  "trinket-trove": {
   "ofertas": [],
@@ -170892,7 +170651,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T21:22-03:00"
+  "verificado": "2026-11-09T21:34-03:00"
  },
  "triominos-junior": {
   "ofertas": [
@@ -170950,7 +170709,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T21:22-03:00"
+  "verificado": "2026-11-09T21:35-03:00"
  },
  "triora-cidade-das-bruxas": {
   "ofertas": [],
@@ -171378,9 +171137,8 @@
     "loja": "Board Game Barato",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 197.99,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:42-03:00",
+     "preco": 197.99
     },
     "loja_id": "boardgamebarato",
     "por": 197.99,
@@ -171395,9 +171153,8 @@
     "loja": "Cangaia Jogos",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 229.99,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:42-03:00",
+     "preco": 229.99
     },
     "loja_id": "cangaiajogos",
     "por": 213.89,
@@ -171412,9 +171169,8 @@
     "loja": "TabuLoja",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 249.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:42-03:00",
+     "preco": 249.0
     },
     "loja_id": "tabuloja",
     "por": 224.1,
@@ -171435,7 +171191,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T21:23-03:00"
+  "verificado": "2026-11-09T21:32-03:00"
  },
  "tromba-nagua": {
   "ofertas": [
@@ -171529,9 +171285,8 @@
     "loja": "TabuLoja",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 144.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:42-03:00",
+     "preco": 144.0
     },
     "loja_id": "tabuloja",
     "por": 129.6,
@@ -171563,7 +171318,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T21:23-03:00"
+  "verificado": "2026-11-09T21:37-03:00"
  },
  "troyes": {
   "ofertas": [
@@ -171713,7 +171468,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T21:23-03:00"
+  "verificado": "2026-11-09T21:31-03:00"
  },
  "trudvang-legends": {
   "ofertas": [
@@ -172575,9 +172330,8 @@
     "loja": "TabuLoja",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 299.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:42-03:00",
+     "preco": 299.0
     },
     "loja_id": "tabuloja",
     "por": 269.1,
@@ -172620,7 +172374,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T21:24-03:00"
+  "verificado": "2026-11-09T21:37-03:00"
  },
  "twin-stars-adventure-series-ii": {
   "ofertas": [],
@@ -172760,7 +172514,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T21:24-03:00"
+  "verificado": "2026-11-09T21:35-03:00"
  },
  "twister-air": {
   "ofertas": [
@@ -172801,7 +172555,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T21:24-03:00"
+  "verificado": "2026-11-09T21:32-03:00"
  },
  "two-types-of-people": {
   "ofertas": [
@@ -173091,9 +172845,8 @@
     "loja": "Bravo Jogos",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 19.9,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:42-03:00",
+     "preco": 19.9
     },
     "loja_id": "bravojogos",
     "por": 18.51,
@@ -173108,9 +172861,8 @@
     "loja": "Caixinha Boardgames",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 22.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:42-03:00",
+     "preco": 22.0
     },
     "loja_id": "caixinhaboardgames",
     "por": 20.46,
@@ -173153,7 +172905,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T21:24-03:00"
+  "verificado": "2026-11-09T21:31-03:00"
  },
  "uga-uga-bufapum": {
   "ofertas": [],
@@ -174920,7 +174672,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T21:25-03:00"
+  "verificado": "2026-11-09T21:32-03:00"
  },
  "uno-flip": {
   "ofertas": [
@@ -174998,7 +174750,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T21:25-03:00"
+  "verificado": "2026-11-09T21:34-03:00"
  },
  "uno-flip-attack": {
   "ofertas": [
@@ -175223,7 +174975,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T21:25-03:00"
+  "verificado": "2026-11-09T21:31-03:00"
  },
  "uno-quatro": {
   "ofertas": [
@@ -175399,7 +175151,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T21:26-03:00"
+  "verificado": "2026-11-09T21:32-03:00"
  },
  "uno-stacko": {
   "ofertas": [
@@ -175497,7 +175249,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T21:26-03:00"
+  "verificado": "2026-11-09T21:34-03:00"
  },
  "uno-super-mario": {
   "ofertas": [
@@ -175571,7 +175323,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T21:26-03:00"
+  "verificado": "2026-11-09T21:32-03:00"
  },
  "uno-the-office": {
   "ofertas": [],
@@ -176688,7 +176440,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T21:27-03:00"
+  "verificado": "2026-11-09T21:33-03:00"
  },
  "vantage": {
   "ofertas": [
@@ -179260,7 +179012,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T21:28-03:00"
+  "verificado": "2026-11-09T21:33-03:00"
  },
  "war-batalhas-mitologicas": {
   "ofertas": [],
@@ -179327,7 +179079,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T21:28-03:00"
+  "verificado": "2026-11-09T21:36-03:00"
  },
  "war-ii": {
   "ofertas": [
@@ -180047,9 +179799,8 @@
     "loja": "Caixinha Boardgames",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 100.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:42-03:00",
+     "preco": 100.0
     },
     "loja_id": "caixinhaboardgames",
     "por": 93,
@@ -180064,9 +179815,8 @@
     "loja": "Meca dos Jogos",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 104.6,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:42-03:00",
+     "preco": 104.6
     },
     "loja_id": "mecadosjogos",
     "por": 94.14,
@@ -180109,7 +179859,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T21:29-03:00"
+  "verificado": "2026-11-09T21:35-03:00"
  },
  "washingtons-war": {
   "ofertas": [],
@@ -181968,7 +181718,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T21:31-03:00"
+  "verificado": "2026-11-09T21:33-03:00"
  },
  "world-wonders-europa-wonders-pack": {
   "ofertas": [
@@ -183365,7 +183115,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T21:32-03:00"
+  "verificado": "2026-11-09T21:36-03:00"
  },
  "yomi-panda-vs-gpanda": {
   "ofertas": [],
@@ -183801,9 +183551,8 @@
     "loja": "ARCS Livros e Jogos",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 40.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:42-03:00",
+     "preco": 40.0
     },
     "loja_id": "espacoarcs",
     "por": 36,
@@ -183818,9 +183567,8 @@
     "loja": "ARCS Livros e Jogos",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 40.0,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:42-03:00",
+     "preco": 40.0
     },
     "loja_id": "espacoarcs",
     "por": 36,
@@ -183841,7 +183589,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T21:32-03:00"
+  "verificado": "2026-11-09T21:33-03:00"
  },
  "zeppelin-raider": {
   "ofertas": [],
@@ -184576,9 +184324,8 @@
     "loja": "Bravo Jogos",
     "loja_agora": {
      "estoque": true,
-     "hora": "2026-11-09T21:40-03:00",
-     "preco": 99.9,
-     "reaproveitado": true
+     "hora": "2026-11-09T21:42-03:00",
+     "preco": 99.9
     },
     "loja_id": "bravojogos",
     "por": 92.91,
@@ -184632,7 +184379,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T21:33-03:00"
+  "verificado": "2026-11-09T21:37-03:00"
  },
  "zombicide-dark-side": {
   "ofertas": [],
@@ -184751,7 +184498,7 @@
     "vendedor": null
    }
   ],
-  "verificado": "2026-11-09T21:33-03:00"
+  "verificado": "2026-11-09T21:30-03:00"
  },
  "zombicide-green-horde-horde-box": {
   "ofertas": [],
