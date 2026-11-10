@@ -1,24 +1,27 @@
 # Legenda do Instagram: SETI, Ep. 1
 
 ```
-E se você acordasse dentro de SETI… jogando contra um robô que não erra nunca? 🤖📡
+3h da manhã. 7 cafés. 40 cálculos. Tudo isso pra ganhar de um ROBÔ por 1 ponto. 🤖☕
 
-O Lukita, professor de física, sabe todas as regras de cor. O problema é outro: ele passou a madrugada inteira calculando pra ganhar do Rival, o bot do modo solo, por UM ponto. Até que um disco-voador desceu no observatório… e quem saiu dele foi o Wan.
+Esse é o Lukita: professor de física, sabe todas as regras de SETI de cor… e não sabe a hora de parar. Ainda bem que o Wan apareceu (de disco-voador, claro). 🛸
 
-O que você aprende neste episódio:
-✅ Modo solo: você enfrenta o Rival, e vence quem fizer mais pontos
-✅ No seu turno: 1 ação principal; gastar energia para mover a sonda é ação livre
-✅ Escanear custa 1 crédito e 2 energias; quando o setor fecha, quem tiver mais marcadores vence
-✅ Pousar num planeta custa 3 energias e dá pista de vida e pontos; o primeiro a pousar ainda leva dados
-✅ Pistas do céu, do pouso e dos dados descobrem a espécie: vira o tabuleiro e lê a ficha
+Aprende jogando junto:
+🔭 No seu turno, só 1 ação principal. Mover a sonda é ação livre (1 energia = 1 espaço)
+📡 Escanear: 1 crédito + 2 energias. Fechou o setor, quem tem mais marcadores vence
+🪐 Pousar: 3 energias = pista de vida + pontos (e quem pousa primeiro ainda leva dados)
+👽 3 pistas (do céu, do pouso e dos dados) = espécie descoberta: vira o tabuleiro e lê a ficha
+🤖 No modo solo você enfrenta o Rival, e vence quem fizer mais pontos
 
-🗳️ O DESAFIO DO WAN PARA O EP. 2: o Lukita ganha do Rival no nível máximo… ou tenta perder de propósito pela primeira vez na vida?
-Comenta GANHAR ou PERDER. Uma palavra. A maioria escreve o próximo episódio.
+Agora VOCÊ decide o Ep. 2 👇
+O Lukita encara o Rival no nível máximo… ou tenta PERDER DE PROPÓSITO pela primeira vez na vida?
 
-📖 Mais tutoriais: eliteboardgamers.com.br/como-jogar (link na bio)
-Segue @eliteboardgamers pra não perder o Ep. 2.
+Comenta GANHAR ou PERDER. A maioria escreve o próximo episódio.
 
-História de ficção · regras do manual oficial do SETI (Czech Games Edition).
+E marca aquele amigo que calcula a jogada por 10 minutos pra fazer 1 ponto a mais 😅
 
-#seti #jogosdetabuleiro #boardgames #comojogar #boardgamebrasil #jogodetabuleiro #europesado #jogosdemesa
+📖 Tutoriais completos: eliteboardgamers.com.br/como-jogar (link na bio)
+
+História de ficção · regras do manual oficial do SETI (Czech Games Edition)
+
+#seti #jogosdetabuleiro #boardgames #comojogar #boardgamebrasil #europesado #modosolo #jogosdemesa
 ```
