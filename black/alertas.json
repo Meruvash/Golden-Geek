@@ -1,13 +1,5 @@
 [
  {
-  "id": "6e619612b820fc4e",
-  "hora": "2026-11-10T00:41:16+00:00",
-  "titulo": "−28% Barrage",
-  "texto": "R$ 449,81 na Alquimistas dos Jogos, 28% abaixo da média real de R$ 628,00.",
-  "url": "https://www.alquimistasdosjogos.com.br/barrage-exp-the-leeghwater-project-bloco",
-  "imagem": "https://uploads.comparajogos.com.br/img/2a34c28402c59eb0a0cb49dee03e04dd53b14ab4.png"
- },
- {
   "id": "9b88e4c15f91da70",
   "hora": "2026-11-10T00:41:16+00:00",
   "titulo": "−21% S'Crew UP: Bots & Nuts",
@@ -238,5 +230,13 @@
   "texto": "Super Trunfo: Tubarões (−22%)",
   "url": "https://eliteboardgamers.com.br/black/",
   "imagem": null
+ },
+ {
+  "id": "719874db9d4930ee",
+  "hora": "2026-11-10T22:49:24+00:00",
+  "titulo": "−50% Shinkansen: Zero Kei",
+  "texto": "R$ 109,00 na Board Game Play Store, 50% abaixo da média real de R$ 218,13. Menor preço do período. Em Outras promoções (nota BGG abaixo de 7).",
+  "url": "https://www.boardgameplaystore.com.br/products/shinkansen-zero-kei",
+  "imagem": "https://uploads.comparajogos.com.br/img/0b2b7cec6ee6d171327592bab694da42df9ed2f1.png"
  }
 ]

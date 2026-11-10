@@ -3222,7 +3222,7 @@
     "api": {
      "anuncio": "MLB3337479659",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-10T17:40-03:00",
+     "hora": "2026-11-10T19:45-03:00",
      "nivel": "MercadoLíder platinum",
      "preco": 557.9,
      "vendedor": "NEWSTATION SOROCABA",
@@ -21304,7 +21304,7 @@
     "api": {
      "anuncio": "MLB3584600895",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-10T17:41-03:00",
+     "hora": "2026-11-10T19:45-03:00",
      "nivel": "MercadoLíder gold",
      "preco": 58.37,
      "vendedor": "LIMIAR STORE",
@@ -21497,7 +21497,7 @@
     "api": {
      "anuncio": "MLB5498047450",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-10T17:41-03:00",
+     "hora": "2026-11-10T19:45-03:00",
      "nivel": "loja oficial",
      "preco": 223.99,
      "vendedor": "TOYMANIA BRINQUEDOS",
@@ -29188,7 +29188,7 @@
     "api": {
      "anuncio": "MLB7678864296",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-10T16:10-03:00",
+     "hora": "2026-11-10T19:45-03:00",
      "nivel": "loja oficial",
      "preco": 327.81,
      "vendedor": "Mercado Livre Casa",
@@ -155538,6 +155538,15 @@
     "vendedor": null
    },
    {
+    "api": {
+     "anuncio": "MLB3694117821",
+     "fonte": "API do Mercado Livre",
+     "hora": "2026-11-10T19:48-03:00",
+     "nivel": "loja oficial",
+     "preco": 14.99,
+     "vendedor": "Mercado Livre Casa",
+     "vendedor_ok": true
+    },
     "atualizado": "2026-11-10T19:32:16.96+00:00",
     "de": 14.99,
     "loja": "Mercado Livre",
