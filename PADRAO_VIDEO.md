@@ -41,7 +41,7 @@ Analisadas no Virlo em 09/11/2026 (perfil + últimos Reels).
 
 1. **Fonte**: os fatos vêm da resenha, do tutorial ou da notícia publicada no site. Nada fora disso.
 2. **Roteiro + voz**: roteiro na fórmula da seção 3 e no guia `video/ROTEIRO_REFERENCIAS.md`, **mostrado ao editor e aprovado ANTES de gerar qualquer voz** (pedido do editor, 10/11/2026); depois, narração gerada e conferida por transcrição (seção 8). A voz define a linha do tempo.
-3. **Quadros de estilo**: 3 imagens estáticas (gancho, cena do meio, cartela final) aprovadas antes de animar. Mudança depois disso custa caro.
+3. **Quadros de estilo** (já em 1080x1080, o formato padrão): 3 imagens estáticas (gancho, cena do meio, cartela final) aprovadas antes de animar. Mudança depois disso custa caro.
 4. **Animação**: só com os componentes da seção 7.
 5. **Checagem**: o checklist da seção 9 inteiro. Um item crítico reprovado = não publica.
 
@@ -78,8 +78,13 @@ tipografia:
   apoio:   { peso: 600, tamanho: 44-56px }
   rotulo:  { peso: 800, tamanho: 28-34px, caixa-alta, espaçamento: 0.12em }
   piso:    28px              # nada legível abaixo disso
-formato: { largura: 1080, altura: 1920, fps: 30 }
-area-segura: { topo: 240, base-texto: 1290, esquerda: 60, direita: 150 }   # UI do Instagram/TikTok (Reels)
+formato: { largura: 1080, altura: 1080, fps: 30 }   # PADRÃO: quadrado 1:1 (pedido do editor, 10/11/2026)
+# O quadrado é o ÚNICO formato que o editor posta no Instagram. Todo vídeo novo nasce quadrado:
+# composição, palco e personagens desenhados para 1080x1080 desde o roteiro, não adaptados do vertical.
+# Nome da composição sem sufixo = quadrado. Vertical 1080x1920 só se o editor pedir (sufixo "Vertical").
+area-segura-quadrado: { margem: 60, legenda-base: 1000 }   # texto a 60 px das bordas; legenda acima de y 1000
+# Personagens nos cantos de baixo, cortados na cintura; nada importante nos 60 px de borda.
+# Vertical (só sob pedido): formato 1080x1920, area-segura { topo: 240, base-texto: 1290, esquerda: 60, direita: 150 }.
 # O Reels cobre o topo (cabeçalho), a coluna da direita (curtir, comentar, compartilhar; y 900..1700)
 # e o rodapé (perfil, descrição, áudio; y > 1500). Texto e painéis ficam dentro da área segura;
 # rostos dos personagens acima de y 1500. Conferir com a grade vermelha (ver serie-ronaldo/src/ae/pecas.tsx, SEGURO).
