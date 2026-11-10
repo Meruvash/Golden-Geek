@@ -44,8 +44,8 @@ export const Papel: React.FC<{ forca?: number }> = ({ forca = 0.35 }) => (
 );
 
 // Carta de ação (nosso desenho, não a arte do jogo).
-export type Acao = "andar" | "subir" | "tiro" | "soco" | "saque" | "xerife" | "correr" | "verso";
-const ROTULO: Record<Acao, string> = { andar: "ANDAR", subir: "SUBIR", tiro: "TIRO", soco: "SOCO", saque: "SAQUE", xerife: "XERIFE", correr: "CORRER", verso: "" };
+export type Acao = "andar" | "subir" | "tiro" | "soco" | "saque" | "xerife" | "correr" | "bala" | "verso";
+const ROTULO: Record<Acao, string> = { andar: "ANDAR", subir: "SUBIR", tiro: "TIRO", soco: "SOCO", saque: "JOIA", xerife: "XERIFE", correr: "CORRER", bala: "BALA", verso: "" };
 export const Icone: React.FC<{ a: Acao; c?: string }> = ({ a, c = F.tinta }) =>
   a === "andar" ? (
     <path d="M-34,0 H24 M8,-18 L28,0 L8,18" stroke={c} strokeWidth={12} fill="none" strokeLinecap="round" strokeLinejoin="round" />
@@ -59,6 +59,8 @@ export const Icone: React.FC<{ a: Acao; c?: string }> = ({ a, c = F.tinta }) =>
     <g fill={c}><path d="M-28,30 C-36,0 -20,-18 0,-18 C20,-18 36,0 28,30 Z" /><path d="M-10,-18 L-16,-34 H16 L10,-18 Z" /><text x={0} y={18} textAnchor="middle" fontFamily={MADEIRA} fontSize={26} fill={F.papel}>$</text></g>
   ) : a === "xerife" ? (
     <path d="M0,-36 L10,-12 L36,-12 L16,4 L24,30 L0,16 L-24,30 L-16,4 L-36,-12 L-10,-12 Z" fill={c} />
+  ) : a === "bala" ? (
+    <g><circle r={30} fill="#8a8f9a" /><circle r={30} fill="none" stroke={c} strokeWidth={5} /><path d="M-14,-14 L14,14 M14,-14 L-14,14" stroke={c} strokeWidth={6} strokeLinecap="round" /></g>
   ) : a === "correr" ? (
     <g stroke={c} strokeWidth={9} fill="none" strokeLinecap="round"><circle cx={8} cy={-28} r={9} fill={c} /><path d="M4,-16 L-4,10 L14,30 M-4,10 L-24,26 M2,-10 L22,0 M2,-10 L-18,-2" /></g>
   ) : (

@@ -1,0 +1,1007 @@
+[
+ {
+  "id": 1,
+  "quem": "narrador",
+  "texto": "Você tem cinco rodadas pra roubar um trem. Seis bandidos querem a mesma maleta. E o seu chefe… é o Wan.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/colt/fala-01.wav",
+  "dur": 5.51,
+  "palavras_ouvidas": [
+   {
+    "text": "Você",
+    "start": 0,
+    "end": 0.226
+   },
+   {
+    "text": "tem",
+    "start": 0.226,
+    "end": 0.396
+   },
+   {
+    "text": "cinco",
+    "start": 0.396,
+    "end": 0.679
+   },
+   {
+    "text": "rodadas",
+    "start": 0.679,
+    "end": 1.076
+   },
+   {
+    "text": "para",
+    "start": 1.076,
+    "end": 1.302
+   },
+   {
+    "text": "roubar",
+    "start": 1.302,
+    "end": 1.642
+   },
+   {
+    "text": "um",
+    "start": 1.642,
+    "end": 1.755
+   },
+   {
+    "text": "trem,",
+    "start": 1.755,
+    "end": 2.038
+   },
+   {
+    "text": "seis",
+    "start": 2.038,
+    "end": 2.265
+   },
+   {
+    "text": "bandidos",
+    "start": 2.265,
+    "end": 2.718
+   },
+   {
+    "text": "querem",
+    "start": 2.718,
+    "end": 3.057
+   },
+   {
+    "text": "a",
+    "start": 3.057,
+    "end": 3.114
+   },
+   {
+    "text": "mesma",
+    "start": 3.114,
+    "end": 3.397
+   },
+   {
+    "text": "maleta",
+    "start": 3.397,
+    "end": 3.737
+   },
+   {
+    "text": "e",
+    "start": 3.737,
+    "end": 3.794
+   },
+   {
+    "text": "o",
+    "start": 3.794,
+    "end": 3.85
+   },
+   {
+    "text": "seu",
+    "start": 3.85,
+    "end": 4.02
+   },
+   {
+    "text": "chefe",
+    "start": 4.02,
+    "end": 4.584
+   },
+   {
+    "text": "é",
+    "start": 4.584,
+    "end": 4.696
+   },
+   {
+    "text": "o",
+    "start": 4.696,
+    "end": 4.809
+   },
+   {
+    "text": "One.",
+    "start": 4.809,
+    "end": 5.26
+   }
+  ]
+ },
+ {
+  "id": 2,
+  "quem": "wan",
+  "texto": "Plano simples. Vagão da frente, pega a joia, atira em quem ficar pra trás.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/colt/fala-02.wav",
+  "dur": 5.953,
+  "palavras_ouvidas": [
+   {
+    "text": "plano",
+    "start": 0,
+    "end": 0.469
+   },
+   {
+    "text": "simples,",
+    "start": 0.469,
+    "end": 1.219
+   },
+   {
+    "text": "vagão",
+    "start": 1.219,
+    "end": 1.688
+   },
+   {
+    "text": "da",
+    "start": 1.688,
+    "end": 1.875
+   },
+   {
+    "text": "frente,",
+    "start": 1.875,
+    "end": 2.532
+   },
+   {
+    "text": "pega",
+    "start": 2.532,
+    "end": 2.907
+   },
+   {
+    "text": "a",
+    "start": 2.907,
+    "end": 3.001
+   },
+   {
+    "text": "joia,",
+    "start": 3.001,
+    "end": 3.47
+   },
+   {
+    "text": "atira",
+    "start": 3.47,
+    "end": 3.938
+   },
+   {
+    "text": "em",
+    "start": 3.938,
+    "end": 4.126
+   },
+   {
+    "text": "quem",
+    "start": 4.126,
+    "end": 4.501
+   },
+   {
+    "text": "ficar",
+    "start": 4.501,
+    "end": 4.97
+   },
+   {
+    "text": "pra",
+    "start": 4.97,
+    "end": 5.251
+   },
+   {
+    "text": "trás.",
+    "start": 5.251,
+    "end": 5.72
+   }
+  ]
+ },
+ {
+  "id": 3,
+  "quem": "narrador",
+  "texto": "Só que em Colt Express ninguém age na hora. Cada um joga a sua carta numa pilha comum, uma de cada vez… e no túnel, virada pra baixo.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/colt/fala-03.wav",
+  "dur": 7.112,
+  "palavras_ouvidas": [
+   {
+    "text": "Só",
+    "start": 0,
+    "end": 0.127
+   },
+   {
+    "text": "que",
+    "start": 0.127,
+    "end": 0.317
+   },
+   {
+    "text": "em",
+    "start": 0.317,
+    "end": 0.444
+   },
+   {
+    "text": "Code",
+    "start": 0.444,
+    "end": 0.697
+   },
+   {
+    "text": "Express",
+    "start": 0.697,
+    "end": 1.141
+   },
+   {
+    "text": "ninguém",
+    "start": 1.141,
+    "end": 1.585
+   },
+   {
+    "text": "age",
+    "start": 1.585,
+    "end": 1.775
+   },
+   {
+    "text": "na",
+    "start": 1.775,
+    "end": 1.901
+   },
+   {
+    "text": "hora,",
+    "start": 1.901,
+    "end": 2.218
+   },
+   {
+    "text": "cada",
+    "start": 2.218,
+    "end": 2.472
+   },
+   {
+    "text": "um",
+    "start": 2.472,
+    "end": 2.599
+   },
+   {
+    "text": "joga",
+    "start": 2.599,
+    "end": 2.852
+   },
+   {
+    "text": "sua",
+    "start": 2.852,
+    "end": 3.042
+   },
+   {
+    "text": "carta",
+    "start": 3.042,
+    "end": 3.359
+   },
+   {
+    "text": "numa",
+    "start": 3.359,
+    "end": 3.613
+   },
+   {
+    "text": "pilha",
+    "start": 3.613,
+    "end": 3.93
+   },
+   {
+    "text": "comum,",
+    "start": 3.93,
+    "end": 4.31
+   },
+   {
+    "text": "uma",
+    "start": 4.31,
+    "end": 4.5
+   },
+   {
+    "text": "de",
+    "start": 4.5,
+    "end": 4.645
+   },
+   {
+    "text": "cada",
+    "start": 4.645,
+    "end": 4.936
+   },
+   {
+    "text": "vez",
+    "start": 4.936,
+    "end": 5.155
+   },
+   {
+    "text": "e",
+    "start": 5.155,
+    "end": 5.227
+   },
+   {
+    "text": "no",
+    "start": 5.227,
+    "end": 5.373
+   },
+   {
+    "text": "túnel",
+    "start": 5.373,
+    "end": 5.736
+   },
+   {
+    "text": "virada",
+    "start": 5.736,
+    "end": 6.173
+   },
+   {
+    "text": "para",
+    "start": 6.173,
+    "end": 6.464
+   },
+   {
+    "text": "baixo.",
+    "start": 6.464,
+    "end": 6.9
+   }
+  ]
+ },
+ {
+  "id": 4,
+  "quem": "narrador",
+  "texto": "Depois, a pilha vira. E tudo acontece na ordem em que foi jogado.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/colt/fala-04.wav",
+  "dur": 3.612,
+  "palavras_ouvidas": [
+   {
+    "text": "Depois",
+    "start": 0,
+    "end": 0.4
+   },
+   {
+    "text": "a",
+    "start": 0.4,
+    "end": 0.467
+   },
+   {
+    "text": "pilha",
+    "start": 0.467,
+    "end": 0.8
+   },
+   {
+    "text": "vira",
+    "start": 0.8,
+    "end": 1.067
+   },
+   {
+    "text": "e",
+    "start": 1.067,
+    "end": 1.133
+   },
+   {
+    "text": "tudo",
+    "start": 1.133,
+    "end": 1.4
+   },
+   {
+    "text": "acontece",
+    "start": 1.4,
+    "end": 1.933
+   },
+   {
+    "text": "na",
+    "start": 1.933,
+    "end": 2.067
+   },
+   {
+    "text": "ordem",
+    "start": 2.067,
+    "end": 2.4
+   },
+   {
+    "text": "em",
+    "start": 2.4,
+    "end": 2.533
+   },
+   {
+    "text": "que",
+    "start": 2.533,
+    "end": 2.733
+   },
+   {
+    "text": "foi",
+    "start": 2.733,
+    "end": 2.933
+   },
+   {
+    "text": "jogado.",
+    "start": 2.933,
+    "end": 3.4
+   }
+  ]
+ },
+ {
+  "id": 5,
+  "quem": "narrador",
+  "texto": "O rival trocou de vagão antes. O xerife chegou primeiro. E o soco do Wan… acertou o ar.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/colt/fala-05.wav",
+  "dur": 5.477,
+  "palavras_ouvidas": [
+   {
+    "text": "O",
+    "start": 0,
+    "end": 0.079
+   },
+   {
+    "text": "rival",
+    "start": 0.079,
+    "end": 0.476
+   },
+   {
+    "text": "trocou",
+    "start": 0.476,
+    "end": 0.953
+   },
+   {
+    "text": "de",
+    "start": 0.953,
+    "end": 1.112
+   },
+   {
+    "text": "vagão",
+    "start": 1.112,
+    "end": 1.509
+   },
+   {
+    "text": "antes.",
+    "start": 1.509,
+    "end": 1.985
+   },
+   {
+    "text": "O",
+    "start": 1.985,
+    "end": 2.064
+   },
+   {
+    "text": "xerife",
+    "start": 2.064,
+    "end": 2.541
+   },
+   {
+    "text": "chegou",
+    "start": 2.541,
+    "end": 3.017
+   },
+   {
+    "text": "primeiro",
+    "start": 3.017,
+    "end": 3.653
+   },
+   {
+    "text": "e",
+    "start": 3.653,
+    "end": 3.732
+   },
+   {
+    "text": "o",
+    "start": 3.732,
+    "end": 3.811
+   },
+   {
+    "text": "soco",
+    "start": 3.811,
+    "end": 4.129
+   },
+   {
+    "text": "do",
+    "start": 4.129,
+    "end": 4.288
+   },
+   {
+    "text": "ân",
+    "start": 4.288,
+    "end": 4.447
+   },
+   {
+    "text": "acertou",
+    "start": 4.447,
+    "end": 5.002
+   },
+   {
+    "text": "o",
+    "start": 5.002,
+    "end": 5.082
+   },
+   {
+    "text": "ar.",
+    "start": 5.082,
+    "end": 5.32
+   }
+  ]
+ },
+ {
+  "id": 6,
+  "quem": "wan",
+  "texto": "Quem jogou essa carta?",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/colt/fala-06.wav",
+  "dur": 1.557,
+  "palavras_ouvidas": [
+   {
+    "text": "Quem",
+    "start": 0,
+    "end": 0.295
+   },
+   {
+    "text": "jogou",
+    "start": 0.295,
+    "end": 0.663
+   },
+   {
+    "text": "essa",
+    "start": 0.663,
+    "end": 0.958
+   },
+   {
+    "text": "carta?",
+    "start": 0.958,
+    "end": 1.4
+   }
+  ]
+ },
+ {
+  "id": 7,
+  "quem": "narrador",
+  "texto": "Pior: cada tiro que você leva vira uma carta de bala no seu baralho. Carta que não serve pra nada.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/colt/fala-07.wav",
+  "dur": 5.531,
+  "palavras_ouvidas": [
+   {
+    "text": "Pior,",
+    "start": 0,
+    "end": 0.338
+   },
+   {
+    "text": "cada",
+    "start": 0.338,
+    "end": 0.608
+   },
+   {
+    "text": "tiro",
+    "start": 0.608,
+    "end": 0.878
+   },
+   {
+    "text": "que",
+    "start": 0.878,
+    "end": 1.08
+   },
+   {
+    "text": "você",
+    "start": 1.08,
+    "end": 1.35
+   },
+   {
+    "text": "leva",
+    "start": 1.35,
+    "end": 1.62
+   },
+   {
+    "text": "vira",
+    "start": 1.62,
+    "end": 1.89
+   },
+   {
+    "text": "uma",
+    "start": 1.89,
+    "end": 2.093
+   },
+   {
+    "text": "carta",
+    "start": 2.093,
+    "end": 2.43
+   },
+   {
+    "text": "de",
+    "start": 2.43,
+    "end": 2.565
+   },
+   {
+    "text": "bala",
+    "start": 2.565,
+    "end": 2.835
+   },
+   {
+    "text": "no",
+    "start": 2.835,
+    "end": 2.97
+   },
+   {
+    "text": "seu",
+    "start": 2.97,
+    "end": 3.173
+   },
+   {
+    "text": "baralho,",
+    "start": 3.173,
+    "end": 3.713
+   },
+   {
+    "text": "carta",
+    "start": 3.713,
+    "end": 4.05
+   },
+   {
+    "text": "que",
+    "start": 4.05,
+    "end": 4.253
+   },
+   {
+    "text": "não",
+    "start": 4.253,
+    "end": 4.455
+   },
+   {
+    "text": "serve",
+    "start": 4.455,
+    "end": 4.793
+   },
+   {
+    "text": "para",
+    "start": 4.793,
+    "end": 5.063
+   },
+   {
+    "text": "nada.",
+    "start": 5.063,
+    "end": 5.4
+   }
+  ]
+ },
+ {
+  "id": 8,
+  "quem": "wan",
+  "texto": "Eles acham que isso me para.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/colt/fala-08.wav",
+  "dur": 1.765,
+  "palavras_ouvidas": [
+   {
+    "text": "Eles",
+    "start": 0,
+    "end": 0.271
+   },
+   {
+    "text": "acham",
+    "start": 0.271,
+    "end": 0.61
+   },
+   {
+    "text": "que",
+    "start": 0.61,
+    "end": 0.814
+   },
+   {
+    "text": "isso",
+    "start": 0.814,
+    "end": 1.085
+   },
+   {
+    "text": "me",
+    "start": 1.085,
+    "end": 1.221
+   },
+   {
+    "text": "para.",
+    "start": 1.221,
+    "end": 1.56
+   }
+  ]
+ },
+ {
+  "id": 9,
+  "quem": "narrador",
+  "texto": "Rodada cinco. Vence o bandido mais rico. O Wan está no teto, com uma última carta na mão.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/colt/fala-09.wav",
+  "dur": 4.804,
+  "palavras_ouvidas": [
+   {
+    "text": "Rodada",
+    "start": 0,
+    "end": 0.412
+   },
+   {
+    "text": "5,",
+    "start": 0.412,
+    "end": 0.549
+   },
+   {
+    "text": "vence",
+    "start": 0.549,
+    "end": 0.893
+   },
+   {
+    "text": "o",
+    "start": 0.893,
+    "end": 0.961
+   },
+   {
+    "text": "bandido",
+    "start": 0.961,
+    "end": 1.442
+   },
+   {
+    "text": "mais",
+    "start": 1.442,
+    "end": 1.716
+   },
+   {
+    "text": "rico,",
+    "start": 1.716,
+    "end": 2.06
+   },
+   {
+    "text": "o",
+    "start": 2.06,
+    "end": 2.128
+   },
+   {
+    "text": "One",
+    "start": 2.128,
+    "end": 2.334
+   },
+   {
+    "text": "está",
+    "start": 2.334,
+    "end": 2.609
+   },
+   {
+    "text": "no",
+    "start": 2.609,
+    "end": 2.746
+   },
+   {
+    "text": "teto",
+    "start": 2.746,
+    "end": 3.021
+   },
+   {
+    "text": "com",
+    "start": 3.021,
+    "end": 3.227
+   },
+   {
+    "text": "uma",
+    "start": 3.227,
+    "end": 3.433
+   },
+   {
+    "text": "última",
+    "start": 3.433,
+    "end": 3.845
+   },
+   {
+    "text": "carta",
+    "start": 3.845,
+    "end": 4.188
+   },
+   {
+    "text": "na",
+    "start": 4.188,
+    "end": 4.325
+   },
+   {
+    "text": "mão.",
+    "start": 4.325,
+    "end": 4.6
+   }
+  ]
+ },
+ {
+  "id": 10,
+  "quem": "narrador",
+  "texto": "Ele corre pelo teto até três vagões, atrás da maleta… ou soca o rival, que derruba o saque? Comenta CORRER ou SOCAR. A maioria escreve a Parte dois.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/colt/fala-10.wav",
+  "dur": 9.261,
+  "palavras_ouvidas": [
+   {
+    "text": "Ele",
+    "start": 0,
+    "end": 0.241
+   },
+   {
+    "text": "corre",
+    "start": 0.241,
+    "end": 0.644
+   },
+   {
+    "text": "pelo",
+    "start": 0.644,
+    "end": 0.966
+   },
+   {
+    "text": "teto",
+    "start": 0.966,
+    "end": 1.287
+   },
+   {
+    "text": "até",
+    "start": 1.287,
+    "end": 1.529
+   },
+   {
+    "text": "três",
+    "start": 1.529,
+    "end": 1.851
+   },
+   {
+    "text": "vagões",
+    "start": 1.851,
+    "end": 2.333
+   },
+   {
+    "text": "atrás",
+    "start": 2.333,
+    "end": 2.736
+   },
+   {
+    "text": "da",
+    "start": 2.736,
+    "end": 2.897
+   },
+   {
+    "text": "maleta.",
+    "start": 2.897,
+    "end": 3.46
+   },
+   {
+    "text": "Ou",
+    "start": 3.46,
+    "end": 3.615
+   },
+   {
+    "text": "soca",
+    "start": 3.615,
+    "end": 3.926
+   },
+   {
+    "text": "o",
+    "start": 3.926,
+    "end": 4.003
+   },
+   {
+    "text": "rival",
+    "start": 4.003,
+    "end": 4.391
+   },
+   {
+    "text": "que",
+    "start": 4.391,
+    "end": 4.624
+   },
+   {
+    "text": "derruba",
+    "start": 4.624,
+    "end": 5.167
+   },
+   {
+    "text": "o",
+    "start": 5.167,
+    "end": 5.245
+   },
+   {
+    "text": "saque,",
+    "start": 5.245,
+    "end": 5.71
+   },
+   {
+    "text": "comenta",
+    "start": 5.71,
+    "end": 6.254
+   },
+   {
+    "text": "correr",
+    "start": 6.254,
+    "end": 6.719
+   },
+   {
+    "text": "ou",
+    "start": 6.719,
+    "end": 6.874
+   },
+   {
+    "text": "socar.",
+    "start": 6.874,
+    "end": 7.34
+   },
+   {
+    "text": "A",
+    "start": 7.34,
+    "end": 7.414
+   },
+   {
+    "text": "maioria",
+    "start": 7.414,
+    "end": 7.931
+   },
+   {
+    "text": "escreve",
+    "start": 7.931,
+    "end": 8.449
+   },
+   {
+    "text": "a",
+    "start": 8.449,
+    "end": 8.523
+   },
+   {
+    "text": "parte",
+    "start": 8.523,
+    "end": 8.892
+   },
+   {
+    "text": "2.",
+    "start": 8.892,
+    "end": 9.04
+   }
+  ]
+ },
+ {
+  "id": 11,
+  "quem": "narrador",
+  "texto": "A resenha completa de Colt Express está no nosso site.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/colt/fala-11.wav",
+  "dur": 2.921,
+  "palavras_ouvidas": [
+   {
+    "text": "A",
+    "start": 0,
+    "end": 0.061
+   },
+   {
+    "text": "resenha",
+    "start": 0.061,
+    "end": 0.491
+   },
+   {
+    "text": "completa",
+    "start": 0.491,
+    "end": 0.981
+   },
+   {
+    "text": "de",
+    "start": 0.981,
+    "end": 1.104
+   },
+   {
+    "text": "Code",
+    "start": 1.104,
+    "end": 1.349
+   },
+   {
+    "text": "Express",
+    "start": 1.349,
+    "end": 1.779
+   },
+   {
+    "text": "está",
+    "start": 1.779,
+    "end": 2.024
+   },
+   {
+    "text": "no",
+    "start": 2.024,
+    "end": 2.147
+   },
+   {
+    "text": "nosso",
+    "start": 2.147,
+    "end": 2.453
+   },
+   {
+    "text": "site.",
+    "start": 2.453,
+    "end": 2.76
+   }
+  ]
+ }
+]
