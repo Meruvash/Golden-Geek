@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-11-09",
+ "atualizado_em": "2026-11-10",
  "regras": {
   "premios": [
    "Golden Geek",
@@ -393,6 +393,21 @@
    "jogo": "Mysterium Kids",
    "url": "https://eliteboardgamers.com.br/mysterium-kids/",
    "data": "2026-11-09"
+  },
+  {
+   "jogo": "Bubble Stories",
+   "url": "https://eliteboardgamers.com.br/bubble-stories/",
+   "data": "2026-11-10"
+  },
+  {
+   "jogo": "Magic Mountain",
+   "url": "https://eliteboardgamers.com.br/magic-mountain/",
+   "data": "2026-11-10"
+  },
+  {
+   "jogo": "Isle of Skye",
+   "url": "https://eliteboardgamers.com.br/isle-of-skye/",
+   "data": "2026-11-10"
   }
  ],
  "jogos": [
@@ -3777,11 +3792,15 @@
      "fonte": "https://fr.wikipedia.org/wiki/As_d%27Or"
     }
    ],
-   "status": "na_fila",
+   "status": "sem_fotos",
    "premios_distintos": 1,
    "prioridade": 108,
    "carro_chefe": false,
-   "slug": "odin"
+   "slug": "odin",
+   "fotos": {
+    "verificado_em": "2026-11-10",
+    "obs": "Helvetiq e PaperGames consultadas em 10/11/2026: todas as fotos de mesa mostram rosto de frente; o resto é ilustração ou a caixa. Texto pronto guardado."
+   }
   },
   {
    "jogo": "Opération Noisettes",
@@ -4176,7 +4195,7 @@
      "fonte": "https://fr.wikipedia.org/wiki/As_d%27Or"
     }
    ],
-   "status": "na_fila",
+   "status": "publicado",
    "premios_distintos": 1,
    "prioridade": 119,
    "carro_chefe": false,
@@ -4197,7 +4216,7 @@
      "fonte": "https://en.wikipedia.org/wiki/Spiel_des_Jahres"
     }
    ],
-   "status": "na_fila",
+   "status": "publicado",
    "premios_distintos": 1,
    "prioridade": 120,
    "carro_chefe": false,

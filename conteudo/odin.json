@@ -1,0 +1,358 @@
+{
+ "slug": "odin",
+ "jogo": "Odin",
+ "cor": "#3f6fa8",
+ "kicker": "Resenha · Jogo de cartas de escalada",
+ "og_titulo": "Odin vale a pena? Resenha Elite Boardgamers",
+ "titulo_busca": "Odin: resenha do jogo de cartas que venceu o As d'Or 2025",
+ "descricao": "Resenha de Odin, jogo de cartas de bolso que venceu o As d'Or 2025: como funciona a escalada de números, edição da PaperGames e preço.",
+ "titulo_html": "<span>Odin</span> é Scout de rodinhas, e foi com as rodinhas que ele levou o troféu",
+ "lede": "Odin é um jogo de cartas de bolso, de 2 a 6 jogadores, em que cada um tenta se livrar das nove cartas da mão superando o valor jogado antes. Venceu o As d'Or 2025 de Jogo do Ano, em Cannes, e tem edição brasileira da PaperGames. Os vikings da caixa estão ali de enfeite: quem briga de verdade são os algarismos. A pista do veredito: para a família que precisa de 15 minutos de cartas que se ensinam a qualquer um, é dinheiro bem gasto.",
+ "tags": [
+  "2–6 jogadores",
+  "15 min",
+  "7+",
+  "Jogo de cartas",
+  "Escalada"
+ ],
+ "alt": "Caixa pequena de Odin em pé sobre a mesa, com a ilustração de um viking de escudo, e três jogadores ao fundo segurando leques de cartas",
+ "premiacoes": [
+  {
+   "premio": "As d'Or",
+   "ano": 2025,
+   "categoria": "Jeu de l'année",
+   "colocacao": 1,
+   "resultado": "vencedor",
+   "fonte": "https://fr.wikipedia.org/wiki/As_d%27Or",
+   "rotulo": "Vencedor"
+  }
+ ],
+ "ficha": [
+  [
+   "Ano",
+   "2024 (Helvetiq), segundo dados do BGG replicados pelo Board Game Oracle; o Tabletop Games Blog registra 2023. Edição brasileira em 2025 (PaperGames)"
+  ],
+  [
+   "Designers",
+   "Gary Kim, Hope S. Hwang e Yohan Goh"
+  ],
+  [
+   "Arte",
+   "Crocotame"
+  ],
+  [
+   "Editora original",
+   "Helvetiq (Suíça)"
+  ],
+  [
+   "Editora no Brasil",
+   "PaperGames"
+  ],
+  [
+   "Jogadores",
+   "2 a 6"
+  ],
+  [
+   "Duração anunciada",
+   "15 minutos (manual); 15 a 30 minutos segundo o Tabletop Games Blog"
+  ],
+  [
+   "Idade",
+   "7+"
+  ],
+  [
+   "Nota BGG",
+   "6,7 / 10, posição 3164 no ranking (conforme site que replica o BGG)"
+  ],
+  [
+   "Peso BGG",
+   "1,2 / 5 (conforme site que replica o BGG)"
+  ],
+  [
+   "Nota ComparaJogos",
+   "6,3; complexidade 1,2"
+  ],
+  [
+   "Nota Ludopedia",
+   "não confirmado nas fontes consultadas"
+  ],
+  [
+   "Idioma",
+   "sem dependência de idioma nas cartas (ComparaJogos); manual da edição nacional em português"
+  ],
+  [
+   "Componentes",
+   "54 cartas, numeradas de 1 a 9 em seis cores, e folheto de regras"
+  ],
+  [
+   "Versão digital",
+   "Board Game Arena, desde 06/11/2024"
+  ],
+  [
+   "Prêmios",
+   "As d'Or 2025, Jogo do Ano"
+  ]
+ ],
+ "nota_ficha": "Nota, posição e peso do BGG vêm do Board Game Oracle, que replica o BoardGameGeek (o BGG bloqueia acesso automatizado). Nota e complexidade do ComparaJogos consultadas em 10/11/2026.",
+ "como_funciona": [
+  "Odin usa um baralho de 54 cartas: seis cores, cada uma numerada de 1 a 9. Cada jogador recebe nove cartas e tenta ser o primeiro a esvaziar a mão. A partida tem várias mãos, e cada carta que sobra no fim de uma mão vale um ponto. Aqui ponto é ruim: vence quem tiver menos.",
+  "Cada mão se divide em rodadas. Quem abre a rodada joga uma única carta no meio da mesa. Depois, na ordem, cada jogador escolhe entre jogar ou passar. Para jogar, é preciso superar o valor que está na mesa, usando a mesma quantidade de cartas ou uma a mais: sobre uma dupla, vale outra dupla ou um trio, nunca uma carta sozinha nem quatro.",
+  "Cartas jogadas juntas precisam ter a mesma cor ou o mesmo número. O valor do grupo é o maior número que os algarismos formam: um 2 e um 8 da mesma cor valem 82, e 2, 4 e 9 da mesma cor valem 942. Quatro cartas 8 valem 8888.",
+  "A regra que dá nome ao jogo de troca: depois de jogar, você pega para a mão uma das cartas que acabou de cobrir e descarta as outras. Passar não tira ninguém da rodada; quem passou pode jogar na vez seguinte. Quando todos menos um passam, as cartas do meio vão para o descarte e o último a jogar abre a rodada nova.",
+  "A mão acaba de dois jeitos: quando alguém joga a última carta (sem pegar nada de volta) ou quando quem abre a rodada tem só cartas da mesma cor ou do mesmo número e baixa todas de uma vez. O manual recomenda jogar até 15 pontos na primeira partida; quando alguém chega lá, vence quem tem menos pontos."
+ ],
+ "passos": [
+  [
+   "RECEBA NOVE CARTAS",
+   "Embaralhe as 54 cartas, de 1 a 9 em seis cores, e dê nove a cada jogador. Quem abre a rodada joga uma carta só."
+  ],
+  [
+   "SUPERE O VALOR",
+   "Na sua vez, jogue um valor maior que o da mesa, com a mesma quantidade de cartas ou uma a mais. Ou passe e espere."
+  ],
+  [
+   "FORME O NÚMERO",
+   "Cartas juntas têm a mesma cor ou o mesmo número. Os algarismos formam o maior valor possível: 2 e 8 da mesma cor valem 82."
+  ],
+  [
+   "PEGUE UMA DE VOLTA",
+   "Depois de jogar, leve para a mão uma das cartas que você cobriu e descarte o resto. Se todos menos um passarem, a rodada acaba."
+  ],
+  [
+   "ESVAZIE A MÃO",
+   "A mão termina quando alguém fica sem cartas. Cada carta que sobrou vale um ponto ruim; com 15 pontos, vence quem tem menos."
+  ]
+ ],
+ "como_resumo": "Supere o valor da mesa com cartas da mesma cor ou do mesmo número e seja o primeiro a esvaziar a mão.",
+ "perfil": [
+  [
+   "Facilidade de ensinar",
+   5
+  ],
+  [
+   "Partida curta",
+   5
+  ],
+  [
+   "Decisões por jogada",
+   4
+  ],
+  [
+   "Interação entre jogadores",
+   4
+  ],
+  [
+   "Variedade entre partidas",
+   3
+  ],
+  [
+   "Tema e imersão",
+   1
+  ]
+ ],
+ "experiencia": [
+  "O começo engana. Alguém abre com um 3 vermelho, o próximo joga um 5, o outro um 7, e parece um jogo de criança. Duas voltas depois, a mesa tem um 941 azul e você está segurando um 6 verde, um 6 amarelo e um 6 roxo, fazendo a conta de quanto vale guardar o trio para depois. Dale Yu, do Opinionated Gamers, admite que achou que seria uma bobagem infantil e mudou de ideia.",
+  "A decisão típica é sobre o que quebrar. Jogar o 8 e o 5 azuis agora tira duas cartas da mão, mas desmonta a sequência que fecharia a mão de uma vez. E quem joga sempre leva uma carta do grupo que cobriu: às vezes é exatamente o 6 que faltava para o seu quarteto. Passar também é jogada, porque você volta na rodada seguinte com a mesa mais alta e os outros com menos cartas.",
+  "A partida acaba rápido, e é aí que o jogo cobra a conta: alguém sempre propõe mais uma. O júri do As d'Or, segundo a What Board Game, jogou Odin mais de 50 vezes. A 15 minutos cada, são mais de 12 horas com nove vikings na mão. A gente entende o júri."
+ ],
+ "citacao": {
+  "texto": "É uma ideia muito simples e, ao mesmo tempo, extremamente cerebral.",
+  "fonte": "Abigail Bradish, Zatu (tradução livre)"
+ },
+ "funciona": [
+  [
+   "Regra que cabe numa folha",
+   "O manual tem uma página, e Oliver Kinne, do Tabletop Games Blog, calcula uns 10 minutos para explicar. A idade indicada é 7 anos, e as cartas não têm texto, só cor e número. É o tipo de jogo que se ensina no meio de um aniversário sem ninguém pedir para ver o manual."
+  ],
+  [
+   "A carta que volta para a mão",
+   "Quem joga sempre leva uma das cartas que cobriu. Dale Yu, do Opinionated Gamers, gosta justamente de como a mão melhora a cada jogada: você descarta duas cartas ruins e recolhe o 9 que faltava para o seu trio. Isso muda a conta de todo turno, porque a jogada boa também é a que deixa no meio uma carta útil para você."
+  ],
+  [
+   "Dois caminhos para subir",
+   "Dá para superar a mesa por cor, formando números altos como 754, ou por número igual, como quatro 8 que viram 8888 e atropelam quase tudo. Stephen Conway, do Major Fun, diz que toda partida vem cheia de escolhas surpreendentes, e a dúvida entre guardar o par ou usar as cores aparece a cada mão."
+  ],
+  [
+   "Passar não é desistir",
+   "Ao contrário de muitos jogos de escalada, quem passa continua na rodada e pode jogar na vez seguinte. A Zatu destaca o passe tático: segurar o trio de 7 até alguém subir a mesa, e só então soltar. É o que dá a Odin mais decisão do que a regra de uma folha sugere."
+  ],
+  [
+   "Mais amigável que Scout",
+   "Odin é sempre comparado a Scout, outro jogo de escalada de cartas. Oliver Kinne, do Tabletop Games Blog, acha Odin provavelmente mais fácil, porque dá para reorganizar a mão à vontade, e a Board's Eye View o considera menos trabalhoso de ensinar a quem nunca jogou. Para famílias e iniciantes, essa diferença é o jogo inteiro."
+  ],
+  [
+   "Preço de caixa de bolso",
+   "Em 10/11/2026, o ComparaJogos listava a edição da PaperGames a partir de R$ 47,15 no Pix. Emma Garrett, da Tabletop Gaming, escreveu sobre o preço britânico, 12 libras, que por esse valor não tem como errar. A caixa de 54 cartas cabe no bolso do casaco e vai para qualquer bar ou viagem."
+  ]
+ ],
+ "atencao": [
+  [
+   "Moderada",
+   "Viking de enfeite",
+   "Para Emma Garrett, da Tabletop Gaming, a única ligação de Odin com Valhalla é um parágrafo do manual. O próprio manual concorda e chama o jogo de \"bastante abstrato\". Os nove vikings, da curandeira ao jarl, servem para numerar de 1 a 9. Quem compra pelo machado na capa vai passar a partida fazendo conta de três dígitos."
+  ],
+  [
+   "Moderada",
+   "Scout continua no trono",
+   "A Board's Eye View gosta de Odin, mas diz que ele não substitui Scout na estante; Oliver Kinne, do Tabletop Games Blog, guarda os dois e acha Scout um pouco mais desafiador. Ou seja: o As d'Or premiou o irmão mais acessível. Para quem já tem Scout e quer profundidade, a compra acrescenta pouco."
+  ],
+  [
+   "Leve",
+   "Júri animado, público morno",
+   "O júri do As d'Or jogou mais de 50 vezes. Os jogadores foram mais contidos: nota 6,7 de 10 nos dados do BGG replicados pelo Board Game Oracle, posição 3164 no ranking, e 6,3 no ComparaJogos. Sam Healey, do Dice Tower, deu nota 6,0. É Jogo do Ano com nota de jogo da prateleira do meio."
+  ],
+  [
+   "Leve",
+   "Número só em cima",
+   "Abigail Bradish, da Zatu, reclama que o número das cartas aparece só no alto, e não nas duas pontas como no baralho comum. Com leque de nove cartas, metade da mesa acaba segurando alguma de cabeça para baixo. Num jogo que é só número e cor, imprimir o número uma vez é economia de tinta no lugar errado."
+  ],
+  [
+   "Leve",
+   "Os 15 minutos da caixa",
+   "A caixa e o manual anunciam 15 minutos, mas a partida padrão vai até alguém somar 15 pontos, em várias mãos. O Tabletop Games Blog fala em 15 a 30 minutos. Quem quer de fato 15 minutos pode seguir a sugestão do próprio manual: jogar uma mão só, ou até 10 pontos."
+  ]
+ ],
+ "jogadores": [
+  [
+   "2 jogadores",
+   "A Zatu diz que funciona tão bem a dois quanto com mais gente. A Board's Eye View cita a sugestão de tirar duas cores nessa contagem.",
+   2
+  ],
+  [
+   "3 a 6 jogadores",
+   "A caixa vai até seis, sempre com nove cartas por pessoa. A melhor contagem não foi confirmada nas fontes consultadas.",
+   2
+  ]
+ ],
+ "primeira_partida": "A explicação leva uns 10 minutos, segundo o Tabletop Games Blog. O que mais confunde é a regra da quantidade: sobre uma dupla só vale dupla ou trio, nunca uma carta sozinha. Outra dúvida comum é o valor do grupo; mostre o exemplo do manual, 2, 4 e 9 da mesma cor valendo 942. Dica prática: organize a mão por cor e de olho nos números repetidos, e lembre que quem passou pode voltar na mesma rodada.",
+ "edicao_nacional": "A edição em português é da PaperGames, de 2025 segundo o ComparaJogos, com 54 cartas e manual em português; as cartas não dependem de idioma. Em 10/11/2026, o ComparaJogos listava o jogo a partir de R$ 47,15 no Pix (Leão Livros), com ofertas de R$ 49,90 a R$ 56,99 em outras lojas e R$ 71,99 no Mercado Livre. A Place Games vendia por R$ 64,88, com disponibilidade imediata.",
+ "preco_ref": {
+  "faixa": "a partir de R$ 47,15",
+  "data": "10/11/2026",
+  "obs": "menor preço no Pix em lojas brasileiras, segundo o ComparaJogos; edição nacional da PaperGames"
+ },
+ "versoes": "Há versão digital no Board Game Arena desde 06/11/2024, com tutorial e página de anúncio em português. A Helvetiq oferece cartas bônus avulsas, como Thor's Hammer e Grumpy Goat, com regras próprias. Uma loja brasileira anuncia \"Odin + Expansão\", mas a página não diz o que vem; expansão nacional não confirmada nas fontes consultadas.",
+ "comparacoes": [
+  [
+   "Scout",
+   null,
+   "O primo mais famoso da escalada de cartas, em que não se pode reorganizar a mão. Mais desafiador segundo o Tabletop Games Blog; Odin é a porta de entrada mais suave para o mesmo tipo de jogo."
+  ],
+  [
+   "Flip 7",
+   "flip-7",
+   "Outro jogo de cartas de caixa pequena e partida curta, só que de arriscar a sorte. Para quem quer gritaria em vez de conta; Odin pede mais planejamento da mão."
+  ],
+  [
+   "The Crew",
+   "the-crew",
+   "Também é jogo de cartas numeradas em cores, mas de vazas e cooperativo. Bom passo seguinte para quem gostou de pensar em cada carta e quer jogar junto, não contra."
+  ]
+ ],
+ "para_quem": [
+  "Ensina jogo para crianças a partir dos 7 e para avós que fogem de manual",
+  "Precisa de algo que caiba no bolso e saia em viagem",
+  "Gosta de decidir o que guardar e o que quebrar na mão",
+  "Procura um presente premiado por menos de R$ 60",
+  "Achou Scout trabalhoso demais para a família"
+ ],
+ "nao_e_para": [
+  "Compra jogo pelo tema e quer sentir cheiro de hidromel",
+  "Já tem Scout e procura mais profundidade",
+  "Planeja a noite inteira em volta de um único jogo",
+  "Tem preguiça de juntar algarismos em números de três dígitos"
+ ],
+ "selo": "Recomendado",
+ "melhor_para": "entrada",
+ "veredito": "A tese da gente: Odin é Scout de rodinhas, e as rodinhas são o motivo do troféu. Tira a regra que trava a mão, mantém a decisão de quebrar ou guardar o grupo e cabe numa folha que se explica em 10 minutos. O júri do As d'Or jogou mais de 50 vezes; o público dá 6,7 no BGG e 6,3 no ComparaJogos, o que diz muito sobre a diferença entre um jogo bom para ensinar e um jogo bom para quem já sabe. Pesam o tema que mora no manual e a falta de profundidade para quem já tem Scout. Por cerca de R$ 47, porém, o risco cabe no troco. Compre para a família. Os vikings vêm de brinde e não atrapalham.",
+ "tagline": "O júri jogou mais de 50 vezes para ter certeza. A gente desconfia que foi só para ter desculpa de jogar a quinquagésima primeira.",
+ "consulta": "10/11/2026",
+ "fontes": [
+  [
+   "Helvetiq – Odin: manual oficial em inglês (cópia de distribuidor)",
+   "https://ilo307.fidelio.ca/Public/img/catalog/Odin_Rules_EN.pdf",
+   "regras, componentes, fim de jogo, origem do tema"
+  ],
+  [
+   "Helvetiq – Odin",
+   "https://helvetiq.com/intl/odin",
+   "editora, prêmio, cartas bônus (via busca)"
+  ],
+  [
+   "Wikipédia (FR) – As d'Or",
+   "https://fr.wikipedia.org/wiki/As_d%27Or",
+   "prêmio de Jogo do Ano 2025"
+  ],
+  [
+   "Spielwarenmesse – Odin vence o As d'Or 2025",
+   "https://www.spielwarenmesse.de/en/mag/toy-market-news/odin-triumphs-at-the-as-dor-2025-game-of-the-year",
+   "prêmio, autores, ilustração"
+  ],
+  [
+   "What Board Game – Odin vence o As d'Or",
+   "https://www.whatboardgame.com/post/odin-card-game-wins-as-d-or-at-the-cannes-international-games-festival",
+   "júri jogou mais de 50 vezes"
+  ],
+  [
+   "Opinionated Gamers – Dale Yu",
+   "https://opinionatedgamers.com/2024/02/19/dale-yu-review-of-odin/",
+   "crítica, comparação com Scout"
+  ],
+  [
+   "Tabletop Gaming – Odin",
+   "https://tabletopgaming.co.uk/reviews/odin-card-game-review",
+   "crítica, tema, preço"
+  ],
+  [
+   "Tabletop Games Blog – Odin",
+   "https://tabletopgamesblog.com/2024/03/30/odin-saturday-review",
+   "crítica, duração, explicação, comparação com Scout"
+  ],
+  [
+   "Zatu – Odin",
+   "https://zatu.com/odin-review",
+   "crítica, passe tático, números das cartas"
+  ],
+  [
+   "Board's Eye View – Odin",
+   "https://www.boardseyeview.net/post/_odin",
+   "crítica, comparação com Scout, variante a dois"
+  ],
+  [
+   "Major Fun – Odin",
+   "https://www.majorfun.com/odin-is-major-fun/",
+   "crítica, combinações"
+  ],
+  [
+   "Dice Tower – Sam Healey",
+   "https://dicetower.com/review/odin-review-sam-healey",
+   "nota do crítico"
+  ],
+  [
+   "Board Game Oracle – Odin",
+   "https://www.boardgameoracle.com/boardgame/price/MpSHXA25G7/odin",
+   "nota, posição e peso do BGG replicados"
+  ],
+  [
+   "ComparaJogos – Odin",
+   "https://www.comparajogos.com.br/item/odin",
+   "preço no Brasil, editora nacional, nota, idioma"
+  ],
+  [
+   "Place Games – Odin",
+   "https://www.placegames.com.br/boardgames/odin",
+   "edição nacional, idioma, componentes"
+  ],
+  [
+   "Taverna Real – Odin + Expansão",
+   "https://www.tavernareal.com/tabuleiro/odin-expansao",
+   "anúncio sem detalhe de expansão"
+  ],
+  [
+   "Board Game Arena – Odin",
+   "https://pt.boardgamearena.com/news?id=841",
+   "versão digital"
+  ]
+ ],
+ "legenda": "Odin é Scout de rodinhas. E foram as rodinhas que levaram o troféu. 🛡️\n\nOdin venceu o As d'Or 2025 de Jogo do Ano, em Cannes.\nSupere o valor da mesa com cartas da mesma cor ou do mesmo número, pegue uma de volta e seja o primeiro a esvaziar a mão. De 2 a 6 jogadores, regra numa folha.\nEdição da PaperGames em português; em 10/11/2026, a partir de R$ 47,15.\nVeredito: RECOMENDADO. Os vikings vêm de brinde.\n\nNa sua mesa: Odin ou Scout? 👇\nResenha completa no link da bio.\n\n#Odin #JogosDeTabuleiro #JogoDeCartas #BoardGames #CardGames #PaperGames #Helvetiq #AsDor #EliteBoardgamers #Boardgamer"
+}

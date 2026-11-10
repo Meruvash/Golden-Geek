@@ -2634,5 +2634,27 @@
    ],
    "verificado_em": "2026-11-09"
   }
+ },
+ "papergames.com.br": {
+  "nome": "PaperGames",
+  "apelidos": [
+   "PaperGames"
+  ],
+  "site": "https://papergames.com.br",
+  "plataforma": "woocommerce",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://papergames.com.br/sitemap.xml",
+    "https://papergames.com.br/news-sitemap.xml"
+   ],
+   "verificado_em": "2026-11-10"
+  }
  }
 }

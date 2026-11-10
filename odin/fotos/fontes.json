@@ -1,6 +1,6 @@
 {
  "slug": "odin",
- "usar_na_pagina": true,
+ "usar_na_pagina": false,
  "fotos": [
   {
    "arquivo": "fotos/capa-1.webp",
@@ -25,7 +25,8 @@
    "imagem": "https://helvetiq.com/media/catalog/product/o/d/odin-withplayers-website1.webp",
    "baixada_em": "2026-11-09",
    "aprovada": true,
-   "principal": true
+   "pessoas": true,
+   "fora": true
   },
   {
    "arquivo": "fotos/jogabilidade-2.webp",
