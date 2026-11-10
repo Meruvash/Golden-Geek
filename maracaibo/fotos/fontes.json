@@ -1,0 +1,45 @@
+{
+ "slug": "maracaibo",
+ "usar_na_pagina": true,
+ "fotos": [
+  {
+   "arquivo": "fotos/mesa-1.webp",
+   "tipo": "mesa",
+   "largura": 1000,
+   "altura": 642,
+   "editora": "Capstone Games",
+   "credito": "Imagem: Capstone Games · fotos da Capstone (edição dos EUA)",
+   "pagina": "https://capstone-games.com/products/pirates-of-maracaibo",
+   "imagem": "https://cdn.shopify.com/s/files/1/0947/3907/1278/files/imgi_8_Pirates-of-Maracaibo-2_1000x642_acf_cropped.jpg",
+   "baixada_em": "2026-11-10",
+   "aprovada": true,
+   "principal": true
+  },
+  {
+   "arquivo": "fotos/mesa-2.webp",
+   "tipo": "mesa",
+   "largura": 1000,
+   "altura": 642,
+   "editora": "Capstone Games",
+   "credito": "Imagem: Capstone Games · fotos da Capstone (edição dos EUA)",
+   "pagina": "https://capstone-games.com/products/pirates-of-maracaibo",
+   "imagem": "https://cdn.shopify.com/s/files/1/0947/3907/1278/files/imgi_5_Pirates-of-Maracaibo-4_1000x642_acf_cropped.jpg",
+   "baixada_em": "2026-11-10",
+   "aprovada": true,
+   "fora": true
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 1000,
+   "altura": 642,
+   "editora": "Capstone Games",
+   "credito": "Imagem: Capstone Games · fotos da Capstone (edição dos EUA)",
+   "pagina": "https://capstone-games.com/products/pirates-of-maracaibo",
+   "imagem": "https://cdn.shopify.com/s/files/1/0947/3907/1278/files/imgi_6_Pirates-of-Maracaibo-5_1000x642_acf_cropped.jpg",
+   "baixada_em": "2026-11-10",
+   "aprovada": true,
+   "jogar": true
+  }
+ ]
+}

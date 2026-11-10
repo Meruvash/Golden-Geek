@@ -1,0 +1,57 @@
+{
+ "slug": "watergate",
+ "usar_na_pagina": true,
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 1600,
+   "altura": 1600,
+   "editora": "Frosted Games",
+   "credito": "Imagem: Frosted Games · edição dos EUA (Capstone)",
+   "pagina": "https://frostedgames.de/shop/watergate/",
+   "imagem": "https://frostedgames.de/wp-content/uploads/2019/05/TOP_DE_highres.jpg",
+   "baixada_em": "2026-11-10",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/mesa-1.webp",
+   "tipo": "mesa",
+   "largura": 1000,
+   "altura": 642,
+   "editora": "Capstone Games",
+   "credito": "Imagem: Capstone Games · edição dos EUA (Capstone)",
+   "pagina": "https://capstone-games.com/products/watergate-1",
+   "imagem": "https://cdn.shopify.com/s/files/1/0947/3907/1278/files/imgi_5_Watergate-Overview-web.jpg",
+   "baixada_em": "2026-11-10",
+   "aprovada": true,
+   "principal": true
+  },
+  {
+   "arquivo": "fotos/mesa-2.webp",
+   "tipo": "mesa",
+   "largura": 1000,
+   "altura": 642,
+   "editora": "Capstone Games",
+   "credito": "Imagem: Capstone Games · edição dos EUA (Capstone)",
+   "pagina": "https://capstone-games.com/products/watergate-1",
+   "imagem": "https://cdn.shopify.com/s/files/1/0947/3907/1278/files/imgi_10_Watergate-Connection-web.jpg",
+   "baixada_em": "2026-11-10",
+   "aprovada": true,
+   "fora": true
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 1000,
+   "altura": 642,
+   "editora": "Capstone Games",
+   "credito": "Imagem: Capstone Games · edição dos EUA (Capstone)",
+   "pagina": "https://capstone-games.com/products/watergate-1",
+   "imagem": "https://cdn.shopify.com/s/files/1/0947/3907/1278/files/imgi_6_Watergate-Tokens-web.jpg",
+   "baixada_em": "2026-11-10",
+   "aprovada": true,
+   "jogar": true
+  }
+ ]
+}

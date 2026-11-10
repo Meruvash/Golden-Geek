@@ -2601,19 +2601,6 @@
    "verificado_em": "2026-11-09"
   }
  },
- "haba.de": {
-  "nome": "Haba",
-  "apelidos": [
-   "Haba"
-  ],
-  "site": "https://haba.de",
-  "plataforma": "html",
-  "estrategia": "sitemap+html",
-  "press_kit": null,
-  "paginas": {},
-  "status": "erro",
-  "obs": "robots.txt de https://haba.de inacessível (erro de rede); tente mais tarde"
- },
  "cardboardalchemy.com": {
   "nome": "Cardboard Alchemy",
   "apelidos": [

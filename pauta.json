@@ -4493,7 +4493,8 @@
    "status": "na_fila",
    "premios_distintos": 1,
    "prioridade": 126,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "slug": "mr-wolf"
   },
   {
    "jogo": "Valley of the Vikings",
@@ -4530,14 +4531,11 @@
      "fonte": "https://eliteboardgamers.com.br/"
     }
    ],
-   "status": "sem_fotos",
+   "status": "na_fila",
    "prioridade": 88,
    "premios_distintos": 1,
    "carro_chefe": false,
-   "fotos": {
-    "verificado_em": "2026-11-04",
-    "obs": "Frosted Games (página do jogo e comunicado de imprensa: só caixa e tabuleiro em fundo branco liso), Capstone Games (edição dos EUA: fotos de mesa só até 1000x642, abaixo do mínimo do topo), Pegasus (distribuidora alemã); sem edição nacional localizada"
-   }
+   "slug": "watergate"
   },
   {
    "jogo": "Dragon's Breath",
@@ -5633,7 +5631,8 @@
    "status": "na_fila",
    "prioridade": 155,
    "premios_distintos": 2,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "slug": "maracaibo"
   },
   {
    "jogo": "My City",
@@ -6397,7 +6396,8 @@
    "status": "na_fila",
    "prioridade": 180,
    "premios_distintos": 1,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "slug": "tapestry"
   },
   {
    "jogo": "The Lord of the Rings: Journeys in Middle-earth",

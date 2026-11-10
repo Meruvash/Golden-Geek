@@ -1,0 +1,83 @@
+{
+ "slug": "tapestry",
+ "usar_na_pagina": true,
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 1362,
+   "altura": 1596,
+   "editora": "Stonemaier Games",
+   "credito": "Imagem: Stonemaier Games",
+   "pagina": "https://stonemaiergames.com/games/tapestry/",
+   "imagem": "https://stonemaiergames.com/wp-content/uploads/2026/04/3d-tapestry.webp",
+   "baixada_em": "2026-11-10",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/mesa-1.webp",
+   "tipo": "mesa",
+   "largura": 1600,
+   "altura": 1066,
+   "editora": "Stonemaier Games",
+   "credito": "Imagem: Stonemaier Games",
+   "pagina": "https://stonemaiergames.com/games/tapestry/",
+   "imagem": "https://stonemaiergames.com/wp-content/uploads/2021/01/A05I6178-Photography-By-Tim-Chuon.jpg",
+   "baixada_em": "2026-11-10",
+   "aprovada": true,
+   "fora": true
+  },
+  {
+   "arquivo": "fotos/mesa-2.webp",
+   "tipo": "mesa",
+   "largura": 1600,
+   "altura": 1200,
+   "editora": "Stonemaier Games",
+   "credito": "Imagem: Stonemaier Games",
+   "pagina": "https://stonemaiergames.com/games/tapestry/",
+   "imagem": "https://stonemaiergames.com/wp-content/uploads/2019/08/IMG_1591.jpg",
+   "baixada_em": "2026-11-10",
+   "aprovada": true,
+   "principal": true
+  },
+  {
+   "arquivo": "fotos/jogabilidade-1.webp",
+   "tipo": "jogabilidade",
+   "largura": 1600,
+   "altura": 1066,
+   "editora": "Stonemaier Games",
+   "credito": "Imagem: Stonemaier Games",
+   "pagina": "https://stonemaiergames.com/games/tapestry/",
+   "imagem": "https://stonemaiergames.com/wp-content/uploads/2021/01/A05I6527-Photography-By-Tim-Chuon.jpg",
+   "baixada_em": "2026-11-10",
+   "aprovada": true,
+   "fora": true
+  },
+  {
+   "arquivo": "fotos/jogabilidade-2.webp",
+   "tipo": "jogabilidade",
+   "largura": 1600,
+   "altura": 1067,
+   "editora": "Stonemaier Games",
+   "credito": "Imagem: Stonemaier Games",
+   "pagina": "https://stonemaiergames.com/games/tapestry/",
+   "imagem": "https://stonemaiergames.com/wp-content/uploads/2021/01/A05I6227-Photography-By-Tim-Chuon.jpg",
+   "baixada_em": "2026-11-10",
+   "aprovada": true,
+   "fora": true
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 1600,
+   "altura": 1066,
+   "editora": "Stonemaier Games",
+   "credito": "Imagem: Stonemaier Games",
+   "pagina": "https://stonemaiergames.com/games/tapestry/",
+   "imagem": "https://stonemaiergames.com/wp-content/uploads/2021/01/A05I6134-Photography-By-Tim-Chuon.jpg",
+   "baixada_em": "2026-11-10",
+   "aprovada": true,
+   "jogar": true
+  }
+ ]
+}
