@@ -2656,5 +2656,66 @@
    ],
    "verificado_em": "2026-11-10"
   }
+ },
+ "auzou.fr": {
+  "nome": "Auzou",
+  "apelidos": [
+   "Auzou"
+  ],
+  "site": "https://www.auzou.fr",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.auzou.fr/sitemap.xml"
+   ],
+   "verificado_em": "2026-11-10"
+  }
+ },
+ "gamefactory-games.com": {
+  "nome": "Game Factory",
+  "apelidos": [
+   "Game Factory"
+  ],
+  "site": "https://www.gamefactory-games.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://www.gamefactory-games.com/presse",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [],
+   "verificado_em": "2026-11-10"
+  }
+ },
+ "game-flow.fr": {
+  "nome": "Game Flow",
+  "apelidos": [
+   "Game Flow"
+  ],
+  "site": "https://game-flow.fr",
+  "plataforma": "woocommerce",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://game-flow.fr/sitemap_index.xml"
+   ],
+   "verificado_em": "2026-11-10"
+  }
  }
 }

@@ -1,0 +1,59 @@
+{
+ "slug": "mon-puzzle-aventure",
+ "usar_na_pagina": true,
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 1200,
+   "altura": 1600,
+   "editora": "Game Flow",
+   "credito": "Imagem: Game Flow",
+   "pagina": "https://game-flow.fr/produit/mon-puzzle-aventure-dragon/",
+   "imagem": "https://game-flow.fr/wp-content/uploads/2026/09/MPZDragon3D.webp",
+   "baixada_em": "2026-11-10",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/mesa-1.webp",
+   "tipo": "mesa",
+   "largura": 1200,
+   "altura": 1600,
+   "editora": "Game Flow",
+   "credito": "Imagem: Game Flow",
+   "pagina": "https://game-flow.fr/produit/mon-puzzle-aventure-dragon/",
+   "imagem": "https://game-flow.fr/wp-content/uploads/2026/10/Photo-detailCarte-MPZDragon.webp",
+   "baixada_em": "2026-11-10",
+   "aprovada": true,
+   "pessoas": true,
+   "fora": true
+  },
+  {
+   "arquivo": "fotos/jogabilidade-1.webp",
+   "tipo": "jogabilidade",
+   "largura": 1200,
+   "altura": 1600,
+   "editora": "Game Flow",
+   "credito": "Imagem: Game Flow · foto de Mon Puzzle Aventure: Phobos, da mesma linha",
+   "pagina": "https://game-flow.fr/produit/mon-puzzle-aventure-phobos/",
+   "imagem": "https://game-flow.fr/wp-content/uploads/2026/10/Photo-detailBoite-MPZOcre-2.webp",
+   "baixada_em": "2026-11-10",
+   "aprovada": true,
+   "principal": true
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 1200,
+   "altura": 1600,
+   "editora": "Game Flow",
+   "credito": "Imagem: Game Flow",
+   "pagina": "https://game-flow.fr/produit/mon-puzzle-aventure-dragon/",
+   "imagem": "https://game-flow.fr/wp-content/uploads/2026/10/Photo-Boite-MPZDragon.webp",
+   "baixada_em": "2026-11-10",
+   "aprovada": true,
+   "texto": true,
+   "fora": true
+  }
+ ]
+}

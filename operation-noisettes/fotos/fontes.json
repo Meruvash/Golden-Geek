@@ -1,0 +1,41 @@
+{
+ "slug": "operation-noisettes",
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 1482,
+   "altura": 1600,
+   "editora": "Auzou",
+   "credito": "Imagem: Auzou",
+   "pagina": "https://www.auzou.fr/9791039546744-grand-jeu-operation-noisettes/",
+   "imagem": "https://img.auzou.fr/img/ARGOS/9791039546744.jpg?t=1794309721",
+   "baixada_em": "2026-11-10",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/mesa-1.webp",
+   "tipo": "mesa",
+   "largura": 1600,
+   "altura": 1186,
+   "editora": "Auzou",
+   "credito": "Imagem: Auzou",
+   "pagina": "https://www.auzou.fr/9791039546744-grand-jeu-operation-noisettes/",
+   "imagem": "https://img.auzou.fr/img/ARGOS/9791039546744_1.jpg",
+   "baixada_em": "2026-11-10",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 1600,
+   "altura": 1067,
+   "editora": "Auzou",
+   "credito": "Imagem: Auzou",
+   "pagina": "https://www.auzou.fr/9791039546744-grand-jeu-operation-noisettes/",
+   "imagem": "https://img.auzou.fr/img/ARGOS/9791039546744_2.jpg",
+   "baixada_em": "2026-11-10",
+   "aprovada": true
+  }
+ ]
+}

@@ -408,6 +408,11 @@
    "jogo": "Isle of Skye",
    "url": "https://eliteboardgamers.com.br/isle-of-skye/",
    "data": "2026-11-10"
+  },
+  {
+   "jogo": "Mon Puzzle Aventure",
+   "url": "https://eliteboardgamers.com.br/mon-puzzle-aventure/",
+   "data": "2026-11-10"
   }
  ],
  "jogos": [
@@ -3817,10 +3822,14 @@
      "fonte": "https://fr.wikipedia.org/wiki/As_d%27Or"
     }
    ],
-   "status": "na_fila",
+   "status": "sem_fotos",
    "premios_distintos": 1,
    "prioridade": 109,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "fotos": {
+    "verificado_em": "2026-11-10",
+    "obs": "Auzou (auzou.fr: só fotos de catálogo em fundo branco); nenhuma edição licenciada fora da França encontrada; As d'Or/Palais des Festivals sem fotos do jogo"
+   }
   },
   {
    "jogo": "Star Wars: The Battle of Hoth",
@@ -3972,10 +3981,14 @@
      "fonte": "https://en.wikipedia.org/wiki/Spiel_des_Jahres"
     }
    ],
-   "status": "na_fila",
+   "status": "sem_fotos",
    "premios_distintos": 1,
    "prioridade": 113,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "fotos": {
+    "verificado_em": "2026-11-10",
+    "obs": "Happy Baobab (happybaobab.com, edição coreana: só foto de estúdio); Game Factory (gamefactory-games.com, edição alemã: renders em fundo branco); Spiel des Jahres (só caixa e logo); pedido de kit: lukas.thiel@carletto.de (Game Factory)"
+   }
   },
   {
    "jogo": "Mon puzzle aventure",
@@ -3995,7 +4008,8 @@
    "status": "na_fila",
    "premios_distintos": 1,
    "prioridade": 114,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "slug": "mon-puzzle-aventure"
   },
   {
    "jogo": "The Fellowship of the Ring: Trick-Taking Game",
