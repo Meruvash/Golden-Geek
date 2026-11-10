@@ -40,7 +40,7 @@ Analisadas no Virlo em 09/11/2026 (perfil + últimos Reels).
 ## 2. Fluxo obrigatório
 
 1. **Fonte**: os fatos vêm da resenha, do tutorial ou da notícia publicada no site. Nada fora disso.
-2. **Roteiro + voz**: roteiro na fórmula da seção 3; narração gerada e conferida por transcrição (seção 8). A voz define a linha do tempo.
+2. **Roteiro + voz**: roteiro na fórmula da seção 3 e no guia `video/ROTEIRO_REFERENCIAS.md`, **mostrado ao editor e aprovado ANTES de gerar qualquer voz** (pedido do editor, 10/11/2026); depois, narração gerada e conferida por transcrição (seção 8). A voz define a linha do tempo.
 3. **Quadros de estilo**: 3 imagens estáticas (gancho, cena do meio, cartela final) aprovadas antes de animar. Mudança depois disso custa caro.
 4. **Animação**: só com os componentes da seção 7.
 5. **Checagem**: o checklist da seção 9 inteiro. Um item crítico reprovado = não publica.
