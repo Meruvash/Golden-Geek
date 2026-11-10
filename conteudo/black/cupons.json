@@ -9,7 +9,7 @@
     "texto": "Desconto de 10% em suas compras com o cupom Americanas 10% OFF em produtos Americanas VÁLIDO EM MÓVEIS, SOFÁS, CAMAS E COLCHÕES SELECIONADOS. SEM VALOR MÍNIMO DE COMPRA. SUJEITO À DISPONIBILIDADE",
     "validade": "2026-12-31T20:59:59-0300",
     "valor": "10% OFF",
-    "visto": "2026-11-10T07:23-03:00"
+    "visto": "2026-11-10T09:50-03:00"
    }
   },
   "loja": "Americanas"
@@ -49,7 +49,7 @@
     "texto": "Cupom Casas Bahia oferece 10% de desconto em todo o site 10% OFF em produtos Casas Bahia CUPOM SEM RESTRIÇÕES, COMPRE E RETIRE EM ATÉ DUAS HORAS!",
     "validade": "2026-12-31T20:59:59-0300",
     "valor": "10% OFF",
-    "visto": "2026-11-10T07:23-03:00"
+    "visto": "2026-11-10T09:50-03:00"
    }
   },
   "loja": "Casas Bahia"
@@ -174,16 +174,7 @@
   "loja": "Borba Games"
  },
  "www.borderjogos.com.br": {
-  "cupons": {
-   "PRIMEIRACOMPRA": {
-    "codigo": "PRIMEIRACOMPRA",
-    "pagina": "https://www.borderjogos.com.br/promocoes",
-    "primeira_vez": "2026-11-03T12:00-03:00",
-    "texto": ".com Rastrear pedido Rastrear PARCELE SUAS COMPRAS - em até 3X sem juros Ganhe Desconto - cupom: PRIMEIRACOMPRA FRETE GRÁTIS MG - compras acima de R$400,00 PARCELE SUAS COMPRAS - em até 3X sem juros Ga",
-    "valor": "R$400,00",
-    "visto": "2026-11-08T20:33-03:00"
-   }
-  },
+  "cupons": {},
   "lido": "2026-11-08T20:33-03:00",
   "loja": "Border Jogos"
  },
@@ -342,16 +333,7 @@
   "loja": "Place Games"
  },
  "www.playeasy.com.br": {
-  "cupons": {
-   "PLAYSITE5OFF": {
-    "codigo": "PLAYSITE5OFF",
-    "pagina": "https://www.playeasy.com.br/",
-    "primeira_vez": "2026-11-03T12:00-03:00",
-    "texto": "rtas! Ver todos os produtos Aproveite um Desconto Especial! Na sua primeira compra, use o cupom PLAYSITE5OFF e ganhe 5% OFF! PLAYSITE5OFF Copiar Copiado! Parcelamento Em até 12x sem juros Envios Fre",
-    "valor": "5%",
-    "visto": "2026-11-08T20:33-03:00"
-   }
-  },
+  "cupons": {},
   "lido": "2026-11-08T20:33-03:00",
   "loja": "PlayEasy"
  },
