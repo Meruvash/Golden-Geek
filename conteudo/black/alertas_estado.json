@@ -238,12 +238,12 @@
   "bazaars-of-ubar",
   "black-stories-junior-orange-stories",
   "black-stories-junior-spooky-stories",
+  "black-stories-sf",
   "buckaroo",
   "caes-pop",
   "cai-nao-cai",
   "campos-de-arroz",
   "candy-land",
-  "catan",
   "caveiras-de-sedlec",
   "chaves-confusoes-na-vila",
   "citadels",
@@ -327,6 +327,7 @@
   "star-wars-super-teams",
   "steve-jacksons-munchkin-presents-batman",
   "super-banco-imobiliario-estrela-safra-pay",
+  "superstore-3000",
   "suspeicao",
   "ta-na-mesa",
   "tacta",
@@ -337,6 +338,7 @@
   "the-game",
   "the-number",
   "the-pillars-of-the-earth",
+  "time-stories-revolution-a-midsummer-night",
   "trava-letras",
   "trolls-princesas",
   "twister-junior",
@@ -348,8 +350,10 @@
   "zenkai-adventure"
  ],
  "pendentes": {
-  "barrage": "2026-11-10T06:28+00:00",
-  "munchkin": "2026-11-10T06:07+00:00",
-  "space-base": "2026-11-10T05:39+00:00"
+  "black-stories-sf": "2026-11-10T08:05+00:00",
+  "munchkin": "2026-11-10T08:05+00:00",
+  "space-base": "2026-11-10T05:39+00:00",
+  "superstore-3000": "2026-11-10T08:05+00:00",
+  "time-stories-revolution-a-midsummer-night": "2026-11-10T08:05+00:00"
  }
 }

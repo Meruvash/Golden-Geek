@@ -10,7 +10,7 @@
   },
   "bravojogos.com.br": {
    "dia": "2026-11-10",
-   "paginas": 7
+   "paginas": 10
   },
   "brecholudico.com.br": {
    "dia": "2026-11-10",
@@ -24,7 +24,7 @@
   },
   "interludi.com.br": {
    "dia": "2026-11-10",
-   "paginas": 4
+   "paginas": 5
   },
   "itabuleiros.lojaintegrada.com.br": {
    "dia": "2026-11-10",
@@ -116,7 +116,7 @@
   },
   "www.boardgameplaystore.com.br": {
    "dia": "2026-11-10",
-   "paginas": 5
+   "paginas": 7
   },
   "www.boargames.com.br": {
    "descanso_ate": "2026-11-11T09:44+00:00",
@@ -294,7 +294,7 @@
   },
   "www.promobit.com.br": {
    "dia": "2026-11-10",
-   "paginas": 30
+   "paginas": 40
   },
   "www.reunionjogos.com.br": {
    "dia": "2026-11-10",
@@ -451,7 +451,7 @@
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-fibonachos-p": {
    "cj": 27.81,
    "estoque": true,
-   "hora": "2026-11-09T10:29+00:00",
+   "hora": "2026-11-10T08:04+00:00",
    "preco": 29.9
   },
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-galaxy-trucker-segunda-edicao-p": {
@@ -529,13 +529,13 @@
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-stupor-mundi-count-editon-p": {
    "cj": 232.41,
    "estoque": true,
-   "hora": "2026-11-10T07:54+00:00",
+   "hora": "2026-11-10T08:04+00:00",
    "preco": 249.9
   },
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-superstore-3000-p": {
    "cj": 92.91,
    "estoque": true,
-   "hora": "2026-11-08T23:33+00:00",
+   "hora": "2026-11-10T08:04+00:00",
    "preco": 99.9
   },
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-ta-na-mesa-p": {
@@ -1559,10 +1559,10 @@
    "preco": 50.5
   },
   "https://www.mecadosjogos.com.br/balconia-p857": {
-   "cj": 99.45,
-   "estoque": true,
-   "hora": "2026-11-10T07:51+00:00",
-   "preco": 110.5
+   "cj": 101.07,
+   "estoque": false,
+   "hora": "2026-11-09T05:27+00:00",
+   "preco": 112.3
   },
   "https://www.mecadosjogos.com.br/deep-sea-adventure-boost-p1148": {
    "cj": 75.95,
@@ -2224,12 +2224,6 @@
    "hora": "2026-11-10T07:52+00:00",
    "preco": 89.0
   },
-  "https://www.tabuloja.com/jogos-de-tabuleiro/drag-slay": {
-   "cj": 82.4,
-   "estoque": true,
-   "hora": "2026-11-08T07:57+00:00",
-   "preco": 91.56
-  },
   "https://www.tabuloja.com/jogos-de-tabuleiro/expansoes/forest-shuffle-exploracao": {
    "cj": 58.5,
    "estoque": true,
@@ -2308,12 +2302,6 @@
    "hora": "2026-11-10T02:39+00:00",
    "preco": 129.0
   },
-  "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/doppelganger-tricks": {
-   "cj": 74.84,
-   "estoque": true,
-   "hora": "2026-11-08T07:57+00:00",
-   "preco": 83.16
-  },
   "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/dropolter": {
    "cj": 99.9,
    "estoque": true,
@@ -2368,12 +2356,6 @@
    "hora": "2026-11-10T07:53+00:00",
    "preco": 119.9
   },
-  "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/la-la-la-sertanejo": {
-   "cj": 18.83,
-   "estoque": true,
-   "hora": "2026-11-08T07:58+00:00",
-   "preco": 20.92
-  },
   "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/let-s-go-pro-japao": {
    "cj": 260.1,
    "estoque": true,
@@ -2391,12 +2373,6 @@
    "estoque": true,
    "hora": "2026-11-10T07:53+00:00",
    "preco": 79.0
-  },
-  "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/luz": {
-   "cj": 97.52,
-   "estoque": true,
-   "hora": "2026-11-08T07:58+00:00",
-   "preco": 108.36
   },
   "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/medium": {
    "cj": 134.1,
@@ -2416,12 +2392,6 @@
    "hora": "2026-11-10T07:53+00:00",
    "preco": 59.0
   },
-  "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/nhac": {
-   "cj": 49.07,
-   "estoque": true,
-   "hora": "2026-11-08T07:58+00:00",
-   "preco": 54.52
-  },
   "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/night-parade-of-a-hundred-yokai-cursed-throne-expansion": {
    "cj": 62.91,
    "estoque": true,
@@ -2434,23 +2404,11 @@
    "hora": "2026-11-10T07:53+00:00",
    "preco": 269.0
   },
-  "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/o-rei-das-sombras": {
-   "cj": 22.61,
-   "estoque": true,
-   "hora": "2026-11-08T07:58+00:00",
-   "preco": 25.12
-  },
   "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/oak": {
    "cj": 89.1,
    "estoque": true,
    "hora": "2026-11-10T07:53+00:00",
    "preco": 99.0
-  },
-  "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/oikos-stick": {
-   "cj": 26.39,
-   "estoque": true,
-   "hora": "2026-11-08T07:58+00:00",
-   "preco": 29.32
   },
   "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/onboard-cinema-amp-tv": {
    "cj": 35.1,
@@ -2475,12 +2433,6 @@
    "estoque": true,
    "hora": "2026-11-10T07:54+00:00",
    "preco": 89.0
-  },
-  "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/pitagoras": {
-   "cj": 60.41,
-   "estoque": true,
-   "hora": "2026-11-08T07:59+00:00",
-   "preco": 67.12
   },
   "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/quack-quack-patota-corrupta": {
    "cj": 62.1,
@@ -2524,12 +2476,6 @@
    "hora": "2026-11-10T07:51+00:00",
    "preco": 219.0
   },
-  "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/thing-in-ring": {
-   "cj": 120.2,
-   "estoque": true,
-   "hora": "2026-11-08T07:59+00:00",
-   "preco": 133.56
-  },
   "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/trolls-e-princesas": {
    "cj": 224.1,
    "estoque": true,
@@ -2542,29 +2488,11 @@
    "hora": "2026-11-10T07:55+00:00",
    "preco": 144.0
   },
-  "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/trunfos-amp-tesouros": {
-   "cj": 74.84,
-   "estoque": true,
-   "hora": "2026-11-08T07:59+00:00",
-   "preco": 83.16
-  },
   "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/twilight-struggle": {
    "cj": 269.1,
    "estoque": true,
    "hora": "2026-11-10T07:55+00:00",
    "preco": 299.0
-  },
-  "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/virus": {
-   "cj": 49.07,
-   "estoque": true,
-   "hora": "2026-11-08T08:00+00:00",
-   "preco": 54.52
-  },
-  "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/wizard": {
-   "cj": 75.53,
-   "estoque": true,
-   "hora": "2026-11-08T08:00+00:00",
-   "preco": 83.92
   },
   "https://www.tavernareal.com/tabuleiro/anachrony-edicao-essencial": {
    "cj": 237.59,
