@@ -10,7 +10,7 @@
   },
   "bravojogos.com.br": {
    "dia": "2026-11-10",
-   "paginas": 19
+   "paginas": 21
   },
   "brecholudico.com.br": {
    "dia": "2026-11-10",
@@ -24,7 +24,7 @@
   },
   "interludi.com.br": {
    "dia": "2026-11-10",
-   "paginas": 8
+   "paginas": 9
   },
   "itabuleiros.lojaintegrada.com.br": {
    "dia": "2026-11-10",
@@ -116,7 +116,7 @@
   },
   "www.boardgameplaystore.com.br": {
    "dia": "2026-11-10",
-   "paginas": 10
+   "paginas": 12
   },
   "www.boargames.com.br": {
    "descanso_ate": "2026-11-11T09:44+00:00",
@@ -294,7 +294,7 @@
   },
   "www.promobit.com.br": {
    "dia": "2026-11-10",
-   "paginas": 80
+   "paginas": 90
   },
   "www.reunionjogos.com.br": {
    "dia": "2026-11-10",
@@ -391,8 +391,14 @@
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/exploding-kittens-bem-vs-mal-p": {
    "cj": 46.49,
    "estoque": true,
-   "hora": "2026-11-10T07:22+00:00",
+   "hora": "2026-11-10T20:17+00:00",
    "preco": 49.99
+  },
+  "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/fabulinhas-p": {
+   "cj": 65.01,
+   "estoque": true,
+   "hora": "2026-11-10T20:18+00:00",
+   "preco": 69.9
   },
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/imperium-classics-p": {
    "cj": 147.87,
