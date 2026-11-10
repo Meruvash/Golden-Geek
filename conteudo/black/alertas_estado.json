@@ -231,6 +231,7 @@
   "anachrony-edicao-essencial",
   "antiques",
   "arkham-horror-card-game-a-cidade-submersa-expansao-de-investigador",
+  "arkham-horror-the-card-game-tommy-muldoon-investigator-deck",
   "azul-pavilhao-de-verao-mini",
   "barrage",
   "batman-gotham-city-sem-lei",
@@ -243,6 +244,7 @@
   "cai-nao-cai",
   "campos-de-arroz",
   "candy-land",
+  "catan",
   "caveiras-de-sedlec",
   "chaves-confusoes-na-vila",
   "citadels",
@@ -333,6 +335,7 @@
   "tapalavras",
   "teotihuacan-shadow-of-xitle",
   "the-game",
+  "the-goonies-never-say-die",
   "the-number",
   "the-pillars-of-the-earth",
   "trava-letras",
@@ -345,5 +348,9 @@
   "war-game-of-thrones",
   "zenkai-adventure"
  ],
- "pendentes": {}
+ "pendentes": {
+  "arkham-horror-the-card-game-tommy-muldoon-investigator-deck": "2026-11-10T12:39+00:00",
+  "catan": "2026-11-10T12:39+00:00",
+  "the-goonies-never-say-die": "2026-11-10T12:39+00:00"
+ }
 }
