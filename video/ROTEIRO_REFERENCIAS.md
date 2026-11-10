@@ -62,6 +62,24 @@ Nossa série "E se você acordasse dentro de…" é `man_in_hole` com miolo `how
 10. **O primeiro evento é visual**, não um título. Texto na tela tem no máximo 14 caracteres por bloco; a fala inteira vai na legenda. Menos da metade dos eventos é texto.
 11. **Revisar a lógica e os números**, não só se está bonito ("subiu 8,7 vezes" ≠ "subiu para 8,7 vezes").
 
-## 5. Diferença deliberada em relação às referências
+## 5. Desenho (Claude Drawing)
+
+Fonte: github.com/cloveric/claude-drawing-skill (MIT), `docs/PRINCIPLES.md`. A skill pinta com código (Python + Pillow, sem modelo de imagem), em 83 estilos.
+
+**Vetor chapado (o estilo da série):**
+- Ganha com poucas formas grandes e espaço vazio, não com detalhe: 3–4 camadas de chão, um astro, céu generoso e **uma pequena história contada com um ou dois acentos quentes**.
+- **Sete cores**; todo outro tom é variação de uma delas.
+- **Uma luz só** para a cena inteira, com o lado sombreado sempre do lado oposto.
+- Sem contorno: escolha a cor de cada objeto **contra o que está atrás dele** (barraca laranja na areia, não na frente do morro laranja).
+- Descole as camadas alguns pixels, com uma sombra suave; textura em torno de 1%, para o chapado continuar chapado.
+
+**Quadro-negro (cenário do Lukita):**
+- Mesmo o giz com força total deixa ~15% de falhas e bordas quebradas; senão parece linha vetorial.
+- Símbolos de física feitos à mão (o ∝ de fonte grossa vira ∞).
+- Áreas grandes sombreadas de leve, com gradiente de pressão.
+- **Fantasmas da aula anterior** ficam bem apagados, nos espaços vazios.
+- O apagador tira o giz de verdade, arrasta uma mancha e deixa o fantasma.
+
+## 6. Diferença deliberada em relação às referências
 
 As referências recomendam vídeo sem legenda. Nós **mantemos a legenda palavra por palavra**, porque no Reels muita gente assiste sem som.
