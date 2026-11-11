@@ -428,6 +428,11 @@
    "jogo": "Tapestry",
    "url": "https://eliteboardgamers.com.br/tapestry/",
    "data": "2026-11-11"
+  },
+  {
+   "jogo": "Dragon's Breath",
+   "url": "https://eliteboardgamers.com.br/dragon-s-breath/",
+   "data": "2026-11-11"
   }
  ],
  "jogos": [
@@ -4356,10 +4361,14 @@
      "fonte": "https://fr.wikipedia.org/wiki/As_d%27Or"
     }
    ],
-   "status": "na_fila",
+   "status": "sem_fotos",
    "premios_distintos": 1,
    "prioridade": 121,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "fotos": {
+    "verificado_em": "2026-11-11",
+    "obs": "Space Cowboys/Space Cow (spacecowboys-games.com: jogo fora do catálogo do site), Asmodee UK (sem página do jogo), sem edição licenciada com site oficial encontrada; 11/11/2026"
+   }
   },
   {
    "jogo": "Hedgehog Roll",
@@ -4400,10 +4409,14 @@
      "fonte": "https://fr.wikipedia.org/wiki/As_d%27Or"
     }
    ],
-   "status": "na_fila",
+   "status": "sem_fotos",
    "premios_distintos": 1,
    "prioridade": 123,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "fotos": {
+    "verificado_em": "2026-11-11",
+    "obs": "Studio H/Hachette Boardgames (hachetteboardgames.com: sem página do jogo), Gigamic (só caixa e componentes em fundo branco de catálogo), Asmodee UK (página removida, 404), Tlama Games (edição em inglês: só a caixa), Pegasus Spiele (sem página); 11/11/2026"
+   }
   },
   {
    "jogo": "Pictures",
@@ -4420,10 +4433,14 @@
      "fonte": "https://en.wikipedia.org/wiki/Spiel_des_Jahres"
     }
    ],
-   "status": "na_fila",
+   "status": "sem_fotos",
    "premios_distintos": 1,
    "prioridade": 124,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "fotos": {
+    "verificado_em": "2026-11-11",
+    "obs": "PD-Verlag (www.pd-verlag.de: só caixa, regra e logo do prêmio), Spiel des Jahres (só caixa e fotos da cerimônia com rostos), Asmodee Canada/Rio Grande Games (edição em inglês: só caixa), Pegasus Spiele (sem página do jogo base); 11/11/2026"
+   }
   },
   {
    "jogo": "Res Arcana",
@@ -4440,10 +4457,14 @@
      "fonte": "https://fr.wikipedia.org/wiki/As_d%27Or"
     }
    ],
-   "status": "na_fila",
+   "status": "sem_fotos",
    "premios_distintos": 1,
    "prioridade": 125,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "fotos": {
+    "verificado_em": "2026-11-11",
+    "obs": "Sand Castle Games (sandcastlegames.com fora do ar: DNS não resolve), Asmodee UK (só caixa, cartas em fundo branco e banners com texto), Asmodee Deutschland e Asmodee Canada (sem página), Spiel des Jahres (só caixa); edição nacional não encontrada; 11/11/2026"
+   }
   },
   {
    "jogo": "Under Falling Skies",
@@ -4526,10 +4547,14 @@
      "fonte": "https://en.wikipedia.org/wiki/Spiel_des_Jahres"
     }
    ],
-   "status": "na_fila",
+   "status": "sem_fotos",
    "premios_distintos": 1,
    "prioridade": 127,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "fotos": {
+    "verificado_em": "2026-11-11",
+    "obs": "HABA (haba-play.com: só a versão mini; habausa.com: sem página), Spiel des Jahres (só caixa e fotos da cerimônia; a foto de partida tem 4 rostos de crianças de frente); 11/11/2026"
+   }
   },
   {
    "jogo": "Watergate",
@@ -4567,10 +4592,11 @@
      "fonte": "https://en.wikipedia.org/wiki/Spiel_des_Jahres"
     }
    ],
-   "status": "na_fila",
+   "status": "publicado",
    "premios_distintos": 1,
    "prioridade": 128,
-   "carro_chefe": false
+   "carro_chefe": false,
+   "slug": "dragon-s-breath"
   },
   {
    "jogo": "Hannibal & Hamilcar",

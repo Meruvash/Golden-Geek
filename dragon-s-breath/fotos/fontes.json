@@ -1,0 +1,57 @@
+{
+ "slug": "dragon-s-breath",
+ "usar_na_pagina": true,
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 1600,
+   "altura": 1600,
+   "editora": "HABA USA",
+   "credito": "Imagem: HABA USA · edição dos EUA",
+   "pagina": "https://www.habausa.com/products/dragons-breath-game",
+   "imagem": "https://cdn.shopify.com/s/files/1/0559/3445/1810/files/games-dragons-breath-303586-1.jpg",
+   "baixada_em": "2026-11-11",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/mesa-1.webp",
+   "tipo": "mesa",
+   "largura": 1280,
+   "altura": 717,
+   "editora": "HABA USA",
+   "credito": "Imagem: HABA USA · edição dos EUA",
+   "pagina": "https://www.habausa.com/products/dragons-breath-game",
+   "imagem": "https://cdn.shopify.com/s/files/1/0559/3445/1810/products/haba-bring-along-games-medium-dragon-s-breath-game-28744774975586.jpg",
+   "baixada_em": "2026-11-11",
+   "aprovada": true,
+   "fora": true
+  },
+  {
+   "arquivo": "fotos/jogabilidade-1.webp",
+   "tipo": "jogabilidade",
+   "largura": 1280,
+   "altura": 775,
+   "editora": "HABA USA",
+   "credito": "Imagem: HABA USA · edição dos EUA",
+   "pagina": "https://www.habausa.com/products/dragons-breath-game",
+   "imagem": "https://cdn.shopify.com/s/files/1/0559/3445/1810/products/haba-bring-along-games-medium-dragon-s-breath-game-28744774811746.jpg",
+   "baixada_em": "2026-11-11",
+   "aprovada": true,
+   "jogar": true
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 1280,
+   "altura": 1063,
+   "editora": "HABA USA",
+   "credito": "Imagem: HABA USA · edição dos EUA",
+   "pagina": "https://www.habausa.com/products/dragons-breath-game",
+   "imagem": "https://cdn.shopify.com/s/files/1/0559/3445/1810/products/haba-bring-along-games-medium-dragon-s-breath-game-28744775204962.jpg",
+   "baixada_em": "2026-11-11",
+   "aprovada": true,
+   "principal": true
+  }
+ ]
+}

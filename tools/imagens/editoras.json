@@ -2481,7 +2481,7 @@
    "sitemaps": [
     "https://www.gigamic.com/2_index_sitemap.xml"
    ],
-   "verificado_em": "2026-11-08"
+   "verificado_em": "2026-11-11"
   }
  },
  "pd-verlag.de": {
@@ -2489,13 +2489,19 @@
   "apelidos": [
    "PD-Verlag"
   ],
-  "site": "https://pd-verlag.de",
+  "site": "https://www.pd-verlag.de",
   "plataforma": "html",
   "estrategia": "sitemap+html",
   "press_kit": null,
   "paginas": {},
-  "status": "erro",
-  "obs": "robots.txt de https://pd-verlag.de inacessível (erro de rede); tente mais tarde"
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [],
+   "verificado_em": "2026-11-11"
+  }
  },
  "helvetiq.com": {
   "nome": "Helvetiq",
@@ -2738,5 +2744,81 @@
   "paginas": {},
   "status": "erro",
   "obs": "robots.txt de https://gamesup-games.com inacessível (erro de rede); tente mais tarde"
+ },
+ "hachetteboardgames.com": {
+  "nome": "Studio H",
+  "apelidos": [
+   "Studio H"
+  ],
+  "site": "https://www.hachetteboardgames.com",
+  "plataforma": "shopify",
+  "estrategia": "sitemap+shopify_json",
+  "press_kit": "https://www.hachetteboardgames.com/pages/press",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.hachetteboardgames.com/sitemap.xml"
+   ],
+   "verificado_em": "2026-11-11"
+  }
+ },
+ "sandcastlegames.com": {
+  "nome": "Sand Castle Games",
+  "apelidos": [
+   "Sand Castle Games"
+  ],
+  "site": "https://sandcastlegames.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "erro",
+  "obs": "robots.txt de https://sandcastlegames.com inacessível (erro de rede); tente mais tarde"
+ },
+ "haba-play.com": {
+  "nome": "Haba",
+  "apelidos": [
+   "Haba"
+  ],
+  "site": "https://www.haba-play.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://www.haba-play.com/de-de/magazin/kindererziehung-psychologie/kinder-und-digitale-medien",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.haba-play.com/sitemap.xml"
+   ],
+   "verificado_em": "2026-11-11"
+  }
+ },
+ "habausa.com": {
+  "nome": "HABA USA",
+  "apelidos": [
+   "HABA USA"
+  ],
+  "site": "https://www.habausa.com",
+  "plataforma": "shopify",
+  "estrategia": "sitemap+shopify_json",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.habausa.com/sitemap.xml"
+   ],
+   "verificado_em": "2026-11-11"
+  }
  }
 }
