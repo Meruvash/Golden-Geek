@@ -1,0 +1,362 @@
+{
+ "slug": "maracaibo",
+ "jogo": "Maracaibo",
+ "cor": "#1d5f7a",
+ "kicker": "Resenha · Corrida econômica pelo Caribe",
+ "og_titulo": "Maracaibo vale a pena? Resenha Elite Boardgamers",
+ "titulo_busca": "Maracaibo: resenha do Pfister que virou corrida no Caribe",
+ "descricao": "Resenha de Maracaibo, 3º lugar no Deutscher Spiele Preis 2020: como funciona a viagem pelo Caribe, a campanha e para quem é o jogo de Pfister.",
+ "titulo_html": "Em <span>Maracaibo</span>, quem decide quando a sua década acaba é o vizinho com pressa",
+ "lede": "Maracaibo é o jogo econômico de Alexander Pfister em que de 1 a 4 navegadores dão quatro voltas pelo Caribe do século 17, vendendo mercadorias, lutando por nações e cumprindo missões. Ficou em 3º no Deutscher Spiele Preis 2020 e em 2º na categoria Estratégia do Golden Geek. A caixa vende aventura pirata com campanha. A gente jogou e achou outra coisa: uma corrida de contabilidade em que o navio mais rápido encerra a rodada de todo mundo.",
+ "tags": [
+  "1–4 jogadores",
+  "30–120 min",
+  "12+",
+  "Cartas multiuso",
+  "Campanha opcional"
+ ],
+ "alt": "Mesa de jogo de piratas com colunas de cartas de ilhas do Caribe, dois tabuleiros de navio, moedas, dados e cubos de madeira coloridos",
+ "premiacoes": [
+  {
+   "premio": "Deutscher Spiele Preis",
+   "ano": 2020,
+   "categoria": "Deutscher Spiele Preis",
+   "colocacao": 3,
+   "resultado": "top 3",
+   "fonte": "https://de.wikipedia.org/wiki/Deutscher_Spiele_Preis",
+   "rotulo": "3º lugar"
+  },
+  {
+   "premio": "Golden Geek",
+   "ano": 2019,
+   "categoria": "Estratégia",
+   "colocacao": 2,
+   "resultado": "top 3",
+   "fonte": "https://gametyrant.com/news/winners-announced-for-14th-annual-golden-geek-awards",
+   "rotulo": "2º lugar"
+  }
+ ],
+ "ficha": [
+  [
+   "Ano",
+   "2019 (Game's Up e dlp games); edição brasileira da MeepleBR anunciada para o primeiro semestre de 2020"
+  ],
+  [
+   "Designer",
+   "Alexander Pfister"
+  ],
+  [
+   "Arte",
+   "Aline Kirrmann e Fiore GmbH"
+  ],
+  [
+   "Editora original",
+   "Game's Up e dlp games; Capstone Games nos Estados Unidos"
+  ],
+  [
+   "Editora no Brasil",
+   "MeepleBR (manual em português com tradução de Romir G. E. Paulino)"
+  ],
+  [
+   "Jogadores",
+   "1 a 4"
+  ],
+  [
+   "Duração anunciada",
+   "30 a 120 minutos (ComparaJogos); 120 minutos (BoardGameMatcher)"
+  ],
+  [
+   "Idade",
+   "12+"
+  ],
+  [
+   "Nota BGG",
+   "4,0 de 5 (equivale a 8,0 de 10) em 19.050 avaliações, segundo site que replica o BGG"
+  ],
+  [
+   "Peso BGG",
+   "3,9 / 5"
+  ],
+  [
+   "Nota Ludopedia",
+   "média 8,5, perto da posição 134 do ranking (via busca)"
+  ],
+  [
+   "Nota ComparaJogos",
+   "8,0; complexidade 3,9 / 5"
+  ],
+  [
+   "Idioma",
+   "texto moderado, exige consulta (ComparaJogos)"
+  ],
+  [
+   "Componentes",
+   "1 tabuleiro, 4 tabuleiros de navio, 265 cartas, 32 trabalhadores, 98 discos de madeira, 58 dobrões, 39 marcadores de propriedade, 25 peças de combate, 24 peças de missão, 23 peças legacy, 13 peças de cidade e 4 exploradores, entre outros"
+  ],
+  [
+   "Modo solo oficial",
+   "Sim, contra o adversário automático Jean (Punchboard)"
+  ],
+  [
+   "Versão digital",
+   "Board Game Arena (desde 20/02/2024) e aplicativo da Spiralburst Studios para iOS e Android"
+  ],
+  [
+   "Prêmios",
+   "3º lugar no Deutscher Spiele Preis 2020; 2º lugar no Golden Geek 2019 de Estratégia"
+  ]
+ ],
+ "nota_ficha": "Nota e peso do BGG vêm do BoardGameMatcher, que replica o BoardGameGeek; nota da Ludopedia vem da busca na web, porque os dois sites bloqueiam acesso automatizado. ComparaJogos e loja da MeepleBR consultados em 11/11/2026.",
+ "como_funciona": [
+  "Cada jogador comanda um navio no Caribe do século 17 e quer terminar com mais pontos de vitória. A partida tem quatro rodadas, e cada uma representa uma década da carreira do navegador. Todos começam em Havana com dobrões (8 a 11, conforme a ordem), quatro cartas de projeto na mão e um tabuleiro de navio coberto de discos.",
+  "No turno, você navega de 1 a 7 locais para a frente numa rota de mão única, faz uma ação principal onde parou e completa a mão. Em cidade, você entrega uma mercadoria, descartando uma carta com o símbolo pedido, e depois faz a ação da cidade. Em vila, faz uma ação de vila, e quem gastou de 4 a 6 pontos de movimento faz duas; quem gastou os 7, três.",
+  "As cartas são multiuso: servem de mercadoria, de dinheiro ao serem descartadas e de melhoria quando compradas para o mostrador ao lado do navio. Cada entrega tira um disco do tabuleiro de navio, o que aumenta a renda, o limite de mão (de 4 para até 6) e libera ações novas.",
+  "Há três frentes paralelas. No combate, você ajuda uma nação, ganha influência e espalha marcadores de propriedade. Na trilha do explorador, avança um peão por uma expedição com recompensas, e o primeiro a chegar ao fim ganha 10 pontos. Nas missões, paga custos em locais marcados e ganha 3 pontos por missão.",
+  "A rodada acaba quando um navio chega ao último espaço do percurso, que ninguém pode pular. Depois das três primeiras rodadas há pontuação intermediária e todos voltam a Havana; depois da quarta, pontuação final por influência, títulos de nobreza, cartas e construções de prestígio. O modo campanha usa cartas de história que mudam o tabuleiro de uma partida para outra; sem ele, uma carta avulsa monta as missões."
+ ],
+ "passos": [
+  [
+   "NAVEGUE PELO CARIBE",
+   "Mova seu navio de 1 a 7 locais para a frente. Quem navega mais longe ganha mais ações de vila, mas encurta a rodada de todos."
+  ],
+  [
+   "FAÇA A AÇÃO DO LOCAL",
+   "Em cidade, entregue uma mercadoria e faça a ação da cidade. Em vila, compre uma carta ou ganhe dobrões. Missões também podem ser cumpridas."
+  ],
+  [
+   "ENTREGUE E DESTRAVE",
+   "Cada mercadoria entregue tira um disco do tabuleiro de navio. O espaço liberado aumenta a renda, a mão e as ações disponíveis."
+  ],
+  [
+   "LUTE E EXPLORE",
+   "Ajude uma nação em combate para ganhar influência e marcar território, ou avance o explorador na trilha atrás de recompensas e pontos."
+  ],
+  [
+   "VOLTE PARA HAVANA",
+   "Quando um navio chega ao fim do percurso, a rodada acaba. Após quatro rodadas, contam influência, títulos de nobreza, cartas e missões."
+  ]
+ ],
+ "como_resumo": "Navegue de 1 a 7 locais, faça a ação de onde parou e transforme cartas em pontos antes que alguém feche a rodada.",
+ "perfil": [
+  [
+   "Decisões por turno",
+   5
+  ],
+  [
+   "Variedade entre partidas",
+   5
+  ],
+  [
+   "Modo solo",
+   4
+  ],
+  [
+   "Interação entre jogadores",
+   3
+  ],
+  [
+   "Partida curta",
+   2
+  ],
+  [
+   "Facilidade de ensinar",
+   1
+  ]
+ ],
+ "experiencia": [
+  "A cena mais típica de Maracaibo é um cálculo de pedágio. Você tem na mão a mercadoria que uma cidade a seis locais de distância aceita; parar ali dá uma entrega, um disco a menos no navio e a ação daquela cidade. Se o sétimo local for uma vila, andar tudo rende três ações de vila e nenhuma entrega. Você escolhe a cidade, porque o disco destrava renda.",
+  "Aí o vizinho, que estava três espaços atrás, anda 7 de uma vez, para no espaço de volta para casa e avisa que a rodada vai acabar. Brandon Kempf, do Opinionated Gamers, reclama justamente disso: há quem acelere e deixe os outros com quatro ações antes de serem sugados para Havana. Patrick Brennan, no mesmo site, resume a regra: o primeiro a completar a volta decide quantas ações a rodada terá.",
+  "Steve Berger, do Board's Eye View, lembra que a espera é curta, porque dá para planejar enquanto os outros jogam. Planejar é o que sobra mesmo."
+ ],
+ "citacao": {
+  "texto": "Maracaibo é uma conquista e um dos melhores jogos novos lançados este ano.",
+  "fonte": "Steve Berger, Board's Eye View (tradução livre)"
+ },
+ "funciona": [
+  [
+   "Cartas que fazem tudo",
+   "Cada carta é mercadoria, dinheiro e melhoria ao mesmo tempo, e escolher qual papel ela cumpre é o coração de cada turno. Patrick Korner, do Opinionated Gamers, temia um jogo com coisas demais e conclui que Maracaibo faz isso bem. Louis Noble, da Zatu, diz que o jogo exige planejar a fundo para tirar o máximo do motor de cartas."
+  ],
+  [
+   "Distância como recurso",
+   "Andar pouco garante a cidade certa; andar muito dá até três ações de vila e aproxima o fim da rodada. A mesma decisão de movimento mexe no seu ganho e no relógio de todos. Patrick Brennan, do Opinionated Gamers, gosta de que ninguém é muito prejudicado pelas ações alheias, mas todos sentem o ritmo dos outros."
+  ],
+  [
+   "Campanha que não destrói a caixa",
+   "O modo história usa cartas que acrescentam missões, locais e regras de uma partida para outra, sem adesivos nem pacote de reposição, como nota Steve Berger, do Board's Eye View. Dá para recomeçar ou pular para um capítulo. Tery Noseworthy, do Opinionated Gamers, diz que a história deixa o jogo mais interessante sem ser essencial."
+  ],
+  [
+   "Solo de verdade",
+   "O modo solo coloca você contra Jean, um adversário automático com baralho ajustável à dificuldade. Para a Punchboard, é um desafio forte e uma ótima opção solo. Na versão para celular da Spiralburst, a Meeple Mountain chamou o solo de brilhante, talvez a melhor variante solo em aplicativo que o crítico tinha."
+  ],
+  [
+   "Três caminhos para pontuar",
+   "Combate e influência com as nações, a trilha do explorador e as missões competem pelas mesmas ações, e o jogo premia quem combina dois deles. Steve Berger diz que o jogo recompensa quem aproveita oportunidades e se ajusta no improviso, e o júri popular do Golden Geek pôs Maracaibo atrás só de Wingspan em Estratégia em 2019."
+  ],
+  [
+   "Pouca espera",
+   "Como o turno é navegar, agir e repor a mão, o próximo jogador começa enquanto você ainda arruma as cartas. Steve Berger, do Board's Eye View, diz que a espera individual é mínima, o que ajuda num jogo em que a partida com quatro já é longa."
+  ]
+ ],
+ "atencao": [
+  [
+   "Grave",
+   "Caribe sem estoque",
+   "Em 11/11/2026, a loja da MeepleBR mostrava Maracaibo como indisponível e o ComparaJogos não tinha nenhuma oferta nova ou usada. A edição nacional existe, tem manual em português e prêmio na estante. Só não tem caixa na prateleira. Quem quiser embarcar hoje depende de anúncio de usado ou do Board Game Arena."
+  ],
+  [
+   "Moderada",
+   "A rodada dos outros",
+   "Brandon Kempf, do Opinionated Gamers, diz que certos jogadores são irritantes de enfrentar porque correm para o fim e deixam os outros com quatro ações. Jonathan F., no mesmo site, nota que um motor lento pode ser afundado por quem acelera. A gente resume: você planeja uma década; o vizinho com pressa entrega uma semana."
+  ],
+  [
+   "Moderada",
+   "Manual com mapa do tesouro",
+   "Steve Berger, do Board's Eye View, avisa que Maracaibo não é fácil de aprender nem de ensinar e que algumas dúvidas exigem procurar bastante a resposta. Tery Noseworthy, do Opinionated Gamers, pede um índice. Num jogo sobre caça ao tesouro, faz sentido que a regra de combate também esteja enterrada."
+  ],
+  [
+   "Moderada",
+   "Variáveis demais",
+   "Louis Noble, da Zatu, diz que às vezes há variáveis demais para considerar, o que deixa o jogo um pouco bagunçado, e que acompanhar os bônus das cartas no fim da partida fica difícil. Peso 3,9 de 5 no BGG. Não é o Pfister para apresentar jogos econômicos a ninguém, como avisa a Punchboard."
+  ],
+  [
+   "Leve",
+   "Mesa de navio de cruzeiro",
+   "A Punchboard chama Maracaibo de devorador de mesa e diz para esperar aperto até numa mesa de quase um metro por um metro. Tabuleiro grande, quatro navios, mostrador de cartas ao lado de cada um e peças de missão espalhadas. O Caribe, aqui, ocupa mais ou menos o tamanho real."
+  ],
+  [
+   "Leve",
+   "Mastro decorativo",
+   "Quando você cumpre uma carta de história da campanha, o manual manda encaixá-la embaixo do tabuleiro para o mastro do navio crescer, e avisa que isso não tem nenhum efeito no jogo. A gente adorou a franqueza. É a recompensa mais honesta da caixa: não vale ponto e admite isso por escrito."
+  ]
+ ],
+ "jogadores": [
+  [
+   "Sozinho",
+   "Contra o adversário automático Jean, com dificuldade ajustável; a Punchboard e a Meeple Mountain, no aplicativo, elogiam o solo.",
+   3
+  ],
+  [
+   "2 a 3 jogadores",
+   "A regra é a mesma; com menos navios, menos gente corre para fechar a rodada antes de você. Não confirmamos contagem ideal nas críticas consultadas.",
+   2
+  ],
+  [
+   "4 jogadores",
+   "Steve Berger, do Board's Eye View, avisa que a partida com quatro é longa; o manual acrescenta missões extras nessa contagem.",
+   2
+  ]
+ ],
+ "primeira_partida": "Para a primeira vez, jogue sem campanha: o manual indica a carta de história 75 para montar as missões sem nada de legacy. Separe tempo para ler as regras antes, porque o Board's Eye View diz que a primeira partida é passada consultando o manual. O que mais confunde é o combate, que não é luta entre jogadores: Tery Noseworthy diz que ficou claro só na segunda rodada. Dica prática: entregue mercadorias cedo, porque cada disco removido aumenta a renda.",
+ "edicao_nacional": "A MeepleBR lançou Maracaibo em português, em parceria com a Game's Up, anunciado na Ludopedia para o primeiro semestre de 2020, com manual traduzido. Em 11/11/2026, a loja da editora marcava o jogo como indisponível, e o ComparaJogos não listava nenhuma oferta nova ou usada. Há texto moderado nas cartas, que exige consulta durante a partida, segundo o ComparaJogos.",
+ "preco_ref": {
+  "faixa": "sem oferta em lojas brasileiras",
+  "data": "11/11/2026",
+  "obs": "indisponível na loja da MeepleBR e sem ofertas novas ou usadas no ComparaJogos; preço não confirmado nas fontes consultadas"
+ },
+ "versoes": "A expansão The Uprising (2021) acrescenta revolta indígena com modos competitivo e cooperativo; não encontramos edição nacional até 11/11/2026. Há também Piratas de Maracaibo, jogo independente mais curto, por R$ 219,90 na loja da MeepleBR em 11/11/2026. No digital, Maracaibo está no Board Game Arena desde fevereiro de 2024, e a Spiralburst Studios fez um aplicativo para iOS e Android.",
+ "comparacoes": [
+  [
+   "Great Western Trail",
+   "great-western-trail",
+   "Também de Pfister e também de dar voltas num percurso, com gado em vez de navio. Steve Berger, do Board's Eye View, diz que gostar de Maracaibo depende de como você se sente sobre Great Western Trail."
+  ],
+  [
+   "Wingspan",
+   "wingspan",
+   "O jogo que venceu Maracaibo no Golden Geek 2019 de Estratégia. Bem mais leve, com motor de cartas de pássaros e quase nenhuma pressa: ninguém encerra a sua rodada antes da hora."
+  ],
+  [
+   "Isle of Skye",
+   "isle-of-skye",
+   "O Pfister de uma hora, com leilão de peças de paisagem e regras curtas. Para quem quer o autor sem as quatro voltas no Caribe nem o manual de consulta."
+  ]
+ ],
+ "para_quem": [
+  "Gosta de jogos econômicos pesados, de peso perto de 4",
+  "Curte decidir qual papel cada carta vai cumprir",
+  "Quer campanha sem rasgar carta nem colar adesivo",
+  "Joga sozinho e procura um adversário automático exigente",
+  "Já jogou Great Western Trail e quer outra volta"
+ ],
+ "nao_e_para": [
+  "Quer aventura pirata com briga entre navios",
+  "Tem um amigo que sempre anda o máximo para acabar logo",
+  "Precisa de manual com índice para jogar em paz",
+  "Quer comprar uma caixa nova esta semana no Brasil"
+ ],
+ "selo": "Recomendado com ressalva",
+ "ressalva": "sem estoque no Brasil",
+ "melhor_para": "estrategia",
+ "veredito": "A tese da gente: Maracaibo não é jogo de pirata, é corrida de contabilidade com vista para o mar. E é das boas. Cada carta faz três coisas, cada passo a mais rende ação e encurta a rodada, e a campanha muda o tabuleiro sem destruir a caixa. Ficou atrás só de Wingspan no Golden Geek de Estratégia e em 3º no Deutscher Spiele Preis 2020. Pesam o manual difícil de consultar, as variáveis demais que a Zatu aponta e o jogador apressado que encerra a década de todos. E pesa a prateleira: em 11/11/2026, não havia caixa à venda no Brasil. Se achar, compre. No Caribe de Pfister, o tesouro é o tempo, e quem manda nele é sempre o outro.",
+ "tagline": "Você planeja dez anos de carreira no Caribe. O vizinho chega a Havana na terça-feira e encerra a década.",
+ "consulta": "11/11/2026",
+ "fontes": [
+  [
+   "Manual de Maracaibo em português (MeepleBR)",
+   "https://www.comparajogos.com.br/f/uploads/short-url/avzR0VsTE7TjOOiGKnkY1U3GbbH.pdf",
+   "regras, preparação, rodadas, pontuação, campanha"
+  ],
+  [
+   "ComparaJogos – Maracaibo",
+   "https://www.comparajogos.com.br/item/maracaibo",
+   "ofertas no Brasil, nota, complexidade, idioma, componentes, expansões"
+  ],
+  [
+   "Loja MeepleBR – Maracaibo",
+   "https://www.lojameeplebrjogos.com.br/maracaibo",
+   "disponibilidade, preço de Piratas de Maracaibo"
+  ],
+  [
+   "Ludopedia – Maracaibo e Draftosaurus em 2020 pela Meeple BR",
+   "https://ludopedia.com.br/topico/35217/maracaibo-e-draftosaurus-em-2020-pela-meeple-br",
+   "anúncio da edição nacional (via busca)"
+  ],
+  [
+   "Board's Eye View – Maracaibo",
+   "https://www.boardseyeview.net/post/maracaibo",
+   "crítica, aprendizado, duração com quatro, campanha"
+  ],
+  [
+   "Opinionated Gamers – Maracaibo",
+   "https://opinionatedgamers.com/2019/12/19/maracaibo/",
+   "críticas de vários autores, ritmo, interação, combate"
+  ],
+  [
+   "Punchboard – Maracaibo",
+   "https://punchboard.co.uk/review-maracaibo/",
+   "crítica, solo, espaço na mesa, complexidade"
+  ],
+  [
+   "Zatu – Maracaibo Review",
+   "https://zatu.com/maracaibo-review/",
+   "crítica, variáveis, campanha"
+  ],
+  [
+   "Meeple Mountain – Maracaibo (digital)",
+   "https://www.meeplemountain.com/reviews/maracaibo-digital/",
+   "aplicativo, solo"
+  ],
+  [
+   "Board Game Arena – Maracaibo",
+   "https://en.boardgamearena.com/gamepanel?game=maracaibo",
+   "versão digital"
+  ],
+  [
+   "Game Tyrant – vencedores do 14º Golden Geek",
+   "https://gametyrant.com/news/winners-announced-for-14th-annual-golden-geek-awards",
+   "Golden Geek 2019 de Estratégia"
+  ],
+  [
+   "Wikipedia (alemão) – Deutscher Spiele Preis",
+   "https://de.wikipedia.org/wiki/Deutscher_Spiele_Preis",
+   "3º lugar em 2020"
+  ],
+  [
+   "BoardGameMatcher – Maracaibo",
+   "https://boardgamematcher.com/game/maracaibo",
+   "nota e peso do BGG replicados, idade"
+  ]
+ ],
+ "legenda": "Em Maracaibo, quem decide quando a sua década acaba é o vizinho com pressa. ⛵\n\nMaracaibo ficou em 3º no Deutscher Spiele Preis 2020 e em 2º no Golden Geek de Estratégia, atrás só de Wingspan.\nNavegue de 1 a 7 locais, transforme cada carta em mercadoria, dinheiro ou melhoria e corra antes que alguém feche a rodada.\nEdição da MeepleBR em português, mas em 11/11/2026 não havia caixa à venda no Brasil.\nVeredito: RECOMENDADO COM RESSALVA. Corrida de contabilidade com vista para o mar.\n\nNo Caribe, você anda 7 ou para na cidade certa? 👇\nResenha completa no link da bio.\n\n#Maracaibo #AlexanderPfister #JogosDeTabuleiro #BoardGames #MeepleBR #DeutscherSpielePreis #GoldenGeek #JogoDeEstrategia #EliteBoardgamers #Boardgamer"
+}

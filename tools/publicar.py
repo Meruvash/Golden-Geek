@@ -34,7 +34,8 @@ def main():
             if not (ROOT / c["slug"] / f).exists():
                 sys.exit(f"Falta {c['slug']}/{f}")
         for j in pauta["jogos"]:
-            if j["jogo"] == c["jogo"]:
+            # o nome na resenha pode ser mais curto que o da pauta ("Isle of Skye"); o slug resolve
+            if j["jogo"] == c["jogo"] or j.get("slug") == c["slug"]:
                 j["status"] = "publicado"
         if not any(p["jogo"] == c["jogo"] for p in pauta["publicadas"]):
             pauta["publicadas"].append({"jogo": c["jogo"], "url": f'{SITE}/{c["slug"]}/', "data": date.today().isoformat()})

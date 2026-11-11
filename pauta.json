@@ -4020,7 +4020,7 @@
      "fonte": "https://fr.wikipedia.org/wiki/As_d%27Or"
     }
    ],
-   "status": "na_fila",
+   "status": "publicado",
    "premios_distintos": 1,
    "prioridade": 114,
    "carro_chefe": false,
@@ -4801,7 +4801,7 @@
      "fonte": "https://en.wikipedia.org/wiki/Spiel_des_Jahres"
     }
    ],
-   "status": "na_fila",
+   "status": "publicado",
    "premios_distintos": 1,
    "prioridade": 134,
    "carro_chefe": false,
@@ -5643,11 +5643,15 @@
      "fonte": "https://eliteboardgamers.com.br/"
     }
    ],
-   "status": "na_fila",
+   "status": "sem_fotos",
    "prioridade": 155,
    "premios_distintos": 2,
    "carro_chefe": false,
-   "slug": "maracaibo"
+   "slug": "maracaibo",
+   "fotos": {
+    "verificado_em": "2026-11-11",
+    "obs": "11/11/2026: as fotos aprovadas eram de Pirates of Maracaibo (removidas). dlp games só tem caixa; Capstone sem página do jogo de 2019; Game's Up sem site acessível; MeepleBR só caixa e render em fundo branco; nada no Commons. Texto pronto em conteudo/maracaibo.json."
+   }
   },
   {
    "jogo": "My City",
