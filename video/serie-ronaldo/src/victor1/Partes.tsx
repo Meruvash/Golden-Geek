@@ -9,7 +9,7 @@ const SANS = "Public Sans";
 const ARCO = ["#e2364f", "#f2843a", "#f2d23a", "#4ac06a", "#3a8fd6", "#3a4ab8", "#9a4ad6"];
 const p = (s: number, t0: number, d: number) => interpolate(s, [t0, t0 + d], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.bezier(0.16, 1, 0.3, 1) });
 
-export const DUR_GANCHO = 4.4;
+export const DUR_GANCHO = 5.4;
 export const DUR_P1 = CORTE_PARTE1 + DUR_GANCHO;
 export const ABERTURA_P2 = 2.2;
 export const DUR_P2 = ABERTURA_P2 + (FIM_VICTOR1 - INICIO_PARTE2);
@@ -29,10 +29,14 @@ export const VictorParte1: React.FC = () => {
           </AbsoluteFill>
           <AbsoluteFill style={{ background: "radial-gradient(circle at 50% 45%, rgba(0,0,0,0) 30%, rgba(90,0,20,.75) 100%)", opacity: p(g, 0, 0.4) }} />
           <AbsoluteFill style={{ background: "linear-gradient(0deg, rgba(10,4,16,.9) 0px, rgba(10,4,16,0) 520px)" }} />
-          <div style={{ position: "absolute", left: 0, right: 0, top: 640, textAlign: "center" }}>
+          <div style={{ position: "absolute", left: 0, right: 0, top: 560, textAlign: "center" }}>
             <div style={{ fontFamily: SANS, fontWeight: 900, fontSize: 104, color: "#fff6ff", letterSpacing: "0.02em", opacity: p(g, 0.15, 0.3), transform: `scale(${1.25 - 0.25 * p(g, 0.15, 0.35)})` }}>CONTINUA…</div>
             <div style={{ fontFamily: SANS, fontWeight: 900, fontSize: 52, color: "#ffcf5a", marginTop: 10, opacity: p(g, 0.9, 0.3) }}>Ele vai cair?</div>
             <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 26, letterSpacing: "0.2em", color: "rgba(255,240,255,.75)", marginTop: 26, opacity: p(g, 1.6, 0.3) }}>PARTE 2 NO PRÓXIMO VÍDEO · SEGUE PRA NÃO PERDER</div>
+            <div style={{ display: "inline-block", marginTop: 26, background: "#fff6ff", borderRadius: 10, padding: "12px 22px", boxShadow: "8px 8px 0 #9a4ad6", opacity: p(g, 2.2, 0.3) }}>
+              <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 20, letterSpacing: "0.16em", color: "#9a4ad6" }}>COMO JOGAR DRAGON ECLIPSE</div>
+              <div style={{ fontFamily: SANS, fontWeight: 900, fontSize: 30, color: "#1a1020" }}>eliteboardgamers.com.br/como-jogar/dragon-eclipse</div>
+            </div>
           </div>
         </AbsoluteFill>
       ) : null}

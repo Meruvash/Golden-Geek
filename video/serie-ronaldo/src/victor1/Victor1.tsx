@@ -15,7 +15,7 @@ import { I, W } from "./marcas";
 // Roteiro aprovado: video/roteiros/victor-talaricornio-ep1.md. Tema Dragon Eclipse (ilhas, eclipse, Mystlings).
 // Tudo desenhado em código: cenários (arte/cenas_victor1.py) + personagens em SVG com acabamento cel (FiltroCel).
 void fontesProntas;
-export const FIM_VICTOR1 = DURACAO + 3.6;
+export const FIM_VICTOR1 = DURACAO + 4.6;
 
 const SANS = "Public Sans";
 const ENTRA = Easing.bezier(0.16, 1, 0.3, 1);
@@ -490,12 +490,19 @@ const PLANOS: Plano[] = [
   // cartela
   { t: DURACAO - 0.4, render: (s) => (
     <AbsoluteFill style={{ background: "#120a1c", opacity: p(s, DURACAO - 0.4, 0.4) }}>
-      <div style={{ position: "absolute", left: 0, right: 0, top: 260, textAlign: "center" }}>
+      <div style={{ position: "absolute", left: 0, right: 0, top: 170, textAlign: "center" }}>
         <div style={{ fontFamily: SANS, fontWeight: 900, fontSize: 96, color: "#fff6ff", letterSpacing: "0.04em" }}>CONTINUA…</div>
         <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 28, color: "#d9c8ff", marginTop: 14 }}>Victor e o Talaricórnio · tema Dragon Eclipse</div>
       </div>
-      <div style={{ position: "absolute", left: 0, right: 0, top: 620, textAlign: "center" }}>
-        <Img src={staticFile("img/logo.webp")} style={{ width: 240 }} />
+      <div style={{ position: "absolute", left: 150, right: 150, top: 470, textAlign: "center", background: "#fff6ff", borderRadius: 14, padding: "22px 20px", boxShadow: "12px 12px 0 #9a4ad6", opacity: p(s, DURACAO + 0.2, 0.4) }}>
+        <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 24, letterSpacing: "0.16em", color: "#9a4ad6" }}>COMO JOGAR</div>
+        <div style={{ fontFamily: SANS, fontWeight: 900, fontSize: 60, color: "#1a1020", lineHeight: 1.05 }}>Dragon Eclipse</div>
+        <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 28, color: "#1a1020", marginTop: 10 }}>eliteboardgamers.com.br</div>
+        <div style={{ fontFamily: SANS, fontWeight: 900, fontSize: 32, color: "#9a4ad6" }}>/como-jogar/dragon-eclipse</div>
+        <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 20, color: "#1a1020", marginTop: 6 }}>link na bio</div>
+      </div>
+      <div style={{ position: "absolute", left: 0, right: 0, top: 790, textAlign: "center" }}>
+        <Img src={staticFile("img/logo.webp")} style={{ width: 200 }} />
         <div style={{ fontFamily: SANS, fontWeight: 600, fontSize: 20, color: "rgba(240,225,255,.6)", marginTop: 20 }}>História de ficção da comunidade Elite Boardgamers</div>
       </div>
     </AbsoluteFill>

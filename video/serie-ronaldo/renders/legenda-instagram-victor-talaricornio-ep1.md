@@ -10,6 +10,8 @@ E agora ele tá caindo de um penhasco de 3 km. 😳
 
 Parte 2 no próximo vídeo. Segue pra não perder.
 
+🎲 Como jogar Dragon Eclipse: eliteboardgamers.com.br/como-jogar/dragon-eclipse (link na bio)
+
 Marca aquele amigo talarico. 👀
 
 #DragonEclipse #boardgames #jogosdetabuleiro #boardgamebrasil #eliteboardgamers #microdrama
@@ -22,7 +24,9 @@ PARTE 2 🌑🦄 O Victor caiu do penhasco… e alguém chegou no último segund
 Wan no resgate, Ronaldo no Reteté e o Lukita recalculando tudo.
 
 👉 Comenta CAPTURAR ou LIBERTAR.
-A maioria escreve a próxima parte.
+A maioria escreve o próximo episódio.
+
+🎲 Como jogar Dragon Eclipse: eliteboardgamers.com.br/como-jogar/dragon-eclipse (link na bio)
 
 Marca aquele amigo talarico. 👀
 
