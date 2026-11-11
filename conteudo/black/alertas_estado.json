@@ -227,6 +227,7 @@
   "50-filhotes",
   "a-iniciativa",
   "a-tripulacao-missao-no-mar-profundo",
+  "airport-rush",
   "algae-inc",
   "alien-attack-usa",
   "anachrony-edicao-essencial",
@@ -267,6 +268,7 @@
   "emblems",
   "exit-o-jogo-calendario-advento-a-estrela-de-hollywood-desaparecida",
   "exploding-kittens-bem-vs-mal",
+  "fabulinhas",
   "fantastic-factories-subterfuge",
   "fateflip-arrastado-pelo-mar",
   "fateflip-decretos-reais",
@@ -308,6 +310,7 @@
   "paris-letoile",
   "perfil-7",
   "perfil-express-filmes-e-series",
+  "petiquette",
   "pie-face",
   "piratas-3a-edicao",
   "piratas-pets",
@@ -352,7 +355,13 @@
   "uno-flip",
   "uno-flip-attack",
   "war-game-of-thrones",
-  "zenkai-adventure"
+  "zenkai-adventure",
+  "zombicide-gear-up"
  ],
- "pendentes": {}
+ "pendentes": {
+  "airport-rush": "2026-11-11T13:24+00:00",
+  "fabulinhas": "2026-11-11T13:24+00:00",
+  "petiquette": "2026-11-11T13:24+00:00",
+  "zombicide-gear-up": "2026-11-11T13:24+00:00"
+ }
 }

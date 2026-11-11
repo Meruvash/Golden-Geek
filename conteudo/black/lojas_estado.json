@@ -10,7 +10,7 @@
   },
   "bravojogos.com.br": {
    "dia": "2026-11-11",
-   "paginas": 9
+   "paginas": 12
   },
   "brecholudico.com.br": {
    "dia": "2026-11-11",
@@ -92,7 +92,7 @@
   },
   "tubaleria.store": {
    "dia": "2026-11-11",
-   "paginas": 6
+   "paginas": 7
   },
   "vempramesajogos.commercesuite.com.br": {
    "descanso_ate": "2026-11-11T09:43+00:00",
@@ -294,7 +294,7 @@
   },
   "www.promobit.com.br": {
    "dia": "2026-11-11",
-   "paginas": 50
+   "paginas": 60
   },
   "www.reunionjogos.com.br": {
    "dia": "2026-11-11",
@@ -322,7 +322,7 @@
    "descanso_ate": "2026-11-11T09:38+00:00",
    "dia": "2026-11-11",
    "motivo": "robots.txt respondeu 403",
-   "paginas": 4
+   "paginas": 5
   },
   "www.tavernareal.com": {
    "descanso_ate": "2026-11-11T09:49+00:00",
@@ -457,7 +457,7 @@
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-chicago-1875-edicao-deluxe-p": {
    "cj": 650.07,
    "estoque": true,
-   "hora": "2026-11-10T03:03+00:00",
+   "hora": "2026-11-11T13:23+00:00",
    "preco": 699.0
   },
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-deep-sea-adventure-impulso-p": {
@@ -529,7 +529,7 @@
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-petiquette-edicao-ingles-p": {
    "cj": 83.61,
    "estoque": true,
-   "hora": "2026-11-10T10:37+00:00",
+   "hora": "2026-11-11T13:23+00:00",
    "preco": 89.9
   },
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-quest-p": {
@@ -655,7 +655,7 @@
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/zombicide-gear-up-p": {
    "cj": 83.61,
    "estoque": true,
-   "hora": "2026-11-10T22:41+00:00",
+   "hora": "2026-11-11T13:23+00:00",
    "preco": 89.9
   },
   "https://bravojogos.com.br/rpg/rpg-livro-zombicide-chronicles-p": {
@@ -741,6 +741,12 @@
    "estoque": true,
    "hora": "2026-11-10T03:40+00:00",
    "preco": 99.99
+  },
+  "https://tubaleria.store/produtos/airport-rush/?entry_path=category": {
+   "cj": 125.34,
+   "estoque": true,
+   "hora": "2026-11-11T13:23+00:00",
+   "preco": 130.56
   },
   "https://www.alquimistasdosjogos.com.br/anachrony-pre-venda": {
    "cj": 242.81,
@@ -1317,12 +1323,6 @@
    "estoque": true,
    "hora": "2026-11-11T02:47+00:00",
    "preco": 288.99
-  },
-  "https://www.cangaiajogos.com.br/deep-sea-adventure-impulso": {
-   "cj": 97.64,
-   "estoque": true,
-   "hora": "2026-11-09T12:29+00:00",
-   "preco": 104.99
   },
   "https://www.cangaiajogos.com.br/jogos/jogos-estrategicos/algae-inc-em-ingles": {
    "cj": 288.29,
