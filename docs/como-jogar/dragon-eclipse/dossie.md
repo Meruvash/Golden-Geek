@@ -83,7 +83,11 @@ Nomes de cartas (Sprint, Pummel, Guardian Stance…) e de Mystlings (Young Ember
 - 12 Cenários, A a L [V p. 8].
 
 **Montagem**
-- Organização da caixa, passos 1 a 32 [V Start here p. 1 e 2]; errata do envelope 3 e de 23 Itens [V FAQ p. 2].
+- Organização da caixa, passos 1 a 32 [V Start here p. 1 e 2], com uma metalizada do pacote 5 em cada um dos 10 envelopes (Outburst no 1) [V Start here p. 2]; errata do envelope 3 e de 23 Itens [V FAQ p. 2].
+- Primeiro Cenário: 1 Mystling inicial, Young Emberling ou Young Iceling, trocável no segundo [V p. 4]. Composição do baralho do primeiro Cenário [I: 10 Iniciais + 6 do Mystling, pelo tamanho de 16 (p. 7) e pela lista do tutorial (Start here p. 11); o trecho A0 não foi lido].
+- Cartas de Ataque do Inimigo: genéricas, por símbolo, guardadas com as cartas pequenas [V p. 17 e 25; Start here p. 2]; Inimigo com 2 jogadores: cartas ao lado da Arena [V p. 17].
+- Marcador de Habilidade Especial: não está na p. 3; desenhado como anel preto [I: ficha universal, lado preto; Start here p. 11 e p. 3].
+- Mystling Domado: Domar lado B na Enciclopédia, Habilidade do Inimigo em Removidas, cartas em "Tamed" na carta de Nível [V p. 25 e 32]; Retratos [V p. 25]. Salvar só no fim do Cenário [V p. 26]. Segredos guardados: p. 9 (objetos) x p. 26 (todos) [I, em `[!edicao]`].
 - Componentes por sessão, Inventário [V p. 5].
 - Mapa-múndi a partir do fim do Cenário 1; reconsiderar a partir do 3º [V p. 5 e 6].
 - 2 Mystlings de elementos principais diferentes; com 2 jogadores, 1 cada [V p. 6].
@@ -108,7 +112,7 @@ Nomes de cartas (Sprint, Pummel, Guardian Stance…) e de Mystlings (Young Ember
 - Turnos alternados, jogador primeiro; 2 jogadores pela Provocação [V p. 18].
 - Fim: perder, vencer, Domar [V p. 18 e 25].
 - Passos do turno [V p. 18 e 19]; regras de ouro [V p. 18].
-- Resolver carta, Poder da posição [V p. 19]; valor de Poder por posição impresso no mapa [V p. 14, ilustração; Start here p. 12]; diferença entre as duas ilustrações [I: o guia manda conferir o mapa].
+- Resolver carta, Poder da posição [V p. 19]; 1, 2, 2 e 3 nas posições 1 a 4 [V p. 14, ilustração; Start here p. 12 e 14: Primal Shot na posição 2 dá "only 2"]. Corrigido depois da auditoria: a primeira versão lia 1, 2, 3 nas posições 2 a 4 no desenho do livreto.
 - Ações Bônus, Arrancada, Preparar, Elemental, Habilidade Especial [V p. 19 e 20].
 - Comprar, reembaralhar, embaralhar [V p. 19].
 - Fim de turno, condições [V p. 19].
@@ -133,14 +137,15 @@ Nomes de cartas (Sprint, Pummel, Guardian Stance…) e de Mystlings (Young Ember
 
 **Lacunas [L]**
 - O manual não diz a idade; a idade (12+) vem da página da Asmodee Canada.
-- O manual não diz, no modo cooperativo, se cada jogador pode fazer a troca de mão; o guia diz só que cada um faz os passos 18 a 20.
-- Poder da posição 1 da Arena do tutorial não aparece na ilustração do livreto; o guia não o cita.
+- O manual não diz, no modo cooperativo, se cada jogador pode fazer a troca de mão; o guia diz em `[!edicao]`, como leitura do guia, que cada um faz a sua.
+- Dano letal nos dois lados no mesmo efeito: o manual não trata; leitura do guia em `[!edicao]`.
+- Domar e dano letal no mesmo efeito: leitura do guia pelo "mesmo que" da p. 25.
 
 ## 4. Divergências
 
 - Lista do envelope 3 e número de Itens no livreto: corrigidos pela FAQ (p. 2). O guia segue a FAQ.
 - Ilustração da p. 14 do Start here é espelhada (FAQ p. 2): não foi usada como figura.
-- Poder impresso nas posições: Arena da p. 14 do Rulebook (1, 2, 2, 3) e Arena 2 do livreto (1, 2, 3 nas posições 2 a 4). São mapas diferentes; o guia avisa em `[!edicao]`.
+- Poder impresso nas posições: não há divergência; é 1, 2, 2 e 3 (p. 14; Start here p. 14). A divergência apontada na primeira versão era erro de leitura do desenho.
 
 ## 5. Plano de ensino
 
@@ -150,7 +155,7 @@ Adiado do Comece: Testes, Tempo e Evento, passivos e aprimoramentos, movimento d
 
 ## 6. Extensão e portões
 
-Cerca de 9.100 palavras contando tabelas, exercícios, blocos recolhidos e endereços (a página de prévia mostra "Leitura do essencial: cerca de 13 min"). Passa do alvo do BRIEF para jogo médio: o jogo tem 36 páginas de regras mais 16 do livreto, duas partes com sistemas próprios (Aventura com Exploração, Tempo e Testes; Combate com posições, Poder, Ações Bônus, Inimigo automático e Domar), uma organização de caixa em 32 passos e uma camada de campanha (pacotes, Progresso, baralhos). A seção de montagem foi encurtada uma vez (tabela de componentes e organização da caixa). O "Comece" tem 1.206 palavras de leitura, dentro dos 6 minutos.
+Depois das auditorias, cerca de 8.700 palavras contando tabelas, exercícios, blocos recolhidos e endereços (eram 9.200 na primeira versão; as correções de clareza acrescentaram texto e os cortes pedidos tiraram mais). O alvo do auditor era perto de 7.500 e não foi alcançado sem cortar regra. Passa do alvo do BRIEF para jogo médio: o jogo tem 36 páginas de regras mais 16 do livreto, duas partes com sistemas próprios (Aventura com Exploração, Tempo e Testes; Combate com posições, Poder, Ações Bônus, Inimigo automático e Domar), uma organização de caixa em 32 passos e uma camada de campanha (pacotes, Progresso, baralhos). A seção de montagem foi encurtada uma vez (tabela de componentes e organização da caixa). O "Comece" tem cerca de 1.150 palavras de leitura, dentro dos 6 minutos.
 
 - Travessão e meia-risca: zero.
 - `tools/vicios.py` (função `avisos`) no tutorial e no JSON: zero avisos.
