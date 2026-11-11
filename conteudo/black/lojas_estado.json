@@ -294,7 +294,7 @@
   },
   "www.promobit.com.br": {
    "dia": "2026-11-11",
-   "paginas": 10
+   "paginas": 20
   },
   "www.reunionjogos.com.br": {
    "dia": "2026-11-11",
@@ -2241,12 +2241,6 @@
    "estoque": true,
    "hora": "2026-11-11T02:48+00:00",
    "preco": 110.0
-  },
-  "https://www.spaceboardgames.com.br/jogos-de-tabuleiro/mirianth-pets": {
-   "cj": 39.06,
-   "estoque": true,
-   "hora": "2026-11-09T03:17+00:00",
-   "preco": 42.0
   },
   "https://www.spaceboardgames.com.br/jogos-de-tabuleiro/neuroshima-hex-battle-policia-de-aco-vs-feras": {
    "cj": 111.6,
