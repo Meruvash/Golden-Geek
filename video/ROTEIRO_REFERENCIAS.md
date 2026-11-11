@@ -141,6 +141,34 @@ Este é o molde. O roteiro novo é escrito **batida por batida contra esta tabel
 
 **O que fizemos errado na primeira "O Assalto do Wan"** (para não repetir): 5 palcos em 63 s (um a cada 12 s, a referência troca a cada 2,5 s); sem painel de estado; sem recap pelo voto; sem "o que você não sabe"; sem cartão "isso é real"; escolha sem preço escrito; personagem complexo e cenário pobre (o contrário da referência).
 
+## 4e. Mapa ASSISTIDO de um microdrama ("Maid for My Nemesis", estilo ReelShort, 3:58, assistido em 11/11/2026)
+
+Vídeo enviado pelo editor, visto em folha de contato (1 quadro a cada 4 s) e transcrito.
+
+| Tempo | Batida | O que faz pela retenção |
+|---|---|---|
+| 0:00–0:15 | **Abertura no clímax** (flash-forward): a frase mais forte ("I'd rather die than work for you") + o choque final ("Meu inimigo é o meu chefe?") antes de qualquer contexto | O espectador já sabe AONDE vai dar e fica para ver COMO |
+| 0:15–0:30 | Volta no tempo: confronto com insulto específico ("vendendo o corpo pra comprar bolsa que o papai não paga?") | Conflito em 10 s, sem apresentação |
+| 0:28–0:48 | **Monólogo interior** revela o motivo escondido ("ele não sabe o que eu faço pra manter meu pai vivo") + o inimigo nota uma lágrima | Simpatia: o público toma partido |
+| 0:50–0:58 | A frase do início volta no lugar certo ("Prefiro morrer…") | **Callback**: recompensa por ter assistido desde o começo |
+| 1:00–1:10 | **Ironia dramática**: o rival repete a frase dela com deboche e manda fazer "uma oferta que ela não pode recusar". O público sabe, ela não | Toda cena seguinte fica tensa porque o público sabe mais que ela |
+| 1:12–1:25 | Motivo visual (pai no hospital, monitor cardíaco) | Aposta concreta |
+| 1:25–2:00 | A armadilha chega como oportunidade, com número exato ("$2.000 por semana") | Número concreto = aposta real |
+| 2:00–3:30 | Lista de regras absurdamente específicas ("lanche doce às 16h em ponto", "café meio creme, meio açúcar, até 10 min depois de acordar") + **pistas** ("mimado, chato, exigente… igual ao Lucas Bennett") | Humor por detalhe e suspense por pista: o público grita "é ele!" |
+| 3:30–3:52 | Revelação: a mesma cena da abertura, agora com contexto | Fecha o laço aberto em 0:00 |
+| 3:52–3:58 | **Frase de efeito** do vilão ("Parece que você é a minha nova empregada, Madame Presidente") e corte seco | Termina num pico, com uma pergunta nova |
+
+**Técnica de tela:** troca de plano a cada ~4 s (mais lento que o saveo.house, porque é diálogo); um rosto por plano em close; plano de reação depois de cada fala forte; título da série como marca-d'água fixa; legenda curta (1 linha); música dramática só nas viradas e silêncio antes da revelação.
+
+**O que serve para nós:**
+1. Abrir no clímax e repetir a mesma frase no fim (laço aberto/fechado).
+2. Ironia dramática: uma cena que o "você" da história não vê, mas o público vê.
+3. Monólogo interior de um personagem revelando o motivo escondido (cria lado e comentário).
+4. Callback de frase: a fala do começo volta com outro sentido.
+5. Pistas plantadas que o público decifra antes do protagonista.
+6. Detalhe específico e engraçado no lugar de descrição genérica.
+7. Frase de efeito no último segundo, depois da revelação, e corte seco.
+
 ## 5. Desenho (Claude Drawing)
 
 Fonte: github.com/cloveric/claude-drawing-skill (MIT), `docs/PRINCIPLES.md`. A skill pinta com código (Python + Pillow, sem modelo de imagem), em 83 estilos.
