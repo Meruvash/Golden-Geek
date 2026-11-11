@@ -93,7 +93,7 @@ const Quadro: React.FC<{ s: number; linhas: { txt: string; t: number; cor?: stri
 
 // fins de falas usados como marcos de plano
 function fimFala(id: number) { const f = FALAS.find((x) => x.id === id)!; return f.inicio + f.dur; }
-const F21 = fimFala(21), F2 = fimFala(2), F6 = fimFala(6), F7 = fimFala(7), F12 = fimFala(12), F13 = fimFala(13), F16 = fimFala(16), F22 = fimFala(22), F23 = fimFala(23), F24 = fimFala(24), F30 = fimFala(30), F31 = fimFala(31), F32 = fimFala(32);
+const F21 = fimFala(21), F25 = fimFala(25), F26 = fimFala(26), F2 = fimFala(2), F6 = fimFala(6), F7 = fimFala(7), F12 = fimFala(12), F13 = fimFala(13), F16 = fimFala(16), F22 = fimFala(22), F23 = fimFala(23), F24 = fimFala(24), F30 = fimFala(30), F31 = fimFala(31), F32 = fimFala(32);
 const T_MERCADO = I(3) + 2.9;
 
 type Plano = { t: number; render: (s: number, ls: number) => React.ReactNode };
@@ -291,32 +291,96 @@ const PLANOS: Plano[] = [
   { t: I(24) - 0.1, render: (s, ls) => (
     <Cam ls={ls} de={1} ate={1.05} dur={2.2}><Fundo nome="acampamento" filtro="blur(5px)" /><Luz x={540} y={900} r={500} cor="#ff7a2a" forca={0.3} /><Svg cel="celF"><Ronaldo x={540} y={1940} escala={2.5} expr="apavorado" pose="cartas" /></Svg></Cam>
   ) },
-  // o eclipse começa: hipnose
+  // o eclipse começa: o Talaricórnio, numa pedra flutuante sobre o abismo, atrai o Victor até a beira
   { t: F24 + 0.3, render: (s, ls) => {
-    const anda = lin(s, I(25), I(26) + 1.5);
+    const anda = lin(s, I(25) - 0.3, F25 + 0.2);
     return (
-      <Cam ls={ls} de={1} ate={1.08} ox={700} oy={700} dur={5}>
+      <Cam ls={ls} de={1} ate={1.1} ox={460} oy={760} dur={5}>
         <Fundo nome="eclipse" />
-        <Svg cel="cel">
-          <Talaricornio x={560} y={870} escala={0.9} t={s} olho="brilho" />
-          <Victor x={940 - 170 * anda} y={1000} escala={0.95} expr="hipnotizado" virar t={s} />
-          {s >= I(26) - 0.1 ? <Lukita x={300} y={1180} escala={0.6} expr="apavorado" pose="bracos" /> : null}
+        <Svg>
+          {/* aviso de abismo: a borda do penhasco destacada */}
+          <path d="M432,898 C480,872 500,862 520,858" stroke="#ff5a3a" strokeWidth={6} fill="none" strokeDasharray="14 10" opacity={0.6 + 0.4 * Math.sin(s * 8)} />
+          <g transform={`translate(230,${700 + 10 * Math.sin(s * 1.5)})`}>
+            <path d="M-110,0 L110,0 L70,60 L20,110 L-30,90 L-80,50 Z" fill="#2a1838" stroke="#1a1220" strokeWidth={5} />
+            <path d="M-110,0 L110,0" stroke="#ff9a6a" strokeWidth={4} />
+          </g>
         </Svg>
-        <Svg style={{ mixBlendMode: "screen" }}><circle cx={765} cy={510} r={60 + 20 * Math.sin(s * 8)} fill={ROSA} opacity={0.25} /></Svg>
+        <Svg cel="cel">
+          <Talaricornio x={170} y={700 + 10 * Math.sin(s * 1.5)} escala={0.6} t={s} olho="brilho" crina={lin(s, I(25) + 0.4, I(25) + 1.1)} />
+          <Victor x={930 - 400 * anda} y={890 + 10 * anda} escala={0.75} expr="hipnotizado" virar t={s} />
+        </Svg>
+        <Svg style={{ mixBlendMode: "screen" }}>
+          {[0, 1, 2, 3].map((k) => { const r = ((ls * 120 + k * 60) % 240); return <ellipse key={k} cx={300 + r * 1.6} cy={480 + r * 0.2} rx={20 + r * 0.25} ry={30 + r * 0.4} fill="none" stroke={ROSA} strokeWidth={5} opacity={1 - r / 240} />; })}
+        </Svg>
       </Cam>
     );
   } },
-  // o Wan pula do dragão e segura o Victor pela capa
-  { t: I(27) - 0.2, render: (s, ls) => {
-    const voo = lin(s, I(27) - 0.2, I(27) + 0.9);
-    return (
-      <Cam ls={ls} de={1.04} ate={1} dur={2} tremor={s > I(27) + 0.9 ? 10 : 0}>
+  // a bota na borda: a pedra esfarela (e o Lukita em pânico no cantinho)
+  { t: I(26) - 0.1, render: (s, ls) => (
+    <AbsoluteFill>
+      <Cam ls={ls} de={2.0} ate={2.2} ox={480} oy={980} dur={2}>
         <Fundo nome="eclipse" />
-        <Svg><Dragao x={-300 + 1500 * voo} y={300 - 80 * voo} escala={1.1} t={s} /></Svg>
-        <Svg cel="cel">
-          <Victor x={560} y={1020} escala={0.95} expr="hipnotizado" virar t={s} />
-          <g transform={`translate(${-260 * (1 - voo)},${-500 * (1 - voo)})`}><WanHD x={780} y={1030} escala={0.92} expr="serio" pose="bracos" luz={LUZ_POENTE} id="wv" piscar={pisca(s)} /></g>
+        <Svg cel="cel"><g transform={`translate(${5 * Math.sin(s * 30) * lin(ls, 0.5, 1.2)},0)`}><Victor x={500} y={872} escala={0.75} expr="hipnotizado" virar t={s} /></g></Svg>
+        <Svg>
+          {Array.from({ length: 7 }, (_, i) => { const t0 = 0.3 + i * 0.25; const tt = Math.max(0, ls - t0); return tt > 0 ? <rect key={i} x={440 + i * 6 - tt * 8} y={880 + 140 * tt * tt} width={5} height={5} fill="#5a4a5a" transform={`rotate(${tt * 300},${442 + i * 6},${882 + 140 * tt * tt})`} /> : null; })}
         </Svg>
+      </Cam>
+      <div style={{ position: "absolute", right: 50, top: 120, width: 260, height: 260, borderRadius: 130, overflow: "hidden", border: "6px solid #fff6ff", boxShadow: "0 10px 30px rgba(0,0,0,.6)", background: "#2a1838" }}>
+        <svg width={260} height={260} viewBox="0 0 260 260"><Lukita x={130} y={720 + 10 * Math.sin(s * 25)} escala={0.75} expr="apavorado" pose="bracos" /></svg>
+      </div>
+    </AbsoluteFill>
+  ) },
+  // vertigem: olhando para baixo, as pedrinhas somem no abismo
+  { t: F26 + 0.1, render: (s, ls) => (
+    <AbsoluteFill style={{ background: "#12081c" }}>
+      <Cam ls={ls} de={1} ate={1.25} dur={1.6}>
+        <Svg>
+          <defs><radialGradient id="abismo"><stop offset="0" stopColor="#ffd0a0" stopOpacity={1} /><stop offset="0.3" stopColor="#e2704a" stopOpacity={0.9} /><stop offset="0.7" stopColor="#5a2a5a" stopOpacity={1} /><stop offset="1" stopColor="#1a0c24" stopOpacity={1} /></radialGradient></defs>
+          <rect x={0} y={0} width={1080} height={1080} fill="url(#abismo)" />
+          {/* paredes de rocha fugindo para o fundo */}
+          <path d="M0,0 L420,0 L500,460 L0,1080 Z" fill="#1c1228" stroke="#3a2a4a" strokeWidth={4} />
+          <path d="M1080,0 L640,0 L580,460 L1080,1080 Z" fill="#241632" stroke="#3a2a4a" strokeWidth={4} />
+          {[0, 1, 2, 3, 4].map((k) => <path key={k} d={`M${420 - k * 90},${k * 120} L500,460 M${640 + k * 90},${k * 120} L580,460`} stroke="#3a2a4a" strokeWidth={3} />)}
+          {[0, 1, 2, 3].map((k) => <ellipse key={k} cx={540 + (k - 1.5) * 40} cy={470 + (k % 2) * 8} rx={60 - k * 8} ry={18 - k * 2} fill="#fff1e0" opacity={0.7} />)}
+          {Array.from({ length: 6 }, (_, i) => { const tt = Math.max(0, ls - i * 0.12); const e = 1 / (1 + tt * 4); return <rect key={i} x={540 + (i - 3) * 60 * e} y={460 + (i % 2 ? 1 : -1) * 220 * e} width={40 * e} height={40 * e} fill="#3a2a4a" stroke="#ffcfa0" strokeWidth={2} />; })}
+          <text x={540} y={150} textAnchor="middle" fontFamily={SANS} fontWeight={900} fontSize={44} fill="#fff6ff" letterSpacing="0.16em" stroke="#1a0c24" strokeWidth={8} paintOrder="stroke">↓ 3 KM DE QUEDA ↓</text>
+        </Svg>
+      </Cam>
+    </AbsoluteFill>
+  ) },
+  // ele pisa no vazio
+  { t: F26 + 1.5, render: (s, ls) => {
+    const cai = Math.max(0, ls - 0.35);
+    return (
+      <Cam ls={ls} de={1.35} ate={1.45} ox={470} oy={760} dur={1.2} tremor={ls > 0.35 ? 8 : 0}>
+        <Fundo nome="eclipse" />
+        <Svg cel="cel">
+          <g transform={`translate(0,${220 * cai * cai}) rotate(${-25 * Math.min(1, ls / 0.4) - 20 * cai},480,880)`}>
+            <Victor x={470} y={880} escala={0.75} expr={ls > 0.4 ? "triste" : "hipnotizado"} virar t={s} />
+          </g>
+        </Svg>
+        <Svg style={{ mixBlendMode: "screen", opacity: ls > 0.35 ? 1 : 0 }}><text x={700} y={360} fontFamily={SANS} fontWeight={900} fontSize={120} fill="#ff5a3a" transform="rotate(-8,700,360)">!!</text></Svg>
+      </Cam>
+    );
+  } },
+  // o Wan desce do dragão e agarra a capa no último segundo: o Victor pendurado sobre o abismo
+  { t: I(27) - 0.5, render: (s, ls) => {
+    const balanco = 8 * Math.sin(ls * 3.2) * Math.exp(-ls * 0.6);
+    return (
+      <Cam ls={ls} de={1.08} ate={1.0} dur={1.2} tremor={ls < 0.4 ? 16 : 0}>
+        <AbsoluteFill style={{ transform: "translateY(-380px)" }}><Fundo nome="eclipse" /></AbsoluteFill>
+        <AbsoluteFill style={{ top: 690, background: "linear-gradient(180deg, rgba(226,96,58,0) 0px, #b04a4a 40px, #5a2a5a 200px, #1a0c24 390px)" }} />
+        <Svg><Dragao x={-200 + 1600 * lin(s, I(27) - 0.5, I(27) + 1.0)} y={180} escala={0.9} t={s} /></Svg>
+        <Svg cel="cel">
+          <WanHD x={680} y={510} escala={0.62} expr="serio" pose="bracos" luz={LUZ_POENTE} id="wv" piscar={pisca(s)} />
+          <path d="M650,200 L560,320 L586,336 L672,220 Z" fill="#34363f" stroke="#5a3a2a" strokeWidth={3} />
+          <circle cx={566} cy={332} r={16} fill="#f6d2b8" stroke="#5a3a2a" strokeWidth={3} />
+          <g transform={`rotate(${balanco},566,332)`}>
+            <path d="M556,330 C540,460 520,600 500,760 L440,760 C470,600 520,460 576,330 Z" fill="#1e1a26" stroke="#8f1d3a" strokeWidth={4} />
+            <Victor x={470} y={1180} escala={0.75} expr="triste" t={s} />
+          </g>
+        </Svg>
+        <Svg>{Array.from({ length: 4 }, (_, i) => { const tt = (ls * 0.8 + i / 4) % 1; return <rect key={i} x={430 + i * 40} y={520 + 560 * tt * tt} width={10} height={10} fill="#5a4a5a" opacity={1 - tt} />; })}</Svg>
       </Cam>
     );
   } },
@@ -599,9 +663,13 @@ const EFEITOS: Efeito[] = [
   { f: "vento", t: F24 + 0.3, v: 0.4, d: 6 },
   { f: "hipnose", t: I(25) - 0.6, v: 0.55 },
   { f: "sino-ironia", t: I(26) - 0.1, v: 0.35 },
-  { f: "dragao", t: I(27) - 0.5, v: 0.6 },
-  { f: "capa", t: I(27) + 0.85, v: 0.6 },
-  { f: "sfx/impact-bass-1.mp3", t: I(27) + 0.9, v: 0.35, d: 1.6 },
+  { f: "pedras", t: I(26) + 0.25, v: 0.6 },
+  { f: "susto", t: F26 + 0.05, v: 0.5 },
+  { f: "eco-pedra", t: F26 + 0.15, v: 0.6 },
+  { f: "queda", t: F26 + 1.85, v: 0.6 },
+  { f: "dragao", t: I(27) - 0.7, v: 0.6 },
+  { f: "agarra", t: I(27) - 0.45, v: 0.7 },
+  { f: "sfx/impact-bass-1.mp3", t: I(27) - 0.45, v: 0.4, d: 1.6 },
   { f: "boing", t: I(29) + 1.2, v: 0.45 },
   { f: "boing", t: I(29) + 2.3, v: 0.45 },
   { f: "boing", t: I(29) + 3.6, v: 0.45 },
