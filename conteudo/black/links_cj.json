@@ -6,11 +6,11 @@
   "tocadotabuleiro": "https://www.tocadotabuleiro.com/produto/the-witcher-rpg-o-diario-do-bruxo-suplemento-de-regras-para-witcher-rpg-2349"
  },
  "abroad": {
-  "_hora": "2026-11-10T17:19-03:00",
+  "_hora": "2026-11-11T18:01-03:00",
   "alquimistasdosjogos": "https://www.alquimistasdosjogos.com.br/jogos/abroad",
-  "brecholudico": "https://brecholudico.com.br/produto/abroad/",
   "ludostation": "https://ludostation.com.br/produtos/abroad-1ofzs/?entry_path=category",
   "mecadosjogos": "https://www.mecadosjogos.com.br/abroad-p1221",
+  "playeasy": "https://www.playeasy.com.br/abroad-playeasy",
   "tabulerio": "https://www.tabulerio.com.br/jogos/abroad"
  },
  "algae-inc": {
@@ -330,9 +330,9 @@
   "tabuloja": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/codigo-secreto-imagens"
  },
  "coffee-rush-inverno": {
-  "_hora": "2026-11-10T17:19-03:00",
+  "_hora": "2026-11-11T18:01-03:00",
   "alquimistasdosjogos": "https://www.alquimistasdosjogos.com.br/jogos/coffee-rush-inverno",
-  "amazon": "https://www.amazon.com.br/dp/B0HMJYQZTR",
+  "boardgamebarato": "https://www.boardgamebarato.com.br/coffee-rush-inverno",
   "ludostation": "https://ludostation.com.br/produtos/coffee-rush-winter-galapagos/?entry_path=category",
   "masmorra": "https://www.masmorra.com.br/produtos/cfr201",
   "tabuloja": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/coffee-rush-inverno",
@@ -384,6 +384,15 @@
   "livtoys": "https://www.livtoys.com.br/boardgames/delta",
   "mercadolivre": "https://www.mercadolivre.com.br/p/MLB29712665",
   "tabuloja": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/delta"
+ },
+ "destemidos-norte-da-africa": {
+  "_hora": "2026-11-11T18:01-03:00",
+  "amazon": "https://www.amazon.com.br/dp/B0C8Q7YSD9",
+  "boardgamebarato": "https://www.boardgamebarato.com.br/destemidos-norte-da-africa",
+  "caixinhaboardgames": "https://www.caixinhaboardgames.com.br/produtos/destemidos-norte-da-africa/?entry_path=category",
+  "mecadosjogos": "https://www.mecadosjogos.com.br/destemidos-norte-da-africa-p151",
+  "mercadolivre": "https://www.mercadolivre.com.br/p/MLB25955191",
+  "playeasy": "https://www.playeasy.com.br/destemidos-norte-da-africa"
  },
  "dias-de-cao": {
   "_hora": "2026-11-10T15:23-03:00",
@@ -832,6 +841,10 @@
   "mosaicojogos": "https://www.mosaicoloja.com.br/expansoes/mosaico-jogos-expansao-minos-minos-dawn-of-faith-jogo-de-tabuleiro",
   "playeasy": "https://www.playeasy.com.br/minos-dawn-of-faith-expansao"
  },
+ "modern-art": {
+  "_hora": "2026-11-11T18:02-03:00",
+  "dalarangames": "https://www.dalaran.com.br/modern-art-jogo-de-tabuleiro"
+ },
  "mwat": {
   "_hora": "2026-11-05T20:47-03:00",
   "amazon": "https://www.amazon.com.br/dp/B0GL55DZFP",
@@ -1155,7 +1168,7 @@
   "playeasy": "https://www.playeasy.com.br/sleeves-mini-chimera-43-x-65-mm-blue-core"
  },
  "sleeve-mini-euro-45x68mm": {
-  "_hora": "2026-11-10T17:06-03:00",
+  "_hora": "2026-11-11T18:02-03:00",
   "amazon": "https://www.amazon.com.br/dp/B0GYK84RZF"
  },
  "sleeve-quadrado-medio-80x80mm": {
@@ -1171,7 +1184,7 @@
   "playeasy": "https://www.playeasy.com.br/sleeves-silver-70-x-110-mm-blue-core"
  },
  "sleeve-tarot-70x120mm": {
-  "_hora": "2026-11-10T17:06-03:00",
+  "_hora": "2026-11-11T18:02-03:00",
   "amazon": "https://www.amazon.com.br/dp/B0H132D5XL",
   "mercadolivre": "https://www.mercadolivre.com.br/p/MLB67352103"
  },
@@ -1237,6 +1250,23 @@
   "masmorra": "https://www.masmorra.com.br/produtos/vmwpd3e6t",
   "nerdev": "https://www.nerdev.com.br/produtos/te-toka-tiki-tiki-cpuax/?entry_path=category",
   "piranoboardgame": "https://piranoboardgame.com.br/jogo/te-toka-tiki-tiki"
+ },
+ "terra-mystica-faccoes-de-fas": {
+  "_hora": "2026-11-11T18:02-03:00",
+  "amazon": "https://www.amazon.com.br/dp/B0GLR7KP4H",
+  "caixinhaboardgames": "https://www.caixinhaboardgames.com.br/produtos/faccoes-de-fas-expansao-terra-mystica/?entry_path=category",
+  "masmorra": "https://www.masmorra.com.br/produtos/grk0200",
+  "mercadolivre": "https://www.mercadolivre.com.br/p/MLB70649859",
+  "placegames": "https://www.placegames.com.br/boardgames/terra-mystica-faccoes-de-fas-expansao",
+  "tabuloja": "https://www.tabuloja.com/jogos-de-tabuleiro/expansoes/terra-mystica-faccoes-de-fas"
+ },
+ "terraforming-mars-o-jogo-de-dados": {
+  "_hora": "2026-11-11T18:02-03:00",
+  "cangaiajogos": "https://www.cangaiajogos.com.br/todos-os-jogos/jogos-estrategicos/terraforming-mars-o-jogo-de-dados",
+  "expressoboardgames": "https://www.expressoboardgames.com.br/terraforming-mars-o-jogo-de-dados",
+  "leaolivros": "https://www.leaolivros.com.br/terraforming-mars-o-jogo-de-dados",
+  "mercadolivre": "https://www.mercadolivre.com.br/p/MLB66449039",
+  "tabuloja": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/terraforming-mars-o-jogo-de-dados"
  },
  "the-dwarf-king": {
   "_hora": "2026-11-04T18:47-03:00",
@@ -1363,6 +1393,15 @@
   "tabulerio": "https://www.tabulerio.com.br/pre-venda/valheim-edicao-deluxe",
   "tabuloja": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/valheim-edicao-deluxe",
   "tavernareal": "https://www.tavernareal.com/tabuleiro/valheim-edicao-deluxe"
+ },
+ "velonimo": {
+  "_hora": "2026-11-11T18:02-03:00",
+  "caldeiraojogos": "https://www.caldeiraojogos.com.br/produtos/velonimo/?entry_path=category",
+  "jogasampa": "https://www.jogasampa.com.br/velonimo",
+  "leaolivros": "https://www.leaolivros.com.br/velonimo",
+  "masmorra": "https://www.masmorra.com.br/produtos/ppg-j068",
+  "mercadolivre": "https://www.mercadolivre.com.br/p/MLB23272477",
+  "spaceboardgames": "https://www.spaceboardgames.com.br/jogos-de-tabuleiro/velonimo"
  },
  "village-big-box": {
   "_hora": "2026-11-06T11:32-03:00",

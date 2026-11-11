@@ -289,13 +289,13 @@
   "jolly-roger",
   "kemet-blood-and-sand-sand-worm",
   "kitsu",
+  "kokeshi",
   "liars-uno",
   "little-secret",
   "magic-maze-maximum-security",
   "mazescape-kids-hipnos",
   "mesozooic",
   "mestre-makatsu",
-  "modern-art",
   "mwat",
   "mysterium-secrets-lies",
   "na-ponta-da-lingua",
@@ -308,6 +308,7 @@
   "palpite-certo",
   "paris",
   "paris-letoile",
+  "perfil-7",
   "perfil-express-filmes-e-series",
   "pie-face",
   "piratas-3a-edicao",
@@ -343,6 +344,8 @@
   "the-game",
   "the-number",
   "the-pillars-of-the-earth",
+  "time-stories-revolution-a-midsummer-night",
+  "time-stories-revolution-the-hadal-project",
   "trava-letras",
   "triominos-junior",
   "trolls-princesas",
@@ -355,6 +358,10 @@
   "zenkai-adventure"
  ],
  "pendentes": {
-  "dominant-species-marine": "2026-11-11T15:59+00:00"
+  "dominant-species-marine": "2026-11-11T15:59+00:00",
+  "kokeshi": "2026-11-11T21:02+00:00",
+  "perfil-7": "2026-11-11T21:02+00:00",
+  "time-stories-revolution-a-midsummer-night": "2026-11-11T21:02+00:00",
+  "time-stories-revolution-the-hadal-project": "2026-11-11T21:02+00:00"
  }
 }
