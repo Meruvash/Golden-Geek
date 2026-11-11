@@ -152,27 +152,6 @@
    "pode_criar_topico": false
   },
   {
-   "id_jogo": 86320,
-   "nome": " Star Wars: The Deckbuilding Game – Reforços Rebeldes e Imperiais (Expansão)",
-   "url": "https://ludopedia.com.br/jogo/star-wars-the-deckbuilding-game-rebels-empire-reinforcements-expansion",
-   "capa": "https://storage.googleapis.com/ludopedia-capas/86320_t.jpg",
-   "fl_jogo_base": 0,
-   "fl_tipo": 1,
-   "editora": {
-    "id": 92,
-    "nome": "Asmodee (Galápagos)",
-    "url": "https://ludopedia.com.br/editora/92/Asmodee (Galápagos)"
-   },
-   "status": {
-    "id": 1,
-    "label": "Lançado",
-    "slug": "lancado"
-   },
-   "comentarios": 0,
-   "url_topico": null,
-   "pode_criar_topico": true
-  },
-  {
    "id_jogo": 88079,
    "nome": "All in RPG",
    "url": "https://ludopedia.com.br/jogo/all-in-rpg",
@@ -645,6 +624,27 @@
     "id": 11181,
     "nome": "MeepleHive 3D",
     "url": "https://ludopedia.com.br/editora/11181/MeepleHive 3D"
+   },
+   "status": {
+    "id": 1,
+    "label": "Lançado",
+    "slug": "lancado"
+   },
+   "comentarios": 0,
+   "url_topico": null,
+   "pode_criar_topico": true
+  },
+  {
+   "id_jogo": 86320,
+   "nome": "Star Wars: The Deckbuilding Game – Reforços Rebeldes e Imperiais (Expansão)",
+   "url": "https://ludopedia.com.br/jogo/star-wars-the-deckbuilding-game-rebels-empire-reinforcements-expansion",
+   "capa": "https://storage.googleapis.com/ludopedia-capas/86320_t.jpg",
+   "fl_jogo_base": 0,
+   "fl_tipo": 1,
+   "editora": {
+    "id": 92,
+    "nome": "Asmodee (Galápagos)",
+    "url": "https://ludopedia.com.br/editora/92/Asmodee (Galápagos)"
    },
    "status": {
     "id": 1,

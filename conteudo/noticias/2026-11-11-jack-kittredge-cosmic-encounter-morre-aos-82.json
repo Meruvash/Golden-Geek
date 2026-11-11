@@ -1,0 +1,118 @@
+{
+ "slug": "jack-kittredge-cosmic-encounter-morre-aos-82",
+ "data": "2026-11-11",
+ "categoria": "Mercado",
+ "jogo": "Cosmic Encounter",
+ "ids_ludopedia": [
+  84
+ ],
+ "titulo": "Jack Kittredge, um dos criadores de Cosmic Encounter e Dune, morre aos 82 anos",
+ "titulo_seo": "Morre Jack Kittredge, de Cosmic Encounter",
+ "selo": "Informativo",
+ "lide": "John \"Jack\" Kittredge, um dos quatro autores de Cosmic Encounter, de 1977, e de Dune, de 1979, morreu em 25 de outubro, aos 82 anos, informou o BoardGameWire em 10 de novembro. O jogo de alienígenas com poderes que quebram as regras saiu no Brasil na versão para dois, Cosmic Encounter Duel, pela Galápagos.",
+ "por_que_importa": "Quase todo jogo moderno com poder diferente para cada jogador deve alguma coisa a Cosmic Encounter, de Magic a Pandemic. A Parker Brothers recusou o protótipo porque espaço não vendia, e a turma publicou sozinha. Cinquenta anos depois, a gente ainda paga caro por caixas que copiam a ideia que uma grande editora achou que não daria certo.",
+ "numeros": [
+  [
+   "1977",
+   "lançamento de Cosmic Encounter, pela Eon Products",
+   "BoardGameWire"
+  ],
+  [
+   "1979",
+   "lançamento de Dune, pela Avalon Hill",
+   "BoardGameWire"
+  ],
+  [
+   "82",
+   "anos, idade de Kittredge",
+   "BoardGameWire"
+  ],
+  [
+   "33",
+   "anos como editor do jornal The Natural Farmer",
+   "BoardGameWire"
+  ]
+ ],
+ "corpo": [
+  "Kittredge fazia parte do Future Pastimes, grupo com Peter Olotka, Bill Eberle e Bill Norton que criou Cosmic Encounter a partir de um protótipo de 1972. Segundo o BoardGameWire, Richard Garfield chamou o jogo de ancestral mais influente de Magic, e Matt Leacock disse que os poderes diferentes dos jogadores influenciaram Pandemic. Olotka atribuiu a Kittredge o disco de combate simultâneo de Dune.",
+  "Nos anos 1980, ele passou a se dedicar à agricultura orgânica, com a mulher, Julie Rawson, mas voltou a testar Cosmic Encounter na edição da Fantasy Flight de 2008 e na expansão Cosmic Eons, segundo o filho de Olotka. Ele deixa a mulher, quatro filhos e oito netos."
+ ],
+ "no_brasil": "Cosmic Encounter Duel saiu pela Galápagos em junho de 2020. Uma edição antiga do jogo original circulou como Contatos Cósmicos, com a Grow listada entre as editoras pelo Analog Games. Para a edição atual, da Fantasy Flight, não encontramos edição nacional até 11/11/2026.",
+ "critica": [],
+ "para_quem": [
+  "Gosta de jogo em que cada pessoa quebra uma regra diferente e a mesa vira tribunal",
+  "Quer entender de onde veio metade das ideias da sua estante"
+ ],
+ "nao_e_para": [
+  "Precisa de equilíbrio perfeito: em Cosmic Encounter, a graça é justamente o poder absurdo",
+  "Detesta negociar: aqui, quem não faz aliança vira poeira estelar"
+ ],
+ "veredito": "Informativo. A gente registra a perda de um dos autores que inventaram o jogo moderno antes de ele ter esse nome. Se nunca jogou Cosmic Encounter, a melhor homenagem é juntar cinco amigos e descobrir por que tanta editora copiou essa ideia.",
+ "fontes": [
+  {
+   "nome": "BoardGameWire: Cosmic Encounter co-creator Jack Kittredge dies aged 82",
+   "url": "https://boardgamewire.com/index.php/2026/11/10/cosmic-encounter-co-creator-jack-kittredge-whose-work-influenced-generations-of-board-game-designers-dies-aged-82/",
+   "data": "11/11/2026"
+  },
+  {
+   "nome": "Legacy.com: John M. \"Jack\" Kittredge",
+   "url": "https://www.legacy.com/us/obituaries/name/john-kittredge-memorial?id=62852762",
+   "data": "11/11/2026"
+  },
+  {
+   "nome": "Ludopedia: Cosmic Encounter Duel",
+   "url": "https://ludopedia.com.br/jogo/cosmic-encounter-duel",
+   "data": "11/11/2026"
+  },
+  {
+   "nome": "Ludopedia: Cosmic Encounter",
+   "url": "https://ludopedia.com.br/jogo/cosmic-encounter",
+   "data": "11/11/2026"
+  },
+  {
+   "nome": "Analog Games: Cosmic Encounter (1977)",
+   "url": "https://www.analog.games//gameItem/show/419cd83f966ccc9901967319b7a8096f?lang=PT",
+   "data": "11/11/2026"
+  },
+  {
+   "nome": "ComparaJogos: Cosmic Encounter",
+   "url": "https://www.comparajogos.com.br/item/cosmic-encounter",
+   "data": "11/11/2026"
+  }
+ ],
+ "imagem": {
+  "arquivo": "capas/84.jpg",
+  "credito": "Capa via Ludopedia · Cosmic Encounter, edição da Fantasy Flight"
+ },
+ "jogos": [],
+ "crivo": {
+  "pontos": 5,
+  "criterios": [
+   "Autor de jogo premiado: Cosmic Encounter, no Hall da Fama da Academy of Adventure Gaming Arts & Design (3)",
+   "Confirmada por duas fontes: BoardGameWire e obituário no Legacy.com (2)"
+  ]
+ },
+ "verificacao_nacional": [
+  {
+   "jogo": "Cosmic Encounter Duel",
+   "resultado": "edição nacional",
+   "data": "11/11/2026",
+   "fontes": [
+    "https://ludopedia.com.br/jogo/cosmic-encounter-duel",
+    "https://www.pandaboardgames.com.br/cosmic-encounter-duel"
+   ],
+   "obs": "Galápagos, junho de 2020"
+  },
+  {
+   "jogo": "Cosmic Encounter (Fantasy Flight, 2008)",
+   "resultado": "não encontrada",
+   "data": "11/11/2026",
+   "fontes": [
+    "https://www.comparajogos.com.br/item/cosmic-encounter",
+    "https://ludopedia.com.br/jogo/cosmic-encounter"
+   ],
+   "obs": "edicao_nacional.py: sem oferta de jogo novo; edição antiga Contatos Cósmicos (Grow) fora de catálogo"
+  }
+ ],
+ "publicado_em": "2026-11-11T09:55:30+00:00"
+}
