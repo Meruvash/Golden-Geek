@@ -25,8 +25,7 @@
    "imagem": "https://game-flow.fr/wp-content/uploads/2026/10/Photo-detailCarte-MPZDragon.webp",
    "baixada_em": "2026-11-10",
    "aprovada": true,
-   "pessoas": true,
-   "fora": true
+   "principal": true
   },
   {
    "arquivo": "fotos/jogabilidade-1.webp",
@@ -39,7 +38,7 @@
    "imagem": "https://game-flow.fr/wp-content/uploads/2026/10/Photo-detailBoite-MPZOcre-2.webp",
    "baixada_em": "2026-11-10",
    "aprovada": true,
-   "principal": true
+   "fora": true
   },
   {
    "arquivo": "fotos/componentes-1.webp",
