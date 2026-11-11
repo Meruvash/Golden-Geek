@@ -686,7 +686,7 @@ const EFEITOS: Efeito[] = [
 
 const TODOS = [...PLANOS, ...EXTRAS].sort((a, b) => a.t - b.t);
 
-export const Victor1: React.FC = () => {
+export const Victor1: React.FC<{ mudo?: boolean }> = ({ mudo = false }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const s = frame / fps;
@@ -707,6 +707,7 @@ export const Victor1: React.FC = () => {
       <PoeiraLuz s={s} n={18} caixa={[0, 0, 1080, 1080]} cor="#ffe6ff" />
 
       {/* ===================== áudio: trilha por clima + efeitos no tempo da piada ===================== */}
+      {!mudo ? (<>
       {TRILHAS.map((m, i) => (
         <Sequence key={`m${i}`} from={Math.round(m.de * fps)} durationInFrames={Math.round((m.ate - m.de) * fps)} layout="none">
           <Audio src={staticFile(`audio/victor1/${m.f}.mp3`)} volume={(f) => { const t = f / fps, d = m.ate - m.de; return m.v * Math.min(1, t / 0.25) * Math.min(1, (d - t) / 0.6) * (falando(m.de + t) ? m.duck : 1); }} />
@@ -722,6 +723,11 @@ export const Victor1: React.FC = () => {
           <Audio src={staticFile(e.f.startsWith("sfx/") ? e.f : `audio/victor1/s-${e.f}.mp3`)} volume={e.v} />
         </Sequence>
       ))}
+      </>) : null}
     </AbsoluteFill>
   );
 };
+
+// marcos usados para dividir o episódio em duas partes (Partes.tsx)
+export const CORTE_PARTE1 = I(27) - 0.6; // o Victor acabou de pisar no vazio (antes do resgate)
+export const INICIO_PARTE2 = I(25) - 0.7; // a hipnose: "Que crina… maravilhosa…"

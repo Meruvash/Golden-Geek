@@ -13,6 +13,7 @@ import { ColtGancho } from "./colt/Gancho";
 import { Colt, FIM_COLT } from "./colt/Colt";
 import { FIM_WAN1, Wan1 } from "./wan1/Wan1";
 import { FIM_VICTOR1, Victor1 } from "./victor1/Victor1";
+import { DUR_P1, DUR_P2, VictorParte1, VictorParte2 } from "./victor1/Partes";
 import { Seti, FIM_SETI } from "./seti/Seti";
 import { FichaPersonagem, Quadro1, Quadro2, Quadro3 } from "./quadros/Quadros";
 
@@ -30,6 +31,8 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="AndromedaParte1Quadrado" component={AeP1} width={1080} height={1080} fps={30} durationInFrames={Math.ceil(FIM_P1 * 30)} defaultProps={{ quadrado: true }} />
       <Composition id="AndromedaParte2Quadrado" component={AeP2} width={1080} height={1080} fps={30} durationInFrames={Math.ceil(FIM_P2 * 30)} defaultProps={{ quadrado: true }} />
       <Still id="FichaRonaldo" component={FichaPersonagem} width={1080} height={1920} defaultProps={{ quem: "ronaldo" as const }} />
+      <Composition id="VictorParte1" component={VictorParte1} width={1080} height={1080} fps={30} durationInFrames={Math.ceil(DUR_P1 * 30)} />
+      <Composition id="VictorParte2" component={VictorParte2} width={1080} height={1080} fps={30} durationInFrames={Math.ceil(DUR_P2 * 30)} />
       <Composition id="VictorTalaricornio" component={Victor1} width={1080} height={1080} fps={30} durationInFrames={Math.ceil(FIM_VICTOR1 * 30)} />
       <Composition id="AssaltoDoWanP1" component={Wan1} width={1080} height={1080} fps={30} durationInFrames={Math.ceil(FIM_WAN1 * 30)} />
       <Composition id="AssaltoDoWanVertical" component={Colt} width={1080} height={1920} fps={30} durationInFrames={Math.ceil(FIM_COLT * 30)} />
