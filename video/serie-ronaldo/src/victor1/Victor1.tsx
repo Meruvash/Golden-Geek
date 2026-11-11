@@ -372,7 +372,7 @@ const PLANOS: Plano[] = [
         <AbsoluteFill style={{ top: 690, background: "linear-gradient(180deg, rgba(226,96,58,0) 0px, #b04a4a 40px, #5a2a5a 200px, #1a0c24 390px)" }} />
         <Svg><Dragao x={-200 + 1600 * lin(s, I(27) - 0.5, I(27) + 1.0)} y={180} escala={0.9} t={s} /></Svg>
         <Svg cel="cel">
-          <WanHD x={680} y={510} escala={0.62} expr="serio" pose="bracos" luz={LUZ_POENTE} id="wv" piscar={pisca(s)} />
+          <WanHD x={680} y={510} escala={0.62} faroeste={false} expr="serio" pose="bracos" luz={LUZ_POENTE} id="wv" piscar={pisca(s)} />
           <path d="M650,200 L560,320 L586,336 L672,220 Z" fill="#34363f" stroke="#5a3a2a" strokeWidth={3} />
           <circle cx={566} cy={332} r={16} fill="#f6d2b8" stroke="#5a3a2a" strokeWidth={3} />
           <g transform={`rotate(${balanco},566,332)`}>
@@ -385,7 +385,7 @@ const PLANOS: Plano[] = [
     );
   } },
   { t: I(28) - 0.1, render: (s, ls) => (
-    <Cam ls={ls} de={1} ate={1.06} dur={2}><Fundo nome="eclipse" filtro="blur(5px)" /><Svg><WanHD x={540} y={2560} escala={2.9} expr="serio" pose="bracos" luz={LUZ_POENTE} id="wc" piscar={pisca(s)} /></Svg></Cam>
+    <Cam ls={ls} de={1} ate={1.06} dur={2}><Fundo nome="eclipse" filtro="blur(5px)" /><Svg><WanHD x={540} y={2560} escala={2.9} faroeste={false} expr="serio" pose="bracos" luz={LUZ_POENTE} id="wc" piscar={pisca(s)} /></Svg></Cam>
   ) },
   // o Reteté
   { t: I(29) - 0.1, render: (s, ls) => {
@@ -439,7 +439,7 @@ const PLANOS: Plano[] = [
   ) },
   // escolha (modelo saveo): o Wan apresenta as opções
   { t: I(33) - 0.2, render: (s, ls) => (
-    <Cam ls={ls} de={1} ate={1.05} dur={2.4}><Fundo nome="eclipse" filtro="blur(5px)" /><Svg><WanHD x={540} y={2560} escala={2.9} expr="calmo" pose="bracos" luz={LUZ_POENTE} id="wd" piscar={pisca(s)} /></Svg></Cam>
+    <Cam ls={ls} de={1} ate={1.05} dur={2.4}><Fundo nome="eclipse" filtro="blur(5px)" /><Svg><WanHD x={540} y={2560} escala={2.9} faroeste={false} expr="calmo" pose="bracos" luz={LUZ_POENTE} id="wd" piscar={pisca(s)} /></Svg></Cam>
   ) },
   { t: I(34) - 0.1, render: (s) => {
     const opt = (x: number, t0: number, titulo: string, l1: string, l2: string, ativo: boolean, cor: string, img: React.ReactNode) => (

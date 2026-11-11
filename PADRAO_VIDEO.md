@@ -164,6 +164,7 @@ O vetor chapado com personagem de cabeça redonda foi aposentado pelo editor ("n
 
 - **Cenários pintados em código** com a skill `claude-drawing` (estilo anime): céu em degradê, nuvens esculpidas, raios de sol, bloom. Scripts em `video/serie-ronaldo/arte/` (ex.: `fundo_deserto.py`, com versão diurna e noturna).
 - **Personagens no estilo 35_shinkai** da `huashu-art-motion` (`src/personagens/WanHD.tsx`): célula em duas camadas por peça (sombra do lado oposto à luz, borda iluminada do lado da luz), contorno marrom quente, olhos de anime com íris em degradê e dois brilhos, anatomia adulta. Passar a "linha de entrega" de `references/角色精细度.md` (silhueta, esqueleto, mãos, 2 camadas de luz, 3 detalhes de material, atuação, mesmo estilo do fundo, consistência).
+- **O Wan só usa chapéu e lenço de bandido nos episódios de faroeste** (Colt Express). Nos outros, `faroeste={false}`: cabelo grisalho, terno de risca de giz e gravata (pedido do editor, 11/11/2026).
 - **A luz do personagem segue a cena** (`LUZ_POENTE`, `LUZ_LAMPIAO`, `LUZ_LUA`).
 - **Atmosfera Shinkai em toda cena** (`src/colt/luz.tsx`): raios de Tyndall, poeira luminosa, flare de lente, separação quente/frio, pássaros, fumaça, tremor de calor. O mundo nunca para.
 - **Movimento (Huashu 09, seção 3)**: câmera só se move em evento; entra devagar (0,3–0,4 s), sai rápido (~0,18 s) e para; carimbo de palavra 1,55 → 0,94 → 1,0 em 0,17 s; piscar a cada ~3,5 s; respiração leve.
