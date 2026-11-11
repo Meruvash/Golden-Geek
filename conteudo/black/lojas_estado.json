@@ -10,7 +10,7 @@
   },
   "bravojogos.com.br": {
    "dia": "2026-11-11",
-   "paginas": 5
+   "paginas": 7
   },
   "brecholudico.com.br": {
    "dia": "2026-11-11",
@@ -24,7 +24,7 @@
   },
   "interludi.com.br": {
    "dia": "2026-11-11",
-   "paginas": 3
+   "paginas": 4
   },
   "itabuleiros.lojaintegrada.com.br": {
    "dia": "2026-11-11",
@@ -116,7 +116,7 @@
   },
   "www.boardgameplaystore.com.br": {
    "dia": "2026-11-11",
-   "paginas": 3
+   "paginas": 5
   },
   "www.boargames.com.br": {
    "descanso_ate": "2026-11-11T09:44+00:00",
@@ -294,7 +294,7 @@
   },
   "www.promobit.com.br": {
    "dia": "2026-11-11",
-   "paginas": 30
+   "paginas": 40
   },
   "www.reunionjogos.com.br": {
    "dia": "2026-11-11",
@@ -352,6 +352,12 @@
   }
  },
  "precos": {
+  "https://bravojogos.com.br/black-bravo/jogo-3-capitulos": {
+   "cj": 46.49,
+   "estoque": true,
+   "hora": "2026-11-11T08:22+00:00",
+   "preco": 49.99
+  },
   "https://bravojogos.com.br/black-bravo/jogo-galaxy-trucker-segunda-edicao": {
    "cj": 199.02,
    "estoque": true,
@@ -409,7 +415,7 @@
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/fabulinhas-p": {
    "cj": 65.01,
    "estoque": true,
-   "hora": "2026-11-10T20:18+00:00",
+   "hora": "2026-11-11T08:22+00:00",
    "preco": 69.9
   },
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/imperium-classics-p": {
