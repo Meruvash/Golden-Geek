@@ -27,8 +27,11 @@ def ouvir(arq):
     return " ".join(p["text"] for p in palavras(arq))
 
 
-def tts(texto, voz, semente, saida, modelo="eleven_v3"):
-    corpo = json.dumps({"text": texto, "model_id": modelo, "language_code": "pt", "seed": semente}).encode()
+def tts(texto, voz, semente, saida, modelo="eleven_v3", ajustes=None):
+    pedido = {"text": texto, "model_id": modelo, "language_code": "pt", "seed": semente}
+    if ajustes:  # "ajustes" na fala: voice_settings (ex.: estabilidade baixa e estilo alto para mais drama)
+        pedido["voice_settings"] = ajustes
+    corpo = json.dumps(pedido).encode()
     req = urllib.request.Request(f"https://api.elevenlabs.io/v1/text-to-speech/{voz}?output_format=mp3_44100_128", data=corpo, headers={"Content-Type": "application/json"})
     with urllib.request.urlopen(req, timeout=180) as r, open(saida, "wb") as o:
         o.write(r.read())
@@ -46,7 +49,7 @@ for f in falas:
         # "modelo": eleven_multilingual_v2 segue o sotaque da voz (brasileiro) quando o v3 escorrega para o português de Portugal
         modelo = f.get("modelo", "eleven_v3")
         texto = f.get("fala", f["texto"]) if modelo == "eleven_v3" else f["texto"]  # marcações [..] só existem no v3
-        tts(texto, VOZES[f["quem"]], 100 * f["id"] + tentativa + int(os.environ.get("SEMENTE", "0")), mp3, modelo)
+        tts(texto, VOZES[f["quem"]], 100 * f["id"] + tentativa + int(os.environ.get("SEMENTE", "0")), mp3, modelo, f.get("ajustes"))
         wav = mp3[:-4] + ".wav"
         subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", mp3, "-ar", "44100", "-ac", "1", wav], check=True)
         ouvido = ouvir(wav)
