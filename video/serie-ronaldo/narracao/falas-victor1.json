@@ -1,0 +1,1587 @@
+[
+ {
+  "id": 1,
+  "quem": "victor",
+  "texto": "Cento e doze anos esperando esse eclipse.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/victor1/fala-01.wav",
+  "dur": 2.158,
+  "palavras_ouvidas": [
+   {
+    "text": "112",
+    "start": 0.18,
+    "end": 0.64
+   },
+   {
+    "text": "anos",
+    "start": 0.68,
+    "end": 0.86
+   },
+   {
+    "text": "esperando",
+    "start": 0.88,
+    "end": 1.22
+   },
+   {
+    "text": "esse",
+    "start": 1.24,
+    "end": 1.38
+   },
+   {
+    "text": "eclipse",
+    "start": 1.42,
+    "end": 1.9
+   }
+  ]
+ },
+ {
+  "id": 2,
+  "quem": "victor",
+  "texto": "Hoje você é meu.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/victor1/fala-02.wav",
+  "dur": 1.134,
+  "palavras_ouvidas": [
+   {
+    "text": "Hoje",
+    "start": 0.06,
+    "end": 0.32
+   },
+   {
+    "text": "você",
+    "start": 0.34,
+    "end": 0.56
+   },
+   {
+    "text": "é",
+    "start": 0.58,
+    "end": 0.64
+   },
+   {
+    "text": "meu",
+    "start": 0.68,
+    "end": 0.86
+   }
+  ]
+ },
+ {
+  "id": 3,
+  "quem": "wan",
+  "texto": "Victor, não!",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/victor1/fala-03.wav",
+  "dur": 1.193,
+  "palavras_ouvidas": [
+   {
+    "text": "Victor",
+    "start": 0.1,
+    "end": 0.54
+   },
+   {
+    "text": "não",
+    "start": 0.66,
+    "end": 0.92
+   }
+  ]
+ },
+ {
+  "id": 4,
+  "quem": "lukita",
+  "texto": "Probabilidade de capturar um Talaricórnio: zero vírgula zero zero três por cento.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/victor1/fala-04.wav",
+  "dur": 3.988,
+  "palavras_ouvidas": [
+   {
+    "text": "Probabilidade",
+    "start": 0.08,
+    "end": 0.72
+   },
+   {
+    "text": "de",
+    "start": 0.76,
+    "end": 0.82
+   },
+   {
+    "text": "capturar",
+    "start": 0.84,
+    "end": 1.2
+   },
+   {
+    "text": "um",
+    "start": 1.22,
+    "end": 1.28
+   },
+   {
+    "text": "talaricórnio:",
+    "start": 1.3,
+    "end": 1.94
+   },
+   {
+    "text": "0,003%.",
+    "start": 2.3,
+    "end": 3.88
+   }
+  ]
+ },
+ {
+  "id": 5,
+  "quem": "victor",
+  "texto": "Eu não preciso de sorte. Eu tenho a eternidade.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/victor1/fala-05.wav",
+  "dur": 3.204,
+  "palavras_ouvidas": [
+   {
+    "text": "Eu",
+    "start": 0.1,
+    "end": 0.18
+   },
+   {
+    "text": "não",
+    "start": 0.22,
+    "end": 0.34
+   },
+   {
+    "text": "preciso",
+    "start": 0.36,
+    "end": 0.78
+   },
+   {
+    "text": "de",
+    "start": 0.8,
+    "end": 0.86
+   },
+   {
+    "text": "sorte.",
+    "start": 0.96,
+    "end": 1.3
+   },
+   {
+    "text": "Eu",
+    "start": 1.74,
+    "end": 1.82
+   },
+   {
+    "text": "tenho",
+    "start": 1.94,
+    "end": 2.12
+   },
+   {
+    "text": "a",
+    "start": 2.16,
+    "end": 2.2
+   },
+   {
+    "text": "eternidade",
+    "start": 2.24,
+    "end": 2.92
+   }
+  ]
+ },
+ {
+  "id": 6,
+  "quem": "lukita",
+  "texto": "Você tem é olheira.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/victor1/fala-06.wav",
+  "dur": 1.192,
+  "palavras_ouvidas": [
+   {
+    "text": "Você",
+    "start": 0.08,
+    "end": 0.3
+   },
+   {
+    "text": "tem",
+    "start": 0.34,
+    "end": 0.46
+   },
+   {
+    "text": "é",
+    "start": 0.5,
+    "end": 0.58
+   },
+   {
+    "text": "olheira",
+    "start": 0.62,
+    "end": 0.96
+   }
+  ]
+ },
+ {
+  "id": 7,
+  "quem": "ronaldo",
+  "texto": "Rapaz, ele é mais branco que papel de pão.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/victor1/fala-07.wav",
+  "dur": 2.385,
+  "palavras_ouvidas": [
+   {
+    "text": "Rapaz,",
+    "start": 0.08,
+    "end": 0.46
+   },
+   {
+    "text": "ele",
+    "start": 0.56,
+    "end": 0.68
+   },
+   {
+    "text": "é",
+    "start": 0.72,
+    "end": 0.78
+   },
+   {
+    "text": "mais",
+    "start": 0.82,
+    "end": 1.04
+   },
+   {
+    "text": "branco",
+    "start": 1.08,
+    "end": 1.36
+   },
+   {
+    "text": "que",
+    "start": 1.4,
+    "end": 1.5
+   },
+   {
+    "text": "papel",
+    "start": 1.52,
+    "end": 1.78
+   },
+   {
+    "text": "de",
+    "start": 1.82,
+    "end": 1.92
+   },
+   {
+    "text": "pão",
+    "start": 1.96,
+    "end": 2.12
+   }
+  ]
+ },
+ {
+  "id": 8,
+  "quem": "victor",
+  "texto": "Vocês não entendem. Ele não é um unicórnio qualquer.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/victor1/fala-08.wav",
+  "dur": 3.478,
+  "palavras_ouvidas": [
+   {
+    "text": "Vocês",
+    "start": 0.08,
+    "end": 0.32
+   },
+   {
+    "text": "não",
+    "start": 0.34,
+    "end": 0.44
+   },
+   {
+    "text": "entendem.",
+    "start": 0.48,
+    "end": 0.96
+   },
+   {
+    "text": "Ele",
+    "start": 1.56,
+    "end": 1.72
+   },
+   {
+    "text": "não",
+    "start": 1.76,
+    "end": 1.94
+   },
+   {
+    "text": "é",
+    "start": 2.0,
+    "end": 2.04
+   },
+   {
+    "text": "um",
+    "start": 2.12,
+    "end": 2.18
+   },
+   {
+    "text": "unicórnio",
+    "start": 2.22,
+    "end": 2.76
+   },
+   {
+    "text": "qualquer",
+    "start": 2.78,
+    "end": 3.22
+   }
+  ]
+ },
+ {
+  "id": 9,
+  "quem": "victor",
+  "texto": "Eles riem. Ninguém sabe o que esse bicho me tirou.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/victor1/fala-09.wav",
+  "dur": 3.092,
+  "palavras_ouvidas": [
+   {
+    "text": "Eles",
+    "start": 0.1,
+    "end": 0.32
+   },
+   {
+    "text": "riem.",
+    "start": 0.36,
+    "end": 0.64
+   },
+   {
+    "text": "Ninguém",
+    "start": 1.18,
+    "end": 1.5
+   },
+   {
+    "text": "sabe",
+    "start": 1.56,
+    "end": 1.74
+   },
+   {
+    "text": "o",
+    "start": 1.78,
+    "end": 1.82
+   },
+   {
+    "text": "que",
+    "start": 1.84,
+    "end": 1.9
+   },
+   {
+    "text": "esse",
+    "start": 1.94,
+    "end": 2.12
+   },
+   {
+    "text": "bicho",
+    "start": 2.16,
+    "end": 2.36
+   },
+   {
+    "text": "me",
+    "start": 2.38,
+    "end": 2.48
+   },
+   {
+    "text": "tirou",
+    "start": 2.5,
+    "end": 2.78
+   }
+  ]
+ },
+ {
+  "id": 10,
+  "quem": "victor",
+  "texto": "A Brasinha. Minha Mystling. Cem anos juntos.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/victor1/fala-10.wav",
+  "dur": 3.416,
+  "palavras_ouvidas": [
+   {
+    "text": "A",
+    "start": 0.08,
+    "end": 0.16
+   },
+   {
+    "text": "Brasinha,",
+    "start": 0.18,
+    "end": 0.74
+   },
+   {
+    "text": "minha",
+    "start": 1.22,
+    "end": 1.4
+   },
+   {
+    "text": "mistling,",
+    "start": 1.46,
+    "end": 1.98
+   },
+   {
+    "text": "100",
+    "start": 2.28,
+    "end": 2.46
+   },
+   {
+    "text": "anos",
+    "start": 2.5,
+    "end": 2.68
+   },
+   {
+    "text": "juntos",
+    "start": 2.74,
+    "end": 3.12
+   }
+  ]
+ },
+ {
+  "id": 11,
+  "quem": "victor",
+  "texto": "Bastou ele jogar a crina… e ela foi embora na garupa.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/victor1/fala-11.wav",
+  "dur": 3.747,
+  "palavras_ouvidas": [
+   {
+    "text": "Bastou",
+    "start": 0.1,
+    "end": 0.38
+   },
+   {
+    "text": "ele",
+    "start": 0.4,
+    "end": 0.5
+   },
+   {
+    "text": "jogar",
+    "start": 0.54,
+    "end": 0.78
+   },
+   {
+    "text": "a",
+    "start": 0.82,
+    "end": 0.84
+   },
+   {
+    "text": "crina",
+    "start": 0.94,
+    "end": 1.26
+   },
+   {
+    "text": "e",
+    "start": 1.82,
+    "end": 1.9
+   },
+   {
+    "text": "ela",
+    "start": 2.0,
+    "end": 2.14
+   },
+   {
+    "text": "foi",
+    "start": 2.26,
+    "end": 2.36
+   },
+   {
+    "text": "embora",
+    "start": 2.4,
+    "end": 2.88
+   },
+   {
+    "text": "na",
+    "start": 2.92,
+    "end": 2.98
+   },
+   {
+    "text": "garupa",
+    "start": 3.04,
+    "end": 3.48
+   }
+  ]
+ },
+ {
+  "id": 12,
+  "quem": "ronaldo",
+  "texto": "Gente… o vampiro tá chorando purpurina.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/victor1/fala-12.wav",
+  "dur": 2.453,
+  "palavras_ouvidas": [
+   {
+    "text": "Gente,",
+    "start": 0.1,
+    "end": 0.4
+   },
+   {
+    "text": "o",
+    "start": 0.82,
+    "end": 0.86
+   },
+   {
+    "text": "vampiro",
+    "start": 0.92,
+    "end": 1.26
+   },
+   {
+    "text": "tá",
+    "start": 1.28,
+    "end": 1.36
+   },
+   {
+    "text": "chorando",
+    "start": 1.4,
+    "end": 1.7
+   },
+   {
+    "text": "purpurina",
+    "start": 1.72,
+    "end": 2.18
+   }
+  ]
+ },
+ {
+  "id": 13,
+  "quem": "victor",
+  "texto": "Hoje você é meu.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/victor1/fala-13.wav",
+  "dur": 1.386,
+  "palavras_ouvidas": [
+   {
+    "text": "Hoje",
+    "start": 0.08,
+    "end": 0.46
+   },
+   {
+    "text": "você",
+    "start": 0.5,
+    "end": 0.78
+   },
+   {
+    "text": "é",
+    "start": 0.8,
+    "end": 0.88
+   },
+   {
+    "text": "meu",
+    "start": 0.92,
+    "end": 1.12
+   }
+  ]
+ },
+ {
+  "id": 14,
+  "quem": "lukita",
+  "texto": "Calculei. O eclipse começa às vinte e três e quarenta e sete.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/victor1/fala-14.wav",
+  "dur": 3.155,
+  "palavras_ouvidas": [
+   {
+    "text": "Calculei.",
+    "start": 0.08,
+    "end": 0.6
+   },
+   {
+    "text": "O",
+    "start": 0.74,
+    "end": 0.78
+   },
+   {
+    "text": "eclipse",
+    "start": 0.82,
+    "end": 1.16
+   },
+   {
+    "text": "começa",
+    "start": 1.2,
+    "end": 1.5
+   },
+   {
+    "text": "às",
+    "start": 1.52,
+    "end": 1.64
+   },
+   {
+    "text": "23:47",
+    "start": 1.74,
+    "end": 2.96
+   }
+  ]
+ },
+ {
+  "id": 15,
+  "quem": "lukita",
+  "texto": "Nesse minuto, o brilho dele apaga por nove segundos.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/victor1/fala-15.wav",
+  "dur": 2.833,
+  "palavras_ouvidas": [
+   {
+    "text": "Nesse",
+    "start": 0.08,
+    "end": 0.28
+   },
+   {
+    "text": "minuto,",
+    "start": 0.32,
+    "end": 0.62
+   },
+   {
+    "text": "o",
+    "start": 0.7,
+    "end": 0.74
+   },
+   {
+    "text": "brilho",
+    "start": 0.8,
+    "end": 1.06
+   },
+   {
+    "text": "dele",
+    "start": 1.1,
+    "end": 1.24
+   },
+   {
+    "text": "apaga",
+    "start": 1.28,
+    "end": 1.6
+   },
+   {
+    "text": "por",
+    "start": 1.7,
+    "end": 1.84
+   },
+   {
+    "text": "nove",
+    "start": 1.88,
+    "end": 2.14
+   },
+   {
+    "text": "segundos",
+    "start": 2.18,
+    "end": 2.62
+   }
+  ]
+ },
+ {
+  "id": 16,
+  "quem": "lukita",
+  "texto": "Nove segundos. É a sua única janela.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/victor1/fala-16.wav",
+  "dur": 1.951,
+  "palavras_ouvidas": [
+   {
+    "text": "Nove",
+    "start": 0.08,
+    "end": 0.26
+   },
+   {
+    "text": "segundos,",
+    "start": 0.34,
+    "end": 0.72
+   },
+   {
+    "text": "é",
+    "start": 0.78,
+    "end": 0.82
+   },
+   {
+    "text": "a",
+    "start": 0.84,
+    "end": 0.86
+   },
+   {
+    "text": "sua",
+    "start": 0.92,
+    "end": 1.08
+   },
+   {
+    "text": "única",
+    "start": 1.12,
+    "end": 1.36
+   },
+   {
+    "text": "janela",
+    "start": 1.4,
+    "end": 1.74
+   }
+  ]
+ },
+ {
+  "id": 17,
+  "quem": "victor",
+  "texto": "Eu espero há cento e doze anos. Espero mais nove segundos.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/victor1/fala-17.wav",
+  "dur": 3.715,
+  "palavras_ouvidas": [
+   {
+    "text": "Eu",
+    "start": 0.08,
+    "end": 0.16
+   },
+   {
+    "text": "espero",
+    "start": 0.2,
+    "end": 0.54
+   },
+   {
+    "text": "há",
+    "start": 0.56,
+    "end": 0.68
+   },
+   {
+    "text": "112",
+    "start": 0.84,
+    "end": 1.32
+   },
+   {
+    "text": "anos.",
+    "start": 1.38,
+    "end": 1.68
+   },
+   {
+    "text": "Espero",
+    "start": 2.04,
+    "end": 2.34
+   },
+   {
+    "text": "mais",
+    "start": 2.38,
+    "end": 2.66
+   },
+   {
+    "text": "nove",
+    "start": 2.72,
+    "end": 2.94
+   },
+   {
+    "text": "segundos",
+    "start": 3.02,
+    "end": 3.5
+   }
+  ]
+ },
+ {
+  "id": 18,
+  "quem": "lukita",
+  "texto": "Três regras. Não olha nos olhos dele.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/victor1/fala-18.wav",
+  "dur": 1.882,
+  "palavras_ouvidas": [
+   {
+    "text": "Três",
+    "start": 0.08,
+    "end": 0.3
+   },
+   {
+    "text": "regras:",
+    "start": 0.34,
+    "end": 0.68
+   },
+   {
+    "text": "não",
+    "start": 0.78,
+    "end": 0.86
+   },
+   {
+    "text": "olha",
+    "start": 0.9,
+    "end": 1.02
+   },
+   {
+    "text": "nos",
+    "start": 1.04,
+    "end": 1.14
+   },
+   {
+    "text": "olhos",
+    "start": 1.2,
+    "end": 1.42
+   },
+   {
+    "text": "dele",
+    "start": 1.44,
+    "end": 1.68
+   }
+  ]
+ },
+ {
+  "id": 19,
+  "quem": "lukita",
+  "texto": "Não elogia a crina.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/victor1/fala-19.wav",
+  "dur": 1.208,
+  "palavras_ouvidas": [
+   {
+    "text": "Não",
+    "start": 0.1,
+    "end": 0.18
+   },
+   {
+    "text": "elogia",
+    "start": 0.22,
+    "end": 0.58
+   },
+   {
+    "text": "a",
+    "start": 0.58,
+    "end": 0.6
+   },
+   {
+    "text": "crina",
+    "start": 0.72,
+    "end": 1.04
+   }
+  ]
+ },
+ {
+  "id": 20,
+  "quem": "lukita",
+  "texto": "E nunca, jamais, apresenta a sua namorada.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/victor1/fala-20.wav",
+  "dur": 1.997,
+  "palavras_ouvidas": [
+   {
+    "text": "E",
+    "start": 0.08,
+    "end": 0.12
+   },
+   {
+    "text": "nunca,",
+    "start": 0.16,
+    "end": 0.38
+   },
+   {
+    "text": "jamais",
+    "start": 0.46,
+    "end": 0.8
+   },
+   {
+    "text": "apresenta",
+    "start": 0.84,
+    "end": 1.18
+   },
+   {
+    "text": "a",
+    "start": 1.22,
+    "end": 1.24
+   },
+   {
+    "text": "sua",
+    "start": 1.3,
+    "end": 1.4
+   },
+   {
+    "text": "namorada",
+    "start": 1.42,
+    "end": 1.9
+   }
+  ]
+ },
+ {
+  "id": 21,
+  "quem": "victor",
+  "texto": "Eu não tenho namorada.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/victor1/fala-21.wav",
+  "dur": 1.505,
+  "palavras_ouvidas": [
+   {
+    "text": "Eu",
+    "start": 0.1,
+    "end": 0.22
+   },
+   {
+    "text": "não",
+    "start": 0.26,
+    "end": 0.42
+   },
+   {
+    "text": "tenho",
+    "start": 0.48,
+    "end": 0.68
+   },
+   {
+    "text": "namorada",
+    "start": 0.7,
+    "end": 1.22
+   }
+  ]
+ },
+ {
+  "id": 22,
+  "quem": "vendedor",
+  "texto": "Eu tenho! Amor, cadê você?",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/victor1/fala-22.wav",
+  "dur": 1.68,
+  "palavras_ouvidas": [
+   {
+    "text": "Eu",
+    "start": 0.08,
+    "end": 0.14
+   },
+   {
+    "text": "tenho.",
+    "start": 0.22,
+    "end": 0.46
+   },
+   {
+    "text": "Amor,",
+    "start": 0.72,
+    "end": 0.88
+   },
+   {
+    "text": "cadê",
+    "start": 0.94,
+    "end": 1.1
+   },
+   {
+    "text": "você?",
+    "start": 1.14,
+    "end": 1.42
+   }
+  ]
+ },
+ {
+  "id": 23,
+  "quem": "vendedor",
+  "texto": "…Tinha.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/victor1/fala-23.wav",
+  "dur": 0.603,
+  "palavras_ouvidas": [
+   {
+    "text": "Tinha",
+    "start": 0.08,
+    "end": 0.34
+   }
+  ]
+ },
+ {
+  "id": 24,
+  "quem": "ronaldo",
+  "texto": "Oxe! Começou o expediente dele.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/victor1/fala-24.wav",
+  "dur": 2.209,
+  "palavras_ouvidas": [
+   {
+    "text": "\"Oxe!\",",
+    "start": 0.06,
+    "end": 0.38
+   },
+   {
+    "text": "começou",
+    "start": 0.68,
+    "end": 1.04
+   },
+   {
+    "text": "o",
+    "start": 1.06,
+    "end": 1.1
+   },
+   {
+    "text": "expediente",
+    "start": 1.14,
+    "end": 1.64
+   },
+   {
+    "text": "dele",
+    "start": 1.74,
+    "end": 1.96
+   }
+  ]
+ },
+ {
+  "id": 25,
+  "quem": "victor",
+  "texto": "Que crina… maravilhosa…",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/victor1/fala-25.wav",
+  "dur": 1.846,
+  "palavras_ouvidas": [
+   {
+    "text": "Que",
+    "start": 0.08,
+    "end": 0.2
+   },
+   {
+    "text": "crina",
+    "start": 0.24,
+    "end": 0.52
+   },
+   {
+    "text": "maravilhosa",
+    "start": 0.92,
+    "end": 1.54
+   }
+  ]
+ },
+ {
+  "id": 26,
+  "quem": "lukita",
+  "texto": "Ele quebrou a regra um e a regra dois!",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/victor1/fala-26.wav",
+  "dur": 2.09,
+  "palavras_ouvidas": [
+   {
+    "text": "Ele",
+    "start": 0.08,
+    "end": 0.22
+   },
+   {
+    "text": "quebrou",
+    "start": 0.24,
+    "end": 0.5
+   },
+   {
+    "text": "a",
+    "start": 0.54,
+    "end": 0.58
+   },
+   {
+    "text": "regra",
+    "start": 0.62,
+    "end": 0.92
+   },
+   {
+    "text": "um",
+    "start": 0.98,
+    "end": 1.08
+   },
+   {
+    "text": "e",
+    "start": 1.12,
+    "end": 1.16
+   },
+   {
+    "text": "a",
+    "start": 1.2,
+    "end": 1.24
+   },
+   {
+    "text": "regra",
+    "start": 1.28,
+    "end": 1.52
+   },
+   {
+    "text": "dois",
+    "start": 1.58,
+    "end": 1.96
+   }
+  ]
+ },
+ {
+  "id": 27,
+  "quem": "wan",
+  "texto": "Ninguém cai de penhasco no meu turno.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/victor1/fala-27.wav",
+  "dur": 2.47,
+  "palavras_ouvidas": [
+   {
+    "text": "Ninguém",
+    "start": 0.1,
+    "end": 0.46
+   },
+   {
+    "text": "cai",
+    "start": 0.56,
+    "end": 0.7
+   },
+   {
+    "text": "de",
+    "start": 0.74,
+    "end": 0.86
+   },
+   {
+    "text": "penhasco",
+    "start": 0.88,
+    "end": 1.42
+   },
+   {
+    "text": "no",
+    "start": 1.46,
+    "end": 1.56
+   },
+   {
+    "text": "meu",
+    "start": 1.6,
+    "end": 1.72
+   },
+   {
+    "text": "turno",
+    "start": 1.84,
+    "end": 2.2
+   }
+  ]
+ },
+ {
+  "id": 28,
+  "quem": "wan",
+  "texto": "Ronaldo. Agora.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/victor1/fala-28.wav",
+  "dur": 2.013,
+  "palavras_ouvidas": [
+   {
+    "text": "Ronaldo,",
+    "start": 0.08,
+    "end": 0.58
+   },
+   {
+    "text": "agora",
+    "start": 1.32,
+    "end": 1.74
+   }
+  ]
+ },
+ {
+  "id": 29,
+  "quem": "ronaldo",
+  "texto": "Segura que lá vem o Reteté!",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/victor1/fala-29.wav",
+  "dur": 1.546,
+  "palavras_ouvidas": [
+   {
+    "text": "Segura",
+    "start": 0.12,
+    "end": 0.38
+   },
+   {
+    "text": "que",
+    "start": 0.44,
+    "end": 0.52
+   },
+   {
+    "text": "lá",
+    "start": 0.54,
+    "end": 0.66
+   },
+   {
+    "text": "vem",
+    "start": 0.68,
+    "end": 0.8
+   },
+   {
+    "text": "o",
+    "start": 0.84,
+    "end": 0.86
+   },
+   {
+    "text": "reteté",
+    "start": 0.9,
+    "end": 1.3
+   }
+  ]
+ },
+ {
+  "id": 30,
+  "quem": "victor",
+  "texto": "Cento e doze anos esperando esse eclipse.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/victor1/fala-30.wav",
+  "dur": 2.276,
+  "palavras_ouvidas": [
+   {
+    "text": "Cento",
+    "start": 0.1,
+    "end": 0.34
+   },
+   {
+    "text": "e",
+    "start": 0.36,
+    "end": 0.38
+   },
+   {
+    "text": "doze",
+    "start": 0.46,
+    "end": 0.64
+   },
+   {
+    "text": "anos",
+    "start": 0.78,
+    "end": 0.96
+   },
+   {
+    "text": "esperando",
+    "start": 1.0,
+    "end": 1.36
+   },
+   {
+    "text": "esse",
+    "start": 1.38,
+    "end": 1.52
+   },
+   {
+    "text": "eclipse",
+    "start": 1.54,
+    "end": 2.04
+   }
+  ]
+ },
+ {
+  "id": 31,
+  "quem": "victor",
+  "texto": "Hoje você é meu.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/victor1/fala-31.wav",
+  "dur": 1.107,
+  "palavras_ouvidas": [
+   {
+    "text": "Hoje",
+    "start": 0.06,
+    "end": 0.26
+   },
+   {
+    "text": "você",
+    "start": 0.3,
+    "end": 0.48
+   },
+   {
+    "text": "é",
+    "start": 0.52,
+    "end": 0.58
+   },
+   {
+    "text": "meu",
+    "start": 0.62,
+    "end": 0.84
+   }
+  ]
+ },
+ {
+  "id": 32,
+  "quem": "lukita",
+  "texto": "Recalculei. Agora ele tá a fim de você.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/victor1/fala-32.wav",
+  "dur": 2.064,
+  "palavras_ouvidas": [
+   {
+    "text": "Recalculei.",
+    "start": 0.08,
+    "end": 0.6
+   },
+   {
+    "text": "Agora",
+    "start": 0.78,
+    "end": 0.94
+   },
+   {
+    "text": "ele",
+    "start": 0.98,
+    "end": 1.1
+   },
+   {
+    "text": "tá",
+    "start": 1.14,
+    "end": 1.22
+   },
+   {
+    "text": "afim",
+    "start": 1.26,
+    "end": 1.48
+   },
+   {
+    "text": "de",
+    "start": 1.52,
+    "end": 1.58
+   },
+   {
+    "text": "você",
+    "start": 1.6,
+    "end": 1.94
+   }
+  ]
+ },
+ {
+  "id": 33,
+  "quem": "wan",
+  "texto": "Victor. Agora você decide.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/victor1/fala-33.wav",
+  "dur": 2.276,
+  "palavras_ouvidas": [
+   {
+    "text": "Victor,",
+    "start": 0.1,
+    "end": 0.42
+   },
+   {
+    "text": "agora",
+    "start": 0.88,
+    "end": 1.16
+   },
+   {
+    "text": "você",
+    "start": 1.2,
+    "end": 1.4
+   },
+   {
+    "text": "decide",
+    "start": 1.44,
+    "end": 1.88
+   }
+  ]
+ },
+ {
+  "id": 34,
+  "quem": "wan",
+  "texto": "Se captura, ele fica com você. Mas tudo que é casal da ilha corre perigo.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/victor1/fala-34.wav",
+  "dur": 5.991,
+  "palavras_ouvidas": [
+   {
+    "text": "Se",
+    "start": 0.1,
+    "end": 0.16
+   },
+   {
+    "text": "captura,",
+    "start": 0.22,
+    "end": 0.74
+   },
+   {
+    "text": "ele",
+    "start": 1.24,
+    "end": 1.4
+   },
+   {
+    "text": "fica",
+    "start": 1.46,
+    "end": 1.7
+   },
+   {
+    "text": "com",
+    "start": 1.72,
+    "end": 1.84
+   },
+   {
+    "text": "você,",
+    "start": 1.88,
+    "end": 2.24
+   },
+   {
+    "text": "mas",
+    "start": 2.86,
+    "end": 3.12
+   },
+   {
+    "text": "tudo",
+    "start": 3.16,
+    "end": 3.36
+   },
+   {
+    "text": "que",
+    "start": 3.44,
+    "end": 3.5
+   },
+   {
+    "text": "é",
+    "start": 3.54,
+    "end": 3.6
+   },
+   {
+    "text": "casal",
+    "start": 3.64,
+    "end": 4.04
+   },
+   {
+    "text": "da",
+    "start": 4.1,
+    "end": 4.24
+   },
+   {
+    "text": "ilha",
+    "start": 4.36,
+    "end": 4.56
+   },
+   {
+    "text": "corre",
+    "start": 4.9,
+    "end": 5.14
+   },
+   {
+    "text": "perigo",
+    "start": 5.18,
+    "end": 5.62
+   }
+  ]
+ },
+ {
+  "id": 35,
+  "quem": "wan",
+  "texto": "Se liberta, a Brasinha volta pra você. Mas o Talaricórnio fica solto.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/victor1/fala-35.wav",
+  "dur": 5.48,
+  "palavras_ouvidas": [
+   {
+    "text": "Se",
+    "start": 0.1,
+    "end": 0.16
+   },
+   {
+    "text": "liberta,",
+    "start": 0.2,
+    "end": 0.64
+   },
+   {
+    "text": "a",
+    "start": 1.06,
+    "end": 1.1
+   },
+   {
+    "text": "brasinha",
+    "start": 1.16,
+    "end": 1.54
+   },
+   {
+    "text": "volta",
+    "start": 1.62,
+    "end": 1.9
+   },
+   {
+    "text": "pra",
+    "start": 1.92,
+    "end": 2.04
+   },
+   {
+    "text": "você,",
+    "start": 2.06,
+    "end": 2.36
+   },
+   {
+    "text": "mas",
+    "start": 3.1,
+    "end": 3.34
+   },
+   {
+    "text": "o",
+    "start": 3.36,
+    "end": 3.46
+   },
+   {
+    "text": "talaricórnio",
+    "start": 3.48,
+    "end": 4.24
+   },
+   {
+    "text": "fica",
+    "start": 4.44,
+    "end": 4.62
+   },
+   {
+    "text": "solto",
+    "start": 4.74,
+    "end": 5.1
+   }
+  ]
+ },
+ {
+  "id": 36,
+  "quem": "wan",
+  "texto": "Comenta CAPTURAR ou LIBERTAR.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/victor1/fala-36.wav",
+  "dur": 2.458,
+  "palavras_ouvidas": [
+   {
+    "text": "Comenta:",
+    "start": 0.1,
+    "end": 0.56
+   },
+   {
+    "text": "capturar",
+    "start": 0.7,
+    "end": 1.36
+   },
+   {
+    "text": "ou",
+    "start": 1.4,
+    "end": 1.48
+   },
+   {
+    "text": "libertar?",
+    "start": 1.56,
+    "end": 2.18
+   }
+  ]
+ },
+ {
+  "id": 37,
+  "quem": "ronaldo",
+  "texto": "E marca aquele amigo talarico.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/victor1/fala-37.wav",
+  "dur": 1.775,
+  "palavras_ouvidas": [
+   {
+    "text": "E",
+    "start": 0.06,
+    "end": 0.14
+   },
+   {
+    "text": "marca",
+    "start": 0.18,
+    "end": 0.46
+   },
+   {
+    "text": "aquele",
+    "start": 0.52,
+    "end": 0.74
+   },
+   {
+    "text": "amigo",
+    "start": 0.78,
+    "end": 1.0
+   },
+   {
+    "text": "talarico",
+    "start": 1.06,
+    "end": 1.5
+   }
+  ]
+ },
+ {
+  "id": 38,
+  "quem": "wan",
+  "texto": "A maioria escreve a Parte 2.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/victor1/fala-38.wav",
+  "dur": 2.337,
+  "palavras_ouvidas": [
+   {
+    "text": "A",
+    "start": 0.08,
+    "end": 0.12
+   },
+   {
+    "text": "maioria",
+    "start": 0.16,
+    "end": 0.44
+   },
+   {
+    "text": "escreve",
+    "start": 0.46,
+    "end": 0.96
+   },
+   {
+    "text": "a",
+    "start": 1.32,
+    "end": 1.34
+   },
+   {
+    "text": "parte",
+    "start": 1.42,
+    "end": 1.64
+   },
+   {
+    "text": "dois",
+    "start": 1.72,
+    "end": 2.04
+   }
+  ]
+ }
+]

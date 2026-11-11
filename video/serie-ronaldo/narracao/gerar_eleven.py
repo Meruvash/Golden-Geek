@@ -9,7 +9,9 @@ VOZES = {
     "narrador": "plASsyS7JE6GCAvx9uIc",  # Marcio - Viral Hook Narrator (biblioteca ElevenLabs, pt-BR)
     "wan": "hwnuNyWkl9DjdTFykrN6",  # Adriano - Deep, Gravelly and Rugged
     "ronaldo": "YU8EsJtXFMyKMxYtheDk",  # Mário - Excited, Constant and Cheerful
-    "lukita": "7lu3ze7orhWaNeSPowWx",  # Lucas - Engaging, Captivating and Kind (jovem, pt-BR)
+    "lukita": "7lu3ze7orhWaNeSPowWx",
+    "victor": "dX7gRq1dIvLTgUaWpEFn",  # Rafael Valente - Smooth and Captivating (pt-BR)
+    "vendedor": "plASsyS7JE6GCAvx9uIc",  # figurante com a voz do narrador  # Lucas - Engaging, Captivating and Kind (jovem, pt-BR)
 }
 NUM = {"1": "um", "2": "dois", "3": "três", "4": "quatro", "5": "cinco", "6": "seis"}
 
@@ -44,7 +46,7 @@ for f in falas:
         # "modelo": eleven_multilingual_v2 segue o sotaque da voz (brasileiro) quando o v3 escorrega para o português de Portugal
         modelo = f.get("modelo", "eleven_v3")
         texto = f.get("fala", f["texto"]) if modelo == "eleven_v3" else f["texto"]  # marcações [..] só existem no v3
-        tts(texto, VOZES[f["quem"]], 100 * f["id"] + tentativa, mp3, modelo)
+        tts(texto, VOZES[f["quem"]], 100 * f["id"] + tentativa + int(os.environ.get("SEMENTE", "0")), mp3, modelo)
         wav = mp3[:-4] + ".wav"
         subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", mp3, "-ar", "44100", "-ac", "1", wav], check=True)
         ouvido = ouvir(wav)
