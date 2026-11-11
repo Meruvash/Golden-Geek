@@ -4951,7 +4951,7 @@
     "api": {
      "anuncio": "MLB7964508876",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-11T01:22-03:00",
+     "hora": "2026-11-11T03:22-03:00",
      "nivel": "MercadoLíder silver",
      "preco": 277.5,
      "vendedor": "LOJA PLACEGAMES",
@@ -15350,9 +15350,9 @@
     "api": {
      "anuncio": "MLB4053900708",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-11T01:22-03:00",
+     "hora": "2026-11-11T03:22-03:00",
      "nivel": "loja oficial",
-     "preco": 95.5,
+     "preco": 90.99,
      "vendedor": "Mercado Livre Casa",
      "vendedor_ok": true
     },
@@ -28527,7 +28527,7 @@
     "api": {
      "anuncio": "MLB4061413027",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-11T01:22-03:00",
+     "hora": "2026-11-11T03:22-03:00",
      "nivel": "loja oficial",
      "preco": 217.37,
      "vendedor": "BRINKASHOPCOMRCIODEJOGOSE",
@@ -28611,7 +28611,7 @@
     "api": {
      "anuncio": "MLB4712352881",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-11T01:22-03:00",
+     "hora": "2026-11-11T03:22-03:00",
      "nivel": "MercadoLíder silver",
      "preco": 199.0,
      "vendedor": "QDIQUA_DIVERSOES_E_UTILIDADES",
@@ -28713,7 +28713,7 @@
     "api": {
      "anuncio": "MLB4234572173",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-11T01:22-03:00",
+     "hora": "2026-11-11T03:22-03:00",
      "nivel": "MercadoLíder platinum",
      "preco": 125.59,
      "vendedor": "BQD BRINQUEDOS",
@@ -31662,7 +31662,7 @@
     "api": {
      "anuncio": "MLB7412775836",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-11T00:16-03:00",
+     "hora": "2026-11-11T03:22-03:00",
      "nivel": "MercadoLíder gold",
      "preco": 54.9,
      "vendedor": "CASABRINCAR",
@@ -137219,6 +137219,15 @@
     "vendedor": null
    },
    {
+    "api": {
+     "anuncio": "MLB3336334485",
+     "fonte": "API do Mercado Livre",
+     "hora": "2026-11-11T03:24-03:00",
+     "nivel": "MercadoLíder platinum",
+     "preco": 429.9,
+     "vendedor": "NEWSTATION SOROCABA",
+     "vendedor_ok": true
+    },
     "atualizado": "2026-11-11T03:31:52.722+00:00",
     "de": 429.9,
     "loja": "Mercado Livre",
@@ -170335,7 +170344,7 @@
     "api": {
      "anuncio": "MLB4529807741",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-11T01:25-03:00",
+     "hora": "2026-11-11T03:25-03:00",
      "nivel": "MercadoLíder gold",
      "preco": 268.99,
      "vendedor": "ALPHAJOGOSLTDA",
@@ -175384,7 +175393,7 @@
     "api": {
      "anuncio": "MLB4589805887",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-10T23:01-03:00",
+     "hora": "2026-11-11T03:25-03:00",
      "nivel": "loja oficial",
      "preco": 42.76,
      "vendedor": "Mercado Livre Casa",
