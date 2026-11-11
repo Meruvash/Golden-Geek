@@ -2704,5 +2704,39 @@
    ],
    "verificado_em": "2026-11-10"
   }
+ },
+ "dlp-games.de": {
+  "nome": "dlp games",
+  "apelidos": [
+   "dlp games"
+  ],
+  "site": "https://www.dlp-games.de",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://www.dlp-games.de/unser-verlag/presse",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.dlp-games.de/sitemap.xml"
+   ],
+   "verificado_em": "2026-11-11"
+  }
+ },
+ "gamesup-games.com": {
+  "nome": "Game's Up",
+  "apelidos": [
+   "Game's Up"
+  ],
+  "site": "https://gamesup-games.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "erro",
+  "obs": "robots.txt de https://gamesup-games.com inacessível (erro de rede); tente mais tarde"
  }
 }

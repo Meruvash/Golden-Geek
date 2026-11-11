@@ -1,0 +1,422 @@
+{
+ "slug": "tapestry",
+ "jogo": "Tapestry",
+ "cor": "#8a5a2b",
+ "kicker": "Resenha · Civilização em quatro trilhos",
+ "og_titulo": "Tapestry vale a pena? Resenha Elite Boardgamers",
+ "titulo_busca": "Tapestry: resenha do top 3 do Golden Geek e do rebalanceamento",
+ "descricao": "Resenha de Tapestry, top 3 do Golden Geek 2019: como funcionam os quatro trilhos, o desequilíbrio das civilizações e o pacote revisado.",
+ "titulo_html": "O jogo de civilização que ganhou mais uma era depois de lançado: <span>Tapestry</span>",
+ "lede": "Tapestry é o jogo de civilização de Jamey Stegmaier, o autor de Scythe, para 1 a 5 pessoas em 90 a 120 minutos. Ficou entre os três primeiros do Golden Geek 2019 em Jogo do Ano e em Arte, atrás de Wingspan. A ironia que a gente vai explicar: um jogo em que cada civilização atravessa cinco eras precisou de mais uma fora da mesa, feita de ajustes e de um pacote de civilizações revisadas. Ficou de pé. Só que a caixa em português é de 2019.",
+ "tags": [
+  "1–5 jogadores",
+  "90–120 min",
+  "12+",
+  "Civilização",
+  "Construção de motor"
+ ],
+ "alt": "Partida de Tapestry com o mapa hexagonal no centro, capitais cheias de prédios em miniatura e monumentos pintados sobre a mesa",
+ "premiacoes": [
+  {
+   "premio": "Golden Geek",
+   "ano": 2019,
+   "categoria": "Jogo do Ano",
+   "colocacao": 3,
+   "resultado": "top 3",
+   "fonte": "https://gametyrant.com/news/winners-announced-for-14th-annual-golden-geek-awards",
+   "rotulo": "Top 3"
+  },
+  {
+   "premio": "Golden Geek",
+   "ano": 2019,
+   "categoria": "Arte",
+   "colocacao": 3,
+   "resultado": "top 3",
+   "fonte": "https://gametyrant.com/news/winners-announced-for-14th-annual-golden-geek-awards",
+   "rotulo": "Top 3"
+  }
+ ],
+ "ficha": [
+  [
+   "Ano",
+   "2019 (Stonemaier Games, lançamento no varejo em 01/11/2019); edição brasileira em 2019"
+  ],
+  [
+   "Designer",
+   "Jamey Stegmaier"
+  ],
+  [
+   "Arte",
+   "Andrew Bosley (ilustração) e Rom Brown (esculturas)"
+  ],
+  [
+   "Editora original",
+   "Stonemaier Games"
+  ],
+  [
+   "Editora no Brasil",
+   "Ludofy Creative, segundo o ComparaJogos e a Panda Boardgames; a Ludopedia (via busca) e um anúncio no Mercado Livre citam a Grok Games"
+  ],
+  [
+   "Jogadores",
+   "1 a 5"
+  ],
+  [
+   "Duração anunciada",
+   "90 a 120 minutos, com 5 minutos de preparação (Stonemaier)"
+  ],
+  [
+   "Idade",
+   "12+ (Panda Boardgames; BoardGameMatcher)"
+  ],
+  [
+   "Nota BGG",
+   "média 7,4, posição 308, com 23.371 avaliações (conforme site que replica o BGG)"
+  ],
+  [
+   "Peso BGG",
+   "cerca de 3,0 / 5 (conforme site que replica o BGG)"
+  ],
+  [
+   "Nota ComparaJogos",
+   "7,4; complexidade 3,0 / 5"
+  ],
+  [
+   "Nota Ludopedia",
+   "não confirmado nas fontes consultadas"
+  ],
+  [
+   "Idioma",
+   "texto moderado, exige consulta (ComparaJogos)"
+  ],
+  [
+   "Componentes",
+   "tabuleiro de 56 x 56 cm, 18 monumentos pré-pintados, 100 prédios em miniatura, 16 civilizações, 6 capitais, 5 tabuleiros de renda, 43 cartas de tapeçaria, 7 armadilhas, 33 cartas de tecnologia, 48 territórios, 15 peças de espaço, 3 dados e 50 postos avançados (Stonemaier)"
+  ],
+  [
+   "Modo solo oficial",
+   "Sim, com o Automa: 28 cartas, tabuleiro e manual próprios"
+  ],
+  [
+   "Versão digital",
+   "Board Game Arena, desde janeiro de 2022"
+  ],
+  [
+   "Prêmios",
+   "Golden Geek 2019: top 3 em Jogo do Ano e em Arte (vencedor nas duas: Wingspan)"
+  ]
+ ],
+ "nota_ficha": "Posição, nota e peso do BGG vêm de site que replica o BoardGameGeek, que bloqueia acesso automatizado. Nota e complexidade do ComparaJogos consultadas em 11/11/2026. A nota da Ludopedia não apareceu nas buscas.",
+ "como_funciona": [
+  "Cada jogador comanda uma civilização inventada, sem relação com a história real. Ele recebe um tabuleiro de capital, um tabuleiro de renda e escolhe entre duas civilizações sorteadas, cada uma com um poder próprio. Vence quem tiver mais pontos de vitória depois que todos terminarem.",
+  "No turno, você faz uma de duas coisas. No turno de avanço, paga recursos (moedas, trabalhadores, comida ou cultura) para subir um espaço num dos quatro trilhos: exploração, ciência, tecnologia e militar. Cada trilho tem quatro fileiras, de I a IV, e o custo sobe a cada fileira. O espaço dá um benefício, como explorar o mapa, conquistar território, rolar o dado de ciência ou inventar uma carta de tecnologia, e às vezes oferece um bônus pago à parte.",
+  "Muitos benefícios dão prédios em miniatura. Casas, fazendas, mercados e arsenais saem do tabuleiro de renda e vão para a grade da capital: tirar o prédio revela uma renda maior, completar um distrito de 3 por 3 casas dá um recurso e cada linha ou coluna completa vale ponto. Quem chega primeiro às fileiras II, III e IV de um trilho leva um monumento exclusivo, uma miniatura pintada maior.",
+  "Quando os recursos acabam, você faz o turno de renda e começa uma nova era: ativa o poder da civilização, joga uma carta de tapeçaria (efeito na hora ou válido até a próxima renda), melhora uma carta de tecnologia, marca os pontos expostos no tabuleiro de renda e recolhe recursos, cartas e territórios.",
+  "No mapa de hexágonos, explorar põe peças de território e pontua os lados que combinam; conquistar põe um posto avançado e rola dois dados para escolher uma recompensa, podendo derrubar o posto de um vizinho. O jogo de cada pessoa acaba no quinto turno de renda, então uns terminam antes dos outros. A caixa traz modo solo oficial com o Automa."
+ ],
+ "passos": [
+  [
+   "ESCOLHA A CIVILIZAÇÃO",
+   "Sorteie duas civilizações, fique com uma e pegue capital e tabuleiro de renda. O primeiro turno de cada jogador já é um turno de renda."
+  ],
+  [
+   "AVANCE NUM TRILHO",
+   "Pague recursos para subir um espaço em exploração, ciência, tecnologia ou militar. O custo sobe a cada fileira, e cada espaço dá um benefício."
+  ],
+  [
+   "ERGA A CAPITAL",
+   "Prédios saem do tabuleiro de renda e ocupam a grade da capital. Tirar o prédio libera renda; linhas, colunas e distritos completos rendem pontos e recursos."
+  ],
+  [
+   "COBRE A RENDA",
+   "Sem recursos, abra uma nova era: ative a civilização, jogue uma carta de tapeçaria, melhore uma tecnologia, marque pontos e recolha a renda."
+  ],
+  [
+   "FECHE A QUINTA ERA",
+   "Seu jogo acaba no quinto turno de renda, mesmo com os outros ainda jogando. Quando todos terminam, vence quem tiver mais pontos."
+  ]
+ ],
+ "como_resumo": "Suba quatro trilhos de civilização pagando recursos, encha a capital de prédios e cobre a renda cinco vezes.",
+ "perfil": [
+  [
+   "Trilhos e combos",
+   5
+  ],
+  [
+   "Componentes e mesa",
+   5
+  ],
+  [
+   "Facilidade de ensinar",
+   3
+  ],
+  [
+   "Equilíbrio entre civilizações",
+   2
+  ],
+  [
+   "Interação entre jogadores",
+   2
+  ],
+  [
+   "Partida curta",
+   2
+  ]
+ ],
+ "experiencia": [
+  "O turno é curto: sobe um espaço, pega o benefício, passa a vez. Matt Jarvis, da Tabletop Gaming, achou o jogo impressionantemente fluido de turno a turno, e a gente concorda. A decisão de verdade é quando parar. Você está com dois trabalhadores, vê que o vizinho também está a um passo da fileira II de tecnologia e paga primeiro, porque o monumento só sai para um. Ganhou a miniatura, ganhou casas ocupadas na capital e um ponto de linha na próxima renda.",
+  "O drama mora nas cartas de tapeçaria. Dan Thurot, do Space-Biff, escreveu que elas são absurdamente, dolorosamente divergentes nos efeitos: tem carta que vira a era e carta que serve de enfeite. Some a civilização sorteada e o dado de ciência de 12 faces, e às vezes a partida se decide antes de alguém entender por quê.",
+  "No fim, cada um fecha a quinta era num horário diferente, e quem acaba primeiro vira plateia. Oliver Kinne, do Tabletop Games Blog, descreve gente esperando os outros fazerem mais uma dúzia de turnos. É a única civilização da história em que o colapso vem com tempo livre."
+ ],
+ "citacao": {
+  "texto": "Cumpre a promessa de um jogo de civilização de duas horas com poucas regras.",
+  "fonte": "Dan Thurot, Ars Technica (tradução livre)"
+ },
+ "funciona": [
+  [
+   "Turno de uma linha",
+   "Na maior parte do tempo, o turno é subir um espaço num trilho e resolver o benefício. Matt Jarvis, da Tabletop Gaming, chamou o jogo de impressionantemente fluido, e a Board Game Quest contou menos de 30 minutos por jogador. Para um jogo de civilização, o ritmo é raro: dá para ensinar jogando."
+  ],
+  [
+   "Civilização em duas horas",
+   "Dan Thurot, na Ars Technica, escreveu que Tapestry cumpre a promessa de um jogo de civilização de duas horas com poucas regras. Não há árvore de tecnologia gigante nem fases de produção: são quatro trilhos, uma capital e um mapa, e o manual base tem quatro páginas, segundo a Stonemaier."
+  ],
+  [
+   "Mesa de vitrine",
+   "São 18 monumentos pré-pintados, de 28 a 70 mm, 100 prédios em miniatura e um tabuleiro de 56 por 56 cm. Keith Law, no A.V. Club, destaca a alta qualidade dos componentes. Ver a capital encher de casas e fazendas com um monumento no meio explica o top 3 em Arte no Golden Geek 2019."
+  ],
+  [
+   "Quatro caminhos de verdade",
+   "Exploração enche o mapa, militar disputa território, ciência rola um dado para avançar de graça e tecnologia melhora cartas. A Dicebreaker apontou as muitas rotas para a vitória como ponto forte, e Oliver Kinne, do Tabletop Games Blog, define Tapestry como um jogo de construção de motor, em que os combos rendem mais a cada era."
+  ],
+  [
+   "Editora que voltou à oficina",
+   "A Stonemaier diz ter analisado dezenas de milhares de dados de partidas e o retorno dos fãs, inclusive num longo tópico do BoardGameGeek, para revisar 31 civilizações e 2 capitais. O pacote custa US$ 20 na loja da editora e traz nota de complexidade para cada civilização. Para Jim Gamer, do What Board Game, as mudanças às vezes são bem significativas."
+  ],
+  [
+   "Solo de fábrica",
+   "A caixa base já traz o Automa, um adversário artificial movido por 28 cartas, com tabuleiro e manual próprios. Dá para aprender as regras sozinho antes de levar ao grupo, o que ajuda num jogo de até duas horas com cinco eras e quatro trilhos."
+  ]
+ ],
+ "atencao": [
+  [
+   "Grave",
+   "Civilizações de pesos diferentes",
+   "Dan Thurot, do Space-Biff, viu o poder de uma civilização anular o de outra e decidir a partida. Oliver Kinne, do Tabletop Games Blog, viu os Arquitetos começarem com 30 pontos a mais e vencerem por mais de 40, e Thomas Wells, da Meeple Mountain, fala em posições iniciais completamente desequilibradas. Na tiragem de 2019, sortear a civilização é meio caminho andado. Ou perdido."
+  ],
+  [
+   "Moderada",
+   "O conserto em capítulos",
+   "Primeiro vieram ajustes só de preparação, em PDF; Kinne testou em 2020 e achou que davam vantagem injusta a certas civilizações. Depois a Stonemaier anunciou para o fim de 2023 o pacote revisado, que a própria editora chama de substancialmente diferente dos ajustes anteriores. Quem compra hoje precisa descobrir qual versão tem em casa, coisa estranha para uma caixa vendida pronta."
+  ],
+  [
+   "Moderada",
+   "Tapeçaria na roleta",
+   "Thurot chama as cartas de tapeçaria de absurdamente divergentes nos efeitos, e Thomas Wells fala em enormes doses de sorte na compra. Some o dado de ciência de 12 faces e os dois dados de conquista. Num jogo de duas horas, perder por uma carta que o vizinho tirou dói mais que num jogo de vinte minutos."
+  ],
+  [
+   "Moderada",
+   "Civilização sem enredo",
+   "Matt Jarvis, da Tabletop Gaming, achou o jogo frio e mecânico por baixo da superfície brilhante, e Keith Law, do A.V. Club, diz que as civilizações não conversam com o texto. Sua civilização pode sair da pedra e chegar ao espaço sem ter tido um rei, uma guerra memorável ou sequer um nome."
+  ],
+  [
+   "Moderada",
+   "Caixa difícil de achar",
+   "Em 11/11/2026, o ComparaJogos mostrava só dois anúncios do jogo base: um usado e um novo no Mercado Livre. A edição em português é a tiragem de 2019, anterior à revisão, e não encontramos edição nacional do pacote de civilizações revisadas até 11/11/2026; ele é vendido em inglês pela Stonemaier."
+  ],
+  [
+   "Leve",
+   "Miniaturas de enfeite",
+   "Os monumentos são lindos, mas, como notaram Thurot e a Dicebreaker, só ocupam casas na capital. Thomas Wells lembra que eles não têm habilidade nenhuma. São 18 esculturas pintadas trabalhando como peso de papel com pedigree."
+  ],
+  [
+   "Leve",
+   "Fim em horários diferentes",
+   "Cada jogo acaba no quinto turno de renda, então um termina e os outros seguem. Jarvis achou o final arrastado para quem fecha cedo. Tenha um jogo curto por perto para quem encerrar a civilização primeiro."
+  ]
+ ],
+ "jogadores": [
+  [
+   "Sozinho",
+   "Modo solo oficial com o Automa, um adversário de cartas que já vem na caixa base.",
+   2
+  ],
+  [
+   "2 a 3 jogadores",
+   "Usam o mapa menor, os turnos voltam rápido e a espera no fim, quando cada um fecha a quinta era, é menor.",
+   3
+  ],
+  [
+   "4 a 5 jogadores",
+   "Mapa grande e mais disputa por território, mas Oliver Kinne, do Tabletop Games Blog, reclama do mapa para 4 ou mais, e a espera no fim cresce.",
+   2
+  ]
+ ],
+ "primeira_partida": "Comece pelas civilizações mais simples: o pacote revisado traz nota de complexidade para todas, e o manual base tem só quatro páginas. O que mais confunde é o turno de renda, com passos em ordem fixa, e o fato de cada jogador terminar a partida num momento diferente. Dica prática: não corra para a renda. A renda acontece só cinco vezes, e a primeira já é o seu primeiro turno, então gaste os recursos subindo trilhos antes de abrir a era seguinte.",
+ "edicao_nacional": "A edição em português saiu em 2019. O ComparaJogos e a Panda Boardgames apontam a Ludofy Creative como editora; a Ludopedia, consultada via busca, cita a Grok Games e lançamento em novembro de 2019. Em 11/11/2026, o ComparaJogos mostrava um exemplar novo por R$ 604,44 no cartão (Mercado Livre) e um usado por R$ 389,31 no Pix (Brechó Lúdico). O texto fica nas cartas e pede consulta moderada.",
+ "preco_ref": {
+  "faixa": "R$ 389,31 (usado, Pix) a R$ 604,44 (novo, cartão)",
+  "data": "11/11/2026",
+  "obs": "só dois anúncios no ComparaJogos; edição nacional de 2019, anterior às civilizações revisadas"
+ },
+ "versoes": "Há três expansões: Plans & Ploys (2020), Arts & Architecture e Fantasies & Futures (lançada em 21/04/2023), além do Revised, Adjusted, Rebalanced Civilization Pack, com 31 civilizações e 2 capitais revisadas, por US$ 20 na loja da Stonemaier. Não encontramos edição nacional delas até 11/11/2026; em 11/11/2026, o ComparaJogos listava importadas na Amazon a Plans & Ploys por R$ 298,62 e a Arts & Architecture a partir de R$ 492. Versão digital no Board Game Arena desde janeiro de 2022.",
+ "comparacoes": [
+  [
+   "Scythe",
+   "scythe",
+   "Mesmo autor, Jamey Stegmaier, e o mesmo capricho nas miniaturas. Scythe tem mais tensão de território e um mapa que pune a distração; Tapestry troca isso por quatro trilhos e turnos mais curtos."
+  ],
+  [
+   "Wingspan",
+   "wingspan",
+   "Foi quem venceu Tapestry no Golden Geek 2019, em Jogo do Ano e em Arte. Também é da Stonemaier, mais leve, com motor de cartas de pássaros no lugar dos trilhos de civilização."
+  ],
+  [
+   "Civolution",
+   "civolution",
+   "Outro jogo de civilização movido a combos, bem mais pesado e longo, de 90 a 180 minutos. Para quem achou Tapestry leve demais e quer cada decisão custando mais caro."
+  ]
+ ],
+ "para_quem": [
+  "Procura civilização em duas horas, com manual de quatro páginas",
+  "Gosta de montar um motor de combos que rende mais a cada era",
+  "Topa importar o pacote de civilizações revisadas ou escolhê-las a dedo",
+  "Curte ver miniaturas pintadas crescendo na capital",
+  "Já jogou Scythe e procura o mesmo autor com menos confronto"
+ ],
+ "nao_e_para": [
+  "Espera que a civilização conte uma história",
+  "Sai da mesa irritado quando uma carta sorteada decide a partida",
+  "Precisa de confronto direto a cada rodada",
+  "Detesta ficar assistindo enquanto os outros terminam"
+ ],
+ "selo": "Recomendado com ressalva",
+ "ressalva": "civilizações revisadas só importadas",
+ "melhor_para": "estrategia",
+ "veredito": "A tese da gente: Tapestry é um jogo de civilização que terminou de ser desenhado depois de chegar às lojas, e a fase de testes foi o público. O núcleo é ótimo: turno de uma linha, quatro trilhos com caminhos diferentes, uma capital de miniaturas que dá gosto ver crescer e um lugar no top 3 do Golden Geek 2019 em Jogo do Ano e em Arte. Pesam as civilizações desequilibradas da tiragem original, as cartas de tapeçaria que viram a partida no sorteio e um tema que nunca conta história. A Stonemaier consertou com dados de dezenas de milhares de partidas, mas a caixa em português é anterior ao conserto. Compre se o grupo topa importar o pacote ou escolher civilizações a dedo. Civilização de verdade aprende com os próprios erros. Esta aprendeu e cobrou US$ 20 pela aula.",
+ "tagline": "Cada civilização na mesa atravessa cinco eras. A caixa precisou de mais uma, escrita pelas planilhas de quem jogou.",
+ "consulta": "11/11/2026",
+ "fontes": [
+  [
+   "Stonemaier Games – Tapestry",
+   "https://stonemaiergames.com/games/tapestry/",
+   "ficha, componentes, duração, solo, expansões"
+  ],
+  [
+   "Stonemaier Games – pacote de civilizações revisadas",
+   "https://stonemaiergames.com/?p=24122",
+   "revisão, dados de partidas, diferença para os ajustes anteriores"
+  ],
+  [
+   "Stonemaier Games – loja do pacote revisado",
+   "https://store.stonemaiergames.com/products/tapestry-revised-adjusted-rebalanced-civilization-pack",
+   "conteúdo e preço do pacote"
+  ],
+  [
+   "Stonemaier Games – Fantasies & Futures",
+   "https://stonemaiergames.com/?p=23564",
+   "data da expansão, anúncio do pacote revisado para o fim de 2023"
+  ],
+  [
+   "RulesPal – Tapestry: manual",
+   "https://rulespal.com/tapestry/rulebook",
+   "regras, turno de renda, conquista, fim de jogo"
+  ],
+  [
+   "GameTyrant – vencedores do 14º Golden Geek",
+   "https://gametyrant.com/news/winners-announced-for-14th-annual-golden-geek-awards",
+   "top 3 em Jogo do Ano e em Arte"
+  ],
+  [
+   "Brettspielbox – 14th Annual Golden Geek Awards",
+   "https://brettspielbox.de/14th-annual-golden-geek-awards-winners-2019/",
+   "resultados do Golden Geek 2019"
+  ],
+  [
+   "Space-Biff – Tapestry",
+   "https://spacebiff.com/2019/09/24/tapestry",
+   "crítica, cartas de tapeçaria, equilíbrio"
+  ],
+  [
+   "Ars Technica – Tapestry",
+   "https://arstechnica.com/gaming/2019/11/tapestry-has-the-mythical-2-hour-civ-building-board-game-arrived/",
+   "crítica, promessa de duas horas (citação via Wikipedia)"
+  ],
+  [
+   "Wikipedia – Tapestry (board game)",
+   "https://en.wikipedia.org/wiki/Tapestry_(board_game)",
+   "recepção da Ars Technica e da Dicebreaker"
+  ],
+  [
+   "Tabletop Gaming – Tapestry",
+   "https://www.tabletopgaming.co.uk/Reviews/tapestry",
+   "crítica, ritmo, tema, final arrastado"
+  ],
+  [
+   "A.V. Club – Tapestry",
+   "https://www.avclub.com/tapestry-board-game-review",
+   "crítica, componentes, civilizações e tema"
+  ],
+  [
+   "Tabletop Games Blog – Tapestry",
+   "https://tabletopgamesblog.com/2019/11/09/tapestry-saturday-review",
+   "crítica, espera no fim, mapa para 4+"
+  ],
+  [
+   "Tabletop Games Blog – Tapestry Takebacks",
+   "https://tabletopgamesblog.com/2020/02/22/tapestry-takebacks",
+   "ajustes de preparação, Arquitetos"
+  ],
+  [
+   "Meeple Mountain – Tapestry",
+   "https://www.meeplemountain.com/reviews/tapestry/",
+   "crítica, desequilíbrio, sorte, miniaturas"
+  ],
+  [
+   "Board Game Quest – Tapestry",
+   "https://www.boardgamequest.com/tapestry-review/",
+   "crítica, tempo por jogador"
+  ],
+  [
+   "What Board Game – pacote revisado",
+   "https://whatboardgame.com/post/tapestry-revised-adjusted-rebalanced-civilization-pack-board-game-accessory-review",
+   "análise do pacote revisado"
+  ],
+  [
+   "ComparaJogos – Tapestry",
+   "https://www.comparajogos.com.br/item/tapestry",
+   "preço no Brasil, editora nacional, nota, idioma"
+  ],
+  [
+   "ComparaJogos – Plans and Ploys",
+   "https://www.comparajogos.com.br/item/tapestry-plans-and-ploys",
+   "preço da expansão"
+  ],
+  [
+   "ComparaJogos – Arts & Architecture",
+   "https://www.comparajogos.com.br/item/tapestry-arts-architecture",
+   "preço da expansão"
+  ],
+  [
+   "Panda Boardgames – Tapestry",
+   "https://www.pandaboardgames.com.br/Tapestry",
+   "edição em português, idade, componentes"
+  ],
+  [
+   "Ludopedia – Tapestry",
+   "https://ludopedia.com.br/jogo/tapestry",
+   "editora nacional e lançamento (via busca)"
+  ],
+  [
+   "Board Game Arena – Tapestry",
+   "https://pt.boardgamearena.com/news?id=570",
+   "versão digital"
+  ],
+  [
+   "BoardGameMatcher – Tapestry",
+   "https://boardgamematcher.com/game/tapestry",
+   "posição, nota e peso do BGG replicados"
+  ]
+ ],
+ "legenda": "Tapestry precisou de uma era a mais para ficar equilibrado. E ela veio depois do lançamento. 🏛️\n\nTop 3 do Golden Geek 2019 em Jogo do Ano e em Arte, atrás de Wingspan.\nSuba quatro trilhos, encha a capital de miniaturas e cobre a renda cinco vezes, em 90 a 120 minutos.\nA crítica apontou civilizações desequilibradas; a Stonemaier revisou 31 delas com dados de dezenas de milhares de partidas, mas a caixa em português é de 2019.\nVeredito: RECOMENDADO COM RESSALVA. Ótimo motor, sorteio cruel.\n\nVocê joga com as civilizações originais ou com as revisadas? 👇\nResenha completa no link da bio.\n\n#Tapestry #JogosDeTabuleiro #BoardGames #Stonemaier #JameyStegmaier #GoldenGeek #CivilizationGame #JogoDeCivilização #EliteBoardgamers #Boardgamer"
+}

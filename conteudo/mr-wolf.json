@@ -1,0 +1,337 @@
+{
+ "slug": "mr-wolf",
+ "jogo": "Mr Wolf",
+ "cor": "#6a9a2f",
+ "kicker": "Resenha · Memória cooperativa na fazenda",
+ "og_titulo": "Cadê o Lobo? vale a pena? Resenha Elite Boardgamers",
+ "titulo_busca": "Cadê o Lobo? (Mr Wolf): resenha do jogo de memória premiado",
+ "descricao": "Resenha de Cadê o Lobo? (Mr Wolf), As d'Or 2019 de jogo infantil: memória cooperativa para crianças a partir de 4 anos, como funciona e para quem é.",
+ "titulo_html": "O jogo infantil em que o elo fraco da equipe é o adulto: <span>Cadê o Lobo?</span>",
+ "lede": "Cadê o Lobo?, a edição brasileira de Mr Wolf, é um jogo cooperativo de memória para crianças a partir de 4 anos: todos juntos levam os bichos da fazenda para as casinhas certas antes que o lobo chegue ao pasto. Venceu o As d'Or 2019 de jogo infantil, em Cannes. O lobo anda devagar e quase nunca é o problema. O problema senta à mesa, paga as contas da casa e não lembra se já guardou aquele bicho.",
+ "tags": [
+  "1–4 jogadores",
+  "10–15 min",
+  "4+",
+  "Cooperativo",
+  "Memória"
+ ],
+ "alt": "Tabuleiro de Mr Wolf montado dentro da caixa, com quatro casinhas de papelão com fenda, fichas redondas de flor no pasto e o peão verde do lobo na trilha de pedras",
+ "premiacoes": [
+  {
+   "premio": "As d'Or",
+   "ano": 2019,
+   "categoria": "Jeu de l’Année Enfant",
+   "colocacao": 1,
+   "resultado": "vencedor",
+   "fonte": "https://fr.wikipedia.org/wiki/As_d%27Or",
+   "rotulo": "Vencedor"
+  }
+ ],
+ "ficha": [
+  [
+   "Ano",
+   "2018 (Blue Orange); edição brasileira de 2019, segundo o ComparaJogos"
+  ],
+  [
+   "Designers",
+   "Marie Fort e Wilfried Fort"
+  ],
+  [
+   "Arte",
+   "Gaëlle Picard"
+  ],
+  [
+   "Editora original",
+   "Blue Orange (Mr Wolf; nos Estados Unidos, Where's Mr. Wolf?)"
+  ],
+  [
+   "Editora no Brasil",
+   "Asmodee (Cadê o Lobo?)"
+  ],
+  [
+   "Jogadores",
+   "1 a 4"
+  ],
+  [
+   "Duração anunciada",
+   "15 minutos (manual); 10 minutos (Blue Orange EUA e ComparaJogos)"
+  ],
+  [
+   "Idade",
+   "4+ (a Ludum fala em a partir de 3 ou 4 anos)"
+  ],
+  [
+   "Nota BGG",
+   "cerca de 6,2 / 10 (conforme a Ludum, que replica o BGG)"
+  ],
+  [
+   "Peso BGG",
+   "cerca de 1,3 / 5 (conforme a Ludum)"
+  ],
+  [
+   "Nota ComparaJogos",
+   "6,3; complexidade 1,3 / 5"
+  ],
+  [
+   "Nota Ludopedia",
+   "não confirmado nas fontes consultadas"
+  ],
+  [
+   "Idioma",
+   "sem dependência de idioma (ComparaJogos)"
+  ],
+  [
+   "Componentes",
+   "1 tabuleiro, 4 casinhas em 3D, 28 fichas de animal, 16 placas de casinha (8 com 2 animais e 8 com 3 animais) e 1 peão de madeira do lobo"
+  ],
+  [
+   "Modo solo oficial",
+   "Sim, variante solitária com 4 placas à escolha"
+  ],
+  [
+   "Versão digital",
+   "não confirmado nas fontes consultadas"
+  ],
+  [
+   "Prêmios",
+   "As d'Or 2019, Jogo do Ano Infantil"
+  ]
+ ],
+ "nota_ficha": "Nota e peso do BGG vêm da Ludum, que replica o BoardGameGeek (o BGG bloqueia acesso automatizado). Nota e complexidade do ComparaJogos consultadas em 11/11/2026.",
+ "como_funciona": [
+  "Cadê o Lobo? é cooperativo: todos jogam juntos contra o jogo. O objetivo é guardar os 8 animais pedidos nas 4 casinhas certas antes que o lobo, um peão de madeira, chegue ao pasto pela trilha de pedras. A partida acontece em cima do tabuleiro, montado dentro da própria caixa.",
+  "Na preparação, as 4 casinhas vão para os seus encaixes, as 28 fichas de animal ficam no pasto com a flor para cima, embaralhadas, e cada casinha recebe no telhado uma placa com 2 animais. Essas placas dizem quais bichos aquela casinha precisa receber. O lobo começa na primeira pedra da trilha, a mais escura.",
+  "Começa o jogador mais novo, e o turno segue no sentido horário. Na sua vez, você vira uma ficha de flor. Se aparece um animal pedido em alguma placa, você o enfia pela fenda da casinha correspondente; se ele aparece em mais de uma placa, você escolhe a casinha. Se o animal não é pedido, ou se aquela casinha já recebeu esse bicho, a ficha vai para o pátio da fazenda, virada para cima.",
+  "Se a ficha mostra o lobo, ele avança uma pedra na trilha, e a ficha volta para o mesmo lugar no pasto, com a flor para cima. Todo mundo precisa lembrar onde estão as fichas de lobo para não virá-las de novo. Também é proibido espiar dentro das casinhas: o grupo precisa lembrar o que já guardou, e pode ajudar quem estiver em dúvida. Quando acham que uma casinha está completa, viram a placa do telhado.",
+  "A partida acaba de dois jeitos. Se o lobo chega à última pedra, todos perdem. Se o grupo acha que todas as casinhas estão completas, levanta uma por uma: todos ganham se cada casinha tiver exatamente os animais da placa, nem um a mais, nem um a menos. Há variantes com placas de 3 animais, com placas misturadas e uma para jogar sozinho."
+ ],
+ "passos": [
+  [
+   "MONTE A FAZENDA",
+   "Ponha as 4 casinhas no tabuleiro, espalhe as 28 fichas com a flor para cima e coloque uma placa de 2 animais em cada telhado."
+  ],
+  [
+   "VIRE UMA FLOR",
+   "Na sua vez, vire uma ficha do pasto. Pode sair um animal pedido, um animal que ninguém pediu ou o próprio lobo."
+  ],
+  [
+   "GUARDE O BICHO",
+   "Animal pedido entra pela fenda da casinha certa. Animal sobrando ou repetido vai para o pátio. Ninguém pode espiar dentro das casinhas."
+  ],
+  [
+   "FUJA DO LOBO",
+   "Ficha de lobo faz o peão avançar uma pedra e volta para o mesmo lugar, virada. O grupo precisa lembrar onde ela está."
+  ],
+  [
+   "ABRA AS CASINHAS",
+   "Quando o grupo achar que acabou, levanta as casinhas uma por uma. Tudo certo antes da última pedra, todos ganham; senão, ganha o lobo."
+  ]
+ ],
+ "como_resumo": "Vire fichas, guarde cada bicho na casinha certa sem espiar e termine antes que o lobo chegue ao pasto.",
+ "perfil": [
+  [
+   "Facilidade de ensinar",
+   5
+  ],
+  [
+   "Cooperação na mesa",
+   5
+  ],
+  [
+   "Partida curta",
+   5
+  ],
+  [
+   "Componentes e mesa",
+   4
+  ],
+  [
+   "Rejogabilidade",
+   2
+  ],
+  [
+   "Desafio para adultos",
+   1
+  ]
+ ],
+ "experiencia": [
+  "A rodada típica dura o tempo de uma frase. A criança de 4 anos vira uma flor, grita o nome do bicho, procura nos telhados e enfia a ficha pela fenda com a solenidade de quem deposita uma carta no correio. Depois é a vez do adulto, que vira uma flor ao lado e encontra o lobo. O peão anda uma pedra. Todo mundo decora onde fica aquela ficha.",
+  "O jogo de verdade começa na metade. A casinha da esquerda pede dois bichos, e alguém acabou de virar um deles. A pergunta é simples: esse já entrou ou não? Ninguém pode levantar o telhado. O autor da review de Cadê o Lobo? na Ludopedia descreveu exatamente isso: em algum momento o adulto não sabe mais se já guardou aquele animal. E é bem possível que a criança saiba, o que deixa o adulto numa posição delicada dentro de um jogo para 4 anos.",
+  "O final é o melhor momento da caixa. O grupo vira as placas, levanta as casinhas uma por uma, e cada telhado aberto é uma conferência de inventário com plateia. Um bicho a mais e o lobo ganha, mesmo parado no meio da trilha."
+ ],
+ "citacao": {
+  "texto": "Um adorável jogo cooperativo de memória, pensado especialmente para crianças pequenas.",
+  "fonte": "Ludum (tradução livre)"
+ },
+ "funciona": [
+  [
+   "Casinhas que não deixam colar",
+   "As 4 casinhas em 3D, com uma fenda na frente, transformam a memória em objeto: o bicho entra e some. Para a Ludum, as casinhas em volume que escondem os animais deixam a manipulação muito concreta. Num jogo da memória comum, o par achado fica à vista; aqui o acerto desaparece, e lembrar dele vira parte da tarefa."
+  ],
+  [
+   "Ninguém perde sozinho",
+   "Todos ganham ou perdem juntos, e as regras pedem que o grupo ajude quem estiver em dúvida na hora de enfiar a ficha. A Ludum destaca a ausência de competição direta, e a review da Ludopedia o chama de fácil de ensinar. Para criança de 4 anos que chora quando perde, o adversário passa a ser um peão de madeira."
+  ],
+  [
+   "O lobo como relógio",
+   "Cada ficha de lobo virada faz o peão avançar uma pedra e volta ao pasto no mesmo lugar, escondida de novo. Isso cria pressão sem ataque: a Ludum diz que o avanço do lobo dá uma tensão leve, sem estressar os pequenos. E ainda acrescenta uma segunda coisa para lembrar, onde o lobo mora."
+  ],
+  [
+   "A caixa é o tabuleiro",
+   "O tabuleiro é montado dentro da própria caixa, e as peças ficam guardadas embaixo dele. Montar a partida leva o tempo de encaixar 4 casinhas e espalhar 28 fichas, o que importa quando o público tem a paciência de uma criança de 4 anos e a partida anunciada é de 10 a 15 minutos."
+  ],
+  [
+   "Dificuldade que cresce na caixa",
+   "Além do jogo básico com placas de 2 animais, o manual traz a variante com placas de 3 animais, uma com placas misturadas (nenhum bicho pode aparecer mais de 3 vezes) e uma solitária. A Ludum elogia essas variantes para acompanhar a criança à medida que ela melhora."
+  ],
+  [
+   "Nada para ler",
+   "O ComparaJogos classifica o jogo como sem dependência de idioma: as placas e as fichas só têm desenhos de bichos, flores e o lobo. A criança que ainda não lê joga sem adulto traduzindo, e o adulto só precisa explicar as regras uma vez."
+  ]
+ ],
+ "atencao": [
+  [
+   "Moderada",
+   "O adulto joga de figurante",
+   "A Ludum avisa que os adultos não serão postos à prova, e a Boardgameguys aponta pouca rejogabilidade para crianças maiores e adultos. Traduzindo: a única parte desafiadora para você é lembrar o que já guardou, e a review da Ludopedia diz que até isso escapa. É um raro jogo da prateleira em que o adulto torce para não ser o elo fraco."
+  ],
+  [
+   "Moderada",
+   "Preço de importação",
+   "Em 11/11/2026, o ComparaJogos listava Cadê o Lobo? entre R$ 185,91 no Pix e R$ 199,90 no cartão, em duas lojas. Na França, a Ludum e a Philibert vendem a mesma caixa por 20,90 euros. Pelo preço brasileiro, a gente esperava que o lobo pelo menos viesse uivando."
+  ],
+  [
+   "Leve",
+   "A criança cresce mais rápido que o jogo",
+   "Uma avaliação de cliente na Ludum achou o jogo quase simples e rápido demais até para uma criança de 3 anos, e a Boardgameguys vê pouca graça repetida para crianças maiores. As variantes de 3 animais esticam a vida da caixa, mas a regra é a mesma: virar, lembrar, guardar. Lá pelos 6 anos, o lobo já não assusta ninguém."
+  ],
+  [
+   "Leve",
+   "Sorte no pasto",
+   "A Boardgameguys lembra que a sorte pesa e pode não agradar a todos. Se as fichas de lobo aparecem cedo, o peão anda antes de o grupo ter qualquer informação para usar. A memória só começa a valer depois das primeiras viradas, e até lá quem decide é a flor que você escolheu."
+  ],
+  [
+   "Leve",
+   "Crítica mais morna que o troféu",
+   "O júri de Cannes deu o As d'Or 2019, mas a recepção dos especialistas é contida: Tom Vasel, do Dice Tower, deu nota 6,0, e a média do BGG fica perto de 6,2 segundo a Ludum. Nada grave, só um lembrete de que jogo de 4 anos é avaliado por adultos."
+  ]
+ ],
+ "jogadores": [
+  [
+   "Sozinho",
+   "A variante solitária usa 4 placas à escolha. Funciona como treino de memória, mas perde a graça de ajudar e ser ajudado.",
+   2
+  ],
+  [
+   "2 jogadores",
+   "Um adulto e uma criança: a dupla em que o jogo mais brilha, com a conversa de \"esse já entrou?\" a cada rodada.",
+   3
+  ],
+  [
+   "3 a 4 jogadores",
+   "Mais cabeças dividindo a memória das casinhas e das fichas de lobo, e mais gente para contestar o adulto distraído.",
+   3
+  ]
+ ],
+ "primeira_partida": "As regras ocupam uma página por idioma no manual e se explicam em poucos minutos, com o tabuleiro montado na frente das crianças. O que mais confunde é a ficha de lobo: ela não sai do pasto, volta virada para o mesmo lugar, e o grupo precisa lembrar onde está. A segunda dúvida é o bicho repetido, que vai para o pátio. Dica prática: comece com as placas de 2 animais e peça que cada um diga em voz alta para qual casinha mandou o bicho.",
+ "edicao_nacional": "A edição em português se chama Cadê o Lobo? e é da Asmodee; o ComparaJogos a registra como de 2019 e sem dependência de idioma. Em 11/11/2026, o ComparaJogos listava o jogo novo em duas lojas, de R$ 185,91 no Pix (Paladins Games) a R$ 199,90 no cartão. Na França, a mesma caixa custa 20,90 euros na Ludum e na Philibert.",
+ "preco_ref": {
+  "faixa": "R$ 185,91 a R$ 199,90",
+  "data": "11/11/2026",
+  "obs": "duas ofertas de jogo novo em lojas brasileiras, segundo o ComparaJogos; o menor preço é no Pix"
+ },
+ "versoes": "Expansões: não confirmado nas fontes consultadas. Versão digital: não confirmado nas fontes consultadas. A caixa já traz as variantes de 3 animais, de placas misturadas e solitária. Nos Estados Unidos, o jogo saiu como Where's Mr. Wolf?, e o site americano da Blue Orange o lista como fora de catálogo.",
+ "comparacoes": [
+  [
+   "Magic Mountain",
+   "magic-mountain",
+   "Outro cooperativo infantil premiado, para crianças a partir de 5 anos. Lá a sorte está na rampa e nas bolinhas; aqui está nas fichas viradas, e a memória decide o resto."
+  ],
+  [
+   "Olha a Bolha (Bubble Stories)",
+   "bubble-stories",
+   "Também da Blue Orange e também vencedor do As d'Or infantil, em 2022. É para a criança explorar quase sozinha; Cadê o Lobo? pede a família inteira na mesa."
+  ],
+  [
+   "The Mind",
+   "the-mind",
+   "Levou o As d'Or 2019 de Jogo do Ano na mesma cerimônia. Também é cooperativo e também testa a cabeça do grupo, mas para adultos e sem casinha para esconder o erro."
+  ]
+ ],
+ "para_quem": [
+  "Tem criança de 4 ou 5 anos que ainda não lê",
+  "Procura um primeiro jogo cooperativo, sem perdedor na família",
+  "Quer partidas de 15 minutos antes do banho",
+  "Gosta de ver a criança corrigir o adulto com razão",
+  "Precisa de um jogo que ensine a lembrar e a esperar a vez"
+ ],
+ "nao_e_para": [
+  "Procura um jogo para os adultos se divertirem também",
+  "Tem filho de 6 anos ou mais que já domina jogo da memória",
+  "Acha caro pagar perto de R$ 190 por 15 minutos",
+  "Espera um desafio que mude muito de uma partida para outra"
+ ],
+ "selo": "Recomendado",
+ "melhor_para": "cooperativo",
+ "veredito": "A tese da gente: em Cadê o Lobo?, o vilão é a memória do adulto, e o lobo só marca o tempo. As casinhas fechadas são a melhor ideia da caixa, porque o acerto some pela fenda e lembrar dele vira o jogo. O As d'Or 2019 premiou um cooperativo que a criança de 4 anos entende em minutos, sem nada para ler, com tensão leve e variantes para crescer junto. Pesam o desafio quase nulo para adultos, a vida curta depois dos 6 anos e um preço brasileiro bem acima do francês. Para quem tem criança pequena e quer um primeiro jogo em equipe, compre. Só não se ofenda quando ela lembrar melhor do que você.",
+ "tagline": "O lobo anda uma pedra por vez. Quem entrega a fazenda é o adulto que jura ter guardado aquele bicho.",
+ "consulta": "11/11/2026",
+ "fontes": [
+  [
+   "Blue Orange – Mr Wolf",
+   "https://blueorangegames.eu/en/games/mr-wolf/",
+   "ficha, componentes, idade"
+  ],
+  [
+   "Blue Orange – Mr Wolf: manual",
+   "https://blueorangegames.eu/wp-content/uploads/2019/09/MrWolf-Rules-ML.pdf",
+   "regras, componentes, variantes, duração"
+  ],
+  [
+   "Blue Orange Games (EUA) – Where's Mr. Wolf?",
+   "https://blueorangegames.com/games/where-is-mr-wolf",
+   "versão americana, fora de catálogo, duração"
+  ],
+  [
+   "Wikipédia – As d'Or",
+   "https://fr.wikipedia.org/wiki/As_d%27Or",
+   "prêmio de 2019, The Mind como Jogo do Ano"
+  ],
+  [
+   "Scifi-Universe – indicados ao As d'Or 2019",
+   "https://www.scifi-universe.com/actualites/16647/et-les-nomines-pour-les-as-d-or-2019-sont",
+   "indicados da categoria infantil"
+  ],
+  [
+   "Ludum – Mr Wolf",
+   "https://www.ludum.fr/avec-des-petits-2-4-ans/mr-wolf-81",
+   "crítica, nota e peso do BGG replicados, preço na França"
+  ],
+  [
+   "1jour-1jeu – Mr Wolf",
+   "https://en.1jour-1jeu.com/boardgame/2018-mr-wolf",
+   "ficha, idiomas, preço na Philibert"
+  ],
+  [
+   "The Dice Tower – Where's Mr. Wolf?",
+   "https://www.dicetower.com/board-game-review/6650",
+   "nota de Tom Vasel"
+  ],
+  [
+   "Boardgameguys – Where's Mr. Wolf?",
+   "https://boardgameguys.com/?p=50711",
+   "prós e contras (via busca)"
+  ],
+  [
+   "Ludopedia – Cadê o Lobo? review",
+   "https://ludopedia.com.br/topico/52571/cade-o-lobo-review",
+   "opinião sobre a memória dos adultos (via busca)"
+  ],
+  [
+   "ComparaJogos – Cadê o Lobo?",
+   "https://www.comparajogos.com.br/item/cade-o-lobo",
+   "preço no Brasil, nota, complexidade, idioma, ano da edição nacional"
+  ]
+ ],
+ "legenda": "Num jogo infantil premiado em Cannes, o ponto fraco da equipe é o adulto. 🐺\n\nCadê o Lobo? (Mr Wolf) venceu o As d'Or 2019 de jogo infantil.\nVire fichas, guarde cada bicho na casinha certa e não espie: quem esquece o que já guardou entrega a fazenda ao lobo.\nCooperativo, sem texto, para crianças a partir de 4 anos; edição da Asmodee a partir de R$ 185,91 no Pix em 11/11/2026.\nVeredito: RECOMENDADO. Ótimo primeiro jogo em equipe, zero desafio para gente grande.\n\nNa sua casa, quem tem a melhor memória: você ou a criança? 👇\nResenha completa no link da bio.\n\n#CadeOLobo #MrWolf #JogosDeTabuleiro #BoardGames #JogosInfantis #KidsGames #Asmodee #BlueOrange #AsdOr #EliteBoardgamers #Boardgamer"
+}

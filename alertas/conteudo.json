@@ -1,32 +1,5 @@
 [
  {
-  "id": "r-castle-combo",
-  "tema": "resenhas",
-  "hora": "2026-11-05T11:11:25Z",
-  "titulo": "⭐ Resenha: Castle Combo",
-  "texto": "Nove cartas, um mensageiro e uma corte que funciona melhor quando quase ninguém aparece.",
-  "url": "https://eliteboardgamers.com.br/castle-combo/",
-  "imagem": "https://eliteboardgamers.com.br/castle-combo/capa.jpg"
- },
- {
-  "id": "r-star-wars-the-battle-of-hoth",
-  "tema": "resenhas",
-  "hora": "2026-11-05T11:11:32Z",
-  "titulo": "⭐ Resenha: Star Wars: The Battle of Hoth",
-  "texto": "Três AT-ATs, dezessete cenários e um final que a gente já viu no cinema em 1980.",
-  "url": "https://eliteboardgamers.com.br/star-wars-the-battle-of-hoth/",
-  "imagem": "https://eliteboardgamers.com.br/star-wars-the-battle-of-hoth/capa.jpg"
- },
- {
-  "id": "r-under-falling-skies",
-  "tema": "resenhas",
-  "hora": "2026-11-05T11:11:40Z",
-  "titulo": "⭐ Resenha: Under Falling Skies",
-  "texto": "Cinco dados, uma cidade e o seis como o pior inimigo da humanidade.",
-  "url": "https://eliteboardgamers.com.br/under-falling-skies/",
-  "imagem": "https://eliteboardgamers.com.br/under-falling-skies/capa.jpg"
- },
- {
   "id": "r-878",
   "tema": "resenhas",
   "hora": "2026-11-05T11:11:48Z",
@@ -358,5 +331,32 @@
   "texto": "Cinco anos depois, Feed the Kraken ganha uma caixa preta e dourada, porque nada diz navio cheio de traidores como embalagem de perfume caro. A gente gosta mais da…",
   "url": "https://eliteboardgamers.com.br/noticias/feed-the-kraken-black-box-sea-of-shadows-gamefound/",
   "imagem": "https://eliteboardgamers.com.br/noticias/capas/66005.jpg"
+ },
+ {
+  "id": "r-watergate",
+  "tema": "resenhas",
+  "hora": "2026-11-11T11:06:42Z",
+  "titulo": "⭐ Resenha: Watergate",
+  "texto": "Um jogo de história tão bem amarrado que, na terceira rodada, ninguém lembra da história, e o jogo nem liga.",
+  "url": "https://eliteboardgamers.com.br/watergate/",
+  "imagem": "https://eliteboardgamers.com.br/watergate/capa.jpg"
+ },
+ {
+  "id": "r-mr-wolf",
+  "tema": "resenhas",
+  "hora": "2026-11-11T11:07:04Z",
+  "titulo": "⭐ Resenha: Mr Wolf",
+  "texto": "O lobo anda uma pedra por vez. Quem entrega a fazenda é o adulto que jura ter guardado aquele bicho.",
+  "url": "https://eliteboardgamers.com.br/mr-wolf/",
+  "imagem": "https://eliteboardgamers.com.br/mr-wolf/capa.jpg"
+ },
+ {
+  "id": "r-tapestry",
+  "tema": "resenhas",
+  "hora": "2026-11-11T11:07:26Z",
+  "titulo": "⭐ Resenha: Tapestry",
+  "texto": "Cada civilização na mesa atravessa cinco eras. A caixa precisou de mais uma, escrita pelas planilhas de quem jogou.",
+  "url": "https://eliteboardgamers.com.br/tapestry/",
+  "imagem": "https://eliteboardgamers.com.br/tapestry/capa.jpg"
  }
 ]

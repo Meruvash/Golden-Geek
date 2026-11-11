@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-11-10",
+ "atualizado_em": "2026-11-11",
  "regras": {
   "premios": [
    "Golden Geek",
@@ -413,6 +413,21 @@
    "jogo": "Mon Puzzle Aventure",
    "url": "https://eliteboardgamers.com.br/mon-puzzle-aventure/",
    "data": "2026-11-10"
+  },
+  {
+   "jogo": "Watergate",
+   "url": "https://eliteboardgamers.com.br/watergate/",
+   "data": "2026-11-11"
+  },
+  {
+   "jogo": "Mr Wolf",
+   "url": "https://eliteboardgamers.com.br/mr-wolf/",
+   "data": "2026-11-11"
+  },
+  {
+   "jogo": "Tapestry",
+   "url": "https://eliteboardgamers.com.br/tapestry/",
+   "data": "2026-11-11"
   }
  ],
  "jogos": [
@@ -4490,7 +4505,7 @@
      "fonte": "https://fr.wikipedia.org/wiki/As_d%27Or"
     }
    ],
-   "status": "na_fila",
+   "status": "publicado",
    "premios_distintos": 1,
    "prioridade": 126,
    "carro_chefe": false,
@@ -4531,7 +4546,7 @@
      "fonte": "https://eliteboardgamers.com.br/"
     }
    ],
-   "status": "na_fila",
+   "status": "publicado",
    "prioridade": 88,
    "premios_distintos": 1,
    "carro_chefe": false,
@@ -6393,7 +6408,7 @@
      "fonte": "https://eliteboardgamers.com.br/"
     }
    ],
-   "status": "na_fila",
+   "status": "publicado",
    "prioridade": 180,
    "premios_distintos": 1,
    "carro_chefe": false,
