@@ -93,7 +93,7 @@ const Quadro: React.FC<{ s: number; linhas: { txt: string; t: number; cor?: stri
 
 // fins de falas usados como marcos de plano
 function fimFala(id: number) { const f = FALAS.find((x) => x.id === id)!; return f.inicio + f.dur; }
-const F21 = fimFala(21), F25 = fimFala(25), F26 = fimFala(26), F2 = fimFala(2), F6 = fimFala(6), F7 = fimFala(7), F12 = fimFala(12), F13 = fimFala(13), F16 = fimFala(16), F22 = fimFala(22), F23 = fimFala(23), F24 = fimFala(24), F30 = fimFala(30), F31 = fimFala(31), F32 = fimFala(32);
+const F21 = fimFala(21), F25 = fimFala(25), F26 = fimFala(26), F2 = fimFala(2), F6 = fimFala(6), F7 = fimFala(7), F12 = fimFala(12), F13 = fimFala(13), F16 = fimFala(16), F22 = fimFala(22), F24 = fimFala(24), F30 = fimFala(30), F31 = fimFala(31), F32 = fimFala(32);
 const T_MERCADO = I(3) + 2.9;
 
 type Plano = { t: number; render: (s: number, ls: number) => React.ReactNode };
