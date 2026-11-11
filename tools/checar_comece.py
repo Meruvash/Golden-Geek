@@ -1,4 +1,4 @@
-"""Confere a seção "Comece a jogar em N minutos" de um tutorial Como Jogar (PADRAO_EDITORIAL.md, "Como Jogar: comece a jogar").
+"""Confere a seção "Comece a jogar em N minutos" de um tutorial Como Jogar (docs/padrao/como-jogar.md, "Comece a jogar").
 
 Uso: python3 tools/checar_comece.py docs/como-jogar/piloto/<slug>/tutorial.md
 Sai com erro se a seção não seguir a diretriz. Os portões são baratos e objetivos; quem decide se a seção ensina é o teste

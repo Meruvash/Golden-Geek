@@ -125,7 +125,7 @@ Segue a lógica do crivo das fotos: primeiro eliminatórios, depois pontuação.
 
 **Edição diária (29/10/2026, pedido do usuário)**
 
-O corte de 5 pontos estava deixando dias sem nenhuma notícia. A meta passa a ser **no mínimo 5 notas por dia, sem limite máximo** ("quanto mais notícia, melhor"), e a qualidade vem primeiro:
+O corte de 5 pontos estava deixando dias sem nenhuma notícia. A meta passou a ser **no mínimo 5 notas por dia, sem limite máximo** (em 11/11/2026 virou **até 5 por dia**) ("quanto mais notícia, melhor"), e a qualidade vem primeiro:
 
 1. **Rodada 1:** fontes automáticas (`coletar.py`: feeds, Bluesky, Ludopedia). Toda candidata que passa pelos eliminatórios é pontuada.
 2. **Rodada 2**, se não houver 5 notas com 5 pontos ou mais: pesquisa em outras fontes, com preferência para as nacionais (editoras, Ludopedia, Compara Jogos, Catarse, eventos).
@@ -186,7 +186,7 @@ O robô de notícias reaproveita o cliente do robô de imagens (`tools/imagens/r
 
 ## 9. Decisões tomadas (28/10/2026)
 
-1. **No mínimo 5 notas por dia, sem máximo**: tudo o que passa pelos eliminatórios sai; as três rodadas de pesquisa buscam pelo menos 5 com 5 pontos ou mais (alterado em 29/10/2026; antes, corte fixo de 5 pontos). Ver "Edição diária" na seção 4.
+1. **Até 5 notas por dia** (desde 11/11/2026, para economizar tokens; antes: no mínimo 5, sem máximo): tudo o que passa pelos eliminatórios sai; as três rodadas de pesquisa buscam pelo menos 5 com 5 pontos ou mais (alterado em 29/10/2026; antes, corte fixo de 5 pontos). Ver "Edição diária" na seção 4.
 2. **Aprovação só da manchete**; as outras 4 saem depois do crivo e do `checar_noticia.py`.
 3. **A Consulta Golden Geek vai para `/consulta/`**, com link no menu.
 4. **Financiamento coletivo entra**, com o mesmo crivo (fonte primária: a página da campanha).

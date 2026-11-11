@@ -1,83 +1,18 @@
-# Padrão editorial dos infográficos (v2)
+# Padrão editorial da Elite Boardgamers
 
-Vale para todo infográfico novo. O modelo é `modelos/referencia-1.jpg` (Código Secreto): cada bloco informa algo concreto sobre **este** jogo, e quem lê só a imagem já sabe como se joga, o que é bom, o que pesa e para quem é.
+Arquivo comum, lido por todas as rotinas. As partes de cada tipo de conteúdo ficam em arquivos separados, para cada rotina ler só o que usa (11/11/2026, economia de tokens):
 
-`tools/checar_roteiro.py` confere estas regras e `tools/lote_openai.py enviar` / `tools/gerar_infografico_openai.py` se recusam a gerar a imagem se o roteiro não passar.
+- Resenhas (texto do site, selo, fotos oficiais e crivo das fotos): `docs/padrao/resenhas.md`
+- Como Jogar: `docs/padrao/como-jogar.md`
+- Infográficos (desligados desde 28/10/2026): `docs/padrao/infograficos.md`
 
-## Formato
+## Texto de gente, não de fórmula (vale para tudo)
 
-- **Quadrado 1:1** (2048×2048), o formato que funciona no nosso fluxo do Instagram. (O 4:5 foi testado com o Gloomhaven e descartado.)
-- Texto pequeno, mas legível no celular: mesma hierarquia do modelo, comprimida no quadrado.
-- No primeiro teste em quadrado com 12 linhas de ficha, 8 barras e veredito de 55 palavras, a faixa de baixo saiu espremida e com texto embaralhado; por isso a ficha e o veredito têm limites menores. No segundo teste a IA deixou de fora as barras de "compatibilidade com seu perfil", então esse bloco saiu do quadrado.
+**Texto de gente, não de fórmula** (vale para resenhas e notícias). Sem muletas e adjetivos vazios ("vale a pena", "para quem gosta de", "ideal para", "jornada", "envolvente", "promete", "não é só X, é Y"): troque por um detalhe concreto (quanto tempo, quantas peças, qual jogo parecido, o que acontece na mesa). Varie a abertura das frases e dos itens de lista. Opinião com posição clara. A lista fica em `tools/vicios.py`; `checar_roteiro.py` e `checar_noticia.py` avisam (sem bloquear) e o aviso deve ser resolvido antes de publicar. Nunca use ferramenta de "humanizar" texto: ela troca palavras sem critério e cria erro.
 
-## Blocos do `roteiro` (em `conteudo/<slug>.json`)
+## Nada inventado (vale para tudo)
 
-| Campo | Regra |
-|---|---|
-| `titulo` | Nome do jogo como aparece na caixa nacional (ou original). |
-| `chamada` | 12 a 22 palavras: o que o jogo é + o gancho. |
-| `destaque` | 15 a 28 palavras de opinião na caixa do canto superior direito. |
-| `lateral` | 10 linhas: jogadores, duração, complexidade (com rótulo), modo solo, dados, designer, editora original, editora no Brasil, ano, idioma. |
-| `numeros` | 4 caixas `[rótulo, valor, contexto]`. O contexto explica o número ("106 mil avaliações", "pesado"). Só números com fonte. |
-| `como_resumo` | Uma linha de 8 a 18 palavras que resume a partida. |
-| `passos` | 5 passos `[título, texto]`: título de 2 a 4 palavras; texto de 15 a 30 palavras explicando a regra de verdade. |
-| `fortes` | 6 a 7 itens de 4 a 10 palavras, específicos do jogo. |
-| `atencao` | 6 a 7 itens de 4 a 10 palavras, específicos do jogo. |
-| `ficha` | 8 a 10 linhas `Campo: valor`, incluindo componentes. |
-| `premios` | 1 a 3 medalhas, das premiações confirmadas em `premiacoes`. |
-| `extra` | `{titulo, texto}`: um bloco útil e verificável (experimente online, versão para iniciantes, expansões, preço de referência com data). Texto de 20 a 45 palavras. |
-| `veredito` | Frase de 5 a 12 palavras. |
-| `veredito_texto` | 25 a 40 palavras: o que entrega, o que pesa e um conselho claro de compra. |
-
-## Regras de conteúdo
-
-1. **Nada inventado.** Todo número vem de fonte listada em `fontes`. O que não foi confirmado fica fora das caixas de números e aparece como "não confirmado" na lateral ou na ficha.
-2. **Específico, não genérico.** Proibido item que serviria para qualquer jogo: "arte marcante", "muito divertido", "tema fino", "sorte nas cartas" sem dizer onde. Diga o quê e por quê: "Arte de Maxime Morin faz cada região parecer um quadro".
-3. **Como funciona ensina.** Os 5 passos, lidos em sequência, explicam uma rodada de verdade, com os termos do jogo.
-4. **Consistência.** Lateral, números e ficha batem com a `ficha` da página.
-5. **Bandeira do Brasil** só na linha "editora no Brasil", e só se houver edição nacional confirmada.
-7. **Texto de gente, não de fórmula** (vale para resenhas e notícias). Sem muletas e adjetivos vazios ("vale a pena", "para quem gosta de", "ideal para", "jornada", "envolvente", "promete", "não é só X, é Y"): troque por um detalhe concreto (quanto tempo, quantas peças, qual jogo parecido, o que acontece na mesa). Varie a abertura das frases e dos itens de lista. Opinião com posição clara. A lista fica em `tools/vicios.py`; `checar_roteiro.py` e `checar_noticia.py` avisam (sem bloquear) e o aviso deve ser resolvido antes de publicar. Nunca use ferramenta de "humanizar" texto: ela troca palavras sem critério e cria erro.
-6. **Revisão da imagem** (etapa 5 da skill): conferir bloco por bloco contra o roteiro. Duas falhas no mesmo bloco → gerar a arte sem texto e compor o texto por cima em HTML (Playwright).
-
-# Padrão editorial do texto do site (v2)
-
-A página é a resenha completa: precisa ensinar o jogo, mostrar como é jogar, pesar o que é bom e o que pesa com o porquê, e terminar com um conselho de compra claro. Ela nunca pode ter menos informação que o infográfico. `tools/checar_roteiro.py` confere estas regras também, e `tools/lote_openai.py enviar` e `tools/publicar.py` se recusam a seguir se o texto não passar.
-
-| Campo (em `conteudo/<slug>.json`) | Seção da página | Regra |
-|---|---|---|
-| `selo` | nível de recomendação | Um de: **Recomendado**; **Recomendado com ressalva** (obrigatório quando há ponto de atenção "Grave" ou preço mínimo acima de R$ 800); **Não recomendado**. |
-| `ressalva` | junto do nível | Só com "Recomendado com ressalva": o obstáculo em 2 a 6 palavras, tirado da resenha ("joga-se uma vez só", "preço acima de R$ 1.000", "textos em inglês"). |
-| `melhor_para` | balão do perfil | Um de: `entrada` (peso BGG abaixo de 2, regras em ~15 min), `dupla` (2 jogadores é a melhor contagem), `festa` (melhor com 5+, até ~30 min), `cooperativo`, `solo` (modo solo avaliado como ótimo), `proximo` (peso entre 2 e 3), `estrategia` (peso a partir de 3,2 ou partidas de 2 h), `campanha` (história em várias sessões), `tema` (narrativa e imersão no centro). Escolha o que melhor descreve quem deve comprar, sem repetir o perfil das últimas resenhas quando houver dúvida. |
-| `titulo_busca` | título no Google e na prévia | Até 62 caracteres, com o nome do jogo e a palavra "resenha", e um ângulo tirado da própria resenha (a frase de destaque, o prêmio principal, a comparação ou a série). Exemplos: "Cascadia: resenha do quebra-cabeça de natureza em 30 min", "Santuário ou Ark Nova? Resenha do vencedor do DSP 2026". "Vale a pena?" só quando for a dúvida real (jogo caro) e sem repetir a fórmula das últimas resenhas. O subtítulo do veredito já traz "Veredito: <jogo> vale a pena?". |
-| `og_titulo` | nome do jogo no site (veredito, perguntas frequentes, guias, prévia, busca) | Sempre no modelo fixo "<nome no Brasil> vale a pena? Resenha Elite Boardgamers" (ex.: "Santuário vale a pena? Resenha Elite Boardgamers"). Não é título de busca nem de compartilhamento: o ângulo criativo vai no `titulo_busca`. Fora do modelo, o título inteiro vira o "nome do jogo" (erro de 30/10/2026); `checar_roteiro.py` recusa. |
-| `descricao` | texto embaixo do título no Google | Até 155 caracteres (o Google corta o resto); `checar_roteiro.py` recusa acima disso. |
-| `lede` | abertura | 50 a 90 palavras: o que é, o prêmio principal, para quem é e uma pista do veredito. |
-| `como_funciona` | Como funciona | 4 a 6 parágrafos, 200 a 350 palavras no total: objetivo, o turno, a mecânica central, a progressão e como acaba e pontua. Termos do jogo explicados na primeira vez. |
-| `experiencia` | Como é jogar | 2 a 3 parágrafos, 120 a 220 palavras: ritmo, decisões típicas e um exemplo concreto de jogada. |
-| `funciona` | O que funciona muito bem | 5 a 7 itens `[título, texto]`, texto de 30 a 70 palavras com o porquê; opinião sempre atribuída ("Para a Board Game Quest, …"). |
-| `atencao` | Pontos de atenção | 5 a 7 itens `[gravidade, título, texto]`, mesma regra. |
-| `jogadores` | Com quantos jogar | 2 a 5 itens `[número de jogadores, texto, nível]`, 10 a 45 palavras; nível 3 = ótimo, 2 = bom, 1 = fraco (vira os pontinhos da página). |
-| `primeira_partida` | Primeira partida | 50 a 120 palavras: tempo de explicação, o que confunde e uma dica prática. |
-| `edicao_nacional` | Edição nacional e preço | 40 a 100 palavras: editora, idioma, preço de referência com data e disponibilidade (ou a falta de edição nacional). |
-| `versoes` | Expansões e versões | 30 a 100 palavras: expansões, versão digital, versões de entrada. |
-| `comparacoes` | Se você gosta de… | 2 a 3 itens `[jogo, slug ou null, texto]`, 20 a 50 palavras; o slug liga para a nossa resenha. |
-| `para_quem` / `nao_e_para` | É para você se… | 4 a 5 itens cada. |
-| `veredito` | Veredito | 80 a 140 palavras: o que entrega, o que pesa, para quem é e se vale o preço. |
-| `citacao` | destaque em Como é jogar | `{texto, fonte}`: uma frase curta de crítica especializada que resume a experiência ("tradução livre" quando traduzida). |
-| `preco_ref` | resumo e cartão de preço | `{faixa, data, obs}`: faixa de preço das lojas consultadas, data da consulta e observação (estoque, importado, sem edição nacional). |
-| `fontes` | Fontes | pelo menos 6, com link. |
-
-Resenhas antigas, cujo infográfico é anterior ao padrão v2, levam `passos`, `perfil` e `como_resumo` próprios no nível do site (mesmas regras do roteiro), sem mexer na imagem.
-
-Layout (gerado por `build_review.py` quando a resenha tem `experiencia`): resumo de 30 segundos no topo, passos numerados (vêm do `roteiro.passos`), faixa escura com a citação, prós e contras em cartões que abrem com um toque, barras de perfil (`roteiro.perfil`), blocos de número de jogadores, dica de primeira partida, cartão de preço, comparações com capa, e no celular ficha, prêmios, versões e fontes começam fechados.
-
-Regras de texto:
-
-1. **Nada inventado**, como no infográfico. Regra do jogo é fato; elogio e crítica são opinião e sempre têm dono.
-2. **Escreva para quem nunca jogou.** Frases diretas, sem jargão solto ("construção de baralho", não "deck-building" sem explicar).
-3. **Atribuição natural.** "Para a Tabletop Gaming, …" e não "A IGN, citada pela Wikipedia, elogia…".
-4. **Exemplo concreto** em Como é jogar e em pelo menos dois pontos fortes ou de atenção.
-5. **Sem frase genérica** ("muito divertido", "arte marcante", "tema fino") sem dizer o quê e por quê.
+Todo número, nome, data e preço tem fonte com link; o que não foi confirmado fica fora ou aparece como "não confirmado nas fontes consultadas". Fato tem fonte, opinião tem dono.
 
 ## Opinião forte (29/10/2026)
 
@@ -113,39 +48,6 @@ Pedido do usuário: a resenha precisa gerar reação e compartilhamento. O tom d
 
 Outras referências de tom, para variar a técnica: Roger Ebert (a demolição elegante), A. A. Gill e Jay Rayner (o detalhe concreto e a comparação absurda), Charlie Brooker (o exagero que escala), Jeremy Clarkson (a comparação doméstica e o deadpan), Ben "Yahtzee" Croshaw e Quinns, do Shut Up & Sit Down (humor sobre o próprio hobby), Dorothy Parker (a frase curta e letal), José Simão, Stanislaw Ponte Preta e Millôr Fernandes (o humor brasileiro).
 
-## Fotos oficiais na página
-
-Quando a resenha tem fotos aprovadas em `<slug>/fotos/fontes.json` (skill `imagens`) e o jogo foi liberado com `"usar_na_pagina": true` nesse arquivo (depois da revisão das fotos), `build_review.py` monta a página assim (modelo aprovado com Terraforming Mars):
-
-- **Topo:** uma foto oficial do jogo no lugar do infográfico. Vale a foto marcada com `"principal": true`; sem marca, a ordem é mesa, componentes, jogabilidade, caixa.
-- **Como é jogar:** a foto marcada com `"jogar": true`; sem marca, a próxima disponível (componentes, jogabilidade ou mesa), logo depois da citação.
-- **Edição nacional e preço:** a caixa (`capa`), pequena, ao lado do texto.
-- **Infográfico:** desce para o meio, na seção "Infográfico para o Instagram" depois de Prós e contras, com os botões Salvar na galeria e Legenda.
-- Toda foto leva o crédito da editora embaixo ("Imagem: …").
-- **Sem rosto de frente:** foto com mãos, braços ou rosto de perfil pode entrar (29/10/2026). Só a foto em que aparece o rosto de alguém de frente leva `"pessoas": true` no `fontes.json` e não entra na página.
-- **Miniatura:** a `capa.jpg` (cartão na lista de resenhas e prévia do link no WhatsApp) é refeita a partir da foto do topo, recortada no centro em 800×800, sempre que a página é gerada. O `og:image` leva `?v=` com a versão da imagem, para o WhatsApp buscar a nova.
-- Só a caixa não basta: sem foto de mesa, componentes ou jogabilidade, a página continua com o infográfico no topo e a miniatura do infográfico.
-
-## Crivo de qualidade das fotos
-
-`python3 tools/imagens/crivo.py <slug>` avalia cada foto aprovada pelo robô e escolhe o lugar dela na página; `--aplicar` grava a escolha no `fontes.json` (`principal`, `jogar`, `fora`) e libera a página (`usar_na_pagina`). A página só ganha fotos se alguma passar para o topo; senão fica com o infográfico até chegarem fotos melhores. Os limites foram calibrados com as fotos já aprovadas.
-
-**Eliminatórios (a foto não entra em lugar nenhum)** — marcados na revisão visual da folha de contato:
-- rosto de alguém de frente (`"pessoas": true`); mãos e perfil podem;
-- texto por cima da foto (faixa de loja, selo, ícones de idade) ou texto em outra língua que domina a imagem (`"texto": true`);
-- medidos pelo crivo: brilho médio fora de 40–235 (escura ou estourada) e nitidez abaixo de 6.
-
-Foto de outra edição não reprova: entra com o aviso no crédito (`"Imagem: … · foto da 2ª edição; a resenha trata da edição original de 2017"`).
-
-**Topo (foto principal)** — mesa, jogabilidade ou componentes, nessa ordem de preferência:
-- lado menor de pelo menos 800 px;
-- proporção até 1,8 (16:9); mais comprida vira uma faixa fina no celular;
-- sem cara de catálogo: menos de 35% da foto em branco recortado e menos de 45% em fundo liso de estúdio;
-- a caixa sozinha nunca vai para o topo.
-
-**Como é jogar** — outra foto de mesa, jogabilidade ou componentes, com lado menor de pelo menos 600 px e proporção até 2,4. Prefere uma que também passaria no topo; foto de catálogo é aceita aqui.
-
-**Preço** — a caixa, com lado menor de pelo menos 400 px.
 
 # Padrão editorial das notícias (v1)
 
@@ -194,55 +96,3 @@ Pedido do usuário em 29/10/2026: chamada com emoção, que faça clicar e comen
 - **Chamada** (até 120 caracteres, 1 emoji no fim): pode usar curiosidade ("mas um deles já atrasou"), contraste ("R$ 118 ou R$ 422,99?"), opinião forte, a dor do leitor ("a caixa assusta?"), número ou prêmio real e urgência real (pré-venda aberta, prazo de campanha).
 - **Pergunta** para puxar comentário: fácil de responder em uma palavra ou escolha ("Looot ou Through the Desert?", "pé embaixo ou freio?"), sobre o gosto do leitor, nunca prova de conhecimento.
 - **A regra que não se quebra:** a página precisa entregar o que a chamada promete. Todo número, prêmio, preço ou data da chamada está no texto publicado. Proibido: fato inventado, urgência falsa, "você não vai acreditar", "chocante", CAIXA ALTA, mistério sobre algo que o texto não revela. Clickbait enganoso derruba a distribuição no Google Discover e no Facebook e queima a confiança do grupo.
-
-# Como Jogar: "Comece a jogar em N minutos" (31/10/2026)
-
-Pedido do usuário: a seção curta do topo de cada tutorial precisa garantir que a pessoa saiba o mínimo suficiente para começar a jogar. A versão do piloto (Clank! Catacombs) era um manual comprimido: 669 palavras sobre o jogo inteiro, dezenas de termos de uma vez, regras do fim da partida misturadas com a montagem e nenhum turno de exemplo. Lida em 4 minutos, mas sem ensinar a jogar o primeiro turno.
-
-**O que a seção promete:** ao fim dela, o leitor monta a mesa e joga o primeiro turno sem abrir o manual. Só isso. A partida inteira é das etapas seguintes. A promessa de minutos é de leitura (200 palavras por minuto), não de mesa.
-
-**Como o 4C/ID se aplica aqui.** A seção é a primeira classe de tarefa do tutorial, na versão mais simples da tarefa inteira:
-
-| Componente do 4C/ID | Na seção | Regra |
-|---|---|---|
-| Tarefa de aprendizagem | **Meta** e **Seu primeiro turno** | A tarefa é real e inteira, na versão mais simples: montar e jogar um turno com as cartas iniciais e um túnel comum. Apoio que diminui: exemplo resolvido, depois tarefa para completar, depois a mão de verdade do leitor (com perguntas de checagem antes de jogar). A resposta da tarefa para completar vem depois, separada. |
-| Informação de apoio | **A ideia do jogo** | O modelo mental em até 3 frases: objetivo, a tensão central, a lógica do jogo. No máximo 4 termos novos em negrito. |
-| Informação procedural | **Monte a mesa**, os passos do turno e a ordem do fim do turno | Lista numerada, conferível na mesa, no ponto de uso. Componente que só serve mais tarde leva a marca *(depois)*: o leitor monta, mas não precisa entender agora. |
-| Prática específica | **Os erros mais caros** | Só os 2 ou 3 erros mais comuns e caros, ditos como regra. O treino em si fica nas etapas. |
-| Redução de carga | **Ainda não precisa saber** | Lista do que foi adiado e em que etapa está. Nada que só aparece depois do primeiro turno entra na seção, exceto como orientação de uma linha (**Como a partida acaba**). |
-
-**Ordem obrigatória:** Meta; A ideia do jogo; Monte a mesa; Seu primeiro turno (tabela das cartas iniciais, passos do turno, exemplo resolvido, complete, a sua mão, resposta do complete); o que for indispensável para fechar o primeiro turno (no Clank!, o ataque do dragão em três linhas); Ainda não precisa saber; Como a partida acaba; Os erros mais caros.
-
-**Regras de conteúdo:**
-1. Toda regra da seção existe na base de regras do dossiê, com página do manual. O exemplo resolvido é uma jogada legal com as cartas iniciais reais, e a conta é refeita.
-2. Toda regra que pode acontecer no primeiro turno está na seção, mesmo rara (no Clank!: carta com Revelar na Fileira inicial, ataque do dragão ao repor a Fileira).
-3. Nenhuma regra que só acontece depois do primeiro turno entra explicada; vai para "Ainda não precisa saber", com a etapa.
-4. Os mesmos nomes do glossário da edição brasileira, sempre iguais.
-5. Voz do Como Jogar (neutra e exata, sem opinião forte), zero travessão, zero vício de `tools/vicios.py`.
-
-**Portões:**
-- `python3 tools/checar_comece.py docs/como-jogar/<...>/tutorial.md` precisa passar (tamanho, ordem, blocos, resposta separada, termos, etapas citadas que existem, travessão, vícios).
-- **Teste de execução:** um subagente que não escreveu a seção recebe só ela e tenta montar a mesa para o mínimo e o máximo de jogadores e jogar o primeiro turno com três mãos diferentes. Cada ponto em que ele precisou adivinhar vira correção. É sinal de lacuna, não prova de que pessoas aprendem.
-- **Teste com pessoas** (quando houver leitores): a pessoa lê só a seção e joga o primeiro turno sem ajuda; conta-se tempo, erros de regra e onde travou.
-
-## Como Jogar: essencial à vista, o resto a um toque (31/10/2026)
-
-Pedido do usuário: separar com clareza o que é fundamental para jogar das informações adicionais, e deixar o texto à vista curto. O conversor (`tools/como_jogar_md.py`) aplica a regra sozinho; quem escreve só precisa marcar certo.
-
-- **À vista (essencial):** a seção "Comece a jogar em N minutos" inteira; em cada etapa, os blocos `[!passos]` (a regra que se usa sempre) e `[!atencao]` (o erro caro); tabelas de referência; a folha "Para consultar durante a partida" e as fontes.
-- **Abre com um toque:** `[!entender]` ("Por que funciona assim"), `[!resolvido]` ("Ver um exemplo resolvido"), `[!edicao]`, `[!dica]` e `[!mais]` ("Regra adicional: <título>"). As tarefas (`[!complete]`, `[!suavez]`, `[!treino]`) e as respostas de cada etapa vão juntas para o fim dela, em "Pratique esta etapa". As seções "Antes de tudo", "Como este guia ensina", "Situações especiais" e "Avaliação final" ficam inteiras recolhidas, com a etiqueta Opcional.
-- **O que é `[!mais]`:** regra verdadeira e necessária quando a situação aparece, mas que não acontece em toda partida ou em todo turno: sala especial (Portal, Caverna), exceção (dano por escolha sem cubos), fim antecipado, efeito de ficha. Um bloco por regra, com título curto em negrito ("> [!mais] **Portal.** ..."), para o leitor achar pelo nome quando a peça aparecer na mesa. Nunca apagar regra para encurtar: mover para `[!mais]`.
-- **Teste do essencial:** um bloco `[!passos]` só tem o que o jogador usa sempre ou quase sempre. Se a regra começa com "se", "quando", "exceto" ou cita um componente que só aparece em parte das partidas, ela é candidata a `[!mais]`.
-- **Leitura:** o tempo do topo ("Leitura do essencial") conta só o que fica à vista, a 200 palavras por minuto.
-
-
-## Como Jogar: referências visuais (01/11/2026)
-
-Pedido do editor: mostrar as ações, não só descrevê-las. Decisão dele, no mesmo dia: **recortes das ilustrações do manual + vídeo do YouTube incorporado**; nada de print de vídeo (os termos do YouTube proíbem baixar o conteúdo, e o vídeo é obra de quem o gravou).
-
-- **Figuras do manual** (`!fig[legenda](figuras/arquivo.webp)` no tutorial.md; arquivos em `como-jogar/<slug>/figuras/`): de 4 a 7 por tutorial, uma ou mais por etapa, escolhidas entre os exemplos ilustrados do manual que mostram uma ação acontecendo (preparação montada, um turno, uma jogada, uma batalha, uma pontuação). Recorte só a parte gráfica do quadro (peças, cartas, tabuleiro, setas), sem reproduzir os blocos de texto do manual; largura máxima 1000 px, `.webp` com qualidade em torno de 80. A legenda explica, com palavras nossas, o que a figura mostra e termina com o crédito "Ilustração: manual <editora> (p. N)". A figura entra logo depois do bloco que ela ilustra. Manual em inglês: mesma regra, crédito "Ilustração: manual oficial <editora> (p. N)", e a legenda traduz o que for preciso.
-- **Vídeo** (`!video[legenda](https://www.youtube.com/watch?v=ID&t=SEGUNDOS)`): um vídeo de regras em português, no fim do "Comece a jogar em N minutos", com a frase "Ele complementa este guia; em caso de diferença, vale o manual." Preferência (pedido do editor, 01/11/2026): canal **Duque Board Games** (@DuqueBoardgames), "Como jogar" ou "Gameplay resumida"; sem vídeo do Duque, o canal da editora brasileira, depois o tradutor ou revisor do manual, ou canal de regras conhecido. Para achar os vídeos do Duque, a busca na web não serve: use a busca do próprio canal (`https://www.youtube.com/@DuqueBoardgames/search?query=<jogo>`, com `Accept-Language: pt-BR`) e confirme pelo oEmbed. Se o vídeo do Duque for de partida e não de regras, pode entrar um segundo vídeo, de regras. O canal e o título vêm do oEmbed oficial (`https://www.youtube.com/oembed?url=...&format=json`), e a legenda credita o canal. A página mostra só a capa; o player do YouTube (domínio youtube-nocookie) carrega quando o leitor toca. Nada do vídeo é baixado.
-- **Vídeo no segundo da ação:** um `!video` dentro de uma etapa, com `&t=`, só quando o segundo for conferido (capítulos da descrição do vídeo ou transcrição com tempo de cada trecho). Sem tempo conferido, não se estima: fica só o vídeo do topo.
-- **Montar a mesa passo a passo (pedido do editor em 04/11/2026).** Todo tutorial abre, logo depois do resumo e antes do "Comece a jogar", com a seção `## setup. Montar a mesa passo a passo`. Ela segue a página (ou páginas) de preparação do manual, na mesma ordem, e descreve a montagem de forma completa: a lista de componentes com quantidades; cada passo numerado com o que pegar, quantos, onde pôr e virado para que lado; o que muda com o número de jogadores (tabela); o que volta para a caixa; quem começa. **Cada passo que pode ser mostrado tem imagem**: recorte da ilustração de preparação do manual (`!fig`, crédito e página), e a foto da mesa montada da editora quando houver; se o manual não ilustra um passo, diga isso no `auditoria.md` em vez de inventar. Termina com uma conferência rápida ("antes de começar, confira:") e uma pergunta `??`. Fica toda à vista (nada recolhido, salvo regra de caso especial em `[!mais]`). O "Comece a jogar" pode remeter a ela em vez de repetir a montagem.
-- **Fotos em todas as seções (pedido do editor em 04/11/2026).** Nenhuma seção do Como Jogar fica sem imagem. O topo de cada tutorial abre com uma foto oficial do jogo (mesa montada de preferência), cada seção sem figura do manual à vista abre com uma foto logo abaixo do título (rodízio entre as fotos do jogo) e a lista em `/como-jogar/` mostra a foto de cada jogo no cartão e um mosaico no topo. As fotos seguem as regras da skill `imagens` (editora, licenciadas, Wikimedia Commons; crédito embaixo; nada de rosto de frente; nunca imagem gerada por IA) e ficam em `como-jogar/<slug>/fotos/` com `fontes.json`; jogo que tem resenha reaproveita `<slug>/fotos/`. O gerador (`tools/como_jogar_md.py`) põe tudo sozinho; sem foto oficial, entram as figuras do manual, e o tutorial só vai ao ar com pelo menos 3 fotos oficiais quando a editora ou o Commons tiverem (o `verificar_site.py` avisa tutorial publicado sem foto).
-- Ícones de componentes (recursos, símbolos de dado) continuam com `![nome](icones/x.webp)`, com crédito embaixo da tabela.

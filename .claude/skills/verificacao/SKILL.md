@@ -1,6 +1,6 @@
 ---
 name: verificacao
-description: Verificação noturna (22h) da Elite Boardgamers — confere tudo o que foi publicado no dia (notícias e resenhas) contra as fontes e o PADRAO_EDITORIAL.md, checa páginas, links e o site no ar, e corrige sozinha o que estiver errado, com commit e push na main. Use quando pedirem "/verificacao", "verificação do dia", "conferir o que foi publicado" ou quando a tarefa agendada das 22h disparar.
+description: Verificação noturna (22h) da Elite Boardgamers — roda as checagens automáticas do que foi publicado no dia, confere à mão só a manchete, preços, datas e fotos, checa páginas, links e o site no ar, e corrige sozinha o que estiver errado, com commit e push na main. Use quando pedirem "/verificacao", "verificação do dia", "conferir o que foi publicado" ou quando a tarefa agendada das 22h disparar.
 ---
 
 # Verificação noturna do conteúdo
@@ -26,12 +26,13 @@ O relatório tem duas partes: as falhas automáticas (notícia fora do padrão, 
 **Nome da editora:** a Galápagos hoje é a Asmodee (galapagosjogos.com.br redireciona para asmodee.com.br). Não troque "Asmodee" por Galápagos ao conferir com as fontes: o texto usa sempre "Asmodee", mesmo quando a fonte ainda disser Galápagos; os nomes das fontes ficam como a página citada os escreve.
 
 
-Para **cada** notícia e resenha da lista "Publicado em <data>":
+**Conferência enxuta (11/11/2026, pedido do usuário para economizar tokens).** A rede principal são as checagens automáticas da etapa 1 (`verificar_site.py`, `checar_noticia.py`, `duplicatas.py`). À mão, abra fontes só para:
 
-1. Abra o JSON e as fontes citadas (WebFetch/WebSearch, respeitando robots.txt; BGG e Ludopedia só pela busca).
-2. Confira, item por item: nomes de jogos, autores e editoras; datas; números (notas, preços com data, valores de campanha, prazos); prêmios e colocações; edição nacional (regra 6 do padrão das notícias: `tools/noticias/edicao_nacional.py "<jogo>"` e busca em português; ausência se escreve "não encontramos edição nacional até <data>"); citações literais (só frase que está na fonte).
-3. Confira se a opinião tem dono, se o selo bate com o texto e se a nota ainda é notícia (campanha encerrada, data adiada).
-4. Imagem: a foto da nota/resenha é do jogo ou evento certo, com crédito; notícia nova não pode estar sem foto (`checar_noticia.py` recusa); nota antiga com `imagem: null` ganha nova tentativa pela skill `imagens` (nunca imagem gerada por API).
+1. **A manchete do dia**: confira o fato central, nomes, datas e números contra a fonte primária.
+2. **Preços e datas de todas as notas do dia**: só o número e a data citados, na fonte citada (uma página por nota; não releia a nota inteira). Edição nacional dada como ausente: rode `tools/noticias/edicao_nacional.py "<jogo>"` (ausência se escreve "não encontramos edição nacional até <data>").
+3. **A foto de cada nota**: só olhar se é do jogo ou evento certo, com crédito (nunca imagem gerada por API).
+
+Não reabra críticas, citações e contexto das outras notas, a não ser que uma checagem automática acuse algo. Não use subagentes. Resenhas estão pausadas desde 11/11/2026; se alguma for publicada no dia, confira só prêmio, preço e se as fotos são do jogo certo.
 
 Correções:
 
@@ -40,10 +41,9 @@ Correções:
 - **Resenha com erro grave** (jogo errado, prêmio inventado, fotos de outro jogo) que não dê para corrigir com segurança: volte o jogo para `em_producao` em `pauta.json`, tire-o de `publicadas`, apague `<slug>/index.html` e rode `python3 tools/publicar.py` com as outras publicadas para regerar lista e página inicial; a rotina das 8h refaz.
 - Depois de corrigir: `python3 tools/build_home.py`, `python3 tools/build_review.py conteudo/<slug>.json` para cada resenha mexida, `python3 tools/verificar_site.py` de novo até passar, Playwright em 390 px nas páginas mexidas (sem rolagem lateral, sem erro de JS).
 
-## Manutenção mensal (dia 1 de cada mês)
+## Manutenção mensal
 
-- Preços: atualize `preco_ref` (faixa e data da consulta) das 5 resenhas mais vistas (Search Console, se houver acesso; senão as 5 mais antigas), com as lojas citadas como fonte. Preço que não se confirma vira "sem preço confirmado em <data>".
-- Ficha: tente confirmar um item "não confirmado nas fontes consultadas" por resenha (começando por Faraway e Detective); só troque com fonte.
+Suspensa desde 11/11/2026 (resenhas pausadas, economia de tokens). Não atualize preços nem fichas de resenhas antigas.
 
 ## 3. Publicar e avisar
 

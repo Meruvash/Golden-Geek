@@ -26,9 +26,9 @@ Linha editorial de ensino de regras, separada das resenhas. Voz neutra e exata d
 - Manual e PDFs ficam no scratchpad, nunca no repositório.
 - Nunca explicar o método de ensino ao leitor (pedido do editor em 31/10/2026).
 
-- Montar a mesa passo a passo (pedido do editor em 04/11/2026): todo tutorial abre com `## setup. Montar a mesa passo a passo`, antes do "Comece a jogar", seguindo a página de preparação do manual, com uma figura em cada passo (PADRAO_EDITORIAL.md, "Montar a mesa passo a passo"). Os auditores conferem cada passo e cada figura dessa seção.
+- Montar a mesa passo a passo (pedido do editor em 04/11/2026): todo tutorial abre com `## setup. Montar a mesa passo a passo`, antes do "Comece a jogar", seguindo a página de preparação do manual, com uma figura em cada passo (docs/padrao/como-jogar.md, "Montar a mesa passo a passo"). Os auditores conferem cada passo e cada figura dessa seção.
 
-- Essencial à vista, o resto a um toque: regra de caso especial vai em `> [!mais] **Título.** texto`, nunca no passo a passo (PADRAO_EDITORIAL.md, "Como Jogar: essencial à vista").
+- Essencial à vista, o resto a um toque: regra de caso especial vai em `> [!mais] **Título.** texto`, nunca no passo a passo (docs/padrao/como-jogar.md, "essencial à vista").
 
 ## Rotina diária: no mínimo 5 tutoriais por dia (pedido do editor em 04/11/2026; antes eram 8)
 
@@ -38,5 +38,5 @@ A tarefa agendada diária publica **pelo menos 5 tutoriais novos por dia, todos 
 2. Um subagente redator por jogo, todos na mesma mensagem, cada um com o BRIEF preenchido. Enquanto eles escrevem, busque as fotos de cada jogo (passo 3b), um jogo por vez. Depois, para cada tutorial, os dois auditores do passo 3 (conferência contra o manual e partida simulada), também em paralelo. Regra que o auditor não confirmar no manual sai do texto.
 3. Marque `"publicar": true` só nos tutoriais que passaram na auditoria e publique todos num único commit (passos 4 e 5). Se menos de 5 passarem, pegue os próximos da pauta e faça outra rodada no mesmo dia até chegar a 5; só se ainda assim faltar, publique os que passaram e diga no relato quantos faltaram e por quê; nunca publique tutorial sem auditoria para cumprir a meta.
 
-- Referências visuais: figuras dos exemplos ilustrados do manual (`!fig`, com crédito e página) e um vídeo de regras em português incorporado (`!video`), sem baixar nada do vídeo (PADRAO_EDITORIAL.md, "Como Jogar: referências visuais"). No passo 4, confira que as figuras aparecem e que o vídeo abre ao tocar.
-- Vídeo: de preferência do canal Duque Board Games (@DuqueBoardgames; busca do próprio canal + oEmbed), conforme PADRAO_EDITORIAL.md, "Como Jogar: referências visuais".
+- Referências visuais: figuras dos exemplos ilustrados do manual (`!fig`, com crédito e página) e um vídeo de regras em português incorporado (`!video`), sem baixar nada do vídeo (docs/padrao/como-jogar.md, "referências visuais"). No passo 4, confira que as figuras aparecem e que o vídeo abre ao tocar.
+- Vídeo: de preferência do canal Duque Board Games (@DuqueBoardgames; busca do próprio canal + oEmbed), conforme docs/padrao/como-jogar.md, "referências visuais".

@@ -4,7 +4,7 @@ Uso:
   python3 tools/imagens/crivo.py [slug ...]            relatório (sem argumentos, todos os jogos com fotos)
   python3 tools/imagens/crivo.py --aplicar slug ...    grava a escolha no fontes.json e libera a página
 
-As regras estão em PADRAO_EDITORIAL.md ("Crivo de qualidade das fotos"). As medidas são automáticas;
+As regras estão em docs/padrao/resenhas.md ("Crivo de qualidade das fotos"). As medidas são automáticas;
 o que exige olhar a foto fica em marcas no fontes.json, postas na revisão: "pessoas" (rosto de frente; mãos e rosto de perfil podem, pedido do usuário em 29/10/2026)
 e "texto" (texto por cima da foto ou texto em outra língua que domina a imagem). "outra_edicao" não
 reprova: a foto entra com o aviso no crédito.

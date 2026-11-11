@@ -26,7 +26,7 @@ def main():
         erros = checar_texto(c)
         if erros:
             print(*erros, sep="\n - ")
-            sys.exit(f"{c['slug']}: texto do site fora do PADRAO_EDITORIAL.md; nada foi publicado.")
+            sys.exit(f"{c['slug']}: texto do site fora de docs/padrao/resenhas.md; nada foi publicado.")
         fontes_fotos = ROOT / c["slug"] / "fotos" / "fontes.json"
         so_fotos = fontes_fotos.exists() and json.loads(fontes_fotos.read_text(encoding="utf-8")).get("usar_na_pagina")
         # Resenha só com fotos oficiais liberadas dispensa o infográfico.

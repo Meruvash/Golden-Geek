@@ -23,7 +23,9 @@ ROOT = Path(__file__).resolve().parents[2]
 CACHE = ROOT / ".cache" / "imagens"
 FILA = CACHE / "fila.txt"
 TRAVA = CACHE / "fila.lock"
-JANELA_H = 6  # só conteúdo mexido nas últimas horas conta como novo
+JANELA_H = 6
+# Resenhas diárias pausadas em 11/11/2026 (economia de tokens). Volte para True quando as resenhas voltarem.
+RESENHAS_ATIVAS = False  # só conteúdo mexido nas últimas horas conta como novo
 
 
 def recentes(arquivo_tocado):
@@ -38,6 +40,8 @@ def precisa_de_imagem(chave, c):
     if chave.startswith("noticias/"):
         im = c.get("imagem")
         return not (im and im.get("arquivo") and (ROOT / "noticias" / im["arquivo"]).exists())
+    if not RESENHAS_ATIVAS:
+        return False  # resenhas pausadas desde 11/11/2026: busca automática de fotos só para notícias
     try:
         return not json.loads((ROOT / chave / "fotos" / "fontes.json").read_text(encoding="utf-8")).get("fotos")
     except (OSError, ValueError):

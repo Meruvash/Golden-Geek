@@ -85,7 +85,7 @@ Não é resenha, não é resumo do manual, não é texto de venda.
 
 Isto é um piloto. Nada vai ao ar. Você trabalha num branch, grava três arquivos e me entrega os três para revisão humana. Não peça aprovação no meio do caminho, a não ser que falte documentação indispensável ou haja conflito de regra que impeça um texto responsável.
 
-Antes de começar, leia no repositório: `CLAUDE.md`, `PADRAO_EDITORIAL.md` (seções "Padrão editorial do texto do site" e "Opinião forte"), `tools/vicios.py` e uma resenha completa (`conteudo/cascadia.json`), para conhecer a voz do portal e o que já se sabe do jogo.
+Antes de começar, leia no repositório: `CLAUDE.md`, `docs/padrao/resenhas.md` (texto do site) e `PADRAO_EDITORIAL.md` ("Opinião forte"), `tools/vicios.py` e uma resenha completa (`conteudo/cascadia.json`), para conhecer a voz do portal e o que já se sabe do jogo.
 
 ## 2. Onde trabalhar e o que não tocar
 

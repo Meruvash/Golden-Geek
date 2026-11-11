@@ -5,7 +5,7 @@ Uso: python3 tools/verificar_site.py [--data AAAA-MM-DD] [--online]
 Checagens automáticas (saem com código 1 se alguma falhar):
   - todo JSON de conteudo/ abre;
   - todas as notícias passam em tools/noticias/checar_noticia.py e têm página em noticias/<slug>/;
-  - toda resenha publicada em pauta.json tem conteúdo que passa no texto do PADRAO_EDITORIAL.md, fotos oficiais
+  - toda resenha publicada em pauta.json tem conteúdo que passa no texto de docs/padrao/resenhas.md, fotos oficiais
     liberadas (ou infográfico), index.html e capa.jpg, e a página bate com o que build_review.py gera hoje;
   - links e imagens internos de todas as páginas apontam para arquivos que existem;
   - canonical, Open Graph e JSON-LD de cada página batem com o conteúdo visível (tools/checar_seo.py);

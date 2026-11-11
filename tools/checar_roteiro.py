@@ -1,4 +1,4 @@
-"""Confere o roteiro do infográfico e o texto do site contra o PADRAO_EDITORIAL.md (v2).
+"""Confere o roteiro do infográfico e o texto do site contra docs/padrao/infograficos.md e docs/padrao/resenhas.md.
 
 Uso: python3 tools/checar_roteiro.py conteudo/<slug>.json [...]
 Sai com erro (código 1) e lista o que falta se algum roteiro não passar.
@@ -74,7 +74,7 @@ def checar(c):
 
 
 def checar_texto(c):
-    """Texto do site (padrão editorial v2, segunda parte do PADRAO_EDITORIAL.md)."""
+    """Texto do site (padrão editorial v2, docs/padrao/resenhas.md)."""
     erros = []
     total = lambda xs: sum(palavras(x) for x in xs or [])
 
@@ -82,7 +82,7 @@ def checar_texto(c):
         if not mn <= n <= mx:
             erros.append(f"texto · {nome}: {n} {un} (padrão: {mn} a {mx})")
 
-    # selo: nível de recomendação + perfil "Melhor para" (PADRAO_EDITORIAL.md)
+    # selo: nível de recomendação + perfil "Melhor para" (docs/padrao/resenhas.md)
     from filtros_resenha import PERFIS
     niveis = ("Recomendado", "Recomendado com ressalva", "Não recomendado")
     if c.get("selo") not in niveis:
@@ -103,7 +103,7 @@ def checar_texto(c):
         erros.append(f"texto · descricao: {len(c['descricao'])} caracteres; até 155 (o Google corta o resto)")
     tb = c.get("titulo_busca", "")
     if not tb:
-        erros.append("texto · titulo_busca: falta o título da busca (ver PADRAO_EDITORIAL.md)")
+        erros.append("texto · titulo_busca: falta o título da busca (ver docs/padrao/resenhas.md)")
     elif len(tb) > 62 or "resenha" not in tb.lower() or c["jogo"].split(":")[0].lower() not in tb.lower() and c["og_titulo"].split(" vale a pena")[0].split(":")[0].lower() not in tb.lower():
         erros.append(f"texto · titulo_busca: {len(tb)} caracteres; precisa de até 62, com o nome do jogo e a palavra resenha")
     faixa("lede", palavras(c.get("lede", "")), 50, 90)
