@@ -49,7 +49,8 @@ export const WanHD: React.FC<{ x: number; y: number; escala?: number; expr?: Exp
   const k = (s: string) => `${id}-${s}`;
   const PELE = "#f6d2b8", PELE_S = "#d9a487";
   const TERNO = "#34363f", TERNO_S = "#22232a";
-  const CABELO = "#9a9aa3", CABELO_S = "#6b6b75";
+  const CABELO = "#4a3428", CABELO_S = "#2e1f17"; // marrom escuro em cima; grisalho só nas laterais
+  const GRIS = "#a9a9b2", GRIS_S = "#7a7a84";
   return (
     <g transform={`translate(${x - 200 * escala},${y - 880 * escala * (1 + respira)}) scale(${escala},${escala * (1 + respira)})`}>
       <ellipse cx={200} cy={884} rx={150} ry={18} fill="#000" opacity={0.28} />
@@ -121,11 +122,13 @@ export const WanHD: React.FC<{ x: number; y: number; escala?: number; expr?: Exp
         <path d="M200,150 L194,182 L206,184" stroke="#c48a6c" strokeWidth={3.4} fill="none" strokeLinecap="round" strokeLinejoin="round" />
         <path d="M168,196 q-6,8 -2,16 M232,196 q6,8 2,16" stroke="#c48a6c" strokeWidth={2.4} fill="none" opacity={0.8} />
       </Cel>
-      {/* cabelo grisalho penteado para trás, em mechas */}
-      <Cel id={k("cabelo")} d="M138,126 C132,68 162,36 200,36 C240,36 270,68 262,126 C254,98 234,80 200,78 C168,80 146,98 138,126 Z" base={CABELO} sombra={CABELO_S} luz={luz} sd={10} rw={4} linha="#4a4a52">
-        {[0, 1, 2, 3, 4].map((i) => <path key={i} d={`M${152 + i * 22},${88 - (i === 2 ? 6 : 0)} q${10},-26 ${30},-40`} stroke="#6b6b75" strokeWidth={2.4} fill="none" />)}
+      {/* cabelo penteado para trás: marrom escuro em cima, grisalho nas laterais */}
+      <Cel id={k("cabelo")} d="M138,126 C132,68 162,36 200,36 C240,36 270,68 262,126 C254,98 234,80 200,78 C168,80 146,98 138,126 Z" base={CABELO} sombra={CABELO_S} luz={luz} sd={10} rw={4} linha="#2a1a12">
+        {[0, 1, 2, 3, 4].map((i) => <path key={i} d={`M${152 + i * 22},${88 - (i === 2 ? 6 : 0)} q${10},-26 ${30},-40`} stroke="#6e4e3a" strokeWidth={2.4} fill="none" />)}
       </Cel>
-      <path d="M140,128 C140,140 142,150 146,156 M260,128 C260,140 258,150 254,156" stroke="#c9c9d1" strokeWidth={5} strokeLinecap="round" />
+      <Cel id={k("gris1")} d="M138,104 C132,124 136,148 146,164 L156,158 C150,142 148,124 152,100 Z" base={GRIS} sombra={GRIS_S} luz={luz} sd={4} rw={2} lw={2.2} linha="#4a4a52" />
+      <Cel id={k("gris2")} d="M262,104 C268,124 264,148 254,164 L244,158 C250,142 252,124 248,100 Z" base={GRIS} sombra={GRIS_S} luz={luz} sd={4} rw={2} lw={2.2} linha="#4a4a52" />
+      <path d="M142,124 C142,138 144,150 148,158 M258,124 C258,138 256,150 252,158" stroke="#e1e1e8" strokeWidth={2.4} strokeLinecap="round" opacity={0.8} />
       {/* sobrancelhas grossas */}
       {expr === "serio" ? (
         <g fill="#3a3a42"><path d="M156,136 L192,146 L190,154 L154,144 Z" /><path d="M244,136 L208,146 L210,154 L246,144 Z" /></g>
