@@ -942,8 +942,8 @@
  {
   "id": 23,
   "quem": "vendedor",
-  "texto": "…Tinha.",
-  "modelo": "eleven_multilingual_v2",
+  "texto": "…Tinha. Eu tinha uma namorada… agora eu só tenho poção encalhada.",
+  "modelo": "eleven_v3",
   "arquivo": "voz/victor1/fala-23.wav",
   "dur": 0.604,
   "palavras_ouvidas": [
@@ -952,7 +952,12 @@
     "start": 0.08,
     "end": 0.34
    }
-  ]
+  ],
+  "fala": "[sighs] …Tinha. [crying] Eu tinha uma namorada… [sobbing] agora eu só tenho poção encalhada.",
+  "ajustes": {
+   "stability": 0.0,
+   "similarity_boost": 0.8
+  }
  },
  {
   "id": 24,
