@@ -93,7 +93,8 @@ const Quadro: React.FC<{ s: number; linhas: { txt: string; t: number; cor?: stri
 
 // fins de falas usados como marcos de plano
 function fimFala(id: number) { const f = FALAS.find((x) => x.id === id)!; return f.inicio + f.dur; }
-const F13 = fimFala(13), F24 = fimFala(24), F30 = fimFala(30), F31 = fimFala(31);
+const F21 = fimFala(21), F2 = fimFala(2), F6 = fimFala(6), F7 = fimFala(7), F12 = fimFala(12), F13 = fimFala(13), F16 = fimFala(16), F22 = fimFala(22), F23 = fimFala(23), F24 = fimFala(24), F30 = fimFala(30), F31 = fimFala(31), F32 = fimFala(32);
+const T_MERCADO = I(3) + 2.9;
 
 type Plano = { t: number; render: (s: number, ls: number) => React.ReactNode };
 
@@ -438,13 +439,192 @@ const PLANOS: Plano[] = [
 ];
 
 
+
+// ---------------- cenas complementares: reações e pausas cômicas ----------------
+const EXTRAS: Plano[] = [
+  // close em câmera lenta: a crina e a piscadinha (o tema do Talaricórnio entra aqui)
+  { t: F2 + 0.1, render: (s, ls) => (
+    <Cam ls={ls} de={1} ate={1.08} dur={1.6}>
+      <Fundo nome="eclipse" filtro="blur(6px)" />
+      <Aura x={540} y={480} s={s * 0.5} r={700} op={0.35} />
+      <Svg cel="cel"><Talaricornio x={20} y={1353} escala={2.6} t={s} olho={ls > 1.0 ? "pisca" : "flerte"} crina={lin(s, F2 + 0.2, F2 + 1.0)} /></Svg>
+      <Svg>{Array.from({ length: 9 }, (_, i) => { const a = i * 0.7 + ls * 2; return <path key={i} d="M0,-10 l3,7 l7,3 l-7,3 l-3,7 l-3,-7 l-7,-3 l7,-3 Z" fill="#fffaf0" opacity={0.5 + 0.5 * Math.sin(ls * 9 + i)} transform={`translate(${380 + 260 * Math.cos(a)},${360 + 140 * Math.sin(a)}) scale(${1.4 + (i % 3) * 0.5})`} />; })}</Svg>
+    </Cam>
+  ) },
+  // o mercado e a apresentação congelada do Victor
+  { t: T_MERCADO, render: (s, ls) => {
+    const congela = ls > 0.8;
+    return (
+      <AbsoluteFill style={{ filter: congela ? "grayscale(.7) contrast(1.1)" : undefined }}>
+        <Cam ls={congela ? 0.8 : ls} de={1.08} ate={1.0} dur={0.8}>
+          <Fundo nome="mercado" />
+          <Svg cel="cel">
+            <Victor x={700} y={1030} escala={0.95} expr="sombrio" pose="normal" virar t={s} />
+            <g transform="translate(470,820)"><path d="M-60,0 L60,0 L50,-120 C40,-170 -40,-170 -50,-120 Z" fill="rgba(200,230,255,.35)" stroke="#2a1626" strokeWidth={4} /></g>
+          </Svg>
+        </Cam>
+        {congela ? (
+          <div style={{ position: "absolute", left: 90, top: 200, transform: `rotate(-3deg) scale(${1.15 - 0.15 * p(ls, 0.8, 0.25)})`, background: "#fff6ff", padding: "18px 26px", borderRadius: 8, boxShadow: "10px 10px 0 #9a4ad6" }}>
+            <div style={{ fontFamily: SANS, fontWeight: 900, fontSize: 64, color: "#1a1020", lineHeight: 1 }}>VICTOR</div>
+            <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 26, color: "#5a3a6a", marginTop: 6 }}>vampiro · 112 anos · nunca dormiu</div>
+          </div>
+        ) : null}
+      </AbsoluteFill>
+    );
+  } },
+  // reação: "você tem é olheira" → close seco do Victor, grilos
+  { t: F6 + 0.05, render: (s, ls) => (
+    <Cam ls={ls} de={1.0} ate={1.3} oy={300} dur={0.25}>
+      <Fundo nome="mercado" filtro="blur(8px) brightness(.8)" />
+      <Svg cel="cel"><Victor x={540} y={1900} escala={2.4} expr="sombrio" t={s} /></Svg>
+      <Rotulo txt="…" y={60} />
+    </Cam>
+  ) },
+  // "mais branco que papel de pão": a comparação científica
+  { t: F7 + 0.05, render: (s, ls) => (
+    <AbsoluteFill style={{ background: "#efe2c8" }}>
+      <div style={{ position: "absolute", left: 0, top: 0, width: 540, height: 1080, overflow: "hidden", borderRight: "8px solid #1a1020" }}>
+        <Fundo nome="mercado" filtro="blur(8px)" />
+        <svg width={1080} height={1080} style={{ position: "absolute", left: -270, top: 0, overflow: "visible" }}><g filter="url(#cel)"><Victor x={540} y={2134} escala={2.4} expr="sombrio" t={s} /></g></svg>
+      </div>
+      <Svg>
+        <g transform={`translate(810,520) rotate(${4 * Math.sin(ls * 3)}) scale(${1 + 0.1 * Math.exp(-ls * 6)})`}>
+          <path d="M-120,-200 L120,-200 L130,200 L-130,200 Z" fill="#efe6e3" stroke="#2a1626" strokeWidth={6} />
+          <path d="M-120,-200 l24,-24 l24,24 l24,-24 l24,24 l24,-24 l24,24 l24,-24 l24,24 l24,-24 l24,24" fill="#efe6e3" stroke="#2a1626" strokeWidth={6} />
+          <text x={0} y={30} textAnchor="middle" fontFamily={SANS} fontWeight={900} fontSize={70} fill="#c43b2f">PÃO</text>
+        </g>
+      </Svg>
+      <Rotulo txt="COMPARAÇÃO CIENTÍFICA" y={60} cor="#1a1020" />
+      <div style={{ position: "absolute", left: 0, right: 0, top: 150, textAlign: "center", fontFamily: SANS, fontWeight: 900, fontSize: 40, color: "#c43b2f", opacity: p(ls, 0.8, 0.2) }}>IDÊNTICOS</div>
+    </AbsoluteFill>
+  ) },
+  // a lágrima de purpurina em close
+  { t: F12 + 0.05, render: (s, ls) => (
+    <Cam ls={ls} de={1} ate={1.1} dur={1.6}>
+      <Fundo nome="mercado" filtro="blur(10px) brightness(.7)" />
+      <Svg cel="cel"><Victor x={635} y={2832} escala={3.4} expr="triste" t={s} /></Svg>
+    </Cam>
+  ) },
+  // o brilho dos óculos do Lukita
+  { t: F16 + 0.05, render: (s, ls) => (
+    <Cam ls={ls} de={1} ate={1.05} dur={0.9}>
+      <Fundo nome="acampamento" filtro="blur(6px)" />
+      <Svg cel="celF"><Lukita x={540} y={1960} escala={2.5} expr="empolgado" pose="normal" formulaCerta /></Svg>
+      <Svg style={{ mixBlendMode: "screen" }}><g transform={`translate(640,250) rotate(${ls * 200}) scale(${2.5 * Math.sin(Math.min(1, ls / 0.6) * Math.PI)})`}><path d="M0,-40 L6,-6 L40,0 L6,6 L0,40 L-6,6 L-40,0 L-6,-6 Z" fill="#fffaf0" /></g></Svg>
+    </Cam>
+  ) },
+  // a namorada do vendedor passa montada no Talaricórnio (em primeiro plano)
+  { t: F22 + 0.05, render: (s, ls) => (
+    <Cam ls={ls} de={1} ate={1.03} dur={2.4}>
+      <Fundo nome="acampamento" />
+      <Svg cel="celF">
+        <Vendedor x={190} y={800} escala={0.5} />
+        <Talaricornio x={1500 - 2000 * lin(s, F22 + 0.1, I(23) - 0.2)} y={1040} escala={1.15} t={s} virar namorada passo={s} olho={ls > 0.9 && ls < 1.5 ? "pisca" : "flerte"} crina={lin(s, F22 + 0.8, F22 + 1.4)} />
+      </Svg>
+    </Cam>
+  ) },
+  // "…Tinha." close do vendedor, trombone triste
+  { t: I(23) - 0.15, render: (s, ls) => (
+    <Cam ls={ls} de={1} ate={1.12} dur={2.2}>
+      <Fundo nome="acampamento" filtro="blur(6px) saturate(.4) brightness(.7)" />
+      <Svg cel="celF"><Vendedor x={540} y={1988} escala={2.3} triste /></Svg>
+    </Cam>
+  ) },
+  // depois do "a fim de você": a viseira suando, disco arranhado
+  { t: F32 + 0.1, render: (s, ls) => (
+    <Cam ls={ls} de={1.25} ate={1.3} dur={2}>
+      <Fundo nome="eclipse" filtro="blur(6px)" />
+      <Svg cel="cel"><VictorArmadura x={540} y={2134} escala={2.4} id="a3" pose="normal" /></Svg>
+      <Svg><path d={`M700,${250 + 120 * lin(ls, 0.5, 2.4)} c-14,22 -14,38 0,40 c14,-2 14,-18 0,-40 Z`} fill="#9ad6ff" stroke="#1a1020" strokeWidth={3} opacity={ls > 0.5 ? 1 : 0} /></Svg>
+    </Cam>
+  ) },
+];
+
+// ---------------- mixagem ----------------
+const falando = (t: number) => FALAS.some((f) => t >= f.inicio - 0.05 && t < f.inicio + f.dur + 0.1);
+type Trilha = { f: string; de: number; ate: number; v: number; duck: number };
+const TRILHAS: Trilha[] = [
+  { f: "m-eclipse", de: 0, ate: T_MERCADO, v: 0.5, duck: 0.4 },
+  { f: "m-talarico", de: F2 + 0.05, ate: I(3) - 0.05, v: 0.6, duck: 0.5 },
+  { f: "m-mercado", de: T_MERCADO, ate: I(9) - 0.4, v: 0.32, duck: 0.45 },
+  { f: "m-lembranca", de: I(9) - 0.4, ate: I(13) - 0.3, v: 0.4, duck: 0.5 },
+  { f: "m-talarico", de: W(11, "jogar") - 0.2, ate: I(12) - 0.1, v: 0.45, duck: 0.5 },
+  { f: "m-eclipse", de: I(13) - 0.3, ate: F13 + 0.2, v: 0.45, duck: 0.5 },
+  { f: "m-talarico", de: F13 + 0.2, ate: I(14) - 0.2, v: 0.6, duck: 0.5 },
+  { f: "m-acampamento", de: I(14) - 0.2, ate: F24 + 0.3, v: 0.3, duck: 0.45 },
+  { f: "m-talarico", de: F22 + 0.05, ate: I(23) - 0.15, v: 0.6, duck: 0.5 },
+  { f: "m-eclipse", de: F24 + 0.3, ate: I(29) + 0.75, v: 0.35, duck: 0.5 },
+  { f: "m-retete", de: I(29) + 0.75, ate: I(30) - 0.3, v: 0.7, duck: 0.6 },
+  { f: "m-eclipse", de: I(30) - 0.3, ate: F30 + 1.05, v: 0.5, duck: 0.5 },
+  { f: "m-transformacao", de: F30 + 1.05, ate: F31 + 0.35, v: 0.6, duck: 0.5 },
+  { f: "m-talarico", de: F31 + 0.4, ate: F32 + 0.1, v: 0.55, duck: 0.45 },
+  { f: "m-decisao", de: I(33) - 0.2, ate: FIM_VICTOR1 - 0.1, v: 0.35, duck: 0.45 },
+];
+type Efeito = { f: string; t: number; v: number; d?: number };
+const EFEITOS: Efeito[] = [
+  { f: "vento", t: 0, v: 0.35, d: 6 },
+  { f: "brilho-crina", t: I(2) + 0.3, v: 0.5 },
+  { f: "estrela", t: I(2) + 0.85, v: 0.6 },
+  { f: "brilho-crina", t: F2 + 0.2, v: 0.6 },
+  { f: "relincho", t: F2 + 1.0, v: 0.55 },
+  { f: "sfx/impact-bass-1.mp3", t: I(3) + 0.4, v: 0.45, d: 1.6 },
+  { f: "rebobinar", t: I(3) + 1.3, v: 0.5 },
+  { f: "mercado", t: T_MERCADO, v: 0.35, d: 6 },
+  { f: "disco-arranhado", t: T_MERCADO + 0.8, v: 0.55 },
+  { f: "grilos", t: F6 + 0.1, v: 0.6 },
+  { f: "boing", t: F7 + 0.35, v: 0.55 },
+  { f: "estrela", t: F7 + 0.85, v: 0.6 },
+  { f: "lagrima", t: I(12) + 0.6, v: 0.5 },
+  { f: "lagrima", t: F12 + 0.15, v: 0.6 },
+  { f: "brilho-crina", t: W(11, "jogar"), v: 0.55 },
+  { f: "cascos", t: W(11, "e") + 0.2, v: 0.4 },
+  { f: "sino-ironia", t: F13 + 0.15, v: 0.4 },
+  { f: "estrela", t: F13 + 1.4, v: 0.6 },
+  { f: "relincho", t: F13 + 2.0, v: 0.45 },
+  { f: "cascos", t: F13 + 2.4, v: 0.4 },
+  { f: "fogueira", t: I(14) - 0.2, v: 0.35, d: 6 },
+  { f: "fogueira", t: I(14) + 5.8, v: 0.3, d: 6 },
+  { f: "calculadora", t: I(14) + 0.1, v: 0.45 },
+  { f: "giz", t: W(14, "vinte") - 0.1, v: 0.45 },
+  { f: "giz", t: W(15, "apaga") - 0.1, v: 0.45 },
+  { f: "giz", t: I(16) + 0.2, v: 0.45 },
+  { f: "estrela", t: F16 + 0.2, v: 0.7 },
+  { f: "giz", t: W(18, "Não") - 0.1, v: 0.4 },
+  { f: "giz", t: I(19), v: 0.4 },
+  { f: "giz", t: W(20, "jamais,") - 0.1, v: 0.4 },
+  { f: "grilos", t: F21 + 0.1, v: 0.35 },
+  { f: "cascos", t: F22 + 0.2, v: 0.55 },
+  { f: "relincho", t: F22 + 0.9, v: 0.5 },
+  { f: "trombone-triste", t: F23 + 0.1, v: 0.55 },
+  { f: "vento", t: F24 + 0.3, v: 0.4, d: 6 },
+  { f: "hipnose", t: I(25) - 0.6, v: 0.55 },
+  { f: "sino-ironia", t: I(26) - 0.1, v: 0.35 },
+  { f: "dragao", t: I(27) - 0.5, v: 0.6 },
+  { f: "capa", t: I(27) + 0.85, v: 0.6 },
+  { f: "sfx/impact-bass-1.mp3", t: I(27) + 0.9, v: 0.35, d: 1.6 },
+  { f: "boing", t: I(29) + 1.2, v: 0.45 },
+  { f: "boing", t: I(29) + 2.3, v: 0.45 },
+  { f: "boing", t: I(29) + 3.6, v: 0.45 },
+  { f: "tontura", t: I(29) + 2.6, v: 0.5 },
+  { f: "power-up", t: F30 + 0.4, v: 0.6 },
+  { f: "sfx/impact-bass-1.mp3", t: F30 + 1.05, v: 0.5, d: 1.6 },
+  { f: "coracao", t: F31 + 0.5, v: 0.6 },
+  { f: "disco-arranhado", t: F32 + 0.1, v: 0.6 },
+  { f: "gole", t: F32 + 0.9, v: 0.7 },
+  { f: "sfx/pop.mp3", t: I(34) - 0.1, v: 0.3, d: 0.5 },
+  { f: "sfx/pop.mp3", t: I(35) - 0.1, v: 0.3, d: 0.5 },
+  { f: "sfx/sparkle.mp3", t: I(36) - 0.1, v: 0.3, d: 1.6 },
+];
+
+const TODOS = [...PLANOS, ...EXTRAS].sort((a, b) => a.t - b.t);
+
 export const Victor1: React.FC = () => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const s = frame / fps;
   let k = 0;
-  PLANOS.forEach((pl, i) => { if (s >= pl.t) k = i; });
-  const pl = PLANOS[k];
+  TODOS.forEach((pl, i) => { if (s >= pl.t) k = i; });
+  const pl = TODOS[k];
   const ls = s - pl.t;
   const final = s >= I(36) - 0.15;
   return (
@@ -458,27 +638,21 @@ export const Victor1: React.FC = () => {
       <Papel forca={0.08} />
       <PoeiraLuz s={s} n={18} caixa={[0, 0, 1080, 1080]} cor="#ffe6ff" />
 
-      {/* ===================== áudio ===================== */}
-      <Audio src={staticFile("audio/trilha.mp3")} volume={(f) => interpolate(f / fps, [0, 0.8, I(4) - 0.5, I(4), I(29) + 0.6, I(29) + 0.9, I(30) - 0.5, I(30), FIM_VICTOR1 - 1.4, FIM_VICTOR1 - 0.1], [0, 0.06, 0.06, 0.04, 0.04, 0.16, 0.16, 0.0, 0.05, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} />
+      {/* ===================== áudio: trilha por clima + efeitos no tempo da piada ===================== */}
+      {TRILHAS.map((m, i) => (
+        <Sequence key={`m${i}`} from={Math.round(m.de * fps)} durationInFrames={Math.round((m.ate - m.de) * fps)} layout="none">
+          <Audio src={staticFile(`audio/victor1/${m.f}.mp3`)} volume={(f) => { const t = f / fps, d = m.ate - m.de; return m.v * Math.min(1, t / 0.25) * Math.min(1, (d - t) / 0.6) * (falando(m.de + t) ? m.duck : 1); }} />
+        </Sequence>
+      ))}
       {FALAS.map((f) => (
         <Sequence key={f.id} from={Math.round(f.inicio * fps)} durationInFrames={Math.ceil((f.dur + 0.3) * fps)} name={`Fala ${f.id} (${f.quem})`} layout="none">
           <Audio src={staticFile(f.arquivo)} volume={1} />
         </Sequence>
       ))}
-      {[I(3) + 0.4, F30 + 1.0, I(27) + 0.85].map((t, i) => (
-        <Sequence key={`i${i}`} from={Math.round(t * fps)} durationInFrames={Math.round(1.6 * fps)} layout="none"><Audio src={staticFile("sfx/impact-bass-1.mp3")} volume={0.4} /></Sequence>
-      ))}
-      {[I(3) - 0.6, F30 + 0.2].map((t, i) => (
-        <Sequence key={`r${i}`} from={Math.round(t * fps)} durationInFrames={Math.round(1.6 * fps)} layout="none"><Audio src={staticFile("sfx/riser.mp3")} volume={0.25} /></Sequence>
-      ))}
-      {[I(2) + 0.85, W(11, "crina…"), F13 + 1.2, I(22) + 1.4, F31 + 0.6].map((t, i) => (
-        <Sequence key={`s${i}`} from={Math.round(t * fps)} durationInFrames={Math.round(1.6 * fps)} layout="none"><Audio src={staticFile("sfx/sparkle.mp3")} volume={0.3} /></Sequence>
-      ))}
-      {[I(3) + 1.2, I(4) - 0.2, I(9) - 0.4, I(14) - 0.3, F24 + 0.2, I(27) - 0.3, I(33) - 0.3].map((t, i) => (
-        <Sequence key={`w${i}`} from={Math.round(t * fps)} durationInFrames={Math.round(0.7 * fps)} layout="none"><Audio src={staticFile("sfx/whoosh-short.mp3")} volume={0.22} /></Sequence>
-      ))}
-      {Array.from({ length: 10 }, (_, i) => I(29) + 1.0 + i * 0.42).map((t, i) => (
-        <Sequence key={`p${i}`} from={Math.round(t * fps)} durationInFrames={Math.round(0.4 * fps)} layout="none"><Audio src={staticFile("sfx/pop.mp3")} volume={0.2} /></Sequence>
+      {EFEITOS.map((e, i) => (
+        <Sequence key={`e${i}`} from={Math.max(0, Math.round(e.t * fps))} durationInFrames={Math.round((e.d ?? 3) * fps)} layout="none">
+          <Audio src={staticFile(e.f.startsWith("sfx/") ? e.f : `audio/victor1/s-${e.f}.mp3`)} volume={e.v} />
+        </Sequence>
       ))}
     </AbsoluteFill>
   );
