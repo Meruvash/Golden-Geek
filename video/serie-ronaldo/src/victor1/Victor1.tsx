@@ -7,7 +7,7 @@ import { FiltroCel } from "../colt/Teste";
 import { Papel } from "../colt/faroeste";
 import { PoeiraLuz } from "../colt/luz";
 import { fontesProntas } from "../tema";
-import { Brasinha, Dragao, Talaricornio, Vendedor, Victor, VictorArmadura } from "./personagens";
+import { Brasinha, Dragao, HexaBola, Talaricornio, Vendedor, Victor } from "./personagens";
 import { DURACAO, FALAS } from "./dados";
 import { I, W } from "./marcas";
 
@@ -411,29 +411,43 @@ const PLANOS: Plano[] = [
       <Fundo nome="eclipse" />
       <Aura x={540} y={470} s={s} r={700} op={0.3 + 0.5 * lin(s, I(30), F30 + 0.6)} />
       <Svg cel="cel"><Victor x={540} y={1980} escala={2.6} expr="determinado" t={s} /></Svg>
-      <Escurece op={lin(s, F30 + 0.6, F30 + 1.1) * (1 - lin(s, F30 + 1.1, F30 + 1.5))} cor="#fff6ff" />
     </Cam>
   ) },
-  // a transformação: armadura arco-íris
-  { t: F30 + 1.1, render: (s, ls) => (
-    <Cam ls={ls} de={1.15} ate={1} dur={1.2} tremor={12}>
-      <Fundo nome="eclipse" />
-      <Aura x={540} y={560} s={s * 2} r={900} op={0.7} />
-      <Svg cel="cel"><VictorArmadura x={540} y={1060} escala={1.05} id="a1" /></Svg>
-      <div style={{ position: "absolute", left: 0, right: 0, top: 70, textAlign: "center", opacity: p(s, I(31) - 0.1, 0.3) }}>
-        <span style={{ fontFamily: SANS, fontWeight: 900, fontSize: 64, backgroundImage: `linear-gradient(90deg, ${ARCO.join(",")})`, WebkitBackgroundClip: "text", color: "transparent", WebkitTextStroke: "2px #fff" }}>VICTOR ARCO-ÍRIS</span>
-      </div>
-    </Cam>
-  ) },
-  // frase de efeito: o Talaricórnio se apaixona pela armadura
+  // o arremesso: a Hexabola voa até o Talaricórnio e quica no chifre
+  { t: F30 + 1.1, render: (s, ls) => {
+    const tJoga = I(31) + 0.75, tBate = tJoga + 0.55;
+    const voo = lin(s, tJoga, tBate);
+    const mao = { x: 707, y: 507 }, alvo = { x: 330, y: 560 };
+    let bx = mao.x + (alvo.x - mao.x) * voo, by = mao.y + (alvo.y - mao.y) * voo - 200 * Math.sin(Math.PI * voo);
+    const quica = Math.max(0, s - tBate);
+    if (quica > 0) { bx = alvo.x + 260 * quica; by = alvo.y - 420 * quica + 700 * quica * quica; }
+    const giro = s < tJoga ? 0 : (s - tJoga) * 900;
+    return (
+      <Cam ls={ls} de={1.1} ate={1.0} dur={1.4} tremor={quica > 0 && quica < 0.3 ? 14 : 0}>
+        <Fundo nome="eclipse" />
+        <Aura x={mao.x} y={mao.y} s={s} r={380} op={s < tJoga ? 0.5 : 0.15} />
+        <Svg cel="cel">
+          <Talaricornio x={160} y={880} escala={0.85} t={s} olho={quica > 0 ? "tonto" : "flerte"} />
+          <Victor x={940} y={1020} escala={0.95} expr="determinado" pose={s < tJoga - 0.25 ? "normal" : "aponta"} virar t={s} />
+        </Svg>
+        <Svg>
+          {s >= tJoga && quica === 0 ? Array.from({ length: 5 }, (_, i) => { const v = Math.max(0, voo - i * 0.06); const tx = mao.x + (alvo.x - mao.x) * v, ty = mao.y + (alvo.y - mao.y) * v - 200 * Math.sin(Math.PI * v); return <polygon key={i} points="0,-20 17,-10 17,10 0,20 -17,10 -17,-10" transform={`translate(${tx},${ty})`} fill="#ff6a7a" opacity={0.5 - i * 0.09} />; }) : null}
+          <HexaBola x={s < tJoga - 0.25 ? 880 : bx} y={s < tJoga - 0.25 ? 640 : by} r={s < tJoga - 0.25 ? 52 : 42} giro={giro} brilho={s < tJoga ? 0.6 + 0.4 * Math.sin(s * 10) : 0} id="hb1" />
+          {quica > 0 && quica < 0.35 ? <polygon points="0,-90 26,-26 90,0 26,26 0,90 -26,26 -90,0 -26,-26" transform={`translate(${alvo.x},${alvo.y}) scale(${0.6 + quica * 2})`} fill="#fff6c0" opacity={1 - quica / 0.35} /> : null}
+        </Svg>
+      </Cam>
+    );
+  } },
+  // frase de efeito: a Hexabola quicou no chifre… e o Talaricórnio se apaixona pelo Victor
   { t: F31 + 0.4, render: (s, ls) => (
     <Cam ls={ls} de={1} ate={1.06} dur={3}>
       <Fundo nome="eclipse" />
       <Svg cel="cel">
-        <VictorArmadura x={820} y={1020} escala={0.85} id="a2" pose="normal" />
-        <Talaricornio x={330} y={880} escala={0.9} t={s} olho="coracao" />
+        <Victor x={820} y={1020} escala={0.9} expr="sombrio" pose="normal" virar t={s} />
+        <Talaricornio x={300} y={880} escala={0.9} t={s} olho="coracao" />
         {s >= I(32) - 0.1 ? <Lukita x={120} y={1220} escala={0.55} expr="empolgado" pose="normal" formulaCerta /> : null}
       </Svg>
+      <Svg><HexaBola x={560} y={810 - 30 * Math.abs(Math.sin(ls * 6)) * Math.exp(-ls * 1.5)} r={36} giro={20 * Math.sin(ls * 8) * Math.exp(-ls)} id="hb2" /></Svg>
       <Svg>{Array.from({ length: 6 }, (_, i) => { const tt = (ls * 0.6 + i / 6) % 1; return <path key={i} d="M0,8 C-8,0 -18,-6 -12,-16 C-8,-22 0,-20 0,-14 C0,-20 8,-22 12,-16 C18,-6 8,0 0,8 Z" fill={ROSA} opacity={1 - tt} transform={`translate(${470 + i * 30 + 80 * tt},${470 - 300 * tt}) scale(${1.6 + tt})`} />; })}</Svg>
     </Cam>
   ) },
@@ -457,7 +471,7 @@ const PLANOS: Plano[] = [
       <AbsoluteFill>
         <Fundo nome="eclipse" filtro="blur(8px) brightness(.45)" />
         <Rotulo txt="O QUE O VICTOR FAZ?" y={70} cor="#ffcf5a" />
-        {opt(70, I(34), "CAPTURAR", "fica com o unicórnio", "ninguém namora em paz", !segunda, "#9a4ad6", <g><Talaricornio x={110} y={290} escala={0.5} t={s} olho="coracao" /><rect x={20} y={40} width={260} height={250} rx={20} fill="none" stroke="#9ad6ff" strokeWidth={6} /></g>)}
+        {opt(70, I(34), "CAPTURAR", "fica com o unicórnio", "ninguém namora em paz", !segunda, "#9a4ad6", <g><Talaricornio x={110} y={290} escala={0.5} t={s} olho="coracao" /><HexaBola x={240} y={80} r={46} id="hb3" /></g>)}
         {opt(570, I(35), "LIBERTAR", "a Brasinha volta", "ele continua à solta", segunda, "#e2622a", <Brasinha x={150} y={190} t={s} escala={2} />)}
       </AbsoluteFill>
     );
@@ -601,11 +615,11 @@ const EXTRAS: Plano[] = [
       <Svg cel="celF"><Vendedor x={540} y={1988} escala={2.3} triste /></Svg>
     </Cam>
   ) },
-  // depois do "a fim de você": a viseira suando, disco arranhado
+  // depois do "a fim de você": o Victor suando frio, disco arranhado
   { t: F32 + 0.1, render: (s, ls) => (
     <Cam ls={ls} de={1.25} ate={1.3} dur={2}>
       <Fundo nome="eclipse" filtro="blur(6px)" />
-      <Svg cel="cel"><VictorArmadura x={540} y={2134} escala={2.4} id="a3" pose="normal" /></Svg>
+      <Svg cel="cel"><Victor x={540} y={2134} escala={2.4} expr="sombrio" t={s} /></Svg>
       <Svg><path d={`M700,${250 + 120 * lin(ls, 0.5, 2.4)} c-14,22 -14,38 0,40 c14,-2 14,-18 0,-40 Z`} fill="#9ad6ff" stroke="#1a1020" strokeWidth={3} opacity={ls > 0.5 ? 1 : 0} /></Svg>
     </Cam>
   ) },
@@ -627,7 +641,7 @@ const TRILHAS: Trilha[] = [
   { f: "m-eclipse", de: F24 + 0.3, ate: I(29) + 0.75, v: 0.35, duck: 0.5 },
   { f: "m-retete", de: I(29) + 0.75, ate: I(30) - 0.3, v: 0.7, duck: 0.6 },
   { f: "m-eclipse", de: I(30) - 0.3, ate: F30 + 1.05, v: 0.5, duck: 0.5 },
-  { f: "m-transformacao", de: F30 + 1.05, ate: F31 + 0.35, v: 0.6, duck: 0.5 },
+  { f: "m-eclipse", de: F30 + 1.05, ate: F31 + 0.35, v: 0.55, duck: 0.5 },
   { f: "m-talarico", de: F31 + 0.4, ate: F32 + 0.1, v: 0.55, duck: 0.45 },
   { f: "m-decisao", de: I(33) - 0.2, ate: FIM_VICTOR1 - 0.1, v: 0.35, duck: 0.45 },
 ];
@@ -681,7 +695,10 @@ const EFEITOS: Efeito[] = [
   { f: "boing", t: I(29) + 2.3, v: 0.45 },
   { f: "boing", t: I(29) + 3.6, v: 0.45 },
   { f: "tontura", t: I(29) + 2.6, v: 0.5 },
-  { f: "power-up", t: F30 + 0.4, v: 0.6 },
+  { f: "capa", t: I(31) + 0.7, v: 0.6 },
+  { f: "boing", t: I(31) + 1.3, v: 0.6 },
+  { f: "estrela", t: I(31) + 1.32, v: 0.5 },
+  { f: "tontura", t: I(31) + 1.4, v: 0.4 },
   { f: "sfx/impact-bass-1.mp3", t: F30 + 1.05, v: 0.5, d: 1.6 },
   { f: "coracao", t: F31 + 0.5, v: 0.6 },
   { f: "disco-arranhado", t: F32 + 0.1, v: 0.6 },

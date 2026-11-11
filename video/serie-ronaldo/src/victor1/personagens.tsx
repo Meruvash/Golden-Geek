@@ -254,3 +254,27 @@ export const Dragao: React.FC<{ x: number; y: number; escala?: number; t?: numbe
   );
   return <g transform={`translate(${x},${y}) scale(${escala})`}>{corpo(borda, -4, -4)}{corpo("#1c1228")}<circle cx={200} cy={-50} r={4} fill="#ff5a3a" /></g>;
 };
+
+// Hexabola: esfera de captura HEXAGONAL do Victor (metade vermelha, metade branca, faixa preta, hexágonos por dentro).
+const hexPts = (r: number, rot = 0) => Array.from({ length: 6 }, (_, i) => { const a = (Math.PI / 3) * i + rot; return `${(r * Math.cos(a)).toFixed(1)},${(r * Math.sin(a)).toFixed(1)}`; }).join(" ");
+export const HexaBola: React.FC<{ x: number; y: number; r?: number; giro?: number; brilho?: number; id?: string }> = ({ x, y, r = 60, giro = 0, brilho = 0, id = "hb" }) => (
+  <g transform={`translate(${x},${y}) rotate(${giro})`}>
+    <defs>
+      <clipPath id={`${id}-c`}><polygon points={hexPts(r, Math.PI / 6)} /></clipPath>
+    </defs>
+    {brilho > 0 ? <polygon points={hexPts(r * 1.5, Math.PI / 6)} fill="#fff6c0" opacity={0.35 * brilho} /> : null}
+    <g clipPath={`url(#${id}-c)`}>
+      <rect x={-r * 1.2} y={-r * 1.2} width={r * 2.4} height={r * 1.2} fill="#e2283a" />
+      <rect x={-r * 1.2} y={0} width={r * 2.4} height={r * 1.2} fill="#f6f3f2" />
+      {/* hexágonos por dentro, em colmeia */}
+      {[-1, 0, 1].flatMap((cx) => [-1, 0, 1].map((cy) => (
+        <polygon key={`${cx}${cy}`} points={hexPts(r * 0.26, Math.PI / 6)} transform={`translate(${cx * r * 0.5 + (cy % 2 ? r * 0.25 : 0)},${cy * r * 0.44})`} fill="none" stroke={cy < 0 ? "#b81a2a" : "#d9d2d0"} strokeWidth={r * 0.04} />
+      )))}
+      <rect x={-r * 1.2} y={-r * 0.1} width={r * 2.4} height={r * 0.2} fill="#141016" />
+    </g>
+    <polygon points={hexPts(r, Math.PI / 6)} fill="none" stroke="#141016" strokeWidth={r * 0.1} strokeLinejoin="round" />
+    <polygon points={hexPts(r * 0.28, Math.PI / 6)} fill="#f6f3f2" stroke="#141016" strokeWidth={r * 0.08} />
+    <polygon points={hexPts(r * 0.13, Math.PI / 6)} fill="#ffffff" stroke="#9a9496" strokeWidth={r * 0.03} />
+    <path d={`M${-r * 0.55},${-r * 0.62} L${-r * 0.2},${-r * 0.78}`} stroke="#ffffff" strokeWidth={r * 0.08} strokeLinecap="round" opacity={0.75} />
+  </g>
+);

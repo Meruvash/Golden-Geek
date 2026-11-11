@@ -3,7 +3,7 @@
 Tema: Dragon Eclipse (ilhas, eclipse, criaturas Mystlings). ~2:30 · quadrado · sem narrador.
 Vozes: Victor (voz nova a escolher), Wan (Adriano), Ronaldo (Mário), Lukita (Lucas), Vendedor figurante (Marcio). O Talaricórnio não fala: pisca, relincha, joga a crina.
 Victor é personagem nosso: um vampiro galã pálido e melancólico, em paródia do arquétipo, sem copiar nome, rosto ou visual de um personagem existente.
-A transformação dele é uma armadura de herói colorido no estilo sentai, nas 7 cores do arco-íris (genérica, sem marca).
+No clímax o Victor arremessa a Hexabola (esfera de captura hexagonal, desenho nosso). A transformação em armadura foi retirada a pedido do editor.
 Atenção: o site ainda não tem resenha nem tutorial de Dragon Eclipse, então o vídeo não ensina regra; só usa o tema.
 
 1. ABERTURA NO CLÍMAX (penhasco, o eclipse cobrindo o sol; Victor brilha nas 7 cores)
@@ -58,11 +58,11 @@ Atenção: o site ainda não tem resenha nem tutorial de Dragon Eclipse, então 
 
 9. REVELAÇÃO (a cena da abertura volta com contexto; meio segundo de silêncio)
    VICTOR: Cento e doze anos esperando esse eclipse.
-   (Victor se transforma: armadura nas 7 cores, pose de herói, explosão de arco-íris atrás)
+   (Victor arremessa a Hexabola: esfera de captura hexagonal, vermelha e branca, que quica no chifre do Talaricórnio)
    VICTOR: Hoje você é meu.
 
 10. FRASE DE EFEITO
-   (o Talaricórnio olha pra armadura colorida… e se apaixona)
+   (o Talaricórnio, tonto, olha pro Victor… e se apaixona)
    LUKITA: Recalculei. Agora ele tá a fim de você.
 
 11. ESCOLHA COM PREÇO (modelo saveo)
