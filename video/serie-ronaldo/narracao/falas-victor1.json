@@ -118,7 +118,7 @@
     "end": 1.94
    },
    {
-    "text": "0,003%",
+    "text": "0,003%.",
     "start": 2.3,
     "end": 3.88
    }
@@ -244,7 +244,7 @@
    },
    {
     "text": "que",
-    "start": 1.38,
+    "start": 1.4,
     "end": 1.5
    },
    {
@@ -464,7 +464,7 @@
    },
    {
     "text": "ela",
-    "start": 2.0,
+    "start": 1.98,
     "end": 2.14
    },
    {
@@ -519,7 +519,7 @@
    },
    {
     "text": "chorando",
-    "start": 1.38,
+    "start": 1.4,
     "end": 1.7
    },
    {
@@ -629,7 +629,7 @@
    },
    {
     "text": "dele",
-    "start": 1.08,
+    "start": 1.1,
     "end": 1.24
    },
    {
@@ -715,7 +715,7 @@
    {
     "text": "espero",
     "start": 0.2,
-    "end": 0.54
+    "end": 0.52
    },
    {
     "text": "há",
@@ -945,12 +945,62 @@
   "texto": "…Tinha. Eu tinha uma namorada… agora eu só tenho poção encalhada.",
   "modelo": "eleven_v3",
   "arquivo": "voz/victor1/fala-23.wav",
-  "dur": 0.604,
+  "dur": 7.715,
   "palavras_ouvidas": [
    {
-    "text": "Tinha",
-    "start": 0.08,
-    "end": 0.34
+    "text": "Tinha.",
+    "start": 1.2,
+    "end": 1.54
+   },
+   {
+    "text": "Eu",
+    "start": 3.16,
+    "end": 3.26
+   },
+   {
+    "text": "tinha",
+    "start": 3.34,
+    "end": 3.48
+   },
+   {
+    "text": "uma",
+    "start": 3.52,
+    "end": 3.64
+   },
+   {
+    "text": "namorada.",
+    "start": 3.7,
+    "end": 4.3
+   },
+   {
+    "text": "Agora",
+    "start": 5.78,
+    "end": 5.98
+   },
+   {
+    "text": "eu",
+    "start": 6.0,
+    "end": 6.04
+   },
+   {
+    "text": "só",
+    "start": 6.1,
+    "end": 6.22
+   },
+   {
+    "text": "tenho",
+    "start": 6.26,
+    "end": 6.46
+   },
+   {
+    "text": "poção",
+    "start": 6.5,
+    "end": 6.84
+   },
+   {
+    "text": "encalhada",
+    "start": 6.88,
+    "end": 7.5
    }
   ],
   "fala": "[sighs] …Tinha. [crying] Eu tinha uma namorada… [sobbing] agora eu só tenho poção encalhada.",
@@ -968,8 +1018,8 @@
   "dur": 2.209,
   "palavras_ouvidas": [
    {
-    "text": "\"Oxe!\",",
-    "start": 0.06,
+    "text": "Osche",
+    "start": 0.14,
     "end": 0.38
    },
    {
@@ -990,7 +1040,7 @@
    {
     "text": "dele",
     "start": 1.74,
-    "end": 1.94
+    "end": 1.96
    }
   ]
  },
@@ -1010,7 +1060,7 @@
    {
     "text": "crina",
     "start": 0.24,
-    "end": 0.54
+    "end": 0.52
    },
    {
     "text": "maravilhosa",
@@ -1105,11 +1155,11 @@
    {
     "text": "no",
     "start": 1.46,
-    "end": 1.54
+    "end": 1.56
    },
    {
     "text": "meu",
-    "start": 1.58,
+    "start": 1.6,
     "end": 1.72
    },
    {
@@ -1209,7 +1259,7 @@
    },
    {
     "text": "eclipse",
-    "start": 1.54,
+    "start": 1.56,
     "end": 2.04
    }
   ]
@@ -1254,7 +1304,7 @@
   "palavras_ouvidas": [
    {
     "text": "Recalculei.",
-    "start": 0.06,
+    "start": 0.08,
     "end": 0.6
    },
    {
@@ -1279,7 +1329,7 @@
    },
    {
     "text": "de",
-    "start": 1.5,
+    "start": 1.52,
     "end": 1.58
    },
    {
@@ -1430,7 +1480,7 @@
    {
     "text": "brasinha",
     "start": 1.16,
-    "end": 1.54
+    "end": 1.6
    },
    {
     "text": "volta",
@@ -1535,7 +1585,7 @@
    {
     "text": "talarico",
     "start": 1.06,
-    "end": 1.5
+    "end": 1.52
    }
   ]
  },
