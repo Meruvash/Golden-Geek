@@ -107,6 +107,13 @@
   "mecadosjogos": "https://www.mecadosjogos.com.br/avant-carde-p706",
   "mercadolivre": "https://www.mercadolivre.com.br/p/MLB45310117"
  },
+ "azul": {
+  "_hora": "2026-11-11T20:23-03:00",
+  "amazon": "https://www.amazon.com.br/dp/B077MZ2MPW",
+  "mercadolivre": "https://www.mercadolivre.com.br/p/MLB9390635",
+  "placegames": "https://www.placegames.com.br/azul",
+  "tabuloja": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/azul"
+ },
  "azul-pavilhao-de-verao-mini": {
   "_hora": "2026-11-09T11:33-03:00",
   "amazon": "https://www.amazon.com.br/dp/B0DDR1D8M8",
@@ -667,6 +674,15 @@
   "mercadolivre": "https://www.mercadolivre.com.br/p/MLB47853842",
   "tavernareal": "https://www.tavernareal.com/tabuleiro/halli-galli-twist"
  },
+ "hippocrates-agora": {
+  "_hora": "2026-11-11T20:23-03:00",
+  "amazon": "https://www.amazon.com.br/dp/B0CQB6VD4R",
+  "boargames": "https://www.boargames.com.br/jogos-de-tabuleiro/boargames-medios-e-expert/hippocrates-agora",
+  "brecholudico": "https://brecholudico.com.br/produto/hippocrates-agora/",
+  "leaolivros": "https://www.leaolivros.com.br/hippocrates-agora",
+  "mercadolivre": "https://www.mercadolivre.com.br/p/MLB29535502",
+  "tavernareal": "https://www.tavernareal.com/tabuleiro/hippocrates-agora"
+ },
  "hitster-verao": {
   "_hora": "2026-11-07T04:00-03:00",
   "amazon": "https://www.amazon.com.br/dp/B0HKLGP4RZ",
@@ -738,6 +754,15 @@
   "leaolivros": "https://www.leaolivros.com.br/kingdomino",
   "mercadolivre": "https://www.mercadolivre.com.br/p/MLB19710103",
   "placegames": "https://www.placegames.com.br/boardgames/kingdomino-2a-edicao"
+ },
+ "lemur": {
+  "_hora": "2026-11-11T20:23-03:00",
+  "amazon": "https://www.amazon.com.br/dp/B0D6D3F4ZX",
+  "arcslivrosejogos": "https://www.espacoarcs.com.br/editora-de-jogos/lemur",
+  "azuosmetal": "https://azuosmetal.com.br/produtos/lemur-jogo-de-cartas-papergames/?entry_path=category",
+  "leaolivros": "https://www.leaolivros.com.br/lemur",
+  "mercadolivre": "https://www.mercadolivre.com.br/p/MLB70225649",
+  "placegames": "https://www.placegames.com.br/board-games/lemur"
  },
  "lets-go-pro-japao": {
   "_hora": "2026-11-09T04:18-03:00",
@@ -933,7 +958,7 @@
   "omniverse": "https://www.omniverse.com.br/produto/os-desejos-do-sultao-expansao-viajantes"
  },
  "os-jetsons": {
-  "_hora": "2026-11-10T19:06-03:00",
+  "_hora": "2026-11-11T20:24-03:00",
   "alquimistasdosjogos": "https://www.alquimistasdosjogos.com.br/jogos/the-jetsons",
   "amazon": "https://www.amazon.com.br/dp/B0GJTSGTQX",
   "arcslivrosejogos": "https://www.espacoarcs.com.br/jogos/the-jetsons-o-jogo-de-tabuleiro",
@@ -1152,12 +1177,12 @@
   "tabuloja": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/skyrise"
  },
  "sleeve-copper-65x100mm": {
-  "_hora": "2026-11-10T17:06-03:00",
+  "_hora": "2026-11-11T20:24-03:00",
   "amazon": "https://www.amazon.com.br/dp/B0GYK25VQF",
   "mercadolivre": "https://www.mercadolivre.com.br/p/MLB67202817"
  },
  "sleeve-gold-80x120mm": {
-  "_hora": "2026-11-10T17:06-03:00",
+  "_hora": "2026-11-11T20:24-03:00",
   "amazon": "https://www.amazon.com.br/dp/B0GYK6YZKX",
   "mercadolivre": "https://www.mercadolivre.com.br/p/MLB21914557"
  },
@@ -1194,6 +1219,15 @@
   "mercadolivre": "https://www.mercadolivre.com.br/p/MLB22365095",
   "playeasy": "https://www.playeasy.com.br/sleeve-padrao-usa-56-mm-87-mm-meeple-virus-blue-core-premium"
  },
+ "slide": {
+  "_hora": "2026-11-11T20:24-03:00",
+  "amazon": "https://www.amazon.com.br/dp/B0F7MGVSXY",
+  "cangaiajogos": "https://www.cangaiajogos.com.br/jogos/jogos-para-a-familia/slide",
+  "leaolivros": "https://www.leaolivros.com.br/slide",
+  "mercadolivre": "https://www.mercadolivre.com.br/p/MLB66573623",
+  "nerdev": "https://www.nerdev.com.br/produtos/slide/?entry_path=category",
+  "paladinsgames": "http://paladinsgames.com.br/produto/2045498/slide"
+ },
  "space-base": {
   "_hora": "2026-11-10T00:04-03:00",
   "frodosbg": "https://loja.frodosbg.com.br/space-base"
@@ -1223,6 +1257,15 @@
   "paladinsgames": "http://paladinsgames.com.br/produto/2345641/stitch-626",
   "placegames": "https://www.placegames.com.br/boardgames/stitch-626",
   "tubaleria": "https://tubaleria.store/produtos/stitch-626-qr06m/?entry_path=category"
+ },
+ "taco-chapeu-bolo-presente-pizza": {
+  "_hora": "2026-11-11T20:24-03:00",
+  "amazon": "https://www.amazon.com.br/dp/B0B6D8CCV3",
+  "borderjogos": "https://www.borderjogos.com.br/editoras/papergames/taco-chapeu-bolo-presente-pizza",
+  "caixinhaboardgames": "https://www.caixinhaboardgames.com.br/produtos/taco-chapeu-bolo-presente-pizza/?entry_path=category",
+  "expressoboardgames": "https://www.expressoboardgames.com.br/taco-chapeu-bolo-presente-pizza-familia-taco-gato",
+  "mercadolivre": "https://www.mercadolivre.com.br/p/MLB19639297",
+  "overrungeekstore": "https://overrungeek.com.br/produtos/taco-chapeu-bolo-presente-pizza-familia-taco-gato/?entry_path=category"
  },
  "tainted-grail-monarcas-da-ruina": {
   "_hora": "2026-11-05T20:48-03:00",

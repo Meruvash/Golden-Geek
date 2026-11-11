@@ -10,7 +10,7 @@
   },
   "bravojogos.com.br": {
    "dia": "2026-11-11",
-   "paginas": 49
+   "paginas": 53
   },
   "brecholudico.com.br": {
    "dia": "2026-11-11",
@@ -104,7 +104,7 @@
    "descanso_ate": "2026-11-11T09:43+00:00",
    "dia": "2026-11-11",
    "motivo": "robots.txt respondeu 403",
-   "paginas": 19
+   "paginas": 21
   },
   "www.animusludere.com.br": {
    "dia": "2026-11-11",
@@ -286,7 +286,7 @@
    "descanso_ate": "2026-11-11T09:48+00:00",
    "dia": "2026-11-11",
    "motivo": "robots.txt respondeu 403",
-   "paginas": 27
+   "paginas": 28
   },
   "www.pousocultural.com.br": {
    "dia": "2026-11-11",
@@ -294,7 +294,7 @@
   },
   "www.promobit.com.br": {
    "dia": "2026-11-11",
-   "paginas": 90
+   "paginas": 100
   },
   "www.reunionjogos.com.br": {
    "dia": "2026-11-11",
@@ -322,7 +322,7 @@
    "descanso_ate": "2026-11-11T09:38+00:00",
    "dia": "2026-11-11",
    "motivo": "robots.txt respondeu 403",
-   "paginas": 50
+   "paginas": 51
   },
   "www.tavernareal.com": {
    "descanso_ate": "2026-11-11T09:49+00:00",
@@ -355,7 +355,7 @@
   "https://bravojogos.com.br/black-bravo/jogo-3-capitulos": {
    "cj": 46.49,
    "estoque": true,
-   "hora": "2026-11-11T08:22+00:00",
+   "hora": "2026-11-11T23:22+00:00",
    "preco": 49.99
   },
   "https://bravojogos.com.br/black-bravo/jogo-galaxy-trucker-segunda-edicao": {
@@ -517,7 +517,7 @@
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-o-laboratorio-de-dexter-a-grande-invencao-p": {
    "cj": 83.61,
    "estoque": true,
-   "hora": "2026-11-10T13:06+00:00",
+   "hora": "2026-11-11T23:22+00:00",
    "preco": 89.9
   },
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-patchwork-nova-edicao-p": {
@@ -547,13 +547,13 @@
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-stupor-mundi-count-editon-p": {
    "cj": 232.41,
    "estoque": true,
-   "hora": "2026-11-11T02:19+00:00",
+   "hora": "2026-11-11T23:22+00:00",
    "preco": 249.9
   },
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-superstore-3000-p": {
    "cj": 92.91,
    "estoque": true,
-   "hora": "2026-11-10T21:04+00:00",
+   "hora": "2026-11-11T23:22+00:00",
    "preco": 99.9
   },
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-ta-na-mesa-p": {
@@ -760,6 +760,12 @@
    "hora": "2026-11-11T15:53+00:00",
    "preco": 143.81
   },
+  "https://www.alquimistasdosjogos.com.br/imperium-lendas": {
+   "cj": 143.81,
+   "estoque": true,
+   "hora": "2026-11-11T23:22+00:00",
+   "preco": 143.81
+  },
   "https://www.alquimistasdosjogos.com.br/jogos/a-fake-artist-goes-to-new-york-7049": {
    "cj": 80.81,
    "estoque": true,
@@ -803,9 +809,9 @@
    "preco": 197.81
   },
   "https://www.alquimistasdosjogos.com.br/jogos/imperium-horizontes": {
-   "cj": 269.81,
+   "cj": 265.31,
    "estoque": true,
-   "hora": "2026-11-11T15:53+00:00",
+   "hora": "2026-11-11T23:22+00:00",
    "preco": 269.81
   },
   "https://www.alquimistasdosjogos.com.br/jogos/lego-ninjago-destiny-s-bounty-adventures": {
@@ -1454,12 +1460,6 @@
    "cj": 101.37,
    "estoque": true,
    "hora": "2026-11-11T15:55+00:00",
-   "preco": 109.0
-  },
-  "https://www.livtoys.com.br/promocao/azul-pavilhao-de-verao-mini": {
-   "cj": 101.37,
-   "estoque": false,
-   "hora": "2026-11-09T22:25+00:00",
    "preco": 109.0
   },
   "https://www.livtoys.com.br/promocao/klask": {
@@ -2163,6 +2163,12 @@
    "estoque": true,
    "hora": "2026-11-10T17:20+00:00",
    "preco": 298.8
+  },
+  "https://www.playeasy.com.br/patchwork": {
+   "cj": 92.91,
+   "estoque": true,
+   "hora": "2026-11-11T23:22+00:00",
+   "preco": 99.9
   },
   "https://www.playeasy.com.br/quiferas": {
    "cj": 27.81,
