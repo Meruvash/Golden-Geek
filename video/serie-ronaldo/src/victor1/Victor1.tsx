@@ -680,7 +680,6 @@ const EFEITOS: Efeito[] = [
   { f: "grilos", t: F21 + 0.1, v: 0.35 },
   { f: "cascos", t: F22 + 0.2, v: 0.55 },
   { f: "relincho", t: F22 + 0.9, v: 0.5 },
-  { f: "trombone-triste", t: F23 + 0.1, v: 0.55 },
   { f: "vento", t: F24 + 0.3, v: 0.4, d: 6 },
   { f: "hipnose", t: I(25) - 0.6, v: 0.55 },
   { f: "sino-ironia", t: I(26) - 0.1, v: 0.35 },

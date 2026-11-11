@@ -379,7 +379,7 @@ export const FALAS = [
     "w": "Mystling."
    },
    {
-    "t": 36.024,
+    "t": 36.004,
     "w": "Cem"
    },
    {
@@ -425,7 +425,7 @@ export const FALAS = [
     "w": "e"
    },
    {
-    "t": 39.37,
+    "t": 39.39,
     "w": "ela"
    },
    {
@@ -459,7 +459,7 @@ export const FALAS = [
     "w": "Gente…"
    },
    {
-    "t": 42.457,
+    "t": 42.477,
     "w": "o"
    },
    {
@@ -653,7 +653,7 @@ export const FALAS = [
   "quem": "victor",
   "texto": "Eu espero há cento e doze anos. Espero mais nove segundos.",
   "inicio": 61.416,
-  "dur": 3.715,
+  "dur": 3.716,
   "arquivo": "voz/victor1/fala-17.wav",
   "palavras": [
    {
@@ -706,36 +706,36 @@ export const FALAS = [
   "id": 18,
   "quem": "lukita",
   "texto": "Três regras. Não olha nos olhos dele.",
-  "inicio": 65.931,
+  "inicio": 65.932,
   "dur": 1.882,
   "arquivo": "voz/victor1/fala-18.wav",
   "palavras": [
    {
-    "t": 66.011,
+    "t": 66.012,
     "w": "Três"
    },
    {
-    "t": 66.271,
+    "t": 66.272,
     "w": "regras."
    },
    {
-    "t": 66.691,
+    "t": 66.692,
     "w": "Não"
    },
    {
-    "t": 66.831,
+    "t": 66.832,
     "w": "olha"
    },
    {
-    "t": 66.971,
+    "t": 66.972,
     "w": "nos"
    },
    {
-    "t": 67.131,
+    "t": 67.132,
     "w": "olhos"
    },
    {
-    "t": 67.371,
+    "t": 67.372,
     "w": "dele."
    }
   ]
@@ -744,24 +744,24 @@ export const FALAS = [
   "id": 19,
   "quem": "lukita",
   "texto": "Não elogia a crina.",
-  "inicio": 68.063,
+  "inicio": 68.064,
   "dur": 1.208,
   "arquivo": "voz/victor1/fala-19.wav",
   "palavras": [
    {
-    "t": 68.163,
+    "t": 68.164,
     "w": "Não"
    },
    {
-    "t": 68.263,
+    "t": 68.264,
     "w": "elogia"
    },
    {
-    "t": 68.643,
+    "t": 68.644,
     "w": "a"
    },
    {
-    "t": 68.783,
+    "t": 68.784,
     "w": "crina."
    }
   ]
@@ -770,36 +770,36 @@ export const FALAS = [
   "id": 20,
   "quem": "lukita",
   "texto": "E nunca, jamais, apresenta a sua namorada.",
-  "inicio": 69.521,
+  "inicio": 69.522,
   "dur": 1.997,
   "arquivo": "voz/victor1/fala-20.wav",
   "palavras": [
    {
-    "t": 69.601,
+    "t": 69.602,
     "w": "E"
    },
    {
-    "t": 69.681,
+    "t": 69.682,
     "w": "nunca,"
    },
    {
-    "t": 69.981,
+    "t": 69.982,
     "w": "jamais,"
    },
    {
-    "t": 70.361,
+    "t": 70.362,
     "w": "apresenta"
    },
    {
-    "t": 70.741,
+    "t": 70.742,
     "w": "a"
    },
    {
-    "t": 70.821,
+    "t": 70.822,
     "w": "sua"
    },
    {
-    "t": 70.941,
+    "t": 70.942,
     "w": "namorada."
    }
   ]
@@ -808,24 +808,24 @@ export const FALAS = [
   "id": 21,
   "quem": "victor",
   "texto": "Eu não tenho namorada.",
-  "inicio": 71.918,
+  "inicio": 71.919,
   "dur": 1.505,
   "arquivo": "voz/victor1/fala-21.wav",
   "palavras": [
    {
-    "t": 72.018,
+    "t": 72.019,
     "w": "Eu"
    },
    {
-    "t": 72.178,
+    "t": 72.179,
     "w": "não"
    },
    {
-    "t": 72.398,
+    "t": 72.399,
     "w": "tenho"
    },
    {
-    "t": 72.618,
+    "t": 72.619,
     "w": "namorada."
    }
   ]
@@ -834,28 +834,28 @@ export const FALAS = [
   "id": 22,
   "quem": "vendedor",
   "texto": "Eu tenho! Amor, cadê você?",
-  "inicio": 73.823,
+  "inicio": 73.824,
   "dur": 1.68,
   "arquivo": "voz/victor1/fala-22.wav",
   "palavras": [
    {
-    "t": 73.903,
+    "t": 73.904,
     "w": "Eu"
    },
    {
-    "t": 74.043,
+    "t": 74.044,
     "w": "tenho!"
    },
    {
-    "t": 74.543,
+    "t": 74.544,
     "w": "Amor,"
    },
    {
-    "t": 74.763,
+    "t": 74.764,
     "w": "cadê"
    },
    {
-    "t": 74.963,
+    "t": 74.964,
     "w": "você?"
    }
   ]
@@ -863,54 +863,14 @@ export const FALAS = [
  {
   "id": 23,
   "quem": "vendedor",
-  "texto": "…Tinha. Eu tinha uma namorada… agora eu só tenho poção encalhada.",
-  "inicio": 78.103,
-  "dur": 7.715,
+  "texto": "…Tinha.",
+  "inicio": 78.104,
+  "dur": 1.822,
   "arquivo": "voz/victor1/fala-23.wav",
   "palavras": [
    {
-    "t": 79.303,
+    "t": 79.284,
     "w": "…Tinha."
-   },
-   {
-    "t": 81.263,
-    "w": "Eu"
-   },
-   {
-    "t": 81.443,
-    "w": "tinha"
-   },
-   {
-    "t": 81.623,
-    "w": "uma"
-   },
-   {
-    "t": 81.803,
-    "w": "namorada…"
-   },
-   {
-    "t": 83.883,
-    "w": "agora"
-   },
-   {
-    "t": 84.103,
-    "w": "eu"
-   },
-   {
-    "t": 84.203,
-    "w": "só"
-   },
-   {
-    "t": 84.363,
-    "w": "tenho"
-   },
-   {
-    "t": 84.603,
-    "w": "poção"
-   },
-   {
-    "t": 84.983,
-    "w": "encalhada."
    }
   ]
  },
@@ -918,28 +878,28 @@ export const FALAS = [
   "id": 24,
   "quem": "ronaldo",
   "texto": "Oxe! Começou o expediente dele.",
-  "inicio": 88.418,
+  "inicio": 81.026,
   "dur": 2.209,
   "arquivo": "voz/victor1/fala-24.wav",
   "palavras": [
    {
-    "t": 88.558,
+    "t": 81.086,
     "w": "Oxe!"
    },
    {
-    "t": 89.098,
+    "t": 81.706,
     "w": "Começou"
    },
    {
-    "t": 89.478,
+    "t": 82.086,
     "w": "o"
    },
    {
-    "t": 89.558,
+    "t": 82.166,
     "w": "expediente"
    },
    {
-    "t": 90.158,
+    "t": 82.766,
     "w": "dele."
    }
   ]
@@ -948,20 +908,20 @@ export const FALAS = [
   "id": 25,
   "quem": "victor",
   "texto": "Que crina… maravilhosa…",
-  "inicio": 92.227,
+  "inicio": 84.835,
   "dur": 1.846,
   "arquivo": "voz/victor1/fala-25.wav",
   "palavras": [
    {
-    "t": 92.307,
+    "t": 84.915,
     "w": "Que"
    },
    {
-    "t": 92.467,
+    "t": 85.075,
     "w": "crina…"
    },
    {
-    "t": 93.147,
+    "t": 85.755,
     "w": "maravilhosa…"
    }
   ]
@@ -970,44 +930,44 @@ export const FALAS = [
   "id": 26,
   "quem": "lukita",
   "texto": "Ele quebrou a regra um e a regra dois!",
-  "inicio": 94.573,
+  "inicio": 87.181,
   "dur": 2.09,
   "arquivo": "voz/victor1/fala-26.wav",
   "palavras": [
    {
-    "t": 94.653,
+    "t": 87.261,
     "w": "Ele"
    },
    {
-    "t": 94.813,
+    "t": 87.421,
     "w": "quebrou"
    },
    {
-    "t": 95.113,
+    "t": 87.721,
     "w": "a"
    },
    {
-    "t": 95.193,
+    "t": 87.801,
     "w": "regra"
    },
    {
-    "t": 95.553,
+    "t": 88.161,
     "w": "um"
    },
    {
-    "t": 95.693,
+    "t": 88.301,
     "w": "e"
    },
    {
-    "t": 95.773,
+    "t": 88.381,
     "w": "a"
    },
    {
-    "t": 95.853,
+    "t": 88.461,
     "w": "regra"
    },
    {
-    "t": 96.153,
+    "t": 88.761,
     "w": "dois!"
    }
   ]
@@ -1016,36 +976,36 @@ export const FALAS = [
   "id": 27,
   "quem": "wan",
   "texto": "Ninguém cai de penhasco no meu turno.",
-  "inicio": 99.663,
+  "inicio": 92.271,
   "dur": 2.47,
   "arquivo": "voz/victor1/fala-27.wav",
   "palavras": [
    {
-    "t": 99.763,
+    "t": 92.371,
     "w": "Ninguém"
    },
    {
-    "t": 100.223,
+    "t": 92.831,
     "w": "cai"
    },
    {
-    "t": 100.403,
+    "t": 93.011,
     "w": "de"
    },
    {
-    "t": 100.543,
+    "t": 93.151,
     "w": "penhasco"
    },
    {
-    "t": 101.123,
+    "t": 93.731,
     "w": "no"
    },
    {
-    "t": 101.263,
+    "t": 93.871,
     "w": "meu"
    },
    {
-    "t": 101.503,
+    "t": 94.111,
     "w": "turno."
    }
   ]
@@ -1054,16 +1014,16 @@ export const FALAS = [
   "id": 28,
   "quem": "wan",
   "texto": "Ronaldo. Agora.",
-  "inicio": 102.383,
-  "dur": 2.013,
+  "inicio": 94.991,
+  "dur": 2.014,
   "arquivo": "voz/victor1/fala-28.wav",
   "palavras": [
    {
-    "t": 102.463,
+    "t": 95.071,
     "w": "Ronaldo."
    },
    {
-    "t": 103.703,
+    "t": 96.311,
     "w": "Agora."
    }
   ]
@@ -1072,32 +1032,32 @@ export const FALAS = [
   "id": 29,
   "quem": "ronaldo",
   "texto": "Segura que lá vem o Reteté!",
-  "inicio": 104.796,
+  "inicio": 97.405,
   "dur": 1.546,
   "arquivo": "voz/victor1/fala-29.wav",
   "palavras": [
    {
-    "t": 104.916,
+    "t": 97.525,
     "w": "Segura"
    },
    {
-    "t": 105.236,
+    "t": 97.845,
     "w": "que"
    },
    {
-    "t": 105.336,
+    "t": 97.945,
     "w": "lá"
    },
    {
-    "t": 105.476,
+    "t": 98.085,
     "w": "vem"
    },
    {
-    "t": 105.636,
+    "t": 98.245,
     "w": "o"
    },
    {
-    "t": 105.696,
+    "t": 98.305,
     "w": "Reteté!"
    }
   ]
@@ -1106,36 +1066,36 @@ export const FALAS = [
   "id": 30,
   "quem": "victor",
   "texto": "Cento e doze anos esperando esse eclipse.",
-  "inicio": 112.942,
+  "inicio": 105.551,
   "dur": 2.276,
   "arquivo": "voz/victor1/fala-30.wav",
   "palavras": [
    {
-    "t": 113.122,
+    "t": 105.731,
     "w": "Cento"
    },
    {
-    "t": 113.722,
+    "t": 106.331,
     "w": "e"
    },
    {
-    "t": 113.722,
+    "t": 106.331,
     "w": "doze"
    },
    {
-    "t": 113.922,
+    "t": 106.531,
     "w": "anos"
    },
    {
-    "t": 114.322,
+    "t": 106.931,
     "w": "esperando"
    },
    {
-    "t": 114.322,
+    "t": 106.931,
     "w": "esse"
    },
    {
-    "t": 114.502,
+    "t": 107.091,
     "w": "eclipse."
    }
   ]
@@ -1144,24 +1104,24 @@ export const FALAS = [
   "id": 31,
   "quem": "victor",
   "texto": "Hoje você é meu.",
-  "inicio": 117.618,
+  "inicio": 110.227,
   "dur": 1.107,
   "arquivo": "voz/victor1/fala-31.wav",
   "palavras": [
    {
-    "t": 117.678,
+    "t": 110.287,
     "w": "Hoje"
    },
    {
-    "t": 117.918,
+    "t": 110.527,
     "w": "você"
    },
    {
-    "t": 118.138,
+    "t": 110.747,
     "w": "é"
    },
    {
-    "t": 118.238,
+    "t": 110.847,
     "w": "meu."
    }
   ]
@@ -1170,40 +1130,40 @@ export const FALAS = [
   "id": 32,
   "quem": "lukita",
   "texto": "Recalculei. Agora ele tá a fim de você.",
-  "inicio": 120.525,
+  "inicio": 113.134,
   "dur": 2.064,
   "arquivo": "voz/victor1/fala-32.wav",
   "palavras": [
    {
-    "t": 120.605,
+    "t": 113.194,
     "w": "Recalculei."
    },
    {
-    "t": 121.305,
+    "t": 113.914,
     "w": "Agora"
    },
    {
-    "t": 121.505,
+    "t": 114.114,
     "w": "ele"
    },
    {
-    "t": 121.665,
+    "t": 114.274,
     "w": "tá"
    },
    {
-    "t": 121.665,
+    "t": 114.274,
     "w": "a"
    },
    {
-    "t": 121.785,
+    "t": 114.394,
     "w": "fim"
    },
    {
-    "t": 122.045,
+    "t": 114.654,
     "w": "de"
    },
    {
-    "t": 122.125,
+    "t": 114.734,
     "w": "você."
    }
   ]
@@ -1212,24 +1172,24 @@ export const FALAS = [
   "id": 33,
   "quem": "wan",
   "texto": "Victor. Agora você decide.",
-  "inicio": 125.589,
+  "inicio": 118.198,
   "dur": 2.276,
   "arquivo": "voz/victor1/fala-33.wav",
   "palavras": [
    {
-    "t": 125.689,
+    "t": 118.298,
     "w": "Victor."
    },
    {
-    "t": 126.469,
+    "t": 119.078,
     "w": "Agora"
    },
    {
-    "t": 126.789,
+    "t": 119.398,
     "w": "você"
    },
    {
-    "t": 127.029,
+    "t": 119.638,
     "w": "decide."
    }
   ]
@@ -1238,68 +1198,68 @@ export const FALAS = [
   "id": 34,
   "quem": "wan",
   "texto": "Se captura, ele fica com você. Mas tudo que é casal da ilha corre perigo.",
-  "inicio": 128.115,
+  "inicio": 120.724,
   "dur": 5.991,
   "arquivo": "voz/victor1/fala-34.wav",
   "palavras": [
    {
-    "t": 128.215,
+    "t": 120.824,
     "w": "Se"
    },
    {
-    "t": 128.335,
+    "t": 120.944,
     "w": "captura,"
    },
    {
-    "t": 129.335,
+    "t": 121.944,
     "w": "ele"
    },
    {
-    "t": 129.575,
+    "t": 122.184,
     "w": "fica"
    },
    {
-    "t": 129.835,
+    "t": 122.444,
     "w": "com"
    },
    {
-    "t": 129.995,
+    "t": 122.604,
     "w": "você."
    },
    {
-    "t": 130.975,
+    "t": 123.584,
     "w": "Mas"
    },
    {
-    "t": 131.275,
+    "t": 123.884,
     "w": "tudo"
    },
    {
-    "t": 131.555,
+    "t": 124.164,
     "w": "que"
    },
    {
-    "t": 131.655,
+    "t": 124.264,
     "w": "é"
    },
    {
-    "t": 131.755,
+    "t": 124.364,
     "w": "casal"
    },
    {
-    "t": 132.215,
+    "t": 124.824,
     "w": "da"
    },
    {
-    "t": 132.475,
+    "t": 125.084,
     "w": "ilha"
    },
    {
-    "t": 133.015,
+    "t": 125.624,
     "w": "corre"
    },
    {
-    "t": 133.295,
+    "t": 125.904,
     "w": "perigo."
    }
   ]
@@ -1308,56 +1268,56 @@ export const FALAS = [
   "id": 35,
   "quem": "wan",
   "texto": "Se liberta, a Brasinha volta pra você. Mas o Talaricórnio fica solto.",
-  "inicio": 134.356,
+  "inicio": 126.965,
   "dur": 5.48,
   "arquivo": "voz/victor1/fala-35.wav",
   "palavras": [
    {
-    "t": 134.456,
+    "t": 127.065,
     "w": "Se"
    },
    {
-    "t": 134.556,
+    "t": 127.165,
     "w": "liberta,"
    },
    {
-    "t": 135.416,
+    "t": 128.025,
     "w": "a"
    },
    {
-    "t": 135.516,
+    "t": 128.125,
     "w": "Brasinha"
    },
    {
-    "t": 135.976,
+    "t": 128.585,
     "w": "volta"
    },
    {
-    "t": 136.276,
+    "t": 128.885,
     "w": "pra"
    },
    {
-    "t": 136.416,
+    "t": 129.025,
     "w": "você."
    },
    {
-    "t": 137.456,
+    "t": 130.065,
     "w": "Mas"
    },
    {
-    "t": 137.716,
+    "t": 130.325,
     "w": "o"
    },
    {
-    "t": 137.836,
+    "t": 130.445,
     "w": "Talaricórnio"
    },
    {
-    "t": 138.796,
+    "t": 131.405,
     "w": "fica"
    },
    {
-    "t": 139.096,
+    "t": 131.705,
     "w": "solto."
    }
   ]
@@ -1366,24 +1326,24 @@ export const FALAS = [
   "id": 36,
   "quem": "wan",
   "texto": "Comenta CAPTURAR ou LIBERTAR.",
-  "inicio": 140.436,
+  "inicio": 133.045,
   "dur": 2.458,
   "arquivo": "voz/victor1/fala-36.wav",
   "palavras": [
    {
-    "t": 140.536,
+    "t": 133.145,
     "w": "Comenta"
    },
    {
-    "t": 141.136,
+    "t": 133.745,
     "w": "CAPTURAR"
    },
    {
-    "t": 141.836,
+    "t": 134.445,
     "w": "ou"
    },
    {
-    "t": 141.996,
+    "t": 134.605,
     "w": "LIBERTAR."
    }
   ]
@@ -1392,28 +1352,28 @@ export const FALAS = [
   "id": 37,
   "quem": "ronaldo",
   "texto": "E marca aquele amigo talarico.",
-  "inicio": 143.144,
+  "inicio": 135.753,
   "dur": 1.775,
   "arquivo": "voz/victor1/fala-37.wav",
   "palavras": [
    {
-    "t": 143.204,
+    "t": 135.813,
     "w": "E"
    },
    {
-    "t": 143.324,
+    "t": 135.933,
     "w": "marca"
    },
    {
-    "t": 143.664,
+    "t": 136.273,
     "w": "aquele"
    },
    {
-    "t": 143.924,
+    "t": 136.533,
     "w": "amigo"
    },
    {
-    "t": 144.204,
+    "t": 136.813,
     "w": "talarico."
    }
   ]
@@ -1422,35 +1382,35 @@ export const FALAS = [
   "id": 38,
   "quem": "wan",
   "texto": "A maioria escreve o próximo episódio.",
-  "inicio": 145.169,
+  "inicio": 137.778,
   "dur": 2.171,
   "arquivo": "voz/victor1/fala-38.wav",
   "palavras": [
    {
-    "t": 145.249,
+    "t": 137.858,
     "w": "A"
    },
    {
-    "t": 145.329,
+    "t": 137.938,
     "w": "maioria"
    },
    {
-    "t": 145.669,
+    "t": 138.278,
     "w": "escreve"
    },
    {
-    "t": 146.089,
+    "t": 138.698,
     "w": "o"
    },
    {
-    "t": 146.189,
+    "t": 138.798,
     "w": "próximo"
    },
    {
-    "t": 146.529,
+    "t": 139.138,
     "w": "episódio."
    }
   ]
  }
 ];
-export const DURACAO = 148.74;
+export const DURACAO = 141.35;

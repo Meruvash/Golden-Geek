@@ -409,7 +409,7 @@
    },
    {
     "text": "100",
-    "start": 2.3,
+    "start": 2.28,
     "end": 2.46
    },
    {
@@ -464,7 +464,7 @@
    },
    {
     "text": "ela",
-    "start": 1.98,
+    "start": 2.0,
     "end": 2.14
    },
    {
@@ -504,7 +504,7 @@
    },
    {
     "text": "o",
-    "start": 0.82,
+    "start": 0.84,
     "end": 0.86
    },
    {
@@ -650,7 +650,7 @@
    {
     "text": "segundos",
     "start": 2.18,
-    "end": 2.62
+    "end": 2.6
    }
   ]
  },
@@ -705,7 +705,7 @@
   "texto": "Eu espero há cento e doze anos. Espero mais nove segundos.",
   "modelo": "eleven_multilingual_v2",
   "arquivo": "voz/victor1/fala-17.wav",
-  "dur": 3.715,
+  "dur": 3.716,
   "palavras_ouvidas": [
    {
     "text": "Eu",
@@ -790,7 +790,7 @@
    {
     "text": "olhos",
     "start": 1.2,
-    "end": 1.38
+    "end": 1.42
    },
    {
     "text": "dele",
@@ -935,75 +935,25 @@
    {
     "text": "você?",
     "start": 1.14,
-    "end": 1.4
+    "end": 1.42
    }
   ]
  },
  {
   "id": 23,
   "quem": "vendedor",
-  "texto": "…Tinha. Eu tinha uma namorada… agora eu só tenho poção encalhada.",
+  "texto": "…Tinha.",
   "modelo": "eleven_v3",
   "arquivo": "voz/victor1/fala-23.wav",
-  "dur": 7.715,
+  "dur": 1.822,
   "palavras_ouvidas": [
    {
-    "text": "Tinha.",
-    "start": 1.2,
-    "end": 1.54
-   },
-   {
-    "text": "Eu",
-    "start": 3.16,
-    "end": 3.26
-   },
-   {
-    "text": "tinha",
-    "start": 3.34,
-    "end": 3.48
-   },
-   {
-    "text": "uma",
-    "start": 3.52,
-    "end": 3.64
-   },
-   {
-    "text": "namorada.",
-    "start": 3.7,
-    "end": 4.3
-   },
-   {
-    "text": "Agora",
-    "start": 5.78,
-    "end": 5.98
-   },
-   {
-    "text": "eu",
-    "start": 6.0,
-    "end": 6.04
-   },
-   {
-    "text": "só",
-    "start": 6.1,
-    "end": 6.22
-   },
-   {
-    "text": "tenho",
-    "start": 6.26,
-    "end": 6.46
-   },
-   {
-    "text": "poção",
-    "start": 6.5,
-    "end": 6.84
-   },
-   {
-    "text": "encalhada",
-    "start": 6.88,
-    "end": 7.5
+    "text": "Tinha",
+    "start": 1.18,
+    "end": 1.5
    }
   ],
-  "fala": "[sighs] …Tinha. [crying] Eu tinha uma namorada… [sobbing] agora eu só tenho poção encalhada.",
+  "fala": "[sighs] …Tinha.",
   "ajustes": {
    "stability": 0.0,
    "similarity_boost": 0.8
@@ -1018,14 +968,14 @@
   "dur": 2.209,
   "palavras_ouvidas": [
    {
-    "text": "Osche",
-    "start": 0.14,
+    "text": "\"Oxe!\",",
+    "start": 0.06,
     "end": 0.38
    },
    {
     "text": "começou",
     "start": 0.68,
-    "end": 1.04
+    "end": 1.02
    },
    {
     "text": "o",
@@ -1040,7 +990,7 @@
    {
     "text": "dele",
     "start": 1.74,
-    "end": 1.96
+    "end": 1.94
    }
   ]
  },
@@ -1155,7 +1105,7 @@
    {
     "text": "no",
     "start": 1.46,
-    "end": 1.56
+    "end": 1.54
    },
    {
     "text": "meu",
@@ -1175,7 +1125,7 @@
   "texto": "Ronaldo. Agora.",
   "modelo": "eleven_multilingual_v2",
   "arquivo": "voz/victor1/fala-28.wav",
-  "dur": 2.013,
+  "dur": 2.014,
   "palavras_ouvidas": [
    {
     "text": "Ronaldo,",
@@ -1259,7 +1209,7 @@
    },
    {
     "text": "eclipse",
-    "start": 1.56,
+    "start": 1.54,
     "end": 2.04
    }
   ]
@@ -1304,7 +1254,7 @@
   "palavras_ouvidas": [
    {
     "text": "Recalculei.",
-    "start": 0.08,
+    "start": 0.06,
     "end": 0.6
    },
    {
@@ -1585,7 +1535,7 @@
    {
     "text": "talarico",
     "start": 1.06,
-    "end": 1.52
+    "end": 1.5
    }
   ]
  },
