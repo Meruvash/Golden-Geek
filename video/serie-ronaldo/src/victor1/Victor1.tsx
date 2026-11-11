@@ -480,7 +480,7 @@ const PLANOS: Plano[] = [
         </div>
       ))}
       <div style={{ position: "absolute", left: 0, right: 0, top: 700, textAlign: "center", fontFamily: SANS, fontWeight: 900, fontSize: 44, color: "#fffaf6", opacity: p(s, I(38) - 0.1, 0.3) }}>
-        A maioria escreve a <span style={{ color: "#ffcf5a" }}>Parte 2.</span>
+        A maioria escreve o <span style={{ color: "#ffcf5a" }}>próximo episódio.</span>
       </div>
       <div style={{ position: "absolute", left: 0, right: 0, top: 770, textAlign: "center", fontFamily: SANS, fontWeight: 700, fontSize: 24, color: "rgba(240,225,255,.65)", opacity: p(s, I(37) - 0.1, 0.3) }}>
         marca aquele amigo talarico
