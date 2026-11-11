@@ -294,7 +294,7 @@
   },
   "www.promobit.com.br": {
    "dia": "2026-11-11",
-   "paginas": 20
+   "paginas": 30
   },
   "www.reunionjogos.com.br": {
    "dia": "2026-11-11",
@@ -657,12 +657,6 @@
    "estoque": true,
    "hora": "2026-11-11T02:50+00:00",
    "preco": 99.9
-  },
-  "https://bravojogos.com.br/uau-friday-2023/jogo-gravity-superstar": {
-   "cj": 92.07,
-   "estoque": true,
-   "hora": "2026-11-09T04:59+00:00",
-   "preco": 99.0
   },
   "https://loja.frodosbg.com.br/citadels-2nd-edicao-revisada": {
    "cj": 132.89,
@@ -1738,12 +1732,6 @@
    "hora": "2026-11-11T02:50+00:00",
    "preco": 89.9
   },
-  "https://www.pittasboardgames.com.br/produtos/hint-go-12shw/?entry_path=category": {
-   "cj": 119.97,
-   "estoque": true,
-   "hora": "2026-11-09T03:46+00:00",
-   "preco": 129.0
-  },
   "https://www.placegames.com.br/azul-mini-pavilhao-de-verao": {
    "cj": 102.19,
    "estoque": true,
@@ -1911,12 +1899,6 @@
    "estoque": true,
    "hora": "2026-11-11T02:48+00:00",
    "preco": 46.39
-  },
-  "https://www.placegames.com.br/boardgames/monster-trick": {
-   "cj": 55.69,
-   "estoque": true,
-   "hora": "2026-11-09T05:29+00:00",
-   "preco": 55.69
   },
   "https://www.placegames.com.br/boardgames/neuroshima-hex-battle-policia-de-aco-vs-feras": {
    "cj": 111.49,
