@@ -1,7 +1,7 @@
 # Victor e o Talaricórnio · Ep. 1 (microdrama + escolha final do saveo). Aguardando aprovação
 
 Tema: Dragon Eclipse (ilhas, eclipse, criaturas Mystlings). ~2:30 · quadrado · sem narrador.
-Vozes: Victor (voz nova a escolher), Wan (Adriano), Ronaldo (Mário), Lukita (Lucas). O Talaricórnio não fala: pisca, relincha, joga a crina.
+Vozes: Victor (voz nova a escolher), Wan (Adriano), Ronaldo (Mário), Lukita (Lucas), Vendedor figurante (Marcio). O Talaricórnio não fala: pisca, relincha, joga a crina.
 Victor é personagem nosso: um vampiro galã pálido e melancólico, em paródia do arquétipo, sem copiar nome, rosto ou visual de um personagem existente.
 A transformação dele é uma armadura de herói colorido no estilo sentai, nas 7 cores do arco-íris (genérica, sem marca).
 Atenção: o site ainda não tem resenha nem tutorial de Dragon Eclipse, então o vídeo não ensina regra; só usa o tema.
@@ -43,9 +43,10 @@ Atenção: o site ainda não tem resenha nem tutorial de Dragon Eclipse, então 
    LUKITA: Não elogia a crina.
    LUKITA: E nunca, jamais, apresenta a sua namorada.
    VICTOR: Eu não tenho namorada.
-   RONALDO: Mas eu tenho! Cadê ela?
-   (ao fundo, a namorada do Ronaldo passa a cavalo no Talaricórnio, acenando)
-   RONALDO: …Era minha.
+   VENDEDOR DE POÇÕES (figurante, ao fundo): Eu tenho! Amor, cadê você?
+   (a namorada do vendedor passa montada no Talaricórnio, acenando tchauzinho)
+   VENDEDOR: …Tinha.
+   RONALDO: Oxe! Começou o expediente dele.
 
 8. O PROBLEMA E O RESGATE (o eclipse; o Talaricórnio olha nos olhos do Victor, que hipnotizado anda até a beira do penhasco)
    VICTOR: Que crina… maravilhosa…
