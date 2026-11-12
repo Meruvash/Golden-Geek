@@ -71,8 +71,9 @@
   "5-minute-one-piece",
   "5-score",
   "50-animais-marinhos",
+  "50-bichos-de-estimacao",
+  "50-caes",
   "50-filhotes",
-  "a-fake-artist-goes-to-new-york",
   "a-iniciativa",
   "a-tripulacao-missao-no-mar-profundo",
   "airport-rush",
@@ -127,6 +128,7 @@
   "ilha-da-caveira",
   "imagem-acao",
   "imagem-acao-junior",
+  "imagine-family",
   "imperium-classicos",
   "imperium-lendas",
   "iron-maiden-pack-3",
@@ -181,6 +183,7 @@
   "take-time",
   "tapalavras",
   "the-game",
+  "the-goonies-never-say-die",
   "the-number",
   "the-pillars-of-the-earth",
   "timeline-twist",
@@ -193,13 +196,18 @@
   "uno-flip",
   "uno-flip-attack",
   "uno-spin",
-  "zenkai-adventure"
+  "zenkai-adventure",
+  "zombicide-gear-up"
  ],
  "pendentes": {
-  "a-fake-artist-goes-to-new-york": "2026-11-12T07:11+00:00",
+  "50-bichos-de-estimacao": "2026-11-12T09:30+00:00",
+  "50-caes": "2026-11-12T09:30+00:00",
+  "imagine-family": "2026-11-12T09:30+00:00",
   "lego-ninjago-destinys-bounty-adventures": "2026-11-12T07:11+00:00",
   "piles": "2026-11-12T07:11+00:00",
   "qual-e-o-seu-meme": "2026-11-12T07:11+00:00",
-  "timeline-twist": "2026-11-12T07:11+00:00"
+  "the-goonies-never-say-die": "2026-11-12T09:30+00:00",
+  "timeline-twist": "2026-11-12T07:11+00:00",
+  "zombicide-gear-up": "2026-11-12T09:30+00:00"
  }
 }
