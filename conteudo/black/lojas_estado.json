@@ -10,7 +10,7 @@
   },
   "bravojogos.com.br": {
    "dia": "2026-11-12",
-   "paginas": 29
+   "paginas": 31
   },
   "brecholudico.com.br": {
    "dia": "2026-11-12",
@@ -104,7 +104,7 @@
    "descanso_ate": "2026-11-11T09:43+00:00",
    "dia": "2026-11-12",
    "motivo": "robots.txt respondeu 403",
-   "paginas": 15
+   "paginas": 17
   },
   "www.animusludere.com.br": {
    "dia": "2026-11-12",
@@ -184,7 +184,7 @@
    "descanso_ate": "2026-11-05T22:05+00:00",
    "dia": "2026-11-12",
    "motivo": "robots.txt respondeu 429",
-   "paginas": 6
+   "paginas": 7
   },
   "www.guildadosjogos.com.br": {
    "dia": "2026-11-12",
@@ -294,7 +294,7 @@
   },
   "www.promobit.com.br": {
    "dia": "2026-11-12",
-   "paginas": 40
+   "paginas": 50
   },
   "www.reunionjogos.com.br": {
    "dia": "2026-11-12",
@@ -322,7 +322,7 @@
    "descanso_ate": "2026-11-11T09:38+00:00",
    "dia": "2026-11-12",
    "motivo": "robots.txt respondeu 403",
-   "paginas": 41
+   "paginas": 42
   },
   "www.tavernareal.com": {
    "descanso_ate": "2026-11-11T09:49+00:00",
@@ -511,13 +511,13 @@
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-kokeshi-p": {
    "cj": 92.91,
    "estoque": true,
-   "hora": "2026-11-11T15:53+00:00",
+   "hora": "2026-11-12T11:55+00:00",
    "preco": 99.9
   },
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-o-laboratorio-de-dexter-a-grande-invencao-p": {
    "cj": 83.61,
    "estoque": true,
-   "hora": "2026-11-11T23:22+00:00",
+   "hora": "2026-11-12T11:55+00:00",
    "preco": 89.9
   },
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-patchwork-nova-edicao-p": {
@@ -733,7 +733,7 @@
   "https://www.alquimistasdosjogos.com.br/imperium-lendas": {
    "cj": 143.81,
    "estoque": true,
-   "hora": "2026-11-11T23:22+00:00",
+   "hora": "2026-11-12T11:55+00:00",
    "preco": 143.81
   },
   "https://www.alquimistasdosjogos.com.br/jogos/a-fake-artist-goes-to-new-york-7049": {
@@ -781,8 +781,8 @@
   "https://www.alquimistasdosjogos.com.br/jogos/imperium-horizontes": {
    "cj": 265.31,
    "estoque": true,
-   "hora": "2026-11-11T23:22+00:00",
-   "preco": 269.81
+   "hora": "2026-11-12T11:55+00:00",
+   "preco": 265.31
   },
   "https://www.alquimistasdosjogos.com.br/jogos/lego-ninjago-destiny-s-bounty-adventures": {
    "cj": 179.97,
@@ -1360,6 +1360,12 @@
    "hora": "2026-11-12T04:24+00:00",
    "preco": 64.45
   },
+  "https://www.facilshopping.com.br/produtos/the-flow-of-history-retail-board-game-kronos/": {
+   "cj": 138.43,
+   "estoque": true,
+   "hora": "2026-11-12T11:55+00:00",
+   "preco": 148.85
+  },
   "https://www.facilshopping.com.br/produtos/the-goonies-never-say-die-edicao-em-ingles-funko-games/?entry_path=category": {
    "cj": 158.01,
    "estoque": true,
@@ -1443,12 +1449,6 @@
    "estoque": true,
    "hora": "2026-11-12T04:28+00:00",
    "preco": 89.0
-  },
-  "https://www.lojameeplebrjogos.com.br/fornalha": {
-   "cj": 170.9,
-   "estoque": true,
-   "hora": "2026-11-10T10:35+00:00",
-   "preco": 170.9
   },
   "https://www.masmorra.com.br/produtos/bgcarafps": {
    "cj": 98.91,
