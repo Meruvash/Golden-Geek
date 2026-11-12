@@ -10,7 +10,7 @@
   },
   "bravojogos.com.br": {
    "dia": "2026-11-12",
-   "paginas": 31
+   "paginas": 35
   },
   "brecholudico.com.br": {
    "dia": "2026-11-12",
@@ -92,7 +92,7 @@
   },
   "tubaleria.store": {
    "dia": "2026-11-12",
-   "paginas": 5
+   "paginas": 6
   },
   "vempramesajogos.commercesuite.com.br": {
    "descanso_ate": "2026-11-11T09:43+00:00",
@@ -104,7 +104,7 @@
    "descanso_ate": "2026-11-11T09:43+00:00",
    "dia": "2026-11-12",
    "motivo": "robots.txt respondeu 403",
-   "paginas": 17
+   "paginas": 18
   },
   "www.animusludere.com.br": {
    "dia": "2026-11-12",
@@ -286,7 +286,7 @@
    "descanso_ate": "2026-11-11T09:48+00:00",
    "dia": "2026-11-12",
    "motivo": "robots.txt respondeu 403",
-   "paginas": 23
+   "paginas": 25
   },
   "www.pousocultural.com.br": {
    "dia": "2026-11-12",
@@ -294,7 +294,7 @@
   },
   "www.promobit.com.br": {
    "dia": "2026-11-12",
-   "paginas": 50
+   "paginas": 60
   },
   "www.reunionjogos.com.br": {
    "dia": "2026-11-12",
@@ -322,7 +322,7 @@
    "descanso_ate": "2026-11-11T09:38+00:00",
    "dia": "2026-11-12",
    "motivo": "robots.txt respondeu 403",
-   "paginas": 42
+   "paginas": 43
   },
   "www.tavernareal.com": {
    "descanso_ate": "2026-11-11T09:49+00:00",
@@ -367,13 +367,13 @@
   "https://bravojogos.com.br/black-bravo/jogo-ilha-da-caveira": {
    "cj": 46.49,
    "estoque": true,
-   "hora": "2026-11-11T15:52+00:00",
+   "hora": "2026-11-12T14:21+00:00",
    "preco": 49.99
   },
   "https://bravojogos.com.br/black-bravo/jogo-quest": {
    "cj": 66.87,
    "estoque": true,
-   "hora": "2026-11-11T18:22+00:00",
+   "hora": "2026-11-12T14:21+00:00",
    "preco": 71.9
   },
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/azul-pavilhao-de-verao-mini-p": {
@@ -421,7 +421,7 @@
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/fabulinhas-p": {
    "cj": 65.01,
    "estoque": true,
-   "hora": "2026-11-11T08:22+00:00",
+   "hora": "2026-11-12T14:21+00:00",
    "preco": 69.9
   },
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/imperium-classics-p": {
@@ -475,7 +475,7 @@
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-fibonachos-p": {
    "cj": 27.81,
    "estoque": true,
-   "hora": "2026-11-11T02:47+00:00",
+   "hora": "2026-11-12T14:21+00:00",
    "preco": 29.9
   },
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-galaxy-trucker-segunda-edicao-p": {
@@ -709,7 +709,7 @@
   "https://tubaleria.store/produtos/airport-rush/?entry_path=category": {
    "cj": 125.34,
    "estoque": true,
-   "hora": "2026-11-12T01:53+00:00",
+   "hora": "2026-11-12T14:21+00:00",
    "preco": 130.56
   },
   "https://www.alquimistasdosjogos.com.br/barrage-exp-the-leeghwater-project-bloco": {
@@ -785,10 +785,10 @@
    "preco": 265.31
   },
   "https://www.alquimistasdosjogos.com.br/jogos/lego-ninjago-destiny-s-bounty-adventures": {
-   "cj": 179.97,
+   "cj": 179.81,
    "estoque": true,
-   "hora": "2026-11-12T06:54+00:00",
-   "preco": 179.97
+   "hora": "2026-11-12T14:21+00:00",
+   "preco": 179.81
   },
   "https://www.alquimistasdosjogos.com.br/jogos/loot": {
    "cj": 40.31,
@@ -2071,7 +2071,7 @@
   "https://www.playeasy.com.br/citadels-2a-edicao-revisada": {
    "cj": 139.5,
    "estoque": true,
-   "hora": "2026-11-12T01:53+00:00",
+   "hora": "2026-11-12T14:21+00:00",
    "preco": 150.0
   },
   "https://www.playeasy.com.br/destemidos-norte-da-africa": {
@@ -2143,7 +2143,7 @@
   "https://www.playeasy.com.br/sleeves-copper-65-x-100-mm-blue-core": {
    "cj": 9.3,
    "estoque": true,
-   "hora": "2026-11-11T20:45+00:00",
+   "hora": "2026-11-12T14:21+00:00",
    "preco": 10.0
   },
   "https://www.playeasy.com.br/sleeves-quadrado-pequeno-60-x-60-mm-blue-core": {
