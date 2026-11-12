@@ -23731,7 +23731,7 @@
     "api": {
      "anuncio": "MLB3491700275",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-12T14:45-03:00",
+     "hora": "2026-11-12T16:46-03:00",
      "nivel": "loja oficial",
      "preco": 55.59,
      "vendedor": "Mercado Livre Casa",
@@ -47856,7 +47856,7 @@
     "api": {
      "anuncio": "MLB7005517234",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-12T14:46-03:00",
+     "hora": "2026-11-12T16:46-03:00",
      "nivel": "MercadoLíder silver",
      "preco": 89.8,
      "vendedor": "TOTALCENTERMARAU",
@@ -120217,7 +120217,16 @@
     "vendedor": null
    },
    {
-    "atualizado": "2026-11-12T15:32:09.081+00:00",
+    "api": {
+     "anuncio": "MLB7900919118",
+     "fonte": "API do Mercado Livre",
+     "hora": "2026-11-12T16:47-03:00",
+     "nivel": "loja oficial",
+     "preco": 26.09,
+     "vendedor": "SUPER_ATACADO_CASA",
+     "vendedor_ok": true
+    },
+    "atualizado": "2026-11-12T11:32:09.658+00:00",
     "de": 33.84,
     "loja": "Mercado Livre",
     "loja_id": "mercadolivre",
@@ -137700,7 +137709,7 @@
     "api": {
      "anuncio": "MLB7542917284",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-12T14:48-03:00",
+     "hora": "2026-11-12T16:48-03:00",
      "nivel": "MercadoLíder silver",
      "preco": 315.77,
      "vendedor": "SCAZU",
@@ -147825,7 +147834,7 @@
     "api": {
      "anuncio": "MLB6040727544",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-12T14:48-03:00",
+     "hora": "2026-11-12T16:48-03:00",
      "nivel": "MercadoLíder platinum",
      "preco": 49.59,
      "vendedor": "BOMCLIQ",
