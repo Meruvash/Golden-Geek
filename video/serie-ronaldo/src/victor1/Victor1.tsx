@@ -709,7 +709,7 @@ const EFEITOS: Efeito[] = [
 
 const TODOS = [...PLANOS, ...EXTRAS].sort((a, b) => a.t - b.t);
 
-export const Victor1: React.FC<{ mudo?: boolean }> = ({ mudo = false }) => {
+export const Victor1: React.FC<{ mudo?: boolean; semLegenda?: boolean }> = ({ mudo = false, semLegenda = false }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const s = frame / fps;
@@ -717,7 +717,7 @@ export const Victor1: React.FC<{ mudo?: boolean }> = ({ mudo = false }) => {
   TODOS.forEach((pl, i) => { if (s >= pl.t) k = i; });
   const pl = TODOS[k];
   const ls = s - pl.t;
-  const final = s >= I(36) - 0.15;
+  const final = semLegenda || s >= I(36) - 0.15;
   return (
     <AbsoluteFill style={{ backgroundColor: "#000", overflow: "hidden" }}>
       <FiltroCel id="cel" luz="#ffb37a" lado={-1} />

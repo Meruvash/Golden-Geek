@@ -33,6 +33,7 @@ export const RemotionRoot: React.FC = () => {
       <Still id="FichaRonaldo" component={FichaPersonagem} width={1080} height={1920} defaultProps={{ quem: "ronaldo" as const }} />
       <Composition id="VictorParte1" component={VictorParte1} width={1080} height={1080} fps={30} durationInFrames={Math.ceil(DUR_P1 * 30)} />
       <Composition id="VictorParte2" component={VictorParte2} width={1080} height={1080} fps={30} durationInFrames={Math.ceil(DUR_P2 * 30)} />
+      <Composition id="VictorTalaricornioLimpo" component={Victor1} defaultProps={{ mudo: true, semLegenda: true }} width={1080} height={1080} fps={30} durationInFrames={Math.ceil(FIM_VICTOR1 * 30)} />
       <Composition id="VictorTalaricornio" component={Victor1} width={1080} height={1080} fps={30} durationInFrames={Math.ceil(FIM_VICTOR1 * 30)} />
       <Composition id="AssaltoDoWanP1" component={Wan1} width={1080} height={1080} fps={30} durationInFrames={Math.ceil(FIM_WAN1 * 30)} />
       <Composition id="AssaltoDoWanVertical" component={Colt} width={1080} height={1920} fps={30} durationInFrames={Math.ceil(FIM_COLT * 30)} />
