@@ -102,7 +102,6 @@
   "dc-arena",
   "deep-sea-adventure-boost",
   "destemidos-reforcos",
-  "detetive",
   "dino-fun",
   "dixit",
   "dobble-catan",
@@ -196,10 +195,12 @@
   "uno-flex",
   "uno-flip",
   "uno-flip-attack",
+  "uno-spin",
   "war-game-of-thrones",
   "zenkai-adventure"
  ],
  "pendentes": {
-  "imperium-lendas": "2026-11-11T23:24+00:00"
+  "imperium-lendas": "2026-11-11T23:24+00:00",
+  "uno-spin": "2026-11-12T03:15+00:00"
  }
 }
