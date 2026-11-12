@@ -28,7 +28,12 @@ Pipeline com portões. Não pule portão: cada um espera a resposta do editor.
 ## 4. Vozes
 - `narracao/gerar_eleven.py` com `eleven_multilingual_v2` (sotaque brasileiro), conferência por transcrição; `NATURAL=1 python3 narracao/montar.py`.
 
-## 5. Produção e checagem
+## 5. Storyboard do GIF promocional (sempre, antes do render final)
+- Crie a versão limpa da composição (`<Id>Limpo`, com `semLegenda` e `mudo`) e o `ferramentas/teaser-<episodio>.json` com 12 a 16 momentos (nome, rótulo curto, segundo do episódio; marque com `"storyboard": true` os 12 da folha, em ordem).
+- Rode `node ferramentas/teaser.mjs ferramentas/teaser-<episodio>.json`: saem os quadros em `renders/teaser-<episodio>/` e a folha `storyboard-gif.jpg`.
+- Confira a folha, envie ao editor junto com 8 quadros soltos e um prompt pronto para o ChatGPT gerar o GIF (quadrado, em loop, 6 a 8 s, cortes rápidos, título e CTA no último quadro).
+
+## 6. Produção e checagem
 - Composição sem sufixo = 1080x1080. Painel de estado, legenda palavra por palavra, cartão "isso é real", tela de escolha, cartela com link.
 - Checagem: `huashu-art-motion` (`scripts/qa.py`, `storyboard_lint.py`), checklist da seção 9 do padrão, áudio −16 a −14 LUFS e pico ≤ −1 dBTP.
 - Entregue o MP4 e a legenda do Instagram num bloco de código copiável. Commit e push.

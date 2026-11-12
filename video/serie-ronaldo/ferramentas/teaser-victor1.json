@@ -1,0 +1,109 @@
+{
+ "composicao": "VictorTalaricornioLimpo",
+ "props": {
+  "mudo": true,
+  "semLegenda": true
+ },
+ "pasta": "renders/teaser-victor",
+ "titulo": "Victor e o Talaricórnio",
+ "subtitulo": "Storyboard do episódio · 12 quadros em ordem · animação 2D · série Elite Boardgamers",
+ "link": "eliteboardgamers.com.br/como-jogar/dragon-eclipse",
+ "quadros": [
+  {
+   "nome": "01-abertura",
+   "rotulo": "Abertura no eclipse",
+   "t": 1.6,
+   "storyboard": true
+  },
+  {
+   "nome": "02-piscadinha",
+   "rotulo": "A piscadinha",
+   "t": 5.09,
+   "storyboard": true
+  },
+  {
+   "nome": "03-titulo",
+   "rotulo": "Título",
+   "t": 7.84,
+   "storyboard": true
+  },
+  {
+   "nome": "04-victor-congelado",
+   "rotulo": "Victor, 112 anos",
+   "t": 10.04,
+   "storyboard": true
+  },
+  {
+   "nome": "05-comparacao-pao",
+   "rotulo": "Mais branco que pão",
+   "t": 24.9,
+   "storyboard": true
+  },
+  {
+   "nome": "06-lagrima-purpurina",
+   "rotulo": "Chorando purpurina",
+   "t": 44.79,
+   "storyboard": true
+  },
+  {
+   "nome": "07-lembranca-brasinha",
+   "rotulo": "Lembrança",
+   "t": 39.99,
+   "storyboard": false
+  },
+  {
+   "nome": "08-lukita-calculos",
+   "rotulo": "Cálculos do Lukita",
+   "t": 59.27,
+   "storyboard": false
+  },
+  {
+   "nome": "09-namorada-roubada",
+   "rotulo": "A namorada roubada",
+   "t": 76.5,
+   "storyboard": true
+  },
+  {
+   "nome": "10-vertigem",
+   "rotulo": "3 km de queda",
+   "t": 90.17,
+   "storyboard": false
+  },
+  {
+   "nome": "11-queda",
+   "rotulo": "A queda",
+   "t": 91.47,
+   "storyboard": true
+  },
+  {
+   "nome": "12-wan-segura-capa",
+   "rotulo": "Wan no resgate",
+   "t": 92.87,
+   "storyboard": true
+  },
+  {
+   "nome": "13-retete",
+   "rotulo": "O Reteté",
+   "t": 100.5,
+   "storyboard": true
+  },
+  {
+   "nome": "14-hexabola",
+   "rotulo": "A Hexabola",
+   "t": 111.38,
+   "storyboard": true
+  },
+  {
+   "nome": "15-apaixonado",
+   "rotulo": "Apaixonado",
+   "t": 113.73,
+   "storyboard": true
+  },
+  {
+   "nome": "16-escolha",
+   "rotulo": "A escolha",
+   "t": 128.16,
+   "storyboard": false
+  }
+ ]
+}

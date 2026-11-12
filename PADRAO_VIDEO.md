@@ -181,5 +181,6 @@ O editor reprovou "O Assalto do Wan" porque o roteiro só pegou o tema da refer�
 6. **Contrato das skills**: a tabela do roteiro diz qual skill responde por cada coisa (roteiro: `vox-director` + molde 4d; cenário: `claude-drawing`; movimento: `huashu-art-motion` seção 09; tipografia: `bang-motion`; checagem: `huashu-art-motion` QA). Skill instalada e não usada é falha do processo.
 7. **Teste de 10 s antes da produção**: os primeiros 10 s em 1080x1080, lado a lado com um quadro da referência no mesmo momento. O editor aprova o teste, depois vem o resto.
 8. **Formato quadrado 1080x1080 sempre** (seção 4).
+9. **Storyboard do GIF promocional em todo episódio, antes do render final** (pedido do editor, 12/11/2026): quadros de teaser sem legenda (1080x1080) e a folha `storyboard-gif.jpg` com 12 quadros numerados em ordem, título e link, mais o prompt para o ChatGPT gerar o GIF. Ferramenta: `node ferramentas/teaser.mjs ferramentas/teaser-<episodio>.json` (a composição precisa de uma versão `...Limpo` com `semLegenda`). Exemplo pronto: `ferramentas/teaser-victor1.json`.
 
 O passo a passo está na skill do projeto `/video-serie`.
