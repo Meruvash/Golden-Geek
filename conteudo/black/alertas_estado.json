@@ -97,6 +97,7 @@
   "citadels",
   "codigo-secreto-dueto",
   "color-addict",
+  "covenant",
   "cuco",
   "daybreak",
   "dc-arena",
@@ -112,6 +113,7 @@
   "elephant-rally",
   "exit-o-jogo-calendario-advento-a-estrela-de-hollywood-desaparecida",
   "exploding-kittens-bem-vs-mal",
+  "fabulinhas",
   "fantastic-factories-subterfuge",
   "fateflip-arrastado-pelo-mar",
   "fateflip-decretos-reais",
@@ -132,6 +134,7 @@
   "jogo-da-rima",
   "jolly-roger",
   "kemet-blood-and-sand-sand-worm",
+  "kokeshi",
   "lego-ninjago-destinys-bounty-adventures",
   "liars-uno",
   "little-secret",
@@ -174,17 +177,18 @@
   "super-banco-imobiliario-estrela-safra-pay",
   "super-cats",
   "super-trunfo-tubaroes",
+  "superstore-3000",
   "ta-na-mesa",
   "tacta",
   "take-time",
   "tapalavras",
   "the-game",
   "the-pillars-of-the-earth",
+  "time-stories-revolution-a-midsummer-night",
   "timeline-twist",
   "trava-letras",
   "triominos-junior",
   "trolls-princesas",
-  "twister-junior",
   "uestop",
   "uno-flex",
   "uno-flip",
@@ -192,5 +196,11 @@
   "uno-spin",
   "zenkai-adventure"
  ],
- "pendentes": {}
+ "pendentes": {
+  "covenant": "2026-11-12T19:48+00:00",
+  "fabulinhas": "2026-11-12T19:48+00:00",
+  "kokeshi": "2026-11-12T19:48+00:00",
+  "superstore-3000": "2026-11-12T19:48+00:00",
+  "time-stories-revolution-a-midsummer-night": "2026-11-12T19:48+00:00"
+ }
 }

@@ -154,7 +154,7 @@
    "descanso_ate": "2026-11-11T09:45+00:00",
    "dia": "2026-11-12",
    "motivo": "robots.txt respondeu 403",
-   "paginas": 20
+   "paginas": 23
   },
   "www.capivarajogos.com.br": {
    "dia": "2026-11-12",
@@ -294,7 +294,7 @@
   },
   "www.promobit.com.br": {
    "dia": "2026-11-12",
-   "paginas": 70
+   "paginas": 80
   },
   "www.reunionjogos.com.br": {
    "dia": "2026-11-12",
@@ -478,12 +478,6 @@
    "hora": "2026-11-12T14:21+00:00",
    "preco": 29.9
   },
-  "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-galaxy-trucker-segunda-edicao-p": {
-   "cj": 199.02,
-   "estoque": true,
-   "hora": "2026-11-10T18:20+00:00",
-   "preco": 214.0
-  },
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-grauso-p": {
    "cj": 37.19,
    "estoque": true,
@@ -579,12 +573,6 @@
    "estoque": true,
    "hora": "2026-11-11T20:45+00:00",
    "preco": 99.9
-  },
-  "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-timeline-twist-p": {
-   "cj": 37.19,
-   "estoque": true,
-   "hora": "2026-11-10T19:34+00:00",
-   "preco": 39.99
   },
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-uestop-turma-da-monica-p": {
    "cj": 18.51,
@@ -1276,10 +1264,16 @@
    "hora": "2026-11-12T04:23+00:00",
    "preco": 288.99
   },
+  "https://www.cangaiajogos.com.br/emblems": {
+   "cj": 111.59,
+   "estoque": true,
+   "hora": "2026-11-12T19:47+00:00",
+   "preco": 119.99
+  },
   "https://www.cangaiajogos.com.br/jogos/jogos-para-a-familia/piles-pre-venda": {
    "cj": 87.41,
    "estoque": true,
-   "hora": "2026-11-12T04:28+00:00",
+   "hora": "2026-11-12T19:47+00:00",
    "preco": 93.99
   },
   "https://www.cangaiajogos.com.br/jogos/jogos-para-a-familia/quest": {
@@ -1291,7 +1285,7 @@
   "https://www.cangaiajogos.com.br/little-secret": {
    "cj": 55.79,
    "estoque": true,
-   "hora": "2026-11-12T06:54+00:00",
+   "hora": "2026-11-12T19:47+00:00",
    "preco": 59.99
   },
   "https://www.cangaiajogos.com.br/qual-e-o-seu-meme": {
@@ -2103,12 +2097,6 @@
    "estoque": true,
    "hora": "2026-11-12T16:59+00:00",
    "preco": 48.9
-  },
-  "https://www.playeasy.com.br/imperium-horizontes": {
-   "cj": 277.88,
-   "estoque": true,
-   "hora": "2026-11-10T17:20+00:00",
-   "preco": 298.8
   },
   "https://www.playeasy.com.br/patchwork": {
    "cj": 92.91,
