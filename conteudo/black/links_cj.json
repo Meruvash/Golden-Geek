@@ -6,7 +6,7 @@
   "tocadotabuleiro": "https://www.tocadotabuleiro.com/produto/the-witcher-rpg-o-diario-do-bruxo-suplemento-de-regras-para-witcher-rpg-2349"
  },
  "abroad": {
-  "_hora": "2026-11-12T19:17-03:00",
+  "_hora": "2026-11-13T19:27-03:00",
   "alquimistasdosjogos": "https://www.alquimistasdosjogos.com.br/jogos/abroad",
   "ludostation": "https://ludostation.com.br/produtos/abroad-1ofzs/?entry_path=category",
   "mecadosjogos": "https://www.mecadosjogos.com.br/abroad-p1221",
@@ -22,9 +22,9 @@
   "mecadosjogos": "https://www.mecadosjogos.com.br/algae-inc-p890"
  },
  "alien-attack-usa": {
-  "_hora": "2026-11-06T22:56-03:00",
-  "boardgamebarato": "https://www.boardgamebarato.com.br/alien-attack-usa",
+  "_hora": "2026-11-13T19:27-03:00",
   "caixinhaboardgames": "https://www.caixinhaboardgames.com.br/produtos/alien-attack-usa/?entry_path=category",
+  "leaolivros": "https://www.leaolivros.com.br/alien-attack-usa",
   "masmorra": "https://www.masmorra.com.br/produtos/mbr0185",
   "mecadosjogos": "https://www.mecadosjogos.com.br/alien-attack-usa-meeplebr-jogos-de-tabuleiro-pt-br-p1038",
   "placegames": "https://www.placegames.com.br/boardgames/alien-attack-usa",
@@ -318,6 +318,11 @@
   "piranoboardgame": "https://piranoboardgame.com.br/jogo/caveiras-de-sedlec",
   "placegames": "https://www.placegames.com.br/caveiras-de-sedlec"
  },
+ "chaparral": {
+  "_hora": "2026-11-13T19:27-03:00",
+  "brecholudico": "https://brecholudico.com.br/produto/chaparral/",
+  "omniverse": "https://www.omniverse.com.br/chaparral"
+ },
  "chu-han": {
   "_hora": "2026-11-09T23:43-03:00",
   "alquimistasdosjogos": "https://www.alquimistasdosjogos.com.br/jogos/chu-han",
@@ -355,7 +360,7 @@
   "tabuloja": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/codigo-secreto-imagens"
  },
  "coffee-rush-inverno": {
-  "_hora": "2026-11-12T19:17-03:00",
+  "_hora": "2026-11-13T19:27-03:00",
   "alquimistasdosjogos": "https://www.alquimistasdosjogos.com.br/jogos/coffee-rush-inverno",
   "amazon": "https://www.amazon.com.br/dp/B0HMJYQZTR",
   "ludostation": "https://ludostation.com.br/produtos/coffee-rush-winter-galapagos/?entry_path=category",
@@ -780,6 +785,10 @@
   "paladinsgames": "http://paladinsgames.com.br/produto/2217513/jekkyl-vs-hyde",
   "piranoboardgame": "https://piranoboardgame.com.br/jogo/jekyll-vs-hyde"
  },
+ "jester": {
+  "_hora": "2026-11-13T19:27-03:00",
+  "amazon": "https://www.amazon.com.br/dp/B09BD8YT7Z"
+ },
  "jolly-roger": {
   "_hora": "2026-11-09T14:46-03:00",
   "odisseiajogos": "https://www.odisseiajogos.com.br/board-games/jolly-roger",
@@ -954,6 +963,14 @@
   "omniverse": "https://www.omniverse.com.br/mwat",
   "piranoboardgame": "https://piranoboardgame.com.br/jogo/m-w-a-t",
   "spaceboardgames": "https://www.spaceboardgames.com.br/jogos-de-tabuleiro/m-w-a-t"
+ },
+ "my-little-scythe": {
+  "_hora": "2026-11-13T19:27-03:00",
+  "amazon": "https://www.amazon.com.br/dp/B08KHR2MQN",
+  "mercadolivre": "https://www.mercadolivre.com.br/p/MLB32639293",
+  "playeasy": "https://www.playeasy.com.br/my-little-scythe",
+  "tabuloja": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/my-little-scythe",
+  "tubaleria": "https://tubaleria.store/produtos/my-little-scythe/?entry_path=category"
  },
  "nao-pode-nostalgia-80-e-90": {
   "_hora": "2026-11-09T18:30-03:00",
@@ -1398,6 +1415,14 @@
   "masmorra": "https://www.masmorra.com.br/produtos/vmwpd3e6t",
   "nerdev": "https://www.nerdev.com.br/produtos/te-toka-tiki-tiki-cpuax/?entry_path=category",
   "piranoboardgame": "https://piranoboardgame.com.br/jogo/te-toka-tiki-tiki"
+ },
+ "terra-mystica-big-box": {
+  "_hora": "2026-11-13T19:27-03:00",
+  "amazon": "https://www.amazon.com.br/dp/B0F2TL3R4S",
+  "leaolivros": "https://www.leaolivros.com.br/terra-mystica-big-box",
+  "mercadolivre": "https://www.mercadolivre.com.br/p/MLB45477432",
+  "playeasy": "https://www.playeasy.com.br/board-games/terra-mystica-big-box-faccoes-de-fas",
+  "tubaleria": "https://tubaleria.store/produtos/terra-mystica-big-box/?entry_path=category"
  },
  "terra-mystica-faccoes-de-fas": {
   "_hora": "2026-11-11T18:02-03:00",
