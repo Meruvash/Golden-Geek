@@ -10,7 +10,7 @@
   },
   "bravojogos.com.br": {
    "dia": "2026-11-13",
-   "paginas": 37
+   "paginas": 40
   },
   "brecholudico.com.br": {
    "dia": "2026-11-13",
@@ -92,7 +92,7 @@
   },
   "tubaleria.store": {
    "dia": "2026-11-13",
-   "paginas": 4
+   "paginas": 5
   },
   "vempramesajogos.commercesuite.com.br": {
    "descanso_ate": "2026-11-11T09:43+00:00",
@@ -154,7 +154,7 @@
    "descanso_ate": "2026-11-11T09:45+00:00",
    "dia": "2026-11-13",
    "motivo": "robots.txt respondeu 403",
-   "paginas": 0
+   "paginas": 10
   },
   "www.capivarajogos.com.br": {
    "dia": "2026-11-13",
@@ -294,7 +294,7 @@
   },
   "www.promobit.com.br": {
    "dia": "2026-11-13",
-   "paginas": 30
+   "paginas": 40
   },
   "www.reunionjogos.com.br": {
    "dia": "2026-11-13",
@@ -322,7 +322,7 @@
    "descanso_ate": "2026-11-11T09:38+00:00",
    "dia": "2026-11-13",
    "motivo": "robots.txt respondeu 403",
-   "paginas": 42
+   "paginas": 43
   },
   "www.tavernareal.com": {
    "descanso_ate": "2026-11-11T09:49+00:00",
@@ -355,7 +355,7 @@
   "https://bravojogos.com.br/black-bravo/jogo-3-capitulos": {
    "cj": 46.49,
    "estoque": true,
-   "hora": "2026-11-11T23:22+00:00",
+   "hora": "2026-11-13T08:26+00:00",
    "preco": 49.99
   },
   "https://bravojogos.com.br/black-bravo/jogo-galaxy-trucker-segunda-edicao": {
@@ -469,7 +469,7 @@
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-fateflip-arrastado-pelo-mar-p": {
    "cj": 46.49,
    "estoque": true,
-   "hora": "2026-11-11T18:22+00:00",
+   "hora": "2026-11-13T08:26+00:00",
    "preco": 49.99
   },
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-fateflip-decretos-reais-p": {
@@ -511,7 +511,7 @@
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-kokeshi-p": {
    "cj": 92.91,
    "estoque": true,
-   "hora": "2026-11-12T11:55+00:00",
+   "hora": "2026-11-13T08:26+00:00",
    "preco": 99.9
   },
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-o-laboratorio-de-dexter-a-grande-invencao-p": {
@@ -679,7 +679,7 @@
   "https://tubaleria.store/produtos/airport-rush/": {
    "cj": 125.34,
    "estoque": true,
-   "hora": "2026-11-12T04:21+00:00",
+   "hora": "2026-11-13T08:26+00:00",
    "preco": 130.56
   },
   "https://tubaleria.store/produtos/airport-rush/?entry_path=category": {
@@ -1189,7 +1189,7 @@
   "https://www.cangaiajogos.com.br/3-capitulos": {
    "cj": 48.35,
    "estoque": true,
-   "hora": "2026-11-12T16:56+00:00",
+   "hora": "2026-11-13T08:26+00:00",
    "preco": 51.99
   },
   "https://www.cangaiajogos.com.br/daybreak": {
@@ -1201,37 +1201,37 @@
   "https://www.cangaiajogos.com.br/emblems": {
    "cj": 111.59,
    "estoque": true,
-   "hora": "2026-11-12T19:47+00:00",
+   "hora": "2026-11-13T08:26+00:00",
    "preco": 119.99
   },
   "https://www.cangaiajogos.com.br/jogos/jogos-para-a-familia/piles-pre-venda": {
    "cj": 87.41,
    "estoque": true,
-   "hora": "2026-11-12T19:47+00:00",
+   "hora": "2026-11-13T08:26+00:00",
    "preco": 93.99
   },
   "https://www.cangaiajogos.com.br/jogos/jogos-para-a-familia/quest": {
    "cj": 74.39,
    "estoque": true,
-   "hora": "2026-11-12T17:01+00:00",
+   "hora": "2026-11-13T08:26+00:00",
    "preco": 79.99
   },
   "https://www.cangaiajogos.com.br/little-secret": {
    "cj": 55.79,
    "estoque": true,
-   "hora": "2026-11-12T19:47+00:00",
+   "hora": "2026-11-13T08:26+00:00",
    "preco": 59.99
   },
   "https://www.cangaiajogos.com.br/qual-e-o-seu-meme": {
    "cj": 106.94,
    "estoque": true,
-   "hora": "2026-11-12T17:01+00:00",
+   "hora": "2026-11-13T08:26+00:00",
    "preco": 114.99
   },
   "https://www.cangaiajogos.com.br/take-time": {
    "cj": 106.94,
    "estoque": true,
-   "hora": "2026-11-12T17:02+00:00",
+   "hora": "2026-11-13T08:26+00:00",
    "preco": 114.99
   },
   "https://www.cangaiajogos.com.br/trolls-e-princesas": {
