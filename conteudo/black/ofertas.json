@@ -174948,6 +174948,15 @@
     "vendedor": null
    },
    {
+    "api": {
+     "anuncio": "MLB6086723130",
+     "fonte": "API do Mercado Livre",
+     "hora": "2026-11-13T07:58-03:00",
+     "nivel": "MercadoLíder gold",
+     "preco": 112.0,
+     "vendedor": "DAZOU",
+     "vendedor_ok": true
+    },
     "atualizado": "2026-11-13T07:31:57.689+00:00",
     "de": 134.9,
     "loja": "Mercado Livre",
