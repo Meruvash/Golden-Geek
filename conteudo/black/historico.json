@@ -32112,6 +32112,23 @@
   "principal": true,
   "tipo": "game"
  },
+ "cidade-castor": {
+  "ano": 2025,
+  "bgg": 7.35835,
+  "bgg_id": 436561,
+  "editora": "Alley Cat Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/0143469d584c3a980f10042bb2010f59d64a934d.jpg",
+  "nome": "Cidade Castor",
+  "pontos": {
+   "2026-11-10": 189.89,
+   "2026-11-11": 189.89,
+   "2026-11-12": 189.89,
+   "2026-11-13": 189.89
+  },
+  "principal": true,
+  "tipo": "game"
+ },
  "cidade-dorme": {
   "ano": 2024,
   "bgg": 7,
@@ -32283,7 +32300,7 @@
    "2026-11-10": 28.99,
    "2026-11-11": 30.21,
    "2026-11-12": 30.21,
-   "2026-11-13": 30.21
+   "2026-11-13": 25.35
   },
   "principal": false,
   "tipo": "game"
@@ -49115,6 +49132,18 @@
   "principal": true,
   "tipo": "game"
  },
+ "dragon-ball-super-card-game": {
+  "ano": 2017,
+  "bgg": 7.34752,
+  "bgg_id": 230553,
+  "editora": "Bandai",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/0b0168eeec4cd6d57e7a05f9c2dffd3b08c3005b.png",
+  "nome": "Dragon Ball Super Card Game",
+  "pontos": {},
+  "principal": true,
+  "tipo": "game"
+ },
  "dragon-ball-super-card-game-the-ultimate-life-form-expert-deck-xd03": {
   "ano": 2017,
   "bgg": 7.34752,
@@ -54201,7 +54230,7 @@
    "2026-11-10": 107.91,
    "2026-11-11": 107.91,
    "2026-11-12": 107.91,
-   "2026-11-13": 107.99
+   "2026-11-13": 107.91
   },
   "principal": false,
   "tipo": "game"
@@ -73122,6 +73151,18 @@
   },
   "principal": true,
   "tipo": "game"
+ },
+ "guildmasters-guide-to-ravnica": {
+  "ano": 2018,
+  "bgg": 7.7625,
+  "bgg_id": 256970,
+  "editora": null,
+  "editora_br": null,
+  "imagem": "https://uploads.comparajogos.com.br/img/17324bac3f0039d12103d25eccd03dfb3b3196fd.jpg",
+  "nome": "Guildmasters' Guide to Ravnica",
+  "pontos": {},
+  "principal": true,
+  "tipo": "rpg"
  },
  "guildmasters039-guide-to-ravnica": {
   "ano": 2018,
@@ -124892,6 +124933,66 @@
   "principal": true,
   "tipo": "game"
  },
+ "power-rangers-heroes-of-the-grid-arsenal-pack": {
+  "ano": 2024,
+  "bgg": 8.95455,
+  "bgg_id": 416106,
+  "editora": "Renegade Game Studios",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/2482c87e1bfc562ce0201aed5460d29ee3908524.png",
+  "nome": "Power Rangers: Heroes of the Grid – Arsenal Pack",
+  "pontos": {},
+  "principal": true,
+  "tipo": "expansion"
+ },
+ "power-rangers-heroes-of-the-grid-mega-goldar-deluxe-figure": {
+  "ano": 2020,
+  "bgg": 8.11086,
+  "bgg_id": 300215,
+  "editora": "Renegade Game Studios",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/d0cf3d54063c9505434299cef80c911c4f211bb1.png",
+  "nome": "Power Rangers: Heroes of the Grid – Mega Goldar Deluxe Figure",
+  "pontos": {},
+  "principal": true,
+  "tipo": "expansion"
+ },
+ "power-rangers-heroes-of-the-grid-merciless-minions-pack-2": {
+  "ano": 2023,
+  "bgg": 9.24375,
+  "bgg_id": 391798,
+  "editora": "Renegade Game Studios",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/09a6c03f1c74294a946b6e4b33ef440ee3d8f83b.png",
+  "nome": "Power Rangers: Heroes of the Grid – Merciless Minions Pack 2",
+  "pontos": {},
+  "principal": true,
+  "tipo": "expansion"
+ },
+ "power-rangers-heroes-of-the-grid-rise-of-the-psycho-rangers": {
+  "ano": 2020,
+  "bgg": 8.73559,
+  "bgg_id": 309869,
+  "editora": "Renegade Game Studios",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/e649ccb796b4a4f37d3cf423bb575d0c30921fe5.png",
+  "nome": "Power Rangers: Heroes of the Grid – Rise of the Psycho Rangers",
+  "pontos": {},
+  "principal": true,
+  "tipo": "expansion"
+ },
+ "power-rangers-heroes-of-the-grid-time-force-ranger-pack": {
+  "ano": 2022,
+  "bgg": 8.48214,
+  "bgg_id": 352628,
+  "editora": "Renegade Game Studios",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/a6e09394541f5a2df85ee83e38570c09cb373927.png",
+  "nome": "Power Rangers: Heroes of the Grid – Time Force Ranger Pack",
+  "pontos": {},
+  "principal": true,
+  "tipo": "expansion"
+ },
  "praga-caput-regni": {
   "ano": 2021,
   "bgg": 7.85348,
@@ -130985,10 +131086,10 @@
    "2026-11-03": 62.31,
    "2026-11-04": 62.31,
    "2026-11-05": 62.31,
-   "2026-11-06": 64.27,
-   "2026-11-07": 64.27,
-   "2026-11-08": 64.27,
-   "2026-11-09": 64.27,
+   "2026-11-06": 62.31,
+   "2026-11-07": 62.31,
+   "2026-11-08": 62.31,
+   "2026-11-09": 62.31,
    "2026-11-10": 59.31,
    "2026-11-11": 59.31,
    "2026-11-12": 59.31,
@@ -142154,6 +142255,18 @@
   "principal": true,
   "tipo": "game"
  },
+ "side-effects": {
+  "ano": 2017,
+  "bgg": 6.70602,
+  "bgg_id": 230765,
+  "editora": "Pillbox Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/31b3a771dd26560fd1be03ef10ab6427f1db0a22.jpg",
+  "nome": "Side Effects",
+  "pontos": {},
+  "principal": false,
+  "tipo": "game"
+ },
  "side-effects-booster-shot": {
   "ano": 2023,
   "bgg": 7.62329,
@@ -145056,6 +145169,18 @@
   "editora_br": false,
   "imagem": "https://uploads.comparajogos.com.br/img/4c0cff3c06cacca9436490065b9a084474fce5d3.png",
   "nome": "Sly3",
+  "pontos": {},
+  "principal": true,
+  "tipo": "game"
+ },
+ "small-city-deluxe-edition": {
+  "ano": 2023,
+  "bgg": 7.31808,
+  "bgg_id": 326538,
+  "editora": "AVStudioGames",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/71ae96f5ea03610850ba02fdeecca7b6e681da1f.jpg",
+  "nome": "Small City: Deluxe Edition",
   "pontos": {},
   "principal": true,
   "tipo": "game"
@@ -158547,6 +158672,18 @@
   "pontos": {},
   "principal": true,
   "tipo": "game"
+ },
+ "tenpenny-parks-innovation-expansion": {
+  "ano": 2026,
+  "bgg": 8.23077,
+  "bgg_id": 450787,
+  "editora": "Thunderworks Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/6ca83bf2a9da2d07e62894232b5beda853e20ae4.png",
+  "nome": "Tenpenny Parks: Innovation Expansion",
+  "pontos": {},
+  "principal": true,
+  "tipo": "expansion"
  },
  "tenzi": {
   "ano": 2015,

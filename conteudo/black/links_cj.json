@@ -284,6 +284,14 @@
   "riodemeepeiroboardgames": "https://www.riodemeepeiro.com.br/produtos/cascadia-monumentos-naturais/?entry_path=category",
   "spaceboardgames": "https://www.spaceboardgames.com.br/jogos-de-tabuleiro/cascadia-monumentos-naturais"
  },
+ "cat-lady": {
+  "_hora": "2026-11-13T12:47-03:00",
+  "amazon": "https://www.amazon.com.br/dp/B0DR3K5D98",
+  "ludostation": "https://ludostation.com.br/produtos/cat-lady-15vmq/?entry_path=category",
+  "masmorra": "https://www.masmorra.com.br/produtos/con11826",
+  "mercadolivre": "https://www.mercadolivre.com.br/p/MLB44812211",
+  "tavernareal": "https://www.tavernareal.com/tabuleiro/cat-lady"
+ },
  "cat-lounge": {
   "_hora": "2026-11-10T10:39-03:00",
   "ludostation": "https://ludostation.com.br/produtos/cat-lounge-tusho/?entry_path=category",
@@ -320,11 +328,15 @@
   "tavernareal": "https://www.tavernareal.com/tabuleiro/chu-han"
  },
  "civolution": {
-  "_hora": "2026-11-07T13:57-03:00",
+  "_hora": "2026-11-13T12:47-03:00",
   "amazon": "https://www.amazon.com.br/dp/B0DJQSKMGK",
-  "brecholudico": "https://brecholudico.com.br/produto/civolution/",
-  "piranoboardgame": "https://piranoboardgame.com.br/jogo/civolution",
-  "spaceboardgames": "https://www.spaceboardgames.com.br/jogos-de-tabuleiro/civolution"
+  "caixinhaboardgames": "https://www.caixinhaboardgames.com.br/produtos/civolution/?entry_path=category",
+  "masmorra": "https://www.masmorra.com.br/produtos/civ200825por",
+  "piranoboardgame": "https://piranoboardgame.com.br/jogo/civolution"
+ },
+ "clash-of-cultures-edicao-monumental": {
+  "_hora": "2026-11-13T12:47-03:00",
+  "mercadolivre": "https://www.mercadolivre.com.br/p/MLB20669836"
  },
  "codigo-secreto-dueto": {
   "_hora": "2026-11-05T08:24-03:00",
@@ -353,6 +365,9 @@
  },
  "colt-express": {
   "_hora": "2026-11-11T15:23-03:00"
+ },
+ "convidados-indesejados": {
+  "_hora": "2026-11-13T12:47-03:00"
  },
  "coup-2a-edicao": {
   "_hora": "2026-11-10T10:09-03:00",
@@ -478,8 +493,8 @@
   "spaceboardgames": "https://www.spaceboardgames.com.br/jogos-de-tabuleiro/dorfromantik-the-duel"
  },
  "draftosaurus": {
-  "_hora": "2026-11-09T16:16-03:00",
-  "meeplebr": "https://www.lojameeplebrjogos.com.br/draftosaurus"
+  "_hora": "2026-11-13T12:48-03:00",
+  "playeasy": "https://www.playeasy.com.br/draftosaurus"
  },
  "dragon-eclipse": {
   "_hora": "2026-11-05T20:47-03:00",
@@ -489,6 +504,14 @@
   "livtoys": "https://www.livtoys.com.br/boardgames/dragon-eclipse-pre-venda",
   "mecadosjogos": "https://www.mecadosjogos.com.br/dragon-eclipse-p1149",
   "orcspace": "https://loja.orcspace.com.br/produtos/dragon-eclipse-kd9fh/?entry_path=category"
+ },
+ "elephant-rally": {
+  "_hora": "2026-11-13T12:48-03:00",
+  "amazon": "https://www.amazon.com.br/dp/B0DD49QMRK",
+  "masmorra": "https://www.masmorra.com.br/produtos/con11824",
+  "mercadolivre": "https://www.mercadolivre.com.br/p/MLB39360188",
+  "tabuloja": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/elephant-rally",
+  "tavernareal": "https://www.tavernareal.com/tabuleiro/elephant-rally"
  },
  "emblems": {
   "_hora": "2026-11-09T14:46-03:00",
@@ -820,12 +843,12 @@
   "amazon": "https://www.amazon.com.br/dp/B00N9HQF0A"
  },
  "magical-athlete": {
-  "_hora": "2026-11-08T20:50-03:00",
-  "alquimistasdosjogos": "https://www.alquimistasdosjogos.com.br/jogos/magical-athlete",
+  "_hora": "2026-11-13T12:48-03:00",
   "boardgamebarato": "https://www.boardgamebarato.com.br/magical-athlete",
-  "brecholudico": "https://brecholudico.com.br/produto/magical-athlete/",
+  "facilshopping": "https://www.facilshopping.com.br/produtos/jogo-magical-athlete-asmodee-galapagos-h9qhv/?entry_path=category",
+  "livtoys": "https://www.livtoys.com.br/promocao/magical-athlete-envio-imediato",
   "ludostation": "https://ludostation.com.br/produtos/magical_athlete/?entry_path=category",
-  "masmorra": "https://www.masmorra.com.br/produtos/mga001",
+  "tabulerio": "https://www.tabulerio.com.br/jogos/jogos-de-tabuleiro/magical-athlete",
   "tabuloja": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/magical-athlete"
  },
  "manopla-do-infinito-um-jogo-love-letter": {
@@ -1042,10 +1065,10 @@
   "tavernareal": "https://www.tavernareal.com/tabuleiro/laboratorio-de-dexter-um-jogo-piratas"
  },
  "prey-another-day": {
-  "_hora": "2026-11-06T11:39-03:00",
+  "_hora": "2026-11-13T12:48-03:00",
+  "alquimistasdosjogos": "https://www.alquimistasdosjogos.com.br/jogos/prey-another-day",
   "amazon": "https://www.amazon.com.br/dp/B0DYLKBVCD",
   "cangaiajogos": "https://www.cangaiajogos.com.br/todos-os-jogos/jogos-para-familia/prey-another-day",
-  "facilshopping": "https://www.facilshopping.com.br/produtos/prey-another-day-galapagos/?entry_path=category",
   "mecadosjogos": "https://www.mecadosjogos.com.br/prey-another-day-p737",
   "paladinsgames": "http://paladinsgames.com.br/produto/1961389/prey-another-day",
   "playeasy": "https://www.playeasy.com.br/prey-another-day"
@@ -1479,6 +1502,15 @@
   "leaolivros": "https://www.leaolivros.com.br/walk-the-plank-deluxe-edition",
   "mercadolivre": "https://www.mercadolivre.com.br/p/MLB22744375"
  },
+ "wandinha-ataque-do-hyde": {
+  "_hora": "2026-11-13T12:48-03:00",
+  "alquimistasdosjogos": "https://www.alquimistasdosjogos.com.br/jogos/wandinha-ataque-do-hyde",
+  "bravojogos": "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-wandinha-ataque-do-hyde-p",
+  "javalijogos": "https://www.javalijogos.com.br/wandinha-ataque-do-hyde",
+  "livtoys": "https://www.livtoys.com.br/boardgames/wandinha-ataque-do-hyde",
+  "masmorra": "https://www.masmorra.com.br/produtos/wnd001",
+  "pittasboardgames": "https://www.pittasboardgames.com.br/produtos/wandinha-ataque-do-hyde-aberto/?entry_path=category"
+ },
  "wingspan-asia": {
   "_hora": "2026-11-09T16:30-03:00",
   "alquimistasdosjogos": "https://www.alquimistasdosjogos.com.br/jogos/wingspan-asia",
@@ -1505,12 +1537,21 @@
   "mercadolivre": "https://www.mercadolivre.com.br/p/MLB61235888",
   "pittasboardgames": "https://www.pittasboardgames.com.br/produtos/wonderlands-war-fragmentos-de-loucura/"
  },
+ "wroth": {
+  "_hora": "2026-11-13T12:48-03:00",
+  "alquimistasdosjogos": "https://www.alquimistasdosjogos.com.br/jogos/wroth",
+  "boardgamebarato": "https://www.boardgamebarato.com.br/wroth",
+  "ludostation": "https://ludostation.com.br/produtos/wroth-jjsqp/?entry_path=category",
+  "masmorra": "https://www.masmorra.com.br/produtos/wrt001",
+  "playeasy": "https://www.playeasy.com.br/wroth",
+  "tabuloja": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/wroth"
+ },
  "wyrmspan": {
   "_hora": "2026-11-07T01:23-03:00",
   "brecholudico": "https://brecholudico.com.br/produto/wyrmspan/",
   "spaceboardgames": "https://www.spaceboardgames.com.br/jogos-de-tabuleiro/wyrmspan"
  },
  "zombicide": {
-  "_hora": "2026-11-12T11:22-03:00"
+  "_hora": "2026-11-13T12:48-03:00"
  }
 }
