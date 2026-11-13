@@ -37,7 +37,6 @@
   "5-minute-one-piece",
   "5-score",
   "50-animais-marinhos",
-  "50-bichos-de-estimacao",
   "50-caes",
   "50-filhotes",
   "a-iniciativa",
@@ -77,6 +76,7 @@
   "dungeons-of-kards",
   "elephant-rally",
   "exploding-kittens-bem-vs-mal",
+  "fabulinhas",
   "fantastic-factories-subterfuge",
   "fateflip-arrastado-pelo-mar",
   "fateflip-decretos-reais",
@@ -146,6 +146,7 @@
   "tapalavras",
   "the-game",
   "the-pillars-of-the-earth",
+  "time-stories-revolution-a-midsummer-night",
   "timeline-twist",
   "trava-letras",
   "triominos-junior",
@@ -155,12 +156,16 @@
   "uno-flip",
   "uno-flip-attack",
   "uno-spin",
-  "zenkai-adventure"
+  "zenkai-adventure",
+  "zombicide-gear-up"
  ],
  "pendentes": {
+  "fabulinhas": "2026-11-13T10:53+00:00",
   "kemet-blood-and-sand-sacred-bull": "2026-11-13T06:09+00:00",
   "kokeshi": "2026-11-13T08:28+00:00",
   "reload-rumble": "2026-11-13T06:09+00:00",
-  "skip-bo": "2026-11-13T06:09+00:00"
+  "skip-bo": "2026-11-13T06:09+00:00",
+  "time-stories-revolution-a-midsummer-night": "2026-11-13T10:53+00:00",
+  "zombicide-gear-up": "2026-11-13T10:53+00:00"
  }
 }

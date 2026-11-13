@@ -10,7 +10,7 @@
   },
   "bravojogos.com.br": {
    "dia": "2026-11-13",
-   "paginas": 40
+   "paginas": 45
   },
   "brecholudico.com.br": {
    "dia": "2026-11-13",
@@ -24,7 +24,7 @@
   },
   "interludi.com.br": {
    "dia": "2026-11-13",
-   "paginas": 3
+   "paginas": 4
   },
   "itabuleiros.lojaintegrada.com.br": {
    "dia": "2026-11-13",
@@ -68,7 +68,7 @@
    "descanso_ate": "2026-11-05T22:05+00:00",
    "dia": "2026-11-13",
    "motivo": "robots.txt respondeu 429",
-   "paginas": 6
+   "paginas": 7
   },
   "modoaviaobg.com.br": {
    "dia": "2026-11-13",
@@ -116,7 +116,7 @@
   },
   "www.boardgameplaystore.com.br": {
    "dia": "2026-11-13",
-   "paginas": 3
+   "paginas": 5
   },
   "www.boargames.com.br": {
    "descanso_ate": "2026-11-11T09:44+00:00",
@@ -280,13 +280,13 @@
    "descanso_ate": "2026-11-11T09:48+00:00",
    "dia": "2026-11-13",
    "motivo": "robots.txt respondeu 403",
-   "paginas": 46
+   "paginas": 49
   },
   "www.playeasy.com.br": {
    "descanso_ate": "2026-11-11T09:48+00:00",
    "dia": "2026-11-13",
    "motivo": "robots.txt respondeu 403",
-   "paginas": 21
+   "paginas": 22
   },
   "www.pousocultural.com.br": {
    "dia": "2026-11-13",
@@ -294,7 +294,7 @@
   },
   "www.promobit.com.br": {
    "dia": "2026-11-13",
-   "paginas": 40
+   "paginas": 50
   },
   "www.reunionjogos.com.br": {
    "dia": "2026-11-13",
@@ -322,7 +322,7 @@
    "descanso_ate": "2026-11-11T09:38+00:00",
    "dia": "2026-11-13",
    "motivo": "robots.txt respondeu 403",
-   "paginas": 43
+   "paginas": 47
   },
   "www.tavernareal.com": {
    "descanso_ate": "2026-11-11T09:49+00:00",
@@ -427,7 +427,7 @@
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/fabulinhas-p": {
    "cj": 65.01,
    "estoque": true,
-   "hora": "2026-11-12T14:21+00:00",
+   "hora": "2026-11-13T10:51+00:00",
    "preco": 69.9
   },
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/imperium-classics-p": {
@@ -475,7 +475,7 @@
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-fateflip-decretos-reais-p": {
    "cj": 46.49,
    "estoque": true,
-   "hora": "2026-11-12T16:59+00:00",
+   "hora": "2026-11-13T10:51+00:00",
    "preco": 49.99
   },
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-fibonachos-p": {
@@ -565,7 +565,7 @@
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-time-stories-revolution-a-midsummer-night-p": {
    "cj": 92.91,
    "estoque": true,
-   "hora": "2026-11-11T20:45+00:00",
+   "hora": "2026-11-13T10:52+00:00",
    "preco": 99.9
   },
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-time-stories-revolution-the-hadal-project-p": {
@@ -655,7 +655,7 @@
   "https://ludostation.com.br/produtos/galaxy-trucker-seunda-edicao-uch00/?entry_path=category": {
    "cj": 206.99,
    "estoque": true,
-   "hora": "2026-11-12T22:16+00:00",
+   "hora": "2026-11-13T10:52+00:00",
    "preco": 229.99
   },
   "https://ludostation.com.br/produtos/historias-reais-true-stories-kids-12g9o/?entry_path=category": {
@@ -2059,7 +2059,7 @@
   "https://www.playeasy.com.br/the-fox-experiment": {
    "cj": 158.01,
    "estoque": true,
-   "hora": "2026-11-12T22:16+00:00",
+   "hora": "2026-11-13T10:52+00:00",
    "preco": 169.9
   },
   "https://www.spaceboardgames.com.br/jogos-de-tabuleiro/funocracy": {
