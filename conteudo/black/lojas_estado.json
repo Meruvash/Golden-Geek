@@ -10,7 +10,7 @@
   },
   "bravojogos.com.br": {
    "dia": "2026-11-13",
-   "paginas": 50
+   "paginas": 55
   },
   "brecholudico.com.br": {
    "dia": "2026-11-13",
@@ -68,7 +68,7 @@
    "descanso_ate": "2026-11-05T22:05+00:00",
    "dia": "2026-11-13",
    "motivo": "robots.txt respondeu 429",
-   "paginas": 10
+   "paginas": 11
   },
   "modoaviaobg.com.br": {
    "dia": "2026-11-13",
@@ -104,7 +104,7 @@
    "descanso_ate": "2026-11-11T09:43+00:00",
    "dia": "2026-11-13",
    "motivo": "robots.txt respondeu 403",
-   "paginas": 25
+   "paginas": 26
   },
   "www.animusludere.com.br": {
    "dia": "2026-11-13",
@@ -236,7 +236,7 @@
    "descanso_ate": "2026-11-11T09:47+00:00",
    "dia": "2026-11-13",
    "motivo": "robots.txt respondeu 403",
-   "paginas": 15
+   "paginas": 16
   },
   "www.mecadosjogos.com.br": {
    "descanso_ate": "2026-11-15T19:12+00:00",
@@ -286,7 +286,7 @@
    "descanso_ate": "2026-11-11T09:48+00:00",
    "dia": "2026-11-13",
    "motivo": "robots.txt respondeu 403",
-   "paginas": 26
+   "paginas": 27
   },
   "www.pousocultural.com.br": {
    "dia": "2026-11-13",
@@ -294,7 +294,7 @@
   },
   "www.promobit.com.br": {
    "dia": "2026-11-13",
-   "paginas": 70
+   "paginas": 80
   },
   "www.reunionjogos.com.br": {
    "dia": "2026-11-13",
@@ -367,7 +367,7 @@
   "https://bravojogos.com.br/black-bravo/jogo-ilha-da-caveira": {
    "cj": 46.49,
    "estoque": true,
-   "hora": "2026-11-13T18:41+00:00",
+   "hora": "2026-11-13T19:42+00:00",
    "preco": 49.99
   },
   "https://bravojogos.com.br/black-bravo/jogo-quest": {
@@ -511,7 +511,7 @@
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-o-laboratorio-de-dexter-a-grande-invencao-p": {
    "cj": 83.61,
    "estoque": true,
-   "hora": "2026-11-13T00:47+00:00",
+   "hora": "2026-11-13T19:42+00:00",
    "preco": 89.9
   },
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-patchwork-nova-edicao-p": {
@@ -535,7 +535,7 @@
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-stupor-mundi-count-editon-p": {
    "cj": 232.41,
    "estoque": true,
-   "hora": "2026-11-13T06:07+00:00",
+   "hora": "2026-11-13T19:42+00:00",
    "preco": 249.9
   },
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-superstore-3000-p": {
@@ -549,12 +549,6 @@
    "estoque": true,
    "hora": "2026-11-13T19:13+00:00",
    "preco": 64.9
-  },
-  "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-take-time-p": {
-   "cj": 102.21,
-   "estoque": true,
-   "hora": "2026-11-13T17:43+00:00",
-   "preco": 109.9
   },
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-the-elder-scrolls-a-traicao-da-segunda-era-p": {
    "cj": 1859.07,
@@ -649,7 +643,7 @@
   "https://ludostation.com.br/produtos/elephant-rally/?entry_path=category": {
    "cj": 116.91,
    "estoque": true,
-   "hora": "2026-11-13T19:10+00:00",
+   "hora": "2026-11-13T19:42+00:00",
    "preco": 129.9
   },
   "https://ludostation.com.br/produtos/galaxy-trucker-seunda-edicao-uch00/?entry_path=category": {
@@ -781,7 +775,7 @@
   "https://www.alquimistasdosjogos.com.br/jogos/oak": {
    "cj": 89.81,
    "estoque": true,
-   "hora": "2026-11-13T19:12+00:00",
+   "hora": "2026-11-13T19:42+00:00",
    "preco": 89.81
   },
   "https://www.alquimistasdosjogos.com.br/jogos/the-mandalorian-adventures-cla-de-dois": {
@@ -1465,7 +1459,7 @@
   "https://www.masmorra.com.br/produtos/con11824": {
    "cj": 107.91,
    "estoque": true,
-   "hora": "2026-11-13T19:10+00:00",
+   "hora": "2026-11-13T19:42+00:00",
    "preco": 119.9
   },
   "https://www.masmorra.com.br/produtos/mbr0187": {
@@ -2067,6 +2061,12 @@
    "estoque": true,
    "hora": "2026-11-13T19:10+00:00",
    "preco": 175.9
+  },
+  "https://www.playeasy.com.br/draftosaurus": {
+   "cj": 120.81,
+   "estoque": true,
+   "hora": "2026-11-13T19:42+00:00",
+   "preco": 129.9
   },
   "https://www.playeasy.com.br/eclipse-expansao-perseguidores": {
    "cj": 315.08,

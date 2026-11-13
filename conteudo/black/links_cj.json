@@ -505,6 +505,15 @@
   "mecadosjogos": "https://www.mecadosjogos.com.br/dragon-eclipse-p1149",
   "orcspace": "https://loja.orcspace.com.br/produtos/dragon-eclipse-kd9fh/?entry_path=category"
  },
+ "earth": {
+  "_hora": "2026-11-13T16:43-03:00",
+  "amazon": "https://www.amazon.com.br/dp/B0BWS9R9TZ",
+  "cangaiajogos": "https://www.cangaiajogos.com.br/todos-os-jogos/jogos-estrategicos/earth",
+  "mercadolivre": "https://www.mercadolivre.com.br/p/MLB37985724",
+  "playeasy": "https://www.playeasy.com.br/earth",
+  "tavernareal": "https://www.tavernareal.com/tabuleiro/earth",
+  "tubaleria": "https://tubaleria.store/produtos/earth/?entry_path=category"
+ },
  "elephant-rally": {
   "_hora": "2026-11-13T12:48-03:00",
   "amazon": "https://www.amazon.com.br/dp/B0DD49QMRK",
@@ -924,7 +933,8 @@
   "playeasy": "https://www.playeasy.com.br/minos-dawn-of-faith-expansao"
  },
  "modern-art": {
-  "_hora": "2026-11-13T15:44-03:00",
+  "_hora": "2026-11-13T16:44-03:00",
+  "amazon": "https://www.amazon.com.br/dp/B0716P8GKX",
   "dalarangames": "https://www.dalaran.com.br/modern-art-jogo-de-tabuleiro"
  },
  "mwat": {
@@ -1490,7 +1500,8 @@
   "placegames": "https://www.placegames.com.br/boardgames/top-secret"
  },
  "triominos-de-luxe": {
-  "_hora": "2026-11-13T15:14-03:00",
+  "_hora": "2026-11-13T16:44-03:00",
+  "amazon": "https://www.amazon.com.br/dp/B0FGFVDYTR",
   "expressoboardgames": "https://www.expressoboardgames.com.br/trimino-edicao-luxo-ludens-spirit-jp035",
   "magalu": "https://www.magazineluiza.com.br/jogo-triominos-original-elka/p/da025243d7/br/bjdt/"
  },
