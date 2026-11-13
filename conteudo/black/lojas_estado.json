@@ -10,7 +10,7 @@
   },
   "bravojogos.com.br": {
    "dia": "2026-11-13",
-   "paginas": 48
+   "paginas": 50
   },
   "brecholudico.com.br": {
    "dia": "2026-11-13",
@@ -92,7 +92,7 @@
   },
   "tubaleria.store": {
    "dia": "2026-11-13",
-   "paginas": 8
+   "paginas": 9
   },
   "vempramesajogos.commercesuite.com.br": {
    "descanso_ate": "2026-11-11T09:43+00:00",
@@ -104,7 +104,7 @@
    "descanso_ate": "2026-11-11T09:43+00:00",
    "dia": "2026-11-13",
    "motivo": "robots.txt respondeu 403",
-   "paginas": 22
+   "paginas": 25
   },
   "www.animusludere.com.br": {
    "dia": "2026-11-13",
@@ -154,7 +154,7 @@
    "descanso_ate": "2026-11-11T09:45+00:00",
    "dia": "2026-11-13",
    "motivo": "robots.txt respondeu 403",
-   "paginas": 10
+   "paginas": 13
   },
   "www.capivarajogos.com.br": {
    "dia": "2026-11-13",
@@ -286,7 +286,7 @@
    "descanso_ate": "2026-11-11T09:48+00:00",
    "dia": "2026-11-13",
    "motivo": "robots.txt respondeu 403",
-   "paginas": 25
+   "paginas": 26
   },
   "www.pousocultural.com.br": {
    "dia": "2026-11-13",
@@ -294,7 +294,7 @@
   },
   "www.promobit.com.br": {
    "dia": "2026-11-13",
-   "paginas": 60
+   "paginas": 70
   },
   "www.reunionjogos.com.br": {
    "dia": "2026-11-13",
@@ -379,7 +379,7 @@
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/azul-pavilhao-de-verao-mini-p": {
    "cj": 107.79,
    "estoque": true,
-   "hora": "2026-11-12T16:57+00:00",
+   "hora": "2026-11-13T17:15+00:00",
    "preco": 115.9
   },
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/cardgames-dixit-8-jogadores": {
@@ -517,7 +517,7 @@
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-patchwork-nova-edicao-p": {
    "cj": 102.21,
    "estoque": true,
-   "hora": "2026-11-13T16:12+00:00",
+   "hora": "2026-11-13T17:15+00:00",
    "preco": 109.9
   },
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-petiquette-edicao-ingles-p": {
@@ -685,7 +685,7 @@
   "https://tubaleria.store/produtos/airport-rush/?entry_path=category": {
    "cj": 125.34,
    "estoque": true,
-   "hora": "2026-11-13T17:09+00:00",
+   "hora": "2026-11-13T17:15+00:00",
    "preco": 130.56
   },
   "https://www.alquimistasdosjogos.com.br/barrage-exp-the-leeghwater-project-bloco": {
@@ -739,13 +739,13 @@
   "https://www.alquimistasdosjogos.com.br/jogos/eclipse-perseguidores-amp-proscritos": {
    "cj": 314.81,
    "estoque": true,
-   "hora": "2026-11-13T17:10+00:00",
+   "hora": "2026-11-13T17:15+00:00",
    "preco": 314.81
   },
   "https://www.alquimistasdosjogos.com.br/jogos/eclipse-proscritos": {
    "cj": 314.81,
    "estoque": true,
-   "hora": "2026-11-13T17:10+00:00",
+   "hora": "2026-11-13T17:15+00:00",
    "preco": 314.81
   },
   "https://www.alquimistasdosjogos.com.br/jogos/fateflip-arrastado-pelo-mar": {
@@ -769,7 +769,7 @@
   "https://www.alquimistasdosjogos.com.br/jogos/lego-ninjago-destiny-s-bounty-adventures": {
    "cj": 179.81,
    "estoque": true,
-   "hora": "2026-11-13T17:11+00:00",
+   "hora": "2026-11-13T17:15+00:00",
    "preco": 179.81
   },
   "https://www.alquimistasdosjogos.com.br/jogos/loot": {
@@ -1456,12 +1456,6 @@
    "hora": "2026-11-13T17:12+00:00",
    "preco": 65.9
   },
-  "https://www.masmorra.com.br/produtos/con11824": {
-   "cj": 107.91,
-   "estoque": false,
-   "hora": "2026-11-13T17:10+00:00",
-   "preco": 119.9
-  },
   "https://www.masmorra.com.br/produtos/mbr0187": {
    "cj": 116.91,
    "estoque": true,
@@ -1473,186 +1467,6 @@
    "estoque": true,
    "hora": "2026-11-13T17:11+00:00",
    "preco": 149.9
-  },
-  "https://www.mecadosjogos.com.br/50-animais-marinhos-p1311": {
-   "cj": 19.62,
-   "estoque": true,
-   "hora": "2026-11-13T17:09+00:00",
-   "preco": 21.8
-  },
-  "https://www.mecadosjogos.com.br/50-caes-p387": {
-   "cj": 18.18,
-   "estoque": true,
-   "hora": "2026-11-13T17:09+00:00",
-   "preco": 20.2
-  },
-  "https://www.mecadosjogos.com.br/algae-inc-p890": {
-   "cj": 275.13,
-   "estoque": true,
-   "hora": "2026-11-13T17:09+00:00",
-   "preco": 305.7
-  },
-  "https://www.mecadosjogos.com.br/alien-attack-usa-meeplebr-jogos-de-tabuleiro-pt-br-p1038": {
-   "cj": 117.54,
-   "estoque": true,
-   "hora": "2026-11-13T17:10+00:00",
-   "preco": 130.6
-  },
-  "https://www.mecadosjogos.com.br/anachrony-edicao-essencial-p1614": {
-   "cj": 222.57,
-   "estoque": true,
-   "hora": "2026-11-13T17:10+00:00",
-   "preco": 247.3
-  },
-  "https://www.mecadosjogos.com.br/balconia-p857": {
-   "cj": 99.45,
-   "estoque": true,
-   "hora": "2026-11-13T17:10+00:00",
-   "preco": 110.5
-  },
-  "https://www.mecadosjogos.com.br/citadels-segunda-edicao-revisada-p873": {
-   "cj": 131.49,
-   "estoque": true,
-   "hora": "2026-11-13T17:10+00:00",
-   "preco": 146.1
-  },
-  "https://www.mecadosjogos.com.br/cuco-cuco-p918": {
-   "cj": 26.64,
-   "estoque": true,
-   "hora": "2026-11-13T17:10+00:00",
-   "preco": 29.6
-  },
-  "https://www.mecadosjogos.com.br/daybreak-p668": {
-   "cj": 257.58,
-   "estoque": true,
-   "hora": "2026-11-13T17:10+00:00",
-   "preco": 286.2
-  },
-  "https://www.mecadosjogos.com.br/deep-sea-adventure-boost-p1148": {
-   "cj": 77.09,
-   "estoque": true,
-   "hora": "2026-11-13T17:10+00:00",
-   "preco": 88.1
-  },
-  "https://www.mecadosjogos.com.br/destemidos-norte-da-africa-p151": {
-   "cj": 147.15,
-   "estoque": true,
-   "hora": "2026-11-13T17:10+00:00",
-   "preco": 163.5
-  },
-  "https://www.mecadosjogos.com.br/destemidos-reforcos-p350": {
-   "cj": 160.02,
-   "estoque": true,
-   "hora": "2026-11-13T17:10+00:00",
-   "preco": 177.8
-  },
-  "https://www.mecadosjogos.com.br/dino-fun-p593": {
-   "cj": 86.85,
-   "estoque": true,
-   "hora": "2026-11-13T17:10+00:00",
-   "preco": 96.5
-  },
-  "https://www.mecadosjogos.com.br/draftosaurus-expansao-2-em-1-p527": {
-   "cj": 73.44,
-   "estoque": true,
-   "hora": "2026-11-13T17:10+00:00",
-   "preco": 81.6
-  },
-  "https://www.mecadosjogos.com.br/eclipse-expansao-perseguidores-p916": {
-   "cj": 311.85,
-   "estoque": true,
-   "hora": "2026-11-13T17:10+00:00",
-   "preco": 346.5
-  },
-  "https://www.mecadosjogos.com.br/eclipse-expansao-proscritos-p915": {
-   "cj": 311.85,
-   "estoque": true,
-   "hora": "2026-11-13T17:10+00:00",
-   "preco": 346.5
-  },
-  "https://www.mecadosjogos.com.br/exploding-kittens-bem-vs-mal-galapagos-jogos-meca-p297": {
-   "cj": 39.42,
-   "estoque": true,
-   "hora": "2026-11-13T17:10+00:00",
-   "preco": 43.8
-  },
-  "https://www.mecadosjogos.com.br/fateflip-arrastado-pelo-mar-p549": {
-   "cj": 44.28,
-   "estoque": true,
-   "hora": "2026-11-13T17:11+00:00",
-   "preco": 49.2
-  },
-  "https://www.mecadosjogos.com.br/funocracy-p914": {
-   "cj": 47.79,
-   "estoque": true,
-   "hora": "2026-11-13T17:11+00:00",
-   "preco": 53.1
-  },
-  "https://www.mecadosjogos.com.br/galaxy-trucker-segunda-edicao-asmodee-jogos-portugues-p1050": {
-   "cj": 198.27,
-   "estoque": true,
-   "hora": "2026-11-13T17:11+00:00",
-   "preco": 220.3
-  },
-  "https://www.mecadosjogos.com.br/general-orders-world-war-ii-p623": {
-   "cj": 78.84,
-   "estoque": true,
-   "hora": "2026-11-13T17:11+00:00",
-   "preco": 87.6
-  },
-  "https://www.mecadosjogos.com.br/imagine-family-p565": {
-   "cj": 84.69,
-   "estoque": true,
-   "hora": "2026-11-13T17:11+00:00",
-   "preco": 94.1
-  },
-  "https://www.mecadosjogos.com.br/imperium-classicos-p895": {
-   "cj": 142.29,
-   "estoque": true,
-   "hora": "2026-11-13T17:11+00:00",
-   "preco": 158.1
-  },
-  "https://www.mecadosjogos.com.br/imperium-lendas-p894": {
-   "cj": 147.15,
-   "estoque": true,
-   "hora": "2026-11-13T17:11+00:00",
-   "preco": 163.5
-  },
-  "https://www.mecadosjogos.com.br/lets-go-pro-japao-p1177": {
-   "cj": 257.49,
-   "estoque": true,
-   "hora": "2026-11-13T17:11+00:00",
-   "preco": 286.1
-  },
-  "https://www.mecadosjogos.com.br/neuroshima-hex-battle-policia-de-aco-vs-feras-p1055": {
-   "cj": 110.61,
-   "estoque": true,
-   "hora": "2026-11-13T17:12+00:00",
-   "preco": 122.9
-  },
-  "https://www.mecadosjogos.com.br/os-palacios-de-carrara-segunda-edicao-p587": {
-   "cj": 86.85,
-   "estoque": true,
-   "hora": "2026-11-13T17:12+00:00",
-   "preco": 96.5
-  },
-  "https://www.mecadosjogos.com.br/patchwork-p1025": {
-   "cj": 100.26,
-   "estoque": true,
-   "hora": "2026-11-13T17:12+00:00",
-   "preco": 111.4
-  },
-  "https://www.mecadosjogos.com.br/piles-p750": {
-   "cj": 79.29,
-   "estoque": true,
-   "hora": "2026-11-13T17:12+00:00",
-   "preco": 88.1
-  },
-  "https://www.mecadosjogos.com.br/power-hungry-pets-p694": {
-   "cj": 39.42,
-   "estoque": true,
-   "hora": "2026-11-13T17:12+00:00",
-   "preco": 43.8
   },
   "https://www.odisseiajogos.com.br/board-games/50-dinossauros": {
    "cj": 28.4,
@@ -2041,7 +1855,7 @@
   "https://www.playeasy.com.br/citadels-2a-edicao-revisada": {
    "cj": 139.5,
    "estoque": true,
-   "hora": "2026-11-13T17:10+00:00",
+   "hora": "2026-11-13T17:15+00:00",
    "preco": 150.0
   },
   "https://www.playeasy.com.br/destemidos-norte-da-africa": {
