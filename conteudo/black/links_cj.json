@@ -395,6 +395,15 @@
  "crokinole": {
   "_hora": "2026-11-05T20:47-03:00"
  },
+ "cthulhu-dark-providence": {
+  "_hora": "2026-11-13T17:14-03:00",
+  "amazon": "https://www.amazon.com.br/dp/B0F49K5WY2",
+  "cangaiajogos": "https://www.cangaiajogos.com.br/cthulhu-dark-providence",
+  "elfoscia": "https://www.elfosecia.com.br/cthulhu-dark-providence-jogo-de-tabuleiro-galapagos",
+  "facilshopping": "https://www.facilshopping.com.br/produtos/cthulhu-dark-providence-jogo-de-tabuleiro-milnv/?entry_path=category",
+  "ludostation": "https://ludostation.com.br/produtos/cthulhu-dark-providence-1mk1v/?entry_path=category",
+  "tabuloja": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/cthulhu-dark-providence"
+ },
  "daitoshi": {
   "_hora": "2026-11-06T12:46-03:00",
   "alquimistasdosjogos": "https://www.alquimistasdosjogos.com.br/jogos/daitoshi",
@@ -1222,6 +1231,13 @@
   "odisseiajogos": "https://www.odisseiajogos.com.br/board-games/scythe-gambito-dos-ventos-expansao",
   "playeasy": "https://www.playeasy.com.br/scythe-gambito-dos-ventos-expans-o"
  },
+ "sea-salt-paper": {
+  "_hora": "2026-11-13T17:14-03:00",
+  "mecadosjogos": "https://www.mecadosjogos.com.br/sea-salt-paper-galapagos-jogos-meca-p340",
+  "mercadolivre": "https://www.mercadolivre.com.br/p/MLB38079784",
+  "modoaviaoboardgames": "https://modoaviaobg.com.br/produtos/sea-salt-paper/?entry_path=category",
+  "tabuloja": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/sea-salt-amp-paper"
+ },
  "shackleton-base-uma-jornada-para-a-lua": {
   "_hora": "2026-11-11T15:23-03:00",
   "boardgamebarato": "https://www.boardgamebarato.com.br/shackleton-base-uma-jornada-para-a-lua",
@@ -1554,12 +1570,11 @@
   "galapagosjogos": "https://www.mundogalapagos.com.br/village-big-box-edicao-em-ingles/produto/VLG001"
  },
  "voidfall": {
-  "_hora": "2026-11-09T12:16-03:00",
+  "_hora": "2026-11-13T17:14-03:00",
   "amazon": "https://www.amazon.com.br/dp/B0CP88NPNT",
   "boardgamebarato": "https://www.boardgamebarato.com.br/voidfall",
-  "borbagames": "https://www.borbagames.com.br/voidfall",
-  "mercadolivre": "https://www.mercadolivre.com.br/p/MLB46544417",
-  "playeasy": "https://www.playeasy.com.br/voidfall"
+  "ludostation": "https://ludostation.com.br/produtos/voidfall-49fj3/?entry_path=category",
+  "mercadolivre": "https://www.mercadolivre.com.br/p/MLB46544417"
  },
  "walk-the-plank-piratas-ao-mar": {
   "_hora": "2026-11-10T09:39-03:00",
