@@ -1,7 +1,20 @@
 {
- "gerado": "2026-11-13T04:17-03:00",
+ "gerado": "2026-11-13T17:05-03:00",
  "user_agent": "EliteBoardgamers/1.0 (+https://eliteboardgamers.com.br/black/robo/)",
  "links": [
+  {
+   "url": "https://www.amazon.com.br/dp/B0FGFVDYTR",
+   "categoria": "oferta",
+   "paginas": [
+    "/black/"
+   ],
+   "jogo": "Triominos De Luxe",
+   "loja": "Amazon",
+   "status": "ERRO",
+   "motivo": "página de outro jogo (cartão: “Triominos De Luxe”; página: “Elka, Jogo Triominos Original - 2 a 4 jogadores - 6 anos + | Amazon.com.br | Elka, Jogo Triominos Original - 2 a 4 jogad”)",
+   "http": 200,
+   "url_final": "https://www.amazon.com.br/dp/B0FGFVDYTR"
+  },
   {
    "url": "https://www.caixinhaboardgames.com.br/produtos/ticket-to-ride-alemanha-pre-venda-rh596/",
    "categoria": "oferta",
@@ -16,43 +29,17 @@
    "url_final": "https://www.caixinhaboardgames.com.br/produtos/ticket-to-ride-alemanha-pre-venda-rh596/"
   },
   {
-   "url": "https://www.placegames.com.br/azul-mini-pavilhao-de-verao",
+   "url": "https://bravojogos.com.br/black-bravo/jogo-ilha-da-caveira",
    "categoria": "oferta",
-   "jogo": "Azul Pavilhão de Verão: Mini",
-   "loja": "Place Games",
-   "paginas": [
-    "(fora do site: retirada do /black/ pela auditoria)"
-   ],
-   "status": "ERRO",
-   "motivo": "página de outro jogo (cartão: “Azul Pavilhão de Verão: Mini”; página: “Produto não encontrado - Place Games | Loja de Board Games - Locadora de Jogos | Produto não encontrado - Place Games | ”)",
-   "http": 200,
-   "url_final": "https://www.placegames.com.br/sem-resultados-na-busca"
-  },
-  {
-   "url": "https://www.placegames.com.br/boardgames/sky-towers",
-   "categoria": "oferta",
-   "jogo": "Sky Towers",
-   "loja": "Place Games",
-   "paginas": [
-    "(fora do site: retirada do /black/ pela auditoria)"
-   ],
-   "status": "ERRO",
-   "motivo": "página de outro jogo (cartão: “Sky Towers”; página: “Produto não encontrado - Place Games | Loja de Board Games - Locadora de Jogos | Produto não encontrado - Place Games | ”)",
-   "http": 200,
-   "url_final": "https://www.placegames.com.br/sem-resultados-na-busca"
-  },
-  {
-   "url": "https://bravojogos.com.br/black-bravo/jogo-quest",
-   "categoria": "oferta (mais lojas)",
    "paginas": [
     "/black/"
    ],
-   "jogo": "Quest",
+   "jogo": "Ilha da Caveira",
    "loja": "Bravo Jogos",
    "status": "ok",
    "motivo": "página do produto",
    "http": 200,
-   "url_final": "https://bravojogos.com.br/black-bravo/jogo-quest"
+   "url_final": "https://bravojogos.com.br/black-bravo/jogo-ilha-da-caveira"
   },
   {
    "url": "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/chaves-confusoes-na-vila-p",
@@ -146,19 +133,6 @@
    "url_final": "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-hi-ho-cherry-meu-primeiro-pomarzinho-p"
   },
   {
-   "url": "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-petiquette-edicao-ingles-p",
-   "categoria": "oferta",
-   "paginas": [
-    "/black/"
-   ],
-   "jogo": "Petiquette",
-   "loja": "Bravo Jogos",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
-   "url_final": "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-petiquette-edicao-ingles-p"
-  },
-  {
    "url": "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-stupor-mundi-count-editon-p",
    "categoria": "oferta",
    "paginas": [
@@ -170,6 +144,19 @@
    "motivo": "página do produto",
    "http": 200,
    "url_final": "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-stupor-mundi-count-editon-p"
+  },
+  {
+   "url": "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-superstore-3000-p",
+   "categoria": "oferta",
+   "paginas": [
+    "/black/"
+   ],
+   "jogo": "Superstore 3000",
+   "loja": "Bravo Jogos",
+   "status": "ok",
+   "motivo": "página do produto",
+   "http": 200,
+   "url_final": "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-superstore-3000-p"
   },
   {
    "url": "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-ta-na-mesa-p",
@@ -185,19 +172,6 @@
    "url_final": "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-ta-na-mesa-p"
   },
   {
-   "url": "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-time-stories-revolution-the-hadal-project-p",
-   "categoria": "oferta",
-   "paginas": [
-    "/black/"
-   ],
-   "jogo": "TIME Stories Revolution: The Hadal Project",
-   "loja": "Bravo Jogos",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
-   "url_final": "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-time-stories-revolution-the-hadal-project-p"
-  },
-  {
    "url": "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-uestop-turma-da-monica-p",
    "categoria": "oferta",
    "paginas": [
@@ -209,19 +183,6 @@
    "motivo": "página do produto",
    "http": 200,
    "url_final": "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-uestop-turma-da-monica-p"
-  },
-  {
-   "url": "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-word-traveler-p",
-   "categoria": "oferta",
-   "paginas": [
-    "/black/"
-   ],
-   "jogo": "Word Traveler",
-   "loja": "Bravo Jogos",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
-   "url_final": "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-word-traveler-p"
   },
   {
    "url": "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/mesozooic",
@@ -276,19 +237,6 @@
    "url_final": "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/paris"
   },
   {
-   "url": "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/the-goonies-never-say-die-edicao-em-ingles-p",
-   "categoria": "oferta",
-   "paginas": [
-    "/black/"
-   ],
-   "jogo": "The Goonies: Never Say Die",
-   "loja": "Bravo Jogos",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
-   "url_final": "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/the-goonies-never-say-die-edicao-em-ingles-p"
-  },
-  {
    "url": "https://interludi.com.br/produto/unmatched-battle-of-legends-volume-dois/",
    "categoria": "oferta",
    "paginas": [
@@ -303,7 +251,7 @@
   },
   {
    "url": "https://loja.frodosbg.com.br/citadels-2nd-edicao-revisada",
-   "categoria": "oferta (mais lojas)",
+   "categoria": "oferta",
    "paginas": [
     "/black/"
    ],
@@ -313,6 +261,19 @@
    "motivo": "página do produto",
    "http": 200,
    "url_final": "https://loja.frodosbg.com.br/citadels-2nd-edicao-revisada"
+  },
+  {
+   "url": "https://loja.joyjoycafe.com.br/forest-shuffle-borda-da-floresta-expansao",
+   "categoria": "oferta",
+   "paginas": [
+    "/black/"
+   ],
+   "jogo": "Forest Shuffle: Borda da Floresta",
+   "loja": "JOY JOY STORE",
+   "status": "ok",
+   "motivo": "página do produto",
+   "http": 200,
+   "url_final": "https://loja.joyjoycafe.com.br/forest-shuffle-borda-da-floresta-expansao"
   },
   {
    "url": "https://tubaleria.store/produtos/airport-rush/?entry_path=category",
@@ -335,9 +296,9 @@
    ],
    "jogo": "Barrage",
    "loja": "Alquimistas dos Jogos",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.alquimistasdosjogos.com.br/barrage-exp-the-leeghwater-project-bloco"
   },
   {
@@ -348,9 +309,9 @@
    ],
    "jogo": "Imperium: Clássicos",
    "loja": "Alquimistas dos Jogos",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.alquimistasdosjogos.com.br/imperium-classicos"
   },
   {
@@ -361,9 +322,9 @@
    ],
    "jogo": "Imperium: Lendas",
    "loja": "Alquimistas dos Jogos",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.alquimistasdosjogos.com.br/imperium-lendas"
   },
   {
@@ -374,9 +335,9 @@
    ],
    "jogo": "Algae, Inc.",
    "loja": "Alquimistas dos Jogos",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.alquimistasdosjogos.com.br/jogos/algae-inc"
   },
   {
@@ -387,9 +348,9 @@
    ],
    "jogo": "Daybreak",
    "loja": "Alquimistas dos Jogos",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.alquimistasdosjogos.com.br/jogos/daybreak"
   },
   {
@@ -400,9 +361,9 @@
    ],
    "jogo": "Deep Sea Adventure Boost",
    "loja": "Alquimistas dos Jogos",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.alquimistasdosjogos.com.br/jogos/deep-sea-adventure-boost"
   },
   {
@@ -413,10 +374,36 @@
    ],
    "jogo": "Destemidos: Reforços",
    "loja": "Alquimistas dos Jogos",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.alquimistasdosjogos.com.br/jogos/destemidos-reforcos"
+  },
+  {
+   "url": "https://www.alquimistasdosjogos.com.br/jogos/eclipse-perseguidores-amp-proscritos",
+   "categoria": "oferta",
+   "paginas": [
+    "/black/"
+   ],
+   "jogo": "Eclipse: O Segundo Despertar da Galáxia - Perseguidores",
+   "loja": "Alquimistas dos Jogos",
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
+   "url_final": "https://www.alquimistasdosjogos.com.br/jogos/eclipse-perseguidores-amp-proscritos"
+  },
+  {
+   "url": "https://www.alquimistasdosjogos.com.br/jogos/eclipse-proscritos",
+   "categoria": "oferta",
+   "paginas": [
+    "/black/"
+   ],
+   "jogo": "Eclipse: Second Dawn for the Galaxy: Outcasts",
+   "loja": "Alquimistas dos Jogos",
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
+   "url_final": "https://www.alquimistasdosjogos.com.br/jogos/eclipse-proscritos"
   },
   {
    "url": "https://www.alquimistasdosjogos.com.br/jogos/fateflip-arrastado-pelo-mar",
@@ -426,9 +413,9 @@
    ],
    "jogo": "FateFlip: Arrastado pelo Mar",
    "loja": "Alquimistas dos Jogos",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.alquimistasdosjogos.com.br/jogos/fateflip-arrastado-pelo-mar"
   },
   {
@@ -439,9 +426,9 @@
    ],
    "jogo": "Galaxy Trucker (Second Edition)",
    "loja": "Alquimistas dos Jogos",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.alquimistasdosjogos.com.br/jogos/galaxy-trucker"
   },
   {
@@ -452,9 +439,9 @@
    ],
    "jogo": "Imperium: Horizontes",
    "loja": "Alquimistas dos Jogos",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.alquimistasdosjogos.com.br/jogos/imperium-horizontes"
   },
   {
@@ -465,9 +452,9 @@
    ],
    "jogo": "LEGO: NINJAGO: Destiny's Bounty Adventures",
    "loja": "Alquimistas dos Jogos",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.alquimistasdosjogos.com.br/jogos/lego-ninjago-destiny-s-bounty-adventures"
   },
   {
@@ -478,10 +465,36 @@
    ],
    "jogo": "The Mandalorian: Adventures: Clã de Dois",
    "loja": "Alquimistas dos Jogos",
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
+   "url_final": "https://www.alquimistasdosjogos.com.br/jogos/the-mandalorian-adventures-cla-de-dois"
+  },
+  {
+   "url": "https://www.amazon.com.br/dp/B0716P8GKX",
+   "categoria": "oferta",
+   "paginas": [
+    "/black/"
+   ],
+   "jogo": "Modern Art",
+   "loja": "Amazon",
    "status": "ok",
    "motivo": "página do produto",
    "http": 200,
-   "url_final": "https://www.alquimistasdosjogos.com.br/jogos/the-mandalorian-adventures-cla-de-dois"
+   "url_final": "https://www.amazon.com.br/dp/B0716P8GKX"
+  },
+  {
+   "url": "https://www.amazon.com.br/dp/B09FTMW8ZH",
+   "categoria": "oferta (mais lojas)",
+   "paginas": [
+    "/black/"
+   ],
+   "jogo": "Anachrony: Edição Essencial",
+   "loja": "Amazon",
+   "status": "ok",
+   "motivo": "página do produto",
+   "http": 200,
+   "url_final": "https://www.amazon.com.br/dp/B09FTMW8ZH"
   },
   {
    "url": "https://www.amazon.com.br/dp/B0CDQH3CTG",
@@ -495,6 +508,19 @@
    "motivo": "página do produto",
    "http": 200,
    "url_final": "https://www.amazon.com.br/dp/B0CDQH3CTG"
+  },
+  {
+   "url": "https://www.amazon.com.br/dp/B0DYLK1FLB",
+   "categoria": "oferta",
+   "paginas": [
+    "/black/"
+   ],
+   "jogo": "Unstable Unicorns",
+   "loja": "Amazon",
+   "status": "ok",
+   "motivo": "página do produto",
+   "http": 200,
+   "url_final": "https://www.amazon.com.br/dp/B0DYLK1FLB"
   },
   {
    "url": "https://www.amazon.com.br/dp/B0FGG1XZZX",
@@ -581,7 +607,7 @@
     "/black/"
    ],
    "jogo": "Shinkansen: Zero Kei",
-   "loja": "Board Game Play Store",
+   "loja": "boardgameplay",
    "status": "ok",
    "motivo": "página do produto",
    "http": 200,
@@ -641,7 +667,7 @@
   },
   {
    "url": "https://www.caixinhaboardgames.com.br/produtos/cuco-cuco/?entry_path=category",
-   "categoria": "oferta (mais lojas)",
+   "categoria": "oferta",
    "paginas": [
     "/black/"
    ],
@@ -718,19 +744,6 @@
    "url_final": "https://www.caixinhaboardgames.com.br/produtos/dungeons-sleeping-gods/?entry_path=category"
   },
   {
-   "url": "https://www.caixinhaboardgames.com.br/produtos/exploding-kittens-bem-vs-mal/?entry_path=category",
-   "categoria": "oferta (mais lojas)",
-   "paginas": [
-    "/black/"
-   ],
-   "jogo": "Exploding Kittens: Bem vs Mal",
-   "loja": "Caixinha Boardgames",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
-   "url_final": "https://www.caixinhaboardgames.com.br/produtos/exploding-kittens-bem-vs-mal/?entry_path=category"
-  },
-  {
    "url": "https://www.caixinhaboardgames.com.br/produtos/fateflip-arrastado-pelo-mar/?entry_path=category",
    "categoria": "oferta (mais lojas)",
    "paginas": [
@@ -758,7 +771,7 @@
   },
   {
    "url": "https://www.caixinhaboardgames.com.br/produtos/ilha-da-caveira/?entry_path=category",
-   "categoria": "oferta",
+   "categoria": "oferta (mais lojas)",
    "paginas": [
     "/black/"
    ],
@@ -768,6 +781,19 @@
    "motivo": "página do produto",
    "http": 200,
    "url_final": "https://www.caixinhaboardgames.com.br/produtos/ilha-da-caveira/?entry_path=category"
+  },
+  {
+   "url": "https://www.caixinhaboardgames.com.br/produtos/imagine-familiy/?entry_path=category",
+   "categoria": "oferta",
+   "paginas": [
+    "/black/"
+   ],
+   "jogo": "Imagine Family",
+   "loja": "Caixinha Boardgames",
+   "status": "ok",
+   "motivo": "página do produto",
+   "http": 200,
+   "url_final": "https://www.caixinhaboardgames.com.br/produtos/imagine-familiy/?entry_path=category"
   },
   {
    "url": "https://www.caixinhaboardgames.com.br/produtos/kemet-touro-sagrado/?entry_path=category",
@@ -835,6 +861,19 @@
    "url_final": "https://www.caixinhaboardgames.com.br/produtos/oak/?entry_path=category"
   },
   {
+   "url": "https://www.caixinhaboardgames.com.br/produtos/os-palacios-de-carrara-2a-edicao/?entry_path=category",
+   "categoria": "oferta",
+   "paginas": [
+    "/black/"
+   ],
+   "jogo": "Os Palácios de Carrara (Segunda Edição)",
+   "loja": "Caixinha Boardgames",
+   "status": "ok",
+   "motivo": "página do produto",
+   "http": 200,
+   "url_final": "https://www.caixinhaboardgames.com.br/produtos/os-palacios-de-carrara-2a-edicao/?entry_path=category"
+  },
+  {
    "url": "https://www.caixinhaboardgames.com.br/produtos/pets-expansao-piratas/?entry_path=category",
    "categoria": "oferta",
    "paginas": [
@@ -862,7 +901,7 @@
   },
   {
    "url": "https://www.caixinhaboardgames.com.br/produtos/power-hungry-pets/?entry_path=category",
-   "categoria": "oferta (mais lojas)",
+   "categoria": "oferta",
    "paginas": [
     "/black/"
    ],
@@ -998,9 +1037,9 @@
    ],
    "jogo": "3 Capítulos",
    "loja": "Cangaia Jogos",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.cangaiajogos.com.br/3-capitulos"
   },
   {
@@ -1011,9 +1050,9 @@
    ],
    "jogo": "Emblems",
    "loja": "Cangaia Jogos",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.cangaiajogos.com.br/emblems"
   },
   {
@@ -1024,9 +1063,9 @@
    ],
    "jogo": "Quest",
    "loja": "Cangaia Jogos",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.cangaiajogos.com.br/jogos/jogos-para-a-familia/quest"
   },
   {
@@ -1037,9 +1076,9 @@
    ],
    "jogo": "Little Secret",
    "loja": "Cangaia Jogos",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.cangaiajogos.com.br/little-secret"
   },
   {
@@ -1063,9 +1102,9 @@
    ],
    "jogo": "Zenkai: Adventure",
    "loja": "ARCS Livros e Jogos",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.espacoarcs.com.br/jogos/zenkai-adventure-caverna-glacial"
   },
   {
@@ -1134,17 +1173,17 @@
    "url_final": "https://www.facilshopping.com.br/produtos/star-wars-bounty-hunters-jogo-de-cartas-galapagos/?entry_path=category"
   },
   {
-   "url": "https://www.labordo.com.br/produtos/coup-inclui-a-expansao-a-reforma/",
+   "url": "https://www.facilshopping.com.br/produtos/the-goonies-never-say-die-edicao-em-ingles-funko-games/?entry_path=category",
    "categoria": "oferta",
    "paginas": [
     "/black/"
    ],
-   "jogo": "Coup + Reforma",
-   "loja": "Labordo",
+   "jogo": "The Goonies: Never Say Die",
+   "loja": "Facil Shopping",
    "status": "ok",
    "motivo": "página do produto",
    "http": 200,
-   "url_final": "https://www.labordo.com.br/produtos/coup-inclui-a-expansao-a-reforma/"
+   "url_final": "https://www.facilshopping.com.br/produtos/the-goonies-never-say-die-edicao-em-ingles-funko-games/?entry_path=category"
   },
   {
    "url": "https://www.leaolivros.com.br/alien-attack-usa",
@@ -1186,19 +1225,6 @@
    "url_final": "https://www.leaolivros.com.br/general-orders-world-war-ii"
   },
   {
-   "url": "https://www.leaolivros.com.br/imperium-lendas-classicos",
-   "categoria": "oferta (mais lojas)",
-   "paginas": [
-    "/black/"
-   ],
-   "jogo": "Imperium: Clássicos",
-   "loja": "Leão Livros",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
-   "url_final": "https://www.leaolivros.com.br/imperium-lendas-classicos"
-  },
-  {
    "url": "https://www.leaolivros.com.br/neuroshima-hex-battle-policia-de-aco-vs-fera",
    "categoria": "oferta",
    "paginas": [
@@ -1232,53 +1258,27 @@
    ],
    "jogo": "KLASK",
    "loja": "Livtoys",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.livtoys.com.br/promocao/klask"
   },
   {
-   "url": "https://www.masmorra.com.br/produtos/bgparptit",
-   "categoria": "oferta",
+   "url": "https://www.masmorra.com.br/produtos/con11824",
+   "categoria": "oferta (mais lojas)",
    "paginas": [
     "/black/"
    ],
-   "jogo": "Paris: La Cité de la Lumière",
+   "jogo": "Elephant Rally",
    "loja": "Masmorra",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
-   "url_final": "https://www.masmorra.com.br/produtos/bgparptit"
-  },
-  {
-   "url": "https://www.masmorra.com.br/produtos/bgredpt",
-   "categoria": "oferta",
-   "paginas": [
-    "/black/"
-   ],
-   "jogo": "The Red Cathedral",
-   "loja": "Masmorra",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
-   "url_final": "https://www.masmorra.com.br/produtos/bgredpt"
-  },
-  {
-   "url": "https://www.masmorra.com.br/produtos/bgregtr",
-   "categoria": "oferta",
-   "paginas": [
-    "/black/"
-   ],
-   "jogo": "Regicide",
-   "loja": "Masmorra",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
-   "url_final": "https://www.masmorra.com.br/produtos/bgregtr"
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
+   "url_final": "https://www.masmorra.com.br/produtos/con11824"
   },
   {
    "url": "https://www.mecadosjogos.com.br/50-animais-marinhos-p1311",
-   "categoria": "oferta",
+   "categoria": "oferta (mais lojas)",
    "paginas": [
     "/black/"
    ],
@@ -1288,32 +1288,6 @@
    "motivo": "página do produto",
    "http": 200,
    "url_final": "https://www.mecadosjogos.com.br/50-animais-marinhos-p1311"
-  },
-  {
-   "url": "https://www.mecadosjogos.com.br/50-bichos-de-estimacao-p1313",
-   "categoria": "oferta",
-   "paginas": [
-    "/black/"
-   ],
-   "jogo": "50 Bichos de Estimação",
-   "loja": "Meca dos Jogos",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
-   "url_final": "https://www.mecadosjogos.com.br/50-bichos-de-estimacao-p1313"
-  },
-  {
-   "url": "https://www.mecadosjogos.com.br/50-caes-p387",
-   "categoria": "oferta",
-   "paginas": [
-    "/black/"
-   ],
-   "jogo": "50 cães",
-   "loja": "Meca dos Jogos",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
-   "url_final": "https://www.mecadosjogos.com.br/50-caes-p387"
   },
   {
    "url": "https://www.mecadosjogos.com.br/algae-inc-p890",
@@ -1329,21 +1303,8 @@
    "url_final": "https://www.mecadosjogos.com.br/algae-inc-p890"
   },
   {
-   "url": "https://www.mecadosjogos.com.br/anachrony-edicao-essencial-p1614",
-   "categoria": "oferta",
-   "paginas": [
-    "/black/"
-   ],
-   "jogo": "Anachrony: Edição Essencial",
-   "loja": "Meca dos Jogos",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
-   "url_final": "https://www.mecadosjogos.com.br/anachrony-edicao-essencial-p1614"
-  },
-  {
    "url": "https://www.mecadosjogos.com.br/citadels-segunda-edicao-revisada-p873",
-   "categoria": "oferta",
+   "categoria": "oferta (mais lojas)",
    "paginas": [
     "/black/"
    ],
@@ -1356,7 +1317,7 @@
   },
   {
    "url": "https://www.mecadosjogos.com.br/cuco-cuco-p918",
-   "categoria": "oferta",
+   "categoria": "oferta (mais lojas)",
    "paginas": [
     "/black/"
    ],
@@ -1394,19 +1355,6 @@
    "url_final": "https://www.mecadosjogos.com.br/dino-fun-p593"
   },
   {
-   "url": "https://www.mecadosjogos.com.br/draftosaurus-expansao-2-em-1-p527",
-   "categoria": "oferta",
-   "paginas": [
-    "/black/"
-   ],
-   "jogo": "Draftosaurus: Marina e Show Aéreo",
-   "loja": "Meca dos Jogos",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
-   "url_final": "https://www.mecadosjogos.com.br/draftosaurus-expansao-2-em-1-p527"
-  },
-  {
    "url": "https://www.mecadosjogos.com.br/exploding-kittens-bem-vs-mal-galapagos-jogos-meca-p297",
    "categoria": "oferta",
    "paginas": [
@@ -1433,21 +1381,8 @@
    "url_final": "https://www.mecadosjogos.com.br/fateflip-arrastado-pelo-mar-p549"
   },
   {
-   "url": "https://www.mecadosjogos.com.br/imagine-family-p565",
-   "categoria": "oferta",
-   "paginas": [
-    "/black/"
-   ],
-   "jogo": "Imagine Family",
-   "loja": "Meca dos Jogos",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
-   "url_final": "https://www.mecadosjogos.com.br/imagine-family-p565"
-  },
-  {
    "url": "https://www.mecadosjogos.com.br/os-palacios-de-carrara-segunda-edicao-p587",
-   "categoria": "oferta",
+   "categoria": "oferta (mais lojas)",
    "paginas": [
     "/black/"
    ],
@@ -1459,34 +1394,8 @@
    "url_final": "https://www.mecadosjogos.com.br/os-palacios-de-carrara-segunda-edicao-p587"
   },
   {
-   "url": "https://www.mecadosjogos.com.br/patchwork-p1025",
-   "categoria": "oferta",
-   "paginas": [
-    "/black/"
-   ],
-   "jogo": "Patchwork",
-   "loja": "Meca dos Jogos",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
-   "url_final": "https://www.mecadosjogos.com.br/patchwork-p1025"
-  },
-  {
-   "url": "https://www.mecadosjogos.com.br/piles-p750",
-   "categoria": "oferta",
-   "paginas": [
-    "/black/"
-   ],
-   "jogo": "Piles!",
-   "loja": "Meca dos Jogos",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
-   "url_final": "https://www.mecadosjogos.com.br/piles-p750"
-  },
-  {
    "url": "https://www.mecadosjogos.com.br/power-hungry-pets-p694",
-   "categoria": "oferta",
+   "categoria": "oferta (mais lojas)",
    "paginas": [
     "/black/"
    ],
@@ -1512,7 +1421,7 @@
   },
   {
    "url": "https://www.mecadosjogos.com.br/take-time-p969",
-   "categoria": "oferta (mais lojas)",
+   "categoria": "oferta",
    "paginas": [
     "/black/"
    ],
@@ -1550,6 +1459,19 @@
    "url_final": "https://www.mecadosjogos.com.br/timeline-twist-p326"
   },
   {
+   "url": "https://www.mecadosjogos.com.br/wingspan-europa-expansao-grok-games-meca-p581",
+   "categoria": "oferta",
+   "paginas": [
+    "/black/"
+   ],
+   "jogo": "Wingspan: Expansão Europa",
+   "loja": "Meca dos Jogos",
+   "status": "ok",
+   "motivo": "página do produto",
+   "http": 200,
+   "url_final": "https://www.mecadosjogos.com.br/wingspan-europa-expansao-grok-games-meca-p581"
+  },
+  {
    "url": "https://www.mercadolivre.com.br/p/MLB16092602?pdp_filters=item_id:MLB3992344771",
    "categoria": "oferta",
    "paginas": [
@@ -1560,7 +1482,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB16092602%3Fpdp_filters%3Ditem_id%253AMLB3992344771&tid=23af0f13-b06f-410d-ac95-62ba828a87c8"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB16092602%3Fpdp_filters%3Ditem_id%253AMLB3992344771&tid=413e10c3-3ad7-428e-9c5c-4dc3e3721856"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB19492018?pdp_filters=item_id:MLB3625532207",
@@ -1573,10 +1495,23 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB19492018%3Fpdp_filters%3Ditem_id%253AMLB3625532207&tid=c5292df1-f053-4b3c-8322-13be38b909c2"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB19492018%3Fpdp_filters%3Ditem_id%253AMLB3625532207&tid=05d349b1-ad58-4294-b248-4e05f428c8d8"
   },
   {
-   "url": "https://www.mercadolivre.com.br/p/MLB19709546?pdp_filters=item_id:MLB3509401581",
+   "url": "https://www.mercadolivre.com.br/p/MLB19525478?pdp_filters=item_id:MLB4008111111",
+   "categoria": "oferta",
+   "paginas": [
+    "/black/"
+   ],
+   "jogo": "Cilada",
+   "loja": "Mercado Livre",
+   "status": "não verificável",
+   "motivo": "robots.txt proíbe robôs nesta página",
+   "http": null,
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB19525478%3Fpdp_filters%3Ditem_id%253AMLB4008111111&tid=efcd3da2-24c0-410f-b10f-88564b27ac77"
+  },
+  {
+   "url": "https://www.mercadolivre.com.br/p/MLB19709546?pdp_filters=item_id:MLB3961858733",
    "categoria": "oferta",
    "paginas": [
     "/black/"
@@ -1586,7 +1521,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB19709546%3Fpdp_filters%3Ditem_id%253AMLB3509401581&tid=ad5f00d2-9310-494f-aaf3-9da2008cbaa0"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB19709546%3Fpdp_filters%3Ditem_id%253AMLB3961858733&tid=7f41e479-0526-40b1-8da0-54b4047146ff"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB19709959?pdp_filters=item_id:MLB5495621455",
@@ -1599,7 +1534,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB19709959%3Fpdp_filters%3Ditem_id%253AMLB5495621455&tid=5ef51854-01e5-4622-95e6-49065111f7b5"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB19709959%3Fpdp_filters%3Ditem_id%253AMLB5495621455&tid=446574af-77e8-4d16-b14f-44f3ae6e3e6e"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB19719743?pdp_filters=item_id:MLB4632178297",
@@ -1612,7 +1547,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB19719743%3Fpdp_filters%3Ditem_id%253AMLB4632178297&tid=048182ed-5a3d-44ed-a989-20e6fdb4ba0c"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB19719743%3Fpdp_filters%3Ditem_id%253AMLB4632178297&tid=bebedfca-4150-45cb-8e5e-12d9fae1e507"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB19782629?pdp_filters=item_id:MLB3694149461",
@@ -1625,10 +1560,10 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB19782629%3Fpdp_filters%3Ditem_id%253AMLB3694149461&tid=f201c071-1af3-4307-a0dc-2e8a52ab651f"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB19782629%3Fpdp_filters%3Ditem_id%253AMLB3694149461&tid=08ef2d42-4530-4c02-bb4c-133fe8aff667"
   },
   {
-   "url": "https://www.mercadolivre.com.br/p/MLB19807546",
+   "url": "https://www.mercadolivre.com.br/p/MLB19807546?pdp_filters=item_id:MLB7970556384",
    "categoria": "oferta",
    "paginas": [
     "/black/"
@@ -1638,10 +1573,10 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB19807546&tid=34cbc033-6abf-4b15-9b85-a339df72aff6"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB19807546%3Fpdp_filters%3Ditem_id%253AMLB7970556384&tid=776b0d2a-275e-4784-8f89-edb4797ab055"
   },
   {
-   "url": "https://www.mercadolivre.com.br/p/MLB20270328?pdp_filters=item_id:MLB3625532213",
+   "url": "https://www.mercadolivre.com.br/p/MLB20270328?pdp_filters=item_id:MLB4302754925",
    "categoria": "oferta",
    "paginas": [
     "/black/"
@@ -1651,7 +1586,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB20270328%3Fpdp_filters%3Ditem_id%253AMLB3625532213&tid=c5dcdf79-3f3b-4f8a-9ade-00b968f628dd"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB20270328%3Fpdp_filters%3Ditem_id%253AMLB4302754925&tid=d6b2feec-0abc-4a18-87db-10a163230d2a"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB21150345?pdp_filters=item_id:MLB5487190699",
@@ -1664,7 +1599,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB21150345%3Fpdp_filters%3Ditem_id%253AMLB5487190699&tid=47513bc5-d791-4204-a865-038741353221"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB21150345%3Fpdp_filters%3Ditem_id%253AMLB5487190699&tid=6ae146e5-71e7-4ca5-93ac-52881fe02bdc"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB21419841?pdp_filters=item_id:MLB7706752846",
@@ -1677,7 +1612,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB21419841%3Fpdp_filters%3Ditem_id%253AMLB7706752846&tid=a508aa04-49ed-4f26-807e-62246ab7740e"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB21419841%3Fpdp_filters%3Ditem_id%253AMLB7706752846&tid=ee95c56c-0a78-4c6e-b23c-4c86b34ea772"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB22659012?pdp_filters=item_id:MLB4647459246",
@@ -1690,7 +1625,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB22659012%3Fpdp_filters%3Ditem_id%253AMLB4647459246&tid=e0a11527-2e9c-4c17-aff6-0298485ad806"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB22659012%3Fpdp_filters%3Ditem_id%253AMLB4647459246&tid=12819b28-4a2d-41d7-abec-347df8d71b49"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB22709368?pdp_filters=item_id:MLB5652240400",
@@ -1703,7 +1638,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB22709368%3Fpdp_filters%3Ditem_id%253AMLB5652240400&tid=65c11c18-7c68-4b70-8141-9274b1f66d26"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB22709368%3Fpdp_filters%3Ditem_id%253AMLB5652240400&tid=538c4438-0857-4ea1-9412-e7187ce4caab"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB23425290?pdp_filters=item_id:MLB3625614489",
@@ -1716,7 +1651,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB23425290%3Fpdp_filters%3Ditem_id%253AMLB3625614489&tid=51201c1a-70e1-4e3b-a86a-fd1e8a8cb64a"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB23425290%3Fpdp_filters%3Ditem_id%253AMLB3625614489&tid=a8734f08-6b12-4741-8636-fe13683a10cb"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB25811837?pdp_filters=item_id:MLB4598515657",
@@ -1729,7 +1664,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB25811837%3Fpdp_filters%3Ditem_id%253AMLB4598515657&tid=ce96d43d-134e-4752-b3cb-1457b7cc9857"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB25811837%3Fpdp_filters%3Ditem_id%253AMLB4598515657&tid=fd079696-ced3-474a-a81e-6d54597aeee4"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB26098574?pdp_filters=item_id:MLB3913887582",
@@ -1742,7 +1677,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB26098574%3Fpdp_filters%3Ditem_id%253AMLB3913887582&tid=8b388ab3-087d-4731-a781-a1b5c87bbd11"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB26098574%3Fpdp_filters%3Ditem_id%253AMLB3913887582&tid=1cde481a-fcdd-4b0b-94f0-9b19004cac0a"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB34102404?pdp_filters=item_id:MLB3741193397",
@@ -1755,7 +1690,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB34102404%3Fpdp_filters%3Ditem_id%253AMLB3741193397&tid=48b25474-5652-4fb9-b086-fdd1647c66ca"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB34102404%3Fpdp_filters%3Ditem_id%253AMLB3741193397&tid=34bc23a3-de53-45a3-aa3c-85e1c4075110"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB35742049?pdp_filters=item_id:MLB5337457588",
@@ -1768,7 +1703,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB35742049%3Fpdp_filters%3Ditem_id%253AMLB5337457588&tid=68ba7e81-7866-4dfd-9ea7-7171d69fb17b"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB35742049%3Fpdp_filters%3Ditem_id%253AMLB5337457588&tid=93aedfb6-32b6-41ce-8763-0df01fdd6af2"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB38492802?pdp_filters=item_id:MLB7417796102",
@@ -1781,7 +1716,33 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB38492802%3Fpdp_filters%3Ditem_id%253AMLB7417796102&tid=ce650f61-9666-42a6-9b8b-c0deb9d41962"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB38492802%3Fpdp_filters%3Ditem_id%253AMLB7417796102&tid=326154c3-e697-42b7-833c-98d95c26d3da"
+  },
+  {
+   "url": "https://www.mercadolivre.com.br/p/MLB39360188",
+   "categoria": "oferta",
+   "paginas": [
+    "/black/"
+   ],
+   "jogo": "Elephant Rally",
+   "loja": "Mercado Livre",
+   "status": "não verificável",
+   "motivo": "robots.txt proíbe robôs nesta página",
+   "http": null,
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB39360188&tid=90208403-7620-485f-a78e-0f2bc7c86607"
+  },
+  {
+   "url": "https://www.mercadolivre.com.br/p/MLB40442410",
+   "categoria": "oferta",
+   "paginas": [
+    "/black/"
+   ],
+   "jogo": "Perfil 7",
+   "loja": "Mercado Livre",
+   "status": "não verificável",
+   "motivo": "robots.txt proíbe robôs nesta página",
+   "http": null,
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB40442410&tid=4e90dc65-6d1b-4630-89e3-59cae901a20f"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB47329717?pdp_filters=item_id:MLB6214538674",
@@ -1794,7 +1755,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB47329717%3Fpdp_filters%3Ditem_id%253AMLB6214538674&tid=c7b2994f-78c5-4a61-a0b3-b74f13ef51fe"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB47329717%3Fpdp_filters%3Ditem_id%253AMLB6214538674&tid=11d98d9a-d7d7-4641-9418-c5af278d8228"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB58370268?pdp_filters=item_id:MLB5771966300",
@@ -1807,10 +1768,10 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB58370268%3Fpdp_filters%3Ditem_id%253AMLB5771966300&tid=72917d30-ccbc-4a51-8757-54346b9a9c77"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB58370268%3Fpdp_filters%3Ditem_id%253AMLB5771966300&tid=bd1c7a9a-d7cb-4f5c-bc77-ffeea18ff1df"
   },
   {
-   "url": "https://www.mercadolivre.com.br/p/MLB59487551?pdp_filters=item_id:MLB4503565085",
+   "url": "https://www.mercadolivre.com.br/p/MLB58552201?pdp_filters=item_id:MLB4359851835",
    "categoria": "oferta",
    "paginas": [
     "/black/"
@@ -1820,7 +1781,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB59487551%3Fpdp_filters%3Ditem_id%253AMLB4503565085&tid=10d37f13-3037-46d5-b399-48f10acac883"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB58552201%3Fpdp_filters%3Ditem_id%253AMLB4359851835&tid=cfe80db7-8422-4f08-a2ed-0ea6ece43453"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB62548317?pdp_filters=item_id:MLB6293749138",
@@ -1833,20 +1794,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB62548317%3Fpdp_filters%3Ditem_id%253AMLB6293749138&tid=392553ef-16bc-41b0-af48-a7a1ce39c5b1"
-  },
-  {
-   "url": "https://www.mercadolivre.com.br/p/MLB66827548?pdp_filters=item_id:MLB6660299536",
-   "categoria": "oferta",
-   "paginas": [
-    "/black/"
-   ],
-   "jogo": "Luz Final",
-   "loja": "Mercado Livre",
-   "status": "não verificável",
-   "motivo": "robots.txt proíbe robôs nesta página",
-   "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB66827548%3Fpdp_filters%3Ditem_id%253AMLB6660299536&tid=dc278546-8447-4047-a935-fb75e77b5f6e"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB62548317%3Fpdp_filters%3Ditem_id%253AMLB6293749138&tid=ef6bb83c-6d34-4a73-808c-dff10ec11f76"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB70580092?pdp_filters=item_id:MLB6901090112",
@@ -1859,11 +1807,11 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB70580092%3Fpdp_filters%3Ditem_id%253AMLB6901090112&tid=e4d3740b-e3de-4eb3-852a-beda3f09c626"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB70580092%3Fpdp_filters%3Ditem_id%253AMLB6901090112&tid=8bd1a219-a7ac-4b9d-9ae5-95ac4e255349"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB75042549?pdp_filters=item_id:MLB4860618321",
-   "categoria": "oferta (mais lojas)",
+   "categoria": "oferta",
    "paginas": [
     "/black/"
    ],
@@ -1872,7 +1820,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB75042549%3Fpdp_filters%3Ditem_id%253AMLB4860618321&tid=8039c353-ec64-4a47-b0fe-9798521c3487"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB75042549%3Fpdp_filters%3Ditem_id%253AMLB4860618321&tid=75b71876-7940-4f50-9f4f-1b4551075031"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB79165418?pdp_filters=item_id:MLB5445171335",
@@ -1885,10 +1833,10 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB79165418%3Fpdp_filters%3Ditem_id%253AMLB5445171335&tid=ffa0868e-8446-4bc7-bb24-b6fc69cafb1c"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB79165418%3Fpdp_filters%3Ditem_id%253AMLB5445171335&tid=dbd39b2b-7d15-4a67-acee-fa2cb0ae7894"
   },
   {
-   "url": "https://www.mercadolivre.com.br/p/MLB8857424?pdp_filters=item_id:MLB4195144346",
+   "url": "https://www.mercadolivre.com.br/p/MLB8857424?pdp_filters=item_id:MLB5270008302",
    "categoria": "oferta",
    "paginas": [
     "/black/"
@@ -1898,10 +1846,10 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB8857424%3Fpdp_filters%3Ditem_id%253AMLB4195144346&tid=aa259594-3e61-477b-927b-5c83146ae20c"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB8857424%3Fpdp_filters%3Ditem_id%253AMLB5270008302&tid=cd3069bb-60ea-4174-8aa1-136303614113"
   },
   {
-   "url": "https://www.mercadolivre.com.br/p/MLB8950241?pdp_filters=item_id:MLB3491700275",
+   "url": "https://www.mercadolivre.com.br/p/MLB8950241?pdp_filters=item_id:MLB4043512373",
    "categoria": "oferta",
    "paginas": [
     "/black/"
@@ -1911,7 +1859,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB8950241%3Fpdp_filters%3Ditem_id%253AMLB3491700275&tid=c99f35ea-23fc-41a8-a181-cfd562edda1b"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB8950241%3Fpdp_filters%3Ditem_id%253AMLB4043512373&tid=1c1fbc1a-7abd-41bc-835e-14f009aa5e32"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB9412100?pdp_filters=item_id:MLB5020184749",
@@ -1924,7 +1872,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB9412100%3Fpdp_filters%3Ditem_id%253AMLB5020184749&tid=d7551fcd-8742-4fa1-9a62-1f0f437aaa93"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB9412100%3Fpdp_filters%3Ditem_id%253AMLB5020184749&tid=5711243c-c6b5-4e9e-b07e-12af33bdb2b2"
   },
   {
    "url": "https://www.odisseiajogos.com.br/board-games/jolly-roger",
@@ -1940,6 +1888,32 @@
    "url_final": "https://www.odisseiajogos.com.br/board-games/jolly-roger"
   },
   {
+   "url": "https://www.placegames.com.br/anachrony",
+   "categoria": "oferta",
+   "paginas": [
+    "/black/"
+   ],
+   "jogo": "Anachrony: Edição Essencial",
+   "loja": "Place Games",
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
+   "url_final": "https://www.placegames.com.br/anachrony"
+  },
+  {
+   "url": "https://www.placegames.com.br/azul-mini-pavilhao-de-verao",
+   "categoria": "oferta",
+   "jogo": "Azul Pavilhão de Verão: Mini",
+   "loja": "Place Games",
+   "paginas": [
+    "(fora do site: retirada do /black/ pela auditoria)"
+   ],
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
+   "url_final": "https://www.placegames.com.br/azul-mini-pavilhao-de-verao"
+  },
+  {
    "url": "https://www.placegames.com.br/batman-gotham-city",
    "categoria": "oferta",
    "paginas": [
@@ -1947,9 +1921,9 @@
    ],
    "jogo": "Batman: Gotham City Sem Lei",
    "loja": "Place Games",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.placegames.com.br/batman-gotham-city"
   },
   {
@@ -1960,9 +1934,9 @@
    ],
    "jogo": "Black Stories Junior: Spooky Stories",
    "loja": "Place Games",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.placegames.com.br/black-stories-junior-spooky"
   },
   {
@@ -1973,9 +1947,9 @@
    ],
    "jogo": "Gangue do Palhaço",
    "loja": "Place Games",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.placegames.com.br/board-games/gangue-do-palhaco"
   },
   {
@@ -1986,9 +1960,9 @@
    ],
    "jogo": "Skim Session",
    "loja": "Place Games",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.placegames.com.br/board-games/skim-session"
   },
   {
@@ -1999,9 +1973,9 @@
    ],
    "jogo": "Campos de Arroz",
    "loja": "Place Games",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.placegames.com.br/boardgames/campos-de-arroz"
   },
   {
@@ -2012,9 +1986,9 @@
    ],
    "jogo": "5 Score",
    "loja": "Place Games",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.placegames.com.br/boardgames/copia-pickomino"
   },
   {
@@ -2025,9 +1999,9 @@
    ],
    "jogo": "Daybreak",
    "loja": "Place Games",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.placegames.com.br/boardgames/daybreak"
   },
   {
@@ -2038,9 +2012,9 @@
    ],
    "jogo": "DC Arena",
    "loja": "Place Games",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.placegames.com.br/boardgames/dc-arena"
   },
   {
@@ -2051,9 +2025,9 @@
    ],
    "jogo": "Deep Sea Adventure Boost",
    "loja": "Place Games",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.placegames.com.br/boardgames/deep-sea-adventure-boost-impulso"
   },
   {
@@ -2064,9 +2038,9 @@
    ],
    "jogo": "Dino Parque",
    "loja": "Place Games",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.placegames.com.br/boardgames/dino-parque"
   },
   {
@@ -2077,9 +2051,9 @@
    ],
    "jogo": "Dungeons of Kards",
    "loja": "Place Games",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.placegames.com.br/boardgames/dungeons-of-kards-deserto-e-fogo"
   },
   {
@@ -2090,10 +2064,23 @@
    ],
    "jogo": "FateFlip: Decretos Reais",
    "loja": "Place Games",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.placegames.com.br/boardgames/fateflip-decretos-reais"
+  },
+  {
+   "url": "https://www.placegames.com.br/boardgames/lets-go-pro-japao",
+   "categoria": "oferta",
+   "paginas": [
+    "/black/"
+   ],
+   "jogo": "Let's Go! Pro Japão",
+   "loja": "Place Games",
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
+   "url_final": "https://www.placegames.com.br/boardgames/lets-go-pro-japao"
   },
   {
    "url": "https://www.placegames.com.br/boardgames/m-w-a-t",
@@ -2103,9 +2090,9 @@
    ],
    "jogo": "M.W.A.T.",
    "loja": "Place Games",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.placegames.com.br/boardgames/m-w-a-t"
   },
   {
@@ -2116,22 +2103,22 @@
    ],
    "jogo": "Neuroshima Hex: Battle",
    "loja": "Place Games",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.placegames.com.br/boardgames/neuroshima-hex-battle-policia-de-aco-vs-feras"
   },
   {
    "url": "https://www.placegames.com.br/boardgames/patchwork",
-   "categoria": "oferta (mais lojas)",
+   "categoria": "oferta",
    "paginas": [
     "/black/"
    ],
    "jogo": "Patchwork",
    "loja": "Place Games",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.placegames.com.br/boardgames/patchwork"
   },
   {
@@ -2142,9 +2129,9 @@
    ],
    "jogo": "PubliCidade",
    "loja": "Place Games",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.placegames.com.br/boardgames/publicidade-jogo-across"
   },
   {
@@ -2155,22 +2142,35 @@
    ],
    "jogo": "Score Cards",
    "loja": "Place Games",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.placegames.com.br/boardgames/score-cards"
   },
   {
-   "url": "https://www.placegames.com.br/boardgames/take-time",
+   "url": "https://www.placegames.com.br/boardgames/sky-towers",
    "categoria": "oferta",
+   "jogo": "Sky Towers",
+   "loja": "Place Games",
+   "paginas": [
+    "(fora do site: retirada do /black/ pela auditoria)"
+   ],
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
+   "url_final": "https://www.placegames.com.br/boardgames/sky-towers"
+  },
+  {
+   "url": "https://www.placegames.com.br/boardgames/take-time",
+   "categoria": "oferta (mais lojas)",
    "paginas": [
     "/black/"
    ],
    "jogo": "Take Time",
    "loja": "Place Games",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.placegames.com.br/boardgames/take-time"
   },
   {
@@ -2181,9 +2181,9 @@
    ],
    "jogo": "Caveiras de Sedlec",
    "loja": "Place Games",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.placegames.com.br/caveiras-de-sedlec"
   },
   {
@@ -2194,22 +2194,22 @@
    ],
    "jogo": "Color Addict",
    "loja": "Place Games",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.placegames.com.br/color-addict-cartucho"
   },
   {
    "url": "https://www.placegames.com.br/draftosaurus-marina-e-show-aereo",
-   "categoria": "oferta (mais lojas)",
+   "categoria": "oferta",
    "paginas": [
     "/black/"
    ],
    "jogo": "Draftosaurus: Marina e Show Aéreo",
    "loja": "Place Games",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.placegames.com.br/draftosaurus-marina-e-show-aereo"
   },
   {
@@ -2220,9 +2220,9 @@
    ],
    "jogo": "Lux Nova",
    "loja": "Place Games",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.placegames.com.br/lux-nova-micro-box"
   },
   {
@@ -2233,9 +2233,9 @@
    ],
    "jogo": "Magic Maze: Maximum Security",
    "loja": "Place Games",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.placegames.com.br/magic-maze-maximum-security"
   },
   {
@@ -2246,9 +2246,9 @@
    ],
    "jogo": "Mysterium: Secrets & Lies",
    "loja": "Place Games",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.placegames.com.br/mysterium-secrets-and-lies"
   },
   {
@@ -2259,9 +2259,9 @@
    ],
    "jogo": "Black Stories Junior: Orange Stories",
    "loja": "Place Games",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.placegames.com.br/orange-stories"
   },
   {
@@ -2272,9 +2272,9 @@
    ],
    "jogo": "Quest",
    "loja": "Place Games",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.placegames.com.br/quest"
   },
   {
@@ -2285,9 +2285,9 @@
    ],
    "jogo": "S'Crew UP: Bots & Nuts",
    "loja": "Place Games",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.placegames.com.br/screw-up"
   },
   {
@@ -2298,9 +2298,9 @@
    ],
    "jogo": "Sleeping Gods: Dungeons",
    "loja": "Place Games",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.placegames.com.br/sleeping-gods-dungeons"
   },
   {
@@ -2311,9 +2311,9 @@
    ],
    "jogo": "50 Filhotes",
    "loja": "PlayEasy",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.playeasy.com.br/50-filhotes"
   },
   {
@@ -2324,9 +2324,9 @@
    ],
    "jogo": "Anachrony: Edição Essencial",
    "loja": "PlayEasy",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.playeasy.com.br/anachrony-edic-o-essencial"
   },
   {
@@ -2337,10 +2337,23 @@
    ],
    "jogo": "Citadels",
    "loja": "PlayEasy",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.playeasy.com.br/citadels-2a-edicao-revisada"
+  },
+  {
+   "url": "https://www.playeasy.com.br/draftosaurus",
+   "categoria": "oferta",
+   "paginas": [
+    "/black/"
+   ],
+   "jogo": "Draftosaurus",
+   "loja": "PlayEasy",
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
+   "url_final": "https://www.playeasy.com.br/draftosaurus"
   },
   {
    "url": "https://www.playeasy.com.br/fateflip-arrastado-pelo-mar",
@@ -2350,9 +2363,9 @@
    ],
    "jogo": "FateFlip: Arrastado pelo Mar",
    "loja": "PlayEasy",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.playeasy.com.br/fateflip-arrastado-pelo-mar"
   },
   {
@@ -2363,9 +2376,9 @@
    ],
    "jogo": "QuiFeras",
    "loja": "PlayEasy",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.playeasy.com.br/quiferas"
   },
   {
@@ -2376,23 +2389,10 @@
    ],
    "jogo": "Sleeve Yucatan (54x80mm)",
    "loja": "PlayEasy",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.playeasy.com.br/sleeve-yucatan-54-mm-x-80-mm-meeple-virus-blue-core"
-  },
-  {
-   "url": "https://www.playeasy.com.br/sleeves-quadrado-pequeno-60-x-60-mm-blue-core",
-   "categoria": "oferta",
-   "paginas": [
-    "/black/"
-   ],
-   "jogo": "Sleeve Quadrado Pequeno (60x60mm)",
-   "loja": "PlayEasy",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
-   "url_final": "https://www.playeasy.com.br/sleeves-quadrado-pequeno-60-x-60-mm-blue-core"
   },
   {
    "url": "https://www.spaceboardgames.com.br/jogos-de-tabuleiro/funocracy",
@@ -2402,9 +2402,9 @@
    ],
    "jogo": "Funocracy",
    "loja": "Space Board Games",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.spaceboardgames.com.br/jogos-de-tabuleiro/funocracy"
   },
   {
@@ -2415,9 +2415,9 @@
    ],
    "jogo": "Rory's Story Cubes: Harry Potter",
    "loja": "TabuleRIO",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.tabulerio.com.br/jogos/cooperativos/rory-s-story-cubes-harry-potter"
   },
   {
@@ -2428,9 +2428,9 @@
    ],
    "jogo": "Anachrony: Edição Essencial",
    "loja": "TabuleRIO",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.tabulerio.com.br/jogos/jogos-de-tabuleiro/anachrony-edicao-essencial"
   },
   {
@@ -2441,9 +2441,9 @@
    ],
    "jogo": "Emblems",
    "loja": "TabuleRIO",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.tabulerio.com.br/jogos/linha-familia/emblems"
   },
   {
@@ -2454,9 +2454,9 @@
    ],
    "jogo": "5-Minute One Piece",
    "loja": "TabuLoja",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/5-minute-one-piece"
   },
   {
@@ -2467,9 +2467,9 @@
    ],
    "jogo": "CATsle Builders",
    "loja": "TabuLoja",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/catsle-builders-1913"
   },
   {
@@ -2480,9 +2480,9 @@
    ],
    "jogo": "Covenant",
    "loja": "TabuLoja",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/covenant"
   },
   {
@@ -2493,9 +2493,9 @@
    ],
    "jogo": "Deep Sea Adventure Boost",
    "loja": "TabuLoja",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/deep-sea-adventure-impulso"
   },
   {
@@ -2506,9 +2506,9 @@
    ],
    "jogo": "Nezen",
    "loja": "TabuLoja",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/nezen"
   },
   {
@@ -2519,9 +2519,9 @@
    ],
    "jogo": "Night Parade of a Hundred Yokai: Cursed Throne Expansion",
    "loja": "TabuLoja",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/night-parade-of-a-hundred-yokai-cursed-throne-expansion"
   },
   {
@@ -2532,9 +2532,9 @@
    ],
    "jogo": "Oak",
    "loja": "TabuLoja",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/oak"
   },
   {
@@ -2545,9 +2545,9 @@
    ],
    "jogo": "Rolimã",
    "loja": "TabuLoja",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/rolima"
   },
   {
@@ -2558,9 +2558,9 @@
    ],
    "jogo": "Tacta",
    "loja": "TabuLoja",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/tacta"
   },
   {
@@ -2571,9 +2571,9 @@
    ],
    "jogo": "Bazaars of Ubar",
    "loja": "TabuLoja",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/the-bazaars-of-ubar-exclusividade-tabuloja"
   },
   {
@@ -2584,62 +2584,10 @@
    ],
    "jogo": "Trolls & Princesas",
    "loja": "TabuLoja",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/trolls-e-princesas"
-  },
-  {
-   "url": "https://www.tavernareal.com/tabuleiro/elephant-rally",
-   "categoria": "oferta",
-   "paginas": [
-    "/black/"
-   ],
-   "jogo": "Elephant Rally",
-   "loja": "Taverna Real",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
-   "url_final": "https://www.tavernareal.com/tabuleiro/elephant-rally"
-  },
-  {
-   "url": "https://www.tavernareal.com/tabuleiro/expansoes/reload-capture-the-flag-expansao",
-   "categoria": "oferta",
-   "paginas": [
-    "/black/"
-   ],
-   "jogo": "Reload: Capture the Flag",
-   "loja": "Taverna Real",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
-   "url_final": "https://www.tavernareal.com/tabuleiro/expansoes/reload-capture-the-flag-expansao"
-  },
-  {
-   "url": "https://www.tavernareal.com/tabuleiro/expansoes/reload-rumble-expansao",
-   "categoria": "oferta",
-   "paginas": [
-    "/black/"
-   ],
-   "jogo": "Reload: Rumble",
-   "loja": "Taverna Real",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
-   "url_final": "https://www.tavernareal.com/tabuleiro/expansoes/reload-rumble-expansao"
-  },
-  {
-   "url": "https://www.tavernareal.com/tabuleiro/magic-maze-maximum-security",
-   "categoria": "oferta (mais lojas)",
-   "paginas": [
-    "/black/"
-   ],
-   "jogo": "Magic Maze: Maximum Security",
-   "loja": "Taverna Real",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
-   "url_final": "https://www.tavernareal.com/tabuleiro/magic-maze-maximum-security"
   },
   {
    "url": "https://www.tavernareal.com/tabuleiro/night-parade-cursed-throne-expansao",
@@ -2649,9 +2597,9 @@
    ],
    "jogo": "Night Parade of a Hundred Yokai: Cursed Throne Expansion",
    "loja": "Taverna Real",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.tavernareal.com/tabuleiro/night-parade-cursed-throne-expansao"
   },
   {
@@ -2662,36 +2610,10 @@
    ],
    "jogo": "Oak",
    "loja": "Taverna Real",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.tavernareal.com/tabuleiro/oak"
-  },
-  {
-   "url": "https://www.tavernareal.com/tabuleiro/os-palacios-de-carrara",
-   "categoria": "oferta (mais lojas)",
-   "paginas": [
-    "/black/"
-   ],
-   "jogo": "Os Palácios de Carrara (Segunda Edição)",
-   "loja": "Taverna Real",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
-   "url_final": "https://www.tavernareal.com/tabuleiro/os-palacios-de-carrara"
-  },
-  {
-   "url": "https://www.tavernareal.com/tabuleiro/sleeping-gods-dungeons-expansao",
-   "categoria": "oferta (mais lojas)",
-   "paginas": [
-    "/black/"
-   ],
-   "jogo": "Sleeping Gods: Dungeons",
-   "loja": "Taverna Real",
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
-   "url_final": "https://www.tavernareal.com/tabuleiro/sleeping-gods-dungeons-expansao"
   },
   {
    "url": "https://www.amazon.com.br/s?k=mysterium+kids",
@@ -2731,19 +2653,6 @@
    "motivo": "página não existe (404)",
    "http": 404,
    "url_final": "https://www.comparajogos.com.br/item/satisfactory"
-  },
-  {
-   "url": "https://www.tavernareal.com/tabuleiro/luz-final-edicao-deluxe",
-   "categoria": "loja",
-   "paginas": [
-    "/last-light/"
-   ],
-   "jogo": null,
-   "loja": null,
-   "status": "ERRO",
-   "motivo": "página sem sinal de produto (sem JSON-LD Product/Offer, og:type product nem preço e botão de compra)",
-   "http": 200,
-   "url_final": "https://www.tavernareal.com/sem-resultados-na-busca"
   },
   {
    "url": "http://www.catanbrasil.com.br/",
@@ -4769,19 +4678,6 @@
    "url_final": "https://brecholudico.com.br/product-category/galapagos/"
   },
   {
-   "url": "https://brecholudico.com.br/produto/dino-fun/",
-   "categoria": "achado",
-   "paginas": [
-    "/black/"
-   ],
-   "jogo": null,
-   "loja": null,
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
-   "url_final": "https://brecholudico.com.br/produto/dino-fun/"
-  },
-  {
    "url": "https://brecholudico.com.br/produto/gloomhaven/",
    "categoria": "loja",
    "paginas": [
@@ -4793,19 +4689,6 @@
    "motivo": "página do produto",
    "http": 200,
    "url_final": "https://brecholudico.com.br/produto/gloomhaven/"
-  },
-  {
-   "url": "https://brecholudico.com.br/produto/os-palacios-de-carrara-segunda-edicao/",
-   "categoria": "achado",
-   "paginas": [
-    "/black/"
-   ],
-   "jogo": null,
-   "loja": null,
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
-   "url_final": "https://brecholudico.com.br/produto/os-palacios-de-carrara-segunda-edicao/"
   },
   {
    "url": "https://brecholudico.com.br/produto/root/",
@@ -15022,9 +14905,9 @@
    ],
    "jogo": null,
    "loja": null,
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.alquimistasdosjogos.com.br/jogos/dorfromantik-the-board-game-great-mill"
   },
   {
@@ -15035,10 +14918,10 @@
    ],
    "jogo": null,
    "loja": null,
-   "status": "ok",
-   "motivo": "página do produto (com redirecionamento dentro da loja)",
-   "http": 200,
-   "url_final": "https://www.alquimistasdosjogos.com.br/sem-resultados-na-busca"
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
+   "url_final": "https://www.alquimistasdosjogos.com.br/jogos/heat-chuva-forte"
   },
   {
    "url": "https://www.alquimistasdosjogos.com.br/jogos/luz-final-edicao-deluxe-completa",
@@ -15048,9 +14931,9 @@
    ],
    "jogo": null,
    "loja": null,
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.alquimistasdosjogos.com.br/jogos/luz-final-edicao-deluxe-completa"
   },
   {
@@ -15061,9 +14944,9 @@
    ],
    "jogo": null,
    "loja": null,
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.alquimistasdosjogos.com.br/jogos/rebirth"
   },
   {
@@ -16229,10 +16112,10 @@
    ],
    "jogo": null,
    "loja": "Border Jogos",
-   "status": "ok",
-   "motivo": "loja responde (cupom vale para a loja)",
-   "http": 200,
-   "url_final": "https://www.borderjogos.com.br/sem-resultados-na-busca"
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
+   "url_final": "https://www.borderjogos.com.br/promocoes"
   },
   {
    "url": "https://www.brinka.shop/estrategia-tabuleiro-e-rpg/codigo-secreto-devir",
@@ -16351,9 +16234,9 @@
    ],
    "jogo": null,
    "loja": null,
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.cangaiajogos.com.br/bomb-busters"
   },
   {
@@ -16364,9 +16247,9 @@
    ],
    "jogo": null,
    "loja": null,
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.cangaiajogos.com.br/cascadia"
   },
   {
@@ -16377,9 +16260,9 @@
    ],
    "jogo": null,
    "loja": null,
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.cangaiajogos.com.br/luz-final-edicao-deluxe-infinty"
   },
   {
@@ -19331,9 +19214,9 @@
    ],
    "jogo": null,
    "loja": null,
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.happynerd.com.br/detective-o-jogo-da-investigacao-moderna"
   },
   {
@@ -20042,9 +19925,9 @@
    ],
    "jogo": null,
    "loja": null,
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.livtoys.com.br/boardgames/seti-busca-por-inteligencia-extraterrestre"
   },
   {
@@ -20072,19 +19955,6 @@
    "motivo": "página do produto",
    "http": 200,
    "url_final": "https://www.lojameeplebrjogos.com.br/colt-express"
-  },
-  {
-   "url": "https://www.lojameeplebrjogos.com.br/fornalha",
-   "categoria": "achado",
-   "paginas": [
-    "/black/"
-   ],
-   "jogo": null,
-   "loja": null,
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
-   "url_final": "https://www.lojameeplebrjogos.com.br/fornalha"
   },
   {
    "url": "https://www.lojameeplebrjogos.com.br/root",
@@ -20255,9 +20125,9 @@
    ],
    "jogo": null,
    "loja": null,
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.masmorra.com.br/produtos/atb0020"
   },
   {
@@ -20268,23 +20138,10 @@
    ],
    "jogo": null,
    "loja": null,
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.masmorra.com.br/produtos/bgcarafps"
-  },
-  {
-   "url": "https://www.masmorra.com.br/produtos/bgcarcaps",
-   "categoria": "achado",
-   "paginas": [
-    "/black/"
-   ],
-   "jogo": null,
-   "loja": null,
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
-   "url_final": "https://www.masmorra.com.br/produtos/bgcarcaps"
   },
   {
    "url": "https://www.masmorra.com.br/produtos/bgcarvops",
@@ -20294,9 +20151,9 @@
    ],
    "jogo": null,
    "loja": null,
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.masmorra.com.br/produtos/bgcarvops"
   },
   {
@@ -20307,10 +20164,49 @@
    ],
    "jogo": null,
    "loja": null,
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.masmorra.com.br/produtos/bgexit28pt"
+  },
+  {
+   "url": "https://www.masmorra.com.br/produtos/bgparptit",
+   "categoria": "achado",
+   "paginas": [
+    "/black/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
+   "url_final": "https://www.masmorra.com.br/produtos/bgparptit"
+  },
+  {
+   "url": "https://www.masmorra.com.br/produtos/bgredpt",
+   "categoria": "achado",
+   "paginas": [
+    "/black/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
+   "url_final": "https://www.masmorra.com.br/produtos/bgredpt"
+  },
+  {
+   "url": "https://www.masmorra.com.br/produtos/bgregtr",
+   "categoria": "achado",
+   "paginas": [
+    "/black/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
+   "url_final": "https://www.masmorra.com.br/produtos/bgregtr"
   },
   {
    "url": "https://www.masmorra.com.br/produtos/dun001",
@@ -20320,9 +20216,9 @@
    ],
    "jogo": null,
    "loja": null,
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.masmorra.com.br/produtos/dun001"
   },
   {
@@ -20333,9 +20229,9 @@
    ],
    "jogo": null,
    "loja": null,
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.masmorra.com.br/produtos/glh101"
   },
   {
@@ -20346,9 +20242,9 @@
    ],
    "jogo": null,
    "loja": null,
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.masmorra.com.br/produtos/grk0151"
   },
   {
@@ -20359,9 +20255,9 @@
    ],
    "jogo": null,
    "loja": null,
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.masmorra.com.br/produtos/pan721"
   },
   {
@@ -20372,9 +20268,9 @@
    ],
    "jogo": null,
    "loja": null,
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.masmorra.com.br/produtos/pldmos5001"
   },
   {
@@ -21183,7 +21079,20 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fark-nova-jogo-de-tabuleiroboard-game-grok%2Fp%2FMLB23073841&tid=1eada16e-174b-477f-92fc-6d2c8cbbf8a6"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fark-nova-jogo-de-tabuleiroboard-game-grok%2Fp%2FMLB23073841&tid=6327519c-7c67-4406-866a-23ead9491995"
+  },
+  {
+   "url": "https://www.mercadolivre.com.br/p/MLB19807546",
+   "categoria": "achado",
+   "paginas": [
+    "/black/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não verificável",
+   "motivo": "robots.txt proíbe robôs nesta página",
+   "http": null,
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB19807546&tid=5f9be9ff-c4e1-4520-b0f2-0b882ea0be26"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB20246488",
@@ -21196,20 +21105,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB20246488&tid=ff5688f0-924d-4aab-9bdb-831c2f4d1d40"
-  },
-  {
-   "url": "https://www.mercadolivre.com.br/p/MLB36701022",
-   "categoria": "achado",
-   "paginas": [
-    "/black/"
-   ],
-   "jogo": null,
-   "loja": null,
-   "status": "não verificável",
-   "motivo": "robots.txt proíbe robôs nesta página",
-   "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB36701022&tid=1c368c42-8abc-47f5-8a25-a0bb66e0ccea"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB20246488&tid=47d50ef7-98fc-4e06-ad8a-3ca89cc13444"
   },
   {
    "url": "https://www.mercadolivre.com.br/p/MLB67988580",
@@ -21222,7 +21118,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB67988580&tid=ae3fe515-cee9-4410-9be7-804ded9ef82d"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Fp%2FMLB67988580&tid=003f25dd-72af-4816-ab13-8becba148a56"
   },
   {
    "url": "https://www.mercadolivre.com.br/root-board-game-meeplebr-pt-br/p/MLB19709898",
@@ -21235,7 +21131,7 @@
    "status": "não verificável",
    "motivo": "robots.txt proíbe robôs nesta página",
    "http": null,
-   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Froot-board-game-meeplebr-pt-br%2Fp%2FMLB19709898&tid=1ff8a973-7fad-4244-b7b2-e4871c0cbb7b"
+   "url_final": "https://www.mercadolivre.com.br/gz/account-verification?go=https%3A%2F%2Fwww.mercadolivre.com.br%2Froot-board-game-meeplebr-pt-br%2Fp%2FMLB19709898&tid=1d1865be-bbc3-4933-b659-7da3d576da80"
   },
   {
    "url": "https://www.miniaturemarket.com/galactic-cruise-kkg-gme-gc.html",
@@ -21278,9 +21174,9 @@
    ],
    "jogo": null,
    "loja": null,
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.mosaicoloja.com.br/lancamentos/inventores-do-sul-do-tigres"
   },
   {
@@ -21291,9 +21187,9 @@
    ],
    "jogo": null,
    "loja": null,
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.mosaicoloja.com.br/pre-venda/mosaico-jogos-luz-final-deluxe-all-in"
   },
   {
@@ -21304,9 +21200,9 @@
    ],
    "jogo": null,
    "loja": null,
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.mosaicoloja.com.br/speakeasy-on-demand-lacerda"
   },
   {
@@ -21411,32 +21307,6 @@
    "motivo": "página do produto",
    "http": 200,
    "url_final": "https://www.odisseiajogos.com.br/board-games/seti"
-  },
-  {
-   "url": "https://www.odisseiajogos.com.br/rpg/the-witcher-rpg-o-diario-do-bruxo",
-   "categoria": "achado",
-   "paginas": [
-    "/black/"
-   ],
-   "jogo": null,
-   "loja": null,
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
-   "url_final": "https://www.odisseiajogos.com.br/rpg/the-witcher-rpg-o-diario-do-bruxo"
-  },
-  {
-   "url": "https://www.odisseiajogos.com.br/rpg/the-witcher-rpg-o-livro-de-contos",
-   "categoria": "achado",
-   "paginas": [
-    "/black/"
-   ],
-   "jogo": null,
-   "loja": null,
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
-   "url_final": "https://www.odisseiajogos.com.br/rpg/the-witcher-rpg-o-livro-de-contos"
   },
   {
    "url": "https://www.omelete.com.br/games/o-senhor-dos-aneis-board-game-inimigos-da-terra-media",
@@ -21619,23 +21489,10 @@
    ],
    "jogo": null,
    "loja": null,
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.placegames.com.br/boardgames/akigam-linha-slim"
-  },
-  {
-   "url": "https://www.placegames.com.br/boardgames/dungeon-rummy-golems-vs-goblins-expansao",
-   "categoria": "achado",
-   "paginas": [
-    "/black/"
-   ],
-   "jogo": null,
-   "loja": null,
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
-   "url_final": "https://www.placegames.com.br/boardgames/dungeon-rummy-golems-vs-goblins-expansao"
   },
   {
    "url": "https://www.placegames.com.br/boardgames/meister-makatsu",
@@ -21645,9 +21502,9 @@
    ],
    "jogo": null,
    "loja": null,
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.placegames.com.br/boardgames/meister-makatsu"
   },
   {
@@ -21658,9 +21515,9 @@
    ],
    "jogo": null,
    "loja": null,
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.placegames.com.br/boardgames/setup"
   },
   {
@@ -21671,10 +21528,10 @@
    ],
    "jogo": null,
    "loja": null,
-   "status": "ok",
-   "motivo": "página do produto (com redirecionamento dentro da loja)",
-   "http": 200,
-   "url_final": "https://www.placegames.com.br/sem-resultados-na-busca"
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
+   "url_final": "https://www.placegames.com.br/the-mind"
   },
   {
    "url": "https://www.placegames.com.br/themind",
@@ -21684,10 +21541,10 @@
    ],
    "jogo": null,
    "loja": null,
-   "status": "ok",
-   "motivo": "página do produto (com redirecionamento dentro da loja)",
-   "http": 200,
-   "url_final": "https://www.placegames.com.br/sem-resultados-na-busca"
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
+   "url_final": "https://www.placegames.com.br/themind"
   },
   {
    "url": "https://www.planetongames.com/es/coffee-rush-invierno-p-12654.html",
@@ -21720,9 +21577,9 @@
    ],
    "jogo": null,
    "loja": "PlayEasy",
-   "status": "ok",
-   "motivo": "loja responde (cupom vale para a loja)",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.playeasy.com.br/"
   },
   {
@@ -21733,10 +21590,10 @@
    ],
    "jogo": null,
    "loja": null,
-   "status": "ok",
-   "motivo": "página do produto (com redirecionamento dentro da loja)",
-   "http": 200,
-   "url_final": "https://www.playeasy.com.br/luz-final-edicao-deluxe-completa/"
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
+   "url_final": "https://www.playeasy.com.br/luz-final-edicao-deluxe-completa.html"
   },
   {
    "url": "https://www.playeasy.com.br/luz-final-edicao-deluxe.html",
@@ -21746,10 +21603,10 @@
    ],
    "jogo": null,
    "loja": null,
-   "status": "ok",
-   "motivo": "página do produto (com redirecionamento dentro da loja)",
-   "http": 200,
-   "url_final": "https://www.playeasy.com.br/luz-final-edicao-deluxe/"
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
+   "url_final": "https://www.playeasy.com.br/luz-final-edicao-deluxe.html"
   },
   {
    "url": "https://www.playeasy.com.br/santuario/",
@@ -21759,10 +21616,23 @@
    ],
    "jogo": null,
    "loja": null,
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.playeasy.com.br/santuario/"
+  },
+  {
+   "url": "https://www.playeasy.com.br/sleeves-quadrado-pequeno-60-x-60-mm-blue-core",
+   "categoria": "achado",
+   "paginas": [
+    "/black/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
+   "url_final": "https://www.playeasy.com.br/sleeves-quadrado-pequeno-60-x-60-mm-blue-core"
   },
   {
    "url": "https://www.playeasy.com.br/sleeves-tarot-frances-61-x-112-mm-blue-core",
@@ -21772,9 +21642,9 @@
    ],
    "jogo": null,
    "loja": null,
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.playeasy.com.br/sleeves-tarot-frances-61-x-112-mm-blue-core"
   },
   {
@@ -21886,6 +21756,17 @@
   },
   {
    "url": "https://www.promobit.com.br/cupons/loja/casas-bahia/",
+   "categoria": "outro",
+   "paginas": [
+    "/black/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não conferido",
+   "motivo": "link que não é de oferta nem de loja (fonte, rede social, editora)"
+  },
+  {
+   "url": "https://www.promobit.com.br/cupons/loja/shoptime/",
    "categoria": "outro",
    "paginas": [
     "/black/"
@@ -22090,9 +21971,9 @@
    ],
    "jogo": null,
    "loja": null,
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.spaceboardgames.com.br/jogos-de-tabuleiro/micromacro-a-cidade-do-crime"
   },
   {
@@ -22828,9 +22709,9 @@
    ],
    "jogo": null,
    "loja": null,
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.tabulerio.com.br/jogos/cooperativos/kinfire-delve-a-gruta-de-vainglory"
   },
   {
@@ -22841,9 +22722,9 @@
    ],
    "jogo": null,
    "loja": null,
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.tabulerio.com.br/jogos/cooperativos/kinfire-delve-o-forte-de-scorn"
   },
   {
@@ -22854,9 +22735,9 @@
    ],
    "jogo": null,
    "loja": null,
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.tabulerio.com.br/jogos/cooperativos/kinfire-delve-o-laboratorio-de-callous"
   },
   {
@@ -22867,49 +22748,10 @@
    ],
    "jogo": null,
    "loja": null,
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.tabulerio.com.br/jogos/cooperativos/kinfire-delve-pack"
-  },
-  {
-   "url": "https://www.tabulerio.com.br/jogos/expert/marcha-das-formigas",
-   "categoria": "achado",
-   "paginas": [
-    "/black/"
-   ],
-   "jogo": null,
-   "loja": null,
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
-   "url_final": "https://www.tabulerio.com.br/jogos/expert/marcha-das-formigas"
-  },
-  {
-   "url": "https://www.tabulerio.com.br/jogos/jogos-de-carta/bla-bla-bel",
-   "categoria": "achado",
-   "paginas": [
-    "/black/"
-   ],
-   "jogo": null,
-   "loja": null,
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
-   "url_final": "https://www.tabulerio.com.br/jogos/jogos-de-carta/bla-bla-bel"
-  },
-  {
-   "url": "https://www.tabulerio.com.br/jogos/jogos-de-entrada/dixit",
-   "categoria": "achado",
-   "paginas": [
-    "/black/"
-   ],
-   "jogo": null,
-   "loja": null,
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
-   "url_final": "https://www.tabulerio.com.br/jogos/jogos-de-entrada/dixit"
   },
   {
    "url": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/light-speed-arena",
@@ -22919,9 +22761,9 @@
    ],
    "jogo": null,
    "loja": null,
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/light-speed-arena"
   },
   {
@@ -22965,9 +22807,9 @@
    ],
    "jogo": null,
    "loja": null,
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.tavernareal.com/tabuleiro/heat-pedal-to-the-metal"
   },
   {
@@ -22978,10 +22820,23 @@
    ],
    "jogo": null,
    "loja": null,
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.tavernareal.com/tabuleiro/heat-visao-em-tunel-expansao"
+  },
+  {
+   "url": "https://www.tavernareal.com/tabuleiro/luz-final-edicao-deluxe",
+   "categoria": "loja",
+   "paginas": [
+    "/last-light/"
+   ],
+   "jogo": null,
+   "loja": null,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
+   "url_final": "https://www.tavernareal.com/tabuleiro/luz-final-edicao-deluxe"
   },
   {
    "url": "https://www.tavernareal.com/tabuleiro/paleo",
@@ -22991,9 +22846,9 @@
    ],
    "jogo": null,
    "loja": null,
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.tavernareal.com/tabuleiro/paleo"
   },
   {
@@ -23004,9 +22859,9 @@
    ],
    "jogo": null,
    "loja": null,
-   "status": "ok",
-   "motivo": "página do produto",
-   "http": 200,
+   "status": "não verificável",
+   "motivo": "robots.txt respondeu 403 (bloqueio)",
+   "http": null,
    "url_final": "https://www.tavernareal.com/tabuleiro/root"
   },
   {
@@ -24384,7 +24239,7 @@
   "/ark-nova/": 21,
   "/arnak/": 22,
   "/azul/": 23,
-  "/black/": 435,
+  "/black/": 422,
   "/black/robo/": 8,
   "/bomb-busters/": 21,
   "/brass-birmingham/": 28,
