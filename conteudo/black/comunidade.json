@@ -1,120 +1,4 @@
 {
- "tg:ComparaJogos/52630:0": {
-  "cupom": null,
-  "dominio": "www.comparajogos.com.br",
-  "fonte": "Telegram: Canal Compara Jogos",
-  "imagem": "https://uploads.comparajogos.com.br/img/b433395f85302c08c4dcce24729f3084f218ab89.jpg",
-  "jogo": "my-little-scythe",
-  "link": "https://t.me/ComparaJogos/52630",
-  "link_loja": "https://www.comparajogos.com.br/item/my-little-scythe",
-  "loja": "Amazon",
-  "menor": 269.1,
-  "preco": 259.12,
-  "preco_antes": null,
-  "publicado": "2026-11-06T15:16:20+00:00",
-  "ref": 287.18,
-  "ref_dias": 36,
-  "ref_fonte": "nossa base (Compara Jogos)",
-  "slug_cj": "my-little-scythe",
-  "tipo_preco": "NORMAL",
-  "titulo": "My Little Scythe",
-  "visto": "2026-11-06T19:59-03:00"
- },
- "tg:ComparaJogos/52631:0": {
-  "bgg": 6.47423,
-  "cupom": null,
-  "dominio": "www.comparajogos.com.br",
-  "editora": "Helvetiq",
-  "fonte": "Telegram: Canal Compara Jogos",
-  "imagem": "https://uploads.comparajogos.com.br/img/bbfc5ba11ea320ad0a8dcf690e9246d189a23fd0.png",
-  "jogo": null,
-  "link": "https://t.me/ComparaJogos/52631",
-  "link_loja": "https://www.comparajogos.com.br/item/bandida",
-  "loja": "Pittas Board Games",
-  "menor": 49.19,
-  "nome_cj": "Bandida",
-  "preco": 41.85,
-  "preco_antes": null,
-  "publicado": "2026-11-06T15:23:33+00:00",
-  "ref": 49.45,
-  "ref_dias": 32,
-  "ref_fonte": "Compara Jogos",
-  "slug_cj": "bandida",
-  "tipo_cj": "game",
-  "tipo_preco": "NORMAL",
-  "titulo": "Bandida",
-  "visto": "2026-11-06T19:59-03:00"
- },
- "tg:ComparaJogos/52632:0": {
-  "cupom": null,
-  "dominio": "www.comparajogos.com.br",
-  "fonte": "Telegram: Canal Compara Jogos",
-  "jogo": "pot-de-vin",
-  "link": "https://t.me/ComparaJogos/52632",
-  "link_loja": "https://www.comparajogos.com.br/item/pot-de-vin",
-  "loja": "Pittas Board Games",
-  "preco": 83.7,
-  "preco_antes": null,
-  "publicado": "2026-11-06T15:23:35+00:00",
-  "tipo_preco": "NORMAL",
-  "titulo": "Pot de Vin",
-  "visto": "2026-11-06T19:59-03:00"
- },
- "tg:ComparaJogos/52633:0": {
-  "cupom": null,
-  "dominio": "www.comparajogos.com.br",
-  "fonte": "Telegram: Canal Compara Jogos",
-  "jogo": "disney-the-haunted-mansion-call-of-the-spirits-game",
-  "link": "https://t.me/ComparaJogos/52633",
-  "link_loja": "https://www.comparajogos.com.br/item/disney-the-haunted-mansion-call-of-the-spirits-game",
-  "loja": "Amazon",
-  "preco": 220.71,
-  "preco_antes": null,
-  "publicado": "2026-11-06T15:28:00+00:00",
-  "tipo_preco": "NORMAL",
-  "titulo": "Disney: The Haunted Mansion Call of the Spirits Game",
-  "visto": "2026-11-06T19:59-03:00"
- },
- "tg:ComparaJogos/52634:0": {
-  "bgg": 5.52703,
-  "cupom": null,
-  "dominio": "www.comparajogos.com.br",
-  "editora": "F.X. Schmid",
-  "fonte": "Telegram: Canal Compara Jogos",
-  "imagem": "https://uploads.comparajogos.com.br/img/a0e0a2a0de115f3c12e0afa7796c1b780da20167.jpg",
-  "jogo": null,
-  "link": "https://t.me/ComparaJogos/52634",
-  "link_loja": "https://www.comparajogos.com.br/item/basta",
-  "loja": "Mercado Livre",
-  "menor": 49.02,
-  "nome_cj": "Basta!",
-  "preco": 49.02,
-  "preco_antes": null,
-  "publicado": "2026-11-06T15:31:56+00:00",
-  "ref": 53.67,
-  "ref_dias": 9,
-  "ref_fonte": "Compara Jogos",
-  "slug_cj": "basta",
-  "tipo_cj": "game",
-  "tipo_preco": "NORMAL",
-  "titulo": "Basta!",
-  "visto": "2026-11-06T20:29-03:00"
- },
- "tg:ComparaJogos/52635:0": {
-  "cupom": null,
-  "dominio": "www.comparajogos.com.br",
-  "fonte": "Telegram: Canal Compara Jogos",
-  "jogo": "deckscape-behind-the-curtain",
-  "link": "https://t.me/ComparaJogos/52635",
-  "link_loja": "https://www.comparajogos.com.br/item/deckscape-behind-the-curtain",
-  "loja": "Amazon",
-  "preco": 122.55,
-  "preco_antes": null,
-  "publicado": "2026-11-06T15:37:20+00:00",
-  "tipo_preco": "NORMAL",
-  "titulo": "Deckscape: Behind the Curtain",
-  "visto": "2026-11-06T20:59-03:00"
- },
  "tg:ComparaJogos/52636:0": {
   "cupom": null,
   "dominio": "www.comparajogos.com.br",
@@ -5742,7 +5626,7 @@
   "slug_cj": "draftosaurus",
   "tipo_preco": "NORMAL",
   "titulo": "Draftosaurus",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:ComparaJogos/53074:0": {
   "bgg": 4.82727,
@@ -5767,7 +5651,7 @@
   "tipo_cj": "game",
   "tipo_preco": "NORMAL",
   "titulo": "Cilada",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:ComparaJogos/53075:0": {
   "cupom": null,
@@ -5788,7 +5672,7 @@
   "slug_cj": "super-mario-question-block-game",
   "tipo_preco": "NORMAL",
   "titulo": "Super Mario: Question block game",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:ComparaJogos/53076:0": {
   "cupom": null,
@@ -5809,7 +5693,7 @@
   "slug_cj": "clash-of-cultures-edicao-monumental",
   "tipo_preco": "NORMAL",
   "titulo": "Clash of Cultures: Edição Monumental",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:ComparaJogos/53077:0": {
   "cupom": null,
@@ -5830,7 +5714,7 @@
   "slug_cj": "convidados-indesejados",
   "tipo_preco": "NORMAL",
   "titulo": "Convidados Indesejados",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:ComparaJogos/53078:0": {
   "bgg": 7.80209,
@@ -5855,7 +5739,7 @@
   "tipo_cj": "game",
   "tipo_preco": "NORMAL",
   "titulo": "Quacks",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:ComparaJogos/53079:0": {
   "cupom": null,
@@ -5876,7 +5760,7 @@
   "slug_cj": "marvel-battlegrounds",
   "tipo_preco": "NORMAL",
   "titulo": "Marvel Battlegrounds",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:ComparaJogos/53080:0": {
   "cupom": null,
@@ -5891,7 +5775,7 @@
   "publicado": "2026-11-13T16:11:26+00:00",
   "tipo_preco": "NORMAL",
   "titulo": "Bad Bones",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:ComparaJogos/53081:0": {
   "cupom": null,
@@ -5912,7 +5796,7 @@
   "slug_cj": "terraforming-mars-preludio-2",
   "tipo_preco": "NORMAL",
   "titulo": "Terraforming Mars: Prelúdio 2",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:ComparaJogos/53082:0": {
   "cupom": null,
@@ -5933,7 +5817,7 @@
   "slug_cj": "shinkansen-zero-kei",
   "tipo_preco": "NORMAL",
   "titulo": "Shinkansen: Zero Kei",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:ComparaJogos/53084:0": {
   "cupom": null,
@@ -5948,7 +5832,7 @@
   "publicado": "2026-11-13T17:07:04+00:00",
   "tipo_preco": "NORMAL",
   "titulo": "Grateful Dead-Opoly",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:ComparaJogos/53085:0": {
   "cupom": null,
@@ -5969,7 +5853,7 @@
   "slug_cj": "splendor",
   "tipo_preco": "NORMAL",
   "titulo": "Splendor",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:ComparaJogos/53087:0": {
   "cupom": null,
@@ -5984,7 +5868,7 @@
   "publicado": "2026-11-13T17:08:37+00:00",
   "tipo_preco": "NORMAL",
   "titulo": "Clank! Legacy: Acquisitions Incorporated",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:ComparaJogos/53088:0": {
   "cupom": null,
@@ -5999,7 +5883,7 @@
   "publicado": "2026-11-13T17:08:46+00:00",
   "tipo_preco": "NORMAL",
   "titulo": "Zoo Panic",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:ComparaJogos/53089:0": {
   "cupom": null,
@@ -6014,7 +5898,7 @@
   "publicado": "2026-11-13T17:16:21+00:00",
   "tipo_preco": "NORMAL",
   "titulo": "Harry Potter and the Philosopher's Stone: Mystery at Hogwarts Game",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:ComparaJogos/53090:0": {
   "cupom": null,
@@ -6030,7 +5914,7 @@
   "ref_fonte": "sem referência",
   "tipo_preco": "NORMAL",
   "titulo": "Gloom",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:ComparaJogos/53092:0": {
   "cupom": null,
@@ -6051,23 +5935,7 @@
   "slug_cj": "forest-shuffle-borda-da-floresta",
   "tipo_preco": "NORMAL",
   "titulo": "Forest Shuffle: Borda da Floresta",
-  "visto": "2026-11-13T15:14-03:00"
- },
- "tg:bgturbofertas/40889:0": {
-  "cupom": null,
-  "dominio": "link encurtado",
-  "fonte": "Telegram: BG Turbo Ofertas",
-  "jogo": null,
-  "link": "https://t.me/bgturbofertas/40889",
-  "link_loja": null,
-  "loja": "Amazon",
-  "preco": 757.12,
-  "preco_antes": null,
-  "publicado": "2026-11-06T15:33:44+00:00",
-  "ref_fonte": "sem referência",
-  "tipo_preco": "NORMAL",
-  "titulo": "Adicional ao Fechar Pedido Fantasy Flight Games FFGAHB01 Arkham Horror Terceira Edição",
-  "visto": "2026-11-06T15:46-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:bgturbofertas/40890:0": {
   "cupom": null,
@@ -12256,7 +12124,7 @@
   "ref_fonte": "sem referência",
   "tipo_preco": "NORMAL",
   "titulo": "Adicional ao Fechar Pedido The Dwarves Characterpack Djerun (English Edition)",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:bgturbofertas/41963:0": {
   "cupom": null,
@@ -12272,7 +12140,7 @@
   "ref_fonte": "sem referência",
   "tipo_preco": "NORMAL",
   "titulo": "Avalon Hill HeroQuest Joe Manganiello's The Crypt of Perpetual Darkness Quest Pack Idades 14+ 2 a 5 jogadores Requer sistema de jogo HeroQue",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:bgturbofertas/41964:0": {
   "cupom": null,
@@ -12288,7 +12156,7 @@
   "ref_fonte": "sem referência",
   "tipo_preco": "NORMAL",
   "titulo": "Adicional ao Fechar Pedido AEG & Flatout Games Cascadia: Rolling Hills Roll & Write Puzzly Dice Game Explore The Pacific Northwest, Build Ec",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:bgturbofertas/41965:0": {
   "bgg": 7.62993,
@@ -12313,7 +12181,7 @@
   "tipo_cj": "game",
   "tipo_preco": "NORMAL",
   "titulo": "Galápagos Earth Jogo de Tabuleiro",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:bgturbofertas/41966:0": {
   "cupom": null,
@@ -12329,7 +12197,7 @@
   "ref_fonte": "sem referência",
   "tipo_preco": "NORMAL",
   "titulo": "Adicional ao Fechar Pedido Fantasy Flight Games VA65 A Game of Thrones: The Board Game Second Edition",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:bgturbofertas/41967:0": {
   "cupom": null,
@@ -12345,7 +12213,7 @@
   "ref_fonte": "sem referência",
   "tipo_preco": "NORMAL",
   "titulo": "Menor Preco dos Ultimos 30 Dias WALKIE TALKIE",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:bgturbofertas/41968:0": {
   "cupom": null,
@@ -12361,7 +12229,7 @@
   "ref_fonte": "sem referência",
   "tipo_preco": "NORMAL",
   "titulo": "Gamewright Party to Go, in a Pickle Card Game, Words are Hard Game, Age 10+",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:bgturbofertas/41969:0": {
   "cupom": null,
@@ -12377,7 +12245,7 @@
   "ref_fonte": "sem referência",
   "tipo_preco": "NORMAL",
   "titulo": "Adicional ao Fechar Pedido Undaunted 2200: Callisto",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:bgturbofertas/41970:0": {
   "cupom": null,
@@ -12393,7 +12261,7 @@
   "ref_fonte": "sem referência",
   "tipo_preco": "NORMAL",
   "titulo": "Adicional ao Fechar Pedido RWBY: Combat Ready Team JNPR Expansion",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:bgturbofertas/41971:0": {
   "cupom": null,
@@ -12409,7 +12277,7 @@
   "ref_fonte": "sem referência",
   "tipo_preco": "NORMAL",
   "titulo": "Adicional ao Fechar Pedido Ovos salpicados de envergadura",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:bgturbofertas/41972:0": {
   "cupom": null,
@@ -12425,7 +12293,7 @@
   "ref_fonte": "sem referência",
   "tipo_preco": "NORMAL",
   "titulo": "Adicional ao Fechar Pedido Hansa Teutonica Big Box (deutsch/englisch)",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:bgturbofertas/41973:0": {
   "cupom": null,
@@ -12441,7 +12309,7 @@
   "ref_fonte": "sem referência",
   "tipo_preco": "NORMAL",
   "titulo": "Rio Grande Games Dominion: Menagerie",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:bgturbofertas/41974:0": {
   "cupom": null,
@@ -12457,7 +12325,7 @@
   "ref_fonte": "sem referência",
   "tipo_preco": "NORMAL",
   "titulo": "Adicional ao Fechar Pedido Indie Boards and Cards Aeon's End: Southern Village (AESV01IBC)",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:bgturbofertas/41975:0": {
   "cupom": null,
@@ -12473,7 +12341,7 @@
   "ref_fonte": "sem referência",
   "tipo_preco": "NORMAL",
   "titulo": "TeeTurtle Unstable Unicorns Dragons Expansion Pack - designed to be added to your Unstable Unicorns Card Game Black",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:bgturbofertas/41976:0": {
   "cupom": null,
@@ -12489,7 +12357,92 @@
   "ref_fonte": "sem referência",
   "tipo_preco": "NORMAL",
   "titulo": "Adicional ao Fechar Pedido Robo Rally Dice",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
+ },
+ "tg:bgturbofertas/41977:0": {
+  "cupom": null,
+  "dominio": "link encurtado",
+  "fonte": "Telegram: BG Turbo Ofertas",
+  "jogo": null,
+  "link": "https://t.me/bgturbofertas/41977",
+  "link_loja": null,
+  "loja": "Amazon",
+  "preco": 346.6,
+  "preco_antes": null,
+  "publicado": "2026-11-13T18:33:49+00:00",
+  "ref_fonte": "sem referência",
+  "tipo_preco": "NORMAL",
+  "titulo": "Adicional ao Fechar Pedido ATOMIC MASS GAMES, Star Wars: Legion ARF Troopers (ARF Troopers) - Tabletop Expansão para 2 jogadores a partir de",
+  "visto": "2026-11-13T15:44-03:00"
+ },
+ "tg:bgturbofertas/41978:0": {
+  "cupom": null,
+  "dominio": "link encurtado",
+  "fonte": "Telegram: BG Turbo Ofertas",
+  "jogo": null,
+  "link": "https://t.me/bgturbofertas/41978",
+  "link_loja": null,
+  "loja": "Amazon",
+  "preco": 212.12,
+  "preco_antes": null,
+  "publicado": "2026-11-13T18:36:32+00:00",
+  "ref_fonte": "sem referência",
+  "tipo_preco": "NORMAL",
+  "titulo": "Adicional ao Fechar Pedido Boss Monster 2: The Next Level - Jogo de Cartas Unissexo para Criança de 36 Meses",
+  "visto": "2026-11-13T15:44-03:00"
+ },
+ "tg:bgturbofertas/41979:0": {
+  "cupom": null,
+  "dominio": "link encurtado",
+  "fonte": "Telegram: BG Turbo Ofertas",
+  "jogo": null,
+  "link": "https://t.me/bgturbofertas/41979",
+  "link_loja": null,
+  "loja": "Amazon",
+  "preco": 282.22,
+  "preco_antes": null,
+  "publicado": "2026-11-13T18:39:17+00:00",
+  "ref_fonte": "sem referência",
+  "tipo_preco": "NORMAL",
+  "titulo": "Menor Preco dos Ultimos 30 Dias Grok Games Oak Jogo de Tabuleiro, 1 a 4 jogadores, 14 anos",
+  "visto": "2026-11-13T15:44-03:00"
+ },
+ "tg:bgturbofertas/41980:0": {
+  "cupom": null,
+  "dominio": "link encurtado",
+  "fonte": "Telegram: BG Turbo Ofertas",
+  "jogo": null,
+  "link": "https://t.me/bgturbofertas/41980",
+  "link_loja": null,
+  "loja": "Amazon",
+  "preco": 214.3,
+  "preco_antes": null,
+  "publicado": "2026-11-13T18:39:43+00:00",
+  "ref_fonte": "sem referência",
+  "tipo_preco": "NORMAL",
+  "titulo": "Adicional ao Fechar Pedido Stronghold Games Jogo de tabuleiro Terraforming Mars Ares Expedition Discovery para 4 jogadores",
+  "visto": "2026-11-13T15:44-03:00"
+ },
+ "tg:bgturbofertas/41981:0": {
+  "cupom": null,
+  "dominio": "link encurtado",
+  "fonte": "Telegram: BG Turbo Ofertas",
+  "imagem": "https://uploads.comparajogos.com.br/img/25a43d7fe266a948453b74389bc25dea6268447a.png",
+  "jogo": "quem-foi",
+  "link": "https://t.me/bgturbofertas/41981",
+  "link_loja": null,
+  "loja": "Amazon",
+  "menor": 44.55,
+  "preco": 53.9,
+  "preco_antes": null,
+  "publicado": "2026-11-13T18:42:18+00:00",
+  "ref": 48.07,
+  "ref_dias": 41,
+  "ref_fonte": "nossa base (Compara Jogos)",
+  "slug_cj": "quem-foi",
+  "tipo_preco": "NORMAL",
+  "titulo": "Jogo Quem Foi",
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:boardoferta/8158:0": {
   "cupom": "GS26PBDD50",
@@ -15087,7 +15040,7 @@
   "slug_cj": "dceased-gotham-city-outbreak",
   "tipo_preco": "NORMAL",
   "titulo": "DCeased: Gotham City Outbreak",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:boardoferta/8190:0": {
   "cupom": null,
@@ -15103,7 +15056,7 @@
   "ref_fonte": "sem referência",
   "tipo_preco": "NORMAL",
   "titulo": "acima de R 1 limitado",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:boardoferta/8190:1": {
   "cupom": null,
@@ -15124,7 +15077,7 @@
   "slug_cj": "prey-another-day",
   "tipo_preco": "NORMAL",
   "titulo": "Prey Another Day",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:boardoferta/8190:2": {
   "cupom": null,
@@ -15140,7 +15093,7 @@
   "ref_fonte": "sem referência",
   "tipo_preco": "NORMAL",
   "titulo": "Vampiro A Máscara Hq Vol 2",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:boardoferta/8190:3": {
   "cupom": null,
@@ -15161,7 +15114,7 @@
   "slug_cj": "superstore-3000",
   "tipo_preco": "NORMAL",
   "titulo": "Superstore 3000",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:boardoferta/8190:4": {
   "cupom": null,
@@ -15182,7 +15135,7 @@
   "slug_cj": "star-wars-bounty-hunters",
   "tipo_preco": "NORMAL",
   "titulo": "Star Wars: Bounty Hunters",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:boardoferta/8190:5": {
   "cupom": null,
@@ -15203,7 +15156,7 @@
   "slug_cj": "wandinha-ataque-do-hyde",
   "tipo_preco": "NORMAL",
   "titulo": "Wandinha: Ataque Do Hyde",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:boardoferta/8192:0": {
   "cupom": "TODOOSITE1111",
@@ -15224,7 +15177,7 @@
   "slug_cj": "brass-lancashire",
   "tipo_preco": "NORMAL",
   "titulo": "Brass Lancashire",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:boardoferta/8192:1": {
   "cupom": "TODO1111SITE",
@@ -15245,7 +15198,7 @@
   "slug_cj": "elephant-rally",
   "tipo_preco": "NORMAL",
   "titulo": "Elephant Rally",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:boardoferta/8192:2": {
   "cupom": "TODO1111SITE",
@@ -15266,7 +15219,7 @@
   "slug_cj": "van-gogh",
   "tipo_preco": "NORMAL",
   "titulo": "Van Gogh",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:boardoferta/8192:3": {
   "bgg": null,
@@ -15291,7 +15244,7 @@
   "tipo_cj": "game",
   "tipo_preco": "NORMAL",
   "titulo": "Maestro",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:boardoferta/8192:4": {
   "cupom": "TODOOSITE1111",
@@ -15312,7 +15265,7 @@
   "slug_cj": "as-ruinas-perdidas-de-arnak",
   "tipo_preco": "NORMAL",
   "titulo": "As Ruínas Perdidas De Arnak",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:boardoferta/8192:5": {
   "bgg": 7.74474,
@@ -15337,7 +15290,7 @@
   "tipo_cj": "game",
   "tipo_preco": "NORMAL",
   "titulo": "Abroad",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:boardoferta/8194:0": {
   "cupom": null,
@@ -15358,7 +15311,7 @@
   "slug_cj": "comic-hunters",
   "tipo_preco": "NORMAL",
   "titulo": "Marvel Comic Hunters",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:boardoferta/8194:1": {
   "cupom": null,
@@ -15379,7 +15332,7 @@
   "slug_cj": "dceased-gotham-city-outbreak",
   "tipo_preco": "NORMAL",
   "titulo": "DCeased: Gotham City Outbreak",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:boardoferta/8203:0": {
   "cupom": null,
@@ -15394,7 +15347,7 @@
   "publicado": "2026-11-11T21:08:28+00:00",
   "tipo_preco": "NORMAL",
   "titulo": "The Colonists",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:boardoferta/8203:1": {
   "cupom": null,
@@ -15409,7 +15362,7 @@
   "publicado": "2026-11-11T21:08:28+00:00",
   "tipo_preco": "NORMAL",
   "titulo": "Nexus Ops",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:boardoferta/8203:10": {
   "cupom": null,
@@ -15425,7 +15378,7 @@
   "ref_fonte": "sem referência",
   "tipo_preco": "NORMAL",
   "titulo": "No Loose Ends, A Trick Taking",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:boardoferta/8203:11": {
   "cupom": null,
@@ -15441,7 +15394,7 @@
   "ref_fonte": "sem referência",
   "tipo_preco": "NORMAL",
   "titulo": "Vampire: The Masquerade - Discipline Deck Accessory",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:boardoferta/8203:12": {
   "cupom": null,
@@ -15457,7 +15410,7 @@
   "ref_fonte": "sem referência",
   "tipo_preco": "NORMAL",
   "titulo": "Smash Up Knights of The Round Table",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:boardoferta/8203:13": {
   "cupom": null,
@@ -15473,7 +15426,7 @@
   "ref_fonte": "sem referência",
   "tipo_preco": "NORMAL",
   "titulo": "Dark Souls: Board Game: Wave 3: Explorers Expansion",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:boardoferta/8203:14": {
   "cupom": null,
@@ -15489,7 +15442,7 @@
   "ref_fonte": "sem referência",
   "tipo_preco": "NORMAL",
   "titulo": "Free League Invincible - Superhero Roleplaying Starter Set",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:boardoferta/8203:15": {
   "cupom": null,
@@ -15505,7 +15458,7 @@
   "ref_fonte": "sem referência",
   "tipo_preco": "NORMAL",
   "titulo": "Dead By Daylight: Expansão Gatekeeper",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:boardoferta/8203:16": {
   "cupom": null,
@@ -15521,7 +15474,7 @@
   "ref_fonte": "sem referência",
   "tipo_preco": "NORMAL",
   "titulo": "Magic: The Gathering: Kit Inicial Final Fantasy, Versão Japonesa MTG",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:boardoferta/8203:17": {
   "cupom": null,
@@ -15537,7 +15490,7 @@
   "ref_fonte": "sem referência",
   "tipo_preco": "NORMAL",
   "titulo": "War of the ring: lords of the middle-eath",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:boardoferta/8203:18": {
   "cupom": null,
@@ -15553,7 +15506,7 @@
   "ref_fonte": "sem referência",
   "tipo_preco": "NORMAL",
   "titulo": "Pandemic Reign of Cthulhu",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:boardoferta/8203:19": {
   "cupom": null,
@@ -15574,7 +15527,7 @@
   "slug_cj": "dceased-gotham-city-outbreak",
   "tipo_preco": "NORMAL",
   "titulo": "DCeased: Gotham City Outbreak",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:boardoferta/8203:2": {
   "cupom": null,
@@ -15590,7 +15543,7 @@
   "ref_fonte": "sem referência",
   "tipo_preco": "NORMAL",
   "titulo": "Drako: Dragons & Dwarves",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:boardoferta/8203:3": {
   "cupom": null,
@@ -15605,7 +15558,7 @@
   "publicado": "2026-11-11T21:08:28+00:00",
   "tipo_preco": "NORMAL",
   "titulo": "BANG!: The Dice Game, Old Saloon Expansion",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:boardoferta/8203:4": {
   "cupom": null,
@@ -15621,7 +15574,7 @@
   "ref_fonte": "sem referência",
   "tipo_preco": "NORMAL",
   "titulo": "Hiroshige",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:boardoferta/8203:5": {
   "cupom": null,
@@ -15637,7 +15590,7 @@
   "ref_fonte": "sem referência",
   "tipo_preco": "NORMAL",
   "titulo": "Awkward Guests 2: The Berwick Cases",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:boardoferta/8203:6": {
   "cupom": null,
@@ -15653,7 +15606,7 @@
   "ref_fonte": "sem referência",
   "tipo_preco": "NORMAL",
   "titulo": "Disney Lorcana TCG Deck Inicial Merlin e Tiana",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:boardoferta/8203:7": {
   "cupom": null,
@@ -15668,7 +15621,7 @@
   "publicado": "2026-11-11T21:08:28+00:00",
   "tipo_preco": "NORMAL",
   "titulo": "Deadwood 1876",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:boardoferta/8203:8": {
   "cupom": null,
@@ -15684,7 +15637,7 @@
   "ref_fonte": "sem referência",
   "tipo_preco": "NORMAL",
   "titulo": "DC Cryptozoic Deck-Building Game: Justice League Dark",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:boardoferta/8203:9": {
   "cupom": null,
@@ -15700,7 +15653,7 @@
   "ref_fonte": "sem referência",
   "tipo_preco": "NORMAL",
   "titulo": "Gloomhaven, 2nd Edition: Mercenary Pack - Anaphi, Fallen Lion",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:boardoferta/8207:0": {
   "cupom": null,
@@ -15716,7 +15669,7 @@
   "ref_fonte": "sem referência",
   "tipo_preco": "NORMAL",
   "titulo": "Street Fighter V: Champion Edition Legends",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:boardoferta/8207:1": {
   "cupom": null,
@@ -15732,7 +15685,7 @@
   "ref_fonte": "sem referência",
   "tipo_preco": "NORMAL",
   "titulo": "Hitster - Soundtracks (Erweiterung)",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:boardoferta/8207:10": {
   "cupom": null,
@@ -15748,7 +15701,7 @@
   "ref_fonte": "sem referência",
   "tipo_preco": "NORMAL",
   "titulo": "Spirit Island: Jagged Earth",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:boardoferta/8207:11": {
   "cupom": null,
@@ -15764,7 +15717,7 @@
   "ref_fonte": "sem referência",
   "tipo_preco": "NORMAL",
   "titulo": "Spirit Island: Jagged Earth",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:boardoferta/8207:12": {
   "cupom": null,
@@ -15785,7 +15738,7 @@
   "slug_cj": "tiny-epic-game-of-thrones",
   "tipo_preco": "NORMAL",
   "titulo": "Tiny Epic Game of Thrones",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:boardoferta/8207:2": {
   "cupom": null,
@@ -15801,7 +15754,7 @@
   "ref_fonte": "sem referência",
   "tipo_preco": "NORMAL",
   "titulo": "A place for all my books",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:boardoferta/8207:3": {
   "cupom": null,
@@ -15817,7 +15770,7 @@
   "ref_fonte": "sem referência",
   "tipo_preco": "NORMAL",
   "titulo": "Hansa Teutonica Big Box (deutsch/englisch)",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:boardoferta/8207:4": {
   "cupom": null,
@@ -15833,7 +15786,7 @@
   "ref_fonte": "sem referência",
   "tipo_preco": "NORMAL",
   "titulo": "The Crew - Mission Deep Sea",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:boardoferta/8207:5": {
   "cupom": null,
@@ -15849,7 +15802,7 @@
   "ref_fonte": "sem referência",
   "tipo_preco": "NORMAL",
   "titulo": "Shards of Creation",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:boardoferta/8207:6": {
   "cupom": null,
@@ -15864,7 +15817,7 @@
   "publicado": "2026-11-12T22:04:58+00:00",
   "tipo_preco": "NORMAL",
   "titulo": "Moonlight Market",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:boardoferta/8207:7": {
   "cupom": null,
@@ -15880,7 +15833,7 @@
   "ref_fonte": "sem referência",
   "tipo_preco": "NORMAL",
   "titulo": "Tales of the Valiant - Starter Set",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:boardoferta/8207:8": {
   "cupom": null,
@@ -15895,7 +15848,7 @@
   "publicado": "2026-11-12T22:04:58+00:00",
   "tipo_preco": "NORMAL",
   "titulo": "Jekyll & Hyde vs. Scotland Yard",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:boardoferta/8207:9": {
   "cupom": null,
@@ -15910,7 +15863,7 @@
   "publicado": "2026-11-12T22:04:58+00:00",
   "tipo_preco": "NORMAL",
   "titulo": "Jekyll & Hyde vs. Scotland Yard",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:boardoferta/8208:0": {
   "cupom": null,
@@ -15926,7 +15879,7 @@
   "ref_fonte": "sem referência",
   "tipo_preco": "NORMAL",
   "titulo": "Rebel Princess Standard Edition",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:boardoferta/8208:1": {
   "cupom": null,
@@ -15941,7 +15894,7 @@
   "publicado": "2026-11-13T02:13:25+00:00",
   "tipo_preco": "NORMAL",
   "titulo": "Terraforming Mars Ares Expedition: Foundations",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:boardoferta/8208:2": {
   "cupom": null,
@@ -15956,7 +15909,7 @@
   "publicado": "2026-11-13T02:13:25+00:00",
   "tipo_preco": "NORMAL",
   "titulo": "Dickory",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:boardoferta/8208:3": {
   "cupom": null,
@@ -15972,7 +15925,7 @@
   "ref_fonte": "sem referência",
   "tipo_preco": "NORMAL",
   "titulo": "Hegemony: Crisis & Control Expansion",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:boardoferta/8208:4": {
   "cupom": null,
@@ -15988,7 +15941,7 @@
   "ref_fonte": "sem referência",
   "tipo_preco": "NORMAL",
   "titulo": "Adventure Time Card Wars: DarkLands Cooperative Expansion",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:boardoferta/8209:0": {
   "cupom": "LIVROSJOGOS1311",
@@ -16004,7 +15957,7 @@
   "ref_fonte": "sem referência",
   "tipo_preco": "NORMAL",
   "titulo": "Brass Lancashire - Deluxe Edition",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:boardoferta/8209:1": {
   "cupom": "LIVROSJOGOS1311",
@@ -16020,7 +15973,7 @@
   "ref_fonte": "sem referência",
   "tipo_preco": "NORMAL",
   "titulo": "Orloj",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:gameboxtabuleiro/6079:0": {
   "cupom": "CORREAGORA",
@@ -17552,7 +17505,7 @@
   "ref_fonte": "sem referência",
   "tipo_preco": "NORMAL",
   "titulo": "Cupom: MP1111",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:gameboxtabuleiro/6207:0": {
   "cupom": null,
@@ -17568,7 +17521,7 @@
   "ref_fonte": "sem referência",
   "tipo_preco": "NORMAL",
   "titulo": "Informações do cupom: APROVEITA15 _Aproveitamento máximo do cupom em compras de aproximadamente",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:gameboxtabuleiro/6208:0": {
   "cupom": null,
@@ -17589,7 +17542,7 @@
   "slug_cj": "fate-defensores-de-grimheim",
   "tipo_preco": "NORMAL",
   "titulo": "Fate: Defensores de Grimheim",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:gameboxtabuleiro/6211:0": {
   "bgg": 7.5811,
@@ -17614,7 +17567,7 @@
   "tipo_cj": "game",
   "tipo_preco": "NORMAL",
   "titulo": "Hitster",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:gameboxtabuleiro/6212:0": {
   "cupom": null,
@@ -17630,7 +17583,7 @@
   "ref_fonte": "sem referência",
   "tipo_preco": "NORMAL",
   "titulo": "Stardew Valley (1 unidade)",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:gameboxtabuleiro/6215:0": {
   "cupom": "GAMEBOX7NAPLACE",
@@ -17646,7 +17599,7 @@
   "ref_fonte": "sem referência",
   "tipo_preco": "NORMAL",
   "titulo": "PLACEGAMES Disponível na loja! Kinfire Delve: O Laboratório de Callous: Cupom: GAMEBOX7NAPLACE",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:gameboxtabuleiro/6215:1": {
   "cupom": "GAMEBOX7NAPLACE",
@@ -17662,7 +17615,7 @@
   "ref_fonte": "sem referência",
   "tipo_preco": "NORMAL",
   "titulo": "Kinfire Delve: O Forte de Scorn: Cupom: GAMEBOX7NAPLACE",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:gameboxtabuleiro/6215:2": {
   "cupom": "GAMEBOX7NAPLACE",
@@ -17678,7 +17631,7 @@
   "ref_fonte": "sem referência",
   "tipo_preco": "NORMAL",
   "titulo": "Kinfire Delve: A Gruta de Vainglory: Cupom: GAMEBOX7NAPLACE",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:gameboxtabuleiro/6215:3": {
   "cupom": "GAMEBOX7NAPLACE",
@@ -17694,7 +17647,7 @@
   "ref_fonte": "sem referência",
   "tipo_preco": "NORMAL",
   "titulo": "COMBO: Kinfire Delve: A Gruta de Vainglory + O Forte de Scorn + O Laboratório de Callous Jogo de Cartas Ludofun: Cupom: GAMEBOX7NAPLACE",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:gameboxtabuleiro/6218:0": {
   "cupom": null,
@@ -17710,7 +17663,7 @@
   "ref_fonte": "sem referência",
   "tipo_preco": "NORMAL",
   "titulo": "Nosso cupom de parceria GAMEBOX7NAPLACE não funcionará somente na lista da Black November , mas estará ativo para os demais produtos! Destaq",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:gameboxtabuleiro/6218:1": {
   "cupom": null,
@@ -17731,7 +17684,7 @@
   "slug_cj": "pina-coladice",
   "tipo_preco": "NORMAL",
   "titulo": "Pina Coladice",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:gameboxtabuleiro/6218:10": {
   "cupom": null,
@@ -17752,7 +17705,7 @@
   "slug_cj": "imperium-lendas",
   "tipo_preco": "NORMAL",
   "titulo": "Imperium: Lendas",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:gameboxtabuleiro/6218:11": {
   "cupom": null,
@@ -17773,7 +17726,7 @@
   "slug_cj": "monkey-palace",
   "tipo_preco": "NORMAL",
   "titulo": "Monkey Palace",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:gameboxtabuleiro/6218:12": {
   "cupom": null,
@@ -17794,7 +17747,7 @@
   "slug_cj": "daybreak",
   "tipo_preco": "NORMAL",
   "titulo": "Daybreak",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:gameboxtabuleiro/6218:13": {
   "cupom": null,
@@ -17815,7 +17768,7 @@
   "slug_cj": "take-time",
   "tipo_preco": "NORMAL",
   "titulo": "Take Time",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:gameboxtabuleiro/6218:14": {
   "cupom": null,
@@ -17836,7 +17789,7 @@
   "slug_cj": "patchwork",
   "tipo_preco": "NORMAL",
   "titulo": "Patchwork",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:gameboxtabuleiro/6218:15": {
   "bgg": 7.35656,
@@ -17861,7 +17814,7 @@
   "tipo_cj": "game",
   "tipo_preco": "NORMAL",
   "titulo": "Acquire",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:gameboxtabuleiro/6218:16": {
   "cupom": null,
@@ -17882,7 +17835,7 @@
   "slug_cj": "7-wonders-dice",
   "tipo_preco": "NORMAL",
   "titulo": "7 Wonders Dice",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:gameboxtabuleiro/6218:17": {
   "cupom": null,
@@ -17903,7 +17856,7 @@
   "slug_cj": "azul-kids",
   "tipo_preco": "NORMAL",
   "titulo": "Azul Kids",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:gameboxtabuleiro/6218:18": {
   "cupom": null,
@@ -17924,7 +17877,7 @@
   "slug_cj": "coffee-rush-grab-go",
   "tipo_preco": "NORMAL",
   "titulo": "Coffee Rush: Grab Go",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:gameboxtabuleiro/6218:2": {
   "cupom": null,
@@ -17945,7 +17898,7 @@
   "slug_cj": "guerra-do-anel-card-game",
   "tipo_preco": "NORMAL",
   "titulo": "Guerra do Anel Card Game",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:gameboxtabuleiro/6218:3": {
   "cupom": null,
@@ -17961,7 +17914,7 @@
   "ref_fonte": "sem referência",
   "tipo_preco": "NORMAL",
   "titulo": "Star Wars: The Deckbuilding Game - Clone Wars",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:gameboxtabuleiro/6218:4": {
   "cupom": null,
@@ -17982,7 +17935,7 @@
   "slug_cj": "arrisco-e-rabisco",
   "tipo_preco": "NORMAL",
   "titulo": "Arrisco e Rabisco",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:gameboxtabuleiro/6218:5": {
   "cupom": null,
@@ -17998,7 +17951,7 @@
   "ref_fonte": "sem referência",
   "tipo_preco": "NORMAL",
   "titulo": "Turma da Mônica em: Aventuras no Limoeiro",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:gameboxtabuleiro/6218:6": {
   "cupom": null,
@@ -18019,7 +17972,7 @@
   "slug_cj": "cat-lounge",
   "tipo_preco": "NORMAL",
   "titulo": "Cat Lounge",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:gameboxtabuleiro/6218:7": {
   "cupom": null,
@@ -18035,7 +17988,7 @@
   "ref_fonte": "sem referência",
   "tipo_preco": "NORMAL",
   "titulo": "Quest",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:gameboxtabuleiro/6218:8": {
   "cupom": null,
@@ -18051,7 +18004,7 @@
   "ref_fonte": "sem referência",
   "tipo_preco": "NORMAL",
   "titulo": "Mysterium: Secrets and Lies (Expansão)",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:gameboxtabuleiro/6218:9": {
   "cupom": null,
@@ -18072,7 +18025,7 @@
   "slug_cj": "publicidade",
   "tipo_preco": "NORMAL",
   "titulo": "Publicidade Jogo de Tabuleiro",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:gameboxtabuleiro/6220:0": {
   "cupom": "LIVROSJOGOS1311",
@@ -18093,7 +18046,7 @@
   "slug_cj": "brass-lancashire",
   "tipo_preco": "NORMAL",
   "titulo": "Brass Lancashire",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:gameboxtabuleiro/6221:0": {
   "cupom": "LIVROSJOGOS1311",
@@ -18114,7 +18067,7 @@
   "slug_cj": "zombicide-2a-edicao",
   "tipo_preco": "NORMAL",
   "titulo": "Zombicide 2a. edição",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:gameboxtabuleiro/6222:0": {
   "cupom": "LIVROSJOGOS1311",
@@ -18135,7 +18088,7 @@
   "slug_cj": "magical-athlete",
   "tipo_preco": "NORMAL",
   "titulo": "Magical Athlete",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:gameboxtabuleiro/6223:0": {
   "bgg": 7.51642,
@@ -18160,7 +18113,7 @@
   "tipo_cj": "game",
   "tipo_preco": "NORMAL",
   "titulo": "Wroth",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:gameboxtabuleiro/6224:0": {
   "cupom": null,
@@ -18176,7 +18129,7 @@
   "ref_fonte": "sem referência",
   "tipo_preco": "NORMAL",
   "titulo": "Stardew Valley (4 unidades)",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:ludofertas/2171:0": {
   "cupom": null,
@@ -18298,7 +18251,7 @@
   "ref_fonte": "sem referência",
   "tipo_preco": "NORMAL",
   "titulo": "BF Vendido pela Ludolovers, loja parceira do grupo. Preço com o cupom está bem abaixo do que geralmente é vendido. Keep the Heroes Out!",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:ludofertas/2184:0": {
   "cupom": "SEMPREAQUI",
@@ -18314,7 +18267,7 @@
   "ref_fonte": "sem referência",
   "tipo_preco": "NORMAL",
   "titulo": "BF Ruins",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:ludofertas/2185:0": {
   "cupom": "SEMPREAQUI",
@@ -18335,7 +18288,7 @@
   "slug_cj": "duna-imperium",
   "tipo_preco": "NORMAL",
   "titulo": "BF Duna: Imperium",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:ludofertas/2186:0": {
   "cupom": "antes",
@@ -18351,7 +18304,7 @@
   "ref_fonte": "sem referência",
   "tipo_preco": "NORMAL",
   "titulo": "CUPOM 15 de desconto em compras acima de R 199 (Limite",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:ludofertas/2187:0": {
   "cupom": "MELHOROFERTA",
@@ -18372,7 +18325,7 @@
   "slug_cj": "as-ruinas-perdidas-de-arnak",
   "tipo_preco": "NORMAL",
   "titulo": "BF As Ruínas Perdidas de Arnak",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:ludofertas/2188:0": {
   "cupom": "MELHOROFERTA",
@@ -18393,7 +18346,7 @@
   "slug_cj": "civolution",
   "tipo_preco": "NORMAL",
   "titulo": "BF Civolution",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:ludofertas/2190:0": {
   "cupom": null,
@@ -18414,7 +18367,7 @@
   "slug_cj": "dceased-gotham-city-outbreak",
   "tipo_preco": "NORMAL",
   "titulo": "DCeased: Gotham City Outbreak",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:ludofertas/2193:0": {
   "cupom": null,
@@ -18430,7 +18383,7 @@
   "ref_fonte": "sem referência",
   "tipo_preco": "NORMAL",
   "titulo": "BF Esse aqui é pra criançada dos anos 70/80. Duvido conseguir jogar hoje em dia, rs Twister",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:ludofertas/2194:0": {
   "cupom": null,
@@ -18446,7 +18399,7 @@
   "ref_fonte": "sem referência",
   "tipo_preco": "NORMAL",
   "titulo": "BF Só tem 1 unidade, nem sei se vai ter ainda quando vocês conseguirem entrar. Mas ta ai Stardew Valley: The Board Game",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:ludofertas/2196:0": {
   "cupom": null,
@@ -18462,7 +18415,7 @@
   "ref_fonte": "sem referência",
   "tipo_preco": "NORMAL",
   "titulo": "BF Upland & Prairie",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:ludofertas/2197:0": {
   "cupom": null,
@@ -18478,7 +18431,7 @@
   "ref_fonte": "sem referência",
   "tipo_preco": "NORMAL",
   "titulo": "BF Grand Austria Hotel",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:ludofertas/2198:0": {
   "cupom": null,
@@ -18494,7 +18447,7 @@
   "ref_fonte": "sem referência",
   "tipo_preco": "NORMAL",
   "titulo": "BF Essa é a versão da Holanda, deve ter algumas musicas locais (em geral é uns 30 ). Hitster: Rock Expansion Pack",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:ludofertas/2199:0": {
   "cupom": null,
@@ -18510,7 +18463,7 @@
   "ref_fonte": "sem referência",
   "tipo_preco": "NORMAL",
   "titulo": "BF Ayar: Children of the Sun",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:ludofertas/2200:0": {
   "cupom": null,
@@ -18526,7 +18479,7 @@
   "ref_fonte": "sem referência",
   "tipo_preco": "NORMAL",
   "titulo": "BF Creature Caravan",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:ludofertas/2201:0": {
   "cupom": null,
@@ -18542,7 +18495,7 @@
   "ref_fonte": "sem referência",
   "tipo_preco": "NORMAL",
   "titulo": "BF Expansão do Chicletão. Deve vir em algum momento pela Grok, mas sabe-se la quando. Shackleton Base: Abaixo, Dentro, Acima",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  },
  "tg:ludofertas/2202:0": {
   "cupom": "LIVROSJOGOS1311",
@@ -18558,6 +18511,6 @@
   "ref_fonte": "sem referência",
   "tipo_preco": "NORMAL",
   "titulo": "BF Esse aqui já esgotou na editora, logo mais é capaz de esgotar nas lojas. Magical Athlete (I)",
-  "visto": "2026-11-13T15:14-03:00"
+  "visto": "2026-11-13T15:44-03:00"
  }
 }
