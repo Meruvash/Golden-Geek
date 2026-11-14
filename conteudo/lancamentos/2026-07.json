@@ -2,7 +2,7 @@
  "mes": "2026-07",
  "label": "Julho de 2026",
  "titulo_previstos": "Previstos para julho",
- "total": 137,
+ "total": 139,
  "lancados": [
   {
    "id_jogo": 65241,
@@ -2609,6 +2609,27 @@
    "pode_criar_topico": true
   },
   {
+   "id_jogo": 86617,
+   "nome": "Trismegistus: Acessório Upgrade Pack",
+   "url": "https://ludopedia.com.br/jogo/trismegistus-deluxe-upgrade-pack",
+   "capa": "https://storage.googleapis.com/ludopedia-capas/86617_t.jpg",
+   "fl_jogo_base": 0,
+   "fl_tipo": 1,
+   "editora": {
+    "id": 4857,
+    "nome": "Mosaico Jogos",
+    "url": "https://ludopedia.com.br/editora/4857/Mosaico Jogos"
+   },
+   "status": {
+    "id": 1,
+    "label": "Lançado",
+    "slug": "lancado"
+   },
+   "comentarios": 0,
+   "url_topico": null,
+   "pode_criar_topico": true
+  },
+  {
    "id_jogo": 80623,
    "nome": "Trismegistus: Familiars",
    "url": "https://ludopedia.com.br/jogo/trismegistus-familiars",
@@ -2631,10 +2652,31 @@
   },
   {
    "id_jogo": 85028,
-   "nome": "Trismegitus: Rolar e Escrever",
+   "nome": "Trismegistus: Rolar e Escrever",
    "url": "https://ludopedia.com.br/jogo/trismegistus-roll-write",
    "capa": "https://storage.googleapis.com/ludopedia-capas/85028_t.jpg",
    "fl_jogo_base": 1,
+   "fl_tipo": 1,
+   "editora": {
+    "id": 4857,
+    "nome": "Mosaico Jogos",
+    "url": "https://ludopedia.com.br/editora/4857/Mosaico Jogos"
+   },
+   "status": {
+    "id": 1,
+    "label": "Lançado",
+    "slug": "lancado"
+   },
+   "comentarios": 0,
+   "url_topico": null,
+   "pode_criar_topico": true
+  },
+  {
+   "id_jogo": 89716,
+   "nome": "Trismegistus: Torre de Dados",
+   "url": "https://ludopedia.com.br/jogo/trismegistus-dice-tower-promo",
+   "capa": "https://storage.googleapis.com/ludopedia-capas/89716_t.jpg",
+   "fl_jogo_base": 0,
    "fl_tipo": 1,
    "editora": {
     "id": 4857,

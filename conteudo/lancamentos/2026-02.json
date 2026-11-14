@@ -47,6 +47,27 @@
    "pode_criar_topico": false
   },
   {
+   "id_jogo": 84901,
+   "nome": "Folklore Wars",
+   "url": "https://ludopedia.com.br/jogo/folklore-wars",
+   "capa": "https://storage.googleapis.com/ludopedia-capas/84901_t.jpg",
+   "fl_jogo_base": 1,
+   "fl_tipo": 1,
+   "editora": {
+    "id": 11248,
+    "nome": "Forge Geek",
+    "url": "https://ludopedia.com.br/editora/11248/Forge Geek"
+   },
+   "status": {
+    "id": 1,
+    "label": "Lançado",
+    "slug": "lancado"
+   },
+   "comentarios": 2,
+   "url_topico": "https://ludopedia.com.br/topico/96737/-topico-oficial-folklore-wars",
+   "pode_criar_topico": false
+  },
+  {
    "id_jogo": 71072,
    "nome": "Vomitolândia",
    "url": "https://ludopedia.com.br/jogo/vomitolandia",
@@ -65,27 +86,6 @@
    },
    "comentarios": 2,
    "url_topico": "https://ludopedia.com.br/topico/97031/-topico-oficial-vomitolandia",
-   "pode_criar_topico": false
-  },
-  {
-   "id_jogo": 84901,
-   "nome": "Folklore Wars",
-   "url": "https://ludopedia.com.br/jogo/folklore-wars",
-   "capa": "https://storage.googleapis.com/ludopedia-capas/84901_t.jpg",
-   "fl_jogo_base": 1,
-   "fl_tipo": 1,
-   "editora": {
-    "id": 11248,
-    "nome": "Forge Geek",
-    "url": "https://ludopedia.com.br/editora/11248/Forge Geek"
-   },
-   "status": {
-    "id": 1,
-    "label": "Lançado",
-    "slug": "lancado"
-   },
-   "comentarios": 1,
-   "url_topico": "https://ludopedia.com.br/topico/96737/-topico-oficial-folklore-wars",
    "pode_criar_topico": false
   },
   {

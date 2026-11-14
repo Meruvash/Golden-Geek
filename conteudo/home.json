@@ -1,42 +1,50 @@
 {
- "edicao": "2026-11-11",
+ "edicao": "2026-11-14",
  "em_alta": [
   {
-   "nome": "Kelp: Tubarão vs Polvo",
-   "id_ludopedia": 54051,
-   "motivo": "Ganha expansão Offshore Offspring no Gamefound",
-   "link": "noticias/kelp-offshore-offspring-expansao-gamefound/"
+   "nome": "Nemesis: Legacy",
+   "motivo": "Vira o tabuleiro mais financiado da história, com mais de €13,2 milhões",
+   "link": "noticias/nemesis-legacy-recorde-financiamento-ano-416-milhoes/",
+   "id_ludopedia": "nemesis-legacy-recorde-financiamento-ano-416-milhoes"
   },
   {
-   "nome": "Civolution",
-   "id_ludopedia": 57677,
-   "motivo": "Sai da pré-venda e chega às lojas pela Devir",
-   "link": "noticias/civolution-e-horizontes-de-spirit-island-chegam-as-lojas/"
+   "nome": "Satisfactory: The Board Game",
+   "motivo": "Chegou ao último dia no Gamefound com quase 3 milhões de euros",
+   "link": "noticias/satisfactory-reta-final-quase-3-milhoes/",
+   "id_ludopedia": "satisfactory-reta-final-quase-3-milhoes"
+  },
+  {
+   "nome": "The Thing: The Boardgame",
+   "motivo": "Volta ao Gamefound com jogo de cartas novo",
+   "link": "noticias/the-thing-boardgame-cardgame-gamefound/",
+   "id_ludopedia": "the-thing-boardgame-cardgame-gamefound"
+  },
+  {
+   "nome": "Arkham Horror Remastered",
+   "motivo": "Fecha no Gamefound e passa de US$ 5,7 milhões",
+   "link": "noticias/arkham-horror-remastered-fecha-gamefound-5-milhoes/",
+   "id_ludopedia": "arkham-horror-remastered-fecha-gamefound-5-milhoes"
   },
   {
    "nome": "Harmonies: Crescendo",
    "id_ludopedia": 86576,
-   "motivo": "Ganha preço sugerido na Asmodee, ainda sem estoque",
-   "link": "noticias/harmonies-crescendo-e-bang-dice-explosion-ganham-preco/"
-  },
-  {
-   "nome": "Magical Athlete",
-   "id_ludopedia": 82348,
-   "motivo": "Corrida de Richard Garfield em pré-venda pela Asmodee",
-   "link": "noticias/magical-athlete-pre-venda-asmodee/"
-  },
-  {
-   "nome": "Pilgrims: Curious Adventures",
-   "id_ludopedia": 80886,
-   "motivo": "Jogo do universo de Pilgrims chega às lojas pela Jelly Monster",
-   "link": "noticias/pilgrims-curious-adventures-jelly-monster/"
+   "motivo": "Entra em pré-venda nas lojas brasileiras com Coffee Rush: Inverno",
+   "link": "noticias/coffee-rush-inverno-harmonies-crescendo-pre-venda/"
   }
  ],
  "financiamentos": [
   {
+   "nome": "Nemesis: Legacy",
+   "editora": "Awaken Realms",
+   "onde": "Gamefound · pré-venda tardia",
+   "situacao": "Campanha encerrada em 27/10; passou de €13,2 milhões de quase 35 mil apoiadores, recorde entre jogos de tabuleiro",
+   "fonte": "BoardGameWire, 13/11/2026",
+   "noticia": "nemesis-legacy-recorde-financiamento-ano-416-milhoes"
+  },
+  {
    "nome": "Marco Polo Deluxe Master Set",
    "editora": "Board&Dice",
-   "onde": "Gamefound · abre em 12/11",
+   "onde": "Gamefound · abertura prevista em 12/11",
    "situacao": "Pré-campanha; junta os dois Marco Polo e Agents of Venice",
    "fonte": "Brettspielbox, 08/11/2026",
    "noticia": "marco-polo-deluxe-master-set-gamefound"
@@ -82,30 +90,6 @@
    "noticia": "fable-quest-arcadia-quest-cooperativo-gamefound"
   },
   {
-   "nome": "Cubyria: Architects of a Lost City",
-   "editora": "Cubyria Games",
-   "onde": "Kickstarter · aberto",
-   "situacao": "£ 124 mil de 1.119 apoiadores; termina em 12/11",
-   "fonte": "Kicktraq, 09/11/2026",
-   "noticia": "cubyria-architects-of-a-lost-city-kickstarter"
-  },
-  {
-   "nome": "Too Little Time",
-   "editora": "Chip Theory Games",
-   "onde": "Gamefound · aberto",
-   "situacao": "US$ 1,78 milhão de 5.158 apoiadores; termina em 13/11",
-   "fonte": "Tabletop Analytics, 11/11/2026",
-   "noticia": "too-little-time-chip-theory-gamefound"
-  },
-  {
-   "nome": "Max Miller's Tasting History",
-   "editora": "Salt Games",
-   "onde": "Kickstarter · aberto",
-   "situacao": "US$ 480 mil de 3.341 apoiadores; termina em 13/11",
-   "fonte": "Tabletop Analytics, 08/11/2026",
-   "noticia": "tasting-history-max-miller-jogo-kickstarter"
-  },
-  {
    "nome": "Zoo Tycoon: Dinosaur Digs",
    "editora": "Treecer",
    "onde": "Kickstarter · aberto",
@@ -120,14 +104,6 @@
    "situacao": "US$ 1,22 milhão de 3.914 apoiadores; termina em 18/11",
    "fonte": "Tabletop Analytics, 08/11/2026",
    "noticia": "origins-of-light-final-fantasy-tabuleiro-kickstarter"
-  },
-  {
-   "nome": "Through the Mountains",
-   "editora": "Allplay",
-   "onde": "Kickstarter · aberto",
-   "situacao": "US$ 353 mil de 2.732 apoiadores; termina em 13/11",
-   "fonte": "Tabletop Analytics, 09/11/2026",
-   "noticia": "through-the-mountains-knizia-kickstarter"
   },
   {
    "nome": "Kelp: Offshore Offspring",
@@ -184,14 +160,6 @@
    "situacao": "Pré-campanhas no MeepleStarter",
    "fonte": "MeepleStarter, 10/11/2026",
    "noticia": "abalone-minimundos-25-de-marco-meeplestarter"
-  },
-  {
-   "nome": "Clash Royale: The Grand Arena",
-   "editora": "Maestro Media",
-   "onde": "Kickstarter · aberto",
-   "situacao": "US$ 144 mil de 959 apoiadores; termina em 13/11",
-   "fonte": "Kicktraq, 10/11/2026",
-   "noticia": "clash-royale-the-grand-arena-kickstarter"
   }
  ],
  "agenda": [
