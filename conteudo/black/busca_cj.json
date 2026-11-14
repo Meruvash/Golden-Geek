@@ -98,6 +98,7 @@
  "adicional ao fechar pedido aeons end the descent": null,
  "adicional ao fechar pedido aeons end the new age": null,
  "adicional ao fechar pedido altered mana orb expedition soft box oficialmente licenciada caixa de baralho de cartas de manga dupla com tec": null,
+ "adicional ao fechar pedido alubari a nice cup of tea board game worker placement strategy game for adults and teens ages 14 1 5 players ave": null,
  "adicional ao fechar pedido android netrunner lcg blood money": null,
  "adicional ao fechar pedido android netrunner lcg democracy and dogma data pack": null,
  "adicional ao fechar pedido android netrunner lcg terminal directive": null,
@@ -151,6 +152,7 @@
  "adicional ao fechar pedido kingdom builder": null,
  "adicional ao fechar pedido kodama 3d": null,
  "adicional ao fechar pedido line of fire burnt moon an undaunted 2200 game": null,
+ "adicional ao fechar pedido lotus jogo de tabuleiro": null,
  "adicional ao fechar pedido love letter princess princess ever after": null,
  "adicional ao fechar pedido lucky duck games cozinha do critter expansao a la carte modo para 6 7 jogadores idades 12": null,
  "adicional ao fechar pedido marvel champions the card game jubilee hero pack jogo de estrategia de super herois jogo cooperativo para crianc": null,
@@ -401,6 +403,7 @@
   "slug": "concept",
   "tipo": "game"
  },
+ "asmodee galapagos concept kids 2 a 12 jogadores idade 4": null,
  "asmodee hitster jogo de cartas para 2 a 10 jogadores": {
   "bgg": 7.5811,
   "editora": "Jumbo",
@@ -904,6 +907,17 @@
   "slug": "christian-charades",
   "tipo": "game"
  },
+ "chrono bomb": {
+  "bgg": 4.70217,
+  "editora": "PlayMonster",
+  "imagem": "https://uploads.comparajogos.com.br/img/4c8da99ba942bfd3e3b2bf3569933b027418e868.jpg",
+  "menor": null,
+  "nome": "Chrono Bomb",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "chrono-bomb",
+  "tipo": "game"
+ },
  "chronology the game of all time": {
   "bgg": 6.52731,
   "editora": "Buffalo Games",
@@ -1067,6 +1081,17 @@
   "ref": null,
   "ref_dias": 0,
   "slug": "concordia-venus-expansion",
+  "tipo": "expansion"
+ },
+ "conquest of planet earth apocalypse": {
+  "bgg": 7.50515,
+  "editora": "Flying Frog Productions",
+  "imagem": "https://uploads.comparajogos.com.br/img/ea686668cd39c7b0281a63646bc2587a01f0c235.jpg",
+  "menor": null,
+  "nome": "Conquest of Planet Earth: Apocalypse",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "conquest-of-planet-earth-apocalypse",
   "tipo": "expansion"
  },
  "coolminiornot modern art cmnmda001 cor modelo sortido": null,
@@ -2470,6 +2495,7 @@
  "jogo cara a cara estrela": null,
  "jogo carnival of sins across the board": null,
  "jogo cortex challenge asmodee galapagos 2 a 6 jogadores": null,
+ "jogo de campanha cooperativo que tambem utiliza como ferramenta um aplicativo boss fighters": null,
  "jogo de cartas asmodee duplo risco 2 a 8 jogadores idade 8": {
   "bgg": 5.5249,
   "editora": "Galápagos Jogos",
@@ -3578,6 +3604,17 @@
   "menor": 44.81,
   "nome": "Piratas!",
   "ref": 44.81,
+  "ref_dias": 32,
+  "slug": "piratas",
+  "tipo": "game"
+ },
+ "piratas edicao de 10 anos": {
+  "bgg": 6.56616,
+  "editora": "Geeks N' Orcs",
+  "imagem": "https://uploads.comparajogos.com.br/img/ed4bd4d39a033dccc4ee228f156328ce4ed1b71f.jpg",
+  "menor": 87.07,
+  "nome": "Piratas!",
+  "ref": 123.55,
   "ref_dias": 32,
   "slug": "piratas",
   "tipo": "game"
