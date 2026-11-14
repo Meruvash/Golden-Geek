@@ -3139,6 +3139,7 @@
  "menor preco do ano the colonists": null,
  "menor preco do ano transamerica game": null,
  "menor preco do ano world wonders compita estrategicamente para 1 5 jogadores maiores de 14 anos": null,
+ "menor preco dos ultimos 30 dias armazem de dados": null,
  "menor preco dos ultimos 30 dias asmodee hitster verao jogo de tabuleiro idade 14 2 a 10 jogadores 30 minutos por partida": null,
  "menor preco dos ultimos 30 dias asmodee marvel united spider geddon jogo de tabuleiro 1 a 4 jogadores 40 min cooperativo": null,
  "menor preco dos ultimos 30 dias caper europe jogo de cartas 2 jogadores idade 10 35 minutos por partida": null,
@@ -3991,6 +3992,17 @@
   "tipo": "expansion"
  },
  "shadows of brimstone hero pack gambler": null,
+ "shadows of brimstone other worlds derelict ship": {
+  "bgg": 8.65911,
+  "editora": "Flying Frog Productions",
+  "imagem": "https://uploads.comparajogos.com.br/img/e0ae0a88d7c98cb8516c4de34231b475d8297254.jpg",
+  "menor": null,
+  "nome": "Shadows of Brimstone: Other Worlds – Derelict Ship",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "shadows-of-brimstone-other-worlds-derelict-ship",
+  "tipo": "expansion"
+ },
  "shadows of brimstone pacote de herois nativos jargono": null,
  "shadows of brimstone the guardian of targa xl enemy pack": {
   "bgg": 8.23734,
@@ -4114,6 +4126,17 @@
   "slug": "soda-jerk",
   "tipo": "game"
  },
+ "something wild star wars original trilogy darth vader": {
+  "bgg": 6.56953,
+  "editora": "Funko Games",
+  "imagem": "https://uploads.comparajogos.com.br/img/86244297dd9828d267abdbc434ab84de49253348.png",
+  "menor": null,
+  "nome": "Something Wild! Star Wars Original Trilogy: Darth Vader",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "something-wild-star-wars-original-trilogy-darth-vader",
+  "tipo": "game"
+ },
  "sons of anarchy men of mayhem": {
   "bgg": 7.22869,
   "editora": "Gale Force Nine, LLC",
@@ -4167,6 +4190,17 @@
   "ref": null,
   "ref_dias": 0,
   "slug": "space-station-phoenix",
+  "tipo": "game"
+ },
+ "speak out": {
+  "bgg": 4.59933,
+  "editora": "Hasbro",
+  "imagem": "https://uploads.comparajogos.com.br/img/2308cb16351a5092ecf36da20b3a0bff98c5f234.jpg",
+  "menor": null,
+  "nome": "Speak Out",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "speak-out",
   "tipo": "game"
  },
  "speed hello kitty and friends jogo de cartas ludens spirit": null,
