@@ -869,8 +869,8 @@
   "amazon": "https://www.amazon.com.br/dp/B0BN31V686"
  },
  "its-a-wonderful-world": {
-  "_hora": "2026-11-13T19:57-03:00",
-  "amazon": "https://www.amazon.com.br/dp/B07YSZCDP9",
+  "_hora": "2026-11-14T20:01-03:00",
+  "amazon": "https://www.amazon.com.br/dp/B08PDQKRBL",
   "dalarangames": "https://www.dalaran.com.br/its-a-wonderful-world"
  },
  "jekyll-vs-hyde": {
@@ -1082,6 +1082,15 @@
   "tabuloja": "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/my-little-scythe",
   "tubaleria": "https://tubaleria.store/produtos/my-little-scythe/?entry_path=category"
  },
+ "nao-pode": {
+  "_hora": "2026-11-14T20:01-03:00",
+  "amazon": "https://www.amazon.com.br/dp/B0FF6HBP1P",
+  "joyjoystore": "https://loja.joyjoycafe.com.br/nao-pode",
+  "livtoys": "https://www.livtoys.com.br/boardgames/nao-pode",
+  "omniverse": "https://www.omniverse.com.br/nao-pode",
+  "playeasy": "https://www.playeasy.com.br/nao-pode",
+  "riodemeepeiroboardgames": "https://www.riodemeepeiro.com.br/produtos/nao-pode/?entry_path=category"
+ },
  "nao-pode-nostalgia-80-e-90": {
   "_hora": "2026-11-09T18:30-03:00",
   "amazon": "https://www.amazon.com.br/dp/B0GWFW2P76",
@@ -1272,6 +1281,14 @@
   "amazon": "https://www.amazon.com.br/dp/B0F4SRMRG9",
   "dalarangames": "https://www.dalaran.com.br/quacks-jogo-de-tabuleiro-cmyk-games",
   "frodosbg": "https://loja.frodosbg.com.br/quacks"
+ },
+ "quem-disse-isso": {
+  "_hora": "2026-11-14T20:01-03:00",
+  "bravojogos": "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-quem-disse-isso-p",
+  "omniverse": "https://www.omniverse.com.br/quem-disse-isso",
+  "riodemeepeiroboardgames": "https://www.riodemeepeiro.com.br/produtos/quem-disse-isso/?entry_path=category",
+  "tabuloja": "https://www.tabuloja.com/board-games/jogos-base/quem-disse-isso",
+  "tubaleria": "https://tubaleria.store/produtos/quem-disse-isso/?entry_path=category"
  },
  "quem-foi": {
   "_hora": "2026-11-13T19:17-03:00",
@@ -1719,7 +1736,7 @@
   "playeasy": "https://www.playeasy.com.br/tromba-n-agua"
  },
  "twilight-imperium": {
-  "_hora": "2026-11-13T19:57-03:00",
+  "_hora": "2026-11-14T20:01-03:00",
   "mercadolivre": "https://www.mercadolivre.com.br/p/MLB20270340"
  },
  "twilight-struggle": {
