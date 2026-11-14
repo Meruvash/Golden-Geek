@@ -80,7 +80,7 @@
   },
   "paladinsgames.com.br": {
    "dia": "2026-11-14",
-   "paginas": 6
+   "paginas": 7
   },
   "piranoboardgame.com.br": {
    "dia": "2026-11-14",
@@ -144,7 +144,7 @@
   },
   "www.caixinhaboardgames.com.br": {
    "dia": "2026-11-14",
-   "paginas": 9
+   "paginas": 11
   },
   "www.caldeiraojogos.com.br": {
    "dia": "2026-11-14",
@@ -154,7 +154,7 @@
    "descanso_ate": "2026-11-11T09:45+00:00",
    "dia": "2026-11-14",
    "motivo": "robots.txt respondeu 403",
-   "paginas": 6
+   "paginas": 9
   },
   "www.capivarajogos.com.br": {
    "dia": "2026-11-14",
@@ -266,7 +266,7 @@
   },
   "www.omniverse.com.br": {
    "dia": "2026-11-14",
-   "paginas": 8
+   "paginas": 16
   },
   "www.pandaboardgames.com.br": {
    "dia": "2026-11-14",
@@ -294,7 +294,7 @@
   },
   "www.promobit.com.br": {
    "dia": "2026-11-14",
-   "paginas": 90
+   "paginas": 100
   },
   "www.reunionjogos.com.br": {
    "dia": "2026-11-14",
@@ -322,7 +322,7 @@
    "descanso_ate": "2026-11-11T09:38+00:00",
    "dia": "2026-11-14",
    "motivo": "robots.txt respondeu 403",
-   "paginas": 18
+   "paginas": 19
   },
   "www.tavernareal.com": {
    "descanso_ate": "2026-11-11T09:49+00:00",
@@ -352,6 +352,12 @@
   }
  },
  "precos": {
+  "http://paladinsgames.com.br/produto/428022/keyforge-colisao-entre-mundos-deck": {
+   "cj": 46.41,
+   "estoque": true,
+   "hora": "2026-11-14T23:01+00:00",
+   "preco": 49.9
+  },
   "https://bravojogos.com.br/black-bravo/jogo-3-capitulos": {
    "cj": 46.49,
    "estoque": true,
@@ -949,7 +955,7 @@
   "https://www.caixinhaboardgames.com.br/produtos/exploding-kittens-bem-vs-mal/?entry_path=category": {
    "cj": 39.99,
    "estoque": true,
-   "hora": "2026-11-14T22:58+00:00",
+   "hora": "2026-11-14T23:01+00:00",
    "preco": 43.0
   },
   "https://www.caixinhaboardgames.com.br/produtos/fateflip-arrastado-pelo-mar/?entry_path=category": {
@@ -1023,6 +1029,12 @@
    "estoque": true,
    "hora": "2026-11-14T22:59+00:00",
    "preco": 50.0
+  },
+  "https://www.caixinhaboardgames.com.br/produtos/mantis/?entry_path=category": {
+   "cj": 39.06,
+   "estoque": true,
+   "hora": "2026-11-14T23:01+00:00",
+   "preco": 42.0
   },
   "https://www.caixinhaboardgames.com.br/produtos/marina-show-aereo-expansao-draftosaurus/?entry_path=category": {
    "cj": 78.12,
@@ -1699,20 +1711,26 @@
   "https://www.omniverse.com.br/alien-attack-usa": {
    "cj": 92.07,
    "estoque": true,
-   "hora": "2026-11-14T22:57+00:00",
+   "hora": "2026-11-14T23:01+00:00",
    "preco": 92.07
   },
-  "https://www.omniverse.com.br/civolution": {
-   "cj": 598.92,
+  "https://www.omniverse.com.br/captain-flip": {
+   "cj": 185.07,
    "estoque": true,
-   "hora": "2026-11-14T22:58+00:00",
-   "preco": 598.92
+   "hora": "2026-11-14T23:01+00:00",
+   "preco": 185.07
   },
-  "https://www.omniverse.com.br/codigo-secreto-dueto-nova-edicao": {
-   "cj": 115.32,
+  "https://www.omniverse.com.br/cat-lounge": {
+   "cj": 92.07,
    "estoque": true,
-   "hora": "2026-11-14T22:58+00:00",
-   "preco": 115.32
+   "hora": "2026-11-14T23:01+00:00",
+   "preco": 92.07
+  },
+  "https://www.omniverse.com.br/celestia-pre-venda": {
+   "cj": 185.07,
+   "estoque": true,
+   "hora": "2026-11-14T23:01+00:00",
+   "preco": 185.07
   },
   "https://www.omniverse.com.br/come-nachos-pre-venda": {
    "cj": 99.04,
@@ -1747,13 +1765,25 @@
   "https://www.omniverse.com.br/produto/o-labirinto-magico": {
    "cj": 236.22,
    "estoque": true,
-   "hora": "2026-11-14T22:59+00:00",
+   "hora": "2026-11-14T23:01+00:00",
    "preco": 236.22
+  },
+  "https://www.omniverse.com.br/produto/odyssey-a-ira-de-poseidon": {
+   "cj": 99.04,
+   "estoque": true,
+   "hora": "2026-11-14T23:01+00:00",
+   "preco": 99.04
+  },
+  "https://www.omniverse.com.br/produto/red-cathedral": {
+   "cj": 185.91,
+   "estoque": true,
+   "hora": "2026-11-14T23:01+00:00",
+   "preco": 185.91
   },
   "https://www.omniverse.com.br/produto/regicide": {
    "cj": 59.01,
    "estoque": true,
-   "hora": "2026-11-14T23:00+00:00",
+   "hora": "2026-11-14T23:01+00:00",
    "preco": 59.01
   },
   "https://www.placegames.com.br/anachrony": {
