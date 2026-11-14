@@ -10,7 +10,7 @@
   },
   "bravojogos.com.br": {
    "dia": "2026-11-14",
-   "paginas": 16
+   "paginas": 17
   },
   "brecholudico.com.br": {
    "dia": "2026-11-14",
@@ -144,7 +144,7 @@
   },
   "www.caixinhaboardgames.com.br": {
    "dia": "2026-11-14",
-   "paginas": 6
+   "paginas": 9
   },
   "www.caldeiraojogos.com.br": {
    "dia": "2026-11-14",
@@ -266,7 +266,7 @@
   },
   "www.omniverse.com.br": {
    "dia": "2026-11-14",
-   "paginas": 6
+   "paginas": 8
   },
   "www.pandaboardgames.com.br": {
    "dia": "2026-11-14",
@@ -280,7 +280,7 @@
    "descanso_ate": "2026-11-11T09:48+00:00",
    "dia": "2026-11-14",
    "motivo": "robots.txt respondeu 403",
-   "paginas": 6
+   "paginas": 9
   },
   "www.playeasy.com.br": {
    "descanso_ate": "2026-11-11T09:48+00:00",
@@ -294,7 +294,7 @@
   },
   "www.promobit.com.br": {
    "dia": "2026-11-14",
-   "paginas": 80
+   "paginas": 90
   },
   "www.reunionjogos.com.br": {
    "dia": "2026-11-14",
@@ -322,7 +322,7 @@
    "descanso_ate": "2026-11-11T09:38+00:00",
    "dia": "2026-11-14",
    "motivo": "robots.txt respondeu 403",
-   "paginas": 14
+   "paginas": 18
   },
   "www.tavernareal.com": {
    "descanso_ate": "2026-11-11T09:49+00:00",
@@ -619,7 +619,7 @@
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/zombicide-gear-up-p": {
    "cj": 83.61,
    "estoque": true,
-   "hora": "2026-11-14T03:16+00:00",
+   "hora": "2026-11-14T20:34+00:00",
    "preco": 89.9
   },
   "https://bravojogos.com.br/rpg/rpg-livro-zombicide-chronicles-p": {
@@ -1690,23 +1690,17 @@
    "hora": "2026-11-14T20:27+00:00",
    "preco": 92.07
   },
-  "https://www.omniverse.com.br/alien-attack-usa": {
-   "cj": 92.07,
+  "https://www.omniverse.com.br/come-nachos-pre-venda": {
+   "cj": 99.04,
    "estoque": true,
-   "hora": "2026-11-14T20:27+00:00",
-   "preco": 92.07
+   "hora": "2026-11-14T20:34+00:00",
+   "preco": 99.04
   },
   "https://www.omniverse.com.br/fritanga-pr-venda": {
    "cj": 59.06,
    "estoque": true,
-   "hora": "2026-11-14T20:28+00:00",
+   "hora": "2026-11-14T20:34+00:00",
    "preco": 59.06
-  },
-  "https://www.omniverse.com.br/produto/o-labirinto-magico": {
-   "cj": 236.22,
-   "estoque": true,
-   "hora": "2026-11-14T20:29+00:00",
-   "preco": 236.22
   },
   "https://www.placegames.com.br/anachrony": {
    "cj": 232.39,
