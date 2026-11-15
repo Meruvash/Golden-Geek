@@ -96,6 +96,7 @@
   "quiferas",
   "rolima",
   "rorys-story-cubes-harry-potter",
+  "shinkansen-zero-kei",
   "sizeup",
   "skip-bo",
   "sleeping-gods-dungeons",
@@ -117,7 +118,13 @@
   "uno-flip",
   "uno-flip-attack",
   "uno-toy-story-4",
-  "zenkai-adventure"
+  "word-traveler",
+  "zenkai-adventure",
+  "zombicide-gear-up"
  ],
- "pendentes": {}
+ "pendentes": {
+  "shinkansen-zero-kei": "2026-11-15T06:35+00:00",
+  "word-traveler": "2026-11-15T11:32+00:00",
+  "zombicide-gear-up": "2026-11-15T11:32+00:00"
+ }
 }
