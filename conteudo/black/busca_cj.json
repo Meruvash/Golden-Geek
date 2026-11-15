@@ -2222,6 +2222,7 @@
  },
  "gwent": null,
  "gwent o jogo de tabuleiro lendario": null,
+ "gwent o jogo de tabuleiro lendario grok games": null,
  "h d p 4 hasta donde puedas": {
   "bgg": null,
   "editora": "Buró",
@@ -5087,6 +5088,17 @@
   "ref_dias": 0,
   "slug": "tiny-epic-tactics",
   "tipo": "game"
+ },
+ "tiny towns fortune": {
+  "bgg": 7.59803,
+  "editora": "Alderac Entertainment Group",
+  "imagem": "https://uploads.comparajogos.com.br/img/6bc27d135ac29699bc93ab8d034af93c2091cbf6.jpg",
+  "menor": null,
+  "nome": "Tiny Towns: Fortune",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "tiny-towns-fortune",
+  "tipo": "expansion"
  },
  "tixa a lagartixa": {
   "bgg": 6.55,
