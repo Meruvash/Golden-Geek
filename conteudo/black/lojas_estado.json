@@ -10,7 +10,7 @@
   },
   "bravojogos.com.br": {
    "dia": "2026-11-15",
-   "paginas": 10
+   "paginas": 13
   },
   "brecholudico.com.br": {
    "dia": "2026-11-15",
@@ -154,7 +154,7 @@
    "descanso_ate": "2026-11-11T09:45+00:00",
    "dia": "2026-11-15",
    "motivo": "robots.txt respondeu 403",
-   "paginas": 3
+   "paginas": 6
   },
   "www.capivarajogos.com.br": {
    "dia": "2026-11-15",
@@ -294,7 +294,7 @@
   },
   "www.promobit.com.br": {
    "dia": "2026-11-15",
-   "paginas": 70
+   "paginas": 80
   },
   "www.reunionjogos.com.br": {
    "dia": "2026-11-15",
@@ -322,7 +322,7 @@
    "descanso_ate": "2026-11-11T09:38+00:00",
    "dia": "2026-11-15",
    "motivo": "robots.txt respondeu 403",
-   "paginas": 13
+   "paginas": 14
   },
   "www.tavernareal.com": {
    "descanso_ate": "2026-11-11T09:49+00:00",
@@ -436,6 +436,12 @@
    "hora": "2026-11-15T18:48+00:00",
    "preco": 49.99
   },
+  "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/fabulinhas-p": {
+   "cj": 65.01,
+   "estoque": true,
+   "hora": "2026-11-15T18:57+00:00",
+   "preco": 69.9
+  },
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-bananagrams-party-p": {
    "cj": 83.61,
    "estoque": true,
@@ -457,7 +463,7 @@
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-chicago-1875-edicao-deluxe-p": {
    "cj": 650.07,
    "estoque": true,
-   "hora": "2026-11-14T05:39+00:00",
+   "hora": "2026-11-15T18:57+00:00",
    "preco": 699.0
   },
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-fateflip-decretos-reais-p": {
@@ -529,7 +535,7 @@
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-superstore-3000-p": {
    "cj": 92.91,
    "estoque": true,
-   "hora": "2026-11-15T04:43+00:00",
+   "hora": "2026-11-15T18:57+00:00",
    "preco": 99.9
   },
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-ta-na-mesa-p": {
