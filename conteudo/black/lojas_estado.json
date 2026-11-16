@@ -10,7 +10,7 @@
   },
   "bravojogos.com.br": {
    "dia": "2026-11-16",
-   "paginas": 8
+   "paginas": 10
   },
   "brecholudico.com.br": {
    "dia": "2026-11-16",
@@ -24,7 +24,7 @@
   },
   "interludi.com.br": {
    "dia": "2026-11-16",
-   "paginas": 4
+   "paginas": 5
   },
   "itabuleiros.lojaintegrada.com.br": {
    "dia": "2026-11-16",
@@ -116,7 +116,7 @@
   },
   "www.boardgameplaystore.com.br": {
    "dia": "2026-11-16",
-   "paginas": 5
+   "paginas": 7
   },
   "www.boargames.com.br": {
    "descanso_ate": "2026-11-11T09:44+00:00",
@@ -280,7 +280,7 @@
    "descanso_ate": "2026-11-11T09:48+00:00",
    "dia": "2026-11-16",
    "motivo": "robots.txt respondeu 403",
-   "paginas": 11
+   "paginas": 22
   },
   "www.playeasy.com.br": {
    "descanso_ate": "2026-11-11T09:48+00:00",
@@ -294,7 +294,7 @@
   },
   "www.promobit.com.br": {
    "dia": "2026-11-16",
-   "paginas": 60
+   "paginas": 70
   },
   "www.reunionjogos.com.br": {
    "dia": "2026-11-16",
@@ -322,7 +322,7 @@
    "descanso_ate": "2026-11-11T09:38+00:00",
    "dia": "2026-11-16",
    "motivo": "robots.txt respondeu 403",
-   "paginas": 12
+   "paginas": 13
   },
   "www.tavernareal.com": {
    "descanso_ate": "2026-11-11T09:49+00:00",
@@ -475,7 +475,7 @@
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-fateflip-decretos-reais-p": {
    "cj": 46.49,
    "estoque": true,
-   "hora": "2026-11-16T14:56+00:00",
+   "hora": "2026-11-16T15:54+00:00",
    "preco": 49.99
   },
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-grauso-p": {
@@ -499,7 +499,7 @@
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-kokeshi-p": {
    "cj": 92.91,
    "estoque": true,
-   "hora": "2026-11-16T03:35+00:00",
+   "hora": "2026-11-16T15:55+00:00",
    "preco": 99.9
   },
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-o-laboratorio-de-dexter-a-grande-invencao-p": {
@@ -1774,6 +1774,12 @@
    "hora": "2026-11-16T15:25+00:00",
    "preco": 80.8
   },
+  "https://www.placegames.com.br/boardgames/dorfromantik-o-duelo": {
+   "cj": 89.89,
+   "estoque": true,
+   "hora": "2026-11-16T15:54+00:00",
+   "preco": 89.89
+  },
   "https://www.placegames.com.br/boardgames/dungeon-rummy-golems-vs-goblins-expansao": {
    "cj": 120.79,
    "estoque": true,
@@ -1798,6 +1804,12 @@
    "hora": "2026-11-16T15:25+00:00",
    "preco": 46.39
   },
+  "https://www.placegames.com.br/boardgames/goats-amp-goblins": {
+   "cj": 83.59,
+   "estoque": true,
+   "hora": "2026-11-16T15:54+00:00",
+   "preco": 120.79
+  },
   "https://www.placegames.com.br/boardgames/graus": {
    "cj": 37.09,
    "estoque": true,
@@ -1815,6 +1827,12 @@
    "estoque": true,
    "hora": "2026-11-15T02:41+00:00",
    "preco": 260.29
+  },
+  "https://www.placegames.com.br/boardgames/luz": {
+   "cj": 92.89,
+   "estoque": true,
+   "hora": "2026-11-16T15:55+00:00",
+   "preco": 92.89
   },
   "https://www.placegames.com.br/boardgames/m-w-a-t": {
    "cj": 92.89,
@@ -1845,6 +1863,12 @@
    "estoque": true,
    "hora": "2026-11-16T15:26+00:00",
    "preco": 102.19
+  },
+  "https://www.placegames.com.br/boardgames/pinatas": {
+   "cj": 83.59,
+   "estoque": true,
+   "hora": "2026-11-16T15:55+00:00",
+   "preco": 111.49
   },
   "https://www.placegames.com.br/boardgames/piratas-edicao-10-anos": {
    "cj": 74.29,
@@ -1906,11 +1930,23 @@
    "hora": "2026-11-16T15:25+00:00",
    "preco": 18.49
   },
+  "https://www.placegames.com.br/de-quem-e-o-reino": {
+   "cj": 27.79,
+   "estoque": true,
+   "hora": "2026-11-16T15:54+00:00",
+   "preco": 37.09
+  },
   "https://www.placegames.com.br/draftosaurus-marina-e-show-aereo": {
    "cj": 74.29,
    "estoque": true,
    "hora": "2026-11-16T15:25+00:00",
    "preco": 74.29
+  },
+  "https://www.placegames.com.br/in-the-palm-of-your-hand": {
+   "cj": 87.89,
+   "estoque": true,
+   "hora": "2026-11-16T15:54+00:00",
+   "preco": 87.89
   },
   "https://www.placegames.com.br/lux-nova-micro-box": {
    "cj": 18.49,
@@ -1935,6 +1971,12 @@
    "estoque": true,
    "hora": "2026-11-16T15:26+00:00",
    "preco": 204.49
+  },
+  "https://www.placegames.com.br/oh-my-goods": {
+   "cj": 83.59,
+   "estoque": true,
+   "hora": "2026-11-16T15:55+00:00",
+   "preco": 83.59
   },
   "https://www.placegames.com.br/orange-stories": {
    "cj": 18.49,
@@ -1975,8 +2017,8 @@
   "https://www.placegames.com.br/squadromini": {
    "cj": 114.29,
    "estoque": true,
-   "hora": "2026-11-16T15:27+00:00",
-   "preco": 167.09
+   "hora": "2026-11-16T15:55+00:00",
+   "preco": 114.29
   },
   "https://www.playeasy.com.br/50-filhotes": {
    "cj": 18.51,
