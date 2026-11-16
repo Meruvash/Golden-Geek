@@ -80,7 +80,7 @@
   },
   "paladinsgames.com.br": {
    "dia": "2026-11-16",
-   "paginas": 7
+   "paginas": 8
   },
   "piranoboardgame.com.br": {
    "dia": "2026-11-16",
@@ -104,7 +104,7 @@
    "descanso_ate": "2026-11-11T09:43+00:00",
    "dia": "2026-11-16",
    "motivo": "robots.txt respondeu 403",
-   "paginas": 6
+   "paginas": 8
   },
   "www.animusludere.com.br": {
    "dia": "2026-11-16",
@@ -144,7 +144,7 @@
   },
   "www.caixinhaboardgames.com.br": {
    "dia": "2026-11-16",
-   "paginas": 8
+   "paginas": 11
   },
   "www.caldeiraojogos.com.br": {
    "dia": "2026-11-16",
@@ -154,7 +154,7 @@
    "descanso_ate": "2026-11-11T09:45+00:00",
    "dia": "2026-11-16",
    "motivo": "robots.txt respondeu 403",
-   "paginas": 6
+   "paginas": 9
   },
   "www.capivarajogos.com.br": {
    "dia": "2026-11-16",
@@ -280,7 +280,7 @@
    "descanso_ate": "2026-11-11T09:48+00:00",
    "dia": "2026-11-16",
    "motivo": "robots.txt respondeu 403",
-   "paginas": 24
+   "paginas": 29
   },
   "www.playeasy.com.br": {
    "descanso_ate": "2026-11-11T09:48+00:00",
@@ -294,7 +294,7 @@
   },
   "www.promobit.com.br": {
    "dia": "2026-11-16",
-   "paginas": 80
+   "paginas": 90
   },
   "www.reunionjogos.com.br": {
    "dia": "2026-11-16",
@@ -322,7 +322,7 @@
    "descanso_ate": "2026-11-11T09:38+00:00",
    "dia": "2026-11-16",
    "motivo": "robots.txt respondeu 403",
-   "paginas": 14
+   "paginas": 19
   },
   "www.tavernareal.com": {
    "descanso_ate": "2026-11-11T09:49+00:00",
@@ -355,7 +355,7 @@
   "http://paladinsgames.com.br/produto/2176250/alien-attack-usa": {
    "cj": 120.81,
    "estoque": true,
-   "hora": "2026-11-16T21:57+00:00",
+   "hora": "2026-11-16T22:15+00:00",
    "preco": 129.9
   },
   "http://paladinsgames.com.br/produto/2658943/duna-imperium---bloodlines-expansao": {
@@ -781,14 +781,8 @@
   "https://www.alquimistasdosjogos.com.br/jogos/oak": {
    "cj": 89.81,
    "estoque": true,
-   "hora": "2026-11-16T22:00+00:00",
+   "hora": "2026-11-16T22:16+00:00",
    "preco": 89.81
-  },
-  "https://www.alquimistasdosjogos.com.br/jogos/radlands": {
-   "cj": 112.31,
-   "estoque": true,
-   "hora": "2026-11-16T22:00+00:00",
-   "preco": 112.31
   },
   "https://www.alquimistasdosjogos.com.br/jogos/the-mandalorian-adventures-cla-de-dois": {
    "cj": 139.3,
@@ -1984,6 +1978,12 @@
    "hora": "2026-11-16T22:00+00:00",
    "preco": 64.99
   },
+  "https://www.placegames.com.br/night-parade-cursed-throne": {
+   "cj": 64.99,
+   "estoque": true,
+   "hora": "2026-11-16T22:16+00:00",
+   "preco": 64.99
+  },
   "https://www.placegames.com.br/o-senhor-dos-aneis-card-game-cacador-sonhos-herois": {
    "cj": 148.69,
    "estoque": true,
@@ -2341,7 +2341,7 @@
   "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/patchwork-2375": {
    "cj": 98.1,
    "estoque": true,
-   "hora": "2026-11-16T22:00+00:00",
+   "hora": "2026-11-16T22:16+00:00",
    "preco": 109.0
   },
   "https://www.tabuloja.com/jogos-de-tabuleiro/jogos-base/quack-quack-patota-corrupta": {
