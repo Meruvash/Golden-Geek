@@ -2,6 +2,17 @@
  "101 dalmatas ludoteca disney": null,
  "1565 st elmo s pay": null,
  "5 minute dungeon curses foiled again expansion": null,
+ "5 segundos": {
+  "bgg": 5.43435,
+  "editora": "Concentra",
+  "imagem": "https://uploads.comparajogos.com.br/img/3ebd13c9599745ca28b2387305bad95f4bbc7eeb.jpg",
+  "menor": null,
+  "nome": "5 Segundos",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "5-segundos",
+  "tipo": "game"
+ },
  "7 conjuntos 49 pecas de dados": null,
  "7 wonders dice": {
   "bgg": 5.82335,
@@ -59,6 +70,17 @@
   "ref": 347.4,
   "ref_dias": 32,
   "slug": "abroad",
+  "tipo": "game"
+ },
+ "academia": {
+  "bgg": 6.85016,
+  "editora": "Grow Jogos e Brinquedos",
+  "imagem": "https://uploads.comparajogos.com.br/img/3c8b69de5a33ca033773ec06486f0ac600c6bc36.jpg",
+  "menor": null,
+  "nome": "Academia",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "academia",
   "tipo": "game"
  },
  "achei turma da monica": {
@@ -142,6 +164,7 @@
  "adicional ao fechar pedido dominion renaissance": null,
  "adicional ao fechar pedido dorfromantik board game us edition spiele des jahres 2023 winner": null,
  "adicional ao fechar pedido downforce expansao de circuito de perigo": null,
+ "adicional ao fechar pedido eagle gryphon games incan gold recovering the ancient artifacts 2024 edition": null,
  "adicional ao fechar pedido elden ring the board game stormveil castle": null,
  "adicional ao fechar pedido eldritch horror masks of nyarlathotep": null,
  "adicional ao fechar pedido encyclopaedia arcana lex arcana": null,
@@ -268,11 +291,23 @@
  "adicional ao fechar pedido witchcraft fast playing solitaire card game to lead a coven of witches and save the village 25th century games": null,
  "adicional ao fechar pedido world wonders mundo expansion strategy board game": null,
  "adicional ao fechar pedido wrong party base game": null,
+ "adicional ao fechar pedido zombicide black ops": null,
  "adicional ao fechar pedido zombicide undead or alive strategy cooperative game for teens and adults zombie board game ages 14 1 6 players": null,
  "adicional ao fechar pedido zombie dice horde edition by steve jackson games medium": null,
  "adventure stories": null,
  "adventure time card wars darklands cooperative expansion": null,
  "aeg the guild of merchant explorers explore the world establish new settlements nautical voyage adventure board game 1 4 players ages 10": null,
+ "aeon s end": {
+  "bgg": 7.87146,
+  "editora": "Meeple BR Jogos",
+  "imagem": "https://uploads.comparajogos.com.br/img/36d08be4788d00d9d4124a55937e7ddd392f90e7.jpg",
+  "menor": null,
+  "nome": "Aeon's End",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "aeons-end",
+  "tipo": "game"
+ },
  "aeon s end the void": {
   "bgg": 8.42527,
   "editora": "Action Phase Games",
@@ -736,6 +771,17 @@
   "ref": null,
   "ref_dias": 0,
   "slug": "best-story-wins",
+  "tipo": "game"
+ },
+ "beyond the sun": {
+  "bgg": 7.85963,
+  "editora": "Rio Grande Games",
+  "imagem": "https://uploads.comparajogos.com.br/img/4ca0e7b4a0932bfa22a409f460d01374cb742720.jpg",
+  "menor": null,
+  "nome": "Beyond the Sun",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "beyond-the-sun",
   "tipo": "game"
  },
  "bf a place for all my books": null,
@@ -4327,6 +4373,7 @@
  "rio grande games elfenroads game": null,
  "rio grande games franco german rails expansion for gulf mobile ohio": null,
  "rio grande games games free ride usa jogo de tabuleiro estrategico para desenvolvimento ferroviario com tema americano dos anos 1950 co": null,
+ "rio grande games matrx gipf head to head piece moving strategy board game": null,
  "rio grande games orient express": null,
  "rio grande games pesca jogo de cartas de truques tema oceano desenho de cartas e colecao de pontos idades 14 3 5 jogadores 30 60 mi": null,
  "rio grande games rgg534 dominion 2 nd edition mise a jour lot": null,
