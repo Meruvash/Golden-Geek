@@ -10,7 +10,7 @@
   },
   "bravojogos.com.br": {
    "dia": "2026-11-16",
-   "paginas": 0
+   "paginas": 1
   },
   "brecholudico.com.br": {
    "dia": "2026-11-16",
@@ -24,7 +24,7 @@
   },
   "interludi.com.br": {
    "dia": "2026-11-16",
-   "paginas": 0
+   "paginas": 1
   },
   "itabuleiros.lojaintegrada.com.br": {
    "dia": "2026-11-16",
@@ -116,7 +116,7 @@
   },
   "www.boardgameplaystore.com.br": {
    "dia": "2026-11-16",
-   "paginas": 0
+   "paginas": 2
   },
   "www.boargames.com.br": {
    "descanso_ate": "2026-11-11T09:44+00:00",
@@ -154,7 +154,7 @@
    "descanso_ate": "2026-11-11T09:45+00:00",
    "dia": "2026-11-16",
    "motivo": "robots.txt respondeu 403",
-   "paginas": 0
+   "paginas": 3
   },
   "www.capivarajogos.com.br": {
    "dia": "2026-11-16",
@@ -294,7 +294,7 @@
   },
   "www.promobit.com.br": {
    "dia": "2026-11-16",
-   "paginas": 10
+   "paginas": 20
   },
   "www.reunionjogos.com.br": {
    "dia": "2026-11-16",
@@ -322,7 +322,7 @@
    "descanso_ate": "2026-11-11T09:38+00:00",
    "dia": "2026-11-16",
    "motivo": "robots.txt respondeu 403",
-   "paginas": 4
+   "paginas": 5
   },
   "www.tavernareal.com": {
    "descanso_ate": "2026-11-11T09:49+00:00",
@@ -501,6 +501,12 @@
    "estoque": true,
    "hora": "2026-11-14T05:38+00:00",
    "preco": 139.9
+  },
+  "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-kokeshi-p": {
+   "cj": 92.91,
+   "estoque": true,
+   "hora": "2026-11-16T03:35+00:00",
+   "preco": 99.9
   },
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-o-laboratorio-de-dexter-a-grande-invencao-p": {
    "cj": 83.61,
