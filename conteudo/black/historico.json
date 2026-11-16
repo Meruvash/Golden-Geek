@@ -145596,7 +145596,7 @@
  },
  "shinkansen-zero-kei": {
   "ano": 2022,
-  "bgg": 6.99003,
+  "bgg": 7.00037,
   "bgg_id": 339614,
   "editora": "Conclave Editora",
   "editora_br": true,
@@ -145647,7 +145647,7 @@
    "2026-11-14": 224.45,
    "2026-11-15": 224.45
   },
-  "principal": false,
+  "principal": true,
   "tipo": "game"
  },
  "ship-shape-its-a-smugglers-bounty": {
