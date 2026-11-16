@@ -28,6 +28,7 @@
   "citadels",
   "codigo-secreto-dueto",
   "color-addict",
+  "corrosion",
   "cuco",
   "dc-arena",
   "deep-sea-adventure",
@@ -54,7 +55,6 @@
   "horizontes-de-spirit-island",
   "hungry-hungry-hippos-grab-go",
   "identidade-secreta",
-  "ilha-da-caveira",
   "imagem-acao",
   "imagem-acao-junior",
   "imperium-classicos",
@@ -120,5 +120,7 @@
   "uno-toy-story-4",
   "zenkai-adventure"
  ],
- "pendentes": {}
+ "pendentes": {
+  "corrosion": "2026-11-16T03:18+00:00"
+ }
 }
