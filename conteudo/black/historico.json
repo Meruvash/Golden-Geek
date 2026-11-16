@@ -42738,6 +42738,20 @@
   "principal": true,
   "tipo": "game"
  },
+ "dc-super-heroes-united": {
+  "ano": 2026,
+  "bgg": 7.89565,
+  "bgg_id": 418762,
+  "editora": "CMON Limited",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/daa1036a65ce792f57831821eb1f96178f6ccf39.jpg",
+  "nome": "DC Super Heroes United",
+  "pontos": {
+   "2026-11-16": 431.91
+  },
+  "principal": true,
+  "tipo": "game"
+ },
  "dc-super-heroes-united-batman-hush": {
   "ano": 2025,
   "bgg": 8.83113,
