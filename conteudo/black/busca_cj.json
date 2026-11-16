@@ -168,6 +168,7 @@
  "adicional ao fechar pedido invincible the card game guardians of the globe official skybound tabletop superhero deck building game ages 14": null,
  "adicional ao fechar pedido jogo de tabuleiro dice pool party": null,
  "adicional ao fechar pedido jogo red raven deep vents": null,
+ "adicional ao fechar pedido karciane podziemia": null,
  "adicional ao fechar pedido kingdom builder": null,
  "adicional ao fechar pedido kodama 3d": null,
  "adicional ao fechar pedido line of fire burnt moon an undaunted 2200 game": null,
@@ -4130,6 +4131,17 @@
   "tipo": "game"
  },
  "quest": null,
+ "qwirkle rummy": {
+  "bgg": 5.58709,
+  "editora": "MindWare",
+  "imagem": "https://uploads.comparajogos.com.br/img/4670f9837ab5c1ed6d0963468a895b320100244a.jpg",
+  "menor": null,
+  "nome": "Qwirkle Rummy",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "qwirkle-rummy",
+  "tipo": "game"
+ },
  "race to pattern palace": {
   "bgg": 5.66667,
   "editora": "hand2mind",
