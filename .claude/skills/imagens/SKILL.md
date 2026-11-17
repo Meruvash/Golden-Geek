@@ -86,3 +86,21 @@ Prefira foto sem texto por cima. Se faltar algum tipo, deixe sem; não force uma
 Foto de outra edição ou versão do jogo: acrescente `--nota "foto da 2ª edição"`, que vai no crédito embaixo da foto (ex.: Gloomhaven). Salva `<slug>/fotos/<tipo>-N.webp` (até 1600 px, ≤ 400 KB) e atualiza `fontes.json`. Um tipo já aprovado não é trocado sem `--forcar`. Faça commit de `<slug>/fotos/` (nunca de `.cache/`).
 
 Depois de aprovar, marque no `fontes.json` `"pessoas": true` só nas fotos em que aparece o **rosto de alguém de frente** (elas não vão para a página). Mãos, braços e rosto de perfil podem (pedido do usuário em 29/10/2026) e, se a melhor foto para o topo não for a mesa, `"principal": true` nela. Marque também `"texto": true` nas fotos com texto por cima ou em outra língua. O crivo também roda um detector de rostos de frente (YuNet, do OpenCV; `python3 tools/imagens/rostos.py <slug>/fotos`) e avisa "o detector viu N rosto(s) de frente" nas fotos sem a marca: abra a foto e decida. Ilustração de carta ou de caixa também dispara o aviso e pode ficar; gente de verdade de frente leva `"pessoas": true`. Por último rode `python3 tools/imagens/crivo.py --aplicar <slug>`: ele aplica o crivo de qualidade (PADRAO_EDITORIAL.md, "Crivo de qualidade das fotos"), escolhe a foto do topo, a de Como é jogar e a caixa, e libera a página com `"usar_na_pagina": true`. Se nenhuma foto passar para o topo, a página continua com o infográfico. O uso das fotos na página está em `PADRAO_EDITORIAL.md` (Fotos oficiais na página).
+
+## Trechos de vídeo (formato react, pedido do usuário em 17/11/2026)
+
+Para os vídeos da série, a prioridade é imagem real do jogo. Além das fotos oficiais, valem trechos de vídeos de outros canais no formato react:
+
+- **Prioridade das fontes:**
+  1. Vídeos da editora ou da distribuidora licenciada.
+  2. Criadores americanos (fair use).
+- **Regras de uso:**
+  - Trechos de 3 a 6 s, no máximo uns 15 s no vídeo inteiro.
+  - Sempre mudos; a nossa narração comenta por cima.
+  - Moldura com a etiqueta do canal e crédito na tela o tempo todo (`VÍDEO: <canal> (<plataforma>)`).
+  - Edição estrangeira avisada no crédito.
+- **Registro:** `public/video/<ep>/fontes.json` guarda canal, URL e o início de cada trecho.
+- **Onde baixar** (yt-dlp, para `.cache/react/<jogo>/`, fora do git):
+  - **TikTok:** baixa daqui sem bloqueio pela URL do vídeo; a busca por hashtag está quebrada no yt-dlp, então ache os links com a busca na web.
+  - **YouTube:** bloqueia este servidor (pede login ou captcha). Não contorne: peça ao usuário o arquivo baixado no computador dele, um `cookies.txt` de conta secundária, ou que ligue o computador à sessão pelo Remote Control.
+- **Componente:** `Clipe` em `src/witcher1/Witcher1.tsx` (OffthreadVideo mudo, moldura, etiqueta).

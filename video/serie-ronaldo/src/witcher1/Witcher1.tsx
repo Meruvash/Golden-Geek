@@ -1,5 +1,5 @@
 import React, { useLayoutEffect, useMemo } from "react";
-import { AbsoluteFill, Easing, Img, Sequence, interpolate, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
+import { AbsoluteFill, Easing, Img, OffthreadVideo, Sequence, interpolate, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import { Audio } from "@remotion/media";
 import { ThreeCanvas } from "@remotion/three";
 import { useThree } from "@react-three/fiber";
@@ -34,6 +34,20 @@ const Foto: React.FC<{ nome: string; x: number; y: number; w: number; o?: number
   <div style={{ position: "absolute", left: x, top: y, width: w, opacity: o, overflow: "hidden", borderRadius: 10, border: `6px solid ${PAPEL}`, boxShadow: "0 18px 40px rgba(0,0,0,.5)" }}>
     <Img src={staticFile(`img/witcher1/oficiais/${nome}.jpg`)} style={{ width: "100%", display: "block", transform: `scale(${1 + z * Math.min(1, ls / 4)})` }} />
   </div>
+);
+// trecho de vídeo real (formato react): curto, mudo, com moldura e o canal de origem na tela
+const ASMODEE = "VÍDEO: ASMODEE DEUTSCHLAND (TIKTOK) · EDIÇÃO ALEMÃ";
+const Clipe: React.FC<{ nome: string; t0: number; x?: number; y?: number; w?: number; rate?: number; cheio?: boolean }> = ({ nome, t0, x = 170, y = 250, w = 740, rate = 1, cheio }) => (
+  <Sequence from={Math.round(t0 * 30)} layout="none">
+    {cheio ? (
+      <AbsoluteFill><OffthreadVideo src={staticFile(`video/witcher1/${nome}.mp4`)} muted playbackRate={rate} style={{ width: 1080, height: 1080 }} /></AbsoluteFill>
+    ) : (
+      <div style={{ position: "absolute", left: x, top: y, width: w, borderRadius: 12, overflow: "hidden", border: `6px solid ${PAPEL}`, boxShadow: "0 18px 40px rgba(0,0,0,.55)" }}>
+        <OffthreadVideo src={staticFile(`video/witcher1/${nome}.mp4`)} muted playbackRate={rate} style={{ width: "100%", display: "block" }} />
+        <div style={{ position: "absolute", left: 12, top: 12, fontFamily: MONO, fontSize: 20, fontWeight: 700, color: "#fff", background: VERM, padding: "3px 10px", borderRadius: 4 }}>▶ ASMODEE DE · TIKTOK</div>
+      </div>
+    )}
+  </Sequence>
 );
 const Selo: React.FC<{ txt: string; x: number; y: number; o: number; cor?: string; tam?: number }> = ({ txt, x, y, o, cor = TINTA, tam = 34 }) => (
   <div style={{ position: "absolute", left: x, top: y, opacity: o, transform: `scale(${0.9 + 0.1 * o})`, transformOrigin: "left center" }}>
@@ -299,7 +313,8 @@ const PLANOS: Plano[] = [
   // 3 · cinco escolas e números
   { t: I(3) - 0.1, r: (s) => (
     <AbsoluteFill>
-      <Papel />
+      <Clipe nome="mapa" t0={I(3) - 0.1} cheio rate={0.65} />
+      <AbsoluteFill style={{ background: "rgba(10,14,22,.45)" }} />
       <svg width={1080} height={1080} style={{ position: "absolute" }}>
         {(["lobo", "gato", "grifo", "urso", "vibora"] as const).map((a, i) => {
           const t0 = W(3, "cinco", 2) - 0.2 + i * 0.22;
@@ -309,7 +324,7 @@ const PLANOS: Plano[] = [
       <Selo txt="1 a 5 jogadores" x={110} y={620} o={p(s, W(3, "jogadores,") - 0.3, 0.3)} />
       <Selo txt="5 escolas de bruxos" x={420} y={620} o={p(s, W(3, "escolas") - 0.2, 0.3)} cor={VERM} />
       <Selo txt="90 a 120 min" x={760} y={620} o={p(s, W(3, "bruxos.") - 0.1, 0.3)} />
-      <Credito txt="MEDALHÕES DESENHADOS EM CÓDIGO · INSPIRAÇÃO, NÃO CÓPIA" />
+      <Credito txt={ASMODEE} />
     </AbsoluteFill>
   ) },
   // 4 · dois conjuntos de cinco dados
@@ -381,12 +396,12 @@ const PLANOS: Plano[] = [
         <svg width={1080} height={1080} style={{ position: "absolute" }}>
           <g transform={`translate(540,430) scale(${1 + 0.05 * Math.min(1, ls)}) translate(-540,-430)`}>
             {k === 1 ? Array.from({ length: 12 }, (_, i) => <g key={i}><CartaAcao tipo={(["ataque", "esquiva", "sinal"] as const)[i % 3]} x={420 + (i % 6) * 48} y={420 + Math.floor(i / 6) * 20 - (i % 6) * 6} giro={-10 + (i % 6) * 4} esc={0.8} /></g>) : null}
-            {k === 2 ? <CartaMonstro x={540} y={430} esc={1.15} /> : null}
             {k === 3 ? <><Carta x={430} y={430} giro={-6} rotulo="POÇÃO"><IcoPocao /></Carta><Carta x={650} y={440} giro={6} rotulo="POÇÃO"><IcoPocao cor="#c23b22" /></Carta></> : null}
             {k === 4 ? Array.from({ length: 14 }, (_, i) => <Moeda key={i} x={380 + (i % 5) * 80 + (i > 9 ? 40 : 0)} y={460 - Math.floor(i / 5) * 40} r={38} />) : null}
           </g>
         </svg>
-        {k === 0 ? <><Foto nome="minis-e-caixa" x={40} y={300} w={1000} ls={ls} z={0.06} /><Credito txt="IMAGEM: GO ON BOARD · MONSTRO EM MINIATURA: EDIÇÃO DELUXE" /></> : null}
+        {k === 0 ? <><Clipe nome="minis" t0={cortes[0]} y={290} /><Credito txt={ASMODEE} /></> : null}
+        {k === 2 ? <><Clipe nome="monstro" t0={cortes[2]} y={290} /><Credito txt={ASMODEE} /></> : null}
         <div style={{ position: "absolute", left: 0, right: 0, top: 90, textAlign: "center" }}>
           <div style={{ fontFamily: SANS, fontWeight: 900, fontSize: 120, color: TINTA, lineHeight: 1 }}>{num}</div>
           <div style={{ fontFamily: MONO, fontSize: 30, color: VERM, marginTop: 6 }}>{rot}</div>
@@ -413,10 +428,10 @@ const PLANOS: Plano[] = [
       <AbsoluteFill>
         {k === 1 ? <Fundo nome="taverna" ls={s - c2} z0={1.15} z1={1.22} dur={2} filtro="brightness(.8)" /> : <Papel />}
         <svg width={1080} height={1080} style={{ position: "absolute" }}>
-          {k === 0 ? <CartaMonstro x={540} y={440} esc={1.15} x2={s > I(10) + 0.5} /> : null}
           {k === 1 ? <><Miniatura x={400} y={760} esc={1.5} /><Miniatura x={680} y={760} esc={1.5} vira /><path d="M520,520 l20,-40 l20,40 l-20,-10 Z" fill={AMAR} stroke="#111" strokeWidth={3} /></> : null}
-          {k === 2 ? <TabuleiroPessoal x={540} y={460} nivel={2 + Math.min(4, Math.floor((s - c3) * 4))} /> : null}
         </svg>
+        {k === 0 ? <><Foto nome="minis-e-caixa" x={40} y={260} w={1000} ls={s - I(10)} z={0.06} /><Credito txt="IMAGEM: GO ON BOARD · MONSTRO EM MINIATURA: EDIÇÃO DELUXE" /></> : null}
+        {k === 2 ? <><Clipe nome="tabuleiro" t0={c3} y={230} /><Credito txt={ASMODEE} /></> : null}
         <Selo txt={["monstro abatido", "briga na taverna", "treino até o máximo"][k]} x={300} y={120} o={1} cor={TINTA} tam={40} />
       </AbsoluteFill>
     );

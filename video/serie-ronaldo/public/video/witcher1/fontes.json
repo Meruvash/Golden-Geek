@@ -1,0 +1,16 @@
+{
+  "jogo": "The Witcher: Old World",
+  "formato": "react: trechos curtos (≈3 s), mudos, com narração nossa por cima e o canal na tela",
+  "origem": {
+    "canal": "Asmodee Deutschland (@asmodee.de), distribuidora licenciada",
+    "url": "https://www.tiktok.com/@asmodee.de/video/7251505114614091035",
+    "nota": "unboxing da edição alemã (Die Alte Welt)"
+  },
+  "trechos": [
+    {"arquivo": "mapa.mp4", "inicio_s": 4.5, "dur_s": 3.2},
+    {"arquivo": "minis.mp4", "inicio_s": 11.0, "dur_s": 3.2},
+    {"arquivo": "monstro.mp4", "inicio_s": 21.2, "dur_s": 3.2},
+    {"arquivo": "tabuleiro.mp4", "inicio_s": 26.5, "dur_s": 3.2}
+  ],
+  "credito_na_tela": "VÍDEO: ASMODEE DEUTSCHLAND (TIKTOK) · EDIÇÃO ALEMÃ"
+}
