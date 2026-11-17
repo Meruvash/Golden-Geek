@@ -2839,5 +2839,106 @@
    "sitemaps": [],
    "verificado_em": "2026-11-11"
   }
+ },
+ "goonboard.com": {
+  "nome": "Go On Board",
+  "apelidos": [
+   "Go On Board"
+  ],
+  "site": "https://goonboard.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 404,
+   "crawl_delay": null,
+   "sitemaps": [],
+   "verificado_em": "2026-11-17"
+  }
+ },
+ "asmodeenordics.com": {
+  "nome": "Asmodee Nordics",
+  "apelidos": [
+   "Asmodee Nordics"
+  ],
+  "site": "https://www.asmodeenordics.com",
+  "plataforma": "wordpress",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.asmodeenordics.com/sitemap_index.xml"
+   ],
+   "verificado_em": "2026-11-17"
+  }
+ },
+ "press.cdprojektred.com": {
+  "nome": "CD PROJEKT RED",
+  "apelidos": [
+   "CD PROJEKT RED"
+  ],
+  "site": "https://press.cdprojektred.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://press.cdprojektred.com/pt-br#media",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [],
+   "verificado_em": "2026-11-17"
+  }
+ },
+ "store.asmodee.com": {
+  "nome": "Asmodee USA",
+  "apelidos": [
+   "Asmodee USA"
+  ],
+  "site": "https://store.asmodee.com",
+  "plataforma": "shopify",
+  "estrategia": "sitemap+shopify_json",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://store.asmodee.com/sitemap.xml"
+   ],
+   "verificado_em": "2026-11-17"
+  }
+ },
+ "rebel.pl": {
+  "nome": "Rebel",
+  "apelidos": [
+   "Rebel"
+  ],
+  "site": "https://www.rebel.pl",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://www.rebel.pl/theme/movies-tv-radio-theme.html",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": 5.0,
+   "sitemaps": [
+    "https://www.rebel.pl/sitemap.xml"
+   ],
+   "verificado_em": "2026-11-17"
+  }
  }
 }

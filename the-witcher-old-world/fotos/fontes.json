@@ -1,0 +1,57 @@
+{
+ "slug": "the-witcher-old-world",
+ "usar_na_pagina": true,
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 900,
+   "altura": 900,
+   "editora": "Asmodee Canada",
+   "credito": "Imagem: Asmodee Canada · edição em inglês, distribuída pela Asmodee Canadá",
+   "pagina": "https://shop.asmodee.ca/en/reb9859",
+   "imagem": "https://shop.asmodee.ca/img/product/TWOW_box-Z.jpg?fv=D80BF4B9174A8D7B426E0EEF3F46F63E",
+   "baixada_em": "2026-11-17",
+   "aprovada": true
+  },
+  {
+   "arquivo": "fotos/mesa-1.webp",
+   "tipo": "mesa",
+   "largura": 1200,
+   "altura": 800,
+   "editora": "Rebel",
+   "credito": "Imagem: Rebel · edição polonesa, da Rebel",
+   "pagina": "https://www.rebel.pl/gry-planszowe/wiedzmin-stary-swiat-2003250.html",
+   "imagem": "https://files.rebel.pl/products/100/371/_2003250/rebel-gra-przygodowa-wiedzmin-stary-swiat-foto6.jpg",
+   "baixada_em": "2026-11-17",
+   "aprovada": true,
+   "principal": true
+  },
+  {
+   "arquivo": "fotos/jogabilidade-1.webp",
+   "tipo": "jogabilidade",
+   "largura": 1200,
+   "altura": 800,
+   "editora": "Rebel",
+   "credito": "Imagem: Rebel · edição polonesa, da Rebel",
+   "pagina": "https://www.rebel.pl/gry-planszowe/wiedzmin-stary-swiat-2003250.html",
+   "imagem": "https://files.rebel.pl/products/100/371/_2003250/rebel-gra-przygodowa-wiedzmin-stary-swiat-foto5.jpg",
+   "baixada_em": "2026-11-17",
+   "aprovada": true,
+   "fora": true
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 1200,
+   "altura": 800,
+   "editora": "Rebel",
+   "credito": "Imagem: Rebel · edição polonesa, da Rebel",
+   "pagina": "https://www.rebel.pl/gry-planszowe/wiedzmin-stary-swiat-2003250.html",
+   "imagem": "https://files.rebel.pl/products/100/371/_2003250/rebel-gra-przygodowa-wiedzmin-stary-swiat-foto2.jpg",
+   "baixada_em": "2026-11-17",
+   "aprovada": true,
+   "jogar": true
+  }
+ ]
+}

@@ -438,6 +438,11 @@
    "jogo": "Darwin’s Journey",
    "url": "https://eliteboardgamers.com.br/darwins-journey/",
    "data": "2026-11-17"
+  },
+  {
+   "jogo": "The Witcher: Old World",
+   "url": "https://eliteboardgamers.com.br/the-witcher-old-world/",
+   "data": "2026-11-17"
   }
  ],
  "jogos": [
@@ -11369,6 +11374,19 @@
     "obs": "fotos de mesa de Lucas Otniel (cedidas pelo usuário) e caixa da Garphill Games"
    },
    "excecao": "pedido do usuário em 31/10/2026: resenha de Inventores do Sul do Tigre com fotos de Lucas Otniel"
+  },
+  {
+   "jogo": "The Witcher: Old World",
+   "serie": null,
+   "tipo": "jogo",
+   "vencedor": false,
+   "premiacoes": [],
+   "status": "publicado",
+   "premios_distintos": 0,
+   "prioridade": 9999,
+   "carro_chefe": false,
+   "slug": "the-witcher-old-world",
+   "excecao": "Fora da regra de premiados: resenha pedida pelo usuário em 17/11/2026."
   }
  ]
 }

@@ -394,7 +394,11 @@ def build(c):
     ficha = c["ficha"]
     ano = campo(ficha, "ano") or ""
     autor = campo(ficha, "designer", "designers") or ""
-    nota = numero(campo(ficha, "nota bgg"))
+    _nb = campo(ficha, "nota bgg") or ""
+    _m = re.search(r"média\s+(\d+(?:[.,]\d+)?)", _nb)
+    nota = numero(_m.group(1)) if _m else numero(_nb)
+    if nota is not None and not 0 < nota <= 10:  # posição no ranking não é nota (erro de 17/11/2026)
+        nota = None
     peso = campo(ficha, "peso bgg")
     regua = [
         ("jogadores", (lambda d: d and re.sub(r"^(\d+) a (\d+)", r"\1–\2", d))(campo(ficha, "jogadores")), "Jogadores"),
