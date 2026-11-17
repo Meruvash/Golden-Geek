@@ -1,0 +1,1092 @@
+[
+ {
+  "id": 1,
+  "quem": "narrador",
+  "texto": "Você sabia que, neste jogo, um caçador de monstros pode ganhar dinheiro jogando pôquer de dados na taverna?",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/witcher1/fala-01.wav",
+  "dur": 5.694,
+  "palavras_ouvidas": [
+   {
+    "text": "Você",
+    "start": 0.1,
+    "end": 0.32
+   },
+   {
+    "text": "sabia",
+    "start": 0.36,
+    "end": 0.78
+   },
+   {
+    "text": "que",
+    "start": 0.82,
+    "end": 0.92
+   },
+   {
+    "text": "neste",
+    "start": 1.02,
+    "end": 1.36
+   },
+   {
+    "text": "jogo",
+    "start": 1.44,
+    "end": 1.7
+   },
+   {
+    "text": "um",
+    "start": 1.74,
+    "end": 1.84
+   },
+   {
+    "text": "caçador",
+    "start": 1.88,
+    "end": 2.26
+   },
+   {
+    "text": "de",
+    "start": 2.32,
+    "end": 2.36
+   },
+   {
+    "text": "monstros",
+    "start": 2.5,
+    "end": 2.86
+   },
+   {
+    "text": "pode",
+    "start": 2.88,
+    "end": 3.08
+   },
+   {
+    "text": "ganhar",
+    "start": 3.1,
+    "end": 3.3
+   },
+   {
+    "text": "dinheiro",
+    "start": 3.36,
+    "end": 3.68
+   },
+   {
+    "text": "jogando",
+    "start": 3.72,
+    "end": 4.019
+   },
+   {
+    "text": "pôquer",
+    "start": 4.16,
+    "end": 4.38
+   },
+   {
+    "text": "de",
+    "start": 4.42,
+    "end": 4.48
+   },
+   {
+    "text": "dados",
+    "start": 4.56,
+    "end": 4.84
+   },
+   {
+    "text": "na",
+    "start": 4.88,
+    "end": 4.94
+   },
+   {
+    "text": "taverna?",
+    "start": 4.98,
+    "end": 5.42
+   }
+  ]
+ },
+ {
+  "id": 2,
+  "quem": "narrador",
+  "texto": "É The Witcher: Old World, da Go On Board com a CD Projekt Red.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/witcher1/fala-02.wav",
+  "dur": 4.473,
+  "palavras_ouvidas": [
+   {
+    "text": "É",
+    "start": 0.1,
+    "end": 0.14
+   },
+   {
+    "text": "The",
+    "start": 0.16,
+    "end": 0.24
+   },
+   {
+    "text": "Witcher:",
+    "start": 0.3,
+    "end": 0.66
+   },
+   {
+    "text": "Old",
+    "start": 1.04,
+    "end": 1.26
+   },
+   {
+    "text": "World,",
+    "start": 1.36,
+    "end": 1.66
+   },
+   {
+    "text": "da",
+    "start": 1.94,
+    "end": 2.04
+   },
+   {
+    "text": "Go",
+    "start": 2.18,
+    "end": 2.28
+   },
+   {
+    "text": "On",
+    "start": 2.36,
+    "end": 2.46
+   },
+   {
+    "text": "Board",
+    "start": 2.54,
+    "end": 2.8
+   },
+   {
+    "text": "com",
+    "start": 2.86,
+    "end": 2.94
+   },
+   {
+    "text": "a",
+    "start": 2.98,
+    "end": 3.06
+   },
+   {
+    "text": "CD",
+    "start": 3.12,
+    "end": 3.36
+   },
+   {
+    "text": "Projekt",
+    "start": 3.46,
+    "end": 3.82
+   },
+   {
+    "text": "Red",
+    "start": 3.92,
+    "end": 4.14
+   }
+  ]
+ },
+ {
+  "id": 3,
+  "quem": "narrador",
+  "texto": "De um a cinco jogadores, cada um de uma das cinco escolas de bruxos.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/witcher1/fala-03.wav",
+  "dur": 4.306,
+  "palavras_ouvidas": [
+   {
+    "text": "De",
+    "start": 0.1,
+    "end": 0.24
+   },
+   {
+    "text": "um",
+    "start": 0.28,
+    "end": 0.6
+   },
+   {
+    "text": "a",
+    "start": 0.66,
+    "end": 0.72
+   },
+   {
+    "text": "cinco",
+    "start": 0.9,
+    "end": 1.14
+   },
+   {
+    "text": "jogadores,",
+    "start": 1.2,
+    "end": 1.74
+   },
+   {
+    "text": "cada",
+    "start": 1.82,
+    "end": 2.04
+   },
+   {
+    "text": "um",
+    "start": 2.08,
+    "end": 2.18
+   },
+   {
+    "text": "de",
+    "start": 2.22,
+    "end": 2.28
+   },
+   {
+    "text": "uma",
+    "start": 2.32,
+    "end": 2.44
+   },
+   {
+    "text": "das",
+    "start": 2.5,
+    "end": 2.68
+   },
+   {
+    "text": "cinco",
+    "start": 2.76,
+    "end": 2.96
+   },
+   {
+    "text": "escolas",
+    "start": 3.0,
+    "end": 3.42
+   },
+   {
+    "text": "de",
+    "start": 3.46,
+    "end": 3.5
+   },
+   {
+    "text": "bruxos",
+    "start": 3.58,
+    "end": 4.04
+   }
+  ]
+ },
+ {
+  "id": 4,
+  "quem": "narrador",
+  "texto": "E os dados estão mesmo na caixa: dois conjuntos de cinco dados de pôquer.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/witcher1/fala-04.wav",
+  "dur": 4.947,
+  "palavras_ouvidas": [
+   {
+    "text": "E",
+    "start": 0.08,
+    "end": 0.12
+   },
+   {
+    "text": "os",
+    "start": 0.16,
+    "end": 0.26
+   },
+   {
+    "text": "dados",
+    "start": 0.3,
+    "end": 0.6
+   },
+   {
+    "text": "estão",
+    "start": 0.62,
+    "end": 0.9
+   },
+   {
+    "text": "mesmo",
+    "start": 0.94,
+    "end": 1.2
+   },
+   {
+    "text": "na",
+    "start": 1.22,
+    "end": 1.36
+   },
+   {
+    "text": "caixa.",
+    "start": 1.4,
+    "end": 1.78
+   },
+   {
+    "text": "Dois",
+    "start": 2.2,
+    "end": 2.42
+   },
+   {
+    "text": "conjuntos",
+    "start": 2.5,
+    "end": 3.2
+   },
+   {
+    "text": "de",
+    "start": 3.24,
+    "end": 3.3
+   },
+   {
+    "text": "cinco",
+    "start": 3.48,
+    "end": 3.7
+   },
+   {
+    "text": "dados",
+    "start": 3.8,
+    "end": 4.14
+   },
+   {
+    "text": "de",
+    "start": 4.16,
+    "end": 4.22
+   },
+   {
+    "text": "pôquer",
+    "start": 4.34,
+    "end": 4.68
+   }
+  ]
+ },
+ {
+  "id": 5,
+  "quem": "narrador",
+  "texto": "O que pouca gente sabe é que a história acontece anos antes de Geralt, quando os monstros eram muito mais numerosos.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/witcher1/fala-05.wav",
+  "dur": 6.873,
+  "palavras_ouvidas": [
+   {
+    "text": "O",
+    "start": 0.06,
+    "end": 0.1
+   },
+   {
+    "text": "que",
+    "start": 0.16,
+    "end": 0.3
+   },
+   {
+    "text": "pouca",
+    "start": 0.32,
+    "end": 0.56
+   },
+   {
+    "text": "gente",
+    "start": 0.6,
+    "end": 0.8
+   },
+   {
+    "text": "sabe",
+    "start": 0.94,
+    "end": 1.26
+   },
+   {
+    "text": "é",
+    "start": 1.52,
+    "end": 1.58
+   },
+   {
+    "text": "que",
+    "start": 1.6,
+    "end": 1.68
+   },
+   {
+    "text": "a",
+    "start": 1.7,
+    "end": 1.74
+   },
+   {
+    "text": "história",
+    "start": 1.78,
+    "end": 2.12
+   },
+   {
+    "text": "acontece",
+    "start": 2.14,
+    "end": 2.78
+   },
+   {
+    "text": "anos",
+    "start": 2.86,
+    "end": 3.14
+   },
+   {
+    "text": "antes",
+    "start": 3.22,
+    "end": 3.5
+   },
+   {
+    "text": "de",
+    "start": 3.54,
+    "end": 3.62
+   },
+   {
+    "text": "Geralt,",
+    "start": 3.72,
+    "end": 4.1
+   },
+   {
+    "text": "quando",
+    "start": 4.42,
+    "end": 4.6
+   },
+   {
+    "text": "os",
+    "start": 4.62,
+    "end": 4.74
+   },
+   {
+    "text": "monstros",
+    "start": 4.84,
+    "end": 5.2
+   },
+   {
+    "text": "eram",
+    "start": 5.26,
+    "end": 5.42
+   },
+   {
+    "text": "muito",
+    "start": 5.46,
+    "end": 5.7
+   },
+   {
+    "text": "mais",
+    "start": 5.74,
+    "end": 5.92
+   },
+   {
+    "text": "numerosos",
+    "start": 5.96,
+    "end": 6.6
+   }
+  ]
+ },
+ {
+  "id": 6,
+  "quem": "narrador",
+  "texto": "Por isso a luta não é no dado: é no baralho.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/witcher1/fala-06.wav",
+  "dur": 2.648,
+  "palavras_ouvidas": [
+   {
+    "text": "Por",
+    "start": 0.08,
+    "end": 0.18
+   },
+   {
+    "text": "isso",
+    "start": 0.22,
+    "end": 0.38
+   },
+   {
+    "text": "a",
+    "start": 0.42,
+    "end": 0.46
+   },
+   {
+    "text": "luta",
+    "start": 0.52,
+    "end": 0.76
+   },
+   {
+    "text": "não",
+    "start": 0.84,
+    "end": 0.96
+   },
+   {
+    "text": "é",
+    "start": 1.0,
+    "end": 1.04
+   },
+   {
+    "text": "no",
+    "start": 1.08,
+    "end": 1.14
+   },
+   {
+    "text": "dado,",
+    "start": 1.24,
+    "end": 1.52
+   },
+   {
+    "text": "é",
+    "start": 1.8,
+    "end": 1.84
+   },
+   {
+    "text": "no",
+    "start": 1.88,
+    "end": 1.98
+   },
+   {
+    "text": "baralho",
+    "start": 2.0,
+    "end": 2.4
+   }
+  ]
+ },
+ {
+  "id": 7,
+  "quem": "narrador",
+  "texto": "Você monta o seu com ataques, esquivas e Sinais, a magia de combate dos bruxos.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/witcher1/fala-07.wav",
+  "dur": 4.766,
+  "palavras_ouvidas": [
+   {
+    "text": "Você",
+    "start": 0.1,
+    "end": 0.32
+   },
+   {
+    "text": "monta",
+    "start": 0.4,
+    "end": 0.62
+   },
+   {
+    "text": "o",
+    "start": 0.66,
+    "end": 0.68
+   },
+   {
+    "text": "seu",
+    "start": 0.78,
+    "end": 0.96
+   },
+   {
+    "text": "com",
+    "start": 0.98,
+    "end": 1.06
+   },
+   {
+    "text": "ataques,",
+    "start": 1.12,
+    "end": 1.6
+   },
+   {
+    "text": "esquivas",
+    "start": 1.64,
+    "end": 2.1
+   },
+   {
+    "text": "e",
+    "start": 2.12,
+    "end": 2.16
+   },
+   {
+    "text": "sinais,",
+    "start": 2.22,
+    "end": 2.7
+   },
+   {
+    "text": "a",
+    "start": 2.98,
+    "end": 3.0
+   },
+   {
+    "text": "magia",
+    "start": 3.06,
+    "end": 3.34
+   },
+   {
+    "text": "de",
+    "start": 3.4,
+    "end": 3.48
+   },
+   {
+    "text": "combate",
+    "start": 3.52,
+    "end": 3.88
+   },
+   {
+    "text": "dos",
+    "start": 3.92,
+    "end": 4.04
+   },
+   {
+    "text": "bruxos",
+    "start": 4.12,
+    "end": 4.5
+   }
+  ]
+ },
+ {
+  "id": 8,
+  "quem": "narrador",
+  "texto": "Na mesa: uma miniatura de bruxo por jogador, noventa cartas de ação, vinte e oito monstros, vinte e oito poções e trinta e cinco moedas de ouro.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/witcher1/fala-08.wav",
+  "dur": 9.199,
+  "palavras_ouvidas": [
+   {
+    "text": "Na",
+    "start": 0.08,
+    "end": 0.14
+   },
+   {
+    "text": "mesa,",
+    "start": 0.2,
+    "end": 0.54
+   },
+   {
+    "text": "uma",
+    "start": 0.86,
+    "end": 1.1
+   },
+   {
+    "text": "miniatura",
+    "start": 1.22,
+    "end": 1.76
+   },
+   {
+    "text": "de",
+    "start": 1.82,
+    "end": 1.86
+   },
+   {
+    "text": "bruxo",
+    "start": 1.96,
+    "end": 2.26
+   },
+   {
+    "text": "por",
+    "start": 2.28,
+    "end": 2.38
+   },
+   {
+    "text": "jogador,",
+    "start": 2.44,
+    "end": 2.88
+   },
+   {
+    "text": "90",
+    "start": 3.4,
+    "end": 3.62
+   },
+   {
+    "text": "cartas",
+    "start": 3.66,
+    "end": 3.98
+   },
+   {
+    "text": "de",
+    "start": 4.0,
+    "end": 4.059
+   },
+   {
+    "text": "ação,",
+    "start": 4.12,
+    "end": 4.48
+   },
+   {
+    "text": "28",
+    "start": 4.9,
+    "end": 5.46
+   },
+   {
+    "text": "monstros,",
+    "start": 5.52,
+    "end": 5.98
+   },
+   {
+    "text": "28",
+    "start": 6.14,
+    "end": 6.66
+   },
+   {
+    "text": "poções",
+    "start": 6.7,
+    "end": 7.16
+   },
+   {
+    "text": "e",
+    "start": 7.2,
+    "end": 7.24
+   },
+   {
+    "text": "35",
+    "start": 7.54,
+    "end": 8.16
+   },
+   {
+    "text": "moedas",
+    "start": 8.2,
+    "end": 8.56
+   },
+   {
+    "text": "de",
+    "start": 8.6,
+    "end": 8.64
+   },
+   {
+    "text": "ouro",
+    "start": 8.74,
+    "end": 8.92
+   }
+  ]
+ },
+ {
+  "id": 9,
+  "quem": "narrador",
+  "texto": "E não tem contagem de pontos no fim: quem juntar de quatro a seis troféus primeiro vence na hora.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/witcher1/fala-09.wav",
+  "dur": 5.49,
+  "palavras_ouvidas": [
+   {
+    "text": "E",
+    "start": 0.08,
+    "end": 0.12
+   },
+   {
+    "text": "não",
+    "start": 0.16,
+    "end": 0.3
+   },
+   {
+    "text": "tem",
+    "start": 0.32,
+    "end": 0.44
+   },
+   {
+    "text": "contagem",
+    "start": 0.48,
+    "end": 0.92
+   },
+   {
+    "text": "de",
+    "start": 0.96,
+    "end": 1.0
+   },
+   {
+    "text": "pontos",
+    "start": 1.14,
+    "end": 1.42
+   },
+   {
+    "text": "no",
+    "start": 1.44,
+    "end": 1.54
+   },
+   {
+    "text": "fim.",
+    "start": 1.6,
+    "end": 1.78
+   },
+   {
+    "text": "Quem",
+    "start": 2.14,
+    "end": 2.26
+   },
+   {
+    "text": "juntar",
+    "start": 2.3,
+    "end": 2.66
+   },
+   {
+    "text": "de",
+    "start": 2.72,
+    "end": 2.84
+   },
+   {
+    "text": "quatro",
+    "start": 2.9,
+    "end": 3.2
+   },
+   {
+    "text": "a",
+    "start": 3.22,
+    "end": 3.26
+   },
+   {
+    "text": "seis",
+    "start": 3.38,
+    "end": 3.54
+   },
+   {
+    "text": "troféus",
+    "start": 3.6,
+    "end": 4.1
+   },
+   {
+    "text": "primeiro",
+    "start": 4.12,
+    "end": 4.44
+   },
+   {
+    "text": "vence",
+    "start": 4.54,
+    "end": 4.8
+   },
+   {
+    "text": "na",
+    "start": 4.84,
+    "end": 4.94
+   },
+   {
+    "text": "hora",
+    "start": 4.98,
+    "end": 5.2
+   }
+  ]
+ },
+ {
+  "id": 10,
+  "quem": "narrador",
+  "texto": "Troféu de monstro abatido, de briga na taverna contra outro bruxo, ou de treino até o máximo.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/witcher1/fala-10.wav",
+  "dur": 6.086,
+  "palavras_ouvidas": [
+   {
+    "text": "Troféu",
+    "start": 0.08,
+    "end": 0.38
+   },
+   {
+    "text": "de",
+    "start": 0.42,
+    "end": 0.46
+   },
+   {
+    "text": "monstro",
+    "start": 0.56,
+    "end": 0.92
+   },
+   {
+    "text": "abatido,",
+    "start": 0.96,
+    "end": 1.58
+   },
+   {
+    "text": "de",
+    "start": 1.68,
+    "end": 1.74
+   },
+   {
+    "text": "briga",
+    "start": 1.9,
+    "end": 2.12
+   },
+   {
+    "text": "na",
+    "start": 2.16,
+    "end": 2.28
+   },
+   {
+    "text": "taverna",
+    "start": 2.3,
+    "end": 2.84
+   },
+   {
+    "text": "contra",
+    "start": 2.88,
+    "end": 3.18
+   },
+   {
+    "text": "outro",
+    "start": 3.24,
+    "end": 3.48
+   },
+   {
+    "text": "bruxo",
+    "start": 3.58,
+    "end": 3.98
+   },
+   {
+    "text": "ou",
+    "start": 4.38,
+    "end": 4.48
+   },
+   {
+    "text": "de",
+    "start": 4.56,
+    "end": 4.64
+   },
+   {
+    "text": "treino",
+    "start": 4.78,
+    "end": 5.06
+   },
+   {
+    "text": "até",
+    "start": 5.1,
+    "end": 5.28
+   },
+   {
+    "text": "o",
+    "start": 5.3,
+    "end": 5.34
+   },
+   {
+    "text": "máximo",
+    "start": 5.4,
+    "end": 5.82
+   }
+  ]
+ },
+ {
+  "id": 11,
+  "quem": "narrador",
+  "texto": "E o pôquer? Esse paga o ouro.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/witcher1/fala-11.wav",
+  "dur": 1.766,
+  "palavras_ouvidas": [
+   {
+    "text": "E",
+    "start": 0.04,
+    "end": 0.08
+   },
+   {
+    "text": "o",
+    "start": 0.1,
+    "end": 0.18
+   },
+   {
+    "text": "pôquer?",
+    "start": 0.2,
+    "end": 0.46
+   },
+   {
+    "text": "Esse",
+    "start": 0.72,
+    "end": 0.88
+   },
+   {
+    "text": "paga",
+    "start": 0.98,
+    "end": 1.16
+   },
+   {
+    "text": "o",
+    "start": 1.22,
+    "end": 1.26
+   },
+   {
+    "text": "ouro",
+    "start": 1.34,
+    "end": 1.52
+   }
+  ]
+ },
+ {
+  "id": 12,
+  "quem": "narrador",
+  "texto": "Na sua mesa, você ia caçar monstro ou ficar na taverna?",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/witcher1/fala-12.wav",
+  "dur": 3.069,
+  "palavras_ouvidas": [
+   {
+    "text": "Na",
+    "start": 0.08,
+    "end": 0.14
+   },
+   {
+    "text": "sua",
+    "start": 0.22,
+    "end": 0.34
+   },
+   {
+    "text": "mesa",
+    "start": 0.4,
+    "end": 0.64
+   },
+   {
+    "text": "você",
+    "start": 0.68,
+    "end": 0.9
+   },
+   {
+    "text": "ia",
+    "start": 0.94,
+    "end": 1.06
+   },
+   {
+    "text": "caçar",
+    "start": 1.08,
+    "end": 1.38
+   },
+   {
+    "text": "monstro",
+    "start": 1.48,
+    "end": 1.82
+   },
+   {
+    "text": "ou",
+    "start": 1.84,
+    "end": 1.9
+   },
+   {
+    "text": "ficar",
+    "start": 1.98,
+    "end": 2.2
+   },
+   {
+    "text": "na",
+    "start": 2.24,
+    "end": 2.3
+   },
+   {
+    "text": "taverna?",
+    "start": 2.34,
+    "end": 2.8
+   }
+  ]
+ },
+ {
+  "id": 13,
+  "quem": "narrador",
+  "texto": "Segue a Elite Boardgamers pra conhecer mais jogos assim.",
+  "modelo": "eleven_multilingual_v2",
+  "arquivo": "voz/witcher1/fala-13.wav",
+  "dur": 3.048,
+  "palavras_ouvidas": [
+   {
+    "text": "Segue",
+    "start": 0.1,
+    "end": 0.34
+   },
+   {
+    "text": "a",
+    "start": 0.36,
+    "end": 0.42
+   },
+   {
+    "text": "Elite",
+    "start": 0.44,
+    "end": 0.68
+   },
+   {
+    "text": "Board",
+    "start": 0.76,
+    "end": 0.96
+   },
+   {
+    "text": "Games",
+    "start": 1.08,
+    "end": 1.42
+   },
+   {
+    "text": "pra",
+    "start": 1.44,
+    "end": 1.56
+   },
+   {
+    "text": "conhecer",
+    "start": 1.58,
+    "end": 1.96
+   },
+   {
+    "text": "mais",
+    "start": 2.0,
+    "end": 2.18
+   },
+   {
+    "text": "jogos",
+    "start": 2.22,
+    "end": 2.5
+   },
+   {
+    "text": "assim",
+    "start": 2.54,
+    "end": 2.8
+   }
+  ]
+ }
+]
