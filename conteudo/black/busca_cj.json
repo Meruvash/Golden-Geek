@@ -169,6 +169,7 @@
  "adicional ao fechar pedido elden ring the board game stormveil castle": null,
  "adicional ao fechar pedido eldritch horror masks of nyarlathotep": null,
  "adicional ao fechar pedido encyclopaedia arcana lex arcana": null,
+ "adicional ao fechar pedido espada e feiticaria portal arcano": null,
  "adicional ao fechar pedido expansao da unidade star wars legion imperial specialists miniaturas de suporte tatico do imperio galactico co": null,
  "adicional ao fechar pedido expansao da unidade star wars shatterpoint b2 super battle droids jogo de miniaturas de mesa jogo de estrategia": null,
  "adicional ao fechar pedido expansao marvel champions the card game fear no evil campanha dos defensores com herois demolidores e echo viloe": null,
@@ -629,6 +630,17 @@
   "ref": 274.55,
   "ref_dias": 32,
   "slug": "azul",
+  "tipo": "game"
+ },
+ "back to the future back in time": {
+  "bgg": 7.18533,
+  "editora": "Funko Games",
+  "imagem": "https://uploads.comparajogos.com.br/img/2681e765a11ec5726089e5b441c41896e02d409a.png",
+  "menor": null,
+  "nome": "Back to the Future: Back in Time",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "back-to-the-future-back-in-time",
   "tipo": "game"
  },
  "bad bones": {
@@ -5402,6 +5414,28 @@
   "ref_dias": 32,
   "slug": "tianxia",
   "tipo": "game"
+ },
+ "ticket to ride africa": {
+  "bgg": 7.36769,
+  "editora": "Galápagos Jogos",
+  "imagem": "https://uploads.comparajogos.com.br/img/db72ebc7c11be257b9324aa62a8dc6c473a429da.jpg",
+  "menor": null,
+  "nome": "Ticket to Ride: África",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "ticket-to-ride-africa",
+  "tipo": "expansion"
+ },
+ "ticket to ride franca": {
+  "bgg": 7.58827,
+  "editora": "Galápagos Jogos",
+  "imagem": "https://uploads.comparajogos.com.br/img/27441b01217efe54fceb0577523e747f0130987d.jpg",
+  "menor": null,
+  "nome": "Ticket to Ride: França",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "ticket-to-ride-franca",
+  "tipo": "expansion"
  },
  "tier up": {
   "bgg": null,
