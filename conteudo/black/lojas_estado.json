@@ -10,7 +10,7 @@
   },
   "bravojogos.com.br": {
    "dia": "2026-11-17",
-   "paginas": 8
+   "paginas": 9
   },
   "brecholudico.com.br": {
    "dia": "2026-11-17",
@@ -144,7 +144,7 @@
   },
   "www.caixinhaboardgames.com.br": {
    "dia": "2026-11-17",
-   "paginas": 2
+   "paginas": 5
   },
   "www.caldeiraojogos.com.br": {
    "dia": "2026-11-17",
@@ -154,7 +154,7 @@
    "descanso_ate": "2026-11-11T09:45+00:00",
    "dia": "2026-11-17",
    "motivo": "robots.txt respondeu 403",
-   "paginas": 0
+   "paginas": 4
   },
   "www.capivarajogos.com.br": {
    "dia": "2026-11-17",
@@ -280,7 +280,7 @@
    "descanso_ate": "2026-11-11T09:48+00:00",
    "dia": "2026-11-17",
    "motivo": "robots.txt respondeu 403",
-   "paginas": 5
+   "paginas": 9
   },
   "www.playeasy.com.br": {
    "descanso_ate": "2026-11-11T09:48+00:00",
@@ -294,7 +294,7 @@
   },
   "www.promobit.com.br": {
    "dia": "2026-11-17",
-   "paginas": 20
+   "paginas": 30
   },
   "www.reunionjogos.com.br": {
    "dia": "2026-11-17",
@@ -322,7 +322,7 @@
    "descanso_ate": "2026-11-11T09:38+00:00",
    "dia": "2026-11-17",
    "motivo": "robots.txt respondeu 403",
-   "paginas": 5
+   "paginas": 9
   },
   "www.tavernareal.com": {
    "descanso_ate": "2026-11-11T09:49+00:00",
@@ -451,7 +451,7 @@
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/fabulinhas-p": {
    "cj": 65.01,
    "estoque": true,
-   "hora": "2026-11-15T18:57+00:00",
+   "hora": "2026-11-17T06:49+00:00",
    "preco": 69.9
   },
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/jogo-bananagrams-party-p": {
@@ -1195,7 +1195,7 @@
   "https://www.cangaiajogos.com.br/tacta": {
    "cj": 74.39,
    "estoque": true,
-   "hora": "2026-11-17T06:50+00:00",
+   "hora": "2026-11-17T06:49+00:00",
    "preco": 79.99
   },
   "https://www.cangaiajogos.com.br/take-time": {
@@ -1491,18 +1491,6 @@
    "estoque": true,
    "hora": "2026-11-17T06:49+00:00",
    "preco": 88.1
-  },
-  "https://www.mecadosjogos.com.br/radlands-base-p1070": {
-   "cj": 127.89,
-   "estoque": true,
-   "hora": "2026-11-17T06:50+00:00",
-   "preco": 142.1
-  },
-  "https://www.mecadosjogos.com.br/ramen-fury-p153": {
-   "cj": 54.27,
-   "estoque": true,
-   "hora": "2026-11-17T06:50+00:00",
-   "preco": 60.3
   },
   "https://www.mecadosjogos.com.br/superlemming-p384": {
    "cj": 30.69,
