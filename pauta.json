@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-11-11",
+ "atualizado_em": "2026-11-17",
  "regras": {
   "premios": [
    "Golden Geek",
@@ -433,6 +433,11 @@
    "jogo": "Dragon's Breath",
    "url": "https://eliteboardgamers.com.br/dragon-s-breath/",
    "data": "2026-11-11"
+  },
+  {
+   "jogo": "Darwin’s Journey",
+   "url": "https://eliteboardgamers.com.br/darwins-journey/",
+   "data": "2026-11-17"
   }
  ],
  "jogos": [
@@ -5445,7 +5450,7 @@
      "fonte": "https://eliteboardgamers.com.br/"
     }
    ],
-   "status": "na_fila",
+   "status": "publicado",
    "prioridade": 147,
    "premios_distintos": 2,
    "carro_chefe": false

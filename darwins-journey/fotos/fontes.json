@@ -1,0 +1,48 @@
+{
+ "slug": "darwins-journey",
+ "usar_na_pagina": true,
+ "obs": "Fotos da mesa do editor (17/11/2026), recortadas na base para tirar a marca de filtro de app; escolha manual do topo, a pedido do usuário (o crivo pede lado menor de 800 px; estas têm 720).",
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 720,
+   "altura": 1232,
+   "editora": "Elite Boardgamers",
+   "credito": "Foto: Elite Boardgamers (acervo próprio)",
+   "pagina": null,
+   "imagem": null,
+   "baixada_em": "2026-11-17",
+   "aprovada": true,
+   "propria": true
+  },
+  {
+   "arquivo": "fotos/mesa-1.webp",
+   "tipo": "mesa",
+   "largura": 720,
+   "altura": 1232,
+   "editora": "Elite Boardgamers",
+   "credito": "Foto: Elite Boardgamers (acervo próprio)",
+   "pagina": null,
+   "imagem": null,
+   "baixada_em": "2026-11-17",
+   "aprovada": true,
+   "propria": true,
+   "principal": true
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 720,
+   "altura": 1232,
+   "editora": "Elite Boardgamers",
+   "credito": "Foto: Elite Boardgamers (acervo próprio)",
+   "pagina": null,
+   "imagem": null,
+   "baixada_em": "2026-11-17",
+   "aprovada": true,
+   "propria": true,
+   "jogar": true
+  }
+ ]
+}
