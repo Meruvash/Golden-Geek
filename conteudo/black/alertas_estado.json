@@ -42,6 +42,8 @@
   "draftosaurus-marina-e-show-aereo",
   "dungeons-of-kards",
   "exodus-machina",
+  "exploding-kittens-bem-vs-mal",
+  "fabulinhas",
   "fantastic-factories-subterfuge",
   "fateflip-arrastado-pelo-mar",
   "fateflip-decretos-reais",
@@ -84,6 +86,7 @@
   "paris-letoile",
   "perfil-7",
   "perfil-express-filmes-e-series",
+  "petiquette",
   "pie-face",
   "piratas",
   "power-hungry-pets",
@@ -95,6 +98,7 @@
   "revolucao-dos-bichos",
   "rolima",
   "rorys-story-cubes-harry-potter",
+  "shinkansen-zero-kei",
   "sizeup",
   "skip-bo",
   "sleeping-gods-dungeons",
@@ -115,7 +119,13 @@
   "uno-flip-attack",
   "uno-toy-story-4",
   "warzoo-dicefare",
-  "zenkai-adventure"
+  "zenkai-adventure",
+  "zombicide-gear-up"
  ],
- "pendentes": {}
+ "pendentes": {
+  "fabulinhas": "2026-11-17T11:35+00:00",
+  "petiquette": "2026-11-17T06:51+00:00",
+  "shinkansen-zero-kei": "2026-11-17T11:35+00:00",
+  "zombicide-gear-up": "2026-11-17T11:35+00:00"
+ }
 }

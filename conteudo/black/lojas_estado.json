@@ -10,7 +10,7 @@
   },
   "bravojogos.com.br": {
    "dia": "2026-11-17",
-   "paginas": 9
+   "paginas": 10
   },
   "brecholudico.com.br": {
    "dia": "2026-11-17",
@@ -144,7 +144,7 @@
   },
   "www.caixinhaboardgames.com.br": {
    "dia": "2026-11-17",
-   "paginas": 5
+   "paginas": 7
   },
   "www.caldeiraojogos.com.br": {
    "dia": "2026-11-17",
@@ -280,7 +280,7 @@
    "descanso_ate": "2026-11-11T09:48+00:00",
    "dia": "2026-11-17",
    "motivo": "robots.txt respondeu 403",
-   "paginas": 10
+   "paginas": 11
   },
   "www.playeasy.com.br": {
    "descanso_ate": "2026-11-11T09:48+00:00",
@@ -294,7 +294,7 @@
   },
   "www.promobit.com.br": {
    "dia": "2026-11-17",
-   "paginas": 40
+   "paginas": 50
   },
   "www.reunionjogos.com.br": {
    "dia": "2026-11-17",
@@ -322,7 +322,7 @@
    "descanso_ate": "2026-11-11T09:38+00:00",
    "dia": "2026-11-17",
    "motivo": "robots.txt respondeu 403",
-   "paginas": 10
+   "paginas": 11
   },
   "www.tavernareal.com": {
    "descanso_ate": "2026-11-11T09:49+00:00",
@@ -625,7 +625,7 @@
   "https://bravojogos.com.br/jogos-de-tabuleiro-e-cardgames/zombicide-gear-up-p": {
    "cj": 83.61,
    "estoque": true,
-   "hora": "2026-11-16T13:34+00:00",
+   "hora": "2026-11-17T11:34+00:00",
    "preco": 89.9
   },
   "https://bravojogos.com.br/rpg/rpg-livro-zombicide-chronicles-p": {
@@ -1174,10 +1174,22 @@
    "hora": "2026-11-17T10:50+00:00",
    "preco": 22.0
   },
+  "https://www.caixinhaboardgames.com.br/produtos/uestop-turma-da-monica/?entry_path=category&entry_category_id=846788": {
+   "cj": 20.46,
+   "estoque": true,
+   "hora": "2026-11-17T11:34+00:00",
+   "preco": 22.0
+  },
   "https://www.caixinhaboardgames.com.br/produtos/warzoo-dicefire/?entry_path=category": {
    "cj": 93,
    "estoque": true,
    "hora": "2026-11-17T10:50+00:00",
+   "preco": 100.0
+  },
+  "https://www.caixinhaboardgames.com.br/produtos/warzoo-dicefire/?entry_path=category&entry_category_id=846788": {
+   "cj": 93,
+   "estoque": true,
+   "hora": "2026-11-17T11:34+00:00",
    "preco": 100.0
   },
   "https://www.cangaiajogos.com.br/3-capitulos": {
