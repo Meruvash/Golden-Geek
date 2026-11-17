@@ -2,8 +2,71 @@
  "mes": "2026-11",
  "label": "Novembro de 2026",
  "titulo_previstos": "Previstos para novembro",
- "total": 19,
+ "total": 22,
  "lancados": [
+  {
+   "id_jogo": 70028,
+   "nome": "Cadê os porquinhos?",
+   "url": "https://ludopedia.com.br/jogo/cade-os-porquinhos",
+   "capa": "https://storage.googleapis.com/ludopedia-capas/70028_t.jpg",
+   "fl_jogo_base": 1,
+   "fl_tipo": 1,
+   "editora": {
+    "id": 9428,
+    "nome": "Ludomize Indie Games",
+    "url": "https://ludopedia.com.br/editora/9428/Ludomize Indie Games"
+   },
+   "status": {
+    "id": 1,
+    "label": "Lançado",
+    "slug": "lancado"
+   },
+   "comentarios": 0,
+   "url_topico": null,
+   "pode_criar_topico": true
+  },
+  {
+   "id_jogo": 89735,
+   "nome": "Coffee Rush Inverno: Kit de Biscoitos 3D - MeepleHive 3D",
+   "url": "https://ludopedia.com.br/jogo/coffee-rush-inverno-kit-de-biscoitos-3d-meeplehive-3d",
+   "capa": "https://storage.googleapis.com/ludopedia-capas/89735_t.jpg",
+   "fl_jogo_base": 0,
+   "fl_tipo": 1,
+   "editora": {
+    "id": 11181,
+    "nome": "MeepleHive 3D",
+    "url": "https://ludopedia.com.br/editora/11181/MeepleHive 3D"
+   },
+   "status": {
+    "id": 1,
+    "label": "Lançado",
+    "slug": "lancado"
+   },
+   "comentarios": 0,
+   "url_topico": null,
+   "pode_criar_topico": true
+  },
+  {
+   "id_jogo": 89734,
+   "nome": "Concordia: Kit de Mercadorias 3D - MeepleHive 3D",
+   "url": "https://ludopedia.com.br/jogo/concordia-kit-de-mercadorias-3d-meeplehive-3d",
+   "capa": "https://storage.googleapis.com/ludopedia-capas/89734_t.jpg",
+   "fl_jogo_base": 0,
+   "fl_tipo": 1,
+   "editora": {
+    "id": 11181,
+    "nome": "MeepleHive 3D",
+    "url": "https://ludopedia.com.br/editora/11181/MeepleHive 3D"
+   },
+   "status": {
+    "id": 1,
+    "label": "Lançado",
+    "slug": "lancado"
+   },
+   "comentarios": 0,
+   "url_topico": null,
+   "pode_criar_topico": true
+  },
   {
    "id_jogo": 84451,
    "nome": "Fallout RPG: Cartas de Vantagem",

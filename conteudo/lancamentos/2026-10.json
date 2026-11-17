@@ -2,7 +2,7 @@
  "mes": "2026-10",
  "label": "Outubro de 2026",
  "titulo_previstos": "Previstos para outubro",
- "total": 55,
+ "total": 54,
  "lancados": [
   {
    "id_jogo": 66676,
@@ -701,8 +701,8 @@
   },
   {
    "id_jogo": 82348,
-   "nome": "Magical Athlete (I)",
-   "url": "https://ludopedia.com.br/jogo/magical-athlete-i",
+   "nome": "Magical Athlete (2ª Edição)",
+   "url": "https://ludopedia.com.br/jogo/magical-athlete-2nd-edition",
    "capa": "https://storage.googleapis.com/ludopedia-capas/82348_t.jpg",
    "fl_jogo_base": 1,
    "fl_tipo": 1,
@@ -899,27 +899,6 @@
     "id": 4307,
     "nome": "Across the Board",
     "url": "https://ludopedia.com.br/editora/4307/Across the Board"
-   },
-   "status": {
-    "id": 5,
-    "label": "Em Financiamento Coletivo",
-    "slug": "fc"
-   },
-   "comentarios": 0,
-   "url_topico": null,
-   "pode_criar_topico": true
-  },
-  {
-   "id_jogo": 61393,
-   "nome": "Dia da Caça",
-   "url": "https://ludopedia.com.br/jogo/dia-da-caca",
-   "capa": "https://storage.googleapis.com/ludopedia-capas/61393_t.jpg",
-   "fl_jogo_base": 1,
-   "fl_tipo": 1,
-   "editora": {
-    "id": 9543,
-    "nome": "Ludovia Estúdio",
-    "url": "https://ludopedia.com.br/editora/9543/Ludovia Estúdio"
    },
    "status": {
     "id": 5,
