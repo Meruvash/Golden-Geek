@@ -318,7 +318,7 @@ const PLANOS: Plano[] = [
       </div>
       <div style={{ position: "absolute", left: 40, right: 40, bottom: 70, textAlign: "center", fontFamily: MONO, fontSize: 19, color: "#fff", opacity: p(s, F(13), 0.4), lineHeight: 1.5, textShadow: "0 2px 6px #000" }}>
         Imagens: Go On Board · Rebel · vídeo Asmodee Deutschland (TikTok)<br />
-        Fontes: Asmodee (REB9859) · CD PROJEKT RED, 22/6/2023 · demais peças e pinturas feitas em código
+        Fontes: Asmodee (REB9859) · CD PROJEKT RED, 22/6/2023 · Gamefound (Go On Board)
       </div>
       <Credito txt="FOTO: REBEL · EDIÇÃO POLONESA" />
     </AbsoluteFill>

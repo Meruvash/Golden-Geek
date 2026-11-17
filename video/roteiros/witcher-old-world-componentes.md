@@ -51,7 +51,7 @@ Manda pro amigo que sempre vai pra taverna.
 
 📖 Resenha completa no site: eliteboardgamers.com.br/the-witcher-old-world (link na bio)
 
-Imagens: Go On Board · Rebel · trechos do vídeo da Asmodee Deutschland (TikTok, edição alemã). Demais peças e pinturas feitas em código.
+Imagens: Go On Board · Rebel · trechos do vídeo da Asmodee Deutschland (TikTok, edição alemã)..
 Fontes: Asmodee (REB9859) · CD PROJEKT RED (22/6/2023) · Gamefound (Go On Board)
 
 #TheWitcher #TheWitcherOldWorld #BoardGames #JogosDeTabuleiro #BoardGameBrasil #Deckbuilding #GoOnBoard #EliteBoardgamers
@@ -61,4 +61,4 @@ Fontes: Asmodee (REB9859) · CD PROJEKT RED (22/6/2023) · Gamefound (Go On Boar
 - **Principal:** Bruxo no pôquer: o que vem na caixa de The Witcher: Old World
 - Alternativa 1: The Witcher: Old World: 90 cartas, 28 monstros e dados de pôquer
 - Alternativa 2: Anos antes de Geralt: os componentes de The Witcher: Old World
-- **Descrição:** Os componentes de The Witcher: Old World (Go On Board e CD Projekt Red), de 1 a 5 jogadores: miniaturas, cartas de ação, monstros, poções, moedas e dados de pôquer. Resenha completa: https://eliteboardgamers.com.br/the-witcher-old-world/ . Imagens: Go On Board, Rebel e trechos do vídeo da Asmodee Deutschland (TikTok); demais peças e pinturas feitas em código. Fontes: Asmodee (listagem REB9859), CD PROJEKT RED (comunicado de 22/6/2023) e Gamefound (página da Go On Board).
+- **Descrição:** Os componentes de The Witcher: Old World (Go On Board e CD Projekt Red), de 1 a 5 jogadores: miniaturas, cartas de ação, monstros, poções, moedas e dados de pôquer. Resenha completa: https://eliteboardgamers.com.br/the-witcher-old-world/ . Imagens: Go On Board, Rebel e trechos do vídeo da Asmodee Deutschland (TikTok). Fontes: Asmodee (listagem REB9859), CD PROJEKT RED (comunicado de 22/6/2023) e Gamefound (página da Go On Board).
