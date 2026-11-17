@@ -1,56 +1,53 @@
-# Auditoria de links — 2026-11-16T19:35-03:00
+# Auditoria de links — 2026-11-17T05:31-03:00
 
 Gerado por `tools/auditoria_links.py` (robô com User-Agent próprio, 1 pedido a cada 2 s por domínio, robots.txt respeitado). Links de oferta com ERRO saem do /black/ na próxima geração da página.
 
-**Ofertas no /black/:** 197 links, 163 certos, 1 com erro, 33 não verificáveis.
+**Ofertas no /black/:** 188 links, 149 certos, 0 com erro, 39 não verificáveis.
 
 ## Por tipo de link
 
 | Tipo | ok | ERRO | não verificável | não conferido |
 |---|---|---|---|---|
-| oferta | 129 | 2 | 32 | 0 |
-| oferta (mais lojas) | 34 | 0 | 1 | 0 |
-| achado | 12 | 0 | 1 | 0 |
+| oferta | 117 | 1 | 37 | 0 |
+| oferta (mais lojas) | 33 | 0 | 2 | 0 |
+| achado | 9 | 0 | 7 | 0 |
 | cupom | 4 | 0 | 0 | 0 |
-| loja | 75 | 2 | 7 | 0 |
+| loja | 74 | 2 | 4 | 0 |
 | preço | 139 | 2 | 0 | 0 |
-| outro | 0 | 0 | 0 | 1625 |
+| outro | 0 | 0 | 0 | 1629 |
 
 ## Por loja (links conferidos)
 
 | Domínio | ok | ERRO | não verificável |
 |---|---|---|---|
 | comparajogos.com.br | 139 | 2 | 0 |
-| placegames.com.br | 41 | 1 | 0 |
+| placegames.com.br | 42 | 0 | 0 |
 | mercadolivre.com.br | 0 | 0 | 36 |
-| bravojogos.com.br | 27 | 0 | 0 |
-| caixinhaboardgames.com.br | 25 | 1 | 0 |
+| bravojogos.com.br | 25 | 0 | 0 |
+| caixinhaboardgames.com.br | 24 | 1 | 0 |
 | alquimistasdosjogos.com.br | 20 | 0 | 0 |
 | omniverse.com.br | 18 | 0 | 0 |
-| amazon.com.br | 15 | 1 | 0 |
-| mecadosjogos.com.br | 14 | 0 | 0 |
-| tabuloja.com | 10 | 0 | 0 |
+| amazon.com.br | 1 | 1 | 13 |
+| mecadosjogos.com.br | 12 | 0 | 0 |
 | playeasy.com.br | 9 | 0 | 0 |
+| tabuloja.com | 9 | 0 | 0 |
 | facilshopping.com.br | 8 | 0 | 0 |
 | tavernareal.com | 7 | 1 | 0 |
-| cangaiajogos.com.br | 6 | 0 | 0 |
-| leaolivros.com.br | 6 | 0 | 0 |
+| cangaiajogos.com.br | 7 | 0 | 0 |
+| leaolivros.com.br | 7 | 0 | 0 |
+| tabulerio.com.br | 7 | 0 | 0 |
 | masmorra.com.br | 6 | 0 | 0 |
 | paladinsgames.com.br | 6 | 0 | 0 |
-| tabulerio.com.br | 6 | 0 | 0 |
-| brecholudico.com.br | 0 | 0 | 4 |
-| ludostation.com.br | 4 | 0 | 0 |
+| ludostation.com.br | 5 | 0 | 0 |
 | lojameeplebrjogos.com.br | 3 | 0 | 0 |
 | mosaicoloja.com.br | 3 | 0 | 0 |
 | odisseiajogos.com.br | 3 | 0 | 0 |
 | boardgamebarato.com.br | 2 | 0 | 0 |
 | animusludere.com.br | 1 | 0 | 0 |
-| boardgameplaystore.com.br | 1 | 0 | 0 |
 | borderjogos.com.br | 1 | 0 | 0 |
 | elfosecia.com.br | 1 | 0 | 0 |
 | espacoarcs.com.br | 1 | 0 | 0 |
 | happynerd.com.br | 1 | 0 | 0 |
-| interludi.com.br | 1 | 0 | 0 |
 | livtoys.com.br | 1 | 0 | 0 |
 | loja.frodosbg.com.br | 1 | 0 | 0 |
 | loja.joyjoycafe.com.br | 1 | 0 | 0 |
@@ -61,17 +58,23 @@ Gerado por `tools/auditoria_links.py` (robô com User-Agent próprio, 1 pedido a
 | spaceboardgames.com.br | 1 | 0 | 0 |
 | tubaleria.store | 1 | 0 | 0 |
 
-## Erros (6)
+## Erros (5)
 
 - **oferta** — Ticket to Ride: Alemanha: <https://www.caixinhaboardgames.com.br/produtos/ticket-to-ride-alemanha-pre-venda-rh596/> ((fora do site: retirada do /black/ pela auditoria)) — página não existe (404)
-- **oferta** — Night Parade of a Hundred Yokai: Cursed Throne Expansion: <https://www.placegames.com.br/night-parade-cursed-throne> (/black/) — página de outro jogo (cartão: “Night Parade of a Hundred Yokai: Cursed Throne Expansion”; página: “Produto não encontrado - Place Games | Loja de Board Games - Locadora de Jogos | Produto não encontrado - Place Games | ”)
 - **loja**: <https://www.amazon.com.br/s?k=mysterium+kids> (/mysterium-kids/) — link é de busca ou categoria, não da página do produto
 - **preço**: <https://www.comparajogos.com.br/item/clash-royale-the-grand-arena> (/noticias/clash-royale-the-grand-arena-kickstarter/) — página não existe (404)
 - **preço**: <https://www.comparajogos.com.br/item/satisfactory> (/noticias/satisfactory-reta-final-quase-3-milhoes/) — página não existe (404)
 - **loja**: <https://www.tavernareal.com/tabuleiro/luz-final-edicao-deluxe> (/last-light/) — página sem sinal de produto (sem JSON-LD Product/Offer, og:type product nem preço e botão de compra)
 
-## Não verificáveis (41)
+## Não verificáveis (50)
 
+- **oferta** — Identidade Secreta: <https://www.amazon.com.br/dp/B07CSFZD5D> (/black/) — a loja pede verificação anti-robô (captcha)
+- **oferta** — Arkham Horror: Hora Final: <https://www.amazon.com.br/dp/B07VZ7YR63> (/black/) — a loja pede verificação anti-robô (captcha)
+- **oferta** — 7 Wonders Duel: Ágora: <https://www.amazon.com.br/dp/B08TR93MS9> (/black/) — a loja pede verificação anti-robô (captcha)
+- **oferta** — Duna: Imperium: <https://www.amazon.com.br/dp/B0BD5TP5TL> (/black/) — a loja pede verificação anti-robô (captcha)
+- **oferta** — Dixit: Disney Edition: <https://www.amazon.com.br/dp/B0CFS3GZFL> (/black/) — a loja pede verificação anti-robô (captcha)
+- **oferta** — Piratas!: <https://www.amazon.com.br/dp/B0FSG5BB5D> (/black/) — a loja pede verificação anti-robô (captcha)
+- **oferta** — Arcs: O Flagelo do Vértice: <https://www.amazon.com.br/dp/B0G61BQTXW> (/black/) — a loja pede verificação anti-robô (captcha)
 - **oferta** — UNO Flip!: <https://www.mercadolivre.com.br/p/MLB16092602?pdp_filters=item_id:MLB3992344771> (/black/) — robots.txt proíbe robôs nesta página
 - **oferta** — Imagem & Ação Júnior: <https://www.mercadolivre.com.br/p/MLB19492018?pdp_filters=item_id:MLB3625532207> (/black/) — robots.txt proíbe robôs nesta página
 - **oferta** — Cilada: <https://www.mercadolivre.com.br/p/MLB19525478?pdp_filters=item_id:MLB4304112336> (/black/) — robots.txt proíbe robôs nesta página
@@ -99,17 +102,19 @@ Gerado por `tools/auditoria_links.py` (robô com User-Agent próprio, 1 pedido a
 - **oferta** — Trava Letras: <https://www.mercadolivre.com.br/p/MLB48880144?pdp_filters=item_id:MLB4170926219> (/black/) — robots.txt proíbe robôs nesta página
 - **oferta** — Tapalavras: <https://www.mercadolivre.com.br/p/MLB59487551?pdp_filters=item_id:MLB4503565085> (/black/) — robots.txt proíbe robôs nesta página
 - **oferta** — Liar's UNO: <https://www.mercadolivre.com.br/p/MLB62548317?pdp_filters=item_id:MLB6293749138> (/black/) — robots.txt proíbe robôs nesta página
-- **oferta** — Antiques: <https://www.mercadolivre.com.br/p/MLB62648581?pdp_filters=item_id:MLB4335054021> (/black/) — robots.txt proíbe robôs nesta página
+- **oferta (mais lojas)** — Antiques: <https://www.mercadolivre.com.br/p/MLB62648581?pdp_filters=item_id:MLB4335054021> (/black/) — robots.txt proíbe robôs nesta página
 - **oferta** — UNO Flip Attack: <https://www.mercadolivre.com.br/p/MLB70580092?pdp_filters=item_id:MLB6901090112> (/black/) — robots.txt proíbe robôs nesta página
-- **oferta** — Monopoly: Go to Jail: <https://www.mercadolivre.com.br/p/MLB75359225> (/black/) — robots.txt proíbe robôs nesta página
 - **oferta** — Imagem & Ação: <https://www.mercadolivre.com.br/p/MLB8857424?pdp_filters=item_id:MLB4195144346> (/black/) — robots.txt proíbe robôs nesta página
 - **oferta** — Buckaroo!: <https://www.mercadolivre.com.br/p/MLB8950241?pdp_filters=item_id:MLB4043512373> (/black/) — robots.txt proíbe robôs nesta página
 - **oferta** — Tapa Certo: <https://www.mercadolivre.com.br/p/MLB9228977?pdp_filters=item_id:MLB3544942779> (/black/) — robots.txt proíbe robôs nesta página
-- **loja**: <https://brecholudico.com.br/product-category/galapagos/> (/noticias/galapagos-lanca-duna-linhagens-vantage-harmonies-pulsar/) — robots.txt não respondeu (ReadTimeout)
-- **loja**: <https://brecholudico.com.br/produto/gloomhaven/> (/gloomhaven/) — robots.txt não respondeu (ReadTimeout)
-- **loja**: <https://brecholudico.com.br/produto/root/> (/root/) — robots.txt não respondeu (ReadTimeout)
-- **loja**: <https://brecholudico.com.br/produto/seti-busca-por-inteligencia-extraterrestre/> (/seti/) — robots.txt não respondeu (ReadTimeout)
+- **loja**: <https://www.amazon.com.br/RU%C3%8DNAS-PERDIDAS-DE-ARNAK-Devir/dp/B095B9F657> (/arnak/) — a loja pede verificação anti-robô (captcha)
+- **achado**: <https://www.amazon.com.br/dp/B0789QHT4P> (/black/) — a loja pede verificação anti-robô (captcha)
+- **achado**: <https://www.amazon.com.br/dp/B0BBSHZFLB> (/black/) — a loja pede verificação anti-robô (captcha)
+- **achado**: <https://www.amazon.com.br/dp/B0CVL3XL5Q> (/black/) — a loja pede verificação anti-robô (captcha)
+- **achado**: <https://www.amazon.com.br/dp/B0CZBLHMXD> (/black/) — a loja pede verificação anti-robô (captcha)
+- **achado**: <https://www.amazon.com.br/dp/B0DYLK1FLB> (/black/) — a loja pede verificação anti-robô (captcha)
 - **loja**: <https://www.magazineluiza.com.br/gloomhaven-board-game-galapagos-galapagos/p/af327976gh/br/jogo/> (/gloomhaven/) — robots.txt respondeu 403 (bloqueio)
 - **loja**: <https://www.mercadolivre.com.br/ark-nova-jogo-de-tabuleiroboard-game-grok/p/MLB23073841> (/ark-nova/) — robots.txt proíbe robôs nesta página
 - **achado**: <https://www.mercadolivre.com.br/p/MLB21150345> (/black/) — robots.txt proíbe robôs nesta página
+- **achado**: <https://www.mercadolivre.com.br/p/MLB75359225> (/black/) — robots.txt proíbe robôs nesta página
 - **loja**: <https://www.mercadolivre.com.br/root-board-game-meeplebr-pt-br/p/MLB19709898> (/root/) — robots.txt proíbe robôs nesta página
