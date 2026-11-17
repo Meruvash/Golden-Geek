@@ -42765,6 +42765,20 @@
   "principal": true,
   "tipo": "game"
  },
+ "dc-super-heroes-united-batman-silencio": {
+  "ano": 2025,
+  "bgg": 8.83113,
+  "bgg_id": 436446,
+  "editora": "CMON Limited",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/018a5401efadcd762d67ea3e01f94903088127cf.png",
+  "nome": "DC Super Heroes United: Batman Silêncio",
+  "pontos": {
+   "2026-11-16": 350.09
+  },
+  "principal": true,
+  "tipo": "game"
+ },
  "dceased-gotham-city-outbreak": {
   "ano": 2024,
   "bgg": 7.99803,
@@ -104574,6 +104588,18 @@
    "2026-11-16": 188.91
   },
   "principal": true,
+  "tipo": "game"
+ },
+ "medici-the-card-game": {
+  "ano": 2017,
+  "bgg": 6.71981,
+  "bgg_id": 202288,
+  "editora": "Grail Games",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/93309d49af6418093902db547224c7a6816857d6.jpg",
+  "nome": "Medici: The Card Game",
+  "pontos": {},
+  "principal": false,
   "tipo": "game"
  },
  "medievalia": {
