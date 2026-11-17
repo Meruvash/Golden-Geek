@@ -8,7 +8,7 @@ import { DURACAO, FALAS } from "./dados";
 import { I, W } from "./marcas";
 
 // "O bruxo no pôquer" — The Witcher: Old World, no padrão web documentário (video-agro do Arcvalion_gospel) com toques de dorama.
-// Componentes desenhados em código, semelhantes e não idênticos: sem logo, sem arte das cartas, sem tipografia oficial.
+// Prioridade para imagem real (fotos oficiais e trechos react, com crédito); o resto é desenhado em código, semelhante e não idêntico.
 // Pinturas: taverna à maneira de Bruegel (óleo) e bestiário à maneira de Dürer (gravura), feitas em código (arte/cenas_witcher1.py).
 // Roteiro aprovado: video/roteiros/witcher-old-world-componentes.md.
 export const FIM_WITCHER1 = DURACAO + 2.4;
@@ -466,20 +466,28 @@ const PLANOS: Plano[] = [
       <div style={{ position: "absolute", left: 0, right: 0, top: 70, textAlign: "center", fontFamily: MONO, fontSize: 30, color: AMAR, opacity: p(s, I(12), 0.3) }}>COMENTA AQUI</div>
     </AbsoluteFill>
   ) },
-  // 13 · fechamento
+  // 13 · fechamento: foto oficial da mesa montada + link da resenha no site
   { t: I(13) - 0.1, r: (s, ls) => (
-    <AbsoluteFill>
-      <Papel />
-      <AbsoluteFill style={{ transform: `scale(${1.0 + 0.04 * Math.min(1, ls / 4)})`, opacity: 0.55 }}><Mapa /></AbsoluteFill>
-      <div style={{ position: "absolute", left: 0, right: 0, top: 150, textAlign: "center" }}>
-        <div style={{ fontFamily: "'DejaVu Serif', serif", fontStyle: "italic", fontWeight: 700, fontSize: 60, color: TINTA, background: "rgba(238,232,220,.85)", display: "inline-block", padding: "4px 18px" }}>The Witcher: Old World</div>
-        <Img src={staticFile("img/logo.webp")} style={{ width: 260, marginTop: 40, opacity: p(s, I(13) + 0.6, 0.4) }} />
-        <div style={{ fontFamily: SANS, fontWeight: 900, fontSize: 48, color: VERM, marginTop: 26, opacity: p(s, I(13) + 1, 0.4) }}>@eliteboardgamers</div>
-        <div style={{ fontFamily: MONO, fontSize: 20, color: TINTA, marginTop: 60, opacity: p(s, F(13), 0.4), lineHeight: 1.5 }}>
-          Fontes: Asmodee (REB9859) · CD PROJEKT RED, 22/6/2023 · Gamefound (Go On Board)<br />
-          Componentes e pinturas feitos em código, à maneira de Bruegel e Dürer. Sem arte oficial.
+    <AbsoluteFill style={{ background: "#0d1118" }}>
+      <AbsoluteFill style={{ overflow: "hidden" }}>
+        <Img src={staticFile("img/witcher1/oficiais/mesa-rebel.jpg")} style={{ position: "absolute", height: 1080, left: -270, top: 0, transform: `scale(${1.02 + 0.05 * Math.min(1, ls / 5)})`, filter: "brightness(.42) blur(1.5px)" }} />
+      </AbsoluteFill>
+      <div style={{ position: "absolute", left: 0, right: 0, top: 70, textAlign: "center" }}>
+        <div style={{ fontFamily: "'DejaVu Serif', serif", fontStyle: "italic", fontWeight: 700, fontSize: 64, color: "#fff", textShadow: "0 4px 14px #000" }}>The Witcher: Old World</div>
+        <div style={{ display: "inline-block", marginTop: 34, background: PAPEL, borderRadius: 14, padding: "22px 34px", boxShadow: "0 18px 40px rgba(0,0,0,.6)", opacity: p(s, I(13) + 0.2, 0.4), transform: `translateY(${30 * (1 - p(s, I(13) + 0.2, 0.5))}px)` }}>
+          <div style={{ fontFamily: MONO, fontSize: 26, fontWeight: 700, color: VERM, letterSpacing: 2 }}>RESENHA COMPLETA NO SITE</div>
+          <div style={{ fontFamily: SANS, fontWeight: 900, fontSize: 38, color: TINTA, marginTop: 8 }}>eliteboardgamers.com.br/the-witcher-old-world</div>
+        </div>
+        <div style={{ marginTop: 34, opacity: p(s, I(13) + 0.8, 0.4) }}>
+          <Img src={staticFile("img/logo.webp")} style={{ width: 200 }} />
+          <div style={{ fontFamily: SANS, fontWeight: 900, fontSize: 46, color: AMAR, marginTop: 10, textShadow: "0 3px 10px #000" }}>@eliteboardgamers</div>
         </div>
       </div>
+      <div style={{ position: "absolute", left: 40, right: 40, bottom: 70, textAlign: "center", fontFamily: MONO, fontSize: 19, color: "#fff", opacity: p(s, F(13), 0.4), lineHeight: 1.5, textShadow: "0 2px 6px #000" }}>
+        Imagens: Go On Board · Rebel · vídeo Asmodee Deutschland (TikTok)<br />
+        Fontes: Asmodee (REB9859) · CD PROJEKT RED, 22/6/2023 · demais peças e pinturas feitas em código
+      </div>
+      <Credito txt="FOTO: REBEL · EDIÇÃO POLONESA" />
     </AbsoluteFill>
   ) },
 ];

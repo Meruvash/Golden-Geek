@@ -2,12 +2,43 @@
   "jogo": "The Witcher: Old World",
   "uso": "vídeo Elite Boardgamers (divulgação do jogo, com crédito na tela)",
   "imagens": [
-    {"arquivo": "minis-e-caixa.jpg", "credito": "Imagem: Go On Board", "origem": "https://goonboard.com/img/games/twow-banner.jpg", "pagina": "https://goonboard.com/our-games/twow", "nota": "a miniatura do monstro (Leshen) é da edição Deluxe"},
-    {"arquivo": "caixa.jpg", "credito": "Imagem: Go On Board", "origem": "https://goonboard.com/img/games/twow-banner.jpg", "pagina": "https://goonboard.com/our-games/twow", "nota": "recorte da caixa"},
-    {"arquivo": "arte-caixa.jpg", "credito": "Arte da caixa: Go On Board / CD Projekt Red", "origem": "https://goonboard.com/img/games/twow-hero.jpg", "pagina": "https://goonboard.com/our-games/twow", "nota": "recorte da arte"}
+    {
+      "arquivo": "minis-e-caixa.jpg",
+      "credito": "Imagem: Go On Board",
+      "origem": "https://goonboard.com/img/games/twow-banner.jpg",
+      "pagina": "https://goonboard.com/our-games/twow",
+      "nota": "a miniatura do monstro (Leshen) é da edição Deluxe"
+    },
+    {
+      "arquivo": "caixa.jpg",
+      "credito": "Imagem: Go On Board",
+      "origem": "https://goonboard.com/img/games/twow-banner.jpg",
+      "pagina": "https://goonboard.com/our-games/twow",
+      "nota": "recorte da caixa"
+    },
+    {
+      "arquivo": "arte-caixa.jpg",
+      "credito": "Arte da caixa: Go On Board / CD Projekt Red",
+      "origem": "https://goonboard.com/img/games/twow-hero.jpg",
+      "pagina": "https://goonboard.com/our-games/twow",
+      "nota": "recorte da arte"
+    },
+    {
+      "arquivo": "mesa-rebel.jpg",
+      "credito": "Foto: Rebel · edição polonesa",
+      "origem": "https://files.rebel.pl/products/100/371/_2003250/rebel-gra-przygodowa-wiedzmin-stary-swiat-foto6.jpg",
+      "pagina": "https://www.rebel.pl/gry-planszowe/wiedzmin-stary-swiat-2003250.html",
+      "nota": "mesma foto aprovada na resenha do site (the-witcher-old-world/fotos/mesa-1.webp)"
+    }
   ],
   "consultadas": [
-    {"url": "https://press.cdprojektred.com/en/news/1291/the-witcher-old-world-board-game-now-available-in-retail", "resultado": "só arte de anúncio com letreiro; não usada"},
-    {"url": "https://gamefound.com", "resultado": "desafio do Cloudflare; não contornado"}
+    {
+      "url": "https://press.cdprojektred.com/en/news/1291/the-witcher-old-world-board-game-now-available-in-retail",
+      "resultado": "só arte de anúncio com letreiro; não usada"
+    },
+    {
+      "url": "https://gamefound.com",
+      "resultado": "desafio do Cloudflare; não contornado"
+    }
   ]
 }
