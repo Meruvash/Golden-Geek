@@ -35,3 +35,28 @@ Contagem: cerca de 185 palavras, perto de 60 s.
   troféus por monstros, brigas na taverna contra outro bruxo, atributo no máximo e algumas missões.
   https://gamefound.com/pt/projects/go-on-board/the-witcher-old-world
 - Conflitos: a Gamefound fala em 2 a 5 jogadores e em seis escolas; usei 1 a 5 e cinco, que é o que dizem o distribuidor e a CD Projekt Red.
+
+## Publicação
+
+### Legenda do Instagram
+```
+Um caçador de monstros… ganhando dinheiro no pôquer de dados. 🎲⚔️
+
+Em The Witcher: Old World, da Go On Board com a CD Projekt Red, você joga anos antes de Geralt, com uma das 5 escolas de bruxos. A luta é no baralho: ataques, esquivas e Sinais. E vence na hora quem juntar de 4 a 6 troféus.
+
+Na caixa: 1 miniatura de bruxo por jogador, 90 cartas de ação, 28 monstros, 28 poções, 35 moedas de ouro e 2 conjuntos de 5 dados de pôquer.
+
+👉 Na sua mesa, você ia caçar monstro ou ficar na taverna? Comenta aqui.
+Manda pro amigo que sempre vai pra taverna.
+
+Componentes e pinturas desenhados em código (à maneira de Bruegel e Dürer), sem arte oficial.
+Fontes: Asmodee (REB9859) · CD PROJEKT RED (22/6/2023) · Gamefound (Go On Board)
+
+#TheWitcher #TheWitcherOldWorld #BoardGames #JogosDeTabuleiro #BoardGameBrasil #Deckbuilding #GoOnBoard #EliteBoardgamers
+```
+
+### Título do YouTube
+- **Principal:** Bruxo no pôquer: o que vem na caixa de The Witcher: Old World
+- Alternativa 1: The Witcher: Old World: 90 cartas, 28 monstros e dados de pôquer
+- Alternativa 2: Anos antes de Geralt: os componentes de The Witcher: Old World
+- **Descrição:** Os componentes de The Witcher: Old World (Go On Board e CD Projekt Red), de 1 a 5 jogadores: miniaturas, cartas de ação, monstros, poções, moedas e dados de pôquer. Componentes e pinturas recriados em código, sem arte oficial. Fontes: Asmodee (listagem REB9859), CD PROJEKT RED (comunicado de 22/6/2023) e Gamefound (página da Go On Board).
