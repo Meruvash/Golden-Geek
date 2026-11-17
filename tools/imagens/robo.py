@@ -467,6 +467,9 @@ def imagens_da_pagina(cli, url, rec):
     for s in soup.find_all("script", type="application/ld+json"):
         for u in re.findall(r'"image"\s*:\s*\[?\s*"([^"]+)"', s.string or ""):
             add(u, titulo)
+        # galeria em ImageObject (WooCommerce/Yoast): {"@type":"ImageObject","url":"..."}
+        for u in re.findall(r'"@type"\s*:\s*"ImageObject"\s*,\s*"url"\s*:\s*"([^"]+)"', s.string or ""):
+            add(u.replace("\\/", "/"), titulo)
     for el in soup.find_all(["img", "source", "a"]):
         alt = el.get("alt") or el.get("title") or el.get_text(" ", strip=True)[:80]
         for attr in ("data-large_image", "data-zoom-image", "data-src", "data-original", "src"):

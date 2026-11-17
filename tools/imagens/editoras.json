@@ -2481,7 +2481,386 @@
    "sitemaps": [
     "https://www.gigamic.com/2_index_sitemap.xml"
    ],
-   "verificado_em": "2026-11-08"
+   "verificado_em": "2026-11-11"
   }
+ },
+ "pd-verlag.de": {
+  "nome": "PD-Verlag",
+  "apelidos": [
+   "PD-Verlag"
+  ],
+  "site": "https://www.pd-verlag.de",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [],
+   "verificado_em": "2026-11-11"
+  }
+ },
+ "helvetiq.com": {
+  "nome": "Helvetiq",
+  "apelidos": [
+   "Helvetiq"
+  ],
+  "site": "https://helvetiq.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": 10.0,
+   "sitemaps": [
+    "https://helvetiq.com/sitemap/helvetiq_intl.xml",
+    "https://helvetiq.com/sitemap/helvetiq_fr.xml",
+    "https://helvetiq.com/sitemap/helvetiq_de.xml",
+    "https://helvetiq.com/sitemap/helvetiq_us.xml",
+    "https://helvetiq.com/sitemap/helvetiq_ch_fr.xml",
+    "https://helvetiq.com/sitemap/helvetiq_ch_de.xml",
+    "https://helvetiq.com/sitemap/helvetiq_ch_en.xml",
+    "https://helvetiq.com/sitemap/DE/sitemap.xml",
+    "https://helvetiq.com/sitemap.xml"
+   ],
+   "verificado_em": "2026-11-09"
+  }
+ },
+ "boardgameatelier.de": {
+  "nome": "Boardgame Atelier",
+  "apelidos": [
+   "Boardgame Atelier"
+  ],
+  "site": "https://www.boardgameatelier.de",
+  "plataforma": "woocommerce",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.boardgameatelier.de/sitemap_index.xml"
+   ],
+   "verificado_em": "2026-11-09"
+  }
+ },
+ "playpunk.com": {
+  "nome": "PlayPunk",
+  "apelidos": [
+   "PlayPunk"
+  ],
+  "site": "https://playpunk.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://playpunk.com/en/press",
+  "paginas": {},
+  "status": "ok",
+  "obs": "site montado com JavaScript: o robô abre as páginas no navegador",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [],
+   "verificado_em": "2026-11-09"
+  },
+  "js": true
+ },
+ "auzou.com": {
+  "nome": "Auzou",
+  "apelidos": [
+   "Auzou"
+  ],
+  "site": "https://auzou.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "erro",
+  "obs": "robots.txt de https://auzou.com inacessível (erro de rede); tente mais tarde"
+ },
+ "happybaobab.com": {
+  "nome": "Happy Baobab",
+  "apelidos": [
+   "Happy Baobab"
+  ],
+  "site": "https://happybaobab.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://happybaobab001.cafe24.com/sitemap.xml"
+   ],
+   "verificado_em": "2026-11-09"
+  }
+ },
+ "cardboardalchemy.com": {
+  "nome": "Cardboard Alchemy",
+  "apelidos": [
+   "Cardboard Alchemy"
+  ],
+  "site": "https://cardboardalchemy.com",
+  "plataforma": "wordpress",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://cardboardalchemy.com/sitemap_index.xml"
+   ],
+   "verificado_em": "2026-11-09"
+  }
+ },
+ "papergames.com.br": {
+  "nome": "PaperGames",
+  "apelidos": [
+   "PaperGames"
+  ],
+  "site": "https://papergames.com.br",
+  "plataforma": "woocommerce",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://papergames.com.br/sitemap.xml",
+    "https://papergames.com.br/news-sitemap.xml"
+   ],
+   "verificado_em": "2026-11-10"
+  }
+ },
+ "auzou.fr": {
+  "nome": "Auzou",
+  "apelidos": [
+   "Auzou"
+  ],
+  "site": "https://www.auzou.fr",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.auzou.fr/sitemap.xml"
+   ],
+   "verificado_em": "2026-11-10"
+  }
+ },
+ "gamefactory-games.com": {
+  "nome": "Game Factory",
+  "apelidos": [
+   "Game Factory"
+  ],
+  "site": "https://www.gamefactory-games.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://www.gamefactory-games.com/presse",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [],
+   "verificado_em": "2026-11-10"
+  }
+ },
+ "game-flow.fr": {
+  "nome": "Game Flow",
+  "apelidos": [
+   "Game Flow"
+  ],
+  "site": "https://game-flow.fr",
+  "plataforma": "woocommerce",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://game-flow.fr/sitemap_index.xml"
+   ],
+   "verificado_em": "2026-11-10"
+  }
+ },
+ "dlp-games.de": {
+  "nome": "dlp games",
+  "apelidos": [
+   "dlp games"
+  ],
+  "site": "https://www.dlp-games.de",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://www.dlp-games.de/unser-verlag/presse",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.dlp-games.de/sitemap.xml"
+   ],
+   "verificado_em": "2026-11-11"
+  }
+ },
+ "gamesup-games.com": {
+  "nome": "Game's Up",
+  "apelidos": [
+   "Game's Up"
+  ],
+  "site": "https://gamesup-games.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "erro",
+  "obs": "robots.txt de https://gamesup-games.com inacessível (erro de rede); tente mais tarde"
+ },
+ "hachetteboardgames.com": {
+  "nome": "Studio H",
+  "apelidos": [
+   "Studio H"
+  ],
+  "site": "https://www.hachetteboardgames.com",
+  "plataforma": "shopify",
+  "estrategia": "sitemap+shopify_json",
+  "press_kit": "https://www.hachetteboardgames.com/pages/press",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.hachetteboardgames.com/sitemap.xml"
+   ],
+   "verificado_em": "2026-11-11"
+  }
+ },
+ "sandcastlegames.com": {
+  "nome": "Sand Castle Games",
+  "apelidos": [
+   "Sand Castle Games"
+  ],
+  "site": "https://sandcastlegames.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "erro",
+  "obs": "robots.txt de https://sandcastlegames.com inacessível (erro de rede); tente mais tarde"
+ },
+ "haba-play.com": {
+  "nome": "Haba",
+  "apelidos": [
+   "Haba"
+  ],
+  "site": "https://www.haba-play.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": "https://www.haba-play.com/de-de/magazin/kindererziehung-psychologie/kinder-und-digitale-medien",
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.haba-play.com/sitemap.xml"
+   ],
+   "verificado_em": "2026-11-11"
+  }
+ },
+ "habausa.com": {
+  "nome": "HABA USA",
+  "apelidos": [
+   "HABA USA"
+  ],
+  "site": "https://www.habausa.com",
+  "plataforma": "shopify",
+  "estrategia": "sitemap+shopify_json",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [
+    "https://www.habausa.com/sitemap.xml"
+   ],
+   "verificado_em": "2026-11-11"
+  }
+ },
+ "shop.asmodee.ca": {
+  "nome": "Asmodee Canada",
+  "apelidos": [
+   "Asmodee Canada"
+  ],
+  "site": "https://shop.asmodee.ca",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {},
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 200,
+   "crawl_delay": null,
+   "sitemaps": [],
+   "verificado_em": "2026-11-11"
+  }
+ },
+ "goonboard.com": {
+  "nome": "Go On Board",
+  "apelidos": [
+   "Go On Board",
+   "GoOnBoard"
+  ],
+  "site": "https://goonboard.com",
+  "plataforma": "html",
+  "estrategia": "sitemap+html",
+  "press_kit": null,
+  "paginas": {
+   "the-witcher-old-world": "https://goonboard.com/our-games/twow"
+  },
+  "status": "ok",
+  "obs": "",
+  "robots": {
+   "status": 404,
+   "crawl_delay": null,
+   "sitemaps": [],
+   "verificado_em": "2026-11-17"
+  },
+  "js": true
  }
 }

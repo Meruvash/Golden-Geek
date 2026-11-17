@@ -29,6 +29,12 @@ const Fundo: React.FC<{ nome: string; ls: number; z0?: number; z1?: number; dur?
 const Credito: React.FC<{ txt: string }> = ({ txt }) => (
   <div style={{ position: "absolute", left: 28, bottom: 24, fontFamily: MONO, fontSize: 22, color: "#fff", background: "rgba(19,35,63,.72)", padding: "4px 10px", borderRadius: 4 }}>{txt}</div>
 );
+// foto oficial (prioridade sobre o desenho em código), com moldura e crédito
+const Foto: React.FC<{ nome: string; x: number; y: number; w: number; o?: number; ls: number; z?: number }> = ({ nome, x, y, w, o = 1, ls, z = 0.05 }) => (
+  <div style={{ position: "absolute", left: x, top: y, width: w, opacity: o, overflow: "hidden", borderRadius: 10, border: `6px solid ${PAPEL}`, boxShadow: "0 18px 40px rgba(0,0,0,.5)" }}>
+    <Img src={staticFile(`img/witcher1/oficiais/${nome}.jpg`)} style={{ width: "100%", display: "block", transform: `scale(${1 + z * Math.min(1, ls / 4)})` }} />
+  </div>
+);
 const Selo: React.FC<{ txt: string; x: number; y: number; o: number; cor?: string; tam?: number }> = ({ txt, x, y, o, cor = TINTA, tam = 34 }) => (
   <div style={{ position: "absolute", left: x, top: y, opacity: o, transform: `scale(${0.9 + 0.1 * o})`, transformOrigin: "left center" }}>
     <span style={{ fontFamily: SANS, fontWeight: 900, fontSize: tam, color: "#fff", background: cor, padding: "8px 16px", borderRadius: 6, boxShadow: "0 6px 18px rgba(0,0,0,.35)" }}>{txt}</span>
@@ -277,15 +283,17 @@ const PLANOS: Plano[] = [
       <Credito txt="PINTURA FEITA EM CÓDIGO, À MANEIRA DE BRUEGEL" />
     </AbsoluteFill>
   ) },
-  // 2 · o jogo e quem fez
+  // 2 · o jogo e quem fez: a caixa de verdade
   { t: I(2) - 0.1, r: (s, ls) => (
     <AbsoluteFill>
       <Papel />
-      <AbsoluteFill style={{ transform: `scale(${1.08 - 0.06 * Math.min(1, ls / 4)})` }}><Mapa /></AbsoluteFill>
-      <div style={{ position: "absolute", left: 0, right: 0, top: 300, textAlign: "center" }}>
-        <div style={{ fontFamily: "'DejaVu Serif', serif", fontStyle: "italic", fontWeight: 700, fontSize: 92, color: TINTA, opacity: p(s, I(2) + 0.2, 0.4), textShadow: "0 3px 0 #fff" }}>The Witcher: Old World</div>
-        <div style={{ fontFamily: MONO, fontSize: 30, color: VERM, marginTop: 16, opacity: p(s, W(2, "Go") - 0.1, 0.3) }}>GO ON BOARD · CD PROJEKT RED</div>
+      <AbsoluteFill style={{ transform: `scale(${1.08 - 0.06 * Math.min(1, ls / 4)})`, opacity: 0.35 }}><Mapa /></AbsoluteFill>
+      <div style={{ position: "absolute", left: 0, right: 0, top: 60, textAlign: "center" }}>
+        <div style={{ fontFamily: "'DejaVu Serif', serif", fontStyle: "italic", fontWeight: 700, fontSize: 70, color: TINTA, opacity: p(s, I(2) + 0.2, 0.4), textShadow: "0 3px 0 #fff" }}>The Witcher: Old World</div>
+        <div style={{ fontFamily: MONO, fontSize: 28, color: VERM, marginTop: 8, opacity: p(s, W(2, "Go") - 0.1, 0.3) }}>GO ON BOARD · CD PROJEKT RED</div>
       </div>
+      <Foto nome="caixa" x={305} y={185 + 40 * (1 - p(s, I(2), 0.5))} w={470} o={p(s, I(2), 0.4)} ls={ls} />
+      <Credito txt="IMAGEM: GO ON BOARD" />
     </AbsoluteFill>
   ) },
   // 3 · cinco escolas e números
@@ -314,14 +322,25 @@ const PLANOS: Plano[] = [
       <Selo txt="2 × 5 dados de pôquer" x={300} y={140} o={p(s, W(4, "dois") - 0.1, 0.3)} cor={VERM} tam={42} />
     </AbsoluteFill>
   ) },
-  // 5 · anos antes de Geralt: o bestiário
-  { t: I(5) - 0.1, r: (s, ls) => (
-    <AbsoluteFill>
-      <Fundo nome="bestiario" ls={ls} z0={1.0} z1={1.16} dur={7} ox="50% 60%" />
-      <Selo txt="ANOS ANTES DE GERALT" x={250} y={120} o={p(s, W(5, "anos") - 0.1, 0.3)} cor={TINTA} tam={44} />
-      <Credito txt="GRAVURA FEITA EM CÓDIGO, À MANEIRA DE DÜRER" />
-    </AbsoluteFill>
-  ) },
+  // 5 · anos antes de Geralt: arte oficial da caixa, depois o bestiário
+  { t: I(5) - 0.1, r: (s, ls) => {
+    const corte = W(5, "quando") - 0.1;
+    return s < corte ? (
+      <AbsoluteFill style={{ background: "#0d1118" }}>
+        <AbsoluteFill style={{ overflow: "hidden" }}>
+          <Img src={staticFile("img/witcher1/oficiais/arte-caixa.jpg")} style={{ position: "absolute", height: 1080, left: -770 + 40 * Math.min(1, ls / 4), top: 0, transform: `scale(${1.02 + 0.05 * Math.min(1, ls / 4)})` }} />
+        </AbsoluteFill>
+        <Selo txt="ANOS ANTES DE GERALT" x={250} y={120} o={p(s, W(5, "anos") - 0.1, 0.3)} cor={TINTA} tam={44} />
+        <Credito txt="ARTE DA CAIXA: GO ON BOARD / CD PROJEKT RED" />
+      </AbsoluteFill>
+    ) : (
+      <AbsoluteFill>
+        <Fundo nome="bestiario" ls={s - corte} z0={1.0} z1={1.12} dur={4} ox="50% 60%" />
+        <Selo txt="MONSTROS POR TODA PARTE" x={200} y={120} o={p(s, corte, 0.3)} cor={VERM} tam={44} />
+        <Credito txt="GRAVURA FEITA EM CÓDIGO, À MANEIRA DE DÜRER" />
+      </AbsoluteFill>
+    );
+  } },
   // 6 · a luta é no baralho
   { t: I(6) - 0.1, r: (s) => {
     const sai = p(s, W(6, "baralho.") - 0.3, 0.5);
@@ -361,13 +380,13 @@ const PLANOS: Plano[] = [
         <Papel />
         <svg width={1080} height={1080} style={{ position: "absolute" }}>
           <g transform={`translate(540,430) scale(${1 + 0.05 * Math.min(1, ls)}) translate(-540,-430)`}>
-            {k === 0 ? <Miniatura x={540} y={650} esc={1.45} /> : null}
             {k === 1 ? Array.from({ length: 12 }, (_, i) => <g key={i}><CartaAcao tipo={(["ataque", "esquiva", "sinal"] as const)[i % 3]} x={420 + (i % 6) * 48} y={420 + Math.floor(i / 6) * 20 - (i % 6) * 6} giro={-10 + (i % 6) * 4} esc={0.8} /></g>) : null}
             {k === 2 ? <CartaMonstro x={540} y={430} esc={1.15} /> : null}
             {k === 3 ? <><Carta x={430} y={430} giro={-6} rotulo="POÇÃO"><IcoPocao /></Carta><Carta x={650} y={440} giro={6} rotulo="POÇÃO"><IcoPocao cor="#c23b22" /></Carta></> : null}
             {k === 4 ? Array.from({ length: 14 }, (_, i) => <Moeda key={i} x={380 + (i % 5) * 80 + (i > 9 ? 40 : 0)} y={460 - Math.floor(i / 5) * 40} r={38} />) : null}
           </g>
         </svg>
+        {k === 0 ? <><Foto nome="minis-e-caixa" x={40} y={300} w={1000} ls={ls} z={0.06} /><Credito txt="IMAGEM: GO ON BOARD · MONSTRO EM MINIATURA: EDIÇÃO DELUXE" /></> : null}
         <div style={{ position: "absolute", left: 0, right: 0, top: 90, textAlign: "center" }}>
           <div style={{ fontFamily: SANS, fontWeight: 900, fontSize: 120, color: TINTA, lineHeight: 1 }}>{num}</div>
           <div style={{ fontFamily: MONO, fontSize: 30, color: VERM, marginTop: 6 }}>{rot}</div>
