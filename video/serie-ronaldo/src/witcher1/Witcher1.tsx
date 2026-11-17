@@ -401,7 +401,7 @@ const PLANOS: Plano[] = [
           </g>
         </svg>
         {k === 0 ? <><Clipe nome="minis" t0={cortes[0]} y={290} /><Credito txt={ASMODEE} /></> : null}
-        {k === 2 ? <><Clipe nome="monstro" t0={cortes[2]} y={290} /><Credito txt={ASMODEE} /></> : null}
+        {k === 2 ? <><Clipe nome="monstro" t0={cortes[2]} y={290} rate={0.55} /><Credito txt={ASMODEE} /></> : null}
         <div style={{ position: "absolute", left: 0, right: 0, top: 90, textAlign: "center" }}>
           <div style={{ fontFamily: SANS, fontWeight: 900, fontSize: 120, color: TINTA, lineHeight: 1 }}>{num}</div>
           <div style={{ fontFamily: MONO, fontSize: 30, color: VERM, marginTop: 6 }}>{rot}</div>
