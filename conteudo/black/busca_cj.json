@@ -2729,6 +2729,17 @@
   "slug": "imagine",
   "tipo": "game"
  },
+ "incognito": {
+  "bgg": null,
+  "editora": "Gigamic",
+  "imagem": "https://uploads.comparajogos.com.br/img/61daa3e64181ed93a77bd1e91af765ab6b1facd1.jpg",
+  "menor": null,
+  "nome": "Incognito",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "incognito",
+  "tipo": "game"
+ },
  "indie boards and cards pursuit of happiness experiences expansion for 1 4 players ages 13": null,
  "indie boards and cards the resistance the plot thickens game": null,
  "indie boards cards aedv1ibc aeons end the void board games": null,
@@ -4154,6 +4165,17 @@
  "plaid hat games chosen grove faction deck": null,
  "plaid hat games expansao magica natural ashes ascendancy": null,
  "planet unknown supermoon expansion": null,
+ "playbill broadway trivia": {
+  "bgg": 6,
+  "editora": "Clarkson Potter",
+  "imagem": null,
+  "menor": null,
+  "nome": "Playbill Broadway Trivia",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "playbill-broadway-trivia",
+  "tipo": "game"
+ },
  "pocket detective die bombe tickt": {
   "bgg": 6.16064,
   "editora": "Schmidt Spiele",
