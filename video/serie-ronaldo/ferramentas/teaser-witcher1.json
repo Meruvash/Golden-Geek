@@ -1,0 +1,26 @@
+{
+ "composicao": "WitcherOldWorldLimpo",
+ "props": { "semLegenda": true },
+ "gl": "swangle",
+ "pasta": "renders/teaser-witcher1",
+ "titulo": "The Witcher: Old World · Bruxo no pôquer",
+ "subtitulo": "Storyboard do episódio · imagens oficiais e trechos reais do jogo · série Elite Boardgamers",
+ "link": "eliteboardgamers.com.br/the-witcher-old-world",
+ "quadros": [
+  {"nome": "01-abertura", "rotulo": "Bruxo no pôquer", "t": 0.5, "storyboard": true},
+  {"nome": "02-dados", "rotulo": "Dados na taverna", "t": 4.3, "storyboard": true},
+  {"nome": "03-caixa", "rotulo": "A caixa", "t": 7.8, "storyboard": true},
+  {"nome": "04-mapa", "rotulo": "Cinco escolas", "t": 13.5, "storyboard": true},
+  {"nome": "05-dez-dados", "rotulo": "2 × 5 dados", "t": 18.5, "storyboard": false},
+  {"nome": "06-geralt", "rotulo": "Anos antes de Geralt", "t": 23.5, "storyboard": true},
+  {"nome": "07-monstros", "rotulo": "Monstros por toda parte", "t": 27.5, "storyboard": true},
+  {"nome": "08-sinais", "rotulo": "Ataques, esquivas e Sinais", "t": 34.5, "storyboard": false},
+  {"nome": "09-miniaturas", "rotulo": "Miniaturas reais", "t": 38.0, "storyboard": true},
+  {"nome": "10-lobisomem", "rotulo": "28 monstros", "t": 41.0, "storyboard": true},
+  {"nome": "11-trofeus", "rotulo": "4 a 6 troféus", "t": 50.5, "storyboard": false},
+  {"nome": "12-leshen", "rotulo": "Monstro abatido", "t": 53.0, "storyboard": true},
+  {"nome": "13-briga", "rotulo": "Briga entre bruxos", "t": 55.4, "storyboard": false},
+  {"nome": "14-escolha", "rotulo": "Caçar ou taverna?", "t": 63.4, "storyboard": true},
+  {"nome": "15-resenha", "rotulo": "Resenha no site", "t": 67.5, "storyboard": true}
+ ]
+}

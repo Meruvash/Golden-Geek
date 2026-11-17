@@ -14,7 +14,7 @@ fs.mkdirSync(cfg.pasta, { recursive: true });
 const serveUrl = await bundle({ entryPoint: path.resolve("src/index.ts") });
 const composition = await selectComposition({ serveUrl, id: cfg.composicao, inputProps: cfg.props ?? {} });
 for (const q of cfg.quadros) {
-  await renderStill({ serveUrl, composition, frame: Math.round(q.t * composition.fps), output: `${cfg.pasta}/${q.nome}.jpg`, imageFormat: "jpeg", jpegQuality: 92, inputProps: cfg.props ?? {} });
+  await renderStill({ serveUrl, composition, frame: Math.round(q.t * composition.fps), output: `${cfg.pasta}/${q.nome}.jpg`, imageFormat: "jpeg", jpegQuality: 92, inputProps: cfg.props ?? {}, chromiumOptions: cfg.gl ? { gl: cfg.gl } : {} });
   console.log("quadro", q.nome);
 }
 execFileSync("python3", ["ferramentas/storyboard.py", process.argv[2]], { stdio: "inherit" });

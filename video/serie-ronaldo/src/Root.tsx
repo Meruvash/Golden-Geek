@@ -34,6 +34,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="AndromedaParte2Quadrado" component={AeP2} width={1080} height={1080} fps={30} durationInFrames={Math.ceil(FIM_P2 * 30)} defaultProps={{ quadrado: true }} />
       <Still id="FichaRonaldo" component={FichaPersonagem} width={1080} height={1920} defaultProps={{ quem: "ronaldo" as const }} />
       <Composition id="WitcherOldWorld" component={Witcher1} width={1080} height={1080} fps={30} durationInFrames={Math.ceil(FIM_WITCHER1 * 30)} />
+      <Composition id="WitcherOldWorldLimpo" component={Witcher1} width={1080} height={1080} fps={30} durationInFrames={Math.ceil(FIM_WITCHER1 * 30)} defaultProps={{ semLegenda: true }} />
       <Composition id="Mesa3D" component={Mesa3D} width={1080} height={1080} fps={30} durationInFrames={Math.ceil(DUR_MESA * 30)} />
       <Composition id="VictorParte1" component={VictorParte1} width={1080} height={1080} fps={30} durationInFrames={Math.ceil(DUR_P1 * 30)} />
       <Composition id="VictorParte2" component={VictorParte2} width={1080} height={1080} fps={30} durationInFrames={Math.ceil(DUR_P2 * 30)} />
