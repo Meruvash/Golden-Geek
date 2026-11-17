@@ -109509,6 +109509,20 @@
   "principal": true,
   "tipo": "game"
  },
+ "monopoly-pokemon": {
+  "ano": 1998,
+  "bgg": 5.44028,
+  "bgg_id": 5758,
+  "editora": "Parker Brothers",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/c24d5d2dea534876d504b20264d620d095138685.jpg",
+  "nome": "Monopoly: Pokémon",
+  "pontos": {
+   "2026-11-16": 322.41
+  },
+  "principal": false,
+  "tipo": "game"
+ },
  "monopoly-pokemon-edition": {
   "ano": 2024,
   "bgg": 5.50663,
@@ -144433,6 +144447,18 @@
    "2026-11-16": 83.7
   },
   "principal": false,
+  "tipo": "game"
+ },
+ "scotland-yard-sherlock-holmes-edition": {
+  "ano": 2023,
+  "bgg": 7.19302,
+  "bgg_id": 369007,
+  "editora": "Ravensburger Spieleverlag GmbH",
+  "editora_br": false,
+  "imagem": "https://uploads.comparajogos.com.br/img/e03c9c1f1cd047da942bfedee5fdfe62ff7a86f1.jpg",
+  "nome": "Scotland Yard: Sherlock Holmes Edition",
+  "pontos": {},
+  "principal": true,
   "tipo": "game"
  },
  "scott-pilgrim-miniatures-the-world": {
