@@ -30,7 +30,7 @@ Pedido do usuário: a seção curta do topo de cada tutorial precisa garantir qu
 
 **Portões:**
 - `python3 tools/checar_comece.py docs/como-jogar/<...>/tutorial.md` precisa passar (tamanho, ordem, blocos, resposta separada, termos, etapas citadas que existem, travessão, vícios).
-- **Teste de execução:** um subagente que não escreveu a seção recebe só ela e tenta montar a mesa para o mínimo e o máximo de jogadores e jogar o primeiro turno com três mãos diferentes. Cada ponto em que ele precisou adivinhar vira correção. É sinal de lacuna, não prova de que pessoas aprendem.
+- **Auditoria única (desde 18/11/2026):** o subagente auditor confere as regras contra o manual e, na mesma passada, aponta onde um iniciante precisaria adivinhar (montagem com o mínimo e o máximo de jogadores, primeiro turno). Não há mais o teste de execução separado.
 - **Teste com pessoas** (quando houver leitores): a pessoa lê só a seção e joga o primeiro turno sem ajuda; conta-se tempo, erros de regra e onde travou.
 
 ## essencial à vista, o resto a um toque (31/10/2026)
