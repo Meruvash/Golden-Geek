@@ -102,3 +102,32 @@ caixa tiver 126,4 mm por dentro.
 - peça de "setup" separada das peças de jogo;
 - divisórias soltas para os maços;
 - tampa de fichas por cima (7,2 mm) em vez de embutida.
+
+## js500 original: projeto completo com o código OpenSCAD (Printables 953093, recebido em 18/11/2026)
+
+São 19 STLs, 19 arquivos `.scad` e um PDF com a descrição. Os números abaixo estão **escritos no código do autor**.
+
+- **O seu zip é o remix do Alex Hooper.** Ele tirou 4 bandejas do js500: aventura base, aventura dos pacotes do app
+  (x3), mistério e praia/traços/moral. No lugar, pôs as 4 peças dos Mistérios. O `obj_7` e o `obj_18` que faltavam no
+  seu zip são, muito provavelmente, as bandejas de carta de aventura e de mistério.
+- **Bandejas de jogo** (aventura base, aventura do app x3, mistério): carta **deitada**, poço de **62 x 93 mm**, passo
+  de 89,6 mm entre os montes, igual ao espaçamento do playmat. É o mesmo conceito das nossas bandejas de mesa.
+- **Bandejas de guarda** (eventos/naufrágio, praia/traços/moral): carta **em pé**, poço de **93 mm** de comprimento.
+- **Cartas pequenas**: invenções com 74 mm, feras deitadas em 50 x 72 mm, descarte de feras com 50 x 18,6 mm.
+- **Livro de Aventuras**: fica preso pelo `discard-holder-and-spacer`, que tem um degrau a 51 mm e um recorte para a
+  espiral a 42 mm. Esse mesmo suporte é o descarte com 6 poços (3 de 69 x 32,6 e 3 de 69 x 27,2 mm).
+- **O que o autor declara**: sleeves premium (Gamegenic Prime nas fotos), "no lid lift" **com o playmat**. O tabuleiro de
+  papelão faz a tampa levantar. Não comporta miniaturas, torre-vulcão, Voyage of the Beagle nem Mistérios.
+- **Folga máxima, deduzida dos poços**: a carta grande luvada pode ter no máximo **62 x 93 mm**, e a pequena no máximo
+  ~50 x 72 mm. Contra os sleeves Bucaneiros (medidas externas estimadas):
+
+| Sleeve Bucaneiros (carta) | Externo estimado | Poço js500 62 x 93 |
+|---|---|---|
+| CHIMERA (57,5 x 89) | 60 x 92 | cabe, com 1 mm de folga no comprimento |
+| PADRÃO EURO (59 x 92) | 61,5 x 95 | **não cabe: faltam 2 a 3 mm no comprimento** |
+| PADRÃO (63,5 x 88) | 66 x 91 | **não cabe: faltam ~4 mm na largura** |
+| MINI EURO (45 x 68) para as pequenas | 47,5 x 71 | cabe |
+
+- **Tamanho provável da carta**: o kit de sleeves da Boardgame Protectors para a Edição de Colecionador usa **57,5 x 89**
+  e 45 x 68, e o poço de 62 x 93 do js500 também aponta para uma carta perto de 57,5 x 89, não 59 x 92. Falta
+  confirmar com régua.
