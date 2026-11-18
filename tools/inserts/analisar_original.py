@@ -22,16 +22,31 @@ from insertgen.cartas import carregar_catalogo, sleeve  # noqa: E402
 from insertgen.validar import checar_malha  # noqa: E402
 
 
-def _arquivos(caminho):
-    if zipfile.is_zipfile(caminho):
-        with zipfile.ZipFile(caminho) as z:
+def _expandir(nome, dados):
+    """Abre zips dentro de zips e 3MF; devolve (nome, bytes_stl | (v, f))."""
+    low = nome.lower()
+    if low.endswith(".3mf"):
+        from insertgen.tmf import ler_3mf
+        for n, v, f in ler_3mf(dados):
+            yield f"{nome}:{n}", (v, f)
+    elif low.endswith(".zip"):
+        with zipfile.ZipFile(io.BytesIO(dados)) as z:
             for n in sorted(z.namelist()):
                 if not n.endswith("/"):
-                    yield os.path.basename(n), z.read(n)
+                    yield from _expandir(n, z.read(n))
+    elif low.endswith(".stl") or "." not in os.path.basename(nome):
+        yield os.path.basename(nome), dados
+
+
+def _arquivos(caminho):
+    if os.path.isdir(caminho):
+        for raiz, _, nomes in os.walk(caminho):
+            for n in sorted(nomes):
+                with open(os.path.join(raiz, n), "rb") as fh:
+                    yield from _expandir(n, fh.read())
     else:
-        for n in sorted(os.listdir(caminho)):
-            with open(os.path.join(caminho, n), "rb") as fh:
-                yield n, fh.read()
+        with open(caminho, "rb") as fh:
+            yield from _expandir(os.path.basename(caminho), fh.read())
 
 
 def _ler_bytes(b):
@@ -64,9 +79,11 @@ def analisar(caminho, grande, pequena):
     linhas = []
     for nome, dados in _arquivos(caminho):
         try:
-            v, f = _ler_bytes(dados)
+            v, f = dados if isinstance(dados, tuple) else _ler_bytes(dados)
         except ValueError:
             continue
+        v = np.asarray(v, dtype=np.float64)
+        f = np.asarray(f, dtype=np.int64)
         mm = checar_malha(v, f)
         v, ang = _endireitar(v)
         tam = v.max(axis=0)
@@ -98,18 +115,25 @@ def analisar(caminho, grande, pequena):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("caminho")
+    ap.add_argument("caminhos", nargs="+", help="zip, 3mf, stl ou pasta (um por projeto)")
     ap.add_argument("--grande", default="padrao-euro")
     ap.add_argument("--pequena", default="mini-euro")
     a = ap.parse_args()
     cat = carregar_catalogo()
     g, p = sleeve(cat, a.grande), sleeve(cat, a.pequena)
     print(f"Carta grande em {g['nome']}: {g['externo']} ({g['fonte']}); pequena em {p['nome']}: {p['externo']}")
-    for nome, tam, ang, mm, furos, ver in analisar(a.caminho, g, p):
-        fech = "fechada" if not (mm["arestas_abertas"] or mm["arestas_duplicadas"]) else f"ABERTA {mm}"
-        print(f"\n{nome}: {tam[0]:.1f} x {tam[1]:.1f} x {tam[2]:.1f} mm (girada {ang}°), malha {fech}")
-        for v in ver:
-            print("   ", v)
+    for caminho in a.caminhos:
+        res = analisar(caminho, g, p)
+        print(f"\n######## {os.path.basename(caminho)}: {len(res)} peças")
+        if res:
+            alt = max(r[1][2] for r in res)
+            ruins = sum(any("NÃO CABE" in v for v in r[5]) for r in res)
+            print(f"peça mais alta: {alt:.1f} mm | bandejas de carta que não comportam o sleeve: {ruins}")
+        for nome, tam, ang, mm, furos, ver in res:
+            fech = "fechada" if not (mm["arestas_abertas"] or mm["arestas_duplicadas"]) else "ABERTA"
+            print(f"\n{nome}: {tam[0]:.1f} x {tam[1]:.1f} x {tam[2]:.1f} mm (girada {ang}°), malha {fech}")
+            for v in ver:
+                print("   ", v)
 
 
 if __name__ == "__main__":

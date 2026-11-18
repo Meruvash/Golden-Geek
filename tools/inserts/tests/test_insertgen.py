@@ -97,6 +97,27 @@ class TestPecas(unittest.TestCase):
         self.assertAlmostEqual(m["volume_mm3"], pc.solido.volume(), delta=pc.solido.volume() * 1e-4)
 
 
+class TestTresMF(unittest.TestCase):
+    def test_le_objeto_com_transformacao(self):
+        import io
+        import zipfile
+        from insertgen.tmf import ler_3mf
+        v, f = stlio.malha(g.caixa(10, 20, 30))
+        vs = "".join(f'<vertex x="{a}" y="{b}" z="{c}"/>' for a, b, c in v)
+        ts = "".join(f'<triangle v1="{a}" v2="{b}" v3="{c}"/>' for a, b, c in f)
+        xml = ('<model xmlns="http://schemas.microsoft.com/3dmanufacturing/core/2015/02"><resources>'
+               f'<object id="1" name="p"><mesh><vertices>{vs}</vertices><triangles>{ts}</triangles></mesh></object>'
+               '</resources><build><item objectid="1" transform="0 1 0 -1 0 0 0 0 1 5 6 0"/></build></model>')
+        buf = io.BytesIO()
+        with zipfile.ZipFile(buf, "w") as z:
+            z.writestr("3D/3dmodel.model", xml)
+        (nome, vv, ff), = ler_3mf(buf.getvalue())
+        tam = vv.max(axis=0) - vv.min(axis=0)
+        self.assertEqual(nome, "p")
+        for a, e in zip(tam, (20, 10, 30)):  # girada 90° em Z
+            self.assertAlmostEqual(a, e)
+
+
 class TestMontagem(unittest.TestCase):
     def test_sobreposicao(self):
         a = Item("a", (10, 10, 10), (0, 0, 0))
