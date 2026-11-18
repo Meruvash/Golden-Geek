@@ -179,3 +179,26 @@ Printables, fotos dos autores (js500 e Sortirus) e buscas na web.
 | Livros (cenário introdutório e Livro de Aventuras) | As fotos do js500 mostram os dois livros espiralados deitados como camada de cima. O suporte de descarte do js500 tem degrau a 51 mm e recorte para a espiral a 42 mm | presentes, **espessura não confirmada**. Não estão na nossa camada plana |
 | Fichas de cenário e de personagem | nenhuma fonte | **não confirmado** |
 | Medida interna da caixa | nenhuma fonte publica (a Portal dá só 33 x 33 x 14 cm por fora) | **não confirmado** |
+
+## Varredura de STLs com espaço para o tabuleiro (18/11/2026)
+
+- **Printables**, pela API (busca + descrição de cada modelo): foram encontrados **32 modelos** de Robinson Crusoe.
+  Nenhum da Edição de Colecionador tem encaixe para o tabuleiro:
+  - js500: a tampa levanta com o tabuleiro;
+  - PengLord: a tampa levanta;
+  - Sortirus: "map on top of Setup_Holder";
+  - os remixes dos três;
+  - 1717826: remix do PengLord, só mexe nas bandejas de miniaturas.
+- **O único STL que referencia o tabuleiro:** Printables **916000**, "Vertical-Storage-Extension", com as peças
+  `GameBoardSpacer1.stl` e `GameBoardSpacer2.stl`. São espaçadores em volta do tabuleiro, para o organizador da **2ª
+  edição** (Printables 190326, caixa de 288 mm). O autor diz que o tabuleiro dele tem medidas diferentes conforme o
+  lado em que se vira. Isso dá a pegada do tabuleiro da 2ª edição, não a da Edição de Colecionador (caixa de 33 cm).
+  O download automático foi bloqueado; precisa ser baixado à mão.
+- **Printables 1776100** (2ª edição, caixa interna de 286 mm): o tabuleiro vai deitado por cima. O autor usou Sleeve
+  Kings Chimera **57,5 x 89** nas cartas grandes, o que reforça o tamanho de carta 57,5 x 89.
+- **Thingiverse 6965565** (DaveShine, 01/03/2025): edição não identificada, vem com um PDF de setup. Não abriu (o
+  Thingiverse bloqueia acesso automático).
+- **Tabuleiro aberto da Edição de Colecionador: "720 mm x 520 mm"**, repetido em duas listagens da Amazon (.com e .ca).
+  É dado de loja, não do fabricante. Dobrado em 3 x 2 daria ~240 x 260 mm, com 6 camadas de papelão (~12 mm a ~2 mm
+  cada). Isso é conta nossa e precisa ser medido.
+- Cults3D, Thangs e MakerWorld: nada novo para a Edição de Colecionador.
