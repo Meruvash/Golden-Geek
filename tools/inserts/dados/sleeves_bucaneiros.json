@@ -1,0 +1,33 @@
+{
+  "_sobre": "Catálogo de sleeves Bucaneiros. 'carta' é o tamanho de carta que a Bucaneiros declara (nome do produto). A Bucaneiros NÃO publica a medida externa do sleeve nem a espessura: 'externo' é estimativa (carta + folga típica de sleeve de 2,5 x 3 mm; um usuário da Ludopedia relata 2-3 mm a mais) e 'micras' é estimativa (Premium = 100 micras segundo revendedor Caixinha Boardgames, '70% mais espesso' que o comum => comum ~60). Meça um sleeve seu com paquímetro e preencha 'medido' para trocar a estimativa pelo valor real.",
+  "fontes": [
+    "https://www.bucaneirosjogos.com.br/sleeves-tradicionais",
+    "https://www.bucaneirosjogos.com.br/sleeve-padrao-635x88-bucaneiros",
+    "https://www.bucaneirosjogos.com.br/sleeve-padrao-PREMIUM-635x88-bucaneiros",
+    "https://www.caixinhaboardgames.com.br/produtos/sleeve-bucaneiros-premium-yu-gi-oh/",
+    "https://howtogamingedition.com/en/board-games/collecting-care/sleeves-upgrades/"
+  ],
+  "folga_estimada_mm": {"largura": 2.5, "altura": 3.0},
+  "micras_estimadas": {"comum": 60, "premium": 100},
+  "linhas": {
+    "mini-usa":         {"nome": "Sleeve MINI USA",        "carta": [41, 63]},
+    "mini-chimera":     {"nome": "Sleeve MINI CHIMERA",    "carta": [43, 65]},
+    "mini-chimeuro":    {"nome": "Sleeve MINI CHIMEURO",   "carta": [43.5, 67.5]},
+    "mini-euro":        {"nome": "Sleeve MINI EURO",       "carta": [45, 68]},
+    "padrao-usa":       {"nome": "Sleeve PADRÃO USA",      "carta": [56, 87]},
+    "chimera":          {"nome": "Sleeve CHIMERA",         "carta": [57.5, 89]},
+    "yugioh":           {"nome": "Sleeve YU-GI-OH!",       "carta": [59, 86]},
+    "chimeuro":         {"nome": "Sleeve CHIMEURO",        "carta": [59, 91]},
+    "padrao-euro":      {"nome": "Sleeve PADRÃO EURO",     "carta": [59, 92]},
+    "french-tarot":     {"nome": "Sleeve FRENCH TAROT",    "carta": [61, 112]},
+    "padrao":           {"nome": "Sleeve PADRÃO",          "carta": [63.5, 88]},
+    "padrao-premium":   {"nome": "Sleeve PADRÃO PREMIUM",  "carta": [63.5, 88], "linha": "premium"},
+    "padrao-fit":       {"nome": "Sleeve PADRÃO FIT (Shield Perfect Size)", "carta": [63.5, 88], "folga": {"largura": 1.0, "altura": 1.0}},
+    "copper":           {"nome": "Sleeve COPPER",          "carta": [65, 100]},
+    "quadrado":         {"nome": "Sleeve QUADRADO",        "carta": [70, 70]},
+    "silver":           {"nome": "Sleeve SILVER",          "carta": [70, 110]},
+    "tarot":            {"nome": "Sleeve TAROT",           "carta": [70, 120]},
+    "quadrado-medio":   {"nome": "Sleeve QUADRADO MÉDIO",  "carta": [80, 80]},
+    "gold":             {"nome": "Sleeve GOLD (Dixit)",    "carta": [80, 120]}
+  }
+}

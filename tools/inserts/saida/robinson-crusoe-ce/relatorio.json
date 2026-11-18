@@ -1,0 +1,709 @@
+{
+ "pecas": [
+  {
+   "arquivo": "cartas-eventos.stl",
+   "qtd": 1,
+   "x": 68.0,
+   "y": 200.6,
+   "z": 52.0,
+   "volume_cm3": 67.6,
+   "descricao": "Eventos: compra | descarte. Fica ao lado do tabuleiro na partida.",
+   "notas": [
+    "poço 64.0 x 97.5 x 50.8 mm; cabem ~103 cartas luvadas por poço",
+    "eventos: 44.2 mm de maço",
+    "descarte: 0.0 mm de maço"
+   ],
+   "erros": []
+  },
+  {
+   "arquivo": "caixa-dados-extras.stl",
+   "qtd": 1,
+   "x": 68.0,
+   "y": 45.4,
+   "z": 52.0,
+   "volume_cm3": 28.4,
+   "descricao": "Dados extras / dados de resina (com tampa)",
+   "notas": [],
+   "erros": []
+  },
+  {
+   "arquivo": "caixa-dados-extras-tampa.stl",
+   "qtd": 1,
+   "x": 65.1,
+   "y": 42.5,
+   "z": 1.6,
+   "volume_cm3": 4.3,
+   "descricao": "Tampa embutida de caixa-dados-extras",
+   "notas": [],
+   "erros": []
+  },
+  {
+   "arquivo": "cartas-misterio.stl",
+   "qtd": 1,
+   "x": 68.0,
+   "y": 101.5,
+   "z": 52.0,
+   "volume_cm3": 38.0,
+   "descricao": "Mistério (compra). Descarte: numa partida do jogo base, esvazie uma bandeja dos Mistérios e use como descarte.",
+   "notas": [
+    "poço 64.0 x 97.5 x 50.8 mm; cabem ~103 cartas luvadas por poço",
+    "misterio: 24.7 mm de maço"
+   ],
+   "erros": []
+  },
+  {
+   "arquivo": "cartas-aventura-coletar.stl",
+   "qtd": 1,
+   "x": 68.0,
+   "y": 101.5,
+   "z": 26.0,
+   "volume_cm3": 22.6,
+   "descricao": "Aventura — Coletar (meia altura)",
+   "notas": [
+    "poço 64.0 x 97.5 x 24.8 mm; cabem ~49 cartas luvadas por poço",
+    "aventura-coletar: 19.0 mm de maço"
+   ],
+   "erros": []
+  },
+  {
+   "arquivo": "cartas-aventura-construir.stl",
+   "qtd": 1,
+   "x": 68.0,
+   "y": 101.5,
+   "z": 26.0,
+   "volume_cm3": 22.6,
+   "descricao": "Aventura — Construir (meia altura; empilha sobre Coletar)",
+   "notas": [
+    "poço 64.0 x 97.5 x 24.8 mm; cabem ~49 cartas luvadas por poço",
+    "aventura-construir: 19.0 mm de maço"
+   ],
+   "erros": []
+  },
+  {
+   "arquivo": "cartas-especiais.stl",
+   "qtd": 1,
+   "x": 68.0,
+   "y": 101.5,
+   "z": 26.0,
+   "volume_cm3": 22.6,
+   "descricao": "Naufrágio, Arrumar acampamento, Sexta-feira, Cão, promos (meia altura)",
+   "notas": [
+    "poço 64.0 x 97.5 x 24.8 mm; cabem ~49 cartas luvadas por poço",
+    "especiais: 5.7 mm de maço"
+   ],
+   "erros": []
+  },
+  {
+   "arquivo": "cartas-aventura-explorar.stl",
+   "qtd": 1,
+   "x": 68.0,
+   "y": 101.5,
+   "z": 26.0,
+   "volume_cm3": 22.6,
+   "descricao": "Aventura — Explorar (meia altura)",
+   "notas": [
+    "poço 64.0 x 97.5 x 24.8 mm; cabem ~49 cartas luvadas por poço",
+    "aventura-explorar: 19.0 mm de maço"
+   ],
+   "erros": []
+  },
+  {
+   "arquivo": "caixa-longa.stl",
+   "qtd": 1,
+   "x": 28.4,
+   "y": 246.0,
+   "z": 53.0,
+   "volume_cm3": 76.4,
+   "descricao": "Caixa longa com tampa: fichas de descoberta / marcadores extras",
+   "notas": [],
+   "erros": []
+  },
+  {
+   "arquivo": "caixa-longa-tampa.stl",
+   "qtd": 1,
+   "x": 25.5,
+   "y": 243.1,
+   "z": 1.6,
+   "volume_cm3": 9.8,
+   "descricao": "Tampa embutida de caixa-longa",
+   "notas": [],
+   "erros": []
+  },
+  {
+   "arquivo": "cartas-mt-outros.stl",
+   "qtd": 1,
+   "x": 68.0,
+   "y": 101.5,
+   "z": 41.0,
+   "volume_cm3": 31.5,
+   "descricao": "Mistérios: personagem, condição, cultista, covil, condenado, nativo, guia",
+   "notas": [
+    "poço 64.0 x 97.5 x 39.8 mm; cabem ~80 cartas luvadas por poço",
+    "mt-outros: 28.5 mm de maço"
+   ],
+   "erros": []
+  },
+  {
+   "arquivo": "caixa-promos.stl",
+   "qtd": 1,
+   "x": 97.8,
+   "y": 39.2,
+   "z": 41.0,
+   "volume_cm3": 28.2,
+   "descricao": "Caixa com tampa: lunetas, promos, peças soltas",
+   "notas": [],
+   "erros": []
+  },
+  {
+   "arquivo": "caixa-promos-tampa.stl",
+   "qtd": 1,
+   "x": 94.9,
+   "y": 36.3,
+   "z": 1.6,
+   "volume_cm3": 5.4,
+   "descricao": "Tampa embutida de caixa-promos",
+   "notas": [],
+   "erros": []
+  },
+  {
+   "arquivo": "cartas-pequenas-base.stl",
+   "qtd": 1,
+   "x": 54.0,
+   "y": 227.7,
+   "z": 26.0,
+   "volume_cm3": 40.1,
+   "descricao": "Cartas pequenas: Invenções | Equipamento inicial | Feras",
+   "notas": [
+    "poço 50.0 x 73.5 x 24.8 mm; cabem ~49 cartas luvadas por poço",
+    "invencoes: 14.3 mm de maço",
+    "equipamento: 3.8 mm de maço",
+    "feras: 8.1 mm de maço"
+   ],
+   "erros": []
+  },
+  {
+   "arquivo": "cartas-pequenas-mt.stl",
+   "qtd": 1,
+   "x": 54.0,
+   "y": 227.7,
+   "z": 26.0,
+   "volume_cm3": 40.1,
+   "descricao": "Cartas pequenas dos Mistérios",
+   "notas": [
+    "poço 50.0 x 73.5 x 24.8 mm; cabem ~49 cartas luvadas por poço",
+    "mt-invencoes: 1.4 mm de maço",
+    "mt-equipamento: 8.1 mm de maço",
+    "mt-pequenas: 11.4 mm de maço"
+   ],
+   "erros": []
+  },
+  {
+   "arquivo": "cartas-mt-eventos.stl",
+   "qtd": 1,
+   "x": 68.0,
+   "y": 101.5,
+   "z": 52.0,
+   "volume_cm3": 38.0,
+   "descricao": "Mistérios — Eventos",
+   "notas": [
+    "poço 64.0 x 97.5 x 50.8 mm; cabem ~103 cartas luvadas por poço",
+    "mt-eventos: 39.0 mm de maço"
+   ],
+   "erros": []
+  },
+  {
+   "arquivo": "cartas-mt-aventura.stl",
+   "qtd": 1,
+   "x": 68.0,
+   "y": 101.5,
+   "z": 52.0,
+   "volume_cm3": 38.0,
+   "descricao": "Mistérios — Aventura",
+   "notas": [
+    "poço 64.0 x 97.5 x 50.8 mm; cabem ~103 cartas luvadas por poço",
+    "mt-aventura: 28.5 mm de maço"
+   ],
+   "erros": []
+  },
+  {
+   "arquivo": "cartas-mt-insanidade.stl",
+   "qtd": 1,
+   "x": 68.0,
+   "y": 101.5,
+   "z": 26.0,
+   "volume_cm3": 22.6,
+   "descricao": "Mistérios — Insanidade (meia altura)",
+   "notas": [
+    "poço 64.0 x 97.5 x 24.8 mm; cabem ~49 cartas luvadas por poço",
+    "mt-insanidade: 12.8 mm de maço"
+   ],
+   "erros": []
+  },
+  {
+   "arquivo": "cartas-mt-misterio.stl",
+   "qtd": 1,
+   "x": 68.0,
+   "y": 101.5,
+   "z": 26.0,
+   "volume_cm3": 22.6,
+   "descricao": "Mistérios — Mistério (meia altura)",
+   "notas": [
+    "poço 64.0 x 97.5 x 24.8 mm; cabem ~49 cartas luvadas por poço",
+    "mt-misterio: 11.4 mm de maço"
+   ],
+   "erros": []
+  }
+ ],
+ "montagem": [
+  {
+   "nome": "ORIGINAL obj_13_shelter-upgrades-herb-garden-pen-spyglass.stl",
+   "origem": "original",
+   "pos": [
+    0,
+    0,
+    0.0
+   ],
+   "tam": [
+    151.2,
+    246.0,
+    9.0
+   ],
+   "girada_90": false
+  },
+  {
+   "nome": "ORIGINAL obj_12_map-tiles-animals-misc-expansions.stl",
+   "origem": "original",
+   "pos": [
+    0,
+    0,
+    9.0
+   ],
+   "tam": [
+    151.2,
+    246.0,
+    22.0
+   ],
+   "girada_90": false
+  },
+  {
+   "nome": "ORIGINAL obj_11_characters.stl",
+   "origem": "original",
+   "pos": [
+    0,
+    0,
+    31.0
+   ],
+   "tam": [
+    151.2,
+    246.0,
+    20.0
+   ],
+   "girada_90": false
+  },
+  {
+   "nome": "ORIGINAL obj_3_Player Miniatures",
+   "origem": "original",
+   "pos": [
+    151.2,
+    0,
+    0
+   ],
+   "tam": [
+    97.8,
+    246.0,
+    52.0
+   ],
+   "girada_90": true
+  },
+  {
+   "nome": "cartas-eventos",
+   "origem": "gerada",
+   "pos": [
+    249.2,
+    0,
+    0
+   ],
+   "tam": [
+    68.0,
+    200.6,
+    52.0
+   ],
+   "girada_90": false
+  },
+  {
+   "nome": "caixa-dados-extras",
+   "origem": "gerada",
+   "pos": [
+    249.2,
+    200.6,
+    0
+   ],
+   "tam": [
+    68.0,
+    45.4,
+    52.0
+   ],
+   "girada_90": false
+  },
+  {
+   "nome": "cartas-misterio",
+   "origem": "gerada",
+   "pos": [
+    0.0,
+    246.0,
+    0
+   ],
+   "tam": [
+    101.5,
+    68.0,
+    52.0
+   ],
+   "girada_90": true
+  },
+  {
+   "nome": "cartas-aventura-coletar",
+   "origem": "gerada",
+   "pos": [
+    101.5,
+    246.0,
+    0
+   ],
+   "tam": [
+    101.5,
+    68.0,
+    26.0
+   ],
+   "girada_90": true
+  },
+  {
+   "nome": "cartas-aventura-construir",
+   "origem": "gerada",
+   "pos": [
+    101.5,
+    246.0,
+    26.0
+   ],
+   "tam": [
+    101.5,
+    68.0,
+    26.0
+   ],
+   "girada_90": true
+  },
+  {
+   "nome": "cartas-especiais",
+   "origem": "gerada",
+   "pos": [
+    203.0,
+    246.0,
+    0
+   ],
+   "tam": [
+    101.5,
+    68.0,
+    26.0
+   ],
+   "girada_90": true
+  },
+  {
+   "nome": "cartas-aventura-explorar",
+   "origem": "gerada",
+   "pos": [
+    203.0,
+    246.0,
+    26.0
+   ],
+   "tam": [
+    101.5,
+    68.0,
+    26.0
+   ],
+   "girada_90": true
+  },
+  {
+   "nome": "ORIGINAL obj_16_tokens.stl",
+   "origem": "original",
+   "pos": [
+    0,
+    0,
+    51.0
+   ],
+   "tam": [
+    122.8,
+    246.0,
+    14.0
+   ],
+   "girada_90": false
+  },
+  {
+   "nome": "ORIGINAL obj_15_dice-determination-black-white-blue.stl",
+   "origem": "original",
+   "pos": [
+    0,
+    0,
+    65.0
+   ],
+   "tam": [
+    122.8,
+    246.0,
+    18.0
+   ],
+   "girada_90": false
+  },
+  {
+   "nome": "ORIGINAL obj_14_resources.stl",
+   "origem": "original",
+   "pos": [
+    0,
+    0,
+    83.0
+   ],
+   "tam": [
+    122.8,
+    246.0,
+    20.0
+   ],
+   "girada_90": false
+  },
+  {
+   "nome": "caixa-longa",
+   "origem": "gerada",
+   "pos": [
+    122.8,
+    0,
+    51.0
+   ],
+   "tam": [
+    28.4,
+    246.0,
+    53.0
+   ],
+   "girada_90": false
+  },
+  {
+   "nome": "ORIGINAL obj_17_Mystery Tales Components",
+   "origem": "original",
+   "pos": [
+    151.2,
+    0,
+    52.0
+   ],
+   "tam": [
+    97.8,
+    245.5,
+    11.0
+   ],
+   "girada_90": false
+  },
+  {
+   "nome": "ORIGINAL obj_20_Mystery Tales Tiles",
+   "origem": "original",
+   "pos": [
+    151.2,
+    0,
+    63.0
+   ],
+   "tam": [
+    98.0,
+    92.0,
+    20.0
+   ],
+   "girada_90": false
+  },
+  {
+   "nome": "ORIGINAL obj_19_animals.stl",
+   "origem": "original",
+   "pos": [
+    151.2,
+    0,
+    83.0
+   ],
+   "tam": [
+    91.2,
+    104.8,
+    13.0
+   ],
+   "girada_90": false
+  },
+  {
+   "nome": "cartas-mt-outros",
+   "origem": "gerada",
+   "pos": [
+    151.2,
+    104.8,
+    63.0
+   ],
+   "tam": [
+    68.0,
+    101.5,
+    41.0
+   ],
+   "girada_90": false
+  },
+  {
+   "nome": "caixa-promos",
+   "origem": "gerada",
+   "pos": [
+    151.2,
+    206.3,
+    63.0
+   ],
+   "tam": [
+    97.8,
+    39.2,
+    41.0
+   ],
+   "girada_90": false
+  },
+  {
+   "nome": "cartas-pequenas-base",
+   "origem": "gerada",
+   "pos": [
+    249.2,
+    0,
+    52.0
+   ],
+   "tam": [
+    54.0,
+    227.7,
+    26.0
+   ],
+   "girada_90": false
+  },
+  {
+   "nome": "cartas-pequenas-mt",
+   "origem": "gerada",
+   "pos": [
+    249.2,
+    0,
+    78.0
+   ],
+   "tam": [
+    54.0,
+    227.7,
+    26.0
+   ],
+   "girada_90": false
+  },
+  {
+   "nome": "cartas-mt-eventos",
+   "origem": "gerada",
+   "pos": [
+    0,
+    246.0,
+    52.0
+   ],
+   "tam": [
+    101.5,
+    68.0,
+    52.0
+   ],
+   "girada_90": true
+  },
+  {
+   "nome": "cartas-mt-aventura",
+   "origem": "gerada",
+   "pos": [
+    101.5,
+    246.0,
+    52.0
+   ],
+   "tam": [
+    101.5,
+    68.0,
+    52.0
+   ],
+   "girada_90": true
+  },
+  {
+   "nome": "cartas-mt-insanidade",
+   "origem": "gerada",
+   "pos": [
+    203.0,
+    246.0,
+    52.0
+   ],
+   "tam": [
+    101.5,
+    68.0,
+    26.0
+   ],
+   "girada_90": true
+  },
+  {
+   "nome": "cartas-mt-misterio",
+   "origem": "gerada",
+   "pos": [
+    203.0,
+    246.0,
+    78.0
+   ],
+   "tam": [
+    101.5,
+    68.0,
+    26.0
+   ],
+   "girada_90": true
+  }
+ ],
+ "erros_montagem": [],
+ "topo_insert": 104.0,
+ "espessura_plana": 28.0,
+ "espaco_tabuleiro": 30.0,
+ "folga_sobrando": 2.0,
+ "sleeves": {
+  "grande": {
+   "chave": "padrao-euro",
+   "nome": "Sleeve PADRÃO EURO",
+   "carta": [
+    59,
+    92
+   ],
+   "externo": [
+    61.5,
+    95.0
+   ],
+   "micras": 60,
+   "fonte": "estimado",
+   "compativeis": [
+    "Sleeve PADRÃO EURO"
+   ]
+  },
+  "pequena": {
+   "chave": "mini-euro",
+   "nome": "Sleeve MINI EURO",
+   "carta": [
+    45,
+    68
+   ],
+   "externo": [
+    47.5,
+    71.0
+   ],
+   "micras": 60,
+   "fonte": "estimado",
+   "compativeis": [
+    "Sleeve MINI EURO"
+   ]
+  }
+ },
+ "baralhos": {
+  "eventos": "eventos: 93 cartas 59x92 em Sleeve PADRÃO EURO (estimado: 61.5x95.0, 60 µm) -> maço 44.2 mm",
+  "misterio": "misterio: 52 cartas 59x92 em Sleeve PADRÃO EURO (estimado: 61.5x95.0, 60 µm) -> maço 24.7 mm",
+  "aventura-construir": "aventura-construir: 40 cartas 59x92 em Sleeve PADRÃO EURO (estimado: 61.5x95.0, 60 µm) -> maço 19.0 mm",
+  "aventura-coletar": "aventura-coletar: 40 cartas 59x92 em Sleeve PADRÃO EURO (estimado: 61.5x95.0, 60 µm) -> maço 19.0 mm",
+  "aventura-explorar": "aventura-explorar: 40 cartas 59x92 em Sleeve PADRÃO EURO (estimado: 61.5x95.0, 60 µm) -> maço 19.0 mm",
+  "especiais": "especiais: 12 cartas 59x92 em Sleeve PADRÃO EURO (estimado: 61.5x95.0, 60 µm) -> maço 5.7 mm",
+  "mt-eventos": "mt-eventos: 82 cartas 59x92 em Sleeve PADRÃO EURO (estimado: 61.5x95.0, 60 µm) -> maço 39.0 mm",
+  "mt-aventura": "mt-aventura: 60 cartas 59x92 em Sleeve PADRÃO EURO (estimado: 61.5x95.0, 60 µm) -> maço 28.5 mm",
+  "mt-misterio": "mt-misterio: 24 cartas 59x92 em Sleeve PADRÃO EURO (estimado: 61.5x95.0, 60 µm) -> maço 11.4 mm",
+  "mt-insanidade": "mt-insanidade: 27 cartas 59x92 em Sleeve PADRÃO EURO (estimado: 61.5x95.0, 60 µm) -> maço 12.8 mm",
+  "mt-outros": "mt-outros: 60 cartas 59x92 em Sleeve PADRÃO EURO (estimado: 61.5x95.0, 60 µm) -> maço 28.5 mm",
+  "invencoes": "invencoes: 30 cartas 44x68 em Sleeve MINI EURO (estimado: 47.5x71.0, 60 µm) -> maço 14.3 mm",
+  "equipamento": "equipamento: 8 cartas 44x68 em Sleeve MINI EURO (estimado: 47.5x71.0, 60 µm) -> maço 3.8 mm",
+  "feras": "feras: 17 cartas 44x68 em Sleeve MINI EURO (estimado: 47.5x71.0, 60 µm) -> maço 8.1 mm",
+  "mt-invencoes": "mt-invencoes: 3 cartas 44x68 em Sleeve MINI EURO (estimado: 47.5x71.0, 60 µm) -> maço 1.4 mm",
+  "mt-equipamento": "mt-equipamento: 17 cartas 44x68 em Sleeve MINI EURO (estimado: 47.5x71.0, 60 µm) -> maço 8.1 mm",
+  "mt-pequenas": "mt-pequenas: 24 cartas 44x68 em Sleeve MINI EURO (estimado: 47.5x71.0, 60 µm) -> maço 11.4 mm"
+ }
+}

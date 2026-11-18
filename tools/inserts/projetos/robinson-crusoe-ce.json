@@ -1,0 +1,60 @@
+{
+  "_sobre": "Robinson Crusoe: Aventuras na Ilha Amaldiçoada — Edição de Colecionador (Portal Games, Gamefound) + Mistérios (Mystery Tales). Valores marcados 'estimado' não foram publicados por ninguém: meça com paquímetro e troque aqui; depois rode gerar.py de novo.",
+  "caixa_interna": {"x": 320.0, "y": 320.0, "z": 134.0, "status": "estimado",
+    "nota": "Portal declara 33 x 33 x 14 cm (externo). O insert js500 que você mandou ocupa 318,4 mm, então o interno é >= 318,4. Meça o fundo da caixa por dentro e a altura útil com a tampa fechada."},
+  "camada_plana": {
+    "status": "estimado",
+    "nota": "Tudo que vai deitado por cima do insert: tabuleiro dobrado + fichas de cenário + fichas de personagem + manual. Some as espessuras medidas.",
+    "itens": [
+      {"nome": "Tabuleiro (dobrado)", "espessura": 12.0},
+      {"nome": "4 fichas de cenário", "espessura": 7.0},
+      {"nome": "4 fichas de personagem", "espessura": 4.0},
+      {"nome": "Manual de regras", "espessura": 4.0}
+    ],
+    "folga_tampa": 1.0
+  },
+  "impressora": {"mesa": [256, 256, 256], "parede_min": 1.2},
+  "sleeves": {
+    "grande": {"usar": "padrao-euro", "compativel_com": ["padrao-euro"],
+               "nota": "Cartas grandes do RC: 57x89 a 59x92 conforme a tiragem. Bucaneiros PADRÃO EURO (59x92) serve em todas. Se as suas forem 58x89 dá para pôr também 'chimeuro' (59x91) aqui: o poço passa a aceitar o maior dos dois."},
+    "pequena": {"usar": "mini-euro", "compativel_com": ["mini-euro"],
+                "nota": "Cartas pequenas 44 x 68 mm: Bucaneiros MINI EURO 45x68."}
+  },
+  "cartas": {
+    "grande": {"tamanho": [59, 92], "espessura": 0.32, "status": "estimado",
+               "nota": "Fontes divergem (57x89, 58x89, 59x92). Usamos o maior para não apertar; o sleeve manda no tamanho do poço."},
+    "pequena": {"tamanho": [44, 68], "espessura": 0.32, "status": "estimado"}
+  },
+  "baralhos": {
+    "eventos":           {"tipo": "grande", "qtd": 93, "nota": "73 base + 10 Gamefound + ~10 Moral Dramática"},
+    "misterio":          {"tipo": "grande", "qtd": 52},
+    "aventura-construir":{"tipo": "grande", "qtd": 40, "nota": "90 base + 30 Gamefound = 120, 3 maços"},
+    "aventura-coletar":  {"tipo": "grande", "qtd": 40},
+    "aventura-explorar": {"tipo": "grande", "qtd": 40},
+    "especiais":         {"tipo": "grande", "qtd": 12, "nota": "Naufrágio 3, Arrumar acampamento, Sexta-feira, Cão, promos"},
+    "mt-eventos":        {"tipo": "grande", "qtd": 82},
+    "mt-aventura":       {"tipo": "grande", "qtd": 60},
+    "mt-misterio":       {"tipo": "grande", "qtd": 24},
+    "mt-insanidade":     {"tipo": "grande", "qtd": 27},
+    "mt-outros":         {"tipo": "grande", "qtd": 60, "nota": "personagem, condição, cultista, covil, condenado, nativo, guia (conferir quais são pequenas)"},
+    "invencoes":         {"tipo": "pequena", "qtd": 30},
+    "equipamento":       {"tipo": "pequena", "qtd": 8},
+    "feras":             {"tipo": "pequena", "qtd": 17},
+    "mt-invencoes":      {"tipo": "pequena", "qtd": 3},
+    "mt-equipamento":    {"tipo": "pequena", "qtd": 17},
+    "mt-pequenas":       {"tipo": "pequena", "qtd": 24}
+  },
+  "originais_reaproveitados": {
+    "_nota": "Bandejas de componentes do insert original (js500 + remix Mistérios) que continuam valendo: não têm cartas. Medidas tiradas dos STLs (mm, já na orientação de uso).",
+    "obj_13_shelter-upgrades-herb-garden-pen-spyglass.stl": [151.2, 246.0, 9.0],
+    "obj_12_map-tiles-animals-misc-expansions.stl":         [151.2, 246.0, 22.0],
+    "obj_11_characters.stl":                                [151.2, 246.0, 20.0],
+    "obj_16_tokens.stl":                                    [122.8, 246.0, 14.0],
+    "obj_15_dice-determination-black-white-blue.stl":       [122.8, 246.0, 18.0],
+    "obj_14_resources.stl":                                 [122.8, 246.0, 20.0],
+    "obj_3_Player Miniatures":                              [246.0, 97.8, 52.0],
+    "obj_17_Mystery Tales Components":                      [97.8, 245.5, 11.0],
+    "obj_20_Mystery Tales Tiles":                           [98.0, 92.0, 20.0],
+    "obj_19_animals.stl":                                   [91.2, 104.8, 13.0]
+  }
+}
