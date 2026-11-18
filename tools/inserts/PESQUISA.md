@@ -131,3 +131,36 @@ São 19 STLs, 19 arquivos `.scad` e um PDF com a descrição. Os números abaixo
 - **Tamanho provável da carta**: o kit de sleeves da Boardgame Protectors para a Edição de Colecionador usa **57,5 x 89**
   e 45 x 68, e o poço de 62 x 93 do js500 também aponta para uma carta perto de 57,5 x 89, não 59 x 92. Falta
   confirmar com régua.
+
+## PengLord (Printables 877306 / Thingiverse 6619070), STLs medidos (recebido em 18/11/2026)
+
+São 18 STLs, todos fechados, e um PDF com a descrição. Licença CC BY-NC-SA 4.0.
+
+- **Sleeve declarado: Sleeve Kings Standard, para cartas de 63,5 x 88**, que por fora tem o mesmo formato do Bucaneiros
+  PADRÃO, ~66 x 91. É a prova de que dá para luvar as cartas da Edição de Colecionador com sleeve Standard/Padrão.
+- **Bandejas de carta**: as cartas ficam **em pé, apoiadas no lado comprido**. Poço de **93,0 mm** de comprimento, parede
+  de 1,2 mm e **73,2 mm de altura**: a carta de 66 mm em pé fica abaixo da borda.
+
+| Peça | Poço (comprimento x espessura do maço) | Altura |
+|---|---|---|
+| base_game_cards | 93,0 x 152,6 mm | 73,2 mm |
+| mystery_tales_cards | 93,0 x 110,0 mm | 73,2 mm |
+| app_card_tray (x3) | 93,0 x 65,0 mm | 73,2 mm |
+| gamefound_cards | 93,0 x 49,8 mm | 73,2 mm |
+| small_cards | 73,0 x 105,0 mm | 56,2 mm |
+
+- **Tabuleiro e tampa**: a torre-vulcão fica na cartela, no fundo da caixa. O autor admite que a tampa levanta e diz que
+  a torre é parte do motivo. Não comporta o playmat.
+- **Livro de Aventuras**: `adventure_book_spacer`, 18 x 242 x 25 mm, oco.
+- **Miniaturas**: duas bandejas de 51,2 mm (`mini_tray_-_large` e `mini_tray_-_camp`), com fichas por cima.
+- **Bandejas**: sem tampa.
+
+**Comparação dos três projetos com o sleeve Bucaneiros PADRÃO (~66 x 91 por fora):**
+
+| Projeto | Como a carta fica | Limite | PADRÃO 66 x 91 |
+|---|---|---|---|
+| js500 | deitada, poço 62 x 93 | largura 62 | **não cabe**: faltam 4 mm |
+| js500 | em pé, poço 93, bandeja de 63 mm | altura 63 | cabe no comprimento, mas sai 3 mm acima da borda |
+| Sortirus | em pé pelo lado curto, poço 61,6 | largura 61,6 | **não cabe** |
+| PengLord | em pé pelo lado comprido, poço 93, bandeja de 73,2 mm | 93 x 73 | **cabe** |
+| Nosso (v1) | deitada, poço 64 x 97,5 | largura 64 | **não cabe**: precisa de 68,5 |
