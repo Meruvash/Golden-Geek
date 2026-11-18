@@ -2,7 +2,7 @@
  "mes": "2026-11",
  "label": "Novembro de 2026",
  "titulo_previstos": "Previstos para novembro",
- "total": 22,
+ "total": 23,
  "lancados": [
   {
    "id_jogo": 70028,
@@ -150,6 +150,27 @@
    "comentarios": 0,
    "url_topico": null,
    "pode_criar_topico": true
+  },
+  {
+   "id_jogo": 62848,
+   "nome": "Quando",
+   "url": "https://ludopedia.com.br/jogo/quando",
+   "capa": "https://storage.googleapis.com/ludopedia-capas/62848_t.jpg",
+   "fl_jogo_base": 1,
+   "fl_tipo": 1,
+   "editora": {
+    "id": 3248,
+    "nome": "PaperGames",
+    "url": "https://ludopedia.com.br/editora/3248/PaperGames"
+   },
+   "status": {
+    "id": 1,
+    "label": "Lançado",
+    "slug": "lancado"
+   },
+   "comentarios": 0,
+   "url_topico": null,
+   "pode_criar_topico": true
   }
  ],
  "previstos": [
@@ -191,7 +212,7 @@
     "label": "Anunciado",
     "slug": "anunciado"
    },
-   "comentarios": 6,
+   "comentarios": 7,
    "url_topico": "https://ludopedia.com.br/topico/102633/-topico-oficial-endeavor-deep-sea-aguas-desconhecidas",
    "pode_criar_topico": false
   },
@@ -218,7 +239,7 @@
   },
   {
    "id_jogo": 85609,
-   "nome": "Catan: O Jogo de Cartas (6ª Edição) ",
+   "nome": "Catan: O Jogo de Cartas - Sexta Edição",
    "url": "https://ludopedia.com.br/jogo/catan-on-the-road",
    "capa": "https://storage.googleapis.com/ludopedia-capas/85609_t.jpg",
    "fl_jogo_base": 1,
