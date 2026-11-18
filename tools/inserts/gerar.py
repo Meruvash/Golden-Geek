@@ -61,6 +61,12 @@ def main(argv=None):
     erros_m = validar_montagem((cfg["caixa_interna"]["x"], cfg["caixa_interna"]["y"], cfg["caixa_interna"]["z"]),
                                itens, reservas)
     falhas += [f"montagem: {e}" for e in erros_m]
+    oc = cfg["caixa_interna"].get("ocupacao_comprovada")
+    if oc:
+        ox = max(it.caixa[1][0] for it in itens)
+        oy = max(it.caixa[1][1] for it in itens)
+        if ox > oc["x"] + 0.01 or oy > oc["y"] + 0.01:
+            falhas.append(f"montagem: ocupa {ox:.1f} x {oy:.1f}, mais que o comprovado {oc['x']} x {oc['y']}")
 
     rel = {"pecas": linhas, "montagem": [
         {"nome": it.nome, "origem": it.origem, "pos": [round(c, 2) for c in it.pos],

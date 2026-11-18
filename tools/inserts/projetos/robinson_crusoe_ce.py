@@ -109,14 +109,15 @@ def montar(cfg, p=None):
     col_x = A_x + larg_mt
     alt_pe = lay.get("altura_bandeja_em_pe", 70.0)
     par_pe = lay.get("parede_em_pe", 1.6)
+    fm_pe = lay.get("folga_maco_em_pe", 1.5)
     pe1 = bandeja_em_pe("cartas-mt-em-pe-1", B("mt-eventos", "mt-misterio", "mt-insanidade"), p, alt_pe, parede=par_pe,
-                        descricao="Mistérios em pé: Eventos | Mistério | Insanidade (2 divisórias)")
+                        folga_maco=fm_pe, descricao="Mistérios em pé: Eventos | Mistério | Insanidade (2 divisórias)")
     pe2 = bandeja_em_pe("cartas-mt-em-pe-2", B("mt-aventura", "mt-outros"), p, alt_pe, parede=par_pe,
-                        descricao="Mistérios em pé: Aventura | outros (1 divisória)")
+                        folga_maco=fm_pe, descricao="Mistérios em pé: Aventura | outros (1 divisória)")
     larg_col = max(pe1.tamanho[0], pe2.tamanho[0])
     if pe2.tamanho[0] < larg_col:  # mesma largura nas duas, para a caixa de cima apoiar por igual
         pe2 = bandeja_em_pe("cartas-mt-em-pe-2", B("mt-aventura", "mt-outros"), p, alt_pe, parede=par_pe,
-                            folga_maco=1.5 + larg_col - pe2.tamanho[0],
+                            folga_maco=fm_pe + larg_col - pe2.tamanho[0],
                             descricao="Mistérios em pé: Aventura | outros (1 divisória)")
     add(pe1, (col_x, 0, 0))
     add(pe2, (col_x, pe1.tamanho[1], 0))

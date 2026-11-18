@@ -164,3 +164,18 @@ São 18 STLs, todos fechados, e um PDF com a descrição. Licença CC BY-NC-SA 4
 | Sortirus | em pé pelo lado curto, poço 61,6 | largura 61,6 | **não cabe** |
 | PengLord | em pé pelo lado comprido, poço 93, bandeja de 73,2 mm | 93 x 73 | **cabe** |
 | Nosso (v1) | deitada, poço 64 x 97,5 | largura 64 | **não cabe**: precisa de 68,5 |
+
+## Que medida algum STL confirma? (pesquisa de 18/11/2026)
+
+Fontes: os 3 projetos baixados (js500 com SCAD, Sortirus, PengLord), descrições e comentários lidos pela API do
+Printables, fotos dos autores (js500 e Sortirus) e buscas na web.
+
+| Medida | O que os STLs confirmam | Status |
+|---|---|---|
+| Fundo da caixa (X x Y) | O js500 ocupa **318,4 x 318,4 mm**, nos dois eixos (69,4+151,2+97,8 e 246+72,4), e um usuário confirma: "Fit everything as described quite nicely". O Sortirus soma 320,4 numa combinação de porta-cartas, mas a montagem dele não está publicada | **limite comprovado: 318,4**. O gerador agora não passa disso |
+| Altura útil | A peça mais alta do Sortirus tem 126,4 mm, e o autor diz que "sobra um pouquinho". O js500 não levanta a tampa com o playmat | **pelo menos ~127 mm**, valor exato desconhecido |
+| Carta com sleeve Standard/PADRÃO | O PengLord guarda cartas em Sleeve Kings Standard em pé, num poço de 93 mm | comprimento luvado **≤ 93 mm** (bate com os 91 estimados) |
+| Tabuleiro dobrado | **Nenhum STL guarda o tabuleiro.** O js500 e o PengLord admitem que a tampa levanta, e o Sortirus só diz "map on top of Setup_Holder" | **não confirmado** |
+| Livros (cenário introdutório e Livro de Aventuras) | As fotos do js500 mostram os dois livros espiralados deitados como camada de cima. O suporte de descarte do js500 tem degrau a 51 mm e recorte para a espiral a 42 mm | presentes, **espessura não confirmada**. Não estão na nossa camada plana |
+| Fichas de cenário e de personagem | nenhuma fonte | **não confirmado** |
+| Medida interna da caixa | nenhuma fonte publica (a Portal dá só 33 x 33 x 14 cm por fora) | **não confirmado** |

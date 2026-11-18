@@ -5,7 +5,12 @@
     "y": 320.0,
     "z": 134.0,
     "status": "estimado",
-    "nota": "Portal declara 33 x 33 x 14 cm (externo). O insert js500 que você mandou ocupa 318,4 mm, então o interno é >= 318,4. Meça o fundo da caixa por dentro e a altura útil com a tampa fechada."
+    "nota": "Portal declara 33 x 33 x 14 cm (externo). O insert js500 que você mandou ocupa 318,4 mm, então o interno é >= 318,4. Meça o fundo da caixa por dentro e a altura útil com a tampa fechada.",
+    "ocupacao_comprovada": {
+      "x": 318.4,
+      "y": 318.4,
+      "nota": "O insert js500 ocupa 318,4 x 318,4 mm (69,4+151,2+97,8 e 246+72,4) e um usuário confirma no Printables que coube ('Fit everything as described quite nicely'). Enquanto a caixa não for medida, o gerador não deixa o insert passar disso."
+    }
   },
   "camada_plana": {
     "status": "estimado",
@@ -203,6 +208,7 @@
   "layout": {
     "_nota": "Misto (pedido do usuário, 18/11/2026): maços de jogo deitados (vão para a mesa), maços dos Mistérios em pé (guarda).",
     "altura_bandeja_em_pe": 70.0,
-    "parede_em_pe": 1.2
+    "parede_em_pe": 1.2,
+    "folga_maco_em_pe": 1.2
   }
 }

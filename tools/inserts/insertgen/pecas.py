@@ -34,7 +34,7 @@ class Params:
     divisoria: float = 1.6       # parede interna entre poços
     piso: float = 1.2            # espessura do fundo
     raio_canto: float = 2.0      # arredondamento das arestas verticais externas
-    folga_carta: float = 1.25    # folga por lado em volta da carta luvada (total 2,5)
+    folga_carta: float = 1.2     # folga por lado em volta da carta luvada (total 2,4)
     folga_maco: float = 1.5      # folga extra em cima do maço
     folga_tampa: float = 0.25    # folga por lado entre tampa e rebaixo
     tampa_esp: float = 1.6       # espessura da tampa embutida
