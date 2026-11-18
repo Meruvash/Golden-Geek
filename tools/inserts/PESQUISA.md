@@ -59,3 +59,46 @@ a camada plana por cima**. É o que este gerador faz, com a altura calculada e c
   o comum.
 - **Para o RC**: as cartas grandes usam **PADRÃO EURO 59x92**. CHIMEURO 59x91 só serve se a sua carta tiver 91 mm ou
   menos. CHIMERA 57,5x89 só serve para carta de até 57,5 mm. As pequenas usam **MINI EURO 45x68**.
+
+## Sortirus "ALL IN": STLs medidos (zip do MakerWorld 791295, recebido em 18/11/2026)
+
+São 19 peças, todas medidas aqui com ray-casting nos STLs. A `Setup_Holder.stl` tem a malha **aberta** (não fechada).
+O fatiador costuma consertar, mas é um aviso.
+
+**Porta-cartas.** As cartas ficam **em pé**, com o lado maior na vertical, dentro de armações vazadas com 92,8 mm de
+altura. A carta luvada de 95 mm passa uns 3 mm da borda.
+
+| Peça | Poço (largura x fundo) | Medido |
+|---|---|---|
+| Cards_Adventure_Holder (3 poços) | **61,6** x 20,4 mm | passo 63,2 e divisória 1,6 |
+| Cards_Adventure_Holder_Companion_Pack (3 poços) | 61,6 x 12,8 mm | |
+| Cards_Adventure_Holder_Mystery_Tales (3 poços) | 61,6 x 10,4 mm | |
+| Cards_Mystery_Holder (1 poço) | 61,6 x 43,6 mm | |
+| Cards_Beast_Invention_Equipment_Holder (pequenas) | **48,0** x 48,0 mm | |
+
+Fundo de 20,4 mm para 40 cartas dá cerca de **0,51 mm por carta luvada**, perto dos nossos 0,475.
+
+**Conclusão sobre sleeves.** O poço de 61,6 mm só aceita sleeve de até ~61,6 mm de largura, ou seja, zero de folga
+com o Bucaneiros Padrão Euro (estimado em 61,5). Se o Bucaneiros real tiver 62 mm, **não entra**. As pequenas têm 48,0
+mm contra 47,5 do Mini Euro, só 0,5 mm de folga. O projeto foi feito para sleeve de 70 µm e mais estreito; o autor
+avisa que as tampas têm 0,2 mm de folga.
+
+Os nossos poços (64 x 97,5 deitado e 50 x 73,5) têm 2,5 mm de folga em cada medida.
+
+**Altura da caixa.** A peça mais alta do Sortirus, `Setup_Mystery_Tales_Holder`, tem **126,4 mm**. Se ela vai em pé
+dentro da caixa, a altura interna é de **pelo menos 126,4 mm**. Nós estimamos 134; a medida real decide quanto sobra
+para o tabuleiro em cima do nosso topo de 104 mm:
+
+| Altura interna | Espaço para o tabuleiro |
+|---|---|
+| 128 | 24 mm |
+| 134 | 30 mm |
+
+**Tabuleiro.** Fica deitado sobre o `Setup_Holder` (246,4 x 231,2 x 83,6 mm), com até ~43 mm livres acima dele se a
+caixa tiver 126,4 mm por dentro.
+
+**Ideias que valem para o nosso gerador:**
+- paredes e tampas em treliça (menos filamento e menos peso para levar à mesa);
+- peça de "setup" separada das peças de jogo;
+- divisórias soltas para os maços;
+- tampa de fichas por cima (7,2 mm) em vez de embutida.
