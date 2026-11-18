@@ -43,7 +43,8 @@ class Params:
     raio_concha: float = 6.0     # raio do fundo em concha das fichas
 
 
-def bandeja_baralhos(nome, pocos, p: Params, altura=None, entalhe=True, furo_piso=26.0, descricao=""):
+def bandeja_baralhos(nome, pocos, p: Params, altura=None, entalhe=True, furo_piso=26.0, descricao="",
+                     girar_carta=False, ref=None):
     """Bandeja de mesa para maços DEITADOS (cartas luvadas), poços em fila ao longo de Y.
 
     pocos: lista; cada item é uma lista de Baralho que divide o mesmo poço
@@ -54,11 +55,12 @@ def bandeja_baralhos(nome, pocos, p: Params, altura=None, entalhe=True, furo_pis
     no piso para empurrar o maço por baixo. Na mesa ela é o próprio monte de
     compra/descarte; na caixa, empilha (o fundo de uma é a tampa da outra).
     """
-    ref = [b for poco in pocos for b in poco]
+    ref = [b for poco in pocos for b in poco] + ([ref] if ref is not None else [])
     if not ref:
-        raise ValueError(f"{nome}: precisa de ao menos um baralho para dimensionar o poço")
-    larg_c = max(b.externo[0] for b in ref) + 2 * p.folga_carta
-    comp_c = max(b.externo[1] for b in ref) + 2 * p.folga_carta
+        raise ValueError(f"{nome}: precisa de ao menos um baralho (ou ref=) para dimensionar o poço")
+    ext = lambda b: tuple(reversed(b.externo)) if girar_carta else b.externo  # noqa: E731
+    larg_c = max(ext(b)[0] for b in ref) + 2 * p.folga_carta
+    comp_c = max(ext(b)[1] for b in ref) + 2 * p.folga_carta
     pilha = [sum(b.altura_pilha() for b in poco) for poco in pocos]
     prof_min = max(pilha) + p.folga_maco
     if altura is not None:
@@ -85,7 +87,7 @@ def bandeja_baralhos(nome, pocos, p: Params, altura=None, entalhe=True, furo_pis
             furos.append(g.cilindro(furo_piso / 2, p.piso + 2, (X / 2, cy, -1)))
         z = p.piso
         for b in poco:
-            L, A = b.externo
+            L, A = ext(b)
             h = b.altura_pilha()
             fant.append((b.nome, g.caixa(L, A, h, (p.parede + (larg_c - L) / 2, y0 + (comp_c - A) / 2, z))))
             z += h
@@ -149,3 +151,47 @@ def bloco_espaco(nome, X, Y, Z, p: Params, descricao="Calço"):
     corpo = g.caixa_arred(X, Y, Z, p.raio_canto)
     oco = g.caixa_arred(X - 2 * p.parede, Y - 2 * p.parede, Z, 1.0, (p.parede, p.parede, p.piso))
     return Peca(nome, corpo - oco, descricao, medidas={"x": X, "y": Y, "z": Z})
+
+
+def bandeja_em_pe(nome, baralhos, p: Params, altura, parede=1.6, folga_comp=1.0, folga_maco=1.5,
+                  esp_divisoria=1.2, descricao=""):
+    """Bandeja de guarda com cartas EM PÉ apoiadas no lado comprido (estilo PengLord).
+
+    O lado comprido da carta luvada fica ao longo de Y (poço = comprimento + 2*folga_comp);
+    os maços ficam enfileirados ao longo de X, separados por divisórias soltas
+    (`divisoria()`), uma entre cada par de maços. A parede da frente e a de trás têm
+    um recorte grande para ver e puxar as cartas.
+    """
+    L = max(b.externo[0] for b in baralhos)   # altura da carta em pé
+    A = max(b.externo[1] for b in baralhos)   # comprimento, deitado ao longo de Y
+    n_div = len(baralhos) - 1
+    interno_x = sum(b.altura_pilha() for b in baralhos) + n_div * esp_divisoria + folga_maco
+    comp = A + 2 * folga_comp
+    X, Y, Z = interno_x + 2 * parede, comp + 2 * parede, altura
+    if Z - p.piso < L + 0.5:
+        raise ValueError(f"{nome}: altura {Z} baixa para carta em pé de {L:.1f} mm")
+    corpo = g.caixa_arred(X, Y, Z, p.raio_canto)
+    furos = [g.caixa_arred(interno_x, comp, Z, 0.8, (parede, parede, p.piso))]
+    larg_rec = min(comp - 24, 60.0)
+    prof_rec = Z * 0.5
+    furos.append(g.entalhe_dedo(larg_rec, prof_rec, parede + 2, (-1, Y / 2, Z), eixo="x"))
+    furos.append(g.entalhe_dedo(larg_rec, prof_rec, parede + 2, (X - parede - 1, Y / 2, Z), eixo="x"))
+    sol = corpo - g.uniao(furos)
+    fant, x = [], parede + folga_maco / 2
+    for i, b in enumerate(baralhos):
+        h = b.altura_pilha()
+        fant.append((b.nome, g.caixa(h, A, L, (x, parede + folga_comp, p.piso))))
+        x += h + esp_divisoria
+    pc = Peca(nome, sol, descricao or ("Em pé: " + " | ".join(b.nome for b in baralhos)),
+              fantasmas=fant, medidas={"x": X, "y": Y, "z": Z})
+    pc.notas.append(f"poço {interno_x:.1f} x {comp:.1f} mm, carta em pé de {L:.1f} mm; {n_div} divisória(s) solta(s)")
+    pc.notas += [f"{b.nome}: {b.altura_pilha():.1f} mm de maço" for b in baralhos]
+    return pc
+
+
+def divisoria(nome, comp_poco, altura_util, esp=1.2, folga=0.5):
+    """Divisória solta para bandeja em pé: impressa deitada, com furo para o dedo."""
+    X, Y = comp_poco - 2 * folga, altura_util - folga
+    placa = g.caixa_arred(X, Y, esp, 3.0)
+    placa = placa - g.cilindro(9, esp + 2, (X / 2, Y, -1))
+    return Peca(nome, placa, "Divisória solta entre maços em pé", medidas={"x": X, "y": Y, "z": esp})

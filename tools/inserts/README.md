@@ -41,47 +41,48 @@ mede os poços de carta direto nos STLs:
 O próprio autor do js500 diz que o projeto é para o **playmat de neoprene** e que o tabuleiro de papelão só cabe se a
 tampa ficar levantada. Por isso o original também não tem espaço para o tabuleiro.
 
-### A solução
+### A solução (versão 2, "misto", para o Bucaneiros PADRÃO)
 
-Ficam as 10 bandejas de componentes do original, que não têm cartas e funcionam bem: personagens, peças de mapa, abrigo,
-recursos, dados, fichas, miniaturas e as 3 bandejas de Mistérios. **Todas as bandejas de carta saem do gerador**,
-dimensionadas pelo sleeve, junto com as caixas com tampa que completam os vãos. O topo do insert fica plano a
-**104 mm**, e o espaço de 104 mm até a tampa fica reservado para a **camada plana**: tabuleiro dobrado, fichas de
-cenário, fichas de personagem e manual.
+O sleeve escolhido é o **Bucaneiros PADRÃO** (63,5 x 88), com medida externa estimada em **66 x 91 mm**. A carta da
+Edição de Colecionador provavelmente mede 57,5 x 89 (ver PESQUISA.md). O sleeve aceita carta até 1,5 mm maior que o
+tamanho nominal.
+
+Comparação medida nos STLs dos outros projetos:
+
+| Projeto | Limite medido | PADRÃO 66 x 91 |
+|---|---|---|
+| js500 | poço deitado de 62 de largura | não cabe |
+| Sortirus | poço de 61,6 de largura | não cabe |
+| PengLord | carta em pé no poço de 93, bandeja de 73,2 | cabe |
+
+**Como fica o insert misto:**
+
+- **Maços de jogo deitados** (vão para a mesa):
+  - Eventos, com compra e descarte na mesma peça;
+  - as 3 Aventuras, Mistério e Especiais;
+  - 2 descartes vazios (aventura e mistério).
+
+  O poço tem **68,5 x 93,5 mm**, ou seja, sleeve + 1,25 mm por lado. Tem entalhe de dedo nas laterais e furo no fundo.
+  As bandejas de meia altura empilham: o fundo de uma é a tampa da outra.
+- **Maços dos Mistérios em pé** (guarda), no estilo PengLord:
+  - a carta fica apoiada no lado comprido, num poço de 93 mm e numa bandeja de 70 mm de altura;
+  - os maços são separados por **divisórias soltas** (imprima 3);
+  - há um recorte grande na frente e atrás para puxar as cartas.
+- **Cartas pequenas** (Bucaneiros MINI EURO): 2 bandejas de 2 poços (50 x 73,5 mm), empilhadas na coluna das
+  miniaturas.
+- **Componentes**: as 10 bandejas do original continuam. As caixas novas com tampa embutida completam os vãos.
+- **Tabuleiro**: o topo é plano a **104 mm**, e o espaço dali até a tampa fica reservado para o tabuleiro dobrado, as
+  fichas e o manual.
+- **Ocupação**: o insert ocupa 318,7 x 318,5 mm do fundo. A conferência é feita contra 320 x 320, que ainda é uma
+  estimativa.
 
 ![montagem](saida/robinson-crusoe-ce/montagem.png)
 
-**Portabilidade (tirar da caixa, jogar e guardar)**
+**Portabilidade:**
 
-- Cada maço vai **deitado** numa bandeja que serve de monte na mesa. Ela tem entalhe de dedo nas duas laterais para
-  pinçar o maço e um furo no fundo para empurrar as cartas por baixo.
-- **Eventos** tem o poço de compra e o de descarte na mesma peça.
-- As bandejas de meia altura (26 mm) empilham. O fundo da bandeja de cima é a tampa da de baixo, e as duas saem juntas
-  da caixa.
-- As caixas de fichas têm **tampa embutida**, rente à borda, com furo de dedo. Viajam fechadas e empilham sem prender.
-- Na hora de guardar, as peças entram em dois níveis de 52 mm (a planta acima diz o lugar de cada uma) e o tabuleiro vai
-  deitado por cima.
-
-**Como as cartas cabem**
-
-- O poço é **sleeve + 1,25 mm por lado**:
-  - cartas grandes em Bucaneiros Padrão Euro: 61,5 x 95 → poço de 64 x 97,5;
-  - cartas pequenas em Mini Euro: 47,5 x 71 → poço de 50 x 73,5.
-- A espessura usada é carta 0,32 mm + 2 x 60 µm de sleeve, mais 8% de ar. A capacidade de cada poço sai no
-  `relatorio.json`.
-- Quem usa sleeve **Premium** (100 µm) só precisa trocar `"usar": "padrao-premium"` no JSON. O gerador refaz as
-  bandejas e acusa se algum maço deixar de caber.
-
-**Como os outros inserts guardam o tabuleiro** (detalhes em [PESQUISA.md](PESQUISA.md))
-
-- Folded Space, Feldherr e e-Raptor (2ª edição) deixam o tabuleiro e as fichas **deitados por cima das bandejas**, com
-  a tampa fechando rente. Feldherr: insert de 67 mm numa caixa de 71 mm.
-- Sortirus (CE): "map on the top of Setup_Holder".
-- js500 e Alfred Wayne (CE) contam com o playmat e deixam a tampa levantar.
-- PengLord (CE) põe a torre-vulcão por baixo e aceita cerca de 13 mm de tampa levantada.
-
-Nenhum desses projetos publica a altura reservada para o tabuleiro. Aqui ela é um número: o gerador soma a camada
-plana declarada, reserva esse volume e falha se alguma peça invadir.
+- Tirar da caixa: cada bandeja de jogo vai inteira para a mesa, como monte de compra ou de descarte.
+- Mistérios e caixas com tampa ficam fechados até a hora de usar.
+- Guardar: a planta acima mostra o lugar de cada peça, e o tabuleiro vai deitado por cima.
 
 ### Antes de imprimir: meça 5 números
 
@@ -100,20 +101,15 @@ Depois rode `gerar.py` de novo. Se algo deixar de caber, ele diz o que e por qua
 
 ### O que imprimir
 
-Arquivos em `saida/robinson-crusoe-ce/` (1 de cada):
-
-- **19 STLs novos**: bandejas de carta, caixas com tampa e as tampas.
-- **10 bandejas originais**, que continuam valendo: `obj_3`, `obj_11` a `obj_17`, `obj_19` e `obj_20`.
-- **Não imprima mais** os originais `obj_1`, `obj_2`, `obj_4`, `obj_5`, `obj_6`, `obj_8`, `obj_9`, `obj_10` e `obj_21`.
-  As novas peças substituem todos eles.
-
-Impressão:
-
-- Todas as peças saem na orientação de impressão, com a boca para cima. Nenhuma precisa de suporte.
-- PLA ou PETG, camada de 0,2 mm, 3 perímetros.
-
-`relatorio.json` traz as medidas, os poços, o tamanho de cada maço e a posição de cada peça na caixa; `pecas.png` mostra
-a vista 3D das peças novas.
+- **Antes de tudo:** imprima as peças de `saida/teste-encaixe/` (`python3 tools/inserts/gerar_teste.py`). São um poço
+  deitado, uma bandeja em pé, um poço de carta pequena e uma tampa, com as mesmas folgas do insert. Confira o encaixe
+  com o seu sleeve e ajuste `Params` se precisar.
+- Os **23 STLs** de `saida/robinson-crusoe-ce/`. A `divisoria-em-pe` sai em **3 cópias**; o resto, 1 de cada (as
+  quantidades estão no `relatorio.json`).
+- As 10 bandejas originais que continuam valendo: `obj_3`, `obj_11` a `obj_17`, `obj_19` e `obj_20`. Os originais que
+  tinham cartas são substituídos.
+- PLA ou PETG, camada de 0,2 mm, sem suporte, com a boca para cima. As bandejas em pé têm parede de 1,2 mm: use 3
+  perímetros.
 
 ## Estrutura
 

@@ -29,9 +29,10 @@ class TestCartas(unittest.TestCase):
         self.assertEqual((s["fonte"], s["externo"], s["micras"]), ("medido", (62.0, 94.6), 70))
 
     def test_carta_maior_que_sleeve(self):
-        s = sleeve(self.cat, "chimeuro")  # 59 x 91
+        s = sleeve(self.cat, "chimeuro")  # 59 x 91 (aceita até +1,5 mm)
+        Baralho("ok", (59, 92), 10, 0.32, s)
         with self.assertRaises(ValueError):
-            Baralho("x", (59, 92), 10, 0.32, s)
+            Baralho("x", (59, 93), 10, 0.32, s)
 
     def test_envelope_pega_o_maior(self):
         s = sleeve_envelope(self.cat, "chimeuro", ["padrao-euro"])
@@ -118,6 +119,20 @@ class TestTresMF(unittest.TestCase):
             self.assertAlmostEqual(a, e)
 
 
+class TestEmPe(unittest.TestCase):
+    def test_bandeja_em_pe_valida(self):
+        from insertgen.pecas import bandeja_em_pe, divisoria
+        cat = carregar_catalogo()
+        s = sleeve(cat, "padrao")
+        bs = [Baralho("a", (57.5, 89), 82, 0.32, s), Baralho("b", (57.5, 89), 24, 0.32, s)]
+        pc = bandeja_em_pe("pe", bs, Params(), 70, parede=1.2)
+        self.assertEqual(validar_peca(pc)[0], [])
+        self.assertAlmostEqual(pc.tamanho[1], 91 + 2 + 2.4, places=3)
+        with self.assertRaises(ValueError):
+            bandeja_em_pe("baixa", bs, Params(), 60)
+        self.assertEqual(validar_peca(divisoria("d", 93, 68))[0], [])
+
+
 class TestMontagem(unittest.TestCase):
     def test_sobreposicao(self):
         a = Item("a", (10, 10, 10), (0, 0, 0))
@@ -143,7 +158,10 @@ class TestMontagem(unittest.TestCase):
         cfg = rc.carregar()
         cfg["sleeves"]["grande"]["usar"] = "tarot"
         cfg["cartas"]["grande"]["tamanho"] = [70, 120]
-        pecas, itens, reservas, _ = rc.montar(cfg)
+        try:
+            _, itens, reservas, _ = rc.montar(cfg)
+        except ValueError:
+            return  # o gerador já recusa (carta em pé alta demais para a bandeja)
         self.assertTrue(validar_montagem((320, 320, 134), itens, reservas))
 
 

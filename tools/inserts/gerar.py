@@ -42,7 +42,7 @@ def main(argv=None):
         qtd[it.nome] = qtd.get(it.nome, 0) + 1
     for pc in pecas:
         erros, info = validar_peca(pc, pmin, mesa)
-        n = qtd.get(pc.nome, 1)
+        n = max(qtd.get(pc.nome, 1), pc.qtd)
         v, f = stlio.malha(pc.solido)
         arq = f"{pc.nome}.stl"
         stlio.escrever(os.path.join(a.saida, arq), v, f, pc.nome)
@@ -79,6 +79,11 @@ def main(argv=None):
         previa.pecas(pecas, os.path.join(a.saida, "pecas.png"))
 
     print(f"{len(pecas)} STLs em {a.saida}")
+    cx = cfg["caixa_interna"]
+    ox = max(it.caixa[1][0] for it in itens)
+    oy = max(it.caixa[1][1] for it in itens)
+    print(f"ocupa {ox:.1f} x {oy:.1f} mm do fundo de {cx['x']:.0f} x {cx['y']:.0f} "
+          f"(sobra {cx['x'] - ox:.1f} x {cx['y'] - oy:.1f} mm)")
     print(f"topo do insert: {ctx['topo_insert']:.1f} mm | espaço para tabuleiro+camada plana: "
           f"{ctx['espaco_tabuleiro']:.1f} mm | camada plana declarada: {ctx['espessura_plana']:.1f} mm")
     if falhas:

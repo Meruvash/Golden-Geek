@@ -13,7 +13,7 @@ sys.path.insert(0, AQUI)
 
 from insertgen import stl as stlio  # noqa: E402
 from insertgen.cartas import Baralho, carregar_catalogo, sleeve_envelope  # noqa: E402
-from insertgen.pecas import Params, bandeja_baralhos, bandeja_fichas  # noqa: E402
+from insertgen.pecas import Params, bandeja_baralhos, bandeja_em_pe, bandeja_fichas  # noqa: E402
 from insertgen.validar import validar_peca  # noqa: E402
 from projetos import robinson_crusoe_ce as rc  # noqa: E402
 
@@ -36,6 +36,13 @@ def main(argv=None):
         pc = bandeja_baralhos(f"teste-carta-{tipo}", [[b]], p,
                               descricao=f"Poço igual ao do insert, só 10 cartas de altura ({sl['nome']})")
         pecas.append(pc)
+        if tipo == "grande":
+            par = cfg.get("layout", {}).get("parede_em_pe", 1.2)
+            alt = cfg.get("layout", {}).get("altura_bandeja_em_pe", 70.0)
+            b30 = Baralho("30 cartas grandes", c["tamanho"], 30, c["espessura"], sl)
+            pe = bandeja_em_pe("teste-carta-em-pe", [b30], p, alt, parede=par,
+                               descricao="Bandeja em pé igual à dos Mistérios, para 30 cartas")
+            pecas.append(pe)
     t, tp = bandeja_fichas("teste-tampa", 50, 40, 12, [(1, [1])], p, descricao="Tampa embutida, mesma folga do insert")
     pecas += [t, tp]
     falhas = 0

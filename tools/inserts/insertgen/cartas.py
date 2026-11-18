@@ -34,12 +34,17 @@ class Baralho:
     espessura_carta: mm da carta nua; sl: dict de `sleeve()` ou None.
     """
 
+    # O sleeve aceita carta um pouco maior que o tamanho nominal do produto (a medida
+    # interna passa a nominal). Ex.: carta de 57,5 x 89 no Bucaneiros PADRÃO (63,5 x 88).
+    TOLERANCIA = 1.5
+
     def __init__(self, nome, carta, qtd, espessura_carta=0.32, sl=None):
         self.nome, self.carta, self.qtd = nome, tuple(carta), int(qtd)
         self.espessura_carta, self.sl = espessura_carta, sl
         if sl is not None:
             cl, ca = sl["carta"]
-            if carta[0] > cl + 0.01 or carta[1] > ca + 0.01:
+            tol = self.TOLERANCIA
+            if carta[0] > cl + tol + 0.01 or carta[1] > ca + tol + 0.01:
                 raise ValueError(f"{nome}: carta {carta} não cabe no sleeve {sl['nome']} {sl['carta']}")
 
     @property
