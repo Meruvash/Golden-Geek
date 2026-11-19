@@ -1,0 +1,45 @@
+{
+ "slug": "dune-imperium-uprising",
+ "fotos": [
+  {
+   "arquivo": "fotos/capa-1.webp",
+   "tipo": "capa",
+   "largura": 1200,
+   "altura": 1200,
+   "editora": "Dire Wolf",
+   "credito": "Imagem: Dire Wolf (loja oficial)",
+   "pagina": "https://shop.direwolfdigital.com/products/dune-imperium-uprising",
+   "imagem": "http://shop.direwolfdigital.com/cdn/shop/files/diu_store_box.png",
+   "baixada_em": "2026-11-19",
+   "aprovada": true,
+   "principal": true,
+   "obs": "caixa da edição em inglês (Dire Wolf); a caixa brasileira da Galápagos usa a mesma arte com o nome Duna: Imperium - Uprising (não conferido em foto)",
+   "texto": true
+  },
+  {
+   "arquivo": "fotos/componentes-2.webp",
+   "tipo": "componentes",
+   "largura": 1255,
+   "altura": 736,
+   "editora": "Dire Wolf",
+   "credito": "Imagem: Dire Wolf",
+   "pagina": "https://www.direwolfdigital.com/dune-imperium-uprising/",
+   "imagem": "https://d19y2ttatozxjp.cloudfront.net/assets/dune/uprising_cardspread_3.png",
+   "baixada_em": "2026-11-19",
+   "aprovada": true,
+   "obs": "leque de cartas sobre fundo liso; tipo corrigido de jogabilidade para componentes"
+  },
+  {
+   "arquivo": "fotos/componentes-1.webp",
+   "tipo": "componentes",
+   "largura": 1200,
+   "altura": 1200,
+   "editora": "Dire Wolf",
+   "credito": "Imagem: Dire Wolf (loja oficial)",
+   "pagina": "https://shop.direwolfdigital.com/products/dune-imperium-uprising",
+   "imagem": "http://shop.direwolfdigital.com/cdn/shop/files/diu_store_components.png",
+   "baixada_em": "2026-11-19",
+   "aprovada": true
+  }
+ ]
+}
