@@ -10,6 +10,63 @@ Demo: ElevenLabs Music (trap sombrio de 140 BPM, caixa de marcha, sem citar arti
 na ElevenLabs → voz cantada convertida para o clone "Dr. Pelicioni" (speech-to-speech) → mix em -14 LUFS.
 Arquivos em `video/serie-ronaldo/public/audio/parodia/` e `renders/parodia/`.
 
+## Letra do clipe v2 (para aprovação): fórmulas de hit aplicadas
+
+Pronúncia: **"time" se canta "tchími"** (rima com "crime"). Para a IA, escrever "timi". Duração: ~1:15 a 140 BPM, meio tempo.
+
+| Fórmula | Fonte | Na letra |
+|---|---|---|
+| Gancho primeiro (intro ≤ 5 s) | Washington Times, 14/4/2025; Soundstripe | Abre a seco com "Um a zero pro tchími!" |
+| Refrão cedo e 3 vezes | Hit Songs Deconstructed (1º refrão aos 0:42, 19% da música) | Gancho aos 0:00, refrão aos 0:25 e refrão final |
+| Pré-refrão | HSD 2025 Staying Power (73% dos hits duradouros) | Entrada dos Leite com Pera |
+| Música curta | HSD 2025 | ~1:15 |
+| Contorno familiar com um salto | Jakubowski et al., 2016 (APA) | Salto no "um a ZE-ro" |
+| Pergunta e resposta + grito | prática de refrão de estádio | "(rolou!) / (caiu seis!)" e pós-refrão |
+| Final em loop | gancho feito para repetir | Corta em "um a zero pro…" e volta ao início |
+
+**[GANCHO FRIO]** (0:00–0:04 · a cappella, eco, o dado quica)
+Um a zero pro tchími!
+
+**[VERSO 1: a mesa]** (0:04–0:18)
+Sexta à noite, Duna na mesa, especiaria no ar
+Seis cadeiras, três contra três, ninguém vai amarelar
+Comandante é o Wan, grisalho do lado, frieza de general
+Ronaldo no flanco, Lukita na conta: trio fenomenal
+
+**[PRÉ-REFRÃO: chegam os rivais]** (0:18–0:25)
+Mas abriu a porta… cabelo neon, celular na mão
+Os Leite com Pera chegaram de textão
+Cancelina, Threadson, Lacrélio na missão…
+(o beat corta) …e o Wan só falou: "Rola o dado, irmão."
+
+**[REFRÃO]** (0:25–0:39)
+Um a zero pro tchími (rolou!)
+Um a zero pro tchími (caiu seis!)
+O Wan joga o dado e a mesa inteira se oprime
+Desfile lúdico… um a zero pro tchími!
+
+**[PÓS-REFRÃO: grito]** (0:39–0:42)
+Ro-lou! Cai-u seis! Ro-lou! Cai-u seis!
+
+**[VERSO 2: a partida]** (0:42–0:56)
+Cancelina gritou "problemático!" e filmou o tabuleiro
+Threadson digitando thread, perdeu a vez primeiro
+Lacrélio gritou "LACROU!" com a carta de cabeça pra baixo
+Lukita na lousa: "noventa e nove por cento, eu acho"
+Ronaldo no reteté chamando o verme da areia
+Subiu o verme gigante e engoliu a tropa inteira
+
+**[PONTE: câmera lenta]** (0:56–1:03)
+"Vamos cancelar o Duna!"
+(silêncio de um tempo)
+Wan: "Cancela não… embaralha."
+
+**[REFRÃO FINAL]** (1:03–1:15)
+Um a zero pro tchími (rolou!)
+Um a zero pro tchími (caiu seis!)
+O placar a gente imprime, a vitória é sublime
+Desfile lúdico… um a zero pro… (corte seco e volta ao gancho: loop)
+
 ## Clipe: "Um a zero pro time" (roteiro para aprovação)
 
 **A partida:** Dune: Imperium – Uprising no modo de 6 jogadores, 3 contra 3. Cada time tem um Comandante e dois
