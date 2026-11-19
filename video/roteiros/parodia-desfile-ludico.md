@@ -12,7 +12,7 @@ Arquivos em `video/serie-ronaldo/public/audio/parodia/` e `renders/parodia/`.
 
 ## Letra do clipe v2 (para aprovação): fórmulas de hit aplicadas
 
-Pronúncia: **"time" se canta "tchími"** (rima com "crime"). Para a IA, escrever "timi". Duração: ~1:15 a 140 BPM, meio tempo.
+Pronúncia: **"time" se canta "tchími"** (rima com "crime"). Para a IA de música, escrever "timi". **Na tela (legenda, storyboard e vídeo) escreve-se "time".** Duração: ~1:15 a 140 BPM, meio tempo.
 
 | Fórmula | Fonte | Na letra |
 |---|---|---|

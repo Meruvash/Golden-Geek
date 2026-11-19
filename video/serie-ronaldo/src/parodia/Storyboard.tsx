@@ -87,7 +87,7 @@ export const QUADROS_PARODIA: Q[] = [
       <Raios cor="#c23b22" op={0.55} />
       <MeioTom cor="#000" op={0.3} />
       <CartaBate x={520} y={420} esc={1.15} giro={14} rastro />
-      <div style={{ position: "absolute", left: 60, top: 110 }}><Grande tam={128}>UM A ZERO<br />PRO TCHÍMI!</Grande></div>
+      <div style={{ position: "absolute", left: 60, top: 110 }}><Grande tam={128}>UM A ZERO<br />PRO TIME!</Grande></div>
     </AbsoluteFill>
   ) },
   { rot: "0:04 · VERSO 1", r: () => (
@@ -171,7 +171,7 @@ export const QUADROS_PARODIA: Q[] = [
       <svg width={1080} height={1080} style={{ position: "absolute" }}><path d="M560,340 l40,120 l120,-60 l-60,120 l130,40 l-130,40 l60,120 l-120,-60 l-40,120 l-40,-120 l-120,60 l60,-120 l-130,-40 l130,-40 l-60,-120 l120,60 Z" fill="#fff" opacity={0.9} /></svg>
       <Of nome="cartas" style={{ left: 120, top: 330, width: 840, transform: "rotate(-4deg)", filter: "drop-shadow(0 20px 20px rgba(0,0,0,.6))" }} />
       <div style={{ position: "absolute", left: 60, top: 70 }}><Grande tam={140}>REVELOU!</Grande></div>
-      <Letra txt="Um a zero pro tchími (revelou!)" /><Credito />
+      <Letra txt="Um a zero pro time (revelou!)" /><Credito />
     </AbsoluteFill>
   ) },
   { rot: "0:28 · CONFLITO! 1 × 0", r: () => (
@@ -187,7 +187,7 @@ export const QUADROS_PARODIA: Q[] = [
           <span style={{ fontFamily: SANS, fontWeight: 900, fontSize: 40, color: ROSA }}>LACRÔNNEN</span>
         </div>
       </div>
-      <Letra txt="Um a zero pro tchími (conflito!)" />
+      <Letra txt="Um a zero pro time (conflito!)" />
     </AbsoluteFill>
   ) },
   { rot: "0:31 · \"ISSO É OPRESSÃO!\"", r: () => (
