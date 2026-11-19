@@ -1,4 +1,18 @@
-# Desfile Lúdico: paródia (letra para aprovação)
+# Desfile Lúdico: paródia
+
+## Versão aprovada (19/11/2026): só o refrão
+> Um a zero pro time (rolou!)
+> Um a zero pro time (caiu seis!)
+> O Wan joga o dado e a mesa inteira se oprime
+> Desfile lúdico… um a zero pro time!
+
+Demo: ElevenLabs Music (trap sombrio de 140 BPM, caixa de marcha, sem citar artista) → separação de faixas
+na ElevenLabs → voz cantada convertida para o clone "Dr. Pelicioni" (speech-to-speech) → mix em -14 LUFS.
+Arquivos em `video/serie-ronaldo/public/audio/parodia/` e `renders/parodia/`.
+
+---
+
+# Rascunho anterior (letra completa, não usada)
 
 Inspiração: "Desfile Bélico" (LEALL). Letra **original**: nenhum verso da música é aproveitado. Só o refrão
 faz a ponte ("1 a 0 pro crime" vira "Um a zero pro Wan"). Vocal gravado pelo usuário; beat feito por IA,
