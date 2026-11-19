@@ -93,6 +93,13 @@ def capa_jogo(pre, id_jogo):
     return f"{pre}noticias/capas/{id_jogo}.jpg"
 
 
+def capa_chegando(id_jogo):
+    """Capa do bloco Chegando ao Brasil: a da notícia; se ainda não foi baixada, a do calendário (lancamentos/capas)."""
+    jpg = ROOT / "noticias" / "capas" / f"{id_jogo}.jpg"
+    webp = ROOT / "lancamentos" / "capas" / f"{id_jogo}.webp"
+    return jpg if jpg.exists() or not webp.exists() else webp
+
+
 CSS = """
 @font-face{font-family:"Public Sans";src:url(%(pre)sfontes/public-sans.woff2) format("woff2");font-weight:400 800;font-display:swap}
 /* Moldura preta da marca com cartões claros de leitura; régua de densidade do BoardGameGeek */
@@ -628,7 +635,7 @@ def build_home():
     mes = mes_chegando()
     rotulo, jogos = lancamentos(mes)
     capas = "".join(
-        f'<li><a href="lancamentos/#j{j["id_jogo"]}"><img src="{miniatura(ROOT / "noticias" / "capas" / f'{j["id_jogo"]}.jpg', pre, 280)}" width="132" height="140" alt="" loading="lazy">'
+        f'<li><a href="lancamentos/#j{j["id_jogo"]}"><img src="{miniatura(capa_chegando(j["id_jogo"]), pre, 280)}" width="132" height="140" alt="" loading="lazy">'
         f'<span class="st {j["status"]["slug"]}">{e(j["status"]["label"])}</span><b>{e(j["nome"].strip())}</b><span>{e((j.get("editora") or {}).get("nome", ""))}</span></a></li>'
         for j in jogos
     ) + f'<li class="todos"><a href="lancamentos/#{mes}"><span class="mais">Ver os {len(jogos)} de {e(rotulo.split(" de ")[0].lower())} e todo o calendário</span></a></li>'
