@@ -237,3 +237,25 @@ São 10 STLs, um PDF de setup e fotos. Licença CC BY-SA.
 - **Ideia aproveitável**: bandejas de aventura (94 x 82,5 mm) que vão direto para cima do tabuleiro, com o maço, os
   marcadores e os dados de ação juntos.
 - **Medidas novas para o nosso projeto**: nenhuma.
+
+## Varredura ampla do tabuleiro e das cartas (19/11/2026)
+
+Buscas em inglês, polonês, alemão, francês e espanhol, mais leitura direta das páginas da Portal, Rebel, Gamefound,
+Folded Space, e-Raptor, spiele4us e da resenha do Coop Gestalt.
+
+- **Cartas: tamanho OFICIAL.** A loja da Portal (https://sklep.portalgames.pl/robinson-crusoe-edycja-kolekcjonerska)
+  lista as cartas como **[58x88mm]** e **[44x68mm]**. Isso fecha o tamanho das cartas: a grande tem exatamente a
+  medida nominal do Bucaneiros PADRÃO (63,5 x 88), e a pequena cabe no MINI EURO (45 x 68).
+- **Tabuleiro aberto: 720 x 520 mm**, citado por três fontes independentes:
+  - Amazon .com, Edição de Colecionador;
+  - Amazon .ca, Edição de Colecionador;
+  - fórum da Pegasus, edição comum ("Der Spielplan misst 720 x 520 mm"; a página do fórum agora redireciona e não
+    pôde ser lida, só o trecho da busca).
+
+  Como a edição comum vem numa caixa de ~29,5 cm, o tabuleiro tem que dobrar para menos de ~285 mm. A única dobra que
+  serve é **3 x 2 = ~240 x 260 mm**, que bate com os ~237 mm deduzidos dos espaçadores do Printables 916000.
+- **Espessura do tabuleiro dobrado**: nenhuma fonte. Estimativa: 6 camadas x ~2 mm = ~12 mm.
+- **Caixa da Edição de Colecionador**: 33 x 33 x 14 cm por fora (Portal, 2021). A Rebel cita 3,46 kg e "nowe,
+  powiększone pudełko". A medida interna não foi publicada.
+- **Livros**: o Coop Gestalt só diz que o livro da campanha introdutória "flops over the edges of the chair" (é
+  grande); nenhuma medida.

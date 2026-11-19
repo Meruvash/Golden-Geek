@@ -17,8 +17,9 @@
     "nota": "Tudo que vai deitado por cima do insert: tabuleiro dobrado + fichas de cenário + fichas de personagem + manual. Some as espessuras medidas.",
     "itens": [
       {
-        "nome": "Tabuleiro (dobrado)",
-        "espessura": 12.0
+        "nome": "Tabuleiro dobrado",
+        "espessura": 12.0,
+        "nota": "Aberto 720 x 520 mm (Amazon .com/.ca para a Edição de Colecionador; fórum da Pegasus para a edição comum). Dobrado 3 x 2 ≈ 240 x 260 mm, 6 camadas ≈ 12 mm (estimado: ~2 mm por camada)."
       },
       {
         "nome": "4 fichas de cenário",
@@ -33,7 +34,11 @@
         "espessura": 4.0
       }
     ],
-    "folga_tampa": 1.0
+    "folga_tampa": 1.0,
+    "tabuleiro_dobrado_estimado": [
+      240,
+      260
+    ]
   },
   "impressora": {
     "mesa": [
@@ -62,12 +67,12 @@
   "cartas": {
     "grande": {
       "tamanho": [
-        57.5,
-        89
+        58,
+        88
       ],
       "espessura": 0.32,
-      "status": "estimado",
-      "nota": "Kit Boardgame Protectors da Edição de Colecionador = 57,5 x 89; poço do js500 (62 x 93 com sleeve premium) aponta para o mesmo. Meça uma carta."
+      "status": "oficial",
+      "nota": "Loja oficial da Portal (sklep.portalgames.pl, Edycja Kolekcjonerska): cartas [58x88mm] e [44x68mm]. Espessura ainda estimada."
     },
     "pequena": {
       "tamanho": [
@@ -75,7 +80,8 @@
         68
       ],
       "espessura": 0.32,
-      "status": "estimado"
+      "status": "oficial",
+      "nota": "Loja oficial da Portal: [44x68mm]."
     }
   },
   "baralhos": {
