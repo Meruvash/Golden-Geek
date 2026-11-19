@@ -67,7 +67,7 @@ O verme subiu: seis pontos de uma vez! (explode)
 Dez a zero pro tchími (revelou!)
 Dez a zero pro tchími (conflito!)
 O placar a gente imprime, a vitória é sublime
-Desfile lúdico… dez a zero pro… (corte seco e volta ao gancho: loop)
+Desfile lúdico… dez a zero pro Elite! (corte seco e volta ao gancho: loop)
 
 ## Auditoria de pronúncia (pt-BR), palavra a palavra (19/11/2026)
 
@@ -76,7 +76,7 @@ O que aparece **na tela** (legenda, storyboard e vídeo) usa a grafia normal ("t
 
 | Palavra | Pronúncia pt-BR | Risco | Escrever para a IA | Observação |
 |---|---|---|---|---|
-| desconstrúcio | des-cons-TRÚ-ssio | ALTO | **Desconstrússio** | saiu 'Visconstruscius' e 'Desconstruço' |
+| desconstrúcio | des-cons-TRÚ-ssio | ALTO | **Desconstrússiu** | saiu 'Visconstruscius' e 'Desconstruço' |
 | elite | e-LÍ-tchi | ALTO | **Elítchi** | a IA leu 'elite' em inglês ('ilít') |
 | lacrônnen | la-CRÔ-nen | ALTO | **Lacrônem** | saiu 'Lacrone' e 'Casa Cone'; o 'nn' duplo confunde |
 | tchími | TCHÍ-mi | ALTO | **timi** | grafia só para o áudio; na tela é 'time' |
@@ -203,13 +203,13 @@ Ronaldo no flanco, Vítor na sombra: trio fenomenal
 **[PRÉ-REFRÃO]** (o beat para em cada nome)
 Mas abriu a porta… cabelo néon, celular na mão
 A Casa Lacrônem chegou de textão
-Cancelina! (ô!) Problematríssia! (ô!) Desconstrússio! (ô!)
+Cancelina! (ô!) Problematríssia! (ô!) Desconstrússiu! (ô!)
 (PARADA: o beat corta) …e o Uân só falou: "Revela a mão, irmão."
 
 **[REFRÃO]**
 Um a zero pro timi (re-ve-lou!)
 Um a zero pro timi (con-fli-to!)
-Uân joga a intriga e a mesa toda se oprime
+Uân joga a intriga e a mesa toda se oprími
 Desfile… lúdico… um a zero pro timi!
 
 **[PÓS-REFRÃO]**
@@ -218,10 +218,10 @@ Dois a zero pro timi! Timi Elítchi! Con-fli-to!
 **[VERSO 2]**
 Cancelina gritou "problemático!" e filmou o tabuleiro
 Problematríssia no textão, perdeu a vez primeiro
-Desconstrússio jogou a carta de ponta-cabeça
+Desconstrússiu jogou a carta de ponta-cabeça
 Vítor de capa preta, espião na realeza
 No reteté, Ronaldo foi somando de pouquinho
-Dois pontinhos no Conselho: quatro a zero no caminho
+Dois pontchinhos no Conselho: quatro a zero no caminho
 
 **[PONTE]**
 "Vamos cancelar o Duna!"
@@ -234,7 +234,15 @@ O verme subiu: seis pontos de uma vez!
 Dez a zero pro timi (re-ve-lou!)
 Dez a zero pro timi (con-fli-to!)
 O placar a gente im-prí-mi, a vitória é sublime
-Desfile… lúdico… dez a zero pro…
+Desfile… lúdico… dez a zero pro Elítchi!
+
+### Análise de pronúncia, rodada 2
+- **Final:** "dez a zero pro **Elite**" (para a IA, "pro Elítchi").
+- **Vogal final átona:** o "o" final átono soa "u" no Brasil, então "Desconstrússiu".
+- **"pontinhos":** "pontchinhos" (saiu "point").
+- **"se oprime":** "se oprími" (saiu "suprime").
+- **Riscos que continuam:** Wan ("Uân") e Lacrônnen ("Lacrônem"), que só dá para conferir ouvindo.
+- **Escolha da versão:** gerar três e ficar com a de maior acerto na transcrição.
 
 ### Beat mais próximo do "Desfile Bélico"
 Referência: LEALL com VND, produção de Putodiparis (2021), **142 BPM, lá menor**, meio tempo (71 BPM)
