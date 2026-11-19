@@ -244,6 +244,18 @@ Desfile… lúdico… dez a zero pro Elítchi!
 - **Riscos que continuam:** Wan ("Uân") e Lacrônnen ("Lacrônem"), que só dá para conferir ouvindo.
 - **Escolha da versão:** gerar três e ficar com a de maior acerto na transcrição.
 
+### Método que garante o pt-BR (19/11/2026)
+O gerador de música (music_v1) não tem configuração de idioma e escorregou para o inglês ("zero", "time").
+Agora:
+1. Do music_v1 sai **só o beat** (142 BPM, lá menor, com paradas).
+2. A voz é gerada com **eleven_multilingual_v2, na voz clonada**, linha por linha, em grafia normal de português.
+   As únicas exceções são "Uân" (Wan) e "Lacrônen".
+3. Cada linha entra no tempo em que a versão cantada a punha (marcado pela transcrição).
+   Se a linha não couber, é acelerada até 1,4×.
+
+Resultado: a transcrição devolveu a letra praticamente inteira, palavra por palavra.
+Arquivos: `public/audio/parodia/voz-tts/` e `renders/parodia/previa-musica-voz-wan-ptbr.mp3`.
+
 ### Beat mais próximo do "Desfile Bélico"
 Referência: LEALL com VND, produção de Putodiparis (2021), **142 BPM, lá menor**, meio tempo (71 BPM)
 (fontes: Songdata e Musicstax; o Shazam dá 71 BPM, o meio tempo).
