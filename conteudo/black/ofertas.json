@@ -120,7 +120,7 @@
     "api": {
      "anuncio": "MLB6538617508",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:38-03:00",
+     "hora": "2026-11-18T21:50-03:00",
      "nivel": "MercadoLíder silver",
      "preco": 57.99,
      "vendedor": "AZUOSMETALS",
@@ -15692,6 +15692,15 @@
     "vendedor": null
    },
    {
+    "api": {
+     "anuncio": "MLB8018208874",
+     "fonte": "API do Mercado Livre",
+     "hora": "2026-11-18T21:51-03:00",
+     "nivel": "MercadoLíder silver",
+     "preco": 479.99,
+     "vendedor": "ALPHAJOGOSLTDA",
+     "vendedor_ok": true
+    },
     "atualizado": "2026-11-17T03:32:04.709+00:00",
     "de": 417.51,
     "loja": "Mercado Livre",
@@ -100522,6 +100531,15 @@
     "vendedor": null
    },
    {
+    "api": {
+     "anuncio": "MLB8018285600",
+     "fonte": "API do Mercado Livre",
+     "hora": "2026-11-18T21:53-03:00",
+     "nivel": "MercadoLíder silver",
+     "preco": 115.95,
+     "vendedor": "ALPHAJOGOSLTDA",
+     "vendedor_ok": true
+    },
     "atualizado": "2026-11-17T07:32:05.747+00:00",
     "de": 142.4,
     "loja": "Mercado Livre",
@@ -156070,7 +156088,7 @@
     "api": {
      "anuncio": "MLB3339172629",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:48-03:00",
+     "hora": "2026-11-18T21:54-03:00",
      "nivel": "MercadoLíder gold",
      "preco": 46.9,
      "vendedor": "MASMORRA_BG",
@@ -166631,7 +166649,7 @@
     "api": {
      "anuncio": "MLB5857405358",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:49-03:00",
+     "hora": "2026-11-18T21:54-03:00",
      "nivel": "MercadoLíder silver",
      "preco": 189.99,
      "vendedor": "LOJA MEDIEVAL",
@@ -166700,7 +166718,7 @@
     "api": {
      "anuncio": "MLB5626807224",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:49-03:00",
+     "hora": "2026-11-18T21:54-03:00",
      "nivel": "MercadoLíder silver",
      "preco": 135.99,
      "vendedor": "LOJA MEDIEVAL",
@@ -166816,7 +166834,7 @@
     "api": {
      "anuncio": "MLB5755099072",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:49-03:00",
+     "hora": "2026-11-18T21:54-03:00",
      "nivel": "MercadoLíder silver",
      "preco": 129.99,
      "vendedor": "LOJA MEDIEVAL",
@@ -166969,7 +166987,7 @@
     "api": {
      "anuncio": "MLB5896141412",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:49-03:00",
+     "hora": "2026-11-18T21:54-03:00",
      "nivel": "MercadoLíder silver",
      "preco": 628.45,
      "vendedor": "ALPHAJOGOSLTDA",
@@ -167080,7 +167098,7 @@
     "api": {
      "anuncio": "MLB4643498331",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:49-03:00",
+     "hora": "2026-11-18T21:54-03:00",
      "nivel": "MercadoLíder gold",
      "preco": 219.99,
      "vendedor": "TOPGOODGAMES",
@@ -167168,7 +167186,7 @@
     "api": {
      "anuncio": "MLB4170926219",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:49-03:00",
+     "hora": "2026-11-18T21:54-03:00",
      "nivel": "MercadoLíder platinum",
      "preco": 43.41,
      "vendedor": "RIBTOYS",
@@ -167188,7 +167206,7 @@
     "api": {
      "anuncio": "MLB5445171335",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:49-03:00",
+     "hora": "2026-11-18T21:55-03:00",
      "nivel": "MercadoLíder silver",
      "preco": 44.99,
      "vendedor": "PIGPUG_2",
@@ -167250,7 +167268,7 @@
     "api": {
      "anuncio": "MLB3066684158",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:49-03:00",
+     "hora": "2026-11-18T21:55-03:00",
      "nivel": "loja oficial",
      "preco": 347.91,
      "vendedor": "TWOHEADGAMES",
@@ -167342,7 +167360,7 @@
     "api": {
      "anuncio": "MLB6642586250",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:49-03:00",
+     "hora": "2026-11-18T21:55-03:00",
      "nivel": "MercadoLíder silver",
      "preco": 197.6,
      "vendedor": "MECA_DOS_JOGOS",
@@ -167413,12 +167431,12 @@
   "ofertas": [
    {
     "api": {
-     "anuncio": "MLB3355322420",
+     "anuncio": "MLB3167223042",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:49-03:00",
+     "hora": "2026-11-18T21:55-03:00",
      "nivel": "MercadoLíder silver",
-     "preco": 61.65,
-     "vendedor": "ALPHAJOGOSLTDA",
+     "preco": 61.55,
+     "vendedor": "SHOPPINGBELA",
      "vendedor_ok": true
     },
     "atualizado": "2026-11-17T07:31:59.078+00:00",
@@ -167506,7 +167524,7 @@
     "api": {
      "anuncio": "MLB4529807741",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:49-03:00",
+     "hora": "2026-11-18T21:55-03:00",
      "nivel": "MercadoLíder silver",
      "preco": 268.99,
      "vendedor": "ALPHAJOGOSLTDA",
@@ -167607,7 +167625,7 @@
     "api": {
      "anuncio": "MLB3410404553",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:49-03:00",
+     "hora": "2026-11-18T21:55-03:00",
      "nivel": "MercadoLíder silver",
      "preco": 229.88,
      "vendedor": "LOJA PLACEGAMES",
@@ -167741,7 +167759,7 @@
     "api": {
      "anuncio": "MLB3468771053",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:49-03:00",
+     "hora": "2026-11-18T21:55-03:00",
      "nivel": "MercadoLíder platinum",
      "preco": 84.15,
      "vendedor": "NEWSTATION SOROCABA",
@@ -167969,7 +167987,7 @@
     "api": {
      "anuncio": "MLB5662767430",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:49-03:00",
+     "hora": "2026-11-18T21:55-03:00",
      "nivel": "MercadoLíder gold",
      "preco": 97.99,
      "vendedor": "MASMORRA_BG",
@@ -168064,7 +168082,7 @@
     "api": {
      "anuncio": "MLB6843865396",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:49-03:00",
+     "hora": "2026-11-18T21:55-03:00",
      "nivel": "MercadoLíder gold",
      "preco": 135.99,
      "vendedor": "FUSÃO GEEK",
@@ -168084,7 +168102,7 @@
     "api": {
      "anuncio": "MLB4864911327",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:49-03:00",
+     "hora": "2026-11-18T21:55-03:00",
      "nivel": "MercadoLíder gold",
      "preco": 164.89,
      "vendedor": "TOPGOODGAMES",
@@ -168168,7 +168186,7 @@
     "api": {
      "anuncio": "MLB6677087276",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:49-03:00",
+     "hora": "2026-11-18T21:55-03:00",
      "nivel": "MercadoLíder gold",
      "preco": 62.9,
      "vendedor": "LOJANOBARQUINHO",
@@ -168277,7 +168295,7 @@
     "api": {
      "anuncio": "MLB5873689276",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:49-03:00",
+     "hora": "2026-11-18T21:55-03:00",
      "nivel": "MercadoLíder platinum",
      "preco": 63.37,
      "vendedor": "COMAMORDEMAELTDA",
@@ -168789,7 +168807,7 @@
     "api": {
      "anuncio": "MLB5241934060",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:49-03:00",
+     "hora": "2026-11-18T21:55-03:00",
      "nivel": "loja oficial",
      "preco": 254.15,
      "vendedor": "LOJA CUTIM",
@@ -169273,9 +169291,9 @@
     "api": {
      "anuncio": "MLB3167382828",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:49-03:00",
+     "hora": "2026-11-18T21:55-03:00",
      "nivel": "MercadoLíder silver",
-     "preco": 449.98,
+     "preco": 427.48,
      "vendedor": "SHOPPINGBELA",
      "vendedor_ok": true
     },
@@ -169522,7 +169540,7 @@
     "api": {
      "anuncio": "MLB7690412568",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:49-03:00",
+     "hora": "2026-11-18T21:55-03:00",
      "nivel": "MercadoLíder gold",
      "preco": 254.9,
      "vendedor": "MASMORRA_BG",
@@ -169657,7 +169675,7 @@
     "api": {
      "anuncio": "MLB6320199816",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:49-03:00",
+     "hora": "2026-11-18T21:55-03:00",
      "nivel": "MercadoLíder platinum",
      "preco": 1470.98,
      "vendedor": "NEWSTATION SOROCABA",
@@ -169875,7 +169893,7 @@
     "api": {
      "anuncio": "MLB4937273629",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:49-03:00",
+     "hora": "2026-11-18T21:55-03:00",
      "nivel": "MercadoLíder silver",
      "preco": 403.9,
      "vendedor": "ZIMSTORE",
@@ -169984,7 +170002,7 @@
     "api": {
      "anuncio": "MLB5483923028",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:49-03:00",
+     "hora": "2026-11-18T21:55-03:00",
      "nivel": "MercadoLíder gold",
      "preco": 71.49,
      "vendedor": "LOJAS_QUALI",
@@ -170004,7 +170022,7 @@
     "api": {
      "anuncio": "MLB6663475692",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:49-03:00",
+     "hora": "2026-11-18T21:55-03:00",
      "nivel": "MercadoLíder gold",
      "preco": 72.0,
      "vendedor": "FLAVIANE SALLES",
@@ -170024,7 +170042,7 @@
     "api": {
      "anuncio": "MLB6284254580",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:49-03:00",
+     "hora": "2026-11-18T21:55-03:00",
      "nivel": "MercadoLíder gold",
      "preco": 74.66,
      "vendedor": "FLAVIANE SALLES",
@@ -170064,7 +170082,7 @@
     "api": {
      "anuncio": "MLB2943559759",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:49-03:00",
+     "hora": "2026-11-18T21:55-03:00",
      "nivel": "MercadoLíder gold",
      "preco": 139.0,
      "vendedor": "TOYSTORECCCOMERCIODEBRINQ",
@@ -172479,7 +172497,7 @@
     "api": {
      "anuncio": "MLB5197049364",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:50-03:00",
+     "hora": "2026-11-18T21:55-03:00",
      "nivel": "loja oficial",
      "preco": 190.0,
      "vendedor": "BRINKASHOPCOMRCIODEJOGOSE",
@@ -172526,7 +172544,7 @@
     "api": {
      "anuncio": "MLB5461451427",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:50-03:00",
+     "hora": "2026-11-18T21:55-03:00",
      "nivel": "MercadoLíder silver",
      "preco": 60.92,
      "vendedor": "TARGIPRIME",
@@ -172546,7 +172564,7 @@
     "api": {
      "anuncio": "MLB6086723130",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:50-03:00",
+     "hora": "2026-11-18T21:55-03:00",
      "nivel": "MercadoLíder gold",
      "preco": 129.9,
      "vendedor": "DAZOU",
@@ -172637,9 +172655,9 @@
     "api": {
      "anuncio": "MLB5771966300",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:50-03:00",
+     "hora": "2026-11-18T21:55-03:00",
      "nivel": "loja oficial",
-     "preco": 148.3,
+     "preco": 199.99,
      "vendedor": "Mercado Livre Casa",
      "vendedor_ok": true
     },
@@ -172684,7 +172702,7 @@
     "api": {
      "anuncio": "MLB7376550268",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:50-03:00",
+     "hora": "2026-11-18T21:55-03:00",
      "nivel": "MercadoLíder gold",
      "preco": 96.03,
      "vendedor": "BAZE",
@@ -172704,7 +172722,7 @@
     "api": {
      "anuncio": "MLB5016307553",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:50-03:00",
+     "hora": "2026-11-18T21:55-03:00",
      "nivel": "MercadoLíder gold",
      "preco": 88.0,
      "vendedor": "BAZE",
@@ -172724,7 +172742,7 @@
     "api": {
      "anuncio": "MLB3592409337",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:50-03:00",
+     "hora": "2026-11-18T21:55-03:00",
      "nivel": "MercadoLíder platinum",
      "preco": 129.99,
      "vendedor": "GBOTAFOGOBRINQUEDOSEPRESENTES_",
@@ -172771,7 +172789,7 @@
     "api": {
      "anuncio": "MLB4039873061",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:50-03:00",
+     "hora": "2026-11-18T21:55-03:00",
      "nivel": "loja oficial",
      "preco": 240.61,
      "vendedor": "INTIMES",
@@ -172943,7 +172961,7 @@
     "api": {
      "anuncio": "MLB5390404038",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:50-03:00",
+     "hora": "2026-11-18T21:55-03:00",
      "nivel": "loja oficial",
      "preco": 144.0,
      "vendedor": "BRINKASHOPCOMRCIODEJOGOSE",
@@ -173058,7 +173076,7 @@
     "api": {
      "anuncio": "MLB4085013021",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:50-03:00",
+     "hora": "2026-11-18T21:55-03:00",
      "nivel": "MercadoLíder gold",
      "preco": 104.9,
      "vendedor": "FABRICADAALEGRIA",
@@ -173178,7 +173196,7 @@
     "api": {
      "anuncio": "MLB3990339751",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:50-03:00",
+     "hora": "2026-11-18T21:55-03:00",
      "nivel": "MercadoLíder silver",
      "preco": 429.4,
      "vendedor": "ALPHAJOGOSLTDA",
@@ -173534,7 +173552,7 @@
     "api": {
      "anuncio": "MLB4271362035",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:50-03:00",
+     "hora": "2026-11-18T21:55-03:00",
      "nivel": "MercadoLíder silver",
      "preco": 54.99,
      "vendedor": "LOJA MEDIEVAL",
@@ -173581,7 +173599,7 @@
     "api": {
      "anuncio": "MLB5054966568",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:50-03:00",
+     "hora": "2026-11-18T21:55-03:00",
      "nivel": "loja oficial",
      "preco": 141.4,
      "vendedor": "Mercado Livre Casa",
@@ -173639,7 +173657,7 @@
     "api": {
      "anuncio": "MLB4271464847",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:50-03:00",
+     "hora": "2026-11-18T21:55-03:00",
      "nivel": "MercadoLíder silver",
      "preco": 54.99,
      "vendedor": "LOJA MEDIEVAL",
@@ -173686,7 +173704,7 @@
     "api": {
      "anuncio": "MLB5844542040",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:50-03:00",
+     "hora": "2026-11-18T21:55-03:00",
      "nivel": "MercadoLíder silver",
      "preco": 58.99,
      "vendedor": "LOJA MEDIEVAL",
@@ -173706,7 +173724,7 @@
     "api": {
      "anuncio": "MLB4702565645",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:50-03:00",
+     "hora": "2026-11-18T21:55-03:00",
      "nivel": "loja oficial",
      "preco": 129.9,
      "vendedor": "LEITURATIETEPLAZA",
@@ -173828,7 +173846,7 @@
     "api": {
      "anuncio": "MLB3760870985",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:50-03:00",
+     "hora": "2026-11-18T21:55-03:00",
      "nivel": "MercadoLíder silver",
      "preco": 248.53,
      "vendedor": "LOJA PLACEGAMES",
@@ -174065,7 +174083,7 @@
     "api": {
      "anuncio": "MLB5456627578",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:50-03:00",
+     "hora": "2026-11-18T21:55-03:00",
      "nivel": "MercadoLíder gold",
      "preco": 99.9,
      "vendedor": "MASMORRA_BG",
@@ -174241,7 +174259,7 @@
     "api": {
      "anuncio": "MLB3932809778",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:50-03:00",
+     "hora": "2026-11-18T21:55-03:00",
      "nivel": "MercadoLíder platinum",
      "preco": 64.3,
      "vendedor": "NEWSTATION SOROCABA",
@@ -174595,7 +174613,7 @@
     "api": {
      "anuncio": "MLB7104423268",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:50-03:00",
+     "hora": "2026-11-18T21:55-03:00",
      "nivel": "loja oficial",
      "preco": 479.9,
      "vendedor": "LEITURA SALVADOR_SHOPPING",
@@ -175236,12 +175254,12 @@
   "ofertas": [
    {
     "api": {
-     "anuncio": "MLB3993745417",
+     "anuncio": "MLB5308970202",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:50-03:00",
+     "hora": "2026-11-18T21:55-03:00",
      "nivel": "MercadoLíder silver",
-     "preco": 180.49,
-     "vendedor": "ALPHAJOGOSLTDA",
+     "preco": 178.0,
+     "vendedor": "SHOPPINGBELA",
      "vendedor_ok": true
     },
     "atualizado": "2026-11-17T07:31:50.17+00:00",
@@ -175317,7 +175335,7 @@
     "api": {
      "anuncio": "MLB7013060858",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:50-03:00",
+     "hora": "2026-11-18T21:55-03:00",
      "nivel": "MercadoLíder silver",
      "preco": 385.99,
      "vendedor": "LOJA MEDIEVAL",
@@ -175397,7 +175415,7 @@
     "api": {
      "anuncio": "MLB3249119143",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:50-03:00",
+     "hora": "2026-11-18T21:55-03:00",
      "nivel": "loja oficial",
      "preco": 129.9,
      "vendedor": "TWOHEADGAMES",
@@ -175477,7 +175495,7 @@
     "api": {
      "anuncio": "MLB4408401012",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:50-03:00",
+     "hora": "2026-11-18T21:55-03:00",
      "nivel": "loja oficial",
      "preco": 119.9,
      "vendedor": "TWOHEADGAMES",
@@ -175545,12 +175563,12 @@
   "ofertas": [
    {
     "api": {
-     "anuncio": "MLB3324152203",
+     "anuncio": "MLB3617047410",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:50-03:00",
-     "nivel": "loja oficial",
-     "preco": 275.79,
-     "vendedor": "ILUSOESINDUSTRIAIS",
+     "hora": "2026-11-18T21:55-03:00",
+     "nivel": "MercadoLíder silver",
+     "preco": 266.0,
+     "vendedor": "SHOPPINGBELA",
      "vendedor_ok": true
     },
     "atualizado": "2026-11-17T07:31:56.149+00:00",
@@ -175660,7 +175678,7 @@
     "api": {
      "anuncio": "MLB4031553051",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:50-03:00",
+     "hora": "2026-11-18T21:56-03:00",
      "nivel": "MercadoLíder silver",
      "preco": 600.9,
      "vendedor": "MECA_DOS_JOGOS",
@@ -175776,9 +175794,9 @@
     "api": {
      "anuncio": "MLB3924518104",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:50-03:00",
+     "hora": "2026-11-18T21:56-03:00",
      "nivel": "MercadoLíder silver",
-     "preco": 125.99,
+     "preco": 119.69,
      "vendedor": "SHOPPINGBELA",
      "vendedor_ok": true
     },
@@ -175801,7 +175819,7 @@
     "api": {
      "anuncio": "MLB4518092076",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:50-03:00",
+     "hora": "2026-11-18T21:56-03:00",
      "nivel": "MercadoLíder silver",
      "preco": 148.1,
      "vendedor": "ALPHAJOGOSLTDA",
@@ -175851,12 +175869,12 @@
   "ofertas": [
    {
     "api": {
-     "anuncio": "MLB3696777338",
+     "anuncio": "MLB5316642186",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:50-03:00",
+     "hora": "2026-11-18T21:56-03:00",
      "nivel": "MercadoLíder silver",
-     "preco": 304.85,
-     "vendedor": "ALPHAJOGOSLTDA",
+     "preco": 300.0,
+     "vendedor": "SHOPPINGBELA",
      "vendedor_ok": true
     },
     "atualizado": "2026-11-17T07:31:50.733+00:00",
@@ -175904,7 +175922,7 @@
     "api": {
      "anuncio": "MLB4598925056",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:50-03:00",
+     "hora": "2026-11-18T21:56-03:00",
      "nivel": "MercadoLíder silver",
      "preco": 207.8,
      "vendedor": "MECA_DOS_JOGOS",
@@ -175977,7 +175995,7 @@
     "api": {
      "anuncio": "MLB4686287131",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:50-03:00",
+     "hora": "2026-11-18T21:56-03:00",
      "nivel": "MercadoLíder gold",
      "preco": 137.0,
      "vendedor": "ELFOSECIA",
@@ -176101,7 +176119,7 @@
     "api": {
      "anuncio": "MLB4245164749",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:50-03:00",
+     "hora": "2026-11-18T21:56-03:00",
      "nivel": "MercadoLíder silver",
      "preco": 40.99,
      "vendedor": "LOJA MEDIEVAL",
@@ -176190,7 +176208,7 @@
     "api": {
      "anuncio": "MLB4765227104",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:50-03:00",
+     "hora": "2026-11-18T21:56-03:00",
      "nivel": "loja oficial",
      "preco": 88.51,
      "vendedor": "BRINKASHOPCOMRCIODEJOGOSE",
@@ -176379,7 +176397,7 @@
     "api": {
      "anuncio": "MLB4540308391",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:50-03:00",
+     "hora": "2026-11-18T21:56-03:00",
      "nivel": "loja oficial",
      "preco": 169.0,
      "vendedor": "Mercado Livre Casa",
@@ -176469,7 +176487,7 @@
     "api": {
      "anuncio": "MLB3961858733",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:50-03:00",
+     "hora": "2026-11-18T21:56-03:00",
      "nivel": "loja oficial",
      "preco": 172.0,
      "vendedor": "MERCADOBRINCANTE",
@@ -176623,7 +176641,7 @@
     "api": {
      "anuncio": "MLB4646298167",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:50-03:00",
+     "hora": "2026-11-18T21:56-03:00",
      "nivel": "loja oficial",
      "preco": 205.97,
      "vendedor": "SHARKMAGAZINE",
@@ -177583,7 +177601,7 @@
     "api": {
      "anuncio": "MLB5755189300",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:50-03:00",
+     "hora": "2026-11-18T21:56-03:00",
      "nivel": "MercadoLíder silver",
      "preco": 129.99,
      "vendedor": "LOJA MEDIEVAL",
@@ -178046,7 +178064,7 @@
     "api": {
      "anuncio": "MLB3892817905",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:50-03:00",
+     "hora": "2026-11-18T21:56-03:00",
      "nivel": "MercadoLíder silver",
      "preco": 774.75,
      "vendedor": "MIRAGEMHOBBY",
@@ -178208,7 +178226,7 @@
     "api": {
      "anuncio": "MLB5152631653",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:50-03:00",
+     "hora": "2026-11-18T21:56-03:00",
      "nivel": "MercadoLíder silver",
      "preco": 229.9,
      "vendedor": "SCAZU",
@@ -178299,7 +178317,7 @@
     "api": {
      "anuncio": "MLB6476774882",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:50-03:00",
+     "hora": "2026-11-18T21:56-03:00",
      "nivel": "MercadoLíder silver",
      "preco": 159.99,
      "vendedor": "METROPOLE_GAMES",
@@ -178379,7 +178397,7 @@
     "api": {
      "anuncio": "MLB4515955761",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:50-03:00",
+     "hora": "2026-11-18T21:56-03:00",
      "nivel": "MercadoLíder silver",
      "preco": 241.53,
      "vendedor": "ZIMSTORE",
@@ -178970,7 +178988,7 @@
     "api": {
      "anuncio": "MLB7408107784",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:50-03:00",
+     "hora": "2026-11-18T21:56-03:00",
      "nivel": "loja oficial",
      "preco": 119.9,
      "vendedor": "CLICOU SHOP",
@@ -179127,7 +179145,7 @@
     "api": {
      "anuncio": "MLB4379888117",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:50-03:00",
+     "hora": "2026-11-18T21:56-03:00",
      "nivel": "MercadoLíder silver",
      "preco": 179.95,
      "vendedor": "AZUOSMETALS",
@@ -179613,7 +179631,7 @@
     "api": {
      "anuncio": "MLB4406666001",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:50-03:00",
+     "hora": "2026-11-18T21:56-03:00",
      "nivel": "loja oficial",
      "preco": 251.34,
      "vendedor": "LOJA CUTIM",
@@ -179720,7 +179738,7 @@
     "api": {
      "anuncio": "MLB2974196513",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:50-03:00",
+     "hora": "2026-11-18T21:56-03:00",
      "nivel": "loja oficial",
      "preco": 429.99,
      "vendedor": "LEITURAPARQUEDPEDRO",
@@ -179933,7 +179951,7 @@
     "api": {
      "anuncio": "MLB4150275221",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:50-03:00",
+     "hora": "2026-11-18T21:56-03:00",
      "nivel": "MercadoLíder gold",
      "preco": 64.9,
      "vendedor": "MASMORRA_BG",
@@ -180296,7 +180314,7 @@
     "api": {
      "anuncio": "MLB4375055829",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:50-03:00",
+     "hora": "2026-11-18T21:56-03:00",
      "nivel": "MercadoLíder silver",
      "preco": 519.95,
      "vendedor": "AZUOSMETALS",
@@ -180387,7 +180405,7 @@
     "api": {
      "anuncio": "MLB6928185904",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:50-03:00",
+     "hora": "2026-11-18T21:56-03:00",
      "nivel": "loja oficial",
      "preco": 145.02,
      "vendedor": "Mercado Livre Casa",
@@ -180715,7 +180733,7 @@
     "api": {
      "anuncio": "MLB5865018666",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:50-03:00",
+     "hora": "2026-11-18T21:56-03:00",
      "nivel": "loja oficial",
      "preco": 519.9,
      "vendedor": "LEITURAPATIOSAVASSI",
@@ -181006,7 +181024,7 @@
     "api": {
      "anuncio": "MLB4146549835",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:50-03:00",
+     "hora": "2026-11-18T21:56-03:00",
      "nivel": "loja oficial",
      "preco": 667.48,
      "vendedor": "Mercado Livre Casa",
@@ -181255,7 +181273,7 @@
     "api": {
      "anuncio": "MLB4484066143",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:50-03:00",
+     "hora": "2026-11-18T21:56-03:00",
      "nivel": "MercadoLíder silver",
      "preco": 132.99,
      "vendedor": "LOJA MEDIEVAL",
@@ -182058,7 +182076,7 @@
     "api": {
      "anuncio": "MLB4592921013",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:50-03:00",
+     "hora": "2026-11-18T21:56-03:00",
      "nivel": "MercadoLíder platinum",
      "preco": 873.9,
      "vendedor": "NEWSTATION SOROCABA",
@@ -182231,7 +182249,7 @@
     "api": {
      "anuncio": "MLB4674192375",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-18T19:50-03:00",
+     "hora": "2026-11-18T21:56-03:00",
      "nivel": "loja oficial",
      "preco": 434.29,
      "vendedor": "Mercado Livre Casa",
