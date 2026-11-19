@@ -201,7 +201,7 @@ def lista_indice():
         f = foto(m)
         img = (f'<img src="{e(f["src"])}" alt="" loading="lazy" decoding="async" width="96" height="96">' if f else "")
         itens += (f'<li><a href="{m["slug"]}/"{" class=\"com-foto\"" if f else ""}>{img}<span class="num-l">{e(m["genero"])}</span><b>{e(m["titulo"])}</b><span>{e(m["chamada"])}</span>'
-                  f'<span class="meta-e"><span>{e(m["jogadores"])}</span><span>{e(m["duracao"])}</span><span>{e(m["edicao"])}</span></span></a></li>')
+                  f'<span class="meta-e"><span>{e(m["jogadores"])}</span>{f'<span>{e(m["duracao"])}</span>' if m.get("duracao") else ''}<span>{e(m["edicao"])}</span></span></a></li>')
     s = arq.read_text(encoding="utf-8")
     novo = re.sub(r'(<ul class="lista-t">).*?(</ul>)', lambda x: f"{x.group(1)}\n      {itens}\n    {x.group(2)}", s, count=1, flags=re.S)
     # topo da página: mosaico com as fotos dos três tutoriais mais novos que têm foto

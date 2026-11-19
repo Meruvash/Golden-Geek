@@ -373,7 +373,7 @@ def pagina(meta, md):
     {figura_foto(topo_f, "foto-topo", topo=True) if topo_f else ""}
     <span class="num-l">{e(meta['genero'])}</span>
     <h1>{e(meta['titulo'])}</h1>
-    <p class="meta-e"><span>Para quem nunca jogou</span><span>{e(meta['jogadores'])}</span><span>{e(meta['duracao'])}</span><span>{e(meta['idade'])}</span><span>{e(meta['edicao'])}</span></p>
+    <p class="meta-e"><span>Para quem nunca jogou</span><span>{e(meta['jogadores'])}</span>{''.join(f'<span>{e(meta[k])}</span>' for k in ('duracao', 'idade') if meta.get(k))}<span>{e(meta['edicao'])}</span></p>
     <p class="meta"><time datetime="{d}">{data_longa}</time> · Redação Elite Boardgamers</p>
   </article>
 

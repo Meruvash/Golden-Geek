@@ -3,9 +3,7 @@
  "titulo": "Como jogar Duna: Imperium Uprising",
  "jogo": "Duna: Imperium Uprising",
  "genero": "Construção de baralho · Alocação de trabalhadores",
- "jogadores": "1 a 6 jogadores",
- "duracao": "duração não informada",
- "idade": "idade não informada",
+ "jogadores": "1 a 4 ou 6 jogadores",
  "edicao": "Edição Galápagos (Asmodee)",
  "data": "2026-11-19",
  "descricao": "Aprenda a jogar Duna: Imperium Uprising (Dune: Imperium Uprising): montagem, Agentes, Espiões, vermes da areia, Conflito, Alianças e fim da partida.",
@@ -15,9 +13,9 @@
   "No Turno de Revelar, as cartas guardadas dão Persuasão para adquirir cartas e espadas para o Conflito, onde tropa vale 2, verme da areia vale 3 e o verme dobra a recompensa.",
   "Pontos vêm de Influência, Alianças, Conflitos e pares de ícones de batalha; a partida acaba ao fim da rodada em que alguém faz 10 ou quando o Baralho de Conflito acaba."
  ],
- "leitura_min": 37,
+ "leitura_min": 36,
  "etapas": 5,
  "resenha": null,
  "chamada": "Mande Agentes por Arrakis, infiltre Espiões, convoque vermes da areia e dispute o Conflito de cada rodada. Começa com a mesa montada passo a passo e um resumo para jogar em 5 minutos, e segue em cinco etapas até o fim da partida.",
- "publicar": false
+ "publicar": true
 }
