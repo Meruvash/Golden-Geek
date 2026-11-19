@@ -69,6 +69,180 @@ Dez a zero pro tchími (conflito!)
 O placar a gente imprime, a vitória é sublime
 Desfile lúdico… dez a zero pro… (corte seco e volta ao gancho: loop)
 
+## Auditoria de pronúncia (pt-BR), palavra a palavra (19/11/2026)
+
+Regra: o texto que vai **para a IA de música** usa a grafia da coluna "Escrever para a IA".
+O que aparece **na tela** (legenda, storyboard e vídeo) usa a grafia normal ("time", "Wan", "Lacrônnen", "Elite").
+
+| Palavra | Pronúncia pt-BR | Risco | Escrever para a IA | Observação |
+|---|---|---|---|---|
+| desconstrúcio | des-cons-TRÚ-ssio | ALTO | **Desconstrússio** | saiu 'Visconstruscius' e 'Desconstruço' |
+| elite | e-LÍ-tchi | ALTO | **Elítchi** | a IA leu 'elite' em inglês ('ilít') |
+| lacrônnen | la-CRÔ-nen | ALTO | **Lacrônem** | saiu 'Lacrone' e 'Casa Cone'; o 'nn' duplo confunde |
+| tchími | TCHÍ-mi | ALTO | **timi** | grafia só para o áudio; na tela é 'time' |
+| time | TCHÍ-mi | ALTO | **timi** | em inglês vira 'taim'; com 'i' final a IA canta 'tchími' |
+| wan | UÂN | ALTO | **Uân** | saiu 'Juan', 'o ano', 'Uó', 'Um' |
+| cancelina | can-ce-LI-na | MÉDIO | **Cancelina** | uma vez saiu 'Cancerina': manter, mas cantar separado |
+| embaralha | em-ba-RA-lha | MÉDIO | **embaralha** | saiu 'é baralha': colar com 'não,' |
+| espião | es-pi-ÃO | MÉDIO | **espião** | uma vez saiu 'esquio' |
+| general | je-ne-RAU | MÉDIO | **jeneral** | risco de 'general' em inglês ou espanhol |
+| grisalho | gri-ZA-lho | MÉDIO | **grizalho** | saiu 'Brizalio' e 'Brisalho' |
+| imprime | im-PRI-mi | MÉDIO | **im-prí-mi** | saiu 'deprime' e 'embrinha' |
+| leite | LEI-tchi | MÉDIO | **leitchi** | grudou no 'com'; separar: 'leitchi com pêra' |
+| lúdico | LÚ-di-cu | MÉDIO | **lúdico** | uma vez saiu 'ilúdico': manter a pausa depois de 'Desfile' |
+| neon | NÉ-on | MÉDIO | **néon** | em inglês vira 'ní-on'; saiu 'cabeleiro' |
+| pera | PÊ-ra | MÉDIO | **pêra** | saiu 'leite coopera' e 'Lady compara' |
+| problematrícia | pro-ble-ma-TRÍ-ssia | MÉDIO | **Problematríssia** | saiu 'problema tríceps' |
+| revelou | re-ve-LOU | MÉDIO | **re-ve-lou** | como resposta saiu 'me velou' |
+| a | (padrão) | — | a | pt-BR comum, sem risco |
+| abriu | (padrão) | — | abriu | pt-BR comum, sem risco |
+| ar | (padrão) | — | ar | pt-BR comum, sem risco |
+| cabelo | (padrão) | — | cabelo | pt-BR comum, sem risco |
+| cadeiras | (padrão) | — | cadeiras | pt-BR comum, sem risco |
+| calma | (padrão) | — | calma | pt-BR comum, sem risco |
+| caminho | (padrão) | — | caminho | pt-BR comum, sem risco |
+| cancela | (padrão) | — | cancela | pt-BR comum, sem risco |
+| cancelar | (padrão) | — | cancelar | pt-BR comum, sem risco |
+| capa | (padrão) | — | capa | pt-BR comum, sem risco |
+| carta | (padrão) | — | carta | pt-BR comum, sem risco |
+| casa | (padrão) | — | casa | pt-BR comum, sem risco |
+| celular | ce-lu-LAR | BAIXO | **celular** | ok |
+| chegou | (padrão) | — | chegou | pt-BR comum, sem risco |
+| chão | (padrão) | — | chão | pt-BR comum, sem risco |
+| com | (padrão) | — | com | pt-BR comum, sem risco |
+| comando | (padrão) | — | comando | pt-BR comum, sem risco |
+| conflito | con-FLI-tu | BAIXO | **con-fli-to** | ok |
+| conselho | con-SE-lhu | BAIXO | **Conselho** | ok |
+| contra | (padrão) | — | contra | pt-BR comum, sem risco |
+| de | (padrão) | — | de | pt-BR comum, sem risco |
+| desfile | des-FI-li | BAIXO | **Desfile** | ok |
+| dez | (padrão) | — | dez | pt-BR comum, sem risco |
+| do | (padrão) | — | do | pt-BR comum, sem risco |
+| dois | (padrão) | — | dois | pt-BR comum, sem risco |
+| duna | DU-na | BAIXO | **Duna** | ok |
+| e | (padrão) | — | e | pt-BR comum, sem risco |
+| especiaria | es-pe-si-a-RI-a | BAIXO | **especiaria** | ok |
+| falou | (padrão) | — | falou | pt-BR comum, sem risco |
+| fenomenal | (padrão) | — | fenomenal | pt-BR comum, sem risco |
+| filmou | (padrão) | — | filmou | pt-BR comum, sem risco |
+| flanco | (padrão) | — | flanco | pt-BR comum, sem risco |
+| foi | (padrão) | — | foi | pt-BR comum, sem risco |
+| frio | (padrão) | — | frio | pt-BR comum, sem risco |
+| gancho | (padrão) | — | gancho | pt-BR comum, sem risco |
+| gente | (padrão) | — | gente | pt-BR comum, sem risco |
+| gritou | (padrão) | — | gritou | pt-BR comum, sem risco |
+| intriga | in-TRI-ga | BAIXO | **intriga** | ok |
+| irmão | (padrão) | — | irmão | pt-BR comum, sem risco |
+| joga | (padrão) | — | joga | pt-BR comum, sem risco |
+| jogar | (padrão) | — | jogar | pt-BR comum, sem risco |
+| jogou | (padrão) | — | jogou | pt-BR comum, sem risco |
+| lado | (padrão) | — | lado | pt-BR comum, sem risco |
+| mas | (padrão) | — | mas | pt-BR comum, sem risco |
+| mesa | (padrão) | — | mesa | pt-BR comum, sem risco |
+| mão | (padrão) | — | mão | pt-BR comum, sem risco |
+| na | (padrão) | — | na | pt-BR comum, sem risco |
+| no | (padrão) | — | no | pt-BR comum, sem risco |
+| noite | (padrão) | — | noite | pt-BR comum, sem risco |
+| não | (padrão) | — | não | pt-BR comum, sem risco |
+| o | (padrão) | — | o | pt-BR comum, sem risco |
+| oprime | o-PRI-mi | BAIXO | **oprime** | ok; saiu certo |
+| perdeu | (padrão) | — | perdeu | pt-BR comum, sem risco |
+| placar | (padrão) | — | placar | pt-BR comum, sem risco |
+| ponta-cabeça | PON-ta ca-BE-ssa | BAIXO | **ponta-cabeça** | ok |
+| pontinhos | pon-TCHI-nhus | BAIXO | **pontinhos** | ok |
+| pontos | (padrão) | — | pontos | pt-BR comum, sem risco |
+| porta | (padrão) | — | porta | pt-BR comum, sem risco |
+| pouquinho | (padrão) | — | pouquinho | pt-BR comum, sem risco |
+| preta | (padrão) | — | preta | pt-BR comum, sem risco |
+| primeiro | (padrão) | — | primeiro | pt-BR comum, sem risco |
+| pro | (padrão) | — | pro | pt-BR comum, sem risco |
+| problemático | pro-ble-MÁ-tchi-cu | BAIXO | **problemático** | ok |
+| puxou | (padrão) | — | puxou | pt-BR comum, sem risco |
+| quatro | (padrão) | — | quatro | pt-BR comum, sem risco |
+| realeza | re-a-LE-za | BAIXO | **realeza** | ok |
+| reteté | re-te-TÉ | BAIXO | **reteté** | oxítona: tônica no último 'té' |
+| revela | (padrão) | — | revela | pt-BR comum, sem risco |
+| ronaldo | ho-NAU-du | BAIXO | **Ronaldo** | ok |
+| se | (padrão) | — | se | pt-BR comum, sem risco |
+| seis | (padrão) | — | seis | pt-BR comum, sem risco |
+| sexta | (padrão) | — | sexta | pt-BR comum, sem risco |
+| somando | (padrão) | — | somando | pt-BR comum, sem risco |
+| sombra | (padrão) | — | sombra | pt-BR comum, sem risco |
+| subiu | (padrão) | — | subiu | pt-BR comum, sem risco |
+| sublime | su-BLI-mi | BAIXO | **sublime** | ok |
+| só | (padrão) | — | só | pt-BR comum, sem risco |
+| tabuleiro | ta-bu-LEI-ru | BAIXO | **tabuleiro** | ok |
+| textão | tes-TÃO | BAIXO | **textão** | ok |
+| toda | (padrão) | — | toda | pt-BR comum, sem risco |
+| tremeu | (padrão) | — | tremeu | pt-BR comum, sem risco |
+| trio | (padrão) | — | trio | pt-BR comum, sem risco |
+| três | (padrão) | — | três | pt-BR comum, sem risco |
+| um | (padrão) | — | um | pt-BR comum, sem risco |
+| uma | (padrão) | — | uma | pt-BR comum, sem risco |
+| vai | (padrão) | — | vai | pt-BR comum, sem risco |
+| vamos | (padrão) | — | vamos | pt-BR comum, sem risco |
+| verme | (padrão) | — | verme | pt-BR comum, sem risco |
+| vez | (padrão) | — | vez | pt-BR comum, sem risco |
+| vitor | VÍ-tor | BAIXO | **Vítor** | acento só para a IA marcar a tônica |
+| vitória | (padrão) | — | vitória | pt-BR comum, sem risco |
+| zero | (padrão) | — | zero | pt-BR comum, sem risco |
+| à | (padrão) | — | à | pt-BR comum, sem risco |
+| é | (padrão) | — | é | pt-BR comum, sem risco |
+
+### Letra para a IA (grafia fonética pt-BR)
+
+**[GANCHO]**
+Um a zero pro timi!
+
+**[VERSO 1]**
+Sexta à noite, Duna na mesa, especiaria no ar
+Seis cadeiras, três contra três, o Timi Elítchi vai jogar
+Uân no comando, grizalho do lado, frio de jeneral
+Ronaldo no flanco, Vítor na sombra: trio fenomenal
+
+**[PRÉ-REFRÃO]** (o beat para em cada nome)
+Mas abriu a porta… cabelo néon, celular na mão
+A Casa Lacrônem chegou de textão
+Cancelina! (ô!) Problematríssia! (ô!) Desconstrússio! (ô!)
+(PARADA: o beat corta) …e o Uân só falou: "Revela a mão, irmão."
+
+**[REFRÃO]**
+Um a zero pro timi (re-ve-lou!)
+Um a zero pro timi (con-fli-to!)
+Uân joga a intriga e a mesa toda se oprime
+Desfile… lúdico… um a zero pro timi!
+
+**[PÓS-REFRÃO]**
+Dois a zero pro timi! Timi Elítchi! Con-fli-to!
+
+**[VERSO 2]**
+Cancelina gritou "problemático!" e filmou o tabuleiro
+Problematríssia no textão, perdeu a vez primeiro
+Desconstrússio jogou a carta de ponta-cabeça
+Vítor de capa preta, espião na realeza
+No reteté, Ronaldo foi somando de pouquinho
+Dois pontinhos no Conselho: quatro a zero no caminho
+
+**[PONTE]**
+"Vamos cancelar o Duna!"
+(silêncio)
+"Calma, leitchi com pêra… cancela não… embaralha."
+Uân puxou o gancho… o chão tremeu…
+O verme subiu: seis pontos de uma vez!
+
+**[REFRÃO FINAL]**
+Dez a zero pro timi (re-ve-lou!)
+Dez a zero pro timi (con-fli-to!)
+O placar a gente im-prí-mi, a vitória é sublime
+Desfile… lúdico… dez a zero pro…
+
+### Beat mais próximo do "Desfile Bélico"
+Referência: LEALL com VND, produção de Putodiparis (2021), **142 BPM, lá menor**, meio tempo (71 BPM)
+(fontes: Songdata e Musicstax; o Shazam dá 71 BPM, o meio tempo).
+Sem citar o artista no pedido à IA: trap carioca pesado a 142 BPM em lá menor, meio tempo, 808 grave com slide, melodia
+sombria e curta em loop, chimbal seco e **paradas** em que o beat some e só a voz fica, voltando com tudo no
+"pro timi". A melodia é nossa, não copiamos a original.
+
 ### Placar até os 10 pontos (19/11/2026)
 O Uprising vai a 10 pontos.
 - Refrão 1: 1 × 0.
