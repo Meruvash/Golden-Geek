@@ -36,7 +36,7 @@ Ronaldo no flanco, Lukita na conta: trio fenomenal
 **[PRÉ-REFRÃO: chegam os rivais]** (0:18–0:25)
 Mas abriu a porta… cabelo neon, celular na mão
 Os Leite com Pera chegaram de textão
-Cancelina, Threadson, Lacrélio na missão…
+Cancelina, Problematrícia, Desconstrúcio na missão…
 (o beat corta) …e o Wan só falou: "Rola o dado, irmão."
 
 **[REFRÃO]** (0:25–0:39)
@@ -50,8 +50,8 @@ Ro-lou! Cai-u seis! Ro-lou! Cai-u seis!
 
 **[VERSO 2: a partida]** (0:42–0:56)
 Cancelina gritou "problemático!" e filmou o tabuleiro
-Threadson digitando thread, perdeu a vez primeiro
-Lacrélio gritou "LACROU!" com a carta de cabeça pra baixo
+Problematrícia no textão, perdeu a vez primeiro
+Desconstrúcio desconstruiu a regra, carta de cabeça pra baixo
 Lukita na lousa: "noventa e nove por cento, eu acho"
 Ronaldo no reteté chamando o verme da areia
 Subiu o verme gigante e engoliu a tropa inteira
@@ -76,8 +76,8 @@ aliados (Dire Wolf, diário de design 5). No time da Elite, o Wan é o Comandant
 sem ler o manual. Visual exagerado, com cabelo neon. Identidade não entra na piada (gênero, orientação, raça).
 - **Cancelina:** cabelo azul-piscina, celular sempre gravando. Chama qualquer jogada de "problemático!" e tenta
   cancelar até o dado.
-- **Threadson:** cabelo rosa-chiclete com raspado lateral. Perde a vez porque está escrevendo uma thread sobre a vez dele.
-- **Lacrélio:** coque verde-neon, ecobag e garrafinha. Grita "LACROU!" a cada jogada, mas nunca leu o manual.
+- **Problematrícia:** cabelo rosa-chiclete com raspado lateral. Problematiza cada jogada num textão de 47 tópicos e perde a vez escrevendo.
+- **Desconstrúcio:** coque verde-neon, ecobag e garrafinha. Nunca leu o manual porque "regra é construção social" e joga a carta de cabeça pra baixo.
 
 **Sobre o dado:** o Uprising não usa dado na partida. No clipe, o dado só decide quem começa (o ritual da Elite),
 e a letra continua valendo.
@@ -87,10 +87,10 @@ e a letra continua valendo.
 | 0–9 s | intro, rolo de caixa | Mesa do Uprising montada (foto oficial). Os dois times entram em câmera lenta. Placa "ELITE × LEITE COM PERA · 3 × 3" |
 | 9–12 s | "Um a zero pro time (rolou!)" | O Wan sacode o dado na mão e solta na mesa |
 | 12–15 s | "(caiu seis!)" | O dado cai no 6 com flash. Placar "1 × 0" |
-| 15–19 s | "…e a mesa inteira se oprime" | Cancelina grita "ISSO É OPRESSÃO!" filmando com o celular. Threadson começa a digitar |
+| 15–19 s | "…e a mesa inteira se oprime" | Cancelina grita "ISSO É OPRESSÃO!" filmando com o celular. Problematrícia começa a digitar |
 | 19–22 s | "Desfile lúdico… um a zero pro time!" | Os meeples da Elite marcham em fila. O Lukita faz conta na lousa, o Ronaldo dança o reteté |
-| 22–28 s | refrão 2 | Montagem rápida: o verme de areia engole as tropas dos Leite com Pera. Lacrélio: "LACROU!", e a carta dele cai virada pro lado errado |
-| 28–35 s | refrão 2 (fim) | Threadson ainda digitando ("1/47"). O placar vira para Elite. Os três da Elite fazem pose de capa de disco |
+| 22–28 s | refrão 2 | Montagem rápida: o verme de areia engole as tropas dos Leite com Pera. Desconstrúcio joga a carta de cabeça pra baixo: "regra é construção social" |
+| 28–35 s | refrão 2 (fim) | Problematrícia ainda digitando ("1/47"). O placar vira para Elite. Os três da Elite fazem pose de capa de disco |
 | 35–38 s | o beat para | Cancelina: "Vamos cancelar o Dune!" O Wan, seco: "Cancela não. Embaralha." Logo da Elite |
 
 **Imagem:** mesa e verme de areia com fotos oficiais do Uprising (skill `imagens`). Os personagens são feitos em código.
