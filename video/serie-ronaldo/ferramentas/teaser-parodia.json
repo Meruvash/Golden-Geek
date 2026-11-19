@@ -1,0 +1,118 @@
+{
+ "composicao": "ParodiaStoryboard",
+ "props": {},
+ "pasta": "renders/teaser-parodia",
+ "titulo": "Time Elite × Casa Lacrônnen",
+ "subtitulo": "Storyboard do clipe · paródia Desfile Lúdico · Dune: Imperium – Uprising 3 × 3",
+ "link": "eliteboardgamers.com.br/dune-imperium",
+ "quadros": [
+  {
+   "nome": "01",
+   "rotulo": "Gancho: um a zero pro tchími!",
+   "t": 0.2,
+   "storyboard": true
+  },
+  {
+   "nome": "02",
+   "rotulo": "Sexta à noite, Duna na mesa",
+   "t": 1.2,
+   "storyboard": true
+  },
+  {
+   "nome": "03",
+   "rotulo": "3 × 3",
+   "t": 2.2,
+   "storyboard": true
+  },
+  {
+   "nome": "04",
+   "rotulo": "Wan, o Comandante",
+   "t": 3.2,
+   "storyboard": true
+  },
+  {
+   "nome": "05",
+   "rotulo": "Ronaldo no flanco, Lukita na conta",
+   "t": 4.2,
+   "storyboard": false
+  },
+  {
+   "nome": "06",
+   "rotulo": "A Casa Lacrônnen chega",
+   "t": 5.2,
+   "storyboard": true
+  },
+  {
+   "nome": "07",
+   "rotulo": "Cancelina!",
+   "t": 6.2,
+   "storyboard": true
+  },
+  {
+   "nome": "08",
+   "rotulo": "Problematrícia!",
+   "t": 7.2,
+   "storyboard": true
+  },
+  {
+   "nome": "09",
+   "rotulo": "Desconstrúcio!",
+   "t": 8.2,
+   "storyboard": true
+  },
+  {
+   "nome": "10",
+   "rotulo": "\"Rola o dado, irmão\"",
+   "t": 9.2,
+   "storyboard": false
+  },
+  {
+   "nome": "11",
+   "rotulo": "Refrão: rolou!",
+   "t": 10.2,
+   "storyboard": true
+  },
+  {
+   "nome": "12",
+   "rotulo": "Caiu seis! 1 × 0",
+   "t": 11.2,
+   "storyboard": true
+  },
+  {
+   "nome": "13",
+   "rotulo": "\"Isso é opressão!\"",
+   "t": 12.2,
+   "storyboard": true
+  },
+  {
+   "nome": "14",
+   "rotulo": "Time Elite! (grito)",
+   "t": 13.2,
+   "storyboard": true
+  },
+  {
+   "nome": "15",
+   "rotulo": "Textão e carta de ponta-cabeça",
+   "t": 14.2,
+   "storyboard": true
+  },
+  {
+   "nome": "16",
+   "rotulo": "O verme engole a Casa",
+   "t": 15.2,
+   "storyboard": true
+  },
+  {
+   "nome": "17",
+   "rotulo": "Ponte: cancela não, embaralha",
+   "t": 16.2,
+   "storyboard": true
+  },
+  {
+   "nome": "18",
+   "rotulo": "Final 1 × 0 e loop",
+   "t": 17.2,
+   "storyboard": true
+  }
+ ]
+}

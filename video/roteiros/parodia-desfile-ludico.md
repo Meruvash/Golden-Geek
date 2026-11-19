@@ -29,7 +29,7 @@ Um a zero pro tchími!
 
 **[VERSO 1: a mesa]** (0:04–0:18 · flow de rap)
 Sexta à noite, Duna na mesa, especiaria no ar
-Seis cadeiras, três contra três, ninguém vai amarelar
+Seis cadeiras, três contra três, o Time Elite vai jogar
 Wan no comando, grisalho do lado, frio de general
 Ronaldo no flanco, Lukita na conta: trio fenomenal
 
@@ -45,8 +45,8 @@ Um a zero pro tchími (caiu seis!)
 Wan joga o dado, a mesa toda se oprime
 Desfile lúdico… um a zero pro tchími!
 
-**[PÓS-REFRÃO: grito]** (0:39–0:42)
-Ro-lou! Cai-u seis! Ro-lou! Cai-u seis!
+**[PÓS-REFRÃO: grito da torcida]** (0:39–0:42)
+Time Elite! Ro-lou! Time Elite! Cai-u seis!
 
 **[VERSO 2: a partida]** (0:42–0:56)
 Cancelina gritou "problemático!" e filmou o tabuleiro

@@ -1,0 +1,15 @@
+{
+ "jogo": "Dune: Imperium – Uprising",
+ "credito": "Imagem: Dire Wolf",
+ "pagina": "https://direwolfdigital.com/dune-imperium-uprising/",
+ "baixadas_em": "2026-11-19",
+ "imagens": [
+  {"arquivo": "mesa.png", "origem": "https://d19y2ttatozxjp.cloudfront.net/assets/dune/uprising_board.webp"},
+  {"arquivo": "caixa.png", "origem": "https://d19y2ttatozxjp.cloudfront.net/assets/dune/uprising_box.webp"},
+  {"arquivo": "cartas.png", "origem": "https://d19y2ttatozxjp.cloudfront.net/assets/dune/uprising_cardspread_3.png"},
+  {"arquivo": "seis-jogadores.png", "origem": "https://d19y2ttatozxjp.cloudfront.net/assets/dune/uprising_6player.webp", "nota": "tem o letreiro 'Includes new six-player mode!'"},
+  {"arquivo": "lideres-e-verme.png", "origem": "https://d19y2ttatozxjp.cloudfront.net/assets/dune/uprising_Leadrcards_mini_4.webp"},
+  {"arquivo": "verme.png", "origem": "recorte de uprising_Leadrcards_mini_4.webp (miniatura do verme de areia)"}
+ ],
+ "nao_usada": "uprising_topillustration_2.webp: arte com a semelhança de uma atriz do filme"
+}
