@@ -27,22 +27,22 @@ Pronúncia: **"time" se canta "tchími"** (rima com "crime"). Para a IA, escreve
 **[GANCHO FRIO]** (0:00–0:04 · a cappella, eco, o dado quica)
 Um a zero pro tchími!
 
-**[VERSO 1: a mesa]** (0:04–0:18)
+**[VERSO 1: a mesa]** (0:04–0:18 · flow de rap)
 Sexta à noite, Duna na mesa, especiaria no ar
 Seis cadeiras, três contra três, ninguém vai amarelar
-Comandante é o Wan, grisalho do lado, frieza de general
+Wan no comando, grisalho do lado, frio de general
 Ronaldo no flanco, Lukita na conta: trio fenomenal
 
-**[PRÉ-REFRÃO: chegam os rivais]** (0:18–0:25)
+**[PRÉ-REFRÃO: chegam os rivais]** (0:18–0:25 · sobe a tensão, chamada de apresentação)
 Mas abriu a porta… cabelo neon, celular na mão
-Os Leite com Pera chegaram de textão
-Cancelina, Problematrícia, Desconstrúcio na missão…
+A Casa Lacrônnen chegou de textão
+Cancelina! (ô!) Problematrícia! (ô!) Desconstrúcio! (ô!)
 (o beat corta) …e o Wan só falou: "Rola o dado, irmão."
 
 **[REFRÃO]** (0:25–0:39)
 Um a zero pro tchími (rolou!)
 Um a zero pro tchími (caiu seis!)
-O Wan joga o dado e a mesa inteira se oprime
+Wan joga o dado, a mesa toda se oprime
 Desfile lúdico… um a zero pro tchími!
 
 **[PÓS-REFRÃO: grito]** (0:39–0:42)
@@ -51,15 +51,15 @@ Ro-lou! Cai-u seis! Ro-lou! Cai-u seis!
 **[VERSO 2: a partida]** (0:42–0:56)
 Cancelina gritou "problemático!" e filmou o tabuleiro
 Problematrícia no textão, perdeu a vez primeiro
-Desconstrúcio desconstruiu a regra, carta de cabeça pra baixo
-Lukita na lousa: "noventa e nove por cento, eu acho"
+Desconstrúcio jogou a carta de ponta-cabeça
+Lukita na lousa: "noventa e nove vírgula nove, certeza"
 Ronaldo no reteté chamando o verme da areia
-Subiu o verme gigante e engoliu a tropa inteira
+O verme subiu gigante e engoliu a Casa inteira
 
 **[PONTE: câmera lenta]** (0:56–1:03)
 "Vamos cancelar o Duna!"
 (silêncio de um tempo)
-Wan: "Cancela não… embaralha."
+Wan: "Calma, leite com pera… cancela não, embaralha."
 
 **[REFRÃO FINAL]** (1:03–1:15)
 Um a zero pro tchími (rolou!)
@@ -67,12 +67,23 @@ Um a zero pro tchími (caiu seis!)
 O placar a gente imprime, a vitória é sublime
 Desfile lúdico… um a zero pro… (corte seco e volta ao gancho: loop)
 
+### Auditoria (19/11/2026)
+1. "Comandante é o Wan…" tinha 19 sílabas → "Wan no comando, grisalho do lado, frio de general" (15).
+2. Os três nomes numa linha travavam a língua → chamada de apresentação, um nome por tempo, com "(ô!)".
+3. "inteira" embolou na IA → "a mesa toda".
+4. "Wan" saiu "Um", "An" e "Caíque" → escrever "Uã" no texto da IA.
+5. "Desconstrúcio desconstruiu…" (19 sílabas) → "jogou a carta de ponta-cabeça". "Regra é construção social" vira fala no clipe.
+6. "eu acho" contradizia o Lukita → "noventa e nove vírgula nove, certeza".
+7. O verme engole "a Casa inteira", amarrando com a Casa Lacrônnen.
+8. Na ponte, o Wan chama a Casa de "leite com pera".
+9. Grafia para a IA: timi (tchími), Uã (Wan), Lacrônen.
+
 ## Clipe: "Um a zero pro time" (roteiro para aprovação)
 
 **A partida:** Dune: Imperium – Uprising no modo de 6 jogadores, 3 contra 3. Cada time tem um Comandante e dois
 aliados (Dire Wolf, diário de design 5). No time da Elite, o Wan é o Comandante, com o Ronaldo e o Lukita.
 
-**Os rivais: os Leite com Pera.** A piada é a atitude lacradora: cancela tudo, textão no meio da partida, "lacrou!"
+**Os rivais: a Casa Lacrônnen (apelido: "leite com pera").** A piada é a atitude lacradora: cancela tudo, textão no meio da partida, "lacrou!"
 sem ler o manual. Visual exagerado, com cabelo neon. Identidade não entra na piada (gênero, orientação, raça).
 - **Cancelina:** cabelo azul-piscina, celular sempre gravando. Chama qualquer jogada de "problemático!" e tenta
   cancelar até o dado.
@@ -84,7 +95,7 @@ e a letra continua valendo.
 
 | Tempo | Música | Cena |
 |---|---|---|
-| 0–9 s | intro, rolo de caixa | Mesa do Uprising montada (foto oficial). Os dois times entram em câmera lenta. Placa "ELITE × LEITE COM PERA · 3 × 3" |
+| 0–9 s | intro, rolo de caixa | Mesa do Uprising montada (foto oficial). Os dois times entram em câmera lenta. Placa "ELITE × CASA LACRÔNNEN · 3 × 3" |
 | 9–12 s | "Um a zero pro time (rolou!)" | O Wan sacode o dado na mão e solta na mesa |
 | 12–15 s | "(caiu seis!)" | O dado cai no 6 com flash. Placar "1 × 0" |
 | 15–19 s | "…e a mesa inteira se oprime" | Cancelina grita "ISSO É OPRESSÃO!" filmando com o celular. Problematrícia começa a digitar |
