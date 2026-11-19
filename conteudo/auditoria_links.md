@@ -1,33 +1,33 @@
-# Auditoria de links — 2026-11-18T18:26-03:00
+# Auditoria de links — 2026-11-19T05:27-03:00
 
 Gerado por `tools/auditoria_links.py` (robô com User-Agent próprio, 1 pedido a cada 2 s por domínio, robots.txt respeitado). Links de oferta com ERRO saem do /black/ na próxima geração da página.
 
-**Ofertas no /black/:** 171 links, 117 certos, 0 com erro, 54 não verificáveis.
+**Ofertas no /black/:** 180 links, 117 certos, 1 com erro, 62 não verificáveis.
 
 ## Por tipo de link
 
 | Tipo | ok | ERRO | não verificável | não conferido |
 |---|---|---|---|---|
-| oferta | 87 | 2 | 49 | 0 |
-| oferta (mais lojas) | 30 | 0 | 5 | 0 |
-| achado | 4 | 0 | 21 | 0 |
+| oferta | 88 | 2 | 57 | 0 |
+| oferta (mais lojas) | 29 | 1 | 5 | 0 |
+| achado | 15 | 0 | 10 | 0 |
 | cupom | 3 | 0 | 1 | 0 |
-| loja | 69 | 4 | 10 | 0 |
-| preço | 43 | 0 | 100 | 0 |
+| loja | 72 | 2 | 9 | 0 |
+| preço | 39 | 1 | 103 | 0 |
 | outro | 0 | 0 | 0 | 1653 |
 
 ## Por loja (links conferidos)
 
 | Domínio | ok | ERRO | não verificável |
 |---|---|---|---|
-| comparajogos.com.br | 43 | 0 | 100 |
-| placegames.com.br | 39 | 3 | 0 |
-| mercadolivre.com.br | 0 | 0 | 38 |
+| comparajogos.com.br | 39 | 1 | 103 |
+| mercadolivre.com.br | 0 | 0 | 47 |
+| placegames.com.br | 40 | 2 | 0 |
 | bravojogos.com.br | 23 | 0 | 0 |
 | alquimistasdosjogos.com.br | 20 | 0 | 0 |
 | omniverse.com.br | 0 | 0 | 19 |
 | caixinhaboardgames.com.br | 17 | 1 | 0 |
-| amazon.com.br | 0 | 1 | 13 |
+| amazon.com.br | 13 | 1 | 0 |
 | mecadosjogos.com.br | 13 | 0 | 0 |
 | facilshopping.com.br | 9 | 0 | 0 |
 | tabuloja.com | 9 | 0 | 0 |
@@ -61,16 +61,15 @@ Gerado por `tools/auditoria_links.py` (robô com User-Agent próprio, 1 pedido a
 ## Erros (6)
 
 - **oferta** — Ticket to Ride: Alemanha: <https://www.caixinhaboardgames.com.br/produtos/ticket-to-ride-alemanha-pre-venda-rh596/> ((fora do site: retirada do /black/ pela auditoria)) — página não existe (404)
-- **oferta** — FateFlip: Decretos Reais: <https://www.placegames.com.br/boardgames/fateflip-decretos-reais> ((fora do site: retirada do /black/ pela auditoria)) — página sem sinal de produto (sem JSON-LD Product/Offer, og:type product nem preço e botão de compra)
+- **oferta** — FateFlip: Decretos Reais: <https://www.placegames.com.br/boardgames/fateflip-decretos-reais> ((fora do site: retirada do /black/ pela auditoria)) — página de outro jogo (cartão: “FateFlip: Decretos Reais”; página: “Produto não encontrado - Place Games | Loja de Board Games - Locadora de Jogos | Produto não encontrado - Place Games | ”)
+- **oferta (mais lojas)** — Draftosaurus: Marina e Show Aéreo: <https://www.placegames.com.br/draftosaurus-marina-e-show-aereo> (/black/) — página de outro jogo (cartão: “Draftosaurus: Marina e Show Aéreo”; página: “Produto não encontrado - Place Games | Loja de Board Games - Locadora de Jogos | Produto não encontrado - Place Games | ”)
 - **loja**: <https://www.amazon.com.br/s?k=mysterium+kids> (/mysterium-kids/) — link é de busca ou categoria, não da página do produto
-- **loja**: <https://www.placegames.com.br/the-mind> (/the-mind/) — página sem sinal de produto (sem JSON-LD Product/Offer, og:type product nem preço e botão de compra)
-- **loja**: <https://www.placegames.com.br/themind> (/the-mind/) — página sem sinal de produto (sem JSON-LD Product/Offer, og:type product nem preço e botão de compra)
+- **preço**: <https://www.comparajogos.com.br/item/clash-royale-the-grand-arena> (/noticias/clash-royale-the-grand-arena-kickstarter/) — página não existe (404)
 - **loja**: <https://www.tavernareal.com/tabuleiro/luz-final-edicao-deluxe> (/last-light/) — página sem sinal de produto (sem JSON-LD Product/Offer, og:type product nem preço e botão de compra)
 
-## Não verificáveis (186)
+## Não verificáveis (185)
 
 - **oferta** — Citadels: <https://loja.frodosbg.com.br/citadels-2nd-edicao-revisada> (/black/) — robots.txt respondeu 403 (bloqueio)
-- **oferta** — Arkham Horror: Hora Final: <https://www.amazon.com.br/dp/B07VZ7YR63> (/black/) — a loja pede verificação anti-robô (captcha)
 - **oferta** — [dp6]: <https://www.animusludere.com.br/dp6> (/black/) — robots.txt respondeu 403 (bloqueio)
 - **oferta (mais lojas)** — Destemidos: Reforços: <https://www.boardgamebarato.com.br/destemidos-reforcos> (/black/) — robots.txt respondeu 403 (bloqueio)
 - **oferta** — Trolls & Princesas: <https://www.boardgamebarato.com.br/trolls-e-princesas> (/black/) — robots.txt respondeu 403 (bloqueio)
@@ -81,6 +80,7 @@ Gerado por `tools/auditoria_links.py` (robô com User-Agent próprio, 1 pedido a
 - **oferta (mais lojas)** — Neuroshima Hex: Battle: <https://www.leaolivros.com.br/neuroshima-hex-battle-policia-de-aco-vs-fera> (/black/) — robots.txt respondeu 403 (bloqueio)
 - **oferta** — SizeUp: <https://www.leaolivros.com.br/sizeup> (/black/) — robots.txt respondeu 403 (bloqueio)
 - **oferta** — UNO Flip!: <https://www.mercadolivre.com.br/p/MLB16092602?pdp_filters=item_id:MLB5573812647> (/black/) — robots.txt proíbe robôs nesta página
+- **oferta** — Hamburgueria Maluca: <https://www.mercadolivre.com.br/p/MLB19307754?pdp_filters=item_id:MLB5270210746> (/black/) — robots.txt proíbe robôs nesta página
 - **oferta** — Imagem & Ação Júnior: <https://www.mercadolivre.com.br/p/MLB19492018?pdp_filters=item_id:MLB3625532207> (/black/) — robots.txt proíbe robôs nesta página
 - **oferta** — Cilada: <https://www.mercadolivre.com.br/p/MLB19525478?pdp_filters=item_id:MLB4304112336> (/black/) — robots.txt proíbe robôs nesta página
 - **oferta** — War: Game of Thrones: <https://www.mercadolivre.com.br/p/MLB19709546?pdp_filters=item_id:MLB3961858733> (/black/) — robots.txt proíbe robôs nesta página
@@ -94,24 +94,32 @@ Gerado por `tools/auditoria_links.py` (robô com User-Agent próprio, 1 pedido a
 - **oferta** — Mixtapes: <https://www.mercadolivre.com.br/p/MLB21702939?pdp_filters=item_id:MLB6501179920> (/black/) — robots.txt proíbe robôs nesta página
 - **oferta** — O Senhor dos Anéis: Card Game (Revised Core Set): <https://www.mercadolivre.com.br/p/MLB22531167?pdp_filters=item_id:MLB5509623123> (/black/) — robots.txt proíbe robôs nesta página
 - **oferta** — Perfil Express: Filmes e Séries: <https://www.mercadolivre.com.br/p/MLB22659012?pdp_filters=item_id:MLB4647459246> (/black/) — robots.txt proíbe robôs nesta página
+- **oferta** — Azul: Mestre Chocolatier: <https://www.mercadolivre.com.br/p/MLB22659013?pdp_filters=item_id:MLB5316899340> (/black/) — robots.txt proíbe robôs nesta página
 - **oferta** — A Iniciativa: <https://www.mercadolivre.com.br/p/MLB22709368?pdp_filters=item_id:MLB5652240400> (/black/) — robots.txt proíbe robôs nesta página
 - **oferta** — Pandemic: <https://www.mercadolivre.com.br/p/MLB22813201?pdp_filters=item_id:MLB4186308332> (/black/) — robots.txt proíbe robôs nesta página
 - **oferta** — Palpite Certo: <https://www.mercadolivre.com.br/p/MLB23425290?pdp_filters=item_id:MLB3625614489> (/black/) — robots.txt proíbe robôs nesta página
 - **oferta** — Cai-Não-Cai: <https://www.mercadolivre.com.br/p/MLB25811837?pdp_filters=item_id:MLB4598515657> (/black/) — robots.txt proíbe robôs nesta página
 - **oferta (mais lojas)** — Sleeping Gods: Dungeons: <https://www.mercadolivre.com.br/p/MLB26098574?pdp_filters=item_id:MLB3913887582> (/black/) — robots.txt proíbe robôs nesta página
+- **oferta** — Hungry Hungry Hippos Grab & Go: <https://www.mercadolivre.com.br/p/MLB34102404?pdp_filters=item_id:MLB3741193397> (/black/) — robots.txt proíbe robôs nesta página
 - **oferta** — Uno Flex!: <https://www.mercadolivre.com.br/p/MLB35742049?pdp_filters=item_id:MLB5337457588> (/black/) — robots.txt proíbe robôs nesta página
 - **oferta** — Revanche: <https://www.mercadolivre.com.br/p/MLB38492802?pdp_filters=item_id:MLB7417796102> (/black/) — robots.txt proíbe robôs nesta página
 - **oferta** — Perfil 7: <https://www.mercadolivre.com.br/p/MLB40442410?pdp_filters=item_id:MLB5210816888> (/black/) — robots.txt proíbe robôs nesta página
 - **oferta** — Altered: <https://www.mercadolivre.com.br/p/MLB46130463?pdp_filters=item_id:MLB5950448084> (/black/) — robots.txt proíbe robôs nesta página
 - **oferta** — Candy Land: <https://www.mercadolivre.com.br/p/MLB47329717?pdp_filters=item_id:MLB4555736081> (/black/) — robots.txt proíbe robôs nesta página
 - **oferta** — Trava Letras: <https://www.mercadolivre.com.br/p/MLB48880144?pdp_filters=item_id:MLB4170926219> (/black/) — robots.txt proíbe robôs nesta página
+- **oferta** — Frosthaven: Removable Sticker Set: <https://www.mercadolivre.com.br/p/MLB51856173?pdp_filters=item_id:MLB6842706238> (/black/) — robots.txt proíbe robôs nesta página
 - **oferta** — Tapalavras: <https://www.mercadolivre.com.br/p/MLB59487551?pdp_filters=item_id:MLB4503565085> (/black/) — robots.txt proíbe robôs nesta página
+- **oferta** — Escape the Dark Castle: <https://www.mercadolivre.com.br/p/MLB60380201?pdp_filters=item_id:MLB4267191591> (/black/) — robots.txt proíbe robôs nesta página
+- **oferta** — Brick Like This!: <https://www.mercadolivre.com.br/p/MLB61958534?pdp_filters=item_id:MLB4814277861> (/black/) — robots.txt proíbe robôs nesta página
 - **oferta** — Liar's UNO: <https://www.mercadolivre.com.br/p/MLB62548317?pdp_filters=item_id:MLB6293749138> (/black/) — robots.txt proíbe robôs nesta página
 - **oferta** — Piratas!: <https://www.mercadolivre.com.br/p/MLB62626958?pdp_filters=item_id:MLB6755686978> (/black/) — robots.txt proíbe robôs nesta página
 - **oferta** — Antiques: <https://www.mercadolivre.com.br/p/MLB62648581> (/black/) — robots.txt proíbe robôs nesta página
+- **oferta** — Splendor Duel: <https://www.mercadolivre.com.br/p/MLB66225481?pdp_filters=item_id:MLB4581172521> (/black/) — robots.txt proíbe robôs nesta página
+- **oferta** — Tiny Epic Cthulhu: Cult of Chaos: <https://www.mercadolivre.com.br/p/MLB67817802?pdp_filters=item_id:MLB4657844121> (/black/) — robots.txt proíbe robôs nesta página
+- **oferta** — MicroMacro: Kids: Crazy City Park: <https://www.mercadolivre.com.br/p/MLB68344892?pdp_filters=item_id:MLB6716271352> (/black/) — robots.txt proíbe robôs nesta página
 - **oferta** — UNO Flip Attack: <https://www.mercadolivre.com.br/p/MLB70580092?pdp_filters=item_id:MLB6901090112> (/black/) — robots.txt proíbe robôs nesta página
 - **oferta** — Imagem & Ação: <https://www.mercadolivre.com.br/p/MLB8857424?pdp_filters=item_id:MLB4195144346> (/black/) — robots.txt proíbe robôs nesta página
-- **oferta** — Buckaroo!: <https://www.mercadolivre.com.br/p/MLB8950241?pdp_filters=item_id:MLB3491700275> (/black/) — robots.txt proíbe robôs nesta página
+- **oferta** — Buckaroo!: <https://www.mercadolivre.com.br/p/MLB8950241?pdp_filters=item_id:MLB4043512373> (/black/) — robots.txt proíbe robôs nesta página
 - **oferta** — Tapa Certo: <https://www.mercadolivre.com.br/p/MLB9228977?pdp_filters=item_id:MLB3544942779> (/black/) — robots.txt proíbe robôs nesta página
 - **oferta** — Captain Flip: <https://www.omniverse.com.br/captain-flip> (/black/) — robots.txt respondeu 403 (bloqueio)
 - **oferta** — Código Secreto: Dueto: <https://www.omniverse.com.br/codigo-secreto-dueto-nova-edicao> (/black/) — robots.txt respondeu 403 (bloqueio)
@@ -123,43 +131,34 @@ Gerado por `tools/auditoria_links.py` (robô com User-Agent próprio, 1 pedido a
 - **oferta** — The Red Cathedral: <https://www.omniverse.com.br/produto/red-cathedral> (/black/) — robots.txt respondeu 403 (bloqueio)
 - **oferta** — Regicide: <https://www.omniverse.com.br/produto/regicide> (/black/) — robots.txt respondeu 403 (bloqueio)
 - **oferta** — Quem disse isso?: <https://www.omniverse.com.br/quem-disse-isso> (/black/) — robots.txt respondeu 403 (bloqueio)
-- **loja**: <https://www.amazon.com.br/RU%C3%8DNAS-PERDIDAS-DE-ARNAK-Devir/dp/B095B9F657> (/arnak/) — a loja pede verificação anti-robô (captcha)
-- **achado**: <https://www.amazon.com.br/dp/B01ESCRB98> (/black/) — a loja pede verificação anti-robô (captcha)
-- **achado**: <https://www.amazon.com.br/dp/B0789QHT4P> (/black/) — a loja pede verificação anti-robô (captcha)
-- **achado**: <https://www.amazon.com.br/dp/B07CSFZD5D> (/black/) — a loja pede verificação anti-robô (captcha)
-- **achado**: <https://www.amazon.com.br/dp/B08TR93MS9> (/black/) — a loja pede verificação anti-robô (captcha)
-- **achado**: <https://www.amazon.com.br/dp/B09Q5H5JD7> (/black/) — a loja pede verificação anti-robô (captcha)
-- **achado**: <https://www.amazon.com.br/dp/B0BBSHZFLB> (/black/) — a loja pede verificação anti-robô (captcha)
-- **achado**: <https://www.amazon.com.br/dp/B0CFS3GZFL> (/black/) — a loja pede verificação anti-robô (captcha)
-- **achado**: <https://www.amazon.com.br/dp/B0CZBLHMXD> (/black/) — a loja pede verificação anti-robô (captcha)
-- **achado**: <https://www.amazon.com.br/dp/B0DYLK1FLB> (/black/) — a loja pede verificação anti-robô (captcha)
-- **achado**: <https://www.amazon.com.br/dp/B0FSG5BB5D> (/black/) — a loja pede verificação anti-robô (captcha)
-- **achado**: <https://www.amazon.com.br/dp/B0G61BQTXW> (/black/) — a loja pede verificação anti-robô (captcha)
 - **preço**: <https://www.comparajogos.com.br/item/abalone> (/noticias/abalone-minimundos-25-de-marco-meeplestarter/) — a loja bloqueia robôs (429)
 - **preço**: <https://www.comparajogos.com.br/item/alebrijes> (/noticias/ruins-alebrijes-protocolo-scintilla-outubro/) — sem resposta (ConnectTimeout)
 - **preço**: <https://www.comparajogos.com.br/item/an-infamous-traffic> (/noticias/an-infamous-traffic-cole-wehrle-fecha-kickstarter/) — a loja bloqueia robôs (429)
-- **preço**: <https://www.comparajogos.com.br/item/arcadia-quest> (/noticias/fable-quest-arcadia-quest-cooperativo-gamefound/) — a loja bloqueia robôs (429)
-- **preço**: <https://www.comparajogos.com.br/item/arkham-horror-3a-edicao> (/noticias/arkham-horror-remastered-fecha-gamefound-5-milhoes/, /noticias/arkham-horror-remastered-gamefound/) — a loja bloqueia robôs (429)
+- **preço**: <https://www.comparajogos.com.br/item/arcadia-quest> (/noticias/fable-quest-arcadia-quest-cooperativo-gamefound/) — sem resposta (ReadTimeout)
+- **preço**: <https://www.comparajogos.com.br/item/arkham-horror> (/noticias/arkham-horror-remastered-fecha-gamefound-5-milhoes/, /noticias/arkham-horror-remastered-gamefound/) — a loja bloqueia robôs (429)
 - **preço**: <https://www.comparajogos.com.br/item/as-ruinas-perdidas-de-arnak-caminhos-tortuosos> (/noticias/arnak-caminhos-tortuosos-e-gaudi-ganham-preco/) — a loja bloqueia robôs (429)
-- **preço**: <https://www.comparajogos.com.br/item/azul-kids> (/noticias/galapagos-azul-kids-caper-europe-nas-lojas/) — sem resposta (ReadTimeout)
+- **preço**: <https://www.comparajogos.com.br/item/azul-kids> (/noticias/galapagos-azul-kids-caper-europe-nas-lojas/) — sem resposta (ConnectTimeout)
 - **preço**: <https://www.comparajogos.com.br/item/bang-dice-explosion> (/noticias/harmonies-crescendo-e-bang-dice-explosion-ganham-preco/) — sem resposta (ConnectTimeout)
 - **preço**: <https://www.comparajogos.com.br/item/biddle> (/noticias/meeplebr-lanca-valheim-thesauros-biddle/) — sem resposta (ConnectTimeout)
 - **preço**: <https://www.comparajogos.com.br/item/blind-jack> (/noticias/grok-propolis-colegas-blind-jack-em-breve/) — sem resposta (ConnectTimeout)
 - **preço**: <https://www.comparajogos.com.br/item/call-to-adventure-the-stormlight-archive> (/noticias/stormlight-war-for-roshar-kickstarter/) — sem resposta (ConnectTimeout)
-- **preço**: <https://www.comparajogos.com.br/item/caper-europe> (/noticias/galapagos-azul-kids-caper-europe-nas-lojas/) — a loja bloqueia robôs (429)
+- **preço**: <https://www.comparajogos.com.br/item/caper-europe> (/noticias/galapagos-azul-kids-caper-europe-nas-lojas/) — sem resposta (ConnectTimeout)
 - **preço**: <https://www.comparajogos.com.br/item/carcassonne-labyrinth> (/noticias/carcassonne-labyrinth-chega-aos-eua/) — a loja bloqueia robôs (429)
 - **preço**: <https://www.comparajogos.com.br/item/chaos-in-the-old-world> (/noticias/restoration-games-workshop-refaz-chaos-in-the-old-world/) — sem resposta (ConnectTimeout)
-- **preço**: <https://www.comparajogos.com.br/item/clash-royale-the-grand-arena> (/noticias/clash-royale-the-grand-arena-kickstarter/) — a loja bloqueia robôs (429)
 - **preço**: <https://www.comparajogos.com.br/item/coffee-rush> (/noticias/coffee-rush-inverno-anunciado-asmodee/) — a loja bloqueia robôs (429)
 - **preço**: <https://www.comparajogos.com.br/item/coffee-rush-grab-go> (/noticias/galapagos-azul-kids-caper-europe-nas-lojas/) — sem resposta (ConnectTimeout)
+- **preço**: <https://www.comparajogos.com.br/item/coffee-rush-inverno> (/noticias/coffee-rush-inverno-anunciado-asmodee/, /noticias/coffee-rush-inverno-harmonies-crescendo-pre-venda/) — a loja bloqueia robôs (429)
 - **preço**: <https://www.comparajogos.com.br/item/cosmic-encounter> (/noticias/jack-kittredge-cosmic-encounter-morre-aos-82/) — sem resposta (ConnectTimeout)
 - **preço**: <https://www.comparajogos.com.br/item/cubaneo> (/noticias/ludofun-cubaneo-innovation-ultimate-em-breve/) — sem resposta (ConnectTimeout)
+- **preço**: <https://www.comparajogos.com.br/item/cubyria-architects-of-a-lost-city> (/noticias/cubyria-architects-of-a-lost-city-kickstarter/) — a loja bloqueia robôs (429)
 - **preço**: <https://www.comparajogos.com.br/item/dc-super-heroes-united> (/noticias/devir-dc-super-heroes-united-e-one-round/) — a loja bloqueia robôs (429)
 - **preço**: <https://www.comparajogos.com.br/item/destemidos-batalha-da-gra-bretanha> (/undaunted-battle-of-britain/) — sem resposta (ConnectTimeout)
 - **preço**: <https://www.comparajogos.com.br/item/dice-throne> (/noticias/dice-throne-asmodee-europa-tres-acordos/) — a loja bloqueia robôs (429)
-- **preço**: <https://www.comparajogos.com.br/item/dice-throne-season-one-rerolled-monk-v-paladin> (/noticias/dice-throne-nexus-kickstarter-2-milhoes/) — a loja bloqueia robôs (429)
+- **preço**: <https://www.comparajogos.com.br/item/earthborne-rangers> (/noticias/dezembro-earthborne-rangers-santorini-agent-avenue/) — a loja bloqueia robôs (429)
+- **preço**: <https://www.comparajogos.com.br/item/excursions> (/noticias/excursions-fecha-kickstarter-660-mil/) — a loja bloqueia robôs (429)
+- **preço**: <https://www.comparajogos.com.br/item/feed-the-kraken> (/noticias/feed-the-kraken-black-box-sea-of-shadows-gamefound/) — sem resposta (ConnectTimeout)
+- **preço**: <https://www.comparajogos.com.br/item/flamecraft> (/flamecraft/) — a loja bloqueia robôs (429)
 - **preço**: <https://www.comparajogos.com.br/item/forest-shuffle> (/forest-shuffle/) — a loja bloqueia robôs (429)
-- **preço**: <https://www.comparajogos.com.br/item/formigas> (/noticias/devir-civolution-e-formigas-pre-venda/) — a loja bloqueia robôs (429)
 - **preço**: <https://www.comparajogos.com.br/item/fotossintese> (/photosynthesis/) — sem resposta (ConnectTimeout)
 - **preço**: <https://www.comparajogos.com.br/item/galactic-cruise> (/noticias/excursions-fecha-kickstarter-660-mil/) — a loja bloqueia robôs (429)
 - **preço**: <https://www.comparajogos.com.br/item/great-western-trail> (/great-western-trail/) — a loja bloqueia robôs (429)
@@ -168,15 +167,16 @@ Gerado por `tools/auditoria_links.py` (robô com User-Agent próprio, 1 pedido a
 - **preço**: <https://www.comparajogos.com.br/item/halo-flashpoint> (/noticias/halo-campaign-evolved-tabuleiro-mantic-pre-venda/) — sem resposta (ConnectTimeout)
 - **preço**: <https://www.comparajogos.com.br/item/harakiri-blades-of-honor> (/noticias/harakiri-blades-of-honor-first-turn-meeplestarter/) — sem resposta (ConnectTimeout)
 - **preço**: <https://www.comparajogos.com.br/item/harmonies> (/harmonies/) — a loja bloqueia robôs (429)
-- **preço**: <https://www.comparajogos.com.br/item/harmonies-crescendo> (/noticias/coffee-rush-inverno-harmonies-crescendo-pre-venda/, /noticias/harmonies-crescendo-e-bang-dice-explosion-ganham-preco/) — a loja bloqueia robôs (429)
-- **preço**: <https://www.comparajogos.com.br/item/heat-pedal-to-the-metal> (/heat-pedal-to-the-metal/, /noticias/heat-ganha-versao-digital-mipmap/) — a loja bloqueia robôs (429)
+- **preço**: <https://www.comparajogos.com.br/item/heat-chuva-forte> (/heat-pedal-to-the-metal/) — a loja bloqueia robôs (429)
 - **preço**: <https://www.comparajogos.com.br/item/hegemony-conduza-sua-classe-a-vitoria-edicao-ampliada> (/hegemony/) — a loja bloqueia robôs (429)
 - **preço**: <https://www.comparajogos.com.br/item/hitster-verao> (/noticias/galapagos-azul-kids-caper-europe-nas-lojas/) — sem resposta (ConnectTimeout)
+- **preço**: <https://www.comparajogos.com.br/item/horizontes-de-spirit-island> (/noticias/civolution-e-horizontes-de-spirit-island-chegam-as-lojas/, /noticias/horizontes-de-spirit-island-pre-venda-ace-studios/) — a loja bloqueia robôs (429)
 - **preço**: <https://www.comparajogos.com.br/item/inventores-do-sul-do-tigre> (/inventors-of-the-south-tigris/) — a loja bloqueia robôs (429)
 - **preço**: <https://www.comparajogos.com.br/item/isle-of-skye-de-lider-a-rei> (/isle-of-skye/) — a loja bloqueia robôs (429)
 - **preço**: <https://www.comparajogos.com.br/item/ito> (/noticias/japao-j-tan-arclight-forma-criadores-de-jogos/) — sem resposta (ConnectTimeout)
 - **preço**: <https://www.comparajogos.com.br/item/kelp> (/noticias/kelp-offshore-offspring-expansao-gamefound/) — sem resposta (ConnectTimeout)
 - **preço**: <https://www.comparajogos.com.br/item/kutna-hora-the-city-of-silver> (/kutna-hora/) — a loja bloqueia robôs (429)
+- **preço**: <https://www.comparajogos.com.br/item/looot> (/noticias/devir-looot-e-through-the-desert/) — a loja bloqueia robôs (429)
 - **preço**: <https://www.comparajogos.com.br/item/luz-final> (/last-light/) — a loja bloqueia robôs (429)
 - **preço**: <https://www.comparajogos.com.br/item/magical-athlete> (/noticias/magical-athlete-pre-venda-asmodee/) — sem resposta (ConnectTimeout)
 - **preço**: <https://www.comparajogos.com.br/item/marco-polo> (/noticias/marco-polo-deluxe-master-set-gamefound/) — sem resposta (ConnectTimeout)
@@ -219,7 +219,6 @@ Gerado por `tools/auditoria_links.py` (robô com User-Agent próprio, 1 pedido a
 - **preço**: <https://www.comparajogos.com.br/item/the-thing> (/noticias/the-thing-boardgame-cardgame-gamefound/) — sem resposta (ConnectTimeout)
 - **preço**: <https://www.comparajogos.com.br/item/the-witcher-old-world> (/the-witcher-old-world/) — sem resposta (ConnectTimeout)
 - **preço**: <https://www.comparajogos.com.br/item/thesauros> (/noticias/meeplebr-lanca-valheim-thesauros-biddle/) — sem resposta (ConnectTimeout)
-- **preço**: <https://www.comparajogos.com.br/item/through-the-desert> (/noticias/devir-looot-e-through-the-desert/) — a loja bloqueia robôs (429)
 - **preço**: <https://www.comparajogos.com.br/item/through-the-mountains> (/noticias/through-the-mountains-knizia-kickstarter/) — sem resposta (ConnectTimeout)
 - **preço**: <https://www.comparajogos.com.br/item/thunder-road-vendetta> (/thunder-road-vendetta/) — sem resposta (ConnectTimeout)
 - **preço**: <https://www.comparajogos.com.br/item/too-many-bones> (/noticias/asmodee-essen-toy-battle-too-many-bones-nemesis-lockdown/, /noticias/too-little-time-chip-theory-gamefound/) — a loja bloqueia robôs (429)
