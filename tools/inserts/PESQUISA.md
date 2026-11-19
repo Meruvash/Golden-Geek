@@ -225,3 +225,15 @@ O que dá para tirar disso:
 - Bate com o "720 x 520 mm" das listagens da Amazon para a Edição de Colecionador: dobrado em 3 x 2 dá **240 x 260 mm**,
   e 240 ≈ 237 + folga. É coerente, mas **não é confirmação**: é outra edição e outra caixa.
 - Não informa a espessura do tabuleiro.
+
+## DaveShine (Thingiverse 6965565), recebido em 19/11/2026
+
+São 10 STLs, um PDF de setup e fotos. Licença CC BY-SA.
+
+- **Edição**: alemã da Pegasus (fichas "Freitag", "Forscher"). O insert fica **dentro da bandeja de papelão original**
+  da caixa, em dois níveis de 25 + 17 mm. **Não é da Edição de Colecionador.**
+- **Cartas sem sleeve**: `rc_cards` mede 63 x 92 mm por fora, ou seja, poço de ~59 x 88 para a carta de 57,5 x 89 nua.
+- **Tabuleiro**: não guarda nem cita o tabuleiro.
+- **Ideia aproveitável**: bandejas de aventura (94 x 82,5 mm) que vão direto para cima do tabuleiro, com o maço, os
+  marcadores e os dados de ação juntos.
+- **Medidas novas para o nosso projeto**: nenhuma.
