@@ -2,7 +2,7 @@
  "mes": "2026-11",
  "label": "Novembro de 2026",
  "titulo_previstos": "Previstos para novembro",
- "total": 23,
+ "total": 29,
  "lancados": [
   {
    "id_jogo": 70028,
@@ -217,6 +217,69 @@
    "pode_criar_topico": false
   },
   {
+   "id_jogo": 80721,
+   "nome": "Formigas",
+   "url": "https://ludopedia.com.br/jogo/ants",
+   "capa": "https://storage.googleapis.com/ludopedia-capas/80721_t.jpg",
+   "fl_jogo_base": 1,
+   "fl_tipo": 1,
+   "editora": {
+    "id": 3525,
+    "nome": "Devir Brasil",
+    "url": "https://ludopedia.com.br/editora/3525/Devir Brasil"
+   },
+   "status": {
+    "id": 4,
+    "label": "Em Pré Venda",
+    "slug": "pre-venda"
+   },
+   "comentarios": 5,
+   "url_topico": "https://ludopedia.com.br/topico/101254/-topico-oficial-formigas",
+   "pode_criar_topico": false
+  },
+  {
+   "id_jogo": 87166,
+   "nome": "7th Seal",
+   "url": "https://ludopedia.com.br/jogo/7th-seal",
+   "capa": "https://storage.googleapis.com/ludopedia-capas/87166_t.jpg",
+   "fl_jogo_base": 1,
+   "fl_tipo": 1,
+   "editora": {
+    "id": 3525,
+    "nome": "Devir Brasil",
+    "url": "https://ludopedia.com.br/editora/3525/Devir Brasil"
+   },
+   "status": {
+    "id": 3,
+    "label": "Anunciado",
+    "slug": "anunciado"
+   },
+   "comentarios": 0,
+   "url_topico": null,
+   "pode_criar_topico": true
+  },
+  {
+   "id_jogo": 71889,
+   "nome": "Ace of Spades",
+   "url": "https://ludopedia.com.br/jogo/ace-of-spades",
+   "capa": "https://storage.googleapis.com/ludopedia-capas/71889_t.jpg",
+   "fl_jogo_base": 1,
+   "fl_tipo": 1,
+   "editora": {
+    "id": 3525,
+    "nome": "Devir Brasil",
+    "url": "https://ludopedia.com.br/editora/3525/Devir Brasil"
+   },
+   "status": {
+    "id": 4,
+    "label": "Em Pré Venda",
+    "slug": "pre-venda"
+   },
+   "comentarios": 0,
+   "url_topico": "https://ludopedia.com.br/topico/91484/-topico-oficial-ace-of-spades",
+   "pode_criar_topico": false
+  },
+  {
    "id_jogo": 81879,
    "nome": "As Ruínas Perdidas de Arnak: Caminhos Tortuosos",
    "url": "https://ludopedia.com.br/jogo/lost-ruins-of-arnak-twisted-paths",
@@ -238,8 +301,29 @@
    "pode_criar_topico": true
   },
   {
+   "id_jogo": 87165,
+   "nome": "Berlim 1960",
+   "url": "https://ludopedia.com.br/jogo/berlin-1960",
+   "capa": "https://storage.googleapis.com/ludopedia-capas/87165_t.jpg",
+   "fl_jogo_base": 1,
+   "fl_tipo": 1,
+   "editora": {
+    "id": 3525,
+    "nome": "Devir Brasil",
+    "url": "https://ludopedia.com.br/editora/3525/Devir Brasil"
+   },
+   "status": {
+    "id": 3,
+    "label": "Anunciado",
+    "slug": "anunciado"
+   },
+   "comentarios": 0,
+   "url_topico": null,
+   "pode_criar_topico": true
+  },
+  {
    "id_jogo": 85609,
-   "nome": "Catan: O Jogo de Cartas - Sexta Edição",
+   "nome": "Catan: O Jogo de Cartas — Sexta Edição",
    "url": "https://ludopedia.com.br/jogo/catan-on-the-road",
    "capa": "https://storage.googleapis.com/ludopedia-capas/85609_t.jpg",
    "fl_jogo_base": 1,
@@ -290,6 +374,27 @@
     "id": 92,
     "nome": "Asmodee (Galápagos)",
     "url": "https://ludopedia.com.br/editora/92/Asmodee (Galápagos)"
+   },
+   "status": {
+    "id": 4,
+    "label": "Em Pré Venda",
+    "slug": "pre-venda"
+   },
+   "comentarios": 0,
+   "url_topico": null,
+   "pode_criar_topico": true
+  },
+  {
+   "id_jogo": 66668,
+   "nome": "Compile: Main1",
+   "url": "https://ludopedia.com.br/jogo/compile-main1",
+   "capa": "https://storage.googleapis.com/ludopedia-capas/66668_t.jpg",
+   "fl_jogo_base": 1,
+   "fl_tipo": 1,
+   "editora": {
+    "id": 3525,
+    "nome": "Devir Brasil",
+    "url": "https://ludopedia.com.br/editora/3525/Devir Brasil"
    },
    "status": {
     "id": 4,
@@ -479,6 +584,27 @@
     "id": 11298,
     "nome": "Forjamundo Editora",
     "url": "https://ludopedia.com.br/editora/11298/Forjamundo Editora"
+   },
+   "status": {
+    "id": 3,
+    "label": "Anunciado",
+    "slug": "anunciado"
+   },
+   "comentarios": 0,
+   "url_topico": null,
+   "pode_criar_topico": true
+  },
+  {
+   "id_jogo": 38852,
+   "nome": "Time Bomb",
+   "url": "https://ludopedia.com.br/jogo/time-bomb",
+   "capa": "https://storage.googleapis.com/ludopedia-capas/38852_t.jpg",
+   "fl_jogo_base": 1,
+   "fl_tipo": 1,
+   "editora": {
+    "id": 3525,
+    "nome": "Devir Brasil",
+    "url": "https://ludopedia.com.br/editora/3525/Devir Brasil"
    },
    "status": {
     "id": 3,

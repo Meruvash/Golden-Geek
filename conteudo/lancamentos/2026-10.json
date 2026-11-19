@@ -2,7 +2,7 @@
  "mes": "2026-10",
  "label": "Outubro de 2026",
  "titulo_previstos": "Previstos para outubro",
- "total": 54,
+ "total": 51,
  "lancados": [
   {
    "id_jogo": 66676,
@@ -721,27 +721,6 @@
    "pode_criar_topico": false
   },
   {
-   "id_jogo": 80721,
-   "nome": "Formigas",
-   "url": "https://ludopedia.com.br/jogo/ants",
-   "capa": "https://storage.googleapis.com/ludopedia-capas/80721_t.jpg",
-   "fl_jogo_base": 1,
-   "fl_tipo": 1,
-   "editora": {
-    "id": 3525,
-    "nome": "Devir Brasil",
-    "url": "https://ludopedia.com.br/editora/3525/Devir Brasil"
-   },
-   "status": {
-    "id": 4,
-    "label": "Em Pré Venda",
-    "slug": "pre-venda"
-   },
-   "comentarios": 5,
-   "url_topico": "https://ludopedia.com.br/topico/101254/-topico-oficial-formigas",
-   "pode_criar_topico": false
-  },
-  {
    "id_jogo": 56209,
    "nome": "DANTE: Inferno ",
    "url": "https://ludopedia.com.br/jogo/dante-inferno",
@@ -760,27 +739,6 @@
    },
    "comentarios": 4,
    "url_topico": "https://ludopedia.com.br/topico/99069/-topico-oficial-dante-inferno",
-   "pode_criar_topico": false
-  },
-  {
-   "id_jogo": 71889,
-   "nome": "Ace of Spades",
-   "url": "https://ludopedia.com.br/jogo/ace-of-spades",
-   "capa": "https://storage.googleapis.com/ludopedia-capas/71889_t.jpg",
-   "fl_jogo_base": 1,
-   "fl_tipo": 1,
-   "editora": {
-    "id": 3525,
-    "nome": "Devir Brasil",
-    "url": "https://ludopedia.com.br/editora/3525/Devir Brasil"
-   },
-   "status": {
-    "id": 4,
-    "label": "Em Pré Venda",
-    "slug": "pre-venda"
-   },
-   "comentarios": 0,
-   "url_topico": "https://ludopedia.com.br/topico/91484/-topico-oficial-ace-of-spades",
    "pode_criar_topico": false
   },
   {
@@ -841,27 +799,6 @@
     "id": 3,
     "label": "Anunciado",
     "slug": "anunciado"
-   },
-   "comentarios": 0,
-   "url_topico": null,
-   "pode_criar_topico": true
-  },
-  {
-   "id_jogo": 66668,
-   "nome": "Compile: Main1",
-   "url": "https://ludopedia.com.br/jogo/compile-main1",
-   "capa": "https://storage.googleapis.com/ludopedia-capas/66668_t.jpg",
-   "fl_jogo_base": 1,
-   "fl_tipo": 1,
-   "editora": {
-    "id": 3525,
-    "nome": "Devir Brasil",
-    "url": "https://ludopedia.com.br/editora/3525/Devir Brasil"
-   },
-   "status": {
-    "id": 4,
-    "label": "Em Pré Venda",
-    "slug": "pre-venda"
    },
    "comentarios": 0,
    "url_topico": null,
