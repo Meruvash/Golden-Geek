@@ -46,15 +46,15 @@ Wan joga a intriga e a mesa toda se oprime
 Desfile lúdico… um a zero pro tchími!
 
 **[PÓS-REFRÃO: grito da torcida]** (0:39–0:42)
-Time Elite! Re-ve-lou! Time Elite! Con-fli-to!
+Dois a zero pro time! Time Elite! Con-fli-to!
 
 **[VERSO 2: a partida]** (0:42–0:56)
 Cancelina gritou "problemático!" e filmou o tabuleiro
 Problematrícia no textão, perdeu a vez primeiro
 Desconstrúcio jogou a carta de ponta-cabeça
-Vitor de capa preta botou espião na realeza
+Vitor botou espião: quatro a zero, com certeza
 No reteté, Ronaldo fisgou o verme da areia
-O verme subiu gigante e engoliu a Casa inteira
+Seis pontos de uma vez: engoliu a Casa inteira
 
 **[PONTE: câmera lenta]** (0:56–1:03)
 "Vamos cancelar o Duna!"
@@ -62,10 +62,18 @@ O verme subiu gigante e engoliu a Casa inteira
 Wan: "Calma, leite com pera… cancela não, embaralha."
 
 **[REFRÃO FINAL]** (1:03–1:15)
-Um a zero pro tchími (revelou!)
-Um a zero pro tchími (conflito!)
+Dez a zero pro tchími (revelou!)
+Dez a zero pro tchími (conflito!)
 O placar a gente imprime, a vitória é sublime
-Desfile lúdico… um a zero pro… (corte seco e volta ao gancho: loop)
+Desfile lúdico… dez a zero pro… (corte seco e volta ao gancho: loop)
+
+### Placar até os 10 pontos (19/11/2026)
+O Uprising vai a 10 pontos.
+- Refrão 1: 1 × 0.
+- Pós-refrão: 2 × 0.
+- Vitor com o espião: 4 × 0 (dois pontos de uma vez).
+- Verme: o prêmio do conflito dobra, 6 pontos de uma vez, e o placar fecha em 10 × 0.
+- Refrão final: "Dez a zero pro time".
 
 ### Revisão: sem dado (19/11/2026)
 O Uprising não tem dado. A letra agora usa elementos do jogo:

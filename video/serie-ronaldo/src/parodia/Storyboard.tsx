@@ -202,11 +202,11 @@ export const QUADROS_PARODIA: Q[] = [
       <Letra txt="Wan joga a intriga e a mesa toda se oprime" />
     </AbsoluteFill>
   ) },
-  { rot: "0:39 · PÓS-REFRÃO: TIME ELITE!", r: () => (
+  { rot: "0:39 · 2 × 0", r: () => (
     <AbsoluteFill style={{ background: AREIA }}>
       {[0, 1, 2].map((i) => <div key={i} style={{ position: "absolute", left: -40, right: -40, top: 60 + i * 330, transform: "rotate(-6deg)", textAlign: "center", fontFamily: SANS, fontWeight: 900, fontSize: 150, color: i === 1 ? "#111" : "#ffffff55", WebkitTextStroke: i === 1 ? "0" : "3px #111" }}>TIME ELITE!</div>)}
       <Svg><Vitor x={250} y={1050} escala={0.8} expr="determinado" pose="normal" /><WanHD x={540} y={1080} escala={0.72} faroeste={false} expr="sorriso" pose="bracos" luz={LUZ_POENTE} id="wp" /><Ronaldo x={830} y={1050} escala={0.84} expr="orgulhoso" pose="cartas" virar /></Svg>
-      <Letra txt="Time Elite! Re-ve-lou! Time Elite! Con-fli-to!" />
+      <Letra txt="Dois a zero pro time! Time Elite! Con-fli-to!" />
     </AbsoluteFill>
   ) },
   { rot: "0:44 · TEXTÃO E PONTA-CABEÇA", r: () => (
@@ -218,14 +218,14 @@ export const QUADROS_PARODIA: Q[] = [
       <Letra txt="Desconstrúcio jogou a carta de ponta-cabeça" />
     </AbsoluteFill>
   ) },
-  { rot: "0:52 · O VERME ENGOLE A CASA", r: () => (
+  { rot: "0:52 · VERME: +6 → 10 × 0", r: () => (
     <AbsoluteFill style={{ background: "#d98c3a" }}>
       <Raios cor="#f5c27a" cx={560} cy={700} op={0.5} />
       <Of nome="verme" style={{ left: 250, top: 120, width: 640, filter: "drop-shadow(0 30px 30px rgba(0,0,0,.5))" }} />
       <svg width={1080} height={1080} style={{ position: "absolute" }}>{Array.from({ length: 40 }, (_, i) => <circle key={i} cx={300 + (i * 97) % 520} cy={760 + (i * 53) % 160} r={10 + (i % 5) * 6} fill="#b06a22" opacity={0.8} />)}</svg>
       <Svg><g transform="rotate(-30 260 700)"><Cancelina x={220} y={820} escala={0.42} expr="grita" /></g><g transform="rotate(25 540 520)"><Problematricia x={520} y={520} escala={0.38} expr="grita" /></g><g transform="rotate(-50 860 720)"><Desconstrucio x={860} y={800} escala={0.42} expr="grita" carta={false} /></g></Svg>
-      <div style={{ position: "absolute", left: 40, top: 50 }}><Grande tam={92} giro={-5}>ENGOLIU A<br />CASA INTEIRA</Grande></div>
-      <Letra txt="O verme subiu gigante e engoliu a Casa inteira" /><Credito />
+      <div style={{ position: "absolute", left: 40, top: 50 }}><Grande tam={92} giro={-5}>+6 PONTOS!<br />CASA ENGOLIDA</Grande></div>
+      <Letra txt="Seis pontos de uma vez: engoliu a Casa inteira" /><Credito />
     </AbsoluteFill>
   ) },
   { rot: "0:56 · PONTE (câmera lenta)", r: () => (
@@ -236,13 +236,13 @@ export const QUADROS_PARODIA: Q[] = [
       <div style={{ position: "absolute", left: 570, bottom: 150, width: 470, fontFamily: SANS, fontWeight: 800, fontSize: 36, color: "#fff", textShadow: "0 3px 10px #000" }}>"Calma, leite com pera… cancela não, embaralha."</div>
     </AbsoluteFill>
   ) },
-  { rot: "1:03 · REFRÃO FINAL + LOOP", r: () => (
+  { rot: "1:03 · DEZ A ZERO + LOOP", r: () => (
     <AbsoluteFill style={{ background: NOITE }}>
       <Raios cor={AREIA} op={0.3} />
       <Of nome="caixa" style={{ left: 330, top: 300, width: 420, transform: "rotate(-6deg)" }} />
-      <div style={{ position: "absolute", left: 0, right: 0, top: 60, textAlign: "center" }}><Grande tam={86} giro={-3}>TIME ELITE 1 × 0<br /><span style={{ color: ROSA }}>CASA LACRÔNNEN</span></Grande></div>
+      <div style={{ position: "absolute", left: 0, right: 0, top: 60, textAlign: "center" }}><Grande tam={86} giro={-3}>TIME ELITE 10 × 0<br /><span style={{ color: ROSA }}>CASA LACRÔNNEN</span></Grande></div>
       <div style={{ position: "absolute", left: 0, right: 0, bottom: 150, textAlign: "center", fontFamily: SANS, fontWeight: 900, fontSize: 34, color: AMAR }}>eliteboardgamers.com.br/dune-imperium · ↻ volta pro gancho</div>
-      <Letra txt="Desfile lúdico… um a zero pro…" /><Credito />
+      <Letra txt="Desfile lúdico… dez a zero pro…" /><Credito />
     </AbsoluteFill>
   ) },
 ];
