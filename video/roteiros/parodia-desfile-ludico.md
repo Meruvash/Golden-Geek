@@ -24,36 +24,36 @@ Pronúncia: **"time" se canta "tchími"** (rima com "crime"). Para a IA, escreve
 | Pergunta e resposta + grito | prática de refrão de estádio | "(rolou!) / (caiu seis!)" e pós-refrão |
 | Final em loop | gancho feito para repetir | Corta em "um a zero pro…" e volta ao início |
 
-**[GANCHO FRIO]** (0:00–0:04 · a cappella, eco, o dado quica)
+**[GANCHO FRIO]** (0:00–0:04 · a cappella, eco, a carta bate na mesa)
 Um a zero pro tchími!
 
 **[VERSO 1: a mesa]** (0:04–0:18 · flow de rap)
 Sexta à noite, Duna na mesa, especiaria no ar
 Seis cadeiras, três contra três, o Time Elite vai jogar
 Wan no comando, grisalho do lado, frio de general
-Ronaldo no flanco, Lukita na conta: trio fenomenal
+Ronaldo no flanco, Vitor na sombra: trio fenomenal
 
 **[PRÉ-REFRÃO: chegam os rivais]** (0:18–0:25 · sobe a tensão, chamada de apresentação)
 Mas abriu a porta… cabelo neon, celular na mão
 A Casa Lacrônnen chegou de textão
 Cancelina! (ô!) Problematrícia! (ô!) Desconstrúcio! (ô!)
-(o beat corta) …e o Wan só falou: "Rola o dado, irmão."
+(o beat corta) …e o Wan só falou: "Revela a mão, irmão."
 
 **[REFRÃO]** (0:25–0:39)
-Um a zero pro tchími (rolou!)
-Um a zero pro tchími (caiu seis!)
-Wan joga o dado, a mesa toda se oprime
+Um a zero pro tchími (revelou!)
+Um a zero pro tchími (conflito!)
+Wan joga a intriga e a mesa toda se oprime
 Desfile lúdico… um a zero pro tchími!
 
 **[PÓS-REFRÃO: grito da torcida]** (0:39–0:42)
-Time Elite! Ro-lou! Time Elite! Cai-u seis!
+Time Elite! Re-ve-lou! Time Elite! Con-fli-to!
 
 **[VERSO 2: a partida]** (0:42–0:56)
 Cancelina gritou "problemático!" e filmou o tabuleiro
 Problematrícia no textão, perdeu a vez primeiro
 Desconstrúcio jogou a carta de ponta-cabeça
-Lukita na lousa: "noventa e nove vírgula nove, certeza"
-Ronaldo no reteté chamando o verme da areia
+Vitor de capa preta botou espião na realeza
+No reteté, Ronaldo fisgou o verme da areia
 O verme subiu gigante e engoliu a Casa inteira
 
 **[PONTE: câmera lenta]** (0:56–1:03)
@@ -62,10 +62,19 @@ O verme subiu gigante e engoliu a Casa inteira
 Wan: "Calma, leite com pera… cancela não, embaralha."
 
 **[REFRÃO FINAL]** (1:03–1:15)
-Um a zero pro tchími (rolou!)
-Um a zero pro tchími (caiu seis!)
+Um a zero pro tchími (revelou!)
+Um a zero pro tchími (conflito!)
 O placar a gente imprime, a vitória é sublime
 Desfile lúdico… um a zero pro… (corte seco e volta ao gancho: loop)
+
+### Revisão: sem dado (19/11/2026)
+O Uprising não tem dado. A letra agora usa elementos do jogo:
+- revelar a mão: o turno de revelação, em que as espadas decidem o conflito;
+- cartas de intriga;
+- espiões, que são novidade do Uprising;
+- o gancho de criador, que chama o verme de areia.
+
+No time, o Lukita sai e entra o **Vitor** (com V): Wan, Ronaldo e Vitor.
 
 ### Auditoria (19/11/2026)
 1. "Comandante é o Wan…" tinha 19 sílabas → "Wan no comando, grisalho do lado, frio de general" (15).

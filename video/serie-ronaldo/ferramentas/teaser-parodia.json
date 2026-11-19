@@ -20,7 +20,7 @@
   },
   {
    "nome": "03",
-   "rotulo": "3 × 3",
+   "rotulo": "3 × 3: Wan, Ronaldo e Vitor",
    "t": 2.2,
    "storyboard": true
   },
@@ -32,9 +32,9 @@
   },
   {
    "nome": "05",
-   "rotulo": "Ronaldo no flanco, Lukita na conta",
+   "rotulo": "Ronaldo no flanco, Vitor na sombra",
    "t": 4.2,
-   "storyboard": false
+   "storyboard": true
   },
   {
    "nome": "06",
@@ -62,25 +62,25 @@
   },
   {
    "nome": "10",
-   "rotulo": "\"Rola o dado, irmão\"",
+   "rotulo": "\"Revela a mão, irmão\"",
    "t": 9.2,
    "storyboard": false
   },
   {
    "nome": "11",
-   "rotulo": "Refrão: rolou!",
+   "rotulo": "Refrão: revelou!",
    "t": 10.2,
    "storyboard": true
   },
   {
    "nome": "12",
-   "rotulo": "Caiu seis! 1 × 0",
+   "rotulo": "Conflito! 1 × 0",
    "t": 11.2,
    "storyboard": true
   },
   {
    "nome": "13",
-   "rotulo": "\"Isso é opressão!\"",
+   "rotulo": "Wan joga a intriga",
    "t": 12.2,
    "storyboard": true
   },
@@ -94,7 +94,7 @@
    "nome": "15",
    "rotulo": "Textão e carta de ponta-cabeça",
    "t": 14.2,
-   "storyboard": true
+   "storyboard": false
   },
   {
    "nome": "16",
