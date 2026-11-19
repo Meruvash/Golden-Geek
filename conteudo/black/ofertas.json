@@ -6571,7 +6571,7 @@
     "api": {
      "anuncio": "MLB6778191816",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-19T09:10-03:00",
+     "hora": "2026-11-19T11:39-03:00",
      "nivel": "MercadoLíder silver",
      "preco": 104.76,
      "vendedor": "ZIMSTORE",
@@ -6896,7 +6896,7 @@
     "api": {
      "anuncio": "MLB5950448084",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-19T09:10-03:00",
+     "hora": "2026-11-19T11:39-03:00",
      "nivel": "MercadoLíder gold",
      "preco": 9.99,
      "vendedor": "SEMPRETUDO",
@@ -10488,12 +10488,12 @@
   "ofertas": [
    {
     "api": {
-     "anuncio": "MLB6630921610",
+     "anuncio": "MLB8021731292",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-19T08:40-03:00",
-     "nivel": "loja oficial",
-     "preco": 389.9,
-     "vendedor": "LEITURAJUNDIAI",
+     "hora": "2026-11-19T11:39-03:00",
+     "nivel": "MercadoLíder silver",
+     "preco": 330.9,
+     "vendedor": "SHOPPINGBELA",
      "vendedor_ok": true
     },
     "atualizado": "2026-11-17T03:31:47.99+00:00",
@@ -49851,6 +49851,15 @@
     "vendedor": null
    },
    {
+    "api": {
+     "anuncio": "MLB8021731498",
+     "fonte": "API do Mercado Livre",
+     "hora": "2026-11-19T11:40-03:00",
+     "nivel": "MercadoLíder silver",
+     "preco": 145.0,
+     "vendedor": "SHOPPINGBELA",
+     "vendedor_ok": true
+    },
     "atualizado": "2026-11-17T03:31:45.656+00:00",
     "de": 94.99,
     "loja": "Mercado Livre",
@@ -81815,6 +81824,15 @@
     "vendedor": null
    },
    {
+    "api": {
+     "anuncio": "MLB8021681728",
+     "fonte": "API do Mercado Livre",
+     "hora": "2026-11-19T11:41-03:00",
+     "nivel": "MercadoLíder silver",
+     "preco": 499.95,
+     "vendedor": "SHOPPINGBELA",
+     "vendedor_ok": true
+    },
     "atualizado": "2026-11-17T07:31:51.96+00:00",
     "de": 434.91,
     "loja": "Mercado Livre",
@@ -114212,12 +114230,12 @@
   "ofertas": [
    {
     "api": {
-     "anuncio": "MLB5926641656",
+     "anuncio": "MLB8021681224",
      "fonte": "API do Mercado Livre",
-     "hora": "2026-11-16T23:38-03:00",
+     "hora": "2026-11-19T11:42-03:00",
      "nivel": "MercadoLíder silver",
-     "preco": 79.9,
-     "vendedor": "LOJAGEEKSTORECOM",
+     "preco": 69.5,
+     "vendedor": "SHOPPINGBELA",
      "vendedor_ok": true
     },
     "atualizado": "2026-11-17T07:31:53.241+00:00",
