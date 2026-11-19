@@ -202,3 +202,26 @@ Printables, fotos dos autores (js500 e Sortirus) e buscas na web.
   É dado de loja, não do fabricante. Dobrado em 3 x 2 daria ~240 x 260 mm, com 6 camadas de papelão (~12 mm a ~2 mm
   cada). Isso é conta nossa e precisa ser medido.
 - Cults3D, Thangs e MakerWorld: nada novo para a Edição de Colecionador.
+
+## Printables 916000: espaçadores do tabuleiro, 2ª edição Pegasus (recebido em 19/11/2026)
+
+São 4 STLs e um PDF (autor Nickrey92, CC BY-NC-SA). O `box_charactercards.stl` tem a malha aberta.
+
+| Peça | Medida externa | Observação |
+|---|---|---|
+| gameboardspacer1 | 127,0 x 50,8 x 16,0 mm | caixinha oca com 4 compartimentos |
+| gameboardspacer2 | 95,0 x 65,0 x 31,5 mm | 2 compartimentos |
+| box_charactercards | 142 x 197 x 17,5 mm | fichas de personagem |
+| boxextension_charactercards | 84,5 x 95 x 27 mm | |
+
+As fotos do autor mostram como funciona: o tabuleiro dobrado fica deitado por cima do organizador da 2ª edição
+(Printables 190326, caixa de 288 x 288 mm) e **não cobre a faixa da direita**. Os espaçadores preenchem essa faixa até a
+altura do tabuleiro, para ele não escorregar com a caixa em pé.
+
+O que dá para tirar disso:
+- **Largura do tabuleiro dobrado da 2ª edição ≈ 288 − 50,8 ≈ 237 mm.** É dedução: assume que o spacer1 ocupa a faixa
+  inteira, o que as fotos sugerem mas não provam.
+- A outra medida não sai dos STLs: o tabuleiro parece ocupar quase toda a profundidade de 288.
+- Bate com o "720 x 520 mm" das listagens da Amazon para a Edição de Colecionador: dobrado em 3 x 2 dá **240 x 260 mm**,
+  e 240 ≈ 237 + folga. É coerente, mas **não é confirmação**: é outra edição e outra caixa.
+- Não informa a espessura do tabuleiro.
