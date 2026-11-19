@@ -15,6 +15,7 @@ import { FIM_WAN1, Wan1 } from "./wan1/Wan1";
 import { DUR_MESA, Mesa3D } from "./mesa/Mesa3D";
 import { FIM_WITCHER1, Witcher1 } from "./witcher1/Witcher1";
 import { DUR_STORY_PARODIA, StoryboardParodia } from "./parodia/Storyboard";
+import { ClipeParodia, DUR_CLIPE_PARODIA } from "./parodia/Clipe";
 import { FIM_VICTOR1, Victor1 } from "./victor1/Victor1";
 import { DUR_P1, DUR_P2, VictorParte1, VictorParte2 } from "./victor1/Partes";
 import { Seti, FIM_SETI } from "./seti/Seti";
@@ -34,6 +35,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="AndromedaParte1Quadrado" component={AeP1} width={1080} height={1080} fps={30} durationInFrames={Math.ceil(FIM_P1 * 30)} defaultProps={{ quadrado: true }} />
       <Composition id="AndromedaParte2Quadrado" component={AeP2} width={1080} height={1080} fps={30} durationInFrames={Math.ceil(FIM_P2 * 30)} defaultProps={{ quadrado: true }} />
       <Still id="FichaRonaldo" component={FichaPersonagem} width={1080} height={1920} defaultProps={{ quem: "ronaldo" as const }} />
+      <Composition id="ClipeUmAZeroProTime" component={ClipeParodia} width={1080} height={1080} fps={30} durationInFrames={Math.ceil(DUR_CLIPE_PARODIA * 30)} />
       <Composition id="ParodiaStoryboard" component={StoryboardParodia} width={1080} height={1080} fps={30} durationInFrames={DUR_STORY_PARODIA * 30} />
       <Composition id="WitcherOldWorld" component={Witcher1} width={1080} height={1080} fps={30} durationInFrames={Math.ceil(FIM_WITCHER1 * 30)} />
       <Composition id="WitcherOldWorldLimpo" component={Witcher1} width={1080} height={1080} fps={30} durationInFrames={Math.ceil(FIM_WITCHER1 * 30)} defaultProps={{ semLegenda: true }} />

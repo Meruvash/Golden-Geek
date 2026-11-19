@@ -1,4 +1,4 @@
-import React from "react";
+import React, { createContext, useContext } from "react";
 import { AbsoluteFill, Img, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import { FiltroCel } from "../colt/Teste";
 import { Ronaldo } from "../personagens/Personagens";
@@ -10,18 +10,18 @@ import { Cancelina, Desconstrucio, Problematricia } from "./Lacronnen";
 // Linguagem de clipe frenético: câmera inclinada, linhas de velocidade, meio-tom, texto com cor separada,
 // cartões de luta e quadro de impacto. Imagens do jogo: oficiais da Dire Wolf (public/img/parodia/oficiais).
 
-const SANS = "Inter, 'Public Sans', sans-serif";
-const AREIA = "#e0913f", NOITE = "#0d1a2e", CIANO = "#22e3ff", ROSA = "#ff3fb4", LIMA = "#9dff3a", AMAR = "#f0c24b";
+export const SANS = "Inter, 'Public Sans', sans-serif";
+export const AREIA = "#e0913f", NOITE = "#0d1a2e", CIANO = "#22e3ff", ROSA = "#ff3fb4", LIMA = "#9dff3a", AMAR = "#f0c24b";
 
-const Svg: React.FC<{ children: React.ReactNode; cel?: string; style?: React.CSSProperties }> = ({ children, cel = "cel", style }) => (
+export const Svg: React.FC<{ children: React.ReactNode; cel?: string; style?: React.CSSProperties }> = ({ children, cel = "cel", style }) => (
   <svg width={1080} height={1080} viewBox="0 0 1080 1080" style={{ position: "absolute", left: 0, top: 0, overflow: "visible", ...style }}>
     <g filter={`url(#${cel})`}>{children}</g>
   </svg>
 );
-const Of: React.FC<{ nome: string; style?: React.CSSProperties }> = ({ nome, style }) => (
+export const Of: React.FC<{ nome: string; style?: React.CSSProperties }> = ({ nome, style }) => (
   <Img src={staticFile(`img/parodia/oficiais/${nome}.png`)} style={{ position: "absolute", ...style }} />
 );
-const Raios: React.FC<{ cor: string; cx?: number; cy?: number; n?: number; op?: number }> = ({ cor, cx = 540, cy = 540, n = 28, op = 0.5 }) => (
+export const Raios: React.FC<{ cor: string; cx?: number; cy?: number; n?: number; op?: number }> = ({ cor, cx = 540, cy = 540, n = 28, op = 0.5 }) => (
   <svg width={1080} height={1080} style={{ position: "absolute" }}>
     {Array.from({ length: n }, (_, i) => {
       const a = (i / n) * Math.PI * 2, b = a + Math.PI / n * 0.55, R = 1600;
@@ -29,13 +29,14 @@ const Raios: React.FC<{ cor: string; cx?: number; cy?: number; n?: number; op?: 
     })}
   </svg>
 );
-const MeioTom: React.FC<{ cor?: string; op?: number }> = ({ cor = "#000", op = 0.16 }) => (
+export const MeioTom: React.FC<{ cor?: string; op?: number }> = ({ cor = "#000", op = 0.16 }) => (
   <AbsoluteFill style={{ backgroundImage: `radial-gradient(${cor} 28%, transparent 30%)`, backgroundSize: "14px 14px", opacity: op }} />
 );
-const Grande: React.FC<{ children: React.ReactNode; tam?: number; cor?: string; giro?: number; style?: React.CSSProperties }> = ({ children, tam = 130, cor = "#fff", giro = -6, style }) => (
+export const Grande: React.FC<{ children: React.ReactNode; tam?: number; cor?: string; giro?: number; style?: React.CSSProperties }> = ({ children, tam = 130, cor = "#fff", giro = -6, style }) => (
   <div style={{ fontFamily: SANS, fontWeight: 900, fontSize: tam, lineHeight: 0.92, color: cor, transform: `rotate(${giro}deg) skewX(-6deg)`, textShadow: `7px 7px 0 ${CIANO}, -6px -5px 0 ${ROSA}, 0 14px 30px rgba(0,0,0,.6)`, WebkitTextStroke: "3px #111", ...style }}>{children}</div>
 );
-const Letra: React.FC<{ txt: string }> = ({ txt }) => (
+export const SemLetra = createContext(false);
+const Letra: React.FC<{ txt: string }> = ({ txt }) => useContext(SemLetra) ? null : (
   <div style={{ position: "absolute", left: 0, right: 0, bottom: 64, textAlign: "center" }}>
     <span style={{ fontFamily: SANS, fontWeight: 900, fontSize: 40, background: AMAR, color: "#111", padding: "8px 18px", boxShadow: "6px 6px 0 #111" }}>{txt}</span>
   </div>
@@ -43,13 +44,13 @@ const Letra: React.FC<{ txt: string }> = ({ txt }) => (
 const Tempo: React.FC<{ txt: string }> = ({ txt }) => (
   <div style={{ position: "absolute", left: 22, top: 20, fontFamily: "'DejaVu Sans Mono', monospace", fontSize: 22, fontWeight: 700, color: "#fff", background: "rgba(0,0,0,.6)", padding: "3px 10px" }}>{txt}</div>
 );
-const Credito: React.FC = () => (
+export const Credito: React.FC = () => (
   <div style={{ position: "absolute", right: 22, bottom: 18, fontFamily: "'DejaVu Sans Mono', monospace", fontSize: 18, color: "#fff", background: "rgba(0,0,0,.55)", padding: "2px 8px" }}>IMAGEM: DIRE WOLF</div>
 );
-const Inclina: React.FC<{ g?: number; z?: number; children: React.ReactNode }> = ({ g = -4, z = 1.1, children }) => (
+export const Inclina: React.FC<{ g?: number; z?: number; children: React.ReactNode }> = ({ g = -4, z = 1.1, children }) => (
   <AbsoluteFill style={{ transform: `rotate(${g}deg) scale(${z})` }}>{children}</AbsoluteFill>
 );
-const CartaBate: React.FC<{ x: number; y: number; esc?: number; giro?: number; rastro?: boolean }> = ({ x, y, esc = 1, giro = -10, rastro }) => (
+export const CartaBate: React.FC<{ x: number; y: number; esc?: number; giro?: number; rastro?: boolean }> = ({ x, y, esc = 1, giro = -10, rastro }) => (
   <div style={{ position: "absolute", left: x, top: y, transform: `rotate(${giro}deg) scale(${esc})`, transformOrigin: "center" }}>
     {rastro ? [3, 2, 1].map((k) => <div key={k} style={{ position: "absolute", left: -k * 60, top: -k * 40, width: 300, height: 420, borderRadius: 18, background: "#fff", opacity: 0.1 * (4 - k) }} />) : null}
     <div style={{ width: 300, height: 420, borderRadius: 18, overflow: "hidden", border: "6px solid #111", boxShadow: "10px 14px 0 rgba(0,0,0,.45)", background: "#1a1410" }}>
@@ -57,7 +58,7 @@ const CartaBate: React.FC<{ x: number; y: number; esc?: number; giro?: number; r
     </div>
   </div>
 );
-const Espadas: React.FC<{ n: number; cor?: string }> = ({ n, cor = "#fff" }) => (
+export const Espadas: React.FC<{ n: number; cor?: string }> = ({ n, cor = "#fff" }) => (
   <div style={{ display: "inline-flex", alignItems: "center", gap: 14, background: "#111", border: `6px solid ${cor}`, padding: "8px 24px", borderRadius: 14 }}>
     <span style={{ fontSize: 64 }}>⚔️</span><span style={{ fontFamily: SANS, fontWeight: 900, fontSize: 90, color: cor }}>{n}</span>
   </div>
