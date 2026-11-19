@@ -218,22 +218,22 @@ export const QUADROS_PARODIA: Q[] = [
       <Letra txt="Desconstrúcio jogou a carta de ponta-cabeça" />
     </AbsoluteFill>
   ) },
-  { rot: "0:52 · VERME: +6 → 10 × 0", r: () => (
-    <AbsoluteFill style={{ background: "#d98c3a" }}>
-      <Raios cor="#f5c27a" cx={560} cy={700} op={0.5} />
-      <Of nome="verme" style={{ left: 250, top: 120, width: 640, filter: "drop-shadow(0 30px 30px rgba(0,0,0,.5))" }} />
-      <svg width={1080} height={1080} style={{ position: "absolute" }}>{Array.from({ length: 40 }, (_, i) => <circle key={i} cx={300 + (i * 97) % 520} cy={760 + (i * 53) % 160} r={10 + (i % 5) * 6} fill="#b06a22" opacity={0.8} />)}</svg>
-      <Svg><g transform="rotate(-30 260 700)"><Cancelina x={220} y={820} escala={0.42} expr="grita" /></g><g transform="rotate(25 540 520)"><Problematricia x={520} y={520} escala={0.38} expr="grita" /></g><g transform="rotate(-50 860 720)"><Desconstrucio x={860} y={800} escala={0.42} expr="grita" carta={false} /></g></Svg>
-      <div style={{ position: "absolute", left: 40, top: 50 }}><Grande tam={92} giro={-5}>+6 PONTOS!<br />CASA ENGOLIDA</Grande></div>
-      <Letra txt="Seis pontos de uma vez: engoliu a Casa inteira" /><Credito />
-    </AbsoluteFill>
-  ) },
   { rot: "0:56 · PONTE (câmera lenta)", r: () => (
     <AbsoluteFill style={{ background: "#000", filter: "grayscale(1)" }}>
       <div style={{ position: "absolute", left: 0, top: 120, width: 540, height: 840, overflow: "hidden", background: "#222" }}><svg width={540} height={840} style={{ position: "absolute" }}><g filter="url(#cel)"><Cancelina x={270} y={1280} escala={1.45} expr="grita" /></g></svg></div>
       <div style={{ position: "absolute", left: 540, top: 120, width: 540, height: 840, overflow: "hidden", background: "#333" }}><svg width={540} height={840} style={{ position: "absolute" }}><g filter="url(#cel)"><WanHD x={270} y={1900} escala={2.0} faroeste={false} expr="calmo" pose="bracos" luz={LUZ_POENTE} id="wpo" /></g></svg></div>
       <div style={{ position: "absolute", left: 30, top: 150, width: 470, fontFamily: SANS, fontWeight: 900, fontSize: 40, color: "#fff", textShadow: "0 3px 10px #000" }}>"VAMOS CANCELAR O DUNA!"</div>
       <div style={{ position: "absolute", left: 570, bottom: 150, width: 470, fontFamily: SANS, fontWeight: 800, fontSize: 36, color: "#fff", textShadow: "0 3px 10px #000" }}>"Calma, leite com pera… cancela não, embaralha."</div>
+    </AbsoluteFill>
+  ) },
+  { rot: "1:00 · WAN PUXA O GANCHO: +6", r: () => (
+    <AbsoluteFill style={{ background: "#d98c3a" }}>
+      <Raios cor="#f5c27a" cx={640} cy={640} op={0.5} />
+      <Of nome="verme" style={{ left: 380, top: 110, width: 640, filter: "drop-shadow(0 30px 30px rgba(0,0,0,.5))" }} />
+      <svg width={1080} height={1080} style={{ position: "absolute" }}>{Array.from({ length: 40 }, (_, i) => <circle key={i} cx={420 + (i * 97) % 520} cy={760 + (i * 53) % 160} r={10 + (i % 5) * 6} fill="#b06a22" opacity={0.8} />)}</svg>
+      <Svg><WanHD x={230} y={1240} escala={1.15} faroeste={false} expr="serio" pose="bracos" luz={LUZ_POENTE} id="wg" /><g transform="rotate(-30 640 640)"><Cancelina x={640} y={720} escala={0.36} expr="grita" /></g><g transform="rotate(25 860 520)"><Problematricia x={860} y={560} escala={0.34} expr="grita" /></g><g transform="rotate(-50 940 820)"><Desconstrucio x={960} y={880} escala={0.36} expr="grita" carta={false} /></g></Svg>
+      <div style={{ position: "absolute", left: 40, top: 50 }}><Grande tam={110} giro={-5}>+6 PONTOS!</Grande><Grande tam={60} cor={AMAR} giro={-5} style={{ marginTop: 10 }}>A VIRADA É DO WAN</Grande></div>
+      <Letra txt="O verme subiu: seis pontos de uma vez!" /><Credito />
     </AbsoluteFill>
   ) },
   { rot: "1:03 · DEZ A ZERO + LOOP", r: () => (

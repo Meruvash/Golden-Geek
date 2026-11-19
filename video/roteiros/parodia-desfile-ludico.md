@@ -52,14 +52,16 @@ Dois a zero pro time! Time Elite! Con-fli-to!
 Cancelina gritou "problemático!" e filmou o tabuleiro
 Problematrícia no textão, perdeu a vez primeiro
 Desconstrúcio jogou a carta de ponta-cabeça
-Vitor botou espião: quatro a zero, com certeza
-No reteté, Ronaldo fisgou o verme da areia
-Seis pontos de uma vez: engoliu a Casa inteira
+Vitor de capa preta, espião na realeza
+No reteté, Ronaldo foi somando de pouquinho
+Dois pontinhos no Conselho: quatro a zero no caminho
 
 **[PONTE: câmera lenta]** (0:56–1:03)
 "Vamos cancelar o Duna!"
 (silêncio de um tempo)
 Wan: "Calma, leite com pera… cancela não, embaralha."
+Wan puxou o gancho… o chão tremeu… (o beat vai subindo)
+O verme subiu: seis pontos de uma vez! (explode)
 
 **[REFRÃO FINAL]** (1:03–1:15)
 Dez a zero pro tchími (revelou!)
@@ -71,8 +73,8 @@ Desfile lúdico… dez a zero pro… (corte seco e volta ao gancho: loop)
 O Uprising vai a 10 pontos.
 - Refrão 1: 1 × 0.
 - Pós-refrão: 2 × 0.
-- Vitor com o espião: 4 × 0 (dois pontos de uma vez).
-- Verme: o prêmio do conflito dobra, 6 pontos de uma vez, e o placar fecha em 10 × 0.
+- Ronaldo soma pontinhos no Conselho: 4 × 0.
+- **A virada é do Wan:** ele puxa o gancho, o verme dobra o prêmio do conflito, 6 pontos de uma vez, e o placar fecha em 10 × 0.
 - Refrão final: "Dez a zero pro time".
 
 ### Revisão: sem dado (19/11/2026)
