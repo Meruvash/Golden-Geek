@@ -10,6 +10,35 @@ Demo: ElevenLabs Music (trap sombrio de 140 BPM, caixa de marcha, sem citar arti
 na ElevenLabs → voz cantada convertida para o clone "Dr. Pelicioni" (speech-to-speech) → mix em -14 LUFS.
 Arquivos em `video/serie-ronaldo/public/audio/parodia/` e `renders/parodia/`.
 
+## Clipe: "Um a zero pro time" (roteiro para aprovação)
+
+**A partida:** Dune: Imperium – Uprising no modo de 6 jogadores, 3 contra 3. Cada time tem um Comandante e dois
+aliados (Dire Wolf, diário de design 5). No time da Elite, o Wan é o Comandante, com o Ronaldo e o Lukita.
+
+**Os rivais: os Leite com Pera.** A piada é a atitude lacradora: cancela tudo, textão no meio da partida, "lacrou!"
+sem ler o manual. Visual exagerado, com cabelo neon. Identidade não entra na piada (gênero, orientação, raça).
+- **Cancelina:** cabelo azul-piscina, celular sempre gravando. Chama qualquer jogada de "problemático!" e tenta
+  cancelar até o dado.
+- **Threadson:** cabelo rosa-chiclete com raspado lateral. Perde a vez porque está escrevendo uma thread sobre a vez dele.
+- **Lacrélio:** coque verde-neon, ecobag e garrafinha. Grita "LACROU!" a cada jogada, mas nunca leu o manual.
+
+**Sobre o dado:** o Uprising não usa dado na partida. No clipe, o dado só decide quem começa (o ritual da Elite),
+e a letra continua valendo.
+
+| Tempo | Música | Cena |
+|---|---|---|
+| 0–9 s | intro, rolo de caixa | Mesa do Uprising montada (foto oficial). Os dois times entram em câmera lenta. Placa "ELITE × LEITE COM PERA · 3 × 3" |
+| 9–12 s | "Um a zero pro time (rolou!)" | O Wan sacode o dado na mão e solta na mesa |
+| 12–15 s | "(caiu seis!)" | O dado cai no 6 com flash. Placar "1 × 0" |
+| 15–19 s | "…e a mesa inteira se oprime" | Cancelina grita "ISSO É OPRESSÃO!" filmando com o celular. Threadson começa a digitar |
+| 19–22 s | "Desfile lúdico… um a zero pro time!" | Os meeples da Elite marcham em fila. O Lukita faz conta na lousa, o Ronaldo dança o reteté |
+| 22–28 s | refrão 2 | Montagem rápida: o verme de areia engole as tropas dos Leite com Pera. Lacrélio: "LACROU!", e a carta dele cai virada pro lado errado |
+| 28–35 s | refrão 2 (fim) | Threadson ainda digitando ("1/47"). O placar vira para Elite. Os três da Elite fazem pose de capa de disco |
+| 35–38 s | o beat para | Cancelina: "Vamos cancelar o Dune!" O Wan, seco: "Cancela não. Embaralha." Logo da Elite |
+
+**Imagem:** mesa e verme de areia com fotos oficiais do Uprising (skill `imagens`). Os personagens são feitos em código.
+O vídeo fecha com o link da resenha do Dune: Imperium no site, até existir uma página do Uprising.
+
 ---
 
 # Rascunho anterior (letra completa, não usada)
