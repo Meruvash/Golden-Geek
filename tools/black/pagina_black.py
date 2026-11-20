@@ -633,6 +633,22 @@ def build(radar_itens, armadilhas, quase=(), outras=()):
         f'<li class="arm"><p style="margin:0"><b>{e(nome(x))}</b> em {e(x["loja"])}</p><div class="arm-n">'
         f'<span class="arm-fake">A loja anuncia <s>−{pct((x["de"] - x["por"]) / x["de"])}</s></span><span class="arm-real">Desconto real: {pct(max(x["desc"], 0))}</span></div>'
         f'<p class="cup-txt">De {brl(x["de"])} por {brl(x["por"])}, mas a média real do período é {brl(x["ref"])}.</p></li>' for x in armadilhas)
+    # PlayStation 5 abaixo de R$ 3.000 (pedido do usuário em 20/11/2026): seção própria, fora da conta dos jogos
+    import ps5
+    ps5_itens, ps5_dados = ps5.vitrine()
+    ps5_html = "".join(
+        f'<li class="cup-c"><span class="cup-img">{ilustra(a["modelo"], a["loja"])}</span>'
+        f'<p class="cup-loja">{e(a["modelo"])}</p>'
+        f'<p class="of-p" style="margin:0"><b class="of-por" style="font-size:1.2rem">{brl(a["preco"])}</b>'
+        + (f' <span class="of-ref">{e(a["parcelado"])}</span>' if a.get("parcelado") else "") + '</p>'
+        f'<p class="cup-txt">{e(a["loja"])}{f" · {e(a["vendedor"])}" if a.get("vendedor") else ""}{f" ({e(a["nivel"])})" if a.get("nivel") else ""}</p>'
+        + (f'<p class="cup-ref">{e(a["observacao"])}</p>' if a.get("observacao") else "")
+        + f'<p class="cup-st">Preço visto {hora(a["verificado"], agora_)} ({e(a.get("fonte") or "conferido na página da loja")}). Confira na loja antes de comprar.</p>'
+        f'<a href="{e(a["url"])}" target="_blank" rel="noopener nofollow">Ver na loja ↗</a></li>' for a in ps5_itens)
+    menor_api = min((a["preco"] for a in ps5_dados.get("api", [])), default=None)
+    ps5_vazio = ("Nenhum PlayStation 5 novo abaixo de R$ 3.000 nesta leitura"
+                 + (f" (o mais barato de loja oficial ou MercadoLíder no Mercado Livre está em {brl(menor_api)})" if menor_api else "")
+                 + ". O robô confere de novo a cada 30 minutos.")
     corpo = f"""{cabecalho(pre, "Black de Verdade")}
 <main id="conteudo" class="in bk">
  {trilha(("Início", pre), ("Black de Verdade", ""))}
@@ -693,6 +709,11 @@ def build(radar_itens, armadilhas, quase=(), outras=()):
  {JS_ALERTA}
  {JS_PUSH if push else ""}
  {JS_INSTALA}
+ <section id="ps5" aria-labelledby="h-ps5">
+  <h2 id="h-ps5">PlayStation 5 abaixo de R$ 3.000</h2>
+  <p class="sub">Fora dos jogos de tabuleiro, um vigia à parte: console PS5 novo (Slim, Digital ou Pro) por menos de R$ 3.000 à vista. No Mercado Livre, só loja oficial ou MercadoLíder, lido pela API oficial; das outras lojas, só achado que alguém abriu na página da loja. Usado, recondicionado, importado e acessório ficam fora. Preço com mais de 4 dias sai sozinho.</p>
+  {f'<ul class="cupons">{ps5_html}</ul>' if ps5_html else f'<p class="vazio">{ps5_vazio}</p>'}
+ </section>
  <section id="melhores" aria-labelledby="h-melhores">
   <h2 id="h-melhores">Últimas novidades</h2>
   <p class="sub">As ofertas que acabaram de entrar no radar, a mais nova primeiro. Muda a cada leitura, de 30 em 30 minutos.</p>
