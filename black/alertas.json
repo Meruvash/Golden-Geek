@@ -1,13 +1,5 @@
 [
  {
-  "id": "4b15976bd42199fa",
-  "hora": "2026-11-18T17:09:09+00:00",
-  "titulo": "−23% Hamburgueria Maluca",
-  "texto": "R$ 48,73 na Mercado Livre, 23% abaixo da média real de R$ 63,66. Em Outras promoções (nota BGG abaixo de 7).",
-  "url": "https://www.mercadolivre.com.br/p/MLB19307754?pdp_filters=item_id:MLB5270210746",
-  "imagem": "https://uploads.comparajogos.com.br/img/a325a7ef3cf4641048a42ffea183df25020ead70.jpg"
- },
- {
   "id": "d65cc67881203063",
   "hora": "2026-11-19T01:59:27+00:00",
   "titulo": "−21% Hamburgueria Maluca",
@@ -238,5 +230,13 @@
   "texto": "R$ 29,74 na Amazon, 53% abaixo da média real de R$ 63,71. Menor preço do período. Achado da comunidade, vendedor não conferido.",
   "url": "https://www.amazon.com.br/dp/B08Z24T12J",
   "imagem": "https://uploads.comparajogos.com.br/img/332eccd20cacbb98229ba9a1b167817f27980814.png"
+ },
+ {
+  "id": "d77924215acaa350",
+  "hora": "2026-11-20T17:50:54+00:00",
+  "titulo": "+6 promoções novas no Black de Verdade",
+  "texto": "Res Arcana (−28%); Super Cats (−23%); Exploding Kittens (−23%); Brass: Lancashire (−22%); Harmonies (−21%); Things in Rings (−21%)",
+  "url": "https://eliteboardgamers.com.br/black/",
+  "imagem": null
  }
 ]
