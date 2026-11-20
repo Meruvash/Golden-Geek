@@ -72,7 +72,14 @@ while :; do
   publicar
   espera=$((INTERVALO - (SECONDS - inicio)))
   # não começa um ciclo novo se ele puder passar do limite do trabalho
-  if [ $((SECONDS + (espera > 0 ? espera : 0) + CICLO_MAX)) -ge $LIMITE ]; then break; fi
+  if [ $((SECONDS + (espera > 0 ? espera : 0) + CICLO_MAX)) -ge $LIMITE ]; then
+    # o próximo trabalho só começa quando o intervalo do robô tiver passado (20/11/2026: o educado fazia um ciclo de
+    # 30 s, saía e disparava o próximo trabalho na hora; visitava as lojas e o Compara Jogos a cada minuto, em vez
+    # de a cada 3 horas, e 27 lojas e o Compara Jogos passaram a bloquear o robô)
+    resto=$((LIMITE - SECONDS - 120)); [ $espera -gt $resto ] && espera=$resto
+    [ $espera -gt 0 ] && { echo "esperando $((espera / 60)) min para respeitar o intervalo do robô"; sleep $espera; }
+    break
+  fi
   [ $espera -gt 0 ] && sleep $espera
 done
 
