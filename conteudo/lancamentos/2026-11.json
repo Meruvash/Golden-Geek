@@ -2,7 +2,7 @@
  "mes": "2026-11",
  "label": "Novembro de 2026",
  "titulo_previstos": "Previstos para novembro",
- "total": 29,
+ "total": 30,
  "lancados": [
   {
    "id_jogo": 70028,
@@ -36,6 +36,27 @@
     "id": 11181,
     "nome": "MeepleHive 3D",
     "url": "https://ludopedia.com.br/editora/11181/MeepleHive 3D"
+   },
+   "status": {
+    "id": 1,
+    "label": "Lançado",
+    "slug": "lancado"
+   },
+   "comentarios": 0,
+   "url_topico": null,
+   "pode_criar_topico": true
+  },
+  {
+   "id_jogo": 89859,
+   "nome": "Como foi a Stória",
+   "url": "https://ludopedia.com.br/jogo/como-foi-a-storia",
+   "capa": "https://storage.googleapis.com/ludopedia-capas/89859_t.jpg",
+   "fl_jogo_base": 1,
+   "fl_tipo": 1,
+   "editora": {
+    "id": 3355,
+    "nome": "Jambô Editora",
+    "url": "https://ludopedia.com.br/editora/3355/Jambô Editora"
    },
    "status": {
     "id": 1,
