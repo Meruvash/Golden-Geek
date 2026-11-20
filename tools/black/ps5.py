@@ -15,7 +15,6 @@ Só entra na página o que está abaixo de LIMITE. Quando aparece um PS5 novo ab
 
 Uso: python3 tools/black/ps5.py   (lê a API, grava ps5.json e mostra o resultado; o robô ml chama ler() sozinho)
 """
-import datetime as dt
 import json
 import re
 import sys
