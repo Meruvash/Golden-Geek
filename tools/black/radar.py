@@ -49,6 +49,7 @@ MIN_DIAS = 28        # abaixo disso o item fica fora (usuário aceitou base curt
 CORTE = 0.20         # desconto real mínimo
 QUASE = 0.15         # "Quase Black": de 15% a menos de 20% (seção à parte, pedida pelo usuário em 03/11/2026)
 NOTA_MIN = 7.0
+PRECO_MAX_HORAS = 96  # preço visto há mais de 4 dias não vai ao ar (auditoria de 20/11/2026: havia oferta de 9 e 13 dias)
 SUSPEITO = 0.45      # oferta abaixo de 45% da referência: provável anúncio de outro produto; fica fora
 FORA = re.compile(r"amazon|mercado ?livre|shopee|magalu|magazine|americanas|casas ?bahia|aliexpress|shein|brech[oó]|usad|seminov", re.I)
 PREMIOS_OK = ("Golden Geek", "Spiel des Jahres", "Kennerspiel des Jahres")
@@ -371,6 +372,17 @@ def url_oferta(o, api):
     return o["url"]
 
 
+def preco_velho(quando):
+    """O preço foi visto há mais de PRECO_MAX_HORAS? Data que não se lê conta como velha."""
+    try:
+        t = dt.datetime.fromisoformat(str(quando).replace("Z", "+00:00"))
+    except ValueError:
+        return True
+    if t.tzinfo is None:
+        t = t.replace(tzinfo=BR)
+    return agora() - t > dt.timedelta(hours=PRECO_MAX_HORAS)
+
+
 def link_oferta(url):
     """Link de oferta pronto para o site, ou None quando ele não leva direto à página do produto."""
     if not url or not url.startswith("http") or INDIRETO.search(url):
@@ -643,6 +655,8 @@ def calcular():
                     "fonte_preco": api["fonte"] if api else ("página da loja" if la else ("feed da loja" if o.get("fonte") == "feed da loja" else "Compara Jogos")),
                     "vendedor": api.get("vendedor") if api else None,
                     "verificado": (api or la or {}).get("hora") or o.get("atualizado") or of["verificado"], "editora_br": h.get("editora_br")}
+            if preco_velho(base["verificado"]):
+                continue  # preço lido há mais de PRECO_MAX_HORAS: a promoção pode ter acabado
             if h.get("principal") is False:  # jogo sem nota 7 nem prêmio: só entra em "Outras promoções", com 20% ou mais
                 if desc >= CORTE:
                     outras.append({**base, "principal": False})
