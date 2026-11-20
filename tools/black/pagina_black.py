@@ -645,7 +645,8 @@ def build(radar_itens, armadilhas, quase=(), outras=()):
         + (f'<p class="cup-ref">{e(a["observacao"])}</p>' if a.get("observacao") else "")
         + f'<p class="cup-st">Preço visto {hora(a["verificado"], agora_)} ({e(a.get("fonte") or "conferido na página da loja")}). Confira na loja antes de comprar.</p>'
         f'<a href="{e(a["url"])}" target="_blank" rel="noopener nofollow">Ver na loja ↗</a></li>' for a in ps5_itens)
-    menor_api = min((a["preco"] for a in ps5_dados.get("api", [])), default=None)
+    menor_api = min((a["preco"] for a in ps5_dados.get("api", []) if ps5.eh_console(a.get("modelo"), a.get("preco"))
+                     and not radar.preco_velho(a.get("verificado"))), default=None)
     ps5_vazio = ("Nenhum PlayStation 5 novo abaixo de R$ 3.000 nesta leitura"
                  + (f" (o mais barato de loja oficial ou MercadoLíder no Mercado Livre está em {brl(menor_api)})" if menor_api else "")
                  + ". O robô confere de novo a cada 30 minutos.")

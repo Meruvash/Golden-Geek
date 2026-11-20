@@ -27,24 +27,28 @@ import radar  # noqa: E402
 ARQ = radar.DADOS / "ps5.json"
 LIMITE = 3000.0
 BUSCAS = ("console playstation 5", "playstation 5 slim", "playstation 5 pro", "ps5 console")
-# título de console de verdade: menciona PS5/PlayStation 5 e console/slim/pro/edição/digital/mídia
-CONSOLE = re.compile(r"(?i)(playstation\s*5|ps\s*5)")
-TIPO_CONSOLE = re.compile(r"(?i)\b(console|slim|pro|digital|m[ií]dia f[ií]sica|leitor|edi[cç][aã]o|bundle|kit)\b")
+PRECO_MIN = 1500.0  # nenhum PS5 novo custa menos que isso: abaixo, é jogo ou acessório (20/11/2026: "Catan Console
+                    # Edition PS5" a R$ 199,97 entrou como console na primeira leitura)
+# título de console de verdade: "Console (Sony) PlayStation 5/PS5 ...", "PlayStation 5/PS5 Slim|Pro|Digital ..." ou o
+# título começando por "(Sony) PlayStation 5/PS5"; só mencionar PS5 não basta (jogos dizem "Jogo PS5", "Edition PS5")
+CONSOLE = re.compile(r"(?i)\b(console|videogame|video game)\s+(sony\s+)?(playstation\s*5|ps\s*5)\b|"
+                     r"\b(playstation\s*5|ps\s*5)\s+(slim|pro|digital|standard|825\s*gb|1\s*tb|2\s*tb)\b|"
+                     r"^\s*(sony\s+)?(playstation\s*5|ps\s*5)\b")
 # acessório, jogo, peça, usado e afins: fora
 NAO_CONSOLE = re.compile(r"(?i)\b(controle|dualsense|capa|case|skin|adesivo|suporte|base|dock|cooler|ventoinha|carregador|"
-                         r"cabo|fonte|headset|fone|volante|avulso|ssd|hd|mem[oó]ria|gift ?card|cart[aã]o|assinatura|plus|portal|vr2?|pulse|tampa|faceplate|pel[ií]cula|"
-                         r"usado|seminovo|recondicionado|vitrine|reembalado|caixa vazia|r[eé]plica|chaveiro|miniatura|"
-                         r"ps4|playstation 4|xbox|nintendo|switch)\b")
-
-
-# peça ou jogo vendido sozinho: o título começa pelo item ("Leitor de disco para PS5 Pro", "Jogo Spider-Man 2 PS5");
-# jogo junto do console ("Console PS5 Slim + Jogo") continua valendo
+                         r"cabo|fonte|headset|fone|volante|avulso|ssd|hd|mem[oó]ria|gift ?card|cart[aã]o|assinatura|plus|portal|"
+                         r"vr2?|pulse|tampa|faceplate|pel[ií]cula|usado|seminovo|recondicionado|vitrine|reembalado|caixa vazia|"
+                         r"r[eé]plica|chaveiro|miniatura|ps4|playstation 4|xbox|nintendo|switch|console edition|edition|"
+                         r"deluxe|goty|jogo para|game para)\b")
+# peça ou jogo vendido sozinho: o título começa pelo item ("Leitor de disco para PS5 Pro", "Jogo Spider-Man 2 PS5")
 AVULSO = re.compile(r"(?i)^\s*(leitor|unidade|drive|jogo|game|m[ií]dia)\b")
 
 
-def eh_console(titulo):
+def eh_console(titulo, preco=None):
     t = titulo or ""
-    return bool(CONSOLE.search(t) and TIPO_CONSOLE.search(t) and not NAO_CONSOLE.search(t) and not AVULSO.search(t))
+    if preco is not None and preco < PRECO_MIN:
+        return False
+    return bool(CONSOLE.search(t) and not NAO_CONSOLE.search(t) and not AVULSO.search(t))
 
 
 def ler_arquivo():
@@ -83,6 +87,8 @@ def ler():
                          key=lambda x: x["price"]):
             oficial = bool(it.get("official_store_id"))
             nivel, apelido = apis._ml_reputacao(h, it.get("seller_id"), reputacao) if it.get("seller_id") else (None, None)
+            if not eh_console(nome, float(it["price"])):
+                continue  # anúncio com preço que não é de console (jogo ou acessório ligado ao produto): pula
             if oficial or nivel in apis.LIDER:
                 anuncio = it.get("item_id") or it.get("id")
                 achados.append({"modelo": nome, "loja": "Mercado Livre", "vendedor": apelido or str(it.get("seller_id")),
@@ -108,6 +114,8 @@ def vitrine():
     saida = []
     for a in dados.get("api", []) + dados.get("manuais", []):
         if not a.get("preco") or a["preco"] >= LIMITE or radar.preco_velho(a.get("verificado")):
+            continue
+        if not eh_console(a.get("modelo"), a["preco"]):
             continue
         if not a.get("url") or radar.afiliado(a["url"]) or radar._AFILIADO_PUBLICO.search(a["url"]):
             continue
