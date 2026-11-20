@@ -112,7 +112,7 @@
    "descanso_ate": "2026-11-11T09:43+00:00",
    "dia": "2026-11-20",
    "motivo": "robots.txt respondeu 403",
-   "paginas": 19
+   "paginas": 21
   },
   "www.animusludere.com.br": {
    "descanso_ate": "2026-11-22T09:52+00:00",
@@ -170,7 +170,7 @@
    "descanso_ate": "2026-11-11T09:45+00:00",
    "dia": "2026-11-20",
    "motivo": "robots.txt respondeu 403",
-   "paginas": 0
+   "paginas": 10
   },
   "www.capivarajogos.com.br": {
    "dia": "2026-11-20",
@@ -270,7 +270,7 @@
    "descanso_ate": "2026-11-19T13:29+00:00",
    "dia": "2026-11-20",
    "motivo": "robots.txt respondeu 403",
-   "paginas": 27
+   "paginas": 28
   },
   "www.mosaicoloja.com.br": {
    "descanso_ate": "2026-11-11T09:47+00:00",
@@ -312,7 +312,7 @@
    "descanso_ate": "2026-11-11T09:48+00:00",
    "dia": "2026-11-20",
    "motivo": "robots.txt respondeu 403",
-   "paginas": 52
+   "paginas": 55
   },
   "www.playeasy.com.br": {
    "descanso_ate": "2026-11-11T09:48+00:00",
@@ -328,7 +328,7 @@
   },
   "www.promobit.com.br": {
    "dia": "2026-11-20",
-   "paginas": 10
+   "paginas": 20
   },
   "www.reunionjogos.com.br": {
    "descanso_ate": "2026-11-22T10:05+00:00",
@@ -360,13 +360,13 @@
    "descanso_ate": "2026-11-11T09:38+00:00",
    "dia": "2026-11-20",
    "motivo": "robots.txt respondeu 403",
-   "paginas": 32
+   "paginas": 33
   },
   "www.tavernareal.com": {
    "descanso_ate": "2026-11-11T09:49+00:00",
    "dia": "2026-11-20",
    "motivo": "robots.txt respondeu 403",
-   "paginas": 9
+   "paginas": 10
   },
   "www.tiogera.com.br": {
    "descanso_ate": "2026-11-22T10:06+00:00",
@@ -849,6 +849,48 @@
    "estoque": true,
    "hora": "2026-11-20T09:57+00:00",
    "preco": 100.0
+  },
+  "https://www.cangaiajogos.com.br/3-capitulos": {
+   "cj": 48.35,
+   "estoque": true,
+   "hora": "2026-11-20T10:09+00:00",
+   "preco": 51.99
+  },
+  "https://www.cangaiajogos.com.br/emblems": {
+   "cj": 111.59,
+   "estoque": true,
+   "hora": "2026-11-20T10:09+00:00",
+   "preco": 119.99
+  },
+  "https://www.cangaiajogos.com.br/jogos/jogos-para-a-familia/quest": {
+   "cj": 74.39,
+   "estoque": true,
+   "hora": "2026-11-20T10:09+00:00",
+   "preco": 79.99
+  },
+  "https://www.cangaiajogos.com.br/little-secret": {
+   "cj": 55.79,
+   "estoque": true,
+   "hora": "2026-11-20T10:09+00:00",
+   "preco": 59.99
+  },
+  "https://www.cangaiajogos.com.br/qual-e-o-seu-meme": {
+   "cj": 106.94,
+   "estoque": true,
+   "hora": "2026-11-20T10:09+00:00",
+   "preco": 114.99
+  },
+  "https://www.cangaiajogos.com.br/tacta": {
+   "cj": 74.39,
+   "estoque": true,
+   "hora": "2026-11-20T10:09+00:00",
+   "preco": 79.99
+  },
+  "https://www.cangaiajogos.com.br/take-time": {
+   "cj": 106.94,
+   "estoque": true,
+   "hora": "2026-11-20T10:10+00:00",
+   "preco": 114.99
   },
   "https://www.espacoarcs.com.br/jogos/abluxxen": {
    "cj": 27,
