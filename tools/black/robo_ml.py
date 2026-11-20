@@ -29,6 +29,12 @@ def main():
     if mexidos:
         radar.mesclar(radar.HOJE, mexidos)
     print(f"ok robô Mercado Livre: {len(mexidos)} jogos com preço do Mercado Livre atualizado")
+    # vigia de PS5 abaixo de R$ 3.000 (pedido do usuário em 20/11/2026): erro aqui não derruba o robô
+    try:
+        import ps5
+        ps5.avisar(ps5.ler())
+    except Exception as ex:  # noqa: BLE001
+        print(f"aviso: vigia do PS5 falhou nesta leitura ({ex.__class__.__name__}: {ex})")
     import pagina_black
     with radar._TravaDados():
         r = radar.calcular()

@@ -49,6 +49,7 @@ MIN_DIAS = 28        # abaixo disso o item fica fora (usuário aceitou base curt
 CORTE = 0.20         # desconto real mínimo
 QUASE = 0.15         # "Quase Black": de 15% a menos de 20% (seção à parte, pedida pelo usuário em 03/11/2026)
 NOTA_MIN = 7.0
+PRECO_MAX_HORAS = 96  # preço visto há mais de 4 dias não vai ao ar (auditoria de 20/11/2026: havia oferta de 9 e 13 dias)
 SUSPEITO = 0.45      # oferta abaixo de 45% da referência: provável anúncio de outro produto; fica fora
 FORA = re.compile(r"amazon|mercado ?livre|shopee|magalu|magazine|americanas|casas ?bahia|aliexpress|shein|brech[oó]|usad|seminov", re.I)
 PREMIOS_OK = ("Golden Geek", "Spiel des Jahres", "Kennerspiel des Jahres")
@@ -180,7 +181,7 @@ def ler_item(slug):
             "vendedor": (o.get("seller") or {}).get("name") if isinstance(o.get("seller"), dict) else None,
             "de": o.get("price_from"),
             "por": o.get("price_to"),
-            "url": o.get("url"),
+            "url": _url_sem_afiliado(o.get("url")),
             "atualizado": o.get("updated_at"),
         })
     rq = st.get("ROOT_QUERY", {})
@@ -371,12 +372,23 @@ def url_oferta(o, api):
     return o["url"]
 
 
+def preco_velho(quando):
+    """O preço foi visto há mais de PRECO_MAX_HORAS? Data que não se lê conta como velha."""
+    try:
+        t = dt.datetime.fromisoformat(str(quando).replace("Z", "+00:00"))
+    except ValueError:
+        return True
+    if t.tzinfo is None:
+        t = t.replace(tzinfo=BR)
+    return agora() - t > dt.timedelta(hours=PRECO_MAX_HORAS)
+
+
 def link_oferta(url):
     """Link de oferta pronto para o site, ou None quando ele não leva direto à página do produto."""
     if not url or not url.startswith("http") or INDIRETO.search(url):
         return None
     limpo = _sem_rastreio(url)
-    if url in links_ruins() or limpo in links_ruins():
+    if _AFILIADO_PUBLICO.search(limpo) or url in links_ruins() or limpo in links_ruins():
         return None
     return limpo
 
@@ -395,6 +407,14 @@ def outro_produto(o, h):
     return bool(m and m.group(1).lower() not in (h.get("editora") or "").lower())
 
 
+try:  # a regra da trava de publicação, numa fonte só
+    sys.path.insert(0, str(ROOT / "tools"))
+    from verificar_site import AFILIADO_PUBLICO as _AFILIADO_PUBLICO
+except Exception:  # noqa: BLE001 — sem a verificação (dependência ausente), vale a cópia
+    _AFILIADO_PUBLICO = re.compile(r"(?i)[?&]tag=[a-z0-9_-]+-2[0-9]\b|amzn\.to/|amzlink\.to/|link\.amazon/|amzlinks\.|meli\.la/|"
+                                   r"mercadoli[vb]re\.com(\.br)?/(sec|social)/|shope\.ee/|s\.shopee|tidd\.ly/|lmd\.ink/|awin1\.com|redir\.lomadee")
+
+
 COMUNIDADE_HORAS = 72  # promoção postada em canal costuma acabar rápido: só as dos últimos 3 dias entram na conta geral
 
 
@@ -405,7 +425,25 @@ COMUNIDADE_HORAS = 72  # promoção postada em canal costuma acabar rápido: só
 INDIRETO = re.compile(r"(comparajogos\.com\.br|amzn\.to|a\.co/|link\.amazon|amzlinks|amzlink\.to|meli\.la|bit\.ly|tinyurl|cutt\.ly|"
                       r"encurtador|t\.me/|telegram\.me|s\.click|shope\.ee|tidd\.ly|lmd\.ink|onelink|ccnl\.app|is\.gd|ow\.ly|"
                       r"buff\.ly|rebrand\.ly|rb\.gy|shorturl\.at|//t\.co/|goo\.gl|l\.ead\.me|compre\.vc|promobit\.com\.br|"
-                      r"pelando\.com\.br|linktr\.ee|hotm\.art)", re.I)
+                      r"pelando\.com\.br|linktr\.ee|hotm\.art|s\.shopee|shp\.ee|awin1\.com|redir\.lomadee|amzlink\.to|"
+                      r"mercadoli[vb]re\.com(?:\.br)?/(?:sec|social)/)", re.I)
+
+
+def _url_sem_afiliado(url):
+    """Link de oferta como veio do Compara Jogos, sem afiliado de ninguém: tag removível sai (fica o produto);
+    encurtador de afiliado (s.shopee, amzn.to, meli.la...) vira None, e a oferta fica sem link (não entra no site)."""
+    if not url or not _AFILIADO_PUBLICO.search(url):
+        return url
+    limpo = _sem_rastreio(url)
+    return None if _AFILIADO_PUBLICO.search(limpo) or INDIRETO.search(limpo) else limpo
+
+
+def afiliado(url):
+    """O link leva afiliado de outra pessoa? Mesma regra da trava de publicação (tools/verificar_site.py, que barra o
+    ciclo inteiro), para o robô tirar o link na origem em vez de travar a publicação (20/11/2026: o Compara Jogos
+    passou a listar a Shopee com encurtador de afiliado s.shopee.com.br, e os robôs normal e educado ficaram 3 dias
+    sem publicar)."""
+    return bool(url and (INDIRETO.search(url) or _AFILIADO_PUBLICO.search(url)))
 RASTREIO = re.compile(r"^(utm_.*|tag|ref|ref_|linkcode|ascsubtag|camp.*|creative.*|afil.*|aff.*|partner.*|parceiro.*|matt_.*|"
                       r"source|fbclid|gclid|psc|smid|th|sr|qid|keywords|pd_rd_.*|pf_rd_.*|content-id|spm|clickid)$", re.I)
 
@@ -437,7 +475,7 @@ def _dominios_lojas(hoje_d):
         for of in hoje_d.values():
             for o in of.get("ofertas", []):
                 u = o.get("url") or ""
-                if u.startswith("http") and not INDIRETO.search(u):
+                if u.startswith("http") and not afiliado(u):
                     _DOMINIOS.setdefault(_norm_loja(o.get("loja")), f"{urlsplit(u).scheme}://{urlsplit(u).netloc}/")
     return _DOMINIOS
 
@@ -445,7 +483,7 @@ def _dominios_lojas(hoje_d):
 def link_direto(url, loja, ofertas_jogo, nome=None, hoje_d=None, slug_cache=None):
     """Link da loja para o achado: o da própria loja na lista do Compara Jogos quando o post aponta para página
     intermediária; sempre sem rastreio. Sem link da loja na lista, fica o do post."""
-    if url and not INDIRETO.search(url):
+    if url and not INDIRETO.search(url) and not _AFILIADO_PUBLICO.search(_sem_rastreio(url)):
         return _sem_rastreio(url)
     alvo = _norm_loja(loja)
     if alvo and slug_cache:
@@ -454,7 +492,7 @@ def link_direto(url, loja, ofertas_jogo, nome=None, hoje_d=None, slug_cache=None
                 return _sem_rastreio(u)
     for o in ofertas_jogo or []:
         u = o.get("url") or ""
-        if u and not INDIRETO.search(u) and alvo and (_norm_loja(o.get("loja")) == alvo or alvo in _norm_loja(o.get("loja"))
+        if u and not afiliado(u) and alvo and (_norm_loja(o.get("loja")) == alvo or alvo in _norm_loja(o.get("loja"))
                                                       or _norm_loja(o.get("loja")) in alvo):
             return _sem_rastreio(u)
     # sem página do produto dessa loja: não há link direto (o robô relê a página do jogo no Compara Jogos antes,
@@ -502,7 +540,7 @@ def atualizar_links_comunidade(maximo=40):
             continue
         time.sleep(2)
         cache[sl] = {"_hora": agora().isoformat(timespec="minutes"),
-                     **{_norm_loja(o["loja"]): o["url"] for o in (it or {}).get("ofertas", []) if o.get("url") and not INDIRETO.search(o["url"])}}
+                     **{_norm_loja(o["loja"]): o["url"] for o in (it or {}).get("ofertas", []) if o.get("url") and not afiliado(o["url"])}}
     if faltam:
         gravar(LINKS_CJ, cache)
     SEM_LINK.clear()
@@ -617,6 +655,8 @@ def calcular():
                     "fonte_preco": api["fonte"] if api else ("página da loja" if la else ("feed da loja" if o.get("fonte") == "feed da loja" else "Compara Jogos")),
                     "vendedor": api.get("vendedor") if api else None,
                     "verificado": (api or la or {}).get("hora") or o.get("atualizado") or of["verificado"], "editora_br": h.get("editora_br")}
+            if preco_velho(base["verificado"]):
+                continue  # preço lido há mais de PRECO_MAX_HORAS: a promoção pode ter acabado
             if h.get("principal") is False:  # jogo sem nota 7 nem prêmio: só entra em "Outras promoções", com 20% ou mais
                 if desc >= CORTE:
                     outras.append({**base, "principal": False})
