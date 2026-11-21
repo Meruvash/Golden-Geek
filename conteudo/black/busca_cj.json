@@ -284,6 +284,7 @@
  "adicional ao fechar pedido rio grande games dominion allies expansao jogo basico necessario para jogar de construcao deck inclui 400": null,
  "adicional ao fechar pedido rio grande games dominion base cards": null,
  "adicional ao fechar pedido rio grande games dominion cornucopia guilds update pack new 2nd edition cards only expansion pack to upda": null,
+ "adicional ao fechar pedido rio grande games dominion empires game": null,
  "adicional ao fechar pedido rio grande games dominion nocturne board game 11th expansion 500 cards 33 new kingdom cards 2 6 players 30": null,
  "adicional ao fechar pedido rio grande games freaky frogs from outaspace pinball session with cards card game for 1 player": null,
  "adicional ao fechar pedido rio grande games ftw card game for the win lowest points wins party game the tricky card game for 2 6 pl": null,
@@ -619,6 +620,7 @@
  "asmodee dobble stitch para familia 2 a 8 jogadores idade a partir de 6 anos partidas de ate 15 min": null,
  "asmodee duna imperium linhagens expansao jogo de tabuleiro idade 14 1 a 4 jogadores 60 a 120 minutos por partida": null,
  "asmodee dungeon rummy jogo de cartas para familia para 2 a 4 jogadores partidas de ate 30 min": null,
+ "asmodee escape the dark castle jogo de tabuleiro para gamer idade 14 1 4 jogadores partidas de ate 30 min": null,
  "asmodee exploding kittens o jogo de tabuleiro idade 14 2 6 jogadores partidas de ate 20 min": null,
  "asmodee exploding kittens zombie kittens jogo de cartas para galera idade 8 partidas de ate 15 min": null,
  "asmodee galapagos acquire 2 a 6 jogadores idade 14": {
@@ -5330,6 +5332,17 @@
   "ref": 106.02,
   "ref_dias": 32,
   "slug": "skull",
+  "tipo": "game"
+ },
+ "skunked": {
+  "bgg": 5,
+  "editora": "Marina Games",
+  "imagem": "https://uploads.comparajogos.com.br/img/2136f6e1d8f4190a10d7dfdabd2abc721d4e5cd8.jpg",
+  "menor": null,
+  "nome": "Skunked",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "skunked",
   "tipo": "game"
  },
  "skybound guardian s call a hero fantasy inspired board game of deduction competitive fun for teens and adults with miniatures great replay": null,
