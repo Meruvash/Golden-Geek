@@ -210,6 +210,7 @@
  "adicional ao fechar pedido galapagos skyrise 2 a 4 jogadores idade 14": null,
  "adicional ao fechar pedido gamewright rat a tat roll": null,
  "adicional ao fechar pedido gamewright shifting stones a visual decision making family strategy game of tiles cards and tactics for ages 8": null,
+ "adicional ao fechar pedido gears of war the card game card game by steamforged games ltd 2 players 30 60 minutes of gameplay games for ga": null,
  "adicional ao fechar pedido gloomhaven 2nd edition mercenary pack satha mayor of frosthaven": null,
  "adicional ao fechar pedido gravwell 2nd edition": null,
  "adicional ao fechar pedido greater than games sentinels of the multiverse definitive edition": null,
@@ -290,6 +291,7 @@
  "adicional ao fechar pedido rio grande games pictures christmas expansion holiday board game add on": null,
  "adicional ao fechar pedido rio grande games power grid recharged": null,
  "adicional ao fechar pedido rio grande games ranking": null,
+ "adicional ao fechar pedido rio grande games southern rails": null,
  "adicional ao fechar pedido robo rally dice": null,
  "adicional ao fechar pedido rwby combat ready team jnpr expansion": null,
  "adicional ao fechar pedido santa s workshop deluxe edition a festive worker placement game for families and hobby gamers": null,
@@ -319,6 +321,7 @@
  "adicional ao fechar pedido stronghold games flamme rouge peloton expansion": null,
  "adicional ao fechar pedido stronghold games jogo de tabuleiro terraforming mars ares expedition discovery para 4 jogadores": null,
  "adicional ao fechar pedido stronghold games nations the dice game board games": null,
+ "adicional ao fechar pedido stronghold games paper tales": null,
  "adicional ao fechar pedido stronghold games terraforming mars turmoil": null,
  "adicional ao fechar pedido suburbia": null,
  "adicional ao fechar pedido suburbia expansions 2a edicao": null,
@@ -518,6 +521,7 @@
  },
  "arcane wonders freedom five pacote de miniaturas heroes mastermind idades 14 1 5 jogadores tempo de jogo de 90 minutos": null,
  "arcane wonders mortum medieval detective": null,
+ "arcane wonders royals board game": null,
  "archeologic": {
   "bgg": 7.04039,
   "editora": "Ludonaute",
@@ -541,6 +545,17 @@
   "ref": null,
   "ref_dias": 0,
   "slug": "arkham-horror-the-card-game-a-light-in-the-fog-mythos-pack",
+  "tipo": "expansion"
+ },
+ "arkham horror the card game return to the forgotten age": {
+  "bgg": 8.57333,
+  "editora": "Fantasy Flight Games",
+  "imagem": "https://uploads.comparajogos.com.br/img/8d844417b201c99b0ee32727dc67cb164164476d.jpg",
+  "menor": null,
+  "nome": "Arkham Horror: The Card Game – Return to the Forgotten Age",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "arkham-horror-the-card-game-return-to-the-forgotten-age",
   "tipo": "expansion"
  },
  "arkham horror the card game stella clark investigator starter deck": {
@@ -692,6 +707,7 @@
  },
  "astro knights orion board game": null,
  "atomic mass games marvel crisis protocol green goblin": null,
+ "atomic mass games star wars legion arf troopers arf troopers tabletop expansao para 2 jogadores a partir de 14 anos 120 180 minutos": null,
  "aurum": {
   "bgg": 6.97253,
   "editora": "Pandasaurus Games",
@@ -2137,6 +2153,17 @@
   "ref": null,
   "ref_dias": 0,
   "slug": "escape-room-the-game",
+  "tipo": "game"
+ },
+ "escape the room murder in the mafia": {
+  "bgg": 6.75882,
+  "editora": "ThinkFun",
+  "imagem": "https://uploads.comparajogos.com.br/img/64d8ca5864584734ffe8e41aa77a7403349c8b87.jpg",
+  "menor": null,
+  "nome": "Escape the Room: Murder in the Mafia",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "escape-the-room-murder-in-the-mafia",
   "tipo": "game"
  },
  "escolha a sua propria aventura de casa de danger board game importacao inglesa": null,
@@ -5533,6 +5560,17 @@
   "ref_dias": 0,
   "slug": "star-realms-frontiers",
   "tipo": "game"
+ },
+ "star wars imperial assault bossk villain pack": {
+  "bgg": 8.12586,
+  "editora": "Fantasy Flight Games",
+  "imagem": "https://uploads.comparajogos.com.br/img/f5332da2bfdbec05e31461ab9bd9531a7dc99605.png",
+  "menor": null,
+  "nome": "Star Wars: Imperial Assault – Bossk Villain Pack",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "star-wars-imperial-assault-bossk-villain-pack",
+  "tipo": "expansion"
  },
  "star wars imperial assault hondo ohnaka villain pack": {
   "bgg": 8.19374,
