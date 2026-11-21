@@ -61,6 +61,7 @@
   "jogo-da-rima",
   "jolly-roger",
   "liars-uno",
+  "lince",
   "little-secret",
   "magic-maze-maximum-security",
   "mazescape-kids-hipnos",
@@ -120,5 +121,7 @@
   "warzoo-dicefare",
   "zenkai-adventure"
  ],
- "pendentes": {}
+ "pendentes": {
+  "lince": "2026-11-21T17:53+00:00"
+ }
 }

@@ -3302,6 +3302,7 @@
  "jogo desafiamente ludens spirit azul": null,
  "jogo detetive com aplicativo estrela": null,
  "jogo dorfromantik 1 6 jogadores 8 anos across the board": null,
+ "jogo fotomania across the board 6 anos": null,
  "jogo heroes love to lie across the board": null,
  "jogo in the footsteps of darwin 2 5 jogadores 8 anos across the board": null,
  "jogo jekyll vs hyde 2 jogadores 10 anos across the board": null,
@@ -3536,6 +3537,17 @@
   "ref": 198.88,
   "ref_dias": 32,
   "slug": "light-speed-arena",
+  "tipo": "game"
+ },
+ "lince": {
+  "bgg": 5.5354,
+  "editora": "Grow Jogos e Brinquedos",
+  "imagem": "https://uploads.comparajogos.com.br/img/68dc80abdd08f6167d8dd87f316688beaffa8389.jpg",
+  "menor": 56.15,
+  "nome": "Lince",
+  "ref": 63.95,
+  "ref_dias": 32,
+  "slug": "lince",
   "tipo": "game"
  },
  "loaded questions": {
@@ -6605,6 +6617,17 @@
   "ref_dias": 0,
   "slug": "warhammer-age-of-sigmar-third-edition-dominion",
   "tipo": "expansion"
+ },
+ "warhammer the mass combat fantasy roleplaying game 1st edition": {
+  "bgg": 6.64871,
+  "editora": "Games Workshop Ltd.",
+  "imagem": "https://uploads.comparajogos.com.br/img/f6171ee8c249f8505e283b36762e7f39d11e2121.jpg",
+  "menor": null,
+  "nome": "Warhammer: The Mass Combat Fantasy Roleplaying Game (1st Edition)",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "warhammer-the-mass-combat-fantasy-roleplaying-game-1st-edition",
+  "tipo": "game"
  },
  "welcome to centerville": {
   "bgg": 6.91971,
