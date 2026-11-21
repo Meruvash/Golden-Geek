@@ -1,6 +1,57 @@
 {
- "api": [],
- "lido": "2026-11-21T11:26-03:00",
+ "api": [
+  {
+   "fonte": "API do Mercado Livre",
+   "loja": "Mercado Livre",
+   "modelo": "Console PlayStation 5 Slim Edição Digital 825 GB",
+   "nivel": "MercadoLíder silver",
+   "preco": 4499.0,
+   "url": "https://www.mercadolivre.com.br/p/MLB54963150?pdp_filters=item_id:MLB5527222549",
+   "vendedor": "FLUXO_SHOP",
+   "verificado": "2026-11-21T11:57-03:00"
+  },
+  {
+   "fonte": "API do Mercado Livre",
+   "loja": "Mercado Livre",
+   "modelo": "Sony PlayStation 5 Slim 1TB cor branco",
+   "nivel": "MercadoLíder silver",
+   "preco": 4923.14,
+   "url": "https://www.mercadolivre.com.br/p/MLB28616777?pdp_filters=item_id:MLB7868092056",
+   "vendedor": "USFULLBRF",
+   "verificado": "2026-11-21T11:57-03:00"
+  },
+  {
+   "fonte": "API do Mercado Livre",
+   "loja": "Mercado Livre",
+   "modelo": "Console Playstation 5 Standard 1tb Sony",
+   "nivel": "loja oficial",
+   "preco": 6595.0,
+   "url": "https://www.mercadolivre.com.br/p/MLB55042625?pdp_filters=item_id:MLB7439804938",
+   "vendedor": "EFACINI",
+   "verificado": "2026-11-21T11:56-03:00"
+  },
+  {
+   "fonte": "API do Mercado Livre",
+   "loja": "Mercado Livre",
+   "modelo": "Console PlayStation 5 Digital 825GB - Edição Limitada Wolverine",
+   "nivel": "MercadoLíder silver",
+   "preco": 6999.99,
+   "url": "https://www.mercadolivre.com.br/p/MLB77160771?pdp_filters=item_id:MLB7717277374",
+   "vendedor": "DINAMIZE_ELETRONICOS",
+   "verificado": "2026-11-21T11:56-03:00"
+  },
+  {
+   "fonte": "API do Mercado Livre",
+   "loja": "Mercado Livre",
+   "modelo": "Console Playstation 5 Pro 2tb Branco Sony Bivolt Branco",
+   "nivel": "loja oficial",
+   "preco": 11399.25,
+   "url": "https://www.mercadolivre.com.br/p/MLB41975964?pdp_filters=item_id:MLB5584574953",
+   "vendedor": "OLIVA_MARKET",
+   "verificado": "2026-11-21T11:57-03:00"
+  }
+ ],
+ "lido": "2026-11-21T11:57-03:00",
  "limite": 3000.0,
  "manuais": []
 }
