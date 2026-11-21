@@ -1,5 +1,16 @@
 {
  "101 dalmatas ludoteca disney": null,
+ "12 rivers 2025": {
+  "bgg": 7.06535,
+  "editora": "Good Games Publishing",
+  "imagem": "https://uploads.comparajogos.com.br/img/10f08e53f5a35f0a290966bd1641dd18ba2d0fb7.jpg",
+  "menor": null,
+  "nome": "12 Rivers (2025)",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "12-rivers-2025",
+  "tipo": "game"
+ },
  "1565 st elmo s pay": null,
  "5 minute dungeon curses foiled again expansion": null,
  "5 segundos": {
@@ -2462,6 +2473,7 @@
  "galapagos micromacro a cidade do crime all in iniciantes 14 anos ate 4 jogadores partidas de ate 60 min": null,
  "galapagos micromacro a cidade do crime jogo de tabuleiro para amigos 1 4 jogadores 15 45 minutos por partida": null,
  "galapagos munchkin 4 montaria arredia expansao jogo de cartas para amigos 3 6 jogadores 60 120 minutos por partida": null,
+ "galapagos munchkin 6 dungeon demente expansao jogo de cartas para amigos 3 a 6 jogadores 60 a 90 minutos por partida": null,
  "galapagos mysterium secrets and lies expansao jogo de tabuleiro para amigos 2 a 7 jogadores 42 minutos por partida": null,
  "galapagos o senhor dos aneis jornadas na terra media jogo de tabuleiro cooperativo 1 5 jogadores mais de 120min por partida": null,
  "galapagos prey another day a partir de 14 anos para galera partidas de ate 20 min": null,
@@ -4927,6 +4939,17 @@
   "slug": "rolima",
   "tipo": "game"
  },
+ "root": {
+  "bgg": 8.06883,
+  "editora": "Meeple BR Jogos",
+  "imagem": "https://uploads.comparajogos.com.br/img/c923bbe713aeb89c2f4d15c820d6aaf084728c77.png",
+  "menor": 679.0,
+  "nome": "Root",
+  "ref": 715.98,
+  "ref_dias": 29,
+  "slug": "root",
+  "tipo": "game"
+ },
  "rotten tomatoes the card game": {
   "bgg": 6.59542,
   "editora": "Cryptozoic Entertainment",
@@ -6097,6 +6120,7 @@
   "slug": "uestop",
   "tipo": "game"
  },
+ "um jogo cooperativo de aventura com rolagem de dados elementos de rpg e exploracao de masmorras escape the dark castle": null,
  "um jogo de escalada bem familia rapidinho e bom para testar as amizades tambem dobro pixar": null,
  "um jogo imersivo de ficcao cientifica anachrony": null,
  "undaunted 2200 revolution": null,
