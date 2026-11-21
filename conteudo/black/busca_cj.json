@@ -146,6 +146,7 @@
  "adicional ao fechar pedido arcane wonders freedom five pacote de miniaturas heroes mastermind idades 14 1 5 jogadores tempo de jogo de 9": null,
  "adicional ao fechar pedido arcane wonders mentiras e suprimentos para espioes aereos e marinhos": null,
  "adicional ao fechar pedido arcane wonders sherlock 13": null,
+ "adicional ao fechar pedido ares games last aurora frozen steel board game expansion 1 4 players 90 minutes of gameplay games for game nigh": null,
  "adicional ao fechar pedido ares games sails of glory ship pack hermione 1779 board game": null,
  "adicional ao fechar pedido ares games wotr warriors of middle earth blue": null,
  "adicional ao fechar pedido armata strigoi resurrection erweiterung": null,
@@ -637,6 +638,7 @@
  },
  "asmodee hitster verao jogo de tabuleiro idade 14 2 a 10 jogadores 30 minutos por partida": null,
  "asmodee imagine jogo de cartas casual 3 a 8 jogadores idade 10": null,
+ "asmodee jogo concept 4 a 12 jogadores idade 10 partidas de 30 min": null,
  "asmodee jogo de cartas spot it camping 2024 refresh edicao de manga ecologica jogo de percepcao visual 5 em 1 para reflexos rapidos e": null,
  "asmodee jogo de festa perudo jogo classico de dados de blefe e apostas divertido para grupos e viagens criancas e adultos a partir de 8 a": null,
  "asmodee laboratorio de dexter um jogo piratas jogo de cartas para gamer idade 14 2 5 jogadores partidas de ate 20 min": null,
@@ -4032,6 +4034,7 @@
   "tipo": "game"
  },
  "mestre perfumistas 2a edicao": null,
+ "micro macro kids": null,
  "mistborn": null,
  "monopoly cash grab": {
   "bgg": 4.53333,
@@ -4426,6 +4429,17 @@
  },
  "origem first builders": null,
  "orloj": null,
+ "otys": {
+  "bgg": 6.94827,
+  "editora": "Galápagos Jogos",
+  "imagem": "https://uploads.comparajogos.com.br/img/9dcc04605cb629510914bdad35ea5d73c59833ff.jpg",
+  "menor": 186.99,
+  "nome": "Otys",
+  "ref": 207.89,
+  "ref_dias": 32,
+  "slug": "otys",
+  "tipo": "game"
+ },
  "ouija manor": {
   "bgg": 7.45319,
   "editora": "Funko",
@@ -5746,6 +5760,17 @@
   "ref": null,
   "ref_dias": 0,
   "slug": "the-great-battles-of-alexander-deluxe-edition",
+  "tipo": "game"
+ },
+ "the great wall": {
+  "bgg": 7.80978,
+  "editora": "Awaken Realms",
+  "imagem": "https://uploads.comparajogos.com.br/img/3d93ecd0d1a7169794a17f61df0889073485f925.jpg",
+  "menor": null,
+  "nome": "The Great Wall",
+  "ref": null,
+  "ref_dias": 0,
+  "slug": "the-great-wall",
   "tipo": "game"
  },
  "the guild of merchant explorers": {
