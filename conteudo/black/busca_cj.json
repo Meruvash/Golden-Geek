@@ -567,6 +567,7 @@
  "asmodee bananagrams de palavras cruzadas jogo para 1 a 8 jogadores": null,
  "asmodee bezzerwizzer fun family trivia party game ages 15 2 players 45 minutes playing time": null,
  "asmodee bomb busters jogo de cartas 2 a 5 jogadores a partir de 14 anos partidas de ate 30 min": null,
+ "asmodee brainbox pocket animais perigosos jogo para familia 1 ou mais jogadores partidas de 10 min": null,
  "asmodee clank tesouros submersos expansao jogo de tabuleiro idade 14 2 6 jogadores partidas de ate 120 min": null,
  "asmodee deep sea adventure impulso jogo de tabuleiro 2 a 6 jogadores idade 14 30 minutos por partida": null,
  "asmodee disney stitch o resgate do 626 um jogo love letter jogo de cartas 2 a 5 jogadores a partir de 8 anos partidas de ate 60 min": null,
@@ -3226,6 +3227,17 @@
   "slug": "keep-the-heroes-out-the-sparkling-guardian-expansion",
   "tipo": "expansion"
  },
+ "kelp": {
+  "bgg": 7.60295,
+  "editora": "Wonderbow Games",
+  "imagem": "https://uploads.comparajogos.com.br/img/ff78734a0c95909af8a6a75e951b92533669b320.jpg",
+  "menor": 211.85,
+  "nome": "Kelp",
+  "ref": 227.9,
+  "ref_dias": 32,
+  "slug": "kelp",
+  "tipo": "game"
+ },
  "keyside": {
   "bgg": 7.70583,
   "editora": "R&D Games",
@@ -3946,6 +3958,7 @@
  "menor preco do ano brass lancashire": null,
  "menor preco do ano civilization new dawn terra incognita": null,
  "menor preco do ano devir daitoshi jogo de tabuleiro 1 a 4 jogadores idade 14 anos": null,
+ "menor preco do ano devir fritanga jogo de tabuleiro 3 a 7 jogadores idade 9 anos": null,
  "menor preco do ano devir jogo de tabuleiro panda royale 2 a 10 jogadores idade 12 anos": null,
  "menor preco do ano escape devir": null,
  "menor preco do ano fuji flush jogo de cartas": null,
@@ -4880,6 +4893,7 @@
  "resist by 25th century games a solitare game": null,
  "rio grande games 161 zertz": null,
  "rio grande games balkan railways economic strategy board game no luck 3 5 players 45 90 min": null,
+ "rio grande games chicago northwestern strategy board game railroad investment gameplay for adults 3 5 players": null,
  "rio grande games dominion menagerie": null,
  "rio grande games dutch intercity stratgey train board game build invest in railroads across the netherlands ages 12 3 6 players 30": null,
  "rio grande games elfenroads game": null,
